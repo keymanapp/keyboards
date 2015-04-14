@@ -5,6 +5,8 @@ Copyright (C) 2015 GFF Frontier Foundation
 
 Version 1.3
 
+A phonetic keyboard for Amharic.
+
 Links
 -----
 
