@@ -12,6 +12,8 @@ rem ###########################################
 rem Locate the project based on the path name
 rem ###########################################
 
+setlocal
+
 if "%1"=="-p" goto prebuild
 
 set kpj=%~dp0
@@ -77,7 +79,7 @@ if not "%silent%" == "-s" (
 )
 
 "%KeymanDeveloperPath%\kmcomp.exe" -nologo %silent% %clean% %debug% %kpj% %targetflag% "%target%"
-exit /B %ERRORLEVEL%
+exit /b %ERRORLEVEL%
 
 rem ###########################################
 rem Help and errors

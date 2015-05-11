@@ -16,6 +16,8 @@ rem ###########################################
 rem Check environment and parameters
 rem ###########################################
 
+setlocal
+
 set packages_silent=
 set packages_debug=
 set packages_clean=

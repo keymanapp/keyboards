@@ -16,6 +16,8 @@ rem ###########################################
 rem Check environment and parameters
 rem ###########################################
 
+setlocal
+
 set global_silent=
 set global_debug=
 set global_clean=
@@ -54,37 +56,56 @@ if "%1"=="" (
   set global_target=*
 )
 
-rem Build keyboards
-for /d %%d in (%global_target%) do call :build_target -k %%d "%~dp0"
-
-rem Build packages
-for /d %%d in (%global_target%) do call :build_target -p %%d "%~dp0"
+for /d %%d in (%global_target%) do call :build_keyboard %%d "%~dp0"
+for /d %%d in (%global_target%) do call :build_package %%d "%~dp0"
 
 exit /B 0
 
 rem ###########################################
-rem Build one target
+rem Build one target keyboard
 rem ###########################################
 
-:build_target
+:build_keyboard
 
-if /i "%2" EQU ".git" goto :eof
-if /i "%2" EQU "template" goto :eof
-if /i "%2" EQU "packages" if /i "%1" NEQ "-p" goto :eof
-if /i "%2" NEQ "packages" if /i "%1" EQU "-k" goto :eof
+if /i "%1" EQU ".git" goto :eof
+if /i "%1" EQU "template" goto :eof
+if /i "%1" EQU "packages" goto :eof
 
-if not exist %2\build.cmd goto :eof
+if not exist %1\build.cmd goto :eof
 
-cd %2
-call build.cmd -p %2.kpj %global_silent% %global_clean% %global_debug%
+cd %1
+call build.cmd -p %1.kpj %global_silent% %global_clean% %global_debug%
+
 if errorlevel 1 (
   set global_error=%errorlevel%
-  cd /d %3
+  cd /d %2
   exit /B %global_error%
 )
-cd /d %3
+cd /d %2
 
-exit /B 0
+goto :eof
+
+rem ###########################################
+rem Build one target package
+rem ###########################################
+
+:build_package
+
+if /i "%1" NEQ "packages" goto :eof
+
+if not exist %1\build.cmd goto :eof
+
+cd %1
+call build.cmd %global_silent% %global_clean% %global_debug%
+
+if errorlevel 1 (
+  set global_error=%errorlevel%
+  cd /d %2
+  exit /B %global_error%
+)
+cd /d %2
+
+goto :eof
 
 rem ###########################################
 rem Help and errors
