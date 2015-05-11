@@ -1,8 +1,8 @@
 @echo off
 
-rem -----------------------------------------------------
-rem build.cmd script for Tavultesoft keyboards repository
-rem -----------------------------------------------------
+rem -------------------------------------------
+rem packages\build.cmd script
+rem -------------------------------------------
 
 if "%KeymanDeveloperPath%"=="" goto err_env
 if "%1"=="-?" goto help
@@ -16,28 +16,28 @@ rem ###########################################
 rem Check environment and parameters
 rem ###########################################
 
-set global_silent=
-set global_debug=
-set global_clean=
+set packages_silent=
+set packages_debug=
+set packages_clean=
 
 :params
 
 if "%1"=="" goto build
 
 if "%1"=="-s" (
-  set global_silent=-s
+  set packages_silent=-s
   shift
   goto params
 )
 
 if "%1"=="-c" (
-  set global_clean=-c
+  set packages_clean=-c
   shift
   goto params
 )
 
 if "%1"=="-d" (
-  set global_debug=-d
+  set packages_debug=-d
   shift
   goto params
 )
@@ -48,17 +48,13 @@ rem ###########################################
 
 :build
 
-set global_target=%*
+set packages_target=%*
 
 if "%1"=="" (
-  set global_target=*
+  set packages_target=*
 )
 
-rem Build keyboards
-for /d %%d in (%global_target%) do call :build_target -k %%d "%~dp0"
-
-rem Build packages
-for /d %%d in (%global_target%) do call :build_target -p %%d "%~dp0"
+for /d %%d in (%packages_target%) do call :build_target %%d "%~dp0"
 
 exit /B 0
 
@@ -68,21 +64,18 @@ rem ###########################################
 
 :build_target
 
-if /i "%2" EQU ".git" goto :eof
-if /i "%2" EQU "template" goto :eof
-if /i "%2" EQU "packages" if /i "%1" NEQ "-p" goto :eof
-if /i "%2" NEQ "packages" if /i "%1" EQU "-k" goto :eof
+if /i "%1" EQU "template" goto :eof
 
-if not exist %2\build.cmd goto :eof
+if not exist %1\build.cmd goto :eof
 
-cd %2
-call build.cmd -p %2.kpj %global_silent% %global_clean% %global_debug%
+cd %1
+call build.cmd -p %1.kpj %packages_silent% %packages_clean% %packages_debug%
 if errorlevel 1 (
-  set global_error=%errorlevel%
-  cd /d %3
-  exit /B %global_error%
+  set packages_error=%errorlevel%
+  cd /d %2
+  exit /B %packages_error%
 )
-cd /d %3
+cd /d %2
 
 exit /B 0
 
