@@ -1,0 +1,105 @@
+﻿c An update of the version 7 Clavier du Burkina by Doug Higby
+store(&VERSION) '9.0'
+store(&BITMAP) 'Burkina.bmp'
+store(&Copyright) "SIL 2005"
+store(&NAME) 'Clavier du Burkina NFD 9'
+store(&HotKey ) "[K_F12]"
+store(&mnemoniclayout) "0"  c no longer mnemonic because virtual keys are used in line 87, 88
+c Add literacy a and g to documentation
+c File is now fully NFC Feb 10, 2006
+c File is now NFD except for the c_cedilla March 20, 2006
+store(&TARGETS) 'any'
+store(&MESSAGE) 'Clavier du Burkina'
+store(&KEYBOARDVERSION) '9.0.1' c existing version adapted for version 9 of Keyman Developer'
+store(&ETHNOLOGUECODE) 'mos fuv fuh bam dts bfo bib bbo bwq bof box bwy bwj cme dgd dgi dgs dya dnn gux bxl dyu xsm hmb beh bmq djm dtm fra hau jow taq dje'
+begin Unicode > use(Main)
+
+store(lessthan) [K_oE2] "<"
+store(greaterthan) [SHIFT K_oE2] ">"
+c EASILY CHANGE ACCENT CHARACTERS BELOW TO THE KEY YOU WANT TO USE
+c Note that the modifying keys FOLLOW the character, just as when one writes.
+store(GraveK)   '`'     c grave
+store(AcuteK)   '/'     c forward slash   
+store(CircK)    '^'     c ^
+store(MacronK)  '='     c equals 
+store(DotAK)    '|'    c vertical bar
+store(DrsisK)   '%'     c percent 
+store(CaronK)   '&'     c ampersand  
+store(HiMidK)   '$'     c "$"  
+store(MidLowK)  '@'     c "@"  
+store(TildeBK)  '('    c "["  
+store(MacronBK) '_'     c "_" 
+store(DotBK)    '#'     c "#" 
+store(TildeK)   '~'    c "~"
+
+store(modifierK)    $GraveK $AcuteK $CircK   $MacronK $DotAK    $DrsisK \
+                    $CaronK $HiMidK $MidLowK $TildeBK $MacronBK $DotBK  $TildeK
+store(specchar1K)   "ABCDEIKNORUWYabcdegijknorsuwyz?"
+store(specchar2K)   "agNin"
+
+group(Main) using keys
+c Modify next line to select preferred capital schwa
+store(CapSchwa) U+018E c "Ǝ"  or U+018F "Ə"  BEWARE lowercase reversed is U+01dd, not U+0259 
+store(LCSchwa)  U+01dd c if capital shwa (above)is used, use U+0259
+c The following lines create NFC values only for ANSI equivalents.  This fixes problems with
+c French spelling and grammar checkers which don't apparantly substitute NFD -> NFC
+c It is too complex at this time to attempt to account for all possible composites.
+store(Umodifiable)  U+0041 U+0045 U+018E U+0190 U+0049 U+0196 U+004F U+0186 \
+                    U+0055 U+01B2 U+004E U+014A U+019D U+004D \
+                    U+0061 U+0065 $LCSchwa U+025B U+0069 U+0269 U+006F U+0254 \
+                    U+0075 U+028B U+006E U+014B U+0272 U+006D
+store(Uspecchar1)   $CapSchwa U+0181 U+00C7 U+018A U+0190 U+0196 U+0198 U+014A \
+                    U+0186 beep U+01B2 U+F21B U+01B3 $LCSchwa U+0253 U+00E7 U+0257 U+025B \
+                    U+0263 U+0269 beep U+0199 U+014B U+0254 beep U+0283 U+028B \
+                    U+F21A U+01B4 U+0292 U+0294  
+store(Uspecchar2)   U+0251 U+0261 U+019D U+0268 U+0272      
+store(UGrave)    U+0300
+store(UAcute)    U+0301
+store(UCirc)     U+0302 
+store(UMacron)   U+0304
+store(UDotA)     U+0307
+store(UDrsis)    U+0308
+store(UCaron)    U+030C
+store(UHiMid)    U+F174
+store(UMidLow)   U+F173
+store(UTildeB)   U+0330
+store(UMacronB)  U+0331
+store(UDotB)     U+0323
+store(UTilde)    U+0303
+store(Umodifier) $UGrave  $UAcute  $UCirc   $UMacron $UDotA   $UDrsis \
+                 $UCaron  $UHiMid  $UMidLow $UTildeB $UMacronB $UDotB $UTilde
+
+store(below)    $UTildeB $UMacronB $UDotB
+
+store(above)    $UGrave  $UAcute  $UCirc   $UMacron $UDotA   $UDrsis \
+                $UCaron  $UHiMid  $UMidLow $UTilde
+
+c semicolon before
+";" + any(specchar1K) > index(Uspecchar1,2)
+c comma before
+"," + any(specchar2K) > index(Uspecchar2,2)
+
+c The following rule is simple diacritic placement with no restructuring involved - don't need to go to rules
+any(Umodifiable) + any(modifierK) > context index(Umodifier,2)
+c When adding a second one, we need to check order.
+any(Umodifier) + any(modifierK) > context index(Umodifier,2) use(Udiacritics)
+
+U+0251 + any(modifierK) > context index(Umodifier,2)
+
++ any(lessthan) > U+2039 use(angleit)
++ any(greaterthan) > U+203A use(angleit)
+"-" + "-" > U+2014 
+
+group(angleit)
+U+2039 U+2039 > U+00AB 
+U+00AB U+2039 > context(1) U+00A0 context(2) 
+U+203A U+203A > U+00BB 
+U+00BB U+203A > context(2) U+00A0 context(1) 
+
+group(Udiacritics)
+any(Umodifier) context(1) > context beep c allow double accents but beep a warning
+U+0303 any(Umodifier) U+0303 > beep context(1) context(2) c this must be ordered before the next line
+any(Umodifier) any(Umodifier) U+0303 > U+0303 context(1) context(2) 
+any(Umodifier) U+0303 > context(2) context(1) 
+any(below) any(above) any(above) > context 
+any(Umodifier) any(Umodifier) any(Umodifier) > beep context(1) context(2)
