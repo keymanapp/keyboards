@@ -4,7 +4,7 @@ store(&TARGETS) "mobile desktop tablet"
 store(&ETHNOLOGUECODE) "hur"
 store(&COPYRIGHT) "© 2015 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
 store(&NAME) 'Hǝn̓q̓ǝmin̓ǝm'
-store(&VISUALKEYBOARD) 'fv_Henqeminem.kvk'
+c store(&VISUALKEYBOARD) 'fv_Henqeminem.kvk'
 store(&KMW_HELPFILE) 'fv_henqeminem_kmw_help.htm'
 begin Unicode > use(main)
                                                                                      
@@ -15,7 +15,7 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) "fv_henqeminem_kmw-layout.js"
+store(&LAYOUTFILE) 'fv_henqeminem_kmw-layout.js'
 
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
@@ -33,7 +33,8 @@ store(&LAYOUTFILE) "fv_henqeminem_kmw-layout.js"
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O] > 'ƛ̓' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_COLON] > 'ƛ̓' layer('default')
 + [SHIFT T_P_0] > 'P̓' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
 + [SHIFT T_A_0] > 'Á' layer('default')
@@ -70,8 +71,8 @@ store(&LAYOUTFILE) "fv_henqeminem_kmw-layout.js"
 + [SHIFT T_K_0] > 'K̓' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
++ [SHIFT T_L_1] > 'Ł' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON] > 'Ł' layer('default')
 + [SHIFT T_Z] > 'X̌' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
@@ -98,7 +99,8 @@ store(&LAYOUTFILE) "fv_henqeminem_kmw-layout.js"
 + [T_U] > 'u'
 + [T_I_0] > 'í'
 + [T_I] > 'i'
-+ [T_O] > 'ƛ̓'
++ [T_O] > 'o'
++ [T_COLON] > 'ƛ̓'
 + [T_P_0] > 'p̓'
 + [T_P] > 'p'
 + [T_A_0] > 'á'
@@ -135,8 +137,8 @@ store(&LAYOUTFILE) "fv_henqeminem_kmw-layout.js"
 + [T_K_0] > 'k̓'
 + [T_K] > 'k'
 + [T_L_0] > 'l̓'
++ [T_L_1] > 'ł'
 + [T_L] > 'l'
-+ [T_COLON] > 'ł'
 + [T_Z] > 'x̌'
 + [T_X] > 'x'
 + [T_C_0] > 'c̓'
