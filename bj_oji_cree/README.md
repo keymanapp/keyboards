@@ -10,10 +10,10 @@ Oji-Cree Phonetic-style keyboard for Unicode Canadian Aboriginal Syllabics
 Links
 -----
 
- * Home:     <___URL___>
+ * Home:     <http://keyman.com/>
  * Deployed: <http://s.keyman.com/keyboard/bj_oji_cree>
  * Help:     <http://help.keyman.com/keyboard/bj_oji_cree>
- * Contact:  <___EMAIL___>
+ * Contact:  <bill_jancewicz@sil.org>
 
 Supported Platforms
 -------------------
