@@ -1,5 +1,5 @@
 c File Name: bj_oji_cree.kmn
-c File Version: Jul 2015
+c File Version: Apr 2016
 c Rewritten by Bill Jancewicz
 
 c Originally written by Bob Hallissy with the following notes:
@@ -20,7 +20,7 @@ c
 c Author: Bob Hallissy
 c Date: 16-Aug-95
 c ================================================================
-c Revison: 20 Nov 99, (BJ) changed bitmaps buttons, filename
+c Revision: 20 Nov 99, (BJ) changed bitmaps buttons, filename
 c Fixed for Windows 98 fonts, added "o" for "u"
 c Revision: 16 Jan 2000, (BJ) added "th"
 c Revision: 25 May 2002, (BJ) redone for Keyman 5.0 BJWCREE3.KMN
@@ -53,14 +53,17 @@ c Revision 29 Mar 2016, (BJ) revised for Oji-Cree
 c changed filename from bjojcuni.kmn to bj_oji_cree.kmn for Tavultesoft repository
 c updated stores for developer version 9.0
 
-store(&VERSION) '9.0'
+c Revision 01 Apr 2016, (BJ) bug fix for initial consonant keys ver 9.0.1
+
+store(&VERSION) '9.0.1'
 store(&NAME) "BJ-OjiCree (Kingfisher)"
 store(&BITMAP) 'ojcree3u.bmp'
-store(&COPYRIGHT) "BJCree typeface copyright (c) July 2015 Bill Jancewicz NDC"
+store(&COPYRIGHT) 'Copyright (c) April 2016 Bill Jancewicz NDC/SIL©©'
 store(&MESSAGE) "This keyboard may be freely used and redistributed"
 store(&ETHNOLOGUECODE) 'ojs'
 store(&TARGETS) 'windows macosx linux web iphone'
 store(&VISUALKEYBOARD) 'bj_oji_cree.kvk'
+store(&KEYBOARDVERSION) '9.0.1'
 
 begin Unicode > use(main)
 
@@ -142,8 +145,8 @@ U+157D + "a"  > U+1426 U+1472 c h+ka
 U+157D + any(Wkey) > U+1426 U+1484 c h kw
 
 c Consonant key to standalone consonant:
-c + any(ConsKey)    > index(CC,1)
-c + any(CapConsKey) > index(CC,1)
+ + any(ConsKey)    > index(CC,1)
+ + any(CapConsKey) > index(CC,1)
 c compiler says that "The rule will never be matched because its key code is never fired."
 
 c Alternate consonants: (voiced for voiceless)
