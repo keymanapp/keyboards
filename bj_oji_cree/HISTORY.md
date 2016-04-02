@@ -17,3 +17,8 @@ bj_oji_cree Change History
 * Merged to tavultesoft keyboards github repository
 * Synchronised keyboard and package version
 * Updated to Keyman Developer 9.0
+
+9.0.1 (31 Mar 2016)
+-----------------
+
+* bug fix for initial consonant keys
