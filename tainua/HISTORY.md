@@ -1,7 +1,7 @@
-Template Change History
+Tai Nua Change History
 =======================
 
-1.0 (1 Jan 2015)
+1.0 (20 Oct 2016)
 -----------------
 
-* Created by you
+* Created by Sai Ai Wong
