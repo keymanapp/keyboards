@@ -17,10 +17,8 @@ Links
 Supported Platforms
 -------------------
  * Windows
- * Web
- * Mobile Web
- * iOS
- * Android
+ * Mac OS X
+ * Linux
 
 Todo
 ----
