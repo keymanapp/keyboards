@@ -1,0 +1,350 @@
+﻿c SIL Ethiopic Power G is a keyboard based on SIL Ethiopic 1.3, with sequences modified to match Concepts Data Systems' Power Ge'ez (Phonetic) keyboard.  SIL Ethiopic Power-G should be able to produce characters for all Ethiopic Fidel based languages.
+
+store(&VERSION) '9.0'
+store(&NAME) 'SIL Ethiopic Power G'
+store(&TARGETS) 'windows macosx linux desktop'
+store(&KEYBOARDVERSION) '1.0'
+store(&ETHNOLOGUECODE) 'amh, tir, bst'
+store(&BITMAP) 'sil_ethiopic_power_g.bmp'
+store(&COPYRIGHT) '© 2016 SIL Ethiopia'
+store(&MESSAGE) 'The SIL Ethiopic Power G Unicode keyboard enables typing in all Ethiopic Fidel based languages.'
+
+
+c ***********************************************************************************
+c Amharic fidel
+c ***********************************************************************************
+
+c ----------------------------------------------------------------------------------
+c This new store (24-Sept-2007) is a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF
+c 2016-10-31: this new store should now not be needed.  commenting out.
+c store(chars) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]\{}|;:",./<>?' "'`~"
+
+store (key)       "h"     "l" [NCAPS SHIFT K_H] "m" [NCAPS SHIFT K_S] "r" "s" [RALT K_S ] \
+                  "q"             "Q"             "b"     "v"     "t"     "c"     \
+           [RALT K_H]             "n"     "N"     "x"     "k"             [RALT SHIFT K_H] \
+                          "w"     "X"     "z"     "Z" [SHIFT K_Y] "d"     "D"     \
+                  "j"     "g"             "G" [NCAPS SHIFT K_T] "C"  "P"  [RALT K_T ] \
+     [RALT SHIFT K_T]     "f"     "p"
+
+store (keyU)      U+1200  U+1208  U+1210  U+1218  U+1220  U+1228  U+1230  U+1238  \
+                  U+1240          U+1250          U+1260  U+1268  U+1270  U+1278  \
+                  U+1280          U+1290  U+1298  U+12a0  U+12a8          U+12b8  \
+                          U+12c8  U+12d0  U+12d8  U+12e0  U+12e8  U+12f0  U+12f8  \
+                  U+1300  U+1308          U+1318  U+1320  U+1328  U+1330  U+1338  \
+                  U+1340  U+1348  U+1350                                          \
+
+c ----------------------------------------------------------------------------------
+c First <base> - forms
+store (first)     U+1200  U+1208  U+1210  U+1218  U+1220  U+1228  U+1230  U+1238  \
+                  U+1240          U+1250          U+1260  U+1268  U+1270  U+1278  \
+                  U+1280          U+1290  U+1298  U+12a0  U+12a8          U+12b8  \
+                          U+12c8  U+12d0  U+12d8  U+12e0  U+12e8  U+12f0  U+12f8  \
+                  U+1300  U+1308          U+1318  U+1320  U+1328  U+1330  U+1338  \
+                  U+1340  U+1348  U+1350                                          \
+                  U+2da0  U+2da8  U+2db0  U+2db8  U+2dc0  U+2dc8  U+2dd0  U+2dd8  \
+                                  U+ab05                                  U+ab15  \
+                          U+ab0d                          U+ab20          U+ab28  \
+
+c ----------------------------------------------------------------------------------
+c Second 'u' - forms
+store (second)    U+1201  U+1209  U+1211  U+1219  U+1221  U+1229  U+1231  U+1239  \
+                  U+1241          U+1251          U+1261  U+1269  U+1271  U+1279  \
+                  U+1281          U+1291  U+1299  U+12a1  U+12a9          U+12b9  \
+                          U+12c9  U+12d1  U+12d9  U+12e1  U+12e9  U+12f1  U+12f9  \
+                  U+1301  U+1309          U+1319  U+1321  U+1329  U+1331  U+1339  \
+                  U+1341  U+1349  U+1351                                          \
+                  U+2da1  U+2da9  U+2db1  U+2db9  U+2dc1  U+2dc9  U+2dd1  U+2dd9  \
+                                  U+ab01                                  U+ab11  \
+                          U+ab09                          U+ab21          U+ab29  \
+
+c ----------------------------------------------------------------------------------
+c Third 'i' - forms
+store (third)     U+1202  U+120a  U+1212  U+121a  U+1222  U+122a  U+1232  U+123a  \
+                  U+1242          U+1252          U+1262  U+126a  U+1272  U+127a  \
+                  U+1282          U+1292  U+129a  U+12a2  U+12aa          U+12ba  \
+                          U+12ca  U+12d2  U+12da  U+12e2  U+12ea  U+12f2  U+12fa  \
+                  U+1302  U+130a          U+131a  U+1322  U+132a  U+1332  U+133a  \
+                  U+1342  U+134a  U+1352                                          \
+                  U+2da2  U+2daa  U+2db2  U+2dba  U+2dc2  U+2dca  U+2dd2  U+2dda  \
+                                  U+ab02                                  U+ab12  \
+                          U+ab0a                          U+ab22          U+ab2A  \
+
+c ----------------------------------------------------------------------------------
+c Fourth 'a' - form
+store (fourth)    U+1203  U+120b  U+1213  U+121b  U+1223  U+122b  U+1233  U+123b  \
+                  U+1243          U+1253          U+1263  U+126b  U+1273  U+127b  \
+                  U+1283          U+1293  U+129b  U+12a3  U+12ab          U+12bb  \
+                          U+12cb  U+12d3  U+12db  U+12e3  U+12eb  U+12f3  U+12fb  \
+                  U+1303  U+130b          U+131b  U+1323  U+132b  U+1333  U+133b  \
+                  U+1343  U+134b  U+1353                                          \
+                  U+2da3  U+2dab  U+2db3  U+2dbb  U+2dc3  U+2dcb  U+2dd3  U+2ddb  \
+                                  U+ab03                                  U+ab13  \
+                          U+ab0b                          U+ab23          U+ab2B  \
+
+c ----------------------------------------------------------------------------------
+c Fifth 'y' - form
+store (fifth)     U+1204  U+120c  U+1214  U+121c  U+1224  U+122c  U+1234  U+123c  \
+                  U+1244          U+1254          U+1264  U+126c  U+1274  U+127c  \
+                  U+1284          U+1294  U+129c  U+12a4  U+12ac          U+12bc  \
+                          U+12cc  U+12d4  U+12dc  U+12e4  U+12ec  U+12f4  U+12fc  \
+                  U+1304  U+130c          U+131c  U+1324  U+132c  U+1334  U+133c  \
+                  U+1344  U+134c  U+1354                                          \
+                  U+2da4  U+2dac  U+2db4  U+2dbc  U+2dc4  U+2dcc  U+2dd4  U+2ddc  \
+                                  U+ab04                                  U+ab14  \
+                          U+ab0c                          U+ab24          U+ab2C  \
+
+c ----------------------------------------------------------------------------------
+c Sixth 'e' - form (basic form) Added: diphthonghs which have a second form
+store (sixth)     U+1205  U+120d  U+1215  U+121d  U+1225  U+122d  U+1235  U+123d  \
+                  U+1245          U+1255          U+1265  U+126d  U+1275  U+127d  \
+                  U+1285          U+1295  U+129d  U+12a5  U+12ad          U+12bd  \
+                          U+12cd  U+12d5  U+12dd  U+12e5  U+12ed  U+12f5  U+12fd  \
+                  U+1305  U+130d          U+131d  U+1325  U+132d  U+1335  U+133d  \
+                  U+1345  U+134d  U+1355                                          \
+                  U+2da5  U+2dad  U+2db5  U+2dbd  U+2dc5  U+2dcd  U+2dd5  U+2ddd  \
+                                  U+ab05                                  U+ab15  \
+                          U+ab0d                          U+ab25          U+ab2D  \
+
+c ----------------------------------------------------------------------------------
+c Seventh 'o' - form
+store(seventh)    U+1206  U+120e  U+1216  U+121e  U+1226  U+122e  U+1236  U+123e  \
+                  U+1246          U+1256          U+1266  U+126e  U+1276  U+127e  \
+                  U+1286          U+1296  U+129e  U+12a6  U+12ae          U+12be  \
+                          U+12ce  U+12d6  U+12de  U+12e6  U+12ee  U+12f6  U+12fe  \
+                  U+1306  U+130e          U+131e  U+1326  U+132e  U+1336  U+133e  \
+                  U+1346  U+134e  U+1356                                          \
+                  U+2da6  U+2dae  U+2db6  U+2dbe  U+2dc6  U+2dce  U+2dd6  U+2dde  \
+                                  U+ab06                                  U+ab16  \
+                          U+ab0e                          U+ab26          U+ab2E  \
+
+c ----------------------------------------------------------------------------------
+c Eighth 'O' - form (special meen, suri, mursi form - if none, return base form)
+store(eighth)     U+1207  U+2d80  U+1210  U+2d81  U+1220  U+2d82  U+2d83  U+2d84  \
+                  U+1247          U+1250          U+2d85  U+1268  U+2d86  U+2d87  \
+                  U+1287          U+2d88  U+2d89  U+2d8a  U+12af          U+12b8  \
+                          U+12cf  U+12d0  U+2d8b  U+12e0  U+12ef  U+2d8c  U+2d8d  \
+                  U+2d8e  U+130f          U+1318  U+2d8f  U+2d90  U+2d91  U+1338  \
+                  U+1347  U+1348  U+2d92                                          \
+                  U+2da0  U+2da8  U+2db0  U+2db8  U+2dc0  U+2dc8  U+2dd0  U+2dd8  \
+                                  U+ab05                                  U+ab15  \
+                          U+ab0d                          U+ab20          U+ab28  \
+
+c ----------------------------------------------------------------------------------
+c Diphthong 'W' - form (if no diphthong, return base form)
+store(diph)       U+1200  U+120f  U+1217  U+121f  U+1227  U+122f  U+1237  U+123f  \
+                  U+124b          U+125b          U+1267  U+126f  U+1277  U+127f  \
+                  U+128b          U+1297  U+129f  U+12a7  U+12b3          U+12c3  \
+                          U+12c8  U+12d0  U+12df  U+12e7  U+12e8  U+12f7  U+12ff  \
+                  U+1307  U+1313          U+131f  U+1327  U+132f  U+1337  U+133f  \
+                  U+1340  U+134f  U+1357                                          \
+                  U+2da0  U+2da8  U+2db0  U+2db8  U+2dc0  U+2dc8  U+2dd0  U+2dd8  \
+                                  U+ab05                                  U+ab15  \
+                          U+ab0d                          U+ab20          U+ab28  \
+
+c ----------------------------------------------------------------------------------
+c Diphthong Groups
+
+c 'W' or 'Wa'
+store(DGbase)     U+121f  U+122f  U+124b  U+125b  U+1267  U+128b  U+12b3  U+12c3  \
+                  U+1313  U+131f  U+134f  U+1357
+
+c 'Wu'
+store(DGsecond)   U+1383  U+122f  U+124d  U+125d  U+1387  U+128d  U+12b5  U+12c5  \
+                  U+1315  U+2d96  U+138b  U+138f
+
+c 'Wi'
+store(DGthird)    U+1381  U+1358  U+124a  U+125a  U+1385  U+128a  U+12b2  U+12c2  \
+                  U+1312  U+2d94  U+1389  U+138d
+
+c 'Wy'
+store(DGfifth)    U+1382  U+122f  U+124c  U+125c  U+1386  U+128c  U+12b4  U+12c4  \
+                  U+1314  U+2d95  U+138a  U+138e
+
+c 'Wo'
+store(DGseventh)  U+1380  U+122f  U+1248  U+1258  U+1384  U+1288  U+12b0  U+12c0  \
+                  U+1310  U+2d93  U+1388  U+138c
+
+c ----------------------------------------------------------------------------------
+c Diacritics
+
+store(diacKey) "1"    "2"    "3"    "4"    "5"    "6"    "7"    "8"    "9"    "0"    "'"    '"'    ":"
+store(diacU)   u+030f u+0300 u+0304 u+0301 u+030b u+0302 u+030c u+0307 u+0308 u+0303 u+135f u+135d u+135e
+
+begin unicode > use(Main)
+
+group(Main) using keys
+c **********************************************************************************
+c At first create all first-form elements:
+
+c **** Power Ge'ez Compatibility (pref for CAPSLOCK to be replaced by RALT)
++ [CAPS K_H]       >  U+1280  c ኀ
++ [CAPS SHIFT K_H] >  U+12b8  c ኸ
++ [CAPS K_S]       >  U+1238  c ሸ
++ [CAPS K_T]       >  U+1338  c ጸ
++ [CAPS SHIFT K_T] >  U+1340  c ፀ
+
++ any(key)  > index(keyU,1) c all standard first-forms
+
++ 'u'       > dk(1)      c Single vowels at the beginning of a word (first form)
++ 'i'       > dk(2)
++ 'a'       > dk(3)
++ 'y'       > dk(4)
++ 'e'       > dk(5)
++ 'o'       > dk(6)
+
++ 'U'       > dk(7)      c Single vowels at the beginning of a word (second form)
++ 'I'       > dk(8)
++ 'A'       > dk(9)
+c + 'Y'       > dk(10) c 'Y' is የ
++ 'E'       > dk(11)
++ 'O'       > dk(12)
+
+c blocking unused caps english letters
++ 'W'       > dk(13)
++ 'R'       > dk(14)
++ 'M'       > dk(15)
++ 'B'       > dk(16)
++ 'F'       > dk(17)
++ 'J'       > dk(18)
++ 'K'       > dk(19)
++ 'L'       > dk(20)
+
+c **********************************************************************************
+c Diacritics above
+c **********************************************************************************
+u+1362 + any(diacKey) > index(diacU,2)
+
+c + [CTRL K_1]     > u+030f  c
+c + [CTRL K_2]     > u+0300  c
+c + [CTRL K_3]     > u+0304  c
+c + [CTRL K_4]     > u+0301  c
+c + [CTRL K_5]     > u+030b  c
+c + [CTRL K_6]     > u+0302  c
+c + [CTRL K_7]     > u+030c  c
+c + [CTRL K_8]     > u+0307  c
+c + [CTRL K_9]     > u+0308  c
+c + [CTRL K_0]     > u+0303  c
+
+c + [CTRL K_QUOTE] > u+135f  c
+
+c **********************************************************************************
+c Special groups:
+c **********************************************************************************
+U+1238          + '#'  > U+2da0 c S# ⶠ
+U+1278          + '#'  > U+2da8 c c# ⶨ
+U+12e0          + '#'  > U+2db0 c Z# ⶰ
+U+1328          + '#'  > U+2db8 c C# ⶸ
+U+1240          + '#'  > U+2dc0 c q# ⷀ
+U+12a8          + '#'  > U+2dc8 c k# ⷈ
+U+12b8          + '#'  > U+2dd0 c K# ⷐ
+U+1308          + '#'  > U+2dd8 c g# ⷘ
+
+U+1230          + '='  > U+ab05 c s= ꬅ  (Gamo-Gofa-Dawro, Basketo)
+U+12f8          + '='  > U+ab0d c D= ꬍ  (Gamo-Gofa-Dawro, Basketo)
+U+12d8          + '='  > U+ab15 c z= ꬕ  (Gamo-Gofa-Dawro)
+U+1328          + '='  > U+ab20 c C= ꬠ  (Gumuz)
+U+1330          + '='  > U+ab28 c P= ꬨ  (Gumuz)
+
+c U+12a5          + '='  > U+e06d c vowel with line above
+c U+1295          + '='  > U+e295 c n     with line above     (Gumuz variant of 129d)
+c U+12ad          + '='  > U+e2ad c k     with line above     (Gumuz, but not used)
+c U+130d          + '='  > U+e31d c g     with line above combined (disconnected variant of 131d)
+c U+12f5          + '='  > U+e385 c d     with line inside    (archaic Oromo variant of 12fd)
+
+c Standard Characters
+any(first)  + 'u' > index(second ,1)
+any(first)  + 'i' > index(third  ,1)
+any(first)  + 'a' > index(fourth ,1)
+any(first)  + 'y' > index(fifth  ,1)
+any(first)  + 'e' > index(sixth  ,1)
+any(first)  + 'o' > index(seventh,1)
+any(first)  + 'O' > index(eighth ,1)
+
+c Diphthong Groups
+any(first)   + 'W' > index(diph,1)   c Basic diphthongs and 4th diphthong forms
+
+any(DGbase)  + 'u' > index(DGsecond ,1)
+any(DGbase)  + 'i' > index(DGthird  ,1)
+any(DGbase)  + 'a' > index(DGbase   ,1) C matches DGbase, but just for those that will type 'a' for 4th form
+any(DGbase)  + 'y' > index(DGfifth  ,1)
+any(DGbase)  + 'o' > index(DGseventh,1)
+
+c *** in case user is using CAPS LOCK for Diphthong, then let it still work
+any(DGbase)  + [CAPS K_U] > index(DGsecond ,1)
+any(DGbase)  + [CAPS K_I] > index(DGthird  ,1)
+any(DGbase)  + [CAPS K_A] > index(DGbase   ,1) c matches DGbase, but just for those that will type 'a' for 4th form
+any(DGbase)  + [CAPS K_Y] > index(DGfifth  ,1) c Y matches የ so need to make sure only with CAPS LOCK does it trigger
+any(DGbase)  + [CAPS K_O] > index(DGseventh,1)
+
+c Additional 'one off' Diphthongs
+U+121f  + 'M' > U+1359 c mWM ፙ
+U+134f  + 'F' > U+135a c fWF ፚ
+
+c any(first) + [CTRL K_SPACE] > index(first + 1,1)
+
+c **********************************************************************************
+c Punctuation
+c **********************************************************************************
+
++ ':'            > U+1361    c Amharic space  ፡
+U+1361     + ':' > U+1368    c 7 dots ordered in a circle  ፨
+U+1368     + ':' > U+1361    c Amharic space  ፡  (rota)
+
++ '.'            > U+1362    c Amharic full stop  ።
+U+1362     + '.' > '.'       c single dot  .
+'.'        + '.' > U+2022    c big dot in middle  •
+U+2022     + '.' > U+1362    c Amharic full stop  ።  (rota)
+
++ ','            > U+1365    c Amharic comma (first form)  ፥
+U+1365     + ',' > U+1363    c Amharic comma (second form)  ፣
+U+1363     + ',' > U+1365    c Amharic comma (first form)  ፥  (rota)
+
++ ';'            > U+1364    c Amharic semicolon  ፤
+
+U+1361     + '-' > U+1366    c two dots and slash  ፦
+U+1361     + '.' > U+1367    c three dots in vertical order  ፧
+
+c U+1362   + '*' > U+e408    c three rows of three dots (variant of fullstop)
+U+1362     + '/' > U+1360    c four dots with diagonal lines  ፠
+
++ '<'            > U+00ab    c Amharic opening quote  «
+U+00ab     + '<' > U+003c    c <
+U+003c     + '<' > U+00ab    c Amharic opening quote  « (rota)
+
++ '>'            > U+00bb    c Amharic closing quote  »
+U+00bb     + '>' > U+003e    c >
+U+003e     + '>' > U+00bb    c Amharic closing quote  » (rota)
+
+'(' U+121d + ')' > U+e496    c 'm' with circle  
+
+c **********************************************************************************
+c Amharic numbers
+c **********************************************************************************
+
+'1'    + '*' > U+1369 c 1  ፩
+'2'    + '*' > U+136a c 2  ፪
+'3'    + '*' > U+136b c 3  ፫
+'4'    + '*' > U+136c c 4  ፬
+'5'    + '*' > U+136d c 5  ፭
+'6'    + '*' > U+136e c 6  ፮
+'7'    + '*' > U+136f c 7  ፯
+'8'    + '*' > U+1370 c 8  ፰
+'9'    + '*' > U+1371 c 9  ፱
+
+U+1369 + '0' > U+1372 c 10  ፲
+U+136a + '0' > U+1373 c 20  ፳
+U+136b + '0' > U+1374 c 30  ፴
+U+136c + '0' > U+1375 c 40  ፵
+U+136d + '0' > U+1376 c 50  ፶
+U+136e + '0' > U+1377 c 60  ፷
+U+136f + '0' > U+1378 c 70  ፸
+U+1370 + '0' > U+1379 c 80  ፹
+U+1371 + '0' > U+137a c 90  ፺
+
+U+1372 + '0' > U+137b c 100  ፻
+U+137b + '0' > U+e494 c 1000  
+U+e494 + '0' > U+137c c 10000  ፼
+
+c This new store (24-Sept-2007) is a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF
+c 2016-10-31: this new store should now not be needed.  commenting out.
+c + any(chars) > index(chars, 1)
