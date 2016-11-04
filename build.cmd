@@ -5,6 +5,7 @@ rem build.cmd script for Tavultesoft keyboards repository
 rem -----------------------------------------------------
 
 if "%KeymanDeveloperPath%"=="" goto err_env
+if not exist "%KeymanDeveloperPath%\kmcomp.exe" goto err_env_not_exist
 if "%1"=="-?" goto help
 if "%1"=="/?" goto help
 if /i "%1" EQU "-h" goto help
@@ -126,3 +127,10 @@ goto :eof
 :err_env
 echo Error: the environment variable KeymanDeveloperPath must be set to the path for kmcomp.exe
 exit /b 3
+goto :eof
+
+:err_env_not_exist
+echo Error: the executable kmcomp.exe does not exist at %KeymanDeveloperPath%\kmcomp.exe
+exit /b 4
+goto :eof
+
