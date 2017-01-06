@@ -1,6 +1,6 @@
 {
   "tablet": {
-    "font": "Tahoma",
+    "font": "Sophia Nubian",
     "layer": [
       {
         "id": "default",
@@ -1943,7 +1943,7 @@
     ]
   },
   "phone": {
-    "font": "Tahoma",
+    "font": "Sophia Nubian",
     "layer": [
       {
         "id": "default",
