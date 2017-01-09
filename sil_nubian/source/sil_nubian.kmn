@@ -1,0 +1,79 @@
+﻿c sil_nubian.kmn
+c Author:   Lorna Evans
+c Date:     9-DEC-2016
+store(&VERSION) '9.0'
+store(&NAME) 'SIL Nubian'
+store(&BITMAP) 'sil_nubian.bmp'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© 2008-2017 SIL International'
+store(&MESSAGE) "The SIL Nubian Unicode keyboard is distributed under The MIT License (MIT)."
+store(&ETHNOLOGUECODE) 'fia dgl xnz'
+store(&KEYBOARDVERSION) '1.2'
+store(&VISUALKEYBOARD) 'sil_nubian.kvk'
+store(&LAYOUTFILE) 'sil_nubian-layout.js'
+
+begin Unicode > use(main)
+
+
+group(main) using keys
+
+
++ [K_A] > U+2C81
++ [K_B] > U+2C83
++ [K_C] > U+03ED
++ [K_D] > U+2C87
++ [K_E] > U+2C89
++ [K_F] > U+2CAB
++ [K_G] > U+2C85
++ [K_H] > U+03E9
++ [K_I] > U+2C93
++ [K_J] > U+2CDD
++ [K_K] > U+2C95
++ [K_L] > U+2C97
++ [K_M] > U+2C99
++ [K_N] > U+2C9B
++ [K_O] > U+2C9F
++ [K_P] > U+2CA1
++ [K_Q] > U+2CE3
++ [K_R] > U+2CA3
++ [K_S] > U+2CA5
++ [K_T] > U+2CA7
++ [K_U] > U+2C9F U+2CA9
++ [K_V] > U+2CE1
++ [K_W] > U+2CB1
++ [K_X] > U+2C9D
++ [K_Y] > U+2C93 U+0308
++ [K_Z] > U+2C8D
+
+    
++ [SHIFT K_A] > U+2C81 U+0304
++ [SHIFT K_B] > U+2C83 U+0304
++ [SHIFT K_C] > U+2C8B
++ [SHIFT K_D] > U+2C87 U+0304
++ [SHIFT K_E] > U+2C89 U+0304
++ [SHIFT K_G] > U+2C85 U+0304
++ [SHIFT K_H] > U+2C8F
++ [SHIFT K_I] > U+2C93 U+0304
++ [SHIFT K_J] > U+2CDD U+0304
++ [SHIFT K_K] > U+2C95 U+0304
++ [SHIFT K_L] > U+2C97 U+0304
++ [SHIFT K_N] > U+2CDF
++ [SHIFT K_O] > U+2C9F U+0304
++ [SHIFT K_P] > U+2CAF
++ [SHIFT K_S] > U+03E3
++ [SHIFT K_T] > U+2CA7 U+0304
++ [SHIFT K_U] > U+2C9F U+0305 U+2CA9 U+0305
++ [SHIFT K_V] > U+2C91
++ [SHIFT K_W] > U+2CB1 U+0304
++ [SHIFT K_X] > U+2CAD
++ [SHIFT K_Y] > U+2CA9
+
++ [K_EQUAL] > U+0304
+       
+
+U+2C9F U+2CA9 + "=" > U+2C9F U+0305 U+2CA9 U+0305
+U+2C9F U+0304 U+2CA9 + "=" > U+2C9F U+0305 U+2CA9 U+0305
+
+U+2C9F U+0305 U+2CA9 U+0305 + [K_BKSP] > nul 
+U+2C9F U+2CA9 + [K_BKSP] > nul
+ 
