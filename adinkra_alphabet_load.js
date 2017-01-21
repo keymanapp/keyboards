@@ -1,0 +1,1 @@
+﻿KeymanWeb.KRS(new Stub_Keyboard_adinkra_alphabet()); function Stub_Keyboard_adinkra_alphabet() {this.KF="adinkra_alphabet.js";this.KI="Keyboard_adinkra_alphabet";this.KN="Adinkra Alphabet";}
