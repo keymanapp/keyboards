@@ -1,9 +1,9 @@
 SIL Ethiopic Power-G Keyboard
 =============================
 
-Copyright (C) 2016 SIL International
+Copyright (C) 2017 SIL International
 
-Version 1.0
+Version 1.1
 
 Keyboard based on SIL Ethiopic 1.3, with sequences modified to match
 Concepts Data Systems' Power Ge'ez (Phonetic) keyboard.
