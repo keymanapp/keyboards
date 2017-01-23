@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_sil_nubian()); function Stub_Keyboard_sil_nubian() {this.KF="sil_nubian-1.2.js";this.KI="Keyboard_sil_nubian";this.KN="SIL Nubian";}
