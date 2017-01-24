@@ -1,30 +1,23 @@
-﻿c SIL Ethiopic Power G is a keyboard based on SIL Ethiopic 1.3, with sequences modified to match Concepts Data Systems' Power Ge'ez (Phonetic) keyboard.  SIL Ethiopic Power-G should be able to produce characters for all Ethiopic Fidel based languages.
-
-store(&VERSION) '9.0'
-store(&NAME) 'SIL Ethiopic Power G'
+﻿store(&VERSION) '9.0'
+store(&NAME) 'SIL Power-G'
 store(&TARGETS) 'windows macosx linux'
-store(&KEYBOARDVERSION) '1.0'
-store(&ETHNOLOGUECODE) 'amh tir bst'
+store(&KEYBOARDVERSION) '1.1'
+store(&ETHNOLOGUECODE) 'amh bcq bst dwr gdl gez gmv gof guk kxc mdx suq tig zay'
 store(&BITMAP) 'sil_ethiopic_power_g.bmp'
-store(&COPYRIGHT) '© 2016 SIL Ethiopia'
-store(&MESSAGE) 'The SIL Ethiopic Power G Unicode keyboard enables typing in all Ethiopic Fidel based languages.'
-
+store(&COPYRIGHT) '© 2017 SIL Ethiopia'
+store(&MESSAGE) 'The SIL Power-G Unicode keyboard enables typing in all Ethiopic Fidel based languages.'
 
 c ***********************************************************************************
 c Amharic fidel
 c ***********************************************************************************
 
 c ----------------------------------------------------------------------------------
-c This new store (24-Sept-2007) is a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF
-c 2016-10-31: this new store should now not be needed.  commenting out.
-c store(chars) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]\{}|;:",./<>?' "'`~"
-
-store (key)       "h"     "l" [NCAPS SHIFT K_H] "m" [NCAPS SHIFT K_S] "r" "s" [RALT K_S ] \
+store (key)       "h"     "l"     "H"     "m"     "J"     "r"     "s"     "S"     \
                   "q"             "Q"             "b"     "v"     "t"     "c"     \
-           [RALT K_H]             "n"     "N"     "x"     "k"             [RALT SHIFT K_H] \
-                          "w"     "X"     "z"     "Z" [SHIFT K_Y] "d"     "D"     \
-                  "j"     "g"             "G" [NCAPS SHIFT K_T] "C"  "P"  [RALT K_T ] \
-     [RALT SHIFT K_T]     "f"     "p"
+                  "L"             "n"     "N"     "x"     "k"             "K"     \
+                          "w"     "X"     "z"     "Z"     "Y"     "d"     "D"     \
+                  "j"     "g"             "G"     "T"     "C"     "P"     "F"     \
+                  "V"     "f"     "p"                                             \
 
 store (keyU)      U+1200  U+1208  U+1210  U+1218  U+1220  U+1228  U+1230  U+1238  \
                   U+1240          U+1250          U+1260  U+1268  U+1270  U+1278  \
@@ -164,6 +157,10 @@ c 'Wo'
 store(DGseventh)  U+1380  U+122f  U+1248  U+1258  U+1384  U+1288  U+12b0  U+12c0  \
                   U+1310  U+2d93  U+1388  U+138c
 
+c 'WI' (if no special diphthong, return base diphthong form)
+store(DGspecial)  U+1359  U+1358  U+124b  U+125b  U+1267  U+128b  U+12b3  U+12c3  \
+                  U+1313  U+131f  U+135a  U+1357
+
 c ----------------------------------------------------------------------------------
 c Diacritics
 
@@ -178,74 +175,50 @@ group(Main) using keys
 c **********************************************************************************
 c At first create all first-form elements:
 
-c **** Power Ge'ez Compatibility (pref for CAPSLOCK to be replaced by RALT)
-+ [CAPS K_H]       >  U+1280  c ኀ
-+ [CAPS SHIFT K_H] >  U+12b8  c ኸ
-+ [CAPS K_S]       >  U+1238  c ሸ
-+ [CAPS K_T]       >  U+1338  c ጸ
-+ [CAPS SHIFT K_T] >  U+1340  c ፀ
-
 + any(key)  > index(keyU,1) c all standard first-forms
 
-+ 'u'       > dk(1)      c Single vowels at the beginning of a word (first form)
-+ 'i'       > dk(2)
-+ 'a'       > dk(3)
-+ 'y'       > dk(4)
-+ 'e'       > dk(5)
-+ 'o'       > dk(6)
++ 'u'       > U+12a1 c Single vowels at the beginning of a word (first form)
++ 'i'       > U+12a2
++ 'a'       > U+12a3
++ 'y'       > dk(1)  c since 'Y' is የ we deadkey small 'y' to avoid confusion
++ 'e'       > U+12a5
++ 'o'       > U+12a6
++ 'W'       > U+12a7
 
-+ 'U'       > dk(7)      c Single vowels at the beginning of a word (second form)
-+ 'I'       > dk(8)
-+ 'A'       > dk(9)
-c + 'Y'       > dk(10) c 'Y' is የ
-+ 'E'       > dk(11)
-+ 'O'       > dk(12)
++ 'U'       > U+12d1 c Single vowels at the beginning of a word (second form)
++ 'I'       > U+12d2
++ 'A'       > U+12d3
+c + 'Y'       > dk(2) c 'Y' is የ, will be assigned later
++ 'E'       > U+12d5
++ 'O'       > U+12d6
 
 c blocking unused caps english letters
-+ 'W'       > dk(13)
-+ 'R'       > dk(14)
-+ 'M'       > dk(15)
-+ 'B'       > dk(16)
-+ 'F'       > dk(17)
-+ 'J'       > dk(18)
-+ 'K'       > dk(19)
-+ 'L'       > dk(20)
++ 'R'       > dk(3)
++ 'M'       > dk(4)
++ 'B'       > dk(5)
 
 c **********************************************************************************
 c Diacritics above
 c **********************************************************************************
-u+1362 + any(diacKey) > index(diacU,2)
-
-c + [CTRL K_1]     > u+030f  c
-c + [CTRL K_2]     > u+0300  c
-c + [CTRL K_3]     > u+0304  c
-c + [CTRL K_4]     > u+0301  c
-c + [CTRL K_5]     > u+030b  c
-c + [CTRL K_6]     > u+0302  c
-c + [CTRL K_7]     > u+030c  c
-c + [CTRL K_8]     > u+0307  c
-c + [CTRL K_9]     > u+0308  c
-c + [CTRL K_0]     > u+0303  c
-
-c + [CTRL K_QUOTE] > u+135f  c
+U+1362 + any(diacKey) > index(diacU,2)
 
 c **********************************************************************************
-c Special groups:
+c Special group first forms:
 c **********************************************************************************
-U+1238          + '#'  > U+2da0 c S# ⶠ
-U+1278          + '#'  > U+2da8 c c# ⶨ
-U+12e0          + '#'  > U+2db0 c Z# ⶰ
-U+1328          + '#'  > U+2db8 c C# ⶸ
-U+1240          + '#'  > U+2dc0 c q# ⷀ
-U+12a8          + '#'  > U+2dc8 c k# ⷈ
-U+12b8          + '#'  > U+2dd0 c K# ⷐ
-U+1308          + '#'  > U+2dd8 c g# ⷘ
+U+1238 + '#' > U+2da0 c S# ⶠ
+U+1278 + '#' > U+2da8 c c# ⶨ
+U+12e0 + '#' > U+2db0 c Z# ⶰ
+U+1328 + '#' > U+2db8 c C# ⶸ
+U+1240 + '#' > U+2dc0 c q# ⷀ
+U+12a8 + '#' > U+2dc8 c k# ⷈ
+U+12b8 + '#' > U+2dd0 c K# ⷐ
+U+1308 + '#' > U+2dd8 c g# ⷘ
 
-U+1230          + '='  > U+ab05 c s= ꬅ  (Gamo-Gofa-Dawro, Basketo)
-U+12f8          + '='  > U+ab0d c D= ꬍ  (Gamo-Gofa-Dawro, Basketo)
-U+12d8          + '='  > U+ab15 c z= ꬕ  (Gamo-Gofa-Dawro)
-U+1328          + '='  > U+ab20 c C= ꬠ  (Gumuz)
-U+1330          + '='  > U+ab28 c P= ꬨ  (Gumuz)
+U+1230 + '=' > U+ab05 c s= ꬅ  (Gamo-Gofa-Dawro, Basketo)
+U+12f8 + '=' > U+ab0d c D= ꬍ  (Gamo-Gofa-Dawro, Basketo)
+U+12d8 + '=' > U+ab15 c z= ꬕ  (Gamo-Gofa-Dawro)
+U+1328 + '=' > U+ab20 c C= ꬠ  (Gumuz)
+U+1330 + '=' > U+ab28 c P= ꬨ  (Gumuz)
 
 c U+12a5          + '='  > U+e06d c vowel with line above
 c U+1295          + '='  > U+e295 c n     with line above     (Gumuz variant of 129d)
@@ -253,7 +226,16 @@ c U+12ad          + '='  > U+e2ad c k     with line above     (Gumuz, but not us
 c U+130d          + '='  > U+e31d c g     with line above combined (disconnected variant of 131d)
 c U+12f5          + '='  > U+e385 c d     with line inside    (archaic Oromo variant of 12fd)
 
-c Standard Characters
+c Alternative form characters (can be accessed by unique capitals as well)
+U+1200 + '[' > U+1280 c h[ ኀ
+U+12b8 + '[' > U+12b8 c H[ ኸ
+U+1230 + '[' > U+1220 c s[ ሠ
+U+1270 + '[' > U+1338 c t[ ጸ
+U+1320 + '[' > U+1340 c T[ ፀ
+
+c **********************************************************************************
+c Additional forms:
+c **********************************************************************************
 any(first)  + 'u' > index(second ,1)
 any(first)  + 'i' > index(third  ,1)
 any(first)  + 'a' > index(fourth ,1)
@@ -262,62 +244,53 @@ any(first)  + 'e' > index(sixth  ,1)
 any(first)  + 'o' > index(seventh,1)
 any(first)  + 'O' > index(eighth ,1)
 
-c Diphthong Groups
-any(first)   + 'W' > index(diph,1)   c Basic diphthongs and 4th diphthong forms
+c **********************************************************************************
+c Diphthong forms:
+c **********************************************************************************
+any(first)  + 'W' > index(diph,1)   c Basic diphthongs and 4th diphthong forms
 
-any(DGbase)  + 'u' > index(DGsecond ,1)
-any(DGbase)  + 'i' > index(DGthird  ,1)
-any(DGbase)  + 'a' > index(DGbase   ,1) C matches DGbase, but just for those that will type 'a' for 4th form
-any(DGbase)  + 'y' > index(DGfifth  ,1)
-any(DGbase)  + 'o' > index(DGseventh,1)
-
-c *** in case user is using CAPS LOCK for Diphthong, then let it still work
-any(DGbase)  + [CAPS K_U] > index(DGsecond ,1)
-any(DGbase)  + [CAPS K_I] > index(DGthird  ,1)
-any(DGbase)  + [CAPS K_A] > index(DGbase   ,1) c matches DGbase, but just for those that will type 'a' for 4th form
-any(DGbase)  + [CAPS K_Y] > index(DGfifth  ,1) c Y matches የ so need to make sure only with CAPS LOCK does it trigger
-any(DGbase)  + [CAPS K_O] > index(DGseventh,1)
-
-c Additional 'one off' Diphthongs
-U+121f  + 'M' > U+1359 c mWM ፙ
-U+134f  + 'F' > U+135a c fWF ፚ
-
-c any(first) + [CTRL K_SPACE] > index(first + 1,1)
+any(DGbase) + 'u' > index(DGsecond ,1)
+any(DGbase) + 'i' > index(DGthird  ,1)
+any(DGbase) + 'a' > index(DGbase   ,1) c matches DGbase, but just for those that will type 'a' for 4th form to match Power Ge'ez
+any(DGbase) + 'y' > index(DGfifth  ,1)
+any(DGbase) + 'o' > index(DGseventh,1)
+any(DGbase) + 'I' > index(DGspecial,1)
 
 c **********************************************************************************
 c Punctuation
 c **********************************************************************************
 
-+ ':'            > U+1361    c Amharic space  ፡
-U+1361     + ':' > U+1368    c 7 dots ordered in a circle  ፨
-U+1368     + ':' > U+1361    c Amharic space  ፡  (rota)
++ ':'        > U+1361 c Amharic space  ፡
+U+1361 + ':' > U+1368 c 7 dots ordered in a circle  ፨
+U+1368 + ':' > U+1361 c Amharic space  ፡  (rota)
 
-+ '.'            > U+1362    c Amharic full stop  ።
-U+1362     + '.' > '.'       c single dot  .
-'.'        + '.' > U+2022    c big dot in middle  •
-U+2022     + '.' > U+1362    c Amharic full stop  ።  (rota)
++ '.'        > U+1362 c Amharic full stop  ።
+U+1362 + '.' > '.'    c single dot  .
+'.'    + '.' > U+2022 c big dot in middle  •
+U+2022 + '.' > U+1362 c Amharic full stop  ።  (rota)
 
-+ ','            > U+1365    c Amharic comma (first form)  ፥
-U+1365     + ',' > U+1363    c Amharic comma (second form)  ፣
-U+1363     + ',' > U+1365    c Amharic comma (first form)  ፥  (rota)
++ ','        > U+1365 c Amharic comma (first form)  ፥
+U+1365 + ',' > U+1363 c Amharic comma (second form)  ፣
+U+1363 + ',' > U+1365 c Amharic comma (first form)  ፥  (rota)
 
-+ ';'            > U+1364    c Amharic semicolon  ፤
++ ';'        > U+1364 c Amharic semicolon  ፤
 
-U+1361     + '-' > U+1366    c two dots and slash  ፦
-U+1361     + '.' > U+1367    c three dots in vertical order  ፧
+U+1361 + '-' > U+1366 c two dots and slash  ፦
+U+1361 + '.' > U+1367 c three dots in vertical order  ፧
 
-c U+1362   + '*' > U+e408    c three rows of three dots (variant of fullstop)
-U+1362     + '/' > U+1360    c four dots with diagonal lines  ፠
+c U+1362 + '*' > U+e408 c three rows of three dots (variant of fullstop)
+U+1362 + '/' > U+1360 c four dots with diagonal lines  ፠
 
-+ '<'            > U+00ab    c Amharic opening quote  «
-U+00ab     + '<' > U+003c    c <
-U+003c     + '<' > U+00ab    c Amharic opening quote  « (rota)
+c Amharic quotes
+'<'    + '<' > U+00ab c Amharic opening double quote  «
+'<'    + '"' > U+00ab c Amharic opening double quote  «
+'<' + U+0027 > U+2039 c Amharic opening single quote  ‹
 
-+ '>'            > U+00bb    c Amharic closing quote  »
-U+00bb     + '>' > U+003e    c >
-U+003e     + '>' > U+00bb    c Amharic closing quote  » (rota)
+'>'    + '>' > U+00bb c Amharic closing double quote  »
+'>'    + '"' > U+00bb c Amharic closing double quote  »
+'>' + U+0027 > U+203a c Amharic closing single quote  ›
 
-'(' U+121d + ')' > U+e496    c 'm' with circle  
+'(' U+1218 + ')' > U+e496 c 'm' with circle  
 
 c **********************************************************************************
 c Amharic numbers
@@ -346,7 +319,3 @@ U+1371 + '0' > U+137a c 90  ፺
 U+1372 + '0' > U+137b c 100  ፻
 U+137b + '0' > U+e494 c 1000  
 U+e494 + '0' > U+137c c 10000  ፼
-
-c This new store (24-Sept-2007) is a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF
-c 2016-10-31: this new store should now not be needed.  commenting out.
-c + any(chars) > index(chars, 1)
