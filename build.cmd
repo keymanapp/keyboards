@@ -17,7 +17,7 @@ rem ###########################################
 rem Check environment and parameters
 rem ###########################################
 
-setlocal
+setlocal ENABLEDELAYEDEXPANSION ENABLEEXTENSIONS
 
 set global_silent=
 set global_debug=
@@ -57,7 +57,13 @@ if "%1"=="" (
   set global_target=*
 )
 
-for /d %%d in (%global_target%) do call :build_keyboard %%d "%~dp0"
+for /d %%d in (%global_target%) do (
+  call :build_keyboard %%d "%~dp0"
+  if !global_error! GEQ 1 (
+    echo Aborting build with error !global_error!.
+    exit /B !global_error!
+  )
+)
 for /d %%d in (%global_target%) do call :build_package %%d "%~dp0"
 
 exit /B 0
@@ -79,8 +85,9 @@ call build.cmd -p %1.kpj %global_silent% %global_clean% %global_debug%
 
 if errorlevel 1 (
   set global_error=%errorlevel%
+  echo Aborting build of %1 due to error !global_error!.
   cd /d %2
-  exit /B %global_error%
+  exit /B !global_error!
 )
 cd /d %2
 
@@ -101,8 +108,9 @@ call build.cmd %global_silent% %global_clean% %global_debug%
 
 if errorlevel 1 (
   set global_error=%errorlevel%
+  echo Aborting build of %1 due to error !global_error!.
   cd /d %2
-  exit /B %global_error%
+  exit /B !global_error!
 )
 cd /d %2
 
