@@ -72,28 +72,58 @@
               },
               {
                 "id": "K_G",
-                "text": "ၵ"
+                "text": "ၵ",
+                "sk": [
+                  {
+                    "text": "း",
+                    "id": "T_g"
+                  }
+                ]
               },
               {
                 "id": "K_H",
-                "text": "ႁ"
+                "text": "ႁ",
+                "sk": [
+                  {
+                    "text": "ႇ",
+                    "id": "T_h"
+                  }
+                ]
               },
               {
                 "id": "K_J",
-                "text": "ၸ"
+                "text": "ၸ",
+                "sk": [
+                  {
+                    "text": "ႈ",
+                    "id": "T_j"
+                  }
+                ]
               },
               {
                 "id": "K_K",
-                "text": "ၶ"
+                "text": "ၶ",
+                "sk": [
+                  {
+                    "text": "ႉ",
+                    "id": "T_k"
+                  }
+                ]
               },
               {
                 "id": "K_L",
-                "text": "လ"
+                "text": "လ",
+                "sk": [
+                  {
+                    "text": "ႊ",
+                    "id": "T_l"
+                  }
+                ]
               },
               {
-                "id": "T_new_20",
+                "id": "T_new_580",
                 "text": "",
-                "width": "10",
+                "width": 10,
                 "sp": "10"
               }
             ]
@@ -137,12 +167,20 @@
                 "text": "မ"
               },
               {
-                "id": "K_PERIOD",
-                "text": ".",
+                "id": "T_PERIOD",
+                "text": "၊",
                 "sk": [
+                  {
+                    "text": "။",
+                    "id": "T_period_s"
+                  },
                   {
                     "text": ",",
                     "id": "K_COMMA"
+                  },
+                  {
+                    "text": ".",
+                    "id": "K_PERIOD"
                   },
                   {
                     "text": "!",
@@ -229,8 +267,9 @@
                 "text": "ႅ"
               },
               {
-                "id": "K_W",
-                "text": "W"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
                 "id": "K_E",
@@ -261,8 +300,9 @@
                 "text": "ႊ"
               },
               {
-                "id": "K_P",
-                "text": "P"
+                "id": "",
+                "text": "",
+                "sp": "9"
               }
             ]
           },
@@ -270,9 +310,10 @@
             "id": 2,
             "key": [
               {
-                "id": "K_A",
-                "text": "A",
-                "pad": 70
+                "id": "",
+                "text": "",
+                "pad": 70,
+                "sp": "9"
               },
               {
                 "id": "K_S",
@@ -325,24 +366,28 @@
                 "nextlayer": "default"
               },
               {
-                "id": "K_Z",
-                "text": "Z"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
-                "id": "K_X",
-                "text": "X"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
                 "id": "K_C",
                 "text": "ြ"
               },
               {
-                "id": "K_V",
-                "text": "V"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
-                "id": "K_B",
-                "text": "B"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
                 "id": "K_N",
@@ -354,7 +399,7 @@
               },
               {
                 "id": "K_PERIOD",
-                "text": ".",
+                "text": "။",
                 "sk": [
                   {
                     "text": ",",
@@ -446,43 +491,143 @@
             "key": [
               {
                 "id": "K_1",
-                "text": "1"
+                "text": "1",
+                "sk": [
+                  {
+                    "text": "၁",
+                    "id": "T_1_b"
+                  },
+                  {
+                    "text": "႑",
+                    "id": "T_1_s"
+                  }
+                ]
               },
               {
                 "id": "K_2",
-                "text": "2"
+                "text": "2",
+                "sk": [
+                  {
+                    "text": "၂",
+                    "id": "T_2_b"
+                  },
+                  {
+                    "text": "႒",
+                    "id": "T_2_s"
+                  }
+                ]
               },
               {
                 "id": "K_3",
-                "text": "3"
+                "text": "3",
+                "sk": [
+                  {
+                    "text": "၃",
+                    "id": "T_3_b"
+                  },
+                  {
+                    "text": "႓",
+                    "id": "T_3_s"
+                  }
+                ]
               },
               {
                 "id": "K_4",
-                "text": "4"
+                "text": "4",
+                "sk": [
+                  {
+                    "text": "၄",
+                    "id": "T_4_b"
+                  },
+                  {
+                    "text": "႔",
+                    "id": "T_4_s"
+                  }
+                ]
               },
               {
                 "id": "K_5",
-                "text": "5"
+                "text": "5",
+                "sk": [
+                  {
+                    "text": "၅",
+                    "id": "T_5_b"
+                  },
+                  {
+                    "text": "႕",
+                    "id": "T_5_s"
+                  }
+                ]
               },
               {
                 "id": "K_6",
-                "text": "6"
+                "text": "6",
+                "sk": [
+                  {
+                    "text": "၆",
+                    "id": "T_6_b"
+                  },
+                  {
+                    "text": "႖",
+                    "id": "T_6_s"
+                  }
+                ]
               },
               {
                 "id": "K_7",
-                "text": "7"
+                "text": "7",
+                "sk": [
+                  {
+                    "text": "၇",
+                    "id": "T_7_b"
+                  },
+                  {
+                    "text": "႗",
+                    "id": "T_7_s"
+                  }
+                ]
               },
               {
                 "id": "K_8",
-                "text": "8"
+                "text": "8",
+                "sk": [
+                  {
+                    "text": "၈",
+                    "id": "T_8_b"
+                  },
+                  {
+                    "text": "႘",
+                    "id": "T_8_s"
+                  }
+                ]
               },
               {
                 "id": "K_9",
-                "text": "9"
+                "text": "9",
+                "sk": [
+                  {
+                    "text": "၉",
+                    "id": "T_9_b"
+                  },
+                  {
+                    "text": "႙",
+                    "id": "T_9_s"
+                  }
+                ]
               },
               {
                 "id": "K_0",
-                "text": "0"
+                "text": "0",
+                "sk": [
+                  {
+                    "text": "၀",
+                    "id": "T_0_b"
+                  },
+                  {
+                    "text": "႐",
+                    "id": "T_0_s"
+                  }
+                ]
               }
             ]
           },
@@ -614,7 +759,7 @@
               },
               {
                 "id": "K_8",
-                "text": "*",
+                "text": "8",
                 "layer": "shift"
               },
               {
@@ -675,7 +820,7 @@
             "key": [
               {
                 "id": "K_Q",
-                "text": "ႅ"
+                "text": "ဵ"
               },
               {
                 "id": "K_W",
@@ -737,28 +882,58 @@
               },
               {
                 "id": "K_G",
-                "text": "ၵ"
+                "text": "ၵ",
+                "sk": [
+                  {
+                    "text": "း",
+                    "id": "T_g"
+                  }
+                ]
               },
               {
                 "id": "K_H",
-                "text": "ႁ"
+                "text": "ႁ",
+                "sk": [
+                  {
+                    "text": "ႇ",
+                    "id": "T_h"
+                  }
+                ]
               },
               {
                 "id": "K_J",
-                "text": "ၸ"
+                "text": "ၸ",
+                "sk": [
+                  {
+                    "text": "ႈ",
+                    "id": "T_j"
+                  }
+                ]
               },
               {
                 "id": "K_K",
-                "text": "ၶ"
+                "text": "ၶ",
+                "sk": [
+                  {
+                    "text": "ႉ",
+                    "id": "T_k"
+                  }
+                ]
               },
               {
                 "id": "K_L",
-                "text": "လ"
+                "text": "လ",
+                "sk": [
+                  {
+                    "text": "ႊ",
+                    "id": "T_l"
+                  }
+                ]
               },
               {
-                "id": "T_new_54",
+                "id": "T_new_406",
                 "text": "",
-                "width": "10",
+                "width": 10,
                 "sp": "10"
               }
             ]
@@ -798,15 +973,23 @@
               },
               {
                 "id": "K_M",
-                "text": "m"
+                "text": "မ"
               },
               {
-                "id": "K_PERIOD",
-                "text": ".",
+                "id": "T_PERIOD",
+                "text": "၊",
                 "sk": [
+                  {
+                    "text": "။",
+                    "id": "T_period_s"
+                  },
                   {
                     "text": ",",
                     "id": "K_COMMA"
+                  },
+                  {
+                    "text": ".",
+                    "id": "K_PERIOD"
                   },
                   {
                     "text": "!",
@@ -893,8 +1076,9 @@
                 "text": "ႅ"
               },
               {
-                "id": "K_W",
-                "text": "W"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
                 "id": "K_E",
@@ -925,8 +1109,9 @@
                 "text": "ႊ"
               },
               {
-                "id": "K_P",
-                "text": "P"
+                "id": "",
+                "text": "",
+                "sp": "9"
               }
             ]
           },
@@ -934,9 +1119,10 @@
             "id": 2,
             "key": [
               {
-                "id": "K_A",
-                "text": "A",
-                "pad": "50"
+                "id": "",
+                "text": "",
+                "pad": "50",
+                "sp": "9"
               },
               {
                 "id": "K_S",
@@ -988,24 +1174,28 @@
                 "nextlayer": "default"
               },
               {
-                "id": "K_Z",
-                "text": "Z"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
-                "id": "K_X",
-                "text": "X"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
                 "id": "K_C",
                 "text": "ြ"
               },
               {
-                "id": "K_V",
-                "text": "V"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
-                "id": "K_B",
-                "text": "B"
+                "id": "",
+                "text": "",
+                "sp": "9"
               },
               {
                 "id": "K_N",
@@ -1017,7 +1207,7 @@
               },
               {
                 "id": "K_PERIOD",
-                "text": ".",
+                "text": "။",
                 "sk": [
                   {
                     "text": ",",
@@ -1108,43 +1298,143 @@
             "key": [
               {
                 "id": "K_1",
-                "text": "1"
+                "text": "1",
+                "sk": [
+                  {
+                    "text": "၁",
+                    "id": "T_1_b"
+                  },
+                  {
+                    "text": "႑",
+                    "id": "T_1_s"
+                  }
+                ]
               },
               {
                 "id": "K_2",
-                "text": "2"
+                "text": "2",
+                "sk": [
+                  {
+                    "text": "၂",
+                    "id": "T_2_b"
+                  },
+                  {
+                    "text": "႒",
+                    "id": "T_2_s"
+                  }
+                ]
               },
               {
                 "id": "K_3",
-                "text": "3"
+                "text": "3",
+                "sk": [
+                  {
+                    "text": "၃",
+                    "id": "T_3_b"
+                  },
+                  {
+                    "text": "႓",
+                    "id": "T_3_s"
+                  }
+                ]
               },
               {
                 "id": "K_4",
-                "text": "4"
+                "text": "4",
+                "sk": [
+                  {
+                    "text": "၄",
+                    "id": "T_4_b"
+                  },
+                  {
+                    "text": "႔",
+                    "id": "T_4_s"
+                  }
+                ]
               },
               {
                 "id": "K_5",
-                "text": "5"
+                "text": "5",
+                "sk": [
+                  {
+                    "text": "၅",
+                    "id": "T_5_b"
+                  },
+                  {
+                    "text": "႕",
+                    "id": "T_5_s"
+                  }
+                ]
               },
               {
                 "id": "K_6",
-                "text": "6"
+                "text": "6",
+                "sk": [
+                  {
+                    "text": "၆",
+                    "id": "T_6_b"
+                  },
+                  {
+                    "text": "႖",
+                    "id": "T_6_s"
+                  }
+                ]
               },
               {
                 "id": "K_7",
-                "text": "7"
+                "text": "7",
+                "sk": [
+                  {
+                    "text": "၇",
+                    "id": "T_6_b"
+                  },
+                  {
+                    "text": "႗",
+                    "id": "T_6_s"
+                  }
+                ]
               },
               {
                 "id": "K_8",
-                "text": "8"
+                "text": "8",
+                "sk": [
+                  {
+                    "text": "၈",
+                    "id": "T_8_b"
+                  },
+                  {
+                    "text": "႘",
+                    "id": "T_8_s"
+                  }
+                ]
               },
               {
                 "id": "K_9",
-                "text": "9"
+                "text": "9",
+                "sk": [
+                  {
+                    "text": "၉",
+                    "id": "T_9_b"
+                  },
+                  {
+                    "text": "႙",
+                    "id": "T_9_s"
+                  }
+                ]
               },
               {
                 "id": "K_0",
-                "text": "0"
+                "text": "0",
+                "sk": [
+                  {
+                    "text": "၀",
+                    "id": "T_0_b"
+                  },
+                  {
+                    "text": "႐",
+                    "id": "T_0_s"
+                  }
+                ]
               }
             ]
           },
@@ -1153,34 +1443,34 @@
             "key": [
               {
                 "id": "K_4",
-                "layer": "shift",
                 "text": "$",
-                "pad": "50"
+                "pad": "50",
+                "layer": "shift"
               },
               {
                 "id": "K_2",
-                "layer": "shift",
-                "text": "@"
+                "text": "@",
+                "layer": "shift"
               },
               {
                 "id": "K_3",
-                "layer": "shift",
-                "text": "#"
+                "text": "#",
+                "layer": "shift"
               },
               {
                 "id": "K_5",
-                "layer": "shift",
-                "text": "%"
+                "text": "%",
+                "layer": "shift"
               },
               {
                 "id": "K_6",
-                "layer": "shift",
-                "text": "&"
+                "text": "&",
+                "layer": "shift"
               },
               {
                 "id": "K_HYPHEN",
-                "layer": "shift",
-                "text": "_"
+                "text": "_",
+                "layer": "shift"
               },
               {
                 "id": "K_EQUAL",
@@ -1189,8 +1479,8 @@
               },
               {
                 "id": "K_BKSLASH",
-                "layer": "shift",
-                "text": "|"
+                "text": "|",
+                "layer": "shift"
               },
               {
                 "id": "K_BKSLASH",
@@ -1198,6 +1488,7 @@
                 "layer": "default"
               },
               {
+                "id": "T_new_469",
                 "text": "",
                 "width": "10",
                 "sp": "10"
@@ -1230,13 +1521,13 @@
               },
               {
                 "id": "K_9",
-                "layer": "shift",
-                "text": "("
+                "text": "(",
+                "layer": "shift"
               },
               {
                 "id": "K_0",
-                "layer": "shift",
-                "text": ")"
+                "text": ")",
+                "layer": "shift"
               },
               {
                 "id": "K_RBRKT",
@@ -1260,8 +1551,8 @@
               },
               {
                 "id": "K_EQUAL",
-                "layer": "shift",
-                "text": "+"
+                "text": "+",
+                "layer": "shift"
               },
               {
                 "id": "K_HYPHEN",
@@ -1269,8 +1560,8 @@
               },
               {
                 "id": "K_8",
-                "layer": "shift",
-                "text": "*"
+                "text": "*",
+                "layer": "shift"
               },
               {
                 "id": "K_SLASH",
