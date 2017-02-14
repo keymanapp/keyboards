@@ -13,6 +13,18 @@ begin Unicode > use(main)
 
 
 group(main) using keys
++ [ALT K_PERIOD] > '.'
++ [ALT K_COMMA] > ','
++ [ALT K_0] > '၀'
++ [ALT K_9] > '၉'
++ [ALT K_8] > '၈'
++ [ALT K_7] > '၇'
++ [ALT K_6] > '၆'
++ [ALT K_5] > '၅'
++ [ALT K_4] > '၄'
++ [ALT K_3] > '၃'
++ [ALT K_2] > '၂'
++ [ALT K_1] > '၁'
 + [SHIFT K_M] > 'ံ'
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_PERIOD] > '။'
@@ -174,5 +186,49 @@ group(main) using keys
 + [K_2] > '2'
 + [K_1] > '1'
 + [SHIFT K_BKQUOTE] > '~'
-+ [K_BKQUOTE] > '`'
++ [K_BKQUOTE] > '`'     
+ 
+           
+ 
++ [T_0_b] > "၀"
++ [T_1_b] > "၁"
++ [T_2_b] > "၂"
++ [T_3_b] > "၃"
++ [T_4_b] > "၄"
++ [T_5_b] > "၅"
++ [T_6_b] > "၆"
++ [T_7_b] > "၇"
++ [T_8_b] > "၈"
++ [T_9_b] > "၉"
 
++ [T_0_s] > "႐"
++ [T_1_s] > "႑"
++ [T_2_s] > "႒"
++ [T_3_s] > "႓"
++ [T_4_s] > "႔"
++ [T_5_s] > "႕"
++ [T_6_s] > "႖"
++ [T_7_s] > "႗"
++ [T_8_s] > "႘"
++ [T_9_s] > "႙"  
++ [T_9_s] > "႙"  
+
+platform('touch') + [K_X] > U+1062
+
+platform('touch') + [SHIFT K_G] > U+1038 
+platform('touch') + [SHIFT K_H] > U+1087 
+platform('touch') + [SHIFT K_J] > U+1088
+platform('touch') + [SHIFT K_K] > U+1089
+platform('touch') + [T_PERIOD] > U+104A             
+platform('touch') + [T_period_s] > U+104B
+
+platform('touch') + [T_g] > U+1038 
+platform('touch') + [T_h] > U+1087
+platform('touch') + [T_j] > U+1088
+platform('touch') + [T_k] > U+1089             
+platform('touch') + [T_l] > U+108A 
+
+platform('touch') + [K_COMMA] > ','
+platform('touch') + [K_PERIOD] > '.'
+platform('touch') + [K_COLON] > ';'
+platform('touch') + [SHIFT K_COLON] > ':'
