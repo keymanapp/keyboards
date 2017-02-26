@@ -1,17 +1,17 @@
 ﻿store(&VERSION) '9.0'
-store(&NAME) 'SIL Power-G'
+store(&NAME) 'SIL Power-G Ethiopic'
 store(&TARGETS) 'windows macosx linux'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&ETHNOLOGUECODE) 'amh bcq bst dwr gdl gez gmv gof guk kxc mdx suq tig zay'
-store(&BITMAP) 'sil_ethiopic_power_g.bmp'
-store(&COPYRIGHT) '© 2017 SIL Ethiopia'
-store(&MESSAGE) 'The SIL Power-G Unicode keyboard enables typing in all Ethiopic Fidel based languages.'
+store(&BITMAP) 'sil_power_g_ethiopic.bmp'
+store(&COPYRIGHT) '© SIL Ethiopia'
+store(&MESSAGE) 'The SIL Power-G Ethiopic Unicode keyboard enables typing in all Ethiopic Fidel based languages.'
+store(&LANGUAGE) 'x045E'
+store(&WINDOWSLANGUAGES) 'x045E'
 
-c ***********************************************************************************
-c Amharic fidel
-c ***********************************************************************************
+c *********************************************************************************
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 store (key)       "h"     "l"     "H"     "m"     "J"     "r"     "s"     "S"     \
                   "q"             "Q"             "b"     "v"     "t"     "c"     \
                   "L"             "n"     "N"     "x"     "k"             "K"     \
@@ -26,7 +26,7 @@ store (keyU)      U+1200  U+1208  U+1210  U+1218  U+1220  U+1228  U+1230  U+1238
                   U+1300  U+1308          U+1318  U+1320  U+1328  U+1330  U+1338  \
                   U+1340  U+1348  U+1350                                          \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c First <base> - forms
 store (first)     U+1200  U+1208  U+1210  U+1218  U+1220  U+1228  U+1230  U+1238  \
                   U+1240          U+1250          U+1260  U+1268  U+1270  U+1278  \
@@ -38,7 +38,7 @@ store (first)     U+1200  U+1208  U+1210  U+1218  U+1220  U+1228  U+1230  U+1238
                                   U+ab05                                  U+ab15  \
                           U+ab0d                          U+ab20          U+ab28  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Second 'u' - forms
 store (second)    U+1201  U+1209  U+1211  U+1219  U+1221  U+1229  U+1231  U+1239  \
                   U+1241          U+1251          U+1261  U+1269  U+1271  U+1279  \
@@ -50,7 +50,7 @@ store (second)    U+1201  U+1209  U+1211  U+1219  U+1221  U+1229  U+1231  U+1239
                                   U+ab01                                  U+ab11  \
                           U+ab09                          U+ab21          U+ab29  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Third 'i' - forms
 store (third)     U+1202  U+120a  U+1212  U+121a  U+1222  U+122a  U+1232  U+123a  \
                   U+1242          U+1252          U+1262  U+126a  U+1272  U+127a  \
@@ -62,7 +62,7 @@ store (third)     U+1202  U+120a  U+1212  U+121a  U+1222  U+122a  U+1232  U+123a
                                   U+ab02                                  U+ab12  \
                           U+ab0a                          U+ab22          U+ab2A  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Fourth 'a' - form
 store (fourth)    U+1203  U+120b  U+1213  U+121b  U+1223  U+122b  U+1233  U+123b  \
                   U+1243          U+1253          U+1263  U+126b  U+1273  U+127b  \
@@ -74,7 +74,7 @@ store (fourth)    U+1203  U+120b  U+1213  U+121b  U+1223  U+122b  U+1233  U+123b
                                   U+ab03                                  U+ab13  \
                           U+ab0b                          U+ab23          U+ab2B  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Fifth 'y' - form
 store (fifth)     U+1204  U+120c  U+1214  U+121c  U+1224  U+122c  U+1234  U+123c  \
                   U+1244          U+1254          U+1264  U+126c  U+1274  U+127c  \
@@ -86,7 +86,7 @@ store (fifth)     U+1204  U+120c  U+1214  U+121c  U+1224  U+122c  U+1234  U+123c
                                   U+ab04                                  U+ab14  \
                           U+ab0c                          U+ab24          U+ab2C  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Sixth 'e' - form (basic form) Added: diphthonghs which have a second form
 store (sixth)     U+1205  U+120d  U+1215  U+121d  U+1225  U+122d  U+1235  U+123d  \
                   U+1245          U+1255          U+1265  U+126d  U+1275  U+127d  \
@@ -98,7 +98,7 @@ store (sixth)     U+1205  U+120d  U+1215  U+121d  U+1225  U+122d  U+1235  U+123d
                                   U+ab05                                  U+ab15  \
                           U+ab0d                          U+ab25          U+ab2D  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Seventh 'o' - form
 store(seventh)    U+1206  U+120e  U+1216  U+121e  U+1226  U+122e  U+1236  U+123e  \
                   U+1246          U+1256          U+1266  U+126e  U+1276  U+127e  \
@@ -110,7 +110,7 @@ store(seventh)    U+1206  U+120e  U+1216  U+121e  U+1226  U+122e  U+1236  U+123e
                                   U+ab06                                  U+ab16  \
                           U+ab0e                          U+ab26          U+ab2E  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Eighth 'O' - form (special meen, suri, mursi form - if none, return base form)
 store(eighth)     U+1207  U+2d80  U+1210  U+2d81  U+1220  U+2d82  U+2d83  U+2d84  \
                   U+1247          U+1250          U+2d85  U+1268  U+2d86  U+2d87  \
@@ -122,7 +122,7 @@ store(eighth)     U+1207  U+2d80  U+1210  U+2d81  U+1220  U+2d82  U+2d83  U+2d84
                                   U+ab05                                  U+ab15  \
                           U+ab0d                          U+ab20          U+ab28  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Diphthong 'W' - form (if no diphthong, return base form)
 store(diph)       U+1200  U+120f  U+1217  U+121f  U+1227  U+122f  U+1237  U+123f  \
                   U+124b          U+125b          U+1267  U+126f  U+1277  U+127f  \
@@ -134,45 +134,43 @@ store(diph)       U+1200  U+120f  U+1217  U+121f  U+1227  U+122f  U+1237  U+123f
                                   U+ab05                                  U+ab15  \
                           U+ab0d                          U+ab20          U+ab28  \
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Diphthong Groups
 
-c 'W' or 'Wa'
-store(DGbase)     U+121f  U+122f  U+124b  U+125b  U+1267  U+128b  U+12b3  U+12c3  \
-                  U+1313  U+131f  U+134f  U+1357
+c 'base' is 6th form for SIL Ethiopic, is 4th form diphthong for SIL Power-G
+c                 m       r       q       Q       b       L       k       K       g       G       f       p
+
+c SIL Ethiopic 'A'
+c store(DGbase)     U+121d  U+122d  U+1245  U+1255  U+1265  U+1285  U+12ad  U+12bd  U+130d  U+131d  U+134d  U+1355
+
+c SIL Power-G 'W' or 'Wa'
+store(DGbase)   U+121f  U+122f  U+124b  U+125b  U+1267  U+128b  U+12b3  U+12c3  U+1313  U+131f  U+134f  U+1357
 
 c 'Wu'
-store(DGsecond)   U+1383  U+122f  U+124d  U+125d  U+1387  U+128d  U+12b5  U+12c5  \
-                  U+1315  U+2d96  U+138b  U+138f
+store(DGsecond)   U+1383  U+122f  U+124d  U+125d  U+1387  U+128d  U+12b5  U+12c5  U+1315  U+2d96  U+138b  U+138f
 
 c 'Wi'
-store(DGthird)    U+1381  U+1358  U+124a  U+125a  U+1385  U+128a  U+12b2  U+12c2  \
-                  U+1312  U+2d94  U+1389  U+138d
+store(DGthird)    U+1381  U+122f  U+124a  U+125a  U+1385  U+128a  U+12b2  U+12c2  U+1312  U+2d94  U+1389  U+138d
 
 c 'Wy'
-store(DGfifth)    U+1382  U+122f  U+124c  U+125c  U+1386  U+128c  U+12b4  U+12c4  \
-                  U+1314  U+2d95  U+138a  U+138e
+store(DGfifth)    U+1382  U+122f  U+124c  U+125c  U+1386  U+128c  U+12b4  U+12c4  U+1314  U+2d95  U+138a  U+138e
 
 c 'Wo'
-store(DGseventh)  U+1380  U+122f  U+1248  U+1258  U+1384  U+1288  U+12b0  U+12c0  \
-                  U+1310  U+2d93  U+1388  U+138c
+store(DGseventh)  U+1380  U+122f  U+1248  U+1258  U+1384  U+1288  U+12b0  U+12c0  U+1310  U+2d93  U+1388  U+138c
 
-c 'WI' (if no special diphthong, return base diphthong form)
-store(DGspecial)  U+1359  U+1358  U+124b  U+125b  U+1267  U+128b  U+12b3  U+12c3  \
-                  U+1313  U+131f  U+135a  U+1357
+c 'WI' (if no special diphthong, return base /4th diphthong form)
+store(DGspecial)  U+1359  U+1358  U+124b  U+125b  U+1267  U+128b  U+12b3  U+12c3  U+1313  U+131f  U+135a  U+1357
 
-c ----------------------------------------------------------------------------------
+c ---------------------------------------------------------------------------------
 c Diacritics
 
 store(diacKey) "1"    "2"    "3"    "4"    "5"    "6"    "7"    "8"    "9"    "0"    "'"    '"'    ":"
-store(diacU)   u+030f u+0300 u+0304 u+0301 u+030b u+0302 u+030c u+0307 u+0308 u+0303 u+135f u+135d u+135e
-store(&LANGUAGE) 'x045E'
-store(&WINDOWSLANGUAGES) 'x045E'
+store(diacU)   U+030f U+0300 U+0304 U+0301 U+030b U+0302 U+030c U+0307 U+0308 U+0303 U+135f U+135d U+135e
 
 begin unicode > use(Main)
 
 group(Main) using keys
-c **********************************************************************************
+c *********************************************************************************
 c At first create all first-form elements:
 
 + any(key)  > index(keyU,1) c all standard first-forms
@@ -198,11 +196,6 @@ c blocking unused caps english letters
 + 'B'       > dk(5)
 
 c **********************************************************************************
-c Diacritics above
-c **********************************************************************************
-U+1362 + any(diacKey) > index(diacU,2)
-
-c **********************************************************************************
 c Special group first forms:
 c **********************************************************************************
 U+1238 + '#' > U+2da0 c S# ⶠ
@@ -214,11 +207,11 @@ U+12a8 + '#' > U+2dc8 c k# ⷈ
 U+12b8 + '#' > U+2dd0 c K# ⷐ
 U+1308 + '#' > U+2dd8 c g# ⷘ
 
-U+1230 + '=' > U+ab05 c s= ꬅ  (Gamo-Gofa-Dawro, Basketo)
-U+12f8 + '=' > U+ab0d c D= ꬍ  (Gamo-Gofa-Dawro, Basketo)
-U+12d8 + '=' > U+ab15 c z= ꬕ  (Gamo-Gofa-Dawro)
-U+1328 + '=' > U+ab20 c C= ꬠ  (Gumuz)
-U+1330 + '=' > U+ab28 c P= ꬨ  (Gumuz)
+U+1230 + '=' > U+ab05 c s= ꬅ
+U+12f8 + '=' > U+ab0d c D= ꬍ
+U+12d8 + '=' > U+ab15 c z= ꬕ
+U+1328 + '=' > U+ab20 c C= ꬠ
+U+1330 + '=' > U+ab28 c P= ꬨ
 
 c U+12a5          + '='  > U+e06d c vowel with line above
 c U+1295          + '='  > U+e295 c n     with line above     (Gumuz variant of 129d)
@@ -247,7 +240,10 @@ any(first)  + 'O' > index(eighth ,1)
 c **********************************************************************************
 c Diphthong forms:
 c **********************************************************************************
-any(first)  + 'W' > index(diph,1)   c Basic diphthongs and 4th diphthong forms
+any(first)  + 'W' > index(diph,1)   c Basic diphthongs and fourth diphthong forms
+
+c SIL Ethiopic: DGBase matches 6th form
+c SIL Power-G: DGBase matches basic diphthong form
 
 any(DGbase) + 'u' > index(DGsecond ,1)
 any(DGbase) + 'i' > index(DGthird  ,1)
@@ -256,9 +252,14 @@ any(DGbase) + 'y' > index(DGfifth  ,1)
 any(DGbase) + 'o' > index(DGseventh,1)
 any(DGbase) + 'I' > index(DGspecial,1)
 
-c **********************************************************************************
+c *********************************************************************************
+c Diacritics above
+c *********************************************************************************
+U+1362 + any(diacKey) > index(diacU,2) c . + key
+
+c *********************************************************************************
 c Punctuation
-c **********************************************************************************
+c *********************************************************************************
 
 + ':'        > U+1361 c Amharic space  ፡
 U+1361 + ':' > U+1368 c 7 dots ordered in a circle  ፨
@@ -290,11 +291,11 @@ c Amharic quotes
 '>'    + '"' > U+00bb c Amharic closing double quote  »
 '>' + U+0027 > U+203a c Amharic closing single quote  ›
 
-'(' U+1218 + ')' > U+e496 c 'm' with circle  
+U+1218 + ')' > U+e496 c 'm' with circle  
 
-c **********************************************************************************
+c *********************************************************************************
 c Amharic numbers
-c **********************************************************************************
+c *********************************************************************************
 
 '1'    + '*' > U+1369 c 1  ፩
 '2'    + '*' > U+136a c 2  ፪
