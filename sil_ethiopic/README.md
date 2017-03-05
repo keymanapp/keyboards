@@ -1,11 +1,11 @@
 SIL Ethiopic Keyboard
-=============================
+=====================
 
 Copyright (C) SIL Ethiopia
 
 Version 2.0
 
-The “SIL Ethipoic” keyboard was developed to input Ethiopic Fidel scripts.  This keyboard is designed to work with the Abyssinica SIL font (version 1.500). However, unless you need to use the newest Unicode 6.0 Ethiopic codepoints (for Basketo, Gumuz and Gamo-Gofa-Dawro) or the Private Use Area (PUA) characters in this font, you can use this keyboard with any Ethiopic Unicode font.
+The “SIL Ethiopic” keyboard was developed to input Ethiopic Fidel scripts. You can use this keyboard with any Ethiopic Unicode font unless you need to use the newer Unicode 6.0+ Ethiopic codepoints (for Basketo, Gumuz and Gamo-Gofa-Dawro) or the two Private Use Area (PUA) characters of this keyboard. The Abyssinica SIL font (version 1.5+) is recommended if you need to use these newer Unicode 6.0+ or PUA characters.
 
 Links
 -----
@@ -16,8 +16,5 @@ Links
 Supported Platforms
 -------------------
  * Windows
- * Mac OS X
+ * macOS
  * Linux
-
-Todo
-----
