@@ -2,30 +2,23 @@
 store(&NAME) 'Persian Phonetic'
 store(&TARGETS) 'any'
 store(&WINDOWSLANGUAGES) 'x0429'
+store(&LANGUAGE) 'x0429'
 store(&KMW_RTL) '1'
 store(&BITMAP) 'persian_phonetic.ico'
 store(&VISUALKEYBOARD) 'persian_phonetic.kvk'
 store(&LAYOUTFILE) 'persian_phonetic-layout.js'
-
-group(main) using keys
-
-+ [K_BKSLASH] > dk(005c)
-     
-match > use(deadkeys)
-
-+ [SHIFT K_RBRKT] > '{'
-+ [SHIFT K_LBRKT] > '}'
-+ [SHIFT K_0] > '('
-+ [SHIFT K_9] > ')'
-+ [K_RBRKT] > '['
-+ [K_LBRKT] > ']'
 store(&KEYBOARDVERSION) '1.0'
 store(&ETHNOLOGUECODE) 'pes'
 store(&COPYRIGHT) '© 2017 SIL International'
 store(&MESSAGE) 'The Persian Phonetic keyboard is distributed under The MIT License (MIT).'
 store(&KMW_HELPTEXT) 'This is a phonetically organized Persian keyboard.'
+
 begin Unicode > use(main)
 
+group(main) using keys
+
++ [K_BKSLASH] > dk(005c)
+     
 + [SHIFT K_PERIOD] > '‹'
 + [SHIFT K_COMMA] > '›'
 + [SHIFT K_E] > 'ٔ'
@@ -90,6 +83,15 @@ begin Unicode > use(main)
 + [K_3] > '۳'
 + [K_2] > '۲'
 + [K_1] > '۱'
+
+match > use(deadkeys)
+
++ [SHIFT K_RBRKT] > '{'
++ [SHIFT K_LBRKT] > '}'
++ [SHIFT K_0] > '('
++ [SHIFT K_9] > ')'
++ [K_RBRKT] > '['
++ [K_LBRKT] > ']'
 
 group(deadkeys) 
 
