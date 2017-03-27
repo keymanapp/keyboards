@@ -1,6 +1,13 @@
 SIL Ethiopic Power-G Change History
 ===================================
 
+1.2 (27 Mar 2017)
+-----------------
+
+* renamed display name from SIL Ethiopic Power-G to SIL Power-G Ethiopic (to be less confusing to users that may have both SIL Ethiopic and SIL Power-G Ethiopic installed)
+* re-wrote keyboard layout document (welcome.htm)
+* added readme.htm
+
 1.1 (18 Jan 2017)
 -----------------
 
