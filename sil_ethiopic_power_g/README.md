@@ -1,18 +1,17 @@
 SIL Ethiopic Power-G Keyboard
 =============================
 
-Copyright (C) 2017 SIL International
+Copyright (C) SIL Ethiopia
 
-Version 1.1
+Version 1.2
 
-Keyboard based on SIL Ethiopic 1.3, with sequences modified to match
-Concepts Data Systems' Power Ge'ez (Phonetic) keyboard.
+The SIL Ethiopic Power-G keyboard enables typing in all Ethiopic Fidel based languages using the keyboarding sequences found in the Power Ge'ez (Phonetic) keyboard from Concepts Data Systems.
 
 Links
 -----
 
- * Home:     <http://www.sil.org>
- * Contact:  <nrsi@sil.org>
+ * Home:     <http://www.silethiopia.org>
+ * Contact:  <computer_ethiopia@sil.org>
 
 Supported Platforms
 -------------------
