@@ -181,7 +181,7 @@ c At first create all sixth-form elements:
 + 'a'       > U+12a3
 + 'e'       > U+12a4
 + 'o'       > U+12a6
-    
+
 + 'V'       > U+12d0 c Single vowels at the beginning of a word (second form)
 + 'U'       > U+12d1
 + 'I'       > U+12d2
@@ -196,6 +196,12 @@ c blocking unused caps english letters
 c *********************************************************************************
 c Special group sixth forms:
 c *********************************************************************************
+c Alternative form characters (can be accessed by unique capitals as well)
+U+1205 + '[' > U+1285 c h[ or L  ኅ
+U+1215 + '[' > U+12bd c H[ or K  ኽ
+U+1235 + '[' > U+1225 c s[ or J  ሥ
+U+1275 + '[' > U+133d c t[ or F  ጽ
+U+1325 + '[' > U+1345 c T[ or Y  ፅ
 
 U+123d + '#' > U+2da5 c S#  ⶥ
 U+127d + '#' > U+2dad c c#  ⶭ
@@ -203,9 +209,9 @@ U+12e5 + '#' > U+2db5 c Z#  ⶵ
 U+132d + '#' > U+2dbd c C#  ⶽ
 U+1245 + '#' > U+2dc5 c q#  ⷅ
 U+12ad + '#' > U+2dcd c k#  ⷍ
-U+12bd + '#' > U+2dd5 c K#  ⷕ
+U+12bd + '#' > U+2dd5 c H[# or K# ⷕ
 U+130d + '#' > U+2ddd c g#  ⷝ
- 
+
 U+1235 + '=' > U+ab05 c s=  ꬅ
 U+12fd + '=' > U+ab0d c D=  ꬍ
 U+12dd + '=' > U+ab15 c z=  ꬕ
@@ -217,13 +223,6 @@ c U+1295 + '='  > U+e295 c n     with line above     (Gumuz variant of 129d)
 c U+12ad + '='  > U+e2ad c k     with line above     (Gumuz, but not used)
 c U+130d + '='  > U+e31d c g     with line above combined (disconnected variant of 131d)
 c U+12f5 + '='  > U+e385 c d     with line inside    (archaic Oromo variant of 12fd)
-
-c Alternative form characters (can be accessed by unique capitals as well)
-U+1205 + '[' > U+1285 c h[ or L  ኅ
-U+1215 + '[' > U+12bd c H[ or K  ኽ
-U+1235 + '[' > U+1225 c s[ or J  ሥ
-U+1275 + '[' > U+133d c t[ or F  ጽ
-U+1325 + '[' > U+1345 c T[ or Y  ፅ
 
 c *********************************************************************************
 c Additional forms:
@@ -240,6 +239,9 @@ c ******************************************************************************
 c Diphthong forms:
 c *********************************************************************************
 any(sixth)  + 'A' > index(diph,1)   c Basic diphthongs and fourth diphthong forms
+
+c SIL Ethiopic: DGBase matches 6th form
+c SIL Power-G: DGBase matches basic diphthong form
 
 any(DGbase) + 'U' > index(DGsecond ,1)
 any(DGbase) + 'I' > index(DGthird  ,1)

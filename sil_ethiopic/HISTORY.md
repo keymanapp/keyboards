@@ -1,6 +1,10 @@
 SIL Ethiopic Change History
 ===========================
 
+2.0.1 (02 April 2017)
+---------------------
+* corrected keyboarding documentation for 'ⷕ'(2dd5) from H# to H[# or K#
+
 2.0 (08 March 2017)
 -------------------
 
