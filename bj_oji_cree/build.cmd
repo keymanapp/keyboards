@@ -34,6 +34,9 @@ set target=
 set debug=-w
 set clean=
 
+rem ******** this avoids error building bj_oji_cree.kmn. See https://github.com/keymanapp/keyboards/issues/45
+SET debug=-d
+
 :params
 
 if "%1"=="" goto build
