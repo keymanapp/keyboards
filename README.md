@@ -1,5 +1,3 @@
-# adinkra
-Adinkra Alphabet Keyboard
-
-Adinkra Alphabet is awsome!
-Learn to read and write with Adinkra Alphabet!
+Adinkra Alphabet keybaord write in Adinkra Alphabet. The keyboard supports the four major 
+languages in Ghana; Akan, Ewe, Ga and Dagbani. The aim of this project is to be able to 
+write major Ghanaian languages with Adinkra Alphabet!
