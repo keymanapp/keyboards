@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Ghana Keyboard
 * Copyright:      (C) SIL International
-* Version:        1.1
+* Version:        1.2
 * Keyman Version: 9.0
 * BCP-47 codes:   hag
 
