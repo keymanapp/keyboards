@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_pl_shan()); function Stub_Keyboard_pl_shan() {this.KF="pl_shan-1.0.js";this.KI="Keyboard_pl_shan";this.KN="PL_Shan";}
