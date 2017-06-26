@@ -13,14 +13,14 @@ store(&WINDOWSLANGUAGES) 'x0409'
 
 group(main) using keys
 
-+ [SHIFT K_QUOTE] > dk(0022)
-+ [SHIFT K_COLON] > dk(003a)
-+ [SHIFT K_6] > dk(005e)
-+ [K_QUOTE] > dk(0027)
-+ [K_COLON] > dk(003b)
-+ [K_BKQUOTE] > dk(0060) 
-+ [K_SLASH] > dk(002f)
-+ [K_BKSLASH] > dk(005c)
+platform('desktop') + [SHIFT K_QUOTE] > dk(0022)
+platform('desktop') + [SHIFT K_COLON] > dk(003a)
+platform('desktop') + [SHIFT K_6] > dk(005e)
+platform('desktop') + [K_QUOTE] > dk(0027)
+platform('desktop') + [K_COLON] > dk(003b)
+platform('desktop') + [K_BKQUOTE] > dk(0060) 
+platform('desktop') + [K_SLASH] > dk(002f)
+platform('desktop') + [K_BKSLASH] > dk(005c)
 
 match > use(deadkeys)
 
