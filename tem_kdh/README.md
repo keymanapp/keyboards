@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Tem KDH
 * Copyright:      (c) 2017 SIL International
-* Version:        01.01
+* Version:        1.1
 * Keyman Version: 9.0
 * BCP-47 codes:   kdh
 
