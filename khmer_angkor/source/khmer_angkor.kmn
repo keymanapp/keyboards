@@ -11,6 +11,7 @@ c store(&BITMAP) 'khmer10.ico'
 store(&ETHNOLOGUECODE) 'khm'
 store(&LANGUAGE) 'x0453'
 store(&WINDOWSLANGUAGES) 'x0453'
+store(&BITMAP) 'khmer_angkor.ico'
 
 begin Unicode > use(main)
 
@@ -75,6 +76,8 @@ c Diacritics
 
 store(diacritic_key)   [K_QUOTE] [SHIFT K_7] [SHIFT K_HYPHEN] [SHIFT K_8] [SHIFT K_6] [RALT K_QUOTE] \  
                        [RALT K_EQUAL] [RALT K_3] [RALT K_W] [RALT K_Q] [K_J] 
+store(diacritic_touch_key)   [K_QUOTE] [SHIFT K_7] [SHIFT K_HYPHEN] [SHIFT K_8] [SHIFT K_6] [CTRL ALT K_QUOTE] \  
+                       [CTRL ALT K_EQUAL] [CTRL ALT K_3] [CTRL ALT K_W] [CTRL ALT K_Q] [K_J] 
 store(diacritic_out)   U+17CB U+17D0 U+17CC U+17CF U+17CD U+17C8 \
                        U+17CE U+17D1 U+17DD U+17DC U+17D2  
 
@@ -199,7 +202,11 @@ c Basic rules
 + any(c_key)           > index(c_out,1)
 + any(v_key)           > index(v_out,1)
 + any(ind_v_key)       > index(ind_v_out,1)
-+ any(diacritic_key)   > index(diacritic_out,1)
+
+platform('desktop') + any(diacritic_key)   > index(diacritic_out,2)
+platform('mobile') + any(diacritic_touch_key) > index(diacritic_out,2)
+platform('tablet') + any(diacritic_touch_key) > index(diacritic_out,2)
+
 + any(c_shifter_key)   > index(c_shifter,1)
 + any(punct_key)       > index(punct_out,1)
 + any(latin_punct_key) > index(latin_punct_out,1)

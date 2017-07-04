@@ -144,8 +144,9 @@
                     "id": "U_17A7"
                   },
                   {
-                    "text": "ឨ",
-                    "id": "U_17A8"
+                    "text": "ឪ",
+                    "id": "U_17AA",
+                    "layer": "shift"
                   },
                   {
                     "text": "ឩ",
@@ -153,9 +154,8 @@
                     "layer": "shift"
                   },
                   {
-                    "text": "ឪ",
-                    "id": "U_17AA",
-                    "layer": "shift"
+                    "text": "ឨ",
+                    "id": "U_17A8"
                   }
                 ]
               },
@@ -252,6 +252,7 @@
                 "id": "K_A",
                 "text": "ា",
                 "pad": "30",
+                "width": "100",
                 "sk": [
                   {
                     "text": "ាំ",
@@ -351,9 +352,24 @@
                     "id": "T_17D2_17A0"
                   },
                   {
-                    "id": "K_H",
                     "text": "ះ",
+                    "id": "K_H",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "ៈ",
+                    "id": "U_17C8"
+                  }
+                ]
+              },
+              {
+                "id": "K_J",
+                "text": "ញ",
+                "layer": "shift",
+                "sk": [
+                  {
+                    "text": "្ញ",
+                    "id": "T_17D2_1789"
                   }
                 ]
               },
@@ -390,11 +406,6 @@
                     "id": "T_17D2_179B"
                   },
                   {
-                    "text": "្ឡ",
-                    "id": "T_17D2_17A1",
-                    "layer": "default"
-                  },
-                  {
                     "text": "ឭ",
                     "id": "U_17AD"
                   },
@@ -407,21 +418,6 @@
               {
                 "id": "K_COLON",
                 "text": "ើ"
-              },
-              {
-                "id": "K_QUOTE",
-                "text": "់",
-                "sk": [
-                  {
-                    "text": "៉",
-                    "id": "K_QUOTE",
-                    "layer": "shift"
-                  },
-                  {
-                    "text": "៊",
-                    "id": "K_SLASH"
-                  }
-                ]
               }
             ]
           },
@@ -431,7 +427,7 @@
               {
                 "id": "K_Z",
                 "text": "ឋ",
-                "pad": "60",
+                "pad": "40",
                 "sk": [
                   {
                     "text": "ឍ",
@@ -601,9 +597,25 @@
                 ]
               },
               {
+                "id": "K_QUOTE",
+                "text": "់",
+                "width": "90",
+                "sk": [
+                  {
+                    "text": "៉",
+                    "id": "K_QUOTE",
+                    "layer": "shift"
+                  },
+                  {
+                    "text": "៊",
+                    "id": "K_SLASH"
+                  }
+                ]
+              },
+              {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "width": "175",
+                "width": "100",
                 "sp": "1"
               }
             ]
@@ -613,7 +625,7 @@
             "key": [
               {
                 "id": "K_NUMLOCK",
-                "text": "*123*",
+                "text": "*១២៣*",
                 "width": "130",
                 "sp": "1",
                 "nextlayer": "numeric"
@@ -642,9 +654,13 @@
                 "text": "។",
                 "sk": [
                   {
-                    "id": "K_PERIOD",
                     "text": "៕",
+                    "id": "K_PERIOD",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "!",
+                    "id": "U_0021"
                   }
                 ]
               },
@@ -876,12 +892,16 @@
                 "text": ","
               },
               {
-                "id": "U_17C8",
-                "text": "ៈ",
+                "id": "U_17D6",
+                "text": "៖",
                 "sk": [
                   {
-                    "text": "៖",
-                    "id": "U_17D6"
+                    "text": ":",
+                    "id": "U_003A"
+                  },
+                  {
+                    "text": ";",
+                    "id": "U_003B"
                   }
                 ]
               },
