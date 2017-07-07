@@ -1045,12 +1045,10 @@
               {
                 "id": "U_17D9",
                 "text": "៙",
-                "layer": "default",
                 "sk": [
                   {
                     "text": "៚",
-                    "id": "U_17DA",
-                    "layer": "default"
+                    "id": "U_17DA"
                   },
                   {
                     "text": "ៜ",
