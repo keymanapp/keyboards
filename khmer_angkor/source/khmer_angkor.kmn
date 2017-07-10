@@ -221,60 +221,60 @@ group(main) using keys
 
 c Temporary Basic rules for Touch layout
 
-platform('desktop') + any(c_key)           > index(c_out,2) 
-platform('mobile') + any(c_touch_key)           > index(c_out,2)
-platform('tablet') + any(c_touch_key)           > index(c_out,2)
+c platform('desktop') + any(c_key)           > index(c_out,2)
+c platform('mobile') + any(c_touch_key)           > index(c_out,2)
+c platform('tablet') + any(c_touch_key)           > index(c_out,2)
 
-platform('desktop') + any(v_key)                > index(v_out,2) 
-platform('mobile') + any(v_touch_key)           > index(v_out,2)
-platform('tablet') + any(v_touch_key)           > index(v_out,2)
+c platform('desktop') + any(v_key)                > index(v_out,2)
+c platform('mobile') + any(v_touch_key)           > index(v_out,2)
+c platform('tablet') + any(v_touch_key)           > index(v_out,2)
 
-platform('desktop') + any(ind_v_key)            > index(ind_v_out,2) 
-platform('mobile') + any(ind_v_touch_key)       > index(ind_v_out,2)
-platform('tablet') + any(ind_v_touch_key)       > index(ind_v_out,2) 
+c platform('desktop') + any(ind_v_key)            > index(ind_v_out,2)
+c platform('mobile') + any(ind_v_touch_key)       > index(ind_v_out,2)
+c platform('tablet') + any(ind_v_touch_key)       > index(ind_v_out,2)
 
-platform('desktop') + any(diacritic_key)        > index(diacritic_out,2)  
-platform('mobile') + any(diacritic_touch_key)   > index(diacritic_out,2)
-platform('tablet') + any(diacritic_touch_key)   > index(diacritic_out,2)
+c platform('desktop') + any(diacritic_key)        > index(diacritic_out,2)
+c platform('mobile') + any(diacritic_touch_key)   > index(diacritic_out,2)
+c platform('tablet') + any(diacritic_touch_key)   > index(diacritic_out,2)
 
-+ any(c_shifter_key)   > index(c_shifter,1)
+c + any(c_shifter_key)   > index(c_shifter,1)
 
-platform('desktop') + any(punct_key)            > index(punct_out,2)
-platform('mobile') + any(punct_touch_key)       > index(punct_out,2) 
-platform('tablet') + any(punct_touch_key)       > index(punct_out,2)
+c platform('desktop') + any(punct_key)            > index(punct_out,2)
+c platform('mobile') + any(punct_touch_key)       > index(punct_out,2)
+c platform('tablet') + any(punct_touch_key)       > index(punct_out,2)
 
-platform('desktop') + any(latin_punct_key)      > index(latin_punct_out,2) 
-platform('mobile') + any(latin_punct_touch_key) > index(latin_punct_out,2)
-platform('tablet') + any(latin_punct_touch_key) > index(latin_punct_out,2)
+c platform('desktop') + any(latin_punct_key)      > index(latin_punct_out,2)
+c platform('mobile') + any(latin_punct_touch_key) > index(latin_punct_out,2)
+c platform('tablet') + any(latin_punct_touch_key) > index(latin_punct_out,2)
 
-platform('desktop') + any(currency_key)         > index(currency_out,2)
-platform('mobile') + any(currency_touch_key)    > index(currency_out,2)  
-platform('tablet') + any(currency_touch_key)    > index(currency_out,2)
+c platform('desktop') + any(currency_key)         > index(currency_out,2)
+c platform('mobile') + any(currency_touch_key)    > index(currency_out,2)
+c platform('tablet') + any(currency_touch_key)    > index(currency_out,2)
 
-+ any(digit_key)       > index(digit_out,1) 
-platform('desktop')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-platform('mobile')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-platform('tablet')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+c + any(digit_key)       > index(digit_out,1)
+c platform('desktop')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+c platform('mobile')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+c platform('tablet')+ any(arabic_digit_key) > index(arabic_digit_out,2)
 
-platform('desktop') + any(lek_attak_key)   > index(lek_attak_out,2)
-platform('mobile') + any(lek_attak_key)   > index(lek_attak_out,2)
-platform('tablet') + any(lek_attak_key)   > index(lek_attak_out,2)   
+c platform('desktop') + any(lek_attak_key)   > index(lek_attak_out,2)
+c platform('mobile') + any(lek_attak_key)   > index(lek_attak_out,2)
+c platform('tablet') + any(lek_attak_key)   > index(lek_attak_out,2)
 
-+ any(lunar_date_key)  > index(lunar_date_out,1)
+c + any(lunar_date_key)  > index(lunar_date_out,1)
 
 c Basic rules with RALT key
 
-c + any(c_key)           > index(c_out,1)
-c + any(v_key)           > index(v_out,1)
-c + any(ind_v_key)       > index(ind_v_out,1)
-c + any(diacritic_key)   > index(diacritic_out,1)
-c + any(c_shifter_key)   > index(c_shifter,1)
-c + any(punct_key)       > index(punct_out,1)
-c + any(latin_punct_key) > index(latin_punct_out,1)
-c + any(currency_key)    > index(currency_out,1)
-c + any(digit_key)       > index(digit_out,1)
-c + any(lek_attak_key)   > index(lek_attak_out,1)
-c + any(lunar_date_key)  > index(lunar_date_out,1)
++ any(c_key)           > index(c_out,1)
++ any(v_key)           > index(v_out,1)
++ any(ind_v_key)       > index(ind_v_out,1)
++ any(diacritic_key)   > index(diacritic_out,1)
++ any(c_shifter_key)   > index(c_shifter,1)
++ any(punct_key)       > index(punct_out,1)
++ any(latin_punct_key) > index(latin_punct_out,1)
++ any(currency_key)    > index(currency_out,1)
++ any(digit_key)       > index(digit_out,1)
++ any(lek_attak_key)   > index(lek_attak_out,1)
++ any(lunar_date_key)  > index(lunar_date_out,1)
 + [K_SPACE]            > U+200B
 + [SHIFT K_SPACE]      > U+0020
 + [CTRL ALT K_SPACE]   > U+00A0   
@@ -574,6 +574,27 @@ U+179F U+17D2 any(c_combo_SA) U+17C9 U+17B6 U+17C6     > context(1) context(2) c
 any(c_combo_HA) U+17D2 U+17A0 U+17C9 U+17B6 U+17C6     > context(1) context(2) context(3) U+17CA context(5) context(6)
 U+17A2 U+17D2 U+1784 U+17C9 U+17B6 U+17C6              > context(1) context(2) context(3) U+17CA context(5) context(6)
 U+17A2 U+17D2 U+179C U+17C9 U+17B6 U+17C6              > context(1) context(2) context(3) U+17CA context(5) context(6)
+
+c U+17B6 U+17BB and U+17C6 in that order preceeded by any first series consonant (cluster) are transformed to U+17CA U+17B6 and U+17C6
+
+any(shiftable_c_1st) U+17B6 U+17BB U+17C6 > context(1) U+17CA context(2) context(4)  
+
+any(c_combo_QA) U+17D2 U+17A2 U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)  
+U+179B U+17D2 any(c_1st_combo_LO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6) 
+U+1798 U+17D2 any(c_1st_combo_MO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6) 
+U+179F U+17D2 any(c_combo_SA) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)   
+any(c_combo_HA) U+17D2 U+17A0 U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)   
+U+17A2 U+17D2 U+1784 U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)    	   	  
+U+17A2 U+17D2 U+179C U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)  
+
+c U+17B6 U+17BB and U+17C6 in that order preceeded by any second series consonant (cluster) are transformed to U+17C9 U+17B6 and U+17C6
+
+any(shiftable_c_2nd) U+17B6 U+17BB U+17C6 > context(1) U+17C9 context(2) context(4)  
+
+U+179B U+17D2 any(c_2nd_combo_LO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17C9 context(4) context(6)
+U+1798 U+17D2 any(c_2nd_combo_MO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17C9 context(4) context(6)
+
+
 
 c Use appropriate identfical subscript in two separate contexts. (Case #8)
 
