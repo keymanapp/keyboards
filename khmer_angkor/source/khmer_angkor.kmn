@@ -219,62 +219,62 @@ c ==============================================BASIC RULES & CONSTRAINTS/ROTATI
 
 group(main) using keys
 
-c Temporary Basic rules for Touch layout
+c Temporary Basic rules for Touch layout  [***REMOVED THESE AND THEIR STORES WHEN "RALT" FUNCTIONALITY IS FIXED***]
 
-c platform('desktop') + any(c_key)           > index(c_out,2)
-c platform('mobile') + any(c_touch_key)           > index(c_out,2)
-c platform('tablet') + any(c_touch_key)           > index(c_out,2)
+platform('desktop') + any(c_key)           > index(c_out,2)
+platform('mobile') + any(c_touch_key)           > index(c_out,2)
+platform('tablet') + any(c_touch_key)           > index(c_out,2)
 
-c platform('desktop') + any(v_key)                > index(v_out,2)
-c platform('mobile') + any(v_touch_key)           > index(v_out,2)
-c platform('tablet') + any(v_touch_key)           > index(v_out,2)
+platform('desktop') + any(v_key)                > index(v_out,2)
+platform('mobile') + any(v_touch_key)           > index(v_out,2)
+platform('tablet') + any(v_touch_key)           > index(v_out,2)
 
-c platform('desktop') + any(ind_v_key)            > index(ind_v_out,2)
-c platform('mobile') + any(ind_v_touch_key)       > index(ind_v_out,2)
-c platform('tablet') + any(ind_v_touch_key)       > index(ind_v_out,2)
+platform('desktop') + any(ind_v_key)            > index(ind_v_out,2)
+platform('mobile') + any(ind_v_touch_key)       > index(ind_v_out,2)
+platform('tablet') + any(ind_v_touch_key)       > index(ind_v_out,2)
 
-c platform('desktop') + any(diacritic_key)        > index(diacritic_out,2)
-c platform('mobile') + any(diacritic_touch_key)   > index(diacritic_out,2)
-c platform('tablet') + any(diacritic_touch_key)   > index(diacritic_out,2)
+platform('desktop') + any(diacritic_key)        > index(diacritic_out,2)
+platform('mobile') + any(diacritic_touch_key)   > index(diacritic_out,2)
+platform('tablet') + any(diacritic_touch_key)   > index(diacritic_out,2)
 
-c + any(c_shifter_key)   > index(c_shifter,1)
++ any(c_shifter_key)   > index(c_shifter,1)
 
-c platform('desktop') + any(punct_key)            > index(punct_out,2)
-c platform('mobile') + any(punct_touch_key)       > index(punct_out,2)
-c platform('tablet') + any(punct_touch_key)       > index(punct_out,2)
+platform('desktop') + any(punct_key)            > index(punct_out,2)
+platform('mobile') + any(punct_touch_key)       > index(punct_out,2)
+platform('tablet') + any(punct_touch_key)       > index(punct_out,2)
 
-c platform('desktop') + any(latin_punct_key)      > index(latin_punct_out,2)
-c platform('mobile') + any(latin_punct_touch_key) > index(latin_punct_out,2)
-c platform('tablet') + any(latin_punct_touch_key) > index(latin_punct_out,2)
+platform('desktop') + any(latin_punct_key)      > index(latin_punct_out,2)
+platform('mobile') + any(latin_punct_touch_key) > index(latin_punct_out,2)
+platform('tablet') + any(latin_punct_touch_key) > index(latin_punct_out,2)
 
-c platform('desktop') + any(currency_key)         > index(currency_out,2)
-c platform('mobile') + any(currency_touch_key)    > index(currency_out,2)
-c platform('tablet') + any(currency_touch_key)    > index(currency_out,2)
+platform('desktop') + any(currency_key)         > index(currency_out,2)
+platform('mobile') + any(currency_touch_key)    > index(currency_out,2)
+platform('tablet') + any(currency_touch_key)    > index(currency_out,2)
 
-c + any(digit_key)       > index(digit_out,1)
-c platform('desktop')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-c platform('mobile')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-c platform('tablet')+ any(arabic_digit_key) > index(arabic_digit_out,2)
++ any(digit_key)       > index(digit_out,1)
+platform('desktop')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+platform('mobile')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+platform('tablet')+ any(arabic_digit_key) > index(arabic_digit_out,2)
 
-c platform('desktop') + any(lek_attak_key)   > index(lek_attak_out,2)
-c platform('mobile') + any(lek_attak_key)   > index(lek_attak_out,2)
-c platform('tablet') + any(lek_attak_key)   > index(lek_attak_out,2)
+platform('desktop') + any(lek_attak_key)   > index(lek_attak_out,2)
+platform('mobile') + any(lek_attak_key)   > index(lek_attak_out,2)
+platform('tablet') + any(lek_attak_key)   > index(lek_attak_out,2)
 
-c + any(lunar_date_key)  > index(lunar_date_out,1)
+ + any(lunar_date_key)  > index(lunar_date_out,1)
 
 c Basic rules with RALT key
 
-+ any(c_key)           > index(c_out,1)
-+ any(v_key)           > index(v_out,1)
-+ any(ind_v_key)       > index(ind_v_out,1)
-+ any(diacritic_key)   > index(diacritic_out,1)
-+ any(c_shifter_key)   > index(c_shifter,1)
-+ any(punct_key)       > index(punct_out,1)
-+ any(latin_punct_key) > index(latin_punct_out,1)
-+ any(currency_key)    > index(currency_out,1)
-+ any(digit_key)       > index(digit_out,1)
-+ any(lek_attak_key)   > index(lek_attak_out,1)
-+ any(lunar_date_key)  > index(lunar_date_out,1)
+c + any(c_key)           > index(c_out,1)
+c + any(v_key)           > index(v_out,1)
+c + any(ind_v_key)       > index(ind_v_out,1)
+c + any(diacritic_key)   > index(diacritic_out,1)
+c + any(c_shifter_key)   > index(c_shifter,1)
+c + any(punct_key)       > index(punct_out,1)
+c + any(latin_punct_key) > index(latin_punct_out,1)
+c + any(currency_key)    > index(currency_out,1)
+c + any(digit_key)       > index(digit_out,1)
+c + any(lek_attak_key)   > index(lek_attak_out,1)
+c + any(lunar_date_key)  > index(lunar_date_out,1)
 + [K_SPACE]            > U+200B
 + [SHIFT K_SPACE]      > U+0020
 + [CTRL ALT K_SPACE]   > U+00A0   
@@ -296,7 +296,7 @@ c Rotation
 
 U+17C7 + [SHIFT K_H]            > U+17C8       	   c U+17C7 is changed to U+17C8 when pressing [SHIFT K_H].
 U+17C8 + [SHIFT K_H]            > U+17C7       	   c U+17C8 is changed to U+17C7 when K_H is pressed.
-any(v_gen) U+17C7 + [SHIFT K_H] > context beep     c Don't rotate between U+17C7 and U+17C8. 
+c any(v_gen) U+17C7 + [SHIFT K_H] > context beep     c Don't rotate between U+17C7 and U+17C8.
 
 c When [BB] or [B6] are placed after [C6], the order should be reversed. (Case #5)
 
@@ -328,7 +328,7 @@ any(c_combo_HA) U+17D2 U+17A0 + [SHIFT K_QUOTE]     > context U+17C9 beep
 U+17A2 U+17D2 U+1784 + [SHIFT K_QUOTE]  	   	    > context U+17C9 beep
 U+17A2 U+17D2 U+179C + [SHIFT K_QUOTE]              > context U+17C9 beep
 
-c 2nd series consonant clusters --they should never be used with [K_SLASH], but if it
+c 2nd series consonant clusters
 
 U+179B U+17D2 any(c_2nd_combo_LO) + [K_SLASH] > context U+17CA beep
 U+1798 U+17D2 any(c_2nd_combo_MO) + [K_SLASH] > context U+17CA beep
@@ -373,8 +373,8 @@ c ==============================================MOBILE/TABLET TOUCH LAYOUT======
 
 + any(input_subcons) > U+17D2 index(subcons, 1)
 
-platform('tablet') U+17D2 any(subcons) + [K_BKSP] > nul
-platform('mobile') U+17D2 any(subcons) + [K_BKSP] > nul
+platform('tablet') U+17D2 any(subcons) + [K_BKSP] > nul 	c not working
+platform('mobile') U+17D2 any(subcons) + [K_BKSP] > nul     c not working
 
 c + [K_NPSTAR]        > U+002A
 c + [SHIFT K_NPSTAR]  > U+002A
@@ -415,7 +415,7 @@ any(punct_out) any(punct_out)             > context(2) c the last punctuation st
 any(latin_punct_out) any(latin_punct_out) > context(2) c the last latin punctuation stroke replaces the previous one.
 
 
-c Rotation of double vowels
+c Rotation of two-part vowels
 
 any(v_gen) any(v_pseudo) any(v_gen)               > context(3)            c a two-part vowel rotates to a genuine vowel.
 any(v_gen) any(v_pseudo) any(v_pseudo)            > context(3)            c a two-part vowel rotates to a pseudo vowel.
@@ -437,7 +437,7 @@ any(v_any) U+17D2 any(subcons)            > context(2) context(3) context(1)    
 any(v_combo_N) U+17C6 U+17D2 any(subcons) > context(3) context(4) context(1) context(2) c these two-part vowels have to come after a subscript.
 any(v_combo_R) U+17C7 U+17D2 any(subcons) > context(3) context(4) context(1) context(2) c these two-part vowels have to come after a subscript.
 
-c a subscript placed after a shifter and a vowel (a genuine/pseudo vowel or a two-part vowel) has to before them.
+c a subscript placed after a shifter and a vowel (a genuine/pseudo vowel or a two-part vowel) has to move to before them.
 
 any(c_shifter) any(v_any) U+17D2 any(subcons)            > context(3) context(4) context(1) context(2)            c after a genuine/pseudo vowel
 any(c_shifter) any(v_combo_N) U+17C6 U+17D2 any(subcons) > context(4) context(5) context(1) context(2) context(3) c after a two-part vowel
@@ -479,26 +479,32 @@ any(c_combo_QA) U+17D2 U+17A2 U+17BB any(v_above)             > context(1) conte
 any(c_combo_QA) U+17D2 U+17A2 U+17BB U+17B6 U+17C6            > context(1) context(2) context(3) U+17CA context(5) context(6)       
 any(c_combo_QA) U+17D2 U+17A2 any(v_above) U+17BB             > context(1) context(2) context(3) U+17CA context(4)                                         
 any(c_combo_QA) U+17D2 U+17A2 U+17BB U+17C6 U+17B6 U+17C6     > context(1) context(2) context(3) U+17CA context(6) context(7)
+
 U+179B U+17D2 any(c_1st_combo_LO) U+17BB any(v_above)         > context(1) context(2) context(3) U+17CA context(5)                  
 U+179B U+17D2 any(c_1st_combo_LO) U+17BB U+17B6 U+17C6        > context(1) context(2) context(3) U+17CA context(5) context(6)       
 U+179B U+17D2 any(c_1st_combo_LO) any(v_above) U+17BB         > context(1) context(2) context(3) U+17CA context(4)                                   
-U+179B U+17D2 any(c_1st_combo_LO) U+17BB U+17C6 U+17B6 U+17C6 > context(1) context(2) context(3) U+17CA context(6) context(7)
+U+179B U+17D2 any(c_1st_combo_LO) U+17BB U+17C6 U+17B6 U+17C6 > context(1) context(2) context(3) U+17CA context(6) context(7) 
+
 U+1798 U+17D2 any(c_1st_combo_MO) U+17BB any(v_above)         > context(1) context(2) context(3) U+17CA context(5)           
 U+1798 U+17D2 any(c_1st_combo_MO) U+17BB U+17B6 U+17C6        > context(1) context(2) context(3) U+17CA context(5) context(6)
 U+1798 U+17D2 any(c_1st_combo_MO) any(v_above) U+17BB         > context(1) context(2) context(3) U+17CA context(4)                      
 U+1798 U+17D2 any(c_1st_combo_MO) U+17BB U+17C6 U+17B6 U+17C6 > context(1) context(2) context(3) U+17CA context(6) context(7)
+
 U+179F U+17D2 any(c_combo_SA) U+17BB any(v_above)             > context(1) context(2) context(3) U+17CA context(5)           
 U+179F U+17D2 any(c_combo_SA) U+17BB U+17B6 U+17C6            > context(1) context(2) context(3) U+17CA context(5) context(6)
 U+179F U+17D2 any(c_combo_SA) any(v_above) U+17BB             > context(1) context(2) context(3) U+17CA context(4)                      
-U+179F U+17D2 any(c_combo_SA) U+17BB U+17C6 U+17B6 U+17C6     > context(1) context(2) context(3) U+17CA context(6) context(7)
+U+179F U+17D2 any(c_combo_SA) U+17BB U+17C6 U+17B6 U+17C6     > context(1) context(2) context(3) U+17CA context(6) context(7) 
+
 any(c_combo_HA) U+17D2 U+17A0 U+17BB any(v_above)             > context(1) context(2) context(3) U+17CA context(5)           
 any(c_combo_HA) U+17D2 U+17A0 U+17BB U+17B6 U+17C6            > context(1) context(2) context(3) U+17CA context(5) context(6)
 any(c_combo_HA) U+17D2 U+17A0 any(v_above) U+17BB             > context(1) context(2) context(3) U+17CA context(4)                     
-any(c_combo_HA) U+17D2 U+17A0 U+17BB U+17C6 U+17B6 U+17C6     > context(1) context(2) context(3) U+17CA context(6) context(7)
+any(c_combo_HA) U+17D2 U+17A0 U+17BB U+17C6 U+17B6 U+17C6     > context(1) context(2) context(3) U+17CA context(6) context(7) 
+
 U+17A2 U+17D2 U+1784 U+17BB any(v_above)                      > context(1) context(2) context(3) U+17CA context(5)           
 U+17A2 U+17D2 U+1784 U+17BB U+17B6 U+17C6                     > context(1) context(2) context(3) U+17CA context(5) context(6)
 U+17A2 U+17D2 U+1784 any(v_above) U+17BB                      > context(1) context(2) context(3) U+17CA context(4)                      
-U+17A2 U+17D2 U+1784 U+17BB U+17C6 U+17B6 U+17C6              > context(1) context(2) context(3) U+17CA context(6) context(7)
+U+17A2 U+17D2 U+1784 U+17BB U+17C6 U+17B6 U+17C6              > context(1) context(2) context(3) U+17CA context(6) context(7) 
+
 U+17A2 U+17D2 U+179C U+17BB any(v_above)                      > context(1) context(2) context(3) U+17CA context(5)           
 U+17A2 U+17D2 U+179C U+17BB U+17B6 U+17C6                     > context(1) context(2) context(3) U+17CA context(5) context(6)
 U+17A2 U+17D2 U+179C any(v_above) U+17BB                      > context(1) context(2) context(3) U+17CA context(4)                      
@@ -510,6 +516,7 @@ U+179B U+17D2 any(c_2nd_combo_LO) U+17BB any(v_above)         > context(1) conte
 U+179B U+17D2 any(c_2nd_combo_LO) U+17BB U+17B6 U+17C6        > context(1) context(2) context(3) U+17C9 context(5) context(6)
 U+179B U+17D2 any(c_2nd_combo_LO) any(v_above) U+17BB         > context(1) context(2) context(3) U+17C9 context(4)  
 U+179B U+17D2 any(c_2nd_combo_LO) U+17BB U+17C6 U+17B6 U+17C6 > context(1) context(2) context(3) U+17C9 context(6) context(7)
+
 U+1798 U+17D2 any(c_2nd_combo_MO) U+17BB any(v_above)         > context(1) context(2) context(3) U+17C9 context(5)
 U+1798 U+17D2 any(c_2nd_combo_MO) U+17BB U+17B6 U+17C6        > context(1) context(2) context(3) U+17C9 context(5) context(6)
 U+1798 U+17D2 any(c_2nd_combo_MO) any(v_above) U+17BB         > context(1) context(2) context(3) U+17C9 context(4) 
@@ -577,15 +584,15 @@ U+17A2 U+17D2 U+179C U+17C9 U+17B6 U+17C6              > context(1) context(2) c
 
 c U+17B6 U+17BB and U+17C6 in that order preceeded by any first series consonant (cluster) are transformed to U+17CA U+17B6 and U+17C6
 
-any(shiftable_c_1st) U+17B6 U+17BB U+17C6 > context(1) U+17CA context(2) context(4)  
+any(shiftable_c_1st) U+17B6 U+17BB U+17C6              > context(1) U+17CA context(2) context(4)  
 
-any(c_combo_QA) U+17D2 U+17A2 U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)  
+any(c_combo_QA) U+17D2 U+17A2 U+17B6 U+17BB U+17C6     > context(1) context(2) context(3) U+17CA context(4) context(6)  
 U+179B U+17D2 any(c_1st_combo_LO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6) 
 U+1798 U+17D2 any(c_1st_combo_MO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6) 
-U+179F U+17D2 any(c_combo_SA) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)   
-any(c_combo_HA) U+17D2 U+17A0 U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)   
-U+17A2 U+17D2 U+1784 U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)    	   	  
-U+17A2 U+17D2 U+179C U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6)  
+U+179F U+17D2 any(c_combo_SA) U+17B6 U+17BB U+17C6     > context(1) context(2) context(3) U+17CA context(4) context(6)   
+any(c_combo_HA) U+17D2 U+17A0 U+17B6 U+17BB U+17C6     > context(1) context(2) context(3) U+17CA context(4) context(6)   
+U+17A2 U+17D2 U+1784 U+17B6 U+17BB U+17C6              > context(1) context(2) context(3) U+17CA context(4) context(6)    	   	  
+U+17A2 U+17D2 U+179C U+17B6 U+17BB U+17C6              > context(1) context(2) context(3) U+17CA context(4) context(6)  
 
 c U+17B6 U+17BB and U+17C6 in that order preceeded by any second series consonant (cluster) are transformed to U+17C9 U+17B6 and U+17C6
 
