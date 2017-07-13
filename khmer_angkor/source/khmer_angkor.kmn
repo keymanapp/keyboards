@@ -386,7 +386,7 @@ c + [SHIFT K_NPMINUS] > U+002D
 
 
 c ==============================================NORMALIZATION==============================================
-
+            
            
 
 match > use(normalise)
@@ -606,6 +606,27 @@ U+1798 U+17D2 any(c_2nd_combo_MO) U+17B6 U+17BB U+17C6 > context(1) context(2) c
 c Use appropriate identfical subscript in two separate contexts. (Case #8)
 
 U+178E U+17D2 U+178F > context(1) context(2) U+178A 
-U+1793 U+17D2 U+178A > context(1) context(2) U+178F 
+U+1793 U+17D2 U+178A > context(1) context(2) U+178F   
+
+c BONUSES​(note that these combinations are invalid and they can't be found in the CN dictionary 1967 nor RH 1997, but users think they are)
+
+U+1791 U+17D2 U+1794 > U+17A1 c ទ្ប transforms to ឡ 
+
+U+1794 U+17D2 U+1789 > U+17AB c ប្ញ transforms to ឫ
+U+17AB U+17BB        > U+17AC c ឫុ transforms to ឬ
+
+U+17AD U+17B6        > U+1789 c ព្ញា transforms to ញ 
+U+17AE U+17B6        > U+1789 c ឭុ transforms to ញ 
+
+U+1796 U+17D2 U+1789 > U+17AD c ព្ញ transforms to ឭ
+U+17AD U+17BB        > U+17AE c ឭុ transforms to ឮ
+
+U+1796 U+17D2 U+178B > U+17B0 c ព្ឋ transforms to ឰ  
+
+U+17A7 U+17B7        > U+17B1 c ឧិ transforms to ឱ
+U+17A7 U+17CC        > U+17B1 c ឧ៌  transforms to ឱ   
+U+17A7 U+17CD        > U+17B1 c ឧ៍ transforms to ឱ   
+
+U+17D4 U+179B U+17D4 > U+17D8 c ។ល។  transforms to U+17D8 
 
 c EOF
