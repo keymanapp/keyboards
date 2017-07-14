@@ -1,0 +1,1 @@
+﻿KeymanWeb.KRS(new Stub_Keyboard_bksp()); function Stub_Keyboard_bksp() {this.KF="bksp.js";this.KI="Keyboard_bksp";this.KN="BKSP test";}

@@ -1,0 +1,2 @@
+﻿/*(C) Copyright 1994-2006 Tavultesoft Pty Ltd. All Rights Reserved. Details: keymanweb.com*/
+function KWK_Load(){var KWK={"devanagari_inscript":"Devanagari (INSCRIPT)","european":"European Latin","hebrew":"Hebrew","keymanwebtest":"KeymanWeb Test","korean_korda":"Korean (KORDA) - 30 Day Evaluation","korean_morse":"Korean (Morse) - 30 Day Evaluation","laokeys":"Lao (Phonetic)"};for(var n in KWK){KeymanWeb.KRS({KF:n+".js",KI:"Keyboard_"+n,KN:KWK[n]});}}KWK_Load();
