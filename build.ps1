@@ -47,13 +47,11 @@ if($Clean) { $GlobalClean = "-c" }
 if($Debug) { $GlobalDebug = "-d" }
 
 if (-not (Test-Path Env:KeymanDeveloperPath)) {
-  Write-Host Error: the environment variable KeymanDeveloperPath must be set to the path for kmcomp.exe
-  Exit 3
+  Write-Error Error: the environment variable KeymanDeveloperPath must be set to the path for kmcomp.exe
 }
 
 if (-not (Test-Path "$Env:KeymanDeveloperPath\kmcomp.exe")) {
-  Write-Host Error: the executable kmcomp.exe does not exist at ${Env:KeymanDeveloperPath}kmcomp.exe
-  Exit 4
+  Write-Error Error: the executable kmcomp.exe does not exist at ${Env:KeymanDeveloperPath}kmcomp.exe
 }
 
 # Find all targets
@@ -88,8 +86,7 @@ function Build-Keyboard {
   cd ..
   
   if($LASTEXITCODE -ne 0) {
-    Write-Host "Failed to build $Name with error $LASTEXITCODE"
-    Exit $LASTEXITCODE
+    Write-Error "Failed to build $Name with error $LASTEXITCODE"
   }
 }
 
@@ -107,8 +104,7 @@ function Build-Packages {
   cd ..
   
   if($LASTEXITCODE -ne 0) {
-    Write-Host "Failed to build packages with error $LASTEXITCODE"
-    Exit $LASTEXITCODE
+    Write-Error "Failed to build packages with error $LASTEXITCODE"
   }
 }
 
@@ -120,7 +116,8 @@ function Test-Binary-Keyboard {
   )
   <#
     Test that the binary keyboard meets basic requirements for uploading to the distribution point.
-    We do very little apart from making sure it won't clobber another keyboard.
+    We do very little apart from making sure it won't clobber another keyboard and that the files
+    to upload actually exist.
   #>
   
   #
@@ -128,8 +125,7 @@ function Test-Binary-Keyboard {
   #
   
   if(Test-Path $Name) {
-    Write-Host "The folder $Name exists in both the root of the repo and in $Root. The folder must not exist in both locations."
-    Exit 1
+    Write-Error "The folder $Name exists in both the root of the repo and in $Root. The folder must not exist in both locations."
   }
   
   #
@@ -139,8 +135,7 @@ function Test-Binary-Keyboard {
   if($Root -eq "legacy") { $Root2 = "experimental" } else { $Root2 = "legacy" }
   
   if(Test-Path $Root2\$Name) {
-    Write-Host "The folder $Name exists in both $Root2 and in $Root. The folder must not exist in both locations."
-    Exit 1
+    Write-Error "The folder $Name exists in both $Root2 and in $Root. The folder must not exist in both locations."
   }
   
   #
@@ -150,11 +145,22 @@ function Test-Binary-Keyboard {
   $InfoJson = "$Root\$Name\$Name.json"
   
   if(-not (Test-Path $InfoJson)) {
-    Write-Host "The file $InfoJson does not exist."
-    Exit 1
+    Write-Error "The file $InfoJson does not exist."
   }
     
   $json = (Get-Content $InfoJson -Encoding UTF8) -Join "`n" | ConvertFrom-Json
+
+  #
+  # Basic json validation
+  #
+  
+  if(-not(Get-Member -inputobject $json -name "version" -Membertype Properties)) {
+    Write-Error "The version field is required in $InfoJson."
+  }
+
+  if(-not(Get-Member -inputobject $json -name "id" -Membertype Properties)) {
+    Write-Error "The id field is required in $InfoJson."
+  }
   
   #
   # Test that the target files exist
@@ -162,26 +168,53 @@ function Test-Binary-Keyboard {
   
   if(Get-Member -inputobject $json -name "packageFilename" -Membertype Properties) {
     if(-not (Test-Path $Root\$Name\$($json.packageFilename))) {
-      Write-Host "File $Root\$Name\$($json.packageFilename) referenced in $InfoJson packageFilename does not exist."
-      Exit 1
+      Write-Error "File $Root\$Name\$($json.packageFilename) referenced in $InfoJson packageFilename does not exist." 
     }
+    $HasPackage = $true
   }
 
   if(Get-Member -inputobject $json -name "jsFilename" -Membertype Properties) {
     if(-not (Test-Path "$Root\$Name\$($json.jsFilename)")) {
-      Write-Host "File $Root\$Name\$($json.jsFilename) referenced in $InfoJson jsFilename does not exist."
-      Exit 1
+      Write-Error "File $Root\$Name\$($json.jsFilename) referenced in $InfoJson jsFilename does not exist."
     }
+    
+    $HasJS = $true
   }
 
   if(Get-Member -inputobject $json -name "docFilename" -Membertype Properties) {
     if(-not (Test-Path "$Root\$Name\$($json.docFilename)")) {
-      Write-Host "File $Root\$Name\$($json.docFilename) referenced in $InfoJson docFilename does not exist."
-      Exit 1
+      Write-Error "File $Root\$Name\$($json.docFilename) referenced in $InfoJson docFilename does not exist."
     }
   }
   
+  if(-not $HasPackage -and -not $HasJS) {
+    Write-Warning "Folder $Root\$Name does not have a package or a .js. Skipping"
+    Return
+  }
+  
+  #
+  # The .js filename must match $name-$version.js
+  #
+  # The .kmp filename is a bit less solid. For now it must match $name.kmp
+  #
+  
+  if($HasPackage -and ($json.packageFilename -ne "$Name.kmp")) {
+    Write-Error "File $Root\$Name\$($json.packageFilename) should match the folder name $Name."
+  }
+
+  if($HasJS -and ($json.jsFilename -ne "$Name-$($json.version).js")) {
+    Write-Error "File $Root\$Name\$($json.jsFilename) should match the folder name+keyboard version $Name-$($json.version)."
+  }
+  
   # At this point, we are reasonably happy to proceed
+  
+  if($HasPackage) {
+    Write-Host "Package $Root\$Name\$($json.packageFilename) passes basic validation."
+  }
+
+  if($HasJS) {
+    Write-Host "Package $Root\$Name\$($json.jsFilename) passes basic validation."
+  }
 }
 
 function Build-Experimental-Keyboards {
@@ -214,104 +247,3 @@ if($targets.Contains("legacy")) {
 if($targets.Contains("packages")) {
   Build-Packages
 }
-
-<#
-
-rem ###########################################
-rem Build all targets
-rem ###########################################
-
-:build
-
-set global_target=%*
-
-if "%1"=="" (
-  set global_target=*
-)
-
-for /d %%d in (%global_target%) do (
-  call :build_keyboard %%d "%~dp0"
-  if !global_error! GEQ 1 (
-    echo Aborting build with error !global_error!.
-    exit /B !global_error!
-  )
-)
-for /d %%d in (%global_target%) do call :build_package %%d "%~dp0"
-
-exit /B 0
-
-rem ###########################################
-rem Build one target keyboard
-rem ###########################################
-
-:build_keyboard
-
-if /i "%1" EQU ".git" goto :eof
-if /i "%1" EQU "template" goto :eof
-if /i "%1" EQU "packages" goto :eof
-
-if not exist %1\build.cmd goto :eof
-
-cd %1
-call build.cmd -p %1.kpj %global_silent% %global_clean% %global_debug%
-
-if errorlevel 1 (
-  set global_error=%errorlevel%
-  echo Aborting build of %1 due to error !global_error!.
-  cd /d %2
-  exit /B !global_error!
-)
-cd /d %2
-
-goto :eof
-
-rem ###########################################
-rem Build one target package
-rem ###########################################
-
-:build_package
-
-if /i "%1" NEQ "packages" goto :eof
-
-if not exist %1\build.cmd goto :eof
-
-cd %1
-call build.cmd %global_silent% %global_clean% %global_debug%
-
-if errorlevel 1 (
-  set global_error=%errorlevel%
-  echo Aborting build of %1 due to error !global_error!.
-  cd /d %2
-  exit /B !global_error!
-)
-cd /d %2
-
-goto :eof
-
-rem ###########################################
-rem Help and errors
-rem ###########################################
-
-:help
-echo. %0 [-s] [-c] [-d] [target ...]
-echo.
-echo. -s:      Silent build
-echo. -c:      Clean instead of build
-echo. -d:      Include debug information
-echo. target:  Optional, one or more folder names. If excluded, builds all.
-echo. 
-echo. Exit code of 0 indicates success. Any other exit code is an error
-exit /b 2
-goto :eof
-
-:err_env
-echo Error: the environment variable KeymanDeveloperPath must be set to the path for kmcomp.exe
-exit /b 3
-goto :eof
-
-:err_env_not_exist
-echo Error: the executable kmcomp.exe does not exist at %KeymanDeveloperPath%\kmcomp.exe
-exit /b 4
-goto :eof
-
-#>
