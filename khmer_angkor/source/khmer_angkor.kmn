@@ -298,11 +298,6 @@ U+17C7 + [SHIFT K_H]            > U+17C8       	   c U+17C7 is changed to U+17C8
 U+17C8 + [SHIFT K_H]            > U+17C7       	   c U+17C8 is changed to U+17C7 when K_H is pressed.
 c any(v_gen) U+17C7 + [SHIFT K_H] > context beep     c Don't rotate between U+17C7 and U+17C8.
 
-c When [BB] or [B6] are placed after [C6], the order should be reversed. (Case #5)
-
-U+17C6 + [K_U] > U+17BB U+17C6
-U+17C6 + [K_A] > U+17B6 U+17C6
-
 c One backspace deletes a two-part vowels (i.e. psuedoVowel + U+17C7)
 
 any(v_combo_N) U+17C6 + [K_BKSP] > nul
@@ -393,12 +388,17 @@ match > use(normalise)
 
 group(normalise)
 
-c Illegitimate vowel combinations should be transformed to the legitimate ones upon the last key stroke (Case #6 and #7).
+c Illegitimate vowel combinations should be transformed to the legitimate ones (Case #6 and #7).
 
 U+17C1 U+17B6 > U+17C4   c when type េ and ា, tranform them to ោ
 U+17B6 U+17C1 > U+17C4   c when type ា and េ, tranform them to ោ
 U+17C1 U+17B8 > U+17BE   c when type េ and ី , tranform them to ើ
-U+17B8 U+17C1 > U+17BE   c when type ី  and េ, tranform them to ើ
+U+17B8 U+17C1 > U+17BE   c when type ី  and េ, tranform them to ើ 
+
+c Illegitimate vowel combinations should be transformed to the legitimate ones (Case #5).
+
+U+17C6 U+17BB > U+17BB U+17C6   c when type ំ and ុ , tranform them to ុំ
+U+17C6 U+17B6 > U+17B6 U+17C6   c when type ំ and ា, tranform them to ាំ
 
 c Reordering - Triisap and Muusikatoan store before a vowel and a vowelcomboR and psuedo vowel.
 
@@ -423,7 +423,7 @@ any(v_gen) any(v_gen) any(v_pseudo)               > context(2) context(3) c a ge
 any(v_pseudo) any(v_gen) any(v_pseudo)            > context(2) context(3) c a pseudo vowel roates to a two-part vowel.
 any(v_gen) any(v_pseudo) any(v_gen) any(v_pseudo) > context(3) context(4) c a two-part vowel rotates to another two-part vowel.
 any(v_pseudo) any(v_pseudo)                       > context(2)            c a pseudo vowel rotates to another pseudo vowel.
-any(v_pseudo) any(v_gen)                          > context(2)            c a pseudo vowel roates to a genuine vowel.
+c any(v_pseudo) any(v_gen)                          > context(2)            c a pseudo vowel roates to a genuine vowel.
                 
 c Delete extraneous coeng markers
 
@@ -584,24 +584,88 @@ U+17A2 U+17D2 U+179C U+17C9 U+17B6 U+17C6              > context(1) context(2) c
 
 c U+17B6 U+17BB and U+17C6 in that order preceeded by any first series consonant (cluster) are transformed to U+17CA U+17B6 and U+17C6
 
-any(shiftable_c_1st) U+17B6 U+17BB U+17C6              > context(1) U+17CA context(2) context(4)  
+any(shiftable_c_1st) U+17B6 U+17BB U+17C6              > context(1) U+17CA context(2) context(4) 
+any(shiftable_c_1st) U+17BB U+17C6 U+17B6              > context(1) U+17CA context(4) context(3)  
 
-any(c_combo_QA) U+17D2 U+17A2 U+17B6 U+17BB U+17C6     > context(1) context(2) context(3) U+17CA context(4) context(6)  
+any(c_combo_QA) U+17D2 U+17A2 U+17B6 U+17BB U+17C6     > context(1) context(2) context(3) U+17CA context(4) context(6)
+any(c_combo_QA) U+17D2 U+17A2 U+17BB U+17C6 U+17B6     > context(1) context(2) context(3) U+17CA context(6) context(5)
+  
 U+179B U+17D2 any(c_1st_combo_LO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6) 
+U+179B U+17D2 any(c_1st_combo_LO) U+17BB U+17C6 U+17B6 > context(1) context(2) context(3) U+17CA context(6) context(5) 
+
 U+1798 U+17D2 any(c_1st_combo_MO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17CA context(4) context(6) 
+U+1798 U+17D2 any(c_1st_combo_MO) U+17BB U+17C6 U+17B6 > context(1) context(2) context(3) U+17CA context(6) context(5) 
+
 U+179F U+17D2 any(c_combo_SA) U+17B6 U+17BB U+17C6     > context(1) context(2) context(3) U+17CA context(4) context(6)   
+U+179F U+17D2 any(c_combo_SA) U+17BB U+17C6 U+17B6     > context(1) context(2) context(3) U+17CA context(6) context(5)   
+
 any(c_combo_HA) U+17D2 U+17A0 U+17B6 U+17BB U+17C6     > context(1) context(2) context(3) U+17CA context(4) context(6)   
+any(c_combo_HA) U+17D2 U+17A0 U+17BB U+17C6 U+17B6     > context(1) context(2) context(3) U+17CA context(6) context(5)   
+
 U+17A2 U+17D2 U+1784 U+17B6 U+17BB U+17C6              > context(1) context(2) context(3) U+17CA context(4) context(6)    	   	  
+U+17A2 U+17D2 U+1784 U+17BB U+17C6 U+17B6              > context(1) context(2) context(3) U+17CA context(6) context(5)    	   	  
+
 U+17A2 U+17D2 U+179C U+17B6 U+17BB U+17C6              > context(1) context(2) context(3) U+17CA context(4) context(6)  
+U+17A2 U+17D2 U+179C U+17BB U+17C6 U+17B6              > context(1) context(2) context(3) U+17CA context(4) context(6)  
 
 c U+17B6 U+17BB and U+17C6 in that order preceeded by any second series consonant (cluster) are transformed to U+17C9 U+17B6 and U+17C6
 
-any(shiftable_c_2nd) U+17B6 U+17BB U+17C6 > context(1) U+17C9 context(2) context(4)  
+any(shiftable_c_2nd) U+17B6 U+17BB U+17C6 > context(1) U+17C9 context(2) context(4) 
+any(shiftable_c_2nd) U+17BB U+17C6 U+17B6 > context(1) U+17C9 context(4) context(3) 
 
 U+179B U+17D2 any(c_2nd_combo_LO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17C9 context(4) context(6)
+U+179B U+17D2 any(c_2nd_combo_LO) U+17BB U+17C6 U+17B6 > context(1) context(2) context(3) U+17C9 context(6) context(5)
+
 U+1798 U+17D2 any(c_2nd_combo_MO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17C9 context(4) context(6)
+U+1798 U+17D2 any(c_2nd_combo_MO) U+17BB U+17C6 U+17B6 > context(1) context(2) context(3) U+17C9 context(6) context(5)
 
+c េុី/ុេី/៉េី  > ៊ើ
 
+any(shiftable_c_1st) U+17C1 U+17BB U+17B8               > context(1) U+17CA U+17BE    c cancel out by vowel rotation
+any(shiftable_c_1st) U+17BB U+17C1 U+17B8               > context(1) U+17CA U+17BE    c cancel out by vowel rotation
+any(shiftable_c_1st) U+17C9 U+17C1 U+17B8               > context(1) U+17CA U+17BE  
+
+any(c_combo_QA) U+17D2 U+17A2 U+17C1 U+17BB U+17B8     > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+any(c_combo_QA) U+17D2 U+17A2 U+17BB U+17C1 U+17B8     > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+any(c_combo_QA) U+17D2 U+17A2 U+17C9 U+17C1 U+17B8     > context(1) context(2) context(3) U+17CA U+17BE 
+
+U+179B U+17D2 any(c_1st_combo_LO) U+17C1 U+17BB U+17B8 > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+179B U+17D2 any(c_1st_combo_LO) U+17BB U+17C1 U+17B8 > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+179B U+17D2 any(c_1st_combo_LO) U+17C9 U+17C1 U+17B8 > context(1) context(2) context(3) U+17CA U+17BE
+
+U+1798 U+17D2 any(c_1st_combo_MO) U+17C1 U+17BB U+17B8 > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+1798 U+17D2 any(c_1st_combo_MO) U+17BB U+17C1 U+17B8 > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+1798 U+17D2 any(c_1st_combo_MO) U+17C9 U+17C1 U+17B8 > context(1) context(2) context(3) U+17CA U+17BE  
+
+U+179F U+17D2 any(c_combo_SA) U+17C1 U+17BB U+17B8     > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+179F U+17D2 any(c_combo_SA) U+17BB U+17C1 U+17B8     > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+179F U+17D2 any(c_combo_SA) U+17C9 U+17C1 U+17B8     > context(1) context(2) context(3) U+17CA U+17BE   
+
+any(c_combo_HA) U+17D2 U+17A0 U+17C1 U+17BB U+17B8     > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+any(c_combo_HA) U+17D2 U+17A0 U+17BB U+17C1 U+17B8     > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+any(c_combo_HA) U+17D2 U+17A0 U+17C9 U+17C1 U+17B8     > context(1) context(2) context(3) U+17CA U+17BE   
+
+U+17A2 U+17D2 U+1784 U+17C1 U+17BB U+17B8              > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation	   	  
+U+17A2 U+17D2 U+1784 U+17BB U+17C1 U+17B8              > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+17A2 U+17D2 U+1784 U+17C9 U+17C1 U+17B8              > context(1) context(2) context(3) U+17CA U+17BE   
+
+U+17A2 U+17D2 U+179C U+17C1 U+17BB U+17B8              > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+17A2 U+17D2 U+179C U+17BB U+17C1 U+17B8              > context(1) context(2) context(3) U+17CA U+17BE    c cancel out by vowel rotation
+U+17A2 U+17D2 U+179C U+17C9 U+17C1 U+17B8              > context(1) context(2) context(3) U+17CA U+17BE  
+
+c េុី/ុេី/៊េី  > ៉ើ
+
+any(shiftable_c_2nd) U+17C1 U+17BB U+17B8 > context(1) U+17C9 U+17BE  c cancel out by vowel rotation
+any(shiftable_c_2nd) U+17BB U+17C1 U+17B8 > context(1) U+17C9 U+17BE  c cancel out by vowel rotation
+any(shiftable_c_2nd) U+17CA U+17C1 U+17B8 > context(1) U+17C9 U+17BE 
+
+U+179B U+17D2 any(c_2nd_combo_LO) U+17C1 U+17BB U+17B8 > context(1) context(2) context(3) U+17C9 U+17BE    c cancel out by vowel rotation
+U+179B U+17D2 any(c_2nd_combo_LO) U+17BB U+17C1 U+17B8 > context(1) context(2) context(3) U+17C9 U+17BE    c cancel out by vowel rotation
+U+179B U+17D2 any(c_2nd_combo_LO) U+17CA U+17C1 U+17B8 > context(1) context(2) context(3) U+17C9 U+17BE 
+
+U+1798 U+17D2 any(c_2nd_combo_MO) U+17C1 U+17BB U+17B8 > context(1) context(2) context(3) U+17C9 U+17BE    c cancel out by vowel rotation
+U+1798 U+17D2 any(c_2nd_combo_MO) U+17BB U+17C1 U+17B8 > context(1) context(2) context(3) U+17C9 U+17BE    c cancel out by vowel rotation
+U+1798 U+17D2 any(c_2nd_combo_MO) U+17CA U+17C1 U+17B8 > context(1) context(2) context(3) U+17C9 U+17BE
 
 c Use appropriate identfical subscript in two separate contexts. (Case #8)
 
@@ -615,8 +679,8 @@ U+1791 U+17D2 U+1794 > U+17A1 c ទ្ប transforms to ឡ
 U+1794 U+17D2 U+1789 > U+17AB c ប្ញ transforms to ឫ
 U+17AB U+17BB        > U+17AC c ឫុ transforms to ឬ
 
-U+17AD U+17B6        > U+1789 c ព្ញា transforms to ញ 
-U+17AE U+17B6        > U+1789 c ឭុ transforms to ញ 
+U+17AD U+17B6        > U+1789 c ឭា transforms to ញ 
+U+17AE U+17B6        > U+1789 c ឮា transforms to ញ 
 
 U+1796 U+17D2 U+1789 > U+17AD c ព្ញ transforms to ឭ
 U+17AD U+17BB        > U+17AE c ឭុ transforms to ឮ
