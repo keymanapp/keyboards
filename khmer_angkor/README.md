@@ -1,19 +1,22 @@
-____________ keyboard
+Khmer Angkor keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2017 SIL International
 
-Version A.B
+Version 1.0
 
 __DESCRIPTION__
+The key arrangment was adopted from NiDA keyboard. What makes Khmer Angkor unique is the special functionalities it covers and implements on the inside.
+
+
 
 Links
 -----
 
- * Home:     <___URL___>
+ * Home:     keyman.com
  * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Help:     https://help.keyman.com
+ * Contact:  https://keyman.com/contact/
 
 Supported Platforms
 -------------------
