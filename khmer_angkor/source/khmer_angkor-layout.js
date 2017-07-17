@@ -1,4 +1,4 @@
-﻿{
+{
   "tablet": {
     "font": "Khmer OS System",
     "layer": [

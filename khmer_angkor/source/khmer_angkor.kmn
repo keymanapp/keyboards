@@ -99,9 +99,9 @@ store(c_shifter)       U+17C9          U+17CA
 
 c punctuations
 
-store(punct_key)       [K_PERIOD] [SHIFT K_PERIOD] [RALT K_COLON] [SHIFT K_2] [RALT K_L] [RALT K_6] [RALT K_7]   
-store(punct_touch_key)       [K_PERIOD] [SHIFT K_PERIOD] [CTRL ALT K_COLON] [SHIFT K_2] [CTRL ALT K_L] [CTRL ALT K_6] [CTRL ALT K_7]   
-store(punct_out)       U+17D4     U+17D5           U+17D6         U+17D7      U+17D8     U+17D9     U+17DA
+store(punct_key)       [K_PERIOD] [SHIFT K_PERIOD] [RALT K_COLON] [SHIFT K_2] [RALT K_L] [RALT K_6] [RALT K_7] [RALT K_M]  
+store(punct_touch_key)       [K_PERIOD] [SHIFT K_PERIOD] [CTRL ALT K_COLON] [SHIFT K_2] [CTRL ALT K_L] [CTRL ALT K_6] [CTRL ALT K_7] [CTRL ALT K_M]   
+store(punct_out)       U+17D4     U+17D5           U+17D6         U+17D7      U+17D8     U+17D9     U+17DA  U+17D3 
 
 store(latin_punct_key) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_9] [SHIFT K_0] [SHIFT K_1] [SHIFT K_3] \
                        [SHIFT K_5] [SHIFT K_EQUAL] [SHIFT K_SLASH] [RALT K_9] [RALT K_0] [RALT K_BKSLASH] \
@@ -310,7 +310,7 @@ c + any(lunar_date_key)  > index(lunar_date_out,1)
 + [SHIFT K_V]          > U+17C1 U+17C7
 + [SHIFT K_COLON]      > U+17C4 U+17C7
 + [K_COMMA]            > U+17BB U+17C6
-+ [SHIFT K_COMMA]      > U+17BB U+17C7 
++ [SHIFT K_COMMA]      > U+17BB U+17C7  
 
 c Constraints
 
