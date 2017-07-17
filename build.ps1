@@ -142,7 +142,7 @@ function Test-Binary-Keyboard {
   # Try and load the JSON file
   #
 
-  $InfoJson = "$Root\$Name\$Name.json"
+  $InfoJson = "$Root\$Name\$Name.keyboard_info"
   
   if(-not (Test-Path $InfoJson)) {
     Write-Error "The file $InfoJson does not exist."
@@ -153,6 +153,10 @@ function Test-Binary-Keyboard {
   #
   # Basic json validation
   #
+  
+  if($json -eq $null) {
+    Write-Error "The JSON file $InfoJson is empty"
+  }
   
   if(-not(Get-Member -inputobject $json -name "version" -Membertype Properties)) {
     Write-Error "The version field is required in $InfoJson."
@@ -198,7 +202,7 @@ function Test-Binary-Keyboard {
   # The .kmp filename is a bit less solid. For now it must match $name.kmp
   #
   
-  if($HasPackage -and ($json.packageFilename -ne "$Name.kmp")) {
+  if($HasPackage -and ($json.packageFilename -NotMatch "^$Name\.km.$")) {
     Write-Error "File $Root\$Name\$($json.packageFilename) should match the folder name $Name."
   }
 
