@@ -27,8 +27,3 @@ Supported Platforms
  * Web
  * iOS
  * Android
-
-Todo
-----
-
-* 
