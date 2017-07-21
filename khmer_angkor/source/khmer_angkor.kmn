@@ -29,14 +29,14 @@ store(c_key)           [K_K] [K_X] [SHIFT K_K] [SHIFT K_X] [K_G] \
                        [K_T] [K_F] [SHIFT K_T] [SHIFT K_F] [K_N] \
                        [K_B] [K_P] [SHIFT K_B] [SHIFT K_P] [K_M] \
                        [K_Y] [K_R] [K_L] [K_V] [K_S] [K_H] [SHIFT K_L] [SHIFT K_G] \
-                       [RALT K_S] [RALT K_B] 
+                       [RALT K_K] [RALT K_B] 
 store(c_touch_key)     [K_K] [K_X] [SHIFT K_K] [SHIFT K_X] [K_G] \
                        [K_C] [K_Q] [SHIFT K_C] [SHIFT K_Q] [SHIFT K_J] \
                        [K_D] [K_Z] [SHIFT K_D] [SHIFT K_Z] [SHIFT K_N] \
                        [K_T] [K_F] [SHIFT K_T] [SHIFT K_F] [K_N] \
                        [K_B] [K_P] [SHIFT K_B] [SHIFT K_P] [K_M] \
                        [K_Y] [K_R] [K_L] [K_V] [K_S] [K_H] [SHIFT K_L] [SHIFT K_G] \
-                       [CTRL ALT K_S] [CTRL ALT K_B]                      
+                       [CTRL ALT K_K] [CTRL ALT K_B]                      
 store(c_out)           U+1780 U+1781 U+1782 U+1783 U+1784 \
     	   	   	       U+1785 U+1786 U+1787 U+1788 U+1789 \
     	   	   	       U+178A U+178B U+178C U+178D U+178E \
@@ -221,72 +221,72 @@ group(main) using keys
 
 c Temporary Basic rules for Touch layout  [***REMOVED THESE AND THEIR STORES WHEN "RALT" FUNCTIONALITY IS FIXED***]
 
-platform('desktop native') + any(c_key)           > index(c_out,2)
-platform('web') + any(c_touch_key)           > index(c_out,2) 
+c platform('desktop native') + any(c_key)           > index(c_out,2)
+c platform('web') + any(c_touch_key)           > index(c_out,2)
 
-c platform('desktop') + any(c_key)           > index(c_out,2)
-c platform('mobile') + any(c_touch_key)           > index(c_out,2)
-c platform('tablet') + any(c_touch_key)           > index(c_out,2)
+ platform('desktop') + any(c_key)           > index(c_out,2)
+ platform('mobile') + any(c_touch_key)           > index(c_out,2)
+ platform('tablet') + any(c_touch_key)           > index(c_out,2)
 
-platform('desktop native') + any(v_key)                > index(v_out,2)
-platform('web') + any(v_touch_key)           > index(v_out,2)
+c platform('desktop native') + any(v_key)                > index(v_out,2)
+c platform('web') + any(v_touch_key)           > index(v_out,2)
 
-c platform('desktop') + any(v_key)                > index(v_out,2)
-c platform('mobile') + any(v_touch_key)           > index(v_out,2)
-c platform('tablet') + any(v_touch_key)           > index(v_out,2)
+ platform('desktop') + any(v_key)                > index(v_out,2)
+ platform('mobile') + any(v_touch_key)           > index(v_out,2)
+ platform('tablet') + any(v_touch_key)           > index(v_out,2)
 
-platform('desktop native') + any(ind_v_key)            > index(ind_v_out,2)
-platform('web') + any(ind_v_touch_key)       > index(ind_v_out,2)
+c platform('desktop native') + any(ind_v_key)            > index(ind_v_out,2)
+c platform('web') + any(ind_v_touch_key)       > index(ind_v_out,2)
 
-c platform('desktop') + any(ind_v_key)            > index(ind_v_out,2)
-c platform('mobile') + any(ind_v_touch_key)       > index(ind_v_out,2)
-c platform('tablet') + any(ind_v_touch_key)       > index(ind_v_out,2)
+ platform('desktop') + any(ind_v_key)            > index(ind_v_out,2)
+ platform('mobile') + any(ind_v_touch_key)       > index(ind_v_out,2)
+ platform('tablet') + any(ind_v_touch_key)       > index(ind_v_out,2)
 
-platform('desktop native') + any(diacritic_key)        > index(diacritic_out,2)
-platform('web') + any(diacritic_touch_key)   > index(diacritic_out,2)
+c platform('desktop native') + any(diacritic_key)        > index(diacritic_out,2)
+c platform('web') + any(diacritic_touch_key)   > index(diacritic_out,2)
 
-c platform('desktop') + any(diacritic_key)        > index(diacritic_out,2)
-c platform('mobile') + any(diacritic_touch_key)   > index(diacritic_out,2)
-c platform('tablet') + any(diacritic_touch_key)   > index(diacritic_out,2)
+ platform('desktop') + any(diacritic_key)        > index(diacritic_out,2)
+ platform('mobile') + any(diacritic_touch_key)   > index(diacritic_out,2)
+ platform('tablet') + any(diacritic_touch_key)   > index(diacritic_out,2)
 
 + any(c_shifter_key)   > index(c_shifter,1)
 
-platform('desktop native') + any(punct_key)            > index(punct_out,2)
-platform('web') + any(punct_touch_key)       > index(punct_out,2)
+c platform('desktop native') + any(punct_key)            > index(punct_out,2)
+c platform('web') + any(punct_touch_key)       > index(punct_out,2)
 
-c platform('desktop') + any(punct_key)            > index(punct_out,2)
-c platform('mobile') + any(punct_touch_key)       > index(punct_out,2)
-c platform('tablet') + any(punct_touch_key)       > index(punct_out,2)
+ platform('desktop') + any(punct_key)            > index(punct_out,2)
+ platform('mobile') + any(punct_touch_key)       > index(punct_out,2)
+ platform('tablet') + any(punct_touch_key)       > index(punct_out,2)
 
-platform('desktop native') + any(latin_punct_key)      > index(latin_punct_out,2)
-platform('web') + any(latin_punct_touch_key) > index(latin_punct_out,2)
+c platform('desktop native') + any(latin_punct_key)      > index(latin_punct_out,2)
+c platform('web') + any(latin_punct_touch_key) > index(latin_punct_out,2)
 
-c platform('desktop') + any(latin_punct_key)      > index(latin_punct_out,2)
-c platform('mobile') + any(latin_punct_touch_key) > index(latin_punct_out,2)
-c platform('tablet') + any(latin_punct_touch_key) > index(latin_punct_out,2)
+ platform('desktop') + any(latin_punct_key)      > index(latin_punct_out,2)
+ platform('mobile') + any(latin_punct_touch_key) > index(latin_punct_out,2)
+ platform('tablet') + any(latin_punct_touch_key) > index(latin_punct_out,2)
 
-platform('desktop native') + any(currency_key)         > index(currency_out,2)
-platform('web') + any(currency_touch_key)    > index(currency_out,2)
+c platform('desktop native') + any(currency_key)         > index(currency_out,2)
+c platform('web') + any(currency_touch_key)    > index(currency_out,2)
 
-c platform('desktop') + any(currency_key)         > index(currency_out,2)
-c platform('mobile') + any(currency_touch_key)    > index(currency_out,2)
-c platform('tablet') + any(currency_touch_key)    > index(currency_out,2)
+ platform('desktop') + any(currency_key)         > index(currency_out,2)
+ platform('mobile') + any(currency_touch_key)    > index(currency_out,2)
+ platform('tablet') + any(currency_touch_key)    > index(currency_out,2)
 
 + any(digit_key)       > index(digit_out,1)
 
-platform('desktop native')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-platform('web')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+c platform('desktop native')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+c platform('web')+ any(arabic_digit_key) > index(arabic_digit_out,2)
 
-c platform('desktop')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-c platform('mobile')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-c platform('tablet')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+ platform('desktop')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+ platform('mobile')+ any(arabic_digit_key) > index(arabic_digit_out,2)
+ platform('tablet')+ any(arabic_digit_key) > index(arabic_digit_out,2)
 
-platform('desktop native') + any(lek_attak_key)   > index(lek_attak_out,2)
-platform('web') + any(lek_attak_key)   > index(lek_attak_out,2)
+c platform('desktop native') + any(lek_attak_key)   > index(lek_attak_out,2)
+c platform('web') + any(lek_attak_key)   > index(lek_attak_out,2)
 
-c platform('desktop') + any(lek_attak_key)   > index(lek_attak_out,2)
-c platform('mobile') + any(lek_attak_key)   > index(lek_attak_out,2)
-c platform('tablet') + any(lek_attak_key)   > index(lek_attak_out,2)
+ platform('desktop') + any(lek_attak_key)   > index(lek_attak_out,2)
+ platform('mobile') + any(lek_attak_key)   > index(lek_attak_out,2)
+ platform('tablet') + any(lek_attak_key)   > index(lek_attak_out,2)
 
  + any(lunar_date_key)  > index(lunar_date_out,1)
 
