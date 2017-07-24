@@ -1,13 +1,11 @@
 ﻿store(&VERSION) '9.0'
-store(&NAME) "Khmer Angkor" c TODO need a new name
-c BITMAP "khmer10.bmp"
+store(&NAME) "Khmer Angkor"
 store(&COPYRIGHT) '© 2017 Keyman'
 store(&MESSAGE) "More than just a Khmer Unicode keyboard."
 store(&VISUALKEYBOARD) 'khmer_angkor.kvk'
 store(&TARGETS) 'any windows'
 store(&LAYOUTFILE) 'khmer_angkor-layout.js'
 store(&KEYBOARDVERSION) '1.3'
-c store(&BITMAP) 'khmer10.ico'
 store(&ETHNOLOGUECODE) 'khm'
 store(&LANGUAGE) 'x0453'
 store(&WINDOWSLANGUAGES) 'x0453'
@@ -438,9 +436,9 @@ any(c_shifter) any(v_gen) any(v_pseudo) any(c_shifter) > context(2) context(3) c
 c Rotate vowels, diacritics and punctuation
 
 any(v_gen) any(v_gen)                     > context(2) c the last vowel stroke replaces the previous one.    
-any(diacritic_out) any(diacritic_out)     > context(2) c the last diacritic stroke replaces the previuos one.
-any(punct_out) any(punct_out)             > context(2) c the last punctuation stroke replaces the previous one.
-any(latin_punct_out) any(latin_punct_out) > context(2) c the last latin punctuation stroke replaces the previous one.
+c any(diacritic_out) any(diacritic_out)     > context(2) c the last diacritic stroke replaces the previuos one.
+c any(punct_out) any(punct_out)             > context(2) c the last punctuation stroke replaces the previous one.
+c any(latin_punct_out) any(latin_punct_out) > context(2) c the last latin punctuation stroke replaces the previous one.
 
 
 c Rotation of two-part vowels
@@ -719,6 +717,9 @@ U+17A7 U+17B7        > U+17B1 c ឧិ transforms to ឱ
 U+17A7 U+17CC        > U+17B1 c ឧ៌  transforms to ឱ   
 U+17A7 U+17CD        > U+17B1 c ឧ៍ transforms to ឱ   
 
-U+17D4 U+179B U+17D4 > U+17D8 c ។ល។  transforms to U+17D8 
+U+17D4 U+179B U+17D4 > U+17D8 c ។ល។  transforms to U+17D8  
+
+U+178A U+17D2 U+1792 > U+178A U+17D2 U+178B  c ដ្ធ > ដ្ឋ
+U+1791 U+17D2 U+178B > U+1791 U+17D2 U+1792  c ទ្ឋ  > ទ្ធ
 
 c EOF
