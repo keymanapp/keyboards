@@ -119,6 +119,8 @@ goto :eof
 
 if not "%silent%" == "-s" echo Building imxconfig, imxreload and keymnimx
 
+if not exist build mkdir build
+
 msbuild /p:Configuration=Release source\imxconfig\imxconfig.vcxproj /p:Platform=Win32
 if errorlevel 1 exit /b 4
 copy build\imxconfig\win32\release\imxconfig.exe build\imxconfig.exe
