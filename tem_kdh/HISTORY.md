@@ -1,5 +1,8 @@
 Tem (kdh) Keyboard Change History
 =======================
+1.2 (2017-07-04)
+-----------------
+* fixed keyboard layouts in phone and tablet
 
 1.1 (2017-06-09)
 -----------------
