@@ -1,11 +1,11 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) "Khmer Angkor"
-store(&COPYRIGHT) '© 2017 Keyman'
+store(&COPYRIGHT) '© 2017 SIL International'
 store(&MESSAGE) "More than just a Khmer Unicode keyboard."
 store(&VISUALKEYBOARD) 'khmer_angkor.kvk'
 store(&TARGETS) 'any windows'
 store(&LAYOUTFILE) 'khmer_angkor-layout.js'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.0'
 store(&ETHNOLOGUECODE) 'khm'
 store(&LANGUAGE) 'x0453'
 store(&WINDOWSLANGUAGES) 'x0453'
@@ -52,9 +52,9 @@ store(v_gen)           U+17B6 U+17B7 U+17B8 U+17B9 U+17BA U+17BB U+17BC U+17BD \
                        
 c All pseudo dependent vowels
 
-store(v_pseudo_key)    [SHIFT K_M] [SHIFT K_H] [RALT K_QUOTE]
-store(v_pseudo_touch_key)    [SHIFT K_M] [SHIFT K_H] [CTRL ALT K_QUOTE]
-store(v_pseudo)        U+17C6 U+17C7 U+17C8 
+store(v_pseudo_key)       [SHIFT K_M] [SHIFT K_H] [RALT K_QUOTE]
+store(v_pseudo_touch_key) [SHIFT K_M] [SHIFT K_H] [CTRL ALT K_QUOTE]
+store(v_pseudo)           U+17C6 U+17C7 U+17C8 
 
 c Both genuine and pseudo vowels
 
@@ -76,19 +76,19 @@ c Independent vowels
 
 store(ind_v_key)       [K_HYPHEN] [RALT K_I] [SHIFT K_RBRKT] [RALT K_T] [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_R] [SHIFT K_R] \
                        [SHIFT K_BKSLASH] [K_BKSLASH] [RALT K_E] [RALT K_P] [RALT K_O] [K_EQUAL] [K_RBRKT]   
-store(ind_v_touch_key)       [K_HYPHEN] [CTRL ALT K_I] [SHIFT K_RBRKT] [CTRL ALT K_T] [CTRL ALT K_LBRKT] [CTRL ALT K_RBRKT] [CTRL ALT K_R] [SHIFT K_R] \
+store(ind_v_touch_key) [K_HYPHEN] [CTRL ALT K_I] [SHIFT K_RBRKT] [CTRL ALT K_T] [CTRL ALT K_LBRKT] [CTRL ALT K_RBRKT] [CTRL ALT K_R] [SHIFT K_R] \
                        [SHIFT K_BKSLASH] [K_BKSLASH] [CTRL ALT K_E] [CTRL ALT K_P] [CTRL ALT K_O] [K_EQUAL] [K_RBRKT]                         
 store(ind_v_out)       U+17A5 U+17A6 U+17A7 U+17A8 U+17A9 U+17AA U+17AB U+17AC \
                        U+17AD U+17AE U+17AF U+17B0 U+17B1 U+17B2 U+17B3 
 
 c Diacritics
 
-store(diacritic_key)   [K_QUOTE] [SHIFT K_7] [SHIFT K_HYPHEN] [SHIFT K_8] [SHIFT K_6] [RALT K_QUOTE] \  
-                       [RALT K_EQUAL] [RALT K_3] [RALT K_W] [RALT K_Q] [K_J] 
-store(diacritic_touch_key)   [K_QUOTE] [SHIFT K_7] [SHIFT K_HYPHEN] [SHIFT K_8] [SHIFT K_6] [CTRL ALT K_QUOTE] \  
-                       [CTRL ALT K_EQUAL] [CTRL ALT K_3] [CTRL ALT K_W] [CTRL ALT K_Q] [K_J] 
-store(diacritic_out)   U+17CB U+17D0 U+17CC U+17CF U+17CD U+17C8 \
-                       U+17CE U+17D1 U+17DD U+17DC U+17D2  
+store(diacritic_key)       [K_QUOTE] [SHIFT K_7] [SHIFT K_HYPHEN] [SHIFT K_8] [SHIFT K_6] [RALT K_QUOTE] \  
+                           [RALT K_EQUAL] [RALT K_3] [RALT K_W] [RALT K_Q] [K_J] 
+store(diacritic_touch_key) [K_QUOTE] [SHIFT K_7] [SHIFT K_HYPHEN] [SHIFT K_8] [SHIFT K_6] [CTRL ALT K_QUOTE] \  
+                           [CTRL ALT K_EQUAL] [CTRL ALT K_3] [CTRL ALT K_W] [CTRL ALT K_Q] [K_J] 
+store(diacritic_out)       U+17CB U+17D0 U+17CC U+17CF U+17CD U+17C8 \
+                           U+17CE U+17D1 U+17DD U+17DC U+17D2  
 
 c Consonant shifter--Muusikatoan(U+17C9) and Triisap(U+17CA)
 
@@ -98,27 +98,27 @@ store(c_shifter)       U+17C9          U+17CA
 c punctuations
 
 store(punct_key)       [K_PERIOD] [SHIFT K_PERIOD] [RALT K_COLON] [SHIFT K_2] [RALT K_L] [RALT K_6] [RALT K_7] [RALT K_M]  
-store(punct_touch_key)       [K_PERIOD] [SHIFT K_PERIOD] [CTRL ALT K_COLON] [SHIFT K_2] [CTRL ALT K_L] [CTRL ALT K_6] [CTRL ALT K_7] [CTRL ALT K_M]   
+store(punct_touch_key) [K_PERIOD] [SHIFT K_PERIOD] [CTRL ALT K_COLON] [SHIFT K_2] [CTRL ALT K_L] [CTRL ALT K_6] [CTRL ALT K_7] [CTRL ALT K_M]   
 store(punct_out)       U+17D4     U+17D5           U+17D6         U+17D7      U+17D8     U+17D9     U+17DA  U+17D3 
 
-store(latin_punct_key) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_9] [SHIFT K_0] [SHIFT K_1] [SHIFT K_3] \
-                       [SHIFT K_5] [SHIFT K_EQUAL] [SHIFT K_SLASH] [RALT K_9] [RALT K_0] [RALT K_BKSLASH] \
-                       [SHIFT K_2] [SHIFT K_8] [RALT K_COMMA] [RALT K_HYPHEN] [RALT K_PERIOD] [RALT K_SLASH] \
-                       [RALT K_BKQUOTE] [RALT K_1]
+store(latin_punct_key)       [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_9] [SHIFT K_0] [SHIFT K_1] [SHIFT K_3] \
+                             [SHIFT K_5] [SHIFT K_EQUAL] [SHIFT K_SLASH] [RALT K_9] [RALT K_0] [RALT K_BKSLASH] \
+                             [SHIFT K_2] [SHIFT K_8] [RALT K_COMMA] [RALT K_HYPHEN] [RALT K_PERIOD] [RALT K_SLASH] \
+                             [RALT K_BKQUOTE] [RALT K_1]
 store(latin_punct_touch_key) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_9] [SHIFT K_0] [SHIFT K_1] [SHIFT K_3] \
-                       [SHIFT K_5] [SHIFT K_EQUAL] [SHIFT K_SLASH] [CTRL ALT K_9] [CTRL ALT K_0] [CTRL ALT K_BKSLASH] \
-                       [SHIFT K_2] [SHIFT K_8] [CTRL ALT K_COMMA] [CTRL ALT K_HYPHEN] [CTRL ALT K_PERIOD] [CTRL ALT K_SLASH] \
-                       [CTRL ALT K_BKQUOTE] [CTRL ALT K_1]
-store(latin_punct_out) U+00AB U+00BB U+0028 U+0029 U+0021 U+0022 \
-                       U+0025 U+003D U+003F U+007B U+007D U+005C \
-                       U+0040 U+002A U+002C U+0078 U+002E U+002F \
-    	               U+200D U+200C
+                             [SHIFT K_5] [SHIFT K_EQUAL] [SHIFT K_SLASH] [CTRL ALT K_9] [CTRL ALT K_0] [CTRL ALT K_BKSLASH] \
+                             [SHIFT K_2] [SHIFT K_8] [CTRL ALT K_COMMA] [CTRL ALT K_HYPHEN] [CTRL ALT K_PERIOD] [CTRL ALT K_SLASH] \
+                             [CTRL ALT K_BKQUOTE] [CTRL ALT K_1]
+store(latin_punct_out)       U+00AB U+00BB U+0028 U+0029 U+0021 U+0022 \
+                             U+0025 U+003D U+003F U+007B U+007D U+005C \
+                             U+0040 U+002A U+002C U+0078 U+002E U+002F \
+    	                     U+200D U+200C
 
 c Currency: Riel, Dollar and Euro
 
-store(currency_key)    [SHIFT K_4] [RALT K_4] [RALT K_5]  
-store(currency_touch_key)    [SHIFT K_4] [CTRL ALT K_4] [CTRL ALT K_5]
-store(currency_out)    U+17DB      U+0024     U+20AC
+store(currency_key)       [SHIFT K_4] [RALT K_4] [RALT K_5]  
+store(currency_touch_key) [SHIFT K_4] [CTRL ALT K_4] [CTRL ALT K_5]
+store(currency_out)       U+17DB      U+0024     U+20AC
 
 c Khmer digits 0 through 9
 
@@ -217,76 +217,55 @@ c ==============================================BASIC RULES & CONSTRAINTS/ROTATI
 
 group(main) using keys
 
-c Temporary Basic rules for Touch layout  [***REMOVED THESE AND THEIR STORES WHEN "RALT" FUNCTIONALITY IS FIXED***]
+c Basic rules for 'desktop native,' 'touch,' and 'web' layout
 
-c platform('desktop native') + any(c_key)           > index(c_out,2)
-c platform('web') + any(c_touch_key)           > index(c_out,2)
+platform('desktop native') + any(c_key)           > index(c_out,2)
+platform('touch') + any(c_touch_key)              > index(c_out,2)
+platform('web') + any(c_touch_key)                > index(c_out,2)
 
- platform('desktop') + any(c_key)           > index(c_out,2)
- platform('mobile') + any(c_touch_key)           > index(c_out,2)
- platform('tablet') + any(c_touch_key)           > index(c_out,2)
+platform('desktop native') + any(v_key)           > index(v_out,2)
+platform('touch') + any(v_touch_key)              > index(v_out,2)
+platform('web') + any(v_touch_key)                > index(v_out,2)
 
-c platform('desktop native') + any(v_key)                > index(v_out,2)
-c platform('web') + any(v_touch_key)           > index(v_out,2)
+platform('desktop native') + any(ind_v_key)       > index(ind_v_out,2)
+platform('touch') + any(ind_v_touch_key)          > index(ind_v_out,2)
+platform('web') + any(ind_v_touch_key)            > index(ind_v_out,2)
 
- platform('desktop') + any(v_key)                > index(v_out,2)
- platform('mobile') + any(v_touch_key)           > index(v_out,2)
- platform('tablet') + any(v_touch_key)           > index(v_out,2)
+platform('desktop native') + any(diacritic_key)   > index(diacritic_out,2)
+platform('touch') + any(diacritic_touch_key)      > index(diacritic_out,2)
+platform('web') + any(diacritic_touch_key)        > index(diacritic_out,2)
 
-c platform('desktop native') + any(ind_v_key)            > index(ind_v_out,2)
-c platform('web') + any(ind_v_touch_key)       > index(ind_v_out,2)
+platform('desktop native') + any(c_shifter_key)   > index(c_shifter,2)
+platform('touch') + any(c_shifter_key)            > index(c_shifter,2)
+platform('web') + any(c_shifter_key)              > index(c_shifter,2)
 
- platform('desktop') + any(ind_v_key)            > index(ind_v_out,2)
- platform('mobile') + any(ind_v_touch_key)       > index(ind_v_out,2)
- platform('tablet') + any(ind_v_touch_key)       > index(ind_v_out,2)
+platform('desktop native') + any(punct_key)       > index(punct_out,2)
+platform('touch') + any(punct_touch_key)          > index(punct_out,2)
+platform('web') + any(punct_touch_key)            > index(punct_out,2)
 
-c platform('desktop native') + any(diacritic_key)        > index(diacritic_out,2)
-c platform('web') + any(diacritic_touch_key)   > index(diacritic_out,2)
+platform('desktop native') + any(latin_punct_key) > index(latin_punct_out,2)
+platform('touch') + any(latin_punct_touch_key)    > index(latin_punct_out,2)
+platform('web') + any(latin_punct_touch_key)      > index(latin_punct_out,2)
 
- platform('desktop') + any(diacritic_key)        > index(diacritic_out,2)
- platform('mobile') + any(diacritic_touch_key)   > index(diacritic_out,2)
- platform('tablet') + any(diacritic_touch_key)   > index(diacritic_out,2)
+platform('desktop native') + any(currency_key)    > index(currency_out,2)
+platform('touch') + any(currency_touch_key)       > index(currency_out,2)
+platform('web') + any(currency_touch_key)         > index(currency_out,2)
 
-+ any(c_shifter_key)   > index(c_shifter,1)
+platform('desktop native') + any(digit_key)       > index(digit_out,2)
+platform('touch') + any(digit_key)                > index(digit_out,2)
+platform('web') + any(digit_key)                  > index(digit_out,2)
 
-c platform('desktop native') + any(punct_key)            > index(punct_out,2)
-c platform('web') + any(punct_touch_key)       > index(punct_out,2)
+platform('desktop')+ any(arabic_digit_key)        > index(arabic_digit_out,2)
+platform('touch')+ any(arabic_digit_key)          > index(arabic_digit_out,2)
+platform('web')+ any(arabic_digit_key)            > index(arabic_digit_out,2)
 
- platform('desktop') + any(punct_key)            > index(punct_out,2)
- platform('mobile') + any(punct_touch_key)       > index(punct_out,2)
- platform('tablet') + any(punct_touch_key)       > index(punct_out,2)
+platform('desktop native') + any(lek_attak_key)   > index(lek_attak_out,2)
+platform('touch') + any(lek_attak_key)            > index(lek_attak_out,2)
+platform('web') + any(lek_attak_key)              > index(lek_attak_out,2)
 
-c platform('desktop native') + any(latin_punct_key)      > index(latin_punct_out,2)
-c platform('web') + any(latin_punct_touch_key) > index(latin_punct_out,2)
-
- platform('desktop') + any(latin_punct_key)      > index(latin_punct_out,2)
- platform('mobile') + any(latin_punct_touch_key) > index(latin_punct_out,2)
- platform('tablet') + any(latin_punct_touch_key) > index(latin_punct_out,2)
-
-c platform('desktop native') + any(currency_key)         > index(currency_out,2)
-c platform('web') + any(currency_touch_key)    > index(currency_out,2)
-
- platform('desktop') + any(currency_key)         > index(currency_out,2)
- platform('mobile') + any(currency_touch_key)    > index(currency_out,2)
- platform('tablet') + any(currency_touch_key)    > index(currency_out,2)
-
-+ any(digit_key)       > index(digit_out,1)
-
-c platform('desktop native')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-c platform('web')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-
- platform('desktop')+ any(arabic_digit_key) > index(arabic_digit_out,2)
- platform('mobile')+ any(arabic_digit_key) > index(arabic_digit_out,2)
- platform('tablet')+ any(arabic_digit_key) > index(arabic_digit_out,2)
-
-c platform('desktop native') + any(lek_attak_key)   > index(lek_attak_out,2)
-c platform('web') + any(lek_attak_key)   > index(lek_attak_out,2)
-
- platform('desktop') + any(lek_attak_key)   > index(lek_attak_out,2)
- platform('mobile') + any(lek_attak_key)   > index(lek_attak_out,2)
- platform('tablet') + any(lek_attak_key)   > index(lek_attak_out,2)
-
- + any(lunar_date_key)  > index(lunar_date_out,1)
+platform('desktop native') + any(lunar_date_key)  > index(lunar_date_out,2)
+platform('touch') + any(lunar_date_key)           > index(lunar_date_out,2)
+platform('web') + any(lunar_date_key)             > index(lunar_date_out,2)
 
 c Basic rules with RALT key
 
@@ -394,8 +373,8 @@ c ==============================================MOBILE/TABLET TOUCH LAYOUT======
 
 + any(input_subcons) > U+17D2 index(subcons, 1)
 
-platform('tablet') U+17D2 any(subcons) + [K_BKSP] > nul 	c not working
-platform('mobile') U+17D2 any(subcons) + [K_BKSP] > nul     c not working
+platform('touch') U+17D2 any(subcons) + [K_BKSP] > nul 	c not working
+platform('web') U+17D2 any(subcons) + [K_BKSP] > nul     c not working
 
 c + [K_NPSTAR]        > U+002A
 c + [SHIFT K_NPSTAR]  > U+002A

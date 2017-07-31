@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_khmer_angkor()); function Stub_Keyboard_khmer_angkor() {this.KF="khmer_angkor-1.3.js";this.KI="Keyboard_khmer_angkor";this.KN="Khmer Angkor";}
