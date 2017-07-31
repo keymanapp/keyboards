@@ -1,0 +1,89 @@
+﻿c orvietviqr10.kmn
+c 
+c OR Vietnamese (VIQR) 1.0
+c 
+c Keyboard layout designed for Vietnamese.
+c Uses the Microsoft's Vietnamese keyboard layout,
+c but produces precomposed Unicode characters.
+c 
+c Andrew Cunningham    2006-05-21
+c andrewc AT vicnet.net.au
+c 
+
+store(&VERSION) '7.0'
+c store(&Bitmap) "vi.bmp"
+store(&Copyright) "© 2006 State Library of Victoria"
+store(&Message) "Vietnamese Keyboard layout using the VIQR input convention."
+store(&Name) "OR Vietnamese (VIQR)"
+store(&VISUALKEYBOARD) 'gff-el-vietnamese-viqr-7.kvk'
+
+begin Unicode > use(main)  
+
+store(vowel) U+0061 U+00E2 U+0103 U+0065 U+00EA U+0069 U+006F U+00F4 U+01A1 U+0075 U+01B0 U+0079 U+0041 U+00C2 U+0102 U+0045 U+00CA U+0049 U+004F U+00D4 U+01A0 U+0055 U+01AF U+0059
+
+store(tacute) U+00E1 U+1EA5 U+1EAF U+00E9 U+1EBF U+00ED U+00F3 U+1ED1 U+1EDB U+00FA U+1EE9 U+00FD U+00C1 U+1EA4 U+1EAE U+00C9 U+1EBE U+00CD U+00D3 U+1ED0 U+1EDA U+00DA U+1EE8 U+00DD
+store(tgrave) U+00E0 U+1EA7 U+1EB1 U+00E8 U+1EC1 U+00EC U+00F2 U+1ED3 U+1EDD U+00F9 U+1EEB U+1EF3 U+00C0 U+1EA6 U+1EB0 U+00C8 U+1EC0 U+00CC U+00D2 U+1ED2 U+1EDC U+00D9 U+1EEA U+1EF2
+store(ttilde) U+00E3 U+1EAB U+1EB5 U+1EBD U+1EC5 U+0129 U+00F5 U+1ED7 U+1EE1 U+0169 U+1EEF U+1EF9 U+00C3 U+1EAA U+1EB4 U+1EBC U+1EC4 U+0128 U+00D5 U+1ED6 U+1EE0 U+0168 U+1EEE U+1EF8
+store(thook) U+1EA3 U+1EA9 U+1EB3 U+1EBB U+1EC3 U+1EC9 U+1ECF U+1ED5 U+1EDF U+1EE7 U+1EED U+1EF7 U+1EA2 U+1EA8 U+1EB2 U+1EBA U+1EC2 U+1EC8 U+1ECE U+1ED4 U+1EDE U+1EE6 U+1EEC U+1EF6
+store(tdotb) U+1EA1 U+1EAD U+1EB7 U+1EB9 U+1EC7 U+1ECB U+1ECD U+1ED9 U+1EE3 U+1EE5 U+1EF1 U+1EF5 U+1EA0 U+1EAC U+1EB6 U+1EB8 U+1EC6 U+1ECA U+1ECC U+1ED8 U+1EE2 U+1EE4 U+1EF0 U+1EF4
+
+store(nonvowel) "bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTuUvVwWxXzZ,<.>/?///[{]}-_\|;:'" '"'
+      
+store(vbrevel) "aA"    
+store(vbrevec)  U+0103 U+0102
+store(vcircuml) "aeoAEO"
+store(vcircumc) U+00e2 U+00ea U+00f4 U+00c2 U+00ca U+00d4
+store(vhookl) "ouOU"
+store(vhookc)  U+01A1 U+01B0 U+01A0 U+01AF 
+store(stroke_in) "dD"
+store(stroke_out) U+0111 U+0110
+
+store(dia1) "(" 
+store(dia2) "^"
+store(dia3) "+"
+store(dia4) "-"
+store(dia5) "`'?~."
+
+store(null1) "bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTuUvVwWxXzZ,<.>/?///[{]}-_\|;:'eEiIoOuUyY" '"' U+00e2 U+00ea U+00f4 U+00c2 U+00ca U+00d4 U+01A1 U+01B0 U+01A0 U+01AF U+0111 U+0110
+store(null2) "bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTuUvVwWxXzZ,<.>/?///[{]}-_\|;:'iIuUyY" '"' U+00e2 U+00ea U+00f4 U+00c2 U+00ca U+00d4 U+01A1 U+01B0 U+01A0 U+01AF U+0111 U+0110
+store(null3) "bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTuUvVwWxXzZ,<.>/?///[{]}-_\|;:'aAeEiIyY" '"' U+00e2 U+00ea U+00f4 U+00c2 U+00ca U+00d4 U+0111 U+0110
+store(null4) "bBcCfFgGhHjJkKlLmMnNpPqQrRsStTuUvVwWxXzZ,<.>/?///[{]}-_\|;:'aAeEiIoOuUyY" '"' U+00e2 U+00ea U+00f4 U+00c2 U+00ca U+00d4 U+01A1 U+01B0 U+01A0 U+01AF U+0111 U+0110
+store(null5) "bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTuUvVwWxXzZ,<.>/?///[{]}-_\|;:'" '"' U+0111 U+0110
+
+group(main) using keys    
+   
++ "\" > deadkey(1)
+
+any(stroke_in) + "-" > index(stroke_out,1)
+
+"d" + "d" > U+0111
+"D" + "d" > U+0110
+"D" + "D" > U+0110
+"d" + "D" > U+0110
+  
+any(vbrevel) + "(" > index(vbrevec,1)
+any(vcircuml) + "^" > index(vcircumc,1)   
+any(vhookl) + "+" > index(vhookc,1)
+any(vowel) + "'" > index(tacute,1)
+any(vowel) + "`" > index(tgrave,1)
+any(vowel) + "~" > index(ttilde,1)
+any(vowel) + "?" > index(thook,1)  
+any(vowel) + "." > index(tdotb,1)   
+
+deadkey(1) + "(" > "("
+deadkey(1) + "^" > "^"
+deadkey(1) + "+" > "+"
+deadkey(1) + "'" > "'"
+deadkey(1) + "`" > "`"
+deadkey(1) + "~" > "~"
+deadkey(1) + "?" > "?"
+deadkey(1) + "." > "."        
+deadkey(1) + "\" > "\"
+
+any(null1) + any(dia1) > context
+any(null2) + any(dia2) > context
+any(null3) + any(dia3) > context
+any(null4) + any(dia4) > context
+any(null5) + any(dia5) > context 
+
+c EOF
