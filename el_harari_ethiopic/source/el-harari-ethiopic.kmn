@@ -1,0 +1,235 @@
+﻿c harethi11.kmn
+c 
+c Harari Ethiopic 1.1
+c 
+c Keyboard layout designed for Harari (Ethiopic orthography).
+c Language code: har-Ethi (or simply "har")
+c 
+c Andrew Cunningham    2006-06-13
+c andrewc AT vicnet.net.au
+c 
+
+store(&VERSION) '7.0'
+c store(&Bitmap) "harethi.bmp"
+store(&Copyright) "© 2006 State Library of Victoria"
+store(&Message) "Harari Unicode keyboard layout."
+store(&Name) "Harari (Ethiopic)"
+store(&VISUALKEYBOARD) 'el-harari-ethiopic.kvk'
+c store(&TARGETS) 'any windows'
+
+begin Unicode > use(main)  
+
+store(vowels) "aeiou"
+store(vowels-caps) "AEIOU"
+store(vowels-e) U+12a0 U+12a4 U+12a2 U+12a6 U+12a1
+
+store(consonants) "hlmrsqbtnkwydjgcfpvxz" 
+store(consonants-cap) "HLMRSQBTNKWYDJGCFPVXZ"
+store(consonants-e) U+1205 U+120d U+121d U+122d U+1235 U+1245 U+1265 U+1275 U+1295 U+12ad U+12cd \
+                      U+12ed U+12f5 U+1305 U+130d U+132d U+134d U+1355 U+126d U+1325 U+12dd 	
+                      
+store(add_consonants) U+12a0 U+1205 U+1235                       
+store(add_consonants-e) U+12d5 U+1215 U+133d                         
+
+store(total-consonants-e) U+1205 U+120d U+1215 U+121d U+1225 U+122d U+1235 U+123d U+1245 U+1265 \
+                          U+1275 U+127d U+1295 U+129d U+12ad U+12bd U+12cd U+12d5 U+12dd U+12e5 \
+                          U+12ed U+12f5 U+1305 U+130d U+1325 U+132d U+133d U+134d U+1355 U+126d
+
+c consonants with "a"
+store(a-total-consonants-e) U+1200 U+1208 U+1210 U+1218 U+1220 U+1228 U+1230 U+1238 U+1240 U+1260 \
+                            U+1270 U+1278 U+1290 U+1298 U+12a8 U+12b8 U+12c8 U+12d0 U+12d8 U+12e0 \
+                            U+12e8 U+12f0 U+1300 U+1308 U+1320 U+1328 U+1338 U+1348 U+1350 U+1268      
+
+c consonants with "e"
+store(e-total-consonants-e) U+1204 U+120c U+1214 U+121c U+1224 U+122c U+1234 U+123c U+1244 U+1264 \
+                            U+1274 U+127c U+1294 U+129c U+12ac U+12bc U+12cc U+12d4 U+12dc U+12e4 \
+                            U+12ec U+12f4 U+1304 U+130c U+1324 U+132c U+133c U+134c U+1354 U+126c     
+
+c consonants with "i"
+store(i-total-consonants-e) U+1202 U+120a U+1212 U+121a U+1222 U+122a U+1232 U+123a U+1242 U+1262 \
+                            U+1272 U+127a U+1292 U+129a U+12aa U+12ba U+12ca U+12d2 U+12da U+12e2 \
+                            U+12ea U+12f2 U+1302 U+130a U+1322 U+132a U+133a U+134a U+1352 U+126a    
+
+c consonants with "o"
+store(o-total-consonants-e) U+1206 U+120e U+1216 U+121e U+1226 U+122e U+1236 U+123e U+1246 U+1266 \
+                            U+1276 U+127e U+1296 U+129e U+12ae U+12be U+12ce U+12d6 U+12de U+12e6 \
+                            U+12ee U+12f6 U+1306 U+130e U+1326 U+132e U+133e U+134e U+1356 U+126e    
+
+c consonants with "u"
+store(u-total-consonants-e) U+1201 U+1209 U+1211 U+1219 U+1221 U+1229 U+1231 U+1239 U+1241 U+1261 \
+                            U+1271 U+1279 U+1291 U+1299 U+12a9 U+12b9 U+12c9 U+12d1 U+12d9 U+12e1 \
+                            U+12e9 U+12f1 U+1301 U+1309 U+1321 U+1329 U+1339 U+1349 U+1351 U+1269   
+
+c consonants with "long a"
+store(la-total-consonants-e) U+1203 U+120b U+1213 U+121b U+1223 U+122b U+1233 U+123b U+1243 U+1263 \
+                             U+1273 U+127b U+1293 U+129b U+12ab U+12bb U+12cb U+12d3 U+12db U+12e3 \
+                             U+12eb U+12f3 U+1303 U+130b U+1323 U+132b U+133b U+134b U+1353 U+126b    
+
+c syllable ending in vowel
+store(vowel-ending) U+1200 U+1208 U+1210 U+1218 U+1220 U+1228 U+1230 U+1238 U+1240 U+1260 \     
+                    U+1270 U+1278 U+1290 U+1298 U+12a8 U+12b8 U+12c8 U+12d0 U+12d8 U+12e0 \
+                    U+12e8 U+12f0 U+1300 U+1308 U+1320 U+1328 U+1338 U+1348 U+1350 U+1268 \     
+                    U+1204 U+120c U+1214 U+121c U+1224 U+122c U+1234 U+123c U+1244 U+1264 \
+                    U+1274 U+127c U+1294 U+129c U+12ac U+12bc U+12cc U+12d4 U+12dc U+12e4 \
+                    U+12ec U+12f4 U+1304 U+130c U+1324 U+132c U+133c U+134c U+1354 U+126c \     
+                    U+1202 U+120a U+1212 U+121a U+1222 U+122a U+1232 U+123a U+1242 U+1262 \
+                    U+1272 U+127a U+1292 U+129a U+12aa U+12ba U+12ca U+12d2 U+12da U+12e2 \
+                    U+12ea U+12f2 U+1302 U+130a U+1322 U+132a U+133a U+134a U+1352 U+126a \     
+                    U+1206 U+120e U+1216 U+121e U+1226 U+122e U+1236 U+123e U+1246 U+1266 \
+                    U+1276 U+127e U+1296 U+129e U+12ae U+12be U+12ce U+12d6 U+12de U+12e6 \
+                    U+12ee U+12f6 U+1306 U+130e U+1326 U+132e U+133e U+134e U+1356 U+126e \     
+                    U+1201 U+1209 U+1211 U+1219 U+1221 U+1229 U+1231 U+1239 U+1241 U+1261 \
+                    U+1271 U+1279 U+1291 U+1299 U+12a9 U+12b9 U+12c9 U+12d1 U+12d9 U+12e1 \
+                    U+12e9 U+12f1 U+1301 U+1309 U+1321 U+1329 U+1339 U+1349 U+1351 U+1269 \     
+                    U+1203 U+120b U+1213 U+121b U+1223 U+122b U+1233 U+123b U+1243 U+1263 \
+                    U+1273 U+127b U+1293 U+129b U+12ab U+12bb U+12cb U+12d3 U+12db U+12e3 \
+                    U+12eb U+12f3 U+1303 U+130b U+1323 U+132b U+133b U+134b U+1353 U+126b \
+                    U+12a0 U+12a4 U+12a2 U+12a6 U+12a1 \
+                    U+12a6 U+12a1 U+12a2 U+12a3 U+12a4 U+12a0 \
+                    U+12ed U+12cd                                                                          
+                    
+
+store(stress) "\|"
+store(longv-dia) "[{"    
+store(cons-dia) "]}"       
+
+store(cons-dia-nul) U+120d U+121d U+122d U+1245 U+1265 U+1275 U+1295 U+12ad U+12cd U+12ed U+12f5 U+1305 U+130d U+132d U+134d U+1355 U+126d U+1325 U+12dd
+
+c store(digits) '23456789'
+store(digits) '23456789'   
+c store(arabdigits_in) "!@#$%^&*()"
+c store(arabdigits_out) "1234567890"
+store(units) U+136a U+136b U+136c U+136d U+136e U+136f U+1370 U+1371
+store(tens) U+1373 U+1374 U+1375 U+1376 U+1377 U+1378 U+1379 U+137a
+
+group(main) using keys
+
++ "`" > deadkey(1)
+deadkey(1) + "`" > "`"
+
+c digraph support
+                                      
+U+132d + "h" > U+127d                 c ch
+U+132d "\" + "h" > U+132d U+1205
+U+132d "|" + "h" > U+132d U+1205
+
+U+12f5 + "h" > U+12dd                 c dh
+U+12f5 "\" + "h" > U+12f5 U+1205
+U+12f5 "|" + "h" > U+12f5 U+1205 
+
+U+130d + "h" > U+12bd                 c gh
+U+130d "\" + "h" > U+130d U+1205
+U+130d "|" + "h" > U+130d U+1205
+
+U+130d + "n" > U+129d                 c gn
+U+130d "\" + "n" > U+130d U+1295
+U+130d "|" + "n" > U+130d U+1295
+
+U+12ad + "h" > U+12bd                 c kh
+U+12ad "\" + "h" > U+12ad U+1205
+U+12ad "|" + "h" > U+12ad U+1205
+
+U+1235 + "h" > U+123d                 c sh
+U+1235 "\" + "h" > U+1235 U+1205
+U+1235 "|" + "h" > U+1235 U+1205
+
+U+1275 + "h" > U+1225                 c th
+U+1275 "\" + "h" > U+1275 U+1205      
+U+1275 "|" + "h" > U+1275 U+1205   
+
+U+1325 + "h" > U+1325                 c xh
+U+1325 "\" + "h" > U+1325 U+1325
+U+1325 "|" + "h" > U+1325 U+1325    
+
+U+12dd + "h" > U+12e5                 c zh
+U+12dd "\" + "h" > U+12dd U+1205      
+U+12dd "|" + "h" > U+12dd U+1205   
+
++ any(consonants) > index(consonants-e,1) 
++ any(consonants-cap) > index(consonants-e,1)      
+
+any(add_consonants) + any(cons-dia) > index(add_consonants-e,1)
+any(cons-dia-nul) + any(cons-dia) > nul  
+
+any(total-consonants-e) + "a" > index(a-total-consonants-e,1)  
+any(total-consonants-e) + "e" > index(e-total-consonants-e,1)
+any(total-consonants-e) + "i" > index(i-total-consonants-e,1) 
+any(total-consonants-e) + "o" > index(o-total-consonants-e,1) 
+any(total-consonants-e) + "u" > index(u-total-consonants-e,1)     
+any(a-total-consonants-e) + "[" > index(la-total-consonants-e,1) 
+any(a-total-consonants-e) + "{" > index(la-total-consonants-e,1)
+
+any(e-total-consonants-e) + "[" > context U+12ed 
+any(e-total-consonants-e) + "{" > context U+12ed
+any(i-total-consonants-e) + "[" > context U+12ed   
+any(i-total-consonants-e) + "{" > context U+12ed    
+
+any(o-total-consonants-e) + "[" > context U+12cd
+any(o-total-consonants-e) + "{" > context U+12cd
+any(u-total-consonants-e) + "[" > context U+12cd
+any(u-total-consonants-e) + "{" > context U+12cd
+
+
+c single vowels
+
+c deadkey(1) + any(vowels) > index(vowels-e,2)
+c deadkey(1) + any(vowels-caps) > index(vowels-e,2)
++ any(vowels) > index(vowels-e,1)
++ any(vowels-caps) > index(vowels-e,1)
+
+U+12a0 + "[" > U+12a3
+U+12a0 + "{" > U+12a3
+U+12a4 + "[" > context U+12ed
+U+12a4 + "{" > context U+12ed
+U+12a2 + "[" > context U+12ed  
+U+12a2 + "{" > context U+12ed 
+U+12a6 + "[" > context U+12cd 
+U+12a6 + "{" > context U+12cd
+U+12a1 + "[" > context U+12cd  
+U+12a1 + "{" > context U+12cd
+
+any(vowel-ending) + "\" > context U+12a5  
+
++ "~" > nul
+
+c Ethiopic digits  -  Numbers up to Ten Thousand
+
+deadkey(1) + '1' > U+1369
+deadkey(1) + any(digits) > index(units,2)
+
+c special cases for multiples of one
+  
+U+1369 + '0' > U+1372
+U+1372 + '0' > U+137b
+U+137b + '0' > U+1372 U+137b
+U+1372 U+137b + '0' > U+137c
+  
+c for 2-9
+
+any(units) + '0' > index(tens,1)
+any(tens) + '0' > index(units,1) U+137b             c Hundreds
+any(units) U+137b + '0' > index(tens,1) U+137b      c Thousands
+any(tens) U+137b + '0' > index(units,1) U+137c      c Ten Thousands
+
+c Ethiopic punctuation
+
++ [SHIFT K_SPACE] > U+1361   c Ethiopic word seperator
++ "," > U+1363   c Ethiopic comma
++ "." > U+1362
++ ";" > U+1365
++ ":" > U+1364
++ "?" > U+1367  c Ethiopic Question mark  
++ "/" > "?"
++ [CTRL ALT K_QUOTE] > U+1366  c Ethiopic preface colon   
++ [CTRL ALT K_SLASH] > U+1368  c Ethiopic paragraph seperator
+
+c Additional characters
+
++ [CTRL ALT K_C] > U+00a9  
++ [CTRL ALT K_COMMA] > ","
++ [CTRL ALT K_PERIOD] > "."
++ [CTRL ALT K_COLON] > ";"
++ [SHIFT CTRL ALT K_COLON] > ":"
++ [SHIFT CTRL ALT K_SLASH] > "/"
+
+c EOF
