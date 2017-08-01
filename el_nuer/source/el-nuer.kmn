@@ -1,0 +1,129 @@
+﻿c nuer13.kmn
+c 
+c Nuer 1.3
+c 
+c Keyboard layout designed for Nuer.
+c 
+c 
+c Andrew Cunningham    2006-04-27
+c andrewc@vicnet.net.au
+c 
+
+store(&VERSION) '7.0'
+c store(&Bitmap) "nt.bmp"
+store(&Copyright) "© 2004-2006 Andrew Cunningham"
+store(&Name) "Nuer"
+store(&VISUALKEYBOARD) 'el-nuer.kvk'
+
+begin Unicode > use(main)
+
+ 
+store(vowels) "aeioAEIO"
+store(vdia) U+00E4 U+00EB U+00EF U+00F6 U+00C4 U+00CB U+00CF U+00D6
+store(extvowels) U+025B U+0190 U+0254 U+0186       
+store(other) "wrtyupdghjklcvbnmWRTYUPDGHJKLCVBNMQqSsZzXxFf" U+014b U+014a U+0263 U+0263
+store(dia1) "'" '"'
+store(dia2) ";:"
+
+group(main) using keys 
+
++ [CTRL ALT K_COLON] > U+2018
++ [CTRL ALT K_QUOTE] > U+2019
++ [SHIFT CTRL ALT K_COLON] > U+201C
++ [SHIFT CTRL ALT K_QUOTE] > U+201D
++ [CTRL ALT K_HYPHEN] > U+2013
++ [SHIFT CTRL ALT K_HYPHEN] > U+2014
++ [CTRL ALT K_C] > U+00A9
++ [CTRL ALT K_R] > U+00AE
++ [CTRL ALT K_Q] > U+0071
++ [CTRL ALT K_X] > U+0078
++ [CTRL ALT K_S] > U+0073
++ [CTRL ALT K_F] > U+0066
++ [SHIFT CTRL ALT K_Q] > U+0051
++ [SHIFT CTRL ALT K_S] > U+0053
++ [SHIFT CTRL ALT K_F] > U+0046
++ [SHIFT CTRL ALT K_X] > U+0058
++ [CTRL ALT K_PERIOD] > U+2026
++ [CTRL ALT K_LBRKT] > U+2039 
++ [CTRL ALT K_RBRKT] > U+203A 
++ [SHIFT CTRL ALT K_LBRKT] > U+00AB 
++ [SHIFT CTRL ALT K_RBRKT] > U+00BB   
+
++ [K_BKSLASH] > "'"
++ [SHIFT K_BKSLASH] > '"'
++ [CTRL ALT K_BKSLASH] > "\"
++ [SHIFT CTRL ALT K_BKSLASH] > "|" 
++ [K_Z] > ";"
++ [SHIFT K_Z] > ":"
++ [CTRL ALT K_LBRKT] > U+2039 
++ [CTRL ALT K_RBRKT] > U+203A 
++ [SHIFT CTRL ALT K_LBRKT] > U+00AB 
++ [SHIFT CTRL ALT K_RBRKT] > U+00BB  
+
+
+any(vdia) + [K_BKSP] > index(vowels,1)
+any(extvowels) U+0308 + [K_BKSP] > context(1)
+any(extvowels) U+0331 + [K_BKSP] > context(1)
+any(vowels) U+0331 + [K_BKSP] > context(1) 
+U+025B U+0331 U+0308 + [K_BKSP] > context(1)
+U+0190 U+0331 U+0308 + [K_BKSP] > context(1) 
+
+any(vdia) + [SHIFT K_BKSP] > nul
+any(extvowels) U+0308 + [SHIFT K_BKSP] > nul
+any(extvowels) U+0331 + [SHIFT K_BKSP] > nul
+any(vowels) U+0331 + [SHIFT K_BKSP] > nul 
+U+025B U+0331 U+0308 + [SHIFT K_BKSP] > nul
+U+0190 U+0331 U+0308 + [SHIFT K_BKSP] > nul 
+
+
+
+
+c group(normalmode) using keys
+
+any(vowels) + any(dia1) > index(vdia,1) 
+any(extvowels) + any(dia1) > context U+0308  
+
+any(vowels) + any(dia2) > context U+0331
+any(extvowels) + any(dia2) > context U+0331
+
+
+any(other) + "'" > context
+any(other) + '"' > context
+any(other) + ";" > context
+any(other) + ":" > context
+
+U+025B U+0308 + ";" > context(1) U+0331 U+0308 
+U+025B U+0331 + "'" > context(1) U+0331 U+0308 
+    
+
+U+0190 U+0308 + ";" > context(1) U+0331 U+0308 
+U+0190 U+0331 + "'" > context(1) U+0331 U+0308 
+
+U+0254 U+0331 + "'" > context
+U+0254 U+0331 + '"' > context  
+
+U+0186 U+0331 + "'" > context
+U+0186 U+0331 + '"' > context    
+
+U+0254 U+0308 + ";" > context
+U+0254 U+0308 + ":" > context  
+
+U+0186 U+0308 + ";" > context
+U+0186 U+0308 + ":" > context  
+
+any(vdia) + ";" > context   
+any(vdia) + ":" > context
+
+any(vowels) U+0331 + "'" > context
+any(vowels) U+0331 + '"' > context
+
++ [K_Q] > U+014B
++ [SHIFT K_Q] > U+014A
++ [SHIFT K_X] > U+0186
++ [SHIFT K_S] > U+0190
++ [SHIFT K_F] > U+0194
++ [K_X] > U+0254
++ [K_S] > U+025B
++ [K_F] > U+0263
+
+c EOF
