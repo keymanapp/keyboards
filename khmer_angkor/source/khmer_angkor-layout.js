@@ -972,7 +972,7 @@
             "id": 3,
             "key": [
               {
-                "id": "LUNAR_DATE",
+                "id": "K_SYMBOLS",
                 "text": "᧠᧡᧢",
                 "sp": "1",
                 "nextlayer": "lunar_date"
@@ -1340,7 +1340,7 @@
             "id": 3,
             "key": [
               {
-                "id": "LUNAR_DATE",
+                "id": "K_NUMLOCK",
                 "text": "១២៣",
                 "sp": "1",
                 "nextlayer": "numeric"
