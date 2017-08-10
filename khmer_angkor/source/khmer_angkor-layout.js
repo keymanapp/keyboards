@@ -1077,7 +1077,7 @@
               {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "width": "175",
+                "width": "125",
                 "sp": "1"
               }
             ]
@@ -1377,7 +1377,7 @@
               {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "width": "175",
+                "width": "125",
                 "sp": "1"
               }
             ]
