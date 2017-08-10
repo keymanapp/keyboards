@@ -1,11 +1,13 @@
 ____________ keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2006 State Library of Victoria
 
-Version A.B
+Version 1.0
 
-__DESCRIPTION__
+Keyboard layout designed for Vietnamese.
+Uses the Microsoft's Vietnamese keyboard layout,
+but produces precomposed Unicode characters.
 
 Links
 -----
@@ -13,20 +15,11 @@ Links
  * Home:     <___URL___>
  * Deployed: <___URL___>
  * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Contact:  <support@keyman.com>
 
 Supported Platforms
 -------------------
  * Windows
- * Web
- * Mobile Web
- * iOS
- * Android
 
 Todo
 ----
-
- * Fill in the license copyright details [note, to be included in the Keyman keyboards repo, you must use MIT license]
- * Fill in the blanks in this file
- * Update HISTORY.md to give date of first release (and any other history you want)
- 
