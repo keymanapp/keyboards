@@ -1,7 +1,8 @@
-Template Change History
-=======================
+# Yolngu Unicode Change History
 
-1.0 (1 Jan 2015)
------------------
+## 2017-08-15 2.2
+* Published to github
+* Added OSK
 
-* Created by you
+## 2003-11-04 2.1
+* Original version by Andrew Cunningham
