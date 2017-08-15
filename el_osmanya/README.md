@@ -1,11 +1,12 @@
-____________ keyboard
+Osmanya (Unicode) Keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2005 Andrew Cunningham
 
-Version A.B
+Version 1.1
 
 __DESCRIPTION__
+A unicode based Osmanya keyboard layout using the Somali Latin orthography as the input mechanism
 
 Links
 -----
@@ -26,7 +27,5 @@ Supported Platforms
 Todo
 ----
 
- * Fill in the license copyright details [note, to be included in the Keyman keyboards repo, you must use MIT license]
  * Fill in the blanks in this file
- * Update HISTORY.md to give date of first release (and any other history you want)
  
