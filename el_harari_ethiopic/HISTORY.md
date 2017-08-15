@@ -1,7 +1,8 @@
-Template Change History
-=======================
+# Harari (Ethiopic) Change History
 
-1.0 (1 Jan 2015)
------------------
+## 2017-08-15 1.1
+* Published to github
+* Added the on-screen keyboard
 
-* Created by you
+## Earlier
+* Original version
