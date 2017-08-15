@@ -1,7 +1,8 @@
-Template Change History
-=======================
+# Nuer Change History
 
-1.0 (1 Jan 2015)
------------------
+## 2017-08-15 1.4
+* Published to github
+* Added OSK
 
-* Created by you
+## 2006-04-27 1.3
+* Original version by Andrew Cunningham
