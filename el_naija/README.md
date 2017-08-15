@@ -1,11 +1,12 @@
-____________ keyboard
+Naija NFD Keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2006 Andrew Cunningham and Chinedu Uchechukwu
 
-Version A.B
+Version 1.2
 
 __DESCRIPTION__
+Keyboard layout designed for Nigerian languages.
 
 Links
 -----
