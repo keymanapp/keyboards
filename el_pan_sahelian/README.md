@@ -1,11 +1,12 @@
-____________ keyboard
+pan-Sahelian Keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2003 Vicnet, State Library of Victoria
 
-Version A.B
+Version 3.3
 
 __DESCRIPTION__
+Developed by The Open Road project. Free for personal and educational use.
 
 Links
 -----
@@ -26,7 +27,5 @@ Supported Platforms
 Todo
 ----
 
- * Fill in the license copyright details [note, to be included in the Keyman keyboards repo, you must use MIT license]
  * Fill in the blanks in this file
- * Update HISTORY.md to give date of first release (and any other history you want)
  

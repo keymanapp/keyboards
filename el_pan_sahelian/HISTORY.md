@@ -1,7 +1,8 @@
-Template Change History
-=======================
+# pan-Sahelian Change History
 
-1.0 (1 Jan 2015)
------------------
+## 2017-8-15 3.3
+* Published to github
+* Added OSK
 
-* Created by you
+## 2003-02-24 3.2
+* Original version by Andrew Cunningham
