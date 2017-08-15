@@ -1,7 +1,8 @@
-Template Change History
-=======================
+# Pasifika Change History
 
-1.0 (1 Jan 2015)
------------------
+## 2017-08-15 2.1
+* Published to github
+* Added OSK
 
-* Created by you
+## 2007-03-06 2.0
+* Original version by Andrew Cunningham
