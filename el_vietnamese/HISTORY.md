@@ -1,8 +1,10 @@
-Change History
-==============
+# OR Vietnamese Change History
 
-1.0 (21 May 2006)
------------------
+## 2017-08-01 1.1
+* Published to github
+* Added OSK
 
-* 2006-05-21 created by Andrew Cunningham
-* 2017-08-01 moved to github.com/keymanapp/keyboards
+## 2006-05-21 1.0
+* Original version by Andrew Cunningham
+
+

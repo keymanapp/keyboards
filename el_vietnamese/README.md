@@ -1,9 +1,9 @@
-____________ keyboard
+OR Vietnamese Keyboard
 =====================
 
 Copyright (C) 2006 State Library of Victoria
 
-Version 1.0
+Version 1.1
 
 Keyboard layout designed for Vietnamese.
 Uses the Microsoft's Vietnamese keyboard layout,
@@ -23,3 +23,5 @@ Supported Platforms
 
 Todo
 ----
+
+ * Fill in the blanks in this file
