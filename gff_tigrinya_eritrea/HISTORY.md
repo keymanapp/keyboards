@@ -1,7 +1,8 @@
-Template Change History
-=======================
+# Tigrinya Change History
 
-1.0 (1 Jan 2015)
------------------
+## 2017-08-15
+* Published to github
+* Added OSK
 
-* Created by you
+## 2012-11-16
+* Original version
