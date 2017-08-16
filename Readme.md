@@ -1,3 +1,11 @@
+Keyboard Data
+-------------
+
+* Name:           Rac_Khowar
+* Copyright:      (C) Rehmat Aziz Chitrali linguist at Khowar Academy Chitral Pakistan
+* Version:        0.6
+* Keyman Version: 9.0
+* BCP-47 codes:   khw-Arab
 
 Rachitrali-Khowar keyboard
 =====================
