@@ -168,12 +168,12 @@
                   },
                   {
                     "text": ":",
-                    "id": "T_COLON",
+                    "id": "T_GOOD",
                     "layer": "shift"
                   },
                   {
                     "text": "ˊ",
-                    "id": "T_COLON"
+                    "id": "T_GOOD"
                   }
                 ]
               },
@@ -351,6 +351,7 @@
               {
                 "id": "K_PERIOD",
                 "text": ".",
+                "layer": "default",
                 "sk": [
                   {
                     "text": ",",
@@ -384,12 +385,12 @@
                   },
                   {
                     "text": ":",
-                    "id": "K_COLON",
+                    "id": "T_COLON",
                     "layer": "shift"
                   },
                   {
                     "text": ";",
-                    "id": "K_COLON",
+                    "id": "T_COLON",
                     "layer": "default"
                   }
                 ]
@@ -506,12 +507,12 @@
                 "layer": "shift"
               },
               {
-                "id": "K_6",
+                "id": "K_7",
                 "text": "&",
                 "layer": "shift"
               },
               {
-                "id": "K_HYPHEN",
+                "id": "T_HYPHEN",
                 "text": "_",
                 "layer": "shift"
               },
@@ -598,7 +599,7 @@
                 "layer": "shift"
               },
               {
-                "id": "K_HYPHEN",
+                "id": "T_HYPHEN",
                 "text": "-"
               },
               {

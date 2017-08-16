@@ -3,7 +3,7 @@ store(&TARGETS) 'windows androidphone desktop'
 store(&NAME) 'Kayǎn'
 store(&COPYRIGHT) '©2017 SIL International'
 store(&ETHNOLOGUECODE) 'pdu'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&LAYOUTFILE) 'kayan-layout.js'
 store(&BITMAP) 'kayan.ico'
 store(&VISUALKEYBOARD) 'kayan.kvk'
@@ -117,5 +117,9 @@ platform('desktop native') + [RALT K_Q] > 'Q'
 + [SHIFT T_Macron] > '-'
 + [T_Q] > '-'
 + [SHIFT T_Q] > 'q'
-+ [T_COLON] > U+02CA
-+ [SHIFT T_COLON] > ":"
++ [T_COLON] > ";"
++ [SHIFT T_COLON] > ":" 
++ [T_GOOD] > U+02CA
++ [SHIFT T_GOOD] > ";"
++ [T_HYPHEN] > "-"
++ [SHIFT T_HYPHEN] > "_"
