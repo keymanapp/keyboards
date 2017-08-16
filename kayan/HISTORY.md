@@ -15,3 +15,9 @@ Changed ; to U+02CA.
 Added icon file.
 Added keyboard display.
 
+-----------------
+1.2 (17 Aug 2017)
+-----------------
+
+Fixed a number of keys on the touch keyboard. 
+The display and output on those keys were different but now are the same.
