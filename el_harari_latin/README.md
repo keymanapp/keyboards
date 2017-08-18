@@ -1,20 +1,20 @@
 Harari (Latin) Keyboard
 =====================
 
-Copyright (C) 2005-2006 State Library of Victoria
+Copyright (C) 2005-2017 State Library of Victoria
 
 Version 1.1
 
 __DESCRIPTION__
-Harari Unicode keyboard layout.
+Harari Latin keyboard layout.
 
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com
+ * Deployed: https://s.keyman.com/keyboard/har10
+ * Help:     https://help.keyman.com/keyboard/har10
+ * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
