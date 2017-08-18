@@ -1,7 +1,7 @@
 Naija NFD Keyboard
 =====================
 
-Copyright (C) 2006 Andrew Cunningham and Chinedu Uchechukwu
+Copyright (C) 2006-2017 Andrew Cunningham and Chinedu Uchechukwu
 
 Version 1.2
 
@@ -11,10 +11,10 @@ Keyboard layout designed for Nigerian languages.
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com
+ * Deployed: https://s.keyman.com/keyboard/naijanfd10
+ * Help:     https://help.keyman.com/keyboard/naijanfd10
+ * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
