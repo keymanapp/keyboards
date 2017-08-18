@@ -20,7 +20,7 @@
 * Modified the logic of the 'backspace' key sequences.
 
 ## 2.2 
-* Streamline input of long breatjy vowels; 'vvd' instead of 'vdvd', where 'v' = vowel and 'd' = diaeresis
+* Streamline input of long breathy vowels; 'vvd' instead of 'vdvd', where 'v' = vowel and 'd' = diaeresis
 
 ## 2.1 
 * Added CAPS LOCK toggle between US QWERTY layout and Dinka layout

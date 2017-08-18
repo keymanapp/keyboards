@@ -1,7 +1,7 @@
 Dinka Basic (DLIA) Keyboard
 =====================
 
-Copyright (C) 2005-2006 State Library of Victoria and the Dinka Language Institute of Australia
+Copyright (C) 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia
 
 Version 2.6
 
@@ -11,10 +11,10 @@ Dinka Unicode keyboard layout for the Dinka Language Institute, Australia.
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com
+ * Deployed: https://s.keyman.com/keyboard/dlia25bas
+ * Help:     https://help.keyman.com/keyboard/dlia25bas
+ * Contact:  support@keyman.com
 
 Supported Platforms
 -------------------

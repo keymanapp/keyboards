@@ -1,28 +1,16 @@
-﻿c dlia25bas.kmn
+﻿c DLIA Dinka Basic
 c 
-c DLIA Dinka 2.5 Basic
-c 
-c Keyboard layout designed for Dinka.
+c Keyboard layout (formerly dlia25bas) designed for Dinka.
 c Created for DLIA (Dinka Language Institute, Australia)
-c 
-c 2.1 : Added CAPS LOCK toggle between US QWERTY layout
-c and Dinka layout
-c 2.2 : Streamline input of long breatjy vowels; 'vvd' instead of 'vdvd',
-c where 'v' = vowel and 'd' = diaeresis
-c 2.3 : Modified the logic of the 'backspace' key sequences.
-c 2.4 : Reassign the diaeresis key
-c 2.5 : Bug fix
-c 2.5 basic : cutdown version without the Caps Lock toggle to qwerty keyboard layout.
-c 2.5 academic : Add requirements for academic use of Dinka,
-c i.e. add phonetic characters and diacritics used by various linguists.
-c 
+c
 c Andrew Cunningham    2005-08-10
 c andrewc AT vicnet.net.au
 c 
 
-store(&VERSION) '7.0'
+store(&VERSION) '9.0'
+store(&KEYBOARDVERSION) '2.6'
 c store(&Bitmap) "dlia2.bmp"
-store(&Copyright) "© 2005-2006 State Library of Victoria and the Dinka Language Institute of Australia"
+store(&COPYRIGHT) '© 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia'
 store(&Message) "Dinka Unicode keyboard layout for the Dinka Language Institute, Australia."
 store(&Name) "Dinka Basic (DLIA)"
 store(&VISUALKEYBOARD) 'el_dinka.kvk'
