@@ -1,6 +1,6 @@
-c pan-Sahelian (v. 3.2)
+c el_pan_sahelian
 c 
-c An attempt to adapt the pan-Sahelian keyboard to NFD output.
+c An attempt to adapt the Pan-Sahelian keyboard to NFD output.
 c 
 c Certain assumptions have been made when designing this layout:
 c 1) Underlying keyboard needs to be accessible, ie type in West African languages and English.
@@ -26,11 +26,12 @@ c Andrew Cunningham [andrewc@vicnet.net.au] Created: 24/2/03
 c Last updated: 26/2/03
 c http://www.openroad.net.au/languages/files/ps32.zip
 
-store(&VERSION) '7.0'
+store(&VERSION) "9.0"
 c store(&Bitmap) "ps.bmp"
-store(&Copyright) "2003 Vicnet, State Library of Victoria"
+store(&Copyright) "2003-2017 Vicnet, State Library of Victoria"
+store(&KEYBOARDVERSION) "3.3"
 store(&Message) "Developed by The Open Road project. Free for personal and educational use."
-store(&Name) "pan-Sahelian (v. 3.2)"
+store(&Name) "el_pan_sahelian"
 store(&VISUALKEYBOARD) 'el_pan_sahelian.kvk'
 
 begin Unicode > use(main)

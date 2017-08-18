@@ -1,4 +1,4 @@
-# pan-Sahelian Change History
+# el_pan_sahelian Change History
 
 ## 2017-8-15 3.3
 * Published to github
