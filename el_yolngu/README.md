@@ -10,18 +10,14 @@ Unicode keyboard layout for the Yolngu-matha languages.
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com
+ * Deployed: https://s.keyman.com/keyboard/yolngu21
+ * Help:     https://help.keyman.com/keyboard/yolngu21
+ * Contact:  lang.support@gmail.com 
 
 Supported Platforms
 -------------------
  * Windows
- * Web
- * Mobile Web
- * iOS
- * Android
 
 Todo
 ----
