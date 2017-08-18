@@ -10,23 +10,21 @@ __DESCRIPTION__
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com
+ * Deployed: https://s.keyman.com/keyboard/dari_clra
+ * Help:     https://help.keyman.com/keyboard/dari_clra
+ * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
  * Windows
- * Web
- * Mobile Web
- * iOS
- * Android
+
 
 Todo
 ----
 
  * Fill in the license copyright details [note, to be included in the Keyman keyboards repo, you must use MIT license]
+ * No version number
  * Fill in the blanks in this file
  * Supported all platforms?
  
