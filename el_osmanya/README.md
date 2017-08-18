@@ -1,7 +1,7 @@
 Osmanya (Unicode) Keyboard
 =====================
 
-Copyright (C) 2005 Andrew Cunningham
+Copyright (C) 2005-2017 Andrew Cunningham
 
 Version 1.1
 
@@ -11,10 +11,10 @@ A unicode based Osmanya keyboard layout using the Somali Latin orthography as th
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com
+ * Deployed: https://s.keyman.com/keyboard/osmanya10
+ * Help:     https://help.keyman.com/keyboard/osmanya10
+ * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------

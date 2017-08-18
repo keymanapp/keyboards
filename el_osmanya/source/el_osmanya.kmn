@@ -1,8 +1,6 @@
-﻿c osmanya10.kmn
+﻿c Osmanya 1.1
 c 
-c Osmanya 1.0
-c 
-c Keyboard layout designed for Somali using the Osmanya script.
+c Keyboard layout (formerly osmanya10.kmn) designed for Somali using the Osmanya script.
 c Uses the Latin orthography as an input model for the Osmanya script.
 c 
 c Andrew Cunningham    2005-12-12
@@ -10,13 +8,14 @@ c andrewc AT vicnet.net.au
 c 
 
 
-store(&VERSION) '7.0'
+store(&VERSION) "9.0"
 c store(&Bitmap) "osmanya.bmp"
-store(&Copyright) "© 2005 Andrew Cunningham"
+store(&KEYBOARDVERSION) "1.1"
+store(&Copyright) "© 2005-2017 Andrew Cunningham"
 store(&Message) "A unicode based Osmanya keyboard layout using the Somali Latin orthography as the input mechanism"
 store(&Name) "Osmanya (Unicode)"
 store(&mnemoniclayout) "0"
-store(&VISUALKEYBOARD) 'el_osmanya.kvk'
+store(&VISUALKEYBOARD) "el_osmanya.kvk"
 
 begin Unicode > use(main)  
 
