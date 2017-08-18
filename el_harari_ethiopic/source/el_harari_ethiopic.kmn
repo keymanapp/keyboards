@@ -9,13 +9,14 @@ c Andrew Cunningham    2006-06-13
 c andrewc AT vicnet.net.au
 c 
 
-store(&VERSION) '7.0'
+store(&VERSION) "9.0"
 c store(&Bitmap) "harethi.bmp"
-store(&Copyright) "© 2006 State Library of Victoria"
-store(&Message) "Harari Unicode keyboard layout."
+store(&KEYBOARDVERSION) "1.1"
+store(&Copyright) "© 2006-2017 State Library of Victoria"
+store(&Message) "Harari Ethiopic keyboard layout."
 store(&Name) "Harari (Ethiopic)"
-store(&VISUALKEYBOARD) 'el_harari_ethiopic.kvk'
-c store(&TARGETS) 'any windows'
+store(&VISUALKEYBOARD) "el_harari_ethiopic.kvk"
+c store(&TARGETS) "any windows"
 
 begin Unicode > use(main)  
 

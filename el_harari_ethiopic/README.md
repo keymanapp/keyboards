@@ -1,7 +1,7 @@
 Harari (Ethiopic) Keyboard
 =====================
 
-Copyright (C) 2006 State Library of Victoria
+Copyright (C) 2006-2017 State Library of Victoria
 
 Version 1.1
 
@@ -11,10 +11,9 @@ Harari Unicode keyboard layout.
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com
+ * Help:     https://help.keyman.com/keyboard/harethi11/
+ * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
