@@ -1,18 +1,19 @@
-﻿c pasifika20.kmn
-c 
-c Pasifika 2.0 is a keyboard layout that
+﻿c Pasifika
+c
+c Pasifika is a keyboard layout (formerly pasifika20.kmn) that
 c supports Cook Islands Maori, Fijian,
 c Hawaiian, Maori, Niuean, Samoan,
 c Tahitian, and Tongan.
 c 
 c Andrew Cunningham 2007-03-06
 
-store(&VERSION) '7.0'
-store(&NAME) 'Pasifika'
-store(&COPYRIGHT) '© 2007 State Library of Victoria'
-store(&MESSAGE) 'Keyboard layout supports various Polynesian langauges'
-c store(&BITMAP) 'pasifika.bmp'
-store(&VISUALKEYBOARD) 'el_pasifika.kvk'
+store(&VERSION) "9.0"
+store(&NAME) "Pasifika"
+store(&KEYBOARDVERSION) "2.1"
+store(&COPYRIGHT) "© 2007-2017 State Library of Victoria"
+store(&MESSAGE) "Keyboard layout supports various Polynesian langauges"
+c store(&BITMAP) "pasifika.bmp"
+store(&VISUALKEYBOARD) "el_pasifika.kvk"
 begin Unicode > use(constraints) 
 
 store(diacritic_keys) "aAeEiIoOuU"
