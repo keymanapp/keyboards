@@ -14,11 +14,13 @@ c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
 c Last Update   :  2008-12-05
 c 
 
-store(&Version) "7.0"
-store(&Name) "Sebatbeit"
+store(&Version) "9.0"
+store(&Name) "Sebatbeit"    
+store(&BITMAP) 'sebatbeit.bmp'
+store(&KEYBOARDVERSION) '1.1'
 c store(&MnemonicLayout) "1"
 store(&CapsAlwaysOff) "1"
-store(&Copyright) "Creative Commons Attribution 3.0"
+store(&COPYRIGHT) '2009-2017 Ge' U+0027 'ez Frontier Foundation'
 store(&Message) "This is a Sebatbeit language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&EthnologueCode) "sgw"
 store(&VISUALKEYBOARD) 'gff_sebatbeit.kvk'
@@ -94,7 +96,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&BITMAP) 'sebatbeit.bmp'
+
 begin Unicode > use(main)
 group(main) using keys
 
