@@ -13,7 +13,7 @@ Links
  * Home:     https://keyman.com
  * Deployed: <___URL___>
  * Help:     https://help.keyman.com/keyboard/gff_tir_et_7/
- * Contact:  <___EMAIL___>
+ * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
