@@ -10,22 +10,15 @@ Vietnamese Keyboard layout using the VIQR input convention.
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     <https://keyman.com>
+ * Help:     <https://help.keyman.com/keyboard/el_vietnamese_viqr>
+ * Contact:  <lang.support@gmail.com>
 
 Supported Platforms
 -------------------
  * Windows
- * Web
- * Mobile Web
- * iOS
- * Android
 
 Todo
 ----
 
- * Fill in the blanks in this file
- * Supported all platforms?
- 
+ * 
