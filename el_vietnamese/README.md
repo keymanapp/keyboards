@@ -12,10 +12,9 @@ but produces precomposed Unicode characters.
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <support@keyman.com>
+ * Home:     <https://keyman.com>
+ * Help:     <https://help.keyman.com/keyboard/el_vietnamese>
+ * Contact:  <lang.support@gmail.com>
 
 Supported Platforms
 -------------------
@@ -24,4 +23,4 @@ Supported Platforms
 Todo
 ----
 
- * Fill in the blanks in this file
+ * 
