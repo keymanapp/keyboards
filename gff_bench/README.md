@@ -1,7 +1,7 @@
 Bench Keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 
 Version A.B
 
@@ -10,10 +10,10 @@ This is a Bench language mnemonic input method for Ethiopic script that requires
 Links
 -----
 
- * Home:     <___URL___>
+ * Home:     https://keyman.com
  * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Help:     https://help.keyman.com/keyboard/gff_bcq_7
+ * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
