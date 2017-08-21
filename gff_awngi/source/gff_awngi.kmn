@@ -14,11 +14,11 @@ c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
 c Last Update   :  2008-11-10
 c 
 
-store(&Version) "7.0"
+store(&Version) "9.0"
 store(&Name) "Awngi"
 c store(&MnemonicLayout) "1"
 store(&CapsAlwaysOff) "1"
-store(&Copyright) "Creative Commons Attribution 3.0"
+store(&COPYRIGHT) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
 store(&Message) "This is an Awngi language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&EthnologueCode) "awn"
 store(&VISUALKEYBOARD) 'gff_awngi.kvk'
@@ -88,6 +88,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
+store(&KEYBOARDVERSION) '1.1'
 begin Unicode > use(main)
 group(main) using keys
 

@@ -1,27 +1,23 @@
 Awngi Keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 
-Version A.B
+Version 1.1
 
 This is an Awngi language mnemonic input method for Ethiopic script that requires Unicode 4.1 support.
 
 Links
 -----
 
- * Home:     <___URL___>
+ * Home:     https://keyman.com
  * Deployed: <___URL___>
- * Help:     <___URL___>
+ * Help:     https://help.keyman.com/keyboard/gff_tir_et_7/
  * Contact:  <___EMAIL___>
 
 Supported Platforms
 -------------------
  * Windows
- * Web
- * Mobile Web
- * iOS
- * Android
 
 Todo
 ----
