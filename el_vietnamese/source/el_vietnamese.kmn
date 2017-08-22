@@ -9,12 +9,13 @@ c
 c Andrew Cunningham    2006-05-21
 c andrewc AT vicnet.net.au
 
-store(&VERSION) '7.0'
+store(&VERSION) '9.0'
 c store(&Bitmap) "vi.bmp"
-store(&Copyright) "© 2006 State Library of Victoria"
+store(&COPYRIGHT) '© 2006-2017 State Library of Victoria'
 store(&Message) "Keyboard layout producing precomposed Unicode characters"
 store(&Name) "OR Vietnamese" 
 store(&VISUALKEYBOARD) 'el_vietnamese.kvk'
+store(&KEYBOARDVERSION) '1.1'
 
 begin Unicode > use(main)
 
