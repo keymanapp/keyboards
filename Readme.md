@@ -2,14 +2,14 @@ Keyboard Data
 -------------
 
 * Name:           Rac_Khowar
-* Copyright:      (C) Rehmat Aziz Chitrali linguist at Khowar Academy Chitral Pakistan
+* Copyright:      © Rehmat Aziz Chitrali linguist at Khowar Academy Chitral Pakistan
 * Version:        0.6
 * Keyman Version: 9.0
 * BCP-47 codes:   khw-Arab
 
 Rachitrali-Khowar keyboard
 =====================
-Copyright (C) 2017 Rehmat Aziz Chitrali
+Copyright © 2017 Rehmat Aziz Chitrali
 Version 1.0
 This keyboard is designed for the Khowar language spoken in Chitral, Swat, Ghizer(Gilgit-Baltistan), Pakistan in its standard Perso-Arabic script, as used in Chitral, Swat and Gilgit-Baltistan of Northern Pakistan. It is based on phonetic keyboard for Khowar Language developed by Pakistani Linguist Mr.Rehmat Aziz Chitrali for Khowar language and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8, Mac OSX, Android devices and Linux Ubuntu as Khowar Keyboard.
 This is the first Khowar language keyboard created by Pakistani Linguist and Researcher Mr.Rehmat Aziz Chitrali. This keyboard is for Khowar Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Khowar language.
