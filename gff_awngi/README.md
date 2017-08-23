@@ -11,7 +11,7 @@ Links
 -----
 
  * Home:     https://keyman.com
- * Help:     https://help.keyman.com/keyboard/gff_tir_et_7/
+ * Help:     https://help.keyman.com/keyboard/gff_awngi
  * Contact:  yacob@geez.org
 
 Supported Platforms
