@@ -11,18 +11,10 @@ Links
 -----
 
  * Home:     https://keyman.com
- * Deployed: <___URL___>
  * Help:     https://help.keyman.com/keyboard/gff_tir_et_7/
- * Contact:  lang.support@gmail.com
+ * Contact:  yacob@geez.org
 
 Supported Platforms
 -------------------
  * Windows
-
-Todo
-----
-
- * Fill in the license copyright details [note, to be included in the Keyman keyboards repo, you must use MIT license]
- * Fill in the blanks in this file
- * Supported all platforms?
  
