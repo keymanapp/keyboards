@@ -1,11 +1,10 @@
-el_pan_sahelian Keyboard
+Pan-Sahelian Keyboard
 =====================
 
-Copyright (C) 2003-2017 Vicnet, State Library of Victoria
+Copyright (C) 2003-2017 Andrew Cunningham
 
 Version 3.3
 
-__DESCRIPTION__
 An attempt to adapt the Pan-Sahelian keyboard to NFD output
 
 Developed by The Open Road project. Free for personal and educational use.
@@ -14,17 +13,12 @@ Links
 -----
 
  * Home:     https://keyman.com
- * Deployed: https://s.keyman.com/keyboard/ps32
- * Help:     https://help.keyman.com/keyboard/ps32
+ * Help:     https://help.keyman.com/keyboard/el_pan_sahelian
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
  * Windows
- * Web
- * Mobile Web
- * iOS
- * Android
 
 Todo
 ----
