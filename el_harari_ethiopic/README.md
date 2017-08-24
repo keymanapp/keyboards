@@ -10,7 +10,6 @@ Harari Unicode keyboard layout.
 Links
 -----
 
- * Home:     https://keyman.com
  * Help:     https://help.keyman.com/keyboard/el_harari_ethiopic
  * Contact:  lang.support@gmail.com
 
