@@ -10,7 +10,6 @@ Keyboard layout (formerly nuer13.kmn) designed for Nuer
 Links
 -----
 
- * Home:     https://keyman.com
  * Help:     https://help.keyman.com/keyboard/el_nuer
  * Contact:  lang.support@gmail.com
 
