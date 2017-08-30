@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_clavbur9()); function Stub_Keyboard_clavbur9() {this.KF="clavbur9-9.0.1.js";this.KI="Keyboard_clavbur9";this.KN="Clavier du Burkina NFD 9";}

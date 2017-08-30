@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_persian_phonetic()); function Stub_Keyboard_persian_phonetic() {this.KF="persian_phonetic-1.0.js";this.KI="Keyboard_persian_phonetic";this.KN="Persian Phonetic";}

@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_nw_iranian_latin()); function Stub_Keyboard_nw_iranian_latin() {this.KF="nw_iranian_latin-1.0.js";this.KI="Keyboard_nw_iranian_latin";this.KN="NW Iranian Latin";}

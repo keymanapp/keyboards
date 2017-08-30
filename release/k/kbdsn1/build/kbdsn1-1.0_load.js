@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_kbdsn1()); function Stub_Keyboard_kbdsn1() {this.KF="kbdsn1-1.0.js";this.KI="Keyboard_kbdsn1";this.KN="Sinhala";}

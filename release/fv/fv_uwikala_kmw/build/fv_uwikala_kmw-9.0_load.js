@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_fv_uwikala_kmw()); function Stub_Keyboard_fv_uwikala_kmw() {this.KF="fv_uwikala_kmw-9.0.js";this.KI="Keyboard_fv_uwikala_kmw";this.KN="'Uwik̓ala";}

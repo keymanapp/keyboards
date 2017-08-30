@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_inuktitut_latin()); function Stub_Keyboard_inuktitut_latin() {this.KF="inuktitut_latin-1.1.js";this.KI="Keyboard_inuktitut_latin";this.KN="Qaliujaaqpait | ᖃᓕᐅᔮᖅᐸᐃᑦ";}

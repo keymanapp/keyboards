@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_inuktitut_naqittaut()); function Stub_Keyboard_inuktitut_naqittaut() {this.KF="inuktitut_naqittaut-1.3.js";this.KI="Keyboard_inuktitut_naqittaut";this.KN="Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ";}

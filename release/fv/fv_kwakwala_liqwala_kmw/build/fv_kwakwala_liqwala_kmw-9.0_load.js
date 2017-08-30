@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_fv_kwakwala_liqwala_kmw()); function Stub_Keyboard_fv_kwakwala_liqwala_kmw() {this.KF="fv_kwakwala_liqwala_kmw-9.0.js";this.KI="Keyboard_fv_kwakwala_liqwala_kmw";this.KN="Kʷak̓ʷala";}

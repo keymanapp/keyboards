@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_fv_tsilhqotin_kmw()); function Stub_Keyboard_fv_tsilhqotin_kmw() {this.KF="fv_tsilhqotin_kmw-9.0.js";this.KI="Keyboard_fv_tsilhqotin_kmw";this.KN="Tŝilhqot'in";}

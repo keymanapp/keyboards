@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_arabic_izza()); function Stub_Keyboard_arabic_izza() {this.KF="arabic_izza-1.0.js";this.KI="Keyboard_arabic_izza";this.KN="Arabic Izza";}

@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_fv_klahoose_kmw()); function Stub_Keyboard_fv_klahoose_kmw() {this.KF="fv_klahoose_kmw-9.0.js";this.KI="Keyboard_fv_klahoose_kmw";this.KN="Homalco-Klahoose-Sliammon";}

@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_inuktitut_pirurvik()); function Stub_Keyboard_inuktitut_pirurvik() {this.KF="inuktitut_pirurvik-1.1.js";this.KI="Keyboard_inuktitut_pirurvik";this.KN="Kiputtijjut | ᑭᐳᑦᑎᔾᔪᑦ";}

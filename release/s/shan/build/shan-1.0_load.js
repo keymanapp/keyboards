@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_shan()); function Stub_Keyboard_shan() {this.KF="shan-1.0.js";this.KI="Keyboard_shan";this.KN="Shan";}

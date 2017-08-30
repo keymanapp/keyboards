@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_kayan()); function Stub_Keyboard_kayan() {this.KF="kayan-1.2.js";this.KI="Keyboard_kayan";this.KN="Kayǎn";}
