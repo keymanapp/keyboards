@@ -8,8 +8,8 @@ Version 1.2
 This is an Awngi (awn, አወጚ) and Xamtanga (xan, ኻምጣጛ) language mnemonic input method.  It requires
 a font supporting Ethiopic script under the Unicode 4.1 standard. The input method is also
 suitable for the large Ximtanga (Khimtanga, ኽምጣጛ) dialect of Xamtanga.  The input method
-should be suitable for the related Qimant (ahg, ቅማንት) though may provide excess letters not 
-required by Qimant.
+should be suitable for the related Qimant (ahg, ቅማንት) language though may provide excess letters
+not required by Qimant.
 
 
 Links
