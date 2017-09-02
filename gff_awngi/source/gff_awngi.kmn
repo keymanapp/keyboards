@@ -13,13 +13,13 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 
-store(&Version) "9.0"
-store(&NAME) 'አውጚ & ኻምጣጛ (Awngi & Xamtanga)'
-store(&CapsAlwaysOff) "1"
-store(&KEYBOARDVERSION) "1.2"
-store(&COPYRIGHT) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
-store(&MESSAGE) 'This is an Awngi and Xamtanga language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
-store(&EthnologueCode) "awn xan"
+  store(&Version) '9.0'
+  store(&Name) 'አውጚ & ኻምጣጛ (Awngi & Xamtanga)'
+  store(&CapsAlwaysOff) '1'
+  store(&KeyboardVersion) '1.2'
+  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+  store(&Message) 'This is an Awngi and Xamtanga language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+  store(&EthnologueCode) 'awn xan'
 store(&VISUALKEYBOARD) 'gff_awngi.kvk'
 store(&BITMAP) 'gff_awngi.ico'
 c 
@@ -27,69 +27,70 @@ c =====================End Identity Section=====================================
 
 c =====================Begin Data Section=======================================================
 
+c The remainder of this documetn is formatted with a fixed width font.
+
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-store(gIz)   'ሀለሐመረሰሸቀቐበቨተቸነኘከኸወዐዘዠየደጀገጘጠጨጰጸፈፐ'
-store(kaIb)  'ሁሉሑሙሩሱሹቁቑቡቩቱቹኑኙኩኹዉዑዙዡዩዱጁጉጙጡጩጱጹፉፑ'
-store(sals)  'ሂሊሒሚሪሲሺቂቒቢቪቲቺኒኚኪኺዊዒዚዢዪዲጂጊጚጢጪጲጺፊፒ'
-store(rabI)  'ሃላሓማራሳሻቃቓባቫታቻናኛካኻዋዓዛዣያዳጃጋጛጣጫጳጻፋፓ'
-store(hams)  'ሄሌሔሜሬሴሼቄቔቤቬቴቼኔኜኬኼዌዔዜዤዬዴጄጌጜጤጬጴጼፌፔ'
-store(sads)  'ህልሕምርስሽቅቕብቭትችንኝክኽውዐዝዥይድጅግጝጥጭጵጽፍፕ'
-store(sabI)  'ሆሎሖሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዖዞዦዮዶጆጎጞጦጮጶጾፎፖ'
+  store(gIz)   'ሀለመረሰሸቀቐበቨተቸነኘከኸወዘዠየደጀገጘጠጨጰጸፈፐ'
+  store(kaIb)  'ሁሉሙሩሱሹቁቑቡቩቱቹኑኙኩኹዉዙዡዩዱጁጉጙጡጩጱጹፉፑ'
+  store(sals)  'ሂሊሚሪሲሺቂቒቢቪቲቺኒኚኪኺዊዚዢዪዲጂጊጚጢጪጲጺፊፒ'
+  store(rabI)  'ሃላማራሳሻቃቓባቫታቻናኛካኻዋዛዣያዳጃጋጛጣጫጳጻፋፓ'
+  store(hams)  'ሄሌሜሬሴሼቄቔቤቬቴቼኔኜኬኼዌዜዤዬዴጄጌጜጤጬጴጼፌፔ'
+  store(sads)  'ህልምርስሽቅቕብቭትችንኝክኽውዝዥይድጅግጝጥጭጵጽፍፕ'
+  store(sabI)  'ሆሎሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዞዦዮዶጆጎጞጦጮጶጾፎፖ'
 
-store(keys)  'hlHmrsxqQbvtcnNkKw_zZydjgGTCPSfp'
+  store(keys)  'hlmrsxqQbvtcnNkKwzZydjgGTCPSfp'
 c the following is Agew family specific
-store(extraKeys) 'LMRXBVWYDJF'
-store(extraSads) 'ልምርሽብቭውይድጅፍ'
+  store(extraKeys) 'LHMRXBVWYDJF'
+  store(extraSads) 'ልህምርሽብቭውይድጅፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-store(alefKeys)  'aAuUiIeEoO'
-store(alefEthio) 'አአኡኡኢኢእእኦኦ'
+  store(alefKeys)  'aAuUiIeEoO'
+  store(alefEthio) 'አአኡኡኢኢእእኦኦ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-store(zemedeKeys)      'ህልሕምሥርስሽቅቕብቭትችኅንኝክዝዥድጅግጝጥጭጵጽፅፍፕ'
-store(zemedeKeysKaIb)  'ሁሉሑሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩዙዡዱጁጉጙጡጩጱጹፁፉፑ'
-store(zemedeEthio)     'ኋሏሗሟሧሯሷሿቋቛቧቯቷቿኋኗኟኳዟዧዷጇጓጟጧጯጷጿጿፏፗ'
+  store(zemedeKeys)      'ህልምርስሽብቭትችንኝዝዥድጅጥጭጵጽፍፕ'
+  store(zemedeKeysKaIb)  'ሁሉሙሩሱሹቡቩቱቹኑኙዙዡዱጁጡጩጱጹፉፑ'
+  store(zemedeEthio)     'ኋሏሟሯሷሿቧቯቷቿኗኟዟዧዷጇጧጯጷጿፏፗ'
 
-c 'hhkqQgG'
-store(zemedeKeysKaIbExtended)  'ሁኁኩቁቑጉጙ'
-store(zemedeWe)  'ኈኈኰቈቘጐⶓ'
-store(zemedeWu)  'ኍኍኵቍቝጕⶖ'
-store(zemedeWi)  'ኊኊኲቊቚጒⶔ'
-store(zemedeWa)  'ኋኋኳቋቛጓጟ'
-store(zemedeWEE) 'ኌኌኴቌቜጔⶕ'
+c 'hhqQkKgG'
+  store(zemedeKeysKaIbExtended)  'ሁቁቑኩኹጉጙ'
+  store(zemedeWe)  'ኈቈቘኰዀጐⶓ'
+  store(zemedeWu)  'ኍቍቝኵዅጕⶖ'
+  store(zemedeWi)  'ኊቊቚኲዂጒⶔ'
+  store(zemedeWa)  'ኋቋቛኳዃጓጟ'
+  store(zemedeWEE) 'ኌቌቜኴዄጔⶕ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
-store(ArabOnes) '23456789'
-store(ones)     '፪፫፬፭፮፯፰፱'
-store(tens)     '፳፴፵፶፷፸፹፺'
-store(arabNumbers) '123456789'
-store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
-store(arabNumbersWithZero) '0123456789'
-store(ColonOrComma) ':,'
-store(ethWordspaceOrComma) '፡፣'
+  store(ArabOnes) '23456789'
+  store(ones)     '፪፫፬፭፮፯፰፱'
+  store(tens)     '፳፴፵፶፷፸፹፺'
+  store(arabNumbers) '123456789'
+  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(arabNumbersWithZero) '0123456789'
+  store(ColonOrComma) ':,'
+  store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-store(gIz-key)  'eEäÄéÉèÈêÊëË'
-store(kaIb-key) 'uUùÙúÚûÛüÜ'
-store(sals-key) 'iIìÌíÍîÎïÏ'
-store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-store(hams-key) 'æÆ'
-store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(gIz-key)  'eEäÄéÉèÈêÊëË'
+  store(kaIb-key) 'uUùÙúÚûÛüÜ'
+  store(sals-key) 'iIìÌíÍîÎïÏ'
+  store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+  store(hams-key) 'æÆ'
+  store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&KEYBOARDVERSION) '1.2'
-begin Unicode > use(main)
-group(main) using keys
+  begin Unicode > use(main)
+  group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
 c 
@@ -118,25 +119,6 @@ c Alef-A Vowels as Regular Syllables
   'ኢ' + any(gIz-key)  > 'ኤ'
   'እ' + any(sabI-key) > 'ኦ'
 
-c Aynu-A Vowels as Regular Sylalbles
-  'እ' + any(gIz-key)  > 'ዕ'
-  'ዕ' + any(gIz-key)  > 'ዐ'
-  'ዕ' + any(kaIb-key) > 'ዑ'
-  'ዕ' + any(sals-key) > 'ዒ'
-  'ዕ' + any(rabI-key) > 'ዓ'
-  'ዒ' + any(gIz-key)  > 'ዔ'
-  'ዕ' + any(sabI-key) > 'ዖ'
-
-c Aynu-A Vowels as Vowels
-  'ኡ' + any(kaIb-key) > 'ዑ'
-  'ኢ' + any(sals-key) > 'ዒ'
-  'ኦ' + any(sabI-key) > 'ዖ'
-
-c Completing the Awngi "a" chain:
-  'አ' + any(rabI-key) > 'ዓ'
-  'ዓ' + any(rabI-key) > 'ዐ'
-  'ዐ' + any(rabI-key) > 'ኣ'
-
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
@@ -153,8 +135,11 @@ c ---------------------Input of Labiovelars-------------------------------------
   any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)
   any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
   any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1)
+  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)
   any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
   any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
+
+c Alternative input to support confusion around the 'o' glypheme:
 
   'ኮ' + 'o' > 'ኰ'
   'ጎ' + 'o' > 'ጐ'
@@ -224,8 +209,8 @@ c
 
 c Ethiopic Numerals
 
-  "'" + '1' > '፩'
-  "'" + any(ArabOnes) > index(ones,2)
+  "#" + '1' > '፩'
+  "#" + any(ArabOnes) > index(ones,2)
 
 c special cases for multiples of one
     '፩' + '0' >   '፲'
@@ -236,7 +221,7 @@ c special cases for multiples of one
    '፲፼' + '0' >  '፻፼' 
    '፻፼' + '0' > '፲፻፼'
   '፲፻፼' + '0' >  '፼፼'
-   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
+   '፼፼' + '0' > context beep  c do not go any higher, beep here
 
 c upto the order of 100 million
   any(ones)      + '0' > index(tens,1)
