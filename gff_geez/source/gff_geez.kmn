@@ -1,30 +1,27 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c Mnemonic input method for Ge'ez script on US-QWERTY
-c keyboards for Keyman version 7.1, compliant with Unicode 4.1 and later.
+c The Ge'ez Frontier Foundation's mnemonic input method for Ge'ez script on US-QWERTY
+c keyboards for SIL Keyman, compliant with Unicode 3.0 and later.
 c 
-c License       :  http://creativecommons.org/licenses/by/3.0/
-c Info          :  http://keyboards.ethiopic.org/
-c Keyman        :  http://www.tavultesoft.com/
-c Bugs          :  keyboards@ethiopic.org
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.1/gff_geez.php
+c Source        :  https://github.com/keymanapp/keyboards/gff_geez
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
-c Specification : http://keyboards.ethiopic.org/specification/
-c 
-c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
-c Last Update   :  2008-11-10
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 
 store(&Version) "9.0"
 store(&Name) "Ge'ez"    
-c store(&BITMAP) 'geez.bmp'
-store(&COPYRIGHT) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
-store(&KEYBOARDVERSION) '1.1'
-c store(&MnemonicLayout) "1"
-store(&CapsAlwaysOff) "1"
-store(&Message) "This is a Ge'ez language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&EthnologueCode) "gez"
-store(&VISUALKEYBOARD) 'gff_geez.kvk'
-c HOTKEY "^%G"
+store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+store(&Message) 'This is a Ge'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
+store(&KeyboardVersion) '1.1'
+store(&Bitmap) 'geez.ico'
+store(&CapsAlwaysOff) "1"
+store(&VisualKeyboard) 'gff_geez.kvk'
 c 
 c =====================End Identity Section=====================================================
 
@@ -53,9 +50,9 @@ store(alefEthio) 'አአኡኡኢኢእእኦኦ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-store(zemedeKeys)      'ህልሕምሥርስሽቅብትኅንኝክዝድግጥጵጽፅፍፕ'
-store(zemedeKeysKaIb)  'ሁሉሑሙሡሩሱሹቁቡቱኁኑኙኩዙዱጉጡጱጹፁፉፑ'
-store(zemedeEthio)     'ኋሏሗሟሧሯሷሿቋቧቷኋኗኟኳዟዷጓጧጷጿጿፏፗ'
+store(zemedeKeys)      'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
+store(zemedeKeysKaIb)  'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
+store(zemedeEthio)     'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
 
 c 'hhkqg'
 store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'

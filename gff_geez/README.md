@@ -6,7 +6,7 @@ Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 Version 1.1
 
 This is a Ge'ez (gez, ግዕዝ) language mnemonic input method.  It requires a font
-supporting Ethiopic script under the Unicode 4.1 standard.
+supporting Ethiopic script under the Unicode 3.0 standard.
 
 Links
 -----
