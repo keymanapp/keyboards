@@ -39,7 +39,9 @@ c language specific mappings
   store(sads)  'ህልምርስሽቅቕብቭትችንኝክኽውዝዥይድጅግጝጥጭጵጽፍፕ'
   store(sabI)  'ሆሎሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዞዦዮዶጆጎጞጦጮጶጾፎፖ'
 
+c QWERTY keymappings
   store(keys)  'hlmrsxqQbvtcnNkKwzZydjgGTCPSfp'
+
 c the following is Agew family specific
   store(extraKeys) 'LHMRXBVWYDJF'
   store(extraSads) 'ልህምርሽብቭውይድጅፍ'
@@ -189,6 +191,7 @@ c ---------------------Input of European Characters-----------------------------
       + '¨' > U+135F
 
   store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+
 c this mapping has an Amharic bias
   store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
   + any(euroVowels) > index(euroVowelsMap,1)
@@ -207,7 +210,6 @@ c
   any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
 
 c Ethiopic Numerals
-
   '#' + '1' > '፩'
   '#' + any(ArabOnes) > index(ones,2)
 
