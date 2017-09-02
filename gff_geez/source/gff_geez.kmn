@@ -12,16 +12,15 @@ c
 c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-
-store(&Version) "9.0"
-store(&Name) "Ge'ez"    
-store(&EthnologueCode) "gez"
-store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
-store(&Message) 'This is a Ge'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
-store(&KeyboardVersion) '1.1'
-store(&Bitmap) 'geez.ico'
-store(&CapsAlwaysOff) "1"
-store(&VisualKeyboard) 'gff_geez.kvk'
+  store(&Version) '9.0'
+  store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
+  store(&EthnologueCode) 'gez'
+  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+  store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
+  store(&KeyboardVersion) '1.1'
+  store(&CapsAlwaysOff) '1'
+store(&BITMAP) 'geez.ico'
+store(&VISUALKEYBOARD) 'gff_geez.kvk'
 c 
 c =====================End Identity Section=====================================================
 
@@ -30,71 +29,71 @@ c =====================Begin Data Section=======================================
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-store(gIz)   'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
-store(kaIb)  'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
-store(sals)  'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
-store(rabI)  'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
-store(hams)  'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
-store(sads)  'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
-store(sabI)  'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
+  store(gIz)  'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
+  store(kaIb) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
+  store(sals) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
+  store(rabI) 'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
+  store(hams) 'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
+  store(sads) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
+  store(sabI) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
-store(keys)  'hlHm_rsqbtxnkw_zydgTPSDfp'
+  store(keys)  'hlHm_rsqbtxnkw_zydgTPSDfp'
 c the following is Ge'ez specific
-store(extraKeys) 'LMRXBvVcQNKWYDjJZGCF'
-store(extraSads) 'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
+  store(extraKeys) 'LMRXBvVcQNKWYDjJZGCF'
+  store(extraSads) 'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-store(alefKeys)  'aAuUiIeEoO'
-store(alefEthio) 'አአኡኡኢኢእእኦኦ'
+  store(alefKeys)  'aAuUiIeEoO'
+  store(alefEthio) 'አአኡኡኢኢእእኦኦ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-store(zemedeKeys)      'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
-store(zemedeKeysKaIb)  'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
-store(zemedeEthio)     'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
+  store(zemedeKeys)     'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
+  store(zemedeKeysKaIb) 'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
+  store(zemedeEthio)    'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
 
 c 'hhkqg'
-store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
-store(zemedeWe)  'ኈኈኰቈጐ'
-store(zemedeWu)  'ኍኍኵቍጕ'
-store(zemedeWi)  'ኊኊኲቊጒ'
-store(zemedeWa)  'ኋኋኳቋጓ'
-store(zemedeWEE) 'ኌኌኴቌጔ'
+  store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
+  store(zemedeWe)  'ኈኈኰቈጐ'
+  store(zemedeWu)  'ኍኍኵቍጕ'
+  store(zemedeWi)  'ኊኊኲቊጒ'
+  store(zemedeWa)  'ኋኋኳቋጓ'
+  store(zemedeWEE) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
-store(ArabOnes) '23456789'
-store(ones)     '፪፫፬፭፮፯፰፱'
-store(tens)     '፳፴፵፶፷፸፹፺'
-store(arabNumbers) '123456789'
-store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
-store(arabNumbersWithZero) '0123456789'
-store(ColonOrComma) ':,'
-store(ethWordspaceOrComma) '፡፣'
+  store(ArabOnes) '23456789'
+  store(ones)     '፪፫፬፭፮፯፰፱'
+  store(tens)     '፳፴፵፶፷፸፹፺'
+  store(arabNumbers) '123456789'
+  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(arabNumbersWithZero) '0123456789'
+  store(ColonOrComma) ':,'
+  store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-store(gIz-key)  'eEäÄéÉèÈêÊëË'
-store(kaIb-key) 'uUùÙúÚûÛüÜ'
-store(sals-key) 'iIìÌíÍîÎïÏ'
-store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-store(hams-key) 'æÆ'
-store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(gIz-key)  'eEäÄéÉèÈêÊëË'
+  store(kaIb-key) 'uUùÙúÚûÛüÜ'
+  store(sals-key) 'iIìÌíÍîÎïÏ'
+  store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+  store(hams-key) 'æÆ'
+  store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c ---------------------Maps of Yared Zaima Notation---------------------------------------------
-store(Tebek) U+135F
-store(zaima) '᎐᎑᎒᎓᎔᎕᎖᎗᎘᎙'$Tebek
-store(zaimaMenu) '[1᎐2᎑3᎒4᎓5᎔6᎕7᎖8᎗9᎘0᎙_፟]'
-store(zaimaKeys) '1234567890_'
+  store(Tebek) U+135F
+  store(zaima) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$Tebek
+  store(zaimaMenu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
+  store(zaimaKeys) '1234567890_'
 c ---------------------End Maps of Yared Zaima Notation----------------------------------------
 
-c ---------------------Fudge - needed for KMW bug work-around -------------------------------------------------
-store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
-  'qwertyuiop[]\QWERTYUIOP{}|' \
-  "asdfghjkl;'" 'ASDFGHJKL:"' \
-  'zxcvbnm,./ZXCVBNM<>?'
+c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
+  store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
+    'qwertyuiop[]\QWERTYUIOP{}|' \
+    "asdfghjkl;'" 'ASDFGHJKL:"' \
+    'zxcvbnm,./ZXCVBNM<>?'
 c =====================End Data Section=========================================================
                   
 c =====================Begin Functional Section=================================================
@@ -104,7 +103,7 @@ begin Unicode > use(first)
 
 c first matches a menu in the context or passes processing to main
 c remove 'using keys' and +any() when KMW bug fixed
-group(first) using keys
+  group(first) using keys
 c match a menu on the context
   outs(zaimaMenu) + any(anyKey) > use(zaimaGroup)
    
@@ -112,7 +111,7 @@ c no menu was in the context, so process keys normally
   nomatch         > use(main)
    
 c The main group
-group(main) using keys
+  group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
 c 
@@ -176,7 +175,8 @@ c ---------------------End Input of Basic Syllables-----------------------------
 c ---------------------Input of Labiovelars-----------------------------------------------------
   any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)
   any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
-  any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1)
+  any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1) 
+  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)  
   any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
   any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
 
@@ -290,7 +290,7 @@ c enhance this later, look for something that can copy a match over
 c ---------------------End Input of Numbers-----------------------------------------------------
 
 c ---------------------Begin Zaima Group--------------------------------------------------------
-group(zaimaGroup) using keys
+  group(zaimaGroup) using keys
   + any(zaimaKeys) > index(zaima, 1)
   nomatch          > use(main)             
 c ---------------------End Zaima Group----------------------------------------------------------
