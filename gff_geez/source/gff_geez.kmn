@@ -21,6 +21,7 @@ c
   store(&CapsAlwaysOff) '1'
 store(&BITMAP) 'geez.ico'
 store(&VISUALKEYBOARD) 'gff_geez.kvk'
+store(&HOTKEY) "[CTRL ALT K_G]"
 c 
 c =====================End Identity Section=====================================================
 
@@ -37,7 +38,9 @@ c language specific mappings
   store(sads) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
   store(sabI) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
+c QWERTY keymappings
   store(keys)  'hlHm_rsqbtxnkw_zydgTPSDfp'
+
 c the following is Ge'ez specific
   store(extraKeys) 'LMRXBvVcQNKWYDjJZGCF'
   store(extraSads) 'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
@@ -180,6 +183,7 @@ c ---------------------Input of Labiovelars-------------------------------------
   any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
   any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
 
+c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
   'ጎ' + 'o' > 'ጐ'
 
