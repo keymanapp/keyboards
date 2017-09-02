@@ -20,8 +20,8 @@ c
   store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is an Awngi and Xamtanga language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&EthnologueCode) 'awn xan'
-store(&VISUALKEYBOARD) 'gff_awngi.kvk'
-store(&BITMAP) 'gff_awngi.ico'
+  store(&VisualKeyboard) 'gff_awngi.kvk'
+  store(&Bitmap) 'gff_awngi.ico'
 c 
 c =====================End Identity Section=====================================================
 
@@ -209,8 +209,8 @@ c
 
 c Ethiopic Numerals
 
-  "#" + '1' > '፩'
-  "#" + any(ArabOnes) > index(ones,2)
+  '#' + '1' > '፩'
+  '#' + any(ArabOnes) > index(ones,2)
 
 c special cases for multiples of one
     '፩' + '0' >   '፲'
