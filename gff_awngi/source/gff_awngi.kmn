@@ -1,24 +1,24 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c The Ge'ez Frontier Foundation's mnemonic input method for Awngi script on US-QWERTY
+c The Ge'ez Frontier Foundation's mnemonic input method for Awngi & Xamtanga script on US-QWERTY
 c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_awn/1.0/gff_awn.php
-c Source       :  https://github.com/keymanapp/keyboards/gff_awngi
+c Documentation :  https://help.keyman.com/keyboard/gff_awn/1.2/gff_awn.php
+c Source        :  https://github.com/keymanapp/keyboards/gff_awngi
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
 c Specification :  http://keyboards.ethiopic.org/specification/
-c Other Info    :  http://keyboards.ethiopic.org/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 
 store(&Version) "9.0"
 store(&NAME) 'አወጚ & ኻምጣጛ (Awngi & Xamtanga)'
 store(&CapsAlwaysOff) "1"
-store(&KEYBOARDVERSION) "1.1"
+store(&KEYBOARDVERSION) "1.2"
 store(&COPYRIGHT) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
-store(&MESSAGE) 'This is an Awngi and Xamtanga language mnemonic input method for Ethiopic script that requires a Unicode 4.1 compliant font.'
+store(&MESSAGE) 'This is an Awngi and Xamtanga language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
 store(&EthnologueCode) "awn xan"
 store(&VISUALKEYBOARD) 'gff_awngi.kvk'
 store(&BITMAP) 'gff_awngi.ico'
@@ -202,7 +202,7 @@ c ---------------------Input of European Characters-----------------------------
   + any(euro) > index(euroMap,1)
 
   'ጽ' + 'ß' > 'ፅ'
-  + '¨' > U+135F
+      + '¨' > U+135F
 
   store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
 c this mapping has an Amharic bias
@@ -228,19 +228,19 @@ c Ethiopic Numerals
   "'" + any(ArabOnes) > index(ones,2)
 
 c special cases for multiples of one
-  '፩'  + '0' > '፲'
-  '፲'  + '0' > '፻'
-  '፻'  + '0' > '፲፻'
-  '፲፻' + '0' > '፼'
-  '፼'  + '0' > '፲፼'    
-  '፲፼' + '0' > '፻፼' 
-  '፻፼'  + '0' > '፲፻፼'
-  '፲፻፼' + '0' > '፼፼'
-  '፼፼' + '0' > context beep  c do not go any higher, we could beep here
+    '፩' + '0' >   '፲'
+    '፲' + '0' >   '፻'
+    '፻' + '0' >  '፲፻'
+   '፲፻' + '0' >   '፼'
+    '፼' + '0' >  '፲፼'    
+   '፲፼' + '0' >  '፻፼' 
+   '፻፼' + '0' > '፲፻፼'
+  '፲፻፼' + '0' >  '፼፼'
+   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
 
 c upto the order of 100 million
-  any(ones)     + '0' > index(tens,1)
-  any(tens)     + '0' > index(ones,1) '፻'  c Hundreds
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1) '፻'  c Hundreds
   any(ones)  '፻ '+ '0' > index(tens,1) '፻'  c Thousands
   any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
   any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
