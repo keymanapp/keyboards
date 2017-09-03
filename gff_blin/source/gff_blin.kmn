@@ -18,10 +18,10 @@ store(&Version) "9.0"
 store(&Name) "Blin"   
 store(&KEYBOARDVERSION) "1.1"
 store(&COPYRIGHT) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
-c store(&MnemonicLayout) "1"
 store(&CapsAlwaysOff) "1"
 store(&Message) "This is a Blin language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&EthnologueCode) "byn"
+store(&BITMAP) 'gff_blin.ico'
 store(&VISUALKEYBOARD) 'gff_blin.kvk'
 c HOTKEY "^%B"
 c 
@@ -89,9 +89,6 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&BITMAP) 'blin.bmp'
-store(&COPYRIGHT) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
-store(&KEYBOARDVERSION) '1.1'
 begin Unicode > use(main)
 group(main) using keys
 
