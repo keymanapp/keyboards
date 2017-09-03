@@ -19,9 +19,9 @@ c
   store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
   store(&KeyboardVersion) '1.1'
   store(&CapsAlwaysOff) '1'
-store(&BITMAP) 'geez.ico'
+  store(&HotKey) '[CTRL ALT K_G]'
+store(&BITMAP) 'gff_geez.ico'
 store(&VISUALKEYBOARD) 'gff_geez.kvk'
-store(&HOTKEY) "[CTRL ALT K_G]"
 c 
 c =====================End Identity Section=====================================================
 
@@ -263,8 +263,7 @@ c
 
 c Ethiopic Numerals
 
-  "'" + '1' > '፩'
-  "'" + any(ArabOnes) > index(ones,2)
+  "#" + any(arabNumbersWithZero) > index(arabNumbersWithZero,2)
   + '1' > '፩'
   + any(ArabOnes) > index(ones,1)
 
