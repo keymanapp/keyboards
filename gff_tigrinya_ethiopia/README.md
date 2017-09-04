@@ -5,7 +5,7 @@ Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 
 Version 1.1
 
-This is a Tigrinya (tir-ET, ትግርኛ-ኢትዮጵያ) language mnemonic input method (Ethiopian conventions).  It requires
+This is a Tigrinya (tir-ET, ትግርኛ-ኢትዮጵያ) language mnemonic input method that applies Ethiopian writing conventions.  It requires
 a font supporting Ethiopic script under the Unicode 4.1 standard. 
 
 Links
