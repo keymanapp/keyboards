@@ -230,20 +230,20 @@ c Ethiopic Numerals
   '#' + any(ArabOnes) > index(ones,2)
 
 c special cases for multiples of one
-  '፩'  + '0' > '፲'
-  '፲'  + '0' > '፻'
-  '፻'  + '0' > '፲፻'
-  '፲፻' + '0' > '፼'
-  '፼'  + '0' > '፲፼'    
-  '፲፼' + '0' > '፻፼' 
-  '፻፼'  + '0' > '፲፻፼'
-  '፲፻፼' + '0' > '፼፼'
-  '፼፼' + '0' > context beep  c do not go any higher, we could beep here
+    '፩' + '0' >   '፲'
+    '፲' + '0' >   '፻'
+    '፻' + '0' >  '፲፻'
+   '፲፻' + '0' >   '፼'
+    '፼' + '0' >  '፲፼'    
+   '፲፼' + '0' >  '፻፼' 
+   '፻፼' + '0' > '፲፻፼'
+  '፲፻፼' + '0' >  '፼፼'
+   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
 
 c upto the order of 100 million
-  any(ones)     + '0' > index(tens,1)
-  any(tens)     + '0' > index(ones,1) '፻'  c Hundreds
-  any(ones)  '፻ '+ '0' > index(tens,1) '፻'  c Thousands
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1) '፻'  c Hundreds
+  any(ones)  '፻' + '0' > index(tens,1) '፻'  c Thousands
   any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
   any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
   any(tens)  '፼' + '0' > index(ones,1) '፻፼' c Millions
