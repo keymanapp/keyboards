@@ -11,8 +11,8 @@ a font supporting Ethiopic script under the Unicode 4.1 standard.
 Links
 -----
 
- * Home:     https://keyman.com
- * Help:     https://help.keyman.com/keyboard/gff_tigrinya_ethiopia
+ * Home          :  https://keyman.com
+ * Help          :  https://help.keyman.com/keyboard/gff_tigrinya_ethiopia
 
  * Source        :  https://github.com/keymanapp/keyboards/gff_tigrinya_ethiopia
  * License       :  https://opensource.org/licenses/MIT
@@ -20,7 +20,7 @@ Links
 
  * Specification :  http://keyboards.ethiopic.org/specification/
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
- * Contact:  yacob@geez.org
+ * Contact       :  yacob@geez.org
 
 Supported Platforms
 -------------------
