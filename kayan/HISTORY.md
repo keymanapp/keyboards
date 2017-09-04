@@ -21,3 +21,10 @@ Added keyboard display.
 
 Fixed a number of keys on the touch keyboard. 
 The display and output on those keys were different but now are the same.
+
+----------------
+1.3 (4 Sep 2017)
+----------------
+
+Changed the U+02CA to U+0301.
+Despite the visual look of U+02CA, U+301 was strongly advised to be used until features can be made in later releases of fonts. Then the diacritics will stack correctly and publications will look right.
