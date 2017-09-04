@@ -1,91 +1,92 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c Mnemonic input method for Tigrinya script under Ethiopian conventions on US-QWERTY
-c keyboards for Keyman version 7.1, compliant with Unicode 4.1 and later.
+c The Ge'ez Frontier Foundation's mnemonic input method for Tigrinya script under Ethiopian conventions on US-QWERTY
+c keyboards for SIL Keyman, compliant with Unicode 3.0 and later.
 c 
-c License       :  http://creativecommons.org/licenses/by/3.0/
-c Info          :  http://keyboards.ethiopic.org/
-c Keyman        :  http://www.tavultesoft.com/
-c Bugs          :  keyboards@ethiopic.org
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_tigrinya_ethiopia/1.1/gff_tigrinya_ethiopia.php
+c Source        :  https://github.com/keymanapp/keyboards/gff_tigrinya_ethiopia
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
-c Specification : http://keyboards.ethiopic.org/specification/
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
-c Last Update   :  2008-11-10
-c 
-
-store(&VERSION) '9.0'
-store(&Name) "Tigrinya"
-c store(&MnemonicLayout) "1"
-store(&CapsAlwaysOff) "1"                                   
-store(&BITMAP) 'tigrigna.bmp'
-store(&KEYBOARDVERSION) '1.1'
-store(&COPYRIGHT) '2009-2017 Ge' U+0027 'ez Frontier Foundation'
-store(&Message) "This is a Tigrinya language mnemonic input method (Ethiopian conventions) for Ethiopic script that requires Unicode 4.1 support."
-store(&WINDOWSLANGUAGES) 'x0473'
-store(&LANGUAGE) 'x0473'
-store(&EthnologueCode) "tir"
+  store(&Version) '9.0'
+  store(&Name) 'ትግርኛ (Tigrinya)'
+  store(&EthnologueCode) 'tir'
+  store(&Language) 'x0473'
+  store(&WindowsLanguages) 'x0473'
+  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+  store(&Message) 'This is a Tigrinya language mnemonic input method under Ethiopian conventions.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
+  store(&KeyboardVersion) '1.1'
+  store(&CapsAlwaysOff) '1'
+  store(&HotKey) '[CTRL ALT K_T]'
+store(&BITMAP) 'gff_tigrinya.ico'
 store(&VISUALKEYBOARD) 'gff_tigrinya_ethiopia.kvk'
-c HOTKEY "^%T"
 c 
 c =====================End Identity Section=====================================================
 
 c =====================Begin Data Section=======================================================
 
+c The remainder of this document is formatted with a fixed width font.
+
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-store(gIz)   'ሀለሐመሠረሰሸቀቐበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
-store(kaIb)  'ሁሉሑሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
-store(sals)  'ሂሊሒሚሢሪሲሺቂቒቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
-store(rabI)  'ሃላሓማሣራሳሻቃቓባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
-store(hams)  'ሄሌሔሜሤሬሴሼቄቔቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
-store(sads)  'ህልሕምሥርስሽቅቕብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
-store(sabI)  'ሆሎሖሞሦሮሶሾቆቖቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
+  store(gIz)   'ሀለሐመሠረሰሸቀቐበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
+  store(kaIb)  'ሁሉሑሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
+  store(sals)  'ሂሊሒሚሢሪሲሺቂቒቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
+  store(rabI)  'ሃላሓማሣራሳሻቃቓባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
+  store(hams)  'ሄሌሔሜሤሬሴሼቄቔቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
+  store(sads)  'ህልሕምሥርስሽቅቕብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
+  store(sabI)  'ሆሎሖሞሦሮሶሾቆቖቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
 
-store(keys)  'hlHm_rsxqQbvtc_nNkKw_zZydjgTCPS_fp'
+c QWERTY keymappings
+  store(keys)  'hlHm_rsxqQbvtc_nNkKw_zZydjgTCPS_fp'
+
 c the following is Tigrinya specific
-store(extraKeys) 'LMRXBVWYDJGF'
-store(extraSads) 'ልምርሽብቭውይድጅግፍ'
+  store(extraKeys) 'LMRXBVWYDJGF'
+  store(extraSads) 'ልምርሽብቭውይድጅግፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-store(alefKeys)  'aAuUiIeEoO'
-store(alefEthio) 'አአኡኡኢኢእእኦኦ'
+  store(alefKeys)  'aAuUiIeEoO'
+  store(alefEthio) 'አአኡኡኢኢእእኦኦ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-store(zemedeKeys)      'ህልሕምሥርስሽቅቕብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ'
-store(zemedeKeysKaIb)  'ሁሉሑሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ'
-store(zemedeEthio)     'ኋሏሗሟሧሯሷሿቋቛቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
+  store(zemedeKeys)      'ህልሕምሥርስሽቅቕብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ'
+  store(zemedeKeysKaIb)  'ሁሉሑሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ'
+  store(zemedeEthio)     'ኋሏሗሟሧሯሷሿቋቛቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
 
 c 'hhqQkg'
-store(zemedeKeysKaIbExtended)  'ሁኁቁቑኩኹጉ'
-store(zemedeWe)  'ኈኈቈቘኰዀጐ'
-store(zemedeWu)  'ኍኍቍቝኵዅጕ'
-store(zemedeWi)  'ኊኊቊቚኲዂጒ'
-store(zemedeWa)  'ኋኋቋቛኳዃጓ'
-store(zemedeWEE) 'ኌኌቌቜኴዄጔ'
+  store(zemedeKeysKaIbExtended)  'ሁኁቁቑኩኹጉ'
+  store(zemedeWe)  'ኈኈቈቘኰዀጐ'
+  store(zemedeWu)  'ኍኍቍቝኵዅጕ'
+  store(zemedeWi)  'ኊኊቊቚኲዂጒ'
+  store(zemedeWa)  'ኋኋቋቛኳዃጓ'
+  store(zemedeWEE) 'ኌኌቌቜኴዄጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
-store(ArabOnes) '23456789'
-store(ones)     '፪፫፬፭፮፯፰፱'
-store(tens)     '፳፴፵፶፷፸፹፺'
-store(arabNumbers) '123456789'
-store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
-store(arabNumbersWithZero) '0123456789'
-store(ColonOrComma) ':,'
-store(ethWordspaceOrComma) '፡፣'
+  store(ArabOnes) '23456789'
+  store(ones)     '፪፫፬፭፮፯፰፱'
+  store(tens)     '፳፴፵፶፷፸፹፺'
+  store(arabNumbers) '123456789'
+  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(arabNumbersWithZero) '0123456789'
+  store(ColonOrComma) ':,'
+  store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-store(gIz-key)  'eEäÄéÉèÈêÊëË'
-store(kaIb-key) 'uUùÙúÚûÛüÜ'
-store(sals-key) 'iIìÌíÍîÎïÏ'
-store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-store(hams-key) 'æÆ'
-store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(gIz-key)  'eEäÄéÉèÈêÊëË'
+  store(kaIb-key) 'uUùÙúÚûÛüÜ'
+  store(sals-key) 'iIìÌíÍîÎïÏ'
+  store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+  store(hams-key) 'æÆ'
+  store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
@@ -93,8 +94,8 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 
-begin Unicode > use(main)
-group(main) using keys
+  begin Unicode > use(main)
+  group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
 c 
@@ -166,6 +167,7 @@ c ---------------------Input of Labiovelars-------------------------------------
 
   'ኹ' + any(rabI-key) > 'ዃ'  c I3559 mcd 16-11-2012, as per ET documentation 'Kua' 
 
+c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
   'ጎ' + 'o' > 'ጐ'
 
@@ -234,8 +236,8 @@ c
 
 c Ethiopic Numerals
 
-  "'" + '1' > '፩'
-  "'" + any(ArabOnes) > index(ones,2)
+  '#' + '1' > '፩'
+  '#' + any(ArabOnes) > index(ones,2)
 
 c special cases for multiples of one
   '፩'  + '0' > '፲'
@@ -249,9 +251,9 @@ c special cases for multiples of one
   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
 
 c upto the order of 100 million
-  any(ones)     + '0' > index(tens,1)
-  any(tens)     + '0' > index(ones,1) '፻'  c Hundreds
-  any(ones)  '፻ '+ '0' > index(tens,1) '፻'  c Thousands
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1) '፻'  c Hundreds
+  any(ones)  '፻' + '0' > index(tens,1) '፻'  c Thousands
   any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
   any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
   any(tens)  '፼' + '0' > index(ones,1) '፻፼' c Millions
