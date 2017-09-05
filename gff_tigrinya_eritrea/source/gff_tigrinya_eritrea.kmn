@@ -15,8 +15,8 @@ c
   store(&Version) '9.0'
   store(&Name) 'ትግርኛ (Tigrinya)'
   store(&EthnologueCode) 'tir'
-  store(&Language) 'x0873'
-  store(&WindowsLanguages) 'x0873'
+store(&LANGUAGE) 'x0873'
+store(&WINDOWSLANGUAGES) 'x0873'
   store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Tigrinya language mnemonic input method that applies Eritrean writing conventions.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
   store(&KeyboardVersion) '1.1'
@@ -51,8 +51,9 @@ c the following is Tigrinya specific
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(alefKeys)  'aAuUiIeEoO'
-  store(alefEthio) 'ኣኣኡኡኢኢእእኦኦ'
+  store(loneVowelKeys)  'aAuUiIeEoO'
+  store(loneVowelEthio) 'ኣዐኡኡኢኢእእኦኦ'
+  store(composableVowel) 'አኡኢእኦዐዒዓዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -115,33 +116,38 @@ c ---------------------End Input of Double Strike Letters-----------------------
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
 c Alef-A Vowels as Vowels
-  + any(alefKeys) > index(alefEthio,1)
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
 
-c Alef-A Vowels as Regular Syllables
-  'እ' + any(kaIb-key) > 'ኡ'
-  'እ' + any(sals-key) > 'ኢ'
-  'እ' + any(rabI-key) > 'ኣ'
+  'አ' + any(gIz-key)  > 'ኧ'
+  'አ' + any(kaIb-key) > 'ኡ'
+  'አ' + any(sals-key) > 'ኢ'
+c 'አ' + any(rabI-key) > 'ኣ'
   'ኢ' + any(gIz-key)  > 'ኤ'
-  'እ' + any(sabI-key) > 'ኦ'
+  'አ' + any(sabI-key) > 'ኦ'
+  'ኧ' + any(gIz-key)  > 'እ'
 
 c Aynu-A Vowels as Regular Sylalbles
   'እ' + any(gIz-key)  > 'ዕ'
-  'ዕ' + any(gIz-key)  > 'ዐ'
-  'ዕ' + any(kaIb-key) > 'ዑ'
-  'ዕ' + any(sals-key) > 'ዒ'
-  'ዕ' + any(rabI-key) > 'ዓ'
-  'ዒ' + any(gIz-key)  > 'ዔ'
-  'ዕ' + any(sabI-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
   'ኡ' + any(kaIb-key) > 'ዑ'
   'ኢ' + any(sals-key) > 'ዒ'
+  'ኤ' + any(gIz-key)  > 'ዔ'
   'ኦ' + any(sabI-key) > 'ዖ'
 
 c Completing the Tigrinya-ER "a" chain:
-  'ኣ' + any(rabI-key) > 'ዓ'
-  'ዓ' + any(rabI-key) > 'ዐ'
-  'ዐ' + any(rabI-key) > 'አ'
+c Tigrinya-ER: ኣ -> ዓ -> ዐ -> አ
+  'አ' + any(rabI-key) > 'ዓ'
+  'ዓ' + any(rabI-key) > 'ዐ' deadkey(1)
+  'ዐ' deadkey(1) + any(rabI-key) > 'አ'
+
+  'ዐ' + any(gIz-key)  > 'ዕ'
+  'ዐ' + any(kaIb-key) > 'ዑ'
+  'ዐ' + any(sals-key) > 'ዒ'
+  'ዐ' + any(rabI-key) > 'ዓ'
+  'ዐ' + any(sabI-key) > 'ዖ'
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
