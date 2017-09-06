@@ -13,11 +13,11 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '9.0'
+  store(&KeyboardVersion) '1.1'
   store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
   store(&EthnologueCode) 'gez'
   store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
-  store(&KeyboardVersion) '1.1'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
 store(&BITMAP) 'gff_geez.ico'
@@ -26,6 +26,8 @@ c
 c =====================End Identity Section=====================================================
 
 c =====================Begin Data Section=======================================================
+
+c The remainder of this document is formatted with a fixed width font.
 
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
@@ -179,8 +181,8 @@ c ---------------------Input of Labiovelars-------------------------------------
   any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)
   any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
   any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1) 
-  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)  
   any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
+  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)  
   any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
 
 c Alternative input to support confusion around the 'o' glypheme:
@@ -268,22 +270,22 @@ c Ethiopic Numerals
   + any(ArabOnes) > index(ones,1)
 
 c special cases for multiples of one
-  '፩'  + '0' > '፲'
-  '፲'  + '0' > '፻'
-  '፻'  + '0' > '፲፻'
-  '፲፻' + '0' > '፼'
-  '፼'  + '0' > '፲፼'    
-  '፲፼' + '0' > '፻፼' 
-  '፻፼'  + '0' > '፲፻፼'
-  '፲፻፼' + '0' > '፼፼'
-  '፼፼' + '0' > context beep  c do not go any higher, we could beep here
+    '፩' + '0' >   '፲'
+    '፲' + '0' >   '፻'
+    '፻' + '0' >  '፲፻'
+   '፲፻' + '0' >   '፼'
+    '፼' + '0' >  '፲፼'    
+   '፲፼' + '0' >  '፻፼' 
+   '፻፼' + '0' > '፲፻፼'
+  '፲፻፼' + '0' >  '፼፼'
+   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
 
 c upto the order of 100 million
-  any(ones)     + '0' > index(tens,1)
-  any(tens)     + '0' > index(ones,1) '፻'  c Hundreds
-  any(ones)  '፻ '+ '0' > index(tens,1) '፻'  c Thousands
-  any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
-  any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1)  '፻' c Hundreds
+  any(ones)  '፻ '+ '0' > index(tens,1)  '፻' c Thousands
+  any(tens)  '፻' + '0' > index(ones,1)  '፼' c Ten Thousands
+  any(ones)  '፼' + '0' > index(tens,1)  '፼' c Hundred Thousands
   any(tens)  '፼' + '0' > index(ones,1) '፻፼' c Millions
   any(ones) '፻፼' + '0' > index(tens,1) '፻፼' c Ten Millions
   any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions
