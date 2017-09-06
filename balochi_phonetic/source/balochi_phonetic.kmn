@@ -3,18 +3,30 @@ store(&NAME) 'Balochi Phonetic'
 store(&TARGETS) 'any'
 store(&WINDOWSLANGUAGES) 'x0C01'
 store(&KMW_RTL) '1'
-store(&BITMAP) 'balochi_phonetic.ico'
-store(&VISUALKEYBOARD) 'balochi_phonetic.kvk'
 store(&LAYOUTFILE) 'balochi_phonetic-layout.js'
-store(&KEYBOARDVERSION) '1.0'
-store(&ETHNOLOGUECODE) 'bcc'
+store(&KEYBOARDVERSION) '1.1'
+store(&ETHNOLOGUECODE) 'bal bcc bgn bgp'
 store(&COPYRIGHT) '© 2017 SIL International'
 store(&MESSAGE) 'The Balochi Phonetic keyboard is distributed under The MIT License (MIT).'
 store(&KMW_HELPTEXT) 'This is a phonetically organized Balochi keyboard.'
+store(&VISUALKEYBOARD) 'balochi_phonetic.kvk'
+store(&BITMAP) 'balochi_phonetic.ico'
+     
 
 begin Unicode > use(main)
 
 group(main) using keys
+
++ [K_BKSLASH] > dk(005c)
+     
++ [K_O] > 'ُ'
++ [SHIFT K_O] > 'ْ'
++ [K_BKQUOTE] > 'ء'
++ [SHIFT K_W] > 'أ'
++ [SHIFT K_P] > 'ّ'
++ [SHIFT K_BKQUOTE] > 'ٔ'
++ [SHIFT K_J] > 'ض'
++ [SHIFT K_H] > 'ص'
 + [SHIFT K_9] > ')'
 + [SHIFT K_RBRKT] > '{'
 + [SHIFT K_LBRKT] > '}'
@@ -28,17 +40,14 @@ group(main) using keys
 
 + [SHIFT K_PERIOD] > '‹'
 + [SHIFT K_COMMA] > '›'
-+ [SHIFT K_J] > 'ـ'
 + [SHIFT K_L] > '['
-+ [SHIFT K_U] > 'ص'
-+ [SHIFT K_P] > 'أ'
++ [SHIFT K_U] > 'ۀ'
 + [SHIFT K_B] > 'ة'
-+ [K_V] > 'ط'
++ [K_V] > 'ـ'
 + [SHIFT K_M] > 'غ'
 + [SHIFT K_N] > 'ع'
 + [SHIFT K_F] > 'ث'
-+ [SHIFT K_W] > 'ّ'
-+ [SHIFT K_E] > 'ٔ'
++ [SHIFT K_E] > 'ۓ'
 + [SHIFT K_Q] > 'ي'
 + [K_0] > '0'
 + [K_9] > '9'
@@ -56,16 +65,13 @@ group(main) using keys
 + [K_U] > 'ۆ'
 + [K_RBRKT] > 'ِ'
 + [K_LBRKT] > 'َ'
-+ [SHIFT K_O] > 'ء'
 + [SHIFT K_R] > 'ڑ'
 + [SHIFT K_6] > '‌'
-+ [SHIFT K_Y] > 'ئ'
 + [SHIFT K_T] > 'ٹ'
 + [SHIFT K_V] > 'ظ'
-+ [SHIFT K_C] > 'ض'
++ [SHIFT K_C] > 'ط'
 + [SHIFT K_X] > 'خ'
 + [SHIFT K_Z] > 'ژ'
-+ [SHIFT K_H] > 'ۀ'
 + [SHIFT K_G] > 'ق'
 + [SHIFT K_S] > 'ش'
 + [SHIFT K_A] > 'آ'
@@ -78,7 +84,6 @@ group(main) using keys
 + [K_X] > 'ح'
 + [K_Z] > 'ز'
 + [K_P] > 'پ'
-+ [K_O] > 'ْ'
 + [K_Y] > 'ی'
 + [K_T] > 'ت'
 + [K_R] > 'ر'
@@ -94,3 +99,12 @@ group(main) using keys
 + [K_D] > 'د'
 + [K_S] > 'س'
 + [K_A] > 'ا'
+
+match > use(deadkeys)
+
+group(deadkeys) 
+
+c Backslash + number = extended Arabic-Indic number
+store(dkf005c) U+0020 U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 
+store(dkt005c) U+005c U+06F0 U+06F1 U+06F2 U+06F3 U+06F4 U+06F5 U+06F6 U+06F7 U+06F8 U+06F9  
+dk(005c) any(dkf005c) > index(dkt005c, 2)
