@@ -1,91 +1,93 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c Mnemonic input method for Tigrinya script under Eritrean conventions on US-QWERTY
-c keyboards for Keyman version 7.1, compliant with Unicode 4.1 and later.
+c The Ge'ez Frontier Foundation's mnemonic input method for Tigrinya script under Eritrean conventions on US-QWERTY
+c keyboards for SIL Keyman, compliant with Unicode 3.0 and later.
 c 
-c License       :  http://creativecommons.org/licenses/by/3.0/
-c Info          :  http://keyboards.ethiopic.org/
-c Keyman        :  http://www.tavultesoft.com/
-c Bugs          :  keyboards@ethiopic.org
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_tigrinya_eritrea/1.1/gff_tigrinya_eritrea.php
+c Source        :  https://github.com/keymanapp/keyboards/gff_tigrinya_eritrea
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
-c Specification : http://keyboards.ethiopic.org/specification/
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
-c Last Update   :  2012-11-16, mcd
-c 
-
-store(&Version) "9.0"
-store(&Name) "Tigrinya"        
-store(&BITMAP) 'tigrigna.bmp'
-store(&COPYRIGHT) '2009-2017 Ge' U+0027 'ez Frontier Foundation'
-store(&KEYBOARDVERSION) '1.1'
-c store(&MnemonicLayout) "1"
-store(&CapsAlwaysOff) "1"
-store(&Message) "This is a Tigrinya language mnemonic input method (Eritrean conventions) for Ethiopic script that requires Unicode 4.1 support."
-store(&WINDOWSLANGUAGES) 'x0873'
+  store(&Version) '9.0'
+  store(&Name) 'ትግርኛ (Tigrinya)'
+  store(&EthnologueCode) 'tir'
 store(&LANGUAGE) 'x0873'
-store(&EthnologueCode) "tir"
+store(&WINDOWSLANGUAGES) 'x0873'
+  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+  store(&Message) 'This is a Tigrinya language mnemonic input method that applies Eritrean writing conventions.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
+  store(&KeyboardVersion) '1.1'
+  store(&CapsAlwaysOff) '1'
+  store(&HotKey) '[CTRL ALT K_T]'
+store(&BITMAP) 'gff_tigrinya.ico'
 store(&VISUALKEYBOARD) 'gff_tigrinya_eritrea.kvk'
-c HOTKEY "^%T"
 c 
 c =====================End Identity Section=====================================================
 
 c =====================Begin Data Section=======================================================
 
+c The remainder of this document is formatted with a fixed width font.
+
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-store(gIz)   'ሀለሐመረሰሸቀቐበቨተቸነኘከኸወዐዘዠየደጀገጠጨጰጸፈፐ'
-store(kaIb)  'ሁሉሑሙሩሱሹቁቑቡቩቱቹኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፉፑ'
-store(sals)  'ሂሊሒሚሪሲሺቂቒቢቪቲቺኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፊፒ'
-store(rabI)  'ሃላሓማራሳሻቃቓባቫታቻናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፋፓ'
-store(hams)  'ሄሌሔሜሬሴሼቄቔቤቬቴቼኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፌፔ'
-store(sads)  'ህልሕምርስሽቅቕብቭትችንኝክኽውዐዝዥይድጅግጥጭጵጽፍፕ'
-store(sabI)  'ሆሎሖሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፎፖ'
+  store(gIz)   'ሀለሐመረሰሸቀቐበቨተቸነኘከኸወዐዘዠየደጀገጠጨጰጸፈፐ'
+  store(kaIb)  'ሁሉሑሙሩሱሹቁቑቡቩቱቹኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፉፑ'
+  store(sals)  'ሂሊሒሚሪሲሺቂቒቢቪቲቺኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፊፒ'
+  store(rabI)  'ሃላሓማራሳሻቃቓባቫታቻናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፋፓ'
+  store(hams)  'ሄሌሔሜሬሴሼቄቔቤቬቴቼኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፌፔ'
+  store(sads)  'ህልሕምርስሽቅቕብቭትችንኝክኽውዐዝዥይድጅግጥጭጵጽፍፕ'
+  store(sabI)  'ሆሎሖሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፎፖ'
 
-store(keys)  'hlHmrsxqQbvtcnNkKw_zZydjgTCPSfp'
+c QWERTY keymappings
+  store(keys)  'hlHmrsxqQbvtcnNkKw_zZydjgTCPSfp'
+
 c the following is Tigrinya specific
-store(extraKeys) 'LMRXBVWYDJFG'
-store(extraSads) 'ልምርሽብቭውይድጅፍግ'
+  store(extraKeys) 'LMRXBVWYDJFG'
+  store(extraSads) 'ልምርሽብቭውይድጅፍግ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-store(alefKeys)  'aAuUiIeEoO'
-store(alefEthio) 'ኣኣኡኡኢኢእእኦኦ'
+  store(loneVowelKeys)  'aAuUiIeEoO'
+  store(loneVowelEthio) 'ኣዐኡኡኢኢእእኦኦ'
+  store(composableVowel) 'አኡኢእኦዐዒዓዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-store(zemedeKeys)      'ህልሕምርስሽቅቕብቭትችኅንኝክዝዥድጅግጥጭጵጽፍፕ'
-store(zemedeKeysKaIb)  'ሁሉሑሙሩሱሹቁቑቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፉፑ'
-store(zemedeEthio)     'ኋሏሗሟሯሷሿቋቛቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿፏፗ'
+  store(zemedeKeys)      'ልሕምርስሽብቭትችኅንኝዝዥድጅጥጭጵጽፍፕ'
+  store(zemedeKeysKaIb)  'ሉሑሙሩሱሹቡቩቱቹኁኑኙዙዡዱጁጡጩጱጹፉፑ'
+  store(zemedeEthio)     'ሏሗሟሯሷሿቧቯቷቿኋኗኟዟዧዷጇጧጯጷጿፏፗ'
 
 c 'hhqQkg'
-store(zemedeKeysKaIbExtended)  'ሁኁቁቑኩኹጉ'
-store(zemedeWe)  'ኈኈቈቘኰዀጐ'
-store(zemedeWu)  'ኍኍቍቝኵዅጕ'
-store(zemedeWi)  'ኊኊቊቚኲዂጒ'
-store(zemedeWa)  'ኋኋቋቛኳዃጓ'
-store(zemedeWEE) 'ኌኌቌቜኴዄጔ'
+  store(zemedeKeysKaIbExtended)  'ሁኁቁቑኩኹጉ'
+  store(zemedeWe)  'ኈኈቈቘኰዀጐ'
+  store(zemedeWu)  'ኍኍቍቝኵዅጕ'
+  store(zemedeWi)  'ኊኊቊቚኲዂጒ'
+  store(zemedeWa)  'ኋኋቋቛኳዃጓ'
+  store(zemedeWEE) 'ኌኌቌቜኴዄጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
-store(ArabOnes) '23456789'
-store(ones)     '፪፫፬፭፮፯፰፱'
-store(tens)     '፳፴፵፶፷፸፹፺'
-store(arabNumbers) '123456789'
-store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
-store(arabNumbersWithZero) '0123456789'
-store(ColonOrComma) ':,'
-store(ethWordspaceOrComma) '፡፣'
+  store(ArabOnes) '23456789'
+  store(ones)     '፪፫፬፭፮፯፰፱'
+  store(tens)     '፳፴፵፶፷፸፹፺'
+  store(arabNumbers) '123456789'
+  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(arabNumbersWithZero) '0123456789'
+  store(ColonOrComma) ':,'
+  store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-store(gIz-key)  'eEäÄéÉèÈêÊëË'
-store(kaIb-key) 'uUùÙúÚûÛüÜ'
-store(sals-key) 'iIìÌíÍîÎïÏ'
-store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-store(hams-key) 'æÆ'
-store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(gIz-key)  'eEäÄéÉèÈêÊëË'
+  store(kaIb-key) 'uUùÙúÚûÛüÜ'
+  store(sals-key) 'iIìÌíÍîÎïÏ'
+  store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+  store(hams-key) 'æÆ'
+  store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
@@ -93,8 +95,8 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 
-begin Unicode > use(main)
-group(main) using keys
+  begin Unicode > use(main)
+  group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
 c 
@@ -114,34 +116,38 @@ c ---------------------End Input of Double Strike Letters-----------------------
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
 c Alef-A Vowels as Vowels
-  + any(alefKeys) > index(alefEthio,1)
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
 
-c Alef-A Vowels as Regular Syllables
-  'እ' + any(kaIb-key) > 'ኡ'
-  'እ' + any(sals-key) > 'ኢ'
-  'እ' + any(rabI-key) > 'ኣ'
+  'አ' + any(gIz-key)  > 'ኧ'
+  'አ' + any(kaIb-key) > 'ኡ'
+  'አ' + any(sals-key) > 'ኢ'
+c 'አ' + any(rabI-key) > 'ኣ'
   'ኢ' + any(gIz-key)  > 'ኤ'
-  'እ' + any(sabI-key) > 'ኦ'
+  'አ' + any(sabI-key) > 'ኦ'
+  'ኧ' + any(gIz-key)  > 'እ'
 
 c Aynu-A Vowels as Regular Sylalbles
   'እ' + any(gIz-key)  > 'ዕ'
-  'ዕ' + any(gIz-key)  > 'ዐ'
-  'ዕ' + any(kaIb-key) > 'ዑ'
-  'ዕ' + any(sals-key) > 'ዒ'
-  'ዕ' + any(rabI-key) > 'ዓ'
-  'ዒ' + any(gIz-key)  > 'ዔ'
-  'ዕ' + any(sabI-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
   'ኡ' + any(kaIb-key) > 'ዑ'
   'ኢ' + any(sals-key) > 'ዒ'
+  'ኤ' + any(gIz-key)  > 'ዔ'
   'ኦ' + any(sabI-key) > 'ዖ'
 
 c Completing the Tigrinya-ER "a" chain:
-  'ኣ' + any(rabI-key) > 'ዓ'
-  'ዓ' + any(rabI-key) > 'ዐ'
-  'ዐ' + any(rabI-key) > 'አ'
+c Tigrinya-ER: ኣ -> ዓ -> ዐ -> አ
+  'አ' + any(rabI-key) > 'ዓ'
+  'ዓ' + any(rabI-key) > 'ዐ' deadkey(1)
+  'ዐ' deadkey(1) + any(rabI-key) > 'አ'
 
+  'ዐ' + any(gIz-key)  > 'ዕ'
+  'ዐ' + any(kaIb-key) > 'ዑ'
+  'ዐ' + any(sals-key) > 'ዒ'
+  'ዐ' + any(rabI-key) > 'ዓ'
+  'ዐ' + any(sabI-key) > 'ዖ'
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
@@ -159,10 +165,10 @@ c ---------------------Input of Labiovelars-------------------------------------
   any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
   any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1)
   any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
+  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)
   any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
 
-  'ኹ' + any(rabI-key) > 'ዃ'  c I3560 mcd 16-11-2012, as per ET documentation 'Kua' 
-
+c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
   'ጎ' + 'o' > 'ጐ'
 
@@ -229,26 +235,26 @@ c
 
 c Ethiopic Numerals
 
-  "'" + '1' > '፩'
-  "'" + any(ArabOnes) > index(ones,2)
+  '#' + '1' > '፩'
+  '#' + any(ArabOnes) > index(ones,2)
 
 c special cases for multiples of one
-  '፩'  + '0' > '፲'
-  '፲'  + '0' > '፻'
-  '፻'  + '0' > '፲፻'
-  '፲፻' + '0' > '፼'
-  '፼'  + '0' > '፲፼'    
-  '፲፼' + '0' > '፻፼' 
-  '፻፼'  + '0' > '፲፻፼'
-  '፲፻፼' + '0' > '፼፼'
-  '፼፼' + '0' > context beep  c do not go any higher, we could beep here
+  '  ፩' + '0' >   '፲'
+    '፲' + '0' >   '፻'
+    '፻' + '0' >  '፲፻'
+   '፲፻' + '0' >   '፼'
+    '፼' + '0' >  '፲፼'    
+   '፲፼' + '0' >  '፻፼' 
+   '፻፼' + '0' > '፲፻፼'
+  '፲፻፼' + '0' >  '፼፼'
+   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
 
 c upto the order of 100 million
-  any(ones)     + '0' > index(tens,1)
-  any(tens)     + '0' > index(ones,1) '፻'  c Hundreds
-  any(ones)  '፻ '+ '0' > index(tens,1) '፻'  c Thousands
-  any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
-  any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1)  '፻' c Hundreds
+  any(ones)  '፻' + '0' > index(tens,1)  '፻' c Thousands
+  any(tens)  '፻' + '0' > index(ones,1)  '፼' c Ten Thousands
+  any(ones)  '፼' + '0' > index(tens,1)  '፼' c Hundred Thousands
   any(tens)  '፼' + '0' > index(ones,1) '፻፼' c Millions
   any(ones) '፻፼' + '0' > index(tens,1) '፻፼' c Ten Millions
   any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions
