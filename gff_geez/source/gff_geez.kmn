@@ -49,8 +49,9 @@ c the following is Ge'ez specific
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(alefKeys)  'aAuUiIeEoO'
-  store(alefEthio) 'አአኡኡኢኢእእኦኦ'
+  store(loneVowelKeys)  'aAuUiIeEoO'
+  store(loneVowelEthio) 'አዐኡኡኢኢእእኦኦ' 
+  store(composableVowel) 'አኡኢእኦዐዒዓዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -138,7 +139,7 @@ c ---------------------End Input of Double Strike Letters-----------------------
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
 c Alef-A Vowels as Vowels
-  + any(alefKeys) > index(alefEthio,1)
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
 
 c Alef-A Vowels as Regular Syllables
   'እ' + any(kaIb-key) > 'ኡ'
@@ -159,12 +160,21 @@ c Aynu-A Vowels as Regular Sylalbles
 c Aynu-A Vowels as Vowels
   'ኡ' + any(kaIb-key) > 'ዑ'
   'ኢ' + any(sals-key) > 'ዒ'
+  'ኤ' + any(gIz-key)  > 'ዔ'
   'ኦ' + any(sabI-key) > 'ዖ'
 
-c Completing the Ge'ez "a" chain:
+c Completing the Ge'ez "a" chain
   'አ' + any(rabI-key) > 'ዓ'
   'ዓ' + any(rabI-key) > 'ዐ'
-  'ዐ' + any(rabI-key) > 'ኣ'
+
+c Composable Aynu-A vowels as per ti-ER rules
+  'ዐ' + any(gIz-key)  > 'ዕ'
+  'ዐ' + any(kaIb-key) > 'ዑ'
+  'ዐ' + any(sals-key) > 'ዒ'
+  'ዐ' + any(rabI-key) > 'ዓ'
+  'ዐ' + any(sabI-key) > 'ዖ'
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
