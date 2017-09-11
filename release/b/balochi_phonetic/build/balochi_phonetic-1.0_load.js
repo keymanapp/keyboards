@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_balochi_phonetic()); function Stub_Keyboard_balochi_phonetic() {this.KF="balochi_phonetic-1.0.js";this.KI="Keyboard_balochi_phonetic";this.KN="Balochi Phonetic";}
