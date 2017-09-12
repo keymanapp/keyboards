@@ -32,7 +32,8 @@ function validate_keyboard_info {
     return 99
   fi
   
-  "$NODEJS" "$KEYBOARDROOT"/resources/node_modules/ajv-cli/index.js validate --errors=text -s "$KEYBOARDINFO_SCHEMA_SOURCE_JSON" -d "$1" > /dev/null || return 1 
+  "$KMCOMP" -s -v "$1" || return 1
+  # "$NODEJS" "$KEYBOARDROOT"/resources/node_modules/ajv-cli/index.js validate --errors=text -s "$KEYBOARDINFO_SCHEMA_SOURCE_JSON" -d "$1" > /dev/null || return 1 
   # $KEYBOARDROOT/resources/node_modules/.bin/ajv validate --errors=text -s "$KEYBOARDINFO_SCHEMA_SOURCE_JSON" -d "$1" >/dev/null || return 1
   return 0
 }

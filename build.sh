@@ -3,6 +3,10 @@
 #
 # This script is built with commands available to Git Bash on Windows and nodejs.
 
+function display_usage {
+  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-t project_target] [target]"
+  exit
+}
 
 # TODO: Test on macOS as well.
 # TODO: Copy the final keyboard_info.json to resources/
