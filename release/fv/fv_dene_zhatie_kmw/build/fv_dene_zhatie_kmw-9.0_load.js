@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_dene_zhatie_kmw()); function Stub_Keyboard_fv_dene_zhatie_kmw() {this.KF="fv_dene_zhatie_kmw-9.0.js";this.KI="Keyboard_fv_dene_zhatie_kmw";this.KN="Dene Zhatié";}

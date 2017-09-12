@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_ghana()); function Stub_Keyboard_ghana() {this.KF="ghana-1.2.js";this.KI="Keyboard_ghana";this.KN="Ghana";}

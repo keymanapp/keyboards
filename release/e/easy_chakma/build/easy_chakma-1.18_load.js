@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_easy_chakma()); function Stub_Keyboard_easy_chakma() {this.KF="easy_chakma-1.18.js";this.KI="Keyboard_easy_chakma";this.KN="Easy Chakma";}

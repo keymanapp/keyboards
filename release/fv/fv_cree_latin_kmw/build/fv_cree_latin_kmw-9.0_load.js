@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_cree_latin_kmw()); function Stub_Keyboard_fv_cree_latin_kmw() {this.KF="fv_cree_latin_kmw-9.0.js";this.KI="Keyboard_fv_cree_latin_kmw";this.KN="Cree - Roman Orthography";}

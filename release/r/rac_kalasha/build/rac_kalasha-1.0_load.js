@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_rac_kalasha()); function Stub_Keyboard_rac_kalasha() {this.KF="rac_kalasha-1.0.js";this.KI="Keyboard_rac_kalasha";this.KN="Rachitrali-Kalasha";}

@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_lunaapeewi_huluniixsuwaakan_kmw()); function Stub_Keyboard_fv_lunaapeewi_huluniixsuwaakan_kmw() {this.KF="fv_lunaapeewi_huluniixsuwaakan_kmw-9.0.js";this.KI="Keyboard_fv_lunaapeewi_huluniixsuwaakan_kmw";this.KN="Lunáapeewi-hulŭniixsuwáakan";}

@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_natwits_kmw()); function Stub_Keyboard_fv_natwits_kmw() {this.KF="fv_natwits_kmw-9.0.js";this.KI="Keyboard_fv_natwits_kmw";this.KN="Nedut’en-Witsuwit'en";}

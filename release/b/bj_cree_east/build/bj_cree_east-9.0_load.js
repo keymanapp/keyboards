@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_bj_cree_east()); function Stub_Keyboard_bj_cree_east() {this.KF="bj_cree_east-9.0.js";this.KI="Keyboard_bj_cree_east";this.KN="BJCreeUNI (east)";}

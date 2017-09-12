@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_stlatlimxec_kmw()); function Stub_Keyboard_fv_stlatlimxec_kmw() {this.KF="fv_stlatlimxec_kmw-9.0.js";this.KI="Keyboard_fv_stlatlimxec_kmw";this.KN="Sƛ̓aƛ̓imxəc";}

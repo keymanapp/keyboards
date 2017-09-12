@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_tem_kdh()); function Stub_Keyboard_tem_kdh() {this.KF="tem_kdh-1.1.js";this.KI="Keyboard_tem_kdh";this.KN="Clavier Tem";}

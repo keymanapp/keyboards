@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_diitiidatx_kmw()); function Stub_Keyboard_fv_diitiidatx_kmw() {this.KF="fv_diitiidatx_kmw-9.0.js";this.KI="Keyboard_fv_diitiidatx_kmw";this.KN="Diidiitidq";}

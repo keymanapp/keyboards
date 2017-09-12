@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_tainua()); function Stub_Keyboard_tainua() {this.KF="tainua-1.0.js";this.KI="Keyboard_tainua";this.KN="Tai Nua";}

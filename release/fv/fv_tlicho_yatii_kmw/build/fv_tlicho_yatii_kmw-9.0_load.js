@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_tlicho_yatii_kmw()); function Stub_Keyboard_fv_tlicho_yatii_kmw() {this.KF="fv_tlicho_yatii_kmw-9.0.js";this.KI="Keyboard_fv_tlicho_yatii_kmw";this.KN="Tłı̨chǫ Yatıı̀";}

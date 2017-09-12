@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_skicinuwatuwewakon_kmw()); function Stub_Keyboard_fv_skicinuwatuwewakon_kmw() {this.KF="fv_skicinuwatuwewakon_kmw-9.0.js";this.KI="Keyboard_fv_skicinuwatuwewakon_kmw";this.KN="Skicinuwatuwewakon";}

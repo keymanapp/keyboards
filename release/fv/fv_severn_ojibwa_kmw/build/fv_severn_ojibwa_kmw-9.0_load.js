@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_severn_ojibwa_kmw()); function Stub_Keyboard_fv_severn_ojibwa_kmw() {this.KF="fv_severn_ojibwa_kmw-9.0.js";this.KI="Keyboard_fv_severn_ojibwa_kmw";this.KN="ᐊᓂᔑᓂᓂᒧᐎᐣ";}

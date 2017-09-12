@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_fv_southern_carrier_kmw()); function Stub_Keyboard_fv_southern_carrier_kmw() {this.KF="fv_southern_carrier_kmw-9.0.js";this.KI="Keyboard_fv_southern_carrier_kmw";this.KN="ᑐᑊᘁᗕᑋᗸ";}
