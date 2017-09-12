@@ -1,0 +1,60 @@
+#!/bin/bash
+
+#
+# Check node environment
+#
+
+function check_node {
+  is_node_installed
+  return_value=$?
+
+  if [ $return_value -eq 0 ]; then
+    echo "Node is not installed; skipping validation"
+    exit 0
+  fi
+
+  cd resources
+  if [ ! -d "node_modules" ]; then
+    npm install || exit 1
+  else
+    npm update
+  fi
+  cd ..
+}
+
+#
+# validate .keyboard_info
+#
+
+function validate_keyboard_info {
+  if [ ! -f "$1" ]; then
+    echo "Keyboard info file $1 is missing"
+    return 99
+  fi
+  
+  "$NODEJS" "$KEYBOARDROOT"/resources/node_modules/ajv-cli/index.js validate --errors=text -s "$KEYBOARDINFO_SCHEMA_SOURCE_JSON" -d "$1" > /dev/null || return 1 
+  # $KEYBOARDROOT/resources/node_modules/.bin/ajv validate --errors=text -s "$KEYBOARDINFO_SCHEMA_SOURCE_JSON" -d "$1" >/dev/null || return 1
+  return 0
+}
+
+#
+# Validate that the keyboard exists in only one folder in the repository
+#
+
+function validate_keyboard_uniqueness {
+  local group=$1
+  local keyboard=$2
+  local base_keyboard=$3
+  local shortname=$(basename `dirname "$keyboard"`)
+
+  local folderlist=$(grep -w "/$base_keyboard/$base_keyboard.keyboard_info" <<< "$KEYBOARD_INFOS")
+#   ls -d "*/*/$base_keyboard") # | grep -v $group/$shortname/$base_keyboard)
+  local duplicate_count=$(wc -l <<< "$folderlist")
+    
+  if [[ $duplicate_count -gt 1 ]]; then
+    die "Keyboard $base_keyboard exists in more than one location:
+$folderlist"
+  fi
+
+  return 0  
+}
