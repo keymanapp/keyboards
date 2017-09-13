@@ -14,8 +14,8 @@ function display_usage {
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
 KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.json"
-# KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
-KMCOMP="/c/Projects/keyman/open/windows/src/developer/kmcomp/kmcomp.exe"
+KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
+# KMCOMP="/c/Projects/keyman/open/windows/src/developer/kmcomp/kmcomp.exe"
 
 # Master is https://api.keyman.com/schemas/keyboard_info.json
 

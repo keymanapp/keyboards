@@ -39,23 +39,29 @@ function merge_keyboard_info {
     fi
   fi
   
-  local pOut=build/"$keyboard_info"
+  #
+  # Here we come a bit unstuck with slash vs backslash, because of quoted parameters
+  # to a Windows PE executable. So we pass \\ instead of / to avoid the problem. Lots
+  # of ways to skin this cat but this one works as well as any!
+  #
+
+  local pOut=build\\"$keyboard_info"
   local pInKmp=
   local pInKmpM=
   local pInJs=
   local pInJsM=
-  echo build/"$keyboard_info_packageFilename"
+    
   if [ -f build/"$keyboard_info_packageFilename" ]; then
-    pInKmp=build/"$keyboard_info_packageFilename"
+    pInKmp=build\\"$keyboard_info_packageFilename"
     pInKmpM=-m
   fi
 
   if [ -f build/"$keyboard_info_jsFilename" ]; then
-    pInJs=build/"$keyboard_info_jsFilename"
+    pInJs=build\\"$keyboard_info_jsFilename"
     pInJsM=-m
   fi
   
-  echo "$KMCOMP" $pInKmpM "$pInKmp" $pInJsM "$pInJsM" "$pOut" || die "Failed to merge keyboard_info for $1"
+  "$KMCOMP" -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" "$pOut" || die "Failed to merge keyboard_info for $1"
   
   return 0
 }
