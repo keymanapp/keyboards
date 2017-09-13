@@ -42,6 +42,9 @@ function build_keyboards {
   # depends on files created by the keyboards
   #
   
+  return 0
+  # TODO: enable package builds
+  
   if [ -d "$KEYBOARDROOT/$group/packages" ]; then
     echo "- Building $group/packages"
     local package
@@ -50,7 +53,7 @@ function build_keyboards {
     done
   fi
   
-  echo
+  return 0
 }
 
 #----------------------------------------------------------------------------------------
@@ -139,6 +142,15 @@ function build_keyboard {
   fi
   
   #
+  # Copy the documentation file manually
+  #
+
+  if [ -n "$keyboard_info_documentationFilename" ]; then
+    #echo "Documentation filename = $keyboard_info_documentationFilename"
+    cp "source/$keyboard_info_documentationFilename" "build/$keyboard_info_documentationFilename" || die
+  fi
+  
+  #
   # Now, validate the build artifacts and merge the data with the .keyboard_info file
   #
   
@@ -184,11 +196,6 @@ function copy_keyboard {
   if [ -n "$keyboard_info_jsFilename" ]; then
     #echo "JS filename = $keyboard_info_jsFilename"
     cp "source/$keyboard_info_jsFilename" "build/$keyboard_info_jsFilename" || die
-  fi
-  
-  if [ -n "$keyboard_info_documentationFilename" ]; then
-    #echo "Documentation filename = $keyboard_info_documentationFilename"
-    cp "source/$keyboard_info_documentationFilename" "build/$keyboard_info_documentationFilename" || die
   fi
   
   # TODO: Copy fonts
