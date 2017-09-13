@@ -22,9 +22,6 @@ t_end=$'\e[0m'
 # Program paths
 #
 
-# TODO: define node path properly
-NODEJS=node
-
 #
 # Utility functions
 #
@@ -44,16 +41,3 @@ function die {
   echo "${t_red}Aborting with error $rc${t_end}"
   exit $rc
 }
-
-function check_nodejs {
-  NODEJS=`which nodejs || which node`
-}
-
-: '
-function is_node_installed {
-  hash node 2>/dev/null || return 0
-  hash npm 2>/dev/null || return 0
-  return 1
-}
-'
-

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# This script is built with commands available to Git Bash on Windows and nodejs.
+# This script is built with commands available to Git Bash on Windows.
 
 function display_usage {
   echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-t project_target] [target]"
@@ -14,13 +14,15 @@ function display_usage {
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
 KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.json"
-KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
+# KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
+KMCOMP="/c/Projects/keyman/open/windows/src/developer/kmcomp/kmcomp.exe"
 
 # Master is https://api.keyman.com/schemas/keyboard_info.json
 
 . "$KEYBOARDROOT/resources/util.sh"
 . "$KEYBOARDROOT/resources/compile.sh"
 . "$KEYBOARDROOT/resources/validate.sh"
+. "$KEYBOARDROOT/resources/merge.sh"
 
 #
 # Build parameters
@@ -80,8 +82,6 @@ done
 #
 # Check build environment
 #
-
-check_nodejs
 
 #TODO: anything else to check?
 

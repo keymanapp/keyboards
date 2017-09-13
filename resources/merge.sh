@@ -7,7 +7,8 @@
 
 function merge_keyboard_info {
   local keyboard_info=$1
-  echo "merging $keyboard_info"
+  
+  echo "Merging $keyboard_info"
   
   cp "$keyboard_info" "build/$keyboard_info" || die
   
@@ -21,7 +22,7 @@ function merge_keyboard_info {
   #
   # For release/ folder, we can deduce packageFilename and jsFilename
   #
-  
+   
   if [ ! -n "$keyboard_info_packageFilename" ]; then
     # See if a .kmp file exists in the build/ folder
     local packages=(build/*.kmp)
@@ -38,7 +39,23 @@ function merge_keyboard_info {
     fi
   fi
   
-  `"$NODEJS" "$KEYBOARDROOT/resources/merge_compiled_keyboard_info.js" "build/$keyboard_info" "build/$keyboard_info_packageFilename" "build/$keyboard_info_jsFilename"` || die "Failed to run merge_compiled_keyboard_info"
+  local pOut=build/"$keyboard_info"
+  local pInKmp=
+  local pInKmpM=
+  local pInJs=
+  local pInJsM=
+  echo build/"$keyboard_info_packageFilename"
+  if [ -f build/"$keyboard_info_packageFilename" ]; then
+    pInKmp=build/"$keyboard_info_packageFilename"
+    pInKmpM=-m
+  fi
+
+  if [ -f build/"$keyboard_info_jsFilename" ]; then
+    pInJs=build/"$keyboard_info_jsFilename"
+    pInJsM=-m
+  fi
+  
+  echo "$KMCOMP" $pInKmpM "$pInKmp" $pInJsM "$pInJsM" "$pOut" || die "Failed to merge keyboard_info for $1"
   
   return 0
 }

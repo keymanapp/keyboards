@@ -1,28 +1,6 @@
 #!/bin/bash
 
 #
-# Check node environment
-#
-
-function check_node {
-  is_node_installed
-  return_value=$?
-
-  if [ $return_value -eq 0 ]; then
-    echo "Node is not installed; skipping validation"
-    exit 0
-  fi
-
-  cd resources
-  if [ ! -d "node_modules" ]; then
-    npm install || exit 1
-  else
-    npm update
-  fi
-  cd ..
-}
-
-#
 # validate .keyboard_info
 #
 
@@ -33,8 +11,6 @@ function validate_keyboard_info {
   fi
   
   "$KMCOMP" -s -v "$1" || return 1
-  # "$NODEJS" "$KEYBOARDROOT"/resources/node_modules/ajv-cli/index.js validate --errors=text -s "$KEYBOARDINFO_SCHEMA_SOURCE_JSON" -d "$1" > /dev/null || return 1 
-  # $KEYBOARDROOT/resources/node_modules/.bin/ajv validate --errors=text -s "$KEYBOARDINFO_SCHEMA_SOURCE_JSON" -d "$1" >/dev/null || return 1
   return 0
 }
 

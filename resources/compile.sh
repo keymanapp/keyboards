@@ -107,7 +107,12 @@ function build_keyboard {
   #  * keyboard_info_documentationFilename
   #
   
-  `"$NODEJS" "$KEYBOARDROOT/resources/extract_keyboard_info_properties.js" "$base_keyboard.keyboard_info"` || die "Failed to run extract_keyboard_info_properties"
+  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,id,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$") || die "Failed to extract keyboard_info properties"
+  lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
+  
+  eval $lines
+
+  # `"$NODEJS" "$KEYBOARDROOT/resources/extract_keyboard_info_properties.js" "$base_keyboard.keyboard_info"` || die "Failed to run extract_keyboard_info_properties"
 
   #
   # Determine how we will build the keyboard. If a build.sh file exists, then that does
@@ -156,7 +161,7 @@ function copy_keyboard {
   local keyboard=$1
   local base_keyboard=$(basename "$keyboard")
   
-  echo "copying keyboard $keyboard"
+  echo "Copying keyboard $keyboard"
     
   # Clean build folder
   
@@ -168,17 +173,17 @@ function copy_keyboard {
   # Copy the target files
   
   if [ -n "$keyboard_info_packageFilename" ]; then
-    echo "Package filename = $keyboard_info_packageFilename"
+    #echo "Package filename = $keyboard_info_packageFilename"
     cp "source/$keyboard_info_packageFilename" "build/$keyboard_info_packageFilename" || die
   fi
 
   if [ -n "$keyboard_info_jsFilename" ]; then
-    echo "JS filename = $keyboard_info_jsFilename"
+    #echo "JS filename = $keyboard_info_jsFilename"
     cp "source/$keyboard_info_jsFilename" "build/$keyboard_info_jsFilename" || die
   fi
   
   if [ -n "$keyboard_info_documentationFilename" ]; then
-    echo "Documentation filename = $keyboard_info_documentationFilename"
+    #echo "Documentation filename = $keyboard_info_documentationFilename"
     cp "source/$keyboard_info_documentationFilename" "build/$keyboard_info_documentationFilename" || die
   fi
   
@@ -194,7 +199,7 @@ function copy_keyboard {
 function build_release_keyboard {
   local keyboard=$1
   local base_keyboard=$(basename "$keyboard")
-  echo "building keyboard $1"
+  echo "Building keyboard $1"
   
   local kpj="$base_keyboard.kpj"
   
