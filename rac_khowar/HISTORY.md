@@ -1,5 +1,5 @@
-Rac_Khowar Change History
-=======================
+Rachitrali-Khowar Change History
+================================
 
 0.6 (14 August 2017)
 -----------------
@@ -11,4 +11,3 @@ Rac_Khowar Change History
 0.5 (14-AUG-2016)
 -----------------
 * Created by Rehmat Aziz Chitrali Linguist at Khowar Academy Chitral Pakistan E-mail: rachitrali@yahoo.com
-
