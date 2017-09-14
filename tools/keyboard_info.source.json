@@ -20,7 +20,7 @@
         "links": { "type": "array", "items": { "$ref": "#/definitions/KeyboardLinkInfo" } },
         "packageFilename": { "type": "string", "pattern": "\\.km[xp]$" },
         "jsFilename": { "type": "string", "pattern": "\\.js$" },
-        "documentationFilename": { "type": "string", "pattern": "\\.(rtf|html?|pdf)$" },
+        "documentationFilename": { "type": "string", "pattern": "\\.(rtf|html?|pdf|txt)$" },
         "encodings": { "type": "array", "items": { "type": "string", "enum": ["ansi", "unicode"] }, "additionalItems": false },
         "packageIncludes": { "type": "array", "items": { "type": "string", "enum": ["welcome", "documentation", "fonts", "visualKeyboard"] }, "additionalItems": false },
         "version": { "type": "string" },
