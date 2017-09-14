@@ -42,31 +42,15 @@ function build_keyboards {
   # depends on files created by the keyboards
   #
   
-  return 0
-  # TODO: enable package builds
-  
   if [ -d "$KEYBOARDROOT/$group/packages" ]; then
     echo "- Building $group/packages"
     local package
-    for package in "$KEYBOARDROOT/$group/packages/*/" ; do
-      build_package "$group" "$package"
+    for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
+      build_keyboard "$group" "$package"
     done
   fi
   
   return 0
-}
-
-#----------------------------------------------------------------------------------------
-# Build a keyboard package, e.g. in the release/ folder
-#----------------------------------------------------------------------------------------
-
-function build_package {
-  local group=$1
-  local package=$2
-  local base_package=$(basename "$package")
-  echo "  - Building package $group/$base_package"
-  # TODO: build_keyboard $group $package
-  die "not yet implemented"
 }
 
 #----------------------------------------------------------------------------------------
@@ -77,6 +61,7 @@ function build_keyboard {
   local group=$1
   local keyboard=$2
   local base_keyboard=$(basename "$keyboard")
+  local shortname=$(basename $(dirname "$keyboard"))
   
   if [ "$DO_BUILD" = false ]; then
     echo "Validating $base_keyboard"
@@ -158,7 +143,7 @@ function build_keyboard {
   if [ -n "$keyboard_info_jsFilename" ]; then test -f "build/$keyboard_info_jsFilename" || die "Could not find output file build/$keyboard_info_jsFilename"; fi
   if [ -n "$keyboard_info_documentationFilename" ]; then test -f "build/$keyboard_info_documentationFilename" || die "Could not find output file build/$keyboard_info_documentationFilename"; fi
     
-  merge_keyboard_info "$base_keyboard.keyboard_info" $group || die "Failed to merge keyboard_info for $base_keyboard"
+  merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname || die "Failed to merge keyboard_info for $base_keyboard"
     
   #
   # Back to root of repo

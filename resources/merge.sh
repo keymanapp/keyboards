@@ -8,6 +8,7 @@
 function merge_keyboard_info {
   local keyboard_info=$1
   local group=$2
+  local shortname=$3
   
   echo "Merging $keyboard_info"
   
@@ -63,7 +64,7 @@ function merge_keyboard_info {
     pInJsM=-m
   fi
   
-  if [[ $group == release ]]; then
+  if [[ $group == release && $shortname != packages ]]; then
     pValidateId=-m-validate-id
   fi
   
