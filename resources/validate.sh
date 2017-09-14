@@ -24,7 +24,7 @@ function validate_keyboard_uniqueness {
   local base_keyboard=$3
   local shortname=$(basename `dirname "$keyboard"`)
 
-  local folderlist=$(grep -w "/$base_keyboard/$base_keyboard.keyboard_info" <<< "$KEYBOARD_INFOS")
+  local folderlist=$(echo "$KEYBOARD_INFOS" | grep "/$base_keyboard/$base_keyboard.keyboard_info")
 #   ls -d "*/*/$base_keyboard") # | grep -v $group/$shortname/$base_keyboard)
   local duplicate_count=$(wc -l <<< "$folderlist")
     

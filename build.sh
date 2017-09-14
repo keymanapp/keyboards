@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #
-# This script is built with commands available to Git Bash on Windows.
+# This script is built with commands available to Git Bash on Windows. (mingw32)
+#
 
 function display_usage {
   echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-t project_target] [target]"
@@ -11,14 +12,15 @@ function display_usage {
 # TODO: Test on macOS as well.
 # TODO: Copy the final keyboard_info.json to resources/
 
-export KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-export KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
-export KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.json"
-export KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
+#
+# Define paths
+#
+KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
-# KMCOMP="/c/Projects/keyman/open/windows/src/developer/kmcomp/kmcomp.exe"
-
-# Master is https://api.keyman.com/schemas/keyboard_info.json
+# Master json schema is from https://api.keyman.com/schemas/keyboard_info.json
+KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
+KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.json"
 
 . "$KEYBOARDROOT/resources/util.sh"
 . "$KEYBOARDROOT/resources/compile.sh"
@@ -28,22 +30,18 @@ export KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 #
 # Build parameters
 #
-# Default is validate keyboard_info, build keyboards, don't codesign
+# Default is validate keyboard_info, build keyboards, don't code-sign
 #
 
 parse_args $@
 
 #
-# Check build environment
-#
-
-#TODO: anything else to check?
-
-#
 # Collect filenames
 #
-#TODO: change this to xxx = ("$KEYBOARDROOT"/*/*/*/*.keyboard_info) and update usage to avoid parsing ls output
-KEYBOARD_INFOS=$(ls -1 "$KEYBOARDROOT"/*/*/*/*.keyboard_info)
+
+KEYBOARD_INFO_PATHS="$KEYBOARDROOT"/*/*/*/*.keyboard_info
+KEYBOARD_INFOS=($KEYBOARD_INFO_PATHS)
+KEYBOARD_INFOS=`printf -- '%s\n' "${KEYBOARD_INFOS[@]}"`
 
 #
 # Run build
