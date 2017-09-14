@@ -7,6 +7,7 @@
 
 function merge_keyboard_info {
   local keyboard_info=$1
+  local group=$2
   
   echo "Merging $keyboard_info"
   
@@ -20,7 +21,7 @@ function merge_keyboard_info {
   #
   
   #
-  # For release/ folder, we can deduce packageFilename and jsFilename
+  # We can try and deduce packageFilename and jsFilename
   #
    
   if [ ! -n "$keyboard_info_packageFilename" ]; then
@@ -50,6 +51,7 @@ function merge_keyboard_info {
   local pInKmpM=
   local pInJs=
   local pInJsM=
+  local pValidateId=
     
   if [ -f build/"$keyboard_info_packageFilename" ]; then
     pInKmp=build\\"$keyboard_info_packageFilename"
@@ -61,7 +63,11 @@ function merge_keyboard_info {
     pInJsM=-m
   fi
   
-  "$KMCOMP" -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" "$pOut" || die "Failed to merge keyboard_info for $1"
+  if [[ $group == release ]]; then
+    pValidateId=-m-validate-id
+  fi
+  
+  "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" "$pOut" || die "Failed to merge keyboard_info for $1"
   
   return 0
 }

@@ -27,9 +27,11 @@
         "minKeymanDesktopVersion": { "type": "string", "pattern": "^\\d+\\.0$" },
         "platformSupport": { "$ref": "#/definitions/KeyboardPlatformInfo" },
         "legacyId": { "type": "number" },
-        "related": { "type": "array", "items": { 
-          "$ref": "#/definitions/KeyboardRelatedInfo" 
-        }}
+        "related": { "type": "object", "patternProperties": { 
+          ".": { "$ref": "#/definitions/KeyboardRelatedInfo" }
+          },
+          "additionalProperties": false
+        }
       },
       "required": [
         "license", "languages"

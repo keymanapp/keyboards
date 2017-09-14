@@ -10,7 +10,7 @@ function build_keyboards {
   # build based on the folder name and location.
   
   # excluded folders are: shared, packages and template
-  
+
   local group=$1
   local excluded_folders=" shared packages template "
   
@@ -129,7 +129,7 @@ function build_keyboard {
   if [ -f build.sh ]; then
     # We call this build.sh and assume it generates the
     # right stuff
-    . ./build.sh || die "Failed to build keyboard $base_keyboard"
+    . ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
     if [[ $group == release ]]; then
@@ -158,8 +158,8 @@ function build_keyboard {
   if [ -n "$keyboard_info_jsFilename" ]; then test -f "build/$keyboard_info_jsFilename" || die "Could not find output file build/$keyboard_info_jsFilename"; fi
   if [ -n "$keyboard_info_documentationFilename" ]; then test -f "build/$keyboard_info_documentationFilename" || die "Could not find output file build/$keyboard_info_documentationFilename"; fi
     
-  merge_keyboard_info "$base_keyboard.keyboard_info" || die "Failed to merge keyboard_info for $base_keyboard"
-  
+  merge_keyboard_info "$base_keyboard.keyboard_info" $group || die "Failed to merge keyboard_info for $base_keyboard"
+    
   #
   # Back to root of repo
   #
@@ -213,9 +213,16 @@ function build_release_keyboard {
   echo "Building keyboard $1"
   
   local kpj="$base_keyboard.kpj"
+
+  # Clean build folder
+  
+  if [[ -d build ]]; then
+    rm -rf build/ || die
+  fi
+  mkdir build || die "Failed to create build folder for $keyboard"
   
   "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
-
+  
   return 0
 }
 

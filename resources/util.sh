@@ -41,3 +41,53 @@ function die {
   echo "${t_red}Aborting with error $rc${t_end}"
   exit $rc
 }
+
+function parse_args {
+  DO_VALIDATE=true
+  DO_BUILD=true
+  DO_CODESIGN=false
+  TARGET=
+  PROJECT_TARGET=
+  FLAG_SILENT=
+  FLAG_DEBUG=
+  FLAG_CLEAN=
+  FLAG_TARGET=
+  START=
+  
+  # Parse args
+  while [[ $# -gt 0 ]] ; do
+    key="$1"
+    case $key in
+      -validate)
+        DO_BUILD=false
+        ;;
+      -codesign)
+        DO_CODESIGN=true
+        ;;
+      -start)
+        shift
+        START=$1
+        ;;
+      -s)
+        FLAG_SILENT=-s
+        ;;
+      -d)
+        FLAG_DEBUG=-d
+        ;;
+      -c)
+        FLAG_CLEAN=-c
+        ;;
+      -h|-?)
+        display_usage
+        ;;
+      -t)
+        shift
+        FLAG_TARGET=-t
+        PROJECT_TARGET=$1
+        ;;
+      *)
+        TARGET=$1
+    esac
+    shift # past argument
+  done
+}
