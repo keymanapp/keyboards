@@ -1,0 +1,75 @@
+﻿store(&VERSION) '9.0'
+store(&TARGETS) 'any'
+store(&NAME) 'Balochi Scientific'
+store(&BITMAP) 'balochi_scientific.ico'
+store(&COPYRIGHT) '© 2017 SIL International'
+store(&MESSAGE) 'The Balochi Scientific keyboard is distributed under The MIT License (MIT).'
+store(&KMW_HELPTEXT) 'This is a Latin keyboard for transcription of Balochi languages using the method devised at Uppsala University.'
+store(&KEYBOARDVERSION) '1.0'
+store(&ETHNOLOGUECODE) 'bal bgp bcc bgn'
+store(&WINDOWSLANGUAGES) 'x042D'
+
+group(main) using keys
+
+platform('desktop') + [K_COLON] > dk(003b) c ;
+platform('desktop') + [K_QUOTE] > dk(0027) c '
+platform('desktop') + [K_RBRKT] > dk(005d) c [
+platform('desktop') + [K_EQUAL] > dk(003d) c =
+
+match > use(deadkeys)
+
+begin Unicode > use(main)
+
++ [K_QUOTE] > U+0027
++ [K_SPACE] > ' '
++ [K_A] > 'a'
++ [SHIFT K_A] > 'A'
++ [K_C] > 'c'
++ [K_D] > 'd'
++ [K_E] > 'e'
++ [SHIFT K_E] > 'E'
++ [K_G] > 'g'
++ [K_I] > 'i'
++ [SHIFT K_I] > 'I'
++ [K_J] > 'j'
++ [K_L] > 'l'
++ [K_N] > 'n'
++ [K_O] > 'o'
++ [SHIFT K_O] > 'O'
++ [K_Q] > 'q'
++ [K_R] > 'r'
++ [K_S] > 's'
++ [K_T] > 't'
++ [K_U] > 'u'
++ [SHIFT K_U] > 'U'
++ [K_W] > 'w'
++ [K_X] > 'x'
++ [K_Z] > 'z'
++ [K_COLON] > ';'
++ [K_EQUAL] > '='
++ [K_RBRKT] > ']'
+
+group(deadkeys) 
+c Deadkeys ... (deadkey + space always = deadkey)
+
+c with semi-colon      a>ā    c>č    d>ḍ    e>ē    g>ġ    i>ī    j>ǰ    l>ɬ    n>ñ    o>ō    q>γ    r>ṛ    s>š    t>ṭ    u>ū    w>δ    x>θ    z>ž
+store(dkf003b) U+0020 U+0061 U+0063 U+0064 U+0065 U+0067 U+0069 U+006A U+006C U+006E U+006F U+0071 U+0072 U+0073 U+0074 U+0075 U+0077 U+0078 U+007A  
+store(dkt003b) U+003b U+0101 U+010D U+1E0D U+0113 U+0121 U+012B U+01F0 U+026C U+00F1 U+014D U+03B3 U+1E5B U+0161 U+1E6D U+016B U+03B4 U+03B8 U+017E
+dk(003b) any(dkf003b) > index(dkt003b, 2)
+
+c with quote           a>æ    e>ə    n>ŋ    w>ʷ
+store(dkf0027) U+0020 U+0061 U+0065 U+006E U+0077  
+store(dkt0027) U+0027 U+00E6 U+0259 U+014B U+02B7 
+dk(0027) any(dkf0027) > index(dkt0027, 2)
+
+c with equals          a>á    e>é    i>í    o>ó    u>ú    A>Á    E>É    I>Í    O>Ó    U>Ú
+store(dkf003d) U+0020 U+0061 U+0065 U+0069 U+006F U+0075 U+0041 U+0045 U+0049 U+004F U+0055
+store(dkt003d) U+003d U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+dk(003d) any(dkf003d) > index(dkt003d, 2)
+
+c with rt bracket      a>ä    e>ë    i>ï    o>ö    u>ü    A>Ä    E>Ë    I>Ï    O>Ö    U>Ü
+store(dkf005d) U+0020 U+0061 U+0065 U+0069 U+006F U+0075 U+0041 U+0045 U+0049 U+004F U+0055
+store(dkt005d) U+005d U+00E4 U+00EB U+00EF U+00F6 U+00FC U+00C4 U+00CB U+00CF U+00D6 U+00DC
+dk(005d) any(dkf005d) > index(dkt005d, 2)
+
+
