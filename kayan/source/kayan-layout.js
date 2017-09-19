@@ -172,7 +172,7 @@
                     "layer": "shift"
                   },
                   {
-                    "text": "ˊ",
+                    "text": "U_0301",
                     "id": "T_GOOD"
                   }
                 ]
