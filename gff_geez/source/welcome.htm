@@ -40,10 +40,10 @@ table.kb tr:last-child { text-align: center; background-color: #d7d0b9; font-wei
 table.kb tr:last-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-bottom-color: #ffffff }
 dd {margin: 0 0 1em; padding: 0}
 
-table.punct th, table.punct td { font-weight: normal; padding: 0.3em }
-table.punct th:first-child { font-weight: normal; background-color: #e0dacf; }
+table.punct th { font-weight: bold;  padding: 0.3em }
+table.punct td { font-weight: normal; padding: 0.3em }
+table.punct th:first-child { background-color: #e0dacf; }
 table.punct tr:first-child { background-color: #e0dacf; }
-table.punct tr:first-child th { font-weight: bold; }
 table.punct tr:first-child th:first-child { background-color: #ffffff; border-left-color: #ffffff; border-top-color: #ffffff }
 table.punct th { background-color: #e0dacf; border-left-color: #ffffff }
 table.punct td, table.punct th { border: thin solid #666; text-align: center }
@@ -54,21 +54,21 @@ table.punct { empty-cells: show }
 </head>
 <body>
 
-<h1>The GFF Ge'ez Keyboard</h1>
+<h1>The Ge'ez Frontier Foundation Keyboard for Ge'ez Language</h1>
 
-<h2><a id="abstract" name="abstract">Introduction</a></h2>
+<h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Ge&lsquo;ez (ግዕዝ, ISO-639-2: gez) language mnemonic input method.  It requires a font
-supporting Ethiopic script under the Unicode 3.0 standard.
-
+This is a Ge&lsquo;ez (ግዕዝ, ISO-639-2: gez) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.
 The Ge&lsquo;ez keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
+<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+
  
-<h2><a id="status" name="status">Typing Letter</a></h2>
+<h2><a id="status" name="status"></a>Typing Letter</h2>
 
 <p style="text-align: justify;">
 Only the letters used in the Ge&lsquo;ez language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
@@ -80,6 +80,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 <strong>Special Notes:</strong>
 </p>
 <ul>
+  <li>Apostrophe, ' , is a terminator following a ሳድስ (6<th>th</th> form) letter. For example: <kbd>mel'ak</kbd> becomes መልአክ , <kbd>melak</kbd> becomes መላክ .</li>
   <li>The keystroke of &lsquo;x&rsquo; is added for the &lsquo;ኀ&rsquo; family in agreement with classic Ge'ez phonology and modern transliteration conventions.</li>
   <li>The keystroke of &lsquo;D&rsquo; is added for the &lsquo;ፀ&rsquo; family in agreement with classic Ge'ez phonology.</li>
 </ul>
@@ -176,26 +177,103 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 </table>
 </div>
 
-<h2><a id="numbers-and-punctuation" name="numbers-and-punctuation">Typing Numbers &amp; Punctuation</a></h2>
+<h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
 
 <div style="margin-left: 1em;">
-<table class="kb">
+
+<h3>Ethiopic Punctuation</h3>
+<table class="punct" style="margin-top: 0;">
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
+    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th><th>?</th>
+  </tr>
+  <tr>
+    <th>Punctuation</th>
+    <td>፡</td><td>።</td><td>፥</td><td>፣</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td><td>፧</td>
+  </tr>
 </table>
+
+<h3>Latin Punctuation</h3>
+<table class="punct" style="margin-top: 0;">
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
+    <th>:::</th><th>,,,</th><th>;;</th><th>??</th><th>''</th><th>##</th>
+  </tr>
+  <tr>
+    <th>Punctuation</th>
+    <td>:</td><td>,</td><td>;</td><td>?</td><td>'</td><td>#</td>
+  </tr>
+</table>
+
+</div>
+
+<h2><a id="numerals" name="numerals"></a>Typing Numerals</h2>
+
+<div style="margin-left: 1em;">
+
+<h3>Ethiopic Numerals</h3>
+<table class="punct" style="margin-top: 0;">
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
+    <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th>
+  </tr>
+  <tr>
+    <th>Numeral</th>
+    <td>፩</td><td>፪</td><td>፫</td><td>፬</td><td>፭</td><td>፮</td><td>፯</td><td>፰</td><td>፱</td>
+  </tr>
+  <tr><td colspan="10" style="border-color: #ffffff;"/></tr>
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
+    <th>10</th><th>20</th><th>30</th><th>40</th><th>50</th><th>60</th><th>70</th><th>80</th><th>90</th>
+  </tr>
+  <tr>
+    <th>Numeral</th>
+    <td>፲</td><td>፳</td><td>፴</td><td>፵</td><td>፶</td><td>፷</td><td>፸</td><td>፹</td><td>፺</td>
+  </tr>
+  <tr><td colspan="10" style="border-color: #ffffff;"/></tr>
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
+    <th>100</th><th>1000</th><th>10000</th>
+  </tr>
+  <tr>
+    <th>Numeral</th>
+    <td>፻</td><td>፲፻</td><td>፼</td>
+  </tr>
+</table>
+<p>Numeral composition will continue as 0s are entered up to ፼፼ (100,000,000).</p>
+
+
+<h3>Latin Digits</h3>
+<p>Western numbers may be typed with a &lsquo;#&rsquo; mark followed by the desired digit 1-9.</p>
+<table class="punct" style="margin-top: 0;">
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
+    <th>#1</th><th>#2</th><th>#3</th><th>#4</th><th>#5</th><th>#6</th><th>#7</th><th>#8</th><th>#9</th>
+  </tr>
+  <tr>
+    <th>Digit</th>
+    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+  </tr>
+</table>
+
 </div>
 
 
-<h2><a id="zaima" name="zaima">Typing Zaima Qurts (የዜማ፡ቅርጽ፡)</a></h2>
+<h2><a id="zaima" name="zaima"></a>Typing Zaima Qirts (የዜማ፡ቅርጽ፡)</h2>
 
 <div style="margin-left: 1em;">
-<table class="kb" style="margin-top: 0;">
+<table class="punct" style="margin-top: 0;">
   <tr>
-    <th style="background-color: #e0dacf; border: thin solid #666;">Name</th><th>ይዘት</th><th>ኅጺር፡ርክርክ</th><th>ርክርክ</th><th>ቁርጥ</th><th>ደረት</th><th>ድፋት</th><th>ጭረት</th><th>ቅናት</th><th>ሒደት</th><th style="background-color: #d7d0b9; border-right-color: #666; border-top-color: #666;">ደረት፡ሒደት</th>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Name</th>
+    <th>ይዘት</th><th>ኅጺር፡ርክርክ</th><th>ርክርክ</th><th>ቁርጥ</th><th>ደረት</th><th>ድፋት</th><th>ጭረት</th><th>ቅናት</th><th>ሒደት</th><th style="background-color: #d7d0b9; border-right-color: #666; border-top-color: #666;">ደረት፡ሒደት</th>
   </tr>
   <tr>
-    <th>Qurts</th><td>᎐</td><td>᎓</td><td>᎒</td><td>᎙</td><td>᎑</td><td>᎔</td><td>᎖</td><td>᎕</td><td>᎗</td><td>᎘</td>
+    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
+    <th>_1</th><th>_2</th><th>_3</th><th>_4</th><th>_5</th><th>_6</th><th>_7</th><th>_8</th><th>_9</th><th>_0</th>
   </tr>
   <tr>
-    <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th><th>_1</th><th>_2</th><th>_3</th><th>_4</th><th>_5</th><th>_6</th><th>_7</th><th>_8</th><th>_9</th><th>_0</th>
+    <th>Qurts</th>
+    <td>᎐</td><td>᎓</td><td>᎒</td><td>᎙</td><td>᎑</td><td>᎔</td><td>᎖</td><td>᎕</td><td>᎗</td><td>᎘</td>
   </tr>
 </table>
 </div>
@@ -206,7 +284,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Fronter Foundation. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
