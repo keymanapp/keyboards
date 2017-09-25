@@ -4,7 +4,7 @@
 
 First, read the guide! <https://help.keyman.com/developer/keyboards/>
 
-Keyman Developer 9.0 or 10.0 is recommended to edit these files. <https://keyman.com/developer>
+Keyman Developer 10.0 is recommended to edit these files. <https://keyman.com/developer>
  
 ## Building Keyboards
 
