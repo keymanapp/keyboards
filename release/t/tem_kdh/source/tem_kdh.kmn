@@ -4,14 +4,14 @@ c All Tem letters are available with one key stroke for ease of typing in Tem, F
 c The basic layout follows the French keyboard, because the largest Tem populations are in countries where French is used as the official language,
 c but it is reorganized so that special letters for Tem can also be easily typed from the top row (ŋ; ɖ; ɛ; ʊ; ɩ; ɔ).
 c Tone marks are all located on the right side of the keyboard and are typed after the base letter. So for é first type e then type the hi tone mark (right of the m).
-c For French letters with 'accent grave' first type the base letter, then the accent grave which is in the upper right corner, not far from [p]. 
+c For French letters with 'accent grave' first type the base letter, then the accent grave which is in the upper right corner, not far from [p].
 
 store(&VERSION) '9.0'
 store(&TARGETS) 'any'
 store(&ETHNOLOGUECODE) 'KDH'
-store(&COPYRIGHT) '2017 SIL International'
+store(&COPYRIGHT) 'Copyright © 2017 SIL International'
 store(&NAME) 'Clavier Tem'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&MESSAGE) 'Developed with the approval of the Tem language committee, CLTem'
 store(&LAYOUTFILE) 'tem_kdh-layout.js'
 store(&VISUALKEYBOARD) 'tem_kdh.kvk'
@@ -154,7 +154,7 @@ platform('desktop native') + [RALT K_HYPHEN] > '@'
 + [T_Open_o_HL] > 'ɔ̂'
 + [T_Open_o_D] > 'ɔ̈'
 + [T_Small_AE] > 'æ'
-+ [T_turned_e] > 'ǝ'
++ [T_turned_e] > 'ǝ' 
 + [T_Retroflex_d] > 'ɖ'
 + [T_m_with_H] > 'ḿ'
 + [T_n_with_H] > 'ń'
