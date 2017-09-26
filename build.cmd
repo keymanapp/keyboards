@@ -12,4 +12,7 @@ if exist "%programfiles%\git\usr\bin\bash.exe" (
     set bash_shell=
   )
 )
+echo.
+echo Using bash shell command %bash_shell%
+echo.
 %bash_shell% .\build.sh
