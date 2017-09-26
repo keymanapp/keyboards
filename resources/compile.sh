@@ -99,7 +99,7 @@ function build_keyboard {
   local keyboard_info_jsFilename=
   local keyboard_info_documentationFilename=
   
-  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,id,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$") || die "Failed to extract keyboard_info properties"
+  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,id,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$") || die "Failed to extract keyboard_info properties: at least one of packageFilename,jsFilename must be specified"
   lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
   
   eval $lines
