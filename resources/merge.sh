@@ -34,10 +34,15 @@ function merge_keyboard_info {
   fi
   
   if [ ! -n "$keyboard_info_jsFilename" ]; then
-    # See if a .js file exists in the build/ folder
+    # See if a .js file exists in the build/ folder, ignore the obsolete _load file
     local jsfiles=(build/*.js)
-    if [ -f "${jsfiles[0]}" ]; then
-      keyboard_info_jsFilename=`basename "${jsfiles[0]}"`
+    if [[ "${jsfiles[0]}" == *_load.js ]]; then
+      jsfile="${jsfiles[1]}"
+    else
+      jsfile="${jsfiles[0]}"
+    fi
+    if [ -f "$jsfile" ]; then
+      keyboard_info_jsFilename=`basename "$jsfile"`
     fi
   fi
   

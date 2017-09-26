@@ -4,13 +4,15 @@
 # Define terminal colours
 #
 
-t_red=$'\e[1;31m'
-t_grn=$'\e[1;32m'
-t_yel=$'\e[1;33m'
-t_blu=$'\e[1;34m'
-t_mag=$'\e[1;35m'
-t_cyn=$'\e[1;36m'
-t_end=$'\e[0m'
+if [ -t 2 ]; then
+  t_red=$'\e[1;31m'
+  t_grn=$'\e[1;32m'
+  t_yel=$'\e[1;33m'
+  t_blu=$'\e[1;34m'
+  t_mag=$'\e[1;35m'
+  t_cyn=$'\e[1;36m'
+  t_end=$'\e[0m'
+fi
 
 #
 # We want to avoid globbing * when nothing exists
@@ -37,8 +39,8 @@ popd () {
 function die {
   local rc=$?
   local msg=$1
-  echo "${t_red}$msg${t_end}"
-  echo "${t_red}Aborting with error $rc${t_end}"
+  (>&2 echo "${t_red}$msg${t_end}")
+  (>&2 echo "${t_red}Aborting with error $rc${t_end}")
   exit $rc
 }
 

@@ -86,10 +86,13 @@ function build_keyboard {
   #
   # Get documentation, .js and .kmp data out of the .keyboard_info
   #
-
-  # Load the relevant fields from the .keyboard_info file into local variables
+  # Load the relevant fields from the .keyboard_info file into local variables. These are 
+  # needed for the legacy and experimental folders, where we don't assume filenames.
+  # For release/ folders, we can determine because there will only ever be one matching
+  # filename.
   #
   # Variables are named:
+  #  * keyboard_info_license
   #  * keyboard_info_packageFilename
   #  * keyboard_info_jsFilename
   #  * keyboard_info_documentationFilename
@@ -98,13 +101,12 @@ function build_keyboard {
   local keyboard_info_packageFilename=
   local keyboard_info_jsFilename=
   local keyboard_info_documentationFilename=
+  local keyboard_info_license=
   
-  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,id,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$") || die "Failed to extract keyboard_info properties: at least one of packageFilename,jsFilename must be specified"
+  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$") || die "Failed to extract keyboard_info properties: at least license must be specified"
   lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
   
   eval $lines
-
-  # `"$NODEJS" "$KEYBOARDROOT/resources/extract_keyboard_info_properties.js" "$base_keyboard.keyboard_info"` || die "Failed to run extract_keyboard_info_properties"
 
   #
   # Determine how we will build the keyboard. If a build.sh file exists, then that does
@@ -136,7 +138,8 @@ function build_keyboard {
   fi
   
   #
-  # Now, validate the build artifacts and merge the data with the .keyboard_info file
+  # Now, validate the build artifacts and merge the data with the .keyboard_info file.
+  # These tests are mostly needed for the legacy/ and experimental/ folders.
   #
   
   if [ -n "$keyboard_info_packageFilename" ]; then test -f "build/$keyboard_info_packageFilename" || die "Could not find output file build/$keyboard_info_packageFilename"; fi
