@@ -18,6 +18,12 @@ function display_usage {
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
+if [[ "${OSTYPE}" != "darwin"* ]]; then
+  KMCOMP_LAUNCHER=
+else
+  KMCOMP_LAUNCHER=wine
+fi
+
 # Master json schema is from https://api.keyman.com/schemas/keyboard_info.json
 KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
 KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.json"

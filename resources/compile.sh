@@ -103,7 +103,7 @@ function build_keyboard {
   local keyboard_info_documentationFilename=
   local keyboard_info_license=
   
-  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
+  lines=$($KMCOMP_LAUNCHER "$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
   lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
   
   eval $lines
@@ -209,7 +209,7 @@ function build_release_keyboard {
   fi
   mkdir build || die "Failed to create build folder for $keyboard"
   
-  "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
+  $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
   
   return 0
 }
