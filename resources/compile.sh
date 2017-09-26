@@ -103,7 +103,7 @@ function build_keyboard {
   local keyboard_info_documentationFilename=
   local keyboard_info_license=
   
-  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$") || die "Failed to extract keyboard_info properties: at least license must be specified"
+  lines=$("$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
   lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
   
   eval $lines
