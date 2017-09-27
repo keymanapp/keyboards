@@ -10,9 +10,9 @@ This is a Me'en, Mursi, Suri & Dizi language mnemonic input method for Ethiopic 
 Links
 -----
 
- * Home:     https://keyman.com
- * Help:     https://help.keyman.com/keyboard/gff_meen_mursi_suri_dizi
- * Contact:  yacob@geez.org
+ * Specification :  http://keyboards.ethiopic.org/specification/ 
+ * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/ 
+ * Contact       :  yacob@geez.org 
 
 Supported Platforms
 -------------------
