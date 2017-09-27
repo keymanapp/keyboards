@@ -10,10 +10,10 @@ Harari Latin keyboard layout.
 Links
 -----
 
- * Help:     https://help.keyman.com/keyboard/el_harari_latin
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
+
  * Windows
  
