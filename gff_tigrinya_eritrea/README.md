@@ -11,13 +11,6 @@ It requires a font supporting Ethiopic script under the Unicode 3.0 standard.
 Links
 -----
 
- * Home          :  https://keyman.com
- * Help          :  https://help.keyman.com/keyboard/gff_tigrinya_eritrea
-
- * Source        :  https://github.com/keymanapp/keyboards/gff_tigrinya_eritrea
- * License       :  https://opensource.org/licenses/MIT
- * Bugs          :  https://github.com/keymanapp/keyboards/issues
-
  * Specification :  http://keyboards.ethiopic.org/specification/
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
  * Contact       :  yacob@geez.org
