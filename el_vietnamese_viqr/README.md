@@ -10,10 +10,9 @@ Vietnamese Keyboard layout using the VIQR input convention.
 Links
 -----
 
- * Home:     <https://keyman.com>
- * Help:     <https://help.keyman.com/keyboard/el_vietnamese_viqr>
  * Contact:  <lang.support@gmail.com>
 
 Supported Platforms
 -------------------
+
  * Windows
