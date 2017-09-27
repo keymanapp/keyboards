@@ -10,10 +10,10 @@ Keyboard layout (formerly nuer13.kmn) designed for Nuer
 Links
 -----
 
- * Help:     https://help.keyman.com/keyboard/el_nuer
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
+
  * Windows
  
