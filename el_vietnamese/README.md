@@ -12,10 +12,9 @@ but produces precomposed Unicode characters.
 Links
 -----
 
- * Home:     <https://keyman.com>
- * Help:     <https://help.keyman.com/keyboard/el_vietnamese>
  * Contact:  <lang.support@gmail.com>
 
 Supported Platforms
 -------------------
+
  * Windows
