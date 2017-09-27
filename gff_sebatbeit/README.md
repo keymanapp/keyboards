@@ -10,9 +10,9 @@ This is a Sebatbeit language mnemonic input method for Ethiopic script that requ
 Links
 -----
 
- * Home:     https://keyman.com
- * Help:     https://help.keyman.com/keyboard/gff_sebatbeit
- * Contact:  yacob@geez.org
+ * Specification :  http://keyboards.ethiopic.org/specification/ 
+ * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/ 
+ * Contact       :  yacob@geez.org 
 
 Supported Platforms
 -------------------
