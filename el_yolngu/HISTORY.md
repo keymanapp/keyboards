@@ -1,4 +1,4 @@
-# Yolngu Unicode Change History
+# Yolngu Change History
 
 ## 2017-08-15 2.2
 * Published to github
