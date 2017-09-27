@@ -10,11 +10,10 @@ A unicode based Osmanya keyboard layout using the Somali Latin orthography as th
 Links
 -----
 
- * Home:     https://keyman.com
- * Help:     https://help.keyman.com/keyboard/el_osmanya
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
+
  * Windows
  
