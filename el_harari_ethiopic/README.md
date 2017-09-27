@@ -10,10 +10,10 @@ Harari Unicode keyboard layout.
 Links
 -----
 
- * Help:     https://help.keyman.com/keyboard/el_harari_ethiopic
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
+
  * Windows
  
