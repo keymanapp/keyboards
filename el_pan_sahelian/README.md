@@ -12,12 +12,11 @@ Developed by The Open Road project. Free for personal and educational use.
 Links
 -----
 
- * Home:     https://keyman.com
- * Help:     https://help.keyman.com/keyboard/el_pan_sahelian
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
+
  * Windows
 
 Todo
