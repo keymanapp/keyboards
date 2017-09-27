@@ -10,10 +10,10 @@ Keyboard layout designed for Nigerian languages.
 Links
 -----
 
- * Help:     https://help.keyman.com/keyboard/el_naija
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
+
  * Windows
  
