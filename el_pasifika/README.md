@@ -10,11 +10,10 @@ Keyboard layout supports various Polynesian langauges (Cook Islands Maori, Fijia
 Links
 -----
 
- * Home:     https://keyman.com
- * Help:     https://help.keyman.com/keyboard/el_pasifika
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
 -------------------
+
  * Windows
  
