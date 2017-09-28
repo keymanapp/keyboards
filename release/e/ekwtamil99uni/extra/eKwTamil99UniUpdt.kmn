@@ -1,0 +1,220 @@
+﻿c *** Tamil99 keymap file for use with e-Kalappai Keyman in Windows
+c *** This keymap is a modification from the original file written for e-Kalappai for Windows.
+c *** References for tamil99 layout and keystroke rules:
+c *** layout:                 http://www.tamilvu.org/Tamilnet99/annex1.htm
+c *** keystroke rules:    http://www.tamilvu.org/Tamilnet99/annex2.htm
+store(&VERSION) '7.0'
+c *** store(&Name) "தமிழ்99 | Tamil99"
+store(&Name) "தமிழ்99 | Tamil99-updt"
+store(&COPYRIGHT) '© thamizha.com'
+store(&BITMAP) 'eKwTamil99Uni.bmp'
+c store(&Hotkey) ""
+store(&MESSAGE) 'Tamil99 - Contributed by Umar, Mugunth (mugunth@gmail.com) and K. Sethu (skhome@gmail.com) - Dec 2008'
+c store(&language) "Tamil"
+store(&WINDOWSLANGUAGES) 'x0449'
+store(&LANGUAGE) 'x0449'
+store(&ETHNOLOGUECODE) 'tam'
+store(&VISUALKEYBOARD) 'eKwTamil99UniUpdt.kvk'
+
+begin Unicode > use(Main)
+
+group( Main ) using keys
+
+c ============================================
+c Assignments for bases of uyir, akarameis, grnatha akarmeis and aytham
+c - as per layout and Rule 1
+
+   
+store( uyirE1 )           "qswdegtrcxz"           
+store( akara_meyE )     "hb[]opl;jk'mnv/yui"       
+
+store( uyirT1 )             U+0B86 U+0B87 U+0B88 U+0B89 U+0B8A \
+                                 U+0B8E U+0B8F U+0B90 U+0B92 U+0B93 U+0B94
+
+store( akara_meyT )   U+0B95 U+0B99 U+0B9A U+0B9E U+0B9F U+0BA3 \
+                                 U+0BA4 U+0BA8 U+0BAA U+0BAE U+0BAF U+0BB0 \
+                                 U+0BB2 U+0BB5 U+0BB4 U+0BB3 U+0BB1 U+0BA9
+
+store( vowmT1 )               U+0BBE U+0BBF U+0BC0 U+0BC1 U+0BC2 U+0BC6 \
+                                 U+0BC7 U+0BC8 U+0BCA U+0BCB U+0BCC
+
+store(sri)                   U+0BB8 U+0BCD U+0BB0 U+0BC0
+
+store(ksha)                U+0B95 U+0BCD U+0BB7
+
+store(grandhaE)        "QWER"
+
+store(grandhaT)         U+0BB8 U+0BB7 U+0B9C U+0BB9 
+
+store (tasymbolsE) "ASDZXCVB"
+store (tasymbolsT) U+0BF9 U+0bFA U+0BF8 U+0BF3 U+0BF4 U+0BF5 U+0BF6 U+0BF7
+
+store (stdkeysE) 'OP:"KLM'
+store (stdkeysT) U+005B U+005D U+003B U+0027 U+0022 U+003A U+002F
+store (uyirE2) "qswdegtr"
+store(vowmT2)               U+0BBE U+0BBF U+0BC0 U+0BC1 U+0BC2 U+0BC6 \
+                                 U+0BC7 U+0BC8
+
+store (dkothersE) "^c.7890S"
+store (dkothersT) U+005E U+00A9 U+2022 U+2018 U+2019 U+201C U+201D U+00A0
+store (dummy) U+200B
+store (other-keys) U+007E U+0021 U+0040 U+0023 U+0024 U+0025 U+0026 U+002A U+0028 U+0029 U+005F U+002B \
+U+0060 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030 U+002D U+003D \
+U+0055 U+0049 U+007B U+007D U+007C \
+U+005C \
+U+0047 U+0048 U+004A \
+U+004E U+003C U+003E U+003F \
+U+002C U+002E
+
+ + "F" > U+0B83
++ "a" > U+0B85
++ any( uyirE1 ) > index( uyirT1, 1 )
++ any( akara_meyE ) > index( akara_meyT, 1 )
++ any( grandhaE ) > index( grandhaT, 1 )
+
+c ஸ்ரீ மற்றும் க்ஷ (Sri and ksha)
+ + "Y" > outs(sri)
+ + "T" > outs(ksha)
+
+c தமிழ் குறியீடுகள் - Tamil Symbols
+
++ any(tasymbolsE) > index(tasymbolsT,1)
+
+c Reassigned standard keys
++ any(stdkeysE) > index (stdkeysT,1)
+
+c Assign f with pulli (Rule 1)
++ "f" > U+0BCD
+c ============================================
+c Rule 2:  அகர-மெய் + புள்ளி = மெய் (base consonant plus virama to get voiceless consonant)
+any( akara_meyT ) + "f" > index( akara_meyT, 1 ) U+0BCD
+any( grandhaT ) + "f" > index( grandhaT, 1 ) U+0BCD
+
+c Rule 3 : மற்றைய உயிர்மெய்கள் (other inflexions consonants )
+any( akara_meyT ) + any( uyirE1 ) > index( akara_meyT, 1 ) index( vowmT1,2)
+any( grandhaT ) + any( uyirE1 ) > index( grandhaT, 1 ) index( vowmT1,2)
+c =============================================
+c Rules 4 and 5
+c உடனிலை மெய்மயக்கம்  (Auto Pulli Feature)
+c 1). Rules 4 & 5 for 18 akara-meis:
+c ---------------------------------------------------
+U+0B95 + "h" > U+0B95 U+0BCD U+0B95
+U+0B95 U+0BCD U+0B95 + "h" > context U+0B95
+U+0B99 + "b" > U+0B99 U+0BCD U+0B99
+U+0B99 U+0BCD U+0B99 + "b" > context U+0B99
+U+0B9A + "[" > U+0B9A U+0BCD U+0B9A
+U+0B9A U+0BCD U+0B9A + "[" > context U+0B9A
+U+0B9E + "]" > U+0B9E U+0BCD U+0B9E
+U+0B9E U+0BCD U+0B9E + "]" > context U+0B9E
+U+0B9F + "o" > U+0B9F U+0BCD U+0B9F
+U+0B9F U+0BCD U+0B9F + "o" > context U+0B9F
+U+0BA3 + "p" > U+0BA3 U+0BCD U+0BA3
+U+0BA3 U+0BCD U+0BA3 + "p" > context U+0BA3
+U+0BA4 + "l" > U+0BA4 U+0BCD U+0BA4 
+U+0BA4 U+0BCD U+0BA4 + "l" > context U+0BA4
+U+0BA8 + ";" > U+0BA8 U+0BCD U+0BA8 
+U+0BA8 U+0BCD U+0BA8 + ";" > context U+0BA8
+U+0BAA + "j" > U+0BAA U+0BCD U+0BAA 
+U+0BAA U+0BCD U+0BAA + "j" > context U+0BAA  
+U+0BAE + "k" > U+0BAE U+0BCD U+0BAE 
+U+0BAE U+0BCD U+0BAE + "k" > context U+0BAE
+U+0BAF + "'" > U+0BAF U+0BCD U+0BAF 
+U+0BAF U+0BCD U+0BAF + "'" > context U+0BAF
+U+0BB0 + "m" > U+0BB0 U+0BCD U+0BB0 
+U+0BB0 U+0BCD U+0BB0 + "m" > context U+0BB0
+U+0BB2 + "n" > U+0BB2 U+0BCD U+0BB2 
+U+0BB0 U+0BCD U+0BB2 + "n" > context U+0BB2
+U+0BB5 + "v" > U+0BB5 U+0BCD U+0BB5 
+U+0BB5 U+0BCD U+0BB5 + "v" > context U+0BB5
+U+0BB4 + "/" > U+0BB4 U+0BCD U+0BB4 
+U+0BB4 U+0BCD U+0BB4 + "/" > context U+0BB4
+U+0BB3 + "y" > U+0BB3 U+0BCD U+0BB3 
+U+0BB3 U+0BCD U+0BB3 + "y" > context U+0BB3
+U+0BB1 + "u" > U+0BB1 U+0BCD U+0BB1 
+U+0BB1 U+0BCD U+0BB1 + "u" > context U+0BB1
+U+0BA9 + "i" > U+0BA9 U+0BCD U+0BA9
+U+0BA9 U+0BCD U+0BA9 + "i" > context U+0BA9
+c 
+c 2). Rules 4 & 5 for five grantha akara-meis:
+c -------------------------------------------------------------
+U+0BB8 + "Q" > U+0BB8 U+0BCD U+0BB8
+U+0BB8 U+0BCD U+0BB8 + "Q" > context U+0BB8
+U+0BB7 + "W" > U+0BB7 U+0BCD U+0BB7
+U+0BB7 U+0BCD U+0BB7 + "W" > context U+0BB7
+U+0B9C + "E" > U+0B9C U+0BCD U+0B9C
+U+0B9C U+0BCD U+0B9C + "E" > context U+0B9C
+U+0BB9 + "R" > U+0BB9 U+0BCD U+0BB9
+U+0BB9 U+0BCD U+0BB9 + "R" > context U+0BB9
+U+0b95 U+0bcd U+0bb7 + "T" > U+0b95 U+0bcd U+0bb7 U+0bcd U+0b95 U+0bcd U+0bb7
+U+0b95 U+0bcd U+0bb7 U+0bcd U+0b95 U+0bcd U+0bb7 + "T" > context U+0b95 U+0bcd U+0bb7
+c =============================================
+
+c Rule 6
+c தமிழ் / கிரந்த அகரமெய் அடுத்து அ வரின் மாற்றமில்லை
+c (When a tamil or grandha base consonant is follweed by அ no change to base consonant - to facilitate rules 6 )
+any( akara_meyT ) + "a" > index( akara_meyT, 1) outs(dummy)           
+any( grandhaT ) + "a" > index( grandhaT, 1 ) outs(dummy)
+
+c ============================================
+c Rule 7
+c வேற்றுனிலை மெய்மயக்கம்  (Auto Pulli Feature for Soft-Hard consonant pairs)
+c Rule 7 for (ங க), (ஞ ச), (ந த), (ண ட), (ம ப), (ன ற)
+c -------------------------------------------------------------------------------
+ U+0B99 + "h" > U+0B99 U+0BCD U+0B95
+ U+0B99 U+0BCD U+0B95 + "h" > context U+0B95
+ U+0BA8 +  "l" > U+0BA8 U+0BCD U+0BA4
+ U+0BA8 U+0BCD U+0BA4 + "l" > context U+0BA4
+ U+0BAE + "j" > U+0BAE U+0BCD U+0BAA
+ U+0BAE U+0BCD U+0BAA + "j" > context U+0BAA
+ U+0B9E + "[" > U+0B9E U+0BCD U+0B9A
+ U+0B9E U+0BCD U+0B9A + "[" > context U+0B9A
+ U+0BA3 + "o" > U+0BA3 U+0BCD U+0B9F
+ U+0BA3 U+0BCD U+0B9F + "o" > context U+0B9F
+ U+0BA9 + "u" > U+0BA9 U+0BCD U+0BB1
+ U+0BA9 U+0BCD U+0BB1 + "u" > context U+0BB1
+
+c ================================= ===========
+c Rule 8 conformed to without having to add any special assignments
+c =============================================
+c Rule: 9
+c Dead Key (for caret) :
+ + "^" > dk(0)
+c Rule: 9,10 and 11
+c ==================
+c Dead Key (for caret) :
+ + "^" > dk(0)
+
+c உயிரொலிகளைப் பார்க்க
+c Rule 9: To reveal vowel Modifer Glyphs (ா, ி, ீ, ு, ூ, ெ, ே, ை) using Caret
+dk(0) + any(uyirE2) > index(vowmT2, 2) 
+
+c Rule 9 balance, 10 and 11
+c Rule 9 balance: / To get Caret (type in caret twice to get caret)  /
+c Rule: 10 / Copyright symbol and bullet/
+c Rule 11 /left and right single double quotes and non breaking space
+dk(0) + any(dkothersE) > index(dkothersT, 2) 
+
+outs(dummy) + U+0020 > U+0020
+outs(dummy) + any(other-keys) > index(other-keys,2)
+
+match > use(dummy-cleaner)
+
+
+group(dummy-cleaner) 
+c ** Sanitizing left behind outs(dummy)
+outs(dummy) U+0B83 > U+0B83
+outs(dummy) U+0B85 > U+0B85
+outs(dummy) any( uyirT1 ) > index( uyirT1, 2 )
+outs(dummy) any( akara_meyT ) > index( akara_meyT, 2 )
+outs(dummy) any( grandhaT ) > index( grandhaT, 2 )
+
+outs(dummy) outs(sri) > outs(sri)
+outs(dummy) outs(ksha) > outs(ksha)
+
+outs(dummy) any(tasymbolsT) > index(tasymbolsT,2)
+outs(dummy) any(stdkeysT) > index (stdkeysT,2)
+
+outs(dummy) any(dkothersT) > index(dkothersT, 2) 
+
+c *eof
+
