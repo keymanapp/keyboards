@@ -1,0 +1,52 @@
+﻿store(&VERSION) "9.0"
+store(&KEYBOARDVERSION) "9.0"
+store(&TARGETS) "windows macosx"
+store(&ETHNOLOGUECODE) "str"
+store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+store(&NAME) 'SENĆOŦEN'
+store(&BITMAP) 'fv_sencoten.bmp'
+store(&HOTKEY) '[CTRL SHIFT K_6]'
+store(&VISUALKEYBOARD) 'fv_sencoten.kvk'
+ 
+begin Unicode > use(main)                      
+group(main) using keys  
+
+store(quote0) "[{]}" [RALT K_9] [RALT K_0] [SHIFT RALT K_9] [SHIFT RALT K_0] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT]  
+store(quote1) "‘“’”«»‹›[]{}"
++ any(quote0) > index(quote1,1) 
+
+store(acu0) 'ACIKSaciks'
+store(acu1) 'ÁĆÍḰŚáćíḱś'   
+store(sla0) 'ACTact' 
+store(sla1) "ȺȻȾⱥȼⱦ"
+store(bar0) 'KTLtl'
+store(bar1) '₭ŦȽŧƚ' 
+store(mau0) 'KNTknt'
+store(mau1) 'ḴṈṮḵṉṯ'
+store(mau2) 'WXwx'  
+
+any(sla0) + '/' > index(sla1,1)
+any(acu0) + "'" > index(acu1,1)
+any(bar0) + "-" > index(bar1,1)       
+'k' + '-' > 'k' U+0335  
+any(mau0) + "=" > index(mau1,1)
+any(mau2) + "=" > index(mau2,1) U+0331  
+
+store(punc2) "/'-=" 
+store(punc1) [RALT K_SLASH] [RALT K_QUOTE] [RALT K_HYPHEN] [RALT K_EQUAL]
++ any(punc1) > index(punc2,1)  
+
+
+
+match > use(normalize)
+nomatch > use(x)
+
+group(normalize)
+
+c any(overaccent) any(underaccent) > context(2) context(1)
+
+
+group(x) using keys
+
+store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
++ any(allkeys) > index(allkeys, 1)
