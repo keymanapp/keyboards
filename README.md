@@ -27,6 +27,10 @@ Windows:
   * Git for Windows (or MinGW)
   * You will need to use **Git Bash** or equivalent to build (not tested with Cygwin), not 
     Windows Command Prompt or PowerShell.
+  * You can also **WSL** (Bash on Ubuntu on Windows) if you place the repo in a 
+    Windows-accessible path (such as `/mnt/c/...`), so the Keyman Developer Compiler 
+    can run (requires Windows 10 Anniversary Update or later). Beware of line-ending changes
+    if mixing Windows and WSL usage!
 
 Linux, macOS:
   * **WINE** is required in order to run the Keyman Developer 
