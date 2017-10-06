@@ -2,9 +2,9 @@
 easy_chakma keyboard
 ======================
 
-Copyright (C) 2015 Bivuti Chakma (Suz Moriz)
+Copyright (C) 2015-2017 Bivuti Chakma (Suz Moriz) 
 
-Version 1.15
+Version 1.18
 
 Chakma keyboard layout for Unicode
 
