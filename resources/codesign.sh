@@ -5,6 +5,9 @@
 SERVERLIST=(http://timestamp.comodoca.com/authenticode http://timestamp.verisign.com/scripts/timstamp.dll http://timestamp.globalsign.com/scripts/timestamp.dll http://tsa.starfieldtech.com)
 RFC3161SERVERLIST=(http://timestamp.comodoca.com/rfc3161)
 
+##
+## Code sign a Windows PE executable or msi installer database
+##
 function codesign {
   local target="$1"
   local SIGNNAME="$2"
@@ -24,6 +27,9 @@ function codesign {
   fi
 }
 
+##
+## Add a code signing timestamp to a PE executable or msi installer database
+##
 function codesign_timestamp {
   local SIGNFILE=$1
   local MODE=$2

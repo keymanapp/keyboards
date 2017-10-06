@@ -1,18 +1,14 @@
 #!/bin/bash
 
 ##
-## Use rsync to copy over specific files listed in syncfiles.txt
+## Use rsync to upload new files from a folder
 ##
 function rsync_to_downloads_keyman_com {
   local source=$1
   local dest=$2
 
-  #
-  # Upload a single file with rsync to downloads.keyman.com
-  #
-
   #rsync_args = (
-  #  '-vztp',                                  # verbose, zip, preserve times, permissions
+  #  '-vtrp',                                  # verbose, preserve times, recurse, permissions
   #  '--chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r',      # map Windows security to host security
   #  '--stats',                                # show statistics for log
   #  "--rsync-path=$REMOTE_RSYNC_PATH",        # path on remote server
@@ -27,5 +23,3 @@ function rsync_to_downloads_keyman_com {
   
   popd
 }
-
-# rsync_to_downloads_keyman_com . keyboards/

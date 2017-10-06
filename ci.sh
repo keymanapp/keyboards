@@ -38,6 +38,8 @@ fi
 ## Calls the Keyman Desktop downloads API to determine latest stable Keyman Desktop version 
 ## on download server and populates shell variables from there
 ##
+## GET https://downloads.keyman.com/api/version/windows/2.0
+##
 function check_latest_stable_keymandesktop {
   local API_VERSION_JSON=`curl -s "$DOWNLOADS_KEYMAN_COM_URL/api/version/windows/2.0"`
   KEYMANDESKTOP_VERSION=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.version'`
@@ -52,6 +54,9 @@ function check_latest_stable_keymandesktop {
 ##
 ## Checks if the files in the CI_CACHE are out of date, and if so, downloads an updated
 ## version from downloads.keyman.com
+##
+## GET https://downloads.keyman.com/windows/stable/<version>/setup.exe
+## GET https://downloads.keyman.com/windows/stable/<version>/keymandesktop<num>.msi
 ##
 function check_and_download_keymandesktop_artifacts {
 
@@ -110,31 +115,8 @@ function check_and_download {
 }
 
 ##
-## Tests if a specific file exists online, and if so if it is the same size.
-## If it is the same size (or local file does not exist), returns 1
-##
-function test_if_file_exists_online {
-  local local_path=$1
-  local remote_path=$2
-  local remote_size=$(curl -sI "$remote_path" | grep content-length | cut -d ':' -f 2)
-  if [[ -z "$remote_size" ]]; then
-    return 0
-  fi
-
-  if [[ -f $local_path ]]; then
-    local local_size=$(stat --printf="%s" $local_path)
-  
-    # If not present or incomplete (by heuristic size test)
-    if [[ $local_size == $remote_size ]]; then
-      return 0
-    fi
-  fi
-  
-  return 1
-}
-
-##
-## Prepare for upload
+## Prepare for upload puts a file into the upload cache
+## in preparation for it being rsync'd to the server
 ##
 function prepare_for_upload {
   local source_filename=$1
@@ -145,6 +127,10 @@ function prepare_for_upload {
   cp "$source_filename" "$CI_CACHE/upload/$upload_filename"
 }
 
+##
+## Prepars a single keyboard for upload, including building
+## the bundled installer for Windows
+##
 function upload_keyboard {
   local group=$1
   local keyboard=$2
@@ -188,62 +174,21 @@ function upload_keyboard {
   
   echo "${t_grn}Package name: $package_name${t_end}"
 
-  # check_and_upload $package_filename $package_url
-  #echo Keyboard info: $keyboard_info
-  #echo Local file: $buildpath/$package_filename
-  #echo Package version: $package_version
-  #echo $keyboard_info_url
-  #echo $package_url
-  #echo $installer_url
-  #echo $installer_filename
-  
-  #test_if_file_exists_online $buildpath/$base_keyboard.keyboard_info $keyboard_info_url
-  #local keyboard_info_exists=$?
-  #if [[ $keyboard_info_exists == 0 ]]; then
   prepare_for_upload "$buildpath/$base_keyboard.keyboard_info" "$keyboard_info_upload_path"
-  #fi
 
   if [[ ! -z $js_filename ]]; then
-    #test_if_file_exists_online "$buildpath/$js_filename" "$js_url"
-    #local js_exists=$?
-    #if [[ $js_exists == 0 ]]; then
     prepare_for_upload "$buildpath/$js_filename" "$js_upload_path"
-    #fi
   fi
   
   if [[ ! -z $package_filename ]]; then
-    #test_if_file_exists_online "$buildpath/$package_filename" "$package_url"
-    #local kmp_exists=$?
-    #if [[ $kmp_exists == 0 ]]; then
     prepare_for_upload "$buildpath/$package_filename" "$package_upload_path"
-    #fi
   fi
   
   if [[ ${package_filename##*.} == kmp ]]; then
-    # We only upload a combined installer for .kmp files, and only do it if the file is not already
-    # online, because this is the slowest part of the buld
-    #test_if_file_exists_online $buildpath/$installer_filename $installer_url
-    #local installer_exists=$?
-    #if [[ $installer_exists == 0 ]]; then
+    # We only upload a combined installer for .kmp files
     create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
     prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
-    #fi
-  fi
-  
-  # Test for existence of https://downloads.keyman.com/keyboards/<package>/<package-version>/<package>.kmp
-    # If not present or incomplete (by size test), then rsync keyboard.kmp to
-    # https://downloads.keyman.com/keyboards/<keyboard>/<keyboard-version>/ 
-
-    # Test for existence of https://downloads.keyman.com/keyboards/<package>/<package-version>/keymandesktop-<version>-<package>-<package-version>.exe
-    # If not present or incomplete (by size test), then:
-      # Create setup.inf
-      # Zip setup.inf + keymandesktop<num>.msi + <keyboard.kmp> to temp zip file.
-      # Create a new file that append temp zip file to setup.exe, call it keymandesktop-<version>-<keyboard>-<keyboard-version>.exe
-      # Codesign keymandesktop-<version>-<keyboard>-<keyboard-version>.exe
-      # Rsync keymandesktop-<version>-<keyboard>-<keyboard-version>.exe to https://downloads.keyman.com/keyboards/<keyboard>/<keyboard-version>/ 
-      # ** Don't use rsync to determine if incomplete. Code signing will cause bits to change in content and we really don't want to 
-      # ** refresh existing files if they have no significant changes.
-  
+  fi  
 }
 
 ##
@@ -293,9 +238,8 @@ END
 }
 
 ##
-## Clone of build_keyboards in compile.sh
+## (Tweaked clone of build_keyboards in compile.sh)
 ##
-
 function upload_keyboards {
   # $1 = path to build keyboards
   # for each keyboard, if a build.sh file exists, call it, otherwise, run the default 
@@ -345,41 +289,12 @@ function upload_keyboards {
   return 0
 }
 
-# GET https://downloads.keyman.com/api/version/windows/2.0
+############################################################################################
 
 check_latest_stable_keymandesktop
-
-# If a new stable version is present, download it into the version cache:
-
-  # GET https://downloads.keyman.com/windows/stable/<version>/setup.exe
-  # GET https://downloads.keyman.com/windows/stable/<version>/keymandesktop<num>.msi
-
 check_and_download_keymandesktop_artifacts
-
-#  echo $KEYMANDESKTOP_VERSION
-#  echo $SETUP_MD5
-#  echo $MSI_MD5
-#  echo $MSI_URL
-
-# For each package.kmp:
-
 upload_keyboards_by_target
 
-  # Test for existence of https://downloads.keyman.com/keyboards/<package>/<package-version>/<package>.kmp
-    # If not present or incomplete (by size test), then rsync keyboard.kmp to
-    # https://downloads.keyman.com/keyboards/<keyboard>/<keyboard-version>/ 
-    # ** Don't use rsync to determine if incomplete. Compiler version change will cause bits to change in content 
-    # ** and we really don't want to refresh existing files if they have no significant changes.
-    # rsync .keyboard_info as well
-  # Test for existence of https://downloads.keyman.com/keyboards/<package>/<package-version>/keymandesktop-<version>-<package>-<package-version>.exe
-    # If not present or incomplete (by size test), then:
-      # Create setup.inf
-      # Zip setup.inf + keymandesktop<num>.msi + <keyboard.kmp> to temp zip file.
-      # Create a new file that append temp zip file to setup.exe, call it keymandesktop-<version>-<keyboard>-<keyboard-version>.exe
-      # Codesign keymandesktop-<version>-<keyboard>-<keyboard-version>.exe
-      # Rsync keymandesktop-<version>-<keyboard>-<keyboard-version>.exe to https://downloads.keyman.com/keyboards/<keyboard>/<keyboard-version>/ 
-      # ** Don't use rsync to determine if incomplete. Code signing will cause bits to change in content and we really don't want to 
-      # ** refresh existing files if they have no significant changes.
-
-#? do we get identical bits on each run of a keyboard compile? I think so...  only changes if compiler version changes. 
-#? 
+############################################################################################
+# EOF
+############################################################################################
