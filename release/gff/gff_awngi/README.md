@@ -13,7 +13,7 @@ not required by Qimant.
 
 The Awngi & Xamtanga letter inventory is based on the syllabary of Dr. Alamirew Gebrehiwet which
 was submitted in the request for input for DES:5214 which later became the Ethiopian standards
-ES 781:2002.  The syllabary inn turn had a focus on Ximtanga and Xamtanga requirements.  The
+ES 781:2002.  The syllabary in turn had a focus on Ximtanga and Xamtanga requirements.  The
 inventory is believed to be suitable for Awngi as well.
 
 Links
