@@ -28,5 +28,5 @@ Todo
  * Fill in the license copyright details [note, to be included in the Keyman keyboards repo, you must use MIT license]
  * Fill in the blanks in this file
  * Update HISTORY.md to give date of first release (and any other history you want)
- * Update template.keyboard_info
+ * Update template.keyboard_info by filling in the following sections "language," "desecription," and "related" if applicable.
  
