@@ -19,13 +19,6 @@ inventory is believed to be suitable for Awngi as well.
 Links
 -----
 
- * Home          :  https://keyman.com
- * Help          :  https://help.keyman.com/keyboard/gff_awngi
-
- * Source        :  https://github.com/keymanapp/keyboards/gff_awngi
- * License       :  https://opensource.org/licenses/MIT
- * Bugs          :  https://github.com/keymanapp/keyboards/issues
-
  * Specification :  http://keyboards.ethiopic.org/specification/
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
  * Contact       :  yacob@geez.org
