@@ -3,16 +3,13 @@ Dari (CLRA) Keyboard
 
 Copyright (C) YYYY _____________________
 
-Version A.B
+Version 1.1
 
 __DESCRIPTION__
 
 Links
 -----
 
- * Home:     https://keyman.com
- * Deployed: https://s.keyman.com/keyboard/dari_clra
- * Help:     https://help.keyman.com/keyboard/dari_clra
  * Contact:  lang.support@gmail.com
 
 Supported Platforms
