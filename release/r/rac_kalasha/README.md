@@ -1,11 +1,9 @@
-Keyboard Data
--------------
+Rachitrali-Kalasha Keyboard
+===========================
 
-* Name:           Rachitrali-Kalasha
-* Copyright:      (C) 2017 Rehmat Aziz Chitrali
-* Version:        1.0
-* Keyman Version: 9.0
-* BCP-47 codes:   kls-Arab
+Copyright (C) 2017 Rehmat Aziz Chitrali
+
+Version 1.1
 
 Description
 -----------
@@ -33,16 +31,11 @@ Kalasha, including acoustic phonetics, phonology, morphology, syntax, grammar an
 Links
 -----
 
- * Home:    https://keyman.com/
- * Help:    https://help.keyman.com/keyboard/rac_kalasha
- * Contact: <rachitrali@yahoo.com>
- * Contact: <khowaracademy@yahoo.com>
+ * Contact: <rachitrali@yahoo.com> | <khowaracademy@yahoo.com>
 
 Supported Platforms
 -------------------
+
  * Windows
  * Web
  * OSX
- 
-Todo
-----
