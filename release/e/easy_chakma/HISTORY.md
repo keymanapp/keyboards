@@ -1,4 +1,4 @@
-easy_chakma Change History
+Easy Chakma Change History
 ============================
 
 1.18 (15 Aug 2017)

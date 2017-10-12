@@ -1,17 +1,16 @@
-easy_chakma keyboard
+Easy Chakma keyboard
 ======================
 
 Copyright (C) 2015-2017 Bivuti Chakma (Suz Moriz) 
 
 Version 1.18
 
-Chakma keyboard layout for Unicode
+This is the first Easy Chakma Keyboard for unicode.
 
 Links
 -----
 
  * Home:     <http://www.hilledu.com/>
- * Help:     <http://help.keyman.com/keyboard/easy_chakma>
  * Contact:  <info@ribeng.net>
 
 Supported Platforms
