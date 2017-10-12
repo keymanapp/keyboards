@@ -10,9 +10,7 @@ Dinka Unicode keyboard layout for the Dinka Language Institute, Australia.
 Links
 -----
 
- * Home:     <https://keyman.com>
- * Help:     <https://help.keyman.com/keyboard/dlia25bas>
- * Contact:  <support@keyman.com>
+ * Contact:  <lang.support@gmail.com>
 
 Supported Platforms
 -------------------
