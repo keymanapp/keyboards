@@ -118,7 +118,11 @@ store(latin_punct_out)       U+00AB U+00BB U+0028 U+0029 U+0021 U+0022 \
                              U+0040 U+002A U+002C U+00D7 U+002E U+002F \
     	                     U+005B U+005D U+200D U+200C U+002B U+002D \
     	                     U+00F7 U+003A U+2248 U+2018 U+2019 U+003B \
-    	                     U+003C U+003E
+    	                     U+003C U+003E   
+c white space, ZWSP, ZWJ
+store(spaces_key)   	   	 [K_SPACE] [SHIFT K_SPACE] [CTRL ALT K_SPACE]
+store(spaces_touch_key)      [K_SPACE] [U_0020] [U_200D] 
+store(spaces_out)    	     U+200B U+0020 U+200D             
 
 c Currency: Riel, Dollar and Euro
 
@@ -271,7 +275,11 @@ platform('web') + any(lek_attak_key)              > index(lek_attak_out,2)
 
 platform('desktop native') + any(lunar_date_key)  > index(lunar_date_out,2)
 platform('touch') + any(lunar_date_key)           > index(lunar_date_out,2)
-platform('web') + any(lunar_date_key)             > index(lunar_date_out,2)
+platform('web') + any(lunar_date_key)             > index(lunar_date_out,2)   
+
+platform('desktop native') + any(spaces_key)      > index(spaces_out,2)
+platform('touch') + any(spaces_touch_key)         > index(spaces_out,2)
+platform('web') + any(spaces_key)                 > index(spaces_out,2)
 
 c Basic rules with RALT key
 
@@ -286,9 +294,9 @@ c + any(currency_key)    > index(currency_out,1)
 c + any(digit_key)       > index(digit_out,1)
 c + any(lek_attak_key)   > index(lek_attak_out,1)
 c + any(lunar_date_key)  > index(lunar_date_out,1)
-+ [K_SPACE]            > U+200B
-+ [SHIFT K_SPACE]      > U+0020
-+ [CTRL ALT K_SPACE]   > U+00A0   
+
+c two-unicode-code-point vowels
+
 + [SHIFT K_A]          > U+17B6 U+17C6
 + [SHIFT K_V]          > U+17C1 U+17C7
 + [SHIFT K_COLON]      > U+17C4 U+17C7
@@ -379,8 +387,10 @@ c ==============================================MOBILE/TABLET TOUCH LAYOUT======
 
 + any(input_subcons) > U+17D2 index(subcons, 1)
 
-platform('touch') U+17D2 any(subcons) + [K_BKSP] > nul 	c not working
-platform('web') U+17D2 any(subcons) + [K_BKSP] > nul     c not working
+c delete a subscript (a subscript sign + a consonant) upon a backspace
+
+platform('touch') U+17D2 any(c_out) + [K_BKSP] > nul 	c not working
+platform('web') U+17D2 any(c_out) + [K_BKSP] > nul     c not working
 
 c + [K_NPSTAR]        > U+002A
 c + [SHIFT K_NPSTAR]  > U+002A

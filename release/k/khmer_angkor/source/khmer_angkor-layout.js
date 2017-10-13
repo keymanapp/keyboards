@@ -630,9 +630,9 @@
                 "sp": "0",
                 "sk": [
                   {
-                    "text": "",
-                    "id": "K_SPACE",
-                    "layer": "shift"
+                    "text": " ",
+                    "id": "U_0020",
+                    "layer": "default"
                   }
                 ]
               },
