@@ -1,4 +1,5 @@
-Change History
+
+-Change History
 =======================
 
 1.0 (20 July 2017)
@@ -28,3 +29,9 @@ The display and output on those keys were different but now are the same.
 
 Changed the U+02CA to U+0301.
 Despite the visual look of U+02CA, U+0301 was strongly advised to be used until features can be made in later releases of fonts. Then the diacritics will stack correctly and publications will look right.
+
+-----------------
+1.4 (16 Oct 2017)
+-----------------
+
+Realized that the semicolon is used in the Kayǎn orthography so added it back. It had been removed for the U+02CA value but that was a temporary fix. So now is a good time to put the semicolon back in its original place.
