@@ -48,6 +48,7 @@ function parse_args {
   DO_VALIDATE=true
   DO_BUILD=true
   DO_CODESIGN=false
+  DO_UPLOAD_ONLY=false
   TARGET=
   PROJECT_TARGET=
   FLAG_SILENT=
@@ -56,40 +57,54 @@ function parse_args {
   FLAG_TARGET=
   START=
   
+  local key
+  
   # Parse args
-  while [[ $# -gt 0 ]] ; do
-    key="$1"
-    case $key in
-      -validate)
-        DO_BUILD=false
-        ;;
-      -codesign)
-        DO_CODESIGN=true
-        ;;
-      -start)
-        shift
-        START=$1
-        ;;
-      -s)
-        FLAG_SILENT=-s
-        ;;
-      -d)
-        FLAG_DEBUG=-d
-        ;;
-      -c)
-        FLAG_CLEAN=-c
-        ;;
-      -h|-?)
-        display_usage
-        ;;
-      -t)
-        shift
-        FLAG_TARGET=-t
-        PROJECT_TARGET=$1
-        ;;
-      *)
-        TARGET=$1
-    esac
-    shift # past argument
+  for key in "$@"; do
+    echo "$key"
+    if [[ -z "$lastkey" ]]; then
+      case "$key" in
+        -upload-only)
+          DO_UPLOAD_ONLY=true
+          ;;
+        -validate)
+          DO_BUILD=false
+          ;;
+        -codesign)
+          DO_CODESIGN=true
+          ;;
+        -start)
+          lastkey=$key
+          ;;
+        -s)
+          FLAG_SILENT=-s
+          ;;
+        -d)
+          FLAG_DEBUG=-d
+          ;;
+        -c)
+          FLAG_CLEAN=-c
+          ;;
+        -h|-?)
+          display_usage
+          ;;
+        -t)
+          lastkey=$key
+          ;;
+        *)
+          TARGET="$1"
+      esac
+    else
+      case "$lastkey" in
+        -start)
+          START="$1"
+          ;;
+        -t)
+          FLAG_TARGET=-t
+          PROJECT_TARGET="$1"
+          ;;
+      esac
+      lastkey=
+    fi
   done
 }
