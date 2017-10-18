@@ -12,6 +12,7 @@ KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 JQ="$KEYBOARDROOT/tools/jq-win64.exe"
 RSYNC="$KEYBOARDROOT/tools/rsync.exe"
 CI_CACHE="$KEYBOARDROOT/.cache"
+APP7Z="/c/Program Files/7-Zip/7z.exe"
 
 . "$KEYBOARDROOT/servervars.sh"
 . "$KEYBOARDROOT/resources/util.sh"
@@ -226,8 +227,8 @@ END
     rm "$buildpath/setup.zip"
   fi
    
-  7za a "$buildpath/setup.zip" "$CI_CACHE/$KEYMANDESKTOP_VERSION/$MSI_FILENAME" "$buildpath/setup.inf" "$kmp_filename"
-  cat "$CI_CACHE/$KEYMANDESKTOP_VERSION/setup.exe" "$buildpath/setup.zip" > "$exe_filename"
+  "$APP7Z" a "$buildpath/setup.zip" "$CI_CACHE/$KEYMANDESKTOP_VERSION/$MSI_FILENAME" "$buildpath/setup.inf" "$kmp_filename" || die "Unable to build archive at $buildpath"
+  cat "$CI_CACHE/$KEYMANDESKTOP_VERSION/setup.exe" "$buildpath/setup.zip" > "$exe_filename" || die "Unable to build sfx at $buildpath"
   
   rm "$buildpath/setup.zip"
   rm "$buildpath/setup.inf"
