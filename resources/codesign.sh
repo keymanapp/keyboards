@@ -17,13 +17,13 @@ function codesign {
   if [[ "$file_extension" == "msi" ]] || [[ "$file_extension" == "msm" ]]; then
     # msi can only be single-signed, not dual-signed
     "$SIGNTOOL" sign //f "$SC_PFX_SHA256" //fd sha256 //du "$SC_URL" //p "$SC_PWD" //v //d "$SIGNNAME" "$SIGNFILE" || die "Unable to sign with sha256 $SIGNFILE"
-    codesign_timestamp "$SIGNFILE" sha256msi
+    codesign_timestamp "$SIGNFILE" sha256msi || die "Unable to timestamp $SIGNFILE"
   else
     # dual sign, first with sha1, then with sha256
     "$SIGNTOOL" sign //f "$SC_PFX_SHA1" //fd sha1 //du "$SC_URL" //p "$SC_PWD" //v //d "$SIGNNAME" "$SIGNFILE" || die "Unable to sign with sha1 $SIGNFILE"
-    codesign_timestamp "$SIGNFILE" sha1
+    codesign_timestamp "$SIGNFILE" sha1 || die "Unable to timestamp $SIGNFILE"
     "$SIGNTOOL" sign //as //f "$SC_PFX_SHA256" //fd sha256 //du "$SC_URL" //p "$SC_PWD" //v //d "$SIGNNAME" "$SIGNFILE" || die "Unable to sign with sha256 $SIGNFILE"
-    codesign_timestamp "$SIGNFILE" sha256
+    codesign_timestamp "$SIGNFILE" sha256 || die "Unable to timestamp $SIGNFILE"
   fi
 }
 
