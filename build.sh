@@ -6,7 +6,7 @@
 
 function display_usage {
   echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-t project_target] [target]"
-  exit
+  exit 1
 }
 
 # TODO: Test on macOS as well.
@@ -39,7 +39,7 @@ KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.js
 # Default is validate keyboard_info, build keyboards, don't code-sign
 #
 
-parse_args $@
+parse_args "$@"
 
 #
 # Collect filenames
@@ -63,7 +63,7 @@ if [[ "$TARGET" ]]; then
     echo "--- Only building $TARGET ---"
     build_keyboards "$TARGET"
   else
-    echo "Usage: build_keyboards [release|legacy|experimental[/k/keyboard]]"
+    display_usage
   fi
 else
   build_keyboards release
