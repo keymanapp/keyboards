@@ -12,7 +12,12 @@ KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 JQ="$KEYBOARDROOT/tools/jq-win64.exe"
 RSYNC="$KEYBOARDROOT/tools/rsync.exe"
 CI_CACHE="$KEYBOARDROOT/.cache"
-APP7Z="/c/Program Files/7-Zip/7z.exe"
+
+if [ ! -z "$SEVENZ_HOME" ]; then
+  APP7Z="$SEVENZ_HOME/7z"
+else
+  APP7Z="/c/Program Files/7-Zip/7z.exe"
+fi
 
 . "$KEYBOARDROOT/servervars.sh"
 . "$KEYBOARDROOT/resources/util.sh"
