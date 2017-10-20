@@ -1,6 +1,6 @@
 {
   "tablet": {
-    "font": "Khmer OS System",
+    "font": "Khmer OS",
     "layer": [
       {
         "id": "default",

@@ -163,7 +163,7 @@ store(v_above)         U+17B7 U+17B8 U+17B9 U+17BA \
                        U+17BE                      c These vowels are rendered above the base consonant.
 store(shiftable_c_1st) U+179F U+17A0 U+17A2        c These consonants shift to the 2nd series when adding U+17CA to them.        
 store(shiftable_c_2nd) U+1784 U+1789 U+1798 U+1799 \
-                       U+179A U+179C U+1794        c These consonants shift to the 1st series when adding U+17C9 to them. 
+                       U+179A U+179C c U+1794        c These consonants shift to the 1st series when adding U+17C9 to them. 
 store(c_2nd_combo_LO)  U+1799 U+1798 U+1784 U+1794 \
                        U+179C                      c These can be combined with U+179B to make a 2nd series consonant cluster.
 store(c_2nd_combo_MO)  U+1799 U+179B U+1784 U+179A c These can be combined with U+1798 to make a 2nd series consonant cluster. 
@@ -352,13 +352,9 @@ any(v_gen) any(v_pseudo) any(c_shifter)                > context(3) context(1) c
 any(c_shifter) any(v_any) any(c_shifter)               > context(3) context(2)            c when either a genuine or pseudo vowel is in between two consonant shifters, replace the one on the left with the one on the right.
 any(c_shifter) any(v_gen) any(v_pseudo) any(c_shifter) > context(2) context(3) context(4) c when a two-part vowel is in between two consonants shifter, replace the one on the left with the one the right.
 
-c Rotate vowels, diacritics and punctuation
+c Rotate vowels
 
 any(v_gen) any(v_gen)                     > context(2) c the last vowel stroke replaces the previous one.    
-c any(diacritic_out) any(diacritic_out)     > context(2) c the last diacritic stroke replaces the previuos one.
-c any(punct_out) any(punct_out)             > context(2) c the last punctuation stroke replaces the previous one.
-c any(latin_punct_out) any(latin_punct_out) > context(2) c the last latin punctuation stroke replaces the previous one.
-
 
 c Rotation of two-part vowels
 
@@ -636,7 +632,7 @@ U+17A7 U+17B7        > U+17B1 c ឧិ transforms to ឱ
 U+17A7 U+17CC        > U+17B1 c ឧ៌  transforms to ឱ   
 U+17A7 U+17CD        > U+17B1 c ឧ៍ transforms to ឱ   
 
-U+17D4 U+179B U+17D4 > U+17D8 c ។ល។  transforms to U+17D8  
+c U+17D4 U+179B U+17D4 > U+17D8 c ។ល។  transforms to U+17D8
 
 U+178A U+17D2 U+1792 > U+178A U+17D2 U+178B  c ដ្ធ > ដ្ឋ
 U+1791 U+17D2 U+178B > U+1791 U+17D2 U+1792  c ទ្ឋ  > ទ្ធ
