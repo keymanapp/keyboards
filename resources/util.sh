@@ -49,6 +49,7 @@ function parse_args {
   DO_BUILD=true
   DO_CODESIGN=false
   DO_UPLOAD_ONLY=false
+  DO_ZIP_ONLY=false
   TARGET=
   PROJECT_TARGET=
   FLAG_SILENT=
@@ -61,7 +62,6 @@ function parse_args {
   
   # Parse args
   for key in "$@"; do
-    echo "$key"
     if [[ -z "$lastkey" ]]; then
       case "$key" in
         -upload-only)
@@ -72,6 +72,9 @@ function parse_args {
           ;;
         -codesign)
           DO_CODESIGN=true
+          ;;
+        -zip-only)
+          DO_ZIP_ONLY=true
           ;;
         -start)
           lastkey=$key
