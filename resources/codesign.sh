@@ -2,8 +2,31 @@
 
 # Code signing functionality
 
-SERVERLIST=(http://timestamp.comodoca.com/authenticode http://timestamp.verisign.com/scripts/timstamp.dll http://timestamp.globalsign.com/scripts/timestamp.dll http://tsa.starfieldtech.com)
-RFC3161SERVERLIST=(http://timestamp.comodoca.com/rfc3161)
+SERVERLIST=(http://timestamp.comodoca.com/authenticode \
+http://timestamp.verisign.com/scripts/timstamp.dll \
+http://timestamp.globalsign.com/scripts/timestamp.dll \
+http://tsa.starfieldtech.com)
+
+RFC3161SERVERLIST=(http://sha256timestamp.ws.symantec.com/sha256/timestamp \
+http://timestamp.globalsign.com/scripts/timstamp.dll \
+http://timestamp.comodoca.com/rfc3161 \
+http://tsa.startssl.com/rfc3161 \
+http://time.certum.pl \
+http://timestamp.digicert.com)
+
+# RfC3161SERVERLIST from https://gist.github.com/Manouchehri/fd754e402d98430243455713efada710
+# Note: removed the following servers post testing for various reasons:
+#   https://timestamp.geotrust.com/tsa not available
+#   http://timestamp.verisign.com/scripts/timstamp.dll not RFC3161
+#   http://timestamp.wosign.com timed out
+#   https://freetsa.org failed
+#   http://dse200.ncipher.com/TSS/HttpTspServer hmm
+#   http://tsa.safecreative.org hmm
+#   http://zeitstempel.dfn.de hmm
+#   https://ca.signfiles.com/tsa/get.aspx is a demo server not intended for extended use
+#   http://services.globaltrustfinder.com/adss/tsa invalid response
+#   https://tsp.iaik.tugraz.at/tsp/TspRequest invalid
+#   http://timestamp.apple.com/ts01 returns okay but does not countersign validly
 
 ##
 ## Code sign a Windows PE executable or msi installer database
@@ -33,18 +56,35 @@ function codesign {
 function codesign_timestamp {
   local SIGNFILE=$1
   local MODE=$2
+  local SERVER=$3
   
-  if [[ $MODE == sha1 ]]; then
-    local SERVERS=$SERVERLIST
+  if [[ -z $SERVER ]]; then
+    if [[ $MODE == sha1 ]]; then
+      local SERVERS=${SERVERLIST[*]}
+    else
+      local SERVERS=${RFC3161SERVERLIST[*]}
+    fi
   else
-    local SERVERS=$RFC3161SERVERLIST
+    local SERVERS=($SERVER)
   fi
+  
+  #
+  # Randomize the server list so that we don't always try
+  # the same order
+  #
+  SERVERS=$(echo ${SERVERS[*]} | tr " " "\n" | shuf | tr "\n" " ")
   
   local a
   local s
   
-  for a in `seq 1 10`; do
-    for s in $SERVERS; do
+  #
+  # Retry the code signing 3 times against the server list in case of
+  # temporary network failure. After that we'll give up and fail the
+  # build
+  #
+  for a in `seq 1 3`; do
+    for s in ${SERVERS[@]}; do
+      echo Attempting to sign file with timestamp server $s
       # try to timestamp the file. This operation is unreliable and may need to be repeated...
       case $MODE in
         sha1)
