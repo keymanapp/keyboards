@@ -181,17 +181,22 @@ c
   deadkey(1) + "'" > "'"
 
 
-  + ':'     > '፡'
+      + ':' > '፡'
   '፡' + ':' > '።'
   '።' + ':' > ':'
   ':' + ':' > '፡'  c makes circular
-      + ',' > '፡'
-  '፡' + ',' > ','
+  '፡' + '+' > '፠'
+  '፡' + '#' > '፨'
+      + ',' > '፡' 
+  '፡' + ',' > '፥'
+  '፥' + ',' > ','
   ',' + ',' > '፡'  c makes circular
 
       + ';' > '፣'
-  '፣' + ';' > ';'  c makes circular
-
+  '፣' + ';' > '፤'
+  '፤' + ';' > ';'
+  ';' + ';' > '፣'  c makes circular
+      
   '፡' + '-' > '፦' 
   
   '?' + '?' > '፧'  c Eritrean use
@@ -233,6 +238,7 @@ c Ethiopic Numerals
 
   '#' + '1' > '፩'
   '#' + any(ArabOnes) > index(ones,2)
+  '#' + '#' > '#'
 
 c special cases for multiples of one
     '፩' + '0' >   '፲'
