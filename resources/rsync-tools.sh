@@ -6,7 +6,14 @@
 function rsync_to_downloads_keyman_com {
   local source=$1
   local dest=$2
+  local ignore=$3
 
+  if [[ $ignore == true ]]; then
+    ignore=--ignore-existing
+  else
+    ignore=
+  fi
+  
   #rsync_args = (
   #  '-vtrp',                                  # verbose, preserve times, recurse, permissions
   #  '--chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r',      # map Windows security to host security
@@ -19,7 +26,7 @@ function rsync_to_downloads_keyman_com {
   
   pushd $source
   
-  "$RSYNC" -vtrp --chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r --stats --rsync-path="$REMOTE_RSYNC_PATH" --rsh=ssh --ignore-existing . "$RSYNC_DEST/$dest"
+  "$RSYNC" -vtrp --chmod=Dug=rwx,Do=rx,Fug=rw,Fo=r --stats --rsync-path="$REMOTE_RSYNC_PATH" --rsh=ssh $ignore . "$RSYNC_DEST/$dest"
   
   popd
 }

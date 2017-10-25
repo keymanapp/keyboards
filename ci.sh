@@ -26,19 +26,49 @@ fi
 
 parse_args "$@"
 
-if [[ $DO_UPLOAD_ONLY == true ]]; then
-  rsync_to_downloads_keyman_com "$CI_CACHE/upload/" keyboards/
-  exit 0
-fi
+function run {
 
-if [ ! -d "$CI_CACHE" ]; then
-  mkdir "$CI_CACHE"
-fi
+  if [ ! -d "$CI_CACHE" ]; then
+    mkdir "$CI_CACHE"
+  fi
 
-if [ -d "$CI_CACHE/upload" ]; then
-  rm -rf "$CI_CACHE/upload"
+  if [[ $DO_UPLOAD_ONLY == true ]]; then
+    if [ ! -d "$CI_CACHE/upload" ]; then
+      mkdir "$CI_CACHE/upload"
+    fi
+    rsync_to_downloads_keyman_com "$CI_CACHE/upload/" keyboards/ true
+    exit 0
+  fi
+
+  if [[ $DO_ZIP_ONLY == true ]]; then
+    if [ ! -d "$CI_CACHE/data" ]; then
+      mkdir "$CI_CACHE/data"
+    fi
+    if [ ! -d "$CI_CACHE/upload" ]; then
+      mkdir "$CI_CACHE/upload"
+    fi
+    zip_keyboard_info
+    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+    exit 0
+  fi
+  
+  if [ -d "$CI_CACHE/upload" ]; then
+    rm -rf "$CI_CACHE/upload"
+  fi
   mkdir "$CI_CACHE/upload"
-fi
+
+  if [ -d "$CI_CACHE/data" ]; then
+    rm -rf "$CI_CACHE/data"
+  fi
+  mkdir "$CI_CACHE/data"
+
+  check_latest_stable_keymandesktop
+  check_and_download_keymandesktop_artifacts
+  upload_keyboards_by_target
+
+  zip_keyboard_info
+  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+}
 
 ##
 ## Calls the Keyman Desktop downloads API to determine latest stable Keyman Desktop version 
@@ -97,7 +127,7 @@ function upload_keyboards_by_target {
     upload_keyboards experimental
   fi
   
-  rsync_to_downloads_keyman_com "$CI_CACHE/upload/" keyboards/
+  rsync_to_downloads_keyman_com "$CI_CACHE/upload/" keyboards/ true
 }
 
 ##
@@ -295,11 +325,24 @@ function upload_keyboards {
   return 0
 }
 
+##
+## zips all .keyboard_info files from .cache/upload/ into .cache/data/keyboard_info.zip
+##
+
+function zip_keyboard_info {
+  # We use an @list file to give a specific list of files to
+  # 7z so that it does not include pathnames in the archive
+  # The "./" on the front of the search is also needed to force 7Z to not 
+  # include pathnames in the archive
+  local files=(./.cache/upload/*/*/*.keyboard_info)
+  printf "%s\n" "${files[@]}" > .cache/keyboard_info.list
+  "$APP7Z" a ".cache/data/keyboard_info.zip" @.cache/keyboard_info.list
+  rm .cache/keyboard_info.list
+}
+
 ############################################################################################
 
-check_latest_stable_keymandesktop
-check_and_download_keymandesktop_artifacts
-upload_keyboards_by_target
+run
 
 ############################################################################################
 # EOF
