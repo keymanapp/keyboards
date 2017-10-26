@@ -1,11 +1,9 @@
-Keyboard Data
--------------
+Rachitrali-Gawar-Bati Keyboard
+==============================
 
-* Name:           Rachitrali-Gawar-Bati
-* Copyright:      (C) 2017 Rehmat Aziz Chitrali
-* Version:        1.0
-* Keyman Version: 9.0
-* BCP-47 codes:   gwt-Arab
+Copyright (C) 2017 Rehmat Aziz Chitrali
+
+Version 1.0
 
 Description
 -----------
@@ -17,6 +15,7 @@ This is the first Gawar-Bati language keyboard created by Rehmat Aziz Chitrali, 
 The Gawar-Bati Keyboard Project(GBKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.
 
 Khowar Academy Chitral was established in April 1996 specifically to promote the endangered  languages of Chitral Pakistan. The Academy has worked extensively on Gawar-Bati linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Gawar-Bati, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
+
 Links
 -----
 
@@ -25,8 +24,7 @@ Links
 Supported Platforms
 -------------------
  * Windows
+ * macOS
  * Web
- * OSX
- 
-Todo
-----
+ * Android
+ * iOS
