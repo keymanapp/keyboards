@@ -1,11 +1,9 @@
-Keyboard Data
--------------
+ɁAreɂare Keyboard
+=================
 
-* Name:           ɁAreɂare
-* Copyright:      (C) 2017 SIL International
-* Version:        1.0
-* Keyman Version: 9.0
-* BCP-47 codes:   alu-Latn
+Copyright (C) 2017 SIL International
+
+Version 1.0
 
 Description
 -----------
@@ -22,6 +20,3 @@ Supported Platforms
  * Windows
  * Web
  * OSX
- 
-Todo
-----
