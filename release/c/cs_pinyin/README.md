@@ -7,6 +7,8 @@ Version 1.4
 
 __DESCRIPTION__
 
+This input method extension for Keyman Desktop provides input mapping for more than 100,000 Han characters, multi-character words, proper names, and place name abbreviations. Supported input conventions include Pinyin, RAD-RSC and 4-corner index (4CI).
+
 Notes
 -----
 
@@ -16,9 +18,6 @@ the DLLs when Visual Studio is present on the computer.
 Links
 -----
 
- * Home:     https://keyman.com/
- * Deployed: https://keyman.com/
- * Help:     https://help.keyman.com/keyboard/cs_pinyin
  * Contact:  support@keyman.com
 
 Supported Platforms
