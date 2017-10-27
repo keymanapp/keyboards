@@ -1,11 +1,9 @@
-Keyboard Data
--------------
+Balochi Scientific Keyboard
+===========================
 
-* Name:           Balochi Scientific
-* Copyright:      (C) SIL International
-* Version:        1.0
-* Keyman Version: 9.0
-* BCP-47 codes:   bal bcc bgn bgp
+Copyright (C) 2017 SIL International
+
+Version 1.0
 
 Description
 -----------
@@ -18,7 +16,6 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Home:     <http://keymankeyboards.com/>
  * Contact:  <support@keyman.com>
  
 Supported Platforms
@@ -29,8 +26,4 @@ Supported Platforms
  * Web
  * iOS
  * Android
-
-Todo
-----
-
-* Change "home" url when there is a release on keyman site
+ 

@@ -1,4 +1,6 @@
-﻿store(&VERSION) '9.0'
+﻿c BCP-47 codes:   bal bcc bgn bgp
+
+store(&VERSION) '9.0'
 store(&TARGETS) 'any'
 store(&NAME) 'Balochi Scientific'
 store(&BITMAP) 'balochi_scientific.ico'
@@ -8,15 +10,18 @@ store(&KMW_HELPTEXT) 'This is a Latin keyboard for transcription of Balochi lang
 store(&KEYBOARDVERSION) '1.0'
 store(&ETHNOLOGUECODE) 'bal bgp bcc bgn'
 store(&WINDOWSLANGUAGES) 'x042D'
+store(&VISUALKEYBOARD) 'balochi_scientific.kvks'
 
 group(main) using keys
 
-platform('desktop') + [K_COLON] > dk(003b) c ;
-platform('desktop') + [K_QUOTE] > dk(0027) c '
-platform('desktop') + [K_RBRKT] > dk(005d) c [
-platform('desktop') + [K_EQUAL] > dk(003d) c =
++ [K_COLON] > dk(003b) c ;
++ [K_QUOTE] > dk(0027) c '
++ [K_RBRKT] > dk(005d) c [
++ [K_EQUAL] > dk(003d) c =
 
 match > use(deadkeys)
+
+store(&LAYOUTFILE) 'balochi_scientific-layout.js'
 
 begin Unicode > use(main)
 
