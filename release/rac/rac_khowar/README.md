@@ -1,11 +1,9 @@
-Keyboard Data
--------------
+Rachitrali-Khowar Keyboard
+==========================
 
-* Name:           Rachitrali-Khowar
-* Copyright:      (C) 2016-2017 Rehmat Aziz Chitrali
-* Version:        1.0
-* Keyman Version: 9.0
-* BCP-47 codes:   khw-Arab
+Copyright (C) 2016-2017 Rehmat Aziz Chitrali
+
+Version 0.6
 
 Description
 -----------
@@ -31,14 +29,10 @@ Khowar, including acoustic phonetics, phonology, morphology, syntax, grammar and
 Links
 -----
 
- * Contact: <rachitrali@yahoo.com>
- * Contact: <khowaracademy@yahoo.com>
+ * Contact: <rachitrali@yahoo.com> or <khowaracademy@yahoo.com>
 
 Supported Platforms
 -------------------
  * Windows
  * Web
  * OSX
-
-Todo
-----

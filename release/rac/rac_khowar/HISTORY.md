@@ -10,4 +10,4 @@ Rachitrali-Khowar Change History
 
 0.5 (14-AUG-2016)
 -----------------
-* Created by Rehmat Aziz Chitrali Linguist at Khowar Academy Chitral Pakistan E-mail: rachitrali@yahoo.com
+* Created by Rehmat Aziz Chitrali Linguist at Khowar Academy Chitral Pakistan
