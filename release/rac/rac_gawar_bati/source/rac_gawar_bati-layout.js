@@ -1,6 +1,6 @@
 {
   "tablet": {
-    "font": "Arial",
+    "font": "Scheherazade",
     "layer": [
       {
         "id": "default",
@@ -563,7 +563,7 @@
         ]
       },
       {
-        "id": "ctrlalt",
+        "id": "symbols",
         "row": [
           {
             "id": 1,
@@ -701,7 +701,7 @@
               },
               {
                 "id": "K_D",
-                "text": "ﷺ"
+                "text": ""
               },
               {
                 "id": "K_F",
@@ -717,7 +717,7 @@
               },
               {
                 "id": "K_J",
-                "text": "ﷻ"
+                "text": ""
               },
               {
                 "id": "K_K",
@@ -760,7 +760,7 @@
               },
               {
                 "id": "K_C",
-                "text": "﷽"
+                "text": ""
               },
               {
                 "id": "K_V",
@@ -841,6 +841,7 @@
           }
         ]
       }
-    ]
+    ],
+    "fontsize": ""
   }
 }
