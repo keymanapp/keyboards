@@ -12,14 +12,15 @@ store(&ETHNOLOGUECODE) 'gwt'
 store(&LANGUAGE) 'x0401'
 store(&WINDOWSLANGUAGES) 'x0401'
 store(&TARGETS) 'any'
-store(&KMW_RTL) '1'
+store(&KMW_RTL) '1'                   
 store(&LAYOUTFILE) 'rac_gawar_bati-layout.js'
 store(&KEYBOARDVERSION) '1.0'
 begin Unicode > use(main)
 
 
 group(main) using keys
-+ [CTRL ALT K_PERIOD] > '|'
++ [SHIFT K_Q] > U+060F
++ [K_PERIOD] > U+0623
 + [CTRL ALT K_SLASH] > '/'
 + [SHIFT K_W] > 'ّ'
 + [CTRL ALT K_L] > '>'
@@ -27,28 +28,26 @@ group(main) using keys
 + [CTRL ALT K_COMMA] > '»'
 + [CTRL ALT K_M] > '«'
 + [SHIFT K_BKSLASH] > '|'
-+ [SHIFT K_F] > 'ؤ'
-+ [SHIFT K_LBRKT] > 'ۇ'
++ [SHIFT K_F] > U+0624
++ [SHIFT K_LBRKT] > U+06C7
 + [K_oE2] > '\'
 + [K_U] > 'ء'
 c + [CTRL ALT K_D] > 'ﷺ'
-+ [CTRL ALT K_BKSLASH] > '\'
 + [CTRL ALT K_HYPHEN] > 'ْ'
 + [SHIFT K_PERIOD] > '٫'
 + [SHIFT K_Y] > 'َ'
-+ [SHIFT K_R] > 'ڑ'
++ [SHIFT K_R] > U+0691
 + [K_SLASH] > '/'
-+ [K_BKSLASH] > 'ݭ'
-+ [K_PERIOD] > U+06D4
++ [K_BKSLASH] > U+076D    
 + [K_COMMA] > U+060C
 + [K_M] > U+0645
 + [K_N] > U+0646
 + [K_B] > U+0628
-+ [K_V] > 'ط'
++ [K_V] > U+0637
 + [K_C] > U+0686
 + [K_X] > U+0634
 + [K_Z] > U+0632
-+ [K_QUOTE] > U+0027
++ [K_QUOTE] > U+06D4
 + [K_COLON] > U+061B
 + [K_L] > U+0644
 + [K_K] > U+06A9
@@ -59,8 +58,8 @@ c + [CTRL ALT K_D] > 'ﷺ'
 + [K_D] > U+062F
 + [K_S] > U+0633
 + [K_A] > U+0627
-+ [K_RBRKT] > 'ݪ'
-+ [K_LBRKT] > 'څ'
++ [K_RBRKT] > U+076A
++ [K_LBRKT] > U+0685
 + [K_P] > U+067E
 + [K_O] > U+06C1
 + [K_I] > U+06CC
@@ -69,7 +68,7 @@ c + [CTRL ALT K_D] > 'ﷺ'
 + [K_R] > U+0631
 + [K_E] > U+0639
 + [K_W] > U+0648
-+ [K_Q] > 'ق'
++ [K_Q] > U+0642
 + [K_EQUAL] > U+003D
 + [K_HYPHEN] > U+002D
 + [K_0] > U+06F0
@@ -82,12 +81,12 @@ c + [CTRL ALT K_D] > 'ﷺ'
 + [K_3] > U+06F3
 + [K_2] > U+06F2
 + [K_1] > U+06F1 
-+ [K_BKQUOTE] > 'ڄ'
++ [K_BKQUOTE] > U+0684
 
 c shift keys
 + [SHIFT K_SLASH] > U+061F
 + [SHIFT K_G] > U+063A
-+ [SHIFT K_BKQUOTE] > 'ٸ'
++ [SHIFT K_BKQUOTE] > U+0678
 + [SHIFT K_COMMA] > '.'
 + [SHIFT K_M] > '٬'
 + [SHIFT K_N] > 'ں'
@@ -97,8 +96,8 @@ c shift keys
 + [SHIFT K_X] > U+0698
 + [SHIFT K_Z] > U+0630
 + [SHIFT K_oE2] > U+007C
-+ [SHIFT K_QUOTE] > U+0022
-+ [SHIFT K_COLON] > U+003A
++ [SHIFT K_QUOTE] > U+201D
++ [SHIFT K_COLON] >  U+201C
 + [SHIFT K_L] > U+0677
 + [SHIFT K_K] > U+062E
 + [SHIFT K_J] > U+0636
