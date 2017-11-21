@@ -118,13 +118,12 @@ c
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
 
-  'አ' + any(gIz-key)  > 'ኧ'
+  'አ' + any(gIz-key)  > 'እ'
   'አ' + any(kaIb-key) > 'ኡ'
   'አ' + any(sals-key) > 'ኢ'
 c 'አ' + any(rabI-key) > 'ኣ'
   'ኢ' + any(gIz-key)  > 'ኤ'
   'አ' + any(sabI-key) > 'ኦ'
-  'ኧ' + any(gIz-key)  > 'እ'
 
 c Aynu-A Vowels as Regular Sylalbles
   'እ' + any(gIz-key)  > 'ዕ'
@@ -185,19 +184,21 @@ c
   deadkey(1) + "'" > "'"
 
 
-  + ':'     > '፡'
+      + ':' > '፡'
   '፡' + ':' > '።'
   '።' + ':' > ':'
   ':' + ':' > '፡'  c makes circular 
-  
+  '፡' + '+' > '፠'
+  '፡' + '#' > '፨'
       + ',' > '፡'
   '፡' + ',' > '፥' 
   '፥' + ',' > ','
   ',' + ',' > '፡'  c makes circular
 
       + ';' > '፣'
-  '፣' + ';' > '፤'  
-  '፤' + ';' > ';'  c makes circular
+  '፣' + ';' > '፤'
+  '፤' + ';' > ';'
+  ';' + ';' > '፣'  c makes circular
 
   '፡' + '-' > '፦'
 
