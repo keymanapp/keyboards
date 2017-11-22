@@ -136,7 +136,7 @@ c Aynu-A Vowels as Vowels
 
 c Completing the Tigrinya-ER "a" chain:
 c Tigrinya-ER: ኣ -> ዓ -> ዐ -> አ
-  'አ' + any(rabI-key) > 'ዓ'
+  'ኣ' + any(rabI-key) > 'ዓ'
   'ዓ' + any(rabI-key) > 'ዐ' deadkey(1)
   'ዐ' deadkey(1) + any(rabI-key) > 'አ'
 
@@ -241,6 +241,7 @@ c Ethiopic Numerals
 
   '#' + '1' > '፩'
   '#' + any(ArabOnes) > index(ones,2)
+  '#' + '#' > '#'
 
 c special cases for multiples of one
     '፩' + '0' >   '፲'
