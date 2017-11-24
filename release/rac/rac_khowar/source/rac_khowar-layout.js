@@ -579,9 +579,8 @@
                 "layer": "default"
               },
               {
-                "id": "K_BKSLASH",
-                "text": "|",
-                "layer": "shift"
+                "id": "U_007C",
+                "text": "|"
               },
               {
                 "id": "U_06A8",
@@ -650,9 +649,8 @@
                 ]
               },
               {
-                "id": "K_EQUAL",
-                "text": "+",
-                "layer": "shift"
+                "id": "U_002B",
+                "text": "+"
               },
               {
                 "id": "U_060C",
@@ -663,8 +661,8 @@
                 "text": "؟"
               },
               {
-                "id": "U_06AF",
-                "text": "ݩگ"
+                "id": "U_0769",
+                "text": "ݩ"
               },
               {
                 "id": "K_BKSP",
