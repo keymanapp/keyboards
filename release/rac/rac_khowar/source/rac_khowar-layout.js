@@ -104,6 +104,7 @@
               {
                 "id": "K_SHIFT",
                 "text": "*Shift*",
+                "width": "100",
                 "sp": "1",
                 "nextlayer": "shift"
               },
@@ -319,6 +320,7 @@
               {
                 "id": "K_SHIFT",
                 "text": "*Shift*",
+                "width": "100",
                 "sp": "2",
                 "nextlayer": "default"
               },
@@ -399,6 +401,7 @@
               {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
+                "width": "100",
                 "sp": "1"
               }
             ]
@@ -600,7 +603,7 @@
               {
                 "id": "K_LBRKT",
                 "text": "[",
-                "pad": "110",
+                "pad": "130",
                 "sk": [
                   {
                     "id": "U_00AB",

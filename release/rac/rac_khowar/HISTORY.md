@@ -4,7 +4,7 @@ Rachitrali-Khowar Change History
 0.6 (14 August 2017)
 -----------------
 
-* Added web and Android support
+* Added web, iOS and Android support
 * Moved to Github
 
 
