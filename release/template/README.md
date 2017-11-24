@@ -34,7 +34,7 @@ Todo
   * Fill in a description of the keyboard
   * Fill in the Links information (or delete the line if it doesn't apply)
   * Delete any platforms under the "Supported Platforms" section that your keyboard files do not support. The result should agree with the "store(&TARGETS)" information in the .kmn file. (If "store(&TARGETS)" is "any", then leave all the platforms in the list.)
-* Update the LISCENSE.md file with the same copyright information used in the README.md file [note, to be included in the Keyman keyboards repo, you must use MIT license]
+* Update the LICENSE.md file with the same copyright information used in the README.md file [note, to be included in the Keyman keyboards repo, you must use MIT license]
 * Update HISTORY.md to give date of first release (and any other history you want)
-* Update template.keyboard_info by filling in the following sections "language," "desecription," and "related" if applicable. For the details of the specification of .keyboard_info file, please visit: https://help.keyman.com/developer/cloud/keyboard_info/1.0/ .
+* Update template.keyboard_info by filling in the following sections "language," "description," and "related" if applicable. For the details of the specification of .keyboard_info file, please visit: https://help.keyman.com/developer/cloud/keyboard_info/1.0/ .
  
