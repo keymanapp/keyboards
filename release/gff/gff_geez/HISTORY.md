@@ -1,4 +1,4 @@
-# Ge'ez Change History
+# ግዕዝ (Ge'ez) Change History
 
 ## 2017-09-02 1.1
 * "#[0-9]" mappings added to enter Arabic (Westernized) numerals.
