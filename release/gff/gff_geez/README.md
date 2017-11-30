@@ -1,5 +1,5 @@
-Ge'ez Keyboard
-=====================
+ግዕዝ (Ge'ez) Keyboard
+====================
 
 Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 
