@@ -1,4 +1,4 @@
-NW Iranian Latin Change History
+Lazuri Change History
 ===============================
 
 1.0 (Dec 1 2017)
