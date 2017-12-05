@@ -1,5 +1,5 @@
-Tigrinya Keyboard for Ethiopian Conventions
-===========================================
+ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions)
+==========================================================
 
 Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 
