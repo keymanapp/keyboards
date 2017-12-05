@@ -1,5 +1,5 @@
-ትግርኛ-ኤርትራ (Eritrean Tigrinya) Keyboard
-========================================
+ትግርኛ-ኤርትራ (Tigrinya Keyboard for Eritrean Conventions)
+========================================================
 
 Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 
