@@ -1,5 +1,5 @@
-Tigrinya Keyboard
-=====================
+Eritrean Tigrinya (ትግርኛ-ኤርትራ) Keyboard
+======================================
 
 Copyright (C) 2009-2017 Ge'ez Frontier Foundation
 
