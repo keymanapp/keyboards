@@ -80,7 +80,7 @@
               {
                 "id": "U_0642",
                 "text": "ق",
-                "pad": "110",
+                "pad": "130",
                 "width": "100"
               },
               {
@@ -132,6 +132,12 @@
                 "id": "U_0658",
                 "text": "٘",
                 "width": "100"
+              },
+              {
+                "id": "T_SPACER",
+                "text": "",
+                "width": "10",
+                "sp": "10"
               }
             ]
           },
@@ -141,7 +147,7 @@
               {
                 "id": "U_0627",
                 "text": "ا",
-                "pad": "110",
+                "pad": "130",
                 "width": "100"
               },
               {
@@ -193,6 +199,12 @@
                 "id": "U_0027",
                 "text": "'",
                 "width": "100"
+              },
+              {
+                "id": "T_SPACER",
+                "text": "",
+                "width": "10",
+                "sp": "10"
               }
             ]
           },
@@ -203,7 +215,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "150",
-                "sp": 1
+                "sp": "2",
+                "nextlayer": "shift"
               },
               {
                 "id": "U_0632",
@@ -257,7 +270,7 @@
                 "id": "K_BKSP",
                 "text": "*BkSp*",
                 "width": "150",
-                "sp": 1
+                "sp": "2"
               }
             ]
           },
@@ -268,25 +281,26 @@
                 "id": "K_LCONTROL",
                 "text": "*Symbol*",
                 "width": "150",
-                "sp": 1,
-                "nextlayer": "ctrl-alt"
+                "sp": "2",
+                "nextlayer": "symbols"
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
                 "width": "120",
-                "sp": 1
+                "sp": "2"
               },
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "920"
+                "width": "920",
+                "sp": "2"
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
                 "width": 145,
-                "sp": 1
+                "sp": "2"
               }
             ]
           }
@@ -368,7 +382,7 @@
               {
                 "id": "U_0681",
                 "text": "ځ",
-                "pad": "110"
+                "pad": "130"
               },
               {
                 "id": "U_0698",
@@ -409,6 +423,12 @@
               {
                 "id": "U_06D3",
                 "text": "ۓ"
+              },
+              {
+                "id": "T_SPACER",
+                "text": "",
+                "width": "10",
+                "sp": "10"
               }
             ]
           },
@@ -418,7 +438,7 @@
               {
                 "id": "U_0622",
                 "text": "آ",
-                "pad": "110"
+                "pad": "130"
               },
               {
                 "id": "U_0635",
@@ -460,6 +480,12 @@
                 "id": "K_BKSLASH",
                 "text": "|",
                 "layer": "shift"
+              },
+              {
+                "id": "T_SPACER",
+                "text": "",
+                "width": "10",
+                "sp": "10"
               }
             ]
           },
@@ -470,7 +496,7 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "150",
-                "sp": 1,
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
@@ -517,7 +543,7 @@
                 "id": "K_BKSP",
                 "text": "*BkSp*",
                 "width": "150",
-                "sp": 1
+                "sp": "2"
               }
             ]
           },
@@ -528,32 +554,33 @@
                 "id": "K_LCONTROL",
                 "text": "*Symbol*",
                 "width": "150",
-                "sp": 1,
-                "nextlayer": "ctrl-alt"
+                "sp": "2",
+                "nextlayer": "symbols"
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
                 "width": "120",
-                "sp": 1
+                "sp": "2"
               },
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "920"
+                "width": "920",
+                "sp": "2"
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
                 "width": 145,
-                "sp": 1
+                "sp": "2"
               }
             ]
           }
         ]
       },
       {
-        "id": "ctrl-alt",
+        "id": "symbols",
         "row": [
           {
             "id": 1,
@@ -616,6 +643,12 @@
               {
                 "id": "U_0652",
                 "text": "ْ"
+              },
+              {
+                "id": "T_SPACER",
+                "text": "",
+                "width": "10",
+                "sp": "10"
               }
             ]
           },
@@ -669,6 +702,12 @@
                 "id": "K_RBRKT",
                 "text": "]",
                 "layer": "default"
+              },
+              {
+                "id": "T_SPACER",
+                "text": "",
+                "width": "10",
+                "sp": "10"
               }
             ]
           },
@@ -676,15 +715,10 @@
             "id": 3,
             "key": [
               {
-                "id": "K_SHIFT",
-                "text": "*Shift*",
-                "width": "150",
-                "sp": 1,
-                "nextlayer": "shift"
-              },
-              {
                 "id": "U_060F",
-                "text": "؏"
+                "text": "؏",
+                "pad": "160",
+                "width": ""
               },
               {
                 "id": "U_0603",
@@ -727,7 +761,7 @@
                 "id": "K_BKSP",
                 "text": "*BkSp*",
                 "width": "150",
-                "sp": 1
+                "sp": "2"
               }
             ]
           },
@@ -738,25 +772,26 @@
                 "id": "K_LCONTROL",
                 "text": "*abc*",
                 "width": "150",
-                "sp": 1,
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
                 "width": "120",
-                "sp": 1
+                "sp": "2"
               },
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": 930
+                "width": "920",
+                "sp": "2"
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
                 "width": 145,
-                "sp": 1
+                "sp": "2"
               }
             ]
           }
