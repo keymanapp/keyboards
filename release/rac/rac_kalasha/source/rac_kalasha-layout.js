@@ -215,7 +215,7 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "150",
-                "sp": "2",
+                "sp": "1",
                 "nextlayer": "shift"
               },
               {
@@ -270,7 +270,7 @@
                 "id": "K_BKSP",
                 "text": "*BkSp*",
                 "width": "150",
-                "sp": "2"
+                "sp": "1"
               }
             ]
           },
@@ -281,26 +281,26 @@
                 "id": "K_LCONTROL",
                 "text": "*Symbol*",
                 "width": "150",
-                "sp": "2",
+                "sp": "1",
                 "nextlayer": "symbols"
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
                 "width": "120",
-                "sp": "2"
+                "sp": "1"
               },
               {
                 "id": "K_SPACE",
                 "text": "",
                 "width": "920",
-                "sp": "2"
+                "sp": "1"
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
                 "width": 145,
-                "sp": "2"
+                "sp": "1"
               }
             ]
           }
@@ -496,7 +496,7 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "150",
-                "sp": "2",
+                "sp": "1",
                 "nextlayer": "default"
               },
               {
@@ -543,7 +543,7 @@
                 "id": "K_BKSP",
                 "text": "*BkSp*",
                 "width": "150",
-                "sp": "2"
+                "sp": "1"
               }
             ]
           },
@@ -554,26 +554,26 @@
                 "id": "K_LCONTROL",
                 "text": "*Symbol*",
                 "width": "150",
-                "sp": "2",
+                "sp": "1",
                 "nextlayer": "symbols"
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
                 "width": "120",
-                "sp": "2"
+                "sp": "1"
               },
               {
                 "id": "K_SPACE",
                 "text": "",
                 "width": "920",
-                "sp": "2"
+                "sp": "1"
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
                 "width": 145,
-                "sp": "2"
+                "sp": "1"
               }
             ]
           }
@@ -761,7 +761,7 @@
                 "id": "K_BKSP",
                 "text": "*BkSp*",
                 "width": "150",
-                "sp": "2"
+                "sp": "1"
               }
             ]
           },
@@ -772,26 +772,26 @@
                 "id": "K_LCONTROL",
                 "text": "*abc*",
                 "width": "150",
-                "sp": "2",
+                "sp": "1",
                 "nextlayer": "default"
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
                 "width": "120",
-                "sp": "2"
+                "sp": "1"
               },
               {
                 "id": "K_SPACE",
                 "text": "",
                 "width": "920",
-                "sp": "2"
+                "sp": "1"
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
                 "width": 145,
-                "sp": "2"
+                "sp": "1"
               }
             ]
           }
