@@ -1,6 +1,10 @@
 Torwali Change History
 =======================
 
+0.7 (11 Dec 2017)
+-----------------
+* Changed two keystrokes (added support for U+0654 and U+06D4)
+
 0.6 (20 Jan 2017)
 -----------------
 
