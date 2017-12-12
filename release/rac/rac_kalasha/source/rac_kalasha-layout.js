@@ -318,53 +318,43 @@
               },
               {
                 "id": "K_1",
-                "text": "1",
-                "layer": "default"
+                "text": "1"
               },
               {
                 "id": "K_2",
-                "text": "2",
-                "layer": "default"
+                "text": "2"
               },
               {
                 "id": "K_3",
-                "text": "3",
-                "layer": "default"
+                "text": "3"
               },
               {
                 "id": "K_4",
-                "text": "4",
-                "layer": "default"
+                "text": "4"
               },
               {
                 "id": "K_5",
-                "text": "5",
-                "layer": "default"
+                "text": "5"
               },
               {
                 "id": "K_6",
-                "text": "6",
-                "layer": "default"
+                "text": "6"
               },
               {
                 "id": "K_7",
-                "text": "7",
-                "layer": "default"
+                "text": "7"
               },
               {
                 "id": "K_8",
-                "text": "8",
-                "layer": "default"
+                "text": "8"
               },
               {
                 "id": "K_9",
-                "text": "9",
-                "layer": "default"
+                "text": "9"
               },
               {
                 "id": "K_0",
-                "text": "0",
-                "layer": "default"
+                "text": "0"
               },
               {
                 "id": "K_HYPHEN",
@@ -586,59 +576,50 @@
             "id": 1,
             "key": [
               {
-                "id": "K_BKQUOTE",
+                "id": "U_0060",
                 "text": "`",
-                "pad": "55",
-                "nextlayer": "default"
+                "pad": "55"
               },
               {
-                "id": "K_1",
-                "text": "!",
-                "layer": "shift"
+                "id": "U_0021",
+                "text": "!"
               },
               {
-                "id": "K_2",
-                "text": "@",
-                "layer": "shift"
+                "id": "U_0040",
+                "text": "@"
               },
               {
-                "id": "K_3",
-                "text": "#",
-                "layer": "shift"
+                "id": "U_0023",
+                "text": "#"
               },
               {
                 "id": "U_0651",
                 "text": "ّ"
               },
               {
-                "id": "K_5",
-                "text": "%",
-                "layer": "shift"
+                "id": "U_0025",
+                "text": "%"
               },
               {
-                "id": "K_6",
+                "id": "U_005E",
                 "text": "^",
                 "layer": "shift"
               },
               {
-                "id": "K_7",
-                "text": "&",
-                "layer": "shift"
+                "id": "U_0026",
+                "text": "&"
               },
               {
-                "id": "K_8",
-                "text": "*",
-                "layer": "shift"
+                "id": "U_002A",
+                "text": "*"
               },
               {
-                "id": "K_9",
-                "text": "(",
-                "layer": "shift"
+                "id": "U_0028",
+                "text": "("
               },
               {
-                "id": "K_0",
-                "text": ")",
-                "layer": "shift"
+                "id": "U_0029",
+                "text": ")"
               },
               {
                 "id": "U_0652",
@@ -694,14 +675,12 @@
                 "pad": ""
               },
               {
-                "id": "K_LBRKT",
-                "text": "[",
-                "layer": "default"
+                "id": "U_005B",
+                "text": "["
               },
               {
-                "id": "K_RBRKT",
-                "text": "]",
-                "layer": "default"
+                "id": "U_005D",
+                "text": "]"
               },
               {
                 "id": "T_SPACER",
@@ -753,9 +732,8 @@
                 "text": "ؒ"
               },
               {
-                "id": "K_BKSLASH",
-                "text": "\\",
-                "layer": "default"
+                "id": "U_005C",
+                "text": "\\"
               },
               {
                 "id": "K_BKSP",
