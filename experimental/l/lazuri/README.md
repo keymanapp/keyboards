@@ -1,8 +1,8 @@
 Keyboard Data
 -------------
 
-* Name:           Lazuri (Lazca) Klavye
-* Copyright:      (C) HERdilDER Derneği
+* Name:           Lazca (Lazuri) Klavye
+* Copyright:      (C) 2017 HERdilDER Derneği
 * Version:        1.0
 * Keyman Version: 9.0
 * BCP-47 codes:   lzz
@@ -10,7 +10,7 @@ Keyboard Data
 Description
 -----------
 
-This keyboard layout is designed for typing in Lazuri. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item.   
+Türkçe klavyeye dayanan Lazca klavye. This keyboard layout is designed for typing in Lazuri.
 
 Links
 -----

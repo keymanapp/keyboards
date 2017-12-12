@@ -1,6 +1,6 @@
-Lazuri Change History
+Lazca (Lazuri) Değişiklik Geçmişi
 ===============================
 
 1.0 (Dec 1 2017)
 -----------------
-Initial version
+İlk sürüm
