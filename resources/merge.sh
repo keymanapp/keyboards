@@ -14,12 +14,8 @@ function merge_keyboard_info {
   
   cp "$keyboard_info" "build/$keyboard_info" || die
   
-  # Need to call into something that reads the .kmp/.kmx and .js data ... yeesh
-  
-  #
-  # Call nodejs to load data from .kmp's kmp.inf into a variable
-  # And load the .js data at the same time
-  #
+  # Need to call into kmcomp to read the .kmp/.kmx and .js data
+  # and merge the compiled data with the source keyboard_info data
   
   #
   # We can try and deduce packageFilename and jsFilename
@@ -32,7 +28,7 @@ function merge_keyboard_info {
       keyboard_info_packageFilename=`basename "${packages[0]}"`
     fi
   fi
-  
+    
   if [ ! -n "$keyboard_info_jsFilename" ]; then
     # See if a .js file exists in the build/ folder, ignore the obsolete _load file
     local jsfiles=(build/*.js)
@@ -71,6 +67,11 @@ function merge_keyboard_info {
   
   if [[ $group == release && $shortname != packages ]]; then
     pValidateId=-m-validate-id
+  fi
+  
+  if [[ -z "$pInKmp" && -z "$pInJs" ]]; then
+    echo Failure: neither a .kmp nor a .js were found for this folder
+    return 1
   fi
   
   $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" "$pOut" || die "Failed to merge keyboard_info for $1"
