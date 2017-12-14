@@ -12,7 +12,7 @@ The keyboard layout is described in terms of an IPA chart rather than a keyboard
 Links
 -----
  * Web: http://scripts.sil.org/IPAhome
- * Contact:  support@keyman.com
+ * Contact:  fonts@sil.org
 
 Supported Platforms
 -------------------
