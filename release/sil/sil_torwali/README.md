@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Torwali
 * Copyright:      (C) SIL International
-* Version:        0.6
+* Version:        0.7
 * Keyman Version: 9.0
 * BCP-47 codes:   trw-Arab
 
