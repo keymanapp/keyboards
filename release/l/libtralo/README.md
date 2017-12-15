@@ -10,11 +10,6 @@ __DESCRIPTION__
 
 The LIBTRALO (Liberian Translation & Literacy Organization) keyboard was designed to be used for all Liberian and Sierra Leonean languages. 
 
-Links
------
-
- * Contact:  support@keyman.com
-
 Supported Platforms
 -------------------
  * Windows
