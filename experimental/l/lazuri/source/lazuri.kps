@@ -1,58 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>9.0.526.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.977.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram/>
-    <ReadMeFile>..\README.md</ReadMeFile>
+    <ExecuteProgram></ExecuteProgram>
     <GraphicFile>herdilder.bmp</GraphicFile>
-    <MSIFileName>C:\Users\matthias\Downloads\keymandesktop90_9.0.528.0.msi</MSIFileName>
-    <MSIOptions/>
+    <MSIFileName>C:\Users\matthias\Downloads\keymandeveloper100.msi</MSIFileName>
+    <MSIOptions></MSIOptions>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL/>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL/>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL/>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
-    <Folder/>
+    <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
     <Version URL="">1.0</Version>
     <Name URL="">Lazca Klavye</Name>
     <Copyright URL="">© 2017 HERdilDER</Copyright>
-    <Author URL="mailto:bilgi@herdilder.org"/>
+    <Author URL="mailto:bilgi@herdilder.org"></Author>
     <WebSite URL="http://www.herdilder.org/tr/">http://www.herdilder.org/tr/</WebSite>
   </Info>
   <Files>
     <File>
       <Name>..\build\lazuri.kmx</Name>
-      <Description>Keyboard Lzz</Description>
+      <Description>Keyboard Lazca Klavye</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>	
+    </File>
     <File>
       <Name>..\build\lazuri.kvk</Name>
       <Description>File lazuri.kvk</Description>
@@ -70,7 +45,7 @@
       <Description>File Lazca_Lazuri_Q_Klavye.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
-    </File>	
+    </File>
     <File>
       <Name>locale-tur.xml</Name>
       <Description>File locale-tur.xml</Description>
@@ -84,5 +59,15 @@
       <FileType>.bmp</FileType>
     </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Lazca (Lazuri) Klavye</Name>
+      <ID>lazuri</ID>
+      <Version>1.0</Version>
+      <Languages>
+        <Language ID="lzz">lzz</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
