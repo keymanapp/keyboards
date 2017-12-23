@@ -13,7 +13,7 @@ Links
 
  * Specification :  http://keyboards.ethiopic.org/specification/
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
- * Contact:  yacob@geez.org
+ * Contact       :  yacob@geez.org
 
 Supported Platforms
 -------------------
