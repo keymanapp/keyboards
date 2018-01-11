@@ -18,7 +18,7 @@ multiple keyboards share the same prefix indicating provenance, for example `sil
 First, read the guide! <https://help.keyman.com/developer/keyboards/>
 
 Keyman Developer 10.0 is recommended to edit these files. <https://keyman.com/developer>
- 
+
 ## Building Keyboards
 
 ### Prerequisites
@@ -52,6 +52,11 @@ Linux, macOS:
 
 * Each keyboard also includes a project file which can be used to build the project - either from the command line 
   kmcomp compiler, or from the Keyman Developer IDE.
+
+## Deprecated keyboards
+
+If a keyboard has been replaced by another keyboard, include a DEPRECATED.md file in the folder referencing the 
+new keyboard name.
 
 ## Common links
 
