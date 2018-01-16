@@ -1,7 +1,7 @@
 Hausa Keyboard
 =====================
 
-Copyright (C) Hamza Sulayman
+Copyright © 2017 Hamza Sulayman
 Version 1.0
 
 Wannan shi ne keyboard mafi sauƙin amfani wajen iya shigar da harshen Hausa a bisa tsarin keyboard na QWERTY (US).
