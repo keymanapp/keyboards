@@ -14,7 +14,8 @@ function build_keyboards {
   local group=$1
   local excluded_folders=" shared packages template "
   
-  echo "Building keyboards for $1"
+  echo "$ACTION_VERB keyboards for $1"
+
   local shortname
   for shortname in "$KEYBOARDROOT/$group/"*/ ; do
     local base_shortname=$(basename "$shortname")
@@ -28,7 +29,7 @@ function build_keyboards {
       if [[ "$base_shortname" < "$START" ]]; then
         echo "- Skipping folder $group/$base_shortname, before $START"
       else
-        echo "- Building $group/$base_shortname"
+        echo "- $ACTION_VERB $group/$base_shortname"
         local keyboard
         for keyboard in "$shortname"*/ ; do
           build_keyboard "$group" "$keyboard"
@@ -43,7 +44,7 @@ function build_keyboards {
   #
   
   if [ -d "$KEYBOARDROOT/$group/packages" ]; then
-    echo "- Building $group/packages"
+    echo "- $ACTION_VERB $group/packages"
     local package
     for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
       build_keyboard "$group" "$package"
@@ -63,11 +64,7 @@ function build_keyboard {
   local base_keyboard=$(basename "$keyboard")
   local shortname=$(basename $(dirname "$keyboard"))
   
-  if [ "$DO_BUILD" = false ]; then
-    echo "Validating $base_keyboard"
-  else
-    echo "Building $base_keyboard"
-  fi
+  echo "$ACTION_VERB $base_keyboard"
 
   pushd "$keyboard"
   
@@ -128,6 +125,11 @@ function build_keyboard {
     fi
   fi
   
+  if [[ ! -z "$FLAG_CLEAN" ]]; then
+    popd
+    return 0
+  fi
+  
   #
   # Copy the documentation file manually
   #
@@ -164,15 +166,28 @@ function build_keyboard {
 function copy_keyboard {
   local keyboard=$1
   local base_keyboard=$(basename "$keyboard")
+
+  if [[ ! -z "$FLAG_CLEAN" ]]; then
+    echo "Cleaning keyboard $keyboard"
+  else
+    echo "Copying keyboard $keyboard"
+  fi
   
-  echo "Copying keyboard $keyboard"
-    
   # Clean build folder
   
   if [[ -d build ]]; then
     rm -rf build/ || die
   fi
+
+  if [[ ! -z "$FLAG_CLEAN" ]]; then
+    return 0
+  fi
+  
+  # Recreate build folder
+
   mkdir build || die "Failed to create build folder for $keyboard"
+  
+  
   
   # Copy the target files
   
@@ -198,7 +213,7 @@ function copy_keyboard {
 function build_release_keyboard {
   local keyboard=$1
   local base_keyboard=$(basename "$keyboard")
-  echo "Building keyboard $1"
+  echo "$ACTION_VERB keyboard $1"
   
   local kpj="$base_keyboard.kpj"
 
@@ -207,6 +222,13 @@ function build_release_keyboard {
   if [[ -d build ]]; then
     rm -rf build/ || die
   fi
+  
+  if [[ ! -z "$FLAG_CLEAN" ]]; then
+    return 0
+  fi
+  
+  # Recreate build folder
+  
   mkdir build || die "Failed to create build folder for $keyboard"
   
   $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
