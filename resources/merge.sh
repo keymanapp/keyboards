@@ -9,8 +9,9 @@ function merge_keyboard_info {
   local keyboard_info=$1
   local group=$2
   local shortname=$3
+  local base_keyboard=$4
   
-  echo "Merging $keyboard_info"
+  echo "Merging $keyboard_info for $base_keyboard"
   
   cp "$keyboard_info" "build/$keyboard_info" || die
   
@@ -22,23 +23,16 @@ function merge_keyboard_info {
   #
    
   if [ ! -n "$keyboard_info_packageFilename" ]; then
-    # See if a .kmp file exists in the build/ folder
-    local packages=(build/*.kmp)
-    if [ -f "${packages[0]}" ]; then
-      keyboard_info_packageFilename=`basename "${packages[0]}"`
+    # See if a name.kmp file exists in the build/ folder
+    if [ -f "build/$base_keyboard.kmp" ]; then
+      keyboard_info_packageFilename=$base_keyboard.kmp
     fi
   fi
     
   if [ ! -n "$keyboard_info_jsFilename" ]; then
-    # See if a .js file exists in the build/ folder, ignore the obsolete _load file
-    local jsfiles=(build/*.js)
-    if [[ "${jsfiles[0]}" == *_load.js ]]; then
-      jsfile="${jsfiles[1]}"
-    else
-      jsfile="${jsfiles[0]}"
-    fi
-    if [ -f "$jsfile" ]; then
-      keyboard_info_jsFilename=`basename "$jsfile"`
+    # See if a name.js file exists in the build/ folder
+    if [ -f "build/$base_keyboard.js" ]; then
+      keyboard_info_jsFilename=$base_keyboard.js
     fi
   fi
   
