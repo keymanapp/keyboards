@@ -42,6 +42,18 @@ KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.js
 parse_args "$@"
 
 #
+#
+#
+
+if [ "$DO_BUILD" = false ]; then
+  ACTION_VERB=Validating
+elif [[ ! -z "$FLAG_CLEAN" ]]; then
+  ACTION_VERB=Cleaning
+else
+  ACTION_VERB=Building
+fi
+
+#
 # Collect filenames
 #
 
