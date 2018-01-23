@@ -1,0 +1,157 @@
+﻿c DLIA Dinka Basic
+c 
+c Keyboard layout (formerly dlia25bas) designed for Dinka.
+c Created for DLIA (Dinka Language Institute, Australia)
+c
+c Andrew Cunningham    2005-08-10
+c andrewc AT vicnet.net.au
+c 
+
+store(&VERSION) '9.0'
+store(&KEYBOARDVERSION) '2.6'
+c store(&Bitmap) "dlia2.bmp"
+store(&COPYRIGHT) '© 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia'
+store(&Message) "Dinka Unicode keyboard layout for the Dinka Language Institute, Australia."
+store(&Name) "Dinka Basic (DLIA)"
+store(&VISUALKEYBOARD) 'el_dinka.kvk'
+c store(&TARGETS) 'any windows'
+
+begin Unicode > use(select)
+  
+store(vowels) "aeioAEIO"
+store(breathy) U+00E4 U+00EB U+00EF U+00F6 U+00C4 U+00CB U+00CF U+00D6
+store(extvowels) U+025B U+0190 U+0254 U+0186 
+store(dia) ";:"
+store(non_dia) " bcdfghjklmnpqrstuvwxyzBCDFGHJKLMNPQRSTUVWXYZ`~1234567890-=!@#$%^&*()_+[]\{}|,./<>?';:" '"' U+014b U+014a U+0263 U+0194 U+00e4 U+00c4 U+00eb U+00cb U+00ef U+00cf U+00f6 U+00d6 U+0308
+store(non_dia_final) "iIuU"
+ 
+group(select) using keys 
+
+c 
+c RALT key sequences
+c 
++ [CTRL ALT K_COLON] > U+2018
++ [CTRL ALT K_QUOTE] > U+2019
++ [CTRL ALT K_LBRKT] > U+201C
++ [CTRL ALT K_RBRKT] > U+201D
++ [CTRL ALT K_HYPHEN] > U+2013
++ [SHIFT CTRL ALT K_HYPHEN] > U+2014
++ [CTRL ALT K_C] > U+00A9
++ [CTRL ALT K_R] > U+00AE
++ [CTRL ALT K_SLASH] > U+2026
++ [CTRL ALT K_COMMA] > U+2039 
++ [CTRL ALT K_PERIOD] > U+203A 
++ [SHIFT CTRL ALT K_COMMA] > U+00AB 
++ [SHIFT CTRL ALT K_PERIOD] > U+00BB
++ [CTRL ALT K_T] > U+2122
++ [CTRL ALT K_4] > U+00A3
++ [CTRL ALT K_E] > U+20AC     
+
+c 
+c CTRL ALT key sequences
+c for displaced base Latin charcaters
+c 
++ [CTRL ALT K_Q] > U+0071
++ [CTRL ALT K_X] > U+0078
++ [CTRL ALT K_S] > U+0073
++ [CTRL ALT K_F] > U+0066
++ [CTRL ALT K_Z] > U+007A
++ [SHIFT CTRL ALT K_Q] > U+0051
++ [SHIFT CTRL ALT K_S] > U+0053
++ [SHIFT CTRL ALT K_F] > U+0046
++ [SHIFT CTRL ALT K_X] > U+0058
++ [SHIFT CTRL ALT K_Z] > U+005A
+
+c 
+c Backspace key logic for breathy and long breathy vowels
+c 
+any(breathy) + [K_BKSP] > nul
+any(extvowels) U+0308 + [K_BKSP] > nul
+any(breathy) any(breathy) + [K_BKSP] > context(1)
+any(extvowels) U+0308 any(extvowels) U+0308 + [K_BKSP] > context(1) context(2)
+
+any(breathy) + [SHIFT K_BKSP] > index(vowels,1)
+any(extvowels) U+0308 + [SHIFT K_BKSP] > context(1)  
+any(breathy) any(breathy) + [SHIFT K_BKSP] > index(vowels,1) index(vowels,2)
+any(extvowels) U+0308 any(extvowels) U+0308 + [SHIFT K_BKSP] > context(1) context(3)
+
+any(breathy) + [CTRL K_BKSP] > nul
+any(extvowels) U+0308 + [CTRL K_BKSP] > nul
+any(breathy) any(breathy) + [CTRL K_BKSP] > nul
+any(extvowels) U+0308 any(extvowels) U+0308 + [CTRL K_BKSP] > nul
+
+
+
+nomatch > use(normalmode)
+
+
+group(normalmode) using keys
+
+c 
+c Generate breathy vowels (i.e. add diaresis)
+c 
+any(vowels) + any(dia) > index(breathy,1)
+any(extvowels) + any(dia) > context U+0308 
+
+c 
+c Prevent diacritic being added to any non-vowel character
+c 
+any(non_dia) + any(dia) > context 
+
+c 
+c Key sequences for core extended latin characters in Dinka alphabet
+c 
++ [K_Q] > U+014B
++ [SHIFT K_Q] > U+014A
++ [SHIFT K_X] > U+0186
++ [SHIFT K_S] > U+0190
++ [SHIFT K_F] > U+0194
++ [K_X] > U+0254
++ [K_S] > U+025B
++ [K_F] > U+0263
+
+c 
+c Reassign colon and semi-colon characters to K_Z
+c 
++ [K_Z] > ";" 
++ [SHIFT K_Z] > ":"
+     
+c 
+c Long breathy vowel keyboard shortcuts
+c 
+"aa" + any(dia) > U+00E4 U+00E4  
+"AA" + any(dia) > U+00C4 U+00C4
+"ee" + any(dia) > U+00EB U+00EB
+"EE" + any(dia) > U+00CB U+00CB
+"ii" + any(dia) > U+00EF U+00EF
+"II" + any(dia) > U+00CF U+00CF
+"oo" + any(dia) > U+00F6 U+00F6
+"OO" + any(dia) > U+00D6 U+00D6    
+U+025B U+025B + any(dia) > U+025B U+0308 U+025B U+0308
+U+0190 U+0190 + any(dia) > U+0190 U+0308 U+0190 U+0308
+U+0254 U+0254 + any(dia) > U+0254 U+0308 U+0254 U+0308
+U+0186 U+0186 + any(dia) > U+0186 U+0308 U+0186 U+0308  
+
+c 
+c allows diacritic to be typed at the end on diphthong
+c 
+any(vowels) any(non_dia_final) + any(dia) > index(breathy,1) context(2)
+any(extvowels) any(non_dia_final) + any(dia) > context(1) U+0308 context(2)
+"aa" any(non_dia_final) + any(dia) > U+00E4 U+00E4 context(3)  
+"AA" any(non_dia_final) + any(dia) > U+00C4 U+00C4 context(3)
+"ee" any(non_dia_final) + any(dia) > U+00EB U+00EB context(3)
+"EE" any(non_dia_final) + any(dia) > U+00CB U+00CB context(3)
+"ii" any(non_dia_final) + any(dia) > U+00EF U+00EF context(3)
+"II" any(non_dia_final) + any(dia) > U+00CF U+00CF context(3)
+"oo" any(non_dia_final) + any(dia) > U+00F6 U+00F6 context(3)
+"OO" any(non_dia_final) + any(dia) > U+00D6 U+00D6 context(3)   
+U+025B U+025B any(non_dia_final) + any(dia) > U+025B U+0308 U+025B U+0308 context(3)
+U+0190 U+0190 any(non_dia_final) + any(dia) > U+0190 U+0308 U+0190 U+0308 context(3)
+U+0254 U+0254 any(non_dia_final) + any(dia) > U+0254 U+0308 U+0254 U+0308 context(3)
+U+0186 U+0186 any(non_dia_final) + any(dia) > U+0186 U+0308 U+0186 U+0308 context(3) 
+
+any(breathy) any(non_dia_final) + any(dia) > context
+any(extvowels) U+0308 any(non_dia_final) + any(dia) > context
+
+
+c EOF
