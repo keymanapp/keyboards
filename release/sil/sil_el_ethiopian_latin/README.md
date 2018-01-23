@@ -1,11 +1,9 @@
 SIL EL - Ethiopian Latin Keyboard
 =================================
 
-* Name:           SIL EL - Ethiopian Latin
-* Copyright:      (C) SIL Ethiopia
-* Version:        1.2
-* Keyman Version: 9.0
-* BCP-47 codes:	  amf bcq gmv gof guk gwd kqy kxc mdx moy mpe suq tsb wal 
+Copyright (C) 2017 SIL Ethiopia
+
+Version 1.2.2
 
 Description
 -----------
