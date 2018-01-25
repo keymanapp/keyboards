@@ -837,7 +837,7 @@
                   },
                   {
                     "text": "}",
-                    "id": "K_RBRKT",
+                    "id": "U_007D",
                     "layer": "shift"
                   },
                   {
