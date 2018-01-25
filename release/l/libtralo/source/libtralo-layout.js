@@ -781,23 +781,7 @@
               {
                 "id": "K_LBRKT",
                 "text": "́",
-                "pad": "0",
-                "sk": [
-                  {
-                    "text": "«",
-                    "id": "U_00AB"
-                  },
-                  {
-                    "text": "<",
-                    "id": "K_COMMA",
-                    "layer": "shift"
-                  },
-                  {
-                    "text": "{",
-                    "id": "K_LBRKT",
-                    "layer": "shift"
-                  }
-                ]
+                "pad": "0"
               },
               {
                 "id": "K_9",
