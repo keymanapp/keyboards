@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.968.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.988.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,59 +10,17 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
-    <Folder></Folder>
+    <Folder>SIL IPA</Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.5</Version>
     <Name URL="">SIL IPA</Name>
-    <Copyright URL="">© 2002-2017 SIL International</Copyright>
+    <Copyright URL="">© 2002-2018 SIL International</Copyright>
     <Author URL="mailto:fonts@sil.org">Martin Hosken, Lorna Evans</Author>
+    <Version URL="">1.5</Version>
   </Info>
   <Files>
-    <File>
-      <Name>..\build\sil_ipa.kmx</Name>
-      <Description>Keyboard SIL IPA</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>SILIPAKeyboardLayout.pdf</Name>
-      <Description>File SILIPAKeyboardLayout.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
     <File>
       <Name>CharisSIL-B.ttf</Name>
       <Description>Font Charis SIL Bold</Description>
@@ -106,11 +64,39 @@
       <FileType>.txt</FileType>
     </File>
     <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
       <Name>README.txt</Name>
       <Description>File README.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>SILIPAKeyboardLayout.pdf</Name>
+      <Description>File SILIPAKeyboardLayout.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_ipa.kmx</Name>
+      <Description>Keyboard SIL IPA</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>SIL IPA</Name>
+      <ID>sil_ipa</ID>
+      <Version>1.5</Version>
+      <Languages>
+        <Language ID="und-Latn">und-Latn</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
