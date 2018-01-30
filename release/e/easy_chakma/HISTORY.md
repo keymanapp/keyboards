@@ -6,6 +6,9 @@ Easy Chakma Keyboard Change History
 * Updated Ekaraa E keys combination
 * Added support for iOS, Android, macOS, web and Linux
 * Updated font
+* Updated guidelines
+* Updated icon
+* Fixed Ekara E and Chakma spell-bound
 
 1.17 (6 Oct 2016)
 -----------------
