@@ -1,22 +1,22 @@
-easy_chakma keyboard
+Easy Chakma Keyboard
 ======================
 
-Copyright (C) 2015 Bivuti Chakma (Suz Moriz)
+Copyright (C) 2015-2018 Bivuti Chakma (Suz Moriz)
 
-Version 1.15
+Version 1.18
 
-Chakma keyboard layout for Unicode
+The first Unicode Keyboard for Chakma community. It is easy to use and to input any Chakma complex words even any Chakma spell-bound.
 
 Links
 -----
-
  * Home:     <http://www.hilledu.com/>
- * Deployed: <http://s.keyman.com/keyboard/easy_chakma>
- * Help:     <http://help.keyman.com/keyboard/easy_chakma>
- * Contact:  <info@ribeng.net>
+ * Contact:  <bsereye@hotmail.com>
 
 Supported Platforms
 -------------------
  * Windows
+ * iOS
+ * macOS
+ * Android
  * Web
- * Mobile (limited)
+ * Linux
