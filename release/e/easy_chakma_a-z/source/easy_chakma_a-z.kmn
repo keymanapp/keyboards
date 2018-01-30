@@ -3,8 +3,8 @@ c Special Thanked to Dr. Andrew Glass (Program Manager at Microsoft Corporation)
 store(&VERSION) '9.0'
 store(&NAME) 'Easy Chakma_A-Z'
 store(&ETHNOLOGUECODE) 'ccp'
-store(&COPYRIGHT) '© 2018 Bivuti Chakma (Suz Moriz) '
-store(&KEYBOARDVERSION) '1.18.31.01.2018'
+store(&COPYRIGHT) '© 2015-2018 Bivuti Chakma (Suz Moriz)'
+store(&KEYBOARDVERSION) '1.18'
 store(&MESSAGE) 'This is first Easy Chakma Visual Order Natural Keyboard for unicode & ASCII.'
 store(&BITMAP) 'easy_chakma_a-z.ico'
 store(&VISUALKEYBOARD) 'easy_chakma_a-z.kvks'
@@ -482,24 +482,25 @@ match > use(normalise)
 group(normalise) 
 
 c fix issue-1 and issue-1-1
-any(consonant) U+11133 U+200C any(consonant) U+11133 U+11104 U+1112C > context(1) context(2) context(4) context(5) context(6) context(7)  
-any(consonant) U+11133 U+200C any(consonant) U+11133 U+11104 U+1112C U+1112C > context(1) context(2) context(4) context(5) context(6) context(7) context(8)
+U+200C any(consonant) U+11133 U+200C any(consonant) U+11133 any(vowel) U+1112C     	   > context(2) context(3) context(5) context(6) context(7) context(8)  
+U+200C any(consonant) U+11133 U+200C any(consonant) U+11133 any(vowel) U+1112C U+1112C > context(2) context(3) context(5) context(6) context(7) context(8) context(9)
 
 c fix issue-2
-any(consonant) U+11133 U+200C any(vowel) U+11133 U+11104 U+1112C > context(1) context(2) context(4) context(5) context(6)
-any(consonant) U+11133 U+200C any(vowel) U+11133 U+11104 U+1112C U+1112C > context(1) context(2) context(4) context(5) context(6) context(7) context(8)
+U+200C any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+1112C  	   	> context(2) context(3) context(5) context(6) context(7) context(8)
+U+200C any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+1112C U+1112C  > context(2) context(3) context(5) context(6) context(7) context(8) context(9)
 
 c fix issue-3 and issue-3-3
-any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(consonant) U+1112C > context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9) 
-any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(consonant) U+1112C U+1112C > context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9) context(10)
+any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(consonant) U+1112C  	   	> context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9) 
+any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(consonant) U+1112C U+1112C  > context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9) context(10)
 
 c fix issue-4
-any(consonant) U+11133 U+200C any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+1112C > context(1) context(2) context(4) context(5) context(7) context(8) context(9) context(10)
-any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+11133 any(consonant) U+1112C > context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9) context(10) context(11)
+any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+1112C  	   	   	   	   	   	> context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9)
+any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+11133 any(consonant) U+1112C   > context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9) context(10) context(11)
+
 
 c fix issue-4-4
-any(consonant) U+11133 U+200C any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+1112C U+1112C > context(1) context(2) context(4) context(5) context(7) context(8) context(9) context(10) context(11)
-any(consonant) U+11133 any(consonant) U+11133 any(vowel) U+11133 U+200C any(vowel) U+11133 any(consonant) U+1112C U+1112C > context(1) context(2) context(3) context(4) context(5) context(6) context(8) context(9) context(10) context(11) context(12)
+any(consonant) U+11133 any(consonant) U+11133 U+200C any(vowel) U+11133 any(vowel) U+1112C U+1112C   	   	   	   	> context(1) context(2) context(3) context(4) context(6) context(7) context(8) context(9) context(10)
+any(consonant) U+11133 any(consonant) U+11133 any(vowel) U+11133 U+200C any(vowel) U+11133 any(consonant) U+1112C U+1112C   > context(1) context(2) context(3) context(4) context(5) context(6) context(8) context(9) context(10) context(11) context(12)
 
 c fix issue-5
 any(consonant) U+11133 any(consonant) U+11133 any(vowel) U+11133 any(vowel) U+11133 U+200C any(consonant) U+11133 any(vowel) U+1112C > context(1) context(2) context(3) context(4) context(5) context(6) context(7) context(8) context(10) context(11) context(12) context(13)
