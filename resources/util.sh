@@ -50,6 +50,7 @@ function parse_args {
   DO_CODESIGN=false
   DO_UPLOAD_ONLY=false
   DO_ZIP_ONLY=false
+  DO_EXE=true
   TARGET=
   PROJECT_TARGET=
   FLAG_SILENT=
@@ -75,6 +76,9 @@ function parse_args {
           ;;
         -zip-only)
           DO_ZIP_ONLY=true
+          ;;
+        -no-exe)
+          DO_EXE=false
           ;;
         -start)
           lastkey=$key

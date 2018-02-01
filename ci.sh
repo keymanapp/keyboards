@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function display_usage {
-  echo "Usage: ci.sh [release|legacy|experimental[/k/keyboard]]"
+  echo "Usage: ci.sh [-no-exe] [release|legacy|experimental[/k/keyboard]]"
   exit 1
 }
 
@@ -228,16 +228,18 @@ function upload_keyboard {
   if [[ ! -z $package_filename ]]; then
     prepare_for_upload "$buildpath/$package_filename" "$package_upload_path"
   fi
-  
-  if [[ ${package_filename##*.} == kmp ]]; then
+
+  if [[ $DO_EXE == true ]]; then
+    if [[ ${package_filename##*.} == kmp ]]; then
     # We only upload a combined installer for .kmp files
-    if $(verlte "$min_required_desktop_version" "$KEYMANDESKTOP_VERSION"); then
-      create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
-      prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
-    else
-      echo "$package_name requires minimum of Keyman Desktop $min_required_desktop_version, so a bundled installer will not be created with version $KEYMANDESKTOP_VERSION."
-    fi
-  fi  
+      if $(verlte "$min_required_desktop_version" "$KEYMANDESKTOP_VERSION"); then
+        create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
+        prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
+      else
+        echo "$package_name requires minimum of Keyman Desktop $min_required_desktop_version, so a bundled installer will not be created with version $KEYMANDESKTOP_VERSION."
+      fi
+    fi  
+  fi
 }
 
 ##
