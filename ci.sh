@@ -6,6 +6,11 @@ function display_usage {
 }
 
 #
+# Prevents 'clear' on exit of mingw64 bash shell
+#
+SHLVL=0
+
+#
 # Define paths; note Windows hosted bash assumptions for now
 #
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -78,6 +83,9 @@ function run {
 ##
 function check_latest_stable_keymandesktop {
   local API_VERSION_JSON=`curl -s "$DOWNLOADS_KEYMAN_COM_URL/api/version/windows/2.0"`
+  if [ -z "$API_VERSION_JSON" ]; then 
+    die "Unable to download version data"
+  fi
   KEYMANDESKTOP_VERSION=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.version'`
   MSI_FILENAME=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files[].file | match("^keymandesktop.+.msi$").string'`
   MSI_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["'$MSI_FILENAME'"].md5'`
@@ -181,6 +189,7 @@ function upload_keyboard {
   
   local package_filename=`cat "$keyboard_info" | $JQ -r '.packageFilename'`
   local js_filename=`cat "$keyboard_info" | $JQ -r '.jsFilename'`
+  local min_required_desktop_version=`cat "$keyboard_info" | $JQ -r '.minKeymanDesktopVersion'`
 
   # jq returns 'null' if the entry is missing, instead of ''
   if [[ $package_filename == "null" ]]; then
@@ -223,9 +232,13 @@ function upload_keyboard {
   if [[ $DO_EXE == true ]]; then
     if [[ ${package_filename##*.} == kmp ]]; then
     # We only upload a combined installer for .kmp files
-      create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
-      prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
-    fi
+      if $(verlte "$min_required_desktop_version" "$KEYMANDESKTOP_VERSION"); then
+        create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
+        prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
+      else
+        echo "$package_name requires minimum of Keyman Desktop $min_required_desktop_version, so a bundled installer will not be created with version $KEYMANDESKTOP_VERSION."
+      fi
+    fi  
   fi
 }
 
