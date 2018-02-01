@@ -117,8 +117,8 @@ function build_keyboard {
   else
     # We will use the standard build based on the group
     if [[ $group == release ]] || [[ $group == experimental ]]; then
-      # We will do a RELEASE build for $keyboard
-      build_release_keyboard "$keyboard" || die "Failed to build release keyboard $base_keyboard"
+      # We will do a release/experimental build for $keyboard (experimental keyboards are built same way as release keyboards)
+      build_release_keyboard "$keyboard" || die "Failed to build $group keyboard $base_keyboard"
     else
       # We will do a COPY for $keyboard
       copy_keyboard "$keyboard" || die "Failed to copy $group keyboard $base_keyboard"
