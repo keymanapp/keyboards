@@ -231,7 +231,7 @@ function upload_keyboard {
   
   if [[ ${package_filename##*.} == kmp ]]; then
     # We only upload a combined installer for .kmp files
-    if $(verlte "$KEYMANDESKTOP_VERSION" "$min_required_desktop_version"); then
+    if $(verlte "$min_required_desktop_version" "$KEYMANDESKTOP_VERSION"); then
       create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
       prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
     else
