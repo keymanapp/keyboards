@@ -68,7 +68,7 @@ function merge_keyboard_info {
     return 1
   fi
   
-  $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" "$pOut" || die "Failed to merge keyboard_info for $1"
+  $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" -source-path "$group/$shortname/$base_keyboard" "$pOut" || die "Failed to merge keyboard_info for $1"
   
   return 0
 }
