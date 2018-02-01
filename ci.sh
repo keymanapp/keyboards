@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function display_usage {
-  echo "Usage: ci.sh [release|legacy|experimental[/k/keyboard]]"
+  echo "Usage: ci.sh [-no-exe] [release|legacy|experimental[/k/keyboard]]"
   exit 1
 }
 
@@ -219,12 +219,14 @@ function upload_keyboard {
   if [[ ! -z $package_filename ]]; then
     prepare_for_upload "$buildpath/$package_filename" "$package_upload_path"
   fi
-  
-  if [[ ${package_filename##*.} == kmp ]]; then
+
+  if [[ $DO_EXE == true ]]; then
+    if [[ ${package_filename##*.} == kmp ]]; then
     # We only upload a combined installer for .kmp files
-    create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
-    prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
-  fi  
+      create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
+      prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
+    fi
+  fi
 }
 
 ##
