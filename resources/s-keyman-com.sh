@@ -114,7 +114,7 @@ function commit_and_push {
   git config user.email "keyman-server@users.noreply.github.com"
   git add keyboard || return 1
   git commit -m "Keyboard deployment (automatic)" || return 1
-  git push origin master
+  git push origin master || return 1
   popd
   
   echo "Push to s.keyman.com complete"
