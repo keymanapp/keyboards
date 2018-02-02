@@ -107,7 +107,6 @@ function upload_keyboards {
 
 function commit_and_push {
   echo "Committing and pushing updated keyboards (if any)"
-  return 0
   
   pushd
   cd $S_KEYMAN_COM
@@ -117,6 +116,9 @@ function commit_and_push {
   git commit -m "Keyboard deployment (automatic)" || return 1
   git push origin master
   popd
+  
+  echo "Push to s.keyman.com complete"
+  
   return 0
 }
 
