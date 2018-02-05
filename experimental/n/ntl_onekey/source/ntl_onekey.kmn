@@ -1,4 +1,4 @@
-﻿c Title:        ntl-onekey.kmn
+﻿c Title:        ntl_onekey.kmn
 c Author:       A. Cheuk and E. Ding
 c Description:  New Tai Lue Unicode keyboard
 c Remarks:      NTL now visually encoded per resolution of UTC Meeting 141; originally adapted from xidai legacy encoding
@@ -11,11 +11,11 @@ store(&TARGETS) 'windows macosx iphone androidphone mobile'
 store(&ETHNOLOGUECODE) 'khb'
 store(&COPYRIGHT) 'Copyright © 2017 SIL International'
 store(&MESSAGE) 'This NTL OneKey (新傣文一键) keyboard is distributed under the X11 free software license.'
-store(&LAYOUTFILE) 'ntl-onekey-layout.js'
+store(&LAYOUTFILE) 'ntl_onekey-layout.js'
 store(&KEYBOARDVERSION) '1.001'
 
 group(main) using keys
-store(&BITMAP) 'ntl-onekey.ico'
+store(&BITMAP) 'ntl_onekey.ico'
 begin Unicode > use(main)
 
 store(baseK)	"~!@#$%^&*()_+" "`1234567890-=" "QWERTYUIOP{}|" "qwertyuiop[]\" \
