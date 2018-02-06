@@ -1,1 +1,0 @@
-KeymanWeb.KRS(new Stub_Keyboard_ntl_onekey()); function Stub_Keyboard_ntl_onekey() {this.KF="ntl_onekey-1.001.js";this.KI="Keyboard_ntl_onekey";this.KN="新傣文一键";}
