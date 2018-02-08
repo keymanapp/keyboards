@@ -1,0 +1,78 @@
+c Lanna boonkit layout Keyboard in Unicode
+c 
+c MJPH  0.1     23-MAY-2008     Original
+c MJPH  0.2     23-SEP-2008     Fill out sbase, but probably still more to go
+c MJPH  0.3     12-DEC-2008     Add hang numbers and U+1A5B.
+c MJPH  0.4     28-APR-2009     Make prevowels typable before following base
+c MJPH  0.5     15-MAY-2009     Add U+1A2C as stackable
+c MJPH  0.5.1   27-AUG-2009     Fix 'w' being a prevowel, make " into sakot nga, add hang backspace handling
+c MJPH  0.5.2   27-APR-2011     Fix tall -a eating context
+c MJPH  0.5.3   25-NOV-2013     Add great sa as hang sa + `
+c MJPH  0.5.4    3-MAY-2016     subjoin a sub la to get medial la
+
+store(&VERSION) '9.0'
+store(&NAME) 'Boonkit Unicode 0.5.4'
+HOTKEY "^+B"
+store(&VISUALKEYBOARD) 'boonkit.kvk'
+store(&ETHNOLOGUECODE) 'NOD'
+store(&COPYRIGHT) '© SIL International 2018'
+store(&KEYBOARDVERSION) '0.5.4'
+
+begin Unicode > use(Main)
+
+store(baseK) '!@#$%^&*()_+' \
+             '234567890-=' \
+             'QWERTYUIOP{' \
+             'qrtyuiop[]' \
+             'SDGJKL:'  \
+             "asdfhjkl;'"  \
+             'CVBNM<>?|'  \
+             'zxvbnm,/\'
+
+store(base) \
+    U+1A53 U+1A81 U+1A82 U+1A83 U+1A84 U+1A6A U+1A58 U+1A85 U+1A86 U+1A87 U+1A88 U+1A89 \
+           U+1A44 U+1A51 U+1A3D U+1A33 U+1A69 U+1A67 U+1A23 U+1A32 U+1A27 U+1A21 U+1A29 \
+    U+1A80 U+1A74 U+1A4F U+1A50 U+1A35 U+1A74 U+1A55 U+1A31 U+1A40 U+1A2C U+1A2E \
+    U+1A7B        U+1A3B U+1A61 U+1A62 U+1A66 U+1A41 U+1A36 U+1A3F U+1A37 U+1A43 \
+           U+1A25 U+1A2D U+1A2B        U+1A6B U+1A47 U+1A46 U+1A2A \
+    U+1A3C U+1A49 U+1A20 U+1A2F U+1A76 U+1A75 U+1A63 U+1A48 U+1A45 U+1A26 \
+                  U+1A28 U+1A4C U+1A6C U+1A7A U+002F U+1A30 U+1A4A U+1A42 U+1A24 \
+    U+1A39 U+1A38 U+1A4B U+1A65 U+1A68 U+1A34 U+1A3E        U+1A3A U+0028
+
+store(medK) '}AHZX."'
+store(med)  U+1A45 U+1A3F U+1A2B U+1A36 U+1A3E U+1A38 U+1A26
+
+store(tall) U+1A23 U+1A37 U+1A38 U+1A3A U+1A48
+
+store(hbase) U+1A63 U+1A64 U+1A80 U+1A81 U+1A82 U+1A83 U+1A84 U+1A85 U+1A86 U+1A87 U+1A88 U+1A89
+store(hack)  U+1A64 U+1A63 U+1A90 U+1A91 U+1A92 U+1A93 U+1A94 U+1A95 U+1A96 U+1A97 U+1A98 U+1A99
+
+store(dhackb) U+1A3B U+1A43
+store(dhack)  U+1A5B U+1A56
+
+store(sbase) U+1A20 U+1A21        U+1A23        U+1A25 U+1A26 U+1A27 \
+             U+1A28 U+1A29        U+1A2B U+1A2C U+1A2D U+1A2E U+1A2F \
+             U+1A30 U+1A31 U+1A32 U+1A33 U+1A34 U+1A35 U+1A36 U+1A37 \
+             U+1A38 U+1A39        U+1A3B        U+1A3D U+1A3E U+1A3F \
+             U+1A40 U+1A41        U+1A43        U+1A45 U+1A46 U+1A47 \
+             U+1A48 U+1A49        U+1A4B
+
+store(preVK)    'gcFw'
+store(preV)     U+1A6E U+1A6F U+1A70 U+1A71
+
+group(Main) using keys
+
++ '1' > U+1A2D U+1A5B
++ 'e' > U+1A63 U+1A74
+any(tall) + 'k' > context U+1A64
++ any(medK) > U+1A60 index(med, 1)
++ any(baseK) > index(base, 1)
+any(hbase) + '`' > index(hack, 1)
+U+1A60 any(dhackb) + '`' > index(dhack, 2)
+U+1A48 U+1A60 U+1A48 + '`' > U+1A54
+U+1A60 any(sbase) + '`' > context
+U+1A60 any(sbase) + [K_BKSP] > nul
+any(sbase) + '`' > U+1A60 context
++ any(preVK) > U+25CC index(preV, 1)
+U+25CC any(preV) + any(baseK) > index(base, 3) index(preV, 2)
+U+25CC any(preV) + [K_BKSP] > nul
