@@ -1,10 +1,10 @@
 ﻿c sil_torwali.kmn
 c Author:   Lorna Evans
-c Date:     20-JAN-2017
+c Date:     8-FEB-2018
 c Original Creation Date:     7-APR-2016
 store(&VERSION) '9.0'
 store(&NAME) 'Torwali'
-store(&COPYRIGHT) '© 2016-2017 SIL International'
+store(&COPYRIGHT) '© 2016-2018 SIL International'
 store(&MESSAGE) 'The Torwali Unicode keyboard is distributed under The MIT License (MIT).'
 store(&ETHNOLOGUECODE) 'trw'
 store(&LANGUAGE) 'x0401'
@@ -12,7 +12,7 @@ store(&WINDOWSLANGUAGES) 'x0401'
 store(&BITMAP) 'sil_torwali.ico'
 c store(&TARGETS) 'windows macosx linux'
 store(&VISUALKEYBOARD) 'sil_torwali.kvk'
-store(&KEYBOARDVERSION) '0.6'
+store(&KEYBOARDVERSION) '0.8'
 store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'sil_torwali-layout.js'
@@ -20,8 +20,8 @@ begin Unicode > use(main)
 
 
 group(main) using keys
-+ [K_SLASH] > '/'
-+ [K_PERIOD] > '.'
++ [K_SLASH] > 'ࣿ'
++ [K_PERIOD] > '۔'
 + [K_COMMA] > '،'
 + [K_M] > 'م'
 + [K_N] > 'ن'
@@ -75,7 +75,7 @@ group(main) using keys
 + [SHIFT K_D] > 'ڈ'
 + [SHIFT K_S] > 'ص'
 + [SHIFT K_A] > 'آ'
-+ [SHIFT K_BKSLASH] > 'آ'
++ [SHIFT K_BKSLASH] > '|'
 + [SHIFT K_RBRKT] > 'ؤ'
 + [SHIFT K_LBRKT] > 'ئ'
 + [SHIFT K_P] > 'ُ'
@@ -85,10 +85,10 @@ group(main) using keys
 + [SHIFT K_Y] > 'ِ'
 + [SHIFT K_T] > 'ٹ'
 + [SHIFT K_R] > 'ڑ'
-+ [SHIFT K_E] > 'ء'
++ [SHIFT K_E] > 'ٔ'
 + [SHIFT K_W] > 'ّ'
 + [SHIFT K_Q] > 'أ'
-+ [K_EQUAL] > '+'
++ [K_EQUAL] > '='
 + [K_HYPHEN] > '-'
 + [K_0] > '۰'
 + [K_9] > '۹'
