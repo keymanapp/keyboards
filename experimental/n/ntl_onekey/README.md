@@ -1,7 +1,7 @@
 NTL OneKey keyboard
 ===================
 
-Copyright (C) 2017 SIL International
+Copyright (C) 2015, 2017 SIL International
 
 Version 1.001
 
