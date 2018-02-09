@@ -1,4 +1,4 @@
-Torwali Keyboard Keyboard
+Torwali Keyboard 
 =====================
 
 Copyright (C) 2016-2018 SIL International
