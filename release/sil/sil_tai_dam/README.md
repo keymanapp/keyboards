@@ -12,11 +12,6 @@ The SIL Tai Dam keyboard is designed for typing Tai Dam text using the Tai Viet 
 It is also possible to key the Tai Don aspirated consonants using two-key sequences, but the keyboard is not optimized for these characters.
 
 
-Links
------
-
-
-
 Supported Platforms
 -------------------
  * Windows
