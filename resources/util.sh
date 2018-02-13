@@ -104,11 +104,11 @@ function parse_args {
     else
       case "$lastkey" in
         -start)
-          START="$1"
+          START="$key"
           ;;
         -t)
           FLAG_TARGET=-t
-          PROJECT_TARGET="$1"
+          PROJECT_TARGET="$key"
           ;;
       esac
       lastkey=
