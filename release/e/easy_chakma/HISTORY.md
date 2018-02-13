@@ -1,5 +1,10 @@
-easy_chakma Change History
+Easy Chakma Change History
 ============================
+
+1.18 (15 Aug 2017)
+------------------
+* Updated RibengUni font (filename changed)
+* Changed the license to MIT
 
 1.17 (6 Oct 2016)
 -----------------
@@ -11,5 +16,4 @@ easy_chakma Change History
 
 1.15 (9 Dec 2015)
 -----------------
-
 * Added to tavultesoft keyboards github repository
