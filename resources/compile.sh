@@ -84,8 +84,8 @@ function build_keyboard {
   # Get documentation, .js and .kmp data out of the .keyboard_info
   #
   # Load the relevant fields from the .keyboard_info file into local variables. These are 
-  # needed for the legacy and experimental folders, where we don't assume filenames.
-  # For release/ folders, we can determine because there will only ever be one matching
+  # needed for the legacy/ folder, where we don't assume filenames. For release/ and
+  # experimental/ folders, we can determine because there will only ever be one matching
   # filename.
   #
   # Variables are named:
@@ -116,9 +116,9 @@ function build_keyboard {
     . ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
-    if [[ $group == release ]]; then
-      # We will do a RELEASE build for $keyboard
-      build_release_keyboard "$keyboard" || die "Failed to build release keyboard $base_keyboard"
+    if [[ $group == release ]] || [[ $group == experimental ]]; then
+      # We will do a release/experimental build for $keyboard (experimental keyboards are built same way as release keyboards)
+      build_release_keyboard "$keyboard" || die "Failed to build $group keyboard $base_keyboard"
     else
       # We will do a COPY for $keyboard
       copy_keyboard "$keyboard" || die "Failed to copy $group keyboard $base_keyboard"
@@ -141,7 +141,7 @@ function build_keyboard {
   
   #
   # Now, validate the build artifacts and merge the data with the .keyboard_info file.
-  # These tests are mostly needed for the legacy/ and experimental/ folders.
+  # These tests are mostly needed for the legacy/ folder.
   #
   
   if [ -n "$keyboard_info_packageFilename" ]; then test -f "build/$keyboard_info_packageFilename" || die "Could not find output file build/$keyboard_info_packageFilename"; fi
@@ -160,7 +160,7 @@ function build_keyboard {
 
 #----------------------------------------------------------------------------------------
 # Copy the pre-compiled keyboard artifacts from the source/ to build/ folder for 
-# legacy/ and experimental/ keyboards
+# legacy/ keyboards
 #----------------------------------------------------------------------------------------
 
 function copy_keyboard {
@@ -205,7 +205,7 @@ function copy_keyboard {
 }
 
 #----------------------------------------------------------------------------------------
-# Build a keyboard in the release/ folder from full source
+# Build a keyboard in the release/ or experimental/ folders from full source
 #----------------------------------------------------------------------------------------
 
 function build_release_keyboard {
