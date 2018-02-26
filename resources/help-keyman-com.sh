@@ -6,6 +6,11 @@
 SHLVL=0
 
 #
+# Allows us to check for existence of subfolders in help/
+#
+shopt -s nullglob
+
+#
 # In this script we update the git repo and copy the keyboard
 # documentation over, for all keyboards in release, legacy, and
 # experimental. This should be run after ci.sh.
@@ -46,6 +51,8 @@ for key in "$@"; do
     -f)
       FORCE=true
       ;;
+    *)
+      TARGET=$key
   esac
 done
 
@@ -55,6 +62,7 @@ done
 
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 CI_CACHE="$KEYBOARDROOT/.cache"
+JQ="$KEYBOARDROOT/tools/jq-win64.exe"
 keyboards_to_push=0
 
 . "$KEYBOARDROOT/servervars.sh"
@@ -84,15 +92,17 @@ function upload_keyboard_help {
   #
   
   if [[ ! -d "$helppath" ]]; then
-    echo "Warning: $base_keyboard does not include any PHP documentation"
+    echo "${t_yel}Warning: $base_keyboard does not include any PHP documentation${t_end}"
     return 0
   fi
   
-  if [[ ! -f "$helppath/$base_keyboard.php" ]]; then
-    echo "Warning: $base_keyboard includes a source/help/ folder but does not include source/help/$base_keyboard.php"
-    return 0
-  fi
-  
+  #
+  # Note: release/packages which contain multiple keyboards should also have the keyboards
+  # as separate entries in the release/ folder. This means we may have a combined package
+  # help file as well as a per-keyboard help file. It is acceptable in this situation to 
+  # make the combined help file link to the per-keyboard help files.
+  #
+    
   #
   # Copy all files in that folder, according to the current 
   # version of the keyboard, to help.keyman.com/keyboard/<id>/<version>/
@@ -100,35 +110,9 @@ function upload_keyboard_help {
   
   local version=`cat "$keyboard_info" | $JQ -r '.version'`
   local dstpath="$HELP_KEYMAN_COM/keyboard/$base_keyboard"
-  
+    
   mkdir -p "$dstpath/$version/"
-  cp "$helppath/*" "$dstpath/$version/"
-
-  #
-  # Rewrite help.keyman.com/keyboard/<id>/index.php to point to <version>
-  
-  cat > "$dstpath/index.php" <<END
-<?php
-  \$location = \$_SERVER['PHP_SELF'];
-  \$location = explode('/',\$location);
-  \$location = '$version/'.\$location[2].'.php';
-  header('location: '.\$location);
-?>
-END
-
-  #
-  # Rewrite help.keyman.com/keyboard/<id>/<version>/index.php
-  #
-  
-  cat > "$dstpath/$version/index.php" <<END
-<?php
-  \$location = \$_SERVER['PHP_SELF'];
-  \$location = explode('/',\$location);
-  \$location = \$location[2].'.php';
-  header('location: '.\$location);
-?>
-END
-
+  cp "$helppath"/* "$dstpath/$version/"
 }
 
 ##
@@ -192,9 +176,16 @@ function upload_keyboard_helps {
   done
   
   #
-  # We don't need to upload packages/ folder
-  # because help is per-keyboard.
+  # Now upload the packages help.
   #
+
+  if [ -d "$KEYBOARDROOT/$group/packages" ]; then
+    echo "- Building $group/packages"
+    local package
+    for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
+      upload_keyboard_help "$group" "$package"
+    done
+  fi
   
   return 0
 }
@@ -206,16 +197,20 @@ function upload_keyboard_helps {
 function commit_and_push {
   echo "Committing and pushing updated keyboard documentation (if any)"
   
-  pushd
-  cd $HELP_KEYMAN_COM
-  git config user.name "Keyman Build Server"
-  git config user.email "keyman-server@users.noreply.github.com"
-  git add keyboard
-  git diff --cached --no-ext-diff --quiet --exit-code && (echo "No changes to commit"; popd; return 0) # if no changes then don't do anything.
+  pushd $HELP_KEYMAN_COM
+  #git config user.name "Keyman Build Server"
+  #git config user.email "keyman-server@users.noreply.github.com"
+  git add keyboard || return 1
+  git diff --cached --no-ext-diff --quiet --exit-code && {
+    # if no changes then don't do anything.
+    echo "No changes to commit"
+    popd
+    return 0
+  }
   
   echo "changes added to cache...>>>"
-  # git commit -m "Keyboard help deployment (automatic)" || return 1
-  # git push origin master || return 1
+  git commit -m "Keyboard help deployment (automatic)" || return 1
+  git push origin master || return 1
   popd
   
   echo "Push to help.keyman.com complete"
