@@ -112,7 +112,7 @@ function upload_keyboard_help {
   local dstpath="$HELP_KEYMAN_COM/keyboard/$base_keyboard"
     
   mkdir -p "$dstpath/$version/"
-  cp "$helppath"/* "$dstpath/$version/"
+  cp -r "$helppath"/* "$dstpath/$version/"
 }
 
 ##
