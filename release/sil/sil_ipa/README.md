@@ -1,7 +1,7 @@
 SIL IPA Keyboard Keyboard
 =====================
 
-Copyright (C) 2002-2017 SIL International
+Copyright (C) 2002-2018 SIL International
 
 Version 1.5
 

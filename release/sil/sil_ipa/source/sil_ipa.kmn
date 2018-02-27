@@ -56,7 +56,7 @@ store(&VERSION) '9.0'
 store(&NAME) 'SIL IPA'
 store(&BITMAP) 'sil_ipa.ico'
 c HOTKEY  "^+P"
-store(&COPYRIGHT) '© 2002-2017 SIL International'
+store(&COPYRIGHT) '© 2002-2018 SIL International'
 store(&MESSAGE) 'The SIL IPA (ver 1.5) Keyman keyboard is distributed under The MIT License (MIT).'
 c store(&author) "M. Hosken, D. Bevan"
 c store(&language) ""
@@ -117,28 +117,28 @@ c store(hatK)  "?gjnwlh" "0123456789-" "m" "n=" "n>"
    store(hatD)  "0123456789" \
                 "-"    "+"    "="    "("    ")"    U+01C3 \
                 U+0295 U+0294 "b"    U+03B2 "c"    U+0255 "d"    U+00F0 "f" \
-                "g"    U+0261 U+0263 "h"    U+0266 U+0265 U+0127 "j"    U+029D \
+                "g"    U+0261 U+0263 "h"    U+0266 U+0265 "j"    U+029D \
                 U+025F "k" \
                 "l"    U+026D U+029F "m"    U+0271 "n"    U+0272 U+014B U+0273 U+0274 \
                 "p"    U+0278 "r"    U+0279 U+027B U+0281 "s"    U+0282 U+0283 \
                 "t"    U+0270 "v"    U+028B "w"    "x"    "z"    U+0291 U+0290 U+0292 \
-                U+03B8 U+028E \
-                "a"    U+0250 U+0251 U+0252 U+00E6 U+1D02 "e"    U+0259 U+025B U+025C \
-                U+0258 "i"    U+0268 U+026A "o"    U+00F8 U+0153 U+0276 U+0275 U+0254 \
-                "u"    U+0289 "y"    U+028F U+026F U+0264 U+025E U+028C U+028A
+                U+03B8 \
+                "a"    U+0250 U+0251 U+0252 U+1D02 "e"    U+0259 U+025B U+025C \
+                "i"    U+0268 U+026A "o"    U+0153 U+0275 U+0254 \
+                "u"    U+0289 "y"    U+026F U+028C U+028A
 
    store(hatU)  U+2070 U+00B9 U+00B2 U+00B3 U+2074 U+2075 U+2076 U+2077 U+2078 U+2079 \
                 U+207B U+207A U+207C U+207D U+207E U+A71D \
                 U+02E4 U+02C0 U+1D47 U+1D5D U+1D9C U+1D9D U+1D48 U+1D9E U+1DA0 \
-                U+1D4D U+1Da2 U+02E0 U+02B0 U+02B1 U+1DA3 U+F1BC U+02B2 U+1DA8 \
+                U+1D4D U+1Da2 U+02E0 U+02B0 U+02B1 U+1DA3 U+02B2 U+1DA8 \
                 U+1DA1 U+1D4F \
                 U+02E1 U+1DA9 U+1DAB U+1D50 U+1DAC U+207F U+1DAE U+1D51 U+1DAF U+1DB0 \
                 U+1D56 U+1DB2 U+02B3 U+02B4 U+02B5 U+02B6 U+02E2 U+1DB3 U+1DB4 \
                 U+1D57 U+1DAD U+1D5B U+1DB9 U+02B7 U+02E3 U+1DBB U+1DBD U+1DBC U+1DBE \
-                U+1DBF U+F1CE \
-                U+1D43 U+1D44 U+1D45 U+1D9B U+F1A1 U+1D46 U+1D49 U+1D4A U+1D4B U+1D9F \
-                U+F1A3 U+2071 U+1DA4 U+1DA6 U+1D52 U+F1AB U+A7F9 U+F1AE U+1DB1 U+1D53 \
-                U+1D58 U+1DB6 U+02B8 U+F1B4 U+1D5A U+F1B5 U+F1A4 U+1DBA U+1DB7
+                U+1DBF \
+                U+1D43 U+1D44 U+1D45 U+1D9B U+1D46 U+1D49 U+1D4A U+1D4B U+1D9F \
+                U+2071 U+1DA4 U+1DA6 U+1D52 U+A7F9 U+1DB1 U+1D53 \
+                U+1D58 U+1DB6 U+02B8 U+1D5A U+1DBA U+1DB7
 
 c "AETYZ" "adehilntuyz"  and un-superscript "1234567890"
 store(pipeD)  "A"    "E"    "T"    "Y"    "Z"    \
@@ -165,8 +165,8 @@ store(segmentU) U+02E9 U+02E8 U+02E7 U+02E6 U+02E5 U+A71C U+A71B U+2197 \
 store(fenceU) U+02E5 U+02E6 U+02E7 U+02E8 U+02E9
 store(leftstemU) U+A712 U+A713 U+A714 U+A715 U+A716
 
-store(PitchContoursK) "1"    "2"    "3"    "4"    "5"    "6"    "7"    "8"    "9"    
-store(PitchContoursU) U+F1F1 U+F1F2 U+F1F3 U+F1F4 U+F1F5 U+F1F6 U+F1F7 U+F1F8 U+F1F9 
+c store(PitchContoursK) "1"    "2"    "3"    "4"    "5"    "6"    "7"    "8"    "9"
+c store(PitchContoursU) U+F1F1 U+F1F2 U+F1F3 U+F1F4 U+F1F5 U+F1F6 U+F1F7 U+F1F8 U+F1F9
 
 store(tildeK) "b"    "d"    "f"    "l"    "m"    "n"    "p"    "r"    \
               U+027E "s"    "t"    "z"
@@ -233,8 +233,8 @@ any(leftstemU) + "4" > context U+A716
 
 c ##1 ##2 ##3 ##4 ##5 ##6 ##7 ##8 ##9
 
-'##' + any(PitchContoursK) > index(PitchContoursU,3)
-any(PitchContoursU) + any(PitchContoursK) > context index(PitchContoursU,2)
+c '##' + any(PitchContoursK) > index(PitchContoursU,3)
+c any(PitchContoursU) + any(PitchContoursK) > context index(PitchContoursU,2)
 c 
 '&' + "0" > U+A712
 '&' + "1" > U+A713
