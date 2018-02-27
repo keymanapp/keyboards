@@ -1,9 +1,10 @@
 SIL IPA Keyboard Change History
 =======================
 
-1.5 (12 Dec 2017)
+1.5 (27 Jan 2018)
 -----------------
 * Updated by Lorna Evans for submitting to GitHub
+* Removed PUA characters
 
 IPA Unicode (2001-2017)
 -----------------
