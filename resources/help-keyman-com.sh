@@ -198,8 +198,8 @@ function commit_and_push {
   echo "Committing and pushing updated keyboard documentation (if any)"
   
   pushd $HELP_KEYMAN_COM
-  #git config user.name "Keyman Build Server"
-  #git config user.email "keyman-server@users.noreply.github.com"
+  git config user.name "Keyman Build Server"
+  git config user.email "keyman-server@users.noreply.github.com"
   git add keyboard || return 1
   git diff --cached --no-ext-diff --quiet --exit-code && {
     # if no changes then don't do anything.
