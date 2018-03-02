@@ -1,15 +1,15 @@
 ﻿c This is the simplest keyboard that a user can input the Hausa Language based on the standard QWERTY (US) keyboard.
 store(&VERSION) '9.0'
 store(&COPYRIGHT) '© 2017 Hamza Sulayman'
-store(&TARGETS) 'any'
 store(&WINDOWSLANGUAGES) 'x0468'
 store(&BITMAP) 'hausa_kano.ico'
 store(&VISUALKEYBOARD) 'hausa_kano.kvks'
 store(&KEYBOARDVERSION) '1.0'
 store(&MESSAGE) 'This is the simplest keyboard that a user can input the Hausa Language based on the standard QWERTY (US) keyboard.'
 store(&LANGUAGE) 'x0468'
-store(&NAME) 'hausa_kano'
+store(&NAME) 'Hausa Kano'
 store(&ETHNOLOGUECODE) 'hau'
+store(&TARGETS) 'windows macosx web'
 begin Unicode > use(main)
 
 group(main) using keys

@@ -16,7 +16,6 @@ Supported Platforms
  * Windows
  * macOS
  * Linux
- * iOS
- * Android
+ 
 
  
