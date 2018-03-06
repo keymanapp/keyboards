@@ -461,13 +461,12 @@
                 "text": "M"
               },
               {
-                "id": "K_PERIOD",
+                "id": "U_002E",
                 "text": ".",
                 "sk": [
                   {
                     "text": ",",
-                    "id": "K_PERIOD",
-                    "layer": "default"
+                    "id": "U_002C"
                   },
                   {
                     "text": "!",
