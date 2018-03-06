@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2108 Jorai Bible Association
+Copyright (c) 2018 Jorai Bible Association
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
