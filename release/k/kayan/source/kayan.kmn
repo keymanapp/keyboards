@@ -3,20 +3,24 @@ store(&TARGETS) 'windows androidphone desktop'
 store(&NAME) 'Kayǎn'
 store(&COPYRIGHT) '©2017 SIL International'
 store(&ETHNOLOGUECODE) 'pdu'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.4'
 store(&LAYOUTFILE) 'kayan-layout.js'
 store(&BITMAP) 'kayan.ico'
 store(&VISUALKEYBOARD) 'kayan.kvk'
 begin Unicode > use(main)
 
 
-group(main) using keys
+group(main) using keys    
+
+c These are just for the desktop keyboard and not the touch keyboard
 platform('desktop native') + [RALT K_V] > 'V'
 platform('desktop native') + [RALT K_X] > 'X'
 platform('desktop native') + [RALT K_Z] > 'Z'
 platform('desktop native') + [RALT K_J] > 'J'
 platform('desktop native') + [RALT K_F] > 'F'
-platform('desktop native') + [RALT K_Q] > 'Q'
+platform('desktop native') + [RALT K_Q] > 'Q'     
+
+c SHIFT keys
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_COMMA] > '<'
@@ -64,7 +68,9 @@ platform('desktop native') + [RALT K_Q] > 'Q'
 + [SHIFT K_3] > '#'
 + [SHIFT K_2] > '@'
 + [SHIFT K_1] > '!'
-+ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_BKQUOTE] > '~'  
+
+c Regular Keys
 + [K_W] > 'w'
 + [K_oE2] > '\'
 + [K_BKQUOTE] > '̀'
@@ -73,7 +79,7 @@ platform('desktop native') + [RALT K_Q] > 'Q'
 + [K_PERIOD] > '.'
 + [K_SLASH] > '/'
 + [K_QUOTE] > U+0027
-+ [K_COLON] > U+0301
++ [K_COLON] > ';'
 + [K_BKSLASH] > '\'
 + [K_RBRKT] > ']'
 + [K_LBRKT] > '['
@@ -112,14 +118,12 @@ platform('desktop native') + [RALT K_Q] > 'Q'
 + [K_Y] > 'y'
 + [K_T] > 't'
 + [K_R] > 'r'
-+ [K_E] > 'e' 
++ [K_E] > 'e'   
+
+c Below are the differences on the touch keyboard
 + [T_Macron] > '̄'
 + [SHIFT T_Macron] > '-'
 + [T_Q] > '-'
 + [SHIFT T_Q] > 'q'
-+ [T_COLON] > ";"
-+ [SHIFT T_COLON] > ":" 
-+ [T_GOOD] > U+0301
-+ [SHIFT T_GOOD] > ";"
 + [T_HYPHEN] > "-"
 + [SHIFT T_HYPHEN] > "_"
