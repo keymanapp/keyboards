@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Rachitrali-Kalasha
 * Copyright:      (C) 2017 Rehmat Aziz Chitrali
-* Version:        1.0
+* Version:        1.1
 * Keyman Version: 9.0
 * BCP-47 codes:   kls-Arab
 
@@ -44,5 +44,3 @@ Supported Platforms
  * Web
  * OSX
  
-Todo
-----
