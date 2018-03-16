@@ -1,0 +1,192 @@
+FONTLOG
+Doulos SIL font family
+========================
+
+
+This file provides detailed information on the Doulos SIL font.
+This information should be distributed along with the Doulos SIL font and
+any derivative works.
+
+
+Basic Font Information
+----------------------
+
+Doulos is very similar to Times/Times New Roman, but only has a single 
+face - regular. It is intended for use alongside other Times-like fonts where 
+a range of styles (italic, bold) are not needed.
+
+The goal for this product was to provide a single Unicode-based font family
+that would contain a comprehensive inventory of glyphs needed for almost any
+Roman- or Cyrillic-based writing system, whether used for phonetic or
+orthographic needs. In addition, there is provision for other characters and
+symbols useful to linguists. This font makes use of state-of-the-art font
+technologies to support complex typographic issues, such as the need to
+position arbitrary combinations of base glyphs and diacritics optimally. 
+
+One font from this typeface family is included in this release:
+
+     * Doulos SIL Regular 
+
+
+A Note Regarding the Open Font License and TypeTuner
+----------------------------------------------------
+
+The OFL prohibits the use of Reserved Font Names "Doulos" and "SIL" in
+the name of any font that is derived from the Original Version of Doulos
+SIL. However, SIL International (the Copyright Holder) grants through
+this separate written agreement the right to use the Reserved Font Names
+in any Modified Version of this font created by using TypeTuner as long
+as the feature information contained in the Original Version is used, 
+unmodified, as the source for TypeTuner feature information, and 
+"Doulos SIL" is not the resulting font family name.
+
+TypeTuner-produced fonts created in this manner are still bound by the
+terms of the OFL. Specifically, the use of Reserved Font Names is
+prohibited when making derivatives of a TypeTuner-produced font. Anyone
+making a derivative of a TypeTuner font will need to find a different
+name. For example a TypeTuner-produced font may be named 
+"Doulos SIL Literacy SomeFarAwayPlace" but a derivative of that font made 
+with other tools would not be allowed to use the "Doulos" and "SIL" 
+Reserved Font Names and would have to be named something like "Servant Serif".
+
+
+ChangeLog
+---------
+(This should list both major and minor changes, most recent first.)
+
+05 May 2009 (Alan Ward) Doulos SIL version 4.106
+- TypeTuner (Silt) table changed so that line metrics from legacy fonts
+  can be imported
+
+20 March 2009 (SIL NRSI team) Doulos SIL version 4.106
+- Added support for Unicode 5.1 Latin and Cyrillic additions
+- Other characters added: 0462, 0463, 0474, 0475, 0524, 0525, 20E5, 2203, 2204,
+  231C..U+231F, 2329, 232A, 239B..23AD, A722..U+A725 
+- Added PUA characters F26B, F32C, F32D 
+- Design changes: 002F, 02D0, 02ED, 02FF, 034B, 04A8, 04A9, 04BC, 
+  04BD, 04BE, 04BF, 04E0, 04E1, 045F, 04AA, 04AB, F208, F209, 0358
+- Fixed attachment points on 04FA, 04FB, fi and fl ligatures 
+- Fixed advance of t-caron
+- Feature modifications:
+    * new alternates added to feature ID 1033 and renamed from Small v-hook alternate 
+      to V-hook alternates
+    * new alternate U+2C65 LATIN SMALL LETTER A WITH STROKE added to 
+      Literacy alternates feature
+    * default for Diacritic selection was changed from "on" to "off" 
+     (by request of FieldWorks team) 
+- Added new features:
+    * Small Caps
+    * Non-European caron alternates
+    * Capital B-hook alternate
+    * Show deprecated PUA 
+- Slant italic bug fixed (dot on i was not disappearing with combining marks) 
+- Removal of about 700 unused glyphs (including precomposed chao tone letters 
+  which were no longer needed since these are now dynamically created)
+- Fixed issues: kern table error, usMaxContext and yMax errors
+- Several OpenType issues fixed
+- Graphite reordering bug fixed
+- Automated AAT build process
+- Changed OFL license to version 1.1 
+
+9 May 2008 (SIL NRSI team) Doulos SIL version 4.104
+- Double-encoded the SIL PUA characters which were added to Unicode 5.1 (using ttfremap)
+- Changed version number (using ttfsetver)
+
+16 Aug 2007 (SIL NRSI team) Doulos SIL version 4.102
+- Modified the OpenType features so that InDesign's built-in small caps work
+
+31 Jan 2007 (SIL NRSI team) Doulos SIL version 4.100
+- Added PUA character F26A
+- Added 2308, 2309
+- Removed Cyrillic italic alternates feature and added those 3 characters to the slant italic specials feature
+- Fixed bug in nine-level tones (in PUA) feature
+- Made Chinantec tones larger, added 02C9 to this feature
+- Fixed bug in GSUB table to work in Pango
+
+15 Dec 2006 (SIL NRSI team)  Doulos SIL version 4.0.16 beta 1 (Version 4.016)
+- Beta release (should not be distributed!)
+- Added support for Unicode 5 Latin and Cyrillic additions
+- Other new chars: 2053, 211F, 2123, 2423, FE20..FE23
+- Numerous new PUA characters
+- Deprecated some existing PUA chars now added to Unicode
+- New features:
+	- Open O alternate
+	- Chinantec tones
+	- Pitch contour tramlines
+- Tone bars no longer limited to 3 sequences (OpenType)
+- Added glyphs for nine-level tones (in PUA)
+- Design changes to some Greek, Cyrillic, ogonek and modifier glyphs,
+particularly in italic faces
+
+31 Jan 2006 (SIL NRSI team)  Doulos SIL version 4.0.14 (Version 4.014)
+- First version released under the SIL Open Font License
+
+
+Information for Contributors
+----------------------------
+
+The release of Doulos SIL version 4.0.14  (Version 4.014) under the OFL 
+license provides a means for people to contribute to the project. For information 
+on what you're allowed to change or modify, consult the OFL and OFL-FAQ. The 
+OFL-FAQ also gives a very general rationale regarding why you would want to
+contribute to the project.
+
+Anyone can make their own modified version of Doulos SIL (using a different
+name), but SIL International will continue to maintain and develop the
+canonical version of the Doulos SIL font. As the package maintainer, we
+warmly welcome contributions. Here are some things to keep in mind:
+
+Format: We are open to contributions in various formats, but if you want to
+maximise the chances of us including your work, please make it available to
+us (via email or a URL) as either a FontLab database (preferred) or a
+PostScript Type 1 (or OT-CFF) font.
+
+Source files: We are not yet making the source files available, because
+our build system is rather complex and difficult to reproduce. We hope to 
+include an easier process in the future.
+
+Copyright attribution: If you submit something for inclusion in the main
+Doulos SIL fonts, we will ask you to affirm that it is your original work,
+and ask you to assign the copyright of your work to SIL International. This
+is to ensure that future releases can be made under improved versions of the
+OFL without needing to track you down for further permission. This follows
+the same principle used by the FSF. Keep in mind that we are a
+not-for-profit organization committed to free/libre and open source
+software, and that any contributions incorporated in the fonts will always
+be available under the OFL or a similar license.
+
+Quality: Because we want to be able to guarantee a high level of quality for
+the primary Doulos SIL font, we will review submissions carefully. Please
+don't be discouraged if we do not include a submission for this reason, or
+ask you to make specific revisions.
+
+Types of contributions: If you wish to make a contribution - a set of
+additional glyphs, scripts, code, etc. - please contact us before you do any
+work to see if it is a contribution we currently need. Every addition adds
+to the complexity of the project and needs to be carefully planned. This
+also avoids two people working on the same type of addition at the same time.
+
+When submissions will be included: We plan to revise the fonts when major 
+updates are needed (eg new versions of Unicode). If you wish to make 
+submissions, contact us on the timing. 
+
+Acknowledgements
+----------------
+(Here is where contributors can be acknowledged. If you make modifications
+be sure to add your name (N), email (E), web-address (W) and description
+(D). This list is sorted by last name in alphabetical order.)
+
+N: Walt Agee, Miriam Martin, Annie Olsen, Victor Gaultney, Lorna Priest,
+Alan Ward, Bob Hallissy, Martin Hosken, Sharon Correll, Jon Coblentz,
+Jonathan Kew
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: SIL designers and font engineers
+
+The Doulos SIL project is maintained by SIL International.
+
+For more information please visit the Doulos SIL page on SIL International's
+Computers and Writing systems website:
+http://scripts.sil.org/DoulosSILfont
+
+Or send an email to <fonts AT sil DOT org>

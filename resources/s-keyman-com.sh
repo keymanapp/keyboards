@@ -108,8 +108,7 @@ function upload_keyboards {
 function commit_and_push {
   echo "Committing and pushing updated keyboards (if any)"
   
-  pushd
-  cd $S_KEYMAN_COM
+  pushd $S_KEYMAN_COM
   git config user.name "Keyman Build Server"
   git config user.email "keyman-server@users.noreply.github.com"
   git add keyboard || return 1

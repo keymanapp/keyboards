@@ -172,7 +172,7 @@ function prepare_for_upload {
 }
 
 ##
-## Prepars a single keyboard for upload, including building
+## Prepares a single keyboard for upload, including building
 ## the bundled installer for Windows
 ##
 function upload_keyboard {
@@ -189,7 +189,8 @@ function upload_keyboard {
   
   local package_filename=`cat "$keyboard_info" | $JQ -r '.packageFilename'`
   local js_filename=`cat "$keyboard_info" | $JQ -r '.jsFilename'`
-  local min_required_desktop_version=`cat "$keyboard_info" | $JQ -r '.minKeymanDesktopVersion'`
+  local min_required_version=`cat "$keyboard_info" | $JQ -r '.minKeymanVersion'`
+  local platform_windows=`cat "$keyboard_info" | $JQ -r '.platformSupport.windows'`
 
   # jq returns 'null' if the entry is missing, instead of ''
   if [[ $package_filename == "null" ]]; then
@@ -230,13 +231,13 @@ function upload_keyboard {
   fi
 
   if [[ $DO_EXE == true ]]; then
-    if [[ ${package_filename##*.} == kmp ]]; then
-    # We only upload a combined installer for .kmp files
-      if $(verlte "$min_required_desktop_version" "$KEYMANDESKTOP_VERSION"); then
+    if [[ ${package_filename##*.} == kmp ]] && [[ "$platform_windows" == full || "$platform_windows" == basic || "$platform_windows" == dictionary ]]; then
+    # We only upload a combined installer for .kmp files that have a Windows target
+      if $(verlte "$min_required_version" "$KEYMANDESKTOP_VERSION"); then
         create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
         prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
       else
-        echo "$package_name requires minimum of Keyman Desktop $min_required_desktop_version, so a bundled installer will not be created with version $KEYMANDESKTOP_VERSION."
+        echo "$package_name requires minimum of Keyman Desktop $min_required_version, so a bundled installer will not be created with version $KEYMANDESKTOP_VERSION."
       fi
     fi  
   fi

@@ -1,11 +1,11 @@
-Keyboard Data
+﻿Keyboard Data
 -------------
 
 * Name:           Lazca (Lazuri) Klavye
 * Copyright:      (C) 2017 HERdilDER Derneği
 * Version:        1.0
 * Keyman Version: 9.0
-* BCP-47 codes:   lzz
+* BCP-47 codes:   lzz-Latn
 
 Description
 -----------
