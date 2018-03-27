@@ -1,4 +1,4 @@
-<META http-eq<?php
+<?php
   $pagename = 'SIL Boonkit Keyboard Help';
   $pagetitle = 'SIL Boonkit Keyboard Help';
   require_once('header.php');
@@ -59,5 +59,5 @@ SOFTWARE.</p></DIV>
 <h2>Links</h2>
 <ul>
 <li>Home Page: <a href='http://keymankeyboards.com'>http://keymankeyboards.com/</a></li>
-<li><a href='http://keymankeyboards.com/iso:fia'>Other keyboards for these languages</a></li>
+<li><a href='http://keymankeyboards.com/iso:nod'>Other keyboards for these languages</a></li>
 </ul>
