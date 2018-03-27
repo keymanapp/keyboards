@@ -12,15 +12,15 @@ selecting the On Screen Keyboard menu item. </p>
 
 <h2>Keyboard Layout</h2>
 <h3>Default</h3>
-	  <img width="100%" src="Default.jpg">
+  <img width="100%" src="Default.jpg">
 <h3>Shift</h3>
-	  <img width="100%" src="Shift.jpg">
+  <img width="100%" src="Shift.jpg">
 
 <h3>RALT</h3>
-	  <img width="100%" src="RAlt.jpg">
+  <img width="100%" src="RAlt.jpg">
 
 <h3>RAlt+Shift</h3>
-	  <img width="100%" src="RAltShift.jpg">
+  <img width="100%" src="RAltShift.jpg">
 
 <h2>Release History</h2>
 <p>Version 1.0, released 10 March 2018</p>
