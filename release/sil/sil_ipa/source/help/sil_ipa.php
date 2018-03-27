@@ -1,12 +1,10 @@
-<META http-eq<?php
+<?php
   $pagename = 'SIL IPA Keyboard Help';
   $pagetitle = 'SIL IPA Keyboard Help';
   require_once('header.php');
 ?>
 
 <h1>SIL IPA keyboard for Keyman Desktop</h1>
-<html>
-<body lang=EN-US link=black vlink=purple>
 
 <div class=WordSection1>
 

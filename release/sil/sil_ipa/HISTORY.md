@@ -30,7 +30,8 @@ LAP   1.2     07-MAY-2008     updated for Unicode 5.1 (F25F>2C71, F19C>A71B, F19
 LPE   1.3     15-FEB-2013     added U+030D, U+25cc and U+2205
 LPE   1.4     25-FEB-2014     added U+A71d..U+A71F
 LPE   1.5     12-DEC-2017     Updated for GitHub
- 
+LPE   1.6    27-MAR-2018     Added mobile layout 
+
 IPA93 Legacy (1996-2001)
 -----------------
 IPA93.KMN
