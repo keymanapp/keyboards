@@ -11,22 +11,16 @@ selecting the On Screen Keyboard menu item. </p>
 
 
 <h2>Keyboard Layout</h2>
-
-<div id='osk-container'>
-  <h2>Desktop Keyboard Layout</h2>
-  <div id='osk' data-states='default shift'></div>
-</div>
-
 <h3>Default</h3>
 	  <img width="100%" src="Default.jpg">
 <h3>Shift</h3>
 	  <img width="100%" src="Shift.jpg">
 
-<h3>CTRL+ALT</h3>
-	  <img width="100%" src="CtrlAlt.jpg">
+<h3>RALT</h3>
+	  <img width="100%" src="RAlt.jpg">
 
-<h3>CTRL+ALT+Shift</h3>
-	  <img width="100%" src="CtrlAltShift.jpg">
+<h3>RAlt+Shift</h3>
+	  <img width="100%" src="RAltShift.jpg">
 
 <h2>Release History</h2>
 <p>Version 1.0, released 10 March 2018</p>
