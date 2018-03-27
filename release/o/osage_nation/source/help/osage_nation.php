@@ -1,4 +1,4 @@
-<META http-eq<?php
+<?php
   $pagename = 'Osage Keyboard Help';
   $pagetitle = 'Osage Keyboard Help';
   require_once('header.php');
