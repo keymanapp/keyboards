@@ -1,4 +1,4 @@
-<META http-eq<?php
+<?php
   $pagename = 'LIBTRALO Keyboard Help';
   $pagetitle = 'LIBTRALO Keyboard Help';
   require_once('header.php');
