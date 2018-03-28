@@ -1,8 +1,8 @@
-<html>
-<head>
-  <title>The SIL Boonkit Keyman Keyboard Package</title>
-</head>
-<body style="max-width:600px;">
+<?php
+  $pagename = 'SIL Boonkit Keyboard Help';
+  $pagetitle = 'SIL Boonkit Keyboard Help';
+  require_once('header.php');
+?>
 <h1>The SIL Boonkit Keyman Keyboard Package</h1>
 
 <h2>Font</h2>
@@ -28,7 +28,7 @@ and selecting the On Screen Keyboard menu item.     </p>
 	  <p> Boonkit Keyboard shifted</p>
       <P class=Caption></P><A name=license></A>
       <H2>License</H2>
-      <P>SIL Boonkit Keyman Keyboard is copyright ©2008-2017 SIL 
+      <P>SIL Boonkit Keyman Keyboard is copyright &copy; 2008-2017 SIL 
       International. It is distributed under The MIT License (MIT)</P>
       <DIV class=Note>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -61,6 +61,3 @@ SOFTWARE.</p></DIV>
 <li>Home Page: <a href='http://keymankeyboards.com'>http://keymankeyboards.com/</a></li>
 <li><a href='http://keymankeyboards.com/iso:nod'>Other keyboards for these languages</a></li>
 </ul>
-
-</body>
-</html>
