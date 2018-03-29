@@ -1,5 +1,5 @@
 ﻿<?php
-  $pagetitle = 'Hieroglyphic'
+  $pagetitle = 'Hieroglyphic';
   require_once('header.php');
 ?>
 <div class="font-egy">
