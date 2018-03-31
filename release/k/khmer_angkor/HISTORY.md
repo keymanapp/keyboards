@@ -1,5 +1,10 @@
 Khmer Angkor Change History
 =======================
+
+1.0.3 (31 Mar 2018)
+-------------------
+* tweaked package name and author
+
 1.0.2 (21 Mar 2018)
 -------------------
 * rebuilt to include touch keyboard in the keyboard package
