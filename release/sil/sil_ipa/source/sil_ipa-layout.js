@@ -1,6 +1,6 @@
-{
+﻿{
   "tablet": {
-    "font": "Doulos SIL",
+    "font": "Charis SIL",
     "layer": [
       {
         "id": "default",
@@ -1024,9 +1024,15 @@
             "id": 2,
             "key": [
               {
+                "id": "T_new_472",
+                "text": "",
+                "width": "62",
+                "sp": "10"
+              },
+              {
                 "id": "K_A",
                 "text": "A",
-                "pad": 70,
+                "pad": "",
                 "nextlayer": "default",
                 "sk": [
                   {
@@ -1731,9 +1737,15 @@
             "id": 2,
             "key": [
               {
+                "id": "T_new_637",
+                "text": "",
+                "width": "62",
+                "sp": "10"
+              },
+              {
                 "id": "U_0040",
                 "text": "@",
-                "pad": "70",
+                "pad": "0",
                 "layer": "shift"
               },
               {
@@ -1847,7 +1859,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "110",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "shift"
               },
               {
                 "id": "K_LBRKT",
@@ -1961,7 +1974,7 @@
                 "text": "🌀",
                 "width": "120",
                 "sp": "1",
-                "nextlayer": "default"
+                "nextlayer": "diacritic"
               },
               {
                 "id": "K_LOPT",
@@ -2123,9 +2136,15 @@
             "id": 2,
             "key": [
               {
+                "id": "T_new_783",
+                "text": "",
+                "width": "62",
+                "sp": "10"
+              },
+              {
                 "id": "U_030C",
                 "text": " ̌",
-                "pad": 70,
+                "pad": "0",
                 "nextlayer": "default",
                 "sk": [
                   {
@@ -2226,7 +2245,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "110",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "shift"
               },
               {
                 "id": "U_2197",
@@ -2394,10 +2414,11 @@
                 "nextlayer": "default"
               },
               {
-                "id": "T_diacritic",
-                "text": "🌀",
+                "id": "K_NUMLOCK",
+                "text": "*123*",
                 "width": "120",
-                "nextlayer": "diacritic"
+                "sp": "1",
+                "nextlayer": "numeric"
               },
               {
                 "id": "K_LOPT",

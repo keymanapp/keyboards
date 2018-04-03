@@ -1,6 +1,10 @@
 SIL IPA Keyboard Change History
 =======================
 
+1.6 (27 Mar 2018)
+-------------------
+* Added mobile layout
+
 1.5 (27 Jan 2018)
 -----------------
 * Updated by Lorna Evans for submitting to GitHub
