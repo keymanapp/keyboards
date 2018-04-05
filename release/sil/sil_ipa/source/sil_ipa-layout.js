@@ -1,4 +1,4 @@
-﻿{
+{
   "tablet": {
     "font": "Charis SIL",
     "layer": [
@@ -242,9 +242,9 @@
             "id": 2,
             "key": [
               {
-                "id": "T_new_738",
+                "id": "T_new_319",
                 "text": "",
-                "width": 62,
+                "width": "62",
                 "sp": "10"
               },
               {
@@ -1745,7 +1745,7 @@
               {
                 "id": "U_0040",
                 "text": "@",
-                "pad": "0",
+                "pad": "",
                 "layer": "shift"
               },
               {
@@ -2144,7 +2144,7 @@
               {
                 "id": "U_030C",
                 "text": " ̌",
-                "pad": "0",
+                "pad": "",
                 "nextlayer": "default",
                 "sk": [
                   {
