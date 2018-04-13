@@ -1,2 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Package><System><KeymanDeveloperVersion>9.0.523.0</KeymanDeveloperVersion><FileVersion>7.0</FileVersion></System><Options><ExecuteProgram></ExecuteProgram><MSIFileName></MSIFileName><MSIOptions></MSIOptions></Options><Buttons><Button><ButtonType>install</ButtonType><Caption>&amp;Install</Caption><URL></URL><Left>0</Left><Top>0</Top></Button><Button><ButtonType>cancel</ButtonType><Caption>Cancel</Caption><URL></URL><Left>0</Left><Top>0</Top></Button><Button><ButtonType>about</ButtonType><Caption>&amp;About...</Caption><URL></URL><Left>0</Left><Top>0</Top></Button></Buttons><Registry/><StartMenu><Folder></Folder><Items/></StartMenu><Info><Version URL="">2.2</Version><Name URL="">SIL Tai Dam</Name><Copyright URL="">Copyright © 2007-2017 SIL International</Copyright><Author URL="">SIL International</Author></Info><Files><File><Name>..\build\sil_tai_dam.kmx</Name><Description>Keyboard SIL Tai Dam</Description><CopyLocation>0</CopyLocation><FileType>.kmx</FileType></File><File><Name>sil_tai_dam_layout.pdf</Name><Description>File sil_tai_dam_layout.pdf</Description><CopyLocation>0</CopyLocation><FileType>.pdf</FileType></File></Files><Strings/></Package>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>10.0.1056.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL="">2.2</Version>
+    <Name URL="">SIL Tai Dam</Name>
+    <Copyright URL="">Copyright © 2007-2017 SIL International</Copyright>
+    <Author URL="">SIL International</Author>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\sil_tai_dam.kmx</Name>
+      <Description>Keyboard SIL Tai Dam</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>welcome\sil_tai_dam_layout.pdf</Name>
+      <Description>File sil_tai_dam_layout.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_tai_dam.kvk</Name>
+      <Description>File sil_tai_dam.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>SIL Tai Dam</Name>
+      <ID>sil_tai_dam</ID>
+      <Version>2.2</Version>
+      <Languages>
+        <Language ID="blt">Tai Dam</Language>
+        <Language ID="twh-Tavt">Tai Don</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
