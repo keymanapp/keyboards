@@ -1,7 +1,7 @@
 Cameroun AZERTY Keyboard
 =====================
 
-Copyright (C) 2006-2018 SIL Cameroon
+Copyright (C) 2006-2018 SIL International
 
 Version 1.2
 
