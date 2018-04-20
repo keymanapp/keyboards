@@ -1,66 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Eastern Congo Keyboard</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        html, body {
-            padding: 0;
-            margin: 4px 4px 0 4px;
-            font-family: 'Charis SIL';}
-        div, p, li {
-            margin-bottom: 8px
-        }
-        table.inputSequences {
-            border: 1px solid #1C6EA4;
-            background-color: #FFFFFF;
-            width: 100%;
-            text-align: left;
-            border-collapse: collapse;
-        }
-        table.inputSequences td, table.inputSequences th {
-            border: 1px solid #FFFFFF;
-            padding: 3px 2px;
-        }
-        table.inputSequences tr:nth-child(even) {
-            background: #D0E4F5;
-        }
-        table.inputSequences thead {
-            background: #1C6EA4;
-            background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-            background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-            background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-            border-bottom: 2px solid #444444;
-        }
-        table.inputSequences thead th {
-            font-weight: bold;
-            color: #FFFFFF;
-            border-left: 4px solid #D0E4F5;
-        }
-        table.inputSequences thead th:first-child {
-            border-left: none;
-        }
-        table.inputSequences tfoot td {
-            font-size: 14px;
-        }
-        table.inputSequences tfoot .links {
-            text-align: right;
-        }
-        table.inputSequences tfoot .links a{
-            display: inline-block;
-            background: #1C6EA4;
-            color: #FFFFFF;
-            padding: 2px 8px;
-            border-radius: 5px;
-        }
-        img {
-            width: 100%;
-        }
-    </style>
-  </head>
-  <body>
-    <h1>Eastern Congo Keyboard</h1>
+<?php
+  $pagename = 'Eastern Congo (SIL)';
+  $pagetitle = 'Eastern Congo keyboard help';
+  require_once('header.php');
+?>
+    <h2>Keyboard layout</h2>
     <p>Eastern Congo keyboard for languages of the Democratic Republic of the Congo.</p>
     <p><img src="sil_eastern_congoU_.png" alt="Eastern Congo keyboard layout (normal state)"></p>
     <h1>Eastern Congo Keyboard</h1>
@@ -71,7 +14,7 @@
     <table class="inputSequences">
         <thead>
             <tr>
-                <th>Keystroke</th><th>Character</th><th>Keystroke</th><th>Character</th>
+                <th style="padding-right: 20px;">Keystroke</th><th style="padding-right: 40px;">Character</th><th style="padding-right: 20px;">Keystroke</th><th>Character</th>
             </tr>
         </thead>
         <tbody>a
@@ -136,7 +79,7 @@
     <table class="inputSequences">
         <thead>
             <tr>
-                <th>Keystrokes</th><th>Character</th><th>Example keystrokes</th><th>Example result</th><th>Commments</th>
+                <th style="padding-right: 15px;">Keystrokes</th><th style="padding-right: 15px;">Character</th><th style="padding-right: 15px;">Example keystrokes</th><th style="padding-right: 15px;">Example results</th><th>Comments</th>
             </tr>
         </thead>
         <tbody>
@@ -192,7 +135,7 @@
     <table class="inputSequences">
         <thead>
             <tr>
-                <th>Keystroke</th><th>Character</th><th>Comment</th>
+                <th style="padding-right: 20px;">Keystroke</th><th style="padding-right: 20px;">Character</th><th style="padding-right: 20px;">Comment</th>
             </tr>
         </thead>
         <tbody>
