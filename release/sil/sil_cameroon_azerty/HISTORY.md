@@ -1,4 +1,4 @@
-Cameroun AZERTY Keyboard Change History
+Cameroon AZERTY Keyboard Change History
 =======================
 
 1.2 (10 Apr 2018)
