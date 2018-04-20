@@ -18,6 +18,14 @@ function build_keyboards {
 
   local shortname
   for shortname in "$KEYBOARDROOT/$group/"*/ ; do
+    if [ ! "$(ls -A $shortname)" ]; then
+      if [ "$WARNINGS_AS_ERRORS" = true ]; then
+        die "$shortname is empty."
+      fi  
+      echo "$shortname is empty. skipping..."
+      continue
+    fi
+
     local base_shortname=$(basename "$shortname")
     if [[ "$base_shortname" == '*' ]]; then
       exit 0
@@ -69,10 +77,23 @@ function build_keyboard {
   pushd "$keyboard"
   
   #
+  # Check if .keyboard_info doesn't exist
+  #
+  keyboard_infoFilename="$base_keyboard.keyboard_info"
+  if [ ! -f "$keyboard_infoFilename" ]; then
+    echo "- No $keyboard_infoFilename file. Skipping..."   
+    if [ "$WARNINGS_AS_ERRORS" = true ]; then
+      die "$keyboard_infoFilename doesn't exist"
+    fi  
+    popd
+    return 0
+  fi
+  
+  #
   # Validate the .keyboard_info before build
   #
   
-  validate_keyboard_info "$base_keyboard.keyboard_info" || die "Failed to validate $base_keyboard.keyboard_info in $keyboard"
+  validate_keyboard_info "$keyboard_infoFilename" || die "Failed to validate $keyboard_infoFilename in $keyboard"
   validate_keyboard_uniqueness "$group" "$keyboard" "$base_keyboard"
   
   if [ "$DO_BUILD" = false ]; then
@@ -95,10 +116,10 @@ function build_keyboard {
   #  * keyboard_info_documentationFilename
   #
   
+  local keyboard_info_license=
   local keyboard_info_packageFilename=
   local keyboard_info_jsFilename=
   local keyboard_info_documentationFilename=
-  local keyboard_info_license=
   
   lines=$($KMCOMP_LAUNCHER "$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
   lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
