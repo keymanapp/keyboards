@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'Cameroon AZERTY Keyboard Help';
+  $pagename = 'Cameroon AZERTY (SIL)';
   $pagetitle = 'Clavier camerounais avec AZERTY clavier';
   require_once('header.php');
 
