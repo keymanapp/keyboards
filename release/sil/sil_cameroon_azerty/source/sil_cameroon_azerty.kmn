@@ -6,8 +6,8 @@ c ****************************************************************
 
 store(&VERSION) '9.0'
 c HOTKEY "^+C"
-store(&BITMAP) 'sil_cameroun_azerty.ico'
-store(&name) "Cameroun AZERTY"
+store(&BITMAP) 'sil_cameroon_azerty.ico'
+store(&NAME) 'Cameroon AZERTY'
 store(&mnemoniclayout) "1"
 c Specify the first group of rules to use in processing
 store(&TARGETS) 'windows macosx'
@@ -17,7 +17,7 @@ store(&KEYBOARDVERSION) '1.2'
 store(&LANGUAGE) 'x040C'
 store(&WINDOWSLANGUAGES) 'x040C'
 store(&ETHNOLOGUECODE) 'abb add ael agq ags aku anv asj ass ato azo baf bag bas bav baw bax baz bbi bbj bbk bbq bbw bbx bby bce bcw bdn bdu beb bec bfd bfj bfm bfp bgf bgj bhs biw bju bkc bkh bkm bko bmo bmv bnz boe bqd bqm bqo bqt bqz bri bse bsi bss btb btc bum bvg bvm bwh bwt bxp bxs byb byv bzv ckx cug cuv dae dbq dek dii dkx dme dmm dmo dow dua dur duz ekm emn eto ewo fak fal fll fmp fub gid gis giz gke gmn gnd gou guv gyi hij hna hya isu iyo jbu jgo jia jim kdz ken kfl kfn kid kkj klc kme kmp knp kot kqx ksf kvj kvm kwu kzr lbi lem leo lfa lmp lmx lns luw maf mbo mcp mcs mct mcu mdd mea meq mfd mff mfh mfi mfj mfk mgg mgo mhk mif mij mkk mlb mlr mlw mmu mnf mpi mqb mru msv mtk muc mug muo muy mxf mxu myg mzd nbv ncp ncr ndb ndu nfu nge ngj ngn ngv ngy nhu njj njy nkc nla nmg nml nmr nnh nnx nnz nsh nwe nza obl oku ost ozm pbi pfe pmm pmn pny sgi sox swq szv tik toz tsh ttf tui twn udl uiv usk vut weh wes wok www xed xmb xmd xmg xmj yam yas yat yav ybb yei yko zhw ziz zuy'
-store(&VISUALKEYBOARD) 'sil_cameroun_azerty.kvks'
+store(&VISUALKEYBOARD) 'sil_cameroon_azerty.kvks'
 begin Unicode > use(First)
 
 c base keys and outputs:  1='Cam' (! + key) , 2 = 'Spcl' (: + key)
@@ -48,12 +48,13 @@ store(Tk) 'ù%,?§èé'
 store(TsM) U+02CB U+02CA U+02C6 U+02C7 U+02C9 U+F196 U+00A8
 store(Ts) U+0300 U+0301 U+0302 U+030C U+0304 U+030D U+0308
 store(Tck) '²£'
+c Replaced PUA characters with appropriate Unicode characters. AC 2018.
 c store(Tc1) U+F173 U+F172
 c store(Tc2) U+F174 U+F171
 store(Tc1) U+1DC5 U+1DC7
 store(Tc2) U+1DC6 U+1DC4
 store(Tc) outs(Tc1) outs(Tc2)
-c Unicode 5.0 ?:  store(Tc) U+1DC5 U+1DC7 U+1DC6 U+1DC4
+
 
 c nasal keys (tilde under) & dot under 'Spcl'
 store(Nku) 'à='

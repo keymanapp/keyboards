@@ -1,79 +1,31 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
-<head>
-    <title>Clavier Camerounais avec AZERTY clavier</title>
-    <style type='text/css'>
-        html, body { padding: 0; margin: 4px 4px 0 4px; font-family: Charis SIL;}
-        div, p, li { margin-bottom: 8px }
-table.inputSequences {
-  border: 1px solid #1C6EA4;
-  background-color: #FFFFFF;
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-}
-table.inputSequences td, table.inputSequences th {
-  border: 1px solid #FFFFFF;
-  padding: 3px 2px;
-}
-table.inputSequences tr:nth-child(even) {
-  background: #D0E4F5;
-}
-table.inputSequences thead {
-  background: #1C6EA4;
-  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  border-bottom: 2px solid #444444;
-}
-table.inputSequences thead th {
-  font-weight: bold;
-  color: #FFFFFF;
-  border-left: 4px solid #D0E4F5;
-}
-table.inputSequences thead th:first-child {
-  border-left: none;
-}
+<?php
+  $pagename = 'Cameroon AZERTY Keyboard Help';
+  $pagetitle = 'Clavier camerounais avec AZERTY clavier';
+  require_once('header.php');
 
-table.inputSequences tfoot td {
-  font-size: 14px;
-}
-table.inputSequences tfoot .links {
-  text-align: right;
-}
-table.inputSequences tfoot .links a{
-  display: inline-block;
-  background: #1C6EA4;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
-.keylayout {width: 100%;}
-.keyguide {width: 300px;}
-    </style>
-</head>
-<body>
+?>
 
-<h1>Cameroun AZERTY</h1>
+<div class="keyboardDocumentation" lang="fr">
+<h2>Disposition des touches d'un clavier de saisie</h2>
 
-<p>Clavier camerounais avec AZERTY clavier.</p>
+<div class="keylayout" style="padding-bottom: 20px;"><img src='sil_cameroon_azertyU_.png' alt='Clavier' /></div>
 
-<div><img class="keylayout" src='keylayout.png' alt='Keyboard Layout' /></div>
+<div class="keylayout" style="padding-bottom: 20px;"><img src='sil_cameroon_azertyU_S.png' alt='Clavier: majuscule' /></div>
 
-<div><img class="keyguide" src='keyinfo.png' alt='Keyboard Legend' /></div>
+<div class="keylayout" style="padding-bottom: 20px;"><img src='sil_cameroon_azertyU_RA.png' alt='Clavier: AltGr (Alt droite)' /></div>
 
-<p>Avec le clavier 'Cameroun AZERTY', la touche <kbd>Alt Gr</kbd> et ses symboles restent toujours disponibles. Voyez les carrés foncés ci-dessus. Pour accéder les caractères originaux du clavier comme ‘ç’, il faut tapez la touche deux fois.</p>
+<p>Avec le clavier 'Cameroun AZERTY', la touche <kbd>Alt Gr</kbd> et ses symboles restent toujours disponibles. Pour accéder les caractères originaux du clavier comme ‘ç’, il faut tapez la touche deux fois.</p>
 <p>Tapez toujours les accents avant les voyelles. S'il y a une cédille ou un tilde, tapez-le d'abord et puis l'accent. Voila, dans la table ci-dessous, les touches et les combinaisons qui conviennent pour tous les caractères modificateurs.</p>
 
 <h3>Latin étendu</h3>
 <table class="inputSequences">
 <thead>
 	<tr>
-		<th>Graphème</th>
-		<th>Tape</th>
-		<th>Point de code</th>
-		<th>Graphème</th>
-		<th>Tape</th>
+		<th style="padding-right: 20px;">Graphème</th>
+		<th style="padding-right: 20px;">Tape</th>
+		<th style="padding-right: 40px;">Point de code</th>
+		<th style="padding-right: 20px;">Graphème</th>
+		<th style="padding-right: 20px;">Tape</th>
 		<th>Point de code</th>
 	</tr>
 </thead>
@@ -153,7 +105,7 @@ table.inputSequences tfoot .links a{
 <table class="inputSequences">
 <thead>
 	<tr>
-		<th>Signe diacritique</th><th>Forme</th><th>Tape</th>
+		<th style="padding-right: 30px;">Signe diacritique</th><th style="padding-right: 30px;">Forme</th><th>Tape</th>
 	</tr>
 </thead>
 <tbody>
@@ -194,11 +146,11 @@ table.inputSequences tfoot .links a{
 
 	</tr>
 	<tr>
-		<td>haut-moyen</td><td>◌&#x1DC7;</td><td>!²</td>
+		<td>haut-moyen</td><td>◌&#x1DC7;</td><td>£</td>
 
 	</tr>
 	<tr>
-		<td>bas-moyen</td><td>◌&#x1DC5;</td><td>£</td>
+		<td>bas-moyen</td><td>◌&#x1DC5;</td><td>²</td>
 
 	</tr>
 	<tr>
@@ -206,15 +158,15 @@ table.inputSequences tfoot .links a{
 
 	</tr>
 	<tr>
-		<td>moyen-bas</td><td>◌&#x1DC6;</td><td>²</td>
+		<td>moyen-bas</td><td>◌&#x1DC6;</td><td>!²</td>
 
 	</tr>
 	<tr>
-		<td>tilde dessous</td><td>◌̰</td><td>!à</td>
+		<td>tilde dessous</td><td>◌̰</td><td>:à</td>
 
 	</tr>
 	<tr>
-		<td>point dessous</td><td>◌̣</td><td>!.</td>
+		<td>point dessous</td><td>◌̣</td><td>:=</td>
 	</tr>
 
 </tbody>
@@ -227,6 +179,4 @@ table.inputSequences tfoot .links a{
 <ul>
     <li><a href="https://software.sil.org/charis/">Charis SIL</a></li>
 </ul>
-
-</body>
-</html>
+</div>
