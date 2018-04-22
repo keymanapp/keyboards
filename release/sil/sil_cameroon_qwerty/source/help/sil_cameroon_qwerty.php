@@ -216,5 +216,3 @@
 
 <p>The <a href="https://software.sil.org/charis/">Charis SIL</a> font family is included with the keyboard package.</p>
 
-</body>
-</html>
