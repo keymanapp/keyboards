@@ -81,10 +81,10 @@ function build_keyboard {
   #
   keyboard_infoFilename="$base_keyboard.keyboard_info"
   if [ ! -f "$keyboard_infoFilename" ]; then
-    echo "- No $keyboard_infoFilename file. Skipping..."   
     if [ "$WARNINGS_AS_ERRORS" = true ]; then
       die "$keyboard_infoFilename doesn't exist"
     fi  
+    echo "  No $keyboard_infoFilename file. Skipping..."   
     popd
     return 0
   fi

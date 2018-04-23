@@ -103,7 +103,7 @@ function parse_args {
           lastkey=$key
           ;;
         *)
-          TARGET="$1" # should this be "$key"?
+          TARGET="$key"
       esac
     else
       case "$lastkey" in
