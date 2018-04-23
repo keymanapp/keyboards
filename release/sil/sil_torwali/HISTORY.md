@@ -1,6 +1,16 @@
 Torwali Change History
 =======================
 
+0.8 (8 Feb 2018)
+* Adjusted copyright dates
+* Fixed support for U+08FF on mobile devices
+
+0.7 (11 Dec 2017)
+-----------------
+* Added support for U+0654 and U+06D4
+* Changed "|" to produce "|" instead of U+0622 (U+0622 is already supported with another keystroke)
+* Fixed support for + and =
+
 0.6 (20 Jan 2017)
 -----------------
 
