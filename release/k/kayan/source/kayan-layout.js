@@ -168,12 +168,12 @@
                   },
                   {
                     "text": ":",
-                    "id": "T_GOOD",
+                    "id": "K_COLON",
                     "layer": "shift"
                   },
                   {
-                    "text": "U_0301",
-                    "id": "T_GOOD"
+                    "text": ";",
+                    "id": "K_COLON"
                   }
                 ]
               },
@@ -385,12 +385,12 @@
                   },
                   {
                     "text": ":",
-                    "id": "T_COLON",
+                    "id": "K_COLON",
                     "layer": "shift"
                   },
                   {
                     "text": ";",
-                    "id": "T_COLON",
+                    "id": "K_COLON",
                     "layer": "default"
                   }
                 ]
