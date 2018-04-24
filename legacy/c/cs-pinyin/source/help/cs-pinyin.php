@@ -67,7 +67,4 @@ by Linguasoft.
 </p>
 
 <p>
-For further information, visit the Tavultesoft website 
-<a target='_blank' href='http://www.tavultesoft.com/'>http://www.tavultesoft.com/</a>, or email Tavultesoft 
-at <a href='mailto:sales@tavultesoft.com'>sales@tavultesoft.com</a>.
-</p>
+If you have any queries or suggestions about this keyboard, please post them at the Keyman <a href='https://community.software.sil.org/c/keyman'>Community site</a>.</p>
