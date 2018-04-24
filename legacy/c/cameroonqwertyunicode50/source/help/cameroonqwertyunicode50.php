@@ -44,7 +44,6 @@ Unicode font family.</div>
 <ul>
 <li><b><a href='cameroon qwerty unicode5 keyboard chart.pdf'>Full Documentation</a> (requires Adobe Reader).</b></li>
 <li>Copyright &copy; SIL Cameroon</li>
-<li><a target='_blank' href='http://cameroon.keymankeyboards.com/'>Keyboard home page</a>.  AZERTY and legacy font versions of this keyboard are available from this page.</li>
 </ul>
 
 <div class='title'>Version History</div>

@@ -45,9 +45,6 @@
 <li>Copyright &copy; 2008 Tavultesoft Pty Ltd, &copy; 2008 Bruce Hooley</li>
 <li>Licenced under the <a href='http://creativecommons.org/licenses/by-sa/2.5/au/' target='_blank'>Creative Commons Attribution-Share Alike 2.5 licence</a>.</li>
 
-<li><a target='_blank' href='http://keymankeyboards.com/?q=k:buang'>Keyboard home page</a></li>
-</ul>
-
 <div class='title'>Version History</div>
 
 <p>Version 1.1: Added support for <span class='key'>^</span>; removed <span class='key'>"</span> + <span class='key'>"</span> rule</p>

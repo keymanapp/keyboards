@@ -620,4 +620,3 @@ is based on a US English keyboard layout.</p>
 
 <br /><p>Version 1.2 for Keyman Desktop 7.0. Released 24 March 2008 - Added instructions on Farsi configuration in Windows</p>
 <p>Version 1.1 for Keyman Desktop 7.0. Released 27 November 2007</p>       
-<p>Keyboard Home Page: <a target='_blank' href='http://keymankeyboards.com/?id=318'>http://keymankeyboards.com/?id=318</a></p>

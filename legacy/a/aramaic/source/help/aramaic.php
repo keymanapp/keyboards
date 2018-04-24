@@ -145,12 +145,12 @@ href='http://www.BethMardutho.org/'>Beth Mardutho: The Syriac Institute</a>.</p>
 <td>Serto Urhoy</td></tr>
 </table>
 
-<p style='padding: 0 10px'><a target='_blank' href='font-license.txt'>Font license</a> &nbsp;  &nbsp;  <a target='_blank' href='melthoguide.pdf'>Font documentation</a></p>
+<p style='padding: 0 10px'><a target='_blank' href='font-license.txt'>Font license</a> &nbsp;  &nbsp;  <a target='_blank' href='melthoguide.doc'>Font documentation</a></p>
 
 <h2>Terms of Use and Support</h2>
 
 <p>These keyboards are freeware.  If you have any queries or suggestions about this keyboard, 
-please contact <a href='mailto:support@tavultesoft.com'>Tavultesoft Support</a>.</p>
+please post them at the Keyman <a href='https://community.software.sil.org/c/keyman'>Community site</a>.</p>
 
 <h1>Keyboard Layout - Aramaic (Hebrew layout)</h1>
 <h2 style="clear:left">Unshifted Layout</h2>

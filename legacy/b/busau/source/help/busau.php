@@ -155,7 +155,7 @@ designed for use with <b>Boko</b>, <b>Bokobaru</b> and <b>Busa</b> and related l
 <h2>Terms of Use and Support</h2>
 
 <p>These keyboards are freeware.  If you have any queries or suggestions about this keyboard, 
-please contact <a href='mailto:support@tavultesoft.com'>Tavultesoft Support</a>.</p>
+please post them at the Keyman <a href='https://community.software.sil.org/c/keyman'>Community site</a>.</p>
 
 <h1>Keyboard Layout</h1>
 
