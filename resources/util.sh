@@ -51,6 +51,7 @@ function parse_args {
   DO_UPLOAD_ONLY=false
   DO_ZIP_ONLY=false
   DO_EXE=true
+  WARNINGS_AS_ERRORS=false
   TARGET=
   PROJECT_TARGET=
   FLAG_SILENT=
@@ -92,6 +93,9 @@ function parse_args {
         -c)
           FLAG_CLEAN=-c
           ;;
+        -w)
+          WARNINGS_AS_ERRORS=true
+          ;;          
         -h|-?)
           display_usage
           ;;
@@ -99,7 +103,7 @@ function parse_args {
           lastkey=$key
           ;;
         *)
-          TARGET="$1"
+          TARGET="$key"
       esac
     else
       case "$lastkey" in
