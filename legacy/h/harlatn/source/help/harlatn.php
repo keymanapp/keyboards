@@ -140,7 +140,6 @@ caption {display: none;}
 	<li><a href="http://scripts.sil.org/Gentium_Basic">Gentium Basic and Gentium Book Basic</a></li>
 </ul>
 
-<p>For information on installing fonts in Windows XP, please read the <a href="http://www.mylanguage.gov.au/lac/134.pdf" target="_blank">MyLanguage font installation guide</a>.</p>
 </div>
 </div>
 
@@ -153,8 +152,7 @@ Vicnet, State Library of Victoria<br />
 328 Swanston St.<br />
 Melbourne VIC 3000<br />
 Australia<br />
-<em>Phone:</em> +61-3-8664-7001<br />
-<em>Email:</em> <a href="mailto:support@openroad.net.au">Open Road Support</a><br />&nbsp;</p>
+</p>
 
 </div>
 </div>
