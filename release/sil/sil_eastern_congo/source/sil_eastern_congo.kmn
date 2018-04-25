@@ -1,6 +1,6 @@
 ﻿c
 c Eastern Congo keyboard layout
-c 
+c
 
 store(&version) "9.0"
 store(&name) "Eastern Congo"
@@ -113,16 +113,16 @@ U+02CA + "'" > U+A78C  c glottal stop
 "=;" + "^" > U+0302  c combining circumflex accent
 "=;" + "@" > U+0304  c combining macron
 
-
-"'" + "'" > "''" [K_BKSP] c single apostrophe, stop context
-";" + ";" > ";;" [K_BKSP]
-"`" + "`" > "``" [K_BKSP]
-'"' + '"' > '""' [K_BKSP]
-"=" + "=" > "==" [K_BKSP]
-":" + ":" > "::" [K_BKSP]
-"^" + "^" > "^^" [K_BKSP]
-"@" + "@" > "@@" [K_BKSP]
-c "'" + "'" > U+0027 [K_BKSP]   c apostrophe, stop context
+c changed lines 117-125 to use dk(block-convert) to terminate processing on advice from MD.
+"'" + "'" > "''" dk(block-convert) c single apostrophe, stop context
+";" + ";" > ";;" dk(block-convert)
+"`" + "`" > "``" dk(block-convert)
+'"' + '"' > '""' dk(block-convert)
+"=" + "=" > "==" dk(block-convert)
+":" + ":" > "::" dk(block-convert)
+"^" + "^" > "^^" dk(block-convert)
+"@" + "@" > "@@" dk(block-convert)
+c "'" + "'" > U+0027 dk(block-convert)   c apostrophe, stop context
 c any(accent) + any(vowel) > index(vowel,2) index(accent,1)
 any(vowel) any(accent) + [K_BKSP] > nul
 any(vowel) any(accent) + [SHIFT K_BKSP] > index(vowel,1)
