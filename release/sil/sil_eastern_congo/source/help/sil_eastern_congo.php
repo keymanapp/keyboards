@@ -3,11 +3,13 @@
   $pagetitle = 'Eastern Congo keyboard help';
   require_once('header.php');
 ?>
-    <h2>Keyboard layout</h2>
-    <p>Eastern Congo keyboard for languages of the Democratic Republic of the Congo.</p>
-    <p><img src="sil_eastern_congoU_.png" alt="Eastern Congo keyboard layout (normal state)"></p>
-    <h1>Eastern Congo Keyboard</h1>
-    <p><img src="sil_eastern_congoU_S.png" alt="Eastern Congo keyboard layout (shift state)"></p>
+
+<h2>Layout</h2>
+<p>Eastern Congo keyboard for languages of the Democratic Republic of the Congo.</p>
+<h3>Default</h3>
+<p><img src="sil_eastern_congoU_.png" alt="Eastern Congo keyboard layout (normal state)"></p>
+<h3>Shift</h3>
+<p><img src="sil_eastern_congoU_S.png" alt="Eastern Congo keyboard layout (shift state)"></p>
 
     <h2>Input sequences</h2>
     <h3>Alphabetic</h3>
