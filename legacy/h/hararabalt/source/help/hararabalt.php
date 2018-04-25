@@ -134,8 +134,7 @@ Vicnet, State Library of Victoria<br />
 328 Swanston St.<br />
 Melbourne VIC 3000<br />
 Australia<br />
-<em>Phone:</em> +61-3-8664-7001<br />
-<em>Email:</em> <a href="mailto:support@openroad.net.au">Open Road Support</a><br />&nbsp;</p>
+</p>
 
 </div>
 </div>

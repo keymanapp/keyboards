@@ -40,20 +40,6 @@ Keyboard Assignments.</a> (PDF, requires <a href='http://www.adobe.com/reader/' 
 1.	Uninstall any previous versions of Keyman<br>
 2.	Install Keyman, following the installation instructions provided with Keyman.<br>
 </ol>
-<h3>Keyboard Install</h3>
-<p>If you downloaded Unicode keyboard installation package GrkPolyComp.kmp: </p>
-
-<ol>
-1.	Install the keyboard by double-clicking the keyboard file: GrkPolyComp.kmp. <br>
-2.	Then click Install to install the keyboard file.<br>
-3.	Read documents related to this keyboard at: Start / All Programs / Greek Poly Comp Kbrd Layout
-</ol>
-<p>If you downloaded the Unicode keyboard zip file GrkPolyComp.zip: </p>
-
-<ol>
-1.	Unzip the files to an appropriate place<br>
-2.	Install the keyboard by double-clicking the keyboard file: GrkPolyComp.kmx. <br>
-3.	Then click Install to install the keyboard file.</ol>
 
 <h2>Using the keyboard</h2>
 
