@@ -4,7 +4,7 @@ Hebrew Keyboard Change History
 1.6 (23 Apr 2018)
 -----------------
 * Migrated to GitHub
-* Removed old fixes for Flex
+* Removed patch rules for FieldWorks
 * added macOS as a target
 
 1.5 (23 Feb 2007)
