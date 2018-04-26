@@ -71,7 +71,7 @@ store(&WINDOWSLANGUAGES) 'x040D'
 store(&COPYRIGHT) 'Copyright © 2003-2018 SIL International'
 store( &Message ) "http://scripts.sil.org/"
 store(&VISUALKEYBOARD) 'sil_hebrew.kvks'
-begin UNICODE > use(Main)  
+begin UNICODE > use(Main)
 
 
 c ------------------------ STORES ---------------------
@@ -79,7 +79,7 @@ c Define sets of characters for matching and filtering:
 
 c ----- NUMBERS ----- jw  12/06/01  Apparently not needed for any ASCII, at least in Word.
 store(nums) "0123456789"
-store(unums) U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 
+store(unums) U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039
 
 c ----- CONSONANTS -----
 c Basic Consonants              jw 12/10/01
@@ -88,7 +88,7 @@ c added heth and teth on x,v 8/6/02
 store(consOut) U+05D0 U+05D1 U+05D2 U+05D3 U+05D4 U+05D5 U+05D6 \
                U+05D9 U+05DA U+05DB U+05DC U+05DD U+05DE U+05DF U+05E0 U+05E1 \
                U+05E2 U+05E3 U+05E4 U+05E5 U+05E6 U+05E7 U+05E8 U+05E9 U+05EA \
-               U+05D7 U+05D8      
+               U+05D7 U+05D8
 
 c ----- VOWELS -----
 c Basic Vowels                             12/18/01
@@ -96,8 +96,8 @@ store(vow1) "aeiouAEO"                      c 12/18/01   8/6/02
 store(vow2) U+05B7 U+05B6 U+05B4 U+05B9 U+05BB U+05B8 U+05B5 U+05B9 c 12/18/01 8/6/02
 
 c lap:2007-03-02, vowels without holem 05B9
-store(vow3) "aeiuAE"                      
-store(vow4) U+05B7 U+05B6 U+05B4 U+05BB U+05B8 U+05B5 
+store(vow3) "aeiuAE"
+store(vow4) U+05B7 U+05B6 U+05B4 U+05BB U+05B8 U+05B5
 
 c Short vowels and long vowels  modified 3/13/97 jw
 c The following stores are used in a rule for entering certain vowels using
@@ -116,13 +116,13 @@ store(cant)        U+0591 U+0592 U+0593 U+0594 U+0595 U+0596 U+0597 \
                    U+05A0 U+05A1 U+05A2 U+05A3 U+05A4 U+05A5 U+05A6 U+05A7 \
                    U+05A8 U+05A9 U+05AA U+05AB U+05AC U+05AD U+05AE \
                    U+05BD U+05C4 U+05C5
-                    
+
 c ----- WORD-ENDING CHARS -----
 
 c Changed to space only, 4/30/97  Otherwise it is impossible to put quotes
 c around any of the listed characters.
 c store(wdendK)   ' !(),-.0123456789?[\{|'
-store(space)   ', ' 
+store(space)   ', '
 store(spaceout) U+002C U+0020
 
 c Illegal keystrokes  2/10/97 jw  including opt and opt-shift keystrokes  Joan added ~ 12/11/01
@@ -144,7 +144,7 @@ c d42  + d43		> d43		c raised asterisk 2/10/97 jw   has no Unicode value 12/18/0
 c variants on some consonants and vowels
 "." + "h"		> U+05D7		    c Heth         12/06/01
 "." + "t"		> U+05D8		    c Teth         12/06/01
-"." + "s"		> U+05E6		    c Tsadhe       12/06/01 
+"." + "s"		> U+05E6		    c Tsadhe       12/06/01
 U+05E1 + "+"	> U+05E9 U+05C2     c Sin          7/9/02
 U+05E1 + "^"	> U+05E9 U+05C1     c shin         12/11/01
 + "f"           > U+05E9 U+05C2     c Sin alt      8/6/02
@@ -165,18 +165,18 @@ U+05B9 any(cant)     + "w" > index(cant,2) U+05D5 U+05B9 c lap:3/14/07 "o" canti
 
 c any(qametsh) + "^"	> d244		c holem waw   added by jw 2/13/97   12/10/01
 c any(qibbuts) + "^"	> d251		c shureq - chgd by pc
- 
+
 any(aeo) + '='	> index(aeoEqOut,1) c patah, seghol, o -> qamets, tsere, holem    12/11/01
 any(aeo) + ';'	> index(vowrOut,1)  c patah, seghol, o -> hpatah, hseghol, hqamets
  + [ALT SHIFT K_A]	> U+05B2        c 8/7/02  c hatafs also to Alt keys 8/7/02
  + [ALT SHIFT K_E]	> U+05B1        c 8/7/02  c hatafs to Alt-shift keys 9/22/03
- + [ALT SHIFT K_O]	> U+05B3        c 8/7/02 
+ + [ALT SHIFT K_O]	> U+05B3        c 8/7/02
 
 c The following lines trap '+' and '^' when not in one of the /combinations given above.
 c In Keyman, this trap works while still permitting the desired combinations /because
 c the longer rules apply first. - added by pc
-+ '+'			> nul     c 12/11/01 
-+ '^'			> nul       
++ '+'			> nul     c 12/11/01
++ '^'			> nul
 
 c ----- Do basic keyboard remapping -----
 
@@ -186,12 +186,12 @@ c Keyman by a rule found above under Combination Keystrokes because that
 c rule has a longer context: any(aeo) + ';'.
 + ";"		> U+05B0 	c shewa	2/11/97   12/10/01
 c silent shewa	2/11/97 12/10/01    no Unicode value
-  
+
 c + any(nums) > index(unums,1)    c 12/10/01        Apparently not needed, at least in Word
 c + any(space) > index(spaceout,1)    c 12/11/01      "                      "
 
 c This rule converts some vowels to the Unicode Encoding 12/11/01
-          + any(vow1) > index(vow2,1)                      c 12/10/01  
+          + any(vow1) > index(vow2,1)                      c 12/10/01
 any(vow4) + any(vow3) > index(vow4,1) U+034F index(vow4,2)   c lap: 3/2/07  vowel CGJ vowel  (2)
 c any(vow4) U+034F U+05C7 + "=" > index(vow4,1) U+05B9         c lap: 3/5/07 remove CGJ for o=
 c U+05BD    + any(vow1) > U+05BD U+034F index(vow2,2)        c lap: 2/26/07  meteg CGJ vowel
@@ -205,7 +205,7 @@ c + "~"		> d180	c accent             no Unicode value available 12/11/01
 
 c Added 2/10/97 to correct placement of open & close Re-added 8/1/02 to match
 c physical shape on keyboard. Otherwise, are backwards.
- + "("		> U+0029  c d41	close paren	2/10/97        
+ + "("		> U+0029  c d41	close paren	2/10/97
  + ")"		> U+0028  c d40	open paren	2/10/97
  + "{"		> U+007D  c d125 close curly bracket 2/10/97
  + "}"		> U+007B  c d123 open curly bracket 2/10/97
@@ -226,7 +226,7 @@ c The next 5 rules handle characters that can delimit the end of a word.
     + [ALT K_HYPHEN]		> U+2014   c em-dash          12/11/01
     + [ALT K_COLON]     	> U+003B   c semicolon        8/6/02 from ALT K_COLON (doesn't work in XP)
     + [ALT SHIFT K_COLON]   > U+05C3   c colon            12/10/01  8/7/02 moved here 9/22/03
-                                                              
+
     + [K_QUOTE]		       >  U+2019 	c opening (right) single quote 2/11/97 12/12/01
     + [SHIFT K_QUOTE]	>  U+201D 	c opening (right) double quote 2/11/97 12/12/01
 c Note: Closing quotation marks are attained by typing a quotation mark
@@ -234,13 +234,13 @@ c followed by typing a word-ending character. This is handled in group
 c "SmartQuotes" which is called from rules that enter any of various
 c word-characters (e.g. em-dash).
 c 12/11/01
-+ [ALT SHIFT K_0]	> U+05AF    c circellus   12/18/01  
++ [ALT SHIFT K_0]	> U+05AF    c circellus   12/18/01
 + [ALT K_COMMA] 	> d187		c closechevron 187 ok  2/10/97
 + [ALT K_PERIOD]	> d171		c r chevron ch from 187 to 171 12/96 jw ok 2/10/97
 + [ALT K_SLASH]		> U+05F3			    c abbrv1   12/10/01
-+ [ALT SHIFT K_SLASH]	> U+05F4			c abbrv2   12/10/01 
-+ [SHIFT K_COLON]	> U+05F4		    	c abbrv2    9/22/03  added to match Tiro kbd. 
-+ [ALT SHIFT K_M]   	   > U+200D	        c zero width joiner 5/28/97   12/10/01 
++ [ALT SHIFT K_SLASH]	> U+05F4			c abbrv2   12/10/01
++ [SHIFT K_COLON]	> U+05F4		    	c abbrv2    9/22/03  added to match Tiro kbd.
++ [ALT SHIFT K_M]   	   > U+200D	        c zero width joiner 5/28/97   12/10/01
 + [ALT K_M]          	   > U+200C	        c zero width non-joiner     7/25/03 jw
 + [ALT SHIFT K_P]   	   > U+034F	        c CGJ-Combining Grap.Joiner 7/25/03 jw  9/22/03
 + [ALT K_SPACE] 		> U+2009			c thinspace       12/10/01
@@ -248,12 +248,12 @@ c 12/11/01
 c + [ALT K_P]		>  d62			c paragraph mark     No Unicode available 12/19/01
 c + [ALT K_S]		>  d60			c section mark             "             "
 c + [ALT SHIFT K_N]	>  U+F300		c inverted nun           7/16/02
-+ [ALT SHIFT K_HYPHEN]	> U+05BF    c rafe   12/10/01    
++ [ALT SHIFT K_HYPHEN]	> U+05BF    c rafe   12/10/01
 + [ALT SHIFT K_COMMA]	> U+0307    c number 100's  2/10/97 7/16/02 9/22/03
 c U+05E0 + [ALT SHIFT K_COMMA]        > U+05C6 U+0307    c lap: 2/26/07 (1a)
-+ [ALT K_N]   	   > U+05C6         c lap: 3/5/07 
-+ [ALT K_A]   	   > U+05C7         c lap: 3/8/07 
-+ [ALT K_O]   	   > U+05C7         c lap: 3/8/07 
++ [ALT K_N]   	   > U+05C6         c lap: 3/5/07
++ [ALT K_A]   	   > U+05C7         c lap: 3/8/07
++ [ALT K_O]   	   > U+05C7         c lap: 3/8/07
 c U+05E0 U+034F + [ALT SHIFT K_COMMA]	> U+05E0 U+0307    c lap: 3/2/07 REMOVE CGJ***
 c U+05C6 U+034F + [ALT SHIFT K_COMMA]	> U+05C6 U+0307    c lap: 3/2/07 REMOVE CGJ***
 + [ALT SHIFT K_PERIOD]	> U+0308    c number 1000's  2/10/97 7/16/02
@@ -282,7 +282,7 @@ c + [ALT K_LBRKT]     	>  F303	    c  PUA meteg left (with hatafs)   7/16/02 7/2
 + [SHIFT K_3]		>  U+05A8   c pashta
 + [SHIFT K_4]		>  U+059C   c geresh
 + [SHIFT K_5]		>  U+059E   c gershayim
-+ [SHIFT K_7]		>  U+05AC   c illuj 
++ [SHIFT K_7]		>  U+05AC   c illuj
 + [SHIFT K_8]		>  U+059D   c geresh muqdam 7/16/02
 + [SHIFT K_2]		>  U+0598   c zarqa
 + [ALT SHIFT K_9]	>  U+0593   c salseleth
@@ -309,18 +309,18 @@ c + [ALT K_2]	    	>  U+F302	c PUA right meteg   7/16/02 removed 7/25/03 use met
 
 c ----- Word-ending Chars -----
 c other chars that designate a word ending
-	 + any(space)		> use(SmartQuotes) index(space,1)	c chgd to space from wdendK jw 4/30/97
-+ [K_TAB]		> use(SmartQuotes) [K_TAB]		c added by pc
-+ [K_ENTER]		> use(SmartQuotes) [K_ENTER]	c added by pc
++ any(space)		>  index(space,1) use(SmartQuotes)	c chgd to space from wdendK jw 4/30/97. Reordered RHS, AC 4/23/18
++ [K_TAB]		> [K_TAB] use(SmartQuotes) 	c added by pc. Reordered RHS, AC 4/23/18
++ [K_ENTER]		> [K_ENTER] use(SmartQuotes) 	c added by pc. Reordered RHS, AC 4/23/18
 
 c Patch rules to work in FieldWorks.
 
 store(chars) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]\{}|;:",./<>?' "'`~"
- 
+
  + any(chars) > index(chars, 1)
 
 c ------------------------------------------- group SmartQuotes ----------------------------------
-group(SmartQuotes)	
+group(SmartQuotes)
 c added by pc
 
 c Smart quotation marks are implemented by having the default character
@@ -337,13 +337,3 @@ c quotation marks was deemed to be the least obtrusive solution.
 
  U+2019		> U+2018	c closing (left) single quote     12/12/01
  U+201D		> U+201C	c closing (left) double quote     12/12/01
-
-
-
-
-
-
-
-
-
-
