@@ -5,7 +5,7 @@
 #
 
 function display_usage {
-  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-t project_target] [target]"
+  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-t project_target] [target]"
   exit 1
 }
 
