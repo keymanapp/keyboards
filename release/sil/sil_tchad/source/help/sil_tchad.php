@@ -49,7 +49,7 @@ END;
       <td class="phonetic">&#413;</td>
     </tr>
     <tr>
-       <td>' '</td>
+       <td>;'</td>
       <td colspan="3">&#42892; (saltillo: straight glottal)</td>
       <td>;n</td>
       <td>&#331;</td>
@@ -322,7 +322,7 @@ get:</td>
 <td>#</td>
 <td>;@@@</td>
 <td>&#x2117;</td>
-<td>;?</td>
+<td>;??</td>
 <td>&#x0295;</td>
 <td>---</td>
 <td>—</td>
