@@ -1,0 +1,1 @@
+KeymanWeb.KRS(new Stub_Keyboard_hausa_kano()); function Stub_Keyboard_hausa_kano() {this.KF="hausa_kano-1.0.js";this.KI="Keyboard_hausa_kano";this.KN="Hausa Kano";}
