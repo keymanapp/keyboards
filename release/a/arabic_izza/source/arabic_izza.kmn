@@ -3,17 +3,18 @@ c This keyboard layout is a simpler version of current Arabic keyboard standards
 store(&VERSION) '9.0'
 store(&NAME) 'Arabic Izza'
 store(&BITMAP) 'arabic_izza.ico'
-store(&COPYRIGHT) '© 1977-2017 Prof. Abdelmalek Bouhadjera'
+store(&COPYRIGHT) '© 1977-2018 Prof. Abdelmalek Bouhadjera'
 store(&MESSAGE) 'The pleasure of typing Arabic'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&WINDOWSLANGUAGES) 'x1401'
 store(&TARGETS) 'any'
 store(&LANGUAGE) 'x1401'
 store(&KMW_RTL) '1'
 store(&VISUALKEYBOARD) 'arabic_izza.kvk'
+store(&KMW_HELPFILE) 'welcome.htm'
 store(&LAYOUTFILE) 'arabic_izza-layout.js'
-
 begin Unicode > use(main)
+
 
 group(main) using keys
  
@@ -25,13 +26,16 @@ c Rules for writing Hamza
  
  "ا" + "g" > "أ" c Hamza fouk alif
  
- "ء" + "c" > "إ"  c Hamza taht alif
+ "ء" + "v" > "إ"  c Hamza taht alif
  
  "ى" + "n" > "ئ"  c Hamza fouk nabira
   
   "و" + "," > "ؤ"  c Hamza fouk waw
  
- "ء" + "g" > "آ"   c Alif elmad
+ "ء" + "g" > "آ"   c Alif elmad  
+ 
+ "اء" + "g" > "اءَا" c Alif followed by Hamza followed by Alif
+ 
  
 c Rules for letters on level1 from line one to four
 c First line
@@ -65,11 +69,11 @@ c Third line
  + "'" > U+0637 
  + "\" > U+0630 
 c Fourth line
- + "\" > U+0650 
+ 
  + "z" >  U+060C 
  + "x" > U+064F 
- + "c" > U+0621 
- + "v" > U+0631 
+ + "c" > U+0631 
+ + "v" > U+0621 
  
  + "n" > U+0649 
  + "m" > U+0629 
@@ -119,7 +123,7 @@ c Third line
  + '"' > U+003E 
  + "|" > U+003C 
 c Fourth line
- + "|" > U+064D 
+ 
  + "Z" > U+060C 
  + "X" > U+064C 
  + "C" > U+0029 
