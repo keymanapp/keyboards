@@ -591,24 +591,11 @@ mso-ansi-language:EN-US'>&nbsp;</span></p>
 mso-ansi-language:EN-US'>&nbsp;</span></p>
 
   <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Charis SIL";
-mso-ansi-language:EN-US'>*</span><span lang=EN-US style='font-size:10.0pt;
-font-family:"Charis SIL";mso-ansi-language:EN-US'>This keyboard was designed to
-interface with SIL Encoding Converters</span></p>
-
-  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
-          href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=EncCnvtrs"><span
-            style='font-family:"Charis SIL"'>http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=EncCnvtrs</span></a></span></p>
-
-  <p class=MsoNormal><span class=GramE><span lang=EN-US style='font-size:10.0pt;
-font-family:"Charis SIL";mso-ansi-language:EN-US'>or</span></span><span
-        lang=EN-US style='font-size:10.0pt;font-family:"Charis SIL";mso-ansi-language:
-EN-US'> </span><span lang=EN-US style='mso-ansi-language:EN-US'><a
-          href="http://fieldworks.sil.org/stable_download.htm"><span style='font-family:
-"Charis SIL"'>http://fieldworks.sil.org/stable_download.htm</span></a></span></p>
-
-  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span></p>
-
-  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;</span></p>
+mso-ansi-language:EN-US'>*</span>
+      <span lang=EN-US style='font-size:10.0pt;
+font-family:"Charis SIL";mso-ansi-language:EN-US'>This keyboard was designed to interface with
+          <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=EncCnvtrs">SIL Encoding Converters</a>
+          or <a href="https://software.sil.org/fieldworks/download/">Fieldworks</a></span></p>
 
   <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:"Charis SIL";
 mso-ansi-language:EN-US'>Questions or bugs: </span><span lang=EN-US
