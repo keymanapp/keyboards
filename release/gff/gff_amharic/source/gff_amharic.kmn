@@ -3,15 +3,14 @@ c
 c The Ge'ez Frontier Foundation's mnemonic input method for Amharic script on US-QWERTY
 c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
-c License       :  http://creativecommons.org/licenses/by/3.0/
-c Info          :  http://keyboards.ethiopic.org/
-c Keyman        :  http://www.tavultesoft.com/
-c Bugs          :  keyboards@ethiopic.org
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_amharic/1.5/gff_amharic.php
+c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_amharic
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
-c Specification : http://keyboards.ethiopic.org/specification/
-c 
-c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
-c Last Update   :  2008-11-10
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&VERSION) '9.0'
   store(&KeyboardVersion) '1.1'
@@ -33,71 +32,72 @@ c =====================Begin Data Section=======================================
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-store(gIz)   'ሀለሐመሠረሰሸቀበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
-store(kaIb)  'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
-store(sals)  'ሂሊሒሚሢሪሲሺቂቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
-store(rabI)  'ሃላሓማሣራሳሻቃባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
-store(hams)  'ሄሌሔሜሤሬሴሼቄቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
-store(sads)  'ህልሕምሥርስሽቅብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
-store(sabI)  'ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
+  store(gIz)   'ሀለሐመሠረሰሸቀበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
+  store(kaIb)  'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
+  store(sals)  'ሂሊሒሚሢሪሲሺቂቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
+  store(rabI)  'ሃላሓማሣራሳሻቃባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
+  store(hams)  'ሄሌሔሜሤሬሴሼቄቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
+  store(sads)  'ህልሕምሥርስሽቅብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
+  store(sabI)  'ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
 
-store(keys)  'hlHm_rsxqbvtc_nNkKw_zZydjgTCPS_fp'
+  store(keys)  'hlHm_rsxqbvtc_nNkKw_zZydjgTCPS_fp'
 c the following is Amharic specific
-store(extraKeys) 'LMRXBVQWYDJGF'
-store(extraSads) 'ልምርሽብቭቅውይድጅግፍ'
+  store(extraKeys) 'LMRXBVQWYDJGF'
+  store(extraSads) 'ልምርሽብቭቅውይድጅግፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-store(alefKeys)  'aAuUiIeEoO'
-store(alefEthio) 'አአኡኡኢኢእእኦኦ'
+  store(alefKeys)  'aAuUiIeEoO'
+  store(alefEthio) 'አአኡኡኢኢእእኦኦ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-store(zemedeKeys)      'ህልሕምሥርስሽቅብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ'
-store(zemedeKeysKaIb)  'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ'
-store(zemedeEthio)     'ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
+  store(zemedeKeys)      'ህልሕምሥርስሽቅብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ'
+  store(zemedeKeysKaIb)  'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ'
+  store(zemedeEthio)     'ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
 
 c 'hhkqg'
-store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
-store(zemedeWe)  'ኈኈኰቈጐ'
-store(zemedeWu)  'ኍኍኵቍጕ'
-store(zemedeWi)  'ኊኊኲቊጒ'
-store(zemedeWa)  'ኋኋኳቋጓ'
-store(zemedeWEE) 'ኌኌኴቌጔ'
+  store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
+  store(zemedeWe)  'ኈኈኰቈጐ'
+  store(zemedeWu)  'ኍኍኵቍጕ'
+  store(zemedeWi)  'ኊኊኲቊጒ'
+  store(zemedeWa)  'ኋኋኳቋጓ'
+  store(zemedeWEE) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
-store(ArabOnes) '23456789'
-store(ones)     '፪፫፬፭፮፯፰፱'
-store(tens)     '፳፴፵፶፷፸፹፺'
-store(arabNumbers) '123456789'
-store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
-store(arabNumbersWithZero) '0123456789'
-store(ColonOrComma) ':,'
-store(ethWordspaceOrComma) '፡፣'
+  store(ArabOnes) '23456789'
+  store(ones)     '፪፫፬፭፮፯፰፱'
+  store(tens)     '፳፴፵፶፷፸፹፺'
+  store(arabNumbers) '123456789'
+  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(arabNumbersWithZero) '0123456789'
+  store(ColonOrComma) ':,'
+  store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-$keymanonly: store(gIz-key)  'eEäÄéÉèÈêÊëË'
-$keymanweb:  store(gIz-key)  'eE'
-$keymanonly: store(kaIb-key) 'uUùÙúÚûÛüÜ'
-$keymanweb:  store(kaIb-key) 'uU'
-$keymanonly: store(sals-key) 'iIìÌíÍîÎïÏ'
-$keymanweb:  store(sals-key) 'iI'
-$keymanonly: store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-$keymanweb:  store(rabI-key) 'aA'
-$keymanonly: store(hams-key) 'æÆ'
-$keymanonly: store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
-$keymanweb:  store(sabI-key) 'oO'
+  $keymanonly: store(gIz-key)  'eEäÄéÉèÈêÊëË'
+  $keymanweb:  store(gIz-key)  'eE'
+  $keymanonly: store(kaIb-key) 'uUùÙúÚûÛüÜ'
+  $keymanweb:  store(kaIb-key) 'uU'
+  $keymanonly: store(sals-key) 'iIìÌíÍîÎïÏ'
+  $keymanweb:  store(sals-key) 'iI'
+  $keymanonly: store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+  $keymanweb:  store(rabI-key) 'aA'
+  $keymanonly: store(hams-key) 'æÆ'
+  $keymanonly: store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  $keymanweb:  store(sabI-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&LAYOUTFILE) 'gff_amh_7_layout.js'
-store(&KEYBOARDVERSION) '1.4'
-store(&TARGETS) 'any windows'
+  store(&LAYOUTFILE) 'gff_amharic_layout.js'
+  store(&KEYBOARDVERSION) '1.5'
+  store(&TARGETS) 'any windows'
+
 begin Unicode > use(main)
 group(main) using keys    
 
