@@ -13,8 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&VERSION) '9.0'
-store(&KEYBOARDVERSION) '1.5'
-  store(&Name) "አማርኛ(Amharic)"
+store(&Name) "አማርኛ(Amharic)"
 c $keymanonly:store(&MnemonicLayout) "1"
   store(&CapsAlwaysOff) "1"
   store(&Copyright) "Creative Commons Attribution 3.0"
@@ -22,7 +21,6 @@ c $keymanonly:store(&MnemonicLayout) "1"
 store(&WINDOWSLANGUAGES) 'x045E'
 store(&LANGUAGE) 'x045E'
   store(&EthnologueCode) "amh"
-store(&BITMAP) 'gff_amharic.ico'
 store(&VISUALKEYBOARD) 'gff_amharic.kvk'
   store(&HOTKEY) "[CTRL ALT K_A]"
 c 
@@ -78,17 +76,17 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  $keymanonly: store(gIz-key)  'eEäÄéÉèÈêÊëË'
-  $keymanweb:  store(gIz-key)  'eE'
-  $keymanonly: store(kaIb-key) 'uUùÙúÚûÛüÜ'
-  $keymanweb:  store(kaIb-key) 'uU'
-  $keymanonly: store(sals-key) 'iIìÌíÍîÎïÏ'
-  $keymanweb:  store(sals-key) 'iI'
-  $keymanonly: store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-  $keymanweb:  store(rabI-key) 'aA'
-  $keymanonly: store(hams-key) 'æÆ'
-  $keymanonly: store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
-  $keymanweb:  store(sabI-key) 'oO'
+$keymanonly: store(gIz-key)  'eEäÄéÉèÈêÊëË'
+$keymanweb:  store(gIz-key)  'eE'
+$keymanonly: store(kaIb-key) 'uUùÙúÚûÛüÜ'
+$keymanweb:  store(kaIb-key) 'uU'
+$keymanonly: store(sals-key) 'iIìÌíÍîÎïÏ'
+$keymanweb:  store(sals-key) 'iI'
+$keymanonly: store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+$keymanweb:  store(rabI-key) 'aA'
+$keymanonly: store(hams-key) 'æÆ'
+$keymanonly: store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+$keymanweb:  store(sabI-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
@@ -96,7 +94,9 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 store(&LAYOUTFILE) 'gff_amharic_layout.js'
+store(&KEYBOARDVERSION) '1.5'
   store(&TARGETS) 'any windows'
+store(&BITMAP) 'gff_amharic.ico'
 
 begin Unicode > use(main)
 group(main) using keys    
