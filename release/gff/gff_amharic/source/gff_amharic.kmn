@@ -13,16 +13,17 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&VERSION) '9.0'
-  store(&KeyboardVersion) '1.1'
-  store(&Name) "Amharic"
+store(&KEYBOARDVERSION) '1.5'
+  store(&Name) "አማርኛ(Amharic)"
 c $keymanonly:store(&MnemonicLayout) "1"
   store(&CapsAlwaysOff) "1"
   store(&Copyright) "Creative Commons Attribution 3.0"
   store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
-  store(&WINDOWSLANGUAGES) 'x045E'
-  store(&LANGUAGE) 'x045E'
+store(&WINDOWSLANGUAGES) 'x045E'
+store(&LANGUAGE) 'x045E'
   store(&EthnologueCode) "amh"
-  store(&VISUALKEYBOARD) 'gff_amharic.kvk'
+store(&BITMAP) 'gff_amharic.ico'
+store(&VISUALKEYBOARD) 'gff_amharic.kvk'
   store(&HOTKEY) "[CTRL ALT K_A]"
 c 
 c =====================End Identity Section=====================================================
@@ -94,8 +95,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-  store(&LAYOUTFILE) 'gff_amharic_layout.js'
-  store(&KEYBOARDVERSION) '1.5'
+store(&LAYOUTFILE) 'gff_amharic_layout.js'
   store(&TARGETS) 'any windows'
 
 begin Unicode > use(main)
@@ -272,7 +272,7 @@ $keymanonly: any(sads) + any(hams-key) > index(hams,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)
+  any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)  
   any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
   any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1)
   any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
