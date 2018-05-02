@@ -160,7 +160,7 @@
                 "text": "ك"
               },
               {
-                "id": "K_BKQUOTE",
+                "id": "K_QUOTE",
                 "text": "ط"
               },
               {
@@ -841,7 +841,7 @@
                 ]
               },
               {
-                "id": "K_BKQUOTE",
+                "id": "K_QUOTE",
                 "text": "ط",
                 "width": "146",
                 "sk": [
