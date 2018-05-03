@@ -1189,7 +1189,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <p>Version 1.2 - Minor enhancements to both keyboards, including adding dedicated "\" and "Ž" keys to TLU - 10 December 2010</p>
 <p>Version 1.1 - Keyman Desktop 7.0 Release - 8 November 2007</p>
        
-<p>Keyboard Home Page: <a target='_blank' href='http://keymankeyboards.com/?id=382'>http://keymankeyboards.com/?id=382</a></p>
+<p>Keyboard Home Page: <a href='https://keyman.com/keyboards/turkmen'>https://keyman.com/keyboards/turkmen</a></p>
 
 </body>
 </html>

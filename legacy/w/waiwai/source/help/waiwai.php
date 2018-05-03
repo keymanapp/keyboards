@@ -6,8 +6,8 @@
 The keyboard utilises the standard English keyboard and adds the ability to place a caret (^) over 12 specific letters. These letters are: a, e, h, i, k, m, n, o, p, w, x, and y.
   Authors:     Elizabeth Pearman
 */
-  $pagename = 'Wai Wai Keyboard Keyboard Help';
-  $pagetitle = 'Wai Wai Keyboard Keyboard Help';
+  $pagename = 'Wai Wai Keyboard Help';
+  $pagetitle = 'Wai Wai Keyboard Help';
   require_once('header.php');
 ?>
 
