@@ -1,6 +1,6 @@
 {
   "phone": {
-    "font": "Tahoma",
+    "font": "Times New Roman",
     "layer": [
       {
         "id": "default",
@@ -115,6 +115,14 @@
                   {
                     "text": "5",
                     "id": "K_5"
+                  },
+                  {
+                    "text": "ʈ",
+                    "id": "U_0288"
+                  },
+                  {
+                    "text": "θ",
+                    "id": "U_03B8"
                   }
                 ]
               },
@@ -377,6 +385,14 @@
                   {
                     "text": "ɗ",
                     "id": "U_0257"
+                  },
+                  {
+                    "text": "ɖ",
+                    "id": "U_0256"
+                  },
+                  {
+                    "text": "ð",
+                    "id": "U_00F0"
                   }
                 ]
               },
@@ -401,6 +417,10 @@
                   {
                     "text": "ɦ",
                     "id": "U_0266"
+                  },
+                  {
+                    "text": "ħ",
+                    "id": "U_0127"
                   }
                 ]
               },
@@ -493,6 +513,10 @@
                   {
                     "text": "ʋ",
                     "id": "U_028B"
+                  },
+                  {
+                    "text": "ⱱ",
+                    "id": "U_2C71"
                   }
                 ]
               },
@@ -591,6 +615,7 @@
               {
                 "id": "T_ACCENTS",
                 "text": "◌̰̀",
+                "sp": "1",
                 "nextlayer": "accents"
               },
               {
@@ -1103,6 +1128,7 @@
               {
                 "id": "T_ACCENTS",
                 "text": "◌̰̀",
+                "sp": "1",
                 "nextlayer": "accents"
               },
               {
@@ -1334,7 +1360,7 @@
             "id": 3,
             "key": [
               {
-                "id": "T_accents",
+                "id": "T_ACCENTS",
                 "text": "◌̰̀",
                 "sp": "1",
                 "nextlayer": "accents"
@@ -1588,8 +1614,8 @@
             "id": 3,
             "key": [
               {
-                "id": "T_numeric",
-                "text": "123",
+                "id": "K_NUMLOCK",
+                "text": "*123*",
                 "sp": "1",
                 "nextlayer": "numeric"
               },
@@ -1663,6 +1689,7 @@
           }
         ]
       }
-    ]
+    ],
+    "fontsize": ""
   }
 }
