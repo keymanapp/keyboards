@@ -1,7 +1,7 @@
 ﻿c Cameroon AZERTY Keyboard
-c 
+c
 c Cameroon AZERTY Keyboard supporting the Standardized Alphabet for Cameroonian Languages - designed for a French (AZERTY) Keyboard.
-c 
+c
 c ****************************************************************
 
 store(&VERSION) '9.0'
@@ -23,8 +23,8 @@ begin Unicode > use(First)
 c base keys and outputs:  1='Cam' (! + key) , 2 = 'Spcl' (: + key)
 store(Bku) '1234567890°+AZERTYUIOPQSDFGHJKLM%µ>WXCVBN?./§'    c JKLQSX4567890 available for 'Cam'
 store(Bcu) '1234567890°+AZERTYUIOPQSDFGHJKLM' beep 'µ>WXCVBN?./' beep
-store(Scu1) '¼½¾' beep beep beep beep beep beep beep beep beep 'Ɛ' beep 'Ə®ŒƳƗƆØ' \
-beep beep 'ƊÆɡ' beep beep beep '™%×»Ẅ' beep '©' beep 'ƁŊ' beep beep '÷' beep
+store(Scu1) '¼½¾' beep beep beep beep beep beep beep beep beep 'Ɛ' beep 'Ə®ŒƳɄƗƆØ' \
+beep beep 'ƊÆɡⱭ' beep beep beep '™%×»Ẅ' beep '©' beep 'ƁŊ' beep beep '÷' beep
 store(Scu2) beep beep beep beep beep beep beep beep beep beep beep beep beep \
 beep beep beep beep beep beep beep beep beep beep beep beep beep 'ʔ' beep beep \
 beep beep beep beep beep '›' beep beep beep beep beep beep beep beep beep beep
@@ -45,7 +45,7 @@ store(Sc2) outs(Scu2) outs(Scl2)
 c tone keys and outputs
 c store(Tk) 'ù%^¨§èé' JB 2007 ^¨ not working under XP change to ,?
 store(Tk) 'ù%,?§èé'
-store(TsM) U+02CB U+02CA U+02C6 U+02C7 U+02C9 U+F196 U+00A8
+store(TsM) U+02CB U+02CA U+02C6 U+02C7 U+02C9 U+02C8 U+00A8
 store(Ts) U+0300 U+0301 U+0302 U+030C U+0304 U+030D U+0308
 store(Tck) '²£'
 c Replaced PUA characters with appropriate Unicode characters. AC 2018.
