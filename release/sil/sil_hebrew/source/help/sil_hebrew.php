@@ -1,85 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Hebrew keyboard layout</title>
-    <style type='text/css'>
-        html, body { padding: 0; margin: 4px 4px 0 4px; font-family: sans-serif; font-size: 100%}
-        div, p, li { margin-bottom: 8px }
-        table.inputSequences {
-          border: 1px solid #1C6EA4;
-          background-color: #FFFFFF;
-          width: 100%;
-          text-align: left;
-          border-collapse: collapse;
-        }
-        table.inputSequences td, table.inputSequences th {
-          border: 1px solid #FFFFFF;
-          padding: 3px 2px;
-          text-align:center;
-        }
-        table.inputSequences t {
-            font-family: "Ezra SIL","SBL Hebrew",sans-serif;
-        }
-        table.inputSequences tr:nth-child(even) {
-          background: #D0E4F5;
-        }
-        table.inputSequences thead {
-          background: #1C6EA4;
-          background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-          background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-          background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-          border-bottom: 2px solid #444444;
-        }
-        table.inputSequences thead th {
-          font-weight: bold;
-          color: #FFFFFF;
-          border-left: 4px solid #D0E4F5;
-        }
-        table.inputSequences thead th:first-child {
-          border-left: none;
-        }
-        table.inputSequences tfoot td {
-          font-size: 14px;
-        }
-        table.inputSequences tfoot .links {
-          text-align: right;
-        }
-        table.inputSequences tfoot .links a{
-          display: inline-block;
-          background: #1C6EA4;
-          color: #FFFFFF;
-          padding: 2px 8px;
-          border-radius: 5px;
-        }
+<?php
+  $pagename = 'SIL Hebrew Keyboard Help';
+  $pagetitle = 'SIL Hebrew Keyboard Help';
+  $pagestyle = <<<END
+      div, p, li { margin-bottom: 8px }
+      table.inputSequences {border: 1px solid #1C6EA4;background-color: #FFFFFF;width: 100%;text-align: left;border-collapse: collapse;}
+      table.inputSequences td, table.inputSequences th {border: 1px solid #FFFFFF;padding: 3px 2px;text-align:center;}
+      table.inputSequences t {font-family: "Ezra SIL","SBL Hebrew",sans-serif;}
+      table.inputSequences tr:nth-child(even) {background: #D0E4F5;}
+      table.inputSequences thead {background: #1C6EA4;background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);border-bottom: 2px solid #444444;}
+      table.inputSequences thead th {font-weight: bold;color: #FFFFFF;border-left: 4px solid #D0E4F5;}
+      table.inputSequences thead th:first-child {border-left: none;}
+      table.inputSequences tfoot td {font-size: 14px;}
+      table.inputSequences tfoot .links {text-align: right;}
+      table.inputSequences tfoot .links a{display: inline-block;background: #1C6EA4;color: #FFFFFF;padding: 2px 8px;border-radius: 5px;}
+      table.inputSequences td.label p {font-size: 16px;}
+      table.inputSequences tr.glyphs td:not(.label) p {font-size: 26px;}
+      table+table {margin-top: 30px;}
+      .important {text-align: center;font-size: 20px;background-color: #D0E4F5;padding-top:20px;padding-bottom:20px;max-width:850px;margin-left:auto;margin-right: auto;}
+      .centered {text-align: center;}
+      p.centered+table {margin-top:32px;}
+END;
+  require_once('header.php');
+?>
 
-         table.inputSequences td.label p {font-size: 1.0rem;}
-         table.inputSequences tr.glyphs td:not(.label) p {font-size: 1.5rem;}
 
-         table+table {margin-top: 3.0rem;}
-
-         .important {
-             text-align: center;
-             font-size: 1.2rem;
-             background-color: #D0E4F5;
-             padding-top:1.2rem;
-             padding-bottom:1.2rem;
-             max-width:850px;
-             margin-left:auto;
-             margin-right: auto;
-         }
-         .centered {
-             text-align: center;
-         }
-
-         p.centered+table {
-             margin-top:2.0rem;
-         }
-    </style>
-</head>
-<body>
-
-<h1>Hebrew keyboard usage</h1>
 <p>Data must be typed in the following order:</p>
 
 <p class="important">Consonant - Dagesh - Vowel - Low Marks - Pre-positive Marks - High Marks - Post-Positive Marks</p>
@@ -1759,10 +1703,3 @@
         </tr>
         </tbody>
     </table>
-
-
-
-
-
-</body>
-</html>
