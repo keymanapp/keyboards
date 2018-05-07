@@ -1,0 +1,981 @@
+c ----------------------------------------------------------------------------
+c Greek keyboard for use with Unicode Windows fonts such as Galatia SIL
+c and Keyman 6.x
+c ----------------------------------------------------------------------------
+c GrkPolyComp.KMN 6.0  L A Priest - 26-May-2011 removed rule to redefine enter and tab
+c GrkPolyComp.KMN 6.0  L A Priest - 12-Feb-2008 a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF.
+c GrkPolyComp.KMN 6.0  L A Priest - 7-May-2003 changed apostrophe to U+2019 per Peter Kirk
+c GrkPolyComp.KMN 6.0  L A Priest - 5-Feb-2003 Fixed a few bugs with keyboarding options
+c GrkPolyComp.KMN 6.0 jmw - 5-Oct-2002 filename change
+c GALATIASILU.KMN 6.0  L A Priest - 30-Sept-2002 conversion to Unicode
+c SILGRKX6.KMN    6.0  L A Priest - 28-Aug-2002 Change heading information to
+c permit compilation for use with Keyman 6.0, added copyright
+c SILGRKX5.KMN    5.0  I W Metzger - 20-Sept-2000 Change heading information to
+c permit compilation for use with Keyman 5.0
+c SILGRKX4.KMN    4.0  I W Metzger - 20-June-2000 Change heading information to
+c permit compilation for use with Keyman 4.0
+c SILGREEK.KMN    3.1  D I Bevan - 26-Jan-1998
+c Version number change for release
+c SILGREEK.KMN    3.0a D I Bevan - 27-Mar-1997
+c Modified enga support to match transliteration keyboard:
+c ng gives nu-gamma, another g gives gamma-gamma (tr. ngg)
+c Improved addition and removal of breathings from uppercase
+c diphthongs
+c SILGREEK.KMN 3.0  D I Bevan - 14-Mar-1997
+c See REVISION.TXT
+c ----------------------------------------------------------------------------
+   
+VERSION 6.0
+store(&NAME) 'Greek (polytonic precomposed) Unicode 1.03'
+BITMAP ALPHA
+HOTKEY "^+G"
+store(&COPYRIGHT) '© 2002-2011 SIL International'
+MESSAGE "The Greek (polytonic precomposed) Unicode keyboard is distributed under the X11 free software license (http://scripts.sil.org/X11License)."
+
+c LANGUAGE x208, x22
+
+c ----------------------------------------------------------------------------
+
+begin Unicode > use(MainU)
+
+c ----------------------------------------------------------------------------
+c This new store (10-Sept-2007) is a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF
+store(chars) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]\{}|;:",./<>?' "'`~"
+
+c Letters
+store(K_a)          "a"         c key for alpha
+store(a)            U+03B1      c alpha
+store(upA)          U+0391      c ALPHA
+store(K_e)          "e"         c key for epsilon
+store(e)            U+03B5      c epsilon
+store(upE)          U+0395      c EPSILON
+store(K_j)          "j"         c key for eta
+store(j)            U+03B7      c eta
+store(upJ)          U+0397      c ETA
+store(K_i)          "i"         c key for iota
+c store(i)            U+03B9      c iota
+store(upI)          U+0399      c IOTA 
+store(K_o)          "o"         c key for omicron
+store(o)            U+03BF      c omicron
+store(upO)          U+039F      c OMICRON
+store(K_r)          "r"         c key for rho
+store(r)            U+03C1      c rho
+store(K_upR)        "R"         c key for RHO
+store(upR)          U+03A1      c RHO
+store(rRo)          U+1FE5      c rho+rough
+store(upRRo)        U+1FEC      c RHO+rough
+store(rSm)          U+1FE4      c rho+smooth
+c store(K_s)          "s"         c key for sigma
+store(sMed)         U+03C3      c medial sigma
+store(sFin)         U+03C2      c final sigma
+store(K_u)          "u"         c key for upsilon
+store(u)            U+03C5      c upsilon
+store(K_upU)        "U"         c key for UPSILON
+store(upU)          U+03A5      c UPSILON
+store(K_w)          "w"         c key for omega
+c store(w)            U+03C9      c omega
+store(upW)          U+03A9      c OMEGA
+
+c keys for lowercase
+store(K_low)        "a"    "b"    "g"    "d"    "e"    "z"    "j"    "q"    "i" \
+                    "k"    "l"    "m"    "n"    "x"    "o"  \
+                    "p"    xff    "r"    "s"    "t"    "u"    "f"    "c"    "y"    "w"    xff 
+c lowercase letters
+store(low)          U+03B1 U+03B2 U+03B3 U+03B4 U+03B5 U+03B6 U+03B7 U+03B8 U+03B9 \
+                    U+03BA U+03BB U+03BC U+03BD U+03BE U+03BF \
+                    U+03C0 U+03C2 U+03C1 U+03C2 U+03C4 U+03C5 U+03C6 U+03C7 U+03C8 U+03C9 U+1FE5 
+
+c keys for lowercase vowels
+store(K_lowv)       "a"    "e"    "j"    "i"    "o"    "u"    "w"   
+c lowercase vowels
+store(lowv)         U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9
+                    
+c lowercase consonants
+store(lowc)         U+03B2 U+03B3 U+03B4 U+03B6 U+03B8 U+03BA U+03BB U+03BC U+03BD U+03BE  \
+                    U+03C0 U+03C1 U+03C3 U+03C4 U+03C6 U+03C7 U+03C8 U+1FE5 U+03C2
+
+c keys for uppercase
+store(K_up)         "A"    "B"    "G"    "D"    "E"    "Z"    "J"    "Q"    "I"  \
+                    "K"    "L"    "M"    "N"    "X"    "O" \
+                    "P"    "R"    "S"    "T"    "U"    "F"    "C"    "Y"    "W"      
+c uppercase letters
+store(up)           U+0391 U+0392 U+0393 U+0394 U+0395 U+0396 U+0397 U+0398 U+0399 \
+                    U+039A U+039B U+039C U+039D U+039E U+039F \
+                    U+03A0 U+03A1 U+03A3 U+03A4 U+03A5 U+03A6 U+03A7 U+03A8 U+03A9
+                    
+c except E and O
+c store(upnotEO)      U+0391 U+0392 U+0393 U+0394 U+0396 U+0397 U+0398 U+0399 \
+c U+039A U+039B U+039C U+039D U+039E \
+c U+03A0 U+03A1 U+03A3 U+03A4 U+03A5 U+03A6 U+03A7 U+03A8 U+03A9
+
+c keys for upper vowels
+store(K_upV)        "A"    "E"    "J"    "I"    "O"    "U"    "W"                       
+c uppercase vowels
+store(upV)          U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9 
+store(upVRo)        U+1F09 U+1F19 U+1F29 U+1F39 U+1F49 U+1F59 U+1F69
+store(upVRoGr)      U+1F0B U+1F1B U+1F2B U+1F3B U+1F4B U+1F5B U+1F6B
+store(upVRoAc)      U+1F0D U+1F1D U+1F2D U+1F3D U+1F4D U+1F5D U+1F6D
+store(upVAc)        U+0386 U+0388 U+0389 U+038A U+038C U+038E U+038F 
+store(upVGr)        U+1FBA U+1FC8 U+1FCA U+1FDA U+1FF8 U+1FEA U+1FFA 
+
+c store(upVDP)        U+0391 U+0397 U+0399 U+03A5 U+03A9
+c store(upVDPeris)    U+1F0F U+1F2F U+1F3F U+1F5F U+1F6F
+c store(upVPP)        U+0391 U+0397 U+0399 U+03A9
+c store(upVPPeris)    U+1F0E U+1F2E U+1F3E U+1F6E
+
+store(K_upVSm)      "A"    "E"    "J"    "I"    "O"    "W"  
+store(upVSm)        U+0391 U+0395 U+0397 U+0399 U+039F U+03A9
+store(upVSm_Sm)     U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F68
+store(upVSm_Gr)     U+1FBA U+1FC8 U+1FCA U+1FDA U+1FF8 U+1FFA 
+store(upVSm_Ac)     U+0386 U+0388 U+0389 U+038A U+038C U+038F 
+store(upVSmGr)      U+1F0A U+1F1A U+1F2A U+1F3A U+1F4A U+1F6A
+store(upVSmAc)      U+1F0C U+1F1C U+1F2C U+1F3C U+1F4C U+1F6C
+
+store(upVSm_SmCi1)  U+1F08 U+1F28 U+1F38 U+1F68
+store(upVSm_SmCi2)  U+1F0E U+1F2E U+1F3E U+1F6E
+
+store(upVRoCi1)     U+1F09 U+1F29 U+1F39 U+1F59 U+1F69
+store(upVRoCi2)     U+1F0F U+1F2F U+1F3F U+1F5F U+1F6F
+
+c upper Vs that make diphthongs with I (AEOU)
+store(updipI)       U+0391 U+0395 U+039F U+03A5
+store(updipIRo)     U+1F09 U+1F19 U+1F49 U+1F59
+store(updipID)      U+0391 U+0395 U+039F 
+store(updipIDSm)    U+1F08 U+1F18 U+1F48 
+store(updipIDRo)    U+1F09 U+1F19 U+1F49 
+
+c upper Vs that make diphthongs with U (AEJO)
+store(updipU)       U+0391 U+0395 U+0397 U+039F
+store(updipUSm)     U+1F08 U+1F18 U+1F28 U+1F48 
+store(updipURo)     U+1F09 U+1F19 U+1F29 U+1F49 
+
+c Smooth Breathing
+store(K_Sm)         ">"
+store(Sm)           U+0313
+c `      '      ~      a      a`     a'     a~     e
+c i                    o                    u
+c w                           a_
+c j_                          w_
+store(Sm_in)        xff    xff    xff    U+03B1 U+1F70 U+03AC U+1FB6 U+03B5 U+1F72 U+03AD U+03B7 U+1F74 U+03AE U+1FC6 \
+                    U+03B9 U+1F76 U+03AF U+1FD6 U+03BF U+1F78 U+03CC U+03C5 U+1F7A U+03CD U+1FE6 \
+                    U+03C9 U+1F7C U+03CE U+1FF6 U+1FB3 U+1FB2 U+1FB4 U+1FB7 \
+                    U+1FC3 U+1FC2 U+1FC4 U+1FC7 U+1FF3 U+1FF2 U+1FF4 U+1FF7
+
+store(Sm_Sm)        xff    xff    xff    U+1F00 U+1F02 U+1F04 U+1F06 U+1F10 U+1F12 U+1F14 U+1F20 U+1F22 U+1F24 U+1F26 \
+                    U+1F30 U+1F32 U+1F34 U+1F36 U+1F40 U+1F42 U+1F44 U+1F50 U+1F52 U+1F54 U+1F56 \
+                    U+1F60 U+1F62 U+1F64 U+1F66 U+1F80 U+1F82 U+1F84 U+1F86 \
+                    U+1F90 U+1F92 U+1F94 U+1F96 U+1FA0 U+1FA2 U+1FA4 U+1FA6
+
+store(Sm_Ro)        xff    xff    xff    U+1F01 U+1F03 U+1F05 U+1F07 U+1F11 U+1F13 U+1F15 U+1F21 U+1F23 U+1F25 U+1F27 \
+                    U+1F31 U+1F33 U+1F35 U+1F37 U+1F41 U+1F43 U+1F45 U+1F51 U+1F53 U+1F55 U+1F57 \
+                    U+1F61 U+1F63 U+1F65 U+1F67 U+1F81 U+1F83 U+1F85 U+1F87 \
+                    U+1F91 U+1F93 U+1F95 U+1F97 U+1FA1 U+1FA3 U+1FA5 U+1FA7 \
+                    
+
+c store(XS_in)        U+0314 U+0300 U+0301 U+0342 xff    xff    xff
+c store(XS_Sm)        U+0313 xff    xff    xff    xff    xff    xff
+
+c "A"    "E"    "J"    "I"    "O"    "U"    "W"
+
+c store(lowv2)        U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9 U+1FB3 U+1FC3 U+1FF3
+c store(lowvGr)       U+1F70 U+1F72 U+1F74 U+1F76 U+1F78 U+1F7A U+1F7C U+1FB2 U+1FC2 U+1FF2
+c store(lowvAc)       U+03AC U+03AD U+03AE U+03AF U+03CC U+03CD U+03CE U+1FB4 U+1FC4 U+1FF4
+store(lowvSm)       U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F50 U+1F60 U+1F80 U+1F90 U+1FA0
+store(lowvRo)       U+1F01 U+1F11 U+1F21 U+1F31 U+1F41 U+1F51 U+1F61 U+1F81 U+1F91 U+1FA1
+store(lowvSmGr)     U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F52 U+1F62 U+1F82 U+1F92 U+1FA2
+store(lowvRoGr)     U+1F03 U+1F13 U+1F23 U+1F33 U+1F43 U+1F53 U+1F63 U+1F83 U+1F93 U+1FA3
+c store(lowvSmAc)     U+1F04 U+1F14 U+1F24 U+1F34 U+1F44 U+1F54 U+1F64 U+1F84 U+1F94 U+1FA4
+c store(lowvRoAc)     U+1F05 U+1F15 U+1F25 U+1F35 U+1F45 U+1F55 U+1F65 U+1F85 U+1F95 U+1FA5
+
+c "a"    "j"    "i"    "u"    "w"    "a,"    "j,"  "w,"
+c store(lowvSm2)      U+1F00 U+1F20 U+1F30 U+1F50 U+1F60 U+1F80 U+1F90 U+1FA0
+c store(lowvSmSmCi)   U+1F06 U+1F26 U+1F36 U+1F56 U+1F66 U+1F86 U+1F96 U+1FA6
+c store(lowvSmRoCi)   U+1F07 U+1F27 U+1F37 U+1F57 U+1F67 U+1F87 U+1F97 U+1FA7
+c store(lowvCi)       U+1FB6 U+1FC6 U+1FD6 U+1FE6 U+1FF6 U+1FB7 U+1FC7 U+1FF7
+
+c Rough Breathing
+store(K_Ro)         "hH<"
+c store(K_Ronoth)     "<"
+store(Ro)           U+0314 
+store(Ro_in)        xff    xff    xff    U+03B1 U+1F70 U+03AC U+1FB6 U+03B5 U+1F72 U+03AD \
+                    U+03B7 U+1F74 U+03AE U+1FC6 U+03B9 U+1F76 U+03AF U+1FD6 U+03BF U+1F78 U+03CC \
+                    U+03C5 U+1F7A U+03CD U+1FE6 U+03C9 U+1F7C U+03CE U+1FF6 \
+                    U+1FB3 U+1FB2 U+1FB4 U+1FB7 U+1FC3 U+1FC2 U+1FC4 U+1FC7 \
+                    U+1FF3 U+1FF2 U+1FF4 U+1FF7
+                    
+store(Ro_Ro)        xff    xff    xff    U+1F01 U+1F03 U+1F05 U+1F07 U+1F11 U+1F13 U+1F15 \
+                    U+1F21 U+1F23 U+1F25 U+1F27 U+1F31 U+1F33 U+1F35 U+1F37 U+1F41 U+1F43 U+1F45 \
+                    U+1F51 U+1F53 U+1F55 U+1F57 U+1F61 U+1F63 U+1F65 U+1F67 \
+                    U+1F81 U+1F83 U+1F85 U+1F87 U+1F91 U+1F93 U+1F95 U+1F97 \
+                    U+1FA1 U+1FA3 U+1FA5 U+1FA7 
+
+store(XR_in)        U+0313 U+0313 U+0300 U+0301 U+0342 xff    xff    xff    
+c store(XR_Ro)        U+0314 U+0314 xff    xff    xff    xff    xff    xff
+
+c Delete Breathings
+store(K_Del)        "*"
+c store(Del_in)       xff    xff    xff    xff    xff    xff
+c store(Del_Del)      U+0300 U+0301 U+0342 U+0300 U+0301 U+0342
+
+c Diaresis
+store(K_Di)         '"'
+store(Di)           U+0308
+c i      i`     i'     u      u`     u'
+store(Di_in)        U+03B9 U+1F76 U+03AF U+03C5 U+1F7A U+03CD 
+store(Di_Di)        U+03CA U+1FD2 U+0390 U+03CB U+1FE2 U+03B0
+store(Di_Ro)        U+1F31 U+1F33 U+1F35 U+1F51 U+1F53 U+1F55
+c i"     i">    u"     u"<    u">
+store(SD_Di)        U+03CA U+0390 U+03CB U+1FE2 U+03B0 
+c i>     i>>    u>     u'<    u>>
+store(SD_Sm)        U+1F30 U+1F34 U+1F50 U+1F52 U+1F54
+
+c 
+store(IU_in)        U+0308  
+store(IU_IDi)       U+03CA  
+store(IU_UDi)       U+03CB  
+
+store(K_DiIU)       "I"    "U"
+store(Di_IU)        U+0399 U+03A5
+store(Di_DiIU)      U+03AA U+03AB
+
+store(Di_Dilowiu)   U+03CA U+03CB
+store(Di_DiCilowiu) U+1FD7 U+1FE7
+store(Di_Cilowiu)   U+1FD6 U+1FE6
+
+c Grave Accent
+store(K_Gr)         "\`"
+store(Gr)           U+0300
+
+store(Gr_in)        xff    xff    xff    U+03B1 U+1F00 U+1F01 U+03B5 U+1F11 U+03B7 U+1F20 U+1F21 \
+                    U+03B9 U+1F31 U+03BF U+1F40 U+1F41 U+03C5 U+1F50 U+1F51 U+03C9 U+1F60 U+1F61 \
+                    U+1FB3 U+1F80 U+1F81 U+1FC3 U+1F90 U+1F91 U+1FF3 U+1FA0 U+1FA1 U+03CA U+03CB
+                     
+store(Gr_Gr)        xff    xff    xff    U+1F70 U+1F02 U+1F03 U+1F72 U+1F13 U+1F74 U+1F22 U+1F23 \
+                    U+1F76 U+1F33 U+1F78 U+1F42 U+1F43 U+1F7A U+1F52 U+1F53 U+1F7C U+1F62 U+1F63 \
+                    U+1FB2 U+1F82 U+1F83 U+1FC2 U+1F92 U+1F93 U+1FF2 U+1FA2 U+1FA3 U+1FD2 U+1FE2
+                    
+store(Gr_Ac)        xff    xff    xff    U+03AC U+1F04 U+1F05 U+03AD U+1F15 U+03AE U+1F24 U+1F25 \
+                    U+03AF U+1F35 U+03CC U+1F44 U+1F45 U+03CD U+1F54 U+1F55 U+03CE U+1F64 U+1F65 \
+                    U+1FB4 U+1F84 U+1F85 U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+0390 U+03B0
+                    
+c store(XG_in)        U+0313 U+0314 U+0301 U+0342 xff    xff    xff    xff
+c store(XG_Gr)        xff    xff    U+0300 U+0300 xff    xff    xff    xff
+
+c Acute Accent
+store(K_Ac)         "/'"
+store(Ac)           U+0301
+
+store(Ac_in)        xff    xff    xff    U+03B1 U+1F00 U+1F01 U+03B5 U+1F10 U+1F11 \
+                    U+03B7 U+1F20 U+1F21 U+03B9 U+1F30 U+1F31 U+03BF U+1F40 U+1F41 \
+                    U+03C5 U+1F50 U+1F51 U+03C9 U+1F60 U+1F61 U+1FB3 U+1F80 U+1F81 \
+                    U+1FC3 U+1F90 U+1F91 U+1FF3 U+1FA0 U+1FA1 U+03CA U+03CB 
+store(Ac_Ac)        xff    xff    xff    U+03AC U+1F04 U+1F05 U+03AD U+1F14 U+1F15 \
+                    U+03AE U+1F24 U+1F25 U+03AF U+1F34 U+1F35 U+03CC U+1F44 U+1F45 \
+                    U+03CD U+1F54 U+1F55 U+03CE U+1F64 U+1F65 U+1FB4 U+1F84 U+1F85 \
+                    U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+0390 U+03B0 
+
+c store(XA_in)        U+0313 U+0314 U+0300 U+0342 xff    xff    xff    xff
+c store(XA_Ac)        xff    xff    U+0301 U+0301 xff    xff    xff    xff
+
+c Circumflex/Tilde
+store(K_Ci)         "~^="
+store(Ci)           U+0342 
+store(Ci_in)        xff    xff    U+03B1 U+1F00 U+1F01 U+03B7 U+1F20 U+1F21 \
+                    U+03B9 U+1F30 U+1F31 U+03C5 U+1F50 U+1F51 U+03C9 U+1F60 U+1F61 \
+                    U+1FB3 U+1F80 U+1F81 U+1FC3 U+1F90 U+1F91 U+1FF3 U+1FA0 U+1FA1
+store(Ci_Ci)        xff    xff    U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
+                    U+1FD6 U+1F36 U+1F37 U+1FE6 U+1F56 U+1F57 U+1FF6 U+1F66 U+1F67 \
+                    U+1FB7 U+1F86 U+1F87 U+1FC7 U+1F96 U+1F97 U+1FF7 U+1FA6 U+1FA7
+store(Ci_Ac)        xff    xff    U+03AC U+1F04 U+1F05 U+03AE U+1F24 U+1F25 \
+                    U+03AF U+1F34 U+1F35 U+03CD U+1F54 U+1F55 U+03CE U+1F64 U+1F65 \
+                    U+1FB4 U+1F84 U+1F85 U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5
+
+store(GC_Ci)        xff    xff    U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
+                    U+1FD6 U+1F36 U+1FE6 U+1F56 U+1F57 U+1FF6 U+1F66 U+1F67 \
+                    U+1FB7 U+1F86 U+1F87 U+1FC7 U+1F96 U+1F97 U+1FF7 U+1FA6 U+1FA7
+                    
+store(GC_Gr)        xff    xff    U+1F70 U+1F02 U+1F03 U+1F74 U+1F22 U+1F23 \
+                    U+1F76 U+1F33 U+1F7A U+1F52 U+1F53 U+1F7C U+1F62 U+1F63 \
+                    U+1FB2 U+1F82 U+1F83 U+1FC2 U+1F92 U+1F93 U+1FF2 U+1FA2 U+1FA3
+
+c store(XC_in)        U+0313 U+0314 U+0300 U+0301 xff    xff    xff    xff
+c store(XC_Ci)        xff    xff    U+0342 U+0342 xff    xff    xff    xff
+
+c Iota subscript
+store(K_Io)         "!|+_"
+store(Io)           U+0345
+store(Io_in)        U+03B1 U+1F00 U+1F02 U+1F04 U+1F06 U+1F01 U+1F03 U+1F05 U+1F07 U+1F70 U+03AC U+1FB6 \
+                    U+03B7 U+1F20 U+1F22 U+1F24 U+1F26 U+1F21 U+1F23 U+1F25 U+1F27 U+1F74 U+03AE U+1FC6 \
+                    U+03C9 U+1F60 U+1F62 U+1F64 U+1F66 U+1F61 U+1F63 U+1F65 U+1F67 U+1F70 U+03AC U+1FB6 
+store(Io_Io)        U+1FB3 U+1F80 U+1F82 U+1F84 U+1F86 U+1F81 U+1F83 U+1F85 U+1F87 U+1FB2 U+1FB4 U+1FB7 \
+                    U+1FC3 U+1F90 U+1F92 U+1F94 U+1F96 U+1F91 U+1F93 U+1F95 U+1F97 U+1FC2 U+1FC4 U+1FC7 \
+                    U+1FF3 U+1FA0 U+1FA2 U+1FA4 U+1FA6 U+1FA1 U+1FA3 U+1FA5 U+1FA7 U+1FF2 U+1FF4 U+1FF7 
+                    
+store(K_vIo)        "ajw" 
+store(vIo)          U+1FB3 U+1FC3 U+1FF3
+store(vIoSm)        U+1F81 U+1F91 U+1FA1
+store(vIoRo)        U+1F80 U+1F90 U+1FA0
+store(vIoGr)        U+1FB2 U+1FC2 U+1FF2
+store(vIoAc)        U+1FB4 U+1FC4 U+1FF4
+store(vIoCi)        U+1FB7 U+1FC7 U+1FF7
+store(vIoSmGr)      U+1F82 U+1F92 U+1FA2
+store(vIoRoGr)      U+1F83 U+1F93 U+1FA3
+store(vIoSmAc)      U+1F84 U+1F94 U+1FA4
+store(vIoRoAc)      U+1F85 U+1F95 U+1FA5
+store(vIoSmCi)      U+1F86 U+1F96 U+1FA6
+store(vIoRoCi)      U+1F87 U+1F97 U+1FA7
+
+store(K_UvIo)       "AJW" 
+store(vUIo1)        U+0391 U+0397 U+03A9
+store(vUIo2)        U+1FBC U+1FCC U+1FFC
+store(vUIoSm)       U+1F88 U+1F98 U+1FA8
+store(vUIoSm0)      U+1F08 U+1F28 U+1F68
+store(vUIoRo)       U+1F89 U+1F99 U+1FA9
+store(vUIoRo0)      U+1F09 U+1F29 U+1F69
+store(vUIoSmGr)     U+1F8A U+1F9A U+1FAA
+store(vUIoSmGr0)    U+1F0A U+1F2A U+1F6A
+store(vUIoRoGr)     U+1F8B U+1F9B U+1FAB
+store(vUIoRoGr0)    U+1F0B U+1F2B U+1F6B
+store(vUIoSmAc)     U+1F8C U+1F9C U+1FAC
+store(vUIoSmAc0)    U+1F0C U+1F2C U+1F6C
+store(vUIoRoAc)     U+1F8D U+1F9D U+1FAD
+store(vUIoRoAc0)    U+1F0D U+1F2D U+1F6D
+store(vUIoSmCi)     U+1F8E U+1F9E U+1FAE
+store(vUIoSmCi0)    U+1F0E U+1F2E U+1F6E
+store(vUIoRoCi)     U+1F8F U+1F9F U+1FAF
+store(vUIoRoCi0)    U+1F0F U+1F2F U+1F6F
+
+c Key for Apostrophe
+store(K_Ap)         "'"
+c Apostrophe
+store(Ap)           U+2019 c 1FBF
+
+c Equals for eta & omega
+store(K_Eq)         "=~^"
+store(J_E)          U+03B5 U+1F10 U+1F11 U+1F72 U+03AD U+1F14 U+1F13 U+1F15 
+store(J_J)          U+03B7 U+1F20 U+1F21 U+1F74 U+03AE U+1F24 U+1F23 U+1F25
+store(J_JIo)        U+1FC3 U+1F90 U+1F91 U+1FC2 U+1FC4 U+1F94 U+1F93 U+1F95
+
+store(W_O)          U+03BF U+1F40 U+1F41 U+1F78 U+03CC U+1F44 U+1F43 U+1F45
+store(W_W)          U+03C9 U+1F60 U+1F61 U+1F7C U+03CE U+1F64 U+1F63 U+1F65
+store(W_WIo)        U+1FF3 U+1FA0 U+1FA1 U+1FF2 U+1FF4 U+1FA4 U+1FA3 U+1FA5
+
+c H for chi, theta, phi, rho
+store(K_H)          "hH" 
+store(H_in)         U+03BA U+03C7 U+039A U+03A7 U+03C4 U+03A4 U+03C0 U+03A0 
+store(H_H)          U+03C7 U+03C7 U+03A7 U+03A7 U+03B8 U+0398 U+03C6 U+03A6
+
+c Psi
+store(Psi_in)       U+03C0 U+03A0 
+store(Psi_Psi)      U+03C8 U+03A8
+store(K_PsiS)       "sS"
+store(PsiS)         U+03C2 U+03A3
+
+c Enga
+store(K_Vel)        "k"    "x"    "c"    "K"    "X"    "C"
+store(Vel)          U+03BA U+03BE U+03C7 U+039A U+039E U+03A7
+                    
+store(Eng_in)       U+03BD U+039D
+
+store(K_GG)         "g"    "G"
+store(Eng)          U+03B3 U+0393
+c Uppercase with iota subscript - something to do with dipthongs
+store(I_upAEOUi1)   U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 U+1F36 U+1F37
+store(I_upAEOJu1)   U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57
+store(AI_A)         U+1FBA U+0386 U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F
+store(AI_J)         U+1FCA U+0389 U+1F28 U+1F29 U+1F2A U+1F2B U+1F2C U+1F2D U+1F2E U+1F2F
+store(I_upAEOUi2)   U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 
+store(I_upAEOJu2)   U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 
+store(AI_E)         U+1FC8 U+0388 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D
+store(AI_O)         U+1FF8 U+038C U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D
+store(I_upAEOUi3)   U+1F76 U+03AF xff    U+1F31 xff    U+1F33 xff    U+1F35 
+store(AI_U)         U+1FEA U+038E xff    U+1F59 xff    U+1F5B xff    U+1F5D
+
+
+store(I_upAEOU)     U+1FBA U+0386 U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
+                    U+1FC8 U+0388 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
+                    U+1FF8 U+038C U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D \
+                    U+1FEA U+038E xff    U+1F59 xff    U+1F5B xff    U+1F5D  
+
+store(I_upAEOUi)    U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 U+1F36 U+1F37 \
+                    U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
+                    U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
+                    U+1F76 U+03AF xff    U+1F31 xff    U+1F33 xff    U+1F35  
+
+store(I_upAEOUA)    U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 \
+                    U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 \
+                    U+039F U+039F U+039F U+039F U+039F U+039F U+039F U+039F \
+                    U+03A5 U+03A5 xff    U+03A5 xff    U+03A5 xff    U+03A5  
+                    
+store(I_upAEOJ)     U+1FBA U+0386 U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
+                    U+1FC8 U+0388 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
+                    U+1FF8 U+038C U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D \
+                    U+1FCA U+0389 U+1F28 U+1F29 U+1F2A U+1F2B U+1F2C U+1F2D U+1F2E U+1F2F
+
+store(I_upAEOJA)    U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 \
+                    U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 \
+                    U+039F U+039F U+039F U+039F U+039F U+039F U+039F U+039F \
+                    U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397
+
+store(I_upAEOJu)    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57 \
+                    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 \
+                    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 \
+                    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57
+
+store(K_upVSmTi1)     "A"   "J"    "I"    "W"
+store(upVSmTi2)       U+1F0E U+1F2E U+1F3E U+1F6E 
+
+store(K_upVRoTi1)     "A"   "J"    "I"    "U"    "W"
+store(upVRoTi2)       U+1F0F U+1F2F U+1F3F U+1F5F U+1F6F 
+
+ 
+c Vowels
+store(V_in)         U+0313 U+0314 U+0300 U+0301 xff    xff    xff    xff    xff    xff    xff   
+store(V_A)          U+1F00 U+1F01 U+1F70 U+03AC U+1FB6 U+1F02 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
+store(V_ABr)        U+1F00 U+1F01 U+03B1 U+03B1 U+1FB6 U+1F00 U+1F00 U+1F04 U+1F01 U+1F01 U+1F07
+store(V_J)          U+1F20 U+1F21 U+1F74 U+03AE U+1FC6 U+1F22 U+1F24 U+1F26 U+1F23 U+1F25 U+1F27 
+store(V_JBr)        U+1F20 U+1F21 U+03B7 U+03B7 U+1FC6 U+1F20 U+1F20 U+1F26 U+1F21 U+1F21 U+1F27
+store(V_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1FE6 U+1F52 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
+store(V_UDi)        U+03CB U+03CB U+1FE2 U+03B0 U+03CB U+1FE2 U+03B0 U+03CB U+1FE2 U+03B0 U+03CB
+store(V_W)          U+1F60 U+1F61 U+1F7C U+03CE U+1FF6 U+1F62 U+1F64 U+1F66 U+1F63 U+1F65 U+1F67
+
+c store(XV_XBr)       U+0313 U+0314 U+0313 U+0313 xff    U+0314 U+0314 xff
+store(XV_U)         U+1F50 U+1F51 U+1F52 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
+store(XV_UDi)       U+03CB U+03CB U+1FE2 U+03B0 U+03CB U+1FE2 U+03B0 U+03CB 
+
+store(E_in)         U+0313 U+0314 U+0300 U+0301 xff    xff    xff    
+store(E_E)          U+1F10 U+1F11 U+1F72 U+03AD U+1F14 U+1F13 U+1F15
+store(E_EBr)        U+1F10 U+1F11 U+03B5 U+03B5 U+1F10 U+1F11 U+1F11
+store(E_I)          U+1F30 U+1F31 U+0376 U+0377 U+1F34 U+1F33 U+1F35
+store(E_IDi)        U+03CA U+03CA U+1FD2 U+0390 U+0390 U+1FD2 U+0390
+store(E_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1F54 U+1F53 U+1F55
+store(E_O)          U+1F40 U+1F41 U+1F78 U+03CC U+1F44 U+1F43 U+1F45
+store(E_OBr)        U+1F40 U+1F41 U+03BF U+03BF U+1F40 U+1F41 U+1F41
+                   
+store(I_in)         U+0313 U+0314 U+0300 U+0301 U+0342 xff    xff    xff    xff    xff   
+store(I_I)          U+1F30 U+1F31 U+0376 U+0377 U+1FD6 U+1F34 U+1F36 U+1F33 U+1F35 U+1F37
+store(I_IDi)        U+03CA U+03CA U+1FD2 U+0390 U+03CA U+0390 U+03CA U+1FD2 U+0390 U+03CA
+store(I_A)          U+1F00 U+1F01 U+1F70 U+03AC U+1FB6 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
+store(I_ABr)        U+1F00 U+1F01 U+03B1 U+03B1 U+1FB6 U+1F00 U+1F04 U+1F01 U+1F01 U+1F07
+store(I_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1FE6 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
+store(I_UBr)        U+1F50 U+1F51 U+03C5 U+03C5 U+1FE6 U+1F50 U+1F56 U+1F51 U+1F51 U+1F57
+
+store(XI_XBr)       U+0313 U+0314 U+0313 xff    U+0314 U+0314 xff   
+store(XI_I)         U+1F30 U+1F31 U+1F34 U+1F36 U+1F33 U+1F35 U+1F37
+store(XI_IDi)       U+03CA U+03CA U+0390 U+03CA U+1FD2 U+0390 U+03CA
+
+store(O_in)         U+0313 U+0314 U+0300 U+0301 xff    xff    xff    xff    
+store(O_O)          U+1F40 U+1F41 U+1F78 U+03CC U+1F42 U+1F44 U+1F43 U+1F45
+store(O_OBr)        U+1F40 U+1F41 U+03BF U+03BF U+1F40 U+1F40 U+1F41 U+1F41
+store(O_EBr)        U+1F10 U+1F11 U+03B5 U+03B5 U+1F10 U+1F10 U+1F11 U+1F11
+store(O_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1F52 U+1F54 U+1F53 U+1F55
+store(O_UDi)        U+03CB U+03CB U+1FE2 U+03B0 U+1FE2 U+03B0 U+1FE2 U+03B0
+
+c Punctuation
+store(K_punc)       ","    "."    ":"    "?"    ";"    "%"
+store(punc)         U+002C U+002E U+00B7 U+003B U+003B U+005C
+
+c Standard characters
+store(std)          "&0123456789"
+
+c Key for Escaped characters
+store(K_Esc)        "@"
+c Escaped characters
+store(Esc)          U+002E
+
+c Keys for Escaped characters
+store(K_Escd)       "!"    "("    ")"    "*"    "+"    "-"    "/"    "<"    "="    ">"    "\"    "~"    ":"
+c Escaped characters
+store(Escd)         U+0021 U+00AB U+00BB U+002A U+002B U+002D U+002F U+003C U+003D U+003E U+005C U+2014 U+003A
+
+c Word boundaries
+c " "    -      d13    d9
+store(wi)           U+0020 U+002D U+000D U+0009 
+c leading           [      (      {
+store(lbr)          U+005B U+0028 U+007B 
+c [      ]      (      )      {      }
+store(br)           U+005B U+005D U+0028 U+0029 U+007B U+007D           
+
+c All letters, diacritics, punctuation, etc.
+store(all)          outs(up)    outs(low)   \
+                    outs(V_A)   outs(E_E)   outs(V_J)   outs(I_I)   \
+                    outs(O_O)   outs(V_U)   outs(V_W)   \
+                    outs(Di_Di) outs(Io_Io) \
+                    outs(V_in)  outs(Di)    outs(Io)    \
+                    outs(Ap)    outs(punc)  \
+                    outs(std)   outs(Esc)   outs(Escd)  \
+                    outs(wi)    outs(br)
+
+c Illegal keys
+store(K_ill)        "#$Vv"
+
+c ----------------------------------------------------------------------------
+
+group(MainU) using keys
+
+any(Sm_Ro)              + any(K_Ro) > context
+any(Sm_Sm)              + any(K_Sm) > context
+
+c UPPERCASE
+any(vUIo2)              + any(K_Sm) > index(vUIoSm,1)                c A_>
+any(vUIoSm0)            + any(K_Io) > index(vUIoSm,1)                c >A_
+any(vUIo2)              + any(K_Ro) > index(vUIoRo,1)                c A_<
+any(vUIoRo0)            + any(K_Io) > index(vUIoRo,1)                c <A_
+any(vUIoSm)             + any(K_Gr) > index(vUIoSmGr,1)              c A_>\ 
+any(vUIoSmGr0)          + any(K_Io) > index(vUIoSmGr,1)              c >\A_
+any(vUIoRo)             + any(K_Gr) > index(vUIoRoGr,1)              c A_<\ 
+any(vUIoRoGr0)          + any(K_Io) > index(vUIoRoGr,1)              c <\A_
+any(vUIoSm)             + any(K_Ac) > index(vUIoSmAc,1)              c A_>/
+any(vUIoSmAc0)          + any(K_Io) > index(vUIoSmAc,1)              c >/A_
+any(vUIoRo)             + any(K_Ac) > index(vUIoRoAc,1)              c A_</
+any(vUIoRoAc0)          + any(K_Io) > index(vUIoRoAc,1)              c </A_
+any(vUIoSm)             + any(K_Ci) > index(vUIoSmCi,1)              c A_>^
+any(vUIoSmCi0)          + any(K_Io) > index(vUIoSmCi,1)              c >^A_
+any(vUIoRo)             + any(K_Ci) > index(vUIoRoCi,1)              c A_<^
+any(vUIoRoCi0)          + any(K_Io) > index(vUIoRoCi,1)              c <^A_
+
+
+any(upVSm_SmCi1)        + any(K_Ci)     > index(upVSm_SmCi2,1)       c >A^
+any(upVRoCi1)           + any(K_Ci)     > index(upVRoCi2,1)          c <A^
+any(upVRo)              + any(K_Gr)     > index(upVRoGr,1)           c <A`
+any(upVGr)              + any(K_Ro)     > index(upVRoGr,1)           c <A/
+any(upVRo)              + any(K_Ac)     > index(upVRoAc,1)           c <A/
+any(upVAc)              + any(K_Ro)     > index(upVRoAc,1)           c <A/
+
+any(Sm) any(Ac)         + any(K_upVSm)  > index(upVSmAc,3)           c >'A
+any(Ro) any(Ac)         + any(K_upV)    > index(upVRoAc,3)           c </A
+any(Sm) any(Gr)         + any(K_upVSm)  > index(upVSmGr,3)           c >\A
+any(Ro) any(Gr)         + any(K_upV)    > index(upVRoGr,3)           c <\A
+any(Sm)                 + any(K_upVSm)  > index(upVSm_Sm,2)          c >A
+any(Sm)                 + any(K_upU)    > index(upU,2) outs(Sm)      c >U
+any(Ro)                 + any(K_upV)    > index(upVRo,2)             c <A
+any(Sm) any(Ci)         + any(K_upVSmTi1) > index(upVSmTi2,3)        c >^A  
+any(Ro) any(Ci)         + any(K_upVRoTi1) > index(upVRoTi2,3)        c <^A  
+any(Ac)                 + any(K_upV)    > index(upVAc,2)             c /A
+any(Gr)                 + any(K_upV)    > index(upVGr,2)             c \A
+
+
+c LOWERCASE
+c Smooth Breathing
+any(Sm_in)          + any(K_Sm) > index(Sm_Sm,1)                c a   + >  a> 
+any(Sm_Ro)          + any(K_Sm) > index(Sm_Sm,1)                c a<  + >  a> 
+any(SD_Di)          + any(K_Sm) > index(SD_Sm,1)                c i"  + >  i>   (iu)
+any(r)              + any(K_Sm) > outs(rSm)                     c r   + >  r> 
+any(rRo)            + any(K_Sm) > outs(rSm)                     c r<  + >  r> 
+any(Ro)             + any(K_Sm) > outs(Sm)                      c <   + >  >   
+                    + any(K_Sm) > outs(Sm)                      c     + >  >             
+ 
+any(upVSm)          + any(K_Sm) > index(upVSm_Sm,1)             c A   + >  >A    
+any(upU)            + any(K_Sm) > index(upU,1) outs(Sm)         c U   + >  >U    
+any(Ro) any(upVSm) + any(K_Sm) > index(upVSmAc,2)          c /A  + >  >/A 
+any(Ro) any(upU)   + any(K_Sm) > index(upU,2) outs(Sm) outs(Ac)     c /U  + >  >/U 
+any(Gr) any(upVSm) + any(K_Sm) > index(upVSmAc,2)          c /A  + >  >/A 
+any(Gr) any(upU)   + any(K_Sm) > index(upU,2) outs(Sm) outs(Ac)     c /U  + >  >/U 
+any(Ac) any(upVSm) + any(K_Sm) > index(upVSmAc,2)          c /A  + >  >/A 
+any(Ac) any(upU)   + any(K_Sm) > index(upU,2) outs(Sm) outs(Ac)     c /U  + >  >/U 
+any(Ci) any(upVSm) + any(K_Sm) > index(upVSmAc,2)          c /A  + >  >/A 
+any(Ci) any(upU)   + any(K_Sm) > index(upU,2) outs(Sm) outs(Ac)     c /U  + >  >/U 
+any(Ro) any(Gr) any(upVSm) + any(K_Sm) > index(upVSmAc,3)          c /A  + >  >/A 
+any(Ro) any(Gr) any(upU)   + any(K_Sm) > index(upU,3) outs(Sm) outs(Ac)     c /U  + >  >/U 
+any(Ro) any(Ac) any(upVSm) + any(K_Sm) > index(upVSmAc,3)          c /A  + >  >/A 
+any(Ro) any(Ac) any(upU)   + any(K_Sm) > index(upU,3) outs(Sm) outs(Ac)     c /U  + >  >/U 
+any(Ro) any(Ci) any(upVSm) + any(K_Sm) > index(upVSmAc,3)          c /A  + >  >/A 
+any(Ro) any(Ci) any(upU)   + any(K_Sm) > index(upU,3) outs(Sm) outs(Ac)     c /U  + >  >/U 
+
+any(updipID) any(upI)         + any(K_Sm) > index(updipIDSm,1) \
+                                    outs(upI)                   c AI  + >  >AI      AEO   
+any(updipIDRo) any(upI) + any(K_Sm) > index(updipIDSm,1) \
+                                    outs(upI)                   c <AI + >  >AI      AEO   
+
+any(updipU) any(upU)         + any(K_Sm) > index(updipUSm,1) \
+                                   outs(upU)                    c AU  + >  >AU      AEJO   
+any(updipURo) any(upU) + any(K_Sm) > index(updipUSm,1) \
+                                    outs(upU)                   c <AU + >  >AU             
+
+
+c Rough Breathing
+any(Ro_in)          + any(K_Ro)     > index(Ro_Ro,1)            c a   + <  a<  
+any(Sm_Sm)          + any(K_Ro)     > index(Sm_Ro,1)            c a>  + <  a<  
+any(Di_Di)          + any(K_Ro)     > index(Di_Ro,1)            c i"  + <  i< (iu) 
+any(r)              + any(K_Ro)     > outs(rRo)                 c r   + <  r<      
+any(rSm)            + any(K_Ro)     > outs(rRo)                 c r>  + <  r<      
+any(Sm)             + any(K_Ro)     > outs(Ro)                  c >   + <  <       
+                    + any(K_Ro)     > outs(Ro)                  c     + <  <          
+
+any(upV)            + any(K_Ro)     > index(upVRo,1)         c A   + <  <A  
+any(upR)            + any(K_Ro)     > outs(upRRo)               c R   + <  <R          
+any(XR_in) any(upV) + any(K_Ro)     > index(upVRoAc,2)         c /A  + <  </A
+
+any(updipI) any(upI) + any(K_Ro)    > index(updipIRo,1) \
+                                       outs(upI)                c AI  + <  <AI   (AEOU) 
+any(Sm) any(updipI) any(upI) + any(K_Ro) > index(updipI,2) outs(Ro) \
+                                    outs(upI)                   c >AI + <  <AI    (AEOU)  
+any(updipU) any(upU)         + any(K_Ro) > index(updipURo,1) \
+                                    outs(upU)                   c AU  + <  <AU  (AEJO)   
+any(Sm) any(updipU) any(upU) + any(K_Ro) > index(updipURo,2) \
+                                    outs(upU)                   c >AU + <  <AU  (AEJO)   
+
+c Delete Breathings
+any(Sm_Sm)           + any(K_Del) > index(Sm_in,1)              c a>  + *  a   
+any(Ro_Ro)           + any(K_Del) > index(Ro_in,1)              c a<  + *  a   
+any(rSm)             + any(K_Del) > outs(r)                     c r>  + *  r   
+any(rRo)             + any(K_Del) > outs(r)                     c r<  + *  r   
+                     + any(K_Del) > beep
+any(upVSm_Sm)        + any(K_Del) > index(upVSm,1)              c >A  + *  A   
+any(Sm) any(upU)     + any(K_Del) > index(upU,2)                c >U  + *  U   
+any(upVSmAc)         + any(K_Del) > index(upVSm_Sm,1)           c >/A + *  /A  
+any(upVRo)           + any(K_Del) > index(upV,2)                c <A  + *  A   
+
+any(upRRo)           + any(K_Del) > outs(upR)                   c <R  + *  R   
+
+any(updipIDSm) any(upI) + any(K_Del) > index(updipID,1) \
+                                                    outs(upI)   c >AI + *  AI  (AEOU)
+any(updipIRo) any(upI)  + any(K_Del) > index(updipI,1) \
+                                                    outs(upI)   c <AI + *  AI (AEOU)
+any(updipUSm) any(upU)  + any(K_Del) > index(updipU,1) \
+                                                    outs(upU)   c >AU + *  AU  (AEJO)
+any(updipURo) any(upU)  + any(K_Del) > index(updipU,1) \
+                                                    outs(upU)   c <AU + *  AU  (AEJO)
+
+c Diaresis
+any(Di_Dilowiu)  + any(K_Ci) > index(Di_DiCilowiu,1)            c i"^
+any(Di_Cilowiu)  + any(K_Di) > index(Di_DiCilowiu,1)            c i^"
+any(Di_in)  + any(K_Di) > index(Di_Di,1)                        c i   + "  i"  
+any(SD_Sm)  + any(K_Di) > index(SD_Di,1)                        c i>  + "  i"  
+any(Di_Ro)  + any(K_Di) > index(Di_Di,1)                        c i<  + "  i"  
+            + any(K_Di) > outs(Di)                              c     + "  "   
+
+any(a) any(I_I) + any(K_Di) > index(I_ABr,2) index(I_IDi,2)     c ai> + "  a>i"  
+any(e) any(E_I) + any(K_Di) > index(E_EBr,2) index(E_IDi,2)     c ei> + "  e>i"  
+any(o) any(E_I) + any(K_Di) > index(E_OBr,2) index(E_IDi,2)     c oi> + "  o>i"  
+any(u) any(I_I) + any(K_Di) > index(I_UBr,2) index(I_IDi,2)     c ui> + "  u>i"  
+any(a) any(V_U) + any(K_Di) > index(V_ABr,2) index(V_UDi,2)     c au> + "  a>u"  
+any(e) any(O_U) + any(K_Di) > index(O_EBr,2) index(O_UDi,2)     c eu> + "  e>u"  
+any(j) any(V_U) + any(K_Di) > index(V_JBr,2) index(V_UDi,2)     c ju> + "  j>u"  
+any(o) any(O_U) + any(K_Di) > index(O_OBr,2) index(O_UDi,2)     c ou> + "  o>u"  
+any(Di_IU)      + any(K_Di) > index(Di_DiIU,1)                  c I   + "  I" (IU)  
+any(Di)         + any(K_DiIU)  > index(Di_DiIU,2)               c I   + "  I" (IU)  
+
+any(updipID) any(XI_I) + any(K_Di) > index(updipIDSm,1) \
+                                index(XI_IDi,2)                 c Ai> + "  >Ai"                  
+any(upU) any(XI_I)     + any(K_Di) > index(XI_XBr,2) index(upU,1) \
+                                index(XI_IDi,2)                 c Ui> + "  >Ui"                  
+any(updipU) any(XV_U)  + any(K_Di) > index(updipUSm,1) \
+                                index(XV_UDi,2)                 c Au> + "  >Au"                  
+
+c Grave Accent
+any(Gr_in)                + any(K_Gr) > index(Gr_Gr,1)          c a   + \  a\.  
+any(Gr_Ac)                + any(K_Gr) > index(Gr_Gr,1)          c a/  + \  a\.  
+any(GC_Ci)                + any(K_Gr) > index(GC_Gr,1)          c a^  + \  a\.  
+any(Ac)                   + any(K_Gr) > outs(Gr)                c /   + \  \.   
+any(Ci)                   + any(K_Gr) > outs(Gr)                c ^   + \  \.   
+any(lowvRo)               + any(K_Gr) > index(lowvRoGr,1)       c >a   + \ a>\ 
+any(lowvSm)               + any(K_Gr) > index(lowvSmGr,1)       c <a   + \ a<\ 
+any(upV)                  + any(K_Gr) > index(upVGr,1)          c A   + \  >A
+any(upVSm_Sm)             + any(K_Gr) > index(upVSmGr,1)         c >A  + \  >\A 
+any(upVSm_Gr)             + any(K_Sm) > index(upVSmGr,1)         c >A  + \  >\A 
+
+c smooth/grave
+nul                       + any(K_Gr) > outs(Sm) outs(Gr)              c 0   + \  >\.  
+nul any(lbr)              + any(K_Gr) > context outs(Sm) outs(Gr)      c 0[  + \  >\.  
+nul any(lbr) any(lbr)     + any(K_Gr) > context outs(Sm) outs(Gr)      c 0[[ + \  >\.  
+any(wi)                   + any(K_Gr) > context outs(Sm) outs(Gr)      c _   + \  >\. 
+any(wi) any(lbr)          + any(K_Gr) > context outs(Sm) outs(Gr)      c _[  + \  >\. 
+any(wi) any(lbr) any(lbr) + any(K_Gr) > context outs(Sm) outs(Gr)      c _[[ + \  >\. 
+                          + any(K_Gr) > outs(Gr)                       c     + \  \. 
+                                
+c Acute Accent
+any(Ac_in)                + any(K_Ac) > index(Ac_Ac,1)          c a   + /  a/ 
+any(Gr_Gr)                + any(K_Ac) > index(Gr_Ac,1)          c a\  + /  a/ 
+any(Ci_Ci)                + any(K_Ac) > index(Ci_Ac,1)          c a^  + /  a/ 
+any(Gr)                   + any(K_Ac) > outs(Ac)                c \   + /  /  
+any(Ci)                   + any(K_Ac) > outs(Ac)                c ^   + /  /  
+any(upVSm_Sm)             + any(K_Ac) > index(upVSmAc,1)        c >A  + /  >/A 
+any(upVSm_Ac)             + any(K_Sm) > index(upVSmAc,1)         c >A  + \  >/A 
+
+nul                       + any(K_Ac) > outs(Sm) outs(Ac)              c 0   + /  >/  
+nul any(lbr)              + any(K_Ac) > context outs(Sm) outs(Ac)      c 0[  + /  >/  
+nul any(lbr) any(lbr)     + any(K_Ac) > context outs(Sm) outs(Ac)      c 0[[ + /  >/  
+any(wi)                   + any(K_Ac) > context outs(Sm) outs(Ac)      c _   + /  >/   
+any(wi) any(lbr)          + any(K_Ac) > context outs(Sm) outs(Ac)      c _[  + /  >/   
+any(wi) any(lbr) any(lbr) + any(K_Ac) > context outs(Sm) outs(Ac)      c _[[ + /  >/   
+                          + any(K_Ac) > outs(Ac)                       c     + /  /   
+c Circumflex/Tilde
+any(Ci_in)                + any(K_Ci) > index(Ci_Ci,1)                 c a   + ^  a^  aiujw 
+any(GC_Gr)                + any(K_Ci) > index(GC_Ci,1)                 c a\  + ^  a^  aiujw 
+any(Ci_Ac)                + any(K_Ci) > index(Ci_Ci,1)                 c a/  + ^  a^  aiujw   
+any(Gr)                   + any(K_Ci) > outs(Ci)                       c \   + ^  ^   
+any(Ac)                   + any(K_Ci) > outs(Ci)                       c /   + ^  ^   
+nul                       + any(K_Ci) > outs(Sm) outs(Ci)              c 0   + ^  >^  
+nul any(lbr)              + any(K_Ci) > context outs(Sm) outs(Ci)      c 0[  + ^  >^  
+nul any(lbr) any(lbr)     + any(K_Ci) > context outs(Sm) outs(Ci)      c 0[[ + ^  >^  
+any(wi)                   + any(K_Ci) > context outs(Sm) outs(Ci)      c _   + ^  >^ 
+any(wi) any(lbr)          + any(K_Ci) > context outs(Sm) outs(Ci)      c _[  + ^  >^ 
+any(wi) any(lbr) any(lbr) + any(K_Ci) > context outs(Sm) outs(Ci)      c _[[ + ^  >^ 
+                          + any(K_Ci) > outs(Ci)                       c     + ^  ^  
+
+c Iota Subscript
+any(Io_in) + any(K_Io)   > index(Io_Io,1)                               c a   + !  a! 
+any(vUIo1) + any(K_Io)   > index(vUIo2,1)                               c A   + !  A! 
+any(Io)    + any(K_UvIo) > index(vUIo2,2)                               c !   + A  A! 
+           + any(K_Io)   > outs(Io)                                     c     + !  !  
+
+
+any(vIo)   + any(K_Sm)  > index(vIoSm,1)       
+any(vIo)   + any(K_Ro)  > index(vIoRo,1)       
+any(vIo)   + any(K_Gr)  > index(vIoGr,1)       
+any(vIo)   + any(K_Ac)  > index(vIoAc,1)       
+any(vIo)   + any(K_Ci)  > index(vIoCi,1)       
+any(vIoSm) + any(K_Gr)  > index(vIoSmGr,1)       
+any(vIoSm) + any(K_Ac)  > index(vIoSmAc,1)       
+any(vIoSm) + any(K_Ci)  > index(vIoSmCi,1)       
+any(vIoRo) + any(K_Gr)  > index(vIoRoGr,1)       
+any(vIoRo) + any(K_Ac)  > index(vIoRoAc,1)       
+any(vIoRo) + any(K_Ci)  > index(vIoRoCi,1)       
+
+c Apostrophe
+any(Ac_Ac)          + any(K_Ap) > index(Ac_in,1) outs(Ap)       c a/  + '  a'
+any(lowc)           + any(K_Ap) > context outs(Ap)              c b   + '  b'
+any(upVAc)          + any(K_Ap) > index(upV,1) outs(Ap)         c /A  + '  A' 
+any(upVSmAc)        + any(K_Ap) > index(upVSm_Sm,1)  \
+                                  outs(Ap)                      c >/A + '  >A'
+any(up)             + any(K_Ap) > context outs(Ap)              c A   + '  A' 
+
+
+c Equals
+any(J_E)         + any(K_Eq) > index(J_J,1)                     c e   + =  j 
+any(W_O)         + any(K_Eq) > index(W_W,1)                     c o   + =  w 
+any(Io) any(J_E) + any(K_Eq) > index(J_JIo,2)                   c !e  + =  j! 
+any(Io) any(W_O) + any(K_Eq) > index(W_WIo,2)                   c !o  + =  w! 
+any(upE)         + any(K_Eq) > outs(upJ)                        c E   + =  J 
+any(upO)         + any(K_Eq) > outs(upW)                        c O   + =  W 
+
+c Chi, theta, phi, rho
+any(H_in)        + any(K_H)     > index(H_H,1)                   c k   + h  c   
+any(rRo)         + any(K_H)     > context                        c r<  + h  r<   
+any(upRRo)       + any(K_H)     > context                        c <R  + h  <R
+any(Ro)          + any(K_upR)   > index(upRRo,1)                 c <R  
+
+c Psi
+any(Psi_in)      + any(K_PsiS)  > index(Psi_Psi,1)                  c p   + s  y   
+any(Psi_Psi)     + any(K_PsiS)  > index(Psi_in,1) index(PsiS,2)     c y   + s  pv   
+
+c Enga
+any(Eng_in)          + any(K_Vel) > index(Eng,1) index(Vel,2)   c n   + k  gk   
+any(Eng_in) any(Eng) + any(K_GG)  > index(Eng,1) index(Eng,2)   c ng  + g  gg   
+
+c Final sigma
+any(sFin)                 + any(K_low) > outs(sMed) \
+                                                  index(low,2)  c v   + a  sa   
+any(sFin) any(br)         + any(K_low) > outs(sMed) \
+                                      index(br,2) index(low,3)  c v[  + a  s[a   
+any(sFin) any(br) any(br) + any(K_low) > outs(sMed) \
+                          index(br,2) index(br,3) index(low,4)  c v[[ + a  s[[a   
+
+c Initial vowel and rho
+
+                        
+nul                       + any(K_lowv) > index(lowvSm,2)       c 0   + a  >a   
+nul any(lbr)              + any(K_lowv) > context \
+                                          index(lowvSm,3)       c 0[  + a  >a   
+nul any(lbr) any(lbr)     + any(K_lowv) > context \
+                                          index(lowvSm,4)       c 0[[ + a  >a   
+any(wi)                   + any(K_lowv) > context \
+                                          index(lowvSm,2)       c _   + a  >a   
+any(wi) any(lbr)          + any(K_lowv) > context \
+                                          index(lowvSm,3)       c _[  + a  >a   
+any(wi) any(lbr) any(lbr) + any(K_lowv) > context \
+                                          index(lowvSm,4)       c _[[ + a  >a   
+
+
+nul                       + any(K_r)    > outs(rRo)             c 0   + r  <r   
+nul any(lbr)              + any(K_r)    > context outs(rRo)     c 0[  + r  <r   
+nul any(lbr) any(lbr)     + any(K_r)    > context outs(rRo)     c 0[[ + r  <r   
+any(wi)                   + any(K_r)    > context outs(rRo)     c _   + r  <r   
+any(wi) any(lbr)          + any(K_r)    > context outs(rRo)     c _[  + r  <r   
+any(wi) any(lbr) any(lbr) + any(K_r)    > context outs(rRo)     c _[[ + r  <r   
+
+nul                       + any(K_upVSm)  > index(upVSm_Sm,2)     c 0   + A  >A   
+nul                       + any(K_upU)    > index(upU,2) outs(Sm) c 0   + A  >A   
+nul any(lbr)              + any(K_upVSm)  > context \
+                                            index(upVSm_Sm,3)      c 0[  + A  >A   
+nul any(lbr)              + any(K_upU)    > context outs(Sm) \
+                                            index(upU,3)           c 0[  + A  >A   
+nul any(lbr) any(lbr)     + any(K_upVSm)  > context  \
+                                            index(upVSm_Sm,4)      c 0[[ + A  >A   
+nul any(lbr) any(lbr)     + any(K_upU)    > context outs(Sm) \
+                                            index(upU,4)           c 0[[ + A  >A   
+any(wi)                   + any(K_upVSm)  > context  \
+                                            index(upVSm_Sm,2)      c _   + A  >A   
+any(wi)                   + any(K_upU)    > context  \
+                                            index(upU,2) outs(Sm)   c _   + U  >U   
+any(wi) any(lbr)          + any(K_upVSm)  > context \
+                                            index(upVSm_Sm,3)      c _[  + A  >A   
+any(wi) any(lbr)          + any(K_upVSm)  > context  \
+                                            index(upVSm_Sm,3)      c _[  + A  >A   
+any(wi) any(lbr) any(lbr) + any(K_upVSm)  > context  \
+                                            index(upVSm_Sm,4)      c _[[ + A  >A   
+any(wi) any(lbr) any(lbr) + any(K_upU)    > context outs(Sm) \
+                                            index(upU,4)           c _[[ + A  >A   
+
+nul                       + any(K_upR)  > outs(upRRo)           c 0   + R  <R   
+nul any(lbr)              + any(K_upR)  > context \
+                                          outs(upRRo)           c 0[  + R  <R   
+nul any(lbr) any(lbr)     + any(K_upR)  > context \
+                                          outs(upRRo)           c 0[[ + R  <R   
+any(wi)                   + any(K_upR)  > context outs(upRRo)   c _   + R  <R   
+any(wi) any(lbr)          + any(K_upR)  > context outs(upRRo)   c _[  + R  <R   
+any(wi) any(lbr) any(lbr) + any(K_upR)  > context outs(upRRo)   c _[[ + R  <R   
+
+c Diacritic + initial vowel or rho
+any(V_in)  + any(K_a)   > index(V_A,1)                          c >   + a  a>   
+any(E_in)  + any(K_e)   > index(E_E,1)                          c >   + e  e>   
+any(V_in)  + any(K_j)   > index(V_J,1)                          c >   + j  j>   
+any(I_in)  + any(K_i)   > index(I_I,1)                          c >   + i  i>   
+any(O_in)  + any(K_o)   > index(O_O,1)                          c >   + o  o>   
+any(V_in)  + any(K_u)   > index(V_U,1)                          c >   + u  u>   
+any(V_in)  + any(K_w)   > index(V_W,1)                          c >   + w  w>   
+any(Sm)    + any(K_r)   > outs(rSm)                             c >   + r  r>   
+any(Ro)    + any(K_r)   > outs(rRo)                             c <   + r  r<   
+any(IU_in) + any(K_i)   > index(IU_IDi,1)                       c "   + i  i"   
+any(IU_in) + any(K_u)   > index(IU_UDi,1)                       c "   + u  u"   
+any(Io)    + any(K_vIo) > index(vIo,2)                          c !   + a  a!   
+
+c Smooth breathing + uppercase + uppercase
+any(upVSm_Sm)      + any(K_up)  > index(upVSm,1) index(up,2)     c >A  + B  AB   
+
+c Rough breathing + uppercase rho + uppercase
+any(upRRo)         + any(K_up)  > outs(upR) index(up,2)        c <R  + B  RB   
+
+c Diphthongs
+any(I_A)              + any(K_i) > outs(a) index(I_I,1)         c a>  + i  ai>   
+any(E_E)              + any(K_i) > outs(e) index(E_I,1)         c e>  + i  ei>   
+any(E_O)              + any(K_i) > outs(o) index(E_I,1)         c o>  + i  oi>   
+any(I_U)              + any(K_i) > outs(u) index(I_I,1)         c u>  + i  ui>   
+any(V_A)              + any(K_u) > outs(a) index(V_U,1)         c a>  + u  au>   
+any(E_E)              + any(K_u) > outs(e) index(E_U,1)         c e>  + u  eu>   
+any(V_J)              + any(K_u) > outs(j) index(V_U,1)         c j>  + u  ju>   
+any(O_O)              + any(K_u) > outs(o) index(O_U,1)         c o>  + u  ou>   
+any(I_upAEOU)         + any(K_i) > index(I_upAEOUA,1) index(I_upAEOUi,1)   c >A  + i  Ai>   AEOU 
+any(I_upAEOJ)         + any(K_u) > index(I_upAEOJA,1) index(I_upAEOJu,1)  c >A  + u  Au>   AEOJ 
+
+
+c Punctuation
+         + any(K_punc)  > index(punc,1)                         c     + ;  ?
+
+c Escaped characters
+         + any(K_Esc)   > outs(Esc)                             c     + @  .   
+any(Esc) + any(K_Escd)  > index(Escd,2)                         c .   + !  !   
+any(Esc) + any(K_lowv)  > index(lowv,2)                         c .   + i  i   
+
+c Backspace
+any(a) any(I_I)      + [K_BKSP]       > index(I_A,2)            c ai> + <- a>   
+any(a) any(I_I)      + [SHIFT K_BKSP] > index(I_A,2) 
+any(e) any(E_I)      + [K_BKSP] > index(E_E,2)                  c ei> + <- e>   
+any(e) any(E_I)      + [SHIFT K_BKSP] > index(E_E,2) 
+any(o) any(E_I)      + [K_BKSP] > index(E_O,2)                  c oi> + <- o>   
+any(o) any(E_I)      + [SHIFT K_BKSP] > index(E_O,2) 
+any(u) any(I_I)      + [K_BKSP] > index(I_U,2)                  c ui> + <- u>   
+any(u) any(I_I)      + [SHIFT K_BKSP] > index(I_U,2) 
+any(a) any(V_U)      + [K_BKSP] > index(V_A,2)                  c au> + <- a>   
+any(a) any(V_U)      + [SHIFT K_BKSP] > index(V_A,2) 
+any(e) any(E_U)      + [K_BKSP] > index(E_E,2)                  c eu> + <- e>   
+any(e) any(E_U)      + [SHIFT K_BKSP] > index(E_E,2) 
+any(j) any(V_U)      + [K_BKSP] > index(V_J,2)                  c ju> + <- j>   
+any(j) any(V_U)      + [SHIFT K_BKSP] > index(V_J,2) 
+any(o) any(O_U)      + [K_BKSP] > index(O_O,2)                  c ou> + <- o>   
+any(o) any(O_U)      + [SHIFT K_BKSP] > index(O_O,2) 
+
+any(upA) any(I_upAEOUi1)  + [K_BKSP] > index(AI_A,2)             c Ai> + <- >A   ***
+any(upA) any(I_upAEOUi1)  + [SHIFT K_BKSP] > index(AI_A,2)       c Ai> + <- >A   ***
+any(upE) any(I_upAEOUi2)  + [K_BKSP] > index(AI_E,2)             c Ai> + <- >A   ***
+any(upE) any(I_upAEOUi2)  + [SHIFT K_BKSP] > index(AI_E,2)       c Ai> + <- >A   ***
+any(upO) any(I_upAEOUi2)  + [K_BKSP] > index(AI_O,2)             c Ai> + <- >A   ***
+any(upO) any(I_upAEOUi2)  + [SHIFT K_BKSP] > index(AI_O,2)       c Ai> + <- >A   ***
+any(upU) any(I_upAEOUi3)  + [K_BKSP] > index(AI_U,2)             c Ai> + <- >A   ***
+any(upU) any(I_upAEOUi3)  + [SHIFT K_BKSP] > index(AI_U,2)       c Ai> + <- >A   ***
+any(upA) any(I_upAEOJu1)  + [K_BKSP] > index(AI_A,2)             c Ai> + <- >A   ***
+any(upA) any(I_upAEOJu1)  + [SHIFT K_BKSP] > index(AI_A,2)       c Ai> + <- >A   ***
+any(upE) any(I_upAEOJu2)  + [K_BKSP] > index(AI_E,2)             c Ai> + <- >A   ***
+any(upE) any(I_upAEOJu2)  + [SHIFT K_BKSP] > index(AI_E,2)       c Ai> + <- >A   ***
+any(upO) any(I_upAEOJu2)  + [K_BKSP] > index(AI_O,2)             c Ai> + <- >A   ***
+any(upO) any(I_upAEOJu2)  + [SHIFT K_BKSP] > index(AI_O,2)       c Ai> + <- >A   ***
+any(upJ) any(I_upAEOJu1)  + [K_BKSP] > index(AI_J,2)             c Ai> + <- >A   ***
+any(upJ) any(I_upAEOJu1)  + [SHIFT K_BKSP] > index(AI_J,2)       c Ai> + <- >A   ***
+
+c any(updipU) any(I_upAEOJu)  + [K_BKSP] > index(I_upAEOJ,2)             c Au> + <- >A   ***
+c any(updipU) any(I_upAEOJu)  + [SHIFT K_BKSP] > index(I_upAEOJ,2)       c Au> + <- >A   ***
+
+any(sMed) any(low)                 + [K_BKSP] > outs(sFin)      c sa  + <- v     
+any(sMed) any(low)                 + [SHIFT K_BKSP] > \
+                           outs(sFin)   
+any(sMed) any(br) any(low)         + [K_BKSP] > outs(sFin) \
+                                      index(br,2)               c s]a + <- v]    
+any(sMed) any(br) any(low)         + [SHIFT K_BKSP] > \
+                           outs(sFin) index(br,2) 
+any(sMed) any(br) any(br) any(low) + [K_BKSP] > outs(sFin) \
+                                      index(br,2) index(br,3)   c s]]a+ <- v]]   
+any(sMed) any(br) any(br) any(low) + [SHIFT K_BKSP] > \
+                           outs(sFin) index(br,2) index(br,3) 
+
+nul any(upVSm) any(up)                       + [K_BKSP] > \
+                                          index(upVSm_Sm,2) c 0AB + <- 0>A     
+nul any(upVSm) any(up)                       + [SHIFT K_BKSP] > \
+                                          index(upVSm_Sm,2) 
+nul any(lbr) any(upVSm) any(up)              + [K_BKSP] > \
+                index(lbr,2)              index(upVSm_Sm,3) c 0[AB+ <- 0[>A    
+nul any(lbr) any(upVSm) any(up)              + [SHIFT K_BKSP] > \
+                index(lbr,2)              index(upVSm_Sm,3) 
+nul any(lbr) any(lbr) any(upVSm) any(up)     + [K_BKSP] > \
+                index(lbr,2) index(lbr,3) index(upVSm_Sm,4) c 0[[AB <- 0[[>A   
+nul any(lbr) any(lbr) any(upVSm) any(up)     + [SHIFT K_BKSP] > \
+                index(lbr,2) index(lbr,3) index(upVSm_Sm,4) 
+any(wi) any(upVSm) any(up)                   + [K_BKSP] > \
+    index(wi,1)                           index(upVSm_Sm,2) c _AB + <- _>A    
+any(wi) any(upVSm) any(up)                   + [SHIFT K_BKSP] > \
+    index(wi,1)                           index(upVSm_Sm,2) 
+any(wi) any(lbr) any(upVSm) any(up)          + [K_BKSP] > \
+    index(wi,1) index(lbr,2)              index(upVSm_Sm,3)  c _[AB+ <- _[>A    
+any(wi) any(lbr) any(upVSm) any(up)          + [SHIFT K_BKSP] > \
+    index(wi,1) index(lbr,2)              index(upVSm_Sm,3)
+any(wi) any(lbr) any(lbr) any(upVSm) any(up) + [K_BKSP] > \
+    index(wi,1) index(lbr,2) index(lbr,3) index(upVSm_Sm,4) c _[[AB <- _[[>A    
+any(wi) any(lbr) any(lbr) any(upVSm) any(up) + [SHIFT K_BKSP] > \
+    index(wi,1) index(lbr,2) index(lbr,3) index(upVSm_Sm,4) 
+
+nul any(upR) any(up)                       + [K_BKSP] > \
+                                          outs(upRRo)     c 0RB + <- 0<R    
+nul any(upR) any(up)                       + [SHIFT K_BKSP] > \
+                                          outs(upRRo) 
+nul any(lbr) any(upR) any(up)              + [K_BKSP] > \
+                index(lbr,2)              outs(upRRo)    c 0[RB+ <- 0[<R    
+nul any(lbr) any(upR) any(up)              + [SHIFT K_BKSP] > \
+                index(lbr,2)              outs(upRRo) 
+nul any(lbr) any(lbr) any(upR) any(up)     + [K_BKSP] > \
+                index(lbr,2) index(lbr,3) outs(upRRo)    c 0[[RB <- 0[[<R    
+nul any(lbr) any(lbr) any(upR) any(up)     + [SHIFT K_BKSP] > \
+                index(lbr,2) index(lbr,3) outs(upRRo)  
+any(wi) any(upR) any(up)                   + [K_BKSP] > \
+    index(wi,1)                           outs(upRRo)    c _RB + <- _<R    
+any(wi) any(upR) any(up)                   + [SHIFT K_BKSP] > \
+    index(wi,1)                           outs(upRRo) 
+any(wi) any(lbr) any(upR) any(up)          + [K_BKSP] > \
+    index(wi,1) index(lbr,2)              outs(upRRo)    c _[RB+ <- _[<R    
+any(wi) any(lbr) any(upR) any(up)          + [SHIFT K_BKSP] > \
+    index(wi,1) index(lbr,2)              outs(upRRo)  
+any(wi) any(lbr) any(lbr) any(upR) any(up) + [K_BKSP] > \
+    index(wi,1) index(lbr,2) index(lbr,3) outs(upRRo)    c _[[RB <- _[[<R    
+any(wi) any(lbr) any(lbr) any(upR) any(up) + [SHIFT K_BKSP] > \
+    index(wi,1) index(lbr,2) index(lbr,3) outs(upRRo)  
+
+                    + any(K_low)   > index(low,1)
+                    + any(K_up)    > index(up,1)
+
+                     
+any(all)    + [K_BKSP]          > nul
+any(all)    + [SHIFT K_BKSP]    > nul
+c Illegal keys
+            + any(K_ill)        > beep
+
+c ----------------------------------------------------------------------------
+c End of keyboard
