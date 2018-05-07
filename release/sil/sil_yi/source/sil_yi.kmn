@@ -1,9 +1,9 @@
 ﻿c sil_yi.kmn
-c 
+c
 c Yi keyboard layout using pinyin input.
 c Author:  Andy Eatough
 c Date:   Nov 30, 2000, Last revised Sept 3, 2002
-c 
+c
 
 
 store(&version) "9.0"
@@ -24,9 +24,10 @@ begin Unicode > use(Unicode Group)
 group(Unicode Group) using keys
 
 c RULES
-'i' + ' '           > U+a002         c Yi mid tone i
+
 'it' + ' '          > U+a000         c Yi high tone i
 'ix' + ' '          > U+a001         c Yi mid-high tone i
+'i' + ' '           > U+a002         c Yi mid tone i
 'ip' + ' '          > U+a003         c Yi low tone i
 'iet' + ' '         > U+a004         c Yi high tone ie
 'iex' + ' '         > U+a005         c Yi mid-high tone ie
@@ -1393,28 +1394,28 @@ c ------------------------------------
 c fullwidth punctuation
 c ------------------------------------
 
-+ '!'      > U+ff01    c fw exclamation point
-+ '?'      > U+ff1f    c fw question mark
-+ '('      > U+ff08    c fw l parenthesis
-+ ')'      > U+ff09    c fw r parenthesis
-+ '['      > U+ff3b    c fw l square bracket
-+ ']'      > U+ff3d    c fw r square bracket
-+ '|'      > U+ff5c    c fw pipe
-+ '{'      > U+ff5b    c fw r curly bracket
-+ '}'      > U+ff5d    c fw l curly bracket
-+ ':'      > U+ff1a    c fw colon
-+ ';'      > U+ff1b    c fw semicolon
-+ '/'      > U+ff0f    c fw slash
-+ ' '      > U+3000    c fw blank space
-+ '.'      > U+3002    c Chinese "juhao"
-+ '\'      > U+3001    c Chinese "dunhao"
-+ ','      > U+ff0c    c fw comma
-+ '<'      > U+3008    c Chinese l sg "shuminghao"
-+ '>'      > U+3009    c Chinese r sg "shuminghao"
-U+3008 + '<'  > U+300a    c Chinese l db "shuminghao"
-U+3009 + '>'  > U+300b    c Chinese r db "shuminghao"
-+ "`"         > U+2018    c Chinese l sg quote
-+ "'"         > U+2019    c Chinese r sg quote
-U+2018 + "`"  > U+201c    c Chinese l db quote
-U+2019 + "'"  > U+201d    c Chinese r db quote
-U+3002 + '.'  > U+2026    c Chinese "dot dot dot"
++ '!'      > U+ff01    c FULLWIDTH EXCLAMATION MARK
++ '?'      > U+ff1f    c FULLWIDTH QUESTION MARK
++ '('      > U+ff08    c FULLWIDTH LEFT PARENTHESIS
++ ')'      > U+ff09    c FULLWIDTH RIGHT PARENTHESIS
++ '['      > U+ff3b    c FULLWIDTH LEFT SQUARE BRACKET
++ ']'      > U+ff3d    c FULLWIDTH RIGHT SQUARE BRACKET
++ '|'      > U+ff5c    c FULLWIDTH VERTICAL LINE
++ '{'      > U+ff5b    c FULLWIDTH LEFT CURLY BRACKET
++ '}'      > U+ff5d    c FULLWIDTH RIGHT CURLY BRACKET
++ ':'      > U+ff1a    c FULLWIDTH COLON
++ ';'      > U+ff1b    c FULLWIDTH SEMICOLON
++ '/'      > U+ff0f    c FULLWIDTH SOLIDUS
++ ' '      > U+3000    c IDEOGRAPHIC SPACE
++ '.'      > U+3002    c IDEOGRAPHIC FULL STOP - Chinese "juhao"
++ '\'      > U+3001    c IDEOGRAPHIC COMMA - Chinese "dunhao"
++ ','      > U+ff0c    c FULLWIDTH COMMA
++ '<'      > U+3008    c LEFT ANGLE BRACKET - Chinese l sg "shuminghao"
++ '>'      > U+3009    c RIGHT ANGLE BRACKET - Chinese r sg "shuminghao"
+U+3008 + '<'  > U+300a    c LEFT DOUBLE ANGLE BRACKET - Chinese l db "shuminghao"
+U+3009 + '>'  > U+300b    c RIGHT DOUBLE ANGLE BRACKET - Chinese r db "shuminghao"
++ "`"         > U+2018    c LEFT SINGLE QUOTATION MARK - Chinese l sg quote
++ "'"         > U+2019    c RIGHT SINGLE QUOTATION MARK - Chinese r sg quote
+U+2018 + "`"  > U+201c    c LEFT DOUBLE QUOTATION MARK - Chinese l db quote
+U+2019 + "'"  > U+201d    c RIGHT DOUBLE QUOTATION MARK - Chinese r db quote
+U+3002 + '.'  > U+2026    c HORIZONTAL ELLIPSIS - Chinese "dot dot dot"

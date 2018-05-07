@@ -1,7 +1,7 @@
 Yi Keyboard Change History
 =======================
 
-1.2 (pr 2018)
+1.2 (7 May 2018)
 -----------------
 * Added to GitHub repository
 * Added macOS and web (desktop) platform support
