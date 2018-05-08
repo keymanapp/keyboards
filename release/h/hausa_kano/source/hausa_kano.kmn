@@ -1,0 +1,34 @@
+﻿c This is the simplest keyboard that a user can input the Hausa Language based on the standard QWERTY (US) keyboard.
+store(&VERSION) '9.0'
+store(&COPYRIGHT) '© 2017 Hamza Sulayman'
+store(&WINDOWSLANGUAGES) 'x0468'
+store(&BITMAP) 'hausa_kano.ico'
+store(&VISUALKEYBOARD) 'hausa_kano.kvks'
+store(&KEYBOARDVERSION) '1.0'
+store(&MESSAGE) 'This is the simplest keyboard that a user can input the Hausa Language based on the standard QWERTY (US) keyboard.'
+store(&LANGUAGE) 'x0468'
+store(&NAME) 'Hausa Kano'
+store(&ETHNOLOGUECODE) 'hau'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'hausa_kano-layout.js'
+begin Unicode > use(main)
+
+group(main) using keys
++ "x" > U+0257 
++ "v" > U+0253 
++ "q" > U+0199
++ "X" > U+018A
++ "V" > U+0181 
++ "Q" > U+0198 
++ "`" > dk(bkquote)
+dk(bkquote) + "Q" > U+0051
+dk(bkquote) + "q" > U+0071 
+dk(bkquote) + "x" > U+0078 
+dk(bkquote) + "X" > U+0058
+dk(bkquote) + "V" > U+0056
+dk(bkquote) + "v" > U+0076
+dk(bkquote) + "P" > U+0050                                 
+dk(bkquote) + "p" > U+0070
++ "$" > U+20A6
+dk(bkquote) + "$" > U+0024
+dk(bkquote) + "`" > "`" 
