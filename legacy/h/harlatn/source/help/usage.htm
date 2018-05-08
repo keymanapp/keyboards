@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Harari (Lâtîn harfi) keyboard</title>
+    <style type='text/css'>               
+        html, body { cursor: default; padding: 0; margin: 4px 4px 0 4px; overflow: auto }
+        div, p { font: 9pt 'Doulos SIL'; }
+        span.key, tr.key td { border: solid 1px #808080; background: #c0c0c4; margin: 2px; padding: 2px 4px; width: 1em; font: bold 10pt Tahoma; text-align: center; }
+        span.key { display: inline-block }
+        td.over { background: #c0c0ff; }
+        div.table { text-align: center; padding: 4px }
+        tr.out td { text-align: center; font: bold 10pt 'Doulos SIL'; color: blue; cursor: hand }
+    </style>                    
+    <script type='text/javascript'><!--
+    window.onload = function() {
+      var e = document.getElementsByTagName('td');
+      for(var i = 0; i < e.length; i++) {
+        if(e[i].parentElement.className == 'out') {
+          e[i].onmouseover = tagover;
+          e[i].onmouseout = tagout;
+          e[i].onclick = tagclick;
+        }
+      }
+    }
+    
+    function tagover()
+    {
+      window.event.srcElement.className = 'over';
+    }
+    
+    function tagout()
+    {
+      window.event.srcElement.className = '';
+    }
+                                                                             
+    function touni(t)
+    {     
+      var s = '';
+      for(var i = 0; i < t.length; i++)
+      {                   
+        var v = t.charCodeAt(i);
+        ch = v.toString(16).toUpperCase();
+        while(ch.length < 4) ch='0'+ch;
+        if(s != '') s += ' ';
+        s += 'U+'+ch;
+      }
+      return s;
+    }
+    
+    function tagclick()
+    {
+      location.href='keyman:insertchars?chars='+encodeURIComponent(touni(window.event.srcElement.innerText));
+    }
+
+    function boo()
+    {
+	location.href='keyman:insertchars?chars=U%2b1234';
+	}
+
+--></script>
+</head>
+<body>
+
+<div class='title'><b>Harari (Lâtîn harfi) keyboard Usage Tips</b></div>
+
+<div>Type any of the keys below, followed by <span class='key' onclick='javascript:boo()'>[</span>, to get the corresponding output.</div>
+          
+<div class='table'>
+<table>
+  <tr class='key'><td>a</td><td>A</td><td>e</td><td>E</td><td>i</td><td>I</td><td>o</td><td>O</td><td>u</td><td>U</td></tr>
+  <tr class='out'><td>â</td><td>Â</td><td>ê</td><td>Ê</td><td>î</td><td>Î</td><td>ô</td><td>Ô</td><td>û</td><td>Û</td></tr>
+</table>           
+</div>
+
+<div>Type any of the keys below, followed by <span class='key' onclick='javascript:boo()'>]</span>, to get the corresponding output.</div>
+
+<div class='table'>
+<table>
+  <tr class='key'><td>a</td><td>A</td><td>d</td><td>D</td><td>h</td><td>H</td><td>s</td><td>S</td><td>t</td><td>T</td><td>z</td><td>Z</td></tr>
+  <tr class='out'><td>ȧ</td><td>Ȧ</td><td>ḋ</td><td>Ḋ</td><td>ḣ</td><td>Ḣ</td><td>ṡ</td><td>Ṡ</td><td>ṫ</td><td>Ṫ</td><td>ż</td><td>Ż</td></tr>
+</table>
+</div>
+
+<div>Type <span class='key' onclick='javascript:boo()'>\</span>, to get <span class="out">ʼ</span></div>
+
+</body>
+</html>
+
+
