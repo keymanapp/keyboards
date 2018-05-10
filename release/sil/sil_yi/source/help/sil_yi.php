@@ -1,6 +1,6 @@
 <?php
   $pagename = 'SIL Yi Keyboard Help';
-  $pagetitle = 'Yi Keyboard Help';
+  $pagetitle = 'SIL Yi Keyboard Help';
   $pagestyle = <<<END
   table.inputSequences {  border: 1px solid #1C6EA4;  background-color: #FFFFFF; text-align: left;  border-collapse: collapse;}
   table.inputSequences td, table.inputSequences th {  border: 1px solid #FFFFFF;  padding: 3px 6px;  text-align:center;}
