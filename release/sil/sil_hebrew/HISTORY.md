@@ -1,4 +1,4 @@
-Hebrew Keyboard Change History
+SIL Hebrew Keyboard Change History
 =======================
 
 1.6 (23 Apr 2018)
