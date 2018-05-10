@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tchad keyboard</title>
+
+  <style type="text/css">
+  h1 { font: bold 12pt Arial }
+  </style>
+  <script type='text/javascript'>
+    window.onload = function()
+    {
+      var e = window.top.document.getElementById('tabReadme');
+      var eng=true,fra=true;
+      if(e && e.innerHTML == 'Lisez-moi') eng=false;
+      else if(e && e.innerHTML == 'Readme') fra=false;
+
+      document.getElementById('readme-fra').style.display = fra ? 'block' : 'none';
+      document.getElementById('readme-eng').style.display = eng ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id='readme-eng'>
+    <h1>Tchad keyboard</h1>
+    <p>This keyboard enables the typing of all Chadian
+    languages using the Chadian National Alphabet. It gives the ability to
+    type all the special characters and diacritics in this
+    standard alphabet, as well as many additional useful characters such
+    as phonetic symbols and French characters.</p>
+    <p>©&nbsp;2017-2018 SIL Chad.</p>
+  </div>
+  <div id='readme-fra'>
+    <h1>Clavier Tchad</h1>
+    <p>Ce clavier vous permet
+    de saisir toutes les langues de Tchad en utilisant l’Alphabet National
+    Tchadien. Il vous permet de taper tous les caractères et diacritiques
+    dans cet
+    alphabet standard, ainsi que d’autres caractères utiles comme les
+    symboles
+    phonétiques
+    et les caractères français.</p>
+    <p>©&nbsp;2017-2018 SIL International.</p>
+  </div>
+</body>
+</html>
