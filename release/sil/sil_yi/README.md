@@ -1,4 +1,4 @@
-Yi Keyboard
+SIL Yi Keyboard
 =====================
 
 Copyright (C) 2000-2018 SIL International

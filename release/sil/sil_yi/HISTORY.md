@@ -1,4 +1,4 @@
-Yi Keyboard Change History
+SIL Yi Keyboard Change History
 =======================
 
 1.2 (7 May 2018)
