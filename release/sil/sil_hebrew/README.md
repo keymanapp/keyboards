@@ -1,4 +1,4 @@
-Hebrew Keyboard
+SIL Hebrew Keyboard
 =====================
 
 Copyright (C) 2001-2018 SIL International
