@@ -1,4 +1,4 @@
-Rac_Khowar Change History
+Rac_Balti Change History
 =======================
 
 0.6 (14 August 2017)
