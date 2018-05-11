@@ -1,47 +1,78 @@
-[Package]
-RedistributableInstaller=0
-CreatingFreeVersion=0
-Version=6.0
-ExecuteProgram=
-ReadMeFile=welcome.htm
-GraphicFile=sil.bmp
-DisableKeepFonts=0
-BothVersionsIncluded=0
-[Buttons]
-Count=3
-[Button-0]
-ButtonType=install
-Caption=&Install
-URL=
-Left=0
-Top=0
-[Button-1]
-ButtonType=cancel
-Caption=Cancel
-URL=
-Left=0
-Top=0
-[Button-2]
-ButtonType=about
-Caption=&About...
-URL=
-Left=0
-Top=0
-[StartMenu]
-Path=Greek (polytonic precomposed) Unicode 1.03
-Create=1
-AddUninstallEntry=1
-[StartMenuEntries]
-Keyboard chart="Greek Poly Comp Kbrd Layout.pdf",""
-Readme="welcome.htm",""
-[Info]
-name="Greek (polytonic precomposed) Unicode 1.03",""
-copyright="© 2002-2011 SIL International",""
-Version="1.03",""
-Author="","mailto:sil_fonts@sil.org"
-WebSite="http://scripts.sil.org/SILgrkuni","http://scripts.sil.org/SILgrkuni"
-[Files]
-0="File welcome.htm","welcome.htm",0
-1="File Greek Poly Comp Kbrd Layout.pdf","Greek Poly Comp Kbrd Layout.pdf",0
-2="Keyboard Greek (polytonic precomposed) Unicode 1.03","GrkPolyCompv103.kmx",0
-3="File sil.bmp","sil.bmp",0
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>10.0.1086.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <name URL="">Polytonic Greek (SIL)</name>
+    <copyright URL="">Â© 2002-20118 SIL International</copyright>
+    <Version URL="">2.0</Version>
+    <Author URL=""></Author>
+    <WebSite URL=""></WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\sil_greek_polytonicU_.png</Name>
+      <Description>File sil_greek_polytonicU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\sil_greek_polytonicU_S.png</Name>
+      <Description>File sil_greek_polytonicU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_greek_polytonic.js</Name>
+      <Description>File sil_greek_polytonic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_greek_polytonic.kvk</Name>
+      <Description>File sil_greek_polytonic.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_greek_polytonic.kmx</Name>
+      <Description>Keyboard Polytonic Greek (SIL)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Polytonic Greek (SIL)</Name>
+      <ID>sil_greek_polytonic</ID>
+      <Version>2.0</Version>
+      <Languages/>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
