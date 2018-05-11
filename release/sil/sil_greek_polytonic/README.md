@@ -1,12 +1,13 @@
-____________ Keyboard
+Polytonic Greek (SIL) Keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) 2002-2018 SIL International
 
-Version A.B
+Version 2.0
 
 __DESCRIPTION__
-<add a description of this keyboard>
+Greek keyboard layout supporting Polytonic Greek, using precomposed characters.
+
 
 Links
 -----
@@ -43,5 +44,3 @@ Todo
   * supply a meaningful description for the keyboard; this description will be what website visitors will see when they view the keyboard details and on which they can search
 * This should cover many cases, but if the keyboard is more complicated, see: https://help.keyman.com/developer/cloud/keyboard_info/1.0/ for more details of what can be included in the .keyboard_info file, and for examples.
 * Finally, remove these TODO items from this file once you have completed them!
-
- 
