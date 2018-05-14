@@ -1,4 +1,4 @@
-c ----------------------------------------------------------------------------
+﻿c ----------------------------------------------------------------------------
 c Greek keyboard for use with Unicode Windows fonts such as Galatia SIL
 c and Keyman 6.x
 c ----------------------------------------------------------------------------
@@ -40,13 +40,11 @@ store(&ETHNOLOGUECODE) 'grc ell'
 store(&LANGUAGE) 'x0408'
 store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '1.4'
 
 begin Unicode > use(MainU)
 
 c ----------------------------------------------------------------------------
-c This new store (10-Sept-2007) is a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF
-store(chars) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]\{}|;:",./<>?' "'`~"
 
 c Letters
 store(K_a)          "a"         c key for alpha
