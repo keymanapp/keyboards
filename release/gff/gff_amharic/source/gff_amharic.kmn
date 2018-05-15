@@ -15,7 +15,7 @@ c
   store(&VERSION) '9.0'
 store(&Name) "አማርኛ(Amharic)"
 c $keymanonly:store(&MnemonicLayout) "1"
-  store(&CapsAlwaysOff) "1"
+  store(&CapsAlwaysOff) "0"
   store(&Copyright) "Creative Commons Attribution 3.0"
   store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&WINDOWSLANGUAGES) 'x045E'
@@ -48,6 +48,8 @@ c ---------------------End Maps of Syllabic Forms-------------------------------
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(alefKeys)  'aAuUiIeEoO'
   store(alefEthio) 'አአኡኡኢኢእእኦኦ'
+  
+c store(sadsTerminator) [K_SHIFT_LEFT] [K_SHIFT_RIGHT]
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -291,6 +293,9 @@ c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
  any(sads) + "'" > index(sads,1) deadkey(1)
+ any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1)   
+ 
+ 
 c deadkey(1) + "'" > "'"
 c deadkey(1) + any(alefKeys) > index(alefEthio,2)
 
