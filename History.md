@@ -1,4 +1,4 @@
-Rachitrali-Balti Change History
+Rachitrali-Brahui Change History
 =======================
 
 0.6 (14 August 2017)
