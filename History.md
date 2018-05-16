@@ -1,4 +1,4 @@
-Rachitrali-Balti Change History
+Rachitrali-Urdu Change History
 =======================
 
 0.6 (14 August 2017)
