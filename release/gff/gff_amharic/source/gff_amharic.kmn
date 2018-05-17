@@ -220,7 +220,7 @@ c The following two rules had to be added here (not later) to fix the deadkey is
  deadkey(1) + any(alefKeys) > index(alefEthio,2)
  
   + any(extraKeys) > index(extraSads,1)
-  + any(keys)     > index(sads,1)
+  + any(keys)      > index(sads,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -353,7 +353,7 @@ c Ethiopic Numerals
 
   '#' + '1' > '፩'
   '#' + any(ArabOnes) > index(ones,2)
-  '#' + '#' > '#'
+  '#' + '#' > '#' deadkey(2)
 
 c special cases for multiples of one
  '፩'  + '0' > '፲'
