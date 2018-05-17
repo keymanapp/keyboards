@@ -118,11 +118,11 @@
 
 	</tr>
 	<tr>
-		<td>descendant</td><td>◌̂</td><td>^</td>
+		<td>descendant</td><td>◌̂</td><td>,</td>
 
 	</tr>
 	<tr>
-		<td>montant</td><td>◌̌</td><td>¨</td>
+		<td>montant</td><td>◌̌</td><td>?</td>
 
 	</tr>
 	<tr>
