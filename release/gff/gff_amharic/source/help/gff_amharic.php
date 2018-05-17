@@ -1,12 +1,12 @@
 <?php /*
-  Name:             Keyboard_gff_amh_7
-  Copyright:        Keyboard ©2009 The Ge'ez Frontier Foundation 
+  Name:             Keyboard_gff_amhamaric
+  Copyright:        Keyboard ©2009-2018 The Ge'ez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    18 Sep 2009
-  Authors:          mcdurdin, pbaehr
+  Modified Date:    5 May 2018
+  Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
 
@@ -115,13 +115,16 @@ rule. For example, English does not have <span class='highlightExample'>ጠ</spa
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>mua</span> produces <span class='highlightExample'>ሟ</span></p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>guie</span> produces <span class='highlightExample'>ጔ</span></p>
 <p>
-Finally, we must introduce a special rule for ' (apostrophe). Some words are spelt with a <span class='highlightExample'>ሳድስ</span> (6th) letter followed by a vowel, like <span class='highlightExample'>ርኤ</span> in <span class='highlightExample'>ገብርኤል</span>. We use the apostrophe here to type <span class='keys'>gebr'iel</span> to make sure we get <span class='highlightExample'>ርኤ</span> instead of <span class='highlightExample'>ሬ</span>.
+Finally, we must introduce a special rule for ' (apostrophe). Some words are spelt with a <span class='highlightExample'>ሳድስ</span> (6<sup>th</sup>) letter followed by a vowel, like <span class='highlightExample'>ርኤ</span> in <span class='highlightExample'>ገብርኤል</span>. We use the apostrophe here to type <span class='keys'>gebr'iel</span> to make sure we get <span class='highlightExample'>ርኤ</span> instead of <span class='highlightExample'>ሬ</span>.
 </p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>mel'ak</span> produces <span class='highlightExample'>መልአክ</span></p>
-<p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>m'eeraf</span> becomes <span class='highlightExample'>ምዕራፍ</span></p>
+<p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>m'eeraf</span> produces <span class='highlightExample'>ምዕራፍ</span></p>
 <p>
-We also use the apostrophe for Ethiopic numbers, so <span class='keys'>'1</span> becomes <span class='highlightExample'>፩</span> and so on. If an English apostrophe <span class='highlightExample'>'</span> is needed in your document, type it twice: <span class='keys'>''</span>. This works for other punctuation as well,
-so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semi-colon <span class='input'>;</span>. 
+Type Apostrophe twice after a 6<sup>th</sup> order letter to make it appear in your document:</p>
+<p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>mel''ak</span> produces <span class='highlightExample'>መል'አክ</span></p>
+<p>
+We also use the &ldquo;number sign&rdquo; (&ldquo;#&rdquo; also know as the &ldquo;hash mark&rdquo;) for Ethiopic numbers, so <span class='keys'>#1</span> becomes <span class='highlightExample'>፩</span> and so on. If a <span class='highlightExample'>#</span> is needed in your document before a number, type it twice and: <span class='keys'>##1</span> becomes <span class='highlight'>#1</span>. The double strike works for other punctuation as well,
+so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>. 
 </p>
 <p style='margin-top:10px'>
 See <a target="_blank" href='AmharicTyping-English.pdf'>Typing in Amharic (English)</a> or 
@@ -147,15 +150,15 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <p>Keyboard Layouts for other Ethiopic languages:</p>
 <p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_byn_7">Blin</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mdx_7">Dizi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_gez_7">Ge'ez</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Ge'ez</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mym_7">Me'en</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_muz_7">Mursi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_sgw_7">Sebatbeit</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tir_er_7">Tigrigna (Eritrea)</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tir_et_7">Tigrigna (Ethiopia)</a></p>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_eritrea">Tigrigna (Eritrea)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_ethiopia">Tigrigna (Ethiopia)</a></p>
 
 </div>
 <div>
@@ -174,13 +177,15 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <p>It is recommended that you use an English QWERTY hardware keyboard with this keyboard.
 </p>
 <h3>Unicode Version</h3>
-<p>This keyboard complies with Unicode 5.1</p>
+<p>This keyboard complies with Unicode 4.1</p>
 
 </div>
 
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.5, 16 May 2018</dt>
+  <dd>Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.</dd>
   <dt>Version 1.4, 7 May 2015</dt>
   <dd>Added letters ኸ Ke ኹ Ku ኺ Ki ኻ Ka ኼ Kie ኽ K ኾ Ko to the touch layouts.</dd>
 </dl>
@@ -194,7 +199,7 @@ This keyboard was created by the Ge'ez Frontier Foundation.  Tavultesoft graciou
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2009 Ge'ez Frontier Foundation and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2009-2018 Ge'ez Frontier Foundation and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
 </p>
 <p>
 THIS SOFTWARE IS PROVIDED BY TAVULTESOFT PTY LTD "AS IS" AND ANY
