@@ -9,19 +9,30 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <name URL="">Polytonic Greek (SIL)</name>
-    <copyright URL="">© 2002-20118 SIL International</copyright>
     <Version URL="">1.4</Version>
-    <Author URL=""></Author>
-    <WebSite URL=""></WebSite>
+    <Name URL="">Polytonic Greek (SIL)</Name>
+    <Copyright URL="">(c) 2002-2018 SIL International</Copyright>
   </Info>
   <Files>
+    <File>
+      <Name>..\build\sil_greek_polytonic.kvk</Name>
+      <Description>File sil_greek_polytonic.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_greek_polytonic.kmx</Name>
+      <Description>Keyboard Polytonic Greek (SIL)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -46,24 +57,6 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
-    <File>
-      <Name>..\build\sil_greek_polytonic.js</Name>
-      <Description>File sil_greek_polytonic.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\build\sil_greek_polytonic.kvk</Name>
-      <Description>File sil_greek_polytonic.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>..\build\sil_greek_polytonic.kmx</Name>
-      <Description>Keyboard Polytonic Greek (SIL)</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -71,8 +64,8 @@
       <ID>sil_greek_polytonic</ID>
       <Version>1.4</Version>
       <Languages>
+        <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
         <Language ID="el">Modern Greek (1453-)</Language>
-        <Language ID="grc">Ancient Greek (to 1453)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
