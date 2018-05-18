@@ -1,67 +1,29 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Polytonic Greek (SIL) Keyboard</title>
-    <style>
-        html, body { padding: 0; margin: 4px 4px 0 4px; font-family: sans-serif;}
-        div, p, li { margin-bottom: 8px }
-table.inputSequences {
-  border: 1px solid #1C6EA4;
-  background-color: #FFFFFF;
-  /*width: 100%;*/
-  text-align: left;
-  /* border-collapse: collapse; */
-}
-table.inputSequences td, table.inputSequences th {
-  border: 1px solid #FFFFFF;
-  padding: 3px 2px;
-}
-table.inputSequences tr:nth-child(even) {
-  background: #D0E4F5;
-}
-table.inputSequences thead {
-  background: #1C6EA4;
-  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  border-bottom: 2px solid #444444;
-}
-table.inputSequences thead th {
-  font-weight: bold;
-  color: #FFFFFF;
-  border-left: 4px solid #D0E4F5;
-}
-table.inputSequences thead th:first-child {
-  border-left: none;
-}
+<?php
+  $pagename = 'Polytonic Greek (SIL) Keyboard Help';
+  $pagetitle = 'Polytonic Greek (SIL) Keyboard Help';
+  $pagestyle = <<<END
+  div, p, li { margin-bottom: 8px }
+  table.inputSequences {border: 1px solid #1C6EA4;background-color: #FFFFFF;text-align: left;}
+  table.inputSequences td, table.inputSequences th {border: 1px solid #FFFFFF;padding: 3px 2px;}
+  table.inputSequences tr:nth-child(even) {background: #D0E4F5;}
+  table.inputSequences thead {background: #1C6EA4;background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);border-bottom: 2px solid #444444;}
+  table.inputSequences thead th {font-weight: bold;color: #FFFFFF;border-left: 4px solid #D0E4F5;}
+  table.inputSequences thead th:first-child {border-left: none;}
+  table.inputSequences tfoot td {font-size: 14px;}
+  table.inputSequences tfoot .links {text-align: right;}
+  table.inputSequences tfoot .links a{display: inline-block;background: #1C6EA4;color: #FFFFFF;padding: 2px 8px;border-radius: 5px;}
+  th {width: 100px;}
+  td { width: 60px;}
+  tr.glyphs td { font-size: 1.1em;}
+  span[lang=grc] {font-style:italic;}
+  table+table {margin-top: 1.0em;}
+END;
+  require_once('header.php');
+?>
 
-table.inputSequences tfoot td {
-  font-size: 14px;
-}
-table.inputSequences tfoot .links {
-  text-align: right;
-}
-table.inputSequences tfoot .links a{
-  display: inline-block;
-  background: #1C6EA4;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
-th {width: 100px;}
-td { width: 60px;}
 
-tr.glyphs td { font-size: 1.1em;}
 
-span[lang=grc] {font-style:italic;}
 
-table+table {margin-top: 1.0em;}
-    </style>
-</head>
-<body>
-
-<h1>Polytonic Greek (SIL) keyboard usage</h1>
 
 <h2>General layout</h2>
 
@@ -316,7 +278,3 @@ Others can be typed by preceding them with <b class="input">@</b> (the <b class=
         </tr>
     </tbody>
 </table>
-
-
-</body>
-</html>
