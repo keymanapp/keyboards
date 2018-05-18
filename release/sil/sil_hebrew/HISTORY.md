@@ -1,6 +1,10 @@
 SIL Hebrew Keyboard Change History
 =======================
 
+1.7 (17 May 2018)
+-----------------
+* Updated language codes adding script subtag for Windows 10
+
 1.6 (23 Apr 2018)
 -----------------
 * Migrated to GitHub

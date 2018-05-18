@@ -1,9 +1,9 @@
 ﻿c ----------------------------------------------------------------------------
 c Hebrew Unicode keyboard for use only with any Hebrew Unicode
 c Windows fonts (including Ezra SIL) and Keyman 6    9/22/03
-c 
+c
 c ----------------------------------------------------------------------------
-c 
+c
 
 c SILHEBD.KMN - 1.0 - Paul A. O'Rear - 20 June 1996
 c portions from EZRA10.KMN - Steve Daley - 28 February 1996
@@ -25,7 +25,7 @@ c d180 class2_accent
 c d244 holem_waw
 c d248 silent_shewa
 c d251 shureq
-c 
+c
 c Using Roman equivalents:
 c d36 number U+0307
 c d37 number2 U+0308
@@ -34,7 +34,7 @@ c d79 holem also on 'o' now
 c d99 ayin also on 'c' now
 c all finals now on all caps only: KMNPC
 c d72, d87 sin/shin are now shin + dot
-c 
+c
 c Added:
 c U+20AA New Sheqel
 c U+20AC Euro
@@ -53,7 +53,7 @@ c d78 Hebrew reversed nun with dot - use Nun Hafukha(05C6)CGJ 0307
 c d170 Hebrew Mark Lower Dot - now defined as 05C5
 c Right Meteg - use 05BD CGJ before the low vowel or other low marks
 c Left Meteg with Hataf - use Hataf ZWNJ 05BD
-c 
+c
 c Note that U+05BD Hebrew Point Meteg is coded in the Ezra SIL fonts
 c to always fall to the left of the vowel, except for with hatafs, it
 c falls medially. These are the most common positions of meteg in BHS.
@@ -72,7 +72,7 @@ store(&COPYRIGHT) 'Copyright © 2003-2018 SIL International'
 store( &Message ) "http://scripts.sil.org/"
 store(&VISUALKEYBOARD) 'sil_hebrew.kvks'
 store(&ETHNOLOGUECODE) 'hbo'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.7'
 begin UNICODE > use(Main)
 
 
@@ -231,8 +231,8 @@ c The next 5 rules handle characters that can delimit the end of a word.
 
 c Changed rules related to smart qutes, replacing with ASCII straightquotes.
 c Correct handling of quotation marks left to applicaton rather than input. AC  4/30/18
-    + [K_QUOTE] > U+0027 
-    + [K_QUOTE] > U+0022 
+    + [K_QUOTE] > U+0027
+    + [K_QUOTE] > U+0022
 c + [K_QUOTE]		       >  U+2019 	c opening (right) single quote 2/11/97 12/12/01
 c + [SHIFT K_QUOTE]	>  U+201D 	c opening (right) double quote 2/11/97 12/12/01
 c Note: Closing quotation marks are attained by typing a quotation mark
