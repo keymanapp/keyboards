@@ -3,8 +3,8 @@ Pasifika Keyboard Change History
 
 2.1
 -----------------
-* Migrate to GItHub
-*
+* Migrated to GItHub
+* Added support for Web, macOS, Android and iOS
 
 2.0
 -----------------
@@ -14,5 +14,3 @@ Pasifika Keyboard Change History
 1.0 (1 Jan 2015)
 -----------------
 * Initial version
-
-* Created by you

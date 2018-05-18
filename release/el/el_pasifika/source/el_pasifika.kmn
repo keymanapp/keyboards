@@ -1,18 +1,21 @@
-﻿c pasifika.kmn
-c
+﻿c el_pasifika.kmn
+c 
 c Version 2.1
-c
+c 
 c Pasifika is a keyboard layout that supports Cook Islands Maori, Fijian, Hawaiian, Maori, Niuean, Samoan, Tahitian, and Tongan.
-c
+c 
 c Andjc  (2018-05-14)
-c www.github.com/andjc
+c www.github.com/enabling-languages/
 
-store(&VERSION) '9.0'
+store(&VERSION) '10.0'
 store(&NAME) 'Pasifika'
 store(&COPYRIGHT) '© 2018 Enabling Languages'
 store(&MESSAGE) 'Keyboard layout supports various Polynesian languages'
 store(&BITMAP) 'el_pasifika.ico'
 store(&VISUALKEYBOARD) 'el_pasifika.kvks'
+store(&LAYOUTFILE) 'el_pasifika-layout.js'
+store(&KEYBOARDVERSION) '2.1'
+store(&TARGETS) 'any'
 begin Unicode > use(constraints)
 
 c ------------------------------------------------
@@ -85,11 +88,11 @@ store(punctuationKeys) [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_
 store(coreChars) outs(alphaChars) outs(digitChars) outs(punctuationChars)
 store(coreKeys) outs(alphaKeys) outs(digitKeys) outs(punctuationKeys)
 
-c   `~[{]}\|€£©
+c `~[{]}\|€£©
 store(additionalpunctuationChars) U+0060 U+007E U+005B U+007B U+005D U+007D U+005C U+007C U+20AC U+00A3 U+00A9
-store(additionalpunctuationKeys) [RALT K_BKQUOTE] [SHIFT RALT K_BKQUOTE]  [RALT K_LBRKT] [SHIFT RALT K_LBRKT] [RALT K_RBRKT]  [SHIFT RALT K_RBRKT]  [RALT K_BKSLASH]  [SHIFT RALT K_BKSLASH] [RALT K_E] [RALT K_4] [RALT K_C]
-store(additionalpunctuationKeysOSX) [ALT K_BKQUOTE] [SHIFT ALT K_BKQUOTE]  [ALT K_LBRKT] [SHIFT ALT K_LBRKT] [ALT K_RBRKT]  [SHIFT ALT K_RBRKT]  [ALT K_BKSLASH]  [SHIFT ALT K_BKSLASH] [ALT K_E] [ALT K_4] [ALT K_C]
-store(additionalpunctuationKeysTouch) [T_BKQUOTE] [T_TILDE]  [T_LBRKT] [T_LBRACE] [T_RBRKT]  [T_RBRACE]  [T_BKSLASH]  [T_PIPE] [T_EURO] [T_POUND] [T_COPYRIGHT]
+store(additionalpunctuationKeys) [RALT K_BKQUOTE] [SHIFT RALT K_BKQUOTE] [RALT K_LBRKT] [SHIFT RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_RBRKT] [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH] [RALT K_E] [RALT K_4] [RALT K_C]
+store(additionalpunctuationKeysTouch) [T_BKQUOTE] [T_TILDE] [T_LBRKT] [T_LBRACE] [T_RBRKT] [T_RBRACE] [T_BKSLASH] [T_PIPE] [T_EURO] [T_POUND] [T_COPYRIGHT]
+
 
 c ------------------------------------------------
 c Diacritics and modifier letter stores
@@ -130,9 +133,8 @@ c -----------------------------------------------
 
 + any(coreKeys) > index(coreChars,1)
 + any(digitKeysPad) > index(digitChars,1)
-+ any(additionalpunctuationKeys) > index(additionalpunctuationChars,1)
-c + any(additionalpunctuationKeysOSX) > index(additionalpunctuationChars,1)
-c + any(additionalpunctuationKeysTouch) > index(additionalpunctuationChars,1)
+if(&platform = "physical") + any(additionalpunctuationKeys) > index(additionalpunctuationChars,2)
+if(&platform = "touch") + any(additionalpunctuationKeysTouch) > index(additionalpunctuationChars,2)
 
 c ------------------------------------------------
 c Diacritics and modifier letters
