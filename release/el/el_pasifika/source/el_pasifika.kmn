@@ -1,0 +1,61 @@
+﻿c Pasifika
+c 
+c Pasifika is a keyboard layout (formerly pasifika20.kmn) that
+c supports Cook Islands Maori, Fijian,
+c Hawaiian, Maori, Niuean, Samoan,
+c Tahitian, and Tongan.
+c 
+c Andrew Cunningham 2007-03-06
+
+store(&VERSION) "9.0"
+store(&NAME) "Pasifika"
+store(&KEYBOARDVERSION) "2.1"
+store(&COPYRIGHT) "© 2007-2017 State Library of Victoria"
+store(&MESSAGE) "Keyboard layout supports various Polynesian langauges"
+c store(&BITMAP) "pasifika.bmp"
+store(&VISUALKEYBOARD) 'el_pasifika.kvk'
+begin Unicode > use(constraints) 
+
+store(diacritic_keys) "aAeEiIoOuU"
+store(macron_in) "`~"
+store(acute_in) "[{"
+store(diacritics_in) outs(macron_in) outs(acute_in)
+store(macron_out)U+0101 U+0100 U+0113 U+0112 U+012B U+012A U+014D U+014C U+016B U+016A
+store(acute_out) U+00E1 U+00C1 U+00E9 U+00C9 U+00ED U+00CD U+00F3 U+00D3 U+00FA U+00DA
+store(non_diacritic_keys) "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ1234567890`~!@#$%^&*()-_=+[{]}\|;:',./<>?" '"'
+
+store(diaeresis_keys) "iI"  
+store(diaeresis_in) "]}"
+store(diaeresis_out) U+00EF U+00CF
+store(non_diaeresis_keys) "aAeEoOuUbcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ1234567890`~!@#$%^&*()-_=+[{]}\|;:',./<>?" '"'
+
+store(modifier_keys) "\|"
+store(modifier_out) U+02BB U+02BC
+
+group(constraints) using keys
+
+c + any(modifier_keys) > use(main)
+c + any(diacritic_keys) > use(main)
+
+any(non_diacritic_keys) + any(diacritics_in) > context beep 
+any(non_diaeresis_keys) + any(diaeresis_in) > context beep
+
+nomatch > use(main)
+
+group(main) using keys 
+
+any(diacritic_keys) + any(macron_in) > index(macron_out,1) 
+any(diacritic_keys) + any(acute_in) > index(acute_out,1)
+any(diaeresis_keys) + any(diaeresis_in) > index(diaeresis_out,1)
++ any(modifier_keys) > index(modifier_out,1)
+
++ [CTRL ALT K_BKQUOTE] > "`"
++ [SHIFT CTRL ALT K_BKQUOTE] > "~" 
++ [CTRL ALT K_LBRKT] > "["
++ [SHIFT CTRL ALT K_LBRKT] > "{"
++ [CTRL ALT K_RBRKT] > "]"
++ [SHIFT CTRL ALT K_RBRKT] > "}"
++ [CTRL ALT K_BKSLASH] > "\"
++ [SHIFT CTRL ALT K_BKSLASH] > "|" 
+
+c EOF
