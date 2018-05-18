@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Rachitrali-Kalasha
-* Copyright:      (C) 2017 Rehmat Aziz Chitrali
-* Version:        1.1
+* Copyright:      (C) 2017-2018 Rehmat Aziz Chitrali
+* Version:        1.2
 * Keyman Version: 9.0
 * BCP-47 codes:   kls-Arab
 
