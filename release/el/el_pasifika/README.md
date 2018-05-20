@@ -11,7 +11,7 @@ Pasifika is a keyboard layout that supports Cook Islands Maori, Fijian, Hawaiian
 Links
 -----
 
- * Home:     https://enabling-langauges.github.io/
+ * Home:     https://enabling-languages.github.io/
 
 Supported Platforms
 -------------------
