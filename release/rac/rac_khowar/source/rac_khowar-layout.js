@@ -141,40 +141,36 @@
                 "text": "۔",
                 "sk": [
                   {
-                    "text": ",",
-                    "id": "K_COMMA"
+                    "text": "،",
+                    "id": "U_060C"
                   },
                   {
                     "text": "!",
-                    "id": "U_0021",
-                    "layer": "shift"
+                    "id": "U_0021"
                   },
                   {
                     "text": "?",
-                    "id": "U_003F",
-                    "layer": "shift"
+                    "id": "U_003F"
                   },
                   {
                     "text": "'",
-                    "id": "K_QUOTE"
+                    "id": "U_0027"
                   },
                   {
                     "text": "\"",
-                    "id": "K_QUOTE",
-                    "layer": "shift"
+                    "id": "U_0022"
                   },
                   {
                     "text": "\\",
-                    "id": "K_BKSLASH"
+                    "id": "U_005C"
                   },
                   {
                     "text": ":",
-                    "id": "K_COLON",
-                    "layer": "shift"
+                    "id": "U_003A"
                   },
                   {
-                    "text": ";",
-                    "id": "K_COLON"
+                    "text": "؛",
+                    "id": "U_061B"
                   }
                 ]
               },
@@ -357,44 +353,36 @@
                 "text": "”",
                 "sk": [
                   {
-                    "text": ",",
-                    "id": "K_COMMA",
-                    "layer": "default"
+                    "text": "،",
+                    "id": "U_060C"
                   },
                   {
                     "text": "!",
-                    "id": "U_0021",
-                    "layer": "shift"
+                    "id": "U_0021"
                   },
                   {
                     "text": "?",
-                    "id": "U_003F",
-                    "layer": "shift"
+                    "id": "U_003F"
                   },
                   {
                     "text": "'",
-                    "id": "K_QUOTE",
-                    "layer": "default"
+                    "id": "U_0027"
                   },
                   {
                     "text": "\"",
-                    "id": "K_QUOTE",
-                    "layer": "shift"
+                    "id": "U_0022"
                   },
                   {
                     "text": "\\",
-                    "id": "K_BKSLASH",
-                    "layer": "default"
+                    "id": "U_005C"
                   },
                   {
                     "text": ":",
-                    "id": "K_COLON",
-                    "layer": "shift"
+                    "id": "U_003A"
                   },
                   {
-                    "text": ";",
-                    "id": "K_COLON",
-                    "layer": "default"
+                    "text": "؛",
+                    "id": "U_061B"
                   }
                 ]
               },
