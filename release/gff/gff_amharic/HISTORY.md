@@ -1,5 +1,11 @@
-gff_amh_7 Change History
-========================
+gff_amharic Change History
+==========================
+
+1.5 (16 May 2018)
+-----------------
+
+* Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.
+* Name change from gff_amh_7
 
 1.4 (25 Sep 2017)
 -----------------
