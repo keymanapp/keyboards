@@ -541,7 +541,6 @@
                 "id": "U_0040",
                 "text": "@",
                 "pad": "50",
-                "layer": "shift",
                 "sk": [
                   {
                     "text": "#",
@@ -575,21 +574,19 @@
               },
               {
                 "id": "U_0025",
-                "text": "%",
-                "layer": "shift"
+                "text": "%"
               },
               {
                 "id": "U_06B5",
                 "text": "ڵ"
               },
               {
-                "id": "K_HYPHEN",
+                "id": "U_0640",
                 "text": "ـ"
               },
               {
-                "id": "K_EQUAL",
-                "text": "=",
-                "layer": "default"
+                "id": "U_003D",
+                "text": "="
               },
               {
                 "id": "U_007C",
