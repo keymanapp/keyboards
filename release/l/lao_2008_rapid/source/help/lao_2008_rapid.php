@@ -1,0 +1,42 @@
+<?php
+  $pagename = 'Lao 2008 Rapid Keyboard Help';
+  $pagetitle = 'Lao 2008 Rapid Keyboard Help';
+  $style = <<<EXTRA
+  p { font: 10pt Tahoma; }
+  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
+  h2 { font: bold 12pt Tahoma; color: #4444cc; }
+  img {width:100% ;max-width:750px;}
+  kbd {font-weight: bold;}
+EXTRA;
+  require_once('header.php');
+?>
+
+<p>The package includes the Lao Unicode (OpenType) font <b>Saysettha OT</b> and the Lao 2008 Rapid keyboard.</p>
+
+<p>The keyboard:</p>
+<ul>
+   <li>prevents accidentally overtyping vowel or tone marks;</li>
+   <li>utomatic re-ordering of vowel and tone marks; and</li>
+   <li>word-wrap by automatic insertion of hidden break characters at syllable boundaries</li>
+</ul>
+
+<p>The keyboard output Lao Unicode characters according to the the official Lao standard layout, and may be used with any Lao Unicode font. <br />
+  Hidden break characters (ZWSP, U+200B) can be inserted manually (with either keyboard) by using the <kbd>|</kbd> key.</p>
+
+
+
+  <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
+  <p><img alt="Lao 2008 Rapid keyboard layout: normal (default) state" src="lao_2008_rapidU_.png"/></p>
+  <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
+  <p><img alt="Lao 2008 Rapid keyboard layout: shift state" src="lao_2008_rapidU_S.png"/></p>
+  <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
+  <p><img alt="Lao 2008 Rapid keyboard layout: AltGr state" src="lao_2008_rapidU_RA.png"/></p>
+
+
+
+  <hr/>
+  <p>&copy; 2008-2018 John Durdin</p>
+
+
+</body>
+</html>
