@@ -84,7 +84,14 @@
               },
               {
                 "id": "K_T",
-                "text": "ف"
+                "text": "ف",
+                "sk": [
+                  {
+                    "text": "ڤ",
+                    "id": "K_T",
+                    "layer": "shift"
+                  }
+                ]
               },
               {
                 "id": "K_Y",
@@ -108,7 +115,14 @@
               },
               {
                 "id": "K_LBRKT",
-                "text": "ج"
+                "text": "ج",
+                "sk": [
+                  {
+                    "text": "چ",
+                    "id": "T_LBRKT",
+                    "layer": "shift"
+                  }
+                ]
               },
               {
                 "id": "K_RBRKT",
@@ -133,7 +147,14 @@
               },
               {
                 "id": "K_F",
-                "text": "ب"
+                "text": "ب",
+                "sk": [
+                  {
+                    "text": "پ",
+                    "id": "K_F",
+                    "layer": "shift"
+                  }
+                ]
               },
               {
                 "id": "K_G",
@@ -157,10 +178,17 @@
               },
               {
                 "id": "K_COLON",
-                "text": "ك"
+                "text": "ك",
+                "sk": [
+                  {
+                    "text": "گ",
+                    "id": "K_COLON",
+                    "layer": "shift"
+                  }
+                ]
               },
               {
-                "id": "K_BKQUOTE",
+                "id": "K_QUOTE",
                 "text": "ط"
               },
               {
@@ -219,7 +247,14 @@
               },
               {
                 "id": "K_PERIOD",
-                "text": "ز"
+                "text": "ز",
+                "sk": [
+                  {
+                    "text": "ژ",
+                    "id": "K_PERIOD",
+                    "layer": "shift"
+                  }
+                ]
               },
               {
                 "id": "K_SLASH",
@@ -243,12 +278,12 @@
                 "sp": "1"
               },
               {
-                "id": "K_C",
+                "id": "K_9",
                 "text": "(",
                 "layer": "shift"
               },
               {
-                "id": "K_V",
+                "id": "K_0",
                 "text": ")",
                 "layer": "shift"
               },
@@ -264,22 +299,22 @@
                 "sp": "0"
               },
               {
-                "id": "K_B",
+                "id": "K_V",
                 "text": "!",
                 "layer": "shift"
               },
               {
-                "id": "K_M",
+                "id": "K_N",
                 "text": ":",
                 "layer": "shift"
               },
               {
-                "id": "K_N",
+                "id": "K_b",
                 "text": "؛",
                 "layer": "shift"
               },
               {
-                "id": "K_PERIOD",
+                "id": "K_c",
                 "text": ".",
                 "layer": "shift"
               }
@@ -295,7 +330,8 @@
             "key": [
               {
                 "id": "K_BKQUOTE",
-                "text": "ٍ"
+                "text": "ٍ",
+                "layer": "shift"
               },
               {
                 "id": "K_1",
@@ -349,11 +385,13 @@
               },
               {
                 "id": "K_HYPHEN",
-                "text": "ً"
+                "text": "ً",
+                "layer": "shift"
               },
               {
                 "id": "K_EQUAL",
-                "text": "ّ"
+                "text": "ّ",
+                "layer": "shift"
               }
             ]
           },
@@ -383,7 +421,7 @@
               },
               {
                 "id": "K_T",
-                "text": "َ",
+                "text": "ڤ",
                 "layer": "shift"
               },
               {
@@ -413,12 +451,12 @@
               },
               {
                 "id": "K_LBRKT",
-                "text": "+",
+                "text": "چ",
                 "layer": "shift"
               },
               {
                 "id": "K_RBRKT",
-                "text": "ُ",
+                "text": "+",
                 "layer": "shift"
               }
             ]
@@ -443,7 +481,7 @@
               },
               {
                 "id": "K_F",
-                "text": "\"",
+                "text": "پ",
                 "layer": "shift"
               },
               {
@@ -473,7 +511,7 @@
               },
               {
                 "id": "K_COLON",
-                "text": "ِ",
+                "text": "گ",
                 "layer": "shift"
               },
               {
@@ -516,37 +554,37 @@
               },
               {
                 "id": "K_C",
-                "text": "(",
+                "text": "\"",
                 "layer": "shift"
               },
               {
                 "id": "K_V",
-                "text": ")",
-                "layer": "shift"
-              },
-              {
-                "id": "K_B",
                 "text": "!",
                 "layer": "shift"
               },
               {
-                "id": "K_N",
+                "id": "K_B",
                 "text": "؛",
                 "layer": "shift"
               },
               {
-                "id": "K_M",
+                "id": "K_N",
                 "text": ":",
                 "layer": "shift"
               },
               {
-                "id": "K_COMMA",
+                "id": "K_M",
                 "text": "،",
                 "layer": "shift"
               },
               {
-                "id": "K_PERIOD",
+                "id": "K_COMMA",
                 "text": ".",
+                "layer": "shift"
+              },
+              {
+                "id": "K_PERIOD",
+                "text": "ژ",
                 "layer": "shift"
               },
               {
@@ -610,12 +648,12 @@
                 "sk": [
                   {
                     "text": "(",
-                    "id": "K_C",
+                    "id": "K_9",
                     "layer": "shift"
                   },
                   {
                     "text": ")",
-                    "id": "K_V",
+                    "id": "K_0",
                     "layer": "shift"
                   }
                 ]
@@ -626,8 +664,9 @@
                 "width": "146",
                 "sk": [
                   {
-                    "text": "،",
-                    "id": "K_Z"
+                    "text": "ڤ",
+                    "id": "K_T",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -671,7 +710,7 @@
                 "width": "146",
                 "sk": [
                   {
-                    "text": "+",
+                    "text": "چ",
                     "id": "K_LBRKT",
                     "layer": "shift"
                   }
@@ -683,8 +722,8 @@
                 "width": "146",
                 "sk": [
                   {
-                    "text": "\\",
-                    "id": "K_U",
+                    "text": "گ",
+                    "id": "K_COLON",
                     "layer": "shift"
                   }
                 ]
@@ -723,8 +762,8 @@
                 "width": "146",
                 "sk": [
                   {
-                    "text": "*",
-                    "id": "K_6",
+                    "text": "پ",
+                    "id": "K_F",
                     "layer": "shift"
                   }
                 ]
@@ -740,8 +779,8 @@
                 "width": "146",
                 "sk": [
                   {
-                    "text": "-",
-                    "id": "K_P",
+                    "text": "ـ",
+                    "id": "K_J",
                     "layer": "shift"
                   }
                 ]
@@ -764,7 +803,7 @@
                 "sk": [
                   {
                     "text": ".",
-                    "id": "K_PERIOD",
+                    "id": "K_Co",
                     "layer": "shift"
                   }
                 ]
@@ -809,7 +848,7 @@
                 "width": "146"
               },
               {
-                "id": "K_C",
+                "id": "K_V",
                 "text": "ء",
                 "width": "146"
               },
@@ -819,13 +858,18 @@
                 "width": "146"
               },
               {
-                "id": "K_V",
+                "id": "K_C",
                 "text": "ر",
                 "width": "146",
                 "sk": [
                   {
                     "text": "ز",
                     "id": "K_PERIOD"
+                  },
+                  {
+                    "text": "ژ",
+                    "id": "K_PERIOD",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -841,7 +885,7 @@
                 ]
               },
               {
-                "id": "K_BKQUOTE",
+                "id": "K_QUOTE",
                 "text": "ط",
                 "width": "146",
                 "sk": [
@@ -870,22 +914,27 @@
                 "sp": "1"
               },
               {
-                "id": "K_PERIOD",
-                "text": "؟",
+                "id": "K_Z",
+                "text": "،",
                 "width": "146",
                 "sk": [
                   {
-                    "text": "؛",
-                    "id": "K_N",
-                    "layer": "shift"
-                  },
-                  {
-                    "text": ":",
-                    "id": "K_M",
+                    "text": "؟",
+                    "id": "K_SLASH",
                     "layer": "shift"
                   },
                   {
                     "text": "!",
+                    "id": "K_V",
+                    "layer": "shift"
+                  },
+                  {
+                    "text": ":",
+                    "id": "K_N",
+                    "layer": "shift"
+                  },
+                  {
+                    "text": "؛",
                     "id": "K_B",
                     "layer": "shift"
                   }
@@ -903,17 +952,16 @@
                 "width": "146",
                 "sk": [
                   {
+                    "text": "َ",
+                    "id": "K_HYPHEN"
+                  },
+                  {
                     "text": "ِ",
                     "id": "K_BKQUOTE"
                   },
                   {
-                    "text": "َ",
-                    "id": "K_T",
-                    "layer": "shift"
-                  },
-                  {
                     "text": "ُ",
-                    "id": "K_Q",
+                    "id": "K_X",
                     "layer": "shift"
                   }
                 ]
@@ -1050,7 +1098,7 @@
                 "layer": "shift"
               },
               {
-                "id": "K_LBRKT",
+                "id": "K_RBRKT",
                 "text": "+",
                 "width": "104",
                 "layer": "shift"
@@ -1068,49 +1116,49 @@
                 "layer": "shift"
               },
               {
-                "id": "K_SLASH",
+                "id": "K_c",
                 "text": "\"",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_PERIOD",
+                "id": "K_d",
                 "text": "|",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_V",
+                "id": "K_g",
                 "text": "{",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_9",
+                "id": "K_h",
                 "text": "}",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_N",
+                "id": "K_k",
                 "text": "[",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_B",
+                "id": "K_L",
                 "text": "]",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_COMMA",
+                "id": "K_QUOTE",
                 "text": "<",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_M",
+                "id": "K_BKSLASH",
                 "text": ">",
                 "width": "104",
                 "layer": "shift"
