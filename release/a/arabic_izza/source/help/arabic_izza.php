@@ -58,6 +58,10 @@ very easy to locate.</p>
 مما يسهل تحديد مكانها</p>
 <br/>
 
+<h2> Keyboard Layout</h2>
+<div id='osk'>
+</div>
+
 <h2>Touch Layouts</h2>
 <h3>Tablet</h3>
 <p>The layout remains mostly unchanged except for punctuation marks and the extra letters.
@@ -71,6 +75,6 @@ They could be reached from the first level without shift.</p>
 in each line on the first layer, thus improving enormously the comfort and typing speed.</p>
 <p>إلى جانب العمل بالنقاط المذكورة أعلاه، لقد تم تخفيض عدد المفاتيح في كل سطر إلى ثمانية على المستوى
 الأول، مما يضاعف من سرعة إدخال النصوص العربية</p>
- <br/>
+<br/>
 
 <p>© 1977-2018 Prof. Abdelmalek Bouhadjera</p>
