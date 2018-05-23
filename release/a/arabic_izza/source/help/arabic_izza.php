@@ -3,8 +3,12 @@
   require_once('header.php');
 ?>
 
-<h1>Arabic Izza: The pleasure of typing Arabic.</h1>
-<h1>استرجاع لهيبة العربية في عصر المعلوملتية</h1>
+<h1>Arabic Izza: The pleasure of typing and using Arabic Script</h1>
+<h1>استرجاع لهيبة العربية في عصر المعلوماتية</h1>
+
+<p>Supported languages: Arabic, Tamazight, Farsi, Ottoman (Turkish), etc.</p>
+<p>يمكن استعمال مفاتيح العزة لكتابة: العربية، الأمازيغية، الفارسية، العثمانية، إلخ</p>
+<br/>
 
 <p>In order to type letters with Hamza proceed as follows: </p>
 <p>قواعد كتابة الهمزة</p>
@@ -39,26 +43,34 @@
 <p>الـ التعريف لها زر مستقل</p>
 <br/>
 
-<p>Harakat(Damma, Fatha, Kasra)and Shadda are on the first level without Shift.
-To make things even simpler, you find Harakat and hamza under their corresponding names:
-Shadda under letter Shin for example, using Shift.</p>
-<p>الحركات و الشدة لها أزرار مستقلة على المستوى الأول
-توجد كذلك على المستوى الثاني تحت الحروف الأولى لأسمائها
-على المستوى الثاني توجد كذلك كل الرموز لكتابة العربية بدقة و احترافية</p>
+<p>Harakat(Damma, Fatha, Kasra)and Shadda are on the first level without Shift.</p>
+<p>الحركات و الشدة لها أزرار مستقلة على المستوى الأول</p>
+<br/>
 
-<h2>Keyboard Layout</h2>
-<div id='osk'>
-</div>
+<p>Extra letters (چ،ڤ،گ،پ،ژ)are found on second level under keys (ج،ف،ك،ب،ز) respectively, which make them
+very easy to locate.</p>
+<p>(چ،ڤ،گ،پ،ژ) الحروف
+<br/>
+توجد على المستوى الثاني تحت أزرار الحروف التالية
+<br/>
+(ج،ف،ك،ب،ز)
+<br/>
+مما يسهل تحديد مكانها</p>
+<br/>
 
 <h2>Touch Layouts</h2>
 <h3>Tablet</h3>
-<p>The layout remains unchanged.</p>
-<p>التصميم كما في حواسيب المكتب </p>
+<p>The layout remains mostly unchanged except for punctuation marks and the extra letters.
+They could be reached from the first level without shift.</p>
+<p>التصميم كما في حواسيب المكتب ما عدا بعض التغييرات تتعلق برموز التنقيط و الحروف الزائدة
+توجد كلها على المستوى الأول </p>
+<br/>
 
 <h3>Phone</h3>
-<p>Besides taking advantage of the main points above, the number of keys is reduced to eight 
-in each line on the first layer, thus improving enormously the typing speed.</p>
+<p>Beside taking advantage of the main points above, the number of keys is reduced to eight 
+in each line on the first layer, thus improving enormously the confort and typing speed.</p>
 <p>إلى جانب العمل بالنقاط المذكورة أعلاه، لقد تم تخفيض عدد المفاتيح في كل سطر إلى ثمانية على المستوى
 الأول، مما يضاعف من سرعة إدخال النصوص العربية</p>
+ <br/>
 
 <p>© 1977-2018 Prof. Abdelmalek Bouhadjera</p>
