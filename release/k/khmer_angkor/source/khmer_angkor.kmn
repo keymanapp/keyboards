@@ -2,11 +2,11 @@
 store(&NAME) "Khmer Angkor"
 store(&COPYRIGHT) '© 2017-2018 SIL International'
 store(&MESSAGE) "More than just a Khmer Unicode keyboard."
-store(&VISUALKEYBOARD) 'khmer_angkor.kvk'
 store(&TARGETS) 'any windows'
 store(&LAYOUTFILE) 'khmer_angkor-layout.js'
 store(&KEYBOARDVERSION) '1.0.3'
 store(&BITMAP) 'khmer_angkor.ico'
+store(&VISUALKEYBOARD) 'khmer_angkor.kvks'
 
 begin Unicode > use(main)
 
@@ -98,7 +98,7 @@ store(latin_punct_out)       U+00AB U+00BB U+0028 U+0029 U+0021 U+0022 \
     	                     U+003C U+003E U+0023 U+0026   
 c white space, ZWSP, ZWJ
 store(spaces_key)   	   	 [K_SPACE] [SHIFT K_SPACE] [RALT K_SPACE]
-store(spaces_out)    	     U+200B U+0020 U+200D             
+store(spaces_out)    	     U+200B U+0020 U+00A0             
 
 c Currency: Riel, Dollar and Euro
 
@@ -237,6 +237,10 @@ c Rotation
 U+17C7 + [SHIFT K_H]            > U+17C8       	   c U+17C7 is changed to U+17C8 when pressing [SHIFT K_H].
 U+17C8 + [SHIFT K_H]            > U+17C7       	   c U+17C8 is changed to U+17C7 when K_H is pressed.
 c any(v_gen) U+17C7 + [SHIFT K_H] > context beep     c Don't rotate between U+17C7 and U+17C8.
+
+c Press Space twice to get a White Space
+
+U+200B + [K_SPACE]  	> U+0020
 
 c One backspace deletes a two-part vowels (i.e. psuedoVowel + U+17C7)
 
