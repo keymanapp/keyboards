@@ -21,8 +21,9 @@ EXTRA;
 </ul>
 
 <p>The keyboard output Lao Unicode characters according to the the official Lao standard layout, and may be used with any Lao Unicode font. <br />
-  Hidden break characters (ZWSP, U+200B) can be inserted manually (with either keyboard) by using the <kbd>|</kbd> key.</p>
+  Hidden break characters (Zero Width Space (<abbr title="Zero Width Space">ZWSP</abbr>), U+200B) can be inserted manually by using the <kbd>|</kbd> key. </p>
 
+<p><abbr title="Zero Width Space">ZWSP</abbr> is used to improve wrapping of text at the end of a line, but some applications use their own techniques to do this and may ignore the ZWSP.</p>
 
 
   <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
