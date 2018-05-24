@@ -1,0 +1,84 @@
+p { font: 10pt Tahoma }
+h1 { font: bold 16pt Tahoma; color: #4444cc }
+h2 { font: bold 12pt Tahoma; color: #4444cc }
+table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
+table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 4px; text-align: center}
+table.display { border-collapse: collapse; }
+    .key { 
+      float: left;
+      display: block; 
+      position: relative;
+      overflow: hidden;
+      height: 35px;
+      margin: 2px 0px 0px 4px;      
+    }    
+    #K_SPACE {
+      width: 234px;       
+      background-image: url('key-space.png');       
+    }
+
+    #K_BKSLASH {
+      width: 42px;       
+      background-image: url('key-bkslash.png');       
+    }
+    
+    #K_oE2 {      
+      display:none;      
+    }
+    
+    #K_SHIFTL {
+      width: 80px;background-image: url('key-shiftl.png');
+    }
+    
+    .plain {      
+      background-image: url('key-plain.png');      
+      background-repeat: no-repeat;
+      width: 34px;
+    }
+    
+    .special {
+      background-repeat: no-repeat;      
+    }
+    
+    .keycap {
+      font: bold 7pt Arial; 
+      position: absolute; 
+      left: 6px; 
+      top: 6px;
+    }
+    
+    .key .keycap {      
+      display: none;
+    }
+    
+    .special .keycap {
+      display: block;
+    }
+    
+    .keytext {
+      font: bold 12pt "Kmhmu OT";
+      text-align: center; 
+      display: block;
+      right: 5px;
+      bottom: 4px;
+      color: blue;
+    }
+    .keytext2 {
+      font: bold 8pt "Arial Narrow";
+      text-align: center; 
+      display: block;
+      right: 5px;
+      padding-top: 8px;
+      bottom: 4px;
+      color: blue;
+    }
+
+  table.display td.note {
+      font-size: 0.7em;
+      text-align: left;
+    }
+  table.display td.kmhmu {
+    font-family: 'Kmhmu OT';
+    text-align: center; 
+    font-size: 12 pt;
+    }

@@ -5,7 +5,7 @@
 #
 
 function display_usage {
-  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-t project_target] [target]"
+  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-t project_target] [target]"
   exit 1
 }
 
@@ -40,6 +40,18 @@ KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.js
 #
 
 parse_args "$@"
+
+#
+#
+#
+
+if [ "$DO_BUILD" = false ]; then
+  ACTION_VERB=Validating
+elif [[ ! -z "$FLAG_CLEAN" ]]; then
+  ACTION_VERB=Cleaning
+else
+  ACTION_VERB=Building
+fi
 
 #
 # Collect filenames

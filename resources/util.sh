@@ -50,6 +50,8 @@ function parse_args {
   DO_CODESIGN=false
   DO_UPLOAD_ONLY=false
   DO_ZIP_ONLY=false
+  DO_EXE=true
+  WARNINGS_AS_ERRORS=false
   TARGET=
   PROJECT_TARGET=
   FLAG_SILENT=
@@ -76,6 +78,9 @@ function parse_args {
         -zip-only)
           DO_ZIP_ONLY=true
           ;;
+        -no-exe)
+          DO_EXE=false
+          ;;
         -start)
           lastkey=$key
           ;;
@@ -88,6 +93,9 @@ function parse_args {
         -c)
           FLAG_CLEAN=-c
           ;;
+        -w)
+          WARNINGS_AS_ERRORS=true
+          ;;          
         -h|-?)
           display_usage
           ;;
@@ -95,19 +103,44 @@ function parse_args {
           lastkey=$key
           ;;
         *)
-          TARGET="$1"
+          TARGET="$key"
       esac
     else
       case "$lastkey" in
         -start)
-          START="$1"
+          START="$key"
           ;;
         -t)
           FLAG_TARGET=-t
-          PROJECT_TARGET="$1"
+          PROJECT_TARGET="$key"
           ;;
       esac
       lastkey=
     fi
   done
 }
+
+#
+# Version comparison functions, rely on sort having a -V option
+# From: https://stackoverflow.com/a/4024263/1836776
+#
+
+function verlte {
+  [ "$1" = "`echo -e "$1\n$2" | sort -V | head -n1`" ]
+}
+
+function verlt {
+  [ "$1" = "$2" ] && return 1 || verlte $1 $2
+}
+
+# verlte 2.5.7 2.5.6 && echo "yes" || echo "no" # no
+# verlt 2.4.10 2.4.9 && echo "yes" || echo "no" # no
+# verlt 2.4.8 2.4.10 && echo "yes" || echo "no" # yes
+# verlte 2.5.6 2.5.6 && echo "yes" || echo "no" # yes
+# verlt 2.5.6 2.5.6 && echo "yes" || echo "no" # no 
+
+# if $(verlte 2.5.7 2.5.6) ; then echo "yes" ; else echo "no" ; fi # no
+# if $(verlt 2.4.10 2.4.9) ; then echo "yes" ; else echo "no" ; fi # no
+# if $(verlt 2.4.8 2.4.10) ; then echo "yes" ; else echo "no" ; fi # yes
+# if $(verlte 2.5.6 2.5.6) ; then echo "yes" ; else echo "no" ; fi # yes
+# if $(verlt 2.5.6 2.5.6)  ; then echo "yes" ; else echo "no" ; fi # no 

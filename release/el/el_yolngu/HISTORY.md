@@ -1,5 +1,8 @@
 # Yolngu Change History
 
+## 2017-12-08 2.2
+* Fixed version number (was still listed as 2.1)
+
 ## 2017-08-15 2.2
 * Published to github
 * Added OSK
