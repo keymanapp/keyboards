@@ -2,10 +2,7 @@
   $pagename = 'Lao 2008 Rapid Keyboard Help';
   $pagetitle = 'Lao 2008 Rapid Keyboard Help';
   $style = <<<EXTRA
-  p { font: 10pt Tahoma; }
-  h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
-  h2 { font: bold 12pt Tahoma; color: #4444cc; }
-  img {width:100% ;max-width:750px;}
+  img.kbdlayout {width:100% ;max-width:750px;}
   kbd {font-weight: bold;}
 EXTRA;
   require_once('header.php');
@@ -20,18 +17,18 @@ EXTRA;
    <li>word-wrap by automatic insertion of hidden break characters at syllable boundaries</li>
 </ul>
 
-<p>The keyboard output Lao Unicode characters according to the the official Lao standard layout, and may be used with any Lao Unicode font. <br />
+<p>The keyboard outputs Lao Unicode characters according to the the official Lao standard layout, and may be used with any Lao Unicode font. <br />
   Hidden break characters (Zero Width Space (<abbr title="Zero Width Space">ZWSP</abbr>), U+200B) can be inserted manually by using the <kbd>|</kbd> key. </p>
 
 <p><abbr title="Zero Width Space">ZWSP</abbr> is used to improve wrapping of text at the end of a line, but some applications use their own techniques to do this and may ignore the ZWSP.</p>
 
 
   <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-  <p><img alt="Lao 2008 Rapid keyboard layout: normal (default) state" src="lao_2008_rapidU_.png"/></p>
+  <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: normal (default) state" src="lao_2008_rapidU_.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-  <p><img alt="Lao 2008 Rapid keyboard layout: shift state" src="lao_2008_rapidU_S.png"/></p>
+  <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: shift state" src="lao_2008_rapidU_S.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
-  <p><img alt="Lao 2008 Rapid keyboard layout: AltGr state" src="lao_2008_rapidU_RA.png"/></p>
+  <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: AltGr state" src="lao_2008_rapidU_RA.png"/></p>
 
 
 
