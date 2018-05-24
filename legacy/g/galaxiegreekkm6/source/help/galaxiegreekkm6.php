@@ -171,7 +171,7 @@ for full details on how to type all the Galaxie Greek keyboard's letters, diacri
 <h2>Troubleshooting</h2>
 <p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://help.keyman.com">contact us</a>.</p>
 
 </div>
 <div id="Resources">
@@ -183,9 +183,9 @@ for full details on how to type all the Galaxie Greek keyboard's letters, diacri
 <p><a href="http://www.tavultesoft.com/greek/" target="_blank">Greek Keyboards Home</a></p>
 
 <p>Non-classical and Monotonic Greek keyboard layouts:</p>
-<p><a href="/go?language=greek&amp;keyboard=keyboard_greek">Greek Basic</a><br/>
-<a href="/go?language=greek&amp;keyboard=keyboard_greek_220">Greek (220) Basic</a><br/>
-<a href="/go?language=greek&amp;keyboard=keyboard_greek_319">Greek (319) Basic</a></p>
+<p><a href="https://keyman.com/keyboards/kbdhe">Greek Basic</a><br/>
+<a href="https://keyman.com/keyboards/kbdhe220">Greek (220) Basic</a><br/>
+<a href="https://keyman.com/keyboards/kbdhe319">Greek (319) Basic</a></p>
 
 </div>
 <div>
