@@ -142,7 +142,7 @@ See <a target="_blank" href='TigrignaEtTyping-English.pdf'>Typing in Tigrigna</a
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=460">Download the Tigrigna (Ethiopia) Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff-tir-et-powerpack-7">Download the Tigrigna (Ethiopia) Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/tigrinya.htm">More on the Tigrigna Writing System at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Tigrigna_language">More on the Tigrigna Language at Wikipedia.org</a><br/></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>

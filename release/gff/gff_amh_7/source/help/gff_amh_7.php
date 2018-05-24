@@ -160,7 +160,7 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=455">Download the Amharic Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff-amh-powerpack-7">Download the Amharic Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/amharic.htm">More on the Amharic Writing System at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Amharic_language">More on the Amharic Language at Wikipedia.org</a><br/></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
