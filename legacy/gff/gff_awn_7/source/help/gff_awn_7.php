@@ -144,7 +144,7 @@ See <a target="_blank" href='AwngiTyping-English.pdf'>Typing in Awngi</a> for fu
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=456">Download the Awngi Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff-awn-powerpack-7">Download the Awngi Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://en.wikipedia.org/wiki/Awngi_language">More on the Awngi Language at Wikipedia.org</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a></p>

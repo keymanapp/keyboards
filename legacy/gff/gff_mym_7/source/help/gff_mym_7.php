@@ -146,7 +146,7 @@ See <a target="_blank" href='MeenTyping-English.pdf'>Typing in <?php echo $langN
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=462">Download the <?php echo $langName; ?> Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff-mym-powerpack-7">Download the <?php echo $langName; ?> Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://en.wikipedia.org/wiki/<?php if($lang == 'suq') echo "Surma_people"; else echo "{$langName}_language"; ?>">More on the <?php echo $langName; ?> Language at Wikipedia.org</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a></p>

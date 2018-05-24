@@ -139,7 +139,7 @@ See <a target="_blank" href='BlinTyping-English.pdf'>Typing in Blin</a> for full
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=458">Download the Blin Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff-byn-powerpack-7">Download the Blin Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://en.wikipedia.org/wiki/Blin_language">More on the Blin Language at Wikipedia.org</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a></p>
