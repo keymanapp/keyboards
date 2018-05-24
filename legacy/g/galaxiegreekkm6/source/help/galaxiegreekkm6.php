@@ -190,10 +190,10 @@ for full details on how to type all the Galaxie Greek keyboard's letters, diacri
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=413">Download the Galaxie BibleScript Greek Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/galaxiegreekandhebrew">Download the Galaxie BibleScript Greek Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/greek.htm">More on the Greek Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Greek_alphabet">More on the Greek Writing System at Wikipedia.org</a></p>
-<p><a target="_blank" href="http://en.wikipedia.org/wiki/Greek_language">More on Koine Greek at Wikipedia.org</a></p>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Greek_alphabet">More on the Greek Writing System at Wikipedia.org</a></p>
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/Greek_language">More on Koine Greek at Wikipedia.org</a></p>
 </div>
 </div>
 <div id="Technical">
