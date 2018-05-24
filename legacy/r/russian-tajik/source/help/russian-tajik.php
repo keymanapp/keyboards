@@ -14,7 +14,7 @@
 	<p>This is a Unicode keyboard and works with any Unicode font which has support for Cyrillic script. </p>
    </section>
    
-<h2>The Tajik Cyrillic & Arabic-Persian alphabet</h2>
+<h2>The Tajik Cyrillic &amp; Arabic-Persian alphabet</h2>
 <h2 style='margin-left: 200px'>-алифбои тоҷикӣ - الفبای تاجکی</h2>
  
 <table class='alphabet'> 
