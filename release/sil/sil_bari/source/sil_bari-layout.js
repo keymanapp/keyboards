@@ -54,16 +54,9 @@
             "id": 2,
             "key": [
               {
-                "id": "T_new_35",
-                "text": " ",
-                "width": 58,
-                "sp": "10",
-                "layer": "default"
-              },
-              {
                 "id": "K_A",
                 "text": "a",
-                "pad": ""
+                "pad": "68"
               },
               {
                 "id": "K_S",
@@ -277,15 +270,9 @@
             "id": 2,
             "key": [
               {
-                "id": "T_new_278",
-                "text": "",
-                "width": "58",
-                "sp": "10"
-              },
-              {
                 "id": "K_A",
                 "text": "A",
-                "pad": ""
+                "pad": "68"
               },
               {
                 "id": "K_S",
@@ -368,6 +355,7 @@
               {
                 "id": "K_PERIOD",
                 "text": ".",
+                "layer": "default",
                 "sk": [
                   {
                     "text": ",",
@@ -503,15 +491,9 @@
             "id": 2,
             "key": [
               {
-                "id": "T_new_488",
-                "text": "",
-                "width": "58",
-                "sp": "10"
-              },
-              {
                 "id": "K_4",
                 "text": "$",
-                "pad": "",
+                "pad": "68",
                 "layer": "shift"
               },
               {
