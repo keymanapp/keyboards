@@ -93,6 +93,7 @@ store(additionalpunctuationChars) U+0060 U+007E U+005B U+007B U+005D U+007D U+00
 store(additionalpunctuationKeys) [RALT K_BKQUOTE] [SHIFT RALT K_BKQUOTE] [RALT K_LBRKT] [SHIFT RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_RBRKT] [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH] [RALT K_E] [RALT K_4] [RALT K_C]
 store(additionalpunctuationKeysTouch) [T_BKQUOTE] [T_TILDE] [T_LBRKT] [T_LBRACE] [T_RBRKT] [T_RBRACE] [T_BKSLASH] [T_PIPE] [T_EURO] [T_POUND] [T_COPYRIGHT]
 
+store(altKeys) outs(additionalpunctuationKeys) outs(additionalpunctuationKeysTouch)
 
 c ------------------------------------------------
 c Diacritics and modifier letter stores
@@ -113,17 +114,24 @@ store(nonBaseDiaeresisChars) "aAeEoOuUbcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ
 store(modifierKeys) [K_BKSLASH] [SHIFT K_BKSLASH]
 store(modifierChars) U+02BB U+02BC
 
-
-
-
 group(constraints) using keys
+
+c ------------------------------------------------
+c Constraints – restrictions to prevent invalid sequences
+c ------------------------------------------------
 
 any(nonBaseChar) + any(diacriticsKeys) > context beep
 any(nonBaseDiaeresisChars) + any(diaeresisKeys) > context beep
+
+c ------------------------------------------------
+c RALT and T_ key rules will not trigger nomatch rule
+c - see https://help.keyman.com/developer/language/reference/nomatch
+c 
+c Added rule to pass RALT sequences to "main" before the nomatch rule.
+c ------------------------------------------------
+
++ any(altKeys) > use(main)
 nomatch > use(main)
-
-
-
 
 group(main) using keys
 
@@ -133,8 +141,10 @@ c -----------------------------------------------
 
 + any(coreKeys) > index(coreChars,1)
 + any(digitKeysPad) > index(digitChars,1)
-if(&platform = "physical") + any(additionalpunctuationKeys) > index(additionalpunctuationChars,2)
+c if(&platform = "hardware") + any(additionalpunctuationKeys) > index(additionalpunctuationChars,2)
++ any(additionalpunctuationKeys) > index(additionalpunctuationChars,1)
 if(&platform = "touch") + any(additionalpunctuationKeysTouch) > index(additionalpunctuationChars,2)
+
 
 c ------------------------------------------------
 c Diacritics and modifier letters
