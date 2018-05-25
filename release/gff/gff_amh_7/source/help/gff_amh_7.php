@@ -135,7 +135,7 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <h2>Troubleshooting</h2>
 <p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://keyman.com/contact/">contact us</a>.</p>
 
 </div>
 
