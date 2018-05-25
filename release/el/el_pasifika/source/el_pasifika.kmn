@@ -141,10 +141,8 @@ c -----------------------------------------------
 
 + any(coreKeys) > index(coreChars,1)
 + any(digitKeysPad) > index(digitChars,1)
-c if(&platform = "hardware") + any(additionalpunctuationKeys) > index(additionalpunctuationChars,2)
-+ any(additionalpunctuationKeys) > index(additionalpunctuationChars,1)
+if(&platform != "touch") + any(additionalpunctuationKeys) > index(additionalpunctuationChars,2)
 if(&platform = "touch") + any(additionalpunctuationKeysTouch) > index(additionalpunctuationChars,2)
-
 
 c ------------------------------------------------
 c Diacritics and modifier letters
