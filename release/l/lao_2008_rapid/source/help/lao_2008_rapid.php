@@ -13,7 +13,7 @@ EXTRA;
 <p>The keyboard:</p>
 <ul>
    <li>prevents accidentally overtyping vowel or tone marks;</li>
-   <li>utomatic re-ordering of vowel and tone marks; and</li>
+   <li>automatic re-ordering of vowel and tone marks; and</li>
    <li>word-wrap by automatic insertion of hidden break characters at syllable boundaries</li>
 </ul>
 
