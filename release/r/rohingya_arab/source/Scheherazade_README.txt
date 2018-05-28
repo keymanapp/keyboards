@@ -25,6 +25,17 @@ and licensing, please see the documentation on the website
 (http://scripts.sil.org/Scheherazade) or in the documentation 
 subfolder of this font package.
 
+TYPETUNER
+2018-05-10
+=========
+
+This package contains a TypeTuned version of the Scheherazade fonts.
+
+The TypeTuner settings file used to generate the enclosed font
+is included in the package as feat_set_tuned.xml.
+By inspecting this file with a text editor you can determine 
+which alternate behaviors have been enabled.
+
 TIPS
 ====
 
@@ -85,4 +96,3 @@ For more information please visit the Scheherazade page on SIL International's
 Computers and Writing systems website: http://scripts.sil.org/Scheherazade
 
 Support through the website: http://scripts.sil.org/Support
-
