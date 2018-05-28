@@ -39,6 +39,14 @@ popd () {
 function die {
   local rc=$?
   local msg=$1
+
+  # We are dying, so if previous command didn't actually give
+  # an error code, we still want to give an error. We'll give
+  # an arbitrary exit code to indicate this
+  if [ $rc == 0 ]; then
+    rc=999
+  fi
+  
   (>&2 echo "${t_red}$msg${t_end}")
   (>&2 echo "${t_red}Aborting with error $rc${t_end}")
   exit $rc
