@@ -494,6 +494,7 @@
               {
                 "id": "K_PERIOD",
                 "text": ".",
+                "layer": "default",
                 "sk": [
                   {
                     "text": ",",
@@ -522,7 +523,8 @@
                   },
                   {
                     "text": "\\",
-                    "id": "T_BKSLASH"
+                    "id": "T_BKSLASH",
+                    "layer": "default"
                   },
                   {
                     "text": ":",
