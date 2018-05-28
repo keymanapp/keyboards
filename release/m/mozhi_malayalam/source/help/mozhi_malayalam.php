@@ -1,26 +1,166 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Mozhi Malayalam Keyboard</title>
+<?php
+  $pagename = 'Mozhi Malayalam Keyboard Help';
+  $pagetitle = 'Mozhi Malayalam Keyboard Help';
+  $pagestyle = <<<END
+    .lang2,.languageExample {font-family:AnjaliOldLipi;}
+    .lang2 {font-size:150%}
+    table td{width: 180px;text-align: center;}
+    table{SIL Hebrewbackground: #e3e3e3;}
+    .col1 {width: 100px;}
+    .col2, .col3 {width: 150px;}
+    .col4 {width: 350px;}
+END;
+  require_once('header.php');
+?>
 
-	<style type="text/css">
-	.lang2,.languageExample {font-family:AnjaliOldLipi;}
-	.lang2 {font-size:150%}
-	</style>
 
-</head>
-<body>
+<p style='margin:0px'>Keyboard &#169; 2006-2018 Raj Nair</p>
 
-<h1>Mozhi Malayalam Keyboard</h1>
+<div id='Overview'>
+		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
+the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
+
+<h2>Overview</h2>
+<p>
+This keyboard uses the Mozhi layout to let you type in Malayalam.  It is a phonetic keyboard, based on the normal English (QWERTY) keyboard letters.  This makes the keyboard easy to use for anybody familiar with Malayalam, or with a normal keyboard.
+</p>
+<p>
+    This keyboard has now been updated to support Unicode 5.1 encoding of Atomic Chilus.
+</p>
+</div>
+
+
+<div id='Using'>
+<h2>Using this Keyboard</h2>
+</div>
+
+<h3>Keyboard Layout</h3>
+		<!-- On Screen Keyboard is automatically included here -->
+
+<h4>Default state</h4>
+<p><img src="mozhi_malayalamU_.png" alt="Mozhi Malayalam Keyboard: default state"></p>
+<h4>Shift state</h4>
+<p><img src="mozhi_malayalamU_S.png" alt="Mozhi Malayalam Keyboard: default state"></p>
+
+<div id='Quickstart'>
+<h3>Quickstart</h3>
+		<!-- Basic instructions designed to get users up and running with typing -->
+<p>The Mozhi keyboard layout was designed to make it easy to type in Malayalam.  The characters are arranged according to the closest English consonants and vowels.  Most Malayalam characters have both consonant and vowel parts, and each part should be typed separately.  The consonant part is always typed before the vowel, no matter where the vowel part is written.
+</p>
+
+<p>
+For example, typing <kbd>i</kbd> will produce the vowel <span class='highlightExample lang2' style='font-size:200%'>ഇ</span>.  If the <kbd>i</kbd> key is typed after a consonant, though, the vowel will be combined with the consonant.  For example, typing <kbd>ki</kbd> produces <span class='highlightExample lang2' style='font-size:200%'>കി</span>.  If you press Backspace once, only the vowel part will be erased, and you can type a different vowel.
+</p>
+
+
+</div>
+
+<div id="Examples">
+<h3>Examples</h3>
+		<!-- Simple example(s) illustrating the notes in the Quickstart section above -->
+
+	<table style='border-style:solid; border-width:1px; border-color:#8080FF; background-color:#E0E0FF; padding:4px'>
+		<col class="col1" />
+		<col class="col2" />
+		<col class="col3" />
+		<col class="col4" />
+
+		<tr style='color:#0000AF; font-weight:bold'>
+			<td>Language</td>
+			<td>Phrase</td>
+			<td>Meaning</td>
+			<td>Type the following keys</td>
+		</tr>
+		<tr style='color:#0000AF; font-weight:normal'>
+			<td>Malayalam</td>
+			<td><span class='lang2' style='color:#0000FF; font-size:120%'>മലയാളം</span></td>
+			<td>"Malayam language"</td>
+			<td><kbd>m</kbd><kbd>a</kbd><kbd>l</kbd><kbd>a</kbd><kbd>y</kbd><kbd>a</kbd><kbd>a</kbd><kbd>L</kbd><kbd>a</kbd><kbd>m</kbd></td>
+		</tr>
+	</table>
+</div>
+
+<div id="Documentation">
+<h3>Keyboard Details</h3>
+		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
+
+<p>The On Screen Keyboard shows the 35 normal consonants <span class='lang2' style='font-size:200%'>ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ ണ ത ഥ ദ ധ ന പ ഫ ബ ഭ മ യ ര ല വ ശ ഷ സ ഹ ള ഴ റ</span>, the vowels <span class='lang2' style='font-size:200%'>അ ആ ഇ ഈ ഉ ഊ ഋ എ ഏ ഐ ഒ ഓ ഔ</span>, and the <span class='lang2' style='font-size:200%'>്</span> mark.  There are also numbers and punctuation marks.</p>
+
+<p>Malayalam vowels and consonants are usually combined, so when you type a consonant and a vowel part, they will be joined into one character.  If you use the arrow keys to move through the text, you only need to press an arrow key once to move past each character.  If you press Delete before (on the left of) a combined consonant and vowel, it will be erased completely, but if you press Backspace after a character, only the vowel part will be erased (even if the vowel part appears before the consonant).
+</p>
+
+<h4>Vowels and Consonants</h4>
+<p>When you type consonants and vowel parts, you should always type the consonant part first, even when the vowel part appears on the left of the consonant.  If you type any of the independent vowels, they will not be combined with consonants.  If you want to type just the vowel part, without a consonant, type <kbd>@</kbd>, then the vowel.  For example, typing <kbd>e</kbd> produces <span class='lang2' style='font-size:200%'>എ</span>, while typing <kbd>@e</kbd> produces <span class='lang2' style='font-size:200%'>െ</span>.
+</p>
+<p>In Malayalam writing, all the consonants naturally include the vowel sound <span class='highlightExample lang2' style='font-size:200%'>അ</span>.  If you want to write a consonant with no vowel, you need to add the <span class='lang2' style='font-size:200%'>്</span> mark.  With the Mozhi keyboard, this mark is added automatically every time you type a consonant.  You can also add the mark by typing <kbd>~</kbd> right after typing a consonant.  After you have typed the <span class='lang2' style='font-size:200%'>്</span> mark, you cannot type a vowel to combine with that consonant.
+</p>
+<p>Malayalam includes many combined consonants, and these are not on the keyboard.  To type a combined consonant, type the first consonant, then the second consonant, and then a vowel.  The computer will then combine the two consonants into a single combined character.  For example, typing <span class='keys'>kka</span> produces the combined consonant <span class='highlightExample lang2' style='font-size:200%'>ക്ക</span>.
+</p>
+
+<h4>Keystroke Examples</h4>
+<p>In the following table you can see examples of how to type the different vowels with the consonant <span class='highlightExample lang2' style='font-size:200%'>ക</span>.</p>
+<br/>
+<table>
+	<col style="width:80px" span=3 />
+	<col class="col2" />
+	<tr style='text-align:center; font-weight:normal'>
+		<td>Consonant</td><td>Vowel</td><td>Combined</td><td>Keystrokes</td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'>ക</td><td class='lang2' style='font-size:200%'>്</td><td class='lang2' style='font-size:200%'>ക്</td><td><span class='keys'>k</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>അ</td><td class='lang2' style='font-size:200%'>ക</td><td><span class='keys'>ka</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ആ</td><td class='lang2' style='font-size:200%'>കാ</td><td><span class='keys'>kA</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഇ</td><td class='lang2' style='font-size:200%'>കി</td><td><span class='keys'>ki</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഈ</td><td class='lang2' style='font-size:200%'>കീ</td><td><span class='keys'>kI</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഉ</td><td class='lang2' style='font-size:200%'>കു</td><td><span class='keys'>ku</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഊ</td><td class='lang2' style='font-size:200%'>കൂ</td><td><span class='keys'>kU</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഋ</td><td class='lang2' style='font-size:200%'>കൃ</td><td><span class='keys'>kr^</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>എ</td><td class='lang2' style='font-size:200%'>കെ</td><td><span class='keys'>ke</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഏ</td><td class='lang2' style='font-size:200%'>കേ</td><td><span class='keys'>kE</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഐ</td><td class='lang2' style='font-size:200%'>കൈ</td><td><span class='keys'>kai</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഒ</td><td class='lang2' style='font-size:200%'>കൊ</td><td><span class='keys'>ko</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഓ</td><td class='lang2' style='font-size:200%'>കോ</td><td><span class='keys'>kO</span></td>
+	</tr>
+	<tr style='text-align:center'>
+		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഔ</td><td class='lang2' style='font-size:200%'>കൌ</td><td><span class='keys'>kau</span></td>
+	</tr>
+
+</table>
+
+</div>
+
 
 <div id="KeyboardChart">
 <h2>Keyboard Reference Chart</h2>
 <p>The following chart lists all the characters available with this keyboard.  Below each character are the keys used to type it.
 <br/>Because Malayalam includes hundreds of combined consonants, these are not shown on this chart.  You can type some combined consonants by typing the two consonants with no vowel.  Other combined consonants are on the keyboard (see the bottom of this chart).</p>
 
-<table>
-	<col width=65 style='text-align:center; background-color:#dedede;' />
+<table border=0 cellspacing=2 cellpadding=1>
+	<col width=65 style='text-align:center; background-color:#dedede' />
 	<col span=16 width=65 style='text-align:center; background-color:#ffffff' />
 
 	<tr style='text-align:center; font-weight:normal; background-color:#dedede'>
@@ -766,10 +906,3 @@
 
 
 </div>
-
-<p>
-<a href="welcome.htm">Back to Keyboard Documentation</a>
-</p>
-
-</body>
-</html>

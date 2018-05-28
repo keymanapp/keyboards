@@ -1,7 +1,13 @@
 Mozhi Malayalam Keyboard Change History
 =======================
 
-1.0 (1 Jan 2015)
+1.2 (29 May 2018)
+-----------------
+* Migrated to GitHub
+
+1.1
 -----------------
 
-* Created by you
+1.0
+-----------------
+* Initial version for Unicode 5.1
