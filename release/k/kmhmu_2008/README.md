@@ -3,10 +3,10 @@ Kmhmu 2008 Keyboard
 
 Copyright (C) 2008-2018 John Durdin
 
-Version 1.2
+Version 1.1
 
 __DESCRIPTION__
-<add a description of this keyboard>
+Lao-script Kmhmu language keyboard
 
 
 Supported Platforms
