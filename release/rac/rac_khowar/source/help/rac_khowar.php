@@ -1,5 +1,4 @@
 <?php 
-  $pagename = 'Rac_Khowar';
   $pagename = 'Rac_Khowar Keyman Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
