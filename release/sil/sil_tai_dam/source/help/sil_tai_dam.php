@@ -97,7 +97,7 @@
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;
   padding:0pt 0pt 0in 0pt'>
   <p class=MsoNormal align=left style='text-align:center;page-break-after:avoid'><span
-   style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|&lt</span></p>
+   style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|&lt;</span></p>
   </td>
    </tr>
  
@@ -116,7 +116,7 @@
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 2.25pt;
   padding:0pt 0pt 0in 0pt'>
   <p class=MsoNormal align=left style='text-align:center;page-break-after:avoid'><span
-   style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|&gt</span></p>
+   style='font-size:12.0pt;font-family:"Tai Heritage Pro"'>|&gt;</span></p>
   </td>
    </tr>
  
