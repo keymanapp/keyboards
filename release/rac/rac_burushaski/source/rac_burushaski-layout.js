@@ -110,11 +110,11 @@
               },
               {
                 "id": "K_LBRKT",
-                "text": "ݼ"
+                "text": "ݣ"
               },
               {
                 "id": "K_RBRKT",
-                "text": "څ"
+                "text": "؎"
               },
               {
                 "id": "T_new_26",
@@ -129,7 +129,7 @@
             "key": [
               {
                 "id": "K_BKQUOTE",
-                "text": "ݽ"
+                "text": "ۡ"
               },
               {
                 "id": "K_A",
@@ -337,16 +337,16 @@
             "key": [
               {
                 "id": "K_Q",
-                "text": "ݳ",
+                "text": "”",
                 "pad": 75
               },
               {
                 "id": "K_W",
-                "text": "ݣ"
+                "text": "ݳ"
               },
               {
                 "id": "K_E",
-                "text": "ݴ"
+                "text": "“"
               },
               {
                 "id": "K_R",
@@ -378,7 +378,7 @@
               },
               {
                 "id": "K_LBRKT",
-                "text": "ݸ"
+                "text": "ݴ"
               },
               {
                 "id": "K_RBRKT",
@@ -397,7 +397,7 @@
             "key": [
               {
                 "id": "K_BKQUOTE",
-                "text": "ࣿ"
+                "text": "څ"
               },
               {
                 "id": "K_A",
@@ -413,7 +413,7 @@
               },
               {
                 "id": "K_F",
-                "text": "ؤ"
+                "text": "ݻ"
               },
               {
                 "id": "K_G",
@@ -433,7 +433,7 @@
               },
               {
                 "id": "K_L",
-                "text": "ݹ"
+                "text": "ݼ"
               },
               {
                 "id": "K_COLON",
@@ -441,11 +441,11 @@
               },
               {
                 "id": "K_QUOTE",
-                "text": "ݵ"
+                "text": "\""
               },
               {
                 "id": "K_BKSLASH",
-                "text": "ݶ"
+                "text": "ݺ"
               }
             ]
           },
@@ -477,7 +477,7 @@
               },
               {
                 "id": "K_B",
-                "text": "ݻ"
+                "text": "ݸ"
               },
               {
                 "id": "K_N",
@@ -489,11 +489,11 @@
               },
               {
                 "id": "K_COMMA",
-                "text": "ݺ"
+                "text": "ݷ"
               },
               {
                 "id": "K_PERIOD",
-                "text": "٫"
+                "text": "ڞ"
               },
               {
                 "id": "K_SLASH",
@@ -545,59 +545,48 @@
             "id": 1,
             "key": [
               {
-                "id": "K_1",
-                "text": "!",
-                "layer": "ctrl"
+                "id": "U_0021",
+                "text": "!"
               },
               {
-                "id": "K_2",
-                "text": "@",
-                "layer": "ctrl"
+                "id": "U_0040",
+                "text": "@"
               },
               {
-                "id": "K_3",
-                "text": "#",
-                "layer": "ctrl"
+                "id": "U_0023",
+                "text": "#"
               },
               {
-                "id": "K_4",
-                "text": "ّ",
-                "layer": "ctrl"
+                "id": "U_0651",
+                "text": "ّ"
               },
               {
-                "id": "K_5",
-                "text": "%",
-                "layer": "ctrl"
+                "id": "U_0025",
+                "text": "%"
               },
               {
-                "id": "K_6",
-                "text": "^",
-                "layer": "ctrl"
+                "id": "U_060F",
+                "text": "؏"
               },
               {
-                "id": "K_7",
-                "text": "&",
-                "layer": "ctrl"
+                "id": "U_0026",
+                "text": "&"
               },
               {
-                "id": "K_8",
-                "text": "*",
-                "layer": "ctrl"
+                "id": "U_002A",
+                "text": "*"
               },
               {
-                "id": "K_9",
-                "text": "(",
-                "layer": "ctrl"
+                "id": "U_0028",
+                "text": "("
               },
               {
-                "id": "K_0",
-                "text": ")",
-                "layer": "ctrl"
+                "id": "U_0029",
+                "text": ")"
               },
               {
-                "id": "K_HYPHEN",
-                "text": "ْ",
-                "layer": "ctrl"
+                "id": "U_0652",
+                "text": "ْ"
               },
               {
                 "id": "K_EQUAL",
@@ -615,40 +604,33 @@
             "id": 2,
             "key": [
               {
-                "id": "K_Q",
+                "id": "U_0602",
                 "text": "؂",
-                "pad": 75,
-                "layer": "ctrl"
+                "pad": 75
               },
               {
-                "id": "K_W",
-                "text": "ٖ",
-                "layer": "ctrl"
+                "id": "U_0656",
+                "text": "ٖ"
               },
               {
-                "id": "K_E",
-                "text": "ؓ",
-                "layer": "ctrl"
+                "id": "U_0613",
+                "text": "ؓ"
               },
               {
-                "id": "K_R",
-                "text": "ؔ",
-                "layer": "ctrl"
+                "id": "U_0614",
+                "text": "ؔ"
               },
               {
-                "id": "K_T",
-                "text": "؁",
-                "layer": "ctrl"
+                "id": "U_0601",
+                "text": "؁"
               },
               {
-                "id": "K_Y",
-                "text": "ٔ",
-                "layer": "ctrl"
+                "id": "U_0654",
+                "text": "ٔ"
               },
               {
-                "id": "K_U",
-                "text": "ؑ",
-                "layer": "ctrl"
+                "id": "U_0611",
+                "text": "ؑ"
               },
               {
                 "id": "K_I",
@@ -666,14 +648,12 @@
                 "layer": "ctrl"
               },
               {
-                "id": "K_LBRKT",
-                "text": "[",
-                "layer": "ctrl"
+                "id": "U_005B",
+                "text": "["
               },
               {
-                "id": "K_RBRKT",
-                "text": "]",
-                "layer": "ctrl"
+                "id": "U_005D",
+                "text": "]"
               },
               {
                 "id": "T_new_140",
@@ -687,49 +667,40 @@
             "id": 3,
             "key": [
               {
-                "id": "K_BKQUOTE",
-                "text": "`",
-                "layer": "ctrl"
+                "id": "U_0060",
+                "text": "`"
               },
               {
-                "id": "K_A",
-                "text": "ﷲ",
-                "layer": "ctrl"
+                "id": "U_FDF2",
+                "text": "ﷲ"
               },
               {
-                "id": "K_S",
-                "text": "ؐ",
-                "layer": "ctrl"
+                "id": "U_060C",
+                "text": "،"
               },
               {
-                "id": "K_D",
-                "text": "ؕ",
-                "layer": "ctrl"
+                "id": "U_0685",
+                "text": "څ"
               },
               {
-                "id": "K_F",
-                "text": "ؤ",
-                "layer": "ctrl"
+                "id": "U_0624",
+                "text": "ؤ"
               },
               {
-                "id": "K_G",
-                "text": "ي",
-                "layer": "ctrl"
+                "id": "U_064A",
+                "text": "ي"
               },
               {
-                "id": "K_H",
-                "text": "ؒ",
-                "layer": "ctrl"
+                "id": "U_0612",
+                "text": "ؒ"
               },
               {
-                "id": "K_J",
-                "text": "٫",
-                "layer": "ctrl"
+                "id": "U_077D",
+                "text": "ݽ"
               },
               {
-                "id": "K_K",
-                "text": "ﷻ",
-                "layer": "ctrl"
+                "id": "U_0779",
+                "text": "ݹ"
               },
               {
                 "id": "K_L",
@@ -745,11 +716,6 @@
                 "id": "K_QUOTE",
                 "text": "",
                 "layer": "ctrl"
-              },
-              {
-                "id": "K_BKSLASH",
-                "text": "\\",
-                "layer": "ctrl"
               }
             ]
           },
@@ -763,34 +729,28 @@
                 "sp": "1"
               },
               {
-                "id": "K_Z",
-                "text": "؏",
-                "layer": "ctrl"
+                "id": "U_0776",
+                "text": "ݶ"
               },
               {
-                "id": "K_X",
-                "text": "؃",
-                "layer": "ctrl"
+                "id": "U_0603",
+                "text": "؃"
               },
               {
                 "id": "K_C",
-                "text": "",
-                "layer": "ctrl"
+                "text": ""
               },
               {
-                "id": "K_V",
-                "text": "؀",
-                "layer": "ctrl"
+                "id": "U_0600",
+                "text": "؀"
               },
               {
-                "id": "K_B",
-                "text": "ٰ",
-                "layer": "ctrl"
+                "id": "U_0670",
+                "text": "ٰ"
               },
               {
-                "id": "K_N",
-                "text": "ً",
-                "layer": "ctrl"
+                "id": "U_064B",
+                "text": "ً"
               },
               {
                 "id": "K_M",
@@ -798,9 +758,8 @@
                 "layer": "ctrl"
               },
               {
-                "id": "K_COMMA",
-                "text": "ؕ",
-                "layer": "ctrl"
+                "id": "U_0775",
+                "text": "ݵ"
               },
               {
                 "id": "K_PERIOD",
