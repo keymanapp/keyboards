@@ -39,6 +39,14 @@ popd () {
 function die {
   local rc=$?
   local msg=$1
+
+  # We are dying, so if previous command didn't actually give
+  # an error code, we still want to give an error. We'll give
+  # an arbitrary exit code to indicate this
+  if [ $rc == 0 ]; then
+    rc=999
+  fi
+  
   (>&2 echo "${t_red}$msg${t_end}")
   (>&2 echo "${t_red}Aborting with error $rc${t_end}")
   exit $rc
@@ -51,6 +59,7 @@ function parse_args {
   DO_UPLOAD_ONLY=false
   DO_ZIP_ONLY=false
   DO_EXE=true
+  WARNINGS_AS_ERRORS=false
   TARGET=
   PROJECT_TARGET=
   FLAG_SILENT=
@@ -92,6 +101,9 @@ function parse_args {
         -c)
           FLAG_CLEAN=-c
           ;;
+        -w)
+          WARNINGS_AS_ERRORS=true
+          ;;          
         -h|-?)
           display_usage
           ;;
@@ -99,7 +111,7 @@ function parse_args {
           lastkey=$key
           ;;
         *)
-          TARGET="$1"
+          TARGET="$key"
       esac
     else
       case "$lastkey" in

@@ -1,6 +1,10 @@
 Rachitrali-Khowar Change History
 ================================
 
+0.7 (15 May 2018)
+-----------------
+* Updated Desktop layout to handle Latin-style digits
+
 0.6 (14 August 2017)
 -----------------
 
