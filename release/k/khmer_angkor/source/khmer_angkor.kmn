@@ -314,8 +314,7 @@ c ==============================================MOBILE/TABLET TOUCH LAYOUT======
 
 c delete a subscript (a subscript sign + a consonant) upon a backspace
 
-platform('touch') U+17D2 any(c_out) + [K_BKSP] > nul 	c not working
-platform('web') U+17D2 any(c_out) + [K_BKSP] > nul     c not working
+platform('touch') U+17D2 any(c_out) + [K_BKSP] > nul 	c working OK 
 
 c + [K_NPSTAR]        > U+002A
 c + [SHIFT K_NPSTAR]  > U+002A
