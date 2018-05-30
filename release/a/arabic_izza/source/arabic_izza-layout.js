@@ -314,7 +314,7 @@
                 "layer": "shift"
               },
               {
-                "id": "K_C",
+                "id": "K_COMMA",
                 "text": ".",
                 "layer": "shift"
               }
