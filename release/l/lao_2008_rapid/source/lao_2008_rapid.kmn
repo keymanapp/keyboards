@@ -1,0 +1,403 @@
+﻿c Use Lao 2008 Basic if break insertion is not required or conflicts with the application input.
+
+store(&VERSION ) '9.0'     
+store(&NAME) 'Lao 2008 Rapid'
+store(&LANGUAGE) 'x0454'
+store(&HOTKEY) '[K_PAUSE]'
+store(&VISUALKEYBOARD) 'lao_2008_rapid.kvks'
+store(&BITMAP) 'lao_2008_rapid.ico'
+store(&ETHNOLOGUECODE) 'lao'
+store(&MESSAGE) 'Wraps at syllable boundaries using automatically inserted break codes.'
+store(&COPYRIGHT) '© 2008-2018 John Durdin'
+store(&capsalwaysoff) "1"
+
+c ****************************************************************************
+c 
+c Lao Keyboard, with constraints, re-ordering and syllable breaking
+c 
+c ****************************************************************************
+
+c Specify the first group of rules to use in processing
+store(&TARGETS) 'windows macosx linux'
+store(&WINDOWSLANGUAGES) 'x0454'
+store(&KEYBOARDVERSION) '1.1'
+begin Unicode > use(Constraints)
+
+c Define named characters and character sets for matching and filtering
+
+c Break character (Unicode ZWSP)
+c store(Brk) "*"    c replace ZWSP by asterisk when testing
+store(Brk) U+200B
+
+c Basic Consonants, Consonant sets and keyboard equivalents
+store(K)  "ກ"
+store(Hh) "ຫ"
+store(R)  "ຣ"  
+store(L)  "ລ"
+store(W)  "ວ" 
+store(Hl) "ຫຼ"  c This is a sequence, not a single character (in Unicode)
+store(OAng) "ອ"
+ 
+store(Initial) "ຂຄຈສຊຕຖທປຜຝພຟຢຮໝໜ"   c all consonants that can only occur syllable-initially
+store(Final) "ກງຍດນບມ"
+store(SubscriptL) U+0EBC
+store(Consonant)  "ກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫອຮໝໜ" c Subscript -r treated separately
+store(ConsonantKey) "d07'9l-pf84mo[xz/r2,1I];svi<O" 
+
+c Consonant groups defined for syllable-splitting purposes
+store(WClusterCons) "ກຂຄງສຊຕຖທ"
+store(Sonorant) "ງຍນມຢຣລວ" U+0EBC 
+store(Cwo) "ວອ"
+store(Crl) "ຣລ"
+store(C#wrr) "ກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢລອຫຮໜໝ"
+
+c Basic vowel character groups
+store(PrefixVowel) "ເແໂໄໃ"
+store(CSVowel) U+0EB1 U+0EBB c vowels that require a final consonant (n.b. "ຽ" can be final in old spelling)
+
+store(SalaA)  "ະ"  
+store(SalaAA) "າ"
+store(SalaAM) U+0EB3    
+store(SalaIA) "ຽ"   
+store(Vs) "ະຽາ"  
+
+store(MaiKan) U+0EB1
+store(MaiKong) U+0EBB
+
+store(Niggahita) U+0ECD
+
+store(Vo3) U+0EB4 U+0EB5 U+0EB6 U+0EB7 U+0EB8 U+0EB9
+store(Vo) U+0ECD U+0EB3 U+0EB1 U+0EBB U+0EB4 U+0EB5 U+0EB6 U+0EB7 U+0EB8 U+0EB9
+store(Veu) U+0EB7
+
+store(Vu) U+0EB8 U+0EB9
+store(Va) outs(Vs) outs(Vo) 
+
+store(Vowel) outs(PrefixVowel) outs(Va)
+
+c Additional vowel groups needed for syllable splitting
+store(PrefixVowelAi) "ໄໃ"
+store(PrefixE) "ເ"
+store(PrefixAE) "ແ"
+store(VowelAO) "າວ"
+
+c Keyboard equivalents of basic vowel characters
+store(VowelKey) "gc3w." "tPk" "=eaqyubn56" 
+store(VaK) "tPk" "=eaqyubn56" "+EAQYUBN^"   c all keys that cannot follow a vowel
+store(VbK) "gc3w."
+store(VoK) "=eaqyubn56"
+
+c Tone character groups and keyboard equivalents
+store(Tone) U+0EC8 U+0EC9 U+0ECA U+0ECB U+0ECC
+store(ToneKey) "jhHJ%"
+store(CancelMark) U+0ECC    c This mark is really not part of the Lao alphabet at all
+
+c Special (abbreviation), numeric,and punctuation characters and keyboard equivalents
+store(Sign)  "ໆຯ"
+store(Numeral) "1234567890"
+store(LaoNumeral) "໑໒໓໔໕໖໗໘໙໐"
+store(Punctuation)  "*_+/;.,:!?%" '=' '"' "(x)$"
+
+store(SignKey) "MC"
+store(NumeralKey) "!@#$&*()_W"
+store(LaoNumeralKey) [RALT K_1][RALT K_2][RALT K_3][RALT K_4][RALT K_7] \
+                     [RALT K_8][RALT K_9][RALT K_0][RALT K_HYPHEN][RALT K_W]                     
+store(PunctuationKey) "`RT~SDFGKL:" '"' "Z" "XV?>"   
+
+store(Unchanged) " |"  c characters to remain unchanged
+
+c Combination sets needed for syllable splitting
+store(VaT) outs(Va) outs(Tone)
+store(VaTCS) outs(VaT) outs(Consonant) outs(Sign)
+store(C#hk) "ຈຍດນບປຜຝພຟມຢຣລວອຮໜໝ" 
+store(VoT) outs(Vo) outs(Tone)
+store(VaCwo) outs(Va) outs(Cwo)
+
+store(LaoCharacter) outs(Consonant) outs(Vowel) outs(Tone)    c any Lao character except symbols
+
+c Part 1: Constraints and reordering
+group(Constraints) using keys
+
+c Number pad virtual key conversions - always return digits or mathematical symbols
++ [K_NP0] > '0' return
++ [K_NP1] > '1' return
++ [K_NP2] > '2' return
++ [K_NP3] > '3' return
++ [K_NP4] > '4' return
++ [K_NP5] > '5' return
++ [K_NP6] > '6' return
++ [K_NP7] > '7' return
++ [K_NP8] > '8' return
++ [K_NP9] > '9' return
++ [K_NPSTAR] > '*' return
++ [K_NPPLUS] > '+' return
++ [K_NPMINUS] > '-' return
++ [K_NPDOT] > '.' return
++ [K_NPSLASH] > '/' return 
+
+c Lao numeral conversions (RALT and keys for Arabic digits) and specials
++ any(LaoNumeralKey) > index(LaoNumeral,1) return         
++ [RALT K_BKQUOTE] > U+20AD 
++ [RALT K_EQUAL] > U+20AC
++ [RALT K_BKSLASH] > '\'
+
+c Exceptions to illegal key sequences
+ "ເ" any(Consonant) "າ" + "t" > context "ະ"      c e.g. "ເກາະ"
+ "ເຫ" any(Sonorant) "າ" + "t" > context "ະ"    c e.g. "ເຫງາະ"
+ "ເ" any(WClusterCons) "ວາ" + "t" > context "ະ"    c e.g. "ເກວາະ" (unlikely but allowed)
+ "າ" + "t" > context beep              c other occurrences of "າະ" are probably incorrect
+
+ "ເ" any(Consonant) $MaiKong + "k" > context "າ"     c e.g. "ເລົາ"
+ "ເຫ" any(Sonorant) $MaiKong + "k" > context "າ"   c e.g. "ເຫລົາ"
+ "ເ" any(WClusterCons) "ວ" $MaiKong + "k" > context "າ" c e.g. "ເກວົາ"
+ $MaiKong + "k" > context beep	            c otherwise probably incorrect
+
+ "ເ" any(Consonant) $MaiKong any(Tone) + "k" > context "າ"  c as above, with tone marks
+ "ເຫ" any(Sonorant) $MaiKong any(Tone) + "k" > context "າ"
+ "ເ" any(WClusterCons) "ວ" $MaiKong any(Tone) + "k" > context "າ"
+ $MaiKong any(Tone) + "k" > context beep      c otherwise probably incorrect
+
+ $MaiKan + "P"  > context U+0EBD     c Allow  "ັຽ" (-ia- after may kan)
+
+c Reorder am with tone marks
+"າ" + "=" > "ຳ" 
+"ຳ" + any(ToneKey) > index(Tone,2) "ຳ" 
+"ໍ" any(Tone) + "k" > "າ" context 
+
+c Reorder tonemark plus superscript/subscript vowel sequences
+c any(Vo) + any(ToneKey) > index(Tone,2) context
+ any(Tone) + "e" > context "ຳ"
+ any(Tone) + any(VoK) > index(Vo,2) context(1)
+       
+c Reorder "ຼ", superscript/subscript vowels and tone marks
+any(VoT) + "^" > U+0EBC index(VoT,1) 
+any(Tone)   + "^" > U+0EBC index(Tone,1)
+any(VoT) any(Tone)  + "^" > U+0EBC index(VoT,1) index(Tone,2)
+
+c Illegal key sequences
+any(Va) + any(VaK) > context beep return
+any(PrefixVowel) + any(ToneKey) > context beep return
+any(PrefixVowel) + any(VowelKey) > context beep return
+any(PrefixVowel) + any(VbK) > context beep return
+any(Vs) + any(ToneKey) > context beep return
+any(Tone) + any(ToneKey) > context beep return
+
+c Double character keys
++ '}' > "ຫ" U+0EBC
++ 'Q' > U+0EBB U+0EC9
++ 'A' > U+0EB1 U+0EC9
++ 'Y' > U+0EB4 U+0EC9
++ 'U' > U+0EB5 U+0EC9
++ 'B' > U+0EB6 U+0EC9
++ 'N' > U+0EB7 U+0EC9
++ 'E' > U+0EC9 U+0EB3
++ '+' > U+0ECD U+0EC8
+
+ $Brk + any(SignKey) > index(Sign,2)  c remove a break before a punctuation mark
+ $Brk + '\'  > context          c do not allow manual insertion of a second break
+ 
+match > use(Split)
+nomatch > use(Main)
+
+c Part 2: Unambiguous key conversions
+group(Main) using keys
++ any(ConsonantKey) > index(Consonant,1) 
++ any(VowelKey)     > index(Vowel,1) 
++ any(ToneKey)      > index(Tone,1) 
++ "^"                > $SubscriptL 
+
++ any(SignKey)      > index(Sign,1) 
++ any(PunctuationKey)           > index(Punctuation,1) 
++ any(NumeralKey) > index(Numeral,1)
++ any(Unchanged) > index(Unchanged,1)
++ "{" > "-"  	    c visible hyphen
++ "\" > $Brk	    c syllable break character
+
+c Exit here unless the character was Lao
+match > use(Split)
+nomatch > return
+
+c Part 3: Syllable splitting
+group(Split)
+
+c rule 1: break before any consonant that can only occur syllable-initially
+ any(PrefixVowel) any(Consonant) > context    c exception: not after a prefix vowel
+ any(LaoCharacter) any(Initial)  > context(1) $Brk context(2)  c rule 1
+
+c rule 2: break before consonant or cluster followed by a vowel or tone, except after prefix vowel
+ any(CSVowel) any(Consonant) any(VaT) > context c exception: not after mai kan or mai kong
+ 
+ any(PrefixVowel) $Hh any(Sonorant) any(Tone)    > context c exception to rule 2a
+ any(PrefixVowel) any(WClusterCons) $W any(VaT)  > context c exception to rule 2b
+ any(PrefixVowel) any(Consonant) any(VaT)        > context c exception to rule 2c
+
+ $PrefixE $Hh any(Sonorant) any(Va)              > context c exception to rule 2a
+ $PrefixE any(WClusterCons) $W any(Va)           > context c exception to rule 2b
+ $PrefixE any(Consonant) any(Va)                 > context c exception to rule 2c
+
+ $PrefixE $Hh any(Sonorant) any(Va) any(Tone)    > context c exception to rule 2e
+ $PrefixE any(WClusterCons) $W any(Va) any(Tone) > context c exception to rule 2f
+ $PrefixE any(Consonant) any(Va) any(Tone)       > context c exception to rule 2g
+
+ $Brk $Hh any(Sonorant) any(VaT)                 > context c exception to rule 2a
+ $Brk any(WClusterCons) $W any(VaT)              > context c exception to rule 2b
+ $Brk any(Consonant) any(VaT)                    > context c exception to rule 2c
+ $Brk any(Initial) any(Crl) any(VaT)             > context c exception to rule 2d 
+
+ $Brk $Hh any(Sonorant) any(Va) any(Tone)        > context c exception to rule 2e
+ $Brk any(WClusterCons) $W any(Va) any(Tone)     > context c exception to rule 2f
+ $Brk any(Consonant) any(Va) any(Tone)           > context c exception to rule 2g
+ $Brk any(Initial) any(Crl) any(Va) any(Tone)    > context c exception to rule 2h 
+                                  
+
+ $Hh any(Sonorant) any(VaT)     > $Brk context(1) context(2) context(3)  c rule 2a
+ any(WClusterCons) $W any(VaT)  > $Brk context(1) context(2) context(3)  c rule 2b
+ any(Consonant) any(VaT)        > $Brk context(1) context(2)             c rule 2c
+ any(Initial) any(Crl) any(VaT) > $Brk context(1) context(2) context(3) c rule 2d 
+ any(Consonant) $OAng any(WClusterCons) $W any(VaT) > context(1) context(2) context(3) $Brk context(4) context(5) c rule 2bx
+ 
+ $Hh any(Sonorant) any(Va) any(Tone)     > $Brk context(1) context(2) context(3) context(4) c rule 2e
+ any(WClusterCons) $W any(Va) any(Tone)  > $Brk context(1) context(2) context(3) context(4) c rule 2f
+ any(Consonant) any(Va) any(Tone)        > $Brk context(1) context(2) context(3)            c rule 2g
+ any(Initial) any(Crl) any(Va) any(Tone) > $Brk context(1) context(2) context(3) context(4) c rule 2h 
+ 
+                                                                       
+c rule 3: break before any prefix vowel  (except at start)
+ nul any(PrefixVowel) > context
+ any(PrefixVowel) > $Brk context               c rule 3   
+ 
+c rule 4: break after a final consonant after a vowel that requires a final
+ $MaiKan any(Final) any(Consonant)	> context(1) context(2) $Brk context(3) c rule 4a
+ $MaiKong any(Final) any(Consonant)	> context(1) context(2) $Brk context(3) c rule 4b
+ $SalaIA any(Final) any(Consonant)	> context(1) context(2) $Brk context(3) c rule 4c
+
+c rule 5: break after any vowel that must not be followed by a consonant
+ $SalaA any(Consonant)	             > context(1) $Brk context(2)   c rule 5a
+ $SalaAM any(Consonant)	             > context(1) $Brk context(2)   c rule 5b
+ $Niggahita any(Consonant)           > context(1) $Brk context(2)   c rule 5c
+ $Niggahita any(Tone) any(Consonant) > context(1) context(2) $Brk context(3) c rule 5d
+
+c rule 6: break before HL (except after prefix vowel)
+ any(PrefixVowel) outs(Hl) > context                   
+ any(LaoCharacter) outs(Hl) > context(1) $Brk outs(Hl)
+  
+c rule 7: break before identified (and allowed) initial clusters
+ nul any(WClusterCons) any(C#wrr) any(VaT) > context
+ $Brk any(WClusterCons) any(C#wrr) any(VaT) > context
+ any(WClusterCons) any(C#wrr) any(VaT) > context(1) $Brk context(2) context(3) 
+
+c rule 8:
+ any(PrefixVowelAi) any(Consonant) any(Tone) any(LaoCharacter)             > context(1) context(2) context(3) $Brk context(4) 
+ any(PrefixVowelAi) any(Consonant) $SubscriptL any(Tone) any(LaoCharacter) > context(1) context(2) context(3) context(4) $Brk context(5)
+
+c rule 9: break after vowel and final consonant before following consonant
+ any(VowelAO) any(Final) any(Consonant) > context(1) context(2) $Brk context(3)
+ 
+c rule 10: break after syllables starting with "ai" vowels before following consonant (no final allowed)
+ any(PrefixVowelAi) any(C#hk) any(Consonant)	    > context(1) context(2) $Brk context(3) 
+ any(PrefixVowelAi) $Hh $SubscriptL any(Consonant)	> context(1) $Hh $SubscriptL $Brk context(4)    
+
+c rule 11: break before r- or l- except where clusters are permitted
+ $Hh any(Crl)	> context	                        c main exception to rule 11
+ $K  any(Crl)	> context	                        c rare exception  to rule 11
+ any(Initial) any(Crl) > context                    c allow clusters for old spellings
+ any(VaTCS) any(Crl)   > context(1) $Brk context(2) c rule 11
+
+c rule 12: break following closed syllables with prefix vowels
+ any(PrefixVowel) any(Consonant) any(Final) any(Consonant)           > context(1) context(2) context(3) $Brk context(4)
+ any(PrefixVowel) any(Consonant) any(Tone) any(Final) any(Consonant) > context(1) context(2) context(3) context(4) $Brk context(5)
+
+c rule 13: break after closed syllables
+ $MaiKan any(Consonant) any(LaoCharacter)            > context(1) context(2) $Brk context(3)            c rule 13a
+ $MaiKong any(Consonant) any(LaoCharacter)           > context(1) context(2) $Brk context(3)            c rule 13b
+ $MaiKan any(Tone) any(Consonant) any(LaoCharacter)  > context(1) context(2) context(3) $Brk context(4) c rule 13c
+ $MaiKong any(Tone) any(Consonant) any(LaoCharacter) > context(1) context(2) context(3) $Brk context(4) c rule 13d
+
+c rule 14: break after -ao, -ua
+ $MaiKong any(VowelAO) any(Consonant)	        > context(1) context(2) $Brk context(3)             c rule 14a 
+ $MaiKong any(Tone) any(VowelAO) any(Consonant)	> context(1)  context(2) context(3) $Brk context(4) c rule 14b
+
+c rule 15:  disambiguate - break before C W C or C O C syllables
+ any(Va) any(Consonant) any(Cwo) any(Final)	> context(1) $Brk context(2) context(3) context(4) c rule 15
+ 
+c rule 16: break before OAng where obviously consonantal (rule avoids matching -eua- glides)
+ any(Consonant) $OAng any(VoT) > context(1) $Brk context(2) context(3)
+ any(Consonant) $SubscriptL $OAng any(VoT)	> context(1) context(2) $Brk context(3) context(4)
+
+c rule 17: break before preceding consonant where OAng appears vocalic
+ $Brk any(Consonant) $OAng any(Final) > context      c exception - don't duplicate break
+ $Hh any(Sonorant) $OAng any(Final)   > context      c exception - don't split high class sonorant cluster
+ $Brk any(Consonant) any(Sonorant) $OAng any(Final) > context c exception for allow old spellings
+ any(Consonant) $OAng any(Final) 	  > $Brk context c rule 17
+
+c rule 18: break after abbreviation mark or repetition mark
+ any(Sign) any(LaoCharacter) > context(1) $Brk context(2)
+
+c rule 19: break before OAng OAng (except in -eue syllables, treated elsewhere)
+ any(LaoCharacter) $OAng $OAng any(Final) > context(1) $Brk context(2) context(3) context(4)
+
+c rule 20: break between consonant pair where second consonant is not w or r (in -ai syllables)
+ any(PrefixVowelAi) any(WClusterCons) any(C#wrr) > context(1) context(2) $Brk context(3) 
+
+c rule 21: split H C before a suffix vowel (or tone) except where C is a sonorant (e.g. after a prefix -ai vowel)
+ $Hh any(Sonorant) any(VaT)  > context(1) context(2) context(3)	    
+ $Hh any(Consonant) any(VaT) > context(1) $Brk context(2) context(3)	
+
+c rule 22:  split H C after a prefix -ai vowel except where C is a sonorant
+ any(PrefixVowelAi) $Hh any(Sonorant)  > context(1) context(2) context(3)	   
+ any(PrefixVowelAi) $Hh any(Consonant) > context(1) context(2) $Brk context(3) 
+
+c rule 23: split sonorant cluster when followed by a vowel or tone
+ any(PrefixVowelAi) $Hh any(Sonorant) any(Va)	> context(1) context(2) $Brk context(3) context(4) 
+ any(PrefixVowelAi) $Hh any(Sonorant) any(Tone) any(Va) > context(1) context(2) $Hh $Brk context(3) context(4) context(5)
+ 
+c rule 24:  break before following consonant after shortened -o- or -ua- syllables
+ $MaiKan any(Cwo) any(Final) any(Consonant) > context(1) context(2) context(3) $Brk context(4)
+
+c rule 25:  break before following consonant after shortened -e- or -ae- syllables
+ $PrefixE any(Consonant) $MaiKan $W any(Consonant)  > context(1) context(2) context(3) context(4) $Brk context(5)
+ $PrefixAE any(Consonant) $MaiKan $W any(Consonant) > context(1) context(2) context(3) context(4) $Brk context(5)
+
+c rule 26: split OAng pair before any vowel or tone
+ $OAng $OAng any(VaCwo)	> context(1) $Brk context(2) context(3)
+
+c rule 27: split before w except when a kw- follows a tone mark (stop finals rarely tone marked)
+c this sequence is ambiguous, but a preceding closed syllable is more common than a xw- cluster,
+c so split accordingly
+ any(Vo3) any(Tone) $K $W any(VaT) > context(1) context(2) $Brk context(3) context(4) context(5)
+ any(Vo3) any(Tone) any(Consonant) $W any(VaT) > context(1) context(2) context(3) $Brk context(4) context(5) 
+ any(Vo3) any(Consonant) $W any(VaT) > context(1) context(2) $Brk context(3) context(4) 
+
+match > use(nodupl)
+nomatch > use(nodupl)
+
+c Part 4: Some final special rules
+group(nodupl)
+              
+c Remove any inserted duplicated breaks
+ $Brk $Brk > context(2)
+ $Brk $Brk any(LaoCharacter)> context(2) context(3)
+ $Brk $Brk any(LaoCharacter) any(LaoCharacter) > context(2) context(3) context(4)
+ $Brk $Brk any(LaoCharacter) any(LaoCharacter) any(LaoCharacter) > context(2) context(3) context(4) context(5)
+                       
+c Remove a break after an isolated consonant (mainly to support old-style spellings)
+ $Brk any(Consonant) $Brk any(Consonant) > context(1) context(2) context(4)
+   
+c Some two-syllable exceptions...
+ "ເວ" $Brk "ລາ"  >  "ເວລາ"
+ "ລະ" $Brk "ດູ"  >  "ລະດູ" 
+ "ລະ" $Brk "ຍະ" >  "ລະຍະ"
+ "ຊີ" $Brk "ວິດ"  >  "ຊີວິດ"    
+ "ຄຣິ" $Brk "ສ"  > "ຄຣິສ"
+ "ພະ" $Brk "ເຈົ້າ" > "ພະເຈົ້າ"
+ "ພະ" $Brk "ອົ້ງ" > "ພະອົງ"
+ "ສະ" $Brk "ນັ້ນ" >  "ສະນັ້ນ"
+ "ອາ" $Brk "ກາດ" > "ອາກາດ"
+ "ມະ" $Brk "ນຸດ" > "ມະນຸດ"
+ "ສະ" $Brk "ໄໝ" > "ສະໄໝ"
+ "ດີກ" $Brk "ວ່າ" > "ດີ" $Brk "ກວ່າ"
+ "ປີກ" $Brk "ວ່າ" > "ປີ" $Brk "ກວ່າ" 
+c Remove a break before a silenced consonant
+ $Brk any(Consonant) $CancelMark > context(2) context(3)
+ 
+c End of table, return control to system.
