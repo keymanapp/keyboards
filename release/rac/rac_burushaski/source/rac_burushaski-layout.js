@@ -246,7 +246,8 @@
                 "id": "K_LCONTROL",
                 "text": "*Ctrl*",
                 "width": "130",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "ctrl"
               },
               {
                 "id": "K_LOPT",
@@ -264,7 +265,8 @@
                 "id": "K_RCONTROL",
                 "text": "*Ctrl*",
                 "width": "130",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "ctrl"
               }
             ]
           }
@@ -514,7 +516,8 @@
                 "id": "K_LCONTROL",
                 "text": "*Ctrl*",
                 "width": "130",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "ctrl"
               },
               {
                 "id": "K_LOPT",
@@ -532,7 +535,8 @@
                 "id": "K_RCONTROL",
                 "text": "*Ctrl*",
                 "width": "130",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "ctrl"
               }
             ]
           }
@@ -726,7 +730,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "shift"
               },
               {
                 "id": "U_0776",
@@ -786,7 +791,8 @@
                 "id": "K_LCONTROL",
                 "text": "*Ctrl*",
                 "width": "130",
-                "sp": "2"
+                "sp": "2",
+                "nextlayer": "default"
               },
               {
                 "id": "K_LOPT",
@@ -804,7 +810,8 @@
                 "id": "K_RCONTROL",
                 "text": "*Ctrl*",
                 "width": "130",
-                "sp": "2"
+                "sp": "2",
+                "nextlayer": "default"
               }
             ]
           }
