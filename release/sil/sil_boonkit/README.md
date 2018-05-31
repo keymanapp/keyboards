@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Boonkit
 * Copyright:      2008-2018(C) SIL International
-* Version:        0.6.1
+* Version:        0.6.2
 * BCP-47 codes:   nod-Lana
 
 Description
