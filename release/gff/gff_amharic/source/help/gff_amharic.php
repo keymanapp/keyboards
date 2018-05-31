@@ -1,6 +1,6 @@
 <?php /*
   Name:             Keyboard_gff_amhamaric
-  Copyright:        Keyboard ©2009-2018 The Ge'ez Frontier Foundation 
+  Copyright:        Keyboard ©1997-2018 The Ge'ez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      18 Sep 2009
@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename = 'Amharic (GFF) Keyboard Help';
-  $pagetitle = 'Amharic Keyboard Help';
+  $pagename = 'አማርኛ (Amharic) Keyboard Help';
+  $pagetitle = 'አማርኛ (Amharic) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
@@ -28,7 +28,7 @@ EXTRA;
   require_once('header.php');
 ?>
 
-<p style='margin:0px'>Keyboard &#169; 2009 Ge'ez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard &#169; 1997-2018 Ge'ez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -199,7 +199,7 @@ This keyboard was created by the Ge'ez Frontier Foundation.  Tavultesoft graciou
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2009-2018 Ge'ez Frontier Foundation and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2018 Ge'ez Frontier Foundation and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
 </p>
 <p>
 THIS SOFTWARE IS PROVIDED BY TAVULTESOFT PTY LTD "AS IS" AND ANY
