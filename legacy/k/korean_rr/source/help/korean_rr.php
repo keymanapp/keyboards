@@ -61,7 +61,7 @@ the info available on the keyboard download site.  Instructions on using the key
 This keyboard is designed for entering the <a target="_blank" href="https://en.wikipedia.org/wiki/Korean">Korean</a> language, supporting both the 
 <a target="_blank" href="https://en.wikipedia.org/wiki/Korean_language#Writing_system">Hangeul</a> alphabet and 
 <a target="_blank" href="https://en.wikipedia.org/wiki/Hanja">Hanja</a> ideographic characters, as used in Republic of Korea.  
-Korean text is entered using Latin alphabet characters, closely following the Korean standard Revised Romanization conventions and displayed as <a target="_blank" href="https://en.wikipedia.org/wiki/Hangul_consonant_and_vowel_tables#jamo">jamo</a> character components, which are 
+Korean text is entered using Latin alphabet characters, closely following the Korean standard Revised Romanization conventions and displayed as <a target="_blank" href="https://en.wikipedia.org/wiki/Hangul_consonant_and_vowel_tables">jamo</a> character components, which are 
 combined to form <a target="_blank" href="https://en.wikipedia.org/wiki/Hangul">hangeul</a> characters by pressing the space bar, or <a target="_blank" href="https://en.wikipedia.org/wiki/Hanja">hanja</a> ideographs by selecting from an IME (Input Method Editor) list.   
 </p>
 
