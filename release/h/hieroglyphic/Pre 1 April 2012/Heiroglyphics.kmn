@@ -1,0 +1,6819 @@
+c 1
+
+store(&VERSION) '8.0'
+
+begin Unicode > use(main)
+
+group(main) using keys
+'1' + ' ' > dk(1) $Z1
+'1' + [SHIFT K_SPACE] > dk(1) $Z1
+'+1' + '+' > dk(1)
+
+c 3
+'3' + ' ' > dk(2) $Z2
+'3' + [SHIFT K_SPACE] > dk(2) $Z3A
+'+2' + '+' > dk(2)
+c ->
+dk(2) $Z2 + ' ' > dk(2) $N33A
+dk(2) $N33A + ' ' > dk(2) $Z3
+dk(2) $Z3 + ' ' > dk(2) $Z3A
+dk(2) $Z3A + ' ' > dk(2) $Z2
+c <-
+dk(2) $Z3A + [SHIFT K_SPACE] > dk(2) $Z3
+dk(2) $Z3 + [SHIFT K_SPACE] > dk(2) $N33A
+dk(2) $N33A + [SHIFT K_SPACE] > dk(2) $Z2
+dk(2) $Z2 + [SHIFT K_SPACE] > dk(2) $Z3A
+
+c A
+$A + ' ' > dk(3) $G1
+$A + [SHIFT K_SPACE] > dk(3) $G1
+'+3' + '+' > dk(3)
+
+c D
+$D + ' ' > dk(4) $I10
+$D + [SHIFT K_SPACE] > dk(4) $D37
+'+4' + '+' > dk(4)
+c ->
+dk(4) $I10 + ' ' > dk(4) $D37
+dk(4) $D37 + ' ' > dk(4) $I10
+c <-
+dk(4) $D37 + [SHIFT K_SPACE] > dk(4) $I10
+dk(4) $I10 + [SHIFT K_SPACE] > dk(4) $D37
+
+c H
+$H + ' ' > dk(5) $V28
+$H + [SHIFT K_SPACE] > dk(5) $V28
+'+5' + '+' > dk(5)
+
+c M
+'M' + ' ' > dk(6) $Aa15
+'M' + [SHIFT K_SPACE] > dk(6) $Aa15
+'+6' + '+' > dk(6)
+
+c N
+'N' + ' ' > dk(7) $S3
+'N' + [SHIFT K_SPACE] > dk(7) $S3
+'+7' + '+' > dk(7)
+
+c S
+$S + ' ' > dk(8) $N37
+$S + [SHIFT K_SPACE] > dk(8) $N39
+'+8' + '+' > dk(8)
+c ->
+dk(8) $N37 + ' ' > dk(8) $N38
+dk(8) $N38 + ' ' > dk(8) $N39
+dk(8) $N39 + ' ' > dk(8) $N37
+c <-
+dk(8) $N39 + [SHIFT K_SPACE] > dk(8) $N38
+dk(8) $N38 + [SHIFT K_SPACE] > dk(8) $N37
+dk(8) $N37 + [SHIFT K_SPACE] > dk(8) $N39
+
+c T
+$T + ' ' > dk(9) $V13
+$T + [SHIFT K_SPACE] > dk(9) $V14
+'+9' + '+' > dk(9)
+c ->
+dk(9) $V13 + ' ' > dk(9) $V14
+dk(9) $V14 + ' ' > dk(9) $V13
+c <-
+dk(9) $V14 + [SHIFT K_SPACE] > dk(9) $V13
+dk(9) $V13 + [SHIFT K_SPACE] > dk(9) $V14
+
+c W
+'W' + ' ' > dk(10) $Z7
+'W' + [SHIFT K_SPACE] > dk(10) $Z7
+'+10' + '+' > dk(10)
+
+c X
+$X + ' ' > dk(11) $F32
+$X + [SHIFT K_SPACE] > dk(11) $F32
+'+11' + '+' > dk(11)
+
+c a
+$a + ' ' > dk(12) $D36
+$a + [SHIFT K_SPACE] > dk(12) $O29
+'+12' + '+' > dk(12)
+c ->
+dk(12) $D36 + ' ' > dk(12) $O29
+dk(12) $O29 + ' ' > dk(12) $D36
+c <-
+dk(12) $O29 + [SHIFT K_SPACE] > dk(12) $D36
+dk(12) $D36 + [SHIFT K_SPACE] > dk(12) $O29
+
+c b
+'b' + ' ' > dk(13) $D58
+'b' + [SHIFT K_SPACE] > dk(13) $D58
+'+13' + '+' > dk(13)
+
+c d
+'d' + ' ' > dk(14) $D46
+'d' + [SHIFT K_SPACE] > dk(14) $X8
+'+14' + '+' > dk(14)
+c ->
+dk(14) $D46 + ' ' > dk(14) $D37
+dk(14) $D37 + ' ' > dk(14) $I10
+dk(14) $I10 + ' ' > dk(14) $X8
+dk(14) $X8 + ' ' > dk(14) $D46
+c <-
+dk(14) $X8 + [SHIFT K_SPACE] > dk(14) $I10
+dk(14) $I10 + [SHIFT K_SPACE] > dk(14) $D37
+dk(14) $D37 + [SHIFT K_SPACE] > dk(14) $D46
+dk(14) $D46 + [SHIFT K_SPACE] > dk(14) $X8
+
+c f
+'f' + ' ' > dk(15) $I9
+'f' + [SHIFT K_SPACE] > dk(15) $I9
+'+15' + '+' > dk(15)
+
+c g
+'g' + ' ' > dk(16) $W11
+'g' + [SHIFT K_SPACE] > dk(16) $W12
+'+16' + '+' > dk(16)
+c ->
+dk(16) $W11 + ' ' > dk(16) $V33
+dk(16) $V33 + ' ' > dk(16) $V34
+dk(16) $V34 + ' ' > dk(16) $V35
+dk(16) $V35 + ' ' > dk(16) $V6
+dk(16) $V6 + ' ' > dk(16) $W12
+dk(16) $W12 + ' ' > dk(16) $W11
+c <-
+dk(16) $W12 + [SHIFT K_SPACE] > dk(16) $V6
+dk(16) $V6 + [SHIFT K_SPACE] > dk(16) $V35
+dk(16) $V35 + [SHIFT K_SPACE] > dk(16) $V34
+dk(16) $V34 + [SHIFT K_SPACE] > dk(16) $V33
+dk(16) $V33 + [SHIFT K_SPACE] > dk(16) $W11
+dk(16) $W11 + [SHIFT K_SPACE] > dk(16) $W12
+
+c h
+'h' + ' ' > dk(17) $O4
+'h' + [SHIFT K_SPACE] > dk(17) $O4
+'+17' + '+' > dk(17)
+
+c i
+'i' + ' ' > dk(18) $M17
+'i' + [SHIFT K_SPACE] > dk(18) $M2
+'+18' + '+' > dk(18)
+c ->
+dk(18) $M17 + ' ' > dk(18) $A1
+dk(18) $A1 + ' ' > dk(18) $A26
+dk(18) $A26 + ' ' > dk(18) $M2
+dk(18) $M2 + ' ' > dk(18) $M17
+c <-
+dk(18) $M2 + [SHIFT K_SPACE] > dk(18) $A26
+dk(18) $A26 + [SHIFT K_SPACE] > dk(18) $A1
+dk(18) $A1 + [SHIFT K_SPACE] > dk(18) $M17
+dk(18) $M17 + [SHIFT K_SPACE] > dk(18) $M2
+
+c k
+'k' + ' ' > dk(19) $V31
+'k' + [SHIFT K_SPACE] > dk(19) $V31A
+'+19' + '+' > dk(19)
+c ->
+dk(19) $V31 + ' ' > dk(19) $V31A
+dk(19) $V31A + ' ' > dk(19) $V31
+c <-
+dk(19) $V31A + [SHIFT K_SPACE] > dk(19) $V31
+dk(19) $V31 + [SHIFT K_SPACE] > dk(19) $V31A
+
+c l
+'l' + ' ' > dk(20) $E23
+'l' + [SHIFT K_SPACE] > dk(20) $E23
+'+20' + '+' > dk(20)
+
+c m
+'m' + ' ' > dk(21) $G17
+'m' + [SHIFT K_SPACE] > dk(21) $G20
+'+21' + '+' > dk(21)
+c ->
+dk(21) $G17 + ' ' > dk(21) $Aa13
+dk(21) $Aa13 + ' ' > dk(21) $Aa14
+dk(21) $Aa14 + ' ' > dk(21) $Aa15
+dk(21) $Aa15 + ' ' > dk(21) $D37
+dk(21) $D37 + ' ' > dk(21) $D38
+dk(21) $D38 + ' ' > dk(21) $G19
+dk(21) $G19 + ' ' > dk(21) $G20
+dk(21) $G20 + ' ' > dk(21) $G17
+c <-
+dk(21) $G20 + [SHIFT K_SPACE] > dk(21) $G19
+dk(21) $G19 + [SHIFT K_SPACE] > dk(21) $D38
+dk(21) $D38 + [SHIFT K_SPACE] > dk(21) $D37
+dk(21) $D37 + [SHIFT K_SPACE] > dk(21) $Aa15
+dk(21) $Aa15 + [SHIFT K_SPACE] > dk(21) $Aa14
+dk(21) $Aa14 + [SHIFT K_SPACE] > dk(21) $Aa13
+dk(21) $Aa13 + [SHIFT K_SPACE] > dk(21) $G17
+dk(21) $G17 + [SHIFT K_SPACE] > dk(21) $G20
+
+c n
+'n' + ' ' > dk(22) $N35
+'n' + [SHIFT K_SPACE] > dk(22) $D35
+'+22' + '+' > dk(22)
+c ->
+dk(22) $N35 + ' ' > dk(22) $M22
+dk(22) $M22 + ' ' > dk(22) $S3
+dk(22) $S3 + ' ' > dk(22) $S4
+dk(22) $S4 + ' ' > dk(22) $D35
+dk(22) $D35 + ' ' > dk(22) $N35
+c <-
+dk(22) $D35 + [SHIFT K_SPACE] > dk(22) $S4
+dk(22) $S4 + [SHIFT K_SPACE] > dk(22) $S3
+dk(22) $S3 + [SHIFT K_SPACE] > dk(22) $M22
+dk(22) $M22 + [SHIFT K_SPACE] > dk(22) $N35
+dk(22) $N35 + [SHIFT K_SPACE] > dk(22) $D35
+
+c p
+'p' + ' ' > dk(23) $Q3
+'p' + [SHIFT K_SPACE] > dk(23) $O1
+'+23' + '+' > dk(23)
+c ->
+dk(23) $Q3 + ' ' > dk(23) $O1
+dk(23) $O1 + ' ' > dk(23) $Q3
+c <-
+dk(23) $O1 + [SHIFT K_SPACE] > dk(23) $Q3
+dk(23) $Q3 + [SHIFT K_SPACE] > dk(23) $O1
+
+c q
+'q' + ' ' > dk(24) $N29
+'q' + [SHIFT K_SPACE] > dk(24) $N29
+'+24' + '+' > dk(24)
+
+c r
+'r' + ' ' > dk(25) $D21
+'r' + [SHIFT K_SPACE] > dk(25) $D21
+'+25' + '+' > dk(25)
+
+c s
+'s' + ' ' > dk(26) $S29
+'s' + [SHIFT K_SPACE] > dk(26) $O34
+'+26' + '+' > dk(26)
+c ->
+dk(26) $S29 + ' ' > dk(26) $O34
+dk(26) $O34 + ' ' > dk(26) $S29
+c <-
+dk(26) $O34 + [SHIFT K_SPACE] > dk(26) $S29
+dk(26) $S29 + [SHIFT K_SPACE] > dk(26) $O34
+
+c t
+'t' + ' ' > dk(27) $X1
+'t' + [SHIFT K_SPACE] > dk(27) $X3
+'+27' + '+' > dk(27)
+c ->
+dk(27) $X1 + ' ' > dk(27) $X2
+dk(27) $X2 + ' ' > dk(27) $X3
+dk(27) $X3 + ' ' > dk(27) $X1
+c <-
+dk(27) $X3 + [SHIFT K_SPACE] > dk(27) $X2
+dk(27) $X2 + [SHIFT K_SPACE] > dk(27) $X1
+dk(27) $X1 + [SHIFT K_SPACE] > dk(27) $X3
+
+c w
+'w' + ' ' > dk(28) $G43
+'w' + [SHIFT K_SPACE] > dk(28) $Z7
+'+28' + '+' > dk(28)
+c ->
+dk(28) $G43 + ' ' > dk(28) $Z7
+dk(28) $Z7 + ' ' > dk(28) $G43
+c <-
+dk(28) $Z7 + [SHIFT K_SPACE] > dk(28) $G43
+dk(28) $G43 + [SHIFT K_SPACE] > dk(28) $Z7
+
+c x
+$x + ' ' > dk(29) $Aa1
+$x + [SHIFT K_SPACE] > dk(29) $Aa1
+'+29' + '+' > dk(29)
+
+c y
+'y' + ' ' > dk(30) $Z4
+'y' + [SHIFT K_SPACE] > dk(30) $Z4
+'+30' + '+' > dk(30)
+
+c z
+'z' + ' ' > dk(31) $O34
+'z' + [SHIFT K_SPACE] > dk(31) $O34
+'+31' + '+' > dk(31)
+
+c 10
+'10' + ' ' > dk(32) $V20
+'10' + [SHIFT K_SPACE] > dk(32) $V20
+'+32' + '+' > dk(32)
+
+c AA
+$A $A + ' ' > dk(33) $F45
+$A $A + [SHIFT K_SPACE] > dk(33) $G2
+'+33' + '+' > dk(33)
+c ->
+dk(33) $F45 + ' ' > dk(33) $G2
+dk(33) $G2 + ' ' > dk(33) $F45
+c <-
+dk(33) $G2 + [SHIFT K_SPACE] > dk(33) $F45
+dk(33) $F45 + [SHIFT K_SPACE] > dk(33) $G2
+
+c Ab
+$A 'b' + ' ' > dk(34) $U23
+$A 'b' + [SHIFT K_SPACE] > dk(34) $W8
+'+34' + '+' > dk(34)
+c ->
+dk(34) $U23 + ' ' > dk(34) $F28
+dk(34) $F28 + ' ' > dk(34) $R15
+dk(34) $R15 + ' ' > dk(34) $W7
+dk(34) $W7 + ' ' > dk(34) $W8
+dk(34) $W8 + ' ' > dk(34) $U23
+c <-
+dk(34) $W8 + [SHIFT K_SPACE] > dk(34) $W7
+dk(34) $W7 + [SHIFT K_SPACE] > dk(34) $R15
+dk(34) $R15 + [SHIFT K_SPACE] > dk(34) $F28
+dk(34) $F28 + [SHIFT K_SPACE] > dk(34) $U23
+dk(34) $U23 + [SHIFT K_SPACE] > dk(34) $W8
+
+c Ai
+$A 'i' + ' ' > dk(35) $T12
+$A 'i' + [SHIFT K_SPACE] > dk(35) $T12
+'+35' + '+' > dk(35)
+
+c Ar
+$A 'r' + ' ' > dk(36) $T12
+$A 'r' + [SHIFT K_SPACE] > dk(36) $T12
+'+36' + '+' > dk(36)
+
+c Aw
+$A 'w' + ' ' > dk(37) $F40
+$A 'w' + [SHIFT K_SPACE] > dk(37) $F40
+'+37' + '+' > dk(37)
+
+c Ax
+$A $x + ' ' > dk(38) $G25
+$A $x + [SHIFT K_SPACE] > dk(38) $M15
+'+38' + '+' > dk(38)
+c ->
+dk(38) $G25 + ' ' > dk(38) $M15
+dk(38) $M15 + ' ' > dk(38) $G25
+c <-
+dk(38) $M15 + [SHIFT K_SPACE] > dk(38) $G25
+dk(38) $G25 + [SHIFT K_SPACE] > dk(38) $M15
+
+c DA
+$D $A + ' ' > dk(39) $U28
+$D $A + [SHIFT K_SPACE] > dk(39) $U29
+'+39' + '+' > dk(39)
+c ->
+dk(39) $U28 + ' ' > dk(39) $Aa8
+dk(39) $Aa8 + ' ' > dk(39) $P3
+dk(39) $P3 + ' ' > dk(39) $U29
+dk(39) $U29 + ' ' > dk(39) $U28
+c <-
+dk(39) $U29 + [SHIFT K_SPACE] > dk(39) $P3
+dk(39) $P3 + [SHIFT K_SPACE] > dk(39) $Aa8
+dk(39) $Aa8 + [SHIFT K_SPACE] > dk(39) $U28
+dk(39) $U28 + [SHIFT K_SPACE] > dk(39) $U29
+
+c DD
+$D $D + ' ' > dk(40) $I11
+$D $D + [SHIFT K_SPACE] > dk(40) $I11
+'+40' + '+' > dk(40)
+
+c Db
+$D 'b' + ' ' > dk(41) $G22
+$D 'b' + [SHIFT K_SPACE] > dk(41) $G22
+'+41' + '+' > dk(41)
+
+c Dd
+$D 'd' + ' ' > dk(42) $R11
+$D 'd' + [SHIFT K_SPACE] > dk(42) $R11
+'+42' + '+' > dk(42)
+
+c Dr
+$D 'r' + ' ' > dk(43) $M36
+$D 'r' + [SHIFT K_SPACE] > dk(43) $M37
+'+43' + '+' > dk(43)
+c ->
+dk(43) $M36 + ' ' > dk(43) $M37
+dk(43) $M37 + ' ' > dk(43) $M36
+c <-
+dk(43) $M37 + [SHIFT K_SPACE] > dk(43) $M36
+dk(43) $M36 + [SHIFT K_SPACE] > dk(43) $M37
+
+c Dw
+$D 'w' + ' ' > dk(44) $N26
+$D 'w' + [SHIFT K_SPACE] > dk(44) $N26
+'+44' + '+' > dk(44)
+
+c HA
+$H $A + ' ' > dk(45) $M16
+$H $A + [SHIFT K_SPACE] > dk(45) $M16
+'+45' + '+' > dk(45)
+
+c HD
+$H $D + ' ' > dk(46) $T3
+$H $D + [SHIFT K_SPACE] > dk(46) $T5
+'+46' + '+' > dk(46)
+c ->
+dk(46) $T3 + ' ' > dk(46) $S14
+dk(46) $S14 + ' ' > dk(46) $T4
+dk(46) $T4 + ' ' > dk(46) $T5
+dk(46) $T5 + ' ' > dk(46) $T3
+c <-
+dk(46) $T5 + [SHIFT K_SPACE] > dk(46) $T4
+dk(46) $T4 + [SHIFT K_SPACE] > dk(46) $S14
+dk(46) $S14 + [SHIFT K_SPACE] > dk(46) $T3
+dk(46) $T3 + [SHIFT K_SPACE] > dk(46) $T5
+
+c HH
+$H $H + ' ' > dk(47) $C11
+$H $H + [SHIFT K_SPACE] > dk(47) $C11
+'+47' + '+' > dk(47)
+
+c Hb
+$H 'b' + ' ' > dk(48) $W3
+$H 'b' + [SHIFT K_SPACE] > dk(48) $W4
+'+48' + '+' > dk(48)
+c ->
+dk(48) $W3 + ' ' > dk(48) $W4
+dk(48) $W4 + ' ' > dk(48) $W3
+c <-
+dk(48) $W4 + [SHIFT K_SPACE] > dk(48) $W3
+dk(48) $W3 + [SHIFT K_SPACE] > dk(48) $W4
+
+c Hm
+$H 'm' + ' ' > dk(49) $U36
+$H 'm' + [SHIFT K_SPACE] > dk(49) $N42
+'+49' + '+' > dk(49)
+c ->
+dk(49) $U36 + ' ' > dk(49) $A41
+dk(49) $A41 + ' ' > dk(49) $A42
+dk(49) $A42 + ' ' > dk(49) $N41
+dk(49) $N41 + ' ' > dk(49) $N42
+dk(49) $N42 + ' ' > dk(49) $U36
+c <-
+dk(49) $N42 + [SHIFT K_SPACE] > dk(49) $N41
+dk(49) $N41 + [SHIFT K_SPACE] > dk(49) $A42
+dk(49) $A42 + [SHIFT K_SPACE] > dk(49) $A41
+dk(49) $A41 + [SHIFT K_SPACE] > dk(49) $U36
+dk(49) $U36 + [SHIFT K_SPACE] > dk(49) $N42
+
+c Hn
+$H 'n' + ' ' > dk(50) $M2
+$H 'n' + [SHIFT K_SPACE] > dk(50) $V36
+'+50' + '+' > dk(50)
+c ->
+dk(50) $M2 + ' ' > dk(50) $U8
+dk(50) $U8 + ' ' > dk(50) $V36
+dk(50) $V36 + ' ' > dk(50) $M2
+c <-
+dk(50) $V36 + [SHIFT K_SPACE] > dk(50) $U8
+dk(50) $U8 + [SHIFT K_SPACE] > dk(50) $M2
+dk(50) $M2 + [SHIFT K_SPACE] > dk(50) $V36
+
+c Hp
+$H 'p' + ' ' > dk(51) $Aa5
+$H 'p' + [SHIFT K_SPACE] > dk(51) $Aa5
+'+51' + '+' > dk(51)
+
+c Hr
+$H 'r' + ' ' > dk(52) $D2
+$H 'r' + [SHIFT K_SPACE] > dk(52) $Aa19
+'+52' + '+' > dk(52)
+c ->
+dk(52) $D2 + ' ' > dk(52) $Aa19
+dk(52) $Aa19 + ' ' > dk(52) $D2
+c <-
+dk(52) $Aa19 + [SHIFT K_SPACE] > dk(52) $D2
+dk(52) $D2 + [SHIFT K_SPACE] > dk(52) $Aa19
+
+c Hw
+$H 'w' + ' ' > dk(53) $F18
+$H 'w' + [SHIFT K_SPACE] > dk(53) $F18
+'+53' + '+' > dk(53)
+
+c Hz
+$H 'z' + ' ' > dk(54) $W14
+$H 'z' + [SHIFT K_SPACE] > dk(54) $W14
+'+54' + '+' > dk(54)
+
+c SA
+$S $A + ' ' > dk(55) $M8
+$S $A + [SHIFT K_SPACE] > dk(55) $H7
+'+55' + '+' > dk(55)
+c ->
+dk(55) $M8 + ' ' > dk(55) $H7
+dk(55) $H7 + ' ' > dk(55) $M8
+c <-
+dk(55) $H7 + [SHIFT K_SPACE] > dk(55) $M8
+dk(55) $M8 + [SHIFT K_SPACE] > dk(55) $H7
+
+c Sd
+$S 'd' + ' ' > dk(56) $F30
+$S 'd' + [SHIFT K_SPACE] > dk(56) $F30
+'+56' + '+' > dk(56)
+
+c Sm
+$S 'm' + ' ' > dk(57) $N40
+$S 'm' + [SHIFT K_SPACE] > dk(57) $N40
+'+57' + '+' > dk(57)
+
+c Sn
+$S 'n' + ' ' > dk(58) $V7
+$S 'n' + [SHIFT K_SPACE] > dk(58) $V8
+'+58' + '+' > dk(58)
+c ->
+dk(58) $V7 + ' ' > dk(58) $V8
+dk(58) $V8 + ' ' > dk(58) $V7
+c <-
+dk(58) $V8 + [SHIFT K_SPACE] > dk(58) $V7
+dk(58) $V7 + [SHIFT K_SPACE] > dk(58) $V8
+
+c Sp
+$S 'p' + ' ' > dk(59) $D5
+$S 'p' + [SHIFT K_SPACE] > dk(59) $D6
+'+59' + '+' > dk(59)
+c ->
+dk(59) $D5 + ' ' > dk(59) $D6
+dk(59) $D6 + ' ' > dk(59) $D5
+c <-
+dk(59) $D6 + [SHIFT K_SPACE] > dk(59) $D5
+dk(59) $D5 + [SHIFT K_SPACE] > dk(59) $D6
+
+c St
+$S 't' + ' ' > dk(60) $V1
+$S 't' + [SHIFT K_SPACE] > dk(60) $V1
+'+60' + '+' > dk(60)
+
+c Sw
+$S 'w' + ' ' > dk(61) $H6
+$S 'w' + [SHIFT K_SPACE] > dk(61) $H6A
+'+61' + '+' > dk(61)
+c ->
+dk(61) $H6 + ' ' > dk(61) $H6A
+dk(61) $H6A + ' ' > dk(61) $H6
+c <-
+dk(61) $H6A + [SHIFT K_SPACE] > dk(61) $H6
+dk(61) $H6 + [SHIFT K_SPACE] > dk(61) $H6A
+
+c TA
+$T $A + ' ' > dk(62) $G47
+$T $A + [SHIFT K_SPACE] > dk(62) $G47
+'+62' + '+' > dk(62)
+
+c Tb
+$T 'b' + ' ' > dk(63) $S33
+$T 'b' + [SHIFT K_SPACE] > dk(63) $S33
+'+63' + '+' > dk(63)
+
+c Tz
+$T 'z' + ' ' > dk(64) $S24
+$T 'z' + [SHIFT K_SPACE] > dk(64) $S24
+'+64' + '+' > dk(64)
+
+c XA
+$X $A + ' ' > dk(65) $K4
+$X $A + [SHIFT K_SPACE] > dk(65) $K4
+'+65' + '+' > dk(65)
+
+c Xn
+$X 'n' + ' ' > dk(66) $F26
+$X 'n' + [SHIFT K_SPACE] > dk(66) $D33
+'+66' + '+' > dk(66)
+c ->
+dk(66) $F26 + ' ' > dk(66) $D33
+dk(66) $D33 + ' ' > dk(66) $F26
+c <-
+dk(66) $D33 + [SHIFT K_SPACE] > dk(66) $F26
+dk(66) $F26 + [SHIFT K_SPACE] > dk(66) $D33
+
+c Xr
+$X 'r' + ' ' > dk(67) $T28
+$X 'r' + [SHIFT K_SPACE] > dk(67) $T28
+'+67' + '+' > dk(67)
+
+c aA
+$a $A + ' ' > dk(68) $O29
+$a $A + [SHIFT K_SPACE] > dk(68) $O31
+'+68' + '+' > dk(68)
+c ->
+dk(68) $O29 + ' ' > dk(68) $E7
+dk(68) $E7 + ' ' > dk(68) $O31
+dk(68) $O31 + ' ' > dk(68) $O29
+c <-
+dk(68) $O31 + [SHIFT K_SPACE] > dk(68) $E7
+dk(68) $E7 + [SHIFT K_SPACE] > dk(68) $O29
+dk(68) $O29 + [SHIFT K_SPACE] > dk(68) $O31
+
+c aD
+$a $D + ' ' > dk(69) $V26
+$a $D + [SHIFT K_SPACE] > dk(69) $V27
+'+69' + '+' > dk(69)
+c ->
+dk(69) $V26 + ' ' > dk(69) $K3
+dk(69) $K3 + ' ' > dk(69) $V27
+dk(69) $V27 + ' ' > dk(69) $V26
+c <-
+dk(69) $V27 + [SHIFT K_SPACE] > dk(69) $K3
+dk(69) $K3 + [SHIFT K_SPACE] > dk(69) $V26
+dk(69) $V26 + [SHIFT K_SPACE] > dk(69) $V27
+
+c aH
+$a $H + ' ' > dk(70) $O11
+$a $H + [SHIFT K_SPACE] > dk(70) $T24
+'+70' + '+' > dk(70)
+c ->
+dk(70) $O11 + ' ' > dk(70) $O12
+dk(70) $O12 + ' ' > dk(70) $T24
+dk(70) $T24 + ' ' > dk(70) $O11
+c <-
+dk(70) $T24 + [SHIFT K_SPACE] > dk(70) $O12
+dk(70) $O12 + [SHIFT K_SPACE] > dk(70) $O11
+dk(70) $O11 + [SHIFT K_SPACE] > dk(70) $T24
+
+c aS
+$a $S + ' ' > dk(71) $A26
+$a $S + [SHIFT K_SPACE] > dk(71) $A26
+'+71' + '+' > dk(71)
+
+c ab
+$a 'b' + ' ' > dk(72) $D59
+$a 'b' + [SHIFT K_SPACE] > dk(72) $Aa4
+'+72' + '+' > dk(72)
+c ->
+dk(72) $D59 + ' ' > dk(72) $Aa4
+dk(72) $Aa4 + ' ' > dk(72) $D59
+c <-
+dk(72) $Aa4 + [SHIFT K_SPACE] > dk(72) $D59
+dk(72) $D59 + [SHIFT K_SPACE] > dk(72) $Aa4
+
+c ad
+$a 'd' + ' ' > dk(73) $K3
+$a 'd' + [SHIFT K_SPACE] > dk(73) $V26
+'+73' + '+' > dk(73)
+c ->
+dk(73) $K3 + ' ' > dk(73) $V26
+dk(73) $V26 + ' ' > dk(73) $K3
+c <-
+dk(73) $V26 + [SHIFT K_SPACE] > dk(73) $K3
+dk(73) $K3 + [SHIFT K_SPACE] > dk(73) $V26
+
+c an
+$a 'n' + ' ' > dk(74) $D7
+$a 'n' + [SHIFT K_SPACE] > dk(74) $D8
+'+74' + '+' > dk(74)
+c ->
+dk(74) $D7 + ' ' > dk(74) $D8
+dk(74) $D8 + ' ' > dk(74) $D7
+c <-
+dk(74) $D8 + [SHIFT K_SPACE] > dk(74) $D7
+dk(74) $D7 + [SHIFT K_SPACE] > dk(74) $D8
+
+c aq
+$a 'q' + ' ' > dk(75) $G35
+$a 'q' + [SHIFT K_SPACE] > dk(75) $G35
+'+75' + '+' > dk(75)
+
+c bA
+'b' $A + ' ' > dk(76) $G29
+'b' $A + [SHIFT K_SPACE] > dk(76) $W10A
+'+76' + '+' > dk(76)
+c ->
+dk(76) $G29 + ' ' > dk(76) $E10
+dk(76) $E10 + ' ' > dk(76) $E11
+dk(76) $E11 + ' ' > dk(76) $G53
+dk(76) $G53 + ' ' > dk(76) $W10A
+dk(76) $W10A + ' ' > dk(76) $G29
+c <-
+dk(76) $W10A + [SHIFT K_SPACE] > dk(76) $G53
+dk(76) $G53 + [SHIFT K_SPACE] > dk(76) $E11
+dk(76) $E11 + [SHIFT K_SPACE] > dk(76) $E10
+dk(76) $E10 + [SHIFT K_SPACE] > dk(76) $G29
+dk(76) $G29 + [SHIFT K_SPACE] > dk(76) $W10A
+
+c bH
+'b' $H + ' ' > dk(77) $F18
+'b' $H + [SHIFT K_SPACE] > dk(77) $F18
+'+77' + '+' > dk(77)
+
+c bd
+'bd' + ' ' > dk(78) $R9
+'bd' + [SHIFT K_SPACE] > dk(78) $R9
+'+78' + '+' > dk(78)
+
+c bw
+'bw' + ' ' > dk(79) $D58
+'bw' + [SHIFT K_SPACE] > dk(79) $K2
+'+79' + '+' > dk(79)
+c ->
+dk(79) $D58 + ' ' > dk(79) $K2
+dk(79) $K2 + ' ' > dk(79) $D58
+c <-
+dk(79) $K2 + [SHIFT K_SPACE] > dk(79) $D58
+dk(79) $D58 + [SHIFT K_SPACE] > dk(79) $K2
+
+c bz
+'bz' + ' ' > dk(80) $K5
+'bz' + [SHIFT K_SPACE] > dk(80) $K5
+'+80' + '+' > dk(80)
+
+c db
+'db' + ' ' > dk(81) $F16
+'db' + [SHIFT K_SPACE] > dk(81) $E25
+'+81' + '+' > dk(81)
+c ->
+dk(81) $F16 + ' ' > dk(81) $E25
+dk(81) $E25 + ' ' > dk(81) $F16
+c <-
+dk(81) $E25 + [SHIFT K_SPACE] > dk(81) $F16
+dk(81) $F16 + [SHIFT K_SPACE] > dk(81) $E25
+
+c dd
+'dd' + ' ' > dk(82) $R11
+'dd' + [SHIFT K_SPACE] > dk(82) $R11
+'+82' + '+' > dk(82)
+
+c di
+'di' + ' ' > dk(83) $X8
+'di' + [SHIFT K_SPACE] > dk(83) $D37
+'+83' + '+' > dk(83)
+c ->
+dk(83) $X8 + ' ' > dk(83) $D37
+dk(83) $D37 + ' ' > dk(83) $X8
+c <-
+dk(83) $D37 + [SHIFT K_SPACE] > dk(83) $X8
+dk(83) $X8 + [SHIFT K_SPACE] > dk(83) $D37
+
+c fA
+'f' $A + ' ' > dk(84) $A9
+'f' $A + [SHIFT K_SPACE] > dk(84) $A9
+'+84' + '+' > dk(84)
+
+c gH
+'g' $H + ' ' > dk(85) $D56
+'g' $H + [SHIFT K_SPACE] > dk(85) $D56
+'+85' + '+' > dk(85)
+
+c gb
+'gb' + ' ' > dk(86) $G38
+'gb' + [SHIFT K_SPACE] > dk(86) $G38
+'+86' + '+' > dk(86)
+
+c gm
+'gm' + ' ' > dk(87) $G28
+'gm' + [SHIFT K_SPACE] > dk(87) $G28
+'+87' + '+' > dk(87)
+
+c gs
+'gs' + ' ' > dk(88) $Aa13
+'gs' + [SHIFT K_SPACE] > dk(88) $Aa16
+'+88' + '+' > dk(88)
+c ->
+dk(88) $Aa13 + ' ' > dk(88) $Aa14
+dk(88) $Aa14 + ' ' > dk(88) $Aa15
+dk(88) $Aa15 + ' ' > dk(88) $Aa16
+dk(88) $Aa16 + ' ' > dk(88) $Aa13
+c <-
+dk(88) $Aa16 + [SHIFT K_SPACE] > dk(88) $Aa15
+dk(88) $Aa15 + [SHIFT K_SPACE] > dk(88) $Aa14
+dk(88) $Aa14 + [SHIFT K_SPACE] > dk(88) $Aa13
+dk(88) $Aa13 + [SHIFT K_SPACE] > dk(88) $Aa16
+
+c hb
+'hb' + ' ' > dk(89) $U13
+'hb' + [SHIFT K_SPACE] > dk(89) $G26
+'+89' + '+' > dk(89)
+c ->
+dk(89) $U13 + ' ' > dk(89) $G26A
+dk(89) $G26A + ' ' > dk(89) $G26
+dk(89) $G26 + ' ' > dk(89) $U13
+c <-
+dk(89) $G26 + [SHIFT K_SPACE] > dk(89) $G26A
+dk(89) $G26A + [SHIFT K_SPACE] > dk(89) $U13
+dk(89) $U13 + [SHIFT K_SPACE] > dk(89) $G26
+
+c iH
+'i' $H + ' ' > dk(90) $T24
+'i' $H + [SHIFT K_SPACE] > dk(90) $F1
+'+90' + '+' > dk(90)
+c ->
+dk(90) $T24 + ' ' > dk(90) $E1
+dk(90) $E1 + ' ' > dk(90) $F1
+dk(90) $F1 + ' ' > dk(90) $T24
+c <-
+dk(90) $F1 + [SHIFT K_SPACE] > dk(90) $E1
+dk(90) $E1 + [SHIFT K_SPACE] > dk(90) $T24
+dk(90) $T24 + [SHIFT K_SPACE] > dk(90) $F1
+
+c ib
+'ib' + ' ' > dk(91) $F34
+'ib' + [SHIFT K_SPACE] > dk(91) $E8
+'+91' + '+' > dk(91)
+c ->
+dk(91) $F34 + ' ' > dk(91) $E8A
+dk(91) $E8A + ' ' > dk(91) $E8
+dk(91) $E8 + ' ' > dk(91) $F34
+c <-
+dk(91) $E8 + [SHIFT K_SPACE] > dk(91) $E8A
+dk(91) $E8A + [SHIFT K_SPACE] > dk(91) $F34
+dk(91) $F34 + [SHIFT K_SPACE] > dk(91) $E8
+
+c id
+'id' + ' ' > dk(92) $N42
+'id' + [SHIFT K_SPACE] > dk(92) $N41
+'+92' + '+' > dk(92)
+c ->
+dk(92) $N42 + ' ' > dk(92) $F45
+dk(92) $F45 + ' ' > dk(92) $N41
+dk(92) $N41 + ' ' > dk(92) $N42
+c <-
+dk(92) $N41 + [SHIFT K_SPACE] > dk(92) $F45
+dk(92) $F45 + [SHIFT K_SPACE] > dk(92) $N42
+dk(92) $N42 + [SHIFT K_SPACE] > dk(92) $N41
+
+c ii
+'ii' + ' ' > dk(93) $M18
+'ii' + [SHIFT K_SPACE] > dk(93) $M18
+'+93' + '+' > dk(93)
+
+c im
+'im' + ' ' > dk(94) $Aa13
+'im' + [SHIFT K_SPACE] > dk(94) $M1
+'+94' + '+' > dk(94)
+c ->
+dk(94) $Aa13 + ' ' > dk(94) $Aa14
+dk(94) $Aa14 + ' ' > dk(94) $Aa15
+dk(94) $Aa15 + ' ' > dk(94) $M1
+dk(94) $M1 + ' ' > dk(94) $Aa13
+c <-
+dk(94) $M1 + [SHIFT K_SPACE] > dk(94) $Aa15
+dk(94) $Aa15 + [SHIFT K_SPACE] > dk(94) $Aa14
+dk(94) $Aa14 + [SHIFT K_SPACE] > dk(94) $Aa13
+dk(94) $Aa13 + [SHIFT K_SPACE] > dk(94) $M1
+
+c in
+'in' + ' ' > dk(95) $K1
+'in' + [SHIFT K_SPACE] > dk(95) $A27
+'+95' + '+' > dk(95)
+c ->
+dk(95) $K1 + ' ' > dk(95) $A27
+dk(95) $A27 + ' ' > dk(95) $K1
+c <-
+dk(95) $A27 + [SHIFT K_SPACE] > dk(95) $K1
+dk(95) $K1 + [SHIFT K_SPACE] > dk(95) $A27
+
+c ir
+'ir' + ' ' > dk(96) $D4
+'ir' + [SHIFT K_SPACE] > dk(96) $D12
+'+96' + '+' > dk(96)
+c ->
+dk(96) $D4 + ' ' > dk(96) $D12
+dk(96) $D12 + ' ' > dk(96) $D4
+c <-
+dk(96) $D12 + [SHIFT K_SPACE] > dk(96) $D4
+dk(96) $D4 + [SHIFT K_SPACE] > dk(96) $D12
+
+c it
+'it' + ' ' > dk(97) $U10
+'it' + [SHIFT K_SPACE] > dk(97) $X3
+'+97' + '+' > dk(97)
+c ->
+dk(97) $U10 + ' ' > dk(97) $I3
+dk(97) $I3 + ' ' > dk(97) $I9
+dk(97) $I9 + ' ' > dk(97) $M33
+dk(97) $M33 + ' ' > dk(97) $X2
+dk(97) $X2 + ' ' > dk(97) $X3
+dk(97) $X3 + ' ' > dk(97) $U10
+c <-
+dk(97) $X3 + [SHIFT K_SPACE] > dk(97) $X2
+dk(97) $X2 + [SHIFT K_SPACE] > dk(97) $M33
+dk(97) $M33 + [SHIFT K_SPACE] > dk(97) $I9
+dk(97) $I9 + [SHIFT K_SPACE] > dk(97) $I3
+dk(97) $I3 + [SHIFT K_SPACE] > dk(97) $U10
+dk(97) $U10 + [SHIFT K_SPACE] > dk(97) $X3
+
+c iw
+'iw' + ' ' > dk(98) $N18
+'iw' + [SHIFT K_SPACE] > dk(98) $F51
+'+98' + '+' > dk(98)
+c ->
+dk(98) $N18 + ' ' > dk(98) $D54
+dk(98) $D54 + ' ' > dk(98) $E14
+dk(98) $E14 + ' ' > dk(98) $E9
+dk(98) $E9 + ' ' > dk(98) $F51
+dk(98) $F51 + ' ' > dk(98) $N18
+c <-
+dk(98) $F51 + [SHIFT K_SPACE] > dk(98) $E9
+dk(98) $E9 + [SHIFT K_SPACE] > dk(98) $E14
+dk(98) $E14 + [SHIFT K_SPACE] > dk(98) $D54
+dk(98) $D54 + [SHIFT K_SPACE] > dk(98) $N18
+dk(98) $N18 + [SHIFT K_SPACE] > dk(98) $F51
+
+c iz
+'iz' + ' ' > dk(99) $M40
+'iz' + [SHIFT K_SPACE] > dk(99) $O35
+'+99' + '+' > dk(99)
+c ->
+dk(99) $M40 + ' ' > dk(99) $O35
+dk(99) $O35 + ' ' > dk(99) $M40
+c <-
+dk(99) $O35 + [SHIFT K_SPACE] > dk(99) $M40
+dk(99) $M40 + [SHIFT K_SPACE] > dk(99) $O35
+
+c kA
+'k' $A + ' ' > dk(100) $D28
+'k' $A + [SHIFT K_SPACE] > dk(100) $E2
+'+100' + '+' > dk(100)
+c ->
+dk(100) $D28 + ' ' > dk(100) $D29
+dk(100) $D29 + ' ' > dk(100) $E1
+dk(100) $E1 + ' ' > dk(100) $E2
+dk(100) $E2 + ' ' > dk(100) $D28
+c <-
+dk(100) $E2 + [SHIFT K_SPACE] > dk(100) $E1
+dk(100) $E1 + [SHIFT K_SPACE] > dk(100) $D29
+dk(100) $D29 + [SHIFT K_SPACE] > dk(100) $D28
+dk(100) $D28 + [SHIFT K_SPACE] > dk(100) $E2
+
+c km
+'km' + ' ' > dk(101) $I6
+'km' + [SHIFT K_SPACE] > dk(101) $I6
+'+101' + '+' > dk(101)
+
+c kp
+'kp' + ' ' > dk(102) $R5
+'kp' + [SHIFT K_SPACE] > dk(102) $R6
+'+102' + '+' > dk(102)
+c ->
+dk(102) $R5 + ' ' > dk(102) $R6
+dk(102) $R6 + ' ' > dk(102) $R5
+c <-
+dk(102) $R6 + [SHIFT K_SPACE] > dk(102) $R5
+dk(102) $R5 + [SHIFT K_SPACE] > dk(102) $R6
+
+c ks
+'ks' + ' ' > dk(103) $A16
+'ks' + [SHIFT K_SPACE] > dk(103) $A16
+'+103' + '+' > dk(103)
+
+c mA
+'m' $A + ' ' > dk(104) $U1
+'m' $A + [SHIFT K_SPACE] > dk(104) $U3
+'+104' + '+' > dk(104)
+c ->
+dk(104) $U1 + ' ' > dk(104) $D12
+dk(104) $D12 + ' ' > dk(104) $D4
+dk(104) $D4 + ' ' > dk(104) $G3
+dk(104) $G3 + ' ' > dk(104) $U2
+dk(104) $U2 + ' ' > dk(104) $U3
+dk(104) $U3 + ' ' > dk(104) $U1
+c <-
+dk(104) $U3 + [SHIFT K_SPACE] > dk(104) $U2
+dk(104) $U2 + [SHIFT K_SPACE] > dk(104) $G3
+dk(104) $G3 + [SHIFT K_SPACE] > dk(104) $D4
+dk(104) $D4 + [SHIFT K_SPACE] > dk(104) $D12
+dk(104) $D12 + [SHIFT K_SPACE] > dk(104) $U1
+dk(104) $U1 + [SHIFT K_SPACE] > dk(104) $U3
+
+c mD
+'m' $D + ' ' > dk(105) $V20
+'m' $D + [SHIFT K_SPACE] > dk(105) $V21
+'+105' + '+' > dk(105)
+c ->
+dk(105) $V20 + ' ' > dk(105) $V21
+dk(105) $V21 + ' ' > dk(105) $V20
+c <-
+dk(105) $V21 + [SHIFT K_SPACE] > dk(105) $V20
+dk(105) $V20 + [SHIFT K_SPACE] > dk(105) $V21
+
+c mH
+'m' $H + ' ' > dk(106) $V22
+'m' $H + [SHIFT K_SPACE] > dk(106) $V23
+'+106' + '+' > dk(106)
+c ->
+dk(106) $V22 + ' ' > dk(106) $D42
+dk(106) $D42 + ' ' > dk(106) $V23
+dk(106) $V23 + ' ' > dk(106) $V22
+c <-
+dk(106) $V23 + [SHIFT K_SPACE] > dk(106) $D42
+dk(106) $D42 + [SHIFT K_SPACE] > dk(106) $V22
+dk(106) $V22 + [SHIFT K_SPACE] > dk(106) $V23
+
+c md
+'md' + ' ' > dk(107) $S43
+'md' + [SHIFT K_SPACE] > dk(107) $S43
+'+107' + '+' > dk(107)
+
+c mi
+'mi' + ' ' > dk(108) $W19
+'mi' + [SHIFT K_SPACE] > dk(108) $N36
+'+108' + '+' > dk(108)
+c ->
+dk(108) $W19 + ' ' > dk(108) $D37
+dk(108) $D37 + ' ' > dk(108) $D38
+dk(108) $D38 + ' ' > dk(108) $G19
+dk(108) $G19 + ' ' > dk(108) $G20
+dk(108) $G20 + ' ' > dk(108) $N36
+dk(108) $N36 + ' ' > dk(108) $W19
+c <-
+dk(108) $N36 + [SHIFT K_SPACE] > dk(108) $G20
+dk(108) $G20 + [SHIFT K_SPACE] > dk(108) $G19
+dk(108) $G19 + [SHIFT K_SPACE] > dk(108) $D38
+dk(108) $D38 + [SHIFT K_SPACE] > dk(108) $D37
+dk(108) $D37 + [SHIFT K_SPACE] > dk(108) $W19
+dk(108) $W19 + [SHIFT K_SPACE] > dk(108) $N36
+
+c mm
+'mm' + ' ' > dk(109) $G18
+'mm' + [SHIFT K_SPACE] > dk(109) $G18
+'+109' + '+' > dk(109)
+
+c mn
+'mn' + ' ' > dk(110) $Y5
+'mn' + [SHIFT K_SPACE] > dk(110) $T1
+'+110' + '+' > dk(110)
+c ->
+dk(110) $Y5 + ' ' > dk(110) $T1
+dk(110) $T1 + ' ' > dk(110) $Y5
+c <-
+dk(110) $T1 + [SHIFT K_SPACE] > dk(110) $Y5
+dk(110) $Y5 + [SHIFT K_SPACE] > dk(110) $T1
+
+c mr
+'mr' + ' ' > dk(111) $U6
+'mr' + [SHIFT K_SPACE] > dk(111) $U7
+'+111' + '+' > dk(111)
+c ->
+dk(111) $U6 + ' ' > dk(111) $F20
+dk(111) $F20 + ' ' > dk(111) $N36
+dk(111) $N36 + ' ' > dk(111) $O24
+dk(111) $O24 + ' ' > dk(111) $O5
+dk(111) $O5 + ' ' > dk(111) $U23
+dk(111) $U23 + ' ' > dk(111) $U7
+dk(111) $U7 + ' ' > dk(111) $U6
+c <-
+dk(111) $U7 + [SHIFT K_SPACE] > dk(111) $U23
+dk(111) $U23 + [SHIFT K_SPACE] > dk(111) $O5
+dk(111) $O5 + [SHIFT K_SPACE] > dk(111) $O24
+dk(111) $O24 + [SHIFT K_SPACE] > dk(111) $N36
+dk(111) $N36 + [SHIFT K_SPACE] > dk(111) $F20
+dk(111) $F20 + [SHIFT K_SPACE] > dk(111) $U6
+dk(111) $U6 + [SHIFT K_SPACE] > dk(111) $U7
+
+c ms
+'ms' + ' ' > dk(112) $F31
+'ms' + [SHIFT K_SPACE] > dk(112) $B4
+'+112' + '+' > dk(112)
+c ->
+dk(112) $F31 + ' ' > dk(112) $B3
+dk(112) $B3 + ' ' > dk(112) $B4
+dk(112) $B4 + ' ' > dk(112) $F31
+c <-
+dk(112) $B4 + [SHIFT K_SPACE] > dk(112) $B3
+dk(112) $B3 + [SHIFT K_SPACE] > dk(112) $F31
+dk(112) $F31 + [SHIFT K_SPACE] > dk(112) $B4
+
+c mt
+'mt' + ' ' > dk(113) $D52
+'mt' + [SHIFT K_SPACE] > dk(113) $G14
+'+113' + '+' > dk(113)
+c ->
+dk(113) $D52 + ' ' > dk(113) $D53
+dk(113) $D53 + ' ' > dk(113) $G14
+dk(113) $G14 + ' ' > dk(113) $D52
+c <-
+dk(113) $G14 + [SHIFT K_SPACE] > dk(113) $D53
+dk(113) $D53 + [SHIFT K_SPACE] > dk(113) $D52
+dk(113) $D52 + [SHIFT K_SPACE] > dk(113) $G14
+
+c mw
+'mw' + ' ' > dk(114) $N35A
+'mw' + [SHIFT K_SPACE] > dk(114) $N35A
+'+114' + '+' > dk(114)
+
+c nD
+'n' $D + ' ' > dk(115) $Aa27
+'n' $D + [SHIFT K_SPACE] > dk(115) $Aa27
+'+115' + '+' > dk(115)
+
+c nH
+'n' $H + ' ' > dk(116) $G21
+'n' $H + [SHIFT K_SPACE] > dk(116) $G21
+'+116' + '+' > dk(116)
+
+c nb
+'nb' + ' ' > dk(117) $V30
+'nb' + [SHIFT K_SPACE] > dk(117) $V30
+'+117' + '+' > dk(117)
+
+c ni
+'ni' + ' ' > dk(118) $D41
+'ni' + [SHIFT K_SPACE] > dk(118) $D41
+'+118' + '+' > dk(118)
+
+c nm
+'nm' + ' ' > dk(119) $T34
+'nm' + [SHIFT K_SPACE] > dk(119) $T35
+'+119' + '+' > dk(119)
+c ->
+dk(119) $T34 + ' ' > dk(119) $O5
+dk(119) $O5 + ' ' > dk(119) $T35
+dk(119) $T35 + ' ' > dk(119) $T34
+c <-
+dk(119) $T35 + [SHIFT K_SPACE] > dk(119) $O5
+dk(119) $O5 + [SHIFT K_SPACE] > dk(119) $T34
+dk(119) $T34 + [SHIFT K_SPACE] > dk(119) $T35
+
+c nn
+'nn' + ' ' > dk(120) $M22A
+'nn' + [SHIFT K_SPACE] > dk(120) $M22A
+'+120' + '+' > dk(120)
+
+c nr
+'nr' + ' ' > dk(121) $H4
+'nr' + [SHIFT K_SPACE] > dk(121) $G14
+'+121' + '+' > dk(121)
+c ->
+dk(121) $H4 + ' ' > dk(121) $G14
+dk(121) $G14 + ' ' > dk(121) $H4
+c <-
+dk(121) $G14 + [SHIFT K_SPACE] > dk(121) $H4
+dk(121) $H4 + [SHIFT K_SPACE] > dk(121) $G14
+
+c ns
+'ns' + ' ' > dk(122) $F20
+'ns' + [SHIFT K_SPACE] > dk(122) $F20
+'+122' + '+' > dk(122)
+
+c nw
+'nw' + ' ' > dk(123) $W24
+'nw' + [SHIFT K_SPACE] > dk(123) $U20
+'+123' + '+' > dk(123)
+c ->
+dk(123) $W24 + ' ' > dk(123) $U19
+dk(123) $U19 + ' ' > dk(123) $U20
+dk(123) $U20 + ' ' > dk(123) $W24
+c <-
+dk(123) $U20 + [SHIFT K_SPACE] > dk(123) $U19
+dk(123) $U19 + [SHIFT K_SPACE] > dk(123) $W24
+dk(123) $W24 + [SHIFT K_SPACE] > dk(123) $U20
+
+c pA
+'p' $A + ' ' > dk(124) $G40
+'p' $A + [SHIFT K_SPACE] > dk(124) $G41
+'+124' + '+' > dk(124)
+c ->
+dk(124) $G40 + ' ' > dk(124) $G41
+dk(124) $G41 + ' ' > dk(124) $G40
+c <-
+dk(124) $G41 + [SHIFT K_SPACE] > dk(124) $G40
+dk(124) $G40 + [SHIFT K_SPACE] > dk(124) $G41
+
+c pD
+'p' $D + ' ' > dk(125) $T10
+'p' $D + [SHIFT K_SPACE] > dk(125) $T9
+'+125' + '+' > dk(125)
+c ->
+dk(125) $T10 + ' ' > dk(125) $T9A
+dk(125) $T9A + ' ' > dk(125) $T9
+dk(125) $T9 + ' ' > dk(125) $T10
+c <-
+dk(125) $T9 + [SHIFT K_SPACE] > dk(125) $T9A
+dk(125) $T9A + [SHIFT K_SPACE] > dk(125) $T10
+dk(125) $T10 + [SHIFT K_SPACE] > dk(125) $T9
+
+c pH
+'p' $H + ' ' > dk(126) $F22
+'p' $H + [SHIFT K_SPACE] > dk(126) $F22
+'+126' + '+' > dk(126)
+
+c pd
+'pd' + ' ' > dk(127) $T9
+'pd' + [SHIFT K_SPACE] > dk(127) $T9A
+'+127' + '+' > dk(127)
+c ->
+dk(127) $T9 + ' ' > dk(127) $T9A
+dk(127) $T9A + ' ' > dk(127) $T9
+c <-
+dk(127) $T9A + [SHIFT K_SPACE] > dk(127) $T9
+dk(127) $T9 + [SHIFT K_SPACE] > dk(127) $T9A
+
+c pq
+'pq' + ' ' > dk(128) $H2
+'pq' + [SHIFT K_SPACE] > dk(128) $H2
+'+128' + '+' > dk(128)
+
+c pr
+'pr' + ' ' > dk(129) $O1
+'pr' + [SHIFT K_SPACE] > dk(129) $O1
+'+129' + '+' > dk(129)
+
+c pt
+'pt' + ' ' > dk(130) $N1
+'pt' + [SHIFT K_SPACE] > dk(130) $N1
+'+130' + '+' > dk(130)
+
+c qA
+'q' $A + ' ' > dk(131) $A28
+'q' $A + [SHIFT K_SPACE] > dk(131) $A28
+'+131' + '+' > dk(131)
+
+c qd
+'qd' + ' ' > dk(132) $Aa28
+'qd' + [SHIFT K_SPACE] > dk(132) $Aa29
+'+132' + '+' > dk(132)
+c ->
+dk(132) $Aa28 + ' ' > dk(132) $A35
+dk(132) $A35 + ' ' > dk(132) $Aa29
+dk(132) $Aa29 + ' ' > dk(132) $Aa28
+c <-
+dk(132) $Aa29 + [SHIFT K_SPACE] > dk(132) $A35
+dk(132) $A35 + [SHIFT K_SPACE] > dk(132) $Aa28
+dk(132) $Aa28 + [SHIFT K_SPACE] > dk(132) $Aa29
+
+c qi
+'qi' + ' ' > dk(133) $A53
+'qi' + [SHIFT K_SPACE] > dk(133) $A53
+'+133' + '+' > dk(133)
+
+c qn
+'qn' + ' ' > dk(134) $Aa8
+'qn' + [SHIFT K_SPACE] > dk(134) $Aa8
+'+134' + '+' > dk(134)
+
+c qs
+'qs' + ' ' > dk(135) $T19
+'qs' + [SHIFT K_SPACE] > dk(135) $T20
+'+135' + '+' > dk(135)
+c ->
+dk(135) $T19 + ' ' > dk(135) $T20
+dk(135) $T20 + ' ' > dk(135) $T19
+c <-
+dk(135) $T20 + [SHIFT K_SPACE] > dk(135) $T19
+dk(135) $T19 + [SHIFT K_SPACE] > dk(135) $T20
+
+c rA
+'r' $A + ' ' > dk(136) $D21
+'r' $A + [SHIFT K_SPACE] > dk(136) $D21
+'+136' + '+' > dk(136)
+
+c ra
+'r' $a + ' ' > dk(137) $N5
+'r' $a + [SHIFT K_SPACE] > dk(137) $N6
+'+137' + '+' > dk(137)
+c ->
+dk(137) $N5 + ' ' > dk(137) $C1
+dk(137) $C1 + ' ' > dk(137) $C2
+dk(137) $C2 + ' ' > dk(137) $G9
+dk(137) $G9 + ' ' > dk(137) $N6
+dk(137) $N6 + ' ' > dk(137) $N5
+c <-
+dk(137) $N6 + [SHIFT K_SPACE] > dk(137) $G9
+dk(137) $G9 + [SHIFT K_SPACE] > dk(137) $C2
+dk(137) $C2 + [SHIFT K_SPACE] > dk(137) $C1
+dk(137) $C1 + [SHIFT K_SPACE] > dk(137) $N5
+dk(137) $N5 + [SHIFT K_SPACE] > dk(137) $N6
+
+c rd
+'rd' + ' ' > dk(138) $D56
+'rd' + [SHIFT K_SPACE] > dk(138) $M32
+'+138' + '+' > dk(138)
+c ->
+dk(138) $D56 + ' ' > dk(138) $M31
+dk(138) $M31 + ' ' > dk(138) $M32
+dk(138) $M32 + ' ' > dk(138) $D56
+c <-
+dk(138) $M32 + [SHIFT K_SPACE] > dk(138) $M31
+dk(138) $M31 + [SHIFT K_SPACE] > dk(138) $D56
+dk(138) $D56 + [SHIFT K_SPACE] > dk(138) $M32
+
+c rs
+'rs' + ' ' > dk(139) $T13
+'rs' + [SHIFT K_SPACE] > dk(139) $U40
+'+139' + '+' > dk(139)
+c ->
+dk(139) $T13 + ' ' > dk(139) $M24
+dk(139) $M24 + ' ' > dk(139) $M25
+dk(139) $M25 + ' ' > dk(139) $U40
+dk(139) $U40 + ' ' > dk(139) $T13
+c <-
+dk(139) $U40 + [SHIFT K_SPACE] > dk(139) $M25
+dk(139) $M25 + [SHIFT K_SPACE] > dk(139) $M24
+dk(139) $M24 + [SHIFT K_SPACE] > dk(139) $T13
+dk(139) $T13 + [SHIFT K_SPACE] > dk(139) $U40
+
+c rw
+'rw' + ' ' > dk(140) $E23
+'rw' + [SHIFT K_SPACE] > dk(140) $E23
+'+140' + '+' > dk(140)
+
+c sA
+'s' $A + ' ' > dk(141) $Aa17
+'s' $A + [SHIFT K_SPACE] > dk(141) $V18
+'+141' + '+' > dk(141)
+c ->
+dk(141) $Aa17 + ' ' > dk(141) $Aa18
+dk(141) $Aa18 + ' ' > dk(141) $G39
+dk(141) $G39 + ' ' > dk(141) $H8
+dk(141) $H8 + ' ' > dk(141) $V16
+dk(141) $V16 + ' ' > dk(141) $V17
+dk(141) $V17 + ' ' > dk(141) $V18
+dk(141) $V18 + ' ' > dk(141) $Aa17
+c <-
+dk(141) $V18 + [SHIFT K_SPACE] > dk(141) $V17
+dk(141) $V17 + [SHIFT K_SPACE] > dk(141) $V16
+dk(141) $V16 + [SHIFT K_SPACE] > dk(141) $H8
+dk(141) $H8 + [SHIFT K_SPACE] > dk(141) $G39
+dk(141) $G39 + [SHIFT K_SPACE] > dk(141) $Aa18
+dk(141) $Aa18 + [SHIFT K_SPACE] > dk(141) $Aa17
+dk(141) $Aa17 + [SHIFT K_SPACE] > dk(141) $V18
+
+c sS
+'s' $S + ' ' > dk(142) $V6
+'s' $S + [SHIFT K_SPACE] > dk(142) $V6
+'+142' + '+' > dk(142)
+
+c sT
+'s' $T + ' ' > dk(143) $S22
+'s' $T + [SHIFT K_SPACE] > dk(143) $F29
+'+143' + '+' > dk(143)
+c ->
+dk(143) $S22 + ' ' > dk(143) $F29
+dk(143) $F29 + ' ' > dk(143) $S22
+c <-
+dk(143) $F29 + [SHIFT K_SPACE] > dk(143) $S22
+dk(143) $S22 + [SHIFT K_SPACE] > dk(143) $F29
+
+c sd
+'sd' + ' ' > dk(144) $F33
+'sd' + [SHIFT K_SPACE] > dk(144) $F33
+'+144' + '+' > dk(144)
+
+c sf
+'sf' + ' ' > dk(145) $S30
+'sf' + [SHIFT K_SPACE] > dk(145) $S30
+'+145' + '+' > dk(145)
+
+c sk
+'sk' + ' ' > dk(146) $V29
+'sk' + [SHIFT K_SPACE] > dk(146) $V29
+'+146' + '+' > dk(146)
+
+c sm
+'sm' + ' ' > dk(147) $M21
+'sm' + [SHIFT K_SPACE] > dk(147) $D35
+'+147' + '+' > dk(147)
+c ->
+dk(147) $M21 + ' ' > dk(147) $R22
+dk(147) $R22 + ' ' > dk(147) $R23
+dk(147) $R23 + ' ' > dk(147) $D35
+dk(147) $D35 + ' ' > dk(147) $M21
+c <-
+dk(147) $D35 + [SHIFT K_SPACE] > dk(147) $R23
+dk(147) $R23 + [SHIFT K_SPACE] > dk(147) $R22
+dk(147) $R22 + [SHIFT K_SPACE] > dk(147) $M21
+dk(147) $M21 + [SHIFT K_SPACE] > dk(147) $D35
+
+c sn
+'sn' + ' ' > dk(148) $T22
+'sn' + [SHIFT K_SPACE] > dk(148) $X5
+'+148' + '+' > dk(148)
+c ->
+dk(148) $T22 + ' ' > dk(148) $N37
+dk(148) $N37 + ' ' > dk(148) $N38
+dk(148) $N38 + ' ' > dk(148) $N39
+dk(148) $N39 + ' ' > dk(148) $T23
+dk(148) $T23 + ' ' > dk(148) $X4
+dk(148) $X4 + ' ' > dk(148) $X5
+dk(148) $X5 + ' ' > dk(148) $T22
+c <-
+dk(148) $X5 + [SHIFT K_SPACE] > dk(148) $X4
+dk(148) $X4 + [SHIFT K_SPACE] > dk(148) $T23
+dk(148) $T23 + [SHIFT K_SPACE] > dk(148) $N39
+dk(148) $N39 + [SHIFT K_SPACE] > dk(148) $N38
+dk(148) $N38 + [SHIFT K_SPACE] > dk(148) $N37
+dk(148) $N37 + [SHIFT K_SPACE] > dk(148) $T22
+dk(148) $T22 + [SHIFT K_SPACE] > dk(148) $X5
+
+c sr
+'sr' + ' ' > dk(149) $A21
+'sr' + [SHIFT K_SPACE] > dk(149) $E27
+'+149' + '+' > dk(149)
+c ->
+dk(149) $A21 + ' ' > dk(149) $E27
+dk(149) $E27 + ' ' > dk(149) $A21
+c <-
+dk(149) $E27 + [SHIFT K_SPACE] > dk(149) $A21
+dk(149) $A21 + [SHIFT K_SPACE] > dk(149) $E27
+
+c st
+'st' + ' ' > dk(150) $Q1
+'st' + [SHIFT K_SPACE] > dk(150) $S22
+'+150' + '+' > dk(150)
+c ->
+dk(150) $Q1 + ' ' > dk(150) $B1
+dk(150) $B1 + ' ' > dk(150) $F29
+dk(150) $F29 + ' ' > dk(150) $Q2
+dk(150) $Q2 + ' ' > dk(150) $S22
+dk(150) $S22 + ' ' > dk(150) $Q1
+c <-
+dk(150) $S22 + [SHIFT K_SPACE] > dk(150) $Q2
+dk(150) $Q2 + [SHIFT K_SPACE] > dk(150) $F29
+dk(150) $F29 + [SHIFT K_SPACE] > dk(150) $B1
+dk(150) $B1 + [SHIFT K_SPACE] > dk(150) $Q1
+dk(150) $Q1 + [SHIFT K_SPACE] > dk(150) $S22
+
+c sw
+'sw' + ' ' > dk(151) $M23
+'sw' + [SHIFT K_SPACE] > dk(151) $N5
+'+151' + '+' > dk(151)
+c ->
+dk(151) $M23 + ' ' > dk(151) $N5
+dk(151) $N5 + ' ' > dk(151) $M23
+c <-
+dk(151) $N5 + [SHIFT K_SPACE] > dk(151) $M23
+dk(151) $M23 + [SHIFT K_SPACE] > dk(151) $N5
+
+c tA
+'t' $A + ' ' > dk(152) $N16
+'t' $A + [SHIFT K_SPACE] > dk(152) $U30
+'+152' + '+' > dk(152)
+c ->
+dk(152) $N16 + ' ' > dk(152) $N17
+dk(152) $N17 + ' ' > dk(152) $N23
+dk(152) $N23 + ' ' > dk(152) $O16
+dk(152) $O16 + ' ' > dk(152) $O17
+dk(152) $O17 + ' ' > dk(152) $Q7
+dk(152) $Q7 + ' ' > dk(152) $U30
+dk(152) $U30 + ' ' > dk(152) $N16
+c <-
+dk(152) $U30 + [SHIFT K_SPACE] > dk(152) $Q7
+dk(152) $Q7 + [SHIFT K_SPACE] > dk(152) $O17
+dk(152) $O17 + [SHIFT K_SPACE] > dk(152) $O16
+dk(152) $O16 + [SHIFT K_SPACE] > dk(152) $N23
+dk(152) $N23 + [SHIFT K_SPACE] > dk(152) $N17
+dk(152) $N17 + [SHIFT K_SPACE] > dk(152) $N16
+dk(152) $N16 + [SHIFT K_SPACE] > dk(152) $U30
+
+c ti
+'ti' + ' ' > dk(153) $U33
+'ti' + [SHIFT K_SPACE] > dk(153) $M6
+'+153' + '+' > dk(153)
+c ->
+dk(153) $U33 + ' ' > dk(153) $M5
+dk(153) $M5 + ' ' > dk(153) $M6
+dk(153) $M6 + ' ' > dk(153) $U33
+c <-
+dk(153) $M6 + [SHIFT K_SPACE] > dk(153) $M5
+dk(153) $M5 + [SHIFT K_SPACE] > dk(153) $U33
+dk(153) $U33 + [SHIFT K_SPACE] > dk(153) $M6
+
+c tm
+'tm' + ' ' > dk(154) $U15
+'tm' + [SHIFT K_SPACE] > dk(154) $O38
+'+154' + '+' > dk(154)
+c ->
+dk(154) $U15 + ' ' > dk(154) $O38
+dk(154) $O38 + ' ' > dk(154) $U15
+c <-
+dk(154) $O38 + [SHIFT K_SPACE] > dk(154) $U15
+dk(154) $U15 + [SHIFT K_SPACE] > dk(154) $O38
+
+c tp
+'tp' + ' ' > dk(155) $D1
+'tp' + [SHIFT K_SPACE] > dk(155) $T8
+'+155' + '+' > dk(155)
+c ->
+dk(155) $D1 + ' ' > dk(155) $T8A
+dk(155) $T8A + ' ' > dk(155) $T8
+dk(155) $T8 + ' ' > dk(155) $D1
+c <-
+dk(155) $T8 + [SHIFT K_SPACE] > dk(155) $T8A
+dk(155) $T8A + [SHIFT K_SPACE] > dk(155) $D1
+dk(155) $D1 + [SHIFT K_SPACE] > dk(155) $T8
+
+c tr
+'tr' + ' ' > dk(156) $M6
+'tr' + [SHIFT K_SPACE] > dk(156) $M5
+'+156' + '+' > dk(156)
+c ->
+dk(156) $M6 + ' ' > dk(156) $A30
+dk(156) $A30 + ' ' > dk(156) $M4
+dk(156) $M4 + ' ' > dk(156) $M5
+dk(156) $M5 + ' ' > dk(156) $M6
+c <-
+dk(156) $M5 + [SHIFT K_SPACE] > dk(156) $M4
+dk(156) $M4 + [SHIFT K_SPACE] > dk(156) $A30
+dk(156) $A30 + [SHIFT K_SPACE] > dk(156) $M6
+dk(156) $M6 + [SHIFT K_SPACE] > dk(156) $M5
+
+c wA
+'w' $A + ' ' > dk(157) $V4
+'w' $A + [SHIFT K_SPACE] > dk(157) $V4
+'+157' + '+' > dk(157)
+
+c wD
+'w' $D + ' ' > dk(158) $V24
+'w' $D + [SHIFT K_SPACE] > dk(158) $V25
+'+158' + '+' > dk(158)
+c ->
+dk(158) $V24 + ' ' > dk(158) $O26
+dk(158) $O26 + ' ' > dk(158) $V25
+dk(158) $V25 + ' ' > dk(158) $V24
+c <-
+dk(158) $V25 + [SHIFT K_SPACE] > dk(158) $O26
+dk(158) $O26 + [SHIFT K_SPACE] > dk(158) $V24
+dk(158) $V24 + [SHIFT K_SPACE] > dk(158) $V25
+
+c wS
+'w' $S + ' ' > dk(159) $D3
+'w' $S + [SHIFT K_SPACE] > dk(159) $D3
+'+159' + '+' > dk(159)
+
+c wa
+'w' $a + ' ' > dk(160) $T21
+'w' $a + [SHIFT K_SPACE] > dk(160) $N31
+'+160' + '+' > dk(160)
+c ->
+dk(160) $T21 + ' ' > dk(160) $G45
+dk(160) $G45 + ' ' > dk(160) $N31
+dk(160) $N31 + ' ' > dk(160) $T21
+c <-
+dk(160) $N31 + [SHIFT K_SPACE] > dk(160) $G45
+dk(160) $G45 + [SHIFT K_SPACE] > dk(160) $T21
+dk(160) $T21 + [SHIFT K_SPACE] > dk(160) $N31
+
+c wi
+'wi' + ' ' > dk(161) $A53
+'wi' + [SHIFT K_SPACE] > dk(161) $A53
+'+161' + '+' > dk(161)
+
+c wn
+'wn' + ' ' > dk(162) $E34
+'wn' + [SHIFT K_SPACE] > dk(162) $O31
+'+162' + '+' > dk(162)
+c ->
+dk(162) $E34 + ' ' > dk(162) $M42
+dk(162) $M42 + ' ' > dk(162) $O31
+dk(162) $O31 + ' ' > dk(162) $E34
+c <-
+dk(162) $O31 + [SHIFT K_SPACE] > dk(162) $M42
+dk(162) $M42 + [SHIFT K_SPACE] > dk(162) $E34
+dk(162) $E34 + [SHIFT K_SPACE] > dk(162) $O31
+
+c wp
+'wp' + ' ' > dk(163) $F13
+'wp' + [SHIFT K_SPACE] > dk(163) $Z9
+'+163' + '+' > dk(163)
+c ->
+dk(163) $F13 + ' ' > dk(163) $Z10
+dk(163) $Z10 + ' ' > dk(163) $Z9
+dk(163) $Z9 + ' ' > dk(163) $F13
+c <-
+dk(163) $Z9 + [SHIFT K_SPACE] > dk(163) $Z10
+dk(163) $Z10 + [SHIFT K_SPACE] > dk(163) $F13
+dk(163) $F13 + [SHIFT K_SPACE] > dk(163) $Z9
+
+c wr
+'wr' + ' ' > dk(164) $G36
+'wr' + [SHIFT K_SPACE] > dk(164) $Z9
+'+164' + '+' > dk(164)
+c ->
+dk(164) $G36 + ' ' > dk(164) $A19
+dk(164) $A19 + ' ' > dk(164) $Z10
+dk(164) $Z10 + ' ' > dk(164) $Z9
+dk(164) $Z9 + ' ' > dk(164) $G36
+c <-
+dk(164) $Z9 + [SHIFT K_SPACE] > dk(164) $Z10
+dk(164) $Z10 + [SHIFT K_SPACE] > dk(164) $A19
+dk(164) $A19 + [SHIFT K_SPACE] > dk(164) $G36
+dk(164) $G36 + [SHIFT K_SPACE] > dk(164) $Z9
+
+c ww
+'ww' + ' ' > dk(165) $G44
+'ww' + [SHIFT K_SPACE] > dk(165) $G44
+'+165' + '+' > dk(165)
+
+c wx
+'w' $x + ' ' > dk(166) $R16
+'w' $x + [SHIFT K_SPACE] > dk(166) $R16
+'+166' + '+' > dk(166)
+
+c wz
+'wz' + ' ' > dk(167) $Q2
+'wz' + [SHIFT K_SPACE] > dk(167) $Q1
+'+167' + '+' > dk(167)
+c ->
+dk(167) $Q2 + ' ' > dk(167) $Q1
+dk(167) $Q1 + ' ' > dk(167) $Q2
+c <-
+dk(167) $Q1 + [SHIFT K_SPACE] > dk(167) $Q2
+dk(167) $Q2 + [SHIFT K_SPACE] > dk(167) $Q1
+
+c xA
+$x $A + ' ' > dk(168) $M12
+$x $A + [SHIFT K_SPACE] > dk(168) $L6
+'+168' + '+' > dk(168)
+c ->
+dk(168) $M12 + ' ' > dk(168) $L6
+dk(168) $L6 + ' ' > dk(168) $M12
+c <-
+dk(168) $L6 + [SHIFT K_SPACE] > dk(168) $M12
+dk(168) $M12 + [SHIFT K_SPACE] > dk(168) $L6
+
+c xa
+$x $a + ' ' > dk(169) $N28
+$x $a + [SHIFT K_SPACE] > dk(169) $N28
+'+169' + '+' > dk(169)
+
+c xm
+$x 'm' + ' ' > dk(170) $R22
+$x 'm' + [SHIFT K_SPACE] > dk(170) $D35
+'+170' + '+' > dk(170)
+c ->
+dk(170) $R22 + ' ' > dk(170) $D35
+dk(170) $D35 + ' ' > dk(170) $R22
+c <-
+dk(170) $D35 + [SHIFT K_SPACE] > dk(170) $R22
+dk(170) $R22 + [SHIFT K_SPACE] > dk(170) $D35
+
+c xn
+$x 'n' + ' ' > dk(171) $G41
+$x 'n' + [SHIFT K_SPACE] > dk(171) $G41
+'+171' + '+' > dk(171)
+
+c xr
+$x 'r' + ' ' > dk(172) $A15
+$x 'r' + [SHIFT K_SPACE] > dk(172) $A15
+'+172' + '+' > dk(172)
+
+c xt
+$x 't' + ' ' > dk(173) $M3
+$x 't' + [SHIFT K_SPACE] > dk(173) $Q7
+'+173' + '+' > dk(173)
+c ->
+dk(173) $M3 + ' ' > dk(173) $Q7
+dk(173) $Q7 + ' ' > dk(173) $M3
+c <-
+dk(173) $Q7 + [SHIFT K_SPACE] > dk(173) $M3
+dk(173) $M3 + [SHIFT K_SPACE] > dk(173) $Q7
+
+c xw
+$x 'w' + ' ' > dk(174) $S37
+$x 'w' + [SHIFT K_SPACE] > dk(174) $D43
+'+174' + '+' > dk(174)
+c ->
+dk(174) $S37 + ' ' > dk(174) $D43
+dk(174) $D43 + ' ' > dk(174) $S37
+c <-
+dk(174) $D43 + [SHIFT K_SPACE] > dk(174) $S37
+dk(174) $S37 + [SHIFT K_SPACE] > dk(174) $D43
+
+c zA
+'z' $A + ' ' > dk(175) $G39
+'z' $A + [SHIFT K_SPACE] > dk(175) $Aa18
+'+175' + '+' > dk(175)
+c ->
+dk(175) $G39 + ' ' > dk(175) $Aa17
+dk(175) $Aa17 + ' ' > dk(175) $Aa18
+dk(175) $Aa18 + ' ' > dk(175) $G39
+c <-
+dk(175) $Aa18 + [SHIFT K_SPACE] > dk(175) $Aa17
+dk(175) $Aa17 + [SHIFT K_SPACE] > dk(175) $G39
+dk(175) $G39 + [SHIFT K_SPACE] > dk(175) $Aa18
+
+c zH
+'z' $H + ' ' > dk(176) $O22
+'z' $H + [SHIFT K_SPACE] > dk(176) $O21
+'+176' + '+' > dk(176)
+c ->
+dk(176) $O22 + ' ' > dk(176) $O21
+dk(176) $O21 + ' ' > dk(176) $O22
+c <-
+dk(176) $O21 + [SHIFT K_SPACE] > dk(176) $O22
+dk(176) $O22 + [SHIFT K_SPACE] > dk(176) $O21
+
+c zS
+'z' $S + ' ' > dk(177) $Y3
+'z' $S + [SHIFT K_SPACE] > dk(177) $Y4
+'+177' + '+' > dk(177)
+c ->
+dk(177) $Y3 + ' ' > dk(177) $Y4
+dk(177) $Y4 + ' ' > dk(177) $Y3
+c <-
+dk(177) $Y4 + [SHIFT K_SPACE] > dk(177) $Y3
+dk(177) $Y3 + [SHIFT K_SPACE] > dk(177) $Y4
+
+c zb
+'zb' + ' ' > dk(178) $O35
+'zb' + [SHIFT K_SPACE] > dk(178) $O35
+'+178' + '+' > dk(178)
+
+c zp
+'zp' + ' ' > dk(179) $O50
+'zp' + [SHIFT K_SPACE] > dk(179) $O50
+'+179' + '+' > dk(179)
+
+c zw
+'zw' + ' ' > dk(180) $N5
+'zw' + [SHIFT K_SPACE] > dk(180) $N5
+'+180' + '+' > dk(180)
+
+c 100
+'100' + ' ' > dk(181) $V1
+'100' + [SHIFT K_SPACE] > dk(181) $V1
+'+181' + '+' > dk(181)
+
+c ATp
+$A $T 'p' + ' ' > dk(182) $A9
+$A $T 'p' + [SHIFT K_SPACE] > dk(182) $A9
+'+182' + '+' > dk(182)
+
+c Abd
+$A 'bd' + ' ' > dk(183) $N11
+$A 'bd' + [SHIFT K_SPACE] > dk(183) $N11
+'+183' + '+' > dk(183)
+
+c Aby
+$A 'by' + ' ' > dk(184) $E24
+$A 'by' + [SHIFT K_SPACE] > dk(184) $E24
+'+184' + '+' > dk(184)
+
+c Amm
+$A 'mm' + ' ' > dk(185) $D49
+$A 'mm' + [SHIFT K_SPACE] > dk(185) $D49
+'+185' + '+' > dk(185)
+
+c Ams
+$A 'ms' + ' ' > dk(186) $S44
+$A 'ms' + [SHIFT K_SPACE] > dk(186) $E5
+'+186' + '+' > dk(186)
+c ->
+dk(186) $S44 + ' ' > dk(186) $E5
+dk(186) $E5 + ' ' > dk(186) $S44
+c <-
+dk(186) $E5 + [SHIFT K_SPACE] > dk(186) $S44
+dk(186) $S44 + [SHIFT K_SPACE] > dk(186) $E5
+
+c Atf
+$A 'tf' + ' ' > dk(187) $S8
+$A 'tf' + [SHIFT K_SPACE] > dk(187) $S8
+'+187' + '+' > dk(187)
+
+c Atp
+$A 'tp' + ' ' > dk(188) $A9
+$A 'tp' + [SHIFT K_SPACE] > dk(188) $A9
+'+188' + '+' > dk(188)
+
+c Axt
+$A $x 't' + ' ' > dk(189) $N27
+$A $x 't' + [SHIFT K_SPACE] > dk(189) $M8
+'+189' + '+' > dk(189)
+c ->
+dk(189) $N27 + ' ' > dk(189) $M8
+dk(189) $M8 + ' ' > dk(189) $N27
+c <-
+dk(189) $M8 + [SHIFT K_SPACE] > dk(189) $N27
+dk(189) $N27 + [SHIFT K_SPACE] > dk(189) $M8
+
+c Dam
+$D $a 'm' + ' ' > dk(190) $S41
+$D $a 'm' + [SHIFT K_SPACE] > dk(190) $S40
+'+190' + '+' > dk(190)
+c ->
+dk(190) $S41 + ' ' > dk(190) $S14A
+dk(190) $S14A + ' ' > dk(190) $S40
+dk(190) $S40 + ' ' > dk(190) $S41
+c <-
+dk(190) $S40 + [SHIFT K_SPACE] > dk(190) $S14A
+dk(190) $S14A + [SHIFT K_SPACE] > dk(190) $S41
+dk(190) $S41 + [SHIFT K_SPACE] > dk(190) $S40
+
+c DbA
+$D 'b' $A + ' ' > dk(191) $T25
+$D 'b' $A + [SHIFT K_SPACE] > dk(191) $T25
+'+191' + '+' > dk(191)
+
+c Dba
+$D 'b' $a + ' ' > dk(192) $D50
+$D 'b' $a + [SHIFT K_SPACE] > dk(192) $D50
+'+192' + '+' > dk(192)
+
+c DfD
+$D 'f' $D + ' ' > dk(193) $D12
+$D 'f' $D + [SHIFT K_SPACE] > dk(193) $D12
+'+193' + '+' > dk(193)
+
+c DrD
+$D 'r' $D + ' ' > dk(194) $F21
+$D 'r' $D + [SHIFT K_SPACE] > dk(194) $F21
+'+194' + '+' > dk(194)
+
+c Drt
+$D 'rt' + ' ' > dk(195) $D46
+$D 'rt' + [SHIFT K_SPACE] > dk(195) $D47
+'+195' + '+' > dk(195)
+c ->
+dk(195) $D46 + ' ' > dk(195) $D47
+dk(195) $D47 + ' ' > dk(195) $D46
+c <-
+dk(195) $D47 + [SHIFT K_SPACE] > dk(195) $D46
+dk(195) $D46 + [SHIFT K_SPACE] > dk(195) $D47
+
+c Dsr
+$D 'sr' + ' ' > dk(196) $D45
+$D 'sr' + [SHIFT K_SPACE] > dk(196) $D45
+'+196' + '+' > dk(196)
+
+c HAi
+$H $A 'i' + ' ' > dk(197) $A28
+$H $A 'i' + [SHIFT K_SPACE] > dk(197) $A28
+'+197' + '+' > dk(197)
+
+c HAt
+$H $A 't' + ' ' > dk(198) $F4
+$H $A 't' + [SHIFT K_SPACE] > dk(198) $F4
+'+198' + '+' > dk(198)
+
+c HDD
+$H $D $D + ' ' > dk(199) $T6
+$H $D $D + [SHIFT K_SPACE] > dk(199) $T6
+'+199' + '+' > dk(199)
+
+c HDt
+$H $D 't' + ' ' > dk(200) $S1
+$H $D 't' + [SHIFT K_SPACE] > dk(200) $S2
+'+200' + '+' > dk(200)
+c ->
+dk(200) $S1 + ' ' > dk(200) $S2
+dk(200) $S2 + ' ' > dk(200) $S1
+c <-
+dk(200) $S2 + [SHIFT K_SPACE] > dk(200) $S1
+dk(200) $S1 + [SHIFT K_SPACE] > dk(200) $S2
+
+c Hai
+$H $a 'i' + ' ' > dk(201) $A28
+$H $a 'i' + [SHIFT K_SPACE] > dk(201) $A28
+'+201' + '+' > dk(201)
+
+c Hfn
+$H 'fn' + ' ' > dk(202) $I8
+$H 'fn' + [SHIFT K_SPACE] > dk(202) $I8
+'+202' + '+' > dk(202)
+
+c Hms
+$H 'ms' + ' ' > dk(203) $A3
+$H 'ms' + [SHIFT K_SPACE] > dk(203) $A17A
+'+203' + '+' > dk(203)
+c ->
+dk(203) $A3 + ' ' > dk(203) $A17A
+dk(203) $A17A + ' ' > dk(203) $A3
+c <-
+dk(203) $A17A + [SHIFT K_SPACE] > dk(203) $A3
+dk(203) $A3 + [SHIFT K_SPACE] > dk(203) $A17A
+
+c Hmt
+$H 'mt' + ' ' > dk(204) $U24
+$H 'mt' + [SHIFT K_SPACE] > dk(204) $N34
+'+204' + '+' > dk(204)
+c ->
+dk(204) $U24 + ' ' > dk(204) $N34
+dk(204) $N34 + ' ' > dk(204) $U24
+c <-
+dk(204) $N34 + [SHIFT K_SPACE] > dk(204) $U24
+dk(204) $U24 + [SHIFT K_SPACE] > dk(204) $N34
+
+c Hnk
+$H 'nk' + ' ' > dk(205) $D39
+$H 'nk' + [SHIFT K_SPACE] > dk(205) $D39
+'+205' + '+' > dk(205)
+
+c Hpt
+$H 'pt' + ' ' > dk(206) $D32
+$H 'pt' + [SHIFT K_SPACE] > dk(206) $D32
+'+206' + '+' > dk(206)
+
+c HqA
+$H 'q' $A + ' ' > dk(207) $S38
+$H 'q' $A + [SHIFT K_SPACE] > dk(207) $S38
+'+207' + '+' > dk(207)
+
+c Htp
+$H 'tp' + ' ' > dk(208) $R4
+$H 'tp' + [SHIFT K_SPACE] > dk(208) $R4
+'+208' + '+' > dk(208)
+
+c Hwi
+$H 'wi' + ' ' > dk(209) $A24
+$H 'wi' + [SHIFT K_SPACE] > dk(209) $A25
+'+209' + '+' > dk(209)
+c ->
+dk(209) $A24 + ' ' > dk(209) $A25
+dk(209) $A25 + ' ' > dk(209) $A24
+c <-
+dk(209) $A25 + [SHIFT K_SPACE] > dk(209) $A24
+dk(209) $A24 + [SHIFT K_SPACE] > dk(209) $A25
+
+c Hwt
+$H 'wt' + ' ' > dk(210) $O6
+$H 'wt' + [SHIFT K_SPACE] > dk(210) $O7
+'+210' + '+' > dk(210)
+c ->
+dk(210) $O6 + ' ' > dk(210) $O7
+dk(210) $O7 + ' ' > dk(210) $O6
+c <-
+dk(210) $O7 + [SHIFT K_SPACE] > dk(210) $O6
+dk(210) $O6 + [SHIFT K_SPACE] > dk(210) $O7
+
+c Sma
+$S 'm' $a + ' ' > dk(211) $M26
+$S 'm' $a + [SHIFT K_SPACE] > dk(211) $M26
+'+211' + '+' > dk(211)
+
+c Sms
+$S 'ms' + ' ' > dk(212) $T18
+$S 'ms' + [SHIFT K_SPACE] > dk(212) $T18
+'+212' + '+' > dk(212)
+
+c Sna
+$S 'n' $a + ' ' > dk(213) $U13
+$S 'n' $a + [SHIFT K_SPACE] > dk(213) $U14
+'+213' + '+' > dk(213)
+c ->
+dk(213) $U13 + ' ' > dk(213) $U14
+dk(213) $U14 + ' ' > dk(213) $U13
+c <-
+dk(213) $U14 + [SHIFT K_SPACE] > dk(213) $U13
+dk(213) $U13 + [SHIFT K_SPACE] > dk(213) $U14
+
+c Sni
+$S 'ni' + ' ' > dk(214) $D3
+$S 'ni' + [SHIFT K_SPACE] > dk(214) $D3
+'+214' + '+' > dk(214)
+
+c Snt
+$S 'nt' + ' ' > dk(215) $V1
+$S 'nt' + [SHIFT K_SPACE] > dk(215) $V1
+'+215' + '+' > dk(215)
+
+c Sny
+$S 'ny' + ' ' > dk(216) $D3
+$S 'ny' + [SHIFT K_SPACE] > dk(216) $D3
+'+216' + '+' > dk(216)
+
+c Sps
+$S 'ps' + ' ' > dk(217) $A50
+$S 'ps' + [SHIFT K_SPACE] > dk(217) $A52
+'+217' + '+' > dk(217)
+c ->
+dk(217) $A50 + ' ' > dk(217) $A51
+dk(217) $A51 + ' ' > dk(217) $A52
+dk(217) $A52 + ' ' > dk(217) $A50
+c <-
+dk(217) $A52 + [SHIFT K_SPACE] > dk(217) $A51
+dk(217) $A51 + [SHIFT K_SPACE] > dk(217) $A50
+dk(217) $A50 + [SHIFT K_SPACE] > dk(217) $A52
+
+c Sri
+$S 'ri' + ' ' > dk(218) $A17
+$S 'ri' + [SHIFT K_SPACE] > dk(218) $A17
+'+218' + '+' > dk(218)
+
+c SsA
+$S 's' $A + ' ' > dk(219) $F5
+$S 's' $A + [SHIFT K_SPACE] > dk(219) $F6
+'+219' + '+' > dk(219)
+c ->
+dk(219) $F5 + ' ' > dk(219) $F6
+dk(219) $F6 + ' ' > dk(219) $F5
+c <-
+dk(219) $F6 + [SHIFT K_SPACE] > dk(219) $F5
+dk(219) $F5 + [SHIFT K_SPACE] > dk(219) $F6
+
+c Ssp
+$S 'sp' + ' ' > dk(220) $D48
+$S 'sp' + [SHIFT K_SPACE] > dk(220) $O43
+'+220' + '+' > dk(220)
+c ->
+dk(220) $D48 + ' ' > dk(220) $N11
+dk(220) $N11 + ' ' > dk(220) $O42
+dk(220) $O42 + ' ' > dk(220) $O43
+dk(220) $O43 + ' ' > dk(220) $D48
+c <-
+dk(220) $O43 + [SHIFT K_SPACE] > dk(220) $O42
+dk(220) $O42 + [SHIFT K_SPACE] > dk(220) $N11
+dk(220) $N11 + [SHIFT K_SPACE] > dk(220) $D48
+dk(220) $D48 + [SHIFT K_SPACE] > dk(220) $O43
+
+c Swt
+$S 'wt' + ' ' > dk(221) $S35
+$S 'wt' + [SHIFT K_SPACE] > dk(221) $S35
+'+221' + '+' > dk(221)
+
+c Szp
+$S 'zp' + ' ' > dk(222) $O42
+$S 'zp' + [SHIFT K_SPACE] > dk(222) $O43
+'+222' + '+' > dk(222)
+c ->
+dk(222) $O42 + ' ' > dk(222) $O43
+dk(222) $O43 + ' ' > dk(222) $O42
+c <-
+dk(222) $O43 + [SHIFT K_SPACE] > dk(222) $O42
+dk(222) $O42 + [SHIFT K_SPACE] > dk(222) $O43
+
+c TAw
+$T $A 'w' + ' ' > dk(223) $P5
+$T $A 'w' + [SHIFT K_SPACE] > dk(223) $P5
+'+223' + '+' > dk(223)
+
+c THn
+$T $H 'n' + ' ' > dk(224) $S15
+$T $H 'n' + [SHIFT K_SPACE] > dk(224) $S17
+'+224' + '+' > dk(224)
+c ->
+dk(224) $S15 + ' ' > dk(224) $S16
+dk(224) $S16 + ' ' > dk(224) $S17
+dk(224) $S17 + ' ' > dk(224) $S15
+c <-
+dk(224) $S17 + [SHIFT K_SPACE] > dk(224) $S16
+dk(224) $S16 + [SHIFT K_SPACE] > dk(224) $S15
+dk(224) $S15 + [SHIFT K_SPACE] > dk(224) $S17
+
+c TmA
+$T 'm' $A + ' ' > dk(225) $V19
+$T 'm' $A + [SHIFT K_SPACE] > dk(225) $Aa6
+'+225' + '+' > dk(225)
+c ->
+dk(225) $V19 + ' ' > dk(225) $Aa6
+dk(225) $Aa6 + ' ' > dk(225) $V19
+c <-
+dk(225) $Aa6 + [SHIFT K_SPACE] > dk(225) $V19
+dk(225) $V19 + [SHIFT K_SPACE] > dk(225) $Aa6
+
+c XAr
+$X $A 'r' + ' ' > dk(226) $V19
+$X $A 'r' + [SHIFT K_SPACE] > dk(226) $V19
+'+226' + '+' > dk(226)
+
+c XAt
+$X $A 't' + ' ' > dk(227) $A55
+$X $A 't' + [SHIFT K_SPACE] > dk(227) $A55
+'+227' + '+' > dk(227)
+
+c Xkr
+$X 'kr' + ' ' > dk(228) $Aa30
+$X 'kr' + [SHIFT K_SPACE] > dk(228) $Aa31
+'+228' + '+' > dk(228)
+c ->
+dk(228) $Aa30 + ' ' > dk(228) $Aa31
+dk(228) $Aa31 + ' ' > dk(228) $Aa30
+c <-
+dk(228) $Aa31 + [SHIFT K_SPACE] > dk(228) $Aa30
+dk(228) $Aa30 + [SHIFT K_SPACE] > dk(228) $Aa31
+
+c Xni
+$X 'ni' + ' ' > dk(229) $D33
+$X 'ni' + [SHIFT K_SPACE] > dk(229) $D33
+'+229' + '+' > dk(229)
+
+c Xnm
+$X 'nm' + ' ' > dk(230) $W9
+$X 'nm' + [SHIFT K_SPACE] > dk(230) $W9
+'+230' + '+' > dk(230)
+
+c Xrd
+$X 'rd' + ' ' > dk(231) $A17
+$X 'rd' + [SHIFT K_SPACE] > dk(231) $A17
+'+231' + '+' > dk(231)
+
+c aHA
+$a $H $A + ' ' > dk(232) $D34
+$a $H $A + [SHIFT K_SPACE] > dk(232) $D34A
+'+232' + '+' > dk(232)
+c ->
+dk(232) $D34 + ' ' > dk(232) $D34A
+dk(232) $D34A + ' ' > dk(232) $D34
+c <-
+dk(232) $D34A + [SHIFT K_SPACE] > dk(232) $D34
+dk(232) $D34 + [SHIFT K_SPACE] > dk(232) $D34A
+
+c aHa
+$a $H $a + ' ' > dk(233) $P6
+$a $H $a + [SHIFT K_SPACE] > dk(233) $P7
+'+233' + '+' > dk(233)
+c ->
+dk(233) $P6 + ' ' > dk(233) $P7
+dk(233) $P7 + ' ' > dk(233) $P6
+c <-
+dk(233) $P7 + [SHIFT K_SPACE] > dk(233) $P6
+dk(233) $P6 + [SHIFT K_SPACE] > dk(233) $P7
+
+c aSA
+$a $S $A + ' ' > dk(234) $I1
+$a $S $A + [SHIFT K_SPACE] > dk(234) $I1
+'+234' + '+' > dk(234)
+
+c abA
+$a 'b' $A + ' ' > dk(235) $S42
+$a 'b' $A + [SHIFT K_SPACE] > dk(235) $S42
+'+235' + '+' > dk(235)
+
+c ann
+$a 'nn' + ' ' > dk(236) $D55
+$a 'nn' + [SHIFT K_SPACE] > dk(236) $D55
+'+236' + '+' > dk(236)
+
+c ant
+$a 'nt' + ' ' > dk(237) $D51
+$a 'nt' + [SHIFT K_SPACE] > dk(237) $D51
+'+237' + '+' > dk(237)
+
+c anw
+$a 'nw' + ' ' > dk(238) $A31
+$a 'nw' + [SHIFT K_SPACE] > dk(238) $D8
+'+238' + '+' > dk(238)
+c ->
+dk(238) $A31 + ' ' > dk(238) $A31
+dk(238) $A31 + ' ' > dk(238) $D8
+dk(238) $D8 + ' ' > dk(238) $D8
+dk(238) $D8 + ' ' > dk(238) $A31
+c <-
+dk(238) $D8 + [SHIFT K_SPACE] > dk(238) $D8
+dk(238) $D8 + [SHIFT K_SPACE] > dk(238) $A31
+dk(238) $A31 + [SHIFT K_SPACE] > dk(238) $A31
+dk(238) $A31 + [SHIFT K_SPACE] > dk(238) $D8
+
+c anx
+$a 'n' $x + ' ' > dk(239) $S34
+$a 'n' $x + [SHIFT K_SPACE] > dk(239) $F21
+'+239' + '+' > dk(239)
+c ->
+dk(239) $S34 + ' ' > dk(239) $F21
+dk(239) $F21 + ' ' > dk(239) $S34
+c <-
+dk(239) $F21 + [SHIFT K_SPACE] > dk(239) $S34
+dk(239) $S34 + [SHIFT K_SPACE] > dk(239) $F21
+
+c apr
+$a 'pr' + ' ' > dk(240) $Aa20
+$a 'pr' + [SHIFT K_SPACE] > dk(240) $Aa20
+'+240' + '+' > dk(240)
+
+c arq
+$a 'rq' + ' ' > dk(241) $V12
+$a 'rq' + [SHIFT K_SPACE] > dk(241) $V12
+'+241' + '+' > dk(241)
+
+c awt
+$a 'wt' + ' ' > dk(242) $S39
+$a 'wt' + [SHIFT K_SPACE] > dk(242) $S39
+'+242' + '+' > dk(242)
+
+c bAH
+'b' $A $H + ' ' > dk(243) $D53
+'b' $A $H + [SHIFT K_SPACE] > dk(243) $D53
+'+243' + '+' > dk(243)
+
+c bAs
+'b' $A 's' + ' ' > dk(244) $W2
+'b' $A 's' + [SHIFT K_SPACE] > dk(244) $W2
+'+244' + '+' > dk(244)
+
+c bHs
+'b' $H 's' + ' ' > dk(245) $E3
+'b' $H 's' + [SHIFT K_SPACE] > dk(245) $E3
+'+245' + '+' > dk(245)
+
+c bSi
+'b' $S 'i' + ' ' > dk(246) $D26
+'b' $S 'i' + [SHIFT K_SPACE] > dk(246) $D26
+'+246' + '+' > dk(246)
+
+c bdt
+'bdt' + ' ' > dk(247) $M34
+'bdt' + [SHIFT K_SPACE] > dk(247) $M34
+'+247' + '+' > dk(247)
+
+c biA
+'bi' $A + ' ' > dk(248) $U16
+'bi' $A + [SHIFT K_SPACE] > dk(248) $N41
+'+248' + '+' > dk(248)
+c ->
+dk(248) $U16 + ' ' > dk(248) $F18
+dk(248) $F18 + ' ' > dk(248) $N34
+dk(248) $N34 + ' ' > dk(248) $N41
+dk(248) $N41 + ' ' > dk(248) $U16
+c <-
+dk(248) $N41 + [SHIFT K_SPACE] > dk(248) $N34
+dk(248) $N34 + [SHIFT K_SPACE] > dk(248) $F18
+dk(248) $F18 + [SHIFT K_SPACE] > dk(248) $U16
+dk(248) $U16 + [SHIFT K_SPACE] > dk(248) $N41
+
+c bit
+'bit' + ' ' > dk(249) $L2
+'bit' + [SHIFT K_SPACE] > dk(249) $L2
+'+249' + '+' > dk(249)
+
+c bnr
+'bnr' + ' ' > dk(250) $M30
+'bnr' + [SHIFT K_SPACE] > dk(250) $M30
+'+250' + '+' > dk(250)
+
+c dSr
+'d' $S 'r' + ' ' > dk(251) $G27
+'d' $S 'r' + [SHIFT K_SPACE] > dk(251) $G27
+'+251' + '+' > dk(251)
+
+c dmD
+'dm' $D + ' ' > dk(252) $S23
+'dm' $D + [SHIFT K_SPACE] > dk(252) $Y2
+'+252' + '+' > dk(252)
+c ->
+dk(252) $S23 + ' ' > dk(252) $Y1
+dk(252) $Y1 + ' ' > dk(252) $Y2
+dk(252) $Y2 + ' ' > dk(252) $S23
+c <-
+dk(252) $Y2 + [SHIFT K_SPACE] > dk(252) $Y1
+dk(252) $Y1 + [SHIFT K_SPACE] > dk(252) $S23
+dk(252) $S23 + [SHIFT K_SPACE] > dk(252) $Y2
+
+c dqr
+'dqr' + ' ' > dk(253) $D51
+'dqr' + [SHIFT K_SPACE] > dk(253) $D51
+'+253' + '+' > dk(253)
+
+c dwA
+'dw' $A + ' ' > dk(254) $N14
+'dw' $A + [SHIFT K_SPACE] > dk(254) $A30
+'+254' + '+' > dk(254)
+c ->
+dk(254) $N14 + ' ' > dk(254) $A4
+dk(254) $A4 + ' ' > dk(254) $A30
+dk(254) $A30 + ' ' > dk(254) $N14
+c <-
+dk(254) $A30 + [SHIFT K_SPACE] > dk(254) $A4
+dk(254) $A4 + [SHIFT K_SPACE] > dk(254) $N14
+dk(254) $N14 + [SHIFT K_SPACE] > dk(254) $A30
+
+c fAi
+'f' $A 'i' + ' ' > dk(255) $A9
+'f' $A 'i' + [SHIFT K_SPACE] > dk(255) $A9
+'+255' + '+' > dk(255)
+
+c fnD
+'fn' $D + ' ' > dk(256) $D19
+'fn' $D + [SHIFT K_SPACE] > dk(256) $D20
+'+256' + '+' > dk(256)
+c ->
+dk(256) $D19 + ' ' > dk(256) $D20
+dk(256) $D20 + ' ' > dk(256) $D19
+c <-
+dk(256) $D20 + [SHIFT K_SPACE] > dk(256) $D19
+dk(256) $D19 + [SHIFT K_SPACE] > dk(256) $D20
+
+c fnd
+'fnd' + ' ' > dk(257) $D19
+'fnd' + [SHIFT K_SPACE] > dk(257) $D20
+'+257' + '+' > dk(257)
+c ->
+dk(257) $D19 + ' ' > dk(257) $D20
+dk(257) $D20 + ' ' > dk(257) $D19
+c <-
+dk(257) $D20 + [SHIFT K_SPACE] > dk(257) $D19
+dk(257) $D19 + [SHIFT K_SPACE] > dk(257) $D20
+
+c gHs
+'g' $H 's' + ' ' > dk(258) $D56
+'g' $H 's' + [SHIFT K_SPACE] > dk(258) $E29
+'+258' + '+' > dk(258)
+c ->
+dk(258) $D56 + ' ' > dk(258) $E29
+dk(258) $E29 + ' ' > dk(258) $D56
+c <-
+dk(258) $E29 + [SHIFT K_SPACE] > dk(258) $D56
+dk(258) $D56 + [SHIFT K_SPACE] > dk(258) $E29
+
+c gbA
+'gb' $A + ' ' > dk(259) $D41
+'gb' $A + [SHIFT K_SPACE] > dk(259) $D41
+'+259' + '+' > dk(259)
+
+c grg
+'grg' + ' ' > dk(260) $U17
+'grg' + [SHIFT K_SPACE] > dk(260) $U18
+'+260' + '+' > dk(260)
+c ->
+dk(260) $U17 + ' ' > dk(260) $U18
+dk(260) $U18 + ' ' > dk(260) $U17
+c <-
+dk(260) $U18 + [SHIFT K_SPACE] > dk(260) $U17
+dk(260) $U17 + [SHIFT K_SPACE] > dk(260) $U18
+
+c hnw
+'hnw' + ' ' > dk(261) $A8
+'hnw' + [SHIFT K_SPACE] > dk(261) $A8
+'+261' + '+' > dk(261)
+
+c hrw
+'hrw' + ' ' > dk(262) $N5
+'hrw' + [SHIFT K_SPACE] > dk(262) $N5
+'+262' + '+' > dk(262)
+
+c iAT
+'i' $A $T + ' ' > dk(263) $D57
+'i' $A $T + [SHIFT K_SPACE] > dk(263) $D57
+'+263' + '+' > dk(263)
+
+c iAb
+'i' $A 'b' + ' ' > dk(264) $R15
+'i' $A 'b' + [SHIFT K_SPACE] > dk(264) $R15
+'+264' + '+' > dk(264)
+
+c iAm
+'i' $A 'm' + ' ' > dk(265) $M1
+'i' $A 'm' + [SHIFT K_SPACE] > dk(265) $M1
+'+265' + '+' > dk(265)
+
+c iAs
+'i' $A 's' + ' ' > dk(266) $A28
+'i' $A 's' + [SHIFT K_SPACE] > dk(266) $A28
+'+266' + '+' > dk(266)
+
+c iAt
+'i' $A 't' + ' ' > dk(267) $N30
+'i' $A 't' + [SHIFT K_SPACE] > dk(267) $F37
+'+267' + '+' > dk(267)
+c ->
+dk(267) $N30 + ' ' > dk(267) $D57
+dk(267) $D57 + ' ' > dk(267) $F37
+dk(267) $F37 + ' ' > dk(267) $N30
+c <-
+dk(267) $F37 + [SHIFT K_SPACE] > dk(267) $D57
+dk(267) $D57 + [SHIFT K_SPACE] > dk(267) $N30
+dk(267) $N30 + [SHIFT K_SPACE] > dk(267) $F37
+
+c iAw
+'i' $A 'w' + ' ' > dk(268) $A19
+'i' $A 'w' + [SHIFT K_SPACE] > dk(268) $A30
+'+268' + '+' > dk(268)
+c ->
+dk(268) $A19 + ' ' > dk(268) $A30
+dk(268) $A30 + ' ' > dk(268) $A19
+c <-
+dk(268) $A30 + [SHIFT K_SPACE] > dk(268) $A19
+dk(268) $A19 + [SHIFT K_SPACE] > dk(268) $A30
+
+c iTi
+'i' $T 'i' + ' ' > dk(269) $V15
+'i' $T 'i' + [SHIFT K_SPACE] > dk(269) $V15
+'+269' + '+' > dk(269)
+
+c iaH
+'i' $a $H + ' ' > dk(270) $N11
+'i' $a $H + [SHIFT K_SPACE] > dk(270) $N12
+'+270' + '+' > dk(270)
+c ->
+dk(270) $N11 + ' ' > dk(270) $N12
+dk(270) $N12 + ' ' > dk(270) $N11
+c <-
+dk(270) $N12 + [SHIFT K_SPACE] > dk(270) $N11
+dk(270) $N11 + [SHIFT K_SPACE] > dk(270) $N12
+
+c iab
+'i' $a 'b' + ' ' > dk(271) $W10
+'i' $a 'b' + [SHIFT K_SPACE] > dk(271) $W10A
+'+271' + '+' > dk(271)
+c ->
+dk(271) $W10 + ' ' > dk(271) $Aa4
+dk(271) $Aa4 + ' ' > dk(271) $W10A
+dk(271) $W10A + ' ' > dk(271) $W10
+c <-
+dk(271) $W10A + [SHIFT K_SPACE] > dk(271) $Aa4
+dk(271) $Aa4 + [SHIFT K_SPACE] > dk(271) $W10
+dk(271) $W10 + [SHIFT K_SPACE] > dk(271) $W10A
+
+c ibA
+'ib' $A + ' ' > dk(272) $Y6
+'ib' $A + [SHIFT K_SPACE] > dk(272) $Y6
+'+272' + '+' > dk(272)
+
+c idn
+'idn' + ' ' > dk(273) $F21
+'idn' + [SHIFT K_SPACE] > dk(273) $F21
+'+273' + '+' > dk(273)
+
+c idr
+'idr' + ' ' > dk(274) $V37
+'idr' + [SHIFT K_SPACE] > dk(274) $V37
+'+274' + '+' > dk(274)
+
+c idt
+'idt' + ' ' > dk(275) $N4
+'idt' + [SHIFT K_SPACE] > dk(275) $N41
+'+275' + '+' > dk(275)
+c ->
+dk(275) $N4 + ' ' > dk(275) $D46A
+dk(275) $D46A + ' ' > dk(275) $F45
+dk(275) $F45 + ' ' > dk(275) $N41
+dk(275) $N41 + ' ' > dk(275) $N4
+c <-
+dk(275) $N41 + [SHIFT K_SPACE] > dk(275) $F45
+dk(275) $F45 + [SHIFT K_SPACE] > dk(275) $D46A
+dk(275) $D46A + [SHIFT K_SPACE] > dk(275) $N4
+dk(275) $N4 + [SHIFT K_SPACE] > dk(275) $N41
+
+c ikw
+'ikw' + ' ' > dk(276) $A19
+'ikw' + [SHIFT K_SPACE] > dk(276) $A19
+'+276' + '+' > dk(276)
+
+c imi
+'imi' + ' ' > dk(277) $Z11
+'imi' + [SHIFT K_SPACE] > dk(277) $D37
+'+277' + '+' > dk(277)
+c ->
+dk(277) $Z11 + ' ' > dk(277) $D37
+dk(277) $D37 + ' ' > dk(277) $Z11
+c <-
+dk(277) $D37 + [SHIFT K_SPACE] > dk(277) $Z11
+dk(277) $Z11 + [SHIFT K_SPACE] > dk(277) $D37
+
+c imn
+'imn' + ' ' > dk(278) $A4
+'imn' + [SHIFT K_SPACE] > dk(278) $C12
+'+278' + '+' > dk(278)
+c ->
+dk(278) $A4 + ' ' > dk(278) $A5
+dk(278) $A5 + ' ' > dk(278) $C12
+dk(278) $C12 + ' ' > dk(278) $A4
+c <-
+dk(278) $C12 + [SHIFT K_SPACE] > dk(278) $A5
+dk(278) $A5 + [SHIFT K_SPACE] > dk(278) $A4
+dk(278) $A4 + [SHIFT K_SPACE] > dk(278) $C12
+
+c inb
+'inb' + ' ' > dk(279) $O36
+'inb' + [SHIFT K_SPACE] > dk(279) $O36
+'+279' + '+' > dk(279)
+
+c ini
+'ini' + ' ' > dk(280) $W25
+'ini' + [SHIFT K_SPACE] > dk(280) $W25
+'+280' + '+' > dk(280)
+
+c inp
+'inp' + ' ' > dk(281) $A18
+'inp' + [SHIFT K_SPACE] > dk(281) $A18
+'+281' + '+' > dk(281)
+
+c ipt
+'ipt' + ' ' > dk(282) $O45
+'ipt' + [SHIFT K_SPACE] > dk(282) $O46
+'+282' + '+' > dk(282)
+c ->
+dk(282) $O45 + ' ' > dk(282) $O46
+dk(282) $O46 + ' ' > dk(282) $O45
+c <-
+dk(282) $O46 + [SHIFT K_SPACE] > dk(282) $O45
+dk(282) $O45 + [SHIFT K_SPACE] > dk(282) $O46
+
+c irt
+'irt' + ' ' > dk(283) $D4
+'irt' + [SHIFT K_SPACE] > dk(283) $D4
+'+283' + '+' > dk(283)
+
+c iry
+'iry' + ' ' > dk(284) $A47
+'iry' + [SHIFT K_SPACE] > dk(284) $A48
+'+284' + '+' > dk(284)
+c ->
+dk(284) $A47 + ' ' > dk(284) $A48
+dk(284) $A48 + ' ' > dk(284) $A47
+c <-
+dk(284) $A48 + [SHIFT K_SPACE] > dk(284) $A47
+dk(284) $A47 + [SHIFT K_SPACE] > dk(284) $A48
+
+c isw
+'isw' + ' ' > dk(285) $F44
+'isw' + [SHIFT K_SPACE] > dk(285) $F44
+'+285' + '+' > dk(285)
+
+c ity
+'ity' + ' ' > dk(286) $A23
+'ity' + [SHIFT K_SPACE] > dk(286) $A23
+'+286' + '+' > dk(286)
+
+c iwa
+'iw' $a + ' ' > dk(287) $F44
+'iw' $a + [SHIFT K_SPACE] > dk(287) $F44
+'+287' + '+' > dk(287)
+
+c iwf
+'iwf' + ' ' > dk(288) $F51
+'iwf' + [SHIFT K_SPACE] > dk(288) $F51
+'+288' + '+' > dk(288)
+
+c iwn
+'iwn' + ' ' > dk(289) $O28
+'iwn' + [SHIFT K_SPACE] > dk(289) $O28
+'+289' + '+' > dk(289)
+
+c kAp
+'k' $A 'p' + ' ' > dk(290) $R5
+'k' $A 'p' + [SHIFT K_SPACE] > dk(290) $R6
+'+290' + '+' > dk(290)
+c ->
+dk(290) $R5 + ' ' > dk(290) $R6
+dk(290) $R6 + ' ' > dk(290) $R5
+c <-
+dk(290) $R6 + [SHIFT K_SPACE] > dk(290) $R5
+dk(290) $R5 + [SHIFT K_SPACE] > dk(290) $R6
+
+c kAr
+'k' $A 'r' + ' ' > dk(291) $O18
+'k' $A 'r' + [SHIFT K_SPACE] > dk(291) $O18
+'+291' + '+' > dk(291)
+
+c kAt
+'k' $A 't' + ' ' > dk(292) $A9
+'k' $A 't' + [SHIFT K_SPACE] > dk(292) $A9
+'+292' + '+' > dk(292)
+
+c kfA
+'kf' $A + ' ' > dk(293) $F22
+'kf' $A + [SHIFT K_SPACE] > dk(293) $F22
+'+293' + '+' > dk(293)
+
+c ksi
+'ksi' + ' ' > dk(294) $A16
+'ksi' + [SHIFT K_SPACE] > dk(294) $A16
+'+294' + '+' > dk(294)
+
+c ksw
+'ksw' + ' ' > dk(295) $A16
+'ksw' + [SHIFT K_SPACE] > dk(295) $A16
+'+295' + '+' > dk(295)
+
+c mAa
+'m' $A $a + ' ' > dk(296) $Aa11
+'m' $A $a + [SHIFT K_SPACE] > dk(296) $U5
+'+296' + '+' > dk(296)
+c ->
+dk(296) $Aa11 + ' ' > dk(296) $Aa12
+dk(296) $Aa12 + ' ' > dk(296) $H2
+dk(296) $H2 + ' ' > dk(296) $U4
+dk(296) $U4 + ' ' > dk(296) $U5
+dk(296) $U5 + ' ' > dk(296) $Aa11
+c <-
+dk(296) $U5 + [SHIFT K_SPACE] > dk(296) $U4
+dk(296) $U4 + [SHIFT K_SPACE] > dk(296) $H2
+dk(296) $H2 + [SHIFT K_SPACE] > dk(296) $Aa12
+dk(296) $Aa12 + [SHIFT K_SPACE] > dk(296) $Aa11
+dk(296) $Aa11 + [SHIFT K_SPACE] > dk(296) $U5
+
+c mAi
+'m' $A 'i' + ' ' > dk(297) $E22
+'m' $A 'i' + [SHIFT K_SPACE] > dk(297) $E22
+'+297' + '+' > dk(297)
+
+c mAw
+'m' $A 'w' + ' ' > dk(298) $G46
+'m' $A 'w' + [SHIFT K_SPACE] > dk(298) $G46
+'+298' + '+' > dk(298)
+
+c mDH
+'m' $D $H + ' ' > dk(299) $S10
+'m' $D $H + [SHIFT K_SPACE] > dk(299) $T7
+'+299' + '+' > dk(299)
+c ->
+dk(299) $S10 + ' ' > dk(299) $T7
+dk(299) $T7 + ' ' > dk(299) $S10
+c <-
+dk(299) $T7 + [SHIFT K_SPACE] > dk(299) $S10
+dk(299) $S10 + [SHIFT K_SPACE] > dk(299) $T7
+
+c mDt
+'m' $D 't' + ' ' > dk(300) $V19
+'m' $D 't' + [SHIFT K_SPACE] > dk(300) $V19
+'+300' + '+' > dk(300)
+
+c mSa
+'m' $S $a + ' ' > dk(301) $A12
+'m' $S $a + [SHIFT K_SPACE] > dk(301) $A12
+'+301' + '+' > dk(301)
+
+c mnD
+'mn' $D + ' ' > dk(302) $D27
+'mn' $D + [SHIFT K_SPACE] > dk(302) $D27A
+'+302' + '+' > dk(302)
+c ->
+dk(302) $D27 + ' ' > dk(302) $D27A
+dk(302) $D27A + ' ' > dk(302) $D27
+c <-
+dk(302) $D27A + [SHIFT K_SPACE] > dk(302) $D27
+dk(302) $D27 + [SHIFT K_SPACE] > dk(302) $D27A
+
+c mni
+'mni' + ' ' > dk(303) $A54
+'mni' + [SHIFT K_SPACE] > dk(303) $A54
+'+303' + '+' > dk(303)
+
+c mnw
+'mnw' + ' ' > dk(304) $C8
+'mnw' + [SHIFT K_SPACE] > dk(304) $T1
+'+304' + '+' > dk(304)
+c ->
+dk(304) $C8 + ' ' > dk(304) $R22
+dk(304) $R22 + ' ' > dk(304) $R23
+dk(304) $R23 + ' ' > dk(304) $T1
+dk(304) $T1 + ' ' > dk(304) $C8
+c <-
+dk(304) $T1 + [SHIFT K_SPACE] > dk(304) $R23
+dk(304) $R23 + [SHIFT K_SPACE] > dk(304) $R22
+dk(304) $R22 + [SHIFT K_SPACE] > dk(304) $C8
+dk(304) $C8 + [SHIFT K_SPACE] > dk(304) $T1
+
+c mnx
+'mn' $x + ' ' > dk(305) $U22
+'mn' $x + [SHIFT K_SPACE] > dk(305) $U22
+'+305' + '+' > dk(305)
+
+c msi
+'msi' + ' ' > dk(306) $B3
+'msi' + [SHIFT K_SPACE] > dk(306) $F31
+'+306' + '+' > dk(306)
+c ->
+dk(306) $B3 + ' ' > dk(306) $B4
+dk(306) $B4 + ' ' > dk(306) $F31
+dk(306) $F31 + ' ' > dk(306) $B3
+c <-
+dk(306) $F31 + [SHIFT K_SPACE] > dk(306) $B4
+dk(306) $B4 + [SHIFT K_SPACE] > dk(306) $B3
+dk(306) $B3 + [SHIFT K_SPACE] > dk(306) $F31
+
+c msn
+'msn' + ' ' > dk(307) $V32
+'msn' + [SHIFT K_SPACE] > dk(307) $V32
+'+307' + '+' > dk(307)
+
+c msw
+'msw' + ' ' > dk(308) $A17A
+'msw' + [SHIFT K_SPACE] > dk(308) $A17A
+'+308' + '+' > dk(308)
+
+c mwt
+'mwt' + ' ' > dk(309) $G14
+'mwt' + [SHIFT K_SPACE] > dk(309) $A14A
+'+309' + '+' > dk(309)
+c ->
+dk(309) $G14 + ' ' > dk(309) $A14
+dk(309) $A14 + ' ' > dk(309) $A14A
+dk(309) $A14A + ' ' > dk(309) $G14
+c <-
+dk(309) $A14A + [SHIFT K_SPACE] > dk(309) $A14
+dk(309) $A14 + [SHIFT K_SPACE] > dk(309) $G14
+dk(309) $G14 + [SHIFT K_SPACE] > dk(309) $A14A
+
+c mzH
+'mz' $H + ' ' > dk(310) $I3
+'mz' $H + [SHIFT K_SPACE] > dk(310) $I3
+'+310' + '+' > dk(310)
+
+c nDm
+'n' $D 'm' + ' ' > dk(311) $M29
+'n' $D 'm' + [SHIFT K_SPACE] > dk(311) $M29
+'+311' + '+' > dk(311)
+
+c nDs
+'n' $D 's' + ' ' > dk(312) $G37
+'n' $D 's' + [SHIFT K_SPACE] > dk(312) $G37
+'+312' + '+' > dk(312)
+
+c nTr
+'n' $T 'r' + ' ' > dk(313) $R8
+'n' $T 'r' + [SHIFT K_SPACE] > dk(313) $G7
+'+313' + '+' > dk(313)
+c ->
+dk(313) $R8 + ' ' > dk(313) $A40
+dk(313) $A40 + ' ' > dk(313) $G7
+dk(313) $G7 + ' ' > dk(313) $R8
+c <-
+dk(313) $G7 + [SHIFT K_SPACE] > dk(313) $A40
+dk(313) $A40 + [SHIFT K_SPACE] > dk(313) $R8
+dk(313) $R8 + [SHIFT K_SPACE] > dk(313) $G7
+
+c nbw
+'nbw' + ' ' > dk(314) $S12
+'nbw' + [SHIFT K_SPACE] > dk(314) $N33
+'+314' + '+' > dk(314)
+c ->
+dk(314) $S12 + ' ' > dk(314) $N33A
+dk(314) $N33A + ' ' > dk(314) $N33
+dk(314) $N33 + ' ' > dk(314) $S12
+c <-
+dk(314) $N33 + [SHIFT K_SPACE] > dk(314) $N33A
+dk(314) $N33A + [SHIFT K_SPACE] > dk(314) $S12
+dk(314) $S12 + [SHIFT K_SPACE] > dk(314) $N33
+
+c nfr
+'nfr' + ' ' > dk(315) $F35
+'nfr' + [SHIFT K_SPACE] > dk(315) $F35
+'+315' + '+' > dk(315)
+
+c nfw
+'nfw' + ' ' > dk(316) $P5
+'nfw' + [SHIFT K_SPACE] > dk(316) $P5
+'+316' + '+' > dk(316)
+
+c nis
+'nis' + ' ' > dk(317) $A26
+'nis' + [SHIFT K_SPACE] > dk(317) $A26
+'+317' + '+' > dk(317)
+
+c nmH
+'nm' $H + ' ' > dk(318) $A17
+'nm' $H + [SHIFT K_SPACE] > dk(318) $A17
+'+318' + '+' > dk(318)
+
+c nmt
+'nmt' + ' ' > dk(319) $T29
+'nmt' + [SHIFT K_SPACE] > dk(319) $T29
+'+319' + '+' > dk(319)
+
+c nni
+'nni' + ' ' > dk(320) $A17
+'nni' + [SHIFT K_SPACE] > dk(320) $A17
+'+320' + '+' > dk(320)
+
+c nst
+'nst' + ' ' > dk(321) $W11
+'nst' + [SHIFT K_SPACE] > dk(321) $W12
+'+321' + '+' > dk(321)
+c ->
+dk(321) $W11 + ' ' > dk(321) $W12
+dk(321) $W12 + ' ' > dk(321) $W11
+c <-
+dk(321) $W12 + [SHIFT K_SPACE] > dk(321) $W11
+dk(321) $W11 + [SHIFT K_SPACE] > dk(321) $W12
+
+c nsw
+'nsw' + ' ' > dk(322) $A41
+'nsw' + [SHIFT K_SPACE] > dk(322) $G7
+'+322' + '+' > dk(322)
+c ->
+dk(322) $A41 + ' ' > dk(322) $A42
+dk(322) $A42 + ' ' > dk(322) $A43
+dk(322) $A43 + ' ' > dk(322) $A44
+dk(322) $A44 + ' ' > dk(322) $G7
+dk(322) $G7 + ' ' > dk(322) $A41
+c <-
+dk(322) $G7 + [SHIFT K_SPACE] > dk(322) $A44
+dk(322) $A44 + [SHIFT K_SPACE] > dk(322) $A43
+dk(322) $A43 + [SHIFT K_SPACE] > dk(322) $A42
+dk(322) $A42 + [SHIFT K_SPACE] > dk(322) $A41
+dk(322) $A41 + [SHIFT K_SPACE] > dk(322) $G7
+
+c nxn
+'n' $x 'n' + ' ' > dk(323) $O47
+'n' $x 'n' + [SHIFT K_SPACE] > dk(323) $O48
+'+323' + '+' > dk(323)
+c ->
+dk(323) $O47 + ' ' > dk(323) $O48
+dk(323) $O48 + ' ' > dk(323) $O47
+c <-
+dk(323) $O48 + [SHIFT K_SPACE] > dk(323) $O47
+dk(323) $O47 + [SHIFT K_SPACE] > dk(323) $O48
+
+c nxt
+'n' $x 't' + ' ' > dk(324) $A24
+'n' $x 't' + [SHIFT K_SPACE] > dk(324) $D40
+'+324' + '+' > dk(324)
+c ->
+dk(324) $A24 + ' ' > dk(324) $D40
+dk(324) $D40 + ' ' > dk(324) $A24
+c <-
+dk(324) $D40 + [SHIFT K_SPACE] > dk(324) $A24
+dk(324) $A24 + [SHIFT K_SPACE] > dk(324) $D40
+
+c nzt
+'nzt' + ' ' > dk(325) $W11
+'nzt' + [SHIFT K_SPACE] > dk(325) $W11
+'+325' + '+' > dk(325)
+
+c pAq
+'p' $A 'q' + ' ' > dk(326) $H3
+'p' $A 'q' + [SHIFT K_SPACE] > dk(326) $H2
+'+326' + '+' > dk(326)
+c ->
+dk(326) $H3 + ' ' > dk(326) $H2
+dk(326) $H2 + ' ' > dk(326) $H3
+c <-
+dk(326) $H2 + [SHIFT K_SPACE] > dk(326) $H3
+dk(326) $H3 + [SHIFT K_SPACE] > dk(326) $H2
+
+c pXr
+'p' $X 'r' + ' ' > dk(327) $F46
+'p' $X 'r' + [SHIFT K_SPACE] > dk(327) $F46
+'+327' + '+' > dk(327)
+
+c pgA
+'pg' $A + ' ' > dk(328) $D32
+'pg' $A + [SHIFT K_SPACE] > dk(328) $D32
+'+328' + '+' > dk(328)
+
+c psg
+'psg' + ' ' > dk(329) $D26
+'psg' + [SHIFT K_SPACE] > dk(329) $D26
+'+329' + '+' > dk(329)
+
+c ptH
+'pt' $H + ' ' > dk(330) $C19
+'pt' $H + [SHIFT K_SPACE] > dk(330) $C20
+'+330' + '+' > dk(330)
+c ->
+dk(330) $C19 + ' ' > dk(330) $C20
+dk(330) $C20 + ' ' > dk(330) $C19
+c <-
+dk(330) $C20 + [SHIFT K_SPACE] > dk(330) $C19
+dk(330) $C19 + [SHIFT K_SPACE] > dk(330) $C20
+
+c pti
+'pti' + ' ' > dk(331) $D5
+'pti' + [SHIFT K_SPACE] > dk(331) $D6
+'+331' + '+' > dk(331)
+c ->
+dk(331) $D5 + ' ' > dk(331) $D6
+dk(331) $D6 + ' ' > dk(331) $D5
+c <-
+dk(331) $D6 + [SHIFT K_SPACE] > dk(331) $D5
+dk(331) $D5 + [SHIFT K_SPACE] > dk(331) $D6
+
+c ptr
+'ptr' + ' ' > dk(332) $D5
+'ptr' + [SHIFT K_SPACE] > dk(332) $D7
+'+332' + '+' > dk(332)
+c ->
+dk(332) $D5 + ' ' > dk(332) $D6
+dk(332) $D6 + ' ' > dk(332) $D7
+dk(332) $D7 + ' ' > dk(332) $D5
+c <-
+dk(332) $D7 + [SHIFT K_SPACE] > dk(332) $D6
+dk(332) $D6 + [SHIFT K_SPACE] > dk(332) $D5
+dk(332) $D5 + [SHIFT K_SPACE] > dk(332) $D7
+
+c pzD
+'pz' $D + ' ' > dk(333) $N9
+'pz' $D + [SHIFT K_SPACE] > dk(333) $N10
+'+333' + '+' > dk(333)
+c ->
+dk(333) $N9 + ' ' > dk(333) $N10
+dk(333) $N10 + ' ' > dk(333) $N9
+c <-
+dk(333) $N10 + [SHIFT K_SPACE] > dk(333) $N9
+dk(333) $N9 + [SHIFT K_SPACE] > dk(333) $N10
+
+c qAb
+'q' $A 'b' + ' ' > dk(334) $F46
+'q' $A 'b' + [SHIFT K_SPACE] > dk(334) $F46
+'+334' + '+' > dk(334)
+
+c qAi
+'q' $A 'i' + ' ' > dk(335) $A28
+'q' $A 'i' + [SHIFT K_SPACE] > dk(335) $A28
+'+335' + '+' > dk(335)
+
+c qis
+'qis' + ' ' > dk(336) $A38
+'qis' + [SHIFT K_SPACE] > dk(336) $A39
+'+336' + '+' > dk(336)
+c ->
+dk(336) $A38 + ' ' > dk(336) $A39
+dk(336) $A39 + ' ' > dk(336) $A38
+c <-
+dk(336) $A39 + [SHIFT K_SPACE] > dk(336) $A38
+dk(336) $A38 + [SHIFT K_SPACE] > dk(336) $A39
+
+c qiz
+'qiz' + ' ' > dk(337) $A38
+'qiz' + [SHIFT K_SPACE] > dk(337) $A39
+'+337' + '+' > dk(337)
+c ->
+dk(337) $A38 + ' ' > dk(337) $A39
+dk(337) $A39 + ' ' > dk(337) $A38
+c <-
+dk(337) $A39 + [SHIFT K_SPACE] > dk(337) $A38
+dk(337) $A38 + [SHIFT K_SPACE] > dk(337) $A39
+
+c qmA
+'qm' $A + ' ' > dk(338) $T14
+'qm' $A + [SHIFT K_SPACE] > dk(338) $G41
+'+338' + '+' > dk(338)
+c ->
+dk(338) $T14 + ' ' > dk(338) $G41
+dk(338) $G41 + ' ' > dk(338) $T14
+c <-
+dk(338) $G41 + [SHIFT K_SPACE] > dk(338) $T14
+dk(338) $T14 + [SHIFT K_SPACE] > dk(338) $G41
+
+c qrs
+'qrs' + ' ' > dk(339) $Q6
+'qrs' + [SHIFT K_SPACE] > dk(339) $T20
+'+339' + '+' > dk(339)
+c ->
+dk(339) $Q6 + ' ' > dk(339) $T19
+dk(339) $T19 + ' ' > dk(339) $T20
+dk(339) $T20 + ' ' > dk(339) $Q6
+c <-
+dk(339) $T20 + [SHIFT K_SPACE] > dk(339) $T19
+dk(339) $T19 + [SHIFT K_SPACE] > dk(339) $Q6
+dk(339) $Q6 + [SHIFT K_SPACE] > dk(339) $T20
+
+c rdi
+'rdi' + ' ' > dk(340) $X8
+'rdi' + [SHIFT K_SPACE] > dk(340) $D37
+'+340' + '+' > dk(340)
+c ->
+dk(340) $X8 + ' ' > dk(340) $D37
+dk(340) $D37 + ' ' > dk(340) $X8
+c <-
+dk(340) $D37 + [SHIFT K_SPACE] > dk(340) $X8
+dk(340) $X8 + [SHIFT K_SPACE] > dk(340) $D37
+
+c rhn
+'rhn' + ' ' > dk(341) $A19
+'rhn' + [SHIFT K_SPACE] > dk(341) $A19
+'+341' + '+' > dk(341)
+
+c rmi
+'rmi' + ' ' > dk(342) $D9
+'rmi' + [SHIFT K_SPACE] > dk(342) $D9
+'+342' + '+' > dk(342)
+
+c rmn
+'rmn' + ' ' > dk(343) $D41
+'rmn' + [SHIFT K_SPACE] > dk(343) $D41
+'+343' + '+' > dk(343)
+
+c rnn
+'rnn' + ' ' > dk(344) $B6
+'rnn' + [SHIFT K_SPACE] > dk(344) $B6
+'+344' + '+' > dk(344)
+
+c rnp
+'rnp' + ' ' > dk(345) $M4
+'rnp' + [SHIFT K_SPACE] > dk(345) $M7
+'+345' + '+' > dk(345)
+c ->
+dk(345) $M4 + ' ' > dk(345) $M7
+dk(345) $M7 + ' ' > dk(345) $M4
+c <-
+dk(345) $M7 + [SHIFT K_SPACE] > dk(345) $M4
+dk(345) $M4 + [SHIFT K_SPACE] > dk(345) $M7
+
+c rsw
+'rsw' + ' ' > dk(346) $M24
+'rsw' + [SHIFT K_SPACE] > dk(346) $M25
+'+346' + '+' > dk(346)
+c ->
+dk(346) $M24 + ' ' > dk(346) $M25
+dk(346) $M25 + ' ' > dk(346) $M24
+c <-
+dk(346) $M25 + [SHIFT K_SPACE] > dk(346) $M24
+dk(346) $M24 + [SHIFT K_SPACE] > dk(346) $M25
+
+c rtH
+'rt' $H + ' ' > dk(347) $U31
+'rt' $H + [SHIFT K_SPACE] > dk(347) $U31
+'+347' + '+' > dk(347)
+
+c rwD
+'rw' $D + ' ' > dk(348) $T12
+'rw' $D + [SHIFT K_SPACE] > dk(348) $T12
+'+348' + '+' > dk(348)
+
+c rwd
+'rwd' + ' ' > dk(349) $T12
+'rwd' + [SHIFT K_SPACE] > dk(349) $O40
+'+349' + '+' > dk(349)
+c ->
+dk(349) $T12 + ' ' > dk(349) $O40
+dk(349) $O40 + ' ' > dk(349) $T12
+c <-
+dk(349) $O40 + [SHIFT K_SPACE] > dk(349) $T12
+dk(349) $T12 + [SHIFT K_SPACE] > dk(349) $O40
+
+c sAH
+'s' $A $H + ' ' > dk(350) $D61
+'s' $A $H + [SHIFT K_SPACE] > dk(350) $D63
+'+350' + '+' > dk(350)
+c ->
+dk(350) $D61 + ' ' > dk(350) $D62
+dk(350) $D62 + ' ' > dk(350) $D63
+dk(350) $D63 + ' ' > dk(350) $D61
+c <-
+dk(350) $D63 + [SHIFT K_SPACE] > dk(350) $D62
+dk(350) $D62 + [SHIFT K_SPACE] > dk(350) $D61
+dk(350) $D61 + [SHIFT K_SPACE] > dk(350) $D63
+
+c sAq
+'s' $A 'q' + ' ' > dk(351) $I5
+'s' $A 'q' + [SHIFT K_SPACE] > dk(351) $I5A
+'+351' + '+' > dk(351)
+c ->
+dk(351) $I5 + ' ' > dk(351) $I5A
+dk(351) $I5A + ' ' > dk(351) $I5
+c <-
+dk(351) $I5A + [SHIFT K_SPACE] > dk(351) $I5
+dk(351) $I5 + [SHIFT K_SPACE] > dk(351) $I5A
+
+c sAw
+'s' $A 'w' + ' ' > dk(352) $A47
+'s' $A 'w' + [SHIFT K_SPACE] > dk(352) $A48
+'+352' + '+' > dk(352)
+c ->
+dk(352) $A47 + ' ' > dk(352) $A48
+dk(352) $A48 + ' ' > dk(352) $A47
+c <-
+dk(352) $A48 + [SHIFT K_SPACE] > dk(352) $A47
+dk(352) $A47 + [SHIFT K_SPACE] > dk(352) $A48
+
+c sDm
+'s' $D 'm' + ' ' > dk(353) $F21
+'s' $D 'm' + [SHIFT K_SPACE] > dk(353) $F21
+'+353' + '+' > dk(353)
+
+c sDr
+'s' $D 'r' + ' ' > dk(354) $A55
+'s' $D 'r' + [SHIFT K_SPACE] > dk(354) $A55
+'+354' + '+' > dk(354)
+
+c sHr
+'s' $H 'r' + ' ' > dk(355) $A59
+'s' $H 'r' + [SHIFT K_SPACE] > dk(355) $A59
+'+355' + '+' > dk(355)
+
+c sSm
+'s' $S 'm' + ' ' > dk(356) $T31
+'s' $S 'm' + [SHIFT K_SPACE] > dk(356) $T33
+'+356' + '+' > dk(356)
+c ->
+dk(356) $T31 + ' ' > dk(356) $T32
+dk(356) $T32 + ' ' > dk(356) $T33
+dk(356) $T33 + ' ' > dk(356) $T31
+c <-
+dk(356) $T33 + [SHIFT K_SPACE] > dk(356) $T32
+dk(356) $T32 + [SHIFT K_SPACE] > dk(356) $T31
+dk(356) $T31 + [SHIFT K_SPACE] > dk(356) $T33
+
+c sSr
+'s' $S 'r' + ' ' > dk(357) $V33
+'s' $S 'r' + [SHIFT K_SPACE] > dk(357) $T11
+'+357' + '+' > dk(357)
+c ->
+dk(357) $V33 + ' ' > dk(357) $T11
+dk(357) $T11 + ' ' > dk(357) $V33
+c <-
+dk(357) $T11 + [SHIFT K_SPACE] > dk(357) $V33
+dk(357) $V33 + [SHIFT K_SPACE] > dk(357) $T11
+
+c sTA
+'s' $T $A + ' ' > dk(358) $V2
+'s' $T $A + [SHIFT K_SPACE] > dk(358) $V2
+'+358' + '+' > dk(358)
+
+c sXr
+'s' $X 'r' + ' ' > dk(359) $T11
+'s' $X 'r' + [SHIFT K_SPACE] > dk(359) $T11
+'+359' + '+' > dk(359)
+
+c saH
+'s' $a $H + ' ' > dk(360) $A52
+'s' $a $H + [SHIFT K_SPACE] > dk(360) $E31
+'+360' + '+' > dk(360)
+c ->
+dk(360) $A52 + ' ' > dk(360) $E31
+dk(360) $E31 + ' ' > dk(360) $A52
+c <-
+dk(360) $E31 + [SHIFT K_SPACE] > dk(360) $A52
+dk(360) $A52 + [SHIFT K_SPACE] > dk(360) $E31
+
+c sbA
+'sb' $A + ' ' > dk(361) $N14
+'sb' $A + [SHIFT K_SPACE] > dk(361) $A24
+'+361' + '+' > dk(361)
+c ->
+dk(361) $N14 + ' ' > dk(361) $A24
+dk(361) $A24 + ' ' > dk(361) $N14
+c <-
+dk(361) $A24 + [SHIFT K_SPACE] > dk(361) $N14
+dk(361) $N14 + [SHIFT K_SPACE] > dk(361) $A24
+
+c sbi
+'sbi' + ' ' > dk(362) $A13
+'sbi' + [SHIFT K_SPACE] > dk(362) $Aa26
+'+362' + '+' > dk(362)
+c ->
+dk(362) $A13 + ' ' > dk(362) $A14
+dk(362) $A14 + ' ' > dk(362) $A14A
+dk(362) $A14A + ' ' > dk(362) $Aa26
+dk(362) $Aa26 + ' ' > dk(362) $A13
+c <-
+dk(362) $Aa26 + [SHIFT K_SPACE] > dk(362) $A14A
+dk(362) $A14A + [SHIFT K_SPACE] > dk(362) $A14
+dk(362) $A14 + [SHIFT K_SPACE] > dk(362) $A13
+dk(362) $A13 + [SHIFT K_SPACE] > dk(362) $Aa26
+
+c sbk
+'sbk' + ' ' > dk(363) $I4
+'sbk' + [SHIFT K_SPACE] > dk(363) $I5
+'+363' + '+' > dk(363)
+c ->
+dk(363) $I4 + ' ' > dk(363) $I5
+dk(363) $I5 + ' ' > dk(363) $I4
+c <-
+dk(363) $I5 + [SHIFT K_SPACE] > dk(363) $I4
+dk(363) $I4 + [SHIFT K_SPACE] > dk(363) $I5
+
+c sbq
+'sbq' + ' ' > dk(364) $D56
+'sbq' + [SHIFT K_SPACE] > dk(364) $D56
+'+364' + '+' > dk(364)
+
+c siA
+'si' $A + ' ' > dk(365) $S32
+'si' $A + [SHIFT K_SPACE] > dk(365) $S32
+'+365' + '+' > dk(365)
+
+c smA
+'sm' $A + ' ' > dk(366) $E2
+'sm' $A + [SHIFT K_SPACE] > dk(366) $S31
+'+366' + '+' > dk(366)
+c ->
+dk(366) $E2 + ' ' > dk(366) $Aa25
+dk(366) $Aa25 + ' ' > dk(366) $F36
+dk(366) $F36 + ' ' > dk(366) $S31
+dk(366) $S31 + ' ' > dk(366) $E2
+c <-
+dk(366) $S31 + [SHIFT K_SPACE] > dk(366) $F36
+dk(366) $F36 + [SHIFT K_SPACE] > dk(366) $Aa25
+dk(366) $Aa25 + [SHIFT K_SPACE] > dk(366) $E2
+dk(366) $E2 + [SHIFT K_SPACE] > dk(366) $S31
+
+c smr
+'smr' + ' ' > dk(367) $A21
+'smr' + [SHIFT K_SPACE] > dk(367) $A21
+'+367' + '+' > dk(367)
+
+c smx
+'sm' $x + ' ' > dk(368) $D35
+'sm' $x + [SHIFT K_SPACE] > dk(368) $D35
+'+368' + '+' > dk(368)
+
+c snD
+'sn' $D + ' ' > dk(369) $G54
+'sn' $D + [SHIFT K_SPACE] > dk(369) $G54
+'+369' + '+' > dk(369)
+
+c snT
+'sn' $T + ' ' > dk(370) $V5
+'sn' $T + [SHIFT K_SPACE] > dk(370) $V5
+'+370' + '+' > dk(370)
+
+c snf
+'snf' + ' ' > dk(371) $D26
+'snf' + [SHIFT K_SPACE] > dk(371) $D26
+'+371' + '+' > dk(371)
+
+c snq
+'snq' + ' ' > dk(372) $D27
+'snq' + [SHIFT K_SPACE] > dk(372) $D27A
+'+372' + '+' > dk(372)
+c ->
+dk(372) $D27 + ' ' > dk(372) $D27A
+dk(372) $D27A + ' ' > dk(372) $D27
+c <-
+dk(372) $D27A + [SHIFT K_SPACE] > dk(372) $D27
+dk(372) $D27 + [SHIFT K_SPACE] > dk(372) $D27A
+
+c spr
+'spr' + ' ' > dk(373) $F42
+'spr' + [SHIFT K_SPACE] > dk(373) $F42
+'+373' + '+' > dk(373)
+
+c spt
+'spt' + ' ' > dk(374) $D24
+'spt' + [SHIFT K_SPACE] > dk(374) $D24
+'+374' + '+' > dk(374)
+
+c sqd
+'sqd' + ' ' > dk(375) $A10
+'sqd' + [SHIFT K_SPACE] > dk(375) $A10
+'+375' + '+' > dk(375)
+
+c stX
+'st' $X + ' ' > dk(376) $C7
+'st' $X + [SHIFT K_SPACE] > dk(376) $E21
+'+376' + '+' > dk(376)
+c ->
+dk(376) $C7 + ' ' > dk(376) $E20
+dk(376) $E20 + ' ' > dk(376) $E21
+dk(376) $E21 + ' ' > dk(376) $C7
+c <-
+dk(376) $E21 + [SHIFT K_SPACE] > dk(376) $E20
+dk(376) $E20 + [SHIFT K_SPACE] > dk(376) $C7
+dk(376) $C7 + [SHIFT K_SPACE] > dk(376) $E21
+
+c sti
+'sti' + ' ' > dk(377) $F29
+'sti' + [SHIFT K_SPACE] > dk(377) $Aa32
+'+377' + '+' > dk(377)
+c ->
+dk(377) $F29 + ' ' > dk(377) $Aa32
+dk(377) $Aa32 + ' ' > dk(377) $F29
+c <-
+dk(377) $Aa32 + [SHIFT K_SPACE] > dk(377) $F29
+dk(377) $F29 + [SHIFT K_SPACE] > dk(377) $Aa32
+
+c stp
+'stp' + ' ' > dk(378) $U21
+'stp' + [SHIFT K_SPACE] > dk(378) $U21
+'+378' + '+' > dk(378)
+
+c sxm
+'s' $x 'm' + ' ' > dk(379) $S42
+'s' $x 'm' + [SHIFT K_SPACE] > dk(379) $Y8
+'+379' + '+' > dk(379)
+c ->
+dk(379) $S42 + ' ' > dk(379) $Y8
+dk(379) $Y8 + ' ' > dk(379) $S42
+c <-
+dk(379) $Y8 + [SHIFT K_SPACE] > dk(379) $S42
+dk(379) $S42 + [SHIFT K_SPACE] > dk(379) $Y8
+
+c sxr
+'s' $x 'r' + ' ' > dk(380) $A29
+'s' $x 'r' + [SHIFT K_SPACE] > dk(380) $A29
+'+380' + '+' > dk(380)
+
+c sxt
+'s' $x 't' + ' ' > dk(381) $M20
+'s' $x 't' + [SHIFT K_SPACE] > dk(381) $M20
+'+381' + '+' > dk(381)
+
+c tHn
+'t' $H 'n' + ' ' > dk(382) $S15
+'t' $H 'n' + [SHIFT K_SPACE] > dk(382) $S17
+'+382' + '+' > dk(382)
+c ->
+dk(382) $S15 + ' ' > dk(382) $S16
+dk(382) $S16 + ' ' > dk(382) $S17
+dk(382) $S17 + ' ' > dk(382) $S15
+c <-
+dk(382) $S17 + [SHIFT K_SPACE] > dk(382) $S16
+dk(382) $S16 + [SHIFT K_SPACE] > dk(382) $S15
+dk(382) $S15 + [SHIFT K_SPACE] > dk(382) $S17
+
+c tit
+'tit' + ' ' > dk(383) $D17
+'tit' + [SHIFT K_SPACE] > dk(383) $V39
+'+383' + '+' > dk(383)
+c ->
+dk(383) $D17 + ' ' > dk(383) $U33
+dk(383) $U33 + ' ' > dk(383) $V39
+dk(383) $V39 + ' ' > dk(383) $D17
+c <-
+dk(383) $V39 + [SHIFT K_SPACE] > dk(383) $U33
+dk(383) $U33 + [SHIFT K_SPACE] > dk(383) $D17
+dk(383) $D17 + [SHIFT K_SPACE] > dk(383) $V39
+
+c tni
+'tni' + ' ' > dk(384) $A19
+'tni' + [SHIFT K_SPACE] > dk(384) $A19
+'+384' + '+' > dk(384)
+
+c twA
+'tw' $A + ' ' > dk(385) $A30
+'tw' $A + [SHIFT K_SPACE] > dk(385) $A30
+'+385' + '+' > dk(385)
+
+c twt
+'twt' + ' ' > dk(386) $A22
+'twt' + [SHIFT K_SPACE] > dk(386) $A53
+'+386' + '+' > dk(386)
+c ->
+dk(386) $A22 + ' ' > dk(386) $A53
+dk(386) $A53 + ' ' > dk(386) $A22
+c <-
+dk(386) $A53 + [SHIFT K_SPACE] > dk(386) $A22
+dk(386) $A22 + [SHIFT K_SPACE] > dk(386) $A53
+
+c txn
+'t' $x 'n' + ' ' > dk(387) $O25
+'t' $x 'n' + [SHIFT K_SPACE] > dk(387) $O25
+'+387' + '+' > dk(387)
+
+c tyw
+'tyw' + ' ' > dk(388) $G4
+'tyw' + [SHIFT K_SPACE] > dk(388) $G4
+'+388' + '+' > dk(388)
+
+c wAD
+'w' $A $D + ' ' > dk(389) $M13
+'w' $A $D + [SHIFT K_SPACE] > dk(389) $M14
+'+389' + '+' > dk(389)
+c ->
+dk(389) $M13 + ' ' > dk(389) $M14
+dk(389) $M14 + ' ' > dk(389) $M13
+c <-
+dk(389) $M14 + [SHIFT K_SPACE] > dk(389) $M13
+dk(389) $M13 + [SHIFT K_SPACE] > dk(389) $M14
+
+c wAH
+'w' $A $H + ' ' > dk(390) $V29
+'w' $A $H + [SHIFT K_SPACE] > dk(390) $V29
+'+390' + '+' > dk(390)
+
+c wAs
+'w' $A 's' + ' ' > dk(391) $S40
+'w' $A 's' + [SHIFT K_SPACE] > dk(391) $R19
+'+391' + '+' > dk(391)
+c ->
+dk(391) $S40 + ' ' > dk(391) $R19
+dk(391) $R19 + ' ' > dk(391) $S40
+c <-
+dk(391) $R19 + [SHIFT K_SPACE] > dk(391) $S40
+dk(391) $S40 + [SHIFT K_SPACE] > dk(391) $R19
+
+c wDa
+'w' $D $a + ' ' > dk(392) $Aa21
+'w' $D $a + [SHIFT K_SPACE] > dk(392) $Aa22
+'+392' + '+' > dk(392)
+c ->
+dk(392) $Aa21 + ' ' > dk(392) $Aa22
+dk(392) $Aa22 + ' ' > dk(392) $Aa21
+c <-
+dk(392) $Aa22 + [SHIFT K_SPACE] > dk(392) $Aa21
+dk(392) $Aa21 + [SHIFT K_SPACE] > dk(392) $Aa22
+
+c wDb
+'w' $D 'b' + ' ' > dk(393) $N20
+'w' $D 'b' + [SHIFT K_SPACE] > dk(393) $F49
+'+393' + '+' > dk(393)
+c ->
+dk(393) $N20 + ' ' > dk(393) $F46
+dk(393) $F46 + ' ' > dk(393) $F47
+dk(393) $F47 + ' ' > dk(393) $F48
+dk(393) $F48 + ' ' > dk(393) $F49
+dk(393) $F49 + ' ' > dk(393) $N20
+c <-
+dk(393) $F49 + [SHIFT K_SPACE] > dk(393) $F48
+dk(393) $F48 + [SHIFT K_SPACE] > dk(393) $F47
+dk(393) $F47 + [SHIFT K_SPACE] > dk(393) $F46
+dk(393) $F46 + [SHIFT K_SPACE] > dk(393) $N20
+dk(393) $N20 + [SHIFT K_SPACE] > dk(393) $F49
+
+c wHa
+'w' $H $a + ' ' > dk(394) $P4
+'w' $H $a + [SHIFT K_SPACE] > dk(394) $P4
+'+394' + '+' > dk(394)
+
+c wHm
+'w' $H 'm' + ' ' > dk(395) $F25
+'w' $H 'm' + [SHIFT K_SPACE] > dk(395) $F25
+'+395' + '+' > dk(395)
+
+c wSA
+'w' $S $A + ' ' > dk(396) $G42
+'w' $S $A + [SHIFT K_SPACE] > dk(396) $G42
+'+396' + '+' > dk(396)
+
+c wSm
+'w' $S 'm' + ' ' > dk(397) $H2
+'w' $S 'm' + [SHIFT K_SPACE] > dk(397) $H2
+'+397' + '+' > dk(397)
+
+c wab
+'w' $a 'b' + ' ' > dk(398) $D60
+'w' $a 'b' + [SHIFT K_SPACE] > dk(398) $A6
+'+398' + '+' > dk(398)
+c ->
+dk(398) $D60 + ' ' > dk(398) $A6
+dk(398) $A6 + ' ' > dk(398) $D60
+c <-
+dk(398) $A6 + [SHIFT K_SPACE] > dk(398) $D60
+dk(398) $D60 + [SHIFT K_SPACE] > dk(398) $A6
+
+c wbA
+'wb' $A + ' ' > dk(399) $U26
+'wb' $A + [SHIFT K_SPACE] > dk(399) $U27
+'+399' + '+' > dk(399)
+c ->
+dk(399) $U26 + ' ' > dk(399) $U27
+dk(399) $U27 + ' ' > dk(399) $U26
+c <-
+dk(399) $U27 + [SHIFT K_SPACE] > dk(399) $U26
+dk(399) $U26 + [SHIFT K_SPACE] > dk(399) $U27
+
+c wdn
+'wdn' + ' ' > dk(400) $M11
+'wdn' + [SHIFT K_SPACE] > dk(400) $M11
+'+400' + '+' > dk(400)
+
+c wnm
+'wnm' + ' ' > dk(401) $Z11
+'wnm' + [SHIFT K_SPACE] > dk(401) $M42
+'+401' + '+' > dk(401)
+c ->
+dk(401) $Z11 + ' ' > dk(401) $M42
+dk(401) $M42 + ' ' > dk(401) $Z11
+c <-
+dk(401) $M42 + [SHIFT K_SPACE] > dk(401) $Z11
+dk(401) $Z11 + [SHIFT K_SPACE] > dk(401) $M42
+
+c wrd
+'wrd' + ' ' > dk(402) $A7
+'wrd' + [SHIFT K_SPACE] > dk(402) $A7
+'+402' + '+' > dk(402)
+
+c wsr
+'wsr' + ' ' > dk(403) $F12
+'wsr' + [SHIFT K_SPACE] > dk(403) $P8
+'+403' + '+' > dk(403)
+c ->
+dk(403) $F12 + ' ' > dk(403) $P8
+dk(403) $P8 + ' ' > dk(403) $F12
+c <-
+dk(403) $P8 + [SHIFT K_SPACE] > dk(403) $F12
+dk(403) $F12 + [SHIFT K_SPACE] > dk(403) $P8
+
+c wsx
+'ws' $x + ' ' > dk(404) $S11
+'ws' $x + [SHIFT K_SPACE] > dk(404) $Aa4
+'+404' + '+' > dk(404)
+c ->
+dk(404) $S11 + ' ' > dk(404) $Aa4
+dk(404) $Aa4 + ' ' > dk(404) $S11
+c <-
+dk(404) $Aa4 + [SHIFT K_SPACE] > dk(404) $S11
+dk(404) $S11 + [SHIFT K_SPACE] > dk(404) $Aa4
+
+c xAi
+$x $A 'i' + ' ' > dk(405) $D40
+$x $A 'i' + [SHIFT K_SPACE] > dk(405) $U9
+'+405' + '+' > dk(405)
+c ->
+dk(405) $D40 + ' ' > dk(405) $U9
+dk(405) $U9 + ' ' > dk(405) $D40
+c <-
+dk(405) $U9 + [SHIFT K_SPACE] > dk(405) $D40
+dk(405) $D40 + [SHIFT K_SPACE] > dk(405) $U9
+
+c xAt
+$x $A 't' + ' ' > dk(406) $R1
+$x $A 't' + [SHIFT K_SPACE] > dk(406) $R1
+'+406' + '+' > dk(406)
+
+c xbi
+$x 'bi' + ' ' > dk(407) $A32
+$x 'bi' + [SHIFT K_SPACE] > dk(407) $A32
+'+407' + '+' > dk(407)
+
+c xnt
+$x 'nt' + ' ' > dk(408) $W17
+$x 'nt' + [SHIFT K_SPACE] > dk(408) $P2
+'+408' + '+' > dk(408)
+c ->
+dk(408) $W17 + ' ' > dk(408) $D19
+dk(408) $D19 + ' ' > dk(408) $D20
+dk(408) $D20 + ' ' > dk(408) $P2
+dk(408) $P2 + ' ' > dk(408) $W17
+c <-
+dk(408) $P2 + [SHIFT K_SPACE] > dk(408) $D20
+dk(408) $D20 + [SHIFT K_SPACE] > dk(408) $D19
+dk(408) $D19 + [SHIFT K_SPACE] > dk(408) $W17
+dk(408) $W17 + [SHIFT K_SPACE] > dk(408) $P2
+
+c xpS
+$x 'p' $S + ' ' > dk(409) $F23
+$x 'p' $S + [SHIFT K_SPACE] > dk(409) $T16
+'+409' + '+' > dk(409)
+c ->
+dk(409) $F23 + ' ' > dk(409) $F24
+dk(409) $F24 + ' ' > dk(409) $T16
+dk(409) $T16 + ' ' > dk(409) $F23
+c <-
+dk(409) $T16 + [SHIFT K_SPACE] > dk(409) $F24
+dk(409) $F24 + [SHIFT K_SPACE] > dk(409) $F23
+dk(409) $F23 + [SHIFT K_SPACE] > dk(409) $T16
+
+c xpr
+$x 'pr' + ' ' > dk(410) $L1
+$x 'pr' + [SHIFT K_SPACE] > dk(410) $L1
+'+410' + '+' > dk(410)
+
+c xrp
+$x 'rp' + ' ' > dk(411) $S42
+$x 'rp' + [SHIFT K_SPACE] > dk(411) $D44
+'+411' + '+' > dk(411)
+c ->
+dk(411) $S42 + ' ' > dk(411) $D44
+dk(411) $D44 + ' ' > dk(411) $S42
+c <-
+dk(411) $D44 + [SHIFT K_SPACE] > dk(411) $S42
+dk(411) $S42 + [SHIFT K_SPACE] > dk(411) $D44
+
+c xrw
+$x 'rw' + ' ' > dk(412) $P8
+$x 'rw' + [SHIFT K_SPACE] > dk(412) $P8
+'+412' + '+' > dk(412)
+
+c xsf
+$x 'sf' + ' ' > dk(413) $U34
+$x 'sf' + [SHIFT K_SPACE] > dk(413) $U35
+'+413' + '+' > dk(413)
+c ->
+dk(413) $U34 + ' ' > dk(413) $U35
+dk(413) $U35 + ' ' > dk(413) $U34
+c <-
+dk(413) $U35 + [SHIFT K_SPACE] > dk(413) $U34
+dk(413) $U34 + [SHIFT K_SPACE] > dk(413) $U35
+
+c xtm
+$x 'tm' + ' ' > dk(414) $S20
+$x 'tm' + [SHIFT K_SPACE] > dk(414) $S19
+'+414' + '+' > dk(414)
+c ->
+dk(414) $S20 + ' ' > dk(414) $S19
+dk(414) $S19 + ' ' > dk(414) $S20
+c <-
+dk(414) $S19 + [SHIFT K_SPACE] > dk(414) $S20
+dk(414) $S20 + [SHIFT K_SPACE] > dk(414) $S19
+
+c xwi
+$x 'wi' + ' ' > dk(415) $D43
+$x 'wi' + [SHIFT K_SPACE] > dk(415) $D43
+'+415' + '+' > dk(415)
+
+c zAb
+'z' $A 'b' + ' ' > dk(416) $E17
+'z' $A 'b' + [SHIFT K_SPACE] > dk(416) $E17
+'+416' + '+' > dk(416)
+
+c zSn
+'z' $S 'n' + ' ' > dk(417) $M9
+'z' $S 'n' + [SHIFT K_SPACE] > dk(417) $M9
+'+417' + '+' > dk(417)
+
+c zin
+'zin' + ' ' > dk(418) $T11
+'zin' + [SHIFT K_SPACE] > dk(418) $T11
+'+418' + '+' > dk(418)
+
+c zmA
+'zm' $A + ' ' > dk(419) $F36
+'zm' $A + [SHIFT K_SPACE] > dk(419) $F36
+'+419' + '+' > dk(419)
+
+c zmn
+'zmn' + ' ' > dk(420) $U32
+'zmn' + [SHIFT K_SPACE] > dk(420) $U32
+'+420' + '+' > dk(420)
+
+c zwn
+'zwn' + ' ' > dk(421) $T11
+'zwn' + [SHIFT K_SPACE] > dk(421) $T11
+'+421' + '+' > dk(421)
+
+c 1000
+'1000' + ' ' > dk(422) $M12
+'1000' + [SHIFT K_SPACE] > dk(422) $M12
+'+422' + '+' > dk(422)
+
+c AqHw
+$A 'q' $H 'w' + ' ' > dk(423) $T7A
+$A 'q' $H 'w' + [SHIFT K_SPACE] > dk(423) $T7A
+'+423' + '+' > dk(423)
+
+c Hmsi
+$H 'msi' + ' ' > dk(424) $A3
+$H 'msi' + [SHIFT K_SPACE] > dk(424) $A17A
+'+424' + '+' > dk(424)
+c ->
+dk(424) $A3 + ' ' > dk(424) $A17A
+dk(424) $A17A + ' ' > dk(424) $A3
+c <-
+dk(424) $A17A + [SHIFT K_SPACE] > dk(424) $A3
+dk(424) $A3 + [SHIFT K_SPACE] > dk(424) $A17A
+
+c Hnqt
+$H 'nqt' + ' ' > dk(425) $W22
+$H 'nqt' + [SHIFT K_SPACE] > dk(425) $W22
+'+425' + '+' > dk(425)
+
+c HqAt
+$H 'q' $A 't' + ' ' > dk(426) $U11
+$H 'q' $A 't' + [SHIFT K_SPACE] > dk(426) $U12
+'+426' + '+' > dk(426)
+c ->
+dk(426) $U11 + ' ' > dk(426) $S38
+dk(426) $S38 + ' ' > dk(426) $U12
+dk(426) $U12 + ' ' > dk(426) $U11
+c <-
+dk(426) $U12 + [SHIFT K_SPACE] > dk(426) $S38
+dk(426) $S38 + [SHIFT K_SPACE] > dk(426) $U11
+dk(426) $U11 + [SHIFT K_SPACE] > dk(426) $U12
+
+c HsAt
+$H 's' $A 't' + ' ' > dk(427) $E4
+$H 's' $A 't' + [SHIFT K_SPACE] > dk(427) $E4
+'+427' + '+' > dk(427)
+
+c SmAw
+$S 'm' $A 'w' + ' ' > dk(428) $A33
+$S 'm' $A 'w' + [SHIFT K_SPACE] > dk(428) $A33
+'+428' + '+' > dk(428)
+
+c Snwt
+$S 'nwt' + ' ' > dk(429) $O51
+$S 'nwt' + [SHIFT K_SPACE] > dk(429) $O51
+'+429' + '+' > dk(429)
+
+c Spsi
+$S 'psi' + ' ' > dk(430) $A51
+$S 'psi' + [SHIFT K_SPACE] > dk(430) $A50
+'+430' + '+' > dk(430)
+c ->
+dk(430) $A51 + ' ' > dk(430) $A50
+dk(430) $A50 + ' ' > dk(430) $A51
+c <-
+dk(430) $A50 + [SHIFT K_SPACE] > dk(430) $A51
+dk(430) $A51 + [SHIFT K_SPACE] > dk(430) $A50
+
+c Styw
+$S 'tyw' + ' ' > dk(431) $I2
+$S 'tyw' + [SHIFT K_SPACE] > dk(431) $I2
+'+431' + '+' > dk(431)
+
+c Swty
+$S 'wty' + ' ' > dk(432) $S9
+$S 'wty' + [SHIFT K_SPACE] > dk(432) $S9
+'+432' + '+' > dk(432)
+
+c Xnmw
+$X 'nmw' + ' ' > dk(433) $C4
+$X 'nmw' + [SHIFT K_SPACE] > dk(433) $E11
+'+433' + '+' > dk(433)
+c ->
+dk(433) $C4 + ' ' > dk(433) $C5
+dk(433) $C5 + ' ' > dk(433) $E10
+dk(433) $E10 + ' ' > dk(433) $E11
+dk(433) $E11 + ' ' > dk(433) $C4
+c <-
+dk(433) $E11 + [SHIFT K_SPACE] > dk(433) $E10
+dk(433) $E10 + [SHIFT K_SPACE] > dk(433) $C5
+dk(433) $C5 + [SHIFT K_SPACE] > dk(433) $C4
+dk(433) $C4 + [SHIFT K_SPACE] > dk(433) $E11
+
+c Xnti
+$X 'nti' + ' ' > dk(434) $A22
+$X 'nti' + [SHIFT K_SPACE] > dk(434) $A22
+'+434' + '+' > dk(434)
+
+c aAmw
+$a $A 'mw' + ' ' > dk(435) $A49
+$a $A 'mw' + [SHIFT K_SPACE] > dk(435) $A49
+'+435' + '+' > dk(435)
+
+c afti
+$a 'fti' + ' ' > dk(436) $A36
+$a 'fti' + [SHIFT K_SPACE] > dk(436) $A37
+'+436' + '+' > dk(436)
+c ->
+dk(436) $A36 + ' ' > dk(436) $A37
+dk(436) $A37 + ' ' > dk(436) $A36
+c <-
+dk(436) $A37 + [SHIFT K_SPACE] > dk(436) $A36
+dk(436) $A36 + [SHIFT K_SPACE] > dk(436) $A37
+
+c baHi
+'b' $a $H 'i' + ' ' > dk(437) $G32
+'b' $a $H 'i' + [SHIFT K_SPACE] > dk(437) $G32
+'+437' + '+' > dk(437)
+
+c bity
+'bity' + ' ' > dk(438) $A45
+'bity' + [SHIFT K_SPACE] > dk(438) $A46
+'+438' + '+' > dk(438)
+c ->
+dk(438) $A45 + ' ' > dk(438) $A46
+dk(438) $A46 + ' ' > dk(438) $A45
+c <-
+dk(438) $A46 + [SHIFT K_SPACE] > dk(438) $A45
+dk(438) $A45 + [SHIFT K_SPACE] > dk(438) $A46
+
+c dSrt
+'d' $S 'rt' + ' ' > dk(439) $S3
+'d' $S 'rt' + [SHIFT K_SPACE] > dk(439) $W13
+'+439' + '+' > dk(439)
+c ->
+dk(439) $S3 + ' ' > dk(439) $W13
+dk(439) $W13 + ' ' > dk(439) $S3
+c <-
+dk(439) $W13 + [SHIFT K_SPACE] > dk(439) $S3
+dk(439) $S3 + [SHIFT K_SPACE] > dk(439) $W13
+
+c dwAt
+'dw' $A 't' + ' ' > dk(440) $N15
+'dw' $A 't' + [SHIFT K_SPACE] > dk(440) $N15
+'+440' + '+' > dk(440)
+
+c iAdt
+'i' $A 'dt' + ' ' > dk(441) $N4
+'i' $A 'dt' + [SHIFT K_SPACE] > dk(441) $N4
+'+441' + '+' > dk(441)
+
+c imAx
+'im' $A $x + ' ' > dk(442) $F39
+'im' $A $x + [SHIFT K_SPACE] > dk(442) $F39
+'+442' + '+' > dk(442)
+
+c imnt
+'imnt' + ' ' > dk(443) $R14
+'imnt' + [SHIFT K_SPACE] > dk(443) $R13
+'+443' + '+' > dk(443)
+c ->
+dk(443) $R14 + ' ' > dk(443) $R13
+dk(443) $R13 + ' ' > dk(443) $R14
+c <-
+dk(443) $R13 + [SHIFT K_SPACE] > dk(443) $R14
+dk(443) $R14 + [SHIFT K_SPACE] > dk(443) $R13
+
+c inpw
+'inpw' + ' ' > dk(444) $C6
+'inpw' + [SHIFT K_SPACE] > dk(444) $E16
+'+444' + '+' > dk(444)
+c ->
+dk(444) $C6 + ' ' > dk(444) $E15
+dk(444) $E15 + ' ' > dk(444) $E16
+dk(444) $E16 + ' ' > dk(444) $C6
+c <-
+dk(444) $E16 + [SHIFT K_SPACE] > dk(444) $E15
+dk(444) $E15 + [SHIFT K_SPACE] > dk(444) $C6
+dk(444) $C6 + [SHIFT K_SPACE] > dk(444) $E16
+
+c mAat
+'m' $A $a 't' + ' ' > dk(445) $C10
+'m' $A $a 't' + [SHIFT K_SPACE] > dk(445) $H6
+'+445' + '+' > dk(445)
+c ->
+dk(445) $C10 + ' ' > dk(445) $C10A
+dk(445) $C10A + ' ' > dk(445) $H6A
+dk(445) $H6A + ' ' > dk(445) $H6
+dk(445) $H6 + ' ' > dk(445) $C10
+c <-
+dk(445) $H6 + [SHIFT K_SPACE] > dk(445) $H6A
+dk(445) $H6A + [SHIFT K_SPACE] > dk(445) $C10A
+dk(445) $C10A + [SHIFT K_SPACE] > dk(445) $C10
+dk(445) $C10 + [SHIFT K_SPACE] > dk(445) $H6
+
+c mDAt
+'m' $D $A 't' + ' ' > dk(446) $Y1
+'m' $D $A 't' + [SHIFT K_SPACE] > dk(446) $Y2
+'+446' + '+' > dk(446)
+c ->
+dk(446) $Y1 + ' ' > dk(446) $Y2
+dk(446) $Y2 + ' ' > dk(446) $Y1
+c <-
+dk(446) $Y2 + [SHIFT K_SPACE] > dk(446) $Y1
+dk(446) $Y1 + [SHIFT K_SPACE] > dk(446) $Y2
+
+c mnTw
+'mn' $T 'w' + ' ' > dk(447) $C17
+'mn' $T 'w' + [SHIFT K_SPACE] > dk(447) $C17
+'+447' + '+' > dk(447)
+
+c mnai
+'mn' $a 'i' + ' ' > dk(448) $D27
+'mn' $a 'i' + [SHIFT K_SPACE] > dk(448) $D27A
+'+448' + '+' > dk(448)
+c ->
+dk(448) $D27 + ' ' > dk(448) $D27A
+dk(448) $D27A + ' ' > dk(448) $D27
+c <-
+dk(448) $D27A + [SHIFT K_SPACE] > dk(448) $D27
+dk(448) $D27 + [SHIFT K_SPACE] > dk(448) $D27A
+
+c mnat
+'mn' $a 't' + ' ' > dk(449) $B5
+'mn' $a 't' + [SHIFT K_SPACE] > dk(449) $B5
+'+449' + '+' > dk(449)
+
+c mnhd
+'mnhd' + ' ' > dk(450) $Y3
+'mnhd' + [SHIFT K_SPACE] > dk(450) $Y4
+'+450' + '+' > dk(450)
+c ->
+dk(450) $Y3 + ' ' > dk(450) $Y4
+dk(450) $Y4 + ' ' > dk(450) $Y3
+c <-
+dk(450) $Y4 + [SHIFT K_SPACE] > dk(450) $Y3
+dk(450) $Y3 + [SHIFT K_SPACE] > dk(450) $Y4
+
+c mnit
+'mnit' + ' ' > dk(451) $S18
+'mnit' + [SHIFT K_SPACE] > dk(451) $S18
+'+451' + '+' > dk(451)
+
+c mniw
+'mniw' + ' ' > dk(452) $A33
+'mniw' + [SHIFT K_SPACE] > dk(452) $A48
+'+452' + '+' > dk(452)
+c ->
+dk(452) $A33 + ' ' > dk(452) $A47
+dk(452) $A47 + ' ' > dk(452) $A48
+dk(452) $A48 + ' ' > dk(452) $A33
+c <-
+dk(452) $A48 + [SHIFT K_SPACE] > dk(452) $A47
+dk(452) $A47 + [SHIFT K_SPACE] > dk(452) $A33
+dk(452) $A33 + [SHIFT K_SPACE] > dk(452) $A48
+
+c mnxt
+'mn' $x 't' + ' ' > dk(453) $S27
+'mn' $x 't' + [SHIFT K_SPACE] > dk(453) $S27
+'+453' + '+' > dk(453)
+
+c msDr
+'ms' $D 'r' + ' ' > dk(454) $F21
+'ms' $D 'r' + [SHIFT K_SPACE] > dk(454) $F21
+'+454' + '+' > dk(454)
+
+c mxAt
+'m' $x $A 't' + ' ' > dk(455) $U38
+'m' $x $A 't' + [SHIFT K_SPACE] > dk(455) $U38
+'+455' + '+' > dk(455)
+
+c nSmt
+'n' $S 'mt' + ' ' > dk(456) $K6
+'n' $S 'mt' + [SHIFT K_SPACE] > dk(456) $P3
+'+456' + '+' > dk(456)
+c ->
+dk(456) $K6 + ' ' > dk(456) $P3
+dk(456) $P3 + ' ' > dk(456) $K6
+c <-
+dk(456) $P3 + [SHIFT K_SPACE] > dk(456) $K6
+dk(456) $K6 + [SHIFT K_SPACE] > dk(456) $P3
+
+c nbty
+'nbty' + ' ' > dk(457) $G16
+'nbty' + [SHIFT K_SPACE] > dk(457) $G16
+'+457' + '+' > dk(457)
+
+c niwt
+'niwt' + ' ' > dk(458) $O49
+'niwt' + [SHIFT K_SPACE] > dk(458) $O49
+'+458' + '+' > dk(458)
+
+c nmti
+'nmti' + ' ' > dk(459) $G7A
+'nmti' + [SHIFT K_SPACE] > dk(459) $G7B
+'+459' + '+' > dk(459)
+c ->
+dk(459) $G7A + ' ' > dk(459) $G7B
+dk(459) $G7B + ' ' > dk(459) $G7A
+c <-
+dk(459) $G7B + [SHIFT K_SPACE] > dk(459) $G7A
+dk(459) $G7A + [SHIFT K_SPACE] > dk(459) $G7B
+
+c nmtt
+'nmtt' + ' ' > dk(460) $D54
+'nmtt' + [SHIFT K_SPACE] > dk(460) $D54
+'+460' + '+' > dk(460)
+
+c nxxw
+'n' $x $x 'w' + ' ' > dk(461) $S45
+'n' $x $x 'w' + [SHIFT K_SPACE] > dk(461) $S45
+'+461' + '+' > dk(461)
+
+c qrsw
+'qrsw' + ' ' > dk(462) $Q6
+'qrsw' + [SHIFT K_SPACE] > dk(462) $Q6
+'+462' + '+' > dk(462)
+
+c rAwi
+'r' $A 'wi' + ' ' > dk(463) $D22
+'r' $A 'wi' + [SHIFT K_SPACE] > dk(463) $D22
+'+463' + '+' > dk(463)
+
+c rxyt
+'r' $x 'yt' + ' ' > dk(464) $G23
+'r' $x 'yt' + [SHIFT K_SPACE] > dk(464) $G24
+'+464' + '+' > dk(464)
+c ->
+dk(464) $G23 + ' ' > dk(464) $G24
+dk(464) $G24 + ' ' > dk(464) $G23
+c <-
+dk(464) $G24 + [SHIFT K_SPACE] > dk(464) $G23
+dk(464) $G23 + [SHIFT K_SPACE] > dk(464) $G24
+
+c sDAw
+'s' $D $A 'w' + ' ' > dk(465) $S19
+'s' $D $A 'w' + [SHIFT K_SPACE] > dk(465) $S19
+'+465' + '+' > dk(465)
+
+c sTAw
+'s' $T $A 'w' + ' ' > dk(466) $V3
+'s' $T $A 'w' + [SHIFT K_SPACE] > dk(466) $V3
+'+466' + '+' > dk(466)
+
+c siAT
+'si' $A $T + ' ' > dk(467) $D57
+'si' $A $T + [SHIFT K_SPACE] > dk(467) $D57
+'+467' + '+' > dk(467)
+
+c smsw
+'smsw' + ' ' > dk(468) $A19
+'smsw' + [SHIFT K_SPACE] > dk(468) $A20
+'+468' + '+' > dk(468)
+c ->
+dk(468) $A19 + ' ' > dk(468) $A20
+dk(468) $A20 + ' ' > dk(468) $A19
+c <-
+dk(468) $A20 + [SHIFT K_SPACE] > dk(468) $A19
+dk(468) $A19 + [SHIFT K_SPACE] > dk(468) $A20
+
+c snTr
+'sn' $T 'r' + ' ' > dk(469) $R7
+'sn' $T 'r' + [SHIFT K_SPACE] > dk(469) $R7
+'+469' + '+' > dk(469)
+
+c spAt
+'sp' $A 't' + ' ' > dk(470) $N24
+'sp' $A 't' + [SHIFT K_SPACE] > dk(470) $Aa8
+'+470' + '+' > dk(470)
+c ->
+dk(470) $N24 + ' ' > dk(470) $Aa8
+dk(470) $Aa8 + ' ' > dk(470) $N24
+c <-
+dk(470) $Aa8 + [SHIFT K_SPACE] > dk(470) $N24
+dk(470) $N24 + [SHIFT K_SPACE] > dk(470) $Aa8
+
+c spty
+'spty' + ' ' > dk(471) $D25
+'spty' + [SHIFT K_SPACE] > dk(471) $D25
+'+471' + '+' > dk(471)
+
+c sqdw
+'sqdw' + ' ' > dk(472) $A10
+'sqdw' + [SHIFT K_SPACE] > dk(472) $A10
+'+472' + '+' > dk(472)
+
+c srqt
+'srqt' + ' ' > dk(473) $L7
+'srqt' + [SHIFT K_SPACE] > dk(473) $L7
+'+473' + '+' > dk(473)
+
+c wDAt
+'w' $D $A 't' + ' ' > dk(474) $D10
+'w' $D $A 't' + [SHIFT K_SPACE] > dk(474) $D10
+'+474' + '+' > dk(474)
+
+c wrrt
+'wrrt' + ' ' > dk(475) $T17
+'wrrt' + [SHIFT K_SPACE] > dk(475) $S6
+'+475' + '+' > dk(475)
+c ->
+dk(475) $T17 + ' ' > dk(475) $S6
+dk(475) $S6 + ' ' > dk(475) $T17
+c <-
+dk(475) $S6 + [SHIFT K_SPACE] > dk(475) $T17
+dk(475) $T17 + [SHIFT K_SPACE] > dk(475) $S6
+
+c wsir
+'wsir' + ' ' > dk(476) $A43
+'wsir' + [SHIFT K_SPACE] > dk(476) $A44
+'+476' + '+' > dk(476)
+c ->
+dk(476) $A43 + ' ' > dk(476) $A44
+dk(476) $A44 + ' ' > dk(476) $A43
+c <-
+dk(476) $A44 + [SHIFT K_SPACE] > dk(476) $A43
+dk(476) $A43 + [SHIFT K_SPACE] > dk(476) $A44
+
+c wsxt
+'ws' $x 't' + ' ' > dk(477) $O15
+'ws' $x 't' + [SHIFT K_SPACE] > dk(477) $O15
+'+477' + '+' > dk(477)
+
+c xAst
+$x $A 'st' + ' ' > dk(478) $N25
+$x $A 'st' + [SHIFT K_SPACE] > dk(478) $N25
+'+478' + '+' > dk(478)
+
+c xAwt
+$x $A 'wt' + ' ' > dk(479) $R1
+$x $A 'wt' + [SHIFT K_SPACE] > dk(479) $R2
+'+479' + '+' > dk(479)
+c ->
+dk(479) $R1 + ' ' > dk(479) $R2
+dk(479) $R2 + ' ' > dk(479) $R1
+c <-
+dk(479) $R2 + [SHIFT K_SPACE] > dk(479) $R1
+dk(479) $R1 + [SHIFT K_SPACE] > dk(479) $R2
+
+c xfty
+$x 'fty' + ' ' > dk(480) $A13
+$x 'fty' + [SHIFT K_SPACE] > dk(480) $A14A
+'+480' + '+' > dk(480)
+c ->
+dk(480) $A13 + ' ' > dk(480) $A14
+dk(480) $A14 + ' ' > dk(480) $A14A
+dk(480) $A14A + ' ' > dk(480) $A13
+c <-
+dk(480) $A14A + [SHIFT K_SPACE] > dk(480) $A14
+dk(480) $A14 + [SHIFT K_SPACE] > dk(480) $A13
+dk(480) $A13 + [SHIFT K_SPACE] > dk(480) $A14A
+
+c xnms
+$x 'nms' + ' ' > dk(481) $A11
+$x 'nms' + [SHIFT K_SPACE] > dk(481) $A11
+'+481' + '+' > dk(481)
+
+c xprS
+$x 'pr' $S + ' ' > dk(482) $S7
+$x 'pr' $S + [SHIFT K_SPACE] > dk(482) $S7
+'+482' + '+' > dk(482)
+
+c xwsi
+$x 'wsi' + ' ' > dk(483) $A34
+$x 'wsi' + [SHIFT K_SPACE] > dk(483) $A34
+'+483' + '+' > dk(483)
+
+c zSSt
+'z' $S $S 't' + ' ' > dk(484) $Y8
+'z' $S $S 't' + [SHIFT K_SPACE] > dk(484) $Y8
+'+484' + '+' > dk(484)
+
+c zxnt
+'z' $x 'nt' + ' ' > dk(485) $O30
+'z' $x 'nt' + [SHIFT K_SPACE] > dk(485) $O30
+'+485' + '+' > dk(485)
+
+c zzmt
+'zzmt' + ' ' > dk(486) $E6
+'zzmt' + [SHIFT K_SPACE] > dk(486) $E6
+'+486' + '+' > dk(486)
+
+c DHwty
+$D $H 'wty' + ' ' > dk(487) $C3
+$D $H 'wty' + [SHIFT K_SPACE] > dk(487) $X3
+'+487' + '+' > dk(487)
+c ->
+dk(487) $C3 + ' ' > dk(487) $G26A
+dk(487) $G26A + ' ' > dk(487) $G26
+dk(487) $G26 + ' ' > dk(487) $X2
+dk(487) $X2 + ' ' > dk(487) $X3
+dk(487) $X3 + ' ' > dk(487) $C3
+c <-
+dk(487) $X3 + [SHIFT K_SPACE] > dk(487) $X2
+dk(487) $X2 + [SHIFT K_SPACE] > dk(487) $G26
+dk(487) $G26 + [SHIFT K_SPACE] > dk(487) $G26A
+dk(487) $G26A + [SHIFT K_SPACE] > dk(487) $C3
+dk(487) $C3 + [SHIFT K_SPACE] > dk(487) $X3
+
+c Hnmmt
+$H 'nmmt' + ' ' > dk(488) $N8
+$H 'nmmt' + [SHIFT K_SPACE] > dk(488) $N8
+'+488' + '+' > dk(488)
+
+c Sndyt
+$S 'ndyt' + ' ' > dk(489) $S26
+$S 'ndyt' + [SHIFT K_SPACE] > dk(489) $S26
+'+489' + '+' > dk(489)
+
+c sxmty
+'s' $x 'mty' + ' ' > dk(490) $S5
+'s' $x 'mty' + [SHIFT K_SPACE] > dk(490) $S6
+'+490' + '+' > dk(490)
+c ->
+dk(490) $S5 + ' ' > dk(490) $S6
+dk(490) $S6 + ' ' > dk(490) $S5
+c <-
+dk(490) $S6 + [SHIFT K_SPACE] > dk(490) $S5
+dk(490) $S5 + [SHIFT K_SPACE] > dk(490) $S6
+
+$A '1' + ' ' > $A1
+$a '1' + ' ' > $A1
+$A '2' + ' ' > $A2
+$a '2' + ' ' > $A2
+$A '3' + ' ' > $A3
+$a '3' + ' ' > $A3
+$A '3' + ' ' > $A3
+$a '3' + ' ' > $A3
+$A '4' + ' ' > $A4
+$a '4' + ' ' > $A4
+$A '4' + ' ' > $A4
+$a '4' + ' ' > $A4
+$A '5' + ' ' > $A5
+$a '5' + ' ' > $A5
+$A '5' $A + ' ' > $A5A
+$a '5' $a + ' ' > $A5A
+$A '6' + ' ' > $A6
+$a '6' + ' ' > $A6
+$A '6' $A + ' ' > $A6A
+$a '6' $a + ' ' > $A6A
+$A '6B' + ' ' > $A6B
+$a '6b' + ' ' > $A6B
+$A '7' + ' ' > $A7
+$a '7' + ' ' > $A7
+$A '8' + ' ' > $A8
+$a '8' + ' ' > $A8
+$A '9' + ' ' > $A9
+$a '9' + ' ' > $A9
+$A '9' + ' ' > $A9
+$a '9' + ' ' > $A9
+$A '9' + ' ' > $A9
+$a '9' + ' ' > $A9
+$A '9' + ' ' > $A9
+$a '9' + ' ' > $A9
+$A '9' + ' ' > $A9
+$a '9' + ' ' > $A9
+$A '10' + ' ' > $A10
+$a '10' + ' ' > $A10
+$A '10' + ' ' > $A10
+$a '10' + ' ' > $A10
+$A '11' + ' ' > $A11
+$a '11' + ' ' > $A11
+$A '12' + ' ' > $A12
+$a '12' + ' ' > $A12
+$A '13' + ' ' > $A13
+$a '13' + ' ' > $A13
+$A '13' + ' ' > $A13
+$a '13' + ' ' > $A13
+$A '14' + ' ' > $A14
+$a '14' + ' ' > $A14
+$A '14' + ' ' > $A14
+$a '14' + ' ' > $A14
+$A '14' + ' ' > $A14
+$a '14' + ' ' > $A14
+$A '14' $A + ' ' > $A14A
+$a '14' $a + ' ' > $A14A
+$A '14' $A + ' ' > $A14A
+$a '14' $a + ' ' > $A14A
+$A '14' $A + ' ' > $A14A
+$a '14' $a + ' ' > $A14A
+$A '15' + ' ' > $A15
+$a '15' + ' ' > $A15
+$A '16' + ' ' > $A16
+$a '16' + ' ' > $A16
+$A '16' + ' ' > $A16
+$a '16' + ' ' > $A16
+$A '16' + ' ' > $A16
+$a '16' + ' ' > $A16
+$A '17' + ' ' > $A17
+$a '17' + ' ' > $A17
+$A '17' + ' ' > $A17
+$a '17' + ' ' > $A17
+$A '17' + ' ' > $A17
+$a '17' + ' ' > $A17
+$A '17' + ' ' > $A17
+$a '17' + ' ' > $A17
+$A '17' $A + ' ' > $A17A
+$a '17' $a + ' ' > $A17A
+$A '17' $A + ' ' > $A17A
+$a '17' $a + ' ' > $A17A
+$A '17' $A + ' ' > $A17A
+$a '17' $a + ' ' > $A17A
+$A '18' + ' ' > $A18
+$a '18' + ' ' > $A18
+$A '19' + ' ' > $A19
+$a '19' + ' ' > $A19
+$A '19' + ' ' > $A19
+$a '19' + ' ' > $A19
+$A '19' + ' ' > $A19
+$a '19' + ' ' > $A19
+$A '19' + ' ' > $A19
+$a '19' + ' ' > $A19
+$A '19' + ' ' > $A19
+$a '19' + ' ' > $A19
+$A '19' + ' ' > $A19
+$a '19' + ' ' > $A19
+$A '20' + ' ' > $A20
+$a '20' + ' ' > $A20
+$A '21' + ' ' > $A21
+$a '21' + ' ' > $A21
+$A '21' + ' ' > $A21
+$a '21' + ' ' > $A21
+$A '22' + ' ' > $A22
+$a '22' + ' ' > $A22
+$A '22' + ' ' > $A22
+$a '22' + ' ' > $A22
+$A '23' + ' ' > $A23
+$a '23' + ' ' > $A23
+$A '24' + ' ' > $A24
+$a '24' + ' ' > $A24
+$A '24' + ' ' > $A24
+$a '24' + ' ' > $A24
+$A '24' + ' ' > $A24
+$a '24' + ' ' > $A24
+$A '25' + ' ' > $A25
+$a '25' + ' ' > $A25
+$A '26' + ' ' > $A26
+$a '26' + ' ' > $A26
+$A '26' + ' ' > $A26
+$a '26' + ' ' > $A26
+$A '26' + ' ' > $A26
+$a '26' + ' ' > $A26
+$A '27' + ' ' > $A27
+$a '27' + ' ' > $A27
+$A '28' + ' ' > $A28
+$a '28' + ' ' > $A28
+$A '28' + ' ' > $A28
+$a '28' + ' ' > $A28
+$A '28' + ' ' > $A28
+$a '28' + ' ' > $A28
+$A '28' + ' ' > $A28
+$a '28' + ' ' > $A28
+$A '28' + ' ' > $A28
+$a '28' + ' ' > $A28
+$A '29' + ' ' > $A29
+$a '29' + ' ' > $A29
+$A '30' + ' ' > $A30
+$a '30' + ' ' > $A30
+$A '30' + ' ' > $A30
+$a '30' + ' ' > $A30
+$A '30' + ' ' > $A30
+$a '30' + ' ' > $A30
+$A '30' + ' ' > $A30
+$a '30' + ' ' > $A30
+$A '31' + ' ' > $A31
+$a '31' + ' ' > $A31
+$A '31' + ' ' > $A31
+$a '31' + ' ' > $A31
+$A '32' + ' ' > $A32
+$a '32' + ' ' > $A32
+$A '32' $A + ' ' > $A32A
+$a '32' $a + ' ' > $A32A
+$A '33' + ' ' > $A33
+$a '33' + ' ' > $A33
+$A '33' + ' ' > $A33
+$a '33' + ' ' > $A33
+$A '34' + ' ' > $A34
+$a '34' + ' ' > $A34
+$A '35' + ' ' > $A35
+$a '35' + ' ' > $A35
+$A '36' + ' ' > $A36
+$a '36' + ' ' > $A36
+$A '37' + ' ' > $A37
+$a '37' + ' ' > $A37
+$A '38' + ' ' > $A38
+$a '38' + ' ' > $A38
+$A '38' + ' ' > $A38
+$a '38' + ' ' > $A38
+$A '39' + ' ' > $A39
+$a '39' + ' ' > $A39
+$A '39' + ' ' > $A39
+$a '39' + ' ' > $A39
+$A '40' + ' ' > $A40
+$a '40' + ' ' > $A40
+$A '40' $A + ' ' > $A40A
+$a '40' $a + ' ' > $A40A
+$A '41' + ' ' > $A41
+$a '41' + ' ' > $A41
+$A '41' + ' ' > $A41
+$a '41' + ' ' > $A41
+$A '42' + ' ' > $A42
+$a '42' + ' ' > $A42
+$A '42' + ' ' > $A42
+$a '42' + ' ' > $A42
+$A '42' $A + ' ' > $A42A
+$a '42' $a + ' ' > $A42A
+$A '43' + ' ' > $A43
+$a '43' + ' ' > $A43
+$A '43' + ' ' > $A43
+$a '43' + ' ' > $A43
+$A '43' $A + ' ' > $A43A
+$a '43' $a + ' ' > $A43A
+$A '44' + ' ' > $A44
+$a '44' + ' ' > $A44
+$A '44' + ' ' > $A44
+$a '44' + ' ' > $A44
+$A '45' + ' ' > $A45
+$a '45' + ' ' > $A45
+$A '45' $A + ' ' > $A45A
+$a '45' $a + ' ' > $A45A
+$A '46' + ' ' > $A46
+$a '46' + ' ' > $A46
+$A '47' + ' ' > $A47
+$a '47' + ' ' > $A47
+$A '47' + ' ' > $A47
+$a '47' + ' ' > $A47
+$A '47' + ' ' > $A47
+$a '47' + ' ' > $A47
+$A '48' + ' ' > $A48
+$a '48' + ' ' > $A48
+$A '48' + ' ' > $A48
+$a '48' + ' ' > $A48
+$A '48' + ' ' > $A48
+$a '48' + ' ' > $A48
+$A '49' + ' ' > $A49
+$a '49' + ' ' > $A49
+$A '50' + ' ' > $A50
+$a '50' + ' ' > $A50
+$A '50' + ' ' > $A50
+$a '50' + ' ' > $A50
+$A '51' + ' ' > $A51
+$a '51' + ' ' > $A51
+$A '51' + ' ' > $A51
+$a '51' + ' ' > $A51
+$A '52' + ' ' > $A52
+$a '52' + ' ' > $A52
+$A '52' + ' ' > $A52
+$a '52' + ' ' > $A52
+$A '53' + ' ' > $A53
+$a '53' + ' ' > $A53
+$A '53' + ' ' > $A53
+$a '53' + ' ' > $A53
+$A '53' + ' ' > $A53
+$a '53' + ' ' > $A53
+$A '54' + ' ' > $A54
+$a '54' + ' ' > $A54
+$A '55' + ' ' > $A55
+$a '55' + ' ' > $A55
+$A '55' + ' ' > $A55
+$a '55' + ' ' > $A55
+$A '56' + ' ' > $A56
+$a '56' + ' ' > $A56
+$A '57' + ' ' > $A57
+$a '57' + ' ' > $A57
+$A '58' + ' ' > $A58
+$a '58' + ' ' > $A58
+$A '59' + ' ' > $A59
+$a '59' + ' ' > $A59
+$A '60' + ' ' > $A60
+$a '60' + ' ' > $A60
+$A '61' + ' ' > $A61
+$a '61' + ' ' > $A61
+$A '62' + ' ' > $A62
+$a '62' + ' ' > $A62
+$A '63' + ' ' > $A63
+$a '63' + ' ' > $A63
+$A '64' + ' ' > $A64
+$a '64' + ' ' > $A64
+$A '65' + ' ' > $A65
+$a '65' + ' ' > $A65
+$A '66' + ' ' > $A66
+$a '66' + ' ' > $A66
+$A '67' + ' ' > $A67
+$a '67' + ' ' > $A67
+$A '68' + ' ' > $A68
+$a '68' + ' ' > $A68
+$A '69' + ' ' > $A69
+$a '69' + ' ' > $A69
+$A '70' + ' ' > $A70
+$a '70' + ' ' > $A70
+'B1' + ' ' > $B1
+'b1' + ' ' > $B1
+'B2' + ' ' > $B2
+'b2' + ' ' > $B2
+'B3' + ' ' > $B3
+'b3' + ' ' > $B3
+'B3' + ' ' > $B3
+'b3' + ' ' > $B3
+'B4' + ' ' > $B4
+'b4' + ' ' > $B4
+'B4' + ' ' > $B4
+'b4' + ' ' > $B4
+'B5' + ' ' > $B5
+'b5' + ' ' > $B5
+'B5' $A + ' ' > $B5A
+'b5' $a + ' ' > $B5A
+'B6' + ' ' > $B6
+'b6' + ' ' > $B6
+'B7' + ' ' > $B7
+'b7' + ' ' > $B7
+'B8' + ' ' > $B8
+'b8' + ' ' > $B8
+'B9' + ' ' > $B9
+'b9' + ' ' > $B9
+'C1' + ' ' > $C1
+'c1' + ' ' > $C1
+'C2' + ' ' > $C2
+'c2' + ' ' > $C2
+'C2' $A + ' ' > $C2A
+'c2' $a + ' ' > $C2A
+'C2B' + ' ' > $C2B
+'c2b' + ' ' > $C2B
+'C2C' + ' ' > $C2C
+'c2c' + ' ' > $C2C
+'C3' + ' ' > $C3
+'c3' + ' ' > $C3
+'C4' + ' ' > $C4
+'c4' + ' ' > $C4
+'C5' + ' ' > $C5
+'c5' + ' ' > $C5
+'C6' + ' ' > $C6
+'c6' + ' ' > $C6
+'C7' + ' ' > $C7
+'c7' + ' ' > $C7
+'C8' + ' ' > $C8
+'c8' + ' ' > $C8
+'C9' + ' ' > $C9
+'c9' + ' ' > $C9
+'C10' + ' ' > $C10
+'c10' + ' ' > $C10
+'C10' $A + ' ' > $C10A
+'c10' $a + ' ' > $C10A
+'C11' + ' ' > $C11
+'c11' + ' ' > $C11
+'C12' + ' ' > $C12
+'c12' + ' ' > $C12
+'C13' + ' ' > $C13
+'c13' + ' ' > $C13
+'C14' + ' ' > $C14
+'c14' + ' ' > $C14
+'C15' + ' ' > $C15
+'c15' + ' ' > $C15
+'C16' + ' ' > $C16
+'c16' + ' ' > $C16
+'C17' + ' ' > $C17
+'c17' + ' ' > $C17
+'C18' + ' ' > $C18
+'c18' + ' ' > $C18
+'C19' + ' ' > $C19
+'c19' + ' ' > $C19
+'C20' + ' ' > $C20
+'c20' + ' ' > $C20
+'C21' + ' ' > $C21
+'c21' + ' ' > $C21
+'C22' + ' ' > $C22
+'c22' + ' ' > $C22
+'C23' + ' ' > $C23
+'c23' + ' ' > $C23
+'C24' + ' ' > $C24
+'c24' + ' ' > $C24
+$D '1' + ' ' > $D1
+'d1' + ' ' > $D1
+$D '2' + ' ' > $D2
+'d2' + ' ' > $D2
+$D '3' + ' ' > $D3
+'d3' + ' ' > $D3
+$D '3' + ' ' > $D3
+'d3' + ' ' > $D3
+$D '3' + ' ' > $D3
+'d3' + ' ' > $D3
+$D '4' + ' ' > $D4
+'d4' + ' ' > $D4
+$D '4' + ' ' > $D4
+'d4' + ' ' > $D4
+$D '4' + ' ' > $D4
+'d4' + ' ' > $D4
+$D '5' + ' ' > $D5
+'d5' + ' ' > $D5
+$D '5' + ' ' > $D5
+'d5' + ' ' > $D5
+$D '5' + ' ' > $D5
+'d5' + ' ' > $D5
+$D '6' + ' ' > $D6
+'d6' + ' ' > $D6
+$D '6' + ' ' > $D6
+'d6' + ' ' > $D6
+$D '6' + ' ' > $D6
+'d6' + ' ' > $D6
+$D '7' + ' ' > $D7
+'d7' + ' ' > $D7
+$D '7' + ' ' > $D7
+'d7' + ' ' > $D7
+$D '8' + ' ' > $D8
+'d8' + ' ' > $D8
+$D '8' + ' ' > $D8
+'d8' + ' ' > $D8
+$D '8' + ' ' > $D8
+'d8' + ' ' > $D8
+$D '8' $A + ' ' > $D8A
+'d8' $a + ' ' > $D8A
+$D '9' + ' ' > $D9
+'d9' + ' ' > $D9
+$D '10' + ' ' > $D10
+'d10' + ' ' > $D10
+$D '11' + ' ' > $D11
+'d11' + ' ' > $D11
+$D '12' + ' ' > $D12
+'d12' + ' ' > $D12
+$D '12' + ' ' > $D12
+'d12' + ' ' > $D12
+$D '12' + ' ' > $D12
+'d12' + ' ' > $D12
+$D '13' + ' ' > $D13
+'d13' + ' ' > $D13
+$D '14' + ' ' > $D14
+'d14' + ' ' > $D14
+$D '15' + ' ' > $D15
+'d15' + ' ' > $D15
+$D '16' + ' ' > $D16
+'d16' + ' ' > $D16
+$D '17' + ' ' > $D17
+'d17' + ' ' > $D17
+$D '18' + ' ' > $D18
+'d18' + ' ' > $D18
+$D '19' + ' ' > $D19
+'d19' + ' ' > $D19
+$D '19' + ' ' > $D19
+'d19' + ' ' > $D19
+$D '19' + ' ' > $D19
+'d19' + ' ' > $D19
+$D '20' + ' ' > $D20
+'d20' + ' ' > $D20
+$D '20' + ' ' > $D20
+'d20' + ' ' > $D20
+$D '20' + ' ' > $D20
+'d20' + ' ' > $D20
+$D '21' + ' ' > $D21
+'d21' + ' ' > $D21
+$D '21' + ' ' > $D21
+'d21' + ' ' > $D21
+$D '22' + ' ' > $D22
+'d22' + ' ' > $D22
+$D '23' + ' ' > $D23
+'d23' + ' ' > $D23
+$D '24' + ' ' > $D24
+'d24' + ' ' > $D24
+$D '25' + ' ' > $D25
+'d25' + ' ' > $D25
+$D '26' + ' ' > $D26
+'d26' + ' ' > $D26
+$D '26' + ' ' > $D26
+'d26' + ' ' > $D26
+$D '26' + ' ' > $D26
+'d26' + ' ' > $D26
+$D '27' + ' ' > $D27
+'d27' + ' ' > $D27
+$D '27' + ' ' > $D27
+'d27' + ' ' > $D27
+$D '27' + ' ' > $D27
+'d27' + ' ' > $D27
+$D '27' $A + ' ' > $D27A
+'d27' $a + ' ' > $D27A
+$D '27' $A + ' ' > $D27A
+'d27' $a + ' ' > $D27A
+$D '27' $A + ' ' > $D27A
+'d27' $a + ' ' > $D27A
+$D '28' + ' ' > $D28
+'d28' + ' ' > $D28
+$D '29' + ' ' > $D29
+'d29' + ' ' > $D29
+$D '30' + ' ' > $D30
+'d30' + ' ' > $D30
+$D '31' + ' ' > $D31
+'d31' + ' ' > $D31
+$D '31' $A + ' ' > $D31A
+'d31' $a + ' ' > $D31A
+$D '32' + ' ' > $D32
+'d32' + ' ' > $D32
+$D '32' + ' ' > $D32
+'d32' + ' ' > $D32
+$D '33' + ' ' > $D33
+'d33' + ' ' > $D33
+$D '33' + ' ' > $D33
+'d33' + ' ' > $D33
+$D '34' + ' ' > $D34
+'d34' + ' ' > $D34
+$D '34' $A + ' ' > $D34A
+'d34' $a + ' ' > $D34A
+$D '35' + ' ' > $D35
+'d35' + ' ' > $D35
+$D '35' + ' ' > $D35
+'d35' + ' ' > $D35
+$D '35' + ' ' > $D35
+'d35' + ' ' > $D35
+$D '35' + ' ' > $D35
+'d35' + ' ' > $D35
+$D '36' + ' ' > $D36
+'d36' + ' ' > $D36
+$D '37' + ' ' > $D37
+'d37' + ' ' > $D37
+$D '37' + ' ' > $D37
+'d37' + ' ' > $D37
+$D '37' + ' ' > $D37
+'d37' + ' ' > $D37
+$D '37' + ' ' > $D37
+'d37' + ' ' > $D37
+$D '37' + ' ' > $D37
+'d37' + ' ' > $D37
+$D '37' + ' ' > $D37
+'d37' + ' ' > $D37
+$D '37' + ' ' > $D37
+'d37' + ' ' > $D37
+$D '38' + ' ' > $D38
+'d38' + ' ' > $D38
+$D '38' + ' ' > $D38
+'d38' + ' ' > $D38
+$D '39' + ' ' > $D39
+'d39' + ' ' > $D39
+$D '40' + ' ' > $D40
+'d40' + ' ' > $D40
+$D '40' + ' ' > $D40
+'d40' + ' ' > $D40
+$D '41' + ' ' > $D41
+'d41' + ' ' > $D41
+$D '41' + ' ' > $D41
+'d41' + ' ' > $D41
+$D '41' + ' ' > $D41
+'d41' + ' ' > $D41
+$D '42' + ' ' > $D42
+'d42' + ' ' > $D42
+$D '43' + ' ' > $D43
+'d43' + ' ' > $D43
+$D '43' + ' ' > $D43
+'d43' + ' ' > $D43
+$D '44' + ' ' > $D44
+'d44' + ' ' > $D44
+$D '45' + ' ' > $D45
+'d45' + ' ' > $D45
+$D '46' + ' ' > $D46
+'d46' + ' ' > $D46
+$D '46' + ' ' > $D46
+'d46' + ' ' > $D46
+$D '46' $A + ' ' > $D46A
+'d46' $a + ' ' > $D46A
+$D '47' + ' ' > $D47
+'d47' + ' ' > $D47
+$D '48' + ' ' > $D48
+'d48' + ' ' > $D48
+$D '48' $A + ' ' > $D48A
+'d48' $a + ' ' > $D48A
+$D '49' + ' ' > $D49
+'d49' + ' ' > $D49
+$D '50' + ' ' > $D50
+'d50' + ' ' > $D50
+$D '50' $A + ' ' > $D50A
+'d50' $a + ' ' > $D50A
+$D '50B' + ' ' > $D50B
+'d50b' + ' ' > $D50B
+$D '50C' + ' ' > $D50C
+'d50c' + ' ' > $D50C
+$D '50' $D + ' ' > $D50D
+'d50d' + ' ' > $D50D
+$D '50E' + ' ' > $D50E
+'d50e' + ' ' > $D50E
+$D '50F' + ' ' > $D50F
+'d50f' + ' ' > $D50F
+$D '50G' + ' ' > $D50G
+'d50g' + ' ' > $D50G
+$D '50' $H + ' ' > $D50H
+'d50h' + ' ' > $D50H
+$D '50I' + ' ' > $D50I
+'d50i' + ' ' > $D50I
+$D '51' + ' ' > $D51
+'d51' + ' ' > $D51
+$D '51' + ' ' > $D51
+'d51' + ' ' > $D51
+$D '52' + ' ' > $D52
+'d52' + ' ' > $D52
+$D '52' $A + ' ' > $D52A
+'d52' $a + ' ' > $D52A
+$D '53' + ' ' > $D53
+'d53' + ' ' > $D53
+$D '53' + ' ' > $D53
+'d53' + ' ' > $D53
+$D '54' + ' ' > $D54
+'d54' + ' ' > $D54
+$D '54' + ' ' > $D54
+'d54' + ' ' > $D54
+$D '54' $A + ' ' > $D54A
+'d54' $a + ' ' > $D54A
+$D '55' + ' ' > $D55
+'d55' + ' ' > $D55
+$D '56' + ' ' > $D56
+'d56' + ' ' > $D56
+$D '56' + ' ' > $D56
+'d56' + ' ' > $D56
+$D '56' + ' ' > $D56
+'d56' + ' ' > $D56
+$D '56' + ' ' > $D56
+'d56' + ' ' > $D56
+$D '57' + ' ' > $D57
+'d57' + ' ' > $D57
+$D '57' + ' ' > $D57
+'d57' + ' ' > $D57
+$D '57' + ' ' > $D57
+'d57' + ' ' > $D57
+$D '58' + ' ' > $D58
+'d58' + ' ' > $D58
+$D '58' + ' ' > $D58
+'d58' + ' ' > $D58
+$D '59' + ' ' > $D59
+'d59' + ' ' > $D59
+$D '60' + ' ' > $D60
+'d60' + ' ' > $D60
+$D '61' + ' ' > $D61
+'d61' + ' ' > $D61
+$D '62' + ' ' > $D62
+'d62' + ' ' > $D62
+$D '63' + ' ' > $D63
+'d63' + ' ' > $D63
+$D '64' + ' ' > $D64
+'d64' + ' ' > $D64
+$D '65' + ' ' > $D65
+'d65' + ' ' > $D65
+$D '66' + ' ' > $D66
+'d66' + ' ' > $D66
+$D '67' + ' ' > $D67
+'d67' + ' ' > $D67
+$D '67' $A + ' ' > $D67A
+'d67' $a + ' ' > $D67A
+$D '67B' + ' ' > $D67B
+'d67b' + ' ' > $D67B
+$D '67C' + ' ' > $D67C
+'d67c' + ' ' > $D67C
+$D '67' $D + ' ' > $D67D
+'d67d' + ' ' > $D67D
+$D '67E' + ' ' > $D67E
+'d67e' + ' ' > $D67E
+$D '67F' + ' ' > $D67F
+'d67f' + ' ' > $D67F
+$D '67G' + ' ' > $D67G
+'d67g' + ' ' > $D67G
+$D '67' $H + ' ' > $D67H
+'d67h' + ' ' > $D67H
+'E1' + ' ' > $E1
+'e1' + ' ' > $E1
+'E1' + ' ' > $E1
+'e1' + ' ' > $E1
+'E2' + ' ' > $E2
+'e2' + ' ' > $E2
+'E2' + ' ' > $E2
+'e2' + ' ' > $E2
+'E3' + ' ' > $E3
+'e3' + ' ' > $E3
+'E4' + ' ' > $E4
+'e4' + ' ' > $E4
+'E5' + ' ' > $E5
+'e5' + ' ' > $E5
+'E6' + ' ' > $E6
+'e6' + ' ' > $E6
+'E7' + ' ' > $E7
+'e7' + ' ' > $E7
+'E8' + ' ' > $E8
+'e8' + ' ' > $E8
+'E8' $A + ' ' > $E8A
+'e8' $a + ' ' > $E8A
+'E9' + ' ' > $E9
+'e9' + ' ' > $E9
+'E9' $A + ' ' > $E9A
+'e9' $a + ' ' > $E9A
+'E10' + ' ' > $E10
+'e10' + ' ' > $E10
+'E10' + ' ' > $E10
+'e10' + ' ' > $E10
+'E11' + ' ' > $E11
+'e11' + ' ' > $E11
+'E11' + ' ' > $E11
+'e11' + ' ' > $E11
+'E12' + ' ' > $E12
+'e12' + ' ' > $E12
+'E13' + ' ' > $E13
+'e13' + ' ' > $E13
+'E14' + ' ' > $E14
+'e14' + ' ' > $E14
+'E15' + ' ' > $E15
+'e15' + ' ' > $E15
+'E16' + ' ' > $E16
+'e16' + ' ' > $E16
+'E16' $A + ' ' > $E16A
+'e16' $a + ' ' > $E16A
+'E17' + ' ' > $E17
+'e17' + ' ' > $E17
+'E17' $A + ' ' > $E17A
+'e17' $a + ' ' > $E17A
+'E18' + ' ' > $E18
+'e18' + ' ' > $E18
+'E19' + ' ' > $E19
+'e19' + ' ' > $E19
+'E20' + ' ' > $E20
+'e20' + ' ' > $E20
+'E20' $A + ' ' > $E20A
+'e20' $a + ' ' > $E20A
+'E21' + ' ' > $E21
+'e21' + ' ' > $E21
+'E22' + ' ' > $E22
+'e22' + ' ' > $E22
+'E23' + ' ' > $E23
+'e23' + ' ' > $E23
+'E23' + ' ' > $E23
+'e23' + ' ' > $E23
+'E24' + ' ' > $E24
+'e24' + ' ' > $E24
+'E25' + ' ' > $E25
+'e25' + ' ' > $E25
+'E26' + ' ' > $E26
+'e26' + ' ' > $E26
+'E27' + ' ' > $E27
+'e27' + ' ' > $E27
+'E28' + ' ' > $E28
+'e28' + ' ' > $E28
+'E28' $A + ' ' > $E28A
+'e28' $a + ' ' > $E28A
+'E29' + ' ' > $E29
+'e29' + ' ' > $E29
+'E30' + ' ' > $E30
+'e30' + ' ' > $E30
+'E31' + ' ' > $E31
+'e31' + ' ' > $E31
+'E32' + ' ' > $E32
+'e32' + ' ' > $E32
+'E33' + ' ' > $E33
+'e33' + ' ' > $E33
+'E34' + ' ' > $E34
+'e34' + ' ' > $E34
+'E34' $A + ' ' > $E34A
+'e34' $a + ' ' > $E34A
+'E36' + ' ' > $E36
+'e36' + ' ' > $E36
+'E37' + ' ' > $E37
+'e37' + ' ' > $E37
+'E38' + ' ' > $E38
+'e38' + ' ' > $E38
+'F1' + ' ' > $F1
+'f1' + ' ' > $F1
+'F1' $A + ' ' > $F1A
+'f1' $a + ' ' > $F1A
+'F2' + ' ' > $F2
+'f2' + ' ' > $F2
+'F3' + ' ' > $F3
+'f3' + ' ' > $F3
+'F4' + ' ' > $F4
+'f4' + ' ' > $F4
+'F5' + ' ' > $F5
+'f5' + ' ' > $F5
+'F6' + ' ' > $F6
+'f6' + ' ' > $F6
+'F7' + ' ' > $F7
+'f7' + ' ' > $F7
+'F8' + ' ' > $F8
+'f8' + ' ' > $F8
+'F9' + ' ' > $F9
+'f9' + ' ' > $F9
+'F10' + ' ' > $F10
+'f10' + ' ' > $F10
+'F11' + ' ' > $F11
+'f11' + ' ' > $F11
+'F12' + ' ' > $F12
+'f12' + ' ' > $F12
+'F13' + ' ' > $F13
+'f13' + ' ' > $F13
+'F13' $A + ' ' > $F13A
+'f13' $a + ' ' > $F13A
+'F14' + ' ' > $F14
+'f14' + ' ' > $F14
+'F15' + ' ' > $F15
+'f15' + ' ' > $F15
+'F16' + ' ' > $F16
+'f16' + ' ' > $F16
+'F17' + ' ' > $F17
+'f17' + ' ' > $F17
+'F18' + ' ' > $F18
+'f18' + ' ' > $F18
+'F18' + ' ' > $F18
+'f18' + ' ' > $F18
+'F18' + ' ' > $F18
+'f18' + ' ' > $F18
+'F19' + ' ' > $F19
+'f19' + ' ' > $F19
+'F20' + ' ' > $F20
+'f20' + ' ' > $F20
+'F20' + ' ' > $F20
+'f20' + ' ' > $F20
+'F21' + ' ' > $F21
+'f21' + ' ' > $F21
+'F21' + ' ' > $F21
+'f21' + ' ' > $F21
+'F21' + ' ' > $F21
+'f21' + ' ' > $F21
+'F21' + ' ' > $F21
+'f21' + ' ' > $F21
+'F21' + ' ' > $F21
+'f21' + ' ' > $F21
+'F21' $A + ' ' > $F21A
+'f21' $a + ' ' > $F21A
+'F22' + ' ' > $F22
+'f22' + ' ' > $F22
+'F22' + ' ' > $F22
+'f22' + ' ' > $F22
+'F23' + ' ' > $F23
+'f23' + ' ' > $F23
+'F24' + ' ' > $F24
+'f24' + ' ' > $F24
+'F25' + ' ' > $F25
+'f25' + ' ' > $F25
+'F26' + ' ' > $F26
+'f26' + ' ' > $F26
+'F27' + ' ' > $F27
+'f27' + ' ' > $F27
+'F28' + ' ' > $F28
+'f28' + ' ' > $F28
+'F29' + ' ' > $F29
+'f29' + ' ' > $F29
+'F29' + ' ' > $F29
+'f29' + ' ' > $F29
+'F29' + ' ' > $F29
+'f29' + ' ' > $F29
+'F30' + ' ' > $F30
+'f30' + ' ' > $F30
+'F31' + ' ' > $F31
+'f31' + ' ' > $F31
+'F31' + ' ' > $F31
+'f31' + ' ' > $F31
+'F31' $A + ' ' > $F31A
+'f31' $a + ' ' > $F31A
+'F32' + ' ' > $F32
+'f32' + ' ' > $F32
+'F33' + ' ' > $F33
+'f33' + ' ' > $F33
+'F34' + ' ' > $F34
+'f34' + ' ' > $F34
+'F35' + ' ' > $F35
+'f35' + ' ' > $F35
+'F36' + ' ' > $F36
+'f36' + ' ' > $F36
+'F36' + ' ' > $F36
+'f36' + ' ' > $F36
+'F37' + ' ' > $F37
+'f37' + ' ' > $F37
+'F37' $A + ' ' > $F37A
+'f37' $a + ' ' > $F37A
+'F38' + ' ' > $F38
+'f38' + ' ' > $F38
+'F38' $A + ' ' > $F38A
+'f38' $a + ' ' > $F38A
+'F39' + ' ' > $F39
+'f39' + ' ' > $F39
+'F40' + ' ' > $F40
+'f40' + ' ' > $F40
+'F41' + ' ' > $F41
+'f41' + ' ' > $F41
+'F42' + ' ' > $F42
+'f42' + ' ' > $F42
+'F43' + ' ' > $F43
+'f43' + ' ' > $F43
+'F44' + ' ' > $F44
+'f44' + ' ' > $F44
+'F44' + ' ' > $F44
+'f44' + ' ' > $F44
+'F45' + ' ' > $F45
+'f45' + ' ' > $F45
+'F45' + ' ' > $F45
+'f45' + ' ' > $F45
+'F45' + ' ' > $F45
+'f45' + ' ' > $F45
+'F45' $A + ' ' > $F45A
+'f45' $a + ' ' > $F45A
+'F46' + ' ' > $F46
+'f46' + ' ' > $F46
+'F46' + ' ' > $F46
+'f46' + ' ' > $F46
+'F46' + ' ' > $F46
+'f46' + ' ' > $F46
+'F46' $A + ' ' > $F46A
+'f46' $a + ' ' > $F46A
+'F47' + ' ' > $F47
+'f47' + ' ' > $F47
+'F47' $A + ' ' > $F47A
+'f47' $a + ' ' > $F47A
+'F48' + ' ' > $F48
+'f48' + ' ' > $F48
+'F49' + ' ' > $F49
+'f49' + ' ' > $F49
+'F50' + ' ' > $F50
+'f50' + ' ' > $F50
+'F51' + ' ' > $F51
+'f51' + ' ' > $F51
+'F51' + ' ' > $F51
+'f51' + ' ' > $F51
+'F51' $A + ' ' > $F51A
+'f51' $a + ' ' > $F51A
+'F51B' + ' ' > $F51B
+'f51b' + ' ' > $F51B
+'F51C' + ' ' > $F51C
+'f51c' + ' ' > $F51C
+'F52' + ' ' > $F52
+'f52' + ' ' > $F52
+'F53' + ' ' > $F53
+'f53' + ' ' > $F53
+'G1' + ' ' > $G1
+'g1' + ' ' > $G1
+'G2' + ' ' > $G2
+'g2' + ' ' > $G2
+'G3' + ' ' > $G3
+'g3' + ' ' > $G3
+'G4' + ' ' > $G4
+'g4' + ' ' > $G4
+'G5' + ' ' > $G5
+'g5' + ' ' > $G5
+'G6' + ' ' > $G6
+'g6' + ' ' > $G6
+'G6' $A + ' ' > $G6A
+'g6' $a + ' ' > $G6A
+'G7' + ' ' > $G7
+'g7' + ' ' > $G7
+'G7' + ' ' > $G7
+'g7' + ' ' > $G7
+'G7' $A + ' ' > $G7A
+'g7' $a + ' ' > $G7A
+'G7B' + ' ' > $G7B
+'g7b' + ' ' > $G7B
+'G8' + ' ' > $G8
+'g8' + ' ' > $G8
+'G9' + ' ' > $G9
+'g9' + ' ' > $G9
+'G10' + ' ' > $G10
+'g10' + ' ' > $G10
+'G11' + ' ' > $G11
+'g11' + ' ' > $G11
+'G11' $A + ' ' > $G11A
+'g11' $a + ' ' > $G11A
+'G12' + ' ' > $G12
+'g12' + ' ' > $G12
+'G13' + ' ' > $G13
+'g13' + ' ' > $G13
+'G14' + ' ' > $G14
+'g14' + ' ' > $G14
+'G14' + ' ' > $G14
+'g14' + ' ' > $G14
+'G14' + ' ' > $G14
+'g14' + ' ' > $G14
+'G15' + ' ' > $G15
+'g15' + ' ' > $G15
+'G16' + ' ' > $G16
+'g16' + ' ' > $G16
+'G17' + ' ' > $G17
+'g17' + ' ' > $G17
+'G18' + ' ' > $G18
+'g18' + ' ' > $G18
+'G19' + ' ' > $G19
+'g19' + ' ' > $G19
+'G19' + ' ' > $G19
+'g19' + ' ' > $G19
+'G20' + ' ' > $G20
+'g20' + ' ' > $G20
+'G20' + ' ' > $G20
+'g20' + ' ' > $G20
+'G20' $A + ' ' > $G20A
+'g20' $a + ' ' > $G20A
+'G21' + ' ' > $G21
+'g21' + ' ' > $G21
+'G22' + ' ' > $G22
+'g22' + ' ' > $G22
+'G23' + ' ' > $G23
+'g23' + ' ' > $G23
+'G24' + ' ' > $G24
+'g24' + ' ' > $G24
+'G25' + ' ' > $G25
+'g25' + ' ' > $G25
+'G26' + ' ' > $G26
+'g26' + ' ' > $G26
+'G26' + ' ' > $G26
+'g26' + ' ' > $G26
+'G26' $A + ' ' > $G26A
+'g26' $a + ' ' > $G26A
+'G26' $A + ' ' > $G26A
+'g26' $a + ' ' > $G26A
+'G27' + ' ' > $G27
+'g27' + ' ' > $G27
+'G28' + ' ' > $G28
+'g28' + ' ' > $G28
+'G29' + ' ' > $G29
+'g29' + ' ' > $G29
+'G30' + ' ' > $G30
+'g30' + ' ' > $G30
+'G31' + ' ' > $G31
+'g31' + ' ' > $G31
+'G32' + ' ' > $G32
+'g32' + ' ' > $G32
+'G33' + ' ' > $G33
+'g33' + ' ' > $G33
+'G34' + ' ' > $G34
+'g34' + ' ' > $G34
+'G35' + ' ' > $G35
+'g35' + ' ' > $G35
+'G36' + ' ' > $G36
+'g36' + ' ' > $G36
+'G36' $A + ' ' > $G36A
+'g36' $a + ' ' > $G36A
+'G37' + ' ' > $G37
+'g37' + ' ' > $G37
+'G37' $A + ' ' > $G37A
+'g37' $a + ' ' > $G37A
+'G38' + ' ' > $G38
+'g38' + ' ' > $G38
+'G39' + ' ' > $G39
+'g39' + ' ' > $G39
+'G39' + ' ' > $G39
+'g39' + ' ' > $G39
+'G40' + ' ' > $G40
+'g40' + ' ' > $G40
+'G41' + ' ' > $G41
+'g41' + ' ' > $G41
+'G41' + ' ' > $G41
+'g41' + ' ' > $G41
+'G41' + ' ' > $G41
+'g41' + ' ' > $G41
+'G42' + ' ' > $G42
+'g42' + ' ' > $G42
+'G43' + ' ' > $G43
+'g43' + ' ' > $G43
+'G43' $A + ' ' > $G43A
+'g43' $a + ' ' > $G43A
+'G44' + ' ' > $G44
+'g44' + ' ' > $G44
+'G45' + ' ' > $G45
+'g45' + ' ' > $G45
+'G45' $A + ' ' > $G45A
+'g45' $a + ' ' > $G45A
+'G46' + ' ' > $G46
+'g46' + ' ' > $G46
+'G47' + ' ' > $G47
+'g47' + ' ' > $G47
+'G48' + ' ' > $G48
+'g48' + ' ' > $G48
+'G49' + ' ' > $G49
+'g49' + ' ' > $G49
+'G50' + ' ' > $G50
+'g50' + ' ' > $G50
+'G51' + ' ' > $G51
+'g51' + ' ' > $G51
+'G52' + ' ' > $G52
+'g52' + ' ' > $G52
+'G53' + ' ' > $G53
+'g53' + ' ' > $G53
+'G54' + ' ' > $G54
+'g54' + ' ' > $G54
+$H '1' + ' ' > $H1
+'h1' + ' ' > $H1
+$H '2' + ' ' > $H2
+'h2' + ' ' > $H2
+$H '2' + ' ' > $H2
+'h2' + ' ' > $H2
+$H '2' + ' ' > $H2
+'h2' + ' ' > $H2
+$H '2' + ' ' > $H2
+'h2' + ' ' > $H2
+$H '3' + ' ' > $H3
+'h3' + ' ' > $H3
+$H '4' + ' ' > $H4
+'h4' + ' ' > $H4
+$H '5' + ' ' > $H5
+'h5' + ' ' > $H5
+$H '6' + ' ' > $H6
+'h6' + ' ' > $H6
+$H '6' + ' ' > $H6
+'h6' + ' ' > $H6
+$H '6' $A + ' ' > $H6A
+'h6' $a + ' ' > $H6A
+$H '6' $A + ' ' > $H6A
+'h6' $a + ' ' > $H6A
+$H '7' + ' ' > $H7
+'h7' + ' ' > $H7
+$H '8' + ' ' > $H8
+'h8' + ' ' > $H8
+'I1' + ' ' > $I1
+'i1' + ' ' > $I1
+'I2' + ' ' > $I2
+'i2' + ' ' > $I2
+'I3' + ' ' > $I3
+'i3' + ' ' > $I3
+'I3' + ' ' > $I3
+'i3' + ' ' > $I3
+'I4' + ' ' > $I4
+'i4' + ' ' > $I4
+'I5' + ' ' > $I5
+'i5' + ' ' > $I5
+'I5' + ' ' > $I5
+'i5' + ' ' > $I5
+'I5' $A + ' ' > $I5A
+'i5' $a + ' ' > $I5A
+'I6' + ' ' > $I6
+'i6' + ' ' > $I6
+'I7' + ' ' > $I7
+'i7' + ' ' > $I7
+'I8' + ' ' > $I8
+'i8' + ' ' > $I8
+'I9' + ' ' > $I9
+'i9' + ' ' > $I9
+'I9' + ' ' > $I9
+'i9' + ' ' > $I9
+'I9' $A + ' ' > $I9A
+'i9' $a + ' ' > $I9A
+'I10' + ' ' > $I10
+'i10' + ' ' > $I10
+'I10' + ' ' > $I10
+'i10' + ' ' > $I10
+'I10' $A + ' ' > $I10A
+'i10' $a + ' ' > $I10A
+'I11' + ' ' > $I11
+'i11' + ' ' > $I11
+'I11' $A + ' ' > $I11A
+'i11' $a + ' ' > $I11A
+'I12' + ' ' > $I12
+'i12' + ' ' > $I12
+'I13' + ' ' > $I13
+'i13' + ' ' > $I13
+'I14' + ' ' > $I14
+'i14' + ' ' > $I14
+'I15' + ' ' > $I15
+'i15' + ' ' > $I15
+'K1' + ' ' > $K1
+'k1' + ' ' > $K1
+'K2' + ' ' > $K2
+'k2' + ' ' > $K2
+'K3' + ' ' > $K3
+'k3' + ' ' > $K3
+'K3' + ' ' > $K3
+'k3' + ' ' > $K3
+'K4' + ' ' > $K4
+'k4' + ' ' > $K4
+'K5' + ' ' > $K5
+'k5' + ' ' > $K5
+'K6' + ' ' > $K6
+'k6' + ' ' > $K6
+'K7' + ' ' > $K7
+'k7' + ' ' > $K7
+'K8' + ' ' > $K8
+'k8' + ' ' > $K8
+'L1' + ' ' > $L1
+'l1' + ' ' > $L1
+'L2' + ' ' > $L2
+'l2' + ' ' > $L2
+'L2' $A + ' ' > $L2A
+'l2' $a + ' ' > $L2A
+'L3' + ' ' > $L3
+'l3' + ' ' > $L3
+'L4' + ' ' > $L4
+'l4' + ' ' > $L4
+'L5' + ' ' > $L5
+'l5' + ' ' > $L5
+'L6' + ' ' > $L6
+'l6' + ' ' > $L6
+'L6' $A + ' ' > $L6A
+'l6' $a + ' ' > $L6A
+'L7' + ' ' > $L7
+'l7' + ' ' > $L7
+'L8' + ' ' > $L8
+'l8' + ' ' > $L8
+'M1' + ' ' > $M1
+'m1' + ' ' > $M1
+'M1' + ' ' > $M1
+'m1' + ' ' > $M1
+'M1' $A + ' ' > $M1A
+'m1' $a + ' ' > $M1A
+'M1B' + ' ' > $M1B
+'m1b' + ' ' > $M1B
+'M2' + ' ' > $M2
+'m2' + ' ' > $M2
+'M2' + ' ' > $M2
+'m2' + ' ' > $M2
+'M3' + ' ' > $M3
+'m3' + ' ' > $M3
+'M3' $A + ' ' > $M3A
+'m3' $a + ' ' > $M3A
+'M4' + ' ' > $M4
+'m4' + ' ' > $M4
+'M4' + ' ' > $M4
+'m4' + ' ' > $M4
+'M5' + ' ' > $M5
+'m5' + ' ' > $M5
+'M5' + ' ' > $M5
+'m5' + ' ' > $M5
+'M6' + ' ' > $M6
+'m6' + ' ' > $M6
+'M6' + ' ' > $M6
+'m6' + ' ' > $M6
+'M7' + ' ' > $M7
+'m7' + ' ' > $M7
+'M8' + ' ' > $M8
+'m8' + ' ' > $M8
+'M8' + ' ' > $M8
+'m8' + ' ' > $M8
+'M9' + ' ' > $M9
+'m9' + ' ' > $M9
+'M10' + ' ' > $M10
+'m10' + ' ' > $M10
+'M10' $A + ' ' > $M10A
+'m10' $a + ' ' > $M10A
+'M11' + ' ' > $M11
+'m11' + ' ' > $M11
+'M12' + ' ' > $M12
+'m12' + ' ' > $M12
+'M12' + ' ' > $M12
+'m12' + ' ' > $M12
+'M12' $A + ' ' > $M12A
+'m12' $a + ' ' > $M12A
+'M12B' + ' ' > $M12B
+'m12b' + ' ' > $M12B
+'M12C' + ' ' > $M12C
+'m12c' + ' ' > $M12C
+'M12' $D + ' ' > $M12D
+'m12d' + ' ' > $M12D
+'M12E' + ' ' > $M12E
+'m12e' + ' ' > $M12E
+'M12F' + ' ' > $M12F
+'m12f' + ' ' > $M12F
+'M12G' + ' ' > $M12G
+'m12g' + ' ' > $M12G
+'M12' $H + ' ' > $M12H
+'m12h' + ' ' > $M12H
+'M13' + ' ' > $M13
+'m13' + ' ' > $M13
+'M14' + ' ' > $M14
+'m14' + ' ' > $M14
+'M15' + ' ' > $M15
+'m15' + ' ' > $M15
+'M15' $A + ' ' > $M15A
+'m15' $a + ' ' > $M15A
+'M16' + ' ' > $M16
+'m16' + ' ' > $M16
+'M16' $A + ' ' > $M16A
+'m16' $a + ' ' > $M16A
+'M17' + ' ' > $M17
+'m17' + ' ' > $M17
+'M17' $A + ' ' > $M17A
+'m17' $a + ' ' > $M17A
+'M18' + ' ' > $M18
+'m18' + ' ' > $M18
+'M19' + ' ' > $M19
+'m19' + ' ' > $M19
+'M20' + ' ' > $M20
+'m20' + ' ' > $M20
+'M21' + ' ' > $M21
+'m21' + ' ' > $M21
+'M22' + ' ' > $M22
+'m22' + ' ' > $M22
+'M22' $A + ' ' > $M22A
+'m22' $a + ' ' > $M22A
+'M23' + ' ' > $M23
+'m23' + ' ' > $M23
+'M24' + ' ' > $M24
+'m24' + ' ' > $M24
+'M24' + ' ' > $M24
+'m24' + ' ' > $M24
+'M24' $A + ' ' > $M24A
+'m24' $a + ' ' > $M24A
+'M25' + ' ' > $M25
+'m25' + ' ' > $M25
+'M25' + ' ' > $M25
+'m25' + ' ' > $M25
+'M26' + ' ' > $M26
+'m26' + ' ' > $M26
+'M27' + ' ' > $M27
+'m27' + ' ' > $M27
+'M28' + ' ' > $M28
+'m28' + ' ' > $M28
+'M28' $A + ' ' > $M28A
+'m28' $a + ' ' > $M28A
+'M29' + ' ' > $M29
+'m29' + ' ' > $M29
+'M30' + ' ' > $M30
+'m30' + ' ' > $M30
+'M31' + ' ' > $M31
+'m31' + ' ' > $M31
+'M31' $A + ' ' > $M31A
+'m31' $a + ' ' > $M31A
+'M32' + ' ' > $M32
+'m32' + ' ' > $M32
+'M33' + ' ' > $M33
+'m33' + ' ' > $M33
+'M33' $A + ' ' > $M33A
+'m33' $a + ' ' > $M33A
+'M33B' + ' ' > $M33B
+'m33b' + ' ' > $M33B
+'M34' + ' ' > $M34
+'m34' + ' ' > $M34
+'M35' + ' ' > $M35
+'m35' + ' ' > $M35
+'M36' + ' ' > $M36
+'m36' + ' ' > $M36
+'M37' + ' ' > $M37
+'m37' + ' ' > $M37
+'M38' + ' ' > $M38
+'m38' + ' ' > $M38
+'M39' + ' ' > $M39
+'m39' + ' ' > $M39
+'M40' + ' ' > $M40
+'m40' + ' ' > $M40
+'M40' $A + ' ' > $M40A
+'m40' $a + ' ' > $M40A
+'M41' + ' ' > $M41
+'m41' + ' ' > $M41
+'M42' + ' ' > $M42
+'m42' + ' ' > $M42
+'M42' + ' ' > $M42
+'m42' + ' ' > $M42
+'M43' + ' ' > $M43
+'m43' + ' ' > $M43
+'M44' + ' ' > $M44
+'m44' + ' ' > $M44
+'N1' + ' ' > $N1
+'n1' + ' ' > $N1
+'N2' + ' ' > $N2
+'n2' + ' ' > $N2
+'N3' + ' ' > $N3
+'n3' + ' ' > $N3
+'N4' + ' ' > $N4
+'n4' + ' ' > $N4
+'N4' + ' ' > $N4
+'n4' + ' ' > $N4
+'N5' + ' ' > $N5
+'n5' + ' ' > $N5
+'N5' + ' ' > $N5
+'n5' + ' ' > $N5
+'N5' + ' ' > $N5
+'n5' + ' ' > $N5
+'N5' + ' ' > $N5
+'n5' + ' ' > $N5
+'N6' + ' ' > $N6
+'n6' + ' ' > $N6
+'N7' + ' ' > $N7
+'n7' + ' ' > $N7
+'N8' + ' ' > $N8
+'n8' + ' ' > $N8
+'N9' + ' ' > $N9
+'n9' + ' ' > $N9
+'N10' + ' ' > $N10
+'n10' + ' ' > $N10
+'N11' + ' ' > $N11
+'n11' + ' ' > $N11
+'N11' + ' ' > $N11
+'n11' + ' ' > $N11
+'N11' + ' ' > $N11
+'n11' + ' ' > $N11
+'N12' + ' ' > $N12
+'n12' + ' ' > $N12
+'N13' + ' ' > $N13
+'n13' + ' ' > $N13
+'N14' + ' ' > $N14
+'n14' + ' ' > $N14
+'N14' + ' ' > $N14
+'n14' + ' ' > $N14
+'N15' + ' ' > $N15
+'n15' + ' ' > $N15
+'N16' + ' ' > $N16
+'n16' + ' ' > $N16
+'N17' + ' ' > $N17
+'n17' + ' ' > $N17
+'N18' + ' ' > $N18
+'n18' + ' ' > $N18
+'N18' $A + ' ' > $N18A
+'n18' $a + ' ' > $N18A
+'N18B' + ' ' > $N18B
+'n18b' + ' ' > $N18B
+'N19' + ' ' > $N19
+'n19' + ' ' > $N19
+'N20' + ' ' > $N20
+'n20' + ' ' > $N20
+'N21' + ' ' > $N21
+'n21' + ' ' > $N21
+'N22' + ' ' > $N22
+'n22' + ' ' > $N22
+'N23' + ' ' > $N23
+'n23' + ' ' > $N23
+'N24' + ' ' > $N24
+'n24' + ' ' > $N24
+'N25' + ' ' > $N25
+'n25' + ' ' > $N25
+'N25' $A + ' ' > $N25A
+'n25' $a + ' ' > $N25A
+'N26' + ' ' > $N26
+'n26' + ' ' > $N26
+'N27' + ' ' > $N27
+'n27' + ' ' > $N27
+'N28' + ' ' > $N28
+'n28' + ' ' > $N28
+'N29' + ' ' > $N29
+'n29' + ' ' > $N29
+'N30' + ' ' > $N30
+'n30' + ' ' > $N30
+'N31' + ' ' > $N31
+'n31' + ' ' > $N31
+'N32' + ' ' > $N32
+'n32' + ' ' > $N32
+'N33' + ' ' > $N33
+'n33' + ' ' > $N33
+'N33' $A + ' ' > $N33A
+'n33' $a + ' ' > $N33A
+'N33' $A + ' ' > $N33A
+'n33' $a + ' ' > $N33A
+'N34' + ' ' > $N34
+'n34' + ' ' > $N34
+'N34' + ' ' > $N34
+'n34' + ' ' > $N34
+'N34' $A + ' ' > $N34A
+'n34' $a + ' ' > $N34A
+'N35' + ' ' > $N35
+'n35' + ' ' > $N35
+'N35' $A + ' ' > $N35A
+'n35' $a + ' ' > $N35A
+'N36' + ' ' > $N36
+'n36' + ' ' > $N36
+'N36' + ' ' > $N36
+'n36' + ' ' > $N36
+'N37' + ' ' > $N37
+'n37' + ' ' > $N37
+'N37' + ' ' > $N37
+'n37' + ' ' > $N37
+'N37' $A + ' ' > $N37A
+'n37' $a + ' ' > $N37A
+'N38' + ' ' > $N38
+'n38' + ' ' > $N38
+'N38' + ' ' > $N38
+'n38' + ' ' > $N38
+'N39' + ' ' > $N39
+'n39' + ' ' > $N39
+'N39' + ' ' > $N39
+'n39' + ' ' > $N39
+'N40' + ' ' > $N40
+'n40' + ' ' > $N40
+'N41' + ' ' > $N41
+'n41' + ' ' > $N41
+'N41' + ' ' > $N41
+'n41' + ' ' > $N41
+'N41' + ' ' > $N41
+'n41' + ' ' > $N41
+'N41' + ' ' > $N41
+'n41' + ' ' > $N41
+'N42' + ' ' > $N42
+'n42' + ' ' > $N42
+'N42' + ' ' > $N42
+'n42' + ' ' > $N42
+'NL1' + ' ' > $NL1
+'nl1' + ' ' > $NL1
+'NL2' + ' ' > $NL2
+'nl2' + ' ' > $NL2
+'NL3' + ' ' > $NL3
+'nl3' + ' ' > $NL3
+'NL4' + ' ' > $NL4
+'nl4' + ' ' > $NL4
+'NL5' + ' ' > $NL5
+'nl5' + ' ' > $NL5
+'NL5' $A + ' ' > $NL5A
+'nl5' $a + ' ' > $NL5A
+'NL6' + ' ' > $NL6
+'nl6' + ' ' > $NL6
+'NL7' + ' ' > $NL7
+'nl7' + ' ' > $NL7
+'NL8' + ' ' > $NL8
+'nl8' + ' ' > $NL8
+'NL9' + ' ' > $NL9
+'nl9' + ' ' > $NL9
+'NL10' + ' ' > $NL10
+'nl10' + ' ' > $NL10
+'NL11' + ' ' > $NL11
+'nl11' + ' ' > $NL11
+'NL12' + ' ' > $NL12
+'nl12' + ' ' > $NL12
+'NL13' + ' ' > $NL13
+'nl13' + ' ' > $NL13
+'NL14' + ' ' > $NL14
+'nl14' + ' ' > $NL14
+'NL15' + ' ' > $NL15
+'nl15' + ' ' > $NL15
+'NL16' + ' ' > $NL16
+'nl16' + ' ' > $NL16
+'NL17' + ' ' > $NL17
+'nl17' + ' ' > $NL17
+'NL17' $A + ' ' > $NL17A
+'nl17' $a + ' ' > $NL17A
+'NL18' + ' ' > $NL18
+'nl18' + ' ' > $NL18
+'NL19' + ' ' > $NL19
+'nl19' + ' ' > $NL19
+'NL20' + ' ' > $NL20
+'nl20' + ' ' > $NL20
+'NU1' + ' ' > $NU1
+'nu1' + ' ' > $NU1
+'NU2' + ' ' > $NU2
+'nu2' + ' ' > $NU2
+'NU3' + ' ' > $NU3
+'nu3' + ' ' > $NU3
+'NU4' + ' ' > $NU4
+'nu4' + ' ' > $NU4
+'NU5' + ' ' > $NU5
+'nu5' + ' ' > $NU5
+'NU6' + ' ' > $NU6
+'nu6' + ' ' > $NU6
+'NU7' + ' ' > $NU7
+'nu7' + ' ' > $NU7
+'NU8' + ' ' > $NU8
+'nu8' + ' ' > $NU8
+'NU9' + ' ' > $NU9
+'nu9' + ' ' > $NU9
+'NU10' + ' ' > $NU10
+'nu10' + ' ' > $NU10
+'NU10' $A + ' ' > $NU10A
+'nu10' $a + ' ' > $NU10A
+'NU11' + ' ' > $NU11
+'nu11' + ' ' > $NU11
+'NU11' $A + ' ' > $NU11A
+'nu11' $a + ' ' > $NU11A
+'NU12' + ' ' > $NU12
+'nu12' + ' ' > $NU12
+'NU13' + ' ' > $NU13
+'nu13' + ' ' > $NU13
+'NU14' + ' ' > $NU14
+'nu14' + ' ' > $NU14
+'NU15' + ' ' > $NU15
+'nu15' + ' ' > $NU15
+'NU16' + ' ' > $NU16
+'nu16' + ' ' > $NU16
+'NU17' + ' ' > $NU17
+'nu17' + ' ' > $NU17
+'NU18' + ' ' > $NU18
+'nu18' + ' ' > $NU18
+'NU18' $A + ' ' > $NU18A
+'nu18' $a + ' ' > $NU18A
+'NU19' + ' ' > $NU19
+'nu19' + ' ' > $NU19
+'NU20' + ' ' > $NU20
+'nu20' + ' ' > $NU20
+'NU21' + ' ' > $NU21
+'nu21' + ' ' > $NU21
+'NU22' + ' ' > $NU22
+'nu22' + ' ' > $NU22
+'NU22' $A + ' ' > $NU22A
+'nu22' $a + ' ' > $NU22A
+'O1' + ' ' > $O1
+'o1' + ' ' > $O1
+'O1' + ' ' > $O1
+'o1' + ' ' > $O1
+'O1' $A + ' ' > $O1A
+'o1' $a + ' ' > $O1A
+'O2' + ' ' > $O2
+'o2' + ' ' > $O2
+'O3' + ' ' > $O3
+'o3' + ' ' > $O3
+'O4' + ' ' > $O4
+'o4' + ' ' > $O4
+'O5' + ' ' > $O5
+'o5' + ' ' > $O5
+'O5' + ' ' > $O5
+'o5' + ' ' > $O5
+'O5' $A + ' ' > $O5A
+'o5' $a + ' ' > $O5A
+'O6' + ' ' > $O6
+'o6' + ' ' > $O6
+'O6' $A + ' ' > $O6A
+'o6' $a + ' ' > $O6A
+'O6B' + ' ' > $O6B
+'o6b' + ' ' > $O6B
+'O6C' + ' ' > $O6C
+'o6c' + ' ' > $O6C
+'O6' $D + ' ' > $O6D
+'o6d' + ' ' > $O6D
+'O6E' + ' ' > $O6E
+'o6e' + ' ' > $O6E
+'O6F' + ' ' > $O6F
+'o6f' + ' ' > $O6F
+'O7' + ' ' > $O7
+'o7' + ' ' > $O7
+'O8' + ' ' > $O8
+'o8' + ' ' > $O8
+'O9' + ' ' > $O9
+'o9' + ' ' > $O9
+'O10' + ' ' > $O10
+'o10' + ' ' > $O10
+'O10' $A + ' ' > $O10A
+'o10' $a + ' ' > $O10A
+'O10B' + ' ' > $O10B
+'o10b' + ' ' > $O10B
+'O10C' + ' ' > $O10C
+'o10c' + ' ' > $O10C
+'O11' + ' ' > $O11
+'o11' + ' ' > $O11
+'O12' + ' ' > $O12
+'o12' + ' ' > $O12
+'O13' + ' ' > $O13
+'o13' + ' ' > $O13
+'O14' + ' ' > $O14
+'o14' + ' ' > $O14
+'O15' + ' ' > $O15
+'o15' + ' ' > $O15
+'O16' + ' ' > $O16
+'o16' + ' ' > $O16
+'O17' + ' ' > $O17
+'o17' + ' ' > $O17
+'O18' + ' ' > $O18
+'o18' + ' ' > $O18
+'O19' + ' ' > $O19
+'o19' + ' ' > $O19
+'O19' $A + ' ' > $O19A
+'o19' $a + ' ' > $O19A
+'O20' + ' ' > $O20
+'o20' + ' ' > $O20
+'O20' $A + ' ' > $O20A
+'o20' $a + ' ' > $O20A
+'O21' + ' ' > $O21
+'o21' + ' ' > $O21
+'O22' + ' ' > $O22
+'o22' + ' ' > $O22
+'O23' + ' ' > $O23
+'o23' + ' ' > $O23
+'O24' + ' ' > $O24
+'o24' + ' ' > $O24
+'O24' $A + ' ' > $O24A
+'o24' $a + ' ' > $O24A
+'O25' + ' ' > $O25
+'o25' + ' ' > $O25
+'O25' $A + ' ' > $O25A
+'o25' $a + ' ' > $O25A
+'O26' + ' ' > $O26
+'o26' + ' ' > $O26
+'O27' + ' ' > $O27
+'o27' + ' ' > $O27
+'O28' + ' ' > $O28
+'o28' + ' ' > $O28
+'O29' + ' ' > $O29
+'o29' + ' ' > $O29
+'O29' + ' ' > $O29
+'o29' + ' ' > $O29
+'O29' $A + ' ' > $O29A
+'o29' $a + ' ' > $O29A
+'O30' + ' ' > $O30
+'o30' + ' ' > $O30
+'O30' $A + ' ' > $O30A
+'o30' $a + ' ' > $O30A
+'O31' + ' ' > $O31
+'o31' + ' ' > $O31
+'O31' + ' ' > $O31
+'o31' + ' ' > $O31
+'O32' + ' ' > $O32
+'o32' + ' ' > $O32
+'O33' + ' ' > $O33
+'o33' + ' ' > $O33
+'O33' $A + ' ' > $O33A
+'o33' $a + ' ' > $O33A
+'O34' + ' ' > $O34
+'o34' + ' ' > $O34
+'O34' + ' ' > $O34
+'o34' + ' ' > $O34
+'O35' + ' ' > $O35
+'o35' + ' ' > $O35
+'O35' + ' ' > $O35
+'o35' + ' ' > $O35
+'O36' + ' ' > $O36
+'o36' + ' ' > $O36
+'O36' $A + ' ' > $O36A
+'o36' $a + ' ' > $O36A
+'O36B' + ' ' > $O36B
+'o36b' + ' ' > $O36B
+'O36C' + ' ' > $O36C
+'o36c' + ' ' > $O36C
+'O36' $D + ' ' > $O36D
+'o36d' + ' ' > $O36D
+'O37' + ' ' > $O37
+'o37' + ' ' > $O37
+'O38' + ' ' > $O38
+'o38' + ' ' > $O38
+'O39' + ' ' > $O39
+'o39' + ' ' > $O39
+'O40' + ' ' > $O40
+'o40' + ' ' > $O40
+'O41' + ' ' > $O41
+'o41' + ' ' > $O41
+'O42' + ' ' > $O42
+'o42' + ' ' > $O42
+'O42' + ' ' > $O42
+'o42' + ' ' > $O42
+'O43' + ' ' > $O43
+'o43' + ' ' > $O43
+'O43' + ' ' > $O43
+'o43' + ' ' > $O43
+'O44' + ' ' > $O44
+'o44' + ' ' > $O44
+'O45' + ' ' > $O45
+'o45' + ' ' > $O45
+'O46' + ' ' > $O46
+'o46' + ' ' > $O46
+'O47' + ' ' > $O47
+'o47' + ' ' > $O47
+'O48' + ' ' > $O48
+'o48' + ' ' > $O48
+'O49' + ' ' > $O49
+'o49' + ' ' > $O49
+'O50' + ' ' > $O50
+'o50' + ' ' > $O50
+'O50' $A + ' ' > $O50A
+'o50' $a + ' ' > $O50A
+'O50B' + ' ' > $O50B
+'o50b' + ' ' > $O50B
+'O51' + ' ' > $O51
+'o51' + ' ' > $O51
+'P1' + ' ' > $P1
+'p1' + ' ' > $P1
+'P1' $A + ' ' > $P1A
+'p1' $a + ' ' > $P1A
+'P2' + ' ' > $P2
+'p2' + ' ' > $P2
+'P3' + ' ' > $P3
+'p3' + ' ' > $P3
+'P3' + ' ' > $P3
+'p3' + ' ' > $P3
+'P3' $A + ' ' > $P3A
+'p3' $a + ' ' > $P3A
+'P4' + ' ' > $P4
+'p4' + ' ' > $P4
+'P5' + ' ' > $P5
+'p5' + ' ' > $P5
+'P5' + ' ' > $P5
+'p5' + ' ' > $P5
+'P6' + ' ' > $P6
+'p6' + ' ' > $P6
+'P7' + ' ' > $P7
+'p7' + ' ' > $P7
+'P8' + ' ' > $P8
+'p8' + ' ' > $P8
+'P8' + ' ' > $P8
+'p8' + ' ' > $P8
+'P9' + ' ' > $P9
+'p9' + ' ' > $P9
+'P10' + ' ' > $P10
+'p10' + ' ' > $P10
+'P11' + ' ' > $P11
+'p11' + ' ' > $P11
+'Q1' + ' ' > $Q1
+'q1' + ' ' > $Q1
+'Q1' + ' ' > $Q1
+'q1' + ' ' > $Q1
+'Q2' + ' ' > $Q2
+'q2' + ' ' > $Q2
+'Q2' + ' ' > $Q2
+'q2' + ' ' > $Q2
+'Q3' + ' ' > $Q3
+'q3' + ' ' > $Q3
+'Q4' + ' ' > $Q4
+'q4' + ' ' > $Q4
+'Q5' + ' ' > $Q5
+'q5' + ' ' > $Q5
+'Q6' + ' ' > $Q6
+'q6' + ' ' > $Q6
+'Q6' + ' ' > $Q6
+'q6' + ' ' > $Q6
+'Q7' + ' ' > $Q7
+'q7' + ' ' > $Q7
+'Q7' + ' ' > $Q7
+'q7' + ' ' > $Q7
+'R1' + ' ' > $R1
+'r1' + ' ' > $R1
+'R1' + ' ' > $R1
+'r1' + ' ' > $R1
+'R2' + ' ' > $R2
+'r2' + ' ' > $R2
+'R2' $A + ' ' > $R2A
+'r2' $a + ' ' > $R2A
+'R3' + ' ' > $R3
+'r3' + ' ' > $R3
+'R3' $A + ' ' > $R3A
+'r3' $a + ' ' > $R3A
+'R3B' + ' ' > $R3B
+'r3b' + ' ' > $R3B
+'R4' + ' ' > $R4
+'r4' + ' ' > $R4
+'R5' + ' ' > $R5
+'r5' + ' ' > $R5
+'R5' + ' ' > $R5
+'r5' + ' ' > $R5
+'R6' + ' ' > $R6
+'r6' + ' ' > $R6
+'R6' + ' ' > $R6
+'r6' + ' ' > $R6
+'R7' + ' ' > $R7
+'r7' + ' ' > $R7
+'R8' + ' ' > $R8
+'r8' + ' ' > $R8
+'R9' + ' ' > $R9
+'r9' + ' ' > $R9
+'R10' + ' ' > $R10
+'r10' + ' ' > $R10
+'R10' $A + ' ' > $R10A
+'r10' $a + ' ' > $R10A
+'R11' + ' ' > $R11
+'r11' + ' ' > $R11
+'R11' + ' ' > $R11
+'r11' + ' ' > $R11
+'R12' + ' ' > $R12
+'r12' + ' ' > $R12
+'R13' + ' ' > $R13
+'r13' + ' ' > $R13
+'R14' + ' ' > $R14
+'r14' + ' ' > $R14
+'R15' + ' ' > $R15
+'r15' + ' ' > $R15
+'R15' + ' ' > $R15
+'r15' + ' ' > $R15
+'R16' + ' ' > $R16
+'r16' + ' ' > $R16
+'R16' $A + ' ' > $R16A
+'r16' $a + ' ' > $R16A
+'R17' + ' ' > $R17
+'r17' + ' ' > $R17
+'R18' + ' ' > $R18
+'r18' + ' ' > $R18
+'R19' + ' ' > $R19
+'r19' + ' ' > $R19
+'R20' + ' ' > $R20
+'r20' + ' ' > $R20
+'R21' + ' ' > $R21
+'r21' + ' ' > $R21
+'R22' + ' ' > $R22
+'r22' + ' ' > $R22
+'R22' + ' ' > $R22
+'r22' + ' ' > $R22
+'R22' + ' ' > $R22
+'r22' + ' ' > $R22
+'R23' + ' ' > $R23
+'r23' + ' ' > $R23
+'R23' + ' ' > $R23
+'r23' + ' ' > $R23
+'R24' + ' ' > $R24
+'r24' + ' ' > $R24
+'R25' + ' ' > $R25
+'r25' + ' ' > $R25
+'R26' + ' ' > $R26
+'r26' + ' ' > $R26
+'R27' + ' ' > $R27
+'r27' + ' ' > $R27
+'R28' + ' ' > $R28
+'r28' + ' ' > $R28
+'R29' + ' ' > $R29
+'r29' + ' ' > $R29
+$S '1' + ' ' > $S1
+'s1' + ' ' > $S1
+$S '2' + ' ' > $S2
+'s2' + ' ' > $S2
+$S '2' $A + ' ' > $S2A
+'s2' $a + ' ' > $S2A
+$S '3' + ' ' > $S3
+'s3' + ' ' > $S3
+$S '3' + ' ' > $S3
+'s3' + ' ' > $S3
+$S '3' + ' ' > $S3
+'s3' + ' ' > $S3
+$S '4' + ' ' > $S4
+'s4' + ' ' > $S4
+$S '5' + ' ' > $S5
+'s5' + ' ' > $S5
+$S '6' + ' ' > $S6
+'s6' + ' ' > $S6
+$S '6' + ' ' > $S6
+'s6' + ' ' > $S6
+$S '6' $A + ' ' > $S6A
+'s6' $a + ' ' > $S6A
+$S '7' + ' ' > $S7
+'s7' + ' ' > $S7
+$S '8' + ' ' > $S8
+'s8' + ' ' > $S8
+$S '9' + ' ' > $S9
+'s9' + ' ' > $S9
+$S '10' + ' ' > $S10
+'s10' + ' ' > $S10
+$S '11' + ' ' > $S11
+'s11' + ' ' > $S11
+$S '12' + ' ' > $S12
+'s12' + ' ' > $S12
+$S '13' + ' ' > $S13
+'s13' + ' ' > $S13
+$S '14' + ' ' > $S14
+'s14' + ' ' > $S14
+$S '14' $A + ' ' > $S14A
+'s14' $a + ' ' > $S14A
+$S '14B' + ' ' > $S14B
+'s14b' + ' ' > $S14B
+$S '15' + ' ' > $S15
+'s15' + ' ' > $S15
+$S '15' + ' ' > $S15
+'s15' + ' ' > $S15
+$S '16' + ' ' > $S16
+'s16' + ' ' > $S16
+$S '16' + ' ' > $S16
+'s16' + ' ' > $S16
+$S '17' + ' ' > $S17
+'s17' + ' ' > $S17
+$S '17' + ' ' > $S17
+'s17' + ' ' > $S17
+$S '17' $A + ' ' > $S17A
+'s17' $a + ' ' > $S17A
+$S '18' + ' ' > $S18
+'s18' + ' ' > $S18
+$S '19' + ' ' > $S19
+'s19' + ' ' > $S19
+$S '19' + ' ' > $S19
+'s19' + ' ' > $S19
+$S '20' + ' ' > $S20
+'s20' + ' ' > $S20
+$S '21' + ' ' > $S21
+'s21' + ' ' > $S21
+$S '22' + ' ' > $S22
+'s22' + ' ' > $S22
+$S '22' + ' ' > $S22
+'s22' + ' ' > $S22
+$S '23' + ' ' > $S23
+'s23' + ' ' > $S23
+$S '24' + ' ' > $S24
+'s24' + ' ' > $S24
+$S '25' + ' ' > $S25
+'s25' + ' ' > $S25
+$S '26' + ' ' > $S26
+'s26' + ' ' > $S26
+$S '26' $A + ' ' > $S26A
+'s26' $a + ' ' > $S26A
+$S '26B' + ' ' > $S26B
+'s26b' + ' ' > $S26B
+$S '27' + ' ' > $S27
+'s27' + ' ' > $S27
+$S '28' + ' ' > $S28
+'s28' + ' ' > $S28
+$S '29' + ' ' > $S29
+'s29' + ' ' > $S29
+$S '30' + ' ' > $S30
+'s30' + ' ' > $S30
+$S '31' + ' ' > $S31
+'s31' + ' ' > $S31
+$S '32' + ' ' > $S32
+'s32' + ' ' > $S32
+$S '33' + ' ' > $S33
+'s33' + ' ' > $S33
+$S '34' + ' ' > $S34
+'s34' + ' ' > $S34
+$S '35' + ' ' > $S35
+'s35' + ' ' > $S35
+$S '35' $A + ' ' > $S35A
+'s35' $a + ' ' > $S35A
+$S '36' + ' ' > $S36
+'s36' + ' ' > $S36
+$S '37' + ' ' > $S37
+'s37' + ' ' > $S37
+$S '38' + ' ' > $S38
+'s38' + ' ' > $S38
+$S '38' + ' ' > $S38
+'s38' + ' ' > $S38
+$S '39' + ' ' > $S39
+'s39' + ' ' > $S39
+$S '40' + ' ' > $S40
+'s40' + ' ' > $S40
+$S '40' + ' ' > $S40
+'s40' + ' ' > $S40
+$S '41' + ' ' > $S41
+'s41' + ' ' > $S41
+$S '42' + ' ' > $S42
+'s42' + ' ' > $S42
+$S '42' + ' ' > $S42
+'s42' + ' ' > $S42
+$S '42' + ' ' > $S42
+'s42' + ' ' > $S42
+$S '43' + ' ' > $S43
+'s43' + ' ' > $S43
+$S '44' + ' ' > $S44
+'s44' + ' ' > $S44
+$S '45' + ' ' > $S45
+'s45' + ' ' > $S45
+$S '46' + ' ' > $S46
+'s46' + ' ' > $S46
+$T '1' + ' ' > $T1
+'t1' + ' ' > $T1
+$T '1' + ' ' > $T1
+'t1' + ' ' > $T1
+$T '2' + ' ' > $T2
+'t2' + ' ' > $T2
+$T '3' + ' ' > $T3
+'t3' + ' ' > $T3
+$T '3' $A + ' ' > $T3A
+'t3' $a + ' ' > $T3A
+$T '4' + ' ' > $T4
+'t4' + ' ' > $T4
+$T '5' + ' ' > $T5
+'t5' + ' ' > $T5
+$T '6' + ' ' > $T6
+'t6' + ' ' > $T6
+$T '7' + ' ' > $T7
+'t7' + ' ' > $T7
+$T '7' $A + ' ' > $T7A
+'t7' $a + ' ' > $T7A
+$T '8' + ' ' > $T8
+'t8' + ' ' > $T8
+$T '8' $A + ' ' > $T8A
+'t8' $a + ' ' > $T8A
+$T '9' + ' ' > $T9
+'t9' + ' ' > $T9
+$T '9' + ' ' > $T9
+'t9' + ' ' > $T9
+$T '9' $A + ' ' > $T9A
+'t9' $a + ' ' > $T9A
+$T '9' $A + ' ' > $T9A
+'t9' $a + ' ' > $T9A
+$T '10' + ' ' > $T10
+'t10' + ' ' > $T10
+$T '11' + ' ' > $T11
+'t11' + ' ' > $T11
+$T '11' + ' ' > $T11
+'t11' + ' ' > $T11
+$T '11' + ' ' > $T11
+'t11' + ' ' > $T11
+$T '11' + ' ' > $T11
+'t11' + ' ' > $T11
+$T '11' $A + ' ' > $T11A
+'t11' $a + ' ' > $T11A
+$T '12' + ' ' > $T12
+'t12' + ' ' > $T12
+$T '12' + ' ' > $T12
+'t12' + ' ' > $T12
+$T '12' + ' ' > $T12
+'t12' + ' ' > $T12
+$T '12' + ' ' > $T12
+'t12' + ' ' > $T12
+$T '13' + ' ' > $T13
+'t13' + ' ' > $T13
+$T '14' + ' ' > $T14
+'t14' + ' ' > $T14
+$T '15' + ' ' > $T15
+'t15' + ' ' > $T15
+$T '16' + ' ' > $T16
+'t16' + ' ' > $T16
+$T '16' $A + ' ' > $T16A
+'t16' $a + ' ' > $T16A
+$T '17' + ' ' > $T17
+'t17' + ' ' > $T17
+$T '18' + ' ' > $T18
+'t18' + ' ' > $T18
+$T '19' + ' ' > $T19
+'t19' + ' ' > $T19
+$T '19' + ' ' > $T19
+'t19' + ' ' > $T19
+$T '20' + ' ' > $T20
+'t20' + ' ' > $T20
+$T '20' + ' ' > $T20
+'t20' + ' ' > $T20
+$T '21' + ' ' > $T21
+'t21' + ' ' > $T21
+$T '22' + ' ' > $T22
+'t22' + ' ' > $T22
+$T '23' + ' ' > $T23
+'t23' + ' ' > $T23
+$T '24' + ' ' > $T24
+'t24' + ' ' > $T24
+$T '24' + ' ' > $T24
+'t24' + ' ' > $T24
+$T '25' + ' ' > $T25
+'t25' + ' ' > $T25
+$T '26' + ' ' > $T26
+'t26' + ' ' > $T26
+$T '27' + ' ' > $T27
+'t27' + ' ' > $T27
+$T '28' + ' ' > $T28
+'t28' + ' ' > $T28
+$T '29' + ' ' > $T29
+'t29' + ' ' > $T29
+$T '30' + ' ' > $T30
+'t30' + ' ' > $T30
+$T '31' + ' ' > $T31
+'t31' + ' ' > $T31
+$T '32' + ' ' > $T32
+'t32' + ' ' > $T32
+$T '32' $A + ' ' > $T32A
+'t32' $a + ' ' > $T32A
+$T '33' + ' ' > $T33
+'t33' + ' ' > $T33
+$T '33' $A + ' ' > $T33A
+'t33' $a + ' ' > $T33A
+$T '34' + ' ' > $T34
+'t34' + ' ' > $T34
+$T '35' + ' ' > $T35
+'t35' + ' ' > $T35
+$T '36' + ' ' > $T36
+'t36' + ' ' > $T36
+'U1' + ' ' > $U1
+'u1' + ' ' > $U1
+'U2' + ' ' > $U2
+'u2' + ' ' > $U2
+'U3' + ' ' > $U3
+'u3' + ' ' > $U3
+'U4' + ' ' > $U4
+'u4' + ' ' > $U4
+'U5' + ' ' > $U5
+'u5' + ' ' > $U5
+'U6' + ' ' > $U6
+'u6' + ' ' > $U6
+'U6' $A + ' ' > $U6A
+'u6' $a + ' ' > $U6A
+'U6B' + ' ' > $U6B
+'u6b' + ' ' > $U6B
+'U7' + ' ' > $U7
+'u7' + ' ' > $U7
+'U8' + ' ' > $U8
+'u8' + ' ' > $U8
+'U9' + ' ' > $U9
+'u9' + ' ' > $U9
+'U10' + ' ' > $U10
+'u10' + ' ' > $U10
+'U11' + ' ' > $U11
+'u11' + ' ' > $U11
+'U12' + ' ' > $U12
+'u12' + ' ' > $U12
+'U13' + ' ' > $U13
+'u13' + ' ' > $U13
+'U13' + ' ' > $U13
+'u13' + ' ' > $U13
+'U14' + ' ' > $U14
+'u14' + ' ' > $U14
+'U15' + ' ' > $U15
+'u15' + ' ' > $U15
+'U16' + ' ' > $U16
+'u16' + ' ' > $U16
+'U17' + ' ' > $U17
+'u17' + ' ' > $U17
+'U18' + ' ' > $U18
+'u18' + ' ' > $U18
+'U19' + ' ' > $U19
+'u19' + ' ' > $U19
+'U20' + ' ' > $U20
+'u20' + ' ' > $U20
+'U21' + ' ' > $U21
+'u21' + ' ' > $U21
+'U22' + ' ' > $U22
+'u22' + ' ' > $U22
+'U23' + ' ' > $U23
+'u23' + ' ' > $U23
+'U23' + ' ' > $U23
+'u23' + ' ' > $U23
+'U23' $A + ' ' > $U23A
+'u23' $a + ' ' > $U23A
+'U24' + ' ' > $U24
+'u24' + ' ' > $U24
+'U25' + ' ' > $U25
+'u25' + ' ' > $U25
+'U26' + ' ' > $U26
+'u26' + ' ' > $U26
+'U27' + ' ' > $U27
+'u27' + ' ' > $U27
+'U28' + ' ' > $U28
+'u28' + ' ' > $U28
+'U29' + ' ' > $U29
+'u29' + ' ' > $U29
+'U29' $A + ' ' > $U29A
+'u29' $a + ' ' > $U29A
+'U30' + ' ' > $U30
+'u30' + ' ' > $U30
+'U31' + ' ' > $U31
+'u31' + ' ' > $U31
+'U32' + ' ' > $U32
+'u32' + ' ' > $U32
+'U32' $A + ' ' > $U32A
+'u32' $a + ' ' > $U32A
+'U33' + ' ' > $U33
+'u33' + ' ' > $U33
+'U33' + ' ' > $U33
+'u33' + ' ' > $U33
+'U34' + ' ' > $U34
+'u34' + ' ' > $U34
+'U35' + ' ' > $U35
+'u35' + ' ' > $U35
+'U36' + ' ' > $U36
+'u36' + ' ' > $U36
+'U37' + ' ' > $U37
+'u37' + ' ' > $U37
+'U38' + ' ' > $U38
+'u38' + ' ' > $U38
+'U39' + ' ' > $U39
+'u39' + ' ' > $U39
+'U40' + ' ' > $U40
+'u40' + ' ' > $U40
+'U41' + ' ' > $U41
+'u41' + ' ' > $U41
+'U42' + ' ' > $U42
+'u42' + ' ' > $U42
+'V1' + ' ' > $V1
+'v1' + ' ' > $V1
+'V1' + ' ' > $V1
+'v1' + ' ' > $V1
+'V1' + ' ' > $V1
+'v1' + ' ' > $V1
+'V1' $A + ' ' > $V1A
+'v1' $a + ' ' > $V1A
+'V1B' + ' ' > $V1B
+'v1b' + ' ' > $V1B
+'V1C' + ' ' > $V1C
+'v1c' + ' ' > $V1C
+'V1' $D + ' ' > $V1D
+'v1d' + ' ' > $V1D
+'V1E' + ' ' > $V1E
+'v1e' + ' ' > $V1E
+'V1F' + ' ' > $V1F
+'v1f' + ' ' > $V1F
+'V1G' + ' ' > $V1G
+'v1g' + ' ' > $V1G
+'V1' $H + ' ' > $V1H
+'v1h' + ' ' > $V1H
+'V1I' + ' ' > $V1I
+'v1i' + ' ' > $V1I
+'V2' + ' ' > $V2
+'v2' + ' ' > $V2
+'V2' $A + ' ' > $V2A
+'v2' $a + ' ' > $V2A
+'V3' + ' ' > $V3
+'v3' + ' ' > $V3
+'V4' + ' ' > $V4
+'v4' + ' ' > $V4
+'V5' + ' ' > $V5
+'v5' + ' ' > $V5
+'V6' + ' ' > $V6
+'v6' + ' ' > $V6
+'V6' + ' ' > $V6
+'v6' + ' ' > $V6
+'V7' + ' ' > $V7
+'v7' + ' ' > $V7
+'V7' $A + ' ' > $V7A
+'v7' $a + ' ' > $V7A
+'V7B' + ' ' > $V7B
+'v7b' + ' ' > $V7B
+'V8' + ' ' > $V8
+'v8' + ' ' > $V8
+'V9' + ' ' > $V9
+'v9' + ' ' > $V9
+'V10' + ' ' > $V10
+'v10' + ' ' > $V10
+'V11' + ' ' > $V11
+'v11' + ' ' > $V11
+'V11' $A + ' ' > $V11A
+'v11' $a + ' ' > $V11A
+'V11B' + ' ' > $V11B
+'v11b' + ' ' > $V11B
+'V11C' + ' ' > $V11C
+'v11c' + ' ' > $V11C
+'V12' + ' ' > $V12
+'v12' + ' ' > $V12
+'V12' $A + ' ' > $V12A
+'v12' $a + ' ' > $V12A
+'V12B' + ' ' > $V12B
+'v12b' + ' ' > $V12B
+'V13' + ' ' > $V13
+'v13' + ' ' > $V13
+'V14' + ' ' > $V14
+'v14' + ' ' > $V14
+'V15' + ' ' > $V15
+'v15' + ' ' > $V15
+'V16' + ' ' > $V16
+'v16' + ' ' > $V16
+'V17' + ' ' > $V17
+'v17' + ' ' > $V17
+'V18' + ' ' > $V18
+'v18' + ' ' > $V18
+'V19' + ' ' > $V19
+'v19' + ' ' > $V19
+'V19' + ' ' > $V19
+'v19' + ' ' > $V19
+'V19' + ' ' > $V19
+'v19' + ' ' > $V19
+'V20' + ' ' > $V20
+'v20' + ' ' > $V20
+'V20' + ' ' > $V20
+'v20' + ' ' > $V20
+'V20' $A + ' ' > $V20A
+'v20' $a + ' ' > $V20A
+'V20B' + ' ' > $V20B
+'v20b' + ' ' > $V20B
+'V20C' + ' ' > $V20C
+'v20c' + ' ' > $V20C
+'V20' $D + ' ' > $V20D
+'v20d' + ' ' > $V20D
+'V20E' + ' ' > $V20E
+'v20e' + ' ' > $V20E
+'V20F' + ' ' > $V20F
+'v20f' + ' ' > $V20F
+'V20G' + ' ' > $V20G
+'v20g' + ' ' > $V20G
+'V20' $H + ' ' > $V20H
+'v20h' + ' ' > $V20H
+'V20I' + ' ' > $V20I
+'v20i' + ' ' > $V20I
+'V20J' + ' ' > $V20J
+'v20j' + ' ' > $V20J
+'V20K' + ' ' > $V20K
+'v20k' + ' ' > $V20K
+'V20L' + ' ' > $V20L
+'v20l' + ' ' > $V20L
+'V21' + ' ' > $V21
+'v21' + ' ' > $V21
+'V22' + ' ' > $V22
+'v22' + ' ' > $V22
+'V23' + ' ' > $V23
+'v23' + ' ' > $V23
+'V23' $A + ' ' > $V23A
+'v23' $a + ' ' > $V23A
+'V24' + ' ' > $V24
+'v24' + ' ' > $V24
+'V25' + ' ' > $V25
+'v25' + ' ' > $V25
+'V26' + ' ' > $V26
+'v26' + ' ' > $V26
+'V26' + ' ' > $V26
+'v26' + ' ' > $V26
+'V27' + ' ' > $V27
+'v27' + ' ' > $V27
+'V28' + ' ' > $V28
+'v28' + ' ' > $V28
+'V28' $A + ' ' > $V28A
+'v28' $a + ' ' > $V28A
+'V29' + ' ' > $V29
+'v29' + ' ' > $V29
+'V29' + ' ' > $V29
+'v29' + ' ' > $V29
+'V29' $A + ' ' > $V29A
+'v29' $a + ' ' > $V29A
+'V30' + ' ' > $V30
+'v30' + ' ' > $V30
+'V30' $A + ' ' > $V30A
+'v30' $a + ' ' > $V30A
+'V31' + ' ' > $V31
+'v31' + ' ' > $V31
+'V31' $A + ' ' > $V31A
+'v31' $a + ' ' > $V31A
+'V32' + ' ' > $V32
+'v32' + ' ' > $V32
+'V33' + ' ' > $V33
+'v33' + ' ' > $V33
+'V33' + ' ' > $V33
+'v33' + ' ' > $V33
+'V33' $A + ' ' > $V33A
+'v33' $a + ' ' > $V33A
+'V34' + ' ' > $V34
+'v34' + ' ' > $V34
+'V35' + ' ' > $V35
+'v35' + ' ' > $V35
+'V36' + ' ' > $V36
+'v36' + ' ' > $V36
+'V37' + ' ' > $V37
+'v37' + ' ' > $V37
+'V37' $A + ' ' > $V37A
+'v37' $a + ' ' > $V37A
+'V38' + ' ' > $V38
+'v38' + ' ' > $V38
+'V39' + ' ' > $V39
+'v39' + ' ' > $V39
+'V40' + ' ' > $V40
+'v40' + ' ' > $V40
+'V40' $A + ' ' > $V40A
+'v40' $a + ' ' > $V40A
+'W1' + ' ' > $W1
+'w1' + ' ' > $W1
+'W2' + ' ' > $W2
+'w2' + ' ' > $W2
+'W3' + ' ' > $W3
+'w3' + ' ' > $W3
+'W3' $A + ' ' > $W3A
+'w3' $a + ' ' > $W3A
+'W4' + ' ' > $W4
+'w4' + ' ' > $W4
+'W5' + ' ' > $W5
+'w5' + ' ' > $W5
+'W6' + ' ' > $W6
+'w6' + ' ' > $W6
+'W7' + ' ' > $W7
+'w7' + ' ' > $W7
+'W8' + ' ' > $W8
+'w8' + ' ' > $W8
+'W9' + ' ' > $W9
+'w9' + ' ' > $W9
+'W9' $A + ' ' > $W9A
+'w9' $a + ' ' > $W9A
+'W10' + ' ' > $W10
+'w10' + ' ' > $W10
+'W10' $A + ' ' > $W10A
+'w10' $a + ' ' > $W10A
+'W10' $A + ' ' > $W10A
+'w10' $a + ' ' > $W10A
+'W11' + ' ' > $W11
+'w11' + ' ' > $W11
+'W11' + ' ' > $W11
+'w11' + ' ' > $W11
+'W11' + ' ' > $W11
+'w11' + ' ' > $W11
+'W12' + ' ' > $W12
+'w12' + ' ' > $W12
+'W12' + ' ' > $W12
+'w12' + ' ' > $W12
+'W13' + ' ' > $W13
+'w13' + ' ' > $W13
+'W14' + ' ' > $W14
+'w14' + ' ' > $W14
+'W14' $A + ' ' > $W14A
+'w14' $a + ' ' > $W14A
+'W15' + ' ' > $W15
+'w15' + ' ' > $W15
+'W16' + ' ' > $W16
+'w16' + ' ' > $W16
+'W17' + ' ' > $W17
+'w17' + ' ' > $W17
+'W17' $A + ' ' > $W17A
+'w17' $a + ' ' > $W17A
+'W18' + ' ' > $W18
+'w18' + ' ' > $W18
+'W18' $A + ' ' > $W18A
+'w18' $a + ' ' > $W18A
+'W19' + ' ' > $W19
+'w19' + ' ' > $W19
+'W20' + ' ' > $W20
+'w20' + ' ' > $W20
+'W21' + ' ' > $W21
+'w21' + ' ' > $W21
+'W22' + ' ' > $W22
+'w22' + ' ' > $W22
+'W23' + ' ' > $W23
+'w23' + ' ' > $W23
+'W24' + ' ' > $W24
+'w24' + ' ' > $W24
+'W24' $A + ' ' > $W24A
+'w24' $a + ' ' > $W24A
+'W25' + ' ' > $W25
+'w25' + ' ' > $W25
+$X '1' + ' ' > $X1
+$x '1' + ' ' > $X1
+$X '2' + ' ' > $X2
+$x '2' + ' ' > $X2
+$X '2' + ' ' > $X2
+$x '2' + ' ' > $X2
+$X '2' + ' ' > $X2
+$x '2' + ' ' > $X2
+$X '3' + ' ' > $X3
+$x '3' + ' ' > $X3
+$X '3' + ' ' > $X3
+$x '3' + ' ' > $X3
+$X '3' + ' ' > $X3
+$x '3' + ' ' > $X3
+$X '4' + ' ' > $X4
+$x '4' + ' ' > $X4
+$X '4' $A + ' ' > $X4A
+$x '4' $a + ' ' > $X4A
+$X '4B' + ' ' > $X4B
+$x '4b' + ' ' > $X4B
+$X '5' + ' ' > $X5
+$x '5' + ' ' > $X5
+$X '6' + ' ' > $X6
+$x '6' + ' ' > $X6
+$X '6' $A + ' ' > $X6A
+$x '6' $a + ' ' > $X6A
+$X '7' + ' ' > $X7
+$x '7' + ' ' > $X7
+$X '8' + ' ' > $X8
+$x '8' + ' ' > $X8
+$X '8' + ' ' > $X8
+$x '8' + ' ' > $X8
+$X '8' + ' ' > $X8
+$x '8' + ' ' > $X8
+$X '8' $A + ' ' > $X8A
+$x '8' $a + ' ' > $X8A
+'Y1' + ' ' > $Y1
+'y1' + ' ' > $Y1
+'Y1' + ' ' > $Y1
+'y1' + ' ' > $Y1
+'Y1' $A + ' ' > $Y1A
+'y1' $a + ' ' > $Y1A
+'Y2' + ' ' > $Y2
+'y2' + ' ' > $Y2
+'Y2' + ' ' > $Y2
+'y2' + ' ' > $Y2
+'Y3' + ' ' > $Y3
+'y3' + ' ' > $Y3
+'Y3' + ' ' > $Y3
+'y3' + ' ' > $Y3
+'Y4' + ' ' > $Y4
+'y4' + ' ' > $Y4
+'Y4' + ' ' > $Y4
+'y4' + ' ' > $Y4
+'Y5' + ' ' > $Y5
+'y5' + ' ' > $Y5
+'Y6' + ' ' > $Y6
+'y6' + ' ' > $Y6
+'Y7' + ' ' > $Y7
+'y7' + ' ' > $Y7
+'Y8' + ' ' > $Y8
+'y8' + ' ' > $Y8
+'Y8' + ' ' > $Y8
+'y8' + ' ' > $Y8
+'Z1' + ' ' > $Z1
+'z1' + ' ' > $Z1
+'Z2' + ' ' > $Z2
+'z2' + ' ' > $Z2
+'Z2' $A + ' ' > $Z2A
+'z2' $a + ' ' > $Z2A
+'Z2B' + ' ' > $Z2B
+'z2b' + ' ' > $Z2B
+'Z2C' + ' ' > $Z2C
+'z2c' + ' ' > $Z2C
+'Z2' $D + ' ' > $Z2D
+'z2d' + ' ' > $Z2D
+'Z3' + ' ' > $Z3
+'z3' + ' ' > $Z3
+'Z3' $A + ' ' > $Z3A
+'z3' $a + ' ' > $Z3A
+'Z3B' + ' ' > $Z3B
+'z3b' + ' ' > $Z3B
+'Z4' + ' ' > $Z4
+'z4' + ' ' > $Z4
+'Z4' $A + ' ' > $Z4A
+'z4' $a + ' ' > $Z4A
+'Z5' + ' ' > $Z5
+'z5' + ' ' > $Z5
+'Z5' $A + ' ' > $Z5A
+'z5' $a + ' ' > $Z5A
+'Z6' + ' ' > $Z6
+'z6' + ' ' > $Z6
+'Z7' + ' ' > $Z7
+'z7' + ' ' > $Z7
+'Z7' + ' ' > $Z7
+'z7' + ' ' > $Z7
+'Z8' + ' ' > $Z8
+'z8' + ' ' > $Z8
+'Z9' + ' ' > $Z9
+'z9' + ' ' > $Z9
+'Z9' + ' ' > $Z9
+'z9' + ' ' > $Z9
+'Z10' + ' ' > $Z10
+'z10' + ' ' > $Z10
+'Z10' + ' ' > $Z10
+'z10' + ' ' > $Z10
+'Z11' + ' ' > $Z11
+'z11' + ' ' > $Z11
+'Z11' + ' ' > $Z11
+'z11' + ' ' > $Z11
+'Z12' + ' ' > $Z12
+'z12' + ' ' > $Z12
+'Z13' + ' ' > $Z13
+'z13' + ' ' > $Z13
+'Z14' + ' ' > $Z14
+'z14' + ' ' > $Z14
+'Z15' + ' ' > $Z15
+'z15' + ' ' > $Z15
+'Z15' $A + ' ' > $Z15A
+'z15' $a + ' ' > $Z15A
+'Z15B' + ' ' > $Z15B
+'z15b' + ' ' > $Z15B
+'Z15C' + ' ' > $Z15C
+'z15c' + ' ' > $Z15C
+'Z15' $D + ' ' > $Z15D
+'z15d' + ' ' > $Z15D
+'Z15E' + ' ' > $Z15E
+'z15e' + ' ' > $Z15E
+'Z15F' + ' ' > $Z15F
+'z15f' + ' ' > $Z15F
+'Z15G' + ' ' > $Z15G
+'z15g' + ' ' > $Z15G
+'Z15' $H + ' ' > $Z15H
+'z15h' + ' ' > $Z15H
+'Z15I' + ' ' > $Z15I
+'z15i' + ' ' > $Z15I
+'Z16' + ' ' > $Z16
+'z16' + ' ' > $Z16
+'Z16' $A + ' ' > $Z16A
+'z16' $a + ' ' > $Z16A
+'Z16B' + ' ' > $Z16B
+'z16b' + ' ' > $Z16B
+'Z16C' + ' ' > $Z16C
+'z16c' + ' ' > $Z16C
+'Z16' $D + ' ' > $Z16D
+'z16d' + ' ' > $Z16D
+'Z16E' + ' ' > $Z16E
+'z16e' + ' ' > $Z16E
+'Z16F' + ' ' > $Z16F
+'z16f' + ' ' > $Z16F
+'Z16G' + ' ' > $Z16G
+'z16g' + ' ' > $Z16G
+'Z16' $H + ' ' > $Z16H
+'z16h' + ' ' > $Z16H
+$A $a '1' + ' ' > $Aa1
+$A $A '1' + ' ' > $Aa1
+$a $a '1' + ' ' > $Aa1
+$A $a '2' + ' ' > $Aa2
+$A $A '2' + ' ' > $Aa2
+$a $a '2' + ' ' > $Aa2
+$A $a '3' + ' ' > $Aa3
+$A $A '3' + ' ' > $Aa3
+$a $a '3' + ' ' > $Aa3
+$A $a '4' + ' ' > $Aa4
+$A $A '4' + ' ' > $Aa4
+$a $a '4' + ' ' > $Aa4
+$A $a '4' + ' ' > $Aa4
+$A $A '4' + ' ' > $Aa4
+$a $a '4' + ' ' > $Aa4
+$A $a '4' + ' ' > $Aa4
+$A $A '4' + ' ' > $Aa4
+$a $a '4' + ' ' > $Aa4
+$A $a '5' + ' ' > $Aa5
+$A $A '5' + ' ' > $Aa5
+$a $a '5' + ' ' > $Aa5
+$A $a '6' + ' ' > $Aa6
+$A $A '6' + ' ' > $Aa6
+$a $a '6' + ' ' > $Aa6
+$A $a '7' + ' ' > $Aa7
+$A $A '7' + ' ' > $Aa7
+$a $a '7' + ' ' > $Aa7
+$A $a '7' $A + ' ' > $Aa7A
+$A $A '7' $A + ' ' > $Aa7A
+$a $a '7' $a + ' ' > $Aa7A
+$A $a '7B' + ' ' > $Aa7B
+$A $A '7B' + ' ' > $Aa7B
+$a $a '7b' + ' ' > $Aa7B
+$A $a '8' + ' ' > $Aa8
+$A $A '8' + ' ' > $Aa8
+$a $a '8' + ' ' > $Aa8
+$A $a '8' + ' ' > $Aa8
+$A $A '8' + ' ' > $Aa8
+$a $a '8' + ' ' > $Aa8
+$A $a '8' + ' ' > $Aa8
+$A $A '8' + ' ' > $Aa8
+$a $a '8' + ' ' > $Aa8
+$A $a '9' + ' ' > $Aa9
+$A $A '9' + ' ' > $Aa9
+$a $a '9' + ' ' > $Aa9
+$A $a '10' + ' ' > $Aa10
+$A $A '10' + ' ' > $Aa10
+$a $a '10' + ' ' > $Aa10
+$A $a '11' + ' ' > $Aa11
+$A $A '11' + ' ' > $Aa11
+$a $a '11' + ' ' > $Aa11
+$A $a '12' + ' ' > $Aa12
+$A $A '12' + ' ' > $Aa12
+$a $a '12' + ' ' > $Aa12
+$A $a '13' + ' ' > $Aa13
+$A $A '13' + ' ' > $Aa13
+$a $a '13' + ' ' > $Aa13
+$A $a '13' + ' ' > $Aa13
+$A $A '13' + ' ' > $Aa13
+$a $a '13' + ' ' > $Aa13
+$A $a '13' + ' ' > $Aa13
+$A $A '13' + ' ' > $Aa13
+$a $a '13' + ' ' > $Aa13
+$A $a '14' + ' ' > $Aa14
+$A $A '14' + ' ' > $Aa14
+$a $a '14' + ' ' > $Aa14
+$A $a '14' + ' ' > $Aa14
+$A $A '14' + ' ' > $Aa14
+$a $a '14' + ' ' > $Aa14
+$A $a '14' + ' ' > $Aa14
+$A $A '14' + ' ' > $Aa14
+$a $a '14' + ' ' > $Aa14
+$A $a '15' + ' ' > $Aa15
+$A $A '15' + ' ' > $Aa15
+$a $a '15' + ' ' > $Aa15
+$A $a '15' + ' ' > $Aa15
+$A $A '15' + ' ' > $Aa15
+$a $a '15' + ' ' > $Aa15
+$A $a '15' + ' ' > $Aa15
+$A $A '15' + ' ' > $Aa15
+$a $a '15' + ' ' > $Aa15
+$A $a '15' + ' ' > $Aa15
+$A $A '15' + ' ' > $Aa15
+$a $a '15' + ' ' > $Aa15
+$A $a '16' + ' ' > $Aa16
+$A $A '16' + ' ' > $Aa16
+$a $a '16' + ' ' > $Aa16
+$A $a '17' + ' ' > $Aa17
+$A $A '17' + ' ' > $Aa17
+$a $a '17' + ' ' > $Aa17
+$A $a '17' + ' ' > $Aa17
+$A $A '17' + ' ' > $Aa17
+$a $a '17' + ' ' > $Aa17
+$A $a '18' + ' ' > $Aa18
+$A $A '18' + ' ' > $Aa18
+$a $a '18' + ' ' > $Aa18
+$A $a '18' + ' ' > $Aa18
+$A $A '18' + ' ' > $Aa18
+$a $a '18' + ' ' > $Aa18
+$A $a '19' + ' ' > $Aa19
+$A $A '19' + ' ' > $Aa19
+$a $a '19' + ' ' > $Aa19
+$A $a '20' + ' ' > $Aa20
+$A $A '20' + ' ' > $Aa20
+$a $a '20' + ' ' > $Aa20
+$A $a '21' + ' ' > $Aa21
+$A $A '21' + ' ' > $Aa21
+$a $a '21' + ' ' > $Aa21
+$A $a '22' + ' ' > $Aa22
+$A $A '22' + ' ' > $Aa22
+$a $a '22' + ' ' > $Aa22
+$A $a '23' + ' ' > $Aa23
+$A $A '23' + ' ' > $Aa23
+$a $a '23' + ' ' > $Aa23
+$A $a '24' + ' ' > $Aa24
+$A $A '24' + ' ' > $Aa24
+$a $a '24' + ' ' > $Aa24
+$A $a '25' + ' ' > $Aa25
+$A $A '25' + ' ' > $Aa25
+$a $a '25' + ' ' > $Aa25
+$A $a '26' + ' ' > $Aa26
+$A $A '26' + ' ' > $Aa26
+$a $a '26' + ' ' > $Aa26
+$A $a '27' + ' ' > $Aa27
+$A $A '27' + ' ' > $Aa27
+$a $a '27' + ' ' > $Aa27
+$A $a '28' + ' ' > $Aa28
+$A $A '28' + ' ' > $Aa28
+$a $a '28' + ' ' > $Aa28
+$A $a '29' + ' ' > $Aa29
+$A $A '29' + ' ' > $Aa29
+$a $a '29' + ' ' > $Aa29
+$A $a '30' + ' ' > $Aa30
+$A $A '30' + ' ' > $Aa30
+$a $a '30' + ' ' > $Aa30
+$A $a '31' + ' ' > $Aa31
+$A $A '31' + ' ' > $Aa31
+$a $a '31' + ' ' > $Aa31
+$A $a '32' + ' ' > $Aa32
+$A $A '32' + ' ' > $Aa32
+$a $a '32' + ' ' > $Aa32
