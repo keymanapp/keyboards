@@ -46,8 +46,7 @@ the info available on the keyboard download site.  Instructions on using the key
 			<td>Assamese</td>
 			<td><span class='lang2' style='color:#0000FF; font-size:150%'>অসমীয়া</span></td>
 			<td>"Assamese"</td>
-			<td><kbd>A</kbd><kbd>s</kbd><kbd>m
-<p style='margin:0px'>&#169; 2009-2018 TI Trade</p></kbd><kbd>E</kbd><kbd>x</kbd><kbd>a</kbd></td>
+			<td><kbd>A</kbd><kbd>s</kbd><kbd>m</kbd><kbd>E</kbd><kbd>x</kbd><kbd>a</kbd></td>
 		</tr>
 	</table>
 
