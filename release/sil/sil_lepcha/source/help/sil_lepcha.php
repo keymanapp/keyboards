@@ -313,12 +313,11 @@ width="36"/><col width="39"/><col width="34"/></colgroup><tr><td style="width:0.
      <p>mlY</p></td><td style="width:0.3792in; ">
      <p>rY</p></td><td style="width:0.4222in; ">
      <p>lY</p></td><td style="width:0.3771in; ">
-     <p>hY</p></td><td style="width:0.3382in; "> border="0"
-cellspacing="0"
+     <p>hY</p></td><td style="width:0.3382in; ">
      <p>hlY</p></td><td style="width:0.3215in; ">
      <p>vY</p></td><td style="width:0.3521in; ">
      <p>shY</p></td><td style="width:0.3049in; ">
-     <p>AY</p></td></tr><tr class="lepcha"><td style="width:0.366in; ">
+     <p>aY</p></td></tr><tr class="lepcha"><td style="width:0.366in; ">
      <p>ᰒᰤ</p></td><td style="width:0.3792in; ">
      <p>ᰓᰤ</p></td><td style="width:0.4618in; ">
      <p>ᰔᰤ</p></td><td style="width:0.3806in; ">
@@ -329,8 +328,7 @@ cellspacing="0"
      <p>ᰝᰤ</p></td><td style="width:0.3382in; ">
      <p>ᰞᰤ</p></td><td style="width:0.3215in; ">
      <p>ᰟᰤ</p></td><td style="width:0.3521in; ">
-     <p>ᰡᰤ</p></td><td style="width:0.3049in; "> border="0"
-cellspacing="0"
+     <p>ᰡᰤ</p></td><td style="width:0.3049in; ">
      <p>ᰣᰤ</p></td></tr><tr><td style="width:0.366in; ">
      <p>kQ</p></td><td style="width:0.3792in; ">
      <p>gQ</p></td><td style="width:0.4618in; ">
@@ -361,8 +359,7 @@ cellspacing="0"
      <p>ngQY</p></td><td style="width:0.3806in; ">
      <p>pQY</p></td><td style="width:0.3458in; ">
      <p>fQY</p></td><td style="width:0.3792in; ">
-     <p>bQY</p></td><td style="width:0.4222in; "> border="0"
-cellspacing="0"
+     <p>bQY</p></td><td style="width:0.4222in; ">
      <p>mQY</p></td><td style="width:0.3771in; ">
      <p>hQY</p></td><td style="width:0.3382in; ">
      <p> </p></td><td style="width:0.3215in; ">
@@ -377,8 +374,7 @@ cellspacing="0"
      <p>ᰓᰥᰤ</p></td><td style="width:0.4222in; ">
      <p>ᰕᰥᰤ</p></td><td style="width:0.3771in; ">
      <p>ᰝᰥᰤ</p></td><td style="width:0.3382in; ">
-     <p> </p></td><td style="width:0.3215in; "> border="0"
-cellspacing="0"
+     <p> </p></td><td style="width:0.3215in; ">
      <p> </p></td><td style="width:0.3521in; ">
      <p> </p></td><td style="width:0.3049in; ">
      <p> </p></td></tr></table>

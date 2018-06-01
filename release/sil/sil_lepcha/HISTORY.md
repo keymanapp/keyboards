@@ -1,4 +1,4 @@
-____________ Keyboard Change History
+Lepcha (SIL) Keyboard Change History
 =======================
 
 1.0 (31 May 2018)
