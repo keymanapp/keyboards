@@ -1,0 +1,34 @@
+store(&VERSION) '8.0'
+store(&NAME) 'Hieroglyphic'
+store(&BITMAP) 'Hieroglyphic.ico'
+store(&includecodes) 'codes.txt'
+
+store(&VISUALKEYBOARD) 'Hieroglyphic.kvk'
+store(&COPYRIGHT) '© 2010 Christian Casey'
+store(&ETHNOLOGUECODE) 'egy'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Prevents [K_SPACE] from doing anything else
+ + ' ' > nul
+
+c Unless the user presses [CTRL]
+$KeymanOnly: + [CTRL K_SPACE] > ' ' return
+$KeymanWeb: + [CTRL K_SPACE] > ' '
+
+c Text direction control (To be implemented in a later version)
+c 'ltr' + ' ' > U+202C
+c 'rtl' + ' ' > U+202E
+c + '<' > U+202C
+c + '>' > U+202E
+
+c 3
+'3' + ' ' > dk(4) $Z2
+'+4' + '+' > dk(4)
+dk(4) $Z2 + ' ' > dk(4) $N33A
+dk(4) $N33A + ' ' > dk(4) $Z3
+dk(4) $Z3 + ' ' > dk(4) $Z3A
+dk(4) $Z3A + ' ' > dk(4) $Z2
+
