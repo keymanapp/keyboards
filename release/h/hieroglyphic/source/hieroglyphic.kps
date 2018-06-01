@@ -1,2 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Package><System><KeymanDeveloperVersion>8.0.355.0</KeymanDeveloperVersion><FileVersion>7.0</FileVersion></System><Options><ExecuteProgram></ExecuteProgram><ReadMeFile>about.htm</ReadMeFile><GraphicFile>Splash.png</GraphicFile><MSIFileName></MSIFileName><MSIOptions></MSIOptions></Options><Buttons><Button><ButtonType>install</ButtonType><Caption>&amp;Install</Caption><URL></URL><Left>0</Left><Top>0</Top></Button><Button><ButtonType>cancel</ButtonType><Caption>Cancel</Caption><URL></URL><Left>0</Left><Top>0</Top></Button><Button><ButtonType>about</ButtonType><Caption>&amp;About...</Caption><URL></URL><Left>0</Left><Top>0</Top></Button></Buttons><Registry/><StartMenu><Folder>Hieroglyphic</Folder><Items><Item><Name>Keyboard Help</Name><FileName>welcome.htm</FileName><Arguments></Arguments><Icon></Icon><Location>psmelStartMenu</Location></Item><Item><Name>Aegyptus Font Help</Name><FileName>Aegyptus.pdf</FileName><Arguments></Arguments><Icon></Icon><Location>psmelStartMenu</Location></Item><Item><Name>Aegyptus Sign List</Name><FileName>SignList.pdf</FileName><Arguments></Arguments><Icon></Icon><Location>psmelStartMenu</Location></Item></Items></StartMenu><Info><Name URL="">Hieroglyphic</Name><Copyright URL="">© 2010</Copyright><Version URL="">1.2</Version><Author URL="">Christian Casey</Author></Info><Files><File><Name>welcome.htm</Name><Description>File welcome.htm</Description><CopyLocation>0</CopyLocation><FileType>.htm</FileType></File><File><Name>about.htm</Name><Description>File about.htm</Description><CopyLocation>0</CopyLocation><FileType>.htm</FileType></File><File><Name>style.css</Name><Description>File style.css</Description><CopyLocation>0</CopyLocation><FileType>.css</FileType></File><File><Name>Hieroglyphic.ico</Name><Description>File Hieroglyphic.ico</Description><CopyLocation>0</CopyLocation><FileType>.ico</FileType></File><File><Name>Aegyptus.pdf</Name><Description>File Aegyptus.pdf</Description><CopyLocation>0</CopyLocation><FileType>.pdf</FileType></File><File><Name>Aegyptus.ttf</Name><Description>Font Aegyptus</Description><CopyLocation>0</CopyLocation><FileType>.ttf</FileType></File><File><Name>Gardiner.ttf</Name><Description>Font Gardiner</Description><CopyLocation>0</CopyLocation><FileType>.ttf</FileType></File><File><Name>SignList.pdf</Name><Description>File SignList.pdf</Description><CopyLocation>0</CopyLocation><FileType>.pdf</FileType></File><File><Name>SignList.txt</Name><Description>File SignList.txt</Description><CopyLocation>0</CopyLocation><FileType>.txt</FileType></File><File><Name>Splash.png</Name><Description>File Splash.png</Description><CopyLocation>0</CopyLocation><FileType>.png</FileType></File><File><Name>Hieroglyphic.kvk</Name><Description>File Hieroglyphic.kvk</Description><CopyLocation>0</CopyLocation><FileType>.kvk</FileType></File><File><Name>Hieroglyphic.kmx</Name><Description>Keyboard Hieroglyphic</Description><CopyLocation>0</CopyLocation><FileType>.kmx</FileType></File></Files><Strings/></Package>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>10.0.1093.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>right_said_splash.png</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL="">1.1</Version>
+    <Name URL="">Hieroglyphic</Name>
+    <Copyright URL="">© 2010-2018 Christian Casey</Copyright>
+    <Author URL="">Christian Casey</Author>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\hieroglyphic.js</Name>
+      <Description>File hieroglyphic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\hieroglyphic.kvk</Name>
+      <Description>File hieroglyphic.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\hieroglyphic.kmx</Name>
+      <Description>Keyboard Hieroglyphic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\assets\Aegyptus.pdf</Name>
+      <Description>File Aegyptus.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\Aegyptus.ttf</Name>
+      <Description>Font Aegyptus</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\Gardiner.ttf</Name>
+      <Description>Font Gardiner</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>right_said_splash.png</Name>
+      <Description>File right_said_splash.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\Hieroglyphic Keyboard Help.pdf</Name>
+      <Description>File Hieroglyphic Keyboard Help.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>welcome\SignList.pdf</Name>
+      <Description>File SignList.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Hieroglyphic</Name>
+      <ID>hieroglyphic</ID>
+      <Version>1.1</Version>
+      <OSKFont>..\assets\Gardiner.ttf</OSKFont>
+      <DisplayFont>..\assets\Gardiner.ttf</DisplayFont>
+      <Languages>
+        <Language ID="egy-Egyp">Egyptian (Ancient) (Egyptian hieroglyphs)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
