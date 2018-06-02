@@ -1,7 +1,7 @@
 arabic_izza Change History
 ==========================
 
-1.1 (29 May 2018)
+1.1 (2 June 2018)
 -------------------
 * Revised keyboard for desktop, phone, and tablet
 * Added extra letters (ڤ، چ، گ، پ، ژ) for writing other 
