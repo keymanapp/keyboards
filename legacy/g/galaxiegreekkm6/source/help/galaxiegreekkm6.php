@@ -171,7 +171,7 @@ for full details on how to type all the Galaxie Greek keyboard's letters, diacri
 <h2>Troubleshooting</h2>
 <p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://help.keyman.com">contact us</a>.</p>
 
 </div>
 <div id="Resources">
@@ -183,17 +183,17 @@ for full details on how to type all the Galaxie Greek keyboard's letters, diacri
 <p><a href="http://www.tavultesoft.com/greek/" target="_blank">Greek Keyboards Home</a></p>
 
 <p>Non-classical and Monotonic Greek keyboard layouts:</p>
-<p><a href="/go?language=greek&amp;keyboard=keyboard_greek">Greek Basic</a><br/>
-<a href="/go?language=greek&amp;keyboard=keyboard_greek_220">Greek (220) Basic</a><br/>
-<a href="/go?language=greek&amp;keyboard=keyboard_greek_319">Greek (319) Basic</a></p>
+<p><a href="https://keyman.com/keyboards/kbdhe">Greek Basic</a><br/>
+<a href="https://keyman.com/keyboards/kbdhe220">Greek (220) Basic</a><br/>
+<a href="https://keyman.com/keyboards/kbdhe319">Greek (319) Basic</a></p>
 
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=413">Download the Galaxie BibleScript Greek Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/galaxiegreekandhebrew">Download the Galaxie BibleScript Greek Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/greek.htm">More on the Greek Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Greek_alphabet">More on the Greek Writing System at Wikipedia.org</a></p>
-<p><a target="_blank" href="http://en.wikipedia.org/wiki/Greek_language">More on Koine Greek at Wikipedia.org</a></p>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Greek_alphabet">More on the Greek Writing System at Wikipedia.org</a></p>
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/Greek_language">More on Koine Greek at Wikipedia.org</a></p>
 </div>
 </div>
 <div id="Technical">
