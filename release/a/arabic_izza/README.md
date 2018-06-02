@@ -1,7 +1,7 @@
 Arabic Izza keyboard
 ====================
 
-Copyright (C) 1977-2018 Prof. Abdelmalek Bouhadjera
+Copyright (C) 2017-2018 Prof. Abdelmalek Bouhadjera
 
 Arabic Izza: The pleasure of typing Arabic.
 استرجاع لهيبة العربية في عصر المعلوملتية
@@ -9,7 +9,7 @@ Arabic Izza: The pleasure of typing Arabic.
 Links
 -----
 
- * Home:     https://keyman.com/
+ * Home:     https://keyman.com/keyboards/arabic_izza
  * Help:     https://help.keyman.com/keyboard/arabic_izza
 
 Supported Platforms
