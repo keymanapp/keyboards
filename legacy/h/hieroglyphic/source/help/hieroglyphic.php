@@ -12,16 +12,16 @@
           <h2>Overview</h2>
       <p>This keyboard provides a quick and easy way to enter Ancient Egyptian 
       hieroglyphs as Unicode text. It is designed to bridge the gap between the
-      available hieroglyphic editors, which encode hieroglyphs using the <a href='http://en.wikipedia.org/wiki/Manuel_de_Codage'>Manuel de Codage</a> standard (<a href="http://www.catchpenny.org/codage/">MdC</a>), and the websites and programs designed for basic fonts, which will almost certainly never support the complex
+      available hieroglyphic editors, which encode hieroglyphs using the <a href='https://en.wikipedia.org/wiki/Manuel_de_Codage'>Manuel de Codage</a> standard (<a href="http://www.catchpenny.org/codage/">MdC</a>), and the websites and programs designed for basic fonts, which will almost certainly never support the complex
       formatting needed to properly display Ancient Egyptian. This keyboard emulates MdC editors as much as possible in order to be accessible to users familiar with other programs. Most of
       these programs are intuitive, so new users should find the keyboard
       easy to learn and use as well (see <a href="#methods">Methods for Typing Hieroglyphs</a> for more about available typing methods).</p>
           <h4>Basic Function</h4>
-      <p>The Unicode Hieroglyphic keyboard lets you type transliterated text and hieroglyphs. The keyboard outputs transliterated text using the Manuel de Codage (MdC) standard. It creates hieroglyphs from MdC transliteration <b>or</b> <a href='http://en.wikipedia.org/wiki/Gardiner%27s_sign_list'>Gardiner sign list</a> numbers each time you press <kbd>Spacebar</kbd>. Repeat pressing <kbd>Spacebar</kbd> on signs output from MdC transliteration will cycle through phonetically identical signs. Pressing <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd> instead outputs a space, which will also prevent transliteration from becoming hieroglyphs.</p>	
+      <p>The Unicode Hieroglyphic keyboard lets you type transliterated text and hieroglyphs. The keyboard outputs transliterated text using the Manuel de Codage (MdC) standard. It creates hieroglyphs from MdC transliteration <b>or</b> <a href='https://en.wikipedia.org/wiki/Gardiner%27s_sign_list'>Gardiner sign list</a> numbers each time you press <kbd>Spacebar</kbd>. Repeat pressing <kbd>Spacebar</kbd> on signs output from MdC transliteration will cycle through phonetically identical signs. Pressing <kbd>Ctrl</kbd>+<kbd>Spacebar</kbd> instead outputs a space, which will also prevent transliteration from becoming hieroglyphs.</p>	
           <h4>On Screen Keyboard</h4>
           <p>This keyboard includes an On Screen Keyboard view of the MdC transliteration standard for easy reference. The On Screen Keyboard works best when associated with a QWERTY US layout.</p>
           <h4>Fonts</h4>
-          <p>This is a Unicode keyboard and works with any Unicode font which has support for Ancient Egyptian transliteration and hieroglyphs. Fonts which work with this keyboard include Aegyptus and Gardiner, which install with the keyboard. To see if other fonts on your computer support the keyboard, use the Keyman <a href='http://help.keymandesktop.com/docs/start_font.php'>Font Helper</a>.</p>
+          <p>This is a Unicode keyboard and works with any Unicode font which has support for Ancient Egyptian transliteration and hieroglyphs. Fonts which work with this keyboard include Aegyptus and Gardiner, which install with the keyboard. To see if other fonts on your computer support the keyboard, use the Keyman Desktop Font Helper.</p>
     </section>
     <section id='layout' class='break'>
       <h3>Keyboard Layout</h3>
@@ -3076,7 +3076,7 @@
                           <h4>A Hieroglyphic Text Editor</h4>
                                   <p>This is the best way to input hieroglyphs when formatting is a primary concern, i.e. when the text has to look exactly as it would have on a temple wall. These programs provide full control over the placement, size, and orientation of each glyph. The downside is that any text made in a program like this has to be rendered as a graphic before it can be used anywhere else. Once it becomes a graphic, it is impossible to make any changes to the text. It also cannot be entered into text boxes, searched, processed by a computer program, etc.</p>
                                   <p>If proper formatting is an important issue, try using JSesh instead of this keyboard. JSesh is a free, open-source hieroglyphic text editor that provides an extraordinary level of control over formatting.</p>
-                                  <p><a href="http://jsesh.qenherkhopeshef.org/en/download">Download JSesh</a></p>
+                                  <p><a href="https://jsesh.qenherkhopeshef.org/">Download JSesh</a></p>
                           </li>
                           <li>
                                   <h4>An Image</h4>
