@@ -17,7 +17,7 @@
 */
   $pagename = 'Rawang Keyboard Help';
   $pagetitle = 'Rawang Keyboard Help';
-  $keymanpromourl = 'http://keymankeyboards.com/?id=414';
+  $keymanpromourl = 'https://keyman.com/keyboards/rawangu';
   $style = <<<EXTRA
   .highlightExample {font-weight: bold; color: #0000ff}
   .highlightKeys img {vertical-align:baseline !important}
@@ -99,15 +99,15 @@ This keyboard is intended for the Rawang language of Myanmar and India. The keyb
 <p class='keymanweb'>If any letters or symbols on this page or in this keyboard do not look correct, you will probably need to use a different font with this keyboard. Please read our <a target="_blank" href="/troubleshooting/#boxes">troubleshooting guide</a> for more help.
 </p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://help.keyman.com/">contact us</a>.</p>
 
 </div>
 
 <div id="Resources">
 <h2>Further Resources</h2>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=414">Download the Rawang Keyboard for Keyman Desktop</a></p>
-<p><a target="_blank" href="http://www.ethnologue.com/show_language.asp?code=raw">More on the Rawang language from the Ethnologue</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/rawangu">Download the Rawang Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://www.ethnologue.com/language/raw">More on the Rawang language from the Ethnologue</a></p>
 
 <div id="Technical">
 <h2>Technical Information</h2>
