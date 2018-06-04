@@ -117,7 +117,7 @@ END;
 		<h4>How to Correctly Display N'Ko in Windows</h4>
 		<p>N'Ko letters join together like Arabic when they display correctly. In order to have N'Ko letters display correctly, you must use a <a href='http://scripts.sil.org/cms/scripts/page.php?site_id=projects&item_id=graphite_home'>Graphite</a> font and a Graphite-enabled Web or desktop application.</p>
 		<h5>Graphite Fonts</h5>
-		<p>The N'Ko font <b>Conakry</b> which installs with this keyboard is a Graphite font. You should use Conakry or another Graphite N'Ko font whenever you type N'Ko. The standard Windows font Ebrima offers basic support for N'Ko, but it will not join letters together. To learn which fonts on your computer may support N'Ko, use the Keyman <a href='http://help.keymandesktop.com/docs/start_font.php'>Font Helper</a>.</p>
+		<p>The N'Ko font <b>Conakry</b> which installs with this keyboard is a Graphite font. You should use Conakry or another Graphite N'Ko font whenever you type N'Ko. The standard Windows font Ebrima offers basic support for N'Ko, but it will not join letters together. To learn which fonts on your computer may support N'Ko, use the Keyman Desktop Font Helper.</p>
 		<h5>N'Ko on the Internet</h5>
 		<p>The Firefox web browser can be used to type and display N'Ko correctly. Here is how:</p>
 		<ol>
