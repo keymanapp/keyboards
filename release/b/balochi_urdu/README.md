@@ -18,7 +18,7 @@ item.
 Links
 -----
 
- * Home:     <http://keymankeyboards.com/>
+ * Home:     <https:/help.keyman.com/keyboard/balochi_urdu>
  * Contact:  <support@keyman.com>
  
 Supported Platforms
@@ -29,8 +29,3 @@ Supported Platforms
  * Web
  * iOS
  * Android
-
-Todo
-----
-
-* Change "home" url when there is a release on keyman site
