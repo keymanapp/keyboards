@@ -1,7 +1,7 @@
 Hieroglyphic Keyboard Change History
 =======================
 
-1.1 (1 Jun 2018)
+1.3 (1 Jun 2018)
 -----------------
 * Migrated to GitHub
 
