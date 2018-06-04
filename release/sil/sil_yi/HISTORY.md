@@ -1,6 +1,10 @@
 SIL Yi Keyboard Change History
 =======================
 
+1.2.1 (4 Jun 2018)
+------------------
+* Added script information to language metadata in .kps
+
 1.2 (7 May 2018)
 -----------------
 * Added to GitHub repository
