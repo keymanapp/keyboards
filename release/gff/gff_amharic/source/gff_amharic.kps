@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1090.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1092.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
     <Items>
       <Item>
         <Name>Welcome</Name>
-        <FileName>Welcome.htm</FileName>
+        <FileName>welcome.htm</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -52,7 +52,7 @@
       </Item>
       <Item>
         <Name>Amharic Typing Practice</Name>
-        <FileName>AmharicTypingPractice.docx</FileName>
+        <FileName>http://keyboards.ethiopic.org/docs/AmharicTypingPractice.docx</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -63,7 +63,7 @@
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
     <Version URL="">1.5</Version>
     <Name URL="">GFF Amharic Keyboard</Name>
-    <Copyright URL="">Creative Commons Attribution 3.0</Copyright>
+    <Copyright URL="">© 1997-2018 Ge'ez Frontier Foundation, Tavultesoft</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
   </Info>
   <Files>
@@ -104,16 +104,10 @@
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>Welcome.htm</Name>
-      <Description>File Welcome.htm</Description>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\AbyssinicaSIL-R.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
@@ -194,31 +188,35 @@
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>gff_amharic.kvk</Name>
-      <Description>File gff_amharic.kvk</Description>
+      <Name>..\build\gff_amharic.js</Name>
+      <Description>File gff_amharic.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
+      <FileType>.js</FileType>
     </File>
     <File>
-      <Name>gff_amharic.kmx</Name>
-      <Description>Keyboard አማርኛ(Amharic)</Description>
+      <Name>..\build\gff_amharic.kmx</Name>
+      <Description>Keyboard አማርኛ (Amharic)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>AmharicTypingPractice.docx</Name>
-      <Description>File AmharicTypingPractice.docx</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.docx</FileType>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\gff_amharic.kvk</Name>
+      <Description>File gff_amharic.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>አማርኛ(Amharic)</Name>
+      <Name>አማርኛ (Amharic)</Name>
       <ID>gff_amharic</ID>
       <Version>1.5</Version>
-      <OSKFont>..\..\..\shared\fonts\geez\AbyssinicaSIL-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\geez\AbyssinicaSIL-R.ttf</DisplayFont>
       <Languages>
         <Language ID="am">am</Language>
       </Languages>

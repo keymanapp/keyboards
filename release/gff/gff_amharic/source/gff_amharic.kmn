@@ -16,12 +16,12 @@ c
 store(&NAME) 'አማርኛ (Amharic)'
 c $keymanonly:store(&MnemonicLayout) "1"
   store(&CapsAlwaysOff) "0"
-  store(&Copyright) "Creative Commons Attribution 3.0"
+  store(&Copyright) '© 1997-2018 Ge' U+0027 'ez Frontier Foundation, Tavultesoft'
   store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&WINDOWSLANGUAGES) 'x045E'
 store(&LANGUAGE) 'x045E'
   store(&EthnologueCode) "amh"
-store(&VISUALKEYBOARD) 'gff_amharic.kvk'
+store(&VISUALKEYBOARD) 'gff_amharic.kvks'
   store(&HOTKEY) "[CTRL ALT K_A]"
 c 
 c =====================End Identity Section=====================================================
@@ -234,6 +234,7 @@ c
 c Alef-A Vowels as Vowels
   + any(alefKeys) > index(alefEthio,1) 
   'አ' + any(gIz-key) > 'ኧ'
+  'አ' + "'" > 'አ' deadkey(1) c special case to supoort occurences of አእ አዕ from borrowed ge'ez words
 
 c Alef-A Vowels as Regular Syllables
   'እ' + any(kaIb-key) > 'ኡ'
