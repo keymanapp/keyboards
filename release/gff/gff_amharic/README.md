@@ -12,8 +12,8 @@ Links
 -----
 
  * Home:     <http://keyman.com/amharic>
- * Deployed: <http://s.keyman.com/keyboard/gff_amh_7>
- * Help:     <http://help.keyman.com/keyboard/gff_amh_7>
+ * Deployed: <http://keyman.com/keyboards/gff_amharic>
+ * Help:     <http://help.keyman.com/keyboard/gff_amharic>
  * Contact:  <support@keyman.com>
  * Specification :  http://keyboards.ethiopic.org/specification/
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
