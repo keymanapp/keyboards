@@ -19,11 +19,7 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 Links
 -----
 
-	* Web: https://keymanweb.com/#bft,Keyboard_rac_balti
-	* Home: https://keyman.com/keyboard/rac_balti
-	* Legacy: http://keymankeyboards.com/?id=727                                        please the legacy ID
-	* Documentation: https://help.keyman.com/keyboard/rac_balti/
-	* Contact: Mr.Rehmat Aziz Chitrali Linguist and Researcher <rachitrali@yahoo.com>
+	* Contact: Mr. Rehmat Aziz Chitrali Linguist and Researcher <rachitrali@yahoo.com>
 
 Supported Platforms
 -------------------
