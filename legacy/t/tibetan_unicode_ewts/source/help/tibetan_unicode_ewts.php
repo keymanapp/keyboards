@@ -247,7 +247,7 @@ END;
 	<h4>Latin + Cyrillic</h4>	
 	<p>You can type Latin and Cyrillic letters while using this keyboard. To use the Latin mode and get standard Latin output for any keystroke instead of Tibetan, type <kbd>Esc</kbd> first. Type <kbd>Esc</kbd> again to return to Tibetan. To use the Cyrillic mode, type <kbd>Esc</kbd><kbd>Esc</kbd>. Type <kbd>Esc</kbd> again to return to Tibetan.</p>	
 	<h4>Fonts</h4>
-	<p>This is a Unicode keyboard and works with any Unicode font which has support for Tibetan script. The <b>Tibetan Machine Uni</b> font supports Tibetan script and is installed with the keyboard. To find other fonts on your computer which support this keyboard, use the Keyman <a href='http://help.keymandesktop.com/docs/start_font.php'>Font Helper</a>.</p>
+	<p>This is a Unicode keyboard and works with any Unicode font which has support for Tibetan script. The <b>Tibetan Machine Uni</b> font supports Tibetan script and is installed with the keyboard. To find other fonts on your computer which support this keyboard, use the Keyman Desktop Font Helper.</p>
   </section>
   <section id='layout' class='break'>
     <h3>Keyboard Layout</h3>

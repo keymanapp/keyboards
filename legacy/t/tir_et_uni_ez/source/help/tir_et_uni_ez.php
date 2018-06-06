@@ -9,7 +9,7 @@
 
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for use with the <a href="http://en.wikipedia.org/wiki/Tigrigna"><b>Tigrigna</b></a> language as used in Ethiopia.  It uses <b>embedded fonts</b>.
+This keyboard is designed for use with the <a href="https://en.wikipedia.org/wiki/Tigrinya_language"><b>Tigrigna</b></a> language as used in Ethiopia.  It uses <b>embedded fonts</b>.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
@@ -19,9 +19,9 @@ This keyboard is designed for use with the <a href="http://en.wikipedia.org/wiki
 <div id='osk'>
 </div>
 
-<h2>Further Information</h2>
+<!-- <h2>Further Information</h2>
 <p>
-For further details on using this keyboard, <a href="http://ethiopic.keymankeyboards.com/tir_et/Welcome.htm">click here.</a> -->
+For further details on using this keyboard, <a href="http://ethiopic.keymankeyboards.com/tir_et/Welcome.htm">click here.</a>
 </p>
-
+ -->
 
