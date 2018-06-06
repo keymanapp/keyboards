@@ -12,6 +12,17 @@
   require_once('header.php');
 ?>
 
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>Khowar Help</title>
+    <link rel='icon' href='Khowar.ico'/>     
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+    <![endif]-->    
+</head>
+
+<body>
   <h1>Khowar Help</h1>
   <p>Keyboard &#169; 2013 Tavultesoft</p>
    <section id='overview'>
@@ -728,3 +739,4 @@
         </div>
     </article>
   </section>    
+</body>
