@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 1977-2017 Prof. Abdelmalek Bouhadjera
+Copyright (c) 2017-2018 Prof. Abdelmalek Bouhadjera
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
