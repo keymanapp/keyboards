@@ -1,6 +1,9 @@
 Tchad Keyboard Change History
 =======================
 
+3.3.1 (4 Jun 2018)
+------------------
+* Added script information to language metadata in .kps
 
 3.3 (26 Apr 2018)
 -----------------

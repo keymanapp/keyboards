@@ -1,0 +1,408 @@
+﻿store(&VERSION) "9.0"
+store(&NAME) "Vai (SIL)"
+store(&BITMAP) 'sil_vai.ico'
+store(&COPYRIGHT) '© 2009-2018 SIL International'
+store(&TARGETS) 'windows macosx linux'
+store(&ETHNOLOGUECODE) 'vai'
+store(&KEYBOARDVERSION) '0.6'
+store(&MESSAGE) 'This keyboard was developed for keyboarding the Vai Script. It is based on the old custom-encoded keyboard, but it has been updated for Unicode. Historic characters, logograms and digits are not included in the keyboard (U+A610..U+A62B).'
+
+begin UNICODE > use(MainU)
+
+store(&mnemoniclayout) "1"
+
+group(MainU) using keys
+
++ 'e'	> U+A500
++ 'i'	> U+A524
++ 'a' 	> U+A549
++ 'o' 	> U+A571
++ 'u'	> U+A595
++ 'x'	> U+A5BA
++ 'q'	> U+A5E1
+
+
++ 'b'		> dk(b)
++ 'c'		> dk(c)
++ 'd'		> dk(d)
++ 'f'		> dk(f)
++ 'g'		> dk(g)
++ 'h'		> dk(h)
++ 'j'		> dk(j)
++ 'k'		> dk(k)
++ 'l'		> dk(l)
++ 'm'		> dk(m)
++ 'n'		> dk(n)
++ 'p'		> dk(p)
++ 'r'		> dk(r)
++ 's'		> dk(s)
++ 't'		> dk(t)
++ 'v'		> dk(v)
++ 'w'		> dk(w)
++ 'x'       > dk(x)
++ 'y'		> dk(y)
++ 'z'		> dk(z)
+
++ '~'		> dk(tilde)
+
+
+c nasal vowels
+dk(tilde) + 'e'	> U+A501
+dk(tilde) + 'i'	> U+A525
+dk(tilde) + 'a' > U+A54A
+dk(tilde) + 'o' > U+A572
+dk(tilde) + 'u'	> U+A596
+dk(tilde) + 'x'	> U+A5BB
+dk(tilde) + 'q'	> U+A5E2
+
+c b_ series
+dk(b) + 'e'	> U+A507
+dk(b) + 'i'	> U+A52C
+dk(b) + 'a'	> U+A552
+dk(b) + 'o'	> U+A578
+dk(b) + 'u' > U+A59D
+dk(b) + 'x' > U+A5C3
+dk(b) + 'q'	> U+A5EA
+
+c bh_ series
+dk(b) dk(h) + 'e' > U+A506
+dk(b) dk(h) + 'i' > U+A52B
+dk(b) dk(h) + 'a' > U+A551
+dk(b) dk(h) + 'o' > U+A577
+dk(b) dk(h) + 'u' > U+A59C
+dk(b) dk(h) + 'x' > U+A5C2
+dk(b) dk(h) + 'q' > U+A5E9
+
+c c_ series
+dk(c) + 'e' > U+A51A
+dk(c) + 'i' > U+A53F
+dk(c) + 'a' > U+A566
+dk(c) + 'o' > U+A58B
+dk(c) + 'u' > U+A5B0
+dk(c) + 'x' > U+A5D7
+dk(c) + 'q' > U+A5FF
+
+c d_ series
+dk(d) + 'e'	> U+A510
+dk(d) + 'i' > U+A535
+dk(d) + 'a' > U+A55C
+dk(d) + 'o'	> U+A581
+dk(d) + 'u' > U+A5A6
+dk(d) + 'x' > U+A5CD
+dk(d) + 'q'	> U+A5F5
+
+c dh_ series
+dk(d) dk(h) + 'e' > U+A511
+dk(d) dk(h) + 'i' > U+A536
+dk(d) dk(h) + 'a' > U+A55D
+dk(d) dk(h) + 'o' > U+A582
+dk(d) dk(h) + 'u' > U+A5A7
+dk(d) dk(h) + 'x' > U+A5CE
+dk(d) dk(h) + 'q' > U+A5F6
+
+c dl_ series
+dk(d) dk(l) + 'e' > U+A514
+dk(d) dk(l) + 'i' > U+A539
+dk(d) dk(l) + 'a' > U+A560
+dk(d) dk(l) + 'o' > U+A585
+dk(d) dk(l) + 'u' > U+A5AA
+dk(d) dk(l) + 'x' > U+A5D1
+dk(d) dk(l) + 'q' > U+A5F9
+
+
+c f_ series
+dk(f) + 'e'	> U+A50C
+dk(f) + 'i'	> U+A531
+dk(f) + 'a' > U+A558
+dk(f) + 'o'	> U+A57D
+dk(f) + 'u'	> U+A5A2
+dk(f) + 'x' > U+A5C9
+dk(f) + 'q' > U+A5F1
+
+c g_ series
+dk(g) + 'e'	> U+A520
+dk(g) + 'i'	> U+A545
+dk(g) + 'a' > U+A56D
+dk(g) + 'o'	> U+A591
+dk(g) + 'u'	> U+A5B6
+dk(g) + 'x' > U+A5DD
+dk(g) + 'q' > U+A606
+
+c g~_ series
+dk(g) dk(tilde) + 'q' > U+A607
+
+c gb_ series
+dk(g) dk(b) + 'e' > U+A50B
+dk(g) dk(b) + 'i' > U+A530
+dk(g) dk(b) + 'a' > U+A557
+dk(g) dk(b) + 'o' > U+A57C
+dk(g) dk(b) + 'u' > U+A5A1
+dk(g) dk(b) + 'x' > U+A5C7
+dk(g) dk(b) + 'q' > U+A5EF
+
+c gb~_ series
+dk(g) dk(b) dk(tilde) + 'x' > U+A5C8
+dk(g) dk(b) dk(tilde) + 'q' > U+A5F0
+
+c h_ series
+dk(h) + 'e'	> U+A502
+dk(h) + 'i'	> U+A526
+dk(h) + 'a'	> U+A54C
+dk(h) + 'o'	> U+A573
+dk(h) + 'u'	> U+A597
+dk(h) + 'x' > U+A5BD
+dk(h) + 'q' > U+A5E4
+
+c h~_ series
+dk(h) dk(tilde) + 'i' > U+A527
+dk(h) dk(tilde) + 'a' > U+A54D
+dk(h) dk(tilde) + 'u' > U+A598
+dk(h) dk(tilde) + 'x' > U+A5BE
+dk(h) dk(tilde) + 'q' > U+A5E5
+
+c j_ series
+dk(j) + 'e'	> U+A51B
+dk(j) + 'i'	> U+A540
+dk(j) + 'a'	> U+A567
+dk(j) + 'o'	> U+A58C
+dk(j) + 'u'	> U+A5B1
+dk(j) + 'x' > U+A5D8
+dk(j) + 'q' > U+A600
+
+c k_ series
+dk(k) + 'e' > U+A51E
+dk(k) + 'i' > U+A543
+dk(k) + 'a' > U+A56A
+dk(k) + 'o' > U+A58F
+dk(k) + 'u' > U+A5B4
+dk(k) + 'x' > U+A5DB
+dk(k) + 'q' > U+A603
+
+c k~_ series
+dk(k) dk(tilde) + 'a' > U+A56B
+
+c kp_ series
+dk(k) dk(p) + 'e' > U+A509
+dk(k) dk(p) + 'i' > U+A52E
+dk(k) dk(p) + 'a' > U+A554
+dk(k) dk(p) + 'o' > U+A57A
+dk(k) dk(p) + 'u' > U+A59F
+dk(k) dk(p) + 'x' > U+A5C5
+dk(k) dk(p) + 'q' > U+A5EC
+
+c kp~_ series
+dk(k) dk(p) dk(tilde) + 'a'	> U+A555
+dk(k) dk(p) dk(tilde) + 'q'	> U+A5ED
+
+c l_ series
+dk(l) + 'e' 	> U+A512
+dk(l) + 'i' 	> U+A537
+dk(l) + 'a' 	> U+A55E
+dk(l) + 'o' 	> U+A583
+dk(l) + 'u' 	> U+A5A8
+dk(l) + 'x' 	> U+A5CF
+dk(l) + 'q' 	> U+A5F7
+
+c m_ series
+dk(m) + 'e'	> U+A521
+dk(m) + 'i'	> U+A546
+dk(m) + 'a' > U+A56E
+dk(m) + 'o'	> U+A592
+dk(m) + 'u'	> U+A5B7
+dk(m) + 'x' > U+A5DE
+dk(m) + 'q' > U+A608
+
+c mb_ series
+dk(m) dk(b) + 'e' > U+A508
+dk(m) dk(b) + 'i' > U+A52D
+dk(m) dk(b) + 'a' > U+A553
+dk(m) dk(b) + 'o' > U+A579
+dk(m) dk(b) + 'u' > U+A59E
+dk(m) dk(b) + 'x' > U+A5C4
+dk(m) dk(b) + 'q' > U+A5EB
+
+c mgb_ series
+dk(m) dk(g) dk(b) + 'e' > U+A50A
+dk(m) dk(g) dk(b) + 'i' > U+A52F
+dk(m) dk(g) dk(b) + 'a' > U+A556
+dk(m) dk(g) dk(b) + 'o' > U+A57B
+dk(m) dk(g) dk(b) + 'u' > U+A5A0
+dk(m) dk(g) dk(b) + 'x' > U+A5C6
+dk(m) dk(g) dk(b) + 'q' > U+A5EE
+
+c n_ series
+dk(n) + 'e'	> U+A522
+dk(n) + 'i'	> U+A547
+dk(n) + 'a' > U+A56F
+dk(n) + 'o'	> U+A593
+dk(n) + 'u'	> U+A5B8
+dk(n) + 'x' > U+A5DF
+dk(n) + 'q' > U+A609
+
+c nd_ series
+dk(n) dk(d) + 'e' > U+A515
+dk(n) dk(d) + 'i' > U+A53A
+dk(n) dk(d) + 'a' > U+A561
+dk(n) dk(d) + 'o' > U+A586
+dk(n) dk(d) + 'u' > U+A5AB
+dk(n) dk(d) + 'x' > U+A5D2
+dk(n) dk(d) + 'q' > U+A5FA
+
+c nj_ series
+dk(n) dk(j) + 'e' > U+A51C
+dk(n) dk(j) + 'i' > U+A541
+dk(n) dk(j) + 'a' > U+A568
+dk(n) dk(j) + 'o' > U+A58D
+dk(n) dk(j) + 'u' > U+A5B2
+dk(n) dk(j) + 'x' > U+A5D9
+dk(n) dk(j) + 'q' > U+A601
+
+c ny_ series
+dk(n) dk(y) + 'e' > U+A523
+dk(n) dk(y) + 'i' > U+A548
+dk(n) dk(y) + 'a' > U+A570
+dk(n) dk(y) + 'o' > U+A594
+dk(n) dk(y) + 'u' > U+A5B9
+dk(n) dk(y) + 'x' > U+A5E0
+dk(n) dk(y) + 'q' > U+A60A
+
+c ng_ series
+dk(n) dk(g) + 'e' > U+A51F
+dk(n) dk(g) + 'i' > U+A544
+dk(n) dk(g) + 'a' > U+A56C
+dk(n) dk(g) + 'o' > U+A590
+dk(n) dk(g) + 'u' > U+A5B5
+dk(n) dk(g) + 'x' > U+A5DC
+dk(n) dk(g) + 'q' > U+A604
+
+c ng~_ series
+dk(n) dk(g) dk(tilde) + 'a'	> U+A54B
+dk(n) dk(g) dk(tilde) + 'x'	> U+A5BC
+dk(n) dk(g) dk(tilde) + 'q'	> U+A5E3
+
+c ngg~_ series
+dk(n) dk(g) dk(g) dk(tilde) + 'q'	> U+A605
+
+
+c p_ series
+dk(p) + 'e'	> U+A505
+dk(p) + 'i'	> U+A52A
+dk(p) + 'a'	> U+A550
+dk(p) + 'o'	> U+A576
+dk(p) + 'u'	> U+A59B
+dk(p) + 'x'	> U+A5C1
+dk(p) + 'q'	> U+A5E8
+
+c r_ series
+dk(r) + 'e' 	> U+A513
+dk(r) + 'i' 	> U+A538
+dk(r) + 'a' 	> U+A55F
+dk(r) + 'o' 	> U+A584
+dk(r) + 'u' 	> U+A5A9
+dk(r) + 'x' 	> U+A5D0
+dk(r) + 'q' 	> U+A5F8
+
+c s_ series
+dk(s) + 'e' > U+A516
+dk(s) + 'i' > U+A53B
+dk(s) + 'a' > U+A562
+dk(s) + 'o' > U+A587
+dk(s) + 'u' > U+A5AC
+dk(s) + 'x' > U+A5D3
+dk(s) + 'q' > U+A5FB
+
+c sh_ series
+dk(s) dk(h) + 'e' > U+A517
+dk(s) dk(h) + 'i' > U+A53C
+dk(s) dk(h) + 'a' > U+A563
+dk(s) dk(h) + 'o' > U+A588
+dk(s) dk(h) + 'u' > U+A5AD
+dk(s) dk(h) + 'x' > U+A5D4
+dk(s) dk(h) + 'q' > U+A5FC
+
+c t_ series
+dk(t) + 'e'	> U+A50E
+dk(t) + 'i'	> U+A533
+dk(t) + 'a' > U+A55A
+dk(t) + 'o'	> U+A57F
+dk(t) + 'u'	> U+A5A4
+dk(t) + 'x' > U+A5CB
+dk(t) + 'q' > U+A5F3
+
+c th_ series
+dk(t) dk(h) + 'e' > U+A50F
+dk(t) dk(h) + 'i' > U+A534
+dk(t) dk(h) + 'a' > U+A55B
+dk(t) dk(h) + 'o' > U+A580
+dk(t) dk(h) + 'u' > U+A5A5
+dk(t) dk(h) + 'x' > U+A5CC
+dk(t) dk(h) + 'q' > U+A5F4
+
+c v_ series
+dk(v) + 'e'	> U+A50D
+dk(v) + 'i'	> U+A532
+dk(v) + 'a' > U+A559
+dk(v) + 'o'	> U+A57E
+dk(v) + 'u'	> U+A5A3
+dk(v) + 'x' > U+A5CA
+dk(v) + 'q' > U+A5F2
+
+c w_ series
+dk(w) + 'e'	> U+A503
+dk(w) + 'i'	> U+A528
+dk(w) + 'a'	> U+A54E
+dk(w) + 'o'	> U+A574
+dk(w) + 'u'	> U+A599
+dk(w) + 'x' > U+A5BF
+dk(w) + 'q' > U+A5E6
+
+c w~_
+dk(w) dk(tilde) + 'e' > U+A504
+dk(w) dk(tilde) + 'i' > U+A529
+dk(w) dk(tilde) + 'a' > U+A54F
+dk(w) dk(tilde) + 'o' > U+A575
+dk(w) dk(tilde) + 'u' > U+A59A
+dk(w) dk(tilde) + 'x' > U+A5C0
+dk(w) dk(tilde) + 'q' > U+A5E7
+
+c y_ series
+dk(y) + 'e' > U+A51D
+dk(y) + 'i' > U+A542
+dk(y) + 'a' > U+A569
+dk(y) + 'o' > U+A58E
+dk(y) + 'u' > U+A5B3
+dk(y) + 'x' > U+A5DA
+dk(y) + 'q' > U+A602
+
+
+c z_ series
+dk(z) + 'e' > U+A518
+dk(z) + 'i' > U+A53D
+dk(z) + 'a' > U+A564
+dk(z) + 'o' > U+A589
+dk(z) + 'u' > U+A5AE
+dk(z) + 'x' > U+A5D5
+dk(z) + 'q' > U+A5FD
+
+c zh_ series
+dk(z) dk(h) + 'e' > U+A519
+dk(z) dk(h) + 'i' > U+A53E
+dk(z) dk(h) + 'a' > U+A565
+dk(z) dk(h) + 'o' > U+A58A
+dk(z) dk(h) + 'u' > U+A5AF
+dk(z) dk(h) + 'x' > U+A5D6
+dk(z) dk(h) + 'q' > U+A5FE
+
+c syllable mark
+ + 'X' > U+A60B
+
+c Punctuation marks
+
+       + '=' > U+A60C c syllable lengthener
+U+A60C + '=' > U+003D c equal
+       + ',' > U+A60D c Vai comma
+U+A60D + ',' > U+002C c comma
+       + '.' > U+A60E c Vai fullstop
+U+A60E + '.' > U+002E c fullstop
+       + '?' > U+A60F c Vai question mark
+U+A60F + '?' > U+003F c question mark
