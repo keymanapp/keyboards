@@ -1,7 +1,7 @@
 Lao 2008 Basic Keyboard Change History
 =======================
 
-1.1 (21 May 2018)
+1.2 (21 May 2018)
 -----------------
 * migrated to GitHub
 * released under MIT license
