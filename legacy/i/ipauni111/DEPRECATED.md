@@ -1,1 +1,1 @@
-This keyboard has been deprecated and replaced by release/packages/sil_ipa (note underscores).
+This keyboard has been deprecated and replaced by release/sil/sil_ipa
