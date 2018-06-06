@@ -1,0 +1,226 @@
+﻿c EuroLatin keyboard for Keyman Desktop 7.0 and KeymanWeb 1.0
+c 
+c If you make changes to this keyboard file, please consider sharing them at:
+c http://www.tavultesoft.com/forums/category.php?ForumSourceID=1&SourceID=348
+
+store(&VERSION) '7.0'
+store(&NAME) 'EuroLatin Keyboard'
+store(&BITMAP) 'latin.ico'
+store(&COPYRIGHT) 'Copyright (C) 1994-2011 Tavultesoft Pty Ltd'
+     
+store(&mnemoniclayout) '1'
+
+c KeymanWeb-specific header statements
+
+store(&KMW_HELPFILE) 'european.html'
+store(&KMW_EMBEDJS) 'european_js.txt'
+store(&ETHNOLOGUECODE) 'aae acf act afr aig ale aln als arg ast bah bar bch bda bgx bis bjs bjt ble bos bre bsc bzj bzk cae cat ces cim cks cor cos cou cqu crh crs csb csk cwt cym dan deu drt dsb dyo eja eml ems eng epo esi esk ess est esu eus ext fao fap fax ffm fil fin fit fkv fly fra frc frk frp frr frs fry fub fuc fue fuf fuh fui ful fuq fur fuv gag gaz gcf gcl gcr gct geh ghc gla gle glg glv gos gsl gsw gul gyn hat hbs hhr hrv hsb hun hwc icr ikt ipk isl ist ita jam jut kal kea kmv knf kqe krl krx ksh ktu lad lat lav lij lim lit liv lld lmo lou ltz lud mey mfe mfv mhn mkw mlo mlt mwl nap nde nds ndv nld nor oci olo oor pap pbo pbp pcd pdc pdt pfl pis pms pol por prg qub qud que quf qug quh quk qul qup qur qus quw qux quy quz qva qvc qve qvh qvi qvj qvl qvm qvn qvo qvp qvs qvw qvz qwa qwc qwh qws qxa qxc qxh qxl qxn qxo qxp qxr qxt qxu qxw rcf rmc rmf rmn rmo rmw rmy roh rom ron rop ruo rup ruq sag sav scn sco sdc sdn sdt sdz sia sje sjt sju sli slk slv sma sme smj smn sms snf snj spa spq sqi src srm srn sro srp srr ssw stl stq svc swe swg swh sxu szl tch tcs tgh tgl tpi trf tuk tur twd vec vel vep vic vls vmf vot wae wep wln wof wol wym xav xho yor zaa zab zac zad zae zaf zai zam zao zap zaq zar zas zat zav zaw zax zca zch zea zeh zgb zgm zgn zha zhd zhn zlj zln zlq zoo zpa zpb zpc zpd zpe zpf zpg zph zpi zpj zpk zpl zpm zpn zpo zpp zpq zpr zps zpt zpu zpv zpw zpx zpy zpz zqe zrp zsr zte ztg ztl ztm ztn ztp ztq zts ztt ztu ztx zty zul zyb zyg zyj zyn grn nhd gui gun gug gnw nhn nch ncx nci naz nln nhe ngu azz nhq nhk nhx nhp ncl nhm nhy ncj nht nlv nhz nsu npl nhc nhv nhg nuz nhw nhi'
+c store(&TARGETS) 'any windows'
+c store(&KEYBOARDVERSION) '1.1'
+c store(&TARGETS) 'any windows'
+
+begin Unicode > use(Main)
+
+group( Main ) using keys
+
+store(controls)  "`#'" '"' "^%&*~-_:@.|,=\$"
+              
+c `
+store(graveO)    'àèìǹòùẁỳÀÈÌǸÒÙẀỲ'
+store(graveK)    'aeinouwyAEINOUWY'
+
+c #
+store(doublegraveO) 'ȁȅȉȍȑȕȀȄȈȌȐȔ'
+store(doublegraveK) 'aeioruAEIORU'
+
+c '
+store(acuteO) 'áćéǵíḱĺḿńóṕŕśúẃýźÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹ'
+store(acuteK) 'acegiklmnoprsuwyzACEGIKLMNOPRSUWYZ'
+
+c "
+store(doubleacuteO) 'őűŐŰ'
+store(doubleacuteK) 'ouOU'
+
+c ^
+store(circumO)   'âĉêĝĥîĵôŝûŵŷẑÂĈÊĜĤÎĴÔŜÛŴŶẐ'
+store(circumK)   'aceghijosuwyzACEGHIJOSUWYZ'
+   
+c %
+store(caronO) 'ǎǍčČďĎěĚǧǦȟȞǐǏǰǩǨľĽňŇǒǑřŘšŠťŤǔǓǯǮžŽ'
+store(caronK) 'aAcCdDeEgGhHiIjkKlLnNoOrRsStTuUxXzZ'
+
+c &
+store(antibreveO) 'ȂȃȆȇȊȋȎȏȒȓȖȗ'
+store(antibreveK) 'AaEeIiOoRrUu'
+
+c *
+store(breveO) 'ăĂĕĔğĞḫḪĭĬŏŎŭŬ'
+store(breveK) 'aAeEgGhHiIoOuU'
+
+c ~
+store(tildeO) 'ãÃẽẼĩĨɫⱢñÑõÕũŨṽṼỹỸ'
+store(tildeK) 'aAeEiIlLnNoOuUvVyY'               
+'~' dk(1) + "g" > U+0067 U+0303    c for Guaraní
+'~' dk(1) + "G" > U+0047 U+0303    c for Guaraní
+
+
+c -
+store(macronO) 'ĀāɃƀĐđĒēḠḡĦħĪīɈɉŁłŌōɌɍŦŧŪūȲȳƵƶ'
+store(macronK) 'AaBbDdEeGgHhIiJjLlOoRrTtUuYyZz'
+
+c _
+store(lineO) 'ḆḇḎḏẖḴḵḺḻṈṉṞṟṮṯẔẕ'
+store(lineK) 'BbDdhKkLlNnRrTtZz'
+
+c :
+store(dieresisO) 'äëḧïöẗüẅẍÿÄËḦÏÖÜẄẌŸ'
+store(dieresisK) 'aehiotuwxyAEHIOUWXY'
+':' dk(1) + "p" > U+0070 U+0308    c for Romani
+':' dk(1) + "P" > U+0050 U+0308    c for Romani
+
+c @
+store(ringO) 'åÅůŮẘẙșȘțȚ'
+store(ringK) 'aAuUwysStT'
+
+c .
+store(dottedO) 'ȧȦḃḂċĊḋḊėĖḟḞġĠḣḢıİȷŀĿṁṀṅṄȯȮṗṖṙṘṡṠṫṪẇẆẋẊẏẎżŻ'
+store(dottedK) 'aAbBcCdDeEfFgGhHiIjlLmMnNoOpPrRsStTwWxXyYzZ'
+
+c |
+store(dotbelowO) 'ẠạḄḅḌḍẸẹḤḥỊịḲḳḶḷṂṃṆṇỌọṚṛṢṣṬṭỤụṾṿẈẉỴỵẒẓ'
+store(dotbelowK) 'AaBbDdEeHhIiKkLlMmNnOoRrSsTtUuVvWwYyZz'
+
+c ,
+store(cedillaO) 'ąĄçÇḑḐęĘģĢḩḨįĮķĶļĻņŅǫǪŗŖşŞţŢųŲⱬⱫ'
+store(cedillaK) 'aAcCdDeEgGhHiIkKlLnNoOrRsStTuUzZ'  
+
+c =
+store(extendedO) 'ƆɔƏəɁɂƝɲŊŋƟɵẞßÞþȜȝƷʒ'
+store(extendedK) 'CcEeGgJjNnOoSsTtYyZz'
+'=' dk(1) + "'" >  U+A78C c Lowercase Saltillo
+'=' dk(1) + '"' >  U+A78B c Uppercase Saltillo
+   
+c \
+store(specialO) '©ÐðƐɛªǤǥĸ—º–ŉØø¶℗®§ſ‡†µ×¡¦¨¬­¯°±´·¸¿÷‰•¹²³⁴⁵⁶⁷⁸⁹⁰'
+store(specialK) "cDdEefGgkMmNnOoPprSsTtux!|:~-_*+'.,?/%>1234567890"
+
+c $
+store(currencyO) '¤¢₯₫€€₱₣₲₰₴₡₭₤₦₪₧£₹₨₮₩¥'
+store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
+
+"`" dk(1) + any(graveK) > index(graveO, 3)
+"#" dk(1) + any(doublegraveK) > index(doublegraveO, 3)
+"'" dk(1) + any(acuteK) > index(acuteO, 3)
+'"' dk(1) + any(doubleacuteK) > index(doubleacuteO, 3)
+"^" dk(1) + any(circumK) > index(circumO, 3)
+'%' dk(1) + any(caronK) > index(caronO, 3)
+'&' dk(1) + any(antibreveK) > index(antibreveO, 3)
+'*' dk(1) + any(breveK) > index(breveO, 3)
+'~' dk(1) + any(tildeK) > index(tildeO, 3)
+'-' dk(1) + any(macronK) > index(macronO, 3)
+'_' dk(1) + any(lineK) > index(lineO, 3)
+':' dk(1) + any(dieresisK) > index(dieresisO, 3)
+'@' dk(1) + any(ringK) > index(ringO, 3)
+'.' dk(1) + any(dottedK) > index(dottedO, 3) 
+'|' dk(1) + any(dotbelowK) > index(dotbelowO, 3)
+',' dk(1) + any(cedillaK) > index(cedillaO, 3)
+'=' dk(1) + any(extendedK) > index(extendedO, 3)
+'\' dk(1) + any(specialK) > index(specialO, 3)
+'$' dk(1) + any(currencyK) > index(currencyO, 3)
+
+'·.' + '.' > '…'
+
+
+c Preferred for diagraphs
+'A\' dk(1) + 'E' > 'Æ'      
+'a\' dk(1) + 'e' > 'æ'      
+'D\' dk(1) + 'Z' > U+01C4   c Serbian additions 1/5/09
+'D\' dk(1) + 'z' > U+01C5   
+'d\' dk(1) + 'z' > U+01C6  
+'f\' dk(1) + 'i' > 'ﬁ'
+'f\' dk(1) + 'l' > 'ﬂ' 
+'I\' dk(1) + 'J' > 'Ĳ'
+'i\' dk(1) + 'j' > 'ĳ'
+'L\' dk(1) + 'J' > U+01C7   c Serbian additions 1/5/09
+'L\' dk(1) + 'j' > U+01C8   
+'l\' dk(1) + 'j' > U+01C9  
+'N\' dk(1) + 'G' > 'Ŋ'      c depricated - see extended - no longer in help/osk
+'n\' dk(1) + 'g' > 'ŋ'      c depricated - see extended - no longer in help/osk
+'N\' dk(1) + 'J' > U+01CA   c Serbian additions 1/5/09
+'N\' dk(1) + 'j' > U+01CB   
+'n\' dk(1) + 'j' > U+01CC 
+'N\' dk(1) + 'O' > '№'
+'n\' dk(1) + 'o' > '№'  
+'O\' dk(1) + 'E' > 'Œ'
+'o\' dk(1) + 'e' > 'œ'
+'O\' dk(1) + 'I' > 'Ƣ'
+'o\' dk(1) + 'i' > 'ƣ'
+'S\' dk(1) + 'S' > 'ẞ'     c depricated - see extended - no longer in help/osk
+'s\' dk(1) + 's' > 'ß'     c depricated - see extended - no longer in help/osk
+'T\' dk(1) + 'H' > 'Þ'     c depricated - see extended - no longer in help/osk
+'t\' dk(1) + 'h' > 'þ'     c depricated - see extended - no longer in help/osk
+'T\' dk(1) + 'M' > '™'
+'t\' dk(1) + 'm' > '™'
+
+
+'1//' + '2' > '½'
+'1//' + '3' > '⅓'
+'2//' + '3' > '⅔'
+'1//' + '4' > '¼'
+'3//' + '4' > '¾'
+'1//' + '5' > '⅕'
+'2//' + '5' > '⅖'                                                              
+'3//' + '5' > '⅗'
+'4//' + '5' > '⅘'
+'1//' + '6' > '⅙'
+'5//' + '6' > '⅚'
+'1//' + '8' > '⅛'
+'3//' + '8' > '⅜'
+'5//' + '8' > '⅝'
+'7//' + '8' > '⅞'
+
+c The fractions below have been depricated. Use format above.
+'¹/' + '2' > '½'       c depricated - no longer in help/osk
+'¹/' + '3' > '⅓'       c depricated - no longer in help/osk
+'²/' + '3' > '⅔'       c depricated - no longer in help/osk
+'¹/' + '4' > '¼'       c depricated - no longer in help/osk
+'³/' + '4' > '¾'       c depricated - no longer in help/osk
+'¹/' + '8' > '⅛'       c depricated - no longer in help/osk
+'³/' + '8' > '⅜'       c depricated - no longer in help/osk
+'⁵/' + '8' > '⅝'       c depricated - no longer in help/osk
+'⁷/' + '8' > '⅞'       c depricated - no longer in help/osk
+
+c angled quotes
+
+"<" + "<" > '«'
+">" + ">" > '»'
+'«' + '<' > '<<' dk(2)
+'»' + '>' > '>>' dk(2)
+"<" dk(2) + "<" > '<<' dk(2)
+">" dk(2) + ">" > '>>' dk(2)
+
+c Rules for the accent character itself (type it twice)
+
+"`" dk(1) + "`" > "`"  c backquote
+'#' dk(1) + '#' > '#'  c number sign
+"'" dk(1) + "'" > "'"  c apostrophe
+'"' dk(1) + '"' > '"'  c quotation mark
+"^" dk(1) + "^" > "^"  c caret         
+'%' dk(1) + '%' > '%'  c percent sign
+'&' dk(1) + '&' > '&'  c ampersand
+'*' dk(1) + '*' > '*'  c asterisk
+'~' dk(1) + '~' > '~'  c tilde
+'-' dk(1) + '-' > '-'  c hyphen
+'_' dk(1) + '_' > '_'  c low line
+':' dk(1) + ':' > ':'  c double-quote
+'@' dk(1) + '@' > '@'  c ring 
+'.' dk(1) + '.' > '.'  c full stop 
+'|' dk(1) + '|' > '|'  c vertical line
+',' dk(1) + ',' > ','  c comma
+'=' dk(1) + '=' > '='  c equals sign
+'\' dk(1) + '\' > '\'  c backslash
+'$' dk(1) + '$' > '$'  c dollar
+
++ any(controls) > index(controls, 1) dk(1)
+
+c End of keyboard
