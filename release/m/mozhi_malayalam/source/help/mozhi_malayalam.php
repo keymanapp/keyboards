@@ -904,5 +904,56 @@ For example, typing <kbd>i</kbd> will produce the vowel <span class='highlightEx
 
 </table>
 
+<h3>Atomic Chillus</h3>
+<p>This keyboard now supports atomic encoding of Malayalam Chillus using Unicode 5.1 standards.</p>
+    <table>
+        <tr>
+            <th>Chillu</th>
+            <th>Keystroke</th>
+            <th>Unicode 5.0
+            <br/>
+            representation</th>
+            <th>Unicode 5.1
+            <br/>
+            representation</th>
+        </tr>
+        <tr>
+            <td>NN (ൺ)</td>
+            <td><kbd>Shift</kbd><kbd>n</kbd></td>
+            <td>U+0D32 U+0D4D U+200D</td>
+            <td>U+0D7A</td>
+        </tr>
+        <tr>
+            <td>N (ൻ)</td>
+            <td><kbd>n</kbd></td>
+            <td>U+0D28 U+0D4D U+200D</td>
+            <td>U+0D7B</td>
+        </tr>
+        <tr>
+            <td>RR (ർ)</td>
+            <td><kbd>r</kbd></td>
+            <td>U+0D30 U+0D4D U+200D</td>
+            <td>U+0D7C</td>
+        </tr>
+        <tr>
+            <td>L (ൽ)</td>
+            <td><kbd>l</kbd></td>
+            <td>U+0D32 U+0D4D U+200D</td>
+            <td>U+0D7D</td>
+        </tr>
+        <tr>
+            <td>LL (ൾ)</td>
+            <td><kbd>Shift</kbd><kbd>l</kbd></td>
+            <td>U+0D33 U+0D4D U+200D</td>
+            <td>U+0D7E</td>
+        </tr>
+        <tr>
+            <td>K (ൿ)</td>
+            <td><kbd>k</kbd><kbd>_</kbd></td>
+            <td>U+0D15 U+0D4D U+200D</td>
+            <td>U+0D7F</td>
+        </tr>
+    </table>
+
 
 </div>
