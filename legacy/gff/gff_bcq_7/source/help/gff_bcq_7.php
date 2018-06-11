@@ -111,7 +111,7 @@ See <a target="_blank" href='BenchTyping-English.pdf'>Typing in Bench</a> for fu
 <h2>Troubleshooting</h2>
 <p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://help.keyman.com">contact us</a>.</p>
 
 </div>
 
@@ -136,10 +136,10 @@ See <a target="_blank" href='BenchTyping-English.pdf'>Typing in Bench</a> for fu
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=457">Download the Bench Keyboard for Keyman Desktop</a></p>
-<p><a target="_blank" href="http://en.wikipedia.org/wiki/Bench_language">More on the Bench Language at Wikipedia.org</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff_bcq_7">Download the Bench Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/Bench_language">More on the Bench Language at Wikipedia.org</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a></p>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Ge%27ez_script">More on the Ge'ez Script at Wikipedia.org</a></p>
 </div>
 </div>
 
