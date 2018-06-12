@@ -230,7 +230,7 @@
                 "text": "*Symbol*",
                 "width": "",
                 "sp": "1",
-                "nextlayer": "symbols"
+                "nextlayer": "symbol"
               },
               {
                 "id": "K_LOPT",
@@ -400,7 +400,7 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "",
-                "sp": "1",
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
@@ -451,7 +451,7 @@
                 "text": "*Symbol*",
                 "width": "",
                 "sp": "1",
-                "nextlayer": "symbols"
+                "nextlayer": "symbol"
               },
               {
                 "id": "K_LOPT",
@@ -475,7 +475,7 @@
         ]
       },
       {
-        "id": "symbols",
+        "id": "symbol",
         "row": [
           {
             "id": 1,
