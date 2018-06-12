@@ -1,21 +1,21 @@
-SIL IPA Keyboard Keyboard
+SIL Bwe Karen Keyboard
 =====================
 
-Copyright (C) 2002-2018 SIL International
+Copyright (C) 2018 SIL International
 
-Version 1.6
+Version 1.0
 
 __DESCRIPTION__
 
-The keyboard layout is described in terms of an IPA chart rather than a keyboard. This is because many base characters are typed as a sequence of a letter followed by one of <, > or = which are characters used to change a base character to another base character. Diacritics are typed as sequences of an appropriate key. 
+This keyboard is for the Bwe Karen Latin Script.  It follows the traditional QWERTY keyboard with the exception of putting diacritics in place of two letters not used 
 
 Links
 -----
- * Web: http://scripts.sil.org/IPAhome
- * Contact:  fonts@sil.org
+ * Web: https://help.keyman.com/keyboard/sil_bwe_karen
 
 Supported Platforms
 -------------------
  * Windows
  * macOS
-  
+ * Android
+ * iOS
