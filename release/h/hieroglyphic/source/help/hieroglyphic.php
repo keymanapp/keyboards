@@ -3594,23 +3594,19 @@ END;
     <div id="methods">
 		<h3>Available Methods for Typing Hieroglyphs</h3>
 		<p>There are three ways to display Ancient Egyptian on a computer:</p>
-		<ol>
-			<li>
+
 				<h4>Unicode</h4>
 				<p>This keyboard uses <a href='http://unicode.org/standard/standard.html' target='blank'>Unicode</a>, the international standard for computer encoding all the world's languages. Hieroglyphs written in Unicode can be treated just like Latin text. They can be searched, sorted, copied and pasted, entered into forms on websites, and typed into word processors.	The unfortunate consequence of this versatility is that Unicode text cannot be displayed like real Ancient Egyptian without a great deal of effort. In standard use, anything typed using Unicode will display as a single-file line of characters like a modern alphabet.</p>
 				<p>This isn't a problem for many situations. If you're sending a short bit of text to a colleague, and you're more concerned with content than formatting, Unicode allows you to type hieroglyphs directly into an email. It also makes algorithmic processing of Ancient Egyptian texts considerably easier. On the other hand, if you need the glyphs to be stacked and aligned properly, you should consider the next option.</p>
-			</li>
-			<li>
+
 			<h4>A Hieroglyphic Text Editor</h4>
 				<p>This is the best way to input hieroglyphs when formatting is a primary concern, i.e. when the text has to look exactly as it would have on a temple wall. These programs provide full control over the placement, size, and orientation of each glyph. The downside is that any text made in a program like this has to be rendered as a graphic before it can be used anywhere else. Once it becomes a graphic, it is impossible to make any changes to the text. It also cannot be entered into text boxes, searched, processed by a computer program, etc.</p>
 				<p>If proper formatting is an important issue, try using JSesh instead of this keyboard. JSesh is a free, open-source hieroglyphic text editor that provides an extraordinary level of control over formatting.</p>
 				<p><a href="http://jsesh.qenherkhopeshef.org/">Download JSesh</a></p>
-			</li>
-			<li>
+
 				<h4>An Image</h4>
 				<p>Although it is possible to display hieroglyphs by putting them all in a jpeg, and though many websites still do this, this approach should be avoided at all costs. It is a terrible way to present information. The availability of the first two options should preclude the need to ever display Ancient Egyptian this way ever again.</p>
-			</li>
-		</ol>
+
 	</div>
 	<div id='author'>
 		<h3>Keyboard Authorship</h3>
