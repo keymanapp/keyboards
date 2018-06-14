@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Nuer Keyboard Help</title>
-</head>
-<body>
-<h1>Nuer Keyboard Help</h1>
+<?php
+  $pagename = 'Nuer Keyboard Help';
+  $pagetitle = 'Nuer Keyboard Help';
+  require_once('header.php');
+?>
+
+
+
 
 <h2>Default (Unshifted)</h2>
 <p><img src="el_nuerU_.png" alt="Nuer keyboard layout: default (unshifted)"></p>
@@ -18,6 +18,3 @@
 
 <h2>Shift AltGr</h2>
 <p><img src="el_nuerU_SRA.png" alt="Nuer keyboard layout: Shift AltGr"></p>
-
-</body>
-</html>

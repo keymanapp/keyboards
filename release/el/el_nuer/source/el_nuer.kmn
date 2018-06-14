@@ -1,8 +1,8 @@
-c -------------------------------------------------------------
+﻿c -------------------------------------------------------------
 c  el_nuer.kmn
 c (Version 1.5)
 c
-c Keyboard layout for Nuer (Thok Nath / Nuäär), a language of South Sudan
+c Keyboard layout for Nuer (Thok Nath / NuÃ¤Ã¤r), a language of South Sudan
 c
 c Original Windows version developed and realased under MIT license by
 c State Library Victoria.
@@ -16,26 +16,26 @@ c -------------------------------------------------------------
 store(&version) "10.0"
 store(&NAME) 'Thok Nath'
 store(&KEYBOARDVERSION) '1.5'
-store(&COPYRIGHT) '© 2018 Enabling Languages'
+store(&COPYRIGHT) '© 2015-2018 Enabling Languages'
 store(&mnemoniclayout) "0"
-store(&message) "Keyboard layout for Nuer (Thok Nath / Nuäär)"
+store(&MESSAGE) 'Keyboard layout for Nuer (Thok Nath / Nuäär)'
 store(&TARGETS) 'any'
 store(&BITMAP) 'el_nuer.ico'
 store(&VISUALKEYBOARD) 'el_nuer.kvks'
-
+store(&LAYOUTFILE) 'el_nuer.keyman-touch-layout'
 
 begin Unicode > use(constraints)
 
 c ------------------------------------------------
 c Options
 c ------------------------------------------------
-store(nfc) '1'    c 1 (default) = Normalisation Form C, 0 = Normalisation Form D
+c store(nfc) '1'    c 1 (default) = Normalisation Form C, 0 = Normalisation Form D
 
 c ------------------------------------------------
 c Alphabetic characters
 c ------------------------------------------------
 
-c Lowercase characters: ŋwertyuiop  aɛdɣghjkl zɔcvbnm
+c Lowercase characters: Å‹wertyuiop  aÉ›dÉ£ghjkl zÉ”cvbnm
 c store(alphaLowerChars) U+014B U+0077 U+0065 U+0072 U+0074 U+0079 U+0075 U+0069 U+006F U+0070   \
 c                       U+0061 U+025B U+0064 U+0263 U+0067 U+0068 U+006A U+006B U+006C \
 c                       U+007A U+0254 U+0063 U+0076 U+0062 U+006E U+006D
@@ -43,7 +43,7 @@ c store(alphaLowerKeys) [K_Q] [K_W] [K_E] [K_R] [K_T] [K_Y] [K_U] [K_I] [K_O] [K
 c                      [K_A] [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
 c                      [K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M]
 
-c Uppercase characters: ŊWERTYUIOP    AƐDƔGHJKL    ZƆCVBNM
+c Uppercase characters: ÅŠWERTYUIOP    AÆDÆ”GHJKL    ZÆ†CVBNM
 c store(alphaUpperChars) U+014A U+0057 U+0045 U+0052 U+0054 U+0059 U+0055 U+0049 U+004F U+0050 \
 c                       U+0041 U+0190 U+0044 U+0194 U+0047 U+0048 U+004A U+004B U+004C \
 c                       U+005A U+0186 U+0043 U+0056 U+0042 U+004E U+004D
@@ -51,7 +51,7 @@ c store(alphaUpperKeys) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K
 c                      [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
 c                      [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M]
 
-c Lowercase consonants: ŋwrtyp  dɣghjkl zcvbnm
+c Lowercase consonants
 store(consonantLowerChars) U+014B U+0077 U+0072 U+0074 U+0079 U+0070   \
                      U+0064 U+0263 U+0067 U+0068 U+006A U+006B U+006C \
                      U+007A U+0063 U+0076 U+0062 U+006E U+006D
@@ -59,7 +59,7 @@ store(consonantLowerKeys) [K_Q] [K_W] [K_R] [K_T] [K_Y] [K_P] \
                     [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
                     [K_Z] [K_C] [K_V] [K_B] [K_N] [K_M]
 
-c Uppercase consonants: ŊWRTYP    DFGHJKL    ZCVBNM
+c Uppercase consonants
 store(consonantUpperChars) U+014A U+0057 U+0052 U+0054 U+0059 U+0050 \
                      U+0044 U+0194 U+0047 U+0048 U+004A U+004B U+004C \
                      U+005A U+0043 U+0056 U+0042 U+004E U+004D
@@ -67,11 +67,11 @@ store(consonantUpperKeys) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_R] [SHIFT K_T] [SHIFT
                     [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
                     [SHIFT K_Z] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M]
 
-c Lowercase vowels: aeiouɛɔ
+c Lowercase vowels
 store(vowelLowerChars) U+0061 U+0065 U+0069 U+006F U+0075 U+025B U+0254
 store(vowelLowerKeys) [K_A]  [K_E] [K_I] [K_O] [K_U] [K_S] [K_X]
 
-c Uppercase characters: AEIOUƐƆ
+c Uppercase vowels
 store(vowelUpperChars) U+0041 U+0045 U+0049 U+004F U+0055 U+0190 U+0186
 store(vowelUpperKeys)[SHIFT K_A] [SHIFT K_E] [SHIFT K_I] [SHIFT K_O] [SHIFT K_U] [SHIFT K_S] [SHIFT K_X]
 
@@ -110,38 +110,38 @@ c ------------------------------------------------
 c ADD additional stores here:
 c ------------------------------------------------
 
-c fFqQsSxXzZ  ©€£  \|
-store(additionalChars)
+c fFqQsSxXzZ  ©€£  \|–—‘’“”
+store(additionalChars) U+0066 U+0046 U+0071 U+0051 U+0073 U+0053 U+0078 U+0058 U+007A U+005A \
+                       U+00A9 U+20AC U+00A3 \
+                       U+005C U+007C U+2013 U+2014 U+2018 U+2019 U+201C
 store(additionalKeys) [RALT K_F] [SHIFT RALT K_F] [RALT K_Q] [SHIFT RALT K_Q] [RALT K_S] [SHIFT RALT K_S] [RALT K_X] [SHIFT RALT K_X] [RALT K_Z] [SHIFT RALT K_Z] \
                                     [RALT K_C] [RALT K_E] [RALT K_4] \
-                                    [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH]
-store(additionalTouch) [T_F] [SHIFT T_F] [T_Q] [SHIFT T_Q] [T_S] [SHIFT T_S] [T_X] [SHIFT T_X] \
+                                    [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH] [RALT K_HYPHEN] [SHIFT RALT K_HYPHEN] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT]
+
+store(additionalTouch) [T_F] [SHIFT T_F] [T_Q] [SHIFT T_Q] [T_S] [SHIFT T_S] [T_X] [SHIFT T_X] [T_Z] [SHIFT T_Z] \
                                       [T_COPYRIGHT] [T_EURO] [T_POUND] \
-                                      [T_BLSLASH] [T_PIPE]
-store(altKeys) outs(additionalKeys) outs(additionalTouch)
+                                      [T_BLSLASH] [T_PIPE] [T_EN_DASH] [T_EM_DASH] [T_LSINGLE_QUOTE] [T_RSINGLE_QUOTE] [T_LDB_QUOTE] [T_RDB_QUOTE]
 
 c Macron Below  > U+0331
-store(macronBelowKey) [K_COLON] [SHIFT K_COLON]
+store(macronBelowKey) [K_COLON] [SHIFT K_COLON] [T_MACRON_BELOW]
 store(macronBelowBase) U+0061 U+0065 U+0069 U+006F U+0041 U+0045 U+0049 U+004F
+store(macronBelowTouch) [T_A_0331] [T_E_0331] [T_I_0331] [T_O_0331] [SHIFT T_A_0331] [SHIFT T_E_0331] [SHIFT T_I_0331] [SHIFT T_O_0331]
 store(macronBelowExtendedBase)  U+025B U+0190 U+0254 U+0186
+store(macronBelowExtendedTouch) [T_OPEN_E_0331] [SHIFT T_OPEN_E_0331] [T_OPEN_O_0331] [SHIFT T_OPEN_O_0331]
 store(macronBelowBaseAll) outs(macronBelowBase) outs(macronBelowExtendedBase) U+0308
 
 c Diaeresis  > U+0308
-store(diaeresisKey)  [K_QUOTE] [SHIFT K_QUOTE]
+store(diaeresisKey)  [K_QUOTE] [SHIFT K_QUOTE] [T_DIAERESIS]
 store(diaeresisBase) U+0061 U+0065 U+006F U+0041 U+0045 U+004F
 store(diaeresisChar) U+00E4 U+00EB U+00F6 U+00C4 U+00CB U+00D6
 store(diaeresisExtendedBase) U+025B U+0190
 store(diaeresisBaseAll) outs(diaeresisBase) outs(diaeresisExtendedBase) U+0331
 
+store(altKeys) outs(additionalKeys) outs(additionalTouch) [T_DIAERESIS] [T_MACRON_BELOW] outs(macronBelowTouch) outs(macronBelowExtendedTouch)
 
 group(constraints) using keys
-c + [CTRL ALT K_1] > set(nfc='1') save(nfc)
-c + [CTRL ALT K_0] > set(nfc='0') save(nfc)
-
-notany(macronBelowBaseAll) + any(macronBelowKey)  > context
-notany(diaeresisBaseAll) + any(diaeresisKey)  > context
-notany(diaeresisExtendedBase) U+0308 + any(macronBelowKey)  > context
-notany(diaeresisExtendedBase) U+0331 + any(diaeresisKey) > context
+c + [CTRL K_LBRKT] > set(nfc='0') save(nfc)
+c + [CTRL K_RBRKT] > set(nfc='1') save(nfc)
 U+0331 +  any(macronBelowKey) > context
 any(diaeresisChar) + any(diaeresisKey)  > context
 
@@ -157,11 +157,19 @@ c ------------------------------------------------
 c ADD additional rules here:
 c ------------------------------------------------
 
-if(nfc = "0") any(diaeresisBase) + any(diaeresisKey) > context(2) U+0308
-if(nfc = "1") any(diaeresisBase ) + any(diaeresisKey) >  index(diaeresisChar,2)
+c if(nfc = "0") any(diaeresisBase) + any(diaeresisKey) > context(2) U+0308
+c if(nfc = "1") any(diaeresisBase) + any(diaeresisKey) >  index(diaeresisChar,2)
+any(diaeresisBase) + any(diaeresisKey) >  index(diaeresisChar,1)
 any(diaeresisExtendedBase) + any(diaeresisKey) > context U+0308
 
-any(macronBelowBaseAll) + any(macronBelowKey) > context(2) U+0331
+platform("touch") + [T_OPEN_E_0308] > U+025B U+0308
+platform("touch") + [SHIFT T_OPEN_E_0308] > U+0190 U+0308
+
+any(macronBelowBaseAll) + any(macronBelowKey) > context U+0331
+platform("touch")  + any(macronBelowTouch) > index(macronBelowBase,2) U+0331
+platform("touch") + any(macronBelowExtendedTouch) > index(macronBelowExtendedBase,2) U+0331
 
 any(diaeresisExtendedBase) U+0308 + any(macronBelowKey)  > context(1) U+0331 U+0308
 any(diaeresisExtendedBase) U+0331 + any(diaeresisKey) > context U+0308
+platform("touch") + [T_OPEN_E_0331_0308] > U+025B U+0331 U+0308
+platform("touch") + [SHIFT T_OPEN_E_0331_0308] > U+0190 U+0331 U+0308
