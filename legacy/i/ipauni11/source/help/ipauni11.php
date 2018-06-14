@@ -190,6 +190,9 @@ Keyman Keyboard </span></p>
 <p class=author style='margin-bottom:24.0pt'>Martin Hosken,<br>
 SIL Non-Roman Script Initiative (NRSI)</p>
 
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>This is an outdated keyboard.  <span
+lang=EN-US style='font-size:12.0pt;font-family:Arial'><a href='https://keyman.com/keyboards/sil_ipa'>Get newest version of this keyboard.</a></span></b></p>
+
 <h1 style='margin-top:0cm'><span lang=EN-US>Fonts</span></h1>
 
 <p class=MsoNormal><span lang=EN-US>Three font families are included in this
@@ -211,8 +214,7 @@ diacritics optimally. </span></p>
 Roman, but only has a single face - regular. It is intended for use alongside
 other Times-like fonts where a range of styles (italic, bold) are not needed.</span></p>
 
-<p class=MsoNormal><span lang=EN-US><a href='doulos_documentation.pdf'>Read documentation about the Doulos SIL
-font</a> (PDF, requires <a href='http://www.adobe.com/reader/' target='_blank'>Adobe Reader</a>)</span></p>
+<p class=MsoNormal><span lang=EN-US><a href='https://software.sil.org/doulos/'>Get newest version of Doulos SIL font</a></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
 lang=EN-US style='font-size:12.0pt;font-family:Arial'>&nbsp;</span></b></p>
@@ -227,8 +229,7 @@ also has a full set of styles - regular, italic, bold, bold italic - and so is
 more useful in general publishing than Doulos SIL. Charis is a serif,
 proportionally-spaced font optimized for readability in long printed documents.</span></p>
 
-<p class=MsoNormal><span lang=EN-US><a href='charis_documentation.pdf'>Read documentation about the Charis SIL
-font</a> (PDF, requires <a href='http://www.adobe.com/reader/' target='_blank'>Adobe Reader</a>)</span></p>
+<p class=MsoNormal><span lang=EN-US><a href='https://software.sil.org/charis/'>Get newest version of Charis SIL font</a></span></p>
 
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
 style='font-size:12.0pt;font-family:Arial'>&nbsp;</span></b></p>
@@ -250,9 +251,8 @@ fonts were originally the product of two years of research and study by the
 designer at the University of Reading, England, as part of an MA program in
 Typeface Design. </p>
 
-<h1 style='margin-top:0cm'><span lang=EN-US>&nbsp;</span></h1>
+<p class=MsoNormal><span lang=EN-US><a href='https://software.sil.org/gentium/'>Get newest version of Gentium font</a></span></p>
 
-<h1 style='margin-top:0cm'><span lang=EN-US>&nbsp;</span></h1>
 
 <h1 style='margin-top:0cm'><span lang=EN-US>Keyboard Layout</span></h1>
 
@@ -3398,26 +3398,6 @@ style='font-size:12.0pt;font-family:Courier'>k#&amp;p</span><span lang=EN-US>.</
 
 <p class=MsoFootnoteText><span lang=EN-US>&nbsp;</span></p>
 
-<h2><span lang=EN-US>Technical Support</span></h2>
-
-<p class=MsoBodyText><span lang=EN-US>If you have problems using the </span><span
-class=allcaps><span lang=EN-US style='font-size:10.0pt'>SIL</span></span><span
-lang=EN-US> Unicode IPA keyboard, please contact:</span></p>
-
-<p class=MsoBodyText><span lang=EN-US>User Support<br>
-</span><span class=allcaps><span lang=EN-US style='font-size:10.0pt'>SIL</span></span><span
-lang=EN-US> International Publishing Services<br>
-7500 W. Camp Wisdom Rd.<br>
-Dallas, </span><span class=allcaps><span lang=EN-US style='font-size:10.0pt'>TX</span></span><span
-lang=EN-US> 75236<br>
-</span><span class=allcaps><span lang=EN-US style='font-size:10.0pt'>USA</span></span></p>
-
-<p class=MsoBodyText><span lang=EN-US>Phone: (972) 708-7495<br>
-</span><span class=allcaps><span lang=EN-US style='font-size:10.0pt'>FAX</span></span><span
-lang=EN-US>: (972) 708-7388<br>
-E-mail: <span class=MsoHyperlink>sil_fonts@sil.org</span></span></p>
-
-<p class=MsoFootnoteText><span lang=EN-US>&nbsp;</span></p>
 
 <a href='IPA Unicode 1.0.5 Keyman Keyboard.pdf'>Printable PDF version of this document</a>
 
