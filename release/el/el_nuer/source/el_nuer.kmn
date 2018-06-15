@@ -97,14 +97,14 @@ c ------------------------------------------------
 c fFqQsSxXzZ  ©€£  \|–—‘’“”
 store(additionalChars) U+0066 U+0046 U+0071 U+0051 U+0073 U+0053 U+0078 U+0058 U+007A U+005A \
                        U+00A9 U+20AC U+00A3 \
-                       U+005C U+007C U+2013 U+2014 U+2018 U+2019 U+201C
+                       U+005C U+007C U+2013 U+2014 U+2018 U+2019 U+201C U+201D U+2026 
 store(additionalKeys) [RALT K_F] [SHIFT RALT K_F] [RALT K_Q] [SHIFT RALT K_Q] [RALT K_S] [SHIFT RALT K_S] [RALT K_X] [SHIFT RALT K_X] [RALT K_Z] [SHIFT RALT K_Z] \
-                                    [RALT K_C] [RALT K_E] [RALT K_4] \
-                                    [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH] [RALT K_HYPHEN] [SHIFT RALT K_HYPHEN] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT]
+                      [RALT K_C] [RALT K_E] [RALT K_4] \
+                      [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH] [RALT K_HYPHEN] [SHIFT RALT K_HYPHEN] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [RALT K_PERIOD]
 
 store(additionalTouch) [T_F] [SHIFT T_F] [T_Q] [SHIFT T_Q] [T_S] [SHIFT T_S] [T_X] [SHIFT T_X] [T_Z] [SHIFT T_Z] \
                                       [T_COPYRIGHT] [T_EURO] [T_POUND] \
-                                      [T_BLSLASH] [T_PIPE] [T_EN_DASH] [T_EM_DASH] [T_LSINGLE_QUOTE] [T_RSINGLE_QUOTE] [T_LDB_QUOTE] [T_RDB_QUOTE]
+                                      [T_BLSLASH] [T_PIPE] [T_EN_DASH] [T_EM_DASH] [T_LSINGLE_QUOTE] [T_RSINGLE_QUOTE] [T_LDB_QUOTE] [T_RDB_QUOTE] [T_ELLIPSIS]
 
 c Macron Below  > U+0331
 store(macronBelowKey) [K_COLON] [SHIFT K_COLON] [T_MACRON_BELOW]
@@ -142,7 +142,7 @@ c ------------------------------------------------
 c ADD additional rules here:
 c ------------------------------------------------
 
-if(&platform != "touch") +any(additionalKeys) > index(additionalChars,2)
+if(&platform != "touch") + any(additionalKeys) > index(additionalChars,2)
 platform("touch") + any(additionalTouch) > index(additionalChars,2)
 
 c if(nfc = "0") any(diaeresisBase) + any(diaeresisKey) > context(2) U+0308
