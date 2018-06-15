@@ -86,7 +86,7 @@ p kbd {color:black; font:9pt Arial; border:solid 1px grey; background:#ccc; marg
     </style>
 </head>
 <body>
-  <p>This keyboard allows one to keyboard the special symbols used in the modern Cheyenne alphabet.</p>
+  <p>This keyboard allows you to type all the letters and special symbols used in the Cheyenne alphabet.</p>
   <h2>Keyboard layout</h2>
 <h3 style="clear:left">Unicode : Unshifted</h3>
 <div class="key plain" id="K_BKQUOTE">
