@@ -6,7 +6,7 @@ store(&COPYRIGHT) '2018 SIL International'
 store(&KEYBOARDVERSION) '0.4'
 store(&BITMAP) 'sil_lisu_basic.ico'
 store(&VISUALKEYBOARD) 'sil_lisu_basic.kvks'
-store(&LAYOUTFILE) 'sil_lisu_basic-layout.js'
+c store(&LAYOUTFILE) 'sil_lisu_basic-layout.js'
 store(&TARGETS) 'windows macosx linux web'
 
 begin Unicode > use(Main)
@@ -28,20 +28,20 @@ store(base)     U+2605 U+25AA U+A4F1 U+A4E4 U+A4D5 U+A4FB U+A4F5 U+A4FE U+02CD U
 store(banned)   [SHIFT K_M] [SHIFT K_N]
 
 store(digitK)   [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
-store(digit)    U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030 
+store(digit)    U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030
 
 store(commonPunctuationK) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] \
-                          [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] \ 
+                          [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] \
                           [SHIFT K_EQUAL] [K_LBRKT] [SHIFT K_LBRKT] [K_RBRKT] [SHIFT K_RBRKT] [K_BKSLASH] \
                           [SHIFT K_BKSLASH] [SHIFT K_QUOTE] [SHIFT K_COMMA] [SHIFT K_PERIOD] [K_SLASH] [SHIFT K_SLASH]
 store(commonPunctuation)  U+0060 U+007E U+0021 U+0040 U+0023 U+0024 \
                           U+0025 U+005E U+0026 U+002A U+0028 U+0029 \
                           U+002B U+005B U+007B U+005D U+007D U+005C \
-                          U+007C U+0022 U+003C U+003E U+002F U+003F                         
+                          U+007C U+0022 U+003C U+003E U+002F U+003F
 
 group(Main) using keys
 
-+ any(baseK) > index(base, 1) 
++ any(baseK) > index(base, 1)
 + any(digitK) > index(digit,1)
 + any(commonPunctuationK) > index(commonPunctuation,1)
 + any(banned) > nul beep
