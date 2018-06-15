@@ -1,4 +1,4 @@
-Nuer Keyboard
+Thok Nath Keyboard
 =====================
 
 Copyright (C) 2015-2018 Enabling Languages

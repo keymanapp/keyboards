@@ -1,4 +1,4 @@
-# Nuer Change History
+# Thok Nath Change History
 
 ## Version 1.5 (14 Jun 2018)
 * Updated layout
