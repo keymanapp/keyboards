@@ -8,7 +8,20 @@
 <p>
   This keyboard layout is designed for Kayaw. It includes
   an on screen keyboard which can be viewed by clicking on the Keyman icon
-  and selecting the On Screen Keyboard menu item.
+  and selecting the On Screen Keyboard menu item. This keyboard follows the standard QWERTY 
+  keyboard layout the following changes:
+</p>
+
+<ul>
+  <li>q is replaced by U+0304 (Combining Macron)</li>
+  <li>z is replaced by U+0300 (Combining Grave Accent)</li>
+  <li>x is replaced by U+0302 (Combining Circumflex Accent)</li>
+  <li>v is replaced by U+030C (Combining Caron)</li>
+</ul>
+
+<p>
+  q z x and v are available on the touch screen version of the keyboard by 
+  long pressing their traditional QWERTY keys.
 </p>
 
 <div id='osk-container'>
