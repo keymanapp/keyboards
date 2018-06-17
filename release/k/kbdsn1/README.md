@@ -13,6 +13,7 @@ This keyboard layout is designed for Sinhala. It includes an on screen keyboard 
 Links
 -----
 
+ * Home:     https://keyman.com/keyboards/kbdsn1
  * Help:     https://help.keyman.com/keyboard/kbdsn1
  * Contact:  https://community.software.sil.org/c/keyman
 

@@ -17,7 +17,8 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Home:     https://help.keyman.com/keyboard/ghana
+ * Home:     https://keyman.com/keyboards/ghana
+ * Help:     https://help.keyman.com/keyboard/ghana
  * Contact:  https://community.software.sil.org/c/keyman
  
 Supported Platforms
