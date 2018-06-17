@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Ghana Keyboard
 * Copyright:      (C) SIL International
-* Version:        1.2
+* Version:        1.2.1
 * Keyman Version: 9.0
 * BCP-47 codes:   hag
 
@@ -17,8 +17,8 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Home:     <http://keymankeyboards.com/>
- * Contact:  <support@keyman.com>
+ * Home:     https://help.keyman.com/keyboard/ghana
+ * Contact:  https://community.software.sil.org/c/keyman
  
 Supported Platforms
 -------------------
