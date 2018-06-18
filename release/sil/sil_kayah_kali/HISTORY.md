@@ -1,4 +1,4 @@
-Kayah Keyboard Change History
+Kayah [Kayah Li] (SIL) Keyboard Change History
 =======================
 
 1.2 (15 Jun 2018)

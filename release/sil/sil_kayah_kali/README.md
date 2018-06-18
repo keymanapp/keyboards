@@ -1,4 +1,4 @@
-Kayah Keyboard
+Kayah [Kayah Li] (SIL) Keyboard
 =====================
 
 Copyright (C) 2007-2018 SIL International

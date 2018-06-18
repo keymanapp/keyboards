@@ -1,8 +1,7 @@
 ﻿c kyu-kali.kmn
 c Kayah Li keyboard for Unicode PUA
 store(&VERSION) "10.0"
-store(&NAME) 'Kayah (SIL)'
-c BITMAP "KayahUni"
+store(&NAME) 'Kayah [Kayah Li] (SIL)'
 c HOTKEY "^+K"
 store(&MESSAGE) ""
 store(&COPYRIGHT) '© 2008-2018 SIL International'
@@ -14,12 +13,12 @@ c 1.2   11-Apr-2006     RDD     Added single quotes
 c 1.1   02-Dec-2005     RDD     Added the ability to type ASCII for SFMs
 c 1.0   01-Dec-2005     RDD     Based on KayaOld.kmn which was based on Kauffman
 c 1.0.1 15-Sep-2008     MJPH    Unicode, fix 'we,' keys
-c 1.1   18-AUG-2014     MJPH    Switch ALT keys to RALT      
+c 1.1   18-AUG-2014     MJPH    Switch ALT keys to RALT
 
 store(&TARGETS) 'windows macosx linux web'
 store(&KEYBOARDVERSION) '1.2'
-store(&BITMAP) 'sil_kayah.ico'
-store(&VISUALKEYBOARD) 'sil_kayah.kvks'
+store(&BITMAP) 'sil_kayah_kali.ico'
+store(&VISUALKEYBOARD) 'sil_kayah_kali.kvks'
 
 begin Unicode > use(main)
 
@@ -91,7 +90,7 @@ c shifted keys
 + 'K' > U+A922 U+A92A
 
 + ':' > U+A92B
-+ '>' > '.'            
++ '>' > '.'
 
 c cquotation marks - originally on CTRL keys - AC 15-Jun-2018
 + [SHIFT RALT K_6] > U+2018
