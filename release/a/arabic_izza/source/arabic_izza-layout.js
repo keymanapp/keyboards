@@ -687,9 +687,8 @@
                 "width": "146",
                 "sk": [
                   {
-                    "text": "#",
-                    "id": "K_3",
-                    "layer": "shift"
+                    "text": "ة",
+                    "id": "K_M"
                   }
                 ]
               },
@@ -826,36 +825,21 @@
             "id": 3,
             "key": [
               {
-                "id": "K_M",
-                "text": "ة",
+                "id": "K_Z",
+                "text": "،",
                 "width": "146",
                 "sk": [
                   {
-                    "text": "ـ",
-                    "id": "K_J",
+                    "text": "؛",
+                    "id": "K_B",
+                    "layer": "shift"
+                  },
+                  {
+                    "text": ":",
+                    "id": "K_N",
                     "layer": "shift"
                   }
                 ]
-              },
-              {
-                "id": "K_N",
-                "text": "ى",
-                "width": "146"
-              },
-              {
-                "id": "K_COMMA",
-                "text": "و",
-                "width": "146"
-              },
-              {
-                "id": "K_V",
-                "text": "ء",
-                "width": "146"
-              },
-              {
-                "id": "K_B",
-                "text": "ال",
-                "width": "146"
               },
               {
                 "id": "K_C",
@@ -874,15 +858,24 @@
                 ]
               },
               {
-                "id": "K_RBRKT",
-                "text": "د",
-                "width": "146",
-                "sk": [
-                  {
-                    "text": "ذ",
-                    "id": "K_BKSLASH"
-                  }
-                ]
+                "id": "K_V",
+                "text": "ء",
+                "width": "146"
+              },
+              {
+                "id": "K_B",
+                "text": "ال",
+                "width": "146"
+              },
+              {
+                "id": "K_N",
+                "text": "ى",
+                "width": "146"
+              },
+              {
+                "id": "K_COMMA",
+                "text": "و",
+                "width": "146"
               },
               {
                 "id": "K_QUOTE",
@@ -892,6 +885,17 @@
                   {
                     "text": "ظ",
                     "id": "K_SLASH"
+                  }
+                ]
+              },
+              {
+                "id": "K_RBRKT",
+                "text": "د",
+                "width": "146",
+                "sk": [
+                  {
+                    "text": "ذ",
+                    "id": "K_BKSLASH"
                   }
                 ]
               }
@@ -914,9 +918,10 @@
                 "sp": "1"
               },
               {
-                "id": "K_Z",
-                "text": "،",
+                "id": "K_COMMA",
+                "text": ".",
                 "width": "146",
+                "layer": "shift",
                 "sk": [
                   {
                     "text": "؟",
@@ -926,16 +931,6 @@
                   {
                     "text": "!",
                     "id": "K_V",
-                    "layer": "shift"
-                  },
-                  {
-                    "text": ":",
-                    "id": "K_N",
-                    "layer": "shift"
-                  },
-                  {
-                    "text": "؛",
-                    "id": "K_B",
                     "layer": "shift"
                   }
                 ]
@@ -1115,31 +1110,31 @@
                 "layer": "shift"
               },
               {
-                "id": "K_c",
+                "id": "K_C",
                 "text": "\"",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_d",
+                "id": "K_D",
                 "text": "|",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_g",
+                "id": "K_G",
                 "text": "{",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_h",
+                "id": "K_H",
                 "text": "}",
                 "width": "104",
                 "layer": "shift"
               },
               {
-                "id": "K_k",
+                "id": "K_K",
                 "text": "[",
                 "width": "104",
                 "layer": "shift"
@@ -1174,9 +1169,15 @@
             "id": 4,
             "key": [
               {
+                "id": "K_NUMLOCK",
+                "text": "*abc*",
+                "width": "120",
+                "sp": "2",
+                "nextlayer": "default"
+              },
+              {
                 "id": "K_LOPT",
                 "text": "*Menu*",
-                "width": "120",
                 "sp": "1"
               },
               {
@@ -1192,7 +1193,7 @@
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "390",
+                "width": "330",
                 "sp": "0"
               },
               {
@@ -1208,7 +1209,7 @@
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
-                "width": "150",
+                "width": "100",
                 "sp": "1"
               }
             ]
