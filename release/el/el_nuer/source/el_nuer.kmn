@@ -121,7 +121,7 @@ store(diaeresisChar) U+00E4 U+00EB U+00F6 U+00C4 U+00CB U+00D6
 store(diaeresisExtendedBase) U+025B U+0190
 store(diaeresisBaseAll) outs(diaeresisBase) outs(diaeresisExtendedBase) U+0331
 
-store(altKeys) outs(additionalKeys) outs(additionalTouch) [T_DIAERESIS] [T_MACRON_BELOW] outs(macronBelowTouch) outs(macronBelowExtendedTouch)
+store(altKeys) outs(additionalKeys) outs(additionalTouch) [T_DIAERESIS] [T_MACRON_BELOW] outs(macronBelowTouch) outs(macronBelowExtendedTouch) [T_OPEN_E_0308] [SHIFT T_OPEN_E_0308] [T_OPEN_E_0331_0308] [SHIFT T_OPEN_E_0331_0308]
 
 group(constraints) using keys
 c + [CTRL K_LBRKT] > set(nfc='0') save(nfc)
