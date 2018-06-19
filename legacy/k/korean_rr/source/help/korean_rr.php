@@ -58,11 +58,11 @@ the info available on the keyboard download site.  Instructions on using the key
 
 <h2>Overview</h2>
 <p>
-This keyboard is designed for entering the <a target="_blank" href="http://en.wikipedia.org/wiki/Korean">Korean</a> language, supporting both the 
-<a target="_blank" href="http://en.wikipedia.org/wiki/Korean_writing_system">Hangeul</a> alphabet and 
-<a target="_blank" href="http://en.wikipedia.org/wiki/Hanja">Hanja</a> ideographic characters, as used in Republic of Korea.  
-Korean text is entered using Latin alphabet characters, closely following the <a target="_blank" href="http://www.mct.go.kr/english/roman/roman.jsp">Korean standard Revised Romanization</a> conventions and displayed as <a target="_blank" href="http://en.wikipedia.org/wiki/Jamo#jamo">jamo</a> character components, which are 
-combined to form <a target="_blank" href="http://en.wikipedia.org/wiki/Hangul">hangeul</a> characters by pressing the space bar, or <a target="_blank" href="http://en.wikipedia.org/wiki/Hanja">hanja</a> ideographs by selecting from an IME (Input Method Editor) list.   
+This keyboard is designed for entering the <a target="_blank" href="https://en.wikipedia.org/wiki/Korean">Korean</a> language, supporting both the 
+<a target="_blank" href="https://en.wikipedia.org/wiki/Korean_language#Writing_system">Hangeul</a> alphabet and 
+<a target="_blank" href="https://en.wikipedia.org/wiki/Hanja">Hanja</a> ideographic characters, as used in Republic of Korea.  
+Korean text is entered using Latin alphabet characters, closely following the Korean standard Revised Romanization conventions and displayed as <a target="_blank" href="https://en.wikipedia.org/wiki/Hangul_consonant_and_vowel_tables">jamo</a> character components, which are 
+combined to form <a target="_blank" href="https://en.wikipedia.org/wiki/Hangul">hangeul</a> characters by pressing the space bar, or <a target="_blank" href="https://en.wikipedia.org/wiki/Hanja">hanja</a> ideographs by selecting from an IME (Input Method Editor) list.   
 </p>
 
 <p>The keyboard is especially developed for use by those unfamiliar with the standard Korean keyboard layout, and works best with a QWERTY (English) system keyboard.</p>
@@ -267,7 +267,7 @@ However, typing <?php echo KeyRenderer::render('su[!PgDn]9do8'); ?> replaces the
 
 
 <p>
-For the <b>jamo</b> <span class="highlightExample">ㄱ ㄷ ㅂ ㄹ</span>, the <a target="_blank" href="http://en.wikipedia.org/wiki/Revised_Romanization_of_Korean">Revised Romanization</a> conventions specify a different letter to be used when the <b>jamo</b> occurs initially (as <i>choseong</i>) from that used when it occurs at the end of a syllable (as <i>jongseong</i>).  In that case, the two letters used are shown separated by a comma, so <b>g,k</b> for <span class="highlightExample">ㄱ</span>.
+For the <b>jamo</b> <span class="highlightExample">ㄱ ㄷ ㅂ ㄹ</span>, the <a target="_blank" href="https://en.wikipedia.org/wiki/Revised_Romanization_of_Korean">Revised Romanization</a> conventions specify a different letter to be used when the <b>jamo</b> occurs initially (as <i>choseong</i>) from that used when it occurs at the end of a syllable (as <i>jongseong</i>).  In that case, the two letters used are shown separated by a comma, so <b>g,k</b> for <span class="highlightExample">ㄱ</span>.
 </p>
 <p>
 While the revised romanization standard for Korean always represents <span class="highlightExample">ㄹ</span> as 'r' syllable-initially and usually as 'l' syllable-finally, either may be used in either position for the purpose of entering Korean text.
@@ -358,7 +358,7 @@ While the revised romanization standard for Korean always represents <span class
 
 <p>Please read the <a target="_blank" href="/troubleshooting/">KeymanWeb troubleshooting guide</a> for further information.</p> 
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://keyman.com/contact/">contact us</a>.</p>
 
 </div>
 
@@ -380,13 +380,13 @@ While the revised romanization standard for Korean always represents <span class
 -->
 <h3>Other Internet Resources</h3>
 <ul><li><a target="_blank" href="http://www.omniglot.com/writing/korean.htm">Information about Korean language at Omniglot.com</a></li>
-<li><a target="_blank" href="http://www.mct.go.kr/english/roman/roman.jsp">Korean Ministry of Culture description of Romanization conventions</a></li>
-<li><a target="_blank" href="http://en.wikipedia.org/wiki/Korean_language">Korean language at Wikipedia.org</a></li>
-<li><a target="_blank" href="http://en.wikipedia.org/wiki/Revised_Romanization_of_Korean">Revised Romanization of Korean at Wikipedia.org</a></li>
-<li><a target="_blank" href="http://en.wikipedia.org/wiki/Korean_language_and_computers">Korean language and computers</a></li>
-<li><a target="_blank" href="http://en.wikipedia.org/wiki/Hangul">Korean writing system: Hangul at Wikipedia.org</a></li>
-<li><a target="_blank" href="http://en.wikipedia.org/wiki/Hanja">Korean writing system: Hanja at Wikipedia.org</a></li>
-<li><a target="_blank" href="http://en.wikipedia.org/wiki/Jamo">Korean writing system: Jamo at Wikipedia.org</a></li>
+<!-- <li><a target="_blank" href="http://www.mct.go.kr/english/roman/roman.jsp">Korean Ministry of Culture description of Romanization conventions</a></li> -->
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Korean_language">Korean language at Wikipedia.org</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Revised_Romanization_of_Korean">Revised Romanization of Korean at Wikipedia.org</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Korean_language_and_computers">Korean language and computers</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Hangul">Korean writing system: Hangul at Wikipedia.org</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Hanja">Korean writing system: Hanja at Wikipedia.org</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/Hangul_consonant_and_vowel_tables">Korean writing system: Jamo at Wikipedia.org</a></li>
 </ul>
 </div>
 

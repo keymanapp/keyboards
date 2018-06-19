@@ -90,7 +90,7 @@ Most computers will automatically download a special font if needed to display t
 <h3>Keyboard Details</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
 		
-<div id='isispackage'>This package is part of the <a target='_blank' href='http://isis.keymankeyboards.com/'>Indian Script Input System (ISIS) keyboard package</a>.</div>
+<div id='isispackage'>This package is part of the <a target='_blank' href='https://keyman.com/keyboards/isis'>Indian Script Input System (ISIS) keyboard package</a>.</div>
 	
 <p>This keyboard uses a consonant-vowel order for text input, so the consonant character is always typed before the vowel, regardless of where (relative to the consonant) the vowel marker symbol appears.  As syllables are typed, the characters entered are automatically converted to the appropriate consonant-vowel combinant.  While only the combinant characters are displayed on screen, the consonant and vowel are both stored, so that pressing Backspace once after a combinant deletes only the vowel component.  This means it is necessary to press Backspace twice to delete a combinant character.  However, pressing the Delete key with the cursor in front of a combinant character removes the whole character with one keystroke.</p>
 
@@ -254,10 +254,10 @@ This character is entered by typing <span class='keys'>s\rii</span>.  <span clas
 
 </div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://www.tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=426&amp;FromKeyman=0">Download ISIS Tamil Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/isis_tamil">Download ISIS Tamil Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/tamil.htm">Tamil Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/tamil_language">Tamil Language at Wikipedia.org</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/tamil_script.htm">Tamil Script at Wikipedia.org</a></p>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tamil_language">Tamil Language at Wikipedia.org</a><br/>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tamil_script.htm">Tamil Script at Wikipedia.org</a></p>
 
 </div>
 
