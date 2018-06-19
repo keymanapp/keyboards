@@ -97,7 +97,7 @@ caption {display: none;}
 
 <div id="credits">
 <p>Version 2.1</p>
-<p><a href="http://www.openroad.net.au/harari" target="_blank">http://www.openroad.net.au/harari</a></p>
+<p><a href="https://www.slv.vic.gov.au/" target="_blank">https://www.slv.vic.gov.au/</a></p>
 <p>© 2009 State Library of Victoria and the Australian Saay Harari Association</p>
 <p>This keyboard was developed to facilitate typing text written in Harari using a Latin orthography.</p>
 </div>
@@ -106,8 +106,7 @@ caption {display: none;}
 
 	<p>This keyboard layout was designed for use with the revised Harari Latin orthography adopted by the Harari 
 	Community Language schools in Melbourne, Australia. The Latin script is used to teach the younger 
-	Harari children their own language. . For further information refer 
-	to <a href="http://www.openroad.net.au/harari" target="_blank">http://www.openroad.net.au/harari</a>.</p>
+	Harari children their own language. </p>
 
 <h3>Normal</h3>
 <p><img src="harlatnU_.png" /></p>
@@ -133,11 +132,11 @@ caption {display: none;}
 <ul>
 	<li><a href="http://www.languagegeek.com/font/AfricanSans.zip">African Sans Serif</a></li>
 	<li><a href="http://www.languagegeek.com/font/AfricanSerif.zip">African Serif</a></li>
-	<li><a href="http://scripts.sil.org/Andika_download">Andika Basic</a></li>
-	<li><a href="http://scripts.sil.org/CharisSIL_download">Charis SIL</a></li>
+	<li><a href="https://software.sil.org/andika/download/">Andika</a></li>
+	<li><a href="https://software.sil.org/charis/download/">Charis SIL</a></li>
 	<li><a href="http://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-2.27.zip?download">DejaVu Sans</a></li>
-	<li><a href="http://scripts.sil.org/DoulosSIL_download">Doulos SIL</a></li>
-	<li><a href="http://scripts.sil.org/Gentium_Basic">Gentium Basic and Gentium Book Basic</a></li>
+	<li><a href="https://software.sil.org/doulos/download/">Doulos SIL</a></li>
+	<li><a href="https://software.sil.org/gentium/download/">Gentium</a></li>
 </ul>
 
 </div>
@@ -147,8 +146,8 @@ caption {display: none;}
 <p>&copy; 2009 State Library of Victoria and the Australian Saay Harari Association</p>
 <div id="contact">
 <h2>contact</h2>
-<p id="name"><a href="http://home.vicnet.net.au/~andrewc/" target="_blank">Andrew Cunningham</a><br />
-Vicnet, State Library of Victoria<br />
+<p><a href="mailto:enabling.languages@gmail.com">Andrew Cunningham</a></p>
+<p>Vicnet, State Library of Victoria<br />
 328 Swanston St.<br />
 Melbourne VIC 3000<br />
 Australia<br />

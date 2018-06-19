@@ -28,5 +28,5 @@ selecting the On Screen Keyboard menu item. </p>
 <h2>Links</h2>
 <ul>
 <li>Home Page: <a href='https://keyman.com/'>https://keyman.com/</a></li>
-<li><a href='http://keymankeyboards.com/iso:jra'>Other keyboards for these languages</a></li>
+<li><a href='https://keyman.com/keyboards?q=jra'>Other keyboards for these languages</a></li>
 </ul>

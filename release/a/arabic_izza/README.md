@@ -1,17 +1,15 @@
 Arabic Izza keyboard
 ====================
 
-Copyright (C) 1977-2017 Prof. Abdelmalek Bouhadjera
-
-Version 1.0
+Copyright (C) 2017-2018 Prof. Abdelmalek Bouhadjera
 
 Arabic Izza: The pleasure of typing Arabic.
-استرجاع لهيبة العربية في عصر المعلوملتية
+استرجاع لهيبة العربية في عصر المعلوماتية
 
 Links
 -----
 
- * Home:     https://keyman.com/
+ * Home:     https://keyman.com/keyboards/arabic_izza
  * Help:     https://help.keyman.com/keyboard/arabic_izza
 
 Supported Platforms

@@ -54,10 +54,6 @@ SOFTWARE.</p></DIV>
 
 
 
-<h2>Release History</h2>
-<p>Version 1.1, released 23 Apr 2018</p>
-<p>Version 1.0, released 20 Feb 2018</p>
-
 <h2>Links</h2>
 <ul>
 <li>Home Page: <a href='https://keyman.com/keyboards/osage_nation'>https://keyman.com/keyboards/osage_nation</a></li>
