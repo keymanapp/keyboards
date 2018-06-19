@@ -3,7 +3,7 @@ Khmer Angkor keyboard
 
 Copyright (C) 2017-2018 SIL International
 
-Version 1.0.4
+Version 1.0.5
 
 Description
 -----------
@@ -14,7 +14,7 @@ Khmer Angkor automatically corrects many common keying errors.
 Links
 -----
 
- * Contact:  support@keyman.com
+ * Contact: makara@keyman.com
 
 Supported Platforms
 -------------------
