@@ -1,4 +1,4 @@
-SIL Kayaw Keyboard Change History
+Kayaw (SIL) Keyboard Change History
 =======================
 
 1.0 (12 June 2018)
