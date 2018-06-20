@@ -4,7 +4,7 @@ Arabic Izza keyboard
 Copyright (C) 2017-2018 Prof. Abdelmalek Bouhadjera
 
 Arabic Izza: The pleasure of typing Arabic.
-استرجاع لهيبة العربية في عصر المعلوملتية
+استرجاع لهيبة العربية في عصر المعلوماتية
 
 Links
 -----
