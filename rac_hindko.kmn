@@ -1,0 +1,160 @@
+c This keyboard is designed for the Hindko language spoken in the provinces of Khyber Pakhtunkhwa and Punjab, Pakistan. It is based on phonetic keyboard for Hindko Language developed by Pakistani linguist, author, researcher and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), Keyman, Tavultesoft and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Hindko Keyboard.
+c This is the first Hindko language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, Software Developer and Researcher. This keyboard is for Hindko Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Hindko language.
+c The Hindko Keyboard Project(HKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan. The project was developed in collaboration with Lorna Evans of SIL International.
+c Khowar Academy Chitral was established in April 1996 specifically to promote the endangered  languages of Chitral Pakistan. The Academy has worked extensively on Hindko linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Hindko, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
+store(&VERSION) '9.0'
+store(&NAME) 'Rachitrali-Hindko'
+store(&COPYRIGHT) '© 2017 Rehmat Aziz Chitrali'
+store(&MESSAGE) 'The Hindko Unicode keyboard is distributed under The MIT License (MIT)'
+store(&ETHNOLOGUECODE) 'hnd'
+store(&LANGUAGE) 'x0401'
+store(&WINDOWSLANGUAGES) 'x0401'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'rac_hindko.ico'
+store(&VISUALKEYBOARD) 'rac_hindko.kvk'
+store(&LAYOUTFILE) 'rac_hindko-layout.js'
+store(&KMW_RTL) '1'
+begin Unicode > use(main)
+
+
+group(main) using keys
++ [CTRL ALT K_COMMA] > '﴾'
++ [K_oE2] > 'RAC'
++ [CTRL ALT K_N] > 'ً'
++ [CTRL ALT K_Z] > '﴿'
++ [CTRL ALT K_K] > 'ﷻ'
++ [CTRL ALT K_RBRKT] > ']'
++ [CTRL ALT K_LBRKT] > '['
++ [CTRL ALT K_6] > '؏'
++ [CTRL ALT K_BKQUOTE] > '`'
++ [SHIFT K_COMMA] > 'ۇ'
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_F] > 'ؤ'
++ [SHIFT K_L] > 'ݨ'
++ [CTRL ALT K_D] > 'ٚ'
++ [CTRL ALT K_J] > '›'
++ [SHIFT K_U] > 'ئ'
++ [K_U] > 'ء'
++ [CTRL ALT K_BKSLASH] > '\'
++ [CTRL ALT K_HYPHEN] > '©'
++ [SHIFT K_PERIOD] > '®'
++ [SHIFT K_Y] > 'َ'
++ [SHIFT K_R] > 'ڑ'
++ [K_SLASH] > '/'
++ [K_BKSLASH] > '‹'
++ [K_PERIOD] > U+06D4
++ [K_COMMA] > U+060C
++ [K_M] > U+0645
++ [K_N] > U+0646
++ [K_B] > U+0628
++ [K_V] > 'ط'
++ [K_C] > U+0686
++ [K_X] > U+0634
++ [K_Z] > U+0632
++ [K_QUOTE] > U+0027
++ [K_COLON] > U+061B
++ [K_L] > U+0644
++ [K_K] > U+06A9
++ [K_J] > U+062C
++ [K_H] > U+062D
++ [K_G] > U+06AF
++ [K_F] > U+0641
++ [K_D] > U+062F
++ [K_S] > U+0633
++ [K_A] > U+0627
++ [K_RBRKT] > '؎'
++ [K_LBRKT] > 'ࣱ'
++ [K_P] > U+067E
++ [K_O] > U+06C1
++ [K_I] > U+06CC
++ [K_Y] > U+06D2
++ [K_T] > U+062A
++ [K_R] > U+0631
++ [K_E] > U+0639
++ [K_W] > U+0648
++ [K_Q] > 'ق'
++ [K_EQUAL] > U+003D
++ [K_HYPHEN] > U+002D
++ [K_0] > U+06F0
++ [K_9] > U+06F9
++ [K_8] > U+06F8
++ [K_7] > U+06F7
++ [K_6] > U+06F6
++ [K_5] > U+06F5
++ [K_4] > U+06F4
++ [K_3] > U+06F3
++ [K_2] > U+06F2
++ [K_1] > U+06F1 
++ [K_BKQUOTE] > '۞'
+
+c shift keys
++ [SHIFT K_SLASH] > U+061F
++ [SHIFT K_G] > U+063A
++ [SHIFT K_W] > '™'
++ [SHIFT K_BKQUOTE] > U+0685
++ [SHIFT K_M] > '٬'
++ [SHIFT K_N] > 'ں'
++ [SHIFT K_B] > '٭'
++ [SHIFT K_V] > U+0638
++ [SHIFT K_C] > U+062B
++ [SHIFT K_X] > U+0698
++ [SHIFT K_Z] > U+0630
++ [SHIFT K_oE2] > 'RAC'
++ [SHIFT K_QUOTE] > U+0022
++ [SHIFT K_COLON] > U+003A
++ [SHIFT K_K] > U+062E
++ [SHIFT K_J] > U+0636
++ [SHIFT K_H] > U+06BE
++ [SHIFT K_D] > U+0688
++ [SHIFT K_S] > U+0635
++ [SHIFT K_A] > U+0622
++ [SHIFT K_RBRKT] > U+06D3
++ [SHIFT K_LBRKT] > '€'
++ [SHIFT K_P] > 'ُ'
++ [SHIFT K_O] > 'ۃ'
++ [SHIFT K_I] > 'ِ'
++ [SHIFT K_T] > U+0679
++ [SHIFT K_E] > '“'
++ [SHIFT K_Q] > '”'
++ [SHIFT K_EQUAL] > U+002B
++ [SHIFT K_HYPHEN] > U+005F
++ [SHIFT K_0] > U+0030
++ [SHIFT K_9] > U+0039
++ [SHIFT K_8] > U+0038
++ [SHIFT K_7] > U+0037
++ [SHIFT K_6] > U+0036
++ [SHIFT K_5] > U+0035
++ [SHIFT K_4] > U+0034
++ [SHIFT K_3] > U+0033
++ [SHIFT K_2] > U+0032
++ [SHIFT K_1] > U+0031  
+
+c Ctrl+Alt
++ [CTRL ALT K_oE2] > 'RAC'
++ [CTRL ALT K_G] > U+064A
++ [CTRL ALT K_W] > U+0656
++ [CTRL ALT K_B] > U+0670
++ [CTRL ALT K_V] > U+0600
++ [CTRL ALT K_X] > U+0603
++ [CTRL ALT K_H] > U+0612
++ [CTRL ALT K_F] > U+0624
++ [CTRL ALT K_S] > U+0610
++ [CTRL ALT K_A] > 'ﷲ'
++ [CTRL ALT K_U] > U+0611
++ [CTRL ALT K_Y] > U+0654
++ [CTRL ALT K_T] > U+0601
++ [CTRL ALT K_R] > U+0614
++ [CTRL ALT K_E] > U+0613
++ [CTRL ALT K_Q] > U+0602
++ [CTRL ALT K_0] > U+0029
++ [CTRL ALT K_9] > U+0028
++ [CTRL ALT K_8] > U+002A
++ [CTRL ALT K_7] > U+0026
++ [CTRL ALT K_5] > U+0025
++ [CTRL ALT K_4] > 'ّ'
++ [CTRL ALT K_3] > U+0023
++ [CTRL ALT K_2] > U+0040
++ [CTRL ALT K_1] > U+0021
+
+
