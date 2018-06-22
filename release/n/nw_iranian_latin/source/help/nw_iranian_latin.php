@@ -723,7 +723,7 @@ This is a Latin keyboard for transcription of NW Iranian languages.
 </table>
 
       <H2>License</H2>
-      <P>NW Iranian Latin Keyman Keyboard is copyright ©2017 SIL 
+      <P>NW Iranian Latin Keyman Keyboard is copyright ©2017-2018 SIL 
       International. It is distributed under The MIT License (MIT)</P>
       <DIV class=Note>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy

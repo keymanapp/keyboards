@@ -9,7 +9,7 @@
 
 
 
-  <p>Keyboard &#169; Copyright (c) 2016 Bill Jancewicz</p>
+  <p>Keyboard &#169; Copyright (c) 2016-2018 Bill Jancewicz</p>
   <section id='overview'>
 	<h2>Overview</h2>
 	<p>This keyboard is designed for the East Cree syllabic script used in Northwestern Quebec, Canada. The keyboard has been developed to make it easy to type all of the symbols necessary for East Cree. This keyboard is fully compliant with the <a href='http://unicode.org/standard/standard.html'>Unicode Standard</a>.</p>
