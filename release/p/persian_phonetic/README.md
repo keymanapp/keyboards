@@ -2,7 +2,7 @@ Keyboard Data
 -------------
 
 * Name:           Persian Phonetic
-* Copyright:      (C) SIL International
+* Copyright:      (C) 2017-2018 SIL International
 * Version:        1.0.1
 * Keyman Version: 9.0
 * BCP-47 codes:   pes-Arab
