@@ -1,7 +1,11 @@
 Dzongkha (SIL) Keyboard Change History
 =======================
 
-1.0 (1 Jan 2015)
+1.1
 -----------------
+* Updated to Keyman 10
+* Source migrated to GitHut
 
-* Created by you
+1.0
+-----------------
+* Initial version og keyboard layout
