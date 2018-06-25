@@ -1,14 +1,15 @@
 ﻿store(&VERSION) "10.0"
-store(&NAME) 'Dzongkha'
-store(&BITMAP) 'dzongkha.ico'
+store(&NAME) 'Dzongkha (SIL)'
+store(&BITMAP) 'sil_dzongkha.ico'
 store(&CAPSALWAYSOFF) "1"
 c store(&ETHNOLOGUECODE) 'dzo'
 c store(&WINDOWSLANGUAGES) 'x0451'
 c store(&LANGUAGE) 'x0451'
 
-store(&VISUALKEYBOARD) 'dzongkha.kvks'
+store(&VISUALKEYBOARD) 'sil_dzongkha.kvks'
 store(&TARGETS) 'windows macosx linux web'
-store(&COPYRIGHT) '©'
+store(&COPYRIGHT) '© 2012-2018 SIl International'
+store(&KEYBOARDVERSION) '1.1'
 
 begin Unicode > use(main)
 
@@ -73,6 +74,8 @@ dk(1) + any(key) > index(key,2)
 
 c 1-to-Many
 + [SHIFT RALT K_t] > U+0f8b U+0f99
-c dk(1) + [SHIFT RALT K_t] > [SHIFT RALT K_t]
-dk(1) + [SHIFT RALT K_t] > nul
+dk(1) + [SHIFT RALT K_T] > use(default-output)
+
+group(default-output) using keys
+c empty group
 c EOF
