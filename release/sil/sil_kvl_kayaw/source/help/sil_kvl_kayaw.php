@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'SIL Kayaw Keyboard Help';
-  $pagetitle = 'SIL Kayaw Keyboard Help';
+  $pagename = 'Kayaw (SIL) Keyboard Help';
+  $pagetitle = 'Kayaw (SIL) Keyboard Help';
   require_once('header.php');
 ?>
 
@@ -9,9 +9,27 @@
   This keyboard layout is designed for Kayaw. It includes
   an on screen keyboard which can be viewed by clicking on the Keyman icon
   and selecting the On Screen Keyboard menu item. This keyboard follows the standard QWERTY 
-  keyboard layout the following changes:
+  keyboard layout with the following changes:
 </p>
+<p>
+  <b>For Desktop Layout</b>
+</p>
+<ul>
+  <li>6 is replaced by U+0302               (Combining Circumflex Accent)</li>
+  <li>7 is replaced by U+0304               (Combining Macron)</li>
+  <li>^ is replaced by Numeral 6</li>
+  <li>&amp; is replaced by Numeral 7</li>
+  <li>q is replaced by U+0300 U+030C        (Combining Grave Accent, Combining Caron)</li>
+  <li>[ is replaced by U+0300 U+0304        (Combining Grave Accent, Combining Macron)</li>
+  <li>f is replaced by U+0300               (Combining Grave Accent)</li>
+  <li>z is replaced by U+0302 U+0304        (Combining Circumflex Accent, Combining Macron)</li>
+  <li>x is replaced by U+0302 U+030C        (Combining Circumflex Accent, Combining Caron)</li>
+  <li>v is replaced by U+030C               (Combining Caron)</li>
+</ul>
 
+<p>
+  <b>For Touch Screen Keyboards</b>
+</p>
 <ul>
   <li>q is replaced by U+0304 (Combining Macron)</li>
   <li>z is replaced by U+0300 (Combining Grave Accent)</li>
@@ -40,7 +58,7 @@
 </div>
 
 <h2>License</h2>
-<p>SIL Kayaw Keyman Keyboard is copyright &copy; 2018 SIL International. It is distributed under The MIT License (MIT)</p>
+<p>Kayaw (SIL) Keyman Keyboard is copyright &copy; 2018 SIL International. It is distributed under The MIT License (MIT)</p>
 
 <div class="note">
   <p>Permission is hereby granted, free of charge, to any person obtaining a copy
