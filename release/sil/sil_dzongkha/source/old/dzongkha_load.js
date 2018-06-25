@@ -1,1 +1,0 @@
-﻿KeymanWeb.KRS(new Stub_Keyboard_dzongkha()); function Stub_Keyboard_dzongkha() {this.KF="dzongkha.js";this.KI="Keyboard_dzongkha";this.KN="Dzongkha";}
