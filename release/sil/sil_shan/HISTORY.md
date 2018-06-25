@@ -1,7 +1,6 @@
-____________ Keyboard Change History
+Shan (SIL) Keyboard Change History
 =======================
 
-1.0 (1 Jan 2015)
+1.3 (22 Jun 2018)
 -----------------
-
-* Created by you
+* Source migrated to GitHub
