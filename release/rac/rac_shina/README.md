@@ -19,7 +19,7 @@ Links
 -----
 
 
- * Home:    https://keymanweb.com/#phl,Keyboard_rac_shina
+ * Home:    https://keymanweb.com/#scl,Keyboard_rac_shina
  * Help:    https://help.keyman.com/keyboard/rac_shina
  * Contact: Rehmat Aziz Chitrali linguist and researcher <rachitrali@yahoo.com>
 
