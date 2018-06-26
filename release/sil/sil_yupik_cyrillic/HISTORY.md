@@ -1,4 +1,4 @@
-SIL Yupik Cyrillic Keyboard Keyboard Change History
+Yupik Cyrillic (SIL) Keyboard Change History
 =======================
 
 2018, Version 2.0: Reorganized source files and updated documentation for release in Keyman repository.
