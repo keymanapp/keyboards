@@ -452,7 +452,7 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1",
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
