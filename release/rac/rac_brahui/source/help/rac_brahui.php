@@ -14,19 +14,11 @@ Introduction
 <p>Khowar Academy Chitral was established in April 1996 specifically to promote the endangered  languages of Chitral Pakistan. The Academy has worked extensively on Brahui linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Brahui, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.</p>
 
 Font
-The RAChitrali-Brahui Keyman keyboard is designed to work with any extended Arabic script font specially Scheherazade font and courier new fonts are fully supporting all the special characters of Khowar language. . 
+The RAChitrali-Brahui Keyman keyboard is designed to work with any extended Arabic script font specially Scheherazade font and courier new fonts are fully supporting all the special characters of Khowar language. 
+
 Keyboard
 This keyboard layout is designed for the RAChitrali-Brahui language. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. 
-Keyboard Layout
-The keyboard layout is displayed below in Keyboard graphics.
-<h3>Base Version</h3>
-      	<img src="rac_brahui base.png" alt="Base Version" style="width:600px;">
-
-      	<h3>Shift Version</h3>
-      	<img src="rac_brahui shift.png" alt="Shift Version" style="width:600px;">
-      	
-      	
- 
+       
 <h2>How to use the Rachitrali-Brahui Keyboard? Please read the following:-</h2>
 
 <p style="text-align: right; dir=rtl; font-size:200%">ہمارے متعلق
