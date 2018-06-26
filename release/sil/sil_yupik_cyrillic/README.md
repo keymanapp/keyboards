@@ -1,4 +1,4 @@
-SIL Yupik Cyrillic Keyboard
+Yupik Cyrillic (SIL) Keyboard
 =====================
 
 Copyright (C) 2006-2018 SIL International
