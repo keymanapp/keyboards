@@ -1,36 +1,67 @@
-Keyboard Data
--------------
+# Open Source Keyman keyboards
 
-* Name:           Rachitrali-Balti
-* Copyright:      (C) 2017 Rehmat Aziz Chitrali
-* Version:        1.0
-* Keyman Version: 9.0
-* BCP-47 codes:   bft-Arab
+## File Layout
 
-Description
------------
+Keyboards are grouped into three folders:
 
-This keyboard is designed for the Balti language spoken in Gilgit-Baltistan of Northern Pakistan, in its standard Perso-Arabic script, as used in Pakistan. It is based on phonetic keyboard for Balti Language developed by Pakistani linguist, author, researcher and Softwae Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Balti Keyboard.
+  * `release` - keyboards with full source that pass our stringent quality checks, Unicode only
+  * `legacy` - binary distributions of keyboards, migrated from Tavultesoft servers, Unicode and 
+    non-Unicode
+  * `experimental` - keyboards that have not yet passed the quality check, available from the 
+    'experimental' category in Keyman apps with Keyman 10 and later. Unicode only.
 
-This is the first Balti language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, Scientist, Inventor, Software Developer and Researcher. This keyboard is for Balti Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Balti language.
+Within each of the folders, keyboards are further grouped by first letter or by prefix, where 
+multiple keyboards share the same prefix indicating provenance, for example `sil` or `gff`.
 
-The Balti Keyboard Project(BKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.
+## Contributing
 
-Khowar Academy Chitral was established in April 1996 specifically to promote the endangered  languages of Chitral Pakistan. The Academy has worked extensively on Balti linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Balti, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
-Links
------
+First, read the guide! <https://help.keyman.com/developer/keyboards/>
 
- * Contact: Mr.Rehmat Aziz Chitrali Linguist and Researcher <rachitrali@yahoo.com>
+Keyman Developer 10.0 is recommended to edit these files. <https://keyman.com/developer>
 
-Supported Platforms
--------------------
- * Windows
- * Web
- * OSX
- * iPad
- * iPhone
- * Android
- 
-Todo
-----
+## Building Keyboards
 
+### Prerequisites
+
+Windows:
+  * Git for Windows (or MinGW)
+  * You will need to use **Git Bash** or equivalent to build (not tested with Cygwin), not 
+    Windows Command Prompt or PowerShell.
+  * You can also **WSL** (Bash on Ubuntu on Windows) if you place the repo in a 
+    Windows-accessible path (such as `/mnt/c/...`), so the Keyman Developer Compiler 
+    can run (requires Windows 10 Anniversary Update or later). Beware of line-ending changes
+    if mixing Windows and WSL usage!
+
+Linux, macOS:
+  * **WINE** is required in order to run the Keyman Developer 
+    compiler which is currently a Windows-only executable.
+
+### Build instructions
+
+`build.sh` can be used to build all the keyboards from the command line.
+  
+* The Keyman Developer compiler is included in the `tools/` folder and so Keyman Developer 
+  is not required for builds.
+  
+* Common `build.sh` parameters:
+  * `--help     List build.cmd parameters`
+  * `-s         Quieter build`
+  * `-c         Clean instead of build`
+  * `-d         Include debug information`
+  * `-w         Treat warnings as errors`
+  * `[target]   Specific folder to build`
+
+* Each keyboard also includes a project file which can be used to build the project - either from the command line 
+  kmcomp compiler, or from the Keyman Developer IDE.
+
+## Deprecated keyboards
+
+If a keyboard has been replaced by another keyboard, include a DEPRECATED.md file in the folder referencing the 
+new keyboard name.
+
+## Common links
+
+   * <https://help.keyman.com/developer/keyboards/>: Guide to working with this repository 
+   * <https://keyman.com/developer/keymanweb/keyboards.php>: Published documentation for each keyboard
+   * <https://r.keymanweb.com/api/4.0/keyboards/>: JSON API for compiled keyboards available from Keyman Cloud
+   * <https://help.keyman.com/developer/cloud/keyboard_info/>: Documentation on the .keyboard_info file format used in this repository
