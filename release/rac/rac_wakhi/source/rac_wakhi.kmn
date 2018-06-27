@@ -12,36 +12,35 @@ store(&WINDOWSLANGUAGES) 'x0401'
 store(&TARGETS) 'any'
 store(&KEYBOARDVERSION) '1.0'
 store(&BITMAP) 'rac_wakhi.ico'
-store(&VISUALKEYBOARD) 'rac_wakhi.kvks'
 store(&LAYOUTFILE) 'rac_wakhi-layout.js'
 store(&KMW_RTL) '1'
 begin Unicode > use(main)
 
 
 group(main) using keys
-+ [SHIFT K_B] > 'ݜ'
-+ [SHIFT K_F] > 'ڤ'
++ [SHIFT K_B] > U+075C
++ [SHIFT K_F] > U+06A4
 + [K_oE2] > 'RAC'
-+ [SHIFT K_COMMA] > 'ݝ'
-+ [SHIFT K_BKSLASH] > 'ڌ'
-+ [SHIFT K_L] > 'ڇ'
-+ [SHIFT K_U] > 'ئ'
-+ [K_U] > 'ء'
-+ [SHIFT K_PERIOD] > 'ٿ'
-+ [SHIFT K_Y] > 'َ'
-+ [SHIFT K_R] > 'ڑ'
-+ [K_SLASH] > '/'
-+ [K_BKSLASH] > 'ڗ'
++ [SHIFT K_COMMA] > U+075D
++ [SHIFT K_BKSLASH] > U+068C
++ [SHIFT K_L] > U+0687
++ [SHIFT K_U] > U+0626
++ [K_U] > U+0621
++ [SHIFT K_PERIOD] > U+067F
++ [SHIFT K_Y] > U+064E
++ [SHIFT K_R] > U+0691
++ [K_SLASH] > U+002F
++ [K_BKSLASH] > U+0697
 + [K_PERIOD] > U+06D4
 + [K_COMMA] > U+060C
 + [K_M] > U+0645
 + [K_N] > U+0646
 + [K_B] > U+0628
-+ [K_V] > 'ط'
++ [K_V] > U+0637
 + [K_C] > U+0686
 + [K_X] > U+0634
 + [K_Z] > U+0632
-+ [K_QUOTE] > 'ٔ'
++ [K_QUOTE] > U+0654
 + [K_COLON] > U+061B
 + [K_L] > U+0644
 + [K_K] > U+06A9
@@ -52,8 +51,8 @@ group(main) using keys
 + [K_D] > U+062F
 + [K_S] > U+0633
 + [K_A] > U+0627
-+ [K_RBRKT] > 'ڃ'
-+ [K_LBRKT] > ' ڙ'
++ [K_RBRKT] > U+0683
++ [K_LBRKT] > U+0699 
 + [K_P] > U+067E
 + [K_O] > U+06C1
 + [K_I] > U+06CC
@@ -62,7 +61,7 @@ group(main) using keys
 + [K_R] > U+0631
 + [K_E] > U+0639
 + [K_W] > U+0648
-+ [K_Q] > 'ق'
++ [K_Q] > U+0642 
 + [K_EQUAL] > U+003D
 + [K_HYPHEN] > U+002D
 + [K_0] > U+06F0
@@ -75,15 +74,15 @@ group(main) using keys
 + [K_3] > U+06F3
 + [K_2] > U+06F2
 + [K_1] > U+06F1 
-+ [K_BKQUOTE] > '%'
++ [K_BKQUOTE] > U+0025 
 
 c shift keys
 + [SHIFT K_SLASH] > U+061F
 + [SHIFT K_G] > U+063A
-+ [SHIFT K_W] > 'ڎ'
-+ [SHIFT K_BKQUOTE] > '@'
-+ [SHIFT K_M] > 'ّ'
-+ [SHIFT K_N] > 'ں'
++ [SHIFT K_W] > U+068E 
++ [SHIFT K_BKQUOTE] > U+0040 
++ [SHIFT K_M] > U+0651 
++ [SHIFT K_N] > U+06BA 
 + [SHIFT K_V] > U+0638
 + [SHIFT K_C] > U+062B
 + [SHIFT K_X] > U+0698
@@ -97,14 +96,14 @@ c shift keys
 + [SHIFT K_D] > U+0688
 + [SHIFT K_S] > U+0635
 + [SHIFT K_A] > U+0622
-+ [SHIFT K_RBRKT] > ')'
-+ [SHIFT K_LBRKT] > '('
-+ [SHIFT K_P] > 'ُ'
-+ [SHIFT K_O] > 'ۃ'
-+ [SHIFT K_I] > 'ِ'
++ [SHIFT K_RBRKT] > U+0029 
++ [SHIFT K_LBRKT] > U+0028 
++ [SHIFT K_P] > U+064F 
++ [SHIFT K_O] > U+06C3 
++ [SHIFT K_I] > U+0650 
 + [SHIFT K_T] > U+0679
-+ [SHIFT K_E] > 'ٰ'
-+ [SHIFT K_Q] > 'ݗ'
++ [SHIFT K_E] > U+0670 
++ [SHIFT K_Q] > U+0757 
 + [SHIFT K_EQUAL] > U+002B
 + [SHIFT K_HYPHEN] > U+005F
 + [SHIFT K_0] > U+0030
