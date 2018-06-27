@@ -1,12 +1,13 @@
 <?php 
   $pagename = 'BJ-OjiCree (Kingfisher) Keyboard Help';
   $pagetitle = 'BJ-OjiCree (Kingfisher) Keyboard Help';
-  // Header we will tidy up later  
+  // Header we will tidy up later
   require_once('header.php');
-
-
 ?>
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
 
   <p>Keyboard Copyright (c) 2016-2018 Bill Jancewicz</p>
   <section id='overview'>
