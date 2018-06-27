@@ -1,6 +1,5 @@
-
-https://help.keyman.com/keyboard/rac_brahui/1.0/rac_brahui.php 
-
+<html>
+<head>
 RAChitrali-Brahui Keyboard Help
 Rehmat Aziz Chitrali, 2018-06-03
 Introduction
