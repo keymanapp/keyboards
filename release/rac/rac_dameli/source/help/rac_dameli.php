@@ -1,11 +1,9 @@
-<html>
-<head>
-  <title>The RAChitrali-Dameli Keyman Keyboard Package</title>
-</head>
+<?php
+  $pagename = 'Rachitrali-Dameli Keyboard Help';
+  $pagetitle = 'Rachitrali-Dameli Keyboard Help';
+  require_once('header.php');
+?>
 <body style="max-width:600px;">
-<h1>The RAChitrali-Dameli Keyman Keyboard Package</h1>
-      <P><SPAN class=author_date_hits>Rehmat Aziz Chitrali, 
-      2018-06-03</SPAN></P>
 
 <h2>Introduction</h2>
 <p>This keyboard is designed by Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral, Khyber Pakhtunkhwa of Pakistan for the Dameli language spoken in Domel Valley in the Chitral District of Khyber Pakhtunkhwa province of Pakistan. 
@@ -114,5 +112,4 @@ SOFTWARE.</p></DIV>
 </ul>
 
 </body>
-</html>
 
