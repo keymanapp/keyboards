@@ -1,11 +1,9 @@
-Keyboard Data
--------------
+Rachitrali-Indus-Kohistani Keyboard Data
+----------------------------------------
 
-* Name:           Rachitrali-Indus-Kohistani
-* Copyright:      (C) 2017 Rehmat Aziz Chitrali
-* Version:        1.0
-* Keyman Version: 9.0
-* BCP-47 codes:   mvy-Arab
+
+Copyright:      (C) 2018 Rehmat Aziz Chitrali
+Version:        1.0
 
 Description
 -----------
@@ -20,16 +18,12 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 Links
 -----
 
- * Contact: Mr.Rehmat Aziz Chitrali, Linguist and Researcher <rachitrali@yahoo.com>
+* Contact: Mr.Rehmat Aziz Chitrali, Linguist and Researcher <rachitrali@yahoo.com>
 
 Supported Platforms
 -------------------
-•	Windows
-•	Web
-•	iOS
-•	Android
-
- 
-Todo
-----
-
+ * Windows
+ * macOS
+ * Web
+ * Android
+ * iOS
