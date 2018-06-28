@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1092.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Indus Kohistani</Folder>
@@ -30,70 +32,58 @@
   </Info>
   <Files>
     <File>
-      <Name>..\HISTORY.md</Name>
-      <Description>File HISTORY.md</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\LICENSE.md</Name>
-      <Description>File LICENSE.md</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\rac_indus-kohistani.keyboard_info</Name>
-      <Description>File rac_indus-kohistani.keyboard_info</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.keyboard_info</FileType>
+      <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\rac_indus-kohistani.kpj</Name>
-      <Description>File rac_indus-kohistani.kpj</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
+      <Description>File Scheherazade_README.txt</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kpj</FileType>
+      <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\README.md</Name>
-      <Description>File README.md</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
+      <Description>Font Scheherazade Bold</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>rac_indus-kohistani.ico</Name>
-      <Description>File rac_indus-kohistani.ico</Description>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
+      <Description>Font Scheherazade</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
+      <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>rac_indus-kohistani.kmn</Name>
-      <Description>File rac_indus-kohistani.kmn</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmn</FileType>
-    </File>
-    <File>
-      <Name>rac_indus-kohistani.kps</Name>
-      <Description>File rac_indus-kohistani.kps</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kps</FileType>
-    </File>
-    <File>
-      <Name>rac_indus-kohistani.kvks</Name>
-      <Description>File rac_indus-kohistani.kvks</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvks</FileType>
-    </File>
-    <File>
-      <Name>rac_indus-kohistani-1.0.json</Name>
-      <Description>File rac_indus-kohistani-1.0.json</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.json</FileType>
-    </File>
-    <File>
-      <Name>rac_indus-kohistani-layout.js</Name>
-      <Description>File rac_indus-kohistani-layout.js</Description>
+      <Name>..\build\rac_indus_kohistani.js</Name>
+      <Description>File rac_indus_kohistani.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_indus-kohistani.kvk</Name>
+      <Description>File rac_indus-kohistani.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_indus-kohistani.kmx</Name>
+      <Description>Keyboard Rachitrali-Indus-Kohistani</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -132,6 +122,17 @@
       <FileType>.php</FileType>
     </File>
   </Files>
-  <Keyboards/>
+  <Keyboards>
+    <Keyboard>
+      <Name>Rachitrali-Indus-Kohistani</Name>
+      <ID>rac_indus_kohistani</ID>
+      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="mvy-Arab">Indus Kohistani (Arabic)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
