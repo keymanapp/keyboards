@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1092.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>welcome\RAC.jpg</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Urdu Keyman Keyboard</Folder>
@@ -32,112 +32,10 @@
   </Info>
   <Files>
     <File>
-      <Name>..\HISTORY.md</Name>
-      <Description>File HISTORY.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <Name>..\LICENSE.md</Name>
-      <Description>File LICENSE.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <Name>..\rac_urdu.keyboard_info</Name>
-      <Description>File rac_urdu.keyboard_info</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.keyboard_info</FileType>
-    </File>
-    <File>
-      <Name>..\rac_urdu.kpj</Name>
-      <Description>File rac_urdu.kpj</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kpj</FileType>
-    </File>
-    <File>
-      <Name>..\README.md</Name>
-      <Description>File README.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <Name>FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>rac_urdu.ico</Name>
-      <Description>File rac_urdu.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>rac_urdu.kmn</Name>
-      <Description>File rac_urdu.kmn</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmn</FileType>
-    </File>
-    <File>
-      <Name>rac_urdu.kps</Name>
-      <Description>File rac_urdu.kps</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kps</FileType>
-    </File>
-    <File>
-      <Name>rac_urdu.kvks</Name>
-      <Description>File rac_urdu.kvks</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvks</FileType>
-    </File>
-    <File>
-      <Name>rac_urdu-1.0.json</Name>
-      <Description>File rac_urdu-1.0.json</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.json</FileType>
-    </File>
-    <File>
-      <Name>rac_urdu-layout.js</Name>
-      <Description>File rac_urdu-layout.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>welcome\RAC.jpg</Name>
@@ -169,7 +67,72 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.php</FileType>
     </File>
+    <File>
+      <Name>..\build\rac_urdu.js</Name>
+      <Description>File rac_urdu.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_urdu.kvk</Name>
+      <Description>File rac_urdu.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_urdu.kmx</Name>
+      <Description>Keyboard Rachitrali-Urdu</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
+      <Description>File Scheherazade_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
+      <Description>Font Scheherazade Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
+      <Description>Font Scheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
-  <Keyboards/>
+  <Keyboards>
+    <Keyboard>
+      <Name>Rachitrali-Urdu</Name>
+      <ID>rac_urdu</ID>
+      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ur-Arab">Urdu (Arabic)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
