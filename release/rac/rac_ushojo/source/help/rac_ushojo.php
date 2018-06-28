@@ -1,7 +1,8 @@
-
-https://help.keyman.com/keyboard/rac_ushojo/1.0/rac_ushojo.php 
-
-RAChitrali-Ushojo Keyboard Help
+<?php
+  $pagename = 'RAChitrali-Ushojo Keyboard Help';
+  $pagetitle = 'RAChitrali-Ushojo Keyboard Help';
+  require_once('header.php');
+?>
 Rehmat Aziz Chitrali, 2018-06-03
 Introduction
 <p>This keyboard is designed for the Ushojo language spoken in Pakistan in its standard Perso-Arabic script, as used Pakistan. It is based on phonetic keyboard for Ushojo Language developed by Pakistani linguist, author, researcher, scientist,  Inventor and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Ushojo Keyboard.
