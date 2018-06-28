@@ -1,6 +1,10 @@
 arabic_izza Change History
 ==========================
-
+--------------------
+* Minor improvement to phone layout.
+1.2 (15 June 2018)
+-------------------
+* Improvement to phone layout.
 1.1 (2 June 2018)
 -------------------
 * Revised keyboard for desktop, phone, and tablet
