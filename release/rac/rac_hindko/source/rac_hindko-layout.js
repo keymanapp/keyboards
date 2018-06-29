@@ -632,7 +632,7 @@
             "key": [
               {
                 "id": "K_CONTROL",
-                "text": "*Symbol*",
+                "text": "!@#",
                 "width": "150",
                 "sp": "2",
                 "nextlayer": "default"
