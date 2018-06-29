@@ -4,8 +4,8 @@ Dzongkha (SIL) Keyboard Change History
 1.1
 -----------------
 * Updated to Keyman 10
-* Source migrated to GitHut
+* Source migrated to GitHub
 
 1.0
 -----------------
-* Initial version og keyboard layout
+* Initial version of keyboard layout
