@@ -1,7 +1,8 @@
-____________ Keyboard Change History
+Tohono O'odham Keyboard Change History
 =======================
 
-0.1 (3 July 2017)
+0.1 (2018-06-29)
 -----------------
 
 * First version
+* Only support for mobile platforms
