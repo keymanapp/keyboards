@@ -7,7 +7,7 @@
 <body>
 
 <h2>Font</h2>
-<p>The "SIL Bwe Karen" keyboard is designed to work with the Latin script using the SIL Charis Compact font.</p>
+<p>The "SIL Bwe Karen" keyboard is designed to work with the Latin script using the Charis SIL Compact font.</p>
 
 <h2>Keyboard Layout</h2>
 
