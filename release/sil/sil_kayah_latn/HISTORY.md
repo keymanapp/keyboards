@@ -1,7 +1,7 @@
 # Kayah [Latin] (SIL) Keyboard Change History
 
 ## 1.1 (25 Jun 2018)
-* Source migrated ot GitHub
+* Source migrated to GitHub
 
 ## 1.0 (2014)
 * Initial release
