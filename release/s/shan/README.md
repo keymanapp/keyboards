@@ -1,9 +1,9 @@
 Shan Keyboard
 =====================
 
-Copyright (C) 2017 Sai Ai Wong
+Copyright (C) 2017-2018 Sai Ai Wong
 
-Version 1.0
+Version 1.0.1
 
 An Unicode keyboard for the Shan language (shn). 
 
