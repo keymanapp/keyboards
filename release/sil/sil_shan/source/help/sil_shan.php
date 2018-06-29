@@ -13,6 +13,6 @@
 <h2>Shift</h2>
 <p><img src="sil_shanU_S.png" alt="Shan (SIL) Keyboard layout: Shift"></p>
 <h2>AltGr (Right Alt)</h2>
-<p><img src="sil_shannU_RA.png" alt="Shan (SIL) Keyboard layout: AltGr (Right Alt)"></p>
+<p><img src="sil_shanU_RA.png" alt="Shan (SIL) Keyboard layout: AltGr (Right Alt)"></p>
 <h2>Shift + AltGr (Right Alt)</h2>
-<p><img src="sil_shannU_SRA.png" alt="Shan (SIL) Keyboard layout: Shift + AltGr (Right Alt)"></p>
+<p><img src="sil_shanU_SRA.png" alt="Shan (SIL) Keyboard layout: Shift + AltGr (Right Alt)"></p>
