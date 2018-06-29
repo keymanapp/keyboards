@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Cameroon QWERTY (SIL)';
-  $pagetitle = 'Cameroon QWERTY';
+  $pagename = 'Dzongkha (SIL)';
+  $pagetitle = 'Dzongkha (SIL)';
 	$pagestyle = <<<END
 	samp{font-family: 'DDC Uchen', 'Tibetan Machine Uni', 'Microsoft Himalaya'; color:blue;}
 	kbd {color:black;}
