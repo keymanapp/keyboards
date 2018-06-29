@@ -1,0 +1,47 @@
+﻿store(&VERSION) "9.0"
+store(&NAME) 'Lisu Basic (SIL)'
+c HOTKEY "^+L"
+store(&ETHNOLOGUECODE) 'lis atb lbc lpo nxq'
+store(&COPYRIGHT) '2018 SIL International'
+store(&KEYBOARDVERSION) '0.4'
+store(&BITMAP) 'sil_lisu_basic.ico'
+store(&VISUALKEYBOARD) 'sil_lisu_basic.kvks'
+c store(&LAYOUTFILE) 'sil_lisu_basic-layout.js'
+store(&TARGETS) 'windows macosx linux web'
+
+begin Unicode > use(Main)
+
+store(baseK)    [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P]  \
+    	   	   	[K_Q] [K_W] [K_E] [K_R] [K_T] [K_Y] [K_U] [K_I] [K_O] [K_P]  \
+    	   	   	[SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] [SHIFT K_COLON]  \
+    	   	   	[K_A] [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] [K_COLON] [K_QUOTE]  \
+    	   	   	[SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B]  \
+    	   	   	[K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M] [K_COMMA] [K_PERIOD] [K_EQUAL] [K_HYPHEN] [SHIFT K_HYPHEN]
+store(base)     U+2605 U+25AA U+A4F1 U+A4E4 U+A4D5 U+A4FB U+A4F5 U+A4FE U+02CD U+A4D2 \
+                U+0051 U+A4EA U+A4F0 U+A4E3 U+A4D4 U+A4EC U+A4F4 U+A4F2 U+A4F3 U+A4D1 \
+                U+A4EF U+2022 U+A4F7 U+A4DE U+A4E8 U+A4FA U+A4E9 U+A4D8 U+A4F6 U+A4FD \
+                U+A4EE U+A4E2 U+A4D3 U+A4DD U+A4D6 U+A4E7 U+A4D9 U+A4D7 U+A4E1 U+A4FC U+02BC \
+                U+201C U+201D U+A4DB U+A4E5 U+A4ED \
+                U+A4DC U+A4EB U+A4DA U+A4E6 U+A4D0 U+A4E0 U+A4DF U+A4F9 U+A4F8 \
+                U+A4FF U+02D7 U+02CD
+
+store(banned)   [SHIFT K_M] [SHIFT K_N]
+
+store(digitK)   [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
+store(digit)    U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030
+
+store(commonPunctuationK) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] \
+                          [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] \
+                          [SHIFT K_EQUAL] [K_LBRKT] [SHIFT K_LBRKT] [K_RBRKT] [SHIFT K_RBRKT] [K_BKSLASH] \
+                          [SHIFT K_BKSLASH] [SHIFT K_QUOTE] [SHIFT K_COMMA] [SHIFT K_PERIOD] [K_SLASH] [SHIFT K_SLASH]
+store(commonPunctuation)  U+0060 U+007E U+0021 U+0040 U+0023 U+0024 \
+                          U+0025 U+005E U+0026 U+002A U+0028 U+0029 \
+                          U+002B U+005B U+007B U+005D U+007D U+005C \
+                          U+007C U+0022 U+003C U+003E U+002F U+003F
+
+group(Main) using keys
+
++ any(baseK) > index(base, 1)
++ any(digitK) > index(digit,1)
++ any(commonPunctuationK) > index(commonPunctuation,1)
++ any(banned) > nul beep
