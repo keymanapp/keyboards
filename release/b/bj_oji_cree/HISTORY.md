@@ -21,4 +21,9 @@ bj_oji_cree Change History
 9.0.1 (31 Mar 2016)
 -----------------
 
-* bug fix for initial consonant keys
+* Bug fix for initial consonant keys
+
+9.0.2 (18 Jun 2018)
+-------------------
+
+* Add touch keyboard to package

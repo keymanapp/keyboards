@@ -1,2 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Package><System><KeymanDeveloperVersion>9.0.501.0</KeymanDeveloperVersion><FileVersion>7.0</FileVersion></System><Options><ExecuteProgram></ExecuteProgram><MSIFileName></MSIFileName><MSIOptions></MSIOptions></Options><Buttons><Button><ButtonType>install</ButtonType><Caption>&amp;Install</Caption><URL></URL><Left>0</Left><Top>0</Top></Button><Button><ButtonType>cancel</ButtonType><Caption>Cancel</Caption><URL></URL><Left>0</Left><Top>0</Top></Button><Button><ButtonType>about</ButtonType><Caption>&amp;About...</Caption><URL></URL><Left>0</Left><Top>0</Top></Button></Buttons><Registry/><StartMenu><Folder></Folder><Items/></StartMenu><Info><Name URL="">Sinhala</Name><Copyright URL="">© 2008 Tavultesoft Pty Ltd</Copyright><Version URL="">1.0</Version><Author URL="mailto:support@keyman.com">Tavultesoft Pty Ltd</Author><WebSite URL="http://keyman.com/sinhala/">http://keyman.com/sinhala/</WebSite></Info><Files><File><Name>..\build\kbdsn1.kvk</Name><Description>File kbdsn1.kvk</Description><CopyLocation>0</CopyLocation><FileType>.kvk</FileType></File><File><Name>kbdsn1.bmp</Name><Description>File kbdsn1.bmp</Description><CopyLocation>0</CopyLocation><FileType>.bmp</FileType></File><File><Name>welcome.htm</Name><Description>File welcome.htm</Description><CopyLocation>0</CopyLocation><FileType>.htm</FileType></File><File><Name>..\build\kbdsn1.kmx</Name><Description>Keyboard Sinhala</Description><CopyLocation>0</CopyLocation><FileType>.kmx</FileType></File><File><Name>..\..\..\shared\fonts\sinhala\kandyunicode.ttf</Name><Description>Font KandyUnicode</Description><CopyLocation>0</CopyLocation><FileType>.ttf</FileType></File></Files><Strings/></Package>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Sinhala</Name>
+    <Copyright URL="">© 2008, 2018 Tavultesoft Pty Ltd</Copyright>
+    <Version URL=""></Version>
+    <Author URL="">Tavultesoft Pty Ltd</Author>
+    <WebSite URL="https://help.keyman.com/keyboard/kbdsn1">https://help.keyman.com/keyboard/kbdsn1</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\kbdsn1.kvk</Name>
+      <Description>File kbdsn1.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>kbdsn1.bmp</Name>
+      <Description>File kbdsn1.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\kbdsn1.kmx</Name>
+      <Description>Keyboard Sinhala</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sinhala\kandyunicode.ttf</Name>
+      <Description>Font KandyUnicode</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\kbdsn1.js</Name>
+      <Description>File kbdsn1.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Sinhala</Name>
+      <ID>kbdsn1</ID>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\sinhala\kandyunicode.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sinhala\kandyunicode.ttf</DisplayFont>
+      <Languages>
+        <Language ID="si">Sinhala</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
