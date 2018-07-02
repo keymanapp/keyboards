@@ -735,7 +735,7 @@
                 "nextlayer": "shift"
               },
               {
-                "id": "K_oE2",
+                "id": "U_00A9",
                 "text": "©"
               },
               {
@@ -764,7 +764,7 @@
               },
               {
                 "id": "K_M",
-                "text": "ٽ "
+                "text": "ٽ"
               },
               {
                 "id": "K_COMMA",
@@ -775,7 +775,7 @@
                 "text": "$"
               },
               {
-                "id": "K_SLASH",
+                "id": "U_00AE",
                 "text": "®"
               },
               {
@@ -791,7 +791,7 @@
             "key": [
               {
                 "id": "K_LCONTROL",
-                "text": "ctrl+alt",
+                "text": "ctrl-alt",
                 "width": "200",
                 "sp": "2",
                 "nextlayer": "default"
