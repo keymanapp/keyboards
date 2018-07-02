@@ -5,4 +5,3 @@ Rachitrali-Wakhi Change History
 -----------------
 
 * Created by Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral KPK Pakistan
-
