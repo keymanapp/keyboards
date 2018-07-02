@@ -1,8 +1,8 @@
-<html>
-<head>
-  <title>The Rachitrali-Shina Keyman Keyboard Package</title>
-</head>
-<body style="max-width:600px;">
+<?php 
+$pagetitle = 'Rachitrali-Shina Keyboard Help';
+require_once('header.php');
+?>
+
 <h1>The Rachitrali-Shina Keyman Keyboard Package</h1>
       <P><SPAN class=author_date_hits>Rehmat Aziz Chitrali, 
       2018-06-06</SPAN></P>
@@ -95,7 +95,4 @@ SOFTWARE.</p></DIV>
 <ul>
 <li><a href='http://keymankeyboards.com/iso:scl'>Other keyboards for these languages</a></li>
 </ul>
-
-</body>
-</html>
 
