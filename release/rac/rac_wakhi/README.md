@@ -29,8 +29,7 @@ Links
 -----
 
 	* Web: https://keymanweb.com/#wbl,Keyboard_rac_wakhi
-	* Home: https://keyman.com/keyboard/rac_wakhi
-	* Legacy: http://keymankeyboards.com/?id=727                                      
+	* Home: https://keyman.com/keyboard/rac_wakhi                               
 	* Documentation: https://help.keyman.com/keyboard/rac_wakhi/
 	* Contact: Mr.Rehmat Aziz Chitrali Linguist and Researcher <rachitrali@yahoo.com>
 
