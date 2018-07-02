@@ -1,47 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.804.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1111.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Shan</Name>
-    <Copyright URL="">© Sai Ai Wong</Copyright>
-    <Author URL="mailto:admin@surehope.net">©Sai Ai Wong</Author>
+    <Copyright URL="">© 2017-2018 Sai Ai Wong</Copyright>
+    <Author URL="mailto:admin@surehope.net">Sai Ai Wong</Author>
     <WebSite URL="www.surehope.net">www.surehope.net</WebSite>
   </Info>
   <Files>
@@ -99,6 +76,24 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\build\shan.js</Name>
+      <Description>File shan.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Shan</Name>
+      <ID>shan</ID>
+      <Version>1.0.1</Version>
+      <OSKFont>Padauk.ttf</OSKFont>
+      <DisplayFont>Padauk.ttf</DisplayFont>
+      <Languages>
+        <Language ID="shn-Mymr">Shan</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
