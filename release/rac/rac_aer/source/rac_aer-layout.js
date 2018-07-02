@@ -187,7 +187,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "shift"
               },
               {
                 "id": "K_oE2",
@@ -247,7 +248,7 @@
               {
                 "id": "K_LCONTROL",
                 "text": "ctrl-alt",
-                "width": "130",
+                "width": "200",
                 "sp": "1",
                 "nextlayer": "ctrl-alt"
               },
@@ -260,7 +261,7 @@
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "930"
+                "width": "860"
               },
               {
                 "id": "K_ENTER",
@@ -458,7 +459,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "2",
+                "nextlayer": "default"
               },
               {
                 "id": "K_oE2",
@@ -518,7 +520,7 @@
               {
                 "id": "K_LCONTROL",
                 "text": "ctrl-alt",
-                "width": "130",
+                "width": "200",
                 "sp": "1",
                 "nextlayer": "ctrl-alt"
               },
@@ -531,7 +533,7 @@
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "930"
+                "width": "860"
               },
               {
                 "id": "K_ENTER",
@@ -729,7 +731,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "shift"
               },
               {
                 "id": "K_oE2",
@@ -788,9 +791,9 @@
             "key": [
               {
                 "id": "K_LCONTROL",
-                "text": "default",
-                "width": "130",
-                "sp": "1",
+                "text": "ctrl+alt",
+                "width": "200",
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
@@ -802,7 +805,7 @@
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "930"
+                "width": "860"
               },
               {
                 "id": "K_ENTER",
