@@ -1,11 +1,11 @@
-c (Created by Keyman Developer 6.2.176.0)
+﻿c (Created by Keyman Developer 6.2.176.0)
 c by Jim Brase, SIL Internatinal, March 2006
 
 
 store(&version) '9.0'
 store(&NAME) 'Yupik Cyrillic (SIL)'
 store(&BITMAP) 'sil_yupik_cyrillic.ico'
-store(&COPYRIGHT) 'Copyright � 2006-2018 SIL International'
+store(&COPYRIGHT) 'Copyright © 2006-2018 SIL International'
 store(&ETHNOLOGUECODE) 'ess'
 store(&KEYBOARDVERSION)'2.0'
 store(&TARGETS) 'windows'
@@ -119,7 +119,6 @@ c Lower case characters, single keystroke
 + [NCAPS K_SLASH] > u+044d      c CYRILLIC SMALL LETTER E
 
 c Lower case characters using CAPS + SHIFT, single keystroke
-c I want this to behave like a standard US keyboard, but it insists on generating upper case for the SHIFT + CAPS combination.
 + [CAPS SHIFT K_A] > u+0430          c CYRILLIC SMALL LETTER A       
 + [CAPS SHIFT K_b] > u+0431          c CYRILLIC SMALL LETTER BE      
 + [CAPS SHIFT K_C] > u+0446          c CYRILLIC SMALL LETTER TSE     
