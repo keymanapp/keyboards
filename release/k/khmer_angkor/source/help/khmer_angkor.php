@@ -13,7 +13,7 @@
 
 <h1>Keyboards</h1>
 <p style="text-align: justify;">
-    With the users' pitfall in typing Khmer words in mind, Khmer Angkor focuses on the unification of the character orders and spelling rules. These make Khmer Angkore uniquely different from any other keyboards. Khmer Angkor's keyboard layouts were adopted from NiDA keyboard which is widely used at the present.
+    With the users' pitfall in typing Khmer words in mind, Khmer Angkor focuses on the unification of the character orders and spelling rules. These make Khmer Angkor uniquely different from any other keyboards. Khmer Angkor's keyboard layouts were adopted from NiDA keyboard which is widely used at the present.
 	Here is the keyboard layout:
 </p>
 

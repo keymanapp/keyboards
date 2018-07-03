@@ -17,6 +17,7 @@ Khmer Angkor Change History
 1.0.3 (31 Mar 2018)
 -------------------
 * tweaked package name and author
+* updated by Makara Sok
 
 1.0.2 (21 Mar 2018)
 -------------------
@@ -35,4 +36,4 @@ Khmer Angkor Change History
 
 1.0 (1 Jan 2015)
 -----------------
-* Created by Marc Durdin and updated by Makara Sok
+* Created by Marc Durdin
