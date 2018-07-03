@@ -1,3 +1,9 @@
+<?php
+$pagename = 'RAChitrali-Wakhi Keyboard Help';
+$pagetitle = $pagename;
+require_once('header.php');
+?>
+
 Please add this keyboard at 
 https://help.keyman.com/keyboard/rac_wakhi/1.0/rac_wakhi.php 
 
@@ -19,10 +25,7 @@ Keyboard
 This keyboard layout is designed for the RAChitrali-Wakhi language. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. 
 Keyboard Layout
 The keyboard layout is displayed below in Keyboard graphics.
-Base Version
- 
-
-Shift Version
+<img src="rac_wakhi_layout_for_help.png" alt="Keyboard Layout" style="width:600px;">
  
  
 <h2>How to use the RAChitrali-Wakhi Keyboard? Please read the following:-</h2>
