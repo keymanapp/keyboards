@@ -81,7 +81,7 @@ and selecting the On Screen Keyboard menu item.     </p>
       <H2>License</H2>
       <P>Rachitrali-Dameli Keyman Keyboard is copyright © 2018 Rehmat Aziz Chitrali. 
       	It is distributed under The MIT License (MIT)</P>
-      <DIV class=Note>
+      <div class="note">
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -98,7 +98,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</p></DIV>
+SOFTWARE.</p></div>
 
 
 
@@ -108,7 +108,7 @@ SOFTWARE.</p></DIV>
 <h2>Links</h2>
 <ul>
 <li>Home Page: <a href='http://keymankeyboards.com'>http://keymankeyboards.com/</a></li>
-<li><a href='http://keymankeyboards.com/iso:dml'>Other keyboards for these languages</a></li>
+<li><a href='https://keyman.com/keyboards/languages/dml'>Other keyboards for these languages</a></li>
 </ul>
 
 </body>

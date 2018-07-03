@@ -40,7 +40,7 @@ and selecting the On Screen Keyboard menu item.     </p>
       	<img src="Shift.png" alt="Shift Version" style="width:600px;">
       	
       	<h3>CTRL ALT Version</h3>
-      	<img src="CtrlAlt.png" alt="Shift Version" style="width:600px;">
+      	<img src="CtrlAlt.png" alt="Ctrl-Alt Version" style="width:600px;">
 
 <h2>How to use the Rachitrali-Balti Keyboard? Please read the following:-</h2>
 
@@ -68,7 +68,7 @@ and selecting the On Screen Keyboard menu item.     </p>
       <H2>License</H2>
       <P>Rachitrali-Balti Keyman Keyboard is copyright © 2018 Rehmat Aziz Chitrali. 
       	It is distributed under The MIT License (MIT)</P>
-      <DIV class=Note>
+      <div class="note">
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -94,7 +94,7 @@ SOFTWARE.</p></DIV>
 
 <h2>Links</h2>
 <ul>
-<li><a href='http://keymankeyboards.com/iso:bft'>Other keyboards for these languages</a></li>
+<li><a href='https://keyman.com/keyboards/languages/bft'>Other keyboards for these languages</a></li>
 </ul>
 
 </body>
