@@ -1,8 +1,9 @@
 Rachitrali-Wakhi Keyboard Data
 ------------------------------
 
-Copyright:      (C) 2018 Rehmat Aziz Chitrali
-* Version:        1.0
+Copyright (C) 2018 Rehmat Aziz Chitrali
+
+Version 1.0
 
 Description
 -----------
@@ -28,7 +29,7 @@ Wakhi, including acoustic phonetics, phonology, morphology, syntax, grammar and 
 Links
 -----
 
-	* Contact: Mr.Rehmat Aziz Chitrali Linguist and Researcher <rachitrali@yahoo.com>
+	* Contact: Mr.Rehmat Aziz Chitrali Linguist and Researcher at rachitrali@yahoo.com
 
 Supported Platforms
 -------------------
