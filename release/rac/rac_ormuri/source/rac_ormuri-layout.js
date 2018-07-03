@@ -9,7 +9,8 @@
             "key": [
               {
                 "id": "K_1",
-                "text": "۱"
+                "text": "۱",
+                "nextlayer": "shift"
               },
               {
                 "id": "K_2",
@@ -190,7 +191,7 @@
                 "sp": "1"
               },
               {
-                "id": "K_oE2",
+                "id": "U_066A",
                 "text": "٪"
               },
               {
@@ -451,7 +452,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "2",
+                "nextlayer": "default"
               },
               {
                 "id": "K_oE2",
