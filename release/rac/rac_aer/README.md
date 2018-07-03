@@ -29,10 +29,7 @@ Aer, including acoustic phonetics, phonology, morphology, syntax, grammar and se
 Links
 -----
 
- * Home:    https://keyman.com/
- * Help:    https://help.keyman.com/keyboard/rac_aer
- * Contact: Rehmat Aziz Chitrali 
- * Contact: <rachitrali@yahoo.com>
+ * Contact: Rehmat Aziz Chitrali at rachitrali@yahoo.com
  
 Supported Platforms
 -------------------
