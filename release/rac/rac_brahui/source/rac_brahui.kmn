@@ -1,0 +1,124 @@
+﻿c This keyboard layout is designed by Rehmat Aziz Chitrali for Brahui language spoken in the province of Baluchistan, Pakistan. It includes
+c an on screen keyboard which can be viewed by clicking on the Keyman icon
+c and selecting the On Screen Keyboard menu item.
+store(&VERSION) '9.0'
+store(&NAME) 'Rachitrali-Brahui'
+store(&COPYRIGHT) '© 2018 Rehmat Aziz Chitrali Email: rachitrali@yahoo.com'
+store(&MESSAGE) 'This keyboard was developed by Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa, Pakistan for keyboarding the Brahui language in the Arabic Script. You can use this keyboard with any extended Arabic script Unicode font.'
+store(&VISUALKEYBOARD) 'rac_brahui.kvk'
+store(&BITMAP) 'rac_brahui.ico'
+store(&ETHNOLOGUECODE) 'brh'
+store(&LANGUAGE) 'x0401'
+store(&WINDOWSLANGUAGES) 'x0401'
+store(&TARGETS) 'any'
+store(&KMW_RTL) '1'                   
+store(&LAYOUTFILE) 'rac_brahui-layout.js'
+store(&KEYBOARDVERSION) '1.0'
+begin Unicode > use(main)
+
+
+group(main) using keys
++ [SHIFT K_Q] > U+060F
++ [K_PERIOD] > '۔'
++ [SHIFT K_W] > 'ّ'
++ [SHIFT K_BKSLASH] > '؂'
++ [SHIFT K_F] > '؃'
++ [SHIFT K_LBRKT] > '('
++ [K_oE2] > '\'
++ [K_U] > 'ء'
+c + [CTRL ALT K_D] > 'ﷺ'
++ [SHIFT K_PERIOD] > '%'
++ [SHIFT K_Y] > 'َ'
++ [SHIFT K_R] > U+0691
++ [K_SLASH] > '/'
++ [K_BKSLASH] > 'ؔ'
++ [K_COMMA] > U+060C
++ [K_M] > U+0645
++ [K_N] > U+0646
++ [K_B] > U+0628
++ [K_V] > U+0637
++ [K_C] > U+0686
++ [K_X] > U+0634
++ [K_Z] > U+0632
++ [K_QUOTE] > U+0027
++ [K_COLON] > U+061B
++ [K_L] > U+0644
++ [K_K] > U+06A9
++ [K_J] > U+062C
++ [K_H] > U+062D
++ [K_G] > U+06AF
++ [K_F] > U+0641
++ [K_D] > U+062F
++ [K_S] > U+0633
++ [K_A] > U+0627
++ [K_RBRKT] > ']'
++ [K_LBRKT] > '['
++ [K_P] > U+067E
++ [K_O] > U+06C1
++ [K_I] > U+06CC
++ [K_Y] > U+06D2
++ [K_T] > U+062A
++ [K_R] > U+0631
++ [K_E] > U+0639
++ [K_W] > U+0648
++ [K_Q] > U+0642
++ [K_EQUAL] > U+003D
++ [K_HYPHEN] > U+002D
++ [K_0] > U+06F0
++ [K_9] > U+06F9
++ [K_8] > U+06F8
++ [K_7] > U+06F7
++ [K_6] > U+06F6
++ [K_5] > U+06F5
++ [K_4] > U+06F4
++ [K_3] > U+06F3
++ [K_2] > U+06F2
++ [K_1] > U+06F1 
++ [K_BKQUOTE] > '@'
+
+c shift keys
++ [SHIFT K_SLASH] > U+061F
++ [SHIFT K_G] > U+063A
++ [SHIFT K_BKQUOTE] > U+0678
++ [SHIFT K_COMMA] > 'ٔ'
++ [SHIFT K_M] > '!'
++ [SHIFT K_N] > 'ں'
++ [SHIFT K_B] > 'ً'
++ [SHIFT K_V] > U+0638
++ [SHIFT K_C] > U+062B
++ [SHIFT K_X] > U+0698
++ [SHIFT K_Z] > U+0630
++ [SHIFT K_oE2] > U+007C
++ [SHIFT K_QUOTE] > U+201D
++ [SHIFT K_COLON] >  U+201C
++ [SHIFT K_L] > 'ڷ'
++ [SHIFT K_K] > U+062E
++ [SHIFT K_J] > U+0636
++ [SHIFT K_H] > U+06BE
++ [SHIFT K_D] > U+0688
++ [SHIFT K_S] > U+0635
++ [SHIFT K_A] > U+0622
++ [SHIFT K_RBRKT] > ')'
++ [SHIFT K_P] > 'ُ'
++ [SHIFT K_O] > 'ۃ'
++ [SHIFT K_I] > 'ِ'
++ [SHIFT K_U] > 'ئ'
++ [SHIFT K_T] > U+0679
++ [SHIFT K_E] > 'ٰ'
++ [SHIFT K_EQUAL] > U+002B
++ [SHIFT K_HYPHEN] > U+005F
++ [SHIFT K_0] > U+0030
++ [SHIFT K_9] > U+0039
++ [SHIFT K_8] > U+0038
++ [SHIFT K_7] > U+0037
++ [SHIFT K_6] > U+0036
++ [SHIFT K_5] > U+0035
++ [SHIFT K_4] > U+0034
++ [SHIFT K_3] > U+0033
++ [SHIFT K_2] > U+0032
++ [SHIFT K_1] > U+0031  
+
+c Ctrl+Alt
+c + [CTRL ALT K_C] > U+FDFD
+c + [CTRL ALT K_J] > 'ﷻ'
+

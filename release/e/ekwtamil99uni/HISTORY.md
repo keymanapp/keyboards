@@ -1,6 +1,11 @@
 ekwtamil99uni Change History
 ============================
 
+2.0.1 (18 June 2018)
+--------------------
+
+* Add touch keyboard to package
+
 2.0 (12 May 2015)
 -----------------
 

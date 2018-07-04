@@ -1,0 +1,11 @@
+Yupik Cyrillic (SIL) Keyboard
+Developers Notes
+
+26 June 2018: The current keyboard implementation, which was targeted only for a physical keyboard, makes extensive use of the CAPS and NCAPS keywords. These were used so that the the keyboard's behavior with respect to capslock key would match that of most PC keyboards. However, because CAPS and NCAPS are not allowed in touch keyboards, the use of these keywords make the development of a touch keyboard problematic. The solution would be to add additional rules which don't reference CAPS or NCAPS, and then to add an appropriate platform() statement to each rule. E.g., for the A key, one would need:
+
+    platform('touch') + [K_A] > u+0430                  c CYRILLIC SMALL LETTER A
+    platform('touch') + [SHIFT K_A] > U+0410            c CYRILLIC CAPITAL LETTER A
+    platform('hardware') + [NCAPS K_A] > u+0430         c CYRILLIC SMALL LETTER A
+    platform('hardware') + [NCAPS SHIFT K_A] > U+0410   c CYRILLIC CAPITAL LETTER A
+    platform('hardware') + [CAPS K_A] > U+0410          c CYRILLIC CAPITAL LETTER A
+    platform('hardware') + [CAPS SHIFT K_A] > u+0430    c CYRILLIC SMALL LETTER YA
