@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.982.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0.1</Version>
+    <Version URL=""></Version>
     <Name URL="">Tai Nua</Name>
     <Copyright URL="">©Sai Ai Wong</Copyright>
     <Author URL="mailto:admin@surehope.net">©Sai Ai Wong</Author>
@@ -63,12 +64,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\build\tainua.js</Name>
+      <Description>File tainua.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tai Nua</Name>
       <ID>tainua</ID>
       <Version>1.0.1</Version>
+      <OSKFont>TaiNuaAUnicode.ttf</OSKFont>
+      <DisplayFont>TaiNuaAUnicode.ttf</DisplayFont>
       <Languages>
         <Language ID="tdd-Tale">Tai Nüa</Language>
       </Languages>

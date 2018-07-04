@@ -1,5 +1,8 @@
 Jorai Keyboard Change History
 =======================
+1.0.2 (27 June 2018)
+--------------------
+* Include the correct touch keyboard in the keyboard package
 
 1.0.1 (21 May 2018)
 -----------------
