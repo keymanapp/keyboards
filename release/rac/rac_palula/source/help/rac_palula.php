@@ -1,8 +1,8 @@
-<html>
-<head>
-  <title>The Rachitrali-Palula Keyman Keyboard Package</title>
-</head>
-<body style="max-width:600px;">
+<?php 
+  $pagename = 'Rachitrali-Palula Keyman Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
 <h1>The Rachitrali-Palula Keyman Keyboard Package</h1>
       <P><SPAN class=author_date_hits>Rehmat Aziz Chitrali, 
       2018-06-03</SPAN></P>
@@ -96,7 +96,4 @@ SOFTWARE.</p></DIV>
 <ul>
 <li><a href='http://keymankeyboards.com/iso:phl'>Other keyboards for these languages</a></li>
 </ul>
-
-</body>
-</html>
 
