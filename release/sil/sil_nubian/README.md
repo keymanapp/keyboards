@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Nubian
-* Copyright:      (C) SIL International
-* Version:        1.2
+* Copyright:      (C) 2008-2009, 2016, 2018 SIL International
+* Version:        1.2.1
 * Keyman Version: 9.0
 * BCP-47 codes:   dgl-Copt, fia-Copt, xnz-Copt
 
@@ -17,8 +17,8 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Home:     <http://keymankeyboards.com/>
- * Contact:  <support@keyman.com>
+ * Home:     https://keyman.com/keyboards/sil_nubian
+ * Contact:  https://community.software.sil.org/c/keyman
  
 Supported Platforms
 -------------------
@@ -28,8 +28,3 @@ Supported Platforms
  * Web
  * iOS
  * Android
-
-Todo
-----
-
-* Change "home" url when there is a release on keyman site
