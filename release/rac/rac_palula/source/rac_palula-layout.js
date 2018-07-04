@@ -187,7 +187,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "shift"
               },
               {
                 "id": "K_oE2",
@@ -439,8 +440,10 @@
                 "text": "\""
               },
               {
-                "id": "K_BKSLASH",
-                "text": "\\"
+                "id": "T_new_162",
+                "text": "",
+                "width": "10",
+                "sp": "10"
               }
             ]
           },
@@ -451,7 +454,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "2",
+                "nextlayer": "default"
               },
               {
                 "id": "K_oE2",
@@ -496,12 +500,6 @@
               {
                 "id": "K_SLASH",
                 "text": "؟"
-              },
-              {
-                "id": "T_new_162",
-                "text": "",
-                "width": "10",
-                "sp": "10"
               }
             ]
           },
