@@ -24,10 +24,10 @@ The keyboard layout is displayed below in Keyboard graphics.
       <P>The keyboard layout is displayed below in Keyboard graphics.</P>
       	
       	<h3>Base Version</h3>
-      	<img src="rac_ushojo base.png" alt="Base Version" style="width:600px;">
+      	<img src="Rachitrali-Ushojo Keyboard Base version.png" alt="Base Version" style="width:600px;">
 
       	<h3>Shift Version</h3>
-      	<img src="rac_ushojo shift.png" alt="Shift Version" style="width:600px;">
+      	<img src="Rachitrali-Ushojo Keyboard Shift version.png" alt="Shift Version" style="width:600px;">
       	
       	
  

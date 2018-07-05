@@ -187,7 +187,8 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "1",
+                "nextlayer": "shift"
               },
               {
                 "id": "K_oE2",
@@ -451,10 +452,11 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "160",
-                "sp": "1"
+                "sp": "2",
+                "nextlayer": "default"
               },
               {
-                "id": "K_oE2",
+                "id": "U_00A9",
                 "text": "©"
               },
               {
