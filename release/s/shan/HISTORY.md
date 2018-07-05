@@ -1,5 +1,9 @@
 Shan Change History
 =======================
+1.0.2 (02 Jul 2018)
+-------------------
+* Update Padauk font
+
 1.0.1 (18 Jun 2018)
 -------------------
 * Add touch keyboard to package
