@@ -1,4 +1,8 @@
-
+<?php 
+  $pagename = 'RAChitrali-Ormuri Keyman Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
 https://help.keyman.com/keyboard/rac_ormuri/1.0/rac_ormuri.php 
 
 RAChitrali-Ormuri Keyboard Help
@@ -20,10 +24,10 @@ This keyboard layout is designed for the RAChitrali-Ormuri language. It includes
 Keyboard Layout
 The keyboard layout is displayed below in Keyboard graphics.
 Base Version
- 
+ <img src="rac_ormuri base.png">
 
 Shift Version
- 
+ <img src="rac_ormuri shift.png">
  
 <h2>How to use the RAChitrali-Ormuri Keyboard? Please read the following:-</h2>
 
