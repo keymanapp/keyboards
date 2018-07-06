@@ -85,7 +85,7 @@
       ch[i].onmouseout = function() { this.style.background = ''; return false; }
     }
         
-    ch[i].onclick = function(e) { with(this) { if(attributes['x']) KeymanWeb.KT(attributes['x'].value,0); else if(innerHTML != '&nbsp;') KeymanWeb.KT(innerHTML); else KeymanWeb.KT(''); } if(!e)e=window.event;if(e) e.cancelBubble=true; }
+    ch[i].onclick = function(e) { with(this) { if(attributes['x']) KeymanWeb.KT(attributes['x'].value,0); else if(innerHTML != '&nbsp;') KeymanWeb.KT(innerHTML); else KeymanWeb.KT(''); } if(!e)e=window.event;if(e) e.cancelBubble=true;}
     ch[i].onmousedown = function(e) { KeymanWeb.KSF(); if(!e)e=window.event;if(e) e.cancelBubble=true; }
   }
 
