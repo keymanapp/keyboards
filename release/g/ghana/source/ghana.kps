@@ -1,46 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.895.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <MSIFileName>C:\Data\Keyman\ghana\source\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.2</Version>
+    <Version URL=""></Version>
     <Name URL="">Ghana Keyboard</Name>
-    <Copyright URL="">© 2017 SIL International. This keyboard is distributed under The MIT License (MIT).</Copyright>
+    <Copyright URL="">© 2017-2018 SIL International. This keyboard is distributed under The MIT License (MIT).</Copyright>
   </Info>
   <Files>
     <File>
@@ -67,6 +44,22 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\build\ghana.js</Name>
+      <Description>File ghana.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Ghana</Name>
+      <ID>ghana</ID>
+      <Version>1.2.1</Version>
+      <Languages>
+        <Language ID="hag-Latn">Hanga</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
