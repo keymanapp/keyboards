@@ -1,29 +1,35 @@
-﻿c EuroLatin keyboard for Keyman Desktop 7.0 and KeymanWeb 1.0
+﻿c EuroLatin keyboard for Keyman
 c
 c If you make changes to this keyboard file, please consider sharing them at:
 c http://www.tavultesoft.com/forums/category.php?ForumSourceID=1&SourceID=348
 
-store(&VERSION) '7.0'
-store(&NAME) 'EuroLatin Keyboard'
+store(&version) '10.0'
+store(&NAME) 'EuroLatin (SIL)'
 store(&BITMAP) 'sil_euro_latin.ico'
-store(&COPYRIGHT) 'Copyright (C) 1994-2011 Tavultesoft Pty Ltd'
+store(&COPYRIGHT) 'Copyright (C) 1994-2018 SIL International'
 
-store(&mnemoniclayout) '1'
+$keymanonly: store(&mnemoniclayout) '1'
 
 c KeymanWeb-specific header statements
-
 store(&KMW_HELPFILE) 'sil_euro_latin.html'
 store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
-store(&ETHNOLOGUECODE) 'aae acf act afr aig ale aln als arg ast bah bar bch bda bgx bis bjs bjt ble bos bre bsc bzj bzk cae cat ces chy cim cks cor cos cou cqu crh crs csb csk cwt cym dan deu drt dsb dyo eja eml ems eng epo esi esk ess est esu eus ext fao fap fax ffm fil fin fit fkv fly fra frc frk frp frr frs fry fub fuc fue fuf fuh fui ful fuq fur fuv gag gaz gcf gcl gcr gct geh ghc gla gle glg glv gos gsl gsw gul gyn hat hbs hhr hrv hsb hun hwc icr ikt ipk isl ist ita jam jut kal kea kmv knf kqe krl krx ksh ktu lad lat lav lij lim lit liv lld lmo lou ltz lud mey mfe mfv mhn mkw mlo mlt mwl nap nde nds ndv nld nor oci olo oor pap pbo pbp pcd pdc pdt pfl pis pms pol por prg qub qud que quf qug quh quk qul qup qur qus quw qux quy quz qva qvc qve qvh qvi qvj qvl qvm qvn qvo qvp qvs qvw qvz qwa qwc qwh qws qxa qxc qxh qxl qxn qxo qxp qxr qxt qxu qxw rcf rmc rmf rmn rmo rmw rmy roh rom ron rop ruo rup ruq sag sav scn sco sdc sdn sdt sdz sia sje sjt sju sli slk slv sma sme smj smn sms snf snj spa spq sqi src srm srn sro srp srr ssw stl stq svc swe swg swh sxu szl tch tcs tgh tgl tpi trf tuk tur twd vec vel vep vic vls vmf vot wae wep wln wof wol wym xav xho yor zaa zab zac zad zae zaf zai zam zao zap zaq zar zas zat zav zaw zax zca zch zea zeh zgb zgm zgn zha zhd zhn zlj zln zlq zoo zpa zpb zpc zpd zpe zpf zpg zph zpi zpj zpk zpl zpm zpn zpo zpp zpq zpr zps zpt zpu zpv zpw zpx zpy zpz zqe zrp zsr zte ztg ztl ztm ztn ztp ztq zts ztt ztu ztx zty zul zyb zyg zyj zyn grn nhd gui gun gug gnw nhn nch ncx nci naz nln nhe ngu azz nhq nhk nhx nhp ncl nhm nhy ncj nht nlv nhz nsu npl nhc nhv nhg nuz nhw nhi'
-c store(&TARGETS) 'any windows'
-c store(&KEYBOARDVERSION) '1.1'
-c store(&TARGETS) 'any windows'
+store(&LAYOUTFILE) 'sil_euro_latin.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.8'
+store(&TARGETS) 'any'
 
 begin Unicode > use(Main)
 
-group( Main ) using keys
+group(Main) using keys
+
+store(option_key) ''
 
 store(controls)  "`#'" '"' "^%&*~-_:@.|,=\$"
+$keymanonly: store(controls-ralt) [RALT "`"][RALT SHIFT "#"] [RALT "'"] [RALT SHIFT '"'] [RALT SHIFT "^"] [RALT SHIFT "%"] [RALT SHIFT "&"] [RALT SHIFT "*"] [RALT SHIFT "~"] [RALT "-"] [RALT SHIFT "_"] [RALT SHIFT ":"] [RALT SHIFT "@"] [RALT "."] [RALT SHIFT "|"] [RALT ","] [RALT "="] [RALT "\"] [RALT SHIFT "$"]
+
+
+
+
+if(&platform = 'touch') + any(controls) > use(Touch)
 
 c `
 store(graveO)    'àèìǹòùẁỳÀÈÌǸÒÙẀỲ'
@@ -191,9 +197,14 @@ c The fractions below have been depricated. Use format above.
 '⁷/' + '8' > '⅞'       c depricated - no longer in help/osk
 
 c angled quotes
-
-"<" + "<" > '«'
-">" + ">" > '»'
+c "<" + "<" > '«'
+c ">" + ">" > '»'
+$keymanonly: if(option_key = 'RALT') "<" + [RALT SHIFT '<'] > '«'
+$keymanonly: if(option_key = 'RALT') ">" + [RALT SHIFT '>'] > '»'
+if(option_key = '') "<" + "<" > '«'
+if(option_key = '') ">" + ">" > '»'
+c "<" + "<" > '«'
+c ">" + ">" > '»'
 '«' + '<' > '<<' dk(2)
 '»' + '>' > '>>' dk(2)
 "<" dk(2) + "<" > '<<' dk(2)
@@ -221,6 +232,10 @@ c Rules for the accent character itself (type it twice)
 '\' dk(1) + '\' > '\'  c backslash
 '$' dk(1) + '$' > '$'  c dollar
 
-+ any(controls) > index(controls, 1) dk(1)
+c + any(controls) > index(controls, 1) dk(1)
+if(option_key = '') + any(controls) > index(controls, 2) dk(1)
+$keymanonly: if(option_key = 'RALT') + any(controls-ralt) > index(controls, 2) dk(1)
+
+group(Touch) using keys
 
 c End of keyboard

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-   <title>EuroLatin Keyboard</title>
+   <title>EuroLatin (SIL) Keyboard</title>
    <style type='text/css'>
 	html, body { margin: 0; padding: 0; }
 	#keyboard_europeanlatin_help { text-align: left; background: #f5e3de; font-size: 8pt; font-family: Tahoma; cursor: default; padding: 4px 4px 200px;}
@@ -27,15 +27,15 @@
    <script type='text/javascript'><!--
 
   var KeymanWeb_KeyHoverColor = '#c0c0c0';
-  
+
     /**
      toUni: converts string to Unicode U+xxxx characters for callback to Keyman
     */
     function touni(t)
-    {     
+    {
       var s = '';
       for(var i = 0; i < t.length; i++)
-      {                   
+      {
         var v = t.charCodeAt(i);
         ch = v.toString(16).toUpperCase();
         while(ch.length < 4) ch='0'+ch;
@@ -44,18 +44,18 @@
       }
       return s;
     }
-  
+
   function Eurolatin_KT(a,b)
   {
     var url = 'keyman:insertchars?chars='+encodeURIComponent(touni(a));
 	location.href = url;
   }
-  
+
   function Eurolatin_KSF()
   {
   }
 
-window.onload = function() {	
+window.onload = function() {
   var e=document.body;
   if (typeof e.onselectstart!="undefined") //IE route
     e.onselectstart=function(){return false;};
@@ -65,12 +65,12 @@ window.onload = function() {
     e.style.KhtmlUserSelect="none";
     e.style.UserSelect="none";
   }
-  var ch = e.getElementsByTagName('td');	
-  
+  var ch = e.getElementsByTagName('td');
+
   for(var i = 0; i < ch.length; i++)
-  {               
+  {
     if(ch[i].attributes['o'])
-    {                                                         
+    {
       var sxv = ch[i].attributes['x'].value, so = ch[i].attributes['o'].value, sc = ch[i].attributes['c'].value;
 	  if(ch[i].attributes['p']) var sp = ch[i].attributes['p'].value; else var sp = '';
       // ch[i].title = 'The following combinations are available: '+so;
@@ -88,7 +88,7 @@ window.onload = function() {
 		if(sp != '') sz += '<td>'+chvp+'</td>';
       }
       e2.innerHTML = sx+'</tr>'+sy+'</tr>'+sz+(sz == '' ? '' : '</tr>')+'</table>';
-      
+
       var es = e2.style;
       es.background = '#f3ffdf';
       es.border = 'solid 1px #ad4a28';
@@ -98,7 +98,7 @@ window.onload = function() {
       es.left = (ch[i].offsetLeft+4)+'px';
       es.top = '24px';
       e2.onclick = function() { Eurolatin_KT(); window.event.cancelBubble=true; return false; }
-      
+
       ch[i].kmw_subitems = e2;
       ch[i].appendChild(e2);
       ch[i].onmouseover = function() { this.style.background = KeymanWeb_KeyHoverColor; this.kmw_subitems.style.left=this.offsetLeft+4+'px'; this.kmw_subitems.style.top=(this.offsetParent.offsetTop+this.offsetTop+this.offsetHeight-2)+'px'; this.kmw_subitems.style.display = 'block'; return false; }
@@ -109,28 +109,28 @@ window.onload = function() {
       ch[i].onmouseover = function() { this.style.background = KeymanWeb_KeyHoverColor; return false; }
       ch[i].onmouseout = function() { this.style.background = ''; return false; }
     }
-        
+
     ch[i].onclick = function(e) { with(this) { if(attributes['x']) Eurolatin_KT(attributes['x'].value,0); else if(innerHTML != '&nbsp;') Eurolatin_KT(innerHTML); else Eurolatin_KT(''); } if(!e)e=window.event;if(e) e.cancelBubble=true; }
     ch[i].onmousedown = function(e) { Eurolatin_KSF(); if(!e)e=window.event;if(e) e.cancelBubble=true; }
   }
 
   //e.onclick=function() { Eurolatin_KT(''); return false; }
   //e.onmousedown=function() { Eurolatin_KSF(); return false; }
-  
+
   e = document.getElementById('keyboard_eurolatin_tabs');
   e2 = document.getElementById('keyboard_eurolatin_tabsheets');
   var ch = [document.getElementById('keyboard_eurolatin_letters_tab'), document.getElementById('keyboard_eurolatin_symbols_tab')];
   var ch2 = [document.getElementById('keyboard_eurolatin_letters_tabsheet'), document.getElementById('keyboard_eurolatin_symbols_tabsheet')];
-  for(var i = 0; i < ch.length; i++) 
-	  ch[i].onclick = (function(i) { return function(e) 
-	  { 
+  for(var i = 0; i < ch.length; i++)
+	  ch[i].onclick = (function(i) { return function(e)
+	  {
 	    for(var j = 0; j < ch.length; j++)
 	    {
 		  ch[j].className = "keyboard_eurolatin_tab" + (i == j ? "_selected" : "");
 		  ch2[j].className = "keyboard_eurolatin_tabsheet" + (i == j ? "_selected" : "");
 		}
       }
-    })(i); 
+    })(i);
 }
    --></script>
 </head>
@@ -147,8 +147,8 @@ window.onload = function() {
 
 <div id='keyboard_eurolatin_tabsheets'>
 <div class='keyboard_eurolatin_tabsheet_selected' id='keyboard_eurolatin_letters_tabsheet'>
-<table> 
-<tr class='key'> 
+<table>
+<tr class='key'>
  <th class='title' rowspan='2'>Accent<br />Marks</th>
  <th class='prompt'>Type</th><th>`</th><th>#</th><th>'</th><th>"</th><th>^</th><th>%</th><th>&amp;</th><th>*</th><th>~</th><th>-</th><th>_</th><th>:</th><th>@</th><th>.</th><th>|</th><th>,</th>
 </tr>
@@ -160,7 +160,7 @@ window.onload = function() {
   <td x='"' c="ou" o="őű" p="ŐŰ">˝</td>
   <td x="^" c="aceghijosuwyz" o="âĉêĝĥîĵôŝûŵŷẑ" p="ÂĈÊĜĤÎĴÔŜÛŴŶẐ">ˆ</td>
   <td x="%" c="acdeghijklnorstuxz" o="ǎčďěǧȟǐǰǩľňǒřšťǔǯž" p="ǍČĎĚǦȞǏ ǨĽŇǑŘŠŤǓǮŽ">ˇ</td>
-  <td x="&" c="aeioru" o="ȃȇȋȏȓȗ" p="ȂȆȊȎȒȖ">&nbsp;̑</td> 
+  <td x="&" c="aeioru" o="ȃȇȋȏȓȗ" p="ȂȆȊȎȒȖ">&nbsp;̑</td>
   <td x="*" c="aeghiou" o="ăĕğḫĭŏŭ" p="ĂĔĞḪĬŎŬ">˘</td>
   <td x="~" c="aegilnouvy" o="ãẽgĩɫñõũṽỹ" p="ÃẼGĨⱢÑÕŨṼỸ">˜</td>
   <td x="-" c="abdeghijlortuyz" o="āƀđēḡħīɉłōɍŧūȳƶ" p="ĀɃĐĒḠĦĪɈŁŌɌŦŪȲƵ">ˉ</td>
@@ -229,10 +229,10 @@ window.onload = function() {
   <td>Ø</td>
 </tr>
 
-<tr class='gap'><th colspan='16'></th></tr> 
-  
+<tr class='gap'><th colspan='16'></th></tr>
+
 <tr class='key'>
-  <th class='title' rowspan='3'>Digraphs</th>  
+  <th class='title' rowspan='3'>Digraphs</th>
   <th class='prompt'>Type</th><th>a\e</th><th colspan='2'>d\z</th><th>f\i</th><th>f\l</th><th>i\j</th><th colspan='2'>l\j</th><th colspan='2'>n\j</th><th>o\e</th><th>o\i</th></tr>
 <tr class='out'>
   <th class='prompt'>Result</th>
@@ -270,8 +270,8 @@ window.onload = function() {
 
 
 <div class='keyboard_eurolatin_tabsheet' id='keyboard_eurolatin_symbols_tabsheet'>
- 
-<table> 
+
+<table>
 <tr class='key'>
   <th class='title' rowspan='2'>Punctuation<br />and Symbols</th>
   <th class='prompt'>Type</th><th>\?</th><th>\!</th><th>&lt;&lt;</th><th>&gt;&gt;</th><th>\f</th><th>\m</th><th>\P</th><th>\S</th><th>\T</th><th>\t</th><th>\|</th><th>\c</th><th>\p</th><th>\r</th><th>t\m</th></tr>
@@ -296,8 +296,8 @@ window.onload = function() {
 <tr class='key'>
   <th class='title' rowspan='2'><br /></th>
   <th class='prompt'>Type</th><th>n\o</th><th>\1</th><th>\2</th><th>\3</th><th>\4</th><th>\5</th><th>\6</th><th>\7</th><th>\8</th><th>\9</th><th>\0</th></tr>
-  <tr class='out'><th class='prompt'>Result</th><td>№</td><td>¹</td><td>²</td><td>³</td><td>⁴</td><td>⁵</td><td>⁶</td><td>⁷</td><td>⁸</td><td>⁹</td><td>⁰</td></tr>  
-  
+  <tr class='out'><th class='prompt'>Result</th><td>№</td><td>¹</td><td>²</td><td>³</td><td>⁴</td><td>⁵</td><td>⁶</td><td>⁷</td><td>⁸</td><td>⁹</td><td>⁰</td></tr>
+
 <tr class='gap'><th colspan='16'></th></tr>
 
 <tr class='key'>
@@ -311,14 +311,14 @@ window.onload = function() {
   <th class='title' rowspan='2'>Currency<br />Symbols</th>
   <th class='prompt'>Type <span class='elkey'>$</span> then</th><th>c</th><th>e</th><th>f</th><th>h</th><th>l</th><th>n</th><th>N</th><th>p</th><th>P</th><th>r</th><th>R</th><th>w</th><th>y</th></tr>
   <tr class='out'><th class='prompt'>Result</th><td>¢</td><td>€</td><td>₱</td><td>₴</td><td>₤</td><td>₪</td><td>₦</td><td>£</td><td>₧</td><td>₨</td><td style='font-family:Symbola, "DejaVu Serif"'>₹</td><td>₩</td><td>¥</td></tr>
-  
+
 <tr class='gap'><th colspan='16'></th></tr>
 
 <tr class='key'>
   <th class='title' rowspan='2'><br /></th>
   <th class='prompt'>Type <span class='elkey'>$</span> then</th><th>C</th><th>d</th><th>D</th><th>F</th><th>g</th><th>G</th><th>k</th><th>K</th><th>t</th></tr>
 <tr class='out'><th class='prompt'>Result</th><td>¤</td><td>₫</td><td>₯</td><td>₣</td><td>₰</td><td>₲</td><td>₡</td><td>₭</td><td>₮</td></tr>
-  
+
 </table>
 </div>
 </div>
