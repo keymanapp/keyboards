@@ -1,4 +1,4 @@
-Dinka Basic (DLIA) Keyboard
+Thuɔŋjäŋ Keyboard
 =====================
 
 © 2015-2018 Enabling Languages
