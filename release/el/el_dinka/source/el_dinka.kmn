@@ -1,8 +1,8 @@
-c -------------------------------------------------------------
+﻿c -------------------------------------------------------------
 c  el_dinka.kmn
 c (Version 3.0)
 c
-c Keyboard layout for Dinka (Thuɔŋjäŋ), a language of South Sudan
+c Keyboard layout for Dinka (ThuÉ”Å‹jÃ¤Å‹), a language of South Sudan
 c
 c Original Windows version developed and released under MIT license by
 c State Library Victoria.
@@ -14,9 +14,9 @@ c
 c -------------------------------------------------------------
 
 store(&version) "10.0"
-store(&NAME) 'Dinka'
+store(&NAME) 'Thuɔŋjäŋ'
 store(&KEYBOARDVERSION) '3.0'
-store(&COPYRIGHT) '© 2005-2018 Enabling Languages'
+store(&COPYRIGHT) '© 2015-2018 Enabling Languages'
 store(&mnemoniclayout) "0"
 store(&MESSAGE) 'Keyboard layout for Dinka (Thuɔŋjäŋ)'
 store(&TARGETS) 'any'
@@ -97,11 +97,6 @@ c ------------------------------------------------
 c ADD additional stores here:
 c ------------------------------------------------
 
-c XXXX
-c TODO: remove \ |
-c XXXX
-
-c fFqQsSxXzZ  ©€£  –—‘’“”
 store(additionalChars) U+0066 U+0046 U+0071 U+0051 U+0073 U+0053 U+0078 U+0058 U+007A U+005A \
                        U+00A9 U+20AC U+00A3 \
                        U+2013 U+2014 U+2018 U+2019 U+201C U+201D U+2026
@@ -120,11 +115,15 @@ c Diaeresis  > U+0308
 store(diaeresisKey)  [K_COLON] [SHIFT K_COLON] [T_DIAERESIS]
 store(diaeresisBase) U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006F U+004F
 store(diaeresisChar) U+00E4 U+00C4 U+00EB U+00CB U+00EF U+00CF U+00F6 U+00D6
+store(diaeresisTouch) [T_00E4] [T_00C4] [T_00EB] [T_00CB] [T_00EF] [T_00CF] [T_00F6] [T_00D6]
+store(diaeresisLongTouch) [T_00E4_LONG] [T_00C4_LONG] [T_00EB_LONG] [T_00CB_LONG] [T_00EF_LONG] [T_00CF_LONG] [T_00F6_LONG] [T_00D6_LONG]
 store(diaeresisExtendedBase) U+025B U+0190 U+0254 U+0186
 store(diaeresisAll) outs(diaeresisChar) U+0308
 store(nonDiaeresisFinal) U+0069 U+0049 U+0075 U+0055
+store(notDiaeresis) U+0062 U+0063 U+0064 U+0066 U+0067 U+0068 U+006A U+006B U+006C U+006D U+006E U+0070 U+0071 U+0072 U+0073 U+0074 U+0075 U+0076 U+0077 U+0078 U+0079 U+007A U+0042 U+0043 U+0044 U+0046 U+0047 U+0048 U+004A U+004B U+004C U+004D U+004E U+0050 U+0051 U+0052 U+0053 U+0054 U+0055 U+0056 U+0057 U+0058 U+0059 U+005A U+014B U+014A U+0263 U+0194 
 
-store(altKeys) outs(additionalKeys) outs(additionalTouch) [T_DIAERESIS]  [T_OPEN_E_0308] [SHIFT T_OPEN_E_0308] [T_OPEN_O_0308] [SHIFT T_OPEN_O_0308]
+
+store(altKeys) outs(additionalKeys) outs(additionalTouch) [T_DIAERESIS]  [T_OPEN_E_0308] [SHIFT T_OPEN_E_0308] [T_OPEN_O_0308] [SHIFT T_OPEN_O_0308] outs(diaeresisTouch) outs(diaeresisLongTouch) [T_OPEN_E_0308_LONG] [SHIFT T_OPEN_E_0308_LONG] [T_OPEN_O_0308_LONG] [SHIFT T_OPEN_O_0308_LONG] [K_BKSP] [SHIFT K_BKSP] [LCTRL K_BKSP] [RCTRL K_BKSP]
 
 group(constraints) using keys
 c + [CTRL K_LBRKT] > set(nfc='0') save(nfc)
@@ -132,7 +131,8 @@ c + [CTRL K_RBRKT] > set(nfc='1') save(nfc)
 
 any(diaeresisChar) + any(diaeresisKey)  > context
 U+0308 + any(diaeresisKey)  > context
-notany(diaeresisAll) + any(diaeresisKey)  > context
+c notany(diaeresisAll) + any(diaeresisKey)  > context
+any(notDiaeresis) + any(diaeresisKey) > context
 
 + any(digitKeysPad) > use(main)
 + any(altKeys) > use(main)
@@ -155,10 +155,17 @@ c if(nfc = "1") any(diaeresisBase) + any(diaeresisKey) >  index(diaeresisChar,2)
 any(diaeresisBase) + any(diaeresisKey) >  index(diaeresisChar,1)
 any(diaeresisExtendedBase) + any(diaeresisKey) > context U+0308
 
+platform("touch") + any(diaeresisTouch) > index(diaeresisChar,2)
+platform("touch") + any(diaeresisLongTouch) > index(diaeresisChar,2) index(diaeresisChar,2)
 platform("touch") + [T_OPEN_E_0308] > U+025B U+0308
 platform("touch") + [SHIFT T_OPEN_E_0308] > U+0190 U+0308
 platform("touch") + [T_OPEN_O_0308] > U+0254 U+0308
 platform("touch") + [SHIFT T_OPEN_O_0308] > U+0186 U+0308
+
+platform("touch") + [T_OPEN_E_0308_LONG] > U+025B U+0308 U+025B U+0308
+platform("touch") + [SHIFT T_OPEN_E_0308_LONG] > U+0190 U+0308 U+0190 U+0308
+platform("touch") + [T_OPEN_O_0308_LONG] > U+0254 U+0308 U+0254 U+0308
+platform("touch") + [SHIFT T_OPEN_O_0308_LONG] > U+0186 U+0308 U+0186 U+0308
 
 
 
@@ -214,7 +221,12 @@ any(diaeresisExtendedBase) U+0308 + [SHIFT K_BKSP] > context(1)
 any(diaeresisChar) any(diaeresisChar) + [SHIFT K_BKSP] > index(diaeresisBase,1) index(diaeresisBase,2)
 any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [SHIFT K_BKSP] > context(1) context(3)
 
-any(diaeresisChar) + [CTRL K_BKSP] > nul
-any(diaeresisExtendedBase) U+0308 + [CTRL K_BKSP] > nul
-any(diaeresisChar) any(diaeresisChar) + [CTRL K_BKSP] > nul
-any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [CTRL K_BKSP] > nul
+any(diaeresisChar) + [LCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 + [LCTRL K_BKSP] > nul
+any(diaeresisChar) any(diaeresisChar) + [LCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [LCTRL K_BKSP] > nul
+
+any(diaeresisChar) + [RCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 + [RCTRL K_BKSP] > nul
+any(diaeresisChar) any(diaeresisChar) + [RCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [RCTRL K_BKSP] > nul

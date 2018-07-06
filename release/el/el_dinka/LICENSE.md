@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia
+Copyright (c) 2015-2018 Enabling Languages
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
