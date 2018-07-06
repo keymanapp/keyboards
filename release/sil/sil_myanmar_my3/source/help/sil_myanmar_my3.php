@@ -1,106 +1,11 @@
-<!DOCTYPE html>
-<html lang="my">
-<head>
-  <title lang="en">Myanmar3 Keyboard</title>
-  <meta charset="utf-8">
-
-<style type="text/css">
-body {font-family:Padauk,sans-serif;}
-#container
-{
-	margin: 0 auto;
-	width: 900px;
-	background:#fff;
-}
-
-#header
-{
-	background:#ccc;
-	padding: 20px;
-}
-
-#header h2 {
-margin: 0;
-text-align: center;
-}
-
-#navigation
-{
-	float: left;
-	width: 900px;
-	background:#333;
-}
-
-#navigation ul
-{
-	margin: 0;
-	padding: 0;
-}
-
-#navigation ul li
-{
-	font-family:Padauk,sans-serif;
-	list-style-type: none;
-	display: inline;
-}
-
-#navigation li a
-{
-	display: block;
-	float: left;
-	padding: 5px 10px;
-	color:#fff;
-	text-decoration: none;
-	border-right: 1px solid#fff;
-}
-
-#navigation li a:hover { background:#383; }
-
-#content
-{
-	clear: left;
-	padding: 20px;
-}
-
-#content h3
-{
-	color:#000;
-	margin: 0 0 .5em;
-}
-
-#footer
-{
-	background:#ccc;
-	text-align: right;
-	padding: 20px;
-	height: 1%;
-}
-
-img {width: 100%; max-width:760px;}
-
-</style>
+<?php
+  $pagename = 'Myanmar3 လက်ကွက် အသုံးပြုပုံ';
+  $pagetitle = 'Myanmar3 လက်ကွက် အသုံးပြုပုံ';
+  require_once('header.php');
+?>
 
 
 
-</head>
-<body>
-<div id="container">
-	<div id="header">
-		<h2 lang="en">
-			Myanmar3 Keyboard
-		</h2>
-	</div>
-	<div id="navigation">
-		<ul>
-			<li><a href="#top">မူလစာမျက်နှာ</a></li>
-			<li><a href="#1">လက်ကွက်ဇယား</a></li>
-			<li><a href="#2">စာလုံးဆင့်ရိုက်ပုံ</a></li>
-			<li><a href="#3">ကွဲပြားစာလုံးများ</a></li>
-			<li><a href="#4">နမူနာရိုက်နည်း</a></li>
-			<li><a href="#footer">ဆက်သွယ်ရန်</a></li>
-		</ul>
-	</div>
-	<div id="content">
 		<p>
 				မြန်မာလက်ကွက် ဇယားသည် ဝင်းလက်ကွက် နှင့် အများအားဖြင့် ဆင်တူပါသည်။ မြန်မာယူနီကုဒ်သည် အက္ခရာတစ်ခုမှ ပုံသဏ္ဌာန် ကွဲပြားသော စာလုံးပုံ အမျိုးမျိုးကို ခလုတ်တခုတည်း (ကုဒ်တစ်ခုတည်း ) ဖြင့်တည်ဆောက်ထားပါသည်။
 				ဆိုလိုသည်မှာ ရရစ် ( အကြီး အသေး အပြတ် ) အမျိုးမျိုး မရှိပါ။ ကီးဘုတ်ပေါ်တွင် ရရစ်တခုသာ တွေ့ရပါမည်။	ထို့အတူ တစ်ချောင်းငင် နှစ်ချောင်းငင် အရှည်ကိုလည်း တွေ့ရမည်မဟုတ်ပါ။ စာလုံးပေါင်း သတ်ပုံအတိုင်း ရိုက်နှိပ်သွားပါက လိုချင်သော စာလုံးပုံစံကို အလိုလျောက် ပြောင်းလဲ ပေးပါလိမ့်မည်။
@@ -312,11 +217,7 @@ img {width: 100%; max-width:760px;}
 				</table>
 				<br />
 				<p align="right"><a href="#top">^^အပေါ်သို့</a></p>
-	</div>
-	<div id="footer">
-		original version: suntun. Updates: andjc.
-	</div>
-</div>
 
-</body>
-</html>
+    <p>ဤအချက်အလက်များအား suntun မူလ စာပြုစုပြီး andjc မှ ဖြည့်စွက်ထားသည်။<br/>
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0;width: 80px;" src="80x15.png" /></a><br />ဤအချက်အလက် ပြုစုမှုကို <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 International License</a> ဖြင့် စရင်းသွင်းပါသည်။
+    </p>
