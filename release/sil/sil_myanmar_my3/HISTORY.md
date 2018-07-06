@@ -1,7 +1,7 @@
 Myanmar3 (SIL) Keyboard Change History
 =======================
 
-1.0 (1 Jan 2015)
------------------
+# 1.5 (5 JUL 2018)
 
-* Created by you
+* Sourrce migrated to GitHub
+* OSK added
