@@ -246,12 +246,6 @@ style='font-size:26.0pt;font-family:"Book Antiqua",serif'>&nbsp;</span></p>
 SutonnyMJ'>&nbsp;</span></b></p>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-US
-style='font-size:19.0pt;font-family:"Arial Narrow",sans-serif'>© No part of
-this book may be reproduced by photocopying, typing, printing or using any other
-device to serve any commercial purpose without the prior written permission of
-the <b><span style='color:#00B050'>www.ribeng.net</span></b></span></p>
-
-<p class=MsoNormal style='text-align:justify'><span lang=EN-US
 style='font-size:19.0pt;font-family:"Arial Narrow",sans-serif'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-US
