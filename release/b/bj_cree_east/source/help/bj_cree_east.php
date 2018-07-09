@@ -1,13 +1,8 @@
 <?php
   $pagename = 'BJCreeUNI (East) Keyboard Help';
   $pagetitle = 'BJCreeUNI (East) Keyboard Help';
-  // Header we will tidy up later
   require_once('header.php');
 ?>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
 
   <p>Keyboard Copyright &#169; 2016-2018 Bill Jancewicz</p>
   <section id='overview'>
