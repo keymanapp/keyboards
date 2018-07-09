@@ -4,7 +4,6 @@
   require_once('header.php');
 ?>
 
-<body style="max-width:600px;">
 <h2>Introduction</h2>
 <p>This keyboard is designed by Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral, Khyber Pakhtunkhwa of Pakistan for the Brahui language spoken in the Province  of Balochistan, Pakistan. It is based on phonetic keyboard for Brahui Language 
 developed by Pakistani linguist, author, researcher and Software Developer Mr.Rehmat Aziz Chitrali for 
@@ -106,6 +105,5 @@ SOFTWARE.</p></div>
 <li><a href='https://keyman.com/keyboards/languages/brh'>Other keyboards for these languages</a></li>
 </ul>
 
-</body>
 
 
