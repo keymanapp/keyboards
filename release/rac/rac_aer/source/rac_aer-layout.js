@@ -235,7 +235,8 @@
             "key": [
               {
                 "id": "K_1",
-                "text": "1"
+                "text": "1",
+                "width": ""
               },
               {
                 "id": "K_2",
@@ -362,7 +363,7 @@
               },
               {
                 "id": "K_BKSLASH",
-                "text": " ۿ"
+                "text": "ۿ"
               }
             ]
           },
@@ -420,7 +421,6 @@
                 "id": "K_LCONTROL",
                 "text": "ctrl-alt",
                 "width": "150",
-                "sp": "1",
                 "nextlayer": "ctrl-alt"
               },
               {
