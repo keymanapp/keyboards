@@ -1,73 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.804.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Shan</Name>
-    <Copyright URL="">© Sai Ai Wong</Copyright>
-    <Author URL="mailto:admin@surehope.net">©Sai Ai Wong</Author>
+    <Copyright URL="">© 2017-2018 Sai Ai Wong</Copyright>
+    <Author URL="mailto:admin@surehope.net">Sai Ai Wong</Author>
     <WebSite URL="www.surehope.net">www.surehope.net</WebSite>
   </Info>
   <Files>
     <File>
-      <Name>Padauk.ttf</Name>
-      <Description>Font Padauk</Description>
+      <Name>..\build\shan.kvk</Name>
+      <Description>File shan.kvk</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.kvk</FileType>
     </File>
     <File>
       <Name>..\build\shan.kmx</Name>
       <Description>Keyboard Shan</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>shan.ico</Name>
-      <Description>File shan.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>welcome\welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>welcome\shan-1.jpg</Name>
@@ -94,11 +59,77 @@
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>shan.kvk</Name>
-      <Description>File shan.kvk</Description>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\shan.js</Name>
+      <Description>File shan.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\Padauk_README.txt</Name>
+      <Description>File Padauk_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Bold.ttf</Name>
+      <Description>Font Padauk Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Bold.ttf</Name>
+      <Description>Font Padauk Book Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\PadaukBook-Regular.ttf</Name>
+      <Description>Font Padauk Book</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</Name>
+      <Description>Font Padauk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Shan</Name>
+      <ID>shan</ID>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="shn-Mymr">Shan (Myanmar)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
