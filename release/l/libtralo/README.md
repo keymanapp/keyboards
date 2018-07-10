@@ -1,10 +1,10 @@
 LIBTRALO Keyboard
 =====================
 
-Copyright (C) 2008-2017 SIL International
+Copyright (C) 2008-2018 SIL International
 Copyright (C) 1999-2003 Mark A. Konrad
 
-Version 1.5
+Version 1.6
 
 __DESCRIPTION__
 
@@ -12,7 +12,5 @@ The LIBTRALO (Liberian Translation & Literacy Organization) keyboard was designe
 
 Supported Platforms
 -------------------
- * Windows
- * macOS
- * Web
+ * all
  
