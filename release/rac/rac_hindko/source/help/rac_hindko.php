@@ -46,7 +46,7 @@ and selecting the On Screen Keyboard menu item.     </p>
       <H2>Keyboard Layout</H2>
       <P>The keyboard layout is displayed below in Keyboard graphics.</P>
 
-<p><img src='keyboard_layout.png' alt='Keyboard Layout' width='100%'></p>
+<p><img src='rac_hindko_layout.png' alt='Keyboard Layout' width='100%'></p>
 
 <h2>How to use the Hindko Keyboard? Please read the following:-</h2>
 
