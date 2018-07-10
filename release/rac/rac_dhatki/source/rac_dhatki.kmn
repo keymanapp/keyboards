@@ -1,4 +1,4 @@
-﻿c rac_dhatki.kmn
+c rac_dhatki.kmn
 c Author:   Rehmat Aziz Chitrali
 c Date:     8-JUNE 2018
 c Original Creation Date:     7-APR-2016
@@ -7,7 +7,6 @@ store(&NAME) 'Rachitrali-Dhatki'
 store(&COPYRIGHT) '© 2018 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com'
 store(&MESSAGE) 'Read Dhatki, Write Dhatki and Speak Dhatki -- Message from Rehmat Aziz Chitrali'
 store(&ETHNOLOGUECODE) 'mki'
-store(&WINDOWSLANGUAGES) 'x0401'
 store(&BITMAP) 'rac_dhatki.ico'
 c store(&TARGETS) 'windows macosx linux'
 store(&VISUALKEYBOARD) 'rac_dhatki.kvks'
@@ -20,6 +19,8 @@ begin Unicode > use(main)
 
 
 group(main) using keys
++ [SHIFT K_LBRKT] > '"'
++ [SHIFT K_Q] > ':'
 + [SHIFT K_L] > 'ڍ'
 + [CTRL ALT K_PERIOD] > 'ࣿ'
 + [CTRL ALT K_COMMA] > '"'
@@ -124,7 +125,6 @@ group(main) using keys
 + [SHIFT K_A] > 'آ'
 + [SHIFT K_BKSLASH] > 'ڪ'
 + [SHIFT K_RBRKT] > 'ٺ'
-+ [SHIFT K_LBRKT] > 'ڀ'
 + [SHIFT K_P] > 'ُ'
 + [SHIFT K_O] > 'ۃ'
 + [SHIFT K_I] > 'ِ'
@@ -134,7 +134,6 @@ group(main) using keys
 + [SHIFT K_R] > 'ڑ'
 + [SHIFT K_E] > 'ٔ'
 + [SHIFT K_W] > 'ّ'
-+ [SHIFT K_Q] > 'ڌ'
 + [K_EQUAL] > '='
 + [K_HYPHEN] > '-'
 + [K_0] > '۰'
@@ -152,11 +151,11 @@ group(main) using keys
 + [SHIFT K_HYPHEN] > 'ءُ'
 + [SHIFT K_0] > 'ءٌ'
 + [SHIFT K_9] > 'ۡ'
-+ [SHIFT K_8] > 'ڪ'
++ [SHIFT K_8] > '*'
 + [SHIFT K_7] > 'ٻ'
-+ [SHIFT K_6] > 'ڻ'
++ [SHIFT K_6] > '^'
 + [SHIFT K_5] > '۾'
-+ [SHIFT K_4] > 'ڊ'
++ [SHIFT K_4] > '$'
 + [SHIFT K_3] > 'ڙ'
 + [SHIFT K_2] > '@'
 + [SHIFT K_BKQUOTE] > 'ڇ'
