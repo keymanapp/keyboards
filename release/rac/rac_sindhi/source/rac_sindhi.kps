@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1092.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <GraphicFile>help\RAC.jpg</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Sindhi</Folder>
@@ -24,48 +25,6 @@
     <WebSite URL="https://keyman.com/keyboards/rac_sindhi">https://keyman.com/keyboards/rac_sindhi</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
     <File>
       <Name>welcome\rac_sindhi base.png</Name>
       <Description>File rac_sindhi base.png</Description>
@@ -97,12 +56,75 @@
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>help\rac_sindhi.php</Name>
-      <Description>File rac_sindhi.php</Description>
+      <Name>..\build\rac_sindhi.js</Name>
+      <Description>File rac_sindhi.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.php</FileType>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_sindhi.kvk</Name>
+      <Description>File rac_sindhi.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_sindhi.kmx</Name>
+      <Description>Keyboard Rachitrali-Sindhi</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
+      <Description>File Scheherazade_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
+      <Description>Font Scheherazade Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
+      <Description>Font Scheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
-  <Keyboards/>
+  <Keyboards>
+    <Keyboard>
+      <Name>Rachitrali-Sindhi</Name>
+      <ID>rac_sindhi</ID>
+      <Version>1.0</Version>
+      <Languages>
+        <Language ID="sd-Sind">Sindhi (Khudawadi)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
