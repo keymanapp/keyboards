@@ -71,15 +71,9 @@ c ================================================================
 c STORES
 c ================================================================
 
-c initial consonant keys (The Î is U+14D1 which is the sh consonant)
-c (The ÿ is U+15AE which is the th consonant that looks like y)
-
-c Remove Î and ÿ from store since it's not on a keyboard (5 July 2018)
+c initial consonant keys which can be typed on keyboard
 store(ConsKey)    "ptkcmnsyf"
 store(CapConsKey) "PTKCMNSYF"
-
-c Remove  U+15AE and U+14D1 from store since you can't type it. It will be handled in other rules using "CC" store.  (5 July 2018)
-C Add this store to replace "CC" store
 c                 p      t      k      c      m      n       s      y       f      
 store(CCKey)      U+144A U+141F U+1420 U+1428 U+14BC U+1423  U+1422 U+153E  U+155D 
 
@@ -153,7 +147,6 @@ U+157D + any(Wkey) > U+1426 U+1484 c h kw
 c Consonant key to standalone consonant (change CC store to CCKey store):
  + any(ConsKey)    > index(CCKey,1)
  + any(CapConsKey) > index(CCKey,1)
-c compiler says that "The rule will never be matched because its key code is never fired."
 
 c Alternate consonants: (voiced for voiceless)
     + "b" > U+144A
