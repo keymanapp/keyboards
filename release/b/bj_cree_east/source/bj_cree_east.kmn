@@ -51,19 +51,11 @@ c ================================================================
 c STORES
 c ================================================================
 
-c initial consonant keys (The Î is U+1525 which is the sh consonant)
-c (The ÿ is U+1525 which is the th consonant)
-
-c store(ConsKey) "ptkcmnlsÎyrfÿ"
-c store(CapConsKey) "PTKCMNLSÎYRFÿ"
-
-c Remove Î and ÿ from store since it's not on a keyboard (5 July 2018)
+c initial consonant keys which can be typed on keyboard
 store(ConsKey)    "ptkcmnlsyrf"
 store(CapConsKey) "PTKCMNLSYRF"
-
-c Remove  U+156A and U+1525 from store since you can't type it. It will be handled in other rules using "CC" store.  (5 July 2018)
-c Add this store to replace "CC" store
 store(CCKey)      U+1449 U+1466 U+1483 U+14A1 U+14BB U+14D0 U+14EA U+1505 U+153E U+1550 U+155D
+
 
 c Consonant followed by vowel:
 c p      t      k      c      m      n      l      s      sh     y      r      f      th
