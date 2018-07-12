@@ -1,4 +1,4 @@
-﻿{
+{
   "phone": {
     "font": "Arial",
     "layer": [

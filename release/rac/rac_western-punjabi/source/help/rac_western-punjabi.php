@@ -41,11 +41,7 @@ and selecting the On Screen Keyboard menu item.     </p>
       <H2>Keyboard Layout</H2>
       <P>The keyboard layout is displayed below in Keyboard graphics.</P>
       	
-      	<h3>Base Version</h3>
-      	<img src="rac_western-punjabi base.png" alt="Base Version" style="width:600px;">
-
-      	<h3>Shift Version</h3>
-      	<img src="rac_western-punjabi shift.png" alt="Shift Version" style="width:600px;">
+      	<img src="keyboard_layout.png" alt="Keyboard Layout" style="width:600px;">
       	
 <h2>How to use the Rachitrali-Western-Punjabi Keyboard? Please read the following:-</h2>
 
