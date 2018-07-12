@@ -191,7 +191,7 @@
             "key": [
               {
                 "id": "K_LCONTROL",
-                "text": "ctrl-alt",
+                "text": "ctrl-a",
                 "width": "150",
                 "sp": "1",
                 "nextlayer": "ctrl-alt"
@@ -419,7 +419,7 @@
             "key": [
               {
                 "id": "K_LCONTROL",
-                "text": "ctrl-alt",
+                "text": "ctrl-a",
                 "width": "150",
                 "nextlayer": "ctrl-alt"
               },
@@ -520,10 +520,6 @@
                 "text": "ؓ"
               },
               {
-                "id": "K_R",
-                "text": "ؔ"
-              },
-              {
                 "id": "K_Y",
                 "text": "ڳ"
               },
@@ -544,8 +540,9 @@
                 "text": "ڱ"
               },
               {
-                "id": "U_067D",
-                "text": "ٽ"
+                "id": "K_C",
+                "text": "﷽",
+                "width": "200"
               }
             ]
           },
@@ -614,8 +611,8 @@
                 "layer": "shift"
               },
               {
-                "id": "K_C",
-                "text": "﷽"
+                "id": "U_067D",
+                "text": "ٽ"
               },
               {
                 "id": "K_B",
@@ -646,7 +643,7 @@
             "key": [
               {
                 "id": "K_LCONTROL",
-                "text": "ctrl-alt",
+                "text": "ctrl-a",
                 "width": "150",
                 "sp": "2",
                 "nextlayer": "default"
@@ -874,7 +871,7 @@
             "key": [
               {
                 "id": "K_LCONTROL",
-                "text": "ctrl-alt",
+                "text": "ctrl-a",
                 "width": "150",
                 "sp": "1",
                 "nextlayer": "ctrl-alt"
