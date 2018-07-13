@@ -18,6 +18,18 @@ See the website (http://scripts.sil.org/CharisSILfont) documentation or the
 Charis SIL FAQ (http://scripts.sil.org/ComplexRomanFontFAQ) for frequently
 asked questions and their answers.
 
+TYPETUNER
+2018-06-28
+=========
+
+This package contains a TypeTuned version of the Charis SIL fonts.
+
+The TypeTuner settings file used to generate the enclosed font
+is included in the package as CharisSIL-feat_set_tuned.xml.
+By inspecting this file with a text editor you can determine 
+which alternate behaviors have been enabled.
+
+
 TIPS
 ====
 
@@ -59,7 +71,7 @@ keyboard, and to access the full Unicode range, we suggest you use
 gucharmap, kcharselect on Ubuntu or similar software.
 
 Another method of entering some symbols is provided by a few applications such
-as Adobe InDesign or LibreOffice.org. They can display a glyph palette or input
+as Adobe InDesign or OpenOffice.org. They can display a glyph palette or input
 dialog that shows all the glyphs (symbols) in a font and allow you to enter
 them by clicking on the glyph you want.
 
