@@ -7,8 +7,7 @@ c Edited May 2005 (Original keyboard split into three to handle different vowel 
 c created by Heidi Rosendall, March 2004
 
 c This keyboard is provided along with two other keyboards to cover the expected needs
-c of Nigeria languages. The three keyboards are identical except vowels appear differently and the Literacy
-c "alpha" is added to the letter q on the Dot and Underlined keyboards
+c of Nigeria languages. The three keyboards are identical except vowels appear differently
 c This is the keyboard for dotted vowels.
 
 store(&VERSION) '9.0'
@@ -122,7 +121,7 @@ dk(caron)	 + any(vowel)	>  index(vCaron,2)
 dk(caron)	 + any(LetN)	>  index(nCaron,2)                               
 dk(caron)	 + "m"		    > "m" U+030C   
 dk(caron)	 + "M"		    > "M" U+030C  
-dk(downstep) + any(vowel)	>  index(vowel,2) U+030B 
+dk(downstep) + any(vowel)	>  index(vowel,2) U+030B use(NFC)
 dk(downstep) + any(nasal)	>  index(nasal,2) U+030B  
 dk(downstep) + "m"		    >  "m" U+030B
 dk(downstep) + "N"		    >  "N" U+030B             
@@ -167,6 +166,10 @@ c ***************************************************
 
 group(NFC)
 
+U+004F U+030B > U+0150 c O double acute
+U+006F U+030B > U+0151 c o double acute
+U+0055 U+030B > U+0170 c U double acute
+U+0075 U+030B > U+0171 c u double acute
 
 U+00F5 U+0301 > U+1E4D c o tilde acute
 U+00D5 U+0301 > U+1E4C c O tilde acute
