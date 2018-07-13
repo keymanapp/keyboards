@@ -119,7 +119,7 @@ dk(caron) 	+ any(vowel)    >   index(vCaron,2)
 dk(caron) 	+ any(LetN)     >   index(nCaron,2)                             
 dk(caron) 	+ "m"           >   "m" U+030C   
 dk(caron) 	+ "M"           >   "M" U+030C  
-dk(downstep) + any(vowel)   >   index(vowel,2) U+030B 
+dk(downstep) + any(vowel)   >   index(vowel,2) U+030B use(NFC)
 dk(downstep) + any(nasal)   >   index(nasal,2) U+030B 
 dk(downstep) + "m"          >   "m" U+030B
 dk(downstep) + "N"          >   "N" U+030B             
@@ -162,6 +162,10 @@ c ***************************************************
 
 group(NFC)
 
+U+004F U+030B > U+0150 c O double acute
+U+006F U+030B > U+0151 c o double acute
+U+0055 U+030B > U+0170 c U double acute
+U+0075 U+030B > U+0171 c u double acute
 
 U+00F5 U+0301 > U+1E4D c o tilde acute
 U+00D5 U+0301 > U+1E4C c O tilde acute
@@ -176,8 +180,16 @@ U+004F U+0331 U+0303 U+0301 > U+1E4C U+0331 c O tilde acute underline
 U+0075 U+0331 U+0303 U+0301 > U+1E79 U+0331 c u tilde acute underline
 U+0055 U+0331 U+0303 U+0301 > U+1E78 U+0331 c U tilde acute underline
 
-U+006F U+0331 U+0303 U+0304 > U+022D U+0331 c o tilde macron underline
-U+004F U+0331 U+0303 U+0304 > U+022C U+0331 c O tilde macron underline
+U+0041 U+0331 U+0303 U+0304 > U+00C3 U+0331 U+0304 c A tilde, underline, macron
+U+0061 U+0331 U+0303 U+0304 > U+00E3 U+0331 U+0304 c a tilde, underline, macron
+U+0045 U+0331 U+0303 U+0304 > U+1EBC U+0331 U+0304 c E tilde, underline, macron
+U+0065 U+0331 U+0303 U+0304 > U+1EBD U+0331 U+0304 c e tilde, underline, macron
+U+0049 U+0331 U+0303 U+0304 > U+0128 U+0331 U+0304 c I tilde, underline, macron
+U+0069 U+0331 U+0303 U+0304 > U+0129 U+0331 U+0304 c i tilde, underline, macron
+U+0055 U+0331 U+0303 U+0304 > U+0168 U+0331 U+0304 c U tilde, underline, macron
+U+0075 U+0331 U+0303 U+0304 > U+0169 U+0331 U+0304 c u tilde, underline, macron
+U+006F U+0331 U+0303 U+0304 > U+022D U+0331        c o tilde, macron, underline
+U+004F U+0331 U+0303 U+0304 > U+022C U+0331        c O tilde, macron, underline
 
 any(vowel) U+0331 U+0303 U+0300 > index(vNasal,1) U+0331 U+0300   
 any(vowel) U+0331 U+0303 U+0301 > index(vNasal,1) U+0331 U+0301   
