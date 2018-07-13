@@ -21,7 +21,7 @@ store(&HOTKEY) '[CTRL ALT K_N]'
 store(&KEYBOARDVERSION) '1.5'
 
 begin Unicode	>	use(Main)
-store(Let2BMod)"bcdhkmnyzBCDGKLMNXY$?*"      
+store(Let2BMod) "bcdhkmnyzBCDGKLMNXY$?*"      
 store(ModLet)	"ɓçɗɦƙɲŋƴʒƁÇƊɣƘ£ƝŊƎƳ₦ʔ°" 
 store(vowel)	"aeiouAEIOU"                       
 store(vAcute)	"áéíóúÁÉÍÓÚ"                      
@@ -32,7 +32,6 @@ store(vCaron)	"ǎěǐǒǔǍĚǏǑǓ"
 store(vNasal)	"ãẽĩõũÃẼĨÕŨ"
 store(Vowel2BMod)	"eiouwEIOUW"
 store(ModVowel)	"ɛɨɔǝʊƐƗƆƏƱ"   
-store(vnNeedTone)	"aeoumn"                            
 store(cNasal)	"mnMN"                   
 store(nAcute)	"ḿńḾŃ"                         
 store(LetN)	"nN"                         
@@ -54,7 +53,7 @@ c 	single deadkeys
 
          c single deadkeys are cleared when typed twice
 dk(modlet)	+ ";"	>  ";"
-dk(acute)	+  "'"	>  "'"     
+U+02BB	+  "'"	>  "'"     c because this dk turns into U+02BB, this must be typed 3x
 dk(mid)	+ "-"	>  "-" 
 dk(grave)	+ "`"	>  "`" 
 dk(circum)	+ "^"	>  "^" 
@@ -108,7 +107,7 @@ dk(caron)	+ any(vowel)	> index(vCaron,2)
 dk(caron)	+ any(LetN)	> index(nCaron,2)                                   
 dk(caron)	+ "m"		> "m" U+030C   
 dk(caron)	+ "M"		> "M" U+030C                                                  
-dk(downstep) + any(vowel)	> index(vowel,2) U+030B 
+dk(downstep) + any(vowel)	> index(vowel,2) U+030B use(NFC)
 dk(downstep) + any(cNasal)	> index(cNasal,2) U+030B  
 dk(downstep) + "m"		> "m" U+030B
 dk(downstep) + "N"		> "N" U+030B             
@@ -116,6 +115,8 @@ dk(downstep) + "n"		> "n" U+030B
 dk(downstep) + "M"		> "M" U+030B
 dk(nasal)	+ any(vowel)	> index(vNasal,2)
 dk(nasal)	+ any(LetN)	> index(nNasal,2)
+dk(nasal) 	 + "m"			> "m" U+0303
+dk(nasal) 	 + "M"			> "M" U+0303
                                                                 
  c 	odd vowels are tone marked or nasalized
 dk(oddAcute)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0301
@@ -147,6 +148,11 @@ c ***************************************************
 
 group(NFC)
 
+
+U+004F U+030B > U+0150 c O double acute
+U+006F U+030B > U+0151 c o double acute
+U+0055 U+030B > U+0170 c U double acute
+U+0075 U+030B > U+0171 c u double acute
 
 U+00F5 U+0301 > U+1E4D c o tilde acute
 U+00D5 U+0301 > U+1E4C c O tilde acute
