@@ -136,7 +136,7 @@ dk(undlMid)    		+ any(vowel)  >    index(vMid,2) U+0331
 dk(undlGrave)  		+ any(vowel)  >    index(vGrave,2) U+0331
 dk(undlCircum) 		+ any(vowel)  >    index(vCircum,2) U+0331
 dk(undlCaron) 		+ any(vowel)  >    index(vCaron,2) U+0331       
-dk(undlDownstep)	+ any(vowel)  >   index(vowel,2) U+0331 U+030B    
+dk(undlDownstep)	+ any(vowel)  >   index(vowel,2) U+0331 U+030B use(NFC)    
 
 c tonemarked vowels are nasalized
 dk(nasalAcute)		+ any(vowel)	> index(vNasal,2) U+0301 use(NFC)
@@ -166,6 +166,11 @@ U+004F U+030B > U+0150 c O double acute
 U+006F U+030B > U+0151 c o double acute
 U+0055 U+030B > U+0170 c U double acute
 U+0075 U+030B > U+0171 c u double acute
+
+U+004F U+0331 U+030B > U+0150 U+0331 c O double acute underline
+U+006F U+0331 U+030B > U+0151 U+0331 c o double acute underline
+U+0055 U+0331 U+030B > U+0170 U+0331 c U double acute underline
+U+0075 U+0331 U+030B > U+0171 U+0331 c u double acute underline
 
 U+00F5 U+0301 > U+1E4D c o tilde acute
 U+00D5 U+0301 > U+1E4C c O tilde acute
