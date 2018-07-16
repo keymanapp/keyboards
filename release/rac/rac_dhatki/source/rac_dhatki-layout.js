@@ -1,6 +1,6 @@
 {
   "tablet": {
-    "font": "Tahoma",
+    "font": "Scheherazade",
     "layer": [
       {
         "id": "default",
@@ -56,7 +56,7 @@
               {
                 "id": "U_0627",
                 "text": "ا",
-                "pad": "30",
+                "pad": "",
                 "width": ""
               },
               {
@@ -153,7 +153,7 @@
             "id": 4,
             "key": [
               {
-                "id": "K_NUMLOCK",
+                "id": "K_CONTROL",
                 "text": "۱۲۳",
                 "width": "100",
                 "sp": "1",
@@ -193,54 +193,54 @@
             "id": 1,
             "key": [
               {
-                "id": "U_060E",
-                "text": "؎",
-                "width": 100
+                "id": "U_0683",
+                "text": "ڃ",
+                "width": ""
               },
               {
                 "id": "U_0651",
                 "text": "ّ",
-                "width": 98
+                "width": ""
               },
               {
                 "id": "U_0670",
                 "text": "ٰ",
-                "width": 100
+                "width": ""
               },
               {
                 "id": "U_0691",
                 "text": "ڑ",
-                "width": 106
+                "width": ""
               },
               {
                 "id": "U_0679",
                 "text": "ٹ",
-                "width": 103
+                "width": ""
               },
               {
                 "id": "U_064E",
                 "text": "َ",
-                "width": 102
+                "width": ""
               },
               {
                 "id": "U_0626",
                 "text": "ئ",
-                "width": 104
+                "width": ""
               },
               {
                 "id": "U_0650",
                 "text": "ِ",
-                "width": 100
+                "width": ""
               },
               {
                 "id": "U_06C3",
                 "text": "ۃ",
-                "width": 109
+                "width": ""
               },
               {
                 "id": "U_064F",
                 "text": "ُ",
-                "width": 102
+                "width": ""
               }
             ]
           },
@@ -250,7 +250,7 @@
               {
                 "id": "U_0622",
                 "text": "آ",
-                "pad": "30"
+                "pad": ""
               },
               {
                 "id": "U_0635",
@@ -298,7 +298,7 @@
                 "id": "K_SHIFT",
                 "text": "*Shift*",
                 "width": "100",
-                "sp": "1",
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
@@ -345,7 +345,7 @@
             "id": 4,
             "key": [
               {
-                "id": "K_NUMLOCK",
+                "id": "K_CONTROL",
                 "text": "۱۲۳",
                 "width": "100",
                 "sp": "1",
@@ -364,10 +364,9 @@
                 "sp": "0"
               },
               {
-                "id": "U_0683",
-                "text": "ڃ",
-                "width": "100",
-                "layer": "default"
+                "id": "U_06D4",
+                "text": "۔",
+                "width": "100"
               },
               {
                 "id": "K_ENTER",
@@ -433,7 +432,7 @@
               {
                 "id": "U_0680",
                 "text": "ڀ",
-                "pad": "30",
+                "pad": "",
                 "width": ""
               },
               {
@@ -487,7 +486,7 @@
             "id": 3,
             "key": [
               {
-                "id": "K_SYMBOLS",
+                "id": "K_NUMLOCK",
                 "text": "*123*",
                 "width": "100",
                 "sp": "1",
@@ -573,10 +572,10 @@
             "id": 4,
             "key": [
               {
-                "id": "K_LOWER",
-                "text": "*abc*",
+                "id": "K_CONTROL",
+                "text": "۱۲۳",
                 "width": "100",
-                "sp": "1",
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
@@ -588,8 +587,12 @@
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "700",
+                "width": "595",
                 "sp": "0"
+              },
+              {
+                "id": "U_06D4",
+                "text": "۔"
               },
               {
                 "id": "K_ENTER",
@@ -675,7 +678,7 @@
               {
                 "id": "K_1",
                 "text": "!",
-                "pad": "30",
+                "pad": "",
                 "width": "",
                 "layer": "shift"
               },
@@ -736,10 +739,10 @@
             "key": [
               {
                 "id": "K_NUMLOCK",
-                "text": "۱۲۳",
+                "text": "*123*",
                 "width": "100",
-                "sp": "1",
-                "nextlayer": "ctrl-a"
+                "sp": "2",
+                "nextlayer": "default"
               },
               {
                 "id": "U_0654",
@@ -793,11 +796,11 @@
             "id": 4,
             "key": [
               {
-                "id": "K_LOWER",
-                "text": "*abc*",
+                "id": "K_CONTROL",
+                "text": "۱۲۳",
                 "width": "100",
                 "sp": "1",
-                "nextlayer": "default"
+                "nextlayer": "ctrl-a"
               },
               {
                 "id": "K_LOPT",
@@ -808,8 +811,12 @@
               {
                 "id": "K_SPACE",
                 "text": "",
-                "width": "700",
+                "width": "595",
                 "sp": "0"
+              },
+              {
+                "id": "U_06D4",
+                "text": "۔"
               },
               {
                 "id": "K_ENTER",
@@ -822,6 +829,6 @@
         ]
       }
     ],
-    "fontsize": ""
+    "fontsize": "1.4em"
   }
 }

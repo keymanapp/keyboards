@@ -1,3 +1,10 @@
+﻿c This keyboard is designed for the Dhatki language spoken in Pakistan, in its standard Perso-Arabic script, as used in Pakistan. It is based on phonetic keyboard for Dhatki Language developed by Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer Mr.Rehmat Aziz Chitrali for Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Dhatki Keyboard.
+c 
+c This is the first Dhatki language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer. This keyboard is for Dhatki Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Dhatki language.
+c 
+c The Dhatki Keyboard Project(DKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.
+c 
+c Khowar Academy Chitral was established in April 1996 specifically to promote the endangered languages of Chitral Pakistan. The Academy has worked extensively on Dhatki linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Dhatki, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
 c rac_dhatki.kmn
 c Author:   Rehmat Aziz Chitrali
 c Date:     8-JUNE 2018
@@ -14,7 +21,7 @@ store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'rac_dhatki-layout.js'
 store(&KEYBOARDVERSION) '1.0'
-store(&KMW_HELPTEXT) 'https://help.keyman.com/keyboard/rac_dhatki/1.0/rac_dhatki.php'
+store(&WINDOWSLANGUAGES) 'x0401'
 begin Unicode > use(main)
 
 
@@ -34,7 +41,7 @@ group(main) using keys
 + [CTRL ALT K_Z] > '{'
 + [CTRL ALT K_COLON] > 'ٌ'
 + [CTRL ALT K_L] > 'ؤ'
-+ [CTRL ALT K_K] > 'ً'
++ [CTRL ALT K_K] > '؃'
 + [CTRL ALT K_J] > 'ٍ'
 + [CTRL ALT K_H] > '؏'
 + [CTRL ALT K_G] > '؎'
@@ -129,11 +136,11 @@ group(main) using keys
 + [SHIFT K_O] > 'ۃ'
 + [SHIFT K_I] > 'ِ'
 + [SHIFT K_U] > 'ئ'
-+ [SHIFT K_Y] > 'ِ'
++ [SHIFT K_Y] > 'َ'
 + [SHIFT K_T] > 'ٹ'
 + [SHIFT K_R] > 'ڑ'
-+ [SHIFT K_E] > 'ٔ'
-+ [SHIFT K_W] > 'ّ'
++ [SHIFT K_E] > 'ٰ'
++ [SHIFT K_W] > 'ٔ'
 + [K_EQUAL] > '='
 + [K_HYPHEN] > '-'
 + [K_0] > '۰'
@@ -151,12 +158,12 @@ group(main) using keys
 + [SHIFT K_HYPHEN] > 'ءُ'
 + [SHIFT K_0] > 'ءٌ'
 + [SHIFT K_9] > 'ۡ'
-+ [SHIFT K_8] > '*'
++ [SHIFT K_8] > '¡'
 + [SHIFT K_7] > 'ٻ'
-+ [SHIFT K_6] > '^'
++ [SHIFT K_6] > '¢'
 + [SHIFT K_5] > '۾'
-+ [SHIFT K_4] > '$'
++ [SHIFT K_4] > '¥'
 + [SHIFT K_3] > 'ڙ'
-+ [SHIFT K_2] > '@'
++ [SHIFT K_2] > '£'
 + [SHIFT K_BKQUOTE] > 'ڇ'
 + [SHIFT K_1] > 'ڦ'

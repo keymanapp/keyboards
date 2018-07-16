@@ -1,8 +1,8 @@
 Rachitrali-Dhatki Keyboard Data
 -------------------------------
 
-Copyright:      (C) 2018 Rehmat Aziz Chitrali
-Version:        1.0
+Copyright (C) 2018 Rehmat Aziz Chitrali
+Version 1.0
 
 Description
 -----------
@@ -18,9 +18,6 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 Links
 -----
 
-
- * Home:    https://keymanweb.com/#snd,Keyboard_rac_dhatki
- * Help:    https://help.keyman.com/keyboard/rac_dhatki
  * Contact: Rehmat Aziz Chitrali linguist and researcher <rachitrali@yahoo.com>
 
 Supported Platforms
