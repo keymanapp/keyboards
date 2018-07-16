@@ -1,13 +1,9 @@
-<?php 
-  $pagename = 'RAChitrali-Ormuri Keyman Keyboard Help';
-  $pagetitle = $pagename;
+<?php
+  $pagename = 'RAChitrali-Ormuri Keyboard Help';
+  $pagetitle = 'RAChitrali-Ormuri Keyboard Help';
   require_once('header.php');
 ?>
-https://help.keyman.com/keyboard/rac_ormuri/1.0/rac_ormuri.php 
-
-RAChitrali-Ormuri Keyboard Help
-Rehmat Aziz Chitrali, 2018-06-07
-Introduction
+<h2>Introduction</h2>
 <p>This keyboard is designed for the Ormuri language spoken in the Waziristan of Pakistan in its standard Perso-Arabic script, as used Pakistan. It is based on phonetic keyboard for Ormuri Language developed by Pakistani linguist, author, researcher, scientist,  Inventor and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Ormuri Keyboard.
 </p>
 
@@ -17,17 +13,23 @@ Introduction
 
 <p>Khowar Academy Chitral was established in April 1996 specifically to promote the endangered  languages of Chitral Pakistan. The Academy has worked extensively on Ormuri linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Ormuri, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.</p>
 
-Font
-The RAChitrali-Ormuri Keyman keyboard is designed to work with any extended Arabic script font specially Scheherazade font and courier new fonts are fully supporting all the special characters of Ormuri language. . 
-Keyboard
-This keyboard layout is designed for the RAChitrali-Ormuri language. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. 
-Keyboard Layout
-The keyboard layout is displayed below in Keyboard graphics.
-Base Version
- <img src="rac_ormuri base.png">
+<h2>Font</h2>
+<p style="text-align: justify;">
+The RAChitrali-Ormuri Keyman keyboard is designed to work with any extended 
+Arabic script font. The Scheherazade font fully supports all the special characters of Ormuri language.
+</p>
 
-Shift Version
- <img src="rac_ormuri shift.png">
+<h2>Keyboard</h2>
+<p>
+This keyboard layout is designed for the RAChitrali-Ormuri language. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. 
+
+<p>The keyboard layout is displayed below in Keyboard graphics.</p>
+
+<h3>Base Version</h3>
+ <img src="rac_ormuri base.png" alt="Base Version" style="width:600px;">
+
+<h3>Shift Version</h3>
+ <img src="rac_ormuri shift.png" alt="Shift Version" style="width:600px;">
  
 <h2>How to use the RAChitrali-Ormuri Keyboard? Please read the following:-</h2>
 
@@ -50,16 +52,36 @@ Shift Version
 <p style="text-align: right; dir=rtl; font-size:150%">
 ارمڑی سافٹ ویر اور ارمڑی ٹیکسٹ ایڈیٹر ایجاد کرنے کا تاریخی کام پاکستان کے ضلع چترال سے تعلق رکھنے والے لسانی ماہر جناب رحمت عزیز چترانی نے شروع کیا ہے۔ اور آج اس سافٹ ویر کے زریعے رحمت عزیز چترالی نے ارمڑی جیسی غیر تحریری زبان کو تحریری زبان میں تبدیل کرکے کمپیوٹر اور موبائل کی زبان بنا دیا ہے اور ارمڑی بولنے والے لوگ اب فیس بک اور ٹویٹر میں بھی اس سافٹ ویر کے زریعے ارمڑی لکھ رہے ہیں جو کہ ارمڑی دان طبقے کے لیے یقینا بہت بڑی خوشی کی بات ہے
 </p>
-License
-RAChitrali-Ormuri Keyman Keyboard is copyright © 2017 Rehmat Aziz Chitrali. It is distributed under The MIT License (MIT)
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-Release History
-Version 1.0, released 07 June 2018
-Links
-•	Home Page: http://keymankeyboards.com/
-•	Other keyboards for these languages
-All Documentation Versions
-RAChitrali-Ormuri Keyboard Help 1.0
+      <P class=Caption></P><A name=license></A>
+      <H2>License</H2>
+      <P>RAChitrali-Ormuri Keyman Keyboard is copyright © 2018 Rehmat Aziz Chitrali. 
+      	It is distributed under The MIT License (MIT)</P>
+      <div class="note">
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p></div>
+
+<h2>Release History</h2>
+<p>Version 1.0, released 07 June 2018</p>
+
+<h2>Links</h2>
+<ul>
+<li>Home Page: <a href='http://keymankeyboards.com'>http://keymankeyboards.com/</a></li>
+<li><a href='https://keyman.com/keyboards/languages/oru'>Other keyboards for these languages</a></li>
+</ul>
+
 
