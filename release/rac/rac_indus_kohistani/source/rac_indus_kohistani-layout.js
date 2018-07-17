@@ -667,6 +667,6 @@
       }
     ],
     "font": "Scheherazade",
-    "fontsize": "1.4em"
+    "fontsize": "1.3em"
   }
 }
