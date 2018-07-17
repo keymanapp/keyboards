@@ -46,7 +46,11 @@ an on screen keyboard which can be viewed by clicking on the Keyman icon and sel
       <H2>Keyboard Layout</H2>
       <P>The keyboard layout is displayed below in Keyboard graphics.</P>
 
-<p><img src='keyboard_layout.png' alt='Keyboard Layout' width='100%'></p>
+      	<h3>Base Version</h3>
+      	<img src="rac_indus_kohistani base.png" alt="Base Version" style="width:600px;">
+
+      	<h3>Shift Version</h3>
+      	<img src="rac_indus_kohistani shift.png" alt="Shift Version" style="width:600px;">
 
 <h2>How to use the Indus-Kohistani Keyboard? Please read the following:-</h2>
 
