@@ -1,4 +1,4 @@
-{
+﻿{
   "tablet": {
     "layer": [
       {
@@ -9,43 +9,43 @@
             "key": [
               {
                 "id": "K_1",
-                "text": "١"
+                "text": "\u0661"
               },
               {
                 "id": "K_2",
-                "text": "٢"
+                "text": "\u0662"
               },
               {
                 "id": "K_3",
-                "text": "٣"
+                "text": "\u0663"
               },
               {
                 "id": "K_4",
-                "text": "٤"
+                "text": "\u0664"
               },
               {
                 "id": "K_5",
-                "text": "٥"
+                "text": "\u0665"
               },
               {
                 "id": "K_6",
-                "text": "٦"
+                "text": "\u0666"
               },
               {
                 "id": "K_7",
-                "text": "٧"
+                "text": "\u0667"
               },
               {
                 "id": "K_8",
-                "text": "٨"
+                "text": "\u0668"
               },
               {
                 "id": "K_9",
-                "text": "٩"
+                "text": "\u0669"
               },
               {
                 "id": "K_0",
-                "text": "٠"
+                "text": "\u0660"
               }
             ]
           },
@@ -54,44 +54,44 @@
             "key": [
               {
                 "id": "K_Q",
-                "text": "ق",
+                "text": "\u0642",
                 "pad": ""
               },
               {
                 "id": "K_W",
-                "text": "و"
+                "text": "\u0648"
               },
               {
                 "id": "K_E",
-                "text": "ع"
+                "text": "\u0639"
               },
               {
                 "id": "K_R",
-                "text": "ر"
+                "text": "\u0631"
               },
               {
                 "id": "K_T",
-                "text": "ت"
+                "text": "\u062A"
               },
               {
                 "id": "K_Y",
-                "text": "ے"
+                "text": "\u06D2"
               },
               {
                 "id": "K_U",
-                "text": "ء"
+                "text": "\u0621"
               },
               {
                 "id": "K_I",
-                "text": "ی"
+                "text": "\u06CC"
               },
               {
                 "id": "K_O",
-                "text": "ه"
+                "text": "\u0647"
               },
               {
                 "id": "K_P",
-                "text": "پ"
+                "text": "\u067E"
               }
             ]
           },
@@ -100,43 +100,43 @@
             "key": [
               {
                 "id": "K_BKQUOTE",
-                "text": "ݮ"
+                "text": "\u076E"
               },
               {
                 "id": "K_A",
-                "text": "ا"
+                "text": "\u0627"
               },
               {
                 "id": "K_S",
-                "text": "س"
+                "text": "\u0633"
               },
               {
                 "id": "K_D",
-                "text": "د"
+                "text": "\u062F"
               },
               {
                 "id": "K_F",
-                "text": "ف"
+                "text": "\u0641"
               },
               {
                 "id": "K_G",
-                "text": "گ"
+                "text": "\u06AF"
               },
               {
                 "id": "K_H",
-                "text": "ح"
+                "text": "\u062D"
               },
               {
                 "id": "K_J",
-                "text": "ج"
+                "text": "\u062C"
               },
               {
                 "id": "K_K",
-                "text": "ک"
+                "text": "\u06A9"
               },
               {
                 "id": "K_L",
-                "text": "ل"
+                "text": "\u0644"
               }
             ]
           },
@@ -152,31 +152,31 @@
               },
               {
                 "id": "K_Z",
-                "text": "ز"
+                "text": "\u0632"
               },
               {
                 "id": "K_X",
-                "text": "ش"
+                "text": "\u0634"
               },
               {
                 "id": "K_C",
-                "text": "ث"
+                "text": "\u062B"
               },
               {
                 "id": "K_V",
-                "text": "ط"
+                "text": "\u0637"
               },
               {
                 "id": "K_B",
-                "text": "ب"
+                "text": "\u0628"
               },
               {
                 "id": "K_N",
-                "text": "ن"
+                "text": "\u0646"
               },
               {
                 "id": "K_M",
-                "text": "م"
+                "text": "\u0645"
               },
               {
                 "id": "K_BKSP",
@@ -209,7 +209,7 @@
               },
               {
                 "id": "K_PERIOD",
-                "text": "۔"
+                "text": "\u06D4"
               },
               {
                 "id": "K_ENTER",
@@ -274,45 +274,45 @@
             "key": [
               {
                 "id": "K_Q",
-                "text": "ځ",
+                "text": "\u0681",
                 "pad": ""
               },
               {
                 "id": "K_W",
-                "text": "ٔ"
+                "text": "\u0654"
               },
               {
                 "id": "K_E",
-                "text": "ٰ"
+                "text": "\u0670"
               },
               {
                 "id": "K_R",
-                "text": "ڑ"
+                "text": "\u0691"
               },
               {
                 "id": "K_T",
-                "text": "ٹ"
+                "text": "\u0679"
               },
               {
                 "id": "K_Y",
-                "text": "َ"
+                "text": "\u064E"
               },
               {
                 "id": "K_U",
-                "text": "ئ"
+                "text": "\u0626"
               },
               {
                 "id": "K_O",
-                "text": "ۃ"
+                "text": "\u06C3"
               },
               {
                 "id": "K_LBRKT",
-                "text": "ݯ",
+                "text": "\u076F",
                 "layer": "default"
               },
               {
                 "id": "K_RBRKT",
-                "text": "ݱ",
+                "text": "\u0771",
                 "layer": "default"
               }
             ]
@@ -322,44 +322,44 @@
             "key": [
               {
                 "id": "K_BKQUOTE",
-                "text": "ګ"
+                "text": "\u06AB"
               },
               {
                 "id": "K_A",
-                "text": "آ"
+                "text": "\u0622"
               },
               {
                 "id": "K_S",
-                "text": "ص"
+                "text": "\u0635"
               },
               {
                 "id": "K_D",
-                "text": "ڈ"
+                "text": "\u0688"
               },
               {
                 "id": "K_F",
-                "text": "ڤ"
+                "text": "\u06A4"
               },
               {
                 "id": "K_G",
-                "text": "غ"
+                "text": "\u063A"
               },
               {
                 "id": "K_H",
-                "text": "ھ"
+                "text": "\u06BE"
               },
               {
                 "id": "K_J",
-                "text": "ض"
+                "text": "\u0636"
               },
               {
                 "id": "K_COLON",
-                "text": "څ",
+                "text": "\u0685",
                 "layer": "default"
               },
               {
                 "id": "K_BKSLASH",
-                "text": "ݰ",
+                "text": "\u0770",
                 "layer": "default"
               }
             ]
@@ -376,31 +376,31 @@
               },
               {
                 "id": "K_Z",
-                "text": "ذ"
+                "text": "\u0630"
               },
               {
                 "id": "K_X",
-                "text": "ژ"
+                "text": "\u0698"
               },
               {
                 "id": "K_C",
-                "text": "چ"
+                "text": "\u0686"
               },
               {
                 "id": "K_V",
-                "text": "ظ"
+                "text": "\u0638"
               },
               {
                 "id": "K_B",
-                "text": "ً"
+                "text": "\u064B"
               },
               {
                 "id": "K_N",
-                "text": "ں"
+                "text": "\u06BA"
               },
               {
                 "id": "K_K",
-                "text": "خ"
+                "text": "\u062E"
               },
               {
                 "id": "K_BKSP",
@@ -432,7 +432,7 @@
               },
               {
                 "id": "K_PERIOD",
-                "text": "۔",
+                "text": "\u06D4",
                 "layer": "default"
               },
               {
@@ -564,15 +564,15 @@
               },
               {
                 "id": "U_0651",
-                "text": "ّ"
+                "text": "\u0651"
               },
               {
                 "id": "U_064F",
-                "text": "ُ"
+                "text": "\u064F"
               },
               {
                 "id": "U_0650",
-                "text": "ِ"
+                "text": "\u0650"
               },
               {
                 "id": "U_003A",
@@ -580,7 +580,7 @@
               },
               {
                 "id": "U_060C",
-                "text": "،"
+                "text": "\u060C"
               }
             ]
           },
@@ -604,23 +604,23 @@
               },
               {
                 "id": "U_00A9",
-                "text": "©"
+                "text": "\u00A9"
               },
               {
                 "id": "U_00AE",
-                "text": "®"
+                "text": "\u00AE"
               },
               {
                 "id": "U_00F7",
-                "text": "÷"
+                "text": "\u00F7"
               },
               {
                 "id": "U_00B1",
-                "text": "±"
+                "text": "\u00B1"
               },
               {
                 "id": "U_061F",
-                "text": "؟"
+                "text": "\u061F"
               },
               {
                 "id": "K_BKSP",
@@ -653,7 +653,7 @@
               },
               {
                 "id": "K_PERIOD",
-                "text": "۔",
+                "text": "\u06D4",
                 "layer": "default"
               },
               {
@@ -668,6 +668,6 @@
       }
     ],
     "font": "Scheherazade",
-    "fontsize": "1.3em"
+    "fontsize": ""
   }
 }
