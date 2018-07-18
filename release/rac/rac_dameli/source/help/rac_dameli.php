@@ -103,6 +103,7 @@ SOFTWARE.</p></div>
 
 
 <h2>Release History</h2>
+<p>Version 1.1, released 18 July 2018</p>
 <p>Version 1.0, released 03 June 2018</p>
 
 <h2>Links</h2>
