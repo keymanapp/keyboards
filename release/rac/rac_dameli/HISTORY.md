@@ -5,6 +5,7 @@ Rachitrali-Dameli Change History
 -----------------
 
 * update the touch layout
+* remove unnecessary files
 
 1.0 (03 June 2018)
 -----------------
