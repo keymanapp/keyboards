@@ -1,12 +1,16 @@
-﻿store(&VERSION) '10.0'
+﻿c Malayalam Keyman Keyboard for Mozhi Keyboard Layout
+c Original work done by Raj Nair, but the source is not available
+c This keyboard was created by Junaid P. V.
+c This keyboard closely follows (still there need some work) the latest (Jul 2018) Mozhi Spec
+c Mozhi Spec can be found here(https://sites.google.com/site/cibu/mozhi/mozhi2)
+store(&VERSION) '9.0'
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.0'
-store(&BITMAP) 'mozhi_malayalam.ico'
-store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.0.2'
+store(&BITMAP) 'mlym_mozhi.ico'
+store(&COPYRIGHT) '© Raj Nair MIT'
+store(&TARGETS) 'windows macosx linux web iphone ipad androidphone androidtablet desktop'
 store(&ETHNOLOGUECODE) 'mal'
 store(&WINDOWSLANGUAGES) 'x044C'
-store(&MESSAGE) 'MIT'
-store(&COPYRIGHT) '© Junaid P. V.'
 store(&LANGUAGE) 'x044C'
 begin Unicode > use(main)
 
