@@ -4,6 +4,8 @@
   require_once('header.php');
 ?>
 
-<div></div><embed src="Guideline.pdf" width="100%" height="95%" type='application/pdf'></div>
-
-<p style="text-align:right"><b>Click <a href="Guideline.pdf">here</a> to download this guideline if it does not show correctly in your current browser.</b></p>
+<object data="Guideline.pdf" type="application/pdf" width="100%" height="100%">
+    <embed src="Guideline.pdf" type="application/pdf">
+    <p>This browser does not support PDFs. Please download the PDF to view it: <a href="Guideline.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
