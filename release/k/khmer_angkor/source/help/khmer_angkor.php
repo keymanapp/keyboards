@@ -3,7 +3,6 @@
   $pagetitle = "Khmer Angkor Keyboard Help";
   require_once('header.php');
 
-
 ?>
 
 
@@ -26,10 +25,10 @@
 
 <p>For more details on the Khmer Angkor Keyboard, please find the documentations included below.</p> 
 <p>Here is the documentation in English:</p> 
-<p><embed src="KAK_Documentation_EN.pdf" width="70%" height="100%" type='application/pdf'></p>
+<p><embed src="KAK_Documentation_EN.pdf" width="100%" height="80%" type='application/pdf'></p>
 <p>Here is the documentation in Khmer:</p>
-<p><embed src="KAK_Documentation_KH.pdf" width="70%" height="100%" type='application/pdf'></p>
-
+<p><embed src="KAK_Documentation_KH.pdf" width="100%" height="80%" type='application/pdf'></p>
+<p>Click here to download the <a href='KAK_Documentation_EN.pdf'>English Version</a> or <a href='KAK_Documentation_KH.pdf'>Khmer Version</a>.</p>
 <h1>Fonts</h1>
 <p style="text-align: justify;">
     To get Khmer fonts, you may visit one of the three sources below:
