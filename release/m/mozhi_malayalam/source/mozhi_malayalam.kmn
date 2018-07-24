@@ -1,14 +1,13 @@
 ﻿c Malayalam Keyman Keyboard for Mozhi Keyboard Layout
 c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
-c This keyboard closely follows (still there need some work) the latest (Jul 2018) Mozhi Spec
-c Mozhi Spec can be found here(https://sites.google.com/site/cibu/mozhi/mozhi2)
+c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&VERSION) '9.0'
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '1.0.2'
-store(&BITMAP) 'mlym_mozhi.ico'
-store(&COPYRIGHT) '© Raj Nair MIT'
-store(&TARGETS) 'windows macosx linux web iphone ipad androidphone androidtablet desktop'
+store(&KEYBOARDVERSION) '2.0.1'
+store(&BITMAP) 'mozhi_malayalam.ico'
+store(&COPYRIGHT) '© Junaid P. V.'
+store(&TARGETS) 'windows macosx linux web'
 store(&ETHNOLOGUECODE) 'mal'
 store(&WINDOWSLANGUAGES) 'x044C'
 store(&LANGUAGE) 'x044C'
@@ -51,7 +50,37 @@ any(chills) + 'O' > index(chillBases,1) 'ോ'
 any(chills) + 'y' > index(chillBases,1) '്യ്'
 any(chills) + 'R' > index(chillBases,1) 'ൃ'
 
+c Archaic Forms
+'അ' + '\' > 'ഽ'    
+'ഈ' + '\' > 'ൟ'
+'ക്' + '\' > 'ൿ'
+'റ്റ്' + '\' > 'ഺ്'
+'റ്റ' + '\' > 'ഺ'
+'ൻ' + '\' > 'ഩ്'
+'ന' + '\' > 'ഩ'
+c TODO: n@erra	 ൻെറ	 CHILLU-N, SIGN E, RRA	 എൻെറ	 en@erra
+c TODO: n@errarra	 ൻെററ	 CHILLU-N, SIGN E, RRA, RRA	 എൻെററ	 en@errarra
+c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
+'നു' + '\' > '൹' c Malayalam Date Mark
+' ം' + '\' > U+0D00
+U+0D00 + '\' >  U+0D01
+'ർ' + '\' > 'ൎ'
+'$' + '\' > '₹' c Ben's additions
+'₹' + '\' > '₨'
+'പറ' + '\' > U+0D4F
+'ൾ' + '\' > 'ഌ'
+'‌ള്' + '\' > 'ൢ'
+'ള്ള്' + '\' > 'ൡ'
+'ഌ' + '\' > 'ൡ' c Ben's additions
+'ള്ള്' + '\' > 'ൣ'
+'ൢ' + '\' > 'ൣ' c Ben's additions
+'ൗ' + '\' > 'ൌ'
+'്' + '\' > U+0D3C
+U+0D3C + '\' > U+0D3B
+
+c Sequence Chills
 any(chills) '\' + '\' > index(chillBases,1) '്' U+200D
+'ഩ്' + '\' > 'ന' '്' U+200D
 
 c produce vowels
 store(vDirectSmallValues) "അഎഇഒഉ"
@@ -216,6 +245,7 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ല്'  deadkey(capl)
 'ൻ' + 'v' > 'ന്വ്'
 
 'ർ' + 'r' > 'റ്'
+'ർ' + '#' > 'ൎ'
 
 'ൽ' + 'l' > 'ല്ല്'
 'ൽ' + 'L' > 'ല്ല്' deadkey(capl)
