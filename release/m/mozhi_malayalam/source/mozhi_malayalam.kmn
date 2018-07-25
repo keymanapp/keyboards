@@ -5,7 +5,7 @@ c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/m
 store(&VERSION) '9.0'
 store(&NAME) 'Malayalam Mozhi'
 store(&KEYBOARDVERSION) '2.0.1'
-store(&BITMAP) 'mozhi_malayalam.ico'
+store(&BITMAP) 'mozhi_malayalam1.ico'
 store(&COPYRIGHT) '© Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
 store(&ETHNOLOGUECODE) 'mal'
@@ -20,6 +20,11 @@ store(consonants) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധന�
 store(vowels) "അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔ"
 store(vowelsigns) "ാിീുൂൃൄൢൣെേൈൊോൗ"
 
+c digits
+store(digits) '0123456789'
+store(malDigits) '൦൧൨൩൪൫൬൭൮൯'
+any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
+ 
 c special for m
 any(consonants) + 'm' > index(consonants,1) 'ം'
 any(vowels) + 'm' > index(vowels,1) 'ം'
