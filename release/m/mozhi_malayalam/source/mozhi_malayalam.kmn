@@ -24,6 +24,13 @@ c digits
 store(digits) '0123456789'
 store(malDigits) '൦൧൨൩൪൫൬൭൮൯'
 any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
+'1' + '\' > U+0d67
+'10' + '\' > U+0d70
+'100' + '\' > U+0d71
+'1000' + '\' > U+0d72
+'1/4' + '\' > U+0d73
+'1/2' + '\' > U+0d74
+'3/4' + '\' > U+0d75
  
 c special for m
 any(consonants) + 'm' > index(consonants,1) 'ം'
