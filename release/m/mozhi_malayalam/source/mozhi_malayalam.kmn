@@ -48,7 +48,10 @@ any(chills) + 'E' > index(chillBases,1) 'േ'
 any(chills) + 'o' > index(chillBases,1) 'ൊ'
 any(chills) + 'O' > index(chillBases,1) 'ോ'
 any(chills) + 'y' > index(chillBases,1) '്യ്'
-any(chills) + 'R' > index(chillBases,1) 'ൃ'
+any(chills) + 'R' > index(chillBases,1) 'ൃ'            
+'ർ' + 'r' > 'റ്' c Ben's addition
+'ന്ര്' + 'r' > 'ൻറ്' c Ben's addition
+any(chills) + 'r' > index(chillBases,1) '്ര്' c Ben's addition
 
 c Archaic Forms
 'അ' + '\' > 'ഽ'    
@@ -78,10 +81,14 @@ U+0D00 + '\' >  U+0D01
 'ൗ' + '\' > 'ൌ'
 '്' + '\' > U+0D3C
 U+0D3C + '\' > U+0D3B
-
+any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
 c Sequence Chills
 any(chills) '\' + '\' > index(chillBases,1) '്' U+200D
 'ഩ്' + '\' > 'ന' '്' U+200D
+
+c The following rule is an experimental rule to prevent chillu r formation 
+c (instead it will form vattu ra form) if it follows a chandrakkala. By Ben
+'്' + 'r' > '്ര്'                                                                                            
 
 c produce vowels
 store(vDirectSmallValues) "അഎഇഒഉ"
@@ -187,13 +194,16 @@ store(nonSa) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫ
 'ൿ' + 'h' > 'ച്'
 
 'ം' + 'm' > 'മ്മ്'
+'ം' + 'l' > 'മ്ല്'
 any(nonSa) 'ം' + 'r' > index(nonSa,1) 'മ്ര്'
 'ം' + 'p' > 'മ്പ്'
 any(nonSa) 'ം' + 'l' > index(nonSa,1) 'മ്ല്'
-any(nonSa) 'ം' + 'L' > index(nonSa,1) 'മ്ല്' deadkey(capl)
+any(nonSa) 'ം' + 'L' > index(nonSa,1) 'മ്ല്' c deadkey(capl) c dk commented out by ben
 any(nonSa) 'ം' + 'n' > index(nonSa,1) 'മ്ന്'
 any(nonSa) 'ം' + 'y' > index(nonSa,1) 'മ്യ്'
 any(vowelsigns) 'ം' + 'y' > index(vowelsigns,1) 'മ്യ്'
+'സം' + 'r' > 'സംർ'
+'സം' + 'y' > 'സംയ്'
 
 c ['ൻൿh','nc','ഞ്ച്'],
 'ൻൿ' + 'h' > 'ഞ്ച്'
@@ -203,7 +213,7 @@ c ['ക്ക്h','cc', 'ച്ച്'],
 c ['ല്പ്p','lp','ൽപ്പ്'],
 'ല്പ്' + 'p' > 'ൽപ്പ്'
 c ['([ക-ഹ])്ല്l', 'L', '$2\u0d62'],
-any(consonants) '്ല്' deadkey(capl) + 'l' > index(consonants,1) U+0D62
+c any(consonants) '്ല്' deadkey(capl) + 'l' > index(consonants,1) U+0D62
 
 store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>_~'
 any(escapable) '\' + '\' > index(escapable,1)
@@ -226,8 +236,8 @@ any(consonants) 'ൃ' + 'e' > index(consonants,1) '്രെ'
 any(consonants) 'ൃ' + 'E' > index(consonants,1) '്രേ'
 any(consonants) 'ൃ' + 'o' > index(consonants,1) '്രൊ'
 any(consonants) 'ൃ' + 'O' > index(consonants,1) '്രോ'
-any(consonants) '്' + 'l' > index(consonants,1) '്ല്'  deadkey(capl)
-any(consonants) '്' + 'L' > index(consonants,1) '്ല്'  deadkey(capl)
+any(consonants) '്' + 'l' > index(consonants,1) '്ല്' c deadkey(capl) c commented out by Ben
+any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c commented out by Ben
 
 'ൺ' + 'N' > 'ണ്ണ്'
 'ൺ' + 'T' > 'ണ്ട്'
@@ -242,14 +252,15 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ല്'  deadkey(capl)
 'ൻ' + 'd' > 'ന്ദ്'
 'ൻ' + 't' > 'ന്റ്'
 'ൻ' + 'm' > 'ന്മ്'
-'ൻ' + 'L' > 'ന്ല്' deadkey(capl)
+'ൻ' + 'L' > 'ന്ല്' c deadkey(capl) c commented out by Ben
 'ൻ' + 'v' > 'ന്വ്'
 
 'ർ' + 'r' > 'റ്'
 'ർ' + '#' > 'ൎ'
 
 'ൽ' + 'l' > 'ല്ല്'
-'ൽ' + 'L' > 'ല്ല്' deadkey(capl)
+'ൽ' + 'L' > 'ല്ല്' c deadkey(capl)
+'ൽ' + 'm' > 'ല്മ്'
 'ൽ' + 'p' > 'ല്പ്'
 'ൽ' + 'v' > 'ല്വ്'
 
@@ -260,10 +271,10 @@ c Normally it was not required in Keymagic. Following does not happen
 c automatically in Keyman
 
 'ൿ' + 'l' > 'ക്ല്'
-'ൿ' + 'L' > 'ക്ല്' deadkey(capl)
+'ൿ' + 'L' > 'ക്ല്' c deadkey(capl)
 'ൿ' + 'v' > 'ക്വ്'
 'ൿ' + 'k' > 'ക്ക്'
-'ൿ' + 'c' > 'ക്ക്' deadkey(doublec)
+'ൿ' + 'c' > 'ക്ക്' c deadkey(doublec)
 
 c digits
 '\' + '0' > '൦'
