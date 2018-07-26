@@ -37,9 +37,9 @@ any(consonants) + 'm' > index(consonants,1) 'ം'
 any(vowels) + 'm' > index(vowels,1) 'ം'
 any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
 
-store(chills) 'ൺൻർൽൾൿം'
-store(chillSource) 'NnrlLcm'
-store(chillBases) "ണനരലളകമ"
+store(chills) 'ൺൻർൽൾൿ'
+store(chillSource) 'NnrlLc'
+store(chillBases) "ണനരലളക"
 
 c produce chill
 + any(chillSource) > index(chills,1)
@@ -171,8 +171,8 @@ store(thickConsonants) "ഖഘഛഝഠഢഥധഫഭഷഴ"
 
 store(cDirectSmallValues)  'ബദഫഗഹജകമപസവവയശ'
 store(cDirectSmallKeys) 'bdfghjkmpsvwyz'
-store(cDirectCapsValues) 'ഡശട'
-store(cDirectCapsKeys) 'DST'
+store(cDirectCapsValues) 'ഡശടഫ'
+store(cDirectCapsKeys) 'DSTF'
 
 any(thinConsonants) '്' + 'h' > index(thickConsonants,1) '്' 
 any(consonants) '്' + 'a' > index(consonants,1)
@@ -316,7 +316,7 @@ any(chills) U+200C + 'K' > index(chills,1) 'ക്ക്'
 any(chills) U+200C + 'M' > index(chills,1) 'മ്മ്'
 + 'P' > 'പ്പ്'
 any(chills) U+200C + 'P' > index(chills,1) 'പ്പ്'
-+ 'Q' > 'ക്യ്'
++ 'Q' > 'ക്യു'
 any(chills) U+200C + 'Q' > index(chills,1) 'ക്യ്'
 + 'V' > 'വ്വ്'
 any(chills) U+200C + 'V' > index(chills,1) 'വ്വ്'
