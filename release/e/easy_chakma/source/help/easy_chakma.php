@@ -1,18 +1,9 @@
 <?php
   $pagename = "Easy Chakma Keyboard Help";
   $pagetitle = "Easy Chakma Keyboard Help";
-  require_once('header.php');
-?>
-
-<html>
-
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
+  $pagestyle = <<<END
+   /* Font Definitions */
+@font-face
 	{font-family:Helvetica;
 	panose-1:2 11 6 4 2 2 2 2 2 4;}
 @font-face
@@ -1993,14 +1984,9 @@ div.WordSection1
 	{margin-bottom:0in;}
 ul
 	{margin-bottom:0in;}
--->
-</style>
-
-</head>
-
-<body lang=EN-US link=blue vlink=purple>
-
-<div class=WordSection1>
+END;
+  require_once('header.php');
+?>
 
 <p class=MsoNoSpacing><b><span style='font-size:12.0pt'>&nbsp;</span></b></p>
 
@@ -2074,29 +2060,9 @@ settings (Key press) of the Keyboard.  </span></p>
 
 <p class=MsoNoSpacing><span style='font-size:12.0pt'>&nbsp;</span></p>
 
-<p class=MsoNoSpacing><span style='font-size:12.0pt'>&nbsp;</span></p>
-
 <p class=MsoNoSpacing align=center style='text-align:center'><b><span
 style='font-size:27.0pt'><img width=567 height=339 id="Picture 8"
 src="images/image001.jpg"></span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
 
 <p class=MsoNoSpacing><b><span style='font-size:14.0pt'>&nbsp;</span></b></p>
 
@@ -2136,20 +2102,6 @@ color:#00B0F0'>&#69954;</span></b><b><span style='font-size:14.0pt;color:#00B0F0
 rightmost key on the fourth row (U+11145).</span></b></p>
 
 <p class=MsoNoSpacing><b>&nbsp;</b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-
-<p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
 
 <p class=MsoNoSpacing><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
 
@@ -2617,9 +2569,7 @@ Settings</span></b></p>
   <td width="32%" valign=top style='width:32.44%;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='line-height:normal'><span style='font-family:"Arial Black",sans-serif'>Shift+</span><span
-  style='font-family:"Arial Black",sans-serif'>&#69930;&#69907;&#69919;Semi-c</span><span
-  style='font-family:"Arial Black",sans-serif'>olon</span></p>
+  <p class=MsoNormal style='line-height:normal'><span style='font-family:"Arial Black",sans-serif'>Shift+Semi-colon</span></p>
   </td>
  </tr>
  <tr>
@@ -3155,22 +3105,7 @@ Chakma Font please contact with Bivuti Chakma (Suz Moriz) </span></p>
 
 <p class=MsoNoSpacing>&nbsp;</p>
 
-<p class=MsoNoSpacing>&nbsp;</p>
-
-<p class=MsoNoSpacing>&nbsp;</p>
-
-<p class=MsoNoSpacing>&nbsp;</p>
-
-<p class=MsoNoSpacing><span style='font-size:10.0pt'>&nbsp;</span></p>
-
-<p class=MsoNoSpacing><span style='font-size:10.0pt'>&nbsp;</span></p>
-
-<p class=MsoNoSpacing><span style='position:absolute;z-index:251677184;
-margin-left:-176px;margin-top:29px;width:33px;height:24px'><img width=33
-height=24 src="images/image007.png" alt=39></span><span
-style='position:absolute;z-index:251680256;margin-left:960px;margin-top:699px;
-width:33px;height:24px'><img width=33 height=24
-src="images/image008.png" alt=42></span><span
+<p class=MsoNoSpacing><span
 style='font-size:14.0pt'>Typing Guide Lines Example with Cucengya Kaa [</span><span
 style='font-size:14.0pt;font-family:RibengUni'>&#69895;</span><span
 style='font-size:14.0pt'>]</span></p>
@@ -13900,21 +13835,10 @@ line-height:150%;font-family:RibengUni'>&#69894;  &#69891;&#69902;&#69920;&#699
 <p class=MsoNoSpacing>&nbsp;</p>
 
 <p class=MsoNoSpacing><span style='position:relative;z-index:-1894560256'><span
-style='position:absolute;left:889px;top:-10033px;width:135px;height:1px'><img
-width=135 height=1 src="images/image009.png"></span></span></p>
+style='position:absolute;left:1590px;top:-100px;width:135px;height:0px'><img
+width="300" height="100" src="images/image009.png"></span></span></p>
 
-<p class=MsoNoSpacing>&nbsp;</p>
 
-<p class=MsoNoSpacing>&nbsp;</p>
-
-<p class=MsoNoSpacing><i><u><span style='font-size:14.0pt'><span
- style='text-decoration:none'>&nbsp;</span></span></u></i></p>
-
-<p class=MsoNoSpacing><i><u><span style='font-size:14.0pt;color:#00B050'><span
- style='text-decoration:none'>&nbsp;</span></span></u></i></p>
-
-<p class=MsoNoSpacing><i><u><span style='font-size:14.0pt;color:#00B050'><span
- style='text-decoration:none'>&nbsp;</span></span></u></i></p>
 
 <p class=MsoNoSpacing><i><u><span style='font-size:14.0pt;color:#00B050'>About <span
 class=MsoHyperlink><b><span style='color:#00B050'><a href="http://hilledu.com/"><span
@@ -13998,19 +13922,4 @@ style='color:#00B050'>Keyman team</span></a></span></span> for implementation
 the Chakma language over the globe. Also working on CLDR Project of Unicode
 Consortium as a indivisual contributor from Bangladesh</span></i></b><b><i>. </i></b></p>
 
-<p class=MsoNoSpacing>&nbsp;</p>
-
-<p class=MsoNoSpacing>&nbsp;</p>
-
-<p class=MsoNoSpacing>&nbsp;</p>
-
-<p class=MsoNoSpacing align=right style='text-align:right'><span
-style='font-size:14.0pt;color:black'>&nbsp;</span></p>
-
-<p class=MsoNoSpacing>&nbsp;</p>
-
-</div>
-
-</body>
-
-</html>
+<p><b>For the PDF version of the this documentation, click <a href="Guideline.pdf">here</a> to download.</b></p>
