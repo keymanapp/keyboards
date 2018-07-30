@@ -4,7 +4,7 @@ c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&VERSION) '9.0'
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.0.3'
+store(&KEYBOARDVERSION) '2.0.4'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -35,6 +35,7 @@ any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
 c special for m
 any(consonants) + 'm' > index(consonants,1) 'ം'
 any(vowels) + 'm' > index(vowels,1) 'ം'
+any(vowelsigns) + 'm' > index(vowelsigns,1) 'ം'  
 any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
 
 store(chills) 'ൺൻർൽൾൿ'
@@ -46,21 +47,23 @@ c produce chill
 any(chills) U+200C + any(chillSource) > index(chills,1) index(chills,3)
 
 c chill breakers
-any(chills) + '~' > index(chillBases,1) '്'
-any(chills) + 'a' > index(chillBases,1)
-any(chills) + 'A' > index(chillBases,1) 'ാ'
-any(chills) + 'i' > index(chillBases,1) 'ി'
-any(chills) + 'I' > index(chillBases,1) 'ീ'
-any(chills) + 'u' > index(chillBases,1) 'ു'
-any(chills) + 'U' > index(chillBases,1) 'ൂ'
-any(chills) + 'R' > index(chillBases,1) 'ൃ'
-any(chills) + 'e' > index(chillBases,1) 'െ'
-any(chills) + 'E' > index(chillBases,1) 'േ'
-any(chills) + 'E' > index(chillBases,1) 'േ'
-any(chills) + 'o' > index(chillBases,1) 'ൊ'
-any(chills) + 'O' > index(chillBases,1) 'ോ'
-any(chills) + 'y' > index(chillBases,1) '്യ്'
-any(chills) + 'R' > index(chillBases,1) 'ൃ'            
+store(chills_anu) 'ൺൻർൽൾൿം'
+store(chill_anu_Bases) "ണനരലളകമ"
+any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
+any(chills_anu) + 'a' > index(chill_anu_Bases,1)
+any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
+any(chills_anu) + 'i' > index(chill_anu_Bases,1) 'ി'
+any(chills_anu) + 'I' > index(chill_anu_Bases,1) 'ീ'
+any(chills_anu) + 'u' > index(chill_anu_Bases,1) 'ു'
+any(chills_anu) + 'U' > index(chill_anu_Bases,1) 'ൂ'
+any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'
+any(chills_anu) + 'e' > index(chill_anu_Bases,1) 'െ'
+any(chills_anu) + 'E' > index(chill_anu_Bases,1) 'േ'
+any(chills_anu) + 'E' > index(chill_anu_Bases,1) 'േ'
+any(chills_anu) + 'o' > index(chill_anu_Bases,1) 'ൊ'
+any(chills_anu) + 'O' > index(chill_anu_Bases,1) 'ോ'
+any(chills_anu) + 'y' > index(chill_anu_Bases,1) '്യ്'
+any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'            
 'ർ' + 'r' > 'റ്' c Ben's addition
 'ന്ര്' + 'r' > 'ൻറ്' c Ben's addition
 any(chills) + 'r' > index(chillBases,1) '്ര്' c Ben's addition
