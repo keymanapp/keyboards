@@ -1,7 +1,7 @@
 Aramaic (Hebrew layout) Keyboard Change History
 =======================
 
-1.2 (1 August 2018)
+1.2 (30 July 2018)
 -----------------
 * Migrated to GitHub
 * Split package with 3 keyboards into separate packages
