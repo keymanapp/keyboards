@@ -230,8 +230,15 @@ c ['ല്പ്p','lp','ൽപ്പ്'],
 c ['([ക-ഹ])്ല്l', 'L', '$2\u0d62'],
 c any(consonants) '്ല്' deadkey(capl) + 'l' > index(consonants,1) U+0D62
 
-store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>_~'
-any(escapable) '\' + '\' > index(escapable,1)
+c Bypassing transliteration (Solve Issue: https://github.com/beniza/keyboards/issues/2)
++ '=' > dk(1)
+dk(1) + '=' > '=' c to provide a way to keyin an actual '='                                                        
+
+c Experimental: the sign chars at the end are added for enabling special strings such as web addresses or email ids. 
+c Warning: treating = as an escapable can create inadvertent consequences as there may be cases to treat is as the dk. 
+store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>_~@.=' 
+dk(1) + any(escapable) > index(escapable, 2)     
+any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 
 'ന്ന്' + 'j' > 'ഞ്ഞ്'
 'ന്ന്' + 'g' > 'ങ്ങ്'
