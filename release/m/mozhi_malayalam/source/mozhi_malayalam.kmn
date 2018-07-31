@@ -48,6 +48,7 @@ any(chills) U+200C + any(chillSource) > index(chills,1) index(chills,3)
 
 c legacy chillu support (Solve Issue: https://github.com/beniza/keyboards/issues/5)
 any(chills) + '^' > index(chillBases, 1) '്' U+200D
+any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, but I'm adding this to cycle between atomic and sequence chillu
 
 c Treat anusvaram as chillu (Solve Issue: https://github.com/beniza/keyboards/issues/1)
 c chill breakers
