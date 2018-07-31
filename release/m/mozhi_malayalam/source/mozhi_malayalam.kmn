@@ -4,7 +4,7 @@ c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&VERSION) '9.0'
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.0.1'
+store(&KEYBOARDVERSION) '2.0.4'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -35,6 +35,7 @@ any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
 c special for m
 any(consonants) + 'm' > index(consonants,1) 'ം'
 any(vowels) + 'm' > index(vowels,1) 'ം'
+any(vowelsigns) + 'm' > index(vowelsigns,1) 'ം'  
 any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
 
 store(chills) 'ൺൻർൽൾൿ'
@@ -46,21 +47,23 @@ c produce chill
 any(chills) U+200C + any(chillSource) > index(chills,1) index(chills,3)
 
 c chill breakers
-any(chills) + '~' > index(chillBases,1) '്'
-any(chills) + 'a' > index(chillBases,1)
-any(chills) + 'A' > index(chillBases,1) 'ാ'
-any(chills) + 'i' > index(chillBases,1) 'ി'
-any(chills) + 'I' > index(chillBases,1) 'ീ'
-any(chills) + 'u' > index(chillBases,1) 'ു'
-any(chills) + 'U' > index(chillBases,1) 'ൂ'
-any(chills) + 'R' > index(chillBases,1) 'ൃ'
-any(chills) + 'e' > index(chillBases,1) 'െ'
-any(chills) + 'E' > index(chillBases,1) 'േ'
-any(chills) + 'E' > index(chillBases,1) 'േ'
-any(chills) + 'o' > index(chillBases,1) 'ൊ'
-any(chills) + 'O' > index(chillBases,1) 'ോ'
-any(chills) + 'y' > index(chillBases,1) '്യ്'
-any(chills) + 'R' > index(chillBases,1) 'ൃ'            
+store(chills_anu) 'ൺൻർൽൾൿം'
+store(chill_anu_Bases) "ണനരലളകമ"
+any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
+any(chills_anu) + 'a' > index(chill_anu_Bases,1)
+any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
+any(chills_anu) + 'i' > index(chill_anu_Bases,1) 'ി'
+any(chills_anu) + 'I' > index(chill_anu_Bases,1) 'ീ'
+any(chills_anu) + 'u' > index(chill_anu_Bases,1) 'ു'
+any(chills_anu) + 'U' > index(chill_anu_Bases,1) 'ൂ'
+any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'
+any(chills_anu) + 'e' > index(chill_anu_Bases,1) 'െ'
+any(chills_anu) + 'E' > index(chill_anu_Bases,1) 'േ'
+any(chills_anu) + 'E' > index(chill_anu_Bases,1) 'േ'
+any(chills_anu) + 'o' > index(chill_anu_Bases,1) 'ൊ'
+any(chills_anu) + 'O' > index(chill_anu_Bases,1) 'ോ'
+any(chills_anu) + 'y' > index(chill_anu_Bases,1) '്യ്'
+any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'            
 'ർ' + 'r' > 'റ്' c Ben's addition
 'ന്ര്' + 'r' > 'ൻറ്' c Ben's addition
 any(chills) + 'r' > index(chillBases,1) '്ര്' c Ben's addition
@@ -227,8 +230,15 @@ c ['ല്പ്p','lp','ൽപ്പ്'],
 c ['([ക-ഹ])്ല്l', 'L', '$2\u0d62'],
 c any(consonants) '്ല്' deadkey(capl) + 'l' > index(consonants,1) U+0D62
 
-store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>_~'
-any(escapable) '\' + '\' > index(escapable,1)
+c Bypassing transliteration (Solve Issue: https://github.com/beniza/keyboards/issues/2)
++ '=' > dk(1)
+dk(1) + '=' > '=' c to provide a way to keyin an actual '='                                                        
+
+c Experimental: the sign chars at the end are added for enabling special strings such as web addresses or email ids. 
+c Warning: treating = as an escapable can create inadvertent consequences as there may be cases to treat is as the dk. 
+store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>_~@.=' 
+dk(1) + any(escapable) > index(escapable, 2)     
+any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 
 'ന്ന്' + 'j' > 'ഞ്ഞ്'
 'ന്ന്' + 'g' > 'ങ്ങ്'
