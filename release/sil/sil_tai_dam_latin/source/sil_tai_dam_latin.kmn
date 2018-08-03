@@ -1,20 +1,23 @@
-﻿c Language (writing system) code should be 'blt-Latn', but they don't let me include the script.
+﻿c The Tai Dam Latin orthography is based on the Vietnamese alphabet.
+c Layout is optimized for most frequent Tai Dam tone marks.
+c Keyboard produces NFD data.
 store(&version) '9.0'
-store(&NAME) 'Tai Dam - Latin'
+store(&NAME) 'Tai Dam Latin (SIL)'
 store(&BITMAP) 'sil_tai_dam_latin.ico'
-store(&copyright) "Copyright SIL International, 2009"
+store(&COPYRIGHT) 'Copyright © 2009-2018 SIL International'
 store(&ETHNOLOGUECODE) 'blt'    
-store(&MESSAGE) 'Latin (i.e.Vietnamese) alphabet for Tai Dam language; Optimized layout; Decomposed output.'
-store(&KEYBOARDVERSION) '1.3'
+store(&MESSAGE) 'Latin-script keyboard for Tai Dam language'
+store(&KEYBOARDVERSION) '1.4'
 
 c =====================================================================
 c Press a key twice to produce the character originally assigned to it.
 c =====================================================================
+store(&VISUALKEYBOARD) 'sil_tai_dam_latin.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
 
-store(VowelBase) "aAeEiIoOuUyY"
+store(VowelBase) "aAeEiIoOuU"
 store(VowelDiacritic) U+0302 U+0306 U+031B  					c combining circumflex, breve, and horn
 store(ToneDiacritic) U+0300 U+0301 U+0303 U+0304 U+0309 U+0323	c combining grave, acute, tilde, macron, hook, dot below
 
