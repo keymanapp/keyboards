@@ -13,7 +13,7 @@
 
 <h1>Keyboards</h1>
 <p style="text-align: justify;">
-    With the users' pitfall in typing Khmer words in mind, Khmer Angkor focuses on the unification of the character orders and spelling rules. These make Khmer Angkore uniquely different from any other keyboards. Khmer Angkor's keyboard layouts were adopted from NiDA keyboard which is widely used at the present.
+    With the users' pitfall in typing Khmer words in mind, Khmer Angkor focuses on the unification of the character orders and spelling rules. These make Khmer Angkor uniquely different from any other keyboards. Khmer Angkor's keyboard layouts were adopted from NiDA keyboard which is widely used at the present.
 	Here is the keyboard layout:
 </p>
 
@@ -24,9 +24,12 @@
 <p>The order of characters is:</p>
 <p><center><b>Consonant + Subscript(s) + Consonant Shifter + Vowel + Diacritic</b></center></p>
 
-<p>For more details on the Khmer Angkor Keyboard, please find the documentation included in this package.</p> 
-<p>To see the documentation in English, please click <a href="KAK_Documentation_EN.pdf">here</a>.</p> 
-<p>To see the documentation in Khmer, please click <a href="KAK_Documentation_KH.pdf">here</a>.</p>
+<p>For more details on the Khmer Angkor Keyboard, please find the documentations included below.</p> 
+<p>Here is the documentation in English:</p> 
+<p><embed src="KAK_Documentation_EN.pdf" width="70%" height="100%" type='application/pdf'></p>
+<p>Here is the documentation in Khmer:</p>
+<p><embed src="KAK_Documentation_KH.pdf" width="70%" height="100%" type='application/pdf'></p>
+
 <h1>Fonts</h1>
 <p style="text-align: justify;">
     To get Khmer fonts, you may visit one of the three sources below:

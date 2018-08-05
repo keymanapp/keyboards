@@ -3,7 +3,6 @@
   $pagetitle = 'Rachitrali-Dameli Keyboard Help';
   require_once('header.php');
 ?>
-<body style="max-width:600px;">
 
 <h2>Introduction</h2>
 <p>This keyboard is designed by Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral, Khyber Pakhtunkhwa of Pakistan for the Dameli language spoken in Domel Valley in the Chitral District of Khyber Pakhtunkhwa province of Pakistan. 
@@ -111,5 +110,4 @@ SOFTWARE.</p></div>
 <li><a href='https://keyman.com/keyboards/languages/dml'>Other keyboards for these languages</a></li>
 </ul>
 
-</body>
 
