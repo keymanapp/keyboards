@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Balochi Phonetic
-* Copyright:      (C) 2017 SIL International
-* Version:        1.1
+* Copyright:      (C) 2017-2018 SIL International
+* Version:        1.1.1
 * Keyman Version: 9.0
 * BCP-47 codes:   bcc-Arab bal-Arab bgn-Arab bgp-Arab
 
@@ -17,8 +17,9 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Home:     <http://keymankeyboards.com/>
- * Contact:  <support@keyman.com>
+ * Home:     https://keyman.com/keyboards/balochi_phonetic
+ * Help:     https://help.keyman.com/keyboard/balochi_phonetic
+ * Contact:  https://community.software.sil.org/c/keyman
  
 Supported Platforms
 -------------------

@@ -18,6 +18,11 @@ menu item. Similar keyboards are also available for other desktop and mobile pla
 
 <h2>History</h2>
 
+<h3>1.1.1 (18 Jun 2018</h3>
+<ul>
+  <li>No change. Package version to match keyboard.</li>
+</ul>
+
 <h3>1.1 (6 Sep 2017)</h3>
 <ul>
   <li>Keys rearranged, damma added and Persian numbers added.</li>
