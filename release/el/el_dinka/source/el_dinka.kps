@@ -1,55 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.928.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1108.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Dinka Basic (DLIA)</Name>
-    <Version URL="">2.6</Version>
-    <Copyright URL="">© 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia</Copyright>
-    <Author URL="mailto:lang.support@gmail.com">Andrew Cunningham</Author>
+    <Name URL="">Thuɔŋjäŋ</Name>
+    <Version URL=""></Version>
+    <Copyright URL="">© 2015-2018 Enabling Languages</Copyright>
+    <Author URL=""></Author>
+    <WebSite URL="https://enabling-languages.github.io/dinka">https://enabling-languages.github.io/dinka</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
     <File>
       <Name>..\build\el_dinka.kvk</Name>
       <Description>File el_dinka.kvk</Description>
@@ -63,11 +36,62 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>dinka_keyboard.png</Name>
-      <Description>File dinka_keyboard.png</Description>
+      <Name>welcome\el_dinkaU_.png</Name>
+      <Description>File el_dinkaU_.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>welcome\el_dinkaU_RA.png</Name>
+      <Description>File el_dinkaU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\el_dinkaU_S.png</Name>
+      <Description>File el_dinkaU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\el_dinkaU_SRA.png</Name>
+      <Description>File el_dinkaU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\build\el_dinka.js</Name>
+      <Description>File el_dinka.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Thuɔŋjäŋ</Name>
+      <ID>el_dinka</ID>
+      <Version></Version>
+      <Languages>
+        <Language ID="din-Latn">Dinka (Latin)</Language>
+        <Language ID="dip-Latn">Northeastern Dinka (Latin)</Language>
+        <Language ID="diw-Latn">Northwestern Dinka (Latin)</Language>
+        <Language ID="dib-Latn">South Central Dinka (Latin)</Language>
+        <Language ID="dks-Latn">Southeastern Dinka (Latin)</Language>
+        <Language ID="dik-Latn">Southwestern Dinka (Latin)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
