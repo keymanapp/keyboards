@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Myanmar3 လက်ကွက် အသုံးပြုပုံ';
-  $pagetitle = 'Myanmar3 လက်ကွက် အသုံးပြုပုံ';
+  $pagename = 'Myanmar3 (SIL) လက်ကွက် အသုံးပြုပုံ';
+  $pagetitle = 'Myanmar3 (SIL) လက်ကွက် အသုံးပြုပုံ';
   require_once('header.php');
 ?>
 
