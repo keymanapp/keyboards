@@ -1,14 +1,10 @@
 <?php 
   $pagename = 'BJ-OjiCree (Kingfisher) Keyboard Help';
   $pagetitle = 'BJ-OjiCree (Kingfisher) Keyboard Help';
-  // Header we will tidy up later  
   require_once('header.php');
-
-
 ?>
 
-
-  <p>Keyboard &#169; 2016 Copyright (c) 2016 Bill Jancewicz</p>
+  <p>Keyboard Copyright (c) 2016-2018 Bill Jancewicz</p>
   <section id='overview'>
 	<h2>Overview</h2>
 	<p>This keyboard is designed for the Oji-Cree syllabic script used in Northwestern Ontario, Canada. The keyboard has been developed to make it easy to type all of the symbols necessary for Oji-Cree. This keyboard is fully compliant with the <a href='http://unicode.org/standard/standard.html'>Unicode Standard</a>.</p>
@@ -146,15 +142,15 @@
 			</tr>		
 		</tbody>		
 	</table>
-<p></p>
+  <p></p>
   </section>	
    
   <section id='history'>
-	<h2>Version History</h2>
+    <h2>Version History</h2>
 
-  <dl>
-    <dt>Version 9.0, 2016</dt>
-    <dd>2016, Initial version</dd>
-    
-  </dl>
+    <ul>
+      <li>Version 9.0.1 released 2016: Initial version</li>
+      <li>Version 9.0.2 released 2018: Add touch keyboard to package</li>
+	    <li>Version 9.0.3 released 2018: Fixed one bug and added platform support for windows and macos</li>
+    </ul>    
   </section>
