@@ -29,5 +29,5 @@
 * Added 25CC to consU   
 
 ## 1.0 (28-May-2004)
-* Initial version
+* Initial version developed by Keith Stribley based on prior work by Martin Hosken
 
