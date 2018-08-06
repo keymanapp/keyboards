@@ -5,7 +5,7 @@ c This Layout has been designed to resemble that used by WinMyanmar Systems,
 c however, it is much simplified because of the advantages of Unicode
 c technology. Some keys have changed as a result.
 c 
-c Copyright (C) 2004 Keith Stribley
+c Copyright (C) 2004-2018 SIL International and Keith Stribley
 c Bugs/Comments: http://www.thanlwinsoft.org/
 c Distributable under the terms of the GNU Lesser General Public License.
 c You should have been received a copy of the LGPL with this layout.
@@ -29,12 +29,11 @@ store(&NAME) 'myWin Extended (SIL)'
 c Comment out the line below to compile for SCIM
 store(&Copyright) "(c) 2004-2018 SIl International"
 store(sil_myanmar_mywinext.ico)
-c store(&VISUALKEYBOARD) 'sil_myanmar_mywinext.kvks'
-store(&LAYOUTFILE) 'sil_myanmar_mywinext.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'sil_myanmar_mywinext.kvks'
 c HOTKEY  "^+W"
-store(&TARGETS) 'any'
+store(&TARGETS) 'windows macosx linux web'
 store(&KEYBOARDVERSION) '1.4'
-store(&BITMAP) 'sil_myanmar_mywinext.ico'
+store(&BITMAP) 'sil_myanmar_mywinext.png'
 store(&VISUALKEYBOARD) 'sil_myanmar_mywinext.kvks'
 
 begin Unicode > use(Main)

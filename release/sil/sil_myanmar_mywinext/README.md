@@ -1,6 +1,6 @@
 # myWin Extended (SIL) Keyboard
 
-Copyright (C) 2004-2018 SIL International
+Copyright (C) 2004-2018 SIL International and Keith Stribley
 
 Version 1.4
 
@@ -11,7 +11,5 @@ Burmese Keyboard for Unicode Encoding. This Layout has been designed to resemble
  * Windows
  * macOS
  * Web
- * Mobile Web
- * iOS
- * Android
+
 
