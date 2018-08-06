@@ -3,7 +3,6 @@
   $pagetitle = 'Rachitrali-Balti Keyboard Help';
   require_once('header.php');
 ?>
-<body style="max-width:600px;">
 
 <h2>Introduction</h2>
 <p>This keyboard is designed for the Balti language spoken in Gilgit-Baltistan of Northern Pakistan in its standard Perso-Arabic script, as used Pakistan. It is based on phonetic keyboard for Balti Language developed by Pakistani linguist, author, researcher, scientist,  Inventor and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Balti Keyboard.
@@ -97,6 +96,5 @@ SOFTWARE.</p></DIV>
 <li><a href='https://keyman.com/keyboards/languages/bft'>Other keyboards for these languages</a></li>
 </ul>
 
-</body>
 
 
