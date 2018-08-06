@@ -1,0 +1,103 @@
+﻿c SIL's Tai Dam Lao keyboard is designed for typing Tai Dam text using the Lao script. 
+c The layout is mapped phonetically onto a US English keyboard. 
+
+c History:
+c July 2018: Renamed Tai Dam Lao (SIL) keyboard. 
+c                    Added Lao numerals
+c                    Added Lao characters that are not used in Tai Dam to unused keys.
+c                    Repackaged to meet documentation/metadata standards of new keyboard repository.
+c 2016: File header update to replace deprecated key terms with store commands.
+c before 2016: various older versions using hacked fonts, and then converted to Unicode.  
+
+store(&VERSION) '9.0'
+store(&NAME) 'Tai Dam Lao (SIL)'
+store(&MESSAGE) 'Keyboard is optimized for typing the Tai Dam langugage with the Lao script'
+store(&COPYRIGHT) '© SIL International 2016-2018'
+store(&KEYBOARDVERSION) '2.0'
+store(&BITMAP) 'sil_tai_dam_lao.ico'
+store(&TARGETS) 'windows'
+store(&MESSAGE) "SIL's Tai Dam Lao keyboard is distributed under The MIT License (MIT)."
+store(&ETHNOLOGUECODE) 'blt'
+store(&VISUALKEYBOARD) 'sil_tai_dam_lao.kvks'
+c store(ArabicNumeral) '0123456789'
+c store(LaoNumeral) '໐໑໒໓໔໕໖໗໘໙'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [NCAPS SHIFT K_C] > '໌'
++ [NCAPS SHIFT K_D] > '໊'
++ [NCAPS SHIFT K_RBRKT] > 'ຯ'
++ [NCAPS SHIFT K_B] > 'ໟ'
++ [NCAPS SHIFT K_P] > 'ຼ'
++ [NCAPS SHIFT K_LBRKT] > 'ໆ'
++ [NCAPS K_SLASH] > 'ໃ'
++ [NCAPS SHIFT K_K] > 'ໞ'
++ [NCAPS K_D] > 'ດ'
++ [NCAPS K_G] > 'ຫງ'
++ [NCAPS K_V] > 'ຫວ'
+
++ [NCAPS K_A] > U+0eb2
++ [NCAPS SHIFT K_A] > U+0eb1
++ [NCAPS K_B] > U+0e9a
++ [NCAPS K_C] > U+0e88
++ [NCAPS K_E] > U+0ec1
++ [NCAPS SHIFT K_E] > U+0ec0
++ [NCAPS K_F] > U+0e9d
++ [NCAPS SHIFT K_F] > U+0e9f
++ [NCAPS SHIFT K_G] > U+0e87
++ [NCAPS K_H] > U+0eab
++ [NCAPS SHIFT K_H] > U+0eae
++ [NCAPS K_I] > U+0eb5
++ [NCAPS SHIFT K_I] > U+0eb4
++ [NCAPS K_J] > U+0ea2
++ [NCAPS SHIFT K_J] > U+0ebd
++ [NCAPS K_K] > U+0e81
++ [NCAPS K_L] > U+0eab U+0ebc
++ [NCAPS SHIFT K_L] > U+0ea5
++ [NCAPS K_M] > U+0edd
++ [NCAPS SHIFT K_M] > U+0ea1
++ [NCAPS K_N] > U+0edc
++ [NCAPS SHIFT K_N] > U+0e99
++ [NCAPS K_O] > U+0ebb
++ [NCAPS SHIFT K_O] > U+0ec2
++ [NCAPS K_P] > U+0e9b 
++ [NCAPS K_Q] > U+0e96
++ [NCAPS SHIFT K_Q] > U+0e97
++ [NCAPS K_R] > U+0ec8
++ [NCAPS SHIFT K_R] > U+0ec9
++ [NCAPS K_S] > U+0eaa
++ [NCAPS SHIFT K_S] > U+0e8a
++ [NCAPS K_T] > U+0e95
++ [NCAPS SHIFT K_T] > U+0ecb
++ [NCAPS K_U] > U+0eb8
++ [NCAPS SHIFT K_U] > U+0eb9
++ [NCAPS SHIFT K_V] > U+0ea7
++ [NCAPS K_W] > U+0eb3
++ [NCAPS SHIFT K_W] > U+0e8d
++ [NCAPS K_X] > U+0e82
++ [NCAPS SHIFT K_X] > U+0e84  
++ [NCAPS K_Y] > U+0eb7
++ [NCAPS SHIFT K_Y] > U+0eb6
++ [NCAPS K_Z] > U+0ead
++ [NCAPS SHIFT K_Z] > U+0eb0  
++ [NCAPS K_LBRKT] > U+0ec4
++ [NCAPS K_RBRKT] > U+0ecd
++ [NCAPS K_BKQUOTE] > U+0e9c
++ [NCAPS SHIFT K_BKQUOTE] > U+0e9e
+
+c numerals
+c '&' + any(ArabicNumeral) > index(LaoNumeral,1)   
+c any(LaoNumeral) + any(ArabicNumeral) > context index(LaoNumeral,2)
++ [CAPS K_1] > '໑'
++ [CAPS K_2] > '໒'
++ [CAPS K_3] > '໓'
++ [CAPS K_4] > '໔'
++ [CAPS K_5] > '໕'
++ [CAPS K_6] > '໖'
++ [CAPS K_7] > '໗'
++ [CAPS K_8] > '໘'
++ [CAPS K_9] > '໙'
++ [CAPS K_0] > '໐'
+
+c EOF
