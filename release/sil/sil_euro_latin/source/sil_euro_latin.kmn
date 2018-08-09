@@ -1,5 +1,5 @@
 ﻿c EuroLatin keyboard for Keyman
-c
+c 
 c If you make changes to this keyboard file, please consider sharing them at:
 c http://www.tavultesoft.com/forums/category.php?ForumSourceID=1&SourceID=348
 
@@ -25,9 +25,7 @@ store(option_key) ''
 
 store(controls)  "`#'" '"' "^%&*~-_:@.|,=\$"
 $keymanonly: store(controls-ralt) [RALT "`"][RALT SHIFT "#"] [RALT "'"] [RALT SHIFT '"'] [RALT SHIFT "^"] [RALT SHIFT "%"] [RALT SHIFT "&"] [RALT SHIFT "*"] [RALT SHIFT "~"] [RALT "-"] [RALT SHIFT "_"] [RALT SHIFT ":"] [RALT SHIFT "@"] [RALT "."] [RALT SHIFT "|"] [RALT ","] [RALT "="] [RALT "\"] [RALT SHIFT "$"]
-
-
-
+$keymanonly: store(controls-rctrl) [RCTRL "`"][RCTRL SHIFT "#"] [RCTRL "'"] [RCTRL SHIFT '"'] [RCTRL SHIFT "^"] [RCTRL SHIFT "%"] [RCTRL SHIFT "&"] [RCTRL SHIFT "*"] [RCTRL SHIFT "~"] [RCTRL "-"] [RCTRL SHIFT "_"] [RCTRL SHIFT ":"] [RCTRL SHIFT "@"] [RCTRL "."] [RCTRL SHIFT "|"] [RCTRL ","] [RCTRL "="] [RCTRL "\"] [RCTRL SHIFT "$"]
 
 if(&platform = 'touch') + any(controls) > use(Touch)
 
@@ -201,6 +199,8 @@ c "<" + "<" > '«'
 c ">" + ">" > '»'
 $keymanonly: if(option_key = 'RALT') "<" + [RALT SHIFT '<'] > '«'
 $keymanonly: if(option_key = 'RALT') ">" + [RALT SHIFT '>'] > '»'
+$keymanonly: if(option_key = 'RCTRL') "<" + [RCTRL SHIFT '<'] > '«'
+$keymanonly: if(option_key = 'RCTRL') ">" + [RCTRL SHIFT '>'] > '»'
 if(option_key = '') "<" + "<" > '«'
 if(option_key = '') ">" + ">" > '»'
 c "<" + "<" > '«'
@@ -235,6 +235,7 @@ c Rules for the accent character itself (type it twice)
 c + any(controls) > index(controls, 1) dk(1)
 if(option_key = '') + any(controls) > index(controls, 2) dk(1)
 $keymanonly: if(option_key = 'RALT') + any(controls-ralt) > index(controls, 2) dk(1)
+$keymanonly: if(option_key = 'RCTRL') + any(controls-rctrl) > index(controls, 2) dk(1)
 
 group(Touch) using keys
 
