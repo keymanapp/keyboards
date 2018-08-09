@@ -18,7 +18,7 @@ The fonts included with these keyboards have been provided by Beth Mardutho: The
 Links
 -----
 
- * Home:     https://keyman.com/keyboards/ayriac_aramaic
+ * Home:     https://keyman.com/keyboards/syriac_aramaic
 
 Supported Platforms
 -------------------
