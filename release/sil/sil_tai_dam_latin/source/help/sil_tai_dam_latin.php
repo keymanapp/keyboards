@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:keys="http://www.tavultesoft.com/xml/keys" xmlns:oskexportdetails="http://www.tavultesoft.com/xml/oskexportdetails">
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
-<title>Tai Dam Latin (SIL) keyboard</title>
+﻿<?php
+  $pagename = 'Tai Dam Latin (SIL) Keyboard Help';
+  $pagetitle = 'Tai Dam Latin (SIL) Keyboard Help';
+  require_once('header.php');
+?>
 <style type="text/css">
         .key { 
             float: left;
@@ -88,9 +89,8 @@
         }
 
     </style>
-</head>
+
 <body>
-<h1>Tai Dam Latin (SIL) keyboard package</h1>
 
 <p>SIL's Tai Dam Latin keyboard has been optimized for typing the Tai Dam language in the Latin script. It can also be used for typing the Tai Dón language in the Latin scrit, or the Vietnamese language.
 
@@ -799,4 +799,3 @@
 
 
 </body>
-</html>
