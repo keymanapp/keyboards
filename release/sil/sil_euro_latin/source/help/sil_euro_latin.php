@@ -38,11 +38,11 @@
 <div style='clear: both'></div>
 
 <h1 class='newpage'>Technical Support</h1>
-<p>You can access this help again from the Keyboard Usage tool on the Keyman Desktop toolba.r</p>
+<p>You can access this help again from the Keyboard Usage tool on the Keyman Desktop toolbar</p>
 
 <h1>Keyboard Source</h1>
 
-<p>This keyboard is available online at <a href='http://eurolatin.keymankeyboards.com/'>eurolatin.keymankeyboards.com</a></p>
+<p>This keyboard is available online at <a href='https://keyman.com/keyboards/sil_euro_latin'>keyman.com/keyboards/sil_euro_latin</a></p>
 
 <h1>Change History</h1>
 <p>1.8: (6 Jul 2018) Ported to GitHub.</p>
