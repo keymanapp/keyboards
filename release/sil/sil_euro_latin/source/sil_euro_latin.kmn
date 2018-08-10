@@ -66,6 +66,8 @@ store(tildeO) 'ãÃẽẼĩĨɫⱢñÑõÕũŨṽṼỹỸ'
 store(tildeK) 'aAeEiIlLnNoOuUvVyY'
 '~' dk(1) + "g" > U+0067 U+0303    c for Guaraní
 '~' dk(1) + "G" > U+0047 U+0303    c for Guaraní
+if(&platform = 'touch') + [T_G_Tilde] > U+0067 U+0303           c for Guaraní on touch layouts
+if(&platform = 'touch') + [SHIFT T_G_Tilde] > U+0047 U+0303     c for Guaraní on touch layouts
 
 
 c -
@@ -81,6 +83,8 @@ store(dieresisO) 'äëḧïöẗüẅẍÿÄËḦÏÖÜẄẌŸ'
 store(dieresisK) 'aehiotuwxyAEHIOUWXY'
 ':' dk(1) + "p" > U+0070 U+0308    c for Romani
 ':' dk(1) + "P" > U+0050 U+0308    c for Romani
+if(&platform = 'touch') + [T_P_Dieresis] > U+0070 U+0308           c for Romani on Touch devices
+if(&platform = 'touch') + [SHIFT T_P_Dieresis] > U+0050 U+0308     c for Romani on Touch devices
 
 c @
 store(ringO) 'åÅůŮẘẙșȘțȚ'
