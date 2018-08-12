@@ -13,7 +13,6 @@ store(&WINDOWSLANGUAGES) 'x044C'
 store(&LANGUAGE) 'x044C'
 begin Unicode > use(main)
 
-
 group(main) using keys
 
 store(consonants) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷസഹളഴറ"
@@ -177,6 +176,24 @@ c vowel signs
 'ഌ' + '\' > 'ൢ'
 'ൡ' + '\' > 'ൣ'
 
+c Stand-alone vowel signs after chandrakkala (Solve Issue: https://github.com/beniza/keyboards/issues/8)
+'്' + 'a' > dk(2)
+dk(2) + 'a' > 'ാ'
+dk(2) + 'i' > 'ൈ'
+dk(2) + 'u' > 'ൗ'
+'്' + 'i' > 'ി'
+'ി' + 'i' > 'ീ'
+'്' + 'u' > 'ു'
+'ു' + 'u' > 'ൂ'   
+'്' + 'R' > 'ൃ'
+'ൃ' + 'R' > 'ൄ'   
+'്' + 'e' > 'െ'
+'െ' + 'e' > 'ീ'
+'്' + 'o' > 'ൊ'   
+'്' + 'O' > 'ോ'   
+'്' + 'o' > 'ൂ'   
+
+c Consonants
 store(thinConsonants) "കഗചജടഡതദപബസശ"
 store(thickConsonants) "ഖഘഛഝഠഢഥധഫഭഷഴ"
 
