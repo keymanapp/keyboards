@@ -1,5 +1,9 @@
 Mozhi Malayalam Keyboard Change History
 =======================
+2.0 (25 July 2018)
+-----------------
+* Checked in Junaid's Code
+
 
 1.2 (29 May 2018)
 -----------------
