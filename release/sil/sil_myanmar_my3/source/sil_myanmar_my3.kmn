@@ -1,0 +1,164 @@
+﻿store(&VERSION) "9.0"
+store(&NAME) "Myanmar3 (SIL)"
+store(&BITMAP) 'sil_myanmar_my3.ico'
+store(&VISUALKEYBOARD) 'sil_myanmar_my3.kvks'
+store(&capsalwaysoff) "1"
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.5'
+store(&ETHNOLOGUECODE) 'mya'
+store(&COPYRIGHT) '© 2015-2018 SIL International'
+
+begin Unicode > use(Main)
+
+ store(baseK)   'qwert' \
+                'yuiop' \
+                "[zxc"  \
+                "vbnQ" \
+                "OP{AKL" \
+                "ZXCVBNM" \
+                '!#@$%^' \
+                '&:|' \
+                '\]' \
+                '`~' \
+                'WERTYUI'
+
+ store(baseU)  U+1006 U+1010 U+1014 U+1019 U+1021 \
+               U+1015 U+1000 U+1004 U+101E U+1005 \
+               U+101F U+1016 U+1011 U+1001 \
+               U+101C U+1018 U+100A U+1008 \
+               U+103F U+100F U+1027 U+1017 U+1012 U+1013 \
+               U+1007 U+100C U+1003 U+1020 U+101A U+1009 U+1026 \
+               U+100D U+100B U+1052 U+1053 U+1054 U+1055 \
+               U+101B U+1002 U+1051 \
+               U+104F U+1029 \
+               U+1050 U+100E \
+               U+101D U+1023 U+104E U+1024 U+104C U+1025 U+104D
+
+
+store(addK) '<>]}'
+store(addU) U+104A U+104B U+1029 U+102A
+
+store(numK)     '1234567890'
+store(numU)     U+1041 U+1042 U+1043 U+1044 U+1045 \
+                U+1046 U+1047 U+1048 U+1049 U+1040
+
+store(aftereK)  'gmh;'
+store(aftereU)  U+102B U+102C U+1037 U+1038
+
+store (aaK)     'gm'
+store (aaU)     U+102B U+102C
+
+store (lDotK)   'h'
+store (lDotU)   U+1037
+
+store (visargaK) ';'
+store (visargaU) U+1038
+
+store(udia1K)    'dD'
+store(udia1U)    U+102D U+102E
+
+store(udia2K)   'JH'
+store(udia2U)   U+1032 U+1036
+
+store(ldiaK)    'kl'
+store(ldiaU)    U+102F U+1030
+
+store(asatK) 'f'
+store(asatU) U+103A
+
+store(consU)    U+1000 U+1001 U+1002 U+1003        U+1005 U+1006 U+1007 \
+                U+1008 U+1009 U+100A U+100B U+100C U+100D U+100E U+100F \
+                U+1010 U+1011 U+1012 U+1013 U+1014 U+1015 U+1016 U+1017 \
+                U+1018 U+1019 U+101A U+101B U+101C U+101D U+101E U+101F \
+                U+1020 U+1021
+
+
+store(mediaK)     'sjSG'
+store(mediaU)     U+103B U+103C U+103E U+103D
+
+store(yDiaK)    's'
+store(yDiaU)    U+103B
+
+store(rDiaK)    'j'
+store(rDiaU)    U+103C
+
+store(wDiaK)    'G'
+store(wDiaU)    U+103D
+
+store(hDiaK)    'S'
+store(hDiaU)    U+103E
+
+store(filler)   U+200B
+
+store(vowelEK)  'a'
+store(vowelEU)  U+1031
+
+store(allDiaU)  U+102F U+1030 U+102D U+102E U+1032 U+1036 U+1037
+store(firstDiaU) U+102D U+102F U+1032
+store(secondDiaU) U+102D U+1036 U+1037 U+102F
+
+store(stackK)   'F'
+store(stackU)   U+1039
+
+group(Main) using keys
++ any(vowelEK) > outs(filler) outs(vowelEU)
++ any(stackK) > outs(stackU)
+any(filler) U+1031 + any(baseK) > index(baseU, 3) U+1031
+U+1031 U+1039 + any(baseK) > U+1039 index(baseU,3) U+1031
+U+1031 + any(mediaK) > index(mediaU, 2) U+1031
+
++ any(addK)> index(addU,1)
++ any(numK) > index(numU, 1)
++ any(baseK) > index(baseU, 1)
++ any(aftereK) > index(aftereU, 1)
++ any(asatK) > outs(asatU)
+
+c + '`' > dk(backquote)
+c dk(backquote) + any(baseK) > U+1039 index(baseu,2)
+
+
+U+101E U+103C U+1031 U+102C + any(asatK) > U+102A
+U+1025 + 'D' > U+1026
+any(ldiaU)+ any(udia1K) > index(udia1U, 2) context
+any(udia2U)+ any(ldiaK)> index(ldiaU, 2) context
+any(udia2U)+ any(udia1K)> index(udia1U, 2) context
+U+1037 + any(udia1K) > index(udia1U, 2) context
+U+1037 + any(udia2K) > index(udia2U, 2) context
+U+1037 + any(ldiaK) > index(ldiaU, 2) context
+U+1036 + 'J'> U+1032 U+1036
+U+1037 + any(aaK) > index(aaU, 2) context
+U+1038 + any(lDotK) > index(lDotU, 2) context
+c U+1037 + any(asatK)> index(asatU,2) U+1037
+U+103A + 'h' > U+1037 U+103A
+
++ any(ldiaK) > index(ldiaU, 1)
++ any(udia1K) > index(udia1U, 1)
++ any(udia2K) > index(udia2U, 1)
+
+
+any(wDiaU) + any(yDiaK) > index(yDiaU, 2) context
+any(hDiaU) + any(yDiaK) > index(yDiaU, 2) context
+any(wDiaU) + any(rDiaK) > index(rDiaU, 2) context
+any(hDiaU) + any(rDiaK) > index(rDiaU, 2) context
+any(hDiaU) + any(wDiaK) > index(wDiaU, 2) context
+
+any(wDiaU) any(hDiaU) + any(yDiaK) > index(yDiaU, 3) context
+any(wDiaU) any(hDiaU) + any(rDiaK) > index(rDiaU, 3) context
+
+any(wDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context
+any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 3) context
+any(wDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context
+any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 3) context
+any(hDiaU) U+1031 + any(wDiaK) > index(wDiaU, 3) context
+
+any(wDiaU) any(hDiaU) U+1031 + any(yDiaK) > index(yDiaU, 4) context
+any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 4) context
+
++ any(mediaK) > index(mediaU, 1)
+
+U+200B U+1031 + [K_BKSP] > nul
+any(baseU) U+1031 + [K_BKSP] > outs(filler) U+1031
+any(mediaU) U+1031 + [K_BKSP]> U+1031
+
+U+1039 any(consU) U+1031 + [K_BKSP] > U+1039 outs(filler) U+1031
+U+1039 any(consU) + [K_BKSP] > nul
