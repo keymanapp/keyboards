@@ -1,6 +1,11 @@
 ﻿c The Tai Dam Latin orthography is based on the Vietnamese alphabet.
 c Layout is optimized for most frequent Tai Dam tone marks.
 c Keyboard produces NFD data.
+
+c =====================================================================
+c Press a key twice to produce the character originally assigned to it.
+c =====================================================================
+
 store(&version) '9.0'
 store(&NAME) 'Tai Dam Latin (SIL)'
 store(&BITMAP) 'sil_tai_dam_latin.ico'
@@ -9,10 +14,8 @@ store(&ETHNOLOGUECODE) 'blt'
 store(&MESSAGE) 'Latin-script keyboard for Tai Dam language'
 store(&KEYBOARDVERSION) '1.4'
 
-c =====================================================================
-c Press a key twice to produce the character originally assigned to it.
-c =====================================================================
 store(&VISUALKEYBOARD) 'sil_tai_dam_latin.kvks'
+store(&TARGETS) 'windows'
 begin Unicode > use(main)
 
 group(main) using keys
