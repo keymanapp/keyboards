@@ -1,37 +1,8 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" />
-<html>
-
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Galaxie Greek (PHonetic) Keyboard</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-
-    <style type="text/css">
-        .lang2,
-        .languageExample {
-            font-family: "Galatia SIL";
-            color: blue
-        }
-        
-        .lang2 {
-            font-size: 150%
-        }
-    </style>
-    <style type="text/css" media="print">
-        .highlightKeys img {
-            display: none
-        }
-        
-        .highlightKeys .key-print {
-            display: inline
-        }
-    </style>
-
-</head>
-
-<body>
-
-    <h1>Galaxie Greek (Phonetic) Keyboard</h1>
+﻿<?php 
+  $pagename = 'Galaxie Greek (Phonetic) Keyboard Help';
+  $pagetitle = 'Galaxie Greek (Phonetic) Keyboard Help';
+  require_once('header.php');
+?>
 
     <p style='margin:0px'>Keyboard &#169; 2004-2018 Galaxie Software and SIL International</p>
 
@@ -753,7 +724,3 @@
         </p>
     </div>
 
-
-</body>
-
-</html>
