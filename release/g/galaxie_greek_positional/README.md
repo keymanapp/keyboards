@@ -3,7 +3,7 @@ Galaxie Greek (PHonetic) Keyboard
 
 Copyright (C) 2004-2018 Galaxie Software and SIL International
 
-Version A.B
+Version 2.2
 
 __DESCRIPTION__
 This keyboard layout is designed for Koine Greek, a trade language of the ancient Mediterranean and the language of the New Testament and Septuagint Scriptures.

@@ -1,7 +1,16 @@
 Galaxie Greek (PHonetic) Keyboard Change History
 =======================
 
-1.0 (1 Jan 2015)
------------------
+## 2.2 (13 Aug 2018)
+* Ported to GitHub
+* Android and iOS support added
 
-* Created by you
+## 2.1 (15 Dec 2009)
+* Full Greek documentation.
+
+## 2.02 (11 Apr 2008) 
+* Fixed Greek: rho + dasia and rho + psili with [ and ] keys.
+
+## 2.01 (13 Mar 2008) 
+ 
+## 2.0 (24 Oct 2007)
