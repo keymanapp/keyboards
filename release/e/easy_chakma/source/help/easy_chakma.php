@@ -145,7 +145,8 @@
 	{font-family:Nikosh;}
 @font-face
 	{font-family:RibengUni;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	src: url("RibengUni-Regular.ttf") format("truetype");}
 @font-face
 	{font-family:BivutiNabaKhamatuChakmA;}
 @font-face
@@ -13835,8 +13836,8 @@ line-height:150%;font-family:RibengUni'>&#69894;  &#69891;&#69902;&#69920;&#699
 <p class=MsoNoSpacing>&nbsp;</p>
 
 <p class=MsoNoSpacing><span style='position:relative;z-index:-1894560256'><span
-style='position:absolute;left:1590px;top:-100px;width:135px;height:0px'><img
-width="300" height="100" src="images/image009.png"></span></span></p>
+style='position:absolute;left:15px;top:-150px;width:135px;height:0px'><img
+width="250" height="150" src="images/image009.png"></span></span></p>
 
 
 
