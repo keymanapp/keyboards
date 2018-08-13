@@ -1,7 +1,6 @@
-Dzongkha Keyboard Change History
+Tai Dam Latin (SIL) Keyboard Change History
 =======================
 
-1.0 (1 Jan 2015)
------------------
+August 2018: version 1.4. Renamed "Tai Dam Latin (SIL)" keyboard. Repackaged to meet documentation/metadata standards of new keyboard repository.
 
-* Created by you
+2009: version 1.0 released.
