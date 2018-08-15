@@ -10,8 +10,8 @@
 href='http://www.BethMardutho.org/'>Beth Mardutho: The Syriac Institute</a>.</p>
   <section id='related'>
 	<h2>Keyboard Layouts</h2>
-<ul><a href="http://help.keyman.com/keyboard/aramaic_hebrew">Aramaic (Hebrew layout)</a> </ul>
-<ul><a href="http://help.keyman.com/keyboard/syriac_arabic">Syriac (Arabic layout)</a> </ul>
-<ul><a href="http://help.keyman.com/keyboard/syriac_phonetic">Syriac (Phonetic layout)</a> </ul>
+<ul><a href="https://help.keyman.com/keyboard/aramaic_hebrew">Aramaic (Hebrew layout)</a> </ul>
+<ul><a href="https://help.keyman.com/keyboard/syriac_arabic">Syriac (Arabic layout)</a> </ul>
+<ul><a href="https://help.keyman.com/keyboard/syriac_phonetic">Syriac (Phonetic layout)</a> </ul>
   </section>
 
