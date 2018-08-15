@@ -4,15 +4,16 @@ c 2008-07-07 Modified to use Unicode by Lorna Priest
 c 2017-11-13 changed U+F26B to U+A78D by Lorna Evans
 
 store(&VERSION) '9.0'
-store(&TARGETS) 'windows macosx mobile'
+store(&TARGETS) 'any'
 store(&NAME) 'LIBTRALO'
 store(&ETHNOLOGUECODE) 'bza bsq dee ggb glr oub gol grb gry grv gec gbo grj kss klu kpe xpe kqo krw blh lom mev mzj krn tja bmf buy kno kri knk lia lok men bun tem vai'
-store(&COPYRIGHT) '2008-2017 SIL International'
-store(&KEYBOARDVERSION) '1.5'    
+store(&COPYRIGHT) '2008-2018 SIL International'
+store(&KEYBOARDVERSION) '1.6'    
 store(&MESSAGE) 'The LIBTRALO (Liberian Translation & Literacy Organization) keyboard was designed to be used for all Liberian and Sierra Leonean languages .'
 store(&WINDOWSLANGUAGES) 'x0409'
 store(&BITMAP) 'libtralo.ico'
-store(&LAYOUTFILE) 'libtralo-layout.js'
+store(&LAYOUTFILE) 'libtralo.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'libtralo.kvks'
 
 begin Unicode > use(Unicode)
 

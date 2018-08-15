@@ -1,109 +1,123 @@
-﻿c easy_chakma.kmn Keyboard
-c Copyright (C) 2015 Bivuti Chakma (Suz Moriz)
-c 
-c This program is free software: you can redistribute it and/or modify
-c it under the terms of the GNU General Public License as published by
-c the Free Software Foundation, either version 3 of the License, or
-c (at your option) any later version.
-c 
-c This program is distributed in the hope that it will be useful,
-c but WITHOUT ANY WARRANTY; without even the implied warranty of
-c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-c GNU General Public License for more details.
-c 
-c You should have received a copy of the GNU General Public License
-c along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-c Enjoy Chakma Alphabet and Language with this Keyboard!
-c Special Thanked to Dr. Andrew Glass (Program Manager at Microsoft Corporation)who helps me to creat this Keyboard.
+﻿c Enjoy Chakma Alphabet and Language with this Keyboard!
+c Special Thanked to Dr. Andrew Glass (Program Manager at Microsoft Corporation)and
+c to Mr. Marc Durdin, the founder of Keyman, who helped creating this keyboard
+c to Mr. Makara Sok, the project support specialist at Keyman, who help updating this keyboard and fixing bugs
 store(&VERSION) '9.0'
 store(&NAME) 'Easy Chakma'
 store(&ETHNOLOGUECODE) 'ccp'
-store(&COPYRIGHT) '©Bivuti Chakma (Suz Moriz) '
-store(&KEYBOARDVERSION) '1.17'
-store(&MESSAGE) 'This is first Easy Chakma Keyboard for unicode.'
-store(&WINDOWSLANGUAGES) 'x0409'
+store(&COPYRIGHT) '© 2015-2018 Bivuti Chakma (Suz Moriz)'
+store(&KEYBOARDVERSION) '1.18'
+store(&MESSAGE) 'This is first Easy Chakma Visual Order Natural Keyboard for unicode & ASCII.'
 store(&BITMAP) 'easy_chakma.ico'
-store(&VISUALKEYBOARD) 'easy_chakma.kvk'
-store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&VISUALKEYBOARD) 'easy_chakma.kvks'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'easy_chakma.keyman-touch-layout'
+
 begin Unicode > use(main)
 
-
 group(main) using keys
-+ [SHIFT K_SLASH] > '𑅃'
+
+
+c Chakma Various Signs
++ [SHIFT K_7] > U+11100 c Chakma Sign Chandrabindu
++ [SHIFT K_Q] > U+11101 c Chakma Sign Anusvara 
++ [SHIFT K_BKSLASH] > U+11102 c Chakma Sign Visarga
++ [K_G] > U+11133 c Chakma Virama  
++ [K_COLON] > U+11134 c Chakma Maayyaa 
+
+
+c Chakma Independent Vowels
++ [SHIFT K_F] > U+11103
++ [K_Z] > U+11104
++ [SHIFT K_P] > U+11105
++ [SHIFT K_M] > U+11106
+
+c Chakma Consonants
++ [K_J] > U+11107
++ [SHIFT K_J] > U+11108
++ [K_O] > U+11109
++ [SHIFT K_O] > U+1110A
++ [K_Q] > U+1110B
++ [K_Y] > U+1110C
++ [SHIFT K_Y] > U+1110D
++ [K_U] > U+1110E
++ [SHIFT K_U] > U+1110F
++ [SHIFT K_I] > U+11110
++ [K_T] > U+11111
++ [SHIFT K_T] > U+11112
++ [K_E] > U+11113
++ [SHIFT K_E] > U+11114
++ [SHIFT K_B] > U+11115
++ [K_K] > U+11116
++ [SHIFT K_K] > U+11117
++ [K_L] > U+11118
++ [SHIFT K_L] > U+11119
++ [K_B] > U+1111A
++ [K_R] > U+1111B
++ [SHIFT K_R] > U+1111C
++ [K_H] > U+1111D
++ [SHIFT K_H] > U+1111E
++ [K_M] > U+1111F
++ [SHIFT K_W] > U+11120
++ [K_W] > U+11121
++ [K_V] > U+11122
++ [SHIFT K_V] > U+11123
++ [K_P] > U+11124
++ [K_N] > U+11125
++ [K_I] > U+11126   
++ [K_SLASH] > U+11144 c New added Chakma LHAA
+
+c Chakma Dependent Vowel Signs
++ [K_F] > U+11127 
++ [K_D] > U+11128
++ [SHIFT K_D] > U+11129
++ [K_S] > U+1112A
++ [SHIFT K_S] > U+1112B
++ [K_C] >  U+1112C c Chakma Ekaara E
++ [K_A] > U+1112D
++ [K_X] > U+1112E
++ [SHIFT K_X] > U+1112F
++ [SHIFT K_C] > U+11130
++ [SHIFT K_A] > U+11131
++ [SHIFT K_N] > U+11132  
++ [SHIFT K_COLON] > U+11145 c New added Chakma AA  
++ [SHIFT K_Z] > U+11146 c New added Chakma EI 
+ 
+
+c Chakma Digits
++ [K_0] > U+11136 
++ [K_1] > U+11137
++ [K_2] > U+11138
++ [K_3] > U+11139
++ [K_4] > U+1113A
++ [K_5] > U+1113B
++ [K_6] > U+1113C
++ [K_7] > U+1113D
++ [K_8] > U+1113E
++ [K_9] > U+1113F
+
+c Chakma Punctuation
++ [SHIFT K_6] > U+11140 c Chakma Section Mark
++ [SHIFT K_G] > U+11141 c Chkama Danda
++ [K_BKSLASH] > U+11142 c Chakma Double Danda 
++ [SHIFT K_SLASH] > U+11143 c Chakma Question Mark
+
+c Various Other Signs
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_COMMA] > '<'
-+ [SHIFT K_M] > '𑄆'
-+ [SHIFT K_N] > '𑄲'
-+ [SHIFT K_B] > '𑄕'
-+ [SHIFT K_V] > '𑄣'
-+ [SHIFT K_C] > '𑄰'
-+ [SHIFT K_X] > '𑄯'
-+ [SHIFT K_Z] > '𑅀'
-+ [K_SLASH] > '/'
 + [K_PERIOD] > '.'
 + [K_COMMA] > ','
-+ [K_M] > '𑄟'
-+ [K_N] > '𑄥'
-+ [K_B] > '𑄚'
-+ [K_V] > '𑄢'
-+ [K_X] > '𑄮'
-+ [K_Z] > '𑄄'
 + [SHIFT K_QUOTE] > '"'
-+ [SHIFT K_COLON] > ':'
-+ [SHIFT K_L] > '𑄙'
-+ [SHIFT K_K] > '𑄗'
-+ [SHIFT K_J] > '𑄈'
-+ [SHIFT K_H] > '𑄞'
-+ [SHIFT K_G] > '𑅁'
-+ [SHIFT K_F] > '𑄃'
-+ [SHIFT K_D] > '𑄩'
-+ [SHIFT K_S] > '𑄫'
-+ [SHIFT K_A] > '𑄱'
++ [SHIFT K_8] > '*'
 + [K_QUOTE] > U+0027
-+ [K_COLON] > '𑄴'
-+ [K_L] > '𑄘'
-+ [K_K] > '𑄖'
-+ [K_J] > '𑄇'
-+ [K_H] > '𑄝'
-+ [K_G] > '𑄳'
-+ [K_F] > '𑄧'
-+ [K_D] > '𑄨'
-+ [K_S] > '𑄪'
-+ [K_A] > '𑄭'
-+ [SHIFT K_BKSLASH] > '𑄂'
 + [SHIFT K_RBRKT] > '}'
 + [SHIFT K_LBRKT] > '{'
-+ [SHIFT K_P] > '𑄅'
-+ [SHIFT K_O] > '𑄊'
-+ [SHIFT K_I] > '𑄐'
-+ [SHIFT K_U] > '𑄏'
-+ [SHIFT K_Y] > '𑄍'
-+ [SHIFT K_T] > '𑄒'
-+ [SHIFT K_R] > '𑄜'
-+ [SHIFT K_E] > '𑄔'
-+ [SHIFT K_W] > '𑄠'
-+ [SHIFT K_Q] > '𑄁'
-+ [K_BKSLASH] > '𑅂'
 + [K_RBRKT] > ']'
 + [K_LBRKT] > '['
-+ [K_P] > '𑄤'
-+ [K_O] > '𑄉'
-+ [K_I] > '𑄦'
-+ [K_U] > '𑄎'
-+ [K_Y] > '𑄌'
-+ [K_T] > '𑄑'
-+ [K_R] > '𑄛'
-+ [K_E] > '𑄓'
-+ [K_W] > '𑄡'
-+ [K_Q] > '𑄋'
-+ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_EQUAL] > ';'
 + [SHIFT K_HYPHEN] > '_'
 + [SHIFT K_0] > ')'
 + [SHIFT K_9] > '('
-+ [SHIFT K_8] > '*'
-+ [SHIFT K_7] > '𑄀'
-+ [SHIFT K_6] > '^'
 + [SHIFT K_5] > '%'
 + [SHIFT K_4] > '$'
 + [SHIFT K_3] > '#'
@@ -112,106 +126,6 @@ group(main) using keys
 + [SHIFT K_BKQUOTE] > '~'
 + [K_EQUAL] > '='
 + [K_HYPHEN] > '-'
-+ [K_0] > '𑄶'
-+ [K_9] > '𑄿'
-+ [K_8] > '𑄾'
-+ [K_7] > '𑄽'
-+ [K_6] > '𑄼'
-+ [K_5] > '𑄻'
-+ [K_4] > '𑄺'
-+ [K_3] > '𑄹'
-+ [K_2] > '𑄸'
-+ [K_1] > '𑄷'
-+ [K_BKQUOTE] > '`'   
-+ [K_C] > U+200C U+1112C
-
-U+200C U+1112C + [SHIFT K_B] > U+11115 U+1112C
-U+200C U+1112C + [SHIFT K_V] > U+11123 U+1112C
-U+200C U+1112C + [K_M] > U+1111F U+1112C
-U+200C U+1112C + [K_N] > U+11125 U+1112C
-U+200C U+1112C + [K_B] > U+1111A U+1112C
-U+200C U+1112C + [K_V] > U+11122 U+1112C  	 
-   
-U+200C U+1112C + [SHIFT K_L] > U+11119 U+1112C
-U+200C U+1112C + [SHIFT K_K] > U+11117 U+1112C
-U+200C U+1112C + [SHIFT K_J] > U+11108 U+1112C
-U+200C U+1112C + [SHIFT K_H] > U+1111E U+1112C
-
-U+200C U+1112C + [SHIFT K_F] > U+11103 U+1112C
- 
-U+200C U+1112C + [K_L] > U+11118 U+1112C
-U+200C U+1112C + [K_K] > U+11116 U+1112C
-U+200C U+1112C + [K_J] > U+11107 U+1112C
-U+200C U+1112C + [K_H] > U+1111D U+1112C
-
-U+200C U+1112C + [SHIFT K_P] > U+11105 U+1112C
-U+200C U+1112C + [SHIFT K_O] > U+1110A U+1112C
-U+200C U+1112C + [SHIFT K_I] > U+11110 U+1112C
-U+200C U+1112C + [SHIFT K_U] > U+1110F U+1112C
-U+200C U+1112C + [SHIFT K_Y] > U+1110D U+1112C
-U+200C U+1112C + [SHIFT K_T] > U+11112 U+1112C
-U+200C U+1112C + [SHIFT K_R] > U+1111C U+1112C
-U+200C U+1112C + [SHIFT K_E] > U+11114 U+1112C
-U+200C U+1112C + [SHIFT K_W] > U+11120 U+1112C
-
-U+200C U+1112C + [K_P] > U+11124 U+1112C
-U+200C U+1112C + [K_O] > U+11109 U+1112C
-U+200C U+1112C + [K_I] > U+11126 U+1112C
-U+200C U+1112C + [K_U] > U+1110E U+1112C
-U+200C U+1112C + [K_Y] > U+1110C U+1112C
-U+200C U+1112C + [K_T] > U+11111 U+1112C
-U+200C U+1112C + [K_R] > U+1111B U+1112C
-U+200C U+1112C + [K_E] > U+11113 U+1112C
-U+200C U+1112C + [K_W] > U+11121 U+1112C
-U+200C U+1112C + [K_Q] > U+1110B U+1112C       
-U+200C U+1112C + [SHIFT K_M] > U+11106 U+1112C  
-
-U+200C U+1112C + [K_Z] > U+11104 U+1112C
-U+200C U+1112C + [SHIFT K_M] > U+11106 U+1112C  
-
-U+200C U+1112C + [K_C] > U+200C U+1112C U+1112C 
-U+200C U+1112C U+1112C + [K_K] > U+11116 U+1112C U+1112C 
-
-U+200C U+1112C U+1112C + [SHIFT K_B] > U+11115 U+1112C U+1112C  
-U+200C U+1112C U+1112C + [SHIFT K_V] > U+11123 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_M] > U+1111F U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_N] > U+11125 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_B] > U+1111A U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_V] > U+11122 U+1112C U+1112C 
-
-U+200C U+1112C U+1112C + [SHIFT K_L] > U+11119 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_K] > U+11117 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_J] > U+11108 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_H] > U+1111E U+1112C U+1112C
-
-U+200C U+1112C U+1112C + [SHIFT K_F] > U+11103  U+1112C U+1112C
- 
-U+200C U+1112C U+1112C + [K_L] > U+11118 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_K] > U+11116 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_J] > U+11107 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_H] > U+1111D U+1112C U+1112C
-
-U+200C U+1112C U+1112C + [SHIFT K_P] > U+11105 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_O] > U+1110A U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_I] > U+11110 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_U] > U+1110F U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_Y] > U+1110D U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_T] > U+11112 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_R] > U+1111C U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_E] > U+11114 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_W] > U+11120 U+1112C U+1112C
-
-U+200C U+1112C U+1112C + [K_P] > U+11124 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_O] > U+11109 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_I] > U+11126 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_U] > U+1110E U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_Y] > U+1110C U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_T] > U+11111 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_R] > U+1111B U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_E] > U+11113 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_W] > U+11121 U+1112C U+1112C
-U+200C U+1112C U+1112C + [K_Q] > U+1110B U+1112C U+1112C      
-U+200C U+1112C U+1112C + [SHIFT K_M] > U+11106 U+1112C U+1112C 
-
-U+200C U+1112C U+1112C + [K_Z] > U+11104 U+1112C U+1112C
-U+200C U+1112C U+1112C + [SHIFT K_M] > U+11106 U+1112C U+1112C
++ [K_BKQUOTE] > '`'                     
+                                                      
+c End of Keyboard
