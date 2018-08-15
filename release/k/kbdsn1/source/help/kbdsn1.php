@@ -9,5 +9,3 @@ menu item.  The included font <b>KandyUnicode.ttf</b> is recommended for Sinhala
 
 <h2>Keyboard Layout</h2>
   <img width="100%" src="keyboard_layout.png">
-
-

@@ -1,157 +1,232 @@
-﻿c DLIA Dinka Basic
-c 
-c Keyboard layout (formerly dlia25bas) designed for Dinka.
-c Created for DLIA (Dinka Language Institute, Australia)
+﻿c -------------------------------------------------------------
+c  el_dinka.kmn
+c (Version 3.0)
 c
-c Andrew Cunningham    2005-08-10
-c andrewc AT vicnet.net.au
-c 
+c Keyboard layout for Dinka (ThuÉ”Å‹jÃ¤Å‹), a language of South Sudan
+c
+c Original Windows version developed and released under MIT license by
+c State Library Victoria.
+c
+c Updated, refactored and cross-platform support added by Enabling Languages.
+c
+c 21 Jun 2018
+c
+c -------------------------------------------------------------
 
-store(&VERSION) '9.0'
-store(&KEYBOARDVERSION) '2.6'
-c store(&Bitmap) "dlia2.bmp"
-store(&COPYRIGHT) '© 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia'
-store(&Message) "Dinka Unicode keyboard layout for the Dinka Language Institute, Australia."
-store(&Name) "Dinka Basic (DLIA)"
-store(&VISUALKEYBOARD) 'el_dinka.kvk'
-c store(&TARGETS) 'any windows'
+store(&version) "10.0"
+store(&NAME) 'Thuɔŋjäŋ'
+store(&KEYBOARDVERSION) '3.0'
+store(&COPYRIGHT) '© 2015-2018 Enabling Languages'
+store(&mnemoniclayout) "0"
+store(&MESSAGE) 'Keyboard layout for Dinka (Thuɔŋjäŋ)'
+store(&TARGETS) 'any'
+store(&BITMAP) 'el_dinka.ico'
+store(&VISUALKEYBOARD) 'el_dinka.kvks'
+store(&LAYOUTFILE) 'el_dinka.keyman-touch-layout'
 
-begin Unicode > use(select)
-  
-store(vowels) "aeioAEIO"
-store(breathy) U+00E4 U+00EB U+00EF U+00F6 U+00C4 U+00CB U+00CF U+00D6
-store(extvowels) U+025B U+0190 U+0254 U+0186 
-store(dia) ";:"
-store(non_dia) " bcdfghjklmnpqrstuvwxyzBCDFGHJKLMNPQRSTUVWXYZ`~1234567890-=!@#$%^&*()_+[]\{}|,./<>?';:" '"' U+014b U+014a U+0263 U+0194 U+00e4 U+00c4 U+00eb U+00cb U+00ef U+00cf U+00f6 U+00d6 U+0308
-store(non_dia_final) "iIuU"
- 
-group(select) using keys 
+begin Unicode > use(constraints)
 
-c 
-c RALT key sequences
-c 
-+ [CTRL ALT K_COLON] > U+2018
-+ [CTRL ALT K_QUOTE] > U+2019
-+ [CTRL ALT K_LBRKT] > U+201C
-+ [CTRL ALT K_RBRKT] > U+201D
-+ [CTRL ALT K_HYPHEN] > U+2013
-+ [SHIFT CTRL ALT K_HYPHEN] > U+2014
-+ [CTRL ALT K_C] > U+00A9
-+ [CTRL ALT K_R] > U+00AE
-+ [CTRL ALT K_SLASH] > U+2026
-+ [CTRL ALT K_COMMA] > U+2039 
-+ [CTRL ALT K_PERIOD] > U+203A 
-+ [SHIFT CTRL ALT K_COMMA] > U+00AB 
-+ [SHIFT CTRL ALT K_PERIOD] > U+00BB
-+ [CTRL ALT K_T] > U+2122
-+ [CTRL ALT K_4] > U+00A3
-+ [CTRL ALT K_E] > U+20AC     
+c ------------------------------------------------
+c Options
+c ------------------------------------------------
+c store(nfc) '1'    c 1 (default) = Normalisation Form C, 0 = Normalisation Form D
 
-c 
-c CTRL ALT key sequences
-c for displaced base Latin charcaters
-c 
-+ [CTRL ALT K_Q] > U+0071
-+ [CTRL ALT K_X] > U+0078
-+ [CTRL ALT K_S] > U+0073
-+ [CTRL ALT K_F] > U+0066
-+ [CTRL ALT K_Z] > U+007A
-+ [SHIFT CTRL ALT K_Q] > U+0051
-+ [SHIFT CTRL ALT K_S] > U+0053
-+ [SHIFT CTRL ALT K_F] > U+0046
-+ [SHIFT CTRL ALT K_X] > U+0058
-+ [SHIFT CTRL ALT K_Z] > U+005A
+c ------------------------------------------------
+c Alphabetic characters
+c ------------------------------------------------
 
-c 
-c Backspace key logic for breathy and long breathy vowels
-c 
-any(breathy) + [K_BKSP] > nul
-any(extvowels) U+0308 + [K_BKSP] > nul
-any(breathy) any(breathy) + [K_BKSP] > context(1)
-any(extvowels) U+0308 any(extvowels) U+0308 + [K_BKSP] > context(1) context(2)
+c Lowercase consonants
+store(consonantLowerChars) U+014B U+0077 U+0072 U+0074 U+0079 U+0070   \
+                     U+0064 U+0263 U+0067 U+0068 U+006A U+006B U+006C \
+                     U+0063 U+0076 U+0062 U+006E U+006D
+store(consonantLowerKeys) [K_Q] [K_W] [K_R] [K_T] [K_Y] [K_P] \
+                    [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
+                    [K_C] [K_V] [K_B] [K_N] [K_M]
 
-any(breathy) + [SHIFT K_BKSP] > index(vowels,1)
-any(extvowels) U+0308 + [SHIFT K_BKSP] > context(1)  
-any(breathy) any(breathy) + [SHIFT K_BKSP] > index(vowels,1) index(vowels,2)
-any(extvowels) U+0308 any(extvowels) U+0308 + [SHIFT K_BKSP] > context(1) context(3)
+c Uppercase consonants
+store(consonantUpperChars) U+014A U+0057 U+0052 U+0054 U+0059 U+0050 \
+                     U+0044 U+0194 U+0047 U+0048 U+004A U+004B U+004C \
+                     U+0043 U+0056 U+0042 U+004E U+004D
+store(consonantUpperKeys) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_P] \
+                    [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
+                    [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M]
 
-any(breathy) + [CTRL K_BKSP] > nul
-any(extvowels) U+0308 + [CTRL K_BKSP] > nul
-any(breathy) any(breathy) + [CTRL K_BKSP] > nul
-any(extvowels) U+0308 any(extvowels) U+0308 + [CTRL K_BKSP] > nul
+c Lowercase vowels
+store(vowelLowerChars) U+0061 U+0065 U+0069 U+006F U+0075 U+025B U+0254
+store(vowelLowerKeys) [K_A]  [K_E] [K_I] [K_O] [K_U] [K_S] [K_X]
+
+c Uppercase vowels
+store(vowelUpperChars) U+0041 U+0045 U+0049 U+004F U+0055 U+0190 U+0186
+store(vowelUpperKeys) [SHIFT K_A] [SHIFT K_E] [SHIFT K_I] [SHIFT K_O] [SHIFT K_U] [SHIFT K_S] [SHIFT K_X]
+
+store(consonantChars) outs(consonantLowerChars) outs(consonantUpperChars)
+store(consonantKeys) outs(consonantLowerKeys) outs(consonantUpperKeys)
+store(vowelChars) outs(vowelLowerChars) outs(vowelUpperChars)
+store(vowelKeys) outs(vowelLowerKeys) outs(vowelUpperKeys)
+store(alphaChars) outs(consonantChars) outs(vowelChars)
+store(alphaKeys) outs(consonantKeys) outs(vowelKeys)
+
+c ------------------------------------------------
+c Digits: 1234567890
+c ------------------------------------------------
+store(digitChars) U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030           c 1234567890
+store(digitKeys) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
+store(digitKeysPad) [K_NP1] [K_NP2] [K_NP3] [K_NP4] [K_NP5] [K_NP6] [K_NP7] [K_NP8] [K_NP9] [K_NP0]
 
 
+c ------------------------------------------------
+c Punctuation:
+c ------------------------------------------------
 
-nomatch > use(normalmode)
+store(punctuationChars) U+0060 U+007E U+0021 U+0040 U+0023 U+0024 U+0025 U+005E U+0026 U+002A U+0028 U+0029 U+002D U+005F U+003D U+002B \
+                                          U+005B U+007B U+005D U+007D U+005C U+007C  \
+                                          U+002C U+003C U+002E U+003E U+002F U+003F  \
+                                          U+003B U+003A \
+                                          U+0027 U+0022
+
+store(punctuationKeys) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] [K_HYPHEN] [SHIFT K_HYPHEN] [K_EQUAL] [SHIFT K_EQUAL] \
+                       [K_LBRKT] [SHIFT K_LBRKT] [K_RBRKT] [SHIFT K_RBRKT] [K_BKSLASH] [SHIFT K_BKSLASH] \
+                       [K_COMMA] [SHIFT K_COMMA] [K_PERIOD] [SHIFT K_PERIOD] [K_SLASH] [SHIFT K_SLASH] \
+                       [K_Z] [SHIFT K_Z] \
+                       [K_QUOTE] [SHIFT K_QUOTE]
+
+store(coreChars) outs(alphaChars) outs(digitChars) outs(punctuationChars)
+store(coreKeys) outs(alphaKeys) outs(digitKeys) outs(punctuationKeys)
+
+c ------------------------------------------------
+c ADD additional stores here:
+c ------------------------------------------------
+
+store(additionalChars) U+0066 U+0046 U+0071 U+0051 U+0073 U+0053 U+0078 U+0058 U+007A U+005A \
+                       U+00A9 U+20AC U+00A3 \
+                       U+2013 U+2014 U+2018 U+2019 U+201C U+201D U+2026
+store(additionalKeys) [RALT K_F] [SHIFT RALT K_F] [RALT K_Q] [SHIFT RALT K_Q] [RALT K_S] [SHIFT RALT K_S] [RALT K_X] [SHIFT RALT K_X] [RALT K_Z] [SHIFT RALT K_Z] \
+                      [RALT K_C] [RALT K_E] [RALT K_4] \
+                      [RALT K_HYPHEN] [SHIFT RALT K_HYPHEN] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [RALT K_PERIOD]
+
+store(additionalTouch) [T_F] [SHIFT T_F] [T_Q] [SHIFT T_Q] [T_S] [SHIFT T_S] [T_X] [SHIFT T_X] [T_Z] [SHIFT T_Z] \
+                                      [T_COPYRIGHT] [T_EURO] [T_POUND] \
+                                      [T_EN_DASH] [T_EM_DASH] [T_LSINGLE_QUOTE] [T_RSINGLE_QUOTE] [T_LDB_QUOTE] [T_RDB_QUOTE] [T_ELLIPSIS]
 
 
-group(normalmode) using keys
 
-c 
-c Generate breathy vowels (i.e. add diaresis)
-c 
-any(vowels) + any(dia) > index(breathy,1)
-any(extvowels) + any(dia) > context U+0308 
 
-c 
-c Prevent diacritic being added to any non-vowel character
-c 
-any(non_dia) + any(dia) > context 
+c Diaeresis  > U+0308
+store(diaeresisKey)  [K_COLON] [SHIFT K_COLON] [T_DIAERESIS]
+store(diaeresisBase) U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006F U+004F
+store(diaeresisChar) U+00E4 U+00C4 U+00EB U+00CB U+00EF U+00CF U+00F6 U+00D6
+store(diaeresisTouch) [T_00E4] [T_00C4] [T_00EB] [T_00CB] [T_00EF] [T_00CF] [T_00F6] [T_00D6]
+store(diaeresisLongTouch) [T_00E4_LONG] [T_00C4_LONG] [T_00EB_LONG] [T_00CB_LONG] [T_00EF_LONG] [T_00CF_LONG] [T_00F6_LONG] [T_00D6_LONG]
+store(diaeresisExtendedBase) U+025B U+0190 U+0254 U+0186
+store(diaeresisAll) outs(diaeresisChar) U+0308
+store(nonDiaeresisFinal) U+0069 U+0049 U+0075 U+0055
+store(notDiaeresis) U+0062 U+0063 U+0064 U+0066 U+0067 U+0068 U+006A U+006B U+006C U+006D U+006E U+0070 U+0071 U+0072 U+0073 U+0074 U+0075 U+0076 U+0077 U+0078 U+0079 U+007A U+0042 U+0043 U+0044 U+0046 U+0047 U+0048 U+004A U+004B U+004C U+004D U+004E U+0050 U+0051 U+0052 U+0053 U+0054 U+0055 U+0056 U+0057 U+0058 U+0059 U+005A U+014B U+014A U+0263 U+0194 
 
-c 
-c Key sequences for core extended latin characters in Dinka alphabet
-c 
-+ [K_Q] > U+014B
-+ [SHIFT K_Q] > U+014A
-+ [SHIFT K_X] > U+0186
-+ [SHIFT K_S] > U+0190
-+ [SHIFT K_F] > U+0194
-+ [K_X] > U+0254
-+ [K_S] > U+025B
-+ [K_F] > U+0263
 
-c 
-c Reassign colon and semi-colon characters to K_Z
-c 
-+ [K_Z] > ";" 
-+ [SHIFT K_Z] > ":"
-     
-c 
+store(altKeys) outs(additionalKeys) outs(additionalTouch) [T_DIAERESIS]  [T_OPEN_E_0308] [SHIFT T_OPEN_E_0308] [T_OPEN_O_0308] [SHIFT T_OPEN_O_0308] outs(diaeresisTouch) outs(diaeresisLongTouch) [T_OPEN_E_0308_LONG] [SHIFT T_OPEN_E_0308_LONG] [T_OPEN_O_0308_LONG] [SHIFT T_OPEN_O_0308_LONG] [K_BKSP] [SHIFT K_BKSP] [LCTRL K_BKSP] [RCTRL K_BKSP]
+
+group(constraints) using keys
+c + [CTRL K_LBRKT] > set(nfc='0') save(nfc)
+c + [CTRL K_RBRKT] > set(nfc='1') save(nfc)
+
+any(diaeresisChar) + any(diaeresisKey)  > context
+U+0308 + any(diaeresisKey)  > context
+c notany(diaeresisAll) + any(diaeresisKey)  > context
+any(notDiaeresis) + any(diaeresisKey) > context
+
++ any(digitKeysPad) > use(main)
++ any(altKeys) > use(main)
+nomatch > use(main)
+
+group(main) using keys
+
++ any(coreKeys) > index(coreChars,1)
++ any(digitKeysPad) > index(digitChars,1)
+
+c ------------------------------------------------
+c ADD additional rules here:
+c ------------------------------------------------
+
+if(&platform != "touch") + any(additionalKeys) > index(additionalChars,2)
+platform("touch") + any(additionalTouch) > index(additionalChars,2)
+
+c if(nfc = "0") any(diaeresisBase) + any(diaeresisKey) > context(2) U+0308
+c if(nfc = "1") any(diaeresisBase) + any(diaeresisKey) >  index(diaeresisChar,2)
+any(diaeresisBase) + any(diaeresisKey) >  index(diaeresisChar,1)
+any(diaeresisExtendedBase) + any(diaeresisKey) > context U+0308
+
+platform("touch") + any(diaeresisTouch) > index(diaeresisChar,2)
+platform("touch") + any(diaeresisLongTouch) > index(diaeresisChar,2) index(diaeresisChar,2)
+platform("touch") + [T_OPEN_E_0308] > U+025B U+0308
+platform("touch") + [SHIFT T_OPEN_E_0308] > U+0190 U+0308
+platform("touch") + [T_OPEN_O_0308] > U+0254 U+0308
+platform("touch") + [SHIFT T_OPEN_O_0308] > U+0186 U+0308
+
+platform("touch") + [T_OPEN_E_0308_LONG] > U+025B U+0308 U+025B U+0308
+platform("touch") + [SHIFT T_OPEN_E_0308_LONG] > U+0190 U+0308 U+0190 U+0308
+platform("touch") + [T_OPEN_O_0308_LONG] > U+0254 U+0308 U+0254 U+0308
+platform("touch") + [SHIFT T_OPEN_O_0308_LONG] > U+0186 U+0308 U+0186 U+0308
+
+
+
+c
 c Long breathy vowel keyboard shortcuts
-c 
-"aa" + any(dia) > U+00E4 U+00E4  
-"AA" + any(dia) > U+00C4 U+00C4
-"ee" + any(dia) > U+00EB U+00EB
-"EE" + any(dia) > U+00CB U+00CB
-"ii" + any(dia) > U+00EF U+00EF
-"II" + any(dia) > U+00CF U+00CF
-"oo" + any(dia) > U+00F6 U+00F6
-"OO" + any(dia) > U+00D6 U+00D6    
-U+025B U+025B + any(dia) > U+025B U+0308 U+025B U+0308
-U+0190 U+0190 + any(dia) > U+0190 U+0308 U+0190 U+0308
-U+0254 U+0254 + any(dia) > U+0254 U+0308 U+0254 U+0308
-U+0186 U+0186 + any(dia) > U+0186 U+0308 U+0186 U+0308  
+c
+"aa" + any(diaeresisKey) > U+00E4 U+00E4
+"AA" + any(diaeresisKey) > U+00C4 U+00C4
+"ee" + any(diaeresisKey) > U+00EB U+00EB
+"EE" + any(diaeresisKey) > U+00CB U+00CB
+"ii" + any(diaeresisKey) > U+00EF U+00EF
+"II" + any(diaeresisKey) > U+00CF U+00CF
+"oo" + any(diaeresisKey) > U+00F6 U+00F6
+"OO" + any(diaeresisKey) > U+00D6 U+00D6
+U+025B U+025B + any(diaeresisKey) > U+025B U+0308 U+025B U+0308
+U+0190 U+0190 + any(diaeresisKey) > U+0190 U+0308 U+0190 U+0308
+U+0254 U+0254 + any(diaeresisKey) > U+0254 U+0308 U+0254 U+0308
+U+0186 U+0186 + any(diaeresisKey) > U+0186 U+0308 U+0186 U+0308
 
-c 
+c
 c allows diacritic to be typed at the end on diphthong
-c 
-any(vowels) any(non_dia_final) + any(dia) > index(breathy,1) context(2)
-any(extvowels) any(non_dia_final) + any(dia) > context(1) U+0308 context(2)
-"aa" any(non_dia_final) + any(dia) > U+00E4 U+00E4 context(3)  
-"AA" any(non_dia_final) + any(dia) > U+00C4 U+00C4 context(3)
-"ee" any(non_dia_final) + any(dia) > U+00EB U+00EB context(3)
-"EE" any(non_dia_final) + any(dia) > U+00CB U+00CB context(3)
-"ii" any(non_dia_final) + any(dia) > U+00EF U+00EF context(3)
-"II" any(non_dia_final) + any(dia) > U+00CF U+00CF context(3)
-"oo" any(non_dia_final) + any(dia) > U+00F6 U+00F6 context(3)
-"OO" any(non_dia_final) + any(dia) > U+00D6 U+00D6 context(3)   
-U+025B U+025B any(non_dia_final) + any(dia) > U+025B U+0308 U+025B U+0308 context(3)
-U+0190 U+0190 any(non_dia_final) + any(dia) > U+0190 U+0308 U+0190 U+0308 context(3)
-U+0254 U+0254 any(non_dia_final) + any(dia) > U+0254 U+0308 U+0254 U+0308 context(3)
-U+0186 U+0186 any(non_dia_final) + any(dia) > U+0186 U+0308 U+0186 U+0308 context(3) 
+c
 
-any(breathy) any(non_dia_final) + any(dia) > context
-any(extvowels) U+0308 any(non_dia_final) + any(dia) > context
+"aa" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00E4 U+00E4 context(3)
+"AA" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00C4 U+00C4 context(3)
+"ee" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00EB U+00EB context(3)
+"EE" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00CB U+00CB context(3)
+"ii" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00EF U+00EF context(3)
+"II" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00CF U+00CF context(3)
+"oo" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00F6 U+00F6 context(3)
+"OO" any(nonDiaeresisFinal) + any(diaeresisKey) > U+00D6 U+00D6 context(3)
+U+025B U+025B any(nonDiaeresisFinal) + any(diaeresisKey) > U+025B U+0308 U+025B U+0308 context(3)
+U+0190 U+0190 any(nonDiaeresisFinal) + any(diaeresisKey) > U+0190 U+0308 U+0190 U+0308 context(3)
+U+0254 U+0254 any(nonDiaeresisFinal) + any(diaeresisKey) > U+0254 U+0308 U+0254 U+0308 context(3)
+U+0186 U+0186 any(nonDiaeresisFinal) + any(diaeresisKey) > U+0186 U+0308 U+0186 U+0308 context(3)
+any(diaeresisBase) any(nonDiaeresisFinal) + any(diaeresisKey) > index(diaeresisChar,1) context(2)
+any(diaeresisExtendedBase) any(nonDiaeresisFinal) + any(diaeresisKey) > context(1) U+0308 context(2)
+
+c any(diaeresisChar) any(nonDiaeresisFinal) + any(diaeresisKey) > context
+c any(diaeresisExtendedBase) U+0308 any(nonDiaeresisFinal) + any(diaeresisKey) > context
 
 
-c EOF
+c
+c Backspace key logic for breathy and long breathy vowels
+c
+any(diaeresisChar) + [K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 + [K_BKSP] > nul
+any(diaeresisChar) any(diaeresisChar) + [K_BKSP] > context(1)
+any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [K_BKSP] > context(1) context(2)
+
+any(diaeresisChar) + [SHIFT K_BKSP] > index(diaeresisBase,1)
+any(diaeresisExtendedBase) U+0308 + [SHIFT K_BKSP] > context(1)
+any(diaeresisChar) any(diaeresisChar) + [SHIFT K_BKSP] > index(diaeresisBase,1) index(diaeresisBase,2)
+any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [SHIFT K_BKSP] > context(1) context(3)
+
+any(diaeresisChar) + [LCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 + [LCTRL K_BKSP] > nul
+any(diaeresisChar) any(diaeresisChar) + [LCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [LCTRL K_BKSP] > nul
+
+any(diaeresisChar) + [RCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 + [RCTRL K_BKSP] > nul
+any(diaeresisChar) any(diaeresisChar) + [RCTRL K_BKSP] > nul
+any(diaeresisExtendedBase) U+0308 any(diaeresisExtendedBase) U+0308 + [RCTRL K_BKSP] > nul
