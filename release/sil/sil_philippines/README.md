@@ -1,7 +1,7 @@
 Philippines (SIL) Keyboard
 =====================
 
-Copyright (C) 2018 SIL Philippines
+Copyright (C) 2006-2018 SIL Philippines
 
 Version 1.0
 
