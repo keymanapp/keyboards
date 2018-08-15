@@ -6,7 +6,7 @@ Philippines (SIL) Keyboard Change History
 * Renamed keyboard
 * Migrated to Github
 
-(older Phil Unicode 1.2 keyboard)
+(2006 older Phil Unicode keyboard)
 ------------------
 * Created by Kåre J. Strømme
 
