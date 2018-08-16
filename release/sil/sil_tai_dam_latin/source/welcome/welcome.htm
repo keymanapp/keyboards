@@ -642,7 +642,7 @@
 
 <h3>Notes:</h3>
 <ul>
-    <li>The <span style="color:red">red keys </span>are context sensative. In mosts contexts 
+    <li>The <span style="color:red">red keys </span>are context sensitive. In mosts contexts 
         they will produce their default values (as shown above), but 
         after a vowel (lower or upper case <b>a ă â e ê i o ô ơ u ư</b>) they will produce the 
         following Combining Diacritical Marks:</li>
