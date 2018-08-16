@@ -13,5 +13,6 @@ SIL's Tai Dam Latin keyboard has been designed for typing the Tai Dam and Tai Do
 Supported Platforms
 -------------------
  * Windows
-
+ * macOS
+ * Linux
  
