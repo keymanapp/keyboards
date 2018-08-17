@@ -2,10 +2,10 @@
 
 Copyright (C) 2002-2018 SIL International
 
-Version A.B
+Version 1.3
 
 __DESCRIPTION__
-<add a description of this keyboard>
+A Devanagari keyboard layout where each Devanagari letter is mapped as closely as possible to a corresponding key on the US English keyboard.
 
 
 ## Supported Platforms

@@ -2,9 +2,9 @@
 c    version 2,  28 November 95
 c    version 5,  15-May 02 (converted from Annapurna to Unicode Devanagri)
 
-store(&VERSION) "10.0"  	c Keyman version 5.0
+store(&VERSION) "10.0"  	
 store(&NAME) "Devanagri Phonetic (SIL)"
-c store(&BITMAP) 'sil_devanagari_phonetic.ico'
+store(&BITMAP) 'sil_devanagari_phonetic.ico'
 store(&COPYRIGHT) '2002-2018 SIL International'
 
 
@@ -12,10 +12,10 @@ c see http://www.unicode.org/charts/PDF/U0900.pdf for the unicode values.
 c ********************************************************************
 store(&TARGETS) 'windows macosx linux web'
 store(&VISUALKEYBOARD) 'sil_devanagari_phonetic.kvks'
+store(&KEYBOARDVERSION) '1.3'
 
 begin UNICODE > use(mainU)
 
-store(&BITMAP) 'devanagri.bmp'
 
 c numbers
 store(Digits)     "0"    "1"    "2"    "3"    "4"    "5"    "6" \
@@ -166,7 +166,6 @@ U+2013 + "-"       	 > U+2014  c three times for em dash
 
 + [RALT K_2] 	 > U+091c U+094d U+091e  c gya
 + [RALT K_3] 	 > U+2026   c ellipse
-c + [RALT K_4] 	 > d218  c mid-line dot
 + [RALT K_5] 	 > U+0945  c candra
 
 c special chandra wallahs
@@ -174,38 +173,23 @@ U+093E + [RALT K_5] > U+0949 c chandr + aakar is a special char
 U+090F + [RALT K_5] > U+090D c chandr + ekar is a special char
 U+0906 + [RALT K_5] > U+0911 c chandr + aakar independent is a special char
 
-c + [RALT K_A] 	 > d66   c alternate syllabic A
 + [RALT K_H] 	 > U+093d  c avagraha
-c + [RALT K_J] 	 > d110  c alternate jHa
 + [RALT K_J] 	 > U+091c U+094d U+091e    c gya (rde change)
 + [RALT K_N] 	 > U+091e   c nYa
 
 + [RALT K_L] 	 > U+0943   c rikar
 U+0930 U+094d + "i"  > U+0943   c alternate way of keying rikar
 
-c + [RALT K_Y] 	 > d177  c special ra, before y
 + [RALT K_COLON]  	 > U+0903  c barred visarga
-c + [RALT K_RBRKT]  	 > d39   c glottal
 + [RALT K_PERIOD] 	 > "."   c Roman period
 ":" + ":"       > U+093d   c avagraha
 
 c semicolon ";" is keyed between consonants to produce a stack / conjunct
 + ";"           > U+094d   c use the DEVANAGARI SIGN VIRAMA so we get the full conjunct
 
-c I'm switching the digits so that we get the Arabic wallahs with the first key
-c and Devanagari with a subsequent backspace or RALT + sequences
-c + any(Digits)   > index(DigitsU,1)              c Devanagari digits
-c any(DigitsU) + [K_BKSP]      > index(Digits,1)
-c + [RALT K_0]    > "0" c Arabic digit 0
-c + [RALT K_1]    > "1" c Arabic digit 1
-c + [RALT K_2]    > "2" c Arabic digit 2
-c + [RALT K_3]    > "3" c Arabic digit 3
-c + [RALT K_4]    > "4" c Arabic digit 4
-c + [RALT K_5]    > "5" c Arabic digit 5
-c + [RALT K_6]    > "6" c Arabic digit 6
-c + [RALT K_7]    > "7" c Arabic digit 7
-c + [RALT K_8]    > "8" c Arabic digit 8
-c + [RALT K_9]    > "9" c Arabic digit 9
+c Digits: we get the Arabic wallahs with the numeric key
+c and Devanagari with a subsequent backspace or Shift + RALT + sequences
+
 + any(Digits)           > index(Digits,1)
 any(Digits) + [K_BKSP]  > index(DigitsU,1)
 + [SHIFT RALT K_0]    > U+0966 c Devanagari digit 0
