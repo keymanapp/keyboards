@@ -26,7 +26,7 @@ in which column:</p>
 </ol>
 
 <p>Here are some examples of how the keying sequences are to be understood:</p>
-<p><b>&apos; a</b> means press the <b>Apostrophe</b> key followed by the <b>A</b> key.</p>
+<p><b>&apos;a</b> means press the <b>Apostrophe</b> key followed by the <b>A</b> key.</p>
 <p><b>&apos;A</b> means press the <b>Apostrophe</b> key followed by the <b>A</b> key while holding down the <b>Shift</b> key.</p>
 <p><b>&amp;[ ]</b> means press the <b>Ampersand/7</b> key while holding down the <b>Shift</b> key, followed by the <b>space</b> key.</p>
 
@@ -117,7 +117,7 @@ common Windows fonts like Times New Roman, Arial, Calibri, and Cambria.</p>
 COMBINING GRAVE ACCENT</td>
     </tr>
     <tr>
-      <td>Ā</td>
+      <td>Ā̀</td>
       <td>~`A</td>
       <td>U+0100</br>
      U+0300</td>
@@ -419,7 +419,7 @@ COMBINING MACRON BELOW</td>
       <td>LATIN CAPITAL LETTER I WITH MACRON</td>
     </tr>
     <tr>
-      <td>ī</td>
+      <td>ī̀</td>
       <td>~`i</td>
       <td>U+012B</br>
 U+0300</td>
@@ -773,7 +773,7 @@ U+0300</td>
 COMBINING GRAVE ACCENT</td>
     </tr>
     <tr>
-      <td>Ū</td>
+      <td>Ū̀</td>
       <td>~`U</td>
       <td>U+016A</br>
 U+0300</td>
@@ -788,7 +788,7 @@ COMBINING GRAVE ACCENT</td>
       <td>LATIN SMALL LETTER U BAR</td>
     </tr>
     <tr>
-      <td>μ</td>
+      <td>µ</td>
       <td>&amp;u</td>
       <td>U+00B5</td>
       <td>MICRO SIGN
