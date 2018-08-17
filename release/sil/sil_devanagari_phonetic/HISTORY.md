@@ -1,4 +1,4 @@
 # Devanagri Phonetic (SIL) Keyboard Change History
 
-## 1.0 (1 Jan 2015)
-* Created by you
+## 1.3 (16 Aug 2018)
+* Source migrated to GitHub
