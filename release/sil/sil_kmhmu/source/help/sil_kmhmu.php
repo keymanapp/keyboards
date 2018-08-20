@@ -79,9 +79,9 @@ EXTRA;
 </table>
 
 <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: normal (default) state" src="sil_kmhmuU_.png"/></p>
+<p><img alt="Kmhmu 2008 keyboard layout: normal (default) state" src="sil_kmhmuU.png"/></p>
 <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: shift state" src="sil_kmhmu_U_S.png"/></p>
+<p><img alt="Kmhmu 2008 keyboard layout: shift state" src="sil_kmhmuU_S.png"/></p>
 <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
 <p><img alt="Kmhmu 2008 keyboard layout: AltGr state" src="sil_kmhmuU_RA.png"/></p>
 
