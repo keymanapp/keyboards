@@ -1,6 +1,33 @@
 ﻿<?php
   $pagename = 'Galaxie Greek (Mnemonic)';
   $pagetitle = 'Galaxie Greek (Mnemonic)';
+  $pagestyle = <<<END
+        table {border-collapse:collapse !important; margin:10px 0px 20px 40px;}
+        .grid col {background-color:#ffffff;}
+        col.name {width:100px;}
+        col.char {width:85px;} 
+        col.kbd {width:120px;}
+        .grid td, .grid th {padding:2px 5px;border-bottom:1px solid #ddd;}
+        .grid tr {text-align:center; font-weight:normal; height:80px;}
+        .grid thead tr{height:30px;}
+        .grid .headrow {font-weight:bold; color:#AD4A28; background-color:#eee; text-align:left;} 
+        .button {text-decoration: none !important; margin:0px 1px; padding:1px 2px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; white-space: nowrap; color: #2D2C2C !important; border:solid 1px #707070; background: #D4D4D4; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.15, #F2F2F2), color-stop(0.47, #EBEBEB), color-stop(0.48, #DDDDDD), color-stop(0.9, #CFCFCF)); background-image: -webkit-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -moz-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -ms-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: -o-linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%); background-image: linear-gradient(top, #F2F2F2 15%, #EBEBEB 47%, #DDDDDD 48%, #CFCFCF 90%);}
+        .button:hover {background: #BEE6FD; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.15, #EAF6FD), color-stop(0.47, #D9F0FC), color-stop(0.48, #BEE6FD), color-stop(0.9, #A7D8F5)); background-image: -webkit-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -moz-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -ms-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: -o-linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%); background-image: linear-gradient(top, #EAF6FD 15%,#D9F0FC 47%,#BEE6FD 48%,#A7D8F5 90%);} 
+        .lang2,.languageExample {font-family:"Gentium Plus"; color:blue; }
+        .lang2 {font-size:150%; line-height:1em;}
+        .hebrew .lang2, .hebrew .languageExample {font-family:"Ezra SIL";} 
+        .keys {border-style:solid; color:black; border-width:1px 1px 2px; border-color: #6B6867 #6B6867 #111111; background:#dddddd; margin:0px 1px; padding:2px 3px; line-height:30px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+        .welcome {float:left; width:385px; height:540px;border:1px solid #dddddd;padding:8px 15px; margin-top:20px;margin-left:5px;}
+        .right {}
+        #osk_tabsheets { border: solid 1px #ad4a28; margin: 0 4px 4px 4px; background: white; z-index: 101; }
+        .osk_tabsheet_selected { display: block; padding: 2px 10px 12px; width: 561px; border: solid 1px #ad4a28;-webkit-border-radius: 0px 4px 4px; -moz-border-radius: 0px 4px 4px; border-radius: 0px 4px 4px;}
+        .osk_tabsheet { display: none; }
+        #osk_tabs { margin: 4px 4px 0px 0px; z-index: 100; }
+        .osk_tab { background: white; color: #ad4a28; border: solid 1px #ad4a28; display: inline; padding: 2px 5px 0px 5px; height: 17px; -webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px;cursor:pointer;}
+        .osk_tab_selected { background: white; color: #ad4a28; border: solid 1px #ad4a28; display: inline; padding: 2px 5px 1px; border-bottom: none; margin-top: -1px; height: 19px;-webkit-border-radius: 4px 4px 0px 0px; -moz-border-radius: 4px 4px 0px 0px; border-radius: 4px 4px 0px 0px;cursor:pointer;}  
+        .key {  float: left; display: block;  position: relative; overflow: hidden; height: 35px; margin: 2px 0px 0px 2px; border: solid 1px grey; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;  } #K_BKQUOTE { width:34px; } #K_BKSP { width: 60px; } #K_TAB { width: 52px;		 } #K_BKSLASH { width: 42px;  } #K_CAPS { width: 62px; } #K_ENTER { width: 70px;  }		 #K_ENTER-EU1 { width: 42px;  -webkit-border-radius: 3px 3px 0px; -moz-border-radius: 3px 3px 0px; border-radius: 3px 3px 0px; } #K_ENTER-EU1 .keycap { left:3px !important; }    #K_ENTER-EU2 { width: 32px;  margin-top:-1px !important;  border-top:none !important; height:39px !important; -webkit-border-radius: 0px 0px 3px 3px; -moz-border-radius: 0px 0px 3px 3px; border-radius: 0px 0px 3px 3px; }		 #K_SHIFTL { width: 85px; }                 #K_SHIFTL-EU { width: 47px; }     #K_oE2 { display:none;         }      #K_SHIFTR { width: 85px; }   			 #K_CTRLL { width: 60px; } 		 #K_ALTL { width: 50px; }    #K_SPACE { width: 234px;   }  #K_ALTR { width: 50px; }  #K_CTRLR { width: 60px; } 			 .plain {  background-repeat: no-repeat; width: 34px; }  .special { background-repeat: no-repeat;  background: #c0c0c0;  }  .keycap { font: bold 7pt Arial;  position: absolute;  left: 6px;  top: 6px; }  .key .keycap {           display: block; }  .special .keycap { display: block; }  .keytext {  font:	19px "Gentium Plus";  position: absolute;  display: block; right: 5px; bottom: 0px; color: blue; } .keytext.LTN { font-size:12px !important; color: #AD4A28 !important; right:3px !important;  } .hebrew .keytext { font-family:"Ezra SIL"; } .hebrew .diacritic { font-size:30px; color:green; right:15px; bottom:-6px; } .hebrew .top { bottom:-12px !important; } .hebrew .bot{ bottom:2px !important; } 
+        .highlightKeys img { display: none }  .highlightKeys .key-print { display: inline }
+END;
   require_once('header.php');
 ?>
 
@@ -2190,7 +2217,10 @@
             </p>
 
             <p>
-                Version 3.1 released 24 May 2012. Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). Amended Hebrew help.<br/> Version 3.0 released 23 August 2011. Optimised for multiple European hardware layouts.<br/>                Version 2.1 released 15 December 2009. Full Greek documentation.<br /> Version 2.02 released 11 April 2008. Fixed Greek: rho + dasia and rho + psili with [ and ] keys.<br /> Version 2.0 for Keyman Desktop 7.0. Released 24 October 2007
+                Version 3.1 released 24 May 2012. Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). Amended Hebrew help.<br/> 
+                Version 3.0 released 23 August 2011. Optimised for multiple European hardware layouts.<br/>           Version 2.1 released 15 December 2009. Full Greek documentation.<br /> 
+                Version 2.02 released 11 April 2008. Fixed Greek: rho + dasia and rho + psili with [ and ] keys.<br /> 
+                Version 2.0 for Keyman Desktop 7.0. Released 24 October 2007
             </p>
 
         </div>
