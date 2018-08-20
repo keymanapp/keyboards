@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Kmhmu 2008 Keyboard Help';
-  $pagetitle = 'Kmhmu 2008  Keyboard Help';
+  $pagename = 'Kmhmu (SIL) Keyboard Help';
+  $pagetitle = 'Kmhmu (SIL)  Keyboard Help';
   $style = <<<EXTRA
   p { font: 10pt Tahoma }
   h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }
@@ -32,13 +32,13 @@ EXTRA;
 <tr>
   <td>●</td>
   <td>Y</td>
-  <td class='kmhmu'> ກ໌ </td>
+  <td class='kmhmu'> ໞ </td>
   <td></td>
 </tr>
 <tr>
   <td>●</td>
   <td>U</td>
-  <td class='kmhmu'> ຍ໌ </td>
+  <td class='kmhmu'> ໟ </td>
   <td></td>
 </tr>
 <tr>
@@ -79,11 +79,11 @@ EXTRA;
 </table>
 
 <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: normal (default) state" src="kmhmu_2008U_.png"/></p>
+<p><img alt="Kmhmu 2008 keyboard layout: normal (default) state" src="sil_kmhmuU_.png"/></p>
 <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: shift state" src="kmhmu_2008U_S.png"/></p>
+<p><img alt="Kmhmu 2008 keyboard layout: shift state" src="sil_kmhmu_U_S.png"/></p>
 <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
-<p><img alt="Kmhmu 2008 keyboard layout: AltGr state" src="kmhmu_2008U_RA.png"/></p>
+<p><img alt="Kmhmu 2008 keyboard layout: AltGr state" src="sil_kmhmuU_RA.png"/></p>
 
 <h2>Fonts</h2>
   <p>The font <b>Kmhmu MX</b> has been included with the keyboard layout.</p>
