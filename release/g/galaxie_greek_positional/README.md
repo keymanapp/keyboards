@@ -1,4 +1,4 @@
-Galaxie Greek (PHonetic) Keyboard
+Galaxie Greek (Phonetic) Keyboard
 =====================
 
 Copyright (C) 2004-2018 Galaxie Software and SIL International
