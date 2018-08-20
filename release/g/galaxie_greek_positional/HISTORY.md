@@ -1,4 +1,4 @@
-Galaxie Greek (PHonetic) Keyboard Change History
+Galaxie Greek (Phonetic) Keyboard Change History
 =======================
 
 ## 2.2 (13 Aug 2018)
