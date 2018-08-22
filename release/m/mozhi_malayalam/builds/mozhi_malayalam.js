@@ -983,15 +983,6 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(2,t,"൏");
     }
-    else if(k.KKM(e, 0x4000, 0xDC)&&k.KA(0,k.KC(2,1,t),this.s_chills)&&k.KCM(1,t,"\\",1)) {   // Line 108
-      r=m=1;
-      k.KIO(2,this.s_chillBases,1,t);
-      k.KO(-1,t,"്‍");
-    }
-    else if(k.KKM(e, 0x4000, 0xDC)&&k.KCM(2,t,"ഩ്",2)) {   // Line 109
-      r=m=1;
-      k.KO(2,t,"ന്‍");
-    }
     else if(k.KKM(e, 0x4000, 0xDC)&&k.KCM(2,t,"മ്",2)) {   // Line 161
       r=m=1;
       k.KO(2,t,"ം");
