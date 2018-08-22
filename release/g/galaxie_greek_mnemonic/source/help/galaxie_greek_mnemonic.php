@@ -35,7 +35,7 @@ END;
 
 <h1>Galaxie Greek (Mnemonic) Keyboard</h1>
 
-        <p style='margin:0px'>Keyboard &#169; 2004-2011 Galaxie Software and Tavultesoft Pty Ltd</p>
+        <p style='margin:0px'>Keyboard &#169; 2004-2018 Galaxie Software and SIL International</p>
 
         <br/>
         <a href="#Overview">Overview</a><br/>
@@ -45,9 +45,6 @@ END;
         <a style='margin-left:20px' href="#Examples">Examples</a><br/>
         <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
         <a style='margin-left:30px' target="_blank" href='keyboardchart.htm'>Complete Typing Chart</a><br/>
-        <a href="#Troubleshooting">Troubleshooting</a><br/>
-        <a href="#Resources">Further Resources</a><br/>
-        <a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
         <a href="#Technical">Technical Information</a><br/>
         <a style='margin-left:20px' href="#Author">Authorship</a><br/>
 
@@ -73,7 +70,6 @@ END;
 
             <p>This keyboard works with standard Unicode fonts.</p>
 
-            <p><a href="#Related">Click here</a> to see other keyboards for Greek.</p>
 
         </div>
         <div id='UsingGreek' class='break'>
