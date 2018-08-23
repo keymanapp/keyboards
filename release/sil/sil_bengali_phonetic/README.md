@@ -1,4 +1,4 @@
-# Bengali Phonetic (SIL) Keyboard
+# Bengali-Assamese Phonetic (SIL) Keyboard
 
 Copyright (C) 2006-2018 SIL International
 
