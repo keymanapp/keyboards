@@ -26,7 +26,7 @@ dk(1) + "]" > "]"
 dk(1) + "~" > "~"
 dk(1) + "?" > "?"
 dk(1) + "+" > "+"
-dk(1) + d34 > d34
+dk(1) + '"' > '"'
 dk(1) + "'" > "'"
 dk(1) + "-" > U+0304  c combining macron: jmd 17 Oct 08
 U+0304 + "]" > context U+0313
@@ -209,7 +209,7 @@ any( plain ) + "\" > index( grave, 1 )
 any( plain ) + "|" > index( iota, 1 )
 
 any( plain ) + "~" > index( circ, 1 ) 
-any( plain ) + d34 > index( circ, 1 ) 
+any( plain ) + '"' > index( circ, 1 ) 
 
 any( plain ) + "?" > index( dia, 1 ) 
 any( plain ) + "+" > index( dia, 1 ) 
@@ -246,7 +246,7 @@ any( circ ) + "j" > index( sm_circ, 1 )
 any( circ ) + "]" > index( sm_circ, 1 )
 
 any( smooth ) + "~" > index( sm_circ, 1 )
-any( smooth ) + d34 > index( sm_circ, 1 ) 
+any( smooth ) + '"' > index( sm_circ, 1 ) 
 
 c CAP smooth + accent
 any( cap_sm ) + "v" > index( cap_sm_acc, 1 )
@@ -254,7 +254,7 @@ any( cap_acc ) + "j" > index( cap_sm_acc, 1 )
 any( cap_sm ) + "V" > index( cap_sm_gra, 1 )
 any( cap_gra ) + "j" > index( cap_sm_gra, 1 ) 
 any( cap_sm ) + "~" > index( cap_sm_circ, 1 )
-any( cap_sm ) + d34 > index( cap_sm_circ, 1 ) 
+any( cap_sm ) + '"' > index( cap_sm_circ, 1 ) 
 
 c rough + accent
 any( rough ) + "v" > index( rg_acc, 1 )
@@ -273,7 +273,7 @@ any( circ ) + "J" > index( rg_circ, 1 )
 any( circ ) + "[" > index( rg_circ, 1 )
 
 any( rough ) + "~" > index( rg_circ, 1 )
-any( rough ) + d34 > index( rg_circ, 1 ) 
+any( rough ) + '"' > index( rg_circ, 1 ) 
 
 c CAPS
 any( cap_rg ) + "v" > index( cap_rg_acc, 1 )
@@ -283,7 +283,7 @@ any( cap_acc ) + "J" > index( cap_rg_acc, 1 )
 any( cap_gra ) + "J" > index( cap_rg_gra, 1 ) 
 
 any( cap_rg ) + "~" > index( cap_rg_circ, 1 )
-any( cap_rg ) + d34 > index( cap_rg_circ, 1 ) 
+any( cap_rg ) + '"' > index( cap_rg_circ, 1 ) 
 
 any( cap_rg ) + "/" > index( cap_rg_acc, 1 )
 any( cap_rg ) + "\" > index( cap_rg_gra, 1 )
@@ -298,7 +298,7 @@ any( dia ) + "\" > index( dia_gra, 1 )
 any( dia ) + "/" > index( dia_acc, 1 )
 
 any( dia ) + "~" > index( dia_circ, 1 )
-any( dia ) + d34 > index( dia_circ, 1 ) 
+any( dia ) + '"' > index( dia_circ, 1 ) 
 
 any( grave ) + "?" > index( dia_gra, 1 )
 any( acute ) + "?" > index( dia_acc, 1 )
@@ -329,7 +329,7 @@ any( iota ) + "\" > index( gra_iota, 1 )
 c circ + iota
 any( circ ) + "|" > index( circ_iota, 1 )
 any( iota ) + "~" > index( circ_iota, 1 )
-any( iota ) + d34 > index( circ_iota, 1 ) 
+any( iota ) + '"' > index( circ_iota, 1 ) 
 
 c smooth + accent + iota
 any( sm_acc ) + "|" > index( sm_acc_iota, 1 )
@@ -343,7 +343,7 @@ any( sm_iota ) + "\" > index( sm_gra_iota, 1 )
 any( gra_iota ) + "]" > index( sm_gra_iota, 1 )
 any( acc_iota ) + "]" > index( sm_acc_iota, 1 )
 any( sm_iota ) + "~" > index( sm_circ_iota, 1 ) 
-any( sm_iota ) + d34 > index( sm_circ_iota, 1 ) 
+any( sm_iota ) + '"' > index( sm_circ_iota, 1 ) 
 any( circ_iota ) + "j" > index( sm_circ_iota, 1 )
 any( circ_iota ) + "]" > index( sm_circ_iota, 1 )
 any( sm_circ ) + "|" > index( sm_circ_iota, 1 )
@@ -360,7 +360,7 @@ any( acc_iota ) + "[" > index( rg_acc_iota, 1 )
 any( rg_iota ) + "/" > index( rg_acc_iota, 1 )
 any( rg_iota ) + "\" > index( rg_gra_iota, 1 )
 any( rg_iota ) + "~" > index( rg_circ_iota, 1 )
-any( rg_iota ) + d34 > index( rg_circ_iota, 1 ) 
+any( rg_iota ) + "'" > index( rg_circ_iota, 1 ) 
 any( rg_circ ) + "|" > index( rg_circ_iota, 1 )
 any( circ_iota ) + "J" > index( rg_circ_iota, 1 )
 any( circ_iota ) + "[" > index( rg_circ_iota, 1 )
