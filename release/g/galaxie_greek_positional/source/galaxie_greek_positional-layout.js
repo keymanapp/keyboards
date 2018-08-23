@@ -186,8 +186,13 @@
                 "text": ".",
                 "sk": [
                   {
-                    "text": "·",
-                    "id": "K_COLON",
+                    "text": "!",
+                    "id": "K_1",
+                    "layer": "shift"
+                  },
+                  {
+                    "text": "@",
+                    "id": "K_2",
                     "layer": "shift"
                   },
                   {
@@ -201,6 +206,14 @@
                     "layer": "default"
                   },
                   {
+                    "text": "+",
+                    "id": "U_002B"
+                  },
+                  {
+                    "text": "~",
+                    "id": "U_007E"
+                  },
+                  {
                     "text": "*",
                     "id": "K_8",
                     "layer": "shift"
@@ -211,6 +224,10 @@
                     "layer": "shift"
                   },
                   {
+                    "text": "{",
+                    "id": "U_007B"
+                  },
+                  {
                     "text": "(",
                     "id": "K_9",
                     "layer": "shift"
@@ -219,6 +236,10 @@
                     "text": ")",
                     "id": "K_0",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "}",
+                    "id": "U_007D"
                   },
                   {
                     "text": ">",
@@ -232,26 +253,27 @@
                   },
                   {
                     "text": "?",
-                    "id": "K_SLASH",
-                    "layer": "shift"
+                    "id": "U_003F"
                   },
                   {
-                    "text": "'",
-                    "id": "K_QUOTE"
-                  },
-                  {
-                    "text": "\"",
-                    "id": "K_QUOTE",
-                    "layer": "shift"
+                    "text": "/",
+                    "id": "U_002F"
                   },
                   {
                     "text": "\\",
-                    "id": "K_BKSLASH"
+                    "id": "U_005C"
+                  },
+                  {
+                    "text": "'",
+                    "id": "U_0027"
+                  },
+                  {
+                    "text": "\"",
+                    "id": "U_0022"
                   },
                   {
                     "text": ":",
-                    "id": "K_COLON",
-                    "layer": "shift"
+                    "id": "U_003A"
                   },
                   {
                     "text": ";",
@@ -260,6 +282,11 @@
                   {
                     "text": ",",
                     "id": "K_COMMA"
+                  },
+                  {
+                    "text": "·",
+                    "id": "K_COLON",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -490,8 +517,13 @@
                 "layer": "default",
                 "sk": [
                   {
-                    "text": "·",
-                    "id": "K_COLON",
+                    "text": "!",
+                    "id": "K_1",
+                    "layer": "shift"
+                  },
+                  {
+                    "text": "@",
+                    "id": "K_2",
                     "layer": "shift"
                   },
                   {
@@ -503,6 +535,14 @@
                     "text": "-",
                     "id": "K_HYPHEN",
                     "layer": "default"
+                  },
+                  {
+                    "text": "+",
+                    "id": "U_002B"
+                  },
+                  {
+                    "text": "~",
+                    "id": "U_007E"
                   },
                   {
                     "text": "*",
@@ -518,6 +558,22 @@
                     "text": "(",
                     "id": "K_9",
                     "layer": "shift"
+                  },
+                  {
+                    "text": "{",
+                    "id": "U_007B"
+                  },
+                  {
+                    "text": "[",
+                    "id": "U_005B"
+                  },
+                  {
+                    "text": "]",
+                    "id": "U_005D"
+                  },
+                  {
+                    "text": "}",
+                    "id": "U_007D"
                   },
                   {
                     "text": ")",
@@ -536,28 +592,28 @@
                   },
                   {
                     "text": "?",
-                    "id": "K_SLASH",
-                    "layer": "shift"
+                    "id": "U_003F"
                   },
                   {
-                    "text": "'",
-                    "id": "K_QUOTE",
-                    "layer": "default"
-                  },
-                  {
-                    "text": "\"",
-                    "id": "K_QUOTE",
-                    "layer": "shift"
+                    "text": "/",
+                    "id": "U_002F"
                   },
                   {
                     "text": "\\",
-                    "id": "K_BKSLASH",
+                    "id": "U_005C"
+                  },
+                  {
+                    "text": "'",
+                    "id": "U_0027"
+                  },
+                  {
+                    "text": "\"",
+                    "id": "U_0022",
                     "layer": "default"
                   },
                   {
                     "text": ":",
-                    "id": "K_COLON",
-                    "layer": "shift"
+                    "id": "U_003A"
                   },
                   {
                     "text": ";",
@@ -568,6 +624,11 @@
                     "text": ",",
                     "id": "K_COMMA",
                     "layer": "default"
+                  },
+                  {
+                    "text": "·",
+                    "id": "K_COLON",
+                    "layer": "shift"
                   }
                 ]
               },
