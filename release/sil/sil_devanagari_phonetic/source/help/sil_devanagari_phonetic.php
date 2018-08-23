@@ -129,7 +129,7 @@ END;
 
     <p>A full (live) consonant with visible virama can be typed using <kbd>X</kbd>, e.g. <kbd>k</kbd> <kbd>X</kbd> <kbd>S</kbd> produces <samp>क्‌ष</samp>  </p>
 
-    <p>To force conjunct formation, <kbd>x</kbd> can be typed between the consonants, for example: <kbd>x</kbd> <kbd>x</kbd> <kbd>S</kbd> will generate <samp>क्‍ष</samp>.</p>
+    <p>To force conjunct formation, <kbd>x</kbd> can be typed between the consonants, for example: <kbd>k</kbd> <kbd>x</kbd> <kbd>S</kbd> will generate <samp>क्‍ष</samp>.</p>
     <!--
         "x"     > U+094d U+200D  c halant (and the zero-width joiner to get half-character)
         "X"     > U+094d U+200C  c halant (and the zero-width non-joining to get full-char                plus halant) 

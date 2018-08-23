@@ -1,4 +1,4 @@
-# Devanagri Phonetic (SIL) Keyboard
+# Devanagari Phonetic (SIL) Keyboard
 
 Copyright (C) 2002-2018 SIL International
 
