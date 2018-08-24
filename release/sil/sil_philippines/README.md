@@ -3,13 +3,11 @@ Philippines (SIL) Keyboard
 
 Copyright (C) 2006-2018 SIL Philippines
 
-Version 1.0
+Version 1.0.1
 
 __DESCRIPTION__
 This keyboard enables the typing of all Philippine languages. It gives the ability to
 type all the special characters and diacritics in the languages of the Philippines.
-
-This keyboard is designed to work with a US English keyboard.
 
 Links
 -----
