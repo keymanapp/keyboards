@@ -1,6 +1,11 @@
 Philippines (SIL) Keyboard Change History
 =======================
 
+1.0.1 (22 Aug 2018)
+------------------
+* Removed inaccurate statement about US keyboard.
+* Removed reference to Andika New Basic
+
 1.0 (12 Aug 2018)
 ------------------
 * Renamed keyboard
