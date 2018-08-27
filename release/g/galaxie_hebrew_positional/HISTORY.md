@@ -1,4 +1,4 @@
-# Dzongkha Keyboard Change History
+# Galaxie Hebrew (Positional) Keyboard Change History
 
 ## 2.2 (24 Aug 2018)
 
