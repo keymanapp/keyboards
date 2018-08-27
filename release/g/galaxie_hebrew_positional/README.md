@@ -1,4 +1,4 @@
-____________ Keyboard
+Galaxie Hebrew (Positional) Keyboard
 =====================
 
 Copyright (C) 2004-2018 Galaxie Software and SIL International
@@ -14,7 +14,5 @@ Supported Platforms
  * Windows
  * macOS
  * Web
- * Mobile Web
- * iOS
- * Android
+
 

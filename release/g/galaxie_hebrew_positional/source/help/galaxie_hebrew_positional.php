@@ -694,7 +694,7 @@ END;
 
 <h3>Additional characters</h3>
 
-<p>The <kbd>`</kbd> key is a deadkey, that allows additioanl characters to be typed.</p>
+<p>The <kbd>`</kbd> key is a deadkey, that allows additional characters to be typed.</p>
 
 <table>
         <thead>
