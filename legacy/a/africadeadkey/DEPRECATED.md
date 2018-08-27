@@ -1,0 +1,2 @@
+These keyboards have been deprecated and replaced by release/sil/sil_pan_africa_mnemonic.
+
