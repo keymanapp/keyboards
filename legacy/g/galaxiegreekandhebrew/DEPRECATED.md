@@ -1,0 +1,2 @@
+
+This keyboard has been deprecated and replaced by release/g/galaxie_greek_positional and release/g/galaxie_hebrew_positional
