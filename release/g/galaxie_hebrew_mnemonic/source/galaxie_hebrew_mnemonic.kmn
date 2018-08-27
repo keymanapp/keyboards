@@ -1,0 +1,141 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Galaxie Hebrew (Mnemonic)'
+store(&COPYRIGHT) '© 2004-2018 Galaxie Software and SIL International'
+store(&KMW_RTL) '1'
+$keymanonly: store(&mnemoniclayout) '1' 
+store(&BITMAP) 'galaxie_hebrew_mnemonic.ico'
+store(&VISUALKEYBOARD) 'galaxie_hebrew_mnemonic.kvks'
+store(&KEYBOARDVERSION) '3.2'
+store(&TARGETS) 'windows macosx web'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c ==Primary Output==
+c 1-to-1 rules
+store(row1) "`1234567890-=" 
+store(out1) U+05AB "1234567890" U+05BE U+05B0
+store(row2) "qwrtyuip[]\" c 'e' and 'o' below
+store(out2) U+05E7 U+05D5 U+05E8 U+05EA U+05D9 U+05E2 U+05DA U+05E4 U+05E3 U+05E9 U+05BD   
+store(row3) "asdfghjkl'" c ';' below    
+store(out3) U+05D0 U+05E1 U+05D3 U+05D8 U+05D2 U+05D4 U+05D7 U+05DB U+05DC U+05F3 
+store(row4) "zxbnm,./" c 'c' and 'v' below
+store(out4) U+05D6 U+05E6 U+05D1 U+05E0 U+05DE "," U+05C3 U+05DF
+
+store(row1s) '~!@#$%^&*()_+'
+store(out1s) U+05A4 U+05B4 U+05B5 U+05B6 U+05B1 U+05BB U+05B7 U+05B2 U+05B8 U+05B3 U+05B9 U+05BF dk(1) c dk generates standard key values
+store(row2s) '|' c 'QWERTYUIOP{}' below
+store(out2s) U+05C0 c paseq
+store(row3s) 'H"' c 'ASDFG' and 'JKL:' below
+store(out3s) U+05E5 U+05F4
+store(row4s) '<>?' c 'ZXCVBNM' below
+store(out4s) U+05DD U+002E U+05BC c dagesh  
+
+store(key) outs(row1) outs(row2) outs(row3) outs(row4) outs(row1s) outs(row2s) outs(row3s) outs(row4s)
+store(out) outs(out1) outs(out2) outs(out3) outs(out4) outs(out1s) outs(out2s) outs(out3s) outs(out4s)
+
+      + any(key) > index(out,1)
+dk(1) + any(key) > index(key,2)
+
+c 1-to-Many rules
+store(row2s_dag) 'QWRTYUIP{}' c 'E' and 'O' below
+store(out2s_dag) U+05E7 U+05D5 U+05E8 U+05EA U+05D9 U+05E2 U+05DA U+05E4 U+05E3 U+05E9 
+store(row3s_dag) 'ASDFGJKL' c ':' below
+store(out3s_dag) U+05D0 U+05E1 U+05D3 U+05D8 U+05D2 U+05D7 U+05DB U+05DC
+store(row4s_dag) 'ZXBNM' c 'CV' below
+store(out4s_dag) U+05D6 U+05E6 U+05D1 U+05E0 U+05DE 
+
+store(key_dag) outs(row2s_dag) outs(row3s_dag) outs(row4s_dag)
+store(out_dag) outs(out2s_dag) outs(out3s_dag) outs(out4s_dag)
+
+      + any(key_dag) > index(out_dag,1) U+05BC
+dk(1) + any(key_dag) > index(key_dag,2)
+
++ "e" > U+05DA U+05B5
+dk(1) + "e" > "e"
++ "o" > U+05D5 U+05B9
+dk(1) + "o" > "o"
++ ";" > U+05DA U+05B8
+dk(1) + ";" > ";"
++ "c" > U+05E9 U+05C2
+dk(1) + "c" > "c"
++ "v" > U+05E9 U+05C1
+dk(1) + "v" > "v"
+
++ 'E' > U+05DA U+05B0 
+dk(1) + 'E' > 'E'
++ 'O' > U+05D5 U+05B9 U+05BC
+dk(1) + 'O' > 'O' 
++ ':' > U+05DA U+05B6
+dk(1) + ':' > ':' 
++ 'C' > U+05E9 U+05C2 U+05BC
+dk(1) + 'C' > 'C'
++ 'V' > U+05E9 U+05C1 U+05BC
+dk(1) + 'V' > 'V'
+
+c Rules for kaf, mem, nun, pe, tsadi
+store (norm)  U+05DB U+05DE U+05E0 U+05E4 U+05E6
+store (final) U+05DA U+05DD U+05DF U+05E3 U+05E5  
+
+
+$keymanonly: any(norm) + [CTRL ' '] > context(1) U+0020 
+$keymanweb: any(norm) + [CTRL K_SPACE] > context(1) U+0020
+any(norm) + ' ' > index(final,1)  U+0020
+any(norm) + [K_TAB] > index(final,1) use(outkey)
+any(norm) + [K_ENTER] > index(final,1) use(outkey)
+
+c ==Optimised Output==
+c Currently optimised for:
+c    AZERTY [FR]
+c    QWERTY UK [UK]
+c    QWERTZ [DE]
+c Notes in brackets = keyboard using character + corresponding key on QWERTY US
+ 
+$keymanonly: + '²' > U+05AB  c [FR `]
+$keymanonly: dk(1) + '²' > '²'
+$keymanonly: + 'é' > U+05B5  c [FR 2] 
+$keymanonly: dk(1) + 'é' > 'é'  
+$keymanonly: + 'è' > U+05B6  c [FR 7] 
+$keymanonly: dk(1) + 'è' > 'è' 
+$keymanonly: + 'ç' > U+05E9  c [FR 9] 
+$keymanonly: dk(1) + 'ç' > 'ç'
+$keymanonly: + 'à' > U+05A4  c [FR 0] 
+$keymanonly: dk(1) + 'à' > 'à'
+$keymanonly: + 'ß' > U+05E9  c [DE -]
+$keymanonly: dk(1) + 'ß' > 'ß'
+$keymanonly: + '´' > U+05A4  c [DE =]
+$keymanonly: dk(1) + '´' > '´'
+$keymanonly: + 'ü' > U+05E3  c [DE []
+$keymanonly: dk(1) + 'ü' > 'ü'
+$keymanonly: + 'ö' > U+05E9  c [DE ;]                
+$keymanonly: dk(1) + 'ö' > 'ö'
+$keymanonly: + 'ä' > U+05B5  c [DE '] 
+$keymanonly: dk(1) + 'ä' > 'ä'
+$keymanonly: + 'ù' > U+05E3  c [FR '] 
+$keymanonly: dk(1) + 'ù' > 'ù'
+
+$keymanonly: + '¬' > U+00AC  c [UK ~]  
+$keymanonly: dk(1) + '¬' > '¬'
+$keymanonly: + '°' > U+05BD  c [DE ~] [FR _] 
+$keymanonly: dk(1) + '°' > '°'
+$keymanonly: + '¨' > U+05B5  c [FR {]  
+$keymanonly: dk(1) + '¨' > '¨'
+$keymanonly: + 'Ü' > U+05E3 U+05BC  c [DE {] 
+$keymanonly: dk(1) + 'Ü' > 'Ü'
+$keymanonly: + '£' > U+05E3 U+05BC  c [FR }] [UK #] 
+$keymanonly: dk(1) + '£' > '£'
+$keymanonly: + 'µ' > U+05E9 U+05BC   c [FR |]
+$keymanonly: dk(1) + 'µ' > 'µ'
+$keymanonly: + 'Ö' > U+05E9 U+05BC  c [DE :]
+$keymanonly: dk(1) + 'Ö' > 'Ö' 
+$keymanonly: + 'Ä' > U+05B0  c [DE "] 
+$keymanonly: dk(1) + 'Ä' > 'Ä'
+$keymanonly: + '§' > U+05C0 c [DE #] [FR ?]         
+$keymanonly: dk(1) + '§' > '§'
+
+group(outkey) using keys
+
+c empty group to trigger output of TAB and ENTER in KM9
+
+c EOF
