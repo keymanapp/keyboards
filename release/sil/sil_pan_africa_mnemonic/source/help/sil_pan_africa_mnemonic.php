@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Pan Africa Mnemonic (SIL) Keyboard Help</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
-
-<body>
-
-<body>
-
-<div>
-
-<h1>Pan Africa Mnemonic (SIL) Keyboard Help </h1>
+<?php
+  $pagename = 'Pan Africa Mnemonic (SIL) Keyboard Help';
+  $pagetitle = 'Pan Africa Mnemonic (SIL) Keyboard Help';
+  require_once('header.php');
+?>
 
 <p>This is the mnemonic version of the Pan Africa (SIL) keyboard. It features a layout that adjusts 
 to the arrangement of keys on your hardware keyboard. For a keyboard tailored to the US hardware 
@@ -7230,7 +7221,3 @@ person desires to see the Unicode Scalar Value of a particular character.</p>
  </tr>
 </table>
 
-
-</body>
-
-</html>
