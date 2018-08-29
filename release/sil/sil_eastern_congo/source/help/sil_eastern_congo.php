@@ -1,25 +1,24 @@
 <?php
-  $pagename = 'Eastern Congo (SIL)';
+  $pagename = 'Eastern Congo';
   $pagetitle = 'Eastern Congo keyboard help';
   require_once('header.php');
 ?>
 
-<h2>Layout</h2>
-<p>Eastern Congo keyboard for languages of the Democratic Republic of the Congo.</p>
-<h3>Default</h3>
-<p><img src="sil_eastern_congoU_.png" alt="Eastern Congo keyboard layout (normal state)"></p>
-<h3>Shift</h3>
-<p><img src="sil_eastern_congoU_S.png" alt="Eastern Congo keyboard layout (shift state)"></p>
+    <h2>Layout</h2>
+    <h3>Default</h3>
+    <p><img src="sil_eastern_congoU_.png" alt="Eastern Congo keyboard layout (normal state)"></p>
+    <h3>Shift</h3>
+    <p><img src="sil_eastern_congoU_S.png" alt="Eastern Congo keyboard layout (shift state)"></p>
 
     <h2>Input sequences</h2>
     <h3>Alphabetic</h3>
     <table class="inputSequences">
         <thead>
             <tr>
-                <th style="padding-right: 20px;">Keystroke</th><th style="padding-right: 40px;">Character</th><th style="padding-right: 20px;">Keystroke</th><th>Character</th>
+                <th>Keystroke</th><th>Character</th><th>Keystroke</th><th>Character</th>
             </tr>
         </thead>
-        <tbody>a
+        <tbody>
             <tr>
                 <td>a</td><td>a</td><td>A</td><td>A</td>
             </tr>
@@ -60,10 +59,16 @@
                 <td>;7</td><td>ʊ</td><td>;&</td><td>Ʊ</td>
             </tr>
             <tr>
-                <td>&<abbr title="Non-breaking space">NBSP</abbr>;</td><td>&<abbr title="Non-breaking space">NBSP</abbr>;</td><td>;B</td><td>ß</td>
+                <td>;b</td><td>ɓ</td><td>;B</td><td>Ɓ</td>
             </tr>
             <tr>
                 <td>;c</td><td>ç</td><td>;C</td><td>Ç</td>
+            </tr>
+            <tr>
+                <td>;d</td><td>ɗ</td><td>;D</td><td>Ɗ</td>
+            </tr>
+            <tr>
+                <td>&<abbr title="Non-breaking space">NBSP</abbr>;</td><td>&<abbr title="Non-breaking space">NBSP</abbr>;</td><td>;G</td><td>ß</td>
             </tr>
             <tr>
                 <td>;h</td><td>ħ</td><td>;H</td><td>Ħ</td>
@@ -78,7 +83,7 @@
     <table class="inputSequences">
         <thead>
             <tr>
-                <th style="padding-right: 15px;">Keystrokes</th><th style="padding-right: 15px;">Character</th><th style="padding-right: 15px;">Example keystrokes</th><th style="padding-right: 15px;">Example results</th><th>Comments</th>
+                <th>Keystrokes</th><th>Character</th><th>Example keystrokes</th><th>Example result</th><th>Commments</th>
             </tr>
         </thead>
         <tbody>
@@ -134,7 +139,7 @@
     <table class="inputSequences">
         <thead>
             <tr>
-                <th style="padding-right: 20px;">Keystroke</th><th style="padding-right: 20px;">Character</th><th style="padding-right: 20px;">Comment</th>
+                <th>Keystroke</th><th>Character</th><th>Comment</th>
             </tr>
         </thead>
         <tbody>
@@ -225,6 +230,3 @@
 
         </tbody>
     </table>
-
-  </body>
-</html>
