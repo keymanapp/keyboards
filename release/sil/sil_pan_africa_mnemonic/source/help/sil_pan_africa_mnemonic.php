@@ -59,8 +59,7 @@ considered a complete list, nor should it be considered an endorsement for this 
   mso-border-top-alt:double windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
   <p align=center style='margin-top:3.0pt;margin-right:0in;
   margin-bottom:3.0pt;margin-left:0in;text-align:center;line-height:12.0pt;
-  mso-line-height-rule:exactly'><b><span style='font-family:"Times New Roman";
-  font-family:"Times New Roman"'>d</span></b><b><span
+  mso-line-height-rule:exactly'><b><span style='font-family:"Times New Roman"'>d</span></b><b><span
   style='font-family:"Times New Roman"'></span></b></p>
   </td>
   <td width=24 valign=top style='width:17.25pt;border-top:double windowtext 1.5pt;
@@ -69,8 +68,7 @@ considered a complete list, nor should it be considered an endorsement for this 
   mso-border-top-alt:double windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
   <p align=center style='margin-top:3.0pt;margin-right:0in;
   margin-bottom:3.0pt;margin-left:0in;text-align:center;line-height:12.0pt;
-  mso-line-height-rule:exactly'><b><span style='font-family:"Times New Roman";
-  font-family:"Times New Roman"'>e</span></b><b><span
+  mso-line-height-rule:exactly'><b><span style='font-family:"Times New Roman"'>e</span></b><b><span
   style='font-family:"Times New Roman"'></span></b></p>
   </td>
   <td width=23 valign=top style='width:16.7pt;border-top:double windowtext 1.5pt;
