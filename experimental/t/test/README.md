@@ -1,3 +1,1 @@
-This is a placeholder
-Adding a second line.
-And a third line.
+This is a placeholder (back to 1 line)
