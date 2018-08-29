@@ -14,6 +14,9 @@ This keyboard was developed to type the Latin-script languages of Africa.  An at
 cover the orthographic needs for SIL in many of the countries of Africa, but this cannot be 
 considered a complete list, nor should it be considered an endorsement for this particular layout.
 
+Known Issues: A few of the virtual keys in this keyboard, such as "RALT O" may be used by other applications,
+and you may not be able to use that keystroke. In those cases, use the alternate keystroke (in this case "[O").
+
 Links
 -----
 
