@@ -1,3 +1,1 @@
-This is a placeholder (back to 1 line)
-I expect to see keyman-server add a comment to the PR
-
+This is a commit 8-29-2018 evening
