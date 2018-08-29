@@ -1,6 +1,10 @@
 Eastern Congo Keyboard Change History
 =======================
 
+1.3.2 (29 Aug 2018)
+------------------
+* Added keys to support languages in Isiro region
+
 1.3.1 (4 Jun 2018)
 ------------------
 * Added script information to language metadata in .kps
