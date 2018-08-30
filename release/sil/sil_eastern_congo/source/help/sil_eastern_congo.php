@@ -1,9 +1,10 @@
 <?php
-  $pagename = 'Eastern Congo';
+  $pagename = 'Eastern Congo Keyboard';
   $pagetitle = 'Eastern Congo keyboard help';
   require_once('header.php');
 ?>
 
+    <p>Eastern Congo keyboard for languages of the Democratic Republic of the Congo.</p>
     <h2>Layout</h2>
     <h3>Default</h3>
     <p><img src="sil_eastern_congoU_.png" alt="Eastern Congo keyboard layout (normal state)"></p>
@@ -26,10 +27,25 @@
                 <td>;a</td><td>ä</td><td>;A</td><td>Ä</td>
             </tr>
             <tr>
+                <td>;b</td><td>ɓ</td><td>;B</td><td>Ɓ</td>
+            </tr>
+            <tr>
+                <td>;c</td><td>ç</td><td>;C</td><td>Ç</td>
+            </tr>
+            <tr>
+                <td>;d</td><td>ɗ</td><td>;D</td><td>Ɗ</td>
+            </tr>
+            <tr>
                 <td>e</td><td>e</td><td>E</td><td>E</td>
             </tr>
             <tr>
                 <td>;e</td><td>ɛ</td><td>;E</td><td>Ɛ</td>
+            </tr>
+            <tr>
+                <td>;r</td><td>ə</td><td>;R</td><td>Ə</td>
+            </tr>
+            <tr>
+                <td>;h</td><td>ħ</td><td>;H</td><td>Ħ</td>
             </tr>
             <tr>
                 <td>i</td><td>i</td><td>I</td><td>I</td>
@@ -39,6 +55,9 @@
             </tr>
             <tr>
                 <td>;8</td><td>ɪ</td><td>;*</td><td>I</td>
+            </tr>
+            <tr>
+                <td>;n</td><td>ŋ</td><td>;N</td><td>Ŋ</td>
             </tr>
             <tr>
                 <td>o</td><td>o</td><td>O</td><td>O</td>
@@ -59,22 +78,7 @@
                 <td>;7</td><td>ʊ</td><td>;&</td><td>Ʊ</td>
             </tr>
             <tr>
-                <td>;b</td><td>ɓ</td><td>;B</td><td>Ɓ</td>
-            </tr>
-            <tr>
-                <td>;c</td><td>ç</td><td>;C</td><td>Ç</td>
-            </tr>
-            <tr>
-                <td>;d</td><td>ɗ</td><td>;D</td><td>Ɗ</td>
-            </tr>
-            <tr>
                 <td>&<abbr title="Non-breaking space">NBSP</abbr>;</td><td>&<abbr title="Non-breaking space">NBSP</abbr>;</td><td>;G</td><td>ß</td>
-            </tr>
-            <tr>
-                <td>;h</td><td>ħ</td><td>;H</td><td>Ħ</td>
-            </tr>
-            <tr>
-                <td>;n</td><td>ŋ</td><td>;N</td><td>Ŋ</td>
             </tr>
         </tbody>
     </table>
