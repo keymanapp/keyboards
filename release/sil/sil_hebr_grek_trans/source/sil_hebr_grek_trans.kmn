@@ -1,0 +1,90 @@
+c ---------------------------------------------------------
+c Hebrew and Greek Transliteration Unicode keyboard for use with any 
+c Unicode Windows fonts (including Doulos SIL) and Keyman 6
+c
+c ---------------------------------------------------------
+c
+c Since some upper case letters are used with special definitions
+c for Hebrew, they cannot be used for capital letters for Greek
+c Authors: Todd Hoatson and Christopher Samuel
+c cjs April 2007
+
+
+VERSION 9.0
+store(&NAME) "Hebrew and Greek Transliteration (SIL)"
+store(&BITMAP) 'sil_hebr_grek_trans.ico'
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'sil_hebr_grek_trans.kvks'
+
+begin UNICODE > use(Main)  
+
+store( &Copyright ) "Copyright © 2003-2018 SIL International"
+
+c ------------------------ STORES ---------------------
+c Define sets of characters for matching and filtering: 
+
+c ---------------------- group Main -------------------
+group(Main) using keys
+
+
+c Greek long vowels as in the legacy keyboard
+c + "j" > U+0113 c eta   - conflicts with "j" for Hebrew shin, so use e=
+c + "w" > U+014D c omega - conflicts with "w" for Hebrew waw,  so use o=
+
+c aleph and ayin
++ ">" > U+02BE
++ "<" > U+02BF
+
+c begad-kepat without dagesh
++ "B" > U+1E07
++ "G" > U+1E21
++ "D" > U+1E0F
++ "K" > U+1E35
++ "P" > U+0070 U+0304
++ "T" > U+1E6F
+
+c consonants with diacritics
+"." + "h" > U+1E25
+"." + "t" > U+1E6D
+"." + "s" > U+1E63
+"s" + "^" > U+0161
+"s" + "+" > U+015B
+
+c single keystroke versions to match the Ezra SIL Hebrew keyboard
++ "x" > U+1E25
++ "v" > U+1E6D
++ "c" > U+1E63
++ "f" > U+015B
++ "j" > U+0161
++ "S" > U+0073 U+0304
+
+c long vowels with macron
+"a" + "=" > U+0101
+"e" + "=" > U+0113
+"o" + "=" > U+014D
++ "A" > U+0101
++ "E" > U+0113
++ "O" > U+014D
+
+c plene vowels with circumflex
+"a" + "^" > U+00E2
+"e" + "^" > U+00EA
+"i" + "^" > U+00EE
+"o" + "^" > U+00F4
+"u" + "^" > U+00FB
+
+".e" + "^" > U+1EC7
+
+c hateph vowels with breve
+"a" + ";" > U+0103
+"e" + ";" > U+0115
+"o" + ";" > U+014F
+
+c schwa
++ ";" > U+0259
+
+c furtive pathah
++ [ALT K_A] > U+1D43
+
+
