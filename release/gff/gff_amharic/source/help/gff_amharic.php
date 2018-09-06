@@ -184,6 +184,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.6, 6 Sep 2018</dt>
+  <dd>The apostrophe composition stopper added after Ka'ib and Sals forms to support some special case words.</dd>
   <dt>Version 1.5, 16 May 2018</dt>
   <dd>Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.</dd>
   <dt>Version 1.4, 7 May 2015</dt>
