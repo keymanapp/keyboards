@@ -1,0 +1,286 @@
+c File Name: bj_oji_cree.kmn
+c File Version: Apr 2016
+c Rewritten by Bill Jancewicz
+
+c Originally written by Bob Hallissy with the following notes:
+c ================================================================
+c Purpose: KeyMan definition file for Eastern Cree, for use with
+c SILEasternCree fonts for Windows and KeyMan 3.1.
+c 
+c The definition herein matches the EasternCree GX font. That is,
+c when you install this KeyMan file in Windows, you can keyboard
+c essentially the same way as you would on a Macintosh which is
+c using the GX font. (The underlying document codes will be
+c different, of course.)
+c 
+c Known differences between this definition and the GX font are:
+c GX converts "je" (as in Jesus) to "chii"; I don't.
+c GX provides easy access to the alternate forms of re, ri, rii; I don't
+c 
+c Author: Bob Hallissy
+c Date: 16-Aug-95
+c ================================================================
+c Revision: 20 Nov 99, (BJ) changed bitmaps buttons, filename
+c Fixed for Windows 98 fonts, added "o" for "u"
+c Revision: 16 Jan 2000, (BJ) added "th"
+c Revision: 25 May 2002, (BJ) redone for Keyman 5.0 BJWCREE3.KMN
+c Revision: 02 May 2001, (BJ) redone for Unicode BJCRUNI.KMN
+c Revision: 17 Nov 2001, (BJ) added CapH for h char following digraphs
+c Revision: 09 Mar 2002, (BJ) fixed non-final "u" + "h" + continue
+c Revision: 25 May 2002, (BJ) change to Unicode BJWCRUNI.KMN
+c Revision: 21 Jul 2004, (BJ) added "hk" (raised x). When this is not a final,
+c this comes out as h+k+...
+c Revision: 02 May 2005, (BJ) changed "w" back to "small circle"
+
+c This keyboard is distinguished by: TH characters that resemble Y characters,
+c (with a slash), w-dot FOLLOWS the character (West Cree style)
+c Western Finals, zig-zag R's and L's
+
+c Revision: 30 Jan 2010, (BJ) redone for Plains Cree:
+c Plains Cree uses a dot on the line (normal period) for period.
+c Plains Cree uses non-breaking full spaces between preverbs (type "-").
+c Plains Cree uses 2 non-breaking thin spaces after prefixes (type "=").
+c Plains Cree uses the y-series-with-a-bar for "th", a double-bar + for the final.
+c Plains Cree uses normal wedges < > for quote marks.
+
+c Revision: 02 Sep 2014, (BJ) redone for Oji-Cree:
+c Based on the 30 Jan 2010 version, but replaced the final y U+1429 ("plus") with U+153E (small "ya")
+
+c Revision 28 Jul 2015, (BJ) revised for Oji-Cree
+c Added curvy quotes on the "wedge" keys like Naskapi.
+
+c Revision 29 Mar 2016, (BJ) revised for Oji-Cree
+c changed filename from bjojcuni.kmn to bj_oji_cree.kmn for Tavultesoft repository
+c updated stores for developer version 9.0
+
+c Revision 01 Apr 2016, (BJ) bug fix for initial consonant keys ver 9.0.1
+
+store(&VERSION) '9.0'
+store(&NAME) "BJ-OjiCree (Kingfisher)"
+store(&BITMAP) 'bj_oji_cree.ico'
+store(&COPYRIGHT) 'Copyright (c) April 2016-2018 Bill Jancewicz NDC/SIL'
+store(&MESSAGE) "This keyboard may be freely used and redistributed"
+store(&ETHNOLOGUECODE) 'ojs'
+store(&VISUALKEYBOARD) 'bj_oji_cree.kvks'
+store(&KEYBOARDVERSION) '9.0.3'
+store(&TARGETS) 'windows macosx linux web iphone'
+
+begin Unicode > use(main)
+
+c ================================================================
+c STORES
+c ================================================================
+
+c initial consonant keys which can be typed on keyboard
+store(ConsKey)    "ptkcmnsyf"
+store(CapConsKey) "PTKCMNSYF"
+c                 p      t      k      c      m      n       s      y       f      
+store(CCKey)      U+144A U+141F U+1420 U+1428 U+14BC U+1423  U+1422 U+153E  U+155D 
+
+c Consonant followed by vowel:
+c          p      t      k      c      m      n       s      sh     y       f      th
+store(Ce)  U+142F U+144C U+146B U+1489 U+14A3 U+14C0  U+14ED U+1510 U+1526  U+1553 U+15A7
+store(Ci)  U+1431 U+144E U+146D U+148B U+14A5 U+14C2  U+14EF U+1511 U+1528  U+1555 U+15A8
+store(Cii) U+1432 U+144F U+146E U+148C U+14A6 U+14C3  U+14F0 U+1512 U+1529  U+1556 U+15A9
+store(Cu)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+1513 U+152A  U+1557 U+15AA
+store(Cuu) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+1514 U+152B  U+1558 U+15AB
+store(Co)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+1513 U+152A  U+1557 U+15AA
+store(Coo) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+1514 U+152B  U+1558 U+15AB
+store(Ca)  U+1438 U+1455 U+1472 U+1490 U+14AA U+14C7  U+14F4 U+1515 U+152D  U+1559 U+15AC
+store(Caa) U+1439 U+1456 U+1473 U+1491 U+14AB U+14C8  U+14F5 U+1516 U+152E  U+155A U+15AD
+
+c Standalone or trailing consonant, "western finals":
+c          p      t      k      c      m      n       s      sh     y       f      th
+store(CC)  U+144A U+141F U+1420 U+1428 U+14BC U+1423  U+1422 U+14D1 U+153E  U+155D U+15AE
+
+c Vowel keys
+store(VowelKey) "eiuoa"
+store(CapVowelKey) "EIUOA"
+
+c Standalone vowels (also includes doubled):
+c (Note that the u triangle (U+1405) is NOT the word-final form.
+c e      i      u      o      a        ii     uu     aa
+store(VV) U+1401 U+1403 U+1405 U+1405 U+140A   U+1404 U+1406 U+140B
+
+c Special keys
+store(Hkey) "h"
+store(CapHkey) "H"
+store(WKey) "wW"
+
+c ================================================================
+c GROUP MAIN - convert keycodes
+c 
+c (Conversion to syllables and reordering, etc, takes place in
+c the group MakeSyllables.)
+c ================================================================
+
+group(Main) using keys
+        
+c Special rules to deal with h: (western finals)
+c s   +    h      > sh (small sh character)
+c s   +    H      > s (small s) and h
+c t   +    h      > th
+c t   +    H      > t (small t) and h
+c c   +    h      > c
+c c   +    H      > c (small c) and h
+c otherwise, h      > standalone h
+    U+1422 + any(Hkey)    > U+14D1
+    U+1422 + any(CapHkey) > U+1422 U+1426
+    U+141F + any(Hkey)    > U+15AE
+    U+141F + any(CapHkey) > U+141F U+1426
+    U+1428 + any(Hkey)    > U+1428
+    U+1428 + any(CapHkey) > U+1428 U+1426
+         + any(Hkey)      > U+1426
+         + any(CapHkey)   > U+1426
+
+c hk stuff
+    U+1426 + "k"          > U+157D c hk 
+        
+U+157D + "e"  > U+1426 U+146B c h+ke
+U+157D + "i"  > U+1426 U+146D c h+ki
+U+157D + "u"  > U+1426 U+146F c h+ko
+U+157D + "o"  > U+1426 U+146F c h+ko
+U+157D + "a"  > U+1426 U+1472 c h+ka
+
+U+157D + any(Wkey) > U+1426 U+1484 c h kw
+
+c Consonant key to standalone consonant (change CC store to CCKey store):
+ + any(ConsKey)    > index(CCKey,1)
+ + any(CapConsKey) > index(CCKey,1)
+
+c Alternate consonants: (voiced for voiceless)
+    + "b" > U+144A
+    + "d" > U+141F
+    + "g" > U+1420
+    + "j" > U+1428
+    + "v" > U+155D
+    + "z" > U+1422
+c "r" and "l" sigma character (western style)
+    + "l" > U+14EC
+    + "r" > U+1552
+
+c Vowel key to vowel:
+    + any(VowelKey)    > index(VV,1)
+    + any(CapVowelKey) > index(VV,1)
+
+c Special rules for w (western)
+c k   +   w       > kw
+c m   +   w       > mw
+c otherwise, w       > standalone w
+    U+1420 + any(wKey) > U+1484
+    U+14BC + any(wKey) > U+14BD
+         + any(wKey) > U+1424
+
+c Normal Period
+    + "." > "."
+
+c Special double thin non-breaking space for personal prefixes:
+    + "=" > U+202F U+202F          
+c Special non-breaking space for preverbs:
+    + "-" > U+00A0
+    
++ "_" > U+202F c narrow non-breaking space
+U+202F + "_" > U+00A0 c standard non-breaking space
+
++ "<" > U+2018 c open single quote
++ ">" > U+2019 c close single quote
+U+2018 + "<" > U+201C c open double quote
+U+2019 + ">" > U+201D c close double quote
+
+c If we did anything, then go look for syllables
+    match   > use(MakeSyllables)
+
+
+c ================================================================
+c GROUP MAKESYLLABLES
+c 
+c This group process no keys, but looks at stuff already in the
+c context stack and does things such as make syllables, reorder
+c the "w" when in CVw, handle word-final u, etc.
+c ================================================================
+
+group(MakeSyllables)
+c "w" is the final ring character U+1424
+
+c Special rules for w:
+c k   +   w  > kw
+c m   +   w  > mw
+    U+1420 U+1424 > U+1484
+    U+14BC U+1424 > U+14BD
+
+c Re-order the w when the syllable is complete:
+c (WESTERN STYLE REORDERING)
+c kw +            vowel   >  k+vowel     w
+c mw +            vowel   >  m+vowel     w
+c Consonant + w + vowel   >  Consonant+vowel w
+    U+1484  U+1403 > U+146D U+1427
+    U+1484  U+140A > U+1472 U+1427
+    U+1484  U+1405 > U+146F U+1427
+    U+1484  U+1401 > U+146B U+1427
+    
+    U+14BD  U+1403 > U+14A5 U+1427
+    U+14BD  U+140A > U+14AA U+1427
+    U+14BD  U+1405 > U+14A7 U+1427
+    U+14BD  U+1401 > U+14A3 U+1427
+    
+    any(CC)  U+1427  any(VV)  > index(CC,1) index(VV,3) U+1427
+
+c Convert consonant followed by vowels into syllable:
+
+    any(CC) U+1401 > index(Ce,1) 
+    any(CC) U+1403 > index(Ci,1) 
+    any(CC) U+1404 > index(Cii,1) 
+    any(CC) U+1405 > index(Cu,1) 
+    any(CC) U+1406 > index(Cuu,1) 
+    any(CC) U+1405 > index(Co,1) 
+    any(CC) U+1406 > index(Coo,1) 
+    any(CC) U+140A > index(Ca,1) 
+    any(CC) U+140B > index(Caa,1) 
+
+c Consonant + w + vowel   >   Consonant vowel w
+
+    any(CC) U+1424  U+1401 > index(Ce,1) U+1427  
+    any(CC) U+1424  U+1403 > index(Ci,1) U+1427
+    any(CC) U+1427  U+1404 > index(Cii,1) U+1427 deadkey(1) 
+    any(CC) U+1424  U+1405 > index(Cu,1) U+1427  
+    any(CC) U+1427  U+1406 > index(Cuu,1) U+1427 deadkey(1) 
+    any(CC) U+1424  U+1405 > index(Co,1) U+1427  
+    any(CC) U+1427  U+1406 > index(Coo,1) U+1427 deadkey(1) 
+    any(CC) U+1424  U+140A > index(Ca,1) U+1427  
+    any(CC) U+1427  U+140B > index(Caa,1) U+1427 deadkey(1) 
+
+c Vowel followed by duplicate vowel changes to long form:
+    U+1403    U+1403 > U+1404  
+    U+1405    U+1405 > U+1406  
+    U+140A    U+140A > U+140B  
+    any(Ci) U+1403 > index(Cii,1)  
+    any(Cu) U+1405 > index(Cuu,1)  
+    any(Co) U+1405 > index(Coo,1)  
+    any(Ca) U+140A > index(Caa,1)  
+
+c mid w
+    any(Ci) U+1427 U+1403 > index(Cii,1) U+1427 deadkey(1) 
+    any(Cu) U+1427 U+1405 > index(Cuu,1) U+1427 deadkey(1)  
+    any(Co) U+1427 U+1405 > index(Coo,1) U+1427 deadkey(1)  
+    any(Ca) U+1427 U+140A > index(Caa,1) U+1427 deadkey(1)  
+
+c w + vowel = vowel w
+
+    U+1424   U+1401 > U+1401 U+1427 deadkey(1)
+    U+1424   U+1403 > U+1403 U+1427  
+    U+1403 U+1427 U+1403 > U+1404 U+1427 deadkey(1)
+    U+1424   U+1405 > U+1405 U+1427
+    U+1405 U+1427 U+1405 > U+1406 U+1427 deadkey(1)
+    U+1424   U+140A > U+140A U+1427
+    U+140A U+1427 U+140A > U+140B U+1427 deadkey(1)
+
+
+
+c Special rule for Christ (remember, ch is already c)
+c ch     r      i      s      t    > christ symbol
+    U+1428 U+1552 U+1403 U+1422 U+141F > U+166D
+
+c If we did anything, then go back through again
+    match > use(MakeSyllables)
+    
+c end of file

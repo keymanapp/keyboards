@@ -1,0 +1,53 @@
+﻿c Harari Latin 1.1
+c 
+c Keyboard layout designed for Harari (Latin orthography).
+c 
+c Andrew Cunningham    2006-04-28
+c andrewc AT vicnet.net.au
+c 
+
+store(&Version) "9.0"
+c store(&Bitmap) "har.bmp"
+store(&KEYBOARDVERSION) "1.1"
+store(&Copyright) "© 2005-2017 State Library of Victoria"
+store(&Message) "Harari Latin keyboard layout."
+store(&Name) "Harari (Latin)"
+store(&VISUALKEYBOARD) 'el_harari_latin.kvk'
+c store(&TARGETS) 'any windows'
+
+begin Unicode > use(main)  
+
+store(vowels) "aeiouAEIOU"  
+store(lvowels) U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB 
+store(nonvowel) " qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM,./<>?;':[]{}`~1234567890-=\!@#$%^&*()_+|" '"' U+02B9 U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB U+0227 U+1E0B U+1E23 U+1E61 U+017C U+0226 U+1E0A U+1E22 U+1E60 U+017B U+02BC 
+store(consonant_in) "adhstzADHSTZ"
+store(consonant_out) U+0227 U+1E0B U+1E23 U+1E61 U+1E6B U+017C U+0226 U+1E0A U+1E22 U+1E60 U+1E6A U+017B
+store(non_consonant) "qwertyuiopfgjklxcvbnmQWERTYUIOPFGJKLXCVBNM,<.>/?;:'[{]}`~1234567890-=\!@#$%^&*()_+|" '"' U+02B9 U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB U+0227 U+1E0B U+1E23 U+1E61 U+017C U+0226 U+1E0A U+1E22 U+1E60 U+017B U+02BC
+store(dia_v) "[{"
+store(dia_c) "]}"
+store(stress) "\|" 
+
+group(main) using keys
+
+any(vowels) + any(dia_v) > index(lvowels,1)
+any(nonvowel) + any(dia_v) > context
+
+any(consonant_in) + any(dia_c) > index(consonant_out,1) 
+any(non_consonant) + any(dia_c) > context  
+
++ any(stress) > U+02BC
+
++ [CTRL ALT K_LBRKT] > "["
++ [SHIFT CTRL ALT K_LBRKT] > "{" 
++ [CTRL ALT K_RBRKT] > "]"
++ [SHIFT CTRL ALT K_RBRKT] > "}"  
++ [CTRL ALT K_BKSLASH] > "\"
++ [SHIFT CTRL ALT K_BKSLASH] > "|"
+
+any(lvowels) + [K_BKSP] > nul
+any(consonant_out) + [K_BKSP] > nul
+
+any(lvowels) + [SHIFT K_BKSP] > index(vowels,1)
+any(consonant_out) + [SHIFT K_BKSP] > index(consonant_in,1) 
+
+c EOF

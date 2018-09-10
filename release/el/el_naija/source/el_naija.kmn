@@ -1,0 +1,171 @@
+﻿c naijanfd10.kmn
+c 
+c Naija Keyboard Layout 1.2
+c 
+c Keyboard layout designed for Nigerian languages.
+c 
+c 
+c Andrew Cunningham    04-08-06
+c lang.support AT gmail.com
+
+store(&VERSION) "9.0"
+store(&COPYRIGHT) '© 2006-2017 State Library of Victoria'
+store(&Message) "Keyboard layout designed for Nigerian languages."
+store(&Name) "Naija NFD"
+store(&VISUALKEYBOARD) 'el_naija.kvk'
+store(&KEYBOARDVERSION) "1.2"
+c store(&TARGETS) 'any windows'
+store(&TARGETS) 'windows'
+
+begin Unicode > use(constraints)  
+
+c Diacritics with combining class 220 (below base charater)
+store(cc220_in) "[|"
+store(cc220_out) U+0323 U+0330 
+
+c Diacritics with combining class 230 (above base character)
+store(cc230_in) "-{]}\_" 
+store(cc230_out) U+0304 U+0307 U+0301 U+0300 U+0303 U+0302 
+
+c combining class 0
+store(single) "mMnNbBdDnNsShHlLrRvVzZ"          c  Take a single diacritic   
+store(multiple) "aeiouAEIOU" U+01DD U+018E U+25CC      c  Take multiple diacritics
+
+store(subdot) "aeiouAEIOUbBdDnNsS" U+25CC
+store(non-subdot) " cCfFgGhHjJkKlLmMpPqQrRtTvVwWxXyYzZ" U+01DD U+018E U+014b U+014a U+0272 U+019D U+0253 U+0181 U+0257 U+018a U+0198 U+02BC 
+
+store(tone) "aAeEiIoOuUmMnN" U+01DD U+018E U+25CC
+store(non-tone) " bBcCdDfFgGhHjJkKlLpPqQrRsStTvVwWxXyYzZ" U+014b U+014a U+0272 U+019D U+0253 U+0181 U+0257 U+018a U+0198 U+02BC 
+
+store(tonedia-in) "-]}"
+store(tonedia-out) U+0304 U+0301 U+0300 
+
+store(tilde) "aAeEiIoOuUhHlLnNrRvVzZ" U+01DD U+018E U+25CC
+store(non-tilde) " bBcCdDfFgGjJkKmMpPqQsStTwWxXyY" U+014b U+014a U+0272 U+019D U+0253 U+0181 U+0257 U+018a U+0198 U+02BC 
+store(tildebelow) "bBdD" U+25CC
+store(non-tildebelow) " aAcCeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ" U+01DD U+018E U+014b U+014a U+0272 U+019D U+0253 U+0181 U+0257 U+018a U+0198 U+02BC 
+store(dotabove) "nNhH" U+25CC
+store(non-dotabove) " aAbBcCdDeEfFgGiIjJkKlLmMoOpPqQrRsStTuUvVwWxXyYzZ" U+01DD U+018E U+014b U+014a U+0272 U+019D U+0253 U+0181 U+0257 U+018a U+0198 U+02BC 
+store(circumflex) "aAeEiIoOuU" U+25CC
+store(non-circumflex) " bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTvVwWxXyYzZ" U+01DD U+018E U+014b U+014a U+0272 U+019D U+0253 U+0181 U+0257 U+018a U+0199 U+0198 U+028C U+0245
+store(cc0) outs(multiple) outs(single)
+
+c all diacritics
+store(diacritic_in) outs(cc220_in) outs(cc230_in)
+store(diacritic_out) outs(cc220_out) outs(cc230_out)
+
+c extended latin
+store(extended_in) "eEnNmMbBdDkKvV"
+store(extended_out) U+01DD U+018E U+014b U+014a U+0272 U+019D U+0253 U+0181 U+0257 U+018a U+0199 U+0198 U+028C U+0245
+store(extended_nul) "aAcCfFgGhHiIjJlLoOpPqQrRsStTuUwWxXzZ"
+
+store(ExtKeys) [CTRL ALT K_E] [SHIFT CTRL ALT K_E] [CTRL ALT K_N] [SHIFT CTRL ALT K_N] [CTRL ALT K_M] \
+    	   	   [SHIFT CTRL ALT K_M] [CTRL ALT K_B] [SHIFT CTRL ALT K_B] [CTRL ALT K_D] [SHIFT CTRL ALT K_D] \
+    	   	   [CTRL ALT K_K] [SHIFT CTRL ALT K_K] [CTRL ALT K_V] [SHIFT CTRL ALT K_V] [CTRL ALT K_3] \
+    	   	   [CTRL ALT K_4] [CTRL ALT K_5] [CTRL ALT K_9] [CTRL ALT K_0] [CTRL ALT K_HYPHEN] \ 
+    	   	   [CTRL ALT K_R] [CTRL ALT K_T] [CTRL ALT K_LBRKT] [CTRL ALT K_RBRKT] [CTRL ALT K_BKSLASH] \ 
+    	   	   [CTRL ALT K_C] [CTRL ALT K_COMMA] [CTRL ALT K_PERIOD] [CTRL ALT K_SLASH] [SHIFT CTRL ALT K_HYPHEN] \ 
+    	   	   [SHIFT CTRL ALT K_LBRKT] [SHIFT CTRL ALT K_RBRKT] [SHIFT CTRL ALT K_BKSLASH] [SHIFT CTRL ALT K_COMMA] \ 
+    	   	   [SHIFT CTRL ALT K_PERIOD] [CTRL ALT K_O]
+store(ExtOuts) U+01DD U+018E U+014b U+014a U+0272 \
+    	   	   U+019D U+0253 U+0181 U+0257 U+018a \ 
+    	   	   U+0199 U+0198 U+028C U+0245 U+20AC \ 
+    	   	   U+00A3 U+20A6 U+00D7 U+00F7 U+002D \ 
+    	   	   U+00AE U+2122 U+005B U+005D U+005C \ 
+    	   	   U+00A9 U+2018 U+2019 U+002F U+005F \ 
+    	   	   U+007B U+007D U+007C U+201C \ 
+    	   	   U+201D U+25CC
+store(ExtKeys2) [CTRL ALT K_Y] [SHIFT CTRL ALT K_Y]
+store(ExtOuts2) "yY" 
+
+
+group(constraints) using keys
+
++ any(ExtKeys) > use(main)
++ any(ExtKeys2) > use(main)
+
+"/" + any(extended_nul) > nul beep
+
+c limit base characters that can only have a single diacritic to one diacritic.
+any(single) any(diacritic_out) + any(diacritic_in) > context beep
+
+c limit base characters that support multiple diacritics to maximum of two combining class 230 diacritics
+any(multiple) any(cc230_out) any(cc230_out) + any(cc230_in) > context beep
+any(multiple) any(cc220_out) any(cc230_out) any(cc230_out) + any(cc230_in) > context beep
+
+c limit base characters that support multiple diacritics to a single combining class 220 diacritic
+any(multiple) any(cc220_out) + any(cc220_in) > context beep
+any(multiple) any(cc220_out) any(cc230_out) + any(cc220_in) > context beep
+any(multiple) any(cc220_out) any(cc230_out) any(cc230_out) + any(cc220_in) > context beep
+
+c prevent non-base characters from having a diacritic.
+any(non-tone) + any(tonedia-in) > context beep 
+any(non-tildebelow) + "|" > context beep
+any(non-dotabove) + "{" > context beep
+any(non-subdot) + "[" > context beep 
+any(non-tilde) + "\" > context beep 
+any(non-circumflex) + "_" > context beep
+
+c prevent enter double diacritics
+U+0323 + "[" > context beep
+U+0330 + "|" > context beep
+U+0304 + "-" > context beep
+U+0307 + "{" > context beep
+U+0301 + "]" > context beep
+U+0300 + "}" > context beep
+U+0303 + "\" > context beep
+U+0302 + "_" > context beep  
+ 
+c prevent invalid diacritic combinations
+U+0301 + "}" > context beep 
+U+0301 + "\" > context beep 
+U+0301 + "-" > context beep 
+U+0301 + "_" > context beep  
+U+0300 + "]" > context beep 
+U+0300 + "\" > context beep 
+U+0300 + "-" > context beep 
+U+0300 + "_" > context beep   
+U+0304 + "]" > context beep
+U+0304 + "}" > context beep
+U+0304 + "\" > context beep
+U+0304 + "_" > context beep 
+U+0302 + "]" > context beep
+U+0302 + "}" > context beep
+U+0302 + "\" > context beep
+U+0302 + "-" > context beep
+U+0303 + "_" > context beep
+
+nomatch > use(main)
+
+group(main) using keys  
+
++ any(ExtKeys) > index(ExtOuts, 1) 
++ any(ExtKeys2) > U+02BC index(ExtOuts2, 1)   
+
+"/" + any(extended_in) > index(extended_out,2)
+"/" + "y" > U+02BC "y"    
+"/" + "Y" > U+02BC "Y"
+
+any(subdot) + "[" > context U+0323 
+any(tone) + any(tonedia-in) > context index(tonedia-out,2)
+any(tilde) + "\" > context U+0303
+any(tildebelow) + "|" > context U+0330
+any(dotabove) + "{" > context U+0307 
+any(circumflex) + "_" > context U+0302 
+
+c any(diacritic_out) + any(diacritic_in) > context use(reorder_diacritics)
++ any(diacritic_in) > index(diacritic_out, 1) use(reorder_diacritics)
+
+c Alternative key sequences for displaced characters
+
+c group(reorder_diacritics) using keys
+group(reorder_diacritics)
+
+c any(cc230_out) any(cc220_out) any(cc230_out) > context(2) context(1) context(3)
+any(cc230_out) any(cc220_out) > context(2) Context(1)
+c any(cc230_out) any(cc230_out) > context
+any(cc230_out) any(cc230_out) any(cc220_out) > context(3) context(1) context(2)
+c any(cc220_out) + any(cc230_in) > context index(cc230_out,2)
+
+c nomatch > return
+c EOF

@@ -1,0 +1,139 @@
+﻿c Arabic Izza is the result of about forty years of researching Arabic language and script by Prof.  Abdelmalek Bouhadjera.
+c This keyboard layout is a simpler version of current Arabic keyboard standards and reflects the strengths of Arabic script and thus will make Arabic much easier to type and learn.
+c Supported languages: Arabic, Tamazight, Farsi, Ottoman, Latin...
+store(&VERSION) '9.0'
+store(&NAME) 'Arabic Izza'
+store(&BITMAP) 'arabic_izza.ico'
+store(&COPYRIGHT) '© 2017-2018 Prof. Abdelmalek Bouhadjera'
+store(&MESSAGE) 'The pleasure of typing Arabic'
+store(&KEYBOARDVERSION) '1.2'
+store(&WINDOWSLANGUAGES) 'x1401'
+store(&TARGETS) 'any'
+store(&LANGUAGE) 'x1401'
+store(&KMW_RTL) '1'
+store(&VISUALKEYBOARD) 'arabic_izza.kvks'
+store(&KMW_HELPFILE) 'welcome.htm'
+store(&LAYOUTFILE) 'arabic_izza-layout.js'
+begin Unicode > use(main)
+
+
+group(main) using keys
+ 
+c Rule for el Taarif
+ 
+ + "b" > 'ال'
+ 
+c Rules for writing Hamza
+ 
+ "ا" + "g" > "أ" c Hamza fouk alif
+ 
+ "ء" + "v" > "إ"  c Hamza taht alif
+ 
+ "ى" + "n" > "ئ"  c Hamza fouk nabira
+  
+  "و" + "," > "ؤ"  c Hamza fouk waw
+ 
+ "ء" + "g" > "آ"   c Alif elmad  
+ 
+ "اء" + "g" > "اءَا" c Alif followed by Hamza followed by Alif
+ 
+ 
+c Rules for letters on level1 from line one to four
+c First line
+ + "`" >  U+0650 
+ + "-" >  U+064E 
+ + "=" > U+0651 
+c Second line
+ + "q" > U+0636 
+ + "w" > U+0635 
+ + "e" > U+062B 
+ + "r" > U+0642 
+ + "t" > U+0641 
+ + "y" > U+063A 
+ + "u" > U+0639 
+ + "i" > U+0647 
+ + "o" > U+062E 
+ + "p" > U+062D 
+ + "[" > U+062C 
+ + "]" > U+062F
+c Third line
+ + "a" > U+0634 
+ + "s" > U+0633 
+ + "d" > U+064A 
+ + "f" > U+0628 
+ + "g" > U+0627 
+ + "h" > U+0644 
+ + "j" > U+062A 
+ + "k" > U+0646 
+ + "l" > U+0645 
+ + ";" > U+0643 
+ + "'" > U+0637 
+ + "\" > U+0630 
+c Fourth line
+ 
+ + "z" >  U+060C 
+ + "x" > U+064F 
+ + "c" > U+0631 
+ + "v" > U+0621 
+ 
+ + "n" > U+0649 
+ + "m" > U+0629 
+ + "," > U+0648 
+ + "." > U+0632 
+ + "/" > U+0638 
+ 
+c Rules for level2 (shift)
+c First line
+ + "~" >  U+064D 
+ + "!" > U+00A9 
+ + "@" > U+0040 
+ + "#" > U+0023 
+ + "$" > U+007E 
+ + "%" > U+0025 
+ + "^" > U+002A 
+ + "&" > U+0026 
+ + "*" > U+005F 
+ + "(" > U+0029 
+ + ")" > U+0028 
+ + "_" >  U+064B 
+ + "+" > U+0651 
+c Second line
+ + "Q" > U+064F 
+ + "W" > U+064C 
+ + "E" > U+064D 
+ + "R" > U+064B 
+ + "T" > U+06A4 
+ + "Y" > U+003D 
+ + "U" > U+005C 
+ + "I" > U+00F7 
+ + "O" > U+00D7 
+ + "P" > U+002D 
+ + "{" > U+0686 
+ + "}" > U+002B 
+c Third line
+ + "A" > U+0651 
+ + "S" > U+0652 
+ + "D" > U+007C 
+ + "F" > U+067E 
+ + "G" > U+007D 
+ + "H" > U+007B 
+ + "J" > U+0640 
+ + "K" > U+005D 
+ + "L" > U+005B 
+ + ":" > U+06AF 
+ + '"' > U+003E 
+ + "|" > U+003C 
+c Fourth line
+ 
+ + "Z" > U+060C 
+ + "X" > U+064C 
+ + "C" > U+0022 
+ + "V" > U+0021 
+ + "B" > U+061B 
+ + "N" > U+003A 
+ + "M" > U+060C 
+ + "<" > U+002E 
+ + ">" > U+0698 
+ + "?" > U+061F 
+ 
+c End of Keyboard
