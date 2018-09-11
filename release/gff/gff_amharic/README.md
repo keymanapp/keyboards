@@ -1,7 +1,7 @@
 አማርኛ (Amharic) Keyboard
 =======================
 
-Copyright (C) 1997-2018 Ge'ez Frontier Foundation, Tavultesoft
+Copyright (C) 1997-2018 Ge'ez Frontier Foundation, SIL International
 
 Version 1.6
 
