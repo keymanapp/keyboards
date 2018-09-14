@@ -1,7 +1,7 @@
 Uganda-Tanzania Bantu (SIL) Keyboard
 =====================
 
-Copyright (C) 2008-2018 SIL International
+Copyright (C) 2004-2018 SIL International
 
 Version 1.1
 
@@ -12,5 +12,6 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * linux
  * Web
  * Mobile
