@@ -1,6 +1,10 @@
 LIBTRALO Keyboard Change History
 =======================
 
+1.6.1 (14 Sep 2018)
+-----------------
+* Added dnj language
+
 1.6 (9 Jul 2018)
 -----------------
 * Updated to include Charis SIL Dan fonts
