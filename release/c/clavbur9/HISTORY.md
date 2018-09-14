@@ -1,4 +1,4 @@
-Template Change History
+Clavier du Burkina Change History
 =======================
 
 9.0.2 24-Aug-2018

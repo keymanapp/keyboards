@@ -25,5 +25,3 @@ Supported Platforms
  * Linux
  * Web
 
-Todo
-----
