@@ -13,6 +13,6 @@ This keyboard implements the Cyrillic script for the Central Siberian Yupik lang
 Supported Platforms
 -------------------
  * Windows
- * macos
- * linux
+ * macOS
+ * Linux
  

@@ -11,5 +11,5 @@ SIL's Tai Dam Lao keyboard is designed for typing Tai Dam text using the Lao scr
 Supported Platforms
 -------------------
  * Windows
- * macos
- * linux
+ * macOS
+ * Linux
