@@ -3,7 +3,7 @@ Yupik Cyrillic (SIL) Keyboard
 
 Copyright (C) 2006-2018 SIL International
 
-Version 2.0
+Version 2.0.1
 
 
 __DESCRIPTION__
@@ -13,4 +13,6 @@ This keyboard implements the Cyrillic script for the Central Siberian Yupik lang
 Supported Platforms
 -------------------
  * Windows
+ * macOS
+ * Linux
  

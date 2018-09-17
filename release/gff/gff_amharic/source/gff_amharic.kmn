@@ -16,7 +16,7 @@ c
 store(&NAME) 'አማርኛ (Amharic)'
 c $keymanonly:store(&MnemonicLayout) "1"
   store(&CapsAlwaysOff) "0"
-  store(&Copyright) '© 1997-2018 Ge' U+0027 'ez Frontier Foundation, Tavultesoft'
+  store(&Copyright) '© 1997-2018 Ge' U+0027 'ez Frontier Foundation, SIL International'
   store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&WINDOWSLANGUAGES) 'x045E'
 store(&LANGUAGE) 'x045E'
@@ -95,9 +95,9 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&LAYOUTFILE) 'gff_amharic_layout.js'
-store(&KEYBOARDVERSION) '1.5'
-  store(&TARGETS) 'any windows'
+store(&LAYOUTFILE) 'gff_amharic.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.6'
+store(&TARGETS) 'any windows macosx'
 store(&BITMAP) 'gff_amharic.ico'
 
 begin Unicode > use(main)
@@ -294,7 +294,10 @@ c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
  any(sads) + "'" > index(sads,1) deadkey(1)
- any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1)   
+ any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1) 
+ any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
+ any(sals) + "'" > index(sals,1) deadkey(1)
+   
  
  
 c deadkey(1) + "'" > "'"
