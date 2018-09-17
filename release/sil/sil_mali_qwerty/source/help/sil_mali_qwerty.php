@@ -29,7 +29,7 @@
         .keycap {font: bold 7pt Arial;position: absolute;left: 6px;top: 6px;}
         .key .keycap {display: block;}
         .special .keycap {display: block;}
-        .keytext {font:12pt "Charis SIL";position: absolute;display: block;right: 5px;bottom: 4px;color: blue;}
+        .keytext {font:12pt "Charis SIL Mali";position: absolute;display: block;right: 5px;bottom: 4px;color: blue;}
         .highlightExample table { border-collapse: collapse; }
         .highlightExample {color: blue; font-weight: bold; white-space: nowrap }
         .highlightKeys {color: blue; font-weight: bold;}
@@ -139,7 +139,7 @@
         .key-124 { background-position: -420px -30px; }
         .key-125 { background-position: -435px -30px; }
         .key-126 { background-position: -450px -30px; }
-        .lang2,.languageExample {font-family:"Charis SIL"; color:blue}
+        .lang2,.languageExample {font-family:"Charis SIL Mali"; color:blue}
         .lang2 {font-size:150%}
 END;
   require_once('header.php');
