@@ -1,6 +1,9 @@
 Galaxie Greek (Mnemonic) Keyboard Change History
 =======================
 
+## 3.2.1 (14 Sept 2018)
+* Added linux
+
 ## 3.2 (10 Aug 2018)
 * Migrated to GitHub
 
