@@ -1,6 +1,10 @@
 Cameroon AZERTY Keyboard Change History
 =======================
 
+1.2.1 (14 Sep 2018)
+-----------------
+* Added linux support
+
 1.2 (10 Apr 2018)
 -----------------
 * Added MacOS support
