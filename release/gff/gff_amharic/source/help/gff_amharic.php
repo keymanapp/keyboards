@@ -1,4 +1,4 @@
-<?php /*
+﻿<?php /*
   Name:             Keyboard_gff_amhamaric
   Copyright:        Keyboard ©1997-2018 The Ge'ez Frontier Foundation 
   Documentation:    
@@ -138,7 +138,7 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <h2>Troubleshooting</h2>
 <p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://keyman.com/contact/">contact us</a>.</p>
 
 </div>
 
@@ -184,6 +184,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.6, 6 Sep 2018</dt>
+  <dd>The apostrophe composition stopper added after Ka'ib and Sals forms to support some special case words.</dd>
   <dt>Version 1.5, 16 May 2018</dt>
   <dd>Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.</dd>
   <dt>Version 1.4, 7 May 2015</dt>
@@ -193,25 +195,13 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-This keyboard was created by the Ge'ez Frontier Foundation.  Tavultesoft graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
+This keyboard was created by the Ge'ez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2018 Ge'ez Frontier Foundation and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
-</p>
-<p>
-THIS SOFTWARE IS PROVIDED BY TAVULTESOFT PTY LTD "AS IS" AND ANY
-EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL TAVULTESOFT PTY LTD BE LIABLE FOR ANY
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2018 Ge'ez Frontier Foundation and SIL International.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from SIL International.
 </p>
 
 </div>
