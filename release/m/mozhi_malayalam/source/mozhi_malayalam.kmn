@@ -110,7 +110,7 @@ c 'ഩ്' + '\' > 'ന' '്' U+200D
 
 c The following rule is an experimental rule to prevent chillu r formation 
 c (instead it will form vattu ra form) if it follows a chandrakkala. By Ben
-'്' + 'r' > '്ര്'                                                                                            
+c any(consonants) '്' + 'r' > index(consonants, 1) '്ര്'    c Disabled this rule as it caused the keyboard to brake in FireFox                                                                                        
 
 c produce vowels
 store(vDirectSmallValues) "അഎഇഒഉ"
@@ -194,15 +194,25 @@ dk(2) + 'u' > 'ൗ'
 '്' + 'o' > 'ൂ'   
 
 c Consonants
+c store(cDirectSmallKeys) 'kgjdpfbmyvwzsh'
+c store(cDirectSmallValues)  'കഗജദപഫബമയവവശസഹ'
+store(cDirectSmallKeys) 'bdfghjkmpsvwyz'
+store(cDirectSmallValues)  'ബദഫഗഹജകമപസവവയശ'
++ any(cDirectSmallKeys) > index(cDirectSmallValues,1) '്'
+
+store(cDirectCapsKeys) 'DSTF'
+store(cDirectCapsValues) 'ഡശടഫ'
++ any(cDirectCapsKeys) > index(cDirectCapsValues,1)  '്'
+
+c To cleanup any unwanted zwnj between Chillu and a consonant
+any(chills) U+200C + any(cDirectSmallKeys) > index(chills,1) index(cDirectSmallValues,3) '്'
+any(chills) U+200C + any(cDirectCapsKeys) > index(chills,1) index(cDirectCapsValues,3) '്' 
+
+c Aspiration and certain fluids are obtained by typing an 'h' after the unaspirated counterparts and സ, ശ
 store(thinConsonants) "കഗചജടഡതദപബസശ"
 store(thickConsonants) "ഖഘഛഝഠഢഥധഫഭഷഴ"
-
-store(cDirectSmallValues)  'ബദഫഗഹജകമപസവവയശ'
-store(cDirectSmallKeys) 'bdfghjkmpsvwyz'
-store(cDirectCapsValues) 'ഡശടഫ'
-store(cDirectCapsKeys) 'DSTF'
-
 any(thinConsonants) '്' + 'h' > index(thickConsonants,1) '്' 
+
 any(consonants) '്' + 'a' > index(consonants,1)
 any(consonants) '്' + 'A' > index(consonants,1) 'ാ'
 any(consonants) + 'a' > index(consonants,1) 'ാ'
@@ -222,11 +232,6 @@ any(consonants) + 'i' > index(consonants,1) 'ൈ'
 any(consonants) '്' + 'o' > index(consonants,1) 'ൊ'
 any(consonants) '്' + 'O' > index(consonants,1) 'ോ'
 any(consonants) + 'u' > index(consonants,1) 'ൗ'
-
-+ any(cDirectSmallKeys) > index(cDirectSmallValues,1) '്'
-any(chills) U+200C + any(cDirectSmallKeys) > index(chills,1) index(cDirectSmallValues,3) '്'
-+ any(cDirectCapsKeys) > index(cDirectCapsValues,1)  '്'
-any(chills) U+200C + any(cDirectCapsKeys) > index(chills,1) index(cDirectCapsValues,3) '്' 
 
 store(nonSa) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷഹളഴറ"
 
