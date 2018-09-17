@@ -34,7 +34,11 @@ any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
 '1/8' + '\' > U+0d77
 '3/16' + '\' > U+0d78
  
-c special for m
+c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
++ 'm' > 'ം'
+'ം' + '~' > 'മ്'
+
+c other special cases for m
 any(consonants) + 'm' > index(consonants,1) 'ം'
 any(vowels) + 'm' > index(vowels,1) 'ം'
 any(vowelsigns) + 'm' > index(vowelsigns,1) 'ം'  
@@ -73,7 +77,7 @@ any(chills_anu) + 'y' > index(chill_anu_Bases,1) '്യ്'
 any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'            
 'ർ' + 'r' > 'റ്' c Ben's addition
 'ന്ര്' + 'r' > 'ൻറ്' c Ben's addition
-any(chills) + 'r' > index(chillBases,1) '്ര്' c Ben's addition
+any(chills_anu) + 'r' > index(chill_anu_bases,1) '്ര്' c Ben's addition
 
 c Archaic Forms
 'അ' + '\' > 'ഽ'    
@@ -235,6 +239,7 @@ any(consonants) + 'i' > index(consonants,1) 'ൈ'
 any(consonants) '്' + 'o' > index(consonants,1) 'ൊ'
 any(consonants) '്' + 'O' > index(consonants,1) 'ോ'
 any(consonants) + 'u' > index(consonants,1) 'ൗ'
+any(consonants)  '്' + 'r' > index(consonants,1) '്ര്'
 
 store(nonSa) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷഹളഴറ"
 
@@ -243,13 +248,14 @@ store(nonSa) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫ
 
 'ം' + 'm' > 'മ്മ്'
 'ം' + 'l' > 'മ്ല്'
-any(nonSa) 'ം' + 'r' > index(nonSa,1) 'മ്ര്'
+c any(nonSa) 'ം' + 'r' > index(nonSa,1) 'മ്ര്'
 'ം' + 'p' > 'മ്പ്'
 any(nonSa) 'ം' + 'l' > index(nonSa,1) 'മ്ല്'
 any(nonSa) 'ം' + 'L' > index(nonSa,1) 'മ്ല്' c deadkey(capl) c dk commented out by ben
 any(nonSa) 'ം' + 'n' > index(nonSa,1) 'മ്ന്'
 any(nonSa) 'ം' + 'y' > index(nonSa,1) 'മ്യ്'
 any(vowelsigns) 'ം' + 'y' > index(vowelsigns,1) 'മ്യ്'
+any(vowelsigns) 'ം' + 'r' > index(vowelsigns,1) 'മ്ര്'
 'സം' + 'r' > 'സംർ'
 'സം' + 'y' > 'സംയ്'
 
