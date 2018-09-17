@@ -138,7 +138,7 @@
           </tr>
           <tr class="ListFooterColor">
             <td>; w </td>
-            <td></td>
+            <td>ⱳ</td>
             <td bgcolor="#000000">&nbsp;</td>
             <td>&lt;</td>
             <td>‹</td>

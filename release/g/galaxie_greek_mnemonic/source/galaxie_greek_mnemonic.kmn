@@ -1,0 +1,750 @@
+﻿store(&VERSION) '9.0'
+store(&NAME) 'Galaxie Greek (Mnemonic)'
+store(&COPYRIGHT) '© 2004-2018 Galaxie Software and SIL International'
+
+$KeymanOnly: store(&mnemoniclayout) '1'
+c store(&WINDOWSLANGUAGES) 'x0408'
+c store(&LANGUAGE) 'x0408'
+c store(&ETHNOLOGUECODE) 'grc ell cpg pnt tsd yej'
+store(&BITMAP) 'galaxie_greek_mnemonic.ico'
+store(&VISUALKEYBOARD) 'galaxie_greek_mnemonic.kvks'
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '3.2.1'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+
+c ==Basic Output==
+c unshifted QWERTY US
++ "`" > U+1FEF  c varia (grave) 
+dk(1) + "`" > U+0060 c `
++ "1" > U+0031  c 1
++ "2" > U+0032  c 2
++ "3" > U+0033  c 3
++ "4" > U+0034  c 4
++ "5" > U+0035  c 5
++ "6" > U+0036  c 6
++ "7" > U+0037  c 7
++ "8" > U+0038  c 8
++ "9" > U+0039  c 9
++ "0" > U+0030  c 0 
++ "-" > U+00AF  c macron
+dk(1) + "-" > U+002D c - 
++ '=' > dk(1)   c generates standard key values
+dk(1) + "=" > U+003D  c =  
+
++ "q" > U+03B8 c theta
+dk(1) + "q" > U+0071 c q
++ "w" > U+03C9 c omega 
+dk(1) + "w" > U+0077 c w
++ "e" > U+03B5 c epsilon
+dk(1) + "e" > U+0065 c e
++ "r" > U+03C1 c rho 
+dk(1) + "r" > U+0072 c r
++ "t" > U+03C4 c tau 
+dk(1) + "t" > U+0074 c t
++ "y" > U+03C8 c psi    
+dk(1) + "y" > U+0079 c y
++ "u" > U+03C5 c upsilon
+dk(1) + "u" > U+0075 c u
++ "i" > U+03B9 c iota   
+dk(1) + "i" > U+0069 c i
++ "o" > U+03BF c omicron
+dk(1) + "o" > U+006F c o
++ "p" > U+03C0 c pi     
+dk(1) + "p" > U+0070 c p
++ "[" > U+1FFE c dasia (rough)
+dk(1) + "[" > U+005B c [
++ "]" > U+1FBF c psili (smooth)
+dk(1) + "]" > U+005D c ]
++ "\" > U+1FEF c varia (grave)
+dk(1) + "\" > U+005C c \
+
++ "a" > U+03B1 c alpha
+dk(1) + "a" > U+0061 c a
++ "s" > U+03C3 c sigma  
+dk(1) + "s" > U+0073 c s
++ "d" > U+03B4 c delta 
+dk(1) + "d" > U+0064 c d
++ "f" > U+03C6 c phi   
+dk(1) + "f" > U+0066 c f
++ "g" > U+03B3 c gamma 
+dk(1) + "g" > U+0067 c g
++ "h" > U+03B7 c eta
+dk(1) + "h" > U+0068 c h
++ "j" > U+1FBF c psili (smooth)
+dk(1) + "j" > U+006A c j
++ "k" > U+03BA c kappa 
+dk(1) + "k" > U+006B c k
++ "l" > U+03BB c lamda 
+dk(1) + "l" > U+006C c l
++ ";" > U+003B c ; (= Greek question mark)
++ "'" > U+03C2 c final sigma
+dk(1) + "'" > U+0027 c '
+
++ "z" > U+03B6 c zeta
+dk(1) + "z" > U+007A c z
++ "x" > U+03C7 c chi   
+dk(1) + "x" > U+0078 c x
++ "c" > U+03BE c xi    
+dk(1) + "c" > U+0063 c c
++ "v" > U+1FFD c oxia (acute)
+dk(1) + "v" > U+0076 c v
++ "b" > U+03B2 c beta  
+dk(1) + "b" > U+0062 c b
++ "n" > U+03BD c nu    
+dk(1) + "n" > U+006E c n
++ "m" > U+03BC c mu    
+dk(1) + "m" > U+006D c m
++ "," > U+002C c ,     
++ "." > U+002E c .
++ "/" > U+1FFD c oxia (acute)
+dk(1) + "/" > U+002F c /
+
+c shifted QWERTY US
++ '~' > U+1FC0 c perispomeni (circumflex)
+dk(1) + '~' > U+007E c ~
++ '!' > U+0021 c !
++ '@' > U+0040 c @
++ '#' > U+0023 c #   
++ '$' > U+0024 c $
++ '%' > U+0025 c %
++ '^' > U+1FC0 c perispomeni (circumflex)
+dk(1) + '^' > U+005E c ^
++ '&' > U+0026 c &
++ '*' > U+002A c *                     
++ '(' > U+0028 c (                          
++ ')' > U+0029 c )
++ '_' > U+02D8 c vrachy (breve)
+dk(1) + '_' > U+005F c _
++ '+' > U+00A8 c dialytika (diaeresis)
+dk(1) + '+' > U+002B c +
+
++ 'Q' > U+0398 c c.theta 
+dk(1) + 'Q' > U+0051 c Q
++ 'W' > U+03A9 c c.omega 
+dk(1) + 'W' > U+0057 c W
++ 'E' > U+0395 c c.epsilon
+dk(1) + 'E' > U+0045 c E
++ 'R' > U+03A1 c c.rho
+dk(1) + 'R' > U+0052 c R
++ 'T' > U+03A4 c c.tau
+dk(1) + 'T' > U+0054 c T
++ 'Y' > U+03A8 c c.psi
+dk(1) + 'Y' > U+0059 c Y
++ 'U' > U+03A5 c c.upsilon
+dk(1) + 'U' > U+0055 c U
++ 'I' > U+0399 c c.iota
+dk(1) + 'I' > U+0049 c I
++ 'O' > U+039F c c.omicron
+dk(1) + 'O' > U+004F c O
++ 'P' > U+03A0 c c.pi
+dk(1) + 'P' > U+0050 c P
++ '{' > U+007B c {     
++ '}' > U+007D c }
++ '|' > U+1FBE c iota subscript
+dk(1) + '|' > U+007C c |
+
++ 'A' > U+0391 c c.alpha
+dk(1) + 'A' > U+0041 c A
++ 'S' > U+03A3 c c.sigma
+dk(1) + 'S' > U+0053 c S
++ 'D' > U+0394 c c.delta
+dk(1) + 'D' > U+0044 c D
++ 'F' > U+03A6 c c.phi
+dk(1) + 'F' > U+0046 c F
++ 'G' > U+0393 c c.gamma
+dk(1) + 'G' > U+0047 c G
++ 'H' > U+0397 c c.eta
+dk(1) + 'H' > U+0048 c H
++ 'J' > U+1FFE c c.dasia (rough)
+dk(1) + 'J' > U+004A c J
++ 'K' > U+039A c c.kappa
+dk(1) + 'K' > U+004B c K
++ 'L' > U+039B c c.lamda
+dk(1) + 'L' > U+004C c L
++ ':' > U+00B7 c · (Greek semicolon)
+dk(1) + ':' > U+003A c :
++ '"' > U+1FC0 c perispomeni (circumflex)
+dk(1) + '"' > U+0022 c "
+
++ 'Z' > U+0396 c c.zeta
+dk(1) + 'Z' > U+005A c Z
++ 'X' > U+03A7 c c.chi 
+dk(1) + 'X' > U+0058 c X
++ 'C' > U+039E c c.xi 
+dk(1) + 'C' > U+0043 c C
++ 'V' > U+1FEF c varia (grave)
+dk(1) + 'V' > U+0056 c V
++ 'B' > U+0392 c c.beta 
+dk(1) + 'B' > U+0042 c B
++ 'N' > U+039D c c.nu   
+dk(1) + 'N' > U+004E  c N
++ 'M' > U+039C c c.mu
+dk(1) + 'M' > U+004D c M
++ '<' > U+003C c <
++ '>' > U+003E c >
++ '?' > U+00A8 c dialytika (diaeresis)
+dk(1) + '?' > U+003F c ?
+
+c ==Optimised Output==
+c Currently optimised for:
+c    AZERTY [FR]
+c    QWERTY, Dutch [NL]
+c    QWERTY, Italian [IT]
+c    QWERTY, Norwegian [NO]
+c    QWERTY, Spanish [ES]
+c    QWERTY, Swedish [SV]
+c    QWERTY UK [UK]
+c    QWERTZ [DE]
+c Notes in brackets = keyboard using character + corresponding key on QWERTY US
+c Any key added as a deadkey here, must also be added in 'Input Stores' below
+
+c basic characters
+$KeymanOnly: + '²' > U+00B2  c ² [FR `]
+$KeymanOnly: + 'º' > U+00BA  c º [ES `]
+$KeymanOnly: + 'é' > U+1F73  c epsilon oxia  
+$KeymanOnly: dk(1) + 'é' > U+00E9 c é [FR 2] [IT {]
+$KeymanOnly: + 'è' > U+1F72  c epsilon varia 
+$KeymanOnly: dk(1) + 'è' > U+00E8 c è [FR 7] [IT []
+$KeymanOnly: + 'ç' > U+03C2  c final sigma   
+$KeymanOnly: dk(1) + 'ç' > U+00E7 c ç [ES \] [FR 9] [IT |]
+$KeymanOnly: + 'à' > U+1F70  c alpha varia 
+$KeymanOnly: dk(1) + 'à' > U+00E0 c à [FR 0] [IT ']
+$KeymanOnly: + 'ß' > U+03C2  c final sigma 
+$KeymanOnly: dk(1) + 'ß' > U+00DF c ß [DE -]
+$KeymanOnly: + '´' > U+1FFD  c oxia (acute) 
+$KeymanOnly: dk(1) + '´' > U+00B4 c ´ [DE =] [ES '] [NL '] [SV +]
+$KeymanOnly: + 'ì' > U+1F76  c iota varia 
+$KeymanOnly: dk(1) + 'ì' > U+00EC c ì [IT =]   
+$KeymanOnly: + '¡' > U+00A1  c ¡ [ES =]
+$KeymanOnly: + 'ü' > U+03CB  c upsilon dialytika 
+$KeymanOnly: dk(1) + 'ü' > U+00FC c ü [DE []
+$KeymanOnly: + 'å' > U+03B1  c alpha 
+$KeymanOnly: dk(1) + 'å' > U+00E5 c å [NO [] [SV []  
+$KeymanOnly: + 'ö' > U+03C9 c omega
+$KeymanOnly: dk(1) + 'ö' > U+00F6 c ö [DE ;] [SV ;]                
+$KeymanOnly: + 'ñ' > U+1FBE  c iota subscript 
+$KeymanOnly: dk(1) + 'ñ' > U+00F1 c ñ [ES ;] 
+$KeymanOnly: + 'ò' > U+1F78 c omicron varia 
+$KeymanOnly: dk(1) + 'ò' > U+00F2 c ò [IT ;] 
+$KeymanOnly: + 'ø' > U+03C9 c omega
+$KeymanOnly: dk(1) + 'ø' > U+00F8 c ø [NO ;]
+$KeymanOnly: + 'ä' > U+03B7 c eta
+$KeymanOnly: dk(1) + 'ä' > U+00E4 c ä [DE '] [SV ']  
+$KeymanOnly: + 'ù' > U+1F7A  c upsilon varia 
+$KeymanOnly: dk(1) + 'ù' > U+00F9 c ù [FR '] [IT ]]
+$KeymanOnly: + 'æ' > U+03B7 c eta
+$KeymanOnly: dk(1) + 'æ' > U+00E6 c æ [NO ']
+
+$KeymanOnly: + '¬' > U+00AC  c ¬ [UK ~] 
+$KeymanOnly: + 'ª' > U+00AA  c ª [ES ~]
+$KeymanOnly: + '½' > U+00BD  c ½ [SV ~]
+$KeymanOnly: + '·' > U+00B7  c · [ES #]  
+$KeymanOnly: + '¤' > U+00A4  c ¤ [NO $] [SV $]
+$KeymanOnly: + '°' > U+00B0  c ° [DE ~] [FR _] [IT "] [NL =]
+$KeymanOnly: + '¿' > U+00BF  c ¿ [ES +]
+$KeymanOnly: + '¨' > U+00A8  c ¨ [ES "] [FR {] [NL [] [NO ]]  
+$KeymanOnly: + 'Ü' > U+03AB  c c.upsilon dialytika 
+$KeymanOnly: dk(1) + 'Ü' > U+00DC c Ü [DE {] 
+$KeymanOnly: + 'Å' > U+0391  c c.alpha
+$KeymanOnly: dk(1) + 'Å' > U+00C5 c Å [NO {] [SV {]
+$KeymanOnly: + '£' > U+00A3  c £ [FR }] [IT #] [UK #]    
+$KeymanOnly: + 'Ç' > U+03C2  c final sigma
+$KeymanOnly: dk(1) + 'Ç' > U+00C7 c Ç [ES |] 
+$KeymanOnly: + 'µ' > U+03BC  c mu
+$KeymanOnly: dk(1) + 'µ' > U+00B5 c micro sign [FR |]
+$KeymanOnly: + 'Ö' > U+03A9  c c.omega 
+$KeymanOnly: dk(1) + 'Ö' > U+00D6 c Ö [DE :][SV :]
+$KeymanOnly: + 'Ñ' > U+1FBE  c iota subscript 
+$KeymanOnly: dk(1) + 'Ñ' > U+00D1 c Ñ [ES :]
+$KeymanOnly: + '±' > U+00B1  c ± [NL :]  
+$KeymanOnly: + 'Ø' > U+03A9  c c.omega
+$KeymanOnly: dk(1) + 'Ø' > U+00D8 c ø [NO :] 
+$KeymanOnly: + 'Ä' > U+0397  c c.eta         
+$KeymanOnly: dk(1) + 'Ä' > U+00C4 c Ä [DE "] [SV "] 
+$KeymanOnly: + 'Æ' > U+0397  c c.eta
+$KeymanOnly: dk(1) + 'Æ' > U+00C6 c Æ [NO "]
+$KeymanOnly: + '§' > U+1FBE  c iota subscript 
+$KeymanOnly: dk(1) + '§' > U+00A7  c § [DE #] [FR ?] [NL ~] [NO ~] [SV `]       
+
+c additional characters for Windows deadkey correction. NOTE: this is not to be used as a 2nd deadkey system. Output does not always follow a logical set b/c some characters are used as standard keys on the Euro layouts above (e.g. ñ,ä) and have been remapped to new symbols in order to optimise those layouts. (There's much more value in having a home row key that outputs iota subscript then replacing ñ with the meaningless '~nu').
+c 'à' listed above
+c 'è' listed above
+c 'ì' listed above
+c 'ò' listed above
+c 'ù' listed above
+
+$KeymanOnly: + 'á' > U+1F71 c alpha oxia
+c 'é' listed above
+$KeymanOnly: + 'í' > U+1F77 c iota oxia 
+$KeymanOnly: + 'ó' > U+1F79 c omicron oxia
+$KeymanOnly: + 'ú' > U+1F7B c upsilon oxia
+$KeymanOnly: + 'ý' > U+1FFD U+03C8 c oxia, psi 
+
+$KeymanOnly: + 'â' > U+1FB6 c alpha circ
+$KeymanOnly: + 'ê' > U+1FC0 U+03B5 c circ, epsilon
+$KeymanOnly: + 'î' > U+1FD6 c iota circ
+$KeymanOnly: + 'ô' > U+1FC0 U+03BF c circ, omicron
+$KeymanOnly: + 'û' > U+1FE6 c upsilon circ
+ 
+$KeymanOnly: + 'ã' > U+1FB6 c alpha circ 
+$KeymanOnly: + 'õ' > U+1FC0 U+03BF c circ, omicron
+c 'ñ' listed above
+
+c 'ä' listed above
+$KeymanOnly: + 'ë' > U+00A8 U+03B5 c dialytika, epsilon 
+$KeymanOnly: + 'ï' > U+03CA c iota dialytika
+c 'ö' listed above
+c 'ü' listed above
+$KeymanOnly: + 'ÿ' > U+00A8 U+03C8 c dialytika, psi 
+
+$KeymanOnly: + 'À' > U+1FBA c c.alpha varia
+$KeymanOnly: + 'È' > U+1FC8 c c.epsilon varia 
+$KeymanOnly: + 'Ì' > U+1FDA c c.iota varia 
+$KeymanOnly: + 'Ò' > U+1FF8 c c.omicron varia
+$KeymanOnly: + 'Ù' > U+1FEA c c.upsilon varia
+
+$KeymanOnly: + 'Á' > U+1FBB c c.alpha oxia
+$KeymanOnly: + 'É' > U+1FC9 c c.epsilon oxia 
+$KeymanOnly: + 'Í' > U+1FDB c c.iota oxia
+$KeymanOnly: + 'Ó' > U+1FF9 c c.omicron oxia 
+$KeymanOnly: + 'Ú' > U+1FEB c c.upsilon oxia
+$KeymanOnly: + 'Ý' > U+1FFD U+03A8 c oxia, c.psi
+
+$KeymanOnly: + 'Â' > U+1FC0 U+0391 c circ, c.alpha
+$KeymanOnly: + 'Ê' > U+1FC0 U+0395 c circ, c.epsilon 
+$KeymanOnly: + 'Î' > U+1FC0 U+0399 c circ, c.iota
+$KeymanOnly: + 'Ô' > U+1FC0 U+039F c circ, c.omicron
+$KeymanOnly: + 'Û' > U+1FC0 U+03A5 c circ, c.upsilon
+
+$KeymanOnly: + 'Ã' > U+1FC0 U+0391 c circ, c.alpha
+$KeymanOnly: + 'Õ' > U+1FC0 U+039F c circ, c.omicron
+c 'Ñ' listed above
+
+c 'Ä' listed above
+$KeymanOnly: + 'Ë' > U+00A8 U+0395 c dialytika, c.epsilon 
+$KeymanOnly: + 'Ï' > U+03AA c c.iota dialytika
+c 'Ö' listed above
+c 'Ü' listed above
+   
+
+
+c ==Lowercase Stores==
+c 1 diacritic           alpha  eta    omega  epsilon iota   omicron upsilon space
+store( plain )          U+03B1 U+03B7 U+03C9 U+03B5  U+03B9 U+03BF  U+03C5  U+0020
+
+store( smooth )         U+1F00 U+1F20 U+1F60 U+1F10  U+1F30 U+1F40  U+1F50  U+1FBF
+store( rough )          U+1F01 U+1F21 U+1F61 U+1F11  U+1F31 U+1F41  U+1F51  U+1FFE
+
+store( grave )          U+1F70 U+1F74 U+1F7C U+1F72  U+1F76 U+1F78  U+1F7A  U+1FEF
+store( acute )          U+1F71 U+1F75 U+1F7D U+1F73  U+1F77 U+1F79  U+1F7B  U+1FFD
+store( circumflex )     U+1FB6 U+1FC6 U+1FF6 U+03B5  U+1FD6 U+03BF  U+1FE6  U+1FC0
+
+store( iota )           U+1FB3 U+1FC3 U+1FF3 U+03B5  U+03B9 U+03BF  U+03C5  U+1FBE
+
+store( dialytika )      U+03B1 U+03B7 U+03C9 U+03B5  U+03CA U+03BF  U+03CB  U+00A8
+store( macron )         U+1FB1 U+03B7 U+03C9 U+03B5  U+1FD1 U+03BF  U+1FE1  U+00AF 
+store( vrachy )         U+1FB0 U+03B7 U+03C9 U+03B5  U+1FD0 U+03BF  U+1FE0  U+02D8
+                     
+c 2 diacritics          alpha  eta    omega  epsilon iota   omicron upsilon space
+store( sm_gra )         U+1F02 U+1F22 U+1F62 U+1F12  U+1F32 U+1F42  U+1F52  U+1FCD
+store( sm_acc )         U+1F04 U+1F24 U+1F64 U+1F14  U+1F34 U+1F44  U+1F54  U+1FCE
+store( sm_circ )        U+1F06 U+1F26 U+1F66 U+1F10  U+1F36 U+1F40  U+1F56  U+1FCF
+store( rg_gra )         U+1F03 U+1F23 U+1F63 U+1F13  U+1F33 U+1F43  U+1F53  U+1FDD
+store( rg_acc )         U+1F05 U+1F25 U+1F65 U+1F15  U+1F35 U+1F45  U+1F55  U+1FDE
+store( rg_circ )        U+1F07 U+1F27 U+1F67 U+1F11  U+1F37 U+1F41  U+1F57  U+1FDF
+
+store( sm_io )          U+1F80 U+1F90 U+1FA0 U+1F10  U+1F30 U+1F40  U+1F50  U+1FBF
+store( rg_io )          U+1F81 U+1F91 U+1FA1 U+1F11  U+1F31 U+1F41  U+1F51  U+1FFE
+
+store( gra_io )         U+1FB2 U+1FC2 U+1FF2 U+1F72  U+1F76 U+1F78  U+1F7A  U+1FEF
+store( acc_io )         U+1FB4 U+1FC4 U+1FF4 U+1F73  U+1F77 U+1F79  U+1F7B  U+1FFD   
+store( circ_io )        U+1FB7 U+1FC7 U+1FF7 U+03B5  U+1FD6 U+03BF  U+1FE6  U+1FC0
+
+store( gra_dia )        U+1F70 U+1F74 U+1F7C U+1F72  U+1FD2 U+1F78  U+1FE2  U+1FED
+store( acc_dia )        U+1F71 U+1F75 U+1F7D U+1F73  U+1FD3 U+1F79  U+1FE3  U+1FEE
+store( circ_dia )       U+1FB6 U+1FC6 U+1FF6 U+03B5  U+1FD7 U+03BF  U+1FE7  U+1FC1
+
+c 3 diacritics          alpha  eta    omega  epsilon iota   omicron upsilon space
+store( sm_gra_io )      U+1F82 U+1F92 U+1FA2 U+1F12  U+1F32 U+1F42  U+1F52  U+1FCD
+store( sm_acc_io )      U+1F84 U+1F94 U+1FA4 U+1F14  U+1F34 U+1F44  U+1F54  U+1FCE
+store( sm_circ_io )     U+1F86 U+1F96 U+1FA6 U+1F10  U+1F36 U+1F40  U+1F56  U+1FCF
+store( rg_gra_io )      U+1F83 U+1F93 U+1FA3 U+1F13  U+1F33 U+1F43  U+1F53  U+1FDD  
+store( rg_acc_io )      U+1F85 U+1F95 U+1FA5 U+1F15  U+1F35 U+1F45  U+1F55  U+1FDE
+store( rg_circ_io )     U+1F87 U+1F97 U+1FA7 U+1F11  U+1F37 U+1F41  U+1F57  U+1FDF  
+  
+c ==Uppercase Stores==
+c 1 diacritic         alpha  eta    omega  epsilon iota   omicron upsilon space
+store( c.pl )         U+0391 U+0397 U+03A9 U+0395  U+0399 U+039F  U+03A5  U+0020
+
+store( c.sm )         U+1F08 U+1F28 U+1F68 U+1F18  U+1F38 U+1F48  U+03A5  U+1FBF
+store( c.rg )         U+1F09 U+1F29 U+1F69 U+1F19  U+1F39 U+1F49  U+1F59  U+1FFE
+
+store( c.gra )        U+1FBA U+1FCA U+1FFA U+1FC8  U+1FDA U+1FF8  U+1FEA  U+1FEF
+store( c.acc )        U+1FBB U+1FCB U+1FFB U+1FC9  U+1FDB U+1FF9  U+1FEB  U+1FFD
+c no c.circ
+
+store( c.io )         U+1FBC U+1FCC U+1FFC U+0395  U+0399 U+039F  U+03A5  U+1FBE
+
+store( c.dia )        U+0391 U+0397 U+03A9 U+0395  U+03AA U+039F  U+03AB  U+0020
+store( c.mac )        U+1FB9 U+0397 U+03A9 U+0395  U+1FD9 U+039F  U+1FE9  U+00AF 
+store( c.vra )        U+1FB8 U+0397 U+03A9 U+0395  U+1FD8 U+039F  U+1FE8  U+02D8
+
+c 2 diacritics        alpha  eta    omega  epsilon iota   omicron upsilon space
+store( c.sm_gra )     U+1F0A U+1F2A U+1F6A U+1F1A  U+1F3A U+1F4A  U+03A5  U+1FCD
+store( c.sm_acc )     U+1F0C U+1F2C U+1F6C U+1F1C  U+1F3C U+1F4C  U+03A5  U+1FCE
+store( c.sm_circ )    U+1F0E U+1F2E U+1F6E U+1F18  U+1F3E U+1F48  U+03A5  U+1FCF
+store( c.rg_gra )     U+1F0B U+1F2B U+1F6B U+1F1B  U+1F3B U+1F4B  U+1F5B  U+1FDD
+store( c.rg_acc )     U+1F0D U+1F2D U+1F6D U+1F1D  U+1F3D U+1F4D  U+1F5D  U+1FDE
+store( c.rg_circ )    U+1F0F U+1F2F U+1F6F U+1F19  U+1F3F U+1F49  U+1F5F  U+1FDF
+
+store( c.sm_io )      U+1F88 U+1F98 U+1FA8 U+0395  U+0399 U+039F  U+03A5  U+1FBF
+store( c.rg_io )      U+1F89 U+1F99 U+1FA9 U+0395  U+0399 U+039F  U+03A5  U+1FFE
+
+c 3 diacritics        alpha  eta    omega  epsilon iota   omicron upsilon space
+store( c.sm_gra_io )  U+1F8A U+1F9A U+1FAA U+0395  U+0399 U+039F  U+03A5  U+1FCD
+store( c.sm_acc_io )  U+1F8C U+1F9C U+1FAC U+0395  U+0399 U+039F  U+03A5  U+1FCE
+store( c.sm_circ_io ) U+1F8E U+1F9E U+1FAE U+0395  U+0399 U+039F  U+03A5  U+1FCF
+store( c.rg_gra_io )  U+1F8B U+1F9B U+1FAB U+0395  U+0399 U+039F  U+03A5  U+1FDD
+store( c.rg_acc_io )  U+1F8D U+1F9D U+1FAD U+0395  U+0399 U+039F  U+03A5  U+1FDE
+store( c.rg_circ_io ) U+1F8F U+1F9F U+1FAF U+0395  U+0399 U+039F  U+03A5  U+1FDF
+ 
+ 
+c ==Grouped Stores==
+c all lowercase stores
+store( lc ) outs(plain) outs(smooth) outs(rough) outs(grave) outs(acute) outs(circumflex) outs(iota) outs(dialytika) outs(macron) outs(vrachy) outs( sm_gra ) outs( sm_acc ) outs( sm_circ ) outs( rg_gra ) outs( rg_acc ) outs( rg_circ ) outs( sm_io ) outs( rg_io ) outs( gra_io ) outs( acc_io ) outs( circ_io ) outs( gra_dia ) outs( acc_dia ) outs( circ_dia ) outs( sm_gra_io ) outs( sm_acc_io )  outs( sm_circ_io ) outs( rg_gra_io ) outs( rg_acc_io ) outs( rg_circ_io )  
+  
+c all uppercase stores
+store( c. ) outs( c.pl )   outs( c.sm )   outs( c.rg )  outs( c.gra )  outs( c.acc ) outs( c.io ) outs( c.dia ) outs( c.mac ) outs( c.vra ) outs( c.sm_gra ) outs( c.sm_acc ) outs( c.sm_circ ) outs( c.rg_gra ) outs( c.rg_acc )  outs( c.rg_circ ) outs( c.sm_io )  outs( c.rg_io )  outs( c.sm_gra_io )  outs( c.sm_acc_io ) outs( c.sm_circ_io ) outs( c.rg_gra_io )  outs( c.rg_acc_io )  outs( c.rg_circ_io )
+
+c all letter stores
+store( letters ) outs( lc ) outs( c. )
+
+c non-letters used at word ends. Doesn't include letters with alternative output (deadkeys, etc).
+$KeymanOnly: store( ends ) " ;,.!@%&*(){}:<>²¬·°" 
+$KeymanWeb: store( ends ) " ;,.!@%&*(){}:<>" 
+
+c ==Input Stores==
+store( sm )    'j]'
+store( rg )    'J['
+
+store( gra )   'V\`'
+$KeymanOnly: store( acc )   'v/´'
+$KeymanWeb: store( acc )   'v/'
+store( circ )  '^~"'
+
+$KeymanOnly: store( io )    '§|Ññ'   
+$KeymanWeb: store( io )    '|'
+$KeymanOnly: store( dia )   '+?¨'
+$KeymanWeb: store( dia )   '+?'
+store( mac )   '-'
+store( vra )   '_' 
+
+
+c ==Single Diacritic Rules==
+c lowercase: breathing, accents, iota, other
+any( plain ) + any( sm ) > index( smooth, 1 )
+any( smooth ) + any( sm ) > index( plain, 1 )
+any( plain ) + any( rg ) > index( rough, 1 )
+any( rough ) + any( rg ) > index( plain, 1 )
+
+any( plain ) + any( gra ) > index( grave, 1 )
+any( grave ) + any( gra ) > index( plain, 1 )
+any( plain ) + any( acc ) > index( acute, 1 )  
+any( acute ) + any( acc ) > index( plain, 1 )  
+any( plain ) + any( circ ) > index( circumflex, 1 ) 
+any( circumflex ) + any( circ ) > index( plain, 1 ) 
+
+any( plain ) + any( io ) > index( iota, 1 )    
+any( iota ) + any( io ) > index( plain, 1 ) 
+
+any( plain ) + any( dia ) > index( dialytika, 1 ) 
+any( dialytika ) + any( dia ) > index( plain, 1 ) 
+any( plain ) + any( mac ) > index( macron,1 ) 
+any( macron ) + any( mac ) > index( plain,1 ) 
+any( plain ) + any( vra ) > index( vrachy,1 )  
+any( vrachy ) + any( vra ) > index( plain,1 ) 
+
+c caps: breathing, accents, iota, other
+any( c.pl ) + any ( sm ) > index( c.sm, 1 )
+any( c.sm ) + any ( sm ) > index( c.pl, 1 )
+any( c.pl ) + any ( rg ) > index( c.rg, 1 )
+any( c.rg ) + any ( rg ) > index( c.pl, 1 )
+
+any( c.pl ) + any ( gra ) > index( c.gra, 1 )
+any( c.gra ) + any ( gra ) > index( c.pl, 1 )
+any( c.pl ) + any ( acc ) > index( c.acc, 1 )
+any( c.acc ) + any ( acc ) > index( c.pl, 1 )
+c no c.circ
+
+any( c.pl ) + any ( io ) > index( c.io, 1 )  
+any( c.io ) + any ( io ) > index( c.pl, 1 )
+
+any( c.pl ) + any ( dia ) > index( c.dia, 1 ) 
+any( c.dia ) + any ( dia ) > index( c.pl, 1 ) 
+any( c.pl ) + any ( mac ) > index( c.mac, 1 )
+any( c.mac ) + any ( mac ) > index( c.pl, 1 )
+any( c.pl ) + any ( vra ) > index( c.vra, 1 )
+any( c.vra ) + any ( vra ) > index( c.pl, 1 )
+
+c lowercase: rho + breathing
+U+03C1 + any( sm ) > U+1FE4
+U+1FE4 + any( sm ) > U+03C1
+U+03C1 + any( rg ) > U+1FE5
+U+1FE5 + any( rg ) > U+03C1
+
+c caps: rho + breathing
+U+03A1 + any( sm ) > U+1FBF U+03A1
+U+1FBF U+03A1 + any( sm ) > U+03A1   
+U+03A1 + any( rg ) > U+1FEC    
+U+1FEC + any( rg ) > U+03A1 
+  
+
+c ==Double Diacritic Rules==
+c lowercase: breathing + accent
+any( smooth ) + any( gra ) > index( sm_gra, 1 )
+any( sm_gra ) + any( gra ) > index( smooth, 1 )
+any( smooth ) + any( acc ) > index( sm_acc, 1 )
+any( sm_acc ) + any( acc ) > index( smooth, 1 )
+any( smooth ) + any( circ ) > index( sm_circ, 1 )
+any( sm_circ ) + any( circ ) > index( smooth, 1 ) 
+
+any( rough ) + any( gra ) > index( rg_gra, 1 )
+any( rg_gra ) + any( gra ) > index( rough, 1 )
+any( rough ) + any( acc ) > index( rg_acc, 1 )
+any( rg_acc ) + any( acc ) > index( rough, 1 )
+any( rough ) + any( circ ) > index( rg_circ, 1 )
+any( rg_circ ) + any( circ ) > index( rough, 1 )
+
+c caps: breathing + accent
+any( c.sm ) + any( gra ) > index( c.sm_gra, 1 )
+any( c.sm_gra ) + any( gra ) > index( c.sm, 1 )
+any( c.sm ) + any( acc ) > index( c.sm_acc, 1 )
+any( c.sm_acc ) + any( acc ) > index( c.sm, 1 )
+any( c.sm ) + any( circ ) > index( c.sm_circ, 1 )
+any( c.sm_circ ) + any( circ ) > index( c.sm, 1 ) 
+
+any( c.rg ) + any( gra ) > index( c.rg_gra, 1 )
+any( c.rg_gra ) + any( gra ) > index( c.rg, 1 )
+any( c.rg ) + any( acc ) > index( c.rg_acc, 1 )
+any( c.rg_acc ) + any( acc ) > index( c.sm, 1 )
+any( c.rg ) + any( circ ) > index( c.rg_circ, 1 )
+any( c.rg_circ ) + any( circ ) > index( c.rg, 1 ) 
+
+c lowercase: accent + breathing
+any( grave ) + any( sm ) > index( sm_gra, 1 ) 
+any( sm_gra ) + any( sm ) > index( grave, 1 ) 
+any( grave ) + any( rg ) > index( rg_gra, 1 ) 
+any( rg_gra ) + any( rg ) > index( grave, 1 ) 
+
+any( acute ) + any( sm ) > index( sm_acc, 1 ) 
+any( sm_acc ) + any( sm ) > index( acute, 1 ) 
+any( acute ) + any( rg ) > index( rg_acc, 1 ) 
+any( rg_acc ) + any( rg ) > index( acute, 1 ) 
+
+any( circumflex ) + any( sm ) > index( sm_circ, 1 ) 
+any( sm_circ ) + any( sm ) > index( circumflex, 1 ) 
+any( circumflex ) + any( rg ) > index( rg_circ, 1 ) 
+any( rg_circ ) + any( rg ) > index( circumflex, 1 ) 
+
+c caps: accent + breathing
+any( c.gra ) + any( sm ) > index( c.sm_gra, 1 ) 
+any( c.sm_gra ) + any( sm ) > index( c.gra, 1 ) 
+any( c.gra ) + any( rg ) > index( c.rg_gra, 1 ) 
+any( c.rg_gra ) + any( rg ) > index( c.gra, 1 ) 
+
+any( c.acc ) + any( sm ) > index( c.sm_acc, 1 ) 
+any( c.sm_acc ) + any( sm ) > index( c.acc, 1 ) 
+any( c.acc ) + any( rg ) > index( c.rg_acc, 1 ) 
+any( c.rg_acc ) + any( rg ) > index( c.acc, 1 ) 
+
+c no c.circ
+
+c lowercase: breathing + iota
+any( smooth ) + any( io ) > index( sm_io, 1 )
+any( sm_io ) + any( io ) > index( smooth, 1 )
+any( rough ) + any( io ) > index( rg_io, 1 )
+any( rg_io ) + any( io ) > index( rough, 1 )
+
+c caps: breathing + iota
+any( c.sm ) + any( io ) > index( c.sm_io, 1 )
+any( c.sm_io ) + any( io ) > index( c.sm, 1 )
+any( c.rg ) + any( io ) > index( c.rg_io, 1 )
+any( c.rg_io ) + any( io ) > index( c.rg, 1 )
+
+c lowercase: iota + breathing
+any( iota ) + any( sm ) > index( sm_io, 1 ) 
+any( sm_io ) + any( sm ) > index( iota, 1 )
+any( iota ) + any( rg ) > index( rg_io, 1 ) 
+any( rg_io ) + any( rg ) > index( iota, 1 )
+
+c caps: iota + breathing
+any( c.io ) + any( sm ) > index( c.sm_io, 1 ) 
+any( c.sm_io ) + any( sm ) > index( c.io, 1 )
+any( c.io ) + any( rg ) > index( c.rg_io, 1 ) 
+any( c.rg_io ) + any( rg ) > index( c.io, 1 )
+
+c lowercase: breathing + macron
+any( smooth ) + any( mac ) > index( macron, 1 ) U+0313  
+any( macron ) U+0313 + any( mac ) > index( smooth, 1 ) 
+any( rough ) + any( mac ) > index( macron, 1 ) U+0314  
+any( macron ) U+0314 + any( mac ) > index( rough, 1 ) 
+
+c caps: breathing + macron
+any( c.sm ) + any( mac ) > index( c.mac, 1 ) U+0313  
+any( c.mac ) U+0313 + any( mac ) > index( c.sm, 1 ) 
+any( c.rg ) + any( mac ) > index( c.mac, 1 ) U+0314  
+any( c.mac ) U+0314 + any( mac ) > index( c.rg, 1 ) 
+
+c lowercase: macron + breathing
+any( macron ) + any( sm ) > index( macron, 1 ) U+0313  
+any( macron ) U+0313 + any( sm ) > index( macron, 1 ) 
+any( macron ) + any( rg ) > index( macron, 1 ) U+0314  
+any( macron ) U+0314 + any( rg ) > index( macron, 1 ) 
+
+c caps: macron + breathing
+any( c.mac ) + any( sm ) > index( c.mac, 1 ) U+0313  
+any( c.mac ) U+0313 + any( sm ) > index( c.mac, 1 ) 
+any( c.mac ) + any( rg ) > index( c.mac, 1 ) U+0314  
+any( c.mac ) U+0314 + any( rg ) > index( c.mac, 1 ) 
+
+c lowercase: accent + iota
+any( grave ) + any( io ) > index( gra_io, 1 ) 
+any( gra_io ) + any( io ) > index( grave, 1 ) 
+
+any( acute ) + any( io ) > index( acc_io, 1 ) 
+any( acc_io ) + any( io ) > index( acute, 1 ) 
+
+any( circumflex ) + any( io ) > index( circ_io, 1 ) 
+any( circ_io ) + any( io ) > index( circumflex, 1 ) 
+
+c no caps: accent + iota
+
+c lowercase: iota + accent
+any( iota ) + any( gra ) > index( gra_io, 1 ) 
+any( gra_io ) + any( gra ) > index( iota, 1 )
+any( iota ) + any( acc ) > index( acc_io, 1 ) 
+any( acc_io ) + any( acc ) > index( iota, 1 ) 
+any( iota ) + any( circ ) > index( circ_io, 1 ) 
+any( circ_io ) + any( circ ) > index( iota, 1 ) 
+
+c no caps: iota + accent
+
+c lowercase: accent + dia
+any( grave ) + any( dia ) > index( gra_dia, 1 ) 
+any( gra_dia ) + any( dia ) > index( grave, 1 ) 
+
+any( acute ) + any( dia ) > index( acc_dia, 1 ) 
+any( acc_dia ) + any( dia ) > index( acute, 1 ) 
+
+any( circumflex ) + any( dia ) > index( circ_dia, 1 ) 
+any( circ_dia ) + any( dia ) > index( circumflex, 1 ) 
+
+c no caps: accent + dia
+
+c lowercase: dia + accent
+any( dialytika ) + any( gra ) > index( gra_dia, 1 ) 
+any( gra_dia ) + any( gra ) > index( dialytika, 1 )
+any( dialytika ) + any( acc ) > index( acc_dia, 1 ) 
+any( acc_dia ) + any( acc ) > index( dialytika, 1 ) 
+any( dialytika ) + any( circ ) > index( circ_dia, 1 ) 
+any( circ_dia ) + any( circ ) > index( dialytika, 1 ) 
+ 
+c no caps: dia + accent
+
+
+c ==Triple Diacritic Rules==
+c lowercase: breathing accent + iota
+any( sm_gra ) + any( io ) > index( sm_gra_io, 1 ) 
+any( sm_gra_io ) + any ( io ) > index( sm_gra, 1)
+any( sm_acc ) + any( io ) > index( sm_acc_io, 1 ) 
+any( sm_acc_io ) + any ( io ) > index( sm_acc, 1)
+any( sm_circ ) + any( io ) > index( sm_circ_io, 1 ) 
+any( sm_circ_io ) + any ( io ) > index( sm_circ, 1 )
+
+any( rg_gra ) + any( io ) > index( rg_gra_io, 1 ) 
+any( rg_gra_io ) + any ( io ) > index (rg_gra, 1)
+any( rg_acc ) + any( io ) > index( rg_acc_io, 1 ) 
+any( rg_acc_io ) + any ( io ) > index (rg_acc, 1)
+any( rg_circ ) + any( io ) > index( rg_circ_io, 1 ) 
+any( rg_circ_io ) + any ( io ) > index (rg_circ, 1)
+
+c caps: breathing accent + iota
+any( c.sm_gra ) + any( io ) > index( c.sm_gra_io, 1 ) 
+any( c.sm_gra_io ) + any( io ) > index (c.sm_gra, 1 )
+any( c.sm_acc ) + any( io ) > index( c.sm_acc_io, 1 ) 
+any( c.sm_acc_io ) + any( io ) > index( c.sm_acc, 1 )
+any( c.sm_circ ) + any( io ) > index( c.sm_circ_io, 1 ) 
+any( c.sm_circ_io ) + any( io ) > index( c.sm_circ, 1 )
+
+any( c.rg_gra ) + any( io ) > index( c.rg_gra_io, 1 ) 
+any( c.rg_gra_io ) + any( io ) > index( c.rg_gra, 1 )
+any( c.rg_acc ) + any( io ) > index( c.rg_acc_io, 1 ) 
+any( c.rg_acc_io ) + any( io ) > index( c.rg_acc, 1 )
+any( c.rg_circ ) + any( io ) > index( c.rg_circ_io, 1 ) 
+any( c.rg_circ_io ) + any( io ) > index( c.rg_circ, 1 )
+
+c lowercase: breathing iota + accent
+any( sm_io ) + any( gra ) > index( sm_gra_io, 1 ) 
+any( sm_gra_io ) + any( gra ) > index( sm_io, 1 )
+any( sm_io ) + any( acc ) > index( sm_acc_io, 1 ) 
+any( sm_acc_io ) + any( acc ) > index( sm_io, 1 )
+any( sm_io ) + any( circ ) > index( sm_circ_io, 1 ) 
+any( sm_circ_io ) + any( circ ) > index( sm_io, 1 )
+
+any( rg_io ) + any( gra ) > index( rg_gra_io, 1 ) 
+any( rg_gra_io ) + any( gra ) > index( rg_io, 1 )
+any( rg_io ) + any( acc ) > index( rg_acc_io, 1 ) 
+any( rg_acc_io ) + any( acc ) > index( rg_io, 1 )
+any( rg_io ) + any( circ ) > index( rg_circ_io, 1 ) 
+any( rg_circ_io ) + any( circ ) > index( rg_io, 1 )
+
+c caps: breathing iota + accent
+any( c.sm_io ) + any( gra ) > index( c.sm_gra_io, 1 ) 
+any( c.sm_gra_io ) + any( gra ) > index( c.sm_io, 1 )
+any( c.sm_io ) + any( acc ) > index( c.sm_acc_io, 1 ) 
+any( c.sm_acc_io ) + any( acc ) > index( c.sm_io, 1 )
+any( c.sm_io ) + any( circ ) > index( c.sm_circ_io, 1 ) 
+any( c.sm_circ_io ) + any( circ ) > index( c.sm_io, 1 )
+
+any( c.rg_io ) + any( gra ) > index( c.rg_gra_io, 1 ) 
+any( c.rg_gra_io ) + any( gra ) > index( c.rg_io, 1 )
+any( c.rg_io ) + any( acc ) > index( c.rg_acc_io, 1 ) 
+any( c.rg_acc_io ) + any( acc ) > index( c.rg_io, 1 )
+any( c.rg_io ) + any( circ ) > index( c.rg_circ_io, 1 ) 
+any( c.rg_circ_io ) + any( circ ) > index( c.rg_io, 1 )
+
+c lowercase: accent iota + breathing
+any( gra_io ) + any( sm ) > index( sm_gra_io, 1 )
+any( sm_gra_io ) + any( sm ) > index( gra_io, 1 )
+any( gra_io ) + any( rg ) > index( rg_gra_io, 1 )
+any( rg_gra_io ) + any( rg ) > index( gra_io, 1 )
+
+any( acc_io ) + any( sm ) > index( sm_acc_io, 1 )
+any( sm_acc_io ) + any( sm ) > index( acc_io, 1 )
+any( acc_io ) + any( rg ) > index( rg_acc_io, 1 )
+any( rg_acc_io ) + any( rg ) > index( acc_io, 1 )
+
+any( circ_io ) + any( sm ) > index( sm_circ_io, 1 )
+any( sm_circ_io ) + any( sm ) > index( circ_io, 1 )
+any( circ_io ) + any( rg ) > index( rg_circ_io, 1 )
+any( rg_circ_io ) + any( rg ) > index( circ_io, 1 )
+
+c no! caps: accent iota + breathing
+
+c ==Final Sigma==
+U+03C3 + any( ends ) > U+03C2 index( ends, 2)
+
+c ==Other Rules==
+$KeymanOnly: + [' '] > U+0020      c breaking space
+$KeymanWeb: + [K_SPACE] > U+0020   c breaking space
+$KeymanOnly: + [CTRL ' '] > U+00A0     c non-breaking space
+$KeymanWeb: + [CTRL K_SPACE] > U+00A0  c non-breaking space  
+
+
+
+c EOF
