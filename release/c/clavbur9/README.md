@@ -1,27 +1,27 @@
-Clavier du Burkina NFD 9 keyboard
+Clavier du Burkina keyboard
 =====================
 
-Copyright (C) 2005 SIL
+Copyright (C) 2005-2018 SIL Burkina Faso
 
-Version 1.0
+Version 9.0.2
 
 __DESCRIPTION__
 
-An update of the Clavier du Burkina made by Doug Higby in 2005. No change in function is intended.  
+Unicode keyboard to type all special characters needed for the languages of Burkina Faso on both AZERTY or QWERTY keyboards.
+
+Clavier pour taper toutes les caractères speciaux au Burkina Faso, soit sur le clavier AZERTY ou le clavier QWERTY. 
+
 Links
 -----
 
- * Original Clavier du Burkina download link    <http://www.tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=412&FromKeyman=0>
+ * Home page: https://keyman.com/keyboards/clavbur9
 
  * Contact:  <steve_white@sil.org>
 
 Supported Platforms
 -------------------
  * Windows
+ * MacOS
+ * Linux
  * Web
- * Mobile Web
- * iOS
- * Android
 
-Todo
-----
