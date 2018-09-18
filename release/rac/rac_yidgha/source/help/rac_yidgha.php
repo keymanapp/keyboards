@@ -90,7 +90,7 @@ SOFTWARE.</p></DIV>
 
 <h2>Links</h2>
 <ul>
-<li><a href='http://keymankeyboards.com/iso:ydg'>Other keyboards for these languages</a></li>
+<li><a href='https://keyman.com/keyboards/languages/ydg'>Other keyboards for these languages</a></li>
 </ul>
 
 
