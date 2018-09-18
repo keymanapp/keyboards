@@ -1,12 +1,8 @@
-<html>
-<head>
-  <title>The Rachitrali-Yidgha Keyman Keyboard Package</title>
-  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-</head>
-<body style="max-width:600px;">
-<h1>The Rachitrali-Yidgha Keyman Keyboard Package</h1>
-      <P><SPAN class=author_date_hits>Rehmat Aziz Chitrali, 
-      2018-06-06</SPAN></P>
+<?php
+  $pagename = 'Rachitrali-Yidgha Keyboard Help';
+  $pagetitle = 'Rachitrali-Yidgha Keyboard Help';
+  require_once('header.php');
+?>
 
 <h2>Introduction</h2>
 <p>This keyboard is designed for the Yidgha language spoken in Chitral,  Khyber Pakhtunkhwa, Pakistan in its standard Perso-Arabic script, as used Pakistan. It is based on phonetic keyboard for Yidgha Language developed by Pakistani linguist, author, researcher, Inventor and Software Developer Mr.Rehmat Aziz Chitrali for Summer Institute of Linguistics(SIL), and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Yidgha Keyboard.
@@ -97,6 +93,4 @@ SOFTWARE.</p></DIV>
 <li><a href='http://keymankeyboards.com/iso:ydg'>Other keyboards for these languages</a></li>
 </ul>
 
-</body>
-</html>
 
