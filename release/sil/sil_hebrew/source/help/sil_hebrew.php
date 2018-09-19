@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'SIL Hebrew Keyboard Help';
-  $pagetitle = 'SIL Hebrew Keyboard Help';
+  $pagename = 'Hebrew (SIL) Keyboard Help';
+  $pagetitle = 'Hebrew (SIL) Keyboard Help';
   $pagestyle = <<<END
       div, p, li { margin-bottom: 8px }
       table.inputSequences {border: 1px solid #1C6EA4;background-color: #FFFFFF;width: 100%;text-align: left;border-collapse: collapse;}

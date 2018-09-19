@@ -1,6 +1,9 @@
 Tai Dam Lao (SIL) keyboard change history:
 =======================
 
+14-Sep-2018: Version 2.0.1
+             Added macos and linux as targets
+
 July 2018:   Version 2.0
              Renamed Tai Dam Lao (SIL) keyboard. 
              Added Lao numerals

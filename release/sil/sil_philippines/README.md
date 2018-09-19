@@ -3,7 +3,7 @@ Philippines (SIL) Keyboard
 
 Copyright (C) 2006-2018 SIL Philippines
 
-Version 1.0.1
+Version 1.0.2
 
 __DESCRIPTION__
 This keyboard enables the typing of all Philippine languages. It gives the ability to
