@@ -5,10 +5,8 @@
 ?>
 
 
-<p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Charis SIL"'>+ 'semicolon' means
-press then release then press next key<o:p></o:p></span></p>
+<p class=MsoNormal><span style='font-family:"Charis SIL"'>The plus (+) means these keystrokes are typed successively. For example, "^ + a" means you would type "^" followed by "a" to get "â".<o:p></o:p></span></p>
+<p class=MsoNormal><span style='font-family:"Charis SIL"'>As this keyboard is intended for transliteration, combining marks on consonants are not supported.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Charis SIL"'><o:p>&nbsp;</o:p></span></p>
 
