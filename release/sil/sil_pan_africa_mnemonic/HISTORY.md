@@ -1,6 +1,10 @@
 Pan Africa Mnemonic (SIL) Keyboard Change History
 =======================
 
+1.1.1 2018-Sept-21
+---------------
+* Corrected keystroke documentation
+
 1.1 2018-Aug-24
 ---------------
 * Updated keyboard
