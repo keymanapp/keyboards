@@ -315,11 +315,13 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c
 'ൺ' + 'm' > 'ണ്മ്'
 
 'ൻ' + 'r' > 'ന്ര്'
+'ന്ര്' + 'r' > 'ന്റ്'
 'ൻ' + 'k' > 'ങ്ക്'
 'ൻ' + 'j' > 'ഞ്'
 'ൻ' + 'n' > 'ന്ന്'
 'ൻ' + 'd' > 'ന്ദ്'
-'ൻ' + 't' > 'ന്റ്'
+'ൻ' + 't' >  'ൻ്റ്' c To solve issue 35: the encoding of ൻ്റ
+'ൻ്റ്' + '\' > 'ന്റ്'
 'ൻ' + 'm' > 'ന്മ്'
 'ൻ' + 'L' > 'ന്ല്' c deadkey(capl) c commented out by Ben
 'ൻ' + 'v' > 'ന്വ്'
