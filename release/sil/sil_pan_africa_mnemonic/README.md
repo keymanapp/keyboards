@@ -3,7 +3,7 @@ Pan Africa Mnemonic (SIL) Keyboard
 
 Copyright (C) 2003-2018 SIL International
 
-Version 1.1
+Version 1.1.1
 
 __DESCRIPTION__
 This is the mnemonic version of the Pan Africa (SIL) keyboard. It features a layout that adjusts 
