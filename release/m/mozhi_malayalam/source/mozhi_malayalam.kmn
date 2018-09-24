@@ -61,7 +61,8 @@ any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, bu
 c Treat anusvaram as chillu (Solve Issue: https://github.com/beniza/keyboards/issues/1)
 c chill breakers
 store(chills_anu) 'ൺൻർൽൾൿം'
-store(chill_anu_Bases) "ണനരലളകമ"
+store(chill_anu_Bases) "ണനരലളകമ"       
+any(chills_anu) + '_' > index(chills_anu, 1) dk(4)
 any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
 any(chills_anu) + 'a' > index(chill_anu_Bases,1)
 any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
@@ -132,6 +133,11 @@ U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
 U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
 + any(vDirectCapsKeys) > index(vDirectCapsValues,1)
 U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
+
+c always remove zwnj before a word final chars
+store(WordFinalChars) ' ?.!)]}"”’'
+U+200C + any(WordFinalChars) > index(WordFinalChars, 2)
+U+200C + "'" > "'"
 
 'അ' + 'a' > 'ആ'
 'അ' + 'i' > 'ഐ'
@@ -361,50 +367,36 @@ c digits
 '\' + '9' > '൯'
 
 + 'B' > 'ബ്ബ്'
-any(chills) U+200C + 'B' > index(chills,1) 'ബ്ബ്'
 + 'C' > 'ച്ച്'
-any(chills) U+200C + 'C' > index(chills,1) 'ച്ച്'
 + 'G' > 'ഗ്ഗ്'
-any(chills) U+200C + 'G' > index(chills,1) 'ഗ്ഗ്'
 + 'H' > 'ഃ'
-any(chills) U+200C + 'H' > index(chills,1) 'ഃ'
 + 'J' > 'ജ്ജ്'
-any(chills) U+200C + 'J' > index(chills,1) 'ജ്ജ്'
 + 'K' > 'ക്ക്'
-any(chills) U+200C + 'K' > index(chills,1) 'ക്ക്'
 + 'M' > 'മ്മ്'
-any(chills) U+200C + 'M' > index(chills,1) 'മ്മ്'
 + 'P' > 'പ്പ്'
-any(chills) U+200C + 'P' > index(chills,1) 'പ്പ്'
 + 'Q' > 'ക്യു'
-any(chills) U+200C + 'Q' > index(chills,1) 'ക്യ്'
 + 'V' > 'വ്വ്'
-any(chills) U+200C + 'V' > index(chills,1) 'വ്വ്'
 + 'W' > 'വ്വ്'
-any(chills) U+200C + 'W' > index(chills,1) 'വ്വ്'
 + 'X' > 'ക്ഷ്'
-any(chills) U+200C + 'X' > index(chills,1) 'ക്ഷ്'
 + 'Y' > 'യ്യ്'
-any(chills) U+200C + 'Y' > index(chills,1) 'യ്യ്'
 + 'Z' > 'ശ്ശ്'
-any(chills) U+200C + 'Z' > index(chills,1) 'ശ്ശ്'
 + 'q' > 'ക്ക്'
-any(chills) U+200C + 'q' > index(chills,1) 'ക്ക്'
 + 't' > 'റ്റ്'
-any(chills) U+200C + 't' > index(chills,1) 'റ്റ്'
 + 'x' > 'ക്ഷ്'
-any(chills) U+200C + 'x' > index(chills,1) 'ക്ഷ്'
 + '~' > '്'
-any(chills) U+200C + '~' > index(chills,1) '്' 
 
 'ട്ട്' + 'h' > 'ത്ത്'
 'ട്' + 'H' > 'ത്ത്'
 'ൺ' + 'G' > 'ങ്ങ്'
 'ൺ' + 'J' > 'ഞ്ഞ്'
 
-U+200C + '_' > U+200C
-+ '_' > U+200C
+c '_' will output zwnj only after a chandrakkala
+'്' + '_' > '്' U+200C                             
+c prevent the typing of repeated zw(n)j
+U+200C + '_' > context                   
+U+200D + '_' > context
 
+c Malayalam fractions
 '1/4' + '\' > '൳'
 '1/2' + '\' > '൴'
 '3/4' + '\' > '൵'
