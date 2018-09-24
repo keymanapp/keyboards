@@ -61,7 +61,8 @@ any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, bu
 c Treat anusvaram as chillu (Solve Issue: https://github.com/beniza/keyboards/issues/1)
 c chill breakers
 store(chills_anu) 'ൺൻർൽൾൿം'
-store(chill_anu_Bases) "ണനരലളകമ"
+store(chill_anu_Bases) "ണനരലളകമ"       
+any(chills_anu) + '_' > index(chills_anu, 1) dk(4)
 any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
 any(chills_anu) + 'a' > index(chill_anu_Bases,1)
 any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
@@ -110,13 +111,6 @@ c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
 '്' + '\' > U+0D3C
 U+0D3C + '\' > U+0D3B
 any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
-c Sequence Chills
-c any(chills) '\' + '\' > index(chillBases,1) '്' U+200D
-c 'ഩ്' + '\' > 'ന' '്' U+200D
-
-c The following rule is an experimental rule to prevent chillu r formation 
-c (instead it will form vattu ra form) if it follows a chandrakkala. By Ben
-c any(consonants) '്' + 'r' > index(consonants, 1) '്ര്'    c Disabled this rule as it caused the keyboard to brake in FireFox                                                                                        
 
 c produce vowels
 store(vDirectSmallValues) "അഎഇഒഉ"
@@ -132,6 +126,11 @@ U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
 U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
 + any(vDirectCapsKeys) > index(vDirectCapsValues,1)
 U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
+
+c always remove zwnj before a word final chars
+store(WordFinalChars) ' ?.!)]}"”’'
+U+200C + any(WordFinalChars) > index(WordFinalChars, 2)
+U+200C + "'" > "'"
 
 'അ' + 'a' > 'ആ'
 'അ' + 'i' > 'ഐ'
@@ -163,26 +162,9 @@ U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
 'ോ' + 'O' > 'ോോ'
 'ൗ' + 'u' > 'ൗൗ'
 
-c vowel signs
-c disabling the following rules to fix issue 19: സ്വരചിഹ്നത്തിനു '\' ഉപയോഗിക്കുന്നതൊഴിവാക്കുക
-c 'മ്' + '\' > 'ം'
-c 'ആ' + '\' > 'ാ'
+c archaic  signs
 'ഈ' + '\' > 'ൟ'
 'ം' + '\' > 'ഁ'
-c 'ഈ' + '\' > 'ീ'
-c 'ഉ' + '\' > 'ു'
-c 'ഊ' + '\' > 'ൂ'
-c 'ഋ' + '\' > 'ൃ'
-c 'ൠ' + '\' > 'ൄ'
-c 'എ' + '\' > 'െ'
-c 'ഏ' + '\' > 'േ'
-c 'ഐ' + '\' > 'ൈ'
-c 'ഒ' + '\' > 'ൊ'
-c 'ഓ' + '\' > 'ോ'
-c 'ഔ' + '\' > 'ൗ' 
-c 'ൗ' + '\' > 'ൌ'
-c 'ഌ' + '\' > 'ൢ'
-c 'ൡ' + '\' > 'ൣ'
 
 c Stand-alone vowel signs after chandrakkala (Solve Issue: https://github.com/beniza/keyboards/issues/8)
 '്' + 'A' > 'ാ'
@@ -209,10 +191,8 @@ c To solve issue-20 ചന്ദ്രക്കലയ്ക്ക് ശേഷ�
 '്' + '~' > '്'   
 
 c Consonants
-c store(cDirectSmallKeys) 'kgjdpfbmyvwzsh'
-c store(cDirectSmallValues)  'കഗജദപഫബമയവവശസഹ'
-store(cDirectSmallKeys) 'bdfghjkmpsvwyz'
-store(cDirectSmallValues)  'ബദഫഗഹജകമപസവവയശ'
+store(cDirectSmallKeys) 'kgjdpfbyvwzsh'
+store(cDirectSmallValues)  'കഗജദപഫബയവവശസഹ'
 + any(cDirectSmallKeys) > index(cDirectSmallValues,1) '്'
 
 store(cDirectCapsKeys) 'DSTF'
@@ -220,8 +200,8 @@ store(cDirectCapsValues) 'ഡശടഫ'
 + any(cDirectCapsKeys) > index(cDirectCapsValues,1)  '്'
 
 c To cleanup any unwanted zwnj between Chillu and a consonant
-any(chills) U+200C + any(cDirectSmallKeys) > index(chills,1) index(cDirectSmallValues,3) '്'
-any(chills) U+200C + any(cDirectCapsKeys) > index(chills,1) index(cDirectCapsValues,3) '്' 
+c any(chills) U+200C + any(cDirectSmallKeys) > index(chills,1) index(cDirectSmallValues,3) '്'
+c any(chills) U+200C + any(cDirectCapsKeys) > index(chills,1) index(cDirectCapsValues,3) '്' 
 
 c Aspiration and certain fluids are obtained by typing an 'h' after the unaspirated counterparts and സ, ശ
 store(thinConsonants) "കഗചജടഡതദപബസശ"
@@ -361,56 +341,35 @@ c digits
 '\' + '9' > '൯'
 
 + 'B' > 'ബ്ബ്'
-any(chills) U+200C + 'B' > index(chills,1) 'ബ്ബ്'
 + 'C' > 'ച്ച്'
-any(chills) U+200C + 'C' > index(chills,1) 'ച്ച്'
 + 'G' > 'ഗ്ഗ്'
-any(chills) U+200C + 'G' > index(chills,1) 'ഗ്ഗ്'
 + 'H' > 'ഃ'
-any(chills) U+200C + 'H' > index(chills,1) 'ഃ'
 + 'J' > 'ജ്ജ്'
-any(chills) U+200C + 'J' > index(chills,1) 'ജ്ജ്'
 + 'K' > 'ക്ക്'
-any(chills) U+200C + 'K' > index(chills,1) 'ക്ക്'
 + 'M' > 'മ്മ്'
-any(chills) U+200C + 'M' > index(chills,1) 'മ്മ്'
 + 'P' > 'പ്പ്'
-any(chills) U+200C + 'P' > index(chills,1) 'പ്പ്'
 + 'Q' > 'ക്യു'
-any(chills) U+200C + 'Q' > index(chills,1) 'ക്യ്'
 + 'V' > 'വ്വ്'
-any(chills) U+200C + 'V' > index(chills,1) 'വ്വ്'
 + 'W' > 'വ്വ്'
-any(chills) U+200C + 'W' > index(chills,1) 'വ്വ്'
 + 'X' > 'ക്ഷ്'
-any(chills) U+200C + 'X' > index(chills,1) 'ക്ഷ്'
 + 'Y' > 'യ്യ്'
-any(chills) U+200C + 'Y' > index(chills,1) 'യ്യ്'
 + 'Z' > 'ശ്ശ്'
-any(chills) U+200C + 'Z' > index(chills,1) 'ശ്ശ്'
 + 'q' > 'ക്ക്'
-any(chills) U+200C + 'q' > index(chills,1) 'ക്ക്'
 + 't' > 'റ്റ്'
-any(chills) U+200C + 't' > index(chills,1) 'റ്റ്'
 + 'x' > 'ക്ഷ്'
-any(chills) U+200C + 'x' > index(chills,1) 'ക്ഷ്'
 + '~' > '്'
-any(chills) U+200C + '~' > index(chills,1) '്' 
 
 'ട്ട്' + 'h' > 'ത്ത്'
 'ട്' + 'H' > 'ത്ത്'
 'ൺ' + 'G' > 'ങ്ങ്'
 'ൺ' + 'J' > 'ഞ്ഞ്'
 
-U+200C + '_' > U+200C
-+ '_' > U+200C
+c '_' will output zwnj only after a chandrakkala
+'്' + '_' > '്' U+200C                             
+c prevent the typing of repeated zw(n)j
+U+200C + '_' > context                   
+U+200D + '_' > context
 
-'1/4' + '\' > '൳'
-'1/2' + '\' > '൴'
-'3/4' + '\' > '൵'
-'10' + '\' > U+0D70
-'100' + '\' > U+0D71
-'1000' + '\' > U+0D72
 c em dash
 '---' + '\' > '—'
 c en dash
