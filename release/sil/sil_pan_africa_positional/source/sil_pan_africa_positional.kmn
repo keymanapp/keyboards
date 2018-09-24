@@ -1,26 +1,27 @@
 c Created by Lorna A. Priest, SIL International
-c This keyboard uses deadkeys to access special characters
 c Any changes to be made should be able to be 
 c      made in the "stores" rather than in the rules
+c This keyboard uses both "virtual keys" (ALT, CTRL) and deadkeys
+c      and will only work on US keyboards
 c This keyboard was written to normalize to NFC. If you wish to 
 c      use NFD then you should go through the keyboard and 
 c      remove "use(NFC)"
 c 2009-08-31 LP updated all PUA characters to their official Unicode codepoints
 
-store(&VERSION) '9.0'
-store(&NAME) "Pan Africa Mnemonic (SIL)"
-store(&BITMAP) 'sil_pan_africa_mnemonic.ico'
+store(&VERSION) "10.0"
+store(&NAME) "Pan Africa Positional (SIL)"
+store(&BITMAP) 'sil_pan_africa_positional.ico'
 store(&COPYRIGHT) '© 2003-2018 SIL International'
 store(&TARGETS) 'windows macosx linux web'
-store(&KEYBOARDVERSION) '1.1.1'
-store(&VISUALKEYBOARD) 'sil_pan_africa_mnemonic.kvks'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'sil_pan_africa_positional.kvks'
 
 begin Unicode > use(MainU) 
 
-
-store(&mnemoniclayout) "1"
-
-store(&message) "This keyboard was written to normalize to NFC. " 
+store(&mnemoniclayout) "0"
+store(&message) "This keyboard was written to normalize to NFC." \
+                " If you wish to use NFD then you should go" \
+                " through the keyboard and remove 'use(NFC)'"
 
 
 c deadkey for first set
@@ -30,12 +31,21 @@ c deadkey for second set
 store(K_2)       "]"
 
 c reassigned characters (these need to be changed if the above deadkeys are changed)
-store(deadkeys_K) "/"    "<"    ">"    "@"    "["    "]" \
-                  "^"    "_"    "`"    "{"    "|"    "}" \
-                  "~"
-store(deadkeys)   U+002F U+003C U+003E U+0040 U+005B U+005D \
-                  U+005E U+005F U+0060 U+007B U+007C U+007D \
-                  U+007E
+store(deadkeys_KV) [LALT K_SLASH]       [SHIFT LALT K_COMMA]   [SHIFT LALT K_PERIOD] \
+                   [SHIFT LALT K_2]     [LALT K_LBRKT]         [LALT K_RBRKT] \
+                   [SHIFT LALT K_6]     [SHIFT LALT K_HYPHEN]  [LALT K_BKQUOTE] \
+                   [SHIFT LALT K_LBRKT] [SHIFT LALT K_BKSLASH] [SHIFT LALT K_RBRKT] \
+                   [SHIFT LALT K_BKQUOTE] 
+store(deadkeys_K)  "/"               "<"                       ">" \
+                   "@"               "["                       "]" \
+                   "^"               "_"                       "`" \
+                   "{"               "|"                       "}" \
+                   "~"
+store(deadkeys)    U+002F            U+003C                    U+003E \
+                   U+0040            U+005B                    U+005D \
+                   U+005E            U+005F                    U+0060 \
+                   U+007B            U+007C                    U+007D \
+                   U+007E
   
 
 c using first deadkey
@@ -47,6 +57,15 @@ c                slash o          bar r            epsilon          hook t
 c                bar u            hook v           hook w           gamma
 c                hook y           ezh              glottal          semi-colon
 c                opening chevron  closing chevron        
+
+store(KV_lc1)    [RALT K_A]       [RALT K_B]       [RALT K_C]       [RALT K_D] \
+                 [RALT K_E]       [RALT K_F]       [RALT K_G]       [RALT K_H] \
+                 [RALT K_I]       [RALT K_J]       [RALT K_K]       [RALT K_L] \
+                 [RALT K_M]       [RALT K_N]       [RALT K_O]       [RALT K_P] \
+                 [RALT K_Q]       [RALT K_R]       [RALT K_S]       [RALT K_T] \
+                 [RALT K_U]       [RALT K_V]       [RALT K_W]       [RALT K_X] \
+                 [RALT K_Y]       [RALT K_Z]       [RALT K_QUOTE]              
+                                
 
 store(K_lc1)     "a"              "b"              "c"              "d" \
                  "e"              "f"              "g"              "h" \
@@ -73,6 +92,14 @@ store(K_UC1)     "A"              "B"              "C"              "D" \
                  "U"              "V"              "W"              "X" \
                  "Y"              "Z"              "?" 
                                
+store(KV_UC1)    [SHIFT RALT K_A] [SHIFT RALT K_B] [SHIFT RALT K_C] [SHIFT RALT K_D] \
+                 [SHIFT RALT K_E] [SHIFT RALT K_F] [SHIFT RALT K_G] [SHIFT RALT K_H] \
+                 [SHIFT RALT K_I] [SHIFT RALT K_J] [SHIFT RALT K_K] [SHIFT RALT K_L] \
+                 [SHIFT RALT K_M] [SHIFT RALT K_N] [SHIFT RALT K_O] [SHIFT RALT K_P] \
+                 [SHIFT RALT K_Q] [SHIFT RALT K_R] [SHIFT RALT K_S] [SHIFT RALT K_T] \
+                 [SHIFT RALT K_U] [SHIFT RALT K_V] [SHIFT RALT K_W] [SHIFT RALT K_X] \
+                 [SHIFT RALT K_Y] [SHIFT RALT K_Z] [SHIFT RALT K_SLASH] 
+
 store(UC1)       U+2C6D           U+0181           U+0187           U+018A \   
                  U+018E           U+0191           U+0193           U+021E \
                  U+0197           U+0189           U+0198           U+0196 \
@@ -84,15 +111,22 @@ store(UC1)       U+2C6D           U+0181           U+0187           U+018A \
                  
 
 c using second deadkey
-c                optional schwa   hook r          esh  \
+c                optional schwa  hook r           esh  \
 c                bar t            upside v        barred z
 c                reverse glottal
                
+store(KV_lc2)    [LALT K_E]       [LALT K_R]       [LALT K_S] \
+                 [LALT K_T]       [LALT K_V]       [LALT K_Z]       
+
 store(K_lc2)     "e"              "r"              "s" \
                  "t"              "v"              "z"
 
 store(lc2)       U+0259           U+027D           U+0283 \
                  U+0167           U+028C           U+01B6           
+
+store(KV_UC2)    [SHIFT LALT K_E] [SHIFT LALT K_R] [SHIFT LALT K_S] \
+                 [SHIFT LALT K_T] [SHIFT LALT K_V] [SHIFT LALT K_Z]  \
+                 [SHIFT LALT K_SLASH] 
 
 store(K_UC2)     "E"              "R"              "S" \
                  "T"              "V"              "Z" \
@@ -148,6 +182,9 @@ store(K_diacritics2) "~"                    "_"                     "}" \
                      "|"                    "@"                     ","  
                                                              
 
+store(KV_dia2)       [SHIFT RALT K_BKQUOTE] [SHIFT RALT K_HYPHEN]   [RALT K_PERIOD] \
+                     [SHIFT RALT K_BKSLASH] [SHIFT RALT K_2]        [RALT K_COMMA] 
+                                                 
 store(diacritics2)   outs(DUtilde)          outs(DUmacron)          outs(DUdot) \
                      outs(DUvert)           outs(DUcircle)          outs(DUcedilla) 
                                                        
@@ -286,7 +323,7 @@ c deadkeys
             
 c reassigned characters 
 dk(2)       + any(deadkeys_K)   > index(deadkeys,2)
-
+            + any(deadkeys_KV)  > index(deadkeys,1)
 c PUNCTUATION
 c chevrons
             + any(opSglQ_K)     > outs(opSglQ) use(Quotes)
@@ -302,43 +339,52 @@ dk(1)       + any(K_UC1)        > index(UC1,2)
 dk(2)       + any(K_UC2)        > index(UC2,2) 
 dk(2)       + any(unused2)      > beep
 
-          
+c special characters - using shift keys
+            + any(KV_lc1)       > index(lc1,1)
+            + any(KV_UC1)       > index(UC1,1)
+            + any(KV_lc2)       > index(lc2,1)
+            + any(KV_UC2)       > index(UC2,1)
+            
 c diacritics - using deadkey
             + any(K_diacritics1) > index(diacritics1,1) use(NFC)
 dk(1)       + any(K_diacritics2) > index(diacritics2,2) use(NFC)
 
-c housekeeping
-$keymanonly: any(graveA)       + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsGraveA)   + [K_BKSP] >  index(ConsGrave_K,1)
-$keymanonly: any(acuteA)       + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsAcuteA)   + [K_BKSP] >  index(ConsAcute_K,1)
-$keymanonly: any(circA)        + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsCircA)    + [K_BKSP] >  index(ConsCirc_K,1)
-$keymanonly: any(tildeA)       + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsTildeA)   + [K_BKSP] >  index(ConsTilde_K,1)
-$keymanonly: any(macronA)      + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsMacronA)  + [K_BKSP] >  index(ConsMacron_K,1)
-$keymanonly: any(diaeresisA)   + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsDiaeresisA)   + [K_BKSP] >  index(ConsDiaeresis_K,1)
-$keymanonly: any(hachekA)      + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsHachekA)  + [K_BKSP] >  index(ConsHachek_K,1)
-$keymanonly: any(dotU)         + [K_BKSP] >  index(Vowels,1)
-$keymanonly: any(ConsDotU)     + [K_BKSP] >  index(ConsDotU_K,1)
-$keymanonly: any(circleA)      + [K_BKSP] >  index(circle_K,1)
-$keymanonly: any(circleU)      + [K_BKSP] >  index(circleU_K,1)
-$keymanonly: any(tildeU)       + [K_BKSP] >  index(tildeU_K,1)
-$keymanonly: any(dotA)         + [K_BKSP] >  index(Dot_K,1)
-$keymanonly: any(cedillaU)     + [K_BKSP] >  index(cedilla_K,1)
-$keymanonly: any(ConsbarU)     + [K_BKSP] >  index(ConsbarU_K,1)
-$keymanonly: any(StackingMacron)   + [K_BKSP] > index(StackingBM,1) 
-$keymanonly: any(StackingAcute)    + [K_BKSP] > index(StackingBA,1) 
-$keymanonly: any(StackingHachek)   + [K_BKSP] > index(StackingBH,1) 
-$keymanonly: any(StackingGrave)    + [K_BKSP] > index(StackingBG,1) 
-$keymanonly: any(StackingTilde)    + [K_BKSP] > index(StackingBT,1) 
-$keymanonly: any(StackingDot)      + [K_BKSP] > index(StackingBDot2,1) 
-$keymanonly: any(StackingDiaresis) + [K_BKSP] > index(StackingBDiar,1) 
+c diacritics - using shift keys
+            + any(KV_dia2)       > index(diacritics2,1) use(NFC)
 
-  
+c group(2) using keys
+c housekeeping
+any(graveA)       + [K_BKSP] >  index(Vowels,1)
+any(ConsGraveA)   + [K_BKSP] >  index(ConsGrave_K,1)
+any(acuteA)       + [K_BKSP] >  index(Vowels,1)
+any(ConsAcuteA)   + [K_BKSP] >  index(ConsAcute_K,1)
+any(circA)        + [K_BKSP] >  index(Vowels,1)
+any(ConsCircA)    + [K_BKSP] >  index(ConsCirc_K,1)
+any(tildeA)       + [K_BKSP] >  index(Vowels,1)
+any(ConsTildeA)   + [K_BKSP] >  index(ConsTilde_K,1)
+any(macronA)      + [K_BKSP] >  index(Vowels,1)
+any(ConsMacronA)  + [K_BKSP] >  index(ConsMacron_K,1)
+any(diaeresisA)   + [K_BKSP] >  index(Vowels,1)
+any(ConsDiaeresisA)   + [K_BKSP] >  index(ConsDiaeresis_K,1)
+any(hachekA)      + [K_BKSP] >  index(Vowels,1)
+any(ConsHachekA)  + [K_BKSP] >  index(ConsHachek_K,1)
+any(dotU)         + [K_BKSP] >  index(Vowels,1)
+any(ConsDotU)     + [K_BKSP] >  index(ConsDotU_K,1)
+any(circleA)      + [K_BKSP] >  index(circle_K,1)
+any(circleU)      + [K_BKSP] >  index(circleU_K,1)
+any(tildeU)       + [K_BKSP] >  index(tildeU_K,1)
+any(dotA)         + [K_BKSP] >  index(Dot_K,1)
+any(cedillaU)     + [K_BKSP] >  index(cedilla_K,1)
+any(ConsbarU)     + [K_BKSP] >  index(ConsbarU_K,1)
+any(StackingMacron)   + [K_BKSP] > index(StackingBM,1) 
+any(StackingAcute)    + [K_BKSP] > index(StackingBA,1) 
+any(StackingHachek)   + [K_BKSP] > index(StackingBH,1) 
+any(StackingGrave)    + [K_BKSP] > index(StackingBG,1) 
+any(StackingTilde)    + [K_BKSP] > index(StackingBT,1) 
+any(StackingDot)      + [K_BKSP] > index(StackingBDot2,1) 
+any(StackingDiaresis) + [K_BKSP] > index(StackingBDiar,1) 
+
+ 
 c end MainU group
 c ***************************************************
 
