@@ -111,13 +111,6 @@ c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
 '്' + '\' > U+0D3C
 U+0D3C + '\' > U+0D3B
 any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
-c Sequence Chills
-c any(chills) '\' + '\' > index(chillBases,1) '്' U+200D
-c 'ഩ്' + '\' > 'ന' '്' U+200D
-
-c The following rule is an experimental rule to prevent chillu r formation 
-c (instead it will form vattu ra form) if it follows a chandrakkala. By Ben
-c any(consonants) '്' + 'r' > index(consonants, 1) '്ര്'    c Disabled this rule as it caused the keyboard to brake in FireFox                                                                                        
 
 c produce vowels
 store(vDirectSmallValues) "അഎഇഒഉ"
@@ -169,26 +162,9 @@ U+200C + "'" > "'"
 'ോ' + 'O' > 'ോോ'
 'ൗ' + 'u' > 'ൗൗ'
 
-c vowel signs
-c disabling the following rules to fix issue 19: സ്വരചിഹ്നത്തിനു '\' ഉപയോഗിക്കുന്നതൊഴിവാക്കുക
-c 'മ്' + '\' > 'ം'
-c 'ആ' + '\' > 'ാ'
+c archaic  signs
 'ഈ' + '\' > 'ൟ'
 'ം' + '\' > 'ഁ'
-c 'ഈ' + '\' > 'ീ'
-c 'ഉ' + '\' > 'ു'
-c 'ഊ' + '\' > 'ൂ'
-c 'ഋ' + '\' > 'ൃ'
-c 'ൠ' + '\' > 'ൄ'
-c 'എ' + '\' > 'െ'
-c 'ഏ' + '\' > 'േ'
-c 'ഐ' + '\' > 'ൈ'
-c 'ഒ' + '\' > 'ൊ'
-c 'ഓ' + '\' > 'ോ'
-c 'ഔ' + '\' > 'ൗ' 
-c 'ൗ' + '\' > 'ൌ'
-c 'ഌ' + '\' > 'ൢ'
-c 'ൡ' + '\' > 'ൣ'
 
 c Stand-alone vowel signs after chandrakkala (Solve Issue: https://github.com/beniza/keyboards/issues/8)
 '്' + 'A' > 'ാ'
@@ -215,10 +191,8 @@ c To solve issue-20 ചന്ദ്രക്കലയ്ക്ക് ശേഷ�
 '്' + '~' > '്'   
 
 c Consonants
-c store(cDirectSmallKeys) 'kgjdpfbmyvwzsh'
-c store(cDirectSmallValues)  'കഗജദപഫബമയവവശസഹ'
-store(cDirectSmallKeys) 'bdfghjkmpsvwyz'
-store(cDirectSmallValues)  'ബദഫഗഹജകമപസവവയശ'
+store(cDirectSmallKeys) 'kgjdpfbyvwzsh'
+store(cDirectSmallValues)  'കഗജദപഫബയവവശസഹ'
 + any(cDirectSmallKeys) > index(cDirectSmallValues,1) '്'
 
 store(cDirectCapsKeys) 'DSTF'
