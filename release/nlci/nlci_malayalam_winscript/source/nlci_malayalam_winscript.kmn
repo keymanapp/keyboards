@@ -21,10 +21,12 @@ store(cons) 'കഖഗഘങ' \
     	   	'പഫബഭമ' \
     	   	'യരലവശഷസഹള'
 
+store(consonants) outs(cons) 'റഴഩഺ'
+
 c Adjust the behavior of 'a'
 + 'a' > 'അ'   
 'അ' + 'a' > 'ആ'               
-any(cons) + 'a' > context dk(a)
+any(consonants) + 'a' > context dk(a)
 dk(a) + 'a' > 'ാ' dk(aa)
 'ാ' dk(aa) + 'a' > 'അ'
 
@@ -36,6 +38,12 @@ c Adjust the behavior of 'i'
 'ഇ' + 'i' > 'ഈ' 
 'ി' + 'i' > 'ീ'    
 
+c Adjust the behavior of l
+'ല' + 'l' > 'ള'
+'ള' + 'l' > 'ഴ'      
+
+c Adjust the behavior of n
+'ന' + 'n' > 'ഩ'
 
 
 c Add praslesham
@@ -43,7 +51,7 @@ c Add praslesham
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
-any(cons) + any(vowelKeys) > context index(vowelMatras, 2)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 c cons + chandrakala
-any (cons) + 'x' > context '്'          
+any (consonants) + 'x' > context '്'          
 any(vowels) + 'x' > context '്'
