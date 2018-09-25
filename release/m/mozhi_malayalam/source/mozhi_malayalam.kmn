@@ -274,6 +274,11 @@ any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 'ൻ്റ്' + 'h' > 'ന്ത്'
 any(consonants) U+0D62 + 'l' > index(consonants,1) U+0D63
 
+c The sequence 'nj' produces 'ഞ്ഞ്', iff it is typed after a vowel, vowelsign or a consonant   To Fix #39
+any(consonants) 'ൻ' + 'j' > index(consonants, 1) 'ഞ്ഞ്'
+any(vowels) 'ൻ' + 'j' > index(vowels, 1) 'ഞ്ഞ്'
+any(vowelsigns) 'ൻ' + 'j' > index(vowelsigns, 1) 'ഞ്ഞ്'
+
 c ['([അ-ഊഌഎ-ഐഒ-ഹ])([ഽ-ൂെ-ൌൗ])+R', '', '$2$3റ്'],
 any(consonants) 'ൃ' + 'a' > index(consonants,1) '്ര'
 any(consonants) 'ൃ' + 'A' > index(consonants,1) '്രാ'
