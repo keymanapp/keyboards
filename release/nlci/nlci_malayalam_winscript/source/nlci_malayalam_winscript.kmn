@@ -22,6 +22,8 @@ store(cons) 'കഖഗഘങ' \
     	   	'യരലവശഷസഹള'
 
 store(consonants) outs(cons) 'റഴഩഺ'
+store(chillu_base) 'ണനരലളകയമഴ'
+store(chillu) 'ൺൻർൽൾൿൔൕൖ'
 
 c Adjust the behavior of 'a'
 + 'a' > 'അ'   
@@ -66,6 +68,9 @@ c Adjust the behavior of u
 c Adjust the behavior of X
 any(consonants) + 'X' > context '്' U+200C
 
+c Add Malayalam Chillu
+any(chillu_base) '്' + 'x' > index(chillu, 1)
+ 
 c Add praslesham
 + 'F' > 'ഽ'
 
