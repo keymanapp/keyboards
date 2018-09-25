@@ -76,7 +76,12 @@ c Add praslesham
 
 c Add ^
 '്ല' + '^' > 'ൢ'
-'ൢ' + '^' > 'ൣ'
+'ൢ' + '^' > 'ൣ'                                              
+
+c Add =
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'റ'
+'=' dk(eq)+ 'z' > 'ഴ'
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
