@@ -1255,7 +1255,7 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(4,t,"ത്");
     }
-    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(4,t,"ന്റ്",4)) {   // Line 274
+    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(4,t,"ൻ്റ്",4)) {   // Line 274
       r=m=1;
       k.KO(4,t,"ന്ത്");
     }
