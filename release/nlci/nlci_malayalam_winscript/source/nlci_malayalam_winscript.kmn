@@ -21,7 +21,11 @@ store(cons) 'കഖഗഘങ' \
     	   	'പഫബഭമ' \
     	   	'യരലവശഷസഹള'
 
-+ 'a' > 'അ'  
++ 'a' > 'അ'                  
+any(cons) + 'a' > context dk(a)
+dk(a) + 'a' > 'ാ' dk(aa)
+'ാ' dk(aa) + 'a' > 'അ'
+
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
 any(cons) + any(vowelKeys) > context index(vowelMatras, 2)
