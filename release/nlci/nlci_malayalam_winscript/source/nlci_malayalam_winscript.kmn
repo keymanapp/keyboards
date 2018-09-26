@@ -6,7 +6,7 @@ group(main) using keys
 
 store(vowelKeys) 'AiIuUReEYoOVMH'
 store(vowels) 'ആഇഈഉഊഋഎഏഐഒഓഔംഃ'
-store(vowelMatras) 'ാിീുൂൃെേൈൊോൌംഃ'
+store(vowelMatras) 'ാിീുൂൃെേൈൊോൗംഃ'
 store(consKeys) 'kKgGW' \
     	   	   	'cCjJw' \
     	   	   	'tTdDN' \
@@ -24,6 +24,7 @@ store(cons) 'കഖഗഘങ' \
 store(consonants) outs(cons) 'റഴഩഺ'
 store(chillu_base) 'ണനരലളകയമഴ'
 store(chillu) 'ൺൻർൽൾൿൔൕൖ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
 
 c Adjust the behavior of 'a'
 + 'a' > 'അ'   
@@ -90,12 +91,27 @@ c Add =
 '=' dk(eq)+ 'r' > 'റ'
 '=' dk(eq)+ 'z' > 'ഴ'
 
+c numbers
+store(numberKeys) '1234567890'
+store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
+'=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
+any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
+
+'=' dk(eq) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+
 c nta
 'ന്' + 't' > 'ൻ്റ'       
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
 any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+
 c cons + chandrakala
 any (consonants) + 'x' > context '്'          
-any(vowels) + 'x' > context '്'
+any(vowels) + 'x' > context '്'   
+
+c vowels + chandrakala
+any(vowels) + 'x' > context '്' 
+'അ' + 'x' > context '്'
+any(vowelMatras) + 'x' > context '്'
