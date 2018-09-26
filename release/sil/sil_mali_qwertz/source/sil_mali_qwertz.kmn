@@ -39,8 +39,15 @@ c store(Qwerty)    'qQaAwWzZ12' '3' '4' '567890-!@#$%^&*()_[]{}\|mM,./<>?;:`' "'
 c French keyboard correspondences below
 c store(Azerty)    'aAqQzZwW&é' '"' "'" '(-è_çà)1234567890°^$¨£*µ,?;:!./§mM²' "ù" '%'
 c German keyboard correspondences below
-store(Qwerty)   'yYzZ#^&*()_=+[]{};:<>/?\-`~\' "|" "'" '"' '@'
-store(German)   'zZyY§&/()=?´`ü+Ü*öÖ;:-_#ß^°+' "'" "ä" 'Ä' '"'         
+
+c store(Qwerty)   'yYzZ#^&*()_=+[]{};:<>/?\-`~\' "|" "'" '"' '@'
+c store(German)   'zZyY§&/()=?´`ü+Ü*öÖ;:-_#ß^°+' "'" "ä" 'Ä' '"'         
+store(Qwerty)   'y' 'Y' 'z' 'Z' '#' '^' '&' '*' '(' ')' '_' '=' '+' \
+                '[' ']' '{' '}' ';' ':' '<' '>' '/' '?' '\' '-' '`' \
+                '~' "|" "'" '"' '@'
+store(German)   'z' 'Z' 'y' 'Y' '§' '&' '/' '(' ')' '=' '?' '´' '`' \
+                'ü' '+' 'Ü' '*' 'ö' 'Ö' ';' ':' '-' '_' '#' 'ß' '^' \
+                '°' "'" "ä" 'Ä' '"'         
 
 store(LatinVowel)      "AEIOUaeiou"
 store(CompositeAcute)  "Á" "É" U+00CD U+00D3 U+00DA "á" U+00E9 U+00ED U+00F3 U+00FA 
@@ -115,14 +122,14 @@ group(Main) using keys
 c The lines below are Virtual keys that replace the Alt Gr sequences
 
 $keymanonly: + [RALT K_HYPHEN] > "\"
-$keymanonly: + [LCTRL LALT K_7] > '{'
-$keymanonly: + [LCTRL LALT K_8] > '['
-$keymanonly: + [LCTRL LALT K_9] > ']'
-$keymanonly: + [LCTRL LALT K_0] > '}'
-$keymanonly: + [LCTRL LALT K_LBRKT] > '\'
-$keymanonly: + [LCTRL LALT K_oE2] > '|'
-$keymanonly: + [LCTRL LALT K_M] > 'µ'
-$keymanonly: + [LCTRL LALT K_EQUAL] > '~'
+$keymanonly: + [RALT K_7] > '{'
+$keymanonly: + [RALT K_8] > '['
+$keymanonly: + [RALT K_9] > ']'
+$keymanonly: + [RALT K_0] > '}'
+$keymanonly: + [RALT K_LBRKT] > '\'
+$keymanonly: + [RALT K_oE2] > '|'
+$keymanonly: + [RALT K_M] > 'µ'
+$keymanonly: + [RALT K_EQUAL] > '~'
 $keymanonly: + [K_Slash] > "#"
 $keymanonly: + [SHIFT K_Slash] > "’"
 
