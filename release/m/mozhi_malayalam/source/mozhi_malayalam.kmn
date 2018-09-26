@@ -19,6 +19,33 @@ store(consonants) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധന�
 store(vowels) "അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔ"
 store(vowelsigns) "ാിീുൂൃൄൢൣെേൈൊോൗ"
 
+c Consonants
+store(cDirectSmallKeys) 'kgjdpfbyvwzsh'
+store(cDirectSmallValues)  'കഗജദപഫബയവവശസഹ'
+store(cDirectCapsKeys) 'DSTF'
+store(cDirectCapsValues) 'ഡശടഫ'
+
+c produce vowels
+store(vDirectSmallValues) "അഎഇഒഉ"
+store(vDirectSmallKeys) "aeiou"
+store(vDirectCapsValues) "ആഏഈഓഋഊ"
+store(vDirectCapsKeys) "AEIORU"
+
+c Chills
+store(chills) 'ൺൻർൽൾൿ'
+store(chillSource) 'NnrlLc'
+store(chillBases) "ണനരലളക"
+
+c Treat anusvaram as chillu (Solve Issue: https://github.com/beniza/keyboards/issues/1)
+store(chills_anu) 'ൺൻർൽൾൿം'
+store(chill_anu_Bases) "ണനരലളകമ"       
+
+c always remove zwnj before a word final chars
+store(WordFinalChars) ' ?.!)]}"”’'
+
+c Store Universal KeyStroke stores
+store(Keystrokes) outs(chillSource) outs(vDirectSmallKeys) outs(vDirectCapsKeys) outs(WordFinalChars) outs(cDirectSmallKeys) outs(cDirectCapsKeys)
+
 c digits
 store(digits) '0123456789'
 store(malDigits) '൦൧൨൩൪൫൬൭൮൯'
@@ -46,10 +73,6 @@ any(vowels) + 'm' > index(vowels,1) 'ം'
 any(vowelsigns) + 'm' > index(vowelsigns,1) 'ം'  
 any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
 
-store(chills) 'ൺൻർൽൾൿ'
-store(chillSource) 'NnrlLc'
-store(chillBases) "ണനരലളക"
-
 c produce chill
 + any(chillSource) > index(chills,1)
 any(chills) U+200C + any(chillSource) > index(chills,1) index(chills,3)                
@@ -58,11 +81,8 @@ c legacy chillu support (Solve Issue: https://github.com/beniza/keyboards/issues
 any(chills) + '^' > index(chillBases, 1) '്' U+200D
 any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, but I'm adding this to cycle between atomic and sequence chillu
 
-c Treat anusvaram as chillu (Solve Issue: https://github.com/beniza/keyboards/issues/1)
 c chill breakers
-store(chills_anu) 'ൺൻർൽൾൿം'
-store(chill_anu_Bases) "ണനരലളകമ"       
-any(chills_anu) + '_' > index(chills_anu, 1) dk(4)
+any(chills_anu) + '_' > index(chills_anu, 1) '_' dk(4)
 any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
 any(chills_anu) + 'a' > index(chill_anu_Bases,1)
 any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
@@ -112,11 +132,6 @@ c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
 U+0D3C + '\' > U+0D3B
 any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
 
-c produce vowels
-store(vDirectSmallValues) "അഎഇഒഉ"
-store(vDirectSmallKeys) "aeiou"
-store(vDirectCapsValues) "ആഏഈഓഋഊ"
-store(vDirectCapsKeys) "AEIORU"
 
 c always remove none joiner before vowels
 U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
@@ -128,7 +143,6 @@ U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
 U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
 
 c always remove zwnj before a word final chars
-store(WordFinalChars) ' ?.!)]}"”’'
 U+200C + any(WordFinalChars) > index(WordFinalChars, 2)
 U+200C + "'" > "'"
 
@@ -191,12 +205,7 @@ c To solve issue-20 ചന്ദ്രക്കലയ്ക്ക് ശേഷ�
 '്' + '~' > '്'   
 
 c Consonants
-store(cDirectSmallKeys) 'kgjdpfbyvwzsh'
-store(cDirectSmallValues)  'കഗജദപഫബയവവശസഹ'
 + any(cDirectSmallKeys) > index(cDirectSmallValues,1) '്'
-
-store(cDirectCapsKeys) 'DSTF'
-store(cDirectCapsValues) 'ഡശടഫ'
 + any(cDirectCapsKeys) > index(cDirectCapsValues,1)  '്'
 
 c To cleanup any unwanted zwnj between Chillu and a consonant
@@ -270,7 +279,7 @@ any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 'ന്ന്' + 'j' > 'ഞ്ഞ്'
 'ന്ന്' + 'g' > 'ങ്ങ്'
 'റ്റ്' + 'h' > 'ത്'
-'റ്റ്' + 't' > 'ട്ട്'
+'റ്റ്' + 't' > 'ട്ട്' 
 'ൻ്റ്' + 'h' > 'ന്ത്'
 any(consonants) U+0D62 + 'l' > index(consonants,1) U+0D63
 
@@ -370,7 +379,7 @@ c digits
 'ൺ' + 'J' > 'ഞ്ഞ്'
 
 c '_' will output zwnj only after a chandrakkala
-'്' + '_' > '്' U+200C                             
+'്' + '_' > '്' U+200C    
 c prevent the typing of repeated zw(n)j
 U+200C + '_' > context                   
 U+200D + '_' > context
