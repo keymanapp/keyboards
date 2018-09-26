@@ -20,8 +20,8 @@ store(vowels) "അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔ"
 store(vowelsigns) "ാിീുൂൃൄൢൣെേൈൊോൗ"
 
 c Consonants
-store(cDirectSmallKeys) 'kgjdpfbyvwzsh'
-store(cDirectSmallValues)  'കഗജദപഫബയവവശസഹ'
+store(cDirectSmallKeys) 'kqQgjdpfbyvwzsh'
+store(cDirectSmallValues)  'കഖഖഗജദപഫബയവവശസഹ'
 store(cDirectCapsKeys) 'DSTF'
 store(cDirectCapsValues) 'ഡശടഫ'
 
@@ -149,6 +149,7 @@ U+200C + "'" > "'"
 'അ' + 'a' > 'ആ'
 'അ' + 'i' > 'ഐ'
 'അ' + 'u' > 'ഔ'
+'ഇ' + 'e' > 'ഈ'
 'ഇ' + 'i' > 'ഈ'
 'ഉ' + 'u' > 'ഊ'
 'ഊ' + 'o' > 'ഊഊ'
@@ -165,8 +166,17 @@ U+200C + "'" > "'"
 'ഋ' + 'O' > 'റോ'
 'ഋ' + '~' > 'റ്'
 'ഌ' + 'l' > 'ൡ'
+'എ' + 'a' > 'ഈ'
 'എ' + 'e' > 'ഈ'
+'എ' + 'i' > 'ഐ'
 'ഒ' + 'o' > 'ഊ'
+'ഒ' + 'u' > 'ഔ'  
+'െ' + 'a' > 'ീ'
+'െ' + 'e' > 'ീ'
+'ി' + 'e' > 'ീ'
+'ി' + 'i' > 'ൈ'
+'ൊ' + 'o' > 'ോ'
+'ൊ' + 'u' > 'ൗ'
 'ാ' + 'a' > 'ാാ'
 'ീ' + 'i' > 'ീീ'
 'ൂ' + 'u' > 'ൂൂ'
@@ -276,11 +286,6 @@ store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>~@.='
 dk(1) + any(escapable) > index(escapable, 2)     
 any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 
-'ന്ന്' + 'j' > 'ഞ്ഞ്'
-'ന്ന്' + 'g' > 'ങ്ങ്'
-'റ്റ്' + 'h' > 'ത്'
-'റ്റ്' + 't' > 'ട്ട്' 
-'ൻ്റ്' + 'h' > 'ന്ത്'
 any(consonants) U+0D62 + 'l' > index(consonants,1) U+0D63
 
 c The sequence 'nj' produces 'ഞ്ഞ്', iff it is typed after a vowel, vowelsign or a consonant   To Fix #39
@@ -365,9 +370,9 @@ c digits
 + 'Q' > 'ക്യു'
 + 'V' > 'വ്വ്'
 + 'W' > 'വ്വ്'
-+ 'X' > 'ക്ഷ്'
++ 'X' > 'ക്സ്'
 + 'Y' > 'യ്യ്'
-+ 'Z' > 'ശ്ശ്'
++ 'Z' > 'ഴ്'
 + 'q' > 'ക്ക്'
 + 't' > 'റ്റ്'
 + 'x' > 'ക്ഷ്'
@@ -382,6 +387,11 @@ c Error Correction in Conjuncts
 'റ്റ്' + 'T' > 'ട്ട്'
 'ൻ' + 'T' > 'ണ്ട്'
 'ൺ' + 't' > 'ണ്ട്'
+'ന്ന്' + 'j' > 'ഞ്ഞ്'
+'ന്ന്' + 'g' > 'ങ്ങ്'
+'റ്റ്' + 'h' > 'ത്'
+'റ്റ്' + 't' > 'ട്ട്' 
+'ൻ്റ്' + 'h' > 'ന്ത്'
 
 c '_' will output zwnj only after a chandrakkala
 '്' + '_' > '്' U+200C    
