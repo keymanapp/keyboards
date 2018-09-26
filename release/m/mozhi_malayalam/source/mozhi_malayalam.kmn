@@ -106,15 +106,18 @@ c Archaic Forms
 '.' + '\' >  '।'
 '..' + '\' > '॥'
 'അ' + '\' > 'ഽ'    
+'ഈ' + '\' > 'ൟ'
 'ീ' + '\' > 'ൟ'
 'ക്' + '\' > 'ൿ'
 'റ്റ്' + '\' > 'ഺ്'
 'റ്റ' + '\' > 'ഺ'
 'ൻ' + '\' > 'ഩ്'
 'ന' + '\' > 'ഩ'
-c TODO: n@erra	 ൻെറ	 CHILLU-N, SIGN E, RRA	 എൻെറ	 en@erra
-c TODO: n@errarra	 ൻെററ	 CHILLU-N, SIGN E, RRA, RRA	 എൻെററ	 en@errarra
-c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
+'ം' + '\' > 'ഀ'
+'ഀ' + '\' > 'ഁ'
+'ൻ' + '@' > context dk(at)
+dk(at) + 'e' > 'െ'
+'ൾ' + '@' > context '്' c dk(at)
 'നു' + '\' > '൹' c Malayalam Date Mark
 'ർ' + '\' > 'ൎ'
 + '$' > '₹' 
@@ -122,10 +125,10 @@ c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
 '₨' + '\' > '$' c Ben's additions
 'പറ' + '\' > U+0D4F
 'ൾ' + '\' > 'ഌ'
-'‌ള്' + '\' > 'ൢ'
+'്ള്' + '\' > 'ൢ'
 'ള്ള്' + '\' > 'ൡ'
 'ഌ' + '\' > 'ൡ' c Ben's additions
-'ള്ള്' + '\' > 'ൣ'
+'്ള്ള്' + '\' > 'ൣ'
 'ൢ' + '\' > 'ൣ' c Ben's additions
 'ൗ' + '\' > 'ൌ'
 '്' + '\' > U+0D3C
@@ -189,9 +192,6 @@ c Fix #50: Extra elongation for vowel signs
 'ോ' + 'O' > 'ൂൂ'
 'ൗ' + 'u' > 'ൗൗ'
 
-c archaic  signs
-'ഈ' + '\' > 'ൟ'
-'ം' + '\' > 'ഁ'
 
 c Stand-alone vowel signs after chandrakkala (Solve Issue: https://github.com/beniza/keyboards/issues/8)
 '്' + 'A' > 'ാ'
@@ -381,7 +381,7 @@ c digits
 + 't' > 'റ്റ്'
 + 'x' > 'ക്ഷ്'
 + '~' > '്'
-
+                  
 c Error Correction in Conjuncts
 'ട്ട്' + 'h' > 'ത്ത്'
 'ട്' + 'H' > 'ത്ത്'
