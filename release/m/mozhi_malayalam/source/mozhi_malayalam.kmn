@@ -132,7 +132,6 @@ c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
 U+0D3C + '\' > U+0D3B
 any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
 
-
 c always remove none joiner before vowels
 U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
 U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
@@ -146,13 +145,14 @@ c always remove zwnj before a word final chars
 U+200C + any(WordFinalChars) > index(WordFinalChars, 2)
 U+200C + "'" > "'"
 
+c Fix #50: Extra elongation for vowel signs
 'അ' + 'a' > 'ആ'
 'അ' + 'i' > 'ഐ'
 'അ' + 'u' > 'ഔ'
 'ഇ' + 'e' > 'ഈ'
 'ഇ' + 'i' > 'ഈ'
 'ഉ' + 'u' > 'ഊ'
-'ഊ' + 'o' > 'ഊഊ'
+'ഊ' + 'o' > 'ഊൗ'
 'ഋ' + 'R' > 'ൠ'
 'ഋ' + 'a' > 'റ'
 'ഋ' + 'A' > 'റാ'
@@ -171,19 +171,22 @@ U+200C + "'" > "'"
 'എ' + 'i' > 'ഐ'
 'ഒ' + 'o' > 'ഊ'
 'ഒ' + 'u' > 'ഔ'  
-'െ' + 'a' > 'ീ'
-'െ' + 'e' > 'ീ'
+'ാ' + 'a' > 'ാാ'
 'ി' + 'e' > 'ീ'
 'ി' + 'i' > 'ൈ'
-'ൊ' + 'o' > 'ോ'
-'ൊ' + 'u' > 'ൗ'
-'ാ' + 'a' > 'ാാ'
+'ീ' + 'e' > 'ീീ'
+'ീ' + 'E' > 'ീീ'
 'ീ' + 'i' > 'ീീ'
 'ൂ' + 'u' > 'ൂൂ'
 'ൂ' + 'o' > 'ൂൂ'
+'ൂ' + 'O' > 'ൂൂ'
 'ൄ' + 'R' > 'ൄൄ'
-'േ' + 'E' > 'േേ'
-'ോ' + 'O' > 'ോോ'
+'െ' + 'a' > 'ീ'
+'െ' + 'e' > 'ീ'
+'േ' + 'E' > 'ീീ'
+'ൊ' + 'o' > 'ോ'
+'ൊ' + 'u' > 'ൗ'
+'ോ' + 'O' > 'ൂൂ'
 'ൗ' + 'u' > 'ൗൗ'
 
 c archaic  signs
@@ -197,7 +200,8 @@ dk(2) + 'a' > 'ാ'
 dk(2) + 'i' > 'ൈ'
 dk(2) + 'u' > 'ൗ'
 '്' + 'i' > 'ി'
-'്' + 'I' > 'ീ'
+'്' + 'I' > 'ീ' 
+'ീ' + 'e' > 'ീീ'  
 'ി' + 'i' > 'ീ'
 '്' + 'u' > 'ു'
 '്' + 'U' > 'ൂ'
@@ -392,6 +396,19 @@ c Error Correction in Conjuncts
 'റ്റ്' + 'h' > 'ത്'
 'റ്റ്' + 't' > 'ട്ട്' 
 'ൻ്റ്' + 'h' > 'ന്ത്'
+
+c Issue 50: Extra elongation for vowel sign
+'ആ' + 'a' > 'ആാ'
+'ഈ' + 'i' > 'ഈൗ'
+'ഈ' + 'e' > 'ഈൗ'
+'ഊ' + 'o' > 'ഊൗ' 
+'ൗ' + 'i' > 'ൗൗ'
+'ഓ' + 'O' > 'ഓാ'
+'ാ' + 'O' > 'ാാ'
+'ൗ' + 'o' > 'ൗൗ'
+'ഊ' + 'u' > 'ഊൗ' 
+'ൗ' + 'u' > 'ൗൗ' 
+'ഔ' + 'u' > 'ഔൗ' 
 
 c '_' will output zwnj only after a chandrakkala
 '്' + '_' > '്' U+200C    
