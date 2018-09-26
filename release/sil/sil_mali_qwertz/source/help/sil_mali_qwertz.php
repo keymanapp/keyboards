@@ -159,8 +159,8 @@ END;
   <p><img src="sil_mali_qwertzU_.png" alt=" Clavier du Mali (Qwertz) Keyboard: Unshifted (default) state"></p>
     <h3>Shift state</h3>
     <p><img src="sil_mali_qwertzU_S.png" alt="Clavier du Mali (Qwertz) Keyboard: Shifted state"></p>
-    <h3>LCTRL LALT state</h3>
-    <p><img src="sil_mali_qwertzU_LCLA.png" alt="Clavier du Mali (Qwertz) Keyboard: LCTRL LALT state"></p>
+    <h3>RALT state</h3>
+    <p><img src="sil_mali_qwertzU_RA.png" alt="Clavier du Mali (Qwertz) Keyboard: RALT state"></p>
 
 
 <h2>Comment composer les caractères spéciaux (How to compose special characters)</h2>
