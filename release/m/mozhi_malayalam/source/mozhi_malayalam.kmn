@@ -419,7 +419,16 @@ c prevent the typing of repeated zw(n)j
 U+200C + '_' > context                   
 U+200D + '_' > context
 '_' + 'm' > 'മ്' c fix issue 43
- 
+
+c Fix issue 54, Legacy encoding of ൻ്റ 
+'ൻ്റ്' + '^' > 'ന്റ്'
+'ന്റ്' + '^' > 'ന്' U+200D 'റ്'
+'ൻ്റ' + '^' > 'ന്റ'
+'ന്റ' + '^' > 'ന്' U+200D 'റ'  
+'ൻ്റ' any(vowelSigns) + '^' > 'ന്റ' index(vowelSigns, 4)
+'ന്റ' any(vowelSigns) + '^' > 'ന്' U+200D 'റ' index(vowelSigns, 4)
+
+
 c em dash
 '---' + '\' > '—'
 c en dash
