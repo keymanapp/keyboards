@@ -215,18 +215,18 @@ END;
 </thead>
 <tbody>
 	<tr>
-		<td>aguï</td><td><span class='lang2'>◌́, ɛ́, á</span></td><td>"</td>
+		<td>aguï</td><td><span class='lang2'>◌́, ɛ́, á</span></td><td>'</td>
 	</tr>
 	<tr>
-		<td>grave</td><td><span class='lang2'>◌̀, M̀, ǝ̀</span></td><td>'</td>
+		<td>grave</td><td><span class='lang2'>◌̀, M̀, ǝ̀</span></td><td>(</td>
 
 	</tr>
 	<tr>
-		<td>macron</td><td><span class='lang2'>◌̄, ɔ̄, ā</span></td><td>è</td>
+		<td>macron</td><td><span class='lang2'>◌̄, ɔ̄, ā</span></td><td>_</td>
 
 	</tr>
 	<tr>
-		<td>circonflexe</td><td><span class='lang2'>◌̂, ŋ̂, î</span></td><td>_</td>
+		<td>circonflexe</td><td><span class='lang2'>◌̂, ŋ̂, î</span></td><td>ç</td>
 
 	</tr>
 	<tr>
@@ -234,7 +234,7 @@ END;
 
 	</tr>
 	<tr>
-		<td>caron</td><td><span class='lang2'>◌̌, š, ž</span></td><td>ç</td>
+		<td>caron</td><td><span class='lang2'>◌̌, š, ž</span></td><td>à</td>
 
 	</tr>
 	<tr>
@@ -245,10 +245,10 @@ END;
 		<td>point en bas</td><td><span class='lang2'>◌̣, ḍ, Ẓ</span></td><td>&</td>
 	</tr>
 	<tr>
-		<td><span class='lang2'>ɑ̆</span></td><td>b(</td><td>0251 0306</td>
+		<td><span class='lang2'>ɑ̆</span></td><td>b-</td><td>0251 0306</td>
 	</tr>
 	<tr>
-		<td><span class='lang2'>Ă</span></td><td>B(</td><td>0102</td>
+		<td><span class='lang2'>Ă</span></td><td>B-</td><td>0102</td>
 	</tr>
 
 </tbody>
@@ -330,10 +330,7 @@ END;
 			<td><span class='lang2'>№</span></td><td>,W</td><td>2116</td>
 		</tr>
 		<tr>
-			<td><span class='lang2'>Ø</span></td><td>!f</td><td>00D8</td>
-		</tr>
-		<tr>
-			<td><span class='lang2'>£</span></td><td>!l</td><td>00A3</td>
+			<td><span class='lang2'>Ø</span></td><td>,µ</td><td>00D8</td>
 		</tr>
 		<tr>
 			<td><span class='lang2'>k͡p</span></td><td>kpp</td><td>006B 0361 0070</td>
@@ -342,7 +339,7 @@ END;
 			<td><span class='lang2'>g͡b</span></td><td>gbb</td><td>0067 0361 0062</td>
 		</tr>
 		<tr>
-			<td><span class='lang2'>ŋ͡m</span></td><td>,nmm</td><td>014B 0361 006D</td>
+			<td><span class='lang2'>ŋ͡m</span></td><td>kkn</td><td>014B 0361 006D</td>
 		</tr>
 		<tr>
 			<td>no-break space</td><td>kks</td><td>00A0</td>  
