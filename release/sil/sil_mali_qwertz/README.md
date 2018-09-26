@@ -8,7 +8,7 @@ Version 3.3
 __DESCRIPTION__
 Unicode keyboard to type all special characters needed for the languages of Mali on a QWERTZ (German) keyboard. CAUTION: This keyboard is not designed to use with a French keyboard!
 
-Clavier pour taper toutes les caractères speciaux au Mali, soit sur le clavier QWERTZ (Deutsch). ATTENTION : Ce clavier n’est pas conçu pour écrire correctement sur le clavier d’un ordinateur français !
+Clavier Unicode pour taper sur un clavier QWERTZ (Deutsch) tous les caractères speciaux utilisés dans les langue du Mali. ATTENTION : Ce clavier n’est pas conçu pour écrire correctement sur le clavier d’un ordinateur français !
 
 Supported Platforms
 -------------------
