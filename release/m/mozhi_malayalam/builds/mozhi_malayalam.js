@@ -1020,7 +1020,6 @@ function Keyboard_mozhi_malayalam()
     else if(k.KKM(e, 0x4010, 0xBD)&&k.KA(0,k.KC(1,1,t),this.s_chills_anu)) {   // Line 85
       r=m=1;
       k.KIO(1,this.s_chills_anu,1,t);
-      k.KO(-1,t,"_");
       k.KDO(-1,t,0);
     }
     else if(k.KKM(e, 0x4010, 0xBD)&&k.KCM(1,t,"്",1)) {   // Line 382
