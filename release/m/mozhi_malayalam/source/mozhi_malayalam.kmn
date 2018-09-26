@@ -270,16 +270,6 @@ any(vowelsigns) 'ം' + 'r' > index(vowelsigns,1) 'മ്ര്'
 'സം' + 'r' > 'സംർ'
 'സം' + 'y' > 'സംയ്'
 
-c ['ൻൿh','nc','ഞ്ച്'],
-'ൻൿ' + 'h' > 'ഞ്ച്'
-c ['ൿh','c', 'ച്'],
-c ['ക്ക്h','cc', 'ച്ച്'],
-'ക്ക്' deadkey(doublec) + 'h' > 'ച്ച്'
-c ['ല്പ്p','lp','ൽപ്പ്'],
-'ല്പ്' + 'p' > 'ൽപ്പ്'
-c ['([ക-ഹ])്ല്l', 'L', '$2\u0d62'],
-c any(consonants) '്ല്' deadkey(capl) + 'l' > index(consonants,1) U+0D62
-
 c Bypassing transliteration (Solve Issue: https://github.com/beniza/keyboards/issues/2)
 + '=' > dk(1)
 dk(1) + '=' > '=' c to provide a way to keyin an actual '='                                                        
@@ -399,6 +389,9 @@ c Error Correction in Conjuncts
 'റ്റ്' + 'h' > 'ത്'
 'റ്റ്' + 't' > 'ട്ട്' 
 'ൻ്റ്' + 'h' > 'ന്ത്'
+'ൻൿ' + 'h' > 'ഞ്ച്'
+'ക്ക്' deadkey(doublec) + 'h' > 'ച്ച്'
+'ല്പ്' + 'p' > 'ൽപ്പ്'
 
 c Issue 50: Extra elongation for vowel sign
 'ആ' + 'a' > 'ആാ'
@@ -428,7 +421,7 @@ c Fix issue 54, Legacy encoding of ൻ്റ
 'ൻ്റ' any(vowelSigns) + '^' > 'ന്റ' index(vowelSigns, 4)
 'ന്റ' any(vowelSigns) + '^' > 'ന്' U+200D 'റ' index(vowelSigns, 4)
 
-c Fix issue 56, Backspace
+c Fix issue 56, Backspace  (the list below may not be comprehensive)
 "ന്ന്" + [K_BKSP] > 'ൻ'  
 "ന്ന" + [K_BKSP] > 'ൻ'  
 'ൻ്റ്' + [K_BKSP] > 'ൻ'
@@ -456,10 +449,24 @@ c Fix issue 56, Backspace
 'റ്റ്' + [K_BKSP] > nul
 'റ്റ' + [K_BKSP] > nul
 
-c em dash
+c Convenience Mapping and Emoji
 '---' + '\' > '—'
-c en dash
 '--' + '\' > '–'
 '\' + '-' > '−'
 '\' + '*' > '×'
 '\' + '/' > '÷'
+':' + ')' > '😊'
+':' + '(' > '☹'
+':' + 'D' > '😄'
+':' + 'x' > '😘'
+
+
+c Smart single quotes
++"'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Smart double quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
