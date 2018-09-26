@@ -272,7 +272,7 @@ dk(1) + '=' > '=' c to provide a way to keyin an actual '='
 
 c Experimental: the sign chars at the end are added for enabling special strings such as web addresses or email ids. 
 c Warning: treating = as an escapable can create inadvertent consequences as there may be cases to treat is as the dk. 
-store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>_~@.=' 
+store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>~@.=' 
 dk(1) + any(escapable) > index(escapable, 2)     
 any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 
@@ -383,7 +383,8 @@ c '_' will output zwnj only after a chandrakkala
 c prevent the typing of repeated zw(n)j
 U+200C + '_' > context                   
 U+200D + '_' > context
-
+'_' + 'm' > 'മ്' c fix issue 43
+ 
 c em dash
 '---' + '\' > '—'
 c en dash
