@@ -298,6 +298,9 @@ any(vowels) 'ൻ' + 'j' > index(vowels, 1) 'ഞ്ഞ്'
 any(vowelsigns) 'ൻ' + 'j' > index(vowelsigns, 1) 'ഞ്ഞ്'
 
 c ['([അ-ഊഌഎ-ഐഒ-ഹ])([ഽ-ൂെ-ൌൗ])+R', '', '$2$3റ്'],
+any(vowels) + 'R' > context 'ർ'
+any(vowelSigns) + 'R' > context 'ർ'
+
 any(consonants) 'ൃ' + 'a' > index(consonants,1) '്ര'
 any(consonants) 'ൃ' + 'A' > index(consonants,1) '്രാ'
 any(consonants) 'ൃ' + 'i' > index(consonants,1) '്രി'
