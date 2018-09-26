@@ -428,6 +428,33 @@ c Fix issue 54, Legacy encoding of ൻ്റ
 'ൻ്റ' any(vowelSigns) + '^' > 'ന്റ' index(vowelSigns, 4)
 'ന്റ' any(vowelSigns) + '^' > 'ന്' U+200D 'റ' index(vowelSigns, 4)
 
+c Fix issue 56, Backspace
+"ന്ന്" + [K_BKSP] > 'ൻ'  
+"ന്ന" + [K_BKSP] > 'ൻ'  
+'ൻ്റ്' + [K_BKSP] > 'ൻ'
+'ൻ്റ' + [K_BKSP] > 'ൻ'
+'ഞ്ച്' + [K_BKSP] > 'ൻ'
+'ഞ്ച' + [K_BKSP] > 'ൻ'
+'ന്മ്' + [K_BKSP] > 'ൻ'
+'ന്മ' + [K_BKSP] > 'ൻ'
+'ങ്ക്' + [K_BKSP] > 'ൻ'
+'ങ്ക' + [K_BKSP] > 'ൻ'
+'ണ്ട്' + [K_BKSP] > 'ൺ'
+'ണ്ട' + [K_BKSP] > 'ൺ'
+'ണ്ഡ്' + [K_BKSP] > 'ൺ'
+'ണ്ഡ' + [K_BKSP] > 'ൺ'
+'ണ്ഠ്' + [K_BKSP] > 'ൺ'
+'ണ്ഠ' + [K_BKSP] > 'ൺ'
+'മ്പ്'  + [K_BKSP] > 'ം'
+'മ്പ'  + [K_BKSP] > 'ം'
+'മ്മ്' + [K_BKSP] > 'ം'
+'മ്മ' + [K_BKSP] > 'ം'
+'ഞ്ഞ്' + [K_BKSP] > 'ൻ'
+'ഞ്ഞ' + [K_BKSP] > 'ൻ' 
+'ത്ത്' +  [K_BKSP] > 'ത്' 
+'ത്ത' +  [K_BKSP] > 'ത്' 
+'റ്റ്' + [K_BKSP] > nul
+'റ്റ' + [K_BKSP] > nul
 
 c em dash
 '---' + '\' > '—'
