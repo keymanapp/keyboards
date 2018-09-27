@@ -1,5 +1,6 @@
 ﻿store(&NAME) 'NLCI Malayalam WinScript'
 store(&COPYRIGHT) '© NLCI 2000-2018'
+store(&KEYBOARDVERSION) '2.0.0'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -24,7 +25,7 @@ store(cons) 'കഖഗഘങ' \
 store(consonants) outs(cons) 'റഴഩഺ'
 store(chillu_base) 'ണനരലളകയമഴ'
 store(chillu) 'ൺൻർൽൾൿൔൕൖ'
-store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
 + 'a' > 'അ'   
@@ -132,7 +133,8 @@ store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
 '=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
 any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 
-'=' dk(eq) + any(allKeys) > index(allKeys, 3)
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
 any(allKeys) + any(allKeys) > context index(allKeys, 2)
 
 + any(vowelKeys) > index(vowels, 1)
