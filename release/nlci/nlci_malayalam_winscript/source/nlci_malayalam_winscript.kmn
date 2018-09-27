@@ -73,7 +73,7 @@ c Adjust the behavior of X
 any(consonants) + 'X' > context '്' U+200C
 any(consonants) '്' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add Malayalam Chillu
@@ -103,6 +103,29 @@ c Support for Legacy nta
 'ന്റ' + '`' > 'ന്' U+200D 'റ'
 'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
 
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'
+
 c numbers
 store(numberKeys) '1234567890'
 store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
@@ -123,4 +146,10 @@ any(vowels) + 'x' > context '്'
 c vowels + chandrakala
 any(vowels) + 'x' > context '്' 
 'അ' + 'x' > context '്'
-any(vowelMatras) + 'x' > context '്'
+any(vowelMatras) + 'x' > context '്'      
+
+c Vowel sign elongation
+'ീ' + 'i' > context 'ീ' 
+'ൂ' + 'u' > context 'ൂ'
+'ാ' + 'a' > context 'ാ'
+
