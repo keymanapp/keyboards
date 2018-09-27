@@ -78,20 +78,24 @@ U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add Malayalam Chillu
 any(chillu_base) '്' + 'x' > index(chillu, 1)
-any(chillu) + 'x' > context beep 
+any(chillu) + 'x' > context beep   
+any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
+any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
+
 c Add praslesham
 + 'F' > 'ഽ'    
 
 c Add ^
 '്ല' + '^' > 'ൢ'
-'ൢ' + '^' > 'ൣ'                                              
+'ൢ' + '^' > 'ൣ'   
+                                           
 
 c Add =
 + '=' > '=' dk(eq)
 '=' dk(eq)+ 'r' > 'റ'
 '=' dk(eq)+ 'z' > 'ഴ'     
 
-c Add backtick ~
+c Add backtick `
 'ൻ്റ' + '`' > 'ന്റ'
 'ന്റ' + '`' > 'ന്' U+200D 'റ'
 'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
