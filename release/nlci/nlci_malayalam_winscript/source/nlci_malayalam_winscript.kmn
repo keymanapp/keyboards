@@ -89,7 +89,12 @@ c Add ^
 c Add =
 + '=' > '=' dk(eq)
 '=' dk(eq)+ 'r' > 'റ'
-'=' dk(eq)+ 'z' > 'ഴ'
+'=' dk(eq)+ 'z' > 'ഴ'     
+
+c Add backtick ~
+'ൻ്റ' + '`' > 'ന്റ'
+'ന്റ' + '`' > 'ന്' U+200D 'റ'
+'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
 
 c numbers
 store(numberKeys) '1234567890'
