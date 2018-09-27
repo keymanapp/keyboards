@@ -46,7 +46,7 @@ c Adjust the behavior of l
 'ള' + 'l' > 'ഴ'      
 
 c Adjust the behavior of n
-'ന' + 'n' > 'ഩ'     
+c 'ന' + 'n' > 'ഩ'     
 
 c Adjust the behavior of o
 'ഒ' + 'o' > 'ഓ'    
@@ -90,12 +90,15 @@ c Add ^
 'ൢ' + '^' > 'ൣ'   
                                            
 
-c Add =
+c = is a modifier key that alters the default behavior of some keystrokes
 + '=' > '=' dk(eq)
 '=' dk(eq)+ 'r' > 'റ'
 '=' dk(eq)+ 'z' > 'ഴ'     
 
-c Add backtick `
+c nta
+'ന്' + 't' > 'ൻ്റ'       
+
+c Support for Legacy nta
 'ൻ്റ' + '`' > 'ന്റ'
 'ന്റ' + '`' > 'ന്' U+200D 'റ'
 'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
@@ -108,9 +111,6 @@ any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 
 '=' dk(eq) + any(allKeys) > index(allKeys, 3)
 any(allKeys) + any(allKeys) > context index(allKeys, 2)
-
-c nta
-'ന്' + 't' > 'ൻ്റ'       
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
