@@ -43,109 +43,129 @@ function Keyboard_mozhi_malayalam()
   };
   this.g_main=function(t,e) {
     var k=KeymanWeb,r=0,m=0;
-    if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ന്ന്",4)) {   // Line 423
+    if(k.KKM(e, 0x4000, 0x08)&&k.KCM(5,t,"ന്‍റ്",5)) {   // Line 431
+      r=m=1;
+      k.KO(5,t,"ൻ");
+    }
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ന്ന്",4)) {   // Line 425
       r=m=1;
       k.KO(4,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ൻ്റ്",4)) {   // Line 425
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ൻ്റ്",4)) {   // Line 427
       r=m=1;
       k.KO(4,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ഞ്ച്",4)) {   // Line 427
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ന്റ്",4)) {   // Line 429
       r=m=1;
       k.KO(4,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ന്മ്",4)) {   // Line 429
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ന്‍റ",4)) {   // Line 432
       r=m=1;
       k.KO(4,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ങ്ക്",4)) {   // Line 431
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ഞ്ച്",4)) {   // Line 433
       r=m=1;
       k.KO(4,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ണ്ട്",4)) {   // Line 433
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ന്മ്",4)) {   // Line 435
+      r=m=1;
+      k.KO(4,t,"ൻ");
+    }
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ങ്ക്",4)) {   // Line 437
+      r=m=1;
+      k.KO(4,t,"ൻ");
+    }
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ണ്ട്",4)) {   // Line 439
       r=m=1;
       k.KO(4,t,"ൺ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ണ്ഡ്",4)) {   // Line 435
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ണ്ഡ്",4)) {   // Line 441
       r=m=1;
       k.KO(4,t,"ൺ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ണ്ഠ്",4)) {   // Line 437
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ണ്ഠ്",4)) {   // Line 443
       r=m=1;
       k.KO(4,t,"ൺ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"മ്പ്",4)) {   // Line 439
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"മ്പ്",4)) {   // Line 445
       r=m=1;
       k.KO(4,t,"ം");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"മ്മ്",4)) {   // Line 441
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"മ്മ്",4)) {   // Line 447
       r=m=1;
       k.KO(4,t,"ം");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ഞ്ഞ്",4)) {   // Line 443
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ഞ്ഞ്",4)) {   // Line 449
       r=m=1;
       k.KO(4,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ത്ത്",4)) {   // Line 445
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"ത്ത്",4)) {   // Line 451
       r=m=1;
       k.KO(4,t,"ത്");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"റ്റ്",4)) {   // Line 447
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(4,t,"റ്റ്",4)) {   // Line 455
       r=m=1;
       k.KO(4,t,"");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ന്ന",3)) {   // Line 424
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ന്ന",3)) {   // Line 426
       r=m=1;
       k.KO(3,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ൻ്റ",3)) {   // Line 426
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ൻ്റ",3)) {   // Line 428
       r=m=1;
       k.KO(3,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ഞ്ച",3)) {   // Line 428
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ന്റ",3)) {   // Line 430
       r=m=1;
       k.KO(3,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ന്മ",3)) {   // Line 430
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ഞ്ച",3)) {   // Line 434
       r=m=1;
       k.KO(3,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ങ്ക",3)) {   // Line 432
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ന്മ",3)) {   // Line 436
       r=m=1;
       k.KO(3,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ണ്ട",3)) {   // Line 434
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ങ്ക",3)) {   // Line 438
+      r=m=1;
+      k.KO(3,t,"ൻ");
+    }
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ണ്ട",3)) {   // Line 440
       r=m=1;
       k.KO(3,t,"ൺ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ണ്ഡ",3)) {   // Line 436
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ണ്ഡ",3)) {   // Line 442
       r=m=1;
       k.KO(3,t,"ൺ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ണ്ഠ",3)) {   // Line 438
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ണ്ഠ",3)) {   // Line 444
       r=m=1;
       k.KO(3,t,"ൺ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"മ്പ",3)) {   // Line 440
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"മ്പ",3)) {   // Line 446
       r=m=1;
       k.KO(3,t,"ം");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"മ്മ",3)) {   // Line 442
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"മ്മ",3)) {   // Line 448
       r=m=1;
       k.KO(3,t,"ം");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ഞ്ഞ",3)) {   // Line 444
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ഞ്ഞ",3)) {   // Line 450
       r=m=1;
       k.KO(3,t,"ൻ");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ത്ത",3)) {   // Line 446
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"ത്ത",3)) {   // Line 452
       r=m=1;
       k.KO(3,t,"ത്");
     }
-    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"റ്റ",3)) {   // Line 448
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(3,t,"റ്റ",3)) {   // Line 456
       r=m=1;
       k.KO(3,t,"");
+    }
+    else if(k.KKM(e, 0x4000, 0x08)&&k.KCM(1,t,"ൢ",1)) {   // Line 454
+      r=m=1;
+      k.KO(1,t,"്");
     }
     else if(k.KKM(e, 0x4000, 0x20)&&k.KCM(1,t,"‌",1)) {   // Line 148
       r=m=1;
@@ -159,15 +179,15 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(1,t,"\"");
     }
-    else if(k.KKM(e, 0x4010, 0xDE)&&k.KCM(1,t,"“",1)) {   // Line 469
+    else if(k.KKM(e, 0x4010, 0xDE)&&k.KCM(1,t,"“",1)) {   // Line 477
       r=m=1;
       k.KO(1,t,"”");
     }
-    else if(k.KKM(e, 0x4010, 0xDE)&&k.KCM(1,t,"”",1)) {   // Line 470
+    else if(k.KKM(e, 0x4010, 0xDE)&&k.KCM(1,t,"”",1)) {   // Line 478
       r=m=1;
       k.KO(1,t,"\"");
     }
-    else if(k.KKM(e, 0x4010, 0xDE)) {   // Line 468
+    else if(k.KKM(e, 0x4010, 0xDE)) {   // Line 476
       r=m=1;
       k.KO(0,t,"“");
     }
@@ -183,19 +203,19 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(1,t,"'");
     }
-    else if(k.KKM(e, 0x4000, 0xDE)&&k.KCM(1,t,"‘",1)) {   // Line 464
+    else if(k.KKM(e, 0x4000, 0xDE)&&k.KCM(1,t,"‘",1)) {   // Line 472
       r=m=1;
       k.KO(1,t,"’");
     }
-    else if(k.KKM(e, 0x4000, 0xDE)&&k.KCM(1,t,"’",1)) {   // Line 465
+    else if(k.KKM(e, 0x4000, 0xDE)&&k.KCM(1,t,"’",1)) {   // Line 473
       r=m=1;
       k.KO(1,t,"'");
     }
-    else if(k.KKM(e, 0x4000, 0xDE)) {   // Line 463
+    else if(k.KKM(e, 0x4000, 0xDE)) {   // Line 471
       r=m=1;
       k.KO(0,t,"‘");
     }
-    else if(k.KKM(e, 0x4010, 0x39)&&k.KCM(1,t,":",1)) {   // Line 457
+    else if(k.KKM(e, 0x4010, 0x39)&&k.KCM(1,t,":",1)) {   // Line 465
       r=m=1;
       k.KO(1,t,"☹");
     }
@@ -203,15 +223,15 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(1,t,")");
     }
-    else if(k.KKM(e, 0x4010, 0x30)&&k.KCM(1,t,":",1)) {   // Line 456
+    else if(k.KKM(e, 0x4010, 0x30)&&k.KCM(1,t,":",1)) {   // Line 464
       r=m=1;
       k.KO(1,t,"😊");
     }
-    else if(k.KKM(e, 0x4010, 0x38)&&k.KCM(1,t,"\\",1)) {   // Line 454
+    else if(k.KKM(e, 0x4010, 0x38)&&k.KCM(1,t,"\\",1)) {   // Line 462
       r=m=1;
       k.KO(1,t,"×");
     }
-    else if(k.KKM(e, 0x4000, 0xBD)&&k.KCM(1,t,"\\",1)) {   // Line 453
+    else if(k.KKM(e, 0x4000, 0xBD)&&k.KCM(1,t,"\\",1)) {   // Line 461
       r=m=1;
       k.KO(1,t,"−");
     }
@@ -228,7 +248,7 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,".");
     }
-    else if(k.KKM(e, 0x4000, 0xBF)&&k.KCM(1,t,"\\",1)) {   // Line 455
+    else if(k.KKM(e, 0x4000, 0xBF)&&k.KCM(1,t,"\\",1)) {   // Line 463
       r=m=1;
       k.KO(1,t,"÷");
     }
@@ -452,7 +472,7 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(1,t,"ണ്ഡ്");
     }
-    else if(k.KKM(e, 0x4010, 0x44)&&k.KCM(1,t,":",1)) {   // Line 458
+    else if(k.KKM(e, 0x4010, 0x44)&&k.KCM(1,t,":",1)) {   // Line 466
       r=m=1;
       k.KO(1,t,"😄");
     }
@@ -505,11 +525,11 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"E");
     }
-    else if(k.KKM(e, 0x4010, 0x45)&&k.KCM(1,t,"ീ",1)) {   // Line 397
+    else if(k.KKM(e, 0x4010, 0x45)&&k.KCM(1,t,"ീ",1)) {   // Line 399
       r=m=1;
       k.KO(1,t,"ീീ");
     }
-    else if(k.KKM(e, 0x4010, 0x45)&&k.KCM(1,t,"േ",1)) {   // Line 403
+    else if(k.KKM(e, 0x4010, 0x45)&&k.KCM(1,t,"േ",1)) {   // Line 405
       r=m=1;
       k.KO(1,t,"ീീ");
     }
@@ -761,19 +781,19 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"O");
     }
-    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ഓ",1)) {   // Line 389
+    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ഓ",1)) {   // Line 391
       r=m=1;
       k.KO(1,t,"ഓാ");
     }
-    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ാ",1)) {   // Line 390
+    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ാ",1)) {   // Line 392
       r=m=1;
       k.KO(1,t,"ാാ");
     }
-    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ൂ",1)) {   // Line 401
+    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ൂ",1)) {   // Line 403
       r=m=1;
       k.KO(1,t,"ൂൂ");
     }
-    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ോ",1)) {   // Line 404
+    else if(k.KKM(e, 0x4010, 0x4F)&&k.KCM(1,t,"ോ",1)) {   // Line 406
       r=m=1;
       k.KO(1,t,"ൂൂ");
     }
@@ -868,7 +888,7 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(-1,t,"ർ");
     }
-    else if(k.KKM(e, 0x4010, 0x52)&&k.KCM(1,t,"ൄ",1)) {   // Line 402
+    else if(k.KKM(e, 0x4010, 0x52)&&k.KCM(1,t,"ൄ",1)) {   // Line 404
       r=m=1;
       k.KO(1,t,"ൄൄ");
     }
@@ -1080,7 +1100,7 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(3,t,"ൢ");
     }
-    else if(k.KKM(e, 0x4000, 0xDC)&&k.KCM(3,t,"---",3)) {   // Line 451
+    else if(k.KKM(e, 0x4000, 0xDC)&&k.KCM(3,t,"---",3)) {   // Line 459
       r=m=1;
       k.KO(3,t,"—");
     }
@@ -1104,7 +1124,7 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(2,t,"൏");
     }
-    else if(k.KKM(e, 0x4000, 0xDC)&&k.KCM(2,t,"--",2)) {   // Line 452
+    else if(k.KKM(e, 0x4000, 0xDC)&&k.KCM(2,t,"--",2)) {   // Line 460
       r=m=1;
       k.KO(2,t,"–");
     }
@@ -1193,20 +1213,20 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(1,t,"]");
     }
-    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ൻ്റ്",4)) {   // Line 415
+    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ൻ്റ്",4)) {   // Line 417
       r=m=1;
       k.KO(4,t,"ന്റ്");
     }
-    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ന്റ്",4)) {   // Line 416
+    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ന്റ്",4)) {   // Line 418
       r=m=1;
       k.KO(4,t,"ന്‍റ്");
     }
-    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ൻ്റ",3)&&k.KA(3,k.KC(1,1,t),this.s_vowelsigns)) {   // Line 419
+    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ൻ്റ",3)&&k.KA(3,k.KC(1,1,t),this.s_vowelsigns)) {   // Line 421
       r=m=1;
       k.KO(4,t,"ന്റ");
       k.KIO(-1,this.s_vowelsigns,4,t);
     }
-    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ന്റ",3)&&k.KA(3,k.KC(1,1,t),this.s_vowelsigns)) {   // Line 420
+    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(4,t,"ന്റ",3)&&k.KA(3,k.KC(1,1,t),this.s_vowelsigns)) {   // Line 422
       r=m=1;
       k.KO(4,t,"ന്‍റ");
       k.KIO(-1,this.s_vowelsigns,4,t);
@@ -1215,11 +1235,11 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KIO(3,this.s_chills,1,t);
     }
-    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(3,t,"ൻ്റ",3)) {   // Line 417
+    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(3,t,"ൻ്റ",3)) {   // Line 419
       r=m=1;
       k.KO(3,t,"ന്റ");
     }
-    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(3,t,"ന്റ",3)) {   // Line 418
+    else if(k.KKM(e, 0x4010, 0x36)&&k.KCM(3,t,"ന്റ",3)) {   // Line 420
       r=m=1;
       k.KO(3,t,"ന്‍റ");
     }
@@ -1233,14 +1253,14 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_chills_anu,1,t);
       k.KDO(-1,t,0);
     }
-    else if(k.KKM(e, 0x4010, 0xBD)&&k.KCM(1,t,"്",1)) {   // Line 408
+    else if(k.KKM(e, 0x4010, 0xBD)&&k.KCM(1,t,"്",1)) {   // Line 410
       r=m=1;
       k.KO(1,t,"്‌");
     }
-    else if(k.KKM(e, 0x4010, 0xBD)&&k.KCM(1,t,"‌",1)) {   // Line 410
+    else if(k.KKM(e, 0x4010, 0xBD)&&k.KCM(1,t,"‌",1)) {   // Line 412
       r=m=1;
     }
-    else if(k.KKM(e, 0x4010, 0xBD)&&k.KCM(1,t,"‍",1)) {   // Line 411
+    else if(k.KKM(e, 0x4010, 0xBD)&&k.KCM(1,t,"‍",1)) {   // Line 413
       r=m=1;
     }
     else if(k.KKM(e, 0x4000, 0x41)&&k.KA(0,k.KC(2,1,t),this.s_consonants)&&k.KCM(1,t,"്",1)) {   // Line 222
@@ -1302,11 +1322,11 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"a");
     }
-    else if(k.KKM(e, 0x4000, 0x41)&&k.KCM(1,t,"ആ",1)) {   // Line 384
+    else if(k.KKM(e, 0x4000, 0x41)&&k.KCM(1,t,"ആ",1)) {   // Line 386
       r=m=1;
       k.KO(1,t,"ആാ");
     }
-    else if(k.KKM(e, 0x4000, 0x41)&&k.KCM(1,t,"ാ",1)) {   // Line 395
+    else if(k.KKM(e, 0x4000, 0x41)&&k.KCM(1,t,"ാ",1)) {   // Line 397
       r=m=1;
       k.KO(1,t,"ാാ");
     }
@@ -1436,11 +1456,11 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"e");
     }
-    else if(k.KKM(e, 0x4000, 0x45)&&k.KCM(1,t,"ഈ",1)) {   // Line 386
+    else if(k.KKM(e, 0x4000, 0x45)&&k.KCM(1,t,"ഈ",1)) {   // Line 388
       r=m=1;
       k.KO(1,t,"ഈൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x45)&&k.KCM(1,t,"ീ",1)) {   // Line 396
+    else if(k.KKM(e, 0x4000, 0x45)&&k.KCM(1,t,"ീ",1)) {   // Line 398
       r=m=1;
       k.KO(1,t,"ീീ");
     }
@@ -1486,7 +1506,11 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(4,t,"ച്ച്");
     }
-    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(4,t,"ക്ക്",4)&&k.KDM(0,t,5)) {   // Line 380
+    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(5,t,"ന്‍റ്",5)) {   // Line 380
+      r=m=1;
+      k.KO(5,t,"ന്ത്");
+    }
+    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(4,t,"ക്ക്",4)&&k.KDM(0,t,5)) {   // Line 382
       r=m=1;
       k.KO(4,t,"ച്ച്");
     }
@@ -1502,12 +1526,16 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(4,t,"ന്ത്");
     }
+    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(4,t,"ന്റ്",4)) {   // Line 379
+      r=m=1;
+      k.KO(4,t,"ന്ത്");
+    }
     else if(k.KKM(e, 0x4000, 0x48)&&k.KA(0,k.KC(2,1,t),this.s_thinConsonants)&&k.KCM(1,t,"്",1)) {   // Line 220
       r=m=1;
       k.KIO(2,this.s_thickConsonants,1,t);
       k.KO(-1,t,"്");
     }
-    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(2,t,"ൻൿ",2)) {   // Line 379
+    else if(k.KKM(e, 0x4000, 0x48)&&k.KCM(2,t,"ൻൿ",2)) {   // Line 381
       r=m=1;
       k.KO(2,t,"ഞ്ച്");
     }
@@ -1602,15 +1630,15 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"i");
     }
-    else if(k.KKM(e, 0x4000, 0x49)&&k.KCM(1,t,"ഈ",1)) {   // Line 385
+    else if(k.KKM(e, 0x4000, 0x49)&&k.KCM(1,t,"ഈ",1)) {   // Line 387
       r=m=1;
       k.KO(1,t,"ഈൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x49)&&k.KCM(1,t,"ൗ",1)) {   // Line 388
+    else if(k.KKM(e, 0x4000, 0x49)&&k.KCM(1,t,"ൗ",1)) {   // Line 390
       r=m=1;
       k.KO(1,t,"ൗൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x49)&&k.KCM(1,t,"ീ",1)) {   // Line 398
+    else if(k.KKM(e, 0x4000, 0x49)&&k.KCM(1,t,"ീ",1)) {   // Line 400
       r=m=1;
       k.KO(1,t,"ീീ");
     }
@@ -1774,7 +1802,7 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(1,t,"ല്മ്");
     }
-    else if(k.KKM(e, 0x4000, 0x4D)&&k.KCM(1,t,"_",1)) {   // Line 412
+    else if(k.KKM(e, 0x4000, 0x4D)&&k.KCM(1,t,"_",1)) {   // Line 414
       r=m=1;
       k.KO(1,t,"മ്");
     }
@@ -1870,15 +1898,15 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"o");
     }
-    else if(k.KKM(e, 0x4000, 0x4F)&&k.KCM(1,t,"ഊ",1)) {   // Line 387
+    else if(k.KKM(e, 0x4000, 0x4F)&&k.KCM(1,t,"ഊ",1)) {   // Line 389
       r=m=1;
       k.KO(1,t,"ഊൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x4F)&&k.KCM(1,t,"ൗ",1)) {   // Line 391
+    else if(k.KKM(e, 0x4000, 0x4F)&&k.KCM(1,t,"ൗ",1)) {   // Line 393
       r=m=1;
       k.KO(1,t,"ൗൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x4F)&&k.KCM(1,t,"ൂ",1)) {   // Line 400
+    else if(k.KKM(e, 0x4000, 0x4F)&&k.KCM(1,t,"ൂ",1)) {   // Line 402
       r=m=1;
       k.KO(1,t,"ൂൂ");
     }
@@ -1886,7 +1914,7 @@ function Keyboard_mozhi_malayalam()
       r=m=1;
       k.KO(0,t,"ഒ");
     }
-    else if(k.KKM(e, 0x4000, 0x50)&&k.KCM(4,t,"ല്പ്",4)) {   // Line 381
+    else if(k.KKM(e, 0x4000, 0x50)&&k.KCM(4,t,"ല്പ്",4)) {   // Line 383
       r=m=1;
       k.KO(4,t,"ൽപ്പ്");
     }
@@ -2101,23 +2129,23 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"u");
     }
-    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ഊ",1)) {   // Line 392
+    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ഊ",1)) {   // Line 394
       r=m=1;
       k.KO(1,t,"ഊൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ൗ",1)) {   // Line 393
+    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ൗ",1)) {   // Line 395
       r=m=1;
       k.KO(1,t,"ൗൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ഔ",1)) {   // Line 394
+    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ഔ",1)) {   // Line 396
       r=m=1;
       k.KO(1,t,"ഔൗ");
     }
-    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ൂ",1)) {   // Line 399
+    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ൂ",1)) {   // Line 401
       r=m=1;
       k.KO(1,t,"ൂൂ");
     }
-    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ൗ",1)) {   // Line 405
+    else if(k.KKM(e, 0x4000, 0x55)&&k.KCM(1,t,"ൗ",1)) {   // Line 407
       r=m=1;
       k.KO(1,t,"ൗൗ");
     }
@@ -2176,7 +2204,7 @@ function Keyboard_mozhi_malayalam()
       k.KIO(1,this.s_escapable,1,t);
       k.KO(-1,t,"x");
     }
-    else if(k.KKM(e, 0x4000, 0x58)&&k.KCM(1,t,":",1)) {   // Line 459
+    else if(k.KKM(e, 0x4000, 0x58)&&k.KCM(1,t,":",1)) {   // Line 467
       r=m=1;
       k.KO(1,t,"😘");
     }
