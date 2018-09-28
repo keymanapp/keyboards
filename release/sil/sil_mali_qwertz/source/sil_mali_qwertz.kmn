@@ -130,8 +130,16 @@ $keymanonly: + [RALT K_LBRKT] > '\'
 $keymanonly: + [RALT K_oE2] > '|'
 $keymanonly: + [RALT K_M] > 'µ'
 $keymanonly: + [RALT K_EQUAL] > '~'
-$keymanonly: + [K_Slash] > "#"
-$keymanonly: + [SHIFT K_Slash] > "’"
+
+$keymanweb: + [ALT K_HYPHEN] > "\"
+$keymanweb: + [ALT K_7] > '{'
+$keymanweb: + [ALT K_8] > '['
+$keymanweb: + [ALT K_9] > ']'
+$keymanweb: + [ALT K_0] > '}'
+$keymanweb: + [ALT K_LBRKT] > '\'
+$keymanweb: + [ALT K_RBRKT]   > '|'
+$keymanweb: + [ALT K_M] > 'µ'
+$keymanweb: + [ALT K_EQUAL]  > '~'
 
 + any(Qwerty) >  index(German,1)
 
