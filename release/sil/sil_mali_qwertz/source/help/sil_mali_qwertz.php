@@ -303,7 +303,7 @@ END;
 
 	</tr>
 	<tr>
-		<td>point en bas</td><td><span class='lang2'>◌̣, ḍ, Ẓ</span></td><td>#</td>
+		<td>point en bas</td><td><span class='lang2'>◌̣, ḍ, Ẓ</span></td><td>§</td>
 	</tr>
 
 </tbody>
