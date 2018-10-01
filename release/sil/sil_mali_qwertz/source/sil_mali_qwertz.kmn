@@ -1,14 +1,14 @@
-﻿store(&VERSION) '9.0'
+﻿store(&VERSION) '10.0'
 store(&BITMAP) 'sil_mali_qwertz.ico'
 store(&COPYRIGHT) '© 2004-2018 SIL Mali'
 store(&NAME) 'Clavier du Mali (Qwertz)'
 store(&HotKey ) "[K_F11]"
 c store(&mnemoniclayout) "0"
-store(&ETHNOLOGUECODE) 'bam bmq bzx bze boo boz dba dbu dtt dux ffm jow mwk myk spp khq ses snk taq kao fra fuc fuf'
+c store(&ETHNOLOGUECODE) 'bam bmq bzx bze boo boz dba dbu dtt dux ffm jow mwk myk spp khq ses snk taq kao fra fuc fuf'
 store(&MESSAGE) 'Pour toutes les langues au Mali, Afrique de l’Ouest, avec clavier allemand (Deutsch).'
 store(&VISUALKEYBOARD) 'sil_mali_qwertz.kvks'
 store(&TARGETS) 'windows macosx linux web'
-store(&KEYBOARDVERSION) '3.3'
+store(&KEYBOARDVERSION) '3.3.1'
 
 begin Unicode > use(Main)
 
@@ -121,25 +121,15 @@ group(Main) using keys
 
 c The lines below are Virtual keys that replace the Alt Gr sequences
 
-$keymanonly: + [RALT K_HYPHEN] > "\"
-$keymanonly: + [RALT K_7] > '{'
-$keymanonly: + [RALT K_8] > '['
-$keymanonly: + [RALT K_9] > ']'
-$keymanonly: + [RALT K_0] > '}'
-$keymanonly: + [RALT K_LBRKT] > '\'
-$keymanonly: + [RALT K_oE2] > '|'
-$keymanonly: + [RALT K_M] > 'µ'
-$keymanonly: + [RALT K_EQUAL] > '~'
-
-$keymanweb: + [ALT K_HYPHEN] > "\"
-$keymanweb: + [ALT K_7] > '{'
-$keymanweb: + [ALT K_8] > '['
-$keymanweb: + [ALT K_9] > ']'
-$keymanweb: + [ALT K_0] > '}'
-$keymanweb: + [ALT K_LBRKT] > '\'
-$keymanweb: + [ALT K_RBRKT]   > '|'
-$keymanweb: + [ALT K_M] > 'µ'
-$keymanweb: + [ALT K_EQUAL]  > '~'
++ [RALT K_HYPHEN] > "\"
++ [RALT K_7] > '{'
++ [RALT K_8] > '['
++ [RALT K_9] > ']'
++ [RALT K_0] > '}'
++ [RALT K_LBRKT] > '\'
++ [RALT K_oE2] > '|'
++ [RALT K_M] > 'µ'
++ [RALT K_EQUAL] > '~'
 
 + any(Qwerty) >  index(German,1)
 
