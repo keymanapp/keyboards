@@ -1,6 +1,10 @@
 Clavier du Mali (Qwertz) Keyboard Change History
 =======================
 
+3.3.1 (1-Oct-2018)
+------------------
+* Changed keyboard to be Keyman 10 compliant to support RALT keys in Keyman web
+
 3.3 (17-Sep-2018)
 ------------------
 * Moved to open github system
