@@ -829,6 +829,6 @@
         ]
       }
     ],
-    "fontsize": "1.4em"
+    "fontsize": "1.2em"
   }
 }
