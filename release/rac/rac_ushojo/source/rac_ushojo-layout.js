@@ -668,7 +668,7 @@
         ]
       }
     ],
-    "font": "Courier New",
-    "fontsize": ""
+    "font": "Scheherazade",
+    "fontsize": "1.2em"
   }
 }
