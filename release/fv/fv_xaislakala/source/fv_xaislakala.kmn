@@ -1,15 +1,147 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "has"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '9.1'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© 2008-2018 FirstVoices, SIL International. Portions © 2006 Chris Harvey.'
 store(&NAME) "X̄a'ʼislak̓ala"
-store(&VISUALKEYBOARD) 'fv_xaislakala.kvk'
+store(&VISUALKEYBOARD) 'fv_xaislakala.kvks'
 store(&BITMAP) 'fv_xaislakala.ico'
+store(&KMW_HELPFILE) 'fv_xaislakala.htm'
+store(&LAYOUTFILE) 'fv_xaislakala.keyman-touch-layout'
+
 begin Unicode > use(main)
 
 
 group(main) using keys 
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W_0] > 'W̓' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
+'p' + [SHIFT T_R] > 'p̓'
+'c' + [SHIFT T_R] > 'c̓'
+'q' + [SHIFT T_R] > 'q̓'
+'W' + [SHIFT T_R] > 'W̓'
+'K' + [SHIFT T_R] > 'K̓'
+'Y' + [SHIFT T_R] > 'Y̓'
+'t' + [SHIFT T_R] > 't̓'
+'L' + [SHIFT T_R] > 'L̓'
+'M' + [SHIFT T_R] > 'M̓'
+'w' + [SHIFT T_R] > 'w̓'
+'N' + [SHIFT T_R] > 'N̓'
+'k' + [SHIFT T_R] > 'k̓'
+'P' + [SHIFT T_R] > 'P̓'
+'y' + [SHIFT T_R] > 'y̓'
+'C' + [SHIFT T_R] > 'C̓'
+'Q' + [SHIFT T_R] > 'Q̓'
+'l' + [SHIFT T_R] > 'l̓'
+'m' + [SHIFT T_R] > 'm̓'
+'n' + [SHIFT T_R] > 'n̓'
+'T' + [SHIFT T_R] > 'T̓'
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_F] > 'ʼ' layer('default')
++ [SHIFT T_G_0] > 'Ḡ' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'ᵒ' layer('default')
++ [SHIFT T_K_0] > 'K̓' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L_0] > 'L̓' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X_0] > 'X̄' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
+'x' + [SHIFT T_V] > 'x̄'
+'g' + [SHIFT T_V] > 'ḡ'
+'X' + [SHIFT T_V] > 'X̄'
+'G' + [SHIFT T_V] > 'Ḡ'
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E] > 'e'
+'p' + [T_R] > 'p̓'
+'c' + [T_R] > 'c̓'
+'q' + [T_R] > 'q̓'
+'W' + [T_R] > 'W̓'
+'K' + [T_R] > 'K̓'
+'Y' + [T_R] > 'Y̓'
+'t' + [T_R] > 't̓'
+'L' + [T_R] > 'L̓'
+'M' + [T_R] > 'M̓'
+'w' + [T_R] > 'w̓'
+'N' + [T_R] > 'N̓'
+'k' + [T_R] > 'k̓'
+'P' + [T_R] > 'P̓'
+'y' + [T_R] > 'y̓'
+'C' + [T_R] > 'C̓'
+'Q' + [T_R] > 'Q̓'
+'l' + [T_R] > 'l̓'
+'m' + [T_R] > 'm̓'
+'n' + [T_R] > 'n̓'
+'T' + [T_R] > 'T̓'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_F] > 'ʼ'
++ [T_G_0] > 'ḡ'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'ᵒ'
++ [T_K_0] > 'k̓'
++ [T_K] > 'k'
++ [T_L_0] > 'l̓'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z] > 'z'
++ [T_X_0] > 'x̄'
++ [T_X] > 'x'
++ [T_C_0] > 'c̓'
++ [T_C] > 'c'
+'x' + [T_V] > 'x̄'
+'g' + [T_V] > 'ḡ'
+'X' + [T_V] > 'X̄'
+'G' + [T_V] > 'Ḡ'
++ [T_B] > 'b'
++ [T_N_0] > 'n̓'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
 
    
 c constraints
@@ -64,7 +196,7 @@ c language
 + [k_colon] > '°'   
                                              
 + [K_LBRKT] > U+0304    
-+ [K_rBRKT] > "'"
++ [K_RBRKT] > "'"
 + [k_slash] > U+0313 
 match > use(normalize)
 nomatch > use(x)
