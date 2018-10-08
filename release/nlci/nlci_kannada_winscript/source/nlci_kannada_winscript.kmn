@@ -6,8 +6,8 @@ begin Unicode > use(main)
 group(main) using keys
 
 store(vowelKeys) 'AiIuUReEYoOVMH'
-store(vowels) 'ആഇഈഉഊഋഎഏഐഒഓഔംഃ'
-store(vowelMatras) 'ാിീുൂൃെേൈൊോൗംഃ'
+store(vowels) 'ಆಇಈಉಊಋಎಏಐಒಓಔಂಃ'
+store(vowelMatras) 'ಾಿೀುೂೃೆೇೈೊೋೌಂಃ'
 store(consKeys) 'kKgGW' \
     	   	   	'cCjJw' \
     	   	   	'tTdDN' \
@@ -15,24 +15,24 @@ store(consKeys) 'kKgGW' \
     	   	   	'pPbBm' \
     	   	   	'yrlvzZshL'
 
-store(cons) 'കഖഗഘങ' \
-    	   	'ചഛജഝഞ' \
-    	   	'ടഠഡഢണ' \
-    	   	'തഥദധന' \
-    	   	'പഫബഭമ' \
-    	   	'യരലവശഷസഹള'
+store(cons) 'ಕಖಗಘಙ' \
+    	   	'ಚಛಜಝಞ' \
+    	   	'ಟಠಡಢಣ' \
+    	   	'ತಥದಧನ' \
+    	   	'ಪಫಬಭಮ' \
+    	   	'ಯರಲವಶಷಸಹಹಳ'
 
-store(consonants) outs(cons) 'റഴഩഺ'
-store(chillu_base) 'ണനരലളകയമഴ'
-store(chillu) 'ൺൻർൽൾൿൔൕൖ'
+store(consonants) outs(cons) 'ಱೞ'
+c store(chillu_base) 'ണനരലളകയമഴ'
+c store(chillu) 'ൺൻർൽൾൿൔൕൖ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
-+ 'a' > 'അ'   
-'അ' + 'a' > 'ആ'               
++ 'a' > 'ಅ'   
+'ಅ' + 'a' > 'ಆ'               
 any(consonants) + 'a' > context dk(a)
-dk(a) + 'a' > 'ാ' dk(aa)
-'ാ' dk(aa) + 'a' > 'അ'
+dk(a) + 'a' > 'ಾ' dk(aa)
+'ಾ' dk(aa) + 'a' > 'ಅ'
 
 c Adjust the behavior of 'e'
 'എ' + 'e' > 'ഏ'      
@@ -78,10 +78,10 @@ store(WordFinalPunct) ' ",;:.>!]})'
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add Malayalam Chillu
-any(chillu_base) '്' + 'x' > index(chillu, 1)
-any(chillu) + 'x' > context beep   
-any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
-any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
+c any(chillu_base) '്' + 'x' > index(chillu, 1)
+c any(chillu) + 'x' > context beep   
+c any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
+c any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
 
 c Add praslesham
 + 'F' > 'ഽ'    
