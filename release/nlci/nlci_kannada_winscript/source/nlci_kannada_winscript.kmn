@@ -127,17 +127,17 @@ any(allKeys) + any(allKeys) > context index(allKeys, 2)
 + any(consKeys) > index(cons, 1)
 any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
-c cons + chandrakala
+c cons + virama
 any (consonants) + 'x' > context '್'          
 any(vowels) + 'x' > context '್'   
 
-c vowels + chandrakala
+c vowels + virama
 any(vowels) + 'x' > context '್' 
 'ಅ' + 'x' > context '್'
 any(vowelMatras) + 'x' > context '್'      
 
 c Vowel sign elongation
-'ീ' + 'i' > context 'ീ' 
-'ൂ' + 'u' > context 'ൂ'
-'ാ' + 'a' > context 'ാ'
+'ಿ' + 'i' > context 'ೀ' 
+'ು' + 'u' > context 'ೂ'
+'ಾ' + 'a' > context 'ಾ'
 
