@@ -90,14 +90,6 @@ c = is a modifier key that alters the default behavior of some keystrokes
 '=' dk(eq)+ 'r' > 'ಱ'
 '=' dk(eq)+ 'z' > 'ೞ'     
 
-c nta
-'ന്' + 't' > 'ൻ്റ'       
-
-c Support for Legacy nta
-'ൻ്റ' + '`' > 'ന്റ'
-'ന്റ' + '`' > 'ന്' U+200D 'റ'
-'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
-
 c Restrict the ZW characters 
 U+200C + 'x' > context beep
 U+200D + 'X' > context beep
@@ -123,7 +115,7 @@ U+2014 + [K_BKSP] > '---'
 
 c numbers
 store(numberKeys) '1234567890'
-store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
+store(malayalamNumbers) '೧೨೩೪೫೬೭೮೯೦'
 '=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
 any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 
