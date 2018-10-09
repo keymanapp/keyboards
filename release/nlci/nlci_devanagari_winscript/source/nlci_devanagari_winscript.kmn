@@ -70,8 +70,8 @@ c Adjust the behavior of s
 'स' + 's'> 'ष'
 
 c Adjust the behavior of X
-any(consonants) + 'X' > context '്' U+200C
-any(consonants) '്' + 'X' > context U+200C
+any(consonants) + 'X' > context '्' U+200C
+any(consonants) '्' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
