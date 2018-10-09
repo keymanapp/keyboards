@@ -6,7 +6,7 @@ group(main) using keys
 
 store(vowelKeys) 'AiIuUReYoVMH'
 store(vowels) 'आइईउऊऋएऐओऔंः'
-store(vowelMatras) 'ാിീുൂൃെേൈൊോൗംഃ'
+store(vowelMatras) 'ािीुूृेैोौंः'
 store(consKeys) 'kKgGW' \
     	   	   	'cCjJw' \
     	   	   	'tTdDN' \
@@ -14,16 +14,16 @@ store(consKeys) 'kKgGW' \
     	   	   	'pPbBm' \
     	   	   	'yrlvzZshL'
 
-store(cons) 'കഖഗഘങ' \
-    	   	'ചഛജഝഞ' \
-    	   	'ടഠഡഢണ' \
-    	   	'തഥദധന' \
-    	   	'പഫബഭമ' \
-    	   	'യരലവശഷസഹള'
+store(cons) 'कखगघङ' \
+    	   	'चछजझञ' \
+    	   	'टठडढण' \
+    	   	'तथदधन' \
+    	   	'पफबभम' \
+    	   	'यरलवशषसहळ'
 
-store(consonants) outs(cons) 'റഴഩഺ'
-store(chillu_base) 'ണനരലളകയമഴ'
-store(chillu) 'ൺൻർൽൾൿൔൕൖ'
+store(consonants) outs(cons) 'ऱऴ'
+c store(chillu_base) 'ണനരലളകയമഴ'
+c store(chillu) 'ൺൻർൽൾൿൔൕൖ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
 
 c Adjust the behavior of 'a'
@@ -77,8 +77,8 @@ store(WordFinalPunct) ' ",.>!]})'
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add Malayalam Chillu
-any(chillu_base) '്' + 'x' > index(chillu, 1)
-any(chillu) + 'x' > context beep 
+c any(chillu_base) '്' + 'x' > index(chillu, 1)
+c any(chillu) + 'x' > context beep 
 c Add praslesham
 + 'F' > 'ഽ'    
 
