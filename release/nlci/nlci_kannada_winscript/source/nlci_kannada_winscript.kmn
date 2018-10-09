@@ -23,8 +23,6 @@ store(cons) 'ಕಖಗಘಙ' \
     	   	'ಯರಲವಶಷಸಹಹಳ'
 
 store(consonants) outs(cons) 'ಱೞ'
-c store(chillu_base) 'ണനരലളകയമഴ'
-c store(chillu) 'ൺൻർൽൾൿൔൕൖ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
@@ -73,18 +71,7 @@ any(consonants) '್' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
-
-c Add Malayalam Chillu
-c any(chillu_base) '്' + 'x' > index(chillu, 1)
-c any(chillu) + 'x' > context beep   
-c any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
-c any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
-
-c Add ^
-c '്ല' + '^' > 'ൢ'
-c 'ൢ' + '^' > 'ൣ'   
-                                           
-
+  
 c = is a modifier key that alters the default behavior of some keystrokes
 + '=' > '=' dk(eq)
 '=' dk(eq)+ 'r' > 'ಱ'
@@ -111,17 +98,20 @@ U+2013 + '`' > '--'
 U+2013 + [K_BKSP] > '--'
 '---' + '`' > U+2014
 U+2014 + '`' > '---'
-U+2014 + [K_BKSP] > '---'
+U+2014 + [K_BKSP] > '---'    
 
-c numbers
-store(numberKeys) '1234567890'
-store(malayalamNumbers) '೧೨೩೪೫೬೭೮೯೦'
-'=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
-any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
+c backtick for change into English
 
 + '`' > '`' dk(bt)
 '`' dk(bt) + any(allKeys) > index(allKeys, 3)
 any(allKeys) + any(allKeys) > context index(allKeys, 2)
+    
+c numbers
+store(numberKeys) '1234567890'
+store(KannadaNumbers) '೧೨೩೪೫೬೭೮೯೦'
+'`' dk(bt) + any(numberKeys) > index(KannadaNumbers, 3)
+any(KannadaNumbers) + any(numberKeys) > context index(KannadaNumbers, 2)
+
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
