@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'NLCI Devanagari WinScript Keyboard Help';
-  $pagetitle = 'NLCI Devanagari WinScript Keyboard Help';
+  $pagename = 'NLCI Malayalam WinScript Keyboard Help';
+  $pagetitle = 'NLCI Malayalam WinScript Keyboard Help';
   $pagestyle = <<<END
     samp {font-family: Annapurna; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
@@ -14,21 +14,21 @@ END;
   require_once('header.php');
 ?>
 
-    <p>This Keyboard mimic Devanagari WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
+    <p>This Keyboard mimic Malayalam WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
     <h2>Keyboard layout</h2>
 
     <h2>Default (unshifted)</h2>
-    <p><img src="sil_devanagari_phoneticU_.png" alt="Default (unshifted) state"/></p>
+    <p><img src="sil_Malayalam_phoneticU_.png" alt="Default (unshifted) state"/></p>
 
     <h2>Shift</h2>
-    <p><img src="sil_devanagari_phoneticU_S.png" alt="Shift state"/></p>
+    <p><img src="sil_Malayalam_phoneticU_S.png" alt="Shift state"/></p>
 
     <h2>AltGr (RAlt)</h2>
-    <p><img src="sil_devanagari_phoneticU_RA.png" alt="AltGr (RAlt) state"/></p>
+    <p><img src="sil_Malayalam_phoneticU_RA.png" alt="AltGr (RAlt) state"/></p>
 
     <h2>Shift + AltGr (RAlt)</h2>
-    <p><img src="sil_devanagari_phoneticU_SRA.png" alt="Shift + AltGr (RAlt) state"/></p>
+    <p><img src="sil_Malayalam_phoneticU_SRA.png" alt="Shift + AltGr (RAlt) state"/></p>
 
     <h2>Other input sequences</h2>
     <h3>Independent vowels</h3>
@@ -144,7 +144,7 @@ END;
 
     <h3>Numbers</h3>
 
-    <p>Press the number keys to type Arabic digits, There are two ways to type Devanagari digits:</p>
+    <p>Press the number keys to type Arabic digits, There are two ways to type Malayalam digits:</p>
         <ol>
             <li>Typing the Arabic digit and then typing backspace key, for example <kbd>9</kbd> <kbd>Back space</kbd> produces <samp>९</samp></li>
             <li>Typing the Shift + Right Alt version of the digit key, for instance <kbd>Shift + Right Alt + 9</kbd> produces <samp>९</samp></li>
@@ -153,16 +153,16 @@ END;
     <!-- 
         + any(Digits)           > index(Digits,1)
         + any(Digits) + [K_BKSP]  > index(DigitsU,1)
-        + [SHIFT RALT K_0]    > U+0966 c Devanagari digit 0
-        + [SHIFT RALT K_1]    > U+0967 c Devanagari digit 1
-        + [SHIFT RALT K_2]    > U+0968 c Devanagari digit 2
-        + [SHIFT RALT K_3]    > U+0969 c Devanagari digit 3
-        + [SHIFT RALT K_4]    > U+096A c Devanagari digit 4
-        + [SHIFT RALT K_5]    > U+096B c Devanagari digit 5
-        + [SHIFT RALT K_6]    > U+096C c Devanagari digit 6
-        + [SHIFT RALT K_7]    > U+096D c Devanagari digit 7
-        + [SHIFT RALT K_8]    > U+096E c Devanagari digit 8
-        + [SHIFT RALT K_9]    > U+096F c Devanagari digit 9
+        + [SHIFT RALT K_0]    > U+0966 c Malayalam digit 0
+        + [SHIFT RALT K_1]    > U+0967 c Malayalam digit 1
+        + [SHIFT RALT K_2]    > U+0968 c Malayalam digit 2
+        + [SHIFT RALT K_3]    > U+0969 c Malayalam digit 3
+        + [SHIFT RALT K_4]    > U+096A c Malayalam digit 4
+        + [SHIFT RALT K_5]    > U+096B c Malayalam digit 5
+        + [SHIFT RALT K_6]    > U+096C c Malayalam digit 6
+        + [SHIFT RALT K_7]    > U+096D c Malayalam digit 7
+        + [SHIFT RALT K_8]    > U+096E c Malayalam digit 8
+        + [SHIFT RALT K_9]    > U+096F c Malayalam digit 9
     -->
 
     <h3>Punctuation</h3>
