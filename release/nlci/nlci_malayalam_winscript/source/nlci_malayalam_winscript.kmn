@@ -125,17 +125,19 @@ U+2013 + '`' > '--'
 U+2013 + [K_BKSP] > '--'
 '---' + '`' > U+2014
 U+2014 + '`' > '---'
-U+2014 + [K_BKSP] > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
 
 c numbers
 store(numberKeys) '1234567890'
 store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
-'=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
+'`' dk(bt) + any(numberKeys) > index(malayalamNumbers, 3)
 any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 
-+ '`' > '`' dk(bt)
-'`' dk(bt) + any(allKeys) > index(allKeys, 3)
-any(allKeys) + any(allKeys) > context index(allKeys, 2)
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
