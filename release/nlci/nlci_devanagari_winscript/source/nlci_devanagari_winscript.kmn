@@ -22,8 +22,6 @@ store(cons) 'कखगघङ' \
     	   	'यरलवशषसहळ'
 
 store(consonants) outs(cons) 'ऱऴ'
-c store(chillu_base) 'ണനരലളകയമഴ'
-c store(chillu) 'ൺൻർൽൾൿൔൕൖ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
 
 c Adjust the behavior of 'a'
@@ -76,33 +74,25 @@ U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
-c Add Malayalam Chillu
-c any(chillu_base) '്' + 'x' > index(chillu, 1)
-c any(chillu) + 'x' > context beep 
-c Add praslesham
-+ 'F' > 'ഽ'    
-
-c Add ^
-'്ല' + '^' > 'ൢ'
-'ൢ' + '^' > 'ൣ'                                              
-
+                     
 c Add =
 + '=' > '=' dk(eq)
-'=' dk(eq)+ 'r' > 'റ'
-'=' dk(eq)+ 'z' > 'ഴ'
+'=' dk(eq)+ 'r' > 'ऱ'
+'=' dk(eq)+ 'z' > 'ऴ'    
+
+c backtick to change into english
+
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
 
 c numbers
 store(numberKeys) '1234567890'
-store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
-'=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
-any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
+store(devanagariNumbers) '१२३४५६७८९०'
+'`' dk(bt) + any(numberKeys) > index(devanagariNumbers, 3)
+any(devanagariNumbers) + any(numberKeys) > context index(devanagariNumbers, 2)
 
-'=' dk(eq) + any(allKeys) > index(allKeys, 3)
-any(allKeys) + any(allKeys) > context index(allKeys, 2)
-
-c nta
-'ന്' + 't' > 'ൻ്റ'       
-
+ 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
 any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
