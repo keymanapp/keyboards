@@ -71,16 +71,42 @@ c Add \
  + '\' > '\'
  '\' + 'n' > 'ன'
  '\' + 'L' > 'ழ'
- '\' + 'r' > 'ற'
+ '\' + 'r' > 'ற'  
+ 
+ c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
 
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick for change into English
+
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+    
 c numbers
 store(numberKeys) '1234567890'
-store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
-'=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
-any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
-
-'=' dk(eq) + any(allKeys) > index(allKeys, 3)
-any(allKeys) + any(allKeys) > context index(allKeys, 2)
+store(TamilNumbers) '೧೨೩೪೫೬೭೮೯೦'
+'`' dk(bt) + any(numberKeys) > index(TamilNumbers, 3)
+any(TamilNumbers) + any(numberKeys) > context index(TamilNumbers, 2)
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
