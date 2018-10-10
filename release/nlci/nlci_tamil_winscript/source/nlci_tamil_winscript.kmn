@@ -65,7 +65,13 @@ U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 c Add =
 + '=' > '=' dk(eq)
 '=' dk(eq)+ 'r' > 'ர'
-'=' dk(eq)+ 'z' > 'ழ'
+'=' dk(eq)+ 'z' > 'ழ'     
+
+c Add \
+ + '\' > '\'
+ '\' + 'n' > 'ன'
+ '\' + 'L' > 'ழ'
+ '\' + 'r' > 'ற'
 
 c numbers
 store(numberKeys) '1234567890'
@@ -75,9 +81,6 @@ any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 
 '=' dk(eq) + any(allKeys) > index(allKeys, 3)
 any(allKeys) + any(allKeys) > context index(allKeys, 2)
-
-c nta
-'ന്' + 't' > 'ൻ്റ'       
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
