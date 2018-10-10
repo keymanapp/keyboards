@@ -56,20 +56,16 @@ c Adjust the behavior of s
 'ஸ' + 's'> 'ஷ'
 
 c Adjust the behavior of X
-any(consonants) + 'X' > context '്' U+200C
-any(consonants) '്' + 'X' > context U+200C
+any(consonants) + 'X' > context '்' U+200C
+any(consonants) '்' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
-c Add ^
-'്ല' + '^' > 'ൢ'
-'ൢ' + '^' > 'ൣ'                                              
-
 c Add =
 + '=' > '=' dk(eq)
-'=' dk(eq)+ 'r' > 'റ'
-'=' dk(eq)+ 'z' > 'ഴ'
+'=' dk(eq)+ 'r' > 'ர'
+'=' dk(eq)+ 'z' > 'ழ'
 
 c numbers
 store(numberKeys) '1234567890'
