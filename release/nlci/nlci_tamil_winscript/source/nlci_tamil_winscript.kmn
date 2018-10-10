@@ -7,23 +7,13 @@ group(main) using keys
 store(vowelKeys) 'AiIuUeEYoOVH'
 store(vowels) 'ஆஇஈஉஊஎஏஐஒஓஔஃ'
 store(vowelMatras) 'ாிீுூெேைொோௌஃ'
-store(consKeys) 'kKgGW' \
-    	   	   	'cCjJw' \
-    	   	   	'tTdDN' \
-    	   	   	'qQ[{n' \
-    	   	   	'pPbBm' \
-    	   	   	'yrlvzZshL'
+store(consKeys) 'kWcjwtNqnpm' \
+    	   	 	'yrlvshL'
 
-store(cons) 'കഖഗഘങ' \
-    	   	'ചഛജഝഞ' \
-    	   	'ടഠഡഢണ' \
-    	   	'തഥദധന' \
-    	   	'പഫബഭമ' \
-    	   	'യരലവശഷസഹള'
+store(cons) 'கஙசஜஞடணதநபம' \
+    	    'யரலவஸஹள'
 
-store(consonants) outs(cons) 'റഴഩഺ'
-store(chillu_base) 'ണനരലളകയമഴ'
-store(chillu) 'ൺൻർൽൾൿൔൕൖ'
+store(consonants) outs(cons) 'றழ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
 
 c Adjust the behavior of 'a'
@@ -75,12 +65,6 @@ any(consonants) '്' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
-
-c Add Malayalam Chillu
-any(chillu_base) '്' + 'x' > index(chillu, 1)
-any(chillu) + 'x' > context beep 
-c Add praslesham
-+ 'F' > 'ഽ'    
 
 c Add ^
 '്ല' + '^' > 'ൢ'
