@@ -1,5 +1,6 @@
 ﻿store(&NAME) 'NLCI Malayalam WinScript'
 store(&COPYRIGHT) '© NLCI 2000-2018'
+store(&KEYBOARDVERSION) '2.0.0'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -24,7 +25,7 @@ store(cons) 'കഖഗഘങ' \
 store(consonants) outs(cons) 'റഴഩഺ'
 store(chillu_base) 'ണനരലളകയമഴ'
 store(chillu) 'ൺൻർൽൾൿൔൕൖ'
-store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
 + 'a' > 'അ'   
@@ -46,7 +47,7 @@ c Adjust the behavior of l
 'ള' + 'l' > 'ഴ'      
 
 c Adjust the behavior of n
-'ന' + 'n' > 'ഩ'     
+c 'ന' + 'n' > 'ഩ'     
 
 c Adjust the behavior of o
 'ഒ' + 'o' > 'ഓ'    
@@ -73,35 +74,70 @@ c Adjust the behavior of X
 any(consonants) + 'X' > context '്' U+200C
 any(consonants) '്' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add Malayalam Chillu
 any(chillu_base) '്' + 'x' > index(chillu, 1)
-any(chillu) + 'x' > context beep 
+any(chillu) + 'x' > context beep   
+any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
+any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
+
 c Add praslesham
 + 'F' > 'ഽ'    
 
 c Add ^
 '്ല' + '^' > 'ൢ'
-'ൢ' + '^' > 'ൣ'                                              
+'ൢ' + '^' > 'ൣ'   
+                                           
 
-c Add =
+c = is a modifier key that alters the default behavior of some keystrokes
 + '=' > '=' dk(eq)
 '=' dk(eq)+ 'r' > 'റ'
-'=' dk(eq)+ 'z' > 'ഴ'
+'=' dk(eq)+ 'z' > 'ഴ'     
+
+c nta
+'ന്' + 't' > 'ൻ്റ'       
+
+c Support for Legacy nta
+'ൻ്റ' + '`' > 'ന്റ'
+'ന്റ' + '`' > 'ന്' U+200D 'റ'
+'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
 
 c numbers
 store(numberKeys) '1234567890'
 store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
-'=' dk(eq) + any(numberKeys) > index(malayalamNumbers, 3)
+'`' dk(bt) + any(numberKeys) > index(malayalamNumbers, 3)
 any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 
-'=' dk(eq) + any(allKeys) > index(allKeys, 3)
-any(allKeys) + any(allKeys) > context index(allKeys, 2)
-
-c nta
-'ന്' + 't' > 'ൻ്റ'       
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
@@ -114,4 +150,10 @@ any(vowels) + 'x' > context '്'
 c vowels + chandrakala
 any(vowels) + 'x' > context '്' 
 'അ' + 'x' > context '്'
-any(vowelMatras) + 'x' > context '്'
+any(vowelMatras) + 'x' > context '്'      
+
+c Vowel sign elongation
+'ീ' + 'i' > context 'ീ' 
+'ൂ' + 'u' > context 'ൂ'
+'ാ' + 'a' > context 'ാ'
+
