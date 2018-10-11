@@ -53,8 +53,8 @@ c Adjust the behavior of s
 'સ' + 's'> 'ઁ'
 
 c Adjust the behavior of X
-any(cons) + 'X' > context '്' U+200C
-any(cons) '്' + 'X' > context U+200C
+any(cons) + 'X' > context '્' U+200C
+any(cons) '્' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
