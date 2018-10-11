@@ -22,17 +22,14 @@ store(cons) 'કખગઘઙ' \
     	   	'પફબભમ' \
     	   	'યરલવશષસહળ'
 
-store(consonants) outs(cons) 'റഴഩഺ'
-store(chillu_base) 'ണനരലളകയമഴ'
-store(chillu) 'ൺൻർൽൾൿൔൕൖ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
-+ 'a' > 'അ'   
-'അ' + 'a' > 'ആ'               
-any(consonants) + 'a' > context dk(a)
-dk(a) + 'a' > 'ാ' dk(aa)
-'ാ' dk(aa) + 'a' > 'അ'
++ 'a' > 'અ'   
+'અ' + 'a' > 'આ'               
+any(cons) + 'a' > context dk(a)
+dk(a) + 'a' > 'ા' dk(aa)
+'ા' dk(aa) + 'a' > 'અ'
 
 c Adjust the behavior of 'e'
 'എ' + 'e' > 'ഏ'      
@@ -71,25 +68,11 @@ c Adjust the behavior of s
 'സ' + 's'> 'ഷ'
 
 c Adjust the behavior of X
-any(consonants) + 'X' > context '്' U+200C
-any(consonants) '്' + 'X' > context U+200C
+any(cons) + 'X' > context '്' U+200C
+any(cons) '്' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
-
-c Add Malayalam Chillu
-any(chillu_base) '്' + 'x' > index(chillu, 1)
-any(chillu) + 'x' > context beep   
-any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
-any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
-
-c Add praslesham
-+ 'F' > 'ഽ'    
-
-c Add ^
-'്ല' + '^' > 'ൢ'
-'ൢ' + '^' > 'ൣ'   
-                                           
 
 c = is a modifier key that alters the default behavior of some keystrokes
 + '=' > '=' dk(eq)
@@ -141,10 +124,10 @@ any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
-any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+any(cons) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + chandrakala
-any (consonants) + 'x' > context '്'          
+any (cons) + 'x' > context '്'          
 any(vowels) + 'x' > context '്'   
 
 c vowels + chandrakala
