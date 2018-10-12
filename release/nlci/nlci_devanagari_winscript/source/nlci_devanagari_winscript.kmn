@@ -41,8 +41,12 @@ c Adjust the behavior of 'i'
 
 c Adjust the behavior of l
 'ल' + 'l' > 'ळ'
-'ळ' + 'l' > 'ऴ'      
+'ळ' + 'l' > 'ऴ'    
 
+c Adjust the bahavior of d
+'ड' + 'd' > 'ड़ '   
+'ढ' + 'D' > 'ढ़'
+ 
 c Adjust the behavior of n
 'न' + 'n' > 'ऩ'     
 
@@ -65,7 +69,10 @@ c Adjust the behavior of u
 'ु' + 'u' > 'ू' 
 
 c Adjust the behavior of s
-'स' + 's'> 'ष'
+'स' + 's'> 'ष'      
+
+c Add Nukta
++ 'f' > '़'
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '्' U+200C
@@ -109,9 +116,9 @@ any(allKeys) + any(allKeys) > context index(allKeys, 2)
     
 c numbers
 store(numberKeys) '1234567890'
-store(TamilNumbers) '१२३४५६७८९०'
-'`' dk(bt) + any(numberKeys) > index(TamilNumbers, 3)
-any(TamilNumbers) + any(numberKeys) > context index(TamilNumbers, 2)
+store(DevNumbers) '१२३४५६७८९०'
+'`' dk(bt) + any(numberKeys) > index(DevNumbers, 3)
+any(DevNumbers) + any(numberKeys) > context index(DevNumbers, 2)
 
 
 c backtick to change into english
