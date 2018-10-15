@@ -72,26 +72,10 @@ U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
-c Add praslesham
-+ 'F' > 'ഽ'    
-
-c Add ^
-'്ല' + '^' > 'ൢ'
-'ൢ' + '^' > 'ൣ'   
-                                           
-
 c = is a modifier key that alters the default behavior of some keystrokes
 + '=' > '=' dk(eq)
-'=' dk(eq)+ 'r' > 'റ'
-'=' dk(eq)+ 'z' > 'ഴ'     
-
-c nta
-'ന്' + 't' > 'ൻ്റ'       
-
-c Support for Legacy nta
-'ൻ്റ' + '`' > 'ന്റ'
-'ന്റ' + '`' > 'ന്' U+200D 'റ'
-'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
+'=' dk(eq)+ 'r' > 'ఱ'
+'=' dk(eq)+ 'z' > 'ఴ'     
 
 c Restrict the ZW characters 
 U+200C + 'x' > context beep
