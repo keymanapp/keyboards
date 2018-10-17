@@ -33,6 +33,10 @@ This keyboard is designed for the <b>Gwich'in</b> language of the Western Subarc
 
 <br/>
 
-<h2>Keyboard Layout</h2>
+<h2>Desktop Keyboard Layout</h2>
 <div id='osk'>
+</div>
+
+<h2>Tablet Keyboard Layout</h2>
+<div id='osk-tablet'>
 </div>
