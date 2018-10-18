@@ -1,15 +1,83 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "bcr"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.1"
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "bcr"
+store(&COPYRIGHT) "(c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) "Nedut’en-Witsuwit'en"
-store(&BITMAP) 'fv_natwits.bmp'
-store(&VISUALKEYBOARD) 'fv_natwits.kvk'
+store(&BITMAP) 'fv_natwits.ico'
+store(&VISUALKEYBOARD) 'fv_natwits.kvks'
 begin Unicode > use(main)
 
 
-group(main) using keys   
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_natwits.keyman-touch-layout"
+
++ [SHIFT T_Q_0] > '!' layer('default')
++ [SHIFT T_Q] > '?' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_R] > 'Ë' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_F] > 'Ï' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > '-' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X] > ',' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V] > '.' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q_0] > '!'
++ [T_Q] > '?'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_R] > 'ë'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_F] > 'ï'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > '-'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z] > 'z'
++ [T_X] > ','
++ [T_C] > 'c'
++ [T_V] > '.'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
 
 c original punctuation
 + [RALT K_PERIOD] > '>'
