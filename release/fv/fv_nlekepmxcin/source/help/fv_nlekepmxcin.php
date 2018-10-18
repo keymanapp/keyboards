@@ -41,8 +41,7 @@ This keyboard is designed for the <b>Nłeʔkepmxcin</b> language of the BC Inter
 									<li>double « Right-Alt+9 — » Right-Alt+0</li>
 								</ul>
 						<h2>Unicode Fonts</h2>
-						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p><h2>Downloads</h2>
-      <h3><a href="http://www.languagegeek.com/nwc/keymaps/NNW/Haida.pdf">Download a pdf of the Keylayout Map</a></h3>
+						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
     <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
     
 <h2>Notes on touch layout</h2>
