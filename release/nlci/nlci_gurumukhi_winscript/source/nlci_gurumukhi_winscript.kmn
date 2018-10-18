@@ -30,7 +30,10 @@ c Adjust the behavior of 'a'
 'ਅ' + 'a' > 'ਆ'               
 any(consonants) + 'a' > context dk(a)
 dk(a) + 'a' > 'ਾ' dk(aa)
-'ਾ' dk(aa) + 'a' > 'ਅ'
+'ਾ' dk(aa) + 'a' > 'ਅ'      
+
+c Adjust the behavior of g
+'ਗ' + 'g' > 'ਗ਼'
 
 c Adjust the behavior of 'i'
 'ਇ' + 'i' > 'ਈ' 
@@ -53,17 +56,16 @@ c Adjust the behavior of s
 'ਸ' + 's'> 'ਸ਼'
 
 c Adjust the behavior of X
-any(consonants) + 'X' > context '്' U+200C
-any(consonants) '്' + 'X' > context U+200C
+any(consonants) + 'X' > context '੍' U+200C
+any(consonants) '੍' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c = is a modifier key that alters the default behavior of some keystrokes
 + '=' > '=' dk(eq)
-'=' dk(eq)+ 'r' > 'റ'
-'=' dk(eq)+ 'z' > 'ഴ'     
-
+'=' dk(eq)+ 'r' > 'ੜ'
+   
 c Restrict the ZW characters 
 U+200C + 'x' > context beep
 U+200D + 'X' > context beep
