@@ -26,11 +26,11 @@ store(consonants) outs(cons) 'ੜ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'az'
 
 c Adjust the behavior of 'a'
-+ 'a' > 'അ'   
-'അ' + 'a' > 'ആ'               
++ 'a' > 'ਅ'   
+'ਅ' + 'a' > 'ਆ'               
 any(consonants) + 'a' > context dk(a)
-dk(a) + 'a' > 'ാ' dk(aa)
-'ാ' dk(aa) + 'a' > 'അ'
+dk(a) + 'a' > 'ਾ' dk(aa)
+'ਾ' dk(aa) + 'a' > 'ਅ'
 
 c Adjust the behavior of 'e'
 'എ' + 'e' > 'ഏ'      
