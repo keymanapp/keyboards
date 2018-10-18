@@ -1,6 +1,11 @@
 Mi'gmawi'simg / Mi'kmawi'simk Change History
 ============================
 
+9.1 (8 Oct 2018)
+-----------------
+* Merged Desktop, Web and mobile keyboards
+* Changed licensing
+
 9.0 (15 Dec 2015)
 -----------------
 
