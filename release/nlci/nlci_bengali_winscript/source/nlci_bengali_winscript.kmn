@@ -112,14 +112,14 @@ any(bengaliNumbers) + any(numberKeys) > context index(bengaliNumbers, 2)
 + any(consKeys) > index(cons, 1)
 any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
-c cons + chandrakala
-any (consonants) + 'x' > context '്'          
-any(vowels) + 'x' > context '്'   
+c cons + virama
+any (consonants) + 'x' > context '্'          
+any(vowels) + 'x' > context '্'   
 
-c vowels + chandrakala
-any(vowels) + 'x' > context '്' 
-'അ' + 'x' > context '്'
-any(vowelMatras) + 'x' > context '്'      
+c vowels + virama
+any(vowels) + 'x' > context '্' 
+'অ' + 'x' > context '্'
+any(vowelMatras) + 'x' > context '্'      
 
 c Vowel sign elongation
 'ീ' + 'i' > context 'ീ' 
