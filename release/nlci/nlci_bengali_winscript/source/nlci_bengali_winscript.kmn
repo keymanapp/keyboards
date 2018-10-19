@@ -22,7 +22,7 @@ store(cons) 'কখগঘঙ' \
     	   	'পফবভম' \
     	   	'যরলৱশষসহঌ'
 
-store(consonants) outs(cons) 'ড়'
+store(consonants) outs(cons) 'ড়ঢ়য়ৠৡ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
@@ -51,7 +51,13 @@ c Adjust the behavior of u
 'ু' + 'u' > 'ূ' 
 
 c Adjust the behavior of s
-'স' + 's'> 'শ'
+'স' + 's'> 'শ'                   
+
+c Adjust the behavior of d
+'ড' + 'd' > 'ড়'      
+
+c Adjust the behavior of D
+'ঢ' + 'D' > 'ঢ়'
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '্' U+200C
@@ -61,17 +67,8 @@ store(WordFinalPunct) ' ",;:.>!]})'
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c = is a modifier key that alters the default behavior of some keystrokes
-+ '=' > '=' dk(eq)
-'=' dk(eq)+ 'r' > 'റ'
-'=' dk(eq)+ 'z' > 'ഴ'     
-
-c nta
-'ന്' + 't' > 'ൻ്റ'       
-
-c Support for Legacy nta
-'ൻ്റ' + '`' > 'ന്റ'
-'ന്റ' + '`' > 'ന്' U+200D 'റ'
-'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
+  + '=' > '=' dk(eq)
+ '=' dk(eq)+ 'd' > 'ড়'
 
 c Restrict the ZW characters 
 U+200C + 'x' > context beep
