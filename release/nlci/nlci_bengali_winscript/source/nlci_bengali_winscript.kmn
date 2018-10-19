@@ -13,26 +13,24 @@ store(consKeys) 'kKgGW' \
     	   	   	'tTdDN' \
     	   	   	'qQ[{n' \
     	   	   	'pPbBm' \
-    	   	   	'yrlvzZshL'
+    	   	   	'yrlvzZsh'
 
-store(cons) 'കഖഗഘങ' \
-    	   	'ചഛജഝഞ' \
-    	   	'ടഠഡഢണ' \
-    	   	'തഥദധന' \
-    	   	'പഫബഭമ' \
-    	   	'യരലവശഷസഹള'
+store(cons) 'কখগঘঙ' \
+    	   	'চছজঝঞ' \
+    	   	'টঠডঢণ' \
+    	   	'তথদধন' \
+    	   	'পফবভম' \
+    	   	'যরলৱশষসহ'
 
-store(consonants) outs(cons) 'റഴഩഺ'
-store(chillu_base) 'ണനരലളകയമഴ'
-store(chillu) 'ൺൻർൽൾൿൔൕൖ'
+store(consonants) outs(cons) 'ড়'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
-+ 'a' > 'അ'   
-'അ' + 'a' > 'ആ'               
++ 'a' > 'অ'   
+'অ' + 'a' > 'আ'               
 any(consonants) + 'a' > context dk(a)
-dk(a) + 'a' > 'ാ' dk(aa)
-'ാ' dk(aa) + 'a' > 'അ'
+dk(a) + 'a' > 'া' dk(aa)
+'া' dk(aa) + 'a' > 'অ'
 
 c Adjust the behavior of 'e'
 'എ' + 'e' > 'ഏ'      
@@ -76,12 +74,6 @@ any(consonants) '്' + 'X' > context U+200C
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]})' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
-
-c Add Malayalam Chillu
-any(chillu_base) '്' + 'x' > index(chillu, 1)
-any(chillu) + 'x' > context beep   
-any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
-any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
 
 c Add praslesham
 + 'F' > 'ഽ'    
