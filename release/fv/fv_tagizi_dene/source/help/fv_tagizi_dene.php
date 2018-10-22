@@ -36,3 +36,7 @@ This keyboard is designed for the <b>Tāgizi Dene</b> language of the Western S
 <h2>Keyboard Layout</h2>
 <div id='osk'>
 </div>
+
+<h2>Keyboard Layout</h2>
+<div id='osk-tablet'>
+</div>
