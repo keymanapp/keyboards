@@ -10,4 +10,4 @@
 <p>This keyboard encodes the whole character and diacritics chart of the 
 International Phonetic Alphabet (IPA), designed to represent all the sounds of speech in any language.</p>
 
-<p>Keyboard help available in <a href="ipatotal-en.pdf">English</a> and <a href="ipatotal-pt.pdf">Portuguese</a></p>
+<p>Click here to download the <a href="ipatotal-en.pdf">English Version</a> or <a href="ipatotal-pt.pdf">Portuguese Version</a> in PDF format.</p>
