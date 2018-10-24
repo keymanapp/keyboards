@@ -13,4 +13,3 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
- * Web
