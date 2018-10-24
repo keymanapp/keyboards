@@ -1,33 +1,29 @@
-Cameroon QWERTY Keyboard Change History
+Change History
 =======================
 
-1.2.1 (4 Jun 2018)
-------------------
-* Added script information to language metadata in .kps
-
-1.2 (6 Apr 2018)
+6.0 (2018)
 -----------------
-* migrated to Github
-* PUA character U+F208 replaced with U+2C6D
+Rewrote Documentation, Enabled external Keyboards with Mobile Clients. Submitted to new Keyman Repository
 
-1.1 (30 Jun 2008)
+5.0 (Unreleased)
 -----------------
-* added Welcome and Usage pages
-* released for Keyman Desktop 7.0
+Optimization of Mobile Keyboards for Keyman 10.
+4.0 (2017)
+-----------------
+Added Mobile Keyboards
 
-1.0.3 (Mar 2007)
+3.0 (2010)
 -----------------
-* updated for Unicode 5.0
+Major Revision of Keyboards
 
-1.0.2 (Dec 2004)
+2.0 (2000)
 -----------------
-* removed spaces from before tone marks - replaced by modifier letters
-* removed all dead-key sequences
+Unicode (Created for MSKLC and Keyman)
 
-1.0.1 (Feb 2004)
+Cameroon Keyboard 1.0 (Date Unknown)
 -----------------
-* changed the Unicode values of tone markers and diacritics occurring by themselves in the text to use Modifier letters rather than combining diacritics
 
-1.0 (Apr 2003)
------------------
-* Adapted from July 2002 ANSI version (follows keying of version ANSI version 3.x)
+Non-Unicode
+
+* Created by Jenni Beadle
+
