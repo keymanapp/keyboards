@@ -34,5 +34,5 @@ This keyboard is designed for the <b>Łingít</b> language of the Western Subar
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk'>
+<div id='osk-tablet'>
 </div>
