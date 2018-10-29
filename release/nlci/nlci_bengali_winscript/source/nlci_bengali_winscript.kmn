@@ -1,0 +1,128 @@
+﻿store(&NAME) 'NLCI Bengali WinScript'
+store(&COPYRIGHT) '© NLCI 2000-2018'
+store(&KEYBOARDVERSION) '2.0.0'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowelKeys) 'AiIuUReYoVMH'
+store(vowels) 'আইঈউঊঋএঐওঔংঃ'
+store(vowelMatras) 'ািীুূৃেৈোৌংঃ'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
+
+store(cons) 'কখগঘঙ' \
+    	   	'চছজঝঞ' \
+    	   	'টঠডঢণ' \
+    	   	'তথদধন' \
+    	   	'পফবভম' \
+    	   	'যরলৱশষসহঌ'
+
+store(consonants) outs(cons) 'ড়ঢ়য়ৠৡ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
+
+c Adjust the behavior of 'a'
++ 'a' > 'অ'   
+'অ' + 'a' > 'আ'               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > 'া' dk(aa)
+'া' dk(aa) + 'a' > 'অ'
+
+c Adjust the behavior of 'i'
+'ই' + 'i' > 'ঈ' 
+'ি' + 'i' > 'ী'    
+
+c Adjust the behavior of L
+'ঌ' + 'L' > 'ৡ'
+
+c Adjust the behavior of R
+'ঋ' + 'R' > 'ৠ'   
+'ৃ' + 'R' > 'ৄ'     
+   
+c Adjust the behavior of S
++ 'S' > 'ঁ'  
+
+c Adjust the behavior of u
+'উ' + 'u' > 'ঊ'    
+'ু' + 'u' > 'ূ' 
+
+c Adjust the behavior of s
+'স' + 's'> 'শ'                   
+
+c Adjust the behavior of d
+'ড' + 'd' > 'ড়'      
+
+c Adjust the behavior of D
+'ঢ' + 'D' > 'ঢ়'    
+
+c Adjust the behavior of y
+'য' + 'y' > 'য়'
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '্' U+200C
+any(consonants) '্' + 'X' > context U+200C
+U+200C + 'X' > context beep
+store(WordFinalPunct) ' ",;:.>!]})' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+
+c = is a modifier key that alters the default behavior of some keystrokes
+  + '=' > '=' dk(eq)
+ '=' dk(eq)+ 'd' > 'ড়'
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+
+c numbers
+store(numberKeys) '1234567890'
+store(bengaliNumbers) '১২৩৪৫৬৭৮৯০'
+'`' dk(bt) + any(numberKeys) > index(bengaliNumbers, 3)
+any(bengaliNumbers) + any(numberKeys) > context index(bengaliNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+
+c cons + virama
+any (consonants) + 'x' > context '্'          
+any(vowels) + 'x' > context '্'   
+
+c vowels + virama
+any(vowels) + 'x' > context '্' 
+'অ' + 'x' > context '্'
+any(vowelMatras) + 'x' > context '্'      
+
+c Vowel sign elongation
+'ী' + 'i' > context 'ী' 
+'ূ' + 'u' > context 'ূ'
+'া' + 'a' > context 'া'
+
