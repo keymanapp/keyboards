@@ -5,7 +5,7 @@
 ?>
 
 
-<p class=MsoNormal><span style='font-family:"Charis SIL"'>The plus (+) means these keystrokes are typed successively. For example, "^ + a" means you would type "^" followed by "a" to get "â".<o:p></o:p></span></p>
+<p class=MsoNormal><span style='font-family:"Charis SIL"'>The plus (+) means these keystrokes are typed successively. For example, "^ + a" means you would type "^" followed by "a" to get "&#x000E2;".<o:p></o:p></span></p>
 <p class=MsoNormal><span style='font-family:"Charis SIL"'>As this keyboard is intended for transliteration, combining marks on consonants are not supported.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Charis SIL"'><o:p>&nbsp;</o:p></span></p>
@@ -38,8 +38,8 @@
    mso-border-top-alt:solid black .1pt;mso-border-top-alt:solid black .1pt;
    mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
    padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-   <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>â x#0628;<o:p></o:p></span></p>
-   <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>Ê<o:p></o:p></span></p>
+   <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>&#x000E2;<o:p></o:p></span></p>
+   <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>&#x000CA;<o:p></o:p></span></p>
    </td>
    <td width=134 valign=top style='width:100.5pt;border-top:none;border-left:
    solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
@@ -62,7 +62,7 @@
   solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
   mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
   padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>á<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>&#x000E1;<o:p></o:p></span></p>
   <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>&#347;<o:p></o:p></span></p>
   </td>
   <td width=134 valign=top style='width:100.5pt;border-top:none;border-left:
@@ -84,7 +84,7 @@
   solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
   mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
   padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>à<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>&#x000E2;<o:p></o:p></span></p>
   </td>
   <td width=134 valign=top style='width:100.5pt;border-top:none;border-left:
   solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
@@ -104,7 +104,7 @@
   solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
   mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
   padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>ã<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>&#x000E3;<o:p></o:p></span></p>
   </td>
   <td width=134 valign=top style='width:100.5pt;border-top:none;border-left:
   solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
@@ -124,7 +124,7 @@
   solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
   mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
   padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>ä<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Charis SIL"'>&#x000E4;<o:p></o:p></span></p>
   </td>
   <td width=134 valign=top style='width:100.5pt;border-top:none;border-left:
   solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
