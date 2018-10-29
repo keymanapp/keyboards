@@ -1,0 +1,130 @@
+﻿store(&NAME) 'NLCI Gurumukhi WinScript'
+store(&COPYRIGHT) '© NLCI 2000-2018'
+store(&KEYBOARDVERSION) '2.0.0'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowelKeys) 'AiIuUeYoVMH'
+store(vowels) 'ਆਇਈਉਊਏਐਓਔਂਃ'
+store(vowelMatras) 'ਾਿੀੁੂੇੈੋੌਂਃ'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzshL'
+
+store(cons) 'ਕਖਗਘਙ' \
+    	   	'ਚਛਜਝਞ' \
+    	   	'ਟਠਡਢਣ' \
+    	   	'ਤਥਦਧਨ' \
+    	   	'ਪਫਬਭਮ' \
+    	   	'ਯਰਲਵਸ਼ਸਹਲ਼'
+
+store(consonants) outs(cons) 'ੜ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'az'
+
+c Adjust the behavior of 'a'
++ 'a' > 'ਅ'   
+'ਅ' + 'a' > 'ਆ'               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > 'ਾ' dk(aa)
+'ਾ' dk(aa) + 'a' > 'ਅ'      
+
+c Adjust the behavior of g
+'ਗ' + 'g' > 'ਗ਼'
+
+c Adjust the behavior of 'i'
+'ਇ' + 'i' > 'ਈ' 
+'ਿ' + 'i' > 'ੀ'      
+
+c Adjust the behavior of j
+'ਜ' + 'j' > 'ਜ਼'
+
+c Adjust the behavior of K
+'ਖ' + 'K' > 'ਖ਼'
+
+c Adjust the behavior of l
+'ਲ' + 'l' > 'ਲ਼'
+    
+c Adjust the behavior of r
+ 'ਰ' + 'r' > 'ੜ'       
+ 
+c Adjust the behavior of S
++ 'S' > 'ੰ'  
+
+c Adjust the behavior of u
+'ਉ' + 'u' > 'ਊ'    
+'ੁ' + 'u' > 'ੂ' 
+
+c Adjust the behavior of s
+'ਸ' + 's'> 'ਸ਼'  
+
+c Adjust the behavior of f
++ 'f' > '਼'
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '੍' U+200C
+any(consonants) '੍' + 'X' > context U+200C
+U+200C + 'X' > context beep
+store(WordFinalPunct) ' ",;:.>!]})' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+
+c = is a modifier key that alters the default behavior of some keystrokes
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'ੜ'
+   
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+
+c numbers
+store(numberKeys) '1234567890'
+store(gurumukhiNumbers) '੧੨੩੪੫੬੭੮੯੦'
+'`' dk(bt) + any(numberKeys) > index(gurumukhiNumbers, 3)
+any(gurumukhiNumbers) + any(numberKeys) > context index(gurumukhiNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+
+c cons + virama
+any (consonants) + 'x' > context '੍'          
+any(vowels) + 'x' > context '੍'   
+
+c vowels + virama
+any(vowels) + 'x' > context '੍' 
+'ਅ' + 'x' > context '੍'
+any(vowelMatras) + 'x' > context '੍'      
+
+c Vowel sign elongation
+'ੀ' + 'i' > context 'ੀ' 
+'ੂ' + 'u' > context 'ੂ'
+'ਾ' + 'a' > context 'ਾ'
+
