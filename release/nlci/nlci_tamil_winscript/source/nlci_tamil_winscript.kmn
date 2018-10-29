@@ -6,14 +6,23 @@ group(main) using keys
 
 store(vowelKeys) 'AiIuUeEYoOVH'
 store(vowels) 'ஆஇஈஉஊஎஏஐஒஓஔஃ'
-store(vowelMatras) 'ாிீுூெேைொோௌஃ'
-store(consKeys) 'kWcjwtNqnpm' \
-    	   	 	'yrlvzZshL'
+store(vowelMatras) 'ாிீுூெேைொோௌஃ'   
 
-store(cons) 'கஙசஜஞடணதநபம' \
-    	    'யரலவஷஷஸஹள'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQn' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
 
-store(consonants) outs(cons) 'றழ'
+store(cons) 'ககககங' \
+    	   	'சசஜஜஞ' \
+    	   	'டடடடண' \
+    	   	'ததந' \
+    	   	'பபபபம' \
+    	   	'யரலவஷஷஸஹள'
+
+store(consonants) outs(cons) 'றழன'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
 
 c Adjust the behavior of 'a'
@@ -47,6 +56,10 @@ c Adjust the behavior of r
  
 c Adjust the behavior of S
 + 'S' > nul  
+
+c Adjust the behavior of F
+ + 'F' > nul
+ + 'f' > nul
 
 c Adjust the behavior of u
 'உ' + 'u' > 'ஊ'    
