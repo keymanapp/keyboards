@@ -26,5 +26,5 @@ Supported Platforms
 Todo
 ----
 
- * This keyboard needs canonical ordering to be changed and normalized (U+0323)
+ * This keyboard needs canonical ordering to be changed and normalized (U+0323 and U+0328)
  
