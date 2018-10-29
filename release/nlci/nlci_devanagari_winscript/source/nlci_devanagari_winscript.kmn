@@ -1,213 +1,106 @@
-﻿c    Devanagri Keyman file (Romanized Layout)
-c    version 2,  28 November 95
-c    version 5,  15-May 02 (converted from Annapurna to Unicode Devanagri)
+﻿store(&NAME) 'NLCI Devanagari WinScript'
+store(&COPYRIGHT) '© NLCI 2000-2018'
+begin Unicode > use(main)
 
-store(&VERSION) "10.0"  	
-store(&NAME) "Devanagari Phonetic (SIL)"
-store(&BITMAP) 'sil_devanagari_phonetic.ico'
-store(&COPYRIGHT) '2002-2018 SIL International'
+group(main) using keys
 
+store(vowelKeys) 'AiIuUReEYoOVMH'
+store(vowels) 'आइईउऊऋएऐऐओऔऔंः'
+store(vowelMatras) 'ािीुूृेैैोौौंः'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
 
-c see http://www.unicode.org/charts/PDF/U0900.pdf for the unicode values.
-c ********************************************************************
-store(&TARGETS) 'windows macosx linux web'
-store(&VISUALKEYBOARD) 'sil_devanagari_phonetic.kvks'
-store(&KEYBOARDVERSION) '1.3'
+store(cons) 'कखगघङ' \
+    	   	'चछजझञ' \
+    	   	'टठडढण' \
+    	   	'तथदधन' \
+    	   	'पफबभम' \
+    	   	'यरलवशषसहळ'
 
-begin UNICODE > use(mainU)
+store(consonants) outs(cons) 'ऱऴ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
 
+c Adjust the behavior of 'a'
++ 'a' > 'अ'   
+'अ' + 'a' > 'आ'               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > 'ा' dk(aa)
+'ा' dk(aa) + 'a' > 'अ'
+
+c Adjust the behavior of 'e'
+'ए' + 'e' > 'ऐ'      
+'े' + 'e' > 'ै'  
+
+c Adjust the behavior of 'i'
+'इ' + 'i' > 'ई' 
+'ि' + 'i' > 'ी'    
+
+c Adjust the behavior of l
+'ल' + 'l' > 'ळ'
+'ळ' + 'l' > 'ऴ'      
+
+c Adjust the behavior of n
+'न' + 'n' > 'ऩ'     
+
+c Adjust the behavior of o
+'ओ' + 'o' > 'औ'    
+'ो' + 'o' > 'ौ'   
+
+c Adjust the behavior of r
+ 'र' + 'r' > 'ऱ'       
+ 
+c Adjust the behavior of R
+'ऋ' + 'R' > 'ॠ'   
+'ृ' + 'R' > 'ॄ'     
+   
+c Adjust the behavior of S
++ 'S' > nul  
+
+c Adjust the behavior of u
+'उ' + 'u' > 'ऊ'    
+'ु' + 'u' > 'ू' 
+
+c Adjust the behavior of s
+'स' + 's'> 'ष'
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '्' U+200C
+any(consonants) '्' + 'X' > context U+200C
+U+200C + 'X' > context beep
+store(WordFinalPunct) ' ",.>!]})' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+
+                     
+c Add =
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'ऱ'
+'=' dk(eq)+ 'z' > 'ऴ'    
+
+c backtick to change into english
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
 
 c numbers
-store(Digits)     "0"    "1"    "2"    "3"    "4"    "5"    "6" \
-                  "7"    "8"    "9"
-store(DigitsU)    U+0966 U+0967 U+0968 U+0969 U+096A U+096B U+096C \
-                  U+096D U+096E U+096F
+store(numberKeys) '1234567890'
+store(devanagariNumbers) '१२३४५६७८९०'
+'`' dk(bt) + any(numberKeys) > index(devanagariNumbers, 3)
+any(devanagariNumbers) + any(numberKeys) > context index(devanagariNumbers, 2)
 
-c consonants (so we can reposition the reph)
-store(Consonants)    "k"    "K"    "g"    "G"    "M"    \
-                     "c"    "C"    "j"    "J"    "V"    "q"     \
-                     "Q"    "z"    "Z"    "N"    "t"    "T"     "d"    "D"    "n"    \
-                     "p"    "P"    "b"    "B"    "m"    "y"     \
-                     "r"    "l"    "L"    "v"     "x"    "S"    "s"    "h" \
-                     "+"    "="
+ 
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
-store(ConsonantsU)   U+0915 U+0916 U+0917 U+0918 U+0919 \
-                     U+091A U+091B U+091C U+091D U+091E U+091F  \
-                     U+0920 U+0921 U+0922 U+0923 U+0924 U+0925 U+0926 U+0927 U+0928 \
-                     U+092A U+092B U+092C U+092D U+092E U+092F  \
-                     U+0930 U+0932 U+0933 U+0935 U+0936 U+0937 U+0938 U+0939 \
-                     U+0960 U+0961
+c cons + virama
+any (consonants) + 'x' > context '्'          
+any(vowels) + 'x' > context '्'   
 
-c                    aakar  ikar   iikar  ukar   uukar  ekar   aikar  okar   aukar
-store(MatraVsU)      U+093E U+093f U+0940 U+0941 U+0942 U+0947 U+0948 U+094b U+094c
-
-store(RomanCs)       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" \
-                     "~`;:" c plus some punctuation used in allomorph constraints (the others come thru anyway)
-
-c                       qa      khha    ggha    za      dddha   rha     fa      yya     llla    rra
-store(LowDotWallahs)    U+0915  U+0916  U+0917  U+091c  U+0921  U+0922  U+092b  U+092f  U+0933  U+0930 U+0928
-store(LowDotOutputs)    U+0958  U+0959  U+095a  U+095b  U+095c  U+095d  U+095e  U+095f  U+0934  U+0931 U+0929
-
-c ******************** MAIN Group starts here **********************
-
-group(mainU) using keys 	c This is where you define the basic keyboard layout
-
-+ "a" 	 > U+093E c aakar (matra)
-+ "A" 	 > U+093E c aakar (matra)
-+ "b" 	 > U+092c c ba
-+ "B" 	 > U+092d c bHa
-+ "c" 	 > U+091a c ca
-+ "C" 	 > U+091b c cHa
-+ "d" 	 > U+0926 c da
-+ "D" 	 > U+0927 c dHa
-+ "e" 	 > U+0947 c ekar
-+ "E" 	 > U+0948 c aikar
-+ "f" 	 > U+091f c Ta
-+ "F" 	 > U+0920 c THA
-+ "g" 	 > U+0917 c ga
-+ "G" 	 > U+0918 c gHa
-+ "h" 	 > U+0939 c ha
-+ "H" 	 > U+0950 c OM
-+ "i" 	 > U+093f c ikar
-+ "I" 	 > U+0940 c iikar
-+ "j"    > U+091c c ja
-+ "J"    > U+091d c jHa
-+ "k"    > U+0915 c ka
-+ "K"    > U+0916 c kHa
-+ "l"    > U+0932 c la
-+ "L" 	 > U+094D U+0930   c forced lower-r
-+ "m"    > U+092e c ma
-+ "M"    > U+0919 c nG
-+ "n"    > U+0928 c na
-+ "N"    > U+0923 c Na
-+ "o"    > U+094b c okar
-+ "O"    > U+094c c aukar
-+ "p"    > U+092a c pa
-+ "P"    > U+092b c pHa
-
-+ "q"       > dk(1)     c followed by vowel will produce syllabic form
-dk(1) + "a" > U+0905    c syllabic A
-
-U+0905 + "a"    > U+0906    c just as with DevRom, a syllabic A followed by 'a' gives syllabic AA
-
-dk(1) + "A" > U+0906    c syllabic AA
-dk(1) + "e" > U+090F    c syllabic E
-dk(1) + "E" > U+0910    c syllabic AI
-dk(1) + "i" > U+0907    c syllabic I
-dk(1) + "I" > U+0908    c syllabic II
-dk(1) + "o" > U+0913    c syllabic O
-dk(1) + "O" > U+0914    c syllabic AU
-dk(1) + "u" > U+0909    c syllabic U
-dk(1) + "U" > U+090a    c syllabic UU
-dk(1) + [RALT K_L] > U+090b  c syllabic RI
-dk(1) U+0930 U+094d + "i" > U+090b  c syllabic RI keyed as "qr;i"
-
-+ "Q"     > dk(2)   c followed by a roman char gives the roman forms!
-
-c if we get the cap Q, then spit out roman text.
-dk(2) + any(RomanCs) > index(RomanCs,2)
-
-c if the last thing was roman, then continue at least until the end of the word
-any(RomanCs) + any(RomanCs) > context index(RomanCs,2)
-
-+ "r"     > U+0930          c ra
-
-any(ConsonantsU) + "R"                  > U+0930 U+094D index(ConsonantsU,1)                    c reph
-any(ConsonantsU) any(MatraVsU) + "R"    > U+0930 U+094D index(ConsonantsU,1) index(MatraVsU,2)  c reph
-any(ConsonantsU) U+093c any(MatraVsU) + "R" > U+0930 U+094D index(ConsonantsU,1) U+093c index(MatraVsU,3)  c reph
-
-+ "s"     > U+0938    c sa
-+ "S"     > U+0937    c SHA
-+ "t"     > U+0924    c ta
-+ "T"     > U+0925    c tHa
-
-+ "u"     > U+0941    c regular ukar
-+ "U"     > U+0942    c uukar
-+ "v"     > U+0921    c Da
-+ "V"     > U+0922    c DHA
-+ "w"     > U+0935    c wa
-+ "W"     > U+0926 U+094d U+0935    c dwa
-+ "x"     > U+094d U+200D  c halant (and the zero-width joiner to get half-character)
-
-U+0939 + "x"    > U+0939 U+094d U+200C  c for Kangri, the default 'x' behavior for post-h is non-joining
-
-+ "X"     > U+094d U+200C  c halant (and the zero-width non-joining to get full-char plus halant)
-+ "y"     > U+092f  c ya
-+ "Y"     > U+094d U+092f c joinya
-+ "z"     > U+0936  c sHa
-+ "Z"     > U+0915 U+094d U+0937  c ksHa
-U+0915 U+094d + "z" > U+0915 U+094d U+0937  c alternate stack form ksHa
-
-+ [RALT K_LBRKT] > U+093c   c lower dot
-+ ">"             	 > U+093c   c lower dot (alternate for rde)
-
-c special characters preceding lowdot
-c WARNING: note that the Government of India recommends *not* using the
-c precomposed characters 0958-095F, but encoding the data as consonant + 093C
-c which is what it really is. (Since the dot can be applied to any consonant,
-c why were these eight picked out for special precomposed encoding?). The
-c Unicode Technical Committee agrees with that, and in fact had already
-c excluded those characters from its "Normalized Composed Form", meaning that
-c any process which normalizes the data should leave the sequence uncomposed.
-c so... commenting out the following
-c any(LowDotWallahs) + ">"    > index(LowDotOutputs,1)
-
-+ "`"             	 > U+0901 c candra bindu
-+ "~"             	 > U+0902 c anusvara
-+ "."             	 > U+0964 c period produces Devanagri full stop
-U+0964 + "."         > "."   c two periods produces a roman period
-"." + "."            > U+0965 c 2 periods produces 2 full stops
-U+0965 + "."         > U+2026 c 3 periods produces 3 roman periods (since ellipse has been removed)
-U+2026 + "."         > context U+0964   c period produces Devanagri full stop
-
-"-" + "-"       	 > U+2013  c hit hyphen twice for en dash
-U+2013 + "-"       	 > U+2014  c three times for em dash
-+ "@"             	 > beep      c can't get the at-sign
-
-+ [RALT K_2] 	 > U+091c U+094d U+091e  c gya
-+ [RALT K_3] 	 > U+2026   c ellipse
-+ [RALT K_5] 	 > U+0945  c candra
-
-c special chandra wallahs
-U+093E + [RALT K_5] > U+0949 c chandr + aakar is a special char
-U+090F + [RALT K_5] > U+090D c chandr + ekar is a special char
-U+0906 + [RALT K_5] > U+0911 c chandr + aakar independent is a special char
-
-+ [RALT K_H] 	 > U+093d  c avagraha
-+ [RALT K_J] 	 > U+091c U+094d U+091e    c gya (rde change)
-+ [RALT K_N] 	 > U+091e   c nYa
-
-+ [RALT K_L] 	 > U+0943   c rikar
-U+0930 U+094d + "i"  > U+0943   c alternate way of keying rikar
-
-+ [RALT K_COLON]  	 > U+0903  c barred visarga
-+ [RALT K_PERIOD] 	 > "."   c Roman period
-":" + ":"       > U+093d   c avagraha
-
-c semicolon ";" is keyed between consonants to produce a stack / conjunct
-+ ";"           > U+094d   c use the DEVANAGARI SIGN VIRAMA so we get the full conjunct
-
-c Digits: we get the Arabic wallahs with the numeric key
-c and Devanagari with a subsequent backspace or Shift + RALT + sequences
-
-+ any(Digits)           > index(Digits,1)
-any(Digits) + [K_BKSP]  > index(DigitsU,1)
-+ [SHIFT RALT K_0]    > U+0966 c Devanagari digit 0
-+ [SHIFT RALT K_1]    > U+0967 c Devanagari digit 1
-+ [SHIFT RALT K_2]    > U+0968 c Devanagari digit 2
-+ [SHIFT RALT K_3]    > U+0969 c Devanagari digit 3
-+ [SHIFT RALT K_4]    > U+096A c Devanagari digit 4
-+ [SHIFT RALT K_5]    > U+096B c Devanagari digit 5
-+ [SHIFT RALT K_6]    > U+096C c Devanagari digit 6
-+ [SHIFT RALT K_7]    > U+096D c Devanagari digit 7
-+ [SHIFT RALT K_8]    > U+096E c Devanagari digit 8
-+ [SHIFT RALT K_9]    > U+096F c Devanagari digit 9
-
-+ [RALT K_0]  > U+0970 c Devanagari abbreviation sign
-
-"1/" + "4"     	 > U+00bc c 1/4
-"1/" + "2"     	 > U+00bd c 1/2
-"3/" + "4"     	 > U+00be c 3/4
-
-"[" + "["       > U+230A
-"]" + "]"       > U+230B
+c vowels + virama
+any(vowels) + 'x' > context '्' 
+'अ' + 'x' > context '्'
+any(vowelMatras) + 'x' > context '्'

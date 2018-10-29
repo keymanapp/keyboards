@@ -1,4 +1,4 @@
-#NLCI Malayalam WinScript Keyboard Change History
+#NLCI Oriya WinScript Keyboard Change History
 
 ## 2.0 (2018)
 * A Complete rewrite of the keyboard by Binila Sanki (SG, NLCI)
