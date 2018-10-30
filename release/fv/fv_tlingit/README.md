@@ -23,3 +23,7 @@ Todo
 ----
 
  * This keyboard needs canonical ordering to be changed and normalized (U+0328)
+ * Modify default and shift layers. There are two keys with period and longpress options. 
+   The longpress options are different on the two keys which is unusual and the keyboard
+   might benefit from consistency.
+   
