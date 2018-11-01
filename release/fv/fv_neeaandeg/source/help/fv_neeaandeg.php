@@ -36,5 +36,5 @@ This keyboard is designed for the <b>Nee'aanděg'</b> language of the Western S
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
