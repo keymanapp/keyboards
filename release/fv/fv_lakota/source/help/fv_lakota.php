@@ -34,5 +34,5 @@ This keyboard is designed for the <b>Lak̇ot̄a</b> language of the Prairies reg
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
