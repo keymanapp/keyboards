@@ -1,0 +1,417 @@
+c Created by Lorna A. Priest, SIL International
+c This keyboard uses deadkeys to access special characters
+c Any changes to be made should be able to be 
+c      made in the "stores" rather than in the rules
+c This keyboard was written to normalize to NFC. If you wish to 
+c      use NFD then you should go through the keyboard and 
+c      remove "use(NFC)"
+c 2009-08-31 LP updated all PUA characters to their official Unicode codepoints
+
+store(&VERSION) '9.0'
+store(&NAME) "Pan Africa Mnemonic (SIL)"
+store(&BITMAP) 'sil_pan_africa_mnemonic.ico'
+store(&COPYRIGHT) '© 2003-2018 SIL International'
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.1.1'
+store(&VISUALKEYBOARD) 'sil_pan_africa_mnemonic.kvks'
+
+begin Unicode > use(MainU) 
+
+
+store(&mnemoniclayout) "1"
+
+store(&message) "This keyboard was written to normalize to NFC. " 
+
+
+c deadkey for first set
+store(K_1)       "["
+
+c deadkey for second set
+store(K_2)       "]"
+
+c reassigned characters (these need to be changed if the above deadkeys are changed)
+store(deadkeys_K) "/"    "<"    ">"    "@"    "["    "]" \
+                  "^"    "_"    "`"    "{"    "|"    "}" \
+                  "~"
+store(deadkeys)   U+002F U+003C U+003E U+0040 U+005B U+005D \
+                  U+005E U+005F U+0060 U+007B U+007C U+007D \
+                  U+007E
+  
+
+c using first deadkey
+c                hand a           hook b           hook c           hook d
+c                schwa            hook f           hook g           hook h
+c                bar i            hook d           hook k           ipsilon
+c                left n           eng              open o           hook p
+c                slash o          bar r            epsilon          hook t
+c                bar u            hook v           hook w           gamma
+c                hook y           ezh              glottal          semi-colon
+c                opening chevron  closing chevron        
+
+store(K_lc1)     "a"              "b"              "c"              "d" \
+                 "e"              "f"              "g"              "h" \
+                 "i"              "j"              "k"              "l" \
+                 "m"              "n"              "o"              "p" \
+                 "q"              "r"              "s"              "t" \
+                 "u"              "v"              "w"              "x" \
+                 "y"              "z"              "'"                  
+                 
+
+store(lc1)       U+0251           U+0253           U+0188           U+0257 \
+                 U+01DD           U+0192           U+0260           U+0266 \
+                 U+0268           U+0256           U+0199           U+0269 \
+                 U+0272           U+014B           U+0254           U+01A5 \
+                 U+00F8           U+024D           U+025B           U+01AD \
+                 U+0289           U+028B           U+2C73           U+0263 \
+                 U+01B4           U+0292           U+02BC           
+
+store(K_UC1)     "A"              "B"              "C"              "D" \
+                 "E"              "F"              "G"              "H" \
+                 "I"              "J"              "K"              "L" \
+                 "M"              "N"              "O"              "P" \
+                 "Q"              "R"              "S"              "T" \
+                 "U"              "V"              "W"              "X" \
+                 "Y"              "Z"              "?" 
+                               
+store(UC1)       U+2C6D           U+0181           U+0187           U+018A \   
+                 U+018E           U+0191           U+0193           U+021E \
+                 U+0197           U+0189           U+0198           U+0196 \
+                 U+019D           U+014A           U+0186           U+01A4 \
+                 U+00D8           U+024C           U+0190           U+01AC \
+                 U+0244           U+01B2           U+2C72           U+0194 \
+                 U+01B3           U+01B7           U+0294                  
+                 
+                 
+
+c using second deadkey
+c                optional schwa   hook r          esh  \
+c                bar t            upside v        barred z
+c                reverse glottal
+               
+store(K_lc2)     "e"              "r"              "s" \
+                 "t"              "v"              "z"
+
+store(lc2)       U+0259           U+027D           U+0283 \
+                 U+0167           U+028C           U+01B6           
+
+store(K_UC2)     "E"              "R"              "S" \
+                 "T"              "V"              "Z" \
+                 "?"     
+
+store(UC2)       U+018F           U+2C64           U+01A9 \
+                 U+0166           U+0245           U+01B5            \
+                 U+0295 
+store(unused2)   "abcdfghijklmnopquwxy" \
+                 "ABCDFGHIJKLMNOPQUWXY"                 
+
+c DIACRITICS
+store(DAgrave)       U+0300
+store(DAacute)       U+0301
+store(DAcirc)        U+0302     
+store(DAtilde)       U+0303
+store(DAmacron)      U+0304
+store(DAdot)         U+0307
+store(DAdiaeresis)   U+0308
+store(DAhachek)      U+030C
+store(DAvert)        U+030D 
+store(DAcircle)      U+030A                     
+store(DUtilde)       U+0330
+store(DUmacron)      U+0331
+store(DUdot)         U+0323
+store(DUvert)        U+0329
+store(DUcircle)      U+0325
+store(DUcedilla)     U+0327
+
+c DIACRITICS - using first deadkey
+c                    grave                  acute                  circumflex   
+c                    tilde                  macron                 dot over
+c                    diaeresis              caron                  vert 
+c                    ring over
+
+
+store(K_diacritics1) "`"                    "/"                    "^" \
+                     "~"                    "_"                    "}" \
+                     '"'                    "{"                    "|" \
+                     "@" 
+                     
+
+store(diacritics1)   outs(DAgrave)          outs(DAacute)          outs(DAcirc) \     
+                     outs(DAtilde)          outs(DAmacron)         outs(DAdot) \
+                     outs(DAdiaeresis)      outs(DAhachek)         outs(DAvert) \
+                     outs(DAcircle) 
+                     
+c DIACRITICS - using second deadkey
+c                    tilde Under            macron Under            dot Under  
+c                    vertical Under         ring Under              cedilla
+            
+store(K_diacritics2) "~"                    "_"                     "}" \
+                     "|"                    "@"                     ","  
+                                                             
+
+store(diacritics2)   outs(DUtilde)          outs(DUmacron)          outs(DUdot) \
+                     outs(DUvert)           outs(DUcircle)          outs(DUcedilla) 
+                                                       
+C Stores used to create composed characters
+store(Vowels)        "a"    "A"    "e"    "E"    "i"    "I"    "o"    "O"    "u"    "U"
+store(graveA)        U+00E0 U+00C0 U+00E8 U+00C8 U+00EC U+00CC U+00F2 U+00D2 U+00F9 U+00D9
+store(acuteA)        U+00E1 U+00C1 U+00E9 U+00C9 U+00ED U+00CD U+00F3 U+00D3 U+00FA U+00DA 
+store(circA)         U+00E2 U+00C2 U+00EA U+00CA U+00EE U+00CE U+00F4 U+00D4 U+00FB U+00DC
+store(tildeA)        U+00E3 U+00C3 U+1EBD U+1EBC U+0129 U+0128 U+00F5 U+00D5 U+0169 U+0168
+store(diaeresisA)    U+00E4 U+00C4 U+00EB U+00CB U+00EF U+00CF U+00F6 U+00D6 U+00FC U+00DC
+store(macronA)       U+0101 U+0100 U+0113 U+0112 U+012B U+012A U+014D U+014C U+016B U+016A
+store(hachekA)       U+01CE U+01CD U+011B U+011A U+01D0 U+01CF U+01D2 U+01D1 U+01D4 U+01D3
+store(dotU)          U+1EA1 U+1EA0 U+1EB9 U+1EB8 U+1ECB U+1ECA U+1ECD U+1ECC U+1EE5 U+1EE4
+
+store(circle_K)      "a"    "A"    "u"    "U"
+store(circleA)       U+00E5 U+00C5 U+016F U+016E
+store(circleU_K)     "a"    "A"    
+store(circleU)       U+1E01 U+1E00
+store(tildeU_K)      "e"    "E"    "i"    "I"    "u"    "U"
+store(tildeU)        U+1E1B U+1E1A U+1E2D U+1E2C U+1E75 U+1E74
+
+store(dot_K)         "a"    "A"    "b"    "B"    "c"    "C"    "d"    "D"   \
+                     "e"    "E"    "f"    "F"    "g"    "G"    "h"    "H"   \
+                     "m"    "M"    "n"    "N"    "o"    "O"    "p"    "P"   \
+                     "r"    "R"    "s"    "S"    "t"    "T"    "w"    "W"   \
+                     "x"    "X"    "y"    "Y"    "z"    "Z"
+store(dotA)          U+0227 U+0226 U+1E03 U+1E02 U+010B U+010A U+1E0B U+1E0A \
+                     U+0117 U+0116 U+1E1F U+1E1E U+0121 U+0120 U+1E23 U+1E22 \
+                     U+1E41 U+1E40 U+1E45 U+1E44 U+022F U+022E U+1E57 U+1E56 \
+                     U+1E59 U+1E58 U+1E61 U+1E60 U+1E6B U+1E6A U+1E87 U+1E86 \
+                     U+1E8B U+1E8A U+1E8F U+1E8E U+017C U+017B  
+store(ConsHachek_K)  "C"    "c"    "D"    "d"    "G"    "g"    "H"    "h"    \
+                     "K"    "k"    "N"    "n"    "R"    "r"    "S"    "s"    \
+                     "T"    "t"    "Z"    "z"    U+01B7 U+0292
+store(ConsHachekA)   U+010C U+010D U+010E U+010F U+01E6 U+01E7 U+021E U+021F \
+                     U+01E8 U+01E9 U+0147 U+0148 U+0158 U+0159 U+0160 U+0161 \
+                     U+0164 U+0165 U+017D U+017E U+01EE U+01EF  
+store(ConsMacron_K)  U+00C6 U+00E6 "G"    "g"    "Y"    "y"
+store(ConsMacronA)   U+01E2 U+01E3 U+1E20 U+1E21 U+0232 U+0233
+
+store(ConsGrave_K)   "N"    "n"    "W"    "w"    "Y"    "y"
+store(ConsGraveA)    U+01F8 U+01F9 U+1E80 U+1E81 U+1EF2 U+1EF3 
+
+store(ConsAcute_K)   U+00C6 U+00E6 "C"    "c"    U+00C7 U+00E7 "G"    "g"    "K"    "k"    \
+                     "L"    "l"    "M"    "m"    "N"    "n"    U+00D8 U+00F8 "P"    "p"    \
+                     "R"    "r"    "S"    "s"    "W"    "w"    "Y"    "y"    "Z"    "z"
+store(ConsAcuteA)    U+01FC U+01FD U+0106 U+0107 U+1E08 U+1E09 U+01F4 U+01F5 U+1E30 U+1E31 \
+                     U+0139 U+013A U+1E3E U+1E3F U+0143 U+0144 U+01FE U+01FF U+1E54 U+1E55 \
+                     U+0154 U+0155 U+015A U+015B U+1E82 U+1E83 U+00DD U+00FD U+0179 U+017A 
+
+store(ConsTilde_K)   "N"    "n"    "V"    "v"    "Y"    "y"
+store(ConsTildeA)    U+00D1 U+00F1 U+1E7C U+1E7D U+1EF8 U+1EF9
+
+store(ConsCirc_K)    "C"    "c"    "G"    "g"    "H"    "h"    "J"    "j"    "S"    "s"    \
+                     "W"    "w"    "Y"    "y"    "Z"    "z"
+store(ConsCircA)     U+0108 U+0109 U+011C U+011D U+0124 U+0125 U+0134 U+0135 U+015C U+015D \
+                     U+0174 U+0175 U+0176 U+0177 U+1E90 U+1E91
+
+store(ConsDiaeresis_K) "H"    "h"    "W"    "w"    "X"    "x"    "Y"    "y"
+store(ConsDiaeresisA)  U+1E26 U+1E27 U+1E84 U+1E85 U+1E8C U+1E8D U+0178 U+00FF
+
+store(cedilla_K)     "c"    "C"    "e"    "E"    "h"    "H"    "s"    "S"    "t"    "T"
+store(cedillaU)      U+00E7 U+00C7 U+0229 U+0228 U+1E29 U+1E28 U+015F U+015E U+0163 U+0162
+
+store(ConsDotU_K)    "B"    "b"    "D"    "d"    "H"    "h"    "K"    "k" \
+                     "L"    "l"    "M"    "m"    "N"    "n"    "R"    "r" \
+                     "S"    "s"    "T"    "t"    "V"    "v"    "W"    "w" \
+                     "Y"    "y"    "Z"    "z"
+store(ConsDotU)      U+1E04 U+1E05 U+1E0C U+1E0D U+1E24 U+1E25 U+1E32 U+1E33 \
+                     U+1E36 U+1E37 U+1E42 U+1E43 U+1E46 U+1E47 U+1E5A U+1E5B \
+                     U+1E62 U+1E63 U+1E6C U+1E6D U+1E7E U+1E7F U+1E88 U+1E89 \
+                     U+1EF4 U+1EF5 U+1E92 U+1E93 
+                     
+store(ConsbarU_K)    "B"    "b"    "D"    "d"    "K"    "k"    "L"    "l" \
+                     "N"    "n"    "R"    "r"    "T"    "t"    "Z"    "z"
+store(ConsbarU)      U+1E06 U+1E07 U+1E0E U+1E0F U+1E34 U+1E35 U+1E3A U+1E3B \
+                     U+1E48 U+1E49 U+1E5E U+1E5F U+1E6E U+1E6F U+1E94 U+1E95
+
+store(StackingBM)     U+00E4 U+00C4 U+00F6 U+00D6 U+00FC U+00DC \
+                      U+0227 U+0226 U+022F U+022E \
+                      U+00F5 U+00D5 
+store(StackingMacron) U+01DF U+01DE U+022B U+022A U+01D6 U+01D5 \
+                      U+01E1 U+01E0 U+0231 U+0230 \
+                      U+022D U+022C 
+store(StackingBA)     U+0113 U+0112 U+00EF U+00CF U+014D U+014C U+00FC U+00DC \
+                      U+00E5 U+00C5 U+00F5 U+00D5 U+0169 U+0168
+store(StackingAcute)  U+1E17 U+1E16 U+1E2F U+1E2E U+1E53 U+1E52 U+01D8 U+01D7 \
+                      U+01FB U+01FA U+1E4D U+1E4C U+1E79 U+1E78
+
+store(StackingBH)     U+00FC U+00DC  
+store(StackingHachek) U+01DA U+01D9
+
+store(StackingBG)     U+0113 U+0112 U+014D U+014C U+00FC U+00DC
+store(StackingGrave)  U+1E15 U+1E14 U+1E51 U+1E50 U+01DC U+01DB 
+                      
+store(StackingBT)     U+00E2 U+00C2 U+00EA U+00CA U+00F4 U+00D4
+store(StackingTilde)  U+1EAB U+1EAA U+1EC5 U+1EC4 U+1ED7 U+1ED6                     
+store(StackingBDot1)  U+00E2 U+00C2 U+00EA U+00CA U+00F4 U+00D4 
+store(StackingBDot2)  U+1EA1 U+1EA0 U+1EB9 U+1EB8 U+1ECD U+1ECC 
+store(StackingDot)    U+1EAD U+1EAC U+1EC7 U+1EC6 U+1ED9 U+1ED8
+
+store(StackingBDiar)    U+1E4F U+1E4E U+016B U+016A
+store(StackingDiaresis) U+00F5 U+00D5 U+1E7B U+1E7A  
+  
+
+c chevron quotation marks. If curly quotes are desired use stores below.
+
+store(opSglQ_K)      "<"
+store(opSglQ)        U+2039
+store(opDblQ)        U+00AB       
+store(clSglQ_K)      ">"
+store(clSglQ)        U+203A
+store(clDblQ)        U+00BB
+
+c curly quotation marks.
+store(opSglQ2)       U+2018
+store(opDblQ2)       U+201C       
+store(clSglQ2)       U+2019
+store(clDblQ2)       U+201D
+
+c end of STORES
+c ***************************************************
+
+c begin groups
+c ***************************************************
+
+c begin MainU group
+c ***************************************************
+
+
+group(MainU) using keys
+
+c deadkeys
+            + any(K_1)          > dk(1)
+            + any(K_2)          > dk(2)
+            
+c reassigned characters 
+dk(2)       + any(deadkeys_K)   > index(deadkeys,2)
+
+c PUNCTUATION
+c chevrons
+            + any(opSglQ_K)     > outs(opSglQ) use(Quotes)
+            + any(clSglQ_K)     > outs(clSglQ) use(Quotes)
+c curly quotes
+dk(1)       + any(opSglQ_K)     > outs(opSglQ2) use(Quotes)
+dk(1)       + any(clSglQ_K)     > outs(clSglQ2) use(Quotes)
+
+c special characters - using deadkey
+dk(1)       + any(K_lc1)        > index(lc1,2) 
+dk(2)       + any(K_lc2)        > index(lc2,2) 
+dk(1)       + any(K_UC1)        > index(UC1,2) 
+dk(2)       + any(K_UC2)        > index(UC2,2) 
+dk(2)       + any(unused2)      > beep
+
+          
+c diacritics - using deadkey
+            + any(K_diacritics1) > index(diacritics1,1) use(NFC)
+dk(1)       + any(K_diacritics2) > index(diacritics2,2) use(NFC)
+
+c housekeeping
+$keymanonly: any(graveA)       + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsGraveA)   + [K_BKSP] >  index(ConsGrave_K,1)
+$keymanonly: any(acuteA)       + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsAcuteA)   + [K_BKSP] >  index(ConsAcute_K,1)
+$keymanonly: any(circA)        + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsCircA)    + [K_BKSP] >  index(ConsCirc_K,1)
+$keymanonly: any(tildeA)       + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsTildeA)   + [K_BKSP] >  index(ConsTilde_K,1)
+$keymanonly: any(macronA)      + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsMacronA)  + [K_BKSP] >  index(ConsMacron_K,1)
+$keymanonly: any(diaeresisA)   + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsDiaeresisA)   + [K_BKSP] >  index(ConsDiaeresis_K,1)
+$keymanonly: any(hachekA)      + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsHachekA)  + [K_BKSP] >  index(ConsHachek_K,1)
+$keymanonly: any(dotU)         + [K_BKSP] >  index(Vowels,1)
+$keymanonly: any(ConsDotU)     + [K_BKSP] >  index(ConsDotU_K,1)
+$keymanonly: any(circleA)      + [K_BKSP] >  index(circle_K,1)
+$keymanonly: any(circleU)      + [K_BKSP] >  index(circleU_K,1)
+$keymanonly: any(tildeU)       + [K_BKSP] >  index(tildeU_K,1)
+$keymanonly: any(dotA)         + [K_BKSP] >  index(Dot_K,1)
+$keymanonly: any(cedillaU)     + [K_BKSP] >  index(cedilla_K,1)
+$keymanonly: any(ConsbarU)     + [K_BKSP] >  index(ConsbarU_K,1)
+$keymanonly: any(StackingMacron)   + [K_BKSP] > index(StackingBM,1) 
+$keymanonly: any(StackingAcute)    + [K_BKSP] > index(StackingBA,1) 
+$keymanonly: any(StackingHachek)   + [K_BKSP] > index(StackingBH,1) 
+$keymanonly: any(StackingGrave)    + [K_BKSP] > index(StackingBG,1) 
+$keymanonly: any(StackingTilde)    + [K_BKSP] > index(StackingBT,1) 
+$keymanonly: any(StackingDot)      + [K_BKSP] > index(StackingBDot2,1) 
+$keymanonly: any(StackingDiaresis) + [K_BKSP] > index(StackingBDiar,1) 
+
+  
+c end MainU group
+c ***************************************************
+
+c begin Quotes group
+c ***************************************************
+
+group(Quotes)
+
+any(opSglQ) any(opSglQ)    >     outs(opDblQ)       
+any(clSglQ) any(clSglQ)    >     outs(clDblQ)
+any(opSglQ2) any(opSglQ2)  >     outs(opDblQ2)       
+any(clSglQ2) any(clSglQ2)  >     outs(clDblQ2)
+
+
+
+c end Quotes group
+c ***************************************************
+
+c begin NFC group
+c ***************************************************
+
+group(NFC)
+
+c Diacritics (single) 
+any(Vowels) any(DAgrave)        > index(graveA,1)
+any(ConsGrave_K) any(DAgrave)   > index(ConsGraveA,1)
+
+any(Vowels) any(DAacute)        > index(acuteA,1)
+any(ConsAcute_K) any(DAacute)   > index(ConsAcuteA,1)
+
+any(Vowels) any(DAcirc)         > index(circA,1)
+any(ConsCirc_K) any(DAcirc)     > index(ConsCircA,1)
+
+any(Vowels) any(DAtilde)        > index(tildeA,1)
+any(ConsTilde_K) any(DAtilde)   > index(ConsTildeA,1)
+
+any(Vowels) any(DAmacron)       > index(macronA,1)
+any(ConsMacron_K) any(DAmacron) > index(ConsMacronA,1)
+
+any(Vowels) any(DAdiaeresis)    > index(diaeresisA,1)
+any(ConsDiaeresis_K) any(DAdiaeresis)    > index(ConsDiaeresisA,1)
+
+any(Vowels) any(DAhachek)       > index(hachekA,1)
+any(ConsHachek_K) any(DAhachek) > index(ConsHachekA,1)
+
+any(Vowels) any(DUdot)          > index(dotU,1)
+any(ConsDotU_K) any(DUdot)      > index(ConsDotU,1)
+
+any(circle_K) any(DAcircle)     > index(circleA,1)
+any(circleU_K) any(DUcircle)    > index(circleU,1)
+
+any(tildeU_K) any(DUtilde)      > index(tildeU,1)
+any(dot_K) any(DAdot)           > index(dotA,1)
+any(cedilla_K) any(DUcedilla)   > index(cedillaU,1)
+any(ConsbarU_K) any(DUmacron)   > index(ConsbarU,1) 
+
+C Stacking diacritics (multi)
+
+any(StackingBM) any(DAmacron)       > index(StackingMacron,1) 
+any(StackingBA) any(DAacute)        > index(StackingAcute,1)  
+any(StackingBH) any(DAhachek)       > index(StackingHachek,1) 
+any(StackingBG) any(DAgrave)        > index(StackingGrave,1)  
+any(StackingBT) any(DAtilde)        > index(StackingTilde,1)  
+any(StackingBDot1) any(DUdot)       > index(StackingDot,1)  
+any(StackingBDot2) any(DAcirc)      > index(StackingDot,1)    
+any(StackingBDiar) any(DAdiaeresis) > index(StackingDiaresis,1) 
+   
+c end COMPOSITE groups
+c ************************************************************************************
+
+c end groups
+c ************************************************************************************
+
+
+
+

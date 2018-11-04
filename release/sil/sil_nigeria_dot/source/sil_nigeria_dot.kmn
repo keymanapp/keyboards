@@ -1,0 +1,201 @@
+﻿c Nigeria Unicode Dot Keyboard
+c modified Feb 2010 to add nasality
+c modified Sept 2006 script a and g removed. No longer needed because of the Literacy fonts
+c Edited December 2005 (standardized for uploading to Tavultesoft and name changed from NBTT Unicode Dots Keyboard)
+c Literacy alpha now dot below and alphabetic turned comma added
+c Edited May 2005 (Original keyboard split into three to handle different vowel treatments)
+c created by Heidi Rosendall, March 2004
+
+c This keyboard is provided along with two other keyboards to cover the expected needs
+c of Nigeria languages. The three keyboards are identical except vowels appear differently
+c This is the keyboard for dotted vowels.
+
+store(&VERSION) '9.0'
+store(&NAME) 'Nigeria Dot (SIL)'
+store(&BITMAP) 'sil_nigeria_dot.ico'
+
+store(&COPYRIGHT) '2004-2018 SIL International'
+store(&ETHNOLOGUECODE) 'anc ann atg bom bzw enn gkn ibo iby igb ige ikw jbu yaz'
+store(&TARGETS) 'windows macosx web'
+store(&VISUALKEYBOARD) 'sil_nigeria_dot.kvks'
+store(&HOTKEY) '[CTRL ALT K_N]'
+store(&KEYBOARDVERSION) '1.5'
+
+begin Unicode	>	use(Main)
+
+
+store(Let2BMod) "bcdhkmnyzBCDGKLMNXY$?*"      
+store(ModLet)	"ɓçɗɦƙɲŋƴʒƁÇƊɣƘ£ƝŊƎƳ₦ʔ°"      
+store(vowel)	"aeiouAEIOU"                       
+store(vAcute)	"áéíóúÁÉÍÓÚ"                      
+store(vMid)	    "āēīōūĀĒĪŌŪ"                      
+store(vGrave)	"àèìòùÀÈÌÒÙ"                       
+store(vCircum)	"âêîôûÂÊÎÔÛ"                      
+store(vCaron)	"ǎěǐǒǔǍĚǏǑǓ"   
+store(vDot)	    "ạẹịọụẠẸỊỌỤ"          
+store(vNasal)	"ãẽĩõũÃẼĨÕŨ"
+store(nasal)	"mnMN"                   
+store(nAcute)	"ḿńḾŃ"                      
+store(LetN)	    "nN"                         
+store(nGrave)	"ǹǸ"                            
+store(nCaron)	"ňŇ" 
+store(nNasal)	"ñÑ"                          
+c store(cCons)    "b"     "B"    "n"    "N"
+c store(cDot)      U+1E05 U+1E04 U+1E47 U+1E46
+group(main) using keys      
+
+
+c DEADKEYS
+c single deadkeys
++ ";"	>  deadkey(modlet)     c applies to dotted vowels and letters to be modified, applies with a second deadkey to make a combo deadkey
++ "'"	>  deadkey(acute)
++ "-"	>  deadkey(mid)
++ "`" 	>  deadkey(grave) 
++ "^"	>  deadkey(circum)
++ "&"	>  deadkey(caron) 
++ "!"	>  deadkey(downstep) 
++ "~"	>  deadkey(nasal)
+
+c most single deadkeys are cleared when typed twice
+
+U+02BB	     + "'" 	> "'"       c just an acute accent  when typed three times see line 77
+dk(modlet)	 + ";"	> ";"
+dk(mid)	     + "-"	> "-" 
+dk(grave)	 + "`"	> "`" 
+dk(circum)	 + "^" 	> "^" 
+dk(caron)	 + "&" 	> "&"     
+dk(downstep) + "!" 	> "!"
+dk(nasal)	 + "~"	> "~"    
+
+c 1st set (;) combo deadkeys  for tones on underlined vowels (order does not matter)
+dk(modlet)   + "'"      >     deadkey(dotAcute)
+dk(acute)    + ";"      >     deadkey(dotAcute)            
+dk(modlet)   + "-"      >     deadkey(dotMid)
+dk(mid)      + ";"      >     deadkey(dotMid)
+dk(modlet)   + "`"      >     deadkey(dotGrave)
+dk(grave)    + ";"      >     deadkey(dotGrave)
+dk(modlet)   + "^"      >     deadkey(dotCircum)
+dk(circum)   + ";"      >     deadkey(dotCircum)
+dk(modlet)   + "&"      >     deadkey(dotCaron)
+dk(caron)    + ";"      >     deadkey(dotCaron)     
+dk(modlet)   + "!"      >     deadkey(dotDownstep)
+dk(downstep) + ";"      >     deadkey(dotDownstep)
+dk(modlet)   + "~"      >     deadkey(dotNasal)
+dk(nasal)    + ";"      >     deadkey(dotNasal)
+
+c 2nd set (~) combo deadkeys for nasality and tone on regular vowels (nasal + tone is the only order)
+dk(nasal) + "'"	>  deadkey(nasalAcute)
+dk(nasal) + "-"	>  deadkey(nasalMid)
+dk(nasal) + "`"	>  deadkey(nasalGrave)
+dk(nasal) + "^"	>  deadkey(nasalCircum)
+dk(nasal) + "&"	>  deadkey(nasalCaron)
+dk(nasal) + "!"	>  deadkey(nasalDownstep)
+
+c 3rd set combo deadkeys for nasality and tone on dot vowels (order DOES matter)
+dk(dotNasal) + "'"	>  deadkey(dotNasalAcute)
+dk(dotNasal) + "-"	>  deadkey(dotNasalMid)
+dk(dotNasal) + "`"	>  deadkey(dotNasalGrave)
+dk(dotNasal) + "^"	>  deadkey(dotNasalCircum)
+dk(dotNasal) + "&"	>  deadkey(dotNasalCaron)
+dk(dotNasal) + "!"	>  deadkey(dotNasalDownstep)
+
+c ASSIGNMENTS
+c plain letters are modified, vowels are dotted
+dk(modlet)	+ any(Let2BMod)	>  index(ModLet,2)     
+dk(modlet)	+ any(vowel)	>  index(vDot,2)
+dk(acute)	+ "'"			> U+02BB c alphabetic turned comma is two acute accents
+
+c plain vowels & nasals are tone marked or nasalized
+c (Unicode does not provide a complet set of single character toned nasals so they are dealt with in different ways)
+dk(acute)	 + any(vowel)	>  index(vAcute,2)    
+dk(acute)	 + any(nasal)	>  index(nAcute,2)          
+dk(mid)	     + any(vowel)	>  index(vMid,2)      
+dk(mid)	     + any(nasal)	>  index(nasal,2) U+0304 
+dk(grave)	 + any(vowel)	>  index(vGrave,2)      
+dk(grave)	 + any(LetN)	>  index(nGrave,2)  
+dk(grave)	 + "m"		    >  "m" U+0300
+dk(grave)	 + "M"		    >  "M" U+0300   
+dk(circum)	 + any(vowel)	>  index(vCircum,2)    
+dk(circum)	 + any(nasal)	>  index(nasal,2) U+0302 
+dk(caron)	 + any(vowel)	>  index(vCaron,2) 
+dk(caron)	 + any(LetN)	>  index(nCaron,2)                               
+dk(caron)	 + "m"		    > "m" U+030C   
+dk(caron)	 + "M"		    > "M" U+030C  
+dk(downstep) + any(vowel)	>  index(vowel,2) U+030B use(NFC)
+dk(downstep) + any(nasal)	>  index(nasal,2) U+030B  
+dk(downstep) + "m"		    >  "m" U+030B
+dk(downstep) + "N"		    >  "N" U+030B             
+dk(downstep) + "n"		    >  "n" U+030B
+dk(downstep) + "M"		    >  "M" U+030B
+dk(nasal)	 + any(vowel)	> index(vNasal,2)
+dk(nasal)	 + any(LetN)	> index(nNasal,2)
+dk(nasal) 	 + "m"			> "m" U+0303
+dk(nasal) 	 + "M"			> "M" U+0303
+
+
+c toned vowels are dotted
+dk(dotAcute)	+ any(vowel)	>  index(vAcute,2) U+0323  use(NFC)
+dk(dotMid)		+ any(vowel)	>  index(vMid,2) U+0323  use(NFC)
+dk(dotGrave)	+ any(vowel)	>  index(vGrave,2) U+0323  use(NFC)
+dk(dotCircum)	+ any(vowel)	>  index(vCircum,2) U+0323  use(NFC)
+dk(dotCaron)	+ any(vowel)	>  index(vCaron,2) U+0323  use(NFC)       
+dk(dotDownstep) + any(vowel)	>  index(vowel,2) U+0323 U+030B  use(NFC) 
+
+c dot vowels are nasalized
+                                              
+dk(dotNasal)	+ any(Vowel)	> index(vNasal,2) U+0323  use(NFC)
+
+c tonemarked vowels are nasalized
+dk(nasalAcute)	+ any(vowel)	> index(vNasal,2) U+0301  use(NFC)
+dk(nasalMid)	+ any(vowel)	> index(vNasal,2) U+0304
+dk(nasalGrave)	+ any(vowel)	> index(vNasal,2) U+0300
+dk(nasalCircum)	+ any(vowel)	> index(vNasal,2) U+0302
+dk(nasalCaron)	+ any(vowel)	> index(vNasal,2) U+030C
+dk(nasalDownstep) + any(vowel)	> index(vNasal,2) U+030B
+
+c dot tonemarked vowels are nasalized
+dk(dotNasalAcute)	+ any(vowel)	>  index(vowel,2) U+0303 U+0301 U+0323 use(NFC)
+dk(dotNasalMid)	    + any(vowel)	>  index(vowel,2) U+0303 U+0304 U+0323 use(NFC)
+dk(dotNasalGrave)	+ any(vowel)	>  index(vowel,2) U+0303 U+0300 U+0323 use(NFC)
+dk(dotNasalCircum)	+ any(vowel)	>  index(vowel,2) U+0303 U+0302 U+0323 use(NFC)
+dk(dotNasalCaron)	+ any(vowel)	>  index(vowel,2) U+0303 U+030C U+0323 use(NFC)
+dk(dotNasalDownstep)+ any(vowel) 	>  index(vowel,2) U+0303 U+030B U+0323 use(NFC)
+
+c begin NFC group
+c ***************************************************
+
+group(NFC)
+
+U+004F U+030B > U+0150 c O double acute
+U+006F U+030B > U+0151 c o double acute
+U+0055 U+030B > U+0170 c U double acute
+U+0075 U+030B > U+0171 c u double acute
+
+U+00F5 U+0301 > U+1E4D c o tilde acute
+U+00D5 U+0301 > U+1E4C c O tilde acute
+U+0169 U+0301 > U+1E79 c u tilde acute
+U+0168 U+0301 > U+1E78 c U tilde acute
+
+any(vAcute) U+0323  > index(vDot,1) U+0301     c dot acute
+any(vMid)   U+0323  > index(vDot,1) U+0304     c dot macron
+any(vGrave) U+0323  > index(vDot,1) U+0300     c dot grave
+
+U+00E2 U+0323       > U+1EAD c a dot circumflex
+U+00C2 U+0323       > U+1EAC c A dot circumflex
+U+00EA U+0323       > U+1EC7 c e dot circumflex
+U+00CA U+0323       > U+1EC6 c E dot circumflex
+U+00F4 U+0323       > U+1ED9 c o dot circumflex
+U+00D4 U+0323       > U+1ED8 c O dot circumflex
+any(vCircum) U+0323 > index(vDot,1) U+0302     c dot circumflex
+
+any(vCaron)  U+0323 > index(vDot,1) U+030C     c dot circumflex
+any(vNasal)  U+0323 > index(vDot,1) U+0303     c dot tilde
+
+any(vowel) U+0323 U+030B        > index(vDot,1) U+030B           c dot downstep
+any(vowel) U+0303 U+0301 U+0323 > index(vDot,1) U+0303 U+0301    c dot nasal acute
+any(vowel) U+0303 U+0304 U+0323 > index(vDot,1) U+0303 U+0304    c dot nasal macron
+any(vowel) U+0303 U+0300 U+0323 > index(vDot,1) U+0303 U+0300    c dot nasal grave
+any(vowel) U+0303 U+0302 U+0323 > index(vDot,1) U+0303 U+0302    c dot nasal circumflex
+any(vowel) U+0303 U+030C U+0323 > index(vDot,1) U+0303 U+030C    c dot nasal caron
+any(vowel) U+0303 U+030B U+0323 > index(vDot,1) U+0303 U+030B    c dot nasal downstep
+  

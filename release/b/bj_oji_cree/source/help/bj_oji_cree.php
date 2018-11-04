@@ -1,13 +1,8 @@
 <?php 
   $pagename = 'BJ-OjiCree (Kingfisher) Keyboard Help';
   $pagetitle = 'BJ-OjiCree (Kingfisher) Keyboard Help';
-  // Header we will tidy up later
   require_once('header.php');
 ?>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
 
   <p>Keyboard Copyright (c) 2016-2018 Bill Jancewicz</p>
   <section id='overview'>
@@ -156,5 +151,6 @@
     <ul>
       <li>Version 9.0.1 released 2016: Initial version</li>
       <li>Version 9.0.2 released 2018: Add touch keyboard to package</li>
+	    <li>Version 9.0.3 released 2018: Fixed one bug and added platform support for windows and macos</li>
     </ul>    
   </section>

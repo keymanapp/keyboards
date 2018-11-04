@@ -1,0 +1,294 @@
+﻿c Burmese Keyboard for Unicode Encoding.
+c MJPH  0.1     17-Sep-2008     Create kyu keyboard
+c MJPH  0.2     31-AUG-2009     Enforce good ordering for kyu
+c MJPH  0.3      4-SEP-2009     adjust layout and rewrite from scratch
+c MJPH  0.4     15-SEP-2009     Fix bugs and minor layout change
+
+store(&VERSION) "10.0"
+store(&NAME) "Kayah [Myanmar] (SIL)"
+store(&BITMAP) 'sil_kayah_mymr.ico'
+c store(&HOTKEY)  "^+N"
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'sil_kayah_mymr.kvks'
+store(&COPYRIGHT) '© 2014-2018 SIL International'
+
+begin Unicode > use(Main)
+c qwertyuiop[ is same as Win
+c asdfghjkl; is same as Win
+c zxcvbm is same as Win
+c currently _ is mapped to * but it is multiply in Win
+c , is U101A in both Win and here. ',' is < here
+c in Win 'P' is U100F, here at 'E' - Win's E is not needed anymore
+c W is now U101D - the symbol in Win at this position is not used
+c and includes U101D anyway
+c Duplicates/macros that aren't strictly necessary EKL:F$|
+c The medials are also can be created using stacking: GjsS
+c Pali characters that might need a location: U1050-1059
+c Some of the characters <.}]^ could be changed to make room
+c Should U101B, U1002 be moved somewhere more accessible e.g. R,U rather than &,*?
+store(baseK)    'qwertyuiop\' \
+                'QWERTOP|[]' \
+                'AKL:' \
+                'zxcvbn,' \
+                'ZXCVBN<>' \
+                '@#^&*`'
+
+store(baseU)    U+1006 U+1010 U+1014 U+1019 U+1021 U+1015 U+1000 U+1004 U+101E U+1005 U+00F7 \
+                U+005B U+101D U+103F U+1023 U+1024 U+1009 U+100F U+00D7 U+101F U+1027\
+                U+1017 U+1013 U+1012 U+104A \
+                U+1016 U+1011 U+1001 U+101C U+1018 U+100A U+101A \
+                U+1007 U+100C U+1003 U+1020 U+100B U+104F U+002C U+104B \
+                U+005D U+A92E U+002A U+101B U+1002 U+200B
+
+store(numK)     '1234567890'
+store(numU)     U+1041 U+1042 U+1043 U+1044 U+1045 U+1046 U+1047 U+1048 U+1049 \
+                U+1040
+
+c F is Kinzi - it should be possible to create a Kinzi
+store(kinziK)   'F'
+store(kinziU)   U+1004
+
+store(sDiaK)    'sjSG'
+store(sDiaU)    U+103B U+103C U+103E U+103D
+
+store(vowelEK)  'a'
+store(vowelEU)  U+1031
+
+store(uDiaK)    'dDfYUI'
+store(uDiaU)    U+102D U+102E U+1072 U+1073 U+1074 U+1034
+
+store(lDiaK)    'kl'
+store(lDiaU)    U+102F U+1030
+
+store(anuK)     'JH'
+store(anuU)     U+1032 U+1036
+
+store(ldotK)    'h'
+store(ldotU)    U+1037
+
+store(aftereK)  'mg;M'
+store(aftereU)  U+102C U+102B U+1038 U+1064
+
+c 25cc is added here to allow it to be used to show stand alone diacritics
+store(consU)    U+1000 U+1001 U+1002 U+1003 U+1004 U+1005 U+1006 U+1007 \
+                U+1008 U+1009 U+100A U+100B U+100C U+100D U+100E U+100F \
+                U+1010 U+1011 U+1012 U+1013 U+1014 U+1015 U+1016 U+1017 \
+                U+1018 U+1019 U+101A U+101B U+101C U+101D U+101E U+101F \
+                U+1020 U+1021 U+25CC
+store(consK)    'uc*CipqZ' \
+                  'NUn#X!@P' \
+                  "wx'" \
+                  '"eyzAbr,&vWo[' \
+                  'Vt'
+
+store(diaU)      outs(sDiaU) outs(uDiaU) outs(lDiaU) U+1031 outs(anuU)
+
+c split up diacritics - user shouldn't need to know canonical order
+c Y/R should be first and can't come together
+
+store(yDiaU)    U+103B
+store(rDiaU)    U+103C
+store(wDiaU)    U+103D
+store(hDiaU)    U+103E
+store(yrDiaU)   U+103B U+103C
+store(yrwDiaU)   U+103B U+103C U+103D
+
+store(yDiaK) 's'
+store(rDiaK) 'j'
+store(hDiaK) 'S'
+store(wDiaK) 'G'
+store(yrDiaK) outs(yDiaK) outs(rDiaK)
+
+store(m1DiaK)   's'
+store(m2DiaK)   'sj'
+store(m3DiaK)   'sjG'
+store(m4DiaK)   'sjGS'
+store(mDia)     U+103B U+103C U+103D U+103E
+
+c U+200B causes problems in OpenOffice, but Padauk now removes 200C/D,
+c so it doesn't have correct effect
+store(filler)   U+200B
+
+
+c create some classes for diacritics that might have been
+c sensibly typed before the user types the medial
+store(allDiaU)  U+1031 U+102F U+1030 U+102D U+1032 U+1036 U+1037 U+102E U+1072 U+1073 U+1074 U+1034
+c only a subset can correctly occur together
+c (U+1031 U+1037) (U+102D U+102F)
+c (U+102F U+1036) (U+1032 U+1037) (U+102D U+1036)
+store(firstDiaU) U+1031 U+102D U+102F U+1032
+store(secondDiaU) U+102F U+1036 U+1037
+c It is possible for U+102F U+102D U+1037 to occur,
+c but in this case its fairly obvious to type the medials
+c before the final U+1037
+
+store(stackK)   '`'
+store(stackU)   U+1039
+
+
+group(Main) using keys
+
+c Deal with vowel E before consonant
++ any(vowelEK) > outs(filler) outs(vowelEU)
+any(filler) U+1031 + any(baseK) > index(baseU, 3) U+1031
+c stacker key
+any(consU) + any(stackK) > outs(stackU) index(consU, 1)
+c rearrange vowel E to behind consonant in stacking situation
+c U+1031 U+101E U+101E + any(stackK) > U+103F U+1031
+U+1031 any(consU) + any(stackK) > outs(stackU) index(consU, 2) U+1031
+U+1005 U+1031 + any(yDiaK) > U+1008 U+1031
+
+c modify space keys
+ + [SHIFT K_SPACE] > U+200B
+
+c Convert sequences for composite vowels into single code point
+U+101E U+103C U+1031 U+102c + any(aftereK) > U+102A
+U+101E + 'j' > U+1029
+U+1025 + 'D' > U+1026
+U+1005 + 's' > U+1008
+
+ + any(numK) > index(numU, 1)
+ + any(baseK) > index(baseU, 1)
+ + any(aftereK) > index(aftereU, 1)
+
+c Now ensure correct ordering
+
+any(rDiaU) any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(yDiaK) > index(yDiaU, 9) context
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(yDiaK) > index(yDiaU, 8) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(yDiaK) > index(yDiaU, 7) context
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(yDiaK) > index(yDiaU, 6) context
+any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(yDiaK) > index(yDiaU, 5) context
+any(lDiaU) any(anuU) any(ldotU) + any(yDiaK) > index(yDiaU, 4) context
+any(anuU) any(ldotU) + any(yDiaK) > index(yDiaU, 3) context
+any(ldotU) + any(yDiaK) > index(yDiaU, 2) context
+any(rDiaU) any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(yDiaK) > index(yDiaU, 8) context
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(yDiaK) > index(yDiaU, 7) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(yDiaK) > index(yDiaU, 6) context
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(yDiaK) > index(yDiaU, 5) context
+any(uDiaU) any(lDiaU) any(anuU) + any(yDiaK) > index(yDiaU, 4) context
+any(lDiaU) any(anuU) + any(yDiaK) > index(yDiaU, 3) context
+any(anuU) + any(yDiaK) > index(yDiaU, 2) context
+any(rDiaU) any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) + any(yDiaK) > index(yDiaU, 7) context
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) + any(yDiaK) > index(yDiaU, 6) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) + any(yDiaK) > index(yDiaU, 5) context
+any(vowelEU) any(uDiaU) any(lDiaU) + any(yDiaK) > index(yDiaU, 4) context
+any(uDiaU) any(lDiaU) + any(yDiaK) > index(yDiaU, 3) context
+any(lDiaU) + any(yDiaK) > index(yDiaU, 2) context
+any(rDiaU) any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) + any(yDiaK) > index(yDiaU, 6) context
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) + any(yDiaK) > index(yDiaU, 5) context
+any(hDiaU) any(vowelEU) any(uDiaU) + any(yDiaK) > index(yDiaU, 4) context
+any(vowelEU) any(uDiaU) + any(yDiaK) > index(yDiaU, 3) context
+any(uDiaU) + any(yDiaK) > index(yDiaU, 2) context
+any(rDiaU) any(wDiaU) any(hDiaU) any(vowelEU) + any(yDiaK) > index(yDiaU, 5) context
+any(wDiaU) any(hDiaU) any(vowelEU) + any(yDiaK) > index(yDiaU, 4) context
+any(hDiaU) any(vowelEU) + any(yDiaK) > index(yDiaU, 3) context
+any(vowelEU) + any(yDiaK) > index(yDiaU, 2) context
+any(rDiaU) any(wDiaU) any(hDiaU) + any(yDiaK) > index(yDiaU, 4) context
+any(wDiaU) any(hDiaU) + any(yDiaK) > index(yDiaU, 3) context
+any(hDiaU) + any(yDiaK) > index(yDiaU, 2) context
+any(rDiaU) any(wDiaU) + any(yDiaK) > index(yDiaU, 3) context
+any(wDiaU) + any(yDiaK) > index(yDiaU, 2) context
+any(rDiaU) + any(yDiaK) > index(yDiaU, 2) context
++ any(yDiaK) > index(yDiaU, 1)
+
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(rDiaK) > index(rDiaU, 8) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(rDiaK) > index(rDiaU, 7) context
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(rDiaK) > index(rDiaU, 6) context
+any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(rDiaK) > index(rDiaU, 5) context
+any(lDiaU) any(anuU) any(ldotU) + any(rDiaK) > index(rDiaU, 4) context
+any(anuU) any(ldotU) + any(rDiaK) > index(rDiaU, 3) context
+any(ldotU) + any(rDiaK) > index(rDiaU, 2) context
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(rDiaK) > index(rDiaU, 7) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(rDiaK) > index(rDiaU, 6) context
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(rDiaK) > index(rDiaU, 5) context
+any(uDiaU) any(lDiaU) any(anuU) + any(rDiaK) > index(rDiaU, 4) context
+any(lDiaU) any(anuU) + any(rDiaK) > index(rDiaU, 3) context
+any(anuU) + any(rDiaK) > index(rDiaU, 2) context
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) + any(rDiaK) > index(rDiaU, 6) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) + any(rDiaK) > index(rDiaU, 5) context
+any(vowelEU) any(uDiaU) any(lDiaU) + any(rDiaK) > index(rDiaU, 4) context
+any(uDiaU) any(lDiaU) + any(rDiaK) > index(rDiaU, 3) context
+any(lDiaU) + any(rDiaK) > index(rDiaU, 2) context
+any(wDiaU) any(hDiaU) any(vowelEU) any(uDiaU) + any(rDiaK) > index(rDiaU, 5) context
+any(hDiaU) any(vowelEU) any(uDiaU) + any(rDiaK) > index(rDiaU, 4) context
+any(vowelEU) any(uDiaU) + any(rDiaK) > index(rDiaU, 3) context
+any(uDiaU) + any(rDiaK) > index(rDiaU, 2) context
+any(wDiaU) any(hDiaU) any(vowelEU) + any(rDiaK) > index(rDiaU, 4) context
+any(hDiaU) any(vowelEU) + any(rDiaK) > index(rDiaU, 3) context
+any(vowelEU) + any(rDiaK) > index(rDiaU, 2) context
+any(wDiaU) any(hDiaU) + any(rDiaK) > index(rDiaU, 3) context
+any(hDiaU) + any(rDiaK) > index(rDiaU, 2) context
+any(wDiaU) + any(rDiaK) > index(rDiaU, 2) context
++ any(rDiaK) > index(rDiaU, 1)
+
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(wDiaK) > index(wDiaU, 7) context
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(wDiaK) > index(wDiaU, 6) context
+any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(wDiaK) > index(wDiaU, 5) context
+any(lDiaU) any(anuU) any(ldotU) + any(wDiaK) > index(wDiaU, 4) context
+any(anuU) any(ldotU) + any(wDiaK) > index(wDiaU, 3) context
+any(ldotU) + any(wDiaK) > index(wDiaU, 2) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(wDiaK) > index(wDiaU, 6) context
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(wDiaK) > index(wDiaU, 5) context
+any(uDiaU) any(lDiaU) any(anuU) + any(wDiaK) > index(wDiaU, 4) context
+any(lDiaU) any(anuU) + any(wDiaK) > index(wDiaU, 3) context
+any(anuU) + any(wDiaK) > index(wDiaU, 2) context
+any(hDiaU) any(vowelEU) any(uDiaU) any(lDiaU) + any(wDiaK) > index(wDiaU, 5) context
+any(vowelEU) any(uDiaU) any(lDiaU) + any(wDiaK) > index(wDiaU, 4) context
+any(uDiaU) any(lDiaU) + any(wDiaK) > index(wDiaU, 3) context
+any(lDiaU) + any(wDiaK) > index(wDiaU, 2) context
+any(hDiaU) any(vowelEU) any(uDiaU) + any(wDiaK) > index(wDiaU, 4) context
+any(vowelEU) any(uDiaU) + any(wDiaK) > index(wDiaU, 3) context
+any(uDiaU) + any(wDiaK) > index(wDiaU, 2) context
+any(vowelEU) + any(wDiaK) > index(wDiaU, 2) context
++ any(wDiaK) > index(wDiaU, 1)
+
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(hDiaK) > index(hDiaU, 6) context
+any(uDiaU) any(lDiaU) any(anuU) any(ldotU) + any(hDiaK) > index(hDiaU, 5) context
+any(lDiaU) any(anuU) any(ldotU) + any(hDiaK) > index(hDiaU, 4) context
+any(anuU) any(ldotU) + any(hDiaK) > index(hDiaU, 3) context
+any(ldotU) + any(hDiaK) > index(hDiaU, 2) context
+any(vowelEU) any(uDiaU) any(lDiaU) any(anuU) + any(hDiaK) > index(hDiaU, 5) context
+any(uDiaU) any(lDiaU) any(anuU) + any(hDiaK) > index(hDiaU, 4) context
+any(lDiaU) any(anuU) + any(hDiaK) > index(hDiaU, 3) context
+any(anuU) + any(hDiaK) > index(hDiaU, 2) context
+any(vowelEU) any(uDiaU) any(lDiaU) + any(hDiaK) > index(hDiaU, 4) context
+any(uDiaU) any(lDiaU) + any(hDiaK) > index(hDiaU, 3) context
+any(lDiaU) + any(hDiaK) > index(hDiaU, 2) context
+any(vowelEU) any(uDiaU) + any(hDiaK) > index(hDiaU, 3) context
+any(uDiaU) + any(hDiaK) > index(hDiaU, 2) context
+any(vowelEU) + any(hDiaK) > index(hDiaU, 2) context
++ any(hDiaK) > index(hDiaU, 1)
+
+any(lDiaU) any(anuU) any(ldotU) + any(uDiaK) > index(uDiaU, 4) context
+any(anuU) any(ldotU) + any(uDiaK) > index(uDiaU, 3) context
+any(ldotU) + any(uDiaK) > index(uDiaU, 2) context
+any(lDiaU) any(anuU) + any(uDiaK) > index(uDiaU, 3) context
+any(anuU) + any(uDiaK) > index(uDiaU, 2) context
+any(lDiaU) + any(uDiaK) > index(uDiaU, 2) context
++ any(uDiaK) > index(uDiaU, 1)
+
+any(anuU) any(ldotU) + any(lDiaK) > index(lDiaU, 3) context
+any(ldotU) + any(lDiaK) > index(lDiaU, 2) context
+any(anuU) + any(lDiaK) > index(lDiaU, 2) context
++ any(lDiaK) > index(lDiaU, 1)
+
+any(ldotU) + any(anuK) > index(anuU, 2) context
++ any(anuK) > index(anuU, 1)
+
++ any(ldotK) > index(ldotU, 1)
+
++ any(kinziK) > index(kinziU, 1) U+103A U+1039 outs(filler)
+any(consU) + any(kinziK) > index(kinziU, 2) U+103A U+1039 index(consU, 1)
+
+any(filler) U+1031 + [K_BKSP] > nul
+any(baseU) U+1031 + [K_BKSP] > outs(filler) U+1031
+
+U+1004 U+103A U+1039 any(consU) U+1031 + [K_BKSP] > U+1004 U+103A U+1039 outs(filler) U+1031
+U+1004 U+103A U+1039 any(filler) U+1031 + [K_BKSP] > outs(filler) U+1031
+U+1004 U+103A U+1039 any(filler) + [K_BKSP] > nul
+U+1039 any(consU) U+1031 + [K_BKSP] > U+1031
+U+1039 any(consU) + [K_BKSP] > nul
+
+c coverage test backup rules
++ any(vowelEK) > index(vowelEU, 1)

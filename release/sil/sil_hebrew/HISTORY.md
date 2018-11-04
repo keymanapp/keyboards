@@ -1,5 +1,10 @@
-SIL Hebrew Keyboard Change History
+Hebrew (SIL) Keyboard Change History
 =======================
+
+1.7.1 (14 Sept 2018)
+-----------------
+* Rename keyboard
+* Add support for linux as target
 
 1.7 (17 May 2018)
 -----------------
