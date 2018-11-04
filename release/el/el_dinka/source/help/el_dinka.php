@@ -1,27 +1,36 @@
 <?php
-  $pagename = 'Dinka Basic (DLIA) Keyboard Help';
-  $pagetitle = 'Dinka Basic (DLIA) Keyboard Help';
+  $pagename = 'Thuɔŋjäŋ Keyboard Help';
+  $pagetitle = 'Thuɔŋjäŋ Keyboard Help';
   require_once('header.php');
 ?>
 
-<h1>Dinka Basic (DLIA)</h1>
+<p>A keyboard layout for the Dinka language.</p>
+<h2>Layout</h2>
+<h3>Default</h3>
+<p><img src="el_dinkaU_.png" alt="Thuɔŋjäŋ keyboard layout: default state"/></p>
 
-<p>Dinka Unicode keyboard layout for the Dinka Language Institute, Australia.</p>
+<h3>Shift</h3>
+<p><img src="el_dinkaU_S.png" alt="Thuɔŋjäŋ keyboard layout: shift state"/></p>
 
-<p><img src="dinka_keyboard.png" alt="Keyboard layout"/></p>
+<h3>AltGr (Right Alt)</h3>
+<p><img src="el_dinkaU_RA.png" alt="Thuɔŋjäŋ keyboard layout: AltGr state"/></p>
 
-<p>The help page for Dinka Basic (DLIA) can be found <a href='https://help.keyman.com/keyboard/dinkaweb11/'>here</a>.</p>
+<h3>Shift+AltGr (Right Alt)</h3>
+<p><img src="el_dinkaU_SRA.png" alt="Thuɔŋjäŋ keyboard layout: Shift+AltGr state"/></p>
 
-<h2>Change History</h2>
+<h2>Usage notes</h2>
 
-<p>2017-08-15 2.6: Published to github and added the on-screen keyboard</p>
-<p>2.5 basic: Cutdown version without the Caps Lock toggle to qwerty keyboard layout.</p>
-<p>2.5 academic: Added requirements for academic use of Dinka, i.e. add phonetic characters and diacritics used by various linguists.</p>
-<p>2.5: Bug fix</p>
-<p>2.4: Reassigned the diaeresis key</p>
-<p>2.3: Modified the logic of the 'backspace' key sequences.</p>
-<p>2.2: Streamline input of long breathy vowels; 'vvd' instead of 'vdvd', where 'v' = vowel and 'd' = diaeresis</p>
-<p>2.1: Added CAPS LOCK toggle between US QWERTY layout and Dinka layout</p>
+<h3>Long breathy vowels</h3>
 
-<p>&copy; 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia</p>
+<p>There are a few optimisations for typing long breathey vowels. There is the default way, pressing the key for the base vowel and then the diaeresis key, then repeating, ie to type <strong>ᴐ̈ᴐ̈</strong> you would type <kbd>x</kbd><kbd>;</kbd><kbd>x</kbd><kbd>;</kbd>.
+They keyboard will also allow you to type <kbd>x</kbd><kbd>x</kbd><kbd>;</kbd> to generate <strong>ᴐ̈ᴐ̈</strong>.</p>
 
+<p>On touch devices (iPad, iPhone, Android phones and tablets), breathy vowels and long breathy vwoels can be entered by holding down the vowel key (refered to as longpress). The iPad and Android tablets also have a diaeresis key to allow typing similar to a desktop computer or laptop.</p>
+
+<h3>Backspace key</h3>
+
+<p><kbd>Back Space</kbd> will delete a single letter, including breathy vowels.</p>
+
+<p><kbd>Shift</kbd><kbd>Back Space</kbd> will delete the diaeresis from a breathy vowel</p>
+
+<p><kbd>Ctrl</kbd><kbd>Back Space</kbd> will delete a long breathy vowel</p>

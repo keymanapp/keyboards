@@ -12,8 +12,8 @@ store(&copyright) '© SIL International'
 store(&hotkey) '[CTRL ALT K_U]'  
 store(&TARGETS) 'any'
 store(&ETHNOLOGUECODE) 'amj bbz shu arb sjg bmi bva bjv bxv bes bid btf bvo glc bvf bub bdm bso cds dgk djc dau daa dai dzg dsi fni fgr fra fub fui fuv fvr gab gdk gid gqr goy glu glj gvl hau hed hor jyy jeu ksp kwg kwv kvf ckq kbl knc kzr kth klf kyq ker kie kia kqp kou vkj kxj xuo kvi gdm kot lap lln ndy mde muj xmj mxf mcs mge mgb mpg mvu mls mcn msv mes mdg mcw mpk myb zim mmy mlj mou bdo mpi kqx mub moz mvh mua mse mug mje mne nnc ndm nmc sba nnn nie noy nzy pnz lme rou saa sag mwm swy sys sok sor sbj tma tax tuq tng trj tmc tug tui ubi zag zna zrn'
-store(&LAYOUTFILE) 'sil_tchad-layout.js'
-store(&KEYBOARDVERSION) '3.3'
+store(&LAYOUTFILE) 'sil_tchad.keyman-touch-layout'
+store(&KEYBOARDVERSION) '3.3.2'
 store(&VISUALKEYBOARD) 'sil_tchad.kvks'
 
 begin Unicode > use(Main)
@@ -122,6 +122,7 @@ U+2117 + '@' > '®'   c REGISTERED_SIGN, can be typed ';@@@@'
 U+02D0 + ':' > U+02D1  c turn full length to half length by typing colon again
 U+0294 + '?' > U+0295  c turn glottal into PHARYNGEAL_VOICED_FRICATIVE by typing '?' again
 
+c Handle touch platform special character taps
 platform('touch') + [T_a_U_0330] > 'a' U+0330
 platform('touch') + [T_a_U_0327] > 'a' U+0327
 platform('touch') + [SHIFT T_a_U_0330] > 'A' U+0330
@@ -144,6 +145,10 @@ platform('touch') + [SHIFT T_u_U_0330] > 'U' U+0330
 platform('touch') + [SHIFT T_u_U_0327] > 'U' U+0327
 platform('touch') + [T_n_U_0330] > 'n' U+0330
 platform('touch') + [SHIFT T_n_U_0330] > 'N' U+0330
+platform('touch') + [T_c_U_030C] > 'c' U+030C
+platform('touch') + [SHIFT T_c_U_030C] > 'C' U+030C
+platform('touch') + [T_s_U_030C] > 's' U+030C
+platform('touch') + [SHIFT T_s_U_030C] > 'S' U+030C
 platform('touch') + [T_r_U_0330] > 'r' U+0330
 platform('touch') + [SHIFT T_r_U_0330] > 'R' U+0330
 

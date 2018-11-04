@@ -1,12 +1,12 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) "Khmer Angkor"
-store(&COPYRIGHT) '© 2017-2018 SIL International'
+store(&COPYRIGHT) '© 2015-2018 SIL International'
 store(&MESSAGE) "More than just a Khmer Unicode keyboard."
-store(&VISUALKEYBOARD) 'khmer_angkor.kvk'
 store(&TARGETS) 'any windows'
 store(&LAYOUTFILE) 'khmer_angkor-layout.js'
-store(&KEYBOARDVERSION) '1.0.3'
+store(&KEYBOARDVERSION) '1.0.5'
 store(&BITMAP) 'khmer_angkor.ico'
+store(&VISUALKEYBOARD) 'khmer_angkor.kvks'
 
 begin Unicode > use(main)
 
@@ -98,7 +98,7 @@ store(latin_punct_out)       U+00AB U+00BB U+0028 U+0029 U+0021 U+0022 \
     	                     U+003C U+003E U+0023 U+0026   
 c white space, ZWSP, ZWJ
 store(spaces_key)   	   	 [K_SPACE] [SHIFT K_SPACE] [RALT K_SPACE]
-store(spaces_out)    	     U+200B U+0020 U+200D             
+store(spaces_out)    	     U+200B U+0020 U+00A0             
 
 c Currency: Riel, Dollar and Euro
 
@@ -173,26 +173,6 @@ store(c_combo_QA)      U+1786 U+1788 U+1794 U+1795 \
                        U+178F U+1791               c they can be combined with U+17A2 to make a 1st series consonant cluster.
 store(c_combo_HA)      U+179C U+17A3               c they can be combined with U+17A0 to make a 1st series consonant cluster.  
 
-c stores for the constraints on the consonant shifter and consonant clusters.
-
-c store(c_combo_KA)        U+178A U+1793 U+1798 U+179A U+179C
-c store(c_combo_KHA)       U+1785 U+1784 U+178F U+1793 U+1798 U+179B U+179C
-c store(c_combo_CA)        U+1793 U+179A
-c store(c_combo_CHA)       U+1780 U+1784 U+1793 U+1798 U+179B U+179C
-c store(c_combo_THA)       U+1780 U+1784 U+1793 U+1798 U+179B U+179C
-c store(c_combo_BA)        U+179A U+179B
-c store(c_combo_PHA)       U+1780 U+1784 U+1791 U+1789 U+178F U+1793 U+179B U+179F
-c store(c_combo_SA_prime)  U+1780 U+178F U+178A
-c store(c_combo_KHA_prime) U+1787 U+1791
-c store(c_combo_KO)        U+1793 U+1798 U+179A U+179C
-c store(c_combo_KHO)       U+1789 U+1793 U+1798 U+179B U+179C
-c store(c_combo_CO)        U+179A U+179C
-c store(c_combo_CHO)       U+1784 U+1793 U+1798 U+179B U+179C
-c store(c_combo_THO)       U+1784 U+1793 U+1798 U+179B U+179C
-c store(c_combo_PHA_prime) U+1782 U+1791
-c store(c_combo_PO)        U+1793 U+179A U+179B
-c store(c_combo_PHO)       U+1784 U+1787 U+1789 U+1793 U+179B U+179F
-
 
 
 c ==============================================BASIC RULES & CONSTRAINTS/ROTATIONS==============================================
@@ -238,6 +218,10 @@ U+17C7 + [SHIFT K_H]            > U+17C8       	   c U+17C7 is changed to U+17C8
 U+17C8 + [SHIFT K_H]            > U+17C7       	   c U+17C8 is changed to U+17C7 when K_H is pressed.
 c any(v_gen) U+17C7 + [SHIFT K_H] > context beep     c Don't rotate between U+17C7 and U+17C8.
 
+c Press Space twice to get a White Space
+
+U+200B + [K_SPACE]  	> U+0020
+
 c One backspace deletes a two-part vowels (i.e. psuedoVowel + U+17C7)
 
 any(v_combo_N) U+17C6 + [K_BKSP] > nul
@@ -267,39 +251,6 @@ c 2nd series consonant clusters
 
 U+179B U+17D2 any(c_2nd_combo_LO) + [K_SLASH] > context U+17CA beep
 U+1798 U+17D2 any(c_2nd_combo_MO) + [K_SLASH] > context U+17CA beep
-   
-c no consonant shifter is allowed in the following consonant clusters
-
-c 1st series consonant clusters --never accept any consonant shifter
-
-c U+1780 U+17D2 any(c_combo_KA) + any(c_shifter_key)       > context beep
-c U+1781 U+17D2 any(c_combo_KHA) + any(c_shifter_key)      > context beep
-c U+1785 U+17D2 any(c_combo_CA) + any(c_shifter_key)       > context beep
-c U+1786 U+17D2 any(c_combo_CHA) + any(c_shifter_key)      > context beep
-c U+178F U+17D2 U+179A + any(c_shifter_key)                > context beep
-c U+1790 U+17D2 any(c_combo_THA) + any(c_shifter_key)      > context beep
-c U+1794 U+17D2 any(c_combo_BA) + any(c_shifter_key)       > context beep
-c U+1795 U+17D2 any(c_combo_PHA) + any(c_shifter_key)      > context beep
-c U+1798 U+17D2 U+1791 + any(c_shifter_key)                > context beep
-c U+179B U+17D2 U+1780 + any(c_shifter_key)                > context beep
-c U+179F U+17D2 any(c_combo_SA_prime) + any(c_shifter_key) > context beep
-
-c 2nd series consonant clusters --never accept any consonant shifter
-
-c U+1780 U+17D2 U+178C + any(c_shifter_key)                 > context beep
-c U+1781 U+17D2 any(c_combo_KHA_prime) + any(c_shifter_key) > context beep
-c U+1782 U+17D2 any(c_combo_KO) + any(c_shifter_key)        > context beep
-c U+1783 U+17D2 any(c_combo_KHO) + any(c_shifter_key)       > context beep
-c U+1786 U+17D2 U+1782 + any(c_shifter_key)                 > context beep
-c U+1787 U+17D2 any(c_combo_CO) + any(c_shifter_key)        > context beep
-c U+1788 U+17D2 any(c_combo_CHO) + any(c_shifter_key)       > context beep
-c U+1790 U+17D2 U+1782 + any(c_shifter_key)                 > context beep
-c U+1791 U+17D2 U+179A + any(c_shifter_key)                 > context beep
-c U+1792 U+17D2 any(c_combo_THO) + any(c_shifter_key)       > context beep
-c U+1795 U+17D2 any(c_combo_PHA_prime) + any(c_shifter_key) > context beep
-c U+1796 U+17D2 any(c_combo_PO) + any(c_shifter_key)        > context beep
-c U+1797 U+17D2 any(c_combo_PHO) + any(c_shifter_key)       > context beep
-
 
 
 c ==============================================MOBILE/TABLET TOUCH LAYOUT==============================================
@@ -310,15 +261,18 @@ c ==============================================MOBILE/TABLET TOUCH LAYOUT======
 
 c delete a subscript (a subscript sign + a consonant) upon a backspace
 
-platform('touch') U+17D2 any(c_out) + [K_BKSP] > nul 	c not working
-platform('web') U+17D2 any(c_out) + [K_BKSP] > nul     c not working
+platform('touch') U+17D2 any(c_out) + [K_BKSP] > nul 	c working OK 
 
-c + [K_NPSTAR]        > U+002A
-c + [SHIFT K_NPSTAR]  > U+002A
-c + [K_NPPLUS]        > U+002B
-c + [SHIFT K_NPPLUS]  > U+002B
-c + [K_NPMINUS]       > U+002D
-c + [SHIFT K_NPMINUS] > U+002D
+ + [K_NPSTAR]        > U+002A
+ + [SHIFT K_NPSTAR]  > U+002A
+ + [K_NPPLUS]        > U+002B
+ + [SHIFT K_NPPLUS]  > U+002B
+ + [K_NPMINUS]       > U+002D
+ + [SHIFT K_NPMINUS] > U+002D
+ + [K_NPDOT]  	   	 > U+002E 
+ + [SHIFT K_NPDOT]   > U+002E      
+ + [K_NPSLASH]  	 > U+002F 
+ + [SHIFT K_NPSLASH] > U+002F
  
 
 

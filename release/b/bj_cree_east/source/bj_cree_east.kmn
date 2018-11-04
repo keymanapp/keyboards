@@ -36,13 +36,13 @@ c updated stores for developer version 9.0
 
 store(&VERSION) '9.0'
 store(&NAME) "BJCreeUNI (east)"
-store(&BITMAP) 'cree3u.bmp'
-store(&COPYRIGHT) 'Copyright (c) April 2016 Bill Jancewicz NDC/SIL©©'
+store(&BITMAP) 'bj_cree_east.ico'
+store(&COPYRIGHT) 'Copyright (c) April 2016-2018 Bill Jancewicz NDC/SIL'
 store(&MESSAGE) "This keyboard may be freely used and redistributed"
 store(&ETHNOLOGUECODE) 'crl'
 store(&TARGETS) 'windows macosx linux web iphone'
-store(&VISUALKEYBOARD) 'bj_cree_east.kvk'
-store(&KEYBOARDVERSION) '9.0.2'
+store(&VISUALKEYBOARD) 'bj_cree_east.kvks'
+store(&KEYBOARDVERSION) '9.0.3'
 
 begin Unicode > use(main)
 
@@ -51,11 +51,11 @@ c ================================================================
 c STORES
 c ================================================================
 
-c initial consonant keys (The Î is U+1525 which is the sh consonant)
-c (The ÿ is U+1525 which is the th consonant)
+c initial consonant keys which can be typed on keyboard
+store(ConsKey)    "ptkcmnlsyrf"
+store(CapConsKey) "PTKCMNLSYRF"
+store(CCKey)      U+1449 U+1466 U+1483 U+14A1 U+14BB U+14D0 U+14EA U+1505 U+153E U+1550 U+155D
 
-store(ConsKey) "ptkcmnlsÎyrfÿ"
-store(CapConsKey) "PTKCMNLSÎYRFÿ"
 
 c Consonant followed by vowel:
 c p      t      k      c      m      n      l      s      sh     y      r      f      th
@@ -112,9 +112,9 @@ c otherwise, h      > standalone h
          + any(Hkey)      > U+1426
          + any(CapHkey)   > U+1426
 
-c Consonant key to standalone consonant:
-    + any(ConsKey)    > index(CC,1)
-    + any(CapConsKey) > index(CC,1)
+c Consonant key to standalone consonant (change CC store to CCKey store):
+    + any(ConsKey)    > index(CCKey,1)
+    + any(CapConsKey) > index(CCKey,1)
 
 c Alternate consonants: (voiced for voiceless)
     + "b" > U+1449

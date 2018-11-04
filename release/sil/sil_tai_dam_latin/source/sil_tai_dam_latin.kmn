@@ -1,0 +1,144 @@
+﻿c The Tai Dam Latin orthography is based on the Vietnamese alphabet.
+c Layout is optimized for most frequent Tai Dam tone marks.
+c Keyboard produces NFD data.
+
+c =====================================================================
+c Press a key twice to produce the character originally assigned to it.
+c =====================================================================
+
+store(&version) '9.0'
+store(&NAME) 'Tai Dam Latin (SIL)'
+store(&BITMAP) 'sil_tai_dam_latin.ico'
+store(&COPYRIGHT) 'Copyright © 2009-2018 SIL International'
+store(&ETHNOLOGUECODE) 'blt'    
+store(&MESSAGE) 'Latin-script keyboard for Tai Dam language'
+store(&KEYBOARDVERSION) '1.4'
+
+store(&VISUALKEYBOARD) 'sil_tai_dam_latin.kvks'
+store(&TARGETS) 'windows macosx linux'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(VowelBase) "aAeEiIoOuU"
+store(VowelDiacritic) U+0302 U+0306 U+031B  					c combining circumflex, breve, and horn
+store(ToneDiacritic) U+0300 U+0301 U+0303 U+0304 U+0309 U+0323	c combining grave, acute, tilde, macron, hook, dot below
+
+
+c Vowels and consonants
++ 'z'            > 'a' U+0306   c a + combining breve
++ 'Z'            > 'A' U+0306   c A + combining breve 
+'a' U+0306 + 'z' > 'z'
+'A' U+0306 + 'Z' > 'Z'
+
++ 'x'               > U+0111  	            c d with stroke 
++ 'X'               > U+0110  	            c D WITH STROKE      
+U+0111 + 'x'        > 'x'
+U+0110 + 'X'        > 'X'
+
++ 'w'               > 'e' U+0302            c e + combining circumflex
++ 'W'               > 'E' U+0302            c E + combining circumflex
+'e' U+0302 + 'w'    > 'w'
+'E' U+0302 + 'W'    > 'W'
+
++ '['               > 'o' U+0302  	        c o + combining circumflex
++ '{'               > 'O' U+0302            c O + combining circumflex  
+'o' U+0302 + '['    > '['
+'O' U+0302 + '{'    > '{'
+
++ "'"               > 'o' U+031B  	        c o + combining horn     
++ '"'               > 'O' U+031B            c O + combining horn        
+'o' U+031B + "'"    > "'"
+'O' U+031B + '"'    > '"'
+
++ 'j'               > 'u' U+031B            c u + combining horn     
++ 'J'               > 'U' U+031B            c U + combining horn        
+'u' U+031B + 'j'    > 'j'
+'U' U+031B + 'J'    > 'J'
+
+any(VowelBase) + '^' > context U+0302        c Vowel + combining circumflex
+U+0302 + '^'         > '^'   
+'=' + '^'   	   	 > U+0302
+any(ToneDiacritic) + '^' > U+0302 context    c the combining tone should follow the combining circumflex
+
+c Tai Dam tone class:
++ 'r'               > U+A78C  	             c tone 4-6 (latin small letter saltillo) 
++ 'R'               > U+A78C  	             c tone 4-6 (latin small letter saltillo) 
+U+A78C + 'r'        > 'r'
+U+A78C + 'R'        > 'R'
+                    
+c Tai Dam combining tones:
+c Acute, Hook, and Dot below are context sensitive.
+c E.g.
+c 'f' after a vowel > acute
+c 'f' after a consonant > 'f'
+c '=' + 'f' > acute (i.e. the '=' is removed. This enables one to force
+c an acute anywhere. e.g. 's' + '=' + 'f' > 's' + acute)
+c The same pattern is used for Hook and Dot below.
+any(VowelBase) + 'f'   > context U+0301        c Acute       
+any(VowelBase) + 'F'   > context U+0301
+any(VowelDiacritic) + 'f' > context U+0301
+any(VowelDiacritic) + 'F' > context U+0301
+U+0301 + 'f'        > 'f'           
+U+0301 + 'F'        > 'F'                         
+'=' + 'f'   	   	> U+0301
+'=' + 'F'   	   	> U+0301
+
+any(VowelBase) + 'd'   > context U+0309        c Hook    
+any(VowelBase) + 'D'   > context U+0309
+any(VowelDiacritic) + 'd' > context U+0309
+any(VowelDiacritic) + 'D' > context U+0309
+U+0309 + 'd'        > 'd'
+U+0309 + 'D'        > 'D'
+'=' + 'd'   	   	> U+0309
+'=' + 'D'   	   	> U+0309
+          
+any(VowelBase) + ';'   > context U+0323        c Dot below
+any(VowelBase) + ':'   > context U+0323
+any(VowelDiacritic) + ';' > context U+0323
+any(VowelDiacritic) + ':' > context U+0323
+U+0323 + ';'        > ';'
+U+0323 + ':'        > ':'
+'=' + ';'   	   	> U+0323
+'=' + ':'   	   	> U+0323
+                  
+
+c VN and White Tai tones
+c In addition to the TD tones, VN uses grave and tilde; Donaldson's WT orthography uses tilde and macron.
+any(VowelBase) + '~' > context U+0303		c Vowel + combining tilde
+any(VowelDiacritic) + '~' > context U+0303	c (assumed VowelBase) + combining VowelDiacritic + combining tilde
+U+0303 + '~'              > '~'     
+'=' + '~'   	   	   	  > U+0303
+
+any(VowelBase) + '_' > context U+0304		c Vowel + combining macron
+any(VowelDiacritic) + '_' > context U+0304	c (assumed VowelBase) + combining VowelDiacritic + combining macron
+U+0304 + '_'              > '_'
+'=' + '_'   	   	   	  > U+0304
+
+any(VowelBase) + '`' > context U+0300		c Vowel + combining grave
+any(VowelDiacritic) + '`' > context U+0300	c (assumed VowelBase) + combining VowelDiacritic + combining grave
+U+0300 + '`'              > '`'
+'=' + '`'   	   	   	  > U+0300
+
+
+c Punctuation
++ '!'               > U+201c  	            c Left Double Quote   
+U+201c + '!'        > '!'
+
++ '@'               > U+201d  	            c Right Double Quote    
+U+201d + '@'        > '@'
+
++ '$'               > U+2018  	            c Left Single Quote     
+U+2018 + '$'        > '$'
+
++ '%'               > U+2019  	            c Right Single Quote    
+U+2019 + '%'        > '%'                            
+
++ '-'               > U+2011                c Non-breaking Hyphen
+U+2011 + '-'        > '-'
+
++ [ CTRL SHIFT K_SPACE ] > U+00A0           c No-Break Space
+                
+'(' + ')'   	   	> U+25cc   	   	   	   	c Dotted circle
+
+c EOF

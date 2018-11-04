@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1111.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -19,7 +20,7 @@
     <Name URL="">BJ-OjiCree (Kingfisher)</Name>
     <Copyright URL="">Copyright © 2016-2018 Bill Jancewicz NDC/SIL</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
-    <WebSite URL="http://keyman.com/">http://keyman.com/</WebSite>
+    <WebSite URL="https://help.keyman.com/keyboard/bj_oji_cree">https://help.keyman.com/keyboard/bj_oji_cree</WebSite>
   </Info>
   <Files>
     <File>
@@ -46,14 +47,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>bjcrus.ttf</Name>
+      <Description>Font BJCree UNI</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>bjcrusb.ttf</Name>
+      <Description>Font BJCree UNI Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>BJ-OjiCree (Kingfisher)</Name>
       <ID>bj_oji_cree</ID>
-      <Version>9.0.2</Version>
+      <Version>9.0.3</Version>
       <Languages>
-        <Language ID="ojs-Cans">Severn Ojibwa</Language>
+        <Language ID="ojs-Cans">Severn Ojibwa (Unified Canadian Aboriginal Syllabics)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

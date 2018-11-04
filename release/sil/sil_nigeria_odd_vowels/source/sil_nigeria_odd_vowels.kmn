@@ -1,0 +1,160 @@
+﻿c Nigeria Unicode Odd Vowels with Nasality Keyboard
+c modified Sept 2006 script a and g removed. No longer needed because of the Literacy fonts
+c modified Dec 2005 (standardized for uploading to Tavultesoft)
+c This keyboard adds nasality to the standard Nigeria Odd Vowels keyboard. This 
+c limits keystroke flexibility and is not offered unless specifically needed.                 
+c Modified from NBTT Unicode Odd Vowels Keyboard Aug 2005  Nasality added to vowels (deadkeys are NOT reorderable)
+c modified from NBTT Unicode Keyboard May 2005, 
+c created by Heidi Rosendall, March 2004 
+c This is the keyboard for odd vowels like epsilon and schwa, and etc.
+   
+
+store(&VERSION) '9.0'
+store(&NAME) 'Nigeria Odd Vowels (SIL)'
+store(&BITMAP) 'sil_nigeria_odd_vowels.ico'
+
+store(&COPYRIGHT) '2004-2018 SIL International'
+store(&ETHNOLOGUECODE) 'agc bqp bwr cky hbb hia hig idu jen kby kez mbu sur'
+store(&TARGETS) 'windows macosx web'
+store(&VISUALKEYBOARD) 'sil_nigeria_odd_vowels.kvks'
+store(&HOTKEY) '[CTRL ALT K_N]'
+store(&KEYBOARDVERSION) '1.5'
+
+begin Unicode	>	use(Main)
+store(Let2BMod) "bcdhkmnyzBCDGKLMNXY$?*"      
+store(ModLet)	"ɓçɗɦƙɲŋƴʒƁÇƊɣƘ£ƝŊƎƳ₦ʔ°" 
+store(vowel)	"aeiouAEIOU"                       
+store(vAcute)	"áéíóúÁÉÍÓÚ"                      
+store(vMid)	"āēīōūĀĒĪŌŪ"                      
+store(vGrave)	"àèìòùÀÈÌÒÙ"                       
+store(vCircum)	"âêîôûÂÊÎÔÛ"                      
+store(vCaron)	"ǎěǐǒǔǍĚǏǑǓ"
+store(vNasal)	"ãẽĩõũÃẼĨÕŨ"
+store(Vowel2BMod)	"eiouwEIOUW"
+store(ModVowel)	"ɛɨɔǝʊƐƗƆƏƱ"   
+store(cNasal)	"mnMN"                   
+store(nAcute)	"ḿńḾŃ"                         
+store(LetN)	"nN"                         
+store(nGrave)	"ǹǸ"                            
+store(nCaron)	"ňŇ"      
+store(nNasal)	"ñÑ"         
+ 
+group(main) using keys      
+c DEADKEYS   
+c 	single deadkeys
++ ";"	> deadkey(modlet)     c applies to vowels and let2bmod
++ "'"	> deadkey(acute)
++ "-"	> deadkey(mid)
++ "`"	> deadkey(grave) 
++ "^"	> deadkey(circum)
++ "&"	> deadkey(caron) 
++ "!"	> deadkey(downstep) 
++ "~"	> deadkey(nasal)
+
+         c single deadkeys are cleared when typed twice
+dk(modlet)	+ ";"	>  ";"
+U+02BB	+  "'"	>  "'"     c because this dk turns into U+02BB, this must be typed 3x
+dk(mid)	+ "-"	>  "-" 
+dk(grave)	+ "`"	>  "`" 
+dk(circum)	+ "^"	>  "^" 
+dk(caron)	+ "&"	>  "&"     
+dk(downstep) + "!"	>  "!"                    
+dk(nasal)	+ "~"	>  "~"
+         
+          c  1st set (;) combo deadkeys  for tones on odd vowels (modlet + tone is the only order)
+dk(modlet) + "'"	>  deadkey(oddAcute)
+dk(modlet) + "-"	>  deadkey(oddMid)
+dk(modlet) + "`"	>  deadkey(oddGrave)
+dk(modlet) + "^"	>  deadkey(oddCircum)
+dk(modlet) + "&"	>  deadkey(oddCaron)
+dk(modlet) + "!"	>  deadkey(oddDownstep)
+dk(modlet) + "~"	>  deadkey(oddNasal)
+
+      c 2nd set (~) combo deadkeys for nasality and tone on regular vowels (nasal + tone is the only order)
+dk(nasal) + "'"	>  deadkey(nasalAcute)
+dk(nasal) + "-"	>  deadkey(nasalMid)
+dk(nasal) + "`"	>  deadkey(nasalGrave)
+dk(nasal) + "^"	>  deadkey(nasalCircum)
+dk(nasal) + "&"	>  deadkey(nasalCaron)
+dk(nasal) + "!"	>  deadkey(nasalDownstep)
+
+    c 3rd set combo deadkeys for nasality and tone on odd vowels (order DOES matter)
+dk(oddNasal) + "'"	>  deadkey(oddNasalAcute)
+dk(oddNasal) + "-"	>  deadkey(oddNasalMid)
+dk(oddNasal) + "`"	>  deadkey(oddNasalGrave)
+dk(oddNasal) + "^"	>  deadkey(oddNasalCircum)
+dk(oddNasal) + "&"	>  deadkey(oddNasalCaron)
+dk(oddNasal) + "!"	>  deadkey(oddNasalDownstep)
+
+c  ASSIGNMENTS
+c 	plain letters are modified
+dk(modlet) + any(Let2BMod)	>  index(ModLet,2)     
+dk(modlet) + any(Vowel2BMod)	>  index(ModVowel,2)  
+dk(acute)	+ "'"		> U+02BB c alphabetic turned comma is two acute accents
+                                            
+c 	plain vowels & nasal consonants are tone marked or nasalized
+dk(acute)	+ any(vowel)	> index(vAcute,2)   
+dk(acute)	+ any(cNasal)	> index(nAcute,2)        
+dk(mid)	+ any(vowel)	> index(vMid,2)        
+dk(mid)	+ any(cNasal)	> index(cNasal,2) U+0304  
+dk(grave)	+ any(vowel)	> index(vGrave,2)    
+dk(grave)	+ any(LetN)	> index(nGrave,2)  
+dk(grave)	+ "m"		> "m" U+0300  
+dk(grave)	+ "M"		> "M" U+0300 
+dk(circum)	+ any(vowel)	> index(vCircum,2)  
+dk(circum)	+ any(cNasal)	> index(cNasal,2) U+0302 
+dk(caron)	+ any(vowel)	> index(vCaron,2)     
+dk(caron)	+ any(LetN)	> index(nCaron,2)                                   
+dk(caron)	+ "m"		> "m" U+030C   
+dk(caron)	+ "M"		> "M" U+030C                                                  
+dk(downstep) + any(vowel)	> index(vowel,2) U+030B use(NFC)
+dk(downstep) + any(cNasal)	> index(cNasal,2) U+030B  
+dk(downstep) + "m"		> "m" U+030B
+dk(downstep) + "N"		> "N" U+030B             
+dk(downstep) + "n"		> "n" U+030B
+dk(downstep) + "M"		> "M" U+030B
+dk(nasal)	+ any(vowel)	> index(vNasal,2)
+dk(nasal)	+ any(LetN)	> index(nNasal,2)
+dk(nasal) 	 + "m"			> "m" U+0303
+dk(nasal) 	 + "M"			> "M" U+0303
+                                                                
+ c 	odd vowels are tone marked or nasalized
+dk(oddAcute)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0301
+dk(oddMid)	    + any(Vowel2BMod)	>  index(ModVowel,2) U+0304
+dk(oddGrave)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0300
+dk(oddCircum)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0302
+dk(oddCaron)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+030C      
+dk(oddDownstep)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+030B                                                         
+dk(oddNasal)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0303
+
+c 	tonemarked vowels are nasalized
+dk(nasalAcute)	  + any(vowel)	> index(vNasal,2) U+0301  use(NFC)
+dk(nasalMid)	  + any(vowel)	> index(vNasal,2) U+0304
+dk(nasalGrave)	  + any(vowel)	> index(vNasal,2) U+0300
+dk(nasalCircum)	  + any(vowel)	> index(vNasal,2) U+0302
+dk(nasalCaron)	  + any(vowel)	> index(vNasal,2) U+030C
+dk(nasalDownstep) + any(vowel)	> index(vNasal,2) U+030B
+
+c 	odd tonemarked vowels are nasalized
+dk(oddNasalAcute)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0303 U+0301
+dk(oddNasalMid)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0303 U+0304
+dk(oddNasalGrave)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0303 U+0300
+dk(oddNasalCircum)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0303 U+0302
+dk(oddNasalCaron)	+ any(Vowel2BMod)	>  index(ModVowel,2) U+0303 U+030C
+dk(oddNasalDownstep)+ any(Vowel2BMod) > index(ModVowel,2) U+0303 U+030B
+
+c begin NFC group
+c ***************************************************
+
+group(NFC)
+
+
+U+004F U+030B > U+0150 c O double acute
+U+006F U+030B > U+0151 c o double acute
+U+0055 U+030B > U+0170 c U double acute
+U+0075 U+030B > U+0171 c u double acute
+
+U+00F5 U+0301 > U+1E4D c o tilde acute
+U+00D5 U+0301 > U+1E4C c O tilde acute
+U+0169 U+0301 > U+1E79 c u tilde acute
+U+0168 U+0301 > U+1E78 c U tilde acute
