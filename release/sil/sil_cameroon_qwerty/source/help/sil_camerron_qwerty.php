@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Cameroon Keyboard Help</title><meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/><link rel="stylesheet" href="kb.css"/><link rel="icon" href="Cameroon.ico"/></head><body><div class="tab-folder"><!--Starting French--><div id="fr" class="tab-content"><a class="buttonlang" href="#en">View this page in English...</a><div id="container"><img src="ic_launcher.png" class="left" height="75"/><img class="right" src="sil-logo-blue.png" height="75"/><h1 xml:lang="fr">Clavier Cameroun <span class="qw">QWERTY</span><span class="keyman"> pour Keyman</span><br/>par SIL Cameroon</h1>
+<?php
+  $pagename = 'Cameroon QWERTY (SIL)';
+  $pagetitle = 'Cameroon QWERTY';
+  $customcss = 'kb.css'; 
+  require_once('header.php');
+?> 
+  
+  
+<head><meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/><link rel="stylesheet" href="kb.css"/></head>
+<body><div class="tab-folder"><!--Starting French--><div id="fr" class="tab-content"><a class="buttonlang" href="#en">View this page in English...</a><div id="container"><img src="ic_launcher.png" class="left" height="75"/><img class="right" src="sil-logo-blue.png" height="75"/><h1 xml:lang="fr">Clavier Cameroun <span class="qw">QWERTY</span><span class="keyman"> pour Keyman</span><br/>par SIL Cameroon</h1>
 <p class="tagline" xml:lang="en">Enabling you to type in your mother tongue!</p>
 <p class="tagline" xml:lang="fr">Vous permettant de saisir du texte dans votre langue  maternelle!</p>
 <p xml:lang="en">Welcome to the <span title="A virtual keyboard allowing one to type in the indigenous languages of Cameroon"><strong>Cameroon <span class="qw">QWERTY</span> Keyboard</strong></span> for Keyman. This page will  explain how to type in the vernacular languages of Cameroon using the Cameroon <span class="qw">QWERTY</span> Keyboard. </p>
@@ -137,4 +143,4 @@
 <li xml:lang="en">Choose the desired keyboard.</li>
 <li xml:lang="fr">Sélectionnez le clavier désiré.</li></ol></div></div><hr style="clear:both;"/>
 <p xml:lang="en">The Cameroon Keyboard is developed by SIL Cameroon, © 2018. For  more information about the Cameroon Keyboard or Language Technology in Cameroon,  see <a href="https://langtechcameroon.info">https://langtechcameroon.info</a></p>
-<p xml:lang="fr">Le Clavier Camerounais est un produit de SIL Cameroun, © 2018. Pour  plus d´infos sur le Claver Camerounais ou la technologie linguistique au  Cameroun, veuillez visiter <a href="https://langtechcameroon.info">https://langtechcameroon.info</a></p></div></div></div><!--Ending English--></div></body></html>
+<p xml:lang="fr">Le Clavier Camerounais est un produit de SIL Cameroun, © 2018. Pour  plus d´infos sur le Claver Camerounais ou la technologie linguistique au  Cameroun, veuillez visiter <a href="https://langtechcameroon.info">https://langtechcameroon.info</a></p></div></div></div><!--Ending English--></div></body>
