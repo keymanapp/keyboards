@@ -308,7 +308,7 @@
                 "sk": [
                   {
                     "text": "Ṣ",
-                    "id": "T_new_73"
+                    "id": "T_cap_S_dot_bottom"
                   }
                 ]
               },
@@ -318,7 +318,7 @@
                 "sk": [
                   {
                     "text": "Ḍ",
-                    "id": "T_new_69"
+                    "id": "T_cap_D_dot_bottom"
                   }
                 ]
               },
@@ -390,7 +390,7 @@
                 "sk": [
                   {
                     "text": "Ñ",
-                    "id": "T_new_71"
+                    "id": "T_cap_N_tilde_top"
                   }
                 ]
               },
@@ -1017,7 +1017,7 @@
                 "sk": [
                   {
                     "text": "Ṣ",
-                    "id": "T_new_216"
+                    "id": "T_cap_S_dot_bottom"
                   }
                 ]
               },
@@ -1027,7 +1027,7 @@
                 "sk": [
                   {
                     "text": "Ḍ",
-                    "id": "T_new_212"
+                    "id": "T_cap_D_dot_bottom"
                   }
                 ]
               },
@@ -1098,7 +1098,7 @@
                 "sk": [
                   {
                     "text": "Ñ",
-                    "id": "T_new_214"
+                    "id": "T_cap_N_tilde_top"
                   }
                 ]
               },
