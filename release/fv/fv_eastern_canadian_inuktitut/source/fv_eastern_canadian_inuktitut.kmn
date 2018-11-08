@@ -1,0 +1,164 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.1"
+store(&TARGETS) "mobile tablet"
+c store(&ETHNOLOGUECODE) "ike"
+store(&COPYRIGHT) "(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
+store(&NAME) 'ᐃᓄᒃᑎᑐᑦ'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_eastern_canadian_inuktitut.keyman-touch-layout"
+
++ [SHIFT T_Q] > 'ᐁ' layer('default')
++ [SHIFT T_W_0] > 'ᐯ' layer('default')
++ [SHIFT T_W] > 'ᑉ' layer('default')
++ [SHIFT T_E_0] > 'ᑌ' layer('default')
++ [SHIFT T_E] > 'ᑦ' layer('default')
++ [SHIFT T_R_0] > 'ᑫ' layer('default')
++ [SHIFT T_R] > 'ᒃ' layer('default')
++ [SHIFT T_T_0] > 'ᒉ' layer('default')
++ [SHIFT T_T] > 'ᒡ' layer('default')
++ [SHIFT T_Y_0] > 'ᒣ' layer('default')
++ [SHIFT T_Y] > 'ᒻ' layer('default')
++ [SHIFT T_U_0] > 'ᓀ' layer('default')
++ [SHIFT T_U] > 'ᓐ' layer('default')
++ [SHIFT T_I_0] > 'ᓭ' layer('default')
++ [SHIFT T_I] > 'ᔅ' layer('default')
++ [SHIFT T_O_0] > 'ᓓ' layer('default')
++ [SHIFT T_O_1] > 'ᖦ' layer('default')
++ [SHIFT T_O] > 'ᓪ' layer('default')
++ [SHIFT T_P_0] > 'ᔦ' layer('default')
++ [SHIFT T_P] > 'ᔾ' layer('default')
++ [SHIFT T_A] > 'ᐅ' layer('default')
++ [SHIFT T_S] > 'ᐳ' layer('default')
++ [SHIFT T_D] > 'ᑐ' layer('default')
++ [SHIFT T_F] > 'ᑯ' layer('default')
++ [SHIFT T_G] > 'ᒍ' layer('default')
++ [SHIFT T_H] > 'ᒧ' layer('default')
++ [SHIFT T_J] > 'ᓄ' layer('default')
++ [SHIFT T_K] > 'ᓱ' layer('default')
++ [SHIFT T_L_0] > 'ᖢ' layer('default')
++ [SHIFT T_L] > 'ᓗ' layer('default')
++ [SHIFT T_COLON] > 'ᔪ' layer('default')
++ [SHIFT T_Z_0] > 'ᕓ' layer('default')
++ [SHIFT T_Z] > 'ᕝ' layer('default')
++ [SHIFT T_X] > 'ᕗ' layer('default')
++ [SHIFT T_C_0] > 'ᕃ' layer('default')
++ [SHIFT T_C] > 'ᕐ' layer('default')
++ [SHIFT T_V] > 'ᕈ' layer('default')
++ [SHIFT T_B_0] > 'ᙯ' layer('default')
++ [SHIFT T_B] > 'ᖅ' layer('default')
++ [SHIFT T_N] > 'ᖁ' layer('default')
++ [SHIFT T_M_0] > 'ᖖ' layer('default')
++ [SHIFT T_M_1] > 'ᙰ' layer('default')
++ [SHIFT T_M] > 'ᖕ' layer('default')
++ [SHIFT T_COMMA_0] > 'ᙳ' layer('default')
++ [SHIFT T_COMMA] > 'ᖑ' layer('default')
++ [T_Q_0] > 'ᕼ'
++ [T_Q] > 'ᐃ'
++ [T_W_0] > 'ᖯ'
++ [T_W] > 'ᐱ'
++ [T_E] > 'ᑎ'
++ [T_R] > 'ᑭ'
++ [T_T] > 'ᒋ'
++ [T_Y] > 'ᒥ'
++ [T_U] > 'ᓂ'
++ [T_I] > 'ᓯ'
++ [T_O_0] > 'ᖠ'
++ [T_O] > 'ᓕ'
++ [T_P] > 'ᔨ'
++ [T_A] > 'ᐊ'
++ [T_S_0] > 'ᑉ'
++ [T_S] > 'ᐸ'
++ [T_D_0] > 'ᑦ'
++ [T_D] > 'ᑕ'
++ [T_F_0] > 'ᒃ'
++ [T_F] > 'ᑲ'
++ [T_G_0] > 'ᒡ'
++ [T_G] > 'ᒐ'
++ [T_H_0] > 'ᒻ'
++ [T_H] > 'ᒪ'
++ [T_J_0] > 'ᓐ'
++ [T_J] > 'ᓇ'
++ [T_K_0] > 'ᔅ'
++ [T_K] > 'ᓴ'
++ [T_L_0] > 'ᓪ'
++ [T_L_1] > 'ᖤ'
++ [T_L_2] > 'ᖦ'
++ [T_L] > 'ᓚ'
++ [T_COLON_0] > 'ᔾ'
++ [T_COLON] > 'ᔭ'
++ [T_Z] > 'ᕕ'
++ [T_X_0] > 'ᕝ'
++ [T_X] > 'ᕙ'
++ [T_C] > 'ᕆ'
++ [T_V_0] > 'ᕐ'
++ [T_V] > 'ᕋ'
++ [T_B_0] > 'ᖅ'
++ [T_B] > 'ᕿ'
++ [T_N_0] > 'ᖅ'
++ [T_N] > 'ᖃ'
++ [T_M_0] > 'ᙱ'
++ [T_M] > 'ᖏ'
++ [T_COMMA_0] > 'ᖕ'
++ [T_COMMA_1] > 'ᙵ'
++ [T_COMMA_2] > 'ᖖ'
++ [T_COMMA] > 'ᖓ'
+'ᑲ' + [T_PERIOD] > 'ᑳ'
+'ᕈ' + [T_PERIOD] > 'ᕉ'
+'ᒋ' + [T_PERIOD] > 'ᒌ'
+'ᖏ' + [T_PERIOD] > 'ᖐ'
+'ᖑ' + [T_PERIOD] > 'ᖒ'
+'ᒍ' + [T_PERIOD] > 'ᒎ'
+'ᒥ' + [T_PERIOD] > 'ᒦ'
+'ᕋ' + [T_PERIOD] > 'ᕌ'
+'ᓕ' + [T_PERIOD] > 'ᓖ'
+'ᖓ' + [T_PERIOD] > 'ᖔ'
+'ᒧ' + [T_PERIOD] > 'ᒨ'
+'ᐱ' + [T_PERIOD] > 'ᐲ'
+'ᓗ' + [T_PERIOD] > 'ᓘ'
+'ᓯ' + [T_PERIOD] > 'ᓰ'
+'ᒐ' + [T_PERIOD] > 'ᒑ'
+'ᐃ' + [T_PERIOD] > 'ᐄ'
+'ᐳ' + [T_PERIOD] > 'ᐴ'
+'ᓱ' + [T_PERIOD] > 'ᓲ'
+'ᓂ' + [T_PERIOD] > 'ᓃ'
+'ᓚ' + [T_PERIOD] > 'ᓛ'
+'ᐅ' + [T_PERIOD] > 'ᐆ'
+'ᒪ' + [T_PERIOD] > 'ᒫ'
+'ᕿ' + [T_PERIOD] > 'ᖀ'
+'ᖁ' + [T_PERIOD] > 'ᖂ'
+'ᓄ' + [T_PERIOD] > 'ᓅ'
+'ᑎ' + [T_PERIOD] > 'ᑏ'
+'ᓴ' + [T_PERIOD] > 'ᓵ'
+'ᖃ' + [T_PERIOD] > 'ᖄ'
+'ᐸ' + [T_PERIOD] > 'ᐹ'
+'ᑐ' + [T_PERIOD] > 'ᑑ'
+'ᓇ' + [T_PERIOD] > 'ᓈ'
+'ᐊ' + [T_PERIOD] > 'ᐋ'
+'ᕕ' + [T_PERIOD] > 'ᕖ'
+'ᙱ' + [T_PERIOD] > 'ᙲ'
+'ᕗ' + [T_PERIOD] > 'ᕘ'
+'ᔨ' + [T_PERIOD] > 'ᔩ'
+'ᙳ' + [T_PERIOD] > 'ᙴ'
+'ᕙ' + [T_PERIOD] > 'ᕚ'
+'ᔪ' + [T_PERIOD] > 'ᔫ'
+'ᑭ' + [T_PERIOD] > 'ᑮ'
+'ᑕ' + [T_PERIOD] > 'ᑖ'
+'ᖠ' + [T_PERIOD] > 'ᖡ'
+'ᙵ' + [T_PERIOD] > 'ᙶ'
+'ᖢ' + [T_PERIOD] > 'ᖣ'
+'ᑯ' + [T_PERIOD] > 'ᑰ'
+'ᔭ' + [T_PERIOD] > 'ᔮ'
+'ᖤ' + [T_PERIOD] > 'ᖥ'
+'ᕆ' + [T_PERIOD] > 'ᕇ'
+
+c --- END OF TOUCH LAYOUT RULES ---
+
