@@ -15,11 +15,11 @@ This keyboard is designed for languages using the Lisu script.
 </p>
 <br/>
 
-<h2>Keyboard Layout</h2>
+<h2>Desktop Keyboard Layout</h2>
 <div id='osk'>
 </div>
 
-<h2>Keyboard Layout</h2>
+<h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet'>
 </div>
 
