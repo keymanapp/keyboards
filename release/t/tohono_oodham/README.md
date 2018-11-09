@@ -3,7 +3,7 @@ Tohono O'odham Keyboard
 
 Copyright (C) 2018 James Wyly
 
-Version 0.1
+Version 1.0
 
 __DESCRIPTION__
 This keyboard is used for the language of the Tohono O'odham people.
