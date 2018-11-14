@@ -5,8 +5,8 @@ begin Unicode > use(main)
 group(main) using keys
 
 store(vowelKeys) 'AiIuUReEYoOVMH'
-store(vowels) 'आइईउऊऋएऐऐओऔऔंः'
-store(vowelMatras) 'ािीुूृेैैोौौंः'
+store(vowels) 'आइईउऊऋएऎऐओऒऔऔंः'
+store(vowelMatras) 'ािीुूृॆेैॊोौंः'
 store(consKeys) 'kKgGW' \
     	   	   	'cCjJw' \
     	   	   	'tTdDN' \
@@ -22,7 +22,7 @@ store(cons) 'कखगघङ' \
     	   	'यरलवशषसहळ'
 
 store(consonants) outs(cons) 'ऱऴ'
-store(allKeys) outs(consKeys) outs(vowelKeys) 'a'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'aSf'
 
 c Adjust the behavior of 'a'
 + 'a' > 'अ'   
@@ -32,8 +32,8 @@ dk(a) + 'a' > 'ा' dk(aa)
 'ा' dk(aa) + 'a' > 'अ'
 
 c Adjust the behavior of 'e'
-'ए' + 'e' > 'ऐ'      
-'े' + 'e' > 'ै'  
+'ए' + 'e' > 'ऎ'      
+'े' + 'e' > 'ॆ'  
 
 c Adjust the behavior of 'i'
 'इ' + 'i' > 'ई' 
@@ -43,6 +43,9 @@ c Adjust the behavior of l
 'ल' + 'l' > 'ळ'
 'ळ' + 'l' > 'ऴ'    
 
+c Adjust the behavior of L
+'ळ' + 'L' > 'ऴ'
+
 c Adjust the bahavior of d
 'ड' + 'd' > 'ड़ '   
 'ढ' + 'D' > 'ढ़'
@@ -51,8 +54,8 @@ c Adjust the behavior of n
 'न' + 'n' > 'ऩ'     
 
 c Adjust the behavior of o
-'ओ' + 'o' > 'औ'    
-'ो' + 'o' > 'ौ'   
+'ओ' + 'o' > 'ऒ'    
+'ो' + 'o' > 'ॊ'   
 
 c Adjust the behavior of r
  'र' + 'r' > 'ऱ'       
@@ -82,7 +85,10 @@ c Adjust the behavior of j
 'ज' + 'j' >'ज़'
 
 c Add Nukta
-+ 'f' > '़'
++ 'f' > '़'    
+
+c Adjust the behavior of F
++ 'F' > nul
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '्' U+200C
@@ -131,18 +137,6 @@ store(DevNumbers) '१२३४५६७८९०'
 any(DevNumbers) + any(numberKeys) > context index(DevNumbers, 2)
 
 
-c backtick to change into english
-+ '`' > '`' dk(bt)
-'`' dk(bt) + any(allKeys) > index(allKeys, 3)
-any(allKeys) + any(allKeys) > context index(allKeys, 2)
-
-c numbers
-store(numberKeys) '1234567890'
-store(devanagariNumbers) '१२३४५६७८९०'
-'`' dk(bt) + any(numberKeys) > index(devanagariNumbers, 3)
-any(devanagariNumbers) + any(numberKeys) > context index(devanagariNumbers, 2)
-
- 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
 any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
