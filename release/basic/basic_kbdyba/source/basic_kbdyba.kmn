@@ -111,23 +111,25 @@ group(main) using keys
 + [NCAPS SHIFT K_J] > U+004a
 + [CAPS SHIFT K_J] > U+006a
 
++ [NCAPS RALT K_J] > U+1eb9 U+0301
++ [NCAPS SHIFT RALT K_J] > U+1eb8 U+0301
++ [T_new_123] > U+1eb8 U+0301        c touch layout rule
++ [T_new_60] > U+1eb9 U+0301        c touch layout rule
+
 + [NCAPS K_K] > U+006b
 + [CAPS K_K] > U+004b
 + [NCAPS SHIFT K_K] > U+004b
 + [CAPS SHIFT K_K] > U+006b
-+ [NCAPS RALT K_K] > U+1eb9 U+0301
-+ [NCAPS SHIFT RALT K_K] > U+1eb8 U+0301
-+ [T_new_123] > U+1eb8 U+0301        c touch layout rule
-+ [T_new_60] > U+1eb9 U+0301        c touch layout rule
++ [NCAPS RALT K_K] > U+1eb9 U+0300
++ [NCAPS SHIFT RALT K_K] > U+1eb8 U+0300
++ [T_new_125] > U+1eb8 U+0300        c touch layout rule
++ [T_new_62] > U+1eb9 U+0300        c touch layout rule
+
 
 + [NCAPS K_L] > U+006c
 + [CAPS K_L] > U+004c
 + [NCAPS SHIFT K_L] > U+004c
 + [CAPS SHIFT K_L] > U+006c
-+ [NCAPS RALT K_L] > U+1eb9 U+0300
-+ [NCAPS SHIFT RALT K_L] > U+1eb8 U+0300
-+ [T_new_125] > U+1eb8 U+0300        c touch layout rule
-+ [T_new_62] > U+1eb9 U+0300        c touch layout rule
 
 + [NCAPS K_M] > U+006d
 + [CAPS K_M] > U+004d
@@ -242,7 +244,6 @@ group(main) using keys
 + [K_oE2] > U+005c
 + [SHIFT K_oE2] > U+007c
 
-
 match > use(deadkeys)
 
 group(deadkeys)
@@ -258,5 +259,4 @@ dk(005c) any(dkf005c) > index(dkt005c, 2)
 store(dkf0027) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006e U+004e U+006f U+004f U+0075 U+0055
 store(dkt0027) U+0027 U+00e1 U+00c1 U+00e9 U+00c9 U+00ed U+00cd U+0144 U+0143 U+00f3 U+00d3 U+00fa U+00da
 dk(0027) any(dkf0027) > index(dkt0027, 2)
-
 
