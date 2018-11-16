@@ -44,7 +44,10 @@ c Adjust the behavior of 'i'
 
 c Adjust the behavior of l
 'ല' + 'l' > 'ള'
-'ള' + 'l' > 'ഴ'      
+'ള' + 'l' > 'ഴ'       
+
+c Adjust the behavior of L
+'ള' + 'L' > 'ഴ'
 
 c Adjust the behavior of n
 c 'ന' + 'n' > 'ഩ'     
@@ -68,7 +71,10 @@ c Adjust the behavior of u
 'ു' + 'u' > 'ൂ' 
 
 c Adjust the behavior of s
-'സ' + 's'> 'ഷ'
+'സ' + 's'> 'ഷ'                    
+
+c Adjust the behavior of f  
+ + 'f' > nul
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '്' U+200C
@@ -144,7 +150,7 @@ any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + chandrakala
-any (consonants) + 'x' > context '്'          
+any (consonants) + 'x' > context '്'      
 any(vowels) + 'x' > context '്'   
 
 c vowels + chandrakala
