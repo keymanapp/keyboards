@@ -9,11 +9,10 @@
 
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the Sora language of India (Sora Sompeng script).
+This keyboard is designed for the Sora language of India (Sora Sompeng script). A font must be installed to support this keyboard. Windows includes the <b>Nirmala UI</b> font which supports the <b>Sora Sompeng</b> script.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
-<p>A font must be installed to support this keyboard. Windows includes the <b>Nirmala UI</b> font which supports the <b>Sora Sompeng</b> script.</p>
 
 <br/>
 
