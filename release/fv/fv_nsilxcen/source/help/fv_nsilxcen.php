@@ -15,8 +15,6 @@ END;
 <p style='margin: 16px 0 0 0'>
 This keyboard is designed for the <b>Nsilxcən</b> language of the BC Interior region of Canada.
 </p>
-<p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
-</p>
 
 <img src="Nsilxcen.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
@@ -39,8 +37,7 @@ This keyboard is designed for the <b>Nsilxcən</b> language of the BC Interior r
 					</ul>
 					 
 						<h2>Unicode Fonts</h2>
-						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p><h2>Downloads</h2>
-      <h3><a href="http://www.languagegeek.com/nwc/keymaps/NNW/Haida.pdf">Download a pdf of the Keylayout Map</a></h3>
+						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
     <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
     
 <h2>Notes on touch layout</h2>

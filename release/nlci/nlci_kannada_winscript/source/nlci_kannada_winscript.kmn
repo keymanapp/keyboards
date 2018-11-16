@@ -1,0 +1,133 @@
+﻿store(&NAME) 'NLCI Kannada WinScript'
+store(&COPYRIGHT) '© NLCI 2000-2018'
+store(&KEYBOARDVERSION) '2.0.0'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowelKeys) 'AiIuUReEYoOVMH'
+store(vowels) 'ಆಇಈಉಊಋಎಏಐಒಓಔಂಃ'
+store(vowelMatras) 'ಾಿೀುೂೃೆೇೈೊೋೌಂಃ'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
+
+store(cons) 'ಕಖಗಘಙ' \
+    	   	'ಚಛಜಝಞ' \
+    	   	'ಟಠಡಢಣ' \
+    	   	'ತಥದಧನ' \
+    	   	'ಪಫಬಭಮ' \
+    	   	'ಯರಲವಶಷಸಹಹಳ'
+
+store(consonants) outs(cons) 'ಱೞ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
+
+c Adjust the behavior of 'a'
++ 'a' > 'ಅ'   
+'ಅ' + 'a' > 'ಆ'               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > 'ಾ' dk(aa)
+'ಾ' dk(aa) + 'a' > 'ಅ'
+
+c Adjust the behavior of 'e'
+'ಎ' + 'e' > 'ಏ'      
+'ೆ' + 'e' > 'ೇ'  
+
+c Adjust the behavior of 'i'
+'ಇ' + 'i' > 'ಈ' 
+'ಿ' + 'i' > 'ೀ'    
+
+c Adjust the behavior of l
+'ಲ' + 'l' > 'ಳ'
+'ಳ' + 'l' > 'ೞ'      
+
+c Adjust the behavior of o
+'ಒ' + 'o' > 'ಓ'    
+'ೊ' + 'o' > 'ೋ'   
+
+c Adjust the behavior of r
+ 'ರ' + 'r' > 'ಱ'       
+ 
+c Adjust the behavior of R
+'ಋ' + 'R' > 'ೠ'   
+'ೃ' + 'R' > 'ೄ'     
+   
+c Adjust the behavior of S
++ 'S' > nul  
+
+c Adjust the behavior of u
+'ಉ' + 'u' > 'ಊ'    
+'ು' + 'u' > 'ೂ' 
+
+c Adjust the behavior of s
+'ಸ' + 's'> 'ಶ'
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '್' U+200C
+any(consonants) '್' + 'X' > context U+200C
+U+200C + 'X' > context beep
+store(WordFinalPunct) ' ",;:.>!]})' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+  
+c = is a modifier key that alters the default behavior of some keystrokes
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'ಱ'
+'=' dk(eq)+ 'z' > 'ೞ'     
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick for change into English
+
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+    
+c numbers
+store(numberKeys) '1234567890'
+store(KannadaNumbers) '೧೨೩೪೫೬೭೮೯೦'
+'`' dk(bt) + any(numberKeys) > index(KannadaNumbers, 3)
+any(KannadaNumbers) + any(numberKeys) > context index(KannadaNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+
+c cons + virama
+any (consonants) + 'x' > context '್'          
+any(vowels) + 'x' > context '್'   
+
+c vowels + virama
+any(vowels) + 'x' > context '್' 
+'ಅ' + 'x' > context '್'
+any(vowelMatras) + 'x' > context '್'      
+
+c Vowel sign elongation
+'ಿ' + 'i' > context 'ೀ' 
+'ು' + 'u' > context 'ೂ'
+'ಾ' + 'a' > context 'ಾ'
+
