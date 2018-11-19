@@ -20,6 +20,7 @@ This keyboard is designed for the Sakha language of Russia.
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
+<p>The Ruble sign can be found by long-press on the fullstop (period).</p>
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
