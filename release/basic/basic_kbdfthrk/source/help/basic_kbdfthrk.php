@@ -10,6 +10,8 @@
 
 <p style='margin: 16px 0 0 0'>
 A font must be installed to support this keyboard. Windows includes the <b>Segoe UI Historic</b> font which supports the <b>Runic</b> script.</p>
+<p>All of the characters on the "Shift" state can also be used with the "\" and "|" deadkeys. For example, you can type "\" + "ᛅ" to output "ᛆ".</p>
+
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 <br/>
