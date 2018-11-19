@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Tifinagh (Full) Keyboard Help';
-  $pagetitle = 'Tifinagh (Full) Keyboard Help';
+  $pagename = 'Tifinagh (Full) Basic Keyboard Help';
+  $pagetitle = 'Tifinagh (Full) Basic Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 
