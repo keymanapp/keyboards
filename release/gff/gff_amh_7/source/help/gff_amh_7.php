@@ -78,7 +78,8 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
   <div id='osk-tablet' data-states='default symbol'></div>
 </div>
 
-<p>Note: Longpress keys are not currently visible in this static documentation, and so some additional letters may be accessible through these longpress keys.</p>
+<p>Note: Longpress keys are not currently visible in this static documentation. 
+  The phone and tablet layouts contain addional letters that can be accessed by long pressing the base keys that have a small dot in the top right corner.</p>
 
 <div id='Quickstart'>
 <h3>Quickstart</h3>
@@ -135,7 +136,7 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <h2>Troubleshooting</h2>
 <p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://keyman.com/contact/">contact us</a>.</p>
 
 </div>
 
@@ -160,11 +161,11 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=455">Download the Amharic Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff_amh_7">Download the Amharic Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/amharic.htm">More on the Amharic Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Amharic_language">More on the Amharic Language at Wikipedia.org</a><br/></p>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Amharic">More on the Amharic Language at Wikipedia.org</a><br/></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a></p>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Ge%27ez_script">More on the Ge'ez Script at Wikipedia.org</a></p>
 </div>
 </div>
 

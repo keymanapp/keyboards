@@ -314,7 +314,7 @@ END;
   <p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>{</kbd> to get <samp>{</samp> (instead of <samp>ˆ</samp>).</p>
   <p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>v</kbd> to get <samp>v</samp> (instead of <samp>ẹ</samp> or <samp>e̩</samp>).</p>
   <h4>Fonts</h4>
-  <p>This is a Unicode keyboard and works with any Unicode font which has support for Yorùbá. The <b>Gentium Plus</b> font family supports Yorùbá and is installed with the keyboard. To find other fonts on your computer which support this keyboard, use the Keyman <a href='http://help.keymandesktop.com/docs/start_font.php'>Font Helper</a>.</p>
+  <p>This is a Unicode keyboard and works with any Unicode font which has support for Yorùbá. The <b>Gentium Plus</b> font family supports Yorùbá and is installed with the keyboard. To find other fonts on your computer which support this keyboard, use the Keyman Desktop Font Helper.</p>
   <h4>On Screen Keyboard</h4>
   <p>This keyboard includes an On Screen Keyboard view for easy reference. The On Screen Keyboard displays best on a QWERTY US layout.</p>  
   </section>

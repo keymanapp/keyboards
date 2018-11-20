@@ -57,12 +57,13 @@ store(&NAME) 'SIL IPA'
 store(&BITMAP) 'sil_ipa.ico'
 c HOTKEY  "^+P"
 store(&COPYRIGHT) '© 2002-2018 SIL International'
-store(&MESSAGE) 'The SIL IPA (ver 1.5) Keyman keyboard is distributed under The MIT License (MIT).'
+store(&MESSAGE) 'The SIL IPA Keyman keyboard is distributed under The MIT License (MIT).'
 c store(&author) "M. Hosken, D. Bevan"
 c store(&language) ""
 store(&WINDOWSLANGUAGES) 'x040F'
-store(&KEYBOARDVERSION) '1.5'    
-store(&TARGETS) 'windows macosx'
+store(&KEYBOARDVERSION) '1.6'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'sil_ipa-layout.js'
 
 begin Unicode > use(Unicode)
 
@@ -345,3 +346,13 @@ U+030A        + "@" > U+030D
 c This new rule (10-Sept-2007) is a fix for the problem of fast typing reordering keystrokes when using Keyman with TSF. I apparently must be the last rule in the group.
 c 12/12/2017 no longer needed
 c + any(chars) > index(chars, 1)
+
+c Added for touch screen
+ + [T_02D0_02D0] > U+02d0 U+02d0
+ + [T_02e7_02e5] > U+02e7 U+02e5
+ + [T_02e7_02e9] > U+02e7 U+02e9
+ + [T_02e8_02e5_02e8] > U+02e8 U+02e5 U+02e8
+ + [T_02e9_02e5] >      U+02e9 U+02e5
+ + [T_02e5_02e9] >   U+02e5 U+02e9
+ + [T_02e9_02e7] > U+02e9 U+02e7
+ + [T_02e8_02e7_02e8] > U+02e8 U+02e7 U+02e8

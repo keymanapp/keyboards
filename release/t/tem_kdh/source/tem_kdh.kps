@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.909.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -9,39 +9,16 @@
     <GraphicFile>Tem Icon 64x64 padded to 140x250.jpg</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder>Clavier Tem</Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.2</Version>
+    <Version URL=""></Version>
     <Name URL="">Clavier Tem</Name>
-    <Copyright URL="">©2017 SIL International</Copyright>
+    <Copyright URL="">©2017-2018 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -68,6 +45,22 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\build\tem_kdh.js</Name>
+      <Description>File tem_kdh.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Clavier Tem</Name>
+      <ID>tem_kdh</ID>
+      <Version>1.2.1</Version>
+      <Languages>
+        <Language ID="kdh-Arab">Tem</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>

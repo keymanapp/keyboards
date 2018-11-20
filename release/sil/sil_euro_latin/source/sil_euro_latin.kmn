@@ -1,0 +1,246 @@
+﻿c EuroLatin keyboard for Keyman
+c 
+c If you make changes to this keyboard file, please consider sharing them at:
+c http://www.tavultesoft.com/forums/category.php?ForumSourceID=1&SourceID=348
+
+store(&version) '10.0'
+store(&NAME) 'EuroLatin (SIL)'
+store(&BITMAP) 'sil_euro_latin.ico'
+store(&COPYRIGHT) 'Copyright (C) 1994-2018 SIL International'
+
+$keymanonly: store(&mnemoniclayout) '1'
+
+c KeymanWeb-specific header statements
+store(&KMW_HELPFILE) 'sil_euro_latin.html'
+store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
+store(&LAYOUTFILE) 'sil_euro_latin.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.8'
+store(&TARGETS) 'any'
+
+begin Unicode > use(Main)
+
+group(Main) using keys
+
+store(option_key) ''
+
+store(controls)  "`#'" '"' "^%&*~-_:@.|,=\$"
+$keymanonly: store(controls-ralt) [RALT "`"][RALT SHIFT "#"] [RALT "'"] [RALT SHIFT '"'] [RALT SHIFT "^"] [RALT SHIFT "%"] [RALT SHIFT "&"] [RALT SHIFT "*"] [RALT SHIFT "~"] [RALT "-"] [RALT SHIFT "_"] [RALT SHIFT ":"] [RALT SHIFT "@"] [RALT "."] [RALT SHIFT "|"] [RALT ","] [RALT "="] [RALT "\"] [RALT SHIFT "$"]
+$keymanonly: store(controls-rctrl) [RCTRL "`"][RCTRL SHIFT "#"] [RCTRL "'"] [RCTRL SHIFT '"'] [RCTRL SHIFT "^"] [RCTRL SHIFT "%"] [RCTRL SHIFT "&"] [RCTRL SHIFT "*"] [RCTRL SHIFT "~"] [RCTRL "-"] [RCTRL SHIFT "_"] [RCTRL SHIFT ":"] [RCTRL SHIFT "@"] [RCTRL "."] [RCTRL SHIFT "|"] [RCTRL ","] [RCTRL "="] [RCTRL "\"] [RCTRL SHIFT "$"]
+
+if(&platform = 'touch') + any(controls) > use(Touch)
+
+c `
+store(graveO)    'àèìǹòùẁỳÀÈÌǸÒÙẀỲ'
+store(graveK)    'aeinouwyAEINOUWY'
+
+c #
+store(doublegraveO) 'ȁȅȉȍȑȕȀȄȈȌȐȔ'
+store(doublegraveK) 'aeioruAEIORU'
+
+c '
+store(acuteO) 'áćéǵíḱĺḿńóṕŕśúẃýźÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹ'
+store(acuteK) 'acegiklmnoprsuwyzACEGIKLMNOPRSUWYZ'
+
+c "
+store(doubleacuteO) 'őűŐŰ'
+store(doubleacuteK) 'ouOU'
+
+c ^
+store(circumO)   'âĉêĝĥîĵôŝûŵŷẑÂĈÊĜĤÎĴÔŜÛŴŶẐ'
+store(circumK)   'aceghijosuwyzACEGHIJOSUWYZ'
+
+c %
+store(caronO) 'ǎǍčČďĎěĚǧǦȟȞǐǏǰǩǨľĽňŇǒǑřŘšŠťŤǔǓǯǮžŽ'
+store(caronK) 'aAcCdDeEgGhHiIjkKlLnNoOrRsStTuUxXzZ'
+
+c &
+store(antibreveO) 'ȂȃȆȇȊȋȎȏȒȓȖȗ'
+store(antibreveK) 'AaEeIiOoRrUu'
+
+c *
+store(breveO) 'ăĂĕĔğĞḫḪĭĬŏŎŭŬ'
+store(breveK) 'aAeEgGhHiIoOuU'
+
+c ~
+store(tildeO) 'ãÃẽẼĩĨɫⱢñÑõÕũŨṽṼỹỸ'
+store(tildeK) 'aAeEiIlLnNoOuUvVyY'
+'~' dk(1) + "g" > U+0067 U+0303    c for Guaraní
+'~' dk(1) + "G" > U+0047 U+0303    c for Guaraní
+if(&platform = 'touch') + [T_G_Tilde] > U+0067 U+0303           c for Guaraní on touch layouts
+if(&platform = 'touch') + [SHIFT T_G_Tilde] > U+0047 U+0303     c for Guaraní on touch layouts
+
+
+c -
+store(macronO) 'ĀāɃƀĐđĒēḠḡĦħĪīɈɉŁłŌōɌɍŦŧŪūȲȳƵƶ'
+store(macronK) 'AaBbDdEeGgHhIiJjLlOoRrTtUuYyZz'
+
+c _
+store(lineO) 'ḆḇḎḏẖḴḵḺḻṈṉṞṟṮṯẔẕ'
+store(lineK) 'BbDdhKkLlNnRrTtZz'
+
+c :
+store(dieresisO) 'äëḧïöẗüẅẍÿÄËḦÏÖÜẄẌŸ'
+store(dieresisK) 'aehiotuwxyAEHIOUWXY'
+':' dk(1) + "p" > U+0070 U+0308    c for Romani
+':' dk(1) + "P" > U+0050 U+0308    c for Romani
+if(&platform = 'touch') + [T_P_Dieresis] > U+0070 U+0308           c for Romani on Touch devices
+if(&platform = 'touch') + [SHIFT T_P_Dieresis] > U+0050 U+0308     c for Romani on Touch devices
+
+c @
+store(ringO) 'åÅůŮẘẙșȘțȚ'
+store(ringK) 'aAuUwysStT'
+
+c .
+store(dottedO) 'ȧȦḃḂċĊḋḊėĖḟḞġĠḣḢıİȷŀĿṁṀṅṄȯȮṗṖṙṘṡṠṫṪẇẆẋẊẏẎżŻ'
+store(dottedK) 'aAbBcCdDeEfFgGhHiIjlLmMnNoOpPrRsStTwWxXyYzZ'
+
+c |
+store(dotbelowO) 'ẠạḄḅḌḍẸẹḤḥỊịḲḳḶḷṂṃṆṇỌọṚṛṢṣṬṭỤụṾṿẈẉỴỵẒẓ'
+store(dotbelowK) 'AaBbDdEeHhIiKkLlMmNnOoRrSsTtUuVvWwYyZz'
+
+c ,
+store(cedillaO) 'ąĄçÇḑḐęĘģĢḩḨįĮķĶļĻņŅǫǪŗŖşŞţŢųŲⱬⱫ'
+store(cedillaK) 'aAcCdDeEgGhHiIkKlLnNoOrRsStTuUzZ'
+
+c =
+store(extendedO) 'ƆɔƏəɁɂƝɲŊŋƟɵẞßÞþȜȝƷʒ'
+store(extendedK) 'CcEeGgJjNnOoSsTtYyZz'
+'=' dk(1) + "'" >  U+A78C c Lowercase Saltillo
+'=' dk(1) + '"' >  U+A78B c Uppercase Saltillo
+
+c \
+store(specialO) '©ÐðƐɛªǤǥĸ—º–ŉØø¶℗®§ſ‡†µ×¡¦¨¬­¯°±´·¸¿÷‰•¹²³⁴⁵⁶⁷⁸⁹⁰'
+store(specialK) "cDdEefGgkMmNnOoPprSsTtux!|:~-_*+'.,?/%>1234567890"
+
+c $
+store(currencyO) '¤¢₯₫€€₱₣₲₰₴₡₭₤₦₪₧£₹₨₮₩¥'
+store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
+
+"`" dk(1) + any(graveK) > index(graveO, 3)
+"#" dk(1) + any(doublegraveK) > index(doublegraveO, 3)
+"'" dk(1) + any(acuteK) > index(acuteO, 3)
+'"' dk(1) + any(doubleacuteK) > index(doubleacuteO, 3)
+"^" dk(1) + any(circumK) > index(circumO, 3)
+'%' dk(1) + any(caronK) > index(caronO, 3)
+'&' dk(1) + any(antibreveK) > index(antibreveO, 3)
+'*' dk(1) + any(breveK) > index(breveO, 3)
+'~' dk(1) + any(tildeK) > index(tildeO, 3)
+'-' dk(1) + any(macronK) > index(macronO, 3)
+'_' dk(1) + any(lineK) > index(lineO, 3)
+':' dk(1) + any(dieresisK) > index(dieresisO, 3)
+'@' dk(1) + any(ringK) > index(ringO, 3)
+'.' dk(1) + any(dottedK) > index(dottedO, 3)
+'|' dk(1) + any(dotbelowK) > index(dotbelowO, 3)
+',' dk(1) + any(cedillaK) > index(cedillaO, 3)
+'=' dk(1) + any(extendedK) > index(extendedO, 3)
+'\' dk(1) + any(specialK) > index(specialO, 3)
+'$' dk(1) + any(currencyK) > index(currencyO, 3)
+
+'·.' + '.' > '…'
+
+
+c Preferred for diagraphs
+'A\' dk(1) + 'E' > 'Æ'
+'a\' dk(1) + 'e' > 'æ'
+'D\' dk(1) + 'Z' > U+01C4   c Serbian additions 1/5/09
+'D\' dk(1) + 'z' > U+01C5
+'d\' dk(1) + 'z' > U+01C6
+'f\' dk(1) + 'i' > 'ﬁ'
+'f\' dk(1) + 'l' > 'ﬂ'
+'I\' dk(1) + 'J' > 'Ĳ'
+'i\' dk(1) + 'j' > 'ĳ'
+'L\' dk(1) + 'J' > U+01C7   c Serbian additions 1/5/09
+'L\' dk(1) + 'j' > U+01C8
+'l\' dk(1) + 'j' > U+01C9
+'N\' dk(1) + 'G' > 'Ŋ'      c depricated - see extended - no longer in help/osk
+'n\' dk(1) + 'g' > 'ŋ'      c depricated - see extended - no longer in help/osk
+'N\' dk(1) + 'J' > U+01CA   c Serbian additions 1/5/09
+'N\' dk(1) + 'j' > U+01CB
+'n\' dk(1) + 'j' > U+01CC
+'N\' dk(1) + 'O' > '№'
+'n\' dk(1) + 'o' > '№'
+'O\' dk(1) + 'E' > 'Œ'
+'o\' dk(1) + 'e' > 'œ'
+'O\' dk(1) + 'I' > 'Ƣ'
+'o\' dk(1) + 'i' > 'ƣ'
+'S\' dk(1) + 'S' > 'ẞ'     c depricated - see extended - no longer in help/osk
+'s\' dk(1) + 's' > 'ß'     c depricated - see extended - no longer in help/osk
+'T\' dk(1) + 'H' > 'Þ'     c depricated - see extended - no longer in help/osk
+'t\' dk(1) + 'h' > 'þ'     c depricated - see extended - no longer in help/osk
+'T\' dk(1) + 'M' > '™'
+'t\' dk(1) + 'm' > '™'
+
+
+'1//' + '2' > '½'
+'1//' + '3' > '⅓'
+'2//' + '3' > '⅔'
+'1//' + '4' > '¼'
+'3//' + '4' > '¾'
+'1//' + '5' > '⅕'
+'2//' + '5' > '⅖'
+'3//' + '5' > '⅗'
+'4//' + '5' > '⅘'
+'1//' + '6' > '⅙'
+'5//' + '6' > '⅚'
+'1//' + '8' > '⅛'
+'3//' + '8' > '⅜'
+'5//' + '8' > '⅝'
+'7//' + '8' > '⅞'
+
+c The fractions below have been depricated. Use format above.
+'¹/' + '2' > '½'       c depricated - no longer in help/osk
+'¹/' + '3' > '⅓'       c depricated - no longer in help/osk
+'²/' + '3' > '⅔'       c depricated - no longer in help/osk
+'¹/' + '4' > '¼'       c depricated - no longer in help/osk
+'³/' + '4' > '¾'       c depricated - no longer in help/osk
+'¹/' + '8' > '⅛'       c depricated - no longer in help/osk
+'³/' + '8' > '⅜'       c depricated - no longer in help/osk
+'⁵/' + '8' > '⅝'       c depricated - no longer in help/osk
+'⁷/' + '8' > '⅞'       c depricated - no longer in help/osk
+
+c angled quotes
+c "<" + "<" > '«'
+c ">" + ">" > '»'
+$keymanonly: if(option_key = 'RALT') "<" + [RALT SHIFT '<'] > '«'
+$keymanonly: if(option_key = 'RALT') ">" + [RALT SHIFT '>'] > '»'
+$keymanonly: if(option_key = 'RCTRL') "<" + [RCTRL SHIFT '<'] > '«'
+$keymanonly: if(option_key = 'RCTRL') ">" + [RCTRL SHIFT '>'] > '»'
+if(option_key = '') "<" + "<" > '«'
+if(option_key = '') ">" + ">" > '»'
+c "<" + "<" > '«'
+c ">" + ">" > '»'
+'«' + '<' > '<<' dk(2)
+'»' + '>' > '>>' dk(2)
+"<" dk(2) + "<" > '<<' dk(2)
+">" dk(2) + ">" > '>>' dk(2)
+
+c Rules for the accent character itself (type it twice)
+
+"`" dk(1) + "`" > "`"  c backquote
+'#' dk(1) + '#' > '#'  c number sign
+"'" dk(1) + "'" > "'"  c apostrophe
+'"' dk(1) + '"' > '"'  c quotation mark
+"^" dk(1) + "^" > "^"  c caret
+'%' dk(1) + '%' > '%'  c percent sign
+'&' dk(1) + '&' > '&'  c ampersand
+'*' dk(1) + '*' > '*'  c asterisk
+'~' dk(1) + '~' > '~'  c tilde
+'-' dk(1) + '-' > '-'  c hyphen
+'_' dk(1) + '_' > '_'  c low line
+':' dk(1) + ':' > ':'  c double-quote
+'@' dk(1) + '@' > '@'  c ring
+'.' dk(1) + '.' > '.'  c full stop
+'|' dk(1) + '|' > '|'  c vertical line
+',' dk(1) + ',' > ','  c comma
+'=' dk(1) + '=' > '='  c equals sign
+'\' dk(1) + '\' > '\'  c backslash
+'$' dk(1) + '$' > '$'  c dollar
+
+c + any(controls) > index(controls, 1) dk(1)
+if(option_key = '') + any(controls) > index(controls, 2) dk(1)
+$keymanonly: if(option_key = 'RALT') + any(controls-ralt) > index(controls, 2) dk(1)
+$keymanonly: if(option_key = 'RCTRL') + any(controls-rctrl) > index(controls, 2) dk(1)
+
+group(Touch) using keys
+
+c End of keyboard

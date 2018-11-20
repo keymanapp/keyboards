@@ -1,0 +1,99 @@
+﻿c Assamese keyboard to allow juktakhyars and kaar jogs in a simplified manner.
+store(&VERSION) '9.0'
+store(&NAME) 'Assamese (Sabdalipi)'
+store(&COPYRIGHT) '© TI Trade'
+store(&MESSAGE) 'Assamese keyboard to allow juktakhyars and kaar jogs in a simplified manner.'
+store(&WINDOWSLANGUAGES) 'x044D'
+store(&LANGUAGE) 'x044D'
+store(&ETHNOLOGUECODE) 'asm'
+store(&BITMAP) 'sabdalipi_assamese.ico'
+store(&VISUALKEYBOARD) 'sabdalipi_assamese.kvks'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'windows macosx linux web'
+begin Unicode > use(main)
+
+store(spchr) " -_‘“"		c chars that do not add kaar jogs
+
+group(main) using keys
+
++ "H" > dk(H)     c H when not wanting kaar jogs
++ "k" > U+0995
++ "K" > U+0996
++ "g" > U+0997
++ "G" > U+0998
++ "\" > U+0999
++ "c" > U+099A
++ "C" > U+099B
++ "j" > U+099C
++ "J" > U+099D
++ "@" > U+099E
++ "f" > U+099F
++ "F" > U+09A0
++ "i" > U+09A1
++ "I" > U+09A2
++ "N" > U+09A3
++ "t" > U+09A4
++ "T" > U+09A5
++ "d" > U+09A6
++ "D" > U+09A7
++ "n" > U+09A8
++ "p" > U+09AA
++ "P" > U+09AB
++ "b" > U+09AC
++ "B" > U+09AD
++ "m" > U+09AE
++ "R" > U+09AF
++ "r" > U+09F0
++ "l" > U+09B2
++ "X" > U+09F1
++ "L" > U+09B6
++ "S" > U+09B7
++ "s" > U+09B8
++ "h" > U+09B9
++ "z" > U+09CE
++ "Z" > U+0982
+dk(H) + "z" > U+0983
++ "~" > U+0981
+dk(H) + "i" > U+09DC
+dk(H) + "I" > U+09DD
++ "x" > U+09DF
++ "V" > U+0995 U+09CD U+09B7
++ "A" > U+0985
+dk(H) + "a" > U+0986
+U+0985 + "a" > U+0986
+dk(H) + 'e' > U+0987
+dk(H) + 'E' > U+0988
+dk(H) + 'u' > U+0989
+dk(H) + 'U' > U+098A
++ "M" > U+098B
++ "w" > U+098F
++ "W" > U+0990
+dk(H) + "o" > U+0993
+dk(H) + "O" > U+0994
++ "`" > U+09CD
++ "+" > U+09CD
++  [K_NPPLUS]  > U+09CD
++ "O" > U+09CC
++ "a" > U+09BE
++ "e" > U+09BF
++ "E" > U+09C0
++ "u" > U+09C1
++ "U" > U+09C2
++ "#" > U+09C3
++ "q" > U+09C7
++ "Q" > U+09C8
++ "o" > U+09CB
++ "y" > U+09CD U+09F0
++ "Y" > U+09CD U+09AF
++ "|" > U+09F7
++ "v" > U+09F0 U+09CD
++ "0" >  U+09E6
++ "1" >  U+09E7
++ "2" >  U+09E8
++ "3" >  U+09E9
++ "4" >  U+09EA
++ "5" >  U+09EB
++ "6" >  U+09EC
++ "7" >  U+09ED
++ "8" >  U+09EE
++ "9" >  U+09EF

@@ -1,6 +1,19 @@
 LIBTRALO Keyboard Change History
 =======================
 
+1.6.1 (14 Sep 2018)
+-----------------
+* Added dnj language
+
+1.6 (9 Jul 2018)
+-----------------
+* Updated to include Charis SIL Dan fonts
+* Changed to include shared/sil/charis fonts instead of in local repo
+* Added On screen keyboard
+* Changed touch layout file to use new name: libtralo.keyman-touch-layout (no change in layout)
+* Updated documentation to include a welcome.htm rather than a .pdf
+
+
 1.5 (13 Nov 2017)
 -----------------
 * Updated by Lorna Evans to be fully Unicode compliant

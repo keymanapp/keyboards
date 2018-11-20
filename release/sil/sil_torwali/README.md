@@ -3,7 +3,7 @@ Torwali Keyboard
 
 Copyright (C) 2016-2018 SIL International
 
-Version 0.8
+Version 0.8.1
 
 __DESCRIPTION__
 

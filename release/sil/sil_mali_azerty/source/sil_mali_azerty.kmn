@@ -1,0 +1,222 @@
+﻿store(&VERSION) '9.0'
+store(&BITMAP) 'sil_mali_azerty.ico'
+store(&COPYRIGHT) '© 2004-2018 SIL Mali'
+store(&NAME) 'Clavier du Mali (Azerty)'
+store(&HotKey ) "[K_F11]"
+c store(&mnemoniclayout) "0"
+store(&VISUALKEYBOARD) 'sil_mali_azerty.kvks'
+store(&KEYBOARDVERSION) '3.3'
+store(&TARGETS) 'windows macosx linux web'
+
+begin Unicode > use(Main)
+
+c The basic keyboard was done by Doug Higby for Burkina Faso.
+c This was modified by Dan Brubaker in November 2007 and Jan, Oct 2008, Sept 2017.
+c All characters are composed as much as practical i.e. one single character  instead of two.
+c The following 2 stores are used with the group(angleit) near the bottom of this table.
+store(lessthan) [K_oE2] "<"
+store(greaterthan) [SHIFT K_oE2] ">"
+
+c Note that the modifying keys FOLLOW the character, just as when one writes.
+store(AcuteK)   '5'     c 4 Key, not shifted High
+store(GraveK)   '4'     c 5 Key, not shifted Low
+store(CircK)    '9'     c ^ 9 Key, not shifted
+store(DrsisK)   '='     c equal sign Two Dots
+store(MacronK)  '8'     c 8 Key, not shifted Mid tone
+store(TildeK)   '2'     c 2 Key, not shifted Nasal
+store(CaronK)   '0'     c 0 Key, not shifted 
+store(DotUnderK) '1'    c 1 Key, not shifted Dot under
+c 8 accents over vowels and nasals (all but the Tilde which is added in the next store)
+store(toneK) $GraveK  $AcuteK $CircK  $DrsisK \
+             $MacronK $CaronK $DotUnderK
+
+store(modifierK) outs(toneK) $TildeK                
+c These are the letters that one can type a "comma" before to make another symbol or letter
+c The below is for AZerty
+store(specchar1K)   "ABCDEFGHIJKMNOPRUWYZabcdefghijkmnoprsuwyz?VvLlQqSTtxX"
+
+c Below works for QWerty
+c store(specchar1K) "ABCDEFGHIJKMNOPRUWYZabcdefghijkmnoprsuwyz?[]{}VvLlQqSTt\;’Xx~<>`" "'"
+
+store(Qwerty) 'qQaAwWzZ12' '3' '4' '567890-!@#$%^&*()_[]{}\|mM,./<>?;:`' "'" '"' 
+store(Azerty) 'aAqQzZwW&é' '"' "'" '(-è_çà)1234567890°^$¨£*µ,?;:!./§mM²' "ù" '%'
+
+c Use the 2 lines below the stores to select matching lc and UC schwas
+store(CapSchwa) U+018E c Backwards E
+store(LCSchwa)  U+01DD
+c store(CapSchwa) U+018F c  "ǝ" that goes with the "Ə" below
+c store(LCSchwa)  U+0259  c "Ə"
+
+c The following lines create NFC values only for ANSI equivalents.  This fixes problems with
+c French spelling and grammar checkers which don't recognize valid decomposed characters.
+c Composed characters will center and raise the diacritics better in all Unicode fonts, thus making the character "look" correct over a much greater range of Unicode fonts.
+
+store(LatinVowel)      "AEIOUaeiou"
+store(CompositeAcute)  "Á" "É" U+00CD U+00D3 U+00DA "á" U+00E9 U+00ED U+00F3 U+00FA 
+store(CompositeGrave)  "À" "È" U+00CC U+00D2 U+00D9 "à" U+00E8 U+00EC U+00F2 U+00F9 
+store(CompositeCirc)   "Â" "Ê" U+00CE U+00D4 U+00DB "â" U+00EA U+00EE U+00F4 U+00FB
+store(CompositeNasal)  "Ã" "Ẽ" U+0128 U+00D5 U+0168 "ã" U+1EBD U+0129 U+00F5 U+0169
+store(CompositeDrsis)  "Ä" "Ë" U+00CF U+00D6 U+00DC "ä" U+00EB U+00EF U+00F6 U+00FC 
+store(CompositeMacron) "Ā" "Ē" "Ī" "Ō" "Ū" "ā" "ē" "ī" "ō" "ū" 
+store(CompositeCaron)  "Ǎ" "Ě" "Ǐ" "Ǒ" "Ǔ" "ǎ" "ě" "ǐ" "ǒ" "ǔ" 
+store(CompositeDotUnder) "Ạ" "Ẹ" "Ị" "Ọ" "Ụ" U+1EA1 U+1EB9 U+1ECB U+1ECD U+1EE5
+
+c Here are what the numbers BELOW mean in order:
+c So... Umodifiable are the vowels and nasals that can have accents
+c A     E /backwards E/CAP ESH/I/CAP/IOTA
+c O    open O   U    open U    N  CAP/ENG
+c ENYA     M      a      e    lc schwa/esh
+c i    iota     o    open o    u    open u
+c n     eng    enya    m  S  s  Z  z  W  w
+c T  t  H  h  D  d  L  l  g  x
+c a alpha    i barred    oe             ae
+store(Umodifiable)  U+0041 U+0045 U+018E U+0190 U+0049 U+0196 \
+                    U+004F U+0186 U+0055 U+01B2 U+004E U+014A \
+                    U+019D U+004D U+0061 U+0065 U+01DD U+025B \
+                    U+0069 U+0269 U+006F U+0254 U+0075 U+028B \
+                    "n" U+014B U+0272 "m" "S" "s" "Z" "z" "W" "w" \
+                    "T" "t" "H" "h" "D" "d" "L" "l" "g" "x" \
+                    U+0251 U+0268 U+0153 U+00E6 
+store(Composite) outs(CompositeAcute)  outs(CompositeGrave) \
+                 outs(CompositeCirc)   outs(CompositeNasal) outs(CompositeDrsis) \
+                 outs(CompositeMacron) outs(CompositeCaron) outs(CompositeDotUnder) 
+
+c Added quite a few characters to below
+c 2019 and 2018 are single American quotes (pontuation)
+c 02BC is the word forming Apostrophy for contractions
+c 201C and 201D are double American quotes, 0196 is a CAP iota
+store(specchar1K)   "ABCDEFGHIJKMNOPRUWYZabcdefghijkmnoprsuwyz?VvLlQqSTtxX"
+store(Uspecchar1)   "»"    "Ɓ"    "Ç" "Ɗ"    "Ɛ" \
+                    "©"    "Ɣ"    "…" U+0196 "Ɲ" \
+                    "ɨ"    "€"    "Ŋ" "Ɔ"    "”"  \
+                    "’"    "Ʋ"    "Ʒ" "Ƴ"    "№"  "«" \
+                    "ɓ"    "ç"    "ɗ" "ɛ"    "œ"  \
+                    U+0263 "ʔ"    "ɩ" "ɲ"    "⇒" \
+                    "æ"    "ŋ"    "ɔ" U+201C U+2018 \
+                    U+02BC "ʋ"    "ʒ" "ƴ"    "✓" \
+                    "…"    "‡"    "†" "£"    U+02BC  \
+                    $CapSchwa $LCSchwa "ʃ" "›" "‹" \
+                    "ɡ"    "ɑ"                  
+store(UGrave)    U+0300
+store(UAcute)    U+0301
+store(UCirc)     U+0302 
+store(UMacron)   U+0304
+store(UDrsis)    U+0308
+store(UCaron)    U+030C
+store(UTilde)    U+0303
+store(UDotUnder) U+0323
+c the 7 accents again, ALL except for the Tilde which is in the next store after this one.
+store(Utone) $UAcute  $UGrave $UCirc $UDrsis \
+             $UMacron $UCaron $UDotUnder
+store(Umodifier) outs(Utone) $UTilde
+
+group(Main) using keys
+
+
+$keymanonly: + [RALT K_HYPHEN] > "]"
+$keymanonly: + [RALT K_RBRKT] > "¤"
+$keymanonly: + [RALT K_COLON] > "¤"
+
++ any(Qwerty) >  index(Azerty,1)
+
+c "," before = "'" for AZerty (below) = accented u
+"," + any(specchar1K) > index(Uspecchar1,2)
+
+c This adds an accent after the remaining vowels (which appears centered over the vowel)
+c any(Umodifiable) + any(modifierK) > context index(Umodifier,2)  c For only ONE accent
+
+any(Umodifiable) + any(modifierK) > context index(Umodifier,2) use(Udiacritics) use(NFC)
+
+c When adding a second modifier over the TILDA, we need to check the order.
+
+any(Composite) + $TildeK > context $UTilde use(fixtilde)
+any(CompositeNasal) + any(toneK) > context index(Utone,2)
+any(CompositeNasal) any(Utone) + $TildeK > beep context
+
+any(Umodifier) + any(modifierK) > context index(Umodifier,2) use(Udiacritics) use(NFC)
+
+c below 2 pluses goes to Em-dash AND the Apostrophy after jusqu` doesn't go over the u anymore
+"+" + "+" > U+2014
+"au" + "`" > "au’"
+"Au" + "`" > "Au’"
+"rd" + "`"  > "rd’" c aujourd'hui
+
+c Extra characters with combined accents
+"G" + "6" > "Ə" c acute
+"B" + "6" > U+0102 c A plus breve, Composed
+"b" + "6" > "ɑ̆" c a alpha plus breve Decomposed character =2 characters combined
+"M" + "4" > "Ḿ" c acute m
+"m" + "4" > "ḿ" c acute
+"N" + "4" > "Ń" c acute n
+"n" + "4" > "ń" c acute
+"N" + "2" > "Ñ" c tilde
+"n" + "2" > "ñ" c tilde
+"N" + "0" > "Ň" c caron
+"n" + "0" > "ň" c caron
+"S" + "0" > "Š" c caron s
+"s" + "0" > "š" c caron
+"Z" + "0" > "Ž" c caron za4
+"z" + "0" > "ž" c caron
+c "ǝ" + "=" > "ӛ" c 2 dots ǝ
+c "," + "*" > "*" c 2 dots ǝ
+c [SHIFT K_BKSLASH] + [SHIFT K_BKSLASH] > "»" c Rt French double quote
+c "*" + "*" > "«" c Lf French double quote
+"," + [SHIFT K_BKSLASH] > "Ø" c Null sign
+"kp" + "p" > "k͡p" c Top Tie Bar  U+0361 for kp
+"gb" + "b" > "g͡b" c Top Tie Bar  U+0361 for gb
+"kk" + "n" > "ŋ͡m" c Top Tie Bar  U+0361 for ŋm
+"kk" + "s" > U+00A0 c No-Break Space
+"kk" + "h" > U+2011 c Non-Breaking Hyphen
+ 
+c Don't know why the following line has to be included, but it does.
+
+U+0251 + any(modifierK) > context index(Umodifier,2)
+
++ any(lessthan) > U+2039 use(angleit)
++ any(greaterthan) > U+203A use(angleit)
+
+group(angleit)
+U+2039 U+2039 > U+00AB
+U+00AB U+2039 > context(1) U+00A0 context(2)
+U+203A U+203A > U+00BB
+U+00BB U+203A > context(2) U+00A0 context(1)
+
+U+002A U+002A > U+00AB
+U+00AB U+002A > context(1) U+00A0 context(2)
+U+00B5 U+00B5 > U+00BB
+U+00BB U+00B5 > context(2) U+00A0 context(1)
+
+c The above ueses a big (regular) No-Break Space U+00A0 between the quotes,
+c To get a Narrow No-Break Space between the two guillemets, use U+202F instead
+group(fixtilde)
+any(CompositeAcute)  $UTilde > index(CompositeNasal,1) $UAcute use(NFC)
+any(CompositeGrave)  $UTilde > index(CompositeNasal,1) $UGrave
+any(CompositeDrsis)  $UTilde > index(CompositeNasal,1) $UDrsis use(NFC)
+any(CompositeCirc)   $UTilde > index(CompositeNasal,1) $UCirc
+any(CompositeMacron) $UTilde > index(CompositeNasal,1) $UMacron use(NFC)
+any(CompositeCaron)  $UTilde > index(CompositeNasal,1) $UCaron
+any(CompositeNasal)  $UTilde any(Utone) > context(1) context(3)
+
+group(Udiacritics)
+c Constraints
+any(Utone) any(Utone) > beep context(1)
+U+0303 any(Utone) U+0303 > beep context(1) context(2)
+any(CompositeAcute)  any(Utone) > beep context(1)
+any(CompositeGrave)  any(Utone) > beep context(1)
+any(CompositeNasal) $UTilde > beep context(1)
+any(CompositeDrsis)  any(Utone) > beep context(1)
+any(CompositeCirc)   any(Utone) > beep context(1)
+any(CompositeMacron) any(Utone) > beep context(1)
+any(CompositeCaron)  any(Utone) > beep context(1)
+any(Umodifier) any(Umodifier) $UTilde > $UTilde context(1) context(2)
+any(Umodifier) $UTilde > context(2) context(1)
+
+group(NFC)
+any(LatinVowel) $UAcute     > index(CompositeAcute,1)
+any(LatinVowel) $UGrave     > index(CompositeGrave,1)
+any(LatinVowel) $UDrsis     > index(CompositeDrsis,1)
+any(LatinVowel) $UTilde     > index(CompositeNasal,1)
+any(LatinVowel) $UCirc      > index(CompositeCirc,1)
+any(LatinVowel) $UMacron    > index(CompositeMacron,1)
+any(LatinVowel) $UCaron     > index(CompositeCaron,1)
+any(LatinVowel) $UDotUnder  > index(CompositeDotUnder,1)

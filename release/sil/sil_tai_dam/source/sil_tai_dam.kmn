@@ -1,0 +1,109 @@
+﻿store(&version) '9.0'
+store(&NAME) 'Tai Dam (SIL)'
+store(&BITMAP) 'sil_tai_dam.ico'
+store(&COPYRIGHT) 'Copyright © 2007-2018 SIL International'
+c store(&ETHNOLOGUECODE) 'blt'  	c deprecated in Kmn 10.
+store(&KEYBOARDVERSION) '2.2.1'
+store(&TARGETS) 'windows macosx linux'
+store(&MESSAGE) 'The SIL Tai Dam keyboard is distributed under The MIT License (MIT).'
+
+c This keyboard is designed for typing Tai Dam text using the Tai Viet script. It uses a
+c mnemonic layout based on the US English keyboard. That is, each Tai Viet character is assigned
+c to the key with the nearest equivalent US English letter.
+c It is also possible to key the Tai Don aspirated consonants using two-key sequences, but the keyboard
+c is not optimized for these characters.
+
+c History:
+c December 2017: Renamed SIL Tai Dam keyboard. Repackaged to meet documentation/metadata standards of new keyboard repository.
+c June 2016: added escape sequences for !@< and >
+c June 2016: included linux in &TARGETS
+c June 2016: updated source to Keyman Developer 9
+c 2007: Released as Tai Dam US keyboard.
+
+store(&VISUALKEYBOARD) 'sil_tai_dam.kvks'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_K] > U+AA80                c Ko Low
++ [SHIFT K_K] > U+AA81          c Ko High
+U+AA80 + [K_K] > U+AA82         c Kho Low
+U+AA81 + [SHIFT K_K] > U+AA83   c Kho High
++ [K_X] > U+AA84                c Khho Low
++ [SHIFT K_X] > U+AA85          c Khho High
+U+AA88 + [K_G] > U+AA86         c Go low
+U+AA89 + [SHIFT K_G] > U+AA87   c Go high
++ [K_G] > U+AA88                c ngo low
++ [SHIFT K_G] > U+AA89          c ngo high
++ [K_C] > U+AA8A                c co low
++ [SHIFT K_C] > U+AA8B          c co high
+U+AA8A + [K_C] > U+AA8C         c cho low
+U+AA8B + [SHIFT K_C] > U+AA8D   c cho high
++ [K_S] > U+AA8E                c so low
++ [SHIFT K_S] > U+AA8F          c so high
++ [K_W] > U+AA90                c nyo low
++ [SHIFT K_W] > U+AA91          c nyo high
++ [K_D] > U+AA92                c do low
++ [SHIFT K_D] > U+AA93          c do high
++ [K_T] > U+AA94                c to low
++ [SHIFT K_T] > U+AA95          c to high
++ [K_Q] > U+AA96                c tho low
++ [SHIFT K_Q] > U+AA97          c tho high
++ [K_N] > U+AA98                c no low
++ [SHIFT K_N] > U+AA99          c no high
++ [K_B] > U+AA9A                c bo low
++ [SHIFT K_B] > U+AA9B          c bo high
++ [K_P] > U+AA9C                c po low
++ [SHIFT K_P] > U+AA9D          c po high
+U+AA9C + [K_P] > U+AA9E         c pho low
+U+AA9D + [SHIFT K_P] > U+AA9F   c pho high
++ [K_F] > U+AAA0                c fo low
++ [SHIFT K_F] > U+AAA1          c fo high
++ [K_M] > U+AAA2                c mo low
++ [SHIFT K_M] > U+AAA3          c mo high
++ [K_J] > U+AAA4                c yo low
++ [SHIFT K_J] > U+AAA5          c yo high
+U+AABF + [K_R] > U+AAA6         c ro low
+U+AAC1 + [SHIFT K_R] > U+AAA7   c ro high
++ [K_L] > U+AAA8                c lo low
++ [SHIFT K_L] > U+AAA9          c lo high
++ [K_V] > U+AAAA                c vo low
++ [SHIFT K_V] > U+AAAB          c vo high
++ [K_H] > U+AAAC                c ho low
++ [SHIFT K_H] > U+AAAD          c ho high
++ [K_Z] > U+AAAE                c o low
++ [SHIFT K_Z] > U+AAAF          c o high
++ [SHIFT K_A] > U+AAB0          c may kang (short a)
++ [K_A] > U+AAB1                c aa
+c U+AAB1 + [K_A] > U+E032         c aa_circumflex
++ [K_I] > U+AAB2                c i
++ [SHIFT K_U] > U+AAB3          c w (u_horn)
++ [K_U] > U+AAB4                c u
++ [K_E] > U+AAB5                c e
++ [K_O] > U+AAB6                c o (o_circumflex)
++ [K_LBRKT] > U+AAB7            c may khit
++ [SHIFT K_I] > U+AAB8          c ia
++ [SHIFT K_E] > U+AAB9          c wa (u_horn + a)
++ [SHIFT K_O] > U+AABA          c ua
++ [SHIFT K_Y] > U+AABB          c aw (o_horn + u_horn)
++ [K_Y] > U+AABC                c ay
++ [K_RBRKT] > U+AABD            c an
++ [SHIFT K_LBRKT] > U+AABE      c am
++ [K_R] > U+AABF                c may ek
++ [SHIFT K_1] > U+AAC0          c may nwng
++ [SHIFT K_R] > U+AAC1          c may tho
++ [SHIFT K_2] > U+AAC2          c may song
++ [SHIFT K_BKQUOTE] > U+aadb    c symbol kon
++ [K_BKQUOTE] > U+AADC          c symbol nwng
++ [SHIFT K_RBRKT] > U+AADD      c symbol sam
++ [SHIFT K_COMMA] > U+AADE      c symbol ho hoi 
+c U+AADE + [SHIFT K_COMMA] > U+E04A c abbreviated form of ho hoi -- the PUA codepoint is deprecated
++ [SHIFT K_PERIOD] > U+AADF     c symbol koi koi 
+'(' + [SHIFT K_0] > U+25cc      c dotted circle
+c Escape sequences:
+'|' + [SHIFT K_1]      > '!'     c exclamation point
+'|' + [SHIFT K_2]      > '@'     c at sign
+'|' + [SHIFT K_COMMA]  > '<'     c left angle bracket
+'|' + [SHIFT K_PERIOD] > '>'     c right angle bracket
+c EOF

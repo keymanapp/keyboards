@@ -3,7 +3,7 @@ SIL EL - Ethiopian Latin Keyboard
 
 Copyright (C) 2017-2018 SIL Ethiopia
 
-Version 1.3.0
+Version 1.3.1
 
 Description
 -----------

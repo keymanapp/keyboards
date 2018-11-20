@@ -3,7 +3,7 @@ SIL IPA Keyboard Keyboard
 
 Copyright (C) 2002-2018 SIL International
 
-Version 1.5
+Version 1.6
 
 __DESCRIPTION__
 

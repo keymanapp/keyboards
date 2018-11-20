@@ -55,15 +55,15 @@ c updated stores for developer version 9.0
 
 c Revision 01 Apr 2016, (BJ) bug fix for initial consonant keys ver 9.0.1
 
-store(&VERSION) '9.0.1'
+store(&VERSION) '9.0'
 store(&NAME) "BJ-OjiCree (Kingfisher)"
-store(&BITMAP) 'ojcree3u.bmp'
-store(&COPYRIGHT) 'Copyright (c) April 2016 Bill Jancewicz NDC/SIL©©'
+store(&BITMAP) 'bj_oji_cree.ico'
+store(&COPYRIGHT) 'Copyright (c) April 2016-2018 Bill Jancewicz NDC/SIL'
 store(&MESSAGE) "This keyboard may be freely used and redistributed"
 store(&ETHNOLOGUECODE) 'ojs'
+store(&VISUALKEYBOARD) 'bj_oji_cree.kvks'
+store(&KEYBOARDVERSION) '9.0.3'
 store(&TARGETS) 'windows macosx linux web iphone'
-store(&VISUALKEYBOARD) 'bj_oji_cree.kvk'
-store(&KEYBOARDVERSION) '9.0.1'
 
 begin Unicode > use(main)
 
@@ -71,14 +71,14 @@ c ================================================================
 c STORES
 c ================================================================
 
-c initial consonant keys (The Î is U+14D1 which is the sh consonant)
-c (The ÿ is U+15AE which is the th consonant that looks like y)
-
-store(ConsKey) "ptkcmnsÎyfÿ"
-store(CapConsKey) "PTKCMNSÎYFÿ"
+c initial consonant keys which can be typed on keyboard
+store(ConsKey)    "ptkcmnsyf"
+store(CapConsKey) "PTKCMNSYF"
+c                 p      t      k      c      m      n       s      y       f      
+store(CCKey)      U+144A U+141F U+1420 U+1428 U+14BC U+1423  U+1422 U+153E  U+155D 
 
 c Consonant followed by vowel:
-c p      t      k      c      m      n       s      sh     y       f      th
+c          p      t      k      c      m      n       s      sh     y       f      th
 store(Ce)  U+142F U+144C U+146B U+1489 U+14A3 U+14C0  U+14ED U+1510 U+1526  U+1553 U+15A7
 store(Ci)  U+1431 U+144E U+146D U+148B U+14A5 U+14C2  U+14EF U+1511 U+1528  U+1555 U+15A8
 store(Cii) U+1432 U+144F U+146E U+148C U+14A6 U+14C3  U+14F0 U+1512 U+1529  U+1556 U+15A9
@@ -90,7 +90,7 @@ store(Ca)  U+1438 U+1455 U+1472 U+1490 U+14AA U+14C7  U+14F4 U+1515 U+152D  U+15
 store(Caa) U+1439 U+1456 U+1473 U+1491 U+14AB U+14C8  U+14F5 U+1516 U+152E  U+155A U+15AD
 
 c Standalone or trailing consonant, "western finals":
-c p      t      k      c      m      n       s      sh     y       f      th
+c          p      t      k      c      m      n       s      sh     y       f      th
 store(CC)  U+144A U+141F U+1420 U+1428 U+14BC U+1423  U+1422 U+14D1 U+153E  U+155D U+15AE
 
 c Vowel keys
@@ -144,10 +144,9 @@ U+157D + "a"  > U+1426 U+1472 c h+ka
 
 U+157D + any(Wkey) > U+1426 U+1484 c h kw
 
-c Consonant key to standalone consonant:
- + any(ConsKey)    > index(CC,1)
- + any(CapConsKey) > index(CC,1)
-c compiler says that "The rule will never be matched because its key code is never fired."
+c Consonant key to standalone consonant (change CC store to CCKey store):
+ + any(ConsKey)    > index(CCKey,1)
+ + any(CapConsKey) > index(CCKey,1)
 
 c Alternate consonants: (voiced for voiceless)
     + "b" > U+144A

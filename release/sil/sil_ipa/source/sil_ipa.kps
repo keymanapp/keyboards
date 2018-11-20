@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.988.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1050.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder>SIL IPA</Folder>
@@ -18,7 +19,7 @@
     <Name URL="">SIL IPA</Name>
     <Copyright URL="">© 2002-2018 SIL International</Copyright>
     <Author URL="mailto:fonts@sil.org">Martin Hosken, Lorna Evans</Author>
-    <Version URL="">1.5</Version>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -76,10 +77,10 @@
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>SILIPAKeyboardLayout.pdf</Name>
-      <Description>File SILIPAKeyboardLayout.pdf</Description>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
+      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>..\build\sil_ipa.kmx</Name>
@@ -87,12 +88,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_ipa.js</Name>
+      <Description>File sil_ipa.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>SIL IPA</Name>
       <ID>sil_ipa</ID>
-      <Version>1.5</Version>
+      <Version></Version>
+      <OSKFont>CharisSIL-R.ttf</OSKFont>
+      <DisplayFont>CharisSIL-R.ttf</DisplayFont>
       <Languages>
         <Language ID="und-Latn">und-Latn</Language>
       </Languages>

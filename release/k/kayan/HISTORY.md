@@ -34,3 +34,9 @@ Despite the visual look of U+02CA, U+0301 was strongly advised to be used until 
 -----------------
 
 Realized that the semicolon is used in the Kayǎn orthography so added it back. It had been removed for the U+02CA value but that was a temporary fix. So now is a good time to put the semicolon back in its original place.
+
+-------------------
+1.4.1 (18 Jun 2018)
+-------------------
+
+Add touch keyboard to package

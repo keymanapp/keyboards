@@ -48,6 +48,7 @@ Linux, macOS:
   * `-s         Quieter build`
   * `-c         Clean instead of build`
   * `-d         Include debug information`
+  * `-w         Treat warnings as errors`
   * `[target]   Specific folder to build`
 
 * Each keyboard also includes a project file which can be used to build the project - either from the command line 

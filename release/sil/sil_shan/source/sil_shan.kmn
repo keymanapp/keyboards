@@ -1,0 +1,276 @@
+﻿c Shan 'standard' keyboard layout as per Shan Institute for Information Technology layout
+c
+c MJPH  0.1     18-MAY-2012     Initial version
+
+store(&VERSION) "10.0"
+store(&NAME) "Shan (SIL)"
+store(&COPYRIGHT) '(c) 2012-2018 SIL Interanational'
+c store(&hotkey) [CTRL ALT K_S]
+store(&TARGETS) 'windows macosx linux web'
+store(&BITMAP) 'sil_shan.ico'
+store(&VISUALKEYBOARD) 'sil_shan.kvks'
+store(&KEYBOARDVERSION) '1.3'
+begin Unicode > use(Main)
+
+store(baseK)    'qwertyui' \
+                'opzxcvbn' \
+                'QWERYUIO' \
+                'PKXCVN'
+store(baseU)    U+1078 U+1010 U+107C U+1019 U+1022 U+1015 U+1075 U+1004 \
+                U+101D U+1081 U+107D U+1011 U+1076 U+101C U+101A U+107A \
+                U+AA61 U+107B U+A9E3 U+109E U+107F U+1077 U+101B U+101E \
+                U+1080 U+107E U+AA6A U+A9E0 U+AA6E U+109F
+store(baseExtra)       U+1079 U+AA66 U+AA68 U+A9E1 U+A9E2 U+A9E4 U+AA67 U+AA69
+
+store(puncK)    '<>K"'
+store(puncU)    U+104A U+104B U+201D U+201C
+
+store(toneK)    'hjL;:mM'
+store(toneU)    U+1089 U+1087 U+108A U+1088 U+1038 U+1062 U+1083
+
+store(prevK)    'as'
+store(prevU)    U+1031 U+1084
+store(filler)   U+200B
+
+store(asatK)    'f'
+store(asatU)    U+103A
+store(ymedK)    'B'
+store(ymedU)    U+103B
+store(rmedK)    'T'
+store(rmedU)    U+103C
+store(w1medK)   'g'
+store(w1medU)   U+103D
+store(w2medU)   U+1082
+store(wmedK)    'gG'
+store(wmedU)    U+103D U+1082
+store(udiaK)    'dDAS'
+store(udiaU)    U+102D U+102E U+1035 U+1085
+store(sdiaK)    'J'
+store(sdiaU)    U+1086
+store(ldiaK)    'kl'
+store(ldiaU)    U+102F U+1030
+store(ldotK)    'H'
+store(ldotU)    U+1037
+
+store(mDia)     outs(ymedU) outs(rmedU) outs(wmedU) outs(udiaU) outs(sdiaU) outs(ldiaU) outs(ldotU)
+store(m1DiaK)   outs(ymedK)
+store(m2DiaK)   outs(m1DiaK) outs(rmedK)
+store(m3DiaK)   outs(m2DiaK) outs(wmedK)
+store(m4DiaK)   outs(m3DiaK) outs(udiaK)
+store(m5DiaK)   outs(m4DiaK) outs(sdiaK)
+store(m6DiaK)   outs(m5DiaK) outs(ldiaK)
+store(m7DiaK)   outs(m6DiaK) outs(ldotK)
+
+group(Main) using keys
+
++ [RALT K_1] > U+1041
++ [RALT K_2] > U+1042
++ [RALT K_3] > U+1043
++ [RALT K_4] > U+1044
++ [RALT K_5] > U+1045
++ [RALT K_6] > U+1046
++ [RALT K_7] > U+1047
++ [RALT K_8] > U+1048
++ [RALT K_9] > U+1049
++ [RALT K_0] > U+1040
++ [SHIFT RALT K_1] > U+1091
++ [SHIFT RALT K_2] > U+1092
++ [SHIFT RALT K_3] > U+1093
++ [SHIFT RALT K_4] > U+1094
++ [SHIFT RALT K_5] > U+1095
++ [SHIFT RALT K_6] > U+1096
++ [SHIFT RALT K_7] > U+1097
++ [SHIFT RALT K_8] > U+1098
++ [SHIFT RALT K_9] > U+1099
++ [SHIFT RALT K_0] > U+1090
++ any(puncK) > index(puncU, 1)
++ 'F' > U+1082 U+103A
++ any(toneK) > index(toneU, 1)
+
++ any(baseK) > index(baseU, 1)
++ [RALT K_Q] > U+1079
++ [RALT K_W] > U+AA66
++ [SHIFT RALT K_W] > U+AA68
++ [RALT K_O] > U+A9E1
++ [SHIFT RALT K_O] > U+A9E2
++ [RALT K_Z] > U+A9E4
++ [RALT K_X] > U+AA67
++ [SHIFT RALT K_X] > U+AA69
++ [RALT K_S] > U+101D U+A9E5
+
++ any(prevK) > outs(filler) index(prevU, 1)
+any(filler) any(prevU) + any(baseK) > index(baseU, 3) index(prevU, 2)
+any(filler) any(prevU) + [RALT K_Q] > U+1079 index(prevU, 2)
+any(filler) any(prevU) + [RALT K_W] > U+AA66 index(prevU, 2)
+any(filler) any(prevU) + [SHIFT RALT K_W] > U+AA68 index(prevU, 2)
+any(filler) any(prevU) + [RALT K_O] > U+A9E1 index(prevU, 2)
+any(filler) any(prevU) + [SHIFT RALT K_O] > U+A9E2 index(prevU, 2)
+any(filler) any(prevU) + [RALT K_Z] > U+A9E4 index(prevU, 2)
+any(filler) any(prevU) + [RALT K_X] > U+AA67 index(prevU, 2)
+any(filler) any(prevU) + [SHIFT RALT K_X] > U+AA69 index(prevU, 2)
+any(filler) any(prevU) + [K_BKSP] > nul
+any(baseU) any(prevU) + [K_BKSP] > outs(filler) index(prevU, 2)
+
+c any(ydiaU) any(rdiaU) any(wdiaU) any(udiaU) any(sdiaU) any(ldiaU) any(ldotU)
+any(ymedU) any(rmedU) any(w1medU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 7) context
+any(ymedU) any(rmedU) any(w1medU) any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 6) context
+any(ymedU) any(rmedU) any(w1medU) any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 6) context
+any(ymedU) any(rmedU) any(w1medU) any(udiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(rmedU) any(w1medU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 6) context
+any(ymedU) any(rmedU) any(w1medU) any(sdiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(rmedU) any(w1medU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(rmedU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 6) context
+any(ymedU) any(rmedU) any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(rmedU) any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(rmedU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(rmedU) any(sdiaU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(rmedU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(rmedU) any(w1medU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(rmedU) + any(asatK) > index(asatU, 3) context
+any(ymedU) any(w1medU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 6) context
+any(ymedU) any(w1medU) any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(w1medU) any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(w1medU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(w1medU) any(sdiaU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(w1medU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(w1medU) + any(asatK) > index(asatU, 3) context
+any(ymedU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(ymedU) any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(udiaU) + any(asatK) > index(asatU, 3) context
+any(ymedU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(ymedU) any(sdiaU) + any(asatK) > index(asatU, 3) context
+any(ymedU) any(ldiaU) + any(asatK) > index(asatU, 3) context
+any(ymedU) + any(asatK) > index(asatU, 2) context
+any(rmedU) any(w1medU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 6) context
+any(rmedU) any(w1medU) any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 5) context
+any(rmedU) any(w1medU) any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(rmedU) any(w1medU) any(udiaU) + any(asatK) > index(asatU, 4) context
+any(rmedU) any(w1medU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(rmedU) any(w1medU) any(sdiaU) + any(asatK) > index(asatU, 4) context
+any(rmedU) any(w1medU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(rmedU) any(w1medU) + any(asatK) > index(asatU, 3) context
+any(rmedU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(rmedU) any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 4) context
+any(rmedU) any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(rmedU) any(udiaU) + any(asatK) > index(asatU, 3) context
+any(rmedU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(rmedU) any(sdiaU) + any(asatK) > index(asatU, 3) context
+any(rmedU) any(ldiaU) + any(asatK) > index(asatU, 3) context
+any(rmedU) + any(asatK) > index(asatU, 2) context
+any(w1medU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 5) context
+any(w1medU) any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 4) context
+any(w1medU) any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(w1medU) any(udiaU) + any(asatK) > index(asatU, 3) context
+any(w1medU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(w1medU) any(sdiaU) + any(asatK) > index(asatU, 3) context
+any(w1medU) any(ldiaU) + any(asatK) > index(asatU, 3) context
+any(w1medU) + any(asatK) > index(asatU, 2) context
+any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 4) context
+any(udiaU) any(sdiaU) + any(asatK) > index(asatU, 3) context
+any(udiaU) any(ldiaU) + any(asatK) > index(asatU, 3) context
+any(udiaU) + any(asatK) > index(asatU, 2) context
+any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 3) context
+any(sdiaU) + any(asatK) > index(asatU, 2) context
+any(ldiaU) + any(asatK) > index(asatU, 2) context
+ + any(asatK) > index(asatU, 1)
+
+any(w2medU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(w2medU, 1) index(asatU, 5) index(udiaU, 2) index(sdiaU, 3) index(ldiaU, 4)
+any(w2medU) any(udiaU) any(sdiaU) + any(asatK) > index(w2medU, 1) index(asatU, 4) index(udiaU, 2) index(sdiaU, 3)
+any(w2medU) any(udiaU) any(ldiaU) + any(asatK) > index(w2medU, 1) index(asatU, 4) index(udiaU, 2) index(ldiaU, 3)
+any(w2medU) any(udiaU) + any(asatK) > index(w2medU, 1) index(asatU, 3) index(udiaU, 2)
+any(w2medU) any(sdiaU) any(ldiaU) + any(asatK) > index(w2medU, 1) index(asatU, 4) index(sdiaU, 2) index(ldiaU, 3)
+any(w2medU) any(sdiaU) + any(asatK) > index(w2medU, 1) index(asatU, 3) index(sdiaU, 2)
+any(w2medU) any(ldiaU) + any(asatK) > index(w2medU, 1) index(asatU, 3) index(ldiaU, 2)
+any(w2medU) + any(asatK) > index(w2medU, 1) index(asatU, 2)
+
+any(rmedU) any(wmedU) any(udiaU) any(sdiaU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 7) context
+any(rmedU) any(wmedU) any(udiaU) any(sdiaU) any(ldiaU) + any(m1DiaK) > index(mDia, 6) context
+any(rmedU) any(wmedU) any(udiaU) any(sdiaU) any(ldotU) + any(m1DiaK) > index(mDia, 6) context
+any(rmedU) any(wmedU) any(udiaU) any(sdiaU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(wmedU) any(udiaU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 6) context
+any(rmedU) any(wmedU) any(udiaU) any(ldiaU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(wmedU) any(udiaU) any(ldotU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(wmedU) any(udiaU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(wmedU) any(sdiaU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 6) context
+any(rmedU) any(wmedU) any(sdiaU) any(ldiaU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(wmedU) any(sdiaU) any(ldotU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(wmedU) any(sdiaU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(wmedU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(wmedU) any(ldiaU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(wmedU) any(ldotU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(wmedU) + any(m1DiaK) > index(mDia, 3) context
+any(rmedU) any(udiaU) any(sdiaU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 6) context
+any(rmedU) any(udiaU) any(sdiaU) any(ldiaU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(udiaU) any(sdiaU) any(ldotU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(udiaU) any(sdiaU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(udiaU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(udiaU) any(ldiaU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(udiaU) any(ldotU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(udiaU) + any(m1DiaK) > index(mDia, 3) context
+any(rmedU) any(sdiaU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 5) context
+any(rmedU) any(sdiaU) any(ldiaU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(sdiaU) any(ldotU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(sdiaU) + any(m1DiaK) > index(mDia, 3) context
+any(rmedU) any(ldiaU) any(ldotU) + any(m1DiaK) > index(mDia, 4) context
+any(rmedU) any(ldiaU) + any(m1DiaK) > index(mDia, 3) context
+any(rmedU) any(ldotU) + any(m1DiaK) > index(mDia, 3) context
+any(rmedU) + any(m1DiaK) > index(mDia, 2) context
+any(wmedU) any(udiaU) any(sdiaU) any(ldiaU) any(ldotU) + any(m2DiaK) > index(mDia, 6) context
+any(wmedU) any(udiaU) any(sdiaU) any(ldiaU) + any(m2DiaK) > index(mDia, 5) context
+any(wmedU) any(udiaU) any(sdiaU) any(ldotU) + any(m2DiaK) > index(mDia, 5) context
+any(wmedU) any(udiaU) any(sdiaU) + any(m2DiaK) > index(mDia, 4) context
+any(wmedU) any(udiaU) any(ldiaU) any(ldotU) + any(m2DiaK) > index(mDia, 5) context
+any(wmedU) any(udiaU) any(ldiaU) + any(m2DiaK) > index(mDia, 4) context
+any(wmedU) any(udiaU) any(ldotU) + any(m2DiaK) > index(mDia, 4) context
+any(wmedU) any(udiaU) + any(m2DiaK) > index(mDia, 3) context
+any(wmedU) any(sdiaU) any(ldiaU) any(ldotU) + any(m2DiaK) > index(mDia, 5) context
+any(wmedU) any(sdiaU) any(ldiaU) + any(m2DiaK) > index(mDia, 4) context
+any(wmedU) any(sdiaU) any(ldotU) + any(m2DiaK) > index(mDia, 4) context
+any(wmedU) any(sdiaU) + any(m2DiaK) > index(mDia, 3) context
+any(wmedU) any(ldiaU) any(ldotU) + any(m2DiaK) > index(mDia, 4) context
+any(wmedU) any(ldiaU) + any(m2DiaK) > index(mDia, 3) context
+any(wmedU) any(ldotU) + any(m2DiaK) > index(mDia, 3) context
+any(wmedU) + any(m2DiaK) > index(mDia, 2) context
+any(udiaU) any(sdiaU) any(ldiaU) any(ldotU) + any(m3DiaK) > index(mDia, 5) context
+any(udiaU) any(sdiaU) any(ldiaU) + any(m3DiaK) > index(mDia, 4) context
+any(udiaU) any(sdiaU) any(ldotU) + any(m3DiaK) > index(mDia, 4) context
+any(udiaU) any(sdiaU) + any(m3DiaK) > index(mDia, 3) context
+any(udiaU) any(ldiaU) any(ldotU) + any(m3DiaK) > index(mDia, 4) context
+any(udiaU) any(ldiaU) + any(m3DiaK) > index(mDia, 3) context
+any(udiaU) any(ldotU) + any(m3DiaK) > index(mDia, 3) context
+any(udiaU) + any(m3DiaK) > index(mDia, 2) context
+any(sdiaU) any(ldiaU) any(ldotU) + any(m4DiaK) > index(mDia, 4) context
+any(sdiaU) any(ldiaU) + any(m4DiaK) > index(mDia, 3) context
+any(sdiaU) any(ldotU) + any(m4DiaK) > index(mDia, 3) context
+any(sdiaU) + any(m4DiaK) > index(mDia, 2) context
+any(ldiaU) any(ldotU) + any(m5DiaK) > index(mDia, 3) context
+any(ldiaU) + any(m5DiaK) > index(mDia, 2) context
+any(ldotU) + any(m6DiaK) > index(mDia, 2) context
++ any(m7DiaK) > index(mDia, 1)
+
+c move asat around either after 'G' or after 'H'
+any(asatU) any(ymedU) any(rmedU) + 'G' > index(ymedU, 2) index(rmedU, 3) U+1082 index(asatU, 1)
+any(asatU) any(rmedU) + 'G' > index(rmedU, 2) U+1082 index(asatU, 1)
+any(asatU) any(ymedU) + 'G' > index(ymedU, 2) U+1082 index(asatU, 1)
+any(asatU) + 'G' > U+1082 context
+any(asatU) any(udiaU) any(sdiaU) any(ldiaU) + any(ldotK) > index(udiaU,2) index(sdiaU,3) index(ldiaU,4) index(ldotU,5) index(asatU,1)
+any(asatU) any(udiaU) any(sdiaU) + any(ldotK) > index(udiaU,2) index(sdiaU,3) index(ldotU,4) index(asatU,1)
+any(asatU) any(udiaU) any(ldiaU) + any(ldotK) > index(udiaU,2) index(ldiaU,3) index(ldotU,4) index(asatU,1)
+any(asatU) any(udiaU) + any(ldotK) > index(udiaU,2) index(ldotU,3) index(asatU,1)
+any(asatU) any(sdiaU) any(ldiaU) + any(ldotK) > index(sdiaU,2) index(ldiaU,3) index(ldotU,4) index(asatU,1)
+any(asatU) any(sdiaU) + any(ldotK) > index(sdiaU,2) index(ldotU,3) index(asatU,1)
+any(asatU) any(ldiaU) + any(ldotK) > index(ldiaU,2) index(ldotU,3) index(asatU,1)
+any(asatU) + any(ldotK) > index(ldotU,2) index(asatU,1)
+
+c anusvara support
+any(sdiaU) any(ldotU) + [RALT K_H] > U+1036 context
+any(ldotU) + [RALT K_H] > U+1036 context
+U+1036 any(sdiaU) any(ldiaU) any(ldotU) + any(m3DiaK) > index(mDia, 5) index(sdiaU,2) index(ldiaU,3) U+1036 index(ldotU,4)
+U+1036 any(sdiaU) any(ldiaU) + any(m3DiaK) > index(mDia, 4) index(sdiaU,2) index(ldiaU,3) U+1036
+U+1036 any(sdiaU) any(ldotU) + any(m3DiaK) > index(mDia, 4) index(sdiaU,2) U+1036 index(ldotU,3)
+U+1036 any(sdiaU) + any(m3DiaK) > index(mDia, 3) context
+U+1036 any(ldiaU) any(ldotU) + any(m3DiaK) > index(mDia, 4) index(ldiaU,2) U+1036 index(ldotU,3)
+U+1036 any(ldiaU) + any(m3DiaK) > index(mDia, 3) index(ldiaU,2) U+1036
+U+1036 any(ldotU) + any(m3DiaK) > index(mDia, 3) U+1036 index(ldotU,2)
+U+1036 + any(m3DiaK) > index(mDia, 2) context

@@ -1,0 +1,148 @@
+﻿c Cameroon AZERTY Keyboard
+c 
+c Cameroon AZERTY Keyboard supporting the Standardized Alphabet for Cameroonian Languages - designed for a French (AZERTY) Keyboard.
+c 
+c ****************************************************************
+
+store(&VERSION) '9.0'
+c HOTKEY "^+C"
+store(&BITMAP) 'sil_cameroon_azerty.ico'
+store(&NAME) 'Cameroon AZERTY'
+store(&mnemoniclayout) "1"
+c Specify the first group of rules to use in processing
+store(&TARGETS) 'windows macosx linux'
+store(&COPYRIGHT) '© 2006-2018 SIL Cameroon'
+store(&MESSAGE) 'Cameroon AZERTY Keyboard supporting the Standardized Alphabet for Cameroonian Languages'
+store(&KEYBOARDVERSION) '1.2.1'
+store(&LANGUAGE) 'x040C'
+store(&WINDOWSLANGUAGES) 'x040C'
+store(&ETHNOLOGUECODE) 'abb add ael agq ags aku anv asj ass ato azo baf bag bas bav baw bax baz bbi bbj bbk bbq bbw bbx bby bce bcw bdn bdu beb bec bfd bfj bfm bfp bgf bgj bhs biw bju bkc bkh bkm bko bmo bmv bnz boe bqd bqm bqo bqt bqz bri bse bsi bss btb btc bum bvg bvm bwh bwt bxp bxs byb byv bzv ckx cug cuv dae dbq dek dii dkx dme dmm dmo dow dua dur duz ekm emn eto ewo fak fal fll fmp fub gid gis giz gke gmn gnd gou guv gyi hij hna hya isu iyo jbu jgo jia jim kdz ken kfl kfn kid kkj klc kme kmp knp kot kqx ksf kvj kvm kwu kzr lbi lem leo lfa lmp lmx lns luw maf mbo mcp mcs mct mcu mdd mea meq mfd mff mfh mfi mfj mfk mgg mgo mhk mif mij mkk mlb mlr mlw mmu mnf mpi mqb mru msv mtk muc mug muo muy mxf mxu myg mzd nbv ncp ncr ndb ndu nfu nge ngj ngn ngv ngy nhu njj njy nkc nla nmg nml nmr nnh nnx nnz nsh nwe nza obl oku ost ozm pbi pfe pmm pmn pny sgi sox swq szv tik toz tsh ttf tui twn udl uiv usk vut weh wes wok www xed xmb xmd xmg xmj yam yas yat yav ybb yei yko zhw ziz zuy'
+store(&VISUALKEYBOARD) 'sil_cameroon_azerty.kvks'
+begin Unicode > use(First)
+
+c base keys and outputs:  1='Cam' (! + key) , 2 = 'Spcl' (: + key)
+store(Bku) '1234567890°+AZERTYUIOPQSDFGHJKLM%µ>WXCVBN?./§'    c JKLQSX4567890 available for 'Cam'
+store(Bcu) '1234567890°+AZERTYUIOPQSDFGHJKLM' beep 'µ>WXCVBN?./' beep
+store(Scu1) '¼½¾' beep beep beep beep beep beep beep beep beep 'Ɛ' beep 'Ə®ŒƳɄƗƆØ' \
+beep beep 'ƊÆɡⱭ' beep beep beep '™%×»Ẅ' beep '©' beep 'ƁŊ' beep beep '÷' beep
+store(Scu2) beep beep beep beep beep beep beep beep beep beep beep beep beep \
+beep beep beep beep beep beep beep beep beep beep beep beep beep 'ʔ' beep beep \
+beep beep beep beep beep '›' beep beep beep beep beep beep beep beep beep beep
+
+store(Bkl) '&é"' "'" '(-_)=azertyuiop$qsdfghjklm*<wxcvbn,;'      c cjklmqrsvxz available for 'Cam'
+store(Bcl) '&' beep '"' "'" '(-_)=azertyuiop$qsdfghjklm*<wxcvbn,;'
+store(Scl1) beep beep beep beep '“' beep beep '”' beep 'ɛ' beep 'ə' beep 'œƴʉɨɔø' beep \
+beep beep 'ɗæʼα' beep beep beep beep beep '«ẅ' beep beep beep 'ɓŋ' beep beep
+store(Scl2) beep beep beep beep beep beep beep beep beep 'ɑ' beep beep beep \
+beep beep beep beep beep beep beep beep beep beep beep U+02C8 beep beep beep beep \
+beep beep '‹' beep beep beep beep beep beep beep beep
+
+store(Bk) outs(Bku) outs(Bkl)
+store(Bc) outs(Bcu) outs(Bcl)
+store(Sc1) outs(Scu1) outs(Scl1)
+store(Sc2) outs(Scu2) outs(Scl2)
+
+c tone keys and outputs
+c store(Tk) 'ù%^¨§èé' JB 2007 ^¨ not working under XP change to ,?
+store(Tk) 'ù%,?§èé'
+store(TsM) U+02CB U+02CA U+02C6 U+02C7 U+02C9 U+02C8 U+00A8
+store(Ts) U+0300 U+0301 U+0302 U+030C U+0304 U+030D U+0308
+store(Tck) '²£'
+c Replaced PUA characters with appropriate Unicode characters. AC 2018.
+c store(Tc1) U+F173 U+F172
+c store(Tc2) U+F174 U+F171
+store(Tc1) U+1DC5 U+1DC7
+store(Tc2) U+1DC6 U+1DC4
+store(Tc) outs(Tc1) outs(Tc2)
+
+
+c nasal keys (tilde under) & dot under 'Spcl'
+store(Nku) 'à='
+store(NuM) U+02CD '.'
+store(Nu) U+0330 U+0323
+
+c nasal keys 'Cam' (cedilla)
+store(Nkc) 'ç'
+store(NcM) U+00B8
+store(Nc) U+0327
+
+c nasal key 'Cam' (tilde over)
+store(Nko) 'à'
+store(NoM) U+02DC
+store(No) U+0303
+
+c nasal characters grouped
+store(Nk) outs(Nku) outs(Nkc) outs(Nko)
+store(NM) outs(NuM) outs(NcM) outs(NoM)
+store(N) outs(Nu) outs(Nc) outs(No)
+
+c nasal characters plus dot under grouped
+store(Ndk) outs(Nk) '.'
+store(NdM) outs(NM) U+2024
+store(Nd) outs(N) U+0323
+
+c groups for modifier-letter versions of diacritics
+store(Diacrit) outs(TsM) outs(N)
+store(Mod) outs(TsM) outs(NM)
+
+c ---------------- start processing rules---------------------
+group(First) using keys
+
+c access underlying diacritic, Cam, & Special keys (3 ways)
+any(TsM) + any(Tk) > index(Tk,2)     c double-strike
+any(NM) + any(Nk) > index(Nk,2)
+'!' + any(Tk)  > index(Tk,2)
+'!' + any(Nk)  > index(Nk,2)
+
+c assorted combinations
++ [RALT ' '] > U+00A0
+'1' '/' + '4' > U+00BC
+'1' '/' + '2' > U+00BD
+'3' '/' + '4' > U+00BE
+'..' + '.' > U+2026
+'-' + '-' > U+2013
+'–' + '-' > U+2014
+':' + '.' > U+2024
+c added JB Nov07 to match QWERTY version
+
+c nasal + tone + character
+any(NM) any(Ts) '!' + any(Bk) > index(Sc1,4) index(N,1) index(Ts,2)
+any(NM) any(Ts) ':' + any(Bk) > index(Sc2,4) index(N,1) index(Ts,2)
+any(NM) any(Ts) + any(Bk) > index(Bk,3) index(N,1) index(Ts,2)
+any(NM) any(Tc) '!' + any(Bk) > index(Sc1,4) index(N,1) index(Tc,2)
+any(NM) any(Tc) ':' + any(Bk) > index(Sc2,4) index(N,1) index(Tc,2)
+any(NM) any(Tc) + any(Bk) > index(Bk,3) index(N,1) index(Tc,2)
+
+c nasal + tone  (This is for asthetics only, stacking diacritics before character has been entered.)
+any(NM) + any(Tk)> index(NM,1) index(Ts,2)
+any(NM) '!' + any(Tck)> index(NM,1) index(Tc2,3)
+any(NM) + any(Tck)> index(NM,1) index(Tc1,2)
+
+c nasal + character
+any(NM) '!' + any(Bk) > index(Sc1,3) index(N,1)
+any(NM) ':' + any(Bk) > index(Sc2,3) index(N,1)
+any(NM) + any(Bk) > index(Bk,2) index(N,1)
+
+c tone + character
+any(TsM) '!' + any(Bk) > index(Sc1,3) index(Ts,1)
+any(TsM) ':' + any(Bk) > index(Sc2,3) index(Ts,1)
+any(TsM) + any(Bk) > index(Bk,2) index(Ts,1)
+' ' any(Tc) '!' + any(Bk) > index(Sc1,4) index(Tc,2)
+' ' any(Tc) ':' + any(Bk) > index(Sc2,4) index(Tc,2)
+' ' any(Tc) + any(Bk) > index(Bk,3) index(Tc,2)
+
+c set nasal
+':' + any(Nku)  > index(NuM,2)
++ any(Nkc) > index(NcM,1)
++ any(Nko) > index(NoM,1)
+
+c set tone
+'!' + any(Tck)  > ' ' index(Tc2,2)
++ any(Tck)  > ' ' index(Tc1,1)
++ any(Tk)  > index(TsM,1)
+
+c output special characters
+'!' + any(Bk) > index(Sc1,2)
+':' + any(Bk) > index(Sc2,2)
+
+c end

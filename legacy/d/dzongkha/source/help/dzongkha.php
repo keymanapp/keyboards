@@ -219,7 +219,7 @@ END;
 	<h4>On Screen Keyboard</h4>
 	<p>This keyboard includes an On Screen Keyboard view for easy reference. The On Screen Keyboard works best when associated with a QWERTY US layout.</p>
 	<h4>Fonts</h4>
-	<p>This is a Unicode keyboard and works with any Unicode font which has support for Tibetan script. The <b>DDC Uchen</b> font fully supports this keyboard and is installed with the keyboard. To find other fonts on your computer which support the keyboard, use the Keyman <a href='http://help.keymandesktop.com/docs/start_font.php'>Font Helper</a>.</p>
+	<p>This is a Unicode keyboard and works with any Unicode font which has support for Tibetan script. The <b>DDC Uchen</b> font fully supports this keyboard and is installed with the keyboard. To find other fonts on your computer which support the keyboard, use the Keyman <a href='https://help.keyman.com/products/desktop/9.0/docs/basic_fonthelper.php'>Font Helper</a>.</p>
   </section>
   <section id='layout'>
 	<h2>Keyboard Layout</h2>

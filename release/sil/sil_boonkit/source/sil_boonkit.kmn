@@ -11,13 +11,15 @@ c MJPH  0.5.3   25-NOV-2013     Add great sa as hang sa + `
 c MJPH  0.5.4    3-MAY-2016     subjoin a sub la to get medial la
 c SAD   0.6      7-Feb-2018     Created Package and installer that installs Boonkit keyboard with fonts and Keyman Desktop 9.0
 c SAD   0.6.1    7-Feb-2018     Moved to Github Keyman Repository
+c DLR   0.6.2   31-May-2018     Update BCP 47 code and switch to .kvks for onscreen keyboard
+c DLR   0.6.3   13-Jun-2018     minor edits to welcome and help files
 
 store(&VERSION) '9.0'
 store(&NAME) 'Boonkit Unicode'
-store(&VISUALKEYBOARD) 'sil_boonkit.kvk'
+store(&VISUALKEYBOARD) 'sil_boonkit.kvks'
 store(&ETHNOLOGUECODE) 'NOD'
 store(&COPYRIGHT) '© SIL International 2018'
-store(&KEYBOARDVERSION) '0.6.1'
+store(&KEYBOARDVERSION) '0.6.3'
 store(&BITMAP) 'sil_boonkit.ico'
 
 begin Unicode > use(Main)

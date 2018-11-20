@@ -58,7 +58,7 @@ Common punctuation marks have all been moved to the main keyboard page, so a com
 Fonts: This keyboard will work with any Unicode font, but the placement of accents looks a little better on a font that has been created by SIL. Andika's design takes into account the needs of beginning readers. The focus is on clear, easy-to-perceive letter forms that will not be readily confused with one another. One can download the latest version of the font <a href="http://software.sil.org/andika/download/">here</a>.
 </p>
 <p>
-(c) 2017 SIL International
+(c) 2017-2018 SIL International
 <br/>
 Developed with the approval of the Tem language committee, CLTem
 <br/>

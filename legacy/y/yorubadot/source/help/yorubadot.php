@@ -308,7 +308,7 @@ END;
   <p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>{</kbd> to get <samp>{</samp> (instead of <samp>ˆ</samp>).</p>
   <p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>v</kbd> to get <samp>v</samp> (instead of <samp>ẹ</samp>).</p>
   <h4>Fonts</h4>
-  <p>This is a Unicode keyboard and works with any Unicode font which has support for Yorùbá. The <b>Gentium Plus</b> font family supports Yorùbá and is installed with the keyboard. To find other fonts on your computer which support this keyboard, use the Keyman <a href='http://help.keymandesktop.com/docs/start_font.php'>Font Helper</a>.</p>
+  <p>This is a Unicode keyboard and works with any Unicode font which has support for Yorùbá. The <b>Gentium Plus</b> font family supports Yorùbá and is installed with the keyboard. To find other fonts on your computer which support this keyboard, use the Keyman Desktop Font Helper.</p>
   <h4>On Screen Keyboard</h4>
   <p>This keyboard includes an On Screen Keyboard view for easy reference. The On Screen Keyboard displays best on a QWERTY US layout.</p>  
   </section>
@@ -328,32 +328,7 @@ END;
         </td>
         <td class="highlightExample lang2">Ọjọ́ Ìṣẹ́gun. GBọ̄gbọ̄.</td>
         <td>"Tuesday. All."</td>
-        <td class="highlightKeys">
-          <img class="key-32" alt=" " title=" " src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-88" alt="X" title="X" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-106" alt="j" title="j" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-120" alt="x" title="x" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-93" alt="]" title="]" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-32" alt=" " title=" " src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-73" alt="I" title="I" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-91" alt="[" title="[" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-122" alt="z" title="z" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-118" alt="v" title="v" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-93" alt="]" title="]" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-103" alt="g" title="g" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-117" alt="u" title="u" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-110" alt="n" title="n" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-46" alt="." title="." src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-32" alt=" " title=" " src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-81" alt="Q" title="Q" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-120" alt="x" title="x" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-124" alt="|" title="|" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-113" alt="q" title="q" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-120" alt="x" title="x" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-124" alt="|" title="|" src="http://s.keymanweb.com/keys/tr.gif">
-          <img class="key-46" alt="." title="." src="http://s.keymanweb.com/keys/tr.gif">
-          <span class="key-print">
-        </td>
+        <td class="highlightKeys"> X j x ] I [ z v ] g u n . Q x | q x | .</td>
       </tr>
     </tbody>
   </table>

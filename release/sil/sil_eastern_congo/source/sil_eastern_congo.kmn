@@ -1,0 +1,132 @@
+﻿c 
+c Eastern Congo keyboard layout
+c 
+
+store(&version) "9.0"
+store(&name) "Eastern Congo"
+store(&BITMAP) 'sil_eastern_congo.ico'
+store(&copyright) "© 2005-2018 SIL - Eastern Congo Group"
+store(&MESSAGE) 'Eastern Congo keyboard for languages of the Democratic Republic of the Congo.'
+store(&TARGETS) 'windows macosx'
+store(&ETHNOLOGUECODE) 'buu flr kmw led lgg lik log mdj mdm omi tbt tmv'
+store(&VISUALKEYBOARD) 'sil_eastern_congo.kvks'
+store(&KEYBOARDVERSION) '1.3.1'
+store(&WINDOWSLANGUAGES) 'x0409'
+
+begin Unicode > use(main)
+
+store(accent) U+02C6 U+02C7 U+02C9 U+0300 U+0301
+store(regvowel) U+0041 U+0045 U+0049 U+004F U+0055 \
+    U+0061 U+0065 U+0069 U+006F U+0075 \
+    U+0038 U+002A U+0039 U+0028 U+0037 U+0026   c alternate vowels
+store(spvowel) U+00C4 U+0190 U+0197 U+0186 U+0244 \
+    U+00E4 U+025B U+0268 U+0254 U+0289 \
+    U+026A U+0049 U+0275 U+019F U+028A U+01B1 c alternate vowels
+store(vowel) outs(regvowel) outs(spvowel)
+store(nasal) U+006D U+006E U+004D U+004E
+store(regnasal) U+006E U+004E
+store(spnasal)  U+014B U+014A
+store(Lendu) U+0052 U+0053 U+005A U+0072 U+0073 U+007A c these can take accents
+group(main) using keys
+";" + any(regvowel) > index(spvowel,2)          c special vowel
+"^" + any(vowel) > index(vowel,2) U+0302        c circumflex
+"!" + any(vowel) > index(vowel,2) U+030C        c caron
+"`" + any(vowel) > index(vowel,2) U+0300        c grave
+"'" + any(vowel) > index(vowel,2) U+0301        c acute
+":" + any(vowel) > index(vowel,2) U+0308        c diaersis (This was " before.)
+"@" + any(vowel) > index(vowel,2) U+0304    c macron
+"^;" + any(regvowel) > index(spvowel,3) U+0302
+"!;" + any(regvowel) > index(spvowel,3) U+030C
+"`;" + any(regvowel) > index(spvowel,3) U+0300
+"';" + any(regvowel) > index(spvowel,3) U+0301
+":;" + any(regvowel) > index(spvowel,3) U+0308
+'@;' + any(regvowel) > index(spvowel,3) U+0304
+c ";" + "'" > U+A78C  c glottal stop
+"'" + any(nasal) > index(nasal,2) U+0301
+"`" + any(nasal) > index(nasal,2) U+0300
+"';" + any(regnasal) > index(spnasal,3) U+0301
+"`;" + any(regnasal) > index(spnasal,3) U+0300
+"'" + any(Lendu) > index(Lendu,2) U+0301
+"`" + any(Lendu) > index(Lendu,2) U+0300
+"!" + any(Lendu) > index(Lendu,2) U+030C
+
+c ";" + "9" > U+027F c o bar
+c ";" + "(" > U+019F c capital O bar
+c "';" + "9" > U+027F U+0301 c o bar with acute
+c "`;" + "9" > U+027F U+0300 c o bar with grave
+c "!;" + "9" > U+027F U+030C c o bar with caron
+c "^;" + "9" > U+027F U+0302 c o bar with circumflex
+c "@;" + "9" > U+027F U+0304 c o bar with macron
+c "'!" + "(" > U+019F U+0301 c capital O bar with acute
+c "`;" + "(" > U+019F U+0300 c capital O bar with grave
+c "!;" + "(" > U+019F U+030C c capital O bar with caron
+c "^;" + "(" > U+019F U+0302 c capital O bar with circumflex
+c "@;" + "(" > U+019F U+0304 c capital O bar with macron
+
+";" + "N" > U+014A c capital eng
+";" + "n" > U+014B c eng
+".." + "." > U+2026 c ellipses
+";" + "<" > U+2039 c single guillemet open
+";" + ">" > U+203A c single guillemet close
+U+2039 + "<" > U+00AB c double guillemet open
+U+203A + ">" > U+00BB c double guillemet close
+c ";" + "`" > U+2018 c single open quote
+c ";" + "'" > U+2019 c single close quote
+"=" + "`" > U+2018 c single open quote
+"=" + "'" > U+2019 c single close quote
+U+2018 + "`" > U+201C c double open quote
+U+2019 + "'" > U+201D c double close quote
+";" + "c" > U+00E7 c c cedilla
+";" + "C" > U+00C7 c C cedilla
+";" + "H" > U+0126 c H bar
+";" + "h" > U+0127 c h bar
+";" + "B" > U+00DF c German sz
+";" + "-" > U+2013 c en dash
+";" + "_" > U+2014 c em dash
+";" + "x" > U+00D7 c multiplication
+";" + "\" > U+00F7 c division
+";1/" + "4" > U+00BC
+";1/" + "2" > U+00BD
+";3/" + "4" > U+00BE
+"(C" + ")" > U+00A9 c copyright symbol
+"(R" + ")" > U+00AE c trademark symbol
+
+";" + ":" > U+A789  c modifier letter colon (Budu past tense)
+";" + "=" > U+A78A  c modifier letter short equal (Budu future tense)
+U+0020 + "!" > U+202F "!" c U+202F is narrow nbsp, U+00A0 is nbsp
+U+0020 + "?" > U+202F "?"
+U+0020 + ":" > U+202F ":"
+U+0020 ";" + U+0020 > U+202F ";" U+0020
+U+2039 + U+0020 > U+2039 U+202F  c narrow nbsp inside left single guillemet
+U+0020 ";" + ">" > U+202F U+203A
+U+00AB + U+0020 > U+00AB U+202F
+";" + "s" > U+202F c narrow nbsp
+
+";" + "!" > U+02C7  c caron
+";" + "^" > U+02C6  c circumflex
+";" + "'" > U+02CA  c modifier letter acute accent
+U+02CA + "'" > U+A78C  c glottal stop
+";" + "`" > U+02CB  c modifier letter grave accent
+"=;" + "'" > U+0301  c combining acute accent
+"=;" + "`" > U+0300  c combining grave accent
+"=;" + "!" > U+030C  c combining caron accent
+"=;" + "^" > U+0302  c combining circumflex accent
+"=;" + "@" > U+0304  c combining macron
+
+c changed lines 117-125 to use dk(block_convert) to terminate processing on advice from MD. AC 26/04/18
+"'" + "'" > "''" dk(block_convert) c single apostrophe, stop context
+";" + ";" > ";;" dk(block_convert)
+"`" + "`" > "``" dk(block_convert)
+'"' + '"' > '""' dk(block_convert)
+"=" + "=" > "==" dk(block_convert)
+":" + ":" > "::" dk(block_convert)
+"^" + "^" > "^^" dk(block_convert)
+"@" + "@" > "@@" dk(block_convert)
+c "'" + "'" > U+0027 dk(block_convert)   c apostrophe, stop context
+c any(accent) + any(vowel) > index(vowel,2) index(accent,1)
+any(vowel) any(accent) + [K_BKSP] > nul
+any(vowel) any(accent) + [SHIFT K_BKSP] > index(vowel,1)
+
+c any(accent) + [K_BKSP] > ""
+
+c EOF

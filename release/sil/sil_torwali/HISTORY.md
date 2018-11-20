@@ -1,5 +1,7 @@
 Torwali Change History
 =======================
+0.8.1 (18 Jun 2018)
+* Add touch keyboard to package
 
 0.8 (8 Feb 2018)
 * Adjusted copyright dates

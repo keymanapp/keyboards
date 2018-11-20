@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.802.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">9.0.1</Version>
+    <Version URL=""></Version>
     <Name URL="">BJCreeUNI (east)</Name>
-    <Copyright URL="">Copyright © April Bill Jancewicz NDC/SIL</Copyright>
+    <Copyright URL="">Copyright © 2016-2018 Bill Jancewicz NDC/SIL</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
-    <WebSite URL="http://keyman.com/">http://keyman.com/</WebSite>
+    <WebSite URL="https://keyman.com/keyboards/bj_cree_east">https://keyman.com/keyboards/bj_cree_east</WebSite>
   </Info>
   <Files>
     <File>
@@ -57,6 +35,46 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\build\bj_cree_east.js</Name>
+      <Description>Keyboard BJ-OjiCree (Kingfisher)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>bjcrus.ttf</Name>
+      <Description>Font BJCree UNI</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>bjcrusb.ttf</Name>
+      <Description>Font BJCree UNI Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>BJCreeUNI (east)</Name>
+      <ID>bj_cree_east</ID>
+      <Version>9.0.3</Version>
+      <Languages>
+        <Language ID="crl-Cans">Northern East Cree (Unified Canadian Aboriginal Syllabics)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
