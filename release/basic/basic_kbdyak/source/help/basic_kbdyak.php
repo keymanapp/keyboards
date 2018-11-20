@@ -16,7 +16,7 @@ This keyboard is designed for the Sakha language of Russia.
 <br/>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift ralt>
+<div id='osk' data-states='default shift ralt'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
