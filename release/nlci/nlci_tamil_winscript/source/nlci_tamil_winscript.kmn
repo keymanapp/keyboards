@@ -44,6 +44,9 @@ c Adjust the behavior of l
 'ல' + 'l' > 'ள'
 'ள' + 'l' > 'ழ'      
 
+c Adjust the behavior of L
+'ள' + 'L' > 'ழ'
+
 c Adjust the behavior of n
 'ந' + 'n' > 'ண'     
 
@@ -69,7 +72,10 @@ c Adjust the behavior of s
 'ஸ' + 's'> 'ஷ'    
 
 c Adjust the behavior of M
- + 'M' >'ம்'
+ + 'M' > 'ம்'   
+
+c Adjust the behavior of R
+ + 'R' > nul
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '்' U+200C
