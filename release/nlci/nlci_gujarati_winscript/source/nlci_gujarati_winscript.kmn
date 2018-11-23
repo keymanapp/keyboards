@@ -1,0 +1,125 @@
+﻿store(&NAME) 'NLCI Gujarati WinScript'
+store(&COPYRIGHT) '© NLCI 2000-2018'
+store(&KEYBOARDVERSION) '2.0.0'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowelKeys) 'AiIuUReYoVMH'
+store(vowels) 'આઇઈઉઊઋએઐઓઔંઃ'
+store(vowelMatras) 'ાિીુૂૃેૈોૌંઃ'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
+
+store(cons) 'કખગઘઙ' \
+    	   	'ચછજઝઞ' \
+    	   	'ટઠડઢણ' \
+    	   	'તથદધન' \
+    	   	'પફબભમ' \
+    	   	'યરલવશષસહળ'
+
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
+
+c Adjust the behavior of 'a'
++ 'a' > 'અ'   
+'અ' + 'a' > 'આ'               
+any(cons) + 'a' > context dk(a)
+dk(a) + 'a' > 'ા' dk(aa)
+'ા' dk(aa) + 'a' > 'અ'
+
+c Adjust the behavior of 'i'
+'ઇ' + 'i' > 'ઈ' 
+'િ' + 'i' > 'ી'    
+
+c Adjust the behavior of l
+'લ' + 'l' > 'ળ'     
+
+c Adjust the behavior of R
+'ઋ' + 'R' > 'ૠ'
+'ૃ' + 'R' >'ૄ'
+   
+c Adjust the behavior of S
++ 'S' >  'ઁ'  
+
+c Adjust the behavior of u
+'ઉ' + 'u' > 'ઊ'    
+'ુ' + 'u' > 'ૂ' 
+
+c Adjust the behavior of s
+'સ' + 's'> 'ઁ'
+
+c Adjust the behavior of E
+ + 'E' > nul       
+ 
+ c Adjust the behavior of O
+ + 'O' > nul      
+ 
+ c Adjust the behavior of F
+ + 'F' > nul   
+ + 'f' > nul   
+ 
+
+c Adjust the behavior of X
+any(cons) + 'X' > context '્' U+200C
+any(cons) '્' + 'X' > context U+200C
+U+200C + 'X' > context beep
+store(WordFinalPunct) ' ",;:.>!]})' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+
+c numbers
+store(numberKeys) '1234567890'
+store(gujarathiNumbers) '૧૨૩૪૫૬૭૮૯૦'
+'`' dk(bt) + any(numberKeys) > index(gujarathiNumbers, 3)
+any(gujarathiNumbers) + any(numberKeys) > context index(gujarathiNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(cons) + any(vowelKeys) > context index(vowelMatras, 2)
+
+c cons + virama
+any (cons) + 'x' > context '્'          
+any(vowels) + 'x' > context '્'   
+
+c vowels + virama
+any(vowels) + 'x' > context '્' 
+'અ' + 'x' > context '્'
+any(vowelMatras) + 'x' > context '્'      
+
+c Vowel sign elongation
+'ી' + 'i' > context 'ી' 
+'ૂ' + 'u' > context 'ૂ'
+'ા' + 'a' > context 'ા'
+
