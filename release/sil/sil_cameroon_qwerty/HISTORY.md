@@ -1,5 +1,9 @@
 Change History
 =======================
+6.0.1 (November 2018)
+---------------------
+Fix font for mobile keyboards. Include OSK in keyboard package
+
 6.0 (2018)
 -----------------
 Rewrote Documentation, Bugfixes on External Keyboards with Mobile Clients. Submitted to new Keyman Repository
