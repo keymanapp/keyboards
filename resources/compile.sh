@@ -203,7 +203,7 @@ function build_keyboard {
   if [ -n "$keyboard_info_jsFilename" ]; then test -f "build/$keyboard_info_jsFilename" || die "Could not find output file build/$keyboard_info_jsFilename"; fi
   if [ -n "$keyboard_info_documentationFilename" ]; then test -f "build/$keyboard_info_documentationFilename" || die "Could not find output file build/$keyboard_info_documentationFilename"; fi
     
-  merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname $base_keyboard || die "Failed to merge keyboard_info for $base_keyboard"
+  merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname "$base_keyboard" || die "Failed to merge keyboard_info for $base_keyboard"
     
   #
   # Back to root of repo
