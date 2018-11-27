@@ -1,16 +1,27 @@
-Cameroon AZERTY Keyboard
+Cameroon AZERTY keyboard
 =====================
 
-Copyright (C) 2006-2018 SIL International
+Copyright (C) 2018 SIL Cameroon
 
-Version 1.2.1
+Version 6.0
 
 __DESCRIPTION__
-Cameroon AZERTY Keyboard supporting the Standardized Alphabet for Cameroonian Languages - designed for a French (AZERTY) Keyboard.
 
+This keyboard layout seeks to follow the General Alphabet of Cameroonian Languages. It includes
+a touch layout for Android and iOS devices. 
+
+Links
+-----
+
+ * Home:     <https://github.com/keymanapp/keyboards/sil_cameroon_azerty>
+ * Help:     <https://LangTechCameroon.info>
+ * Contact:  <keyboards_cameroon@sil.org>
 
 Supported Platforms
 -------------------
  * Windows
- * macOS
- * linux
+ * MacOS
+ * Web
+ * Mobile Web
+ * iOS
+ * Android
