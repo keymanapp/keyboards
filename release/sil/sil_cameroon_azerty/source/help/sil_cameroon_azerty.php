@@ -6,7 +6,6 @@ require_once('header.php');
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>Cameroon Keyboard Help</title>
 	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
 	<link rel="stylesheet" href="kb.css"/><link rel="icon" href="Cameroon.ico"/>
 </head>
