@@ -3,16 +3,15 @@ Pukapuka Keyboard
 
 Copyright (C) 2018 SIL International
 
-Version 1.1
+Version 1.2
 
 __DESCRIPTION__
-This keyboard has been designed for the Pukapuka (pkp) language spoken in 
-the Cook Islands of the south Pacific.
+This keyboard has been designed for the Pukapuka (pkp) language spoken in the Cook Islands of the south Pacific.
 
 Links
 -----
  * Web: http://pukapuka.world/
- * Contact:  Mark_Penny@sil.org
+ * Contact:  mark_penny@sil.org
 
 Supported Platforms
 -------------------

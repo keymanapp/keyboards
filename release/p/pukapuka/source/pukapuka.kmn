@@ -1,15 +1,16 @@
 ﻿store(&NAME) 'Pukapuka'
 store(&COPYRIGHT) '© 2018 SIL International'
 store(&MESSAGE) 'Keyboard for the Pukapuka language of the Cook Islands.'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&BITMAP) 'pukapuka.ico'
 store(&VISUALKEYBOARD) 'pukapuka.kvks'
-store(&LAYOUTFILE) 'pukapuka.keyman-touch-layout.js'
+store(&LAYOUTFILE) 'pukapuka.keyman-touch-layout'
 store(&TARGETS) 'any'
 
 c Revision History:
 c 8-Nov-2018: 1.0 First test version - prior to feedback from language community
 c 22-Nov-2018: 1.1 Include grave and circumflex vowels and re-assign keys for macron, acute, etc.
+c 29-Nov-2018: 1.2 Improve documentation in order to submit the keyboard to the Keyman repository
 
 c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -69,9 +70,6 @@ any(plainvowels) "^" + [SHIFT K_6]     > index(circumvowels,1) U+005E     c care
 c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 c Everything below this point is specific to the TOUCH interface (not the physical keyboard)
 c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-c I'm not sure WHY we have to manually code all these things manually for the long-press groups,
-c but I don't see any other way of doing this.
 + [T_A_acute]  > U+00E1 
 + [T_A_macron] > U+0101 
 + [T_A_macron_acute]   >    U+0101 U+0301
@@ -119,7 +117,7 @@ c but I don't see any other way of doing this.
 
 c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-c Handle the most common glides in the Pukapuka with longpress options
+c Handle the most common glides in the Pukapuka with long-press options (without a trailing space)
 + [T_AI]  >  "ai"
 + [T_AU]  >  "au"
 + [T_EA]  >  "ea"
