@@ -1,85 +1,10 @@
-﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
-xmlns="http://www.w3.org/TR/REC-html40"
-xmlns:ns0="http://www.tavultesoft.com/xml/keys"
-xmlns:ns1="http://www.tavultesoft.com/xml/oskexportdetails">
-
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 11">
-<meta name=Originator content="Microsoft Word 11">
-<link rel=File-List href="welcome_files/filelist.xml">
-<link rel=Edit-Time-Data href="welcome_files/editdata.mso">
-<!--[if !mso]>
+﻿<?php
+  $pagename = 'Pukapuka Keyboard Help';
+  $pagetitle = 'Pukapuka Keyboard Help';
+  require_once('header.php');
+?>
 <style>
-v\:* {behavior:url(#default#VML);}
-o\:* {behavior:url(#default#VML);}
-w\:* {behavior:url(#default#VML);}
-.shape {behavior:url(#default#VML);}
-</style>
-<![endif]--><o:SmartTagType
- namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place"/>
-<!--[if gte mso 9]><xml>
- <o:DocumentProperties>
-  <o:Author>Mark Penny</o:Author>
-  <o:LastAuthor>Mark Penny</o:LastAuthor>
-  <o:Revision>4</o:Revision>
-  <o:TotalTime>44</o:TotalTime>
-  <o:Created>2018-11-29T01:53:00Z</o:Created>
-  <o:LastSaved>2018-11-29T02:39:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>324</o:Words>
-  <o:Characters>1849</o:Characters>
-  <o:Company>SIL International</o:Company>
-  <o:Lines>15</o:Lines>
-  <o:Paragraphs>4</o:Paragraphs>
-  <o:CharactersWithSpaces>2169</o:CharactersWithSpaces>
-  <o:Version>11.9999</o:Version>
- </o:DocumentProperties>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <w:WordDocument>
-  <w:ValidateAgainstSchemas/>
-  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
-  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
-  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
-  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
- </w:WordDocument>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
- </w:LatentStyles>
-</xml><![endif]--><!--[if !mso]><object
- classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
-<style>
-st1\:*{behavior:url(#ieooui) }
-</style>
-<![endif]-->
-<style>
-<!--.KEY
-	{float:left;
-	overflow:hidden;
-	position:relative;}
-.KEYCAP
-	{left:6px;
-	position:absolute;
-	top:6px;}
-.KEYTEXT
-	{bottom: 4px;
-	position:absolute;
-	right:5px;}
-
  /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-parent:"";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman";
-	mso-fareast-font-family:"Times New Roman";
-	mso-bidi-font-family:"Times New Roman";}
 h3
 	{mso-style-next:Normal;
 	margin-top:12.0pt;
@@ -97,18 +22,6 @@ p
 	margin-right:0cm;
 	mso-margin-bottom-alt:auto;
 	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman";
-	mso-fareast-font-family:"Times New Roman";
-	mso-bidi-font-family:"Times New Roman";}
-p.key, li.key, div.key
-	{mso-style-name:key;
-	margin-top:.75pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:1.5pt;
-	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
 	font-size:12.0pt;
 	font-family:"Times New Roman";
@@ -148,86 +61,12 @@ p.keycap, li.keycap, div.keycap
 	mso-fareast-font-family:"Times New Roman";
 	mso-bidi-font-family:"Times New Roman";
 	font-weight:bold;}
-p.keytext, li.keytext, div.keytext
-	{mso-style-name:keytext;
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:Arial;
-	mso-fareast-font-family:"Times New Roman";
-	mso-bidi-font-family:"Times New Roman";
-	color:blue;}
-p.keycap1, li.keycap1, div.keycap1
-	{mso-style-name:keycap1;
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:7.0pt;
-	font-family:Arial;
-	mso-fareast-font-family:"Times New Roman";
-	mso-bidi-font-family:"Times New Roman";
-	display:none;
-	mso-hide:all;
-	font-weight:bold;}
-p.keycap2, li.keycap2, div.keycap2
-	{mso-style-name:keycap2;
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:7.0pt;
-	font-family:Arial;
-	mso-fareast-font-family:"Times New Roman";
-	mso-bidi-font-family:"Times New Roman";
-	font-weight:bold;}
-@page Section1
-	{size:612.0pt 792.0pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;
-	mso-header-margin:36.0pt;
-	mso-footer-margin:36.0pt;
-	mso-paper-source:0;}
 div.Section1
 	{page:Section1;}
--->
 </style>
-<!--[if gte mso 10]>
-<style>
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:"Table Normal";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-parent:"";
-	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
-	mso-para-margin:0cm;
-	mso-para-margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Times New Roman";
-	mso-ansi-language:#0400;
-	mso-fareast-language:#0400;
-	mso-bidi-language:#0400;}
-</style>
-<![endif]-->
-</head>
-
-<body lang=EN-US style='tab-interval:36.0pt'>
-
-<div class=Section1>
-
-<h1>Welcome to the Pukapuka Keyboard</h1>
-
-<p>The Pukapuka keyboard has been designed to type the Pukapuka language of the
-<st1:place w:st="on">Cook Islands</st1:place> of the South Pacific. It can be
-used on physical keyboards (laptops, etc.) as well as hand-held touch devices
-(such as smart phones, tablets, etc.).</p>
+<body>
+<p>The Pukapuka keyboard has been designed to type the Pukapuka language of the Cook Islands of the South Pacific. 
+It can be used on physical keyboards (laptops, etc.) as well as hand-held touch devices (such as smart phones, tablets, etc.).</p>
 
 <h2>Touch Layout</h2>
 
@@ -418,20 +257,8 @@ src="pukapuka_longpress_sample.png"></p>
 
 <p><img width=733 height=251 id="_x0000_i1026" src="pukapuka_layout_shifted.png"></p>
 
-<div id="">
-
-<div>
-
-<p class=MsoNormal><b><span style='font-size:7.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
-
-</div>
-
-</div>
-
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 </div>
 
 </body>
-
-</html>

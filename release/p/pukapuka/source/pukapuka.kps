@@ -6,19 +6,22 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>pukapuka_image140x250.png</GraphicFile>
     <MSIFileName>F:\Downloads\keymandesktop100.msi</MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.1</Version>
+    <Version URL=""></Version>
     <Name URL="">Pukapuka</Name>
     <Copyright URL="">© 2018 SIL International</Copyright>
     <Author URL="mailto:mark_penny@sil.org">Mark Penny</Author>
+    <WebSite URL="http://pukapuka.world/">http://pukapuka.world/</WebSite>
   </Info>
   <Files>
     <File>
@@ -40,12 +43,6 @@
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>pukapuka_keyboard_layout.pdf</Name>
-      <Description>File pukapuka_keyboard_layout.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
       <Name>pukapuka_image140x250.png</Name>
       <Description>File pukapuka_image140x250.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -57,12 +54,66 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\pukapuka_layout_default.png</Name>
+      <Description>File pukapuka_layout_default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\pukapuka_layout_shifted.png</Name>
+      <Description>File pukapuka_layout_shifted.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\pukapuka_longpress_sample.png</Name>
+      <Description>File pukapuka_longpress_sample.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\pukapuka_longpress_vowel_sample.png</Name>
+      <Description>File pukapuka_longpress_vowel_sample.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\pukapuka_touch_layout_default.png</Name>
+      <Description>File pukapuka_touch_layout_default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\pukapuka_touch_layout_numeric.png</Name>
+      <Description>File pukapuka_touch_layout_numeric.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\pukapuka_touch_layout_shift.png</Name>
+      <Description>File pukapuka_touch_layout_shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>help\pukapuka.php</Name>
+      <Description>File pukapuka.php</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.php</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Pukapuka</Name>
       <ID>pukapuka</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="pkp-Latn">Pukapuka (Latin)</Language>
       </Languages>
