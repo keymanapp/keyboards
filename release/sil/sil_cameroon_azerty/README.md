@@ -13,8 +13,8 @@ a touch layout for Android and iOS devices.
 Links
 -----
 
- * Home:     <https://github.com/keymanapp/keyboards/sil_cameroon_azerty>
- * Help:     <https://LangTechCameroon.info>
+ * Help:     <http://help.keyman.com/keyboard/sil_cameroon_azerty>
+ * More Info:     <https://LangTechCameroon.info>
  * Contact:  <keyboards_cameroon@sil.org>
 
 Supported Platforms
