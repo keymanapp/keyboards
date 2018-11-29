@@ -13,15 +13,13 @@ store(&VERSION) '9.0'
 store(&NAME) 'Rachitrali-Dhatki'
 store(&COPYRIGHT) '© 2018 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com'
 store(&MESSAGE) 'Read Dhatki, Write Dhatki and Speak Dhatki -- Message from Rehmat Aziz Chitrali'
-store(&ETHNOLOGUECODE) 'mki'
+c store(&ETHNOLOGUECODE) 'mki'
 store(&BITMAP) 'rac_dhatki.ico'
-c store(&TARGETS) 'windows macosx linux'
 store(&VISUALKEYBOARD) 'rac_dhatki.kvks'
 store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'rac_dhatki.keyman-touch-layout'
 store(&KEYBOARDVERSION) '1.0'
-store(&WINDOWSLANGUAGES) 'x0401'
 begin Unicode > use(main)
 
 
@@ -111,7 +109,7 @@ group(main) using keys
 + [K_W] > 'و'
 + [K_Q] > 'ق'
 + [SHIFT K_SLASH] > '؟'
-+ [SHIFT K_PERIOD] > 'يِ'
++ [SHIFT K_PERIOD] > 'يِ'                   
 + [SHIFT K_COMMA] > 'ڻ'
 + [SHIFT K_M] > 'ّ'
 + [SHIFT K_N] > 'ں'
@@ -167,3 +165,5 @@ group(main) using keys
 + [SHIFT K_2] > '£'
 + [SHIFT K_BKQUOTE] > 'ڇ'
 + [SHIFT K_1] > 'ڦ'
+
+platform('touch') + [T_064A_0650]   > U+064A U+0650                c mobile
