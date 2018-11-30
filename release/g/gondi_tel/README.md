@@ -1,5 +1,5 @@
-Gondi (Telugu Script) Keyboard
-==============================
+Gondi (Telugu) Keyboard
+=======================
 
 Copyright (C) 2018 SIL International
 

@@ -1,21 +1,70 @@
-﻿<html xmlns:ns0="http://www.tavultesoft.com/xml/keys"
-xmlns:ns1="http://www.tavultesoft.com/xml/oskexportdetails">
-
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 11 (filtered)">
-<title>Welcome to the Gondi Keyman keyboard</title>
+﻿<?php
+  $pagename = 'Gondi Keyboard Help';
+  $pagetitle = 'Gondi Keyboard Help';
+  require_once('header.php');
+?>
 <style>
+ /* Style Definitions */
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.plain, li.plain, div.plain
+	{mso-style-name:plain;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.special, li.special, div.special
+	{mso-style-name:special;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.keycap, li.keycap, div.keycap
+	{mso-style-name:keycap;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:7.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+div.Section1
+	{page:Section1;}
 </style>
-
-</head>
-
-<body lang=EN-US>
-
-<div class=Section1>
-
-<h1>Welcome to the Gondi Keyman keyboard</h1>
-
+<body>
 <p>This Gondi Keyman keyboard has been designed for typing Gondi using the Telugu script on
 physical keyboards (laptops, etc.) as well as hand-held touch devices (such as smart
 phones, tablets, etc.) for the Gondi language spoken in the erstwhile district
@@ -181,5 +230,3 @@ style='font-family:Gautami'>వెయ్లొక్‌న</span><span style='fo
 </div>
 
 </body>
-
-</html>
