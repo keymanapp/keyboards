@@ -1,17 +1,18 @@
-﻿c Gondi (Telugu script) Keyman keyboard mapping for the Adilabad Gondi (wsg) language spoken in Central India.
-c Adapted from NLCI's Telugu Unicode keyboard
+﻿c Gondi (Telugu) Keyman keyboard for the Adilabad Gondi (wsg) language spoken in Central India.
+c Adapted from NLCI's Telugu Unicode keyboard.
+store(&VERSION) '9.0'
 store(&TARGETS) 'any'
 store(&NAME) 'Gondi Telugu'
 store(&COPYRIGHT) '© 2018 SIL International'
 store(&MESSAGE) 'Distributed freely for anyone to use.'
 store(&KMW_HELPTEXT) 'Gondi in Telugu Script keyboard'
-store(&KEYBOARDVERSION) '1.00'
+store(&KEYBOARDVERSION) '1.0'
 store(&VISUALKEYBOARD) 'gondi_tel.kvks'
-store(&LAYOUTFILE) 'gondi_tel.keyman-touch-layout.js'
+store(&LAYOUTFILE) 'gondi_tel.keyman-touch-layout'
 store(&BITMAP) 'gondi_tel.ico'
 begin Unicode > use(main)
 
-group(main) using keys
+group(main) using keys                                      
 
 platform('hardware') + '=' > deadkey(1)
 + 'x' > deadkey(2)
@@ -19,14 +20,14 @@ platform('hardware') + '=' > deadkey(1)
 platform('hardware') + '`' > deadkey(4)
  
 store (vowel)  'a' 'i' 'u' 'R' '|'     'E'     'O'\
-               'A' 'I' 'U' '^' '_' 'e' 'Y' 'o' 'V'
+               'A' 'I' 'U' '^' '_' 'e' 'Y' 'o' 'V' 
 store (vowelU) U+0C05 U+0C07 U+0C09 U+0C0B U+0C0C        U+0C0F        U+0C13 \
                U+0C06 U+0C08 U+0C0A U+0C60 U+0C61 U+0C0E U+0C10 U+0C12 U+0C14
 
 store (consonant) 'k' 'g' 'W' 'c' 'j' 'w' 't' 'd' 'N' 'q' '[' 'n' 'p' 'b' 'm' 'y' 'l' 'v' 'z' 's' \
-                  'K' 'G'     'C' 'J'     'T' 'D'     'Q' '{'     'P' 'B'         'L'     'Z' 'h'
+                  'K' 'G'     'C' 'J'     'T' 'D'     'Q' '{'     'P' 'B'         'L'     'Z' 'h' 'F'
 store (consonantU) U+0C15 U+0C17 U+0C19 U+0C1A  U+0C1C U+0C1E U+0C1F U+0C21 U+0C23 U+0C24 U+0C26 U+0C28 U+0C2A U+0C2C U+0C2E U+0C2F U+0C32 U+0C35 U+0C36 U+0C38 \
-                   U+0C16 U+0C18        U+0C1B  U+0C1D        U+0C20 U+0C22        U+0C25 U+0C27        U+0C2B U+0C2D               U+0C33        U+0C37 U+0C39
+                   U+0C16 U+0C18        U+0C1B  U+0C1D        U+0C20 U+0C22        U+0C25 U+0C27        U+0C2B U+0C2D               U+0C33        U+0C37 U+0C39 U+0C34
 
 store (specialcons)  'r'
                           
@@ -41,13 +42,14 @@ store (diacriticalmodU) U+0C02 U+0C03 U+0C01
 store (number)  '0' '1' '2' '3' '4' '5' '6' '7' '8' '9'
 store (Telugu) U+0C66 U+0C67 U+0C68 U+0C69 U+0C6A U+0C6B U+0C6C U+0C6D U+0C6E U+0C6F
 
-store (different) 'F' 'f'
+c store (different) 'F' 'f'   c The f key is now used for U+0C3D SIGN_AVAGRAHA, and F is for U+0C34 LETTER_LLLA 
++ 'f' > context U+0C3D c TELUGU_SIGN_AVAGRAHA (added by MP)
 
 + any(vowel) > index(vowelU,1)
 + any(consonant) > index(consonantU,1) 
 dk(1) + any(specialcons) > index(specialconsU,2)
 + any(diacriticalmod) > index(diacriticalmodU,1) 
-+ any(different) > beep 
+c + any(different) > beep 
 + any(specialcase2) >  index(specialcase2U,1)
 dk(4) + any(number) > index(Telugu,2)
 
@@ -65,6 +67,7 @@ any (consonantU) + 'Y' > context U+0C48
 any (consonantU) + 'o' > context U+0C4A
 any (consonantU) + 'O' > context U+0C4B
 any (consonantU) + 'V' > context U+0C4C
+
 
 any (consonantU) + any(diacriticalmod) > context index(diacriticalmodU,2)
 
@@ -139,42 +142,48 @@ any (specialcase2U) 'o' + any(diacriticalmod) > context index(diacriticalmodU,3)
 any (specialcase2U) 'O' + any(diacriticalmod) > context index(diacriticalmodU,3) 
 any (specialcase2U) 'V' + any(diacriticalmod) > context index(diacriticalmodU,3) 
 
-platform('hardware') + [shift K_5] > U+0C1C U+0C4D U+0C1E
-platform('hardware') + [shift K_7] > U+0C15 U+0C4D U+0C37
-platform('hardware') + [shift K_8] > U+0C36 U+0C4D U+0C30
-platform('hardware') + [shift K_4] > U+0C30 U+0C4D
-platform('hardware') + [shift K_3] > U+0C4D U+0C30 
+c -----------------------------------------------------------
+c Given that these combinations are not used for Gondi
+c it seems prudent to remove thee as shortcuts from
+c this keyboard (which inherited them from Telugu). 
+c platform('hardware') + [shift K_5] > U+0C1C U+0C4D U+0C1E
+c platform('hardware') + [shift K_7] > U+0C15 U+0C4D U+0C37
+c platform('hardware') + [shift K_8] > U+0C36 U+0C4D U+0C30
+c platform('hardware') + [shift K_4] > U+0C30 U+0C4D
+c platform('hardware') + [shift K_3] > U+0C4D U+0C30 
+c -----------------------------------------------------------
 
 c Indic Vowel Signs (if ever needed in isolation)
 
 dk(1) + [K_SPACE] > dk(1)" " 
 
 dk(1)" " + [SHIFT K_a] > U+0C3E
-dk(1)" " + [K_i] > U+0C3F  
+dk(1)" " + [K_i]       > U+0C3F  
 dk(1)" " + [SHIFT K_i] > U+0C40
-dk(1)" " + [K_u] > U+0C41
+dk(1)" " + [K_u]       > U+0C41
 dk(1)" " + [SHIFT K_u] > U+0C42
 dk(1)" " + [SHIFT K_r] > U+0C43
 dk(1)" " + [SHIFT K_6] > U+0C44
 dk(1)" " + [SHIFT K_e] > U+0C46
-dk(1)" " + [K_e] > U+0C47
+dk(1)" " + [K_e]       > U+0C47
 dk(1)" " + [SHIFT K_y] > U+0C48
 dk(1)" " + [SHIFT K_o] > U+0C4A     
-dk(1)" " + [K_o] > U+0C4B
+dk(1)" " + [K_o]       > U+0C4B
 dk(1)" " + [SHIFT K_v] > U+0C4C
 dk(1)" " + [SHIFT K_m] > U+0C02
 dk(1)" " + [SHIFT K_h] > U+0C03
 dk(1)" " + [SHIFT K_s] > U+0C01
-dk(1)" " + [K_x] > dk(1)"  " 
-dk(1)"  " + [K_x] > U+0C4D 
+dk(1)" " + [K_x]       > dk(1)"  " 
+dk(1)"  " + [K_x]      > U+0C4D 
 
 c Punctuation marks
-"'" + "'" > U+201D    c Closing double quotes
-'"' + '"' > U+201C    c Opening double quotes
-"-" + "-" > U+005F U+005F               c Drawing line
-U+005F U+005F + '-' > context U+005F    c Drawing line
+c "'" + "'" > U+201D    c Closing double quotes
+c '"' + '"' > U+201C    c Opening double quotes
+c "-" + "-" > U+005F U+005F               c Drawing line
+c U+005F U+005F + '-' > context U+005F    c Drawing line 
+"-" + "-"   > "_" c This has been added in order to make it possible to type an underscore
 
-c Extended Fonts
+c Consonant Cluster Handling (with virama and ZWJ or ZWNJ forms)
 any ( consonantU ) + 'X'  > context U+0C4D U+200D
 any ( specialconsU ) + 'X'  > context U+0C4D U+200D
 any ( specialcase2U )  + 'X'  > context U+0C4D U+200D

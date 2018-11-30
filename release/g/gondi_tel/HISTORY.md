@@ -1,5 +1,5 @@
-Gondi (Telugu Script) Keyboard Change History
-=============================================
+Gondi (Telugu) Keyboard Change History
+======================================
 
 1.0 (28 Nov 2018)
 -----------------
