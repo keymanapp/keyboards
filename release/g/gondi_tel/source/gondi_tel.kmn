@@ -2,7 +2,7 @@
 c Adapted from NLCI's Telugu Unicode keyboard.
 store(&VERSION) '9.0'
 store(&TARGETS) 'any'
-store(&NAME) 'Gondi Telugu'
+store(&NAME) 'Gondi (Telugu)'
 store(&COPYRIGHT) '© 2018 SIL International'
 store(&MESSAGE) 'Distributed freely for anyone to use.'
 store(&KMW_HELPTEXT) 'Gondi in Telugu Script keyboard'
@@ -42,14 +42,12 @@ store (diacriticalmodU) U+0C02 U+0C03 U+0C01
 store (number)  '0' '1' '2' '3' '4' '5' '6' '7' '8' '9'
 store (Telugu) U+0C66 U+0C67 U+0C68 U+0C69 U+0C6A U+0C6B U+0C6C U+0C6D U+0C6E U+0C6F
 
-c store (different) 'F' 'f'   c The f key is now used for U+0C3D SIGN_AVAGRAHA, and F is for U+0C34 LETTER_LLLA 
-+ 'f' > context U+0C3D c TELUGU_SIGN_AVAGRAHA (added by MP)
++ 'f' > context U+0C3D c TELUGU_SIGN_AVAGRAHA (newly added by MP, along with 'F' = U+0C34)
 
 + any(vowel) > index(vowelU,1)
 + any(consonant) > index(consonantU,1) 
 dk(1) + any(specialcons) > index(specialconsU,2)
 + any(diacriticalmod) > index(diacriticalmodU,1) 
-c + any(different) > beep 
 + any(specialcase2) >  index(specialcase2U,1)
 dk(4) + any(number) > index(Telugu,2)
 
@@ -142,17 +140,6 @@ any (specialcase2U) 'o' + any(diacriticalmod) > context index(diacriticalmodU,3)
 any (specialcase2U) 'O' + any(diacriticalmod) > context index(diacriticalmodU,3) 
 any (specialcase2U) 'V' + any(diacriticalmod) > context index(diacriticalmodU,3) 
 
-c -----------------------------------------------------------
-c Given that these combinations are not used for Gondi
-c it seems prudent to remove thee as shortcuts from
-c this keyboard (which inherited them from Telugu). 
-c platform('hardware') + [shift K_5] > U+0C1C U+0C4D U+0C1E
-c platform('hardware') + [shift K_7] > U+0C15 U+0C4D U+0C37
-c platform('hardware') + [shift K_8] > U+0C36 U+0C4D U+0C30
-c platform('hardware') + [shift K_4] > U+0C30 U+0C4D
-c platform('hardware') + [shift K_3] > U+0C4D U+0C30 
-c -----------------------------------------------------------
-
 c Indic Vowel Signs (if ever needed in isolation)
 
 dk(1) + [K_SPACE] > dk(1)" " 
@@ -201,8 +188,60 @@ any (specialcase2U) U+0C4D U+0C30  + 'X' > index(specialcase2U,1) U+0C4D U+0C30 
 
 any (consonantU) U+0C4D U+0C30 U+0C4D U+200C + 'x' > index(consonantU,1) U+0C4D U+0C30 U+0C4D 
 any (specialcase2U) U+0C4D U+0C30 U+0C4D U+200C + 'x' > index(specialcase2U,1) U+0C4D U+0C30 U+0C4D 
+                                             
+c Short-cuts for commonly used word endings/suffixes
++ [T_NG]     > U+0C02 U+0C17 U+0C4D         
++ [T_TANG]   > U+0C24 U+0C02 U+0C17 U+0C4D 
++ [T_NANG]   > U+0C28 U+0C02 U+0C17 U+0C4D 
++ [T_KUN]    > U+0C15 U+0C41 U+0C28 U+0C4D 
++ [T_TTAL]   > U+0C1F U+0C32 U+0C4D  
++ [T_GATAL]  > U+0C17 U+0C1F U+0C32 U+0C4D  
++ [T_DDUN]   > U+0C21 U+0C41 U+0C28 U+0C4D 
++ [T_TOR]    > U+0C24 U+0C4B U+0C30 U+0C4D 
++ [T_TAL]    > U+0C24 U+0C32 U+0C4D  
++ [T_DAL]    > U+0C26 U+0C32 U+0C4D  
++ [T_NAL]    > U+0C28 U+0C32 U+0C4D 
++ [T_VAL]    > U+0C35 U+0C32 U+0C4D 
++ [T_JEKE]   > U+0C1C U+0C46 U+0C15 U+0C46 
++ [T_TEKE]   > U+0C24 U+0C46 U+0C15 U+0C46 
++ [T_NEKE]   > U+0C28 U+0C46 U+0C15 U+0C46 
++ [T_SEKE]   > U+0C38 U+0C46 U+0C15 U+0C46 
+               
+c Frequently used short words in Gondi
++ [T_ANI]    > U+0C05 U+0C28 U+0C3F                              c and
++ [T_ASKE]   > U+0C05 U+0C38 U+0C4D U+0C15 U+0C46                c then
++ [T_AD]     > U+0C05 U+0C26 U+0C4D                              c she / it
++ [T_AV]     > U+0C05 U+0C35 U+0C4D                              c they / those
++ [T_AATA]   > U+0C06 U+0C24                                     c she became / it happened (nm)
++ [T_AATOR]  > U+0C06 U+0C24 U+0C4A U+0C30 U+0C4D                c that kind of man / he became / happened (m)
++ [T_ITTEKE] > U+0C07 U+0C24 U+0C4D U+0C24 U+0C46 U+0C15 U+0C46  c if saying
++ [T_INKE]   > U+0C07 U+0C02 U+0C15 U+0C46                       c now
++ [T_INJER]  > U+0C07 U+0C02 U+0C1C U+0C46 U+0C30 U+0C4D         c so saying
++ [T_IITAL]  > U+0C08 U+0C24 U+0C32 U+0C4D                       c this kind of
++ [T_IITANG] > U+0C08 U+0C24 U+0C02 U+0C17 U+0C4D                c these kinds of
++ [T_IITUR]  > U+0C08 U+0C24 U+0C42 U+0C41 U+0C30 U+0C4D         c these kinds of people (m)
++ [T_UNDI]   > U+0C09 U+0C02 U+0C26 U+0C3F                       c one
++ [T_UNDDE]  > U+0C09 U+0C02 U+0C21 U+0C46                       c furthermore / also
++ [T_UCCI]   > U+0C09 U+0C1A U+0C4D U+0C1A U+0C3F                c having sat
++ [T_ULTTA]  > U+0C09 U+0C32 U+0C4D U+0C1F                       c opposed
++ [T_SUDDSI] > U+0C38 U+0C42 U+0C21 U+0C4D U+0C38 U+0C3F         c having seen
++ [T_VOR]    > U+0C35 U+0C4B U+0C30 U+0C4D                       c he
++ [T_VON]    > U+0C35 U+0C4B U+0C28 U+0C4D                       c him
++ [T_BATI]   > U+0C2C U+0C24 U+0C3F                              c but
 
-c Gondi Consonant clusters (Just the top 100 of 250 possible clusters based on freq count)
+c Short-cuts for most commonly used question words (And they all conveniently start with b!)
++ [T_BATAL]  > U+0C2C U+0C24 U+0C32 U+0C4D                       c what
++ [T_BAGA]   > U+0C2C U+0C17                                     c where
++ [T_BASKE]  > U+0C2C U+0C38 U+0C4D U+0C15 U+0C46                c when
++ [T_BARI]   > U+0C2C U+0C3E U+0C30 U+0C3F                       c why
++ [T_BACOR]  > U+0C2C U+0C1A U+0C4A U+0C30 U+0C4D                c how much
++ [T_BAHAN]  > U+0C2C U+0C39 U+0C28 U+0C4D                       c how
++ [T_BAD]    > U+0C2C U+0C26 U+0C4D                              c who / which (nm.sg)
++ [T_BAV]    > U+0C2C U+0C35 U+0C4D                              c who / which (nm.pl)
++ [T_BOR]    > U+0C2C U+0C4B U+0C30 U+0C4D                       c who (m.sg)
++ [T_BUR]    > U+0C2C U+0C42 U+0C30 U+0C4D                       c who (m.pl)
+
+c Gondi Consonant clusters (Just the top 100 of 250 possible clusters based on freq count from NT)
 c Note that this is generated code:
 + [T_KA_TA]  > U+0C15 U+0C4D U+0C24   c count=3126
 + [T_KA_NA]  > U+0C15 U+0C4D U+0C28   c count= 938
