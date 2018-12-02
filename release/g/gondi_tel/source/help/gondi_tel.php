@@ -1,6 +1,6 @@
 ﻿<?php
-  $pagename = 'Gondi Keyboard Help';
-  $pagetitle = 'Gondi Keyboard Help';
+  $pagename = 'Gondi (Telugu) Keyboard Help';
+  $pagetitle = 'Gondi (Telugu) Keyboard Help';
   require_once('header.php');
 ?>
 <style>
@@ -65,7 +65,7 @@ div.Section1
 	{page:Section1;}
 </style>
 <body>
-<p>This Gondi Keyman keyboard has been designed for typing Gondi using the Telugu script on
+<p>This Gondi (Telugu) Keyman keyboard has been designed for typing Gondi using the Telugu script on
 physical keyboards (laptops, etc.) as well as hand-held touch devices (such as smart
 phones, tablets, etc.) for the Gondi language spoken in the erstwhile district
 of Adilabad, which is in the state of Telangana, in central India.</p>
@@ -96,20 +96,21 @@ other important symbols and lesser used punctuation characters.</p>
 <p><img width=619 height=236 src="gondi_tel.touch_keyboard_layout_numeric.png"></p>
 
 <p>The touch layout has some additional functionality of providing short-cuts
-for commonly used combinations of consonant clusters. For example, holding
+for commonly used words, or just combinations of characters. For example, holding
 (long press) the <span lang=TE style='font-family:Gautami;color:blue'>గ</span><span
-lang=TE style='font-family:Gautami'> </span>character key will show various
-commonly used Gondi combinations: <span lang=TE style='font-family:Gautami'>గ్త 
+lang=TE style='font-family:Gautami'> </span>character key will show the Gondi suffix గటల్ as well as several
+commonly used consonant cluster combinations: <span lang=TE style='font-family:Gautami'>గ్త 
 గ్ద  గ్న  గ్ర </span><span style='font-family:Gautami'> &amp; <span lang=TE> గ్ల</span></span></p>
 
 <p><img width=350 height=189
 src="gondi_tel.touch_keyboard_layout_g_longpress_crop.png"></p>
 
-<p>Similarly, holding (long-press) the character key will show common combinations
-for that letter:</p>
+<p>Similarly, holding (long press) the <span lang=TE style='font-family:Gautami;color:blue'>త</span><span
+lang=TE style='font-family:Gautami'> </span> character key will show common suffixes as well as consonanct cluster combinations
+starting with త:</p>
 
-<p><img width=394 height=180
-src="gondi_tel.touch_keyboard_layout_y_longpress_crop.png"></p>
+<p><img width=800 height=160
+src="gondi_tel.touch_keyboard_layout_t_longpress_crop.png"></p>
 
 <p>Although the vowel matra forms are not displayed, the keyboard will
 automatically put the diacritic form on a preceding consonant. So, tapping <span
@@ -124,6 +125,20 @@ produce the word <span lang=TE style='font-family:Gautami'>ఇత్తెకె
 <p style='margin-left:36.0pt;text-indent:36.0pt'><span style='font-family:Gautami'><img
 width=381 height=61 src="itteke_example.png"> </span><span style='font-size:
 18.0pt;font-family:Gautami'>= <span lang=TE>ఇత్తెకె</span></span></p>
+
+<p>Alternatively, holding (long press) the <span lang=TE style='font-family:Gautami;color:blue'>ఇ</span><span
+lang=TE style='font-family:Gautami'> </span> character key will reveal that ఇత్తెకె is a common-enough Gondi word to warrant it being available as a shortcut on the ఇ key:</p>
+
+<p><img width=380 height=210
+src="gondi_tel.touch_keyboard_layout_i_longpress_crop.png"></p>
+
+<p>Finally, holding (long press) the <span lang=TE style='font-family:Gautami;color:blue'>?</span><span
+lang=TE style='font-family:Gautami'> </span> key provides a list of the question words in Gondi:</p>
+
+<p><img width=550 height=270
+src="gondi_tel.touch_keyboard_layout_question_words_longpress_crop.png"></p>
+
+
 
 <h2>Physical Keyboard Layout</h2>
 

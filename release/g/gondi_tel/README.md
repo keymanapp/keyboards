@@ -6,7 +6,7 @@ Copyright (C) 2018 SIL International
 Version 1.0
 
 __DESCRIPTION__
-This keyboard has been designed for typing the Adilabad Gondi (wsg) language spoken in 
+This Gondi (Telugu) keyboard has been designed for typing the Adilabad Gondi (wsg) language spoken in 
 the northern part of Telangana State of India, using the Telugu script. It has various
 optimizations (for consonant clusters) specific to Gondi included in the touch interface.
 
