@@ -1,6 +1,11 @@
 Pukapuka Keyboard Change History
 ================================
 
+1.3 (3 Dec 2018)
+-----------------
+* Removed "special" highlighting on vowel keys as it made the letters invisible on some Android devices
+* Updated screenshots to match the new look (without highlighted vowels)
+
 1.2 (29 Nov 2018)
 -----------------
 * Improved documentation and added help file to prepare for online repository
