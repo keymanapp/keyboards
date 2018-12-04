@@ -1,6 +1,11 @@
 gff_amharic Change History
 ==========================
 
+1.7 (1 Dec 2018)
+-----------------
+
+* The apostrophe composition stopper added between lone vowels. 
+
 1.6 (6 Sep 2018)
 -----------------
 
