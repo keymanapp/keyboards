@@ -19,7 +19,7 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 Links
 -----
 * Home: https://keyman.com/keyboards/rac_indus_kohistani
-* Help: http://help.keyman.com/keyboard/rac_indus-kohistani
+* Help: http://help.keyman.com/keyboard/rac_indus_kohistani
 * Contact: Mr.Rehmat Aziz Chitrali, Linguist and Researcher <rachitrali@yahoo.com>
 
 Supported Platforms
