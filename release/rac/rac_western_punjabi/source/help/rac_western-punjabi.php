@@ -3,14 +3,7 @@
   $pagetitle = 'Rachitrali-Western-Punjabi';
   require_once('header.php');
 ?>
-<html>
-<head>
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
-  <title>The Rachitrali-Western-Punjabi Keyman Keyboard Package</title>
-</head>
-<body style="max-width:600px;">
 
-<h2>Introduction</h2>
 <p>This keyboard is designed for the Western-Punjabi language spoken in Pakistan, in its standard Perso-Arabic script, as used in Pakistan. It is based on phonetic keyboard for Western-Punjabi Language developed by Pakistani linguist, author, Scientist,  Inventor researcher and Software Developer Mr.Rehmat Aziz Chitrali for Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Western-Punjabi Keyboard.
 </p>
 
@@ -19,8 +12,6 @@
 <p>The Western-Punjabi Keyboard Project(WPKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.</p>
 
 <p>Khowar Academy Chitral was established in April 1996 specifically to promote the endangered  languages of Chitral Pakistan. The Academy has worked extensively on Western-Punjabi linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Western-Punjabi, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.</p>
-
-<p/>
 <h2>Font</h2>
 <p style="text-align: justify;">
 The Rachitrali-Western-Punjabi Keyman keyboard is designed by Rehmat Aziz Chitrali to work with any extended 
@@ -91,7 +82,3 @@ SOFTWARE.</p></DIV>
 <ul>
 <li><a href='http://keymankeyboards.com/iso:pnb'>Other keyboards for these languages</a></li>
 </ul>
-
-</body>
-</html>
-
