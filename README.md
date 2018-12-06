@@ -19,7 +19,7 @@ Links
 -----
 
 
- * Home:    https://keymanweb.com/#snd,Keyboard_rac_pahari
+ * Home:    https://keymanweb.com/#phr,Keyboard_rac_pahari
  * Help:    https://help.keyman.com/keyboard/rac_pahari
  * Contact: Rehmat Aziz Chitrali linguist and researcher <rachitrali@yahoo.com>
 
