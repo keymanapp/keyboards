@@ -19,8 +19,8 @@ Links
 -----
 
 
- * Home:    https://keymanweb.com/#snd,Keyboard_rac_western-punjabi
- * Help:    https://help.keyman.com/keyboard/rac_western-punjabi
+ * Home:    https://keyman.com/keyboards/rac_western_punjabi
+ * Help:    http://help.keyman.com/keyboard/rac_western_punjabi
  * Contact: Rehmat Aziz Chitrali linguist and researcher <rachitrali@yahoo.com>
 
 Supported Platforms
