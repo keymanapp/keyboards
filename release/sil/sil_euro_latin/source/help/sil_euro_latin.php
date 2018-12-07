@@ -34,6 +34,10 @@
 <p>Type the characters in the bottom box to get the character in the top box.</p>
 <img src="prefix.png" />
 
+<div id='osk-phone-container'>
+    <h2>Mobile Keyboard Layout</h2>
+    <div id='osk-phone' data-states='default shift numeric symbol currency'></div>
+</div>
 
 <div style='clear: both'></div>
 
@@ -45,6 +49,7 @@
 <p>This keyboard is available online at <a href='https://keyman.com/keyboards/sil_euro_latin'>keyman.com/keyboards/sil_euro_latin</a></p>
 
 <h1>Change History</h1>
+<p>1.8.1: (7 Dec 2018) Switch abc and currency keys on numeric/symbol layers of touch layout.</p>
 <p>1.8: (6 Jul 2018) Ported to GitHub.</p>
 <p>1.7: (25 Mar 2015) Added ș Ș ț Ț for Romanian, typed with @ + letter.</p>
 <p>1.6: (17 Mar 2011) Minor corrections, added Indian Rupee Sign, Saltillo, and Guaraní support.</p>
