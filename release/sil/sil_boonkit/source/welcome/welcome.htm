@@ -19,10 +19,10 @@ and selecting the On Screen Keyboard menu item.     </p>
 
 
       <H2>Keyboard Layout</H2>
-	  <img src="BoonkitUnshifted.PNG" alt="boonkit unshifted keyboard">
+	  <img src="BoonkitUnshifted.png" alt="boonkit unshifted keyboard">
 	  <p> Boonkit Keyboard unshifted</p>
 	  <p></p>
-	  <img src="Boonkitshifted.PNG" alt="boonkit shifted keyboard">
+	  <img src="Boonkitshifted.png" alt="boonkit shifted keyboard">
 	  <p> Boonkit Keyboard shifted</p>
       <P class=Caption></P><A name=license></A>
       <H2>License</H2>
