@@ -13,12 +13,19 @@ store(&VISUALKEYBOARD) 'basic_kbdlisub.kvks'
 store(&BITMAP) 'basic_kbdlisub.ico'
 store(&LAYOUTFILE) 'basic_kbdlisub.keyman-touch-layout'
 store(&COPYRIGHT) '(c) 2018 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
 group(main) using keys
+
++ [K_Q] > dk(dead)
++ [SHIFT K_Q] > dk(dead)
++ [SHIFT K_Z] > dk(dead)
++ [SHIFT K_X] > dk(dead)
++ [SHIFT K_N] > dk(dead)
++ [SHIFT K_M] > dk(dead)
 
 + [K_SPACE] > U+0020
 
