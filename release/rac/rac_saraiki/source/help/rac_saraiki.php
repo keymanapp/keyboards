@@ -24,14 +24,16 @@ The Rachitrali-Saraiki Keyman keyboard is designed by Rehmat Aziz Chitrali Lingu
 This keyboard layout is designed for the Saraiki language by Pakistani linguist Rehmat Aziz Chitrali. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item.     </p>
 
 
-      <H2>Keyboard Layout</H2>
-      <P>The keyboard layout is displayed below in Keyboard graphics.</P>
-      	
-      	<h3>Base Version</h3>
-      	<img src="rac_saraiki base.png" alt="Base Version" style="width:600px;">
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
 
-      	<h3>Shift Version</h3>
-      	<img src="rac_saraiki shift.png" alt="Shift Version" style="width:600px;">
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift'>
+</div>
+
+
+1 reply
       	
 <h2>How to use the Rachitrali-Saraiki Keyboard? Please read the following:-</h2>
 
