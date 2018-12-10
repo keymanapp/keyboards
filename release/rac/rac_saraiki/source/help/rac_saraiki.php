@@ -32,8 +32,6 @@ This keyboard layout is designed for the Saraiki language by Pakistani linguist 
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
-
-1 reply
       	
 <h2>How to use the Rachitrali-Saraiki Keyboard? Please read the following:-</h2>
 
