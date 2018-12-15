@@ -24,23 +24,211 @@ store(ConsEqual)"bcdfgjlnrstvxzBGLNR?pwhHQ"
 store(ConsE)"βçðɸɣɟɬɲɹʃθʋχʒʙɢʟɴʀʔʘʍɥʜʡ"   
 
 c Vowels
-store(vowLess)"eaoEOuIw"
-store(vowL)"ɛæɔœɞʊᵻⱳ"
+store(vowLess)"eaoEOuIw#"
+store(vowL)"ɛæɔœɞʊᵻⱳꜜ"
 
-store(vowGreater)"eaoEOuAIUckpq"
-store(vowG)"ɜɐøɶɤʌᴂᵼᵾƈƙƥʠ"  
+store(vowGreater)"eaoEOuAIUckpq#"
+store(vowG)"ɜɐøɶɤʌᴂᵼᵾƈƙƥʠꜛ"  
 
 store(vowEqual)"ieayoEIOuUSZ+"
 store(vowE)"ɪəɑʏɒɘɨɵɯʉᶘᶚ+" 
 
 store(vowLine)"AiuEeazZyYdhlntT"
-store(vowL)"ᴀɩɷᴇʚαɿʅʮʯȡђȴȵȶʇ" 
+store(vowL)"ᴀɩɷᴇʚαɿʅʮʯȡђȴȵȶʇ"  
+
+c using hat symbol
+store(hatkey) "0123456789" \ 
+    	   	  "-"    "+"    "="    "("    ")"    U+01C3 \
+                U+0295 U+0294 "b"    U+03B2 "c"    U+0255 "d"    U+00F0 "f" \
+                "g"    U+0261 U+0263 "h"    U+0266 U+0265 "j"    U+029D \
+                U+025F "k" \
+                "l"    U+026D U+029F "m"    U+0271 "n"    U+0272 U+014B U+0273 U+0274 \
+                "p"    U+0278 "r"    U+0279 U+027B U+0281 "s"    U+0282 U+0283 \
+                "t"    U+0270 "v"    U+028B "w"    "x"    "z"    U+0291 U+0290 U+0292 \
+                U+03B8 \
+                "a"    U+0250 U+0251 U+0252 U+1D02 "e"    U+0259 U+025B U+025C \
+                "i"    U+0268 U+026A "o"    U+0153 U+0275 U+0254 \
+                "u"    U+0289 "y"    U+026F U+028C U+028A
+                
+store(hat)     U+2070 U+00B9 U+00B2 U+00B3 U+2074 U+2075 U+2076 U+2077 U+2078 U+2079 \
+                U+207B U+207A U+207C U+207D U+207E U+A71D \
+                U+02E4 U+02C0 U+1D47 U+1D5D U+1D9C U+1D9D U+1D48 U+1D9E U+1DA0 \
+                U+1D4D U+1Da2 U+02E0 U+02B0 U+02B1 U+1DA3 U+02B2 U+1DA8 \
+                U+1DA1 U+1D4F \
+                U+02E1 U+1DA9 U+1DAB U+1D50 U+1DAC U+207F U+1DAE U+1D51 U+1DAF U+1DB0 \
+                U+1D56 U+1DB2 U+02B3 U+02B4 U+02B5 U+02B6 U+02E2 U+1DB3 U+1DB4 \
+                U+1D57 U+1DAD U+1D5B U+1DB9 U+02B7 U+02E3 U+1DBB U+1DBD U+1DBC U+1DBE \
+                U+1DBF \
+                U+1D43 U+1D44 U+1D45 U+1D9B U+1D46 U+1D49 U+1D4A U+1D4B U+1D9F \
+                U+2071 U+1DA4 U+1DA6 U+1D52 U+A7F9 U+1DB1 U+1D53 \
+                U+1D58 U+1DB6 U+02B8 U+1D5A U+1DBA U+1DB7 
+                
+ c using $           
+store(RetroflexHookK) "a"    U+0251 U+0257 "e"    U+025B U+025C U+0259 "i" \
+                      U+0254 U+0283 "u"    U+0292
+store(RetroflexHookU) U+1D8F U+1D90 U+1D91 U+1D92 U+1D93 U+1D94 U+1D95 U+1D96 \
+                      U+1D97 U+1D98 U+1D99 U+1D9A 
+ c using %                     
+store(PalatalHookK) "b"    "d"    "f"    U+0261 "k"    "l"    "m"    "n" \
+                    "p"    "r"    "s"    U+0283 "v"    "x"    "z"
+store(PalatalHookU) U+1D80 U+1D81 U+1D82 U+1D83 U+1D84 U+1D85 U+1D86 U+1D87 \
+                    U+1D88 U+1D89 U+1D8A U+1D8B U+1D8C U+1D8D U+1D8E    
+ c using ~
+store(tildeK) "b"    "d"    "f"    "l"    "m"    "n"    "p"    "r"    \
+              U+027E "s"    "t"    "z"
+store(tildeU) U+1D6C U+1D6D U+1D6E U+026B U+1D6F U+1D70 U+1D71 U+1D72 \
+              U+1D73 U+1D74 U+1D75 U+1D76    
+              
+ c Tone             
+store(fenceU) U+02E5 U+02E6 U+02E7 U+02E8 U+02E9
+store(leftstemU) U+A712 U+A713 U+A714 U+A715 U+A716
 
  
 c operation of consonants <,>,=
 any(ConsLess) + "<" > index(ConsL,1)
 any(ConsGreater) + ">" > index(ConsG,1)  
 any(ConsEqual) + "=" > index(ConsE,1) 
+
+c hat operation
+any(hatkey)   + "^"  > index(hat,1)  
+
+c Hook operation
+       + '$' > U+0329
+U+0329 + '$' > U+032F
+U+032F + '$' > U+0330  
+any(RetroflexHookK) U+0330 + '$' > index(RetroflexHookU,1)
+U+0330 + '$' > U+0329     
+
+c handle %
+       + '%' > U+0325 
+U+0325 + '%' > U+032C
+U+032C + '%' > U+0324
+any(PalatalHookK) U+0324 + '%' > index(PalatalHookU,1)
+U+0324 + '%' > U+0325  
+
+c handle { 
+       + '{' > U+032A
+U+032A + '{' > U+033A
+U+033A + '{' > U+033B
+U+033B + '{' > U+033C 
+U+033C + '{' > U+0323
+U+0323 + '{' > U+032A 
+
+c handle~   
+    	+ '~' > U+0303
+any(tildeK) U+0303 + '~' > index(tildeU,1)
+
+c handle * 
+       + '*' > U+0308
+U+0308 + '*' > U+033D
+U+033D + '*' > U+0306
+U+0306 + '*' > U+0307
+U+0307 + '*' > U+0310     
+
+c + and _ sequences
+       + "+" > U+031F
+U+031F + "+" > U+031D
+U+031D + "+" > U+0318
+U+0318 + "+" > U+0339
+U+0339 + "+" > U+031F
+
+       + "_" > U+0320
+U+0320 + "_" > U+031E
+U+031E + "_" > U+0319
+U+0319 + "_" > U+031C                      
+"c"    + "_" > U+00E7 c preserve c cedilla at one codepoint
+U+031C + "_" > U+0327 c 0327 was added for Chinese IPA
+U+0327 + "_" > U+0320  
+
+
+c handle } 
+       + '}' > U+02C8
+U+02C8 + "}" > U+02CC
+U+02CC + "}" > U+0348 c fortis
+U+0348 + "}" > U+1DC2 c lenis   
+
+c tie bar
+'#' + "&" > U+0361
+
+'#' + "!" > U+A71E c raised Africanist downstep
+'##' + "!" > U+A71F c raised Africanist downstep
+
+c @& for overlink 
+       + "@" > U+030A
+U+030A + "&" > U+035C
+
+c others
+"=" + ">" > "→"
+"S" + ">" > "σ"
+"=" + "<" > U+034F   
+"ꜜ" + "<" > "↘"
+"ꜛ" + ">" > "↗" 
+
+c handle [[ which is really [[[
+"[" + "[" > U+02BD    c light aspiration
+U+02BD + "[" > U+02DE c rhoticity
+U+02DE + "[" > context
+
+c handle ]] and ]]]
+"]" + "]" > U+02BC
+U+02BC + "]" > U+031A
+U+031A + "]" > U+02BB c added for Chinese IPA    
+
+
+c #0 #1 #2 #3 #4 #02 #20 #42 #24 #04 #40
+any(fenceU) + "0" > context U+02E9
+any(fenceU) + "1" > context U+02E8
+any(fenceU) + "2" > context U+02E7
+any(fenceU) + "3" > context U+02E6
+any(fenceU) + "4" > context U+02E5
+
+'#' + "0" > U+02E9
+'#' + "1" > U+02E8
+'#' + "2" > U+02E7
+'#' + "3" > U+02E6
+'#' + "4" > U+02E5
+
+any(leftstemU) + "0" > context U+A712
+any(leftstemU) + "1" > context U+A713
+any(leftstemU) + "2" > context U+A714
+any(leftstemU) + "3" > context U+A715
+any(leftstemU) + "4" > context U+A716
+
+
+'&' + "0" > U+A712
+'&' + "1" > U+A713
+'&' + "2" > U+A714
+'&' + "3" > U+A715
+'&' + "4" > U+A716 
+
+c o-width first
+U+030A + "0" > U+030F
+U+030F + "0" > U+030F
+U+030F + "4" > U+030C
+
+c any(high) "*" + "1" > index(high,1) d152
+c any(high) any(ldia) "*" + "1" > index(high,1) index(ldia, 2) d152
+U+030A + "1" > U+0300
+U+0300 + "1" > U+0300
+U+0300 + "2" > U+1DC5 c low rising
+U+0300 + "3" > U+030C
+U+0301 + "2" > U+1DC7 c mid rising
+U+030C + "1" > U+1DC8 c low-high-low
+
+U+030A + "2" > U+0304
+U+0304 + "2" > U+0304 c mid
+U+0304 + "3" > U+1DC4 c mid-high
+U+0304 + "1" > U+1DC6 c mid-low
+
+U+030A + "3" > U+0301
+U+0301 + "3" > U+0301
+U+0301 + "1" > U+0302
+U+0302 + "3" > U+1DC9 c high-low-high
+
+U+030A + "4" > U+030B
+U+030B + "4" > U+030B
+U+030B + "0" > U+0302
+
 
 c operation of vowels <,>,=,|
 any(vowLess) + "<" > index(vowL,1)
