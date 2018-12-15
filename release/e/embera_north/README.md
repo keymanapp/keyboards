@@ -1,5 +1,5 @@
-Embera North Keyboard
-Copyright (C) 2018 Ethnos360
+Embera Northern Keyboard
+© 1999-2018 Ethnos360
 
 Version 1.1
 
