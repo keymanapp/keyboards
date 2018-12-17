@@ -1,44 +1,28 @@
 <?php
-  $pagename = 'SIL IPA Keyboard Help';
-  $pagetitle = 'SIL IPA Keyboard Help';
+  $pagename = 'NLCI IPA Keyboard Help';
+  $pagetitle = 'NLCI IPA Keyboard Help';
   require_once('header.php');
 ?>
 
-<h1>SIL IPA keyboard for Keyman Desktop</h1>
+<h1>NLCI IPA keyboard for Keyman Desktop</h1>
 
 <div class=WordSection1>
 
 <p class=MsoTitle align=left style='text-align:left'><span style='font-family:
-"Arial",sans-serif'>SIL IPA keyboard (ver 1.6)</span></p>
+"Arial",sans-serif'>NLCI IPA keyboard (ver 2.0.0)</span></p>
 
-<p class=Author >Martin Hosken and Lorna Evans,<br>
-SIL Non-Roman Script Initiative (NRSI)</p>
+
 
 <h2>Technical Support</h2>
 
-<p class=MsoBodyText >If you have problems using the SIL Unicode IPA
+<p class=MsoBodyText >If you have problems using the NLCI Unicode IPA
 keyboard, please contact:</p>
 
-<p class=MsoBodyText >User Support<br>
-SIL Non-Roman Script Initiative<br>
-7500 W. Camp Wisdom Rd.<br>
-Dallas, TX 75236<br>
-USA</p>
 
-<p class=MsoBodyText >E-mail: <span
-class=MsoHyperlink><a href="mailto:nrsi@sil.org">nrsi@sil.org</a> </span></p>
-
-<p>&nbsp;</p>
 
 <h1>Keyboard Layout</h1>
 
-<p>The keyboard layout is described in terms of an IPA chart
-rather than a keyboard. This is because many base characters are typed as a
-sequence of a letter followed by one of &lt;, &gt;,  = or | which are
-characters used to change a base character to another base character.
-Diacritics are typed as sequences of an appropriate key. <span
-style='color:blue'>Blue denotes non-IPA sanctioned phonetic symbols (they may
-be used by other traditions such as Americanist, Chinese or Russian). </span></p>
+<p>This Keyboard mimic IPA WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system. </p>
 
 <h2>Consonants</h2>
 
