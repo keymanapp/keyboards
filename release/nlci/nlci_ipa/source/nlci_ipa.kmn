@@ -34,7 +34,7 @@ store(vowEqual)"ieayoEIOuUSZ+"
 store(vowE)"ɪəɑʏɒɘɨɵɯʉᶘᶚ+" 
 
 store(vowLine)"AiuEeazZyYdhlntT"
-store(vowL)"ᴀɩɷᴇʚαɿʅʮʯȡђȴȵȶʇ"  
+store(vowLi)"ᴀɩɷᴇʚαɿʅʮʯȡђȴȵȶʇ"  
 
 c using hat symbol
 store(hatkey) "0123456789" \ 
@@ -206,8 +206,7 @@ U+030A + "0" > U+030F
 U+030F + "0" > U+030F
 U+030F + "4" > U+030C
 
-c any(high) "*" + "1" > index(high,1) d152
-c any(high) any(ldia) "*" + "1" > index(high,1) index(ldia, 2) d152
+c  "*" + "1" 
 U+030A + "1" > U+0300
 U+0300 + "1" > U+0300
 U+0300 + "2" > U+1DC5 c low rising
@@ -234,7 +233,7 @@ c operation of vowels <,>,=,|
 any(vowLess) + "<" > index(vowL,1)
 any(vowGreater) + ">" > index(vowG,1)  
 any(vowEqual) + "=" > index(vowE,1) 
-any(vowLine) + "|" > index(vowL,1)    
+any(vowLine) + "|" > index(vowLi,1)    
 
 c Suprasegmentals
  + '}' > 'ˈ'
@@ -248,7 +247,230 @@ c Suprasegmentals
 '.' + '<' >'|' 
 '.' + '=' > '‖'
 
-'#' + '=' > '‿' 
+'#' + '=' > '‿'  
+
+c add the behavior of a
+'ɑ' + '=' > 'ɐ'
+'ɐ' + '=' > 'æ'
+'æ' + '=' > 'ᴂ'
+'ᴂ' + '=' > 'α'
+'α' + '=' > U+1D8F
+U+1D8F + '=' > U+1D90
+U+1D90 + '=' > 'A'    
+
+c add the behavior of A
+'A' + '=' > 'ᴂ'     
+
+c add the behavior of b
+'β' + '=' > 'ɓ'
+'ɓ' + '=' > 'ᶀ'
+'ᶀ' + '=' > 'ᵬ' 
+'ᵬ' + '=' > 'b'     
+
+c add the behavior of c
+'ç' + '=' > 'ƈ'
+'ƈ' + '=' > 'ɕ'    
+'ɕ' + '=' > 'c'    
+
+c add the behavior of d
+'ð' + '=' >'ɗ'
+'ɗ' + '=' > 'ɖ'
+'ɖ' + '=' > 'ȡ'
+'ȡ' + '=' > U+1D91
+U+1D91 + '=' > 'ᶁ'
+'ᶁ' + '=' >  'ᵭ'
+'ᵭ' + '=' > 'd'     
+
+c add the behavior e
+'ə' + '=' > 'ɜ'
+'ɜ' + '=' > 'ɛ'
+'ɛ' + '=' > 'ʚ'
+'ʚ' + '=' > 'ᶒ'
+'ᶒ' + '=' > 'ᶓ'
+'ᶓ' + '=' > 'ᶔ'
+'ᶔ' + '=' > 'ᶕ'
+'ᶕ' + '=' > 'ɘ' 
+             
+
+c add the behavior of E
+'ɘ' + '=' > 'ɶ'
+'ɶ' + '=' > 'œ'
+'œ' + '='> 'ᴇ'
+'ᴇ' + '=' >'E'  
+
+c add the behavior of f
+'ɸ' + '=' > 'ᶂ'
+'ᶂ' + '=' > 'ᵮ'
+'ᵮ' + '=' > 'f'     
+
+c add the behavior of g
+'ɣ' + '=' > 'ɡ'
+'ɡ' + '=' > 'ɠ'
+'ɠ' + '=' > 'ᶃ'
+'ᶃ' + '=' > 'g'   
+
+c add the behavior of G
+'ɢ' + '=' > 'ʛ'
+'ʛ' + '=' > 'G'
+ 
+c add the behavior of h
+'ɥ' + '=' > 'ħ'
+'ħ' + '=' > 'ɦ'
+'ɦ' + '=' > 'ђ'
+'ђ' + '=' > 'ɧ'
+'ɧ' + '=' > 'h'   
+
+c add the behavior of i
+'ɪ' + '=' > 'ɩ'
+'ɩ' + '=' > 'ɨ'
+'ɨ' + '=' > 'ᵼ'
+'ᵼ' + '=' > 'ᵻ'
+'ᵻ' + '=' > 'ᶖ'
+'ᶖ' + '=' > 'i'
+
+c add the behavior of j
+'ɟ' + '=' > 'ʄ'
+'ʄ' + '=' > 'ʝ'
+'ʝ' + '=' > 'j'   
+
+c add the behavior of k  
+'k' + '=' > 'ƙ'
+'ƙ' + '=' > 'ᶄ'
+'ᶄ' + '=' > 'k' 
+
+c add the behavior of l
+'ɬ' + '=' > 'ɮ'
+'ɮ' + '=' > 'ɭ'
+'ɭ' + '=' > 'ȴ'
+'ȴ' + '=' > 'ɺ'
+'ɺ' + '=' > 'ʎ'
+'ʎ' + '=' > 'ᶅ'
+'ᶅ' + '=' > 'ɫ'
+'ɫ' + '=' > 'l'
+c add the behavior of L
+'ʟ' + '=' > 'ɺ' 
+
+c add the behavior of m  
+'m' + '=' > 'ɱ'
+'ɱ' + '=' > 'ᶆ'
+'ᶆ' + '=' > 'ᵯ'
+'ᵯ' + '=' > 'm'  
+
+c add the behavior of n
+'ɲ' + '=' > 'ŋ'
+'ŋ' + '=' > 'ɳ'
+'ɳ' + '=' > 'ȵ'
+'ȵ' + '=' > 'ᶇ'
+'ᶇ' + '=' > 'ᵰ'
+'ᵰ' + '=' > U+014A
+
+c add the behavior N
+'ɴ' + '=' > U+014A
+U+014A + '=' > 'N'  
+
+c add the behavior of o
+'ɒ' + '=' > 'ø'
+'ø' + '=' > 'ɔ'
+'ɔ' + '=' > 'ᶗ'
+'ᶗ' + '=' > 'o' 
+
+c add the behavior of O
+'ɵ' + '=' > 'ɤ'
+'ɤ' + '=' > 'ɞ'
+'ɞ' + '=' > 'O'
+                 
+c add the behavior of p
+'ʘ' + '=' > 'ƥ'
+'ƥ' + '=' > 'ᶈ'
+'ᶈ' + '=' > 'ᵱ'
+'ᵱ' + '=' > 'p'  
+
+c add the behavior of q
+'q' + '=' > 'ʠ'  
+'ʠ' + '=' > 'q'
+
+c add the behavior of Q
+'ʡ' + '=' > 'ʢ' 
+'ʢ' + '=' > 'Q'   
+
+c add the behavior of r
+'ɹ' + '=' > 'ɾ'
+'ɾ' + '=' > 'ɽ'
+'ɽ' + '=' > 'ɻ'
+'ɻ' + '=' > 'ᶉ'
+'ᶉ' + '=' > 'ᵲ'
+'ᵲ' + '=' > 'ᵳ' 
+'ᵳ' + '=' > 'r'
+
+c add the behavior R
+'ʀ' + '=' > 'ʁ'
+'ʁ' + '=' > 'R' 
+
+c add the behavior s
+'ʃ' + '=' > 'σ'
+'σ' + '= ' > 'ʂ'
+'ʂ' + '=' > 'ᶊ'
+'ᶊ' + '=' > 'ᵴ'
+'ᵴ' + '=' > 'ᶘ'
+'ᶘ' + '=' > 'ᶋ'
+'ᶋ' + '=' > 's'    
+
+c add the behavior of t    
+'θ' + '=' > 'ʇ'
+'ʇ' + '=' > 'ƭ'
+'ƭ' + '=' > 'ʈ'
+'ʈ' + '=' > 'ȶ'
+'ȶ' + '=' > 'ᵵ' 
+'ᵵ' + '=' > 't'
+
+c add the behavior of T
+'T' + '=' > 'ʇ' 
+
+c add the behavior of u
+'ɯ' + '=' > 'ʉ'
+'ʉ' + '=' > 'ᵾ'
+'ᵾ' + '=' > 'ʌ'
+'ʌ' + '=' > 'ʊ'
+'ʊ' + '=' > 'ɷ'
+'ɷ' + '=' > 'ʉ'
+'ʉ' + '=' > 'ᵾ'
+'ᵾ' + '=' > 'ᶙ'
+'ᶙ' + '=' > 'u'  
+
+c add the behavior  v
+'ʋ' + '=' > 'ⱱ'
+'ⱱ' + '=' > 'ᶌ'
+'ᶌ' + '=' > 'v'  
+
+c add the behavior w
+'ʍ' + '=' > 'ɰ'
+'ɰ' + '=' > 'ⱳ'
+'ⱳ' + '=' > 'w'
+
+c add the behavior of x
+'χ' + '=' > 'ᶍ'
+'ᶍ' + '=' > 'x'
+
+c add the behavior of  y
+'ʏ' + '=' > 'ɥ'
+'ɥ' + '=' > 'ʯ'
+'ʯ' + '=' > 'y'
+
+c add the behavior of Y
+'Y' + '=' > 'ʯ'
+
+c add the behavior of z 
+'ʒ' + '=' > 'ᶚ'
+'ᶚ' + '=' > 'ʑ'
+'ʑ' + '=' > 'ʐ'
+'ʐ' + '=' > 'ᶎ'
+'ᶎ' + '=' > 'ᵶ'
+'ᵶ' + '=' > 'ɿ'
+'ɿ' + '=' > 'ʅ'   
+'ʅ' + '=' > 'z'
+
+
+   
    
 
  
