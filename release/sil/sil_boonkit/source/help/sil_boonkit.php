@@ -26,7 +26,7 @@ and selecting the On Screen Keyboard menu item.     </p>
 	  <p> Boonkit Keyboard shifted</p>
       <P class=Caption></P><A name=license></A>
       <H2>License</H2>
-      <P>SIL Boonkit Keyman Keyboard is copyright &copy; 2008-2017 SIL 
+      <P>SIL Boonkit Keyman Keyboard is copyright &copy; 2008-2018 SIL 
       International. It is distributed under The MIT License (MIT)</P>
       <DIV class=Note>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
