@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder>Torwali Keyman Keyboard</Folder>
+    <Folder>Torwali (SIL) Keyman Keyboard</Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Torwali Keyman Keyboard</Name>
-    <Copyright URL="">© 2016-2018 SIL International</Copyright>
+    <Name URL="">Torwali (SIL) Keyman Keyboard</Name>
+    <Copyright URL="">© 2016-2019 SIL International</Copyright>
     <Version URL=""></Version>
     <Author URL="mailto:lorna_evans@sil.org">Lorna Evans</Author>
   </Info>
@@ -28,46 +29,10 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\sil_torwali.kvk</Name>
@@ -87,15 +52,51 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
+      <Description>File Scheherazade_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
+      <Description>Font Scheherazade Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
+      <Description>Font Scheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Torwali</Name>
+      <Name>Torwali (SIL)</Name>
       <ID>sil_torwali</ID>
-      <Version>0.8.1</Version>
+      <Version>1.0</Version>
       <RTL>True</RTL>
-      <OSKFont>Scheherazade-Regular.ttf</OSKFont>
-      <DisplayFont>Scheherazade-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="trw-Arab">Torwali</Language>
       </Languages>
