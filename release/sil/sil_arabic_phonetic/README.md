@@ -12,3 +12,4 @@ This keyboard was developed for entering Arabic script phonetically using a stan
  * macOS
  * Linux
  * Web
+ * Mobile
