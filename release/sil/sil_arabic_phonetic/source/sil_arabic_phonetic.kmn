@@ -1,0 +1,173 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Arabic Phonetic (SIL)'
+store(&COPYRIGHT) '© 2007-2019 SIL International'
+
+store(&VISUALKEYBOARD) 'sil_arabic_phonetic.kvks'
+
+c store(&WINDOWSLANGUAGES) 'x0401 x1401 x3C01 x0C01 x0801 x2C01 x3401 x3001 x1001 x1801 x2001 x4001 x2801 x3801 x1C01 x2401'
+c store(&LANGUAGE) 'x0401'
+c store(&ETHNOLOGUECODE) 'arb ara aao arq bbz abv shu acy adf avl arz afb ayh acw ayl acm ary ars apc ayp acx aec ayn ssh ajp pga apd acq abh aeb auz'
+store(&BITMAP) 'sil_arabic_phonetic.ico'
+store(&KMW_RTL) '1'
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.0'
+store(&LAYOUTFILE) 'sil_arabic_phonetic.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+c store(&mnemoniclayout) '1'
+
+store(cons) \
+  'ذ' 'ظ' 'خ' 'ح' 'ض' 'ص' 'ى' 'ط' 'م' 'ن' 'ب' 'ث' 'ش' 'ء' 'ز' 'ل' 'ك' 'ج' 'ه' 'غ' 'ف' \
+  'د' 'س' 'ع' 'ي' 'ت' 'ر' 'و' 'ق'
+
+group(main) using keys
++ '-' > '-'
++ '=' > '='
++ [K_LBRKT]  > '['
++ [K_RBRKT]  > ']'
++ [K_BKSLASH]  > '\'
++ [SHIFT K_LBRKT]  > '{'
++ [SHIFT K_RBRKT]  > '}'
++ [SHIFT K_BKSLASH]  > '|'
++ "'" > "'"
++ '"' > '"'
++ '.' > '.'
++ '`' > '`'
++ [SHIFT K_BKQUOTE] > U+007E
++ [SHIFT K_1] > U+0021
++ [SHIFT K_2] > "@"
++ [SHIFT K_3] > "#"
++ [SHIFT K_4] > "$"
++ [SHIFT K_6] > "^"
++ [SHIFT K_7] > "&"
++ [SHIFT K_9] > "("
++ [SHIFT K_0] > ")"
++ [SHIFT K_HYPHEN]  > "_"
++ [SHIFT K_EQUAL]   > "+"
++ [SHIFT K_COLON] > ':'
++ 'V' > 'ذ'
++ 'Z' > 'ظ'
++ 'K' > 'خ'
++ 'H' > 'ح'
++ 'D' > 'ض'
++ 'S' > 'ص'
++ 'A' > 'أ'
++ 'Y' > 'ى'
++ 'T' > 'ط'    
++ 'X' > 'ْ'
++ 'm' > 'م'
++ 'n' > 'ن'
++ 'b' > 'ب'
++ 'v' > 'ث'
++ 'c' > 'ش'
++ 'x' > 'ء'
++ 'z' > 'ز'
++ 'l' > 'ل'
++ 'k' > 'ك'
++ 'j' > 'ج'
++ 'h' > 'ه'
++ 'g' > 'غ'
++ 'f' > 'ف'
++ 'd' > 'د'
++ 's' > 'س'
++ 'a' > 'َ'
++ 'o' > 'ْ'
++ 'i' > 'ع'
++ 'u' > 'ُ'
++ 'y' > 'ي'
++ 't' > 'ت'
++ 'r' > 'ر'
++ 'e' > 'ِ'
++ 'w' > 'و'
++ 'q' > 'ق'
++ 'p' > U+067E
++ 'Q' > dk(none)
++ 'W' > dk(none)
++ 'E' > dk(none)
++ 'R' > dk(none)
++ 'U' > dk(none)
++ 'I' > dk(none)
++ 'O' > dk(none)
++ 'P' > dk(none)
++ 'F' > dk(none)
++ 'G' > dk(none)
++ 'J' > dk(none)
++ 'L' > dk(none)
++ 'X' > dk(none)
++ 'C' > dk(none)
++ 'B' > dk(none)
++ 'N' > dk(none)
++ 'M' > dk(none)
+
+
+'َ' + 'a' > 'ا'
+'أ' + 'A' > 'آ'
+'ُ' + 'u' > 'ؤ'
+'ِ' + 'e' > 'إ'
+'ي' + 'x' > 'ئ'
+'َ' + 'o' > 'ً'
+'ُ' + 'o' > 'ٌ'
+'ِ' + 'o' > 'ٍ'
+
+
+c Rotations
+  
+store(a_rot1) 'َ' 'ا' 'آ' 'أ' 'إ' 'ى' 'ع'
+store(a_rot2) 'ا' 'آ' 'أ' 'إ' 'ى' 'ع' 'َ'
+
+store(d_rot1) 'د' 'ض'
+store(d_rot2) 'ض' 'د'
+
+store(h_rot1) 'ح' 'ه' 'خ'
+store(h_rot2) 'ه' 'خ' 'ح'
+                    
+store(s_rot1) 'س' 'ص' 'ش'
+store(s_rot2) 'ص' 'ش' 'س'
+
+store(t_rot1) 'ت' 'ط' 'ة' 'ث' 'ظ' 'ذ'
+store(t_rot2) 'ط' 'ة' 'ث' 'ظ' 'ذ' 'ت'
+
+any(a_rot1) + '/' > index(a_rot2, 1)
+any(d_rot1) + '/' > index(d_rot2, 1)
+any(h_rot1) + '/' > index(h_rot2, 1)
+any(s_rot1) + '/' > index(s_rot2, 1)
+any(t_rot1) + '/' > index(t_rot2, 1)
+
+c Punctuation
+
++ ';' > '؛'
++ '?' > '؟'
++ ',' > '،'
++ '%' > '٪'
+                                               
+store(digitkey) '0123456789'
+store(digit) '٠١٢٣٤٥٦٧٨٩'
+
++ any(digitkey) > index(digit, 1)
+
+any(digit) + '<' > index(digit, 1) '٬'
+any(digit) + '>' > index(digit, 1) '٫'
+
++ '*' > '٭'
+
++ '0' > '٠'
++ '1' > '١'
++ '2' > '٢'
++ '3' > '٣'
++ '4' > '٤'
++ '5' > '٥'
++ '6' > '٦'
++ '7' > '٧'
++ '8' > '٨'
++ '9' > '٩'
+
+match > use(post)             
+
+group(post)
+                    
+c Shadda
+any(cons) index(cons, 1) > context(1) 'ّ'
+
+c Allah
+'ل' 'ّ' 'ه' > 'لله' 
