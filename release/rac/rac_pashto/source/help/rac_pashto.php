@@ -62,5 +62,5 @@ This keyboard layout is designed by Rehmat Aziz Chitrali linguist and researcher
 
 <h2>Links</h2>
 <ul>
-<li><a href='http://keymankeyboards.com/iso:pus>Other keyboards for these languages</a></li>
+<li><a href='http://keymankeyboards.com/iso:ps>Other keyboards for these languages</a></li>
 </ul>
