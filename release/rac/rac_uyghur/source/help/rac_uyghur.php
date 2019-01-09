@@ -38,14 +38,17 @@ keyboard which can be viewed by clicking on the Keyman icon and selecting the
 On Screen Keyboard menu item. </p>
 
 
-<h3>Desktop Keyboard Layout</h3>
-<div id='osk' data-states='default shift'>
+<div id='osk-container'>
+  <h2>Desktop Keyboard Layout</h2>
+  <div id='osk' data-states='default shift'></div>
 </div>
 
-<h3>Mobile/Tablet Keyboard Layout</h3>
-<div id='osk-tablet' data-states='default shift numeric'>
+<div id='osk-tablet-container'>
+  <h2>Mobile/Tablet Keyboard Layout</h2>
+  <div id='osk-tablet' data-states='default symbol numeric'></div>
 </div>
-      	
+
+    	
 <h2>How to use the Rachitrali-Uyghur Keyboard? Please read the following:-</h2>
 
 
