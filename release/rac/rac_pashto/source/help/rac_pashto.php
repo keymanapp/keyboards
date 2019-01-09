@@ -26,12 +26,12 @@ This keyboard layout is designed by Rehmat Aziz Chitrali linguist and researcher
 
 
 <div id='osk-container'>
-  <h2>Desktop Keyboard Layout</h2>
+  <h3>Desktop Keyboard Layout</h3>
   <div id='osk' data-states='default shift ctrl-alt'></div>
 </div>
 
 <div id='osk-tablet-container'>
-  <h2>Mobile/Tablet Keyboard Layout</h2>
+  <h3>Mobile/Tablet Keyboard Layout</h3>
   <div id='osk-tablet' data-states='default symbol numeric'></div>
 </div>
 
