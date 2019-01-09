@@ -1,5 +1,8 @@
 Change History
 =======================
+6.0.1 (2019)
+-----------------
+Updating Documentation and screenshots
 
 6.0 (2018)
 -----------------
