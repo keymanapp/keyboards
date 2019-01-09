@@ -1,6 +1,6 @@
 # Arabic Phonetic (SIL) Keyboard Change History
 
-## 1.0 (16 Aug 2018)
+## 1.0 (6 Jan 2019)
 * Source migrated to GitHub
 
 ## 0.2 (27 Feb 2009)
