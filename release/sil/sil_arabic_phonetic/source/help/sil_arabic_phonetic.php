@@ -6,14 +6,17 @@
 <p>This is a keyboard for entering Arabic phonetically using a standard English keyboard.</p>
 
 <h2>Keyboard Layout</h2>
-<h3>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
+
+<div id='osk-container'>
+  <h3>Desktop Keyboard Layout</h3>
+  <div id='osk' data-states='default shift'></div>
 </div>
 
-<h3>Mobile/Tablet Keyboard Layout</h3>
-<div id='osk-tablet' data-states='default shift numeric'>
+<div id='osk-tablet-container'>
+  <h3>Mobile/Tablet Keyboard Layout</h3>
+  <div id='osk-tablet' data-states='default numeric'></div>
 </div>
-                                      
+      	                                      
 <h2>Usage Notes</h2>
 
 <p>This keyboard has several shortcuts to make it easier to type phonetically:</p>
@@ -37,6 +40,8 @@
 </li>
 <li>To add a Shadda (e.g. shown here on Beh, <span class='a'>بّ</span>), type the consonant twice</li>
 <li>To type Allah (<span class='a'>لله</span>), type <b>llh</b></li>
+<li>Type any digit + &gt; to get U+066C (thousands separator)</li>
+<li>Type any digit + &lt; to get U+066B (decimal separator)</li>
 <li>To cycle through different variations of a letter, use the slash key (<b>/</b>).  This is currently supported for:
   <ul>
    <li>alef/ain/fatha (<b>a/</b>)</li>
@@ -48,9 +53,3 @@
 </li>
 </ul>
 
-<h2>Release History</h2>
-
-<p>Version 0.2 released 27 February 2009, added some additional documentation.</p>
-<p>Version 0.1 for Keyman Desktop 7.0. Released 30 January 2009.</p>
-       
-</body>

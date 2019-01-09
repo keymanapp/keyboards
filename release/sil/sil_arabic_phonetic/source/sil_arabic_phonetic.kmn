@@ -9,9 +9,9 @@ c store(&LANGUAGE) 'x0401'
 c store(&ETHNOLOGUECODE) 'arb ara aao arq bbz abv shu acy adf avl arz afb ayh acw ayl acm ary ars apc ayp acx aec ayn ssh ajp pga apd acq abh aeb auz'
 store(&BITMAP) 'sil_arabic_phonetic.ico'
 store(&KMW_RTL) '1'
-store(&TARGETS) 'any'
 store(&KEYBOARDVERSION) '1.0'
 store(&LAYOUTFILE) 'sil_arabic_phonetic.keyman-touch-layout'
+store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
@@ -55,7 +55,7 @@ group(main) using keys
 + 'A' > 'أ'
 + 'Y' > 'ى'
 + 'T' > 'ط'    
-+ 'X' > 'ْ'
+c + 'X' > 'ْ'
 + 'm' > 'م'
 + 'n' > 'ن'
 + 'b' > 'ب'
@@ -150,17 +150,6 @@ any(digit) + '<' > index(digit, 1) '٬'
 any(digit) + '>' > index(digit, 1) '٫'
 
 + '*' > '٭'
-
-+ '0' > '٠'
-+ '1' > '١'
-+ '2' > '٢'
-+ '3' > '٣'
-+ '4' > '٤'
-+ '5' > '٥'
-+ '6' > '٦'
-+ '7' > '٧'
-+ '8' > '٨'
-+ '9' > '٩'
 
 match > use(post)             
 
