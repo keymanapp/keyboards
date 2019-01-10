@@ -129,11 +129,11 @@ designed for use with <b>Boko</b>, <b>Bokobaru</b> and <b>Busa</b> and related l
 
 <table class='hotkeys'>
   <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>2</span></td><td class='char'>◌̣</td></tr>
-  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>G</span></td><td class='char'>◌̂</td></tr>
-  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>H</span></td><td class='char'>◌̀</td></tr>
-  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>J</span></td><td class='char'>◌́</td></tr>
-  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>K</span></td><td class='char'>◌̃</td></tr>
-  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>L</span></td><td class='char'>◌̃̀</td></tr>
+  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>g</span></td><td class='char'>◌̂</td></tr>
+  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>h</span></td><td class='char'>◌̀</td></tr>
+  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>j</span></td><td class='char'>◌́</td></tr>
+  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>k</span></td><td class='char'>◌̃</td></tr>
+  <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>l</span></td><td class='char'>◌̃̀</td></tr>
   <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>;</span></td><td class='char'>◌̃́</td></tr>
   <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>'</span></td><td class='char'>◌̃̄</td></tr>
   <tr><td><span class='hotkeya'>Alt</span><span class='hotkeyplus'> + </span><span class='hotkey'>/</span></td><td class='char'>◌̄</td></tr>
