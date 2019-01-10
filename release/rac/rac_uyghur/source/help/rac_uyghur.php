@@ -99,5 +99,5 @@ On Screen Keyboard menu item. </p>
 
 <h2>Links</h2>
 <ul>
-<li><a href='http://keymankeyboards.com/iso:uig>Other keyboards for these languages</a></li>
+<li><a href='http://keymankeyboards.com/iso:uig'>Other keyboards for these languages</a></li>
 </ul>

@@ -14,7 +14,7 @@
 
 </p>
 <h2>Font</h2>
-<p style="text-align: justify;">
+<p>
 The Rachitrali-Pashto Keyman keyboard is designed by Rehmat Aziz Chitrali to work with any extended 
 Arabic script font.  
 </p>
@@ -65,5 +65,5 @@ This keyboard layout is designed by Rehmat Aziz Chitrali linguist and researcher
 
 <h2>Links</h2>
 <ul>
-<li><a href='http://keymankeyboards.com/iso:ps>Other keyboards for these languages</a></li>
+<li><a href='http://keymankeyboards.com/iso:pus'>Other keyboards for these languages</a></li>
 </ul>
