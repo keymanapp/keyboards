@@ -14,7 +14,7 @@
 
 <div id='osk-tablet-container'>
   <h3>Mobile/Tablet Keyboard Layout</h3>
-  <div id='osk-tablet' data-states='default numeric'></div>
+  <div id='osk-tablet' data-states='default shift numeric'></div>
 </div>
       	                                      
 <h2>Usage Notes</h2>
