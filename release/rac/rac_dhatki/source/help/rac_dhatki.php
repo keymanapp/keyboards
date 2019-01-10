@@ -37,7 +37,7 @@ and selecting the On Screen Keyboard menu item.     </p>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift ctrl-alt symbol'>
+<div id='osk-tablet' data-states='default shift ctrl-alt symbols'>
 </div>
 
 <h2>How to use the Rachitrali-Dhatki Keyboard? Please read the following:-</h2>
