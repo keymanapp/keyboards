@@ -1,10 +1,10 @@
 ﻿c rac_sindhi.kmn
 c Author:   Rehmat Aziz Chitrali
-c Date:     8-JUNE 2018
+c Date:     11-JANUARY 2019
 c Original Creation Date:     7-APR-2016
 store(&VERSION) '9.0'
 store(&NAME) 'Rachitrali-Sindhi'
-store(&COPYRIGHT) '© 2018 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com'
+store(&COPYRIGHT) '© 2019 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com'
 store(&MESSAGE) 'Read Sindhi, Write Sindhi and Speak Sindhi -- Message from Rehmat Aziz Chitrali'
 c store(&ETHNOLOGUECODE) 'snd'
 c store(&WINDOWSLANGUAGES) 'x0459'
@@ -21,7 +21,7 @@ begin Unicode > use(main)
 
 
 group(main) using keys
-+ [CTRL ALT K_PERIOD] > 'ࣿ'
+c + [CTRL ALT K_PERIOD] > 'ࣿ' c duplicate of [K_SLASH]
 + [CTRL ALT K_COMMA] > '"'
 + [CTRL ALT K_QUOTE] > U+0027
 + [CTRL ALT K_M] > '>'
@@ -130,7 +130,7 @@ group(main) using keys
 + [SHIFT K_O] > 'ۃ'
 + [SHIFT K_I] > 'ِ'
 + [SHIFT K_U] > 'ئ'
-+ [SHIFT K_Y] > 'ِ'
++ [SHIFT K_Y] > 'َ'
 + [SHIFT K_T] > 'ٹ'
 + [SHIFT K_R] > 'ڑ'
 + [SHIFT K_E] > 'ٔ'

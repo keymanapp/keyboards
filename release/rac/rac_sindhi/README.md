@@ -1,7 +1,7 @@
 Rachitrali-Sindhi Keyboard Data
 -------------------------------
 
-Copyright:      (C) 2018 Rehmat Aziz Chitrali
+Copyright:      (C) 2019 Rehmat Aziz Chitrali
 Version:        1.0
 
 Description
