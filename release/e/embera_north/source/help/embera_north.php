@@ -122,7 +122,7 @@
 <br />
 
 <br />
-<p>&copy; 1999-2018 Ethnos360.</p>
+<p>&copy; 1999-2019 Ethnos360.</p>
 
 <div style='display: none' id='info'></div>
        
