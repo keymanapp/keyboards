@@ -76,15 +76,14 @@
       divinfo = document.getElementById('info');
     } 
   //--></script>
-</head>
 <body onload='javascript:loaded()'>       
 
 <p>Este teclado es para utilizar con el fuente Charis SIL.</p>
 <p>Se puede utilizar con Microsoft Windows, Mac OSX, Linux, iPhone, Ipad, Android phone, y tabletas Android.</p>
 
-<h1>Accesos directos del teclado Embera (Northern)</h1>
+<h3>Accesos directos del teclado Embera (Northern)</h3>
 
-<h1>Teclado Inglés</h1>
+<h3>Teclado Inglés</h3>
 <p>Las vocales con diacríticos se producen al teclear el acceso directo mostrado a la izquierda ( ' [ ; ) seguida por la vocal</p>
                             
 <table><tbody>
@@ -123,7 +122,7 @@
 <br />
 
 <br />
-<p>&copy; 1999-2018 Ethnos360.</p>
+<p>&copy; 1999-2019 Ethnos360.</p>
 
 <div style='display: none' id='info'></div>
        
