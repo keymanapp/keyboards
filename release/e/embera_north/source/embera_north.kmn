@@ -1,0 +1,139 @@
+﻿c embera.KMN
+c Keyboard for Doug Schermerhorn
+c Charis SIL Font
+c Originally Created 1999.04.28
+c Updated 2018.05.07 to Keyman 10.0
+c Lee Partridge
+c Ethnos360
+
+store(&VERSION) '10.0.1081.0'
+store(&NAME) 'Embera Northern'
+store(&BITMAP) 'e.bmp'
+store(&COPYRIGHT) '© 1999-2018 Ethnos360'
+store(&KEYBOARDVERSION) '10.1.1'
+store(&VISUALKEYBOARD) 'embera_north.kvks'
+store(&message) "This keyboard is freely redistributable."
+store(&LAYOUTFILE) 'embera_north.keyman-touch-layout'
+c store(&ETHNOLOGUECODE) 'emp'
+store(&TARGETS) 'any'
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_RBRKT] > 'ʌ'
++ [SHIFT K_RBRKT] > 'Ʌ'
++ [ALT K_RBRKT] > ']'
++ [SHIFT ALT K_RBRKT]  > '}'
++ [K_X] > 'd̶'
++ [SHIFT K_X] > 'D̸'
++ [ALT K_X] > 'x'
++ [SHIFT ALT K_X] > 'X'
++ [K_F] > 'b̶'
++ [SHIFT K_F] > 'B̸'
++ [ALT K_F] > 'f'
++ [SHIFT ALT K_F] > 'F'
++ '/' > '¿'
++ [ALT K_SLASH] > '/'
++ [ALT K_1] > '¡'  
+
+c Added for touch screen f and F, but may not be necessary
+c + [T_0066] > U+0066
+c + [T_0046] > U+0046
+
+c Added for touch screen x and X but may not be necessary
+c + [T_0078] > U+0078
+c + [T_0058] > U+0058
+
+c Added for touch screen ] and } but may not be necessary
+c + [T_005D] > U+005D
+c + [T_007D] > U+007D
+
+c Added for touch screen d and D with bar
++ [T_0064_0336] > U+0064 U+0336
++ [T_0044_0338] > U+0044 U+0338
+
+c Added for touch screen b and B with bar
++ [T_0062_0336] > U+0062 U+0336
++ [T_0042_0338] > U+0042 U+0338
+
+c Assign Deadkeys
++ "'" > dk(quote)
++ "[" > dk(left_square_bracket)
++ ";" > dk(semicolon)
+
+c Rules for the accent character itself (type it twice)
+dk(quote)+ "'" > "'"
+dk(left_square_bracket)+ "[" > "["
+dk(Semicolon)+ ";" > ";"
+
+c Added for touch screen Inverted V with acute accent
++ [T_028C_0301] > U+028C U+0301
++ [T_0245_0301] > U+0245 U+0301
+
+c Vowels with acute accent:
+dk(quote) + "a" > U+00E1
+dk(quote) + "e" > U+00E9 
+dk(quote) + "i" > U+00ED
+dk(quote) + "o" > U+00F3
+dk(quote) + "u" > U+00FA
+dk(quote) + "]" > U+028C U+0301
+dk(quote) + "A" > U+00C1
+dk(quote) + "E" > U+00C9
+dk(quote) + "I" > U+00CD
+dk(quote) + "O" > U+00D3
+dk(quote) + "U" > U+00DA
+dk(quote) + "}" > U+0245 U+0301
+
+c Added for touch screen Inverted v and V with tilde
++ [T_028C_0303] > U+028C U+0303
++ [T_0245_0303] > U+0245 U+0303
+c Added for touch screen Inverted e and E with tilde
++ [T_0065_0303] > U+0065 U+0303
++ [T_0045_0303] > U+0045 U+0303
+
+c Vowels with tilde:
+dk(left_square_bracket) + "a" > U+00E3
+dk(left_square_bracket) + "e" > U+0065 U+0303 
+dk(left_square_bracket) + "i" > U+0129
+dk(left_square_bracket) + "o" > U+00F5
+dk(left_square_bracket) + "u" > U+0169
+dk(left_square_bracket) + "]" > U+028C U+0303
+dk(left_square_bracket) + "A" > U+00C3
+dk(left_square_bracket) + "E" > U+0045 U+0303
+dk(left_square_bracket) + "I" > U+0128
+dk(left_square_bracket) + "O" > U+00D5
+dk(left_square_bracket) + "U" > U+0168
+dk(left_square_bracket) + "}" > U+0245 U+0303
+
+c Added for touch screen Inverted v and V with tilde and acute accent
++ [T_028C_0303_0301] > U+028C U+0303 U+0301
++ [T_0245_0303_0301] > U+0245 U+0303 U+0301
+c Added for touch screen a and A with tilde and acute accent
++ [T_00E3_0301] > U+00E3 U+0301
++ [T_00C3_0301] > U+00C3 U+0301
+c Added for touch screen e and E with tilde and acute accent
++ [T_0065_0303_0301] > U+0065 U+0303 U+0301
++ [T_0045_0303_0301] > U+0045 U+0303 U+0301
+c Added for touch screen i and I with tilde and acute accent
++ [T_0129_0301] > U+0129 U+0301
++ [T_0128_0301] > U+0128 U+0301
+c Added for touch screen o and O with tilde and acute accent
++ [T_00F5_0301] > U+00F5 U+0301
++ [T_00D5_0301] > U+00D5 U+0301
+c Added for touch screen u and U with tilde and acute accent
++ [T_0169_0301] > U+0169 U+0301
++ [T_0168_0301] > U+0168 U+0301
+
+c Vowels with tilde and acute accent:
+dk(semicolon) + "a" > U+00E3 U+0301
+dk(semicolon) + "e" > U+0065 U+0303 U+0301 
+dk(semicolon) + "i" > U+0129 U+0301
+dk(semicolon) + "o" > U+00F5 U+0301
+dk(semicolon) + "u" > U+0169 U+0301
+dk(semicolon) + "]" > U+028C U+0303 U+0301
+dk(semicolon) + "A" > U+00C3 U+0301
+dk(semicolon) + "E" > U+0045 U+0303 U+0301
+dk(semicolon) + "I" > U+0128 U+0301
+dk(semicolon) + "O" > U+00D5 U+0301
+dk(semicolon) + "U" > U+0168 U+0301
+dk(semicolon) + "}" > U+0245 U+0303 U+0301 
