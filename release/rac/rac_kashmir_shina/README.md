@@ -11,8 +11,7 @@ Description
 -----------
 
 This keyboard is designed for the Kashmir-Shina Language of Pakistan. It is based on phonetic keyboard for Kashmir-Shina Language
-developed by Pakistani linguist, author, researcher and Software Developer Mr. Rehmat Aziz Chitrali for
-use by SIL International, and later approved by Khowar Academy (a literary Association working on the
+developed by Pakistani linguist, author, researcher and Software Developer Mr. Rehmat Aziz Chitrali, and later approved by Khowar Academy (a literary Association working on the
 language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Kashmir-Shina Keyboard.
 
 This is the first Kashmir-Shina Language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist,

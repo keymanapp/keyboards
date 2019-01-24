@@ -16,6 +16,12 @@ This keyboard layout is designed by Pakistani Linguist Rehmat Aziz Chitrali for 
 an on screen keyboard which can be viewed by clicking on the Keyman icon 
 and selecting the On Screen Keyboard menu item.</p>
 
+<p><b>Caveat:</b> This keyboard is designed for an orthography that is not well supported by operating systems and applications. 
+	It uses "vowel-marks" (combining marks) above "vowel-marks". In some instances some systems will display dotted circles 
+	instead of positioning the second vowel above the first vowel. In other applications the ordering of the combining marks 
+	may change. Some of these vowel marks are being used to form new characters with a base character. The ideal solution would 
+	be to get the characters encoded in Unicode. </p>
+	
 <h3>Desktop Keyboard Layout</h3>
 <div id='osk' data-states='default shift'>
 </div>
