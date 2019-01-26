@@ -1,5 +1,43 @@
 {
-    "license": "mit",
-    "languages": ["jv"],
-    "description": "This keyboard is based on Benny Lin's Nulisa Aksara Jawa web transliterator program - http://is.gd/nulisa"
+  "id" : "jawa",
+  "name" : "Javanese Script Unicode Easy Input",
+  "authorName" : "Benny Lin",
+  "authorEmail" : "bennylin.idwiki@hotmail.com",
+  "description" : "This keyboard is designed to type all Javanese characters and stacks directly. You get a Javanese character every time you press a key, without having to use the Alt key or memorizing arbitrary key locations in QWERTY keyboard. This keyboard is based on Benny Lin's Nulisa Aksara Jawa web transliterator program - http://is.gd/nulisa.\r\n\r\nThis keyboard also lets you type Javanese Latin letters. ",
+  "license" : "mit",
+  "version" : "1.0",
+  "minKeymanVersion" : "9.0",
+  "packageFilename" : "jawa.kmp",
+  "platformSupport" : {
+    "desktopWeb" : "full",
+    "ios" : "basic",
+    "android" : "basic"
+  },
+  "packageIncludes" : [
+    "fonts",
+    "documentation",
+    "visualKeyboard",
+    "welcome"
+    ],
+  "lastModifiedDate" : "2019-01-25T07:34:55Z",
+  "encodings" : [
+     "unicode"
+    ],
+  "languages" : {
+    "jv-Java" : {
+      "font" : {
+        "family" : "Tuladha Jejeg",
+        "source" : "TuladhaJejeg_gr.ttf"
+      },
+      "oskFont" : {
+        "family" : "Noto Sans Javanese",
+        "source" : "NotoSansJavanese-Regular.ttf"
+      },
+      "example" : {
+        "keys" : "aksarajawa",
+        "text" : "\uA9B2\uA98F\uA9C0\uA9B1\uA9AB\uA997\uA9AE",
+        "note" : "Name of writing script"
+      }
+    }
+  }
 }
