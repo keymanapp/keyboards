@@ -6,12 +6,24 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>welcome\welcome.htm</ReadMeFile>
+    <GraphicFile>jawa2.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
-    <Items/>
+    <Folder>Jawa</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Documentation</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
   </StartMenu>
   <Info>
     <Version URL="">1.0</Version>
@@ -21,6 +33,48 @@
     <WebSite URL="http://is.gd/nulisa">http://is.gd/nulisa</WebSite>
   </Info>
   <Files>
+    <File>
+      <Name>readme.html</Name>
+      <Description>File readme.html</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.html</FileType>
+    </File>
+    <File>
+      <Name>jawa.bmp</Name>
+      <Description>File jawa.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>jawa.jpg</Name>
+      <Description>File jawa.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>jawa2.bmp</Name>
+      <Description>File jawa2.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>NotoSansJavanese-Regular.ttf</Name>
+      <Description>Font Noto Sans Javanese Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>TuladhaJejeg_gr.ttf</Name>
+      <Description>Font Tuladha Jejeg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
     <File>
       <Name>jawa.kvk</Name>
       <Description>File jawa.kvk</Description>
