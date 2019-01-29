@@ -1,5 +1,5 @@
-Nulisa Aksara Jawa Keyboard Change History
-=====================
+Nulisa Aksara Jawa Keyboard 
+===========================
 
 Copyright (C) 2019 Benny Lin (bennylin.idwiki@hotmail.com)
 
@@ -12,7 +12,7 @@ Links
 -----
 
  * Home:     https://github.com/bennylin/transliterasijawa
- * Home:     https://github.com/bennylin/transliterasijawa
+             https://github.com/bennylin/keyboards
  * Help:     fb.me/bennylin.solo
  * Contact:  bennylin.idwiki@hotmail.com
 
