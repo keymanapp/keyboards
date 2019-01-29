@@ -1,4 +1,4 @@
-____________ Keyboard Change History
+Nulisa Aksara Jawa Keyboard Change History
 =======================
 
 1.0 (24 Jan 2019)
