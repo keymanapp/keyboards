@@ -1,8 +1,8 @@
 Rachitrali-Shina Keyboard Data
 ------------------------------
 
-Copyright:      (C) 2018 Rehmat Aziz Chitrali
-Version:        1.0
+Copyright:      (C) 2018-2019 Rehmat Aziz Chitrali
+Version:        1.01
 
 Description
 -----------
@@ -18,10 +18,13 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 Links
 -----
 
+ * Home: https://keyman.com/keyboards/rac_shina
+ * Help: https://help.keyman.com/keyboard/rac_shina
  * Contact: Rehmat Aziz Chitrali linguist and researcher <rachitrali@yahoo.com>
 
 Supported Platforms
--------------------
+------------------
+
  * Windows
  * Web
  * macOS
