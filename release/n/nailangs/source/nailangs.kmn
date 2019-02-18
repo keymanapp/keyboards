@@ -47,10 +47,15 @@ store(digitshift) [SHIFT K_0] [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [S
 store(digitshiftcaps) [CAPS SHIFT K_0] [CAPS SHIFT K_1] [CAPS SHIFT K_2] [CAPS SHIFT K_3] [CAPS SHIFT K_4] [CAPS SHIFT K_5] [CAPS SHIFT K_6] [CAPS SHIFT K_7] [CAPS SHIFT K_8] [CAPS SHIFT K_9]
 store(digitshiftncaps) [NCAPS SHIFT K_0] [NCAPS SHIFT K_1] [NCAPS SHIFT K_2] [NCAPS SHIFT K_3] [NCAPS SHIFT K_4] [NCAPS SHIFT K_5] [NCAPS SHIFT K_6] [NCAPS SHIFT K_7] [NCAPS SHIFT K_8] [NCAPS SHIFT K_9]
 
+store(raltn) [CAPS RALT K_N] [NCAPS RALT K_N] [CAPS SHIFT RALT K_N] [NCAPS SHIFT RALT K_N]
+store(ctrlaltn) [CAPS CTRL ALT K_N] [NCAPS CTRL ALT K_N] [CAPS SHIFT CTRL ALT K_N] [NCAPS SHIFT CTRL ALT K_N]
+store(raltnchar) 'ƝɲɲƝ'
+
 store(extradflt) [K_oE2] [K_LBRKT] [K_EQUAL] [K_HYPHEN] 
 store(extracaps) [CAPS K_oE2] [CAPS K_LBRKT] [CAPS K_EQUAL] [CAPS K_HYPHEN] 
 store(extrancaps) [NCAPS K_oE2] [NCAPS K_LBRKT] [NCAPS K_EQUAL] [NCAPS K_HYPHEN]
 store(extrashift) [SHIFT K_oE2] [SHIFT K_LBRKT] [SHIFT K_EQUAL] [SHIFT K_HYPHEN]
+
 store(extrashiftcaps) [CAPS SHIFT K_oE2] [CAPS SHIFT K_LBRKT] [CAPS SHIFT K_EQUAL] [CAPS SHIFT K_HYPHEN]
 store(extrashiftncaps) [NCAPS SHIFT K_oE2] [NCAPS SHIFT K_LBRKT] [NCAPS SHIFT K_EQUAL] [NCAPS SHIFT K_HYPHEN]
 
@@ -163,6 +168,9 @@ $keymanonly: + any(keyncaps) > index(charlower,1)
 $keymanonly: + any(keycaps) > index(charupper,1)
 $keymanonly: + any(keyshiftcaps) > index(charlower,1)
 $keymanonly: + any(keyshiftncaps) > index(charupper,1)
+
+$keymanonly: + any(raltn) > index(raltnchar,1)
+$keymanweb: + any(ctrlaltn) > index(raltnchar,1)
 
 c digraph
 $keymanonly: + [NCAPS K_RBRKT] > 'gb'
