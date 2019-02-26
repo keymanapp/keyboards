@@ -1,0 +1,74 @@
+﻿c Türkçe klavyeye dayanan Lazca klavyedir
+c Fırlatmalı konson için aynısını bir kez daha basın. w/W için 'w'den sonra '"' basın.
+store(&VERSION) '9.0'
+store(&NAME) 'Lazca Klavye'
+store(&ETHNOLOGUECODE) 'Lzz'
+store(&WINDOWSLANGUAGES) 'x041F'
+store(&MESSAGE) 'Lazuri Klavye'
+store(&VISUALKEYBOARD) 'Lzz5.kvks'
+store(&BITMAP) 'Lzz5.ico'
+store(&COPYRIGHT) '©HERdilDER'
+store(&KEYBOARDVERSION) '2.30'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'Lzz5.keyman-touch-layout'
+begin Unicode > use(main)
+
+
+group(main) using keys  
+c Turkish Q
++ [SHIFT K_SLASH] > ':'
++ [SHIFT K_PERIOD] > 'Ç'
++ [SHIFT K_COMMA] > 'Ö'
++ [SHIFT K_I] > 'I'
++ [SHIFT K_QUOTE] > 'İ'
++ [SHIFT K_COLON] > 'Ş'
++ [SHIFT K_BKSLASH] > ';'
++ [SHIFT K_RBRKT] > 'Ü'
++ [SHIFT K_LBRKT] > 'Ğ'
++ [SHIFT K_EQUAL] > '_'
++ [SHIFT K_HYPHEN] > '?'
++ [SHIFT K_0] > '='
++ [SHIFT K_9] > ')'
++ [SHIFT K_8] > '('
++ [SHIFT K_7] > '/'
++ [SHIFT K_6] > '&'
++ [SHIFT K_5] > '%'
++ [SHIFT K_4] > '+'
++ [SHIFT K_3] > '^'
++ [SHIFT K_2] > U+0027
++ [SHIFT K_1] > '!'
++ [SHIFT K_BKQUOTE] > '̆'
++ [K_BKQUOTE] > '"'
++ [K_BKSLASH] > ','
++ [K_EQUAL] > '-'
++ [K_HYPHEN] > '*'
++ [K_I] > 'ı'
++ [K_SLASH] > '.'
++ [K_COMMA] > 'ö'
++ [K_PERIOD] > 'ç'
++ [K_RBRKT] > 'ü'
++ [K_LBRKT] > 'ğ'
++ [K_QUOTE] > 'i'
++ [K_COLON] > 'ş'
+
+c Laz specific keys
++ [SHIFT K_W] > 'Ʒ'
++ [K_W] > 'ʒ'   
+
+c ejective rules
+"t" + "t" > 't̆' 
+"T" + "T" > 'T̆'
+"ç" + [K_PERIOD] > 'ç̆'
+"Ç" + ">" > 'Ç̆'
+"k" + "k" > 'k̆'
+"K" + "K" > 'K̆'
+"p" + "p" > 'p̆'
+"P" + "P" > 'P̆'
+"ʒ" + "w" > 'ʒ̆'
+"Ʒ" + "W" > 'Ʒ̆'
+"z" + "z" > 'z̆'
+"Z" + "Z" > 'Z̆'
+
+c w rules
+"ʒ" + [K_BKQUOTE] > 'w'
+"Ʒ" + [K_BKQUOTE] > 'W' 
