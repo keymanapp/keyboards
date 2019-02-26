@@ -1,5 +1,5 @@
 <?php 
-  $pagename = "için Lazca (Lazuri) klavye";
+  $pagename = "Lazca (Lazuri) klavye";
   $pagetitle = "Keyman Desktop için Lazca (Lazuri) klavye";
   $pagestyle = <<<END
     h1 { font: bold 16pt Tahoma; color: #4444cc }
