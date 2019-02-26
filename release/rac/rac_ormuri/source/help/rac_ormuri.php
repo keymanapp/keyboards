@@ -29,7 +29,7 @@ This keyboard layout is designed for the RAChitrali-Ormuri language. It includes
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift symbol'>
+<div id='osk-phone' data-states='default shift symbol'>
 </div>
   
 <h2>How to use the RAChitrali-Ormuri Keyboard? Please read the following:-</h2>
