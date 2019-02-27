@@ -1,16 +1,17 @@
 ﻿c Türkçe klavyeye dayanan Lazca klavyedir
-c Fırlatmalı konson için aynısını bir kez daha basın. w/W için 'w'den sonra '"' basın.
+c Fırlatmalı(şakpkalı) konson için aynısını bir kez daha basın. 
+c w/W için 'w'den sonra '"' basın.
 store(&VERSION) '9.0'
 store(&NAME) 'Lazca Klavye'
 store(&ETHNOLOGUECODE) 'Lzz'
 store(&WINDOWSLANGUAGES) 'x041F'
 store(&MESSAGE) 'Lazuri Klavye'
-store(&VISUALKEYBOARD) 'Lzz5.kvks'
-store(&BITMAP) 'Lzz5.ico'
-store(&COPYRIGHT) '©HERdilDER'
-store(&KEYBOARDVERSION) '2.30'
+store(&VISUALKEYBOARD) 'lazuri.kvks'
+store(&BITMAP) 'lazuri.ico'
+store(&COPYRIGHT) '© 2017-2019 HERdilDER'
+store(&KEYBOARDVERSION) '2.3'
 store(&TARGETS) 'any'
-store(&LAYOUTFILE) 'Lzz5.keyman-touch-layout'
+store(&LAYOUTFILE) 'lazuri.keyman-touch-layout'
 begin Unicode > use(main)
 
 
@@ -72,3 +73,5 @@ c ejective rules
 c w rules
 "ʒ" + [K_BKQUOTE] > 'w'
 "Ʒ" + [K_BKQUOTE] > 'W' 
+
+
