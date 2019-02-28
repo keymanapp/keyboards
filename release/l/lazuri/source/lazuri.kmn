@@ -1,17 +1,18 @@
-﻿c Türkçe klavyeye dayanan Lazca klavyedir
-c Fırlatmalı(şakpkalı) konson için aynısını bir kez daha basın. 
-c w/W için 'w'den sonra '"' basın.
+﻿c Türkçe klavyeye göre hazırlanmış Lazca klavyedir.
+c Fırlatmalı(şapkalı) ünsüz harfler(ç̆, k̆, p̆, t̆, z̆, ʒ̆) için aynı tuşa iki kez basın.
+c Bilgisayarda w/W için ʒ/Ʒ den sonra " tuşuna basın.
 store(&VERSION) '9.0'
 store(&NAME) 'Lazca Klavye'
 store(&ETHNOLOGUECODE) 'Lzz'
 store(&WINDOWSLANGUAGES) 'x041F'
-store(&MESSAGE) 'Lazuri Klavye'
+store(&MESSAGE) 'Lazca Klavye'
 store(&VISUALKEYBOARD) 'lazuri.kvks'
 store(&BITMAP) 'lazuri.ico'
 store(&COPYRIGHT) '© 2017-2019 HERdilDER'
 store(&KEYBOARDVERSION) '2.3'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'lazuri.keyman-touch-layout'
+store(&LANGUAGE) 'x041F'
 begin Unicode > use(main)
 
 
