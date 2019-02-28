@@ -52,20 +52,22 @@ c LPE   1.3     15-FEB-2013     added U+030D, U+25cc and U+2205
 c LPE   1.4     25-FEB-2014     added U+A71d..U+A71F
 c LPE   1.5     27-FEB-2018     All changes are now reflected in HISTORY.md
  
-store(&VERSION) '9.0'
+store(&VERSION) '10.0'
 store(&NAME) 'SIL IPA'
 store(&BITMAP) 'sil_ipa.ico'
 c HOTKEY  "^+P"
-store(&COPYRIGHT) '© 2002-2018 SIL International'
+store(&COPYRIGHT) '© 2002-2019 SIL International'
 store(&MESSAGE) 'The SIL IPA Keyman keyboard is distributed under The MIT License (MIT).'
 c store(&author) "M. Hosken, D. Bevan"
 c store(&language) ""
-store(&WINDOWSLANGUAGES) 'x040F'
-store(&KEYBOARDVERSION) '1.6'
+c store(&WINDOWSLANGUAGES) 'x040F'
+store(&KEYBOARDVERSION) '1.7'
+store(&LAYOUTFILE) 'sil_ipa.keyman-touch-layout'
 store(&TARGETS) 'any'
-store(&LAYOUTFILE) 'sil_ipa-layout.js'
 
 begin Unicode > use(Unicode)
+
+c $keymanonly: store(&mnemoniclayout) '1'
 
 store(&mnemoniclayout) "1"
 
@@ -183,7 +185,6 @@ store(RetroflexHookK) "a"    U+0251 U+0257 "e"    U+025B U+025C U+0259 "i" \
 store(RetroflexHookU) U+1D8F U+1D90 U+1D91 U+1D92 U+1D93 U+1D94 U+1D95 U+1D96 \
                       U+1D97 U+1D98 U+1D99 U+1D9A 
 group(Unicode) using keys
-
 
 c handle ~~ for centre tilde
 any(tildeK) U+0303 + '~' > index(tildeU,1)
@@ -318,11 +319,31 @@ U+0327 + "_" > U+0320
 
 c General rules
     + any(singleK) > index(singleU,1)
-any(equalD) + "="  > index(equalU,1)
-any(greatD) + ">"  > index(greatU,1)
-any(lessD)  + "<"  > index(lessU,1)
-any(hatD)   + "^"  > index(hatU,1)
-any(pipeD)  + "|"  > index(pipeU,1) c this was added for Chinese IPA
+c any(equalD) + "="  > index(equalU,1)
+c any(greatD) + ">"  > index(greatU,1)
+c any(lessD)  + "<"  > index(lessU,1)
+c any(hatD)   + "^"  > index(hatU,1)
+c any(pipeD)  + "|"  > index(pipeU,1) c this was added for Chinese IPA
+
+store(option_key) ''
+
+c + [CTRL ALT "1"] > set(option_key='before') 
+c + [CTRL ALT "\"] > reset(option_key) 
+
+store(controls)  "=><^|"
+$keymanonly: store(controls-before) ["="][SHIFT ">"] [SHIFT "<"] [SHIFT '^'] [SHIFT "|"]
+
+$keymanonly: if(option_key = 'before') "=" + any(equalD)  > index(equalU,3)
+$keymanonly: if(option_key = 'before') ">" + any(greatD)  > index(greatU,3)
+$keymanonly: if(option_key = 'before') "<" + any(lessD)   > index(lessU,3)
+$keymanonly: if(option_key = 'before') "^" + any(hatD)    > index(hatU,3)
+$keymanonly: if(option_key = 'before') "|" + any(pipeD)   > index(pipeU,3) c this was added for Chinese IPA
+
+if(option_key = '') any(equalD) + "="  > index(equalU,2)
+if(option_key = '') any(greatD) + ">"  > index(greatU,2)
+if(option_key = '') any(lessD)  + "<"  > index(lessU,2)
+if(option_key = '') any(hatD)   + "^"  > index(hatU,2)
+if(option_key = '') any(pipeD)  + "|"  > index(pipeU,2) c this was added for Chinese IPA
 
 c lower diacritic
 any(segmentU) + any(ldiaK) > context beep
