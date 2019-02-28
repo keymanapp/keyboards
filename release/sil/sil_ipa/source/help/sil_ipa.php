@@ -4,31 +4,6 @@
   require_once('header.php');
 ?>
 
-<h1>SIL IPA keyboard for Keyman Desktop</h1>
-
-<div class=WordSection1>
-
-<p class=MsoTitle align=left style='text-align:left'><span style='font-family:
-"Arial",sans-serif'>SIL IPA keyboard (ver 1.6)</span></p>
-
-<p class=Author >Martin Hosken and Lorna Evans,<br>
-SIL Non-Roman Script Initiative (NRSI)</p>
-
-<h2>Technical Support</h2>
-
-<p class=MsoBodyText >If you have problems using the SIL Unicode IPA
-keyboard, please contact:</p>
-
-<p class=MsoBodyText >User Support<br>
-SIL Non-Roman Script Initiative<br>
-7500 W. Camp Wisdom Rd.<br>
-Dallas, TX 75236<br>
-USA</p>
-
-<p class=MsoBodyText >E-mail: <span
-class=MsoHyperlink><a href="mailto:nrsi@sil.org">nrsi@sil.org</a> </span></p>
-
-<p>&nbsp;</p>
 
 <h1>Keyboard Layout</h1>
 
@@ -39,6 +14,8 @@ characters used to change a base character to another base character.
 Diacritics are typed as sequences of an appropriate key. <span
 style='color:blue'>Blue denotes non-IPA sanctioned phonetic symbols (they may
 be used by other traditions such as Americanist, Chinese or Russian). </span></p>
+
+<p>As described above (and below), the default for this keyboard is to type a letter followed by a "modifier". For example, this sequence "b>" would produce "ɓ". If you wish to use the opposite sequence (>b) that is possible. Go to <b>Keyman Configuration</b>, select the keyboard, click on <b>Keyboard options</b> and choose <b>Before</b>. You may need to exit Keyman configuration before the default behavior changes.</p>
 
 <h2>Consonants</h2>
 
