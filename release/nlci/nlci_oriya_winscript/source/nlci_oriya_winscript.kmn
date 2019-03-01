@@ -20,9 +20,9 @@ store(cons) 'କଖଗଘଙ' \
     	   	'ଟଠଡଢଣ' \
     	   	'ତଥଦଧନ' \
     	   	'ପଫବଭମ' \
-    	   	'ଯରଲଵଶଷସହଳ'
+    	   	'ଯରଲୱଶଷସହଳ'
 
-store(consonants) outs(cons) 'ୠ'
+store(consonants) outs(cons) 'ୠଢ଼ଡ଼ୟ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
 
 c Adjust the behavior of 'a'
@@ -39,9 +39,6 @@ c Adjust the behavior of 'i'
 c Adjust the behavior of l
 'ଲ' + 'l' > 'ଳ'
   
-c Adjust the behavior of r
- 'ର' + 'r' > 'ଡ଼'       
- 
 c Adjust the behavior of R
 'ଋ' + 'R' > 'ୠ'   
 'ୃ' + 'R' > 'ୄ'     
@@ -73,7 +70,7 @@ c Adjust the behavior of f
  
 c Adjust the behavior of D and d
 'ଢ' + 'D' > 'ଢ଼'
-'ଡ' + 'd' > 'ଡ଼'
+'ଡ' + 'd' > 'ଡ଼'   
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '୍' U+200C
@@ -97,17 +94,21 @@ c Smart quotes
 U+201C + '"' > U+201D
 U+201D + '"' > '"'
 
-+ "'" > U+2018
++ "'" > "'"
+"'" + "'" > U+2018
 U+2018 + "'" > U+2019
 U+2019 + "'" > "'"
-
 c Dashes
 '--' + '`' > U+2013 
 U+2013 + '`' > '--' 
 U+2013 + [K_BKSP] > '--'
 '---' + '`' > U+2014
 U+2014 + '`' > '---'
-U+2014 + [K_BKSP] > '---'    
+U+2014 + [K_BKSP] > '---'   
+
+c full stop
+   + '.' > '।'
+'।' + '.' > '.' 
 
 c backtick to change into English
 + '`' > '`' dk(bt)
