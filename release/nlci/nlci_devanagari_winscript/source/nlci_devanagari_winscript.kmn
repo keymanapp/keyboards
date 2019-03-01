@@ -100,7 +100,12 @@ U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 c Add =
 + '=' > '=' dk(eq)
 '=' dk(eq)+ 'r' > 'ऱ'
-'=' dk(eq)+ 'z' > 'ऴ'    
+'=' dk(eq)+ 'z' > 'ऴ'                           
+
+c For Devanagari Glottal Stop. On BSI's request
+c I'm not sure if this is the ideal keystroke
+'=' dk(eq)+ 'H' > 'ʼ' 
+'ʼ' + '=' dk(eq) > 'ॽ'
 
 c Restrict the ZW characters 
 U+200C + 'x' > context beep
