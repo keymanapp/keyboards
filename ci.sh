@@ -53,7 +53,7 @@ function run {
       mkdir "$CI_CACHE/upload"
     fi
     zip_keyboard_info
-    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ true
+    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
     exit 0
   fi
   
@@ -72,7 +72,7 @@ function run {
   upload_keyboards_by_target
 
   zip_keyboard_info
-  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ true
+  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
 }
 
 ##
