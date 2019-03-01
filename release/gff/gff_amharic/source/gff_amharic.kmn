@@ -62,7 +62,6 @@ c 'hhkqg'
   store(zemedeWe)  'ኈኈኰቈጐ'
   store(zemedeWu)  'ኍኍኵቍጕ'
   store(zemedeWi)  'ኊኊኲቊጒ'
-  store(zemedeWa)  'ኋኋኳቋጓ'
   store(zemedeWEE) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
@@ -96,7 +95,7 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 store(&LAYOUTFILE) 'gff_amharic.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.7'
 store(&TARGETS) 'any windows macosx'
 store(&BITMAP) 'gff_amharic.ico'
 
@@ -216,8 +215,8 @@ c
   U+135F + '_' > '_'
 
 c The following two rules had to be added here (not later) to fix the deadkey issue
- deadkey(1) + "'" > "'"
- deadkey(1) + any(alefKeys) > index(alefEthio,2)
+  deadkey(1) + "'" > "'"
+  deadkey(1) + any(alefKeys) > index(alefEthio,2)
  
   + any(extraKeys) > index(extraSads,1)
   + any(keys)      > index(sads,1)
@@ -232,9 +231,9 @@ c ---------------------End Input of Double Strike Letters-----------------------
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
 c Alef-A Vowels as Vowels
-  + any(alefKeys) > index(alefEthio,1) 
+  + any(alefKeys) > index(alefEthio,1)
+  any(alefEthio) + "'" > index(alefEthio,1) deadkey(1)  
   'አ' + any(gIz-key) > 'ኧ'
-  'አ' + "'" > 'አ' deadkey(1) c special case to supoort occurences of አእ አዕ from borrowed ge'ez words
 
 c Alef-A Vowels as Regular Syllables
   'እ' + any(kaIb-key) > 'ኡ'
@@ -293,10 +292,10 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
- any(sads) + "'" > index(sads,1) deadkey(1)
- any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1) 
- any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
- any(sals) + "'" > index(sals,1) deadkey(1)
+  any(sads) + "'" > index(sads,1) deadkey(1)
+  any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1) 
+  any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
+  any(sals) + "'" > index(sals,1) deadkey(1)
    
  
  
@@ -357,7 +356,7 @@ c Ethiopic Numerals
 
   '#' + '1' > '፩'
   '#' + any(ArabOnes) > index(ones,2)
-  '#' + '#' > '#' deadkey(2)
+  '#' + '#' > '#' 
 
 c special cases for multiples of one
  '፩'  + '0' > '፲'
@@ -385,6 +384,6 @@ c upto the order of 100 million
 
 c enhance this later, look for something that can copy a match over
   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
-c ---------------------End Input of Numbers-----------------------------------------------------
+c ---------------------End Input of Numbers-----------------------------------------------------                             
                                             
 c =====================End Functional Section===================================================
