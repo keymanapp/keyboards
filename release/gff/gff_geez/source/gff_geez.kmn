@@ -104,7 +104,6 @@ c =====================End Data Section=========================================
                   
 c =====================Begin Functional Section=================================================
 c 
-
 begin Unicode > use(first)
 
 c first matches a menu in the context or passes processing to main
@@ -213,10 +212,11 @@ c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
   any(sads) + "'" > index(sads,1) deadkey(1)
-  any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1) 
+  any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1)
   any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
-  any(zemedeKeysKaIbExtended) + "'" > index(zemedeKeysKaIbExtended,1) deadkey(1)  
-  any(sals) + "'" > index(sals,1) deadkey(1)  
+  any(zemedeKeysKaIbExtended) + "'" > index(zemedeKeysKaIbExtended,1) deadkey(1)
+  any(zemedeWi) + "'" > index(zemedeWi,1) deadkey(1)
+  any(sals) + "'" > index(sals,1) deadkey(1)
   
 
   + ':'     > '፡'
