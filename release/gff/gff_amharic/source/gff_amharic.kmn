@@ -16,7 +16,7 @@ c
 store(&NAME) 'አማርኛ (Amharic)'
 c $keymanonly:store(&MnemonicLayout) "1"
   store(&CapsAlwaysOff) "0"
-  store(&Copyright) '© 1997-2018 Ge' U+0027 'ez Frontier Foundation, SIL International'
+store(&COPYRIGHT) '© 1997-2019 Ge' U+0027 'ez Frontier Foundation, SIL International'
   store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&WINDOWSLANGUAGES) 'x045E'
 store(&LANGUAGE) 'x045E'
@@ -95,7 +95,7 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 store(&LAYOUTFILE) 'gff_amharic.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.7'
+store(&KEYBOARDVERSION) '1.8'
 store(&TARGETS) 'any windows macosx'
 store(&BITMAP) 'gff_amharic.ico'
 
@@ -295,9 +295,10 @@ c
   any(sads) + "'" > index(sads,1) deadkey(1)
   any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1) 
   any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
+  any(zemedeKeysKaIbExtended) + "'" > index(zemedeKeysKaIbExtended,1) deadkey(1)
+  any(zemedeWi) + "'" > index(zemedeWi,1) deadkey(1)  
   any(sals) + "'" > index(sals,1) deadkey(1)
    
- 
  
 c deadkey(1) + "'" > "'"
 c deadkey(1) + any(alefKeys) > index(alefEthio,2)
