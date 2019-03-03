@@ -17,9 +17,9 @@ c
   store(&EthnologueCode) 'tir'
 store(&LANGUAGE) 'x0473'
 store(&WINDOWSLANGUAGES) 'x0473'
-  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+store(&COPYRIGHT) '© 2009-2019 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Tigrinya language mnemonic input method that applies Ethiopian writing conventions.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
-  store(&KeyboardVersion) '1.1'
+store(&KEYBOARDVERSION) '1.2'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_T]'
 store(&BITMAP) 'gff_tigrinya.ico'
@@ -93,7 +93,6 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-
   begin Unicode > use(main)
   group(main) using keys
 
@@ -179,8 +178,12 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(sads)  + "'" > index(sads,1) deadkey(1)
-  deadkey(1) + "'" > "'"
+  any(sads) + "'" > index(sads,1) deadkey(1)
+  any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1)
+  any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
+  any(zemedeKeysKaIbExtended) + "'" > index(zemedeKeysKaIbExtended,1) deadkey(1)
+  any(zemedeWi) + "'" > index(zemedeWi,1) deadkey(1)             
+  any(sals) + "'" > index(sals,1) deadkey(1)
 
 
       + ':'     > '፡'
