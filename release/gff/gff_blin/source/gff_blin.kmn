@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '9.0'
-  store(&KeyboardVersion) '1.1'
+  store(&KEYBOARDVERSION) '1.2'
   store(&Name) 'ብሊን (Blin)'    
   store(&EthnologueCode) 'byn'
   store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
@@ -102,6 +102,10 @@ c
   + '_' > U+135F c gemination
   U+135F + '_' > '_'
 
+c The following two rules had to be added here (not later) to fix the deadkey issue
+  deadkey(1) + "'" > "'"
+  deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
+  
   + any(extraKeys) > index(extraSads,1)
   + any(keys)     > index(sads,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
@@ -178,7 +182,11 @@ c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
   any(sads) + "'" > index(sads,1) deadkey(1)
-  deadkey(1) + "'" > "'"
+  any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1)
+  any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
+  any(zemedeKeysKaIbExtended) + "'" > index(zemedeKeysKaIbExtended,1) deadkey(1)
+  any(zemedeWi) + "'" > index(zemedeWi,1) deadkey(1)             
+  any(sals) + "'" > index(sals,1) deadkey(1)
 
 
       + ':' > '፡'
