@@ -143,6 +143,22 @@ c store(hatK)  "?gjnwlh" "0123456789-" "m" "n=" "n>"
                 U+2071 U+1DA4 U+1DA6 U+1D52 U+A7F9 U+1DB1 U+1D53 \
                 U+1D58 U+1DB6 U+02B8 U+1D5A U+1DBA U+1DB7
 
+c Stores added for option key
+   store(EqSupK)         "?"    "b"    "d"    "g"    "h"    "j"    "L"    "n" \
+                         "N"    "f"    "r"    "s"    "v"    "z"    "t"    "a" \
+                         "o"    "e"    "I"    "i"    "O"    "U"    "u"
+   store(EqSuperscript)  U+02C0 U+1D5D U+1D9E U+02E0 U+1DA3 U+1DA1 U+1DAB U+1DAE  \
+                         U+1DB0 U+1DB2 U+02B4 U+1DB4 U+1DB9 U+1DBE U+1DBF U+1D45 \
+                         U+1D9B U+1D4A U+1DA4 U+1DA6 U+1DB1 U+1DB6 U+1D5A 
+                
+   store(LessSupK)         "?"    "c"    "g"    "h"    "y"    "j"    "l"    "n" \
+                           "R"    "s"    "z"    "e"    "E"    "o"    "u"
+   store(LessSuperscript)  U+02E4 U+1D9D U+1Da2 U+02B1 U+1DA3 U+1DA8 U+1DA9 U+1DAF \
+                           U+02B5 U+1DB3 U+1DBC U+1D4B U+A7F9 U+1D53 U+1DB7 
+
+   store(GreatSupK)        "m"    "n"    "R"    "w"    "z"    "a"    "A"    "e"    "u" 
+   store(GreatSuperscript)  U+1DAC U+1D51 U+02B6 U+1DAD U+1DBD U+1D44 U+1D46 U+1D9F U+1DBA 
+
 c "AETYZ" "adehilntuyz"  and un-superscript "1234567890"
 store(pipeD)  "A"    "E"    "T"    "Y"    "Z"    \
               "a"    "d"    "e"    "h"    "i"    "l"    "n" \
@@ -168,6 +184,7 @@ store(segmentU) U+02E9 U+02E8 U+02E7 U+02E6 U+02E5 U+A71C U+A71B U+2197 \
 store(fenceU) U+02E5 U+02E6 U+02E7 U+02E8 U+02E9
 store(leftstemU) U+A712 U+A713 U+A714 U+A715 U+A716
 
+c Removed because they are PUA
 c store(PitchContoursK) "1"    "2"    "3"    "4"    "5"    "6"    "7"    "8"    "9"
 c store(PitchContoursU) U+F1F1 U+F1F2 U+F1F3 U+F1F4 U+F1F5 U+F1F6 U+F1F7 U+F1F8 U+F1F9
 
@@ -327,9 +344,6 @@ c any(pipeD)  + "|"  > index(pipeU,1) c this was added for Chinese IPA
 
 store(option_key) ''
 
-c + [CTRL ALT "1"] > set(option_key='before') 
-c + [CTRL ALT "\"] > reset(option_key) 
-
 store(controls)  "=><^|"
 $keymanonly: store(controls-before) ["="][SHIFT ">"] [SHIFT "<"] [SHIFT '^'] [SHIFT "|"]
 
@@ -338,6 +352,23 @@ $keymanonly: if(option_key = 'before') ">" + any(greatD)  > index(greatU,3)
 $keymanonly: if(option_key = 'before') "<" + any(lessD)   > index(lessU,3)
 $keymanonly: if(option_key = 'before') "^" + any(hatD)    > index(hatU,3)
 $keymanonly: if(option_key = 'before') "|" + any(pipeD)   > index(pipeU,3) c this was added for Chinese IPA
+
+$keymanonly: if(option_key = 'before') "=" + "!"  > U+01C2 c added this rule since ! is already U+01C3 so above rules don't work
+$keymanonly: if(option_key = 'before') ">" + "!"  > U+01C1 c added this rule since ! is already U+01C3 so above rules don't work
+$keymanonly: if(option_key = 'before') "<" + "!"  > U+01C0 c added this rule since ! is already U+01C3 so above rules don't work
+$keymanonly: if(option_key = 'before') "=" + "+"  > U+002B c added this rule since + is already U+031F so above rules don't work
+$keymanonly: if(option_key = 'before') "=" + ">"  > U+2192 c added this rule since >= does not make as much sense
+$keymanonly: if(option_key = 'before') "=" + "<"  > U+034F c added this rule to retain existing sequence
+$keymanonly: if(option_key = 'before') "#" + "<"  > U+A71C c added this rule to retain existing sequence
+$keymanonly: if(option_key = 'before') "#" + ">"  > U+A71B c added this rule to retain existing sequence
+$keymanonly: if(option_key = 'before') U+01C3 + "^" > U+A71D c added this rule to retain existing sequence
+$keymanonly: if(option_key = 'before') U+A71B + ">" > U+2197 c added this rule to retain existing sequence
+$keymanonly: if(option_key = 'before') U+A71C + "<" > U+2198 c added this rule to retain existing sequence
+$keymanonly: if(option_key = 'before') "S"  + ">"  > U+03C3 c added this rule to retain existing sequence
+
+$keymanonly: if(option_key = 'before') U+207C + any(EqSupK)    > index(EqSuperscript,3)
+$keymanonly: if(option_key = 'before') "^<" + any(LessSupK)  > index(LessSuperscript,4)
+$keymanonly: if(option_key = 'before') "^>" + any(GreatSupK) > index(GreatSuperscript,4)
 
 if(option_key = '') any(equalD) + "="  > index(equalU,2)
 if(option_key = '') any(greatD) + ">"  > index(greatU,2)
