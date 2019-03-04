@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1078.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1202.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -16,7 +16,7 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Yidgha Keyboard</Name>
     <Copyright URL="">Forum for Language Initiatives</Copyright>
   </Info>
@@ -69,14 +69,23 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\build\yidgha.js</Name>
+      <Description>File yidgha.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Yidgha</Name>
       <ID>yidgha</ID>
-      <Version>1.0</Version>
+      <Version>1.0.2</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="ydg">ydg</Language>
+        <Language ID="ydg-Arab">Yidgha (Arabic)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

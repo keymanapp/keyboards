@@ -3,9 +3,9 @@ Keyboard Data
 
 * Name:           Yidgha Phonetic
 * Copyright:      (C) 2018 Forum for Language Initiatives
-* Version:        1.0
+* Version:        1.0.2
 * Keyman Version: 10.0
-* BCP-47 codes:   ydg
+* BCP-47 codes:   ydg-Arab
 
 Description
 -----------

@@ -1,0 +1,156 @@
+﻿c rohingya-urdu phonetic arabic script keyboard
+
+
+c version 0.6.2 (30 April 2013) by LE
+
+c version 0.5.2 (6 Nov 2012) by LP
+c changed syntax on version and name to follow old standard.
+c enforce not allowing vowel after tone mark
+c -tan wasn't working properly, any vowel followed by a different vowel turned into the -tan of the 2nd vowel disregarding 1st vowel
+
+c version 0.5.1 (29 Oct 2012) by LP
+c enforce allowing only one tone mark
+c enforce not allowing tone mark if no vowel
+c added u to dblK, dblB, dblU
+c enforce not allowing for more than one hamza
+c enforce not allowing for more than one vowel mark
+
+c version 0.5.0 (18 Oct 2012) by LP
+c added to Unicode 6.1 so changed following hacks to official codepoints
+c 0656 > 08e6    x3
+c 0657 > 08e5    x2
+c 0659 > 08E7    x2
+c 065C > 08E9    x2
+c 065D > 08E8    x3
+c 0670 > 08E4    x4-5
+c 0693 > 08AA    x1
+c 06A2 > 08AC    x1
+c 06C4 > 08AB    x1
+c 06E2 > 08EC    x1
+c 06E3 > 08EF    x2
+c 06EA > 08ED    x2
+c 06EB > 08EA    x1
+c 06EC > 08EB    x1
+c 06ED > 08EE
+
+store(&VERSION) '9.0'
+store(&NAME) 'Rohingya Arabic'
+store(&BITMAP) 'rohingya_arab.ico'
+store(&WINDOWSLANGUAGES) 'x0401'
+store(&COPYRIGHT) '© 2012-2018 SIL International'
+store(&MESSAGE) 'The Rohingya Arabic keyboard is distributed under the MIT software license.'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows macosx web'
+store(&VISUALKEYBOARD) 'rohingya_arab.kvks'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(Main)
+
+c store(&mnemoniclayout) "1"
+
+
+store(baseK)    '!' \
+                '1234567890-' \
+                'QWERTYUP' \
+                'qwrtyp' \
+                'ASDFGHJKL:"' \
+                'sdfghjkl;' \
+                'ZXCVBNM?' \
+                'zxcvbnm,./'
+c unused "I"
+
+store(baseU)    U+0021 \
+                U+06F1 U+06F2 U+06F3 U+06F4 U+06F5 U+06F6 U+06F7 U+06F8 U+06F9 U+06F0 U+0640 \
+                U+06A0 U+0651 U+06D2 U+0691 U+0679 U+0649 U+08AA U+067E \
+                U+0642 U+0648 U+0631 U+062A U+064A U+06E1 \
+                U+0627 U+0634 U+0688 U+0637 U+0639 U+062D U+062B U+062E U+0622 U+003A U+201D \
+                U+0633 U+062F U+0641 U+06AF U+0647 U+062C U+0643 U+0644 U+061B \
+                U+0630 U+0636 U+063A U+08AB U+0638 U+06BA U+0621 U+061F \
+                U+0632 U+0635 U+0686 U+08AC U+0628 U+0646 U+0645 U+060C U+06D4 U+002F
+
+store(hamzaK)   '<>'
+store(hamzaU)   U+0654 U+0655
+
+store(uvowelK)     "a"    "o"    "u"    "O"
+store(uvowelU)     U+064E U+08E4 U+064F U+08E5
+store(uvowelU-tan) U+064B U+08E7 U+064C U+08E8
+
+store(lvowelK)     "e"    "i"
+store(lvowelU)     U+08E6 U+0650
+store(lvowelU-tan) U+08E9 U+064D
+
+store(allvowelsK) outs(uvowelK) outs(lvowelK)
+store(allvowels)  outs(uvowelU) outs(lvowelU) outs(uvowelU-tan) outs(lvowelU-tan)
+
+store(uvowel)   U+064C U+064F U+064E U+08E4 U+08E5 U+08E7 U+08E8
+store(lvowel)   U+0650 U+08E6 U+08E9
+
+store(toneKus) '[]\'
+store(toneK)   '$%#'
+store(utoneU)   U+08EA U+08EB U+08EC
+store(ltoneU)   U+08ED U+08EE U+08EF
+store(alltoneU) outs(utoneU) outs(ltoneU)
+
+store(dK)       '1234567890' \
+                'aeioUr!A' 
+store(dU)       U+0661 U+0662 U+0663 U+0664 U+0665 U+0666 U+0667 U+0668 U+0669 U+0660 \
+                U+08E4 U+08E9 U+064D U+08E7 U+08E8 U+0698 U+08E4 U+FDF2
+
+group(Main) using keys
+
+  + any(baseK)   > index(baseU, 1)
+  + any(lvowelK) > index(lvowelU,1)
+  + any(uvowelK) > index(uvowelU,1)
+  + any(hamzaK)  > index(hamzaU,1)
+
+c double (same) vowel turns on -tan
+
+U+064E + "a" > U+064B
+U+08E4 + "o" > U+08E7
+U+064F + "u" > U+064C
+U+08E5 + "O" > U+08E8
+U+08E6 + "e" > U+08E9
+U+0650 + "i" > U+064D
+                                                                                      
+c other doubled chars
+
+U+06D4 + "." > U+002E c fullstop
+U+0640 + "-" > U+002D c hyphen
+U+002F + "/" > U+005C c backslash
+U+201D + '"' > U+201C c smart quotes
+
+c this doesn't work because it is based on last vowel, not necessarily the same vowel!
+c any(uvowelU) + any(uvowelK) > index(uvowelU-tan, 2)
+c any(lvowelU) + any(lvowelK) > index(lvowelU-tan, 2)
+  
+c context defines whether tone is above or below
+any(uvowelU) + any(toneK) > context index(utoneU, 2)
+any(uvowelU-tan) + any(toneK) > context index(utoneU, 2)
+any(lvowelU) + any(toneK) > context index(ltoneU, 2)
+any(lvowelU-tan) + any(toneK) > context index(ltoneU, 2)
+
+any(uvowelU) + any(toneKus) > context index(utoneU, 2)
+any(uvowelU-tan) + any(toneKus) > context index(utoneU, 2)
+any(lvowelU) + any(toneKus) > context index(ltoneU, 2)
+any(lvowelU-tan) + any(toneKus) > context index(ltoneU, 2)
+
+c illegal to have tone mark with no vowel symbol
+  + any(toneK)   > beep
+  + any(toneKus)   > beep
+
+ + 'I' > deadkey(1)
+deadkey(1) + any(dK) > index(dU, 2)
+
+
+c illegal to have more than one hamza on a letter
+any(hamzaU) + any(hamzaK) > context beep
+
+c illegal to have more than one tone on a letter
+any(alltoneU) + any(toneK) > context beep
+
+c illegal to have more than one vowel on a letter
+any(allvowels) + any(allvowelsK) >   context beep             
+
+c illegal to have vowel after tone mark
+any(alltoneU) + any(allvowelsK) > context beep
+

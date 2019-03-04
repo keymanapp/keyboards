@@ -1,0 +1,341 @@
+﻿c ----------------------------------------------------------------------------
+c Hebrew Unicode keyboard for use only with any Hebrew Unicode
+c Windows fonts (including Ezra SIL) and Keyman 6    9/22/03
+c
+c ----------------------------------------------------------------------------
+c
+
+c SILHEBD.KMN - 1.0 - Paul A. O'Rear - 20 June 1996
+c portions from EZRA10.KMN - Steve Daley - 28 February 1996
+c portions modified for SILKEY - Joan Wardell - 25 June 1996
+c SILHEB6A.KMN - Numerous additions, corrections and reorganisation
+c by Peter Constable - Aug 22 1996
+c portions re-modified for SILKEY - Joan Wardell - 6 Dec 1996
+c more portions re-modified - Joan Wardell 2-10-97 to 2/13/97
+c modified for SE.  This keyboard is derived from the DE keyboard
+c and may contain stores from DE.  However, it functions as SE only - Joan Wardell 3/97
+c This keyboard modified for Unicode - Joan Wardell 12/19/2001, 8/7/02, 9/30/02, 7/25/03, 9/22/03
+c Summary of changes from SIL Hebrew SE:
+c No longer available as codepoints:
+c d43 high_asterisk
+c d60 setuma
+c d62 petuha
+c d111 kamets_o [now defined at 05C7 but not recommended]
+c d180 class2_accent
+c d244 holem_waw
+c d248 silent_shewa
+c d251 shureq
+c
+c Using Roman equivalents:
+c d36 number U+0307
+c d37 number2 U+0308
+c Changed/Moved:
+c d79 holem also on 'o' now
+c d99 ayin also on 'c' now
+c all finals now on all caps only: KMNPC
+c d72, d87 sin/shin are now shin + dot
+c
+c Added:
+c U+20AA New Sheqel
+c U+20AC Euro
+c U+0024 Dollar
+c U+00A0 no-break space
+c PUA:
+c PUA F300 d78 Hebrew Reversed Nun
+c PUA F301 d170 Hebrew Mark Lower Dot
+c PUA F302 Hebrew Accent Right Meteg (convert d149 to this when it occurs before a vowel)
+c PUA F303 Hebrew Accent Left Meteg (for use to left of hatafs only)
+c 9/22/03
+c All PUA characters above have been replaced by the following, according to
+c an agreement with other font designers and because PUA characters are not really
+c usable in commercial software at this time.
+c d78 Hebrew reversed nun with dot - use Nun Hafukha(05C6)CGJ 0307
+c d170 Hebrew Mark Lower Dot - now defined as 05C5
+c Right Meteg - use 05BD CGJ before the low vowel or other low marks
+c Left Meteg with Hataf - use Hataf ZWNJ 05BD
+c
+c Note that U+05BD Hebrew Point Meteg is coded in the Ezra SIL fonts
+c to always fall to the left of the vowel, except for with hatafs, it
+c falls medially. These are the most common positions of meteg in BHS.
+c 2/23/07
+c Modified by Lorna Priest per Christopher Samuel
+c Modified by Lorna Priest to add "patch" store and rule to work in FieldWorks
+
+store(&version) "9.0"
+store(&NAME) 'Hebrew (SIL)'
+store(&BITMAP) 'sil_hebrew.ico'
+c HOTKEY "^+M"
+store(&TARGETS) 'windows macosx linux'
+store(&LANGUAGE) 'x040D'
+store(&WINDOWSLANGUAGES) 'x040D'
+store(&COPYRIGHT) 'Copyright © 2003-2018 SIL International'
+store( &Message ) "http://scripts.sil.org/"
+store(&VISUALKEYBOARD) 'sil_hebrew.kvks'
+store(&ETHNOLOGUECODE) 'hbo'
+store(&KEYBOARDVERSION) '1.7.1'
+begin UNICODE > use(Main)
+
+
+c ------------------------ STORES ---------------------
+c Define sets of characters for matching and filtering:
+
+c ----- NUMBERS ----- jw  12/06/01  Apparently not needed for any ASCII, at least in Word.
+store(nums) "0123456789"
+store(unums) U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039
+
+c ----- CONSONANTS -----
+c Basic Consonants              jw 12/10/01
+store(cons)	">bgdhwzyKklMmNns<PpCcqrStxv"	       	c 12/18/01    added plain sin/shin 7/9/02 removed duplicate 't'-05D8 teth
+c added heth and teth on x,v 8/6/02
+store(consOut) U+05D0 U+05D1 U+05D2 U+05D3 U+05D4 U+05D5 U+05D6 \
+               U+05D9 U+05DA U+05DB U+05DC U+05DD U+05DE U+05DF U+05E0 U+05E1 \
+               U+05E2 U+05E3 U+05E4 U+05E5 U+05E6 U+05E7 U+05E8 U+05E9 U+05EA \
+               U+05D7 U+05D8
+
+c ----- VOWELS -----
+c Basic Vowels                             12/18/01
+store(vow1) "aeiouAEO"                      c 12/18/01   8/6/02
+store(vow2) U+05B7 U+05B6 U+05B4 U+05B9 U+05BB U+05B8 U+05B5 U+05B9 c 12/18/01 8/6/02
+
+c lap:2007-03-02, vowels without holem 05B9
+store(vow3) "aeiuAE"
+store(vow4) U+05B7 U+05B6 U+05B4 U+05BB U+05B8 U+05B5
+
+c Short vowels and long vowels  modified 3/13/97 jw
+c The following stores are used in a rule for entering certain vowels using
+c particular combinations of keystrokes: a e or o followed by =
+c store(aeo)	d97 d101 d111
+store(aeo)	    U+05B7 U+05B6 U+05B9     c 12/18/01  05B9 'o' goes to itself now, since no kamets_o d111 > 05C7 is not recommended for texts based on Codex L
+store(aeoEqOut) U+05B8 U+05B5 U+05B9     c 12/06/01
+
+c Reduced Vowels
+c particular combinations of keystrokes: a e or o followed by ;
+store(vowrOut)	U+05B2 	U+05B1	U+05B3  c 12/06/01
+
+c Cantillation marks
+store(cant)        U+0591 U+0592 U+0593 U+0594 U+0595 U+0596 U+0597 \
+                   U+0598 U+0599 U+059A U+059B U+059C U+059D U+059E U+059F \
+                   U+05A0 U+05A1 U+05A2 U+05A3 U+05A4 U+05A5 U+05A6 U+05A7 \
+                   U+05A8 U+05A9 U+05AA U+05AB U+05AC U+05AD U+05AE \
+                   U+05BD U+05C4 U+05C5
+
+c ----- WORD-ENDING CHARS -----
+
+c Changed to space only, 4/30/97  Otherwise it is impossible to put quotes
+c around any of the listed characters.
+c store(wdendK)   ' !(),-.0123456789?[\{|'
+store(space)   ', '
+store(spaceout) U+002C U+0020
+
+c Illegal keystrokes  2/10/97 jw  including opt and opt-shift keystrokes  Joan added ~ 12/11/01
+store(illegalkey) "WRTUIDFGHJLZXVB¤ÒÔÏ·¨ ´Œ¶Ä©ÆûÂ½ÅÃºµÎã«äÿç¬ö¯¸êëìýïðñüþ‚×õõõÊ–ª¿å" c removed­ added ª, ¿  4/7/97 jw
+c removed xvfjAEO 8/6/02
+c added Opt-nn(150), but Opt-n still possible on Mac. Can't help.3/13/97 jw
+c removed å ZWL 226 from illegal list.  5/31/97  added back in 12/18/01
+
+c ------------------------------------------ group Main ----------------------------------------
+group(Main) using keys
+
+c ----- Trap invalid keystrokes -----
+c added by JW, modified 2/10/97
++ any(illegalkey) > beep
+
+c ----- Combination keystrokes -----
+c d42  + d43		> d43		c raised asterisk 2/10/97 jw   has no Unicode value 12/18/01
+
+c variants on some consonants and vowels
+"." + "h"		> U+05D7		    c Heth         12/06/01
+"." + "t"		> U+05D8		    c Teth         12/06/01
+"." + "s"		> U+05E6		    c Tsadhe       12/06/01
+U+05E1 + "+"	> U+05E9 U+05C2     c Sin          7/9/02
+U+05E1 + "^"	> U+05E9 U+05C1     c shin         12/11/01
++ "f"           > U+05E9 U+05C2     c Sin alt      8/6/02
++ "j"           > U+05E9 U+05C1     c shin alt     8/6/02
+
+U+05B9 + "w"        > U+05D5 context c lap:2/26/07 (3a) "Ow" and "ow" recommended distinguishing by code point
+U+05D5 U+05B9 + "=" > U+05B9 U+05D5 U+05BC c lap:3/2/07 (3a) "Ow=" and "ow=", does not occur
+U+05D5 U+05B9 + any(vow1) > U+05B9 U+05D5 index(vow2,3) c lap:3/5/07 (3a) Ow+vowel or ow+vowel
+
+U+05D5 + "o"        > U+05D5 U+05BA  c lap:2/26/07 (3b) "wo" recommended distinguishing by code point
+U+05D5 + "O"        > U+05D5 U+05BA  c lap:2/26/07 (3b) "wO" recommended distinguishing by code point
+U+05D5 U+05BC + "O" > context U+05BA  c lap:3/8/07 (3b) "w=O" recommended distinguishing by code point
+U+05D5 U+05BC + "o" > context U+05BA  c lap:3/8/07 (3b) "w=o" recommended distinguishing by code point
+U+05D5 U+05BA + "w" > U+05D5 U+05D5 U+05B9 c lap:3/9/07 "wow" and "wOw", occurs
+U+05D5 U+05B9 + "w" > U+05D5 U+05B9 U+05D5 c lap:3/9/07 "oww" or "Oww", does not occur
+U+05D5 U+05BC U+05BA + "w" > U+05D5 U+05BC U+05D5 U+05B9 c lap:3/14/07 "w=ow" "w=Ow"
+U+05B9 any(cant)     + "w" > index(cant,2) U+05D5 U+05B9 c lap:3/14/07 "o" cantillation "w"
+
+c any(qametsh) + "^"	> d244		c holem waw   added by jw 2/13/97   12/10/01
+c any(qibbuts) + "^"	> d251		c shureq - chgd by pc
+
+any(aeo) + '='	> index(aeoEqOut,1) c patah, seghol, o -> qamets, tsere, holem    12/11/01
+any(aeo) + ';'	> index(vowrOut,1)  c patah, seghol, o -> hpatah, hseghol, hqamets
+ + [ALT SHIFT K_A]	> U+05B2        c 8/7/02  c hatafs also to Alt keys 8/7/02
+ + [ALT SHIFT K_E]	> U+05B1        c 8/7/02  c hatafs to Alt-shift keys 9/22/03
+ + [ALT SHIFT K_O]	> U+05B3        c 8/7/02
+
+c The following lines trap '+' and '^' when not in one of the /combinations given above.
+c In Keyman, this trap works while still permitting the desired combinations /because
+c the longer rules apply first. - added by pc
++ '+'			> nul     c 12/11/01
++ '^'			> nul
+
+c ----- Do basic keyboard remapping -----
+
+c Match vowel keystroke with code for basic vowel
+c Note: The rule using ';' will be superceded in
+c Keyman by a rule found above under Combination Keystrokes because that
+c rule has a longer context: any(aeo) + ';'.
++ ";"		> U+05B0 	c shewa	2/11/97   12/10/01
+c silent shewa	2/11/97 12/10/01    no Unicode value
+
+c + any(nums) > index(unums,1)    c 12/10/01        Apparently not needed, at least in Word
+c + any(space) > index(spaceout,1)    c 12/11/01      "                      "
+
+c This rule converts some vowels to the Unicode Encoding 12/11/01
+          + any(vow1) > index(vow2,1)                      c 12/10/01
+any(vow4) + any(vow3) > index(vow4,1) U+034F index(vow4,2)   c lap: 3/2/07  vowel CGJ vowel  (2)
+c any(vow4) U+034F U+05C7 + "=" > index(vow4,1) U+05B9         c lap: 3/5/07 remove CGJ for o=
+c U+05BD    + any(vow1) > U+05BD U+034F index(vow2,2)        c lap: 2/26/07  meteg CGJ vowel
+c U+05BD any(aeo) + ';' > U+05BD U+034F index(vowrOut,2)     c lap: 2/26/07  meteg CGJ hataf
+
+c This rule converts most consonants to Unicode Encoding 12/11/01
++ any(cons)	> index(consOut,1)   c 12/10/01  jw
+
+c accent, dagesh, parentheses	2/10/97
+c + "~"		> d180	c accent             no Unicode value available 12/11/01
+
+c Added 2/10/97 to correct placement of open & close Re-added 8/1/02 to match
+c physical shape on keyboard. Otherwise, are backwards.
+ + "("		> U+0029  c d41	close paren	2/10/97
+ + ")"		> U+0028  c d40	open paren	2/10/97
+ + "{"		> U+007D  c d125 close curly bracket 2/10/97
+ + "}"		> U+007B  c d123 open curly bracket 2/10/97
+ + "["		> U+005D  c d93	close bracket 2/10/97
+ + "]"		> U+005B  c d91	open bracket 2/10/97
+
+c NOTE: the following rule will be superceded in Keyman by a rule found above
+c under Combination Keystrokes because that rule has a longer context, Ex:
+c any(shvow) + '='.
++ "="		> U+05BC 	   c dagesh                  jw    12/10/01
+
+c punctuation and other chars
+
+    + "|"                   > U+05C0   c lap 3/8/2007
+c The next 5 rules handle characters that can delimit the end of a word.
+    + "-"                   > U+05BE   c maqqaf            8/6/02
+	+ "_"		           	> U+2013   c en-dash          12/10/01
+    + [ALT K_HYPHEN]		> U+2014   c em-dash          12/11/01
+    + [ALT K_COLON]     	> U+003B   c semicolon        8/6/02 from ALT K_COLON (doesn't work in XP)
+    + [ALT SHIFT K_COLON]   > U+05C3   c colon            12/10/01  8/7/02 moved here 9/22/03
+
+c Changed rules related to smart qutes, replacing with ASCII straightquotes.
+c Correct handling of quotation marks left to applicaton rather than input. AC  4/30/18
+    + [K_QUOTE] > U+0027
+    + [K_QUOTE] > U+0022
+c + [K_QUOTE]		       >  U+2019 	c opening (right) single quote 2/11/97 12/12/01
+c + [SHIFT K_QUOTE]	>  U+201D 	c opening (right) double quote 2/11/97 12/12/01
+c Note: Closing quotation marks are attained by typing a quotation mark
+c followed by typing a word-ending character. This is handled in group
+c "SmartQuotes" which is called from rules that enter any of various
+c word-characters (e.g. em-dash).
+c 12/11/01
++ [ALT SHIFT K_0]	> U+05AF    c circellus   12/18/01
++ [ALT K_COMMA] 	> d187		c closechevron 187 ok  2/10/97
++ [ALT K_PERIOD]	> d171		c r chevron ch from 187 to 171 12/96 jw ok 2/10/97
++ [ALT K_SLASH]		> U+05F3			    c abbrv1   12/10/01
++ [ALT SHIFT K_SLASH]	> U+05F4			c abbrv2   12/10/01
++ [SHIFT K_COLON]	> U+05F4		    	c abbrv2    9/22/03  added to match Tiro kbd.
++ [ALT SHIFT K_M]   	   > U+200D	        c zero width joiner 5/28/97   12/10/01
++ [ALT K_M]          	   > U+200C	        c zero width non-joiner     7/25/03 jw
++ [ALT SHIFT K_P]   	   > U+034F	        c CGJ-Combining Grap.Joiner 7/25/03 jw  9/22/03
++ [ALT K_SPACE] 		> U+2009			c thinspace       12/10/01
++ [ALT SHIFT K_SPACE]  > U+00A0            c NBSP nobreak space  7/16/02
+c + [ALT K_P]		>  d62			c paragraph mark     No Unicode available 12/19/01
+c + [ALT K_S]		>  d60			c section mark             "             "
+c + [ALT SHIFT K_N]	>  U+F300		c inverted nun           7/16/02
++ [ALT SHIFT K_HYPHEN]	> U+05BF    c rafe   12/10/01
++ [ALT SHIFT K_COMMA]	> U+0307    c number 100's  2/10/97 7/16/02 9/22/03
+c U+05E0 + [ALT SHIFT K_COMMA]        > U+05C6 U+0307    c lap: 2/26/07 (1a)
++ [ALT K_N]   	   > U+05C6         c lap: 3/5/07
++ [ALT K_A]   	   > U+05C7         c lap: 3/8/07
++ [ALT K_O]   	   > U+05C7         c lap: 3/8/07
+c U+05E0 U+034F + [ALT SHIFT K_COMMA]	> U+05E0 U+0307    c lap: 3/2/07 REMOVE CGJ***
+c U+05C6 U+034F + [ALT SHIFT K_COMMA]	> U+05C6 U+0307    c lap: 3/2/07 REMOVE CGJ***
++ [ALT SHIFT K_PERIOD]	> U+0308    c number 1000's  2/10/97 7/16/02
++ [ALT K_QUOTE] 		> U+05C5    c lap: changed 0323 to 05C5 (1b), was U+F301 7/26/03   punctum2 lower    2/10/97 PUA 7/16/02  12/10/01
++ [ALT SHIFT K_QUOTE] 	> U+05C4    c punctum     9/22/03
++ [ALT SHIFT K_EQUAL]	> U+25CC    c base char   12/10/01
+
+
+c ----- Cantillation Marks -----
+
+c cantillation marks                                              12/10/01
++ [ALT SHIFT K_1]		>  U+0597 	c rebia
++ [SHIFT K_Q]	      	>  U+0597 	c rebia  added to above to match Tiro v. keyboard 9/22/03
++ [ALT SHIFT K_LBRKT]	>  U+0594 	c zakef
++ [ALT K_RBRKT]     	>  U+059A	c yetiv    7/16/02 with ZWNJ 7/25/03
+c + [ALT K_LBRKT]     	>  F303	    c  PUA meteg left (with hatafs)   7/16/02 7/25/03
++ [ALT SHIFT K_RBRKT]	>  U+0592	c segolta
++ [ALT SHIFT K_5]		>  U+05A9 	c telisha qetanna
++ [ALT SHIFT K_4]		>  U+05A0 	c telisha gedola
++ [ALT SHIFT K_6]   		>  U+059F 	c pazer gadol
++ [SHIFT K_Y]   		>  U+059F 	c added to above to match Tiro v. keyboard 9/22/03
++ [ALT SHIFT K_BKSLASH]	>  U+05AB 	c ole weyored
++ [ALT SHIFT K_7]   	>  U+05A1 	c pazer
++ [ALT SHIFT K_8]		>  U+0595 	c zakef gadol
+
++ [SHIFT K_3]		>  U+05A8   c pashta
++ [SHIFT K_4]		>  U+059C   c geresh
++ [SHIFT K_5]		>  U+059E   c gershayim
++ [SHIFT K_7]		>  U+05AC   c illuj
++ [SHIFT K_8]		>  U+059D   c geresh muqdam 7/16/02
++ [SHIFT K_2]		>  U+0598   c zarqa
++ [ALT SHIFT K_9]	>  U+0593   c salseleth
++ [ALT SHIFT K_3]	>  U+0599   c left pashta
+c + [ALT K_2]	    	>  U+F302	c PUA right meteg   7/16/02 removed 7/25/03 use meteg on right
++ [ALT SHIFT K_2]	>  U+05AE   c left zarqa
+
++ [ALT K_1]			> U+05BD    c metheg
++ [ALT K_BKSLASH]	> U+05A4    c yetib
++ [ALT K_8]			> U+059B    c tebir
++ [ALT K_0]			> U+05AA    c galgal
++ [ALT K_2]			> U+05A2    c atnah hafukh lap:added (1c)
++ [ALT K_3]			> U+0596    c tipha
++ [ALT K_4]			> U+05A5    c mereka
++ [ALT K_5]			> U+05A6    c mereka_k
++ [ALT K_6]			> U+05AD    c dehi (right) 7/16/02
++ [ALT K_7]			> U+05A3    c munah
++ [ALT K_9]			> U+05A7    c darga
++ [ALT K_EQUAL]		> U+0591    c athnah
++ [SHIFT K_BKQUOTE]	> U+20AA    c New Sheqel    12/19/01
++ [K_BKQUOTE]       > U+20AC    c Euro          12/18/01
++ [ALT K_BKQUOTE]   > U+0024    c Dollar        12/19/01
+
+
+c ----- Word-ending Chars -----
+c Changed rules related to smart qutes, replacing with ASCII straightquotes.
+c Correct handling of quotation marks left to applicaton rather than input. AC  4/30/18
+c other chars that designate a word ending
+c + any(space)		>  index(space,1) use(SmartQuotes)	c chgd to space from wdendK jw 4/30/97. Reordered RHS, AC 4/23/18
+c + [K_TAB]		> [K_TAB] use(SmartQuotes) 	c added by pc. Reordered RHS, AC 4/23/18
+c + [K_ENTER]		> [K_ENTER] use(SmartQuotes) 	c added by pc. Reordered RHS, AC 4/23/18
+
+c ------------------------------------------- group SmartQuotes ----------------------------------
+group(SmartQuotes)
+c added by pc
+
+c Smart quotation marks are implemented by having the default character
+c that is entered when a quotation mark is typed to be the opening
+c quotation mark, then to test on the next keystroke for a word-ending
+c character. Accordingly, every rule in main that outputs a word-ending
+c character makes a call to "SmartQuotes". Note: processing jumps here
+c before the word-ending character is output.
+
+c One side-effect of this implementation is that when the last character
+c that is required is a closing quotation mark, it must be followed by
+c a space or carriage-return. This approach to handling smart
+c quotation marks was deemed to be the least obtrusive solution.
+
+ U+2019		> U+2018	c closing (left) single quote     12/12/01
+ U+201D		> U+201C	c closing (left) double quote     12/12/01

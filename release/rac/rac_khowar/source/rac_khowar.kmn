@@ -5,16 +5,16 @@ c Original Creation Date:     25-APR-2017
 c BCP-47 codes:   khw-Arab
 store(&VERSION) '9.0'
 store(&NAME) 'Rachitrali-Khowar'
-store(&COPYRIGHT) '© 2016-2017 Rehmat Aziz Khan Chitrali'
+store(&COPYRIGHT) '© 2016-2018 Rehmat Aziz Khan Chitrali'
 store(&MESSAGE) 'The Rachitrali-Khowar Unicode keyboard is distributed under The MIT License (MIT).'
 store(&ETHNOLOGUECODE) 'khw'
 store(&LANGUAGE) 'x0401'
 store(&WINDOWSLANGUAGES) 'x0401'
 store(&BITMAP) 'rac_khowar.ico'
 c store(&TARGETS) 'windows macosx linux'
-store(&VISUALKEYBOARD) 'rac_khowar.kvk'
-store(&KEYBOARDVERSION) '0.6'
-store(&TARGETS) 'windows web iphone ipad androidphone androidtablet mobile tablet'
+store(&VISUALKEYBOARD) 'rac_khowar.kvks'
+store(&KEYBOARDVERSION) '0.7'
+store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'rac_khowar-layout.js'
 begin Unicode > use(main)
@@ -104,14 +104,28 @@ group(main) using keys
 + [K_BKQUOTE] > 'ݯ'
 + [SHIFT K_EQUAL] > '+'
 + [SHIFT K_HYPHEN] > 'ـ'
-+ [SHIFT K_0] > '('
-+ [SHIFT K_9] > ')'
-+ [SHIFT K_8] > '*'
-+ [SHIFT K_7] > '&'
-+ [SHIFT K_6] > '^'
-+ [SHIFT K_5] > '%'
-+ [SHIFT K_4] > '$'
-+ [SHIFT K_3] > '#'
-+ [SHIFT K_2] > '@'
 + [SHIFT K_BKQUOTE] > 'ڵ'
-+ [SHIFT K_1] > '!'
+
++ [SHIFT K_0] > U+0030
++ [SHIFT K_9] > U+0039
++ [SHIFT K_8] > U+0038
++ [SHIFT K_7] > U+0037
++ [SHIFT K_6] > U+0036
++ [SHIFT K_5] > U+0035
++ [SHIFT K_4] > U+0034
++ [SHIFT K_3] > U+0033
++ [SHIFT K_2] > U+0032
++ [SHIFT K_1] > U+0031  
+
+c Ctrl+Alt
++ [CTRL ALT K_0] > U+0029
++ [CTRL ALT K_9] > U+0028
++ [CTRL ALT K_8] > U+002A
++ [CTRL ALT K_7] > U+0026
++ [CTRL ALT K_6] > U+005E
++ [CTRL ALT K_5] > U+0025
++ [CTRL ALT K_4] > U+0024
++ [CTRL ALT K_3] > U+0023
++ [CTRL ALT K_2] > U+0040
++ [CTRL ALT K_1] > U+0021
+

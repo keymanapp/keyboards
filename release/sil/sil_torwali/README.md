@@ -1,9 +1,9 @@
-Torwali Keyboard 
+Torwali (SIL) Keyboard 
 =====================
 
-Copyright (C) 2016-2018 SIL International
+Copyright (C) 2016-2019 SIL International
 
-Version 0.8
+Version 1.0
 
 __DESCRIPTION__
 

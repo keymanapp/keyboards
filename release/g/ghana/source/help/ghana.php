@@ -51,3 +51,4 @@ and selecting the On Screen Keyboard menu item.</p>
 <p>Version 1.0, released 1 April 2017</p>
 <p>Version 1.1, released 4 April 2017</p>
 <p>Version 1.2, released 29 June 2017 - fixes label of -f- to -j- on J key on the phone keyboard</p>
+<p>Version 1.2.1, released 18 June 2018</p>

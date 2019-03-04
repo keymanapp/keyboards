@@ -23,10 +23,12 @@ selecting the On Screen Keyboard menu item. </p>
   <img width="100%" src="RAltShift.jpg">
 
 <h2>Release History</h2>
-<p>Version 1.0, released 10 March 2018</p>
+<p>Version 1.0.2, released 27 June 2018; Include the correct touch keyboard in the keyboard package</p>
+<p>Version 1.0.1, released 21 May 2018; Change language tag to jra-Latn, adjust spacing on OSK
+<p>Version 1.0, released 10 March 2018; Initial creation</p>
 
 <h2>Links</h2>
 <ul>
 <li>Home Page: <a href='https://keyman.com/'>https://keyman.com/</a></li>
-<li><a href='http://keymankeyboards.com/iso:jra'>Other keyboards for these languages</a></li>
+<li><a href='https://keyman.com/keyboards?q=jra'>Other keyboards for these languages</a></li>
 </ul>

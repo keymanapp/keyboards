@@ -1,0 +1,154 @@
+﻿c Clavier du Tchad
+c pour usage avec les polices Unicode
+c 
+c Jeff Heath
+c August 2017
+                     
+store(&VERSION) '9.0'
+store(&NAME) 'Tchad'
+store(&BITMAP) 'sil_tchad.ico'
+$keymanonly: store(&mnemoniclayout) "1"
+store(&copyright) '© SIL International'
+store(&hotkey) '[CTRL ALT K_U]'  
+store(&TARGETS) 'any'
+store(&ETHNOLOGUECODE) 'amj bbz shu arb sjg bmi bva bjv bxv bes bid btf bvo glc bvf bub bdm bso cds dgk djc dau daa dai dzg dsi fni fgr fra fub fui fuv fvr gab gdk gid gqr goy glu glj gvl hau hed hor jyy jeu ksp kwg kwv kvf ckq kbl knc kzr kth klf kyq ker kie kia kqp kou vkj kxj xuo kvi gdm kot lap lln ndy mde muj xmj mxf mcs mge mgb mpg mvu mls mcn msv mes mdg mcw mpk myb zim mmy mlj mou bdo mpi kqx mub moz mvh mua mse mug mje mne nnc ndm nmc sba nnn nie noy nzy pnz lme rou saa sag mwm swy sys sok sor sbj tma tax tuq tng trj tmc tug tui ubi zag zna zrn'
+store(&LAYOUTFILE) 'sil_tchad.keyman-touch-layout'
+store(&KEYBOARDVERSION) '3.3.2'
+store(&VISUALKEYBOARD) 'sil_tchad.kvks'
+
+begin Unicode > use(Main)
+
+store(aeiou)     'aeiouAEIOU'
+store(aeiou-gra) 'àèìòùÀÈÌÒÙ'
+store(aeiou-acu) 'áéíóúÁÉÍÓÚ'
+store(aeiou-mcr) 'āēīōūĀĒĪŌŪ'
+store(aeiou-cir) 'âêîôûÂÊÎÔÛ'
+store(aeiou-wdg) 'ǎěǐǒǔǍĚǏǑǓ'
+store(aeiou-uml) 'äëïöüÄËÏÖÜ'
+store(aeiou-tld) 'ãẽĩõũÃẼĨÕŨ'
+
+c Special characters (produced with ; or & key)
+store(speckey) 'aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVxXyYzZ?*][=^#|~_`@%$<>:{}()' "'" '"' " "
+store(spec)    'æÆɓƁçÇɗƊɛƐəƏɣƎɦ' U+A7AA 'ɪƗʄɟɨƗɬɮɲƝŋŊɔƆœŒʁɖɾɽʃßʈθʊøⱱʋχħƴƳʒðʔº][=^#|~_`@%$‹›ː“”‘’' U+A78C U+0027 U+00A0
+
+c Combining diacritics
+store(diakey) '][=^|#~_`@%$'
+store(dia) U+0300 U+0301 U+0304 U+0302 U+030C U+0308 U+0303 U+0330 U+0327 U+0325 U+0323 U+0329      
+
+group(Main) using keys
+
+c Vowel diacritic sequences that produce single (composed) characters
+any(aeiou) + ']' > index(aeiou-gra,1)
+any(aeiou) + '[' > index(aeiou-acu,1)
+any(aeiou) + '=' > index(aeiou-mcr,1)
+any(aeiou) + '^' > index(aeiou-cir,1)
+any(aeiou) + '|' > index(aeiou-wdg,1)
+any(aeiou) + '#' > index(aeiou-uml,1)
+any(aeiou) + '~' > index(aeiou-tld,1)
+c Don’t produce single (composed) characters for double-grave or double-acute
+c (since we can’t produce them consistently across all 5 main vowels)
+c 'À' + ']' > U+0200
+c 'à' + ']' > U+0201
+c 'È' + ']' > U+0204
+c 'è' + ']' > U+0205
+c 'Ì' + ']' > U+0208
+c 'ì' + ']' > U+0209
+c 'Ò' + ']' > U+020C
+c 'ò' + ']' > U+020D
+c 'Ù' + ']' > U+0214
+c 'ù' + ']' > U+0215
+c 'Ó' + '[' > U+0150
+c 'ó' + '[' > U+0151
+c 'Ú' + '[' > U+0170
+c 'ú' + '[' > U+0171
+c There are more single (unit) characters that could be defined
+c but it is questionable to say that fully composed is always better.
+c Many people will consider diacritics as a separate character, so
+c it may be helpful if you can delete it independent of the base
+c character.
+
+c Additional composed characters (non-vowels)
+'c' + '`' > 'ç'
+'C' + '`' > 'Ç'
+'n' + '~' > 'ñ'
+'N' + '~' > 'Ñ'
+
+c Handle multiple tones (double-grave and acute, gliding tones)
+c Some vowel accents are already combined, so we need to separate them
+any(aeiou-gra) + ']' > index(aeiou,1) U+030F  c  low-low
+U+0300 + ']' > U+030F                         c  low-low
+any(aeiou-acu) + '[' > index(aeiou,1) U+030B  c  high-high
+U+0301 + '[' > U+030B                         c  high-high
+any(aeiou-gra) + '=' > index(aeiou,1) U+1DC5  c  low-mid
+U+0300 + '=' > U+1DC5                         c  low-mid
+any(aeiou-acu) + '=' > index(aeiou,1) U+1DC7  c  high-mid
+U+0301 + '=' > U+1DC7                         c  high-mid
+any(aeiou-mcr) + ']' > index(aeiou,1) U+1DC6  c  mid-low
+U+0304 + ']' > U+1DC6                         c  mid-low
+any(aeiou-mcr) + '[' > index(aeiou,1) U+1DC4  c  mid-high
+U+0304 + '[' > U+1DC4                         c  mid-high
+any(aeiou-gra) + '[' > index(aeiou-wdg,1)     c  low-high -> wedge
+U+0300 + '[' > U+030C                         c  low-high -> wedge
+any(aeiou-acu) + ']' > index(aeiou-cir,1)     c  high-low -> circumflex
+U+0301 + ']' > U+0302                         c  high-low -> circumflex
+
+
+c Produce combining diacritics
++ any(diakey) > index(dia,1)
+
+c Special characters (produced with ; or & key)
+';' + any(speckey) > index(spec,2)
+'&' + any(speckey) > index(spec,2)  
+
+c Stand-alone special character key (doesn't affect following char)
+';' + ';' > ';' dk(1)
+';' + '&' > '&' dk(1)
+'&' + ';' > ';' dk(1)
+'&' + '&' > '&' dk(1)
+
+c Other key combinations (but not with special character key)
++ "'" > '’'         c apostrophe gives  U+2019 RIGHT_SINGLE_QUOTATION_MARK
+'’' + "'" > U+02BC  c apostrophe again gives  MODIFIER_LETTER_APOSTROPHE
+'<' + '<' > '«'
+'>' + '>' > '»'
+'-' + '-' > '–'         c  n dash
+'–' + '-' > '—'        c  m dash
+'#' + '#' > U+031A    c unreleased stop, typed ’;##'
+'@' + '@' > '©'       c COPYRIGHT_SIGN, can be typed ';@@'
+'©' + '@' > U+2117   c SOUND_RECORDING_COPYRIGHT, can be typed ';@@@@ 
+U+2117 + '@' > '®'   c REGISTERED_SIGN, can be typed ';@@@@' 
+'$' + '$' > '€'        c can be typed ';$$'
+'€' + '$' > '£'        c can be typed ';$$$'
+U+02D0 + ':' > U+02D1  c turn full length to half length by typing colon again
+U+0294 + '?' > U+0295  c turn glottal into PHARYNGEAL_VOICED_FRICATIVE by typing '?' again
+
+c Handle touch platform special character taps
+platform('touch') + [T_a_U_0330] > 'a' U+0330
+platform('touch') + [T_a_U_0327] > 'a' U+0327
+platform('touch') + [SHIFT T_a_U_0330] > 'A' U+0330
+platform('touch') + [SHIFT T_a_U_0327] > 'A' U+0327
+platform('touch') + [T_e_U_0330] > 'e' U+0330
+platform('touch') + [T_e_U_0327] > 'e' U+0327
+platform('touch') + [SHIFT T_e_U_0330] > 'E' U+0330
+platform('touch') + [SHIFT T_e_U_0327] > 'E' U+0327
+platform('touch') + [T_i_U_0330] > 'i' U+0330
+platform('touch') + [T_i_U_0327] > 'i' U+0327
+platform('touch') + [SHIFT T_i_U_0330] > 'I' U+0330
+platform('touch') + [SHIFT T_i_U_0327] > 'I' U+0327
+platform('touch') + [T_o_U_0330] > 'o' U+0330
+platform('touch') + [T_o_U_0327] > 'o' U+0327
+platform('touch') + [SHIFT T_o_U_0330] > 'O' U+0330
+platform('touch') + [SHIFT T_o_U_0327] > 'O' U+0327
+platform('touch') + [T_u_U_0330] > 'u' U+0330
+platform('touch') + [T_u_U_0327] > 'u' U+0327
+platform('touch') + [SHIFT T_u_U_0330] > 'U' U+0330
+platform('touch') + [SHIFT T_u_U_0327] > 'U' U+0327
+platform('touch') + [T_n_U_0330] > 'n' U+0330
+platform('touch') + [SHIFT T_n_U_0330] > 'N' U+0330
+platform('touch') + [T_c_U_030C] > 'c' U+030C
+platform('touch') + [SHIFT T_c_U_030C] > 'C' U+030C
+platform('touch') + [T_s_U_030C] > 's' U+030C
+platform('touch') + [SHIFT T_s_U_030C] > 'S' U+030C
+platform('touch') + [T_r_U_0330] > 'r' U+0330
+platform('touch') + [SHIFT T_r_U_0330] > 'R' U+0330
+

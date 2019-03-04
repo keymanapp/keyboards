@@ -1,19 +1,23 @@
-Dinka Basic (DLIA) Keyboard
+Thuɔŋjäŋ Keyboard
 =====================
 
-Copyright (C) 2005-2017 State Library of Victoria and the Dinka Language Institute of Australia
+© 2015-2018 Enabling Languages
 
-Version 2.6
+Version 3.0
 
-Dinka Unicode keyboard layout for the Dinka Language Institute, Australia.
+Keyboard layout for the Dinka Language.
 
-Links
------
+ Links
+ -----
 
- * Contact:  <lang.support@gmail.com>
+  * Home:     https://enabling-languages.github.io/dinka
 
-Supported Platforms
--------------------
- * Windows
 
- 
+ Supported Platforms
+ -------------------
+  * Windows
+  * macOS
+  * Web
+  * Mobile Web
+  * iOS
+  * Android

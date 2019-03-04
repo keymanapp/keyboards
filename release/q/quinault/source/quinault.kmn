@@ -1,0 +1,109 @@
+﻿store(&VERSION) '9.0'
+store(&NAME) 'Quinault'
+store(&COPYRIGHT) '© 2016-2018 SIL International'
+store(&MESSAGE) 'The Quinault Keyman keyboard is distributed under the MIT software license.'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'quinault.ico'
+store(&VISUALKEYBOARD) 'quinault.kvks'
+store(&ETHNOLOGUECODE) 'qun'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'quinault-layout.js'
+
+begin Unicode > use(main)
+
+
+group(main) using keys
++ [K_BKSLASH] > '\'
++ [K_RBRKT] > ']'
++ [K_LBRKT] > '['
++ [K_QUOTE] > U+0027
++ [K_COLON] > ';'
++ [K_PERIOD] > '.'
++ [K_COMMA] > ','
++ [K_A] > U+0251 c U+0061
++ [K_B] > U+0063 U+030C U+0313 c same as "z"?
++ [K_C] > U+0063
++ [K_D] > U+0064
++ [K_E] > U+0065
++ [K_F] > U+0066
++ [K_G] > U+0261 c or U+0067
++ [K_H] > U+0068
++ [K_I] > U+0069
++ [K_J] > U+006A                                
++ [K_K] > U+006B                                
++ [K_L] > U+006C                                
++ [K_M] > U+006D                                
++ [K_N] > U+006E                                
++ [K_O] > U+006F                                
++ [K_P] > U+0070                                
++ [K_Q] > U+0071                                
++ [K_R] > U+0072                                
++ [K_S] > U+0073                                
++ [K_T] > U+0074                                
++ [K_U] > U+0075                                
++ [K_V] > U+0063 U+030C                         
++ [K_W] > U+0077                                
++ [K_X] > U+0078 U+0323                         
++ [K_Y] > U+0079                                
++ [K_Z] > U+0063 U+030C U+0313 c same as "b"?   
++ [K_SLASH] > 'ʔ'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_Z] > U+005A
++ [SHIFT K_Y] > U+0075 U+0301
++ [SHIFT K_X] > '/'
++ [SHIFT K_V] > U+0056
++ [SHIFT K_U] > U+006B U+0323 U+0313
++ [SHIFT K_T] > U+0074 U+0313
++ [SHIFT K_P] > U+0070 U+0313
++ [SHIFT K_O] > U+019B U+0313
++ [SHIFT K_N] > U+026A U+0301 c same as "]"?
++ [SHIFT K_M] > U+0069 U+0301
++ [SHIFT K_L] > U+006C U+0313
++ [SHIFT K_K] > U+006B U+0313
++ [SHIFT K_J] > U+026A c small cap or regular size I?
++ [SHIFT K_I] > U+006B U+0323
++ [SHIFT K_H] > U+006F U+0301
++ [SHIFT K_G] > U+0261 U+0323 c or U+0067
++ [SHIFT K_F] > U+0259 U+0301 c or U+01DD
++ [SHIFT K_D] > U+0044
++ [SHIFT K_C] > 'c̓'
++ [SHIFT K_B] > U+0042
++ [SHIFT K_A] > U+026B
++ [SHIFT K_S] > U+0073 U+030C
++ [SHIFT K_R] > U+0065 U+0301
++ [SHIFT K_E] > U+0259 c or U+01DD - must make decision
++ [SHIFT K_W] > U+0057
++ [SHIFT K_Q] > U+0251 U+0301    c 0061
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_0] > ')'
++ [SHIFT K_9] > '('
++ [SHIFT K_8] > '*'
++ [SHIFT K_7] > '&'
++ [SHIFT K_6] > '^'
++ [SHIFT K_5] > '%'
++ [SHIFT K_4] > '$'
++ [SHIFT K_3] > '#'
++ [SHIFT K_2] > '@'
++ [SHIFT K_1] > '!'
++ [SHIFT K_BKQUOTE] > '~'
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_BKQUOTE] > '`'
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'

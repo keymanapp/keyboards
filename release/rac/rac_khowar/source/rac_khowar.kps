@@ -1,47 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.961.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1090.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder>Rachitrali-Khowar Keyman Keyboard</Folder>
     <Items/>
   </StartMenu>
   <Info>
     <Name URL="">Rachitrali-Khowar Keyman Keyboard</Name>
-    <Copyright URL="">© 2016-2017 Rehmat Aziz Chitrali</Copyright>
-    <Version URL="">0.6</Version>
-    <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali </Author>
+    <Copyright URL="">© 2016-2018 Rehmat Aziz Chitrali</Copyright>
+    <Version URL=""></Version>
+    <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
   </Info>
   <Files>
     <File>
@@ -51,40 +29,10 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>Scheherazade-FONTLOG.txt</Name>
-      <Description>File Scheherazade-FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>..\build\rac_khowar.kvk</Name>
@@ -99,17 +47,64 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>Scheherazade-README.txt</Name>
-      <Description>File Scheherazade-README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>welcome\rac_khowar.png</Name>
       <Description>File rac_khowar.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
+      <Description>File Scheherazade_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
+      <Description>Font Scheherazade Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
+      <Description>Font Scheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_khowar.js</Name>
+      <Description>File rac_khowar.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Rachitrali-Khowar</Name>
+      <ID>rac_khowar</ID>
+      <Version></Version>
+      <RTL>True</RTL>
+      <Languages>
+        <Language ID="khw-Arab">Khowar</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>

@@ -1,0 +1,112 @@
+﻿c Simple Lao Unicode keyboard for Tavultesoft Keyman 10.0. Use Lao 2008 Rapid if automatic break insertion is wanted.
+
+store(&VERSION ) '10.0'
+store(&NAME) 'Lao 2008 Basic'
+store(&HOTKEY) '[CTRL SHIFT K_L]'
+store(&VISUALKEYBOARD) 'lao_2008_basic.kvks'
+store(&BITMAP) 'lao_2008_basic.ico'
+store(&MESSAGE) 'Simple keyboard mapping with overtyping constraints but minimal re-ordering and no break insertion.'
+store(&COPYRIGHT) '© 2008-2018 John Durdin'
+store(&capsalwaysoff) "1"
+store(&TARGETS) 'windows macosx linux web desktop'
+store(&KEYBOARDVERSION) '1.2'
+
+begin Unicode > use(Start)
+
+c Define sets of characters for matching and filtering: basic consonant sets
+c (Composites and extra characters will be handled by specific rules)
+store(Consonant)  "ກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫອຮໝໜ" U+0EBC
+store(ConsonantKey) "d07'9l-pf84mo[xz/r2,1I];svi<O^"
+
+c Full vowel character set, and subsets used to define constraints (prefix, suffix, superscript/subscript vowel sets)
+store(Vowel) "ເແໂໄໃ" "ະຽາ" U+0ECD U+0EB3 U+0EB1 U+0EBB U+0EB4 \
+         U+0EB5 U+0EB6 U+0EB7 U+0EB8 U+0EB9
+store(VowelKey) "gc3w." "tPk" "=eaqyubn56"
+store(VScript) U+0ECD U+0EB3 U+0EB1 U+0EBB U+0EB4 U+0EB5 U+0EB6 U+0EB7 U+0EB8 U+0EB9
+store(VScriptKey) "=eaqyubn56"
+store(VPrefix)  "ເແໂໄໃ"
+store(VPrefixKey) "gc3w."
+store(VSuffix) "ະຽາ"
+store(VSuffixKey) "tPk"
+
+c Tone marks
+store(Tone) U+0EC8 U+0EC9 U+0ECA U+0ECB U+0ECC
+store(ToneKey) "jhHJ%"
+
+c Special (abbreviation), numeric,and punctuation characters and keyboard equivalents
+store(Sign)  "ໆຯ"
+store(SignKey) "MC"
+
+store(Numeral) "1234567890/*-+."
+store(NumeralKey) "!@#$&*()_W"
+store(NumberPadKey) [K_NP1] [K_NP2] [K_NP3] [K_NP4] [K_NP5] \
+           [K_NP6] [K_NP7] [K_NP8] [K_NP9] [K_NP0] \
+           [K_NPSLASH] [K_NPSTAR] [K_NPMINUS] [K_NPPLUS] [K_NPDOT]
+
+store(LaoNumeral) "໑໒໓໔໕໖໗໘໙໐"
+store(LaoNumeralKey) [RALT K_1][RALT K_2][RALT K_3][RALT K_4][RALT K_7] \
+                     [RALT K_8][RALT K_9][RALT K_0][RALT K_HYPHEN][RALT K_W]
+
+store(Punctuation)  "*_+;.,:!?%" '=' '"' "(x)$-/"
+store(PunctuationKey) "`RTSDFGKL:" '"' "Z" "XV?>{~"
+
+store(CompositeKey) "QEYUABN+"
+
+c Number pad virtual key conversions - always return digits or mathematical symbols - modified keys must be processed first
+group(Start) using keys
+ + any(NumberPadKey) > index(Numeral,1)
+ + any(LaoNumeralKey) > index(LaoNumeral,1)
+ + [RALT K_LBRKT] > '['
+ + [RALT K_RBRKT] > ']'
+ + [RALT K_BKQUOTE] > '₭'
+ + [RALT K_EQUAL] > '€'
+
+c match > return
+nomatch > use(Main)
+
+c Mapping rules and simple constraints
+group(Main) using keys
+
+c Re-order tone after sala -am
+ U+0EB3 + any(ToneKey) > index(Tone,2) context
+
+c Constraints to avoid duplicated superscripts, etc.
+ any(Tone) + "e" > context U+0EB3   c override constraint in this case
+ any(Tone) + any(ToneKey) > context beep
+ any(Tone) + any(VScriptKey) > context beep
+ any(VPrefix) + any(VPrefixKey) > context beep
+ any(VPrefix) + any(ToneKey) > context beep
+ any(VSuffix) + any(ToneKey) > context beep
+ any(Vowel) + any(VScriptKey) > context beep
+ any(VScript)  + any(VScriptKey) > context beep
+ any(Tone) + any(CompositeKey) > context beep
+ any(Vowel) + any(CompositeKey) > context beep
+ any(Sign) + any(CompositeKey) > context beep
+ any(Sign) + any(ToneKey) > context beep
+ any(Sign) + any(VScriptKey) > context beep
+ any(Sign) + any(VSuffixKey) > context beep
+
+ U+0EB0 + "t" > context beep
+ U+0EB0 + "k" > context beep
+ U+0EB2 + "k" > context beep
+
+c Key lookup rules
++ any(ConsonantKey) > index(Consonant,1)
++ any(VowelKey) > index(Vowel,1)
++ any(ToneKey) > index(Tone,1)
++ any(SignKey) > index(Sign,1)
++ any(PunctuationKey) > index(Punctuation,1)
++ any(NumeralKey) > index(Numeral,1)
+
+c Composites (multiple character equivalents)
++ "}" > U+0EAB U+0EBC
++ "Q" > U+0EBB U+0EC9
++ "E" > U+0EC9 U+0EB3
++ "Y" > U+0EB4 U+0EC9
++ "U" > U+0EB5 U+0EC9
++ "A" > U+0EB1 U+0EC9
++ "B" > U+0EB6 U+0EC9
++ "N" > U+0EB7 U+0EC9
++ "+" > U+0ECD U+0EC8
+
++ "|" > U+200B			c ZWSP insertion

@@ -1,5 +1,9 @@
 Nubian Change History
 =======================
+1.2.1 (18 Jun 2018)
+-------------------
+
+* Add touch keyboard to package
 
 1.2 (9 Dec 2016)
 -----------------

@@ -1,0 +1,45 @@
+﻿store(&VERSION) '9.0'
+store(&NAME) 'Aramaic (Hebrew layout)'
+store(&VISUALKEYBOARD) 'aramaic_hebrew.kvks'
+store(&BITMAP) 'aramaic_hebrew.ico'
+store(&COPYRIGHT) '© 2007-2018 SIL International'
+store(&MESSAGE) 'Keyboard originally created by Illan Gonen'
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.2'
+store(&KMW_RTL) '1'
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT K_D] > U+0714
++ [SHIFT K_Y] > U+071C
++ [SHIFT K_X] > 'ܤ'
++ [K_EQUAL] > '݂'
++ [K_HYPHEN] > '݁'
++ [K_4] > '݂'
++ [K_6] > 'ܸ'
++ [K_5] > 'ܹ'
++ [K_7] > 'ܲ'
++ [K_8] > 'ܵ'
++ [K_F] > U+0716
++ [K_K] > 'ܠ'
++ [K_B] > 'ܢ'
++ [K_C] > U+0712
++ [K_Q] > '܀'
++ [K_X] > 'ܣ'
++ [K_A] > 'ܫ'
++ [K_COMMA] > 'ܬ'
++ [K_M] > 'ܨ'
++ [K_G] > 'ܥ'
++ [K_H] > U+071D
++ [K_J] > U+071A
++ [K_V] > U+0717
++ [K_Z] > U+0719
++ [K_S] > U+0715
++ [K_D] > U+0713
++ [K_N] > 'ܡ'
++ [K_E] > 'ܩ'
++ [K_R] > 'ܪ'
++ [K_T] > U+0710
++ [K_Y] > U+071B
++ [K_U] > U+0718
++ [K_P] > 'ܦ'

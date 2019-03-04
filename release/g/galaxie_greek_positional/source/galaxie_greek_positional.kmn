@@ -1,0 +1,371 @@
+c
+c 
+store(&VERSION) '9.0'
+store(&COPYRIGHT) 'Copyright 2004-2018 Galaxie Software and SIL International'
+store(&MESSAGE) "http://www.galaxie.com"
+c $KeymanOnly: store(&mnemoniclayout) '1'
+store(&BITMAP) 'galaxie_greek_positional.bmp'
+store(&VISUALKEYBOARD) 'galaxie_greek_positional.kvks'
+store(&WINDOWSLANGUAGES) 'x0408'
+store(&LANGUAGE) 'x0408'
+store(&ETHNOLOGUECODE) 'grc ell'
+store(&NAME) 'Galaxie Greek (Phonetic)'
+c store(&KEYBOARDVERSION) '2.2'
+store(&LAYOUTFILE) 'galaxie_greek_positional-layout.js'
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ "`" > dk(1)
+dk(1) + "/" > "/"
+dk(1) + "\" > "\"
+dk(1) + "[" > "["
+dk(1) + "]" > "]"
+dk(1) + "~" > "~"
+dk(1) + "?" > "?"
+dk(1) + "+" > "+"
+dk(1) + '"' > '"'
+dk(1) + "'" > "'"
+dk(1) + "-" > U+0304  c combining macron: jmd 17 Oct 08
+U+0304 + "]" > context U+0313
+U+0304 + "j" > context U+0313
+U+0304 + "[" > context U+0314
+U+0304 + "J" > context U+0314
+
+dk(1) + 'i' > U+0345  c mcd 12 sep 2007
+
++ "1" > U+0031
++ "2" > U+0032
++ "3" > U+0033
++ "4" > U+0034
++ "5" > U+0035
++ "6" > U+0036
++ "7" > U+0037
++ "8" > U+0038
++ "9" > U+0039
++ "0" > U+0030
++ "-" > U+002D
++ "q" > U+03B8
++ "w" > U+03C9
++ "e" > U+03B5
++ "r" > U+03C1
++ "t" > U+03C4
++ "y" > U+03C8
++ "u" > U+03C5
++ "i" > U+03B9
++ "o" > U+03BF
++ "p" > U+03C0
++ "[" > U+1FFE
++ "]" > U+1FBF
++ "\" > U+1FEF
++ "a" > U+03B1
++ "s" > U+03C3
++ "d" > U+03B4
++ "f" > U+03C6
++ "g" > U+03B3
++ "h" > U+03B7
++ "j" > U+1FBF
++ "k" > U+03BA
++ "l" > U+03BB
++ ";" > U+003B
++ "'" > U+03C2
++ "z" > U+03B6
++ "x" > U+03C7
++ "c" > U+03BE
++ "v" > U+1FFD
++ "b" > U+03B2
++ "n" > U+03BD
++ "m" > U+03BC
++ "," > U+002C
++ "." > U+002E
++ "/" > U+1FFD
+$KeymanOnly: + [K_SPACE] > U+0020
+$KeymanWeb: + [K_SPACE] > U+0020
+c non-breaking space
+$KeymanOnly: + [CTRL K_SPACE] > U+00A0
+$KeymanWeb: + [CTRL K_SPACE] > U+00A0
++ '~' > U+1FC0
++ '*' > U+002A
++ '(' > U+0028
++ ')' > U+0029
++ '_' > U+005F
++ '+' > U+05B5
++ 'Q' > U+0398
++ 'W' > U+03A9
++ 'E' > U+0395
++ 'R' > U+03A1
++ 'T' > U+03A4
++ 'Y' > U+03A8
++ 'U' > U+03A5
++ 'I' > U+0399
++ 'O' > U+039F
++ 'P' > U+03A0
++ '{' > U+007B
++ '}' > U+007D
++ '|' > U+1FBE
++ 'A' > U+0391
++ 'S' > U+03A3
++ 'D' > U+0394
++ 'F' > U+03A6
++ 'G' > U+0393
++ 'H' > U+0397
++ 'J' > U+1FFE
++ 'K' > U+039A
++ 'L' > U+039B
++ ':' > U+00B7
++ '"' > U+1FC0
++ 'Z' > U+0396
++ 'X' > U+03A7
++ 'C' > U+039E
++ 'V' > U+1FEF
++ 'B' > U+0392
++ 'N' > U+039D
++ 'M' > U+039C
++ '<' > U+003C
++ '>' > U+003E
++ '?' > U+00A8
+
+c Rho
+U+03C1 + "j" > U+1FE4
+U+03C1 + "J" > U+1FE5
+U+03A1 + "j" > U+1FEC
+U+03A1 + "J" > U+1FFE U+03A1   
+
+U+03C1 + "]" > U+1FE4
+U+03C1 + "[" > U+1FE5
+U+03A1 + "]" > U+1FEC
+U+03A1 + "[" > U+1FFE U+03A1   
+
+
+c alpha  eta    omega  epsilon iota   omicron upsilon space
+store( plain )       U+03B1 U+03B7 U+03C9 U+03B5  U+03B9 U+03BF  U+03C5  U+0020
+store( smooth )      U+1F00 U+1F20 U+1F60 U+1F10  U+1F30 U+1F40  U+1F50  U+1FBF
+store( rough )       U+1F01 U+1F21 U+1F61 U+1F11  U+1F31 U+1F41  U+1F51  U+1FFE
+store( grave )       U+1F70 U+1F74 U+1F7C U+1F72  U+1F76 U+1F78  U+1F7A  U+1FEF
+store( acute )       U+1F71 U+1F75 U+1F7D U+1F73  U+1F77 U+1F79  U+1F7B  U+1FFD
+store( iota )        U+1FB3 U+1FC3 U+1FF3 U+03B5  U+03B9 U+03BF  U+03C5  U+1FBE
+
+store( circ )        U+1FB6 U+1FC6 U+1FF6 U+03B5  U+1FD6 U+03BF  U+1FE6  U+1FC0
+
+store( dia )         U+03B1 U+03B7 U+03C9 U+03B5  U+03CA U+03BF  U+03CB  U+00A8
+
+                     
+store( sm_gra )      U+1F02 U+1F22 U+1F62 U+1F12  U+1F32 U+1F42  U+1F52  U+1FCD
+store( rg_gra )      U+1F03 U+1F23 U+1F63 U+1F13  U+1F33 U+1F43  U+1F53  U+1FDD
+store( sm_acc )      U+1F04 U+1F24 U+1F64 U+1F14  U+1F34 U+1F44  U+1F54  U+1FCE
+store( rg_acc )      U+1F05 U+1F25 U+1F65 U+1F15  U+1F35 U+1F45  U+1F55  U+1FDE
+store( sm_circ )     U+1F06 U+1F26 U+1F66 U+1F10  U+1F36 U+1F40  U+1F56  U+1FCF
+store( rg_circ )     U+1F07 U+1F27 U+1F67 U+1F11  U+1F37 U+1F41  U+1F57  U+1FDF
+
+store( sm_iota )     U+1F80 U+1F90 U+1FA0 U+1F10  U+1F30 U+1F40  U+1F50  U+1FBF
+store( rg_iota )     U+1F81 U+1F91 U+1FA1 U+1F11  U+1F31 U+1F41  U+1F51  U+1FFE
+store( gra_iota )    U+1FB2 U+1FC2 U+1FF2 U+1F72  U+1F76 U+1F78  U+1F7A  U+1FEF
+store( acc_iota )    U+1FB4 U+1FC4 U+1FF4 U+1F73  U+1F77 U+1F79  U+1F7B  U+1FFD   
+store( circ_iota )   U+1FB7 U+1FC7 U+1FF7 U+03B5  U+1FD6 U+03BF  U+1FE6  U+1FC0
+
+store( dia_gra )     U+1F70 U+1F74 U+1F7C U+1F72  U+1FD2 U+1F78  U+1FE2  U+1FED
+store( dia_acc )     U+1F71 U+1F75 U+1F7D U+1F73  U+1FD3 U+1F79  U+1FE3  U+1FEE
+store( dia_circ )    U+1FB6 U+1FC6 U+1FF6 U+03B5  U+1FD6 U+03BF  U+1FE7  U+1FC1
+
+store( sm_gra_iota ) U+1F82 U+1F92 U+1FA2 U+1F12  U+1F32 U+1F42  U+1F52  U+1FCD
+store( rg_gra_iota ) U+1F83 U+1F93 U+1FA3 U+1F13  U+1F33 U+1F43  U+1F53  U+1FDD  
+store( sm_acc_iota ) U+1F84 U+1F94 U+1FA4 U+1F14  U+1F34 U+1F44  U+1F54  U+1FCE
+store( rg_acc_iota ) U+1F85 U+1F95 U+1FA5 U+1F15  U+1F35 U+1F45  U+1F55  U+1FDE
+store( sm_circ_iota )U+1F86 U+1F96 U+1FA6 U+1F10  U+1F36 U+1F40  U+1F56  U+1FCF
+store( rg_circ_iota )U+1F87 U+1F97 U+1FA7 U+1F11  U+1F37 U+1F41  U+1F57  U+1FDF  
+
+c alpha  eta    omega  epsilon iota   omicron upsilon space
+store( cap_pl )      U+0391 U+0397 U+03A9 U+0395  U+0399 U+039F  U+03A5  U+0020
+store( cap_sm )      U+1F08 U+1F28 U+1F68 U+1F18  U+1F38 U+1F48  U+1F58  U+1FBF
+store( cap_rg )      U+1F09 U+1F29 U+1F69 U+1F19  U+1F39 U+1F49  U+1F59  U+1FFE
+store( cap_gra )     U+1FBA U+1FCA U+1FFA U+1FC8  U+1FDA U+1FF8  U+1FEA  U+1FEF
+store( cap_acc )     U+1FBB U+1FCB U+1FFB U+1FC9  U+1FDB U+1FF9  U+1FEB  U+1FFD
+store( cap_dia )     U+0391 U+0397 U+03A9 U+0395  U+03AA U+039F  U+03AB  U+0020
+
+store( cap_sm_acc )  U+1F0C U+1F2C U+1F6C U+1F1C  U+1F3C U+1F4C  U+1F5C  U+1FCE
+store( cap_sm_gra )  U+1F0A U+1F2A U+1F6A U+1F1A  U+1F3A U+1F4A  U+1F5A  U+1FCD
+store( cap_rg_acc )  U+1F0D U+1F2D U+1F6D U+1F1D  U+1F3D U+1F4D  U+1F5D  U+1FDE
+store( cap_rg_gra )  U+1F0B U+1F2B U+1F6B U+1F1B  U+1F3B U+1F4B  U+1F5B  U+1FDD
+
+store( cap_sm_circ ) U+1F0E U+1F2E U+1F6E U+1F18  U+1F3E U+1F48  U+1F5E  U+1FCF
+store( cap_rg_circ ) U+1F0F U+1F2F U+1F6F U+1F19  U+1F3F U+1F49  U+1F5F  U+1FDF
+
+
+c smooth, accent, mark, iota
+any( plain ) + "j" > index( smooth, 1 )
+any( plain ) + "]" > index( smooth, 1 )
+
+any( plain ) + "J" > index( rough, 1 )
+any( plain ) + "[" > index( rough, 1 )
+
+any( plain ) + "v" > index( acute, 1 )
+any( plain ) + "/" > index( acute, 1 )
+
+any( plain ) + "V" > index( grave, 1 )
+any( plain ) + "\" > index( grave, 1 )
+
+any( plain ) + "|" > index( iota, 1 )
+
+any( plain ) + "~" > index( circ, 1 ) 
+any( plain ) + '"' > index( circ, 1 ) 
+
+any( plain ) + "?" > index( dia, 1 ) 
+any( plain ) + "+" > index( dia, 1 ) 
+
+c CAP smooth, accent, mark, iota
+any( cap_pl ) + "j" > index( cap_sm, 1 )
+any( cap_pl ) + "]" > index( cap_sm, 1 )
+
+any( cap_pl ) + "J" > index( cap_rg, 1 )
+any( cap_pl ) + "[" > index( cap_rg, 1 )
+
+any( cap_pl ) + "v" > index( cap_acc, 1 )
+any( cap_pl ) + "/" > index( cap_acc, 1 )
+
+any( cap_pl ) + "V" > index( cap_gra, 1 )
+any( cap_pl ) + "\" > index( cap_gra, 1 )
+
+any( cap_pl ) + "?" > index( cap_dia, 1 )
+any( cap_pl ) + "+" > index( cap_dia, 1 )
+
+c smooth + accent
+any( smooth ) + "v" > index( sm_acc, 1 )
+any( acute ) + "j" > index( sm_acc, 1 )
+any( smooth ) + "/" > index( sm_acc, 1 )
+any( acute ) + "]" > index( sm_acc, 1 )
+
+any( smooth ) + "V" > index( sm_gra, 1 )
+any( smooth ) + "\" > index( sm_gra, 1 )
+
+any( grave ) + "j" > index( sm_gra, 1 ) 
+any( grave ) + "]" > index( sm_gra, 1 ) 
+
+any( circ ) + "j" > index( sm_circ, 1 )
+any( circ ) + "]" > index( sm_circ, 1 )
+
+any( smooth ) + "~" > index( sm_circ, 1 )
+any( smooth ) + '"' > index( sm_circ, 1 ) 
+
+c CAP smooth + accent
+any( cap_sm ) + "v" > index( cap_sm_acc, 1 )
+any( cap_acc ) + "j" > index( cap_sm_acc, 1 )
+any( cap_sm ) + "V" > index( cap_sm_gra, 1 )
+any( cap_gra ) + "j" > index( cap_sm_gra, 1 ) 
+any( cap_sm ) + "~" > index( cap_sm_circ, 1 )
+any( cap_sm ) + '"' > index( cap_sm_circ, 1 ) 
+
+c rough + accent
+any( rough ) + "v" > index( rg_acc, 1 )
+any( rough ) + "/" > index( rg_acc, 1 )
+
+any( rough ) + "V" > index( rg_gra, 1 )
+any( rough ) + "\" > index( rg_gra, 1 )
+
+any( acute ) + "J" > index( rg_acc, 1 )
+any( acute ) + "[" > index( rg_acc, 1 )
+
+any( grave ) + "J" > index( rg_gra, 1 ) 
+any( grave ) + "[" > index( rg_gra, 1 ) 
+
+any( circ ) + "J" > index( rg_circ, 1 )
+any( circ ) + "[" > index( rg_circ, 1 )
+
+any( rough ) + "~" > index( rg_circ, 1 )
+any( rough ) + '"' > index( rg_circ, 1 ) 
+
+c CAPS
+any( cap_rg ) + "v" > index( cap_rg_acc, 1 )
+any( cap_rg ) + "V" > index( cap_rg_gra, 1 )
+
+any( cap_acc ) + "J" > index( cap_rg_acc, 1 )
+any( cap_gra ) + "J" > index( cap_rg_gra, 1 ) 
+
+any( cap_rg ) + "~" > index( cap_rg_circ, 1 )
+any( cap_rg ) + '"' > index( cap_rg_circ, 1 ) 
+
+any( cap_rg ) + "/" > index( cap_rg_acc, 1 )
+any( cap_rg ) + "\" > index( cap_rg_gra, 1 )
+
+any( cap_acc ) + "[" > index( cap_rg_acc, 1 )
+any( cap_gra ) + "[" > index( cap_rg_gra, 1 ) 
+
+c dia + accent
+any( dia ) + "V" > index( dia_gra, 1 )
+any( dia ) + "v" > index( dia_acc, 1 )
+any( dia ) + "\" > index( dia_gra, 1 )
+any( dia ) + "/" > index( dia_acc, 1 )
+
+any( dia ) + "~" > index( dia_circ, 1 )
+any( dia ) + '"' > index( dia_circ, 1 ) 
+
+any( grave ) + "?" > index( dia_gra, 1 )
+any( acute ) + "?" > index( dia_acc, 1 )
+any( circ ) + "?" > index( dia_circ, 1 )
+
+any( grave ) + "+" > index( dia_gra, 1 )
+any( acute ) + "+" > index( dia_acc, 1 )
+any( circ ) + "+" > index( dia_circ, 1 )
+
+c smooth + iota
+any( smooth ) + "|" > index( sm_iota, 1 )
+any( iota ) + "j" > index( sm_iota, 1 ) 
+any( iota ) + "]" > index( sm_iota, 1 ) 
+
+c rough + iota
+any( iota ) + "J" > index( rg_iota, 1 )
+any( iota ) + "[" > index( rg_iota, 1 )
+any( rough ) + "|" > index( rg_iota, 1 )
+
+c accent + iota
+any( acute ) + "|" > index( acc_iota, 1 )
+any( iota ) + "v" > index( acc_iota, 1 )
+any( iota ) + "/" > index( acc_iota, 1 )
+any( grave ) + "|" > index( gra_iota, 1 )
+any( iota ) + "V" > index( gra_iota, 1 )
+any( iota ) + "\" > index( gra_iota, 1 )
+
+c circ + iota
+any( circ ) + "|" > index( circ_iota, 1 )
+any( iota ) + "~" > index( circ_iota, 1 )
+any( iota ) + '"' > index( circ_iota, 1 ) 
+
+c smooth + accent + iota
+any( sm_acc ) + "|" > index( sm_acc_iota, 1 )
+any( sm_gra ) + "|" > index( sm_gra_iota, 1 )
+any( sm_iota ) + "v" > index( sm_acc_iota, 1 )
+any( sm_iota ) + "V" > index( sm_gra_iota, 1 )
+any( gra_iota ) + "j" > index( sm_gra_iota, 1 )
+any( acc_iota ) + "j" > index( sm_acc_iota, 1 )
+any( sm_iota ) + "/" > index( sm_acc_iota, 1 )
+any( sm_iota ) + "\" > index( sm_gra_iota, 1 )
+any( gra_iota ) + "]" > index( sm_gra_iota, 1 )
+any( acc_iota ) + "]" > index( sm_acc_iota, 1 )
+any( sm_iota ) + "~" > index( sm_circ_iota, 1 ) 
+any( sm_iota ) + '"' > index( sm_circ_iota, 1 ) 
+any( circ_iota ) + "j" > index( sm_circ_iota, 1 )
+any( circ_iota ) + "]" > index( sm_circ_iota, 1 )
+any( sm_circ ) + "|" > index( sm_circ_iota, 1 )
+
+c rough + accent + iota
+any( rg_acc ) + "|" > index( rg_acc_iota, 1 )
+any( rg_gra ) + "|" > index( rg_gra_iota, 1 )
+any( gra_iota ) + "J" > index( rg_gra_iota, 1 )
+any( acc_iota ) + "J" > index( rg_acc_iota, 1 )
+any( rg_iota ) + "v" > index( rg_acc_iota, 1 )
+any( rg_iota ) + "V" > index( rg_gra_iota, 1 )
+any( gra_iota ) + "[" > index( rg_gra_iota, 1 )
+any( acc_iota ) + "[" > index( rg_acc_iota, 1 )
+any( rg_iota ) + "/" > index( rg_acc_iota, 1 )
+any( rg_iota ) + "\" > index( rg_gra_iota, 1 )
+any( rg_iota ) + "~" > index( rg_circ_iota, 1 )
+any( rg_iota ) + "'" > index( rg_circ_iota, 1 ) 
+any( rg_circ ) + "|" > index( rg_circ_iota, 1 )
+any( circ_iota ) + "J" > index( rg_circ_iota, 1 )
+any( circ_iota ) + "[" > index( rg_circ_iota, 1 )
+
+c Final Sigma
+U+03C3 + " " > U+03C2 U+0020  
+U+1FBF + " " > U+02BC U+0020
+c EOF

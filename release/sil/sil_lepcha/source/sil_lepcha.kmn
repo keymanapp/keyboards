@@ -1,0 +1,100 @@
+﻿c sil_lepcha.kmn
+c Author:   Lorna A. Priest
+c Date:     15-SEP-2011
+store(&VERSION) '9.0'
+store(&NAME) 'Lepcha (SIL)'
+store(&COPYRIGHT) '© 2010-2018 SIL International'
+store(&BITMAP) 'sil_lepcha.ico'
+store(&mnemoniclayout) "1"
+store(&TARGETS) 'windows macosx linux'
+store(&ETHNOLOGUECODE) 'lep'
+store(&KEYBOARDVERSION) '1.0'
+store(&MESSAGE) 'This keyboard is designed for typing Lepcha text. The keyboard is a phonetic keyboard. This means that the keystrokes are tied to the Latin keyboard. '
+
+begin Unicode > use(main)
+
+store(NumK)     "0"    "1"    "2"    "3"    "4"    "5"    "6"    "7" \
+                "8"    "9"
+store(NumU)     U+1C40 U+1C41 U+1C42 U+1C43 U+1C44 U+1C45 U+1C46 U+1C47 \
+                U+1C48 U+1C49
+
+store(ConsK)   "a"    "b"    "c"    "d"    "f"    "g"    "h" \
+               "j"    "k"    "l"    "m"    "n"    "p"    "q" \
+               "r"    "s"    "t"    "v"    "w"    "x"    "y" \
+               "z"    "V"    "W"    "X"    "Z"
+
+store(ConsU)   U+1C23 U+1C13 U+1C06 U+1C0C U+1C11 U+1C03 U+1C1D \
+               U+1C08 U+1C00 U+1C1C U+1C15 U+1C0D U+1C0E U+1C17 \
+               U+1C1B U+1C20 U+1C0A U+1C1F U+1C22 U+1C04 U+1C1A \
+               U+1C19 U+1C4D U+1C4E U+1C4F U+1C3F
+store(AllCons) U+1C23 U+1C13 U+1C06 U+1C0C U+1C11 U+1C03 U+1C1D \
+               U+1C08 U+1C00 U+1C1C U+1C15 U+1C0D U+1C0E U+1C17 \
+               U+1C1B U+1C20 U+1C0A U+1C1F U+1C22 U+1C04 U+1C1A \
+               U+1C19 U+1C4D U+1C4E U+1C4F U+1C3F \
+               U+1C07 U+1C02 U+1C10 U+1C18 U+1C21 U+1C0B \
+               U+1C14 U+1C12 U+1C04 U+1C1E U+1C01 U+1C16 U+1C0F
+
+c consonant plus l
+store(L_K)     "b"    "f"    "g"    "h"    "k"    "m"    "p"
+store(L_U1)    U+1C13 U+1C11 U+1C03 U+1C1D U+1C00 U+1C15 U+1C0E
+store(L_U)     U+1C14 U+1C12 U+1C04 U+1C1E U+1C01 U+1C16 U+1C0F
+
+c consonant plus h
+store(H_K)     "c"    "k"    "p"    "q"    "s"    "t"
+store(H_U1)    U+1C06 U+1C00 U+1C0E U+1C17 U+1C20 U+1C0A
+store(H_U)     U+1C07 U+1C02 U+1C10 U+1C18 U+1C21 U+1C0B
+
+store(PuncK)   "'"    '"'    "="    "+"
+store(PuncU)   U+1C3B U+1C3C U+1C3D U+1C3E
+
+store(VowelK)  "A"    "i"    "o"    "O"    "u"    "U"    "e"
+store(VowelU)  U+1C26 U+1C27 U+1C28 U+1C29 U+1C2A U+1C2B U+1C2C
+store(PreVowel)  U+1C27 U+1C28 U+1C29
+
+store(ConsSgnK)  "K"    "M"    "L"    "N"    "P"    "R"    "T"    "D"    "G"
+store(ConsSgnU)  U+1C2D U+1C2E U+1C2F U+1C30 U+1C31 U+1C32 U+1C33 U+1C34 U+1C35
+
+store(YaK)     "Y"
+store(YaU)     U+1C24
+
+store(RaK)     "Q"
+store(RaU)     U+1C25
+
+store(RanK)     "_"
+store(RanU)     U+1C36
+
+store(NuktaK)     "."
+store(NuktaU)     U+1C37
+
+
+group(main) using keys
+
+          + any(PuncK)    > index(PuncU,1)
+          + any(NumK)     > index(NumU,1)
+          + any(ConsK)    > index(ConsU,1)
+          + any(NuktaK)   > index(NuktaU,1)
+          + any(RaK)      > index(RaU,1)
+          + any(YaK)      > index(YaU,1)
+          + any(VowelK)   > index(VowelU,1)
+          + any(ConsSgnK) > index(ConsSgnU,1)
+          + any(RanK)     > index(RanU,1)
+
+any(L_U1) + "l"        > index(L_U,1)
+any(H_U1) + "h"        > index(H_U,1)
+U+1C0D    + "g"        > U+1C05
+U+1C0D    + "y"        > U+1C09
+
+c reordering: this is the correct order, need to write rule to reorder
+c index(AllCons,1) index(NuktaU) index(RaU) index(YaU) index(VowelU) index(ConsSgnU)index(RanU)
+c any(PreVowel) any(AllCons) any(RaU) + any(YaK) > index(AllCons,2) index(RaU,3) index(YaU,4) index(VowelU,1)
+c any(PreVowel) any(AllCons) + any(RaU) > index(AllCons,2) index(RaU,3) index(VowelU,1)
+c any(PreVowel) any(ConsK) > index(ConsU,2) index(VowelU,1)
+
+c prevent typing more than one together
+any(NuktaU)   + any(NuktaK)   > context beep
+any(RaU)      + any(RaK)      > context beep
+any(YaU)      + any(YaK)      > context beep
+any(VowelU)   + any(VowelK)   > context beep
+any(ConsSgnU) + any(ConsSgnK) > context beep
+any(RanU)     + any(RanK)     > context beep
+

@@ -1,7 +1,17 @@
-Torwali Change History
+Torwali (SIL) Change History
 =======================
 
+1.0 (3 Jan 2019)
+-----------------
+* Updated keyboard to match MSKLC keyboard
+* Added "(SIL)" to name to distinguish from other keyboards for the same language
+
+0.8.1 (18 Jun 2018)
+-----------------
+* Add touch keyboard to package
+
 0.8 (8 Feb 2018)
+-----------------
 * Adjusted copyright dates
 * Fixed support for U+08FF on mobile devices
 

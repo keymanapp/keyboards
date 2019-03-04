@@ -1,0 +1,81 @@
+﻿store(&VERSION) "10.0"
+store(&NAME) 'Dzongkha (SIL)'
+store(&BITMAP) 'sil_dzongkha.ico'
+store(&CAPSALWAYSOFF) "1"
+c store(&ETHNOLOGUECODE) 'dzo'
+c store(&WINDOWSLANGUAGES) 'x0451'
+c store(&LANGUAGE) 'x0451'
+
+store(&VISUALKEYBOARD) 'sil_dzongkha.kvks'
+store(&TARGETS) 'windows macosx linux web'
+store(&COPYRIGHT) '© 2012-2018 SIl International'
+store(&KEYBOARDVERSION) '1.1'
+
+begin Unicode > use(main)
+
+group(main) using keys
+c ==Primary Output==
+c 1-to-1 rules  (s = Shift, a = AltGr)
+store(row1)  "`1234567890-="
+store(out1)  U+0f09 U+0f21 U+0f22 U+0f23 U+0f24 U+0f25 U+0f26 U+0f27 U+0f28 U+0f29 U+0f20 U+0f14 U+0f0d
+store(row2)  "qwertyuiop[]\"
+store(out2)  U+0f40 U+0f41 U+0f42 U+0f44 U+0f72 U+0f74 U+0f7a U+0f7c U+0f45 U+0f46 U+0f47 U+0f49 U+0f5d
+store(row3)  "asdfghjkl;'"
+store(out3)  U+0f4f U+0f50 U+0f51 U+0f53 U+0f54 U+0f55 U+0f56 U+0f58 U+0f59 U+0f5a U+0f5b
+store(row4)  "zxcvbnm,./"
+store(out4)  U+0f5e U+0f5f U+0f60 U+0f61 U+0f62 U+0f63 U+0f64 U+0f66 U+0f67 U+0f68
+store(row5)  " "
+store(out5)  U+0f0b
+
+store(row1s)  '~!@#$%^&*()_+'
+store(out1s)  U+0f0a U+0f04 U+0f05 U+0f06 dk(1)  U+0f0e U+0f08 U+0f38 U+0f34 U+0f3c U+0f3d U+0f7f U+0f11
+store(row2s)  'QWERTYUIOP{}|'
+store(out2s)  U+0f90 U+0f91 U+0f92 U+0f94 U+0f80 U+0f84 U+0f7b U+0f7d U+0f95 U+0f96 U+0f97 U+0f99 U+0fad
+store(row3s)  'ASDFGHJKL:"'
+store(out3s)  U+0f9f U+0fa0 U+0fa1 U+0fa3 U+0fa4 U+0fa5 U+0fa6 U+0fa8 U+0fa9 U+0faa U+0fab
+store(row4s)  'ZXCVBNM<>?'
+store(out4s)  U+0fae U+0faf U+0f71 U+0fb1 U+0fb2 U+0fb3 U+0fb4 U+0fb6 U+0fb7 U+0fb8
+store(row5s)  [SHIFT K_SPACE]
+store(out5s)  U+0020
+
+store(row1a) [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_EQUAL]
+store(out1a) U+0fd1 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030 U+002d U+003d
+store(row2a) [RALT K_q] [RALT K_w] [RALT K_e] [RALT K_r] [RALT K_t] [RALT K_y] [RALT K_u] [RALT K_i] [RALT K_o] [RALT K_p] [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_BKSLASH]
+store(out2a) U+0f88 U+0f89 U+0f8c U+0f83 U+0f1a U+0f1b U+0f1c U+0f1d U+0f1e U+0f1f U+0028 U+0029 U+005c
+store(row3a) [RALT K_a] [RALT K_s] [RALT K_d] [RALT K_f] [RALT K_g] [RALT K_h] [RALT K_j] [RALT K_k] [RALT K_l] [RALT K_COLON] [RALT K_QUOTE]
+store(out3a) U+0f4a U+0f4b U+0f4c U+0f4e nul    nul    U+0f37 U+0f7e U+0f39 U+003b U+0027
+store(row4a) [RALT K_z] [RALT K_x] [RALT K_c] [RALT K_v] [RALT K_b] [RALT K_n] [RALT K_m] [RALT K_COMMA] [RALT K_PERIOD] [RALT K_SLASH]
+store(out4a) U+0f13 U+0fbe U+0f03 U+0f0f U+0f6a U+0f12 U+0f65 U+002c U+002e U+002f
+store(row5a) [RALT K_SPACE]
+store(out5a) U+0f0c
+
+store(row1sa) [SHIFT RALT K_BKQUOTE] [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8] [SHIFT RALT K_9] [SHIFT RALT K_0] [SHIFT RALT K_HYPHEN] [SHIFT RALT K_EQUAL]
+store(out1sa) U+0fd0 U+0fd3 U+0fd4 U+0f3a U+0f3b U+0f85 U+0f01 U+0f8a U+002a nul    nul    U+0fd2 U+002b
+store(row2sa) [SHIFT RALT K_q] [SHIFT RALT K_w] [SHIFT RALT K_e] [SHIFT RALT K_r] [SHIFT RALT K_y] [SHIFT RALT K_u] [SHIFT RALT K_i] [SHIFT RALT K_o] [SHIFT RALT K_p] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_BKSLASH]  c rule for [SHIFT RALT K_t] below
+store(out2sa) U+0f8d U+0f8e U+0f8f U+0f82 nul    nul    U+0f17 U+0f18 U+0f19 U+0f3f U+0f3e U+0fba
+store(row3sa) [SHIFT RALT K_a] [SHIFT RALT K_s] [SHIFT RALT K_d] [SHIFT RALT K_f] [SHIFT RALT K_g] [SHIFT RALT K_h] [SHIFT RALT K_j] [SHIFT RALT K_k] [SHIFT RALT K_l] [SHIFT RALT K_COLON] [SHIFT RALT K_QUOTE]
+store(out3sa) U+0f9a U+0f9b U+0f9c U+0f9e nul    nul    U+0f35 U+0f86 U+0f87 U+003a U+0022 c DevCommission chart gives this order on key caps, but swaps U+0f86 with U+0f87 in text description. I'm assuming visual is more likely to be correct than text string.
+store(row4sa) [SHIFT RALT K_z] [SHIFT RALT K_x] [SHIFT RALT K_c] [SHIFT RALT K_v] [SHIFT RALT K_b] [SHIFT RALT K_n] [SHIFT RALT K_m] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] [SHIFT RALT K_SLASH]
+store(out4sa) U+0f36 U+0fbf U+0fb0 U+0fbb U+0fbc nul    U+0fb5 U+0fd9 U+0fda U+003f
+store(row5sa) [SHIFT RALT K_SPACE]
+store(out5sa) U+00a0
+
+c (For MS Office to treat spaces correctly, order of stores below is important (s before non-s))
+store(key-norm)  outs(row1s)  outs(row2s)  outs(row3s)  outs(row4s)  outs(row5s)  outs(row1)  outs(row2)  outs(row3)  outs(row4)  outs(row5)
+store(out-norm)  outs(out1s)  outs(out2s)  outs(out3s)  outs(out4s)  outs(out5s)  outs(out1)  outs(out2)  outs(out3)  outs(out4)  outs(out5)
+store(key-altgr) outs(row1sa) outs(row2sa) outs(row3sa) outs(row4sa) outs(row5sa) outs(row1a) outs(row2a) outs(row3a) outs(row4a) outs(row5a)
+store(out-altgr) outs(out1sa) outs(out2sa) outs(out3sa) outs(out4sa) outs(out5sa) outs(out1a) outs(out2a) outs(out3a) outs(out4a) outs(out5a)
+
+store(key) outs(key-norm) outs(key-altgr)
+store(out) outs(out-norm) outs(out-altgr)
+
+      + any(key) > index(out,1)
+dk(1) + any(key) > index(key,2)
+
+c 1-to-Many
++ [SHIFT RALT K_t] > U+0f8b U+0f99
+dk(1) + [SHIFT RALT K_T] > use(default-output)
+
+group(default-output) using keys
+c empty group
+c EOF

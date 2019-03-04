@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Persian Phonetic
-* Copyright:      (C) SIL International
-* Version:        1.0
+* Copyright:      (C) 2017-2018 SIL International
+* Version:        1.0.1
 * Keyman Version: 9.0
 * BCP-47 codes:   pes-Arab
 
@@ -17,8 +17,8 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Home:     <http://keymankeyboards.com/>
- * Contact:  <support@keyman.com>
+ * Home:     https://keyman.com/keyboards/persian_phonetic
+ * Contact:  https://community.software.sil.org/c/keyman
  
 Supported Platforms
 -------------------
@@ -28,8 +28,4 @@ Supported Platforms
  * Web
  * iOS
  * Android
-
-Todo
-----
-
-* Change "home" url when there is a release on keyman site
+ 

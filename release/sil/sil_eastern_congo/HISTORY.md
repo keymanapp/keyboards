@@ -1,6 +1,10 @@
 Eastern Congo Keyboard Change History
 =======================
 
+1.3.1 (4 Jun 2018)
+------------------
+* Added script information to language metadata in .kps
+
 1.3 (12 Apr 2018)
 -----------------
 * removed PUA characters: changed F21D to A78C; F1E9 to A789; F1EA to A78A
