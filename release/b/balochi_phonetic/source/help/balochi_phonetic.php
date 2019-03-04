@@ -18,7 +18,12 @@ menu item. Similar keyboards are also available for other desktop and mobile pla
 
 <h2>History</h2>
 
-<h3>1.1.1 (18 Jun 2018</h3>
+<h3>1.1.2 (4 Apr 2019)</h3>
+<ul>
+  <li>Remove all but the bcc language code.</li>
+</ul>
+
+<h3>1.1.1 (18 Jun 2018)</h3>
 <ul>
   <li>No change. Package version to match keyboard.</li>
 </ul>
