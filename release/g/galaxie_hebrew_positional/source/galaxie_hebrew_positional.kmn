@@ -1,0 +1,148 @@
+store(&VERSION) '10.0'
+store(&NAME) 'Galaxie Hebrew (Positional)'
+store(&BITMAP) 'galaxie_hebrew_positional.bmp'
+store(&COPYRIGHT) "2004-2018 Galaxie Software and SIL International"
+
+c store(&mnemoniclayout) '1'                     
+store(&VISUALKEYBOARD) 'galaxie_hebrew_positional.kvks'
+store(&KMW_RTL) '1'
+store(&KEYBOARDVERSION) '2.2'
+store(&TARGETS) 'windows macosx web'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ "`" > dk(1)
+dk(1) + "=" > "="
+dk(1) + "~" > "~"
+
+
+
++ "1" > U+0031
++ "2" > U+0032
++ "3" > U+0033
++ "4" > U+0034
++ "5" > U+0035
++ "6" > U+0036
++ "7" > U+0037
++ "8" > U+0038
++ "9" > U+0039
++ "0" > U+0030
++ "-" > U+05BE
++ "=" > U+05B0
++ "q" > U+05E7
++ "w" > U+05D5
++ "e" > U+05DA U+05B5
++ "r" > U+05E8
++ "t" > U+05EA
++ "y" > U+05D9
++ "u" > U+05E2
++ "i" > U+05DA
++ "o" > U+05D5 U+05B9
++ "p" > U+05E4
++ "[" > U+05E3
++ "\" > U+05BC c dagesh
++ "a" > U+05D0
++ "s" > U+05E1
++ "d" > U+05D3
++ "f" > U+05D8
++ "g" > U+05D2
++ "h" > U+05D4
++ "j" > U+05D7
++ "k" > U+05DB
++ "l" > U+05DC
++ ";" > U+05DA U+05B8
++ "'" > U+0027
++ "z" > U+05D6
++ "x" > U+05E6
++ "c" > U+05E9 U+05C2
++ "v" > U+05E9 U+05C1
++ "b" > U+05D1
++ "n" > U+05E0
++ "m" > U+05DE
++ "." > U+05C3
++ "/" > U+05DF
+
++ '!' > U+05B4
++ '@' > U+05B5
++ '#' > U+05B6
++ '$' > U+05B1
++ '%' > U+05BB
++ '^' > U+05B7
++ '&' > U+05B2
++ '*' > U+05B8
++ '(' > U+05B3
++ ')' > U+05B9
++ '_' > U+05BF
++ "+" > U+002B
++ 'Q' > U+05E7 U+05BC
++ 'W' > U+05D5 U+05BC
++ 'E' > U+05DA U+05B0
++ 'R' > U+05E8 U+05BC
++ 'T' > U+05EA U+05BC
++ 'Y' > U+05D9 U+05BC
++ 'U' > U+05E2 U+05BC
++ 'I' > U+05DA U+05BC
++ 'O' > U+05D5 U+05B9 U+05BC
++ 'P' > U+05E4 U+05BC
++ '{' > U+05E3 U+05BC
++ '}' > U+FB49 U+05BC
++ '|' > U+007C
++ 'A' > U+05D0 U+05BC
++ 'S' > U+05E1 U+05BC
++ 'D' > U+05D3 U+05BC
++ 'F' > U+05D8 U+05BC
++ 'G' > U+05D2 U+05BC
++ 'H' > U+05E5
++ 'J' > U+05D7 U+05BC
++ 'K' > U+05DB U+05BC
++ 'L' > U+05DC U+05BC
++ ":" > U+05DA U+05B6
++ '"' > U+0022
++ 'Z' > U+05D6 U+05BC
++ 'X' > U+05E6 U+05BC
++ 'C' > U+05E9 U+05C2 U+05BC
++ 'V' > U+05E9 U+05C1 U+05BC
++ 'B' > U+05D1 U+05BC
++ 'M' > U+05DE U+05BC
++ 'N' > U+05E0 U+05BC
++ '<' > U+05DD
++ '?' > U+05E9
++ '>' > U+002E
+
+c metheg
+dk(1) + '|' > U+05BD  
+c < top
+dk(1) + '<' > U+05AB 
+c < bottom
+dk(1) + ',' > U+05A4 
+
+
+c final mem, pe, nun, tsadi
+U+05DE + " " > U+05DD U+0020 
+U+05E4 + " " > U+05E3 U+0020
+U+05E0 + " " > U+05DF U+0020
+U+05E6 + " " > U+05E5 U+0020
+
+U+05DE + [K_TAB] > U+05DD use(outkey)
+U+05E4 + [K_TAB] > U+05E3 use(outkey)
+U+05E0 + [K_TAB] > U+05DF use(outkey)
+U+05E6 + [K_TAB] > U+05E5 use(outkey)
+
+U+05DE + [K_ENTER] > U+05DD use(outkey)
+U+05E4 + [K_ENTER] > U+05E3 use(outkey)
+U+05E0 + [K_ENTER] > U+05DF use(outkey)
+U+05E6 + [K_ENTER] > U+05E5 use(outkey)
+
+c kaf
+U+05DB + " " > U+05DA
+U+05DB + [K_TAB] > U+05DA
+U+05DB + [K_ENTER] > U+05DA
+
+
+group(outkey) using keys
+
+c empty group to trigger output of TAB and ENTER in KM9
+
+c EOF

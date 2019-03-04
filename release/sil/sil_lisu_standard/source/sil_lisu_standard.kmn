@@ -1,0 +1,33 @@
+﻿
+c 0.2   switch to use 02CD and 02D7
+
+store(&VERSION) "9.0"
+store(&NAME) "Lisu Standard (SIL)"
+c HOTKEY "^+L"
+store(&TARGETS) 'windows macosx linux web'
+store(&ETHNOLOGUECODE) 'lis atb lbc lpo nxq'
+store(&COPYRIGHT) '© 2018 SIL International'
+store(&KEYBOARDVERSION) '0.4'
+store(&BITMAP) 'sil_lisu_standard.ico'
+store(&VISUALKEYBOARD) 'sil_lisu_standard.kvks'
+
+begin Unicode > use(Main)
+
+store(baseK)    "QWERTYUIOP" "qwertyuiop" "ASDFHJKL:" "asdfghjkl;'" \
+                "ZXCVBNM<>" "zxcvbnm,." "!@#$%^&*()" "1234567890-"
+store(base)     "Q" U+25AA U+003C U+003E U+0023 U+A4FB U+2605 U+A4FE U+02D7 U+005E \
+                U+A4F1 U+A4EA U+A4F0 U+A4E3 U+A4D4 U+A4EC U+A4F4 U+A4F2 U+A4F3 U+A4D1 \
+                U+0040 U+2022 U+0028 U+0029 U+A4FF U+A4FD U+A4FC U+02CD U+A4FA \
+                U+A4EE U+A4E2 U+A4D3 U+A4DD U+A4D6 U+A4E7 U+A4D9 U+A4D7 U+A4E1 U+A4EF U+02BC \
+                U+201C U+201D U+0026 U+0025 U+0024 U+002A U+0021 U+A4F9 U+A4F8 \
+                U+A4DC U+A4EB U+A4DA U+A4E6 U+A4D0 U+A4E0 U+A4DF U+A4E5 U+A4E4 \
+                U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030 \
+                U+A4ED U+A4F7 U+A4F6 U+A4DB U+A4D2 U+A4E8 U+A4D8 U+A4D5 U+A4DE U+A4E9 U+A4F5
+
+store(banned)   "G="
+
+group(Main) using keys
+
++ any(baseK) > index(base, 1)
++ any(banned) > beep
+c + any(banned) > index(banned, 1)

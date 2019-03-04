@@ -1,0 +1,81 @@
+c Based on keyboard by Wayne Leman/Cheyenne
+c based on Chey 1 SIL* True Type font
+c modified 2014/04/17
+
+store(&version) '9.0'
+store(&NAME) 'Cheyenne'
+store(&BITMAP) 'sil_cheyenne.ico'
+store(&TARGETS) 'any'
+store(&ETHNOLOGUECODE) 'chy'
+store(&COPYRIGHT) '(c) 2014-2018 SIL International'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'sil_cheyenne.kvks'
+store(&LAYOUTFILE) 'sil_cheyenne.keyman-touch-layout'
+store(&MESSAGE) 'This keyboard allows you to type all the letters and special symbols used in the Cheyenne alphabet.'
+
+begin UNICODE > use(Main)     
+
+store(lc_alph) "abcdefghijklmnopqrstuvwxyz"
+store(uc_alph) "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+store(digits) "01234567890"
+store(punct) "`~!@#$%^&*()-=_+[]\{}|;':,./<>?" '"'
+
+group(Main) using keys
+
+ + any(lc_alph) > index(lc_alph,1)
+ + any(uc_alph) > index(uc_alph,1)
+ + any(digits) > index(digits,1)
+ + any(punct) > index(punct,1)
+ 
+'^' + 'A' > U+0226 c LATIN CAPITAL LETTER A WITH DOT ABOVE
+'^' + 'E' > U+0116 c LATIN CAPITAL LETTER E WITH DOT ABOVE
+'^' + 'O' > U+022E c LATIN CAPITAL LETTER O WITH DOT ABOVE
+'^' + 'a' > U+0227 c LATIN SMALL LETTER A WITH DOT ABOVE
+'^' + 'e' > U+0117 c LATIN SMALL LETTER E WITH DOT ABOVE
+'^' + 'o' > U+022F c LATIN SMALL LETTER O WITH DOT ABOVE
+
+
+'`' + 'A' > U+00C0 c LATIN CAPITAL LETTER A WITH GRAVE
+'`' + 'E' > U+00C8 c LATIN CAPITAL LETTER E WITH GRAVE
+'`' + 'I' > U+00CC c LATIN CAPITAL LETTER I WITH GRAVE
+'`' + 'O' > U+00D2 c LATIN CAPITAL LETTER O WITH GRAVE
+'`' + 'U' > U+00D9 c LATIN CAPITAL LETTER U WITH GRAVE
+'`' + 'a' > U+00E0 c LATIN SMALL LETTER A WITH GRAVE
+'`' + 'e' > U+00E8 c LATIN SMALL LETTER E WITH GRAVE
+'`' + 'i' > U+00EC c LATIN SMALL LETTER I WITH GRAVE
+'`' + 'o' > U+00F2 c LATIN SMALL LETTER O WITH GRAVE
+'`' + 'u' > U+00F9 c LATIN SMALL LETTER U WITH GRAVE
+
+'[' + 'A' > U+00C1 c LATIN CAPITAL LETTER A WITH ACUTE
+'[' + 'E' > U+00C9 c LATIN CAPITAL LETTER E WITH ACUTE
+'[' + 'I' > U+00CD c LATIN CAPITAL LETTER I WITH ACUTE
+'[' + 'O' > U+00D3 c LATIN CAPITAL LETTER O WITH ACUTE
+'[' + 'U' > U+00DA c LATIN CAPITAL LETTER U WITH ACUTE
+'[' + 'a' > U+00E1 c LATIN SMALL LETTER A WITH ACUTE
+'[' + 'e' > U+00E9 c LATIN SMALL LETTER E WITH ACUTE
+'[' + 'i' > U+00ED c LATIN SMALL LETTER I WITH ACUTE
+'[' + 'o' > U+00F3 c LATIN SMALL LETTER O WITH ACUTE
+'[' + 'u' > U+00FA c LATIN SMALL LETTER U WITH ACUTE
+
+c '~' + 'A' > U+00C4 c LATIN CAPITAL LETTER A WITH DIAERESIS
+c '~' + 'E' > U+00CB c LATIN CAPITAL LETTER E WITH DIAERESIS
+c '~' + 'I' > U+00CF c LATIN CAPITAL LETTER I WITH DIAERESIS
+c '~' + 'O' > U+00D6 c LATIN CAPITAL LETTER O WITH DIAERESIS
+c '~' + 'U' > U+00DC c LATIN CAPITAL LETTER U WITH DIAERESIS
+c '~' + 'a' > U+00E4 c LATIN SMALL LETTER A WITH DIAERESIS
+'~' + 'A' > U+0100 c LATIN CAPITAL LETTER A WITH MACRON
+'~' + 'a' > U+0101 c LATIN SMALL LETTER A WITH MACRON
+c '~' + 'e' > U+00EB c LATIN SMALL LETTER E WITH DIAERESIS
+'~' + 'E' > U+0112 c LATIN CAPITAL LETTER E WITH MACRON
+'~' + 'e' > U+0113 c LATIN SMALL LETTER E WITH MACRON
+c '~' + 'i' > U+00EF c LATIN SMALL LETTER I WITH DIAERESIS
+c '~' + 'o' > U+00F6 c LATIN SMALL LETTER O WITH DIAERESIS
+'~' + 'O' > U+014C c LATIN CAPITAL LETTER O WITH MACRON
+'~' + 'o' > U+014D c LATIN SMALL LETTER O WITH MACRON
+c '~' + 'u' > U+00FC c LATIN SMALL LETTER U WITH DIAERESIS
+
+'^' + 'S' > U+0160 c LATIN CAPITAL LETTER S WITH CARON
+'^' + 'Z' > U+017D c LATIN CAPITAL LETTER Z WITH CARON
+'^' + 's' > U+0161 c LATIN SMALL LETTER S WITH CARON
+'^' + 'z' > U+017E c LATIN SMALL LETTER Z WITH CARON
+

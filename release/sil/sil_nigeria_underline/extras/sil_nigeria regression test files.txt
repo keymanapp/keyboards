@@ -1,0 +1,28 @@
+Regression test files
+July 2018
+
+Using Keyman Developer, load .kmn file
+Keyboard menu, Include Debugging Information (if not enabled, click to enable)
+Keyboard menu, Compile Keyboard
+Debug menu, Start Debugging
+
+In Debug pane, select Regression testing tab
+Options menu button, Open regression test... menu item, navigate to desired .xml file
+Once the file is loaded, click on Start Test button to run.
+If test is successful, a message "Regression test was successful." is displayed.
+If not, the point at which there is a disagreement between the regression test data
+and the actual data produced by the keyboard is displayed.
+
+There are three related keyboards:
+* sil_nigeria_odd_vowels
+* sil_nigeria_dot
+* sil_nigeria_underline
+
+There are four regression test files:
+* sil_nigeria_common.xml -- common to all three keyboards
+* sil_nigeria_odd for sil_nigeria_odd_vowels
+* sil_nigeria_dot for sil_nigeria_dot
+* sil_nigeria_underline for sil_nigeria_underline
+
+Information for the apostrophe rota is not included in any of these files
+and must be tested manually.

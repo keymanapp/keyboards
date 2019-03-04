@@ -91,14 +91,14 @@ caption {display: none;}
 
 <div id="credits">
 <p>Version 2.1</p>
-<p><a href="http://www.openroad.net.au/harari" target="_blank">http://www.openroad.net.au/harari</a></p>
+<p><a href="https://www.slv.vic.gov.au/" target="_blank">https://www.slv.vic.gov.au/</a></p>
 <p>© 2009 State Library of Victoria and the Australian Saay Harari Association</p>
 <p>This keyboard was developed to facilitate typing text written in Harari using the Arabic orthography. The layout is based on the Arabic 101 keyboard layout.</p>
 </div>
 
 	<h2>How to type in Harari</h2>
 
-	<p>This keyboard layout was designed for use with the Harari Arabic orthography. For further information refer 	to <a href="http://www.openroad.net.au/harari" target="_blank">http://www.openroad.net.au/harari</a>.</p>
+	<p>This keyboard layout was designed for use with the Harari Arabic orthography. </p>
 
 <h3>Normal</h3>
 <p><img src="hararabaltU_.png" /></p>
@@ -129,8 +129,8 @@ caption {display: none;}
 <p>&copy; 2009 State Library of Victoria and the Australian Saay Harari Association</p>
 <div id="contact">
 <h2>Contact</h2>
-<p id="name"><a href="http://home.vicnet.net.au/~andrewc/" target="_blank">Andrew Cunningham</a><br />
-Vicnet, State Library of Victoria<br />
+<p><a href="mailto:enabling.languages@gmail.com">Andrew Cunningham</a></p>
+<p>Vicnet, State Library of Victoria<br />
 328 Swanston St.<br />
 Melbourne VIC 3000<br />
 Australia<br />

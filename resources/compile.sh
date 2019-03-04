@@ -11,52 +11,78 @@ function build_keyboards {
   
   # excluded folders are: shared, packages and template
 
-  local group=$1
-  local excluded_folders=" shared packages template "
-  
-  echo "$ACTION_VERB keyboards for $1"
-
-  local shortname
-  for shortname in "$KEYBOARDROOT/$group/"*/ ; do
-    if [ ! "$(ls -A $shortname)" ]; then
-      if [ "$WARNINGS_AS_ERRORS" = true ]; then
-        die "$shortname is empty."
-      fi  
-      echo "$shortname is empty. skipping..."
-      continue
-    fi
-
-    local base_shortname=$(basename "$shortname")
-    if [[ "$base_shortname" == '*' ]]; then
-      exit 0
-    fi
-    
-    if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
-      echo "- Skipping folder $group/$base_shortname"
-    else 
-      if [[ "$base_shortname" < "$START" ]]; then
-        echo "- Skipping folder $group/$base_shortname, before $START"
-      else
-        echo "- $ACTION_VERB $group/$base_shortname"
-        local keyboard
-        for keyboard in "$shortname"*/ ; do
-          build_keyboard "$group" "$keyboard"
-        done
+  if [[ $KEYBOARDS_STARTER == 1 ]]; then
+    local starter_keyboard
+    local excluded_folders=" docs resources template tools "
+    for starter_keyboard in "$KEYBOARDROOT/"*/ ; do
+      if [ ! "$(ls -A $starter_keyboard)" ]; then
+        if [ "$WARNINGS_AS_ERRORS" = true ]; then
+          die "$starter_keyboard is empty."
+        fi  
+        echo "$starter_keyboard is empty. skipping..."
+        continue
       fi
-    fi
-  done
-  
-  #
-  # If a packages/ folder exists, we now need to build it. We have to wait until the keyboards are built because it 
-  # depends on files created by the keyboards
-  #
-  
-  if [ -d "$KEYBOARDROOT/$group/packages" ]; then
-    echo "- $ACTION_VERB $group/packages"
-    local package
-    for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
-      build_keyboard "$group" "$package"
+
+      local base_starter_keyboard=$(basename "$starter_keyboard")
+      if [[ "$base_starter_keyboard" == '*' ]]; then
+        exit 0
+      fi
+      
+      if [[ "$excluded_folders" == *" $base_starter_keyboard "* ]]; then
+        echo "- Skipping folder /$base_starter_keyboard"
+      else 
+        echo "- $ACTION_VERB /$base_starter_keyboard"
+        build_keyboard "$base_starter_keyboard"
+      fi
     done
+  else 
+    local group=$1
+    local excluded_folders=" shared packages template "
+    
+    echo "$ACTION_VERB keyboards for $1"
+
+    local shortname
+    for shortname in "$KEYBOARDROOT/$group/"*/ ; do
+      if [ ! "$(ls -A $shortname)" ]; then
+        if [ "$WARNINGS_AS_ERRORS" = true ]; then
+          die "$shortname is empty."
+        fi  
+        echo "$shortname is empty. skipping..."
+        continue
+      fi
+
+      local base_shortname=$(basename "$shortname")
+      if [[ "$base_shortname" == '*' ]]; then
+        exit 0
+      fi
+      
+      if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
+        echo "- Skipping folder $group/$base_shortname"
+      else 
+        if [[ "$base_shortname" < "$START" ]]; then
+          echo "- Skipping folder $group/$base_shortname, before $START"
+        else
+          echo "- $ACTION_VERB $group/$base_shortname"
+          local keyboard
+          for keyboard in "$shortname"*/ ; do
+            build_keyboard "$group" "$keyboard"
+          done
+        fi
+      fi
+    done
+
+    #
+    # If a packages/ folder exists, we now need to build it. We have to wait until the keyboards are built because it 
+    # depends on files created by the keyboards
+    #
+    
+    if [ -d "$KEYBOARDROOT/$group/packages" ]; then
+      echo "- $ACTION_VERB $group/packages"
+      local package
+      for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
+        build_keyboard "$group" "$package"
+      done
+    fi
   fi
   
   return 0
@@ -67,13 +93,21 @@ function build_keyboards {
 #----------------------------------------------------------------------------------------
 
 function build_keyboard {
-  local group=$1
-  local keyboard=$2
-  local base_keyboard=$(basename "$keyboard")
-  local shortname=$(basename $(dirname "$keyboard"))
+  if [[ $KEYBOARDS_STARTER == 1 ]]; then
+    local base_keyboard=$1
+    local shortname=($base_keyboard/release/*)
+    local group=release
+    shortname=$(basename $shortname)
+    local keyboard="$base_keyboard/release/$shortname/$base_keyboard"
+  else
+    local group=$1
+    local keyboard=$2
+    local base_keyboard=$(basename "$keyboard")
+    local shortname=$(basename $(dirname "$keyboard"))
+  fi
   
   echo "$ACTION_VERB $base_keyboard"
-
+    
   pushd "$keyboard"
   
   #
@@ -137,7 +171,7 @@ function build_keyboard {
     . ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
-    if [[ $group == release ]] || [[ $group == experimental ]]; then
+    if [[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]; then
       # We will do a release/experimental build for $keyboard (experimental keyboards are built same way as release keyboards)
       build_release_keyboard "$keyboard" || die "Failed to build $group keyboard $base_keyboard"
     else
@@ -169,7 +203,7 @@ function build_keyboard {
   if [ -n "$keyboard_info_jsFilename" ]; then test -f "build/$keyboard_info_jsFilename" || die "Could not find output file build/$keyboard_info_jsFilename"; fi
   if [ -n "$keyboard_info_documentationFilename" ]; then test -f "build/$keyboard_info_documentationFilename" || die "Could not find output file build/$keyboard_info_documentationFilename"; fi
     
-  merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname $base_keyboard || die "Failed to merge keyboard_info for $base_keyboard"
+  merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname "$base_keyboard" || die "Failed to merge keyboard_info for $base_keyboard"
     
   #
   # Back to root of repo

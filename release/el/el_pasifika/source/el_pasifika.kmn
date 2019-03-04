@@ -1,0 +1,158 @@
+﻿c el_pasifika.kmn
+c 
+c Version 2.1
+c 
+c Pasifika is a keyboard layout that supports Cook Islands Maori, Fijian, Hawaiian, Maori, Niuean, Samoan, Tahitian, and Tongan.
+c 
+c Andjc  (2018-05-14)
+c www.github.com/enabling-languages/
+
+store(&VERSION) '10.0'
+store(&NAME) 'Pasifika'
+store(&COPYRIGHT) '© 2018 Enabling Languages'
+store(&MESSAGE) 'Keyboard layout supports various Polynesian languages'
+store(&BITMAP) 'el_pasifika.ico'
+store(&VISUALKEYBOARD) 'el_pasifika.kvks'
+store(&LAYOUTFILE) 'el_pasifika-layout.js'
+store(&KEYBOARDVERSION) '2.1'
+store(&TARGETS) 'any'
+begin Unicode > use(constraints)
+
+c ------------------------------------------------
+c Alphabetic character stores
+c ------------------------------------------------
+
+c Lowercase characters: qwertyuiop  asdfghjkl zxcvbnm
+store(alphaLowerChars) U+0071 U+0077 U+0065 U+0072 U+0074 U+0079 U+0075 U+0069 U+006F U+0070   \
+                       U+0061 U+0073 U+0064 U+0066 U+0067 U+0068 U+006A U+006B U+006C \
+                       U+007A U+0078 U+0063 U+0076 U+0062 U+006E U+006D
+store(alphaLowerKeys) [K_Q] [K_W] [K_E] [K_R] [K_T] [K_Y] [K_U] [K_I] [K_O] [K_P] \
+                      [K_A] [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
+                      [K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M]
+c Uppercase characters: QWERTYUIOP    ASDFGHJKL    ZXCVBNM
+store(alphaUpperChars) U+0051 U+0057 U+0045 U+0052 U+0054 U+0059 U+0055 U+0049 U+004F U+0050 \
+                       U+0041 U+0053 U+0044 U+0046 U+0047 U+0048 U+004A U+004B U+004C \
+                       U+005A U+0058 U+0043 U+0056 U+0042 U+004E U+004D
+store(alphaUpperKeys) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P] \
+                      [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
+                      [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M]
+
+c Lowercase consonants: qwrtyp  sdfghjkl zxcvbnm
+store(consonantLowerChars) U+0071 U+0077 U+0072 U+0074 U+0079 U+0070   \
+                     U+0073 U+0064 U+0066 U+0067 U+0068 U+006A U+006B U+006C \
+                     U+007A U+0078 U+0063 U+0076 U+0062 U+006E U+006D
+store(consonantLowerKeys) [K_Q] [K_W] [K_R] [K_T] [K_Y] [K_P] \
+                    [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
+                    [K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M]
+c Uppercase consonants: QWRTYP    SDFGHJKL    ZXCVBNM
+store(consonantUpperChars) U+0051 U+0057 U+0052 U+0054 U+0059 U+0050 \
+                     U+0053 U+0044 U+0046 U+0047 U+0048 U+004A U+004B U+004C \
+                     U+005A U+0058 U+0043 U+0056 U+0042 U+004E U+004D
+store(consonantUpperKeys) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_P] \
+                    [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
+                    [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M]
+
+c Lowercase vowels: aeiou
+store(vowelLowerChars) U+0061 U+0065 U+0069 U+006F U+0075
+store(vowelLowerKeys) [K_A]  [K_E] [K_I] [K_O] [K_U]
+
+c Uppercase characters: AEIOU
+store(vowelUpperChars) U+0041 U+0045 U+0049 U+004F U+0055
+store(vowelUpperKeys)[SHIFT K_A] [SHIFT K_E] [SHIFT K_I] [SHIFT K_O] [SHIFT K_U]
+
+store(consonantChars) outs(consonantLowerChars) outs(consonantUpperChars)
+store(consonantKeys) outs(consonantLowerKeys) outs(consonantUpperKeys)
+store(vowelChars) outs(vowelLowerChars) outs(vowelUpperChars)
+store(vowelKeys) outs(vowelLowerKeys) outs(vowelUpperKeys)
+store(alphaChars) outs(consonantChars) outs(vowelChars)
+store(alphaKeys) outs(consonantKeys) outs(vowelKeys)
+
+c ------------------------------------------------
+c Digit stores: 1234567890
+c ------------------------------------------------
+
+store(digitChars) U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030           c 1234567890
+store(digitKeys) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
+store(digitKeysPad) [K_NP1] [K_NP2] [K_NP3] [K_NP4] [K_NP5] [K_NP6] [K_NP7] [K_NP8] [K_NP9] [K_NP0]
+
+c ------------------------------------------------
+c Punctuation stores : !@#$%^&*()-_=+     ;:'"    ,<.>/?
+c ------------------------------------------------
+
+store(punctuationChars) U+0021 U+0040 U+0023 U+0024 U+0025 U+005E U+0026 U+002A U+0028 U+0029 U+002D U+005F U+003D U+002B \
+                                         U+003B U+003A U+0027 U+0022 \
+                                         U+002C U+003C U+002E U+003E U+002F U+003F
+store(punctuationKeys) [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] [K_HYPHEN] [SHIFT K_HYPHEN] [K_EQUAL] [SHIFT K_EQUAL] \
+                       [K_COLON] [SHIFT K_COLON] [K_QUOTE] [SHIFT K_QUOTE] \
+                       [K_COMMA] [SHIFT K_COMMA] [K_PERIOD] [SHIFT K_PERIOD] [K_SLASH] [SHIFT K_SLASH]
+store(coreChars) outs(alphaChars) outs(digitChars) outs(punctuationChars)
+store(coreKeys) outs(alphaKeys) outs(digitKeys) outs(punctuationKeys)
+
+c `~[{]}\|€£©
+store(additionalpunctuationChars) U+0060 U+007E U+005B U+007B U+005D U+007D U+005C U+007C U+20AC U+00A3 U+00A9
+store(additionalpunctuationKeys) [RALT K_BKQUOTE] [SHIFT RALT K_BKQUOTE] [RALT K_LBRKT] [SHIFT RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_RBRKT] [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH] [RALT K_E] [RALT K_4] [RALT K_C]
+store(additionalpunctuationKeysTouch) [T_BKQUOTE] [T_TILDE] [T_LBRKT] [T_LBRACE] [T_RBRKT] [T_RBRACE] [T_BKSLASH] [T_PIPE] [T_EURO] [T_POUND] [T_COPYRIGHT]
+
+store(altKeys) outs(additionalpunctuationKeys) outs(additionalpunctuationKeysTouch)
+
+c ------------------------------------------------
+c Diacritics and modifier letter stores
+c ------------------------------------------------
+
+store(macronKeys) [K_BKQUOTE] [SHIFT K_BKQUOTE]
+store(acuteKeys) [K_LBRKT] [SHIFT K_LBRKT]
+store(diacriticsKeys) outs(macronKeys) outs(acuteKeys)
+store(macronChars) U+0101 U+0113 U+012B U+014D U+016B U+0100 U+0112 U+012A U+014C U+016A
+store(acuteChars) U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+store(nonBaseChar) "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ1234567890`~!@#$%^&*()-_=+[{]}\|;:',./<>?" '"'
+
+store(baseDiaeresisChars) "iI"
+store(diaeresisKeys)  [K_RBRKT] [SHIFT K_RBRKT]
+store(diaeresisChars) U+00EF U+00CF
+store(nonBaseDiaeresisChars) "aAeEoOuUbcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ1234567890`~!@#$%^&*()-_=+[{]}\|;:',./<>?" '"'
+
+store(modifierKeys) [K_BKSLASH] [SHIFT K_BKSLASH]
+store(modifierChars) U+02BB U+02BC
+
+group(constraints) using keys
+
+c ------------------------------------------------
+c Constraints – restrictions to prevent invalid sequences
+c ------------------------------------------------
+
+any(nonBaseChar) + any(diacriticsKeys) > context beep
+any(nonBaseDiaeresisChars) + any(diaeresisKeys) > context beep
+
+c ------------------------------------------------
+c RALT and T_ key rules will not trigger nomatch rule
+c - see https://help.keyman.com/developer/language/reference/nomatch
+c 
+c Added rule to pass RALT sequences to "main" before the nomatch rule.
+c ------------------------------------------------
+
++ any(altKeys) > use(main)
+nomatch > use(main)
+
+group(main) using keys
+
+c ------------------------------------------------
+c Core characters
+c -----------------------------------------------
+
++ any(coreKeys) > index(coreChars,1)
++ any(digitKeysPad) > index(digitChars,1)
+if(&platform != "touch") + any(additionalpunctuationKeys) > index(additionalpunctuationChars,2)
+if(&platform = "touch") + any(additionalpunctuationKeysTouch) > index(additionalpunctuationChars,2)
+
+c ------------------------------------------------
+c Diacritics and modifier letters
+c ------------------------------------------------
+
+any(vowelChars) + any(macronKeys) > index(macronChars,1)
+any(vowelChars) + any(acuteKeys) > index(acuteChars,1)
+any(baseDiaeresisChars) + any(diaeresisKeys) > index(diaeresisChars,1)
++ any(modifierKeys) > index(modifierChars,1)
+
+
+
+c EOF

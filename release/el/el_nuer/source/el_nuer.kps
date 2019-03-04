@@ -1,54 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.928.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1104.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.4</Version>
+    <Version URL=""></Version>
     <Name URL="">Nuer</Name>
-    <Copyright URL="">© 2004-2017 Andrew Cunningham</Copyright>
-    <Author URL="mailto:lang.support@gmail.com">Andrew Cunningham</Author>
+    <Copyright URL="">© 2015-2018 Enabling Languages</Copyright>
+    <Author URL=""></Author>
+    <WebSite URL="https://enabling-languages.github.io/nuer">https://enabling-languages.github.io/nuer</WebSite>
   </Info>
   <Files>
     <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
+      <Name>..\build\el_nuer.js</Name>
+      <Description>File el_nuer.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
+      <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\el_nuer.kvk</Name>
@@ -58,16 +37,56 @@
     </File>
     <File>
       <Name>..\build\el_nuer.kmx</Name>
-      <Description>Keyboard Nuer</Description>
+      <Description>Keyboard Thok Nath</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>keyboard_layout.png</Name>
-      <Description>File keyboard_layout.png</Description>
+      <Name>welcome\el_nuerU_.png</Name>
+      <Description>File el_nuerU_.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>welcome\el_nuerU_RA.png</Name>
+      <Description>File el_nuerU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\el_nuerU_S.png</Name>
+      <Description>File el_nuerU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\el_nuerU_SRA.png</Name>
+      <Description>File el_nuerU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Thok Nath</Name>
+      <ID>el_nuer</ID>
+      <Version></Version>
+      <Languages>
+        <Language ID="nus-Latn">Nuer (Latin)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>

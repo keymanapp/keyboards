@@ -1,0 +1,144 @@
+﻿c Uganda-Tanzania Bantu Unicode Keyboard
+c Adapted from jd East Africa Unicode Control File for Tavultesoft Keyman 6
+c by Scott Zook Nov 2004 
+c modified by Martin Diprose Oct 2005
+c modified by Martin Diprose - to add simpler keystrokes & update for Unicode 5.0 May 2007
+c modified by Martin Diprose - to update for Unicode 5.1 May 2008
+c modified by Martin Diprose - to add support for 0272, 015C, 015D, 1E90, and 1E91 for Ik language in Uganda Dec 2008
+
+VERSION 9.0
+store(&NAME) "Uganda-Tanzania Bantu (SIL)"
+store(&BITMAP) 'sil_uganda_tanzania.ico'
+c store(&HOTKEY)  "^+U"
+store(&Copyright) "2004-2018 SIL International"
+store(&TARGETS) 'windows macosx linux web mobile'
+store(&VISUALKEYBOARD) 'sil_uganda_tanzania.kvks'
+store(&LAYOUTFILE) 'sil_uganda_tanzania.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.1'
+
+begin UNICODE > use(main)
+               
+
+store(kMod) ";"      c general modifying key for vowels and consonants, etc.    
+
+c use kMod followed by vowel to be modified
+store(Vow) "aAeEiIoOuU" c input characters for Modified Vowels
+store(ModVow)  U+01DD U+018E U+025B U+0190 U+0268 U+0197  U+0254 U+0186 U+0289 U+0244
+
+ c diacritics for vowels
+store(kAbove) "`'[]=~:"               c ` grave, ' acute, [ circumflex, ] caron, = macron, ~ tilde, : dieresis
+store(cAbove) U+0300 U+0301 U+0302 U+030C U+0304 U+0303 U+0308
+store(kBelow) "_.},%"   c _ underscore, . dot, } tilde, , inverted breve, % cedille
+store(cBelow) U+0331 U+0323 U+0330 U+032F U+0327
+
+c consonants
+c use kMod followed by consonant to be modified
+store(Con) "nN" "sS" "zZ" "'" "`" c eng, glottal modifier apostrophe
+store(ModCon)  U+014B U+014A U+015D U+015C U+1E91 U+1E90 U+A78C U+02BC
+
+store(kInvBreveBelow) "bB" c consonants that take inverted breve below
+store(cInvBreveBelow) U+032F
+
+store(NasalAbove) "nNmM"  c nasal and semivowels that take diacritics above
+store(kModNasalAbove) "nN"  c keys for modified nasal (eng) that takes diacritics above
+store(cModNasalAbove) U+014B U+014A
+
+c punctuatuion and quotes, etc.
+store(kPunct)  "@#"  c copyright, null
+store(cPunct) U+00A9 U+2205 
+
+store(kQuotes) ",.<>"
+store(QuotesEng) U+2018  U+2019  U+201C U+201D c ' ’ “ ”       
+
+c *** end of STORES ***
+
+group(main) using keys
+
+c *** RULES START HERE ***
+c vowels
+any(kMod) + any(Vow) > index(ModVow,2)  c modified vowels
+
+c diacritics under vowel
+any(kBelow) + any(Vow)  > index(Vow,2) index(cBelow,1) c under normal vowels
+any(kBelow) any(kMod) + any(Vow)  > index(ModVow,3) index(cBelow,1) c under modified vowels
+
+c diacritic above    
+any(kAbove) + any(Vow)    > index(Vow,2) index(cAbove,1) c above normal vowels
+any(kAbove) any(kMod) + any(Vow)    > index(ModVow,3) index(cAbove,1)   c above Modified vowels
+
+c above then below
+any(kAbove) any(kBelow) + any(Vow)  > index(Vow,3) index(cBelow,2) index(cAbove,1) c above under vowels
+any(kAbove) any(kBelow) any(kMod) + any(Vow)  > index(ModVow,4) index(cBelow,2) index(cAbove,1) c above under modified vowels
+
+c allow below then above
+any(kBelow) any(kAbove) + any(Vow)  > index(Vow,3) index(cBelow,1) index(cAbove,2) c above under vowels
+any(kBelow) any(kAbove) any(kMod) + any(Vow)  > index(ModVow,4) index(cBelow,1) index(cAbove,2) c above under modified vowels
+
+c Consonants
+any(kMod) + any(Con) > index(ModCon,2)  c modified consonants
+any(kMod) + any(kInvBreveBelow) > index(kInvBreveBelow,2) index(cInvBreveBelow,1) c b with inverted breve below
+
+c Nasals with (vowel) diacritics
+any(kAbove) + any(NasalAbove) > index(NasalAbove,2) index(cAbove,1)
+any(kAbove) any(kMod) + any(kModNasalAbove) > index(cModNasalAbove,3) index(cAbove,1)  c special case for eng
+
+c Punctuation, Quotes
+any(kMod) + any(kPunct) > index(cPunct,2)
+any(kMod) + any(kQuotes) > index(QuotesEng,2)
+
+c Alternate keying for curly quotes
+
+       + "<" > U+2018            c open single curly quote         
+       + ">" > U+2019            c closed single curly quote        
+U+2018 + "<" > U+201C            c open double curly quote                     
+U+2019 + ">" > U+201D            c closed double curly quote               
+U+201C + "<" > "<"               c three times returns curly quote to angle bracket
+U+201D + ">" > ">"               c three times returns curly quote to angle bracket
+
+c simplified keying for non-breaking apostrophe 02BC
+
+"'" "'" + "'" > U+02BC
+U+02BC + "'" > "'"
+
+c Simplified keying for Uganda
+
+"i" "i" + "i" > "i" U+0331      c hard lower case i
+"I" "i" + "i" > "I" U+0331      c hard upper case I
+"I" "I" + "I" > "I" U+0331      c hard upper case I
+"I" "I" + "i" > "I" U+0331      c hard upper case I
+
+"u" "u" + "u" > "u" U+0331      c hard lower case u
+"U" "u" + "u" > "U" U+0331      c hard upper case U
+"U" "U" + "U" > "U" U+0331      c hard upper case U
+"U" "U" + "u" > "U" U+0331      c hard upper case U
+
+"b" "b" + "b" > "b" U+032F      c soft lower case b
+"B" "b" + "b" > "B" U+032F      c soft upper case B
+"B" "B" + "B" > "B" U+032F      c soft upper case B
+"B" "B" + "b" > "B" U+032F      c soft upper case B
+
+"n" "n" + "n" > U+014B          c lower case eng
+"ŋ" + "n"     > U+0272          c lower case latin letter n with left hook
+"N" "n" + "n" > U+014A          c upper case Eng
+"Ŋ" + "n"     > U+019D          c capital latin letter n with left hook
+"N" "N" + "N" > U+014A          c upper case Eng
+"Ŋ" + "N"     > U+019D          c capital latin letter n with left hook
+"N" "N" + "n" > U+014A          c upper case Eng
+"ŋ" + "N"     > U+019D          c capital latin letter n with left hook
+
+"s" "s" + "s" > U+015D          c lower case s with circumflex
+"S" "s" + "s" > U+015C          c upper case s with circumflex
+"S" "S" + "S" > U+015C          c upper case s with circumflex
+"S" "S" + "s" > U+015C          c upper case s with circumflex
+
+"z" "z" + "z" > U+1E91          c lower case z with circumflex
+"Z" "z" + "z" > U+1E90          c upper case z with circumflex
+"Z" "Z" + "Z" > U+1E90          c upper case z with circumflex
+"Z" "Z" + "z" > U+1E90          c upper case z with circumflex
+ 
+c To print regular key before a character
+any(kMod) + any(kMod) > index(kMod,1) dk(1)        
+
+platform('touch') + [T_b_U_032F] > 'b' U+032F
+platform('touch') + [SHIFT T_B_U_032F] > 'B' U+032F
+

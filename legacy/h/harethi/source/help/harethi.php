@@ -707,8 +707,8 @@ please use one of the other Ethiopic keyboard layouts that are available</p>
 <p>&copy; 2009 State Library of Victoria and the Australian Saay Harari Association </p>
 <div id="contact">
 <h2>contact</h2>
-<p id="name"><a href="http://home.vicnet.net.au/~andrewc/" target="_blank">Andrew Cunningham</a><br />
-Vicnet, State Library of Victoria<br />
+<p><a href="mailto:enabling.languages@gmail.com">Andrew Cunningham</a></p>
+<p>Vicnet, State Library of Victoria<br />
 328 Swanston St.<br />
 Melbourne VIC 3000<br />
 Australia<br />

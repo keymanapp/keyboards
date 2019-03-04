@@ -1,0 +1,1421 @@
+﻿c sil_yi.kmn
+c
+c Yi keyboard layout using pinyin input.
+c Author:  Andy Eatough
+c Date:   Nov 30, 2000, Last revised Sept 3, 2002
+c
+
+
+store(&version) "9.0"
+store(&name) "SIL Yi"
+store(&BITMAP) 'sil_yi.bmp'
+store(&message) "Yi keyboard layout using pinyin input"
+store(&TARGETS) 'desktop'
+store(&COPYRIGHT) '© 2000-2018 SIL International'
+store(&KEYBOARDVERSION) '1.2.3'
+store(&ETHNOLOGUECODE) 'iii nos nty yig ysn smh ywq nsd nsv ysd'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+begin Unicode > use(Unicode Group)
+
+group(Unicode Group) using keys
+
+c RULES
+
+'it' + ' '          > U+a000         c Yi high tone i
+'ix' + ' '          > U+a001         c Yi mid-high tone i
+'i' + ' '           > U+a002         c Yi mid tone i
+'ip' + ' '          > U+a003         c Yi low tone i
+'iet' + ' '         > U+a004         c Yi high tone ie
+'iex' + ' '         > U+a005         c Yi mid-high tone ie
+'ie' + ' '          > U+a006         c Yi mid tone ie
+'iep' + ' '         > U+a007         c Yi low tone ie
+'at' + ' '          > U+a008         c Yi high tone a
+'ax' + ' '          > U+a009         c Yi mid-high tone a
+'a' + ' '           > U+a00a         c Yi mid tone a
+'ap' + ' '          > U+a00b         c Yi low tone a
+'uox' + ' '         > U+a00c         c Yi mid-high tone uo
+'uo' + ' '          > U+a00d         c Yi mid tone uo
+'uop' + ' '         > U+a00e         c Yi low tone uo
+'ot' + ' '          > U+a00f         c Yi high tone o
+'ox' + ' '          > U+a010         c Yi mid-high tone o
+'o' + ' '           > U+a011         c Yi mid tone o
+'op' + ' '          > U+a012         c Yi low tone o
+'ex' + ' '          > U+a013         c Yi mid-high tone e
+'e' + ' '           > U+a014         c Yi mid tone e
+'w' + ' '           > U+a015         c Yi reduplication symbol
+
+c ------------------------------------
+c Yi syllables beginning with b
+c ------------------------------------
+'bit' + ' '          > U+a016         c Yi high tone bi
+'bix' + ' '          > U+a017         c Yi mid-high tone bi
+'bi' + ' '           > U+a018         c Yi mid tone bi
+'bip' + ' '          > U+a019         c Yi low tone bi
+'biet' + ' '         > U+a01a         c Yi high tone bie
+'biex' + ' '         > U+a01b         c Yi mid-high tone bie
+'bie' + ' '          > U+a01c         c Yi mid tone bie
+'biep' + ' '         > U+a01d         c Yi low tone bie
+'bat' + ' '          > U+a01e         c Yi high tone ba
+'bax' + ' '          > U+a01f         c Yi mid-high tone ba
+'ba' + ' '           > U+a020         c Yi mid tone ba
+'bap' + ' '          > U+a021         c Yi low tone ba
+'buox' + ' '         > U+a022         c Yi mid-high tone buo
+'buo' + ' '          > U+a023         c Yi mid tone buo
+'buop' + ' '         > U+a024         c Yi low tone buo
+'bot' + ' '          > U+a025         c Yi high tone bo
+'box' + ' '          > U+a026         c Yi mid-high tone bo
+'bo' + ' '           > U+a027         c Yi mid tone bo
+'bop' + ' '          > U+a028         c Yi low tone bo
+'bex' + ' '          > U+a029         c Yi mid-high tone be
+'be' + ' '           > U+a02a         c Yi mid tone be
+'bep' + ' '          > U+a02b         c Yi low tone be
+'but' + ' '          > U+a02c         c but
+'bux' + ' '          > U+a02d         c bux
+'bu' + ' '           > U+a02e         c bu
+'bup' + ' '          > U+a02f         c bup
+'burx' + ' '         > U+a030         c burx
+'bur' + ' '          > U+a031         c bur
+'byt' + ' '          > U+a032         c byt
+'byx' + ' '          > U+a033         c byx
+'by' + ' '           > U+a034         c by
+'byp' + ' '          > U+a035         c byp
+'byrx' + ' '         > U+a036         c byrx
+'byr' + ' '          > U+a037         c byr
+
+c ------------------------------------
+c Yi syllables beginning with p
+c ------------------------------------
+'pit' + ' '          > U+a038
+'pix' + ' '          > U+a039
+'pi' + ' '           > U+a03a     c pi
+'pip' + ' '          > U+a03b
+'piex' + ' '         > U+a03c
+'pie' + ' '          > U+a03d     c pie
+'piep' + ' '         > U+a03e
+'pat' + ' '          > U+a03f
+'pax' + ' '         > U+a040
+'pa' + ' '        > U+a041      c pa
+'pap' + ' '         > U+a042
+'puox' + ' '         > U+a043
+'puo' + ' '        > U+a044      c puo
+'puop' + ' '         > U+a045
+'pot' + ' '         > U+a046
+'pox' + ' '         > U+a047
+'po' + ' '        > U+a048      c po
+'pop' + ' '         > U+a049
+'put' + ' '         > U+a04a
+'pux' + ' '         > U+a04b
+'pu' + ' '        > U+a04c      c pu
+'pup' + ' '         > U+a04d
+'purx' + ' '         > U+a04e
+'pur' + ' '        > U+a04f      c pur
+'pyt' + ' '         > U+a050
+'pyx' + ' '         > U+a051
+'py' + ' '        > U+a052      c py
+'pyp' + ' '         > U+a053
+'pyrx' + ' '         > U+a054
+'pyr' + ' '        > U+a055      c pyr
+
+c ------------------------------------
+c Yi syllables starting with bb
+c ------------------------------------
+'bbit' + ' '       > U+a056        c bbit
+'bbix' + ' '       > U+a057        c bbix
+'bbi' + ' '       > U+a058        c bbi
+'bbip' + ' '       > U+a059        c bbip
+'bbiet' + ' '       > U+a05a        c bbiet
+'bbiex' + ' '       > U+a05b        c bbiex
+'bbie' + ' '       > U+a05c        c bbie
+'bbiep' + ' '       > U+a05d        c bbiep
+'bbat' + ' '       > U+a05e        c bbat
+'bbax' + ' '       > U+a05f        c bbax
+'bba' + ' '       > U+a060        c bba
+'bbap' + ' '       > U+a061        c bbap
+'bbuox' + ' '       > U+a062        c bbuox
+'bbuo' + ' '       > U+a063        c bbuo
+'bbuop' + ' '       > U+a064        c bbuop
+'bbot' + ' '       > U+a065        c bbot
+'bbox' + ' '       > U+a066        c bbox
+'bbo' + ' '       > U+a067        c bbo
+'bbop' + ' '       > U+a068        c bbop
+'bbex' + ' '       > U+a069        c bbex
+'bbe' + ' '       > U+a06a        c bbe
+'bbep' + ' '       > U+a06b        c bbep
+'bbut' + ' '       > U+a06c        c bbut
+'bbux' + ' '       > U+a06d        c bbux
+'bbu' + ' '       > U+a06e        c bbu
+'bbup' + ' '       > U+a06f        c bbup
+'bburx' + ' '       > U+a070        c bburx
+'bbur' + ' '       > U+a071        c bbur
+'bbyt' + ' '       > U+a072        c bbyt
+'bbyx' + ' '       > U+a073        c bbyx
+'bby' + ' '       > U+a074        c bby
+'bbyp' + ' '       > U+a075        c bbyp
+
+c ------------------------------------
+c syllables beginning with nb
+c ------------------------------------
+'nbit' + ' '       > U+a076        c nbit
+'nbix' + ' '       > U+a077        c nbix
+'nbi' + ' '      > U+a078        c nbi
+'nbip' + ' '       > U+a079        c nbip
+'nbiex' + ' '       > U+a07a        c nbiex
+'nbie' + ' '      > U+a07b        c nbie
+'nbiep' + ' '       > U+a07c        c nbiep
+'nbat' + ' '       > U+a07d        c nbat
+'nbax' + ' '       > U+a07e        c nbax
+'nba' + ' '      > U+a07f        c nba
+'nbap' + ' '       > U+a080        c nbap
+'nbot' + ' '       > U+a081        c nbot
+'nbox' + ' '       > U+a082        c nbox
+'nbo' + ' '      > U+a083        c nbo (nbuo doesn't exist)
+'nbop' + ' '       > U+a084        c nbop
+'nbut' + ' '       > U+a085        c nbut
+'nbux' + ' '       > U+a086        c nbux
+'nbu' + ' '      > U+a087        c nbu
+'nbup' + ' '       > U+a088        c nbup
+'nburx' + ' '       > U+a089        c nburx
+'nbur' + ' '      > U+a08a        c nbur
+'nbyt' + ' '       > U+a08b        c nbyt
+'nbyx' + ' '       > U+a08c        c nbyx
+'nby' + ' '      > U+a08d        c nby
+'nbyp' + ' '       > U+a08e        c nbyp
+'nbyrx' + ' '       > U+a08f        c nbyrx
+'nbyr' + ' '      > U+a090        c nbyr
+
+c ------------------------------------
+c syllables beginning with hm
+c ------------------------------------
+'hmit' + ' '       > U+a091        c hmit
+'hmix' + ' '       > U+a092        c hmix
+'hmi' + ' '        > U+a093        c hmi
+'hmip' + ' '       > U+a094        c hmip
+'hmiex' + ' '       > U+a095        c hmiex
+'hmie' + ' '      > U+a096        c hmie
+'hmiep' + ' '       > U+a097        c hmiep
+'hmat' + ' '       > U+a098        c hmat
+'hmax' + ' '       > U+a099        c hmax
+'hma' + ' '      > U+a09a        c hma
+'hmap' + ' '       > U+a09b        c hmap
+'hmuox' + ' '       > U+a09c        c hmuox
+'hmuo' + ' '      > U+a09d        c hmuo
+'hmuop' + ' '       > U+a09e        c hmuop
+'hmot' + ' '       > U+a09f        c hmot
+'hmox' + ' '       > U+a0a0        c hmox
+'hmo' + ' '      > U+a0a1        c hmo
+'hmop' + ' '       > U+a0a2        c hmop
+'hmut' + ' '       > U+a0a3        c hmut
+'hmux' + ' '       > U+a0a4        c hmux
+'hmu' + ' '      > U+a0a5        c hmu
+'hmup' + ' '       > U+a0a6        c hmup
+'hmurx' + ' '       > U+a0a7        c hmurx
+'hmur' + ' '      > U+a0a8        c hmur
+'hmyx' + ' '       > U+a0a9        c hmyx
+'hmy' + ' '      > U+a0aa        c hmy
+'hmyp' + ' '       > U+a0ab        c hmyp
+'hmyrx' + ' '       > U+a0ac        c hmyrx
+'hmyr' + ' '      > U+a0ad        c hmyr
+
+c ------------------------------------
+c syllables beginning with m
+c ------------------------------------
+'mit' + ' '       > U+a0ae        c mit
+'mix' + ' '       > U+a0af        c mix
+'mi' + ' '        > U+a0b0        c mi
+'mip' + ' '       > U+a0b1        c mip
+'miex' + ' '       > U+a0b2        c miex
+'mie' + ' '      > U+a0b3        c mie
+'miep' + ' '       > U+a0b4        c miep
+'mat' + ' '       > U+a0b5        c mat
+'max' + ' '       > U+a0b6        c max
+'ma' + ' '      > U+a0b7        c ma
+'map' + ' '       > U+a0b8        c map
+'muot' + ' '       > U+a0b9        c muot
+'muox' + ' '       > U+a0ba        c muox
+'muo' + ' '      > U+a0bb        c muo
+'muop' + ' '       > U+a0bc        c muop
+'mot' + ' '       > U+a0bd        c mot
+'mox' + ' '       > U+a0be        c mox
+'mo' + ' '      > U+a0bf        c mo
+'mop' + ' '       > U+a0c0        c mop
+'mex' + ' '       > U+a0c1        c mex
+'me' + ' '      > U+a0c2        c me
+'mut' + ' '       > U+a0c3        c mut
+'mux' + ' '       > U+a0c4        c mux
+'mu' + ' '      > U+a0c5        c mu
+'mup' + ' '       > U+a0c6        c mup
+'murx' + ' '       > U+a0c7        c murx
+'mur' + ' '      > U+a0c8        c mur
+'myx' + ' '       > U+a0ca        c myx
+'my' + ' '      > U+a0cb        c my
+'myp' + ' '       > U+a0cc        c myp
+'myt' + ' '      > U+a0c9        c myt (myr does not exist)
+
+c ------------------------------------
+c syllables beginning with f
+c ------------------------------------
+'fit' + ' '       > U+a0cd        c fit
+'fix' + ' '       > U+a0ce        c fix
+'fi' + ' '      > U+a0cf        c fi
+'fip' + ' '       > U+a0d0        c fip
+
+c ------------------------------------
+c fie does not exist
+c ------------------------------------
+'fat' + ' '       > U+a0d1        c fat
+'fax' + ' '       > U+a0d2        c fax
+'fa' + ' '      > U+a0d3        c fa
+'fap' + ' '       > U+a0d4        c fap
+
+c ------------------------------------
+c fuo does not exist
+c ------------------------------------
+'fox' + ' '       > U+a0d5        c fox
+'fo' + ' '      > U+a0d6        c fo
+'fop' + ' '       > U+a0d7        c fop
+
+c ------------------------------------
+c fe does not exist
+c ------------------------------------
+'fut' + ' '       > U+a0d8        c fut
+'fux' + ' '       > U+a0d9        c fux
+'fu' + ' '       > U+a0da        c fu
+'fup' + ' '       > U+a0db        c fup
+'furx' + ' '       > U+a0dc        c furx
+'fur' + ' '      > U+a0dd        c fur
+'fyx' + ' '       > U+a0df        c fyx
+'fy' + ' '      > U+a0e0        c fy
+'fyp' + ' '       > U+a0e1        c fyp
+'fyt' + ' '      > U+a0de        c fyt (fyr does not exist)
+
+c ------------------------------------
+c syllables beginning with v
+c ------------------------------------
+'vit' + ' '       > U+a0e2        c vit
+'vix' + ' '        > U+a0e3        c vix
+'vi' + ' '      > U+a0e4        c vi
+'vip' + ' '       > U+a0e5        c vip
+'viet' + ' '       > U+a0e6        c viet
+'viex' + ' '       > U+a0e7        c viex
+'vie' + ' '      > U+a0e8        c vie
+'viep' + ' '       > U+a0e9        c viep
+'vat' + ' '       > U+a0ea        c vat
+'vax' + ' '       > U+a0eb        c vax
+'va' + ' '      > U+a0ec        c va
+'vap' + ' '       > U+a0ed        c vap
+
+c ------------------------------------
+c vuo does not exist
+c ------------------------------------
+'vot' + ' '       > U+a0ee        c vot
+'vox' + ' '       > U+a0ef        c vox
+'vo' + ' '      > U+a0f0        c vo
+'vop' + ' '       > U+a0f1        c vop
+'vex' + ' '       > U+a0f2        c vex
+'vep' + ' '      > U+a0f3        c vep (ve does not exist)
+'vut' + ' '       > U+a0f4        c vut
+'vux' + ' '       > U+a0f5        c vux
+'vu' + ' '      > U+a0f6        c vu
+'vup' + ' '       > U+a0f7        c vup
+'vurx' + ' '       > U+a0f8        c vurx
+'vur' + ' '      > U+a0f9        c vur
+'vyt' + ' '       > U+a0fa        c vyt
+'vyx' + ' '       > U+a0fb        c vyx
+'vy' + ' '      > U+a0fc        c vy
+'vyp' + ' '       > U+a0fd        c vyp
+'vyrx' + ' '       > U+a0fe        c vyrx
+'vyr' + ' '      > U+a0ff        c vyr
+
+c ------------------------------------
+c syllables beginning with d
+c ------------------------------------
+'dit' + ' '       > U+a100        c dit
+'dix' + ' '       > U+a101        c dix
+'di' + ' '       > U+a102        c di
+'dip' + ' '       > U+a103        c dip
+'diex' + ' '       > U+a104        c diex
+'die' + ' '       > U+a105        c die
+'diep' + ' '       > U+a106        c diep
+'dat' + ' '       > U+a107        c dat
+'dax' + ' '       > U+a108        c dax
+'da' + ' '       > U+a109        c da
+'dap' + ' '       > U+a10a        c dap
+'duox' + ' '       > U+a10b        c duox
+'duo' + ' '       > U+a10c        c duo
+'dot' + ' '       > U+a10d        c dot
+'dox' + ' '       > U+a10e        c dox
+'do' + ' '       > U+a10f        c do
+'dop' + ' '       > U+a110        c dop
+'dex' + ' '       > U+a111        c dex
+'de' + ' '       > U+a112        c de
+'dep' + ' '       > U+a113        c dep
+'dut' + ' '       > U+a114        c dut
+'dux' + ' '       > U+a115        c dux
+'du' + ' '       > U+a116        c du
+'dup' + ' '       > U+a117        c dup
+'durx' + ' '       > U+a118        c durx
+'dur' + ' '       > U+a119        c dur
+
+c ------------------------------------
+c syllables beginning with t
+c ------------------------------------
+'tit' + ' '       > U+a11a        c tit
+'tix' + ' '       > U+a11b        c tix
+'ti' + ' '      > U+a11c        c ti
+'tip' + ' '       > U+a11d        c tip
+'tiex' + ' '       > U+a11e        c tiex
+'tie' + ' '      > U+a11f        c tie
+'tiep' + ' '       > U+a120        c tiep
+'tat' + ' '       > U+a121        c tat
+'tax' + ' '       > U+a122        c tax
+'ta' + ' '      > U+a123        c ta
+'tap' + ' '       > U+a124        c tap
+'tuot' + ' '       > U+a125        c tuot
+'tuox' + ' '       > U+a126        c tuox
+'tuo' + ' '      > U+a127        c tuo
+'tuop' + ' '       > U+a128        c tuop
+'tot' + ' '       > U+a129        c tot
+'tox' + ' '       > U+a12a        c tox
+'to' + ' '      > U+a12b        c to
+'top' + ' '       > U+a12c        c top
+'tex' + ' '       > U+a12d        c tex
+'te' + ' '      > U+a12e        c te
+'tep' + ' '       > U+a12f        c tep
+'tut' + ' '       > U+a130        c tut
+'tux' + ' '       > U+a131        c tux
+'tu' + ' '      > U+a132        c tu
+'tup' + ' '       > U+a133        c tup
+'turx' + ' '       > U+a134        c turx
+'tur' + ' '      > U+a135        c tur
+
+c ------------------------------------
+c syllables beginning with dd
+c ------------------------------------
+'ddit' + ' '       > U+a136        c ddit
+'ddix' + ' '       > U+a137        c ddix
+'ddi' + ' '       > U+a138        c ddi
+'ddip' + ' '       > U+a139        c ddip
+'ddiex' + ' '       > U+a13a        c ddiex
+'ddie' + ' '       > U+a13b        c ddie
+'ddiep' + ' '       > U+a13c        c ddiep
+'ddat' + ' '       > U+a13d        c ddat
+'ddax' + ' '       > U+a13e        c ddax
+'dda' + ' '       > U+a13f        c dda
+'ddap' + ' '       > U+a140        c ddap
+'dduox' + ' '       > U+a141        c dduox
+'dduo' + ' '       > U+a142        c dduo
+'dduop' + ' '       > U+a143        c dduop
+'ddot' + ' '       > U+a144        c ddot
+'ddox' + ' '       > U+a145        c ddox
+'ddo' + ' '       > U+a146        c ddo
+'ddop' + ' '       > U+a147        c ddop
+'ddex' + ' '       > U+a148        c ddex
+'dde' + ' '       > U+a149        c dde
+'ddep' + ' '       > U+a14a        c ddep
+'ddut' + ' '       > U+a14b        c ddut
+'ddux' + ' '       > U+a14c        c ddux
+'ddu' + ' '       > U+a14d        c ddu
+'ddup' + ' '       > U+a14e        c ddup
+'ddurx' + ' '       > U+a14f        c ddurx
+'ddur' + ' '       > U+a150        c ddur
+
+c ------------------------------------
+c syllables beginning with nd
+c ------------------------------------
+'ndit' + ' '       > U+a151        c ndit
+'ndix' + ' '       > U+a152        c ndix
+'ndi' + ' '      > U+a153        c ndi
+'ndip' + ' '       > U+a154        c ndip
+'ndiex' + ' '       > U+a155        c ndiex
+'ndie' + ' '      > U+a156        c ndie
+'ndat' + ' '       > U+a157        c ndat
+'ndax' + ' '       > U+a158        c ndax
+'nda' + ' '      > U+a159        c nda
+'ndap' + ' '       > U+a15a        c ndap
+
+c ------------------------------------
+c nduo does not exist
+c ------------------------------------
+'ndot' + ' '       > U+a15b        c ndot
+'ndox' + ' '       > U+a15c        c ndox
+'ndo' + ' '      > U+a15d        c ndo
+'ndop' + ' '       > U+a15e        c ndop
+'ndex' + ' '       > U+a15f        c ndex
+'nde' + ' '      > U+a160        c nde
+'ndep' + ' '       > U+a161        c ndep
+'ndut' + ' '       > U+a162        c ndut
+'ndux' + ' '       > U+a163        c ndux
+'ndu' + ' '      > U+a164        c ndu
+'ndup' + ' '       > U+a165        c ndup
+'ndurx' + ' '       > U+a166        c ndurx
+'ndur' + ' '      > U+a167        c ndur
+
+c ------------------------------------
+c syllables beginning with hn
+c ------------------------------------
+'hnit' + ' '       > U+a168        c hnit
+'hnix' + ' '       > U+a169        c hnix
+'hni' + ' '      > U+a16a        c hni
+'hnip' + ' '       > U+a16b        c hnip
+'hniet' + ' '       > U+a16c        c hniet
+'hniex' + ' '       > U+a16d        c hniex
+'hnie' + ' '      > U+a16e        c hnie
+'hniep' + ' '       > U+a16f        c hniep
+'hnat' + ' '       > U+a170        c hnat
+'hnax' + ' '       > U+a171        c hnax
+'hna' + ' '      > U+a172        c hna
+'hnap' + ' '       > U+a173        c hnap
+'hnuox' + ' '       > U+a174        c hnuox
+'hnuo' + ' '      > U+a175        c hnuo
+'hnot' + ' '       > U+a176        c hnot
+'hnox' + ' '       > U+a177        c hnox
+'hnop' + ' '      > U+a178        c hnop (hno does not exist)
+'hnex' + ' '       > U+a179        c hnex
+'hne' + ' '      > U+a17a        c hne
+'hnep' + ' '       > U+a17b        c hnep
+c hnu does not exist
+'hnut' + ' '      > U+a17c        c hnut (hnur does not exist)
+
+c ------------------------------------
+c syllables beginning with n
+c ------------------------------------
+'nit' + ' '       > U+a17d        c nit
+'nix' + ' '       > U+a17e        c nix
+'ni' + ' '      > U+a17f        c ni
+'nip' + ' '       > U+a180        c nip
+'niex' + ' '       > U+a181        c niex
+'nie' + ' '      > U+a182        c nie
+'niep' + ' '       > U+a183        c niep
+'nax' + ' '       > U+a184        c nax
+'na' + ' '      > U+a185        c na
+'nap' + ' '       > U+a186        c nap
+'nuox' + ' '       > U+a187        c nuox
+'nuo' + ' '      > U+a188        c nuo
+'nuop' + ' '       > U+a189        c nuop
+'not' + ' '       > U+a18a        c not
+'nox' + ' '       > U+a18b        c nox
+'no' + ' '      > U+a18c        c no
+'nop' + ' '       > U+a18d        c nop
+'nex' + ' '       > U+a18e        c nex
+'ne' + ' '      > U+a18f        c ne
+'nep' + ' '       > U+a190        c nep
+'nut' + ' '       > U+a191        c nut
+'nux' + ' '       > U+a192        c nux
+'nu' + ' '      > U+a193        c nu
+'nup' + ' '       > U+a194        c nup
+'nurx' + ' '       > U+a195        c nurx
+'nur' + ' '      > U+a196        c nur
+
+c ------------------------------------
+c syllables beginning with hl
+c ------------------------------------
+'hlit' + ' '       > U+a197        c hlit
+'hlix' + ' '       > U+a198        c hlix
+'hli' + ' '      > U+a199        c hli
+'hlip' + ' '       > U+a19a        c hlip
+'hliex' + ' '       > U+a19b        c hliex
+'hlie' + ' '      > U+a19c        c hlie
+'hliep' + ' '       > U+a19d        c hliep
+'hlat' + ' '       > U+a19e        c hlat
+'hlax' + ' '       > U+a19f        c hlax
+'hla' + ' '      > U+a1a0        c hla
+'hlap' + ' '       > U+a1a1        c hlap
+'hluox' + ' '       > U+a1a2        c hluox
+'hluo' + ' '      > U+a1a3        c hluo
+'hluop' + ' '       > U+a1a4        c hluop
+'hlox' + ' '       > U+a1a5        c hlox
+'hlo' + ' '      > U+a1a6        c hlo
+'hlop' + ' '       > U+a1a7        c hlop
+'hlex' + ' '       > U+a1a8        c hlex
+'hle' + ' '      > U+a1a9        c hle
+'hlep' + ' '       > U+a1aa        c hlep
+'hlut' + ' '       > U+a1ab        c hlut
+'hlux' + ' '       > U+a1ac        c hlux
+'hlu' + ' '      > U+a1ad        c hlu
+'hlup' + ' '       > U+a1ae        c hlup
+'hlurx' + ' '       > U+a1af        c hlurx
+'hlur' + ' '      > U+a1b0        c hlur
+'hlyt' + ' '       > U+a1b1        c hlyt
+'hlyx' + ' '       > U+a1b2        c hlyx
+'hly' + ' '      > U+a1b3        c hly
+'hlyp' + ' '       > U+a1b4        c hlyp
+'hlyrx' + ' '       > U+a1b5        c hlyrx
+'hlyr' + ' '      > U+a1b6        c hlyr
+
+c ------------------------------------
+c syllables beginning with l
+c ------------------------------------
+'lit' + ' '       > U+a1b7      c lit
+'lix' + ' '       > U+a1b8      c lix
+'li' + ' '      > U+a1b9      c li
+'lip' + ' '       > U+a1ba      c lip
+'liet' + ' '       > U+a1bb      c liet
+'liex' + ' '       > U+a1bc      c liex
+'lie' + ' '      > U+a1bd      c lie
+'liep' + ' '       > U+a1be      c liep
+'lat' + ' '       > U+a1bf      c lat
+'lax' + ' '       > U+a1c0      c lax
+'la' + ' '      > U+a1c1      c la
+'lap' + ' '       > U+a1c2      c lap
+'luot' + ' '       > U+a1c3      c luot
+'luox' + ' '       > U+a1c4      c luox
+'luo' + ' '      > U+a1c5      c luo
+'luop' + ' '       > U+a1c6      c luop
+'lot' + ' '       > U+a1c7      c lot
+'lox' + ' '       > U+a1c8      c lox
+'lo' + ' '      > U+a1c9      c lo
+'lop' + ' '       > U+a1ca      c lop
+'lex' + ' '       > U+a1cb      c lex
+'le' + ' '      > U+a1cc      c le
+'lep' + ' '       > U+a1cd      c lep
+'lut' + ' '       > U+a1ce      c lut
+'lux' + ' '       > U+a1cf      c lux
+'lu' + ' '      > U+a1d0      c lu
+'lup' + ' '       > U+a1d1      c lup
+'lurx' + ' '       > U+a1d2      c lurx
+'lur' + ' '      > U+a1d3      c lur
+'lyt' + ' '       > U+a1d4      c lyt
+'lyx' + ' '       > U+a1d5      c lyx
+'ly' + ' '      > U+a1d6      c ly
+'lyp' + ' '       > U+a1d7      c lyp
+'lyrx' + ' '       > U+a1d8      c lyrx
+'lyr' + ' '      > U+a1d9      c lyr
+
+c ------------------------------------
+c syllables beginning with g
+c ------------------------------------
+'git' + ' '       > U+a1da            c git
+'gix' + ' '       > U+a1db            c gix
+'gi' + ' '      > U+a1dc            c gi
+'gip' + ' '       > U+a1dd            c gip
+'giet' + ' '       > U+a1de            c giet
+'giex' + ' '       > U+a1df            c giex
+'gie' + ' '      > U+a1e0            c gie
+'giep' + ' '       > U+a1e1            c giep
+'gat' + ' '       > U+a1e2            c gat
+'gax' + ' '       > U+a1e3            c gax
+'ga' + ' '      > U+a1e4            c ga
+'gap' + ' '       > U+a1e5            c gap
+'guot' + ' '       > U+a1e6            c guot
+'guox' + ' '       > U+a1e7            c guox
+'guo' + ' '      > U+a1e8            c guo
+'guop' + ' '       > U+a1e9            c guop
+'got' + ' '       > U+a1ea            c got
+'gox' + ' '       > U+a1eb            c gox
+'go' + ' '      > U+a1ec            c go
+'gop' + ' '       > U+a1ed            c gop
+'get' + ' '       > U+a1ee            c get
+'gex' + ' '       > U+a1ef            c gex
+'ge' + ' '      > U+a1f0            c ge
+'gep' + ' '       > U+a1f1            c gep
+'gut' + ' '       > U+a1f2            c gut
+'gux' + ' '       > U+a1f3            c gux
+'gu' + ' '      > U+a1f4            c gu
+'gup' + ' '       > U+a1f5            c gup
+'gurx' + ' '       > U+a1f6            c gurx
+'gur' + ' '      > U+a1f7            c gur
+
+c ------------------------------------
+c syllables beginning with k
+c ------------------------------------
+'kit' + ' '       > U+a1f8            c kit
+'kix' + ' '       > U+a1f9            c kix
+'ki' + ' '      > U+a1fa            c ki
+'kip' + ' '       > U+a1fb            c kip
+'kiex' + ' '       > U+a1fc            c kiex
+'kie' + ' '      > U+a1fd            c kie
+'kiep' + ' '       > U+a1fe            c kiep
+'kat' + ' '       > U+a1ff            c kat
+'kax' + ' '       > U+a200            c kax
+'ka' + ' '      > U+a201            c ka
+'kap' + ' '       > U+a202            c kap
+'kuox' + ' '       > U+a203            c kuox
+'kuo' + ' '      > U+a204            c kuo
+'kuop' + ' '       > U+a205            c kuop
+'kot' + ' '       > U+a206            c kot
+'kox' + ' '       > U+a207            c kox
+'ko' + ' '      > U+a208            c ko
+'kop' + ' '       > U+a209            c kop
+'ket' + ' '       > U+a20a            c ket
+'kex' + ' '       > U+a20b            c kex
+'ke' + ' '      > U+a20c            c ke
+'kep' + ' '       > U+a20d            c kep
+'kut' + ' '       > U+a20e            c kut
+'kux' + ' '       > U+a20f            c kux
+'ku' + ' '      > U+a210            c ku
+'kup' + ' '       > U+a211            c kup
+'kurx' + ' '       > U+a212            c kurx
+'kur' + ' '      > U+a213            c kur
+
+c ------------------------------------
+c syllables beginning with gg
+c ------------------------------------
+'ggit' + ' '       > U+a214            c ggit
+'ggix' + ' '       > U+a215            c ggix
+'ggi' + ' '      > U+a216            c ggi
+'ggiex' + ' '       > U+a217            c ggiex
+'ggie' + ' '      > U+a218            c ggie
+'ggiep' + ' '       > U+a219            c ggiep
+'ggat' + ' '       > U+a21a            c ggat
+'ggax' + ' '       > U+a21b            c ggax
+'gga' + ' '      > U+a21c            c gga
+'ggap' + ' '       > U+a21d            c ggap
+'gguot' + ' '       > U+a21e            c gguot
+'gguox' + ' '       > U+a21f            c gguox
+'gguo' + ' '      > U+a220            c gguo
+'gguop' + ' '       > U+a221            c gguop
+'ggot' + ' '       > U+a222            c ggot
+'ggox' + ' '       > U+a223            c ggox
+'ggo' + ' '      > U+a224            c ggo
+'ggop' + ' '       > U+a225            c ggop
+'gget' + ' '       > U+a226            c gget
+'ggex' + ' '       > U+a227            c ggex
+'gge' + ' '      > U+a228            c gge
+'ggep' + ' '       > U+a229            c ggep
+'ggut' + ' '       > U+a22a            c ggut
+'ggux' + ' '       > U+a22b            c ggux
+'ggu' + ' '      > U+a22c            c ggu
+'ggup' + ' '       > U+a22d            c ggup
+'ggurx' + ' '       > U+a22e            c ggurx
+'ggur' + ' '      > U+a22f            c ggur
+
+c ------------------------------------
+c syllables beginning with mg
+c ------------------------------------
+c mgi does not exist
+'mgiex' + ' '       > U+a230            c mgiex
+'mgie' + ' '      > U+a231            c mgie
+'mgat' + ' '       > U+a232            c mgat
+'mgax' + ' '       > U+a233            c mgax
+'mga' + ' '      > U+a234            c mga
+'mgap' + ' '       > U+a235            c mgap
+'mguox' + ' '       > U+a236            c mguox
+'mguo' + ' '      > U+a237            c mguo
+'mguop' + ' '       > U+a238            c mguop
+'mgot' + ' '       > U+a239            c mgot
+'mgox' + ' '       > U+a23a            c mgox
+'mgo' + ' '      > U+a23b            c mgo
+'mgop' + ' '       > U+a23c            c mgop
+'mgex' + ' '       > U+a23d            c mgex
+'mge' + ' '      > U+a23e            c mge
+'mgep' + ' '       > U+a23f            c mgep
+'mgut' + ' '       > U+a240            c mgut
+'mgux' + ' '       > U+a241            c mgux
+'mgu' + ' '      > U+a242            c mgu
+'mgup' + ' '       > U+a243            c mgup
+'mgurx' + ' '       > U+a244            c mgurx
+'mgur' + ' '      > U+a245            c mgur
+
+c ------------------------------------
+c syllables beginning with hx
+c ------------------------------------
+'hxit' + ' '       > U+a246            c hxit
+'hxix' + ' '       > U+a247            c hxix
+'hxi' + ' '      > U+a248            c hxi
+'hxip' + ' '       > U+a249            c hxip
+'hxiet' + ' '       > U+a24a            c hxiet
+'hxiex' + ' '       > U+a24b            c hxiex
+'hxie' + ' '      > U+a24c            c hxie
+'hxiep' + ' '       > U+a24d            c hxiep
+'hxat' + ' '       > U+a24e            c hxat
+'hxax' + ' '       > U+a24f            c hxax
+'hxa' + ' '      > U+a250            c hxa
+'hxap' + ' '       > U+a251            c hxap
+'hxuot' + ' '       > U+a252            c hxuot
+'hxuox' + ' '       > U+a253            c hxuox
+'hxuo' + ' '      > U+a254            c hxuo
+'hxuop' + ' '       > U+a255            c hxuop
+'hxot' + ' '       > U+a256            c hxot
+'hxox' + ' '       > U+a257            c hxox
+'hxo' + ' '      > U+a258            c hxo
+'hxop' + ' '       > U+a259            c hxop
+'hxex' + ' '       > U+a25a            c hxex
+'hxe' + ' '      > U+a25b            c hxe
+'hxep' + ' '       > U+a25c            c hxep
+
+c ------------------------------------
+c syllables beginning with ng
+c ------------------------------------
+c ngi does not exist
+'ngiex' + ' '       > U+a25d            c ngiex
+'ngie' + ' '      > U+a25e            c ngie
+'ngiep' + ' '       > U+a25f            c ngiep
+'ngat' + ' '       > U+a260            c ngat
+'ngax' + ' '       > U+a261            c ngax
+'nga' + ' '      > U+a262            c nga
+'ngap' + ' '       > U+a263            c ngap
+'nguot' + ' '       > U+a264            c nguot
+'nguox' + ' '       > U+a265            c nguox
+'nguo' + ' '      > U+a266            c nguo
+'ngot' + ' '       > U+a267            c ngot
+'ngox' + ' '       > U+a268            c ngox
+'ngo' + ' '      > U+a269            c ngo
+'ngop' + ' '       > U+a26a            c ngop
+'ngex' + ' '       > U+a26b            c ngex
+'nge' + ' '      > U+a26c            c nge
+'ngep' + ' '       > U+a26d            c ngep
+
+c ------------------------------------
+c syllables beginning with h
+c ------------------------------------
+'hit' + ' '      > U+a26e            c hit
+'hiex' + ' '       > U+a26f            c hiex
+'hie' + ' '      > U+a270            c hie
+c hi does not exist
+'hat' + ' '       > U+a271            c hat
+'hax' + ' '       > U+a272            c hax
+'ha' + ' '      > U+a273            c ha
+'hap' + ' '       > U+a274            c hap
+'huot' + ' '       > U+a275            c huot
+'huox' + ' '       > U+a276            c huox
+'huo' + ' '      > U+a277            c huo
+'huop' + ' '       > U+a278            c huop
+'hot' + ' '       > U+a279            c hot
+'hox' + ' '       > U+a27a            c hox
+'ho' + ' '      > U+a27b            c ho
+'hop' + ' '       > U+a27c            c hop
+'hex' + ' '       > U+a27d            c hex
+'he' + ' '      > U+a27e            c he
+'hep' + ' '       > U+a27f            c hep
+
+c ------------------------------------
+c syllables beginning with w
+c ------------------------------------
+'wat' + ' '       > U+a280            c wat
+'wax' + ' '       > U+a281            c wax
+'wa' + ' '      > U+a282            c wa
+'wap' + ' '       > U+a283            c wap
+'wuox' + ' '       > U+a284            c wuox
+'wuo' + ' '      > U+a285            c wuo
+'wuop' + ' '       > U+a286            c wuop
+'wox' + ' '       > U+a287            c wox
+'wo' + ' '      > U+a288            c wo
+'wop' + ' '       > U+a289            c wop
+'wex' + ' '       > U+a28a            c wex
+'we' + ' '      > U+a28b            c we
+'wep' + ' '       > U+a28c            c wep
+c ------------------------------------
+c syllables beginning with z
+c ------------------------------------
+'zit' + ' '       > U+a28d            c zit
+'zix' + ' '       > U+a28e            c zix
+'zi' + ' '      > U+a28f            c zi
+'zip' + ' '       > U+a290            c zip
+'ziex' + ' '       > U+a291            c ziex
+'zie' + ' '      > U+a292            c zie
+'ziep' + ' '       > U+a293            c ziep
+'zat' + ' '       > U+a294            c zat
+'zax' + ' '       > U+a295            c zax
+'za' + ' '      > U+a296            c za
+'zap' + ' '       > U+a297            c zap
+'zuox' + ' '       > U+a298            c zuox
+'zuo' + ' '      > U+a299            c zuo
+'zuop' + ' '       > U+a29a            c zuop
+'zot' + ' '       > U+a29b            c zot
+'zox' + ' '       > U+a29c            c zox
+'zo' + ' '      > U+a29d            c zo
+'zop' + ' '       > U+a29e            c zop
+'zex' + ' '       > U+a29f            c zex
+'ze' + ' '      > U+a2a0            c ze
+'zep' + ' '       > U+a2a1            c zep
+'zut' + ' '       > U+a2a2            c zut
+'zux' + ' '       > U+a2a3            c zux
+'zu' + ' '      > U+a2a4            c zu
+'zup' + ' '       > U+a2a5            c zup
+'zurx' + ' '       > U+a2a6            c zurx
+'zur' + ' '      > U+a2a7            c zur
+'zyt' + ' '       > U+a2a8            c zyt
+'zyx' + ' '       > U+a2a9            c zyx
+'zy' + ' '      > U+a2aa            c zy
+'zyp' + ' '       > U+a2ab            c zyp
+'zyrx' + ' '       > U+a2ac            c zyrx
+'zyr' + ' '      > U+a2ad            c zyr
+
+c ------------------------------------
+c syllables beginning with c
+c ------------------------------------
+'cit' + ' '       > U+a2ae            c cit
+'cix' + ' '       > U+a2af            c cix
+'ci' + ' '       > U+a2b0            c ci
+'cip' + ' '       > U+a2b1            c cip
+'ciet' + ' '       > U+a2b2            c ciet
+'ciex' + ' '       > U+a2b3            c ciex
+'cie' + ' '       > U+a2b4            c cie
+'ciep' + ' '       > U+a2b5            c ciep
+'cat' + ' '       > U+a2b6            c cat
+'cax' + ' '       > U+a2b7            c cax
+'ca' + ' '       > U+a2b8            c ca
+'cap' + ' '       > U+a2b9            c cap
+'cuox' + ' '       > U+a2ba            c cuox
+'cuo' + ' '       > U+a2bb            c cuo
+'cuop' + ' '       > U+a2bc            c cuop
+'cot' + ' '       > U+a2bd            c cot
+'cox' + ' '       > U+a2be            c cox
+'co' + ' '       > U+a2bf            c co
+'cop' + ' '       > U+a2c0            c cop
+'cex' + ' '       > U+a2c1            c cex
+'ce' + ' '       > U+a2c2            c ce
+'cep' + ' '       > U+a2c3            c cep
+'cut' + ' '       > U+a2c4            c cut
+'cux' + ' '       > U+a2c5            c cux
+'cu' + ' '       > U+a2c6            c cu
+'cup' + ' '       > U+a2c7            c cup
+'curx' + ' '       > U+a2c8            c curx
+'cur' + ' '       > U+a2c9            c cur
+'cyt' + ' '       > U+a2ca            c cyt
+'cyx' + ' '       > U+a2cb            c cyx
+'cy' + ' '       > U+a2cc            c cy
+'cyp' + ' '       > U+a2cd            c cyp
+'cyrx' + ' '       > U+a2ce            c cyrx
+'cyr' + ' '       > U+a2cf            c cyr
+
+c ------------------------------------
+c syllables beginning with zz
+c ------------------------------------
+'zzit' + ' '       > U+a2d0            c zzit
+'zzix' + ' '       > U+a2d1            c zzix
+'zzi' + ' '      > U+a2d2            c zzi
+'zzip' + ' '       > U+a2d3            c zzip
+'zziet' + ' '       > U+a2d4            c zziet
+'zziex' + ' '       > U+a2d5            c zziex
+'zzie' + ' '      > U+a2d6            c zzie
+'zziep' + ' '       > U+a2d7            c zziep
+'zzat' + ' '       > U+a2d8            c zzat
+'zzax' + ' '       > U+a2d9            c zzax
+'zza' + ' '      > U+a2da            c zza
+'zzap' + ' '       > U+a2db            c zzap
+'zzox' + ' '       > U+a2dc            c zzox
+'zzo' + ' '      > U+a2dd            c zzo
+'zzop' + ' '       > U+a2de            c zzop
+'zzex' + ' '       > U+a2df            c zzex
+'zze' + ' '      > U+a2e0            c zze
+'zzep' + ' '       > U+a2e1            c zzep
+'zzux' + ' '       > U+a2e2            c zzux
+'zzu' + ' '      > U+a2e3            c zzu
+'zzup' + ' '       > U+a2e4            c zzup
+'zzurx' + ' '       > U+a2e5            c zzurx
+'zzur' + ' '      > U+a2e6            c zzur
+'zzyt' + ' '       > U+a2e7            c zzyt
+'zzyx' + ' '       > U+a2e8            c zzyx
+'zzy' + ' '      > U+a2e9            c zzy
+'zzyp' + ' '       > U+a2ea            c zzyp
+'zzyrx' + ' '       > U+a2eb            c zzyrx
+'zzyr' + ' '      > U+a2ec            c zzyr
+
+c ------------------------------------
+c syllables beginning with nz
+c ------------------------------------
+'nzit' + ' '       > U+a2ed            c nzit
+'nzix' + ' '       > U+a2ee            c nzix
+'nzi' + ' '       > U+a2ef            c nzi
+'nzip' + ' '       > U+a2f0            c nzip
+'nziex' + ' '       > U+a2f1            c nziex
+'nzie' + ' '       > U+a2f2            c nzie
+'nziep' + ' '       > U+a2f3            c nziep
+'nzat' + ' '       > U+a2f4            c nzat
+'nzax' + ' '       > U+a2f5            c nzax
+'nza' + ' '       > U+a2f6            c nza
+'nzap' + ' '       > U+a2f7            c nzap
+'nzuox' + ' '       > U+a2f8            c nzuox
+'nzuo' + ' '       > U+a2f9            c nzuo
+'nzox' + ' '       > U+a2fa            c nzox
+'nzop' + ' '       > U+a2fb            c nzop
+c nzo does not exist
+'nzex' + ' '       > U+a2fc            c nzex
+'nze' + ' '       > U+a2fd            c nze
+'nzux' + ' '       > U+a2fe            c nzux
+'nzu' + ' '       > U+a2ff            c nzu
+'nzup' + ' '       > U+a300            c nzup
+'nzurx' + ' '       > U+a301            c nzurx
+'nzur' + ' '       > U+a302            c nzur
+'nzyt' + ' '       > U+a303            c nzyt
+'nzyx' + ' '       > U+a304            c nzyx
+'nzy' + ' '       > U+a305            c nzy
+'nzyp' + ' '       > U+a306            c nzyp
+'nzyrx' + ' '       > U+a307            c nzyrx
+'nzyr' + ' '       > U+a308            c nzyr
+
+c ------------------------------------
+c syllables beginning with s
+c ------------------------------------
+'sit' + ' '       > U+a309            c sit
+'six' + ' '       > U+a30a            c six
+'si' + ' '      > U+a30b            c si
+'sip' + ' '       > U+a30c            c sip
+'siex' + ' '       > U+a30d            c siex
+'sie' + ' '      > U+a30e            c sie
+'siep' + ' '       > U+a30f            c siep
+'sat' + ' '       > U+a310            c sat
+'sax' + ' '       > U+a311            c sax
+'sa' + ' '      > U+a312            c sa
+'sap' + ' '       > U+a313            c sap
+'suox' + ' '       > U+a314            c suox
+'suo' + ' '      > U+a315            c suo
+'suop' + ' '       > U+a316            c suop
+'sot' + ' '       > U+a317            c sot
+'sox' + ' '       > U+a318            c sox
+'so' + ' '      > U+a319            c so
+'sop' + ' '       > U+a31a            c sop
+'sex' + ' '       > U+a31b            c sex
+'se' + ' '      > U+a31c            c se
+'sep' + ' '       > U+a31d            c sep
+'sut' + ' '       > U+a31e            c sut
+'sux' + ' '       > U+a31f            c sux
+'su' + ' '      > U+a320            c su
+'sup' + ' '       > U+a321            c sup
+'surx' + ' '       > U+a322            c surx
+'sur' + ' '      > U+a323            c sur
+'syt' + ' '       > U+a324            c syt
+'syx' + ' '       > U+a325            c syx
+'sy' + ' '      > U+a326            c sy
+'syp' + ' '       > U+a327            c syp
+'syrx' + ' '       > U+a328            c syrx
+'syr' + ' '      > U+a329            c syr
+
+c ------------------------------------
+c syllables beginning with ss
+c ------------------------------------
+'ssit' + ' '       > U+a32a            c ssit
+'ssix' + ' '       > U+a32b            c ssix
+'ssi' + ' '      > U+a32c            c ssi
+'ssip' + ' '       > U+a32d            c ssip
+'ssiex' + ' '       > U+a32e            c ssiex
+'ssie' + ' '      > U+a32f            c ssie
+'ssiep' + ' '       > U+a330            c ssiep
+'ssat' + ' '       > U+a331            c ssat
+'ssax' + ' '       > U+a332            c ssax
+'ssa' + ' '      > U+a333            c ssa
+'ssap' + ' '       > U+a334            c ssap
+
+c ssuo does not exist
+'ssot' + ' '       > U+a335            c ssot
+'ssox' + ' '       > U+a336            c ssox
+'sso' + ' '      > U+a337            c sso
+'ssop' + ' '       > U+a338            c ssop
+'ssex' + ' '       > U+a339            c ssex
+'sse' + ' '      > U+a33a            c sse
+'ssep' + ' '       > U+a33b            c ssep
+'ssut' + ' '       > U+a33c            c ssut
+'ssux' + ' '       > U+a33d            c ssux
+'ssu' + ' '      > U+a33e            c ssu
+'ssup' + ' '       > U+a33f            c ssup
+'ssyt' + ' '       > U+a340            c ssyt
+'ssyx' + ' '       > U+a341            c ssyx
+'ssy' + ' '      > U+a342            c ssy
+'ssyp' + ' '       > U+a343            c ssyp
+'ssyrx' + ' '       > U+a344            c ssyrx
+'ssyr' + ' '      > U+a345            c ssyr
+
+c ------------------------------------
+c syllables beginning with zh
+c ------------------------------------
+'zhat' + ' '       > U+a346         c zhat
+'zhax' + ' '       > U+a347         c zhax
+'zha' + ' '      > U+a348         c zha
+'zhap' + ' '       > U+a349         c zhap
+'zhuox' + ' '       > U+a34a         c zhuox
+'zhuo' + ' '      > U+a34b         c zhuo
+'zhuop' + ' '       > U+a34c         c zhuop
+'zhot' + ' '       > U+a34d         c zhot
+'zhox' + ' '       > U+a34e         c zhox
+'zho' + ' '      > U+a34f         c zho
+'zhop' + ' '       > U+a350         c zhop
+'zhet' + ' '       > U+a351         c zhet
+'zhex' + ' '       > U+a352         c zhex
+'zhe' + ' '      > U+a353         c zhe
+'zhep' + ' '       > U+a354         c zhep
+'zhut' + ' '       > U+a355         c zhut
+'zhux' + ' '       > U+a356         c zhux
+'zhu' + ' '      > U+a357         c zhu
+'zhup' + ' '       > U+a358         c zhup
+'zhurx' + ' '       > U+a359         c zhurx
+'zhur' + ' '      > U+a35a         c zhur
+'zhyt' + ' '       > U+a35b         c zhyt
+'zhyx' + ' '       > U+a35c         c zhyx
+'zhy' + ' '      > U+a35d         c zhy
+'zhyp' + ' '       > U+a35e         c zhyp
+'zhyrx' + ' '       > U+a35f         c zhyrx
+'zhyr' + ' '      > U+a360         c zhyr
+
+c ------------------------------------
+c syllables beginning with ch
+c ------------------------------------
+'chat' + ' '       > U+a361         c chat
+'chax' + ' '       > U+a362         c chax
+'cha' + ' '      > U+a363         c cha
+'chap' + ' '       > U+a364         c chap
+'chuot' + ' '       > U+a365         c chuot
+'chuox' + ' '       > U+a366         c chuox
+'chuo' + ' '      > U+a367         c chuo
+'chuop' + ' '       > U+a368         c chuop
+'chot' + ' '       > U+a369         c chot
+'chox' + ' '       > U+a36a         c chox
+'cho' + ' '      > U+a36b         c cho
+'chop' + ' '       > U+a36c         c chop
+'chet' + ' '       > U+a36d         c chet
+'chex' + ' '       > U+a36e         c chex
+'che' + ' '      > U+a36f         c che
+'chep' + ' '       > U+a370         c chep
+'chux' + ' '       > U+a371         c chux
+'chu' + ' '      > U+a372         c chu
+'chup' + ' '       > U+a373         c chup
+'churx' + ' '       > U+a374         c churx
+'chur' + ' '      > U+a375         c chur
+'chyt' + ' '       > U+a376         c chyt
+'chyx' + ' '       > U+a377         c chyx
+'chy' + ' '      > U+a378         c chy
+'chyp' + ' '       > U+a379         c chyp
+'chyrx' + ' '       > U+a37a         c chyrx
+'chyr' + ' '      > U+a37b         c chyr
+
+c ------------------------------------
+c syllables beginning with rr
+c ------------------------------------
+'rrax' + ' '       > U+a37c         c rrax
+'rra' + ' '      > U+a37d         c rra
+'rruox' + ' '       > U+a37e         c rruox
+'rruo' + ' '      > U+a37f         c rruo
+'rrot' + ' '       > U+a380         c rrot
+'rrox' + ' '       > U+a381         c rrox
+'rro' + ' '      > U+a382         c rro
+'rrop' + ' '       > U+a383         c rrop
+'rret' + ' '       > U+a384         c rret
+'rrex' + ' '       > U+a385         c rrex
+'rre' + ' '      > U+a386         c rre
+'rrep' + ' '       > U+a387         c rrep
+'rrut' + ' '       > U+a388         c rrut
+'rrux' + ' '       > U+a389         c rrux
+'rru' + ' '      > U+a38a         c rru
+'rrup' + ' '       > U+a38b         c rrup
+'rrurx' + ' '       > U+a38c         c rrurx
+'rrur' + ' '      > U+a38d         c rrur
+'rryt' + ' '       > U+a38e         c rryt
+'rryx' + ' '       > U+a38f         c rryx
+'rry' + ' '      > U+a390         c rry
+'rryp' + ' '       > U+a391         c rryp
+'rryrx' + ' '       > U+a392         c rryrx
+'rryr' + ' '      > U+a393         c rryr
+
+c ------------------------------------
+c syllables beginning with nr
+c ------------------------------------
+'nrat' + ' '       > U+a394       c nrat
+'nrax' + ' '       > U+a395       c nrax
+'nra' + ' '      > U+a396       c nra
+'nrap' + ' '       > U+a397       c nrap
+c nruo does not exist
+'nrox' + ' '       > U+a398       c nrox
+'nro' + ' '      > U+a399       c nro
+'nrop' + ' '       > U+a39a       c nrop
+'nret' + ' '       > U+a39b       c nret
+'nrex' + ' '       > U+a39c       c nrex
+'nre' + ' '      > U+a39d       c nre
+'nrep' + ' '       > U+a39e       c nrep
+'nrut' + ' '       > U+a39f       c nrut
+'nrux' + ' '       > U+a3a0       c nrux
+'nru' + ' '      > U+a3a1       c nru
+'nrup' + ' '       > U+a3a2       c nrup
+'nrurx' + ' '       > U+a3a3       c nrurx
+'nrur' + ' '      > U+a3a4       c nrur
+'nryt' + ' '       > U+a3a5       c nryt
+'nryx' + ' '       > U+a3a6       c nryx
+'nry' + ' '      > U+a3a7       c nry
+'nryp' + ' '       > U+a3a8       c nryp
+'nryrx' + ' '       > U+a3a9       c nryrx
+'nryr' + ' '      > U+a3aa       c nryr
+
+c ------------------------------------
+c syllables beginning with sh
+c ------------------------------------
+'shat' + ' '       > U+a3ab       c shat
+'shax' + ' '       > U+a3ac       c shax
+'sha' + ' '      > U+a3ad       c sha
+'shap' + ' '       > U+a3ae       c shap
+'shuox' + ' '       > U+a3af       c shuox
+'shuo' + ' '      > U+a3b0       c shuo
+'shuop' + ' '       > U+a3b1       c shuop
+'shot' + ' '       > U+a3b2       c shot
+'shox' + ' '       > U+a3b3       c shox
+'sho' + ' '      > U+a3b4       c sho
+'shop' + ' '       > U+a3b5       c shop
+'shet' + ' '       > U+a3b6       c shet
+'shex' + ' '       > U+a3b7       c shex
+'she' + ' '      > U+a3b8       c she
+'shep' + ' '       > U+a3b9       c shep
+'shut' + ' '       > U+a3ba       c shut
+'shux' + ' '       > U+a3bb       c shux
+'shu' + ' '      > U+a3bc       c shu
+'shup' + ' '       > U+a3bd       c shup
+'shurx' + ' '       > U+a3be       c shurx
+'shur' + ' '      > U+a3bf       c shur
+'shyt' + ' '       > U+a3c0       c shyt
+'shyx' + ' '       > U+a3c1       c shyx
+'shy' + ' '      > U+a3c2       c shy
+'shyp' + ' '       > U+a3c3       c shyp
+'shyrx' + ' '       > U+a3c4       c shyrx
+'shyr' + ' '      > U+a3c5       c shyr
+
+c ------------------------------------
+c syllables beginning with r
+c ------------------------------------
+'rat' + ' '       > U+a3c6       c rat
+'rax' + ' '       > U+a3c7       c rax
+'ra' + ' '      > U+a3c8       c ra
+'rap' + ' '       > U+a3c9       c rap
+'ruox' + ' '       > U+a3ca       c ruox
+'ruo' + ' '      > U+a3cb       c ruo
+'ruop' + ' '       > U+a3cc       c ruop
+'rot' + ' '       > U+a3cd       c rot
+'rox' + ' '       > U+a3ce       c rox
+'ro' + ' '      > U+a3cf       c ro
+'rop' + ' '       > U+a3d0       c rop
+'rex' + ' '       > U+a3d1       c rex
+'re' + ' '      > U+a3d2       c re
+'rep' + ' '       > U+a3d3       c rep
+'rut' + ' '       > U+a3d4       c rut
+'rux' + ' '       > U+a3d5       c rux
+'ru' + ' '      > U+a3d6       c ru
+'rup' + ' '       > U+a3d7       c rup
+'rurx' + ' '       > U+a3d8       c rurx
+'rur' + ' '      > U+a3d9       c rur
+'ryt' + ' '       > U+a3da       c ryt
+'ryx' + ' '       > U+a3db       c ryx
+'ry' + ' '      > U+a3dc       c ry
+'ryp' + ' '       > U+a3dd       c ryp
+'ryrx' + ' '       > U+a3de       c ryrx
+'ryr' + ' '      > U+a3df       c ryr
+
+c ------------------------------------
+c syllables beginning with j
+c ------------------------------------
+'jit' + ' '       > U+a3e0       c jit
+'jix' + ' '       > U+a3e1       c jix
+'ji' + ' '      > U+a3e2       c ji
+'jip' + ' '       > U+a3e3       c jip
+'jiet' + ' '       > U+a3e4       c jiet
+'jiex' + ' '       > U+a3e5       c jiex
+'jie' + ' '      > U+a3e6       c jie
+'jiep' + ' '       > U+a3e7       c jiep
+'juot' + ' '       > U+a3e8       c juot
+'juox' + ' '       > U+a3e9       c juox
+'juo' + ' '      > U+a3ea       c juo
+'juop' + ' '       > U+a3eb       c juop
+'jot' + ' '       > U+a3ec       c jot
+'jox' + ' '       > U+a3ed       c jox
+'jo' + ' '      > U+a3ee       c jo
+'jop' + ' '       > U+a3ef       c jop
+'jut' + ' '       > U+a3f0       c jut
+'jux' + ' '       > U+a3f1       c jux
+'ju' + ' '      > U+a3f2       c ju
+'jup' + ' '       > U+a3f3       c jup
+'jurx' + ' '       > U+a3f4       c jurx
+'jur' + ' '      > U+a3f5       c jur
+'jyt' + ' '       > U+a3f6       c jyt
+'jyx' + ' '       > U+a3f7       c jyx
+'jy' + ' '      > U+a3f8       c jy
+'jyp' + ' '       > U+a3f9       c jyp
+'jyrx' + ' '       > U+a3fa       c jyrx
+'jyr' + ' '      > U+a3fb       c jyr
+
+c ------------------------------------
+c syllables beginning with q
+c ------------------------------------
+'qit' + ' '       > U+a3fc       c qit
+'qix' + ' '       > U+a3fd       c qix
+'qi' + ' '      > U+a3fe       c qi
+'qip' + ' '       > U+a3ff       c qip
+'qiet' + ' '       > U+a400       c qiet
+'qiex' + ' '       > U+a401       c qiex
+'qie' + ' '      > U+a402       c qie
+'qiep' + ' '       > U+a403       c qiep
+'quot' + ' '       > U+a404       c quot
+'quox' + ' '       > U+a405       c quox
+'quo' + ' '      > U+a406       c quo
+'quop' + ' '       > U+a407       c quop
+'qot' + ' '       > U+a408       c qot
+'qox' + ' '       > U+a409       c qox
+'qo' + ' '      > U+a40a       c qo
+'qop' + ' '       > U+a40b       c qop
+'qut' + ' '       > U+a40c       c qut
+'qux' + ' '       > U+a40d       c qux
+'qu' + ' '      > U+a40e       c qu
+'qup' + ' '       > U+a40f       c qup
+'qurx' + ' '       > U+a410       c qurx
+'qur' + ' '      > U+a411       c qur
+'qyt' + ' '       > U+a412       c qyt
+'qyx' + ' '       > U+a413       c qyx
+'qy' + ' '      > U+a414       c qy
+'qyp' + ' '       > U+a415       c qyp
+'qyrx' + ' '       > U+a416       c qyrx
+'qyr' + ' '      > U+a417       c qyr
+
+c ------------------------------------
+c syllables beginning with jj
+c ------------------------------------
+'jjit' + ' '       > U+a418       c jjit
+'jjix' + ' '       > U+a419       c jjix
+'jji' + ' '      > U+a41a       c jji
+'jjip' + ' '       > U+a41b       c jjip
+'jjiet' + ' '       > U+a41c       c jjiet
+'jjiex' + ' '       > U+a41d       c jjiex
+'jjie' + ' '      > U+a41e       c jjie
+'jjiep' + ' '       > U+a41f       c jjiep
+'jjuox' + ' '       > U+a420       c jjuox
+'jjuo' + ' '      > U+a421       c jjuo
+'jjuop' + ' '       > U+a422       c jjuop
+'jjot' + ' '       > U+a423       c jjot
+'jjox' + ' '       > U+a424       c jjox
+'jjo' + ' '      > U+a425       c jjo
+'jjop' + ' '       > U+a426       c jjop
+'jjut' + ' '       > U+a427       c jjut
+'jjux' + ' '       > U+a428       c jjux
+'jju' + ' '      > U+a429       c jju
+'jjup' + ' '       > U+a42a       c jjup
+'jjurx' + ' '       > U+a42b       c jjurx
+'jjur' + ' '      > U+a42c       c jjur
+'jjyt' + ' '       > U+a42d       c jjyt
+'jjyx' + ' '       > U+a42e       c jjyx
+'jjy' + ' '      > U+a42f       c jjy
+'jjyp' + ' '       > U+a430       c jjyp
+
+c ------------------------------------
+c syllables beginning with nj
+c ------------------------------------
+'njit' + ' '       > U+a431       c njit
+'njix' + ' '       > U+a432       c njix
+'nji' + ' '      > U+a433       c nji
+'njip' + ' '       > U+a434       c njip
+'njiet' + ' '       > U+a435       c njiet
+'njiex' + ' '       > U+a436       c njiex
+'njie' + ' '      > U+a437       c njie
+'njiep' + ' '       > U+a438       c njiep
+'njuox' + ' '       > U+a439       c njuox
+'njuo' + ' '      > U+a43a       c njuo
+'njot' + ' '       > U+a43b       c njot
+'njox' + ' '       > U+a43c       c njox
+'njo' + ' '      > U+a43d       c njo
+'njop' + ' '       > U+a43e       c njop
+'njux' + ' '       > U+a43f       c njux
+'nju' + ' '      > U+a440       c nju
+'njup' + ' '       > U+a441       c njup
+'njurx' + ' '       > U+a442       c njurx
+'njur' + ' '      > U+a443       c njur
+'njyt' + ' '       > U+a444       c njyt
+'njyx' + ' '       > U+a445       c njyx
+'njy' + ' '      > U+a446       c njy
+'njyp' + ' '       > U+a447       c njyp
+'njyrx' + ' '       > U+a448       c njyrx
+'njyr' + ' '      > U+a449       c njyr
+
+c ------------------------------------
+c syllables beginning with ny
+c ------------------------------------
+'nyit' + ' '       > U+a44a       c nyit
+'nyix' + ' '       > U+a44b       c nyix
+'nyi' + ' '      > U+a44c       c nyi
+'nyip' + ' '       > U+a44d       c nyip
+'nyiet' + ' '       > U+a44e       c nyiet
+'nyiex' + ' '       > U+a44f       c nyiex
+'nyie' + ' '      > U+a450       c nyie
+'nyiep' + ' '       > U+a451       c nyiep
+'nyuox' + ' '       > U+a452       c nyuox
+'nyuo' + ' '      > U+a453       c nyuo
+'nyuop' + ' '       > U+a454       c nyuop
+'nyot' + ' '       > U+a455       c nyot
+'nyox' + ' '       > U+a456       c nyox
+'nyo' + ' '      > U+a457       c nyo
+'nyop' + ' '       > U+a458       c nyop
+'nyut' + ' '       > U+a459       c nyut
+'nyux' + ' '       > U+a45a       c nyux
+'nyu' + ' '      > U+a45b       c nyu
+'nyup' + ' '       > U+a45c       c nyup
+
+c ------------------------------------
+c syllables beginning with x
+c ------------------------------------
+'xit' + ' '       > U+a45d       c xit
+'xix' + ' '       > U+a45e       c xix
+'xi' + ' '      > U+a45f       c xi
+'xip' + ' '       > U+a460       c xip
+'xiet' + ' '       > U+a461       c xiet
+'xiex' + ' '       > U+a462       c xiex
+'xie' + ' '      > U+a463       c xie
+'xiep' + ' '       > U+a464       c xiep
+'xuox' + ' '       > U+a465       c xuox
+'xuo' + ' '      > U+a466       c xuo
+'xot' + ' '       > U+a467       c xot
+'xox' + ' '       > U+a468       c xox
+'xo' + ' '      > U+a469       c xo
+'xop' + ' '       > U+a46a       c xop
+'xyt' + ' '       > U+a46b       c xyt
+'xyx' + ' '       > U+a46c       c xyx
+'xy' + ' '      > U+a46d       c xy
+'xyp' + ' '       > U+a46e       c xyp
+'xyrx' + ' '       > U+a46f       c xyrx
+'xyr' + ' '      > U+a470       c xyr
+
+c ------------------------------------
+c syllables beginning with y
+c ------------------------------------
+'yit' + ' '       > U+a471       c yit
+'yix' + ' '       > U+a472       c yix
+'yi' + ' '      > U+a473       c yi
+'yip' + ' '       > U+a474       c yip
+'yiet' + ' '       > U+a475       c yiet
+'yiex' + ' '       > U+a476       c yiex
+'yie' + ' '      > U+a477       c yie
+'yiep' + ' '       > U+a478       c yiep
+'yuot' + ' '       > U+a479       c yuot
+'yuox' + ' '       > U+a47a       c yuox
+'yuo' + ' '      > U+a47b       c yuo
+'yuop' + ' '       > U+a47c       c yuop
+'yot' + ' '       > U+a47d       c yot
+'yox' + ' '       > U+a47e       c yox
+'yo' + ' '      > U+a47f       c yo
+'yop' + ' '       > U+a480       c yop
+'yut' + ' '       > U+a481       c yut
+'yux' + ' '       > U+a482       c yux
+'yu' + ' '      > U+a483       c yu
+'yup' + ' '       > U+a484       c yup
+'yurx' + ' '       > U+a485       c yurx
+'yur' + ' '      > U+a486       c yur
+'yyt' + ' '       > U+a487       c yyt
+'yyx' + ' '       > U+a488       c yyx
+'yy' + ' '      > U+a489       c yy
+'yyp' + ' '       > U+a48a       c yyp
+'yyrx' + ' '       > U+a48b       c yyrx
+'yyr' + ' '      > U+a48c       c yyr
+
+c ------------------------------------
+c fullwidth punctuation
+c ------------------------------------
+
++ '!'      > U+ff01    c FULLWIDTH EXCLAMATION MARK
++ '?'      > U+ff1f    c FULLWIDTH QUESTION MARK
++ '('      > U+ff08    c FULLWIDTH LEFT PARENTHESIS
++ ')'      > U+ff09    c FULLWIDTH RIGHT PARENTHESIS
++ '['      > U+ff3b    c FULLWIDTH LEFT SQUARE BRACKET
++ ']'      > U+ff3d    c FULLWIDTH RIGHT SQUARE BRACKET
++ '|'      > U+ff5c    c FULLWIDTH VERTICAL LINE
++ '{'      > U+ff5b    c FULLWIDTH LEFT CURLY BRACKET
++ '}'      > U+ff5d    c FULLWIDTH RIGHT CURLY BRACKET
++ ':'      > U+ff1a    c FULLWIDTH COLON
++ ';'      > U+ff1b    c FULLWIDTH SEMICOLON
++ '/'      > U+ff0f    c FULLWIDTH SOLIDUS
++ ' '      > U+3000    c IDEOGRAPHIC SPACE
++ '.'      > U+3002    c IDEOGRAPHIC FULL STOP - Chinese "juhao"
++ '\'      > U+3001    c IDEOGRAPHIC COMMA - Chinese "dunhao"
++ ','      > U+ff0c    c FULLWIDTH COMMA
++ '<'      > U+3008    c LEFT ANGLE BRACKET - Chinese l sg "shuminghao"
++ '>'      > U+3009    c RIGHT ANGLE BRACKET - Chinese r sg "shuminghao"
+U+3008 + '<'  > U+300a    c LEFT DOUBLE ANGLE BRACKET - Chinese l db "shuminghao"
+U+3009 + '>'  > U+300b    c RIGHT DOUBLE ANGLE BRACKET - Chinese r db "shuminghao"
++ "`"         > U+2018    c LEFT SINGLE QUOTATION MARK - Chinese l sg quote
++ "'"         > U+2019    c RIGHT SINGLE QUOTATION MARK - Chinese r sg quote
+U+2018 + "`"  > U+201c    c LEFT DOUBLE QUOTATION MARK - Chinese l db quote
+U+2019 + "'"  > U+201d    c RIGHT DOUBLE QUOTATION MARK - Chinese r db quote
+U+3002 + '.'  > U+2026    c HORIZONTAL ELLIPSIS - Chinese "dot dot dot"

@@ -3,7 +3,7 @@ Osage Keyboard
 
 Copyright (C) 2018 Osage Nation
 
-Version 1.1
+Version 1.2.1
 
 OSAGE DESCRIPTION__
 This is a keyboard for typing the Osage language in the Osage script.

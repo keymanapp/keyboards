@@ -1,0 +1,140 @@
+﻿c kyu-kali.kmn
+c Kayah Li keyboard for Unicode PUA
+store(&VERSION) "10.0"
+store(&NAME) 'Kayah [Kayah Li] (SIL)'
+c HOTKEY "^+K"
+store(&MESSAGE) ""
+store(&COPYRIGHT) '© 2008-2018 SIL International'
+
+c 1.0   26-MAR-2007     MJPH    Convert to true Unicode from PUA
+
+c 1.3   11-MAY-2006     MJPH    fix y key from EE2B
+c 1.2   11-Apr-2006     RDD     Added single quotes
+c 1.1   02-Dec-2005     RDD     Added the ability to type ASCII for SFMs
+c 1.0   01-Dec-2005     RDD     Based on KayaOld.kmn which was based on Kauffman
+c 1.0.1 15-Sep-2008     MJPH    Unicode, fix 'we,' keys
+c 1.1   18-AUG-2014     MJPH    Switch ALT keys to RALT
+
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.2'
+store(&BITMAP) 'sil_kayah_kali.ico'
+store(&VISUALKEYBOARD) 'sil_kayah_kali.kvks'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(digitsK) "0"    "1"    "2"    "3"    "4"    \
+               "5"    "6"    "7"    "8"    "9"
+store(digitsU) U+A900 U+A901 U+A902 U+A903 U+A904 \
+               U+A905 U+A906 U+A907 U+A908 U+A909
+
++ any(digitsK) > index(digitsU,1)
+
+c un-shifted keys
++ 'q' > U+A920
++ 'w' > U+A90E
++ 'e' > U+A919
++ 'r' > U+A91A
++ 't' > U+A923
++ 'y' > U+A924
++ 'u' > U+A925
++ 'i' > U+A91E
++ 'o' > U+A913
++ 'p' > U+A911
++ '[' > U+A918
++ ']' > U+00F7
+
++ 'a' > U+A90A
++ 's' > U+A914
++ 'd' > U+A91B
++ 'f' > U+A922
++ 'g' > U+A92C
++ 'h' > U+A92D
++ 'j' > U+A912
++ 'k' > U+A91F
++ 'l' > U+A915
++ ';' > U+A91C
++ "'" > U+A90D
+
++ 'z' > U+A921
++ 'x' > U+A90C
++ 'c' > U+A90F
++ 'v' > U+A90B
++ 'b' > U+A917
++ 'n' > U+A916
++ 'm' > U+A91D
++ ',' > U+A910
++ '.' > ','
++ '/' > U+A92F
+
+c shifted keys
++ '@' > U+A92E
++ '$' > ':'
++ '^' > U+201C
++ '&' > U+201D
+
++ '{' > '/'
++ '}' > U+00D7
+
++ 'R' > U+A926
++ 'T' > U+A927
++ 'Y' > U+A928
++ 'U' > U+A929
++ 'I' > U+A92A
+
++ 'F' > U+A922 U+A926
++ 'G' > U+A922 U+A927
++ 'H' > U+A922 U+A928
++ 'J' > U+A922 U+A929
++ 'K' > U+A922 U+A92A
+
++ ':' > U+A92B
++ '>' > '.'
+
+c cquotation marks - originally on CTRL keys - AC 15-Jun-2018
++ [SHIFT RALT K_6] > U+2018
++ [SHIFT RALT K_7] > U+2019
+
+c alt keys
++ [RALT K_BKSLASH] > '\'
++ [RALT K_SPACE]   > ' '
++ [RALT K_HYPHEN]  > '-'
+
++ [RALT K_1] > '1'
++ [RALT K_2] > '2'
++ [RALT K_3] > '3'
++ [RALT K_4] > '4'
++ [RALT K_5] > '5'
++ [RALT K_6] > '6'
++ [RALT K_7] > '7'
++ [RALT K_8] > '8'
++ [RALT K_9] > '9'
++ [RALT K_0] > '0'
+
++ [RALT K_A] > 'a'
++ [RALT K_B] > 'b'
++ [RALT K_C] > 'c'
++ [RALT K_D] > 'd'
++ [RALT K_E] > 'e'
++ [RALT K_F] > 'f'
++ [RALT K_G] > 'g'
++ [RALT K_H] > 'h'
++ [RALT K_I] > 'i'
++ [RALT K_J] > 'j'
++ [RALT K_K] > 'k'
++ [RALT K_L] > 'l'
++ [RALT K_M] > 'm'
++ [RALT K_N] > 'n'
++ [RALT K_O] > 'o'
++ [RALT K_P] > 'p'
++ [RALT K_Q] > 'q'
++ [RALT K_R] > 'r'
++ [RALT K_S] > 's'
++ [RALT K_T] > 't'
++ [RALT K_U] > 'u'
++ [RALT K_V] > 'v'
++ [RALT K_W] > 'w'
++ [RALT K_X] > 'x'
++ [RALT K_Y] > 'y'
++ [RALT K_Z] > 'z'

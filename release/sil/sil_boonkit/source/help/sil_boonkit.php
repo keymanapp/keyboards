@@ -7,9 +7,7 @@
 
 <h2>Font</h2>
 <p style="text-align: justify;">
-<!--The "SIL Boonkit" keyboard is designed to work with the  <A href="http://scripts.sil.org/SophiaNubian" target=_blank>Thai Dam</A> 
-font.-->
-The "SIL Boonkit" keyboard is designed to work with the Thai Dam font.   
+The "SIL Boonkit" keyboard is designed to work with the Tai Tham (Lanna) script.   
 </p>
 
 
@@ -28,7 +26,7 @@ and selecting the On Screen Keyboard menu item.     </p>
 	  <p> Boonkit Keyboard shifted</p>
       <P class=Caption></P><A name=license></A>
       <H2>License</H2>
-      <P>SIL Boonkit Keyman Keyboard is copyright &copy; 2008-2017 SIL 
+      <P>SIL Boonkit Keyman Keyboard is copyright &copy; 2008-2018 SIL 
       International. It is distributed under The MIT License (MIT)</P>
       <DIV class=Note>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -48,16 +46,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.</p></DIV>
-
-
-
-<h2>Release History</h2>
-<p>Version 1.2, released 9 Dec 2016</p>
-<p>Version 1.1, released 24 Sep 2009</p>
-<p>Version 1.0, released 18 Nov 2008</p>
-
-<h2>Links</h2>
-<ul>
-<li>Home Page: <a href='http://keymankeyboards.com'>http://keymankeyboards.com/</a></li>
-<li><a href='http://keymankeyboards.com/iso:nod'>Other keyboards for these languages</a></li>
-</ul>

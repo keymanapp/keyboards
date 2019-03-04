@@ -1,9 +1,11 @@
 Rachitrali-Khowar Keyboard
 ==========================
 
-Copyright (C) 2016-2017 Rehmat Aziz Chitrali
-
-Version 0.6
+* Name:           Rachitrali-Khowar
+* Copyright:      (C) 2016-2018 Rehmat Aziz Chitrali
+* Version:        0.7
+* Keyman Version: 9.0
+* BCP-47 codes:   khw-Arab
 
 Description
 -----------
