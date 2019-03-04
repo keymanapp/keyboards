@@ -19,4 +19,5 @@
 <p>For Android and iOS, you may use either long press or key combinations. Long press on "a" and more related characters will show up.</p>
 
 <h2>Release History</h2>
+<p>Version 1.0.1, released 4 April 2019</p>
 <p>Version 1.0, released 14 September 2017</p>
