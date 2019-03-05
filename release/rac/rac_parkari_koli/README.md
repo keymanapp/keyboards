@@ -19,7 +19,7 @@ Links
 -----
 
 
- * Home:    https://keymanweb.com/#kvx-Arab,Keyboard_rac_parkari_koli
+ * Home:    https://keyman.com/keyboards/rac_parkari_koli
  * Help:    https://help.keyman.com/keyboard/rac_parkari_koli
  * Contact: Rehmat Aziz Chitrali linguist and researcher <rachitrali@yahoo.com>
 

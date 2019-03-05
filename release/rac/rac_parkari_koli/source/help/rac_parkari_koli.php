@@ -26,7 +26,7 @@ an on screen keyboard which can be viewed by clicking on the Keyman icon and sel
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift ctrlalt'>
+<div id='osk' data-states='default shift ctrl-alt'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
