@@ -41,31 +41,31 @@ c language specific mappings
   store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys)  'hlHm_rsqbtxnkw_zydgTPSDfp'
+  store(keys) 'hlHm_rsqbtxnkw_zydgTPSDfp'
 
 c the following is Ge'ez specific
   store(ሌሎች፡keys) 'LMRXBvVcQNKWYDjJZGCF'
-  store(ሌሎች፡ሳድስ) 'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
+  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)  'aAuUiIeEoO'
-  store(loneVowelEthio) 'አዐኡኡኢኢእእኦኦ' 
+  store(loneVowelKeys)   'aAuUiIeEoO'
+  store(loneVowelEthio)  'አዐኡኡኢኢእእኦኦ' 
   store(composableVowel) 'አኡኢእኦዐዒዓዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
   store(ሳድስ፡መደበኛ) 'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
   store(ካዕብ፡መደበኛ) 'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
-  store(ዘመደ፡ራብዕ፡መደበኛ)  'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
 
 c 'hhkqg'
-  store(ካዕብ፡ልዩ)   'ሁኁኩቁጉ'
-  store(ዘመደ፡ግዕዝ)  'ኈኈኰቈጐ'
-  store(ዘመደ፡ካዕብ)  'ኍኍኵቍጕ'
-  store(ዘመደ፡ሣልስ)  'ኊኊኲቊጒ'
-  store(ዘመደ፡ራብዕ)  'ኋኋኳቋጓ'
-  store(ዘመደ፡ኃምስ)  'ኌኌኴቌጔ'
+  store(ካዕብ፡ልዩ)  'ሁኁኩቁጉ'
+  store(ዘመደ፡ግዕዝ) 'ኈኈኰቈጐ'
+  store(ዘመደ፡ካዕብ) 'ኍኍኵቍጕ'
+  store(ዘመደ፡ሣልስ) 'ኊኊኲቊጒ'
+  store(ዘመደ፡ራብዕ) 'ኋኋኳቋጓ'
+  store(ዘመደ፡ኃምስ) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -73,14 +73,14 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
   store(arabNumbers) '123456789'
-  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
   store(ColonOrComma) ':,'
   store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(ግዕዝ፡key)  'eEäÄéÉèÈêÊëË'
+  store(ግዕዝ፡key) 'eEäÄéÉèÈêÊëË'
   store(ካዕብ፡key) 'uUùÙúÚûÛüÜ'
   store(ሣልስ፡key) 'iIìÌíÍîÎïÏ'
   store(ራብዕ፡key) 'aAàÀáÁâÂãÃåÅ'
@@ -113,7 +113,7 @@ c match a menu on the context
   outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
    
 c no menu was in the context, so process keys normally
-  nomatch         > use(main)
+  nomatch > use(main)
    
 c The main group
   group(main) using keys
@@ -148,22 +148,22 @@ c Alef-A Vowels as መደበኛ Syllables
   'እ' + any(ካዕብ፡key) > 'ኡ'
   'እ' + any(ሣልስ፡key) > 'ኢ'
   'እ' + any(ራብዕ፡key) > 'ኣ'
-  'ኢ' + any(ግዕዝ፡key)  > 'ኤ'
+  'ኢ' + any(ግዕዝ፡key) > 'ኤ'
   'እ' + any(ሳብዕ፡key) > 'ኦ'
 
 c Aynu-A Vowels as መደበኛ Sylalbles
-  'እ' + any(ግዕዝ፡key)  > 'ዕ'
-  'ዕ' + any(ግዕዝ፡key)  > 'ዐ'
+  'እ' + any(ግዕዝ፡key) > 'ዕ'
+  'ዕ' + any(ግዕዝ፡key) > 'ዐ'
   'ዕ' + any(ካዕብ፡key) > 'ዑ'
   'ዕ' + any(ሣልስ፡key) > 'ዒ'
   'ዕ' + any(ራብዕ፡key) > 'ዓ'
-  'ዒ' + any(ግዕዝ፡key)  > 'ዔ'
+  'ዒ' + any(ግዕዝ፡key) > 'ዔ'
   'ዕ' + any(ሳብዕ፡key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
   'ኡ' + any(ካዕብ፡key) > 'ዑ'
   'ኢ' + any(ሣልስ፡key) > 'ዒ'
-  'ኤ' + any(ግዕዝ፡key)  > 'ዔ'
+  'ኤ' + any(ግዕዝ፡key) > 'ዔ'
   'ኦ' + any(ሳብዕ፡key) > 'ዖ'
 
 c Completing the Ge'ez "a" chain
@@ -171,7 +171,7 @@ c Completing the Ge'ez "a" chain
   'ዓ' + any(ራብዕ፡key) > 'ዐ'
 
 c Composable Aynu-A vowels as per ti-ER rules
-  'ዐ' + any(ግዕዝ፡key)  > 'ዕ'
+  'ዐ' + any(ግዕዝ፡key) > 'ዕ'
   'ዐ' + any(ካዕብ፡key) > 'ዑ'
   'ዐ' + any(ሣልስ፡key) > 'ዒ'
   'ዐ' + any(ራብዕ፡key) > 'ዓ'
@@ -181,22 +181,22 @@ c Composable Aynu-A vowels as per ti-ER rules
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
-  any(ሳድስ) + any(ግዕዝ፡key)  > index(ግዕዝ,1)
+  any(ሳድስ) + any(ግዕዝ፡key) > index(ግዕዝ,1)
   any(ሳድስ) + any(ካዕብ፡key) > index(ካዕብ,1)
   any(ሳድስ) + any(ሣልስ፡key) > index(ሣልስ,1)
   any(ሳድስ) + any(ራብዕ፡key) > index(ራብዕ,1)
   any(ሳድስ) + any(ኃምስ፡key) > index(ኃምስ,1)
-  any(ሣልስ) + any(ግዕዝ፡key)  > index(ኃምስ,1)  
+  any(ሣልስ) + any(ግዕዝ፡key) > index(ኃምስ,1)  
   any(ሳድስ) + any(ሳብዕ፡key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
   any(ካዕብ፡መደበኛ) + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
-  any(ካዕብ፡ልዩ) + any(ግዕዝ፡key) > index(ዘመደ፡ግዕዝ,1)
-  any(ካዕብ፡ልዩ) + any(ካዕብ፡key) > index(ዘመደ፡ካዕብ,1) 
-  any(ካዕብ፡ልዩ) + any(ሣልስ፡key) > index(ዘመደ፡ሣልስ,1)
-  any(ካዕብ፡ልዩ) + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ,1)  
-  any(ዘመደ፡ሣልስ)        + any(ግዕዝ፡key)  > index(ዘመደ፡ኃምስ,1)
+  any(ካዕብ፡ልዩ)   + any(ግዕዝ፡key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡ልዩ)   + any(ካዕብ፡key) > index(ዘመደ፡ካዕብ,1) 
+  any(ካዕብ፡ልዩ)   + any(ሣልስ፡key) > index(ዘመደ፡ሣልስ,1)
+  any(ካዕብ፡ልዩ)   + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ,1)  
+  any(ዘመደ፡ሣልስ)  + any(ግዕዝ፡key) > index(ዘመደ፡ኃምስ,1)
 
 c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
@@ -211,20 +211,20 @@ c
 c The only dead key for entry of ልዩ characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(ሳድስ) + "'" > index(ሳድስ,1) deadkey(1)
-  any(ሳድስ) + [CTRL K_SPACE] > index(ሳድስ,1) deadkey(1)
+  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+  any(ሳድስ)      + [CTRL K_SPACE] > index(ሳድስ,1) deadkey(1)
   any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
-  any(ካዕብ፡ልዩ) + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
-  any(ዘመደ፡ሣልስ) + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
-  any(ሣልስ) + "'" > index(ሣልስ,1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
+  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
   
 
   + ':'     > '፡'
   + [SHIFT K_SPACE] > '፡'
   '፡' + ':' > '።'
   '።' + ':' > '፨'
-  '፨' + ':'  > '፠'  c makes circular
-  '፠' + ':'  > ':'  c makes circular
+  '፨' + ':' > '፠'  c makes circular
+  '፠' + ':' > ':'  c makes circular
   
       + ',' > '፥'
   '፥' + ',' > '፣'
