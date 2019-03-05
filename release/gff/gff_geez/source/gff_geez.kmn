@@ -32,20 +32,20 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(geez) 'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
-  store(kaib) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
-  store(salis) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
-  store(rabi)  'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
-  store(hamis)  'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
-  store(sadis) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
-  store(sabi) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
+  store(ግዕዝ) 'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
+  store(ካዕብ) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
+  store(ሣልስ) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
+  store(ራብዕ) 'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
+  store(ኃምስ) 'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
+  store(ሳድስ) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
+  store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
   store(keys)  'hlHm_rsqbtxnkw_zydgTPSDfp'
 
 c the following is Ge'ez specific
-  store(extraKeys) 'LMRXBvVcQNKWYDjJZGCF'
-  store(extraSads) 'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
+  store(ሌሎች፡Keys) 'LMRXBvVcQNKWYDjJZGCF'
+  store(ሌሎች፡ሳድስ) 'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
@@ -55,17 +55,17 @@ c ---------------------Maps for Vowels------------------------------------------
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-  store(zemedeKeys)     'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
-  store(zemedeKeysKaIb) 'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
-  store(zemedeEthio)    'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
+  store(ሳድስ፡Regular) 'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
+  store(ካዕብ፡Regular) 'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
+  store(ዘመደ፡ራብዕ፡Regular)  'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
 
 c 'hhkqg'
-  store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
-  store(zemedeGeez)  'ኈኈኰቈጐ'
-  store(zemedeKaib)  'ኍኍኵቍጕ'
-  store(zemedeSalis)  'ኊኊኲቊጒ'
-  store(zemedeRabi)  'ኋኋኳቋጓ'
-  store(zemedeHamis) 'ኌኌኴቌጔ'
+  store(ካዕብ፡Special)  'ሁኁኩቁጉ'
+  store(ዘመደ፡ግዕዝ)  'ኈኈኰቈጐ'
+  store(ዘመደ፡ካዕብ)  'ኍኍኵቍጕ'
+  store(ዘመደ፡ሣልስ)  'ኊኊኲቊጒ'
+  store(ዘመደ፡ራብዕ)  'ኋኋኳቋጓ'
+  store(ዘመደ፡ኃምስ) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -80,20 +80,20 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(geez-key)  'eEäÄéÉèÈêÊëË'
-  store(kaib-key) 'uUùÙúÚûÛüÜ'
-  store(salis-key) 'iIìÌíÍîÎïÏ'
-  store(rabi-key) 'aAàÀáÁâÂãÃåÅ'
-  store(hamis-key) 'æÆ'
-  store(sabi-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(ግዕዝ፡key)  'eEäÄéÉèÈêÊëË'
+  store(ካዕብ፡key) 'uUùÙúÚûÛüÜ'
+  store(ሣልስ፡key) 'iIìÌíÍîÎïÏ'
+  store(ራብዕ፡key) 'aAàÀáÁâÂãÃåÅ'
+  store(ኃምስ፡key) 'æÆ'
+  store(ሳብዕ፡key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
-c ---------------------Maps of Yared Zaima Notation---------------------------------------------
-  store(Tebek) U+135F
-  store(zaima) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$Tebek
-  store(zaimaMenu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
-  store(zaimaKeys) '1234567890_'
-c ---------------------End Maps of Yared Zaima Notation----------------------------------------
+c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
+  store(ጥብቅ) U+135F
+  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
+  store(ዜማ፡Menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
+  store(ዜማ፡Keys) '1234567890_'
+c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
 c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
   store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
@@ -110,7 +110,7 @@ c first matches a menu in the context or passes processing to main
 c remove 'using keys' and +any() when KMW bug fixed
   group(first) using keys
 c match a menu on the context
-  outs(zaimaMenu) + any(anyKey) > use(zaimaGroup)
+  outs(ዜማ፡Menu) + any(anyKey) > use(ዜማ፡Group)
    
 c no menu was in the context, so process keys normally
   nomatch         > use(main)
@@ -122,14 +122,14 @@ c ---------------------Input of Special Symbols---------------------------------
 c 
 c The input section here is for rules that must precede other rules
 c 
-  + '_' > outs(zaimaMenu)
-  $Tebek + '_' > '_'
+  + '_' > outs(ዜማ፡Menu)
+  $ጥብቅ + '_' > '_'
 
   deadkey(1) + "'" > "'"
   deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
 
-  + any(extraKeys) > index(extraSads,1)
-  + any(keys)     > index(sadis,1)
+  + any(ሌሎች፡Keys) > index(ሌሎች፡ሳድስ,1)
+  + any(keys)     > index(ሳድስ,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -145,58 +145,58 @@ c Alef-A Vowels as Vowels
     any(loneVowelKeys) + "'" > index(loneVowelKeys,1) deadkey(1)  
 
 c Alef-A Vowels as Regular Syllables
-  'እ' + any(kaib-key) > 'ኡ'
-  'እ' + any(salis-key) > 'ኢ'
-  'እ' + any(rabi-key) > 'ኣ'
-  'ኢ' + any(geez-key)  > 'ኤ'
-  'እ' + any(sabi-key) > 'ኦ'
+  'እ' + any(ካዕብ፡key) > 'ኡ'
+  'እ' + any(ሣልስ፡key) > 'ኢ'
+  'እ' + any(ራብዕ፡key) > 'ኣ'
+  'ኢ' + any(ግዕዝ፡key)  > 'ኤ'
+  'እ' + any(ሳብዕ፡key) > 'ኦ'
 
 c Aynu-A Vowels as Regular Sylalbles
-  'እ' + any(geez-key)  > 'ዕ'
-  'ዕ' + any(geez-key)  > 'ዐ'
-  'ዕ' + any(kaib-key) > 'ዑ'
-  'ዕ' + any(salis-key) > 'ዒ'
-  'ዕ' + any(rabi-key) > 'ዓ'
-  'ዒ' + any(geez-key)  > 'ዔ'
-  'ዕ' + any(sabi-key) > 'ዖ'
+  'እ' + any(ግዕዝ፡key)  > 'ዕ'
+  'ዕ' + any(ግዕዝ፡key)  > 'ዐ'
+  'ዕ' + any(ካዕብ፡key) > 'ዑ'
+  'ዕ' + any(ሣልስ፡key) > 'ዒ'
+  'ዕ' + any(ራብዕ፡key) > 'ዓ'
+  'ዒ' + any(ግዕዝ፡key)  > 'ዔ'
+  'ዕ' + any(ሳብዕ፡key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
-  'ኡ' + any(kaib-key) > 'ዑ'
-  'ኢ' + any(salis-key) > 'ዒ'
-  'ኤ' + any(geez-key)  > 'ዔ'
-  'ኦ' + any(sabi-key) > 'ዖ'
+  'ኡ' + any(ካዕብ፡key) > 'ዑ'
+  'ኢ' + any(ሣልስ፡key) > 'ዒ'
+  'ኤ' + any(ግዕዝ፡key)  > 'ዔ'
+  'ኦ' + any(ሳብዕ፡key) > 'ዖ'
 
 c Completing the Ge'ez "a" chain
-  'አ' + any(rabi-key) > 'ዓ'
-  'ዓ' + any(rabi-key) > 'ዐ'
+  'አ' + any(ራብዕ፡key) > 'ዓ'
+  'ዓ' + any(ራብዕ፡key) > 'ዐ'
 
 c Composable Aynu-A vowels as per ti-ER rules
-  'ዐ' + any(geez-key)  > 'ዕ'
-  'ዐ' + any(kaib-key) > 'ዑ'
-  'ዐ' + any(salis-key) > 'ዒ'
-  'ዐ' + any(rabi-key) > 'ዓ'
-  'ዐ' + any(sabi-key) > 'ዖ'
+  'ዐ' + any(ግዕዝ፡key)  > 'ዕ'
+  'ዐ' + any(ካዕብ፡key) > 'ዑ'
+  'ዐ' + any(ሣልስ፡key) > 'ዒ'
+  'ዐ' + any(ራብዕ፡key) > 'ዓ'
+  'ዐ' + any(ሳብዕ፡key) > 'ዖ'
 
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
-  any(sadis) + any(geez-key)  > index(geez,1)
-  any(sadis) + any(kaib-key) > index(kaib,1)
-  any(sadis) + any(salis-key) > index(salis,1)
-  any(sadis) + any(rabi-key) > index(rabi,1)
-  any(sadis) + any(hamis-key) > index(hamis,1)
-  any(salis) + any(geez-key)  > index(hamis,1)  
-  any(sadis) + any(sabi-key) > index(sabi,1)
+  any(ሳድስ) + any(ግዕዝ፡key)  > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ፡key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ፡key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ፡key) > index(ራብዕ,1)
+  any(ሳድስ) + any(ኃምስ፡key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ፡key)  > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ፡key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(zemedeKeysKaIb)         + any(rabi-key) > index(zemedeEthio,1)
-  any(zemedeKeysKaIbExtended) + any(geez-key)  > index(zemedeGeez,1)
-  any(zemedeKeysKaIbExtended) + any(kaib-key)  > index(zemedeKaib,1) 
-  any(zemedeKeysKaIbExtended) + any(salis-key) > index(zemedeSalis,1)
-  any(zemedeKeysKaIbExtended) + any(rabi-key)  > index(zemedeRabi,1)  
-  any(zemedeSalis)            + any(geez-key)  > index(zemedeHamis,1)
+  any(ካዕብ፡Regular) + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ፡Regular,1)
+  any(ካዕብ፡Special) + any(ግዕዝ፡key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡Special) + any(ካዕብ፡key) > index(ዘመደ፡ካዕብ,1) 
+  any(ካዕብ፡Special) + any(ሣልስ፡key) > index(ዘመደ፡ሣልስ,1)
+  any(ካዕብ፡Special) + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ,1)  
+  any(ዘመደ፡ሣልስ)        + any(ግዕዝ፡key)  > index(ዘመደ፡ኃምስ,1)
 
 c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
@@ -211,12 +211,12 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(sadis) + "'" > index(sadis,1) deadkey(1)
-  any(sadis) + [CTRL K_SPACE] > index(sadis,1) deadkey(1)
-  any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
-  any(zemedeKeysKaIbExtended) + "'" > index(zemedeKeysKaIbExtended,1) deadkey(1)
-  any(zemedeSalis) + "'" > index(zemedeWi,1) deadkey(1)
-  any(salis) + "'" > index(salis,1) deadkey(1)
+  any(ሳድስ) + "'" > index(ሳድስ,1) deadkey(1)
+  any(ሳድስ) + [CTRL K_SPACE] > index(ሳድስ,1) deadkey(1)
+  any(ካዕብ፡Regular) + "'" > index(ካዕብ፡Regular,1) deadkey(1)
+  any(ካዕብ፡Special) + "'" > index(ካዕብ፡Special,1) deadkey(1)
+  any(ዘመደ፡ሣልስ) + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
+  any(ሣልስ) + "'" > index(ሣልስ,1) deadkey(1)
   
 
   + ':'     > '፡'
@@ -270,10 +270,10 @@ c ---------------------End Input of European Characters-------------------------
 
 c ---------------------Input of Numbers---------------------------------------------------------
 
-c Special Rule for Arabic Numerals
+c Special Rule for Aራብዕc Numerals
 c 
 c The following attempts to auto-correct the use of Ethiopic wordspace and
-c Ethiopic comma within an Arabic numeral context.  Ethiopic wordspace gets
+c Ethiopic comma within an Aራብዕc numeral context.  Ethiopic wordspace gets
 c used erroneously in time formats and Ethiopic commas as an order of thousands
 c delimiter. The correction context is not known until numerals appear on _both_
 c sides of the punctuation.
@@ -312,10 +312,10 @@ c enhance this later, look for something that can copy a match over
   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
 c ---------------------End Input of Numbers-----------------------------------------------------
 
-c ---------------------Begin Zaima Group--------------------------------------------------------
-  group(zaimaGroup) using keys
-  + any(zaimaKeys) > index(zaima, 1)
-  nomatch          > use(main)             
-c ---------------------End Zaima Group----------------------------------------------------------
+c ---------------------Begin ዜማ Group--------------------------------------------------------
+  group(ዜማ፡Group) using keys
+  + any(ዜማ፡Keys) > index(ዜማ, 1)
+  nomatch        > use(main)             
+c ---------------------End ዜማ Group----------------------------------------------------------
 
 c =====================End Functional Section===================================================
