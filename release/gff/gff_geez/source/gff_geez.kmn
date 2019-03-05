@@ -16,7 +16,7 @@ c
 store(&KEYBOARDVERSION) '1.2'
   store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
   store(&EthnologueCode) 'gez'
-  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+  store(&Copyright) '© 2009-2019 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
@@ -32,13 +32,13 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(gIz)  'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
-  store(kaIb) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
-  store(sals) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
-  store(rabI) 'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
-  store(hams) 'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
-  store(sads) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
-  store(sabI) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
+  store(geez) 'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
+  store(kaib) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
+  store(salis) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
+  store(rabi)  'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
+  store(hamis)  'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
+  store(sadis) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
+  store(sabi) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
   store(keys)  'hlHm_rsqbtxnkw_zydgTPSDfp'
@@ -61,11 +61,11 @@ c --------------------Maps for Labiovelars--------------------------------------
 
 c 'hhkqg'
   store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
-  store(zemedeWe)  'ኈኈኰቈጐ'
-  store(zemedeWu)  'ኍኍኵቍጕ'
-  store(zemedeWi)  'ኊኊኲቊጒ'
-  store(zemedeWa)  'ኋኋኳቋጓ'
-  store(zemedeWEE) 'ኌኌኴቌጔ'
+  store(zemedeGeez)  'ኈኈኰቈጐ'
+  store(zemedeKaib)  'ኍኍኵቍጕ'
+  store(zemedeSalis)  'ኊኊኲቊጒ'
+  store(zemedeRabi)  'ኋኋኳቋጓ'
+  store(zemedeHamis) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -80,12 +80,12 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(gIz-key)  'eEäÄéÉèÈêÊëË'
-  store(kaIb-key) 'uUùÙúÚûÛüÜ'
-  store(sals-key) 'iIìÌíÍîÎïÏ'
-  store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-  store(hams-key) 'æÆ'
-  store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(geez-key)  'eEäÄéÉèÈêÊëË'
+  store(kaib-key) 'uUùÙúÚûÛüÜ'
+  store(salis-key) 'iIìÌíÍîÎïÏ'
+  store(rabi-key) 'aAàÀáÁâÂãÃåÅ'
+  store(hamis-key) 'æÆ'
+  store(sabi-key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c ---------------------Maps of Yared Zaima Notation---------------------------------------------
@@ -129,7 +129,7 @@ c
   deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
 
   + any(extraKeys) > index(extraSads,1)
-  + any(keys)     > index(sads,1)
+  + any(keys)     > index(sadis,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -145,58 +145,58 @@ c Alef-A Vowels as Vowels
     any(loneVowelKeys) + "'" > index(loneVowelKeys,1) deadkey(1)  
 
 c Alef-A Vowels as Regular Syllables
-  'እ' + any(kaIb-key) > 'ኡ'
-  'እ' + any(sals-key) > 'ኢ'
-  'እ' + any(rabI-key) > 'ኣ'
-  'ኢ' + any(gIz-key)  > 'ኤ'
-  'እ' + any(sabI-key) > 'ኦ'
+  'እ' + any(kaib-key) > 'ኡ'
+  'እ' + any(salis-key) > 'ኢ'
+  'እ' + any(rabi-key) > 'ኣ'
+  'ኢ' + any(geez-key)  > 'ኤ'
+  'እ' + any(sabi-key) > 'ኦ'
 
 c Aynu-A Vowels as Regular Sylalbles
-  'እ' + any(gIz-key)  > 'ዕ'
-  'ዕ' + any(gIz-key)  > 'ዐ'
-  'ዕ' + any(kaIb-key) > 'ዑ'
-  'ዕ' + any(sals-key) > 'ዒ'
-  'ዕ' + any(rabI-key) > 'ዓ'
-  'ዒ' + any(gIz-key)  > 'ዔ'
-  'ዕ' + any(sabI-key) > 'ዖ'
+  'እ' + any(geez-key)  > 'ዕ'
+  'ዕ' + any(geez-key)  > 'ዐ'
+  'ዕ' + any(kaib-key) > 'ዑ'
+  'ዕ' + any(salis-key) > 'ዒ'
+  'ዕ' + any(rabi-key) > 'ዓ'
+  'ዒ' + any(geez-key)  > 'ዔ'
+  'ዕ' + any(sabi-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
-  'ኡ' + any(kaIb-key) > 'ዑ'
-  'ኢ' + any(sals-key) > 'ዒ'
-  'ኤ' + any(gIz-key)  > 'ዔ'
-  'ኦ' + any(sabI-key) > 'ዖ'
+  'ኡ' + any(kaib-key) > 'ዑ'
+  'ኢ' + any(salis-key) > 'ዒ'
+  'ኤ' + any(geez-key)  > 'ዔ'
+  'ኦ' + any(sabi-key) > 'ዖ'
 
 c Completing the Ge'ez "a" chain
-  'አ' + any(rabI-key) > 'ዓ'
-  'ዓ' + any(rabI-key) > 'ዐ'
+  'አ' + any(rabi-key) > 'ዓ'
+  'ዓ' + any(rabi-key) > 'ዐ'
 
 c Composable Aynu-A vowels as per ti-ER rules
-  'ዐ' + any(gIz-key)  > 'ዕ'
-  'ዐ' + any(kaIb-key) > 'ዑ'
-  'ዐ' + any(sals-key) > 'ዒ'
-  'ዐ' + any(rabI-key) > 'ዓ'
-  'ዐ' + any(sabI-key) > 'ዖ'
+  'ዐ' + any(geez-key)  > 'ዕ'
+  'ዐ' + any(kaib-key) > 'ዑ'
+  'ዐ' + any(salis-key) > 'ዒ'
+  'ዐ' + any(rabi-key) > 'ዓ'
+  'ዐ' + any(sabi-key) > 'ዖ'
 
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
-  any(sads) + any(gIz-key)  > index(gIz,1)
-  any(sads) + any(kaIb-key) > index(kaIb,1)
-  any(sads) + any(sals-key) > index(sals,1)
-  any(sads) + any(rabI-key) > index(rabI,1)
-  any(sads) + any(hams-key) > index(hams,1)
-  any(sals) + any(gIz-key)  > index(hams,1)  
-  any(sads) + any(sabI-key) > index(sabI,1)
+  any(sadis) + any(geez-key)  > index(geez,1)
+  any(sadis) + any(kaib-key) > index(kaib,1)
+  any(sadis) + any(salis-key) > index(salis,1)
+  any(sadis) + any(rabi-key) > index(rabi,1)
+  any(sadis) + any(hamis-key) > index(hamis,1)
+  any(salis) + any(geez-key)  > index(hamis,1)  
+  any(sadis) + any(sabi-key) > index(sabi,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)
-  any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
-  any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1) 
-  any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
-  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)  
-  any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
+  any(zemedeKeysKaIb)         + any(rabi-key) > index(zemedeEthio,1)
+  any(zemedeKeysKaIbExtended) + any(geez-key)  > index(zemedeGeez,1)
+  any(zemedeKeysKaIbExtended) + any(kaib-key)  > index(zemedeKaib,1) 
+  any(zemedeKeysKaIbExtended) + any(salis-key) > index(zemedeSalis,1)
+  any(zemedeKeysKaIbExtended) + any(rabi-key)  > index(zemedeRabi,1)  
+  any(zemedeSalis)            + any(geez-key)  > index(zemedeHamis,1)
 
 c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
@@ -211,12 +211,12 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(sads) + "'" > index(sads,1) deadkey(1)
-  any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1)
+  any(sadis) + "'" > index(sadis,1) deadkey(1)
+  any(sadis) + [CTRL K_SPACE] > index(sadis,1) deadkey(1)
   any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
   any(zemedeKeysKaIbExtended) + "'" > index(zemedeKeysKaIbExtended,1) deadkey(1)
-  any(zemedeWi) + "'" > index(zemedeWi,1) deadkey(1)
-  any(sals) + "'" > index(sals,1) deadkey(1)
+  any(zemedeSalis) + "'" > index(zemedeWi,1) deadkey(1)
+  any(salis) + "'" > index(salis,1) deadkey(1)
   
 
   + ':'     > '፡'
