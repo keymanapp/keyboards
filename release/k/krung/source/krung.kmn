@@ -1,0 +1,120 @@
+﻿c krung generated from template at 2019-03-01 13:05:36
+c with name "Krung"
+store(&VERSION) '10.0'
+store(&NAME) 'Krung'
+store(&COPYRIGHT) '© Keyman'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'krung.kvks'
+store(&LAYOUTFILE) 'krung.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c single orthographic consonant mappings
+store(sin_con1_key)     [K_B] [K_C] [K_D] [K_H] [K_J] [K_K] [K_L] [K_N] [K_Q] [K_S] [K_T] c bcdhjklnqst      
+store(sin_con1_out)     U+1794 U+1785 U+178A U+17A0 U+1786 U+1780 U+17A1 U+178E U+17A2 U+179F U+178F c បចដហឆកឡណអសត
++ any(sin_con1_key)     > index(sin_con1_out,1)
+
+store(sin_con2_key)     [K_G] [K_M] [K_P] [K_R] [K_W] [K_Y] c gmprwy
+store(sin_con2_out)     U+179D U+1798 U+1796 U+179A U+179C U+1799 c ឝមពរវយ 
++ any(sin_con2_key)     > index(sin_con2_out,1)
+
+c consonants with two key combination
+U+178E + [K_G]    > U+1784    c ng > ង
+U+178E + [K_H]    > U+1789    c nh > ញ
+U+17A2 + [K_B]    > U+179E    c qb > ឞ
+U+17A2 + [K_D]    > U+178B    c qd > ឋ
+U+1780 + [K_H]    > U+1781    c kh > ខ
+U+1796 + [K_H]    > U+1795    c ph > ផ
+
+c CC combo in the onset
+
+
+c single orthographic final consonant mappings
+store(sin_fin_con)     U+1785 U+1780 U+179B U+1798 U+1793 U+1784 U+1789 U+1794 U+1782 U+179A U+179F U+178F U+179C U+1799 c ចកលមនងញបគរសតវយ
+
+c single orthographic vowel mappings, series 1
+store(sin_vow1_key)     [K_O] [K_E] [K_X]       c keys: oex
+store(sin_vow1_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ​ in series 1
++ any(sin_vow1_key)     > index(sin_vow1_out,1)
+
+c single orthographic vowel mappings, series 2
+store(sin_vow2_key)     [K_U] [K_V] [K_I]       c keys: uvi
+store(sin_vow2_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ in series 2
++ any(sin_vow2_key)     > index(sin_vow2_out,1)
+
+c single orthographic consonant
+
+
+c Deadkeys defined for inherent vowel used with Bantoc
++ [K_A] > dk(a_key)
++ [K_Z] > dk(z_key)
+
+c VV combo, series 1
+U+17B7 + [K_E]      > U+17C0   c ie > ៀ
+U+17B9 + [K_E]      > U+17BE   c ee > ើ
+dk(a_key) + [K_Y]   > U+17C3   c ay > ៃ  
+U+17B9 + [K_Y]      > U+17B8   c vy > ី 
+dk(a_key) + [K_H]   > U+17C7   c ah > ះ
+dk(z_key) + [K_H]   > U+17C4 U+17C7  c zh > ោះ
+dk(z_key) + [K_Q]   > U+1782 U+17CB  c zq > គ់
+dk(z_key) + [K_W]   > U+17BC U+179C  c zw > ូវ
+U+17B7 + [K_H]      > U+17B7 U+17C7  c xh > ិះ
+U+17B7 + [K_Q]      > U+17B7 U+1782  c xq > ិគ
+U+17B9 + [K_Q]      > U+17B9 U+1782  c eq > ឹគ
+U+17BB + [K_O]      > U+17BC         c oo > ូ 
+
+c VV combo, series 2
+U+17B7 + [K_X]  > U+17C2    c xx > ែ
+U+17B7 + [K_I]  > U+17B8    c ii > ី
+U+17B9 + [K_V]  > U+17BA    c vv > ឺ
+U+17BB + [K_E]  > U+17BD    c ue > ួ
+U+17BB + [K_U]  > U+17BC    c uu > ូ
+
+c change series of single consonants using key F
+U+1794 + [K_F]  > U+1794 U+17CA     c ប > ប៊
+
+c C and CC in presyllables
+
+c change series of CC clusters
+
+c +++++++++++++++++ NORMALIZATION +++++++++++++++++
+match > use(normalise)
+
+group(normalise)
+
+c Bantoc with vowels
+dk(z_key) any(sin_fin_con)   > context(2) U+17CB         
+dk(a_key) any(sin_fin_con)   > U+17B6 context(2) U+17CB 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c TODO
+c c change series of single consonants using key F (not the best solution yet)
+c CC combo in the onset
+c single orthographic consonant
+c C and CC in presyllables
+c change series of CC clusters
+
+c Problems to solve:
+c 1. Disyllable and consonant clusters
+c 2. Inherent vowels zz and aa
+c 3. Series of consonants changed in harmony with that of the vowel
+c 4. Vowel "ang" ាំង should replace ាង់
+c 5. final consonants?
+
