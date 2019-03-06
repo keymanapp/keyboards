@@ -4,7 +4,7 @@ c The Ge'ez Frontier Foundation's mnemonic input method for Ge'ez script on US-Q
 c keyboards for SIL Keyman, compliant with Unicode 3.0 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.1/gff_geez.php
+c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.2/gff_geez.php
 c Source        :  https://github.com/keymanapp/keyboards/gff_geez
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
@@ -91,8 +91,8 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
-  store(ዜማ፡Menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
-  store(ዜማ፡Keys) '1234567890_'
+  store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
+  store(ዜማ፡keys) '1234567890_'
 c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
 c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
@@ -104,6 +104,7 @@ c =====================End Data Section=========================================
                   
 c =====================Begin Functional Section=================================================
 c 
+store(&TARGETS) 'windows macosx linux'
 begin Unicode > use(first)
 
 c first matches a menu in the context or passes processing to main
