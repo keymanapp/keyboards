@@ -26,7 +26,7 @@ This keyboard layout is designed for the Dogri language by Rehmat Aziz Chitrali 
 an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item.     </p>
 
 <h3>Desktop Keyboard Layout</h3>
-<div id='osk' data-states='default shift ctrlalt'>
+<div id='osk' data-states='default shift ctrl-alt'>
 </div>
 
 <h3>Mobile/Tablet Keyboard Layout</h3>
@@ -80,6 +80,6 @@ SOFTWARE.</p></DIV>
 
 <h2>Links</h2>
 <ul>
-<li><a href='http://keymankeyboards.com/iso:doi'>Other keyboards for these languages</a></li>
+<li><a href='http://keymankeyboards.com/iso:dgo'>Other keyboards for these languages</a></li>
 </ul>
 

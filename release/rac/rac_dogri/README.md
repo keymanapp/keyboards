@@ -19,6 +19,8 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 Links
 -----
 
+ * Home:    https://keyman.com/keyboards/rac_dogri
+ * Help:    https://help.keyman.com/keyboard/rac_dogri
  * Contact: Rehmat Aziz Chitrali Linguist and Researcher <rachitrali@yahoo.com>
 
 Supported Platforms
