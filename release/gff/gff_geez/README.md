@@ -19,4 +19,5 @@ Links
 Supported Platforms
 -------------------
  * Windows
- 
+ * macOS
+ * Linux
