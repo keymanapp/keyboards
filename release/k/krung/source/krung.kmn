@@ -13,24 +13,37 @@ begin Unicode > use(main)
 group(main) using keys
 
 c single orthographic consonant mappings
-store(sin_con1_key)     [K_B] [K_C] [K_D] [K_H] [K_J] [K_K] [K_L] [K_N] [K_Q] [K_S] [K_T] c bcdhjklnqst      
-store(sin_con1_out)     U+1794 U+1785 U+178A U+17A0 U+1786 U+1780 U+17A1 U+178E U+17A2 U+179F U+178F c បចដហឆកឡណអសត
+store(sin_con1_key)     [K_B] [K_C] [K_D] [K_H] [K_J] [K_K] [K_Q] [K_S] [K_T] c bcdhjklnqst      
+store(sin_con1_out)     U+1794 U+1785 U+178A U+17A0 U+1786 U+1780 U+17A2 U+179F U+178F c បចដហឆកឡណអសត
 + any(sin_con1_key)     > index(sin_con1_out,1)
 
-store(sin_con2_key)     [K_G] [K_M] [K_P] [K_R] [K_W] [K_Y] c gmprwy
-store(sin_con2_out)     U+179D U+1798 U+1796 U+179A U+179C U+1799 c ឝមពរវយ 
+store(sin_con2_key)     [K_G] [K_M] [K_P] [K_R] [K_W] [K_Y] [K_L] [K_N] c gmprwy
+store(sin_con2_out)     U+179D U+1798 U+1796 U+179A U+179C U+1799 U+179B U+1793 c ឝមពរវយ 
 + any(sin_con2_key)     > index(sin_con2_out,1)
 
+c CC onset with ្រ  ្ល  ្ម  ្ន  ្ង
+any(sin_con1_out) + [K_R]       > context U+17D2 U+179A     c for ប្រ​ច្រ​ដ្រ​ឆ្រ​ក្រ​ស្រត្រ
+any(sin_con2_out) + [K_R]       > context U+17D2 U+179A     c for ឝ្រព្រ
+any(sin_con1_out) + [K_L]       > context U+17D2 U+179B     c for ប្ល​ក្ល
+any(sin_con2_out) + [K_L]       > context U+17D2 U+179B     c for ព្ល​ឝ្ល
+U+17A0 + [K_M]                  > context U+17D2 U+1798     c for ហ្ម
+U+17A0 + [K_N]                  > context U+17D2 U+1793     c for ហ្ន
+U+17A0 U+17D2 U+1793 + [K_G]    > context(1) U+17D2 U+1784  c for ហ្ង  
+U+17A2 + [K_M]                  > context U+17D2 U+1798     c for អ្ម
+U+17A2 + [K_N]                  > context U+17D2 U+1793     c for អ្ន
+U+17A2 U+17D2 U+1793 + [K_G]    > context(1) U+17D2 U+1784  c for អ្ង 
+
+
+
+
 c consonants with two key combination
-U+178E + [K_G]    > U+1784    c ng > ង
-U+178E + [K_H]    > U+1789    c nh > ញ
+U+1793 + [K_G]    > U+1784    c ng > ង
+U+1793 + [K_H]    > U+1789    c nh > ញ
 U+17A2 + [K_B]    > U+179E    c qb > ឞ
 U+17A2 + [K_D]    > U+178B    c qd > ឋ
 U+1780 + [K_H]    > U+1781    c kh > ខ
 U+1796 + [K_H]    > U+1795    c ph > ផ
-
-c CC combo in the onset
-
+U+178F + [K_H]    > U+1790    c th > ថ
 
 c single orthographic final consonant mappings
 store(sin_fin_con)     U+1785 U+1780 U+179B U+1798 U+1793 U+1784 U+1789 U+1794 U+1782 U+179A U+179F U+178F U+179C U+1799 c ចកលមនងញបគរសតវយ
@@ -70,11 +83,16 @@ c VV combo, series 2
 U+17B7 + [K_X]  > U+17C2    c xx > ែ
 U+17B7 + [K_I]  > U+17B8    c ii > ី
 U+17B9 + [K_V]  > U+17BA    c vv > ឺ
+U+17BA + [K_H]  > U+17BA U+17C7 c vvh > ឺះ
+U+17B9 + [K_H]  > U+17B9 U+17C7 c vh > ឹះ
+U+17B8 + [K_H]  > U+17B8 U+17C7 c iih > ីះ
 U+17BB + [K_E]  > U+17BD    c ue > ួ
 U+17BB + [K_U]  > U+17BC    c uu > ូ
 
-c change series of single consonants using key F
-U+1794 + [K_F]  > U+1794 U+17CA     c ប > ប៊
+c change series of single consonants in harmony with the series of the vowel
+any(sin_con1_out) + [K_O]   > context(1) c NOT WORKING
+
+
 
 c C and CC in presyllables
 
@@ -84,6 +102,7 @@ c +++++++++++++++++ NORMALIZATION +++++++++++++++++
 match > use(normalise)
 
 group(normalise)
+
 
 c Bantoc with vowels
 dk(z_key) any(sin_fin_con)   > context(2) U+17CB         
