@@ -1,18 +1,17 @@
-﻿c Türkçe klavyeye göre hazırlanmış Lazca klavyedir.
-c Fırlatmalı(şapkalı) ünsüz harfler(ç̆, k̆, p̆, t̆, z̆, ʒ̆) için aynı tuşa iki kez basın.
-c Bilgisayarda w/W için ʒ/Ʒ den sonra " tuşuna basın.
+﻿c - Fırlatmalı(şapkalı) ünsüz harfler(ç̆, k̆, p̆, t̆, z̆, ʒ̆) için aynı tuşa iki kez basın.
+c Veya ünsüz harfdan sonra Shift+" (é) tuşuna basın.
+c - Yumuşatmalı(şapkalı) ünlü harfler(â, ê, î ô, û) için Shift+3 (^) dan sonra ünlü harf tuşuna basın.
+c - Bilgisayarda w/W için ʒ/Ʒ den sonra " tuşuna basın.
 store(&VERSION) '9.0'
 store(&NAME) 'Lazca Klavye'
 store(&ETHNOLOGUECODE) 'Lzz'
-store(&WINDOWSLANGUAGES) 'x041F'
 store(&MESSAGE) 'Lazca Klavye'
 store(&VISUALKEYBOARD) 'lazuri.kvks'
 store(&BITMAP) 'lazuri.ico'
 store(&COPYRIGHT) '© 2017-2019 HERdilDER'
 store(&KEYBOARDVERSION) '2.3'
-store(&TARGETS) 'any'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
 store(&LAYOUTFILE) 'lazuri.keyman-touch-layout'
-store(&LANGUAGE) 'x041F'
 begin Unicode > use(main)
 
 
@@ -36,7 +35,7 @@ c Turkish Q
 + [SHIFT K_6] > '&'
 + [SHIFT K_5] > '%'
 + [SHIFT K_4] > '+'
-+ [SHIFT K_3] > '^'
++ [SHIFT K_3] > U+005e
 + [SHIFT K_2] > U+0027
 + [SHIFT K_1] > '!'
 + [SHIFT K_BKQUOTE] > '̆'
@@ -75,4 +74,18 @@ c w rules
 "ʒ" + [K_BKQUOTE] > 'w'
 "Ʒ" + [K_BKQUOTE] > 'W' 
 
+c circumflex small rules
+"^" + "a" > "â"
+"^" + "e" > "ê"
+"^" + "o" > "ô"
+"^" + "u" > "û"
+"^" + "i" > "î"
+"^" + [K_QUOTE] > "î"
 
+c circumflex capital rules
+"^" + "A" > "Â"
+"^" + "E" > "Ê"
+"^" + "O" > "Ô"
+"^" + "U" > "Û"
+"^" + "I" > "Î"
+"^" + [SHIFT K_QUOTE] > "Î"
