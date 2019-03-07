@@ -1,12 +1,13 @@
-﻿c mongolian_cyrillic generated from template at 2019-03-01 09:30:05
-c with name "Mongolian Cyrillic"
+﻿c This phonetic keyboard layout is designed for Khalkha Mongolian Cyrillic.
+c It is based on the English QWERTY keyboard and also aligns with Chinese Pinyin.
 store(&VERSION) '10.0'
 store(&NAME) 'Mongolian Cyrillic'
-store(&COPYRIGHT) '© 2019'
+store(&COPYRIGHT) '(C) 2019 SIL International, Latam Asia 拉美亞太'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'mongolian_cyrillic.kvks'
 store(&LAYOUTFILE) 'mongolian_cyrillic.keyman-touch-layout'
+store(&BITMAP) 'mongolian_cyrillic.ico'
 
 begin Unicode > use(main)
 
@@ -57,7 +58,7 @@ group(main) using keys
 + [SHIFT K_Q] > 'Ч'
 + [SHIFT K_EQUAL] > 'Щ'
 + [SHIFT K_HYPHEN] > 'Е'
-+ [SHIFT K_BKQUOTE] > 'Ъ'
++ [SHIFT K_BKQUOTE] > 'ъ'
 + [K_EQUAL] > 'щ'
 + [K_HYPHEN] > 'е'
 + [K_SLASH] > '-'
