@@ -1,6 +1,10 @@
 Lazca (Lazuri) Değişiklik Geçmişi
 ===============================
 
+2.3 (26 Feb 2019)
+------------------
+Added mobile keyboard and made a few misc changes
+
 1.0.1 (4 Jun 2018)
 ------------------
 * Added script information to language metadata in .kps
