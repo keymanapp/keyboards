@@ -1,10 +1,10 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
 c The Ge'ez Frontier Foundation's mnemonic input method for Ge'ez script on US-QWERTY
-c keyboards for SIL Keyman, compliant with Unicode 3.0 and later.
+c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.1/gff_geez.php
+c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.2/gff_geez.php
 c Source        :  https://github.com/keymanapp/keyboards/gff_geez
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
@@ -13,15 +13,15 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '9.0'
-  store(&KeyboardVersion) '1.1'
+store(&KEYBOARDVERSION) '1.2'
   store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
   store(&EthnologueCode) 'gez'
-  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
-  store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
+  store(&Copyright) '© 2009-2019 Ge' U+0027 'ez Frontier Foundation'
+  store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
 store(&BITMAP) 'gff_geez.ico'
-store(&VISUALKEYBOARD) 'gff_geez.kvk'
+store(&VISUALKEYBOARD) 'gff_geez.kvks'
 c 
 c =====================End Identity Section=====================================================
 
@@ -32,40 +32,40 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(gIz)  'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
-  store(kaIb) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
-  store(sals) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
-  store(rabI) 'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
-  store(hams) 'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
-  store(sads) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
-  store(sabI) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
+  store(ግዕዝ) 'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
+  store(ካዕብ) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
+  store(ሣልስ) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
+  store(ራብዕ) 'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
+  store(ኃምስ) 'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
+  store(ሳድስ) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
+  store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys)  'hlHm_rsqbtxnkw_zydgTPSDfp'
+  store(keys) 'hlHm_rsqbtxnkw_zydgTPSDfp'
 
 c the following is Ge'ez specific
-  store(extraKeys) 'LMRXBvVcQNKWYDjJZGCF'
-  store(extraSads) 'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
+  store(ሌሎች፡keys) 'LMRXBvVcQNKWYDjJZGCF'
+  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)  'aAuUiIeEoO'
-  store(loneVowelEthio) 'አዐኡኡኢኢእእኦኦ' 
+  store(loneVowelKeys)   'aAuUiIeEoO'
+  store(loneVowelEthio)  'አዐኡኡኢኢእእኦኦ' 
   store(composableVowel) 'አኡኢእኦዐዒዓዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-  store(zemedeKeys)     'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
-  store(zemedeKeysKaIb) 'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
-  store(zemedeEthio)    'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
+  store(ሳድስ፡መደበኛ) 'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
+  store(ካዕብ፡መደበኛ) 'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
 
 c 'hhkqg'
-  store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
-  store(zemedeWe)  'ኈኈኰቈጐ'
-  store(zemedeWu)  'ኍኍኵቍጕ'
-  store(zemedeWi)  'ኊኊኲቊጒ'
-  store(zemedeWa)  'ኋኋኳቋጓ'
-  store(zemedeWEE) 'ኌኌኴቌጔ'
+  store(ካዕብ፡ልዩ)  'ሁኁኩቁጉ'
+  store(ዘመደ፡ግዕዝ) 'ኈኈኰቈጐ'
+  store(ዘመደ፡ካዕብ) 'ኍኍኵቍጕ'
+  store(ዘመደ፡ሣልስ) 'ኊኊኲቊጒ'
+  store(ዘመደ፡ራብዕ) 'ኋኋኳቋጓ'
+  store(ዘመደ፡ኃምስ) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -73,27 +73,27 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
   store(arabNumbers) '123456789'
-  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
   store(ColonOrComma) ':,'
   store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(gIz-key)  'eEäÄéÉèÈêÊëË'
-  store(kaIb-key) 'uUùÙúÚûÛüÜ'
-  store(sals-key) 'iIìÌíÍîÎïÏ'
-  store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-  store(hams-key) 'æÆ'
-  store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(ግዕዝ፡key) 'eEäÄéÉèÈêÊëË'
+  store(ካዕብ፡key) 'uUùÙúÚûÛüÜ'
+  store(ሣልስ፡key) 'iIìÌíÍîÎïÏ'
+  store(ራብዕ፡key) 'aAàÀáÁâÂãÃåÅ'
+  store(ኃምስ፡key) 'æÆ'
+  store(ሳብዕ፡key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
-c ---------------------Maps of Yared Zaima Notation---------------------------------------------
-  store(Tebek) U+135F
-  store(zaima) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$Tebek
-  store(zaimaMenu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
-  store(zaimaKeys) '1234567890_'
-c ---------------------End Maps of Yared Zaima Notation----------------------------------------
+c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
+  store(ጥብቅ) U+135F
+  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
+  store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
+  store(ዜማ፡keys) '1234567890_'
+c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
 c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
   store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
@@ -104,31 +104,34 @@ c =====================End Data Section=========================================
                   
 c =====================Begin Functional Section=================================================
 c 
-
+store(&TARGETS) 'windows macosx linux'
 begin Unicode > use(first)
 
 c first matches a menu in the context or passes processing to main
 c remove 'using keys' and +any() when KMW bug fixed
   group(first) using keys
 c match a menu on the context
-  outs(zaimaMenu) + any(anyKey) > use(zaimaGroup)
+  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
    
 c no menu was in the context, so process keys normally
-  nomatch         > use(main)
+  nomatch > use(main)
    
 c The main group
   group(main) using keys
 
-c ---------------------Input of Special Symbols-------------------------------------------------
+c ---------------------Input of ልዩ Symbols-------------------------------------------------
 c 
 c The input section here is for rules that must precede other rules
 c 
-  + '_' > outs(zaimaMenu)
-  $Tebek + '_' > '_'
+  + '_' > outs(ዜማ፡menu)
+  $ጥብቅ + '_' > '_'
 
-  + any(extraKeys) > index(extraSads,1)
-  + any(keys)     > index(sads,1)
-c ---------------------End Input of Special Symbols---------------------------------------------
+  deadkey(1) + "'" > "'"
+  deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
+
+  + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
+  + any(keys)     > index(ሳድስ,1)
+c ---------------------End Input of ልዩ Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
   'ስ' + 's' > 'ሥ'
@@ -140,60 +143,61 @@ c ---------------------Input of Lone Vowels-------------------------------------
 c 
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
+    any(loneVowelKeys) + "'" > index(loneVowelKeys,1) deadkey(1)  
 
-c Alef-A Vowels as Regular Syllables
-  'እ' + any(kaIb-key) > 'ኡ'
-  'እ' + any(sals-key) > 'ኢ'
-  'እ' + any(rabI-key) > 'ኣ'
-  'ኢ' + any(gIz-key)  > 'ኤ'
-  'እ' + any(sabI-key) > 'ኦ'
+c Alef-A Vowels as መደበኛ Syllables
+  'እ' + any(ካዕብ፡key) > 'ኡ'
+  'እ' + any(ሣልስ፡key) > 'ኢ'
+  'እ' + any(ራብዕ፡key) > 'ኣ'
+  'ኢ' + any(ግዕዝ፡key) > 'ኤ'
+  'እ' + any(ሳብዕ፡key) > 'ኦ'
 
-c Aynu-A Vowels as Regular Sylalbles
-  'እ' + any(gIz-key)  > 'ዕ'
-  'ዕ' + any(gIz-key)  > 'ዐ'
-  'ዕ' + any(kaIb-key) > 'ዑ'
-  'ዕ' + any(sals-key) > 'ዒ'
-  'ዕ' + any(rabI-key) > 'ዓ'
-  'ዒ' + any(gIz-key)  > 'ዔ'
-  'ዕ' + any(sabI-key) > 'ዖ'
+c Aynu-A Vowels as መደበኛ Sylalbles
+  'እ' + any(ግዕዝ፡key) > 'ዕ'
+  'ዕ' + any(ግዕዝ፡key) > 'ዐ'
+  'ዕ' + any(ካዕብ፡key) > 'ዑ'
+  'ዕ' + any(ሣልስ፡key) > 'ዒ'
+  'ዕ' + any(ራብዕ፡key) > 'ዓ'
+  'ዒ' + any(ግዕዝ፡key) > 'ዔ'
+  'ዕ' + any(ሳብዕ፡key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
-  'ኡ' + any(kaIb-key) > 'ዑ'
-  'ኢ' + any(sals-key) > 'ዒ'
-  'ኤ' + any(gIz-key)  > 'ዔ'
-  'ኦ' + any(sabI-key) > 'ዖ'
+  'ኡ' + any(ካዕብ፡key) > 'ዑ'
+  'ኢ' + any(ሣልስ፡key) > 'ዒ'
+  'ኤ' + any(ግዕዝ፡key) > 'ዔ'
+  'ኦ' + any(ሳብዕ፡key) > 'ዖ'
 
 c Completing the Ge'ez "a" chain
-  'አ' + any(rabI-key) > 'ዓ'
-  'ዓ' + any(rabI-key) > 'ዐ'
+  'አ' + any(ራብዕ፡key) > 'ዓ'
+  'ዓ' + any(ራብዕ፡key) > 'ዐ'
 
 c Composable Aynu-A vowels as per ti-ER rules
-  'ዐ' + any(gIz-key)  > 'ዕ'
-  'ዐ' + any(kaIb-key) > 'ዑ'
-  'ዐ' + any(sals-key) > 'ዒ'
-  'ዐ' + any(rabI-key) > 'ዓ'
-  'ዐ' + any(sabI-key) > 'ዖ'
+  'ዐ' + any(ግዕዝ፡key) > 'ዕ'
+  'ዐ' + any(ካዕብ፡key) > 'ዑ'
+  'ዐ' + any(ሣልስ፡key) > 'ዒ'
+  'ዐ' + any(ራብዕ፡key) > 'ዓ'
+  'ዐ' + any(ሳብዕ፡key) > 'ዖ'
 
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
-  any(sads) + any(gIz-key)  > index(gIz,1)
-  any(sads) + any(kaIb-key) > index(kaIb,1)
-  any(sads) + any(sals-key) > index(sals,1)
-  any(sads) + any(rabI-key) > index(rabI,1)
-  any(sads) + any(hams-key) > index(hams,1)
-  any(sals) + any(gIz-key)  > index(hams,1)  
-  any(sads) + any(sabI-key) > index(sabI,1)
+  any(ሳድስ) + any(ግዕዝ፡key) > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ፡key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ፡key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ፡key) > index(ራብዕ,1)
+  any(ሳድስ) + any(ኃምስ፡key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ፡key) > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ፡key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)
-  any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
-  any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1) 
-  any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
-  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)  
-  any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
+  any(ካዕብ፡መደበኛ) + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ካዕብ፡ልዩ)   + any(ግዕዝ፡key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡ልዩ)   + any(ካዕብ፡key) > index(ዘመደ፡ካዕብ,1) 
+  any(ካዕብ፡ልዩ)   + any(ሣልስ፡key) > index(ዘመደ፡ሣልስ,1)
+  any(ካዕብ፡ልዩ)   + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ,1)  
+  any(ዘመደ፡ሣልስ)  + any(ግዕዝ፡key) > index(ዘመደ፡ኃምስ,1)
 
 c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
@@ -205,19 +209,23 @@ c ---------------------End Input of Labiovelars---------------------------------
 
 c ---------------------Input of Punctuation-----------------------------------------------------
 c 
-c The only dead key for entry of special characters and
+c The only dead key for entry of ልዩ characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(sads)  + "'" > index(sads,1) deadkey(1)
-  deadkey(1) + "'" > "'"
-
+  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+  any(ሳድስ)      + [CTRL K_SPACE] > index(ሳድስ,1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
+  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
+  
 
   + ':'     > '፡'
   + [SHIFT K_SPACE] > '፡'
   '፡' + ':' > '።'
   '።' + ':' > '፨'
-  '፨' + ':'  > '፠'  c makes circular
-  '፠' + ':'  > ':'  c makes circular
+  '፨' + ':' > '፠'  c makes circular
+  '፠' + ':' > ':'  c makes circular
   
       + ',' > '፥'
   '፥' + ',' > '፣'
@@ -263,7 +271,7 @@ c ---------------------End Input of European Characters-------------------------
 
 c ---------------------Input of Numbers---------------------------------------------------------
 
-c Special Rule for Arabic Numerals
+c Special Rule for Araicc Numerals
 c 
 c The following attempts to auto-correct the use of Ethiopic wordspace and
 c Ethiopic comma within an Arabic numeral context.  Ethiopic wordspace gets
@@ -280,7 +288,7 @@ c Ethiopic Numerals
   + '1' > '፩'
   + any(ArabOnes) > index(ones,1)
 
-c special cases for multiples of one
+c ልዩ cases for multiples of one
     '፩' + '0' >   '፲'
     '፲' + '0' >   '፻'
     '፻' + '0' >  '፲፻'
@@ -305,10 +313,10 @@ c enhance this later, look for something that can copy a match over
   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
 c ---------------------End Input of Numbers-----------------------------------------------------
 
-c ---------------------Begin Zaima Group--------------------------------------------------------
-  group(zaimaGroup) using keys
-  + any(zaimaKeys) > index(zaima, 1)
-  nomatch          > use(main)             
-c ---------------------End Zaima Group----------------------------------------------------------
+c ---------------------Begin ዜማ Group--------------------------------------------------------
+  group(ዜማ፡group) using keys
+  + any(ዜማ፡keys) > index(ዜማ, 1)
+  nomatch        > use(main)             
+c ---------------------End ዜማ Group----------------------------------------------------------
 
 c =====================End Functional Section===================================================
