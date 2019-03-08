@@ -2,10 +2,10 @@ Keyboard Data
 -------------
 
 * Name:           NW Iranian Latin
-* Copyright:      (C) 2017-2018 SIL International
-* Version:        1.0.1
-* Keyman Version: 9.0
-* BCP-47 codes:   glk mzn srz bgp bcc bgn bsg ktl atn gbz faz gzi kfm ntz nyq prp prd siy soj vaf ckb kmr sdh lki oru prc lsa sgr smy sqo avd esh goz hrz xkp xkj kgn xkc okh vmh rat rdb shm tks tly tov def bjm hac sdf sdb kiu diq
+* Copyright:      (C) 2017-2019 SIL International
+* Version:        1.0.2
+* Keyman Version: 11.0
+* BCP-47 codes:   glk-Latn
 
 Description
 -----------
