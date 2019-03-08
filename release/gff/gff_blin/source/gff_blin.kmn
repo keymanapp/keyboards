@@ -73,7 +73,7 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
   store(arabNumbers) '123456789'
-  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
   store(ColonOrComma) ':,'
   store(ethWordspaceOrComma) '፡፣'
@@ -92,6 +92,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
+store(&TARGETS) 'windows macosx linux'
   begin Unicode > use(main)
   group(main) using keys
 
@@ -161,7 +162,7 @@ c ---------------------Input of Basic Syllables---------------------------------
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(ካዕብ፡መደበኛ)              + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ካዕብ፡መደበኛ)             + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
   any(ካዕብ፡ልዩ) + any(ግዕዝ-key) > index(ዘመደ፡ግዕዝ,1)
   any(ካዕብ፡ልዩ) + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
   any(ካዕብ፡ልዩ) + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
