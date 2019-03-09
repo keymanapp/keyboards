@@ -1,6 +1,12 @@
 gff_amharic Change History
 ==========================
 
+1.8 (9 Mar 2019)
+----------------
+* Fix to recognize apostrophe have Salis forms.
+* Change "Wx" and transliterated store names to localized names.
+
+
 1.7 (1 Dec 2018)
 -----------------
 
