@@ -11,15 +11,52 @@
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
-    <Items/>
+    <Folder>GFF Tigrinya-Ethiopia Keyboard</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Welcome</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Tigrinya Keyboard</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Tigrinya Keyboard Manual</Name>
+        <FileName>TigrinyaEtTyping-English.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>OFL (Abyssinica SIL &amp; Brana Licence)</Name>
+        <FileName>OFL.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>GPL (WashRa + Free Serif Licence)</Name>
+        <FileName>GNU-GPLv2.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Tigrinya</Name>
+    <Name URL="">GFF Tigrinya-Ethiopia Keyboard</Name>
     <Copyright URL="">© 2009-2019 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:yacob@geez.org"></Author>
-    <WebSite URL=""></WebSite>
+    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
   <Files>
     <File>
@@ -148,12 +185,24 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\GNU-GPLv2.txt</Name>
+      <Description>File GNU-GPLv2.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ትግርኛ (Tigrinya)</Name>
       <ID>gff_tigrinya_ethiopia</ID>
-      <Version></Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="ti-et">Tigrigna (Ethiopia)</Language>
       </Languages>
