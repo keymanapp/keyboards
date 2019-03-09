@@ -19,4 +19,5 @@ Supported Platforms
 -------------------
 
  * Windows
- 
+ * macOS
+ * Linux
