@@ -33,9 +33,6 @@ U+17A2 + [K_M]                  > context U+17D2 U+1798     c for អ្ម
 U+17A2 + [K_N]                  > context U+17D2 U+1793     c for អ្ន
 U+17A2 U+17D2 U+1793 + [K_G]    > context(1) U+17D2 U+1784  c for អ្ង 
 
-
-
-
 c consonants with two key combination
 U+1793 + [K_G]    > U+1784    c ng > ង
 U+1793 + [K_H]    > U+1789    c nh > ញ
@@ -44,6 +41,10 @@ U+17A2 + [K_D]    > U+178B    c qd > ឋ
 U+1780 + [K_H]    > U+1781    c kh > ខ
 U+1796 + [K_H]    > U+1795    c ph > ផ
 U+178F + [K_H]    > U+1790    c th > ថ
+
+store(any_two_key_con) U+1784 U+1789 U+179E U+178B U+1781 U+1795 U+1790
+
+store(any_con)  outs(sin_con1_out) outs(sin_con2_out) outs(any_two_key_con)
 
 c single orthographic final consonant mappings
 store(sin_fin_con)     U+1785 U+1780 U+179B U+1798 U+1793 U+1784 U+1789 U+1794 U+1782 U+179A U+179F U+178F U+179C U+1799 c ចកលមនងញបគរសតវយ
@@ -58,17 +59,28 @@ store(sin_vow2_key)     [K_U] [K_V] [K_I]       c keys: uvi
 store(sin_vow2_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ in series 2
 + any(sin_vow2_key)     > index(sin_vow2_out,1)
 
+c inherent vowel and ា treatments (1) without consonant key fired.
++ [K_A]                                     > U+17A2 U+17B6 U+1782 U+17CB       c a > អាគ់
+any(any_con) + [K_A]                        > context(1) U+17B6 U+1782 U+17CB   c any C a > any C ាគ់
+any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) U+17B6                 c any C aa > any C ា any C ់
+U+17B6 U+1782 U+17CB + [K_H]> U+17C7  c ហ់ > ះ    c fix ហ់ in the final position
+any(any_con) U+17D2 any(any_con) + [K_A]    > context(1) context(2) context(3) U+17B6 U+1782 U+17CB
+any(any_con) U+17D2 any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) context(2) context(3) U+17B6
+
++ [K_Z] > U+17A2 U+1782 U+17CB c a > អគ់
+
+U+17A2 U+17B6 U+1782 U+17CB + [K_A] > U+17A2 U+17B6 c aa > អា
+U+17A2 U+1782 U+17CB + [K_Z] > U+17A2 c zz > អ
+
 c single orthographic consonant
 
 
-c Deadkeys defined for inherent vowel used with Bantoc
-+ [K_A] > dk(a_key)
-+ [K_Z] > dk(z_key)
 
 c VV combo, series 1
 U+17B7 + [K_E]      > U+17C0   c ie > ៀ
 U+17B9 + [K_E]      > U+17BE   c ee > ើ
-dk(a_key) + [K_Y]   > U+17C3   c ay > ៃ  
+U+17A2 U+17B6 U+1782 U+17CB + [K_Y] > context(1) U+17C3 c ay > អៃ
+U+17B6 U+1782 U+17CB + [K_Y]   > U+17C3   c ay > ៃ  
 U+17B9 + [K_Y]      > U+17B8   c vy > ី 
 dk(a_key) + [K_H]   > U+17C7   c ah > ះ
 dk(z_key) + [K_H]   > U+17C4 U+17C7  c zh > ោះ
@@ -104,9 +116,12 @@ match > use(normalise)
 group(normalise)
 
 
-c Bantoc with vowels
-dk(z_key) any(sin_fin_con)   > context(2) U+17CB         
-dk(a_key) any(sin_fin_con)   > U+17B6 context(2) U+17CB 
+c inherent vowel and ា treatments (2) with consonant key fired.
+any(any_con) U+17B6 U+1782 U+17CB any(sin_con1_out) > context(1) context(2) context(5) context (4)
+any(any_con) U+17B6 U+1782 U+17CB any(sin_con2_out) > context(1) context(2) context(5) context (4)
+
+
+
 
 
 
