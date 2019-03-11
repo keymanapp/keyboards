@@ -1,4 +1,4 @@
-Mongolian Cyrillic Keyboard
+Mongolian Cyrillic QWERTY Keyboard
 =====================
 
 Copyright (C) 2019 SIL International, Latam Asia 拉美亞太
