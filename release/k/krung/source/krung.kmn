@@ -62,34 +62,34 @@ store(sin_vow2_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ in series 2
 c inherent vowel and ា treatments (1) without consonant key fired.
 + [K_A]                                     > U+17A2 U+17B6 U+1782 U+17CB       c a > អាគ់
 any(any_con) + [K_A]                        > context(1) U+17B6 U+1782 U+17CB   c any C a > any C ាគ់
-any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) U+17B6                 c any C aa > any C ា any C ់
-U+17B6 U+1782 U+17CB + [K_H]> U+17C7  c ហ់ > ះ    c fix ហ់ in the final position
+any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) U+17B6                 c any C aa > any C ា 
+U+17B6 U+1782 U+17CB + [K_H]                > U+17C7  c ហ់ > ះ    c fix ហ់ in the final position
 any(any_con) U+17D2 any(any_con) + [K_A]    > context(1) context(2) context(3) U+17B6 U+1782 U+17CB
 any(any_con) U+17D2 any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) context(2) context(3) U+17B6
 
-+ [K_Z] > U+17A2 U+1782 U+17CB c a > អគ់
+
++ [K_Z] > U+17A2 U+1782 U+17CB c z > អគ់
+any(any_con) + [K_Z]                > context(1) U+1782 U+17CB  c any C z > any C គ់
+any(any_con) U+1782 U+17CB + [K_Z]  > context(1)    c any C zz > any C
+U+1782 U+17CB + [K_H]               > U+17C4 U+17C7        c fix ហ់ 
+
 
 U+17A2 U+17B6 U+1782 U+17CB + [K_A] > U+17A2 U+17B6 c aa > អា
 U+17A2 U+1782 U+17CB + [K_Z] > U+17A2 c zz > អ
 
-c single orthographic consonant
-
-
-
 c VV combo, series 1
-U+17B7 + [K_E]      > U+17C0   c ie > ៀ
-U+17B9 + [K_E]      > U+17BE   c ee > ើ
+U+17B7 + [K_E]                      > U+17C0   c ie > ៀ
+U+17B9 + [K_E]                      > U+17BE   c ee > ើ
 U+17A2 U+17B6 U+1782 U+17CB + [K_Y] > context(1) U+17C3 c ay > អៃ
-U+17B6 U+1782 U+17CB + [K_Y]   > U+17C3   c ay > ៃ  
-U+17B9 + [K_Y]      > U+17B8   c vy > ី 
-dk(a_key) + [K_H]   > U+17C7   c ah > ះ
-dk(z_key) + [K_H]   > U+17C4 U+17C7  c zh > ោះ
-dk(z_key) + [K_Q]   > U+1782 U+17CB  c zq > គ់
-dk(z_key) + [K_W]   > U+17BC U+179C  c zw > ូវ
-U+17B7 + [K_H]      > U+17B7 U+17C7  c xh > ិះ
-U+17B7 + [K_Q]      > U+17B7 U+1782  c xq > ិគ
-U+17B9 + [K_Q]      > U+17B9 U+1782  c eq > ឹគ
-U+17BB + [K_O]      > U+17BC         c oo > ូ 
+U+17B6 U+1782 U+17CB + [K_Y]        > U+17C3   c ay > ៃ  
+U+17B9 + [K_Y]                      > U+17B8   c vy > ី 
+U+17A2 U+1782 U+17CB + [K_Q]        > U+17A2 U+1782 U+17CB  c zq > អគ់់
+U+17A2 U+17B6 U+1782 U+17CB + [K_Q] > U+17A2 U+17B6 U+1782 U+17CB  c aq > អាគ់
+U+1782 U+17CB + [K_W]               > U+17BC U+179C  c zw > ូវ
+U+17B7 + [K_H]                      > U+17B7 U+17C7  c xh > ិះ
+U+17B7 + [K_Q]                      > U+17B7 U+1782  c xq > ិគ
+U+17B9 + [K_Q]                      > U+17B9 U+1782  c eq > ឹគ
+U+17BB + [K_O]                      > U+17BC         c oo > ូ 
 
 c VV combo, series 2
 U+17B7 + [K_X]  > U+17C2    c xx > ែ
@@ -108,6 +108,7 @@ any(sin_con1_out) + [K_O]   > context(1) c NOT WORKING
 
 c C and CC in presyllables
 
+
 c change series of CC clusters
 
 c +++++++++++++++++ NORMALIZATION +++++++++++++++++
@@ -119,6 +120,10 @@ group(normalise)
 c inherent vowel and ា treatments (2) with consonant key fired.
 any(any_con) U+17B6 U+1782 U+17CB any(sin_con1_out) > context(1) context(2) context(5) context (4)
 any(any_con) U+17B6 U+1782 U+17CB any(sin_con2_out) > context(1) context(2) context(5) context (4)
+
+any(any_con) U+1782 U+17CB any(sin_con1_out)        > context(1) context(4) context (3)
+any(any_con) U+1782 U+17CB any(sin_con2_out)        > context(1) context(4) context (3)
+
 
 
 
@@ -139,15 +144,15 @@ any(any_con) U+17B6 U+1782 U+17CB any(sin_con2_out) > context(1) context(2) cont
 
 
 c TODO
-c c change series of single consonants using key F (not the best solution yet)
-c CC combo in the onset
+c [DONE, without using DK] c change series of single consonants using key F (not the best solution yet)
+c [DONE] CC combo in the onset
 c single orthographic consonant
 c C and CC in presyllables
 c change series of CC clusters
 
 c Problems to solve:
 c 1. Disyllable and consonant clusters
-c 2. Inherent vowels zz and aa
+c 2. [DONE] Inherent vowels zz and aa
 c 3. Series of consonants changed in harmony with that of the vowel
 c 4. Vowel "ang" ាំង should replace ាង់
 c 5. final consonants?
