@@ -49,15 +49,58 @@ store(any_con)  outs(sin_con1_out) outs(sin_con2_out) outs(any_two_key_con)
 c single orthographic final consonant mappings
 store(sin_fin_con)     U+1785 U+1780 U+179B U+1798 U+1793 U+1784 U+1789 U+1794 U+1782 U+179A U+179F U+178F U+179C U+1799 c ចកលមនងញបគរសតវយ
 
+c consonants to be modified by Triisap
+c store(con_triisap)  U+1794 U+17A0 U+17A2 U+179E U+179F
+store(all_sin_con1) U+1794 U+1785 U+178A U+17A0 U+1786 U+1780 U+1781 U+17A1 U+178E U+1795 U+17A2 U+179E U+178B U+179F U+178F U+1790    
+
+c consonant to be modified by Muusikatoan
+c store(con_muusikatoan) U+179D U+1798 U+1784 U+1789 U+1794 U+179A U+179C U+1799
+store(all_sin_con2) U+1787 U+1787 U+179D U+1788 U+1782 U+1783 U+179B U+1798 U+1793 U+1784 U+1789 U+1796 U+1797 U+178D U+179A U+1791 U+1792 U+179C U+1799
+
+c *****SINGLE CONSONANT CHANGES SERIES IN HARMONY WITH THE SERIES OF THE VOWEL.*****
 c single orthographic vowel mappings, series 1
 store(sin_vow1_key)     [K_O] [K_E] [K_X]       c keys: oex
 store(sin_vow1_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ​ in series 1
-+ any(sin_vow1_key)     > index(sin_vow1_out,1)
++ any(sin_vow1_key)     > U+17A2 index(sin_vow1_out,1) U+1782
+any(all_sin_con1) + any(sin_vow1_key) > context(1) index(sin_vow1_out,2) U+1782
+
+U+179D + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2) U+1782
+U+1798 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2) U+1782
+U+179A + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2) U+1782
+U+179C + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2) U+1782
+U+1799 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2) U+1782
+U+1784 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2) U+1782
+U+1789 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2) U+1782
+
+U+1796 + any(sin_vow1_key)     > U+1794 U+17C9 index(sin_vow1_out,2) U+1782
+U+179B + any(sin_vow1_key)     > U+17A1 index(sin_vow1_out,2) U+1782
+U+1793 + any(sin_vow1_key)     > U+178E index(sin_vow1_out,2) U+1782
+
+
 
 c single orthographic vowel mappings, series 2
 store(sin_vow2_key)     [K_U] [K_V] [K_I]       c keys: uvi
 store(sin_vow2_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ in series 2
-+ any(sin_vow2_key)     > index(sin_vow2_out,1)
++ any(sin_vow2_key)     > U+17A2 U+17CA index(sin_vow2_out,1) U+1782
+any(all_sin_con2) + any(sin_vow2_key) > context(1) index(sin_vow2_out,2) U+1782
+
+U+1794 + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2) U+1782
+U+17A0 + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2) U+1782
+U+17A2 + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2) U+1782
+U+179F + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2) U+1782
+U+179E + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2) U+1782
+
+
+U+1785 + any(sin_vow2_key) > U+1787 index(sin_vow2_out,2) U+1782
+U+178A + any(sin_vow2_key) > U+178C index(sin_vow2_out,2) U+1782
+U+1786 + any(sin_vow2_key) > U+1788 index(sin_vow2_out,2) U+1782
+U+1780 + any(sin_vow2_key) > U+1782 index(sin_vow2_out,2) U+1782
+U+178E + any(sin_vow2_key) > U+1793 index(sin_vow2_out,2) U+1782
+U+178F + any(sin_vow2_key) > U+1791 index(sin_vow2_out,2) U+1782
+U+178B + any(sin_vow2_key) > U+178D index(sin_vow2_out,2) U+1782
+U+1781 + any(sin_vow2_key) > U+1783 index(sin_vow2_out,2) U+1782
+U+1795 + any(sin_vow2_key) > U+1797 index(sin_vow2_out,2) U+1782
+
 
 c inherent vowel and ា treatments (1) without consonant key fired.
 + [K_A]                                     > U+17A2 U+17B6 U+1782 U+17CB       c a > អាគ់
@@ -68,42 +111,46 @@ any(any_con) U+17D2 any(any_con) + [K_A]    > context(1) context(2) context(3) U
 any(any_con) U+17D2 any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) context(2) context(3) U+17B6
 
 
-+ [K_Z] > U+17A2 U+1782 U+17CB c z > អគ់
++ [K_Z]                             > U+17A2 U+1782 U+17CB c z > អគ់
 any(any_con) + [K_Z]                > context(1) U+1782 U+17CB  c any C z > any C គ់
 any(any_con) U+1782 U+17CB + [K_Z]  > context(1)    c any C zz > any C
 U+1782 U+17CB + [K_H]               > U+17C4 U+17C7        c fix ហ់ 
 
 
 U+17A2 U+17B6 U+1782 U+17CB + [K_A] > U+17A2 U+17B6 c aa > អា
-U+17A2 U+1782 U+17CB + [K_Z] > U+17A2 c zz > អ
+U+17A2 U+1782 U+17CB + [K_Z]        > U+17A2 c zz > អ
 
 c VV combo, series 1
-U+17B7 + [K_E]                      > U+17C0   c ie > ៀ
-U+17B9 + [K_E]                      > U+17BE   c ee > ើ
+U+17B7 U+1782 + [K_E]               > U+17C0   c ie > ៀ
+U+17B9 U+1782 + [K_E]               > U+17BE   c ee > ើ
 U+17A2 U+17B6 U+1782 U+17CB + [K_Y] > context(1) U+17C3 c ay > អៃ
 U+17B6 U+1782 U+17CB + [K_Y]        > U+17C3   c ay > ៃ  
-U+17B9 + [K_Y]                      > U+17B8   c vy > ី 
+U+17B9 U+1782 + [K_Y]               > U+17B9 U+1799  c vy > ីយ 
 U+17A2 U+1782 U+17CB + [K_Q]        > U+17A2 U+1782 U+17CB  c zq > អគ់់
 U+17A2 U+17B6 U+1782 U+17CB + [K_Q] > U+17A2 U+17B6 U+1782 U+17CB  c aq > អាគ់
 U+1782 U+17CB + [K_W]               > U+17BC U+179C  c zw > ូវ
 U+17B7 + [K_H]                      > U+17B7 U+17C7  c xh > ិះ
 U+17B7 + [K_Q]                      > U+17B7 U+1782  c xq > ិគ
 U+17B9 + [K_Q]                      > U+17B9 U+1782  c eq > ឹគ
-U+17BB + [K_O]                      > U+17BC         c oo > ូ 
+U+17BB U+1782 + [K_O]                      > U+17BC         c oo > ូ 
 
 c VV combo, series 2
-U+17B7 + [K_X]  > U+17C2    c xx > ែ
-U+17B7 + [K_I]  > U+17B8    c ii > ី
-U+17B9 + [K_V]  > U+17BA    c vv > ឺ
+U+17B7 U+1782 + [K_X]  > U+17C2    c xx > ែ
+U+17B7 U+1782 + [K_I]  > U+17B8    c ii > ី
+U+17B9 U+1782 + [K_V]  > U+17BA    c vv > ឺ
 U+17BA + [K_H]  > U+17BA U+17C7 c vvh > ឺះ
-U+17B9 + [K_H]  > U+17B9 U+17C7 c vh > ឹះ
+U+17B9 U+1782 + [K_H]  > U+17B9 U+17C7 c vh > ឹះ
 U+17B8 + [K_H]  > U+17B8 U+17C7 c iih > ីះ
-U+17BB + [K_E]  > U+17BD    c ue > ួ
-U+17BB + [K_U]  > U+17BC    c uu > ូ
+U+17BB U+1782 + [K_E]  > U+17BD    c ue > ួ
+U+17BB U+1782 + [K_U]  > U+17BC    c uu > ូ
+
+
 
 c change series of single consonants in harmony with the series of the vowel
-any(sin_con1_out) + [K_O]   > context(1) c NOT WORKING
+c first-series consonant + second-series vowel
 
+
+c second-series consonant + first-series vowel
 
 
 c C and CC in presyllables
@@ -124,7 +171,12 @@ any(any_con) U+17B6 U+1782 U+17CB any(sin_con2_out) > context(1) context(2) cont
 any(any_con) U+1782 U+17CB any(sin_con1_out)        > context(1) context(4) context (3)
 any(any_con) U+1782 U+17CB any(sin_con2_out)        > context(1) context(4) context (3)
 
+c "ang" vowel
+U+17B6 U+1793 U+17CB U+179D     > U+17B6 U+17C6 U+1784
 
+c final consonant replacement
+any(sin_vow1_out) U+1782 any(sin_con1_out) > context(1) context(3)
+any(sin_vow1_out) U+1782 any(sin_con2_out) > context(1) context(3)
 
 
 
