@@ -13,11 +13,11 @@ begin Unicode > use(main)
 group(main) using keys
 
 c single orthographic consonant mappings
-store(sin_con1_key)     [K_B] [K_C] [K_D] [K_H] [K_J] [K_K] [K_Q] [K_S] [K_T] c bcdhjklnqst      
-store(sin_con1_out)     U+1794 U+1785 U+178A U+17A0 U+1786 U+1780 U+17A2 U+179F U+178F c បចដហឆកឡណអសត
+store(sin_con1_key)     [K_B] [K_C] [K_D] [K_H] [K_J] [K_K] [K_Q] [K_S] [K_T]           c bcdhjklnqst      
+store(sin_con1_out)     U+1794 U+1785 U+178A U+17A0 U+1786 U+1780 U+17A2 U+179F U+178F  c បចដហឆកឡណអសត
 + any(sin_con1_key)     > index(sin_con1_out,1)
 
-store(sin_con2_key)     [K_G] [K_M] [K_P] [K_R] [K_W] [K_Y] [K_L] [K_N] c gmprwy
+store(sin_con2_key)     [K_G] [K_M] [K_P] [K_R] [K_W] [K_Y] [K_L] [K_N]         c gmprwy
 store(sin_con2_out)     U+179D U+1798 U+1796 U+179A U+179C U+1799 U+179B U+1793 c ឝមពរវយ 
 + any(sin_con2_key)     > index(sin_con2_out,1)
 
@@ -100,51 +100,58 @@ U+178F + any(sin_vow2_key) > U+1791 index(sin_vow2_out,2) U+1782
 U+178B + any(sin_vow2_key) > U+178D index(sin_vow2_out,2) U+1782
 U+1781 + any(sin_vow2_key) > U+1783 index(sin_vow2_out,2) U+1782
 U+1795 + any(sin_vow2_key) > U+1797 index(sin_vow2_out,2) U+1782
+U+1790 + any(sin_vow2_key) > U+1792 index(sin_vow2_out,2) U+1782
+
+c *****CC CLUSTER CHANGES SERIES IN HARMONY WITH THE SERIES OF THE VOWEL*****
 
 
 c inherent vowel and ា treatments (1) without consonant key fired.
 + [K_A]                                     > U+17A2 U+17B6 U+1782 U+17CB       c a > អាគ់
 any(any_con) + [K_A]                        > context(1) U+17B6 U+1782 U+17CB   c any C a > any C ាគ់
 any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) U+17B6                 c any C aa > any C ា 
-U+17B6 U+1782 U+17CB + [K_H]                > U+17C7  c ហ់ > ះ    c fix ហ់ in the final position
+U+17B6 U+1782 U+17CB + [K_H]                > U+17C7                            c ហ់ > ះ in the final position
 any(any_con) U+17D2 any(any_con) + [K_A]    > context(1) context(2) context(3) U+17B6 U+1782 U+17CB
 any(any_con) U+17D2 any(any_con) U+17B6 U+1782 U+17CB + [K_A]   > context(1) context(2) context(3) U+17B6
 
 
-+ [K_Z]                             > U+17A2 U+1782 U+17CB c z > អគ់
++ [K_Z]                             > U+17A2 U+1782 U+17CB      c z > អគ់
 any(any_con) + [K_Z]                > context(1) U+1782 U+17CB  c any C z > any C គ់
-any(any_con) U+1782 U+17CB + [K_Z]  > context(1)    c any C zz > any C
-U+1782 U+17CB + [K_H]               > U+17C4 U+17C7        c fix ហ់ 
+any(any_con) U+1782 U+17CB + [K_Z]  > context(1)                c any C zz > any C
+U+1782 U+17CB + [K_H]               > U+17C4 U+17C7             c fix ហ់ 
 
 
 U+17A2 U+17B6 U+1782 U+17CB + [K_A] > U+17A2 U+17B6 c aa > អា
-U+17A2 U+1782 U+17CB + [K_Z]        > U+17A2 c zz > អ
+U+17A2 U+1782 U+17CB + [K_Z]        > U+17A2        c zz > អ
 
 c VV combo, series 1
-U+17B7 U+1782 + [K_E]               > U+17C0   c ie > ៀ
-U+17B9 U+1782 + [K_E]               > U+17BE   c ee > ើ
-U+17A2 U+17B6 U+1782 U+17CB + [K_Y] > context(1) U+17C3 c ay > អៃ
-U+17B6 U+1782 U+17CB + [K_Y]        > U+17C3   c ay > ៃ  
-U+17B9 U+1782 + [K_Y]               > U+17B9 U+1799  c vy > ីយ 
-U+17A2 U+1782 U+17CB + [K_Q]        > U+17A2 U+1782 U+17CB  c zq > អគ់់
-U+17A2 U+17B6 U+1782 U+17CB + [K_Q] > U+17A2 U+17B6 U+1782 U+17CB  c aq > អាគ់
-U+1782 U+17CB + [K_W]               > U+17BC U+179C  c zw > ូវ
-U+17B7 + [K_H]                      > U+17B7 U+17C7  c xh > ិះ
-U+17B7 + [K_Q]                      > U+17B7 U+1782  c xq > ិគ
-U+17B9 + [K_Q]                      > U+17B9 U+1782  c eq > ឹគ
-U+17BB U+1782 + [K_O]                      > U+17BC         c oo > ូ 
+U+17B7 U+1782 + [K_E]               > U+17C0                        c ie > ៀ
+U+17C0 + [K_H]                      > context(1) U+17C7             c ieh> ៀះ
+U+17B9 U+1782 + [K_E]               > U+17BE                        c ee > ើ
+U+17A2 U+17B6 U+1782 U+17CB + [K_Y] > context(1) U+17C3             c ay > អៃ
+U+17B6 U+1782 U+17CB + [K_Y]        > U+17C3                        c ay > ៃ  
+U+17B9 U+1782 + [K_Y]               > U+17B9 U+1799                 c vy > ីយ 
+U+17A2 U+1782 U+17CB + [K_Q]        > U+17A2 U+1782 U+17CB          c zq > អគ់់
+U+17A2 U+17B6 U+1782 U+17CB + [K_Q] > U+17A2 U+17B6 U+1782 U+17CB   c aq > អាគ់
+U+1782 U+17CB + [K_W]               > U+17BC U+179C                 c zw > ូវ
+U+17B7 + [K_H]                      > U+17B7 U+17C7                 c xh > ិះ
+U+17B7 + [K_Q]                      > U+17B7 U+1782                 c xq > ិគ
+U+17B9 + [K_Q]                      > U+17B9 U+1782                 c eq > ឹគ
+U+17BB U+1782 + [K_O]               > U+17BC                        c oo > ូ 
 
 c VV combo, series 2
-U+17B7 U+1782 + [K_X]  > U+17C2    c xx > ែ
-U+17B7 U+1782 + [K_I]  > U+17B8    c ii > ី
-U+17B9 U+1782 + [K_V]  > U+17BA    c vv > ឺ
-U+17BA + [K_H]  > U+17BA U+17C7 c vvh > ឺះ
-U+17B9 U+1782 + [K_H]  > U+17B9 U+17C7 c vh > ឹះ
-U+17B8 + [K_H]  > U+17B8 U+17C7 c iih > ីះ
-U+17BB U+1782 + [K_E]  > U+17BD    c ue > ួ
-U+17BB U+1782 + [K_U]  > U+17BC    c uu > ូ
+U+17B7 U+1782 + [K_X]   > U+17C2            c xx > ែ
+U+17B7 U+1782 + [K_I]   > U+17B8            c ii > ី
+U+17B9 U+1782 + [K_V]   > U+17BA            c vv > ឺ
+U+17BA + [K_H]          > U+17BA U+17C7     c vvh > ឺះ
+U+17B9 U+1782 + [K_H]   > U+17B9 U+17C7     c vh > ឹះ
+U+17B8 + [K_H]          > U+17B8 U+17C7     c iih > ីះ
+U+17BB U+1782 + [K_E]   > U+17BD            c ue > ួ
+U+17BB U+1782 + [K_U]   > U+17BC            c uu > ូ
 
+any(sin_con1_out) U+17CA U+17BB U+1782 + [K_E]  > context(1) U+17BD     c buer > បួរ not ប៊ួរ 
 
+c any vowel
+store(any_vowel)    outs(sin_vow1_out) outs(sin_vow2_out) U+17C0 U+17BE U+17C3 U+17BC U+17C2 U+17B8 U+17BA U+17BD U+17BC U+17B6 
 
 c change series of single consonants in harmony with the series of the vowel
 c first-series consonant + second-series vowel
@@ -157,6 +164,12 @@ c C and CC in presyllables
 
 
 c change series of CC clusters
+U+1794 U+17D2 U+179B + any(sin_vow2_key) > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4)
+U+1794 U+17D2 U+179B + any(sin_vow1_key) > context(1) context(2) context(3) index(sin_vow1_out,4)
+
+c change ព > ប in the final position [NOT WORKING YET]
+any(any_vowel) + [K_P]            > context(1) U+1794
+any(any_vowel) U+1782 U+17CB + [K_P]    > context(1) U+1794 U+17CB
 
 c +++++++++++++++++ NORMALIZATION +++++++++++++++++
 match > use(normalise)
@@ -175,8 +188,8 @@ c "ang" vowel
 U+17B6 U+1793 U+17CB U+179D     > U+17B6 U+17C6 U+1784
 
 c final consonant replacement
-any(sin_vow1_out) U+1782 any(sin_con1_out) > context(1) context(3)
-any(sin_vow1_out) U+1782 any(sin_con2_out) > context(1) context(3)
+any(sin_vow1_out) U+1782 any(sin_con1_out)  > context(1) context(3)
+any(sin_vow1_out) U+1782 any(sin_con2_out)  > context(1) context(3)
 
 
 
