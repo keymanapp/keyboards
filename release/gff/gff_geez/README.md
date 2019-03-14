@@ -15,7 +15,6 @@ Links
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
  * Contact       :  yacob@geez.org
 
-
 Supported Platforms
 -------------------
  * Windows
