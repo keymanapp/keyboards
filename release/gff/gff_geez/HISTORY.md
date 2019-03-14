@@ -2,7 +2,7 @@
 
 ## 2019-03-05 1.2
 * Fix to recognize apostrophe have Salis forms.
-* Change "Wx" store names to ore formal names
+* Change "Wx" and transliterated store names to localized names.
 
 ## 2017-09-02 1.1
 * "#[0-9]" mappings added to enter Arabic (Westernized) numerals.
