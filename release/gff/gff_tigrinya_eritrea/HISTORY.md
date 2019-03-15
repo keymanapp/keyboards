@@ -1,7 +1,7 @@
 # ትግርኛ-ኤርትራ (Tigrinya Keyboard for Eritrean Conventions) Change History
 
 ## 2019-03-09 1.2
-* Fix to recognize apostrophe have Salis forms.
+* Fix to recognize apostrophe after Salis forms.
 * Change "Wx" and transliterated store names to localized names.
 
 ## 2017-09-04 1.1
