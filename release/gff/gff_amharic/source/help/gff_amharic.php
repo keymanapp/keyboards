@@ -28,7 +28,7 @@ EXTRA;
   require_once('header.php');
 ?>
 
-<p style='margin:0px'>Keyboard &#169; 1997-201. Ge'ez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard &#169; 1997-2019. Ge'ez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
