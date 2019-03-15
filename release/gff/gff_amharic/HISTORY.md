@@ -3,7 +3,7 @@ gff_amharic Change History
 
 1.8 (9 Mar 2019)
 ----------------
-* Fix to recognize apostrophe have Salis forms.
+* Fix to recognize apostrophe after Salis forms.
 * Change "Wx" and transliterated store names to localized names.
 
 
@@ -15,7 +15,7 @@ gff_amharic Change History
 1.6 (6 Sep 2018)
 -----------------
 
-* The apostrophe composition stopper added after Ka'ib and Sals forms to support some special case words.
+* The apostrophe composition stopper added after Ka'ib and Salis forms to support some special case words.
 * Amharic translation added to the welcome.htm.
 
 1.5 (16 May 2018)
