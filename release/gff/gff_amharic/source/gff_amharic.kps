@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1201.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>11.0.1352.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>sideimage.bmp</GraphicFile>
+    <ReadMeFile>..\..\shared\readme.htm</ReadMeFile>
+    <GraphicFile>..\..\shared\sideimage.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -64,18 +64,18 @@
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
     <Name URL="">GFF Amharic Keyboard</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 1997-2018 Ge'ez Frontier Foundation, SIL International</Copyright>
+    <Copyright URL="">© 1997-2019 Ge'ez Frontier Foundation, SIL International</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
   </Info>
   <Files>
     <File>
-      <Name>readme.htm</Name>
+      <Name>..\..\shared\readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>sideimage.bmp</Name>
+      <Name>..\..\shared\sideimage.bmp</Name>
       <Description>File sideimage.bmp</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.bmp</FileType>
@@ -207,6 +207,12 @@
       <FileType>.ttf</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
+      <Description>Font Brana</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
       <Name>..\build\gff_amharic.kvk</Name>
       <Description>File gff_amharic.kvk</Description>
       <CopyLocation>0</CopyLocation>
@@ -217,7 +223,9 @@
     <Keyboard>
       <Name>አማርኛ (Amharic)</Name>
       <ID>gff_amharic</ID>
-      <Version></Version>
+      <Version>1.8</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</DisplayFont>
       <Languages>
         <Language ID="am">am</Language>
       </Languages>
