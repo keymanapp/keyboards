@@ -22,7 +22,7 @@ store(&COPYRIGHT) '© 2009-2019 Ge' U+0027 'ez Frontier Foundation'
 store(&KEYBOARDVERSION) '1.2'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_T]'
-store(&BITMAP) 'gff_tigrinya.ico'
+store(&BITMAP) 'gff_tigrinya_et.ico'
 store(&VISUALKEYBOARD) 'gff_tigrinya_ethiopia.kvks'
 c 
 c =====================End Identity Section=====================================================
@@ -34,16 +34,16 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(ግዕዝ)  'ሀለሐመሠረሰሸቀቐበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
-  store(ካዕብ)  'ሁሉሑሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
-  store(ሣልስ)  'ሂሊሒሚሢሪሲሺቂቒቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
-  store(ራብዕ)  'ሃላሓማሣራሳሻቃቓባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
-  store(ኃምስ)  'ሄሌሔሜሤሬሴሼቄቔቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
-  store(ሳድስ)  'ህልሕምሥርስሽቅቕብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
-  store(ሳብዕ)  'ሆሎሖሞሦሮሶሾቆቖቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
+  store(ግዕዝ)  'ሀለሐመሠረሰሸቀቐበቨተቸኀነኘአከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
+  store(ካዕብ)  'ሁሉሑሙሡሩሱሹቁቑቡቩቱቹኁኑኙኡኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
+  store(ሣልስ)  'ሂሊሒሚሢሪሲሺቂቒቢቪቲቺኂኒኚኢኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
+  store(ራብዕ)  'ሃላሓማሣራሳሻቃቓባቫታቻኃናኛኣካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
+  store(ኃምስ)  'ሄሌሔሜሤሬሴሼቄቔቤቬቴቼኄኔኜኤኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
+  store(ሳድስ)  'ህልሕምሥርስሽቅቕብቭትችኅንኝእክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
+  store(ሳብዕ)  'ሆሎሖሞሦሮሶሾቆቖቦቮቶቾኆኖኞኦኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys)  'hlHm_rsxqQbvtc_nNkKw_zZydjgTCPS_fp'
+  store(keys)  'hlHm_rsxqQbvtc_nN_kKw_zZydjgTCPS_fp'
 
 c the following is Tigrinya specific
   store(ሌሎች፡keys) 'LMRXBVWYDJGF'
@@ -51,8 +51,9 @@ c the following is Tigrinya specific
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(alefKeys)  'aAuUiIeEoO'
-  store(alefEthio) 'አአኡኡኢኢእእኦኦ'
+  store(loneVowelKeys)   'aAuUiIeEoO'
+  store(loneVowelEthio)  'ኣዓኡዑኢዒእዕኦዖ'
+  store(composableVowel) 'ኢእዒዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -116,36 +117,42 @@ c ---------------------End Input of Double Strike Letters-----------------------
 
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
+
 c Alef-A Vowels as Vowels
-  + any(alefKeys) > index(alefEthio,1)
+c
+c Diable multistrike vowel composition for now, re-enable with a keyboard
+c configuration option (working again as per: https://github.com/keymanapp/keyman/issues/792)
+c
 
 c Alef-A Vowels as Regular Syllables
-  'እ' + any(ካዕብ-key) > 'ኡ'
-  'እ' + any(ሣልስ-key) > 'ኢ'
-  'እ' + any(ራብዕ-key) > 'ኣ'
-  'ኢ' + any(ግዕዝ-key) > 'ኤ'
-  'እ' + any(ሳብዕ-key) > 'ኦ'
+  c 'እ' + any(ካዕብ-key) > 'ኡ'
+  c 'እ' + any(ሣልስ-key) > 'ኢ'
+  c 'እ' + any(ራብዕ-key) > 'ኣ'
+  c 'ኢ' + any(ግዕዝ-key) > 'ኤ'
+  c 'እ' + any(ሳብዕ-key) > 'ኦ'
 
 c Aynu-A Vowels as Regular Sylalbles
-  'እ' + any(ግዕዝ-key) > 'ዕ'
-  'ዕ' + any(ግዕዝ-key) > 'ዐ'
-  'ዕ' + any(ካዕብ-key) > 'ዑ'
-  'ዕ' + any(ሣልስ-key) > 'ዒ'
-  'ዕ' + any(ራብዕ-key) > 'ዓ'
-  'ዒ' + any(ግዕዝ-key) > 'ዔ'
-  'ዕ' + any(ሳብዕ-key) > 'ዖ'
+  c 'እ' + any(ግዕዝ-key) > 'ዕ'
+  c 'ዕ' + any(ግዕዝ-key) > 'ዐ'
+  c 'ዕ' + any(ካዕብ-key) > 'ዑ'
+  c 'ዕ' + any(ሣልስ-key) > 'ዒ'
+  c 'ዕ' + any(ራብዕ-key) > 'ዓ'
+  c 'ዒ' + any(ግዕዝ-key) > 'ዔ'
+  c 'ዕ' + any(ሳብዕ-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
-  'ኡ' + any(ካዕብ-key) > 'ዑ'
-  'ኢ' + any(ሣልስ-key) > 'ዒ'
-  'ኦ' + any(ሳብዕ-key) > 'ዖ'
+  c 'ኡ' + any(ካዕብ-key) > 'ዑ'
+  c 'ኢ' + any(ሣልስ-key) > 'ዒ'
+  c 'ኦ' + any(ሳብዕ-key) > 'ዖ'
 
 c Completing the Amharic "a" chain:
-  'አ' + any(ራብዕ-key) > 'ዓ'
-  'ዓ' + any(ራብዕ-key) > 'ዐ'
-  'ዐ' + any(ራብዕ-key) > 'ኣ'
+  c 'አ' + any(ራብዕ-key) > 'ዓ'
+  c 'ዓ' + any(ራብዕ-key) > 'ዐ'
+  c 'ዐ' + any(ራብዕ-key) > 'ኣ'
 
-  'አ' + any(ግዕዝ-key) > 'ኧ'  c I3559 mcd 16-11-2012, as per ET documentation 'ae'
+  c 'አ' + any(ግዕዝ-key) > 'ኧ'  c I3559 mcd 16-11-2012, as per ET documentation 'ae'
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
