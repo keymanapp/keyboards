@@ -7,10 +7,15 @@ store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'krung.kvks'
 store(&LAYOUTFILE) 'krung.keyman-touch-layout'
+store(&BITMAP) 'krung.ico'
 
 begin Unicode > use(main)
 
 group(main) using keys
+
+c K_F is used in place of /a/ in the presyllable where CC- got mixed up with the consonant cluster, ie​ ម្រ vs ម‍រ
+
++ [K_F]   > U+200D
 
 
 c single orthographic consonant mappings
@@ -440,24 +445,4 @@ U+1782 U+17CB U+179A                 > context(3) context(2)
 
 
 
-
-
-
-
-
-
-
-c TODO
-c [DONE, without using DK] c change series of single consonants using key F (not the best solution yet)
-c [DONE] CC combo in the onset
-c [DONE] single orthographic consonant
-c C and CC in presyllables
-c [DONE] change series of CC clusters
-
-c Problems to solve:
-c [DONE] 1. consonant clusters
-c [DONE] 2. Inherent vowels zz and aa
-c [DONE] 3. Series of consonants changed in harmony with that of the vowel
-c [DONE] 4. Vowel "ang" ាំង should replace ាង់
-c 5. final consonants?
 
