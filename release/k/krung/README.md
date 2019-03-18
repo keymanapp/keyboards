@@ -1,17 +1,14 @@
 Krung keyboard
 ==============
 
-© Keyman
+© 2019 Keyman
 
 Version 1.0
 
 Description
 -----------
 
-Krung generated from template
-
-Links
------
+Krung is a language spoken in the northern part of Cambodia. Khmer script was adopted and used for this language. This Keyman keyboard was developed based on an existing tool (Clever Rabit) which used the Romanized version of Krung. However, a few customizations have been made to make this keyboard perform as expected. See the documentation on the romanization and examples in our welcome page.
 
 Supported Platforms
 -------------------
