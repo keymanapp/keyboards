@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2009-2019 Ge'ez Frontier Foundation
+Copyright (C) 2019 SIL International, Latam Asia 拉美亞太
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
