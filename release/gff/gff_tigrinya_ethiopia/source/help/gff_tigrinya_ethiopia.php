@@ -72,7 +72,7 @@ table.zaima { empty-cells: show }
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Tigrinya (tir-ET, ትግርኛ-ኢትዮጵያ) language mnemonic input method that applies Ethiopian writing conventions. 
+This is a Tigrinya (ti-ET, ትግርኛ-ኢትዮጵያ) language mnemonic input method that applies Ethiopian writing conventions. 
 It requires a font supporting Ethiopic script under the Unicode 3.0 standard. 
 The Tigrinya keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
