@@ -1,0 +1,301 @@
+﻿store(&VERSION) '9.0'
+store(&ETHNOLOGUECODE) 'kjj'
+store(&COPYRIGHT) '© 2019 Kenneth Keyes'
+store(&WINDOWSLANGUAGES) 'x042C'
+store(&BITMAP) 'xinaliq.ico'
+store(&LANGUAGE) 'x042C'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'xinaliq.keyman-touch-layout'
+store(&NAME) 'Kətiş (Xınalıq)'
+store(&VISUALKEYBOARD) 'xinaliq.kvks'
+begin Unicode > use(main)
+
+group(main) using keys 
+
+store(word) "abcċĉdeəfgğĝhḣĥiıjkk̇ k̂lmnoöpṗp̂qrsŝştṫt̂uüvwxyzżẑABCĊĈDEƏFGĞĜHḢĤIIJKK̇ K̂LMNOÖPṖP̂QRSŜŞTṪT̂UÜVWXYZŻẐ-'" U+0302 U+0306 U+0307 U+0327
+store(letter) "abcċĉdeəfgğĝhḣĥiıjkk̇ k̂lmnoöpṗp̂qrsŝştṫt̂uüvwxyzżẑABCĊĈDEƏFGĞĜHḢĤIIJKK̇ K̂LMNOÖPṖP̂QRSŜŞTṪT̂UÜVWXYZŻẐ"
+store(lc) "abcċĉdeəfgğĝhḣĥiıjkk̇ k̂lmnoöpṗp̂qrsŝştṫt̂uüvwxyzżẑ"
+store(uc) "ABCĊĈDEƏFGĞĜHḢĤIIJKK̇ K̂LMNOÖPṖP̂QRSŜŞTṪT̂UÜVWXYZŻẐ"
+store(nfpunct) ",:;"
+store(final) ".!?"
+store(num) "0123456789"
+store(diablock) " 0123456789?!;:'-_=<©®>.,[]{}\|/@°#$%^&*()«»‹›‘“’”€¥£…†" U+0022
+store(dia) U+0302 U+0306 U+0307 U+0327
+
+platform('touch') any(word) any(final) + U+0020 > index(word,2) index(final,3) " " layer('shift')
+platform('touch') any(word) U+0020 + [K_SPACE] > index(word,2) U+002E " " layer('shift')
+
+c keyboard assignments peculiar to the Azeri keyboard
+
++ 'H' > 'H'
++ 'h' > 'h'
++ 'C' > 'C'
++ 'c' > 'c'
++ "W" > "Ü"
++ "w" > "ü"
++ 'T' > 'T'
++ 't' > 't'
++ 'P' > 'P'
++ 'p' > 'p'
++ 'K' > 'K'
++ 'k' > 'k'
++ 'Q' > 'Q'
++ 'q' > 'q'
++ 'G' > 'G'
++ 'g' > 'g'
+c + "]" > "ğ"
+c + "}" > "Ğ"
++ 'S' > 'S'
++ 's' > 's'
++ 'Z' > 'Z'
++ 'z' > 'z'
+c + "," > "ç"
+c + "<" > "Ç"
+c + "." > "ş"
+c + ">" > "Ş"
++ 'O' > 'O'
++ 'o' > 'o'
+c + "{"  > "Ö"
+c + "["  > "ö"
++ 'I' > 'I'
++ 'i' > 'i'
+c + ";" > "ı"
+c + ":" > "I"
++ 'E' > 'E'
++ 'e' > 'e'
+c + "'" > "ə"
+c + '"' > 'Ə'
++ 'x' > 'x'
++ 'X' > 'X'
+c + "/" > "."
+c + "?" > ","
+c + "@" > '"'
++ 'U' > 'U'
++ 'u' > 'u' 
+
+c rota based on punctuation
+"'" + "'" > '«'
+'«' + "'" > "'"
+U+0022  + U+0022  > '»'     c double quote
+'»' + U+0022  > U+0022  	c double quote 
+
+c continuation of key assignments peculiar to the Azeri keyboard
+c + "#" > "№"
+c + "$" > ";"
+c + "%" > "%"
+c + "^" > ":"
+c + "&" > "?"
+c + "*" > "*" 
+ 
+c ***lowercase consonants****
+
+'g' + 'g' > 'ğ'         	c breve
+'g' + 'g' > 'ğg'        	c breve and soft g
+'ğg' + 'g' > 'ĝ'            c circumflex
+'ĝ' + 'g' > 'g'
+
+'k' + 'k' > 'k̇'        	   	c dot above 
+'k̇' + 'k' > 'k̂'       	   	c circumflex
+'k̂' + 'k' > 'k̂k̂'     	c doubled circumflex
+'k̂k̂' + 'k' > 'k'
+
+'q' + 'q' > 'q' U+0307      c dot above 
+'q̇' + 'q' > 'q̂'            c circumflex
+'q̂' + 'q' > 'q̂q̂'     	c doubled circumflex
+'q̂q̂' + 'q' > 'q' 
+
+'p' + 'p' > 'ṗ'             c dot above
+'ṗ' + 'p' > 'p̂'            c circumflex
+'p̂' + 'p' > 'p̂p̂'         c doubled circumflex
+'p̂p̂' + 'p' > 'p' 
+
+'t' + 't' > 'ṫ'             c dot above
+'ṫ' + 't' > 't̂'            c circumflex
+'t̂' + 't' > 't̂t̂'         c doubled circumflex
+'t̂t̂' + 't' > 'tt'         c doubled "t"
+'tt' + 't' > 't'
+
+'s' + 's' > 'ss'            c doubled "s"
+'ss' + 's' > 'ŝ'            c circumflex
+'ŝ' + 's' > 'ş'
+'ş' + 's' > 's'
+
+'z' + 'z' > 'ż'             c dot above
+'ż' + 'z' > 'ẑ'             c circumflex
+'ẑ' + 'z' > 'z'
+
+'c' + 'c' > 'ċ'             c dot above
+'ċ' + 'c' > 'ĉ'             c circumflex
+'ĉ'+ 'c' > 'ĉĉ'             c doubled circumflex
+'ĉĉ' + 'c' > 'ç'
+'ç' + 'c' > 'c'
+
+'h' + 'h' > 'ḣ'             c dot above
+'ḣ' + 'h' > 'ĥ'             c circumflex
+'ĥ' + 'h' > 'h'
+
+'x' + 'x' > 'x̂'           c circumflex
+'x̂' + 'x' > 'x'
+
+c ***uppercase consonants****
+
+'G' + 'G' > 'Ğ'         C BREVE
+'G' + 'G' > 'ĞG'        C BREVE AND SOFT G
+'ĞG' + 'G' > 'Ĝ'
+'Ĝ' + 'G' > 'G'
+
+'K' + 'K' > 'K̇'        	C DOT ABOVE 
+'K̇' + 'K' > 'K̂'       	C CIRCUMFLEX
+'K̂' + 'K' > 'K̂K̂'     C DOUBLED CIRCUMFLEX
+'K̂K̂' + 'K' > 'K'
+
+'Q' + 'Q' > 'Q' U+0307  C DOT ABOVE 
+'Q̇' + 'Q' > 'Q̂'        C CIRCUMFLEX
+'Q̂' + 'Q' > 'Q̂Q̂'     C DOUBLED CIRCUMFLEX
+'Q̂Q̂' + 'Q' > 'Q' 
+
+'P' + 'P' > 'Ṗ'         C DOT ABOVE
+'Ṗ' + 'P' > 'P̂'        C CIRCUMFLEX
+'P̂' + 'P' > 'P̂P̂'     C DOUBLED CIRCUMFLEX
+'P̂P̂' + 'P' > 'P' 
+
+'T' + 'T' > 'Ṫ'         C DOT ABOVE
+'Ṫ' + 'T' > 'T̂'		C CIRCUMFLEX
+'T̂' + 'T' > 'T̂T̂'		C DOUBLED CIRCUMFLEX
+'T̂T̂' + 'T' > 'TT'		C DOUBLED T
+'TT' + 'T' > 'T'
+
+'S' + 'S' > 'SS'		C DOUBLED S	
+'SS' + 'S' > 'Ŝ'        C CIRCUMFLEX
+'Ŝ' + 'S' > 'Ş'         C CEDILLA "ESH"
+'Ş' + 'S' > 'S'
+
+'Z' + 'Z' > 'Ż'         C DOT ABOVE
+'Ż' + 'Z' > 'Ẑ'         C CIRCUMFLEX
+'Ẑ' + 'Z' > 'Z'
+
+'C' + 'C' > 'Ċ'         C DOT ABOVE
+'Ċ' + 'C' > 'Ĉ'         C CIRCUMFLEX
+'Ĉ'+ 'C' > 'ĈĈ'         C DOUBLED CIRCUMFLEX
+'ĈĈ' + 'C' > 'Ç'        C CEDILLA
+'Ç' + 'C' > 'C'
+
+'H' + 'H' > 'Ḣ'         C DOT ABOVE
+'Ḣ' + 'H' > 'Ĥ'         C CIRCUMFLEX
+'Ĥ' + 'H' > 'H'
+
+'X' + 'X' > 'X̂'        C CIRCUMFLEX
+'X̂' + 'X' > 'X'
+
+c ***lowercase vowels***
+
+'o' + 'o' > 'ö'
+'ö' + 'o' > 'o'
+
+'u' + 'u' > 'ü'
+'ü' + 'u' > 'u'
+
+'e' + 'e' > 'ə'
+'ə' + 'e' > 'e'
+
+'i' + 'i' > 'ı'
+'ı' + 'i' > 'i'  
+
+c ***UPPERCASE VOWELS***
+
+'O' + 'O' > 'Ö'
+'Ö' + 'O' > 'O'
+
+'U' + 'U' > 'Ü'
+'Ü' + 'U' > 'U'
+
+'E' + 'E' > 'Ə'
+'Ə' + 'E' > 'E'
+
+'I' + 'I' > 'İ'
+'İ' + 'I' > 'I' 
+
+c touch layout lowercase voiceless consonants
++ [T_p_dot] > 'ṗ'    	   	 	   	c p + dot above
++ [T_p_circumflex] > 'p' U+0302     c p + circumflex
++ [T_t_dot] > 't' U+0307    	   	c t + dot above
++ [T_t_circumflex] > 't' U+0302     c t + circumflex
++ [T_k_dot] > 'k' U+0307    	   	c k + dot above
++ [T_k_circumflex] > 'k' U+0302     c k + circumflex
++ [T_Q_dot] > 'q' U+0307    	   	c q + dot above
++ [T_q_circumflex] > 'q' U+0302     c q + circumflex 
++ [T_g_breve] > U+011F    	   	 	c g + breve above
++ [T_g_circumflex] > U+011D     	c g + circumflex 
+
+c touch layout lowercase sibilants & affricates 
+
++ [T_s_circumflex] > U+015D     	c s + circumflex
++ [T_s_cedilla] > U+015F  	   	   	c s + cedilla
++ [T_z_dot] > 'ż'     	   	  	  	c z + dot above
++ [T_z_circumflex] > 'z' U+0302     c z + circumflex 
++ [T_c_dot] > U+010B    	   	 	c c + dot above
++ [T_c_circumflex] > U+0109         c c + circumflex
++ [T_x_circumflex] > 'x' U+0302     c h + circumflex 
++ [T_h_dot] > 'h' U+0307    	   	c h + dot above
++ [T_h_circumflex] > U+0125     	c h + circumflex 
+
+c touch layout lowercase  vowels 
+
++ [T_schwa] > U+0259    	   	   	c latin schwa 
++ [T_u_diaeresis] > U+00FC   	   	c u + diaeresis
++ [T_o_diaeresis] > U+00F6    	   	c o + diaeresis 
+
+c touch layout uppercase voiceless consonants
++ [SHIFT T_P_dot] > 'Ṗ'    	   	 	   	c p + dot above
++ [SHIFT T_P_circumflex] > 'P' U+0302     c p + circumflex
++ [SHIFT T_T_dot] > 'T' U+0307    	   	c t + dot above
++ [SHIFT T_T_circumflex] > 'T' U+0302     c t + circumflex
++ [SHIFT T_K_dot] > 'K' U+0307    	   	c k + dot above
++ [SHIFT T_K_circumflex] > 'K' U+0302     c k + circumflex
++ [SHIFT T_Q_dot] > 'Q' U+0307    	c q + dot above
++ [SHIFT T_Q_circumflex] > 'Q' U+0302  c q + circumflex 
++ [SHIFT T_G_breve] > U+011E     	   	 	c g + breve
++ [SHIFT T_G_circumflex] > U+011C      	c g + circumflex 
+
+c touch layout sibilants & affricates 
+
++ [SHIFT T_S_circumflex] > U+015C     	 	c s + circumflex
++ [SHIFT T_S_cedilla] > U+015E  	   	   	c s + cedilla
++ [SHIFT T_Z_dot] > U+017B     	   	  	 	c z + dot above
++ [SHIFT T_Z_circumflex] > 'Z' U+0302       c z + circumflex
++ [SHIFT T_C_cedilla]  > U+00C7             c C + cedilla
++ [SHIFT T_C_dot] > U+010A    	   	 	   	c c + dot above
++ [SHIFT T_C_circumflex] > U+0108           c c + circumflex
++ [SHIFT T_X_circumflex] > 'X' U+0302       c h + circumflex 
++ [SHIFT T_H_dot] > 'H' U+0307    	   	 	c h + dot above
++ [SHIFT T_H_circumflex] > U+0124     	 	c h + circumflex 
+
+c touch layout uppercase vowels 
+
++ [SHIFT T_Schwa] > U+018F     	   	c UC latin schwa
++ [SHIFT T_U_diaeresis] > U+00DC   	c UC u + diaeresis
++ [SHIFT T_O_diaeresis] > U+00D6    c UC o + diaeresis
++ [SHIFT T_I_dot] > U+0130    	   	c UC I + dot above
+
+c touch layout punctuation
++[K_COMMA] > U+002C  	   	   	   	c comma
++[K_1] >  U+0021                    c exclamation point
++[K_QUOTE] > U+0027  	   	   	   	c single quote
++[U_0022] > U+0022   	   	   	   	c double quote
++[K_BKSLASH] > U+005C    	   	   	c backslash
++[U_20BC] > U+20BC   	   	   	   	c $MANAT_SIGN 
++[K_COLON] > U+003A  	   	   	   	c colon sign
+
+
+
+
+
+
+
+
+
+
+
+
+
+
