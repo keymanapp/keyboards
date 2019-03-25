@@ -1,0 +1,97 @@
+﻿c Gunjala Gondi Keyman keyboard mapping for the Adilabad Gondi (wsg) language spoken in Central India.
+c Work in progress by Mark_Penny@sil.org (March 2019)
+store(&VERSION) '9.0'
+store(&TARGETS) 'any'
+store(&NAME) 'Gondi Gunjala'
+store(&COPYRIGHT) '© 2018 SIL International'
+store(&MESSAGE) 'Distributed freely for anyone to use.'
+store(&KMW_HELPTEXT) 'Gondi Gunjala keyboard'
+store(&KEYBOARDVERSION) '1.00'
+store(&VISUALKEYBOARD) 'gondi_gunjala.kvks'
+store(&LAYOUTFILE) 'gondi_gunjala.keyman-touch-layout'
+store(&BITMAP) 'gondi_gunjala.ico'
+begin Unicode > use(main)
+
+group(main) using keys
+store (vowel)    'a'     'i'     'u'     'e'             'o'\
+                 'A'     'I'     'U'     'E'     'Y'     'O'      'V'
+store (vowelU) U+11D60 U+11D62 U+11D64 U+11D67         U+11D6A \
+               U+11D61 U+11D63 U+11D65 U+11D67 U+11D68 U+11D6A U+11D6B
+                                     c U+11D66    &    U+11D69           not yet implemented for e and o
+
+store (consonant)    'k'     'g'     'W'     'c'     'r'     'j'     't'     'd'     'N' \
+                     'q'     '['     'n'     'p'     'b'     'm'     'y'     'l'     'v'     's' \
+                     'K'     'G'             'C'             'J'     'T'     'D' \
+                     'Q'     '{'             'P'     'B'             'h'
+store (consonantU) U+11D71 U+11D76 U+11D84 U+11D7B U+11D88 U+11D80 U+11D7D U+11D82 U+11D84 \
+                   U+11D73 U+11D78 U+11D7A U+11D85 U+11D6E U+11D70 U+11D6C U+11D75 U+11D6D U+11D89 \
+                   U+11D72 U+11D77         U+11D7C         U+11D81 U+11D7E U+11D83 \
+                   U+11D74 U+11D79         U+11D86 U+11D6F         U+11D87
+
+store (diacriticalmod)    'M'     'H'
+store (diacriticalmodU) U+11D95 U+11D96
+
+store (number)    '0'     '1'     '2'     '3'     '4'     '5'     '6'     '7'     '8'     '9'
+store (Gunjala) U+11DA0 U+11DA1 U+11DA2 U+11DA3 U+11DA4 U+11DA5 U+11DA6 U+11DA7 U+11DA8 U+11DA9
+
+store (unused) 'RSFZXwfz' 
++ any(unused) > beep
+
+
++ any(vowel) > index(vowelU,1)
++ any(consonant) > index(consonantU,1) 
++ any(diacriticalmod) > index(diacriticalmodU,1) 
++ any(number) > index(Gunjala,1) 
+
+any (consonantU) + 'A' > context U+11D8A  
+any (consonantU) + 'i' > context U+11D8B
+any (consonantU) + 'I' > context U+11D8C
+any (consonantU) + 'u' > context U+11D8D
+any (consonantU) + 'U' > context U+11D8E
+any (consonantU) + 'e' > context U+11D90    c U+11D8F not yet implemented in Unicode
+any (consonantU) + 'E' > context U+11D90
+any (consonantU) + 'Y' > context U+11D91
+any (consonantU) + 'o' > context U+11D93    c U+11D92 not yet implemented in Unicode
+any (consonantU) + 'O' > context U+11D93
+any (consonantU) + 'V' > context U+11D94
+
+any (consonantU) + any(diacriticalmod) > context index(diacriticalmodU,2)
+
+any (consonantU) + 'x'  > context U+11D97 
+
+any (consonantU) 'A' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (consonantU) 'i' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'I' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'u' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (consonantU) 'U' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'e' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'E' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'Y' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'o' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'O' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (consonantU) 'V' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+
+c Punctuation marks - Smart Quotes
++ "<"        > U+2018    c opening single smart quote
+U+2018 + "<" > U+201C    c opening double smart quotes
++ ">"        > U+2019    c closing single smart quote
+U+2019 + ">" > U+201D    c closing double smart quotes
+
+c "-" + "-" > U+005F U+005F               c Drawing line
+c U+005F U+005F + '-' > context U+005F    c Drawing line
+
+c LongPress Arabic Digits
++ [T_0] > '0'
++ [T_1] > '1'
++ [T_2] > '2'
++ [T_3] > '3'
++ [T_4] > '4'
++ [T_5] > '5'
++ [T_6] > '6'
++ [T_7] > '7'
++ [T_8] > '8'
++ [T_9] > '9'
+
+c Some other fun things to have
++ [T_GMAIL] > '@gmail.com'
++ [T_YAHOO] > '@yahoo.com'
