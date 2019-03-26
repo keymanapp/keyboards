@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.977.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>11.0.1314.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <GraphicFile>herdilder.bmp</GraphicFile>
-    <MSIFileName>C:\Users\matthias\Downloads\keymandeveloper100.msi</MSIFileName>
+    <MSIFileName>C:\tavultesoft\build\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
@@ -16,18 +16,24 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL=""></Version>
     <Name URL="">Lazca Klavye</Name>
-    <Copyright URL="">© 2017 HERdilDER</Copyright>
+    <Copyright URL="">© 2017-2019 HERdilDER</Copyright>
     <Author URL="mailto:bilgi@herdilder.org"></Author>
     <WebSite URL="http://www.herdilder.org/tr/">http://www.herdilder.org/tr/</WebSite>
+    <Version URL="">2.3</Version>
   </Info>
   <Files>
     <File>
-      <Name>..\build\lazuri.kmx</Name>
-      <Description>Keyboard Lazca Klavye</Description>
+      <Name>herdilder.bmp</Name>
+      <Description>File herdilder.bmp</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>..\build\lazuri.js</Name>
+      <Description>File lazuri.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\lazuri.kvk</Name>
@@ -36,37 +42,49 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
+      <Name>..\build\lazuri.kmx</Name>
+      <Description>Keyboard Lazca Klavye</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>welcome\normal.jpg</Name>
+      <Description>File normal.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>welcome\shift.jpg</Name>
+      <Description>File shift.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>welcome\Lazca_Lazuri_Q_Klavye.pdf</Name>
-      <Description>File Lazca_Lazuri_Q_Klavye.pdf</Description>
+      <Name>welcome\ctrlalt.jpg</Name>
+      <Description>File ctrlalt.jpg</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
+      <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>locale-tur.xml</Name>
-      <Description>File locale-tur.xml</Description>
+      <Name>welcome\shiftctrlalt.jpg</Name>
+      <Description>File shiftctrlalt.jpg</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.xml</FileType>
-    </File>
-    <File>
-      <Name>herdilder.bmp</Name>
-      <Description>File herdilder.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
+      <FileType>.jpg</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Lazca (Lazuri) Klavye</Name>
+      <Name>Lazca Klavye</Name>
       <ID>lazuri</ID>
-      <Version></Version>
+      <Version>2.3</Version>
       <Languages>
-        <Language ID="lzz-Latn">Lazuri</Language>
+        <Language ID="lzz-Latn-TR">Laz (Latin, Turkey)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
