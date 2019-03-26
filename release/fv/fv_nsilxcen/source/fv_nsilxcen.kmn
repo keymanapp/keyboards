@@ -1,14 +1,181 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "oka"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.1"
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "oka"
+store(&COPYRIGHT) "(c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) 'Nsilxcən'
-store(&BITMAP) 'fv_nsilxcen.bmp'
-store(&VISUALKEYBOARD) 'fv_nsilxcen.kvk'
+store(&BITMAP) 'fv_nsilxcen.ico'
+store(&VISUALKEYBOARD) 'fv_nsilxcen.kvks'
+store(&KMW_HELPFILE) 'fv_nsilxcen_kmw_help.htm'
 begin Unicode > use(main)
                                  
 group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_nsilxcen.keyman-touch-layout"
+
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W_0] > 'W̓' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'Ə́' layer('default')
++ [SHIFT T_E] > 'Ə' layer('default')
++ [SHIFT T_R_0] > 'R̓' layer('default')
++ [SHIFT T_R] > 'R' layer('default')
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'ƛ̓' layer('default')
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'ʔ' layer('default')
+'ə' + [SHIFT T_F] > 'ə́'
+'I' + [SHIFT T_F] > 'Í'
+'A' + [SHIFT T_F] > 'Á'
+'u' + [SHIFT T_F] > 'ú'
+'Ə' + [SHIFT T_F] > 'Ə́'
+'i' + [SHIFT T_F] > 'í'
+'a' + [SHIFT T_F] > 'á'
+'U' + [SHIFT T_F] > 'Ú'
++ [SHIFT T_G_0] > 'Ɣ̓' layer('default')
++ [SHIFT T_G] > 'Ɣ' layer('default')
++ [SHIFT T_H_0] > 'Ḥ' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'ᵂ' layer('default')
++ [SHIFT T_K_0] > 'K̓' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L_0] > 'L̓' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON] > 'Ł' layer('default')
++ [SHIFT T_Z_0] > 'X̣' layer('default')
++ [SHIFT T_Z] > 'X̌' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
+'p' + [SHIFT T_V] > 'p̓'
+'c' + [SHIFT T_V] > 'c̓'
+'q' + [SHIFT T_V] > 'q̓'
+'r' + [SHIFT T_V] > 'r̓'
+'W' + [SHIFT T_V] > 'W̓'
+'ʕ' + [SHIFT T_V] > 'ʕ̓'
+'K' + [SHIFT T_V] > 'K̓'
+'Y' + [SHIFT T_V] > 'Y̓'
+'t' + [SHIFT T_V] > 't̓'
+'L' + [SHIFT T_V] > 'L̓'
+'Ɣ' + [SHIFT T_V] > 'Ɣ̓'
+'M' + [SHIFT T_V] > 'M̓'
+'N' + [SHIFT T_V] > 'N̓'
+'w' + [SHIFT T_V] > 'w̓'
+'ɣ' + [SHIFT T_V] > 'ɣ̓'
+'k' + [SHIFT T_V] > 'k̓'
+'P' + [SHIFT T_V] > 'P̓'
+'y' + [SHIFT T_V] > 'y̓'
+'C' + [SHIFT T_V] > 'C̓'
+'Q' + [SHIFT T_V] > 'Q̓'
+'l' + [SHIFT T_V] > 'l̓'
+'m' + [SHIFT T_V] > 'm̓'
+'R' + [SHIFT T_V] > 'R̓'
+'ƛ̓' + [SHIFT T_V] > 'ƛ̓'
+'n' + [SHIFT T_V] > 'n̓'
+'T' + [SHIFT T_V] > 'T̓'
++ [SHIFT T_B_0] > 'ʕ̓' layer('default')
++ [SHIFT T_B] > 'ʕ' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E_0] > 'ə́'
++ [T_E] > 'ə'
++ [T_R_0] > 'r̓'
++ [T_R] > 'r'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U_0] > 'ú'
++ [T_U] > 'u'
++ [T_I_0] > 'í'
++ [T_I] > 'i'
++ [T_O] > 'ƛ̓'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A_0] > 'á'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'ʔ'
+'ə' + [T_F] > 'ə́'
+'I' + [T_F] > 'Í'
+'A' + [T_F] > 'Á'
+'u' + [T_F] > 'ú'
+'Ə' + [T_F] > 'Ə́'
+'i' + [T_F] > 'í'
+'a' + [T_F] > 'á'
+'U' + [T_F] > 'Ú'
++ [T_G_0] > 'ɣ̓'
++ [T_G] > 'ɣ'
++ [T_H_0] > 'ḥ'
++ [T_H] > 'h'
++ [T_J] > 'ʷ'
++ [T_K_0] > 'k̓'
++ [T_K] > 'k'
++ [T_L_0] > 'l̓'
++ [T_L] > 'l'
++ [T_COLON] > 'ł'
++ [T_Z_0] > 'x̣'
++ [T_Z] > 'x̌'
++ [T_X] > 'x'
++ [T_C_0] > 'c̓'
++ [T_C] > 'c'
+'p' + [T_V] > 'p̓'
+'c' + [T_V] > 'c̓'
+'q' + [T_V] > 'q̓'
+'r' + [T_V] > 'r̓'
+'W' + [T_V] > 'W̓'
+'ʕ' + [T_V] > 'ʕ̓'
+'K' + [T_V] > 'K̓'
+'Y' + [T_V] > 'Y̓'
+'t' + [T_V] > 't̓'
+'L' + [T_V] > 'L̓'
+'Ɣ' + [T_V] > 'Ɣ̓'
+'M' + [T_V] > 'M̓'
+'N' + [T_V] > 'N̓'
+'w' + [T_V] > 'w̓'
+'ɣ' + [T_V] > 'ɣ̓'
+'k' + [T_V] > 'k̓'
+'P' + [T_V] > 'P̓'
+'y' + [T_V] > 'y̓'
+'C' + [T_V] > 'C̓'
+'Q' + [T_V] > 'Q̓'
+'l' + [T_V] > 'l̓'
+'m' + [T_V] > 'm̓'
+'R' + [T_V] > 'R̓'
+'ƛ̓' + [T_V] > 'ƛ̓'
+'n' + [T_V] > 'n̓'
+'T' + [T_V] > 'T̓'
++ [T_B_0] > 'ʕ̓'
++ [T_B] > 'ʕ'
++ [T_N_0] > 'n̓'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
                 
 c constraints
 

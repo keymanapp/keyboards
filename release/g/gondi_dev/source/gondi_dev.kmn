@@ -1,0 +1,291 @@
+﻿c Gondi (Devanagari) Keyman keyboard mapping for the various Gondi languages spoken in Central India.
+store(&VERSION) '9.0'
+store(&TARGETS) 'any'
+store(&NAME) 'Gondi (Devanagari)'
+store(&COPYRIGHT) '© 2018 SIL International'
+store(&MESSAGE) 'Distributed freely for anyone to use.'
+store(&KMW_HELPTEXT) 'Gondi in Devanagari Script keyboard'
+store(&KEYBOARDVERSION) '1.0'
+store(&VISUALKEYBOARD) 'gondi_dev.kvks'
+store(&LAYOUTFILE) 'gondi_dev.keyman-touch-layout'
+store(&BITMAP) 'gondi_dev.ico'
+begin Unicode > use(main)
+
+group(main) using keys
+
+platform('hardware') + '=' > deadkey(1)
++ 'x' > deadkey(2)
++ 'X' > deadkey(3)
+platform('hardware') + '`' > deadkey(4)
+ 
+store (vowel)  'a' 'i' 'u' 'R' '|'     'E'     'O'\
+               'A' 'I' 'U' '^' '_' 'e' 'Y' 'o' 'V'
+store (vowelU) U+0905 U+0907 U+0909 U+090B U+090C        U+090F        U+0913 \
+               U+0906 U+0908 U+090A U+0960 U+0961 U+090E U+0910 U+0912 U+0914 
+
+store (consonant) 'k' 'g' 'W' 'c' 'j' 'w' 't' 'd' 'N' 'q' '[' 'n' 'p' 'b' 'm' 'y' 'l' 'v' 'z' 's' \
+                  'K' 'G'     'C' 'J'     'T' 'D'     'Q' '{'     'P' 'B'         'L'     'Z' 'h' 'F'
+store (consonantU) U+0915 U+0917 U+0919 U+091A  U+091C U+091E U+091F U+0921 U+0923 U+0924 U+0926 U+0928 U+092A U+092C U+092E U+092F U+0932 U+0935 U+0936 U+0938 \
+                   U+0916 U+0918        U+091B  U+091D        U+0920 U+0922        U+0925 U+0927        U+092B U+092D               U+0933        U+0937 U+0939 U+0934
+
+store (specialcons)  'r'
+                          
+store (specialconsU) U+0931
+
+store (specialcase2) 'r'
+store (specialcase2U) U+0930
+
+store (diacriticalmod)  'M' 'H' 'S'
+store (diacriticalmodU) U+0902 U+0903 U+0901
+
+store (number)  '0' '1' '2' '3' '4' '5' '6' '7' '8' '9'
+store (Devanagari) U+0966 U+0967 U+0968 U+0969 U+096A U+096B U+096C U+096D U+096E U+096F
+
++ 'f' > context U+093D c DEVANAGARI_SIGN_AVAGRAHA (added by MP)
+
++ any(vowel) > index(vowelU,1)
++ any(consonant) > index(consonantU,1) 
+dk(1) + any(specialcons) > index(specialconsU,2)
++ any(diacriticalmod) > index(diacriticalmodU,1) 
++ any(specialcase2) >  index(specialcase2U,1)
+dk(4) + any(number) > index(Devanagari,2)
+
+any (consonantU) + 'a' > context U+200D  
+any (consonantU) + 'A' > context U+093E  
+any (consonantU) + 'i' > context U+093F
+any (consonantU) + 'I' > context U+0940
+any (consonantU) + 'u' > context U+0941
+any (consonantU) + 'U' > context U+0942
+any (consonantU) + 'R' > context U+0943
+any (consonantU) + '^' > context U+0944
+any (consonantU) + 'e' > context U+0946
+any (consonantU) + 'E' > context U+0947
+any (consonantU) + 'Y' > context U+0948
+any (consonantU) + 'o' > context U+094A
+any (consonantU) + 'O' > context U+094B
+any (consonantU) + 'V' > context U+094C
+
+any (consonantU) + any(diacriticalmod) > context index(diacriticalmodU,2)
+
+any (consonantU) + 'x'  > context U+094D 
+any (consonantU) U+094D + 'x' > context U+200C 
+
+any (consonantU) 'A' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (consonantU) 'i' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'I' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'u' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (consonantU) 'U' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'R' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) '^' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'e' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'E' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'Y' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'o' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (consonantU) 'O' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (consonantU) 'V' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+
+any (specialconsU) + 'x' > context U+094D 
+any (specialconsU) U+094D + 'x' > index( specialconsU,1 ) U+094D U+200C
+
+any (specialconsU) + 'a' > context U+200D  
+any (specialconsU) + 'A' > context U+093E  
+any (specialconsU) + 'i' > context U+093F
+any (specialconsU) + 'I' > context U+0940
+any (specialconsU) + 'u' > context U+0941
+any (specialconsU) + 'U' > context U+0942
+any (specialconsU) + 'R' > context U+0943
+any (specialconsU) + '^' > context U+0944
+any (specialconsU) + 'e' > context U+0946
+any (specialconsU) + 'E' > context U+0947
+any (specialconsU) + 'Y' > context U+0948
+any (specialconsU) + 'o' > context U+094A
+any (specialconsU) + 'O' > context U+094B
+any (specialconsU) + 'V' > context U+094C
+
+any (specialconsU) + any(diacriticalmod) > context index(diacriticalmodU,2)
+
+any (specialcase2U) + 'a' > context U+200D  
+any (specialcase2U) + 'A' > context U+093E  
+any (specialcase2U) + 'i' > context U+093F
+any (specialcase2U) + 'I' > context U+0940
+any (specialcase2U) + 'u' > context U+0941
+any (specialcase2U) + 'U' > context U+0942
+any (specialcase2U) + 'R' > context U+0943
+any (specialcase2U) + '^' > context U+0944
+any (specialcase2U) + 'e' > context U+0946
+any (specialcase2U) + 'E' > context U+0947
+any (specialcase2U) + 'Y' > context U+0948
+any (specialcase2U) + 'o' > context U+094A
+any (specialcase2U) + 'O' > context U+094B
+any (specialcase2U) + 'V' > context U+094C
+
+any (specialcase2U) + any(diacriticalmod) > context index(diacriticalmodU,2)
+
+any (specialcase2U) + 'x'  > context U+094D 
+any (specialcase2U) U+094D  + 'x' > context U+200C
+
+any (specialcase2U) 'A' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (specialcase2U) 'i' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (specialcase2U) 'I' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (specialcase2U) 'u' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (specialcase2U) 'U' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (specialcase2U) 'R' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (specialcase2U) '^' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (specialcase2U) 'e' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (specialcase2U) 'E' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (specialcase2U) 'Y' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (specialcase2U) 'o' + any(diacriticalmod) > context index(diacriticalmodU,3)  
+any (specialcase2U) 'O' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+any (specialcase2U) 'V' + any(diacriticalmod) > context index(diacriticalmodU,3) 
+
+c Indic Vowel Signs (if ever needed in isolation)
+
+dk(1) + [K_SPACE] > dk(1)" " 
+
+dk(1)" " + [SHIFT K_a] > U+093E
+dk(1)" " + [K_i]       > U+093F  
+dk(1)" " + [SHIFT K_i] > U+0940
+dk(1)" " + [K_u]       > U+0941
+dk(1)" " + [SHIFT K_u] > U+0942
+dk(1)" " + [SHIFT K_r] > U+0943
+dk(1)" " + [SHIFT K_6] > U+0944
+dk(1)" " + [SHIFT K_e] > U+0946
+dk(1)" " + [K_e]       > U+0947
+dk(1)" " + [SHIFT K_y] > U+0948
+dk(1)" " + [SHIFT K_o] > U+094A     
+dk(1)" " + [K_o]       > U+094B
+dk(1)" " + [SHIFT K_v] > U+094C
+dk(1)" " + [SHIFT K_m] > U+0902
+dk(1)" " + [SHIFT K_h] > U+0903
+dk(1)" " + [SHIFT K_s] > U+0901
+dk(1)" " + [K_x]       > dk(1)"  " 
+dk(1)"  " + [K_x]      > U+094D 
+
+"-" + "-"   > "_" c This has been added in order to make it possible to type an underscore
+
+c Extended Fonts
+any ( consonantU ) + 'X'  > context U+094D U+200D
+any ( specialconsU ) + 'X'  > context U+094D U+200D
+any ( specialcase2U )  + 'X'  > context U+094D U+200D
+
+any ( consonantU ) U+094D U+200C + 'X' > index(consonantU,1) U+094D U+200D  
+any ( specialconsU ) U+094D U+200C + 'X' > index(specialconsU,1) U+094D U+200D  
+any ( specialcase2U ) U+094D U+200C + 'X' > index(specialcase2U,1) U+094D U+200D  
+
+any ( consonantU ) U+094D U+200C + 'x' > index(consonantU,1) U+094D U+200D  
+any ( specialconsU ) U+094D U+200C + 'x' > index(specialconsU,1) U+094D U+200D  
+any ( specialcase2U ) U+094D U+200C + 'x' > index(specialcase2U,1) U+094D U+200D  
+
+any (consonantU) U+094D U+0930 + 'X' > index(consonantU,1) U+094D U+0930 U+094D 
+any (specialcase2U) U+094D U+0930  + 'X' > index(specialcase2U,1) U+094D U+0930 U+094D 
+
+any (consonantU) U+094D U+0930 U+094D U+200C + 'x' > index(consonantU,1) U+094D U+0930 U+094D 
+any (specialcase2U) U+094D U+0930 U+094D U+200C + 'x' > index(specialcase2U,1) U+094D U+0930 U+094D 
+
+c Gondi Consonant clusters (Just the top 100 of 250 possible clusters based on freq count)
+c Note that this is generated code:
++ [T_KA_TA]  > U+0915 U+094D U+0924   c count=3126
++ [T_KA_NA]  > U+0915 U+094D U+0928   c count= 938
++ [T_KA_RA]  > U+0915 U+094D U+0930   c count= 615
++ [T_KA_LA]  > U+0915 U+094D U+0932   c count= 226
++ [T_KA_SA]  > U+0915 U+094D U+0938   c count=2378
++ [T_GA_TA]  > U+0917 U+094D U+0924   c count= 392
++ [T_GA_DA]  > U+0917 U+094D U+0926   c count= 296
++ [T_GA_NA]  > U+0917 U+094D U+0928   c count= 320
++ [T_GA_RA]  > U+0917 U+094D U+0930   c count=1012
++ [T_GA_LA]  > U+0917 U+094D U+0932   c count= 290
++ [T_CA_CA]  > U+091A U+094D U+091A   c count=1175
++ [T_JA_KA]  > U+091C U+094D U+0915   c count= 599
++ [T_JA_TA]  > U+091C U+094D U+0924   c count= 399
++ [T_JA_NA]  > U+091C U+094D U+0928   c count= 568
++ [T_JA_RA]  > U+091C U+094D U+0930   c count=1110
++ [T_TTA_KA] > U+091F U+094D U+0915   c count= 786
++ [T_TTA_TA] > U+091F U+094D U+0924   c count= 556
++ [T_TTA_NA] > U+091F U+094D U+0928   c count=1554
++ [T_TTA_VA] > U+091F U+094D U+0935   c count= 329
++ [T_TTA_SA] > U+091F U+094D U+0938   c count= 493
++ [T_DDA_KA] > U+0921 U+094D U+0915   c count=2838
++ [T_DDA_DDA] > U+0921 U+094D U+0921  c count=1437
++ [T_DDA_TA] > U+0921 U+094D U+0924   c count=1636
++ [T_DDA_MA] > U+0921 U+094D U+092E   c count= 606
++ [T_DDA_VA] > U+0921 U+094D U+0935   c count= 788
++ [T_DDA_SA] > U+0921 U+094D U+0938   c count=2403
++ [T_TA_KA]  > U+0924 U+094D U+0915   c count= 628
++ [T_TA_TA]  > U+0924 U+094D U+0924   c count=9942
++ [T_TA_NA]  > U+0924 U+094D U+0928   c count=1504
++ [T_TA_MA]  > U+0924 U+094D U+092E   c count=1063
++ [T_TA_RA]  > U+0924 U+094D U+0930   c count=1314
++ [T_DA_KA]  > U+0926 U+094D U+0915   c count= 407
++ [T_DA_NA]  > U+0926 U+094D U+0928   c count= 771
++ [T_DA_YA]  > U+0926 U+094D U+092F   c count= 231
++ [T_DA_RA]  > U+0926 U+094D U+0930   c count= 297
++ [T_DA_LA]  > U+0926 U+094D U+0932   c count= 275
++ [T_NA_KA]  > U+0928 U+094D U+0915   c count=1551
++ [T_NA_GA]  > U+0928 U+094D U+0917   c count= 863
++ [T_NA_TA]  > U+0928 U+094D U+0924   c count=2968
++ [T_NA_DA]  > U+0928 U+094D U+0926   c count= 998
++ [T_NA_LA]  > U+0928 U+094D U+0932   c count= 500
++ [T_NA_VA]  > U+0928 U+094D U+0935  c count=12739
++ [T_PA_KA]  > U+092A U+094D U+0915   c count= 599
++ [T_PA_TTA] > U+092A U+094D U+091F   c count= 436
++ [T_PA_TA]  > U+092A U+094D U+0924   c count= 780
++ [T_PA_NA]  > U+092A U+094D U+0928   c count= 752
++ [T_PA_RA]  > U+092A U+094D U+0930   c count= 389
++ [T_PA_VA]  > U+092A U+094D U+0935   c count= 497
++ [T_BA_KA]  > U+092C U+094D U+0915   c count= 279
++ [T_BA_NA]  > U+092C U+094D U+0928   c count= 416
++ [T_BA_RA]  > U+092C U+094D U+0930   c count= 880
++ [T_MA_KA]  > U+092E U+094D U+0915   c count=1439
++ [T_MA_TTA] > U+092E U+094D U+091F   c count= 943
++ [T_MA_DA]  > U+092E U+094D U+0926   c count=4518
++ [T_MA_NA]  > U+092E U+094D U+0928   c count=1420
++ [T_MA_VA]  > U+092E U+094D U+0935   c count=1075
++ [T_YA_TA]  > U+092F U+094D U+0924   c count=1310
++ [T_YA_DA]  > U+092F U+094D U+0926   c count=1120
++ [T_YA_NA]  > U+092F U+094D U+0928   c count=2219
++ [T_YA_MA]  > U+092F U+094D U+092E   c count=1976
++ [T_YA_LA]  > U+092F U+094D U+0932   c count=2643
++ [T_YA_VA]  > U+092F U+094D U+0935   c count=9175
++ [T_YA_SA]  > U+092F U+094D U+0938   c count=2664
++ [T_RA_KA]  > U+0930 U+094D U+0915   c count=5724
++ [T_RA_GA]  > U+0930 U+094D U+0917   c count=2779
++ [T_RA_JA]  > U+0930 U+094D U+091C   c count=2297
++ [T_RA_TA]  > U+0930 U+094D U+0924   c count=6049
++ [T_RA_DA]  > U+0930 U+094D U+0926   c count=1405
++ [T_RA_NA]  > U+0930 U+094D U+0928   c count= 909
++ [T_RA_PA]  > U+0930 U+094D U+092A   c count=1023
++ [T_RA_BA]  > U+0930 U+094D U+092C   c count=1605
++ [T_RA_MA]  > U+0930 U+094D U+092E   c count=2668
++ [T_RA_VA]  > U+0930 U+094D U+0935   c count=1443
++ [T_RA_SA]  > U+0930 U+094D U+0938   c count=2029
++ [T_LA_KA]  > U+0932 U+094D U+0915   c count=4615
++ [T_LA_TA]  > U+0932 U+094D U+0924   c count=1308
++ [T_LA_MA]  > U+0932 U+094D U+092E   c count= 575
++ [T_LA_VA]  > U+0932 U+094D U+0935   c count= 810
++ [T_LA_SA]  > U+0932 U+094D U+0938   c count= 963
++ [T_VA_KA]  > U+0935 U+094D U+0915   c count= 866
++ [T_VA_TA]  > U+0935 U+094D U+0924   c count= 264
++ [T_VA_RA]  > U+0935 U+094D U+0930   c count= 375
++ [T_VA_LA]  > U+0935 U+094D U+0932   c count=1194
++ [T_SA_KA]  > U+0938 U+094D U+0915   c count=5697
++ [T_SA_TTA] > U+0938 U+094D U+091F   c count=2729
++ [T_SA_TA]  > U+0938 U+094D U+0924   c count=4345
++ [T_SA_NA]  > U+0938 U+094D U+0928   c count= 846
++ [T_SA_YA]  > U+0938 U+094D U+092F   c count= 838
++ [T_SA_RA]  > U+0938 U+094D U+0930   c count=1259
++ [T_SA_VA]  > U+0938 U+094D U+0935   c count=2828
++ [T_HA_KA]  > U+0939 U+094D U+0915   c count=1050
++ [T_HA_GA]  > U+0939 U+094D U+0917   c count=1111
++ [T_HA_CA]  > U+0939 U+094D U+091A   c count=1551
++ [T_HA_TA]  > U+0939 U+094D U+0924   c count=4575
++ [T_HA_NA]  > U+0939 U+094D U+0928   c count= 686
++ [T_HA_RA]  > U+0939 U+094D U+0930   c count= 649
++ [T_HA_VA]  > U+0939 U+094D U+0935   c count=1226
+
+c Some common Hindi Clusters (but not used in Gondi)
++ [T_KA_SSA] > U+0915 U+094D U+0937
++ [T_SSA_RA] > U+0936 U+094D U+0930
++ [T_JA_NYA] > U+091C U+094D U+091E
+
+c Some other fun things to have
++ [T_GMAIL] > '@gmail.com'

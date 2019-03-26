@@ -78,7 +78,8 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
   <div id='osk-tablet' data-states='default symbol'></div>
 </div>
 
-<p>Note: Longpress keys are not currently visible in this static documentation, and so some additional letters may be accessible through these longpress keys.</p>
+<p>Note: Longpress keys are not currently visible in this static documentation. 
+  The phone and tablet layouts contain addional letters that can be accessed by long pressing the base keys that have a small dot in the top right corner.</p>
 
 <div id='Quickstart'>
 <h3>Quickstart</h3>

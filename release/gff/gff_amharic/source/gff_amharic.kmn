@@ -4,7 +4,7 @@ c The Ge'ez Frontier Foundation's mnemonic input method for Amharic script on US
 c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_amharic/1.5/gff_amharic.php
+c Documentation :  https://help.keyman.com/keyboard/gff_amharic/1.8/gff_amharic.php
 c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_amharic
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
@@ -16,7 +16,7 @@ c
 store(&NAME) 'አማርኛ (Amharic)'
 c $keymanonly:store(&MnemonicLayout) "1"
   store(&CapsAlwaysOff) "0"
-  store(&Copyright) '© 1997-2018 Ge' U+0027 'ez Frontier Foundation, SIL International'
+store(&COPYRIGHT) '© 1997-2019 Ge' U+0027 'ez Frontier Foundation, SIL International'
   store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&WINDOWSLANGUAGES) 'x045E'
 store(&LANGUAGE) 'x045E'
@@ -31,39 +31,38 @@ c =====================Begin Data Section=======================================
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(gIz)   'ሀለሐመሠረሰሸቀበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
-  store(kaIb)  'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
-  store(sals)  'ሂሊሒሚሢሪሲሺቂቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
-  store(rabI)  'ሃላሓማሣራሳሻቃባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
-  store(hams)  'ሄሌሔሜሤሬሴሼቄቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
-  store(sads)  'ህልሕምሥርስሽቅብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
-  store(sabI)  'ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
+  store(ግዕዝ)  'ሀለሐመሠረሰሸቀበቨተቸኀነኘከኸወዐዘዠየደጀገጠጨጰጸፀፈፐ'
+  store(ካዕብ)  'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጡጩጱጹፁፉፑ'
+  store(ሣልስ)  'ሂሊሒሚሢሪሲሺቂቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
+  store(ራብዕ)  'ሃላሓማሣራሳሻቃባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
+  store(ኃምስ)  'ሄሌሔሜሤሬሴሼቄቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
+  store(ሳድስ)  'ህልሕምሥርስሽቅብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
+  store(ሳብዕ)  'ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
 
   store(keys)  'hlHm_rsxqbvtc_nNkKw_zZydjgTCPS_fp'
 c the following is Amharic specific
-  store(extraKeys) 'LMRXBVQWYDJGF'
-  store(extraSads) 'ልምርሽብቭቅውይድጅግፍ'
+  store(ሌሎች፡keys) 'LMRXBVQWYDJGF'
+  store(ሌሎች፡ሳድስ)  'ልምርሽብቭቅውይድጅግፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(alefKeys)  'aAuUiIeEoO'
   store(alefEthio) 'አአኡኡኢኢእእኦኦ'
   
-c store(sadsTerminator) [K_SHIFT_LEFT] [K_SHIFT_RIGHT]
+c store(ሳድስTerminator) [K_SHIFT_LEFT] [K_SHIFT_RIGHT]
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-  store(zemedeKeys)      'ህልሕምሥርስሽቅብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ'
-  store(zemedeKeysKaIb)  'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ'
-  store(zemedeEthio)     'ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
+  store(ሳድስ፡መደበኛ)     'ህልሕምሥርስሽቅብቭትችኅንኝክዝዥድጅግጥጭጵጽፅፍፕ'
+  store(ካዕብ፡መደበኛ)     'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
 
 c 'hhkqg'
-  store(zemedeKeysKaIbExtended)  'ሁኁኩቁጉ'
-  store(zemedeWe)  'ኈኈኰቈጐ'
-  store(zemedeWu)  'ኍኍኵቍጕ'
-  store(zemedeWi)  'ኊኊኲቊጒ'
-  store(zemedeWa)  'ኋኋኳቋጓ'
-  store(zemedeWEE) 'ኌኌኴቌጔ'
+  store(ካዕብ፡ልዩ)  'ሁኁኩቁጉ'
+  store(ዘመደ፡ግዕዝ) 'ኈኈኰቈጐ'
+  store(ዘመደ፡ካዕብ) 'ኍኍኵቍጕ'
+  store(ዘመደ፡ሣልስ) 'ኊኊኲቊጒ'
+  store(ዘመደ፡ኃምስ) 'ኌኌኴቌጔ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -71,24 +70,24 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
   store(arabNumbers) '123456789'
-  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
   store(ColonOrComma) ':,'
   store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-$keymanonly: store(gIz-key)  'eEäÄéÉèÈêÊëË'
-$keymanweb:  store(gIz-key)  'eE'
-$keymanonly: store(kaIb-key) 'uUùÙúÚûÛüÜ'
-$keymanweb:  store(kaIb-key) 'uU'
-$keymanonly: store(sals-key) 'iIìÌíÍîÎïÏ'
-$keymanweb:  store(sals-key) 'iI'
-$keymanonly: store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-$keymanweb:  store(rabI-key) 'aA'
-$keymanonly: store(hams-key) 'æÆ'
-$keymanonly: store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
-$keymanweb:  store(sabI-key) 'oO'
+$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'
+$keymanweb:  store(ግዕዝ-key)  'eE'
+$keymanonly: store(ካዕብ-key) 'uUùÙúÚûÛüÜ'
+$keymanweb:  store(ካዕብ-key) 'uU'
+$keymanonly: store(ሣልስ-key) 'iIìÌíÍîÎïÏ'
+$keymanweb:  store(ሣልስ-key) 'iI'
+$keymanonly: store(ራብዕ-key) 'aAàÀáÁâÂãÃåÅ'
+$keymanweb:  store(ራብዕ-key) 'aA'
+$keymanonly: store(ኃምስ-key) 'æÆ'
+$keymanonly: store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
+$keymanweb:  store(ሳብዕ-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
@@ -96,7 +95,7 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 store(&LAYOUTFILE) 'gff_amharic.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.8'
 store(&TARGETS) 'any windows macosx'
 store(&BITMAP) 'gff_amharic.ico'
 
@@ -216,11 +215,11 @@ c
   U+135F + '_' > '_'
 
 c The following two rules had to be added here (not later) to fix the deadkey issue
- deadkey(1) + "'" > "'"
- deadkey(1) + any(alefKeys) > index(alefEthio,2)
+  deadkey(1) + "'" > "'"
+  deadkey(1) + any(alefKeys) > index(alefEthio,2)
  
-  + any(extraKeys) > index(extraSads,1)
-  + any(keys)      > index(sads,1)
+  + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
+  + any(keys)     > index(ሳድስ,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -232,54 +231,54 @@ c ---------------------End Input of Double Strike Letters-----------------------
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
 c Alef-A Vowels as Vowels
-  + any(alefKeys) > index(alefEthio,1) 
-  'አ' + any(gIz-key) > 'ኧ'
-  'አ' + "'" > 'አ' deadkey(1) c special case to supoort occurences of አእ አዕ from borrowed ge'ez words
+  + any(alefKeys) > index(alefEthio,1)
+  any(alefEthio) + "'" > index(alefEthio,1) deadkey(1)  
+  'አ' + any(ግዕዝ-key) > 'ኧ'
 
 c Alef-A Vowels as Regular Syllables
-  'እ' + any(kaIb-key) > 'ኡ'
-  'እ' + any(sals-key) > 'ኢ'
-  'እ' + any(rabI-key) > 'ኣ'
-  'ኢ' + any(gIz-key)  > 'ኤ'
-  'እ' + any(sabI-key) > 'ኦ'
+  'እ' + any(ካዕብ-key) > 'ኡ'
+  'እ' + any(ሣልስ-key) > 'ኢ'
+  'እ' + any(ራብዕ-key) > 'ኣ'
+  'ኢ' + any(ግዕዝ-key) > 'ኤ'
+  'እ' + any(ሳብዕ-key) > 'ኦ'
 
 c Aynu-A Vowels as Regular Syllables
-  'እ' + any(gIz-key)  > 'ዕ'
-  'ዕ' + any(gIz-key)  > 'ዐ'
-  'ዕ' + any(kaIb-key) > 'ዑ'
-  'ዕ' + any(sals-key) > 'ዒ'
-  'ዕ' + any(rabI-key) > 'ዓ'
-  'ዒ' + any(gIz-key)  > 'ዔ'
-  'ዕ' + any(sabI-key) > 'ዖ'
+  'እ' + any(ግዕዝ-key) > 'ዕ'
+  'ዕ' + any(ግዕዝ-key) > 'ዐ'
+  'ዕ' + any(ካዕብ-key) > 'ዑ'
+  'ዕ' + any(ሣልስ-key) > 'ዒ'
+  'ዕ' + any(ራብዕ-key) > 'ዓ'
+  'ዒ' + any(ግዕዝ-key) > 'ዔ'
+  'ዕ' + any(ሳብዕ-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
-  'ኡ' + any(kaIb-key) > 'ዑ'
-  'ኢ' + any(sals-key) > 'ዒ'
-  'ኦ' + any(sabI-key) > 'ዖ'
+  'ኡ' + any(ካዕብ-key) > 'ዑ'
+  'ኢ' + any(ሣልስ-key) > 'ዒ'
+  'ኦ' + any(ሳብዕ-key) > 'ዖ'
 
 c Completing the Amharic "a" chain:
-  'አ' + any(rabI-key) > 'ዓ'
-  'ዓ' + any(rabI-key) > 'ዐ'
-  'ዐ' + any(rabI-key) > 'ኣ'
+  'አ' + any(ራብዕ-key) > 'ዓ'
+  'ዓ' + any(ራብዕ-key) > 'ዐ'
+  'ዐ' + any(ራብዕ-key) > 'ኣ'
 
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
-  any(sads) + any(gIz-key)  > index(gIz,1)
-  any(sads) + any(kaIb-key) > index(kaIb,1)
-  any(sads) + any(sals-key) > index(sals,1)
-  any(sads) + any(rabI-key) > index(rabI,1)
-$keymanonly: any(sads) + any(hams-key) > index(hams,1)
-  any(sals) + any(gIz-key)  > index(hams,1)  
-  any(sads) + any(sabI-key) > index(sabI,1)
+  any(ሳድስ) + any(ግዕዝ-key) > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ-key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ-key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ-key) > index(ራብዕ,1)
+$keymanonly: any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)  
-  any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
-  any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1)
-  any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
-  any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
+  any(ካዕብ፡መደበኛ)              + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)  
+  any(ካዕብ፡ልዩ) + any(ግዕዝ-key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡ልዩ) + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
+  any(ካዕብ፡ልዩ) + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
+  any(ዘመደ፡ሣልስ)               + any(ግዕዝ-key)  > index(ዘመደ፡ኃምስ,1)
 
   'ኮ' + 'o' > 'ኰ'
   'ጎ' + 'o' > 'ጐ'
@@ -293,12 +292,13 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
- any(sads) + "'" > index(sads,1) deadkey(1)
- any(sads) + [CTRL K_SPACE] > index(sads,1) deadkey(1) 
- any(zemedeKeysKaIb) + "'" > index(zemedeKeysKaIb,1) deadkey(1)
- any(sals) + "'" > index(sals,1) deadkey(1)
+  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+  any(ሳድስ)      + [CTRL K_SPACE] > index(ሳድስ,1) deadkey(1) 
+  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)  
+  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
    
- 
  
 c deadkey(1) + "'" > "'"
 c deadkey(1) + any(alefKeys) > index(alefEthio,2)
@@ -357,23 +357,23 @@ c Ethiopic Numerals
 
   '#' + '1' > '፩'
   '#' + any(ArabOnes) > index(ones,2)
-  '#' + '#' > '#' deadkey(2)
+  '#' + '#' > '#' 
 
 c special cases for multiples of one
- '፩'  + '0' > '፲'
- '፲'  + '0' > '፻'
- '፻'  + '0' > '፲፻'
- '፲፻' + '0' > '፼'
- '፼'  + '0' > '፲፼'
- '፲፼' + '0' > '፻፼'
- '፻፼'  + '0' > '፲፻፼'
+   '፩' + '0' > '፲'
+   '፲' + '0' > '፻'
+   '፻' + '0' > '፲፻'
+  '፲፻' + '0' > '፼'
+   '፼' + '0' > '፲፼'
+  '፲፼' + '0' > '፻፼'
+  '፻፼' + '0' > '፲፻፼'
  '፲፻፼' + '0' > '፼፼'
- '፼፼' + '0' > context beep  c do not go any higher, alert the user with a beep
+  '፼፼' + '0' > context beep  c do not go any higher, alert the user with a beep
  
  
 c upto the order of 100 million
-  any(ones)     + '0' > index(tens,1)
-  any(tens)     + '0' > index(ones,1) '፻'  c Hundreds
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1) '፻'  c Hundreds
   any(ones)  '፻' + '0' > index(tens,1) '፻'  c Thousands
   any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
   any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
@@ -385,6 +385,6 @@ c upto the order of 100 million
 
 c enhance this later, look for something that can copy a match over
   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
-c ---------------------End Input of Numbers-----------------------------------------------------
+c ---------------------End Input of Numbers-----------------------------------------------------                             
                                             
 c =====================End Functional Section===================================================

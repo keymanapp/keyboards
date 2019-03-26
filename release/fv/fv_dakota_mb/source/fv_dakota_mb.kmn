@@ -1,0 +1,149 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.1"
+store(&TARGETS) "mobile tablet"
+c store(&ETHNOLOGUECODE) "dak"
+store(&COPYRIGHT) "(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
+store(&NAME) 'Dakota'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_dakota_mb.keyman-touch-layout"
+
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_R] > 'Ƞ' layer('default')
++ [SHIFT T_T_0] > 'Ṭ' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P_0] > 'P̣' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S_0] > 'Ṡ' layer('default')
++ [SHIFT T_S_1] > 'Ś' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
+'Z' + [SHIFT T_F] > 'Ż'
+'c' + [SHIFT T_F] > 'ċ'
+'g' + [SHIFT T_F] > 'ġ'
+'h' + [SHIFT T_F] > 'ḣ'
+'S' + [SHIFT T_F] > 'Ṡ'
+'z' + [SHIFT T_F] > 'ż'
+'G' + [SHIFT T_F] > 'Ġ'
+'C' + [SHIFT T_F] > 'Ċ'
+'s' + [SHIFT T_F] > 'ṡ'
+'H' + [SHIFT T_F] > 'Ḣ'
++ [SHIFT T_G_0] > 'Ġ' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H_0] > 'Ḣ' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K_0] > 'Ḳ' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
+'k' + [SHIFT T_L] > 'ḳ'
+'t' + [SHIFT T_L] > 'ṭ'
+'c' + [SHIFT T_L] > 'c̣'
+'p' + [SHIFT T_L] > 'p̣'
+'K' + [SHIFT T_L] > 'Ḳ'
+'T' + [SHIFT T_L] > 'Ṭ'
+'C' + [SHIFT T_L] > 'C̣'
+'P' + [SHIFT T_L] > 'P̣'
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z_0] > 'Ż' layer('default')
++ [SHIFT T_Z_1] > 'Ź' layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
+'Z' + [SHIFT T_X] > 'Ź'
+'c' + [SHIFT T_X] > 'ć'
+'S' + [SHIFT T_X] > 'Ś'
+'z' + [SHIFT T_X] > 'ź'
+'C' + [SHIFT T_X] > 'Ć'
+'s' + [SHIFT T_X] > 'ś'
++ [SHIFT T_C_0] > 'C̣' layer('default')
++ [SHIFT T_C_1] > 'Ċ' layer('default')
++ [SHIFT T_C_2] > 'Ć' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V_0] > ',' layer('default')
++ [SHIFT T_V_1] > '?' layer('default')
++ [SHIFT T_V_2] > '!' layer('default')
++ [SHIFT T_V] > '.' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q] > 'q'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_R] > 'ƞ'
++ [T_T_0] > 'ṭ'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P_0] > 'p̣'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S_0] > 'ṡ'
++ [T_S_1] > 'ś'
++ [T_S] > 's'
++ [T_D] > 'd'
+'Z' + [T_F] > 'Ż'
+'c' + [T_F] > 'ċ'
+'g' + [T_F] > 'ġ'
+'h' + [T_F] > 'ḣ'
+'S' + [T_F] > 'Ṡ'
+'z' + [T_F] > 'ż'
+'G' + [T_F] > 'Ġ'
+'C' + [T_F] > 'Ċ'
+'s' + [T_F] > 'ṡ'
+'H' + [T_F] > 'Ḣ'
++ [T_G_0] > 'ġ'
++ [T_G] > 'g'
++ [T_H_0] > 'ḣ'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_K_0] > 'ḳ'
++ [T_K] > 'k'
+'k' + [T_L] > 'ḳ'
+'t' + [T_L] > 'ṭ'
+'c' + [T_L] > 'c̣'
+'p' + [T_L] > 'p̣'
+'K' + [T_L] > 'Ḳ'
+'T' + [T_L] > 'Ṭ'
+'C' + [T_L] > 'C̣'
+'P' + [T_L] > 'P̣'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z_0] > 'ż'
++ [T_Z_1] > 'ź'
++ [T_Z] > 'z'
+'Z' + [T_X] > 'Ź'
+'c' + [T_X] > 'ć'
+'S' + [T_X] > 'Ś'
+'z' + [T_X] > 'ź'
+'C' + [T_X] > 'Ć'
+'s' + [T_X] > 'ś'
++ [T_C_0] > 'c̣'
++ [T_C_1] > 'ċ'
++ [T_C_2] > 'ć'
++ [T_C] > 'c'
++ [T_V_0] > ','
++ [T_V_1] > '?'
++ [T_V_2] > '!'
++ [T_V] > '.'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
+

@@ -1,14 +1,28 @@
-Cameroon QWERTY Keyboard
+﻿Cameroon QWERTY keyboard
 =====================
 
-Copyright (C) 2003-2018 SIL Cameroon
+Copyright (C) 2018 SIL Cameroon
 
-Version 1.2.1
+Version 6.0.1
 
 __DESCRIPTION__
-This keyboard supports the Standardized Alphabet for Cameroonian Languages for a QWERTY (US Keyboard)
+
+This keyboard layout seeks to follow the General Alphabet of Cameroonian Languages. It includes
+a touch layout for Android and iOS devices. 
+
+Links
+-----
+
+ * Home:     <https://github.com/keymanapp/keyboards/sil_cameroon_qwerty>
+ * Help:     <https://LangTechCameroon.info>
+ * Contact:  <keyboards_cameroon@sil.org>
 
 Supported Platforms
 -------------------
  * Windows
- * macOS
+ * MacOS
+ * Web
+ * Mobile Web
+ * iOS
+ * Android
+
