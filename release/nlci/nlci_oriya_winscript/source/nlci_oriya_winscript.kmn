@@ -23,7 +23,8 @@ store(cons) 'କଖଗଘଙ' \
     	   	'ଯରଲୱଶଷସହଳ'
 
 store(consonants) outs(cons) 'ୠଢ଼ଡ଼ୟ'
-store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'  
+
 
 c Adjust the behavior of 'a'
 + 'a' > 'ଅ'   
@@ -124,7 +125,9 @@ any(oriyaNumbers) + any(numberKeys) > context index(oriyaNumbers, 2)
 
 + any(vowelKeys) > index(vowels, 1)
 + any(consKeys) > index(cons, 1)
-any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)  
+any(consonants) '଼' + any(vowelKeys) > context '଼' index(vowelMatras,3)
+
 
 c cons + virama
 any (consonants) + 'x' > context '୍'          
