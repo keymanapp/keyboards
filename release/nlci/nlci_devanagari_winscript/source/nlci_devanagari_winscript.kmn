@@ -1,9 +1,10 @@
 ﻿store(&NAME) 'NLCI Devanagari WinScript'
 store(&COPYRIGHT) '© NLCI 2000-2019'
-store(&TARGETS) 'desktop'
+store(&TARGETS) 'mobile desktop tablet'
 store(&MESSAGE) 'MIT License'
 store(&BITMAP) 'nlci_devanagari_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_devanagari_winscript.kvks'
+store(&LAYOUTFILE) 'nlci_devanagari_winscript.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -152,4 +153,7 @@ any(vowels) + 'x' > context '्'
 c vowels + virama
 any(vowels) + 'x' > context '्' 
 'अ' + 'x' > context '्'
-any(vowelMatras) + 'x' > context '्'
+any(vowelMatras) + 'x' > context '्'         
+
+c 
++ [T_KA_SSA] > U+0915 U+094D U+0937 
