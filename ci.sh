@@ -87,7 +87,7 @@ function check_latest_stable_keymandesktop {
     die "Unable to download version data"
   fi
   KEYMANDESKTOP_VERSION=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.version'`
-  MSI_FILENAME=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files[].file | match("^keymandesktop.+.msi$").string'`
+  MSI_FILENAME=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files[].file | match("^keymandesktop.*.msi$").string'`
   MSI_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["'$MSI_FILENAME'"].md5'`
   SETUP_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["setup.exe"].md5'`
   
@@ -100,7 +100,8 @@ function check_latest_stable_keymandesktop {
 ## version from downloads.keyman.com
 ##
 ## GET https://downloads.keyman.com/windows/stable/<version>/setup.exe
-## GET https://downloads.keyman.com/windows/stable/<version>/keymandesktop<num>.msi
+## GET https://downloads.keyman.com/windows/stable/<version>/keymandesktop[num].msi 
+##     (11.0 and later versions do not include version number)
 ##
 function check_and_download_keymandesktop_artifacts {
 
