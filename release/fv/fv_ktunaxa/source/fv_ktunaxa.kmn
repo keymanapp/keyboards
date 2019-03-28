@@ -1,15 +1,131 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "kut"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.1"
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "kut"
+store(&COPYRIGHT) "(c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) 'Ktunaxa'
-store(&BITMAP) 'fv_Ktunaxa.bmp'
-store(&VISUALKEYBOARD) 'fv_Ktunaxa.kvk'
+store(&BITMAP) 'fv_ktunaxa.ico'
+store(&VISUALKEYBOARD) 'fv_ktunaxa.kvks'
+store(&KMW_HELPTEXT) 'To type the Glottal Accent, use the Apostrophe key ' U+0027 ' ' U+2014 ' p' U+0313 ' is typed p then apostrophe'
 begin Unicode > use(main)
 
 
-group(main) using keys 
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_ktunaxa.keyman-touch-layout"
+
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W_0] > 'W̓' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > '·' layer('default')
++ [SHIFT T_R] > '-' layer('default')
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
+'Ȼ' + [SHIFT T_O] > 'Ȼ̓'
+'w' + [SHIFT T_O] > 'w̓'
+'Q' + [SHIFT T_O] > 'Q̓'
+'Y' + [SHIFT T_O] > 'Y̓'
+'p' + [SHIFT T_O] > 'p̓'
+'ȼ' + [SHIFT T_O] > 'ȼ̓'
+'q' + [SHIFT T_O] > 'q̓'
+'K' + [SHIFT T_O] > 'K̓'
+'y' + [SHIFT T_O] > 'y̓'
+'k' + [SHIFT T_O] > 'k̓'
+'T' + [SHIFT T_O] > 'T̓'
+'M' + [SHIFT T_O] > 'M̓'
+'t' + [SHIFT T_O] > 't̓'
+'N' + [SHIFT T_O] > 'N̓'
+'m' + [SHIFT T_O] > 'm̓'
+'W' + [SHIFT T_O] > 'W̓'
+'n' + [SHIFT T_O] > 'n̓'
+'P' + [SHIFT T_O] > 'P̓'
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'ʔ' layer('default')
++ [SHIFT T_F] > 'ʾ' layer('default')
++ [SHIFT T_G] > 'H' layer('default')
++ [SHIFT T_H_0] > 'K̓' layer('default')
++ [SHIFT T_H] > 'K' layer('default')
++ [SHIFT T_J_0] > 'L' layer('default')
++ [SHIFT T_J] > 'Ⱡ' layer('default')
++ [SHIFT T_Z_0] > '!' layer('default')
++ [SHIFT T_Z] > '?' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C_0] > 'Ȼ̓' layer('default')
++ [SHIFT T_C] > 'Ȼ' layer('default')
++ [SHIFT T_V] > ',' layer('default')
++ [SHIFT T_B] > '.' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E] > '·'
++ [T_R] > '-'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
+'Ȼ' + [T_O] > 'Ȼ̓'
+'w' + [T_O] > 'w̓'
+'Q' + [T_O] > 'Q̓'
+'Y' + [T_O] > 'Y̓'
+'p' + [T_O] > 'p̓'
+'ȼ' + [T_O] > 'ȼ̓'
+'q' + [T_O] > 'q̓'
+'K' + [T_O] > 'K̓'
+'y' + [T_O] > 'y̓'
+'k' + [T_O] > 'k̓'
+'T' + [T_O] > 'T̓'
+'M' + [T_O] > 'M̓'
+'t' + [T_O] > 't̓'
+'N' + [T_O] > 'N̓'
+'m' + [T_O] > 'm̓'
+'W' + [T_O] > 'W̓'
+'n' + [T_O] > 'n̓'
+'P' + [T_O] > 'P̓'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'ʔ'
++ [T_F] > 'ʾ'
++ [T_G] > 'h'
++ [T_H_0] > 'k̓'
++ [T_H] > 'k'
++ [T_J_0] > 'l'
++ [T_J] > 'ⱡ'
++ [T_Z_0] > '!'
++ [T_Z] > '?'
++ [T_X] > 'x'
++ [T_C_0] > 'ȼ̓'
++ [T_C] > 'ȼ'
++ [T_V] > ','
++ [T_B] > '.'
++ [T_N_0] > 'n̓'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
+
 
 c constraints
 

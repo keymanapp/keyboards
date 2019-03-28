@@ -1,19 +1,24 @@
-<?php 
-  $pagename = "için Lazca (Lazuri) klavye";
-  $pagetitle = "Keyman Desktop için Lazca (Lazuri) klavye";
-  $pagestyle = <<<END
-    h1 { font: bold 16pt Tahoma; color: #4444cc }
-    h2 { font: bold 12pt Tahoma; color: #4444cc }
-    span.key { font: bold 10pt Verdana; padding: 0 4px; border: solid 1px #aaaaaa; margin: 0 4px; }
-END;
+<?php
+  $pagename = 'Lazca Klavye Keyboard Help';
+  $pagetitle = 'Lazca Klavye Help';
   require_once('header.php');
 ?>
 
-<p>Türkçe klavyeye dayanan Lazca klavye. This keyboard layout is designed for typing in Lazuri.</p>
+<h2> Türkçe klavyeye göre hazırlanmış Lazca klavyedir. </h2> 
+<p>- Fırlatmalı (şapkalı) ünsüz harfler(ç̆, k̆, p̆, t̆, z̆, ʒ̆) için aynı tuşa iki kez basın.<br>
+   Veya ünsüz harfdan sonra Shift+" (é) tuşuna basın.<br>
+- Yumuşatmalı (şapkalı) ünlü harfler(â, ê, î ô, û) için Shift+3 (^) dan sonra ünlü harf tuşuna basın.<br> 
+- Bilgisayarda w/W için ʒ/Ʒ den sonra " tuşuna basın.</p>
 
-<p>Klavye haritası <a href="Lazca_Lazuri_Q_Klavye.pdf">bu linkte bulunur</a>. See <a href="Lazca_Lazuri_Q_Klavye.pdf">this document</a> for all the key combinations.</p>
 
-<h2>Release History</h2>
-<p>Version 1.0.1, released 4 June 2018: updated language tags</p>
+<h1>Klavye Düzeni</h1>
 
-<p>Version 1.0, released 1 December 2017</p>
+<div id='osk-container'>
+  <h2>Desktop Keyboard Layout</h2>
+  <div id='osk' data-states='default shift ctrl-alt shift-ctrl-alt'></div>
+</div>
+
+<div id='osk-phone-container'>
+  <h2>Phone Keyboard Layout</h2>
+  <div id='osk-phone' data-states='default shift numeric'></div>
+</div>
