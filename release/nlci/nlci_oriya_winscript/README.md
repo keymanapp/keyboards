@@ -1,6 +1,6 @@
 # NLCI Oriya WinScript Keyboard
 
-Copyright (C) 2002-2018 NLCI, Banglore
+Copyright (C) 2002-2019 NLCI, Banglore
 
 Version 2.0
 
