@@ -1043,9 +1043,9 @@ function Keyboard_nlci_devanagari_winscript()
       r=m=1;
       k.KO(1,t,",");
     }
-    else if(k.KKM(e, 0x4000, 0xBE)&&k.KCM(2,t," ।",2)) {   // Line 100
+    else if(k.KKM(e, 0x4000, 0xBE)&&k.KCM(1,t,"।",1)) {   // Line 100
       r=m=1;
-      k.KO(2,t,".");
+      k.KO(1,t,".");
     }
     else if(k.KKM(e, 0x4000, 0xBE)&&k.KCM(1,t,"‌",1)) {   // Line 107
       r=m=1;
@@ -1053,7 +1053,7 @@ function Keyboard_nlci_devanagari_winscript()
     }
     else if(k.KKM(e, 0x4000, 0xBE)) {   // Line 99
       r=m=1;
-      k.KO(0,t," ।");
+      k.KO(0,t,"।");
     }
     else if(k.KKM(e, 0x4000, 0x30)&&k.KCM(1,t,"`",1)&&k.KDM(0,t,3)) {   // Line 145
       r=m=1;
