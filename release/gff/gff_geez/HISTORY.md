@@ -1,5 +1,8 @@
 # ግዕዝ (Ge'ez) Change History
 
+## 2019-04-05 1.3
+ * Packing uses new shared folder for GFF keyboards.
+
 ## 2019-03-05 1.2
 * Fix to recognize apostrophe have Salis forms.
 * Change "Wx" and transliterated store names to localized names.
