@@ -973,7 +973,7 @@ function Keyboard_nlci_devanagari_winscript()
 ;
   this.s_vowelKeys="AiIuUReEYoOVMH";
   this.s_vowels="आइईउऊऋएऎऐओऒऔंः";
-  this.s_vowelMatras="ािीुूृॆेैॊोौंः";
+  this.s_vowelMatras="ािीुूृेॆैॊोौंः";
   this.s_consKeys="kKgGWcCjJwtTdDNqQ[{npPbBmyrlvzZshL";
   this.s_cons="कखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळ";
   this.s_consonants="कखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसहळऱऴ";
@@ -1210,7 +1210,7 @@ function Keyboard_nlci_devanagari_winscript()
     }
     else if(k.KKM(e, 0x4010, 0x45)&&k.KA(0,k.KC(1,1,t),this.s_consonants)) {   // Line 151
       r=m=1;
-      k.KO(-1,t,"े");
+      k.KO(-1,t,"ॆ");
     }
     else if(k.KKM(e, 0x4010, 0x45)) {   // Line 149
       r=m=1;
@@ -1639,7 +1639,7 @@ function Keyboard_nlci_devanagari_winscript()
     }
     else if(k.KKM(e, 0x4000, 0x45)&&k.KA(0,k.KC(1,1,t),this.s_consonants)) {   // Line 151
       r=m=1;
-      k.KO(-1,t,"ॆ");
+      k.KO(-1,t,"े");
     }
     else if(k.KKM(e, 0x4000, 0x45)) {   // Line 149
       r=m=1;
