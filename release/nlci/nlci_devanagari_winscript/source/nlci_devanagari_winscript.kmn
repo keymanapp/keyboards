@@ -10,7 +10,7 @@ begin Unicode > use(main)
 group(main) using keys
 
 store(vowelKeys) 'AiIuUReEYoOVMH'
-store(vowels) 'आइईउऊऋएऎऐओऒऔंः'
+store(vowels) 'आइईउऊऋएऐऐओऒऔंः'
 store(vowelMatras) 'ािीुूृेॆैॊोौंः'
 store(consKeys) 'kKgGW' \
     	   	   	'cCjJw' \
@@ -37,7 +37,9 @@ dk(a) + 'a' > 'ा' dk(aa)
 'ा' dk(aa) + 'a' > 'अ'
 
 c Adjust the behavior of 'e'
-'ए' + 'e' > 'ऎ'      
+'ए' + 'e' > 'ऐ'   
+'ऐ' + 'e' > 'ऎ'  
+'ऎ' + 'e' > 'ए'
 'े' + 'e' > 'ॆ'  
 
 c Adjust the behavior of 'i'
