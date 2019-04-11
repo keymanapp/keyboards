@@ -1,9 +1,9 @@
 Tai Le Basic keyboard
 ==============
 
-(c) 2018 SIL International
+(c) 2018-2019 SIL International
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------
