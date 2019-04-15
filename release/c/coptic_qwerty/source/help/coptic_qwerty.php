@@ -4,15 +4,15 @@ $pagetitle = $pagename;
 require_once('header.php');
 ?>
 
-<p>
-This keyboard layout is designed for typing the Coptic
+<p>This keyboard layout is designed for typing the Coptic
 script. This English QWERTY-based keyboard layout is 
 optimized for English-language typists. It is based on an 
 English-specific transliteration and is probably going to 
-be most popular with English-speaking Copticists. 
-</p>
+be most popular with English-speaking Copticists. </p>
+<p>In order to fully access all the keys on this keyboards, you will need a keyboard (hardware) with 102 keys (US keyboards tend to only have 101 keys).</p>
+<p>Additionally, this keyboard makes use of SHIFT+RALT keys which are set by default when Keyman is installed. To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off". Either change the hotkey or turn it off. Do the same for "Open Keyboard Menu" and for "Open Language Switcher".</p>
 <p>The <a href="https://www.evertype.com/fonts/coptic/" target="_blank">Antinoou</a> font was developed by the author of this keyboard and supports the standard Coptic characters. However, it does not yet support the Coptic Epact Numbers. The 
-<a href="http://users.teilar.gr/~g1951d/" target="_blank">Symbola</a> font does include support for the Coptic Epact Numbers.</p>
+<a href="http://users.teilar.gr/~g1951d/" target="_blank">Symbola</a> font does include support for the Coptic Epact Numbers. Because of licensing issues, neither of these fonts is included in this keyboard package.</p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 <br/>
@@ -43,11 +43,11 @@ be most popular with English-speaking Copticists.
 </ul>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt rightalt-shift rightctrl-rightalt rightctrl-rightalt-shift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
-<p>© 2010-2019 Michael Everson, evertype.com. All rights reserved.</p>
+<p>© 2010-2019 Michael Everson, evertype.com.</p>
