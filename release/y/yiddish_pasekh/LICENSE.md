@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-(c) 2018-2019 SIL International
+Copyright (C) 2002-2019 Gyula Zsigri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
