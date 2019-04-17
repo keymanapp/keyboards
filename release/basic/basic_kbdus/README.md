@@ -1,17 +1,19 @@
-Tai Le Basic keyboard
+US Basic keyboard
 ==============
 
-(c) 2018-2019 SIL International
+© 2008-2019 SIL International
 
-Version 1.0.1
+Version 1.1
 
 Description
 -----------
 
-Tai Le Basic generated from template
+US Basic generated from template
 
 Links
 -----
+
+Home: https://keyman.com/keyboards/basic_kbdus
 
 Supported Platforms
 -------------------
