@@ -72,7 +72,7 @@ store(any_con)  outs(all_sin_con1) outs(all_sin_con2)
 
 c +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++MAIN SYLLABLE ONLY+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-c +++++++++++++++++++++++++++++++SINGLE CONSONANT CHANGES SERIES IN HARMONY WITH THE SERIES OF THE VOWEL.+++++++++++++++++++++++++++++++
+c +++++++++++++++++++++++++++++++SINGLE CONSONANT CHANGES SERIES IN HARMONY WITH THE SERIES OF THE SINGLE VOWEL.+++++++++++++++++++++++++++++++
 c single orthographic vowel mappings, series 1
 store(sin_vow1_key)     [K_O] [K_E] [K_X]       c keys: oex
 store(sin_vow1_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ​ in series 1
@@ -121,12 +121,13 @@ U+1790 + any(sin_vow2_key) > U+1792 index(sin_vow2_out,2) U+1782
 
 c inherent vowel and ា treatments (1) without consonant key fired.
 + [K_A]                                         > U+17A2 U+17B6 U+1782 U+17CB       c a > អាគ់
-U+1796 + [K_A]                > U+1794 U+17C9 U+17B6 U+1782 U+17CB c pz
-U+179B + [K_A]                > U+17A1 U+17B6 U+1782 U+17CB       c lz
-U+1793 + [K_A]                > U+178E U+17B6 U+1782 U+17CB       c nz
-U+1794 U+17C9 U+17B6 U+1782 U+17CB + [K_A]   > context(1) context(2) context(3)  c pzz
-U+17A1 U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c lzz
-U+178E U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c nzz
+U+1796 + [K_A]                > U+1794 U+17C9 U+17B6 U+1782 U+17CB c pa
+U+179B + [K_A]                > U+17A1 U+17B6 U+1782 U+17CB       c la
+U+17B6 U+1793 U+17CB + [K_A]                > U+178E U+17B6 U+1782 U+17CB       c danay > ដណៃ
+U+1793 + [K_A]                > U+178E U+17B6 U+1782 U+17CB       c na
+U+1794 U+17C9 U+17B6 U+1782 U+17CB + [K_A]   > context(1) context(2) context(3)  c paa
+U+17A1 U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c laa
+U+178E U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c naa
 U+1794 + [K_A]                              > context(1) U+17B6 U+1782 U+17CB
 any(con_muusikatoan) + [K_A]                > context U+17C9 U+17B6 U+1782 U+17CB c except for U+1794, see rule above here.
 any(con_muusikatoan) U+17C9 U+17B6 U+1782 U+17CB + [K_A]   > context(1) U+17C9 U+17B6
@@ -139,6 +140,7 @@ U+179B + [K_Z]                > U+17A1 U+1782 U+17CB        c lz
 U+1793 + [K_Z]                > U+178E U+1782 U+17CB        c nz
 U+1794 U+17C9 U+1782 U+17CB + [K_Z] > context(1) context(2) c pzz
 U+17A1 U+1782 U+17CB + [K_Z]        > context(1)            c lzz
+U+17B6 U+1793 U+17CB + [K_Z]                > U+178E U+1782 U+17CB        c danz > ដណគ់
 U+178E U+1782 U+17CB + [K_Z]        > context(1)            c nzz
 any(all_sin_con1) + [K_Z]                           > context(1) U+1782 U+17CB  c any C1 z > any C1 គ់
 any(all_sin_con1) U+1782 U+17CB + [K_Z]             > context(1)                c any C1 zz > any C1 
@@ -147,6 +149,23 @@ any(con_muusikatoan) U+17C9 U+1782 U+17CB + [K_Z]   > context(1) U+17C9
 
 U+17A2 U+17B6 U+1782 U+17CB + [K_A] > U+17A2 U+17B6 c aa > អា
 U+17A2 U+1782 U+17CB + [K_Z]        > U+17A2        c zz > អ
+
+
+c +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ START PRESYLLABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+c Presyllables: CV, CCV, h , q + nasal
+
+U+17B6 any(all_sin_con1) U+17CB + any(sin_vow1_key)     > context(2) index(sin_vow1_out,4)
+U+17B6 any(all_sin_con1) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
+U+17B6 any(all_sin_con1) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+
+
+U+17B6 any(all_sin_con2) U+17CB + any(sin_vow2_key)     > context(2) index(sin_vow2_out,4)
+U+17B6 any(all_sin_con2) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
+U+17B6 any(all_sin_con2) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+
+c cont. from here
 
 
 c VV combo, series 1
