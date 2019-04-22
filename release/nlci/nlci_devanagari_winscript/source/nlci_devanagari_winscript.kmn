@@ -1,10 +1,11 @@
-﻿store(&NAME) 'NLCI Devanagari WinScript'
-store(&COPYRIGHT) '© NLCI 2000-2019'
-store(&TARGETS) 'mobile desktop tablet'
+﻿store(&VERSION) '10.0'
+store(&NAME) 'NLCI Devanagari WinScript'
+store(&COPYRIGHT) '© 2002-2019 NLCI, Bangalore'
 store(&MESSAGE) 'MIT License'
 store(&BITMAP) 'nlci_devanagari_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_devanagari_winscript.kvks'
 store(&LAYOUTFILE) 'nlci_devanagari_winscript.keyman-touch-layout'
+store(&TARGETS) 'any'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -105,7 +106,7 @@ c Adjust the behavior of X
 any(consonants) + 'X' > context '्' U+200C
 any(consonants) '्' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",.>!]})' 
+store(WordFinalPunct) ' ",.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add =

@@ -1,6 +1,6 @@
 # NLCI Devanagari WinScript Keyboard
 
-Copyright (C) 2002-2019 NLCI, Banglore
+Copyright (c) 2002-2019 NLCI, Bangalore
 
 Version 2.0
 
@@ -12,3 +12,6 @@ This Keyboard mimic Devanagari WinScript Keyboard Layout designed by NLCI in 198
  * Windows
  * macOS
  * Web
+ * Linux
+ * Android
+ * iOS
