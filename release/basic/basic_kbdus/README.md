@@ -3,7 +3,7 @@ US Basic keyboard
 
 © 2008-2019 SIL International
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------

@@ -9,7 +9,7 @@
 
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the English language.
+This keyboard is designed for the English language. It will also be useful for other languages that do not require special characters.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
