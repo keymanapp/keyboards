@@ -1,6 +1,10 @@
 Uganda-Tanzania Bantu (SIL) Keyboard Change History
 =======================
 
+1.1.1 (24 Apr 2019)
+------------------
+* Fixed sw BCP47 tag
+
 1.1 (31 Aug 2018)
 ------------------
 * Migrated to Github
