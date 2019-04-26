@@ -1638,8 +1638,6 @@
     <tr class="Table11">
       <td style="text-align:left;width:18.002cm;" class="Table1_A1">
         <p class="Title">SIL Ethiopic Keyboard Map</p>
-
-        <p class="Subtitle">© SIL Ethiopia - version 2.0 - 2017-04-02</p>
       </td>
     </tr>
   </table>

@@ -33,9 +33,6 @@ selecting the On Screen Keyboard menu item. </p>
 <p>The keyboard layout of this language is very similar to that of the English keyboard, except the two special keys.</p>
 	<img src='keyboard_layout.png' alt='Keyboard Layout' width='100%'>
 
-<h2>Release History</h2>
-<p>Version 1.0, released 18 September 2017</p>
-
 <h2>Links</h2>
 <ul>
 <li>Home Page: <a href='https://keyman.com/'>https://keyman.com/</a></li>
