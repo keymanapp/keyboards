@@ -19,3 +19,4 @@ and selecting the On Screen Keyboard menu item. Similar keyboards are also avail
 
 <h2>Release History</h2>
 <p>Version 1.0, released 5 May 2018</p>
+<p>Version 1.0.1, released 4 April 2019</p>
