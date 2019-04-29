@@ -1,9 +1,9 @@
 Balochi Scientific Keyboard
 ===========================
 
-Copyright (C) 2017 SIL International
+Copyright (C) 2017-2019 SIL International
 
-Version 1.0
+Version 1.0.2
 
 Description
 -----------
@@ -16,7 +16,8 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Contact:  <support@keyman.com>
+Home: https://keyman.com/keyboards/balochi_scientific
+Contact:  <support@keyman.com>
  
 Supported Platforms
 -------------------
