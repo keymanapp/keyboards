@@ -88,7 +88,7 @@ c Adjust the behavior of X
 any(consonants) + 'X' > context '்' U+200C
 any(consonants) '்' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",.>!]})' 
+store(WordFinalPunct) ' ",.>!]}-/;\~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add =

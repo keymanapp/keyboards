@@ -12,3 +12,6 @@ This Keyboard mimic Tamil WinScript Keyboard Layout designed by NLCI in 1988. Se
  * Windows
  * macOS
  * Web
+ * Linux
+ * Android
+ 
