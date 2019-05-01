@@ -4,7 +4,7 @@
   require_once('header.php');
 ?>
 
-  <p>Keyboard Copyright &#169; 2016-2018 Bill Jancewicz</p>
+  <p>Keyboard Copyright &#169; 2016-2019 Bill Jancewicz</p>
   <section id='overview'>
   <h2>Overview</h2>
   <p>This keyboard is designed for the East Cree syllabic script used in Northwestern Quebec, Canada. The keyboard has been developed to make it easy to type all of the symbols necessary for East Cree. This keyboard is fully compliant with the <a href='http://unicode.org/standard/standard.html'>Unicode Standard</a>.</p>
@@ -180,12 +180,3 @@
 
   </section>
 
-  <section id='history'>
-  <h2>Version History</h2>
-
-  <ul>
-    <li>Version 9.0.1 released 2016: Initial version</li>
-    <li>Version 9.0.2 released 2018: Add touch keyboard to package</li>
-    <li>Version 9.0.3 released 2018: Updated to add support for Windows and macos package</li>
-  </ul>
-  </section>
