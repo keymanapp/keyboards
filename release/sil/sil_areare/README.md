@@ -19,6 +19,7 @@ Links
 Supported Platforms
 -------------------
  * Windows
- * Web
  * OSX
+ * Linux
+ * Web
  * Mobile

@@ -1,7 +1,7 @@
 SIL Ethiopic Power-G Keyboard
 =============================
 
-Copyright (C) SIL Ethiopia
+Copyright (C) 2017-2019 SIL Ethiopia
 
 Version 1.2.1
 

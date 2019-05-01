@@ -1,7 +1,7 @@
 SIL Ethiopic Keyboard
 =====================
 
-Copyright (C) SIL Ethiopia
+Copyright (C) 2010-2019 SIL Ethiopia
 
 Version 2.0.2
 
