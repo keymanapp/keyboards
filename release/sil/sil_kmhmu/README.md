@@ -1,7 +1,7 @@
 Kmhmu (SIL) Keyboard
 =====================
 
-Copyright (C) 2008-2018 John Durdin
+Copyright (C) 2008-2019 SIL International
 
 Version 1.5
 
@@ -14,3 +14,5 @@ Supported Platforms
  * Windows
  * Android
  * iOS
+ * macOS
+ * Linux
