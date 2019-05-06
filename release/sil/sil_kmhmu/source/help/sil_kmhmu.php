@@ -157,7 +157,9 @@ EXTRA;
 <h2 style="clear: left; page-break-before: always">Mobile Keyboard layout - Default</h2>
 <p><img alt="Kmhmu (SIL) Mobile keyboard layout" src="sil_kmhmumobile.png"/></p>
 <h2 style="clear: left; page-break-before: always">Mobile Keyboard layout - with Shift</h2>
-<p><img alt="Kmhmu (SIL) Mobile keyboard layout: Shifted" src="sil_kmhmumobile_shifted.png"/></p>
+<p><img alt="Kmhmu (SIL) Mobile keyboard layout: Shifted" src="sil_kmhmumobile_shifted.png"/></p>.
+<h2 style="clear: left; page-break-before: always">Mobile Keyboard layout - with Symbol</h2>
+<p><img alt="Kmhmu (SIL) Mobile keyboard layout: Symbol" src="sil_kmhmumobile_symbol.png"/></p>
 
 <h2>Fonts</h2>
   <p>The font <b>Kmhmu MX</b> has been included with the keyboard layout.</p>
