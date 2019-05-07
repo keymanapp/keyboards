@@ -1,6 +1,10 @@
-﻿store(&NAME) 'NLCI Kannada WinScript'
-store(&COPYRIGHT) '© NLCI 2000-2018'
-store(&KEYBOARDVERSION) '2.0.0'
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Kannada WinScript [NLCI] '
+store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'windows macosx linux web'
+store(&BITMAP) 'nlci_kannada_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_kannada_winscript.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -76,7 +80,7 @@ c Adjust the behavior of X
 any(consonants) + 'X' > context '್' U+200C
 any(consonants) '್' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",;:.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
   
 c = is a modifier key that alters the default behavior of some keystrokes
