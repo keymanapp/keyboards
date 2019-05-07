@@ -1,6 +1,6 @@
 # NLCI Kannada WinScript Keyboard
 
-Copyright (C) 2002-2018 NLCI, Banglore
+Copyright (c) 2002-2019 NLCI, Banglore
 
 Version 2.0
 
@@ -12,3 +12,4 @@ This Keyboard mimic Kannada WinScript Keyboard Layout designed by NLCI in 1988. 
  * Windows
  * macOS
  * Web
+ 
