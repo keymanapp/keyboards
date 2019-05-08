@@ -4,13 +4,13 @@
   require_once('header.php');
 ?>
 <style>
- /* Style Definitions */
+
         html, body {
             font-family: sans-serif;
             font-size: 100%;
         }
         samp {
-            font-family: Annapurna; 
+            font-family: sans-serif; 
             font-size:20pt; 
             
         }
@@ -76,7 +76,11 @@
             text-align: right;
         } 
         */
-</style>
+
+
+    </style>
+</head>
+
 <body>
     <h1>NLCI Malayalam WinScript Keyboard help</h1>
 
@@ -84,6 +88,7 @@
 
     <h2>Keyboard layout</h2>
 
+    
     <img src="malayalam1.png" > </img>
     <h2>Input sequences</h2>
     
@@ -167,7 +172,7 @@
         </thead>
         <tbody>
             <tr>
-                <td><kbd>ന്</kbd><kbd>t</kbd> </td>
+                <td><kbd>n</kbd><kbd>x</kbd><kbd>t</kbd> </td>
                 <td>ൻ്റ</td>
                 
             </tr>
@@ -187,12 +192,12 @@
         </thead>
         <tbody>
             <tr>
-                <td><kbd>്ല</kbd><kbd>^</kbd> </td>
+                <td><kbd>x</kbd><kbd>l</kbd><kbd>^</kbd> </td>
                 <td>ൢ</td>
                 
             </tr>
             <tr>
-                <td><kbd>ൢ</kbd><kbd>^</kbd> </td>
+                <td><kbd>x</kbd><kbd>l</kbd><kbd>^</kbd><kbd>^</kbd> </td>
                 <td>ൣ</td>
                 
             </tr>
@@ -235,17 +240,17 @@
         </thead>
         <tbody>
             <tr>
-                <td><kbd>ീ</kbd><kbd>i</kbd> </td>
+                <td><kbd>I</kbd><kbd>i</kbd> </td>
                 <td>ീ</td>
                 
             </tr>
             <tr>
-                <td><kbd>ൂ</kbd><kbd>u</kbd> </td>
+                <td><kbd>U</kbd><kbd>u</kbd> </td>
                 <td>ൂ</td>
                 
             </tr>
 			<tr>
-                <td><kbd>ാ</kbd><kbd>a</kbd> </td>
+                <td><kbd>A</kbd><kbd>a</kbd> </td>
                 <td>ാ</td>
                 
             </tr>
@@ -264,20 +269,16 @@
         </thead>
         <tbody>
             <tr>
-                <td><kbd>ൻ്റ</kbd><kbd>`</kbd> </td>
-                <td>ന്റ</td>
+                <td><kbd>n</kbd><kbd>x</kbd><kbd>t</kbd><kbd>`</kbd> </td>
+                 <td>ന്‍റ</td>
                 
             </tr>
             <tr>
-                <td><kbd>ന്റ</kbd><kbd>`</kbd> </td>
-                <td>ന്‍റ</td>
+                <td><samp>ൻ്റ + ` </samp> </td>
+                <td>ന്റ</td>
                 
             </tr>
-			<tr>
-                <td><kbd>ന്‍റ</kbd><kbd>`</kbd> </td>
-                <td>ൻ്റ</td>
-                
-            </tr>
+			
 </tbody>
     </table>
 	<h3>Praslesham</h3>
@@ -286,11 +287,14 @@
     
      <h3>Chandrakala</h3>
 
-    <p> <kbd>X</kbd> is used as chandrakala Eg <kbd>k</kbd> <kbd>X</kbd> <kbd>L</kbd> will generate <samp>ക്‌ല</samp></p>
+    <p> <kbd>x</kbd> is used as chandrakala Eg <kbd>k</kbd> <kbd>x</kbd>  will generate <samp>ക്‌</samp></p>
 	
 	 <h3>Conjuncts</h3>
 
     <p> <kbd>x</kbd> is used as conjuncts Eg <kbd>k</kbd> <kbd>x</kbd> <kbd>l</kbd> will generate <samp>ക്ല</samp></p>
+	
+	<h3> Using X </h3>
+	<p> Eg <kbd>k</kbd> <kbd>X</kbd> <kbd>g</kbd> will generate <samp>ക്‌ഗ</samp>
 	
 	
     
