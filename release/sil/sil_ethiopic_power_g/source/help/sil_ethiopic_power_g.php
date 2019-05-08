@@ -1641,8 +1641,6 @@
     <tr class="Table11">
       <td style="text-align:left;width:18.002cm;" class="Table1_A1">
         <p class="Title">SIL Power-G Ethiopic Keyboard Map</p>
-
-        <p class="Subtitle">© SIL Ethiopia - version 1.2 - 2017-03-27</p>
       </td>
     </tr>
   </table>
