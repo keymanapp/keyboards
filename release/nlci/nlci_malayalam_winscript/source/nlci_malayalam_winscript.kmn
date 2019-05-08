@@ -68,8 +68,8 @@ c Adjust the behavior of R
 'ൃ' + 'R' > 'ൄ'     
    
 c Adjust the behavior of S
-+ 'S' > nul  
-
+  
+'`' dk(bt) + 'S' > 'S'
 c Adjust the behavior of u
 'ഉ' + 'u' > 'ഊ'    
 'ു' + 'u' > 'ൂ' 
@@ -78,7 +78,8 @@ c Adjust the behavior of s
 'സ' + 's'> 'ഷ'                    
 
 c Adjust the behavior of f  
- + 'f' > nul
+'`' dk(bt) + 'f' > 'f' 
+
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '്' U+200C
@@ -95,6 +96,7 @@ any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
 
 c Add praslesham
 + 'F' > 'ഽ'    
+'`' dk(bt) + 'F'  > 'F'
 
 c Add ^
 '്ല' + '^' > 'ൢ'
