@@ -84,9 +84,7 @@
 
     <h2>Keyboard layout</h2>
 
-    <h2>Default</h2>
-		<p data-height="500" data-theme-id="0" data-slug-hash="qQrbJN" data-default-tab="result" data-user="binila" data-pen-title="Malayalam WinScript Keyman Keyboard Layout" class="codepen">See the Pen <a href="https://codepen.io/binila/pen/qQrbJN/">Malayalam WinScript Keyman Keyboard Layout</a> by binilasanki (<a href="https://codepen.io/binila">@binila</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    <img src="malayalam1.png" > </img>
     <h2>Input sequences</h2>
     
 	
