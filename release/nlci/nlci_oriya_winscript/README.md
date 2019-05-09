@@ -1,6 +1,6 @@
 # NLCI Oriya WinScript Keyboard
 
-Copyright (C) 2002-2019 NLCI, Banglore
+Copyright (c) 2002-2019 NLCI, Bangalore
 
 Version 2.0
 
@@ -12,3 +12,5 @@ This Keyboard mimic Oriya WinScript Keyboard Layout designed by NLCI in 1988. Se
  * Windows
  * macOS
  * Web
+ * linux
+ * Android
