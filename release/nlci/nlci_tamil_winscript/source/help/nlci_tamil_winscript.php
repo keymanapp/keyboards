@@ -88,7 +88,7 @@
 
     <h2>Keyboard layout</h2>
 
-     <img src = "tamil keyboard1.png"> </img>
+     <img src = "tamil keyboard.png"> </img>
     <h2>Input sequences</h2>
     
 	
