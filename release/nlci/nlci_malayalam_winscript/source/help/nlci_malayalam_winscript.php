@@ -247,7 +247,7 @@
         </thead>
         <tbody>
             <tr>
-                <td><kbd>n</kbd><kbd>x</kbd><kbd>t</kbd><kbd>`</kbd> </td>
+                <td><kbd>n</kbd><kbd>x</kbd><kbd>t</kbd> </td>
                  <td>ന്‍റ</td>
                 
             </tr>
