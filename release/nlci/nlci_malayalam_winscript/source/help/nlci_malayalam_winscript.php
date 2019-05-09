@@ -3,7 +3,7 @@
   $pagetitle = 'NLCI Malayalam WinScript Keyboard Help';
   require_once('header.php');
 ?>
-<style>
+ <style>
 
         html, body {
             font-family: sans-serif;
@@ -89,7 +89,7 @@
     <h2>Keyboard layout</h2>
 
     
-    <img src="malayalam1.png" > </img>
+    <img src="malayalam.png" > </img>
     <h2>Input sequences</h2>
     
 	
@@ -179,30 +179,8 @@
             
             </tr>
 </tbody>
-    </table>
-	<h3>Using ^ </h3>
-	
-      <table class="inputSequences">
-        <thead>
-            <tr>
-                <th>Keys</th>
-                <th>Character</th>
-              
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><kbd>x</kbd><kbd>l</kbd><kbd>^</kbd> </td>
-                <td>ൢ</td>
-                
-            </tr>
-            <tr>
-                <td><kbd>x</kbd><kbd>l</kbd><kbd>^</kbd><kbd>^</kbd> </td>
-                <td>ൣ</td>
-                
-            </tr>
-</tbody>
-    </table>
+ </table>
+   
 	
 	<h3>Using = </h3>
 	
@@ -240,17 +218,17 @@
         </thead>
         <tbody>
             <tr>
-                <td><kbd>I</kbd><kbd>i</kbd> </td>
+                <td><kbd>i</kbd><kbd>i</kbd> or <kbd>I</kbd><kbd>i</kbd>  </td>
                 <td>ീ</td>
                 
             </tr>
             <tr>
-                <td><kbd>U</kbd><kbd>u</kbd> </td>
+                <td><kbd>u</kbd><kbd>u</kbd> or <kbd>U</kbd><kbd>u</kbd>   </td>
                 <td>ൂ</td>
                 
             </tr>
 			<tr>
-                <td><kbd>A</kbd><kbd>a</kbd> </td>
+                <td><kbd>a</kbd><kbd>a</kbd> or <kbd>A</kbd><kbd>a</kbd>  </td>
                 <td>ാ</td>
                 
             </tr>
@@ -281,6 +259,12 @@
 			
 </tbody>
     </table>
+	
+	<h3>Malayalam Vowel Sign Vocalic L</h3>
+	<p> <kbd>^</kbd> is used to generate Malayalam vowel sign vocalic L, Eg <kbd>k</kbd> <kbd>x</kbd><kbd>l</kbd><kbd>^</kbd>  will generate <samp>കൢ</samp></p>
+	<h3>Malayalam Vowel Sign Vocalic LL</h3>
+	<p> <kbd>^</kbd><kbd>^</kbd> is used to generate Malayalam vowel sign vocalic LL, Eg <kbd>k</kbd> <kbd>x</kbd><kbd>l</kbd><kbd>^</kbd><kbd>^</kbd>  will generate <samp>കൣ</samp></p>
+      
 	<h3>Praslesham</h3>
 
     <p>Praslesham <samp>ഽ</samp> can be typed using the <kbd>F</kbd> key. </p>
