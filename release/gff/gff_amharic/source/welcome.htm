@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -61,9 +61,72 @@ table.zaima td, table.zaima th { border: thin solid #666; text-align: center }
 table.zaima th { text-align: center; background-color: #d7d0b9 }
 table.zaima { border-bottom: hidden }
 table.zaima { empty-cells: show }
+.tabs{
+    // width: 600px;
+    // display: block;
+    margin: 40px auto;
+    position: relative;
+}
+
+.tabs .tab{
+    float: left;
+    display: block;
+}
+
+.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs .tab>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: #FFF;
+    background: #4A83FD;
+}
+
+.tabs .content {
+    z-index: 0;/* or display: none; */
+    overflow: hidden;
+    // width: 600px;
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    // background: #303030;
+    // color: #DFDFDF;
+    border: solid black 1px;
+    
+    opacity:0;
+    transition: opacity 400ms ease-out;
+}
+
+.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0;
+    background: #303030;
+    color: #F5F5F5;
+}
+
+.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;/* or display: block; */
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
 </style>
 </head>
 <body>
+
+<ul class="tabs">
+    
+  <li class="tab">
+      <input type="radio" name="tabs" checked="checked" id="tab1" />
+      <label for="tab1">English</label>
+      <div id="tab-content1" class="content">
 
 <h1>The Ge&rsquo;ez Frontier Foundation Keyboard for Amharic (አማርኛ) Language</h1>
 
@@ -80,7 +143,7 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 <p>A more complete typing manual is provided as a PDF file with this distribution.</p>
 
  
-<h2><a id="status" name="status"></a>Typing Letters</h2>
+<h2><a id="letters" name="letters"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in Amharic may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
@@ -91,9 +154,11 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 <p>
 <strong>Special Notes:</strong>
 </p>
+<p>
 <ul>
-  <li>Apostrophe, ' , is a terminator following a ሳድስ (6<th>th</th> form) letter. For example: <kbd>gebr'iel</kbd> becomes ገብርኤል, <kbd>gebriel</kbd> becomes ገብሬል.</li>
+  <li>Apostrophe, ' , is a terminator following a ሳድስ (6<sup>th</sup> form) letter. For example: <kbd>gebr'iel</kbd> becomes ገብርኤል, <kbd>gebriel</kbd> becomes ገብሬል.</li>
 </ul>
+</p>
 
 <div style="margin-left: 1em;">
 <table class="kb">
@@ -219,11 +284,11 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 <table class="punct" style="margin-top: 0;">
   <tr>
     <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
-    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th>
+    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th><th>&lt;</th><th>&gt;</th><th>&lt;&lt;</th><th>&gt;&gt;</th>
   </tr>
   <tr>
     <th>Punctuation</th>
-    <td>፡</td><td>።</td><td>፣</td><td>፥</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td>
+    <td>፡</td><td>።</td><td>፣</td><td>፥</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td><td>‹</td><td>›</td><td>«</td><td>»</td>
   </tr>
 </table>
 
@@ -268,25 +333,26 @@ hitting the punctuation key two or more times until it appears.</p>
     <td>፻</td><td>፲፻</td><td>፼</td>
   </tr>
 </table>
+
 <p>Numeral composition will continue as 0s are entered up to ፼፼ (100,000,000).</p>
 
 </div>
 
 
 <h2><a id="typing-practice" name="typing-practice"></a>Typing Practice</h2>
+
 <div style="margin-left: 1em;">
 <p>An Amharic typing practice document can be downloaded from the link below:</p>
 <dir><a href="http://keyboards.ethiopic.org/docs/AmharicTypingPractice.docx">http://keyboards.ethiopic.org/docs/AmharicTypingPractice.docx</a>
 </dir>
 </div>
 
-
 <p><br/></p>
 <hr/>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 1997-2018. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 1997-2019. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
@@ -303,6 +369,257 @@ hitting the punctuation key two or more times until it appears.</p>
     </tr>
   </table>
 </div>
+
+</div>
+
+</div>
+</li>
+  <li class="tab">
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2">አማርኛ</label>
+      <div id="tab-content2" class="content">
+
+
+<h1>የግዕዝ ፍሮንቲየር ድርጅት የታይፕ ሰሌዳ (Keyboard) ለአማርኛ ቋንቋ</h1>
+
+<h2><a id="abstract-am" name="abstract"></a>መግቢያ</h2>
+
+
+<p style="text-align: justify;">
+ይህ የኢትዮጵያዊያን የአፃፃፍ ልምድን የሚከተል የአማርኛ (amh, አማርኛ) ቋንቋ የኔሞኒክ ማስገቢያ መንገድ ነው። በUnicode 3.0 standard ስር (Unicode 4.1 ሁለት ታሪካዊ የነጥብ ምልክቶችን እገዛ ይፈልጋል) የኢትዮፒክ ስክሪፕት (Ethiopic script) ፊደል እገዛ ያስፈልገዋል።  የአማርኛ ታይፕ ሰሌዳ «ኔሞኒክ» እና ለዪ.ኤስ እንግሊዘኛ «QWERTY» ታይፕ ማድረጊያ ሰሌዳ የተቀረጸ ነው። ይህም ማለት የታይፕ ሰሌዳው ካለምንም እውቀት እና በተፈጥሮ በእንግሊዛኛ ቋንቋ ከሚሰጡት ድምፆችን የእንግሊዘኛ የታይፕ ሰሌዳን (QWERTY በመባል የሚታወቀውን) ተጠቃሚ በማድረግ የተቀረፀ ነው። በተጨማሪም የታይፕ ሰሌዳው በኔሞኒክ እገዛ፣ እንግሊዘኛ ካልሆኑ ፊደላት ከአውሮፓውያን የታይፕ ሰሌዳዎች ጋር የተገናኘ ነው።
+</p>
+
+<p>ከዚህ ስርጭት ጋር የተያያዘው የPDF ፋይል በተጨማሪ ሁኔታ ተሟልቶ የተዘጋጀ የታይፕ መምሪያ ያካትታል።</p>
+
+ 
+<h2><a id="letters-am" name="letters-am"></a>ፊደላትን ታይፕ ማድረግ</h2>
+
+<p style="text-align: justify;">
+በአማርኛ የምንጠቀምባቸው ፊደላት ብቻ በዚህ የታይፕ ሰሌዳ ታይፕ ሊደረግ ይችላል። በሌላ ቋንቋ የምንጠቀምባቸውን ሌላ ተጨማሪ የኢትዮፒክ ፊደላትን ለመጠቀም፣ ለሚፈለገው ቋንቋ የሚያገለግለውን የታይፕ ሰሌዳ ወይም የገለልተኛ-ቋንቋ የታይፕ ሰሌዳ ማለትም በUnicode 4.1 የሚገኘውና ሁሉንም የኢትዮፒክ ምልክቶችን ያካተተውን እባክዎን ዳውንሎድ (download) ያድርጉ።
+</p>
+
+
+<p>
+<strong>ልዩ ማስታወሻዎች፦</strong>
+</p>
+<p>
+<ul>
+  <li>ትዕምርተ ጭረት (Apostrophe)፣ ' ፣ ተከታዩን ሳድስ ፊደልን (6<sup>ኛው</sup> ቅርፅ) የሚያቋርጥ ነው። ለምሳሌ፦ <kbd>gebr'iel</kbd> ሲፃፍ «ገብርኤል» ይሆናል፤  <kbd>gebriel</kbd> የሚለው «ገብሬል» እንዳይሆን ያደርገዋል።</p>
+</ul>
+</p>
+
+<div style="margin-left: 1em;">
+<table class="kb">
+  <tr>
+    <th>&nbsp;</th><td>ቤተሰብ</td><td>ካዕብ</td><td>ሣልስ</td><td>ግዕዝ</td><td>ራብዕ</td><td>ኃምስ</td><td>ሳድስ</td><td>ሳብዕ</td><td>ዘመደ፡ግዕዝ</td><td>ዘመደ፡ካዕብ</td><td>ዘመደ፡ሣልስ</td><td>ዘመደ፡ራብዕ</td><td>ዘመደ፡ኃምስ</td><th  style="border-bottom-color: #ffffff;">&nbsp;</th>
+  </tr>
+  <tr>
+    <th>ቤተሰብ</th><th>Key</th><th>+[eE]</th><th>+[uU]</th><th>+[iI]</th><th>+[aA]</th><th>+[iI][eE]</th><th>&nbsp;</th><th>+[oO]</th><th>+[uU][eE]</th><th>+[uU][uU]</th><th>+[uU][iI]</th><th>+[uU][aA]</th><th>+[uU][iI][eE]</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
+  </tr>
+  <tr>
+    <th>ሆይ</th><th>h</th><td>ሀ</td><td>ሁ</td><td>ሂ</td><td>ሃ</td><td>ሄ</td><td>ህ</td><td>ሆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>h</th>
+  </tr>
+  <tr>
+    <th>ላዊ</th><th>[lL]</th><td>ለ</td><td>ሉ</td><td>ሊ</td><td>ላ</td><td>ሌ</td><td>ል</td><td>ሎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሏ</td><td>&nbsp;</td><th>l</th>
+  </tr>
+  <tr>
+    <th>ሐውት</th><th>H</th><td>ሐ</td><td>ሑ</td><td>ሒ</td><td>ሓ</td><td>ሔ</td><td>ሕ</td><td>ሖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሗ</td><td>&nbsp;</td><th>ħ</th>
+  </tr>
+  <tr>
+    <th>ማይ</th><th>[mM]</th><td>መ</td><td>ሙ</td><td>ሚ</td><td>ማ</td><td>ሜ</td><td>ም</td><td>ሞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሟ</td><td>&nbsp;</td><th>m</th>
+  </tr>
+  <tr>
+    <th>ሠውት</th><th>ss</th><td>ሠ</td><td>ሡ</td><td>ሢ</td><td>ሣ</td><td>ሤ</td><td>ሥ</td><td>ሦ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሧ</td><td>&nbsp;</td><th>s</th>
+  </tr>
+  <tr>
+    <th>ርእስ</th><th>[rR]</th><td>ረ</td><td>ሩ</td><td>ሪ</td><td>ራ</td><td>ሬ</td><td>ር</td><td>ሮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሯ</td><td>&nbsp;</td><th>r</th>
+  </tr>
+  <tr>
+    <th>ሳት</th><th>s</th><td>ሰ</td><td>ሱ</td><td>ሲ</td><td>ሳ</td><td>ሴ</td><td>ስ</td><td>ሶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሷ</td><td>&nbsp;</td><th>s</th>
+  </tr>
+  <tr>
+    <th>ሻ-ሳት</th><th>[xX]</th><td>ሸ</td><td>ሹ</td><td>ሺ</td><td>ሻ</td><td>ሼ</td><td>ሽ</td><td>ሾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሿ</td><td>&nbsp;</td><th>ʃ</th>
+  </tr>
+  <tr>
+    <th>ቃፍ</th><th>[qQ]</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>ቍ</td><td>ቊ</td><td>ቋ</td><td>ቌ</td><th>kʼ</th>
+  </tr>
+  <tr>
+    <th>ቤት</th><th>[bB]</th><td>በ</td><td>ቡ</td><td>ቢ</td><td>ባ</td><td>ቤ</td><td>ብ</td><td>ቦ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ቧ</td><td>&nbsp;</td><th>b</th>
+  </tr>
+  <tr>
+    <th>ቨ-ቤት</th><th>[vV]</th><td>ቨ</td><td>ቩ</td><td>ቪ</td><td>ቫ</td><td>ቬ</td><td>ቭ</td><td>ቮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ቯ</td><td>&nbsp;</td><th>v</th>
+  </tr>
+  <tr>
+    <th>ታው</th><th>t</th><td>ተ</td><td>ቱ</td><td>ቲ</td><td>ታ</td><td>ቴ</td><td>ት</td><td>ቶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ቷ</td><td>&nbsp;</td><th>t</th>
+  </tr>
+  <tr>
+    <th>ቻ-ታው</th><th>c</th><td>ቸ</td><td>ቹ</td><td>ቺ</td><td>ቻ</td><td>ቼ</td><td>ች</td><td>ቾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ቿ</td><td>&nbsp;</td><th>ʧ</th>
+  </tr>
+  <tr>
+    <th>ኀርም</th><th>hh</th><td>ኀ</td><td>ኁ</td><td>ኂ</td><td>ኃ</td><td>ኄ</td><td>ኅ</td><td>ኆ</td><td>ኈ</td><td>ኍ</td><td>ኊ</td><td>ኋ</td><td>ኌ</td><th>h</th>
+  </tr>
+  <tr>
+    <th>ነሐስ</th><th>n</th><td>ነ</td><td>ኑ</td><td>ኒ</td><td>ና</td><td>ኔ</td><td>ን</td><td>ኖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ኗ</td><td>&nbsp;</td><th>n</th>
+  </tr>
+  <tr>
+    <th>ኘ-ነሐስ</th><th>N</th><td>ኘ</td><td>ኙ</td><td>ኚ</td><td>ኛ</td><td>ኜ</td><td>ኝ</td><td>ኞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ኟ</td><td>&nbsp;</td><th>ɲ</th>
+  </tr>
+  <tr>
+    <th>አልፍ</th><th>&nbsp;</th><td>አ<br/>a</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>aaaa</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
+  </tr>
+  <tr>
+    <th>ካፍ</th><th>k</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>ኵ</td><td>ኲ</td><td>ኳ</td><td>ኴ</td><th>k</th>
+  </tr>
+  <tr>
+    <th>ኻ-ካፍ</th><th>K</th><td>ኸ</td><td>ኹ</td><td>ኺ</td><td>ኻ</td><td>ኼ</td><td>ኽ</td><td>ኾ</td><td>ዀ</td><td>ዅ</td><td>ዂ</td><td>ዃ</td><td>ዄ</td><th>x</th>
+  </tr>
+  <tr>
+    <th>ወዌ</th><th>[wW]</th><td>ወ</td><td>ዉ</td><td>ዊ</td><td>ዋ</td><td>ዌ</td><td>ው</td><td>ዎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>w</th>
+  </tr>
+  <tr>
+    <th>ዐይን</th><th>&nbsp;</th><td>ዐ<br/>aaa</td><td>ዑ<br/>uu</td><td>ዒ<br/>ii</td><td>ዓ<br/>aa</td><td>ዔ<br/>iie</td><td>ዕ<br/>ee</td><td>ዖ<br/>oo</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʕ</th>
+  </tr>
+  <tr>
+    <th>ዘይ</th><th>z</th><td>ዘ</td><td>ዙ</td><td>ዚ</td><td>ዛ</td><td>ዜ</td><td>ዝ</td><td>ዞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ዟ</td><td>&nbsp;</td><th>z</th>
+  </tr>
+  <tr>
+    <th>ዠ-ዘይ</th><th>Z</th><td>ዠ</td><td>ዡ</td><td>ዢ</td><td>ዣ</td><td>ዤ</td><td>ዥ</td><td>ዦ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ዧ</td><td>&nbsp;</td><th>ʒ</th>
+  </tr>
+  <tr>
+    <th>የመን</th><th>[yY]</th><td>የ</td><td>ዩ</td><td>ዪ</td><td>ያ</td><td>ዬ</td><td>ይ</td><td>ዮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>y</th>
+  </tr>
+  <tr>
+    <th>ድንት</th><th>d</th><td>ደ</td><td>ዱ</td><td>ዲ</td><td>ዳ</td><td>ዴ</td><td>ድ</td><td>ዶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ዷ</td><td>&nbsp;</td><th>d</th>
+  </tr>
+  <tr>
+    <th>ጀ-ድንት</th><th>[jJ]</th><td>ጀ</td><td>ጁ</td><td>ጂ</td><td>ጃ</td><td>ጄ</td><td>ጅ</td><td>ጆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጇ</td><td>&nbsp;</td><th>ʤ</th>
+  </tr>
+  <tr>
+    <th>ገምል</th><th>[gG]</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>ጕ</td><td>ጒ</td><td>ጓ</td><td>ጔ</td><th>g</th>
+  </tr>
+  <tr>
+    <th>ጠይት</th><th>T</th><td>ጠ</td><td>ጡ</td><td>ጢ</td><td>ጣ</td><td>ጤ</td><td>ጥ</td><td>ጦ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጧ</td><td>&nbsp;</td><th>tʼ</th>
+  </tr>
+  <tr>
+    <th>ጨ-ጠይት</th><th>C</th><td>ጨ</td><td>ጩ</td><td>ጪ</td><td>ጫ</td><td>ጬ</td><td>ጭ</td><td>ጮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጯ</td><td>&nbsp;</td><th>ʧʼ</th>
+  </tr>
+  <tr>
+    <th>ጰይት</th><th>P</th><td>ጰ</td><td>ጱ</td><td>ጲ</td><td>ጳ</td><td>ጴ</td><td>ጵ</td><td>ጶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጷ</td><td>&nbsp;</td><th>pʼ</th>
+  </tr>
+  <tr>
+    <th>ጸደይ</th><th>S</th><td>ጸ</td><td>ጹ</td><td>ጺ</td><td>ጻ</td><td>ጼ</td><td>ጽ</td><td>ጾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጿ</td><td>&nbsp;</td><th>sʼ</th>
+  </tr>
+  <tr>
+    <th>ፀጳ</th><th>SS</th><td>ፀ</td><td>ፁ</td><td>ፂ</td><td>ፃ</td><td>ፄ</td><td>ፅ</td><td>ፆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>sʼ</th>
+  </tr>
+  <tr>
+    <th>አፍ</th><th>[fF]</th><td>ፈ</td><td>ፉ</td><td>ፊ</td><td>ፋ</td><td>ፌ</td><td>ፍ</td><td>ፎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ፏ</td><td>&nbsp;</td><th>f</th>
+  </tr>
+  <tr>
+    <th>ፕሳ</th><th>p</th><td>ፐ</td><td>ፑ</td><td>ፒ</td><td>ፓ</td><td>ፔ</td><td>ፕ</td><td>ፖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ፗ</td><td>&nbsp;</td><th>p</th>
+  </tr>
+  <tr>
+    <th style="border-right-color: #ffffff;">&nbsp;</th><td style="background-color: #ffffff; border-left-color: #ffffff; border-bottom-color: #ffffff;">&nbsp;</td><td>+ə</td><td>+u</td><td>+i</td><td>+a</td><td>+e</td><td>ɨ/-</td><td>+o</td><td>+ʷə</td><td>+ʷu</td><td>+ʷi</td><td>+ʷa</td><td>+ʷe</td><th>IPA</th>
+  </tr>
+</table>
+</div>
+
+<h2><a id="punctuation-am" name="punctuation-am"></a>ሥርዓተ ነጥቦችን ታይፕ ማድረጊያ</h2>
+
+<div style="margin-left: 1em;">
+
+<h3>የኢትዮፒክ ሥርዓተ ነጥቦች</h3>
+<table class="punct" style="margin-top: 0;">
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">ታይፕ ማድረጊያ ቁልፎች</th>
+    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th><th>&lt;</th><th>&gt;</th><th>&lt;&lt;</th><th>&gt;&gt;</th>
+  </tr>
+  <tr>
+    <th style="text-align: right">ሥርዓተ ነጥብ</th>
+    <td>፡</td><td>።</td><td>፣</td><td>፥</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td><td>‹</td><td>›</td><td>«</td><td>»</td>
+  </tr>
+</table>
+
+<h3>የኪቦርድ ሥርዓተ ነጥቦች</h3>
+<p>እንደተለመደው አንድ ጊዜ ብቻ በመምታት ታይፕ ማድረግ ይቻላል። የኢትዮፒክ ምልክቶቹን ለማግኘት አንዳንዶቹ የስርዓተ ነጥቦቹን ቁልፍ ሁለት ወይም ከዚያ በላይ የምንፈልገውን ምልክት እስክናገኝ መምታት።</p>
+
+
+</div>
+
+<h2><a id="numerals-am" name="numerals-am"></a>ቁጥሮችን ታይፕ ማድረግ</h2>
+
+<div style="margin-left: 1em;">
+
+<h3>የኢትዮፒክ ቁጥሮች</h3>
+<table class="punct" style="margin-top: 0;">
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">ታይፕ ማድረጊያ ቁልፎች</th>
+    <th>#1</th><th>#2</th><th>#3</th><th>#4</th><th>#5</th><th>#6</th><th>#7</th><th>#8</th><th>#9</th>
+  </tr>
+  <tr>
+    <th style="text-align: right">ቁጥሮች</th>
+    <td>፩</td><td>፪</td><td>፫</td><td>፬</td><td>፭</td><td>፮</td><td>፯</td><td>፰</td><td>፱</td>
+  </tr>
+  <tr><td colspan="10" style="border-color: #ffffff;"/></tr>
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">ታይፕ ማድረጊያ ቁልፎች</th>
+    <th>#10</th><th>#20</th><th>#30</th><th>#40</th><th>#50</th><th>#60</th><th>#70</th><th>#80</th><th>#90</th>
+  </tr>
+  <tr>
+    <th style="text-align: right">ቁጥሮች</th>
+    <td>፲</td><td>፳</td><td>፴</td><td>፵</td><td>፶</td><td>፷</td><td>፸</td><td>፹</td><td>፺</td>
+  </tr>
+  <tr><td colspan="10" style="border-color: #ffffff;"/></tr>
+  <tr>
+    <th style="background-color: #e0dacf; border: thin solid #666;">ታይፕ ማድረጊያ ቁልፎች</th>
+    <th>#100</th><th>#1000</th><th>#10000</th>
+  </tr>
+  <tr>
+    <th style="text-align: right">ቁጥሮች</th>
+    <td>፻</td><td>፲፻</td><td>፼</td>
+  </tr>
+</table>
+
+<p>የአኅዝ ጥንቅሩ ዜሮ (0) ቁጥሮችን በመጨመር እስክ  ፼፼ (100,000,000) ይቀጥላል።</p>
+
+</div>
+
+
+<h2><a id="typing-practice-am" name="typing-practice-am"></a>የታይፕ መለማመጃ</h2>
+
+<div style="margin-left: 1em;">
+<p>የአማርኛ ታይፕ መለማመጃ ሰነድ ከዚህ በታች በሚገኘው ሊንክ አማካኝነት ዳውንሎድ ማድረግ ይቻላል፦</p>
+<dir><a href="http://keyboards.ethiopic.org/docs/AmharicTypingPractice.docx">http://keyboards.ethiopic.org/docs/AmharicTypingPractice.docx</a>
+</dir>
+</div>
+
+<p><br/></p>
+<hr/>
+
+<h2>ፈቃድ</h2>
+
+<p>ይህ የታይፕ ሰሌዳ የቅጂ መብት (copyright) አለው © ግዕዝ ፍሮንቲር ድርጅት፣ 1997-2019. በMIT ነፃ ሶፍትዌር ፈቃድ ስር ይከፋፈላል፦</p>
+
+<div style="margin-left: 1em;">
+  <table>
+    <tr>
+      <td style="border: thin solid #666; text-align: justify; padding-left: 5px; padding-right: 5px;" width="700px">
+        <h5>The MIT License (MIT)</h5>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+     </div>
+  </li>
+
+</ul>
 
 </body>
 </html>

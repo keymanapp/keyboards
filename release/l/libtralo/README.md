@@ -4,7 +4,7 @@ LIBTRALO Keyboard
 Copyright (C) 2008-2018 SIL International
 Copyright (C) 1999-2003 Mark A. Konrad
 
-Version 1.6
+Version 1.6.1
 
 __DESCRIPTION__
 

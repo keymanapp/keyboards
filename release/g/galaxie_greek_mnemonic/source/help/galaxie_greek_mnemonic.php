@@ -2212,12 +2212,15 @@ END;
                 effort has assisted greatly in enabling people to communicate in Koine Greek.
             </p>
 
-            <p>
-                Version 3.1 released 24 May 2012. Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). Amended Hebrew help.<br/> 
-                Version 3.0 released 23 August 2011. Optimised for multiple European hardware layouts.<br/>           Version 2.1 released 15 December 2009. Full Greek documentation.<br /> 
-                Version 2.02 released 11 April 2008. Fixed Greek: rho + dasia and rho + psili with [ and ] keys.<br /> 
-                Version 2.0 for Keyman Desktop 7.0. Released 24 October 2007
-            </p>
+                <p>
+                	Version 3.2.1 released 14 Sept 2018. Add support for Linux.<br/>
+                	Version 3.2 released 10 Aug 2018. Moved source to GitHub.<br/>
+                	Version 3.1 released 24 May 2012. Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). Amended Hebrew help.<br/>
+                	Version 3.0 released 23 August 2011. Optimised for multiple European hardware layouts.<br/>
+                	Version 2.1 released 15 December 2009. Full Greek documentation.<br/> 
+                	Version 2.02 released 11 April 2008. Fixed Greek: rho + dasia and rho + psili with [ and ] keys.<br/>
+                	Version 2.0 for Keyman Desktop 7.0. Released 24 October 2007
+                </p>
 
         </div>
         <div id="Copyright" class='break'>
@@ -2231,3 +2234,27 @@ END;
         </div>
 
     </div>
+    <script type='text/javascript'>
+        <!--
+
+        $ = function(n, e) {
+            return (e ? e : document).getElementById(n);
+        }
+
+        window.onload = function() {
+                e = $('osk_tabs');
+                e2 = $('osk_tabsheets');
+                var ch = [$('osk_us_tab'), $('osk_uk_tab'), $('osk_fr_tab'), $('osk_de_tab')];
+                var ch2 = [$('osk_us_tabsheet'), $('osk_uk_tabsheet'), $('osk_fr_tabsheet'), $('osk_de_tabsheet')];
+                for (var i = 0; i < ch.length; i++)
+                    ch[i].onclick = (function(i) {
+                        return function(e) {
+                            for (var j = 0; j < ch.length; j++) {
+                                ch[j].className = "osk_tab" + (i == j ? "_selected" : "");
+                                ch2[j].className = "osk_tabsheet" + (i == j ? "_selected" : "");
+                            }
+                        }
+                    })(i);
+            }
+            -->
+    </script>

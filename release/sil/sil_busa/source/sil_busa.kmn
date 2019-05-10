@@ -1,0 +1,69 @@
+﻿c Maps from busa2 designed by D Kanjahn
+store(&VERSION) '9.0'
+store(&NAME) 'Busa'
+store(&COPYRIGHT) '© 2008-2019 SIL International'
+store(&BITMAP) 'sil_busa.ico'
+store(&VISUALKEYBOARD) 'sil_busa.kvks'
+store(&KEYBOARDVERSION) '1.4'
+c store(&ethnologuecode) 'bqp bqc bus bba'
+store(&TARGETS) 'windows macosx linux web'
+
+begin Unicode > use(main)
+
+store(highdia) U+0302    U+0300    U+0301    U+0304        U+0302          U+0300          U+0301          U+0304   c  ^ ` ' -
+store(highdiaK)[ALT K_G] [ALT K_H] [ALT K_J] [ALT K_SLASH] [ALT SHIFT K_G] [ALT SHIFT K_H] [ALT SHIFT K_J] [ALT SHIFT K_SLASH]
+
+store(tilde)   U+0303    U+0303              c ~
+store(tildeK)  [ALT K_K] [ALT SHIFT K_K]
+
+store(dia) outs(highdia) outs(tilde)
+store(multidiaK) [ALT K_COLON] [ALT K_QUOTE] [ALT K_L]
+
+store(vowel)  'aeiouɛɔnAEIOUƐƆN'
+store(vowelK) 'aeiou[]nAEIOU{}N'   
+store(vowel_aiu_lo) 'aiuɛɔn'
+store(vowel_aiu_up) 'AIUƐƆN'
+store(vowel_aiu) outs(vowel_aiu_lo) outs(vowel_aiu_up)
+
+store(other)  'ɡɑŋ' U+0323
+store(otherK) '#@^' [ALT K_2]        
+
+store(override) '@#Ŋ^çÇ[]{}'
+store(overrideK) [ALT SHIFT K_2] [ALT SHIFT K_3] [ALT K_6] [ALT SHIFT K_6] [ALT K_C][ALT SHIFT K_C]\
+                  [ALT K_LBRKT] [ALT K_RBRKT] [ALT SHIFT K_LBRKT] [ALT SHIFT K_RBRKT] 
+
+
+group(main) using keys
+
+c 
+c Block invalid combinations - highdia + highdia, tilde+tilde,  tilde+highdia+tilde, dia+any multi-dia combination
+c 
+
+any(highdia) + any(highdiaK) > context beep
+any(tilde) + any(tildeK) > context beep
+any(tilde) any(highdia) + any(tildeK) > context beep
+any(dia) + any(multidiaK) > context beep
+c allow highdia + tildeK -> reorder
+             
++ any(vowelK) > index(vowel, 1)
++ any(otherK) > index(other, 1)
+
+c Vowel combinations
+
+any(vowel) + any(highdiaK) > context index(highdia, 2)
+any(vowel_aiu) + any(tildeK) > context index(tilde, 2)
+any(vowel_aiu_lo) any(highdia) + any(tildeK) > context(1) index(tilde, 3) index(highdia, 2)  c reorder
+any(vowel_aiu_lo) any(tilde) + any(highdiaK) > context index(highdia, 3)
+
+any(vowel_aiu_lo) + [ALT K_QUOTE] > context U+0303 U+0304
+any(vowel_aiu_lo) + [ALT SHIFT K_QUOTE] > context U+0303 U+0304
+any(vowel_aiu_lo) + [ALT K_COLON] > context U+0303 U+0301        
+any(vowel_aiu_lo) + [ALT SHIFT K_COLON] > context U+0303 U+0301
+any(vowel_aiu_lo) + [ALT K_L] > context U+0303 U+0300        
+any(vowel_aiu_lo) + [ALT SHIFT K_L] > context U+0303 U+0300
+
+                                        
+any(vowel_aiu_lo) any(tilde) any(highdia) + [K_BKSP] > nul
+any(vowel) any(dia) + [K_BKSP] > nul
+
++ any(overrideK) > index(override, 1)    

@@ -2202,6 +2202,30 @@ END;
 
 </div>
 
-
+<script type='text/javascript'><!--
+ 
+ $ = function(n,e)
+ {
+   return (e ? e : document).getElementById(n);
+ }
+ 
+ window.onload = function()
+ {
+  e = $('osk_tabs');
+  e2 = $('osk_tabsheets');
+  var ch = [$('osk_us_tab'), $('osk_uk_tab'), $('osk_fr_tab'), $('osk_de_tab')];
+  var ch2 = [$('osk_us_tabsheet'), $('osk_uk_tabsheet'), $('osk_fr_tabsheet'), $('osk_de_tabsheet')];
+  for(var i = 0; i < ch.length; i++) 
+	  ch[i].onclick = (function(i) { return function(e) 
+	  { 
+		for(var j = 0; j < ch.length; j++)
+		{
+		  ch[j].className = "osk_tab" + (i == j ? "_selected" : "");
+		  ch2[j].className = "osk_tabsheet" + (i == j ? "_selected" : "");
+		}
+	  }
+	})(i); 
+}
+   --></script>
 
 

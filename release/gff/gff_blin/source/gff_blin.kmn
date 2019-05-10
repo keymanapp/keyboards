@@ -4,7 +4,7 @@ c The Ge'ez Frontier Foundation's mnemonic input method for Blin script under Er
 c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_blin/1.1/gff_blin.php
+c Documentation :  https://help.keyman.com/keyboard/gff_blin/1.2/gff_blin.php
 c Source        :  https://github.com/keymanapp/keyboards/gff_blin
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
@@ -13,15 +13,15 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '9.0'
-  store(&KeyboardVersion) '1.1'
+store(&KEYBOARDVERSION) '1.3'
   store(&Name) 'ብሊን (Blin)'    
   store(&EthnologueCode) 'byn'
-  store(&Copyright) '© 2009-2017 Ge' U+0027 'ez Frontier Foundation'
+store(&COPYRIGHT) '© 2009-2019 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Blin language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_B]'
 store(&BITMAP) 'gff_blin.ico'
-store(&VISUALKEYBOARD) 'gff_blin.kvk'
+store(&VISUALKEYBOARD) 'gff_blin.kvks'
 c 
 c =====================End Identity Section=====================================================
 
@@ -32,40 +32,40 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(gIz)   'ሀለሐመረሰሸቀቐበቨተቸነኘከኸወዐዘዠየደጀገጘጠጨጰጸፈፐ'
-  store(kaIb)  'ሁሉሑሙሩሱሹቁቑቡቩቱቹኑኙኩኹዉዑዙዡዩዱጁጉጙጡጩጱጹፉፑ'
-  store(sals)  'ሂሊሒሚሪሲሺቂቒቢቪቲቺኒኚኪኺዊዒዚዢዪዲጂጊጚጢጪጲጺፊፒ'
-  store(rabI)  'ሃላሓማራሳሻቃቓባቫታቻናኛካኻዋዓዛዣያዳጃጋጛጣጫጳጻፋፓ'
-  store(hams)  'ሄሌሔሜሬሴሼቄቔቤቬቴቼኔኜኬኼዌዔዜዤዬዴጄጌጜጤጬጴጼፌፔ'
-  store(sads)  'ህልሕምርስሽቅቕብቭትችንኝክኽውዐዝዥይድጅግጝጥጭጵጽፍፕ'
-  store(sabI)  'ሆሎሖሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዖዞዦዮዶጆጎጞጦጮጶጾፎፖ'
+  store(ግዕዝ)   'ሀለሐመረሰሸቀቐበቨተቸነኘከኸወዐዘዠየደጀገጘጠጨጰጸፈፐ'
+  store(ካዕብ)  'ሁሉሑሙሩሱሹቁቑቡቩቱቹኑኙኩኹዉዑዙዡዩዱጁጉጙጡጩጱጹፉፑ'
+  store(ሣልስ)  'ሂሊሒሚሪሲሺቂቒቢቪቲቺኒኚኪኺዊዒዚዢዪዲጂጊጚጢጪጲጺፊፒ'
+  store(ራብዕ)  'ሃላሓማራሳሻቃቓባቫታቻናኛካኻዋዓዛዣያዳጃጋጛጣጫጳጻፋፓ'
+  store(ኃምስ)  'ሄሌሔሜሬሴሼቄቔቤቬቴቼኔኜኬኼዌዔዜዤዬዴጄጌጜጤጬጴጼፌፔ'
+  store(ሳድስ)  'ህልሕምርስሽቅቕብቭትችንኝክኽውዐዝዥይድጅግጝጥጭጵጽፍፕ'
+  store(ሳብዕ)  'ሆሎሖሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዖዞዦዮዶጆጎጞጦጮጶጾፎፖ'
 
 c QWERTY keymappings
   store(keys)  'hlHmrsxqQbvtcnNkKw_zZydjgGTCPSfp'
 
 c the following is Blin specific
-  store(extraKeys) 'LMRXBVWYDJF'
-  store(extraSads) 'ልምርሽብቭውይድጅፍ'
+  store(ሌሎች፡keys) 'LMRXBVWYDJF'
+  store(ሌሎች፡ሳድስ)  'ልምርሽብቭውይድጅፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)  'aAuUiIeEoO'
-  store(loneVowelEthio) 'ኣዐኡኡኢኢእእኦኦ'
+  store(loneVowelKeys)   'aAuUiIeEoO'
+  store(loneVowelEthio)  'ኣዐኡኡኢኢእእኦኦ'
   store(composableVowel) 'አኡኢእኦዐዒዓዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-  store(zemedeKeys)      'ልሕምርስሽብቭትችንኝዝዥድጅጥጭጵጽፍፕ'
-  store(zemedeKeysKaIb)  'ሉሑሙሩሱሹቡቩቱቹኑኙዙዡዱጁጡጩጱጹፉፑ'
-  store(zemedeEthio)     'ሏሗሟሯሷሿቧቯቷቿኗኟዟዧዷጇጧጯጷጿፏፗ'
+  store(ሳድስ፡መደበኛ)     'ልሕምርስሽብቭትችንኝዝዥድጅጥጭጵጽፍፕ'
+  store(ካዕብ፡መደበኛ)     'ሉሑሙሩሱሹቡቩቱቹኑኙዙዡዱጁጡጩጱጹፉፑ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ሏሗሟሯሷሿቧቯቷቿኗኟዟዧዷጇጧጯጷጿፏፗ'
 
 c 'hhkqQgG'
-  store(zemedeKeysKaIbExtended)  'ሁኁኩኹቁቑጉጙ'
-  store(zemedeWe)  'ኈኈኰዀቈቘጐⶓ'
-  store(zemedeWu)  'ኍኍኵዅቍቝጕⶖ'
-  store(zemedeWi)  'ኊኊኲዂቊቚጒⶔ'
-  store(zemedeWa)  'ኋኋኳዃቋቛጓጟ'
-  store(zemedeWEE) 'ኌኌኴዄቌቜጔⶕ'
+  store(ካዕብ፡ልዩ)  'ሁኁኩኹቁቑጉጙ'
+  store(ዘመደ፡ግዕዝ) 'ኈኈኰዀቈቘጐⶓ'
+  store(ዘመደ፡ካዕብ) 'ኍኍኵዅቍቝጕⶖ'
+  store(ዘመደ፡ሣልስ) 'ኊኊኲዂቊቚጒⶔ'
+  store(ዘመደ፡ራብዕ) 'ኋኋኳዃቋቛጓጟ'
+  store(ዘመደ፡ኃምስ) 'ኌኌኴዄቌቜጔⶕ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -73,25 +73,26 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(ones)     '፪፫፬፭፮፯፰፱'
   store(tens)     '፳፴፵፶፷፸፹፺'
   store(arabNumbers) '123456789'
-  store(ethNumbers) '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
   store(ColonOrComma) ':,'
   store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(gIz-key)  'eEäÄéÉèÈêÊëË'
-  store(kaIb-key) 'uUùÙúÚûÛüÜ'
-  store(sals-key) 'iIìÌíÍîÎïÏ'
-  store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
-  store(hams-key) 'æÆ'
-  store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+  store(ግዕዝ-key) 'eEäÄéÉèÈêÊëË'
+  store(ካዕብ-key) 'uUùÙúÚûÛüÜ'
+  store(ሣልስ-key) 'iIìÌíÍîÎïÏ'
+  store(ራብዕ-key) 'aAàÀáÁâÂãÃåÅ'
+  store(ኃምስ-key) 'æÆ'
+  store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
 
 c =====================Begin Functional Section=================================================
 c 
+store(&TARGETS) 'windows macosx linux'
   begin Unicode > use(main)
   group(main) using keys
 
@@ -102,8 +103,12 @@ c
   + '_' > U+135F c gemination
   U+135F + '_' > '_'
 
-  + any(extraKeys) > index(extraSads,1)
-  + any(keys)     > index(sads,1)
+c The following two rules had to be added here (not later) to fix the deadkey issue
+  deadkey(1) + "'" > "'"
+  deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
+  
+  + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
+  + any(keys)     > index(ሳድስ,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -115,54 +120,54 @@ c
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
 
-  'አ' + any(gIz-key)  > 'እ'
-  'አ' + any(kaIb-key) > 'ኡ'
-  'አ' + any(sals-key) > 'ኢ'
-c 'አ' + any(rabI-key) > 'ኣ'
-  'ኢ' + any(gIz-key)  > 'ኤ'
-  'አ' + any(sabI-key) > 'ኦ'
+  'አ' + any(ግዕዝ-key) > 'እ'
+  'አ' + any(ካዕብ-key) > 'ኡ'
+  'አ' + any(ሣልስ-key) > 'ኢ'
+c 'አ' + any(ራብዕ-key) > 'ኣ'
+  'ኢ' + any(ግዕዝ-key) > 'ኤ'
+  'አ' + any(ሳብዕ-key) > 'ኦ'
 
 c Aynu-A Vowels as Regular Sylalbles
-  'እ' + any(gIz-key)  > 'ዕ'
+  'እ' + any(ግዕዝ-key) > 'ዕ'
 
 c Aynu-A Vowels as Vowels
-  'ኡ' + any(kaIb-key) > 'ዑ'
-  'ኢ' + any(sals-key) > 'ዒ'
-  'ኤ' + any(gIz-key)  > 'ዔ'
-  'ኦ' + any(sabI-key) > 'ዖ'
+  'ኡ' + any(ካዕብ-key) > 'ዑ'
+  'ኢ' + any(ሣልስ-key) > 'ዒ'
+  'ኤ' + any(ግዕዝ-key) > 'ዔ'
+  'ኦ' + any(ሳብዕ-key) > 'ዖ'
 
 c Completing the Blin-ER "a" chain:
 c Blin: ኣ -> ዓ -> ዐ -> አ
-  'ኣ' + any(rabI-key) > 'ዓ'
-  'ዓ' + any(rabI-key) > 'ዐ' deadkey(1)
-  'ዐ' deadkey(1) + any(rabI-key) > 'አ'
+  'ኣ' + any(ራብዕ-key) > 'ዓ'
+  'ዓ' + any(ራብዕ-key) > 'ዐ' deadkey(1)
+  'ዐ' deadkey(1) + any(ራብዕ-key) > 'አ'
 
-  'ዐ' + any(gIz-key)  > 'ዕ'
-  'ዐ' + any(kaIb-key) > 'ዑ'
-  'ዐ' + any(sals-key) > 'ዒ'
-  'ዐ' + any(rabI-key) > 'ዓ'
-  'ዐ' + any(sabI-key) > 'ዖ'
+  'ዐ' + any(ግዕዝ-key) > 'ዕ'
+  'ዐ' + any(ካዕብ-key) > 'ዑ'
+  'ዐ' + any(ሣልስ-key) > 'ዒ'
+  'ዐ' + any(ራብዕ-key) > 'ዓ'
+  'ዐ' + any(ሳብዕ-key) > 'ዖ'
 
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
-  any(sads) + any(gIz-key)  > index(gIz,1)
-  any(sads) + any(kaIb-key) > index(kaIb,1)
-  any(sads) + any(sals-key) > index(sals,1)
-  any(sads) + any(rabI-key) > index(rabI,1)
-  any(sads) + any(hams-key) > index(hams,1)
-  any(sals) + any(gIz-key)  > index(hams,1)  
-  any(sads) + any(sabI-key) > index(sabI,1)
+  any(ሳድስ) + any(ግዕዝ-key) > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ-key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ-key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ-key) > index(ራብዕ,1)
+  any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(zemedeKeysKaIb)         + any(rabI-key) > index(zemedeEthio,1)
-  any(zemedeKeysKaIbExtended) + any(gIz-key)  > index(zemedeWe,1)
-  any(zemedeKeysKaIbExtended) + any(kaIb-key) > index(zemedeWu,1)
-  any(zemedeKeysKaIbExtended) + any(sals-key) > index(zemedeWi,1)
-  any(zemedeKeysKaIbExtended) + any(rabI-key) > index(zemedeWa,1)
-  any(zemedeWi)               + any(gIz-key)  > index(zemedeWEE,1)
+  any(ካዕብ፡መደበኛ)             + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ካዕብ፡ልዩ) + any(ግዕዝ-key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡ልዩ) + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
+  any(ካዕብ፡ልዩ) + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
+  any(ካዕብ፡ልዩ) + any(ራብዕ-key) > index(ዘመደ፡ራብዕ,1)
+  any(ዘመደ፡ሣልስ)               + any(ግዕዝ-key)  > index(ዘመደ፡ኃምስ,1)
 
 c Alternative input to support confusion around the 'o' glypheme:
   'ኮ' + 'o' > 'ኰ'
@@ -177,8 +182,12 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(sads) + "'" > index(sads,1) deadkey(1)
-  deadkey(1) + "'" > "'"
+  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+  any(ሳድስ)      + [CTRL K_SPACE] > index(ሳድስ,1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             
+  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
 
 
       + ':' > '፡'
