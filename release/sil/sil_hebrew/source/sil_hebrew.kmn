@@ -62,17 +62,17 @@ c Modified by Lorna Priest per Christopher Samuel
 c Modified by Lorna Priest to add "patch" store and rule to work in FieldWorks
 
 store(&version) "9.0"
-store(&NAME) 'SIL Hebrew'
+store(&NAME) 'Hebrew (SIL)'
 store(&BITMAP) 'sil_hebrew.ico'
 c HOTKEY "^+M"
-store(&TARGETS) 'windows'
+store(&TARGETS) 'windows macosx linux'
 store(&LANGUAGE) 'x040D'
 store(&WINDOWSLANGUAGES) 'x040D'
 store(&COPYRIGHT) 'Copyright © 2003-2018 SIL International'
 store( &Message ) "http://scripts.sil.org/"
 store(&VISUALKEYBOARD) 'sil_hebrew.kvks'
 store(&ETHNOLOGUECODE) 'hbo'
-store(&KEYBOARDVERSION) '1.7'
+store(&KEYBOARDVERSION) '1.7.1'
 begin UNICODE > use(Main)
 
 

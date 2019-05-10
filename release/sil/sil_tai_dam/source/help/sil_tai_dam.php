@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:keys="http://www.tavultesoft.com/xml/keys" xmlns:oskexportdetails="http://www.tavultesoft.com/xml/oskexportdetails">
 <?php
-  $pagename = 'SIL Tai Dam Keyboard Help';
-  $pagetitle = 'SIL Tai Dam Keyboard Help';
+  $pagename = 'Tai Dam (SIL) Keyboard Help';
+  $pagetitle = 'Tai Dam (SIL) Keyboard Help';
   require_once('header.php');
 ?>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-16">
 <h2>Font</h2>
 
-<p>The SIL Tai Dam keyboard can be used with any font that supports the Tai Viet script. The Tai Heritage Pro font, which was used to create the keyboard layout shown below, is included for your convenience.</p>
+<p>The Tai Dam (SIL) keyboard can be used with any font that supports the Tai Viet script. The Tai Heritage Pro font, which was used to create the keyboard layout shown below, is included for your convenience.</p>
 
 <h2>Keyboard</h2>
 
-<p>The SIL Tai Dam keyboard has been optimized for typing the Tai Viet script as it is used for writing the Tai Dam language. It can also be used for typing the Tai Dón language, but the six aspirated consonants that are unique to Tai Dón require two keystrokes (as do four other consonants that are only used in loan words).</p>
+<p>The Tai Dam (SIL) keyboard has been optimized for typing the Tai Viet script as it is used for writing the Tai Dam language. It can also be used for typing the Tai Dón language, but the six aspirated consonants that are unique to Tai Dón require two keystrokes (as do four other consonants that are only used in loan words).</p>
 
 <p>The keyboard layout assigns each Tai Viet character to the key with the nearest equivalent letter on a US English keyboard. Low series consonants are assigned to unshifted keys, and high series consonants are assigned to the equivalent shifted key.</p>
 

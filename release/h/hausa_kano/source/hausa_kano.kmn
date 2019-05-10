@@ -1,16 +1,16 @@
 ﻿c This is the simplest keyboard that a user can input the Hausa Language based on the standard QWERTY (US) keyboard.
 store(&VERSION) '9.0'
-store(&COPYRIGHT) '© 2017 Hamza Sulayman'
-store(&WINDOWSLANGUAGES) 'x0468'
+store(&COPYRIGHT) '© 2017-2019 Hamza Sulayman'
+c store(&WINDOWSLANGUAGES) 'x0468'
 store(&BITMAP) 'hausa_kano.ico'
 store(&VISUALKEYBOARD) 'hausa_kano.kvks'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&MESSAGE) 'This is the simplest keyboard that a user can input the Hausa Language based on the standard QWERTY (US) keyboard.'
-store(&LANGUAGE) 'x0468'
+c store(&LANGUAGE) 'x0468'
 store(&NAME) 'Hausa Kano'
-store(&ETHNOLOGUECODE) 'hau'
+c store(&ETHNOLOGUECODE) 'hau'
 store(&TARGETS) 'any'
-store(&LAYOUTFILE) 'hausa_kano-layout.js'
+store(&LAYOUTFILE) 'hausa_kano.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys

@@ -1,6 +1,11 @@
 Tai Dam Lao (SIL) keyboard change history:
 =======================
 
+29-Apr-2019: Version 2.0.2
+             Fixed BCP47 language codes
+14-Sep-2018: Version 2.0.1
+             Added macos and linux as targets
+
 July 2018:   Version 2.0
              Renamed Tai Dam Lao (SIL) keyboard. 
              Added Lao numerals

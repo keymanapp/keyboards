@@ -1,11 +1,11 @@
 NTL OneKey keyboard
 ===================
 
-Copyright (C) 2015-2018 SIL International
+Copyright (C) 2015-2019 SIL International
 
-Version 1.002
+Version 1.003
 
-A Unicode keyboard for the New Tai Lue script (khb).
+A Unicode keyboard for the New Tai Lue script (khb-Talu).
 
 Supported Platforms
 -------------------

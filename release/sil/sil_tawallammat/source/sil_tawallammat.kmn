@@ -1,0 +1,154 @@
+﻿c Follows the Moroccan Tamazight Tifinagh keyboard specification plus additional keys needed for Tamajaq
+store(&VERSION) '10.0'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© 2017-2018 SIL International'
+store(&KEYBOARDVERSION) '1.1'
+store(&NAME) 'Tawallammat Tifinagh (SIL)'
+c store(&ETHNOLOGUECODE) 'ttq'
+store(&BITMAP) 'sil_tawallammat.ico'
+store(&VISUALKEYBOARD) 'sil_tawallammat.kvks'
+store(&LAYOUTFILE) 'sil_tawallammat.keyman-touch-layout'
+c store(&WINDOWSLANGUAGES) 'x085F'
+begin Unicode > use(main)
+
+
+group(main) using keys
+c Additional keys for experimental SIL vowels
+
++ [RALT K_T] > 'ⴰ̂'   	c Tifinagh SIL a
++ [RALT K_Y] > 'ⵢ̂'   	c Tifinagh SIL e
++ [RALT K_U] > 'ⵢ̣'   	c Tifinagh SIL i
++ [RALT K_G] > 'ⵧ̂'   c Tifinagh SIL o
++ [RALT K_H] > 'ⵓ̂'   	c Tifinagh SIL u
++ [RALT K_J] > 'ⴰ̆'   	c Tifinagh SIL schwa
+
+platform("touch") + [T_2D30_0302] > U+2D30 U+0302
+platform("touch") + [T_2D62_0302] > U+2D62 U+0302
+platform("touch") + [T_2D53_0302] > U+2D53 U+0302
+platform("touch") + [T_2D62_0323] > U+2D62 U+0323
+platform("touch") + [T_2D67_0302] > U+2D67 U+0302
+platform("touch") + [T_2D30_0306] > U+2D30 U+0306
+
+c Additional keys for new Unicode characters
+
++ [RALT K_I] > 'ⵦ'  	c U+2D66 TIFINAGH_LETTER_YE
++ [RALT K_O] > 'ⵧ'  	c U+2D67 TIFINAGH_LETTER_YO
+
+c Additional keys following Microsoft's Central Atlas Tamazight (Tifinagh Extended) keyboard layout
++ [K_2] > 'ⵒ'
++ [K_7] > 'ⵤ'
++ [K_9] > '—'
++ [K_0] > U+200C
++ [K_QUOTE] > 'ⵑ'
++ [SHIFT K_BKQUOTE] > U+200D
++ [K_BKQUOTE] > U+00B2
++ [SHIFT K_Q] > 'ⴶ'
++ [SHIFT K_E] > 'ⵗ'
++ [SHIFT K_Y] > 'ⵂ'
++ [SHIFT K_U] > 'ⵌ'
++ [SHIFT K_I] > 'ⵘ'
++ [SHIFT K_O] > 'ⵝ'
++ [SHIFT K_P] > 'ⵞ'
++ [SHIFT K_LBRKT] > 'ⵠ'
++ [SHIFT K_A] > 'ⵈ'
++ [SHIFT K_F] > 'ⴵ'
++ [SHIFT K_H] > 'ⵁ'
++ [SHIFT K_J] > 'ⵋ'
++ [SHIFT K_L] > 'ⴸ'
++ [SHIFT K_COLON] > 'ⴺ'
++ [SHIFT K_Z] > 'ⴾ'
++ [SHIFT K_X] > 'ⵆ'
++ [SHIFT K_C] > 'ⴿ'
++ [SHIFT K_V] > 'ⴴ'
++ [SHIFT K_B] > 'ⴲ'
++ [SHIFT K_N] > 'ⵐ'
++ [SHIFT K_SPACE] > ' '
+
++ [RALT K_7] > '⵿'
++ [RALT K_M] > '⵰'
+
+c Standard Moroccan Tamazight Tifinagh AZERTY keyboard specification below
++ [K_BKQUOTE] > '²'
++ [K_1] > '&'
++ [K_3] > '"'
++ [K_4] > U+0027
++ [K_5] > '('
++ [K_6] > '-'
++ [K_8] > '_'
++ [K_HYPHEN] > ')'
++ [K_EQUAL] > '='
++ [K_Q] > 'ⴰ'
++ [K_W] > 'ⵣ'
++ [K_E] > 'ⴻ'
++ [K_R] > 'ⵔ'
++ [K_T] > 'ⵜ'
++ [K_Y] > 'ⵢ'
++ [K_U] > 'ⵓ'
++ [K_I] > 'ⵉ'
++ [K_O] > 'ⵄ'
++ [K_P] > 'ⵃ'
++ [K_LBRKT] > 'ⵯ'
++ [K_RBRKT] > '$'
++ [K_BKSLASH] > '*'
++ [K_A] > 'ⵇ'
++ [K_S] > 'ⵙ'
++ [K_D] > 'ⴷ'
++ [K_F] > 'ⴼ'
++ [K_G] > 'ⴳ'
++ [K_H] > 'ⵀ'
++ [K_J] > 'ⵊ'
++ [K_K] > 'ⴽ'
++ [K_L] > 'ⵍ'
++ [K_COLON] > 'ⵎ'
++ [K_oE2] > '<'
++ [K_Z] > 'ⵡ'
++ [K_X] > 'ⵅ'
++ [K_C] > 'ⵛ'
++ [K_V] > 'ⵖ'
++ [K_B] > 'ⴱ'
++ [K_N] > 'ⵏ'
++ [K_M] > ','
++ [K_COMMA] > ';'
++ [K_PERIOD] > ':'
++ [K_SLASH] > '!'
++ [K_SPACE] > ' '
++ [SHIFT K_1] > '1'
++ [SHIFT K_2] > '2'
++ [SHIFT K_3] > '3'
++ [SHIFT K_4] > '4'
++ [SHIFT K_5] > '5'
++ [SHIFT K_6] > '6'
++ [SHIFT K_7] > '7'
++ [SHIFT K_8] > '8'
++ [SHIFT K_9] > '9'
++ [SHIFT K_0] > '0'
++ [SHIFT K_HYPHEN] > '°'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_W] > 'ⵥ' 
++ [SHIFT K_R] > 'ⵕ'
++ [SHIFT K_T] > 'ⵟ'
++ [SHIFT K_RBRKT] > '£'
++ [SHIFT K_BKSLASH] > 'µ'
++ [SHIFT K_S] > 'ⵚ'
++ [SHIFT K_D] > 'ⴹ'
++ [SHIFT K_G] > 'ⴳⵯ'
++ [SHIFT K_K] > 'ⴽⵯ'
++ [SHIFT K_QUOTE] > '%'
++ [SHIFT K_oE2] > '>'
++ [SHIFT K_M] > '?'
++ [SHIFT K_COMMA] > '.'
++ [SHIFT K_PERIOD] > '/'
++ [SHIFT K_SLASH] > '§'
++ [RALT K_2] > '~'
++ [RALT K_3] > '#'
++ [RALT K_4] > '{'
++ [RALT K_5] > '['
++ [RALT K_6] > '|'
++ [RALT K_8] > '\'
++ [RALT K_9] > '^'
++ [RALT K_0] > '@'
++ [RALT K_HYPHEN] > ']'
++ [RALT K_EQUAL] > '}'
++ [RALT K_E] > '€'
++ [RALT K_RBRKT] > '¤'
++ [RALT K_SPACE] > ' '
