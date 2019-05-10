@@ -1,4 +1,4 @@
-#NLCI Devanagari WinScript Keyboard Change History
+#NLCI Malayalam WinScript Keyboard Change History
 
 ## 2.0 (2019)
 * A Complete rewrite of the keyboard by Binila Sanki (NLCI)
