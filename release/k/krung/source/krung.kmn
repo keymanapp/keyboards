@@ -18,6 +18,17 @@ c K_F is used in place of /a/ in the presyllable where CC- got mixed up with the
 + [K_F]   > U+200D
 
 
+c punctuations
+store(punct_key)    [K_PERIOD] [SHIFT K_COLON] [SHIFT K_COMMA] [K_2] [SHIFT K_PERIOD] [K_COMMA]
+store(punct_out)    U+17D4 U+17D6 U+003C U+002F U+003E U+0020
++ any(punct_key)    > index(punct_out,1)
+
+
+U+002F + [K_2]      > U+17D7    c ៗ
+U+003C + [SHIFT K_COMMA]    > U+00AB    c << > «
+U+003E + [SHIFT K_PERIOD]   > U+00BB    c >> > »
+
+
 c single orthographic consonant mappings
 store(sin_con1_key)     [K_B] [K_C] [K_D] [K_H] [K_J] [K_K] [K_Q] [K_S] [K_T]           c bcdhjklnqst      
 store(sin_con1_out)     U+1794 U+1785 U+178A U+17A0 U+1786 U+1780 U+17A2 U+179F U+178F  c បចដហឆកឡណអសត
@@ -59,17 +70,18 @@ store(sin_fin_con)      U+1785 U+1780 U+179B U+1798 U+1793 U+1784 U+1789 U+1794 
 
 
 c consonants to be modified by Triisap
-store(con_triisap)      U+1794 U+17A0 U+17A2 U+179E U+179F
+store(con_triisap)      U+17A0 U+17A2 U+179E U+179F
+store(con_bo)           U+1794
 store(some_sin_con1)    U+1785 U+178A U+1786 U+1780 U+1781 U+17A1 U+178E U+1795 U+178B U+178F U+1790    
 store(all_sin_con1)     outs(con_triisap) outs(some_sin_con1)
 
 
 c consonant to be modified by Muusikatoan
-store(con_muusikatoan)  U+179D U+1798 U+1784 U+1789 U+1794 U+179A U+179C U+1799
+store(con_muusikatoan)  U+179D U+1798 U+1784 U+1789 U+179A U+179C U+1799
 store(some_sin_con2)    U+1787 U+1788 U+1782 U+1783 U+179B U+1793 U+1796 U+1797 U+178D U+1791 U+1792 U+178C
 store(all_sin_con2)     outs(con_muusikatoan) outs(some_sin_con2)
 
-store(any_con)  outs(all_sin_con1) outs(all_sin_con2)
+store(any_con)  outs(all_sin_con1) outs(all_sin_con2) outs(con_bo)
 
 c +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++MAIN SYLLABLE ONLY+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -78,7 +90,9 @@ c single orthographic vowel mappings, series 1
 store(sin_vow1_key)     [K_O] [K_E] [K_X]       c keys: oex
 store(sin_vow1_out)     U+17BB U+17B9 U+17B7    c U+17BB​ឹ​ិ​ in series 1
 + any(sin_vow1_key)     > U+17A2 index(sin_vow1_out,1)
-any(all_sin_con1) + any(sin_vow1_key) > context(1) index(sin_vow1_out,2)
+any(all_sin_con1) + any(sin_vow1_key)   > context(1) index(sin_vow1_out,2)
+any(con_bo) + any(sin_vow1_key)         > context(1) index(sin_vow1_out,2)
+
 
 U+179D + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
 U+1798 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
@@ -129,11 +143,12 @@ U+1793 + [K_A]                              > U+178E U+17B6 U+1782 U+17CB       
 U+1794 U+17C9 U+17B6 U+1782 U+17CB + [K_A]  > context(1) context(2) context(3)  c paa
 U+17A1 U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c laa
 U+178E U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c naa
-U+1794 + [K_A]                              > context(1) U+17B6 U+1782 U+17CB
-any(con_muusikatoan) + [K_A]                > context U+17C9 U+17B6 U+1782 U+17CB c except for U+1794, see rule above here.
+any(con_muusikatoan) + [K_A]                > context U+17C9 U+17B6 U+1782 U+17CB
 any(con_muusikatoan) U+17C9 U+17B6 U+1782 U+17CB + [K_A]    > context(1) U+17C9 U+17B6
 any(all_sin_con1) + [K_A]                                   > context(1) U+17B6 U+1782 U+17CB   c any C1 a > any C1 ាគ់
 any(all_sin_con1) U+17B6 U+1782 U+17CB + [K_A]              > context(1) U+17B6                 c any C1 aa > any C1 ា 
+any(con_bo) + [K_A]                                   > context(1) U+17B6 U+1782 U+17CB   c ba > បាគ់
+any(con_bo) U+17B6 U+1782 U+17CB + [K_A]              > context(1) U+17B6                 c baa > បា 
 
 + [K_Z]                       > U+17A2 U+1782 U+17CB        c z > អគ់
 U+1796 + [K_Z]                > U+1794 U+17C9 U+1782 U+17CB c pz
@@ -145,6 +160,8 @@ U+17B6 U+1793 U+17CB + [K_Z]                > U+178E U+1782 U+17CB        c danz
 U+178E U+1782 U+17CB + [K_Z]        > context(1)            c nzz
 any(all_sin_con1) + [K_Z]                           > context(1) U+1782 U+17CB  c any C1 z > any C1 គ់
 any(all_sin_con1) U+1782 U+17CB + [K_Z]             > context(1)                c any C1 zz > any C1 
+any(con_bo) + [K_Z]                                 > context(1) U+1782 U+17CB  c bz > បគ់
+any(con_bo) U+1782 U+17CB + [K_Z]                   > context(1)                c bzz > ប 
 any(con_muusikatoan) + [K_Z]                        > context U+17C9 U+1782 U+17CB
 any(con_muusikatoan) U+17C9 U+1782 U+17CB + [K_Z]   > context(1) U+17C9 
 
@@ -160,6 +177,9 @@ c Presyllables: CV, CCV, h , q + nasal
 U+17B6 any(all_sin_con1) U+17CB + any(sin_vow1_key)     > context(2) index(sin_vow1_out,4)
 U+17B6 any(all_sin_con1) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
 U+17B6 any(all_sin_con1) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+U+17B6 any(con_bo) U+17CB + any(sin_vow1_key)           > context(2) index(sin_vow1_out,4)
+U+17B6 any(con_bo) U+17CB + [K_A]                       > context(2) U+17B6 U+1782 U+17CB
+U+17B6 any(con_bo) U+17CB + [K_Z]                       > context(2) U+1782 U+17CB
 
 
 U+17B6 any(all_sin_con2) U+17CB + any(sin_vow2_key)     > context(2) index(sin_vow2_out,4)
@@ -186,6 +206,7 @@ U+17B9 + [K_Q]                      > U+17B9                        c eq > ឹ
 U+17BB + [K_O]                      > U+17BC                        c oo > ូ 
 
 any(con_triisap) U+17B7 + [K_X]     > context(1) U+17CA U+17C2
+any(con_bo) U+17B7 + [K_X]          > context(1) U+17CA U+17C2      c bx > ប៊ិ
 
 
 c VV combo series 1 with final q
@@ -206,16 +227,9 @@ U+17BB + [K_E]          > U+17BD            c ue > ួ
 U+17BB + [K_U]          > U+17BC            c uu > ូ
 
 
-c VV combo series 2 with final q
-U+17C2 + [K_Q]          > context U+1782    c xxq > ែគ
-U+17B8 + [K_Q]          > context U+1782    c iiq > ីគ
-U+17BA + [K_Q]          > context U+1782    c vvq > ឺគ
-U+17BD + [K_Q]          > context U+1782    c ueq > ួគ
-U+17BC + [K_Q]          > context U+1782    c uuq > ូគ
-
-
-any(sin_con1_out) U+17CA U+17BB + [K_E]      > context(1) U+17BD     c buer > បួរ not ប៊ួរ 
-any(con_muusikatoan) U+17C9 U+17B7 + [K_X]   > context(1) U+17C2
+any(sin_con1_out) U+17CA U+17BB + [K_E]     > context(1) U+17BD     c buer > បួរ not ប៊ួរ 
+any(con_muusikatoan) U+17C9 U+17B7 + [K_X]  > context(1) U+17C2
+any(con_bo) U+17C9 U+17B7 + [K_X]           > U+1796 U+17C2         c pxx > ពែ
 
 
 c any vowel
@@ -224,11 +238,28 @@ store(any_vowel)    outs(sin_vow1_out) outs(sin_vow2_out) U+17C0 U+17BE U+17C3 U
 
 c change series of single consonants in harmony with the series of the vowel
 c first-series consonant + second-series vowel
-c U+178B + [K_X]       >  context(1) U+17B7 U+1782
-U+178B U+17B7 + [K_X]    > U+178D U+17C2 c qbxx
-U+1781 U+17B7 + [K_X]    > U+1783 U+17C2 c khxx
-U+1795 U+17B7 + [K_X]    > U+1797 U+17C2 c phxx
-U+1790 U+17B7 + [K_X]    > U+1792 U+17C2 c thxx
+U+1794 U+17B7 + [K_X]   > U+1796 U+17C2     c pxx > ពែ
+U+17A1 U+17B7 + [K_X]   > U+179B U+17C2     c lxx > លែ
+
+U+1785 U+17B7 + [K_X]   > U+1787 U+17C2     c cxx > ជែ
+U+178A U+17B7 + [K_X]   > U+178C U+17C2     c dxx > ឌែ
+U+1786 U+17B7 + [K_X]   > U+1788 U+17C2     c jxx > ឈែ
+U+1780 U+17B7 + [K_X]   > U+1782 U+17C2     c kxx > គែ
+U+178E U+17B7 + [K_X]   > U+1793 U+17C2     c nxx > នែ
+U+178F U+17B7 + [K_X]   > U+1791 U+17C2     c txx > ទែ
+U+178B U+17B7 + [K_X]   > U+178D U+17C2     c qdxx > ឍែ
+U+1781 U+17B7 + [K_X]   > U+1783 U+17C2     c khxx > ឃែ
+U+1795 U+17B7 + [K_X]   > U+1797 U+17C2     c phxx > ភែ
+U+1790 U+17B7 + [K_X]   > U+1792 U+17C2     c thxx > ធែ
+
+c VV combo series 2 with final q
+U+17C2 + [K_Q]          > context U+1782    c xxq > ែគ
+U+17B8 + [K_Q]          > context U+1782    c iiq > ីគ
+U+17BA + [K_Q]          > context U+1782    c vvq > ឺគ
+U+17BD + [K_Q]          > context U+1782    c ueq > ួគ
+U+17BC + [K_Q]          > context U+1782    c uuq > ូគ
+
+
 
 
 c second-series consonant + first-series vowel "ue" and "ie" > first-series consonant + the first-series vowel
@@ -265,6 +296,8 @@ c +++++++++++++++++++++++++++++++++++CC CLUSTER CHANGES SERIES IN HARMONY WITH T
 
 any(all_sin_con1) U+17D2 U+179A + [K_Z]                 > context(1) context(2) context(3) U+1782 U+17CB 
 any(all_sin_con1) U+17D2 U+179A U+1782 U+17CB + [K_Z]   > context(1) context(2) context(3)
+any(con_bo) U+17D2 U+179A + [K_Z]                       > context(1) context(2) context(3) U+1782 U+17CB 
+any(con_bo) U+17D2 U+179A U+1782 U+17CB + [K_Z]         > context(1) context(2) context(3)
 
 
 c bl
