@@ -223,6 +223,7 @@ U+17B9 + [K_V]          > U+17BA            c vv > ឺ
 U+17BA + [K_H]          > U+17BA U+17C7     c vvh > ឺះ
 U+17B8 + [K_H]          > U+17B8 U+17C7     c iih > ីះ
 U+17BB + [K_H]          > U+17BB U+17C7     c uh > ុះ
+U+17BD + [K_H]          > U+17BD U+17C7     c ueh > ួះ
 U+17BB + [K_E]          > U+17BD            c ue > ួ
 U+17BB + [K_U]          > U+17BC            c uu > ូ
 
@@ -455,6 +456,19 @@ U+178F U+17D2 U+179A + [K_Z]                > context(1) context(2) context(3) U
 U+178F U+17D2 U+179A U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3)      c trzz
 U+178F U+17D2 U+179A + [K_A]                > context(1) context(2) context(3) U+17B6 U+1782 U+17CB   c tra
 U+178F U+17D2 U+179A U+17B6 U+1782 U+17CB + [K_A]  > context(1) context(2) context(3) context(4)     c traa
+
+
+c qy
+U+17A2 U+17D2 U+1799 + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
+U+17A2 U+17D2 U+1799 + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
+c U+179F U+17D2 U+179A U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD   c qyue
+c U+179F U+17D2 U+179A U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0   c qyie
+U+17A2 U+17D2 U+1799 U+17B7 + [K_X]         > context(1) context(2) context(3) U+17CA U+17C2   c qyxx
+U+17A2 U+17D2 U+1799 + [K_Z]                > context(1) context(2) context(3) U+1782 U+17CB   c qyz
+U+17A2 U+17D2 U+1799 U+1782 U+17CB + [K_Z]   > context(1) context(2) context(3)    c qyzz
+
+
+c qyvv
 
 
 c any CC with K_A and K_A K_A
