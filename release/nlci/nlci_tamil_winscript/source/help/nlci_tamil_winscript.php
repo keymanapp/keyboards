@@ -87,8 +87,9 @@
     <p>This Keyboard mimic Tamil WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
     <h2>Keyboard layout</h2>
+	
 
-     <img src = "tamil keyboard.png"> </img>
+     <img src = "tamil keyboard.png" style="width:auto;"> </img>
     <h2>Input sequences</h2>
     
 	
