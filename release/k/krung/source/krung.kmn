@@ -159,7 +159,12 @@ U+17A1 U+1782 U+17CB + [K_Z]        > context(1)            c lzz
 U+17B6 U+1793 U+17CB + [K_Z]                > U+178E U+1782 U+17CB        c danz > ដណគ់
 U+178E U+1782 U+17CB + [K_Z]        > context(1)            c nzz
 any(all_sin_con1) + [K_Z]                           > context(1) U+1782 U+17CB  c any C1 z > any C1 គ់
-any(all_sin_con1) U+1782 U+17CB + [K_Z]             > context(1)                c any C1 zz > any C1 
+c any(all_sin_con1) U+1782 U+17CB + [K_Z]             > context(1)                c any C1 zz > any C1 
+
+c zzp > -ប
+U+1782 U+17CB + [K_Z]                   > dk(deadkey_z)
+dk(deadkey_z) + [K_P]                   > U+1794
+
 any(con_bo) + [K_Z]                                 > context(1) U+1782 U+17CB  c bz > បគ់
 any(con_bo) U+1782 U+17CB + [K_Z]                   > context(1)                c bzz > ប 
 any(con_muusikatoan) + [K_Z]                        > context U+17C9 U+1782 U+17CB
@@ -489,6 +494,7 @@ c ហ after គ in the final position
 any(any_con) + [K_H]            > U+17C7
 U+17B6 U+1782 U+17CB + [K_H]    > U+17C7            c ាហ់ > ះ in the final position
 U+1782 U+17CB + [K_H]           > U+17C4 U+17C7     c fix ហ់ 
+U+1793 U+17CB + [K_H]           > U+1789 context(2) c nh > ញ
 
 
 c ង in the final position
@@ -517,6 +523,11 @@ c any consonant + um > any consonant + ុំ
 any(any_con) U+17BB + [K_M]                 > context(1) context(2) U+17C6
 
 
+c final consonant with deadkey
+dk(deadkey_z) + any(sin_con1_key)         > index(sin_con1_out,2)
+dk(deadkey_z) + any(sin_con2_key)         > index(sin_con2_out,2)
+
+
 
 c +++++++++++++++++ NORMALIZATION +++++++++++++++++
 match > use(normalise)
@@ -533,7 +544,7 @@ U+1782 U+17CB any(sin_con1_out)     > context(3) context(2)
 U+1782 U+17CB any(sin_con2_out)     > context(3) context(2)
 
 
-U+1782 U+17CB U+179A                 > context(3) context(2)
+U+1782 U+17CB U+179A                > context(3) context(2)
 
 
 
