@@ -14,7 +14,8 @@
   <p>The layouts below output all the characters in this keyboard. However, there are alternate methods to access the same keys with other keystrokes. Some of these are described below.</p>
   <p>All "feet" are accessible through first typing ";" and then the letter for which the foot is desired.</p>
   <p>Typing "b" followed by "a" or "A" automatically produces the "បា" and "បៅ" respectively.</p>
-	<p>The symbols of the moon calendar (with 2 symbols on top of each other) can also be typed by typing the numbers plus type ">" two times. E.g. typing "0", "1", ">", and ">" will give the same symbol as Ctrl-Alt-`.</p>
+	<p>The symbols of the moon calendar (with 2 symbols on top of each other) can also be typed by typing the numbers plus type ">" two times.  E.g. typing "0", "8", ">", and ">" will give the same symbol as Ctrl-Alt-Shift-`. 
+  E.g. typing "1", "0", ">", and ">" will give the same symbol as Ctrl-Alt-Shift-0.</p>
   <p>Many of the alternate characters can be accessed by typing one or more commas after the initial keystroke.</p>
 	<p>To get arabic numbers type first the Khmer number, then a comma. A further comma will result in a lesser used type of number in Khmer, a third comma will revert the symbol to the Khmer number.</p>
   <p>Many of the symbols, vowels, independent vowels, and diacritics work this way. For example "\" produces "ឮ", "\," produces "ឭ", and "\,," produces "ឰ". </p>
