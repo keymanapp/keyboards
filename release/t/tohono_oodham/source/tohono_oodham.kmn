@@ -1,14 +1,23 @@
 ﻿store(&VERSION) '9.0'
-store(&COPYRIGHT) '© 2018 James Wyly'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© 2018-2019 James Wyly'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&ETHNOLOGUECODE) 'ood'
 store(&NAME) 'Tohono O' U+0027 'odham'
 store(&TARGETS) 'iphone ipad androidphone androidtablet mobile tablet'
-store(&LAYOUTFILE) 'tohono_oodham-layout.js'
+store(&LAYOUTFILE) 'tohono_oodham.keyman-touch-layout'
 begin Unicode > use(main)
                   
 group(main) using keys
-+ [T_i_bowl_top]   > U+012D 
++ [T_a_with_breve] > U+0103
++ [T_e_with_breve] > U+0115
++ [T_i_with_breve] > U+012D
++ [T_o_with_breve] > U+014F
++ [T_u_with_breve] > U+016D 
++ [SHIFT T_cap_A_with_breve] > U+0102
++ [SHIFT T_cap_E_with_breve] > U+0114
++ [SHIFT T_cap_I_with_breve] > U+012C
++ [SHIFT T_cap_O_with_breve] > U+014E
++ [SHIFT T_cap_U_with_breve] > U+016C 
 + [T_s_dot_bottom] > U+1E63
 + [T_d_dot_bottom] > U+1E0D
 + [T_n_tilde_top]  > U+00F1
