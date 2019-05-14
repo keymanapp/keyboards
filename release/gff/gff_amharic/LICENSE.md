@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 1997-2018 Ge'ez Frontier Foundation
+Copyright (c) 1997-2019 Ge'ez Frontier Foundation
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
