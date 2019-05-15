@@ -87,79 +87,103 @@ store(any_con)          outs(all_sin_con1) outs(all_sin_con2) outs(con_bo)
 store(any_con_but_bo)   outs(all_sin_con1) outs(all_sin_con2)
 
 
+c +++++++++++++++++ VE and EE Vowel Combination Disambiguation +++++++++++++++++ 
+U+1794 + [K_V]                      > context(1) U+17CA U+17B9 dk(deadkey_v)
+any(all_sin_con2) + [K_V]           > context(1) U+17B9 dk(deadkey_v)   c ឹ in series 2
+U+17B6 any(any_con) U+17CB + [K_V]  > context(2) U+17B9 dk(deadkey_v)   c in presyllable, Ca.mainSyllable
+any(con_triisap) + [K_V]            > context(1) U+17CA U+17B9 dk(deadkey_v)
+U+1785 + [K_V]                      > U+1787 U+17B9 dk(deadkey_v)
+U+178A + [K_V]                      > U+178C U+17B9 dk(deadkey_v)
+U+1786 + [K_V]                      > U+1788 U+17B9 dk(deadkey_v)
+U+1780 + [K_V]                      > U+1782 U+17B9 dk(deadkey_v)
+U+178E + [K_V]                      > U+1793 U+17B9 dk(deadkey_v)
+U+178F + [K_V]                      > U+1791 U+17B9 dk(deadkey_v)
+U+178B + [K_V]                      > U+178D U+17B9 dk(deadkey_v)
+U+1781 + [K_V]                      > U+1783 U+17B9 dk(deadkey_v)
+U+1795 + [K_V]                      > U+1797 U+17B9 dk(deadkey_v)
+U+1790 + [K_V]                      > U+1792 U+17B9 dk(deadkey_v)
+
+U+17A2 U+17CA U+17B9 dk(deadkey_v) + [K_E]      > context(1) U+17BF c ve > ឿ (non-series)
+U+17CA U+17B9 dk(deadkey_v) + [K_E]             > U+17BF    c ve > ឿ (non-series)
+
+
+any(all_sin_con1) + [K_E]           > context(1) U+17B9 dk(deadkey_e)   c ឹ in series 1
+U+17B6 any(any_con) U+17CB + [K_E]  > context(2) U+17B9 dk(deadkey_e) c in presyllable, Ca.mainSyllable
+any(con_muusikatoan) + [K_E]        > context(1) U+17C9 U+17B9 dk(deadkey_e)
+U+1796 + [K_E]                      > U+1794 U+17C9 U+17B9 dk(deadkey_e)
+U+179B + [K_E]                      > U+17A1 U+17B9 dk(deadkey_e)
+U+1793 + [K_E]                      > U+178E U+17B9 dk(deadkey_e)
+U+1794 + [K_E]                      > context(1) U+17B9 dk(deadkey_e)
+
+U+17B9 dk(deadkey_v) + [K_E]                    > U+17BF    c ve > ឿ (non-series)
+U+17B9 dk(deadkey_e) + [K_E]                    > U+17BE    c ee > ើ (series 1)
+
+
 c +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++MAIN SYLLABLE ONLY+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 c +++++++++++++++++++++++++++++++SINGLE CONSONANT CHANGES SERIES IN HARMONY WITH THE SERIES OF THE SINGLE VOWEL.+++++++++++++++++++++++++++++++
 c single orthographic vowel mappings, series 1
-store(sin_vow1_key)     [K_O] [K_E] [K_X]       c keys: oex
-store(sin_vow1_out)     U+17BB U+17B9 U+17B7    c U+17BB​ឹ​ិ​ in series 1
-+ any(sin_vow1_key)     > U+17A2 index(sin_vow1_out,1)
-any(all_sin_con1) + any(sin_vow1_key)   > context(1) index(sin_vow1_out,2)
-any(con_bo) + any(sin_vow1_key)         > context(1) index(sin_vow1_out,2)
+store(sin_vow1_key)     [K_O] [K_X]       c keys: ox
+store(sin_vow1_out)     U+17BB U+17B7    c ុ​ិ​ in series 1
++ any(sin_vow1_key)                         > U+17A2 index(sin_vow1_out,1)
++ [K_E]                                     > U+17A2 U+17B9 dk(deadkey_e)
+any(all_sin_con1) + any(sin_vow1_key)       > context(1) index(sin_vow1_out,2)
+any(con_bo) + any(sin_vow1_key)             > context(1) index(sin_vow1_out,2)
 
+any(con_muusikatoan) + any(sin_vow1_key)    > context(1) U+17C9 index(sin_vow1_out,2)
 
-U+179D + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
-U+1798 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
-U+179A + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
-U+179C + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
-U+1799 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
-U+1784 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
-U+1789 + any(sin_vow1_key)     > context(1) U+17C9 index(sin_vow1_out,2)
+U+1796 + any(sin_vow1_key)                  > U+1794 U+17C9 index(sin_vow1_out,2)
+U+179B + any(sin_vow1_key)                  > U+17A1 index(sin_vow1_out,2)
+U+1793 + any(sin_vow1_key)                  > U+178E index(sin_vow1_out,2)
 
-U+1796 + any(sin_vow1_key)     > U+1794 U+17C9 index(sin_vow1_out,2)
-U+179B + any(sin_vow1_key)     > U+17A1 index(sin_vow1_out,2)
-U+1793 + any(sin_vow1_key)     > U+178E index(sin_vow1_out,2)
-
-U+1794 + any(sin_vow1_key)     > context(1) index(sin_vow1_out,2)
+U+1794 + any(sin_vow1_key)                  > context(1) index(sin_vow1_out,2)
 
 
 c single orthographic vowel mappings, series 2
-store(sin_vow2_key)     [K_U] [K_V] [K_I]       c keys: uvi
-store(sin_vow2_out)     U+17BB U+17B9 U+17B7    c ុ​ឹ​ិ in series 2
-+ any(sin_vow2_key)     > U+17A2 U+17CA index(sin_vow2_out,1)
+store(sin_vow2_key)     [K_U] [K_I]       c keys: ui
+store(sin_vow2_out)     U+17BB U+17B7    c ុ​ឹិ in series 2
++ any(sin_vow2_key)                     > U+17A2 U+17CA index(sin_vow2_out,1)
++ [K_V]                                 > U+17A2 U+17CA U+17B9 dk(deadkey_v)
 c U+1794 is a special character which can be modified by either U+17CA or U+17C9, thus it occurs in both con_muusikatoan and con_triisap.
-U+1794 + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2) c this rule has to be above the rule below for 'but' to output ប៊ុត instead of បុត.
-any(all_sin_con2) + any(sin_vow2_key) > context(1) index(sin_vow2_out,2) c this rule has to be below the above.
+U+1794 + any(sin_vow2_key)              > context(1) U+17CA index(sin_vow2_out,2) c this rule has to be above the rule below for 'but' to output ប៊ុត instead of បុត.
+any(all_sin_con2) + any(sin_vow2_key)   > context(1) index(sin_vow2_out,2) c this rule has to be below the above.
 
-U+17A0 + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2)
-U+17A2 + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2)
-U+179F + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2)
-U+179E + any(sin_vow2_key) > context(1) U+17CA index(sin_vow2_out,2)
+any(con_triisap) + any(sin_vow2_key)    > context(1) U+17CA index(sin_vow2_out,2)
 
-U+1785 + any(sin_vow2_key) > U+1787 index(sin_vow2_out,2)
-U+178A + any(sin_vow2_key) > U+178C index(sin_vow2_out,2)
-U+1786 + any(sin_vow2_key) > U+1788 index(sin_vow2_out,2)
-U+1780 + any(sin_vow2_key) > U+1782 index(sin_vow2_out,2)
-U+178E + any(sin_vow2_key) > U+1793 index(sin_vow2_out,2)
-U+178F + any(sin_vow2_key) > U+1791 index(sin_vow2_out,2)
-U+178B + any(sin_vow2_key) > U+178D index(sin_vow2_out,2)
-U+1781 + any(sin_vow2_key) > U+1783 index(sin_vow2_out,2)
-U+1795 + any(sin_vow2_key) > U+1797 index(sin_vow2_out,2)
-U+1790 + any(sin_vow2_key) > U+1792 index(sin_vow2_out,2)
+U+1785 + any(sin_vow2_key)              > U+1787 index(sin_vow2_out,2)
+U+178A + any(sin_vow2_key)              > U+178C index(sin_vow2_out,2)
+U+1786 + any(sin_vow2_key)              > U+1788 index(sin_vow2_out,2)
+U+1780 + any(sin_vow2_key)              > U+1782 index(sin_vow2_out,2)
+U+178E + any(sin_vow2_key)              > U+1793 index(sin_vow2_out,2)
+U+178F + any(sin_vow2_key)              > U+1791 index(sin_vow2_out,2)
+U+178B + any(sin_vow2_key)              > U+178D index(sin_vow2_out,2)
+U+1781 + any(sin_vow2_key)              > U+1783 index(sin_vow2_out,2)
+U+1795 + any(sin_vow2_key)              > U+1797 index(sin_vow2_out,2)
+U+1790 + any(sin_vow2_key)              > U+1792 index(sin_vow2_out,2)
 
 
 c inherent vowel and ា treatments (1) without consonant key fired.
-+ [K_A]                                     > U+17A2 U+17B6 U+1782 U+17CB       c a > អាគ់
-U+1796 + [K_A]                              > U+1794 U+17C9 U+17B6 U+1782 U+17CB c pa
-U+179B + [K_A]                              > U+17A1 U+17B6 U+1782 U+17CB       c la
-U+17B6 U+1793 U+17CB + [K_A]                > U+178E U+17B6 U+1782 U+17CB       c danay > ដណៃ
-U+1793 + [K_A]                              > U+178E U+17B6 U+1782 U+17CB       c na
-U+1794 U+17C9 U+17B6 U+1782 U+17CB + [K_A]  > context(1) context(2) context(3)  c paa
-U+17A1 U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c laa
-U+178E U+17B6 U+1782 U+17CB + [K_A]         > context(1) context(2)             c naa
-any(con_muusikatoan) + [K_A]                > context U+17C9 U+17B6 U+1782 U+17CB
++ [K_A]                                                     > U+17A2 U+17B6 U+1782 U+17CB       c a > អាគ់
+U+1796 + [K_A]                                              > U+1794 U+17C9 U+17B6 U+1782 U+17CB c pa
+U+179B + [K_A]                                              > U+17A1 U+17B6 U+1782 U+17CB       c la
+U+17B6 U+1793 U+17CB + [K_A]                                > U+178E U+17B6 U+1782 U+17CB       c danay > ដណៃ
+U+1793 + [K_A]                                              > U+178E U+17B6 U+1782 U+17CB       c na
+U+1794 U+17C9 U+17B6 U+1782 U+17CB + [K_A]                  > context(1) context(2) context(3)  c paa
+U+17A1 U+17B6 U+1782 U+17CB + [K_A]                         > context(1) context(2)             c laa
+U+178E U+17B6 U+1782 U+17CB + [K_A]                         > context(1) context(2)             c naa
+any(con_muusikatoan) + [K_A]                                > context U+17C9 U+17B6 U+1782 U+17CB
 any(con_muusikatoan) U+17C9 U+17B6 U+1782 U+17CB + [K_A]    > context(1) U+17C9 U+17B6
 any(all_sin_con1) + [K_A]                                   > context(1) U+17B6 U+1782 U+17CB   c any C1 a > any C1 ាគ់
 any(all_sin_con1) U+17B6 U+1782 U+17CB + [K_A]              > context(1) U+17B6                 c any C1 aa > any C1 ា 
-any(con_bo) + [K_A]                                   > context(1) U+17B6 U+1782 U+17CB   c ba > បាគ់
-any(con_bo) U+17B6 U+1782 U+17CB + [K_A]              > context(1) U+17B6                 c baa > បា 
+any(con_bo) + [K_A]                                         > context(1) U+17B6 U+1782 U+17CB   c ba > បាគ់
+any(con_bo) U+17B6 U+1782 U+17CB + [K_A]                    > context(1) U+17B6                 c baa > បា 
 
 
-+ [K_Z]                       > U+17A2 U+1782 U+17CB        c z > អគ់
-U+1796 + [K_Z]                > U+1794 U+17C9 U+1782 U+17CB c pz
-U+17D2 U+179B + [K_Z]         > context(1) context(2) U+1782 U+17CB        c prevent blz from outputting ប្ឡគ់
-U+179B + [K_Z]                > U+17A1 U+1782 U+17CB        c lz
-U+1793 + [K_Z]                > U+178E U+1782 U+17CB        c nz
++ [K_Z]                             > U+17A2 U+1782 U+17CB        c z > អគ់
+U+1796 + [K_Z]                      > U+1794 U+17C9 U+1782 U+17CB c pz
+U+17D2 U+179B + [K_Z]               > context(1) context(2) U+1782 U+17CB        c prevent blz from outputting ប្ឡគ់
+U+179B + [K_Z]                      > U+17A1 U+1782 U+17CB        c lz
+U+1793 + [K_Z]                      > U+178E U+1782 U+17CB        c nz
 U+1794 U+17C9 U+1782 U+17CB + [K_Z] > context(1) context(2) dk(deadkey_z)   c pzz
 U+17A1 U+1782 U+17CB + [K_Z]        > context(1) dk(deadkey_z)              c lzz
 U+17B6 U+1793 U+17CB + [K_Z]        > U+178E U+1782 U+17CB                  c danz > ដណគ់
@@ -203,20 +227,23 @@ c cont. from here
 
 
 
+
+
 c VV combo, series 1
 U+17B7 + [K_E]                      > U+17C0                        c ie > ៀ
 U+17C0 + [K_H]                      > context(1) U+17C7             c ieh> ៀះ
 U+17B9 + [K_E]                      > U+17BE                        c ee > ើ
 U+17A2 U+17B6 U+1782 U+17CB + [K_Y] > context(1) U+17C3             c ay > អៃ
 U+17B6 U+1782 U+17CB + [K_Y]        > U+17C3                        c ay > ៃ  
-U+17B9 + [K_Y]                      > U+17B8                        c vy > ី 
+U+17B9 dk(deadkey_v) + [K_Y]        > U+17B8                        c vy > ី 
 U+17A2 U+1782 U+17CB + [K_Q]        > U+17A2 U+1782 U+17CB          c zq > អគ់់
 U+17A2 U+17B6 U+1782 U+17CB + [K_Q] > U+17A2 U+17B6 U+1782 U+17CB   c aq > អាគ់
+U+17B6 U+1782 U+17CB + [K_Q]        > U+17B6 U+1782 U+17CB          c Caq > ាគ់
 U+1782 U+17CB + [K_W]               > U+17BC U+179C                 c zw > ូវ
 U+17B7 + [K_H]                      > U+17B7 U+17C7                 c xh > ិះ
-U+17B9 + [K_H]                      > U+17B9 U+17C7                 c eh > ឹះ
+U+17B9 dk(deadkey_e) + [K_H]        > U+17B9 U+17C7                 c eh > ឹះ
 U+17B7 + [K_Q]                      > U+17B7                        c xq > ិ
-U+17B9 + [K_Q]                      > U+17B9                        c eq > ឹ
+U+17B9 dk(deadkey_e) + [K_Q]        > U+17B9                        c eq > ឹ
 U+17BB + [K_O]                      > U+17BC                        c oo > ូ 
 
 any(con_triisap) U+17B7 + [K_X]     > context(1) U+17CA U+17C2
@@ -231,15 +258,15 @@ U+17C3 + [K_Q]          > context U+1782    c ay > ៃគ
 
 
 c VV combo, series 2
-U+17B7 + [K_X]          > U+17C2            c xx > ែ
-U+17B7 + [K_I]          > U+17B8            c ii > ី
-U+17B9 + [K_V]          > U+17BA            c vv > ឺ
-U+17BA + [K_H]          > U+17BA U+17C7     c vvh > ឺះ
-U+17B8 + [K_H]          > U+17B8 U+17C7     c iih > ីះ
-U+17BB + [K_H]          > U+17BB U+17C7     c uh > ុះ
-U+17BD + [K_H]          > U+17BD U+17C7     c ueh > ួះ
-U+17BB + [K_E]          > U+17BD            c ue > ួ
-U+17BB + [K_U]          > U+17BC            c uu > ូ
+U+17B7 + [K_X]                  > U+17C2            c xx > ែ
+U+17B7 + [K_I]                  > U+17B8            c ii > ី
+U+17B9 dk(deadkey_v) + [K_V]    > U+17BA            c vv > ឺ
+U+17BA + [K_H]                  > U+17BA U+17C7     c vvh > ឺះ
+U+17B8 + [K_H]                  > U+17B8 U+17C7     c iih > ីះ
+U+17BB + [K_H]                  > U+17BB U+17C7     c uh > ុះ
+U+17BD + [K_H]                  > U+17BD U+17C7     c ueh > ួះ
+U+17BB + [K_E]                  > U+17BD            c ue > ួ
+U+17BB + [K_U]                  > U+17BC            c uu > ូ
 
 
 any(sin_con1_out) U+17CA U+17BB + [K_E]     > context(1) U+17BD     c buer > បួរ not ប៊ួរ 
@@ -295,14 +322,14 @@ U+1783 U+17B7 + [K_E]     > U+1781 U+17C0    c khie > ខៀ
 U+1797 U+17B7 + [K_E]     > U+1795 U+17C0    c phie > ផៀ
 
 c second-series consonant + first-series vowel "vy" > first-series consonant + the first-series vowel
-U+1787 U+17B9 + [K_Y]     > U+1785 U+17B8    c cvy > ចី        
-U+178C U+17B9 + [K_Y]     > U+178A U+17B8    c dvy > ដី
-U+1788 U+17B9 + [K_Y]     > U+1786 U+17B8    c jvy > ឆី
-U+1782 U+17B9 + [K_Y]     > U+1780 U+17B8    c kvy > កី
-U+1791 U+17B9 + [K_Y]     > U+178F U+17B8    c tvy > តី
-U+178D U+17B9 + [K_Y]     > U+178B U+17B8    c qdvy > ឋី
-U+1783 U+17B9 + [K_Y]     > U+1781 U+17B8    c khvy > ខី
-U+1797 U+17B9 + [K_Y]     > U+1795 U+17B8    c phvy > ផី
+U+1787 U+17B9 dk(deadkey_v) + [K_Y]     > U+1785 U+17B8    c cvy > ចី        
+U+178C U+17B9 dk(deadkey_v) + [K_Y]     > U+178A U+17B8    c dvy > ដី
+U+1788 U+17B9 dk(deadkey_v) + [K_Y]     > U+1786 U+17B8    c jvy > ឆី
+U+1782 U+17B9 dk(deadkey_v) + [K_Y]     > U+1780 U+17B8    c kvy > កី
+U+1791 U+17B9 dk(deadkey_v) + [K_Y]     > U+178F U+17B8    c tvy > តី
+U+178D U+17B9 dk(deadkey_v) + [K_Y]     > U+178B U+17B8    c qdvy > ឋី
+U+1783 U+17B9 dk(deadkey_v) + [K_Y]     > U+1781 U+17B8    c khvy > ខី
+U+1797 U+17B9 dk(deadkey_v) + [K_Y]     > U+1795 U+17B8    c phvy > ផី
 
 
 c +++++++++++++++++++++++++++++++++++CC CLUSTER CHANGES SERIES IN HARMONY WITH THE SERIES OF THE VOWEL+++++++++++++++++++++++++++++++++++
@@ -316,6 +343,8 @@ any(con_bo) U+17D2 U+179A U+1782 U+17CB + [K_Z]         > context(1) context(2) 
 c bl
 U+1794 U+17D2 U+179B + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4)
 U+1794 U+17D2 U+179B + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
+U+1794 U+17D2 U+179B + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v)
+U+1794 U+17D2 U+179B + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
 
 U+17CA U+17BB + [K_E]                > U+17BD                c bu + e > បួ
 U+17CA U+17B7 + [K_E]                > U+17C0                c bi + e > បៀ
@@ -326,12 +355,16 @@ U+1782 U+17CB + [K_Q]                > context(1) context(2) c ប្លគ់ +
 c br
 U+1794 U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+1794 U+17D2 U+179A + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4)
+U+1794 U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+1794 U+17D2 U+179A + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v)
 U+1794 U+17D2 U+179A U+17B7 + [K_X]         > context(1) context(2) context(3) U+17CA U+17C2 
 
 
 c cr
 U+1785 U+17D2 U+179A + any(sin_vow2_key)    > U+1787 context(2) context(3) index(sin_vow2_out,4)
 U+1785 U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
+U+1785 U+17D2 U+179A + [K_V]                > U+1787 context(2) context(3) U+17B9 dk(deadkey_v)
+U+1785 U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
 U+1787 U+17D2 U+179A U+17B7 + [K_E]         > U+1785 context(2) context(3) U+17C0 c ជ្រិគ > ច្រៀ
 U+1787 U+17D2 U+179A U+17BB + [K_E]         > U+1785 context(2) context(3) U+17BD c ជ្រុគ > ច្រួ
 U+1785 U+17D2 U+179A U+17B7 + [K_X]         > U+1787 context(2) context(3) U+17C2
@@ -339,7 +372,9 @@ U+1785 U+17D2 U+179A U+17B7 + [K_X]         > U+1787 context(2) context(3) U+17C
 
 c dr
 U+178A U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
-U+178A U+17D2 U+179A + any(sin_vow2_key)    > U+178C context(2) context(3) index(sin_vow2_out,4) 
+U+178A U+17D2 U+179A + any(sin_vow2_key)    > U+178C context(2) context(3) index(sin_vow2_out,4)
+U+178A U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+178A U+17D2 U+179A + [K_V]                > U+178C context(2) context(3) U+17B9 dk(deadkey_v) 
 U+178A U+17D2 U+179A U+17B7 + [K_X]         > U+178C context(2) context(3) U+17C2   c drxx > ឌ្រែ
 U+178C U+17D2 U+179A U+17B7 + [K_E]         > U+178A context(2) context(3) U+17C0   c drie > ដ្រៀ
 U+178C U+17D2 U+179A U+17BB + [K_E]         > U+178A context(2) context(3) U+17BD   c drue > ដ្រួ
@@ -348,6 +383,8 @@ U+178C U+17D2 U+179A U+17BB + [K_E]         > U+178A context(2) context(3) U+17B
 c gl (CLEVERRABBIT DOESN'T DISPLAY 179D CORRECTLY ON THE SCREEN IN MACOS, AND THAT IS HARD TO VERIFY THE OUTPUT.)
 U+179D U+17D2 U+179B + any(sin_vow1_key)    > context(1) context(2) context(3) U+17C9 index(sin_vow1_out,4)
 U+179D U+17D2 U+179B + any(sin_vow2_key)    > context(1) context(2) context(3) index(sin_vow2_out,4) 
+U+179D U+17D2 U+179B + [K_E]                > context(1) context(2) context(3) U+17C9 U+17B9 dk(deadkey_e)
+U+179D U+17D2 U+179B + [K_V]                > context(1) context(2) context(3) U+17B9 dk(deadkey_v) 
 U+179D U+17D2 U+179B U+17BB + [K_E]         > context(1) context(2) context(3) U+17C9 U+17BD   c glue
 U+179D U+17D2 U+179B U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C9 U+17C0   c glie
 U+179D U+17D2 U+179B U+17C9 U+17B7 + [K_X]  > context(1) context(2) context(3) U+17C2    c glxx
@@ -359,6 +396,8 @@ U+179D U+17D2 U+179B U+17C9 U+1782 U+17CB + [K_H]   > context(1) context(2) cont
 c gr
 U+179D U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) U+17C9 index(sin_vow1_out,4)
 U+179D U+17D2 U+179A + any(sin_vow2_key)    > context(1) context(2) context(3) index(sin_vow2_out,4) 
+U+179D U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17C9 U+17B9 dk(deadkey_e)
+U+179D U+17D2 U+179A + [K_V]                > context(1) context(2) context(3) U+17B9 dk(deadkey_v) 
 U+179D U+17D2 U+179A U+17BB + [K_E]         > context(1) context(2) context(3) U+17C9 U+17BD   c grue
 U+179D U+17D2 U+179A U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C9 U+17C0   c grie
 U+179D U+17D2 U+179A U+17C9 U+17B7 + [K_X]  > context(1) context(2) context(3) U+17C2    c grxx
@@ -367,6 +406,8 @@ U+179D U+17D2 U+179A U+17C9 U+17B7 + [K_X]  > context(1) context(2) context(3) U
 c hm
 U+17A0 U+17D2 U+1798 + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+17A0 U+17D2 U+1798 + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
+U+17A0 U+17D2 U+1798 + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+17A0 U+17D2 U+1798 + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v) 
 U+17A0 U+17D2 U+1798 U+17B7 + [K_X]         > context(1) context(2) context(3) U+17C2   c hmxx
 U+17A0 U+17D2 U+1798 U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0   c hmie
 U+17A0 U+17D2 U+1798 U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD   c hmue
@@ -377,6 +418,8 @@ U+17A0 U+17D2 U+1798 U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3) d
 c hn
 U+17A0 U+17D2 U+1793 + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+17A0 U+17D2 U+1793 + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
+U+17A0 U+17D2 U+1793 + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+17A0 U+17D2 U+1793 + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v) 
 U+17A0 U+17D2 U+1793 U+17B7 + [K_X]         > context(1) context(2) context(3) U+17C2   c hnxx
 U+17A0 U+17D2 U+1793 U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0   c hnie
 U+17A0 U+17D2 U+1793 U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD   c hnue
@@ -386,7 +429,9 @@ U+17A0 U+17D2 U+1793 U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3) d
 
 c hng
 U+17A0 U+17D2 U+1784 + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
-U+17A0 U+17D2 U+1784 + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
+U+17A0 U+17D2 U+1784 + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4)
+U+17A0 U+17D2 U+1784 + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+17A0 U+17D2 U+1784 + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v) 
 U+17A0 U+17D2 U+1784 U+17B7 + [K_X]         > context(1) context(2) context(3) U+17C2   c hngxx
 U+17A0 U+17D2 U+1784 U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0   c hngie
 U+17A0 U+17D2 U+1784 U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD   c hngue
@@ -397,6 +442,8 @@ U+17A0 U+17D2 U+1784 U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3) d
 c jr
 U+1786 U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+1786 U+17D2 U+179A + any(sin_vow2_key)    > U+1788 context(2) context(3) index(sin_vow2_out,4) 
+U+1786 U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+1786 U+17D2 U+179A + [K_V]                > U+1788 context(2) context(3) U+17B9 dk(deadkey_v) 
 U+1788 U+17D2 U+179A U+17BB + [K_E]         > U+1786 context(2) context(3) U+17BD   c jrue
 U+1788 U+17D2 U+179A U+17B7 + [K_E]         > U+1786 context(2) context(3) U+17C0   c jrie
 U+1786 U+17D2 U+179A U+17B7 + [K_X]         > U+1788 context(2) context(3) U+17C2   c jrxx
@@ -405,6 +452,8 @@ U+1786 U+17D2 U+179A U+17B7 + [K_X]         > U+1788 context(2) context(3) U+17C
 c kl
 U+1780 U+17D2 U+179B + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+1780 U+17D2 U+179B + any(sin_vow2_key)    > U+1782 context(2) context(3) index(sin_vow2_out,4) 
+U+1780 U+17D2 U+179B + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+1780 U+17D2 U+179B + [K_V]                > U+1782 context(2) context(3) U+17B9 dk(deadkey_v) 
 U+1782 U+17D2 U+179B U+17BB + [K_E]         > U+1780 context(2) context(3) U+17BD   c klue
 U+1782 U+17D2 U+179B U+17B7 + [K_E]         > U+1780 context(2) context(3) U+17C0   c klie
 U+1780 U+17D2 U+179B U+17B7 + [K_X]         > U+1782 context(2) context(3) U+17C2   c klxx
@@ -415,6 +464,8 @@ U+1780 U+17D2 U+179B U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3) d
 c kr
 U+1780 U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+1780 U+17D2 U+179A + any(sin_vow2_key)    > U+1782 context(2) context(3) index(sin_vow2_out,4) 
+U+1780 U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+1780 U+17D2 U+179A + [K_V]                > U+1782 context(2) context(3) U+17B9 dk(deadkey_v) 
 U+1782 U+17D2 U+179A U+17BB + [K_E]         > U+1780 context(2) context(3) U+17BD   c krue
 U+1782 U+17D2 U+179A U+17B7 + [K_E]         > U+1780 context(2) context(3) U+17C0   c krie
 U+1780 U+17D2 U+179A U+17B7 + [K_X]         > U+1782 context(2) context(3) U+17C2   c krxx
@@ -425,6 +476,8 @@ U+1780 U+17D2 U+179A U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3) d
 c pl
 U+1796 U+17D2 U+179B + any(sin_vow1_key)    > U+1794 context(2) context(3) U+17C9 index(sin_vow1_out,4)
 U+1796 U+17D2 U+179B + any(sin_vow2_key)    > context(1) context(2) context(3) index(sin_vow2_out,4) 
+U+1796 U+17D2 U+179B + [K_E]                > U+1794 context(2) context(3) U+17C9 U+17B9 dk(deadkey_e)
+U+1796 U+17D2 U+179B + [K_V]                > context(1) context(2) context(3) U+17B9 dk(deadkey_v) 
 U+1796 U+17D2 U+179B U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD   c plue
 U+1796 U+17D2 U+179B U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0   c plie
 U+1794 U+17D2 U+179B U+17C9 U+17B7 + [K_X]  > U+1796 context(2) context(3) U+17C2   c plxx
@@ -437,6 +490,8 @@ U+1794 U+17D2 U+179B U+17C9 U+17B6 U+1782 U+17CB + [K_A]    > context(1) context
 c pr
 U+1796 U+17D2 U+179A + any(sin_vow1_key)    > U+1794 context(2) context(3) U+17C9 index(sin_vow1_out,4)
 U+1796 U+17D2 U+179A + any(sin_vow2_key)    > context(1) context(2) context(3) index(sin_vow2_out,4) 
+U+1796 U+17D2 U+179A + [K_E]                > U+1794 context(2) context(3) U+17C9 U+17B9 dk(deadkey_e)
+U+1796 U+17D2 U+179A + [K_V]                > context(1) context(2) context(3) U+17B9 dk(deadkey_v) 
 U+1796 U+17D2 U+179A U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD   c prue
 U+1796 U+17D2 U+179A U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0   c prie
 U+1794 U+17D2 U+179A U+17C9 U+17B7 + [K_X]  > U+1796 context(2) context(3) U+17C2   c prxx
@@ -449,6 +504,8 @@ U+1794 U+17D2 U+179A U+17C9 U+17B6 U+1782 U+17CB + [K_A]    > context(1) context
 c sr
 U+179F U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+179F U+17D2 U+179A + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
+U+179F U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+179F U+17D2 U+179A + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v) 
 U+179F U+17D2 U+179A U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD   c srue
 U+179F U+17D2 U+179A U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0   c srie
 U+179F U+17D2 U+179A U+17B7 + [K_X]         > context(1) context(2) context(3) U+17CA U+17C2   c srxx
@@ -461,6 +518,8 @@ U+179F U+17D2 U+179A U+17B6 U+1782 U+17CB + [K_A]   > context(1) context(2) cont
 c tr
 U+178F U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+178F U+17D2 U+179A + any(sin_vow2_key)    > U+1791 context(2) context(3) index(sin_vow2_out,4) 
+U+178F U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+178F U+17D2 U+179A + [K_V]                > U+1791 context(2) context(3) U+17B9 dk(deadkey_v) 
 U+1791 U+17D2 U+179A U+17BB + [K_E]         > U+178F context(2) context(3) U+17BD   c true
 U+1791 U+17D2 U+179A U+17B7 + [K_E]         > U+178F context(2) context(3) U+17C0   c trie
 U+178F U+17D2 U+179A U+17B7 + [K_X]         > U+1791 context(2) context(3) U+17C2   c trxx
@@ -473,6 +532,8 @@ U+178F U+17D2 U+179A U+17B6 U+1782 U+17CB + [K_A]  > context(1) context(2) conte
 c qy
 U+17A2 U+17D2 U+1799 + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+17A2 U+17D2 U+1799 + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
+U+17A2 U+17D2 U+1799 + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)
+U+17A2 U+17D2 U+1799 + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v) 
 U+17A2 U+17D2 U+1799 U+17B7 + [K_X]         > context(1) context(2) context(3) U+17CA U+17C2   c qyxx
 U+17A2 U+17D2 U+1799 + [K_Z]                > context(1) context(2) context(3) U+1782 U+17CB   c qyz
 U+17A2 U+17D2 U+1799 U+1782 U+17CB + [K_Z]   > context(1) context(2) context(3) dk(deadkey_z)  c qyzz
@@ -481,6 +542,8 @@ U+17A2 U+17D2 U+1799 U+1782 U+17CB + [K_Z]   > context(1) context(2) context(3) 
 c qbr
 U+179E U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)    
 U+179E U+17D2 U+179A + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
+U+179E U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) U+17B9 dk(deadkey_e)    
+U+179E U+17D2 U+179A + [K_V]                > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v) 
 U+179E U+17D2 U+179A U+17BB + [K_E]         > context(1) context(2) context(3) U+17BD           c qbrue
 U+179E U+17D2 U+179A U+17B7 + [K_E]         > context(1) context(2) context(3) U+17C0           c qbrie
 U+179E U+17D2 U+179A U+17B7 + [K_X]         > context(1) context(2) context(3) U+17CA U+17C2    c qbrxx
@@ -491,6 +554,8 @@ U+179E U+17D2 U+179A U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3) d
 c phl U+1795 U+1797 U+179B 
 U+1797 U+17D2 U+179B + any(sin_vow1_key)    > U+1795 context(2) context(3) index(sin_vow1_out,4)    
 U+1797 U+17D2 U+179B + any(sin_vow2_key)    > context(1) context(2) context(3) index(sin_vow2_out,4) 
+U+1797 U+17D2 U+179B + [K_E]                > U+1795 context(2) context(3) U+17B9 dk(deadkey_e)    
+U+1797 U+17D2 U+179B + [K_V]                > context(1) context(2) context(3) U+17B9 dk(deadkey_v) 
 U+1797 U+17D2 U+179B U+17BB + [K_E]         > U+1795 context(2) context(3) U+17BD               c phlue
 U+1797 U+17D2 U+179B U+17B7 + [K_E]         > U+1795 context(2) context(3) U+17C0               c phlie
 U+1795 U+17D2 U+179B U+17B7 + [K_X]         > U+1797 context(2) context(3) U+17C2               c phlxx
@@ -509,6 +574,9 @@ U+17CA + [K_P]                          > context(1) U+1794
 any(any_vowel) + [K_P]                  > context(1) U+1794
 any(any_vowel) + [K_P]                  > context(1) U+1794
 any(any_vowel) U+1782 U+17CB + [K_P]    > context(1) U+1794 U+17CB
+
+dk(deadkey_v) + [K_P]                   > U+1794
+dk(deadkey_e) + [K_P]                   > U+1794
 
 
 c ហ after គ in the final position
@@ -529,8 +597,9 @@ c អ in the final position becomes គ
 any(any_vowel) + [K_Q]          > context
 U+17CA + [K_Q]                  > context U+1782
 U+17C9 + [K_Q]                  > context U+1782
-U+17CA dk(deadkey_z) + [K_Q]                  > context(1) U+1782
-U+17C9 dk(deadkey_z) + [K_Q]                  > context(1) U+1782
+U+17CA dk(deadkey_z) + [K_Q]    > context(1) U+1782
+U+17C9 dk(deadkey_z) + [K_Q]    > context(1) U+1782
+dk(deadkey_v) + [K_Q]           > nul 
 
 c wq > វ្គ
 U+179C + [K_Q]                  > context U+17D2 U+1782
@@ -549,27 +618,51 @@ c any consonant + um > any consonant + ុំ
 any(any_con) U+17BB + [K_M]                 > context(1) context(2) U+17C6
 
 
+c h after deadkeys
+dk(deadkey_e) + [K_H]    > U+17C7
+dk(deadkey_v) + [K_H]    > U+17C7
+dk(deadkey_z) + [K_H]    > U+17C7
+
+
 c final consonant with deadkey
 dk(deadkey_z) + any(sin_con1_key)           > index(sin_con1_out,2)
 dk(deadkey_z) + any(sin_con2_key)           > index(sin_con2_out,2)
+dk(deadkey_e) + any(sin_con1_key)           > index(sin_con1_out,2)
+dk(deadkey_e) + any(sin_con2_key)           > index(sin_con2_out,2)
+dk(deadkey_v) + any(sin_con1_key)           > index(sin_con1_out,2)
+dk(deadkey_v) + any(sin_con2_key)           > index(sin_con2_out,2)
 
 
 c h after vowel
-any(any_vowel) + [K_H]                     > context U+17C7
+any(any_vowel) + [K_H]                      > context U+17C7
+
+
+c inherent vowel and ា treatments (2) with consonant key fired.
+U+17B6 U+1782 U+17CB + any(sin_con1_key)    > context(1) index(sin_con1_out,4) context(3) 
+U+17B6 U+1782 U+17CB + any(sin_con2_key)    > context(1) index(sin_con2_out,4) context(3) 
+
+U+1782 U+17CB + [K_P]                       > U+1794 context(2)
+U+1782 U+17CB + any(sin_con1_key)           > index(sin_con1_out,3) context(2)
+U+1782 U+17CB + any(sin_con2_key)           > index(sin_con2_out,3) context(2)
+
+
+c +++++++++++++++++ VE Vowel Combination +++++++++++++++++ 
+c any(any_con) + [K_V]    > context(1) dk(deadkey_v)
+c dk(deadkey_v) + [K_E]   > U+17BF    c ve > ឿ
+
+c any(any_con) + [K_E]    > context(1) dk(deadkey_e)
+c dk(deadkey_e) + [K_E]   > U+17BE    c ee > ើ
+
+c match > use(VE_combo)
+c group(VE_combo)
+
+c any(any_con) U+17B9     > context(1) dk(deadkey_v) 
 
 
 c +++++++++++++++++ NORMALIZATION +++++++++++++++++
-match > use(normalise)
+c match > use(normalise)
 
-group(normalise)
-
-c inherent vowel and ា treatments (2) with consonant key fired.
-U+17B6 U+1782 U+17CB any(any_con)   > context(1) context(4) context(3) 
-
-U+1782 U+17CB U+1796                > U+1794 context(2)
-U+1782 U+17CB any(any_con)          > context(3) context(2)
-
-
+c group(normalise)
 
 
 
