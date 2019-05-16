@@ -16,7 +16,7 @@ begin Unicode > use(main)
 
 c store(accent) U+02C6 U+02C7 U+02C9 U+0300 U+0301
 
-c Standard characters that can take all diacritics ADEIMNORSTUZ
+c Standard characters that can take all diacritics ADEIMNORSUZ
 store(basic_diacritics) U+0041 U+0044 U+0045 U+0049 U+004D \
                         U+004E U+004F U+0052 U+0053 \
                         U+0055 U+005A \
@@ -50,19 +50,20 @@ store(semi_chars_U)    U+00C4 U+0181 U+00C7 U+018A U+0190        U+00DF U+0126 U
                        U+0272 U+014B U+0254 U+00F8        U+0259        U+01DD U+0289 \
                        U+01B1 U+0049 U+019F \
                        U+028A U+026A U+0275 U+A789 U+A78A U+A71C U+A78C
-c Special characters that can take all diacritics  AEIKOPRTUaeikoprtu8*9(7&
-store(dia_chars_K)                                 "E"                         "I" \
+
+c Special characters that can take all diacritics  AEIOPRTUaeioprtu8*9(7&
+store(dia_chars_K)     "A"           "C"           "E"                         "I" \
                        "M"    "N"    "O"    "P"           "R"           "T"    "U" \
                        "a"    "b"    "c"    "d"    "e"                  "h"    "i" \
                        "m"    "n"    "o"    "p"           "r"           "t"    "u" \
                        "&"    "*"    "(" \
                        "7"    "8"    "9"    
-store(dia_chars_U)                                 U+0190                      U+0197 \
+store(dia_chars_U)     U+00C4        U+00C7        U+0190                      U+0197 \
                        U+019D U+014A U+0186 U+00D8        U+018F        U+018E U+0244 \
                        U+00E4 U+0253 U+00E7 U+0257 U+025B               U+0127 U+0268 \
                        U+0272 U+014B U+0254 U+00F8        U+0259        U+01DD U+0289 \
-                       U+028A U+0049 U+019F \
-                       U+01B1 U+026A U+0275 
+                       U+01B1 U+0049 U+019F \
+                       U+028A U+026A U+0275 
 
 
 c store(regvowel) U+0041 U+0045 U+0049 U+004F U+0052 U+0055 \
@@ -102,14 +103,13 @@ c standard characters on keyboard
 "@" + any(basic_diacritics) > index(basic_diacritics,2) U+0304 use(nfc)        c macron
 "~" + any(basic_diacritics) > index(basic_diacritics,2) U+0303 use(nfc)        c tilde
 
-"^;" + any(dia_chars_K) > index(dia_chars_U,3) U+0302
-"!;" + any(dia_chars_K) > index(dia_chars_U,3) U+030C
-"`;" + any(dia_chars_K) > index(dia_chars_U,3) U+0300
+"^;" + any(dia_chars_K) > index(dia_chars_U,3) U+0302 use(nfc)
+"!;" + any(dia_chars_K) > index(dia_chars_U,3) U+030C use(nfc)
+"`;" + any(dia_chars_K) > index(dia_chars_U,3) U+0300 use(nfc)
 "';" + any(dia_chars_K) > index(dia_chars_U,3) U+0301 use(nfc)
-":;" + any(dia_chars_K) > index(dia_chars_U,3) U+0308
-'@;' + any(dia_chars_K) > index(dia_chars_U,3) U+0304
-'~;' + any(dia_chars_K) > index(dia_chars_U,3) U+0303
-"~;" + any(dia_chars_K) > index(dia_chars_U,3) U+0303     c special vowel
+":;" + any(dia_chars_K) > index(dia_chars_U,3) U+0308 use(nfc)
+'@;' + any(dia_chars_K) > index(dia_chars_U,3) U+0304 use(nfc)
+'~;' + any(dia_chars_K) > index(dia_chars_U,3) U+0303 use(nfc)
 
 c ";" + "9" > U+027F c o bar
 c ";" + "(" > U+019F c capital O bar
@@ -287,6 +287,10 @@ any(basic) U+030C > index(caron_nfc,1)
 any(basic) U+0308 > index(diaer_nfc,1)
 any(basic) U+0304 > index(macron_nfc,1)
 any(basic) U+0303 > index(tilde_nfc,1)
+
+c cedilla acute
+U+00E7 U+0301 > U+1E09
+U+00C7 U+0301 > U+1E08
 
 c m acute
 U+006D U+0301 > U+1E3F
