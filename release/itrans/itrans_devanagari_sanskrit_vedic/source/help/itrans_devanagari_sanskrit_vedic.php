@@ -1,79 +1,20 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard help</title>
-<style>
-html, body {
-font-family: Siddhanta, sans-serif;
-font-size: 100%;
-}
-samp {
-font-family: "Nirmala UI", "Siddhanta"; 
-font-size: 120%;
-}
-kbd {
-color:black; 
-font: 0.8em serif; 
-border:solid 1px grey; 
-background:#ccc; 
-margin:1px 1px; 
-padding:1px 2px; 
--webkit-border-radius: 1px; 
--moz-border-radius: 1px; 
-border-radius: 1px;
-}
-/* Table */
-.inputSequences {
-border-collapse: collapse;
-font-size: 14px;
-min-width: 592px;
-}
-.inputSequences th, 
-.inputSequences td {
-padding: 3px 7px;
-}
-/* .inputSequences caption {
-margin: 7px;
-} */
-/* Table Header */
-.inputSequences thead th {
-border-bottom: 2px solid #6ea1cc;
-}
-/* Table Body */
-.inputSequences tbody td {
-border-bottom: 1px solid #e1edff;
-color: #353535;
-text-align: center;
-}
-.inputSequences kbd {
-font: 1.5em sans-serif; 
-}
-.inputSequences tbody tr:nth-child(odd) td {
-background-color: #f4fbff;
-}
-/* 
-.inputSequences tbody td:nth-child(4),
-.inputSequences tbody td:first-child,
-.inputSequences tbody td:last-child {
-text-align: right;
-}
-*/
-.inputSequences tbody tr:hover td {
-background-color: #ffffa2;
-border-color: #ffff0f;
-}
-/* Table Footer */
-/* 
-.inputSequences tfoot th {
-border-top: 2px solid #6ea1cc;
-text-align: right;
-} 
-*/
-</style>
-</head>
-<body>
-<h1>Welcome!!!</h1>
+<?php
+  $pagename = 'Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard Help';
+  $pagetitle = 'Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard Help';
+  $pagestyle = <<<END
+    samp {font-family: Siddhanta; font-size:20pt;   }
+    kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+    .inputSequences {border-collapse: collapse;font-size: 14px;min-width: 592px;}
+    .inputSequences th, .inputSequences td {padding: 7px 17px;}
+    .inputSequences thead th {border-bottom: 2px solid #6ea1cc;text-transform: uppercase;}
+    .inputSequences tbody td {border-bottom: 1px solid #e1edff;color: #353535;text-align: center;}
+    .inputSequences tbody tr:nth-child(odd) td {background-color: #f4fbff;}
+    .inputSequences tbody tr:hover td {background-color: #ffffa2;border-color: #ffff0f;}
+END;
+  require_once('header.php');
+?>
+
+<h1>Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard Help</h1>
 <h2>Version 1.0.2</h1>
 
 <h3><span style="color: chocolate;">Vedic Sanskrit Devanagari Phonetic (ITRANS) </span>Keyboard</h3>

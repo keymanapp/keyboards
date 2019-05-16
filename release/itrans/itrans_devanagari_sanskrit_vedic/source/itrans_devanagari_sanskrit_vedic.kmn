@@ -1,21 +1,29 @@
-﻿c Version 1.0.0 - Initial Version
-store(&VERSION) "10.0"  
-store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard'
-store(&TARGETS) 'any'
+﻿c 1.0.2 - Fix comments in kmn, improve welcome.htm
+c 1.0.1 - Initial submission to Github
+c 1.0.0 - References for existing keyboards/IME
+c ITRANS - https://www.aczoom.com/itrans/
+c Vaidika - http://svayambhava.blogspot.com/p/siddhanta-devanagariunicode-open-type.html
+c Vidyut - http://www.mywhatever.com/sanskrit/vidyut/
+c Swanalekha - https://swanalekha.smc.org.in/
+c sil_devanagari_phonetic - https://keyman.com/keyboards/sil_devanagari_phonetic
+c 
+store(&VERSION) "10.0" 
+store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS)'
+store(&TARGETS) 'windows macosx linux web'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
 store(&MESSAGE) 'A Phonetic Devanagari (ITRANS transliteration scheme) keyboard layout with support for Vedic Sanskrit (Devanagari Extended and Vedic Extensions Unicode ranges).'
-store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted, Right Alt layouts.'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted and Right Alt layouts.'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&BITMAP) 'itrans_devanagari_sanskrit_vedic.ico'
 store(&VISUALKEYBOARD) 'itrans_devanagari_sanskrit_vedic.kvks'
+store(&KMW_HELPFILE) 'itrans_devanagari_sanskrit_vedic-help.htm'
 
 begin Unicode > use(main)
 group(main) using keys
 
-store(RomanCs)       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" \
-                     "~`;:" 
-
-+ "Q"     > dk(2)   c followed by a roman char gives the roman forms!
+store(RomanCs) "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" \
+        "~`;:" 
++ "Q" > dk(2) c followed by a roman char gives the roman forms!
 
 c if we get the cap Q, then spit out roman text.
 dk(2) + any(RomanCs) > index(RomanCs,2)
@@ -23,24 +31,24 @@ dk(2) + any(RomanCs) > index(RomanCs,2)
 c if the last thing was roman, then continue at least until the end of the word
 any(RomanCs) + any(RomanCs) > context index(RomanCs,2)
 
-c numbers - Devanagari DigitsU, Yajurvedic Combining Marks DigitsC
-store(Digits)     "0"    "1"    "2"    "3"    "4"    "5"    "6"     "7"    "8"    "9"
-store(DigitsU)    U+0966 U+0967 U+0968 U+0969 U+096A U+096B U+096C U+096D U+096E U+096F
-store(DigitsC)    U+A8E0 U+A8E1 U+A8E2 U+A8E3 U+A8E4 U+A8E5 U+A8E6 U+A8E7 U+A8E8 U+A8E9
+c numbers - Devanagari DigitsU, Samaveda Combining Marks DigitsC
+store(Digits) "0" "1" "2" "3" "4" "5" "6" "7" "8" "9"
+store(DigitsU) U+0966 U+0967 U+0968 U+0969 U+096A U+096B U+096C U+096D U+096E U+096F
+store(DigitsC) U+A8E0 U+A8E1 U+A8E2 U+A8E3 U+A8E4 U+A8E5 U+A8E6 U+A8E7 U+A8E8 U+A8E9
 
-+ any(Digits)           > index(DigitsU,1)
-any(DigitsU) + [K_BKSP]  > index(Digits,1)
-any(DigitsU) + "="  > index(DigitsC,1)
++ any(Digits) > index(DigitsU,1)
+any(DigitsU) + [K_BKSP] > index(Digits,1)
+any(DigitsU) + "=" > index(DigitsC,1)
 
-c Yajurvedic combining vowels
-store(CVowels)     "a"    "u"
-store(CVowelsU)    "अ"    "उ"
-store(CVowelsC)    U+A8EA U+A8EB
+c Samaveda combining vowels
+store(CVowels) "a" "u"
+store(CVowelsU) "अ" "उ"
+store(CVowelsC) U+A8EA U+A8EB
 
-+ any(CVowels)       > index(CVowelsU,1)
-any(CVowelsU) + "="  > index(CVowelsC,1)
++ any(CVowels) > index(CVowelsU,1)
+any(CVowelsU) + "=" > index(CVowelsC,1)
 
-c Other Yajurvedic combining characters
+c Other Samaveda combining characters
 "क्"+"=">U+A8EC
 "न्"+"=">U+A8ED
 "प्"+"=">U+A8EE
@@ -54,7 +62,7 @@ U+0951 +"'"> U+1CDA c VEDIC TONE DOUBLE SVARITA
 U+1CDA +"'"> U+1CDB c VEDIC TONE TRIPLE SVARITA
 +"`"> U+0952 c DEVANAGARI STRESS SIGN ANUDATTA
 
-c Devanagari Extended Unicode Range - Right Ctrl 
+c Devanagari Extended Unicode Range - Right Alt 
 + [RALT K_COMMA] > 'ꣲ'
 + [RALT K_COLON] > 'ꣵ'
 + [RALT K_L] > 'ꣷ'
@@ -68,34 +76,34 @@ c Devanagari Extended Unicode Range - Right Ctrl
 + [RALT K_HYPHEN] > 'ꣻ'
 + [RALT K_EQUAL] > 'ꣽ'
 
-c Vedic Extensions Unicode Range - Right Ctrl 
-+  [RALT K_1] > '᳑'
-+  [RALT K_2] > '᳒'
-+  [RALT K_3] > '᳓'
-+  [RALT K_4] > '᳔'
-+  [RALT K_5] > '᳕'
-+  [RALT K_6] > '᳖'
-+  [RALT K_7] > '᳗'
-+  [RALT K_8] > '᳘'
-+  [RALT K_9] > '᳙'
-+  [RALT K_A] > '᳧'
-+  [RALT K_BKQUOTE] > '᳐'
-+  [RALT K_D] > 'ᳱ'
-+  [RALT K_E] > '᳥'
-+  [RALT K_G] > 'ᳩ'
-+  [RALT K_H] > 'ᳬ'
-+  [RALT K_I] > 'ᳮ'
-+  [RALT K_O] > 'ᳯ'
-+  [RALT K_P] > 'ᳰ'
-+  [RALT K_Q] > '᳣'
-+  [RALT K_R] > '᳦'
-+  [RALT K_S] > '᳨'
-+  [RALT K_T] > 'ᳪ'
-+  [RALT K_U] > '᳴'
-+  [RALT K_W] > '᳤'
-+  [RALT K_X] > 'ᳵ'
-+  [RALT K_Y] > 'ᳫ'
-+  [RALT K_Z] > '᳢'
+c Vedic Extensions Unicode Range - Right Alt 
++ [RALT K_1] > '᳑'
++ [RALT K_2] > '᳒'
++ [RALT K_3] > '᳓'
++ [RALT K_4] > '᳔'
++ [RALT K_5] > '᳕'
++ [RALT K_6] > '᳖'
++ [RALT K_7] > '᳗'
++ [RALT K_8] > '᳘'
++ [RALT K_9] > '᳙'
++ [RALT K_A] > '᳧'
++ [RALT K_BKQUOTE] > '᳐'
++ [RALT K_D] > 'ᳱ'
++ [RALT K_E] > '᳥'
++ [RALT K_G] > 'ᳩ'
++ [RALT K_H] > 'ᳬ'
++ [RALT K_I] > 'ᳮ'
++ [RALT K_O] > 'ᳯ'
++ [RALT K_P] > 'ᳰ'
++ [RALT K_Q] > '᳣'
++ [RALT K_R] > '᳦'
++ [RALT K_S] > '᳨'
++ [RALT K_T] > 'ᳪ'
++ [RALT K_U] > '᳴'
++ [RALT K_W] > '᳤'
++ [RALT K_X] > 'ᳵ'
++ [RALT K_Y] > 'ᳫ'
++ [RALT K_Z] > '᳢'
 + [RALT K_B] > '᳹'
 + [RALT K_C] > U+1CDD c VEDIC TONE DOT BELOW
 "᳝"+[RALT K_C] >U+1CDE c VEDIC TONE TWO DOTS BELOW
@@ -113,8 +121,8 @@ U+0970 +",">","
 "।"+".">"॥"
 "॥"+".">U+2026 c Horizontal Ellipsis
 U+2026 + ".">"." c four dots for a full stop
-"-" + "-"     > U+2013  c hyphen twice for en dash
-U+2013 + "-"  > U+2014  c three times for em dash
+"-" + "-" > U+2013 c hyphen twice for en dash
+U+2013 + "-" > U+2014 c three times for em dash
 
 +"_"> U+200C c ZERO-WIDTH NON-JOINER
 +"^">"्"
@@ -129,7 +137,7 @@ U+2013 + "-"  > U+2014  c three times for em dash
 +"<">"ँ" c CHANDRABINDU
 +">">"ꣳ" c CANDRABINDU VIRAMA
 +"z">"ऽ" c AVAGRAHA
-+"\"> U+093C   c NUKTA
++"\"> U+093C c NUKTA
 
 c -------------------------------------------
 
@@ -297,7 +305,7 @@ c Add Word ending a except for म्
 "ष्"+" ">"ष "
 "स्"+" ">"स "
 "ह्"+" ">"ह "
-c Add explicit viraama [ith Z{NJ
+c Add explicit viraama with ZWNJ
 "ं"+"_">"म्"U+200C
 "क्"+"_">"क्"U+200C
 "क्ष्"+"_">"क्ष्"U+200C
@@ -337,7 +345,7 @@ c Add explicit viraama [ith Z{NJ
 "ष्"+"_">"ष्"U+200C
 "स्"+"_">"स्"U+200C
 "ह्"+"_">"ह्"U+200C
-c Add explicit viraama [ith Z{NJ
+c Add explicit viraama to consonants with implicit a
 "ं"+"^">"म्"U+200C
 "क"+"^">"क्"U+200C
 "क्ष"+"^">"क्ष्"U+200C
@@ -377,7 +385,7 @@ c Add explicit viraama [ith Z{NJ
 "ष"+"^">"ष्"U+200C
 "स"+"^">"स्"U+200C
 "ह"+"^">"ह्"U+200C
-c Add explicit viraama [ith Z{NJ
+c Add explicit viraama to consonants with virama
 "ं"+"^">"म्"U+200C
 "क्"+"^">"क्"U+200C
 "क्ष्"+"^">"क्ष्"U+200C
