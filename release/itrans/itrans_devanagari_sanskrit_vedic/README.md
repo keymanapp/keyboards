@@ -1,9 +1,7 @@
-SanskritVedic keyboard
-==============
+Vedic Sanskrit Devanagari Phonetic (ITRANS) 
+============================
 
 ©2019 sanskritdocuments.org
-
-Version 1.0
 
 Description
 -----------
