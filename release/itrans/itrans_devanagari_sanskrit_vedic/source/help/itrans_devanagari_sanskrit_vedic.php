@@ -264,7 +264,7 @@ END;
 
 <h3>Conjuncts</h3>
 <p>Consonant conjuncts are automatically formed,  e.g. <kbd>k</kbd> <kbd>t</kbd> produces <samp>क्त्‌</samp>. The inherent <strong>a</strong> is only applied when followed by <kbd>space</kbd>. e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>a</kbd> or <kbd>k</kbd> <kbd>t</kbd> <kbd>space</kbd> produces <samp>क्त</samp>. To force an explicit virama at end of word, use <kbd>^</kbd> e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>^</kbd> <kbd>space</kbd> produces <samp>क्त्‌ </samp>.</p>
-<p>A full (live) consonant with visible virama in middle of words can be typed using <kbd>^</kbd>, e.g. <kbd>k</kbd> <kbd>^</kbd> <kbd>S</kbd> produces <samp>क्‌ष‌‌्‌</samp>.</p>
+<p>A full (live) consonant with visible virama in middle of words can be typed using <kbd>^</kbd>, e.g. <kbd>k</kbd> <kbd>^</kbd> <kbd>S</kbd> produces <samp>क्‌ष्</samp>.</p>
 
 <h3>Zero Width Non Joiner (ZWNJ)</h3>
 <p>To type a Zero Width Non Joiner, <kbd>_</kbd> can be typed between the letters, for example: <kbd>a</kbd> <kbd>_</kbd> <kbd>i</kbd> will generate <samp>अ‌इ</samp>.</p>
