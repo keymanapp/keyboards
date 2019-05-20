@@ -1,6 +1,10 @@
 Rohingya Arabic Keyboard Change History
 =======================
 
+1.0.1 (13 May 2019)
+-----------------
+* Fix lang tag
+
 1.0 (11 May 2018)
 -----------------
 * Move to Github
