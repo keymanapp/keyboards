@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard Help';
-  $pagetitle = 'Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard Help';
+  $pagename = 'Vedic Sanskrit Devanagari Phonetic (ITRANS) ';
+  $pagetitle = 'Vedic Sanskrit Devanagari Phonetic (ITRANS) ';
   $pagestyle = <<<END
     samp {font-family: Siddhanta; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
@@ -14,8 +14,8 @@ END;
   require_once('header.php');
 ?>
 
-<h1>Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard Help</h1>
-<h2>Version 1.0.0</h1>
+<h2>Vedic Sanskrit Devanagari Phonetic (ITRANS) </h2>
+<h2>Version 1.0.1</h1>
 
 <h3><span style="color: chocolate;">Vedic Sanskrit Devanagari Phonetic (ITRANS) </span>Keyboard</h3>
 <p>This is a phonetic Devanagari (ITRANS) keyboard layout with support for Vedic Sanskrit (Devanagari Extended and Vedic Extensions Unicode ranges).
@@ -36,62 +36,62 @@ END;
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td>क</td><td>ka</td><td>&nbsp;</td>
-<td>ख</td><td>Ka/kha</td><td>&nbsp;</td>
-<td>ग</td><td>ga</td><td>&nbsp;</td>
-<td>घ</td><td>Ga/gha</td><td>&nbsp;</td>
+<td>क</td><td>ka</td><td></td>
+<td>ख</td><td>Ka/kha</td><td></td>
+<td>ग</td><td>ga</td><td></td>
+<td>घ</td><td>Ga/gha</td><td></td>
 <td>ङ</td><td>~Na/Nga</td>
 </tr>
 <tr>
-<td>च</td><td>ca/cha</td><td>&nbsp;</td>
-<td>छ</td><td>Ca/Cha</td><td>&nbsp;</td>
-<td>ज</td><td>ja</td><td>&nbsp;</td>
-<td>झ</td><td>Ja/jha</td><td>&nbsp;</td>
+<td>च</td><td>ca/cha</td><td></td>
+<td>छ</td><td>Ca/Cha</td><td></td>
+<td>ज</td><td>ja</td><td></td>
+<td>झ</td><td>Ja/jha</td><td></td>
 <td>ञ</td><td>~na/Ya</td>
 </tr>
 <tr>
-<td>ट</td><td>Ta</td><td>&nbsp;</td>
-<td>ठ</td><td>Tha</td><td>&nbsp;</td>
-<td>ड</td><td>Da</td><td>&nbsp;</td>
-<td>ढ</td><td>Dha</td><td>&nbsp;</td>
+<td>ट</td><td>Ta</td><td></td>
+<td>ठ</td><td>Tha</td><td></td>
+<td>ड</td><td>Da</td><td></td>
+<td>ढ</td><td>Dha</td><td></td>
 <td>ण</td><td>Na</td>
 </tr>
 <tr>
-<td>त</td><td>ta</td><td>&nbsp;</td>
-<td>थ</td><td>tha</td><td>&nbsp;</td>
-<td>द</td><td>da</td><td>&nbsp;</td>
-<td>ध</td><td>dha</td><td>&nbsp;</td>
+<td>त</td><td>ta</td><td></td>
+<td>थ</td><td>tha</td><td></td>
+<td>द</td><td>da</td><td></td>
+<td>ध</td><td>dha</td><td></td>
 <td>न</td><td>na</td>
 </tr>
 <tr>
-<td>प</td><td>pa</td><td>&nbsp;</td>
-<td>फ</td><td>pha</td><td>&nbsp;</td>
-<td>ब</td><td>ba</td><td>&nbsp;</td>
-<td>भ</td><td>bha</td><td>&nbsp;</td>
+<td>प</td><td>pa</td><td></td>
+<td>फ</td><td>pha</td><td></td>
+<td>ब</td><td>ba</td><td></td>
+<td>भ</td><td>bha</td><td></td>
 <td>म</td><td>ma</td>
 </tr>
 <tr>
 </tr>
 <tr>
-<td>य</td><td>ya</td><td>&nbsp;</td>
-<td>र</td><td>ra</td><td>&nbsp;</td>
-<td>ल</td><td>la</td><td>&nbsp;</td>
-<td>ळ</td><td>La</td><td>&nbsp;</td>
+<td>य</td><td>ya</td><td></td>
+<td>र</td><td>ra</td><td></td>
+<td>ल</td><td>la</td><td></td>
+<td>ळ</td><td>La</td><td></td>
 <td>व</td><td>va/wa</td>
 </tr>
 <tr>
-<td>श</td><td>sha</td><td>&nbsp;</td>
-<td>ष</td><td>Sa/Sha</td><td>&nbsp;</td>
-<td>स</td><td>sa</td><td>&nbsp;</td>
-<td>ह</td><td>ha</td><td>&nbsp;</td>
+<td>श</td><td>sha</td><td></td>
+<td>ष</td><td>Sa/Sha</td><td></td>
+<td>स</td><td>sa</td><td></td>
+<td>ह</td><td>ha</td><td></td>
 <td>क्</td><td>k</td>
 </tr>
 <tr>
-<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-<td>क्ष</td><td>xa/kSa</td><td>&nbsp;</td>
-<td>त्र</td><td>tra</td><td>&nbsp;</td>
-<td>ज्ञ</td><td>GYa/j~na</td><td>&nbsp;</td>
-<td>&nbsp;</td><td>&nbsp;</td>
+<td></td><td></td><td></td>
+<td>क्ष</td><td>xa/kSa</td><td></td>
+<td>त्र</td><td>tra</td><td></td>
+<td>ज्ञ</td><td>GYa/j~na</td><td></td>
+<td></td><td></td>
 </tr>
 </tbody>
 </table>
@@ -263,7 +263,13 @@ END;
 </table>
 
 <h3>Conjuncts</h3>
-<p>Consonant conjuncts are automatically formed,  e.g. <kbd>k</kbd> <kbd>t</kbd> produces <samp>क्त्‌</samp>. The inherent <strong>a</strong> is only applied when followed by <kbd>space</kbd>. e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>a</kbd> or <kbd>k</kbd> <kbd>t</kbd> <kbd>space</kbd> produces <samp>क्त</samp>. To force an explicit virama at end of word, use <kbd>^</kbd> e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>^</kbd> <kbd>space</kbd> produces <samp>क्त्‌ </samp>.</p>
+<p>Consonant conjuncts are automatically formed,  e.g. <kbd>k</kbd> <kbd>t</kbd> produces <samp>क्त्‌</samp>. The inherent <strong>a</strong> is only applied when followed by <kbd>space</kbd>. e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>a</kbd> or <kbd>k</kbd> <kbd>t</kbd> <kbd>space</kbd> produces <samp>क्त</samp>. 
+    
+<h3>Special Consonant conjuncts</h3>
+`Panchama varna`  <samp>ङ्</samp> and <samp>ञ्</samp> as part of consonant conjuncts can be typed as <kbd>n</kbd> e.g. <kbd>m</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>g</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>space</kbd> will output the word <strong>मङ्गल </strong>, <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>अ</kbd> will output the word <strong>चञ्चल</strong>.
+    
+<h3>Explicit Virama</h3>
+<p>To force an explicit virama at end of word, use <kbd>^</kbd> e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>^</kbd> <kbd>space</kbd> produces <samp>क्त्‌ </samp>.</p>
 <p>A full (live) consonant with visible virama in middle of words can be typed using <kbd>^</kbd>, e.g. <kbd>k</kbd> <kbd>^</kbd> <kbd>S</kbd> produces <samp>क्‌ष्</samp>.</p>
 
 <h3>Zero Width Non Joiner (ZWNJ)</h3>
@@ -332,12 +338,12 @@ END;
 <tr> <td><kbd>=</kbd><kbd>=</kbd></td> <td><samp>ᳶ</samp></td> <td> VEDIC SIGN UPADHMANIYA</td></tr>
 </tbody>
 </table>
+
 <h3>Samaveda Combining Marks</h3>
 <ol>
 <li>For typing Samaveda combining mark with digits, press the number keys and then the equal key, for example <kbd>9</kbd> <kbd>=</kbd> produces <samp>꣩</samp>.</li>
 <li>For typing other Samaveda combining marks, press the letter key and then the equal key as per the following table.
 </li>
-</ol>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -357,6 +363,12 @@ END;
 <tr> <td><kbd>v</kbd><kbd>=</kbd></td> <td><samp>꣰</samp></td> <td>COMBINING DEVANAGARI LETTER VI </td></tr>
 </tbody>
 </table>
+<li>Alternately use the Right Ctrl layout.</li>
+<center>
+<h3>RCtrl</h3>
+<p><img src="itrans_devanagari_sanskrit_vedicU_RC.png" alt="RCtrl state"/></p>
+</center>
+</ol>
 
 <h3>Other Vedic characters</h3>
 <center>
