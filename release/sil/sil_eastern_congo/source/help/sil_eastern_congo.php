@@ -45,6 +45,9 @@
                 <td>;h</td><td>ħ</td><td>;H</td><td>Ħ</td>
             </tr>
             <tr>
+                <td>;j</td><td>ɦ</td><td>;J</td><td>Ɦ</td>
+            </tr>
+            <tr>
                 <td>;i</td><td>ɨ</td><td>;I</td><td>Ɨ</td>
             </tr>
             <tr>
