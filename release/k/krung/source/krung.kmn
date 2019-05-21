@@ -88,20 +88,19 @@ store(any_con_but_bo)   outs(all_sin_con1) outs(all_sin_con2)
 
 
 c +++++++++++++++++ VE and EE Vowel Combination Disambiguation +++++++++++++++++ 
-U+1794 + [K_V]                      > context(1) U+17CA U+17B9 dk(deadkey_v)
-any(all_sin_con2) + [K_V]           > context(1) U+17B9 dk(deadkey_v)   c ឹ in series 2
-U+17B6 any(any_con) U+17CB + [K_V]  > context(2) U+17B9 dk(deadkey_v)   c in presyllable, Ca.mainSyllable
-any(con_triisap) + [K_V]            > context(1) U+17CA U+17B9 dk(deadkey_v)
-U+1785 + [K_V]                      > U+1787 U+17B9 dk(deadkey_v)
-U+178A + [K_V]                      > U+178C U+17B9 dk(deadkey_v)
-U+1786 + [K_V]                      > U+1788 U+17B9 dk(deadkey_v)
-U+1780 + [K_V]                      > U+1782 U+17B9 dk(deadkey_v)
-U+178E + [K_V]                      > U+1793 U+17B9 dk(deadkey_v)
-U+178F + [K_V]                      > U+1791 U+17B9 dk(deadkey_v)
-U+178B + [K_V]                      > U+178D U+17B9 dk(deadkey_v)
-U+1781 + [K_V]                      > U+1783 U+17B9 dk(deadkey_v)
-U+1795 + [K_V]                      > U+1797 U+17B9 dk(deadkey_v)
-U+1790 + [K_V]                      > U+1792 U+17B9 dk(deadkey_v)
+U+1794 + [K_V]                                      > context(1) U+17CA U+17B9 dk(deadkey_v)
+any(all_sin_con2) + [K_V]                           > context(1) U+17B9 dk(deadkey_v)   c ឹ in series 2
+any(con_triisap) + [K_V]                            > context(1) U+17CA U+17B9 dk(deadkey_v)
+U+1785 + [K_V]                                      > U+1787 U+17B9 dk(deadkey_v)
+U+178A + [K_V]                                      > U+178C U+17B9 dk(deadkey_v)
+U+1786 + [K_V]                                      > U+1788 U+17B9 dk(deadkey_v)
+U+1780 + [K_V]                                      > U+1782 U+17B9 dk(deadkey_v)
+U+178E + [K_V]                                      > U+1793 U+17B9 dk(deadkey_v)
+U+178F + [K_V]                                      > U+1791 U+17B9 dk(deadkey_v)
+U+178B + [K_V]                                      > U+178D U+17B9 dk(deadkey_v)
+U+1781 + [K_V]                                      > U+1783 U+17B9 dk(deadkey_v)
+U+1795 + [K_V]                                      > U+1797 U+17B9 dk(deadkey_v)
+U+1790 + [K_V]                                      > U+1792 U+17B9 dk(deadkey_v)
 
 U+17A2 U+17CA U+17B9 dk(deadkey_v) + [K_E]      > context(1) U+17BF c ve > ឿ (non-series)
 U+17CA U+17B9 dk(deadkey_v) + [K_E]             > U+17BF    c ve > ឿ (non-series)
@@ -117,6 +116,13 @@ U+1794 + [K_E]                      > context(1) U+17B9 dk(deadkey_e)
 
 U+17B9 dk(deadkey_v) + [K_E]                    > U+17BF    c ve > ឿ (non-series)
 U+17B9 dk(deadkey_e) + [K_E]                    > U+17BE    c ee > ើ (series 1)
+
+c vy
+any(con_muusikatoan) U+17B9 dk(deadkey_v) + [K_Y]   > context(1) U+17C9 U+17B8 
+U+179B U+17B9 dk(deadkey_v) + [K_Y]                 > U+17A1 U+17B8         c lvy
+U+1793 U+17B9 dk(deadkey_v) + [K_Y]                 > U+178E U+17B8         c nvy
+U+1796 U+17B9 dk(deadkey_v) + [K_Y]                 > U+1794 U+17C9 U+17B8  c pvy
+
 
 
 c +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++MAIN SYLLABLE ONLY+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -230,8 +236,28 @@ U+17B6 any(all_sin_con1) U+17CB + [K_E]          > context(2) U+17B9 dk(deadkey_
 c any(regShift) U+17B6 any(all_sin_con2) U+17CB + [K_V]          > context(3) U+17B9 dk(deadkey_v)
 c any(regShift) U+17B6 any(all_sin_con1) U+17CB + [K_E]          > context(3) U+17B9 dk(deadkey_e)
 
-c cont. from here
 
+c presyllable with "-amV-" in the transition to the main syllable
+any(any_con) U+17B6 U+17C6 + any(sin_vow1_key)    > context(1) U+1798 U+17C9 index(sin_vow1_out,4)  c CamV1
+any(any_con) U+17B6 U+17C6 + any(sin_vow2_key)    > context(1) U+1798 index(sin_vow2_out,4)         c CamV2
+any(any_con) U+17B6 U+17C6 + [K_V]                > context(1) U+1798 U+17B9 dk(deadkey_v)          c Camv
+any(any_con) U+17B6 U+17C6 + [K_A]                > context(1) U+1798 U+17C9 U+17B6 U+1782 U+17CB   c Cama
+any(any_con) U+17B6 U+17C6 + [K_Z]                > context(1) U+1798 U+17C9 U+1782 U+17CB          c Camz
+any(any_con) U+17B6 U+17C6 + [K_E]                > context(1) U+1798 U+17C9 U+17B9 dk(deadkey_e)   c Came
+any(any_con) U+17B6 U+17C6 U+17B7 + [K_X]         > context(1) U+1798 U+17C2                        c Camxx 
+
+c presyllable with "-amC-"
+any(any_con) U+17B6 U+17C6 + any(sin_con1_key)    > context(1) context(3) index(sin_con1_out,4)     c CamC1
+any(any_con) U+17B6 U+17C6 + any(sin_con2_key)    > context(1) context(3) index(sin_con2_out,4)     c CamC2
+
+
+
+
+
+
+
+
+c cont. from here
 
 
 
@@ -684,17 +710,11 @@ U+1782 U+17CB + any(sin_con1_key)           > index(sin_con1_out,3) context(2)
 U+1782 U+17CB + any(sin_con2_key)           > index(sin_con2_out,3) context(2)
 
 
-c +++++++++++++++++ VE Vowel Combination +++++++++++++++++ 
-c any(any_con) + [K_V]    > context(1) dk(deadkey_v)
-c dk(deadkey_v) + [K_E]   > U+17BF    c ve > ឿ
 
-c any(any_con) + [K_E]    > context(1) dk(deadkey_e)
-c dk(deadkey_e) + [K_E]   > U+17BE    c ee > ើ
 
-c match > use(VE_combo)
-c group(VE_combo)
 
-c any(any_con) U+17B9     > context(1) dk(deadkey_v) 
+
+
 
 
 c +++++++++++++++++ NORMALIZATION +++++++++++++++++
