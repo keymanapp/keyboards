@@ -251,7 +251,15 @@ any(any_con) U+17B6 U+17C6 + any(sin_con1_key)    > context(1) context(3) index(
 any(any_con) U+17B6 U+17C6 + any(sin_con2_key)    > context(1) context(3) index(sin_con2_out,4)     c CamC2
 
 
-
+c presyllable with "-alV-"
+any(any_con) U+17B6 U+179B U+17CB + any(sin_vow1_key)   > context(1) U+17A1 index(sin_vow1_out,5)       c CalV1
+any(any_con) U+17B6 U+179B U+17CB + any(sin_vow2_key)   > context(1) context(3) index(sin_vow2_out,5)   c CalV2
+any(any_con) U+17B6 U+179B U+17CB + [K_V]               > context(1) context(3) U+17B9 dk(deadkey_v)    c Calv
+any(any_con) U+17B6 U+179B U+17CB + [K_A]               > context(1) U+17A1 U+17B6 U+1782 U+17CB        c Cala
+any(any_con) U+17B6 U+179B U+17CB + [K_Z]               > context(1) U+17A1 U+1782 U+17CB               c Calz
+any(any_con) U+17B6 U+179B U+17CB + [K_E]               > context(1) U+17A1 U+17C9 U+17B9 dk(deadkey_e) c Cale
+any(any_con) U+17B6 U+179B U+17CB + [K_X]               > context(1) U+17A1 U+17B7                      c Calx
+any(any_con) U+17A1 U+17B7 + [K_X]                      > context(1) U+179B U+17C2                      c Calxx 
 
 
 
