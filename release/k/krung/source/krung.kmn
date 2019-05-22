@@ -215,26 +215,67 @@ c +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ START PR
 
 c Presyllables: CV, CCV, h , q + nasal
 
-store(regShift)     U+17C9 U+17CA
-
-U+17B6 any(all_sin_con1) U+17CB + any(sin_vow1_key)     > context(2) index(sin_vow1_out,4)
-U+17B6 any(all_sin_con1) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
-U+17B6 any(all_sin_con1) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+c -abV1-
 U+17B6 any(con_bo) U+17CB + any(sin_vow1_key)           > context(2) index(sin_vow1_out,4)
 U+17B6 any(con_bo) U+17CB + [K_A]                       > context(2) U+17B6 U+1782 U+17CB
 U+17B6 any(con_bo) U+17CB + [K_Z]                       > context(2) U+1782 U+17CB
+U+17B6 any(con_bo) U+17CB + [K_E]                       > context(2) U+17B9 dk(deadkey_e)
+
+U+17C9 U+17B6 any(con_bo) U+17CB + any(sin_vow1_key)    > context(3) index(sin_vow1_out,5)
+U+17C9 U+17B6 any(con_bo) U+17CB + [K_A]                > context(3) U+17B6 U+1782 U+17CB
+U+17C9 U+17B6 any(con_bo) U+17CB + [K_Z]                > context(3) U+1782 U+17CB
+U+17C9 U+17B6 any(con_bo) U+17CB + [K_E]                > context(3) U+17B9 dk(deadkey_e)
+
+c -abV2-
+U+17B6 any(con_bo) U+17CB + any(sin_vow2_key)           > context(2) U+17CA index(sin_vow2_out,4)
+U+17B6 any(con_bo) U+17CB + [K_V]                       > context(2) U+17CA U+17B9 dk(deadkey_v)
+
+U+17C9 U+17B6 any(con_bo) U+17CB + any(sin_vow2_key)    > context(3) U+17CA index(sin_vow2_out,5)
+U+17C9 U+17B6 any(con_bo) U+17CB + [K_V]                > context(3) U+17CA U+17B9 dk(deadkey_v)
+
+c Cabzz ៝៝៝ប 
+any(any_con) any(con_bo) U+1782 U+17CB + [K_Z]          > context(1) U+17DD context(2)
+any(any_con) U+17C9 any(con_bo) U+1782 U+17CB + [K_Z]   > context(1) U+17DD context(3)
+
+U+17C9 any(any_con) any(con_bo) U+1782 U+17CB + [K_Z]           > context(2) U+17DD context(3)
+U+17C9 any(any_con) U+17C9 any(con_bo) U+1782 U+17CB + [K_Z]    > context(2) U+17DD context(4)
+
+c -abrV-
+U+17B6 U+1794 U+17CB + [K_R]            > context(2) U+17D2 U+179A  c kabra
+
+U+17C9 U+17B6 U+1794 U+17CB + [K_R]     > context(3) U+17D2 U+179A  c gabra 
 
 
-U+17B6 any(all_sin_con2) U+17CB + any(sin_vow2_key)     > context(2) index(sin_vow2_out,4)
-U+17B6 any(all_sin_con2) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
-U+17B6 any(all_sin_con2) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+c -apV-
 
 
-U+17B6 any(all_sin_con2) U+17CB + [K_V]          > context(2) U+17B9 dk(deadkey_v)
-U+17B6 any(all_sin_con1) U+17CB + [K_E]          > context(2) U+17B9 dk(deadkey_e)
+c -aqV-
 
-c any(regShift) U+17B6 any(all_sin_con2) U+17CB + [K_V]          > context(3) U+17B9 dk(deadkey_v)
-c any(regShift) U+17B6 any(all_sin_con1) U+17CB + [K_E]          > context(3) U+17B9 dk(deadkey_e)
+
+c for consonants whose series changes by means of Muusikatoan/Triisap
+c U+17B6 any(con_muusikatoan) U+17CB + any(sin_vow1_key)     > context(2) index(sin_vow1_out,4)
+c U+17B6 any(con_muusikatoan) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
+c U+17B6 any(con_muusikatoan) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+c U+17B6 any(con_muusikatoan) U+17CB + [K_V]          > context(2) U+17B9 dk(deadkey_v)
+c U+17B6 any(con_muusikatoan) U+17CB + [K_E]          > context(2) U+17B9 dk(deadkey_e)
+
+c U+17B6 any(con_muusikatoan) U+17CB + any(sin_vow2_key)     > context(2) index(sin_vow2_out,4)
+c U+17B6 any(con_muusikatoan) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
+c U+17B6 any(con_muusikatoan) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+c U+17B6 any(con_muusikatoan) U+17CB + [K_V]          > context(2) U+17B9 dk(deadkey_v)
+c U+17B6 any(con_muusikatoan) U+17CB + [K_E]          > context(2) U+17B9 dk(deadkey_e)
+
+c U+17B6 any(con_triisap) U+17CB + any(sin_vow2_key)     > context(2) index(sin_vow2_out,4)
+c U+17B6 any(con_triisap) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
+c U+17B6 any(con_triisap) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+c U+17B6 any(con_triisap) U+17CB + [K_V]          > context(2) U+17B9 dk(deadkey_v)
+c U+17B6 any(con_triisap) U+17CB + [K_E]          > context(2) U+17B9 dk(deadkey_e)
+
+c U+17B6 any(con_triisap) U+17CB + any(sin_vow1_key)     > context(2) index(sin_vow1_out,4)
+c U+17B6 any(con_triisap) U+17CB + [K_A]                 > context(2) U+17B6 U+1782 U+17CB
+c U+17B6 any(con_triisap) U+17CB + [K_Z]                 > context(2) U+1782 U+17CB
+c U+17B6 any(con_triisap) U+17CB + [K_V]          > context(2) U+17B9 dk(deadkey_v)
+c U+17B6 any(con_triisap) U+17CB + [K_E]          > context(2) U+17B9 dk(deadkey_e)
 
 
 c presyllable with "-amV-" in the transition to the main syllable
@@ -262,6 +303,52 @@ any(any_con) U+17B6 U+179B U+17CB + [K_X]               > context(1) U+17A1 U+17
 any(any_con) U+17A1 U+17B7 + [K_X]                      > context(1) U+179B U+17C2                      c Calxx 
 
 
+c -anV- 
+c U+178E + any(sin_vow2_key)              > U+1793 index(sin_vow2_out,2)
+
+
+c -acV- 
+c U+1785 + any(sin_vow2_key)              > U+1787 index(sin_vow2_out,2)  
+
+
+c -adV- 
+c U+178A + any(sin_vow2_key)              > U+178C index(sin_vow2_out,2)  
+
+
+c -ajV- 
+c U+1786 + any(sin_vow2_key)              > U+1788 index(sin_vow2_out,2)  
+
+
+c -akV- 
+c U+1780 + any(sin_vow2_key)              > U+1782 index(sin_vow2_out,2)  
+
+
+c -atV- 
+c U+178F + any(sin_vow2_key)              > U+1791 index(sin_vow2_out,2)  
+
+c -atrV-
+U+17B6 U+178F U+17CB + [K_R]            > context(2) U+17D2 U+179A  c katra
+
+U+17C9 U+17B6 U+178F U+17CB + [K_R]     > context(3) U+17D2 U+179A  c gatra 
+
+
+c -asV-
+
+
+c -aqdV- 
+c U+178B + any(sin_vow2_key)              > U+178D index(sin_vow2_out,2)
+
+
+c -akhV- 
+c U+1781 + any(sin_vow2_key)              > U+1783 index(sin_vow2_out,2)
+
+
+c -aphV- 
+c U+1795 + any(sin_vow2_key)              > U+1797 index(sin_vow2_out,2)
+
+
+c -athV- 
+c U+1790 + any(sin_vow2_key)              > U+1792 index(sin_vow2_out,2)
 
 
 
