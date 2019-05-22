@@ -6,8 +6,8 @@ Gujarati Phonetic (ITRANS)
 Description
 -----------
 
-Gujarati keyboard using the phonetic ITRANS transliteration scheme. 
-Examples: Type `saMskRta` for સંસ્કૃત, `hindI` for હિન્દી, `gujaratI` for ગુજરાતી.
+A Phonetic keyboard for Gujarati using ITRANS transliteration scheme. 
+Examples: Type `saMskRta` for સંસ્કૃત, `hindI` for હિન્દી, `gujarAtI` for ગુજરાતી.
 
 
 Supported Platforms
