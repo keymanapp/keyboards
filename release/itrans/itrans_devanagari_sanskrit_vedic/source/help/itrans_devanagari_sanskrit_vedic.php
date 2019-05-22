@@ -15,7 +15,7 @@ END;
 ?>
 
 <h2>Vedic Sanskrit Devanagari Phonetic (ITRANS) </h2>
-<h2>Version 1.0.1</h1>
+<h2>Version 1.1.0</h1>
 
 <h3><span style="color: chocolate;">Vedic Sanskrit Devanagari Phonetic (ITRANS) </span>Keyboard</h3>
 <p>This is a phonetic Devanagari (ITRANS) keyboard layout with support for Vedic Sanskrit (Devanagari Extended and Vedic Extensions Unicode ranges).
@@ -112,9 +112,9 @@ END;
 <th colspan="2">R^</th>
 <th colspan="2">|</th>
 <th colspan="2">|^</th>
-<th colspan="2">e/E</th>
+<th colspan="2">e</th>
 <th colspan="2">ai/ei</th>
-<th colspan="2">o/O</th>
+<th colspan="2">o</th>
 <th colspan="2">au/ou</th>
 </tr>
 <tr>
@@ -128,9 +128,9 @@ END;
 <th>R^</th><th>kR^</th>
 <th>|</th><th>k|</th>
 <th>|^</th><th>k|^</th>
-<th>e</th><th>kE</th>
+<th>e</th><th>ke</th>
 <th>ai</th><th>kai</th>
-<th>o</th><th>kO</th>
+<th>o</th><th>ko</th>
 <th>au</th><th>kau</th>
 </tr>
 </thead>
@@ -174,14 +174,14 @@ END;
 <tbody>
 <thead>
 <tr>
-<th colspan="2">{</th>
-<th colspan="2">}</th>
+<th colspan="2">ae/E</th>
+<th colspan="2">aw/O</th>
 <th colspan="2">[</th>
 <th colspan="2">]</th>
 </tr>
 <tr>
-<th>{</th><th>k{</th>
-<th>}</th><th>k}</th>
+<th>{</th><th>kae</th>
+<th>}</th><th>kaw</th>
 <th>[</th><th>k[</th>
 <th>]</th><th>k]</th>
 </tr>
@@ -266,7 +266,7 @@ END;
 <p>Consonant conjuncts are automatically formed,  e.g. <kbd>k</kbd> <kbd>t</kbd> produces <samp>क्त्‌</samp>. The inherent <strong>a</strong> is only applied when followed by <kbd>space</kbd>. e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>a</kbd> or <kbd>k</kbd> <kbd>t</kbd> <kbd>space</kbd> produces <samp>क्त</samp>. 
     
 <h3>Special Consonant conjuncts</h3>
-`Panchama varna`  <samp>ङ्</samp> and <samp>ञ्</samp> as part of consonant conjuncts can be typed as <kbd>n</kbd> e.g. <kbd>m</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>g</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>space</kbd> will output the word <strong>मङ्गल </strong>, <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>अ</kbd> will output the word <strong>चञ्चल</strong>.
+`Panchama varna`  <samp>ङ्</samp> and <samp>ञ्</samp> as part of consonant conjuncts can be typed as <kbd>n</kbd> e.g. <kbd>m</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>g</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>space</kbd> will output the word <strong>मङ्गल </strong>, <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>a</kbd> will output the word <strong>चञ्चल</strong>.
     
 <h3>Explicit Virama</h3>
 <p>To force an explicit virama at end of word, use <kbd>^</kbd> e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>^</kbd> <kbd>space</kbd> produces <samp>क्त्‌ </samp>.</p>
@@ -286,10 +286,11 @@ END;
 </thead>
 <tbody>
 <tr> <td><kbd>,</kbd></td> <td><samp>॰</samp></td> <td>Devanagari Abbreviation Sign</td></tr>
+<tr> <td><kbd>,</kbd><kbd>,</kbd></td> <td><samp>,</samp></td> <td>Comma</td></tr>
 <tr> <td><kbd>.</kbd></td> <td><samp>।</samp></td> <td>DanDaa</td></tr>
-<tr> <td><kbd>.</kbd><kbd>.</kbd></td> <td><samp>॥</samp></td> <td>Double DanDaa</td></tr>
-<tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td><samp>…</samp></td> <td>Ellipsis</td></tr>
-<tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td><samp>.</samp></td> <td>Period</td></tr>
+<tr> <td><kbd>.</kbd><kbd>.</kbd></td> <td><samp>.</samp></td> <td>Period</td></tr>
+<tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td><samp>॥</samp></td> <td>Double DanDaa</td></tr>
+<tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td><samp>…</samp></td> <td>Ellipsis</td></tr>
 <tr> <td><kbd>-</kbd></td> <td><samp>-</samp></td> <td>Dash</td></tr>
 <tr> <td><kbd>-</kbd><kbd>-</kbd></td> <td><samp>–</samp></td> <td>En Dash</td></tr>
 <tr> <td><kbd>-</kbd><kbd>-</kbd><kbd>-</kbd></td> <td><samp>—</samp></td> <td>Em Dash</td></tr>
@@ -311,13 +312,13 @@ END;
 </thead>
 <tbody>
 <tr> <td><kbd>#</kbd></td> <td><samp>ॐ</samp></td> <td>DEVANAGARI OM SIGN</td></tr>
-<tr> <td><kbd>$</kbd></td> <td><samp>࿕</samp></td> <td>U+0FD5  RIGHT-FACING SVASTI SIGN</td></tr>
-<tr> <td><kbd>%</kbd></td> <td><samp>࿗</samp></td> <td>U+0FD7  RIGHT-FACING SVASTI SIGN WITH DOTS</td></tr>
+<tr> <td><kbd>$</kbd></td> <td><samp>₹</samp></td> <td> RUPEE SIGN</td></tr>
+<tr> <td><kbd>%</kbd></td> <td><samp>࿕</samp></td> <td>U+0FD5  RIGHT-FACING SVASTI SIGN</td></tr>
 <tr> <td><kbd>*</kbd></td> <td><samp>❀</samp></td> <td>U+2740 WHITE FLORETTE UNICODE CHARACTER</td></tr>
 <tr> <td><kbd>&</kbd></td> <td><samp>☸</samp></td> <td>U+2638 WHEEL OF DHARMA UNICODE CHARACTER </td></tr>
 <tr> <td><kbd><</kbd></td> <td><samp>ँ</samp></td> <td> CHANDRABINDU</td></tr>
 <tr> <td><kbd>z</kbd></td> <td><samp>ऽ</samp></td> <td> AVAGRAHA</td></tr>
-<tr> <td><kbd>\</kbd></td> <td><samp>़</samp></td> <td>U+093C   NUKTA</td></tr>
+<tr> <td><kbd>\</kbd></td> <td><samp>़</samp></td> <td> NUKTA</td></tr>
 </tbody>
 </table>
 <h3>Commonly used Vedic Accents</h3>

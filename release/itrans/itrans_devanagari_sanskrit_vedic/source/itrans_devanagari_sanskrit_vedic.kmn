@@ -1,9 +1,13 @@
-﻿c Version 1.0.1 Changes based on user feedback
+﻿c Version 1.1.0 
+c 20190522 - Changes based on user feedback
+c Increase minor version because of mapping change
+c Change {/ऍ , }/ऑ  to ae/E/ऍ ,   aw/O/ऑ
+c Add alternate mapping for Samaveda marks on Right Ctrl layout
 c Add Hindi as a supported language
-c Add alternate method for Samaveda marks on Right Ctrl layout
-c Change {/ऍ , }/ऑ  to ae/E/ऍ ,   aw/O/ऑ  
-c Mark unused alphabet keys with Nul
-c Version 1.0.0 Initial Version
+c Give error for unused keys with beep
+c Display punctuation marks on OSK
+c Display ZWNJ on OSK for _
+c Version 1.0.0
 c 20190517 - Fixes based on PR feedback, Remove Q for English output
 c 20190516 - Fix comments in kmn, improve welcome.htm
 c 20190515 - Initial submission to Github
@@ -20,7 +24,7 @@ store(&TARGETS) 'windows macosx linux web'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
 store(&MESSAGE) 'A Phonetic Devanagari (ITRANS) keyboard with support for Vedic Sanskrit (Devanagari Extended and Vedic Extensions Unicode ranges).'
 store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted, Right Alt and Right Ctrl layouts.'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.1.0'
 store(&BITMAP) 'itrans_devanagari_sanskrit_vedic.ico'
 store(&VISUALKEYBOARD) 'itrans_devanagari_sanskrit_vedic.kvks'
 
@@ -28,14 +32,14 @@ begin Unicode > use(main)
 group(main) using keys
 
 c Unmapped Alphabet Keys
-+	"f"	>	nul
-+	"q"	>	nul
-+	"F"	>	nul
-+	"Q"	>	nul
-+	"V"	>	nul
-+	"W"	>	nul
-+	"X"	>	nul
-+	"Z"	>	nul
++	"f"	>	beep
++	"q"	>	beep
++	"F"	>	beep
++	"Q"	>	beep
++	"V"	>	beep
++	"W"	>	beep
++	"X"	>	beep
++	"Z"	>	beep
 
 c Unchanged Punctuation Keys
 +	"-"	>	"-"
@@ -49,6 +53,8 @@ c Unchanged Punctuation Keys
 +	"?"	>	"?"
 +	"("	>	"("
 +	")"	>	")"
++	"{"	>	"{"
++	"}"	>	"}"
 +	"@"	>	"@"
 +	'"'	>	'"' c DOUBLE QUOTE
 
@@ -159,6 +165,25 @@ c Alternate - Right Ctrl for Samaveda Combining Marks
 + [RCTRL K_PERIOD] > 'ꣳ'
 + [RCTRL K_COMMA] > 'ꣲ'
 
+c Unmapped RCTRL Keys
++ [RCTRL K_B] > beep
++ [RCTRL K_C] > beep
++ [RCTRL K_D] > beep
++ [RCTRL K_E] > beep
++ [RCTRL K_F] > beep
++ [RCTRL K_G] > beep
++ [RCTRL K_H] > beep
++ [RCTRL K_I] > beep
++ [RCTRL K_J] > beep
++ [RCTRL K_M] > beep
++ [RCTRL K_O] > beep
++ [RCTRL K_Q] > beep
++ [RCTRL K_T] > beep
++ [RCTRL K_W] > beep
++ [RCTRL K_X] > beep
++ [RCTRL K_Y] > beep
++ [RCTRL K_Z] > beep
+
 c	Vedic Extensions Unicode Range - Right Alt 
 +	[RALT	K_1]	>	'᳑'
 +	[RALT	K_2]	>	'᳒'
@@ -195,6 +220,10 @@ c	Vedic Extensions Unicode Range - Right Alt
 +	[RALT	K_M]	>	'᳢'
 +	[RALT	K_N]	>	'᳠'
 +	[RALT	K_V]	>	'᳸'
+
+c Unmapped RALT Keys
++ [RALT K_K] > beep
++ [RALT K_J] > beep
 
 c vowel signs with @
 "@"	+	"A"	>	"ा"
