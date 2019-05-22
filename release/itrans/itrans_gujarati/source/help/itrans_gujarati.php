@@ -185,12 +185,12 @@ END;
     <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
       <thead>
         <tr>
-          <th colspan="2">E</th>
-          <th colspan="2">O</th>
+          <th colspan="2">E/ae</th>
+          <th colspan="2">O/aw</th>
         </tr>
         <tr>
-          <th>E</th> <th>kE</th>
-          <th>O</th> <th>kO</th>
+          <th>E/ae</th> <th>kE/kae</th>
+          <th>O/aw</th> <th>kO/kaw</th>
         </tr>
       </thead>
       <tr>
@@ -206,8 +206,9 @@ END;
     <p>Arranged with the vowels are two consonantal diacritics, the final nasal anusvāra ં 
     <kbd>M</kbd> and the final fricative visarga ઃ 
     <kbd>H</kbd> (called અં aṁ and અઃ aḥ). Another diacritic is the candrabindu/anunāsika ઁ 
-    <kbd>&lt;</kbd> (અઁ). These consonantal diacritics follow the vowel signs including the implicit ’a’. The following table shows consonant ’k’ followed by
-    various dependent vowel signs and consonantal diacritics ં <kbd>M</kbd> and ઃ <kbd>H</kbd> .</p>
+    <kbd>&lt;</kbd> (અઁ). These consonantal diacritics follow the vowel signs including the implicit ’a’. 
+    The following table shows consonant ’k’ followed by
+    various dependent vowel signs and consonantal diacritics ં <kbd>M</kbd>, ઃ <kbd>H</kbd> and ઁ <kbd>&lt;</kbd>.</p>
     <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
       <thead>
         <tr>
