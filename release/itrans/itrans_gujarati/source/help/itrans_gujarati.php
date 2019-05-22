@@ -1,8 +1,8 @@
 <?php
-  $pagename = 'Gujarati Phonetic (ITRANS) Help';
-  $pagetitle = 'Gujarati Phonetic (ITRANS) Help';
+  $pagename = 'Gujarati Phonetic (ITRANS)';
+  $pagetitle = 'Gujarati Phonetic (ITRANS)';
   $pagestyle = <<<END
-    samp {font-family: Siddhanta; font-size:20pt;   }
+    samp {font-family: 'Arial Unicode MS'; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
     .inputSequences {border-collapse: collapse;font-size: 14px;min-width: 592px;}
     .inputSequences th, .inputSequences td {padding: 7px 17px;}
@@ -14,7 +14,7 @@ END;
   require_once('header.php');
 ?>
 
-<h2>Gujarati Phonetic (ITRANS) Help</h2>
+<h2>Gujarati Phonetic (ITRANS)</h2>
     <h2>
     <span style="color: chocolate;">Gujarati Phonetic (ITRANS)</span> Keyboard Version 1.0.0</h2>
     <p>This is a phonetic (ITRANS) keyboard layout for Gujarati. It is based on 
@@ -45,63 +45,63 @@ END;
     <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
       <tbody>
         <tr>
-          <td>ક</td>          <td>ka</td>          <td>|</td>
-          <td>ખ</td>          <td>Ka/kha</td>          <td>|</td>
-          <td>ગ</td>          <td>ga</td>          <td>|</td>
-          <td>ઘ</td>          <td>Ga/gha</td>          <td>|</td>
-          <td>ઙ</td>          <td>~Na/Nga</td>
+          <td>ક</td> <td>ka</td> <td>|</td>
+          <td>ખ</td> <td>Ka/kha</td> <td>|</td>
+          <td>ગ</td> <td>ga</td> <td>|</td>
+          <td>ઘ</td> <td>Ga/gha</td> <td>|</td>
+          <td>ઙ</td> <td>~Na/Nga</td>
         </tr>
         <tr>
-          <td>ચ</td>          <td>ca/cha</td>          <td>|</td>
-          <td>છ</td>          <td>Ca/Cha</td>          <td>|</td>
-          <td>જ</td>          <td>ja</td>          <td>|</td>
-          <td>ઝ</td>          <td>Ja/jha</td>          <td>|</td>
-          <td>ઞ</td>          <td>~na/Ya</td>
+          <td>ચ</td> <td>ca/cha</td> <td>|</td>
+          <td>છ</td> <td>Ca/Cha</td> <td>|</td>
+          <td>જ</td> <td>ja</td> <td>|</td>
+          <td>ઝ</td> <td>Ja/jha</td> <td>|</td>
+          <td>ઞ</td> <td>~na/Ya</td>
         </tr>
         <tr>
-          <td>ટ</td>          <td>Ta</td>          <td>|</td>
-          <td>ઠ</td>          <td>Tha</td>          <td>|</td>
-          <td>ડ</td>          <td>Da</td>          <td>|</td>
-          <td>ઢ</td>          <td>Dha</td>          <td>|</td>
-          <td>ણ</td>          <td>Na</td>
+          <td>ટ</td> <td>Ta</td> <td>|</td>
+          <td>ઠ</td> <td>Tha</td> <td>|</td>
+          <td>ડ</td> <td>Da</td> <td>|</td>
+          <td>ઢ</td> <td>Dha</td> <td>|</td>
+          <td>ણ</td> <td>Na</td>
         </tr>
         <tr>
-          <td>ત</td>          <td>ta</td>          <td>|</td>
-          <td>થ</td>          <td>tha</td>          <td>|</td>
-          <td>દ</td>          <td>da</td>          <td>|</td>
-          <td>ધ</td>          <td>dha</td>          <td>|</td>
-          <td>ન</td>          <td>na</td>
+          <td>ત</td> <td>ta</td> <td>|</td>
+          <td>થ</td> <td>tha</td> <td>|</td>
+          <td>દ</td> <td>da</td> <td>|</td>
+          <td>ધ</td> <td>dha</td> <td>|</td>
+          <td>ન</td> <td>na</td>
         </tr>
         <tr>
-          <td>પ</td>          <td>pa</td>          <td>|</td>
-          <td>ફ</td>          <td>pha</td>          <td>|</td>
-          <td>બ</td>          <td>ba</td>          <td>|</td>
-          <td>ભ</td>          <td>bha</td>          <td>|</td>
-          <td>મ</td>          <td>ma</td>
+          <td>પ</td> <td>pa</td> <td>|</td>
+          <td>ફ</td> <td>pha</td> <td>|</td>
+          <td>બ</td> <td>ba</td> <td>|</td>
+          <td>ભ</td> <td>bha</td> <td>|</td>
+          <td>મ</td> <td>ma</td>
         </tr>
         <tr>
           <td></td>
         </tr>
         <tr>
-          <td>ય</td>          <td>ya</td>          <td>|</td>
-          <td>ર</td>          <td>ra</td>          <td>|</td>
-          <td>લ</td>          <td>la</td>          <td>|</td>
-          <td>ળ</td>          <td>La</td>          <td>|</td>
-          <td>વ</td>          <td>va/wa</td>
+          <td>ય</td> <td>ya</td> <td>|</td>
+          <td>ર</td> <td>ra</td> <td>|</td>
+          <td>લ</td> <td>la</td> <td>|</td>
+          <td>ળ</td> <td>La</td> <td>|</td>
+          <td>વ</td> <td>va/wa</td>
         </tr>
         <tr>
-          <td>શ</td>          <td>sha</td>          <td>|</td>
-          <td>ષ</td>          <td>Sa/Sha</td>          <td>|</td>
-          <td>સ</td>          <td>sa</td>          <td>|</td>
-          <td>હ</td>          <td>ha</td>          <td>|</td>
-          <td>ક્</td>          <td>k</td>
+          <td>શ</td> <td>sha</td> <td>|</td>
+          <td>ષ</td> <td>Sa/Sha</td> <td>|</td>
+          <td>સ</td> <td>sa</td> <td>|</td>
+          <td>હ</td> <td>ha</td> <td>|</td>
+          <td>ક્</td> <td>k</td>
         </tr>
         <tr>
-          <td></td>          <td></td>          <td>|</td>
-          <td>ક્ષ</td>          <td>xa/kSa</td>          <td>|</td>
-          <td>ત્ર</td>          <td>tra</td>          <td>|</td>
-          <td>જ્ઞ</td>          <td>GYa/j~na</td>          <td>|</td>
-          <td></td>          <td></td>
+          <td></td> <td></td> <td>|</td>
+          <td>ક્ષ</td> <td>xa/kSa</td> <td>|</td>
+          <td>ત્ર</td> <td>tra</td> <td>|</td>
+          <td>જ્ઞ</td> <td>GYa/j~na</td> <td>|</td>
+          <td></td> <td></td>
         </tr>
       </tbody>
     </table>
@@ -110,14 +110,14 @@ END;
     <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
       <tbody>
         <tr>
-          <td>ક઼</td>          <td>qa</td>          <td>|</td>
-          <td>ખ઼</td>          <td>Qa</td>          <td>|</td>
-          <td>ગ઼</td>          <td>Fa</td>          <td>|</td>
-          <td>જ઼</td>          <td>za</td>          <td>|</td>
-          <td>ઝ઼</td>          <td>Za</td>          <td>|</td>
-          <td>ડ઼</td>          <td>Wa</td>          <td>|</td>
-          <td>ઢ઼</td>          <td>Xa</td>          <td>|</td>
-          <td>ફ઼</td>          <td>fa</td>
+          <td>ક઼</td> <td>qa</td> <td>|</td>
+          <td>ખ઼</td> <td>Qa</td> <td>|</td>
+          <td>ગ઼</td> <td>Fa</td> <td>|</td>
+          <td>જ઼</td> <td>za</td> <td>|</td>
+          <td>ઝ઼</td> <td>Za</td> <td>|</td>
+          <td>ડ઼</td> <td>Wa</td> <td>|</td>
+          <td>ઢ઼</td> <td>Xa</td> <td>|</td>
+          <td>ફ઼</td> <td>fa</td>
         </tr>
       </tbody>
     </table>
@@ -141,17 +141,17 @@ END;
           <th colspan="2">au/ou</th>
         </tr>
         <tr>
-          <th>a</th>          <th>ka</th>
-          <th>aa</th>          <th>kA</th>
-          <th>i</th>          <th>ki</th>
-          <th>ii</th>          <th>kI</th>
-          <th>u</th>          <th>ku</th>
-          <th>uu</th>          <th>kU</th>
-          <th>R</th>          <th>kR</th>
-          <th>e</th>          <th>ke</th>
-          <th>ai</th>          <th>kai</th>
-          <th>o</th>          <th>ko</th>
-          <th>au</th>          <th>kau</th>
+          <th>a</th> <th>ka</th>
+          <th>aa</th> <th>kA</th>
+          <th>i</th> <th>ki</th>
+          <th>ii</th> <th>kI</th>
+          <th>u</th> <th>ku</th>
+          <th>uu</th> <th>kU</th>
+          <th>R</th> <th>kR</th>
+          <th>e</th> <th>ke</th>
+          <th>ai</th> <th>kai</th>
+          <th>o</th> <th>ko</th>
+          <th>au</th> <th>kau</th>
         </tr>
       </thead>
       <tr>
@@ -189,8 +189,8 @@ END;
           <th colspan="2">O</th>
         </tr>
         <tr>
-          <th>E</th>          <th>kE</th>
-          <th>O</th>          <th>kO</th>
+          <th>E</th> <th>kE</th>
+          <th>O</th> <th>kO</th>
         </tr>
       </thead>
       <tr>
@@ -469,7 +469,7 @@ END;
         </tr>
         <tr>
           <td>
-            <kbd>’</kbd>
+            <kbd>`</kbd>
           </td>
           <td>
             <samp>॒</samp>

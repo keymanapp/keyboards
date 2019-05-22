@@ -1,6 +1,7 @@
-Gujarati Phonetic (ITRANS) Change History
-===========================
+Gujarati Phonetic (ITRANS)
+==================
 
 1.0.0 (2019-05-18)
 ----------------
-* Created by Shree Devi Kumar
+* itrans_gujarati created by Shree Devi Kumar
+* Based on itrans_devanagari_hindi
