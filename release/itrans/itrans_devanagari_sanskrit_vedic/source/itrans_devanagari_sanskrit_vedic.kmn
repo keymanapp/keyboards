@@ -352,13 +352,8 @@ c special combinations
 "श्"	+	"r"	>	"श्र्"
 "ण्"	+	"g"	>	"ङ्"	c Ng
 
-c	Change Word ending म् to anusvara
-"म्"	+	" "	>	"ं "
-
-c	Add Word ending implicit `a` for म् with two spaces
-"ं "	+	" "	>	"म "
-
-c	Add Word ending implicit `a` except for म्
+c	When followed by space, remove Virama and change word ending to implicit `a` 
+"म्"	+	" "	>	"म "
 "क्"	+ " "	> "क "
 "क्ष्"	+ " "	> "क्ष "
 "ख्"	+ " "	> "ख "
