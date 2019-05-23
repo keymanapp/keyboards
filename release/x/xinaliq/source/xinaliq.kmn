@@ -31,8 +31,8 @@ c keyboard assignments peculiar to the Azeri keyboard
 + 'h' > 'h'
 + 'C' > 'C'
 + 'c' > 'c'
-c + "W" > "Ü"
-c + "w" > "ü"
++ "W" > "Ü"
++ "w" > "ü"
 + 'T' > 'T'
 + 't' > 't'
 + 'P' > 'P'
@@ -43,99 +43,108 @@ c + "w" > "ü"
 + 'q' > 'q'
 + 'G' > 'G'
 + 'g' > 'g'
-c + "]" > "ğ"
-c + "}" > "Ğ"
++ "]" > "ğ"
++ "}" > "Ğ"
 + 'S' > 'S'
 + 's' > 's'
 + 'Z' > 'Z'
 + 'z' > 'z'
-c + "," > "ç"
-c + "<" > "Ç"
-c + "." > "ş"
-c + ">" > "Ş"
++ "," > "ç"
++ "<" > "Ç"
++ "." > "ş"
++ ">" > "Ş"
 + 'O' > 'O'
 + 'o' > 'o'
-c + "{"  > "Ö"
-c + "["  > "ö"
++ "{" > "Ö"
++ "[" > "ö"
 + 'I' > 'I'
 + 'i' > 'i'
-c + ";" > "ı"
-c + ":" > "I"
++ ";" > "ı"
++ ":" > "I"
 + 'E' > 'E'
 + 'e' > 'e'
-c + "'" > "ə"
-c + '"' > 'Ə'
++ "'" > "ə"
++ '"' > 'Ə'
 + 'x' > 'x'
 + 'X' > 'X'
-c + "/" > "."
-c + "?" > ","
-c + "@" > '"'
++ "/" > "."
++ "?" > ","
 + 'U' > 'U'
 + 'u' > 'u' 
 
-c rota based on punctuation
-"'" + "'" > '«'
-'«' + "'" > "'"
-U+0022  + U+0022  > '»'     c double quote
-'»' + U+0022  > U+0022  	c double quote 
-
 c continuation of key assignments peculiar to the Azeri keyboard
-c + "#" > "№"
-c + "$" > ";"
-c + "%" > "%"
-c + "^" > ":"
-c + "&" > "?"
-c + "*" > "*" 
++ "1" > "1"
++ "2" > "2"
++ "3" > "3"
++ "4" > "4"
++ "5" > "5"
++ "6" > "6"
++ "7" > "7"
++ "8" > "8"
++ "9" > "9"
++ "0" > "0"
++ "!" > "!"
++ "@" > "№"
++ "#" > U+0022
++ "$" > ";"
++ "%" > "%"
++ "^" > ":"
++ "&" > "?"
++ "*" > "*"
+
+c diacritics
++ "`" > U+0307 c dot above
+U+0307 + "`" > U+0302 c circumflex
  
 c ***lowercase consonants****
 
 'g' + 'g' > 'ğ'         	c breve
 'g' + 'g' > 'ğg'        	c breve and soft g
 'ğg' + 'g' > 'ĝ'            c circumflex
-'ĝ' + 'g' > 'g'
+'ĝ' + 'g' > 'g'             c reverts to base character 'g'
 
-'k' + 'k' > 'k̇'        	   	c dot above 
-'k̇' + 'k' > 'k̂'       	   	c circumflex
-'k̂' + 'k' > 'k̂k̂'     	c doubled circumflex
-'k̂k̂' + 'k' > 'k'
+'k' + 'k' > 'k̇'        	 c dot above 
+'k̇' + 'k' > 'k̂'       	  c circumflex
+'k̂' + 'k' > 'k̂k̂'     	   c doubled circumflex
+'k̂k̂' + 'k' > 'k'            c reverts to base character 'k'
 
 'q' + 'q' > 'q' U+0307      c dot above 
 'q̇' + 'q' > 'q̂'            c circumflex
 'q̂' + 'q' > 'q̂q̂'     	c doubled circumflex
-'q̂q̂' + 'q' > 'q' 
+'q̂q̂' + 'q' > 'q'          c reverts to base character 'q'
 
 'p' + 'p' > 'ṗ'             c dot above
 'ṗ' + 'p' > 'p̂'            c circumflex
 'p̂' + 'p' > 'p̂p̂'         c doubled circumflex
-'p̂p̂' + 'p' > 'p' 
+'p̂p̂' + 'p' > 'p'          c reverts to base character 'p'
 
 't' + 't' > 'ṫ'             c dot above
 'ṫ' + 't' > 't̂'            c circumflex
 't̂' + 't' > 't̂t̂'         c doubled circumflex
-'t̂t̂' + 't' > 'tt'         c doubled "t"
-'tt' + 't' > 't'
+'t̂t̂' + 't' > 'tt'         c doubled 't'
+'tt' + 't' > 't'            c reverts to base character 't'
 
-'s' + 's' > 'ss'            c doubled "s"
+'s' + 's' > 'ss'            c doubled 's'
 'ss' + 's' > 'ŝ'            c circumflex
-'ŝ' + 's' > 'ş'
-'ş' + 's' > 's'
+'ŝ' + 's' > 'ş'             c 's' with cedilla
+'ş' + 's' > 's'             c reverts to base character 's'
 
 'z' + 'z' > 'ż'             c dot above
 'ż' + 'z' > 'ẑ'             c circumflex
-'ẑ' + 'z' > 'z'
+'ẑ' + 'z' > 'z'             c reverts to base character 'z'
 
 'c' + 'c' > 'ċ'             c dot above
 'ċ' + 'c' > 'ĉ'             c circumflex
 'ĉ'+ 'c' > 'ĉĉ'             c doubled circumflex
-'ĉĉ' + 'c' > 'ç'
-'ç' + 'c' > 'c'
+'ĉĉ' + 'c' > 'ç'            c 'c' with cedilla
+'ç' + 'c' > 'c'             c reverts to base character 'c'
 
 'h' + 'h' > 'ḣ'             c dot above
 'ḣ' + 'h' > 'ĥ'             c circumflex
-'ĥ' + 'h' > 'h'
+'ĥ' + 'h' > 'h'             c reverts to base character 'h'
 
-'x' + 'x' > 'x̂'           c circumflex
-'x̂' + 'x' > 'x'
+'x' + 'x' > 'x̂'            c circumflex
+'x̂' + 'x' > 'x'            c reverts to base character 'x'
 
 c ***uppercase consonants****
 
