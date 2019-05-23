@@ -27,7 +27,7 @@ store(cons) 'कखगघङ' \
     	   	'पफबभम' \
     	   	'यरलवशषसहळ'
 
-store(consonants) outs(cons) 'ऱऴ'
+store(consonants) outs(cons) 'ऱऴड़ढ़ऩक़ख़ज़'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'aSf'
 
 c Adjust the behavior of 'a'
@@ -96,11 +96,15 @@ c Add Nukta
 + 'f' > '़'    
 
 c Adjust the behavior of F
-+ 'F' > nul 
++ 'F' > 'ऽ'   
+'`' dk(bt) + 'F' > 'F'
 
 c full stop
  + '.' >   U+0964 
-  U+0964 + '.' > '.'
+  U+0964 + '.' > '.'     
+  
+c dot
+any(consonants)'़' + any(vowelKeys)  > context  index(vowelMatras,3)
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '्' U+200C
