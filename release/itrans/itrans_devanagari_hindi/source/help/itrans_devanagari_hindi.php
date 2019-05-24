@@ -15,10 +15,10 @@ END;
 ?>
 
 <h2>Hindi Devanagari Phonetic (ITRANS) </h2>
-<h2>Version 1.0.0</h1>
 
-<h3><span style="color: chocolate;">Hindi Devanagari Phonetic (ITRANS) </span>Keyboard</h3>
-<p>This is a phonetic Devanagari (ITRANS) keyboard layout for Hindi. It is based on <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> transliteration scheme with some modifications. You can phonetically type using the modified ITRANS transliteration scheme on a regular QWERTY keyboard and get Devanagari Hindi output. 
+<h3><span style="color: chocolate;">Hindi Devanagari Phonetic (ITRANS) </span>Keyboard Version 1.1.0</h3>
+
+<p>This is a phonetic Devanagari (ITRANS) keyboard layout for Hindi. It is based on <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> transliteration scheme with some modifications. You can phonetically type Hindi using the modified ITRANS transliteration scheme on a regular QWERTY keyboard and get Devanagari Hindi output. 
 </p>
 <p>For example, the keys <kbd>s</kbd> <kbd>a</kbd> <kbd>M</kbd> <kbd>s</kbd> <kbd>k</kbd> <kbd>R</kbd> <kbd>t</kbd> <kbd>a</kbd> will output the word <strong>संस्कृत</strong>, <kbd>l</kbd> <kbd>a</kbd> <kbd>x</kbd> <kbd>m</kbd> <kbd>I</kbd> will output the word <strong>लक्ष्मी</strong>.</p>
 
@@ -102,134 +102,170 @@ END;
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td>क़</td><td>qa</td><td></td>
-<td>ख़</td><td>Qa</td><td></td>
-<td>ग़</td><td>Fa</td><td></td>
-<td>ज़</td><td>za</td><td></td>
-<td>झ़</td><td>Za</td><td></td>
-<td>ड़</td><td>Wa</td><td></td>
-<td>ढ़</td><td>Xa</td><td></td>
+<td>क़</td><td>.ka/qa</td><td></td>
+<td>ख़</td><td>.kha/Qa</td><td></td>
+<td>ग़</td><td>.ga/Fa</td><td></td>
+<td>ज़</td><td>.ja/za</td><td></td>
+<td>झ़</td><td>.jha/Za</td><td></td>
+<td>ड़</td><td>.Da/Wa</td><td></td>
+<td>ढ़</td><td>.Dha/Xa</td><td></td>
 <td>फ़</td><td>fa</td><td></td>
 </tr>
 </tbody>
 </table>
 
 <h3>Vowels and Vowel Signs</h3>
-<p>In the following table, independent vowels, dependent vowel signs and vowel signs combined with the consonant 'k' are shown in ITRANS Sanskrit Vedic transliteration scheme on the top two rows. The third row shows Devanagari Vowels in their independent form on the left and their corresponding dependent form (maatraa or vowel sign) on the right. The fourth row shows the vowel sign combined with the consonant 'k' in Devanagari. 'ka' is without any added vowel sign, where the vowel 'a' is inherent.</p>
-<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+<p>In the following table, independent vowels, dependent vowel signs and vowel signs combined
+    with the consonant 'k' are shown in ITRANS transliteration scheme on the top
+    two rows. The third row shows Devanagari Vowels in their independent form. 
+    The fourth row shows the     vowel sign combined with the consonant 'k' in Devanagari. 
+    'ka' is without any added vowel sign, where the vowel 'a' is inherent.</p>
+<p>The last row shows their corresponding dependent form (maatraa or vowel sign).
+    If there is a need to type only the vowel signs, it can be done 
+    using `@` instead of a consonant. e.g. @A will output ा, @ai will output ै.</p>
+<table class="inputSequences" style="margin-left: auto; margin-right: auto; text-align: center;">
 <tbody>
 <thead>
 <tr>
-<th colspan="2">a</th>
-<th colspan="2">aa/A</th>
-<th colspan="2">i</th>
-<th colspan="2">ii/I/ee</th>
-<th colspan="2">u</th>
-<th colspan="2">uu/U/oo</th>
-<th colspan="2">R</th>
-<th colspan="2">e</th>
-<th colspan="2">ai/ei</th>
-<th colspan="2">o</th>
-<th colspan="2">au/ou</th>
+<th  style="width:8%;"></th>
+<th  style="width:8%;">a</th>
+<th  style="width:8%;">aa/A</th>
+<th  style="width:8%;">i</th>
+<th  style="width:8%;">ii/I/ee</th>
+<th  style="width:8%;">u</th>
+<th  style="width:8%;">uu/U/oo</th>
+<th  style="width:8%;">R</th>
+<th  style="width:8%;">e</th>
+<th  style="width:8%;">ai/ei</th>
+<th  style="width:8%;">o</th>
+<th  style="width:8%;">au/ou</th>
 </tr>
 <tr>
-<th>a</th><th>ka</th>
-<th>aa</th><th>kaa/kA</th>
-<th>i</th><th>ki</th>
-<th>ii</th><th>kii/kI/kee</th>
-<th>u</th><th>ku</th>
-<th>uu</th><th>kuu/kU/koo</th>
-<th>R</th><th>kR</th>
-<th>e</th><th>ke</th>
-<th>ai</th><th>kai/kei</th>
-<th>o</th><th>ko</th>
-<th>au</th><th>kau/kou</th>
+<th>k</th>
+<th>ka</th>
+<th>kaa/kA</th>
+<th>ki</th>
+<th>kii/kI</th>
+<th>ku</th>
+<th>kuu/kU/koo</th>
+<th>kR</th>
+<th>ke</th>
+<th>kai/kei</th>
+<th>ko</th>
+<th>kau/kou</th>
 </tr>
 </thead>
 <tr>
-<td>अ</td><td></td>
-<td>आ</td><td>ा</td>
-<td>इ</td><td>ि</td>
-<td>ई</td><td>ी</td>
-<td>उ</td><td>ु</td>
-<td>ऊ</td><td>ू</td>
-<td>ऋ</td><td>ृ</td>
-<td>ए</td><td>े</td>
-<td>ऐ</td><td>ै</td>
-<td>ओ</td><td>ो</td>
-<td>औ</td><td>ौ</td>
+<td></td>
+<td>अ</td>
+<td>आ</td>
+<td>इ</td>
+<td>ई</td>
+<td>उ</td>
+<td>ऊ</td>
+<td>ऋ</td>
+<td>ए</td>
+<td>ऐ</td>
+<td>ओ</td>
+<td>औ</td>
 </tr>
 <tr>
-<td></td><td>क</td>
-<td>आ</td><td>का</td>
-<td>इ</td><td>कि</td>
-<td>ई</td><td>की</td>
-<td>उ</td><td>कु</td>
-<td>ऊ</td><td>कू</td>
-<td>ऋ</td><td>कृ</td>
-<td>ए</td><td>के</td>
-<td>ऐ</td><td>कै</td>
-<td>ओ</td><td>को</td>
-<td>औ</td><td>कौ</td>
+<td><strong>k</strong></td>
+<td>क</td>
+<td>का</td>
+<td>कि</td>
+<td>की</td>
+<td>कु</td>
+<td>कू</td>
+<td>कृ</td>
+<td>के</td>
+<td>कै</td>
+<td>को</td>
+<td>कौ</td>
+</tr>
+<tr>
+<td><strong>@</strong></td>
+<td></td>
+<td>ा</td>
+<td>ि</td>
+<td>ी</td>
+<td>ु</td>
+<td>ू</td>
+<td>ृ</td>
+<td>े</td>
+<td>ै</td>
+<td>ो</td>
+<td>ौ</td>
 </tr>
 </tbody>
 </table>
 
 <p>The following table shows additional vowel signs in Devanagari script in similar format as above. 
-<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+<table class="inputSequences" style="margin-left: auto; margin-right: auto; text-align: center;">
 <tbody>
 <thead>
 <tr>
-<th colspan="2">E/ae</th>
-<th colspan="2">O/aw</th>
-<th colspan="2">[</th>
-<th colspan="2">]</th>
+<th style="width:25%;">E/ae</th>
+<th style="width:25%;">O/aw</th>
+<th style="width:25%;">[</th>
+<th style="width:25%;">]</th>
 </tr>
 <tr>
-<th>E</th><th>kE/kae</th>
-<th>O</th><th>kO/kaw</th>
-<th>[</th><th>k[</th>
-<th>]</th><th>k]</th>
+<th>kE/kae</th>
+<th>kO/kaw</th>
+<th>k[</th>
+<th>k]</th>
 </tr>
 </thead>
 <tr>
-<td>ऍ</td><td>ॅ</td>
-<td>ऑ</td><td>ॉ</td>
-<td>ऎ</td><td>ॆ</td>
-<td>ऒ</td><td>ॊ</td>
+<td>ऍ</td>
+<td>ऑ</td>
+<td>ऎ</td>
+<td>ऒ</td>
 </tr>
 <tr>
-<td>ऍ</td><td>कॅ</td>
-<td>ऑ</td><td>कॉ</td>
-<td>ऎ</td><td>कॆ</td>
-<td>ऒ</td><td>कॊ</td>
+<td>ॅ</td>
+<td>ॉ</td>
+<td>ॆ</td>
+<td>ॊ</td>
+</tr>
+<tr>
+<td>कॅ</td>
+<td>कॉ</td>
+<td>कॆ</td>
+<td>कॊ</td>
 </tr>
 </tbody>
 </table>
 
 <h3>Consonantal Diacritics</h3>
-<p>The consonantal diacritics are the final nasal anusvāra <samp>ं</samp> <kbd>M</kbd>, the final fricative visarga <samp>ः</samp> <kbd>H</kbd> (called अं aṃ and अः aḥ) and candrabindu/anunāsika ँ <kbd>&lt;</kbd> (अँ). These consonantal diacritics follow the vowel signs including the implicit `a`. The following table shows consonant `k` followed by various dependent vowel signs and consonantal diacritics <samp>ं</samp>, <samp>ः</samp> and <samp>ँ</samp>.
-<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+<p>The consonantal diacritics or vowel modifiers are the final nasal anusvāra <samp>ं</samp> <kbd>M</kbd>, 
+    the final fricative visarga <samp>ः</samp> <kbd>H</kbd> (called अं aṃ and अः aḥ) and 
+    candrabindu/anunāsika ँ <kbd>M</kbd><kbd>M</kbd> (अँ). These consonantal diacritics follow the vowel signs 
+    including the implicit `a`. The following table shows consonant `k` followed by various dependent vowel signs 
+    and consonantal diacritics <samp>ं</samp>, <samp>ः</samp> and <samp>ँ</samp>. </p>
+    
+<table class="inputSequences" style="margin-left: auto; margin-right: auto; text-align: center;">
 <tbody>
 <thead>
 <tr>
-<th></th>
-<th>ka</th>
-<th>kA</th>
-<th>ki</th>
-<th>kI</th>
-<th>ku</th>
-<th>kU</th>
-<th>kR</th>
-<th>ke</th>
-<th>kai</th>
-<th>ko</th>
-<th>kau</th>
+<th  style="width:8%;"></th>
+<th  style="width:8%;">ka</th>
+<th  style="width:8%;">kaa/kA</th>
+<th  style="width:8%;">ki</th>
+<th  style="width:8%;">kii/kI/kee</th>
+<th  style="width:8%;">ku</th>
+<th  style="width:8%;">kuu/kU/koo</th>
+<th  style="width:8%;">kR</th>
+<th  style="width:8%;">ke</th>
+<th  style="width:8%;">kai/kei</th>
+<th  style="width:8%;">ko</th>
+<th  style="width:8%;">kau/kou</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>M</strong></td>
+<td><strong>M/.n/.m</strong></td>
 <td>कं</td>
 <td>कां</td>
 <td>किं</td>
@@ -257,7 +293,7 @@ END;
 <td>कौः</td>
 </tr>
 <tr>
-<td><strong>&lt;</strong></td>
+<td><strong>MM</strong></td>
 <td>कँ</td>
 <td>काँ</td>
 <td>किँ</td>
@@ -290,12 +326,9 @@ END;
 </tr>
 </thead>
 <tbody>
-<tr> <td><kbd>,</kbd></td> <td><samp>॰</samp></td> <td>Devanagari Abbreviation Sign</td></tr>
-<tr> <td><kbd>,</kbd><kbd>,</kbd></td> <td><samp>,</samp></td> <td>Comma</td></tr>
-<tr> <td><kbd>.</kbd></td> <td><samp>।</samp></td> <td>DanDaa</td></tr>
-<tr> <td><kbd>.</kbd><kbd>.</kbd></td> <td><samp>.</samp></td> <td>Period</td></tr>
+<tr> <td><kbd>,</kbd><kbd>,</kbd></td> <td><samp>॰</samp></td> <td>Devanagari Abbreviation Sign</td></tr>
+<tr> <td><kbd>.</kbd><kbd>.</kbd></td> <td><samp>।</samp></td> <td>DanDaa</td></tr>
 <tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td>॥</samp></td> <td>Double DanDaa</td></tr>
-<tr> <td><kbd>-</kbd></td> <td><samp>-</samp></td> <td>Dash</td></tr>
 <tr> <td><kbd>-</kbd><kbd>-</kbd></td> <td><samp>–</samp></td> <td>En Dash</td></tr>
 <tr> <td><kbd>-</kbd><kbd>-</kbd><kbd>-</kbd></td> <td><samp>—</samp></td> <td>Em Dash</td></tr>
 </tbody>
@@ -320,8 +353,6 @@ END;
 <tr> <td><kbd>%</kbd></td> <td><samp>࿕</samp></td> <td>U+0FD5  RIGHT-FACING SVASTI SIGN</td></tr>
 <tr> <td><kbd>*</kbd></td> <td><samp>❀</samp></td> <td>U+2740 WHITE FLORETTE UNICODE CHARACTER</td></tr>
 <tr> <td><kbd>&</kbd></td> <td><samp>☸</samp></td> <td>U+2638 WHEEL OF DHARMA UNICODE CHARACTER </td></tr>
-<tr> <td><kbd><</kbd></td> <td><samp>ँ</samp></td> <td> CHANDRABINDU</td></tr>
-<tr> <td><kbd>=</kbd></td> <td><samp>ऽ</samp></td> <td> AVAGRAHA</td></tr>
-<tr> <td><kbd>\</kbd></td> <td><samp>़</samp></td> <td>U+093C   NUKTA</td></tr>
+<tr> <td><kbd>V</kbd></td> <td><samp>ऽ</samp></td> <td> AVAGRAHA</td></tr>
 </tbody>
 </table>
