@@ -66,7 +66,7 @@ U+178F + [K_H]    > U+1790    c th > ថ
 
 store(any_two_key_con) U+1784 U+1789 U+179E U+178B U+1781 U+1795 U+1790
 
-
+store(regShift)     U+17C9 U+17CA
 c single orthographic final consonant mappings
 store(sin_fin_con)      U+1785 U+1780 U+179B U+1798 U+1793 U+1784 U+1789 U+1794 U+1782 U+179A U+179F U+178F U+179C U+1799 c ចកលមនងញបគរសតវយ
 
@@ -107,15 +107,21 @@ U+17CA U+17B9 dk(deadkey_v) + [K_E]             > U+17BF    c ve > ឿ (non-seri
 
 
 any(all_sin_con1) + [K_E]           > context(1) U+17B9 dk(deadkey_e)   c ឹ in series 1
-U+17B6 any(any_con) U+17CB + [K_E]  > context(2) U+17B9 dk(deadkey_e) c in presyllable, Ca.mainSyllable
+c U+17B6 any(any_con) U+17CB + [K_E]  > context(2) U+17B9 dk(deadkey_e) c in presyllable, Ca.mainSyllable
 any(con_muusikatoan) + [K_E]        > context(1) U+17C9 U+17B9 dk(deadkey_e)
 U+1796 + [K_E]                      > U+1794 U+17C9 U+17B9 dk(deadkey_e)
 U+179B + [K_E]                      > U+17A1 U+17B9 dk(deadkey_e)
 U+1793 + [K_E]                      > U+178E U+17B9 dk(deadkey_e)
 U+1794 + [K_E]                      > context(1) U+17B9 dk(deadkey_e)
 
-U+17B9 dk(deadkey_v) + [K_E]                    > U+17BF    c ve > ឿ (non-series)
-U+17B9 dk(deadkey_e) + [K_E]                    > U+17BE    c ee > ើ (series 1)
+c for presyllable in the form of -a[p/n/l/b]V
+U+17CB U+1796 + [K_E]               > U+1794 U+17C9 U+17B9 dk(deadkey_e)
+U+17CB U+179B + [K_E]               > U+17A1 U+17B9 dk(deadkey_e)
+U+17CB U+1793 + [K_E]               > U+178E U+17B9 dk(deadkey_e)
+U+17CB U+1794 + [K_E]               > context(1) U+17B9 dk(deadkey_e)
+
+U+17B9 dk(deadkey_v) + [K_E]        > U+17BF    c ve > ឿ (non-series)
+U+17B9 dk(deadkey_e) + [K_E]        > U+17BE    c ee > ើ (series 1)
 
 c vy
 any(con_muusikatoan) U+17B9 dk(deadkey_v) + [K_Y]   > context(1) U+17C9 U+17B8 
@@ -213,7 +219,7 @@ U+17A2 U+1782 U+17CB + [K_Z]        > U+17A2 dk(deadkey_z)       c zz > អ
 c +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ START PRESYLLABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-c Presyllables: CV, CCV, h , q + nasal
+c Presyllables: CV, CCV, h , q + nasal (THESE RULES ARE CREATED TO IMMITATE
 
 c -abV1-
 U+17B6 any(con_bo) U+17CB + any(sin_vow1_key)           > context(2) index(sin_vow1_out,4)
@@ -242,14 +248,45 @@ U+17C9 any(any_con) U+17C9 any(con_bo) U+1782 U+17CB + [K_Z]    > context(2) U+1
 
 c -abrV-
 U+17B6 U+1794 U+17CB + [K_R]            > context(2) U+17D2 U+179A  c kabra
-
 U+17C9 U+17B6 U+1794 U+17CB + [K_R]     > context(3) U+17D2 U+179A  c gabra 
 
 
-c -apV-
+c -apV1-
+U+17B6 any(con_bo) U+17CB dk(middle_p) + any(sin_vow1_key) > context(2) U+17C9 index(sin_vow1_out,5)
+U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_A]                       > context(2) U+17C9 U+17B6 U+1782 U+17CB
+U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_Z]                       > context(2) U+17C9 U+1782 U+17CB
+U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_E]                       > context(2) U+17C9 U+17B9 dk(deadkey_e)
+
+U+17C9 U+17B6 any(con_bo) U+17CB dk(middle_p) + any(sin_vow1_key)    > context(3) U+17C9 index(sin_vow1_out,6)
+U+17C9 U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_A]                > context(3) U+17C9 U+17B6 U+1782 U+17CB
+U+17C9 U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_Z]                > context(3) U+17C9 U+1782 U+17CB
+U+17C9 U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_E]                > context(3) U+17C9 U+17B9 dk(deadkey_e)
+
+c -apV2-
+U+17B6 any(con_bo) U+17CB dk(middle_p) + any(sin_vow2_key)           > U+1796 index(sin_vow2_out,5)
+U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_V]                       > U+1796 U+17B9 dk(deadkey_v)
+
+U+17C9 U+17B6 any(con_bo) U+17CB dk(middle_p) + any(sin_vow2_key)    > U+1796 index(sin_vow2_out,6)
+U+17C9 U+17B6 any(con_bo) U+17CB dk(middle_p) + [K_V]                > U+1796 U+17B9 dk(deadkey_v)
 
 
-c -aqV-
+c -aqV1-
+U+17B6 U+1782 U+17CB dk(middle_q) + any(sin_vow1_key)           > U+17A2 index(sin_vow1_out,5)
+U+17B6 U+1782 U+17CB dk(middle_q) + [K_A]                       > U+17A2 U+17B6 U+1782 U+17CB
+U+17B6 U+1782 U+17CB dk(middle_q) + [K_Z]                       > U+17A2 U+1782 U+17CB
+U+17B6 U+1782 U+17CB dk(middle_q) + [K_E]                       > U+17A2 U+17B9 dk(deadkey_e)
+
+U+17C9 U+17B6 U+1782 U+17CB dk(middle_q) + any(sin_vow1_key)    > U+17A2 index(sin_vow1_out,6)
+U+17C9 U+17B6 U+1782 U+17CB dk(middle_q) + [K_A]                > U+17A2 U+17B6 U+1782 U+17CB
+U+17C9 U+17B6 U+1782 U+17CB dk(middle_q) + [K_Z]                > U+17A2 U+1782 U+17CB
+U+17C9 U+17B6 U+1782 U+17CB dk(middle_q) + [K_E]                > U+17A2 U+17B9 dk(deadkey_e)
+
+c -aqV2-
+U+17B6 U+1782 U+17CB dk(middle_q) + any(sin_vow2_key)           > U+17A2 U+17CA index(sin_vow2_out,5)
+U+17B6 U+1782 U+17CB dk(middle_q) + [K_V]                       > U+17A2 U+17CA U+17B9 dk(deadkey_v)
+
+U+17C9 U+17B6 U+1782 U+17CB dk(middle_q) + any(sin_vow2_key)    > U+17A2 U+17CA index(sin_vow2_out,6)
+U+17C9 U+17B6 U+1782 U+17CB dk(middle_q) + [K_V]                > U+17A2 U+17CA U+17B9 dk(deadkey_v)
 
 
 c for consonants whose series changes by means of Muusikatoan/Triisap
@@ -305,6 +342,23 @@ any(any_con) U+17A1 U+17B7 + [K_X]                      > context(1) U+179B U+17
 
 c -anV- 
 c U+178E + any(sin_vow2_key)              > U+1793 index(sin_vow2_out,2)
+c -anV1-
+U+17B6 U+1793 U+17CB + any(sin_vow1_key)            > U+178E index(sin_vow1_out,4)
+U+17B6 U+1793 U+17CB + [K_A]                        > U+178E U+17B6 U+1782 U+17CB
+U+17B6 U+1793 U+17CB + [K_Z]                        > U+178E U+1782 U+17CB
+U+17B6 U+1793 U+17CB + [K_E]                        > U+178E U+17B9 dk(deadkey_e)
+
+U+17C9 U+17B6 U+1793 U+17CB + any(sin_vow1_key)    > U+178E index(sin_vow1_out,5)
+U+17C9 U+17B6 U+1793 U+17CB + [K_A]                > U+178E U+17B6 U+1782 U+17CB
+U+17C9 U+17B6 U+1793 U+17CB + [K_Z]                > U+178E U+1782 U+17CB
+U+17C9 U+17B6 U+1793 U+17CB + [K_E]                > U+178E U+17B9 dk(deadkey_e)
+
+c -anV2-
+U+17B6 U+1793 U+17CB + any(sin_vow2_key)           > context(2) index(sin_vow2_out,4)
+U+17B6 U+1793 U+17CB + [K_V]                       > context(2) U+17B9 dk(deadkey_v)
+
+U+17C9 U+17B6 U+1793 U+17CB + any(sin_vow2_key)    > context(3) index(sin_vow2_out,5)
+U+17C9 U+17B6 U+1793 U+17CB + [K_V]                > context(3) U+17B9 dk(deadkey_v)
 
 
 c -acV- 
@@ -369,8 +423,8 @@ U+17B6 U+1782 U+17CB + [K_Y]        > U+17C3                        c ay > ៃ
 U+17CA U+17B9 dk(deadkey_v) + [K_Y] > U+17B8                        c vy > ី -- v, series 2, vy series 1
 U+17B9 dk(deadkey_v) + [K_Y]        > U+17B8                        c vy > ី 
 U+17A2 U+1782 U+17CB + [K_Q]        > U+17A2 U+1782 U+17CB          c zq > អគ់់
-U+17A2 U+17B6 U+1782 U+17CB + [K_Q] > U+17A2 U+17B6 U+1782 U+17CB   c aq > អាគ់
-U+17B6 U+1782 U+17CB + [K_Q]        > U+17B6 U+1782 U+17CB          c Caq > ាគ់
+U+17A2 U+17B6 U+1782 U+17CB + [K_Q] > U+17A2 U+17B6 U+1782 U+17CB dk(middle_q)  c aq > អាគ់
+U+17B6 U+1782 U+17CB + [K_Q]        > U+17B6 U+1782 U+17CB dk(middle_q)         c Caq > ាគ់
 U+1782 U+17CB + [K_W]               > U+17BC U+179C                 c zw > ូវ
 U+17B7 + [K_H]                      > U+17B7 U+17C7                 c xh > ិះ
 U+17B9 dk(deadkey_e) + [K_H]        > U+17B9 U+17C7                 c eh > ឹះ
@@ -732,7 +786,7 @@ U+17C9 + [K_P]                          > context(1) U+1794
 U+17CA + [K_P]                          > context(1) U+1794
 any(any_vowel) + [K_P]                  > context(1) U+1794
 any(any_vowel) + [K_P]                  > context(1) U+1794
-any(any_vowel) U+1782 U+17CB + [K_P]    > context(1) U+1794 U+17CB
+any(any_vowel) U+1782 U+17CB + [K_P]    > context(1) U+1794 U+17CB dk(middle_p)
 
 dk(deadkey_v) + [K_P]                   > U+1794
 dk(deadkey_e) + [K_P]                   > U+1794
@@ -768,13 +822,16 @@ U+1799 + [K_Q]                  > context U+17D2 U+1782
 
 
 c any consonant + am > any consonant + ាំ
-any(any_con) U+17B6 U+1782 U+17CB + [K_M]   > context(1) context(2) U+17C6
+any(any_con) U+17B6 U+1782 U+17CB + [K_M]               > context(1) context(2) U+17C6
+any(any_con) any(regShift) U+17B6 U+1782 U+17CB + [K_M] > context(1) context(2) context(3) U+17C6
 
 c any consonant + zm > any consonant + ំ
-any(any_con) U+1782 U+17CB + [K_M]          > context(1) U+17C6
+any(any_con) U+1782 U+17CB + [K_M]                  > context(1) U+17C6
+any(any_con) any(regShift) U+1782 U+17CB + [K_M]    > context(1) context(2) U+17C6
 
 c any consonant + um > any consonant + ុំ
 any(any_con) U+17BB + [K_M]                 > context(1) context(2) U+17C6
+any(any_con) any(regShift) U+17BB + [K_M]   > context(1) context(2) context(3) U+17C6
 
 
 c h after deadkeys
