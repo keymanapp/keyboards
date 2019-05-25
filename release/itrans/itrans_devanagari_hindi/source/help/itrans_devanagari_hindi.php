@@ -16,7 +16,7 @@ END;
 
 <h2>Hindi Devanagari Phonetic (ITRANS) </h2>
 
-<h3><span style="color: chocolate;">Hindi Devanagari Phonetic (ITRANS) </span>Keyboard Version 1.1.0</h3>
+<h3><span style="color: chocolate;">Hindi Devanagari Phonetic (ITRANS) </span>Keyboard Version 1.2.0</h3>
 
 <p>This is a phonetic Devanagari (ITRANS) keyboard layout for Hindi. It is based on <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> transliteration scheme with some modifications. You can phonetically type Hindi using the modified ITRANS transliteration scheme on a regular QWERTY keyboard and get Devanagari Hindi output. 
 </p>
