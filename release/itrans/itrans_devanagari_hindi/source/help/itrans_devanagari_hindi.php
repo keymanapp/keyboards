@@ -91,7 +91,7 @@ END;
 <td>क्ष</td><td>xa/kSa</td><td></td>
 <td>त्र</td><td>tra</td><td></td>
 <td>ज्ञ</td><td>GYa/j~na</td><td></td>
-<td></td><td></td>
+<td>र्‍</td><td>R (eyelash Ra - Marathi)</td>
 </tr>
 </tbody>
 </table>
@@ -134,7 +134,7 @@ END;
 <th  style="width:8%;">ii/I/ee</th>
 <th  style="width:8%;">u</th>
 <th  style="width:8%;">uu/U/oo</th>
-<th  style="width:8%;">R</th>
+<th  style="width:8%;">RR</th>
 <th  style="width:8%;">e</th>
 <th  style="width:8%;">ai/ei</th>
 <th  style="width:8%;">o</th>
@@ -148,7 +148,7 @@ END;
 <th>kii/kI</th>
 <th>ku</th>
 <th>kuu/kU/koo</th>
-<th>kR</th>
+<th>kRR</th>
 <th>ke</th>
 <th>kai/kei</th>
 <th>ko</th>
