@@ -134,6 +134,8 @@ scheme on the top two rows. The third row shows Devanagari Vowels in their indep
 form on the left and their corresponding dependent form (maatraa or vowel sign) on the 
 right. The fourth row shows the vowel sign combined with the consonant 'k' in 
 Devanagari. 'ka' is without any added vowel sign, where the vowel 'a' is inherent.</p>
+<p>If there is a need to type ONLY the vowel signs, it can be done 
+    using `@` instead of a consonant. e.g. @A will output ा, @ai will output ै.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <thead>

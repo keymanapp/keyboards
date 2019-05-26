@@ -44,6 +44,11 @@ store(&VISUALKEYBOARD) 'itrans_devanagari_sanskrit_vedic.kvks'
 begin Unicode	>	use(main)
 group(main) using keys
 
+c	Reset Hindi mode by default
+store(opt1) '0'
++ [RCTRL RALT K_1]	>	set(opt1='hindi') 
++ [RCTRL RALT K_0]	>	reset(opt1)
+
 + "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
 + "+"	>	U+200D	c ZERO-WIDTH JOINER
 + "^"	>	"्"	c VIRAMA
@@ -226,10 +231,8 @@ store(aPlusMaatraaU) "ा" "ॅ" "ै" "ौ" "ॉ"
 
 c	implicit akaara deletion for hindi mode 
 store(opt1endings) outs(Punctuation) ' '
-store(opt1) '0'
-+ [RCTRL RALT K_1]	>	set(opt1='hindi') 
-+ [RCTRL RALT K_0]	>	reset(opt1)
 $keymanonly: if(opt1 = 'hindi') any(Vyanjana)"्" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
+
 
 any(Vyanjana)"्" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
