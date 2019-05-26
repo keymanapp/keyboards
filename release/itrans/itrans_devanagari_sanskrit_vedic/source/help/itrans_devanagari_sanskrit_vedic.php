@@ -351,7 +351,14 @@ output the word <strong>चञ्चल</strong>.
 
 <p>To type a Zero Width Non Joiner, <kbd>_</kbd> can be typed between the letters, 
 for example: <kbd>a</kbd> <kbd>_</kbd> <kbd>i</kbd> will generate <samp>अ‌इ
+</samp>, <kbd>k</kbd> <kbd>_</kbd> <kbd>S</kbd> will generate <samp>क्‌ष्
 </samp>.</p>
+
+<h3>Zero Width Joiner (ZWJ)</h3>
+
+<p>To type a Zero Width Joiner, <kbd>+</kbd> can be typed between the letters, 
+for example: <kbd>k</kbd> <kbd>+</kbd> <kbd>S</kbd> will generate <samp>क्‍ष्
+</samp>, while <kbd>k</kbd><kbd>S</kbd> generates <samp>क्ष्</samp>.</p>
 
 <h3>Punctuation</h3>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
