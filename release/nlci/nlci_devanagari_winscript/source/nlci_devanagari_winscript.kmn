@@ -27,7 +27,11 @@ store(cons) 'कखगघङ' \
     	   	'पफबभम' \
     	   	'यरलवशषसहळ'
 
+<<<<<<< HEAD
 store(consonants) outs(cons) 'ऱऴड़ढ़ऩक़ख़ज़'
+=======
+store(consonants) outs(cons) 'ऱऴ'
+>>>>>>> 407f63964ed5a3248fa0cdc7922060838cc054eb
 store(allKeys) outs(consKeys) outs(vowelKeys) 'aSf'
 
 c Adjust the behavior of 'a'
@@ -96,6 +100,7 @@ c Add Nukta
 + 'f' > '़'    
 
 c Adjust the behavior of F
+<<<<<<< HEAD
 + 'F' > 'ऽ'   
 '`' dk(bt) + 'F' > 'F'
 
@@ -105,6 +110,13 @@ c full stop
   
 c dot
 any(consonants)'़' + any(vowelKeys)  > context  index(vowelMatras,3)
+=======
++ 'F' > nul 
+
+c full stop
+ + '.' >   U+0964 
+  U+0964 + '.' > '.'
+>>>>>>> 407f63964ed5a3248fa0cdc7922060838cc054eb
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '्' U+200C
