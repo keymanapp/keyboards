@@ -1,9 +1,9 @@
 Rachitrali-Gawar-Bati Keyboard
 ==============================
 
-Copyright (C) 2017 Rehmat Aziz Chitrali
+Copyright (C) 2017-2019 Rehmat Aziz Chitrali
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------
@@ -18,8 +18,8 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 
 Links
 -----
-
- * Contact: <rachitrali@yahoo.com>
+Home: https://keyman.com/keyboards/rac_gawar_bati
+Contact: <rachitrali@yahoo.com>
 
 Supported Platforms
 -------------------
