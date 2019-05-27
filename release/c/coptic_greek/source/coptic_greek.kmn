@@ -1,0 +1,287 @@
+﻿store(&VERSION) "10.0" 
+store(&NAME) "Coptic (Greek)" 
+store(&COPYRIGHT) '© 2010-2019 Michael Everson, evertype.com.'
+store(&MESSAGE) "Coptic - Greek QWERTY keyboard" 
+store(&BITMAP) 'coptic_greek.ico'
+store(&VISUALKEYBOARD) 'coptic_greek.kvks'
+store(&KEYBOARDVERSION) '2.2'
+store(&TARGETS) 'windows macosx linux web'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+   + [SHIFT RALT K_3] > deadkey(1)  c line(0)
+   + [RALT K_B] > deadkey(2)  c line(0)
+
+   + [K_BKQUOTE] > '§'
+   + [SHIFT K_BKQUOTE] > '±'
+   + [RALT K_BKQUOTE] > '§'
+   + [SHIFT RALT K_BKQUOTE] > '±'
+
+c Changes from Qwerty to Greek
+   + [K_Q] > "ϭ"  c was c
+   + [K_C] > "ϩ"  c was h
+   + [K_U] > "ⲑ"  c was q
+   + [K_Y] > "ⲩ"  c was u
+   + [K_H] > "ⲏ"  c was y
+   + [SHIFT K_Q] > "Ϭ"  c was c
+   + [SHIFT K_C] > "Ϩ"  c was h
+   + [SHIFT K_U] > "Ⲑ"  c was q
+   + [SHIFT K_Y] > "Ⲩ"  c was u
+   + [SHIFT K_H] > "Ⲏ"  c was y
+   + [RALT K_Q] > 'ⳛ'   c was c
+   + [RALT K_C] > 'ⳉ'   c was h
+   + [RALT K_U] > 'ⲹ'   c was q
+   + [RALT K_Y] > 'ⳡ'   c was u
+   + [RALT K_H] > 'ⲯ'   c was y
+   + [SHIFT RALT K_Q] > 'Ⳛ' c was c
+   + [SHIFT RALT K_C] > 'Ⳉ' c was h
+   + [SHIFT RALT K_U] > 'Ⲹ' c was q
+   + [SHIFT RALT K_Y] > 'Ⳡ' c was u
+   + [SHIFT RALT K_H] > 'Ⲯ' c was y
+
+   + [K_0] > "0"  c line(0)
+   + [K_1] > "1"  c line(0)
+   + [K_2] > "2"  c line(0)
+   + [K_3] > "3"  c line(0)
+   + [K_4] > "4"  c line(0)
+   + [K_5] > "5"  c line(0)
+   + [K_6] > "6"  c line(0)
+   + [K_7] > "7"  c line(0)
+   + [K_8] > "8"  c line(0)
+   + [K_9] > "9"  c line(0)
+   + [K_A] > "ⲁ"  c line(0)
+   + [K_BKSLASH] > "\"  c line(0)
+   + [K_B] > "ⲃ"  c line(0)
+   + [K_COLON] > "̄"  c line(0)
+   + [K_COMMA] > ","  c line(0)
+   + [K_D] > "ⲇ"  c line(0)
+   + [K_EQUAL] > "="  c line(0)
+   + [K_E] > "ⲉ"  c line(0)
+   + [K_F] > "ϥ"  c line(0)
+   + [K_G] > "ⲅ"  c line(0)
+   + [K_HYPHEN] > "-"  c line(0)
+   + [K_I] > "ⲓ"  c line(0)
+   + [K_J] > "ϫ"  c line(0)
+   + [K_K] > "ⲕ"  c line(0)
+   + [K_LBRKT] > "["  c line(0)
+   + [K_L] > "ⲗ"  c line(0)
+   + [K_M] > "ⲙ"  c line(0)
+   + [K_N] > "ⲛ"  c line(0)
+   + [K_O] > "ⲟ"  c line(0)
+   + [K_PERIOD] > "."  c line(0)
+   + [K_P] > "ⲡ"  c line(0)
+   + [K_QUOTE] > "'"  c line(0)
+   + [K_RBRKT] > "]"  c line(0)
+   + [K_R] > "ⲣ"  c line(0)
+   + [K_SLASH] > "/"  c line(0)
+   + [K_S] > "ⲥ"  c line(0)
+   + [K_T] > "ⲧ"  c line(0)
+   + [K_V] > "ⲱ"  c line(0)
+   + [K_W] > "ϣ"  c line(0)
+   + [K_X] > "ⲭ"  c line(0)
+   + [K_Z] > "ⲍ"  c line(0)
+   + [K_oE2] > '̀'
+
+   + [SHIFT K_0] > ")"  c line(0)
+   + [SHIFT K_1] > "!"  c line(0)
+   + [SHIFT K_2] > "@"  c line(0)
+   + [SHIFT K_3] > "#"  c line(0)
+   + [SHIFT K_4] > "$"  c line(0)
+   + [SHIFT K_5] > "%"  c line(0)
+   + [SHIFT K_6] > "^"  c line(0)
+   + [SHIFT K_7] > "&"  c line(0)
+   + [SHIFT K_8] > "*"  c line(0)
+   + [SHIFT K_9] > "("  c line(0)
+   + [SHIFT K_A] > "Ⲁ"  c line(0)
+   + [SHIFT K_BKSLASH] > "|"  c line(0)
+   + [SHIFT K_B] > "Ⲃ"  c line(0)
+   + [SHIFT K_COLON] > "︦"  c line(0)
+   + [SHIFT K_COMMA] > "︤"  c line(0)
+   + [SHIFT K_D] > "Ⲇ"  c line(0)
+   + [SHIFT K_EQUAL] > "+"  c line(0)
+   + [SHIFT K_E] > "Ⲉ"  c line(0)
+   + [SHIFT K_F] > "Ϥ"  c line(0)
+   + [SHIFT K_G] > "Ⲅ"  c line(0)
+   + [SHIFT K_HYPHEN] > "_"  c line(0)
+   + [SHIFT K_I] > "Ⲓ"  c line(0)
+   + [SHIFT K_J] > "Ϫ"  c line(0)
+   + [SHIFT K_K] > "Ⲕ"  c line(0)
+   + [SHIFT K_LBRKT] > "{"  c line(0)
+   + [SHIFT K_L] > "Ⲗ"  c line(0)
+   + [SHIFT K_M] > "Ⲙ"  c line(0)
+   + [SHIFT K_N] > "Ⲛ"  c line(0)
+   + [SHIFT K_O] > "Ⲟ"  c line(0)
+   + [SHIFT K_PERIOD] > "︥"  c line(0)
+   + [SHIFT K_P] > "Ⲡ"  c line(0)
+   + [SHIFT K_QUOTE] > '"'  c line(0)
+   + [SHIFT K_RBRKT] > "}"  c line(0)
+   + [SHIFT K_R] > "Ⲣ"  c line(0)
+   + [SHIFT K_SLASH] > "?"  c line(0)
+   + [SHIFT K_S] > "Ⲥ"  c line(0)
+   + [SHIFT K_T] > "Ⲧ"  c line(0)
+   + [SHIFT K_V] > "Ⲱ"  c line(0)
+   + [SHIFT K_W] > "Ϣ"  c line(0)
+   + [SHIFT K_X] > "Ⲭ"  c line(0)
+   + [SHIFT K_Z] > "Ⲍ"  c line(0)
+   + [SHIFT K_oE2] > '́'
+      
++ [RALT K_0] > '·'
++ [RALT K_1] > '̣'
++ [RALT K_2] > '̇'
++ [RALT K_3] > '̂'
++ [RALT K_4] > 'ⳏ'
++ [RALT K_5] > 'ⳓ'
++ [RALT K_6] > 'ⲋ'
++ [RALT K_7] > '̈'
++ [RALT K_8] > 'ⳝ'
++ [RALT K_9] > 'ⳋ'
++ [RALT K_A] > 'ⲳ'
+dk(2) + " " > '⸖'
++ [RALT K_BKSLASH] > '№'
++ [RALT K_COLON] > ';'
++ [RALT K_COMMA] > '⟦'
++ [RALT K_D] > 'ⳕ'
++ [RALT K_EQUAL] > '⳽'
++ [RALT K_E] > 'ⳅ'
++ [RALT K_F] > 'ⲫ'
++ [RALT K_G] > 'ⳟ'
++ [RALT K_HYPHEN] > '⳿'
++ [RALT K_I] > 'ⳇ'
++ [RALT K_J] > 'ⳗ'
++ [RALT K_K] > 'ⲝ'
++ [RALT K_LBRKT] > '‘'
++ [RALT K_L] > 'ⳑ'
++ [RALT K_M] > '⳯'
++ [RALT K_N] > 'ⲻ'
++ [RALT K_O] > 'ⳣ'
++ [RALT K_PERIOD] > '⟧'
++ [RALT K_P] > 'ⳙ'
++ [RALT K_QUOTE] > '⳾'
++ [RALT K_RBRKT] > '’'
++ [RALT K_R] > 'ⳁ'
++ [RALT K_SLASH] > '⸓'
++ [RALT K_SPACE] > ' '
++ [RALT K_S] > 'ⲵ'
++ [RALT K_T] > 'ϯ'
++ [RALT K_V] > 'ⲿ'
++ [RALT K_W] > 'ⳃ'
++ [RALT K_X] > 'ϧ'
++ [RALT K_Z] > 'ⳍ'
++ [RALT K_oE2] > '`'
+
++ [SHIFT RALT K_0] > '•'
++ [SHIFT RALT K_1] > '⸌'
++ [SHIFT RALT K_2] > '⸍'
+dk(1) + " " > '‖'
+c + [SHIFT RALT K_3] > '‖'
++ [SHIFT RALT K_4] > 'Ⳏ'
++ [SHIFT RALT K_5] > 'Ⳓ'
++ [SHIFT RALT K_6] > 'Ⲋ'
++ [SHIFT RALT K_7] > 'ⳤ'
++ [SHIFT RALT K_8] > 'Ⳝ'
++ [SHIFT RALT K_9] > 'Ⳋ'
++ [SHIFT RALT K_A] > 'Ⲳ'
++ [SHIFT RALT K_BKSLASH] > '̅'
++ [SHIFT RALT K_B] > '⳰'
++ [SHIFT RALT K_COLON] > ':'
++ [SHIFT RALT K_COMMA] > '<'
++ [SHIFT RALT K_D] > 'Ⳕ'
++ [SHIFT RALT K_EQUAL] > '†'
++ [SHIFT RALT K_E] > 'Ⳅ'
++ [SHIFT RALT K_F] > 'Ⲫ'
++ [SHIFT RALT K_G] > 'Ⳟ'
++ [SHIFT RALT K_HYPHEN] > '⸗'
++ [SHIFT RALT K_I] > 'Ⳇ'
++ [SHIFT RALT K_J] > 'Ⳗ'
++ [SHIFT RALT K_K] > 'Ⲝ' c reserved Keyman shortcut
++ [SHIFT RALT K_LBRKT] > '“'
++ [SHIFT RALT K_L] > 'Ⳑ'
++ [SHIFT RALT K_M] > '⳱' c reserved Keyman shortcut
++ [SHIFT RALT K_N] > 'Ⲻ'
++ [SHIFT RALT K_O] > 'Ⳣ' c reserved Keyman shortcut
++ [SHIFT RALT K_PERIOD] > '>'
++ [SHIFT RALT K_P] > 'Ⳙ'
++ [SHIFT RALT K_QUOTE] > '…'
++ [SHIFT RALT K_RBRKT] > '”'
++ [SHIFT RALT K_R] > 'Ⳁ'
++ [SHIFT RALT K_SLASH] > '᷍'
++ [SHIFT RALT K_S] > 'Ⲵ'
++ [SHIFT RALT K_T] > 'Ϯ'
++ [SHIFT RALT K_V] > 'Ⲿ'
++ [SHIFT RALT K_W] > 'Ⳃ'
++ [SHIFT RALT K_X] > 'Ϧ'
++ [SHIFT RALT K_Z] > 'Ⳍ'
++ [SHIFT RALT K_oE2] > '~'
+
+  deadkey(2)  + "," > "⳹"  c line(0)
+  deadkey(2)  + "-" > "⸏"  c line(0)
+  deadkey(2)  + "." > "⳼"  c line(0)
+  deadkey(2)  + "=" > "⸐"  c line(0)
+  deadkey(2)  + "?" > "⳺"  c line(0)
+  deadkey(2)  + "\" > "⳻"  c line(0)
+
+c  deadkey(2)  + "Ϣ" > "Ⳬ"  c line(0)
+c  deadkey(2)  + "ϣ" > "ⳬ"  c line(0)
+  deadkey(2)  + [SHIFT K_W] > "Ⳬ"  c line(0)
+  deadkey(2)  + [K_W] > "ⳬ"  c line(0)
+c  deadkey(2)  + "Ϫ" > "Ⳮ"  c line(0)
+c  deadkey(2)  + "ϫ" > "ⳮ"  c line(0)
+  deadkey(2)  + [SHIFT K_J] > "Ⳮ"  c line(0)
+  deadkey(2)  + [K_J] > "ⳮ"  c line(0)
+c  deadkey(1)  + "ϭ" > "⳪"  c line(0)
+  deadkey(1)  + [K_C] > "⳪"  c line(0)
+c  deadkey(2)  + "Ⲉ" > "Ⲷ"  c line(0)
+c  deadkey(2)  + "ⲉ" > "ⲷ"  c line(0)
+  deadkey(2)  + [SHIFT K_E] > "Ⲷ"  c line(0)
+  deadkey(2)  + [K_E] > "ⲷ"  c line(0)
+c  deadkey(1)  + "ⲕ" > "ⳤ"  c line(0)
+  deadkey(1)  + [K_K] > "ⳤ"  c line(0)
+c  deadkey(1)  + "ⲙ" > "⳥"  c line(0)
+  deadkey(1)  + [K_M] > "⳥"  c line(0)
+c  deadkey(2)  + "Ⲛ" > "Ⲽ"  c line(0)
+c  deadkey(2)  + "ⲛ" > "ⲽ"  c line(0)
+  deadkey(2)  + [SHIFT K_N] > "Ⲽ"  c line(0)
+  deadkey(2)  + [K_N] > "ⲽ"  c line(0)
+c  deadkey(1)  + "ⲡ" > "⳦"  c line(0)
+  deadkey(1)  + [K_P] > "⳦"  c line(0)
+c  deadkey(1)  + "ⲥ" > "⳧"  c line(0)
+  deadkey(1)  + [K_S] > "⳧"  c line(0)
+c  deadkey(1)  + "ⲧ" > "⳨"  c line(0)
+  deadkey(1)  + [K_T] > "⳨"  c line(0)
+c  deadkey(1)  + "ⲭ" > "⳩"  c line(0)
+  deadkey(1)  + [K_X] > "⳩"  c line(0)
+
+deadkey(1) + "," >  U+102E0     c thousands mark
+"№" + "1" >  U+102E1     c 1
+"№" + "2" >  U+102E2
+"№" + "3" >  U+102E3
+"№" + "4" >  U+102E4
+"№" + "5" >  U+102E5
+"№" + "6" >  U+102E6
+"№" + "7" >  U+102E7
+"№" + "8" >  U+102E8
+"№" + "9" >  U+102E9     c 9
+U+0305 + "1" >  U+102EA     c 10
+U+0305 + "2" >  U+102EB     c 20
+U+0305 + "3" >  U+102EC     c 30
+U+0305 + "4" >  U+102ED     c 40
+U+0305 + "5" >  U+102EE     c 50
+U+0305 + "6" >  U+102EF     c 60
+U+0305 + "7" >  U+102F0     c 70
+U+0305 + "8" >  U+102F1     c 80
+U+0305 + "9" >  U+102F2     c 90
+deadkey(1) + "1" >  U+102F3     c 100
+deadkey(1) + "2" >  U+102F4     c 200
+deadkey(1) + "3" >  U+102F5     c 300
+deadkey(1) + "4" >  U+102F6     c 400
+deadkey(1) + "5" >  U+102F7     c 500
+deadkey(1) + "6" >  U+102F8     c 600
+deadkey(1) + "7" >  U+102F9     c 700
+deadkey(1) + "8" >  U+102FA     c 800
+deadkey(1) + "9" >  U+102FB     c 900
+
+
+c EOF
+           

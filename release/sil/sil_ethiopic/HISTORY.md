@@ -1,6 +1,10 @@
 SIL Ethiopic Change History
 ===========================
 
+2.0.2 (26 Apr 2019)
+---------------------
+* added BCP47 codes
+
 2.0.1 (02 April 2017)
 ---------------------
 * corrected keyboarding documentation for 'ⷕ'(2dd5) from H# to H[# or K#

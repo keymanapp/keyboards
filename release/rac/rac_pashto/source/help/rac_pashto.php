@@ -59,10 +59,6 @@ This keyboard layout is designed by Rehmat Aziz Chitrali linguist and researcher
 
 
 
-
-<h2>Release History</h2>
-<p>Version 1.0, released 3 January 2019</p>
-
 <h2>Links</h2>
 <ul>
 <li><a href='http://keymankeyboards.com/iso:pus'>Other keyboards for these languages</a></li>
