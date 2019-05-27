@@ -240,8 +240,11 @@ U+17C9 U+17B6 any(con_bo) U+17CB + any(sin_vow2_key)    > context(3) U+17CA inde
 U+17C9 U+17B6 any(con_bo) U+17CB + [K_V]                > context(3) U+17CA U+17B9 dk(deadkey_v)
 
 c CaCzz C៝៝៝៝៝៝ប 
-any(any_con) any(any_con) U+1782 U+17CB + [K_Z]          > context(1) U+17DD context(2)
-any(any_con) U+17C9 any(any_con) U+1782 U+17CB + [K_Z]   > context(1) U+17DD context(3)
+any(any_con) any(any_con) U+1782 U+17CB + [K_Z]         > context(1) U+17DD context(2)
+any(any_con) U+17C9 any(any_con) U+1782 U+17CB + [K_Z]  > context(1) U+17DD context(3)
+U+17DD any(any_con) + any(sin_con1_key)                 > context(2) index(sin_con1_out,3)  c fix hngkzzk > ហ្ងកក, not ហ្ង៝កក
+U+17DD any(any_con) + any(sin_con2_key)                 > context(2) index(sin_con2_out,3)
+
 
 U+17C9 any(any_con) any(con_bo) U+1782 U+17CB + [K_Z]           > context(2) U+17DD context(3)
 U+17C9 any(any_con) U+17C9 any(con_bo) U+1782 U+17CB + [K_Z]    > context(2) U+17DD context(4)
