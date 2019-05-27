@@ -26,11 +26,22 @@ c Add support for Marathi eyelash ra R - र्‍
 c Add support for ZERO WIDTH JOINER +
 c Add option for implicit akaara deletion for Hindi mode 
 c Remap and add keys
-c RR, RR^, LL, LL^, MM, .n, .m
-c .k, .kh, .g, .j, .jh, .D, .Dh, f
-c Remove duplicate Samaveda marks from RALT
+c RR, RR^, LL, LL^, MM
+c .k .kh .g .j .jh .D .Dh .f
+c 20190527
+c L maps to ळ् as well as ॢ 
+c That combination is NOT used in Sanskrit, rendering will be incorrect if both used together.
+c Add nukta chars - .n .r .L .y 
+c Add  X ज्ञ् and F ङ् 
+c Add W } ऄ ॵ ॆ ॏ 
+c Add q Q  ऺ ऻ कऺ कऻ
+c Add z Z  ॖ   ॗ  कॖ कॗ
+c Add U+A8FE Aand U+A8FF (AY) not yet supported in fonts
+c Remove some Samaveda marks from RALT
+c Add some Samaveda marks to RCTRL
 c Regenerate keyboard graphics with ZWJ & ZWNJ
-c
+c Limit Samaveda Cantillation marks 1-7
+c Change 8 - "꣢꣯" 9 - "꣢꣫" 0 - "꣣꣬"
 store(&VERSION) "10.0" 
 store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS)'
 store(&TARGETS) 'windows macosx linux web'
@@ -49,12 +60,14 @@ store(opt1) '0'
 + [RCTRL RALT K_1]	>	set(opt1='hindi') 
 + [RCTRL RALT K_0]	>	reset(opt1)
 
+c common with devanagari_hindi
+
 + "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
 + "+"	>	U+200D	c ZERO-WIDTH JOINER
 + "^"	>	"्"	c VIRAMA
 
 c	Punctuation
-store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" "{" "}" '"' "," "." "=" "\" "<" ">" "|"
+store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" '"' "," "." "=" "\" "<" ">" "|"
 + any(Punctuation)	>	index(Punctuation,1)
 
 + "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
@@ -85,6 +98,11 @@ c standalone vowel signs with @
 "@" + "o"	>	"ो"
 "@" + "E"	>	"ॅ"
 "@" + "O"	>	"ॉ"
+"@" + "["	>	'ॆ'
+"@" + "]"	>	'ॊ'
+"@" + "W"	>	'ॆ'
+"@" + "{" > U+A8FF c DEVANAGARI VOWEL SIGN AY
+"@" + "}"	>	'ॏ'
 "@" + "a"	>	"@a"
 "@a" + "a"	>	"ा"
 "@a" + "e"	>	"ॅ"
@@ -103,6 +121,10 @@ c standalone vowel signs with @
 "@" + "L"	>	"ॢ"
 "ॢ" + "L"	>	"ॢ" c @LL
 "ॢ" + "^"	>	"ॣ" c @LL^
+"@" + "q"	>	'ऺ'
+"@" + "Q"	>	'ऻ'
+"@" + "z"	>	'ॖ'
+"@" + "Z"	>	'ॗ'
 
 c Independent Vowels
 + "a"	>	"अ"
@@ -132,12 +154,17 @@ c Independent Vowels
 "ऋ" + "^"	>	"ॠ" c RR^
 "ळ्" + "L"	>	"ऌ" c LL
 "ऌ" + "^"	>	"ॡ" c LL^
++ 'W' > 'ऄ'
++ "{" > U+A8FE c DEVANAGARI LETTER AY
++ '}' > 'ॵ'
++ "Z" > 'ॷ'
++ "Q" > 'ॴ'
++ "z" > 'ॶ'
++ "q" > 'ॳ'
 
 c Vowel Modifiers
 + "H"	>	"ः" c VISARGA - H
 + "M"	>	"ं" c ANUSVARA - M
-"." + "n"	>	"ं" c ANUSVARA - .n
-"." + "m"	>	"ं" c ANUSVARA - .m
 "ं" + "M"	>	"ँ"	c CHANDRABINDU - MM
 
 c Consonants
@@ -171,30 +198,31 @@ c Consonants
 + "w"	>	"व्"
 + "x"	>	"क्ष्"
 + "y"	>	"य्"
++ "f"	>	"फ्"
+
+c duplicate mappings for ease of typing consonants
++ "F"	>	"ङ्"
++ "X"	>	"ज्ञ्"
 + "Y"	>	"ञ्"
 
-c consonants with Nukta
-+ "q"	>	"क़्"
-+ "Q"	>	"ख़्"
-+ "F"	>	"ग़्"
-+ "z"	>	"ज़्"
-+ "Z"	>	"झ़्"
-+ "W"	>	"ड़्"
-+ "X"	>	"ढ़्"
-+ "f"	>	"फ़्"
 
 c Nukta with preceding dot
-"." + "k"	>	"क़्"
-"क़्" + "h"	>	"ख़्"
-"." + "g"	>	"ग़्"
-"." + "j"	>	"ज़्"
-"ज़्" + "h"	>	"झ़्"
-"." + "D"	>	"ड़्"
-"ड़्" + "h"	>	"ढ़्"
+"." + "k"	>	"क़्" c .k
+"क़्" + "h"	>	"ख़्" c .kh
+"." + "g"	>	"ग़्" c .g
+"." + "j"	>	"ज़्" c .j
+"ज़्" + "h"	>	"झ़्" c .jh
+"." + "D"	>	"ड़्" c .D
+"ड़्" + "h"	>	"ढ़्" c .Dh
+"." + "f"	>	"फ़्" c .f
+"." + "n"	>	"ऩ्" c .n
+"." + "r"	>	"ऱ्" c .r
+"." + "L"	>	"ऴ्" c .L
+"." + "y"	>	"य़्" c .y
 
 c alternate mapping with ~
-"~" + "n"	>	"ञ्"
-"~" + "N"	>	"ङ्"
+"~" + "n"	>	"ञ्" c ~n
+"~" + "N"	>	"ङ्" c ~N
 
 c add h to consonants
 "क्" + "h"	>	"ख्"
@@ -206,7 +234,7 @@ c add h to consonants
 "ड्" + "h"	>	"ढ्"
 "त्" + "h"	>	"थ्"
 "द्" + "h"	>	"ध्"
-"प्" + "h"	>	"फ्"
+"प्" + "h"	>	"फ्" 
 "ब्" + "h"	>	"भ्"
 "ष्" + "h"	>	"ष्" c same S=Sh
 "स्" + "h"	>	"श्"
@@ -222,10 +250,11 @@ $keymanonly: if(opt1 = '0') "न्" + "j"	>	"ञ्ज्"
 "ण्" + "g"	>	"ङ्"	c	Ng
 
 c Rules for Consonants + Vowel Signs
+
 store(Vyanjana) 'कक्षखगघङचछजज्ञझञटठडढणतथदधनपफबभमयरलळवश्रषसह'
-store(NuktaVyanjana) 'कखगजझडढफ'
-store(ViramaMaatraa) 'eiouAEIORU[]L'
-store(ViramaMaatraaU) "े" "ि" "ो" "ु" "ा" "ॅ" "ी" "ॉ" "ृ" "ू" "ॆ" "ॊ" "ॢ"
+store(NuktaVyanjana) 'कखगजझडढफनरळय'
+store(ViramaMaatraa) 'eiouAEIORU[]LW{}qQzZ'
+store(ViramaMaatraaU) "े" "ि" "ो" "ु" "ा" "ॅ" "ी" "ॉ" "ृ" "ू" "ॆ" "ॊ" "ॢ" "ॆ" 'ꣿ' 'ॏ' 'ऺ' 'ऻ'  'ॖ' 'ॗ'
 store(aPlusMaatraa) 'aeiuw'
 store(aPlusMaatraaU) "ा" "ॅ" "ै" "ौ" "ॉ"
 
@@ -263,6 +292,8 @@ c	Special Symbols
 + "&"	>	"☸"
 + "V"	>	"ऽ"	c AVAGRAHA
 
+c end of common with Hindi 
+
 c	COMMON VEDIC MARKS
 "'" + "'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA - ''
 U+0951 + "'"	>	U+1CDA	c VEDIC TONE DOUBLE SVARITA - '''
@@ -274,18 +305,23 @@ U+1CDA + "'"	>	U+1CDB	c VEDIC TONE TRIPLE SVARITA - ''''
 c VEDIC MARKS 
 
 c Samaveda Number Combining Marks
-store(DigitsC)		"꣠"		"꣡"		"꣢"		 "꣣"		"꣤"		"꣥"		"꣦"		"꣧"		"꣨"		"꣩"
-any(DigitsU) + "="	>	index(DigitsC,1)
+"१" + "="	>"꣡"		
+"२" + "="	>"꣢"		 
+"३" + "="	>"꣣"		
+"४" + "="	>"꣤"		
+"५" + "="	>"꣥"		
+"६" + "="	>"꣦"		
+"७" + "="	>"꣧"		
+"८" + "="	>"꣢꣯"		
+"९" + "="	>"꣢꣫"
+"०" + "="	>"꣣꣬"		
 
 c	Samaveda Combining vowels
-store(Vowels)		"a"  "u"
-store(VowelsU)	"अ"  "उ"
-store(VowelsC)	"꣪"  "꣫"
-+ any(Vowels)	>	index(VowelsU,1)
-any(VowelsU) + "="	>	index(VowelsC,1)
+"अ" + "="	>"꣪"
+"उ" + "="	>"꣫"
 
 c	Other Samaveda Combining characters
-"क्" + "="	>	"꣬"
+"क्" + "="	>"꣬"
 "न्" + "="	>"꣭"
 "प्" + "="	>"꣮"
 "र्" + "="	>"꣯"
@@ -330,6 +366,19 @@ c	Vedic Extensions Unicode Range - Right Alt
 + [RALT	K_V]	>	'᳸'
 
 c Unmapped RALT Keys
++ [RALT K_BKQUOTE]	>	'꣼'
++ [RALT K_HYPHEN]	>	'ꣻ'
++ [RALT K_EQUAL]	>	'ꣽ'
++ [RALT K_BKSLASH]	>	'꣺'
++ [RALT K_RBRKT]	>	'꣹'
++ [RALT K_LBRKT]	>	'꣸'
++ [RALT K_L]	>	'ꣷ'
++ [RALT K_QUOTE]	>	'ꣶ'
++ [RALT K_COLON]	>	'ꣵ'
++ [RALT K_SLASH]	>	'ꣴ'
++ [RALT K_PERIOD]	>	'ꣳ'
++ [RALT K_COMMA]	>	'ꣲ'
+
 + [RALT	K_0]	>	beep
 + [RALT	K_BKSLASH]	>	beep
 + [RALT	K_COLON]	>	beep
@@ -346,7 +395,6 @@ c Unmapped RALT Keys
 + [RALT K_K]	>	beep
 
 c Alternate - Right Ctrl for Samaveda Combining Marks
-+ [RCTRL K_0]	>	'꣠'
 + [RCTRL K_1]	>	'꣡'
 + [RCTRL K_2]	>	'꣢'
 + [RCTRL K_3]	>	'꣣'
@@ -354,8 +402,9 @@ c Alternate - Right Ctrl for Samaveda Combining Marks
 + [RCTRL K_5]	>	'꣥'
 + [RCTRL K_6]	>	'꣦'
 + [RCTRL K_7]	>	'꣧'
-+ [RCTRL K_8]	>	'꣨'
-+ [RCTRL K_9]	>	'꣩'
++ [RCTRL K_8]	>	"꣢꣯"
++ [RCTRL K_9]	>	"꣢꣫"
++ [RCTRL K_0]	>	"꣣꣬"
 + [RCTRL K_A]	>	'꣪'
 + [RCTRL K_K]	>	'꣬'
 + [RCTRL K_N]	>	'꣭'
@@ -364,36 +413,35 @@ c Alternate - Right Ctrl for Samaveda Combining Marks
 + [RCTRL K_S]	>	'꣱'
 + [RCTRL K_U]	>	'꣫'
 + [RCTRL K_V]	>	'꣰'
-+ [RCTRL K_BKQUOTE]	>	'꣼'
-+ [RCTRL K_HYPHEN]	>	'ꣻ'
-+ [RCTRL K_EQUAL]	>	'ꣽ'
-+ [RCTRL K_BKSLASH]	>	'꣺'
-+ [RCTRL K_RBRKT]	>	'꣹'
-+ [RCTRL K_LBRKT]	>	'꣸'
-+ [RCTRL K_L]	>	'ꣷ'
-+ [RCTRL K_QUOTE]	>	'ꣶ'
-+ [RCTRL K_COLON]	>	'ꣵ'
-+ [RCTRL K_SLASH]	>	'ꣴ'
-+ [RCTRL K_PERIOD]	>	'ꣳ'
-+ [RCTRL K_COMMA]	>	'ꣲ'
+
++ [RCTRL K_HYPHEN]	>	nul
++ [RCTRL K_SLASH]	>	'᳓'
++ [RCTRL K_PERIOD]	>	'᳑'
++ [RCTRL K_COMMA]	>	'᳐'
++ [RCTRL K_BKSLASH] > '꣼'
++ [RCTRL K_RBRKT] > '꣹'
++ [RCTRL K_LBRKT] > '꣸'
++ [RCTRL K_QUOTE] > 'ꣻ'
++ [RCTRL K_COLON] > '꣺'
++ [RCTRL K_EQUAL] > nul
++ [RCTRL K_E] > nul
++ [RCTRL K_W] >nul
++ [RCTRL K_Q] > nul
++ [RCTRL K_Z] >  '᳸'
++ [RCTRL K_X] >  '᳹'
++ [RCTRL K_C] >  '᳒'
 
 c Unmapped RCTRL Keys
 + [RCTRL K_B]	>	beep
-+ [RCTRL K_C]	>	beep
 + [RCTRL K_D]	>	beep
-+ [RCTRL K_E]	>	beep
 + [RCTRL K_F]	>	beep
 + [RCTRL K_G]	>	beep
 + [RCTRL K_H]	>	beep
 + [RCTRL K_I]	>	beep
 + [RCTRL K_J]	>	beep
 + [RCTRL K_O]	>	beep
-+ [RCTRL K_Q]	>	beep
 + [RCTRL K_T]	>	beep
-+ [RCTRL K_W]	>	beep
-+ [RCTRL K_X]	>	beep
 + [RCTRL K_Y]	>	beep
-+ [RCTRL K_Z]	>	beep
 c + [RCTRL K_M]	>	beep c hangs while importing in OSK
 
 c EOF
