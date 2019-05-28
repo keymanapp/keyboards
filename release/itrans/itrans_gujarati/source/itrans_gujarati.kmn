@@ -31,7 +31,7 @@ c 	Special Symbols
 "ઑ" + "M" > "ૐ" 
 + "#"	>	"ૐ"
 + "$"	>	"₹"
-+ "%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
++ "%"	>	"રૂ૰"
 + "*"	>	"❀"
 + "&"	>	"☸"
 + "V"	>	"ઽ"	c AVAGRAHA
@@ -55,15 +55,16 @@ store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" "{" "}" '"' "," ".
 
 + "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
 + "@"	>	"@" 
-"," + ","	>	U+0970	c	DEVANAGARI ABBREVIATION SIGN
 
+"," + ","	>	"૰"	c	GUJARATI ABBREVIATION SIGN
 "." + "."	>	"।"	c twice for DANDA
 "।" + "."	>	"॥"	c thrice for DOUBLE DANDA
 "॥" + "."	>	U+2026	c four dots for a HORIZONTAL ELLIPSIS
+
 "-" + "-"	>	U+2013	c hyphen twice for EN DASH
 U+2013 + "-"	>	U+2014	c three times for EM DASH
 
-c 	numbers - Devanagari DigitsU
+c 	numbers - Gujarati DigitsU
 store(Digits)	"0"	"1"	"2"	"3"	"4"	"5"	"6"	"7"	"8"	"9"
 store(DigitsU)	"૦"	"૧"	"૨"	"૩"	"૪"	"૫"	"૬"	"૭"	"૮"	"૯"
 + any(Digits)	>	index(DigitsU,1)
