@@ -13,7 +13,7 @@ by Avinash Chopde, with some minor modifications for typing phonetically using a
 keyboard and getting output in Devanagari script in Unicode.
 
     
-Examples: Type `saMskRta` for संस्कृत, `hindI` for  हिन्दी.
+Examples: Type `saMskRRta` for संस्कृत, `hindI` for  हिन्दी.
 
 
 Supported Platforms
