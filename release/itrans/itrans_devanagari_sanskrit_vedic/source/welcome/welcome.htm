@@ -74,24 +74,60 @@ text-align: right;
 </head>
 <body>
 <h1>Welcome!!!</h1>
-<h2>Version 1.1.0</h1>
 
-<h3><span style="color: chocolate;">Vedic Sanskrit Devanagari Phonetic (ITRANS) </span>Keyboard</h3>
-<p>This is a phonetic Devanagari (ITRANS) keyboard layout with support for Vedic Sanskrit (Devanagari Extended and Vedic Extensions Unicode ranges).
-</p>
-<p><strong>Vedic Sanskrit Devanagari Phonetic (ITRANS) Keyboard</strong> is based on <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> transliteration scheme with some modifications. You can phonetically type using the QWERTY keyboard with ITRANS trasliteration scheme and get Devanagari output. For example, the keys <kbd>s</kbd> <kbd>a</kbd> <kbd>M</kbd> <kbd>s</kbd> <kbd>k</kbd> <kbd>R</kbd> <kbd>t</kbd> <kbd>a</kbd> will output the word <strong>संस्कृत</strong>, <kbd>m</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>g</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>space</kbd> will output the word <strong>मङ्गल </strong>, <kbd>l</kbd> <kbd>a</kbd> <kbd>x</kbd> <kbd>m</kbd> <kbd>I</kbd> will output the word <strong>लक्ष्मी</strong>.</p>
+<h3> <font color=Chocolate>Vedic Sanskrit Devanagari Phonetic (ITRANS) </font>Keyboard</h3>
+
+<p>This is a phonetic Devanagari keyboard layout with support for Vedic Sanskrit 
+(Devanagari Extended and Vedic Extensions Unicode ranges). 
+It is based on the <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong>
+transliteration scheme by Avinash Chopde, with some minor modifications.
+You need to use a Unicode Devanagari font which has support for Vedic Sanskrit, e.g. 
+<strong><a href="http://svayambhava.blogspot.com/p/siddhanta-devanagariunicode-open-type.html">
+Siddhanta</a></strong> font by Mihail Bayaryn. </p>
+
+<p>Additionally, it can also be used for typing <strong>Hindi</strong>, <strong>Marathi</strong> 
+and other languages written in Devanagari script.<p>
+
+<p>You can phonetically type using the QWERTY keyboard with ITRANS trasliteration scheme and 
+get Devanagari output. For example, 
+the keys <kbd>saMskRRta</kbd> will output the word <strong>संस्कृत</strong>, 
+<kbd>mangaLa</kbd> will output the word <strong>मङ्गळ</strong>, 
+<kbd>laxmI</kbd> will output the word <strong>लक्ष्मी</strong>.</p>
+
+<h3>Hindi mode</h3>
+
+<p>Implicit `a` instead of explicit Virama for Hindi mode can be activated by pressing 
+<kbd>RCTRL</kbd><kbd>RALT</kbd><kbd>1</kbd> keys. In this mode, 
+the implicit <strong>a</strong> is applied after the word ending consonant. 
+e.g. <kbd>kt</kbd> <kbd>space</kbd> produces <samp>क्त </samp> and  
+<kbd>rAm,</kbd> produces <samp>राम,</samp> instead of <samp>राम्,</samp> 
+output in the default Sanskrit mode. 
+Press <kbd>RCTRL</kbd><kbd>RALT</kbd><kbd>0</kbd> keys to reset the Hindi option.</p>
+
+<h3>Special Consonant conjuncts</h3>
+
+<p>In the default Sanskrit mode, `Panchama varna`  <samp>ङ्</samp> 
+and <samp>ञ्</samp> as part of consonant conjuncts 
+can be typed as <kbd>n</kbd> e.g. <kbd>mangal</kbd> <kbd>space</kbd> 
+will output the word <strong>मङ्गल </strong>, <kbd>chanchala</kbd> will 
+output the word <strong>चञ्चल</strong>.</p>
 
 <h3>Keyboard layouts</h3>
-<p>The default and shifted layouts cover Devanagari digits, consonants, vowels and other commonly used characters.
+
+<p>The default and shifted layouts cover Devanagari digits, consonants, vowels and other 
+commonly used characters.</p>
+
 <center>
 <h3>Default (unshifted)</h3>
-<p><img src="itrans_devanagari_sanskrit_vedicU_.png" alt="Default (unshifted) state"/></p>
+<p><img src="itrans_devanagari_sanskrit_vedicU_.png" alt="Default (unshifted) state"/>
+</p>
 <h3>Shift</h3>
-<p><img src="itrans_devanagari_sanskrit_vedicU_S.png" alt="Shift state"/></p>
+<p><img src="itrans_devanagari_sanskrit_vedicU_S_edited.png" alt="Shift state"/></p>
 </center>
 
 <h3>Consonants</h3>
-<p>The following table shows the English letters to type to get Devanagari consonants.</p>
+
+<p>The following table shows the English letters to type to get Devanagari consonants. e.g. type <kbd>k</kbd> for <samp>क्</samp>, <kbd>ka</kbd> for <samp>क</samp>, <kbd>R</kbd> for <samp>र्‍</samp> (eyelash Ra for Marathi), <kbd>RR</kbd> for <samp>ऋ</samp>, <kbd>RR^</kbd> for <samp>ॠ</samp>, <kbd>LL</kbd> for <samp>ऌ</samp>, etc.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
@@ -146,17 +182,25 @@ text-align: right;
 <td>क्</td><td>k</td>
 </tr>
 <tr>
-<td></td><td></td><td></td>
+<td>श्र</td><td>shra</td><td></td>
 <td>क्ष</td><td>xa/kSa</td><td></td>
 <td>त्र</td><td>tra</td><td></td>
 <td>ज्ञ</td><td>GYa/j~na</td><td></td>
-<td></td><td></td>
+<td>र्‍ (eyelash Ra)</td><td>R</td>
 </tr>
 </tbody>
 </table>
 
 <h3>Vowels and Vowel Signs</h3>
-<p>In the following table, independent vowels, dependent vowel signs and vowel signs combined with the consonant 'k' are shown in ITRANS Sanskrit Vedic transliteration scheme on the top two rows. The third row shows Devanagari Vowels in their independent form on the left and their corresponding dependent form (maatraa or vowel sign) on the right. The fourth row shows the vowel sign combined with the consonant 'k' in Devanagari. 'ka' is without any added vowel sign, where the vowel 'a' is inherent.</p>
+
+<p>In the following table, independent vowels, dependent vowel signs and vowel signs 
+combined with the consonant 'k' are shown in ITRANS Sanskrit Vedic transliteration 
+scheme on the top two rows. The third row shows Devanagari Vowels in their independent 
+form on the left and their corresponding dependent form (maatraa or vowel sign) on the 
+right. The fourth row shows the vowel sign combined with the consonant 'k' in 
+Devanagari. 'ka' is without any added vowel sign, where the vowel 'a' is inherent.</p>
+<p>If there is a need to type ONLY the vowel signs, it can be done 
+    using `@` instead of a consonant. e.g. @A will output ा, @ai will output ै.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <thead>
@@ -167,10 +211,10 @@ text-align: right;
 <th colspan="2">ii/I/ee</th>
 <th colspan="2">u</th>
 <th colspan="2">uu/U/oo</th>
-<th colspan="2">R</th>
-<th colspan="2">R^</th>
-<th colspan="2">|</th>
-<th colspan="2">|^</th>
+<th colspan="2">RR</th>
+<th colspan="2">RR^</th>
+<th colspan="2">LL</th>
+<th colspan="2">LL^</th>
 <th colspan="2">e</th>
 <th colspan="2">ai/ei</th>
 <th colspan="2">o</th>
@@ -183,10 +227,10 @@ text-align: right;
 <th>ii</th><th>kI</th>
 <th>u</th><th>ku</th>
 <th>uu</th><th>kU</th>
-<th>R</th><th>kR</th>
-<th>R^</th><th>kR^</th>
-<th>|</th><th>k|</th>
-<th>|^</th><th>k|^</th>
+<th>RR</th><th>kRR</th>
+<th>RR^</th><th>kRR^</th>
+<th>LL</th><th>kLL</th>
+<th>LL^</th><th>kLL^</th>
 <th>e</th><th>ke</th>
 <th>ai</th><th>kai</th>
 <th>o</th><th>ko</th>
@@ -228,40 +272,88 @@ text-align: right;
 </tbody>
 </table>
 
-<p>The following table shows additional vowel signs used in Devanagari script by other languages such as Marathi, Konkani, Kashmiri, Bihari, etc, in similar format as above. 
-<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+
+<p>The following table shows additional vowel signs used in Devanagari script by other languages. 
+<table class="inputSequences" style="margin-left: auto; margin-right: auto; text-align: center;">
 <tbody>
 <thead>
 <tr>
-<th colspan="2">ae/E</th>
-<th colspan="2">aw/O</th>
-<th colspan="2">[</th>
-<th colspan="2">]</th>
+<th>E/ae</th>
+<th>O/aw</th>
+<th>W</th>
+<th>[</th>
+<th>]</th>
+<th>{</th>
+<th>}</th>
+<th>q</th>
+<th>Q</th>
+<th>z</th>
+<th>Z</th>
 </tr>
 <tr>
-<th>{</th><th>kae</th>
-<th>}</th><th>kaw</th>
-<th>[</th><th>k[</th>
-<th>]</th><th>k]</th>
+<th>kE/kae</th>
+<th>kO/kaw</th>
+<th>kW</th>
+<th>k[</th>
+<th>k]</th>
+<th>k{</th>
+<th>k}</th>
+<th>kq</th>
+<th>kQ</th>
+<th>kz</th>
+<th>kZ</th>
 </tr>
 </thead>
 <tr>
-<td>ॲ</td><td>ॅ</td>
-<td>ऑ</td><td>ॉ</td>
-<td>ऎ</td><td>ॆ</td>
-<td>ऒ</td><td>ॊ</td>
+<td>ऍ</td>
+<td>ऑ</td>
+<td>ऄ</td>
+<td>ऎ</td>
+<td>ऒ</td>
+<td>ꣾ</td>
+<td>ॵ</td>
+<td>ॳ</td>
+<td>ॴ</td>
+<td>ॶ</td>
+<td>ॷ</td>
 </tr>
 <tr>
-<td>ॲ</td><td>कॅ</td>
-<td>ऑ</td><td>कॉ</td>
-<td>ऎ</td><td>कॆ</td>
-<td>ऒ</td><td>कॊ</td>
+<td>ॅ</td>
+<td>ॉ</td>
+<td>ॆ</td>
+<td>ॆ</td>
+<td>ॊ</td>
+<td>ꣾ</td>
+<td>ॏ</td>
+<td>ऺ</td>
+<td>ऻ</td>
+<td>ॖ</td>
+<td>ॗ</td>
+</tr>
+<tr>
+<td>कॅ</td>
+<td>कॉ</td>
+<td>कॆ</td>
+<td>कॆ</td>
+<td>कॊ</td>
+<td>कꣾ</td>
+<td>कॏ</td>
+<td>कऺ</td>
+<td>कऻ</td>
+<td>कॖ</td>
+<td>कॗ</td>
 </tr>
 </tbody>
 </table>
 
 <h3>Consonantal Diacritics</h3>
-<p>Arranged with the vowels are two consonantal diacritics, the final nasal anusvāra ं <kbd>M</kbd> and the final fricative visarga ः <kbd>H</kbd> (called अं aṃ and अः aḥ). Another diacritic used in other languages written in Devanagari script is the candrabindu/anunāsika ँ <kbd>&lt;</kbd> (अँ). These consonantal diacritics follow the vowel signs including the implicit `a`. The following table shows consonant `k` followed by various dependent vowel signs and consonantal diacritics ं and ः.
+
+<p>Arranged with the vowels are two consonantal diacritics, the final nasal anusvāra ं 
+<kbd>M</kbd> and the final fricative visarga ः <kbd>H</kbd> (called अं aṃ and अः aḥ). 
+Another diacritic used in other languages written in Devanagari script is the 
+candrabindu/anunāsika ँ <kbd>M</kbd><kbd>M</kbd> (अँ). These consonantal diacritics follow the 
+vowel signs including the implicit `a`. The following table shows consonant `k` followed by 
+various dependent vowel signs and consonantal diacritics ं and ः.
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <thead>
@@ -273,10 +365,10 @@ text-align: right;
 <th>kI</th>
 <th>ku</th>
 <th>kU</th>
-<th>kR</th>
-<th>kR^</th>
-<th>k|</th>
-<th>k|^</th>
+<th>kRR</th>
+<th>kRR^</th>
+<th>kLL</th>
+<th>kLL^</th>
 <th>kE</th>
 <th>kai</th>
 <th>kO</th>
@@ -318,21 +410,52 @@ text-align: right;
 <td>कोः</td>
 <td>कौः</td>
 </tr>
+<tr>
+<td><strong>MM</strong></td>
+<td>कँ</td>
+<td>काँ</td>
+<td>किँ</td>
+<td>कीँ</td>
+<td>कुँ</td>
+<td>कूँ</td>
+<td>कृँ</td>
+<td>कॄँ</td>
+<td>कॢँ</td>
+<td>कॣँ</td>
+<td>केँ</td>
+<td>कैँ</td>
+<td>कोँ</td>
+<td>कौँ</td>
+</tr>
 </tbody>
 </table>
 
 <h3>Conjuncts</h3>
-<p>Consonant conjuncts are automatically formed,  e.g. <kbd>k</kbd> <kbd>t</kbd> produces <samp>क्त्‌</samp>. The inherent <strong>a</strong> is only applied when followed by <kbd>space</kbd>. e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>a</kbd> or <kbd>k</kbd> <kbd>t</kbd> <kbd>space</kbd> produces <samp>क्त</samp>. 
-    
-<h3>Special Consonant conjuncts</h3>
-`Panchama varna`  <samp>ङ्</samp> and <samp>ञ्</samp> as part of consonant conjuncts can be typed as <kbd>n</kbd> e.g. <kbd>m</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>g</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>space</kbd> will output the word <strong>मङ्गल </strong>, <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>n</kbd> <kbd>c</kbd> <kbd>h</kbd> <kbd>a</kbd> <kbd>l</kbd> <kbd>a</kbd> will output the word <strong>चञ्चल</strong>.
-    
+
+<p>Consonant conjuncts are automatically formed,  e.g. <kbd>k</kbd> <kbd>t</kbd> 
+produces <samp>क्त्‌</samp>. 
+
 <h3>Explicit Virama</h3>
-<p>To force an explicit virama at end of word, use <kbd>^</kbd> e.g. <kbd>k</kbd> <kbd>t</kbd> <kbd>^</kbd> <kbd>space</kbd> produces <samp>क्त्‌ </samp>.</p>
-<p>A full (live) consonant with visible virama in middle of words can be typed using <kbd>^</kbd>, e.g. <kbd>k</kbd> <kbd>^</kbd> <kbd>S</kbd> produces <samp>क्‌ष्</samp>.</p>
+
+<p>To force an explicit virama at end of word, use <kbd>^</kbd> e.g. <kbd>k</kbd> 
+<kbd>t</kbd> <kbd>^</kbd> <kbd>space</kbd> produces <samp>क्त्‌ </samp>.</p>
+
+<p>A full (live) consonant with visible virama in middle of words can be typed using 
+<kbd>^</kbd>, e.g. <kbd>k</kbd> <kbd>^</kbd> <kbd>S</kbd> produces <samp>क्‌ष्
+</samp>.</p>
 
 <h3>Zero Width Non Joiner (ZWNJ)</h3>
-<p>To type a Zero Width Non Joiner, <kbd>_</kbd> can be typed between the letters, for example: <kbd>a</kbd> <kbd>_</kbd> <kbd>i</kbd> will generate <samp>अ‌इ</samp>.</p>
+
+<p>To type a Zero Width Non Joiner, <kbd>_</kbd> can be typed between the letters, 
+for example: <kbd>a</kbd> <kbd>_</kbd> <kbd>i</kbd> will generate <samp>अ‌इ
+</samp>, <kbd>k</kbd> <kbd>_</kbd> <kbd>S</kbd> will generate <samp>क्‌ष्
+</samp>.</p>
+
+<h3>Zero Width Joiner (ZWJ)</h3>
+
+<p>To type a Zero Width Joiner, <kbd>+</kbd> can be typed between the letters, 
+for example: <kbd>k</kbd> <kbd>+</kbd> <kbd>S</kbd> will generate <samp>क्‍ष्
+</samp>, while <kbd>k</kbd><kbd>S</kbd> generates <samp>क्ष्</samp>.</p>
 
 <h3>Punctuation</h3>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
@@ -344,13 +467,9 @@ text-align: right;
 </tr>
 </thead>
 <tbody>
-<tr> <td><kbd>,</kbd></td> <td><samp>॰</samp></td> <td>Devanagari Abbreviation Sign</td></tr>
-<tr> <td><kbd>,</kbd><kbd>,</kbd></td> <td><samp>,</samp></td> <td>Comma</td></tr>
-<tr> <td><kbd>.</kbd></td> <td><samp>।</samp></td> <td>DanDaa</td></tr>
-<tr> <td><kbd>.</kbd><kbd>.</kbd></td> <td><samp>.</samp></td> <td>Period</td></tr>
-<tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td><samp>॥</samp></td> <td>Double DanDaa</td></tr>
-<tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td><samp>…</samp></td> <td>Ellipsis</td></tr>
-<tr> <td><kbd>-</kbd></td> <td><samp>-</samp></td> <td>Dash</td></tr>
+<tr> <td><kbd>,</kbd><kbd>,</kbd></td> <td><samp>॰</samp></td> <td>Devanagari Abbreviation Sign</td></tr>
+<tr> <td><kbd>.</kbd><kbd>.</kbd></td> <td><samp>।</samp></td> <td>DanDaa</td></tr>
+<tr> <td><kbd>.</kbd><kbd>.</kbd><kbd>.</kbd></td> <td>॥</samp></td> <td>Double DanDaa</td></tr>
 <tr> <td><kbd>-</kbd><kbd>-</kbd></td> <td><samp>–</samp></td> <td>En Dash</td></tr>
 <tr> <td><kbd>-</kbd><kbd>-</kbd><kbd>-</kbd></td> <td><samp>—</samp></td> <td>Em Dash</td></tr>
 </tbody>
@@ -371,15 +490,14 @@ text-align: right;
 </thead>
 <tbody>
 <tr> <td><kbd>#</kbd></td> <td><samp>ॐ</samp></td> <td>DEVANAGARI OM SIGN</td></tr>
-<tr> <td><kbd>$</kbd></td> <td><samp>₹</samp></td> <td> RUPEE SIGN</td></tr>
+<tr> <td><kbd>$</kbd></td> <td><samp>₹</samp></td> <td>RUPEE SIGN</td></tr>
 <tr> <td><kbd>%</kbd></td> <td><samp>࿕</samp></td> <td>U+0FD5  RIGHT-FACING SVASTI SIGN</td></tr>
 <tr> <td><kbd>*</kbd></td> <td><samp>❀</samp></td> <td>U+2740 WHITE FLORETTE UNICODE CHARACTER</td></tr>
 <tr> <td><kbd>&</kbd></td> <td><samp>☸</samp></td> <td>U+2638 WHEEL OF DHARMA UNICODE CHARACTER </td></tr>
-<tr> <td><kbd><</kbd></td> <td><samp>ँ</samp></td> <td> CHANDRABINDU</td></tr>
-<tr> <td><kbd>z</kbd></td> <td><samp>ऽ</samp></td> <td> AVAGRAHA</td></tr>
-<tr> <td><kbd>\</kbd></td> <td><samp>़</samp></td> <td> NUKTA</td></tr>
+<tr> <td><kbd>V</kbd></td> <td><samp>ऽ</samp></td> <td> AVAGRAHA</td></tr>
 </tbody>
 </table>
+
 <h3>Commonly used Vedic Accents</h3>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -390,19 +508,25 @@ text-align: right;
 </tr>
 </thead>
 <tbody>
-<tr> <td><kbd>'</kbd></td> <td><samp>॑</samp></td> <td>DEVANAGARI STRESS SIGN UDATTA - SVARITA</td></tr>
-<tr> <td><kbd>'</kbd><kbd>'</kbd></td> <td><samp>᳚</samp></td> <td>VEDIC TONE DOUBLE SVARITA </td></tr>
-<tr> <td><kbd>'</kbd><kbd>'</kbd><kbd>'</kbd></td> <td><samp>᳛</samp></td> <td>VEDIC TONE TRIPLE SVARITA</td></tr>
-<tr> <td><kbd>`</kbd></td> <td><samp>॒</samp></td> <td>DEVANAGARI STRESS SIGN ANUDATTA</td></tr>
-<tr> <td><kbd>></kbd></td> <td><samp>ꣳ</samp></td> <td> CANDRABINDU VIRAMA</td></tr>
+<tr> <td><kbd>'</kbd><kbd>'</kbd></td> <td><samp>॑</samp></td> <td>DEVANAGARI STRESS SIGN UDATTA - SVARITA</td></tr>
+<tr> <td><kbd>'</kbd><kbd>'</kbd><kbd>'</kbd></td> <td><samp>᳚</samp></td> <td>VEDIC TONE DOUBLE SVARITA </td></tr>
+<tr> <td><kbd>'</kbd><kbd>'</kbd><kbd>'</kbd><kbd>'</kbd></td> <td><samp>᳛</samp></td> <td>VEDIC TONE TRIPLE SVARITA</td></tr>
+<tr> <td><kbd>`</kbd><kbd>`</kbd></td> <td><samp>॒</samp></td> <td>DEVANAGARI STRESS SIGN ANUDATTA</td></tr>
+<tr> <td><kbd>M</kbd><kbd>M</kbd><kbd>^</kbd></td> <td><samp>ꣳ</samp></td> <td> CANDRABINDU VIRAMA</td></tr>
 <tr> <td><kbd>=</kbd><kbd>=</kbd></td> <td><samp>ᳶ</samp></td> <td> VEDIC SIGN UPADHMANIYA</td></tr>
 </tbody>
 </table>
 
-<h3>Samaveda Combining Marks</h3>
+<h3>Cantillation marks for Samaveda</h3>
 <ol>
-<li>For typing Samaveda combining mark with digits, press the number keys and then the equal key, for example <kbd>9</kbd> <kbd>=</kbd> produces <samp>꣩</samp>.</li>
-<li>For typing other Samaveda combining marks, press the letter key and then the equal key as per the following table.
+<li>For typing cantillation marks for Samaveda with digits (1-7), press the number keys and then 
+the EQUAL key, for example <kbd>7</kbd> <kbd>=</kbd> produces <samp>꣧</samp>.
+</li>
+<li>The number keys 0, 8 and 9 when followed by the EQUAL key produce frequently used
+combinations of cantillation marks.
+</li>
+<li>For typing other cantillation marks for Samaveda, press the letter key and then the EQUAL 
+key as per the following table.
 </li>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -413,6 +537,10 @@ text-align: right;
 </tr>
 </thead>
 <tbody>
+<tr> <td><kbd>8</kbd><kbd>=</kbd></td> <td><samp>꣢꣯</samp></td> <td>e.g. ज꣢꣯</td></tr>
+<tr> <td><kbd>9</kbd><kbd>=</kbd></td> <td><samp>꣢꣫</samp></td> <td>e.g. ल꣢꣫ </td></tr>
+<tr> <td><kbd>0</kbd><kbd>=</kbd></td> <td><samp>꣣꣬</samp></td> <td>e.g. क꣣꣬</td></tr>
+<tr></tr>
 <tr> <td><kbd>a</kbd><kbd>=</kbd></td> <td><samp>꣪</samp></td> <td>COMBINING DEVANAGARI LETTER A </td></tr>
 <tr> <td><kbd>u</kbd><kbd>=</kbd></td> <td><samp>꣫</samp></td> <td>COMBINING DEVANAGARI LETTER U </td></tr>
 <tr> <td><kbd>k</kbd><kbd>=</kbd></td> <td><samp>꣬</samp></td> <td>COMBINING DEVANAGARI LETTER KA </td></tr>
@@ -423,9 +551,13 @@ text-align: right;
 <tr> <td><kbd>v</kbd><kbd>=</kbd></td> <td><samp>꣰</samp></td> <td>COMBINING DEVANAGARI LETTER VI </td></tr>
 </tbody>
 </table>
-<li>Alternately use the Right Ctrl layout.</li>
+<p>
+<li>Alternately use the Right Ctrl layout which is mapped with same set of keys (without EQUAL sign). 
+It also has Tone marks and Breathing mark for Samaveda, Signs for Jaiminiya Sama Veda
+ and nasalization marks from Devanagari Extended Unicode range.</li>
 <center>
 <h3>RCtrl</h3>
+
 <p><img src="itrans_devanagari_sanskrit_vedicU_RC.png" alt="RCtrl state"/></p>
 </center>
 </ol>
@@ -433,6 +565,7 @@ text-align: right;
 <h3>Other Vedic characters</h3>
 <center>
 <h3>AltGr (RAlt)</h3>
+
 <p><img src="itrans_devanagari_sanskrit_vedicU_RA.png" alt="AltGr (RAlt) state"/></p>
 </center>
 
