@@ -1,5 +1,12 @@
-Vedic Sanskrit Devanagari Phonetic (ITRANS) Change History
+Vedic Sanskrit Devanagari Phonetic (ITRANS) Version History
 ======================================
+
+1.2.0 (2019-05-26)
+----------------
+* Streamline code with use of `store` and `any`
+* Add option for implicit akaara deletion for Hindi mode 
+* Remap some keys based on user feedback
+* Add support for Marathi eyelash ra R - र्‍ 
 
 1.1.0 (2019-05-22)
 ----------------
@@ -13,5 +20,4 @@ Vedic Sanskrit Devanagari Phonetic (ITRANS) Change History
 
 1.0.0 (2019-05-10)
 ----------------
-* Initial Version
-* Created by Shree Devi Kumar
+* Initial Version by Shree Devi Kumar
