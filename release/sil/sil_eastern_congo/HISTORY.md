@@ -8,6 +8,7 @@ Eastern Congo Keyboard Change History
 * Added support for tilde on vowels
 * Updated list of languages supported
 * Added web support
+* Added fonts to package
 
 1.3.1 (4 Jun 2018)
 ------------------
