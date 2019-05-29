@@ -36,12 +36,17 @@ c Add  X ज्ञ् and F ङ्
 c Add W } ऄ ॵ ॆ ॏ 
 c Add q Q  ऺ ऻ कऺ कऻ
 c Add z Z  ॖ   ॗ  कॖ कॗ
-c Add U+A8FE Aand U+A8FF (AY) not yet supported in fonts
+c Add { for U+A8FE Aand U+A8FF (AY) not yet supported in fonts
 c Remove some Samaveda marks from RALT
 c Add some Samaveda marks to RCTRL
 c Regenerate keyboard graphics with ZWJ & ZWNJ
+c Edit manually Shift layout graphics to add AY and svasti
 c Limit Samaveda Cantillation marks 1-7
 c Change 8 - "꣢꣯" 9 - "꣢꣫" 0 - "꣣꣬"
+c 20190529
+c Changes based on PR feedback
+c Fix double virama bug
+c
 store(&VERSION) "10.0" 
 store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS)'
 store(&TARGETS) 'windows macosx linux web'
@@ -60,8 +65,16 @@ store(opt1) '0'
 + [RCTRL RALT K_1]	>	set(opt1='hindi') 
 + [RCTRL RALT K_0]	>	reset(opt1)
 
-c common with devanagari_hindi
+c 
 
+c	Special Symbols
+
++ "#"	>	"ॐ"
++ "$"	>	"₹"
++ "%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
++ "*"	>	"❀"
++ "&"	>	"☸"
++ "V"	>	"ऽ"	c AVAGRAHA
 + "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
 + "+"	>	U+200D	c ZERO-WIDTH JOINER
 + "^"	>	"्"	c VIRAMA
@@ -262,7 +275,7 @@ c	implicit akaara deletion for hindi mode
 store(opt1endings) outs(Punctuation) ' '
 $keymanonly: if(opt1 = 'hindi') any(Vyanjana)"्" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
 
-
+any(Vyanjana)"्" + "^"	>	index(Vyanjana,1)"्"
 any(Vyanjana)"्" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
 any(Vyanjana)"्" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
@@ -273,6 +286,7 @@ any(Vyanjana)"े" + "i"	>	index(Vyanjana,1)"ै"	 c ei
 any(Vyanjana)"ो" + "o"	>	 index(Vyanjana,1)"ू"	 c oo
 any(Vyanjana)"ो" + "u"	>	index(Vyanjana,1)"ौ"	 c ou
 
+any(NuktaVyanjana)"़""्" + "^"	>	index(NuktaVyanjana,1)"़""्"
 any(NuktaVyanjana)"़""्" + "a"	>	index(NuktaVyanjana,1)"़"
 any(NuktaVyanjana)"़" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3) 
 any(NuktaVyanjana)"़""्" + any(ViramaMaatraa) 	>	index(NuktaVyanjana,1)"़" index(ViramaMaatraaU,4) 
@@ -283,16 +297,7 @@ any(NuktaVyanjana)"़""े" + "i"	>	index(NuktaVyanjana,1)"़""ै"	 c ei
 any(NuktaVyanjana)"़""ो" + "o"	>	 index(NuktaVyanjana,1)"़""ू"	 c oo
 any(NuktaVyanjana)"़""ो" + "u"	>	index(NuktaVyanjana,1)"़""ौ"	 c ou
 
-c	Special Symbols
-
-+ "#"	>	"ॐ"
-+ "$"	>	"₹"
-+ "%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
-+ "*"	>	"❀"
-+ "&"	>	"☸"
-+ "V"	>	"ऽ"	c AVAGRAHA
-
-c end of common with Hindi 
+c 
 
 c	COMMON VEDIC MARKS
 "'" + "'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA - ''
