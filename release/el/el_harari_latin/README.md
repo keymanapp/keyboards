@@ -1,9 +1,9 @@
 Harari (Latin) Keyboard
 =====================
 
-Copyright (C) 2005-2017 State Library of Victoria
+Copyright (C) 2005-2019 State Library of Victoria
 
-Version 1.1
+Version 1.1.1
 
 Harari Latin keyboard layout.
 
