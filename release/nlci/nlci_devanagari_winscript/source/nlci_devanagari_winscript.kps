@@ -7,6 +7,7 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>WInscript_Hindi.png</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,9 +17,10 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">NLCI Devanagari WinScript</Name>
+    <Name URL="">Devanagari WinScript [NLCI]</Name>
     <Copyright URL="">© 2002-2019 NLCI, Bangalore</Copyright>
     <Version URL="">1.0</Version>
+    <Author URL="">Binila Sanki, SG NLCI</Author>
   </Info>
   <Files>
     <File>
@@ -34,6 +36,12 @@
       <FileType>.htm</FileType>
     </File>
     <File>
+      <Name>..\build\nlci_devanagari_winscript.js</Name>
+      <Description>File nlci_devanagari_winscript.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
       <Name>..\build\nlci_devanagari_winscript.kvk</Name>
       <Description>File nlci_devanagari_winscript.kvk</Description>
       <CopyLocation>0</CopyLocation>
@@ -46,10 +54,10 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\nlci_devanagari_winscript.js</Name>
-      <Description>File nlci_devanagari_winscript.js</Description>
+      <Name>WInscript_Hindi.png</Name>
+      <Description>File WInscript_Hindi.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
+      <FileType>.png</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -57,11 +65,7 @@
       <Name>NLCI Devanagari WinScript</Name>
       <ID>nlci_devanagari_winscript</ID>
       <Version>1.0</Version>
-      <Languages>
-        <Language ID="hi">Hindi</Language>
-        <Language ID="mjt-Deva">Sauria Paharia (Devanagari)</Language>
-        <Language ID="kfk-Deva">Kinnauri (Devanagari)</Language>
-      </Languages>
+      <Languages/>
     </Keyboard>
   </Keyboards>
   <Strings/>
