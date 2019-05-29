@@ -98,25 +98,33 @@ tersedia di sini:</span></span></span></font></p>
 <span style="background: transparent"> 
 <font face="Doulos SIL Cipher"><span style="font-style: normal"><a class="western" href="https://software.sil.org/doulos-sil-cipher/">https://software.sil.org/doulos-sil-cipher/</a></span></span></font></p>
 
-<h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt rightalt-shift'>
-</div>
+<h2>Keyboard Layout</h2>
+    <h3>Default (unshifted)</h3>
+    <p><img src="LayoutU_.png" alt="Default (unshifted) state"/></p>
+
+    <h3>Shift</h3>
+    <p><img src="LayoutU_S.png" alt="Shift state"/></p>
+
+    <h3>RCtrl (unshifted)</h3>
+    <p><img src="LayoutU_RC.png" alt="RCtrl state"/></p>
+
+    <h3>Shift RCtrl</h3>
+    <p><img src="LayoutU_SRC.png" alt="Shift RCtrl state"/></p>
 
 <h2>Keyboard Instructions</h2>
 
 <h3>English</h3>
 <p style="margin-top: 0.08in; margin-bottom: 0.08in; line-height: 0.2in">
 <font face="Doulos SIL Cipher">Each of the
-number keys from 1 to 9 is set up as a &quot;rota&quot;, which means
-that quickly pressing the key multiple times cycles through the
+number keys from 1 to 8, plus five punctuation keys are each set up as a &quot;rota&quot;, which means
+that pressing the key multiple times cycles through the
 symbols for that key. For example, the rota for the 3 key is: 3 3&#775;
 3&#803; 3&#824; 3&#824;&#775; 3&#824;&#803; , which means that
-pressing 3 once outputs &quot;3&quot;, pressing it twice quickly
+pressing 3 once outputs &quot;3&quot;, pressing it twice 
 produces &quot;3&#775;&quot;, and so forth. (Technically, the
 diacritics are separate unicode characters; so, for example, 3&#824;&#775;
 is actually three characters prepackaged in the proper sequence.)
-Pressing it <i>slowly </i>twice produces <span lang="hr-HR">&quot;33&quot;</span>
-since the rota is not activated. Here are the rotas:</font></p>
+Here are the rotas:</font></p>
 <div id="Section1" dir="ltr" gutter="0" style="column-count: 3"><p class="western" style="margin-bottom: 0in">
 	<font face="Doulos SIL Cipher">1 : 1 1&#775; 1&#803; 1&#824; 1&#824;&#775;
 	1&#824;&#803;</font></p>
@@ -394,18 +402,16 @@ characters/keystrokes (cf: KepatihanPro Font Keystroke Samples.pdf) :</font></p>
 <h3>Indonesian</h3>
 <p lang="ca-ES" style="margin-top: 0.08in; margin-bottom: 0.08in; line-height: 0.2in">
 <font face="Doulos SIL Cipher"><span style="background: transparent"><font face="Doulos SIL Cipher"><span lang="es-PE"></span></font><font face="Doulos SIL Cipher"><span lang="es-PE">
-Setiap tombol bilangan angka dari 1 sampai 9 diatur sebagai suatu
+Setiap tombol bilangan angka dari 1 sampai 8 diatur sebagai suatu
 &quot;rota&quot; (daftar yang bergilir), yang berarti menekan tombol
-berkali-kali secara cepat akan muncul siklus berbagai simbol yang
+berkali-kali akan muncul siklus berbagai simbol yang
 berhubungan dengan tombol tersebut. Misalnya, rota untuk tombol
 bilangan 3 :  3 3&#775; 3&#803; 3&#824; 3&#824;&#775; 3&#824;&#803; ,
 berarti bahwa menekan 3 satu kali menghasilkan &quot;3&quot;, tekan
 cepat dua kali menghasilkan &quot;3&#775;&quot;, dan begitu
 seterusnya. (Secara teknis tanda pengenal adalah angka/huruf terpisah
 yang digabung; jadi, misalnya, 3&#824;&#775; sebenarnya tiga tanda
-yang sudah dipaket sebelumnya dalam rangkaian yang tepat) Menekan 3
-dua kali perlahan-lahan menghasilkan </span></font><font face="Doulos SIL Cipher"><span lang="hr-HR">&quot;33&quot;</span></font><font face="Doulos SIL Cipher"><span lang="es-PE">
-(rota tidak diaktifkan). Di bawah ada rota-rota untuk setiap tombol
+yang sudah dipaket sebelumnya dalam rangkaian yang tepat.) Di bawah ada rota-rota untuk setiap tombol
 (tanda/angka) yang memiliki rota: </span></font></span></font>
 </p>
 <div id="Section1" dir="ltr" gutter="0" style="column-count: 3"><p class="western" style="margin-bottom: 0in">
