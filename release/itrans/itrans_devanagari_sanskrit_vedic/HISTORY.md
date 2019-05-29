@@ -1,5 +1,35 @@
-Vedic Sanskrit Devanagari Phonetic (ITRANS) Change History
+Vedic Sanskrit Devanagari Phonetic (ITRANS) Version History
 ======================================
+
+1.2.0 (2019-05-26)
+----------------
+* Version 1.2.0
+* 20190526
+* Streamline code with use of `store` and `any`
+* Add support for Marathi eyelash ra R - र्‍ 
+* Add support for ZERO WIDTH JOINER +
+* Add option for implicit akaara deletion for Hindi mode 
+* Remap and add keys
+* RR, RR^, LL, LL^, MM
+* .k .kh .g .j .jh .D .Dh .f
+* 20190527
+* L maps to ळ् as well as ॢ 
+* That combination is NOT used in Sanskrit, rendering will be incorrect if both used together.
+* Add nukta chars - .n .r .L .y 
+* Add  X ज्ञ् and F ङ् 
+* Add W } ऄ ॵ ॆ ॏ 
+* Add q Q  ऺ ऻ कऺ कऻ
+* Add z Z  ॖ   ॗ  कॖ कॗ
+* Add { for U+A8FE Aand U+A8FF (AY) not yet supported in fonts
+* Remove some Samaveda marks from RALT
+* Add some Samaveda marks to RCTRL
+* Regenerate keyboard graphics with ZWJ & ZWNJ
+* Edit manually Shift layout graphics to add AY and svasti
+* Limit Samaveda Cantillation marks 1-7
+* Change 8 - "꣢꣯" 9 - "꣢꣫" 0 - "꣣꣬"
+* 20190529 
+* Changes based on PR feedback
+* Fix double virama bug
 
 1.1.0 (2019-05-22)
 ----------------
@@ -13,5 +43,4 @@ Vedic Sanskrit Devanagari Phonetic (ITRANS) Change History
 
 1.0.0 (2019-05-10)
 ----------------
-* Initial Version
-* Created by Shree Devi Kumar
+* Initial Version by Shree Devi Kumar
