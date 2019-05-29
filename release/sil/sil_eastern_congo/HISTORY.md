@@ -1,9 +1,10 @@
 Eastern Congo Keyboard Change History
 =====================================
 
-1.3.2 (29 Apr 2019)
+1.3.2 (31 May 2019)
 ------------------
-* Added support for: U+018E U+01DD U+00D8 U+00F8 U+0272 U+019D U+F21D
+* Added support for: U+018E U+01DD U+00D8 U+00F8 U+0272 U+019D U+A78C
+* Changed U+026A to U+0269 and added uppercase U+0196
 * Added support for tilde on vowels
 * Updated list of languages supported
 * Added web support
