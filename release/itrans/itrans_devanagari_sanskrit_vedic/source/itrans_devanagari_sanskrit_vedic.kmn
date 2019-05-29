@@ -1,4 +1,16 @@
-﻿c Version 1.1.0 
+﻿c References for existing keyboards/IME
+c ITRANS - https://www.aczoom.com/itrans/
+c Vaidika - http://svayambhava.blogspot.com/p/siddhanta-devanagariunicode-open-type.html
+c Vidyut - http://www.mywhatever.com/sanskrit/vidyut/
+c Swanalekha - https://swanalekha.smc.org.in/
+c sil_devanagari_phonetic - https://keyman.com/keyboards/sil_devanagari_phonetic
+c sil_ipa - https://github.com/keymanapp/keyboards/tree/master/release/sil/sil_ipa
+c Version 1.0.0
+c 20190510 - Created Initial Version
+c 20190515 - Initial submission to Github
+c 20190516 - Fix comments in kmn, improve welcome.htm
+c 20190517 - Fixes based on PR feedback, Remove Q for English output
+c Version 1.1.0 
 c 20190522 - Changes based on user feedback
 c Increase minor version because of mapping change
 c Change {/ऍ , }/ऑ  to ae/E/ऍ ,   aw/O/ऑ
@@ -7,1562 +19,434 @@ c Add Hindi as a supported language
 c Give error for unused keys with beep
 c Display punctuation marks on OSK
 c Display ZWNJ on OSK for _
-c Version 1.0.0
-c 20190517 - Fixes based on PR feedback, Remove Q for English output
-c 20190516 - Fix comments in kmn, improve welcome.htm
-c 20190515 - Initial submission to Github
-c 20190510 - Created Initial Version
-c References for existing keyboards/IME
-c ITRANS - https://www.aczoom.com/itrans/
-c Vaidika - http://svayambhava.blogspot.com/p/siddhanta-devanagariunicode-open-type.html
-c Vidyut - http://www.mywhatever.com/sanskrit/vidyut/
-c Swanalekha - https://swanalekha.smc.org.in/
-c sil_devanagari_phonetic - https://keyman.com/keyboards/sil_devanagari_phonetic
+c Version 1.2.0
+c 20190526
+c Streamline code with use of `store` and `any`
+c Add support for Marathi eyelash ra R - र्‍ 
+c Add support for ZERO WIDTH JOINER +
+c Add option for implicit akaara deletion for Hindi mode 
+c Remap and add keys
+c RR, RR^, LL, LL^, MM
+c .k .kh .g .j .jh .D .Dh .f
+c 20190527
+c L maps to ळ् as well as ॢ 
+c That combination is NOT used in Sanskrit, rendering will be incorrect if both used together.
+c Add nukta chars - .n .r .L .y 
+c Add  X ज्ञ् and F ङ् 
+c Add W } ऄ ॵ ॆ ॏ 
+c Add q Q  ऺ ऻ कऺ कऻ
+c Add z Z  ॖ   ॗ  कॖ कॗ
+c Add { for U+A8FE Aand U+A8FF (AY) not yet supported in fonts
+c Remove some Samaveda marks from RALT
+c Add some Samaveda marks to RCTRL
+c Regenerate keyboard graphics with ZWJ & ZWNJ
+c Edit manually Shift layout graphics to add AY and svasti
+c Limit Samaveda Cantillation marks 1-7
+c Change 8 - "꣢꣯" 9 - "꣢꣫" 0 - "꣣꣬"
+c 20190529
+c Changes based on PR feedback
+c Fix double virama bug
+c
 store(&VERSION) "10.0" 
 store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS)'
 store(&TARGETS) 'windows macosx linux web'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
 store(&MESSAGE) 'A Phonetic Devanagari (ITRANS) keyboard with support for Vedic Sanskrit (Devanagari Extended and Vedic Extensions Unicode ranges).'
 store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted, Right Alt and Right Ctrl layouts.'
-store(&KEYBOARDVERSION) '1.1.0'
+store(&KEYBOARDVERSION) '1.2.0'
 store(&BITMAP) 'itrans_devanagari_sanskrit_vedic.ico'
 store(&VISUALKEYBOARD) 'itrans_devanagari_sanskrit_vedic.kvks'
 
-begin Unicode > use(main)
+begin Unicode	>	use(main)
 group(main) using keys
 
-c Unmapped Alphabet Keys
-+	"f"	>	beep
-+	"q"	>	beep
-+	"F"	>	beep
-+	"Q"	>	beep
-+	"V"	>	beep
-+	"W"	>	beep
-+	"X"	>	beep
-+	"Z"	>	beep
+c	Reset Hindi mode by default
+store(opt1) '0'
++ [RCTRL RALT K_1]	>	set(opt1='hindi') 
++ [RCTRL RALT K_0]	>	reset(opt1)
 
-c Unchanged Punctuation Keys
-+	"-"	>	"-"
-+	"="	>	"="
-+	";"	>	";"
-+	":"	>	":"
-+	"!"	>	"!"
-+	"~"	>	"~"
-+	"+"	>	"+"
-+	"/"	>	"/"
-+	"?"	>	"?"
-+	"("	>	"("
-+	")"	>	")"
-+	"{"	>	"{"
-+	"}"	>	"}"
-+	"@"	>	"@"
-+	'"'	>	'"' c DOUBLE QUOTE
+c 
 
-c Use twice to get original key
-c comma, period, 
+c	Special Symbols
+
++ "#"	>	"ॐ"
++ "$"	>	"₹"
++ "%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
++ "*"	>	"❀"
++ "&"	>	"☸"
++ "V"	>	"ऽ"	c AVAGRAHA
++ "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
++ "+"	>	U+200D	c ZERO-WIDTH JOINER
++ "^"	>	"्"	c VIRAMA
 
 c	Punctuation
-+	","	>	U+0970	c	DEVANAGARI ABBREVIATION SIGN
-U+0970	+	","	>	","	
+store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" '"' "," "." "=" "\" "<" ">" "|"
++ any(Punctuation)	>	index(Punctuation,1)
 
-+ "."	>	"।"	c once for DANDA
-"।"	+	"."	> "."	c  twice for PERIOD
-"." + "."	> "॥"	c thrice for DOUBLE DANDA
-"॥"	+	"."	>	U+2026	c four dots for a HORIZONTAL ELLIPSIS
++ "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
++ "@"	>	"@" 
 
-"-"	+	"-"	>	U+2013	c hyphen twice for EN DASH
-U+2013	+	"-"	>	U+2014	c three times for EM DASH
+"," + ","	>	U+0970	c	DEVANAGARI ABBREVIATION SIGN
 
-c	Special	Symbols
-+	"_"	>	U+200C	c ZERO-WIDTH NON-JOINER
-+	"^"	>	"्"	c VIRAMA
+"." + "."	>	"।"	c twice for DANDA
+"।" + "."	>	"॥"	c thrice for DOUBLE DANDA
+"॥" + "."	>	U+2026	c four dots for a HORIZONTAL ELLIPSIS
 
-+	"#"	>	"ॐ"
-+	"$"	>	"₹"
-+	"%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
-+	"*"	>	"❀"
-+	"&"	>	"☸"
-+	"<"	>	"ँ"	c CHANDRABINDU
-+	"z"	>	"ऽ"	c AVAGRAHA
-+	"\"	>	U+093C	c NUKTA
+"-" + "-"	>	U+2013	c hyphen twice for EN DASH
+U+2013 + "-"	>	U+2014	c three times for EM DASH
 
-c	numbers	- Devanagari DigitsU, Samaveda Combining Marks DigitsC
-store(Digits)		"0"		"1"		"2"		"3"		"4"		"5"		"6"		"7"		"8"		"9"
-store(DigitsU)		"०"		"१"		"२"		"३"		"४"		"५"		"६"		"७"		"८"		"९"
-store(DigitsC)		"꣠"		"꣡"		"꣢"		 "꣣"		"꣤"		"꣥"		"꣦"		"꣧"		"꣨"		"꣩"
+c	numbers - Devanagari DigitsU
+store(Digits)	"0"		"1"		"2"		"3"		"4"		"5"		"6"		"7"		"8"		"9"
+store(DigitsU)	"०"		"१"		"२"		"३"		"४"		"५"		"६"		"७"		"८"		"९"
++ any(Digits)	>	index(DigitsU,1)
+any(DigitsU) + [K_BKSP]	>	index(Digits,1)
 
-+	any(Digits)	>	index(DigitsU,1)
-any(DigitsU)	+	[K_BKSP]	>	index(Digits,1)
-any(DigitsU)	+	"="	>	index(DigitsC,1)
+c standalone vowel signs with @
+"@" + "A"	>	"ा"
+"@" + "i"	>	"ि"
+"@" + "I"	>	"ी"
+"@" + "u"	>	"ु"
+"@" + "U"	>	"ू"
+"@" + "e"	>	"े"
+"@" + "o"	>	"ो"
+"@" + "E"	>	"ॅ"
+"@" + "O"	>	"ॉ"
+"@" + "["	>	'ॆ'
+"@" + "]"	>	'ॊ'
+"@" + "W"	>	'ॆ'
+"@" + "{" > U+A8FF c DEVANAGARI VOWEL SIGN AY
+"@" + "}"	>	'ॏ'
+"@" + "a"	>	"@a"
+"@a" + "a"	>	"ा"
+"@a" + "e"	>	"ॅ"
+"@a" + "i"	>	"ै"
+"@a" + "u"	>	"ौ"
+"@a" + "w"	>	"ॉ"
+"ि" + "i"	>	"ी"
+"ु" + "u"	>	"ू"
+"े" + "e"	>	"ी"
+"े" + "i"	>	"ै"
+"ो" + "o"	>	"ू"
+"ो" + "u"	>	"ौ"
+"@" + "R"	>	"ृ"
+"ृ" + "R"	>	"ृ" c @RR
+"ृ" + "^"	>	"ॄ" c @RR^
+"@" + "L"	>	"ॢ"
+"ॢ" + "L"	>	"ॢ" c @LL
+"ॢ" + "^"	>	"ॣ" c @LL^
+"@" + "q"	>	'ऺ'
+"@" + "Q"	>	'ऻ'
+"@" + "z"	>	'ॖ'
+"@" + "Z"	>	'ॗ'
 
-c	Samaveda combining vowels
-store(CVowels)	"a"	"u"
-store(CVowelsU)	"अ"	"उ"
-store(CVowelsC)	"꣪"  "꣫"
+c Independent Vowels
++ "a"	>	"अ"
+"अ" + "a"	>	"आ"
++ "A"	>	"आ"
++ "i"	>	"इ"
+"इ" + "i"	>	"ई"
+"ए" + "e"	>	"ई"
++ "I"	>	"ई"
++ "u"	>	"उ"
+"उ" + "u"	>	"ऊ"
+"ओ" + "o"	>	"ऊ"
++ "U"	>	"ऊ"
++ "["	>	"ऎ"
++ "e"	>	"ए"
++ "E"	>	"ऍ"
+"अ" + "e"	>	"ऍ"
+"अ" + "i"	>	"ऐ"
+"ए" + "i"	>	"ऐ"
++ "]"	>	"ऒ"
++ "o"	>	"ओ"
++ "O"	>	"ऑ"
+"अ" + "w"	>	"ऑ"
+"अ" + "u"	>	"औ"
+"ओ" + "u"	>	"औ"
+"र्‍" + "R"	>	"ऋ" c RR
+"ऋ" + "^"	>	"ॠ" c RR^
+"ळ्" + "L"	>	"ऌ" c LL
+"ऌ" + "^"	>	"ॡ" c LL^
++ 'W' > 'ऄ'
++ "{" > U+A8FE c DEVANAGARI LETTER AY
++ '}' > 'ॵ'
++ "Z" > 'ॷ'
++ "Q" > 'ॴ'
++ "z" > 'ॶ'
++ "q" > 'ॳ'
 
-+	any(CVowels)	>	index(CVowelsU,1)
-any(CVowelsU)	+	"="	>	index(CVowelsC,1)
+c Vowel Modifiers
++ "H"	>	"ः" c VISARGA - H
++ "M"	>	"ं" c ANUSVARA - M
+"ं" + "M"	>	"ँ"	c CHANDRABINDU - MM
 
-c	Other Samaveda combining characters
-"क्"	+	"="	>	"꣬"
-"न्"	+	"="	>"꣭"
-"प्"	+	"="	>"꣮"
-"र्"	+	"="	>"꣯"
-"व्"	+	"="	>"꣰"
-"स्"	+	"="	>"꣱"
+c Consonants
++ "b"	>	"ब्"
++ "B"	>	"भ्"
++ "c"	>	"च्"
++ "C"	>	"छ्"
++ "d"	>	"द्"
++ "D"	>	"ड्"
++ "g"	>	"ग्"
++ "G"	>	"घ्"
++ "h"	>	"ह्"
++ "j"	>	"ज्"
++ "J"	>	"झ्"
++ "k"	>	"क्"
++ "K"	>	"ख्"
++ "l"	>	"ल्"
++ "L"	>	"ळ्"
++ "m"	>	"म्"
++ "n"	>	"न्"
++ "N"	>	"ण्"
++ "p"	>	"प्"
++ "P"	>	"फ्"
++ "r"	>	"र्"
++ "R"	>	"र्‍" c Marathi eyelash ra
++ "s"	>	"स्"
++ "S"	>	"ष्"
++ "t"	>	"त्"
++ "T"	>	"ट्"
++ "v"	>	"व्"
++ "w"	>	"व्"
++ "x"	>	"क्ष्"
++ "y"	>	"य्"
++ "f"	>	"फ्"
 
-c	Common	Vedic	Accents
-+	"'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA
-U+0951	+	"'"	>	U+1CDA	c VEDIC TONE DOUBLE SVARITA
-U+1CDA	+	"'"	>	U+1CDB	c VEDIC TONE TRIPLE SVARITA
-+	"`"	>	U+0952	c DEVANAGARI STRESS SIGN ANUDATTA
-+	">"	>	"ꣳ"	c CANDRABINDU VIRAMA
-"="	+	"="	>	"ᳶ"	c VEDIC SIGN UPADHMANIYA
+c duplicate mappings for ease of typing consonants
++ "F"	>	"ङ्"
++ "X"	>	"ज्ञ्"
++ "Y"	>	"ञ्"
 
-c	Devanagari Extended Unicode Range - Right Alt 
-+	[RALT	K_COMMA]	>	'ꣲ'
-+	[RALT	K_COLON]	>	'ꣵ'
-+	[RALT	K_L]	>	'ꣷ'
-+	[RALT	K_PERIOD]	>	'ꣳ'
-+	[RALT	K_QUOTE]	>	'ꣶ'
-+	[RALT	K_SLASH]	>	'ꣴ'
-+	[RALT	K_LBRKT]	>	'꣸'
-+	[RALT	K_RBRKT]	>	'꣹'
-+	[RALT	K_BKSLASH]	>	'꣺'
-+	[RALT	K_0]	>	'꣼'
-+	[RALT	K_HYPHEN]	>	'ꣻ'
-+	[RALT	K_EQUAL]	>	'ꣽ'
 
-c Alternate - Right Ctrl for Samaveda Combining Marks
-+ [RCTRL K_0] > '꣠'
-+ [RCTRL K_1] > '꣡'
-+ [RCTRL K_2] > '꣢'
-+ [RCTRL K_3] > '꣣'
-+ [RCTRL K_4] > '꣤'
-+ [RCTRL K_5] > '꣥'
-+ [RCTRL K_6] > '꣦'
-+ [RCTRL K_7] > '꣧'
-+ [RCTRL K_8] > '꣨'
-+ [RCTRL K_9] > '꣩'
-+ [RCTRL K_A] > '꣪'
-+ [RCTRL K_K] > '꣬'
-+ [RCTRL K_N] > '꣭'
-+ [RCTRL K_P] > '꣮'
-+ [RCTRL K_R] > '꣯'
-+ [RCTRL K_S] > '꣱'
-+ [RCTRL K_U] > '꣫'
-+ [RCTRL K_V] > '꣰'
-+ [RCTRL K_BKQUOTE] > '꣼'
-+ [RCTRL K_HYPHEN] > 'ꣻ'
-+ [RCTRL K_EQUAL] > 'ꣽ'
-+ [RCTRL K_BKSLASH] > '꣺'
-+ [RCTRL K_RBRKT] > '꣹'
-+ [RCTRL K_LBRKT] > '꣸'
-+ [RCTRL K_L] > 'ꣷ'
-+ [RCTRL K_QUOTE] > 'ꣶ'
-+ [RCTRL K_COLON] > 'ꣵ'
-+ [RCTRL K_SLASH] > 'ꣴ'
-+ [RCTRL K_PERIOD] > 'ꣳ'
-+ [RCTRL K_COMMA] > 'ꣲ'
+c Nukta with preceding dot
+"." + "k"	>	"क़्" c .k
+"क़्" + "h"	>	"ख़्" c .kh
+"." + "g"	>	"ग़्" c .g
+"." + "j"	>	"ज़्" c .j
+"ज़्" + "h"	>	"झ़्" c .jh
+"." + "D"	>	"ड़्" c .D
+"ड़्" + "h"	>	"ढ़्" c .Dh
+"." + "f"	>	"फ़्" c .f
+"." + "n"	>	"ऩ्" c .n
+"." + "r"	>	"ऱ्" c .r
+"." + "L"	>	"ऴ्" c .L
+"." + "y"	>	"य़्" c .y
 
-c Unmapped RCTRL Keys
-+ [RCTRL K_B] > beep
-+ [RCTRL K_C] > beep
-+ [RCTRL K_D] > beep
-+ [RCTRL K_E] > beep
-+ [RCTRL K_F] > beep
-+ [RCTRL K_G] > beep
-+ [RCTRL K_H] > beep
-+ [RCTRL K_I] > beep
-+ [RCTRL K_J] > beep
-+ [RCTRL K_M] > beep
-+ [RCTRL K_O] > beep
-+ [RCTRL K_Q] > beep
-+ [RCTRL K_T] > beep
-+ [RCTRL K_W] > beep
-+ [RCTRL K_X] > beep
-+ [RCTRL K_Y] > beep
-+ [RCTRL K_Z] > beep
-
-c	Vedic Extensions Unicode Range - Right Alt 
-+	[RALT	K_1]	>	'᳑'
-+	[RALT	K_2]	>	'᳒'
-+	[RALT	K_3]	>	'᳓'
-+	[RALT	K_4]	>	'᳔'
-+	[RALT	K_5]	>	'᳕'
-+	[RALT	K_6]	>	'᳖'
-+	[RALT	K_7]	>	'᳗'
-+	[RALT	K_8]	>	'᳘'
-+	[RALT	K_9]	>	'᳙'
-+	[RALT	K_A]	>	'᳧'
-+	[RALT	K_BKQUOTE]	>	'᳐'
-+	[RALT	K_D]	>	'ᳱ'
-+	[RALT	K_E]	>	'᳥'
-+	[RALT	K_G]	>	'ᳩ'
-+	[RALT	K_H]	>	'ᳬ'
-+	[RALT	K_I]	>	'ᳮ'
-+	[RALT	K_O]	>	'ᳯ'
-+	[RALT	K_P]	>	'ᳰ'
-+	[RALT	K_Q]	>	'᳣'
-+	[RALT	K_R]	>	'᳦'
-+	[RALT	K_S]	>	'᳨'
-+	[RALT	K_T]	>	'ᳪ'
-+	[RALT	K_U]	>	'᳴'
-+	[RALT	K_W]	>	'᳤'
-+	[RALT	K_X]	>	'ᳵ'
-+	[RALT	K_Y]	>	'ᳫ'
-+	[RALT	K_Z]	>	'᳢'
-+	[RALT	K_B]	>	'᳹'
-+	[RALT	K_C]	>	U+1CDD	c VEDIC TONE DOT BELOW
-"᳝"	+	[RALT	K_C]	>	U+1CDE	c	VEDIC TONE TWO DOTS BELOW
-"᳞"	+	[RALT	K_C]	>	U+1CDF	c	VEDIC TONE THREE DOTS BELOW
-+	[RALT	K_F]	>	'᳜'
-+	[RALT	K_M]	>	'᳢'
-+	[RALT	K_N]	>	'᳠'
-+	[RALT	K_V]	>	'᳸'
-
-c Unmapped RALT Keys
-+ [RALT K_K] > beep
-+ [RALT K_J] > beep
-
-c vowel signs with @
-"@"	+	"A"	>	"ा"
-"@"	+	"i"	>	"ि"
-"@"	+	"I"	>	"ी"
-"@"	+	"u"	>	"ु"
-"@"	+	"U"	>	"ू"
-"@"	+	"e"	>	"े"
-"@"	+	"o"	>	"ो"
-"@"	+	"R"	>	"ृ"
-"@"	+	"|"	>	"ॢ"
-"@"	+	"E"	>	"ॅ"
-"@"	+	"O"	>	"ॉ"
-"@"	+	"a"	>	"@a"
-"@a"	+	"H"	>	"ः"
-"@a"	+	"M"	>	"ं"
-"@a"	+	"a"	>	"ा"
-"@a"	+	"e"	>	"ॅ"
-"@a"	+	"i"	>	"ै"
-"@a"	+	"u"	>	"ौ"
-"@a"	+	"w"	>	"ॉ"
-"ि"	+	"i"	>	"ी"
-"ु"	+	"u"	>	"ू"
-"ृ"	+	"R"	>	"ॄ"
-"ृ"	+	"^"	>	"ॄ"
-"े"	+	"e"	>	"ी"
-"े"	+	"i"	>	"ै"
-"ो"	+	"o"	>	"ू"
-"ो"	+	"u"	>	"ौ"
-"ॢ"	+	"|"	>	"ॣ"
-"ॢ"	+	"^"	>	"ॣ"
-
-c vowels
-+	"a"	>	"अ"
-"अ"	+	"M"	>	"अं"
-"अ"	+	"H"	>	"अः"
-"अ"	+	"a"	>	"आ"
-+	"A"	>	"आ"
-+	"i"	>	"इ"
-"इ"	+	"i"	>	"ई"
-"ए"	+	"e"	>	"ई"
-+	"I"	>	"ई"
-+	"u"	>	"उ"
-"उ"	+	"u"	>	"ऊ"
-"ओ"	+	"o"	>	"ऊ"
-+	"U"	>	"ऊ"
-+	"R"	>	"ऋ"
-"ऋ"	+	"^"	>	"ॠ"
-"ऋ"	+	"R"	>	"ॠ"
-+	"|"	>	"ऌ"
-"ऌ"	+	"^"	>	"ॡ"
-"ऌ"	+	"|"	>	"ॡ"
-+	"["	>	"ऎ"
-+	"e"	>	"ए"
-+	"E"	>	"ऍ"
-"अ"	+	"e"	>	"ऍ"
-"अ"	+	"i"	>	"ऐ"
-"ए"	+	"i"	>	"ऐ"
-+	"]"	>	"ऒ"
-+	"o"	>	"ओ"
-+	"O"	>	"ऑ"
-"अ"	+	"w"	>	"ऑ"
-"अ"	+	"u"	>	"औ"
-"ओ"	+	"u"	>	"औ"
-
-c consonants
-+	"b"	>	"ब्"
-+	"B"	>	"भ्"
-+	"c"	>	"च्"
-+	"C"	>	"छ्"
-+	"D"	>	"ड्"
-+	"d"	>	"द्"
-+	"g"	>	"ग्"
-+	"G"	>	"घ्"
-+	"H"	>	"ः"
-+	"h"	>	"ह्"
-+	"j"	>	"ज्"
-+	"J"	>	"झ्"
-+	"k"	>	"क्"
-+	"K"	>	"ख्"
-+	"l"	>	"ल्"
-+	"L"	>	"ळ्"
-+	"M"	>	"ं"
-+	"m"	>	"म्"
-+	"N"	>	"ण्"
-+	"n"	>	"न्"
-+	"p"	>	"प्"
-+	"P"	>	"फ्"
-+	"r"	>	"र्"
-+	"S"	>	"ष्"
-+	"s"	>	"स्"
-+	"T"	>	"ट्"
-+	"t"	>	"त्"
-+	"v"	>	"व्"
-+	"w"	>	"व्"
-+	"|"	>	"ॢ"
-+	"x"	>	"क्ष्"
-+	"Y"	>	"ञ्"
-+	"y"	>	"य्"
-+	"z"	>	"ऽ"
-"~"	+	"n"	>	"ञ्"
-"~"	+	"N"	>	"ङ्"
+c alternate mapping with ~
+"~" + "n"	>	"ञ्" c ~n
+"~" + "N"	>	"ङ्" c ~N
 
 c add h to consonants
-"क्"	+	"h"	>	"ख्"
-"ग्"	+	"h"	>	"घ्"
-"च्"	+	"h"	>	"च्"
-"छ्"	+	"h"	>	"छ्"
-"ज्"	+	"h"	>	"झ्"
-"ट्"	+	"h"	>	"ठ्"
-"ड्"	+	"h"	>	"ढ्"
-"त्"	+	"h"	>	"थ्"
-"द्"	+	"h"	>	"ध्"
-"प्"	+	"h"	>	"फ्"
-"ब्"	+	"h"	>	"भ्"
-"ष्"	+	"h"	>	"ष्"
-"स्"	+	"h"	>	"श्"
+"क्" + "h"	>	"ख्"
+"ग्" + "h"	>	"घ्"
+"च्" + "h"	>	"च्" c same c=ch
+"छ्" + "h"	>	"छ्" c same C=Ch
+"ज्" + "h"	>	"झ्"
+"ट्" + "h"	>	"ठ्"
+"ड्" + "h"	>	"ढ्"
+"त्" + "h"	>	"थ्"
+"द्" + "h"	>	"ध्"
+"प्" + "h"	>	"फ्" 
+"ब्" + "h"	>	"भ्"
+"ष्" + "h"	>	"ष्" c same S=Sh
+"स्" + "h"	>	"श्"
 
 c special combinations
-"न्"	+	"k"	>	"ङ्क्"
-"न्"	+	"g"	>	"ङ्ग्"
-"न्"	+	"c"	>	"nc"
-"nc"	+	"h"	>	"ञ्च्"	c nch
-"न्"	+	"j"	>	"ञ्ज्"
-"घ्"	+	"Y"	>	"ज्ञ्"
-"श्"	+	"r"	>	"श्र्"
-"ण्"	+	"g"	>	"ङ्"	c Ng
+$keymanonly: if(opt1 = '0') "न्" + "k"	>	"ङ्क्"
+$keymanonly: if(opt1 = '0') "न्" + "g"	>	"ङ्ग्"
+$keymanonly: if(opt1 = '0') "न्" + "c"	>	"nc"
+$keymanonly: if(opt1 = '0') "nc" + "h"	>	"ञ्च्"	c nch
+$keymanonly: if(opt1 = '0') "न्" + "j"	>	"ञ्ज्"
+"घ्" + "Y"	>	"ज्ञ्"	c	GY
+"श्" + "r"	>	"श्र्"	c	shr
+"ण्" + "g"	>	"ङ्"	c	Ng
 
-c	When followed by space, remove Virama and change word ending to implicit `a` 
-"म्"	+	" "	>	"म "
-"क्"	+ " "	> "क "
-"क्ष्"	+ " "	> "क्ष "
-"ख्"	+ " "	> "ख "
-"ग्"	+ " "	> "ग "
-"घ्"	+ " "	> "घ "
-"ङ्"	+ " "	> "ङ "
-"च्"	+ " "	> "च "
-"छ्"	+ " "	> "छ "
-"ज्"	+ " "	> "ज "
-"ज्ञ्"	+ " "	> "ज्ञ "
-"झ्"	+ " "	> "झ "
-"ञ्"	+ " "	> "ञ "
-"ट्"	+ " "	> "ट "
-"ठ्"	+ " "	> "ठ "
-"ड्"	+ " "	> "ड "
-"ढ्"	+ " "	> "ढ "
-"ण्"	+ " "	> "ण "
-"त्"	+ " "	> "त "
-"थ्"	+ " "	> "थ "
-"द्"	+ " "	> "द "
-"ध्"	+ " "	> "ध "
-"न्"	+ " "	> "न "
-"प्"	+ " "	> "प "
-"फ्"	+ " "	> "फ "
-"ब्"	+ " "	> "ब "
-"भ्"	+ " "	> "भ "
-"य्"	+ " "	> "य "
-"र्"	+ " "	> "र "
-"ल्"	+ " "	> "ल "
-"ळ्"	+ " "	> "ळ "
-"व्"	+ " "	> "व "
-"श्"	+ " "	> "श "
-"श्र्"	+ " "	> "श्र "
-"ष्"	+ " "	> "ष "
-"स्"	+ " "	> "स "
-"ह्"	+ " "	> "ह "
+c Rules for Consonants + Vowel Signs
 
-c Add explicit viraama with ZWNJ
-"ं"	+	"_"	>	"म्"U+200C
-"क्"	+	"_"	>	"क्"U+200C
-"क्ष्"	+	"_"	>	"क्ष्"U+200C
-"ख्"	+	"_"	>	"ख्"U+200C
-"ग्"	+	"_"	>	"ग्"U+200C
-"घ्"	+	"_"	>	"घ्"U+200C
-"ङ्"	+	"_"	>	"ङ्"U+200C
-"च्"	+	"_"	>	"च्"U+200C
-"छ्"	+	"_"	>	"छ्"U+200C
-"ज्"	+	"_"	>	"ज्"U+200C
-"ज्ञ्"	+	"_"	>	"ज्ञ्"U+200C
-"झ्"	+	"_"	>	"झ्"U+200C
-"ञ्"	+	"_"	>	"ञ्"U+200C
-"ट्"	+	"_"	>	"ट्"U+200C
-"ठ्"	+	"_"	>	"ठ्"U+200C
-"ड्"	+	"_"	>	"ड्"U+200C
-"ढ्"	+	"_"	>	"ढ्"U+200C
-"ण्"	+	"_"	>	"ण्"U+200C
-"त्"	+	"_"	>	"त्"U+200C
-"थ्"	+	"_"	>	"थ्"U+200C
-"द्"	+	"_"	>	"द्"U+200C
-"ध्"	+	"_"	>	"ध्"U+200C
-"न्"	+	"_"	>	"न्"U+200C
-"प्"	+	"_"	>	"प्"U+200C
-"फ्"	+	"_"	>	"फ्"U+200C
-"ब्"	+	"_"	>	"ब्"U+200C
-"भ्"	+	"_"	>	"भ्"U+200C
-"म्"	+	"_"	>	"म्"U+200C
-"य्"	+	"_"	>	"य्"U+200C
-"र्"	+	"_"	>	"र्"U+200C
-"ल्"	+	"_"	>	"ल्"U+200C
-"ळ्"	+	"_"	>	"ळ्"U+200C
-"व्"	+	"_"	>	"व्"U+200C
-"श्"	+	"_"	>	"श्"U+200C
-"श्र्"	+	"_"	>	"श्र्"U+200C
-"ष्"	+	"_"	>	"ष्"U+200C
-"स्"	+	"_"	>	"स्"U+200C
-"ह्"	+	"_"	>	"ह्"U+200C
+store(Vyanjana) 'कक्षखगघङचछजज्ञझञटठडढणतथदधनपफबभमयरलळवश्रषसह'
+store(NuktaVyanjana) 'कखगजझडढफनरळय'
+store(ViramaMaatraa) 'eiouAEIORU[]LW{}qQzZ'
+store(ViramaMaatraaU) "े" "ि" "ो" "ु" "ा" "ॅ" "ी" "ॉ" "ृ" "ू" "ॆ" "ॊ" "ॢ" "ॆ" 'ꣿ' 'ॏ' 'ऺ' 'ऻ'  'ॖ' 'ॗ'
+store(aPlusMaatraa) 'aeiuw'
+store(aPlusMaatraaU) "ा" "ॅ" "ै" "ौ" "ॉ"
 
-c Add explicit viraama to consonants with implicit a
-"ं"	+	"^"	>	"म्"U+200C
-"क"	+	"^"	>	"क्"U+200C
-"क्ष"	+	"^"	>	"क्ष्"U+200C
-"ख"	+	"^"	>	"ख्"U+200C
-"ग"	+	"^"	>	"ग्"U+200C
-"घ"	+	"^"	>	"घ्"U+200C
-"ङ"	+	"^"	>	"ङ्"U+200C
-"च"	+	"^"	>	"च्"U+200C
-"छ"	+	"^"	>	"छ्"U+200C
-"ज"	+	"^"	>	"ज्"U+200C
-"ज्ञ"	+	"^"	>	"ज्ञ्"U+200C
-"झ"	+	"^"	>	"झ्"U+200C
-"ञ"	+	"^"	>	"ञ्"U+200C
-"ट"	+	"^"	>	"ट्"U+200C
-"ठ"	+	"^"	>	"ठ्"U+200C
-"ड"	+	"^"	>	"ड्"U+200C
-"ढ"	+	"^"	>	"ढ्"U+200C
-"ण"	+	"^"	>	"ण्"U+200C
-"त"	+	"^"	>	"त्"U+200C
-"थ"	+	"^"	>	"थ्"U+200C
-"द"	+	"^"	>	"द्"U+200C
-"ध"	+	"^"	>	"ध्"U+200C
-"न"	+	"^"	>	"न्"U+200C
-"प"	+	"^"	>	"प्"U+200C
-"फ"	+	"^"	>	"फ्"U+200C
-"ब"	+	"^"	>	"ब्"U+200C
-"भ"	+	"^"	>	"भ्"U+200C
-"म"	+	"^"	>	"म्"U+200C
-"य"	+	"^"	>	"य्"U+200C
-"र"	+	"^"	>	"र्"U+200C
-"ल"	+	"^"	>	"ल्"U+200C
-"ळ"	+	"^"	>	"ळ्"U+200C
-"व"	+	"^"	>	"व्"U+200C
-"श"	+	"^"	>	"श्"U+200C
-"श्र"	+	"^"	>	"श्र्"U+200C
-"ष"	+	"^"	>	"ष्"U+200C
-"स"	+	"^"	>	"स्"U+200C
-"ह"	+	"^"	>	"ह्"U+200C
+c	implicit akaara deletion for hindi mode 
+store(opt1endings) outs(Punctuation) ' '
+$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"्" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
 
-c Add explicit viraama to consonants with virama
-"ं"	+	"^"	>	"म्"U+200C
-"क्"	+	"^"	>	"क्"U+200C
-"क्ष्"	+	"^"	>	"क्ष्"U+200C
-"ख्"	+	"^"	>	"ख्"U+200C
-"ग्"	+	"^"	>	"ग्"U+200C
-"घ्"	+	"^"	>	"घ्"U+200C
-"ङ्"	+	"^"	>	"ङ्"U+200C
-"च्"	+	"^"	>	"च्"U+200C
-"छ्"	+	"^"	>	"छ्"U+200C
-"ज्"	+	"^"	>	"ज्"U+200C
-"ज्ञ्"	+	"^"	>	"ज्ञ्"U+200C
-"झ्"	+	"^"	>	"झ्"U+200C
-"ञ्"	+	"^"	>	"ञ्"U+200C
-"ट्"	+	"^"	>	"ट्"U+200C
-"ठ्"	+	"^"	>	"ठ्"U+200C
-"ड्"	+	"^"	>	"ड्"U+200C
-"ढ्"	+	"^"	>	"ढ्"U+200C
-"ण्"	+	"^"	>	"ण्"U+200C
-"त्"	+	"^"	>	"त्"U+200C
-"थ्"	+	"^"	>	"थ्"U+200C
-"द्"	+	"^"	>	"द्"U+200C
-"ध्"	+	"^"	>	"ध्"U+200C
-"न्"	+	"^"	>	"न्"U+200C
-"प्"	+	"^"	>	"प्"U+200C
-"फ्"	+	"^"	>	"फ्"U+200C
-"ब्"	+	"^"	>	"ब्"U+200C
-"भ्"	+	"^"	>	"भ्"U+200C
-"म्"	+	"^"	>	"म्"U+200C
-"य्"	+	"^"	>	"य्"U+200C
-"र्"	+	"^"	>	"र्"U+200C
-"ल्"	+	"^"	>	"ल्"U+200C
-"ळ्"	+	"^"	>	"ळ्"U+200C
-"व्"	+	"^"	>	"व्"U+200C
-"श्"	+	"^"	>	"श्"U+200C
-"श्र्"	+	"^"	>	"श्र्"U+200C
-"ष्"	+	"^"	>	"ष्"U+200C
-"स्"	+	"^"	>	"स्"U+200C
-"ह्"	+	"^"	>	"ह्"U+200C
+any(Vyanjana)"्" + "^"	>	index(Vyanjana,1)"्"
+any(Vyanjana)"्" + "a"	>	index(Vyanjana,1)
+any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
+any(Vyanjana)"्" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana)"ि" + "i"	>	 index(Vyanjana,1)"ी"	 c ii
+any(Vyanjana)"ु" + "u"	>	 index(Vyanjana,1)"ू"	 c uu
+any(Vyanjana)"े" + "e"	>	 index(Vyanjana,1)"ी"	 c ee
+any(Vyanjana)"े" + "i"	>	index(Vyanjana,1)"ै"	 c ei
+any(Vyanjana)"ो" + "o"	>	 index(Vyanjana,1)"ू"	 c oo
+any(Vyanjana)"ो" + "u"	>	index(Vyanjana,1)"ौ"	 c ou
 
-c consonant + a
-"क्"	+	"a"	>	"क"
-"क्ष्"	+	"a"	>	"क्ष"
-"ख्"	+	"a"	>	"ख"
-"ग्"	+	"a"	>	"ग"
-"घ्"	+	"a"	>	"घ"
-"ङ्"	+	"a"	>	"ङ"
-"च्"	+	"a"	>	"च"
-"छ्"	+	"a"	>	"छ"
-"ज्"	+	"a"	>	"ज"
-"ज्ञ्"	+	"a"	>	"ज्ञ"
-"झ्"	+	"a"	>	"झ"
-"ञ्"	+	"a"	>	"ञ"
-"ट्"	+	"a"	>	"ट"
-"ठ्"	+	"a"	>	"ठ"
-"ड्"	+	"a"	>	"ड"
-"ढ्"	+	"a"	>	"ढ"
-"ण्"	+	"a"	>	"ण"
-"त्"	+	"a"	>	"त"
-"थ्"	+	"a"	>	"थ"
-"द्"	+	"a"	>	"द"
-"ध्"	+	"a"	>	"ध"
-"न्"	+	"a"	>	"न"
-"प्"	+	"a"	>	"प"
-"फ्"	+	"a"	>	"फ"
-"ब्"	+	"a"	>	"ब"
-"भ्"	+	"a"	>	"भ"
-"म्"	+	"a"	>	"म"
-"य्"	+	"a"	>	"य"
-"र्"	+	"a"	>	"र"
-"ल्"	+	"a"	>	"ल"
-"ळ्"	+	"a"	>	"ळ"
-"व्"	+	"a"	>	"व"
-"श्"	+	"a"	>	"श"
-"श्र्"	+	"a"	>	"श्र"
-"ष्"	+	"a"	>	"ष"
-"स्"	+	"a"	>	"स"
-"ह्"	+	"a"	>	"ह"
+any(NuktaVyanjana)"़""्" + "^"	>	index(NuktaVyanjana,1)"़""्"
+any(NuktaVyanjana)"़""्" + "a"	>	index(NuktaVyanjana,1)"़"
+any(NuktaVyanjana)"़" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana)"़""्" + any(ViramaMaatraa) 	>	index(NuktaVyanjana,1)"़" index(ViramaMaatraaU,4) 
+any(NuktaVyanjana)"़""ि" + "i"	>	 index(NuktaVyanjana,1)"़""ी"	 c ii
+any(NuktaVyanjana)"़""ु" + "u"	>	 index(NuktaVyanjana,1)"़""ू"	 c uu
+any(NuktaVyanjana)"़""े" + "e"	>	 index(NuktaVyanjana,1)"़""ी"	 c ee
+any(NuktaVyanjana)"़""े" + "i"	>	index(NuktaVyanjana,1)"़""ै"	 c ei
+any(NuktaVyanjana)"़""ो" + "o"	>	 index(NuktaVyanjana,1)"़""ू"	 c oo
+any(NuktaVyanjana)"़""ो" + "u"	>	index(NuktaVyanjana,1)"़""ौ"	 c ou
 
-c consonant + H visarga
-"क"	+	"H"	>	"कः"
-"क्ष"	+	"H"	>	"क्षः"
-"ख"	+	"H"	>	"खः"
-"ग"	+	"H"	>	"गः"
-"घ"	+	"H"	>	"घः"
-"ङ"	+	"H"	>	"ङः"
-"च"	+	"H"	>	"चः"
-"छ"	+	"H"	>	"छः"
-"ज"	+	"H"	>	"जः"
-"ज्ञ"	+	"H"	>	"ज्ञः"
-"झ"	+	"H"	>	"झः"
-"ञ"	+	"H"	>	"ञः"
-"ट"	+	"H"	>	"टः"
-"ठ"	+	"H"	>	"ठः"
-"ड"	+	"H"	>	"डः"
-"ढ"	+	"H"	>	"ढः"
-"ण"	+	"H"	>	"णः"
-"त"	+	"H"	>	"तः"
-"थ"	+	"H"	>	"थः"
-"द"	+	"H"	>	"दः"
-"ध"	+	"H"	>	"धः"
-"न"	+	"H"	>	"नः"
-"प"	+	"H"	>	"पः"
-"फ"	+	"H"	>	"फः"
-"ब"	+	"H"	>	"बः"
-"भ"	+	"H"	>	"भः"
-"म"	+	"H"	>	"मः"
-"य"	+	"H"	>	"यः"
-"र"	+	"H"	>	"रः"
-"ल"	+	"H"	>	"लः"
-"ळ"	+	"H"	>	"ळः"
-"व"	+	"H"	>	"वः"
-"श"	+	"H"	>	"शः"
-"श्र"	+	"H"	>	"श्रः"
-"ष"	+	"H"	>	"षः"
-"स"	+	"H"	>	"सः"
-"ह"	+	"H"	>	"हः"
+c 
 
-c consonant + M - anusvara
-"क"	+	"M"	>	"कं"
-"क्ष"	+	"M"	>	"क्षं"
-"ख"	+	"M"	>	"खं"
-"ग"	+	"M"	>	"गं"
-"घ"	+	"M"	>	"घं"
-"ङ"	+	"M"	>	"ङं"
-"च"	+	"M"	>	"चं"
-"छ"	+	"M"	>	"छं"
-"ज"	+	"M"	>	"जं"
-"ज्ञ"	+	"M"	>	"ज्ञं"
-"झ"	+	"M"	>	"झं"
-"ञ"	+	"M"	>	"ञं"
-"ट"	+	"M"	>	"टं"
-"ठ"	+	"M"	>	"ठं"
-"ड"	+	"M"	>	"डं"
-"ढ"	+	"M"	>	"ढं"
-"ण"	+	"M"	>	"णं"
-"त"	+	"M"	>	"तं"
-"थ"	+	"M"	>	"थं"
-"द"	+	"M"	>	"दं"
-"ध"	+	"M"	>	"धं"
-"न"	+	"M"	>	"नं"
-"प"	+	"M"	>	"पं"
-"फ"	+	"M"	>	"फं"
-"ब"	+	"M"	>	"बं"
-"भ"	+	"M"	>	"भं"
-"म"	+	"M"	>	"मं"
-"य"	+	"M"	>	"यं"
-"र"	+	"M"	>	"रं"
-"ल"	+	"M"	>	"लं"
-"ळ"	+	"M"	>	"ळं"
-"व"	+	"M"	>	"वं"
-"श"	+	"M"	>	"शं"
-"श्र"	+	"M"	>	"श्रं"
-"ष"	+	"M"	>	"षं"
-"स"	+	"M"	>	"सं"
-"ह"	+	"M"	>	"हं"
+c	COMMON VEDIC MARKS
+"'" + "'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA - ''
+U+0951 + "'"	>	U+1CDA	c VEDIC TONE DOUBLE SVARITA - '''
+U+1CDA + "'"	>	U+1CDB	c VEDIC TONE TRIPLE SVARITA - ''''
+"`" + "`"	>	U+0952	c DEVANAGARI STRESS SIGN ANUDATTA - ``
+"ँ" + "^"	>	"ꣳ"	c CANDRABINDU VIRAMA - MM^
+"=" + "="	>	"ᳶ"	c VEDIC SIGN UPADHMANIYA - ==
 
-c consonant + aa
-"क"	+	"a"	>	"का"
-"क्ष"	+	"a"	>	"क्षा"
-"ख"	+	"a"	>	"खा"
-"ग"	+	"a"	>	"गा"
-"घ"	+	"a"	>	"घा"
-"ङ"	+	"a"	>	"ङा"
-"च"	+	"a"	>	"चा"
-"छ"	+	"a"	>	"छा"
-"ज"	+	"a"	>	"जा"
-"ज्ञ"	+	"a"	>	"ज्ञा"
-"झ"	+	"a"	>	"झा"
-"ञ"	+	"a"	>	"ञा"
-"ट"	+	"a"	>	"टा"
-"ठ"	+	"a"	>	"ठा"
-"ड"	+	"a"	>	"डा"
-"ढ"	+	"a"	>	"ढा"
-"ण"	+	"a"	>	"णा"
-"त"	+	"a"	>	"ता"
-"थ"	+	"a"	>	"था"
-"द"	+	"a"	>	"दा"
-"ध"	+	"a"	>	"धा"
-"न"	+	"a"	>	"ना"
-"प"	+	"a"	>	"पा"
-"फ"	+	"a"	>	"फा"
-"ब"	+	"a"	>	"बा"
-"भ"	+	"a"	>	"भा"
-"म"	+	"a"	>	"मा"
-"य"	+	"a"	>	"या"
-"र"	+	"a"	>	"रा"
-"ल"	+	"a"	>	"ला"
-"ळ"	+	"a"	>	"ळा"
-"व"	+	"a"	>	"वा"
-"श"	+	"a"	>	"शा"
-"श्र"	+	"a"	>	"श्रा"
-"ष"	+	"a"	>	"षा"
-"स"	+	"a"	>	"सा"
-"ह"	+	"a"	>	"हा"
+c VEDIC MARKS 
 
-c consonant + A
-"क्"	+	"A"	>	"का"
-"क्ष्"	+	"A"	>	"क्षा"
-"ख्"	+	"A"	>	"खा"
-"ग्"	+	"A"	>	"गा"
-"घ्"	+	"A"	>	"घा"
-"ङ्"	+	"A"	>	"ङा"
-"च्"	+	"A"	>	"चा"
-"छ्"	+	"A"	>	"छा"
-"ज्"	+	"A"	>	"जा"
-"ज्ञ्"	+	"A"	>	"ज्ञा"
-"झ्"	+	"A"	>	"झा"
-"ञ्"	+	"A"	>	"ञा"
-"ट्"	+	"A"	>	"टा"
-"ठ्"	+	"A"	>	"ठा"
-"ड्"	+	"A"	>	"डा"
-"ढ्"	+	"A"	>	"ढा"
-"ण्"	+	"A"	>	"णा"
-"त्"	+	"A"	>	"ता"
-"थ्"	+	"A"	>	"था"
-"द्"	+	"A"	>	"दा"
-"ध्"	+	"A"	>	"धा"
-"न्"	+	"A"	>	"ना"
-"प्"	+	"A"	>	"पा"
-"फ्"	+	"A"	>	"फा"
-"ब्"	+	"A"	>	"बा"
-"भ्"	+	"A"	>	"भा"
-"म्"	+	"A"	>	"मा"
-"य्"	+	"A"	>	"या"
-"र्"	+	"A"	>	"रा"
-"ल्"	+	"A"	>	"ला"
-"ळ्"	+	"A"	>	"ळा"
-"व्"	+	"A"	>	"वा"
-"श्"	+	"A"	>	"शा"
-"श्र्"	+	"A"	>	"श्रा"
-"ष्"	+	"A"	>	"षा"
-"स्"	+	"A"	>	"सा"
-"ह्"	+	"A"	>	"हा"
+c Samaveda Number Combining Marks
+"१" + "="	>"꣡"		
+"२" + "="	>"꣢"		 
+"३" + "="	>"꣣"		
+"४" + "="	>"꣤"		
+"५" + "="	>"꣥"		
+"६" + "="	>"꣦"		
+"७" + "="	>"꣧"		
+"८" + "="	>"꣢꣯"		
+"९" + "="	>"꣢꣫"
+"०" + "="	>"꣣꣬"		
 
-c consonant + i
-"क्"	+	"i"	>	"कि"
-"क्ष्"	+	"i"	>	"क्षि"
-"ख्"	+	"i"	>	"खि"
-"ग्"	+	"i"	>	"गि"
-"घ्"	+	"i"	>	"घि"
-"ङ्"	+	"i"	>	"ङि"
-"च्"	+	"i"	>	"चि"
-"छ्"	+	"i"	>	"छि"
-"ज्"	+	"i"	>	"जि"
-"ज्ञ्"	+	"i"	>	"ज्ञि"
-"झ्"	+	"i"	>	"झि"
-"ञ्"	+	"i"	>	"ञि"
-"ट्"	+	"i"	>	"टि"
-"ठ्"	+	"i"	>	"ठि"
-"ड्"	+	"i"	>	"डि"
-"ढ्"	+	"i"	>	"ढि"
-"ण्"	+	"i"	>	"णि"
-"त्"	+	"i"	>	"ति"
-"थ्"	+	"i"	>	"थि"
-"द्"	+	"i"	>	"दि"
-"ध्"	+	"i"	>	"धि"
-"न्"	+	"i"	>	"नि"
-"प्"	+	"i"	>	"पि"
-"फ्"	+	"i"	>	"फि"
-"ब्"	+	"i"	>	"बि"
-"भ्"	+	"i"	>	"भि"
-"म्"	+	"i"	>	"मि"
-"य्"	+	"i"	>	"यि"
-"र्"	+	"i"	>	"रि"
-"ल्"	+	"i"	>	"लि"
-"ळ्"	+	"i"	>	"ळि"
-"व्"	+	"i"	>	"वि"
-"श्"	+	"i"	>	"शि"
-"श्र्"	+	"i"	>	"श्रि"
-"ष्"	+	"i"	>	"षि"
-"स्"	+	"i"	>	"सि"
-"ह्"	+	"i"	>	"हि"
+c	Samaveda Combining vowels
+"अ" + "="	>"꣪"
+"उ" + "="	>"꣫"
 
-c consonant + ii
-"कि"	+	"i"	>	"की"
-"क्षि"	+	"i"	>	"क्षी"
-"खि"	+	"i"	>	"खी"
-"गि"	+	"i"	>	"गी"
-"घि"	+	"i"	>	"घी"
-"ङि"	+	"i"	>	"ङी"
-"चि"	+	"i"	>	"ची"
-"छि"	+	"i"	>	"छी"
-"जि"	+	"i"	>	"जी"
-"ज्ञि"	+	"i"	>	"ज्ञी"
-"झि"	+	"i"	>	"झी"
-"ञि"	+	"i"	>	"ञी"
-"टि"	+	"i"	>	"टी"
-"ठि"	+	"i"	>	"ठी"
-"डि"	+	"i"	>	"डी"
-"ढि"	+	"i"	>	"ढी"
-"णि"	+	"i"	>	"णी"
-"ति"	+	"i"	>	"ती"
-"थि"	+	"i"	>	"थी"
-"दि"	+	"i"	>	"दी"
-"धि"	+	"i"	>	"धी"
-"नि"	+	"i"	>	"नी"
-"पि"	+	"i"	>	"पी"
-"फि"	+	"i"	>	"फी"
-"बि"	+	"i"	>	"बी"
-"भि"	+	"i"	>	"भी"
-"मि"	+	"i"	>	"मी"
-"यि"	+	"i"	>	"यी"
-"रि"	+	"i"	>	"री"
-"लि"	+	"i"	>	"ली"
-"ळि"	+	"i"	>	"ळी"
-"वि"	+	"i"	>	"वी"
-"शि"	+	"i"	>	"शी"
-"श्रि"	+	"i"	>	"श्री"
-"षि"	+	"i"	>	"षी"
-"सि"	+	"i"	>	"सी"
-"हि"	+	"i"	>	"ही"
+c	Other Samaveda Combining characters
+"क्" + "="	>"꣬"
+"न्" + "="	>"꣭"
+"प्" + "="	>"꣮"
+"र्" + "="	>"꣯"
+"व्" + "="	>"꣰"
+"स्" + "="	>"꣱"
 
-c consonant + ee
-"के"	+	"e"	>	"की"
-"क्षे"	+	"e"	>	"क्षी"
-"खे"	+	"e"	>	"खी"
-"गे"	+	"e"	>	"गी"
-"घे"	+	"e"	>	"घी"
-"ङे"	+	"e"	>	"ङी"
-"चे"	+	"e"	>	"ची"
-"छे"	+	"e"	>	"छी"
-"जे"	+	"e"	>	"जी"
-"ज्ञे"	+	"e"	>	"ज्ञी"
-"झे"	+	"e"	>	"झी"
-"ञे"	+	"e"	>	"ञी"
-"टे"	+	"e"	>	"टी"
-"ठे"	+	"e"	>	"ठी"
-"डे"	+	"e"	>	"डी"
-"ढे"	+	"e"	>	"ढी"
-"णे"	+	"e"	>	"णी"
-"ते"	+	"e"	>	"ती"
-"थे"	+	"e"	>	"थी"
-"दे"	+	"e"	>	"दी"
-"धे"	+	"e"	>	"धी"
-"ने"	+	"e"	>	"नी"
-"पे"	+	"e"	>	"पी"
-"फे"	+	"e"	>	"फी"
-"बे"	+	"e"	>	"बी"
-"भे"	+	"e"	>	"भी"
-"मे"	+	"e"	>	"मी"
-"ये"	+	"e"	>	"यी"
-"रे"	+	"e"	>	"री"
-"ले"	+	"e"	>	"ली"
-"ळे"	+	"e"	>	"ळी"
-"वे"	+	"e"	>	"वी"
-"शे"	+	"e"	>	"शी"
-"श्रे"	+	"e"	>	"श्री"
-"षे"	+	"e"	>	"षी"
-"से"	+	"e"	>	"सी"
-"हे"	+	"e"	>	"ही"
+c	Vedic Extensions Unicode Range - Right Alt 
++ [RALT	K_1]	>	'᳑'
++ [RALT	K_2]	>	'᳒'
++ [RALT	K_3]	>	'᳓'
++ [RALT	K_4]	>	'᳔'
++ [RALT	K_5]	>	'᳕'
++ [RALT	K_6]	>	'᳖'
++ [RALT	K_7]	>	'᳗'
++ [RALT	K_8]	>	'᳘'
++ [RALT	K_9]	>	'᳙'
++ [RALT	K_A]	>	'᳧'
++ [RALT	K_BKQUOTE]	>	'᳐'
++ [RALT	K_D]	>	'ᳱ'
++ [RALT	K_E]	>	'᳥'
++ [RALT	K_G]	>	'ᳩ'
++ [RALT	K_H]	>	'ᳬ'
++ [RALT	K_I]	>	'ᳮ'
++ [RALT	K_O]	>	'ᳯ'
++ [RALT	K_P]	>	'ᳰ'
++ [RALT	K_Q]	>	'᳣'
++ [RALT	K_R]	>	'᳦'
++ [RALT	K_S]	>	'᳨'
++ [RALT	K_T]	>	'ᳪ'
++ [RALT	K_U]	>	'᳴'
++ [RALT	K_W]	>	'᳤'
++ [RALT	K_X]	>	'ᳵ'
++ [RALT	K_Y]	>	'ᳫ'
++ [RALT	K_Z]	>	'᳢'
++ [RALT	K_B]	>	'᳹'
++ [RALT	K_C]	>	U+1CDD	c VEDIC TONE DOT BELOW
+"᳝" + [RALT	K_C]	>	U+1CDE	c	VEDIC TONE TWO DOTS BELOW
+"᳞" + [RALT	K_C]	>	U+1CDF	c	VEDIC TONE THREE DOTS BELOW
++ [RALT	K_F]	>	'᳜'
++ [RALT	K_M]	>	'᳢'
++ [RALT	K_N]	>	'᳠'
++ [RALT	K_V]	>	'᳸'
 
-c consonant + I
-"क्"	+	"I"	>	"की"
-"क्ष्"	+	"I"	>	"क्षी"
-"ख्"	+	"I"	>	"खी"
-"ग्"	+	"I"	>	"गी"
-"घ्"	+	"I"	>	"घी"
-"ङ्"	+	"I"	>	"ङी"
-"च्"	+	"I"	>	"ची"
-"छ्"	+	"I"	>	"छी"
-"ज्"	+	"I"	>	"जी"
-"ज्ञ्"	+	"I"	>	"ज्ञी"
-"झ्"	+	"I"	>	"झी"
-"ञ्"	+	"I"	>	"ञी"
-"ट्"	+	"I"	>	"टी"
-"ठ्"	+	"I"	>	"ठी"
-"ड्"	+	"I"	>	"डी"
-"ढ्"	+	"I"	>	"ढी"
-"ण्"	+	"I"	>	"णी"
-"त्"	+	"I"	>	"ती"
-"थ्"	+	"I"	>	"थी"
-"द्"	+	"I"	>	"दी"
-"ध्"	+	"I"	>	"धी"
-"न्"	+	"I"	>	"नी"
-"प्"	+	"I"	>	"पी"
-"फ्"	+	"I"	>	"फी"
-"ब्"	+	"I"	>	"बी"
-"भ्"	+	"I"	>	"भी"
-"म्"	+	"I"	>	"मी"
-"य्"	+	"I"	>	"यी"
-"र्"	+	"I"	>	"री"
-"ल्"	+	"I"	>	"ली"
-"ळ्"	+	"I"	>	"ळी"
-"व्"	+	"I"	>	"वी"
-"श्"	+	"I"	>	"शी"
-"श्र्"	+	"I"	>	"श्री"
-"ष्"	+	"I"	>	"षी"
-"स्"	+	"I"	>	"सी"
-"ह्"	+	"I"	>	"ही"
+c Unmapped RALT Keys
++ [RALT K_BKQUOTE]	>	'꣼'
++ [RALT K_HYPHEN]	>	'ꣻ'
++ [RALT K_EQUAL]	>	'ꣽ'
++ [RALT K_BKSLASH]	>	'꣺'
++ [RALT K_RBRKT]	>	'꣹'
++ [RALT K_LBRKT]	>	'꣸'
++ [RALT K_L]	>	'ꣷ'
++ [RALT K_QUOTE]	>	'ꣶ'
++ [RALT K_COLON]	>	'ꣵ'
++ [RALT K_SLASH]	>	'ꣴ'
++ [RALT K_PERIOD]	>	'ꣳ'
++ [RALT K_COMMA]	>	'ꣲ'
 
-c consonant + u
-"क्"	+	"u"	>	"कु"
-"क्ष्"	+	"u"	>	"क्षु"
-"ख्"	+	"u"	>	"खु"
-"ग्"	+	"u"	>	"गु"
-"घ्"	+	"u"	>	"घु"
-"ङ्"	+	"u"	>	"ङु"
-"च्"	+	"u"	>	"चु"
-"छ्"	+	"u"	>	"छु"
-"ज्"	+	"u"	>	"जु"
-"ज्ञ्"	+	"u"	>	"ज्ञु"
-"झ्"	+	"u"	>	"झु"
-"ञ्"	+	"u"	>	"ञु"
-"ट्"	+	"u"	>	"टु"
-"ठ्"	+	"u"	>	"ठु"
-"ड्"	+	"u"	>	"डु"
-"ढ्"	+	"u"	>	"ढु"
-"ण्"	+	"u"	>	"णु"
-"त्"	+	"u"	>	"तु"
-"थ्"	+	"u"	>	"थु"
-"द्"	+	"u"	>	"दु"
-"ध्"	+	"u"	>	"धु"
-"न्"	+	"u"	>	"नु"
-"प्"	+	"u"	>	"पु"
-"फ्"	+	"u"	>	"फु"
-"ब्"	+	"u"	>	"बु"
-"भ्"	+	"u"	>	"भु"
-"म्"	+	"u"	>	"मु"
-"य्"	+	"u"	>	"यु"
-"र्"	+	"u"	>	"रु"
-"ल्"	+	"u"	>	"लु"
-"ळ्"	+	"u"	>	"ळु"
-"व्"	+	"u"	>	"वु"
-"श्"	+	"u"	>	"शु"
-"श्र्"	+	"u"	>	"श्रु"
-"ष्"	+	"u"	>	"षु"
-"स्"	+	"u"	>	"सु"
-"ह्"	+	"u"	>	"हु"
++ [RALT	K_0]	>	beep
++ [RALT	K_BKSLASH]	>	beep
++ [RALT	K_COLON]	>	beep
++ [RALT	K_COMMA]	>	beep
++ [RALT	K_EQUAL]	>	beep
++ [RALT	K_HYPHEN]	>	beep
++ [RALT	K_LBRKT]	>	beep
++ [RALT	K_L]	>	beep
++ [RALT	K_PERIOD]	>	beep
++ [RALT	K_QUOTE]	>	beep
++ [RALT	K_RBRKT]	>	beep
++ [RALT	K_SLASH]	>	beep
++ [RALT K_J]	>	beep
++ [RALT K_K]	>	beep
 
-c consonant + uu
-"कु"	+	"u"	>	"कू"
-"क्षु"	+	"u"	>	"क्षू"
-"खु"	+	"u"	>	"खू"
-"गु"	+	"u"	>	"गू"
-"घु"	+	"u"	>	"घू"
-"ङु"	+	"u"	>	"ङू"
-"चु"	+	"u"	>	"चू"
-"छु"	+	"u"	>	"छू"
-"जु"	+	"u"	>	"जू"
-"ज्ञु"	+	"u"	>	"ज्ञू"
-"झु"	+	"u"	>	"झू"
-"ञु"	+	"u"	>	"ञू"
-"टु"	+	"u"	>	"टू"
-"ठु"	+	"u"	>	"ठू"
-"डु"	+	"u"	>	"डू"
-"ढु"	+	"u"	>	"ढू"
-"णु"	+	"u"	>	"णू"
-"तु"	+	"u"	>	"तू"
-"थु"	+	"u"	>	"थू"
-"दु"	+	"u"	>	"दू"
-"धु"	+	"u"	>	"धू"
-"नु"	+	"u"	>	"नू"
-"पु"	+	"u"	>	"पू"
-"फु"	+	"u"	>	"फू"
-"बु"	+	"u"	>	"बू"
-"भु"	+	"u"	>	"भू"
-"मु"	+	"u"	>	"मू"
-"यु"	+	"u"	>	"यू"
-"रु"	+	"u"	>	"रू"
-"लु"	+	"u"	>	"लू"
-"ळु"	+	"u"	>	"ळू"
-"वु"	+	"u"	>	"वू"
-"शु"	+	"u"	>	"शू"
-"श्रु"	+	"u"	>	"श्रू"
-"षु"	+	"u"	>	"षू"
-"सु"	+	"u"	>	"सू"
-"हु"	+	"u"	>	"हू"
+c Alternate - Right Ctrl for Samaveda Combining Marks
++ [RCTRL K_1]	>	'꣡'
++ [RCTRL K_2]	>	'꣢'
++ [RCTRL K_3]	>	'꣣'
++ [RCTRL K_4]	>	'꣤'
++ [RCTRL K_5]	>	'꣥'
++ [RCTRL K_6]	>	'꣦'
++ [RCTRL K_7]	>	'꣧'
++ [RCTRL K_8]	>	"꣢꣯"
++ [RCTRL K_9]	>	"꣢꣫"
++ [RCTRL K_0]	>	"꣣꣬"
++ [RCTRL K_A]	>	'꣪'
++ [RCTRL K_K]	>	'꣬'
++ [RCTRL K_N]	>	'꣭'
++ [RCTRL K_P]	>	'꣮'
++ [RCTRL K_R]	>	'꣯'
++ [RCTRL K_S]	>	'꣱'
++ [RCTRL K_U]	>	'꣫'
++ [RCTRL K_V]	>	'꣰'
 
-c consonant + oo
-"को"	+	"o"	>	"कू"
-"क्षो"	+	"o"	>	"क्षू"
-"खो"	+	"o"	>	"खू"
-"गो"	+	"o"	>	"गू"
-"घो"	+	"o"	>	"घू"
-"ङो"	+	"o"	>	"ङू"
-"चो"	+	"o"	>	"चू"
-"छो"	+	"o"	>	"छू"
-"जो"	+	"o"	>	"जू"
-"ज्ञो"	+	"o"	>	"ज्ञू"
-"झो"	+	"o"	>	"झू"
-"ञो"	+	"o"	>	"ञू"
-"टो"	+	"o"	>	"टू"
-"ठो"	+	"o"	>	"ठू"
-"डो"	+	"o"	>	"डू"
-"ढो"	+	"o"	>	"ढू"
-"णो"	+	"o"	>	"णू"
-"तो"	+	"o"	>	"तू"
-"थो"	+	"o"	>	"थू"
-"दो"	+	"o"	>	"दू"
-"धो"	+	"o"	>	"धू"
-"नो"	+	"o"	>	"नू"
-"पो"	+	"o"	>	"पू"
-"फो"	+	"o"	>	"फू"
-"बो"	+	"o"	>	"बू"
-"भो"	+	"o"	>	"भू"
-"मो"	+	"o"	>	"मू"
-"यो"	+	"o"	>	"यू"
-"रो"	+	"o"	>	"रू"
-"लो"	+	"o"	>	"लू"
-"ळो"	+	"o"	>	"ळू"
-"वो"	+	"o"	>	"वू"
-"शो"	+	"o"	>	"शू"
-"श्रो"	+	"o"	>	"श्रू"
-"षो"	+	"o"	>	"षू"
-"सो"	+	"o"	>	"सू"
-"हो"	+	"o"	>	"हू"
++ [RCTRL K_HYPHEN]	>	nul
++ [RCTRL K_SLASH]	>	'᳓'
++ [RCTRL K_PERIOD]	>	'᳑'
++ [RCTRL K_COMMA]	>	'᳐'
++ [RCTRL K_BKSLASH] > '꣼'
++ [RCTRL K_RBRKT] > '꣹'
++ [RCTRL K_LBRKT] > '꣸'
++ [RCTRL K_QUOTE] > 'ꣻ'
++ [RCTRL K_COLON] > '꣺'
++ [RCTRL K_EQUAL] > nul
++ [RCTRL K_E] > nul
++ [RCTRL K_W] >nul
++ [RCTRL K_Q] > nul
++ [RCTRL K_Z] >  '᳸'
++ [RCTRL K_X] >  '᳹'
++ [RCTRL K_C] >  '᳒'
 
-c consonant + U
-"क्"	+	"U"	>	"कू"
-"क्ष्"	+	"U"	>	"क्षू"
-"ख्"	+	"U"	>	"खू"
-"ग्"	+	"U"	>	"गू"
-"घ्"	+	"U"	>	"घू"
-"ङ्"	+	"U"	>	"ङू"
-"च्"	+	"U"	>	"चू"
-"छ्"	+	"U"	>	"छू"
-"ज्"	+	"U"	>	"जू"
-"ज्ञ्"	+	"U"	>	"ज्ञू"
-"झ्"	+	"U"	>	"झू"
-"ञ्"	+	"U"	>	"ञू"
-"ट्"	+	"U"	>	"टू"
-"ठ्"	+	"U"	>	"ठू"
-"ड्"	+	"U"	>	"डू"
-"ढ्"	+	"U"	>	"ढू"
-"ण्"	+	"U"	>	"णू"
-"त्"	+	"U"	>	"तू"
-"थ्"	+	"U"	>	"थू"
-"द्"	+	"U"	>	"दू"
-"ध्"	+	"U"	>	"धू"
-"न्"	+	"U"	>	"नू"
-"प्"	+	"U"	>	"पू"
-"फ्"	+	"U"	>	"फू"
-"ब्"	+	"U"	>	"बू"
-"भ्"	+	"U"	>	"भू"
-"म्"	+	"U"	>	"मू"
-"य्"	+	"U"	>	"यू"
-"र्"	+	"U"	>	"रू"
-"ल्"	+	"U"	>	"लू"
-"ळ्"	+	"U"	>	"ळू"
-"व्"	+	"U"	>	"वू"
-"श्"	+	"U"	>	"शू"
-"श्र्"	+	"U"	>	"श्रू"
-"ष्"	+	"U"	>	"षू"
-"स्"	+	"U"	>	"सू"
-"ह्"	+	"U"	>	"हू"
+c Unmapped RCTRL Keys
++ [RCTRL K_B]	>	beep
++ [RCTRL K_D]	>	beep
++ [RCTRL K_F]	>	beep
++ [RCTRL K_G]	>	beep
++ [RCTRL K_H]	>	beep
++ [RCTRL K_I]	>	beep
++ [RCTRL K_J]	>	beep
++ [RCTRL K_O]	>	beep
++ [RCTRL K_T]	>	beep
++ [RCTRL K_Y]	>	beep
+c + [RCTRL K_M]	>	beep c hangs while importing in OSK
 
-c consonant + e
-"क्"	+	"e"	>	"के"
-"क्ष्"	+	"e"	>	"क्षे"
-"ख्"	+	"e"	>	"खे"
-"ग्"	+	"e"	>	"गे"
-"घ्"	+	"e"	>	"घे"
-"ङ्"	+	"e"	>	"ङे"
-"च्"	+	"e"	>	"चे"
-"छ्"	+	"e"	>	"छे"
-"ज्"	+	"e"	>	"जे"
-"ज्ञ्"	+	"e"	>	"ज्ञे"
-"झ्"	+	"e"	>	"झे"
-"ञ्"	+	"e"	>	"ञे"
-"ट्"	+	"e"	>	"टे"
-"ठ्"	+	"e"	>	"ठे"
-"ड्"	+	"e"	>	"डे"
-"ढ्"	+	"e"	>	"ढे"
-"ण्"	+	"e"	>	"णे"
-"त्"	+	"e"	>	"ते"
-"थ्"	+	"e"	>	"थे"
-"द्"	+	"e"	>	"दे"
-"ध्"	+	"e"	>	"धे"
-"न्"	+	"e"	>	"ने"
-"प्"	+	"e"	>	"पे"
-"फ्"	+	"e"	>	"फे"
-"ब्"	+	"e"	>	"बे"
-"भ्"	+	"e"	>	"भे"
-"म्"	+	"e"	>	"मे"
-"य्"	+	"e"	>	"ये"
-"र्"	+	"e"	>	"रे"
-"ल्"	+	"e"	>	"ले"
-"ळ्"	+	"e"	>	"ळे"
-"व्"	+	"e"	>	"वे"
-"श्"	+	"e"	>	"शे"
-"श्र्"	+	"e"	>	"श्रे"
-"ष्"	+	"e"	>	"षे"
-"स्"	+	"e"	>	"से"
-"ह्"	+	"e"	>	"हे"
-
-c consonant + o
-"क्"	+	"o"	>	"को"
-"क्ष्"	+	"o"	>	"क्षो"
-"ख्"	+	"o"	>	"खो"
-"ग्"	+	"o"	>	"गो"
-"घ्"	+	"o"	>	"घो"
-"ङ्"	+	"o"	>	"ङो"
-"च्"	+	"o"	>	"चो"
-"छ्"	+	"o"	>	"छो"
-"ज्"	+	"o"	>	"जो"
-"ज्ञ्"	+	"o"	>	"ज्ञो"
-"झ्"	+	"o"	>	"झो"
-"ञ्"	+	"o"	>	"ञो"
-"ट्"	+	"o"	>	"टो"
-"ठ्"	+	"o"	>	"ठो"
-"ड्"	+	"o"	>	"डो"
-"ढ्"	+	"o"	>	"ढो"
-"ण्"	+	"o"	>	"णो"
-"त्"	+	"o"	>	"तो"
-"थ्"	+	"o"	>	"थो"
-"द्"	+	"o"	>	"दो"
-"ध्"	+	"o"	>	"धो"
-"न्"	+	"o"	>	"नो"
-"प्"	+	"o"	>	"पो"
-"फ्"	+	"o"	>	"फो"
-"ब्"	+	"o"	>	"बो"
-"भ्"	+	"o"	>	"भो"
-"म्"	+	"o"	>	"मो"
-"य्"	+	"o"	>	"यो"
-"र्"	+	"o"	>	"रो"
-"ल्"	+	"o"	>	"लो"
-"ळ्"	+	"o"	>	"ळो"
-"व्"	+	"o"	>	"वो"
-"श्"	+	"o"	>	"शो"
-"श्र्"	+	"o"	>	"श्रो"
-"ष्"	+	"o"	>	"षो"
-"स्"	+	"o"	>	"सो"
-"ह्"	+	"o"	>	"हो"
-
-
-c consonant + ai
-"क"	+	"i"	>	"कै"
-"क्ष"	+	"i"	>	"क्षै"
-"ख"	+	"i"	>	"खै"
-"ग"	+	"i"	>	"गै"
-"घ"	+	"i"	>	"घै"
-"ङ"	+	"i"	>	"ङै"
-"च"	+	"i"	>	"चै"
-"छ"	+	"i"	>	"छै"
-"ज"	+	"i"	>	"जै"
-"ज्ञ"	+	"i"	>	"ज्ञै"
-"झ"	+	"i"	>	"झै"
-"ञ"	+	"i"	>	"ञै"
-"ट"	+	"i"	>	"टै"
-"ठ"	+	"i"	>	"ठै"
-"ड"	+	"i"	>	"डै"
-"ढ"	+	"i"	>	"ढै"
-"ण"	+	"i"	>	"णै"
-"त"	+	"i"	>	"तै"
-"थ"	+	"i"	>	"थै"
-"द"	+	"i"	>	"दै"
-"ध"	+	"i"	>	"धै"
-"न"	+	"i"	>	"नै"
-"प"	+	"i"	>	"पै"
-"फ"	+	"i"	>	"फै"
-"ब"	+	"i"	>	"बै"
-"भ"	+	"i"	>	"भै"
-"म"	+	"i"	>	"मै"
-"य"	+	"i"	>	"यै"
-"र"	+	"i"	>	"रै"
-"ल"	+	"i"	>	"लै"
-"ळ"	+	"i"	>	"ळै"
-"व"	+	"i"	>	"वै"
-"श"	+	"i"	>	"शै"
-"श्र"	+	"i"	>	"श्रै"
-"ष"	+	"i"	>	"षै"
-"स"	+	"i"	>	"सै"
-"ह"	+	"i"	>	"है"
-
-c consonant + ei
-"के"	+	"i"	>	"कै"
-"क्षे"	+	"i"	>	"क्षै"
-"खे"	+	"i"	>	"खै"
-"गे"	+	"i"	>	"गै"
-"घे"	+	"i"	>	"घै"
-"ङे"	+	"i"	>	"ङै"
-"चे"	+	"i"	>	"चै"
-"छे"	+	"i"	>	"छै"
-"जे"	+	"i"	>	"जै"
-"ज्ञे"	+	"i"	>	"ज्ञै"
-"झे"	+	"i"	>	"झै"
-"ञे"	+	"i"	>	"ञै"
-"टे"	+	"i"	>	"टै"
-"ठे"	+	"i"	>	"ठै"
-"डे"	+	"i"	>	"डै"
-"ढे"	+	"i"	>	"ढै"
-"णे"	+	"i"	>	"णै"
-"ते"	+	"i"	>	"तै"
-"थे"	+	"i"	>	"थै"
-"दे"	+	"i"	>	"दै"
-"धे"	+	"i"	>	"धै"
-"ने"	+	"i"	>	"नै"
-"पे"	+	"i"	>	"पै"
-"फे"	+	"i"	>	"फै"
-"बे"	+	"i"	>	"बै"
-"भे"	+	"i"	>	"भै"
-"मे"	+	"i"	>	"मै"
-"ये"	+	"i"	>	"यै"
-"रे"	+	"i"	>	"रै"
-"ले"	+	"i"	>	"लै"
-"ळे"	+	"i"	>	"ळै"
-"वे"	+	"i"	>	"वै"
-"शे"	+	"i"	>	"शै"
-"श्रे"	+	"i"	>	"श्रै"
-"षे"	+	"i"	>	"षै"
-"से"	+	"i"	>	"सै"
-"हे"	+	"i"	>	"है"
-
-c consonant + ou
-"को"	+	"u"	>	"कौ"
-"क्षो"	+	"u"	>	"क्षौ"
-"खो"	+	"u"	>	"खौ"
-"गो"	+	"u"	>	"गौ"
-"घो"	+	"u"	>	"घौ"
-"ङो"	+	"u"	>	"ङौ"
-"चो"	+	"u"	>	"चौ"
-"छो"	+	"u"	>	"छौ"
-"जो"	+	"u"	>	"जौ"
-"ज्ञो"	+	"u"	>	"ज्ञौ"
-"झो"	+	"u"	>	"झौ"
-"ञो"	+	"u"	>	"ञौ"
-"टो"	+	"u"	>	"टौ"
-"ठो"	+	"u"	>	"ठौ"
-"डो"	+	"u"	>	"डौ"
-"ढो"	+	"u"	>	"ढौ"
-"णो"	+	"u"	>	"णौ"
-"तो"	+	"u"	>	"तौ"
-"थो"	+	"u"	>	"थौ"
-"दो"	+	"u"	>	"दौ"
-"धो"	+	"u"	>	"धौ"
-"नो"	+	"u"	>	"नौ"
-"पो"	+	"u"	>	"पौ"
-"फो"	+	"u"	>	"फौ"
-"बो"	+	"u"	>	"बौ"
-"भो"	+	"u"	>	"भौ"
-"मो"	+	"u"	>	"मौ"
-"यो"	+	"u"	>	"यौ"
-"रो"	+	"u"	>	"रौ"
-"लो"	+	"u"	>	"लौ"
-"ळो"	+	"u"	>	"ळौ"
-"वो"	+	"u"	>	"वौ"
-"शो"	+	"u"	>	"शौ"
-"श्रो"	+	"u"	>	"श्रौ"
-"षो"	+	"u"	>	"षौ"
-"सो"	+	"u"	>	"सौ"
-"हो"	+	"u"	>	"हौ"
-
-c consonant + au
-"क"	+	"u"	>	"कौ"
-"क्ष"	+	"u"	>	"क्षौ"
-"ख"	+	"u"	>	"खौ"
-"ग"	+	"u"	>	"गौ"
-"घ"	+	"u"	>	"घौ"
-"ङ"	+	"u"	>	"ङौ"
-"च"	+	"u"	>	"चौ"
-"छ"	+	"u"	>	"छौ"
-"ज"	+	"u"	>	"जौ"
-"ज्ञ"	+	"u"	>	"ज्ञौ"
-"झ"	+	"u"	>	"झौ"
-"ञ"	+	"u"	>	"ञौ"
-"ट"	+	"u"	>	"टौ"
-"ठ"	+	"u"	>	"ठौ"
-"ड"	+	"u"	>	"डौ"
-"ढ"	+	"u"	>	"ढौ"
-"ण"	+	"u"	>	"णौ"
-"त"	+	"u"	>	"तौ"
-"थ"	+	"u"	>	"थौ"
-"द"	+	"u"	>	"दौ"
-"ध"	+	"u"	>	"धौ"
-"न"	+	"u"	>	"नौ"
-"प"	+	"u"	>	"पौ"
-"फ"	+	"u"	>	"फौ"
-"ब"	+	"u"	>	"बौ"
-"भ"	+	"u"	>	"भौ"
-"म"	+	"u"	>	"मौ"
-"य"	+	"u"	>	"यौ"
-"र"	+	"u"	>	"रौ"
-"ल"	+	"u"	>	"लौ"
-"ळ"	+	"u"	>	"ळौ"
-"व"	+	"u"	>	"वौ"
-"श"	+	"u"	>	"शौ"
-"श्र"	+	"u"	>	"श्रौ"
-"ष"	+	"u"	>	"षौ"
-"स"	+	"u"	>	"सौ"
-"ह"	+	"u"	>	"हौ"
-
-c consonant + R
-"क्"	+	"R"	>	"कृ"
-"क्ष्"	+	"R"	>	"क्षृ"
-"ख्"	+	"R"	>	"खृ"
-"ग्"	+	"R"	>	"गृ"
-"घ्"	+	"R"	>	"घृ"
-"ङ्"	+	"R"	>	"ङृ"
-"च्"	+	"R"	>	"चृ"
-"छ्"	+	"R"	>	"छृ"
-"ज्"	+	"R"	>	"जृ"
-"ज्ञ्"	+	"R"	>	"ज्ञृ"
-"झ्"	+	"R"	>	"झृ"
-"ञ्"	+	"R"	>	"ञृ"
-"ट्"	+	"R"	>	"टृ"
-"ठ्"	+	"R"	>	"ठृ"
-"ड्"	+	"R"	>	"डृ"
-"ढ्"	+	"R"	>	"ढृ"
-"ण्"	+	"R"	>	"णृ"
-"त्"	+	"R"	>	"तृ"
-"थ्"	+	"R"	>	"थृ"
-"द्"	+	"R"	>	"दृ"
-"ध्"	+	"R"	>	"धृ"
-"न्"	+	"R"	>	"नृ"
-"प्"	+	"R"	>	"पृ"
-"फ्"	+	"R"	>	"फृ"
-"ब्"	+	"R"	>	"बृ"
-"भ्"	+	"R"	>	"भृ"
-"म्"	+	"R"	>	"मृ"
-"य्"	+	"R"	>	"यृ"
-"र्"	+	"R"	>	"रृ"
-"ल्"	+	"R"	>	"लृ"
-"ळ्"	+	"R"	>	"ळृ"
-"व्"	+	"R"	>	"वृ"
-"श्"	+	"R"	>	"शृ"
-"श्र्"	+	"R"	>	"श्रृ"
-"ष्"	+	"R"	>	"षृ"
-"स्"	+	"R"	>	"सृ"
-"ह्"	+	"R"	>	"हृ"
-
-c consonant + |
-"क्"	+	"|"	>	"कॢ"
-"क्ष्"	+	"|"	>	"क्षॢ"
-"ख्"	+	"|"	>	"खॢ"
-"ग्"	+	"|"	>	"गॢ"
-"घ्"	+	"|"	>	"घॢ"
-"ङ्"	+	"|"	>	"ङॢ"
-"च्"	+	"|"	>	"चॢ"
-"छ्"	+	"|"	>	"छॢ"
-"ज्"	+	"|"	>	"जॢ"
-"ज्ञ्"	+	"|"	>	"ज्ञॢ"
-"झ्"	+	"|"	>	"झॢ"
-"ञ्"	+	"|"	>	"ञॢ"
-"ट्"	+	"|"	>	"टॢ"
-"ठ्"	+	"|"	>	"ठॢ"
-"ड्"	+	"|"	>	"डॢ"
-"ढ्"	+	"|"	>	"ढॢ"
-"ण्"	+	"|"	>	"णॢ"
-"त्"	+	"|"	>	"तॢ"
-"थ्"	+	"|"	>	"थॢ"
-"द्"	+	"|"	>	"दॢ"
-"ध्"	+	"|"	>	"धॢ"
-"न्"	+	"|"	>	"नॢ"
-"प्"	+	"|"	>	"पॢ"
-"फ्"	+	"|"	>	"फॢ"
-"ब्"	+	"|"	>	"बॢ"
-"भ्"	+	"|"	>	"भॢ"
-"म्"	+	"|"	>	"मॢ"
-"य्"	+	"|"	>	"यॢ"
-"र्"	+	"|"	>	"रॢ"
-"ल्"	+	"|"	>	"लॢ"
-"ळ्"	+	"|"	>	"ळॢ"
-"व्"	+	"|"	>	"वॢ"
-"श्"	+	"|"	>	"शॢ"
-"श्र्"	+	"|"	>	"श्रॢ"
-"ष्"	+	"|"	>	"षॢ"
-"स्"	+	"|"	>	"सॢ"
-"ह्"	+	"|"	>	"हॢ"
-
-c consonant + E
-"क्"	+	"E"	>	"कॅ"
-"क्ष्"	+	"E"	>	"क्षॅ"
-"ख्"	+	"E"	>	"खॅ"
-"ग्"	+	"E"	>	"गॅ"
-"घ्"	+	"E"	>	"घॅ"
-"ङ्"	+	"E"	>	"ङॅ"
-"च्"	+	"E"	>	"चॅ"
-"छ्"	+	"E"	>	"छॅ"
-"ज्"	+	"E"	>	"जॅ"
-"ज्ञ्"	+	"E"	>	"ज्ञॅ"
-"झ्"	+	"E"	>	"झॅ"
-"ञ्"	+	"E"	>	"ञॅ"
-"ट्"	+	"E"	>	"टॅ"
-"ठ्"	+	"E"	>	"ठॅ"
-"ड्"	+	"E"	>	"डॅ"
-"ढ्"	+	"E"	>	"ढॅ"
-"ण्"	+	"E"	>	"णॅ"
-"त्"	+	"E"	>	"तॅ"
-"थ्"	+	"E"	>	"थॅ"
-"द्"	+	"E"	>	"दॅ"
-"ध्"	+	"E"	>	"धॅ"
-"न्"	+	"E"	>	"नॅ"
-"प्"	+	"E"	>	"पॅ"
-"फ्"	+	"E"	>	"फॅ"
-"ब्"	+	"E"	>	"बॅ"
-"भ्"	+	"E"	>	"भॅ"
-"म्"	+	"E"	>	"मॅ"
-"य्"	+	"E"	>	"यॅ"
-"र्"	+	"E"	>	"रॅ"
-"ल्"	+	"E"	>	"लॅ"
-"ळ्"	+	"E"	>	"ळॅ"
-"व्"	+	"E"	>	"वॅ"
-"श्"	+	"E"	>	"शॅ"
-"श्र्"	+	"E"	>	"श्रॅ"
-"ष्"	+	"E"	>	"षॅ"
-"स्"	+	"E"	>	"सॅ"
-"ह्"	+	"E"	>	"हॅ"
-
-c consonant + ae
-"क"	+	"e"	>	"कॅ"
-"क्ष"	+	"e"	>	"क्षॅ"
-"ख"	+	"e"	>	"खॅ"
-"ग"	+	"e"	>	"गॅ"
-"घ"	+	"e"	>	"घॅ"
-"ङ"	+	"e"	>	"ङॅ"
-"च"	+	"e"	>	"चॅ"
-"छ"	+	"e"	>	"छॅ"
-"ज"	+	"e"	>	"जॅ"
-"ज्ञ"	+	"e"	>	"ज्ञॅ"
-"झ"	+	"e"	>	"झॅ"
-"ञ"	+	"e"	>	"ञॅ"
-"ट"	+	"e"	>	"टॅ"
-"ठ"	+	"e"	>	"ठॅ"
-"ड"	+	"e"	>	"डॅ"
-"ढ"	+	"e"	>	"ढॅ"
-"ण"	+	"e"	>	"णॅ"
-"त"	+	"e"	>	"तॅ"
-"थ"	+	"e"	>	"थॅ"
-"द"	+	"e"	>	"दॅ"
-"ध"	+	"e"	>	"धॅ"
-"न"	+	"e"	>	"नॅ"
-"प"	+	"e"	>	"पॅ"
-"फ"	+	"e"	>	"फॅ"
-"ब"	+	"e"	>	"बॅ"
-"भ"	+	"e"	>	"भॅ"
-"म"	+	"e"	>	"मॅ"
-"य"	+	"e"	>	"यॅ"
-"र"	+	"e"	>	"रॅ"
-"ल"	+	"e"	>	"लॅ"
-"ळ"	+	"e"	>	"ळॅ"
-"व"	+	"e"	>	"वॅ"
-"श"	+	"e"	>	"शॅ"
-"श्र"	+	"e"	>	"श्रॅ"
-"ष"	+	"e"	>	"षॅ"
-"स"	+	"e"	>	"सॅ"
-"ह"	+	"e"	>	"हॅ"
-
-c consonant + O
-"क्"	+	"O"	>	"कॉ"
-"क्ष्"	+	"O"	>	"क्षॉ"
-"ख्"	+	"O"	>	"खॉ"
-"ग्"	+	"O"	>	"गॉ"
-"घ्"	+	"O"	>	"घॉ"
-"ङ्"	+	"O"	>	"ङॉ"
-"च्"	+	"O"	>	"चॉ"
-"छ्"	+	"O"	>	"छॉ"
-"ज्"	+	"O"	>	"जॉ"
-"ज्ञ्"	+	"O"	>	"ज्ञॉ"
-"झ्"	+	"O"	>	"झॉ"
-"ञ्"	+	"O"	>	"ञॉ"
-"ट्"	+	"O"	>	"टॉ"
-"ठ्"	+	"O"	>	"ठॉ"
-"ड्"	+	"O"	>	"डॉ"
-"ढ्"	+	"O"	>	"ढॉ"
-"ण्"	+	"O"	>	"णॉ"
-"त्"	+	"O"	>	"तॉ"
-"थ्"	+	"O"	>	"थॉ"
-"द्"	+	"O"	>	"दॉ"
-"ध्"	+	"O"	>	"धॉ"
-"न्"	+	"O"	>	"नॉ"
-"प्"	+	"O"	>	"पॉ"
-"फ्"	+	"O"	>	"फॉ"
-"ब्"	+	"O"	>	"बॉ"
-"भ्"	+	"O"	>	"भॉ"
-"म्"	+	"O"	>	"मॉ"
-"य्"	+	"O"	>	"यॉ"
-"र्"	+	"O"	>	"रॉ"
-"ल्"	+	"O"	>	"लॉ"
-"ळ्"	+	"O"	>	"ळॉ"
-"व्"	+	"O"	>	"वॉ"
-"श्"	+	"O"	>	"शॉ"
-"श्र्"	+	"O"	>	"श्रॉ"
-"ष्"	+	"O"	>	"षॉ"
-"स्"	+	"O"	>	"सॉ"
-"ह्"	+	"O"	>	"हॉ"
-
-c consonant + aw
-"क"	+	"w"	>	"कॉ"
-"क्ष"	+	"w"	>	"क्षॉ"
-"ख"	+	"w"	>	"खॉ"
-"ग"	+	"w"	>	"गॉ"
-"घ"	+	"w"	>	"घॉ"
-"ङ"	+	"w"	>	"ङॉ"
-"च"	+	"w"	>	"चॉ"
-"छ"	+	"w"	>	"छॉ"
-"ज"	+	"w"	>	"जॉ"
-"ज्ञ"	+	"w"	>	"ज्ञॉ"
-"झ"	+	"w"	>	"झॉ"
-"ञ"	+	"w"	>	"ञॉ"
-"ट"	+	"w"	>	"टॉ"
-"ठ"	+	"w"	>	"ठॉ"
-"ड"	+	"w"	>	"डॉ"
-"ढ"	+	"w"	>	"ढॉ"
-"ण"	+	"w"	>	"णॉ"
-"त"	+	"w"	>	"तॉ"
-"थ"	+	"w"	>	"थॉ"
-"द"	+	"w"	>	"दॉ"
-"ध"	+	"w"	>	"धॉ"
-"न"	+	"w"	>	"नॉ"
-"प"	+	"w"	>	"पॉ"
-"फ"	+	"w"	>	"फॉ"
-"ब"	+	"w"	>	"बॉ"
-"भ"	+	"w"	>	"भॉ"
-"म"	+	"w"	>	"मॉ"
-"य"	+	"w"	>	"यॉ"
-"र"	+	"w"	>	"रॉ"
-"ल"	+	"w"	>	"लॉ"
-"ळ"	+	"w"	>	"ळॉ"
-"व"	+	"w"	>	"वॉ"
-"श"	+	"w"	>	"शॉ"
-"श्र"	+	"w"	>	"श्रॉ"
-"ष"	+	"w"	>	"षॉ"
-"स"	+	"w"	>	"सॉ"
-"ह"	+	"w"	>	"हॉ"
-
-c consonant + [
-"क्"	+	"["	>	"कॆ"
-"क्ष्"	+	"["	>	"क्षॆ"
-"ख्"	+	"["	>	"खॆ"
-"ग्"	+	"["	>	"गॆ"
-"घ्"	+	"["	>	"घॆ"
-"ङ्"	+	"["	>	"ङॆ"
-"च्"	+	"["	>	"चॆ"
-"छ्"	+	"["	>	"छॆ"
-"ज्"	+	"["	>	"जॆ"
-"ज्ञ्"	+	"["	>	"ज्ञॆ"
-"झ्"	+	"["	>	"झॆ"
-"ञ्"	+	"["	>	"ञॆ"
-"ट्"	+	"["	>	"टॆ"
-"ठ्"	+	"["	>	"ठॆ"
-"ड्"	+	"["	>	"डॆ"
-"ढ्"	+	"["	>	"ढॆ"
-"ण्"	+	"["	>	"णॆ"
-"त्"	+	"["	>	"तॆ"
-"थ्"	+	"["	>	"थॆ"
-"द्"	+	"["	>	"दॆ"
-"ध्"	+	"["	>	"धॆ"
-"न्"	+	"["	>	"नॆ"
-"प्"	+	"["	>	"पॆ"
-"फ्"	+	"["	>	"फॆ"
-"ब्"	+	"["	>	"बॆ"
-"भ्"	+	"["	>	"भॆ"
-"म्"	+	"["	>	"मॆ"
-"य्"	+	"["	>	"यॆ"
-"र्"	+	"["	>	"रॆ"
-"ल्"	+	"["	>	"लॆ"
-"ळ्"	+	"["	>	"ळॆ"
-"व्"	+	"["	>	"वॆ"
-"श्"	+	"["	>	"शॆ"
-"श्र्"	+	"["	>	"श्रॆ"
-"ष्"	+	"["	>	"षॆ"
-"स्"	+	"["	>	"सॆ"
-"ह्"	+	"["	>	"हॆ"
-
-c consonant + ]
-"क्"	+	"]"	>	"कॊ"
-"क्ष्"	+	"]"	>	"क्षॊ"
-"ख्"	+	"]"	>	"खॊ"
-"ग्"	+	"]"	>	"गॊ"
-"घ्"	+	"]"	>	"घॊ"
-"ङ्"	+	"]"	>	"ङॊ"
-"च्"	+	"]"	>	"चॊ"
-"छ्"	+	"]"	>	"छॊ"
-"ज्"	+	"]"	>	"जॊ"
-"ज्ञ्"	+	"]"	>	"ज्ञॊ"
-"झ्"	+	"]"	>	"झॊ"
-"ञ्"	+	"]"	>	"ञॊ"
-"ट्"	+	"]"	>	"टॊ"
-"ठ्"	+	"]"	>	"ठॊ"
-"ड्"	+	"]"	>	"डॊ"
-"ढ्"	+	"]"	>	"ढॊ"
-"ण्"	+	"]"	>	"णॊ"
-"त्"	+	"]"	>	"तॊ"
-"थ्"	+	"]"	>	"थॊ"
-"द्"	+	"]"	>	"दॊ"
-"ध्"	+	"]"	>	"धॊ"
-"न्"	+	"]"	>	"नॊ"
-"प्"	+	"]"	>	"पॊ"
-"फ्"	+	"]"	>	"फॊ"
-"ब्"	+	"]"	>	"बॊ"
-"भ्"	+	"]"	>	"भॊ"
-"म्"	+	"]"	>	"मॊ"
-"य्"	+	"]"	>	"यॊ"
-"र्"	+	"]"	>	"रॊ"
-"ल्"	+	"]"	>	"लॊ"
-"ळ्"	+	"]"	>	"ळॊ"
-"व्"	+	"]"	>	"वॊ"
-"श्"	+	"]"	>	"शॊ"
-"श्र्"	+	"]"	>	"श्रॊ"
-"ष्"	+	"]"	>	"षॊ"
-"स्"	+	"]"	>	"सॊ"
-"ह्"	+	"]"	>	"हॊ"
-
-c -------------------------------------------
+c EOF
