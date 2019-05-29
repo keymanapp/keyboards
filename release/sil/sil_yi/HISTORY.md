@@ -1,5 +1,8 @@
 SIL Yi Keyboard Change History
 =======================
+1.2.3 (19 Nov 2018)
+--------------------
+* Fix output for 'rryx'
 
 1.2.2 (14 Sept 2018)
 --------------------
