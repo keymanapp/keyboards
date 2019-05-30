@@ -117,7 +117,7 @@ END;
 <td>झ़</td><td>.jha</td><td></td>
 <td>ड़</td><td>.Da</td><td></td>
 <td>ढ़</td><td>.Dha</td><td></td>
-<td>फ़</td><td>fa</td><td></td>
+<td>फ़</td><td>.fa</td><td></td>
 </tr>
 <tr>
 <td></td>
@@ -286,8 +286,8 @@ END;
 </tr>
 <tr>
 <td>कॅ</td>
+<td>कॅ</td>
 <td>कॉ</td>
-<td>कॆ</td>
 <td>कॆ</td>
 <td>कॊ</td>
 <td>कॊ</td>
@@ -320,7 +320,7 @@ END;
 <th  style="width:8%;">kii/kI/kee</th>
 <th  style="width:8%;">ku</th>
 <th  style="width:8%;">kuu/kU/koo</th>
-<th  style="width:8%;">kR</th>
+<th  style="width:8%;">kR/kRR</th>
 <th  style="width:8%;">ke</th>
 <th  style="width:8%;">kai/kei</th>
 <th  style="width:8%;">ko</th>
