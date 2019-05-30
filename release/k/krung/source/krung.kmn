@@ -14,14 +14,20 @@ begin Unicode > use(main)
 group(main) using keys
 
 c punctuations
-store(punct_key)    [K_PERIOD] [SHIFT K_COLON] [SHIFT K_COMMA] [K_2] [SHIFT K_PERIOD] [K_COMMA]
-store(punct_out)    U+17D4 U+17D6 U+003C U+002F U+003E U+0020
+store(punct_key)    [K_PERIOD] [SHIFT K_COLON] [SHIFT K_COMMA] [SHIFT K_PERIOD] [K_COMMA]
+store(punct_out)    U+17D4 U+17D6 U+003C U+003E U+0020
 + any(punct_key)    > index(punct_out,1)
 
 
 U+002F + [K_2]      > U+17D7    c ៗ
 U+003C + [SHIFT K_COMMA]    > U+00AB    c << > «
 U+003E + [SHIFT K_PERIOD]   > U+00BB    c >> > »
+
+
+c numerals
+store(number_key)   [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] 
+store(number_out)   U+17E0 U+17E1 U+17E2 U+17E3 U+17E4 U+17E5 U+17E6 U+17E7 U+17E8 U+17E9
++ any(number_key)   > index(number_out,1)
 
 
 c single orthographic consonant mappings
