@@ -51,6 +51,7 @@ c Version 1.2.1
 c 20190530 
 c Add OM for ॐ
 c Add examples with Vedic accents to welcome and help
+c Add missing Samaveda marks for  key + EQUAL (similar to RCTRL) 
 c
 store(&VERSION) "10.0" 
 store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS)'
@@ -257,11 +258,11 @@ c add h to consonants
 "स्" + "h"	>	"श्"
 
 c special combinations
-$keymanonly: if(opt1 = '0') "न्" + "k"	>	"ङ्क्"
-$keymanonly: if(opt1 = '0') "न्" + "g"	>	"ङ्ग्"
-$keymanonly: if(opt1 = '0') "न्" + "c"	>	"nc"
-$keymanonly: if(opt1 = '0') "nc" + "h"	>	"ञ्च्"	c nch
-$keymanonly: if(opt1 = '0') "न्" + "j"	>	"ञ्ज्"
+$keyman: if(opt1  = '0') "न्" + "k"	>	"ङ्क्"
+$keyman: if(opt1  = '0') "न्" + "g"	>	"ङ्ग्"
+$keyman: if(opt1  = '0') "न्" + "c"	>	"nc"
+$keyman: if(opt1  = '0') "nc" + "h"	>	"ञ्च्"	c nch
+$keyman: if(opt1  = '0') "न्" + "j"	>	"ञ्ज्"
 "घ्" + "Y"	>	"ज्ञ्"	c	GY
 "श्" + "r"	>	"श्र्"	c	shr
 "ण्" + "g"	>	"ङ्"	c	Ng
@@ -278,7 +279,7 @@ store(aPlusMaatraaU) "ा" "ॅ" "ै" "ौ" "ॉ"
 
 c	implicit akaara deletion for hindi mode 
 store(opt1endings) outs(Punctuation) ' '
-$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"्" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
+$keyman: if(opt1  = 'hindi') any(Vyanjana)"्" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
 
 any(Vyanjana)"्" + "^"	>	index(Vyanjana,1)"्"
 any(Vyanjana)"्" + "a"	>	index(Vyanjana,1)
@@ -291,7 +292,7 @@ any(Vyanjana)"े" + "i"	>	index(Vyanjana,1)"ै"	 c ei
 any(Vyanjana)"ो" + "o"	>	 index(Vyanjana,1)"ू"	 c oo
 any(Vyanjana)"ो" + "u"	>	index(Vyanjana,1)"ौ"	 c ou
 
-$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"़" "्" + any(opt1endings)	>	index(NuktaVyanjana,2)"़" index(opt1endings,5)
+$keyman: if(opt1  = 'hindi') any(NuktaVyanjana)"़" "्" + any(opt1endings)	>	index(NuktaVyanjana,2)"़" index(opt1endings,5)
 
 any(NuktaVyanjana)"़""्" + "^"	>	index(NuktaVyanjana,1)"़""्"
 any(NuktaVyanjana)"़""्" + "a"	>	index(NuktaVyanjana,1)"़"
@@ -324,21 +325,32 @@ c Samaveda Number Combining Marks
 "५" + "="	>"꣥"		
 "६" + "="	>"꣦"		
 "७" + "="	>"꣧"		
-"८" + "="	>"꣢꣯"		
-"९" + "="	>"꣢꣫"
-"०" + "="	>"꣣꣬"		
+"८" + "="	>"꣢꣯"		c	8=
+"९" + "="	>"꣢꣫"	c	9=
+"०" + "="	>"꣣꣬"		c	0=
 
 c	Samaveda Combining vowels
 "अ" + "="	>"꣪"
 "उ" + "="	>"꣫"
 
 c	Other Samaveda Combining characters
-"क्" + "="	>"꣬"
-"न्" + "="	>"꣭"
-"प्" + "="	>"꣮"
-"र्" + "="	>"꣯"
-"व्" + "="	>"꣰"
-"स्" + "="	>"꣱"
+"क्" + "="	>"꣬"	c	k=
+"न्" + "="	>"꣭"	c	n=
+"प्" + "="	>"꣮"	c	p=
+"र्" + "="	>"꣯"	c	r=
+"व्" + "="	>"꣰"	c	v=
+"स्" + "="	>"꣱"	c	s=
+"ॶ" + "=" 	>  '᳸'	c	z=
+"क्ष्" + "=" 	>  '᳹'	c	x=
+"च्" + "=" 	>  '᳒'	c	c=
+"/" + "=" 	>	'᳓'	c	/=
+"." + "=" 	>	'᳑'	c	.=
+"," + "=" 	>	'᳐'	c	,=
+"\" + "=" 	> '꣼'	c	\=
+"ऎ" + "=" 	> '꣹'	c	]=
+"ऒ" + "=" 	> '꣸'	c	[=
+"'" + "=" 	> 'ꣻ'	c	'=
+";" + "=" 	> '꣺'	c	;=
 
 c	Vedic Extensions Unicode Range - Right Alt 
 + [RALT	K_1]	>	'᳑'
@@ -406,7 +418,7 @@ c Unmapped RALT Keys
 + [RALT K_J]	>	beep
 + [RALT K_K]	>	beep
 
-c Alternate - Right Ctrl for Samaveda Combining Marks
+c Alternate - Right Ctrl for Samaveda Marks
 + [RCTRL K_1]	>	'꣡'
 + [RCTRL K_2]	>	'꣢'
 + [RCTRL K_3]	>	'꣣'
@@ -426,7 +438,6 @@ c Alternate - Right Ctrl for Samaveda Combining Marks
 + [RCTRL K_U]	>	'꣫'
 + [RCTRL K_V]	>	'꣰'
 
-+ [RCTRL K_HYPHEN]	>	nul
 + [RCTRL K_SLASH]	>	'᳓'
 + [RCTRL K_PERIOD]	>	'᳑'
 + [RCTRL K_COMMA]	>	'᳐'
@@ -435,10 +446,6 @@ c Alternate - Right Ctrl for Samaveda Combining Marks
 + [RCTRL K_LBRKT] > '꣸'
 + [RCTRL K_QUOTE] > 'ꣻ'
 + [RCTRL K_COLON] > '꣺'
-+ [RCTRL K_EQUAL] > nul
-+ [RCTRL K_E] > nul
-+ [RCTRL K_W] >nul
-+ [RCTRL K_Q] > nul
 + [RCTRL K_Z] >  '᳸'
 + [RCTRL K_X] >  '᳹'
 + [RCTRL K_C] >  '᳒'
@@ -446,13 +453,18 @@ c Alternate - Right Ctrl for Samaveda Combining Marks
 c Unmapped RCTRL Keys
 + [RCTRL K_B]	>	beep
 + [RCTRL K_D]	>	beep
++ [RCTRL K_EQUAL] > beep
++ [RCTRL K_E] > beep
 + [RCTRL K_F]	>	beep
 + [RCTRL K_G]	>	beep
++ [RCTRL K_HYPHEN]	>	beep
 + [RCTRL K_H]	>	beep
 + [RCTRL K_I]	>	beep
 + [RCTRL K_J]	>	beep
 + [RCTRL K_O]	>	beep
++ [RCTRL K_Q] > beep
 + [RCTRL K_T]	>	beep
++ [RCTRL K_W] >beep
 + [RCTRL K_Y]	>	beep
 c + [RCTRL K_M]	>	beep c hangs while importing in OSK
 

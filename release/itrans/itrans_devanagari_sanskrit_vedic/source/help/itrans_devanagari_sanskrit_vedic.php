@@ -26,23 +26,25 @@ You need to use a Unicode Devanagari font which has support for Vedic Sanskrit, 
 <strong><a href="http://svayambhava.blogspot.com/p/siddhanta-devanagariunicode-open-type.html">
 Siddhanta</a></strong> font by Mihail Bayaryn. </p>
 
-<p>Additionally, it can also be used for typing <strong>Hindi</strong>, <strong>Marathi</strong> 
-and other languages written in Devanagari script.<p>
-
-<p>You can phonetically type using the QWERTY keyboard with ITRANS trasliteration scheme and 
-get Devanagari output. Please note that some letters have been remapped based on user feedback
+<p>You can phonetically type on the QWERTY keyboard using ITRANS trasliteration scheme and 
+get Devanagari output. There are multiple options for getting certain Devanagari letters. 
+Please note that some letters have been remapped based on user feedback
 compared to the initial version of the keyboard. Refer to the keyboard images
 and the tables in the help information below for the current mapping.</p>
 
+<p>In addition toVedic Sanskrit, this keyboard can also be used for typing <strong>Hindi</strong>, <strong>Marathi</strong> 
+and other languages written in Devanagari script. e.g. The keys <kbd>saMskRRta</kbd> will output 
+the word <strong>संस्कृत</strong>,  <kbd>daRyA</kbd> will output the Marathi word <strong>दर्‍या</strong>,
+<kbd>laxmI</kbd> or <kbd>lakSmii</kbd> or <kbd>lakShmee</kbd> will all output the same word <strong>लक्ष्मी</strong>, 
+<kbd>pahuMMchA</kbd> will output the Hindi word <strong>पहुँचा</strong> .</p>
+
 <p>In the default Sanskrit mode, `Panchama varna` <samp>ङ्</samp> 
 and <samp>ञ्</samp> as part of consonant conjuncts 
-can be typed as <kbd>n</kbd> e.g. <kbd>mangaLa</kbd> 
+can also be typed as <kbd>n</kbd> for convenience, e.g. <kbd>mangaLa</kbd> 
 will output the word <strong>मङ्गळ</strong>, <kbd>chanchala</kbd> will 
-output the word <strong>चञ्चल</strong>.  
-The keys <kbd>saMskRRta</kbd> will output the word <strong>संस्कृत</strong>, 
-<kbd>laxmI</kbd> will output the word <strong>लक्ष्मी</strong>.</p>
+output the word <strong>चञ्चल</strong>.  </p>
 
-<p>Here are some examples with commonly used Vedic accents. <ul>
+<p>Here are some examples of text with commonly used Vedic accents. <ul>
 <li>For <samp>ॐ शान्तिः॒ शान्तिः॒ शान्तिः॑ ॥</samp> press the keys <kbd>OM</kbd> 
 <kbd>shaantiH``</kbd> <kbd>shaantiH``</kbd> <kbd>shaantiH''</kbd> <kbd>...</kbd>.</li>
 <li>For <samp>पुरु॑ष ए॒वेदꣳ सर्वम्᳚ ।</samp> press the keys <kbd>puru''Sha</kbd> 
@@ -477,8 +479,8 @@ the EQUAL key, for example <kbd>7</kbd> <kbd>=</kbd> produces <samp>꣧</samp>.
 <li>The number keys 0, 8 and 9 when followed by the EQUAL key produce frequently used
 combinations of cantillation marks.
 </li>
-<li>For typing other cantillation marks for Samaveda, press the letter key and then the EQUAL 
-key as per the following table.
+<li>For typing other marks for Samaveda, Devanagari editorial signs etc.
+ press the letter key and then the EQUAL key as per the following table.
 </li>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -493,20 +495,34 @@ key as per the following table.
 <tr> <td><kbd>9</kbd><kbd>=</kbd></td> <td><samp>꣢꣫</samp></td> <td>e.g. ल꣢꣫ </td></tr>
 <tr> <td><kbd>0</kbd><kbd>=</kbd></td> <td><samp>꣣꣬</samp></td> <td>e.g. क꣣꣬</td></tr>
 <tr></tr>
-<tr> <td><kbd>a</kbd><kbd>=</kbd></td> <td><samp>꣪</samp></td> <td>COMBINING DEVANAGARI LETTER A </td></tr>
-<tr> <td><kbd>u</kbd><kbd>=</kbd></td> <td><samp>꣫</samp></td> <td>COMBINING DEVANAGARI LETTER U </td></tr>
-<tr> <td><kbd>k</kbd><kbd>=</kbd></td> <td><samp>꣬</samp></td> <td>COMBINING DEVANAGARI LETTER KA </td></tr>
-<tr> <td><kbd>n</kbd><kbd>=</kbd></td> <td><samp>꣭</samp></td> <td>COMBINING DEVANAGARI LETTER NA </td></tr>
-<tr> <td><kbd>p</kbd><kbd>=</kbd></td> <td><samp>꣮</samp></td> <td>COMBINING DEVANAGARI LETTER PA </td></tr>
-<tr> <td><kbd>r</kbd><kbd>=</kbd></td> <td><samp>꣯</samp></td> <td>COMBINING DEVANAGARI LETTER RA </td></tr>
-<tr> <td><kbd>s</kbd><kbd>=</kbd></td> <td><samp>꣱</samp></td> <td>COMBINING DEVANAGARI SIGN AVAGRAHA </td></tr>
-<tr> <td><kbd>v</kbd><kbd>=</kbd></td> <td><samp>꣰</samp></td> <td>COMBINING DEVANAGARI LETTER VI </td></tr>
+<tr> <td><kbd>a</kbd><kbd>=</kbd></td> <td><samp>꣪</samp></td> <td>Combining Devanagari Letter A </td></tr>
+<tr> <td><kbd>u</kbd><kbd>=</kbd></td> <td><samp>꣫</samp></td> <td>Combining Devanagari Letter U </td></tr>
+<tr> <td><kbd>k</kbd><kbd>=</kbd></td> <td><samp>꣬</samp></td> <td>Combining Devanagari Letter KA </td></tr>
+<tr> <td><kbd>n</kbd><kbd>=</kbd></td> <td><samp>꣭</samp></td> <td>Combining Devanagari Letter NA </td></tr>
+<tr> <td><kbd>p</kbd><kbd>=</kbd></td> <td><samp>꣮</samp></td> <td>Combining Devanagari Letter PA </td></tr>
+<tr> <td><kbd>r</kbd><kbd>=</kbd></td> <td><samp>꣯</samp></td> <td>Combining Devanagari Letter RA </td></tr>
+<tr> <td><kbd>s</kbd><kbd>=</kbd></td> <td><samp>꣱</samp></td> <td>Combining Devanagari Sign Avagraha </td></tr>
+<tr> <td><kbd>v</kbd><kbd>=</kbd></td> <td><samp>꣰</samp></td> <td>Combining Devanagari Letter VI </td></tr>
+<tr></tr>
+<tr> <td><kbd>z</kbd><kbd>=</kbd></td> <td><samp> ᳸</samp></td> <td>VEDIC TONE RING ABOVE</td></tr>
+<tr> <td><kbd>x</kbd><kbd>=</kbd></td> <td><samp>  ᳹</samp></td> <td>VEDIC TONE DOUBLE RING ABOVE</td></tr>
+<tr></tr>
+<tr> <td><kbd>c</kbd><kbd>=</kbd></td> <td><samp>᳒</samp></td>VEDIC TONE PRENKHA<td> </td></tr>
+<tr> <td><kbd>,</kbd><kbd>=</kbd></td> <td><samp>᳓</samp></td> <td>VEDIC SIGN NIHSHVASA</td></tr>
+<tr> <td><kbd>.</kbd><kbd>=</kbd></td> <td><samp>᳑</samp></td> <td>VEDIC TONE SHARA</td></tr>
+<tr> <td><kbd>/</kbd><kbd>=</kbd></td> <td><samp>᳐</samp></td> <td>VEDIC TONE KARSHANA</td></tr>
+<tr></tr>
+<tr> <td><kbd>;</kbd><kbd>=</kbd></td> <td><samp>꣺</samp></td> <td> CARET = vaidika trutikaa</td></tr>
+<tr> <td><kbd>[</kbd><kbd>=</kbd></td> <td><samp>꣹</samp></td> <td>Devanagari GAP FILLER</td></tr>
+<tr> <td><kbd>]</kbd><kbd>=</kbd></td> <td><samp>꣸</samp></td> <td>PUSHPIKA - placeholder or “filler”</td></tr>
+<tr> <td><kbd>\</kbd><kbd>=</kbd></td> <td><samp>ꣻ</samp></td> <td>Devanagari HEADSTROKE = shirorekhaa</td></tr>
+<tr></tr>
+<tr> <td><kbd>'</kbd><kbd>=</kbd></td> <td><samp>꣼</samp></td> <td>SIDDHAM = siddhirastu</td></tr>
 </tbody>
 </table>
 <p>
 <li>Alternately use the Right Ctrl layout which is mapped with same set of keys (without EQUAL sign). 
-It also has Tone marks and Breathing mark for Samaveda, Signs for Jaiminiya Sama Veda
- and nasalization marks from Devanagari Extended Unicode range.</li>
+It also has Tone marks and Breathing mark for Samaveda and Signs for Jaiminiya Sama Veda.</li>
 <center>
 <h3>RCtrl</h3>
 
