@@ -23,7 +23,7 @@ This keyboard and the Doulos SIL Cipher font (which will be installed
 with this keyboard) work best with applications using the Graphite 
 rendering technology, such as LibreOffice.
 
-Please note: The English and Indonesian documentation has been slightly
+Please note: The English and Indonesian documentation has been changed slightly
 to reflect differences in how Keyman works from the original InKey keyboard.
 The Indonesian translation has not been checked with an Indonesian speaker. 
 
