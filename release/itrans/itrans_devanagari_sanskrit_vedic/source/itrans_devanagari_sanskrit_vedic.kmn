@@ -46,6 +46,11 @@ c Change 8 - "꣢꣯" 9 - "꣢꣫" 0 - "꣣꣬"
 c 20190529
 c Changes based on PR feedback
 c Fix double virama bug
+c implicit a for word-ending NuktaVyanjana in Hindi mode
+c Version 1.2.1
+c 20190530 
+c Add OM for ॐ
+c Add examples with Vedic accents to welcome and help
 c
 store(&VERSION) "10.0" 
 store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS)'
@@ -53,7 +58,7 @@ store(&TARGETS) 'windows macosx linux web'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
 store(&MESSAGE) 'A Phonetic Devanagari (ITRANS) keyboard with support for Vedic Sanskrit (Devanagari Extended and Vedic Extensions Unicode ranges).'
 store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted, Right Alt and Right Ctrl layouts.'
-store(&KEYBOARDVERSION) '1.2.0'
+store(&KEYBOARDVERSION) '1.2.1'
 store(&BITMAP) 'itrans_devanagari_sanskrit_vedic.ico'
 store(&VISUALKEYBOARD) 'itrans_devanagari_sanskrit_vedic.kvks'
 
@@ -218,7 +223,6 @@ c duplicate mappings for ease of typing consonants
 + "X"	>	"ज्ञ्"
 + "Y"	>	"ञ्"
 
-
 c Nukta with preceding dot
 "." + "k"	>	"क़्" c .k
 "क़्" + "h"	>	"ख़्" c .kh
@@ -261,6 +265,7 @@ $keymanonly: if(opt1 = '0') "न्" + "j"	>	"ञ्ज्"
 "घ्" + "Y"	>	"ज्ञ्"	c	GY
 "श्" + "r"	>	"श्र्"	c	shr
 "ण्" + "g"	>	"ङ्"	c	Ng
+"ऑ" + "M" > "ॐ"	c	OM
 
 c Rules for Consonants + Vowel Signs
 
@@ -285,6 +290,8 @@ any(Vyanjana)"े" + "e"	>	 index(Vyanjana,1)"ी"	 c ee
 any(Vyanjana)"े" + "i"	>	index(Vyanjana,1)"ै"	 c ei
 any(Vyanjana)"ो" + "o"	>	 index(Vyanjana,1)"ू"	 c oo
 any(Vyanjana)"ो" + "u"	>	index(Vyanjana,1)"ौ"	 c ou
+
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"़" "्" + any(opt1endings)	>	index(NuktaVyanjana,2)"़" index(opt1endings,5)
 
 any(NuktaVyanjana)"़""्" + "^"	>	index(NuktaVyanjana,1)"़""्"
 any(NuktaVyanjana)"़""्" + "a"	>	index(NuktaVyanjana,1)"़"

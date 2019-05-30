@@ -75,7 +75,7 @@ text-align: right;
 <body>
 <h1>Welcome!!!</h1>
 
-<h3> <font color=Chocolate>Vedic Sanskrit Devanagari Phonetic (ITRANS) </font>Keyboard</h3>
+<h3> <font color=Chocolate>Vedic Sanskrit Devanagari Phonetic (ITRANS) </font>Keyboard Version 1.2.1</h3>
 
 <p>This is a phonetic Devanagari keyboard layout with support for Vedic Sanskrit 
 (Devanagari Extended and Vedic Extensions Unicode ranges). 
@@ -89,10 +89,27 @@ Siddhanta</a></strong> font by Mihail Bayaryn. </p>
 and other languages written in Devanagari script.<p>
 
 <p>You can phonetically type using the QWERTY keyboard with ITRANS trasliteration scheme and 
-get Devanagari output. For example, 
-the keys <kbd>saMskRRta</kbd> will output the word <strong>संस्कृत</strong>, 
-<kbd>mangaLa</kbd> will output the word <strong>मङ्गळ</strong>, 
+get Devanagari output. Please note that some letters have been remapped based on user feedback
+compared to the initial version of the keyboard. Refer to the keyboard images
+and the tables in the help information below for the current mapping.</p>
+
+<p>In the default Sanskrit mode, `Panchama varna` <samp>ङ्</samp> 
+and <samp>ञ्</samp> as part of consonant conjuncts 
+can be typed as <kbd>n</kbd> e.g. <kbd>mangaLa</kbd> 
+will output the word <strong>मङ्गळ</strong>, <kbd>chanchala</kbd> will 
+output the word <strong>चञ्चल</strong>.  
+The keys <kbd>saMskRRta</kbd> will output the word <strong>संस्कृत</strong>, 
 <kbd>laxmI</kbd> will output the word <strong>लक्ष्मी</strong>.</p>
+
+<p>Here are some examples with commonly used Vedic accents. <ul>
+<li>For <samp>ॐ शान्तिः॒ शान्तिः॒ शान्तिः॑ ॥</samp> press the keys <kbd>OM</kbd> 
+<kbd>shaantiH``</kbd> <kbd>shaantiH``</kbd> <kbd>shaantiH''</kbd> <kbd>...</kbd>.</li>
+<li>For <samp>पुरु॑ष ए॒वेदꣳ सर्वम्᳚ ।</samp> press the keys <kbd>puru''Sha</kbd> 
+<kbd>e``vedaMM^</kbd> <kbd>sarvam'''</kbd> <kbd>..</kbd>.</li>
+<li>For <samp>नि꣡ होता꣢꣯ सत्सि ब꣣र्हि꣡षि꣢ ॥ 1 ॥</samp> press the keys <kbd>ni1=</kbd> 
+<kbd>hotaa8=</kbd> <kbd>satsi</kbd> <kbd>ba3=rhi1=Shi3=</kbd> 
+<kbd>...</kbd> <kbd>1</kbd> <kbd>BACKSPACE</kbd> <kbd>...</kbd> .</li>
+</ul></p>
 
 <h3>Hindi mode</h3>
 
@@ -101,16 +118,8 @@ the keys <kbd>saMskRRta</kbd> will output the word <strong>संस्कृत
 the implicit <strong>a</strong> is applied after the word ending consonant. 
 e.g. <kbd>kt</kbd> <kbd>space</kbd> produces <samp>क्त </samp> and  
 <kbd>rAm,</kbd> produces <samp>राम,</samp> instead of <samp>राम्,</samp> 
-output in the default Sanskrit mode. 
+as output in the default Sanskrit mode. 
 Press <kbd>RCTRL</kbd><kbd>RALT</kbd><kbd>0</kbd> keys to reset the Hindi option.</p>
-
-<h3>Special Consonant conjuncts</h3>
-
-<p>In the default Sanskrit mode, `Panchama varna`  <samp>ङ्</samp> 
-and <samp>ञ्</samp> as part of consonant conjuncts 
-can be typed as <kbd>n</kbd> e.g. <kbd>mangal</kbd> <kbd>space</kbd> 
-will output the word <strong>मङ्गल </strong>, <kbd>chanchala</kbd> will 
-output the word <strong>चञ्चल</strong>.</p>
 
 <h3>Keyboard layouts</h3>
 
@@ -490,6 +499,7 @@ for example: <kbd>k</kbd> <kbd>+</kbd> <kbd>S</kbd> will generate <samp>क्�
 </tr>
 </thead>
 <tbody>
+<tr> <td><kbd>OM</kbd></td> <td><samp>ॐ</samp></td> <td>DEVANAGARI OM SIGN</td></tr>
 <tr> <td><kbd>#</kbd></td> <td><samp>ॐ</samp></td> <td>DEVANAGARI OM SIGN</td></tr>
 <tr> <td><kbd>$</kbd></td> <td><samp>₹</samp></td> <td>RUPEE SIGN</td></tr>
 <tr> <td><kbd>%</kbd></td> <td><samp>࿕</samp></td> <td>U+0FD5  RIGHT-FACING SVASTI SIGN</td></tr>
