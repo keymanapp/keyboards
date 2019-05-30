@@ -237,19 +237,19 @@ store(nl_con2)          U+1793 U+179B                                           
 store(sub_con)          U+179A U+179B U+1798 U+1793 U+1784                              c រលមនង
 
 c C[sub_con]V1
-any(all_sin_con1) U+17D2 any(sub_con) + any(sin_vow1_key)             > context(1) context(2) context(3) index(sin_vow1_out,4)            c C1rV1, where C1: bcdhjkqst
-any(all_sin_con1) U+17D2 any(sub_con) + [K_E]                         > context(1) context(2) context(3) U+17B9 dk(deadkey_e)             c Cre
-any(all_sin_con1) U+17D2 any(sub_con) + [K_Z]                         > context(1) context(2) context(3) U+1782 U+17CB                    c Crz
-any(all_sin_con1) U+17D2 any(sub_con) + [K_A]                         > context(1) context(2) context(3) U+17B6 U+1782 U+17CB             c Cra
-any(all_sin_con1) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]           > context(1) context(2) context(3) dk(deadkey_z)                    c Crzz
-any(all_sin_con1) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A]    > context(1) context(2) context(3) context(4)                       c Craa
+any(all_sin_con1) U+17D2 any(sub_con) + any(sin_vow1_key)             > context(1) context(2) context(3) index(sin_vow1_out,4)            c C1[sub_con]V1, where C1: bcdhjkqst
+any(all_sin_con1) U+17D2 any(sub_con) + [K_E]                         > context(1) context(2) context(3) U+17B9 dk(deadkey_e)             c C[sub_con]e
+any(all_sin_con1) U+17D2 any(sub_con) + [K_Z]                         > context(1) context(2) context(3) U+1782 U+17CB                    c C[sub_con]z
+any(all_sin_con1) U+17D2 any(sub_con) + [K_A]                         > context(1) context(2) context(3) U+17B6 U+1782 U+17CB             c C[sub_con]a
+any(all_sin_con1) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]           > context(1) context(2) context(3) dk(deadkey_z)                    c C[sub_con]zz
+any(all_sin_con1) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A]    > context(1) context(2) context(3) context(4)                       c C[sub_con]aa
 
-any(con_muusikatoan) U+17D2 any(sub_con) + any(sin_vow1_key)          > context(1) context(2) context(3) U+17C9 index(sin_vow1_out,4)     c C2rV1
-any(con_muusikatoan) U+17D2 any(sub_con) + [K_E]                      > context(1) context(2) context(3) U+17C9 U+17B9 dk(deadkey_e)      c Cre
-any(con_muusikatoan) U+17D2 any(sub_con) + [K_Z]                      > context(1) context(2) context(3) U+17C9 U+1782 U+17CB             c Crz
-any(con_muusikatoan) U+17D2 any(sub_con) + [K_A]                      > context(1) context(2) context(3) U+17C9 U+17B6 U+1782 U+17CB      c Cra
-any(con_muusikatoan) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]        > context(1) context(2) context(3) U+17C9 dk(deadkey_z)             c Crzz
-any(con_muusikatoan) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A] > context(1) context(2) context(3) U+17C9 context(4)                c Craa
+any(con_muusikatoan) U+17D2 any(sub_con) + any(sin_vow1_key)          > context(1) context(2) context(3) U+17C9 index(sin_vow1_out,4)     c C2[sub_con]V1
+any(con_muusikatoan) U+17D2 any(sub_con) + [K_E]                      > context(1) context(2) context(3) U+17C9 U+17B9 dk(deadkey_e)      c C[sub_con]e
+any(con_muusikatoan) U+17D2 any(sub_con) + [K_Z]                      > context(1) context(2) context(3) U+17C9 U+1782 U+17CB             c C[sub_con]z
+any(con_muusikatoan) U+17D2 any(sub_con) + [K_A]                      > context(1) context(2) context(3) U+17C9 U+17B6 U+1782 U+17CB      c C[sub_con]a
+any(con_muusikatoan) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]        > context(1) context(2) context(3) U+17C9 dk(deadkey_z)             c C[sub_con]zz
+any(con_muusikatoan) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A] > context(1) context(2) context(3) U+17C9 context(4)                c C[sub_con]aa
 
 c [n/l]rV, special case
 any(nl_con2) U+17D2 any(sub_con) + any(sin_vow1_key)                  > index(nl_con1,1) context(2) context(3) index(sin_vow1_out,4)      c [n/l]rV1
@@ -260,22 +260,22 @@ any(nl_con2) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]                > index(nl
 any(nl_con2) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A]         > index(nl_con1,1) context(2) context(3) context(4)                 c [n/l]raa
 
 c C[sub_con]V2
-any(all_sin_con2) U+17D2 any(sub_con) + any(sin_vow2_key)             > context(1) context(2) context(3) index(sin_vow2_out,4)            c C2rV2
-any(all_sin_con2) U+17D2 any(sub_con) + [K_V]                         > context(1) context(2) context(3) U+17B9 dk(deadkey_v)             c C2rv
-any(all_sin_con2) U+17D2 any(sub_con) U+17B7 + [K_X]                  > context(1) context(2) context(3) U+17C2                           c C2rxx
+any(all_sin_con2) U+17D2 any(sub_con) + any(sin_vow2_key)             > context(1) context(2) context(3) index(sin_vow2_out,4)            c C2[sub_con]V2
+any(all_sin_con2) U+17D2 any(sub_con) + [K_V]                         > context(1) context(2) context(3) U+17B9 dk(deadkey_v)             c C2[sub_con]v
+any(all_sin_con2) U+17D2 any(sub_con) U+17B7 + [K_X]                  > context(1) context(2) context(3) U+17C2                           c C2[sub_con]xx
 
-any(con_triisap_bo) U+17D2 any(sub_con) + any(sin_vow2_key)              > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4)     c C1rV2
-any(con_triisap_bo) U+17D2 any(sub_con) + [K_V]                          > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v)      c C1rv
-any(con_triisap_bo) U+17D2 any(sub_con) U+17B7 + [K_X]                   > context(1) context(2) context(3) U+17CA U+17C2                    c C1rxx
+any(con_triisap_bo) U+17D2 any(sub_con) + any(sin_vow2_key)              > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4)     c C1[sub_con]V2
+any(con_triisap_bo) U+17D2 any(sub_con) + [K_V]                          > context(1) context(2) context(3) U+17CA U+17B9 dk(deadkey_v)      c C1[sub_con]v
+any(con_triisap_bo) U+17D2 any(sub_con) U+17B7 + [K_X]                   > context(1) context(2) context(3) U+17CA U+17C2                    c C1[sub_con]xx
 
-any(counterpart_con1) U+17D2 any(sub_con) + any(sin_vow2_key)             > index(counterpart_con2,1) context(2) context(3) index(sin_vow2_out,4) c C1rV2
-any(counterpart_con1) U+17D2 any(sub_con) + [K_V]                         > index(counterpart_con2,1) context(2) context(3) U+17B9 dk(deadkey_v)  c C1rv
-any(counterpart_con1) U+17D2 any(sub_con) U+17B7 + [K_X]                  > index(counterpart_con2,1) context(2) context(3) U+17C2                c C1rxx
+any(counterpart_con1) U+17D2 any(sub_con) + any(sin_vow2_key)             > index(counterpart_con2,1) context(2) context(3) index(sin_vow2_out,4) c C1[sub_con]V2
+any(counterpart_con1) U+17D2 any(sub_con) + [K_V]                         > index(counterpart_con2,1) context(2) context(3) U+17B9 dk(deadkey_v)  c C1[sub_con]v
+any(counterpart_con1) U+17D2 any(sub_con) U+17B7 + [K_X]                  > index(counterpart_con2,1) context(2) context(3) U+17C2                c C1[sub_con]xx
 
-any(counterpart_con2) U+17D2 any(sub_con) U+17B9 dk(deadkey_v) + [K_E]    > index(counterpart_con1,1) context(2) context(3) U+17BF                c C2rve, non series
-any(counterpart_con2) U+17D2 any(sub_con) U+17B9 dk(deadkey_v) + [K_Y]    > index(counterpart_con1,1) context(2) context(3) U+17B8                c C2rvy, series 1 
-any(counterpart_con2) U+17D2 any(sub_con) U+17BB + [K_E]                  > index(counterpart_con1,1) context(2) context(3) U+17BD                c C2rue, series 2
-any(counterpart_con2) U+17D2 any(sub_con) U+17B7 + [K_E]                  > index(counterpart_con1,1) context(2) context(3) U+17C0                c C2rie, series 1
+any(counterpart_con2) U+17D2 any(sub_con) U+17B9 dk(deadkey_v) + [K_E]    > index(counterpart_con1,1) context(2) context(3) U+17BF                c C2[sub_con]ve, non series
+any(counterpart_con2) U+17D2 any(sub_con) U+17B9 dk(deadkey_v) + [K_Y]    > index(counterpart_con1,1) context(2) context(3) U+17B8                c C2[sub_con]vy, series 1 
+any(counterpart_con2) U+17D2 any(sub_con) U+17BB + [K_E]                  > index(counterpart_con1,1) context(2) context(3) U+17BD                c C2[sub_con]ue, series 2
+any(counterpart_con2) U+17D2 any(sub_con) U+17B7 + [K_E]                  > index(counterpart_con1,1) context(2) context(3) U+17C0                c C2[sub_con]ie, series 1
 
 c p[r/l/m/n/ng], special case
 U+1796 U+17D2 any(sub_con) + any(sin_vow1_key)                    > U+1794 context(2) context(3) U+17C9 index(sin_vow1_out,4)
@@ -749,14 +749,14 @@ U+17C9 U+17B6 U+178F U+17CB + any(sin_vow2_key)    > U+1791 index(sin_vow2_out,5
 U+17C9 U+17B6 U+178F U+17CB + [K_V]                > U+1791 U+17B9 dk(deadkey_v)
 
 c [n/l/p]atrV-
-any(nl_con1) U+17B6 U+178F U+17CB + [K_R]   > index(nl_con2,1) context(3) U+17D2 U+179A
+c any(nl_con1) U+17B6 U+178F U+17CB + [K_R]   > index(nl_con2,1) context(3) U+17D2 U+179A
 
-U+1794 U+17C9 U+17B6 U+178F U+17CB + [K_R]  > U+1796 context(4) U+17D2 U+179A 
+c U+1794 U+17C9 U+17B6 U+178F U+17CB + [K_R]  > U+1796 context(4) U+17D2 U+179A 
 
 c -atrV-
-U+17B6 U+178F U+17CB + [K_R]            > context(2) U+17D2 U+179A  c katra
+c U+17B6 U+178F U+17CB + [K_R]            > context(2) U+17D2 U+179A  c katra
 
-U+17C9 U+17B6 U+178F U+17CB + [K_R]     > context(3) U+17D2 U+179A  c gatra 
+c U+17C9 U+17B6 U+178F U+17CB + [K_R]     > context(3) U+17D2 U+179A  c gatra 
 
 
 c [p/n/l]asV1
@@ -1196,13 +1196,28 @@ U+17B6 any(any_con) U+17CB + any(sin_con2_key) > context(2) context(3) index(sin
 
 
 c +++++++++++++++++ NORMALIZATION +++++++++++++++++
+
+
 match > use(normalise)
 
 group(normalise)
 
 
+c when រ is typed after ះ, output ហ and the រ​ as a subscript
+U+17C7 U+179A   > U+17A0 U+17D2 context(2)
+
+
+c when រ is typed after a consonant with a Bantoc, output the final consonant with រ as a subscript
+any(any_con) U+17CB U+179A          > context(1) U+17D2 context(3)
+
+
+c when រ is typed after ាំង, output the ង with រ as a subscript
+U+17B6 U+17C6 U+1784 U+17D2 U+179A  > context(3) context(4) context(5)
+
+
 c when a consonant comes after -ang, output ង់ and the consonant
 U+17C9 U+17B6 U+17C6 U+1784 any(any_con)    > U+1784 U+17CB context(5)
+
 
 c when a consonant comes after -an, output ន់ and the consonant
 U+17C9 U+1793 U+17CB any(any_con)    > context(2) context(3) context(4)
@@ -1216,8 +1231,14 @@ U+1794 U+17C9 U+17B6 U+17C6 U+1784 any(any_con) > U+1796 context(5) U+17CB conte
 U+17B6 U+17C6 U+1784 U+179A                     > context(3) U+17D2 context(4)
 U+17B6 U+17C6 U+1784 any(any_con)               > context(3) U+17CB context(4)
 
+
 c keep អ្យ្រ
 U+17A2 U+17D2 U+1799 U+17D2 U+179A  > context
 
+
 c presyllable boundary
 any(any_con) U+17D2 any(any_con) U+17D2 any(any_con)    > context(1) context(2) context(3) context(5)   c prevent brn from outputting ប្ន្រ 
+
+
+c remove the ៝ on ក before ឡ
+U+1780 U+17DD U+17A1  > context(1) context(3)
