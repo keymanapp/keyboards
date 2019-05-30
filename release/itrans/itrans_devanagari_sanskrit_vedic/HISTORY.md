@@ -6,6 +6,7 @@ Vedic Sanskrit Devanagari Phonetic (ITRANS) Version History
 * 20190530 
 * Add OM for ॐ
 * Add examples with Vedic accents to welcome and help
+* Add missing Samaveda marks for  key + EQUAL (similar to RCTRL) 
 
 1.2.0 (2019-05-26)
 ----------------
