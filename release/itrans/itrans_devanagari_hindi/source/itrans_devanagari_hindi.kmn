@@ -9,10 +9,17 @@ c Version 1.2.0
 c 20190527 
 c Sync code with itrans_devanagari_sanskrit_vedic
 c Add many other languages and Hindi dialects in list of keyboards
-c 20190328
+c Add additional letters used in other languages
+c 20190528
 c Add \ - ॲ
 c Add ` - U+02BC apostrophe for Bodo, Dogri, and Maithili
 c Allow ca + nukta (used in Konkani)
+c 20190529
+c Changes based on PR and user feedback
+c Fix double virama bug
+c Add implicit a for word-ending NuktaVyanjana 
+c 20190530
+c Add OM for ॐ
 c
 store(&VERSION) "10.0" 
 store(&NAME) 'Hindi Devanagari Phonetic (ITRANS)'
@@ -27,16 +34,15 @@ store(&VISUALKEYBOARD) 'itrans_devanagari_hindi.kvks'
 begin Unicode > use(main)
 group(main) using keys
 
-c Set Hindi mode by default
+c  Set Hindi mode by default (implict word ending `a`)
 store(opt1) 'hindi'
 + [RCTRL RALT K_0]	>	set(opt1='0') 
 + [RCTRL RALT K_1]	>	reset(opt1)
 
-c common with devanagari_hindi
+c 
 
 c	Special Symbols
 
-"ऑ" + "M" > "ॐ"
 + "#"	>	"ॐ"
 + "$"	>	"₹"
 + "%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
@@ -234,6 +240,7 @@ $keymanonly: if(opt1 = '0') "न्" + "j"	>	"ञ्ज्"
 "घ्" + "Y"	>	"ज्ञ्"	c	GY
 "श्" + "r"	>	"श्र्"	c	shr
 "ण्" + "g"	>	"ङ्"	c	Ng
+"ऑ" + "M" > "ॐ"
 
 c Rules for Consonants + Vowel Signs
 
@@ -249,6 +256,7 @@ store(opt1endings) outs(Punctuation) ' '
 $keymanonly: if(opt1 = 'hindi') any(Vyanjana)"्" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
 $keymanonly: if(opt1 = 'hindi') any(Vyanjana)"्" + "`"	>	index(Vyanjana,2) "ʼ"
 
+any(Vyanjana)"्" + "^"	>	index(Vyanjana,1)"्"
 any(Vyanjana)"्" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
 any(Vyanjana)"्" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
@@ -259,6 +267,9 @@ any(Vyanjana)"े" + "i"	>	index(Vyanjana,1)"ै"	 c ei
 any(Vyanjana)"ो" + "o"	>	 index(Vyanjana,1)"ू"	 c oo
 any(Vyanjana)"ो" + "u"	>	index(Vyanjana,1)"ौ"	 c ou
 
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"़" "्" + any(opt1endings)	>	index(NuktaVyanjana,2)"़" index(opt1endings,5)
+
+any(NuktaVyanjana)"़""्" + "^"	>	index(NuktaVyanjana,1)"़""्"
 any(NuktaVyanjana)"़""्" + "a"	>	index(NuktaVyanjana,1)"़"
 any(NuktaVyanjana)"़" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3) 
 any(NuktaVyanjana)"़""्" + any(ViramaMaatraa) 	>	index(NuktaVyanjana,1)"़" index(ViramaMaatraaU,4) 
@@ -269,6 +280,6 @@ any(NuktaVyanjana)"़""े" + "i"	>	index(NuktaVyanjana,1)"़""ै"	 c ei
 any(NuktaVyanjana)"़""ो" + "o"	>	 index(NuktaVyanjana,1)"़""ू"	 c oo
 any(NuktaVyanjana)"़""ो" + "u"	>	index(NuktaVyanjana,1)"़""ौ"	 c ou
 
-c end of common with Hindi 
+c
 
 c EOF
