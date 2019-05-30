@@ -3,10 +3,17 @@
   $pagetitle = 'Xinaliq Keyboard Help';
   require_once('header.php');
 ?>
-
-
+<head>
+  <meta charset="utf-8">
+  <title>Start using the Xinaliq Keyboard</title>
+  <style type="text/css">
+    p { font: 10pt Tahoma; }
+    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
+    h2 { font: bold 12pt Tahoma; color: #4444cc; }
+  </style>
+</head>
+<body>
 <h1>Start using the Xinaliq Keyboard</h1>
-
 <p>Azərbaycan Respublikası Təhsil Nazirliyi tərəfindən təsdiqlənmiş Latın qrafikləri istifadə olan Xınalıq (kjj) klaviaturası.</p>
 <p>Azərbaycani Respublike Təhsil Nazirliyi tərəfillli təst̂iğ biq̇i Latın qrafikilli Kətşi miżi klaviatura.</p>
 <p>Keyboard for Xinaliq (kjj) using the Latin Orthography approved by the Ministry of Education of the Republic of Azerbaijan.</p>
@@ -73,5 +80,5 @@
 
     <div id='osk' data-states='default shift'></div>
 </div>
-
 <p>(c) 2019 Kenneth Keyes</p>
+</body>

@@ -6,8 +6,8 @@ store(&BITMAP) 'xinaliq.ico'
 store(&LANGUAGE) 'x042C'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'xinaliq.keyman-touch-layout'
-store(&NAME) 'Kətiş (Xınalıq)'
 store(&VISUALKEYBOARD) 'xinaliq.kvks'
+store(&NAME) 'xinaliq'
 begin Unicode > use(main)
 
 group(main) using keys 
@@ -26,51 +26,76 @@ platform('touch') any(word) any(final) + U+0020 > index(word,2) index(final,3) "
 platform('touch') any(word) U+0020 + [K_SPACE] > index(word,2) U+002E " " layer('shift')
 
 c keyboard assignments peculiar to the Azeri keyboard
-
-+ 'H' > 'H'
-+ 'h' > 'h'
-+ 'C' > 'C'
-+ 'c' > 'c'
-+ "W" > "Ü"
-+ "w" > "ü"
-+ 'T' > 'T'
-+ 't' > 't'
-+ 'P' > 'P'
-+ 'p' > 'p'
-+ 'K' > 'K'
-+ 'k' > 'k'
+c top row QWERTY layout
 + 'Q' > 'Q'
 + 'q' > 'q'
-+ 'G' > 'G'
-+ 'g' > 'g'
++ "W" > "Ü"
++ "w" > "ü"
++ 'E' > 'E'
++ 'e' > 'e'
++ 'R' > 'R'
++ 'r' > 'r'
++ 'T' > 'T'
++ 't' > 't'
++ 'Y' > 'Y'
++ 'y' > 'y'
++ 'U' > 'U'
++ 'u' > 'u' 
++ 'I' > 'I'
++ 'i' > 'i'
++ 'O' > 'O'
++ 'o' > 'o'
++ 'P' > 'P'
++ 'p' > 'p'
++ "{"  > "Ö"
++ "["  > "ö"
 + "]" > "ğ"
 + "}" > "Ğ"
++ '\' > '\'
+c middle row QWERTY layout
++ 'A' > 'A' 
++ 'a' > 'a'
 + 'S' > 'S'
 + 's' > 's'
++ 'D' > 'D'
++ 'd' > 'd'
++ 'F' > 'F'
++ 'f' > 'f'
++ 'G' > 'G'
++ 'g' > 'g'
++ 'H' > 'H'
++ 'h' > 'h'
++ 'J' > 'J'
++ 'j' > 'j'
++ 'K' > 'K'
++ 'k' > 'k'
++ 'L' > 'L'
++ 'l' > 'l'
++ ";" > "ı"
++ ":" > "I"
++ "'" > "ə"
++ '"' > 'Ə'
 + 'Z' > 'Z'
 + 'z' > 'z'
++ 'x' > 'x'
++ 'X' > 'X'
++ 'C' > 'C'
++ 'c' > 'c'
++ 'V' > 'V'
++ 'v' > 'v'
++ 'B' > 'B'
++ 'b' > 'b'
++ 'N' > 'N'
++ 'n' > 'n'
++ 'M' > 'M'
++ 'm' > 'm'
 + "," > "ç"
 + "<" > "Ç"
 + "." > "ş"
 + ">" > "Ş"
-+ 'O' > 'O'
-+ 'o' > 'o'
-+ "{" > "Ö"
-+ "[" > "ö"
-+ 'I' > 'I'
-+ 'i' > 'i'
-+ ";" > "ı"
-+ ":" > "I"
-+ 'E' > 'E'
-+ 'e' > 'e'
-+ "'" > "ə"
-+ '"' > 'Ə'
-+ 'x' > 'x'
-+ 'X' > 'X'
 + "/" > "."
 + "?" > ","
-+ 'U' > 'U'
-+ 'u' > 'u' 
+
 
 c continuation of key assignments peculiar to the Azeri keyboard
 + "1" > "1"
@@ -83,6 +108,11 @@ c continuation of key assignments peculiar to the Azeri keyboard
 + "8" > "8"
 + "9" > "9"
 + "0" > "0"
++ '_' > '_'
++ '-' > '-'
++ '+' > '+'
++ '=' > '='
++ '~' > '~'
 + "!" > "!"
 + "@" > "№"
 + "#" > U+0022
@@ -91,10 +121,13 @@ c continuation of key assignments peculiar to the Azeri keyboard
 + "^" > ":"
 + "&" > "?"
 + "*" > "*"
++ '(' > '('
++ ')' > ')'
++ '|' > '|'
 
 c diacritics
-+ "`" > U+0307 c dot above
-U+0307 + "`" > U+0302 c circumflex
++ "`" > U+0307
+U+0307 + "`" > U+0302
  
 c ***lowercase consonants****
 
