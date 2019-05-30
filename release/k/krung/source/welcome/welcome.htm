@@ -10,31 +10,1463 @@
   </style>
 </head>
 <body>
-
-<h1>Start Using Krung</h1>
-
+<h1>Krung Keyboard</h1>
 <p>
     This is a romanized Keyman keyboard for Krung language spoken as an ethnic minority language in Cambodia.
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Numerals and Signs</h2>
 
-<img src="keyboard_layout.png" alt="Krung Keyboard Layout">
 
-<h1>Keyboard Usage</h1>
-<h3>Notes</h3>
-<ul style="list-style-type:disc,">
-<li>U+200D on key F is used to prevent consonant from becoming a consonant cluster when necessary, especially in disyllabic words. For example, when type "mraa", the output is "ម្រ៉ា", but if type "mfraa", the output would be មរ៉ា.
-</li>
-<li>You do not need to type character "a" in the presyllable of disyllabic words. For example, to get បនិះ, type "bnih", not "banih". :)
-</li>
-<li>Key "q", when type at the word final position, nothing would be output, but there are two choices to pick from, and you can do it manually: (1) គ in the output or (2) គ not in the output (you may use Backspace for this :) ).
-</li>
-<li>Example #154 is conflicted with the Clever Rabit output. 
+<h2>Consonant</h2>
+<p>
+Not all consonants in Krung language are mapped to a key. Certain consonants are mapped, while
+others are automatically converted to their corresponding counterparts. Krung
+language uses Khmer characters for their writing. Unicode codepoints and names
+are given for your information.
+</p>
+<table style="width:80%" border="0">
+  <tr>
+   <td rowspan="2" ><strong>Key</strong>
+   </td>
+   <td colspan="2" ><strong>Mapped Output</strong>
+   </td>
+   <td colspan="2" ><strong>Auto-converted Counterpart</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Character</strong>
+   </td>
+   <td><strong>Codepoint : Name</strong>
+   </td>
+   <td><strong>Character</strong>
+   </td>
+   <td><strong>Codepoint : Name</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>q</strong>
+   </td>
+   <td>អ
+   </td>
+   <td>U+17A2 : KHMER LETTER QA
+   </td>
+   <td>អ៊
+   </td>
+   <td>U+17A2 U+17CA : KHMER SIGN ​TRIISAP
+   </td>
+  </tr>
+  <tr>
+   <td><strong>t</strong>
+   </td>
+   <td>ត
+   </td>
+   <td>U+178F : KHMER LETTER TA
+   </td>
+   <td>ទ
+   </td>
+   <td>U+1791 : KHMER LETTER TO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>s</strong>
+   </td>
+   <td>ស
+   </td>
+   <td>U+179F : KHMER LETTER SA
+   </td>
+   <td>ស៊
+   </td>
+   <td>U+179F U+17CA : KHMER SIGN TRIISAP
+   </td>
+  </tr>
+  <tr>
+   <td><strong>d</strong>
+   </td>
+   <td>ដ
+   </td>
+   <td>U+178A : KHMER LETTER DA
+   </td>
+   <td>ឌ
+   </td>
+   <td>U+178C : KHMER LETTER DO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>h</strong>
+   </td>
+   <td>ហ
+   </td>
+   <td>U+17A0 : KHMER LETTER HA
+   </td>
+   <td>ហ៊
+   </td>
+   <td>U+17A0 U+17CA : KHMER SIGN TRIISAP
+   </td>
+  </tr>
+  <tr>
+   <td><strong>j</strong>
+   </td>
+   <td>ឆ
+   </td>
+   <td>U+1786 : KHMER LETTER CHA
+   </td>
+   <td>ឈ
+   </td>
+   <td>U+1788 : KHMER LETTER CHO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>k</strong>
+   </td>
+   <td>ក
+   </td>
+   <td>U+1780 : KHMER LETTER KA
+   </td>
+   <td>គ
+   </td>
+   <td>U+1782 : KHMER LETTER KO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>c</strong>
+   </td>
+   <td>ច
+   </td>
+   <td>U+1785 : KHMER LETTER CA
+   </td>
+   <td>ជ
+   </td>
+   <td>U+1787 : KHMER LETTER CO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>b</strong>
+   </td>
+   <td>ប
+   </td>
+   <td>U+1794 : KHMER LETTER BA
+   </td>
+   <td>ប៊
+   </td>
+   <td>U+1794 U+17CA : KHMER SIGN TRIISAP
+   </td>
+  </tr>
+  <tr>
+   <td><strong>p</strong>
+   </td>
+   <td>ព
+   </td>
+   <td>U+1796 : KHMER LETTER PO
+   </td>
+   <td>ប៉
+   </td>
+   <td>U+1794 U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>n</strong>
+   </td>
+   <td>ន
+   </td>
+   <td>U+1793 : KHMER LETTER NO
+   </td>
+   <td>ណ
+   </td>
+   <td>U+178E : KHMER LETTER NNO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>l</strong>
+   </td>
+   <td>ល
+   </td>
+   <td>U+179B : KHMER LETTER LO
+   </td>
+   <td>ឡ
+   </td>
+   <td>U+17A1 : KHMER LETTER LA
+   </td>
+  </tr>
+  <tr>
+   <td><strong>m</strong>
+   </td>
+   <td>ម
+   </td>
+   <td>U+1798 : KHMER LETTER MO
+   </td>
+   <td>ម៉
+   </td>
+   <td>U+1798 U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>g</strong>
+   </td>
+   <td>ឝ
+   </td>
+   <td>U+179D : KHMER LETTER SHA
+   </td>
+   <td>ឝ៉
+   </td>
+   <td>U+179D U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>y</strong>
+   </td>
+   <td>យ
+   </td>
+   <td>U+1799 : KHMER LETTER YO
+   </td>
+   <td>យ៉
+   </td>
+   <td>U+1799 U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>r</strong>
+   </td>
+   <td>រ
+   </td>
+   <td>U+179A : KHMER LETTER RO
+   </td>
+   <td>រ៉
+   </td>
+   <td>U+179A U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>w</strong>
+   </td>
+   <td>វ
+   </td>
+   <td>U+179C : KHMER LETTER VO
+   </td>
+   <td>វ៉
+   </td>
+   <td>U+179C U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ph</strong>
+   </td>
+   <td>ផ
+   </td>
+   <td>U+1795 : KHMER LETTER PHA
+   </td>
+   <td>ភ
+   </td>
+   <td>U+1797 : KHMER LETTER PHO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>th</strong>
+   </td>
+   <td>ថ
+   </td>
+   <td>U+1790 : KHMER LETTER THA
+   </td>
+   <td>ធ
+   </td>
+   <td>U+1792 : KHMER LETTER THO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>kh</strong>
+   </td>
+   <td>ខ
+   </td>
+   <td>U+1781 : KHMER LETTER KHA
+   </td>
+   <td>ឃ
+   </td>
+   <td>U+1783 : KHMER LETTER KHO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>nh</strong>
+   </td>
+   <td>ញ
+   </td>
+   <td>U+1789 : KHMER LETTER NYO
+   </td>
+   <td>ញ៉
+   </td>
+   <td>U+1789 U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ng</strong>
+   </td>
+   <td>ង
+   </td>
+   <td>U+1784 : KHMER LETTER NGO
+   </td>
+   <td>ង៉
+   </td>
+   <td>U+1784 U+17C9 : KHMER SIGN MUUSIKATOAN
+   </td>
+  </tr>
+  <tr>
+   <td><strong>qb</strong>
+   </td>
+   <td>ឞ
+   </td>
+   <td>U+179E : KHMER LETTER SSO
+   </td>
+   <td>ឞ៊
+   </td>
+   <td>U+179E U+17CA : KHMER SIGN TRIISAP
+   </td>
+  </tr>
+  <tr>
+   <td><strong>qd</strong>
+   </td>
+   <td>ឋ
+   </td>
+   <td>U+178B : KHMER LETTER TTHA
+   </td>
+   <td>ឍ
+   </td>
+   <td>U+178D : KHMER LETTER TTHO
+   </td>
+  </tr>
+</table>
+<h2>Vowel</h2>
+<table style="width:80%" border="0">
+  <tr>
+   <td rowspan="2" ><strong>Key</strong>
+   </td>
+   <td colspan="2" ><strong>Mapped Output</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Character</strong>
+   </td>
+   <td><strong>Codepoint : Name</strong>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="3" ><strong>First Series Vowels</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>e</strong>
+   </td>
+   <td><strong>ឹ</strong>
+   </td>
+   <td>U+17B9 : KHMER VOWEL SIGN Y
+   </td>
+  </tr>
+  <tr>
+   <td><strong>o</strong>
+   </td>
+   <td><strong>ុ</strong>
+   </td>
+   <td>U+17BB : KHMER VOWEL SIGN U
+   </td>
+  </tr>
+  <tr>
+   <td><strong>x</strong>
+   </td>
+   <td><strong>ិ</strong>
+   </td>
+   <td>U+17B7 : KHMER VOWEL SIGN I
+   </td>
+  </tr>
+  <tr>
+   <td><strong>a</strong>
+   </td>
+   <td><strong>ាគ់</strong>
+   </td>
+   <td>U+17B6 : KHMER VOWEL SIGN AA
+U+1782 : KHMER LETTER KO
+U+17CB : KHMER SIGN BANTOC
+   </td>
+  </tr>
+  <tr>
+   <td><strong>z</strong>
+   </td>
+   <td><strong>គ់</strong>
+   </td>
+   <td>U+1782 : KHMER LETTER KO
+U+17CB : KHMER SIGN BANTOC
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ang</strong>
+   </td>
+   <td><strong>ាំង</strong>
+   </td>
+   <td>U+17B6 : KHMER VOWEL SIGN AA
+U+17C6 : KHMER SIGN NIKAHIT {srak am; anusvara}
+U+1784 : KHMER LETTER NGO
+   </td>
+  </tr>
+  <tr>
+   <td><strong>zng</strong>
+   </td>
+   <td><strong>ង់</strong>
+   </td>
+   <td>U+1784 : KHMER LETTER NGO
+U+17CB : KHMER SIGN BANTOC
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ee</strong>
+   </td>
+   <td><strong>ើ</strong>
+   </td>
+   <td>U+17BE : KHMER VOWEL SIGN OE
+   </td>
+  </tr>
+  <tr>
+   <td><strong>oo</strong>
+   </td>
+   <td><strong>ូ</strong>
+   </td>
+   <td>U+17BC : KHMER VOWEL SIGN UU
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ou</strong>
+   </td>
+   <td><strong>ូ</strong>
+   </td>
+   <td>U+17BC : KHMER VOWEL SIGN UU
+   </td>
+  </tr>
+  <tr>
+   <td><strong>zz</strong>
+   </td>
+   <td><strong>(ind v)</strong>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>aa</strong>
+   </td>
+   <td><strong>ា</strong>
+   </td>
+   <td>U+17B6 : KHMER VOWEL SIGN AA
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ie</strong>
+   </td>
+   <td><strong>ៀ</strong>
+   </td>
+   <td>U+17C0 : KHMER VOWEL SIGN IE
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ay</strong>
+   </td>
+   <td><strong>ៃ</strong>
+   </td>
+   <td>U+17C3 : KHMER VOWEL SIGN AI
+   </td>
+  </tr>
+  <tr>
+   <td><strong>vy</strong>
+   </td>
+   <td><strong>ី</strong>
+   </td>
+   <td>U+17B8 : KHMER VOWEL SIGN II
+   </td>
+  </tr>
+  <tr>
+   <td><strong>zw</strong>
+   </td>
+   <td><strong>ូវ</strong>
+   </td>
+   <td>U+17BC : KHMER VOWEL SIGN UU
+U+179C : KHMER LETTER VO
+   </td>
+  </tr>
+  <tr>
+   <td colspan="3" ><strong>Second Series Vowels</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>v</strong>
+   </td>
+   <td><strong>ឹ</strong>
+   </td>
+   <td>U+17B9 : KHMER VOWEL SIGN Y
+   </td>
+  </tr>
+  <tr>
+   <td><strong>u</strong>
+   </td>
+   <td><strong>ុ</strong>
+   </td>
+   <td>U+17BB : KHMER VOWEL SIGN U
+   </td>
+  </tr>
+  <tr>
+   <td><strong>i</strong>
+   </td>
+   <td><strong>ិ</strong>
+   </td>
+   <td>U+17B7 : KHMER VOWEL SIGN I
+   </td>
+  </tr>
+  <tr>
+   <td><strong>xx</strong>
+   </td>
+   <td><strong>ែ</strong>
+   </td>
+   <td>U+17C2 : KHMER VOWEL SIGN AE
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ii</strong>
+   </td>
+   <td><strong>ី</strong>
+   </td>
+   <td>U+17B8 : KHMER VOWEL SIGN II
+   </td>
+  </tr>
+  <tr>
+   <td><strong>vv</strong>
+   </td>
+   <td><strong>ឹ</strong>
+   </td>
+   <td>U+17B9 : KHMER VOWEL SIGN Y
+   </td>
+  </tr>
+  <tr>
+   <td><strong>uu</strong>
+   </td>
+   <td><strong>ូ</strong>
+   </td>
+   <td>U+17BC : KHMER VOWEL SIGN UU
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ue</strong>
+   </td>
+   <td><strong>ួ</strong>
+   </td>
+   <td>U+17BD : KHMER VOWEL SIGN UA
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ix</strong>
+   </td>
+   <td><strong>?</strong>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="3" ><strong>Non Series</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ve</strong>
+   </td>
+   <td><strong>ឿ</strong>
+   </td>
+   <td>U+17BF : KHMER VOWEL SIGN YA
+   </td>
+  </tr>
+</table>
+<h2>Consonant and Vowel Combination</h2>
+<p>
+As you type, the keyboard will automatically convert the consonant to match in
+response to the series of the vowel it is attached to. You may type the
+consonant and then the vowel you desire. Here are some exmaples:
+</p>
+<table style="width:80%" border="0">
+  <tr>
+   <td>
+   </td>
+   <td><strong>e</strong>
+   </td>
+   <td><strong>v</strong>
+   </td>
+   <td><strong>o</strong>
+   </td>
+   <td><strong>u</strong>
+   </td>
+   <td><strong>x</strong>
+   </td>
+   <td><strong>i</strong>
+   </td>
+   <td><strong>vy</strong>
+   </td>
+   <td><strong>ii</strong>
+   </td>
+   <td><strong>am</strong>
+   </td>
+   <td><strong>ang</strong>
+   </td>
+   <td><strong>zng</strong>
+   </td>
+   <td><strong>ee</strong>
+   </td>
+   <td><strong>vv</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>k</strong>
+   </td>
+   <td>កឹ
+   </td>
+   <td>គឹ
+   </td>
+   <td>កុ
+   </td>
+   <td>គុ
+   </td>
+   <td>កិ
+   </td>
+   <td>គិ
+   </td>
+   <td>កី
+   </td>
+   <td>គី
+   </td>
+   <td>កាំ
+   </td>
+   <td>កាំង
+   </td>
+   <td>កង់
+   </td>
+   <td>កើ
+   </td>
+   <td>គឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>kh</strong>
+   </td>
+   <td>ខឹ
+   </td>
+   <td>ឃឹ
+   </td>
+   <td>ខុ
+   </td>
+   <td>ឃុ
+   </td>
+   <td>ខិ
+   </td>
+   <td>ឃិ
+   </td>
+   <td>ខី
+   </td>
+   <td>ឃី
+   </td>
+   <td>ខាំ
+   </td>
+   <td>ខាំង
+   </td>
+   <td>ខង់
+   </td>
+   <td>ខើ
+   </td>
+   <td>ឃឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ng</strong>
+   </td>
+   <td>ង៉ឹ
+   </td>
+   <td>ងឹ
+   </td>
+   <td>ង៉ុ
+   </td>
+   <td>ងុ
+   </td>
+   <td>ង៉ិ
+   </td>
+   <td>ងិ
+   </td>
+   <td>ង៉ី
+   </td>
+   <td>ងី
+   </td>
+   <td>ង៉ាំ
+   </td>
+   <td>ង៉ាំង
+   </td>
+   <td>ង៉ង់
+   </td>
+   <td>ង៉ើ
+   </td>
+   <td>ងឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>c</strong>
+   </td>
+   <td>ចឹ
+   </td>
+   <td>ជឹ
+   </td>
+   <td>ចុ
+   </td>
+   <td>ជុ
+   </td>
+   <td>ចិ
+   </td>
+   <td>ជិ
+   </td>
+   <td>ចី
+   </td>
+   <td>ជី
+   </td>
+   <td>ចាំ
+   </td>
+   <td>ចាំង
+   </td>
+   <td>ចង់
+   </td>
+   <td>ចើ
+   </td>
+   <td>ជឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>j</strong>
+   </td>
+   <td>ឆឹ
+   </td>
+   <td>ឈឹ
+   </td>
+   <td>ឆុ
+   </td>
+   <td>ឈុ
+   </td>
+   <td>ឆិ
+   </td>
+   <td>ឈិ
+   </td>
+   <td>ឆី
+   </td>
+   <td>ឈី
+   </td>
+   <td>ឆាំ
+   </td>
+   <td>ឆាំង
+   </td>
+   <td>ឆង់
+   </td>
+   <td>ឆើ
+   </td>
+   <td>ឈឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>nh</strong>
+   </td>
+   <td>ញ៉ឹ
+   </td>
+   <td>ញឹ
+   </td>
+   <td>ញ៉ុ
+   </td>
+   <td>ញុ
+   </td>
+   <td>ញ៉ិ
+   </td>
+   <td>ញិ
+   </td>
+   <td>ញ៉ី
+   </td>
+   <td>ញី
+   </td>
+   <td>ញ៉ាំ
+   </td>
+   <td>ញ៉ាំង
+   </td>
+   <td>ញ៉ង់
+   </td>
+   <td>ញ៉ើ
+   </td>
+   <td>ញឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>d</strong>
+   </td>
+   <td>ដឹ
+   </td>
+   <td>ឌឹ
+   </td>
+   <td>ដុ
+   </td>
+   <td>ឌុ
+   </td>
+   <td>ដិ
+   </td>
+   <td>ឌិ
+   </td>
+   <td>ដី
+   </td>
+   <td>ឌី
+   </td>
+   <td>ដាំ
+   </td>
+   <td>ដាំង
+   </td>
+   <td>ដង់
+   </td>
+   <td>ដើ
+   </td>
+   <td>ឌឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>qb</strong>
+   </td>
+   <td>ឞឹ
+   </td>
+   <td>ឞ៊ឹ
+   </td>
+   <td>ឞុ
+   </td>
+   <td>ឞ៊ុ
+   </td>
+   <td>ឞិ
+   </td>
+   <td>ឞ៊ិ
+   </td>
+   <td>ឞី
+   </td>
+   <td>ឞ៊ី
+   </td>
+   <td>ឞាំ
+   </td>
+   <td>ឞាំង
+   </td>
+   <td>ឞង់
+   </td>
+   <td>ឞើ
+   </td>
+   <td>ឞ៊ឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>qd</strong>
+   </td>
+   <td>ឋឹ
+   </td>
+   <td>ឍឹ
+   </td>
+   <td>ឋុ
+   </td>
+   <td>ឍុ
+   </td>
+   <td>ឋិ
+   </td>
+   <td>ឍិ
+   </td>
+   <td>ឋី
+   </td>
+   <td>ឍី
+   </td>
+   <td>ឋាំ
+   </td>
+   <td>ឋាំង
+   </td>
+   <td>ឋង់
+   </td>
+   <td>ឋើ
+   </td>
+   <td>ឍឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>n</strong>
+   </td>
+   <td>ណឹ
+   </td>
+   <td>នឹ
+   </td>
+   <td>ណុ
+   </td>
+   <td>នុ
+   </td>
+   <td>ណិ
+   </td>
+   <td>និ
+   </td>
+   <td>ណី
+   </td>
+   <td>នី
+   </td>
+   <td>ណាំ
+   </td>
+   <td>ណាំង
+   </td>
+   <td>ណង់
+   </td>
+   <td>ណើ
+   </td>
+   <td>នឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>b</strong>
+   </td>
+   <td>បឹ
+   </td>
+   <td>ប៊ឹ
+   </td>
+   <td>បុ
+   </td>
+   <td>ប៊ុ
+   </td>
+   <td>បិ
+   </td>
+   <td>ប៊ិ
+   </td>
+   <td>បី
+   </td>
+   <td>ប៊ី
+   </td>
+   <td>បាំ
+   </td>
+   <td>បាំង
+   </td>
+   <td>បង់
+   </td>
+   <td>បើ
+   </td>
+   <td>ប៊ឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>ph</strong>
+   </td>
+   <td>ផឹ
+   </td>
+   <td>ភឹ
+   </td>
+   <td>ផុ
+   </td>
+   <td>ភុ
+   </td>
+   <td>ផិ
+   </td>
+   <td>ភិ
+   </td>
+   <td>ផី
+   </td>
+   <td>ភី
+   </td>
+   <td>ផាំ
+   </td>
+   <td>ផាំង
+   </td>
+   <td>ផង់
+   </td>
+   <td>ផើ
+   </td>
+   <td>ភឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>p</strong>
+   </td>
+   <td>ប៉ឹ
+   </td>
+   <td>ពឹ
+   </td>
+   <td>ប៉ុ
+   </td>
+   <td>ពុ
+   </td>
+   <td>ប៉ិ
+   </td>
+   <td>ពិ
+   </td>
+   <td>ប៉ី
+   </td>
+   <td>ពី
+   </td>
+   <td>ប៉ាំ
+   </td>
+   <td>ប៉ាំង
+   </td>
+   <td>ប៉ង់
+   </td>
+   <td>ប៉ើ
+   </td>
+   <td>ពឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>m</strong>
+   </td>
+   <td>ម៉ឹ
+   </td>
+   <td>មឹ
+   </td>
+   <td>ម៉ុ
+   </td>
+   <td>មុ
+   </td>
+   <td>ម៉ិ
+   </td>
+   <td>មិ
+   </td>
+   <td>ម៉ី
+   </td>
+   <td>មី
+   </td>
+   <td>ម៉ាំ
+   </td>
+   <td>ម៉ាំង
+   </td>
+   <td>ម៉ង់
+   </td>
+   <td>ម៉ើ
+   </td>
+   <td>មឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>y</strong>
+   </td>
+   <td>យ៉ឹ
+   </td>
+   <td>យឹ
+   </td>
+   <td>យ៉ុ
+   </td>
+   <td>យុ
+   </td>
+   <td>យ៉ិ
+   </td>
+   <td>យិ
+   </td>
+   <td>យ៉ី
+   </td>
+   <td>យី
+   </td>
+   <td>យ៉ាំ
+   </td>
+   <td>យ៉ាំង
+   </td>
+   <td>យ៉ង់
+   </td>
+   <td>យ៉ើ
+   </td>
+   <td>យឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>r</strong>
+   </td>
+   <td>រ៉ឹ
+   </td>
+   <td>រឺ
+   </td>
+   <td>រ៉ុ
+   </td>
+   <td>រុ
+   </td>
+   <td>រ៉ិ
+   </td>
+   <td>រិ
+   </td>
+   <td>រ៉ី
+   </td>
+   <td>រី
+   </td>
+   <td>រ៉ាំ
+   </td>
+   <td>រ៉ាំង
+   </td>
+   <td>រ៉ង់
+   </td>
+   <td>រ៉ើ
+   </td>
+   <td>រឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>l</strong>
+   </td>
+   <td>ឡឹ
+   </td>
+   <td>លឹ
+   </td>
+   <td>ឡុ
+   </td>
+   <td>លុ
+   </td>
+   <td>ឡិ
+   </td>
+   <td>លិ
+   </td>
+   <td>ឡី
+   </td>
+   <td>លី
+   </td>
+   <td>ឡាំ
+   </td>
+   <td>ឡាំង
+   </td>
+   <td>ឡង់
+   </td>
+   <td>ឡើ
+   </td>
+   <td>លឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>w</strong>
+   </td>
+   <td>វ៉ឹ
+   </td>
+   <td>វឹ
+   </td>
+   <td>វ៉ុ
+   </td>
+   <td>វុ
+   </td>
+   <td>វ៉ិ
+   </td>
+   <td>វិ
+   </td>
+   <td>វ៉ី
+   </td>
+   <td>វី
+   </td>
+   <td>វ៉ាំ
+   </td>
+   <td>វ៉ាំង
+   </td>
+   <td>វ៉ង់
+   </td>
+   <td>វ៉ើ
+   </td>
+   <td>វឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>s</strong>
+   </td>
+   <td>សឹ
+   </td>
+   <td>ស៊ឹ
+   </td>
+   <td>សុ
+   </td>
+   <td>ស៊ុ
+   </td>
+   <td>សិ
+   </td>
+   <td>ស៊ិ
+   </td>
+   <td>សី
+   </td>
+   <td>ស៊ី
+   </td>
+   <td>សាំ
+   </td>
+   <td>សាំង
+   </td>
+   <td>សង់
+   </td>
+   <td>សើ
+   </td>
+   <td>ស៊ឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>h</strong>
+   </td>
+   <td>ហឹ
+   </td>
+   <td>ហ៊ឹ
+   </td>
+   <td>ហុ
+   </td>
+   <td>ហ៊ុ
+   </td>
+   <td>ហិ
+   </td>
+   <td>ហ៊ិ
+   </td>
+   <td>ហី
+   </td>
+   <td>ហ៊ី
+   </td>
+   <td>ហាំ
+   </td>
+   <td>ហាំង
+   </td>
+   <td>ហង់
+   </td>
+   <td>ហើ
+   </td>
+   <td>ហ៊ឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>q</strong>
+   </td>
+   <td>អឹ
+   </td>
+   <td>អ៊ឹ
+   </td>
+   <td>អុ
+   </td>
+   <td>អ៊ុ
+   </td>
+   <td>អិ
+   </td>
+   <td>អ៊ិ
+   </td>
+   <td>អី
+   </td>
+   <td>អ៊ី
+   </td>
+   <td>អាំ
+   </td>
+   <td>អាំង
+   </td>
+   <td>អង់
+   </td>
+   <td>អើ
+   </td>
+   <td>អ៊ឺ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>g</strong>
+   </td>
+   <td>ឝ៉ឹ
+   </td>
+   <td>ឝឹ
+   </td>
+   <td>ឝ៉ុ
+   </td>
+   <td>ឝុ
+   </td>
+   <td>ឝ៉ិ
+   </td>
+   <td>ឝិ
+   </td>
+   <td>ឝ៉ី
+   </td>
+   <td>ឝី
+   </td>
+   <td>ឝ៉ាំ
+   </td>
+   <td>ឝ៉ាំង
+   </td>
+   <td>ឝ៉ង់
+   </td>
+   <td>ឝ៉ើ
+   </td>
+   <td>ឝឺ
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td><strong>e</strong>
+   </td>
+   <td><strong>v</strong>
+   </td>
+   <td><strong>o</strong>
+   </td>
+   <td><strong>u</strong>
+   </td>
+   <td><strong>x</strong>
+   </td>
+   <td><strong>i</strong>
+   </td>
+   <td><strong>vy</strong>
+   </td>
+   <td><strong>ii</strong>
+   </td>
+   <td><strong>am</strong>
+   </td>
+   <td><strong>ang</strong>
+   </td>
+   <td><strong>zng</strong>
+   </td>
+   <td><strong>ee</strong>
+   </td>
+   <td><strong>vv</strong>
+   </td>
+  </tr>
+</table>
+<h2>Consonant Clusters</h2>
+<p>
+To type a consonant cluster, you may type the first member of the cluster
+followed by the second member.
+</p>
+<table style="width:80%" border="0">
+  <tr>
+   <td><strong>Key</strong>
+   </td>
+   <td><strong>Output</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>bme</strong>
+   </td>
+   <td>ប្មឹ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>bmv</strong>
+   </td>
+   <td>ប្ម៊ឹ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>pme</strong>
+   </td>
+   <td>ប្ម៉ឹ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>pmv</strong>
+   </td>
+   <td>ព្មឹ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>phme</strong>
+   </td>
+   <td>ផ្មឹ
+   </td>
+  </tr>
+  <tr>
+   <td><strong>phmv</strong>
+   </td>
+   <td>ភ្មឹ
+   </td>
+  </tr>
+</table>
+<h2>Presyllable Configuration</h2>
+<p>
+Words with a presyllable can be typed in one of the following ways. Presyllables
+are underlined.
+</p>
+<ul>
+<li>Consonant + Vowel<br>
+<span style="text-decoration:underline;">ca</span>caa		> ចចា		‘to eat’<br>
+<span style="text-decoration:underline;">ga</span>nvt		> ឝនឹត		‘valuable’
+<li>Consonant + Consonant + Vowel<br>
+<span style="text-decoration:underline;">cr</span>heew		> ច្រហើវ	‘young unmarried man’<br>
+<span style="text-decoration:underline;">gra</span>ngzt	> ឝ្រង៉ត់	‘sad’
+<li>“h” or “q” + nasal<br>
+<span style="text-decoration:underline;">hm</span>puet	> ហ្មពួត		‘to sell<br>
+<span style="text-decoration:underline;">qm</span>bvng	> អ្មប៊ឹង		‘area behind house’
 </li>
 </ul>
-Please refer to the documentation on Romanization of Krung here:
-<iframe src="krung_romanization.pdf" width="100%" height="500px">
+<h2>Numerals and Signs</h2>
+<table style="width:400px" border="0">
+  <tr>
+   <td><strong>Key</strong>
+   </td>
+   <td>1
+   </td>
+   <td>2
+   </td>
+   <td>3
+   </td>
+   <td>4
+   </td>
+   <td>5
+   </td>
+   <td>6
+   </td>
+   <td>7
+   </td>
+   <td>8
+   </td>
+   <td>9
+   </td>
+   <td>0
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Output</strong>
+   </td>
+   <td>១
+   </td>
+   <td>២
+   </td>
+   <td>៣
+   </td>
+   <td>៤
+   </td>
+   <td>៥
+   </td>
+   <td>៦
+   </td>
+   <td>៧
+   </td>
+   <td>៨
+   </td>
+   <td>៩
+   </td>
+   <td>០
+   </td>
+  </tr>
+</table>
+<table style="width:400px" border="0">
+  <tr>
+   <td><strong>Key</strong>
+   </td>
+   <td><strong>Output</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>/2
+   </td>
+   <td>ៗ
+   </td>
+  </tr>
+  <tr>
+   <td>.
+   </td>
+   <td>។
+   </td>
+  </tr>
+  <tr>
+   <td>,
+   </td>
+   <td>Whitespace
+   </td>
+  </tr>
+  <tr>
+   <td>:
+   </td>
+   <td>៖
+   </td>
+  </tr>
+  <tr>
+   <td><<
+   </td>
+   <td>«
+   </td>
+  </tr>
+  <tr>
+   <td>>>
+   </td>
+   <td>»
+   </td>
+  </tr>
+</table>
+
+<p>For more examples, please refer to the documentation on Romanization of Krung here:</p>
+<iframe align="middle" src="krung_romanization.pdf" width="80%" height="500px">
 
 
 </body>
