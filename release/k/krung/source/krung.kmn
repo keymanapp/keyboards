@@ -60,6 +60,7 @@ U+17A0 U+17D2 U+1793 + [K_G]    > context(1) U+17D2 U+1784  c for hng   ហ្�
 U+17A2 U+17D2 U+1793 + [K_G]    > context(1) U+17D2 U+1784  c for qng   អ្ង
 
 U+17A2 + [K_Y]                  > context(1) U+17D2 U+1799  c for qy    អ្យ
+U+17D2 U+1799 + [K_R]           > context(1) context(2) U+17D2 U+179A     c for qyr   អ្យ្រ
 U+179E + [K_R]                  > context U+17D2 U+179A     c for qbr   ឞ្រ
 U+178B + [K_R]                  > context U+17D2 U+179A     c for qdr   ឋ្រ
 U+1795 + [K_L]                  > context U+17D2 U+179B     c for phl   ផ្ល
@@ -1075,6 +1076,18 @@ any(all_sin_con1) U+17D2 U+179A + [K_Z]                 > context(1) context(2) 
 any(all_sin_con1) U+17D2 U+179A U+1782 U+17CB + [K_Z]   > context(1) context(2) context(3)  dk(deadkey_z)
 
 
+c qyr
+U+17A2 U+17D2 U+1799 U+17D2 U+179A + any(sin_vow1_key)    > context(1) context(2) context(3) context(4) context(5) index(sin_vow1_out,6)
+U+17A2 U+17D2 U+1799 U+17D2 U+179A + [K_E]                > context(1) context(2) context(3) context(4) context(5) U+17B9 dk(deadkey_e)
+U+17A2 U+17D2 U+1799 U+17D2 U+179A + [K_Z]                > context(1) context(2) context(3) context(4) context(5) U+1782 U+17CB   c qyrz
+
+U+17A2 U+17D2 U+1799 U+17D2 U+179A + any(sin_vow2_key)    > context(1) context(2) context(3) context(4) context(5) U+17CA index(sin_vow2_out,6) 
+U+17A2 U+17D2 U+1799 U+17D2 U+179A + [K_V]                > context(1) context(2) context(3) context(4) context(5) U+17CA U+17B9 dk(deadkey_v) 
+
+U+17A2 U+17D2 U+1799 U+17D2 U+179A U+17B7 + [K_X]         > context(1) context(2) context(3) context(4) context(5) U+17CA U+17C2   c qyrxx
+U+17A2 U+17D2 U+1799 U+17D2 U+179A U+1782 U+17CB + [K_Z]  > context(1) context(2) context(3) context(4) context(5) dk(deadkey_z)  c qyrzz
+
+
 c qy
 U+17A2 U+17D2 U+1799 + any(sin_vow1_key)    > context(1) context(2) context(3) index(sin_vow1_out,4)
 U+17A2 U+17D2 U+1799 + any(sin_vow2_key)    > context(1) context(2) context(3) U+17CA index(sin_vow2_out,4) 
@@ -1115,7 +1128,8 @@ c ង in the final position
 U+17B6 U+1793 U+17CB + [K_G]    > U+17B6 U+17C6 U+1784  c ang
 U+1793 U+17CB + [K_G]           > U+1784 context(2)     c zng
 
-U+17B6 U+1782 U+17CB + [K_N]    > context(1) U+1793 context(3)  c ន replaced គ in the final position after Bantoc
+c ន replaced គ in the final position after Bantoc
+U+17B6 U+1782 U+17CB + [K_N]    > context(1) U+1793 context(3)  
 
 
 c អ in the final position becomes គ
@@ -1186,6 +1200,14 @@ match > use(normalise)
 
 group(normalise)
 
+
+c when a consonant comes after -ang, output ង់ and the consonant
+U+17C9 U+17B6 U+17C6 U+1784 any(any_con)    > U+1784 U+17CB context(5)
+
+c when a consonant comes after -an, output ន់ and the consonant
+U+17C9 U+1793 U+17CB any(any_con)    > context(2) context(3) context(4)
+
+
 c panduung > ពន់ឌូង, normalize after CanC rule is applied
 U+1794 U+17C9 any(any_con) U+17CB any(any_con)  > U+1796 context(3) context(4) context(5)
 
@@ -1193,6 +1215,9 @@ c pangtrong > ពង់ត្រុង
 U+1794 U+17C9 U+17B6 U+17C6 U+1784 any(any_con) > U+1796 context(5) U+17CB context(6)
 U+17B6 U+17C6 U+1784 U+179A                     > context(3) U+17D2 context(4)
 U+17B6 U+17C6 U+1784 any(any_con)               > context(3) U+17CB context(4)
+
+c keep អ្យ្រ
+U+17A2 U+17D2 U+1799 U+17D2 U+179A  > context
 
 c presyllable boundary
 any(any_con) U+17D2 any(any_con) U+17D2 any(any_con)    > context(1) context(2) context(3) context(5)   c prevent brn from outputting ប្ន្រ 
