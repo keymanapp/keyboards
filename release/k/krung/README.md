@@ -24,3 +24,11 @@ Supported Platforms
  * Desktop devices
  * Tablet devices
 
+ToDo
+-------------------
+* What is the actual output of:
+	* "tatrzz" តត្រ or តាត់រ៉ as show in CR?
+	* "paqtvv" ប៉ាគ់ទឺ as in CR, or ប៉ាគទឺ as in a separate document sent to me?
+	* "qyuuy" អ្យ៊ូយ as in CR, or អ្យូយ as in a separate document sent to me?
+	* "katzz" -> should give the Bunong vowel ក៝ត, but "kalzz" gives កឡ?
+* Backspace functionality is not implemented yet, do we have to have it?

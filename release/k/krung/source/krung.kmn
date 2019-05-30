@@ -252,12 +252,12 @@ any(con_muusikatoan) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]        > context(
 any(con_muusikatoan) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A] > context(1) context(2) context(3) U+17C9 context(4)                c C[sub_con]aa
 
 c [n/l]rV, special case
-any(nl_con2) U+17D2 any(sub_con) + any(sin_vow1_key)                  > index(nl_con1,1) context(2) context(3) index(sin_vow1_out,4)      c [n/l]rV1
-any(nl_con2) U+17D2 any(sub_con) + [K_E]                              > index(nl_con1,1) context(2) context(3) U+17B9 dk(deadkey_e)       c [n/l]re
-any(nl_con2) U+17D2 any(sub_con) + [K_Z]                              > index(nl_con1,1) context(2) context(3) U+1782 U+17CB              c [n/l]rz
-any(nl_con2) U+17D2 any(sub_con) + [K_A]                              > index(nl_con1,1) context(2) context(3) U+17B6 U+1782 U+17CB       c [n/l]ra
-any(nl_con2) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]                > index(nl_con1,1) context(2) context(3) dk(deadkey_z)              c [n/l]rzz
-any(nl_con2) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A]         > index(nl_con1,1) context(2) context(3) context(4)                 c [n/l]raa
+any(nl_con2) U+17D2 any(sub_con) + any(sin_vow1_key)                  > index(nl_con1,1) context(2) context(3) index(sin_vow1_out,4)      c [n/l][sub_con]V1
+any(nl_con2) U+17D2 any(sub_con) + [K_E]                              > index(nl_con1,1) context(2) context(3) U+17B9 dk(deadkey_e)       c [n/l][sub_con]e
+any(nl_con2) U+17D2 any(sub_con) + [K_Z]                              > index(nl_con1,1) context(2) context(3) U+1782 U+17CB              c [n/l][sub_con]z
+any(nl_con2) U+17D2 any(sub_con) + [K_A]                              > index(nl_con1,1) context(2) context(3) U+17B6 U+1782 U+17CB       c [n/l][sub_con]a
+any(nl_con2) U+17D2 any(sub_con) U+1782 U+17CB + [K_Z]                > index(nl_con1,1) context(2) context(3) dk(deadkey_z)              c [n/l][sub_con]zz
+any(nl_con2) U+17D2 any(sub_con) U+17B6 U+1782 U+17CB + [K_A]         > index(nl_con1,1) context(2) context(3) context(4)                 c [n/l][sub_con]aa
 
 c C[sub_con]V2
 any(all_sin_con2) U+17D2 any(sub_con) + any(sin_vow2_key)             > context(1) context(2) context(3) index(sin_vow2_out,4)            c C2[sub_con]V2
