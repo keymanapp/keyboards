@@ -2,8 +2,8 @@ Rohingya Arabic Keyboard
 =====================
 
 * Name:           Rohingya Arabic
-* Copyright:      (C) 2012-2018 SIL International
-* Version:        1.0
+* Copyright:      (C) 2012-2019 SIL International
+* Version:        1.0.1
 * BCP-47 codes:   rhg-Arab, rhg-Arab-x-fonna
 
 
@@ -19,6 +19,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
 
 

@@ -1,5 +1,9 @@
 Balochi Phonetic Change History
 ===============================
+1.1.2 (4 Mar 2019)
+-----------------
+Remove all but the bcc language code.
+
 1.1.1 (18 Jun 2018)
 -----------------
 No change. Package version to match keyboard

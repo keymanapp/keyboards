@@ -66,7 +66,7 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Ge&rsquo;ez (ግዕዝ, ISO-639-2: gez) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.
+This is a Ge&rsquo;ez (ግዕዝ, ISO-639-2: gez) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
 The Ge&rsquo;ez keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
@@ -293,7 +293,7 @@ Type the number that corresponds to the qirts that you want and it will appear a
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2017. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2019. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
