@@ -1,9 +1,9 @@
-inuktitut_latin keyboard
-========================
+Qaliujaaqpait | ᖃᓕᐅᔮᖅᐸᐃᑦ keyboard
+=================================
 
-Copyright (C) 2015 Pirurvik Centre and Tavultesoft
+Copyright (C) 2015-2019 Pirurvik Centre and SIL International
 
-Version 1.1
+Version 1.2
 
 A Latin script keyboard for Inuktut languages
 

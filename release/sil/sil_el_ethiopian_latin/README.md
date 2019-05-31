@@ -1,9 +1,9 @@
 SIL EL - Ethiopian Latin Keyboard
 =================================
 
-Copyright (C) 2017-2018 SIL Ethiopia
+Copyright (C) 2017-2019 SIL Ethiopia
 
-Version 1.3.1
+Version 1.3.2
 
 Description
 -----------
@@ -12,7 +12,7 @@ The “SIL EL - Ethiopian Latin” keyboard is intended to support keying many E
 Links
 -----
 
- * Home:     <http://www.silethiopia.org>
+ * Home:     https://keyman.com/keyboards/sil_el_ethiopian_latin
  * Contact:  <computer_ethiopia@sil.org>
 
 Supported Platforms

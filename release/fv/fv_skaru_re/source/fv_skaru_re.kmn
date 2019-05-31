@@ -1,0 +1,147 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.2"
+store(&TARGETS) "mobile tablet"
+c store(&ETHNOLOGUECODE) "tus"
+store(&COPYRIGHT) "(c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
+store(&NAME) 'Skarù·reʔ'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_skaru_re.keyman-touch-layout"
+
++ [SHIFT T_Q_0] > 'Ę́' layer('default')
++ [SHIFT T_Q_1] > 'Ę̀' layer('default')
++ [SHIFT T_Q] > 'Ę' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_1] > 'È' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_R] > 'R' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_1] > 'Ù' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_1] > 'Ì' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_1] > 'Ò' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P] > 'ʔ' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_1] > 'À' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'Θ' layer('default')
+'o' + [SHIFT T_F] > 'ò'
+'I' + [SHIFT T_F] > 'Ì'
+'A' + [SHIFT T_F] > 'À'
+'a' + [SHIFT T_F] > 'à'
+'i' + [SHIFT T_F] > 'ì'
+'ę' + [SHIFT T_F] > 'ę̀'
+'E' + [SHIFT T_F] > 'È'
+'Ę' + [SHIFT T_F] > 'Ę̀'
+'U' + [SHIFT T_F] > 'Ù'
+'e' + [SHIFT T_F] > 'è'
+'u' + [SHIFT T_F] > 'ù'
+'O' + [SHIFT T_F] > 'Ò'
++ [SHIFT T_G] > 'H' layer('default')
+'o' + [SHIFT T_H] > 'ó'
+'I' + [SHIFT T_H] > 'Í'
+'A' + [SHIFT T_H] > 'Á'
+'a' + [SHIFT T_H] > 'á'
+'i' + [SHIFT T_H] > 'í'
+'ę' + [SHIFT T_H] > 'ę́'
+'E' + [SHIFT T_H] > 'É'
+'Ę' + [SHIFT T_H] > 'Ę́'
+'U' + [SHIFT T_H] > 'Ú'
+'e' + [SHIFT T_H] > 'é'
+'u' + [SHIFT T_H] > 'ú'
+'O' + [SHIFT T_H] > 'Ó'
++ [SHIFT T_J] > 'K' layer('default')
++ [SHIFT T_K_0] > ':' layer('default')
++ [SHIFT T_K_1] > ';' layer('default')
++ [SHIFT T_K] > '·' layer('default')
++ [SHIFT T_L_0] > '"' layer('default')
++ [SHIFT T_L] > "'" layer('default')
++ [SHIFT T_Z] > '!' layer('default')
++ [SHIFT T_X] > '-' layer('default')
++ [SHIFT T_C] > 'Č' layer('default')
++ [SHIFT T_V] > ',' layer('default')
++ [SHIFT T_B] > '.' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > '?' layer('default')
++ [T_Q_0] > 'ę́'
++ [T_Q_1] > 'ę̀'
++ [T_Q] > 'ę'
++ [T_W] > 'w'
++ [T_E_0] > 'é'
++ [T_E_1] > 'è'
++ [T_E] > 'e'
++ [T_R] > 'r'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U_0] > 'ú'
++ [T_U_1] > 'ù'
++ [T_U] > 'u'
++ [T_I_0] > 'í'
++ [T_I_1] > 'ì'
++ [T_I] > 'i'
++ [T_O_0] > 'ó'
++ [T_O_1] > 'ò'
++ [T_O] > 'o'
++ [T_P] > 'ʔ'
++ [T_A_0] > 'á'
++ [T_A_1] > 'à'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'θ'
+'o' + [T_F] > 'ò'
+'I' + [T_F] > 'Ì'
+'A' + [T_F] > 'À'
+'a' + [T_F] > 'à'
+'i' + [T_F] > 'ì'
+'ę' + [T_F] > 'ę̀'
+'E' + [T_F] > 'È'
+'Ę' + [T_F] > 'Ę̀'
+'U' + [T_F] > 'Ù'
+'e' + [T_F] > 'è'
+'u' + [T_F] > 'ù'
+'O' + [T_F] > 'Ò'
++ [T_G] > 'h'
+'o' + [T_H] > 'ó'
+'I' + [T_H] > 'Í'
+'A' + [T_H] > 'Á'
+'a' + [T_H] > 'á'
+'i' + [T_H] > 'í'
+'ę' + [T_H] > 'ę́'
+'E' + [T_H] > 'É'
+'Ę' + [T_H] > 'Ę́'
+'U' + [T_H] > 'Ú'
+'e' + [T_H] > 'é'
+'u' + [T_H] > 'ú'
+'O' + [T_H] > 'Ó'
++ [T_J] > 'k'
++ [T_K_0] > ':'
++ [T_K_1] > ';'
++ [T_K] > '·'
++ [T_L_0] > '"'
++ [T_L] > "'"
++ [T_Z] > '!'
++ [T_X] > '-'
++ [T_C] > 'č'
++ [T_V] > ','
++ [T_B] > '.'
++ [T_N] > 'n'
++ [T_M] > '?'
+
+c --- END OF TOUCH LAYOUT RULES ---
+

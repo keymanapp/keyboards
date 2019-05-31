@@ -1118,10 +1118,6 @@ END;
     <tr class="Table11">
       <td style="text-align:left;width:17cm;" class="Table1_A1">
         <p class="Title">SIL EL - Ethiopian Latin Keyboard</p>
-
-        <p class="Subtitle">© 2017 SIL Ethiopia - version 1.2.<span class=
-        "T7">2</span> - 2017-0<span class="T7">9</span>-<span class=
-        "T7">15</span></p>
       </td>
     </tr>
   </table>

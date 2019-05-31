@@ -1,0 +1,243 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.2"
+store(&TARGETS) "mobile"
+c store(&ETHNOLOGUECODE) "tli"
+store(&COPYRIGHT) "(c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
+store(&NAME) 'Łingít'
+c store(&BITMAP) 'fv_tlingit.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) 'fv_tlingit.keyman-touch-layout'
+
+'Í' + [SHIFT T_Q] > 'Į́'
+'Î' + [SHIFT T_Q] > 'Į̂'
+'ì' + [SHIFT T_Q] > 'į̀'
+'e' + [SHIFT T_Q] > 'ę'
+'Ù' + [SHIFT T_Q] > 'Ų̀'
+'À' + [SHIFT T_Q] > 'Ą̀'
+'í' + [SHIFT T_Q] > 'į́'
+'O' + [SHIFT T_Q] > 'Ǫ'
+'Ú' + [SHIFT T_Q] > 'Ų́'
+'Á' + [SHIFT T_Q] > 'Ą́'
+'î' + [SHIFT T_Q] > 'į̂'
+'Û' + [SHIFT T_Q] > 'Ų̂'
+'i' + [SHIFT T_Q] > 'į'
+'Â' + [SHIFT T_Q] > 'Ą̂'
+'à' + [SHIFT T_Q] > 'ą̀'
+'ù' + [SHIFT T_Q] > 'ų̀'
+'ú' + [SHIFT T_Q] > 'ų́'
+'á' + [SHIFT T_Q] > 'ą́'
+'û' + [SHIFT T_Q] > 'ų̂'
+'U' + [SHIFT T_Q] > 'Ų'
+'â' + [SHIFT T_Q] > 'ą̂'
+'Ò' + [SHIFT T_Q] > 'Ǫ̀'
+'È' + [SHIFT T_Q] > 'Ę̀'
+'o' + [SHIFT T_Q] > 'ǫ'
+'A' + [SHIFT T_Q] > 'Ą'
+'Ó' + [SHIFT T_Q] > 'Ǫ́'
+'É' + [SHIFT T_Q] > 'Ę́'
+'Ô' + [SHIFT T_Q] > 'Ǫ̂'
+'Ê' + [SHIFT T_Q] > 'Ę̂'
+'è' + [SHIFT T_Q] > 'ę̀'
+'ò' + [SHIFT T_Q] > 'ǫ̀'
+'E' + [SHIFT T_Q] > 'Ę'
+'é' + [SHIFT T_Q] > 'ę́'
+'ó' + [SHIFT T_Q] > 'ǫ́'
+'u' + [SHIFT T_Q] > 'ų'
+'ô' + [SHIFT T_Q] > 'ǫ̂'
+'ê' + [SHIFT T_Q] > 'ę̂'
+'I' + [SHIFT T_Q] > 'Į'
+'Ì' + [SHIFT T_Q] > 'Į̀'
+'a' + [SHIFT T_Q] > 'ą'
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_1] > 'È' layer('default')
++ [SHIFT T_E_2] > 'Ê' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
+'o' + [SHIFT T_R] > 'ó'
+'I' + [SHIFT T_R] > 'Í'
+'E' + [SHIFT T_R] > 'É'
+'A' + [SHIFT T_R] > 'Á'
+'u' + [SHIFT T_R] > 'ú'
+'O' + [SHIFT T_R] > 'Ó'
+'e' + [SHIFT T_R] > 'é'
+'a' + [SHIFT T_R] > 'á'
+'i' + [SHIFT T_R] > 'í'
+'U' + [SHIFT T_R] > 'Ú'
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_1] > 'Ù' layer('default')
++ [SHIFT T_U_2] > 'Û' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_1] > 'Ì' layer('default')
++ [SHIFT T_I_2] > 'Î' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_1] > 'Ò' layer('default')
++ [SHIFT T_O_2] > 'Ô' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P] > 'Ł' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_1] > 'À' layer('default')
++ [SHIFT T_A_2] > 'Â' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
+'o' + [SHIFT T_F] > 'ò'
+'I' + [SHIFT T_F] > 'Ì'
+'E' + [SHIFT T_F] > 'È'
+'A' + [SHIFT T_F] > 'À'
+'u' + [SHIFT T_F] > 'ù'
+'O' + [SHIFT T_F] > 'Ò'
+'e' + [SHIFT T_F] > 'è'
+'a' + [SHIFT T_F] > 'à'
+'i' + [SHIFT T_F] > 'ì'
+'U' + [SHIFT T_F] > 'Ù'
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
+'o' + [SHIFT T_V] > 'ô'
+'I' + [SHIFT T_V] > 'Î'
+'E' + [SHIFT T_V] > 'Ê'
+'A' + [SHIFT T_V] > 'Â'
+'u' + [SHIFT T_V] > 'û'
+'O' + [SHIFT T_V] > 'Ô'
+'e' + [SHIFT T_V] > 'ê'
+'a' + [SHIFT T_V] > 'â'
+'i' + [SHIFT T_V] > 'î'
+'U' + [SHIFT T_V] > 'Û'
++ [SHIFT T_B_0] > ',' layer('default')
++ [SHIFT T_B] > '.' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
+'Í' + [T_Q] > 'Į́'
+'Î' + [T_Q] > 'Į̂'
+'ì' + [T_Q] > 'į̀'
+'e' + [T_Q] > 'ę'
+'Ù' + [T_Q] > 'Ų̀'
+'À' + [T_Q] > 'Ą̀'
+'í' + [T_Q] > 'į́'
+'O' + [T_Q] > 'Ǫ'
+'Ú' + [T_Q] > 'Ų́'
+'Á' + [T_Q] > 'Ą́'
+'î' + [T_Q] > 'į̂'
+'Û' + [T_Q] > 'Ų̂'
+'i' + [T_Q] > 'į'
+'Â' + [T_Q] > 'Ą̂'
+'à' + [T_Q] > 'ą̀'
+'ù' + [T_Q] > 'ų̀'
+'ú' + [T_Q] > 'ų́'
+'á' + [T_Q] > 'ą́'
+'û' + [T_Q] > 'ų̂'
+'U' + [T_Q] > 'Ų'
+'â' + [T_Q] > 'ą̂'
+'Ò' + [T_Q] > 'Ǫ̀'
+'È' + [T_Q] > 'Ę̀'
+'o' + [T_Q] > 'ǫ'
+'A' + [T_Q] > 'Ą'
+'Ó' + [T_Q] > 'Ǫ́'
+'É' + [T_Q] > 'Ę́'
+'Ô' + [T_Q] > 'Ǫ̂'
+'Ê' + [T_Q] > 'Ę̂'
+'è' + [T_Q] > 'ę̀'
+'ò' + [T_Q] > 'ǫ̀'
+'E' + [T_Q] > 'Ę'
+'é' + [T_Q] > 'ę́'
+'ó' + [T_Q] > 'ǫ́'
+'u' + [T_Q] > 'ų'
+'ô' + [T_Q] > 'ǫ̂'
+'ê' + [T_Q] > 'ę̂'
+'I' + [T_Q] > 'Į'
+'Ì' + [T_Q] > 'Į̀'
+'a' + [T_Q] > 'ą'
++ [T_W] > 'w'
++ [T_E_0] > 'é'
++ [T_E_1] > 'è'
++ [T_E_2] > 'ê'
++ [T_E] > 'e'
+'o' + [T_R] > 'ó'
+'I' + [T_R] > 'Í'
+'E' + [T_R] > 'É'
+'A' + [T_R] > 'Á'
+'u' + [T_R] > 'ú'
+'O' + [T_R] > 'Ó'
+'e' + [T_R] > 'é'
+'a' + [T_R] > 'á'
+'i' + [T_R] > 'í'
+'U' + [T_R] > 'Ú'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U_0] > 'ú'
++ [T_U_1] > 'ù'
++ [T_U_2] > 'û'
++ [T_U] > 'u'
++ [T_I_0] > 'í'
++ [T_I_1] > 'ì'
++ [T_I_2] > 'î'
++ [T_I] > 'i'
++ [T_O_0] > 'ó'
++ [T_O_1] > 'ò'
++ [T_O_2] > 'ô'
++ [T_O] > 'o'
++ [T_P] > 'ł'
++ [T_A_0] > 'á'
++ [T_A_1] > 'à'
++ [T_A_2] > 'â'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
+'o' + [T_F] > 'ò'
+'I' + [T_F] > 'Ì'
+'E' + [T_F] > 'È'
+'A' + [T_F] > 'À'
+'u' + [T_F] > 'ù'
+'O' + [T_F] > 'Ò'
+'e' + [T_F] > 'è'
+'a' + [T_F] > 'à'
+'i' + [T_F] > 'ì'
+'U' + [T_F] > 'Ù'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z] > 'z'
++ [T_X] > 'x'
++ [T_C] > 'c'
+'o' + [T_V] > 'ô'
+'I' + [T_V] > 'Î'
+'E' + [T_V] > 'Ê'
+'A' + [T_V] > 'Â'
+'u' + [T_V] > 'û'
+'O' + [T_V] > 'Ô'
+'e' + [T_V] > 'ê'
+'a' + [T_V] > 'â'
+'i' + [T_V] > 'î'
+'U' + [T_V] > 'Û'
++ [T_B_0] > ','
++ [T_B] > '.'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
+ 
+
