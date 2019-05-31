@@ -1,5 +1,5 @@
 ﻿store(&VERSION) '10.0'
-store(&NAME) 'Kannada WinScript [NLCI] '
+store(&NAME) 'Kannada WinScript[NLCI] '
 store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
 store(&KEYBOARDVERSION) '2.0'
 store(&TARGETS) 'windows macosx linux web'
@@ -66,15 +66,20 @@ c Adjust the behavior of S
 + 'S' > nul                
 
 c Adjust the behavior of F
-+ 'F' > nul
-+ 'f' > nul
++ 'F' > nul  
+'`' dk(bt) + 'F' > 'F'
++ 'f' > nul    
+'`' dk(bt) + 'f' > 'f'
 
 c Adjust the behavior of u
 'ಉ' + 'u' > 'ಊ'    
 'ು' + 'u' > 'ೂ' 
 
 c Adjust the behavior of s
-'ಸ' + 's'> 'ಶ'
+'ಸ' + 's'> 'ಶ'    
+
+c Adjust the behavior of S
+'`' dk(bt) + 'S' > 'S'
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '್' U+200C
@@ -112,7 +117,6 @@ U+2014 + '`' > '---'
 U+2014 + [K_BKSP] > '---'    
 
 c backtick for change into English
-
 + '`' > '`' dk(bt)
 '`' dk(bt) + any(allKeys) > index(allKeys, 3)
 any(allKeys) + any(allKeys) > context index(allKeys, 2)
