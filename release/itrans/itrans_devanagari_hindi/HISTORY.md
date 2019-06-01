@@ -17,6 +17,8 @@ Hindi Devanagari Phonetic (ITRANS) Change History
 * Add implicit a for word-ending NuktaVyanjana 
 * 20190530
 * Add OM for ॐ
+* 20190601
+* Fix bug related to explicit virama
 
 1.1.0 (2019-05-24)
 ---------------------------
