@@ -10,8 +10,10 @@ c 20190530
 c Make changes based on PR feedback
 c Fix documentation for Nuktas
 c Add info regarding ZWJ in welcome.htm
-c TODO
-c Check whether letters with nukta used in Gujarati 
+c 20190601
+c Reduce nukta letters - only for Avestan now
+c Add Avestan written in Gujarati as language
+c Update regression tests
 c
 store(&VERSION) "10.0" 
 store(&NAME) 'Gujarati Phonetic (ITRANS)'
@@ -228,9 +230,10 @@ store(aPlusMaatraaU) "ા" "ૅ" "ૈ" "ૌ" "ૉ"
 
 c 	implicit akaara deletion for Hindi mode 
 store(opt1endings) outs(Punctuation) ' '
-$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"્" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
 
-any(Vyanjana)"्" + "^"	>	index(Vyanjana,1)"्"
+$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"્" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
+any(Vyanjana) + "^"	>	index(Vyanjana,1)"્"U+200C
+any(Vyanjana)"્" + "^"	>	index(Vyanjana,1)"્" U+200C
 any(Vyanjana)"્" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) >	context index(aPlusMaatraaU,2) 
 any(Vyanjana)"્" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
@@ -242,16 +245,15 @@ any(Vyanjana)"ો" + "o"	>	index(Vyanjana,1)"ૂ"	c oo
 any(Vyanjana)"ો" + "u"	>	index(Vyanjana,1)"ૌ"	c ou
 
 $keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"઼" "્" + any(opt1endings)	>	index(NuktaVyanjana,2)"઼" index(opt1endings,5)
-any(NuktaVyanjana)"઼" "્" + "^"	>	index(NuktaVyanjana,1)"઼""્"
+any(NuktaVyanjana)"઼" "્" + "^"	>	index(NuktaVyanjana,1)"઼""્"U+200C
 any(NuktaVyanjana)"઼" "્" + "a"	>	index(NuktaVyanjana,1)"઼"
+any(NuktaVyanjana)"઼" + any(aPlusMaatraa) >	 context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana)"઼" "્" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"઼" index(ViramaMaatraaU,4) 
 any(NuktaVyanjana)"઼" "િ" + "i"	>	index(NuktaVyanjana,1)"઼""ી"	c ii
 any(NuktaVyanjana)"઼" "ુ" + "u"	>	index(NuktaVyanjana,1)"઼""ૂ"	c uu
 any(NuktaVyanjana)"઼" "ે" + "e"	>	index(NuktaVyanjana,1)"઼""ી"	c ee
 any(NuktaVyanjana)"઼" "ે" + "i"	>	index(NuktaVyanjana,1)"઼""ૈ"	c ei
 any(NuktaVyanjana)"઼" "ો" + "o"	>	index(NuktaVyanjana,1)"઼""ૂ"	c oo
 any(NuktaVyanjana)"઼" "ો" + "u"	>	index(NuktaVyanjana,1)"઼""ૌ"	c ou
-
-any(NuktaVyanjana)"઼" + any(aPlusMaatraa) >	 context index(aPlusMaatraaU,3) 
-any(NuktaVyanjana)"઼" "્" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"઼" index(ViramaMaatraaU,4) 
 
 c  EOF
