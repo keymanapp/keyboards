@@ -2,9 +2,14 @@
 c  20190518 - Based on itrans_devanagari_hindi
 c  20190522 - Update based on PR feedback
 c  Version 1.2.0
-c  20190528 - Sync with new code from sanskrit_vedic
+c  20190528 
+c Sync with new code from sanskrit_vedic
 c Add Gujarati specific modifications eg. ZHA
 c Add ZWJ and ZWNJ to OSK
+c 20190530
+c Make changes based on PR feedback
+c Fix documentation for Nuktas
+c Add info regarding ZWJ in welcome.htm
 c TODO
 c Check whether letters with nukta used in Gujarati 
 c
@@ -176,16 +181,6 @@ c  ununsed - beep
 + "Z"	>	beep
 + "q"	>	beep
 
-c  Nukta - check if used in Gujarati
-"." + "k"	>	"ક઼્" c .k
-"ક઼્" + "h"	>	"ખ઼્" c .kh
-"." + "g"	>	"ગ઼્" c .g
-"." + "j"	>	"જ઼્" c .j
-"જ઼્" + "h"	>	"ઝ઼્" c .jh
-"." + "D"	>	"ડ઼્" c .D
-"ડ઼્" + "h"	>	"ઢ઼્" c .Dh
-"." + "f"	>	"ફ઼્" c .f
-
 c  alternate mapping with ~
 "~" + "n"	>	"ઞ્"
 "~" + "N"	>	"ઙ્"
@@ -215,9 +210,17 @@ $keymanonly: if(opt1 = '0') "ન્" + "j"	>	"ઞ્જ્"
 "શ્" + "r"	>	"શ્ર્"	c	shr
 "ણ્" + "g"	>	"ઙ્"	c	Ng
 
+c  Nukta - https://r12a.github.io/scripts/gujarati/#extensions
+"." + "k"	>	"ક઼્" c .k
+"." + "g"	>	"ગ઼્" c .g
+"ક઼્" + "h"	>	"ખ઼્" c .kh
+"ગ઼્" + "h"	>	"ઘ઼્" c .gh
+"." + "j"	>	"જ઼્" c .j
+"." + "t"	>	"ત઼્" c .t
+
 c  Rules for Consonants + Vowel Signs
 store(Vyanjana) 'કક્ષખગઘઙચછજજ્ઞઝઞટઠડઢણતથદધનપફબભમયરલળવશ્રષસહૹ'
-store(NuktaVyanjana) 'કખગજઝડઢફ'
+store(NuktaVyanjana) 'તઘજખકગ'
 store(ViramaMaatraa) 'eiouAEIORUL'
 store(ViramaMaatraaU) "ે" "િ" "ો" "ુ" "ા" "ૅ" "ી" "ૉ" "ૃ" "ૂ" "ૢ"
 store(aPlusMaatraa) 'aeiuw'
@@ -227,7 +230,7 @@ c 	implicit akaara deletion for Hindi mode
 store(opt1endings) outs(Punctuation) ' '
 $keymanonly: if(opt1 = 'hindi') any(Vyanjana)"્" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
 
-c
+any(Vyanjana)"्" + "^"	>	index(Vyanjana,1)"्"
 any(Vyanjana)"્" + "a"	>	index(Vyanjana,1)
 any(Vyanjana) + any(aPlusMaatraa) >	context index(aPlusMaatraaU,2) 
 any(Vyanjana)"્" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
@@ -238,15 +241,17 @@ any(Vyanjana)"ે" + "i"	>	index(Vyanjana,1)"ૈ"	c ei
 any(Vyanjana)"ો" + "o"	>	index(Vyanjana,1)"ૂ"	c oo
 any(Vyanjana)"ો" + "u"	>	index(Vyanjana,1)"ૌ"	c ou
 
-c
-any(NuktaVyanjana)"઼""્" + "a"	>	index(NuktaVyanjana,1)"઼"
-any(NuktaVyanjana)"઼" + any(aPlusMaatraa) >	context index(aPlusMaatraaU,3) 
-any(NuktaVyanjana)"઼""્" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"઼" index(ViramaMaatraaU,4) 
-any(NuktaVyanjana)"઼""િ" + "i"	>	index(NuktaVyanjana,1)"઼""ી"	c ii
-any(NuktaVyanjana)"઼""ુ" + "u"	>	index(NuktaVyanjana,1)"઼""ૂ"	c uu
-any(NuktaVyanjana)"઼""ે" + "e"	>	index(NuktaVyanjana,1)"઼""ી"	c ee
-any(NuktaVyanjana)"઼""ે" + "i"	>	index(NuktaVyanjana,1)"઼""ૈ"	c ei
-any(NuktaVyanjana)"઼""ો" + "o"	>	index(NuktaVyanjana,1)"઼""ૂ"	c oo
-any(NuktaVyanjana)"઼""ો" + "u"	>	index(NuktaVyanjana,1)"઼""ૌ"	c ou
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"઼" "્" + any(opt1endings)	>	index(NuktaVyanjana,2)"઼" index(opt1endings,5)
+any(NuktaVyanjana)"઼" "્" + "^"	>	index(NuktaVyanjana,1)"઼""્"
+any(NuktaVyanjana)"઼" "્" + "a"	>	index(NuktaVyanjana,1)"઼"
+any(NuktaVyanjana)"઼" "િ" + "i"	>	index(NuktaVyanjana,1)"઼""ી"	c ii
+any(NuktaVyanjana)"઼" "ુ" + "u"	>	index(NuktaVyanjana,1)"઼""ૂ"	c uu
+any(NuktaVyanjana)"઼" "ે" + "e"	>	index(NuktaVyanjana,1)"઼""ી"	c ee
+any(NuktaVyanjana)"઼" "ે" + "i"	>	index(NuktaVyanjana,1)"઼""ૈ"	c ei
+any(NuktaVyanjana)"઼" "ો" + "o"	>	index(NuktaVyanjana,1)"઼""ૂ"	c oo
+any(NuktaVyanjana)"઼" "ો" + "u"	>	index(NuktaVyanjana,1)"઼""ૌ"	c ou
+
+any(NuktaVyanjana)"઼" + any(aPlusMaatraa) >	 context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana)"઼" "્" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"઼" index(ViramaMaatraaU,4) 
 
 c  EOF
