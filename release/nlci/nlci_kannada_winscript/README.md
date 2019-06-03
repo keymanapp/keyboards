@@ -13,5 +13,5 @@ This Keyboard mimic Kannada WinScript Keyboard Layout designed by NLCI in 1988. 
  * macOS
  * Web
  * linux
- * Android
+ 
  
