@@ -32,3 +32,4 @@ ToDo
 	* "qyuuy" អ្យ៊ូយ as in CR, or អ្យូយ as in a separate document sent to me?
 	* "katzz" -> should give the Bunong vowel ក៝ត, but "kalzz" gives កឡ?
 * Backspace functionality is not implemented yet, do we have to have it?
+* Also the keys for ៕ and ៚
