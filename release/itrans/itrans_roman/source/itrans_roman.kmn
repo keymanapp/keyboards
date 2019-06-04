@@ -1,0 +1,232 @@
+﻿c Reference Schemes
+c https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration
+c https://en.wikipedia.org/wiki/ISO_15919
+c https://en.wikipedia.org/wiki/National_Library_at_Kolkata_romanisation#Scheme_table
+c http://aksharamukha.appspot.com/#/script-matrix
+c http://transliteration.eki.ee/pdf/Hindi-Marathi-Nepali.pdf
+c https://web.archive.org/web/20160414223033/http://homepage.ntlworld.com/stone-catend/trind.htm
+c
+store(&VERSION) "10.0" 
+store(&NAME) 'itrans_roman'
+store(&TARGETS) 'windows macosx linux web'
+store(&COPYRIGHT) '©2019 sanskritdocuments.org'
+store(&MESSAGE) 'Indic Romanization from ITRANS'
+store(&KMW_HELPTEXT) 'Supports ISO_15919, IAST, NLK transliteration schemes'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&BITMAP) 'itrans_roman.ico'
+store(&LAYOUTFILE) 'itrans_roman.keyman-touch-layout'
+
+begin Unicode > use(main)
+group(main) using keys
+
+c store(&mnemoniclayout) '1'
+
+c Map
++ "," > ","
++ "-" > "-"
++ "." > "."
++ ";" > ";"
++ "^" > "^"
++ "_" > "_"
++ "~" > "~"
+
+c Exceptions - avagraha and double dot
+"." + "."> "̤"
++ "'" > "’"
+"’" + "'" > "'"
+
+c Double for original character
+"," + "," > ","
+"-" + "-" > "-"
+";" + ";" > ";"
+"^" + "^" > "^"
+"_" + "_" > "_"
+"~" + "~" > "~"
+
+c vocalics - ISO
+"," + "r" > "r̥"
+"," + "l" > "l̥"
+"r̥" + "r" > "r̥̄"
+"l̥" + "l" > "l̥̄"
+
+c vocalics - IAST
+"." + "r" > "ṛ"
+"." + "l" > "ḷ"
+"ṛ" + "r" > "ṝ"
+"ḷ" + "l" > "ḹ"
+
+c underdots
+store(underdot) "tdnshk"
+store(underdotU) "ṭḍṇṣḥḳ"
+"." + any(underdot) > index(underdotU,2)
+
+c underdots - no precomposed letters
+"." + "g" > "g̣"
+"." + "j" > "j̣"
+"." + "f" > "f̣"
+
+c overdot - repeat the letter
+"g̣" + "g" > "ġ"
+"ṇ" + "n" > "ṅ"
+
+c sh
+"s" + "h" > "ś"
+";" + "s" > "ś"
+
+c overdot - with ;
+";" + "y" > "ẏ"
+";" + "g" > "ġ"
+";" + "n" > "ṅ"
+";" + "m" > "ṁ"
+
+c anusvara and candrabindu
+"i" + "." > "i."
+"i." + "m" > "ï"
+"ï" + "m" > "iṃ" c .im
+
+"." + "m" > "̇"
+"." + "c" > "̐"
+"̇" + "m" > "ṃ" c .mm
+
+c Alternate forms ;m and ~m given earlier
+"ṃ" + "m" > "ṁ" c .mmm
+"ṃ" + "c" > "m̐" c .mmc
+
+c underbar with underscore
+"_" + "l" > "ḻ"
+"_" + "r" > "ṟ"
+"_" + "n" > "ṉ"
+"_" + "k" > "ḵ"
+"ḵ" + "h" > "k͟h"
+"_" + "h" > "ẖ"
+
+c double underdot
+store(doubleunderdot) "̤" 
+store(doubleunderdotU) "dlrtsh" 
+any(doubleunderdot) + any(doubleunderdotU) > index(doubleunderdotU,2) index(doubleunderdot,1)
+
+c overbar with hyphen
+store(overmark) "aeiou" "n"
+store(overmarkU) "āēīōū" "ñ"
+"-" + any(overmark) > index(overmarkU,2)
+
+c overbar - repeated letters
+"a" + "a" > "ā" 
+"e" + "e" > "ī" 
+"i" + "i" > "ī" 
+"o" + "o" > "ū" 
+"u" + "u" > "ū"
+
+c overmarks - with tilde
+store(chandra) "aeo"
+store(chandraU) "ăĕŏ"
+"~" + any(chandra) > index(chandraU,2)
+"~" + "n" > "ñ"
+"~" + "m" > "m̐"
+
+c ISO overmarks with ^
+store(ISOchandra) "eocuh"
+store(ISOchandraU) "êôĉŭḫ"
+"^" + any(ISOchandra) > index(ISOchandraU,2)
+"^" + "n" > "n̆"
+
+c Alternate overmarks
+"a" + "e" > "æ"
+"a" + "w" > "ô"
+
+c Duplicate above rules with CAPS
+c for typing of headings
+
+
+c VOCALICS - ISO
+"," + "R" > "R̥"
+"," + "L" > "L̥"
+"R̥" + "R" > "R̥̄"
+"L̥" + "L" > "L̥̄"
+
+c VOCALICS - IAST
+"." + "R" > "Ṛ"
+"." + "L" > "Ḷ"
+"Ṛ" + "R" > "Ṝ"
+"Ḷ" + "L" > "Ḹ"
+
+c UNDERDOTS
+store(CAPS_UNDERDOT) "TDNSHK"
+store(CAPS_UNDERDOTU) "ṬḌṆṢḤḲ"
+"." + any(CAPS_UNDERDOT) > index(CAPS_UNDERDOTU,2)
+
+c UNDERDOTS - NO PRECOMPOSED LETTERS
+"." + "G" > "G̣"
+"." + "J" > "J̣"
+"." + "F" > "F̣"
+
+c OVERDOT - REPEAT THE LETTER
+"G̣" + "G" > "Ġ"
+"Ṇ" + "N" > "Ṅ"
+
+c SH
+"S" + "H" > "Ś"
+";" + "S" > "Ś"
+
+c OVERDOT - WITH ;
+";" + "Y" > "Ẏ"
+";" + "G" > "Ġ"
+";" + "N" > "Ṅ"
+";" + "M" > "Ṁ"
+
+c ANUSVARA AND CANDRABINDU
+"I" + "." > "I."
+"I." + "M" > "Ï"
+"Ï" + "M" > "IṂ" C .IM
+
+"." + "M" > "̇"
+"." + "C" > "̐"
+"̇" + "M" > "Ṃ" C .MM
+
+c ALTERNATE FORMS ;M AND ~M GIVEN EARLIER
+"Ṃ" + "M" > "Ṁ" C .MMM
+"Ṃ" + "C" > "M̐" C .MMC
+
+c UNDERBAR WITH UNDERSCORE
+"_" + "L" > "Ḻ"
+"_" + "R" > "Ṟ"
+"_" + "N" > "Ṉ"
+"_" + "K" > "Ḵ"
+"Ḵ" + "H" > "K͟H"
+"_" + "H" > "ẖ"
+
+c DOUBLE UNDERDOT
+store(CAPS_DOUBLEUNDERDOT) "̤" 
+store(CAPS_DOUBLEUNDERDOTU) "DLRTSH" 
+any(CAPS_DOUBLEUNDERDOT) + any(CAPS_DOUBLEUNDERDOTU) > index(CAPS_DOUBLEUNDERDOTU,2) index(CAPS_DOUBLEUNDERDOT,1)
+
+c OVERBAR WITH HYPHEN
+store(CAPS_OVERMARK) "AEIOU" "N"
+store(CAPS_OVERMARKU) "ĀĒĪŌŪ" "Ñ"
+"-" + any(CAPS_OVERMARK) > index(CAPS_OVERMARKU,2)
+
+c OVERBAR - REPEATED LETTERS
+"A" + "A" > "Ā" 
+"E" + "E" > "Ī" 
+"I" + "I" > "Ī" 
+"O" + "O" > "Ū" 
+"U" + "U" > "Ū"
+
+c OVERMARKS - WITH TILDE
+store(CAPS_CHANDRA) "AEO"
+store(CAPS_CHANDRAU) "ĂĔŎ"
+"~" + any(CAPS_CHANDRA) > index(CAPS_CHANDRAU,2)
+"~" + "N" > "Ñ"
+"~" + "M" > "M̐"
+
+c ISO OVERMARKS WITH ^
+store(CAPS_ISOCHANDRA) "EOCUH"
+store(CAPS_ISOCHANDRAU) "ÊÔĈŬḪ"
+"^" + any(CAPS_ISOCHANDRA) > index(CAPS_ISOCHANDRAU,2)
+"^" + "N" > "N̆"
+
+c ALTERNATE OVERMARKS
+"A" + "E" > "Æ"
+"A" + "W" > "Ô"
+
+c EOF 
