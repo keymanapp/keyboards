@@ -1,0 +1,225 @@
+﻿c File Name: bj_cree_east.kmn
+c File Version: Apr 2016
+c Rewritten by Bill Jancewicz
+
+c Originally written by Bob Hallissy with the following notes:
+c ================================================================
+c Purpose: KeyMan definition file for Eastern Cree, for use with
+c SILEasternCree fonts for Windows and KeyMan 3.1.
+c 
+c The definition herein matches the EasternCree GX font. That is,
+c when you install this KeyMan file in Windows, you can keyboard
+c essentially the same way as you would on a Macintosh which is
+c using the GX font. (The underlying document codes will be
+c different, of course.)
+c 
+c Known differences between this definition and the GX font are:
+c GX converts "je" (as in Jesus) to "chii"; I don't.
+c GX provides easy access to the alternate forms of re, ri, rii; I don't
+c 
+c Author: Bob Hallissy
+c Date: 16-Aug-95
+
+c ================================================================
+c Revision: 20 Nov 99, (BJ) changed bitmaps buttons, filename
+c Fixed for Windows 98 fonts, added "o" for "u"
+c Revision: 16 Jan 2000, (BJ) added "th"
+c Revision: 25 May 2002, (BJ) redone for Keyman 5.0 BJWCREE3.KMN
+c Revision: 02 May 2001, (BJ) redone for Unicode BJCRUNI.KMN
+c Revision: 17 Nov 2001, (BJ) added CapH for h char following digraphs
+c Revision: 09 Mar 2002, (BJ) fixed non-final "u" + "h" + continue
+c Revision: 27 Mar 2007, (BJ) added "x" for Christ symbol
+
+c Revision 21 Apr 2016, (BJ) old filename: bjcrUni.kmn (06 Feb 2009)
+c changed filename from bjcrUni.kmn to bj_oji_cree.kmn for Tavultesoft repository
+c updated stores for developer version 9.0
+
+store(&VERSION) '9.0'
+store(&NAME) "BJCreeUNI (east)"
+store(&BITMAP) 'bj_cree_east.ico'
+store(&COPYRIGHT) 'Copyright (c) 2016-2019 Bill Jancewicz NDC/SIL'
+store(&MESSAGE) "This keyboard may be freely used and redistributed"
+c store(&ETHNOLOGUECODE) 'crl'
+store(&VISUALKEYBOARD) 'bj_cree_east.kvks'
+store(&KEYBOARDVERSION) '9.0.4'
+store(&TARGETS) 'windows macosx linux web'
+
+begin Unicode > use(main)
+
+
+c ================================================================
+c STORES
+c ================================================================
+
+c initial consonant keys which can be typed on keyboard
+store(ConsKey)    "ptkcmnlsyrf"
+store(CapConsKey) "PTKCMNLSYRF"
+store(CCKey)      U+1449 U+1466 U+1483 U+14A1 U+14BB U+14D0 U+14EA U+1505 U+153E U+1550 U+155D
+
+
+c Consonant followed by vowel:
+c p      t      k      c      m      n      l      s      sh     y      r      f      th
+store(Ce)  U+142F U+144C U+146B U+1489 U+14A3 U+14C0 U+14D3 U+14ED U+1510 U+1526 U+1543 U+1553 U+155E
+store(Ci)  U+1431 U+144E U+146D U+148B U+14A5 U+14C2 U+14D5 U+14EF U+1511 U+1528 U+1546 U+1555 U+1560
+store(Cii) U+1432 U+144F U+146E U+148C U+14A6 U+14C3 U+14D6 U+14F0 U+1512 U+1529 U+1547 U+1556 U+1562
+store(Cu)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4 U+14D7 U+14F1 U+1513 U+152A U+1548 U+1557 U+1564
+store(Cuu) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5 U+14D8 U+14F2 U+1514 U+152B U+1549 U+1558 U+1565
+store(Co)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4 U+14D7 U+14F1 U+1513 U+152A U+1548 U+1557 U+1564
+store(Coo) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5 U+14D8 U+14F2 U+1514 U+152B U+1549 U+1558 U+1565
+store(Ca)  U+1438 U+1455 U+1472 U+1490 U+14AA U+14C7 U+14DA U+14F4 U+1515 U+152D U+154B U+1559 U+1566
+store(Caa) U+1439 U+1456 U+1473 U+1491 U+14AB U+14C8 U+14DB U+14F5 U+1516 U+152E U+154C U+155A U+1567
+
+c Standalone or trailing consonant:
+store(CC)  U+1449 U+1466 U+1483 U+14A1 U+14BB U+14D0 U+14EA U+1505 U+1525 U+153E U+1550 U+155D U+156A
+
+c Vowel keys
+store(VowelKey) "eiuoa"
+store(CapVowelKey) "EIUOA"
+
+c Standalone vowels (also includes doubled):
+c (Note that the u triangle (U+1426) is NOT the word-final form.
+store(VV) U+1401 U+1403 U+1405 U+1405 U+140A   U+1404 U+1406 U+140B
+
+c Special keys
+store(Hkey) "h"
+store(CapHkey) "H"
+store(WKey) "wW"
+
+
+c ================================================================
+c GROUP MAIN - convert keycodes
+c 
+c (Conversion to syllables and reordering, etc, takes place in
+c the group MakeSyllables.)
+c ================================================================
+
+group(main) using keys
+        
+c Special rules to deal with h:
+c s   +    h      > sh (small sh character)
+c s   +    H      > s (small s) and h
+c t   +    h      > th
+c t   +    H      > t (small t) and h
+c c   +    h      > c
+c c   +    H      > c (small c) and h
+c otherwise, h      > standalone h
+    U+1505 + any(Hkey)    > U+1525
+    U+1505 + any(CapHkey) > U+1505 U+1426
+    U+1466 + any(Hkey)    > U+156A
+    U+1466 + any(CapHkey) > U+1466 U+1426
+    U+14A1 + any(Hkey)    > U+14A1
+    U+14A1 + any(CapHkey) > U+14A1 U+1426
+         + any(Hkey)      > U+1426
+         + any(CapHkey)   > U+1426
+
+c Consonant key to standalone consonant (change CC store to CCKey store):
+    + any(ConsKey)    > index(CCKey,1)
+    + any(CapConsKey) > index(CCKey,1)
+
+c Alternate consonants: (voiced for voiceless)
+    + "b" > U+1449
+    + "d" > U+1466
+    + "g" > U+1483
+    + "j" > U+14A1
+
+    + "v" > U+155D
+    + "z" > U+1505
+
+
+c Vowel key to vowel:
+    + any(VowelKey)    > index(VV,1)
+    + any(CapVowelKey) > index(VV,1)
+
+c Special rules for w
+c k   +   w       > kw
+c m   +   w       > mw
+c otherwise, w       > standalone w
+    U+1483 + any(wKey) > U+1484
+    U+14BB + any(wKey) > U+14BD
+         + any(wKey) > U+1427
+
+c Period
+    + "." > U+166E
+
+c Special thin non-breaking space for preverbs:
+    + "_" > U+202F
+
+c Letter x for Christ (requested by David Masty 2007)
+c X   > christ symbol
+    + "x"  > U+166D
+    + "X"  > U+166D
+
+c If we did anything, then go look for syllables
+    match   > use(MakeSyllables)
+
+
+c ================================================================
+c GROUP MAKESYLLABLES
+c 
+c This group process no keys, but looks at stuff already in the
+c context stack and does things such as make syllables, reorder
+c the "w" when in CwV, handle word-final u, etc.
+c ================================================================
+
+group(MakeSyllables)
+
+c Special rules for w:
+c k   +   w  > kw
+c m   +   w  > mw
+    U+1483 U+1427 > U+1484
+    U+14BB U+1427 > U+14BD
+
+c Re-order the w when the syllable is complete:
+c kw +            vowel   >  w    k      vowel
+c mw +            vowel   >  w    m      vowel
+c Consonant + w + vowel   >  w Consonant vowel
+    U+1484            any(VV) > U+1427 U+1483    index(VV,2)
+    U+14BD            any(VV) > U+1427 U+14BB    index(VV,2)
+    any(CC)   U+1427  any(VV) > U+1427 index(CC,1) index(VV,3)
+
+c Convert consonant followed by vowels into syllable:
+    any(CC) U+1401 > index(Ce,1)
+    any(CC) U+1403 > index(Ci,1)
+    any(CC) U+1404 > index(Cii,1)
+    any(CC) U+1405 > index(Cu,1)
+    any(CC) U+1406 > index(Cuu,1)
+    any(CC) U+1405 > index(Co,1)
+    any(CC) U+1406 > index(Coo,1)
+    any(CC) U+140A > index(Ca,1)
+    any(CC) U+140B > index(Caa,1)
+
+c Vowel followed by duplicate vowel changes to long form:
+    U+1403    U+1403 > U+1404
+    U+1405    U+1405 > U+1406
+    U+140A    U+140A > U+140B
+    any(Ci) U+1403 > index(Cii,1)
+    any(Cu) U+1405 > index(Cuu,1)
+    any(Co) U+1405 > index(Coo,1)
+    any(Ca) U+140A > index(Caa,1)
+
+c Vowel (other than u, already handled above) followed by u makes u word-final:
+    any(Ce)  U+1405 > index(Ce,1)  U+1424
+    any(Ci)  U+1405 > index(Ci,1)  U+1424
+    any(Cii) U+1405 > index(Cii,1) U+1424
+    any(Cuu) U+1405 > index(Cuu,1) U+1424
+    any(Coo) U+1405 > index(Coo,1) U+1424
+    any(Ca)  U+1405 > index(Ca,1)  U+1424
+    any(Caa) U+1405 > index(Caa,1) U+1424
+    any(VV)  U+1405 > index(VV,1)  U+1424
+
+c Word-final u followed by any letter changes u back to standalone:
+    U+1424 any(CC) > U+1405 index(CC,2)
+    U+1424 any(VV) > U+1405 index(VV,2)
+c Word-final u+h+any letter changes u back to standalone
+    U+1424 U+1426 any(CC) > U+1405 U+1426 index(CC,3)
+    U+1424 U+1426 any(VV) > U+1405 U+1426 index(VV,3)
+    U+1424  U+1427   > U+1405  U+1427
+
+c Special rule for Christ (remember, ch is already c)
+c ch   ri   s    t   > christ symbol
+    U+14A1 U+1546 U+1505 U+1466 > U+166D
+
+c If we did anything, then go back through again
+    match > use(MakeSyllables)
+    
+c end of file

@@ -1,7 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
-
-
+## 1.8.1 (7 Dec 2018)
+* Switch abc and currency keys on numeric/symbol layers of touch layout.
 ## 1.8: (6 Jul 2018)
 * Ported to GitHub.
 * Integrated logic for options
