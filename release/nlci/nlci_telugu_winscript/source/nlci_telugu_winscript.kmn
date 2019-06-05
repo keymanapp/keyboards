@@ -1,6 +1,10 @@
-﻿store(&NAME) 'NLCI Telugu WinScript'
-store(&COPYRIGHT) '© NLCI 2000-2018'
-store(&KEYBOARDVERSION) '2.0.0'
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Telugu WinScript Keyboard[NLCI]'
+store(&COPYRIGHT) '© 2000-2019 NLCI,Bangalore '
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'windows macosx linux web'
+store(&BITMAP) 'nlci_telugu_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_telugu_winscript.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -57,6 +61,7 @@ c Adjust the behavior of R
    
 c Adjust the behavior of S
 + 'S' > 'ఁ'  
+'`' dk(bt) + 'S' > 'S'
 
 c Adjust the behavior of u
 'ఉ' + 'u' > 'ఊ'    
@@ -66,14 +71,16 @@ c Adjust the behavior of s
 'స' + 's'> 'ష'      
 
 c Adjust the behavior of F
- + 'F' > nul
- + 'f' > nul
+ + 'F' > nul  
+ '`' dk(bt) + 'F' > 'F'
+ + 'f' > nul   
+ '`' dk(bt) + 'f' > 'f'
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '్' U+200C
 any(consonants) '్' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",;:.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c = is a modifier key that alters the default behavior of some keystrokes
