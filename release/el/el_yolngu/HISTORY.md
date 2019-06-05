@@ -1,5 +1,8 @@
 # Yolngu Change History
 
+## 2019-05-13 2.2.1
+* Add langtags to kps
+
 ## 2017-12-08 2.2
 * Fixed version number (was still listed as 2.1)
 

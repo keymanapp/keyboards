@@ -5,12 +5,12 @@ store(&VERSION) '9.0'
 store(&NAME) 'SIL Nubian'
 store(&BITMAP) 'sil_nubian.bmp'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© 2008-2018 SIL International'
+store(&COPYRIGHT) '© 2008-2019 SIL International'
 store(&MESSAGE) "The SIL Nubian Unicode keyboard is distributed under The MIT License (MIT)."
-store(&ETHNOLOGUECODE) 'fia dgl xnz'
-store(&KEYBOARDVERSION) '1.2.1'
-store(&VISUALKEYBOARD) 'sil_nubian.kvk'
-store(&LAYOUTFILE) 'sil_nubian-layout.js'
+c store(&ETHNOLOGUECODE) 'fia dgl xnz'
+store(&KEYBOARDVERSION) '1.2.2'
+store(&VISUALKEYBOARD) 'sil_nubian.kvks'
+store(&LAYOUTFILE) 'sil_nubian.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -67,6 +67,12 @@ group(main) using keys
 + [SHIFT K_W] > U+2CB1 U+0304
 + [SHIFT K_X] > U+2CAD
 + [SHIFT K_Y] > U+2CA9
+
++ [SHIFT K_Q] > dk(none)
++ [SHIFT K_R] > dk(none)
++ [SHIFT K_F] > dk(none)
++ [SHIFT K_Z] > dk(none)
++ [SHIFT K_m] > dk(none)
 
 + [K_EQUAL] > U+0304
        

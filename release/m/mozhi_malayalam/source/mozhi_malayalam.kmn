@@ -1,417 +1,548 @@
-﻿c Malayalam Keyman Keyboard for Mozhi Keyboard Layout
-c Original work done by Raj Nair, but the source is not available
-c This keyboard was created by Junaid P. V.
-c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
-store(&VERSION) '9.0'
-store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.0.6'
+﻿
+store(&VERSION) "9.0"
+store(&NAME) "Mozhi Malayalam"
+store(&VISUALKEYBOARD) 'mozhi_malayalam.kvks'
+store(&COPYRIGHT) '2006-2018 © Raj Nair'
+store(&MESSAGE) 'Mozhi Keymap is a varamozhi based keyboard.'
 store(&BITMAP) 'mozhi_malayalam.ico'
-store(&COPYRIGHT) '© Junaid P. V.'
+store(&CAPSALWAYSOFF) "1"
+c store(&20) "8.0.355.0"
 store(&TARGETS) 'windows macosx linux web'
+
+store(store7) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരറലളഴവശഷസഹ"
+store(store8) "്"
+store(store9) "ണനരലളക"
+store(store10) "ം"
+store(store11) "മ"
+store(store12) "അആഇഈഉഊഎഏഐഒഓഔ"
+store(store13) "ആഇഈഉഊഋഎഏഐഒഓഔഔ"
+store(store14) "ാിീുൂൃെേൈൊോൌൗ"
+store(store15) "ാിീുൂൃെേൈൊോൌൗ"
+store(store16) "ാൂൃേോീ"
+store(store17) "൧൨൩൪൫൬൭൮൯൦0123456789"
+store(store18) [SHIFT K_A] x10 [K_O] x10 [SHIFT K_O] x10 [K_E] x10 [SHIFT K_E] x10 [K_U] x10 [SHIFT K_U] x10 [K_I] x10 [SHIFT K_I] x10
+store(store19) "ാൊോെേുൂിീ"
+store(store20) [K_Y] x10 [K_V] x10 [K_W] x10 [K_R] x10 [SHIFT K_R] x10
+store(store21) "യവവരര"
+store(&KEYBOARDVERSION) '1.2'
 store(&ETHNOLOGUECODE) 'mal'
-store(&WINDOWSLANGUAGES) 'x044C'
-store(&LANGUAGE) 'x044C'
-begin Unicode > use(main)
 
-group(main) using keys
+begin Unicode > use(group1)
 
-store(consonants) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷസഹളഴറ"
-store(vowels) "അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔ"
-store(vowelsigns) "ാിീുൂൃൄൢൣെേൈൊോൗ"
+group(group1) using keys
+  any(store7) any(store8) any(store7)  + [K_BKSP] > context "്"  c line(0)
+  any(store7) any(store8)  + [K_BKSP] > nul  c line(0)
+  any(store7)  + [K_BKSP] > context "്"  c line(0)
+  any(store14)  + [K_BKSP] > "്"  c line(0)
+  "മ്"  + [K_SPACE] > "ം "  c line(0)
+  "/"  + "/" > "ऽ"  c line(0)
+   + "/" > "/"  c line(0)
+  "\"  + [K_0] > "൦"  c line(0)
+   + [SHIFT K_0] > ")"  c line(0)
+  "\"  + [K_1] > "൧"  c line(0)
+   + [SHIFT K_1] > "!"  c line(0)
+  "\"  + [K_2] > "൨"  c line(0)
+   + [SHIFT K_2] > "@"  c line(0)
+  "\"  + [K_3] > "൩"  c line(0)
+   + [SHIFT K_3] > "#"  c line(0)
+  "\"  + [K_4] > "൪"  c line(0)
+   + [SHIFT K_4] > "$"  c line(0)
+  "\"  + [K_5] > "൫"  c line(0)
+   + [SHIFT K_5] > "%"  c line(0)
+  "ര്‍" deadkey(3)  + [SHIFT K_6] > "ഋ"  c line(0)
+  "്ര്"  + [SHIFT K_6] > "ൃ"  c line(0)
+  "്റ്"  + [SHIFT K_6] > "ൃ"  c line(0)
+  "ർ" deadkey(3)  + [SHIFT K_6] > "ഋ"  c line(0)
+  "\"  + [K_6] > "൬"  c line(0)
+  "\"  + [K_7] > "൭"  c line(0)
+   + [SHIFT K_7] > "&"  c line(0)
+  "\"  + [K_8] > "൮"  c line(0)
+   + [SHIFT K_8] > "*"  c line(0)
+  "\"  + [K_9] > "൯"  c line(0)
+   + [SHIFT K_9] > "("  c line(0)
+   + ";" > ";"  c line(0)
+  "ര്ര്"  + [K_A] > "റ"  c line(0)
+  "്‍" deadkey(1)  + [K_A] > nul  c line(0)
+  "്‍" deadkey(2)  + [K_A] > nul  c line(0)
+  "്‍" deadkey(3)  + [K_A] > nul  c line(0)
+  "്‍" deadkey(4)  + [K_A] > nul  c line(0)
+  "്‍" deadkey(5)  + [K_A] > nul  c line(0)
+  "്‍" deadkey(6)  + [K_A] > nul  c line(0)
+  "്‍" deadkey(1)  + [SHIFT K_A] > nul "ാ"  c line(0)
+  "്‍" deadkey(2)  + [SHIFT K_A] > nul "ാ"  c line(0)
+  "്‍" deadkey(3)  + [SHIFT K_A] > nul "ാ"  c line(0)
+  "്‍" deadkey(4)  + [SHIFT K_A] > nul "ാ"  c line(0)
+  "്‍" deadkey(5)  + [SHIFT K_A] > nul "ാ"  c line(0)
+  "്‍" deadkey(6)  + [SHIFT K_A] > nul "ാ"  c line(0)
+  "ൺ" deadkey(1)  + [K_A] > "ണ"  c line(0)
+  "ൻ" deadkey(2)  + [K_A] > "ന"  c line(0)
+  "ർ" deadkey(3)  + [K_A] > "ര"  c line(0)
+  "ൽ" deadkey(4)  + [K_A] > "ല"  c line(0)
+  "ൾ" deadkey(5)  + [K_A] > "ള"  c line(0)
+  "ൿ" deadkey(6)  + [K_A] > "ക"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_A] > "ണാ"  c line(0)
+  "ൻ" deadkey(2)  + [SHIFT K_A] > "നാ"  c line(0)
+  "ർ" deadkey(3)  + [SHIFT K_A] > "രാ"  c line(0)
+  "ൽ" deadkey(4)  + [SHIFT K_A] > "ലാ"  c line(0)
+  "ൾ" deadkey(5)  + [SHIFT K_A] > "ളാ"  c line(0)
+  "ൿ" deadkey(6)  + [SHIFT K_A] > "കാ"  c line(0)
+  any(store10)  + [K_A] > index(store11, 1)  c line(0)
+  any(store10)  + [SHIFT K_A] > index(store11, 1) "ാ"  c line(0)
+  any(store8)  + [K_A] > nul  c line(0)
+  any(store8)  + [SHIFT K_A] > "ാ"  c line(0)
+  any(store7)  + [K_A] > context "ാ"  c line(0)
+  "ഋ"  + [K_A] > "റ"  c line(0)
+  "ഋ"  + [SHIFT K_A] > "റാ"  c line(0)
+  "അ"  + [K_A] > "ആ"  c line(0)
+  "ാ"  + [K_A] > context "‍ാ"  c line(0)
+  "ആ"  + [K_A] > context "‍ാ"  c line(0)
+  "@"  + [K_A] > "‌ാ"  c line(0)
+  "@"  + [SHIFT K_A] > "‌ാ"  c line(0)
+   + [K_A] > "അ"  c line(0)
+   + [SHIFT K_A] > "ആ"  c line(0)
+   + [K_B] > "ബ്"  c line(0)
+   + [SHIFT K_B] > "ബ്ബ്"  c line(0)
+  deadkey(7) "ക്"  + [K_C] > deadkey(8) "ക്ക്"  c line(0)
+   + [K_C] > deadkey(7) "ക്"  c line(0)
+   + [SHIFT K_C] > "ച്ച്"  c line(0)
+  "‍" deadkey(2)  + [K_D] > nul "ദ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_D] > "ന്ദ്"  c line(0)
+  "‍" deadkey(1)  + [SHIFT K_D] > nul "ഡ്"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_D] > "ണ്ഡ്"  c line(0)
+   + [K_D] > "ദ്"  c line(0)
+   + [SHIFT K_D] > "ഡ്"  c line(0)
+  "്‍" deadkey(1)  + [SHIFT K_E] > nul "േ"  c line(0)
+  "്‍" deadkey(1)  + [K_E] > nul "െ"  c line(0)
+  "്‍" deadkey(2)  + [SHIFT K_E] > nul "േ"  c line(0)
+  "്‍" deadkey(2)  + [K_E] > nul "െ"  c line(0)
+  "്‍" deadkey(3)  + [SHIFT K_E] > nul "േ"  c line(0)
+  "്‍" deadkey(3)  + [K_E] > nul "െ"  c line(0)
+  "്‍" deadkey(4)  + [K_E] > nul "െ"  c line(0)
+  "്‍" deadkey(4)  + [SHIFT K_E] > nul "േ"  c line(0)
+  "്‍" deadkey(5)  + [K_E] > nul "െ"  c line(0)
+  "്‍" deadkey(5)  + [SHIFT K_E] > nul "േ"  c line(0)
+  "്‍" deadkey(6)  + [K_E] > nul "െ"  c line(0)
+  "്‍" deadkey(6)  + [SHIFT K_E] > nul "േ"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_E] > "ണേ"  c line(0)
+  "ൺ" deadkey(1)  + [K_E] > "ണെ"  c line(0)
+  "ൻ" deadkey(2)  + [SHIFT K_E] > "നേ"  c line(0)
+  "ൻ" deadkey(2)  + [K_E] > "നെ"  c line(0)
+  "ർ" deadkey(3)  + [SHIFT K_E] > "രേ"  c line(0)
+  "ർ" deadkey(3)  + [K_E] > "രെ"  c line(0)
+  "ൽ" deadkey(4)  + [K_E] > "ലെ"  c line(0)
+  "ൽ" deadkey(4)  + [SHIFT K_E] > "ലേ"  c line(0)
+  "ൾ" deadkey(5)  + [K_E] > "ളെ"  c line(0)
+  "ൾ" deadkey(5)  + [SHIFT K_E] > "ളേ"  c line(0)
+  "ൿ" deadkey(6)  + [K_E] > "കെ"  c line(0)
+  "ൿ" deadkey(6)  + [SHIFT K_E] > "കേ"  c line(0)
+  any(store10)  + [K_E] > index(store11, 1) "െ"  c line(0)
+  any(store10)  + [SHIFT K_E] > index(store11, 1) "േ"  c line(0)
+  any(store8)  + [K_E] > "െ"  c line(0)
+  any(store8)  + [SHIFT K_E] > "േ"  c line(0)
+  "ി"  + [K_E] > "ീ"  c line(0)
+  "െ"  + [K_E] > "ീ"  c line(0)
+  "എ"  + [K_E] > "ഈ"  c line(0)
+  "ഋ"  + [K_E] > "റെ"  c line(0)
+  "ഋ"  + [SHIFT K_E] > "റേ"  c line(0)
+  "@"  + [K_E] > "‌െ"  c line(0)
+  "@"  + [SHIFT K_E] > "‌േ"  c line(0)
+  any(store7)  + [K_E] > context "േ"  c line(0)
+   + [K_E] > "എ"  c line(0)
+   + [SHIFT K_E] > "ഏ"  c line(0)
+   + [K_F] > "ഫ്"  c line(0)
+   + [SHIFT K_F] > "ഫ്"  c line(0)
+  "ന്‍" deadkey(2)  + [K_G] > "ങ്"  c line(0)
+  "ണ്‍" deadkey(1)  + [SHIFT K_G] > "ങ്ങ്"  c line(0)
+  "ന്ന്"  + [K_G] > "ങ്ങ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_G] > "ങ്"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_G] > "ങ്ങ്"  c line(0)
+   + [K_G] > "ഗ്"  c line(0)
+   + [SHIFT K_G] > "ഗ്ഗ്"  c line(0)
+  "ന്‍" deadkey(2) deadkey(7) "ക്"  + [K_H] > "ഞ്ച്"  c line(0)
+  deadkey(8) "ക്ക്"  + [K_H] > "ച്ച്"  c line(0)
+  "ൻ" deadkey(2) deadkey(7) "ക്"  + [K_H] > "ഞ്ച്"  c line(0)
+  "റ്റ്"  + [K_H] > "ത്"  c line(0)
+  "ട്ട്"  + [K_H] > "ത്ത്"  c line(0)
+  "ന്റ്"  + [K_H] > "ന്ത്"  c line(0)
+  "ന്ദ്"  + [K_H] > "ന്ധ്"  c line(0)
+  "ന്‍" deadkey(2)  + [K_H] > "ഞ്"  c line(0)
+  "ണ്ട്"  + [K_H] > "ണ്ഠ്"  c line(0)
+  deadkey(7) "ക്"  + [K_H] > "ച്"  c line(0)
+  "ന്ച"  + [K_H] > "ഞ്ച്"  c line(0)
+  "ട്"  + [K_H] > "ഠ്"  c line(0)
+  "ത്"  + [K_H] > "ഥ്"  c line(0)
+  "ട്"  + [SHIFT K_H] > "ത്ത്"  c line(0)
+  "പ്"  + [K_H] > "ഫ്"  c line(0)
+  "സ്"  + [K_H] > "ഷ്"  c line(0)
+  "ദ്"  + [K_H] > "ധ്"  c line(0)
+  "ഡ്"  + [K_H] > "ഢ്"  c line(0)
+  "ഡ്"  + [SHIFT K_H] > "ധ്"  c line(0)
+  "ഗ്"  + [K_H] > "ഘ്"  c line(0)
+  "ജ്"  + [K_H] > "ഝ്"  c line(0)
+  "ക്"  + [K_H] > "ഖ്"  c line(0)
+  "ശ്"  + [K_H] > "ഴ്"  c line(0)
+  "ച്"  + [K_H] > "ഛ്"  c line(0)
+  "ബ്"  + [K_H] > "ഭ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_H] > "ഞ്"  c line(0)
+   + [K_H] > "ഹ്"  c line(0)
+   + [SHIFT K_H] > context "ഃ"  c line(0)
+  "്‍" deadkey(1)  + [SHIFT K_I] > nul "ീ"  c line(0)
+  "്‍" deadkey(1)  + [K_I] > nul "ി"  c line(0)
+  "്‍" deadkey(2)  + [K_I] > nul "ി"  c line(0)
+  "്‍" deadkey(2)  + [SHIFT K_I] > nul "ീ"  c line(0)
+  "്‍" deadkey(3)  + [SHIFT K_I] > nul "ീ"  c line(0)
+  "്‍" deadkey(3)  + [K_I] > nul "ി"  c line(0)
+  "്‍" deadkey(4)  + [K_I] > nul "ി"  c line(0)
+  "്‍" deadkey(4)  + [SHIFT K_I] > nul "ീ"  c line(0)
+  "്‍" deadkey(5)  + [K_I] > nul "ി"  c line(0)
+  "്‍" deadkey(5)  + [SHIFT K_I] > nul "ീ"  c line(0)
+  "്‍" deadkey(6)  + [K_I] > nul "ി"  c line(0)
+  "്‍" deadkey(6)  + [SHIFT K_I] > nul "ീ"  c line(0)
+  deadkey(7) "ക്"  + [K_I] > "സി"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_I] > "ണീ"  c line(0)
+  "ൺ" deadkey(1)  + [K_I] > "ണി"  c line(0)
+  "ൻ" deadkey(2)  + [K_I] > "നി"  c line(0)
+  "ൻ" deadkey(2)  + [SHIFT K_I] > "നീ"  c line(0)
+  "ർ" deadkey(3)  + [SHIFT K_I] > "രീ"  c line(0)
+  "ർ" deadkey(3)  + [K_I] > "രി"  c line(0)
+  "ൽ" deadkey(4)  + [K_I] > "ലി"  c line(0)
+  "ൽ" deadkey(4)  + [SHIFT K_I] > "ലീ"  c line(0)
+  "ൾ" deadkey(5)  + [K_I] > "ളി"  c line(0)
+  "ൾ" deadkey(5)  + [SHIFT K_I] > "ളീ"  c line(0)
+  "ൿ" deadkey(6)  + [K_I] > "കി"  c line(0)
+  "ൿ" deadkey(6)  + [SHIFT K_I] > "കീ"  c line(0)
+  any(store10)  + [K_I] > index(store11, 1) "ി"  c line(0)
+  any(store10)  + [SHIFT K_I] > index(store11, 1) "ീ"  c line(0)
+  any(store8)  + [K_I] > "ി"  c line(0)
+  any(store8)  + [SHIFT K_I] > "ീ"  c line(0)
+  "ി"  + [K_I] > "ീ"  c line(0)
+  any(store7)  + [K_I] > context "ൈ"  c line(0)
+  "ഋ"  + [K_I] > "റി"  c line(0)
+  "ഋ"  + [SHIFT K_I] > "റീ"  c line(0)
+  "ഇ"  + [K_I] > "ഈ"  c line(0)
+  "ീ"  + [K_I] > context "‍ീ"  c line(0)
+  "അ"  + [K_I] > "ഐ"  c line(0)
+  "@"  + [K_I] > "‌ി"  c line(0)
+  "@"  + [SHIFT K_I] > "‌ീ"  c line(0)
+  "െ"  + [K_I] > "ൈ"  c line(0)
+   + [K_I] > "ഇ"  c line(0)
+   + [SHIFT K_I] > "ഐ"  c line(0)
+  "ന്‍" deadkey(2)  + [K_J] > "ഞ്"  c line(0)
+  "ന്ന്"  + [K_J] > "ഞ്ഞ്"  c line(0)
+  "ണ്‍" deadkey(1)  + [SHIFT K_J] > "ഞ്ഞ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_J] > "ഞ്"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_J] > "ങ്ങ്"  c line(0)
+   + [K_J] > "ജ്"  c line(0)
+   + [SHIFT K_J] > "ജ്ജ്"  c line(0)
+  "ന്‍" deadkey(2)  + [K_K] > "ങ്ക്"  c line(0)
+  "ക്"  + [K_K] > "ക്ക്"  c line(0)
+  "ദൃ"  + [K_K] > context "ക്‌"  c line(0)
+  "ൻ" deadkey(2)  + [K_K] > "ങ്ക്"  c line(0)
+   + [K_K] > "ക്"  c line(0)
+   + [SHIFT K_K] > "ക്ക്"  c line(0)
+  "‍" deadkey(4)  + [K_L] > nul "ല്"  c line(0)
+  "ൽ" deadkey(4)  + [K_L] > "ല്ല്"  c line(0)
+  "‍" deadkey(5)  + [SHIFT K_L] > "ള്"  c line(0)
+  "ൾ" deadkey(5)  + [SHIFT K_L] > "ള്ള്"  c line(0)
+  any(store10)  + [K_L] > "മ്ല്"  c line(0)
+  any(store10)  + [SHIFT K_L] > "മ്ല്"  c line(0)
+  any(store8)  + [K_L] > context "ല്"  c line(0)
+  any(store8)  + [SHIFT K_L] > context "ല്"  c line(0)
+   + [K_L] > "ൽ" deadkey(4)  c line(0)
+   + [SHIFT K_L] > "ൾ" deadkey(5)  c line(0)
+  "‍" deadkey(2)  + [K_M] > nul "മ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_M] > "ന്മ്"  c line(0)
+  "‍" deadkey(1)  + [K_M] > nul "മ്"  c line(0)
+  "ൺ" deadkey(1)  + [K_M] > "ണ്മ്"  c line(0)
+  any(store7)  + [K_M] > context "ം"  c line(0)
+  any(store12)  + [K_M] > context "ം"  c line(0)
+  any(store14)  + [K_M] > context "ം"  c line(0)
+  "ം"  + [K_M] > "മ്മ്"  c line(0)
+   + [K_M] > "മ്"  c line(0)
+   + [SHIFT K_M] > "മ്മ്"  c line(0)
+  "‍" deadkey(2)  + [K_N] > nul "ന്"  c line(0)
+  "ൻ" deadkey(2)  + [K_N] > "ന്ന്"  c line(0)
+  "‍" deadkey(1)  + [SHIFT K_N] > nul "ണ്"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_N] > "ണ്ണ്"  c line(0)
+   + [K_N] > "ൻ" deadkey(2)  c line(0)
+   + [SHIFT K_N] > "ൺ" deadkey(1)  c line(0)
+  "്‍" deadkey(1)  + [K_O] > nul "ൊ"  c line(0)
+  "്‍" deadkey(1)  + [SHIFT K_O] > nul "ോ"  c line(0)
+  "്‍" deadkey(2)  + [K_O] > nul "ൊ"  c line(0)
+  "്‍" deadkey(2)  + [SHIFT K_O] > nul "ോ"  c line(0)
+  "്‍" deadkey(3)  + [K_O] > nul "ൊ"  c line(0)
+  "്‍" deadkey(3)  + [SHIFT K_O] > nul "ോ"  c line(0)
+  "്‍" deadkey(4)  + [SHIFT K_O] > nul "ോ"  c line(0)
+  "്‍" deadkey(4)  + [K_O] > nul "ൊ"  c line(0)
+  "്‍" deadkey(5)  + [SHIFT K_O] > nul "ോ"  c line(0)
+  "്‍" deadkey(5)  + [K_O] > nul "ൊ"  c line(0)
+  "്‍" deadkey(6)  + [K_O] > nul "ൊ"  c line(0)
+  "്‍" deadkey(6)  + [SHIFT K_O] > nul "ോ"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_O] > "ണോ"  c line(0)
+  "ൺ" deadkey(1)  + [K_O] > "ണൊ"  c line(0)
+  "ൻ" deadkey(2)  + [K_O] > "നൊ"  c line(0)
+  "ൻ" deadkey(2)  + [SHIFT K_O] > "നോ"  c line(0)
+  "ർ" deadkey(3)  + [SHIFT K_O] > "രോ"  c line(0)
+  "ർ" deadkey(3)  + [K_O] > "രൊ"  c line(0)
+  "ൽ" deadkey(4)  + [K_O] > "ലൊ"  c line(0)
+  "ൽ" deadkey(4)  + [SHIFT K_O] > "ലോ"  c line(0)
+  "ൾ" deadkey(5)  + [K_O] > "ളൊ"  c line(0)
+  "ൾ" deadkey(5)  + [SHIFT K_O] > "ളോ"  c line(0)
+  "ൿ" deadkey(6)  + [K_O] > "കൊ"  c line(0)
+  "ൿ" deadkey(6)  + [SHIFT K_O] > "കോ"  c line(0)
+  any(store10)  + [K_O] > index(store11, 1) "ൊ"  c line(0)
+  any(store10)  + [SHIFT K_O] > index(store11, 1) "ോ"  c line(0)
+  any(store8)  + [K_O] > "ൊ"  c line(0)
+  any(store8)  + [SHIFT K_O] > "ോ"  c line(0)
+  "ൊ"  + [K_O] > "ൂ"  c line(0)
+  any(store7)  + [K_O] > context "ൊ"  c line(0)
+  "ഋ"  + [K_O] > "റൊ"  c line(0)
+  "ഋ"  + [SHIFT K_O] > "റോ"  c line(0)
+  "ഒ"  + [K_O] > "ഊ"  c line(0)
+  "ൊ"  + [K_O] > "ൂ"  c line(0)
+  "ൂ"  + [K_O] > context "‍ൂ"  c line(0)
+  "ോ"  + [SHIFT K_O] > context "‍ാ"  c line(0)
+  "ാ"  + [SHIFT K_O] > context "‍ാ"  c line(0)
+  "@"  + [K_O] > "‌ൊ"  c line(0)
+  "@"  + [SHIFT K_O] > "‌ോ"  c line(0)
+   + [K_O] > "ഒ"  c line(0)
+   + [SHIFT K_O] > "ഓ"  c line(0)
+  "ല്പ്"  + [K_P] > "ൽപ്പ്"  c line(0)
+  "‍" deadkey(4)  + [K_P] > nul "പ്"  c line(0)
+  "ൽ" deadkey(4)  + [K_P] > "ല്പ്"  c line(0)
+  "മ്"  + [K_P] > "മ്പ്"  c line(0)
+  "ം"  + [K_P] > "മ്പ്"  c line(0)
+   + [K_P] > "പ്"  c line(0)
+   + [SHIFT K_P] > "പ്പ്"  c line(0)
+   + [K_Q] > "ക്ക്"  c line(0)
+   + [SHIFT K_Q] > "ക്യു"  c line(0)
+  "‍" deadkey(1)  + [K_R] > "ര്"  c line(0)
+  "‍" deadkey(1)  + [SHIFT K_R] > "ര്"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_R] > "ണ്ര്"  c line(0)
+  "ൺ" deadkey(1)  + [K_R] > "ണ്ര്"  c line(0)
+  "‍" deadkey(2)  + [K_R] > "ര്"  c line(0)
+  "‍" deadkey(2)  + [SHIFT K_R] > "ര്"  c line(0)
+  "ൻ" deadkey(2)  + [K_R] > "ന്ര്"  c line(0)
+  "ൻ" deadkey(2)  + [SHIFT K_R] > "ന്ര്"  c line(0)
+  "‍" deadkey(3)  + [SHIFT K_R] > "ര്"  c line(0)
+  "‍" deadkey(3)  + [K_R] > "ര്"  c line(0)
+  "ർ" deadkey(3)  + [K_R] > "ര്ര്"  c line(0)
+  "ർ" deadkey(3)  + [SHIFT K_R] > "ര്ര്"  c line(0)
+  "‍" deadkey(4)  + [SHIFT K_R] > "ര്"  c line(0)
+  "‍" deadkey(4)  + [K_R] > "ര്"  c line(0)
+  "ൽ" deadkey(4)  + [K_R] > "ല്ര്"  c line(0)
+  "ൽ" deadkey(4)  + [SHIFT K_R] > "ല്ര്"  c line(0)
+  "‍" deadkey(5)  + [K_R] > "ര്"  c line(0)
+  "‍" deadkey(5)  + [SHIFT K_R] > "ര്"  c line(0)
+  "ൾ" deadkey(5)  + [K_R] > "ള്ര്"  c line(0)
+  "ൾ" deadkey(5)  + [SHIFT K_R] > "ള്ര്"  c line(0)
+  "‍" deadkey(6)  + [SHIFT K_R] > "ര്"  c line(0)
+  "‍" deadkey(6)  + [K_R] > "ര്"  c line(0)
+  "ൿ" deadkey(6)  + [K_R] > "ക്ര്"  c line(0)
+  "ൿ" deadkey(6)  + [SHIFT K_R] > "ക്ര്"  c line(0)
+  "സം"  + [K_R] > context "ര്"  c line(0)
+  any(store10)  + [K_R] > index(store11, 1) "്ര്"  c line(0)
+  any(store10)  + [SHIFT K_R] > index(store11, 1) "്ര്"  c line(0)
+  any(store8)  + [K_R] > context "ര്"  c line(0)
+  any(store8)  + [SHIFT K_R] > context "ര്"  c line(0)
+  any(store12)  + [SHIFT K_R] > context "റ്"  c line(0)
+  any(store7)  + [SHIFT K_R] > context "റ്"  c line(0)
+  any(store14)  + [SHIFT K_R] > context "റ്"  c line(0)
+  "@"  + [K_R] > "‍"  c line(0)
+   + [K_R] > "ർ" deadkey(3)  c line(0)
+   + [SHIFT K_R] > "റ്"  c line(0)
+  "ല്‍" deadkey(4)  + [K_S] > "ത്സ്"  c line(0)
+  "ൽ" deadkey(4)  + [K_S] > "ത്സ്"  c line(0)
+   + [K_S] > "സ്"  c line(0)
+   + [SHIFT K_S] > "ശ്"  c line(0)
+  "റ്റ്"  + [K_T] > "ട്ട്"  c line(0)
+  "ന്‍" deadkey(2)  + [SHIFT K_T] > "ണ്ട്"  c line(0)
+  "‍" deadkey(2)  + [K_T] > nul "റ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_T] > "ന്റ്"  c line(0)
+  "ൻ" deadkey(2)  + [SHIFT K_T] > "ണ്ട്"  c line(0)
+  "‍" deadkey(1)  + [K_T] > nul "ട്"  c line(0)
+  "ൺ" deadkey(1)  + [K_T] > "ണ്ട്"  c line(0)
+  "‍" deadkey(1)  + [SHIFT K_T] > nul "ട്"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_T] > "ണ്ട്"  c line(0)
+   + [K_T] > "റ്റ്"  c line(0)
+   + [SHIFT K_T] > "ട്"  c line(0)
+  "്‍" deadkey(1)  + [SHIFT K_U] > nul "ൂ"  c line(0)
+  "്‍" deadkey(1)  + [K_U] > nul "ു"  c line(0)
+  "്‍" deadkey(2)  + [K_U] > nul "ു"  c line(0)
+  "്‍" deadkey(2)  + [SHIFT K_U] > nul "ൂ"  c line(0)
+  "്‍" deadkey(3)  + [SHIFT K_U] > nul "ൂ"  c line(0)
+  "്‍" deadkey(3)  + [K_U] > nul "ു"  c line(0)
+  "്‍" deadkey(4)  + [SHIFT K_U] > nul "ൂ"  c line(0)
+  "്‍" deadkey(4)  + [K_U] > nul "ു"  c line(0)
+  "്‍" deadkey(5)  + [SHIFT K_U] > nul "ൂ"  c line(0)
+  "്‍" deadkey(5)  + [K_U] > nul "ു"  c line(0)
+  "്‍" deadkey(6)  + [SHIFT K_U] > nul "ൂ"  c line(0)
+  "്‍" deadkey(6)  + [K_U] > nul "ു"  c line(0)
+  "ൺ" deadkey(1)  + [SHIFT K_U] > "ണൂ"  c line(0)
+  "ൺ" deadkey(1)  + [K_U] > "ണു"  c line(0)
+  "ൻ" deadkey(2)  + [K_U] > "നു"  c line(0)
+  "ൻ" deadkey(2)  + [SHIFT K_U] > "നൂ"  c line(0)
+  "ർ" deadkey(3)  + [K_U] > "രു"  c line(0)
+  "ർ" deadkey(3)  + [SHIFT K_U] > "രൂ"  c line(0)
+  "ൽ" deadkey(4)  + [K_U] > "ലു"  c line(0)
+  "ൽ" deadkey(4)  + [SHIFT K_U] > "ലൂ"  c line(0)
+  "ൾ" deadkey(5)  + [SHIFT K_U] > "ളൂ"  c line(0)
+  "ൾ" deadkey(5)  + [K_U] > "ളു"  c line(0)
+  "ൿ" deadkey(6)  + [SHIFT K_U] > "കൂ"  c line(0)
+  "ൿ" deadkey(6)  + [K_U] > "കു"  c line(0)
+  any(store10)  + [K_U] > index(store11, 1) "ു"  c line(0)
+  any(store10)  + [SHIFT K_U] > index(store11, 1) "ൂ"  c line(0)
+  any(store8)  + [K_U] > "ു"  c line(0)
+  any(store8)  + [SHIFT K_U] > "ൂ"  c line(0)
+  "ൊ"  + [K_U] > "ൌ"  c line(0)
+  any(store7)  + [K_U] > context "ൌ"  c line(0)
+  "ഋ"  + [K_U] > "റു"  c line(0)
+  "ഋ"  + [SHIFT K_U] > "റൂ"  c line(0)
+  "ഉ"  + [K_U] > "ഊ"  c line(0)
+  "ു"  + [K_U] > "ൂ"  c line(0)
+  "ൂ"  + [K_U] > context "‍ൂ"  c line(0)
+  "ൌ"  + [K_U] > context "‍ൗ"  c line(0)
+  "ൗ"  + [K_U] > context "‍ൗ"  c line(0)
+  "ഒ"  + [K_U] > "ഔ"  c line(0)
+  "അ"  + [K_U] > "ഔ"  c line(0)
+  "@"  + [K_U] > "‌ു"  c line(0)
+  "@"  + [SHIFT K_U] > "‌ൂ"  c line(0)
+   + [K_U] > "ഉ"  c line(0)
+   + [SHIFT K_U] > "ഊ"  c line(0)
+  "ള്‍" deadkey(5)  + [K_V] > context "വ്"  c line(0)
+  "ര്‍" deadkey(3)  + [K_V] > context "വ്"  c line(0)
+  "ൾ" deadkey(5)  + [K_V] > context "വ്"  c line(0)
+  "ർ" deadkey(3)  + [K_V] > context "വ്"  c line(0)
+  "‍" deadkey(1)  + [K_V] > "വ്"  c line(0)
+  "ൺ" deadkey(1)  + [K_V] > "ണ്വ്"  c line(0)
+  "‍" deadkey(2)  + [K_V] > "വ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_V] > "ന്വ്"  c line(0)
+  "‍" deadkey(3)  + [K_V] > "വ്"  c line(0)
+  "ർ" deadkey(3)  + [K_V] > "ര്വ്"  c line(0)
+  "‍" deadkey(4)  + [K_V] > "വ്"  c line(0)
+  "ൽ" deadkey(4)  + [K_V] > "ല്വ്"  c line(0)
+  "‍" deadkey(5)  + [K_V] > "വ്"  c line(0)
+  "ൾ" deadkey(5)  + [K_V] > "ള്വ്"  c line(0)
+  "‍" deadkey(6)  + [K_V] > "വ്"  c line(0)
+  "ൿ" deadkey(6)  + [K_V] > "ക്വ്"  c line(0)
+  "യ്"  + [K_V] > "യ്‌വ്"  c line(0)
+  any(store8)  + [K_V] > context "വ്"  c line(0)
+   + [K_V] > "വ്"  c line(0)
+   + [SHIFT K_V] > "വ്വ്"  c line(0)
+  "ള്‍" deadkey(5)  + [K_W] > context "വ്"  c line(0)
+  "ര്‍" deadkey(3)  + [K_W] > context "വ്"  c line(0)
+  "ൾ" deadkey(5)  + [K_W] > context "വ്"  c line(0)
+  "ർ" deadkey(3)  + [K_W] > context "വ്"  c line(0)
+  "‍" deadkey(1)  + [K_W] > "വ്"  c line(0)
+  "ൺ" deadkey(1)  + [K_W] > "ണ്വ്"  c line(0)
+  "‍" deadkey(2)  + [K_W] > "വ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_W] > "ന്വ്"  c line(0)
+  "‍" deadkey(3)  + [K_W] > "വ്"  c line(0)
+  "ർ" deadkey(3)  + [K_W] > "ര്വ്"  c line(0)
+  "‍" deadkey(4)  + [K_W] > "വ്"  c line(0)
+  "ൽ" deadkey(4)  + [K_W] > "ല്വ്"  c line(0)
+  "‍" deadkey(5)  + [K_W] > "വ്"  c line(0)
+  "ൾ" deadkey(5)  + [K_W] > "ള്വ്"  c line(0)
+  "‍" deadkey(6)  + [K_W] > "വ്"  c line(0)
+  "ൿ" deadkey(6)  + [K_W] > "ക്വ്"  c line(0)
+  "യ്"  + [K_W] > "യ്‌വ്"  c line(0)
+  any(store7)  + [K_W] > context "്വ്"  c line(0)
+   + [K_W] > "വ്"  c line(0)
+   + [K_X] > "ക്ഷ്"  c line(0)
+   + [SHIFT K_X] > "ക്ഷ്"  c line(0)
+  "‍" deadkey(1)  + [K_Y] > "യ്"  c line(0)
+  "ൺ" deadkey(1)  + [K_Y] > "ണ്യ്"  c line(0)
+  "‍" deadkey(2)  + [K_Y] > "യ്"  c line(0)
+  "ൻ" deadkey(2)  + [K_Y] > "ന്യ്"  c line(0)
+  "‍" deadkey(3)  + [K_Y] > "യ്"  c line(0)
+  "ർ" deadkey(3)  + [K_Y] > "ര്യ്"  c line(0)
+  "‍" deadkey(4)  + [K_Y] > "യ്"  c line(0)
+  "ൽ" deadkey(4)  + [K_Y] > "ല്യ്"  c line(0)
+  "‍" deadkey(5)  + [K_Y] > "യ്"  c line(0)
+  "ൾ" deadkey(5)  + [K_Y] > "ള്യ്"  c line(0)
+  "‍" deadkey(6)  + [K_Y] > "യ്"  c line(0)
+  "ൿ" deadkey(6)  + [K_Y] > "ക്യ്"  c line(0)
+  "സം"  + [K_Y] > context "യ്"  c line(0)
+  "സം"  + [SHIFT K_Y] > context "യ്"  c line(0)
+  any(store10)  + [K_Y] > index(store11, 1) "്യ്"  c line(0)
+  any(store10)  + [SHIFT K_Y] > index(store11, 1) "്യ്"  c line(0)
+  any(store8)  + [K_Y] > context "യ്"  c line(0)
+   + [K_Y] > "യ്"  c line(0)
+   + [SHIFT K_Y] > "യ്യ്"  c line(0)
+   + [K_Z] > "ശ്"  c line(0)
+   + [SHIFT K_Z] > "ശ്ശ്"  c line(0)
+   + "\" > "\"  c line(0)
+  "ല്‍" deadkey(4)  + "^" > "ഌ"  c line(0)
+  "്ര്"  + "^" > "ൃ"  c line(0)
+  "്ര്"  + "^" > "ൃ"  c line(0)
+  "്റ്"  + "^" > "ൃ"  c line(0)
+  "ൽ" deadkey(4)  + "^" > "ഌ"  c line(0)
+  "ല്"  + "^" > "ഌ"  c line(0)
+  "ഋ"  + "^" > "ൠ"  c line(0)
+  "ഌ"  + "^" > "ൡ"  c line(0)
+  "‍"  + "^" > "‌ൃ"  c line(0)
+  "ക്"  + "_" > "ൿ" deadkey(6)  c line(0)
+   + "_" > "‌"  c line(0)
+   + "|" > "|"  c line(0)
+  "‍" deadkey(1)  + "~" > nul  c line(0)
+  "ൺ" deadkey(1)  + "~" > "ണ്"  c line(0)
+  "‍" deadkey(2)  + "~" > nul  c line(0)
+  "ൻ" deadkey(2)  + "~" > "ന്"  c line(0)
+  "‍" deadkey(3)  + "~" > nul  c line(0)
+  "ർ" deadkey(3)  + "~" > "ര്"  c line(0)
+  "‍" deadkey(4)  + "~" > nul  c line(0)
+  "ൽ" deadkey(4)  + "~" > "ല്"  c line(0)
+  "‍" deadkey(5)  + "~" > nul  c line(0)
+  "ൾ" deadkey(5)  + "~" > "ള്"  c line(0)
+  "‍" deadkey(6)  + "~" > nul  c line(0)
+  "ൿ" deadkey(6)  + "~" > "ക്"  c line(0)
+  "്"  + "~" > context "‌"  c line(0)
+  any(store10)  + "~" > index(store11, 1) "്"  c line(0)
+  "ു"  + "~" > "ു്"  c line(0)
+  any(store7)  + "~" > context "്"  c line(0)
+  "ഋ"  + "~" > "റ്"  c line(0)
+   + [K_COLON] > ":"  c line(0)
+   + [K_COMMA] > ","  c line(0)
+   + [K_PERIOD] > "."  c line(0)
+  "ു"  + [SHIFT K_BKQUOTE] > "ു്"  c line(0)
+   + [SHIFT K_BKQUOTE] > "്"  c line(0)
+  any(store8)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  any(store10)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  any(store12)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  any(store7)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  any(store14)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  deadkey(1)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  deadkey(2)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  deadkey(3)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  deadkey(4)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  deadkey(5)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  deadkey(6)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  any(store17)  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  "“"  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  "."  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  "?"  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  "ഃ"  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  ","  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  "!"  + [SHIFT K_QUOTE] > context "”"  c line(0)
+  any(store8)  + [K_QUOTE] > context "’"  c line(0)
+  any(store10)  + [K_QUOTE] > context "’"  c line(0)
+  any(store12)  + [K_QUOTE] > context "’"  c line(0)
+  any(store7)  + [K_QUOTE] > context "’"  c line(0)
+  any(store14)  + [K_QUOTE] > context "’"  c line(0)
+  deadkey(1)  + [K_QUOTE] > context "’"  c line(0)
+  deadkey(2)  + [K_QUOTE] > context "’"  c line(0)
+  deadkey(3)  + [K_QUOTE] > context "’"  c line(0)
+  deadkey(4)  + [K_QUOTE] > context "’"  c line(0)
+  deadkey(5)  + [K_QUOTE] > context "’"  c line(0)
+  deadkey(6)  + [K_QUOTE] > context "’"  c line(0)
+  any(store17)  + [K_QUOTE] > context "’"  c line(0)
+  "‘"  + [K_QUOTE] > context "’"  c line(0)
+  "."  + [K_QUOTE] > context "’"  c line(0)
+  "?"  + [K_QUOTE] > context "’"  c line(0)
+  "ഃ"  + [K_QUOTE] > context "’"  c line(0)
+  ","  + [K_QUOTE] > context "’"  c line(0)
+  "!"  + [K_QUOTE] > context "’"  c line(0)
+   + [SHIFT K_QUOTE] > "“"  c line(0)
+   + [K_QUOTE] > "‘"  c line(0)
 
-c digits
-store(digits) '0123456789'
-store(malDigits) '൦൧൨൩൪൫൬൭൮൯'
-any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
-'1' + '\' > U+0d67
-'10' + '\' > U+0d70
-'100' + '\' > U+0d71
-'1000' + '\' > U+0d72
-'1/4' + '\' > U+0d73
-'1/2' + '\' > U+0d74
-'3/4' + '\' > U+0d75
-'1/16' + '\' > U+0d76
-'1/8' + '\' > U+0d77
-'3/16' + '\' > U+0d78
- 
-c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
-+ 'm' > 'ം'
-'ം' + '~' > 'മ്'
-
-c other special cases for m
-any(consonants) + 'm' > index(consonants,1) 'ം'
-any(vowels) + 'm' > index(vowels,1) 'ം'
-any(vowelsigns) + 'm' > index(vowelsigns,1) 'ം'  
-any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
-
-store(chills) 'ൺൻർൽൾൿ'
-store(chillSource) 'NnrlLc'
-store(chillBases) "ണനരലളക"
-
-c produce chill
-+ any(chillSource) > index(chills,1)
-any(chills) U+200C + any(chillSource) > index(chills,1) index(chills,3)                
-
-c legacy chillu support (Solve Issue: https://github.com/beniza/keyboards/issues/5)
-any(chills) + '^' > index(chillBases, 1) '്' U+200D
-any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, but I'm adding this to cycle between atomic and sequence chillu
-
-c Treat anusvaram as chillu (Solve Issue: https://github.com/beniza/keyboards/issues/1)
-c chill breakers
-store(chills_anu) 'ൺൻർൽൾൿം'
-store(chill_anu_Bases) "ണനരലളകമ"
-any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
-any(chills_anu) + 'a' > index(chill_anu_Bases,1)
-any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
-any(chills_anu) + 'i' > index(chill_anu_Bases,1) 'ി'
-any(chills_anu) + 'I' > index(chill_anu_Bases,1) 'ീ'
-any(chills_anu) + 'u' > index(chill_anu_Bases,1) 'ു'
-any(chills_anu) + 'U' > index(chill_anu_Bases,1) 'ൂ'
-any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'
-any(chills_anu) + 'e' > index(chill_anu_Bases,1) 'െ'
-any(chills_anu) + 'E' > index(chill_anu_Bases,1) 'േ'
-any(chills_anu) + 'E' > index(chill_anu_Bases,1) 'േ'
-any(chills_anu) + 'o' > index(chill_anu_Bases,1) 'ൊ'
-any(chills_anu) + 'O' > index(chill_anu_Bases,1) 'ോ'
-any(chills_anu) + 'y' > index(chill_anu_Bases,1) '്യ്'
-any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'            
-'ർ' + 'r' > 'റ്' c Ben's addition
-'ന്ര്' + 'r' > 'ൻറ്' c Ben's addition
-any(chills_anu) + 'r' > index(chill_anu_bases,1) '്ര്' c Ben's addition
-
-c Archaic Forms
-'.' + '\' >  '।'
-'..' + '\' > '॥'
-'അ' + '\' > 'ഽ'    
-'ീ' + '\' > 'ൟ'
-'ക്' + '\' > 'ൿ'
-'റ്റ്' + '\' > 'ഺ്'
-'റ്റ' + '\' > 'ഺ'
-'ൻ' + '\' > 'ഩ്'
-'ന' + '\' > 'ഩ'
-c TODO: n@erra	 ൻെറ	 CHILLU-N, SIGN E, RRA	 എൻെറ	 en@erra
-c TODO: n@errarra	 ൻെററ	 CHILLU-N, SIGN E, RRA, RRA	 എൻെററ	 en@errarra
-c TODO: 'ൾ' '@' + 'ക്' > 'ൾ്ക്'
-'നു' + '\' > '൹' c Malayalam Date Mark
-'ർ' + '\' > 'ൎ'
-+ '$' > '₹' 
-'₹' + '\' > '₨'
-'₨' + '\' > '$' c Ben's additions
-'പറ' + '\' > U+0D4F
-'ൾ' + '\' > 'ഌ'
-'‌ള്' + '\' > 'ൢ'
-'ള്ള്' + '\' > 'ൡ'
-'ഌ' + '\' > 'ൡ' c Ben's additions
-'ള്ള്' + '\' > 'ൣ'
-'ൢ' + '\' > 'ൣ' c Ben's additions
-'ൗ' + '\' > 'ൌ'
-'്' + '\' > U+0D3C
-U+0D3C + '\' > U+0D3B
-any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
-c Sequence Chills
-c any(chills) '\' + '\' > index(chillBases,1) '്' U+200D
-c 'ഩ്' + '\' > 'ന' '്' U+200D
-
-c The following rule is an experimental rule to prevent chillu r formation 
-c (instead it will form vattu ra form) if it follows a chandrakkala. By Ben
-c any(consonants) '്' + 'r' > index(consonants, 1) '്ര്'    c Disabled this rule as it caused the keyboard to brake in FireFox                                                                                        
-
-c produce vowels
-store(vDirectSmallValues) "അഎഇഒഉ"
-store(vDirectSmallKeys) "aeiou"
-store(vDirectCapsValues) "ആഏഈഓഋഊ"
-store(vDirectCapsKeys) "AEIORU"
-
-c always remove none joiner before vowels
-U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
-U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
-
-+ any(vDirectSmallKeys) > index(vDirectSmallValues,1)
-U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
-+ any(vDirectCapsKeys) > index(vDirectCapsValues,1)
-U+200C + any(vDirectCapsKeys) > index(vDirectCapsValues,2)
-
-'അ' + 'a' > 'ആ'
-'അ' + 'i' > 'ഐ'
-'അ' + 'u' > 'ഔ'
-'ഇ' + 'i' > 'ഈ'
-'ഉ' + 'u' > 'ഊ'
-'ഊ' + 'o' > 'ഊഊ'
-'ഋ' + 'R' > 'ൠ'
-'ഋ' + 'a' > 'റ'
-'ഋ' + 'A' > 'റാ'
-'ഋ' + 'i' > 'റി'
-'ഋ' + 'I' > 'റീ'
-'ഋ' + 'u' > 'റു'
-'ഋ' + 'U' > 'റൂ'
-'ഋ' + 'e' > 'റെ'
-'ഋ' + 'E' > 'റേ'
-'ഋ' + 'o' > 'റൊ'
-'ഋ' + 'O' > 'റോ'
-'ഋ' + '~' > 'റ്'
-'ഌ' + 'l' > 'ൡ'
-'എ' + 'e' > 'ഈ'
-'ഒ' + 'o' > 'ഊ'
-'ാ' + 'a' > 'ാാ'
-'ീ' + 'i' > 'ീീ'
-'ൂ' + 'u' > 'ൂൂ'
-'ൂ' + 'o' > 'ൂൂ'
-'ൄ' + 'R' > 'ൄൄ'
-'േ' + 'E' > 'േേ'
-'ോ' + 'O' > 'ോോ'
-'ൗ' + 'u' > 'ൗൗ'
-
-c vowel signs
-c disabling the following rules to fix issue 19: സ്വരചിഹ്നത്തിനു '\' ഉപയോഗിക്കുന്നതൊഴിവാക്കുക
-c 'മ്' + '\' > 'ം'
-c 'ആ' + '\' > 'ാ'
-'ഈ' + '\' > 'ൟ'
-'ം' + '\' > 'ഁ'
-c 'ഈ' + '\' > 'ീ'
-c 'ഉ' + '\' > 'ു'
-c 'ഊ' + '\' > 'ൂ'
-c 'ഋ' + '\' > 'ൃ'
-c 'ൠ' + '\' > 'ൄ'
-c 'എ' + '\' > 'െ'
-c 'ഏ' + '\' > 'േ'
-c 'ഐ' + '\' > 'ൈ'
-c 'ഒ' + '\' > 'ൊ'
-c 'ഓ' + '\' > 'ോ'
-c 'ഔ' + '\' > 'ൗ' 
-c 'ൗ' + '\' > 'ൌ'
-c 'ഌ' + '\' > 'ൢ'
-c 'ൡ' + '\' > 'ൣ'
-
-c Stand-alone vowel signs after chandrakkala (Solve Issue: https://github.com/beniza/keyboards/issues/8)
-'്' + 'A' > 'ാ'
-'്' + 'a' > dk(2)
-dk(2) + 'a' > 'ാ'
-dk(2) + 'i' > 'ൈ'
-dk(2) + 'u' > 'ൗ'
-'്' + 'i' > 'ി'
-'്' + 'I' > 'ീ'
-'ി' + 'i' > 'ീ'
-'്' + 'u' > 'ു'
-'്' + 'U' > 'ൂ'
-'ു' + 'u' > 'ൂ'   
-'്' + 'R' > 'ൃ'
-'ൃ' + 'R' > 'ൄ'   
-'്' + 'e' > 'െ'
-'്' + 'E' > 'േ'
-'െ' + 'e' > 'ീ'
-'്' + 'o' > 'ൊ'   
-'്' + 'O' > 'ോ'   
-'്' + 'o' > 'ൂ'   
-
-c To solve issue-20 ചന്ദ്രക്കലയ്ക്ക് ശേഷം ~ റ്റൈപ്പ് ചെയ്താൽ രണ്ടാമത്തെ ചന്ദ്രക്കല വരുന്നു
-'്' + '~' > '്'   
-
-c Consonants
-c store(cDirectSmallKeys) 'kgjdpfbmyvwzsh'
-c store(cDirectSmallValues)  'കഗജദപഫബമയവവശസഹ'
-store(cDirectSmallKeys) 'bdfghjkmpsvwyz'
-store(cDirectSmallValues)  'ബദഫഗഹജകമപസവവയശ'
-+ any(cDirectSmallKeys) > index(cDirectSmallValues,1) '്'
-
-store(cDirectCapsKeys) 'DSTF'
-store(cDirectCapsValues) 'ഡശടഫ'
-+ any(cDirectCapsKeys) > index(cDirectCapsValues,1)  '്'
-
-c To cleanup any unwanted zwnj between Chillu and a consonant
-any(chills) U+200C + any(cDirectSmallKeys) > index(chills,1) index(cDirectSmallValues,3) '്'
-any(chills) U+200C + any(cDirectCapsKeys) > index(chills,1) index(cDirectCapsValues,3) '്' 
-
-c Aspiration and certain fluids are obtained by typing an 'h' after the unaspirated counterparts and സ, ശ
-store(thinConsonants) "കഗചജടഡതദപബസശ"
-store(thickConsonants) "ഖഘഛഝഠഢഥധഫഭഷഴ"
-any(thinConsonants) '്' + 'h' > index(thickConsonants,1) '്' 
-
-any(consonants) '്' + 'a' > index(consonants,1)
-any(consonants) '്' + 'A' > index(consonants,1) 'ാ'
-any(consonants) + 'a' > index(consonants,1) 'ാ'
-any(consonants) '്' + 'i' > index(consonants,1) 'ി'
-any(consonants) 'ി' + 'i' > index(consonants,1) 'ീ'
-any(consonants) '്' + 'I' > index(consonants,1) 'ീ'
-any(consonants) 'െ' + 'e' > index(consonants,1) 'ീ'
-any(consonants) '്' + 'u' > index(consonants,1) 'ു'
-any(consonants) 'ൊ' + 'o' > index(consonants,1) 'ൂ'
-any(consonants) 'ു' + 'u' > index(consonants,1) 'ൂ'
-any(consonants) '്' + 'U' > index(consonants,1) 'ൂ'
-any(consonants)  '്' + 'R' > index(consonants,1) 'ൃ'
-any(consonants)  'ൃ' + 'R' > index(consonants,1) 'ൄ'
-any(consonants)  '്' + 'e' > index(consonants,1) 'െ'
-any(consonants)  '്' + 'E' > index(consonants,1) 'േ'
-any(consonants) + 'i' > index(consonants,1) 'ൈ'
-any(consonants) '്' + 'o' > index(consonants,1) 'ൊ'
-any(consonants) '്' + 'O' > index(consonants,1) 'ോ'
-any(consonants) + 'u' > index(consonants,1) 'ൗ'
-any(consonants)  '്' + 'r' > index(consonants,1) '്ര്'
-
-store(nonSa) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷഹളഴറ"
-
-'ൻ' + 'g' > 'ങ്'
-'ൿ' + 'h' > 'ച്'
-
-'ം' + 'm' > 'മ്മ്'
-'ം' + 'l' > 'മ്ല്'
-c any(nonSa) 'ം' + 'r' > index(nonSa,1) 'മ്ര്'
-'ം' + 'p' > 'മ്പ്'
-any(nonSa) 'ം' + 'l' > index(nonSa,1) 'മ്ല്'
-any(nonSa) 'ം' + 'L' > index(nonSa,1) 'മ്ല്' c deadkey(capl) c dk commented out by ben
-any(nonSa) 'ം' + 'n' > index(nonSa,1) 'മ്ന്'
-any(nonSa) 'ം' + 'y' > index(nonSa,1) 'മ്യ്'
-any(vowelsigns) 'ം' + 'y' > index(vowelsigns,1) 'മ്യ്'
-any(vowelsigns) 'ം' + 'r' > index(vowelsigns,1) 'മ്ര്'
-'സം' + 'r' > 'സംർ'
-'സം' + 'y' > 'സംയ്'
-
-c ['ൻൿh','nc','ഞ്ച്'],
-'ൻൿ' + 'h' > 'ഞ്ച്'
-c ['ൿh','c', 'ച്'],
-c ['ക്ക്h','cc', 'ച്ച്'],
-'ക്ക്' deadkey(doublec) + 'h' > 'ച്ച്'
-c ['ല്പ്p','lp','ൽപ്പ്'],
-'ല്പ്' + 'p' > 'ൽപ്പ്'
-c ['([ക-ഹ])്ല്l', 'L', '$2\u0d62'],
-c any(consonants) '്ല്' deadkey(capl) + 'l' > index(consonants,1) U+0D62
-
-c Bypassing transliteration (Solve Issue: https://github.com/beniza/keyboards/issues/2)
-+ '=' > dk(1)
-dk(1) + '=' > '=' c to provide a way to keyin an actual '='                                                        
-
-c Experimental: the sign chars at the end are added for enabling special strings such as web addresses or email ids. 
-c Warning: treating = as an escapable can create inadvertent consequences as there may be cases to treat is as the dk. 
-store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>_~@.=' 
-dk(1) + any(escapable) > index(escapable, 2)     
-any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
-
-'ന്ന്' + 'j' > 'ഞ്ഞ്'
-'ന്ന്' + 'g' > 'ങ്ങ്'
-'റ്റ്' + 'h' > 'ത്'
-'റ്റ്' + 't' > 'ട്ട്'
-'ന്റ്' + 'h' > 'ന്ത്'
-any(consonants) U+0D62 + 'l' > index(consonants,1) U+0D63
-
-c ['([അ-ഊഌഎ-ഐഒ-ഹ])([ഽ-ൂെ-ൌൗ])+R', '', '$2$3റ്'],
-any(consonants) 'ൃ' + 'a' > index(consonants,1) '്ര'
-any(consonants) 'ൃ' + 'A' > index(consonants,1) '്രാ'
-any(consonants) 'ൃ' + 'i' > index(consonants,1) '്രി'
-any(consonants) 'ൃ' + 'I' > index(consonants,1) '്രീ'
-any(consonants) 'ൃ' + 'u' > index(consonants,1) '്രു'
-any(consonants) 'ൃ' + 'U' > index(consonants,1) '്രൂ'
-any(consonants) 'ൃ' + 'e' > index(consonants,1) '്രെ'
-any(consonants) 'ൃ' + 'E' > index(consonants,1) '്രേ'
-any(consonants) 'ൃ' + 'o' > index(consonants,1) '്രൊ'
-any(consonants) 'ൃ' + 'O' > index(consonants,1) '്രോ'
-any(consonants) '്' + 'l' > index(consonants,1) '്ല്' c deadkey(capl) c commented out by Ben
-any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c commented out by Ben
-
-'ൺ' + 'N' > 'ണ്ണ്'
-'ൺ' + 'T' > 'ണ്ട്'
-'ൺ' + 'D' > 'ണ്ഡ്'
-'ൺ' + 'v' > 'ണ്വ്'
-'ൺ' + 'm' > 'ണ്മ്'
-
-'ൻ' + 'r' > 'ന്ര്'
-'ൻ' + 'k' > 'ങ്ക്'
-'ൻ' + 'j' > 'ഞ്'
-'ൻ' + 'n' > 'ന്ന്'
-'ൻ' + 'd' > 'ന്ദ്'
-'ൻ' + 't' > 'ന്റ്'
-'ൻ' + 'm' > 'ന്മ്'
-'ൻ' + 'L' > 'ന്ല്' c deadkey(capl) c commented out by Ben
-'ൻ' + 'v' > 'ന്വ്'
-
-'ർ' + 'r' > 'റ്'
-'ർ' + '#' > 'ൎ'
-
-'ൽ' + 'l' > 'ല്ല്'
-'ൽ' + 'L' > 'ല്ല്' c deadkey(capl)
-'ൽ' + 'm' > 'ല്മ്'
-'ൽ' + 'p' > 'ല്പ്'
-'ൽ' + 'v' > 'ല്വ്'
-
-'ൾ' + 'L' > 'ള്ള്' c deadkey(capl)
-'ൾ' + 'l' > 'ഌ'            
-
-c Normally it was not required in Keymagic. Following does not happen
-c automatically in Keyman
-
-'ൿ' + 'l' > 'ക്ല്'
-'ൿ' + 'L' > 'ക്ല്' c deadkey(capl)
-'ൿ' + 'v' > 'ക്വ്'
-'ൿ' + 'k' > 'ക്ക്'
-'ൿ' + 'c' > 'ക്ക്' dk(3) c deadkey(doublec)
-'ക്ക്' dk(3) + 'h' > 'ച്ച്'
-
-c digits
-'\' + '0' > '൦'
-'\' + '1' > '൧'
-'\' + '2' > '൨'
-'\' + '3' > '൩'
-'\' + '4' > '൪'
-'\' + '5' > '൫'
-'\' + '6' > '൬'
-'\' + '7' > '൭'
-'\' + '8' > '൮'
-'\' + '9' > '൯'
-
-+ 'B' > 'ബ്ബ്'
-any(chills) U+200C + 'B' > index(chills,1) 'ബ്ബ്'
-+ 'C' > 'ച്ച്'
-any(chills) U+200C + 'C' > index(chills,1) 'ച്ച്'
-+ 'G' > 'ഗ്ഗ്'
-any(chills) U+200C + 'G' > index(chills,1) 'ഗ്ഗ്'
-+ 'H' > 'ഃ'
-any(chills) U+200C + 'H' > index(chills,1) 'ഃ'
-+ 'J' > 'ജ്ജ്'
-any(chills) U+200C + 'J' > index(chills,1) 'ജ്ജ്'
-+ 'K' > 'ക്ക്'
-any(chills) U+200C + 'K' > index(chills,1) 'ക്ക്'
-+ 'M' > 'മ്മ്'
-any(chills) U+200C + 'M' > index(chills,1) 'മ്മ്'
-+ 'P' > 'പ്പ്'
-any(chills) U+200C + 'P' > index(chills,1) 'പ്പ്'
-+ 'Q' > 'ക്യു'
-any(chills) U+200C + 'Q' > index(chills,1) 'ക്യ്'
-+ 'V' > 'വ്വ്'
-any(chills) U+200C + 'V' > index(chills,1) 'വ്വ്'
-+ 'W' > 'വ്വ്'
-any(chills) U+200C + 'W' > index(chills,1) 'വ്വ്'
-+ 'X' > 'ക്ഷ്'
-any(chills) U+200C + 'X' > index(chills,1) 'ക്ഷ്'
-+ 'Y' > 'യ്യ്'
-any(chills) U+200C + 'Y' > index(chills,1) 'യ്യ്'
-+ 'Z' > 'ശ്ശ്'
-any(chills) U+200C + 'Z' > index(chills,1) 'ശ്ശ്'
-+ 'q' > 'ക്ക്'
-any(chills) U+200C + 'q' > index(chills,1) 'ക്ക്'
-+ 't' > 'റ്റ്'
-any(chills) U+200C + 't' > index(chills,1) 'റ്റ്'
-+ 'x' > 'ക്ഷ്'
-any(chills) U+200C + 'x' > index(chills,1) 'ക്ഷ്'
-+ '~' > '്'
-any(chills) U+200C + '~' > index(chills,1) '്' 
-
-'ട്ട്' + 'h' > 'ത്ത്'
-'ട്' + 'H' > 'ത്ത്'
-'ൺ' + 'G' > 'ങ്ങ്'
-'ൺ' + 'J' > 'ഞ്ഞ്'
-
-U+200C + '_' > U+200C
-+ '_' > U+200C
-
-'/' + '/' > 'ऽ'
-'1/4' + '\' > '൳'
-'1/2' + '\' > '൴'
-'3/4' + '\' > '൵'
-'10' + '\' > U+0D70
-'100' + '\' > U+0D71
-'1000' + '\' > U+0D72
-c em dash
-'---' + '\' > '—'
-c en dash
-'--' + '\' > '–'
-'\' + '-' > '−'
-'\' + '*' > '×'
-'\' + '/' > '÷'
+c EOF
