@@ -1,6 +1,6 @@
 # NLCI Telugu WinScript Keyboard
 
-Copyright (C) 2002-2018 NLCI, Banglore
+Copyright (C) 2002-2019 NLCI, Bangalore
 
 Version 2.0
 
