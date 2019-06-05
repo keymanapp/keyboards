@@ -14,7 +14,6 @@ store(&MESSAGE) 'Indic Romanization from ITRANS'
 store(&KMW_HELPTEXT) 'Supports ISO_15919, IAST, NLK transliteration schemes'
 store(&KEYBOARDVERSION) '1.0.0'
 store(&BITMAP) 'itrans_roman.ico'
-store(&LAYOUTFILE) 'itrans_roman.keyman-touch-layout'
 
 begin Unicode > use(main)
 group(main) using keys
@@ -71,6 +70,7 @@ c overdot - repeat the letter
 
 c sh
 "s" + "h" > "ś"
+"s" + "'" > "ś"
 ";" + "s" > "ś"
 
 c overdot - with ;
@@ -117,10 +117,13 @@ c overbar - repeated letters
 "o" + "o" > "ū" 
 "u" + "u" > "ū"
 
+c candra
+"a" + "e" > "ĕ"
+"a" + "w" > "ŏ"
+
 c overmarks - with tilde
-store(chandra) "aeo"
-store(chandraU) "ăĕŏ"
-"~" + any(chandra) > index(chandraU,2)
+"~" + "e" > "ẽ"
+"~" + "o" > "õ"
 "~" + "n" > "ñ"
 "~" + "m" > "m̐"
 
@@ -131,8 +134,8 @@ store(ISOchandraU) "êôĉŭḫ"
 "^" + "n" > "n̆"
 
 c Alternate overmarks
-"a" + "e" > "æ"
-"a" + "w" > "ô"
+c "a" + "e" > "æ"
+c "a" + "w" > "ô"
 
 c Duplicate above rules with CAPS
 c for typing of headings
@@ -166,6 +169,7 @@ c OVERDOT - REPEAT THE LETTER
 
 c SH
 "S" + "H" > "Ś"
+"S" + "'" > "Ś"
 ";" + "S" > "Ś"
 
 c OVERDOT - WITH ;
@@ -212,10 +216,13 @@ c OVERBAR - REPEATED LETTERS
 "O" + "O" > "Ū" 
 "U" + "U" > "Ū"
 
-c OVERMARKS - WITH TILDE
-store(CAPS_CHANDRA) "AEO"
-store(CAPS_CHANDRAU) "ĂĔŎ"
-"~" + any(CAPS_CHANDRA) > index(CAPS_CHANDRAU,2)
+c candra
+"A" + "E" > "Ĕ"
+"A" + "W" > "Ŏ"
+
+c overmarks - with tilde
+"~" + "E" > "Ẽ"
+"~" + "O" > "Õ"
 "~" + "N" > "Ñ"
 "~" + "M" > "M̐"
 
@@ -226,7 +233,7 @@ store(CAPS_ISOCHANDRAU) "ÊÔĈŬḪ"
 "^" + "N" > "N̆"
 
 c ALTERNATE OVERMARKS
-"A" + "E" > "Æ"
-"A" + "W" > "Ô"
+c "A" + "E" > "Æ"
+c "A" + "W" > "Ô"
 
 c EOF 
