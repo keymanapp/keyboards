@@ -12,3 +12,4 @@ This Keyboard mimic Telugu WinScript Keyboard Layout designed by NLCI in 1988. S
  * Windows
  * macOS
  * Web
+ * linux
