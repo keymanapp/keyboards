@@ -12,3 +12,5 @@ Bengali Phonetic (ITRANS) Version History
 * 20190601
 * Add OM as O and chandrabindu
 * Add Assamese as supported language
+* 20190605
+* Change based on PR feedback
