@@ -13,4 +13,4 @@ This Keyboard mimic Oriya WinScript Keyboard Layout designed by NLCI in 1988. Se
  * macOS
  * Web
  * linux
- * Android
+ 
