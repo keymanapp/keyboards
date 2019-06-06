@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2017 Hamza Sulayman
+Copyright © 2017-2019 Hamza Sulayman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
