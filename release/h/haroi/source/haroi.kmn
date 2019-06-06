@@ -1,0 +1,208 @@
+﻿store(&version) '10.0'
+store(&NAME) 'Haroi'
+store(&TARGETS) 'any windows'
+store(&BITMAP) 'haroi.ico'
+store(&VISUALKEYBOARD) 'haroi.kvks'
+store(&LAYOUTFILE) 'haroi.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© Keyman'
+store(&MESSAGE) 'This keyboard is adapted from VNI.'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c Lowercase consonants
+store(consonantLowerChars)  U+0071 U+0077 U+0072 U+0074 U+0070   \
+                            U+0073 U+0064 U+0066 U+0067 U+0068 U+006A U+006B U+006C \
+                            U+007A U+0078 U+0063 U+0076 U+0062 U+006E U+006D
+store(consonantLowerKeys)   [K_Q] [K_W] [K_R] [K_T] [K_P] \
+                            [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
+                            [K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M]
+
+c Uppercase consonants
+store(consonantUpperChars)  U+0051 U+0057 U+0052 U+0054 U+0050 \
+                            U+0053 U+0044 U+0046 U+0047 U+0048 U+004A U+004B U+004C \
+                            U+005A U+0058 U+0043 U+0056 U+0042 U+004E U+004D
+store(consonantUpperKeys)   [SHIFT K_Q] [SHIFT K_W] [SHIFT K_R] [SHIFT K_T] [SHIFT K_P] \
+                            [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
+                            [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M]
+
+c Lowercase vowels
+store(vowelLowerChars)  U+0061 U+0065 U+0069 U+006F U+0075 U+0079
+store(vowelLowerKeys)   [K_A]  [K_E] [K_I] [K_O] [K_U] [K_Y]
+
+c Uppercase vowels
+store(vowelUpperChars)  U+0041 U+0045 U+0049 U+004F U+0055 U+0059
+store(vowelUpperKeys)   [SHIFT K_A] [SHIFT K_E] [SHIFT K_I] [SHIFT K_O] [SHIFT K_U] [SHIFT K_Y]
+
+store(consonantChars)   outs(consonantLowerChars) outs(consonantUpperChars)
+store(consonantKeys)    outs(consonantLowerKeys) outs(consonantUpperKeys)
+store(vowelChars)       outs(vowelLowerChars) outs(vowelUpperChars)
+store(vowelKeys)        outs(vowelLowerKeys) outs(vowelUpperKeys)
+store(alphaChars)       outs(consonantChars) outs(vowelChars)
+store(alphaKeys)        outs(consonantKeys) outs(vowelKeys)
++ any(alphaKeys)        > index(alphaChars,1)
+
+
+store(punctuationChars) U+0060 U+007E U+0021 U+0040 U+0023 U+0024 U+0025 U+005E U+0026 U+002A U+0028 U+0029 U+002D U+005F U+003D U+002B \
+                                          U+005B U+007B U+005D U+007D U+005C U+007C  \
+                                          U+002C U+003C U+002E U+003E U+002F U+003F  \
+                                          U+003B U+003A \
+                                          U+0027 U+0022
+
+store(punctuationKeys) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] [K_HYPHEN] [SHIFT K_HYPHEN] [K_EQUAL] [SHIFT K_EQUAL] \
+                       [K_LBRKT] [SHIFT K_LBRKT] [K_RBRKT] [SHIFT K_RBRKT] [K_BKSLASH] [SHIFT K_BKSLASH] \
+                       [K_COMMA] [SHIFT K_COMMA] [K_PERIOD] [SHIFT K_PERIOD] [K_SLASH] [SHIFT K_SLASH] \
+                       [K_COLON] [SHIFT K_COLON] \
+                       [K_QUOTE] [SHIFT K_QUOTE]
++ any(punctuationKeys) > index(punctuationChars,1)                       
+
+store(numerals_key) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
+store(numerals_out) U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030 
++ any(numerals_key)     > index(numerals_out,1)    
+
+
+c Vowels with one accent mark
+store(plainvowels)  'a'    'e'    'i'    'o'    'u'     'y'     'A'    'E'    'I'    'O'    'U'     'Y'
+store(acutevowels)  U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00FD  U+00C1 U+00C9 U+00CD U+00D3 U+00DA U+00DD
+store(gravevowels)  U+00E0 U+00E8 U+00EC U+00F2 U+00F9 U+1EF3  U+00C0 U+00C8 U+00CC U+00D2 U+00D9 U+1EF2
+store(hookvowels)   U+1EA3 U+1EBB U+1EC9 U+1ECF U+1EE7 U+1EF7  U+1EA2 U+1EBA U+1EC8 U+1ECE U+1EE6 U+1EF6
+store(tildevowels)  U+00E3 U+1EBD U+0129 U+00F5 U+0169 U+1EF9  U+00C3 U+1EBC U+0128 U+00D5 U+0168 U+1EF8
+store(dotvowels)    U+1EA1 U+1EB9 U+1ECB U+1ECD U+1EE5 U+1EF5  U+1EA0 U+1EB8 U+1ECA U+1ECC U+1EE4 U+1EF4
+
+store(circumvowels) U+00E2 U+00EA U+00EE U+00F4 U+00FB U+0177  U+00C2 U+00CA U+00CE U+00D4 U+00DB U+0176
+store(brevevowels)  U+0103 U+0115 U+012D U+014F U+016D dk(lowy)  U+0102 U+0114 U+012C U+014E U+016C dk(upy)
+
+any(plainvowels) + [K_1]    > index(acutevowels,1)  c aeoiuy + 1 > á é í ó ú ý and their capital counterpart
+any(plainvowels) + [K_2]    > index(gravevowels,1)  c aeoiuy + 2 > à è ì ò ù ỳ and their capital counterpart
+any(plainvowels) + [K_3]    > index(hookvowels,1)   c aeoiuy + 3 > ả ẻ ỉ ỏ ủ ỷ and their capital counterpart
+any(plainvowels) + [K_4]    > index(tildevowels,1)  c aeoiuy + 4 > ã ẽ ĩ õ ũ ỹ and their capital counterpart
+any(plainvowels) + [K_5]    > index(dotvowels,1)    c aeoiuy + 5 > ạ ẹ ị ọ ụ ỵ and their capital counterpart
+
+any(plainvowels) + [K_6]    > index(circumvowels,1) c aeoiuy + 6 > â ê î ô û ŷ and their capital counterpart
+any(plainvowels) + [K_8]    > index(brevevowels,1)  c aeoiuy + 8 > ă ĕ ĭ ŏ ŭ - and their capital counterpart
+
+c u and o with horn
+U+0075 + [K_7]  > U+01B0    c u + 7 > ư 
+U+0055 + [K_7]  > U+01AF    c U + 7 > Ư 
+U+006F + [K_7]  > U+01A1    c o + 7 > ơ
+U+004F + [K_7]  > U+01A0    c O + 7 > Ơ
+
+c Vowels with two accent marks
+store(accentnumberkey)          '1'     '2'     '3'    '4'   '5'      
+store(accentedawithbrevelower)  U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7  c ắ ằ ẳ ẵ ặ 
+store(accentedawithbreveupper)  U+1EAE U+1EB0 U+1EB2 U+1EB4 U+1EB6  c and their capital counterpart
+store(accentedawithcircumlower) U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD  c ấ ầ ẩ ẫ ậ  
+store(accentedawithcircumupper) U+1EA4 U+1EA6 U+1EA8 U+1EAA U+1EAC  c and their capital counterpart
+store(accentedewithcircumlower) U+1EBF U+1EC1 U+1EC3 U+1EC5 U+1EC7  c ế ề ể ễ ệ 
+store(accentedewithcircumupper) U+1EBE U+1EC0 U+1EC2 U+1EC4 U+1EC6  c and their capital counterpart
+store(accentedowithcircumlower) U+1ED1 U+1ED3 U+1ED5 U+1ED7 U+1ED9  c ố ồ ổ ỗ ộ 
+store(accentedowithcircumupper) U+1ED0 U+1ED2 U+1ED4 U+1ED6 U+1ED8  c and their capital counterpart
+store(accenteduwithhornlower)   U+1EE9 U+1EEB U+1EED U+1EEF U+1EF1  c ứ ừ ử ữ ự 
+store(accenteduwithhornupper)   U+1EE8 U+1EEA U+1EEC U+1EEE U+1EF0  c and their capital counterpart
+store(accentedowithhornlower)   U+1EDB U+1EDD U+1EDF U+1EE1 U+1EE3  c ớ ờ ở ỡ ợ 
+store(accentedowithhornupper)   U+1EDA U+1EDC U+1EDE U+1EE0 U+1EE2  c and their capital counterpart
+
+U+0103 + any(accentnumberkey)   > index(accentedawithbrevelower,2)  c a81 > ắ, a82 > ằ ...etc
+U+0102 + any(accentnumberkey)   > index(accentedawithbreveupper,2)  c A81 > Ắ, A82 > Ằ ...etc
+U+00E2 + any(accentnumberkey)   > index(accentedawithcircumlower,2) c a61 > ấ, a62 > ầ ...etc
+U+00C2 + any(accentnumberkey)   > index(accentedawithcircumupper,2) c A61 > Ấ, A62 > Ầ ...etc
+U+00EA + any(accentnumberkey)   > index(accentedewithcircumlower,2) c e61 > ế, e65 > ệ ...etc
+U+00CA + any(accentnumberkey)   > index(accentedewithcircumupper,2) c E61 > Ế, E65 > Ệ ...etc
+U+00F4 + any(accentnumberkey)   > index(accentedowithcircumlower,2) c o61 > ố ...etc
+U+00D4 + any(accentnumberkey)   > index(accentedowithcircumupper,2) c O61 > Ố ...etc
+U+01B0 + any(accentnumberkey)   > index(accenteduwithhornlower,2)   c u72 > ừ ...etc
+U+01AF + any(accentnumberkey)   > index(accenteduwithhornupper,2)   c U73 > Ử ...etc
+U+01A1 + any(accentnumberkey)   > index(accentedowithhornlower,2)   c o74 > ỡ ...etc
+U+01A0 + any(accentnumberkey)   > index(accentedowithhornupper,2)   c O75 > Ợ ...etc
+
+
+c d and b with stroke
+U+0064 + [K_9]  > U+0111    c d + 9 > đ
+U+0044 + [K_9]  > U+0110    c D + 9 > Đ
+U+0062 + [K_9]  > U+0180    c b + 9 > ƀ
+U+0042 + [K_9]  > U+0243    c B + 9 > Ƀ
+
+c n with a tilde
+U+006E + [K_4]  > U+00F1    c n + 4 > ñ
+U+004E + [K_4]  > U+00D1    c N + 4 > Ñ
+
+
+c c with a caron
+U+0063 + [K_8]  > U+010D
+U+0043 + [K_8]  > U+010C
+
+
+c Vowel lengths in Haroi, long vowels: a e ê i o ô ơ u ư  î  û 
+store(haroilongvowelslower)  U+00E2 U+00EA U+00F4 U+01A1 U+01B0 U+00EE U+00FB 
+store(haroilongvowelsupper)  U+00C2 U+00CA U+00D4 U+01A0 U+01AF U+00CE U+00DB
+store(haroianylongvowel)     outs(haroilongvowelslower) outs(haroilongvowelsupper)
+
+any(haroianylongvowel) + [K_8]   > index(haroianylongvowel,1) U+0306  c generate â̆ ê̆ ô̆ ơ̆ ư̆ î̆ û̆ (v+2 accents (v quality + shortness))
+
+
+c Additional strokes needed to Vietnamese keyboard:
+c v + 2 accents (shortness and tones) 
+
+c 1 2 3 4 5 6 8, when type after aeiou, becomes
+c U+0301 U+0300 U+0309 U+0303 U+0323 U+0302 U+0306 respectively
+
+U+012D + [K_1] > context U+0301 c ĭ
+U+012D + [K_2] > context U+0300 
+U+012D + [K_3] > context U+0309 
+U+012D + [K_4] > context U+0303 
+U+012D + [K_5] > context U+0323 
+U+012C + [K_1] > context U+0301 c capital of ĭ
+U+012C + [K_2] > context U+0300 
+U+012C + [K_3] > context U+0309 
+U+012C + [K_4] > context U+0303 
+U+012C + [K_5] > context U+0323 
+
+U+014F + [K_1] > context U+0301 c ŏ
+U+014F + [K_2] > context U+0300 
+U+014F + [K_3] > context U+0309 
+U+014F + [K_4] > context U+0303 
+U+014F + [K_5] > context U+0323 
+U+014E + [K_1] > context U+0301 c capital of ŏ
+U+014E + [K_2] > context U+0300 
+U+014E + [K_3] > context U+0309 
+U+014E + [K_4] > context U+0303 
+U+014E + [K_5] > context U+0323 
+
+U+016D + [K_1] > context U+0301 c ŭ
+U+016D + [K_2] > context U+0300 
+U+016D + [K_3] > context U+0309 
+U+016D + [K_4] > context U+0303 
+U+016D + [K_5] > context U+0323 
+U+016C + [K_1] > context U+0301 c capital of ŭ
+U+016C + [K_2] > context U+0300 
+U+016C + [K_3] > context U+0309 
+U+016C + [K_4] > context U+0303 
+U+016C + [K_5] > context U+0323 
+
+c v+3 accents (v quality, shortness plus tones)
+any(haroianylongvowel) U+0306 + [K_1] > context(1) context(2) U+0301 
+any(haroianylongvowel) U+0306 + [K_2] > context(1) context(2) U+0300 
+any(haroianylongvowel) U+0306 + [K_3] > context(1) context(2) U+0309 
+any(haroianylongvowel) U+0306 + [K_4] > context(1) context(2) U+0303 
+any(haroianylongvowel) U+0306 + [K_5] > context(1) context(2) U+0323 
+
+
+c additional rules
+any(circumvowels) + [K_2]   > context(1) U+0300     c for i62 > î̀
+any(gravevowels) + [K_5]    > context(1) U+0323     c for o25 > ọ̀
+
+c =======================================================================================================
+
+match > use(normalise)
+
+group(normalise)
+
+
+dk(lowy)    > U+0079
+dk(upy)     > U+0059
+
+
+
