@@ -1,9 +1,9 @@
 Tohono O'odham Keyboard
 =====================
 
-Copyright (C) 2018 James Wyly
+Copyright (C) 2018-2019 James Wyly
 
-Version 1.0
+Version 1.0.1
 
 __DESCRIPTION__
 This keyboard is used for the language of the Tohono O'odham people.

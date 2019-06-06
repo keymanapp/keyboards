@@ -1,0 +1,25 @@
+﻿c You need to use CharisSIL for this to work,
+store(&VERSION) '10.0'
+store(&NAME) 'Lahu'
+store(&COPYRIGHT) '© 2010-2019 Bob Prouty'
+store(&MESSAGE) 'This will allow you to type Lahu on any computer with CharisSIL'
+store(&BITMAP) 'lahu.ico'
+store(&VISUALKEYBOARD) 'lahu.kvks'
+c store(&KMW_HELPTEXT) 'This is the Help Text'  
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'lahu.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.1'
+begin Unicode > use(main)
+group(main) using keys
++ [ALT K_QUOTE] > '|'
++ [ALT K_BKSLASH] > '\'
++ [K_LBRKT] > U+a788
++ [SHIFT K_BKSLASH] > ':'
++ [K_BKSLASH] > '?'
++ [SHIFT K_LBRKT] > U+02C6
++ [K_COLON] > U+02EC
++ [SHIFT K_COLON] > U+02C7
++ [K_SLASH] > U+02CD
++ [SHIFT K_SLASH] > U+02C9
++ [ALT K_SLASH] > '/'
++ [ALT K_COLON] > ';' 

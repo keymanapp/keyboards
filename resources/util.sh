@@ -61,6 +61,7 @@ function parse_args {
   DO_EXE=true
   WARNINGS_AS_ERRORS=false
   TARGET=
+  PROJECT_TARGET_TYPE=
   PROJECT_TARGET=
   FLAG_SILENT=
   FLAG_DEBUG=
@@ -68,6 +69,7 @@ function parse_args {
   FLAG_TARGET=
   START=
   
+  local lastkey
   local key
   
   # Parse args
@@ -104,11 +106,14 @@ function parse_args {
         -w)
           WARNINGS_AS_ERRORS=true
           ;;          
-        -h|-?)
+        -h|-\?)
           display_usage
           ;;
+        -T)
+          lastkey="$key"
+          ;;
         -t)
-          lastkey=$key
+          lastkey="$key"
           ;;
         *)
           TARGET="$key"
@@ -121,6 +126,10 @@ function parse_args {
         -t)
           FLAG_TARGET=-t
           PROJECT_TARGET="$key"
+          ;;
+        -T)
+          FLAG_TARGET=-t
+          PROJECT_TARGET_TYPE="$key"
           ;;
       esac
       lastkey=
