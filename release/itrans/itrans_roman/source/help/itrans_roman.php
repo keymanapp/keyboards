@@ -34,7 +34,7 @@ which is useful for typing Proper names, Headings, etc. </p>
 <p>The following table shows the letters to type to get the vowels.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr><th>Devanagari</th><th>Input</th><th>Output</th><th>Scheme</th></tr>
+<tr><th>Indic</th><th>Input</th><th>Output</th><th>Output Scheme</th></tr>
 </thead>
 <tbody>
 <tr><td>अ</td><td>a</td> <td><strong>a</strong></td><td>IAST/ISO</td></tr>
@@ -43,42 +43,46 @@ which is useful for typing Proper names, Headings, etc. </p>
 <tr><td>ई</td><td>ii/ee/-i</td> <td><strong>ī</strong></td><td>IAST/ISO</td></tr>
 <tr><td>उ</td><td>u</td> <td><strong>u</strong></td><td>IAST/ISO</td></tr>
 <tr><td>ऊ</td><td>uu/oo/-u</td> <td><strong>ū</strong></td><td>IAST/ISO</td></tr>
+<tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>ऋ</td><td>.r</td> <td><strong>ṛ</strong></td><td>IAST</td></tr>
 <tr><td>ॠ</td><td>.rr</td> <td><strong>ṝ</strong></td><td>IAST</td></tr>
 <tr><td>ऌ</td><td>.l</td> <td><strong>ḷ</strong></td><td>IAST</td></tr>
 <tr><td>ॡ</td><td>.ll</td> <td><strong>ḹ</strong></td><td>IAST</td></tr>
+<tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>ऋ</td><td>,r</td> <td><strong>r̥</strong></td><td>ISO</td></tr>
 <tr><td>ॠ</td><td>,rr</td> <td><strong>r̥̄</strong></td><td>ISO</td></tr>
 <tr><td>ऌ</td><td>,l</td> <td><strong>l̥</strong></td><td>ISO</td></tr>
 <tr><td>ॡ</td><td>,ll</td> <td><strong>l̥̄</strong></td><td>ISO</td></tr>
-<tr><td>ऍ</td><td>^e</td> <td><strong>ê</strong></td><td>ISO</td></tr>
+<tr><td></td><td></td> <td><strong></strong></td><td></tr>
+<tr><td>ॲ/ऍ</td><td>^e</td> <td><strong>ê</strong></td><td>ISO</td></tr>
+<tr><td>ऑ</td><td>^o</td> <td><strong>ô</strong></td><td>ISO</td></tr>
+<tr><td>ॲ</td><td>ae</td> <td><strong>ă</strong></td><td>ă/æ/</td></tr>
+<tr><td>ऍ</td><td>~ae</td> <td><strong>ĕ</strong></td><td></td></tr>
+<tr><td>ऑ</td><td>aw</td> <td><strong>ŏ</strong></td><td>ŏ/ɔ/</td></tr>
+<tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>ऎ</td><td>e</td> <td><strong>e</strong></td><td>ISO</td></tr>
+<tr><td>ऎ</td><td>~e</td> <td><strong>ẽ</strong></td><td>resembles matra</td></tr>
 <tr><td>ए</td><td>-e</td> <td><strong>ē</strong></td><td>ISO</td></tr>
-<tr><td>ॲ</td><td>ae</td> <td><strong>ĕ</strong></td><td></td></tr>
-<tr><td>ऍ</td><td>ae</td> <td><strong>ĕ</strong></td><td></td></tr>
-<tr><td>ऎ</td><td>~e</td> <td><strong>ẽ</strong></td><td></td></tr>
 <tr><td>ए</td><td>e</td> <td><strong>e</strong></td><td>IAST</td></tr>
 <tr><td>ऐ</td><td>ai</td> <td><strong>ai</strong></td><td>IAST/ISO</td></tr>
-<tr><td>ऑ</td><td>^o</td> <td><strong>ô</strong></td><td>ISO</td></tr>
+<tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>ऒ</td><td>o</td> <td><strong>o</strong></td><td>ISO</td></tr>
+<tr><td>ऒ</td><td>~o</td> <td><strong>õ</strong></td><td>resembles matra</td></tr>
 <tr><td>ओ</td><td>-o</td> <td><strong>ō</strong></td><td>ISO</td></tr>
-<tr><td>ऑ</td><td>aw</td> <td><strong>ŏ</strong></td><td></td></tr>
-<tr><td>ऒ</td><td>~o</td> <td><strong>õ</strong></td><td></td></tr>
 <tr><td>ओ</td><td>o</td> <td><strong>o</strong></td><td>IAST</td></tr>
 <tr><td>औ</td><td>au</td> <td><strong>au</strong></td><td>IAST/ISO</td></tr>
+<tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>ः</td><td>.h</td> <td><strong>ḥ</strong></td><td>IAST/ISO</td></tr>
 <tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>ं</td><td>.m</td> <td><strong> ̇</strong></td><td>for ȧ ā̇ ï ī̇ u̇ ū̇ ė aï ȯ au̇ </td></tr>
 <tr><td>ँ</td><td>.c</td> <td><strong> ̐</strong></td><td>for a̐ ā̐ i̐ ī̐ u̐ ū̐ e̐ ai̐ o̐ au̐ </td></tr>
-<tr><td>ं</td><td>;m/m.m</td> <td><strong>ṁ</strong></td><td>ISO</td></tr>
 <tr><td>ँ</td><td>~m/m.c</td> <td><strong>m̐</strong></td><td>IAST/ISO</td></tr>
-<tr><td>ं</td><td>.mm</td> <td><strong>ṃ</strong></td><td>IAST</td></tr>
+<tr><td>ं</td><td>;m/m.m</td> <td><strong>ṁ</strong></td><td>ISO</td></tr>
 <tr><td>ं</td><td>.mm</td> <td><strong>ṃ</strong></td><td>ISO - Gurmukhi Tippi</td></tr>
+<tr><td>ं</td><td>.mm</td> <td><strong>ṃ</strong></td><td>IAST</td></tr>
 <tr><td></td><td></td> <td><strong></strong></td><td></tr>
-<tr><td>ऽ</td><td>'</td> <td><strong>’</strong></td><td>IAST/ISO</td></tr>
+<tr><td>ऽ</td><td>'</td> <td><strong>ʼ</strong></td><td>IAST/ISO</td></tr>
 <tr><td></td><td></td> <td><strong></strong></td><td></tr>
-<tr><td>ᳵ</td><td>_h</td> <td><strong>ẖ</strong></td><td>ISO</td></tr>
-<tr><td>ᳶ</td><td>^h</td> <td><strong>ḫ</strong></td><td>ISO</td></tr>
 </tbody>
 </table>
 
@@ -86,7 +90,7 @@ which is useful for typing Proper names, Headings, etc. </p>
 <p>The following table shows the letters to type to get the consonants.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr><th>Devanagari</th><th>Input</th><th>Output</th><th>Scheme</th></tr>
+<tr><th>Indic</th><th>Input</th><th>Output</th><th>Output Scheme</th></tr>
 </thead>
 <tbody>
 <tr><td>क्</td><td>k</td> <td><strong>k</strong></td><td>IAST/ISO</td></tr>
@@ -132,7 +136,7 @@ which is useful for typing Proper names, Headings, etc. </p>
 <tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>क़्</td><td>q</td> <td><strong>q</strong></td><td>IAST/ISO</td></tr>
 <tr><td>ख़्</td><td>x</td> <td><strong>x</strong></td><td>ISO</td></tr>
-<tr><td>ख़्</td><td>-kh</td> <td><strong>k͟h</strong></td><td>IAST</td></tr>
+<tr><td>ख़्</td><td>_kh</td> <td><strong>k͟h</strong></td><td>IAST</td></tr>
 <tr><td>ग़्</td><td>;g/.gg</td> <td><strong>ġ</strong></td><td>ISO</td></tr>
 <tr><td>ज़्</td><td>z</td> <td><strong>z</strong></td><td>ISO</td></tr>
 <tr><td>फ़्</td><td>f</td> <td><strong>f</strong></td><td>ISO</td></tr>
@@ -154,17 +158,23 @@ romanized letters needed for other Indic languages
 as per ISO 15919 scheme.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
-<tr><th>Indic</th><th>Input</th><th>Output</th><th>Scheme</th></tr>
+<tr><th>Indic</th><th>Input</th><th>Output</th><th>Output Scheme</th></tr>
 </thead>
 <tbody>
-<tr><td></td><td>^u</td> <td><strong>ŭ</strong></td><td>ISO</td></tr>
-<tr><td></td><td>^n</td> <td><strong>n̆</strong></td><td>ISO</td></tr>
-<tr><td></td><td>_k</td> <td><strong>ḵ</strong></td><td>ISO</td></tr>
-<tr><td></td><td>^c</td> <td><strong>ĉ</strong></td><td>ISO</td></tr>
-<tr><td>ऱ्</td><td>-r</td> <td><strong>ṟ</strong></td><td>IAST/ISO</td></tr>
-<tr><td></td><td>_t</td> <td><strong>ṯ</strong></td><td>ISO</td></tr>
-<tr><td>ऩ्</td><td>-n</td> <td><strong>ṉ</strong></td><td>IAST/ISO</td></tr>
-<tr><td>ऴ्</td><td>-l</td> <td><strong>ḻ</strong></td><td>IAST/ISO</td></tr>
-<tr><td>य़्</td><td>;y</td> <td><strong>ẏ</strong></td><td>IAST/ISO</td></tr>
+<tr><td>്</td><td>^u</td> <td><strong>ŭ</strong></td><td>ISO</td></tr>
+<tr><td>ఁ</td><td>^n</td> <td><strong>n̆</strong></td><td>ISO</td></tr>
+<tr><td>ᳵ</td><td>_h</td> <td><strong>ẖ</strong></td><td>ISO</td></tr>
+<tr><td>ᳶ</td><td>^h</td> <td><strong>ḫ</strong></td><td>ISO</td></tr>
+<tr><td>ஃ</td><td>_k</td> <td><strong>ḵ</strong></td><td>ISO</td></tr>
+<tr><td>ౘ</td><td>^c</td> <td><strong>ĉ</strong></td><td>ISO</td></tr>
+<tr><td>ऱ्, ற, ఱ, ಱ, റ</td><td>_r</td> <td><strong>ṟ</strong></td><td>IAST/ISO</td></tr>
+<tr><td>ഺ</td><td>_t</td> <td><strong>ṯ</strong></td><td>ISO</td></tr>
+<tr><td>ऩ्, ன, ഩ</td><td>_n</td> <td><strong>ṉ</strong></td><td>IAST/ISO</td></tr>
+<tr><td>ऴ्, ழ, ఴ, ೞ, ഴ</td><td>_l</td> <td><strong>ḻ</strong></td><td>IAST/ISO</td></tr>
+<tr><td>य़्, 	য়</td><td>;y</td> <td><strong>ẏ</strong></td><td>IAST/ISO</td></tr>
 </tbody>
 </table>
+
+<p>
+<hr>
+</p>
