@@ -125,6 +125,8 @@ The third row shows Vowels in their independent form on the left and their corre
 form (maatraa or vowel sign) on the right. The fourth row shows the vowel sign combined with the consonant `k`. 
 `ka` is without any added vowel sign, where the vowel `a` is inherent. Please note that there is no
 independent vowel for Bengali AU length mark, <samp>ৗ</samp>.</p>
+<p>If there is a need to type ONLY the vowel signs, it can be done 
+    using `@` instead of a consonant. e.g. @A will output া, @ai will output ৈ.</p>
 
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
