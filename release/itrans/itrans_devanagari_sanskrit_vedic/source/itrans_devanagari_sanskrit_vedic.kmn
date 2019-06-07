@@ -52,7 +52,8 @@ c 20190530
 c Add OM for ॐ
 c Add examples with Vedic accents to welcome and help
 c Add missing Samaveda marks for  key + EQUAL (similar to RCTRL) 
-c
+c 20190531
+c Add _ _ for   ॒
 store(&VERSION) "10.0" 
 store(&NAME) 'Vedic Sanskrit Devanagari Phonetic (ITRANS)'
 store(&TARGETS) 'windows macosx linux web'
@@ -71,8 +72,6 @@ store(opt1) '0'
 + [RCTRL RALT K_1]	>	set(opt1='hindi') 
 + [RCTRL RALT K_0]	>	reset(opt1)
 
-c 
-
 c	Special Symbols
 
 + "#"	>	"ॐ"
@@ -81,9 +80,9 @@ c	Special Symbols
 + "*"	>	"❀"
 + "&"	>	"☸"
 + "V"	>	"ऽ"	c AVAGRAHA
++ "^"	>	"्"	c VIRAMA
 + "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
 + "+"	>	U+200D	c ZERO-WIDTH JOINER
-+ "^"	>	"्"	c VIRAMA
 
 c	Punctuation
 store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" '"' "," "." "=" "\" "<" ">" "|"
@@ -93,13 +92,20 @@ store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" '"' "," "." "=" "\
 + "@"	>	"@" 
 
 "," + ","	>	U+0970	c	DEVANAGARI ABBREVIATION SIGN
-
 "." + "."	>	"।"	c twice for DANDA
 "।" + "."	>	"॥"	c thrice for DOUBLE DANDA
 "॥" + "."	>	U+2026	c four dots for a HORIZONTAL ELLIPSIS
-
 "-" + "-"	>	U+2013	c hyphen twice for EN DASH
 U+2013 + "-"	>	U+2014	c three times for EM DASH
+
+c	COMMON VEDIC MARKS
+"'" + "'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA - ''
+U+0951 + "'"	>	U+1CDA	c VEDIC TONE DOUBLE SVARITA - '''
+U+1CDA + "'"	>	U+1CDB	c VEDIC TONE TRIPLE SVARITA - ''''
+"`" + "`"	>	U+0952	c ` twice for ANUDATTA
+U+200C + "_" > U+0952	c _ twice for ANUDATTA
+"ँ" + "^"	>	"ꣳ"	c CANDRABINDU VIRAMA - MM^
+"=" + "="	>	"ᳶ"	c VEDIC SIGN UPADHMANIYA - ==
 
 c	numbers - Devanagari DigitsU
 store(Digits)	"0"		"1"		"2"		"3"		"4"		"5"		"6"		"7"		"8"		"9"
@@ -304,16 +310,6 @@ any(NuktaVyanjana)"़""े" + "e"	>	 index(NuktaVyanjana,1)"़""ी"	 c ee
 any(NuktaVyanjana)"़""े" + "i"	>	index(NuktaVyanjana,1)"़""ै"	 c ei
 any(NuktaVyanjana)"़""ो" + "o"	>	 index(NuktaVyanjana,1)"़""ू"	 c oo
 any(NuktaVyanjana)"़""ो" + "u"	>	index(NuktaVyanjana,1)"़""ौ"	 c ou
-
-c 
-
-c	COMMON VEDIC MARKS
-"'" + "'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA - ''
-U+0951 + "'"	>	U+1CDA	c VEDIC TONE DOUBLE SVARITA - '''
-U+1CDA + "'"	>	U+1CDB	c VEDIC TONE TRIPLE SVARITA - ''''
-"`" + "`"	>	U+0952	c DEVANAGARI STRESS SIGN ANUDATTA - ``
-"ँ" + "^"	>	"ꣳ"	c CANDRABINDU VIRAMA - MM^
-"=" + "="	>	"ᳶ"	c VEDIC SIGN UPADHMANIYA - ==
 
 c VEDIC MARKS 
 
