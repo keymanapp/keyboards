@@ -19,13 +19,14 @@ c Fixes as per PR feedback
 c Mapping changes as per user feedback
 c
 store(&VERSION) "10.0" 
-store(&NAME) 'itrans_roman'
-store(&TARGETS) 'windows macosx linux web'
+store(&NAME) 'Indic Romanization from ITRANS'
+store(&TARGETS) 'any windows macosx linux web'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
-store(&MESSAGE) 'Indic Romanization from ITRANS'
-store(&KMW_HELPTEXT) 'Supports ISO_15919, IAST, NLK transliteration schemes'
+store(&MESSAGE) 'Indic Roman Transliteration (IAST, ISO, NLK, etc.) from ITRANS'
+store(&KMW_HELPTEXT) 'Provides Unicode output in ISO_15919, IAST, NLK transliteration schemes for Indic languages'
 store(&KEYBOARDVERSION) '1.0.0'
 store(&BITMAP) 'itrans_roman.ico'
+store(&VISUALKEYBOARD) 'itrans_roman.kvks'
 
 begin Unicode > use(main)
 group(main) using keys
@@ -79,7 +80,6 @@ c overdot - repeat the letter
 "ṇ" + "n" > "ṅ"
 
 c sh
-"s" + "h" > "ś"
 "s" + "'" > "ś"
 ";" + "s" > "ś"
 
@@ -178,7 +178,6 @@ c OVERDOT - REPEAT THE LETTER
 "Ṇ" + "N" > "Ṅ"
 
 c SH
-"S" + "H" > "Ś"
 "S" + "'" > "Ś"
 ";" + "S" > "Ś"
 
