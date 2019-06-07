@@ -7,7 +7,7 @@ c Update based on itrans_gujarati 1.2.0
 c Add characters based on Unicode Bengali Chart
 c https://unicode.org/charts/PDF/U0980.pdf
 c 20190601
-c Add OM as O and chandrabindu
+c Add OM symbol as O and chandrabindu
 c Add Assamese as supported language
 c 20190605
 c Change based on PR feedback
@@ -34,7 +34,6 @@ store(opt1) 'hindi'
 + [RCTRL RALT K_1]	>	reset(opt1)
 
 c 	Special Symbols
-"O" + "M" > "ওঁ" 
 + "#"	>	"ওঁ"
 + "$"	>	"₹" c Indian Rupee Sign
 + "%"	>	U+0FD5	c ࿕ Right-Facing Svasti Sign
@@ -90,7 +89,6 @@ c  standalone vowel signs with @
 "@" + "U"	>	"ূ"
 "@" + "e"	>	"ে"
 "@" + "o"	>	"ো"
-"@"  + "O"	>	"ৗ"
 "@" + "a"	>	"@a"
 "@a" + "a"	>	"া"
 "@a" + "i"	>	"ৈ"
@@ -107,6 +105,8 @@ c  standalone vowel signs with @
 "@" + "L"	>	"ৢ"
 "ৢ" + "L"	>	"ৢ" c @LL
 "ৢ" + "^"	>	"ৣ" c @LL^
+
++ "O"	>	"ৗ"
 
 c  Independent Vowels
 + "a"	>	"অ"
@@ -132,7 +132,6 @@ c  Independent Vowels
 "ঋ" + "^"	>	"ৠ" c RR^
 "ঌ" + "L"	>	"ঌ" c LL
 "ঌ" + "^"	>	"ৡ" c LL^
-+ "O"	>	"O"
 
 c  Vowel Modifiers
 + "H"	>	"ঃ" c VISARGA - H
