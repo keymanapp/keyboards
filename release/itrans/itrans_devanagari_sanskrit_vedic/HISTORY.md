@@ -1,9 +1,15 @@
 Vedic Sanskrit Devanagari Phonetic (ITRANS) Version History
 ======================================
 
+1.2.1 (2019-05-30)
+----------------
+* 20190530 
+* Add OM for ॐ
+* Add examples with Vedic accents to welcome and help
+* Add missing Samaveda marks for  key + EQUAL (similar to RCTRL) 
+
 1.2.0 (2019-05-26)
 ----------------
-* Version 1.2.0
 * 20190526
 * Streamline code with use of `store` and `any`
 * Add support for Marathi eyelash ra R - र्‍ 
