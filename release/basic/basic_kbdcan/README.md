@@ -1,7 +1,7 @@
-Canadian Multilingual Standard keyboard
+Canadian Multilingual Standard Basic keyboard
 ==============
 
-©
+© 2019 SIL International
 
 Version 1.0
 
@@ -12,6 +12,7 @@ Canadian Multilingual Standard generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdcan
 
 Supported Platforms
 -------------------
