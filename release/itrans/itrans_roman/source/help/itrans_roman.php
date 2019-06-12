@@ -14,7 +14,7 @@ END;
   require_once('header.php');
 ?>
 
-<h2><span style="color: chocolate;">Indic Romanization from ITRANS</span> Keyboard Version 1.0.0</h2>
+<h2><span style="color: chocolate;">Indic Romanization from ITRANS</span> Keyboard Version 1.1.0</h2>
 
 <p>This is a phonetic keyboard for Indic Romanization which is based on  
 <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> 
@@ -141,6 +141,12 @@ which is useful for typing Proper names, Headings, etc. </p>
 <tr><td>ज़्</td><td>z</td> <td><strong>z</strong></td><td>ISO</td></tr>
 <tr><td>फ़्</td><td>f</td> <td><strong>f</strong></td><td>ISO</td></tr>
 <tr><td></td><td></td> <td><strong></strong></td><td></tr>
+<tr><td>क़्</td><td>.k</td> <td><strong>ḳ</strong></td><td></td></tr>
+<tr><td>ख़्</td><td>.kh</td> <td><strong>ḳh</strong></td><td></td></tr>
+<tr><td>ग़्</td><td>.g</td> <td><strong>g̣</strong></td><td></td></tr>
+<tr><td>ज़्</td><td>.j</td> <td><strong>j̣</strong></td><td></td></tr>
+<tr><td>फ़्</td><td>.f</td> <td><strong>f̣</strong></td><td></td></tr>
+<tr><td></td><td></td> <td><strong></strong></td><td></tr>
 <tr><td>ड़्</td><td>.r</td> <td><strong>ṛ</strong></td><td>ISO</td></tr>
 <tr><td>ढ़्</td><td>.rh</td> <td><strong>ṛh</strong></td><td>ISO</td></tr>
 <tr><td>ड़्</td><td>..r</td> <td><strong>r̤</strong></td><td>IAST</td></tr>
@@ -185,3 +191,39 @@ as per ISO 15919 scheme.</p>
 <p>Gaṅgā ke kināre amarūda aura āma ke ped̤ȯ  kī chhāe mė  baiṭhe ū̇ṭa/ū̐ṭa ke pāsa khad̤e airāvata nāmaka chañchala hāthī ne pȧkaja/pa̐kaja kā phūla uṭhākara hode mė  rakhe Gaṇesha kī mūrti ke shīrṣa para ḍālā aura chïghād̤a uṭhā, aura īkha kā gaṭṭhara sū̇d̤a/sū̐ḍa se uṭhākara mu̇ha/mu̐ha mė  ḍālakara itmīnāna se chabāne lagā, jise dekhakara jhā̇jhara/jhā̐jhara , ḍhola majīre jora se bajane lage, paṭākhȯ  ke dhamāke hue aura bhakta gaṇȯ  ne ȯ  namaḥ shivāya kī guhāra se sāre kṣetra ko gu̇jā/gu̐jā diyā aura thālī mė  sikke ḍāla die.<p>
 
 <hr>
+
+<h3>IPA Vowels</h3>
+<p>The following table shows the letters to type to get IPA vowels 
+to write words pronunciation key.</p>
+<table class="inputSequences" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr><th>Input</th><th>IPA</th></tr>
+</thead>
+<tbody>
+<tr><td>@</td> <td><strong>æ</strong></td></tr>
+<tr><td>a'</td> <td><strong>ə</strong></td></tr>
+<tr><td>a'i</td> <td><strong>əɪ</strong></td></tr>
+<tr><td>a'u</td> <td><strong>əʊ</strong></td></tr>
+<tr><td>a:</td> <td><strong>ɑː</strong></td></tr>
+<tr><td>a`</td> <td><strong>ʌ</strong></td></tr>
+<tr><td>a"</td> <td><strong>ɒ</strong></td></tr>
+<tr><td>e'</td> <td><strong>ɛ</strong></td></tr>
+<tr><td>i'</td> <td><strong>ɪ</strong></td></tr>
+<tr><td>i:</td> <td><strong>iː</strong></td></tr>
+<tr><td>o:</td> <td><strong>ɔː</strong></td></tr>
+<tr><td>u'</td> <td><strong>ʊ</strong></td></tr>
+<tr><td>u:</td> <td><strong>uː</strong></td></tr>
+</tbody>
+</table>
+
+<hr>
+
+<h3>IAST Sample Text</h3>
+Eka samaya thā jaba mahātmā gāṃdhī aura vinobā bhāve jaise svataṃtratā senānī rāṣṭrīya ekatā kī dṛṣṭi se rāṣṭrabhāṣā ke rūpa meṃ hiṃdī aura rāṣṭrīya lipi ke rūpa meṃ devanāgarī lipi ko sthāpita karane ke lie prayāsarata the. Yahām̐ taka ki śahīde āzama bhagata siṃha ne bhī apanī mātṛbhāṣā paṃjābī ke lie gurumukhī ke bajāe vaijñānikatā ke calate devanāgarī ko apanāne kī bāta kahī thī. Unakā prayāsa thā ki deśa ke jina hissoṃ meṃ denavāgarī pracalita nahīṃ haiṃ vahām̐ bhī jana-jana taka devanāgarī lipi pahuṃcāī jāe. Isalie mahātmā gāṃdhī va vinobā bhāve dvārā hiṃdī ke sātha-sātha devanāgarī lipi ke lie aneka saṃsthāem̐ khar̤ī kī thī.
+
+<h3>Same Sample Text with IPA vowels</h3>
+
+Ɛkə səməyə thɑː jəbə Məhɑːtmɑː Gɑːṃdhɪː əʊrə Vɪnobɑː Bhɑːvɛ jəɪsɛ svətəṃtrətɑː sɛnɑːnɪː rɑːṣṭrɪːyə ɛkətɑː kɪː dṛṣṭɪ sɛ rɑːṣṭrəbhɑːṣɑː kɛ ruːpə mɛṃ Hɪṃdɪː əʊrə rɑːṣṭrɪːyə lɪpɪ kɛ ruːpə mɛṃ Dɛvənɑːgərɪː lɪpɪ ko sthɑːpɪtə kərənɛ kɛ lɪɛ prəyɑːsərətə thɛ. Yəhɑːm̐ təkə kɪ śəhɪːdɛ ɑːzəmə Bhəgətə Sɪṃhə nɛ bhɪː əpənɪː mɑːtṛbhɑːṣɑː pəṃjɑːbɪː kɛ lɪɛ Gurumukhɪː kɛ bəjɑːɛ vəɪjñɑːnɪkətɑː kɛ cələtɛ Dɛvənɑːgərɪː ko əpənɑːnɛ kɪː bɑːtə kəhɪː thɪː. Unəkɑː prəyɑːsə thɑː kɪ dɛśə kɛ jɪnə hɪssoṃ mɛṃ Dɛnəvɑːgərɪː prəcəlɪtə nəhɪːṃ həɪṃ vəhɑːm̐ bhɪː jənə-jənə təkə Dɛvənɑːgərɪː lɪpɪ pəhuṃcɑːɪː jɑːɛ. ɪsəlɪɛ Məhɑːtmɑː Gɑːṃdhɪː və vɪnobɑː bhɑːvɛ dvɑːrɑː Hɪṃdɪː kɛ sɑːthə-sɑːthə Dɛvənɑːgərɪː lɪpɪ kɛ lɪɛ ənɛkə səṃsthɑːɛm̐ khər̤ɪː kɪː thɪː.
+
+<hr>
+
