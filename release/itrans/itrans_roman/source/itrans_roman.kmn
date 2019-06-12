@@ -5,7 +5,7 @@ c https://en.wikipedia.org/wiki/National_Library_at_Kolkata_romanisation#Scheme_
 c http://aksharamukha.appspot.com/#/script-matrix
 c http://transliteration.eki.ee/pdf/Hindi-Marathi-Nepali.pdf
 c https://web.archive.org/web/20160414223033/http://homepage.ntlworld.com/stone-catend/trind.htm
-c IAST extensions suggested by Ken P
+c IAST extensions, Pangrams and sample texts provided by Ken P
 c
 c Version 1.0.0 
 c 20190601
@@ -17,6 +17,11 @@ c for easy typing of accents.
 c 20190606
 c Fixes as per PR feedback
 c Mapping changes as per user feedback
+c 20190609
+c Add nukta consonants
+c Version 1.1.0 
+c 20190612
+c Add IPA (vowels only) for words pronunciation key
 c
 store(&VERSION) "10.0" 
 store(&NAME) 'Indic Romanization from ITRANS'
@@ -24,7 +29,7 @@ store(&TARGETS) 'any windows macosx linux web'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
 store(&MESSAGE) 'Indic Roman Transliteration (IAST, ISO, NLK, etc.) from ITRANS'
 store(&KMW_HELPTEXT) 'Provides Unicode output in ISO_15919, IAST, NLK transliteration schemes for Indic languages'
-store(&KEYBOARDVERSION) '1.0.0'
+store(&KEYBOARDVERSION) '1.1.0'
 store(&BITMAP) 'itrans_roman.ico'
 store(&VISUALKEYBOARD) 'itrans_roman.kvks'
 
@@ -32,16 +37,21 @@ begin Unicode > use(main)
 group(main) using keys
 
 c Map
++ "'" > "'"
 + "," > ","
 + "-" > "-"
 + "." > "."
++ ":" > ":"
 + ";" > ";"
 + "^" > "^"
 + "_" > "_"
++ "`" > "`"
 + "~" > "~"
++ '"' > '"'
 
 c Exceptions - avagraha and double dot
 "." + "."> "̤"
+"̤" + "."> "."
 + "'" > U+02BC
 U+02BC + "'" > "'"
 
@@ -52,6 +62,27 @@ c Double for original character
 "^" + "^" > "^"
 "_" + "_" > "_"
 "~" + "~" > "~"
+"'" + "'" > "'"
+":" + ":" > ":"
+"`" + "`" > "`"
+'"' + '"' > '"'
+"æ" + '@' > '@'
+
+c IPA Vowels only as pronunciation key
+
++"@">"æ"
+"a"+"'"	>"ə"
+"ə"+"i"	>"əɪ"
+"ə"+"u"	>"əʊ"
+"a"+":"	>"ɑː"
+"a"+"`"	>"ʌ"
+"a"+'"'	>"ɒ"
+"e"+"'"	>"ɛ"
+"i"+"'"	>"ɪ"
+"i"+":"	>"iː"
+"o"+":"	>"ɔː"
+"u"+"'"	>"ʊ"
+"u"+":"	>"uː"
 
 c vocalics - ISO
 "," + "r" > "r̥"
@@ -65,7 +96,7 @@ c vocalics - IAST
 "ṛ" + "r" > "ṝ"
 "ḷ" + "l" > "ḹ"
 
-c underdots
+c underdots + Nukta-क़ख़ग़ज़फ़ 
 store(underdot) "tdnshk"
 store(underdotU) "ṭḍṇṣḥḳ"
 "." + any(underdot) > index(underdotU,2)
