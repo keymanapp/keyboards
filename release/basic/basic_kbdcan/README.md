@@ -1,14 +1,14 @@
 Canadian Multilingual Standard Basic keyboard
 ==============
 
-© 2019 SIL International
+© 2014-2019 SIL International
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Canadian Multilingual Standard generated from template
+Canadian Multilingual Standard Basic generated from template
 
 Links
 -----
