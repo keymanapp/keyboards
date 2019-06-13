@@ -13,4 +13,4 @@ Indic Romanization from ITRANS - Version History
 
 1.1.0 (2019-06-12)
 ----------------
-* Add IPA (vowels only) for words pronunciation key
+* Add support for IPA (vowels only) output, useful for words pronunciation key

@@ -28,7 +28,7 @@ store(&NAME) 'Indic Romanization from ITRANS'
 store(&TARGETS) 'any windows macosx linux web'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
 store(&MESSAGE) 'Indic Roman Transliteration (IAST, ISO, NLK, etc.) from ITRANS'
-store(&KMW_HELPTEXT) 'Provides Unicode output in ISO_15919, IAST, NLK transliteration schemes for Indic languages'
+store(&KMW_HELPTEXT) 'Provides Unicode output in ISO_15919, IAST, NLK transliteration schemes for Indic languages. Also has support for IPA vowels output.'
 store(&KEYBOARDVERSION) '1.1.0'
 store(&BITMAP) 'itrans_roman.ico'
 store(&VISUALKEYBOARD) 'itrans_roman.kvks'
@@ -72,8 +72,10 @@ c IPA Vowels only as pronunciation key
 
 +"@">"æ"
 "a"+"'"	>"ə"
-"ə"+"i"	>"əɪ"
-"ə"+"u"	>"əʊ"
+"a"+"i"	>"ai"
+"a"+"u"	>"au"
+"ai"+"'"	>"əɪ"
+"au"+"'"	>"əʊ"
 "a"+":"	>"ɑː"
 "a"+"`"	>"ʌ"
 "a"+'"'	>"ɒ"
