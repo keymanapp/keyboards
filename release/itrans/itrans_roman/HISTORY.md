@@ -11,3 +11,6 @@ Indic Romanization from ITRANS - Version History
 * from ITRANS and 7 bit ISO transliteration 
 * for easy typing of accents.
 
+1.1.0 (2019-06-12)
+----------------
+* Add support for IPA (vowels only) output, useful for words pronunciation key
