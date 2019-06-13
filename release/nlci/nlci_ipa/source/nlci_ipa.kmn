@@ -1,11 +1,11 @@
 ﻿ 
 
-store(&NAME) 'NLCI IPA'
-
-store(&WINDOWSLANGUAGES) 'x040F'
-store(&TARGETS) 'windows'
-store(&COPYRIGHT) '© NLCI 2000-2018'
-store(&KEYBOARDVERSION) '2.0.0'
+store(&VERSION)'10.0'
+store(&NAME) 'NLCI IPA' 
+store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.0'
+store(&BITMAP) 'nlci_ipa.ico'
+store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
@@ -408,7 +408,7 @@ c add the behavior R
 
 c add the behavior s
 'ʃ' + '=' > 'σ'
-'σ' + '= ' > 'ʂ'
+'σ' + '=' > 'ʂ'
 'ʂ' + '=' > 'ᶊ'
 'ᶊ' + '=' > 'ᵴ'
 'ᵴ' + '=' > 'ᶘ'
