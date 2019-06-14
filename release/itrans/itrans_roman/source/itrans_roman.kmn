@@ -1,0 +1,281 @@
+﻿c Reference Schemes
+c https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration
+c https://en.wikipedia.org/wiki/ISO_15919
+c https://en.wikipedia.org/wiki/National_Library_at_Kolkata_romanisation#Scheme_table
+c http://aksharamukha.appspot.com/#/script-matrix
+c http://transliteration.eki.ee/pdf/Hindi-Marathi-Nepali.pdf
+c https://web.archive.org/web/20160414223033/http://homepage.ntlworld.com/stone-catend/trind.htm
+c IAST extensions, Pangrams and sample texts provided by Ken P
+c
+c Version 1.0.0 
+c 20190601
+c Indic Romanization in various schemes such as 
+c International Alphabet of Sanskrit Transliteration (IAST),
+c ISO_15919, NLK, IAST extensions, etc
+c from ITRANS / 7 bit ISO transliteration input 
+c for easy typing of accents.
+c 20190606
+c Fixes as per PR feedback
+c Mapping changes as per user feedback
+c 20190609
+c Add nukta consonants
+c Version 1.1.0 
+c 20190612
+c Add IPA (vowels only) for words pronunciation key
+c
+store(&VERSION) "10.0" 
+store(&NAME) 'Indic Romanization from ITRANS'
+store(&TARGETS) 'any windows macosx linux web'
+store(&COPYRIGHT) '©2019 sanskritdocuments.org'
+store(&MESSAGE) 'Indic Roman Transliteration (IAST, ISO, NLK, etc.) from ITRANS'
+store(&KMW_HELPTEXT) 'Provides Unicode output in ISO_15919, IAST, NLK transliteration schemes for Indic languages. Also has support for IPA vowels output.'
+store(&KEYBOARDVERSION) '1.1.0'
+store(&BITMAP) 'itrans_roman.ico'
+store(&VISUALKEYBOARD) 'itrans_roman.kvks'
+
+begin Unicode > use(main)
+group(main) using keys
+
+c Map
++ "'" > "'"
++ "," > ","
++ "-" > "-"
++ "." > "."
++ ":" > ":"
++ ";" > ";"
++ "^" > "^"
++ "_" > "_"
++ "`" > "`"
++ "~" > "~"
++ '"' > '"'
+
+c Exceptions - avagraha and double dot
+"." + "."> "̤"
+"̤" + "."> "."
++ "'" > U+02BC
+U+02BC + "'" > "'"
+
+c Double for original character
+"," + "," > ","
+"-" + "-" > "-"
+";" + ";" > ";"
+"^" + "^" > "^"
+"_" + "_" > "_"
+"~" + "~" > "~"
+"'" + "'" > "'"
+":" + ":" > ":"
+"`" + "`" > "`"
+'"' + '"' > '"'
+"æ" + '@' > '@'
+
+c IPA Vowels only as pronunciation key
+
++"@">"æ"
+"a"+"'"	>"ə"
+"a"+"i"	>"ai"
+"a"+"u"	>"au"
+"ai"+"'"	>"əɪ"
+"au"+"'"	>"əʊ"
+"a"+":"	>"ɑː"
+"a"+"`"	>"ʌ"
+"a"+'"'	>"ɒ"
+"e"+"'"	>"ɛ"
+"i"+"'"	>"ɪ"
+"i"+":"	>"iː"
+"o"+":"	>"ɔː"
+"u"+"'"	>"ʊ"
+"u"+":"	>"uː"
+
+c vocalics - ISO
+"," + "r" > "r̥"
+"," + "l" > "l̥"
+"r̥" + "r" > "r̥̄"
+"l̥" + "l" > "l̥̄"
+
+c vocalics - IAST
+"." + "r" > "ṛ"
+"." + "l" > "ḷ"
+"ṛ" + "r" > "ṝ"
+"ḷ" + "l" > "ḹ"
+
+c underdots + Nukta-क़ख़ग़ज़फ़ 
+store(underdot) "tdnshk"
+store(underdotU) "ṭḍṇṣḥḳ"
+"." + any(underdot) > index(underdotU,2)
+
+c underdots - no precomposed letters
+"." + "g" > "g̣"
+"." + "j" > "j̣"
+"." + "f" > "f̣"
+
+c overdot - repeat the letter
+"g̣" + "g" > "ġ"
+"ṇ" + "n" > "ṅ"
+
+c sh
+"'" + "s" > "ś"
+";" + "s" > "ś"
+
+c overdot - with ;
+";" + "y" > "ẏ"
+";" + "g" > "ġ"
+";" + "n" > "ṅ"
+";" + "m" > "ṁ"
+
+c anusvara and candrabindu
+"i" + "." > "i."
+"i." + "m" > "ï"
+"ï" + "m" > "iṃ" c .im
+
+"." + "m" > "̇"
+"." + "c" > "̐"
+"̇" + "m" > "ṃ" c .mm
+
+c Alternate forms ;m and ~m given earlier
+"ṃ" + "m" > "ṁ" c .mmm
+"ṃ" + "c" > "m̐" c .mmc
+
+c underbar with underscore
+"_" + "l" > "ḻ"
+"_" + "r" > "ṟ"
+"_" + "n" > "ṉ"
+"_" + "k" > "ḵ"
+"ḵ" + "h" > "k͟h"
+"_" + "h" > "ẖ"
+"_" + "t" > "ṯ"
+
+c double underdot - use U+200C to not merge with next letter
+store(doubleunderdot) "̤" 
+store(doubleunderdotU) "dlrtsh" 
+any(doubleunderdot) + any(doubleunderdotU) > index(doubleunderdotU,2) index(doubleunderdot,1)U+200C
+
+c overbar with hyphen
+store(overmark) "aeiou" "n"
+store(overmarkU) "āēīōū" "ñ"
+"-" + any(overmark) > index(overmarkU,2)
+
+c overbar - repeated letters
+"a" + "a" > "ā" 
+"e" + "e" > "ī" 
+"i" + "i" > "ī" 
+"o" + "o" > "ū" 
+"u" + "u" > "ū"
+
+c overmarks - with tilde
+"~" + "e" > "ẽ"
+"~" + "o" > "õ"
+"~" + "n" > "ñ"
+"~" + "m" > "m̐"
+
+c candra
+"a" + "e" > "ă"
+"~" + "a" > "ă"
+"ă" + "e" > "ĕ"
+"a" + "w" > "ŏ"
+
+c ISO overmarks with ^
+store(ISOchandra) "eocuh"
+store(ISOchandraU) "êôĉŭḫ"
+"^" + any(ISOchandra) > index(ISOchandraU,2)
+"^" + "n" > "n̆"
+"^" + "r" > "r̆"
+
+c Duplicate above rules with CAPS
+c for typing of headings
+
+
+c VOCALICS - ISO
+"," + "R" > "R̥"
+"," + "L" > "L̥"
+"R̥" + "R" > "R̥̄"
+"L̥" + "L" > "L̥̄"
+
+c VOCALICS - IAST
+"." + "R" > "Ṛ"
+"." + "L" > "Ḷ"
+"Ṛ" + "R" > "Ṝ"
+"Ḷ" + "L" > "Ḹ"
+
+c UNDERDOTS
+store(CAPS_UNDERDOT) "TDNSHK"
+store(CAPS_UNDERDOTU) "ṬḌṆṢḤḲ"
+"." + any(CAPS_UNDERDOT) > index(CAPS_UNDERDOTU,2)
+
+c UNDERDOTS - NO PRECOMPOSED LETTERS
+"." + "G" > "G̣"
+"." + "J" > "J̣"
+"." + "F" > "F̣"
+
+c OVERDOT - REPEAT THE LETTER
+"G̣" + "G" > "Ġ"
+"Ṇ" + "N" > "Ṅ"
+
+c SH
+"'" + "S" > "Ś"
+";" + "S" > "Ś"
+
+c OVERDOT - WITH ;
+";" + "Y" > "Ẏ"
+";" + "G" > "Ġ"
+";" + "N" > "Ṅ"
+";" + "M" > "Ṁ"
+
+c ANUSVARA AND CANDRABINDU
+"I" + "." > "I."
+"I." + "M" > "Ï"
+"Ï" + "M" > "IṂ" C .IM
+
+"." + "M" > "̇"
+"." + "C" > "̐"
+"̇" + "M" > "Ṃ" C .MM
+
+c ALTERNATE FORMS ;M AND ~M GIVEN EARLIER
+"Ṃ" + "M" > "Ṁ" C .MMM
+"Ṃ" + "C" > "M̐" C .MMC
+
+c UNDERBAR WITH UNDERSCORE
+"_" + "L" > "Ḻ"
+"_" + "R" > "Ṟ"
+"_" + "N" > "Ṉ"
+"_" + "K" > "Ḵ"
+"Ḵ" + "H" > "K͟H"
+"_" + "H" > "H̱"
+"_" + "T" > "Ṯ"
+
+c DOUBLE UNDERDOT - use U+200C to not merge with next letter
+store(CAPS_DOUBLEUNDERDOT) "̤" 
+store(CAPS_DOUBLEUNDERDOTU) "DLRTSH" 
+any(CAPS_DOUBLEUNDERDOT) + any(CAPS_DOUBLEUNDERDOTU) > index(CAPS_DOUBLEUNDERDOTU,2) index(CAPS_DOUBLEUNDERDOT,1)U+200C
+
+c OVERBAR WITH HYPHEN
+store(CAPS_OVERMARK) "AEIOU" "N"
+store(CAPS_OVERMARKU) "ĀĒĪŌŪ" "Ñ"
+"-" + any(CAPS_OVERMARK) > index(CAPS_OVERMARKU,2)
+
+c OVERBAR - REPEATED LETTERS
+"A" + "A" > "Ā" 
+"E" + "E" > "Ī" 
+"I" + "I" > "Ī" 
+"O" + "O" > "Ū" 
+"U" + "U" > "Ū"
+
+c overmarks - with tilde
+"~" + "E" > "Ẽ"
+"~" + "O" > "Õ"
+"~" + "N" > "Ñ"
+"~" + "M" > "M̐"
+
+c candra
+"A" + "E" > "Ă"
+"~" + "A" > "Ă"
+"Ă" + "E" > "Ĕ"
+"A" + "W" > "Ŏ"
+
+c ISO OVERMARKS WITH ^
+store(CAPS_ISOCHANDRA) "EOCUH"
+store(CAPS_ISOCHANDRAU) "ÊÔĈŬḪ"
+"^" + any(CAPS_ISOCHANDRA) > index(CAPS_ISOCHANDRAU,2)
+"^" + "N" > "N̆"
+"^" + "R" > "R̆"
+
+c EOF 
