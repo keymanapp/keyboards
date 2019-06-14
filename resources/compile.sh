@@ -170,6 +170,10 @@ function build_keyboard {
   if [ -f build.sh ]; then
     # We call this build.sh and assume it generates the
     # right stuff
+    if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
+      PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
+      FLAG_TARGET=-t
+    fi
     . ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
