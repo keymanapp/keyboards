@@ -1,6 +1,7 @@
-Central Kurdish Change History
+Central Kurdish Basic Change History
 ====================
 
 1.0 (2019-06-10)
 ----------------
-* Created by 
+* Created by ImportKeyboard from Windows 10 
+* Added a touch layout
