@@ -6,7 +6,8 @@ Vedic Sanskrit Devanagari Phonetic (ITRANS)
 Description
 -----------
 
-Vedic Sanskrit Devanagari keyboard for Keyman10 using phonetic ITRANS transliteration scheme. Also supports entry of Devanagari Extended and Vedic Extensions Unicode characters range. 
+Vedic Sanskrit Devanagari Phonetic (ITRANS) keyboard uses phonetic ITRANS transliteration scheme for typing in Devanagari. It also supports entry of Devanagari Extended and Vedic Extensions Unicode characters range. 
+
 Examples: Type `saMskRta` for संस्कृत. 
 
 Links
@@ -20,4 +21,3 @@ Supported Platforms
  * macOS
  * Linux
  * Web
-
