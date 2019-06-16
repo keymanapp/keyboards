@@ -1,0 +1,240 @@
+﻿store(&VERSION) "10.0" 
+store(&KEYBOARDVERSION) '1.0.0'
+store(&NAME) 'Odia/Oriya Phonetic (ITRANS)'
+store(&TARGETS) 'windows macosx linux web'
+store(©RIGHT) '©2019 sanskritdocuments.org'
+store(&MESSAGE) 'A Phonetic (ITRANS) keyboard for Odia/Oriya.'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&BITMAP) 'itrans_odia.ico'
+store(&VISUALKEYBOARD) 'itrans_odia.kvks'
+store(&COPYRIGHT) '©2019 sanskritdocuments.org'
+c
+c Version 1.0.0 - 20190616
+
+
+begin Unicode > use(main)
+group(main) using keys
+
+c  Set Hindi mode by default (implict word ending `a`)
+
+store(opt1) 'hindi'
++ [RCTRL RALT K_0]	>	set(opt1='0') 
++ [RCTRL RALT K_1]	>	reset(opt1)
+
+c 	Special Symbols
++ "#"	>	"ଓଁ"
++ "$"	>	"₹"
++ "%"	>	U+0FD5	c ࿕ Right-Facing Svasti Sign
++ "*"	>	"❀"
++ "&"	>	"☸"
++ "V"	>	"ଽ"	c AVAGRAHA
++ "Q"	>	"୰" c Odia Isshar
+
+c 	Common VEDIC MARKS
+"'" + "'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA
+U+0951 + "'"	>	U+1CDA	c VEDIC TONE DOUBLE SVARITA
+U+1CDA + "'"	>	U+1CDB	c VEDIC TONE TRIPLE SVARITA
+"`" + "`"	>	U+0952	c DEVANAGARI STRESS SIGN ANUDATTA
+"ଁ" + "^"	>	"ꣳ"	c CANDRABINDU VIRAMA - MM^
+"=" + "="	>	"ᳶ"	c VEDIC SIGN UPADHMANIYA     
+
+c Special Marks
++ "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
++ "+"	>	U+200D	c ZERO-WIDTH JOINER
++ "^"	>	"୍"	c VIRAMA ୍
+
+c 	Punctuation
+store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" "{" "}" '"' "," "." "=" "\" "<" ">" "|" "[" "]"
++ any(Punctuation)	>	index(Punctuation,1)
+
++ "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
++ "@"	>	"@" 
+
+"," + ","	>	"॰"	c	DEVANAGARI ABBREVIATION SIGN 
+"." + "."	>	"।"	c twice for DANDA
+"।" + "."	>	"॥"	c thrice for DOUBLE DANDA
+"॥" + "."	>	U+2026	c four dots for a HORIZONTAL ELLIPSIS
+
+"-" + "-"	>	U+2013	c hyphen twice for EN DASH
+U+2013 + "-"	>	U+2014	c three times for EM DASH
+
+c 	numbers - Odia DigitsU
+store(Digits)	"0"	"1"	"2"	"3"	"4"	"5"	"6"	"7"	"8"	"9"
+store(DigitsU)	"୦"	"୧"	"୨"	"୩"	"୪"	"୫"	"୬"	"୭"	"୮"	"୯"
++ any(Digits)	>	index(DigitsU,1)
+any(DigitsU) + [K_BKSP]	>	index(Digits,1)
+
+c  standalone vowel signs with @
+"@" + "A"	>	"ା"
+"@" + "i"	>	"ି"
+"@" + "I"	>	"ୀ"
+"@" + "u"	>	"ୁ"
+"@" + "U"	>	"ୂ"
+"@" + "e"	>	"େ"
+"@" + "o"	>	"ୋ"
++ "E"	>	"ୖ" c ORIYA AI LENGTH MARK
++ "O"	>	"ୗ" c ORIYA AU LENGTH MARK
+"@" + "a"	>	"@a"
+"@a" + "a"	>	"ା"
+"@a" + "e"	>	"ୖ"
+"@a" + "i"	>	"ୈ"
+"@a" + "u"	>	"ୌ"
+"@a" + "w"	>	"ୗ"
+"ି" + "i"	>	"ୀ"
+"ୁ" + "u"	>	"ୂ"
+"େ" + "e"	>	"ୀ"
+"େ" + "i"	>	"ୈ"
+"ୋ" + "o"	>	"ୂ"
+"ୋ" + "u"	>	"ୌ"
+"@" + "R"	>	"ୃ"
+"ୃ" + "R"	>	"ୃ" c @RR
+"ୃ" + "^"	>	"ୄ" c @RR^
+"@" + "L"	>	"ୢ"
+"ୢ" + "L"	>	"ୢ" c @LL
+"ୢ" + "^"	>	"ୣ" c @LL^
+
+c  Independent Vowels
++ "a"	>	"ଅ"
+"ଅ" + "a"	>	"ଆ"
++ "A"	>	"ଆ"
++ "i"	>	"ଇ"
+"ଇ" + "i"	>	"ଈ"
+"ଏ" + "e"	>	"ଈ"
++ "I"	>	"ଈ"
++ "u"	>	"ଉ"
+"ଉ" + "u"	>	"ଊ"
+"ଓ" + "o"	>	"ଊ"
++ "U"	>	"ଊ"
++ "e"	>	"ଏ"
+"ଅ" + "i"	>	"ଐ"
+"ଏ" + "i"	>	"ଐ"
++ "o"	>	"ଓ"
+"ଅ" + "u"	>	"ଔ"
+"ଓ" + "u"	>	"ଔ"
+"ଋ" + "R"	>	"ଋ" c RR
+"ଋ" + "^"	>	"ୠ" c RR^
+"ଳ୍" + "L"	>	"ଌ" c LL
+"ଌ" + "^"	>	"ୡ" c LL^
+
+c  Vowel Modifiers
++ "H"	>	"ଃ" c VISARGA - H
++ "M"	>	"ଂ" c ANUSVARA - M
+"ଂ" + "M"	>	"ଁ"	c CHANDRABINDU - MM
+
+c  Consonants
++ "b"	>	"ବ୍"
++ "B"	>	"ଭ୍"
++ "c"	>	"ଚ୍"
++ "C"	>	"ଛ୍"
++ "d"	>	"ଦ୍"
++ "D"	>	"ଡ୍"
++ "g"	>	"ଗ୍"
++ "G"	>	"ଘ୍"
++ "h"	>	"ହ୍"
++ "j"	>	"ଜ୍"
++ "J"	>	"ଝ୍"
++ "k"	>	"କ୍"
++ "K"	>	"ଖ୍"
++ "l"	>	"ଲ୍"
++ "L"	>	"ଳ୍"
++ "m"	>	"ମ୍"
++ "n"	>	"ନ୍"
++ "N"	>	"ଣ୍"
++ "p"	>	"ପ୍"
++ "P"	>	"ଫ୍"
++ "r"	>	"ର୍"
++ "R"	>	"ଋ" c also RR
++ "s"	>	"ସ୍"
++ "S"	>	"ଷ୍"
++ "t"	>	"ତ୍"
++ "T"	>	"ଟ୍"
++ "v"	>	"ଵ୍"
++ "w"	>	"ୱ୍" c Odia wa
++ "W"	>	"ଯ଼୍" c .y
++ "x"	>	"କ୍ଷ୍"
++ "y"	>	"ଯ୍"
++ "Y"	>	"ଞ୍"
++ "f"	>	"ଫ୍" c ph
+
+c 
++ "q"	>	"ଢ଼୍" c .Dh
++ "z"	>	"ଡ଼୍" c .D
+
+c  ununsed - beep
++ "F"	>	beep
++ "W"	>	beep
++ "X"	>	beep
++ "Z"	>	beep
+
+c  alternate mapping with ~
+"~" + "n"	>	"ଞ୍"
+"~" + "N"	>	"ଙ୍"
+
+c  add h to consonants
+"କ୍" + "h"	>	"ଖ୍"
+"ଗ୍" + "h"	>	"ଘ୍"
+"ଚ୍" + "h"	>	"ଚ୍" c same, c=ch
+"ଛ୍" + "h"	>	"ଛ୍" c same, C=Ch
+"ଜ୍" + "h"	>	"ଝ୍"
+"ଟ୍" + "h"	>	"ଠ୍"
+"ଡ୍" + "h"	>	"ଢ୍"
+"ତ୍" + "h"	>	"ଥ୍"
+"ଦ୍" + "h"	>	"ଧ୍"
+"ପ୍" + "h"	>	"ଫ୍"
+"ବ୍" + "h"	>	"ଭ୍"
+"ଷ୍" + "h"	>	"ଷ୍" c same, S=Sh
+"ସ୍" + "h"	>	"ଶ୍"
+
+c  special combinations
+$keymanonly: if(opt1 = '0') "ନ୍" + "k"	>	"ଙ୍କ୍"
+$keymanonly: if(opt1 = '0') "ନ୍" + "g"	>	"ଙ୍ଗ୍"
+$keymanonly: if(opt1 = '0') "ନ୍" + "c"	>	"nc"
+$keymanonly: if(opt1 = '0') "nc" + "h"	>	"ଞ୍ଚ୍"	c nch
+$keymanonly: if(opt1 = '0') "ନ୍" + "j"	>	"ଞ୍ଜ୍"
+"ଘ୍" + "Y"	>	"ଜ୍ଞ୍"	c	GY
+"ଶ୍" + "r"	>	"ଶ୍ର୍"	c	shr
+"ଣ୍" + "g"	>	"ଙ୍"	c	Ng
+
+c  Nukta - from ISO chart
+store(NuktaVyanjana) 'ଯଡଢ'
+"." + "y"	>	"ଯ଼୍" c .y
+"." + "D"	>	"ଡ଼୍" c .D
+"ଡ଼୍" + "h"	>	"ଢ଼୍" c .Dh
+
+
+c  Rules for Consonants + Vowel Signs
+store(Vyanjana) 'କକ୍ଷଖଗଘଙଚଛଜଜ୍ଞଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଳଵଶ୍ରଷସହૹ'
+store(ViramaMaatraa) 'eiouAEIORUL'
+store(ViramaMaatraaU) "େ" "ି" "ୋ" "ୁ" "ା" "ୖ" "ୀ" 'ୗ'  "ୃ" "ୂ" "ୢ"
+store(aPlusMaatraa) 'aeiuw'
+store(aPlusMaatraaU) "ା" "ୖ" "ୈ" "ୌ" "ୗ"
+
+c 	implicit akaara deletion for Hindi mode 
+store(opt1endings) outs(Punctuation) ' '
+
+$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"୍" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
+any(Vyanjana) + "^"	>	index(Vyanjana,1)"୍"U+200C
+any(Vyanjana)"୍" + "^"	>	index(Vyanjana,1)"୍" U+200C
+any(Vyanjana)"୍" + "a"	>	index(Vyanjana,1)
+any(Vyanjana) + any(aPlusMaatraa) >	context index(aPlusMaatraaU,2) 
+any(Vyanjana)"୍" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana)"ି" + "i"	>	index(Vyanjana,1)"ୀ"	c ii
+any(Vyanjana)"ୁ" + "u"	>	index(Vyanjana,1)"ୂ"	c uu
+any(Vyanjana)"େ" + "e"	>	index(Vyanjana,1)"ୀ"	c ee
+any(Vyanjana)"େ" + "i"	>	index(Vyanjana,1)"ୈ"	c ei
+any(Vyanjana)"ୋ" + "o"	>	index(Vyanjana,1)"ୂ"	c oo
+any(Vyanjana)"ୋ" + "u"	>	index(Vyanjana,1)"ୌ"	c ou
+
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"଼" "୍" + any(opt1endings)	>	index(NuktaVyanjana,2)"଼" index(opt1endings,5)
+any(NuktaVyanjana)"଼" "୍" + "^"	>	index(NuktaVyanjana,1)"଼""୍"U+200C
+any(NuktaVyanjana)"଼" "୍" + "a"	>	index(NuktaVyanjana,1)"଼"
+any(NuktaVyanjana)"଼" + any(aPlusMaatraa) >	 context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana)"଼" "୍" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"଼" index(ViramaMaatraaU,4) 
+any(NuktaVyanjana)"଼" "ି" + "i"	>	index(NuktaVyanjana,1)"଼""ୀ"	c ii
+any(NuktaVyanjana)"଼" "ୁ" + "u"	>	index(NuktaVyanjana,1)"଼""ୂ"	c uu
+any(NuktaVyanjana)"଼" "େ" + "e"	>	index(NuktaVyanjana,1)"଼""ୀ"	c ee
+any(NuktaVyanjana)"଼" "େ" + "i"	>	index(NuktaVyanjana,1)"଼""ୈ"	c ei
+any(NuktaVyanjana)"଼" "ୋ" + "o"	>	index(NuktaVyanjana,1)"଼""ୂ"	c oo
+any(NuktaVyanjana)"଼" "ୋ" + "u"	>	index(NuktaVyanjana,1)"଼""ୌ"	c ou
+
+c  EOF
