@@ -91,14 +91,14 @@ regular QWERTY keyboard and get Odia Unicode output.</p>
 <td>ର</td> <td>ra</td> <td>|</td>
 <td>ଲ</td> <td>la</td> <td>|</td>
 <td>ଳ</td> <td>La</td> <td>|</td>
-<td>ଵ</td> <td>va/wa</td>
+<td>ଵ</td> <td>va</td>
 </tr>
 <tr>
 <td>ଶ</td> <td>sha</td> <td>|</td>
 <td>ଷ</td> <td>Sa/Sha</td> <td>|</td>
 <td>ସ</td> <td>sa</td> <td>|</td>
 <td>ହ</td> <td>ha</td> <td>|</td>
-<td>କ୍</td> <td>k</td>
+<td>ୱ</td> <td>wa</td>
 </tr>
 <tr>
 <td></td> <td></td> <td>|</td>
@@ -116,8 +116,8 @@ regular QWERTY keyboard and get Odia Unicode output.</p>
 <tbody>
 <tr>
 <td>ଡ଼</td> <td>.Da/wa</td> <td>|</td>
-<td>ଢ଼</td> <td>.Dha/qa</td> <td>|</td>
-<td>ଯ଼</td> <td>.ya/za</td>
+<td>ଢ଼</td> <td>.Dha/za</td> <td>|</td>
+<td>ଯ଼</td> <td>.ya/Wa</td>
 </tr>
 </tbody>
 </table>
@@ -198,12 +198,8 @@ consonant `k`. `ka` is without any added vowel sign, where the vowel `a` is inhe
 </tr>
 </thead>
 <tr>
-<td>ઍ</td> <td>ૅ</td>
-<td>ઑ</td> <td>ૉ</td>
-</tr>
-<tr>
-<td>ઍ</td> <td>କૅ</td>
-<td>ઑ</td> <td>କૉ</td>
+<td>ୖ</td> <td>କୖ</td>
+<td>ୗ</td> <td>କୗ</td>
 </tr>
 </table>
 
@@ -342,7 +338,7 @@ Consonant conjuncts are automatically formed, e.g. <kbd>k</kbd> <kbd>t</kbd> pro
 <tr><th>Key</th><th>Output Character</th><th>Comment</th></tr>
 </thead>
 <tbody>
-<tr><td><kbd>#</kbd></td><td><samp>ॐ</samp></td><td>OM SIGN</td></tr>
+<tr><td><kbd>#</kbd></td><td><samp>ଓଁ</samp></td><td>OM SIGN</td></tr>
 <tr><td><kbd>$</kbd></td><td><samp>₹</samp></td><td>RUPEE SIGN</td></tr>
 <tr> <td><kbd>%</kbd></td> <td><samp>࿕</samp></td> <td>U+0FD5  RIGHT-FACING SVASTI SIGN</td></tr>
 <tr><td><kbd>*</kbd></td><td><samp>❀</samp></td><td>WHITE FLORETTE UNICODE CHARACTER</td></tr>
