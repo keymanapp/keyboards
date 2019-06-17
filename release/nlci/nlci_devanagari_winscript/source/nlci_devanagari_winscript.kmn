@@ -29,7 +29,7 @@ store(cons) 'कखगघङ' \
     	   	'यरलवशषसहळ'
 
 
-store(consonants) outs(cons) 'ऱऴड़ढ़ऩक़ख़ज़'
+store(consonants) outs(cons) 'ऱऴड़ढ़ऩक़ख़ज़ग़'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'aSf'
 
 c Adjust the behavior of 'a'
@@ -57,7 +57,7 @@ c Adjust the behavior of L
 'ळ' + 'L' > 'ऴ'
 
 c Adjust the bahavior of d
-'ड' + 'd' > 'ड़ '   
+'ड' + 'd' > 'ड़'   
 'ढ' + 'D' > 'ढ़'
  
 c Adjust the behavior of n
@@ -107,12 +107,13 @@ c full stop
   
 c dot
 any(consonants)'़' + any(vowelKeys)  > context  index(vowelMatras,3)
+   
+                 
 
-
-
-c Adjust the behavior of X
-any(consonants) + 'X' > context '्' U+200C
+c Adjust the behavior of X 
+any(consonants) + 'X' > context '्' U+200C 
 any(consonants) '्' + 'X' > context U+200C
+any(consonants)'़' + 'X' > context '्' U+200C   
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
