@@ -1,10 +1,10 @@
 <?php
-  $pagename = 'Odia Phonetic (ITRANS)';
-  $pagetitle = 'Odia Phonetic (ITRANS)';
+  $pagename = 'Odia/Oriya Phonetic (ITRANS)';
+  $pagetitle = 'Odia/Oriya Phonetic (ITRANS)';
   $pagestyle = <<<END
-    samp {font-family: 'Arial Unicode MS'; font-size:20pt;   }
+    samp {font-size:120%;}
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
-    .inputSequences {border-collapse: collapse;font-size: 14px;min-width: 592px;}
+    .inputSequences {border-collapse: collapse;font-size: 110%; min-width: 592px;}
     .inputSequences th, .inputSequences td {padding: 7px 17px;}
     .inputSequences thead th {border-bottom: 2px solid #6ea1cc;text-transform: uppercase;}
     .inputSequences tbody td {border-bottom: 1px solid #e1edff;color: #353535;text-align: center;}
@@ -14,7 +14,7 @@ END;
   require_once('header.php');
 ?>
 
-<h2>Odia Phonetic (ITRANS)</h2>
+<h2>Odia/Oriya Phonetic (ITRANS)</h2>
 <h2>
 <span style="color: chocolate;">Odia/Oriya Phonetic (ITRANS)</span> Keyboard Version 1.0.0</h2>
 <p>This is a phonetic (ITRANS) keyboard layout for Odia. It is based on 
@@ -128,6 +128,9 @@ the consonant `k` are shown in ITRANS transliteration scheme on the top two rows
 The third row shows Vowels in their independent form on the left and their corresponding dependent 
 form (maatraa or vowel sign) on the right. The fourth row shows the vowel sign combined with the 
 consonant `k`. `ka` is without any added vowel sign, where the vowel `a` is inherent.</p>
+<p>If there is a need to type ONLY the vowel signs, it can be done 
+    using `@` instead of a consonant. e.g. <kbd>@A</kbd> will output <samp>ା</samp>, 
+<kbd>@ai</kbd> will output <samp>ୈ</samp>.</p>
 
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -153,7 +156,7 @@ consonant `k`. `ka` is without any added vowel sign, where the vowel `a` is inhe
 <th>uu</th> <th>kU</th>
 <th>R</th> <th>kR</th>
 <th>e</th> <th>ke</th>
-<th>ai</th> <th>kai</th>
+ <th>ai</th><th>kai</th>
 <th>o</th> <th>ko</th>
 <th>au</th> <th>kau</th>
 </tr>
@@ -173,19 +176,20 @@ consonant `k`. `ka` is without any added vowel sign, where the vowel `a` is inhe
 </tr>
 <tr>
 <td></td> <td>କ</td>
-<td>ଆ</td> <td>କା</td>
-<td>ଇ</td> <td>କି</td>
-<td>ଈ</td> <td>କୀ</td>
-<td>ଉ</td> <td>କୁ</td>
-<td>ଊ</td> <td>କୂ</td>
-<td>ଋ</td> <td>କୃ</td>
-<td>ଏ</td> <td>କେ</td>
-<td>ଐ</td> <td>କୈ</td>
-<td>ଓ</td> <td>କୋ</td>
-<td>ଔ</td> <td>କୌ</td>
+<td></td>  <td>କା</td>
+<td></td> <td>କି</td>
+<td></td>  <td>କୀ</td>
+<td></td>  <td>କୁ</td>
+<td></td> <td>କୂ</td>
+<td></td> <td>କୃ</td>
+<td></td>  <td>କେ</td>
+<td></td>  <td>କୈ</td>
+<td></td>  <td>କୋ</td>
+<td></td>  <td>କୌ</td>
 </tr>
 </table>
-<p>The following table shows additional vowel signs used in Odia script, in similar format as above.</p>
+<p>The following table shows additional AI and AU length marks used in Odia script, in similar format as above. 
+Please note that there are no indepenent vowels related to these.</p>
 <table class="inputSequences" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
