@@ -1,6 +1,6 @@
 # NLCI IPA WinScript Keyboard
 
-Copyright (C) 2002-2018 NLCI, Banglore
+Copyright (C) 2002-2019 NLCI, Bangalore
 
 Version 2.0
 
@@ -12,3 +12,4 @@ This Keyboard mimic IPA WinScript Keyboard Layout designed by NLCI in 1988. Seve
  * Windows
  * macOS
  * Web
+ * Linux
