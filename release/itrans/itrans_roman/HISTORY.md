@@ -1,7 +1,7 @@
 Indic Romanization from ITRANS - Version History
 ===========================
 
-1.1.1 (2019-06-15)
+1.1.1 (2019-06-17)
 ----------------
 * Add alternative maps for some IPA vowels using lowercase punctuation
 
