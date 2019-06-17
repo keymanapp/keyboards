@@ -6,6 +6,7 @@ Tibetan EWTS Keyboard Change History
 * Moved to Github repo
 * Removed support for Latn and Cyrl scripts
 * Removed support for typing Unicode characters using hex codes
+* Adjusted documentation to support reality
 * Merged desktop and mobile layouts
 
 1.1 (16 Feb 2015)
