@@ -68,7 +68,8 @@ c Adjust the behavior of o
 'ो' + 'o' > 'ॊ'   
 
 c Adjust the behavior of r
- 'र' + 'r' > 'ऱ'       
+'र' + 'r' > 'ऱ'    
+         
  
 c Adjust the behavior of R
 'ऋ' + 'R' > 'ॠ'   
@@ -164,7 +165,8 @@ any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + virama
 any (consonants) + 'x' > context '्'          
-any(vowels) + 'x' > context '्'   
+any(vowels) + 'x' > context '्'  
+any (consonants)'़' + 'x' > context '्' 
 
 c vowels + virama
 any(vowels) + 'x' > context '्' 
