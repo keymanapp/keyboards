@@ -85,56 +85,55 @@ group(main) using keys
   any(cons) $rerekan any(mark_all) + [K_BKSP] > context(1) context(2) '?' set(adeg_flag='0')
 
   c la lenga
-  if(adeg_flag = '0') $adeg 'ᬮ?' + any(syllabic_key) > 'ᬼ'
+  if(adeg_flag='0') $adeg 'ᬮ?' + any(syllabic_key) > 'ᬼ'
   'ᬮ?' + any(syllabic_key) > 'ᬍ'
   'ᬍ' + [CTRL K_U] > 'ᬎ'
 
   c ra repa
-  if(adeg_flag = '0') $adeg 'ᬭ?' + any(syllabic_key) > 'ᬺ'
+  if(adeg_flag='0') $adeg 'ᬭ?' + any(syllabic_key) > 'ᬺ'
   'ᬭ?' + any(syllabic_key) > 'ᬋ'
   'ᬭ?' + [CTRL K_QUOTE] > 'ᬋ' $tedong
   'ᬭ?' + [CTRL K_O] > 'ᬋ' $tedong
 
   c post-consonant input: derived consonants
-  'ᬦ?' + [CTRL K_PERIOD] > 'ᬡ?' c ṇ
-  'ᬦ?' + [K_G] > 'ᬗ?' c ng
-  'ᬦ?' + [CTRL K_QUOTE] > 'ᬜ?' c ny
-  'ᬦ?' + [K_Y] > 'ᬜ?' c ny
-  'ᬲ?' + [CTRL K_PERIOD] > 'ᬱ?' c ṣ
-  'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ?' c ś
-  'ᬲ?' + [K_H] > 'ᬰ?' c ś
-  'ᬢ?' + [CTRL K_PERIOD] > 'ᬝ?' c ṭ
-  'ᬤ?' + [CTRL K_PERIOD] > 'ᬟ?' c ḍ
-  'ᬢ?' + [K_H] > 'ᬣ?' c th
-  'ᬝ?' + [K_H] > 'ᬞ?' c ṭh
-  'ᬤ?' + [K_H] > 'ᬥ?' c dh
-  'ᬟ?' + [K_H] > 'ᬠ?' c ḍh
-  'ᬕ?' + [K_H] > 'ᬖ?' c gh
-  'ᬩ?' + [K_H] > 'ᬪ?' c bh
-  'ᬧ?' + [K_H] > 'ᬨ?' c ph
-  'ᬚ?' + [K_H] > 'ᬛ?' c jh
-  'ᬓ?' + [K_H] > 'ᬔ?' c kh
-  'ᬘ?' + [K_H] > 'ᬙ?' c ch
+  'ᬦ?' + [CTRL K_PERIOD] > 'ᬡ?' c n => ṇ
+  'ᬦ?' + [CTRL K_QUOTE] > 'ᬜ?' c n => ny
+  'ᬦ?' + [K_Y] > 'ᬜ?' c n => ny
+  'ᬦ?' + [SHIFT K_Y] > context(1) $adeg 'ᬬ?' c n-y override
+  'ᬦ?' + [CTRL K_Y] > context(1) $adeg 'ᬬ?' c n-y override
+  'ᬦ?' + [K_G] > 'ᬗ?' c n => ng
+  'ᬲ?' + [CTRL K_PERIOD] > 'ᬱ?' c s => ṣ
+  'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ?' c s => ś
+  'ᬲ?' + [K_H] > 'ᬰ?' c s => ś
+  'ᬧ?' + [K_H] > 'ᬨ?' c p => ph
+  'ᬩ?' + [K_H] > 'ᬪ?' c b => bh
+  'ᬢ?' + [CTRL K_PERIOD] > 'ᬝ?' c t => ṭ
+  'ᬢ?' + [K_H] > 'ᬣ?' c t => th
+  'ᬝ?' + [K_H] > 'ᬞ?' c t => ṭh
+  'ᬤ?' + [CTRL K_PERIOD] > 'ᬟ?' c d => ḍ
+  'ᬤ?' + [K_H] > 'ᬥ?' c d => dh
+  'ᬟ?' + [K_H] > 'ᬠ?' c d => ḍh
+  'ᬘ?' + [K_H] > 'ᬙ?' c c => ch
+  'ᬚ?' + [K_H] > 'ᬛ?' c j => jh
+  'ᬓ?' + [K_H] > 'ᬔ?' c k => kh
+  'ᬕ?' + [K_H] > 'ᬖ?' c g => gh
 
   c post-consonant input: ng
   'ᬗ?' + [K_N] > 'ᬗᭂᬦ?' c ng => nge /_n
-  'ᬗᬓ?' + [K_N] > context(1) $adeg 'ᬦ?' c ng-n override
 
   c post-consonant input: ny
   'ᬦ?' + [K_C] > 'ᬜ' $adeg 'ᬘ?' c n => ny /_c
   'ᬦ?' + [K_J] > 'ᬜ' $adeg 'ᬚ?' c n => ny /_j
   'ᬚ?' + [K_N] > context(1) $adeg 'ᬜ?' c n => ny /j_
-  'ᬦ?' + [SHIFT K_Y] > context(1) $adeg 'ᬬ?' c n-y override
-  'ᬦ?' + [CTRL K_Y] > context(1) $adeg 'ᬬ?' c n-y override
 
   c post-consonant input: ś
   'ᬲ' $adeg 'ᬲ?' + [K_H] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
   'ᬲ' $adeg 'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
-  'ᬲ?' + [CTRL K_RBRKT] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
+  'ᬲ?' + [K_RBRKT] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
   'ᬰ?' + [K_S] > context(1) $adeg 'ᬰ?' c s => ś /ś_
   'ᬲ?' + [K_C] > 'ᬰ' $adeg 'ᬘ?' c s => ś /_c
 
-  c post-consonnt input: retroflex
+  c post-consonant input: retroflex
   'ᬓ?' + [K_S] > context(1) $adeg 'ᬱ?' c s => ṣ /k_
   any(ra_repa) + [K_S] > context(1) 'ᬱ?' c s => ṣ /ṛ_
   'ᬱ?' + [K_T] > context(1) $adeg 'ᬝ?' c t => ṭ /ṣ_
@@ -148,8 +147,8 @@ group(main) using keys
 
   c post-consonant input: general
   '?' + any(cons_key) > $adeg index(cons_main, 2) '?' set(adeg_flag='0')
-  if(adeg_flag = '0') $adeg + any(cons_key) > context index(cons_main, 3) '?' set(adeg_flag='1')
-  if(adeg_flag = '1') $adeg + any(cons_key) > context $zwnj index(cons_main, 3) '?' set(adeg_flag='0')
+  if(adeg_flag='0') $adeg + any(cons_key) > context index(cons_main, 3) '?' set(adeg_flag='1')
+  if(adeg_flag='1') $adeg + any(cons_key) > context $zwnj index(cons_main, 3) '?' set(adeg_flag='0')
   '?' + any(dvowel_key) > index(dvowel, 2)
   '?' + [K_A] > nul
   '?' + [K_COLON] > $bisah
