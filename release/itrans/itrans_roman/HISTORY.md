@@ -1,6 +1,14 @@
 Indic Romanization from ITRANS - Version History
 ===========================
 
+1.1.1 (2019-06-17)
+----------------
+* Add alternative maps for some IPA vowels using lowercase punctuation
+
+1.1.0 (2019-06-12)
+----------------
+* Add support for IPA (vowels only) output, useful for words pronunciation key
+
 1.0.0 (2019-06-01)
 ----------------
 * Indic Romanization in various schemes such as 
@@ -11,6 +19,4 @@ Indic Romanization from ITRANS - Version History
 * from ITRANS and 7 bit ISO transliteration 
 * for easy typing of accents.
 
-1.1.0 (2019-06-12)
-----------------
-* Add support for IPA (vowels only) output, useful for words pronunciation key
+
