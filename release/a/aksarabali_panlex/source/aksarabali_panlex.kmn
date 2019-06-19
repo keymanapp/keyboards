@@ -73,6 +73,8 @@ store(cons_mark) outs(cons) outs(mark)
 store(indep_key) outs(vowel_key) outs(punc_key) outs(numeral_key)
 store(indep)     outs(vowel)     outs(punc)     outs(numeral)
 
+store(ra_repa) 'ᬋᬌ◌ᬺ'
+
 begin Unicode > use(main)
 
 group(main) using keys
@@ -102,8 +104,11 @@ group(main) using keys
   'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ?' c ś
   'ᬲ?' + [K_H] > 'ᬰ?' c ś
   'ᬢ?' + [CTRL K_PERIOD] > 'ᬝ?' c ṭ
+  'ᬤ?' + [CTRL K_PERIOD] > 'ᬟ?' c ḍ
   'ᬢ?' + [K_H] > 'ᬣ?' c th
+  'ᬝ?' + [K_H] > 'ᬞ?' c ṭh
   'ᬤ?' + [K_H] > 'ᬥ?' c dh
+  'ᬟ?' + [K_H] > 'ᬠ?' c ḍh
   'ᬕ?' + [K_H] > 'ᬖ?' c gh
   'ᬩ?' + [K_H] > 'ᬪ?' c bh
   'ᬧ?' + [K_H] > 'ᬨ?' c ph
@@ -111,19 +116,34 @@ group(main) using keys
   'ᬓ?' + [K_H] > 'ᬔ?' c kh
   'ᬘ?' + [K_H] > 'ᬙ?' c ch
 
-  c post-consonant input: special combinations
-  'ᬦ?' + [K_C] > 'ᬜ' $adeg 'ᬘ?' c n => ny /_c
-  'ᬦ?' + [K_J] > 'ᬜ' $adeg 'ᬚ?' c n => ny /_j
-  'ᬦ?' + [SHIFT K_Y] > context(1) $adeg 'ᬬ?' c n-y override
-  'ᬦ?' + [CTRL K_Y] > context(1) $adeg 'ᬬ?' c n-y override
+  c post-consonant input: ng
   'ᬗ?' + [K_N] > 'ᬗᭂᬦ?' c ng => nge /_n
   'ᬗᬓ?' + [K_N] > context(1) $adeg 'ᬦ?' c ng-n override
-  'ᬲ?' + [K_C] > context(1) $adeg 'ᬘ?' c s => ś /_c
-  'ᬓ?' + [K_S] > context(1) $adeg 'ᬱ?' c s => ṣ /k_
+
+  c post-consonant input: ny
+  'ᬦ?' + [K_C] > 'ᬜ' $adeg 'ᬘ?' c n => ny /_c
+  'ᬦ?' + [K_J] > 'ᬜ' $adeg 'ᬚ?' c n => ny /_j
+  'ᬚ?' + [K_N] > context(1) $adeg 'ᬜ?' c n => ny /j_
+  'ᬦ?' + [SHIFT K_Y] > context(1) $adeg 'ᬬ?' c n-y override
+  'ᬦ?' + [CTRL K_Y] > context(1) $adeg 'ᬬ?' c n-y override
+
+  c post-consonant input: ś
+  'ᬲ' $adeg 'ᬲ?' + [K_H] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
+  'ᬲ' $adeg 'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
+  'ᬲ?' + [CTRL K_RBRKT] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
   'ᬰ?' + [K_S] > context(1) $adeg 'ᬰ?' c s => ś /ś_
+  'ᬲ?' + [K_C] > 'ᬰ' $adeg 'ᬘ?' c s => ś /_c
+
+  c post-consonnt input: retroflex
+  'ᬓ?' + [K_S] > context(1) $adeg 'ᬱ?' c s => ṣ /k_
+  any(ra_repa) + [K_S] > context(1) 'ᬱ?' c s => ṣ /ṛ_
   'ᬱ?' + [K_T] > context(1) $adeg 'ᬝ?' c t => ṭ /ṣ_
   'ᬡ?' + [K_T] > context(1) $adeg 'ᬝ?' c t => ṭ /ṇ_
+  c 'ᬡ?' + [K_D] > context(1) $adeg 'ᬟ?' c d => ḍ /ṇ_
   'ᬱ?' + [K_N] > context(1) $adeg 'ᬡ?' c n => ṇ /ṣ_
+  any(ra_repa) + [K_N] > context(1) 'ᬡ?' c n => ṇ /ṛ_
+
+  c post-consonant input: surang
   any(cons_mark) 'ᬭ?' + any(cons_key) > context(1) $surang index(cons_main, 4) '?' c surang
 
   c post-consonant input: general
