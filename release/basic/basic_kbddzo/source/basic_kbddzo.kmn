@@ -8,12 +8,12 @@ c
 c 
 
 store(&VERSION) '10.0'
-store(&NAME) 'Dzongkha'
-store(&Targets) "windows macosx linux web"
+store(&NAME) 'Dzongkha Basic'
+store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'basic_kbddzo.kvks'
 store(&BITMAP) 'basic_kbddzo.ico'
 store(&LAYOUTFILE) 'basic_kbddzo.keyman-touch-layout'
-store(&COPYRIGHT) '©'
+store(&COPYRIGHT) '© 2019 SIL International'
 store(&KEYBOARDVERSION) '1.0'
 
 begin Unicode > use(main)
@@ -139,7 +139,7 @@ group(main) using keys
 + [K_O] > U+0f45
 + [SHIFT K_O] > U+0f95
 + [RALT K_O] > U+0f1e
-+ [SHIFT RALT K_O] > U+0f18
++ [SHIFT RALT K_O] > U+0f18        c this key doesn't work as it may be conflicted with other shortcut key combination.
 
 + [K_P] > U+0f46
 + [SHIFT K_P] > U+0f96
