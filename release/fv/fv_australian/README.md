@@ -3,9 +3,9 @@ Australian keyboard
 
 Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
 
-Version 9.2
+Version 9.3
 
-Australian keyboard layout for Unicode
+Keyboard layout for typing Australian Aboriginal languages which use the diaeresis, combining underline, and eng. 
 
 Links
 -----
