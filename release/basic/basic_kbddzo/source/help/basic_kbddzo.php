@@ -22,7 +22,7 @@ Dzongkha Basic keyboard 1.0 is generated from template.
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift rightalt rightalt-shift'>
+<div id='osk-tablet' data-states='default shift alt shift-alt'>
 </div>
 
 
