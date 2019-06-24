@@ -14,7 +14,7 @@ END;
   require_once('header.php');
 ?>
 
-<h2><span style="color: chocolate;">Indic Romanization from ITRANS</span> Keyboard Version 1.1.0</h2>
+<h2><span style="color: chocolate;">Indic Romanization from ITRANS</span> Keyboard Version 1.1.1</h2>
 
 <p>This is a phonetic keyboard for Indic Romanization which is based on  
 <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> 
@@ -23,12 +23,18 @@ has also been referred to for modifying the input scheme.
 Accented letters used by various Indic Romanization schemes such as 
 <strong><a href="https://en.wikipedia.org/wiki/ISO_15919">ISO 15919</a></strong>, 
 <strong><a href="https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration">IAST</a></strong>,
-<strong><a href="https://en.wikipedia.org/wiki/National_Library_at_Kolkata_romanisation#Scheme_table">NLK</a></strong>  are supported for output.</p>
+<strong><a href="https://en.wikipedia.org/wiki/National_Library_at_Kolkata_romanisation#Scheme_table">NLK</a></strong>  
+are supported for output.</p>
 
 <p>The modified input scheme 
 uses only lowercase letters. This allows the same letters to be typed
 with CAPS LOCK/SHIFT to get Unicode Romanized output in UPPERCASE letters, 
-which is useful for typing Proper names, Headings, etc. </p>
+which is useful for typing Proper names, Headings, etc. 
+It also supports typing of IPA vowels for pronunciation keys.</p>
+
+<p>Some punctuation keys are used as part of mapping to get Romanized accented 
+output, use these keys twice (thrice for period) if punctuation is required. 
+e.g. <kbd>,,</kbd> for <samp>,</samp> and  <kbd>;;</kbd> for <samp>;</samp>
 
 <h3>Vowels</h3>
 <p>The following table shows the letters to type to get the vowels.</p>
@@ -60,14 +66,14 @@ which is useful for typing Proper names, Headings, etc. </p>
 <tr><td>ऍ</td><td>~ae</td> <td><samp>ĕ</samp></td><td></td></tr>
 <tr><td>ऑ</td><td>aw</td> <td><samp>ŏ</samp></td><td>ŏ/ɔ/</td></tr>
 <tr><td></td><td></td> <td><samp></samp></td><td></tr>
-<tr><td>ऎ</td><td>e</td> <td><samp>e</samp></td><td>ISO</td></tr>
 <tr><td>ऎ</td><td>~e</td> <td><samp>ẽ</samp></td><td>resembles matra</td></tr>
+<tr><td>ऎ</td><td>e</td> <td><samp>e</samp></td><td>ISO</td></tr>
 <tr><td>ए</td><td>-e</td> <td><samp>ē</samp></td><td>ISO</td></tr>
 <tr><td>ए</td><td>e</td> <td><samp>e</samp></td><td>IAST</td></tr>
 <tr><td>ऐ</td><td>ai</td> <td><samp>ai</samp></td><td>IAST/ISO</td></tr>
 <tr><td></td><td></td> <td><samp></samp></td><td></tr>
-<tr><td>ऒ</td><td>o</td> <td><samp>o</samp></td><td>ISO</td></tr>
 <tr><td>ऒ</td><td>~o</td> <td><samp>õ</samp></td><td>resembles matra</td></tr>
+<tr><td>ऒ</td><td>o</td> <td><samp>o</samp></td><td>ISO</td></tr>
 <tr><td>ओ</td><td>-o</td> <td><samp>ō</samp></td><td>ISO</td></tr>
 <tr><td>ओ</td><td>o</td> <td><samp>o</samp></td><td>IAST</td></tr>
 <tr><td>औ</td><td>au</td> <td><samp>au</samp></td><td>IAST/ISO</td></tr>
@@ -202,19 +208,19 @@ for words pronunciation key.</p>
 <tr><th>Input</th><th>IPA</th></tr>
 </thead>
 <tbody>
-<tr><td>@</td> <td><samp>æ</samp></td></tr>
+<tr><td>@/a-</td> <td><samp>æ</samp></td></tr>
 <tr><td>a'</td> <td><samp>ə</samp></td></tr>
 <tr><td>ai'</td> <td><samp>əɪ</samp></td></tr>
 <tr><td>au'</td> <td><samp>əʊ</samp></td></tr>
-<tr><td>a:</td> <td><samp>ɑː</samp></td></tr>
+<tr><td>a:/a;</td> <td><samp>ɑː</samp></td></tr>
 <tr><td>a`</td> <td><samp>ʌ</samp></td></tr>
-<tr><td>a"</td> <td><samp>ɒ</samp></td></tr>
+<tr><td>a"/a,</td> <td><samp>ɒ</samp></td></tr>
 <tr><td>e'</td> <td><samp>ɛ</samp></td></tr>
 <tr><td>i'</td> <td><samp>ɪ</samp></td></tr>
-<tr><td>i:</td> <td><samp>iː</samp></td></tr>
-<tr><td>o:</td> <td><samp>ɔː</samp></td></tr>
+<tr><td>i:/i;</td> <td><samp>iː</samp></td></tr>
+<tr><td>o:/o;</td> <td><samp>ɔː</samp></td></tr>
 <tr><td>u'</td> <td><samp>ʊ</samp></td></tr>
-<tr><td>u:</td> <td><samp>uː</samp></td></tr>
+<tr><td>u:/u;</td> <td><samp>uː</samp></td></tr>
 </tbody>
 </table>
 
