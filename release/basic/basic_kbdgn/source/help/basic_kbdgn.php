@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Guarani Basic</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-  </style>
-</head>
-<body>
+<?php 
+  $pagename = 'Guarani Basic Keyboard Help';
+  $pagetitle = 'Guarani Basic Keyboard Help';
+  // Header we will tidy up later  
+  require_once('header.php');
 
-<h1>Start Using Guarani Basic</h1>
 
-<p>
-    Guarani Basic 1.0 generated from template.
+?>
+
+
+<p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
-
-<h1>Keyboard Layout</h1>
+<br/>
 
 <p>This keyboard makes use of SHIFT+RALT keys which are set by default when Keyman is installed. To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off". Either change the hotkey or turn it off. Do the same for "Open Keyboard Menu" and for "Open Language Switcher".</p>
 
@@ -39,21 +32,13 @@
  <tr><td style="font-weight: bold; background-color: grey;">◌̂</td><td>â</td><td>ê</td><td>î</td><td>ô</td><td>û</td><td>y</td><td>Â</td><td>Ê</td><td>Î</td><td>Ô</td><td>Û</td><td>Y</td></tr>
 </tbody></table>
 
-<h2>Desktop Layout</h2>
-<img src="desktop_layout.png" alt="Desktop Layout">
-<h2>Touch Layout</h2>
-<p>Default Layer</p>
-<img src="touch_layout_default.png" alt="Touch Layout, Default">
-<p>Shift Layer</p>
-<img src="touch_layout_shift.png" alt="Touch Layout, Shift">
-<p>Numeric Layer</p>
-<img src="touch_layout_numeric.png" alt="Touch Layout, Numeric">
 
-<h2>NOTE</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. Press and hold on the key with a little dot on the top right to reveal them.</p>
-<img src="touch_layout_longpress.png" alt="Touch Layout, Longpress">
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<p>© 2019 SIL International</p>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift numeric'>
+</div>
 
-</body>
-</html>
+
