@@ -1,5 +1,11 @@
-Nubian Change History
+SIL Nubian Change History
 =======================
+
+1.2.2 (29 Apr 2019)
+-------------------
+* Fixed BCP47 tags
+* Prevented ability to type QRFZM
+
 1.2.1 (18 Jun 2018)
 -------------------
 
@@ -13,11 +19,9 @@ Nubian Change History
 * Moved to Github
 * Changed keystrokes for U+2C8B, U+2C91 and U+2CE3 to better fit a touch layout
 
-
 1.1 (24 Sep 2009)
 -----------------
 * Revised
-
 
 1.0 (18 Nov 2008)
 -----------------

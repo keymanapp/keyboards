@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1055.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Eastern Congo</Name>
-    <Copyright URL="">© 2005-2018 SIL International</Copyright>
+    <Copyright URL="">© 2005-2019 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -39,54 +40,185 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>sil_eastern_congo.kmn</Name>
-      <Description>File sil_eastern_congo.kmn</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmn</FileType>
-    </File>
-    <File>
-      <Name>sil_eastern_congo.kvks</Name>
-      <Description>File sil_eastern_congo.kvks</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvks</FileType>
-    </File>
-    <File>
-      <Name>welcome\sil_eastern_congoU_.png</Name>
-      <Description>File sil_eastern_congoU_.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\sil_eastern_congoU_S.png</Name>
-      <Description>File sil_eastern_congoU_S.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_eastern_congo.js</Name>
+      <Description>File sil_eastern_congo.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\Charis_SIL_README.txt</Name>
+      <Description>File Charis_SIL_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-B.ttf</Name>
+      <Description>Font Charis SIL Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-BI.ttf</Name>
+      <Description>Font Charis SIL Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-I.ttf</Name>
+      <Description>Font Charis SIL Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\CharisSIL-R.ttf</Name>
+      <Description>Font Charis SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_sil\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Eastern Congo</Name>
       <ID>sil_eastern_congo</ID>
-      <Version></Version>
+      <Version>1.3.2</Version>
       <Languages>
+        <Language ID="ln">Lingala</Language>
+        <Language ID="alz-Latn">Alur</Language>
+        <Language ID="rwm-Latn">Amba</Language>
+        <Language ID="asv-Latn">Asoa</Language>
+        <Language ID="avu-Latn">Avokaya</Language>
+        <Language ID="bbm-Latn">Babango</Language>
+        <Language ID="bdh-Latn">Baka</Language>
+        <Language ID="bcp-Latn">Bali</Language>
+        <Language ID="bxg-Latn">Bangala</Language>
+        <Language ID="bbe-Latn">Bangba</Language>
+        <Language ID="bnx-Latn">Bangubangu</Language>
+        <Language ID="brm-Latn">Barambu</Language>
+        <Language ID="bkf-Latn">Beeke</Language>
+        <Language ID="bmb-Latn">Bembe</Language>
+        <Language ID="bct-Latn">Bendi</Language>
+        <Language ID="brf-Latn">Bera</Language>
+        <Language ID="bhy-Latn">Bhele</Language>
+        <Language ID="bip-Latn">Bila</Language>
+        <Language ID="bqu-Latn">Boguru</Language>
         <Language ID="buu-Latn">Budu</Language>
-        <Language ID="flr-Latn">Firan</Language>
+        <Language ID="byi-Latn">Buyu</Language>
+        <Language ID="bww-Latn">Bwa</Language>
+        <Language ID="bwl-Latn">Bwela</Language>
+        <Language ID="doo-Latn">Dongo</Language>
+        <Language ID="efe-Latn">Efe</Language>
+        <Language ID="gey-Latn">Enya</Language>
+        <Language ID="fom-Latn">Foma</Language>
+        <Language ID="flr-Latn">Fuliiru</Language>
+        <Language ID="hba-Latn">Hamba</Language>
+        <Language ID="hav-Latn">Havu</Language>
+        <Language ID="nix-Latn">Hema</Language>
+        <Language ID="hem-Latn">Hemba</Language>
+        <Language ID="hoo-Latn">Holoholo</Language>
+        <Language ID="hke-Latn">Hunde</Language>
+        <Language ID="job-Latn">Joba</Language>
+        <Language ID="kcw-Latn">Kabwari</Language>
+        <Language ID="kkq-Latn">Kaiku</Language>
+        <Language ID="keo-Latn">Kakwa</Language>
+        <Language ID="kbo-Latn">Kaliko</Language>
+        <Language ID="kty-Latn">Kango</Language>
+        <Language ID="kzy-Latn">Kango</Language>
+        <Language ID="khx-Latn">Kanu</Language>
+        <Language ID="kbj-Latn">Kari</Language>
+        <Language ID="khy-Latn">Kele</Language>
         <Language ID="kmw-Latn">Komo</Language>
+        <Language ID="koo-Latn">Konzo</Language>
+        <Language ID="ktf-Latn">Kwami</Language>
+        <Language ID="lgm-Latn">Lega-Mwenga</Language>
+        <Language ID="lea-Latn">Lega-Shabunda</Language>
         <Language ID="led-Latn">Lendu</Language>
-        <Language ID="lgg-Latn">Lugbara</Language>
+        <Language ID="lej-Latn">Lengola</Language>
+        <Language ID="les-Latn">Lese</Language>
+        <Language ID="lgz-Latn">Ligenza</Language>
         <Language ID="lik-Latn">Lika</Language>
         <Language ID="log-Latn">Logo</Language>
+        <Language ID="lmi-Latn">Lombi</Language>
+        <Language ID="loo-Latn">Lombo</Language>
+        <Language ID="lgg-Latn">Lugbara</Language>
+        <Language ID="msj-Latn">Ma</Language>
+        <Language ID="mdi-Latn">Mamvu</Language>
         <Language ID="mdj-Latn">Mangbetu</Language>
+        <Language ID="mdk-Latn">Mangbutu</Language>
         <Language ID="mdm-Latn">Mayogo</Language>
+        <Language ID="mfc-Latn">Mba</Language>
+        <Language ID="zms-Latn">Mbesa</Language>
+        <Language ID="zmw-Latn">Mbo</Language>
+        <Language ID="mdq-Latn">Mbole</Language>
+        <Language ID="zmq-Latn">Mituku</Language>
+        <Language ID="mwz-Latn">Moingi</Language>
+        <Language ID="muh-Latn">Mündü</Language>
+        <Language ID="mxh-Latn">Mvuba</Language>
+        <Language ID="nnb-Latn">Nande</Language>
+        <Language ID="ndk-Latn">Ndaka</Language>
+        <Language ID="ndp-Latn">Ndo</Language>
+        <Language ID="dno-Latn">Ndrulo</Language>
+        <Language ID="nxd-Latn">Ngando</Language>
+        <Language ID="ngb-Latn">Ngbandi, Northern</Language>
+        <Language ID="jgb-Latn">Ngbee</Language>
+        <Language ID="agh-Latn">Ngelima</Language>
+        <Language ID="niy-Latn">Ngiti</Language>
+        <Language ID="nlj-Latn">Nyali</Language>
+        <Language ID="nyi-Latn">Nyanga</Language>
+        <Language ID="nyc-Latn">Nyanga-li</Language>
+        <Language ID="nyg-Latn">Nyindu</Language>
+        <Language ID="nzk-Latn">Nzakara</Language>
+        <Language ID="oml-Latn">Ombo</Language>
         <Language ID="omi-Latn">Omi</Language>
+        <Language ID="pae-Latn">Pagibete</Language>
+        <Language ID="pmb-Latn">Pambia</Language>
+        <Language ID="pof-Latn">Poke</Language>
+        <Language ID="swf-Latn">Sere</Language>
+        <Language ID="shr-Latn">Shi</Language>
+        <Language ID="soc-Latn">So</Language>
+        <Language ID="sod-Latn">Songoora</Language>
+        <Language ID="swc-Latn">Swahili, Congo</Language>
+        <Language ID="tap-Latn">Taabwa</Language>
+        <Language ID="tlj-Latn">Talinga-Bwisi</Language>
         <Language ID="tbt-Latn">Tembo</Language>
-        <Language ID="tmv-Latn">Tembo</Language>
+        <Language ID="vau-Latn">Vanuma</Language>
+        <Language ID="zne-Latn">Zande</Language>
+        <Language ID="zmb-Latn">Zimba</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
