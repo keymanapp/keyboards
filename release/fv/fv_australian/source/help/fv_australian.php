@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Australian</b> language of the Pacific region of Canada.
+Keyboard layout for typing Australian Aboriginal languages which use the diaeresis, combining underline, and eng.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
@@ -33,5 +33,5 @@ This keyboard is designed for the <b>Australian</b> language of the Pacific regi
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>

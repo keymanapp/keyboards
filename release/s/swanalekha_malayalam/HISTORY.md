@@ -1,6 +1,11 @@
 Swanalekha Malayalam Keyboard Change History
 ============================================
 
+1.2.3 (29 Apr 2019)
+-----------------
+
+* Add missing hau combination to type ഹൗ
+
 1.2.2 (26 Jan 2019)
 -----------------
 
