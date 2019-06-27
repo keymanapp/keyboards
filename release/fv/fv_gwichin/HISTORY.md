@@ -1,6 +1,11 @@
 Gwich'in Change History
 ============================
 
+9.2 (27 Jun 2019)
+----------------
+* Canonical ordering normalized (U+0323 and U+0328)
+* Added grave and circumflex keys (` ^) to mobile layout
+
 9.1.1 (23 Apr 2019)
 -------------------
 * Rebuild to resolve compatibility issue with Chrome

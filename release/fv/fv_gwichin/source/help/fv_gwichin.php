@@ -38,5 +38,5 @@ This keyboard is designed for the <b>Gwich'in</b> language of the Western Subarc
 </div>
 
 <h2>Tablet Keyboard Layout</h2>
-<div id='osk-tablet'>
+<div id='osk-tablet' data-states='default shift numeric'></div>
 </div>
