@@ -3,7 +3,7 @@ Hän Change History
 
 9.2 (28 Jun 2019)
 -------------------
-* Changed rules to use canonical ordering with U+0323
+* Changed rules to use canonical ordering with U+0323 and U+0328
 
 9.1.1 (23 Apr 2019)
 -------------------
