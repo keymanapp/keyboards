@@ -1,6 +1,11 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.4 (28 June 2019)
+------------------
+* Added support back in for small cap I
+* Added mobile layout
+
 1.3.2 (31 May 2019)
 ------------------
 * Added support for: U+018E U+01DD U+00D8 U+00F8 U+0272 U+019D U+A78C
