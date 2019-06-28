@@ -26,7 +26,7 @@ This keyboard is designed for the <b>Gwich'in</b> language of the Western Subarc
 <tr ><td  align='center'>a à ą ą̀</td><td  align='center'>s</td><td  align='center'>d</td><th  align='center'>˛</th><td  align='center'>g</td><td  align='center'>h</td><td  align='center'>j</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>' "</td></tr>
 <tr ><td >&nbsp;</td><td  align='center'>z</td><td  align='center'>. ,</td><td  align='center'>c</td><td  align='center'>v</td><td  align='center'>b</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
 </table>
-<div class='vspace'></div><ul><li>keys with a red background are combining accents.
+<div class='vspace'></div><ul><li>` (grave) , (ogonek) / (acute) % (caron) ^ (circumflex) & (diaeresis) are combining accents and should be typed before the vowel.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
 </li></ul>
 </div>
