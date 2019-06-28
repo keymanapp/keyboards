@@ -5,6 +5,7 @@ Gwich'in Change History
 ----------------
 * Canonical ordering normalized (U+0323 and U+0328)
 * Added grave and circumflex keys (` ^) to mobile layout
+* Small bug fixes in mobile layout
 
 9.1.1 (23 Apr 2019)
 -------------------
