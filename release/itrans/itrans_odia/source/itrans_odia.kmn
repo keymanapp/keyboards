@@ -4,7 +4,7 @@ store(&NAME) 'Odia/Oriya Phonetic (ITRANS)'
 store(&TARGETS) 'windows macosx linux web'
 store(©RIGHT) '©2019 sanskritdocuments.org'
 store(&MESSAGE) 'A Phonetic (ITRANS) keyboard for Odia/Oriya.'
-store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted and Right Ctrl layouts.'
 store(&BITMAP) 'itrans_odia.ico'
 store(&VISUALKEYBOARD) 'itrans_odia.kvks'
 store(&COPYRIGHT) '©2019 sanskritdocuments.org'
@@ -17,7 +17,7 @@ group(main) using keys
 c  Set Hindi mode by default (implict word ending `a`)
 
 store(opt1) 'hindi'
-+ [RCTRL RALT K_0]	>	set(opt1='0') 
++ [RCTRL RALT K_0]	>	set(opt1='sanskrit') 
 + [RCTRL RALT K_1]	>	reset(opt1)
 
 c 	Special Symbols
@@ -63,6 +63,16 @@ store(DigitsU)	"୦"	"୧"	"୨"	"୩"	"୪"	"୫"	"୬"	"୭"	"୮"	"୯"
 + any(Digits)	>	index(DigitsU,1)
 any(DigitsU) + [K_BKSP]	>	index(Digits,1)
 
+c 	numbers - Odia 0,1, 1/4, 1/2, 3/4, 1/16, 1/8, 3/16
++ [RCTRL K_0] > '୦'
++ [RCTRL K_1] > '୧'
++ [RCTRL K_2] > '୲'
++ [RCTRL K_3] > '୳'
++ [RCTRL K_4] > '୴'
++ [RCTRL K_5] > '୵'
++ [RCTRL K_6] > '୶'
++ [RCTRL K_7] > '୷'
+
 c  standalone vowel signs with @
 "@" + "A"	>	"ା"
 "@" + "i"	>	"ି"
@@ -75,10 +85,8 @@ c  standalone vowel signs with @
 + "O"	>	"ୗ" c ORIYA AU LENGTH MARK
 "@" + "a"	>	"@a"
 "@a" + "a"	>	"ା"
-"@a" + "e"	>	"ୖ"
 "@a" + "i"	>	"ୈ"
 "@a" + "u"	>	"ୌ"
-"@a" + "w"	>	"ୗ"
 "ି" + "i"	>	"ୀ"
 "ୁ" + "u"	>	"ୂ"
 "େ" + "e"	>	"ୀ"
@@ -149,21 +157,15 @@ c  Consonants
 + "T"	>	"ଟ୍"
 + "v"	>	"ଵ୍"
 + "w"	>	"ୱ୍" c Odia wa
-+ "W"	>	"ଯ଼୍" c .y
 + "x"	>	"କ୍ଷ୍"
 + "y"	>	"ଯ୍"
 + "Y"	>	"ଞ୍"
 + "f"	>	"ଫ୍" c ph
 
-c 
-+ "q"	>	"ଢ଼୍" c .Dh
-+ "z"	>	"ଡ଼୍" c .D
-
 c  ununsed - beep
 + "F"	>	beep
-+ "W"	>	beep
-+ "X"	>	beep
-+ "Z"	>	beep
++ "q"	>	beep
++ "z"	>	beep
 
 c  alternate mapping with ~
 "~" + "n"	>	"ଞ୍"
@@ -185,11 +187,11 @@ c  add h to consonants
 "ସ୍" + "h"	>	"ଶ୍"
 
 c  special combinations
-$keymanonly: if(opt1 = '0') "ନ୍" + "k"	>	"ଙ୍କ୍"
-$keymanonly: if(opt1 = '0') "ନ୍" + "g"	>	"ଙ୍ଗ୍"
-$keymanonly: if(opt1 = '0') "ନ୍" + "c"	>	"nc"
-$keymanonly: if(opt1 = '0') "nc" + "h"	>	"ଞ୍ଚ୍"	c nch
-$keymanonly: if(opt1 = '0') "ନ୍" + "j"	>	"ଞ୍ଜ୍"
+$keymanonly: if(opt1 = 'sanskrit') "ନ୍" + "k"	>	"ଙ୍କ୍"
+$keymanonly: if(opt1 = 'sanskrit') "ନ୍" + "g"	>	"ଙ୍ଗ୍"
+$keymanonly: if(opt1 = 'sanskrit') "ନ୍" + "c"	>	"nc"
+$keymanonly: if(opt1 = 'sanskrit') "nc" + "h"	>	"ଞ୍ଚ୍"	c nch
+$keymanonly: if(opt1 = 'sanskrit') "ନ୍" + "j"	>	"ଞ୍ଜ୍"
 "ଘ୍" + "Y"	>	"ଜ୍ଞ୍"	c	GY
 "ଶ୍" + "r"	>	"ଶ୍ର୍"	c	shr
 "ଣ୍" + "g"	>	"ଙ୍"	c	Ng
@@ -200,13 +202,17 @@ store(NuktaVyanjana) 'ଯଡଢ'
 "." + "D"	>	"ଡ଼୍" c .D
 "ଡ଼୍" + "h"	>	"ଢ଼୍" c .Dh
 
+c 
++ "W"	>	"ଯ଼୍" c .y
++ "X"	>	"ଢ଼୍" c .Dh
++ "Z"	>	"ଡ଼୍" c .D
 
 c  Rules for Consonants + Vowel Signs
 store(Vyanjana) 'କକ୍ଷଖଗଘଙଚଛଜଜ୍ଞଝଞଟଠଡଢଣତଥଦଧନପଫବଭମଯରଲଳଵଶ୍ରଷସହୱ'
 store(ViramaMaatraa) 'eiouAEIORUL'
 store(ViramaMaatraaU) "େ" "ି" "ୋ" "ୁ" "ା" "ୖ" "ୀ" 'ୗ'  "ୃ" "ୂ" "ୢ"
-store(aPlusMaatraa) 'aeiuw'
-store(aPlusMaatraaU) "ା" "ୖ" "ୈ" "ୌ" "ୗ"
+store(aPlusMaatraa) 'aiu'
+store(aPlusMaatraaU) "ା" "ୈ" "ୌ" 
 
 c 	implicit akaara deletion for Hindi mode 
 store(opt1endings) outs(Punctuation) ' '
