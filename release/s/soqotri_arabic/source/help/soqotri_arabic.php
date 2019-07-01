@@ -3,28 +3,38 @@
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
-<h1  dir="rtl" style='margin-bottom: 2px'>لوحة المفاتيح السقطرية</h1>
+<head>
+  <title  dir="rtl">لوحة المفاتيح السقطرية</title>
+  <style type="text/css">
+    li, p { font: 10pt Tahoma }
+    h1 { font: bold 16pt Tahoma; color: #4444cc }
+    h2 { font: bold 12pt Tahoma; color: #4444cc }
+    h3 { clear: both;}
+    .a { font: 14pt Arial }
+  </style>
+</head>
+<h2  dir="rtl" style='margin-bottom: 2px'>لوحة المفاتيح السقطرية</h2>
 <p  dir="rtl">لوحة المفاتيح هذه مجعولة للكتابة باللغة السقطرية.</p>
 
-<h2  dir="rtl">تخطيط لوحة المفاتيح </h2>
-      <P  dir="rtl">تخطيط لوحة المفاتيح معروض أدناه في الرسومات البيانية </P>
+<h3 dir="rtl">تخطيط لوحة المفاتيح </h3>
+      <p dir="rtl">تخطيط لوحة المفاتيح معروض أدناه في الرسومات البيانية </p>
       	
-      	<h3 dir="rtl">النسخة الأصلية</h3>
-      	<img dir="rtl" src="SoqotriU_.png" alt="Base Version" style="float:right;width:600px;">
+      	<h4 dir="rtl">النسخة الأصلية</h4>
+      	<p dir="rtl"><img src="SoqotriU_.png" alt="Base Version" style="width:600px;"></p>
 
-      	<h3  dir="rtl">نسخة التحويل </h3>
-      	<img src="SoqotriU_S.png"  dir="rtl" alt="Shift Version"style="float:right;width:600px;">
+      	<h4 dir="rtl">نسخة التحويل </h4>
+      	<p dir="rtl"><img src="SoqotriU_S.png"  alt="Shift Version" style="width:600px;"></p>
 
 
-<h1 style='margin-bottom: 2px'>Soqotri Keyboard</h1>
+<h2 style='margin-bottom: 2px'>Soqotri Keyboard</h2>
 <p>This is a keyboard for entering Soqotri.</p>
 
-<h2>Keyboard Layout</h2>
-      <P>The keyboard layout is displayed below in Keyboard graphics.</P>
+<h3>Keyboard Layout</h3>
+      <p>The keyboard layout is displayed below in Keyboard graphics.</p>
       	
-      	<h3>Base Version</h3>
-      	<img src="SoqotriU_.png" alt="Base Version" style="width:600px;">
+      	<h4>Base Version</h4>
+      	<p><img src="SoqotriU_.png" alt="Base Version" style="width:600px;"></p>
 
-      	<h3>Shift Version</h3>
-      	<img src="SoqotriU_S.png" alt="Shift Version" style="width:600px;">
+      	<h4>Shift Version</h4>
+      	<p><img src="SoqotriU_S.png" alt="Shift Version" style="width:600px;"></p>
                                       
