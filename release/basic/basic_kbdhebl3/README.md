@@ -12,6 +12,7 @@ Hebrew (Standard) Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdhebl3
 
 Supported Platforms
 -------------------
