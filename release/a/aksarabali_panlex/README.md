@@ -6,7 +6,7 @@ Copyright (C) 2019 The PanLex Project of The Long Now Foundation
 Version 1.0
 
 __DESCRIPTION__
-This keyboard lets you type Askara Bali (Balinese script) in Unicode. It is based on the Bali Simbar non-Unicode layout.
+This keyboard lets you type Askara Bali (Balinese script) in Unicode. It is a Unicode reimplementation of the Bali Simbar keyboard (the de-facto standard keyboard in Bali for typing in Balinese script).
 
 Links
 -----
