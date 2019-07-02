@@ -9,12 +9,13 @@ c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Hebrew (Standard) Basic'
-store(&Targets) "windows macosx linux web"
 store(&VISUALKEYBOARD) 'basic_kbdhebl3.kvks'
 store(&BITMAP) 'basic_kbdhebl3.ico'
 store(&LAYOUTFILE) 'basic_kbdhebl3.keyman-touch-layout'
 store(&COPYRIGHT) '© 2019 SIL International'
 store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&KMW_RTL) '1'
 
 begin Unicode > use(main)
 
@@ -249,7 +250,7 @@ group(main) using keys
 
 + [K_LBRKT] > U+005d
 + [SHIFT K_LBRKT] > U+007d
-+ [CTRL K_LBRKT] > U+200e
++ [LCTRL K_LBRKT] > '‎'
 + [RALT K_LBRKT] > U+05b2
 
 + [K_BKSLASH] > U+005c
@@ -258,7 +259,7 @@ group(main) using keys
 
 + [K_RBRKT] > U+005b
 + [SHIFT K_RBRKT] > U+007b
-+ [CTRL K_RBRKT] > U+200f
++ [LCTRL K_RBRKT] > '‏'
 + [RALT K_RBRKT] > U+05bf
 
 + [NCAPS K_QUOTE] > U+002c
