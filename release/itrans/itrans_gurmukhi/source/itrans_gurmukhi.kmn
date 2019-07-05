@@ -1,0 +1,226 @@
+﻿store(&VERSION) "10.0" 
+store(&KEYBOARDVERSION) '1.0.0'
+store(&NAME) 'Panjabi/Gurmukhi Phonetic (ITRANS)'
+store(&TARGETS) 'windows macosx linux web'
+store(©RIGHT) '©2019 sanskritdocuments.org'
+store(&MESSAGE) 'A Phonetic (ITRANS) keyboard for Gurmukhi.'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&BITMAP) 'itrans_gurmukhi.ico'
+store(&VISUALKEYBOARD) 'itrans_gurmukhi.kvks'
+
+begin Unicode > use(main)
+group(main) using keys
+
+c  Set Hindi mode by default (implict word ending `a`)
+
+store(opt1) 'hindi'
++ [RCTRL RALT K_0]	>	set(opt1='0') 
++ [RCTRL RALT K_1]	>	reset(opt1)
+
+c 	Special Symbols
++ "#"	>	"ੴ" c ek onkar
++ "$"	>	"ੲ" c iri
++ "%"	>	"ੳ" c ura
++ "*"	>	"☬" c khanda 
++ "&"	>	"ੵ" c yakash
+
+c 	Common VEDIC MARKS
+"'" + "'"	>	U+0951	c DEVANAGARI STRESS SIGN DATTA - SVARITA
+U+0951 + "'"	>	U+1CDA	c VEDIC TONE DOUBLE SVARITA
+U+1CDA + "'"	>	U+1CDB	c VEDIC TONE TRIPLE SVARITA
+"`" + "`"	>	U+0952	c DEVANAGARI STRESS SIGN ANUDATTA
+"ਁ" + "^"	>	"ꣳ"	c CANDRABINDU VIRAMA - MM^
+"=" + "="	>	"ᳶ"	c VEDIC SIGN UPADHMANIYA     
+
+c Special Marks
++ "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
++ "+"	>	U+200D	c ZERO-WIDTH JOINER
++ "^"	>	"੍"	c VIRAMA
+
+c 	Punctuation
+store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" "{" "}" '"' "," "." "=" "\" "|" "[" "]"
++ any(Punctuation)	>	index(Punctuation,1)
+
++ "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
++ "@"	>	"@" 
+
+"," + ","	>	"੶"	c	Gurmukhi ABBREVIATION SIGN
+"." + "."	>	"।"	c twice for DANDA
+"।" + "."	>	"॥"	c thrice for DOUBLE DANDA
+"॥" + "."	>	U+2026	c four dots for a HORIZONTAL ELLIPSIS
+
+"-" + "-"	>	U+2013	c hyphen twice for EN DASH
+U+2013 + "-"	>	U+2014	c three times for EM DASH
+
+c 	numbers - Gurmukhi DigitsU
+store(Digits)	"0"	"1"	"2"	"3"	"4"	"5"	"6"	"7"	"8"	"9"
+store(DigitsU)	"੦"	"੧"	"੨"	"੩"	"੪"	"੫"	"੬"	"੭"	"੮"	"੯"
++ any(Digits)	>	index(DigitsU,1)
+any(DigitsU) + [K_BKSP]	>	index(Digits,1)
+
+c  standalone vowel signs with @
+"@" + "A"	>	"ਾ"
+"@" + "i"	>	"ਿ"
+"@" + "I"	>	"ੀ"
+"@" + "u"	>	"ੁ"
+"@" + "U"	>	"ੂ"
+"@" + "e"	>	"ੇ"
+"@" + "o"	>	"ੋ"
+"@" + "a"	>	"@a"
+"@a" + "a"	>	"ਾ"
+"@a" + "e"	>	"ૅ"
+"@a" + "i"	>	"ੈ"
+"@a" + "u"	>	"ੌ"
+"@a" + "w"	>	"ૉ"
+"ਿ" + "i"	>	"ੀ"
+"ੁ" + "u"	>	"ੂ"
+"ੇ" + "e"	>	"ੀ"
+"ੇ" + "i"	>	"ੈ"
+"ੋ" + "o"	>	"ੂ"
+"ੋ" + "u"	>	"ੌ"
+
+c  Independent Vowels
++ "a"	>	"ਅ"
+"ਅ" + "a"	>	"ਆ"
++ "A"	>	"ਆ"
++ "i"	>	"ਇ"
+"ਇ" + "i"	>	"ਈ"
+"ਏ" + "e"	>	"ਈ"
++ "I"	>	"ਈ"
++ "u"	>	"ਉ"
+"ਉ" + "u"	>	"ਊ"
+"ਓ" + "o"	>	"ਊ"
++ "U"	>	"ਊ"
++ "e"	>	"ਏ"
+"ਅ" + "e"	>	"ઍ"
+"ਅ" + "i"	>	"ਐ"
+"ਏ" + "i"	>	"ਐ"
++ "o"	>	"ਓ"
+"ਅ" + "w"	>	"ઑ"
+"ਅ" + "u"	>	"ਔ"
+"ਓ" + "u"	>	"ਔ"
+
+c  Vowel Modifiers
++ "H"	>	"ਃ" c VISARGA - H
++ "M"	>	"ਂ" c BINDI - M
+"ਂ" + "M"	>	"ਁ"	c ADAK BINDI - MM
++ "<"	>	"ੰ" c TIPPI
++ ">"	>	"ੱ" c ADDAK
+
+c  Consonants
++ "b"	>	"ਬ੍"
++ "B"	>	"ਭ੍"
++ "c"	>	"ਚ੍"
++ "C"	>	"ਛ੍"
++ "d"	>	"ਦ੍"
++ "D"	>	"ਡ੍"
++ "g"	>	"ਗ੍"
++ "G"	>	"ਘ੍"
++ "h"	>	"ਹ੍"
++ "j"	>	"ਜ੍"
++ "J"	>	"ਝ੍"
++ "k"	>	"ਕ੍"
++ "K"	>	"ਖ੍"
++ "l"	>	"ਲ੍"
++ "L"	>	"ਲ਼੍"
++ "m"	>	"ਮ੍"
++ "n"	>	"ਨ੍"
++ "N"	>	"ਣ੍"
++ "p"	>	"ਪ੍"
++ "P"	>	"ਫ੍"
++ "r"	>	"ਰ੍"
++ "s"	>	"ਸ੍"
++ "t"	>	"ਤ੍"
++ "T"	>	"ਟ੍"
++ "v"	>	"ਵ੍"
++ "w"	>	"ਵ੍"
++ "y"	>	"ਯ੍"
++ "Y"	>	"ਞ੍"
++ "f"	>	"ਫ੍"
+
+c  ununsed - beep
++ "F"	>	beep
++ "Q"	>	beep
++ "R"	>	beep
++ "S"	>	beep
++ "V"	>	beep
++ "W"	>	beep
++ "X"	>	beep
++ "Z"	>	beep
++ "q"	>	beep
++ "x"	>	beep
++ "z"	>	beep
+
+c  alternate mapping with ~
+"~" + "n"	>	"ਞ੍"
+"~" + "N"	>	"ਙ੍"
+
+c  add h to consonants
+"ਕ੍" + "h"	>	"ਖ੍"
+"ਗ੍" + "h"	>	"ਘ੍"
+"ਚ੍" + "h"	>	"ਚ੍" c same c=ch
+"ਛ੍" + "h"	>	"ਛ੍" c same C=Ch
+"ਜ੍" + "h"	>	"ਝ੍"
+"ਟ੍" + "h"	>	"ਠ੍"
+"ਡ੍" + "h"	>	"ਢ੍"
+"ਤ੍" + "h"	>	"ਥ੍"
+"ਦ੍" + "h"	>	"ਧ੍"
+"ਪ੍" + "h"	>	"ਫ੍"
+"ਬ੍" + "h"	>	"ਭ੍"
+"ਸ੍" + "h"	>	"ਸ਼੍"
+
+c  special combinations
+$keymanonly: if(opt1 = '0') "ਨ੍" + "k"	>	"ਙ੍ਕ੍"
+$keymanonly: if(opt1 = '0') "ਨ੍" + "g"	>	"ਙ੍ਗ੍"
+$keymanonly: if(opt1 = '0') "ਨ੍" + "c"	>	"nc"
+$keymanonly: if(opt1 = '0') "nc" + "h"	>	"ਞ੍ਚ੍"	c nch
+$keymanonly: if(opt1 = '0') "ਨ੍" + "j"	>	"ਞ੍ਜ੍"
+"ਘ੍" + "Y"	>	"ਜ੍ਞ੍"	c	GY
+"ਸ਼੍" + "r"	>	"ਸ਼੍ਰ੍"	c	shr
+"ਣ੍" + "g"	>	"ਙ੍"	c	Ng
+
+c  Nukta - https://r12a.github.io/scripts/gurmukhi/#extensions
+"." + "k"	>	"ਕ਼੍" c .k
+"." + "g"	>	"ਗ਼੍" c .g
+"ਕ਼੍" + "h"	>	"ਖ਼੍" c .kh
+"ਗ਼੍" + "h"	>	"ਘ਼੍" c .gh
+"." + "j"	>	"ਜ਼੍" c .j
+"." + "t"	>	"ਤ਼੍" c .t
+
+c  Rules for Consonants + Vowel Signs
+store(Vyanjana) 'ਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਲ਼ਵਸ਼ਸਹ'
+store(NuktaVyanjana) 'ਤਘਜਖਕਗ'
+store(ViramaMaatraa) 'eiouAIRUL'
+store(ViramaMaatraaU) "ੇ" "ਿ" "ੋ" "ੁ" "ਾ" "ੀ"  "੃" "ੂ" "੢"
+store(aPlusMaatraa) 'aiu'
+store(aPlusMaatraaU) "ਾ"  "ੈ" "ੌ" 
+
+c 	implicit akaara deletion for Hindi mode 
+store(opt1endings) outs(Punctuation) ' '
+
+$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"੍" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
+any(Vyanjana) + "^"	>	index(Vyanjana,1)"੍"U+200C
+any(Vyanjana)"੍" + "^"	>	index(Vyanjana,1)"੍" U+200C
+any(Vyanjana)"੍" + "a"	>	index(Vyanjana,1)
+any(Vyanjana) + any(aPlusMaatraa) >	context index(aPlusMaatraaU,2) 
+any(Vyanjana)"੍" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana)"ਿ" + "i"	>	index(Vyanjana,1)"ੀ"	c ii
+any(Vyanjana)"ੁ" + "u"	>	index(Vyanjana,1)"ੂ"	c uu
+any(Vyanjana)"ੇ" + "e"	>	index(Vyanjana,1)"ੀ"	c ee
+any(Vyanjana)"ੇ" + "i"	>	index(Vyanjana,1)"ੈ"	c ei
+any(Vyanjana)"ੋ" + "o"	>	index(Vyanjana,1)"ੂ"	c oo
+any(Vyanjana)"ੋ" + "u"	>	index(Vyanjana,1)"ੌ"	c ou
+
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"਼" "੍" + any(opt1endings)	>	index(NuktaVyanjana,2)"਼" index(opt1endings,5)
+any(NuktaVyanjana)"਼" "੍" + "^"	>	index(NuktaVyanjana,1)"਼""੍"U+200C
+any(NuktaVyanjana)"਼" "੍" + "a"	>	index(NuktaVyanjana,1)"਼"
+any(NuktaVyanjana)"਼" + any(aPlusMaatraa) >	 context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana)"਼" "੍" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"਼" index(ViramaMaatraaU,4) 
+any(NuktaVyanjana)"਼" "ਿ" + "i"	>	index(NuktaVyanjana,1)"਼""ੀ"	c ii
+any(NuktaVyanjana)"਼" "ੁ" + "u"	>	index(NuktaVyanjana,1)"਼""ੂ"	c uu
+any(NuktaVyanjana)"਼" "ੇ" + "e"	>	index(NuktaVyanjana,1)"਼""ੀ"	c ee
+any(NuktaVyanjana)"਼" "ੇ" + "i"	>	index(NuktaVyanjana,1)"਼""ੈ"	c ei
+any(NuktaVyanjana)"਼" "ੋ" + "o"	>	index(NuktaVyanjana,1)"਼""ੂ"	c oo
+any(NuktaVyanjana)"਼" "ੋ" + "u"	>	index(NuktaVyanjana,1)"਼""ੌ"	c ou
+
+c  EOF
