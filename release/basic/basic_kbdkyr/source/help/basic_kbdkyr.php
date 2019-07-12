@@ -9,7 +9,6 @@
 <p>
     Kyrgyz Cyrillic Basic 1.1 generated from template.
 </p>
-<p>This keyboard makes use of the SHIFT+RALT+K key which is set by default when Keyman is installed. To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off". Either change the hotkey or turn it off. Do the same for "Open Keyboard Menu" and for "Open Language Switcher".</p>
 
 <h1>Keyboard Layout</h1>
 
