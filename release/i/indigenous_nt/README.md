@@ -1,12 +1,12 @@
 Indigenous NT Integrated Keyboard
 =====================
 
-Copyright (C) 2019 _____________________
+Copyright (C) 2019
 
 Version 3.1
 
 __DESCRIPTION__
-This is a universal keyboard for Northwest Territoriesʼ official languages. It retains the normal US keyboard layout while providing access to special characters and diacritics through the Alt key. 
+This is the Keyman edition of an universal keyboard for the official languages of the Northwest Territories. It retains the standard US keyboard layout while providing access to special characters and diacritics through the Alt key. First created in 2013, the keyboard has evolved to its current edition at the Prince of Wales Northern Heritage Centre and Indigenous Languages and Education Secretariat. 
 
 Links
 -----
