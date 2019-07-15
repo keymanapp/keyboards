@@ -7,6 +7,7 @@
 <p>
     Bosnian (Cyrillic) Basic 1.1 generated from template.
 </p>
+<p>The ' is a deadkey. Typing ' followed by a k, K, g, or G ('k'K'g'G) will produce "ѓЃќЌ"</p>
 
 <h1>Keyboard Layout</h1>
 
