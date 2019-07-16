@@ -1,4 +1,4 @@
-Panjabi/Gurmukhi Phonetic (ITRANS)
+Gurmukhi Phonetic (ITRANS)
 =================
 
 ©2019 sanskritdocuments.org
@@ -6,8 +6,9 @@ Panjabi/Gurmukhi Phonetic (ITRANS)
 Description
 -----------
 
-A Phonetic keyboard for Gurmukhi using ITRANS transliteration scheme. 
-Examples: Type `hindI` for ਹਿਨ੍ਦੀ, `gujarAtI` for ਗੁਜਰਾਤੀ, `panjabI` for ਪੰਜਾਬੀ.
+A Phonetic keyboard for Gurmukhi script using ITRANS transliteration scheme. 
+Examples: Type `hindI` for ਹਿਨ੍ਦੀ, `hiMdI` for ਹਿੰਦੀ,`gujarAtI` for ਗੁਜਰਾਤੀ, `paMjAbI` for ਪੰਜਾਬੀ.
+This can be used for writing Punjabi and Sindhi languages.
 
 
 Supported Platforms
