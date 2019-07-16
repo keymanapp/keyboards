@@ -1,4 +1,4 @@
-Panjabi/Gurmukhi Phonetic (ITRANS)
+Gurmukhi Phonetic (ITRANS)
 ==================
 
 1.0.0 (2019-06-20)
