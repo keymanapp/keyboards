@@ -1,7 +1,7 @@
 Krung keyboard
 ==============
 
-© 2019 Keyman
+© 2019 SIL International
 
 Version 1.0
 
@@ -26,10 +26,5 @@ Supported Platforms
 
 ToDo
 -------------------
-* What is the actual output of:
-	* "tatrzz" តត្រ or តាត់រ៉ as show in CR?
-	* "paqtvv" ប៉ាគ់ទឺ as in CR, or ប៉ាគទឺ as in a separate document sent to me?
-	* "qyuuy" អ្យ៊ូយ as in CR, or អ្យូយ as in a separate document sent to me?
-	* "katzz" -> should give the Bunong vowel ក៝ត, but "kalzz" gives កឡ?
-* Backspace functionality is not implemented yet, do we have to have it?
-* Also the keys for ៕ and ៚
+* Backspace functionality is not implemented yet, do we have to have it? Chuck said, "I think it would be useful for quick correcting of mistakes as one keys in words but I don’t know how complicated it would be to add this."
+* Also the keys for ៕ and ៚, where should these characters be placed?
