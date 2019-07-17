@@ -1,4 +1,4 @@
-____________ Keyboard Change History
+Indigenous NT Integrated Keyboard Change History
 =======================
 
 3.2 (17 Jul 2019)
@@ -9,4 +9,4 @@ ____________ Keyboard Change History
 3.1 (12 Jul 2019)
 -----------------
 
-* Created by Rajiv Rawat and adapted to Keyman from MSKLC.
+* Ported to Keyman from MSKLC.
