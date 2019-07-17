@@ -5,6 +5,7 @@ Bulgarian Basic Change History
 ----------------
 * Import from Windows 10
 * Include mobile layout
+* Changed shift+A key to produce uppercase of U+044C (U+042C)
 
 1.0 (2014-03-21)
 ----------------
