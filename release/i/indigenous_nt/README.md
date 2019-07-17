@@ -9,7 +9,7 @@ __DESCRIPTION__
 
 This is the Keyman version of the universal keyboard for the 11 official languages of the Northwest Territories (Inuktitut in Roman Orthography).
 
-It retains the standard US keyboard layout while providing access to special characters and diacritics through the Alt key on Desktop computers.
+It retains the standard US keyboard layout while providing access to special characters and diacritics through the Alt-Gr (Right Alt) key on Desktop computers.
 
 On mobile devices such as tablets and smartphones, the longpress popup provides the same functionality (glottal stops can be accessed through the period key).
 
