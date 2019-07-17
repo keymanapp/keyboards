@@ -22,7 +22,7 @@
   Rajiv Rawat</small></p>
 
 <p>This is the Keyman version of the universal keyboard for the 11 official languages of the Northwest Territories (Inuktitut in Roman Orthography). Additional characters for other circumpolar languages have also been included.</p>
-<p>It retains the standard US keyboard layout while providing access to special characters and diacritics through the <strong>Alt</strong> key on Desktop computers.</p>
+<p>It retains the standard US keyboard layout while providing access to special characters and diacritics through the <strong>Alt-Gr (Right Alt)</strong> key on Desktop computers.</p>
 <p>On mobile devices such as tablets and smartphones, the longpress popup provides the same functionality (glottal stops can be accessed through the <strong>period</strong> key).</p>
 <p>The keyboard is intended to be intuitive and easy to use for the widest number of users. As such, it hopes to facilitate widescale acceptance and adoption of the incredible linguistic diversity in the Canadian North.</p>
 
