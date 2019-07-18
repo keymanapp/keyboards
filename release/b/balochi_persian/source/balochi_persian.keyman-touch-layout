@@ -189,7 +189,8 @@
             "key": [
               {
                 "id": "K_BKQUOTE",
-                "text": "‍"
+                "text": "zwj",
+                "pad": "55"
               },
               {
                 "id": "K_A",
@@ -234,10 +235,6 @@
               {
                 "id": "K_QUOTE",
                 "text": "گ"
-              },
-              {
-                "id": "K_BKSLASH",
-                "text": "\\"
               }
             ]
           },
@@ -465,7 +462,8 @@
             "key": [
               {
                 "id": "K_BKQUOTE",
-                "text": "ٰ"
+                "text": "ٰ",
+                "pad": "55"
               },
               {
                 "id": "K_A",
@@ -510,10 +508,6 @@
               {
                 "id": "K_QUOTE",
                 "text": "؛"
-              },
-              {
-                "id": "K_BKSLASH",
-                "text": "|"
               }
             ]
           },
@@ -590,7 +584,7 @@
               },
               {
                 "id": "K_SPACE",
-                "text": "‌",
+                "text": "zwnj",
                 "width": "930"
               },
               {
@@ -810,8 +804,7 @@
                   },
                   {
                     "text": "!",
-                    "id": "K_QUOTE",
-                    "layer": "shift"
+                    "id": "U_0021"
                   },
                   {
                     "text": "؛",
@@ -1289,12 +1282,27 @@
               {
                 "id": "K_EQUAL",
                 "text": "+",
-                "layer": "shift"
+                "layer": "shift",
+                "sk": [
+                  {
+                    "text": "×",
+                    "id": "U_00D7"
+                  },
+                  {
+                    "text": "-",
+                    "id": "U_002D"
+                  }
+                ]
               },
               {
-                "id": "K_HYPHEN",
-                "text": "-",
-                "layer": "default"
+                "id": "U_200C",
+                "text": "zn",
+                "sk": [
+                  {
+                    "text": "zj",
+                    "id": "U_200D"
+                  }
+                ]
               },
               {
                 "id": "K_8",
