@@ -12,6 +12,7 @@ Latvian (Standard) Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdlvst
 
 Supported Platforms
 -------------------
