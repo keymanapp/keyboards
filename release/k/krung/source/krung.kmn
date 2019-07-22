@@ -13,6 +13,12 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+c SHIFT KEYS
+store(not_in_use)   [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P] \
+                    [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
+                    [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M] [K_F] 
+
++ any(not_in_use)    > nul
 c punctuations
 store(punct_key)    [K_PERIOD] [SHIFT K_COLON] [SHIFT K_COMMA] [SHIFT K_PERIOD] [K_COMMA]
 store(punct_out)    U+17D4 U+17D6 U+003C U+003E U+0020
