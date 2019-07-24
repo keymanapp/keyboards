@@ -4,7 +4,7 @@
   require_once('header.php');
 ?>
 
-<p>This keyboard lets you type Askara Bali (Balinese script) in Unicode. It is a Unicode reimplementation of the Bali Simbar keyboard (the de-facto standard keyboard in Bali for typing in Balinese script).</p>
+<p>This keyboard lets you type Aksara Bali (Balinese script) in Unicode. It is a Unicode reimplementation of the Bali Simbar keyboard (the de-facto standard keyboard in Bali for typing in Balinese script).</p>
 
 <p>The keyboard follows the Bali Simbar keyboard as closely as possible. Basic usage is as follows:</p>
 
