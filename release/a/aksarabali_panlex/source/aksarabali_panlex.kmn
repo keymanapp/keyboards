@@ -1,7 +1,7 @@
 ﻿store(&NAME) 'Aksara Bali Unicode'
 store(&TARGETS) 'windows macosx linux desktop web'
 store(&COPYRIGHT) '© 2019 The PanLex Project of The Long Now Foundation'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&MESSAGE) 'Aksara Bali Unicode, based on Bali Simbar'
 store(&BITMAP) 'aksarabali_panlex.ico'
 store(&VISUALKEYBOARD) 'aksarabali_panlex.kvks'
@@ -65,10 +65,12 @@ store(syllabic_key) [K_E] [CTRL K_PERIOD]
 store(adeg_key)     [K_SPACE] [K_SLASH]
 store(tedong_key)   [CTRL K_A] [CTRL K_O]
 
-store(cons)      outs(cons_main) 'ᬔᬙᬛᬞᬟᬠᬣᬥᭅᭆᭇᭈᭊᭋ'
-store(mark)      outs(dvowel) $tedong $candra $ricem $rerekan $cecek $surang
-store(mark_all)  outs(mark) $bisah $adeg $zwnj
-store(cons_mark) outs(cons) outs(mark)
+store(cons)             outs(cons_main) 'ᬔᬙᬛᬞᬟᬠᬣᬥᭅᭆᭇᭈᭊᭋ'
+store(vmark)            outs(dvowel) $tedong $candra $ricem $rerekan
+store(mark)             outs(vmark) $cecek $surang
+store(mark_all)         outs(mark) $bisah $adeg $zwnj
+store(cons_vowel_vmark) outs(cons) outs(vowel) outs(vmark)
+store(cons_vowel_mark)  outs(cons) outs(vowel) outs(mark)
 
 store(indep_key) outs(vowel_key) outs(punc_key) outs(numeral_key)
 store(indep)     outs(vowel)     outs(punc)     outs(numeral)
@@ -143,7 +145,7 @@ group(main) using keys
   any(ra_repa) + [K_N] > context(1) 'ᬡ?' c n => ṇ /ṛ_
 
   c post-consonant input: surang
-  any(cons_mark) 'ᬭ?' + any(cons_key) > context(1) $surang index(cons_main, 4) '?' c surang
+  any(cons_vowel_vmark) 'ᬭ?' + any(cons_key) > context(1) $surang index(cons_main, 4) '?' c surang
 
   c post-consonant input: general
   '?' + any(cons_key) > $adeg index(cons_main, 2) '?' set(adeg_flag='0')
@@ -175,9 +177,9 @@ group(main) using keys
   c other marks
   '?' + [CTRL K_R] > $rerekan '?'
   + [CTRL K_R] > $rerekan
-  any(cons_mark) 'ᬳ?' + [K_SPACE] > context(1) $bisah
-  any(cons_mark) 'ᬗ?' + [K_SPACE] > context(1) $cecek
-  any(cons_mark) 'ᬭ?' + [K_SPACE] > context(1) $surang
+  any(cons_vowel_mark) 'ᬳ?' + [K_SPACE] > context(1) $bisah
+  any(cons_vowel_mark) 'ᬗ?' + [K_SPACE] > context(1) $cecek
+  any(cons_vowel_mark) 'ᬭ?' + [K_SPACE] > context(1) $surang
 
   c punctuation
   + [CTRL SHIFT K_COMMA] > '᭚᭜᭚'
