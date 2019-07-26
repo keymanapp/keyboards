@@ -1,11 +1,11 @@
 ﻿<?php /*
   Name:             Keyboard_gff_amhamaric
-  Copyright:        Keyboard ©1997-2018 The Ge'ez Frontier Foundation 
+  Copyright:        Keyboard ©1997-2019 The Ge'ez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    5 May 2018
+  Modified Date:    14 Mar 2019
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -28,7 +28,7 @@ EXTRA;
   require_once('header.php');
 ?>
 
-<p style='margin:0px'>Keyboard &#169; 1997-2018 Ge'ez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard &#169; 1997-2019. Ge'ez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -184,10 +184,12 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.8, 9 Mar 2019</dt>
+  <dd>Fix to recognize apostrophe after Salis forms.</dd>
   <dt>Version 1.7, 1 Dec 2018</dt>
   <dd>The apostrophe composition stopper added between lone vowels. </dd>
   <dt>Version 1.6, 6 Sep 2018</dt>
-  <dd>The apostrophe composition stopper added after Ka'ib and Sals forms to support some special case words.</dd>
+  <dd>The apostrophe composition stopper added after Ka'ib and Salis forms to support some special case words.</dd>
   <dt>Version 1.5, 16 May 2018</dt>
   <dd>Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.</dd>
   <dt>Version 1.4, 7 May 2015</dt>
@@ -203,7 +205,7 @@ This keyboard was created by the Ge'ez Frontier Foundation.  SIL International g
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2018 Ge'ez Frontier Foundation and SIL International.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from SIL International.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2018 Ge'ez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>

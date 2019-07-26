@@ -1,0 +1,245 @@
+﻿c Version 1.0.0
+c 20190523
+c Initial Version
+c Based on itrans_gujarati 1.0.0
+c 20190528 
+c Update based on itrans_gujarati 1.2.0 
+c Add characters based on Unicode Bengali Chart
+c https://unicode.org/charts/PDF/U0980.pdf
+c 20190601
+c Add OM symbol as O and chandrabindu
+c Add Assamese as supported language
+c 20190605
+c Change based on PR feedback
+c Alternate scheme - https://service.vishalon.net/tinymce/plugins/pramukhime/help/pramukhindic-bengali.html
+c
+store(&VERSION) "10.0" 
+store(&NAME) 'Bengali Phonetic (ITRANS)'
+store(&TARGETS) 'windows macosx linux web'
+store(©RIGHT) '©2019 sanskritdocuments.org'
+store(&MESSAGE) 'A Phonetic (ITRANS) keyboard for Bengali and Assamese.'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&BITMAP) 'itrans_bengali.ico'
+store(&VISUALKEYBOARD) 'itrans_bengali.kvks'
+store(©RIGHT) '©sanskritdocuments.org'
+
+begin Unicode > use(main)
+group(main) using keys
+
+c  Set Hindi mode by default (implict word ending `a`)
+
+store(opt1) 'hindi'
++ [RCTRL RALT K_0]	>	set(opt1='0') 
++ [RCTRL RALT K_1]	>	reset(opt1)
+
+c 	Special Symbols
++ "#"	>	"ওঁ"
++ "$"	>	"₹" c Indian Rupee Sign
++ "%"	>	U+0FD5	c ࿕ Right-Facing Svasti Sign
++ "*"	>	"❀"
++ "&"	>	"☸"
++ "V"	>	"ঽ"	c Bengali Avagraha
++ "Q"	>	"৺" c Bengali Isshar
++ "W"	>	"ঀ" c Bengali Anji
++ "E"	>	"◌৾" c Bengali Sandhi Mark - not supported in Fonts
++ "Z"	>	"৲" c Bengali Rupee Mark
++ "X"	>	"৻" c Bengali Ganda Mark
++ "F"	>	"৳" c Bangladeshi taka
+
+c 	Common VEDIC MARKS
+"'" + "'"	>	U+0951	c Devanagari Stress Sign Datta - Svarita
+U+0951 + "'"	>	U+1CDA	c Vedic Tone Double Svarita
+U+1CDA + "'"	>	U+1CDB	c Vedic Tone Triple Svarita
+"`" + "`"	>	U+0952	c Devanagari Stress Sign Anudatta
+"ঁ" + "^"	>	"ৼ"	c Bengali Letter Vedic Anusvara - MM^
+"=" + "="	>	"ᳶ"	c Vedic Sign Upadhmaniya     
+
+c Special Marks
++ "_"	>	U+200C	c Zero-Width Non-Joiner
++ "+"	>	U+200D	c Zero-Width Joiner
++ "^"	>	"্"	c Bengali Sign Virama
+
+c 	Punctuation
+store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" "`" "{" "}" '"' "," "." "=" "\" "<" ">" "|" "[" "]"
++ any(Punctuation)	>	index(Punctuation,1)
+
++ "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
++ "@"	>	"@" 
+
+"," + ","	>	"৽"	c	Bengali Abbreviation Sign
+"." + "."	>	"।"	c twice for Devanagari Danda
+"।" + "."	>	"॥"	c thrice for Devanagari Double Danda
+"॥" + "."	>	U+2026	c four dots for a Horizontal Ellipsis
+
+"-" + "-"	>	U+2013	c hyphen twice for En Dash
+U+2013 + "-"	>	U+2014	c three times for Em Dash
+
+c 	numbers - Bengali DigitsU
+store(Digits)	"0"	"1"	"2"	"3"	"4"	"5"	"6"	"7"	"8"	"9"
+store(DigitsU)	"০"	"১"	"২"	"৩"	"৪"	"৫"	"৬"	"৭"	"৮"	"৯"
++ any(Digits)	>	index(DigitsU,1)
+any(DigitsU) + [K_BKSP]	>	index(Digits,1)
+
+c  standalone vowel signs with @
+"@" + "A"	>	"া"
+"@" + "i"	>	"ি"
+"@" + "I"	>	"ী"
+"@" + "u"	>	"ু"
+"@" + "U"	>	"ূ"
+"@" + "e"	>	"ে"
+"@" + "o"	>	"ো"
+"@" + "a"	>	"@a"
+"@a" + "a"	>	"া"
+"@a" + "i"	>	"ৈ"
+"@a" + "u"	>	"ৌ"
+"ি" + "i"	>	"ী"
+"ু" + "u"	>	"ূ"
+"ে" + "e"	>	"ী"
+"ে" + "i"	>	"ৈ"
+"ো" + "o"	>	"ূ"
+"ো" + "u"	>	"ৌ"
+"@" + "R"	>	"ৃ"
+"ৃ" + "R"	>	"ৃ" c @RR
+"ৃ" + "^"	>	"ৄ" c @RR^
+"@" + "L"	>	"ৢ"
+"ৢ" + "L"	>	"ৢ" c @LL
+"ৢ" + "^"	>	"ৣ" c @LL^
+
++ "O"	>	"ৗ"
+
+c  Independent Vowels
++ "a"	>	"অ"
+"অ" + "a"	>	"আ"
++ "A"	>	"আ"
++ "i"	>	"ই"
+"ই" + "i"	>	"ঈ"
++ "I"	>	"ঈ"
++ "u"	>	"উ"
+"উ" + "u"	>	"ঊ"
+"ও" + "o"	>	"ঊ"
++ "U"	>	"ঊ"
++ "e"	>	"এ"
+"অ" + "e"	>	"ઍ"
+"অ" + "i"	>	"ঐ"
+"এ" + "i"	>	"ঐ"
++ "o"	>	"ও"
+"অ" + "u"	>	"ঔ"
+"ও" + "u"	>	"ঔ"
++ "L"	>	"ঌ" c also LL
++ "R"	>	"ঋ" c also RR
+"ঋ" + "R"	>	"ঋ" c RR
+"ঋ" + "^"	>	"ৠ" c RR^
+"ঌ" + "L"	>	"ঌ" c LL
+"ঌ" + "^"	>	"ৡ" c LL^
+
+c  Vowel Modifiers
++ "H"	>	"ঃ" c VISARGA - H
++ "M"	>	"ং" c ANUSVARA - M
+"ং" + "M"	>	"ঁ"	c CHANDRABINDU - MM
+
+c  Consonants
++ "b"	>	"ব্"
++ "B"	>	"ভ্"
++ "c"	>	"চ্"
++ "C"	>	"ছ্"
++ "d"	>	"দ্"
++ "D"	>	"ড্"
++ "g"	>	"গ্"
++ "G"	>	"ঘ্"
++ "h"	>	"হ্"
++ "j"	>	"জ্"
++ "J"	>	"ঝ্"
++ "k"	>	"ক্"
++ "K"	>	"খ্"
++ "l"	>	"ল্"
++ "m"	>	"ম্"
++ "n"	>	"ন্"
++ "N"	>	"ণ্"
++ "p"	>	"প্"
++ "P"	>	"ফ্"
++ "r"	>	"র্"
++ "s"	>	"স্"
++ "S"	>	"ষ্"
++ "t"	>	"ত্"
++ "T"	>	"ট্"
++ "x"	>	"ক্ষ্"
++ "y"	>	"য্"
++ "Y"	>	"ঞ্"
++ "f"	>	"ফ্"
++ "v"	>	"ব্" c same as ba
++ "q"	>	"ৰ্" c Assamese letter ra
++ "w"	>	"ৱ্" c Assamese letter wa
++ "z"	>	"ৎ" c Bengali Letter Khanda Ta
+
+c  alternate mapping with ~
+"~" + "n"	>	"ঞ্"
+"~" + "N"	>	"ঙ্"
+
+c  add h to consonants
+"ক্" + "h"	>	"খ্"
+"গ্" + "h"	>	"ঘ্"
+"চ্" + "h"	>	"চ্" c same c=ch
+"ছ্" + "h"	>	"ছ্" c same C=Ch
+"জ্" + "h"	>	"ঝ্"
+"ট্" + "h"	>	"ঠ্"
+"ড্" + "h"	>	"ঢ্"
+"ত্" + "h"	>	"থ্"
+"দ্" + "h"	>	"ধ্"
+"প্" + "h"	>	"ফ্"
+"ব্" + "h"	>	"ভ্"
+"ষ্" + "h"	>	"ষ্" c same S=Sh
+"স্" + "h"	>	"শ্"
+
+c  special combinations
+$keymanonly: if(opt1 = '0') "ন্" + "k"	>	"ঙ্ক্"
+$keymanonly: if(opt1 = '0') "ন্" + "g"	>	"ঙ্গ্"
+$keymanonly: if(opt1 = '0') "ন্" + "c"	>	"nc"
+$keymanonly: if(opt1 = '0') "nc" + "h"	>	"ঞ্চ্"	c nch
+$keymanonly: if(opt1 = '0') "ন্" + "j"	>	"ঞ্জ্"
+"ঘ্" + "Y"	>	"জ্ঞ্"	c	GY
+"শ্" + "r"	>	"শ্র্"	c	shr
+"ণ্" + "g"	>	"ঙ্"	c	Ng
+
+c nukta with preceding dot
+c Don't use precomposed forms
+"." + "y" > "য়্"
+"." + "D" > "ড়্"
+"ড়্" + "h" > "ঢ়্"
+
+c  Rules for Consonants + Vowel Signs
+store(Vyanjana) 'কক্ষখগঘঙচছজজ্ঞঝঞটঠডঢণতথদধনপফবভমযরলળবশ্রষসহ' 'ૹ' "ৰ" "ৱ"
+store(NuktaVyanjana) 'ডঢয'
+store(ViramaMaatraa) 'eiouAIRULO'
+store(ViramaMaatraaU) "ে" "ি" "ো" "ু" "া"  "ী"  "ৃ" "ূ" "ৢ" "ৗ"
+store(aPlusMaatraa) 'aiu'
+store(aPlusMaatraaU) "া" "ৈ" "ৌ" 
+
+c 	implicit akaara deletion for Hindi mode 
+store(opt1endings) outs(Punctuation) ' '
+
+$keymanonly: if(opt1 = 'hindi') any(Vyanjana)"্" + any(opt1endings)	> index(Vyanjana,2) index(opt1endings,4)
+any(Vyanjana) + "^"	>	index(Vyanjana,1)"্"U+200C
+any(Vyanjana)"্" + "^"	>	index(Vyanjana,1)"্" U+200C
+any(Vyanjana)"্" + "a"	>	index(Vyanjana,1)
+any(Vyanjana) + any(aPlusMaatraa) >	context index(aPlusMaatraaU,2) 
+any(Vyanjana)"্" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana)"ি" + "i"	>	index(Vyanjana,1)"ী"	c ii
+any(Vyanjana)"ু" + "u"	>	index(Vyanjana,1)"ূ"	c uu
+any(Vyanjana)"ে" + "e"	>	index(Vyanjana,1)"ী"	c ee
+any(Vyanjana)"ে" + "i"	>	index(Vyanjana,1)"ৈ"	c ei
+any(Vyanjana)"ো" + "o"	>	index(Vyanjana,1)"ূ"	c oo
+any(Vyanjana)"ো" + "u"	>	index(Vyanjana,1)"ৌ"	c ou
+
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana)"়" "্" + any(opt1endings)	>	index(NuktaVyanjana,2)"়" index(opt1endings,5)
+any(NuktaVyanjana)"়""্" + "a"	>	index(NuktaVyanjana,1)"়"
+any(NuktaVyanjana)"়" + any(aPlusMaatraa) >	context index(aPlusMaatraaU,3) 
+any(NuktaVyanjana)"়""্" + any(ViramaMaatraa) > index(NuktaVyanjana,1)"়" index(ViramaMaatraaU,4) 
+any(NuktaVyanjana)"়""ি" + "i"	>	index(NuktaVyanjana,1)"়""ী"	c ii
+any(NuktaVyanjana)"়""ু" + "u"	>	index(NuktaVyanjana,1)"়""ূ"	c uu
+any(NuktaVyanjana)"়""ে" + "e"	>	index(NuktaVyanjana,1)"়""ী"	c ee
+any(NuktaVyanjana)"়""ে" + "i"	>	index(NuktaVyanjana,1)"়""ৈ"	c ei
+any(NuktaVyanjana)"়""ো" + "o"	>	index(NuktaVyanjana,1)"়""ূ"	c oo
+any(NuktaVyanjana)"়""ো" + "u"	>	index(NuktaVyanjana,1)"়""ৌ"	c ou
+
+c  EOF
