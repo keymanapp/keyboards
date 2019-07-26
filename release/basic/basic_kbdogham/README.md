@@ -12,6 +12,7 @@ Ogham Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdogham
 
 Supported Platforms
 -------------------
