@@ -1,6 +1,10 @@
 SIL IPA Keyboard Change History
 =======================
 
+1.7 (28 Feb 2018)
+-------------------
+* Added options key to support typing modifier before instead of after
+
 1.6 (27 Mar 2018)
 -------------------
 * Added mobile layout

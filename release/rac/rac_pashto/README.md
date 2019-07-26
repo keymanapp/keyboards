@@ -2,7 +2,7 @@ Rachitrali-Pashto Keyboard Data
 -------------------------------
 
 Copyright:      (C) 2019 Rehmat Aziz Chitrali
-Version:        1.0
+Version:        1.0.1
 
 Description
 -----------
