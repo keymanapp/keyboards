@@ -10,6 +10,7 @@ Croatian/Slovenian Basic Change History
 ----------------                            
 * Initial mobile layout - Slovenian                     
 * Initial mobile layout - Croatian    
+* Initial mobile layout - Bosnian    
                                           
 1.0 (2009-05-15)                            
 ----------------------                      
