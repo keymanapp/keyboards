@@ -18,10 +18,10 @@ Currently
 
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
 <p>~a will produce ã (available on aAiInNoOuU).</p>
-<p>'a will produce á (available on aAcCeEgGhHiIjJoOsSuUwWyY).</p>
+<p>´a will produce á (available on aAcCeEiIoOsSuUwWyYǻǺǽǼǿǾ).</p>
 <p>`a will produce à (available on aAeEiIoOuUwWyY).</p>
-<p>¨a will produce ä (available on aAeEiIoOuUyY).</p>
-<p>^a will produce ä (available on aAcCeEgGhHiIjJoOsSuUwWyY).</p>
+<p>¨a will produce ä (available on aAeEiIoOuUwWyY).</p>
+<p>^a will produce â (available on aAcCeEgGhHiIjJoOsSuUwWyY).</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
