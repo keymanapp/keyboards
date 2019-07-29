@@ -9,12 +9,12 @@ c Run by: Makara SOK
 
 store(&VERSION) '10.0'
 store(&NAME) 'Osmanya Basic'
-store(&Targets) "windows macosx linux web"
 store(&VISUALKEYBOARD) 'basic_kbdosm.kvks'
 store(&BITMAP) 'basic_kbdosm.ico'
 store(&LAYOUTFILE) 'basic_kbdosm.keyman-touch-layout'
 store(&COPYRIGHT) '© 2019 SIL International'
 store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
@@ -172,4 +172,5 @@ group(main) using keys
 + [K_oE2] > U+005c
 + [SHIFT K_oE2] > U+007c
 
-
+store(unused)   [K_P] [K_V] [SHIFT K_P] [SHIFT K_V] 
++ any(unused)   > nul
