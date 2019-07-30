@@ -12,6 +12,7 @@ Persian (Standard) Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdfar
 
 Supported Platforms
 -------------------
