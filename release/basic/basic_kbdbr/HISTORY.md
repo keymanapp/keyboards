@@ -10,6 +10,7 @@ Portuguese (Brazilian) Basic Change History
 ----------------
 * Initial mobile layout for Portuguese (Brazilian ABNT2)
 * Initial mobile layout for Portuguese (Brazilian ABNT)
+* Initial mobile layout for brazilian_portuguese
 
 1.0 (2009-05-15)
 ----------------------
