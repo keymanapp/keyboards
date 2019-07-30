@@ -1,6 +1,10 @@
 The MIT License (MIT)
 
+<<<<<<< HEAD:release/nlci/nlci_ipa/LICENSE.md
 Copyright (c) 2002-2019 NLCI, Bangalore
+=======
+Copyright (c) 2002-2019 NLCI Bangalore,
+>>>>>>> ca7d04105335eed111c30d651f2b77102cf751f4:release/nlci/nlci_kannada_winscript/LICENSE.md
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -76,12 +76,14 @@ function build_keyboards {
     # depends on files created by the keyboards
     #
     
-    if [ -d "$KEYBOARDROOT/$group/packages" ]; then
-      echo "- $ACTION_VERB $group/packages"
-      local package
-      for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
-        build_keyboard "$group" "$package"
-      done
+    if [[ -z "$PROJECT_TARGET_TYPE" ]]; then
+      if [ -d "$KEYBOARDROOT/$group/packages" ]; then
+        echo "- $ACTION_VERB $group/packages"
+        local package
+        for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
+          build_keyboard "$group" "$package"
+        done
+      fi
     fi
   fi
   
@@ -185,6 +187,11 @@ function build_keyboard {
     return 0
   fi
   
+  if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
+    popd
+    return 0
+  fi
+
   #
   # Copy the documentation file manually
   #
@@ -203,7 +210,7 @@ function build_keyboard {
   if [ -n "$keyboard_info_jsFilename" ]; then test -f "build/$keyboard_info_jsFilename" || die "Could not find output file build/$keyboard_info_jsFilename"; fi
   if [ -n "$keyboard_info_documentationFilename" ]; then test -f "build/$keyboard_info_documentationFilename" || die "Could not find output file build/$keyboard_info_documentationFilename"; fi
     
-  merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname $base_keyboard || die "Failed to merge keyboard_info for $base_keyboard"
+  merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname "$base_keyboard" || die "Failed to merge keyboard_info for $base_keyboard"
     
   #
   # Back to root of repo
@@ -275,14 +282,22 @@ function build_release_keyboard {
   if [[ -d build ]]; then
     rm -rf build/ || die
   fi
-  
+
   if [[ ! -z "$FLAG_CLEAN" ]]; then
+    # We only remove the tests folder when cleaning the repo
+    if [[ -d tests ]]; then
+      rm -rf tests/ || die
+    fi
     return 0
   fi
   
   # Recreate build folder
   
   mkdir build || die "Failed to create build folder for $keyboard"
+
+  if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
+    PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
+  fi
   
   $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
   
