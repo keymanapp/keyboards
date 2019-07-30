@@ -1,7 +1,7 @@
 ﻿store(&NAME) 'Aksara Bali Unicode'
 store(&TARGETS) 'windows macosx linux desktop web'
 store(&COPYRIGHT) '© 2019 The PanLex Project of The Long Now Foundation'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&MESSAGE) 'Aksara Bali Unicode, based on Bali Simbar'
 store(&BITMAP) 'aksarabali_panlex.ico'
 store(&VISUALKEYBOARD) 'aksarabali_panlex.kvks'
@@ -46,6 +46,7 @@ store(dvowel_back)      'ᬸᭀ'
 
 store(vowel_key)  [CTRL SHIFT K_A] [CTRL SHIFT K_E] [CTRL SHIFT K_I] [CTRL SHIFT K_O] [CTRL SHIFT K_U]
 store(vowel)      'ᬅᬏᬇᬑᬉ'
+store(vowel_all)  outs(vowel) 'ᬍᬎᬋᬌ'
 
 store(punc_key) [SHIFT K_SPACE] [K_COMMA] [CTRL K_COMMA] [K_PERIOD] [CTRL K_PERIOD] [SHIFT K_COLON] \
                 [K_HYPHEN] [SHIFT K_HYPHEN] [SHIFT K_COMMA] [SHIFT K_PERIOD] [CTRL ALT K_O] \
@@ -69,8 +70,8 @@ store(cons)             outs(cons_main) 'ᬔᬙᬛᬞᬟᬠᬣᬥᭅᭆᭇᭈᭊ
 store(vmark)            outs(dvowel) $tedong $candra $ricem $rerekan
 store(mark)             outs(vmark) $cecek $surang
 store(mark_all)         outs(mark) $bisah $adeg $zwnj
-store(cons_vowel_vmark) outs(cons) outs(vowel) outs(vmark)
-store(cons_vowel_mark)  outs(cons) outs(vowel) outs(mark)
+store(cons_vowel_vmark) outs(cons) outs(vowel_all) outs(vmark)
+store(cons_vowel_mark)  outs(cons) outs(vowel_all) outs(mark)
 
 store(indep_key) outs(vowel_key) outs(punc_key) outs(numeral_key)
 store(indep)     outs(vowel)     outs(punc)     outs(numeral)
