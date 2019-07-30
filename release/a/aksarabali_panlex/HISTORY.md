@@ -3,7 +3,7 @@ Aksara Bali Unicode Keyboard Change History
 
 1.0.2 (29 July 2019)
 
-* Allow surang/cecek/bisah input after ra repa and la lenga
+* Allow surang/cecek/bisah input after all independent vowel characters
 
 1.0.1 (23 July 2019)
 
