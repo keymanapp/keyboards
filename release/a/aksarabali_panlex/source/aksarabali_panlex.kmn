@@ -1,7 +1,7 @@
 ﻿store(&NAME) 'Aksara Bali Unicode'
 store(&TARGETS) 'windows macosx linux desktop web'
 store(&COPYRIGHT) '© 2019 The PanLex Project of The Long Now Foundation'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '1.0.3'
 store(&MESSAGE) 'Aksara Bali Unicode, based on Bali Simbar'
 store(&BITMAP) 'aksarabali_panlex.ico'
 store(&VISUALKEYBOARD) 'aksarabali_panlex.kvks'
@@ -41,6 +41,7 @@ store(dvowel_short_key) [K_E] [SHIFT K_E] [K_I] [K_O] [K_U]
 store(dvowel_short)     'ᭂᬾᬶᭀᬸ'
 store(dvowel_key)       outs(dvowel_short_key) [SHIFT K_A] [CTRL SHIFT K_E] [SHIFT K_I] [SHIFT K_U]
 store(dvowel)           outs(dvowel_short)     'ᬵᬿᬷᬹ'
+store(dvowel_key_alt)   [ALT K_E] [ALT SHIFT K_E] [ALT K_I] [ALT K_O] [ALT K_U] [ALT SHIFT K_A] [ALT CTRL SHIFT K_E] [ALT SHIFT K_I] [ALT SHIFT K_U]
 store(dvowel_front)     'ᬶᬾ'
 store(dvowel_back)      'ᬸᭀ'
 
@@ -216,6 +217,7 @@ group(main) using keys
   + any(cons_key) > index(cons_main, 1) '?'
   '?' + any(indep_key) > index(indep, 2)
   + any(indep_key) > index(indep, 1)
+  + any(dvowel_key_alt) > index(dvowel, 1)
 
   c ha insertion
   $adeg + [K_A] > context $zwnj 'ᬳ' 
