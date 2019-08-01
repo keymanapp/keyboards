@@ -191,7 +191,23 @@ any(haroianylongvowel) U+0306 + [K_5] > context(1) context(2) U+0323
 
 
 c additional rules
+any(circumvowels) + [K_1]   > context(1) U+0301     c for i61 > î́
 any(circumvowels) + [K_2]   > context(1) U+0300     c for i62 > î̀
+any(circumvowels) + [K_3]   > context(1) U+0309     c for i63 > î̉
+any(circumvowels) + [K_4]   > context(1) U+0303     c for i64 > î̃
+any(circumvowels) + [K_5]   > context(1) U+0323     c for i65 > ị̂
+
+U+0114 + [K_1]   > context(1) U+0301     c for e81 > ĕ́
+U+0114 + [K_2]   > context(1) U+0300     c for e82 > ĕ̀ 
+U+0114 + [K_3]   > context(1) U+0309     c for e83 > ĕ̉ 
+U+0114 + [K_4]   > context(1) U+0303     c for e84 > ĕ̃ 
+U+0114 + [K_5]   > context(1) U+0323     c for e85 > ẹ̆ 
+U+0115 + [K_1]   > context(1) U+0301     c for E81 > Ĕ́ 
+U+0115 + [K_2]   > context(1) U+0300     c for E82 > Ĕ̀ 
+U+0115 + [K_3]   > context(1) U+0309     c for E83 > Ĕ̉ 
+U+0115 + [K_4]   > context(1) U+0303     c for E84 > Ĕ̃ 
+U+0115 + [K_5]   > context(1) U+0323     c for E85 > Ẹ̆
+
 any(gravevowels) + [K_5]    > context(1) U+0323     c for o25 > ọ̀
 
 c =======================================================================================================
