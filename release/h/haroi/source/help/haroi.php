@@ -65,27 +65,27 @@ Haroi Keyboard 1.0 is adapted from VNI.
 </tbody></table>
 
 <h2>Vowel Quality and Tone Marks</h2>
-<p>To get a vowel with both vowel quality and tone mark, press the vowel then the number for vowel quality (i.e. 6, 7 or 8) then the number for tone mark (i.e. 1, 2, ,3 ,4 or 5). Some combinations are not possible (i.e. i61 > î1).</p>
+<p>To get a vowel with both vowel quality and tone mark, press the vowel then the number for vowel quality (i.e. 6, 7 or 8) then the number for tone mark (i.e. 1, 2, ,3 ,4 or 5).</p>
 <p>For example:</p>
 <ul style="font-family:'Charist SIL';">
 <li>a + 6 + 1 = ấ, a + 6 + 2 = ầ, a + 6 + 3= ẩ, a + 6 + 4= ẫ, a + 6 + 5 = ậ </li> 
 <li>e + 6 + 1 = ế, e + 6 + 2 = ề, e + 6 + 3= ể, e + 6 + 4= ễ, e + 6 + 5 = ệ </li> 
-<li>i + 6 + 1 = î1, i + 6 + 2 = î̀, i + 6 + 3= î3, i + 6 + 4= î4, i + 6 + 5 = î5 </li> 
+<li>i + 6 + 1 = î́, i + 6 + 2 = î̀, i + 6 + 3= î̉, i + 6 + 4= î̃, i + 6 + 5 = ị̂ </li> 
 <li>o + 6 + 1 = ố, o + 6 + 2 = ồ, o + 6 + 3= ổ, o + 6 + 4= ỗ, o + 6 + 5 = ộ </li> 
-<li>u + 6 + 1 = û1, u + 6 + 2 = û̀, u + 6 + 3= û3, u + 6 + 4= û4, u + 6 + 5 = û5 </li> 
+<li>u + 6 + 1 = û́, u + 6 + 2 = û̀, u + 6 + 3= û̉, u + 6 + 4= û̃, u + 6 + 5 = ụ̂ </li> 
 <li>...etc, see the table below</li>
 </ul>
 <table width="300px" style="text-align:center; border:1px solid; font-family:'Charist SIL';">
 <thead style="font-weight: bold; background-color: grey;"><tr style="text-align:center;"><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead><tbody>
  <tr><td style="font-weight: bold; background-color: grey;">a6</td><td>ấ</td><td>ầ</td><td>ẩ</td><td>ẫ</td><td>ậ</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">e6</td><td>ế</td><td>ề</td><td>ể</td><td>ễ</td><td>ệ</td></tr>
- <tr><td style="font-weight: bold; background-color: grey;">i6</td><td>î1</td><td>î̀</td><td>î3</td><td>î4</td><td>î5</td></tr>
+ <tr><td style="font-weight: bold; background-color: grey;">i6</td><td>î́</td><td>î̀</td><td>î̉</td><td>î̃</td><td>ị̂</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">o6</td><td>ố</td><td>ồ</td><td>ổ</td><td>ỗ</td><td>ộ</td></tr>
- <tr><td style="font-weight: bold; background-color: grey;">u6</td><td>û1</td><td>û̀</td><td>û3</td><td>û4</td><td>û5</td></tr>
+ <tr><td style="font-weight: bold; background-color: grey;">u6</td><td>û́</td><td>û̀</td><td>û̉</td><td>û̃</td><td>ụ̂</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">o7</td><td>ớ</td><td>ờ</td><td>ở</td><td>ỡ</td><td>ợ</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">u7</td><td>ứ</td><td>ừ</td><td>ử</td><td>ữ</td><td>ự</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">a8</td><td>ắ</td><td>ằ</td><td>ẳ</td><td>ẵ</td><td>ặ</td></tr>
- <tr><td style="font-weight: bold; background-color: grey;">e8</td><td>ĕ1</td><td>ĕ2</td><td>ĕ3</td><td>ĕ4</td><td>ĕ5</td></tr>
+ <tr><td style="font-weight: bold; background-color: grey;">e8</td><td>ĕ́</td><td>ĕ̀</td><td>ĕ̉</td><td>ĕ̃</td><td>ẹ̆</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">i8</td><td>ĭ́</td><td>ĭ̀</td><td>ĭ̉</td><td>ĭ̃</td><td>ị̆</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">o8</td><td>ŏ́</td><td>ŏ̀</td><td>ŏ̉</td><td>ŏ̃</td><td>ọ̆</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">u8</td><td>ŭ́</td><td>ŭ̀</td><td>ŭ̉</td><td>ŭ̃</td><td>ụ̆</td></tr>
@@ -128,4 +128,3 @@ Haroi Keyboard 1.0 is adapted from VNI.
  <tr><td style="font-weight: bold; background-color: grey;">u68</td><td>û̆́</td><td>û̆̀</td><td>û̆̉</td><td>û̆̃</td><td>ụ̂̆</td></tr>
  <tr><td style="font-weight: bold; background-color: grey;">u78</td><td>ư̆́</td><td>ư̆̀</td><td>ư̆̉</td><td>ư̆̃</td><td>ự̆</td></tr>
 </tbody></table>
-
