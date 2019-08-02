@@ -1,6 +1,11 @@
 Aksara Bali Unicode Keyboard Change History
 ===========================================
 
+1.0.3 (1 August 2019)
+---------------------
+
+* Add support for inserting dependent vowel marks anywhere by adding ALT to regular keystroke
+
 1.0.2 (29 July 2019)
 --------------------
 
