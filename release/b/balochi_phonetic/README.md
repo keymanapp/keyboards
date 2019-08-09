@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Balochi Phonetic
 * Copyright:      (C) 2017-2019 SIL International
-* Version:        1.1.2
+* Version:        1.2
 * Keyman Version: 9.0
 * BCP-47 codes:   bcc-Arab
 
