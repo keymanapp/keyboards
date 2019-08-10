@@ -12,6 +12,7 @@ Phags-pa Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdphags
 
 Supported Platforms
 -------------------
