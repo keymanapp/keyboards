@@ -1,6 +1,10 @@
 Nłeʔkepmxcin Change History
 ============================
 
+9.2 (28 Jun 2019)
+-----------------
+* Changed rules to use canonical ordering with U+0323
+
 9.1 (8 Oct 2018)
 -----------------
 * Merged Desktop, Web and mobile keyboards

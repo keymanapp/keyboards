@@ -10,6 +10,8 @@
 
 function display_usage {
   echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [target]"
+  echo "  target should be a folder, for example: release, or release/k, or release/k/keyboard"
+  echo "  (on keyboards_starter repo, target is not necessary)"
   exit 1
 }
 
@@ -102,6 +104,9 @@ else
       group=$(cut -d / -f 1 <<< "$TARGET")
       echo "--- Only building $group $TARGET ---"
       build_keyboard $group "$TARGET"
+    elif [[ "$TARGET" == */* ]] && [[ (-d "$TARGET") ]]; then
+      echo "--- Only building $TARGET ---"
+      build_keyboard_group "$TARGET"
     elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "legacy" ]] || [[ "$TARGET" == "experimental" ]]; then
       # Assuming release|legacy|experimental
       echo "--- Only building $TARGET ---"

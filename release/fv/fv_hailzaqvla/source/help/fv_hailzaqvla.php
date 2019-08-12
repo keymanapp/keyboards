@@ -37,5 +37,6 @@ This keyboard is designed for the <b>Haiɫzaqvla</b> language of the BC Coast re
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet'>
+<div id='osk-tablet' data-states='default shift numeric'></div>
+
 </div>
