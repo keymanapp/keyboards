@@ -3,7 +3,7 @@ store(&NAME) 'Balochi Phonetic'
 store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'balochi_phonetic.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.1.2'
+store(&KEYBOARDVERSION) '1.2'
 store(&ETHNOLOGUECODE) 'bcc'
 store(&COPYRIGHT) '© 2017-2019 SIL International'
 store(&MESSAGE) 'The Balochi Phonetic keyboard is distributed under The MIT License (MIT).'
@@ -15,9 +15,23 @@ store(&BITMAP) 'balochi_phonetic.ico'
 begin Unicode > use(main)
 
 group(main) using keys
-
-+ [K_BKSLASH] > dk(005c)
-     
++ [CTRL K_0] > '۰'
++ [CTRL K_9] > '۹'
++ [CTRL K_8] > '۸'
++ [CTRL K_7] > '۷'
++ [CTRL K_6] > '۶'
++ [CTRL K_5] > '۵'
++ [CTRL K_4] > '۴'
++ [CTRL K_3] > '۳'
++ [CTRL K_2] > '۲'
++ [CTRL K_1] > '۱'
++ [K_SLASH] > '/'
++ [K_BKSLASH] > '‍'
++ [K_HYPHEN] > '-'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_QUOTE] > '"'
++ [K_QUOTE] > U+0027
++ "Y" > nul
 + [K_O] > 'ُ'
 + [SHIFT K_O] > 'ْ'
 + [K_BKQUOTE] > 'ء'
@@ -98,12 +112,3 @@ group(main) using keys
 + [K_D] > 'د'
 + [K_S] > 'س'
 + [K_A] > 'ا'
-
-match > use(deadkeys)
-
-group(deadkeys) 
-
-c Backslash + number = extended Arabic-Indic number
-store(dkf005c) U+0020 U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 
-store(dkt005c) U+005c U+06F0 U+06F1 U+06F2 U+06F3 U+06F4 U+06F5 U+06F6 U+06F7 U+06F8 U+06F9  
-dk(005c) any(dkf005c) > index(dkt005c, 2)
