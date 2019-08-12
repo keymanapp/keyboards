@@ -11,9 +11,20 @@ menu item. Similar keyboards are also available for other desktop and mobile pla
 
 <br/>
 
-<h2>Keyboard Layout</h2>
-<div id='osk'>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift ctrl'>
 </div>
+
+<h2>Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift'>
+</div>
+
+<h2>Phone Keyboard Layout</h2>
+<div id='osk-phone' data-states='default shift numeric'>
+</div>
+
+<p>For Android and iOS, you may use long press key combinations.</p>
+
 
 
 <h2>History</h2>
