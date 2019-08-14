@@ -12,6 +12,7 @@ Russian - Mnemonic Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdrum
 
 Supported Platforms
 -------------------
