@@ -8,7 +8,7 @@
 
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 
-<p>This keyboard use five deakeys, such as: <kbd class="key">ц</kbd>	<kbd class="key">Ц</kbd>	<kbd class="key">й</kbd>	<kbd class="key">Й</kbd>	<kbd class="key">с</kbd>	<kbd class="key">С</kbd>	<kbd class="key">ы</kbd>	<kbd class="key">Ы</kbd>	and <kbd class="key">¨</kbd>. Press one of these keys and then another key to produce the desired output. For instance, press <kbd class="key">ц</kbd> and then the <kbd class="key">Space</kbd> to get ц; press <kbd class="key">ц</kbd> and then <kbd class="key">х</kbd> to get ч etc. Please see the tables below for a complete combination.</p>
+<p>This keyboard uses five deadkeys, such as: <kbd class="key">ц</kbd>	<kbd class="key">Ц</kbd>	<kbd class="key">й</kbd>	<kbd class="key">Й</kbd>	<kbd class="key">с</kbd>	<kbd class="key">С</kbd>	<kbd class="key">ы</kbd>	<kbd class="key">Ы</kbd>	and <kbd class="key">¨</kbd>. Press one of these keys and then another key to produce the desired output. For instance, press <kbd class="key">ц</kbd> and then the <kbd class="key">Space</kbd> to get ц; press <kbd class="key">ц</kbd> and then <kbd class="key">х</kbd> to get ч etc. Please see the tables below for a complete combination.</p>
 
 <table>
 <thead><tr><th></th><th><kbd class="key">Space</kbd></th><th><kbd class="key">х</kbd></th><th><kbd class="key">Х</kbd></th></tr></thead><tbody>
