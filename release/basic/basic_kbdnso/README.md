@@ -12,6 +12,7 @@ Setswana Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdnso
 
 Supported Platforms
 -------------------
