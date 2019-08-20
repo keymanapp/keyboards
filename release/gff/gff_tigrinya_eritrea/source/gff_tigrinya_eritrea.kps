@@ -1,57 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.961.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>11.0.1352.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
+    <GraphicFile>sideimage-tir-ER.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
-    <Folder></Folder>
-    <Items/>
+    <Folder>GFF Tigrinya-Eritrean Keyboard</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Welcome</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Tigriyna-ER Keyboard</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Tigrinya Keyboard Manual</Name>
+        <FileName>TigrinyaErTyping-English.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>OFL (Abyssinica SIL &amp; Brana Licence)</Name>
+        <FileName>OFL.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>GPL (WashRa + Free Serif Licence)</Name>
+        <FileName>GNU-GPLv2.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Tigrinya</Name>
-    <Copyright URL="">2009-2017 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:yacob@geez.org"></Author>
-    <WebSite URL=""></WebSite>
+    <Name URL="">GFF Tigrinya-Eritrean Keyboard</Name>
+    <Copyright URL="">2009-2019 Ge'ez Frontier Foundation</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
     <File>
       <Name>TigrinyaErTyping-English.pdf</Name>
       <Description>File TigrinyaErTyping-English.pdf</Description>
@@ -71,17 +80,149 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>AbyssinicaSIL-R.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</Name>
       <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>FreeSerif.otf</Name>
+      <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
+      <Description>Font Brana Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\EthiopicUnicodeItalic.ttf</Name>
+      <Description>Font Ethiopic Unicode Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\EthiopicUnicodeNormal.ttf</Name>
+      <Description>Font Ethiopic Unicode Normal</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
+      <Description>Font Ethiopic Fantuwua</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\FreeSerif.otf</Name>
       <Description>Font FreeSerif</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\goffer.ttf</Name>
+      <Description>Font Ethiopic Yigezu Bisrat Goffer</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\hiwua.ttf</Name>
+      <Description>Font Ethiopic Hiwua</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\jiret.ttf</Name>
+      <Description>Font Ethiopia Jiret</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\jiretsl.ttf</Name>
+      <Description>Font Ethiopia Jiret Slant</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\tint.ttf</Name>
+      <Description>Font Ethiopic Tint</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\washrab.ttf</Name>
+      <Description>Font Ethiopic WashRa Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\washrabsl.ttf</Name>
+      <Description>Font Ethiopic WashRa Bold Slant</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\washrasb.ttf</Name>
+      <Description>Font Ethiopic WashRa SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\washrasbsl.ttf</Name>
+      <Description>Font Ethiopic WashRa SemiBold Slant</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\wookianos.ttf</Name>
+      <Description>Font Ethiopic Wookianos</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\yebse.ttf</Name>
+      <Description>Font Ethiopic Yebse</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\GNU-GPLv2.txt</Name>
+      <Description>File GNU-GPLv2.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\gff\readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>sideimage-tir-ER.bmp</Name>
+      <Description>File sideimage-tir-ER.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>ትግርኛ (Tigrinya)</Name>
+      <ID>gff_tigrinya_eritrea</ID>
+      <Version>1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ti-Ethi-ER">Tigrinya (Ethiopic, Eritrea)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
