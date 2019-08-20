@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Book Layout</title>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="http://www.turnjs.com/lib/turn.min.js"></script>
+  <link rel="stylesheet" href="css/style.1.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="container">
+            <div id="flipbook">
+                <!-- <div class="hard"> Turn.js </div> 
+                <div class="hard"></div> -->
+                <div>
+                    <section class="open-book-1">
+                            <header>
+                                <h1>Mozhi Spec</h1>
+                                <h6></h6>
+                            </header>
+                            <article>
+                                <h2 class="chapter-title">Mozhi Spec ver 2.0</h2>
+                                <h6></h6>
+                                <p>
+                                    description of Mozhi specification. Sublime Text 2 was opened and a new document was created. "I love this time of year," Erin gleefully thought to herself.
+                                </p>
+                            </article>
+                            <footer>
+                                <ol id="page-numbers">
+                                    <li>1</li>
+                                </ol>
+                            </footer>
+                    </section>
+                </div>
+                <div>
+                        <section class="open-book-1">
+                                <header>
+                                    <h1></h1>
+                                    <h6>Cibu C. J.</h6>
+                                </header>
+                                <article>
+                                    <h2 class="chapter-title">The Mozhi Philosophy</h2>
+                                    <p>
+                                        description of Mozhi specification. Sublime Text 2 was opened and a new document was created. "I love this time of year," Erin gleefully thought to herself.
+                                    </p>
+                                </article>
+                                <footer>
+    
+                                </footer>
+                        </section>
+                    </div>
+            </div>
+    </div>
+<script type="text/javascript">
+$("#flipbook").turn({
+    // width: 400,
+    // height: 300,
+    autoCenter: true
+});
+</script>  
+
+</body>
+
+</html>
