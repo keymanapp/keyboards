@@ -23,7 +23,7 @@
 <br>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift shift-ctrl'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
