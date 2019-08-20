@@ -8,6 +8,8 @@
 
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 
+<p>Setswana Basic keyboard makes use of SHIFT+RALT keys which are set by default when Keyman is installed. To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off". Either change the hotkey or turn it off. Do the same for "Open Keyboard Menu" and for "Open Language Switcher".</p>
+
 <p>This keyboard uses five deadkeys, such as: <kbd class="key">^</kbd>	<kbd class="key">`</kbd>	<kbd class="key">~</kbd>	<kbd class="key">'</kbd>	and <kbd class="key">"</kbd>. Press one of these keys and then another key to produce the desired output. For instance, press <kbd class="key">^</kbd> and then the <kbd class="key">Space</kbd> to get ^; press <kbd class="key">^</kbd> and then <kbd class="key">a</kbd> to get â etc. Please see the tables below for a complete combination. Unset key combinations are marked as "n/a".</p>
 
 <table>
