@@ -1,9 +1,9 @@
 Tāgizi Dene keyboard
 ======================
 
-Copyright (c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
+Copyright (c) 2008-2019 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
 
-Version 9.1
+Version 9.2
 
 Tāgizi Dene keyboard layout for Unicode
 
@@ -23,7 +23,3 @@ Supported Platforms
  * Web
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0323, U+0325 and U+0328)

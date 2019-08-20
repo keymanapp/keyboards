@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Balochi Urdu
-* Copyright:      (C) 2018 SIL International
-* Version:        1.0
+* Copyright:      (C) 2018-2019 SIL International
+* Version:        1.0.1
 * Keyman Version: 10.0
 * BCP-47 codes:   bcc-Arab bal-Arab bgn-Arab bgp-Arab
 

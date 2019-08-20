@@ -9,9 +9,16 @@
 #
 
 function display_usage {
-  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-t project_target] [target]"
+  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [target]"
+  echo "  target should be a folder, for example: release, or release/k, or release/k/keyboard"
+  echo "  (on keyboards_starter repo, target is not necessary)"
   exit 1
 }
+
+#
+# Prevents 'clear' on exit of mingw64 bash shell
+#
+SHLVL=0
 
 # TODO: Test on macOS as well.
 # TODO: Copy the final keyboard_info.json to resources/
@@ -22,11 +29,11 @@ function display_usage {
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
-if [[ "${OSTYPE}" != "darwin"* ]]; then
-  KMCOMP_LAUNCHER=
-else
-  KMCOMP_LAUNCHER=wine
-fi
+case "${OSTYPE}" in
+  "cygwin") KMCOMP_LAUNCHER= ;;
+  "msys") KMCOMP_LAUNCHER= ;;
+  *) KMCOMP_LAUNCHER=wine ;;
+esac
 
 # Master json schema is from https://api.keyman.com/schemas/keyboard_info.json
 KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
@@ -93,10 +100,13 @@ if [[ $KEYBOARDS_STARTER == 1 ]]; then
   fi
 else
   if [[ "$TARGET" ]]; then
-    if [[ "$TARGET" == */* ]] && [[ (-d "$TARGET") ]]; then
+    if [[ "$TARGET" == */*/* ]] && [[ (-d "$TARGET") ]]; then
       group=$(cut -d / -f 1 <<< "$TARGET")
       echo "--- Only building $group $TARGET ---"
       build_keyboard $group "$TARGET"
+    elif [[ "$TARGET" == */* ]] && [[ (-d "$TARGET") ]]; then
+      echo "--- Only building $TARGET ---"
+      build_keyboard_group "$TARGET"
     elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "legacy" ]] || [[ "$TARGET" == "experimental" ]]; then
       # Assuming release|legacy|experimental
       echo "--- Only building $TARGET ---"
