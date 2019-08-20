@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="http://www.turnjs.com/lib/turn.min.js"></script>
+  <meta charset="utf-8">
+  <title>Turn JS</title>
+  <!-- <link href="http://www.turnjs.com/samples/basic/css/basic.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="book" class="sample-flipbook">
+  <hr />
+  <div id="text" style="visibility: hidden">
+    <div id="wrapper">
+      <div id="container">
+        <section class="open-book">
+          <header>
+            <h1>Mozhi Specification</h1>
+            <h6>Cibu C. J.</h6>
+          </header>
+          <article>
+            <h2 class="chapter-title">Mozhi Specification version 2.0</h2>
+            <p>Lorem ipsum dolor sit amet, sed probatus dissentias cu. Ex liber error vim. Habeo mollis cu qui, eu cum graeco scripta nostrum, est et delenit suscipit. Eius meliore iudicabit per in, pro numquam fabellas id.
+            </p>
+            <p>blablabla</p>
+            <p>blablabla1</p>
+            <p>blablabla2</p>
+            <p>blablabla4</p>
+            <p>blablabla5</p>
+            <p>blablabla6</p>
+            <p>blablabla7</p>
+          <p>
+        Ponderum gubergren adversarium pri ad. Mea ne veri scribentur. Nam populo conclusionemque te. Ad albucius voluptatum vix, cum id dicta facilis petentium. His no rebum vivendo. Per esse illum nihil eu, eos affert ceteros ne.
+          </p>
+          <p>
+        At mea nostro oportere reprimique. Vim veri facilisi deterruisset in, maiorum referrentur id mea. Vel eligendi euripidis ullamcorper eu. Vix eu veri primis sententiae, sumo eligendi conclusionemque ad his. Ea quando luptatum rationibus eam, et dico aliquid eloquentiam his. Mea primis intellegebat ne, ea regione equidem ullamcorper usu.
+          </p><p>
+        Mel in natum recusabo aliquando, tollit probatus qui in. Ex labore pertinax oportere ius, nobis iudico cu quo. Malis dicunt moderatius eum ex, quaeque consetetur duo ne. Ea veri inimicus mei, vim eu constituam consequuntur.
+          </p>
+          <p>
+        Per id ancillae efficiantur. Eam platonem recteque euripidis et. Usu tota dolore tibique id, id libris molestiae mel. Cu odio illud appareat mei. Quis vitae ne usu. Ut eos magna prima.</p>
+            <p>Lorem ipsum dolor sit amet, sed probatus dissentias cu. Ex liber error vim. Habeo mollis cu qui, eu cum graeco scripta nostrum, est et delenit suscipit. Eius meliore iudicabit per in, pro numquam fabellas id.
+          </p>
+          <p>
+        Ponderum gubergren adversarium pri ad. Mea ne veri scribentur. Nam populo conclusionemque te. Ad albucius voluptatum vix, cum id dicta facilis petentium. His no rebum vivendo. Per esse illum nihil eu, eos affert ceteros ne.
+          </p>
+          <p>
+        At mea nostro oportere reprimique. Vim veri facilisi deterruisset in, maiorum referrentur id mea. Vel eligendi euripidis ullamcorper eu. Vix eu veri primis sententiae, sumo eligendi conclusionemque ad his. Ea quando luptatum rationibus eam, et dico aliquid eloquentiam his. Mea primis intellegebat ne, ea regione equidem ullamcorper usu.
+          </p><p>
+        Mel in natum recusabo aliquando, tollit probatus qui in. Ex labore pertinax oportere ius, nobis iudico cu quo. Malis dicunt moderatius eum ex, quaeque consetetur duo ne. Ea veri inimicus mei, vim eu constituam consequuntur.
+          </p>
+          <p>
+        Per id ancillae efficiantur. Eam platonem recteque euripidis et. Usu tota dolore tibique id, id libris molestiae mel. Cu odio illud appareat mei. Quis vitae ne usu. Ut eos magna prima.</p>
+          </article>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var width = 1600,
+    height = 1600,
+    padding = 20;
+
+var div = $('<div />').css({
+  width: width / 2
+}).appendTo(document.body);
+
+
+var index = 0;
+var pages = [];
+var contents = $('#text').contents();
+console.log(contents.length);
+
+while (index < contents.length) {
+  var content = contents.eq(index).clone();
+  
+  div.append(content);
+  if (div.height() > height) {
+    content.remove();
+    pages.push(div.clone());
+    div.html('');
+  }
+  else if (index == contents.length - 1) {
+    pages.push(div.clone());
+    div.remove();
+    break;
+  }
+  else {
+    index++;
+  }
+}
+
+var book = $('#book');
+for (var i = 0; i < pages.length; i++) {
+  //book.after(pages[i].clone());
+  //book.after('<hr />');
+  book.append(pages[i]);
+}
+
+book.turn({
+  width: width + (padding * 4),
+  height: height,// + (padding * 2),
+  gradients: true, 
+  acceleration: true
+});
+</script>
+</body>
+</html>
