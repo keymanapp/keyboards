@@ -12,6 +12,7 @@ Tamil 99 Basic generated from template
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdtam99
 
 Supported Platforms
 -------------------
