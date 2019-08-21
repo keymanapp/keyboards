@@ -1,0 +1,174 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'NLCI Devanagari WinScript'
+store(&COPYRIGHT) '© 2002-2019 NLCI, Bangalore'
+store(&MESSAGE) 'MIT License'
+store(&BITMAP) 'nlci_devanagari_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_devanagari_winscript.kvks'
+store(&LAYOUTFILE) 'nlci_devanagari_winscript.keyman-touch-layout'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '2.1'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowelKeys) 'AiIuUReEYoOVMH'
+store(vowels) 'आइईउऊऋएऎऐओऒऔंः'
+store(vowelMatras) 'ािीुूृेॆैोॊौंः'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
+
+store(cons) 'कखगघङ' \
+    	   	'चछजझञ' \
+    	   	'टठडढण' \
+    	   	'तथदधन' \
+    	   	'पफबभम' \
+    	   	'यरलवशषसहळ'
+
+
+store(consonants) outs(cons) 'ऱऴड़ढ़ऩक़ख़ज़'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'aSf'
+
+c Adjust the behavior of 'a'
++ 'a' > 'अ'   
+'अ' + 'a' > 'आ'               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > 'ा' dk(aa)
+'ा' dk(aa) + 'a' > 'अ'
+
+c Adjust the behavior of 'e'
+'ए' + 'e' > 'ऐ'   
+'ऐ' + 'e' > 'ऎ'  
+'ऎ' + 'e' > 'ए'
+'े' + 'e' > 'ॆ'  
+
+c Adjust the behavior of 'i'
+'इ' + 'i' > 'ई' 
+'ि' + 'i' > 'ी'    
+
+c Adjust the behavior of l
+'ल' + 'l' > 'ळ'
+'ळ' + 'l' > 'ऴ'    
+
+c Adjust the behavior of L
+'ळ' + 'L' > 'ऴ'
+
+c Adjust the bahavior of d
+'ड' + 'd' > 'ड़ '   
+'ढ' + 'D' > 'ढ़'
+ 
+c Adjust the behavior of n
+'न' + 'n' > 'ऩ'     
+
+c Adjust the behavior of o
+'ओ' + 'o' > 'ऒ'    
+'ो' + 'o' > 'ॊ'   
+
+c Adjust the behavior of r
+ 'र' + 'r' > 'ऱ'       
+ 
+c Adjust the behavior of R
+'ऋ' + 'R' > 'ॠ'   
+'ृ' + 'R' > 'ॄ'     
+   
+c Adjust the behavior of S
++ 'S' > 'ँ'  
+
+c Adjust the behavior of u
+'उ' + 'u' > 'ऊ'    
+'ु' + 'u' > 'ू' 
+
+c Adjust the behavior of s
+'स' + 's'> 'ष'               
+
+c Adjust the behavior of g
+'ग' + 'g' > 'ग़'      
+
+c Adjust the behavior of K
+'क' + 'k' > 'क़'
+'ख' + 'K' > 'ख़'            
+
+c Adjust the behavior of j
+'ज' + 'j' >'ज़'
+
+c Add Nukta
++ 'f' > '़'    
+
+c Adjust the behavior of F
++ 'F' > 'ऽ'   
+'`' dk(bt) + 'F' > 'F'
+
+c full stop
+ + '.' >   U+0964 
+  U+0964 + '.' > '.'     
+  
+c dot
+any(consonants)'़' + any(vowelKeys)  > context  index(vowelMatras,3)
+
+
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '्' U+200C
+any(consonants) '्' + 'X' > context U+200C
+U+200C + 'X' > context beep
+store(WordFinalPunct) ' ",.>!]}-\;/~@#$%^&*(_+|:<?)' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+
+c Add =
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'ऱ'
+'=' dk(eq)+ 'z' > 'ऴ'    
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick for change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+    
+c numbers
+store(numberKeys) '1234567890'
+store(DevNumbers) '१२३४५६७८९०'
+'`' dk(bt) + any(numberKeys) > index(DevNumbers, 3)
+any(DevNumbers) + any(numberKeys) > context index(DevNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+
+c cons + virama
+any (consonants) + 'x' > context '्'          
+any(vowels) + 'x' > context '्'   
+
+c vowels + virama
+any(vowels) + 'x' > context '्' 
+'अ' + 'x' > context '्'
+any(vowelMatras) + 'x' > context '्'         
+
+c 
++ [T_KA_SSA] > U+0915 U+094D U+0937 
