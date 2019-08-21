@@ -20,6 +20,7 @@ Supported Platforms
  * Windows
  * Mac OS X
  * Linux
+ * Web
 
 Todo
 ----
