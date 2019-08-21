@@ -6,9 +6,9 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>arcticfox.png</GraphicFile>
-    <MSIFileName>H:\~7000 ALS Resources\010 - ORTHOGRAPHIC TOOLS\Keyman\keyman msi\keymandesktop.msi</MSIFileName>
+    <ReadMeFile>source\readme.htm</ReadMeFile>
+    <GraphicFile>source\arcticfox.png</GraphicFile>
+    <MSIFileName>C:\projects\keyboards-starter\indigenous_nt\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
@@ -18,11 +18,47 @@
   </StartMenu>
   <Info>
     <Version URL="">3.2</Version>
-    <Name URL="">Indigenous NT</Name>
-    <Copyright URL="">©2013-2019</Copyright>
+    <Name URL="">Indigenous NT Integrated Keyboard</Name>
+    <Copyright URL="">©2019 Rajiv Rawat</Copyright>
     <Author URL="mailto:rajiv_rawat@gov.nt.ca">Rajiv Rawat</Author>
   </Info>
   <Files>
+    <File>
+      <Name>source\arcticfox.png</Name>
+      <Description>File arcticfox.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>source\indigenous_nt.ico</Name>
+      <Description>File indigenous_nt.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+    <File>
+      <Name>source\readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>source\welcome\indigenous_nt_layout.png</Name>
+      <Description>File indigenous_nt_layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>source\welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>build\indigenous_nt.js</Name>
+      <Description>File indigenous_nt.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
     <File>
       <Name>build\indigenous_nt.kvk</Name>
       <Description>File indigenous_nt.kvk</Description>
@@ -35,36 +71,6 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
-    <File>
-      <Name>welcome\indigenous_nt_layout.png</Name>
-      <Description>File indigenous_nt_layout.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>arcticfox.png</Name>
-      <Description>File arcticfox.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\..\build\indigenous_nt.js</Name>
-      <Description>File indigenous_nt.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -72,7 +78,17 @@
       <ID>indigenous_nt</ID>
       <Version>3.2</Version>
       <Languages>
-        <Language ID="en">English</Language>
+        <Language ID="en-CA">English</Language>
+        <Language ID="en-CA">English</Language>
+        <Language ID="fr-CA">French</Language>
+        <Language ID="ikt-Latn">Inuinnaqtun</Language>
+        <Language ID="esi-Latn">North Alaskan Inupiatun</Language>
+        <Language ID="cr-Latn">Cree</Language>
+        <Language ID="chp-Latn">Chipewyan</Language>
+        <Language ID="dgr-Latn">Dogrib</Language>
+        <Language ID="gwi-Latn">Gwich'in</Language>
+        <Language ID="xsl-Latn">South Slavey</Language>
+        <Language ID="scs-Latn">North Slavey</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
