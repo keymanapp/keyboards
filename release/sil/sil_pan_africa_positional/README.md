@@ -1,9 +1,9 @@
 Pan Africa Positional (SIL) Keyboard
 =====================
 
-Copyright (C) 2003-2018 SIL International
+Copyright (C) 2003-2019 SIL International
 
-Version 1.1
+Version 1.1.1
 
 __DESCRIPTION__
 This is the positional version of the Pan Africa (SIL) keyboard. The keyboard layout was designed to
