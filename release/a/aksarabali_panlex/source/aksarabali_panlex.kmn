@@ -1,7 +1,7 @@
 ﻿store(&NAME) 'Aksara Bali Unicode'
 store(&TARGETS) 'windows macosx linux desktop web'
 store(&COPYRIGHT) '© 2019 The PanLex Project of The Long Now Foundation'
-store(&KEYBOARDVERSION) '1.0.3'
+store(&KEYBOARDVERSION) '1.0.4'
 store(&MESSAGE) 'Aksara Bali Unicode, based on Bali Simbar'
 store(&BITMAP) 'aksarabali_panlex.ico'
 store(&VISUALKEYBOARD) 'aksarabali_panlex.kvks'
@@ -129,6 +129,7 @@ group(main) using keys
   'ᬦ?' + [K_C] > 'ᬜ' $adeg 'ᬘ?' c n => ny /_c
   'ᬦ?' + [K_J] > 'ᬜ' $adeg 'ᬚ?' c n => ny /_j
   'ᬚ?' + [K_N] > context(1) $adeg 'ᬜ?' c n => ny /j_
+  'ᬚ᭄ᬜ?' + [K_Y] > context c ignore y after jny
 
   c post-consonant input: ś
   'ᬲ' $adeg 'ᬲ?' + [K_H] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
@@ -177,8 +178,8 @@ group(main) using keys
   'ᬑ' $candra + [CTRL SHIFT K_O] > 'ᬒ' $candra c om
 
   c other marks
-  '?' + [CTRL K_R] > $rerekan '?'
-  + [CTRL K_R] > $rerekan
+  '?' + [ALT K_R] > $rerekan '?'
+  + [ALT K_R] > $rerekan
   any(cons_vowel_mark) 'ᬳ?' + [K_SPACE] > context(1) $bisah
   any(cons_vowel_mark) 'ᬗ?' + [K_SPACE] > context(1) $cecek
   any(cons_vowel_mark) 'ᬭ?' + [K_SPACE] > context(1) $surang
@@ -212,15 +213,16 @@ group(main) using keys
   'ᬏ' + [CTRL SHIFT K_E] > 'ᬐ'
 
   c general input
-  '?' + [K_SPACE] > nul
   + [K_SPACE] > nul
+  $zwnj + [CTRL K_SLASH] > context
+  + [CTRL K_SLASH] > $zwnj
   + any(cons_key) > index(cons_main, 1) '?'
   '?' + any(indep_key) > index(indep, 2)
   + any(indep_key) > index(indep, 1)
   + any(dvowel_key_alt) > index(dvowel, 1)
 
   c ha insertion
-  $adeg + [K_A] > context $zwnj 'ᬳ' 
+  $adeg + [K_A] > context $zwnj 'ᬳ'
   $adeg + any(dvowel_key) > context $zwnj 'ᬳ' index(dvowel, 2)
   + [K_A] > 'ᬳ'
   + any(dvowel_key) > 'ᬳ' index(dvowel, 1)

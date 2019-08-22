@@ -1,6 +1,13 @@
 Aksara Bali Unicode Keyboard Change History
 ===========================================
 
+1.0.4 (22 August 2019)
+----------------------
+
+* Ignore Y key after "ᬚ᭄ᬜ" combination to prevent accidental insertion of "ᬬ"
+* Add Ctrl-/ keystroke for ZWNJ
+* Change rerekan keystroke to Alt-R
+
 1.0.3 (1 August 2019)
 ---------------------
 
