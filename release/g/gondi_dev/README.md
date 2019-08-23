@@ -1,9 +1,9 @@
 Gondi (Devanagari) Keyboard
 ===========================
 
-Copyright (C) 2018 SIL International
+Copyright (C) 2019 SIL International
 
-Version 1.0
+Version 1.1
 
 __DESCRIPTION__
 This Gondi (Devanagari) keyboard has been designed for typing various Gondi languages spoken in 
