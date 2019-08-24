@@ -21,11 +21,11 @@ store (vowelU) U+11D60 U+11D62 U+11D64 U+11D67         U+11D6A \
 store (consonant)    'k'     'g'     'W'     'c'     'r'     'j'     't'     'd'     'N' \
                      'q'     '['     'n'     'p'     'b'     'm'     'y'     'l'     'v'     's' \
                      'K'     'G'             'C'             'J'     'T'     'D' \
-                     'Q'     '{'             'P'     'B'             'h'
+                     'Q'     '{'             'P'     'B'             'h'     'L'
 store (consonantU) U+11D71 U+11D76 U+11D84 U+11D7B U+11D88 U+11D80 U+11D7D U+11D82 U+11D84 \
                    U+11D73 U+11D78 U+11D7A U+11D85 U+11D6E U+11D70 U+11D6C U+11D75 U+11D6D U+11D89 \
                    U+11D72 U+11D77         U+11D7C         U+11D81 U+11D7E U+11D83 \
-                   U+11D74 U+11D79         U+11D86 U+11D6F         U+11D87
+                   U+11D74 U+11D79         U+11D86 U+11D6F         U+11D87 U+11D7F
 
 store (diacriticalmod)    'M'     'H'
 store (diacriticalmodU) U+11D95 U+11D96
@@ -57,6 +57,7 @@ any (consonantU) + 'V' > context U+11D94
 any (consonantU) + any(diacriticalmod) > context index(diacriticalmodU,2)
 
 any (consonantU) + 'x'  > context U+11D97 
++ 'x' > beep  c Any other use of 'x' is disallowed
 
 any (consonantU) 'A' + any(diacriticalmod) > context index(diacriticalmodU,3) 
 any (consonantU) 'i' + any(diacriticalmod) > context index(diacriticalmodU,3)  
