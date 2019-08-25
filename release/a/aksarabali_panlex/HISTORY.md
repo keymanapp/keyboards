@@ -1,6 +1,13 @@
 Aksara Bali Unicode Keyboard Change History
 ===========================================
 
+1.0.5 (25 August 2019)
+----------------------
+
+* Fix insertion of dependent vowel with ALT when "?" prompt is present
+* Fix insertion of surang/cecek/bisah after ra repa and la lenga
+* Fix deletion of conjunct after consonant with rerekan
+
 1.0.4 (22 August 2019)
 ----------------------
 
