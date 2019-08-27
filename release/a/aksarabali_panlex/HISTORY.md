@@ -1,6 +1,13 @@
 Aksara Bali Unicode Keyboard Change History
 ===========================================
 
+1.1.0 (27 August 2019)
+----------------------
+
+* Bunddle Vimala font
+* Implement touch layout
+* Improve on-screen keyboard
+
 1.0.5 (25 August 2019)
 ----------------------
 
