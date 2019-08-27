@@ -80,6 +80,11 @@ U+2019 + ">" > U+201D    c closing double smart quotes
 c "-" + "-" > U+005F U+005F               c Drawing line
 c U+005F U+005F + '-' > context U+005F    c Drawing line
 
+c We can only have square brackets (on the physical keyboard, and OSK)
+c However, the Touch layout has both the {} and [] (and that's OK).
++ "]" > "["
++ "}" > "]"
+
 c LongPress Arabic Digits
 + [T_0] > '0'
 + [T_1] > '1'
