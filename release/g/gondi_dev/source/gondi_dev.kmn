@@ -175,6 +175,11 @@ c Single period = 'danda', 2x period = 'double danda', 3x period gives '.'
 U+0964 + "." > U+0965
 U+0965 + "." > "."
 
+c We can only have square brackets (on the physical keyboard, and OSK)
+c However, the Touch layout has both the {} and [] (and that's OK).
++ "]" > "["
++ "}" > "]"
+
 c Extended Fonts
 any ( allConsonants ) + 'X'  > context U+094D U+200D
 any ( specialconsU ) + 'X'  > context U+094D U+200D
