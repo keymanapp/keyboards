@@ -42,34 +42,35 @@ store(cons_tedong)     'ᭉᬯᬭᬢᬬᬧ' \
                        'ᬡᬘᬪᬩᬦᬫ' \
                        'ᬱᬰᬝ'
 
-store(dvowel_short_key)  [K_E] [SHIFT K_E] [K_I] [K_O] [K_U]
-store(dvowel_short)      'ᭂᬾᬶᭀᬸ'
-store(dvowel_basic)      outs(dvowel_short) 'ᬵᬿᬷᬹ'
-store(dvowel_normal_key) outs(dvowel_short_key) \
-                         [SHIFT K_A] [CTRL SHIFT K_E] [SHIFT K_I] [SHIFT K_U] \
-                         [T_AI] [T_AU] [T_PEPET_TEDONG]
-store(dvowel_normal)     outs(dvowel_basic) \
-                         'ᬿᭁᭃ'
-store(dvowel_key)        outs(dvowel_normal_key) \
-                         [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
-store(dvowel)            outs(dvowel_normal) \
-                         'ᬺᬻᬼᬽ'
-store(dvowel_front)      'ᬶᬾ'
-store(dvowel_back)       'ᬸᭀ'
+store(dvowel_short_key)   [K_E] [SHIFT K_E] [K_I] [K_O] [K_U]
+store(dvowel_short)       'ᭂᬾᬶᭀᬸ'
+store(dvowel_auto_ha_key) outs(dvowel_short_key) \
+                          [SHIFT K_I] [SHIFT K_U] [T_PEPET_TEDONG]
+store(dvowel_auto_ha)     outs(dvowel_short) \
+                          'ᬷᬹᭃ'
+store(dvowel_key)         outs(dvowel_auto_ha_key) \
+                          [SHIFT K_A] [CTRL SHIFT K_E] [T_TALING_REPA] [T_TALING_REPA_TEDONG] \
+                          [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
+store(dvowel)             outs(dvowel_auto_ha) \
+                          'ᬵᬿᬿᭁ' \ 
+                          'ᬺᬻᬼᬽ'
+store(dvowel_front)       'ᬶᬾ'
+store(dvowel_back)        'ᬸᭀ'
 
 store(syllabic_key) [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
 store(syllabic)     'ᬋᬌᬍᬎ'
 store(vowel_key)    outs(syllabic_key) \
                     [CTRL SHIFT K_A] [CTRL SHIFT K_E] [CTRL SHIFT K_I] [CTRL SHIFT K_O] [CTRL SHIFT K_U] \
-                    [T_AKARA_TEDONG] [T_IKARA_TEDONG] [T_UKARA_TEDONG] [T_AIKARA] [T_OKARA_TEDONG]
+                    [SHIFT K_A] [T_AKARA_TEDONG] [T_IKARA_TEDONG] [T_UKARA_TEDONG] [T_TALING_REPA] [T_TALING_REPA_TEDONG]
 store(vowel)        outs(syllabic) \
                     'ᬅᬏᬇᬑᬉ' \
-                    'ᬆᬈᬊᬐᬒ'
+                    'ᬆᬆᬈᬊᬐᬒ'
 
 store(force_mark_key) [ALT K_E] [ALT SHIFT K_E] [ALT K_I] [ALT K_O] [ALT K_U] \
                       [ALT SHIFT K_A] [ALT CTRL SHIFT K_E] [ALT SHIFT K_I] [ALT SHIFT K_U] \
                       [T_CECEK] [T_SURANG] [T_BISAH] [T_CANDRA] [T_RICEM]
-store(force_mark)     outs(dvowel_basic) \
+store(force_mark)     outs(dvowel_short) \
+                      'ᬵᬿᬷᬹ' \
                       $cecek $surang $bisah $candra $ricem
 
 store(punc_key) [SHIFT K_SPACE] [K_COMMA] [CTRL K_COMMA] [K_PERIOD] [CTRL K_PERIOD] [SHIFT K_COLON] \
@@ -221,6 +222,7 @@ group(main) using keys
   + [CTRL SHIFT K_PERIOD] > '᭛᭜᭛'
   platform("hardware") '᭛᭜᭛' + [CTRL SHIFT K_PERIOD] > '᭟᭜᭟'
   platform("hardware") '᭞' + [K_COMMA] > ','
+  platform("touch") '᭞' + [K_COMMA] > '᭟'
   platform("hardware") '᭟' + [K_PERIOD] > '.'
   platform("hardware") '᭝' + [SHIFT K_COLON] > ':'
   platform("hardware") '᭠' + [K_HYPHEN] > '-'
@@ -251,6 +253,6 @@ group(main) using keys
 
   c ha insertion
   $adeg + [K_A] > context $zwnj 'ᬳ'
-  $adeg + any(dvowel_normal_key) > context $zwnj 'ᬳ' index(dvowel_normal, 2)
+  $adeg + any(dvowel_auto_ha_key) > context $zwnj 'ᬳ' index(dvowel_auto_ha, 2)
   + [K_A] > 'ᬳ'
-  + any(dvowel_normal_key) > 'ᬳ' index(dvowel_normal, 1)
+  + any(dvowel_auto_ha_key) > 'ᬳ' index(dvowel_auto_ha, 1)
