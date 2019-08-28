@@ -45,8 +45,6 @@ store(cons_tedong)     'ᭉᬯᬭᬢᬬᬧ' \
 store(dvowel_short_key)  [K_E] [SHIFT K_E] [K_I] [K_O] [K_U]
 store(dvowel_short)      'ᭂᬾᬶᭀᬸ'
 store(dvowel_basic)      outs(dvowel_short) 'ᬵᬿᬷᬹ'
-store(dvowel_front)      'ᬶᬾ'
-store(dvowel_back)       'ᬸᭀ'
 store(dvowel_normal_key) outs(dvowel_short_key) \
                          [SHIFT K_A] [CTRL SHIFT K_E] [SHIFT K_I] [SHIFT K_U] \
                          [T_AI] [T_AU] [T_PEPET_TEDONG]
@@ -56,6 +54,8 @@ store(dvowel_key)        outs(dvowel_normal_key) \
                          [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
 store(dvowel)            outs(dvowel_normal) \
                          'ᬺᬻᬼᬽ'
+store(dvowel_front)      'ᬶᬾ'
+store(dvowel_back)       'ᬸᭀ'
 
 store(syllabic_key) [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
 store(syllabic)     'ᬋᬌᬍᬎ'
@@ -75,8 +75,10 @@ store(force_mark)     outs(dvowel_basic) \
 store(punc_key) [SHIFT K_SPACE] [K_COMMA] [CTRL K_COMMA] [K_PERIOD] [CTRL K_PERIOD] [SHIFT K_COLON] \
                 [K_HYPHEN] [SHIFT K_HYPHEN] [SHIFT K_COMMA] [SHIFT K_PERIOD] [CTRL ALT K_O] \
                 [CTRL SHIFT K_HYPHEN] [CTRL SHIFT K_BKSLASH] [CTRL SHIFT K_8] [CTRL SHIFT K_0] \
-                [CTRL SHIFT K_EQUAL] [CTRL SHIFT K_SLASH]
-store(punc)     ' ᭞,᭟.᭝᭠·᭚᭛᭜—|❖⏑⏓/'
+                [CTRL SHIFT K_EQUAL] [CTRL SHIFT K_SLASH] \
+                [T_LBRKT] [T_RBRKT] [T_HYPHEN]
+store(punc)     ' ᭞,᭟.᭝᭠·᭚᭛᭜—|❖⏑⏓/' \
+                '[]-'
 
 store(endpunc_key) [K_COMMA] [K_PERIOD] [SHIFT K_COLON] [K_ENTER]
 store(endpunc)     '᭞᭟᭝' $lf
@@ -126,25 +128,25 @@ group(main) using keys
   c post-consonant input: derived consonants
   platform("hardware") 'ᬦ?' + [CTRL K_PERIOD] > 'ᬡ?' c n => ṇ
   platform("hardware") 'ᬦ?' + [CTRL K_QUOTE] > 'ᬜ?' c n => ny
-  platform("hardware") 'ᬦ?' + [K_Y] > 'ᬜ?' c n => ny
+  'ᬦ?' + [K_Y] > 'ᬜ?' c n => ny
   platform("hardware") 'ᬦ?' + [SHIFT K_Y] > 'ᬦ' $adeg 'ᬬ?' c n-y override
   platform("hardware") 'ᬦ?' + [CTRL K_Y] > 'ᬦ' $adeg 'ᬬ?' c n-y override
-  platform("hardware") 'ᬦ?' + [K_G] > 'ᬗ?' c n => ng
+  'ᬦ?' + [K_G] > 'ᬗ?' c n => ng
   platform("hardware") 'ᬲ?' + [CTRL K_PERIOD] > 'ᬱ?' c s => ṣ
   platform("hardware") 'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ?' c s => ś
-  platform("hardware") 'ᬲ?' + [K_H] > 'ᬰ?' c s => ś
-  platform("hardware") 'ᬧ?' + [K_H] > 'ᬨ?' c p => ph
-  platform("hardware") 'ᬩ?' + [K_H] > 'ᬪ?' c b => bh
+  'ᬲ?' + [K_H] > 'ᬰ?' c s => ś
+  'ᬧ?' + [K_H] > 'ᬨ?' c p => ph
+  'ᬩ?' + [K_H] > 'ᬪ?' c b => bh
   platform("hardware") 'ᬢ?' + [CTRL K_PERIOD] > 'ᬝ?' c t => ṭ
-  platform("hardware") 'ᬢ?' + [K_H] > 'ᬣ?' c t => th
-  platform("hardware") 'ᬝ?' + [K_H] > 'ᬞ?' c ṭ => ṭh
+  'ᬢ?' + [K_H] > 'ᬣ?' c t => th
+  'ᬝ?' + [K_H] > 'ᬞ?' c ṭ => ṭh
   platform("hardware") 'ᬤ?' + [CTRL K_PERIOD] > 'ᬟ?' c d => ḍ
-  platform("hardware") 'ᬤ?' + [K_H] > 'ᬥ?' c d => dh
-  platform("hardware") 'ᬟ?' + [K_H] > 'ᬠ?' c ḍ => ḍh
-  platform("hardware") 'ᬘ?' + [K_H] > 'ᬙ?' c c => ch
-  platform("hardware") 'ᬚ?' + [K_H] > 'ᬛ?' c j => jh
-  platform("hardware") 'ᬓ?' + [K_H] > 'ᬔ?' c k => kh
-  platform("hardware") 'ᬕ?' + [K_H] > 'ᬖ?' c g => gh
+  'ᬤ?' + [K_H] > 'ᬥ?' c d => dh
+  'ᬟ?' + [K_H] > 'ᬠ?' c ḍ => ḍh
+  'ᬘ?' + [K_H] > 'ᬙ?' c c => ch
+  'ᬚ?' + [K_H] > 'ᬛ?' c j => jh
+  'ᬓ?' + [K_H] > 'ᬔ?' c k => kh
+  'ᬕ?' + [K_H] > 'ᬖ?' c g => gh
 
   c post-consonant input: ng
   'ᬗ?' + [K_N] > 'ᬗᭂᬦ?' c ng => nge /_n
@@ -204,6 +206,7 @@ group(main) using keys
   platform("hardware") 'ᬅ' $tedong + [CTRL SHIFT K_A] > 'ᬅ' $candra
   platform("hardware") 'ᬑ' + [CTRL SHIFT K_O] > context $candra
   platform("hardware") 'ᬑ' $candra + [CTRL SHIFT K_O] > 'ᬒ' $candra c om
+  platform("touch") + [T_OM] > 'ᬒᬁ' c om
 
   c other marks
   '?' + [ALT K_R] > $rerekan '?'

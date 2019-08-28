@@ -1,16 +1,12 @@
 Aksara Bali Unicode Keyboard Change History
 ===========================================
 
-1.1.0 (27 August 2019)
+1.1.0 (28 August 2019)
 ----------------------
 
-* Bunddle Vimala font
+* Bundle Vimala font
 * Implement touch layout
 * Improve on-screen keyboard
-
-1.0.5 (25 August 2019)
-----------------------
-
 * Fix insertion of dependent vowel with ALT when "?" prompt is present
 * Fix insertion of surang/cecek/bisah after ra repa and la lenga
 * Fix deletion of conjunct after consonant with rerekan
