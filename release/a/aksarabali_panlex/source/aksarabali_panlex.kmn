@@ -1,5 +1,6 @@
 ﻿store(&NAME) 'Aksara Bali Unicode'
-store(&TARGETS) 'windows macosx linux desktop web mobile tablet'
+store(&TARGETS) 'any'
+store(&VERSION) '9.0'
 store(&COPYRIGHT) '© 2019 The PanLex Project of The Long Now Foundation'
 store(&KEYBOARDVERSION) '1.1.0'
 store(&MESSAGE) 'Aksara Bali Unicode, based on Bali Simbar'
@@ -245,6 +246,7 @@ group(main) using keys
 
   c general input
   + [K_SPACE] > nul
+  + [SHIFT K_O] > nul
   $zwnj + [CTRL K_SLASH] > context
   + [CTRL K_SLASH] > $zwnj
   + any(cons_key) > index(cons_main, 1) '?'
