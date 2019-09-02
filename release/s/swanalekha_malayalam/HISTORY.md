@@ -1,6 +1,11 @@
 Swanalekha Malayalam Keyboard Change History
 ============================================
 
+1.2.4 (12 Aug 2019)
+-----------------
+
+* Add 'SPACE'+'_' combination to type 'ZWNJ'
+
 1.2.3 (29 Apr 2019)
 -----------------
 
