@@ -1,0 +1,15 @@
+﻿store(&VERSION) '9.0'
+store(&TARGETS) 'desktop'
+store(&NAME) 'Piaroa'
+store(&COPYRIGHT) '© 2019 Eddie Antonio Santos'
+store(&MESSAGE) 'Keyboard for writing Piaroa. Teclado para escribir en el idioma piaroa. Gracias a Jorge E. Rosés Labrada para darme los recursos necesarios para crear este teclado.'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&ETHNOLOGUECODE) 'pid'
+begin Unicode > use(main)
+
+group(main) using keys
++ [RALT K_COMMA] > '̧'
++ [SHIFT RALT K_O] > 'Ö'
++ [SHIFT RALT K_A] > 'Ä'
++ [RALT K_A] > 'ä'
++ [RALT K_O] > 'ö'
