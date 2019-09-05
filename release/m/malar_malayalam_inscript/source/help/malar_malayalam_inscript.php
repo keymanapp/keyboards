@@ -33,7 +33,7 @@ END;
       <div class="MalarMainCont">
 	  <!--link href="https://smc.org.in/fonts/css/fonts.css" rel="stylesheet"--> 
       <link href="https://fonts.googleapis.com/css?family=Manjari:400,700&display=swap&subset=malayalam" rel="stylesheet">
-         <p class="MalarP"><b>Malar Malayalam Inscript</b> Keyboard is a customized version of the Malayalam Inscript keyboard. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 12.1. Malayalam Unicode fonts under the SIL Open Font License are available at <a href="https://smc.org.in/fonts/" target="_blank">https://smc.org.in/fonts/</a>. This keyboard has a facility to input English characters / Special characters without switching from keyboard.</p>
+         <p class="MalarP"><b>Malar Malayalam Inscript</b> Keyboard is a customized version of the Malayalam Inscript keyboard. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 12.1. Malayalam Unicode fonts under the SIL Open Font License are available at <a href="https://smc.org.in/fonts/" target="_blank">https://smc.org.in/fonts/</a>.</p>
          <h2 class="MalarH2">
             Keyboard Layout
          </h2>
@@ -1007,10 +1007,6 @@ END;
                   <td>അ-അ–അ—അ-</td>
                   <td>D-D-]D-]]D-]]]</td>
                </tr>
-               <tr>
-                  <td>മലയാളം English മലയാളം</td>
-                  <td>cn/eNx && English && cn/eNx</td>
-               </tr>
             </tbody>
          </table>
          <br>
@@ -1018,13 +1014,11 @@ END;
             Instructions for Use
          </h2>
          <ul class="MalarP2">
-            <li>While typing Malayalam use <b>AltGr</b> / <b>AltGr+Shift</b> to type a English characters / Special characters.</li>
-            <li>While typing Malayalam type <b>&amp;&amp;</b> to Switch to English; Type <b>&amp;&amp;</b> again to switch back to Malayalam.</li>
             <li>For character changing and controling purpose <b>]</b> key is using . ( ⇳ )</li>
             <li>After a number in context output of <b>/</b> key input will be <b>/</b>.</li>
             <li>If necessary type <b>X</b> key to break a keyboard rule.</li>
          </ul>
-         <br><br>
+         <br>
          <p class="MalarP3"><a href="https://forms.gle/DcJZZBHH4vwyoLoz7" target="_blank">Click here to submit a feedback about <b>Malar Malayalam Inscript</b> Keyboard.</a>
          </p>
       </div>
