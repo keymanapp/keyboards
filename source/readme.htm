@@ -10,21 +10,19 @@
     kbd {
       display: inline-block;
 
-      padding: 0px 4px;
+      padding: .1em .6em;
+      border: 1px solid #adb3b9;
+      margin: 0 .1em;
+
+      font: 11px/1.4 Tahoma, sans-serif;
+      white-space: nowrap;
+
+      color: #242729;
+      text-shadow: 0 1px 0 #FFF;
+      background-color: #e1e3e5;
+      box-shadow: 0 1px 0 rgba(12,13,14,0.2), 0 0 0 2px #FFF inset;
+
       border-radius: 3px;
-      margin: 2px;
-
-      color: #555;
-      background: #eee;
-      box-shadow: 1px 1px 1px #777;
-      vertical-align: text-bottom;
-
-      font: 600 small/1 Consolas, "Lucida Console", monospace;
-      font-variant: small-caps;
-      letter-spacing: 1px;
-
-      cursor: pointer;
-      user-select: none;
     }
     table {
       border-collapse: collapse;
@@ -48,7 +46,9 @@
 
 <h2> How to use </h2>
 
-<p> Use the <kbd>right alt</kbd> key. That is, you  <strong>must</strong> use the <kbd>alt</kbd> key on the <strong>right</strong> side of the keyboard!</p>
+<p> To type the special vowels, this keyboard uses the <kbd>AltGr</kbd> key. This is the
+<kbd>Alt</kbd> or <kbd>⌥ Option</kbd> key on the <strong>right</strong> side of
+the spacebar; the left <kbd>Alt</kbd> will <em>not</em> work!</p>
 
 <table>
   <thead>
@@ -57,13 +57,19 @@
     </tr>
   </thead>
   <tbody>
-    <tr> <td>ä</td> <td> <kbd>right alt</kbd> + <kbd>a</kbd></td> </tr>
-    <tr> <td>Ä</td> <td> <kbd>shift</kbd> + <kbd>right alt</kbd> + <kbd>a</kbd></td> </tr>
-    <tr> <td>ö</td> <td> <kbd>right alt</kbd> + <kbd>o</kbd></td> </tr>
-    <tr> <td>Ö</td> <td> <kbd>shift</kbd> + <kbd>right alt</kbd> + <kbd>o</kbd></td> </tr>
-    <tr> <td>&nbsp;&#x327;</td> <td> (after typing a vowel) <kbd>right alt</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ä</td> <td> <kbd>AltGr</kbd> + <kbd>A</kbd></td> </tr>
+    <tr> <td>ö</td> <td> <kbd>AltGr</kbd> + <kbd>O</kbd></td> </tr>
+    <tr> <td>Ä</td> <td> <kbd>Shift</kbd> + <kbd>AltGr</kbd> + <kbd>A</kbd></td> </tr>
+    <tr> <td>Ö</td> <td> <kbd>Shift</kbd> + <kbd>AltGr</kbd> + <kbd>O</kbd></td> </tr>
+    <tr> <td>a&#x327;</td> <td> <kbd>A</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>e&#x327;</td> <td> <kbd>E</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>i&#x327;</td> <td> <kbd>I</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>o&#x327;</td> <td> <kbd>O</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>u&#x327;</td> <td> <kbd>U</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ä&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>A</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ö&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>O</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
   </tbody>
 </table>
-  
+
 </body>
 </html>
