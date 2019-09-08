@@ -37,6 +37,14 @@
     td, th {
       padding: 0.5rem 1rem;
     }
+    .copyright {
+      font-size: smaller;
+      color: #555;
+    }
+    @media print {
+      body { font-size: 16pt }
+      table { margin: auto }
+    }
   </style>
 </head>
 <body>
@@ -70,7 +78,7 @@ funcionará!</em></p>
   </tbody>
 </table>
 
-<p>© 2019 Eddie Antonio Santos</p>
+<p class="copyright">© 2019 Eddie Antonio Santos</p>
 
 </body>
 </html>
