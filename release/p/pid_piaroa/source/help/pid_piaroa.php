@@ -5,10 +5,10 @@
 ?>
 
 <nav>
-  <p> <a href="#eddieantonio_pid_piaroa-es">Lee este documento en español.</a> </p> 
+  <p> <a href="#pid_piaroa-es">Lee este documento en español.</a> </p> 
 </nav>
 
-<a id="eddieantonio_pid_piaroa-en">
+<a id="pid_piaroa-en">
 
 <p>The Piaroa keyboard allows you to type Piaroa vowels which are not present in the Spanish alphabet. These vowels utilize the <kbd>AltGr</kbd> key, which is the <kbd>Alt</kbd> key to the right of the spacebar.</p>
 
@@ -42,11 +42,11 @@
 
 <h1>Keyboard Source</h1>
 
-<p>This keyboard is available online at <a href='https://keyman.com/keyboards/eddieantonio_pid_piaroa'>keyman.com/keyboards/eddieantonio_pid_piaroa</a></p>
+<p>This keyboard is available online at <a href='https://keyman.com/keyboards/pid_piaroa'>keyman.com/keyboards/pid_piaroa</a></p>
 
 <hr>
 
-<a id="eddieantonio_pid_piaroa-es">
+<a id="pid_piaroa-es">
 
 <h1 lang="es">Usando el teclado Piaora</h1>
 
@@ -91,7 +91,7 @@ funcionará!</em></p>
 
 <h1>Para descargar el teclado</h1>
 
-<p>Este teclado se puede decargar aquí: <a href='https://keyman.com/keyboards/eddieantonio_pid_piaroa'>keyman.com/keyboards/eddieantonio_pid_piaroa</a></p>
+<p>Este teclado se puede decargar aquí: <a href='https://keyman.com/keyboards/pid_piaroa'>keyman.com/keyboards/pid_piaroa</a></p>
 
 <hr>
 
