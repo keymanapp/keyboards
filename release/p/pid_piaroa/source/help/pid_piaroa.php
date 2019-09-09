@@ -48,7 +48,7 @@
 
 <a id="pid_piaroa-es">
 
-<h1 lang="es">Usando el teclado Piaora</h1>
+<h1 lang="es">Usando el teclado piaroa</h1>
 
 <p lang="es"> Este teclado usa la tecla <kbd>Alt Gr</kbd> para escribir vocales que no
 hay en español.  La tecla <kbd>Alt Gr</kbd> es la tecla <kbd>Alt</kbd> u
@@ -61,7 +61,7 @@ funcionará!</em></p>
 <p lang="es">Piaroa no requiere un fuente especial. Sin embargo, algunos fuentes no son capazes de renderizar la cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) debajo de vocales.  En sistemas Windows, el fuente Calibri renderiza la cedilla correctamente (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); en sistemas macOS, la fuente Helvetica Neue renderiza la cedilla correctamente (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
 
 <aside>
-  <p>Anteriormente, era necesario usar el fuente Piaroa SILSophia, pero este
+  <p>Anteriormente, era necesario usar el fuente piaroa SILSophia, pero este
   fuente no es compatible con Unicode. Por eso, ya no es consegable usar un
   fuente especial.</p>
 </aside>

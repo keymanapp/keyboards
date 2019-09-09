@@ -1,7 +1,5 @@
-Piaora keyboard
-==============
-
-[Find the printable PDF how-to guide here!](./extra/PiaoraKbd.pdf)
+Piaroa keyboard
+===============
 
 © 2019 Eddie Antonio Santos
 
