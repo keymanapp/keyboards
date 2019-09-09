@@ -5,7 +5,7 @@
 ?>
 
 <nav>
-  <p> <a href="#pid_piaroa-es">Lee este documento en español.</a> </p> 
+  <p lang="es"> <a href="#pid_piaroa-es">Lee este documento en español.</a> </p> 
 </nav>
 
 <a id="pid_piaroa-en">
