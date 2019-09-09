@@ -1,4 +1,4 @@
-Piaora Change History
+Piaroa Change History
 ====================
 
 1.1 (2019-09-08)
