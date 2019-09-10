@@ -3,7 +3,7 @@ Piaroa keyboard
 
 © 2019 Eddie Antonio Santos
 
-Version 1.0
+Version 1.1.1
 
 Description
 -----------
