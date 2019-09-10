@@ -52,7 +52,7 @@
 
 <p lang="es"> Este teclado usa la tecla <kbd>Alt Gr</kbd> para escribir vocales que no
 hay en español.  La tecla <kbd>Alt Gr</kbd> es la tecla <kbd>Alt</kbd> u
-<kbd>⌥ Opción</kbd> que esta ubicada al lado <strong>derecho</strong> de la
+<kbd>⌥ Opción</kbd> que está ubicada al lado <strong>derecho</strong> de la
 barra espaciadora; la tecla <kbd>Alt</kbd> a la izquierda <em>no
 funcionará!</em></p>
 
