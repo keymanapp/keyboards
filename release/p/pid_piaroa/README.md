@@ -31,6 +31,12 @@ Links
 
  - [Jorge Emilio Rosés Labrada](https://sites.google.com/ualberta.ca/jrosesla/)
 
+
+TODO
+----
+
+ - fix minor Spanish typos in `welcome.htm`
+
 Supported Platforms
 -------------------
  * Windows
