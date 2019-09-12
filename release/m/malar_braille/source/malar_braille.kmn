@@ -1,0 +1,685 @@
+﻿c "Malar Braille Keyboard"
+store(&VERSION) '10.0'
+store(&NAME) 'Malar Braille'
+store(&COPYRIGHT) '© 2019 Ramesh Kunnappully [MIT License]'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'malar_braille.kvks'
+store(&BITMAP) 'malar_braille.ico'
+store(&LAYOUTFILE) 'malar_braille.keyman-touch-layout'
+store(&MESSAGE) 'Malar Braille Keyboard is designed to type Unicode Braille Patterns using a normal English (QWERTY) keyboard.'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(1) '1'
+store(2) '2'
+store(12) '12'
+store(3) '3'
+store(13) '13'
+store(23) '23'
+store(123) '123'
+store(4) '4'
+store(14) '14'
+store(24) '24'
+store(124) '124'
+store(34) '34'
+store(134) '134'
+store(234) '234'
+store(1234) '1234'
+store(5) '5'
+store(15) '15'
+store(25) '25'
+store(125) '125'
+store(35) '35'
+store(135) '135'
+store(235) '235'
+store(1235) '1235'
+store(45) '45'
+store(145) '145'
+store(245) '245'
+store(1245) '1245'
+store(345) '345'
+store(1345) '1345'
+store(2345) '2345'
+store(12345) '12345'
+store(6) '6'
+store(16) '16'
+store(26) '26'
+store(126) '126'
+store(36) '36'
+store(136) '136'
+store(236) '236'
+store(1236) '1236'
+store(46) '46'
+store(146) '146'
+store(246) '246'
+store(1246) '1246'
+store(346) '346'
+store(1346) '1346'
+store(2346) '2346'
+store(12346) '12346'
+store(56) '56'
+store(156) '156'
+store(256) '256'
+store(1256) '1256'
+store(356) '356'
+store(1356) '1356'
+store(2356) '2356'
+store(12356) '12356'
+store(456) '456'
+store(1456) '1456'
+store(2456) '2456'
+store(12456) '12456'
+store(3456) '3456'
+store(13456) '13456'
+store(23456) '23456'
+store(123456) '123456'
+store(7) '7'
+store(17) '17'
+store(27) '27'
+store(127) '127'
+store(37) '37'
+store(137) '137'
+store(237) '237'
+store(1237) '1237'
+store(47) '47'
+store(147) '147'
+store(247) '247'
+store(1247) '1247'
+store(347) '347'
+store(1347) '1347'
+store(2347) '2347'
+store(12347) '12347'
+store(57) '57'
+store(157) '157'
+store(257) '257'
+store(1257) '1257'
+store(357) '357'
+store(1357) '1357'
+store(2357) '2357'
+store(12357) '12357'
+store(457) '457'
+store(1457) '1457'
+store(2457) '2457'
+store(12457) '12457'
+store(3457) '3457'
+store(13457) '13457'
+store(23457) '23457'
+store(123457) '123457'
+store(67) '67'
+store(167) '167'
+store(267) '267'
+store(1267) '1267'
+store(367) '367'
+store(1367) '1367'
+store(2367) '2367'
+store(12367) '12367'
+store(467) '467'
+store(1467) '1467'
+store(2467) '2467'
+store(12467) '12467'
+store(3467) '3467'
+store(13467) '13467'
+store(23467) '23467'
+store(123467) '123467'
+store(567) '567'
+store(1567) '1567'
+store(2567) '2567'
+store(12567) '12567'
+store(3567) '3567'
+store(13567) '13567'
+store(23567) '23567'
+store(123567) '123567'
+store(4567) '4567'
+store(14567) '14567'
+store(24567) '24567'
+store(124567) '124567'
+store(34567) '34567'
+store(134567) '134567'
+store(234567) '234567'
+store(1234567) '1234567'
+store(8) '8'
+store(18) '18'
+store(28) '28'
+store(128) '128'
+store(38) '38'
+store(138) '138'
+store(238) '238'
+store(1238) '1238'
+store(48) '48'
+store(148) '148'
+store(248) '248'
+store(1248) '1248'
+store(348) '348'
+store(1348) '1348'
+store(2348) '2348'
+store(12348) '12348'
+store(58) '58'
+store(158) '158'
+store(258) '258'
+store(1258) '1258'
+store(358) '358'
+store(1358) '1358'
+store(2358) '2358'
+store(12358) '12358'
+store(458) '458'
+store(1458) '1458'
+store(2458) '2458'
+store(12458) '12458'
+store(3458) '3458'
+store(13458) '13458'
+store(23458) '23458'
+store(123458) '123458'
+store(68) '68'
+store(168) '168'
+store(268) '268'
+store(1268) '1268'
+store(368) '368'
+store(1368) '1368'
+store(2368) '2368'
+store(12368) '12368'
+store(468) '468'
+store(1468) '1468'
+store(2468) '2468'
+store(12468) '12468'
+store(3468) '3468'
+store(13468) '13468'
+store(23468) '23468'
+store(123468) '123468'
+store(568) '568'
+store(1568) '1568'
+store(2568) '2568'
+store(12568) '12568'
+store(3568) '3568'
+store(13568) '13568'
+store(23568) '23568'
+store(123568) '123568'
+store(4568) '4568'
+store(14568) '14568'
+store(24568) '24568'
+store(124568) '124568'
+store(34568) '34568'
+store(134568) '134568'
+store(234568) '234568'
+store(1234568) '1234568'
+store(78) '78'
+store(178) '178'
+store(278) '278'
+store(1278) '1278'
+store(378) '378'
+store(1378) '1378'
+store(2378) '2378'
+store(12378) '12378'
+store(478) '478'
+store(1478) '1478'
+store(2478) '2478'
+store(12478) '12478'
+store(3478) '3478'
+store(13478) '13478'
+store(23478) '23478'
+store(123478) '123478'
+store(578) '578'
+store(1578) '1578'
+store(2578) '2578'
+store(12578) '12578'
+store(3578) '3578'
+store(13578) '13578'
+store(23578) '23578'
+store(123578) '123578'
+store(4578) '4578'
+store(14578) '14578'
+store(24578) '24578'
+store(124578) '124578'
+store(34578) '34578'
+store(134578) '134578'
+store(234578) '234578'
+store(1234578) '1234578'
+store(678) '678'
+store(1678) '1678'
+store(2678) '2678'
+store(12678) '12678'
+store(3678) '3678'
+store(13678) '13678'
+store(23678) '23678'
+store(123678) '123678'
+store(4678) '4678'
+store(14678) '14678'
+store(24678) '24678'
+store(124678) '124678'
+store(34678) '34678'
+store(134678) '134678'
+store(234678) '234678'
+store(1234678) '1234678'
+store(5678) '5678'
+store(15678) '15678'
+store(25678) '25678'
+store(125678) '125678'
+store(35678) '35678'
+store(135678) '135678'
+store(235678) '235678'
+store(1235678) '1235678'
+store(45678) '45678'
+store(145678) '145678'
+store(245678) '245678'
+store(1245678) '1245678'
+store(345678) '345678'
+store(1345678) '1345678'
+store(2345678) '2345678'
+store(12345678) '12345678'
+
++ [K_S] > '7'
++ [K_D] > '3'
++ [K_F] > '2'
++ [K_G] > '1'
++ [K_H] > '4'
++ [K_J] > '5'
++ [K_K] > '6'
++ [K_L] > '8'
++ [K_SPACE] > U+2800 c BLANK
+
+'7' + [K_S] > '7'
+'3' + [K_D] > '3'
+'2' + [K_F] > '2'
+'1' + [K_G] > '1'
+'4' + [K_H] > '4'
+'5' + [K_J] > '5'
+'6' + [K_K] > '6'
+'8' + [K_L] > '8'
+
+any(1) + [K_SPACE] > U+2801
+any(2) + [K_SPACE] > U+2802
+any(12) any(12) + [K_SPACE] > U+2803
+any(3) + [K_SPACE] > U+2804
+any(13) any(13) + [K_SPACE] > U+2805
+any(23) any(23) + [K_SPACE] > U+2806
+any(123) any(123) any(123) + [K_SPACE] > U+2807
+any(4) + [K_SPACE] > U+2808
+any(14) any(14) + [K_SPACE] > U+2809
+any(24) any(24) + [K_SPACE] > U+280A
+any(124) any(124) any(124) + [K_SPACE] > U+280B
+any(34) any(34) + [K_SPACE] > U+280C
+any(134) any(134) any(134) + [K_SPACE] > U+280D
+any(234) any(234) any(234) + [K_SPACE] > U+280E
+any(1234) any(1234) any(1234) any(1234) + [K_SPACE] > U+280F
+any(5) + [K_SPACE] > U+2810
+any(15) any(15) + [K_SPACE] > U+2811
+any(25) any(25) + [K_SPACE] > U+2812
+any(125) any(125) any(125) + [K_SPACE] > U+2813
+any(35) any(35) + [K_SPACE] > U+2814
+any(135) any(135) any(135) + [K_SPACE] > U+2815
+any(235) any(235) any(235) + [K_SPACE] > U+2816
+any(1235) any(1235) any(1235) any(1235) + [K_SPACE] > U+2817
+any(45) any(45) + [K_SPACE] > U+2818
+any(145) any(145) any(145) + [K_SPACE] > U+2819
+any(245) any(245) any(245) + [K_SPACE] > U+281A
+any(1245) any(1245) any(1245) any(1245) + [K_SPACE] > U+281B
+any(345) any(345) any(345) + [K_SPACE] > U+281C
+any(1345) any(1345) any(1345) any(1345) + [K_SPACE] > U+281D
+any(2345) any(2345) any(2345) any(2345) + [K_SPACE] > U+281E
+any(12345) any(12345) any(12345) any(12345) any(12345) + [K_SPACE] > U+281F
+any(6) + [K_SPACE] > U+2820
+any(16) any(16) + [K_SPACE] > U+2821
+any(26) any(26) + [K_SPACE] > U+2822
+any(126) any(126) any(126) + [K_SPACE] > U+2823
+any(36) any(36) + [K_SPACE] > U+2824
+any(136) any(136) any(136) + [K_SPACE] > U+2825
+any(236) any(236) any(236) + [K_SPACE] > U+2826
+any(1236) any(1236) any(1236) any(1236) + [K_SPACE] > U+2827
+any(46) any(46) + [K_SPACE] > U+2828
+any(146) any(146) any(146) + [K_SPACE] > U+2829
+any(246) any(246) any(246) + [K_SPACE] > U+282A
+any(1246) any(1246) any(1246) any(1246) + [K_SPACE] > U+282B
+any(346) any(346) any(346) + [K_SPACE] > U+282C
+any(1346) any(1346) any(1346) any(1346) + [K_SPACE] > U+282D
+any(2346) any(2346) any(2346) any(2346) + [K_SPACE] > U+282E
+any(12346) any(12346) any(12346) any(12346) any(12346) + [K_SPACE] > U+282F
+any(56) any(56) + [K_SPACE] > U+2830
+any(156) any(156) any(156) + [K_SPACE] > U+2831
+any(256) any(256) any(256) + [K_SPACE] > U+2832
+any(1256) any(1256) any(1256) any(1256) + [K_SPACE] > U+2833
+any(356) any(356) any(356) + [K_SPACE] > U+2834
+any(1356) any(1356) any(1356) any(1356) + [K_SPACE] > U+2835
+any(2356) any(2356) any(2356) any(2356) + [K_SPACE] > U+2836
+any(12356) any(12356) any(12356) any(12356) any(12356) + [K_SPACE] > U+2837
+any(456) any(456) any(456) + [K_SPACE] > U+2838
+any(1456) any(1456) any(1456) any(1456) + [K_SPACE] > U+2839
+any(2456) any(2456) any(2456) any(2456) + [K_SPACE] > U+283A
+any(12456) any(12456) any(12456) any(12456) any(12456) + [K_SPACE] > U+283B
+any(3456) any(3456) any(3456) any(3456) + [K_SPACE] > U+283C
+any(13456) any(13456) any(13456) any(13456) any(13456) + [K_SPACE] > U+283D
+any(23456) any(23456) any(23456) any(23456) any(23456) + [K_SPACE] > U+283E
+any(123456) any(123456) any(123456) any(123456) any(123456) any(123456) + [K_SPACE] > U+283F
+any(7) + [K_SPACE] > U+2840
+any(17) any(17) + [K_SPACE] > U+2841
+any(27) any(27) + [K_SPACE] > U+2842
+any(127) any(127) any(127) + [K_SPACE] > U+2843
+any(37) any(37) + [K_SPACE] > U+2844
+any(137) any(137) any(137) + [K_SPACE] > U+2845
+any(237) any(237) any(237) + [K_SPACE] > U+2846
+any(1237) any(1237) any(1237) any(1237) + [K_SPACE] > U+2847
+any(47) any(47) + [K_SPACE] > U+2848
+any(147) any(147) any(147) + [K_SPACE] > U+2849
+any(247) any(247) any(247) + [K_SPACE] > U+284A
+any(1247) any(1247) any(1247) any(1247) + [K_SPACE] > U+284B
+any(347) any(347) any(347) + [K_SPACE] > U+284C
+any(1347) any(1347) any(1347) any(1347) + [K_SPACE] > U+284D
+any(2347) any(2347) any(2347) any(2347) + [K_SPACE] > U+284E
+any(12347) any(12347) any(12347) any(12347) any(12347) + [K_SPACE] > U+284F
+any(57) any(57) + [K_SPACE] > U+2850
+any(157) any(157) any(157) + [K_SPACE] > U+2851
+any(257) any(257) any(257) + [K_SPACE] > U+2852
+any(1257) any(1257) any(1257) any(1257) + [K_SPACE] > U+2853
+any(357) any(357) any(357) + [K_SPACE] > U+2854
+any(1357) any(1357) any(1357) any(1357) + [K_SPACE] > U+2855
+any(2357) any(2357) any(2357) any(2357) + [K_SPACE] > U+2856
+any(12357) any(12357) any(12357) any(12357) any(12357) + [K_SPACE] > U+2857
+any(457) any(457) any(457) + [K_SPACE] > U+2858
+any(1457) any(1457) any(1457) any(1457) + [K_SPACE] > U+2859
+any(2457) any(2457) any(2457) any(2457) + [K_SPACE] > U+285A
+any(12457) any(12457) any(12457) any(12457) any(12457) + [K_SPACE] > U+285B
+any(3457) any(3457) any(3457) any(3457) + [K_SPACE] > U+285C
+any(13457) any(13457) any(13457) any(13457) any(13457) + [K_SPACE] > U+285D
+any(23457) any(23457) any(23457) any(23457) any(23457) + [K_SPACE] > U+285E
+any(123457) any(123457) any(123457) any(123457) any(123457) any(123457) + [K_SPACE] > U+285F
+any(67) any(67) + [K_SPACE] > U+2860
+any(167) any(167) any(167) + [K_SPACE] > U+2861
+any(267) any(267) any(267) + [K_SPACE] > U+2862
+any(1267) any(1267) any(1267) any(1267) + [K_SPACE] > U+2863
+any(367) any(367) any(367) + [K_SPACE] > U+2864
+any(1367) any(1367) any(1367) any(1367) + [K_SPACE] > U+2865
+any(2367) any(2367) any(2367) any(2367) + [K_SPACE] > U+2866
+any(12367) any(12367) any(12367) any(12367) any(12367) + [K_SPACE] > U+2867
+any(467) any(467) any(467) + [K_SPACE] > U+2868
+any(1467) any(1467) any(1467) any(1467) + [K_SPACE] > U+2869
+any(2467) any(2467) any(2467) any(2467) + [K_SPACE] > U+286A
+any(12467) any(12467) any(12467) any(12467) any(12467) + [K_SPACE] > U+286B
+any(3467) any(3467) any(3467) any(3467) + [K_SPACE] > U+286C
+any(13467) any(13467) any(13467) any(13467) any(13467) + [K_SPACE] > U+286D
+any(23467) any(23467) any(23467) any(23467) any(23467) + [K_SPACE] > U+286E
+any(123467) any(123467) any(123467) any(123467) any(123467) any(123467) + [K_SPACE] > U+286F
+any(567) any(567) any(567) + [K_SPACE] > U+2870
+any(1567) any(1567) any(1567) any(1567) + [K_SPACE] > U+2871
+any(2567) any(2567) any(2567) any(2567) + [K_SPACE] > U+2872
+any(12567) any(12567) any(12567) any(12567) any(12567) + [K_SPACE] > U+2873
+any(3567) any(3567) any(3567) any(3567) + [K_SPACE] > U+2874
+any(13567) any(13567) any(13567) any(13567) any(13567) + [K_SPACE] > U+2875
+any(23567) any(23567) any(23567) any(23567) any(23567) + [K_SPACE] > U+2876
+any(123567) any(123567) any(123567) any(123567) any(123567) any(123567) + [K_SPACE] > U+2877
+any(4567) any(4567) any(4567) any(4567) + [K_SPACE] > U+2878
+any(14567) any(14567) any(14567) any(14567) any(14567) + [K_SPACE] > U+2879
+any(24567) any(24567) any(24567) any(24567) any(24567) + [K_SPACE] > U+287A
+any(124567) any(124567) any(124567) any(124567) any(124567) any(124567) + [K_SPACE] > U+287B
+any(34567) any(34567) any(34567) any(34567) any(34567) + [K_SPACE] > U+287C
+any(134567) any(134567) any(134567) any(134567) any(134567) any(134567) + [K_SPACE] > U+287D
+any(234567) any(234567) any(234567) any(234567) any(234567) any(234567) + [K_SPACE] > U+287E
+any(1234567) any(1234567) any(1234567) any(1234567) any(1234567) any(1234567) any(1234567) + [K_SPACE] > U+287F
+any(8) + [K_SPACE] > U+2880
+any(18) any(18) + [K_SPACE] > U+2881
+any(28) any(28) + [K_SPACE] > U+2882
+any(128) any(128) any(128) + [K_SPACE] > U+2883
+any(38) any(38) + [K_SPACE] > U+2884
+any(138) any(138) any(138) + [K_SPACE] > U+2885
+any(238) any(238) any(238) + [K_SPACE] > U+2886
+any(1238) any(1238) any(1238) any(1238) + [K_SPACE] > U+2887
+any(48) any(48) + [K_SPACE] > U+2888
+any(148) any(148) any(148) + [K_SPACE] > U+2889
+any(248) any(248) any(248) + [K_SPACE] > U+288A
+any(1248) any(1248) any(1248) any(1248) + [K_SPACE] > U+288B
+any(348) any(348) any(348) + [K_SPACE] > U+288C
+any(1348) any(1348) any(1348) any(1348) + [K_SPACE] > U+288D
+any(2348) any(2348) any(2348) any(2348) + [K_SPACE] > U+288E
+any(12348) any(12348) any(12348) any(12348) any(12348) + [K_SPACE] > U+288F
+any(58) any(58) + [K_SPACE] > U+2890
+any(158) any(158) any(158) + [K_SPACE] > U+2891
+any(258) any(258) any(258) + [K_SPACE] > U+2892
+any(1258) any(1258) any(1258) any(1258) + [K_SPACE] > U+2893
+any(358) any(358) any(358) + [K_SPACE] > U+2894
+any(1358) any(1358) any(1358) any(1358) + [K_SPACE] > U+2895
+any(2358) any(2358) any(2358) any(2358) + [K_SPACE] > U+2896
+any(12358) any(12358) any(12358) any(12358) any(12358) + [K_SPACE] > U+2897
+any(458) any(458) any(458) + [K_SPACE] > U+2898
+any(1458) any(1458) any(1458) any(1458) + [K_SPACE] > U+2899
+any(2458) any(2458) any(2458) any(2458) + [K_SPACE] > U+289A
+any(12458) any(12458) any(12458) any(12458) any(12458) + [K_SPACE] > U+289B
+any(3458) any(3458) any(3458) any(3458) + [K_SPACE] > U+289C
+any(13458) any(13458) any(13458) any(13458) any(13458) + [K_SPACE] > U+289D
+any(23458) any(23458) any(23458) any(23458) any(23458) + [K_SPACE] > U+289E
+any(123458) any(123458) any(123458) any(123458) any(123458) any(123458) + [K_SPACE] > U+289F
+any(68) any(68) + [K_SPACE] > U+28A0
+any(168) any(168) any(168) + [K_SPACE] > U+28A1
+any(268) any(268) any(268) + [K_SPACE] > U+28A2
+any(1268) any(1268) any(1268) any(1268) + [K_SPACE] > U+28A3
+any(368) any(368) any(368) + [K_SPACE] > U+28A4
+any(1368) any(1368) any(1368) any(1368) + [K_SPACE] > U+28A5
+any(2368) any(2368) any(2368) any(2368) + [K_SPACE] > U+28A6
+any(12368) any(12368) any(12368) any(12368) any(12368) + [K_SPACE] > U+28A7
+any(468) any(468) any(468) + [K_SPACE] > U+28A8
+any(1468) any(1468) any(1468) any(1468) + [K_SPACE] > U+28A9
+any(2468) any(2468) any(2468) any(2468) + [K_SPACE] > U+28AA
+any(12468) any(12468) any(12468) any(12468) any(12468) + [K_SPACE] > U+28AB
+any(3468) any(3468) any(3468) any(3468) + [K_SPACE] > U+28AC
+any(13468) any(13468) any(13468) any(13468) any(13468) + [K_SPACE] > U+28AD
+any(23468) any(23468) any(23468) any(23468) any(23468) + [K_SPACE] > U+28AE
+any(123468) any(123468) any(123468) any(123468) any(123468) any(123468) + [K_SPACE] > U+28AF
+any(568) any(568) any(568) + [K_SPACE] > U+28B0
+any(1568) any(1568) any(1568) any(1568) + [K_SPACE] > U+28B1
+any(2568) any(2568) any(2568) any(2568) + [K_SPACE] > U+28B2
+any(12568) any(12568) any(12568) any(12568) any(12568) + [K_SPACE] > U+28B3
+any(3568) any(3568) any(3568) any(3568) + [K_SPACE] > U+28B4
+any(13568) any(13568) any(13568) any(13568) any(13568) + [K_SPACE] > U+28B5
+any(23568) any(23568) any(23568) any(23568) any(23568) + [K_SPACE] > U+28B6
+any(123568) any(123568) any(123568) any(123568) any(123568) any(123568) + [K_SPACE] > U+28B7
+any(4568) any(4568) any(4568) any(4568) + [K_SPACE] > U+28B8
+any(14568) any(14568) any(14568) any(14568) any(14568) + [K_SPACE] > U+28B9
+any(24568) any(24568) any(24568) any(24568) any(24568) + [K_SPACE] > U+28BA
+any(124568) any(124568) any(124568) any(124568) any(124568) any(124568) + [K_SPACE] > U+28BB
+any(34568) any(34568) any(34568) any(34568) any(34568) + [K_SPACE] > U+28BC
+any(134568) any(134568) any(134568) any(134568) any(134568) any(134568) + [K_SPACE] > U+28BD
+any(234568) any(234568) any(234568) any(234568) any(234568) any(234568) + [K_SPACE] > U+28BE
+any(1234568) any(1234568) any(1234568) any(1234568) any(1234568) any(1234568) any(1234568) + [K_SPACE] > U+28BF
+any(78) any(78) + [K_SPACE] > U+28C0
+any(178) any(178) any(178) + [K_SPACE] > U+28C1
+any(278) any(278) any(278) + [K_SPACE] > U+28C2
+any(1278) any(1278) any(1278) any(1278) + [K_SPACE] > U+28C3
+any(378) any(378) any(378) + [K_SPACE] > U+28C4
+any(1378) any(1378) any(1378) any(1378) + [K_SPACE] > U+28C5
+any(2378) any(2378) any(2378) any(2378) + [K_SPACE] > U+28C6
+any(12378) any(12378) any(12378) any(12378) any(12378) + [K_SPACE] > U+28C7
+any(478) any(478) any(478) + [K_SPACE] > U+28C8
+any(1478) any(1478) any(1478) any(1478) + [K_SPACE] > U+28C9
+any(2478) any(2478) any(2478) any(2478) + [K_SPACE] > U+28CA
+any(12478) any(12478) any(12478) any(12478) any(12478) + [K_SPACE] > U+28CB
+any(3478) any(3478) any(3478) any(3478) + [K_SPACE] > U+28CC
+any(13478) any(13478) any(13478) any(13478) any(13478) + [K_SPACE] > U+28CD
+any(23478) any(23478) any(23478) any(23478) any(23478) + [K_SPACE] > U+28CE
+any(123478) any(123478) any(123478) any(123478) any(123478) any(123478) + [K_SPACE] > U+28CF
+any(578) any(578) any(578) + [K_SPACE] > U+28D0
+any(1578) any(1578) any(1578) any(1578) + [K_SPACE] > U+28D1
+any(2578) any(2578) any(2578) any(2578) + [K_SPACE] > U+28D2
+any(12578) any(12578) any(12578) any(12578) any(12578) + [K_SPACE] > U+28D3
+any(3578) any(3578) any(3578) any(3578) + [K_SPACE] > U+28D4
+any(13578) any(13578) any(13578) any(13578) any(13578) + [K_SPACE] > U+28D5
+any(23578) any(23578) any(23578) any(23578) any(23578) + [K_SPACE] > U+28D6
+any(123578) any(123578) any(123578) any(123578) any(123578) any(123578) + [K_SPACE] > U+28D7
+any(4578) any(4578) any(4578) any(4578) + [K_SPACE] > U+28D8
+any(14578) any(14578) any(14578) any(14578) any(14578) + [K_SPACE] > U+28D9
+any(24578) any(24578) any(24578) any(24578) any(24578) + [K_SPACE] > U+28DA
+any(124578) any(124578) any(124578) any(124578) any(124578) any(124578) + [K_SPACE] > U+28DB
+any(34578) any(34578) any(34578) any(34578) any(34578) + [K_SPACE] > U+28DC
+any(134578) any(134578) any(134578) any(134578) any(134578) any(134578) + [K_SPACE] > U+28DD
+any(234578) any(234578) any(234578) any(234578) any(234578) any(234578) + [K_SPACE] > U+28DE
+any(1234578) any(1234578) any(1234578) any(1234578) any(1234578) any(1234578) any(1234578) + [K_SPACE] > U+28DF
+any(678) any(678) any(678) + [K_SPACE] > U+28E0
+any(1678) any(1678) any(1678) any(1678) + [K_SPACE] > U+28E1
+any(2678) any(2678) any(2678) any(2678) + [K_SPACE] > U+28E2
+any(12678) any(12678) any(12678) any(12678) any(12678) + [K_SPACE] > U+28E3
+any(3678) any(3678) any(3678) any(3678) + [K_SPACE] > U+28E4
+any(13678) any(13678) any(13678) any(13678) any(13678) + [K_SPACE] > U+28E5
+any(23678) any(23678) any(23678) any(23678) any(23678) + [K_SPACE] > U+28E6
+any(123678) any(123678) any(123678) any(123678) any(123678) any(123678) + [K_SPACE] > U+28E7
+any(4678) any(4678) any(4678) any(4678) + [K_SPACE] > U+28E8
+any(14678) any(14678) any(14678) any(14678) any(14678) + [K_SPACE] > U+28E9
+any(24678) any(24678) any(24678) any(24678) any(24678) + [K_SPACE] > U+28EA
+any(124678) any(124678) any(124678) any(124678) any(124678) any(124678) + [K_SPACE] > U+28EB
+any(34678) any(34678) any(34678) any(34678) any(34678) + [K_SPACE] > U+28EC
+any(134678) any(134678) any(134678) any(134678) any(134678) any(134678) + [K_SPACE] > U+28ED
+any(234678) any(234678) any(234678) any(234678) any(234678) any(234678) + [K_SPACE] > U+28EE
+any(1234678) any(1234678) any(1234678) any(1234678) any(1234678) any(1234678) any(1234678) + [K_SPACE] > U+28EF
+any(5678) any(5678) any(5678) any(5678) + [K_SPACE] > U+28F0
+any(15678) any(15678) any(15678) any(15678) any(15678) + [K_SPACE] > U+28F1
+any(25678) any(25678) any(25678) any(25678) any(25678) + [K_SPACE] > U+28F2
+any(125678) any(125678) any(125678) any(125678) any(125678) any(125678) + [K_SPACE] > U+28F3
+any(35678) any(35678) any(35678) any(35678) any(35678) + [K_SPACE] > U+28F4
+any(135678) any(135678) any(135678) any(135678) any(135678) any(135678) + [K_SPACE] > U+28F5
+any(235678) any(235678) any(235678) any(235678) any(235678) any(235678) + [K_SPACE] > U+28F6
+any(1235678) any(1235678) any(1235678) any(1235678) any(1235678) any(1235678) any(1235678) + [K_SPACE] > U+28F7
+any(45678) any(45678) any(45678) any(45678) any(45678) + [K_SPACE] > U+28F8
+any(145678) any(145678) any(145678) any(145678) any(145678) any(145678) + [K_SPACE] > U+28F9
+any(245678) any(245678) any(245678) any(245678) any(245678) any(245678) + [K_SPACE] > U+28FA
+any(1245678) any(1245678) any(1245678) any(1245678) any(1245678) any(1245678) any(1245678) + [K_SPACE] > U+28FB
+any(345678) any(345678) any(345678) any(345678) any(345678) any(345678) + [K_SPACE] > U+28FC
+any(1345678) any(1345678) any(1345678) any(1345678) any(1345678) any(1345678) any(1345678) + [K_SPACE] > U+28FD
+any(2345678) any(2345678) any(2345678) any(2345678) any(2345678) any(2345678) any(2345678) + [K_SPACE] > U+28FE
+any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) + [K_SPACE] > U+28FF
+
+
+c Backspace
+store(backspace1) 'ty'
+any(12345678) + any(backspace1) > Nul
+any(12345678) any(12345678) + any(backspace1) > Nul
+any(12345678) any(12345678) any(12345678) + any(backspace1) > Nul
+any(12345678) any(12345678) any(12345678) any(12345678) + any(backspace1) > Nul
+any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) + any(backspace1) > Nul
+any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) + any(backspace1) > Nul
+any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) + any(backspace1) > Nul
+any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) + any(backspace1) > Nul
+
+store(braille) 	U+2800	U+2801	U+2802	U+2803	U+2804	U+2805	U+2806	U+2807	U+2808	U+2809	\
+            	U+280A	U+280B	U+280C	U+280D	U+280E	U+280F	U+2810	U+2811	U+2812	U+2813	\
+            	U+2814	U+2815	U+2816	U+2817	U+2818	U+2819	U+281A	U+281B	U+281C	U+281D	\
+            	U+281E	U+281F	U+2820	U+2821	U+2822	U+2823	U+2824	U+2825	U+2826	U+2827	\
+            	U+2828	U+2829	U+282A	U+282B	U+282C	U+282D	U+282E	U+282F	U+2830	U+2831	\
+            	U+2832	U+2833	U+2834	U+2835	U+2836	U+2837	U+2838	U+2839	U+283A	U+283B	\
+            	U+283C	U+283D	U+283E	U+283F	U+2840	U+2841	U+2842	U+2843	U+2844	U+2845	\
+            	U+2846	U+2847	U+2848	U+2849	U+284A	U+284B	U+284C	U+284D	U+284E	U+284F	\
+            	U+2850	U+2851	U+2852	U+2853	U+2854	U+2855	U+2856	U+2857	U+2858	U+2859	\
+            	U+285A	U+285B	U+285C	U+285D	U+285E	U+285F	U+2860	U+2861	U+2862	U+2863	\
+            	U+2864	U+2865	U+2866	U+2867	U+2868	U+2869	U+286A	U+286B	U+286C	U+286D	\
+            	U+286E	U+286F	U+2870	U+2871	U+2872	U+2873	U+2874	U+2875	U+2876	U+2877	\
+            	U+2878	U+2879	U+287A	U+287B	U+287C	U+287D	U+287E	U+287F	U+2880	U+2881	\
+            	U+2882	U+2883	U+2884	U+2885	U+2886	U+2887	U+2888	U+2889	U+288A	U+288B	\
+            	U+288C	U+288D	U+288E	U+288F	U+2890	U+2891	U+2892	U+2893	U+2894	U+2895	\
+            	U+2896	U+2897	U+2898	U+2899	U+289A	U+289B	U+289C	U+289D	U+289E	U+289F	\
+            	U+28A0	U+28A1	U+28A2	U+28A3	U+28A4	U+28A5	U+28A6	U+28A7	U+28A8	U+28A9	\
+            	U+28AA	U+28AB	U+28AC	U+28AD	U+28AE	U+28AF	U+28B0	U+28B1	U+28B2	U+28B3	\
+            	U+28B4	U+28B5	U+28B6	U+28B7	U+28B8	U+28B9	U+28BA	U+28BB	U+28BC	U+28BD	\
+            	U+28BE	U+28BF	U+28C0	U+28C1	U+28C2	U+28C3	U+28C4	U+28C5	U+28C6	U+28C7	\
+            	U+28C8	U+28C9	U+28CA	U+28CB	U+28CC	U+28CD	U+28CE	U+28CF	U+28D0	U+28D1	\
+            	U+28D2	U+28D3	U+28D4	U+28D5	U+28D6	U+28D7	U+28D8	U+28D9	U+28DA	U+28DB	\
+            	U+28DC	U+28DD	U+28DE	U+28DF	U+28E0	U+28E1	U+28E2	U+28E3	U+28E4	U+28E5	\
+            	U+28E6	U+28E7	U+28E8	U+28E9	U+28EA	U+28EB	U+28EC	U+28ED	U+28EE	U+28EF	\
+            	U+28F0	U+28F1	U+28F2	U+28F3	U+28F4	U+28F5	U+28F6	U+28F7	U+28F8	U+28F9	\
+            	U+28FA	U+28FB	U+28FC	U+28FD	U+28FE	U+28FF					
+
+store(backspace2) 'wo'
+any(braille) + any(backspace2) > Nul
+any(12345678) + any(backspace2) > Nul
+
+c Nul Keys
++ [K_BKQUOTE] > Nul
++ [K_1] > Nul
++ [K_2] > Nul
++ [K_3] > Nul
++ [K_4] > Nul
++ [K_5] > Nul
++ [K_6] > Nul
++ [K_7] > Nul
++ [K_8] > Nul
++ [K_9] > Nul
++ [K_0] > Nul
++ [K_HYPHEN] > Nul
++ [K_EQUAL] > Nul
++ [K_BKSLASH] > Nul
+
++ [K_Q] > Nul
++ [K_W] > Nul
++ [K_E] > Nul
++ [K_R] > Nul
++ [K_T] > Nul
++ [K_Y] > Nul
++ [K_U] > Nul
++ [K_I] > Nul
++ [K_O] > Nul
++ [K_P] > Nul
++ [K_LBRKT] > Nul
++ [K_RBRKT] > Nul
+
++ [K_A] > Nul
++ [K_COLON] > Nul
++ [K_QUOTE] > Nul
+
++ [K_Z] > Nul
++ [K_X] > Nul
++ [K_C] > Nul
++ [K_V] > Nul
++ [K_B] > Nul
++ [K_N] > Nul
++ [K_M] > Nul
++ [K_COMMA] > Nul
++ [K_PERIOD] > Nul
++ [K_SLASH] > Nul
+
++ [SHIFT K_BKQUOTE] > Nul
++ [SHIFT K_1] > Nul
++ [SHIFT K_2] > Nul
++ [SHIFT K_3] > Nul
++ [SHIFT K_4] > Nul
++ [SHIFT K_5] > Nul
++ [SHIFT K_6] > Nul
++ [SHIFT K_7] > Nul
++ [SHIFT K_8] > Nul
++ [SHIFT K_9] > Nul
++ [SHIFT K_0] > Nul
++ [SHIFT K_HYPHEN] > Nul
++ [SHIFT K_EQUAL] > Nul
++ [SHIFT K_BKSLASH] > Nul
+
++ [SHIFT K_Q] > Nul
++ [SHIFT K_W] > Nul
++ [SHIFT K_E] > Nul
++ [SHIFT K_R] > Nul
++ [SHIFT K_T] > Nul
++ [SHIFT K_Y] > Nul
++ [SHIFT K_U] > Nul
++ [SHIFT K_I] > Nul
++ [SHIFT K_O] > Nul
++ [SHIFT K_P] > Nul
++ [SHIFT K_LBRKT] > Nul
++ [SHIFT K_RBRKT] > Nul
+
++ [SHIFT K_A] > Nul
++ [SHIFT K_S] > Nul
++ [SHIFT K_D] > Nul
++ [SHIFT K_F] > Nul
++ [SHIFT K_G] > Nul
++ [SHIFT K_H] > Nul
++ [SHIFT K_J] > Nul 
++ [SHIFT K_K] > Nul 
++ [SHIFT K_L] > Nul 
++ [SHIFT K_COLON] > Nul
++ [SHIFT K_QUOTE] > Nul
+ 
++ [SHIFT K_Z] > Nul
++ [SHIFT K_X] > Nul
++ [SHIFT K_C] > Nul 
++ [SHIFT K_V] > Nul
++ [SHIFT K_B] > Nul
++ [SHIFT K_N] > Nul
++ [SHIFT K_M] > Nul 
++ [SHIFT K_COMMA] > Nul
++ [SHIFT K_PERIOD] > Nul 
++ [SHIFT K_SLASH] > Nul
+
+c End
