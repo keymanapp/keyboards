@@ -8,13 +8,13 @@
   <p lang="es"> <a href="#pid_piaroa-es">Lee este documento en español.</a> </p> 
 </nav>
 
-<a id="pid_piaroa-en">
+<a id="pid_piaroa-en"></a>
 
 <p>The Piaroa keyboard allows you to type Piaroa vowels which are not present in the Spanish alphabet. These vowels utilize the <kbd>AltGr</kbd> key, which is the <kbd>Alt</kbd> key to the right of the spacebar.</p>
 
 <h1>Fonts</h1>
 
-<p>There is no special font required to render Piaroa text, however, some fonts and applications struggle to render the combining cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) underneath the vowel.  On Windows, Calibri renders this correctly (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); on macOS, Helvetica Neue renders these characters correctly (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
+<p>There is no special font required to render Piaroa text, however, some fonts and applications struggle to render the combining cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) underneath the vowel.  On Windows, Calibri renders this correctly (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); on macOS, Helvetica Neue renders these characters correctly (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
 
 <h1>Characters</h1>
 
@@ -46,23 +46,23 @@
 
 <hr>
 
-<a id="pid_piaroa-es">
+<a id="pid_piaroa-es"></a>
 
 <h1 lang="es">Usando el teclado piaroa</h1>
 
 <p lang="es"> Este teclado usa la tecla <kbd>Alt Gr</kbd> para escribir vocales que no
-hay en español.  La tecla <kbd>Alt Gr</kbd> es la tecla <kbd>Alt</kbd> u
+se encuentran en español.  La tecla <kbd>Alt Gr</kbd> es la tecla <kbd>Alt</kbd> u
 <kbd>⌥ Opción</kbd> que está ubicada al lado <strong>derecho</strong> de la
-barra espaciadora; la tecla <kbd>Alt</kbd> a la izquierda <em>no
+barra espaciadora; la tecla <kbd>Alt</kbd> a la izquierda <em>¡no
 funcionará!</em></p>
 
-<h1 lang="es">Fuetes</h1>
+<h1 lang="es">Fuentes</h1>
 
-<p lang="es">Piaroa no requiere un fuente especial. Sin embargo, algunos fuentes no son capazes de renderizar la cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) debajo de vocales.  En sistemas Windows, el fuente Calibri renderiza la cedilla correctamente (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); en sistemas macOS, la fuente Helvetica Neue renderiza la cedilla correctamente (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
+<p lang="es">Piaroa no requiere una fuente especial. Sin embargo, algunas fuentes no son capaces de renderizar la cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) debajo de vocales.  En sistemas Windows, la fuente Calibri renderiza la cedilla correctamente (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); en sistemas macOS, la fuente Helvetica Neue renderiza la cedilla correctamente (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
 
 <aside>
-  <p>Anteriormente, era necesario usar el fuente piaroa SILSophia, pero este
-  fuente no es compatible con Unicode. Por eso, ya no es consegable usar un
+  <p>Anteriormente, era necesario usar la fuente piaroa SILSophia, pero esta
+  fuente no es compatible con Unicode. Por eso, ya no es aconsejable usar una
   fuente especial.</p>
 </aside>
 
@@ -91,7 +91,7 @@ funcionará!</em></p>
 
 <h1>Para descargar el teclado</h1>
 
-<p>Este teclado se puede decargar aquí: <a href='https://keyman.com/keyboards/pid_piaroa'>keyman.com/keyboards/pid_piaroa</a></p>
+<p>Este teclado se puede descargar aquí: <a href='https://keyman.com/keyboards/pid_piaroa'>keyman.com/keyboards/pid_piaroa</a></p>
 
 <hr>
 
