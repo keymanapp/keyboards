@@ -279,15 +279,6 @@ store(12345678) '12345678'
 + [K_L] > '8'
 + [K_SPACE] > U+2800 c BLANK
 
-'7' + [K_S] > '7'
-'3' + [K_D] > '3'
-'2' + [K_F] > '2'
-'1' + [K_G] > '1'
-'4' + [K_H] > '4'
-'5' + [K_J] > '5'
-'6' + [K_K] > '6'
-'8' + [K_L] > '8'
-
 any(1) + [K_SPACE] > U+2801
 any(2) + [K_SPACE] > U+2802
 any(12) any(12) + [K_SPACE] > U+2803
@@ -681,5 +672,518 @@ c Nul Keys
 + [SHIFT K_COMMA] > Nul
 + [SHIFT K_PERIOD] > Nul 
 + [SHIFT K_SLASH] > Nul
+
+c Prevent repetition of a number
+store(g) 'g'
+store(f) 'f'
+store(gf) 'gf'
+store(d) 'd'
+store(gd) 'gd'
+store(fd) 'fd'
+store(gfd) 'gfd'
+store(h) 'h'
+store(gh) 'gh'
+store(fh) 'fh'
+store(gfh) 'gfh'
+store(dh) 'dh'
+store(gdh) 'gdh'
+store(fdh) 'fdh'
+store(gfdh) 'gfdh'
+store(j) 'j'
+store(gj) 'gj'
+store(fj) 'fj'
+store(gfj) 'gfj'
+store(dj) 'dj'
+store(gdj) 'gdj'
+store(fdj) 'fdj'
+store(gfdj) 'gfdj'
+store(hj) 'hj'
+store(ghj) 'ghj'
+store(fhj) 'fhj'
+store(gfhj) 'gfhj'
+store(dhj) 'dhj'
+store(gdhj) 'gdhj'
+store(fdhj) 'fdhj'
+store(gfdhj) 'gfdhj'
+store(k) 'k'
+store(gk) 'gk'
+store(fk) 'fk'
+store(gfk) 'gfk'
+store(dk) 'dk'
+store(gdk) 'gdk'
+store(fdk) 'fdk'
+store(gfdk) 'gfdk'
+store(hk) 'hk'
+store(ghk) 'ghk'
+store(fhk) 'fhk'
+store(gfhk) 'gfhk'
+store(dhk) 'dhk'
+store(gdhk) 'gdhk'
+store(fdhk) 'fdhk'
+store(gfdhk) 'gfdhk'
+store(jk) 'jk'
+store(gjk) 'gjk'
+store(fjk) 'fjk'
+store(gfjk) 'gfjk'
+store(djk) 'djk'
+store(gdjk) 'gdjk'
+store(fdjk) 'fdjk'
+store(gfdjk) 'gfdjk'
+store(hjk) 'hjk'
+store(ghjk) 'ghjk'
+store(fhjk) 'fhjk'
+store(gfhjk) 'gfhjk'
+store(dhjk) 'dhjk'
+store(gdhjk) 'gdhjk'
+store(fdhjk) 'fdhjk'
+store(gfdhjk) 'gfdhjk'
+store(s) 's'
+store(gs) 'gs'
+store(fs) 'fs'
+store(gfs) 'gfs'
+store(ds) 'ds'
+store(gds) 'gds'
+store(fds) 'fds'
+store(gfds) 'gfds'
+store(hs) 'hs'
+store(ghs) 'ghs'
+store(fhs) 'fhs'
+store(gfhs) 'gfhs'
+store(dhs) 'dhs'
+store(gdhs) 'gdhs'
+store(fdhs) 'fdhs'
+store(gfdhs) 'gfdhs'
+store(js) 'js'
+store(gjs) 'gjs'
+store(fjs) 'fjs'
+store(gfjs) 'gfjs'
+store(djs) 'djs'
+store(gdjs) 'gdjs'
+store(fdjs) 'fdjs'
+store(gfdjs) 'gfdjs'
+store(hjs) 'hjs'
+store(ghjs) 'ghjs'
+store(fhjs) 'fhjs'
+store(gfhjs) 'gfhjs'
+store(dhjs) 'dhjs'
+store(gdhjs) 'gdhjs'
+store(fdhjs) 'fdhjs'
+store(gfdhjs) 'gfdhjs'
+store(ks) 'ks'
+store(gks) 'gks'
+store(fks) 'fks'
+store(gfks) 'gfks'
+store(dks) 'dks'
+store(gdks) 'gdks'
+store(fdks) 'fdks'
+store(gfdks) 'gfdks'
+store(hks) 'hks'
+store(ghks) 'ghks'
+store(fhks) 'fhks'
+store(gfhks) 'gfhks'
+store(dhks) 'dhks'
+store(gdhks) 'gdhks'
+store(fdhks) 'fdhks'
+store(gfdhks) 'gfdhks'
+store(jks) 'jks'
+store(gjks) 'gjks'
+store(fjks) 'fjks'
+store(gfjks) 'gfjks'
+store(djks) 'djks'
+store(gdjks) 'gdjks'
+store(fdjks) 'fdjks'
+store(gfdjks) 'gfdjks'
+store(hjks) 'hjks'
+store(ghjks) 'ghjks'
+store(fhjks) 'fhjks'
+store(gfhjks) 'gfhjks'
+store(dhjks) 'dhjks'
+store(gdhjks) 'gdhjks'
+store(fdhjks) 'fdhjks'
+store(gfdhjks) 'gfdhjks'
+store(l) 'l'
+store(gl) 'gl'
+store(fl) 'fl'
+store(gfl) 'gfl'
+store(dl) 'dl'
+store(gdl) 'gdl'
+store(fdl) 'fdl'
+store(gfdl) 'gfdl'
+store(hl) 'hl'
+store(ghl) 'ghl'
+store(fhl) 'fhl'
+store(gfhl) 'gfhl'
+store(dhl) 'dhl'
+store(gdhl) 'gdhl'
+store(fdhl) 'fdhl'
+store(gfdhl) 'gfdhl'
+store(jl) 'jl'
+store(gjl) 'gjl'
+store(fjl) 'fjl'
+store(gfjl) 'gfjl'
+store(djl) 'djl'
+store(gdjl) 'gdjl'
+store(fdjl) 'fdjl'
+store(gfdjl) 'gfdjl'
+store(hjl) 'hjl'
+store(ghjl) 'ghjl'
+store(fhjl) 'fhjl'
+store(gfhjl) 'gfhjl'
+store(dhjl) 'dhjl'
+store(gdhjl) 'gdhjl'
+store(fdhjl) 'fdhjl'
+store(gfdhjl) 'gfdhjl'
+store(kl) 'kl'
+store(gkl) 'gkl'
+store(fkl) 'fkl'
+store(gfkl) 'gfkl'
+store(dkl) 'dkl'
+store(gdkl) 'gdkl'
+store(fdkl) 'fdkl'
+store(gfdkl) 'gfdkl'
+store(hkl) 'hkl'
+store(ghkl) 'ghkl'
+store(fhkl) 'fhkl'
+store(gfhkl) 'gfhkl'
+store(dhkl) 'dhkl'
+store(gdhkl) 'gdhkl'
+store(fdhkl) 'fdhkl'
+store(gfdhkl) 'gfdhkl'
+store(jkl) 'jkl'
+store(gjkl) 'gjkl'
+store(fjkl) 'fjkl'
+store(gfjkl) 'gfjkl'
+store(djkl) 'djkl'
+store(gdjkl) 'gdjkl'
+store(fdjkl) 'fdjkl'
+store(gfdjkl) 'gfdjkl'
+store(hjkl) 'hjkl'
+store(ghjkl) 'ghjkl'
+store(fhjkl) 'fhjkl'
+store(gfhjkl) 'gfhjkl'
+store(dhjkl) 'dhjkl'
+store(gdhjkl) 'gdhjkl'
+store(fdhjkl) 'fdhjkl'
+store(gfdhjkl) 'gfdhjkl'
+store(sl) 'sl'
+store(gsl) 'gsl'
+store(fsl) 'fsl'
+store(gfsl) 'gfsl'
+store(dsl) 'dsl'
+store(gdsl) 'gdsl'
+store(fdsl) 'fdsl'
+store(gfdsl) 'gfdsl'
+store(hsl) 'hsl'
+store(ghsl) 'ghsl'
+store(fhsl) 'fhsl'
+store(gfhsl) 'gfhsl'
+store(dhsl) 'dhsl'
+store(gdhsl) 'gdhsl'
+store(fdhsl) 'fdhsl'
+store(gfdhsl) 'gfdhsl'
+store(jsl) 'jsl'
+store(gjsl) 'gjsl'
+store(fjsl) 'fjsl'
+store(gfjsl) 'gfjsl'
+store(djsl) 'djsl'
+store(gdjsl) 'gdjsl'
+store(fdjsl) 'fdjsl'
+store(gfdjsl) 'gfdjsl'
+store(hjsl) 'hjsl'
+store(ghjsl) 'ghjsl'
+store(fhjsl) 'fhjsl'
+store(gfhjsl) 'gfhjsl'
+store(dhjsl) 'dhjsl'
+store(gdhjsl) 'gdhjsl'
+store(fdhjsl) 'fdhjsl'
+store(gfdhjsl) 'gfdhjsl'
+store(ksl) 'ksl'
+store(gksl) 'gksl'
+store(fksl) 'fksl'
+store(gfksl) 'gfksl'
+store(dksl) 'dksl'
+store(gdksl) 'gdksl'
+store(fdksl) 'fdksl'
+store(gfdksl) 'gfdksl'
+store(hksl) 'hksl'
+store(ghksl) 'ghksl'
+store(fhksl) 'fhksl'
+store(gfhksl) 'gfhksl'
+store(dhksl) 'dhksl'
+store(gdhksl) 'gdhksl'
+store(fdhksl) 'fdhksl'
+store(gfdhksl) 'gfdhksl'
+store(jksl) 'jksl'
+store(gjksl) 'gjksl'
+store(fjksl) 'fjksl'
+store(gfjksl) 'gfjksl'
+store(djksl) 'djksl'
+store(gdjksl) 'gdjksl'
+store(fdjksl) 'fdjksl'
+store(gfdjksl) 'gfdjksl'
+store(hjksl) 'hjksl'
+store(ghjksl) 'ghjksl'
+store(fhjksl) 'fhjksl'
+store(gfhjksl) 'gfhjksl'
+store(dhjksl) 'dhjksl'
+store(gdhjksl) 'gdhjksl'
+store(fdhjksl) 'fdhjksl'
+store(gfdhjksl) 'gfdhjksl'
+
+any(1) + any(g) > context beep
+any(2) + any(f) > context beep
+any(12) any(12) + any(gf) > context beep
+any(3) + any(d) > context beep
+any(13) any(13) + any(gd) > context beep
+any(23) any(23) + any(fd) > context beep
+any(123) any(123) any(123) + any(gfd) > context beep
+any(4) + any(h) > context beep
+any(14) any(14) + any(gh) > context beep
+any(24) any(24) + any(fh) > context beep
+any(124) any(124) any(124) + any(gfh) > context beep
+any(34) any(34) + any(dh) > context beep
+any(134) any(134) any(134) + any(gdh) > context beep
+any(234) any(234) any(234) + any(fdh) > context beep
+any(1234) any(1234) any(1234) any(1234) + any(gfdh) > context beep
+any(5) + any(j) > context beep
+any(15) any(15) + any(gj) > context beep
+any(25) any(25) + any(fj) > context beep
+any(125) any(125) any(125) + any(gfj) > context beep
+any(35) any(35) + any(dj) > context beep
+any(135) any(135) any(135) + any(gdj) > context beep
+any(235) any(235) any(235) + any(fdj) > context beep
+any(1235) any(1235) any(1235) any(1235) + any(gfdj) > context beep
+any(45) any(45) + any(hj) > context beep
+any(145) any(145) any(145) + any(ghj) > context beep
+any(245) any(245) any(245) + any(fhj) > context beep
+any(1245) any(1245) any(1245) any(1245) + any(gfhj) > context beep
+any(345) any(345) any(345) + any(dhj) > context beep
+any(1345) any(1345) any(1345) any(1345) + any(gdhj) > context beep
+any(2345) any(2345) any(2345) any(2345) + any(fdhj) > context beep
+any(12345) any(12345) any(12345) any(12345) any(12345) + any(gfdhj) > context beep
+any(6) + any(k) > context beep
+any(16) any(16) + any(gk) > context beep
+any(26) any(26) + any(fk) > context beep
+any(126) any(126) any(126) + any(gfk) > context beep
+any(36) any(36) + any(dk) > context beep
+any(136) any(136) any(136) + any(gdk) > context beep
+any(236) any(236) any(236) + any(fdk) > context beep
+any(1236) any(1236) any(1236) any(1236) + any(gfdk) > context beep
+any(46) any(46) + any(hk) > context beep
+any(146) any(146) any(146) + any(ghk) > context beep
+any(246) any(246) any(246) + any(fhk) > context beep
+any(1246) any(1246) any(1246) any(1246) + any(gfhk) > context beep
+any(346) any(346) any(346) + any(dhk) > context beep
+any(1346) any(1346) any(1346) any(1346) + any(gdhk) > context beep
+any(2346) any(2346) any(2346) any(2346) + any(fdhk) > context beep
+any(12346) any(12346) any(12346) any(12346) any(12346) + any(gfdhk) > context beep
+any(56) any(56) + any(jk) > context beep
+any(156) any(156) any(156) + any(gjk) > context beep
+any(256) any(256) any(256) + any(fjk) > context beep
+any(1256) any(1256) any(1256) any(1256) + any(gfjk) > context beep
+any(356) any(356) any(356) + any(djk) > context beep
+any(1356) any(1356) any(1356) any(1356) + any(gdjk) > context beep
+any(2356) any(2356) any(2356) any(2356) + any(fdjk) > context beep
+any(12356) any(12356) any(12356) any(12356) any(12356) + any(gfdjk) > context beep
+any(456) any(456) any(456) + any(hjk) > context beep
+any(1456) any(1456) any(1456) any(1456) + any(ghjk) > context beep
+any(2456) any(2456) any(2456) any(2456) + any(fhjk) > context beep
+any(12456) any(12456) any(12456) any(12456) any(12456) + any(gfhjk) > context beep
+any(3456) any(3456) any(3456) any(3456) + any(dhjk) > context beep
+any(13456) any(13456) any(13456) any(13456) any(13456) + any(gdhjk) > context beep
+any(23456) any(23456) any(23456) any(23456) any(23456) + any(fdhjk) > context beep
+any(123456) any(123456) any(123456) any(123456) any(123456) any(123456) + any(gfdhjk) > context beep
+any(7) + any(s) > context beep
+any(17) any(17) + any(gs) > context beep
+any(27) any(27) + any(fs) > context beep
+any(127) any(127) any(127) + any(gfs) > context beep
+any(37) any(37) + any(ds) > context beep
+any(137) any(137) any(137) + any(gds) > context beep
+any(237) any(237) any(237) + any(fds) > context beep
+any(1237) any(1237) any(1237) any(1237) + any(gfds) > context beep
+any(47) any(47) + any(hs) > context beep
+any(147) any(147) any(147) + any(ghs) > context beep
+any(247) any(247) any(247) + any(fhs) > context beep
+any(1247) any(1247) any(1247) any(1247) + any(gfhs) > context beep
+any(347) any(347) any(347) + any(dhs) > context beep
+any(1347) any(1347) any(1347) any(1347) + any(gdhs) > context beep
+any(2347) any(2347) any(2347) any(2347) + any(fdhs) > context beep
+any(12347) any(12347) any(12347) any(12347) any(12347) + any(gfdhs) > context beep
+any(57) any(57) + any(js) > context beep
+any(157) any(157) any(157) + any(gjs) > context beep
+any(257) any(257) any(257) + any(fjs) > context beep
+any(1257) any(1257) any(1257) any(1257) + any(gfjs) > context beep
+any(357) any(357) any(357) + any(djs) > context beep
+any(1357) any(1357) any(1357) any(1357) + any(gdjs) > context beep
+any(2357) any(2357) any(2357) any(2357) + any(fdjs) > context beep
+any(12357) any(12357) any(12357) any(12357) any(12357) + any(gfdjs) > context beep
+any(457) any(457) any(457) + any(hjs) > context beep
+any(1457) any(1457) any(1457) any(1457) + any(ghjs) > context beep
+any(2457) any(2457) any(2457) any(2457) + any(fhjs) > context beep
+any(12457) any(12457) any(12457) any(12457) any(12457) + any(gfhjs) > context beep
+any(3457) any(3457) any(3457) any(3457) + any(dhjs) > context beep
+any(13457) any(13457) any(13457) any(13457) any(13457) + any(gdhjs) > context beep
+any(23457) any(23457) any(23457) any(23457) any(23457) + any(fdhjs) > context beep
+any(123457) any(123457) any(123457) any(123457) any(123457) any(123457) + any(gfdhjs) > context beep
+any(67) any(67) + any(ks) > context beep
+any(167) any(167) any(167) + any(gks) > context beep
+any(267) any(267) any(267) + any(fks) > context beep
+any(1267) any(1267) any(1267) any(1267) + any(gfks) > context beep
+any(367) any(367) any(367) + any(dks) > context beep
+any(1367) any(1367) any(1367) any(1367) + any(gdks) > context beep
+any(2367) any(2367) any(2367) any(2367) + any(fdks) > context beep
+any(12367) any(12367) any(12367) any(12367) any(12367) + any(gfdks) > context beep
+any(467) any(467) any(467) + any(hks) > context beep
+any(1467) any(1467) any(1467) any(1467) + any(ghks) > context beep
+any(2467) any(2467) any(2467) any(2467) + any(fhks) > context beep
+any(12467) any(12467) any(12467) any(12467) any(12467) + any(gfhks) > context beep
+any(3467) any(3467) any(3467) any(3467) + any(dhks) > context beep
+any(13467) any(13467) any(13467) any(13467) any(13467) + any(gdhks) > context beep
+any(23467) any(23467) any(23467) any(23467) any(23467) + any(fdhks) > context beep
+any(123467) any(123467) any(123467) any(123467) any(123467) any(123467) + any(gfdhks) > context beep
+any(567) any(567) any(567) + any(jks) > context beep
+any(1567) any(1567) any(1567) any(1567) + any(gjks) > context beep
+any(2567) any(2567) any(2567) any(2567) + any(fjks) > context beep
+any(12567) any(12567) any(12567) any(12567) any(12567) + any(gfjks) > context beep
+any(3567) any(3567) any(3567) any(3567) + any(djks) > context beep
+any(13567) any(13567) any(13567) any(13567) any(13567) + any(gdjks) > context beep
+any(23567) any(23567) any(23567) any(23567) any(23567) + any(fdjks) > context beep
+any(123567) any(123567) any(123567) any(123567) any(123567) any(123567) + any(gfdjks) > context beep
+any(4567) any(4567) any(4567) any(4567) + any(hjks) > context beep
+any(14567) any(14567) any(14567) any(14567) any(14567) + any(ghjks) > context beep
+any(24567) any(24567) any(24567) any(24567) any(24567) + any(fhjks) > context beep
+any(124567) any(124567) any(124567) any(124567) any(124567) any(124567) + any(gfhjks) > context beep
+any(34567) any(34567) any(34567) any(34567) any(34567) + any(dhjks) > context beep
+any(134567) any(134567) any(134567) any(134567) any(134567) any(134567) + any(gdhjks) > context beep
+any(234567) any(234567) any(234567) any(234567) any(234567) any(234567) + any(fdhjks) > context beep
+any(1234567) any(1234567) any(1234567) any(1234567) any(1234567) any(1234567) any(1234567) + any(gfdhjks) > context beep
+any(8) + any(l) > context beep
+any(18) any(18) + any(gl) > context beep
+any(28) any(28) + any(fl) > context beep
+any(128) any(128) any(128) + any(gfl) > context beep
+any(38) any(38) + any(dl) > context beep
+any(138) any(138) any(138) + any(gdl) > context beep
+any(238) any(238) any(238) + any(fdl) > context beep
+any(1238) any(1238) any(1238) any(1238) + any(gfdl) > context beep
+any(48) any(48) + any(hl) > context beep
+any(148) any(148) any(148) + any(ghl) > context beep
+any(248) any(248) any(248) + any(fhl) > context beep
+any(1248) any(1248) any(1248) any(1248) + any(gfhl) > context beep
+any(348) any(348) any(348) + any(dhl) > context beep
+any(1348) any(1348) any(1348) any(1348) + any(gdhl) > context beep
+any(2348) any(2348) any(2348) any(2348) + any(fdhl) > context beep
+any(12348) any(12348) any(12348) any(12348) any(12348) + any(gfdhl) > context beep
+any(58) any(58) + any(jl) > context beep
+any(158) any(158) any(158) + any(gjl) > context beep
+any(258) any(258) any(258) + any(fjl) > context beep
+any(1258) any(1258) any(1258) any(1258) + any(gfjl) > context beep
+any(358) any(358) any(358) + any(djl) > context beep
+any(1358) any(1358) any(1358) any(1358) + any(gdjl) > context beep
+any(2358) any(2358) any(2358) any(2358) + any(fdjl) > context beep
+any(12358) any(12358) any(12358) any(12358) any(12358) + any(gfdjl) > context beep
+any(458) any(458) any(458) + any(hjl) > context beep
+any(1458) any(1458) any(1458) any(1458) + any(ghjl) > context beep
+any(2458) any(2458) any(2458) any(2458) + any(fhjl) > context beep
+any(12458) any(12458) any(12458) any(12458) any(12458) + any(gfhjl) > context beep
+any(3458) any(3458) any(3458) any(3458) + any(dhjl) > context beep
+any(13458) any(13458) any(13458) any(13458) any(13458) + any(gdhjl) > context beep
+any(23458) any(23458) any(23458) any(23458) any(23458) + any(fdhjl) > context beep
+any(123458) any(123458) any(123458) any(123458) any(123458) any(123458) + any(gfdhjl) > context beep
+any(68) any(68) + any(kl) > context beep
+any(168) any(168) any(168) + any(gkl) > context beep
+any(268) any(268) any(268) + any(fkl) > context beep
+any(1268) any(1268) any(1268) any(1268) + any(gfkl) > context beep
+any(368) any(368) any(368) + any(dkl) > context beep
+any(1368) any(1368) any(1368) any(1368) + any(gdkl) > context beep
+any(2368) any(2368) any(2368) any(2368) + any(fdkl) > context beep
+any(12368) any(12368) any(12368) any(12368) any(12368) + any(gfdkl) > context beep
+any(468) any(468) any(468) + any(hkl) > context beep
+any(1468) any(1468) any(1468) any(1468) + any(ghkl) > context beep
+any(2468) any(2468) any(2468) any(2468) + any(fhkl) > context beep
+any(12468) any(12468) any(12468) any(12468) any(12468) + any(gfhkl) > context beep
+any(3468) any(3468) any(3468) any(3468) + any(dhkl) > context beep
+any(13468) any(13468) any(13468) any(13468) any(13468) + any(gdhkl) > context beep
+any(23468) any(23468) any(23468) any(23468) any(23468) + any(fdhkl) > context beep
+any(123468) any(123468) any(123468) any(123468) any(123468) any(123468) + any(gfdhkl) > context beep
+any(568) any(568) any(568) + any(jkl) > context beep
+any(1568) any(1568) any(1568) any(1568) + any(gjkl) > context beep
+any(2568) any(2568) any(2568) any(2568) + any(fjkl) > context beep
+any(12568) any(12568) any(12568) any(12568) any(12568) + any(gfjkl) > context beep
+any(3568) any(3568) any(3568) any(3568) + any(djkl) > context beep
+any(13568) any(13568) any(13568) any(13568) any(13568) + any(gdjkl) > context beep
+any(23568) any(23568) any(23568) any(23568) any(23568) + any(fdjkl) > context beep
+any(123568) any(123568) any(123568) any(123568) any(123568) any(123568) + any(gfdjkl) > context beep
+any(4568) any(4568) any(4568) any(4568) + any(hjkl) > context beep
+any(14568) any(14568) any(14568) any(14568) any(14568) + any(ghjkl) > context beep
+any(24568) any(24568) any(24568) any(24568) any(24568) + any(fhjkl) > context beep
+any(124568) any(124568) any(124568) any(124568) any(124568) any(124568) + any(gfhjkl) > context beep
+any(34568) any(34568) any(34568) any(34568) any(34568) + any(dhjkl) > context beep
+any(134568) any(134568) any(134568) any(134568) any(134568) any(134568) + any(gdhjkl) > context beep
+any(234568) any(234568) any(234568) any(234568) any(234568) any(234568) + any(fdhjkl) > context beep
+any(1234568) any(1234568) any(1234568) any(1234568) any(1234568) any(1234568) any(1234568) + any(gfdhjkl) > context beep
+any(78) any(78) + any(sl) > context beep
+any(178) any(178) any(178) + any(gsl) > context beep
+any(278) any(278) any(278) + any(fsl) > context beep
+any(1278) any(1278) any(1278) any(1278) + any(gfsl) > context beep
+any(378) any(378) any(378) + any(dsl) > context beep
+any(1378) any(1378) any(1378) any(1378) + any(gdsl) > context beep
+any(2378) any(2378) any(2378) any(2378) + any(fdsl) > context beep
+any(12378) any(12378) any(12378) any(12378) any(12378) + any(gfdsl) > context beep
+any(478) any(478) any(478) + any(hsl) > context beep
+any(1478) any(1478) any(1478) any(1478) + any(ghsl) > context beep
+any(2478) any(2478) any(2478) any(2478) + any(fhsl) > context beep
+any(12478) any(12478) any(12478) any(12478) any(12478) + any(gfhsl) > context beep
+any(3478) any(3478) any(3478) any(3478) + any(dhsl) > context beep
+any(13478) any(13478) any(13478) any(13478) any(13478) + any(gdhsl) > context beep
+any(23478) any(23478) any(23478) any(23478) any(23478) + any(fdhsl) > context beep
+any(123478) any(123478) any(123478) any(123478) any(123478) any(123478) + any(gfdhsl) > context beep
+any(578) any(578) any(578) + any(jsl) > context beep
+any(1578) any(1578) any(1578) any(1578) + any(gjsl) > context beep
+any(2578) any(2578) any(2578) any(2578) + any(fjsl) > context beep
+any(12578) any(12578) any(12578) any(12578) any(12578) + any(gfjsl) > context beep
+any(3578) any(3578) any(3578) any(3578) + any(djsl) > context beep
+any(13578) any(13578) any(13578) any(13578) any(13578) + any(gdjsl) > context beep
+any(23578) any(23578) any(23578) any(23578) any(23578) + any(fdjsl) > context beep
+any(123578) any(123578) any(123578) any(123578) any(123578) any(123578) + any(gfdjsl) > context beep
+any(4578) any(4578) any(4578) any(4578) + any(hjsl) > context beep
+any(14578) any(14578) any(14578) any(14578) any(14578) + any(ghjsl) > context beep
+any(24578) any(24578) any(24578) any(24578) any(24578) + any(fhjsl) > context beep
+any(124578) any(124578) any(124578) any(124578) any(124578) any(124578) + any(gfhjsl) > context beep
+any(34578) any(34578) any(34578) any(34578) any(34578) + any(dhjsl) > context beep
+any(134578) any(134578) any(134578) any(134578) any(134578) any(134578) + any(gdhjsl) > context beep
+any(234578) any(234578) any(234578) any(234578) any(234578) any(234578) + any(fdhjsl) > context beep
+any(1234578) any(1234578) any(1234578) any(1234578) any(1234578) any(1234578) any(1234578) + any(gfdhjsl) > context beep
+any(678) any(678) any(678) + any(ksl) > context beep
+any(1678) any(1678) any(1678) any(1678) + any(gksl) > context beep
+any(2678) any(2678) any(2678) any(2678) + any(fksl) > context beep
+any(12678) any(12678) any(12678) any(12678) any(12678) + any(gfksl) > context beep
+any(3678) any(3678) any(3678) any(3678) + any(dksl) > context beep
+any(13678) any(13678) any(13678) any(13678) any(13678) + any(gdksl) > context beep
+any(23678) any(23678) any(23678) any(23678) any(23678) + any(fdksl) > context beep
+any(123678) any(123678) any(123678) any(123678) any(123678) any(123678) + any(gfdksl) > context beep
+any(4678) any(4678) any(4678) any(4678) + any(hksl) > context beep
+any(14678) any(14678) any(14678) any(14678) any(14678) + any(ghksl) > context beep
+any(24678) any(24678) any(24678) any(24678) any(24678) + any(fhksl) > context beep
+any(124678) any(124678) any(124678) any(124678) any(124678) any(124678) + any(gfhksl) > context beep
+any(34678) any(34678) any(34678) any(34678) any(34678) + any(dhksl) > context beep
+any(134678) any(134678) any(134678) any(134678) any(134678) any(134678) + any(gdhksl) > context beep
+any(234678) any(234678) any(234678) any(234678) any(234678) any(234678) + any(fdhksl) > context beep
+any(1234678) any(1234678) any(1234678) any(1234678) any(1234678) any(1234678) any(1234678) + any(gfdhksl) > context beep
+any(5678) any(5678) any(5678) any(5678) + any(jksl) > context beep
+any(15678) any(15678) any(15678) any(15678) any(15678) + any(gjksl) > context beep
+any(25678) any(25678) any(25678) any(25678) any(25678) + any(fjksl) > context beep
+any(125678) any(125678) any(125678) any(125678) any(125678) any(125678) + any(gfjksl) > context beep
+any(35678) any(35678) any(35678) any(35678) any(35678) + any(djksl) > context beep
+any(135678) any(135678) any(135678) any(135678) any(135678) any(135678) + any(gdjksl) > context beep
+any(235678) any(235678) any(235678) any(235678) any(235678) any(235678) + any(fdjksl) > context beep
+any(1235678) any(1235678) any(1235678) any(1235678) any(1235678) any(1235678) any(1235678) + any(gfdjksl) > context beep
+any(45678) any(45678) any(45678) any(45678) any(45678) + any(hjksl) > context beep
+any(145678) any(145678) any(145678) any(145678) any(145678) any(145678) + any(ghjksl) > context beep
+any(245678) any(245678) any(245678) any(245678) any(245678) any(245678) + any(fhjksl) > context beep
+any(1245678) any(1245678) any(1245678) any(1245678) any(1245678) any(1245678) any(1245678) + any(gfhjksl) > context beep
+any(345678) any(345678) any(345678) any(345678) any(345678) any(345678) + any(dhjksl) > context beep
+any(1345678) any(1345678) any(1345678) any(1345678) any(1345678) any(1345678) any(1345678) + any(gdhjksl) > context beep
+any(2345678) any(2345678) any(2345678) any(2345678) any(2345678) any(2345678) any(2345678) + any(fdhjksl) > context beep
+any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) any(12345678) + any(gfdhjksl) > context beep
 
 c End
