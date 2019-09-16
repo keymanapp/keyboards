@@ -90,6 +90,19 @@ function build_keyboards {
   return 0
 }
 
+function build_keyboard_group {
+  # Build a single group of keyboards, e.g. release/a
+  # This function is only valid for the keyboards repo; it is
+  # unnecessary for the keyboards_starter repo.
+  local shortname=$(basename "$1")
+  local group=$(dirname "$1")
+
+  local keyboard
+  for keyboard in "$group/$shortname/"*/ ; do
+    build_keyboard "$group" "$keyboard"
+  done
+}
+
 #----------------------------------------------------------------------------------------
 # Build a keyboard
 #----------------------------------------------------------------------------------------
@@ -170,7 +183,11 @@ function build_keyboard {
   if [ -f build.sh ]; then
     # We call this build.sh and assume it generates the
     # right stuff
-    . ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
+    if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
+      PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
+      FLAG_TARGET=-t
+    fi
+    ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
     if [[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]; then
