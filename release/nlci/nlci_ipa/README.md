@@ -1,6 +1,6 @@
 # NLCI IPA WinScript Keyboard
 
-Copyright (C) 2002-2019 NLCI, Bangalore
+Copyright (c) 2002-2019 NLCI, Bangalore
 
 Version 2.0
 
