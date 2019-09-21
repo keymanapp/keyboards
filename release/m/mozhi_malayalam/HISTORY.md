@@ -1,6 +1,15 @@
 Mozhi Malayalam Keyboard Change History
 =======================
-2.0.8 (19 September 2018)
+2.1 (21 August 2019)
+----------------------
+# Major Release
+This release is after thorough checking of the keyboard for about a year.
+
+## Major Changes
+* Added support for a few more archaic characters
+  * Chillu ma
+
+2.0.8 (27 September 2018)
 --------------------
 ## Major Changes
 * Added support for Nukta (F key)
