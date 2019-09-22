@@ -16,7 +16,7 @@ shopt -s nullglob
 # experimental. This should be run after ci.sh.
 #
 # The only command line flag is -f. This should only be used if you
-# want to update all the keyboard documentation in the help.keyman.com repo, 
+# want to update all the keyboard documentation in the help.keyman.com repo,
 # even if it already exists. This could possibly be needed if we change the
 # file structure, but rarely otherwise.
 #
@@ -86,31 +86,31 @@ function upload_keyboard_help {
   local sourcepath=$KEYBOARDROOT/$group/$shortname/$base_keyboard/source
   local helppath=$sourcepath/help
   local keyboard_info=$buildpath/$base_keyboard.keyboard_info
-  
+
   #
   # Look for source/help folder. Verify that <id>.php exists.
   #
-  
+
   if [[ ! -d "$helppath" ]]; then
     echo "${t_yel}Warning: $base_keyboard does not include any PHP documentation${t_end}"
     return 0
   fi
-  
+
   #
   # Note: release/packages which contain multiple keyboards should also have the keyboards
   # as separate entries in the release/ folder. This means we may have a combined package
-  # help file as well as a per-keyboard help file. It is acceptable in this situation to 
+  # help file as well as a per-keyboard help file. It is acceptable in this situation to
   # make the combined help file link to the per-keyboard help files.
   #
-    
+
   #
-  # Copy all files in that folder, according to the current 
+  # Copy all files in that folder, according to the current
   # version of the keyboard, to help.keyman.com/keyboard/<id>/<version>/
   #
-  
+
   local version=`cat "$keyboard_info" | $JQ -r '.version'`
   local dstpath="$HELP_KEYMAN_COM/keyboard/$base_keyboard"
-    
+
   mkdir -p "$dstpath/$version/"
   cp -r "$helppath"/* "$dstpath/$version/"
 }
@@ -144,14 +144,14 @@ function upload_keyboard_helps_by_target {
 ##
 function upload_keyboard_helps {
   # $1 = path to build keyboards
-  # for each keyboard, if a build.sh file exists, call it, otherwise, run the default 
+  # for each keyboard, if a build.sh file exists, call it, otherwise, run the default
   # build based on the folder name and location.
-  
+
   # excluded folders are: shared, packages and template
 
   local group=$1
   local excluded_folders=" shared packages template "
-  
+
   echo "Uploading keyboards for $1"
   local shortname
   for shortname in "$KEYBOARDROOT/$group/"*/ ; do
@@ -159,10 +159,10 @@ function upload_keyboard_helps {
     if [[ "$base_shortname" == '*' ]]; then
       return 0
     fi
-    
+
     if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
       echo "- Skipping folder $group/$base_shortname"
-    else 
+    else
       if [[ "$base_shortname" < "$START" ]]; then
         echo "- Skipping folder $group/$base_shortname, before $START"
       else
@@ -174,7 +174,7 @@ function upload_keyboard_helps {
       fi
     fi
   done
-  
+
   #
   # Now upload the packages help.
   #
@@ -186,7 +186,7 @@ function upload_keyboard_helps {
       upload_keyboard_help "$group" "$package"
     done
   fi
-  
+
   return 0
 }
 
@@ -196,7 +196,7 @@ function upload_keyboard_helps {
 
 function commit_and_push {
   echo "Committing and pushing updated keyboard documentation (if any)"
-  
+
   pushd $HELP_KEYMAN_COM
   git config user.name "Keyman Build Server"
   git config user.email "keyman-server@users.noreply.github.com"
@@ -207,14 +207,15 @@ function commit_and_push {
     popd
     return 0
   }
-  
+
   echo "changes added to cache...>>>"
   git commit -m "Keyboard help deployment (automatic)" || return 1
+  git pull origin master || return 1
   git push origin master || return 1
   popd
-  
+
   echo "Push to help.keyman.com complete"
-  
+
   return 0
 }
 
