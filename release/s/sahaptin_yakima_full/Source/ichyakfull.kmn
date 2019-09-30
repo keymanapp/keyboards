@@ -1,0 +1,140 @@
+﻿c This project provides a desktop and on-screen keyboard that cancels English characters that are not shared with Ichishkiin and puts "special" characters (barred, accented, and/or back characters) into an ALT+ key combination. The glottal stop character is mapped onto the regular apostrophe key.
+c It also provides a version of the mobile keyboard for both Android and iOS that features a full layout with all characters visible with "alternate" versions (accented and hard) on key-hold options. This is recommended for those either more familiar with smaller buttons or with a larger screen, on a phone or a tablet. Those with smaller screens or wanting larger buttons on a mobile keyboard should use the Condensed version.
+
+store(&TARGETS) 'linux web mobile desktop tablet'
+store(&NAME) 'Yakima Ichishkíin / Sahaptin (full keyboard)'
+store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© 2019 Keegan Livermore'
+store(&LAYOUTFILE) 'ichyakfull.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'ichyak.kvks'
+begin Unicode > use(main)
+
+group(main) using keys
+
+c desktop/web keyboard
+
+C deadkeys for English-only characters
+store(english) "qerdfgjzvb`"
++ any(english) > dk(notused)
+
+c uppercase special characters
++ [SHIFT ALT K_L] > 'Ł'
++ [SHIFT ALT K_O] > 'Ɨ́'
++ [SHIFT ALT K_U] > 'Ú'
++ [SHIFT ALT K_I] > 'Í'
++ [SHIFT ALT K_K] > 'Ḵ'
++ [SHIFT ALT K_X] > 'X̱'
++ [SHIFT ALT K_A] > 'Á'
+c uppercase simple characters
++ [SHIFT K_Y] > 'Y'
++ [SHIFT K_T] > 'T'
++ [SHIFT K_N] > 'N'
++ [SHIFT K_M] > 'M'
++ [SHIFT K_K] > 'K'
++ [SHIFT K_L] > 'L'
++ [SHIFT K_O] > 'Ɨ'
++ [SHIFT K_I] > 'I'
++ [SHIFT K_U] > 'U'
++ [SHIFT K_H] > 'H'
++ [SHIFT K_W] > 'W'
++ [SHIFT K_C] > 'Ch'
++ [SHIFT K_S] > 'S'
++ [SHIFT K_A] > 'A'
++ [SHIFT K_X] > 'X'
+c lowercase special characters
++ [ALT K_K] > 'ḵ'
++ [ALT K_X] > 'x̱'
++ [ALT K_L] > 'ł'
++ [ALT K_A] > 'á'
++ [ALT K_O] > 'ɨ́'
++ [ALT K_I] > 'í'
++ [ALT K_U] > 'ú'
+c lowercase simple characters
++ [K_N] > 'n'
++ [K_C] > 'ch'
++ [K_X] > 'x'
++ [K_H] > 'h'
++ [K_K] > 'k'
++ [K_L] > 'l'
++ [K_P] > 'p'
++ [K_O] > 'ɨ'
++ [K_I] > 'i'
++ [K_U] > 'u'
++ [K_Y] > 'y'
++ [K_T] > 't'
++ [K_W] > 'w'
++ [K_S] > 's'
++ [K_A] > 'a'
++ [K_M] > 'm'
++ [K_QUOTE] > "’"
+
+c touch keyboard
+c lowercase double characters
++ [T_sfkw] > "kw"
++ [T_hfkw] > "kw’"
++ [T_sts] > "ts"
++ [T_hts] > "ts’"
++ [T_uu] > "uu"
++ [T_auu] > "úu"
++ [T_ii] > "ii"
++ [T_aii] > "íi"
++ [T_bi] > "ɨ"
++ [T_abi] > "ɨ́"
++ [T_stbl] > "tł"
++ [T_htbl] > "tł’"
++ [T_aa] > "aa"
++ [T_aaa] > "áa"
++ [T_hch] > "ch’"
++ [T_sh] > "sh"
++ [T_sbkw] > "ḵw"
++ [T_hbkw] > "ḵw’"
++ [T_sbk] > "ḵ"
++ [T_hbk] > "ḵ’"
++ [T_bxw] > "x̱w"
++ [T_bx] > "x̱"
++ [T_fxw] > "xw"
++ [T_ht] > "t’"
++ [T_glot] > "’"
++ [T_hp] > "p’"
++ [T_asa] > "á"
++ [T_asi] > "í"
++ [T_asu] > "ú"
++ [T_hfk] > "k’"
++ [T_bl] > "ł"
+
+c uppercase specialty characters
+c 1st row
++ [SHIFT T_csts] > "Ts"
++ [SHIFT T_chts] > "Ts’"
++ [SHIFT T_cht] > "T’"
++ [SHIFT T_cbi] > "Ɨ"
++ [SHIFT T_cabi] > "Ɨ́"
++ [SHIFT T_chp] > "P’"
++ [SHIFT T_clu] > "Uu"
++ [SHIFT T_calu] > "Úu"
++ [SHIFT T_cli] > "Ii"
++ [SHIFT T_cali] > "Íi"
+c 2nd row
++ [SHIFT T_cstbl] > "Tł"
++ [SHIFT T_chtbl] > "Tł’"
++ [SHIFT T_casa] > "Á"
++ [SHIFT T_casu] > "Ú"
++ [SHIFT T_casi] > "Í"
+c 3rd row
++ [SHIFT T_cla] > "Aa"
++ [SHIFT T_cala] > "́Áa"
++ [SHIFT T_csch] > "Ch"
++ [SHIFT T_chch] > "Ch’"
++ [SHIFT T_csh] > "Sh"
++ [SHIFT T_csbkw] > "Ḵw"
++ [SHIFT T_chbkw] > "Ḵw’"
++ [SHIFT T_csbk] > "Ḵ"
++ [SHIFT T_chbk] > "Ḵ’"
++ [SHIFT T_chfk] > "K’"
++ [SHIFT T_csfkw] > "Kw"
++ [SHIFT T_chfkw] > "Kw’"
++ [SHIFT T_cbl] > "Ł"
+c 4th row
++ [SHIFT T_cbxw] > "X̱w"
++ [SHIFT T_cbx] > "X̱"
++ [SHIFT T_cfxw] > "Xw"
