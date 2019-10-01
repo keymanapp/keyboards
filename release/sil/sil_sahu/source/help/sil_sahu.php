@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Sahu (SIL)</title>
-  <style type="text/css">
+<?php
+  $pagename = 'SIL Sahu Keyboard Help';
+  $pagetitle = 'SIL Sahu Keyboard Help';
+  require_once('header.php');
+?>
+
+<style type="text/css">
     p { font: 12pt Tahoma; }
     h1 { font: bold 18pt Tahoma; color: #4444cc; margin-bottom: 2px }
     h2 { font: bold 16pt Tahoma; color: #4444cc; }
     h3 { font: bold 14pt Tahoma; color: #4444cc; }
-  </style>
-</head>
-<body>
+</style>
 
 <h1>The SIL Sahu Keyman Keyboard Package</h1>
 
@@ -84,6 +83,3 @@
 </p>
 
 <p>©2019 SIL International</p>
-
-</body>
-</html>
