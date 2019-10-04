@@ -1,6 +1,11 @@
 ____________ Keyboard Change History
 =======================
 
+3.4 (4 Oct 2019)
+-----------------
+
+* Revised touch layout to reduce number of keys.
+
 3.3.1 (1 Oct 2019)
 -----------------
 
