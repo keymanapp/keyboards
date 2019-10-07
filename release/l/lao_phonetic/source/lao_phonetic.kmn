@@ -1,0 +1,679 @@
+﻿c Phonetic input Lao keyboard for Unicode fonts.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Lao Phonetic'
+store(&HOTKEY) '[CTRL SHIFT K_P]'
+store(&MESSAGE) 'Phonetic input Lao keyboard.'
+store(&COPYRIGHT) '© 2015-2018 John Durdin'
+store(&capsalwaysoff) "1"
+
+store(&TARGETS) 'windows macosx'
+store(&BITMAP) 'lao_phonetic.ico'
+store(&VISUALKEYBOARD) 'lao_phonetic.kvks'
+store(&KEYBOARDVERSION) '1.1'
+
+begin Unicode > use(Start)
+
+c Zero width space break character (or asterisk for testing)
+c store(ZWSP)  U+200B  c "*"
+ 
+c All keyboard characters that are used to form Lao characters or syllables
+ store(LetterKey) "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQSTUVWYZ" [K_BKQUOTE] [K_BKSP]
+ 
+c Consonants that are used as part of Lao vowel combinations (in new or old spellings)
+ store(NY) "ຍ"
+ store(W) "ວ"
+ store(OAng) "ອ"
+ store(L) "ລ"      
+ store(M) "ມ"      
+ store(N) "ນ"  
+ store(R) "ຣ"
+ store(NG) "ງ"
+ store(NY) "ຍ"
+ store(H) "ຮ"
+ store(HH) "ຫ"
+ store(HN) "ໜ"
+ store(LMN) "ລມນ"
+ store(_R) U+0EBC 
+      
+c Final Lao consonants that are unvoiced but written as voiced
+ store(LaoFinal) "ດບຍ"
+ store(LaoNonFinal) "ຕປຢ"
+    
+c All initial consonants (o-ang will be inserted automatically)
+ store(C)  "kKCgjJcxñdtTDnbpPFBfmyrlvwsVSHhNM"
+ store(CLao) "ກຂຄງຈຽຈຊຍດຕຖທນບປຜຝພຟມຢຣລວວສວສຫຮໜໝ" "ອ" U+0EBC
+
+ store(MC) "kctnpfmh"
+ store(MCLao) "ກຈຕນປຟມຮ" 
+ store(LCLao) "ຄຈທນພຟມຫ" 
+ store(HCLao) "ຂຈຖໜຜຝໝຫ" 
+
+ store(UC2) "WGYL"
+ store(UC2Lao) "ວງຍ" U+0EBC
+
+ store(RRW) U+0EBC "ຣວ"
+ 
+c Vowel characters and marks that need to be separately identified
+ store(A) "ະ"
+ store(AA) "າ"                                                     
+ store(E) "ເ"
+ store(AE) "ແ"
+ store(IA) "ຽ"
+ store(OO) "ໂ"
+ store(MaiMai) "ໄ"
+ store(MaiMuan) "ໃ"
+ store(AM) U+0EB3
+ store(MaiKan) U+0EB1          
+ store(MaiKong) U+0EBB
+ store(I) U+0EB4
+ store(II) U+0EB5
+ store(J) U+0EB6       c eu vowel, not w (denoted here always by V)
+ store(JJ) U+0EB7                                                                                
+ store(U) U+0EB8
+ store(UU) U+0EB9
+ store(OH) U+0ECD
+ 
+c Sets of superscript and subscript vowels
+ store(VILao) U+0EB4 U+0EB5 
+ store(VJLao) U+0EB6 U+0EB7
+ store(VS1Lao) U+0EB1 U+0EBB
+ store(VS2Lao) U+0EB4 U+0EB5 U+0EB6 U+0EB7 U+0EB8 U+0EB9
+ store(VSSLao) outs(VS1Lao) outs(VS2Lao)
+  
+c Set of all Lao vowel symbols that can precede a final consonant
+ store(VSLao) outs(VSSLao) $AA $IA $OAng $W
+
+c Set of all non-diacritic vowel and semi-vowel symbols
+ store(VNDLao) $A $AM $AA $IA $OAng $W $NY
+   
+c Set of all letters used to encode Lao vowels, and set of all Lao vowel characters
+ store(V) "aeiouzqAEIOUZQ"  
+ store(VP1)  $E $AE $OO 
+ store(VP2) $MaiMai $MaiMuan 
+ store(VPrefix) outs(VP1) outs(VP2)
+
+c Set of all unambigious vowel characters (excludes -w, -oang)
+ store(VLao) $A $AA $AM $IA U+0ECD outs(VSSLao) outs(VPrefix)
+
+c Tone mark characters and corresponding keys
+ store(T) "1234"
+ store(ToneLao) U+0EC8 U+0EC9 U+0ECA U+0ECB
+ store(Thanthakhat) U+0ECC
+
+c Special (abbreviation), numeric,and punctuation characters and keyboard equivalents
+ store(Sign)  "ໆຯ"
+ store(SignKey) "RX"
+                                    
+c Numerals, Lao numerals
+ store(Numeral) "1234567890/*-+."   
+ store(NumberPadKey) [K_NP1] [K_NP2] [K_NP3] [K_NP4] [K_NP5] \
+           [K_NP6] [K_NP7] [K_NP8] [K_NP9] [K_NP0] \
+           [K_NPSLASH] [K_NPSTAR] [K_NPMINUS] [K_NPPLUS] [K_NPDOT] 
+    
+ store(LaoNumeral) "໑໒໓໔໕໖໗໘໙໐"
+ store(LaoNumeralKey) [RALT K_1][RALT K_2][RALT K_3][RALT K_4][RALT K_5] \
+                     [RALT K_6][RALT K_7][RALT K_8][RALT K_9][RALT K_0]                    
+
+ store(LaoLetter) outs(CLao) outs(VLao) outs(ToneLao)
+
+c Currency symbols
+ store(Currency) "$₭€£¥"
+ store(NextCurrency)"₭€£¥$"
+ 
+c Punctuation marks which should never be separated from preceding text
+store(Punctuation) "!@#%-+=_.,)]}>:;'?" d34
+
+c ====================================================================
+c Process special (virtual key) rules first, then match pending syllable (if any)
+c ====================================================================
+group(Start) using keys
+
+c Number pad and virtual key conversions - always return digits or mathematical symbols
+ + any(NumberPadKey) > index(Numeral,1)
+ + any(LaoNumeralKey) > index(LaoNumeral,1)
+ + [RALT K_LBRKT] > '['
+ + [RALT K_RBRKT] > ']'
+ + [RALT K_BKQUOTE] > U+20AD
+ + [RALT K_EQUAL] > '€'  
+ 
+c Currency symbol rotation
+ any(Currency) + [K_BKQUOTE] > index(NextCurrency,1)
+ 
+c Special rules for adding thanthakhat (mainly for loan words)
+ any(ToneLao)  + [SHIFT K_5] > context "%"
+ any(LaoLetter) + [SHIFT K_5] > context $Thanthakhat dk(1)
+ any(ToneLao) dk(1) + [SHIFT K_5] > context "%"
+ any(LaoLetter) dk(1) + [SHIFT K_5] > $Thanthakhat dk(1)
+ 
+c Space character output when not following a Lao syllable string
+  dk(1) + [K_SPACE] > d32       c delete ZWSP before a normal space
+  any(LaoLetter) + [K_SPACE]  > context(1) dk(1)  c insert ZWSP if immediately after Lao character
+  + [K_SPACE] > d32             c in all other situations, output space unchanged
+                                        
+c Syllable modification signs
+  + any(SignKey) > index(Sign,1) dk(1)
+  dk(1) + any(SignKey) > index(Sign,2) dk(1)
+  
+c Backspace deletes ZWSP and preceding segment
+  dk(1) + [K_BKSP] > nul use(Start)
+  + [K_BKSP] > use(checkForTones)
+
+c Accent after ZWSP also deletes ZWSP then modifies the preceding syllable
+  dk(1) + [K_BKQUOTE] > nul use(Start)
+
+c Add a tone mark and terminate the syllable with ZWSP
+  any(LaoLetter) + any(T) > context use(addTone)
+ 
+c Allow repositioning of tone mark on digraph initial (after a prefix vowel)
+  any(VPrefix) any(CLao) any(ToneLao) any(CLao) + [K_BKQUOTE] > context(1) context(2) context(4) context(3) 
+  any(VPrefix) any(CLao) any(CLao) any(ToneLao) + [K_BKQUOTE] > context(1) context(2) context(4) context(3) 
+
+c Prevent ZWSP separating punctuation from preceding text
+  dk(1) + any(Punctuation) > index(Punctuation,2) dk(1) 
+
+c Ignore W, G, L, Y unless starting a syllable
+  any(LaoLetter) + any(UC2) > context  
+      
+  nomatch > use(Filter)
+   
+c ====================================================================
+c Main filter: match existing syllable (if any), and pass to the appropriate rule group
+c ====================================================================
+group(Filter) using keys
+   
+c Match open syllables
+  $A + any(LetterKey) > context use(os1)
+  $AA + any(LetterKey) > context use(os2)
+  any(VS2Lao) + any(LetterKey) > context use(os3)  
+  any(VP1) any(CLao) + any(LetterKey) > context use(os4)
+  any(VP1) $HH any(UC2Lao) + any(LetterKey) > context use(os4)
+  any(VP1) any(CLao) any(RRW) + any(LetterKey) > context use(os4)
+  any(VP2) any(CLao) + any(LetterKey) > context use(os5)  
+  any(VP2) any(CLao) any(CLao) + any(LetterKey) > context use(os5)  
+  any(VP1) any(CLao) $A + any(LetterKey) > context use(os6)
+  any(VP1) any(CLao) any(CLao) $A + any(LetterKey) > context use(os6)
+  $E any(CLao) any(VILao) + any(LetterKey) > context use(os7)
+  $E any(CLao) any(CLao) any(VILao) + any(LetterKey) > context use(os7)
+  $AA $A + any(LetterKey) > context use(os8)
+  $OH + any(LetterKey) > context use(os9)
+  $MaiKong $W + any(LetterKey) > context use(os10)
+  $MaiKong $W $A + any(LetterKey) > context use(os11)
+  $E any(CLao) any(VJLao) $OAng + any(LetterKey) > context use(os12)
+  $E any(CLao) any(CLao) any(VJLao) $OAng + any(LetterKey) > context use(os12)
+  $E any(CLao) $NY + any(LetterKey) > context use(os13)
+  $E any(CLao) any(CLao) $NY + any(LetterKey) > context use(os13)
+  $E any(CLao) $MaiKan $NY + any(LetterKey) > context use(os14)
+  $E any(CLao) any(CLao) $MaiKan $NY + any(LetterKey) > context use(os14)
+  $E any(CLao) $MaiKan $NY $A + any(LetterKey) > context use(os14)
+  $E any(CLao) any(CLao) $MaiKan $NY $A + any(LetterKey) > context use(os14)
+  $E any(CLao) $MaiKan $IA + any(LetterKey) > context use(os14)
+  $E any(CLao) any(CLao) $MaiKan $IA + any(LetterKey) > context use(os14)
+  $MaiKong $AA + any(LetterKey) > context use(os15)
+  $AM + any(LetterKey) > context use(os16) 
+
+c Match closed syllables
+  $MaiKan any(CLao) + any(LetterKey) > context use(cs)
+  $AA any(CLao) + any(LetterKey) > context use(cs)
+  any(VSSLao) any(CLao) + any(LetterKey) > context use(cs)
+  any(VP1) any(CLao) any(CLao) + any(LetterKey) > context use(cs)
+  any(VP1) any(CLao) any(CLao) any(CLao) + any(LetterKey) > context use(cs)
+  any(VP1) any(CLao) $MaiKan any(CLao) + any(LetterKey) > context use(cs)
+  any(VP1) any(CLao) any(CLao) $MaiKan any(CLao) + any(LetterKey) > context use(cs)
+  $E any(CLao) $MaiKan any(CLao) + any(LetterKey) > context use(cs)
+  $E any(CLao) any(CLao) $MaiKan any(CLao) + any(LetterKey) > context use(cs)
+  $MaiKan $OAng any(CLao) + any(LetterKey) > context use(cs)
+  $OAng any(CLao) + any(LetterKey) > context use(cs)
+  $W any(CLao) + any(LetterKey) > context use(cs)
+  $MaiKan $W any(CLao) + any(LetterKey) > context use(cs)
+  $E any(CLao) any(VJLao) $OAng any(CLao) + any(LetterKey) > context use(cs)
+  $E any(CLao) any(CLao) any(VJLao) $OAng any(CLao) + any(LetterKey) > context use(cs)
+  $IA any(CLao) + any(LetterKey) > context use(cs)
+  $MaiKan $IA any(CLao) + any(LetterKey) > context use(cs)
+
+c Add a second character (vowel or consonant) to the initial Lao character of a syllable
+  any(CLao) + any(LetterKey) > context use(Initial) c start a new syllable, or modify an initial
+
+c Transliterate the first entered character for a new syllable (block tones)
+  + any(C) > index(CLao,1)
+  + any(V) > $OAng use(Start)
+  
+c Digraph character mapping,
+ + any(UC2) > "ຫ" index(UC2Lao,1)
+  
+c ====================================================================
+c Add a second character (vowel or consonant) to the initial Lao character of a syllable
+c ====================================================================
+group(Initial) using keys    
+
+  any(CLao) + [K_BKSP] > nul   c do not decompose double-letter characters 
+  
+  $N + "g" > $NG
+  $NG + "n" > $NY
+  $N + "y" > $NY  
+  $R + "r" > $_R                     
+  
+c Handle high-class sonorants as special cases, change low class prefixed h to high
+  $HN + "g" > $HH $NG
+  $HN + "y" > $HH $NY               
+  $H + "y" > $HH $NY
+  $H + "w" > $HH $W
+  $H + "g" > $HH $NG
+  $HH $W + [K_BKQUOTE] > $H $W  
+  $H + any(MC) > index(HCLao,2)     
+  $H + "l"      > $HH $_R
+  any(LMN) + "h"   > $HH context(1)  c written as separate characters
+  any(MCLao) + "h" > index(LCLao,1)     
+  
+  any(CLao) + any(C) > context(1) index(CLao,2)           
+  any(CLao) + "a" > context $A
+  any(CLao) + "A" > context $AA
+  any(CLao) + "e" > $E context $A  
+  any(CLao) + "E" > $E context  
+  any(CLao) + "i" > context $I  
+  any(CLao) + "I" > context $II  
+  any(CLao) + "o" > $E context $AA $A  
+  any(CLao) + "O" > $OO context
+  any(CLao) + "u" > context $U  
+  any(CLao) + "U" > context $UU  
+  any(CLao) + "z" > $AE context $A    
+  any(CLao) + "Z" > $AE context
+  any(CLao) + "q" > context $J  
+  any(CLao) + "Q" > context $JJ  
+  
+  any(CLao) any(CLao) + "e" > $E context $A
+  any(CLao) any(CLao) + "o" > $E context $AA $A
+  any(CLao) any(CLao) + "z" > $AE context $A    
+  
+c ====================================================================
+c Add a character to an open or closed syllable form
+c ====================================================================
+c -a syllables
+group(os1) using keys 
+ any(CLao) $A + "a" > context(1) $AA
+ any(CLao) $A + "e" > $AE context(1)
+ any(CLao) any(CLao) $A + "e" > $AE context(1) context(2)  
+ any(CLao) $A + "i" > $MaiMai context(1)
+ any(CLao) any(CLao) $A + "i" > $MaiMai context(1) context(2)  
+ any(CLao) $A + "y" > $MaiMuan context(1)
+ any(CLao) any(CLao) $A + "y" > $MaiMuan context(1) context(2)  
+ any(CLao) $A + "o" > $E context(1) $MaiKong $AA
+ any(CLao) any(CLao) $A + "o" > $E context(1) context(2) $MaiKong $AA
+ any(CLao) $A + "m" > context(1) $AM
+ any(CLao) $A + "M" > context(1) $MaiKan $M    c old spelling alternate
+ any(CLao) $A + "Y" > context(1) $MaiKan $NY    c old spelling alternate
+ $A + any(V) > context(1) dk(1) use(Start) 
+ $A + any(C) > $MaiKan index(CLao,2)
+ 
+ match > use(mf)
+     
+c -aa syllables
+group(os2) using keys
+ + any(C) > index(CLao,1)
+ + any(V) > dk(1) $OAng use(Start)
+
+ match > use(mf) 
+ 
+c -i, -ii, -ue, -eu, -u, -uu syllables
+group(os3) using keys 
+ + any(C) > index(CLao,1)          
+ + any(V) > dk(1) $OAng use(Start)
+ 
+c Change -i to -ii
+ $I + "i" > $II
+ 
+c Change -u to -uu
+ $U + "u" > $UU
+
+c Change -eu(short) to -eu(long)
+ $J + "q" > $JJ
+  
+c Change -i to -ia
+ any(CLao) $I + "a" > $E context(1) $NY 
+ any(CLao) any(CLao) $I + "a" > $E context(1) context(2) $NY    
+ any(CLao) $I + "e" > $E context(1) $NY 
+ any(CLao) any(CLao) $I + "e" > $E context(1) context(2) $NY    
+ 
+c Change -u to -ua
+ $U + "a" > $MaiKong $W 
+ 
+c Change -u to -ue (short)
+ $U + [K_BKQUOTE] > $J
+ $U + "e" > $J
+ $J + [K_BKQUOTE] > $JJ
+ $JJ + [K_BKQUOTE] > $J       
+ 
+c Change -eu or -eu to -eua (long)
+ any(CLao) any(VJLao) + "a" > $E context(1) $JJ $OAng
+ any(CLao) any(CLao) any(VJLao) + "a" > $E context(1) context(2) $JJ $OAng
+
+ match > use(mf) 
+  
+c -ee, -ae, -oo syllables
+group(os4) using keys
+
+c first, check for some exceptions
+  $E any(CLao) $NY + any(LetterKey) > context use(os13) 
+  any(VPrefix) any(CLao) $N + "g" > context(1) context(2) $NG
+  
+ + any(C) > index(CLao,1)          
+ + any(V) > dk(1) $OAng use(Start)
+ 
+c Backspace - delete prefixed vowel (unless actually syllable is actually closed)
+ any(VP1) any(CLao) + [K_BKSP] > context(2)                      
+ any(VP1) $HH any(UC2Lao) + [K_BKSP] > context(2) context(3)
+ any(VP1) any(CLao) any(RRW) + [K_BKSP] > context(2) context(3)
+
+ any(VP1) any(CLao) any(CLao) + [K_BKSP] > context(1) context(2)
+ 
+ match > use(mf)
+ 
+c -ai, -ay syllables
+group(os5) using keys
+ + any(C) > dk(1) index(CLao,1)
+ + any(V) > dk(1) $OAng use(Start)
+
+c Convert to old spelling variant using quote
+ $MaiMuan any(CLao) + [K_BKQUOTE] > context(2) $MaiKan $NY
+ $MaiMuan any(CLao) any(CLao) + [K_BKQUOTE] > context(2) context(3) $MaiKan $NY
+
+ any(VP2) any(CLao) + [K_BKSP] > context(2)
+ any(VP2) any(CLao) any(CLao) + [K_BKSP] > context(2) context(3)
+
+ match > use(mf)
+c -e', -ae', -o' syllables
+group(os6) using keys
+ $OO any(CLao) $A + any(C) > index(CLao,2) $MaiKan $OAng index(CLao,4)
+ $OO any(CLao) any(CLao) $A + any(C) > index(CLao,2) index(CLao,3) $MaiKan $OAng index(CLao,5)
+ $A + any(C) > $MaiKan index(CLao,2)          
+ + any(V) > dk(1) $OAng use(Start)
+ 
+c Change short (prefix) to long vowel
+ $E any(CLao) $A + "e" > context(1) context(2) 
+ $E any(CLao) any(CLao) $A + "e" > context(1) context(2) context(3) 
+ $AE any(CLao) $A + "e" > context(1) context(2) 
+ $AE any(CLao) any(CLao) $A + "e" > context(1) context(2) context(3) 
+ $OO any(CLao) $A + "o" > context(1) context(2)  
+ $OO any(CLao) any(CLao) $A + "o" > context(1) context(2) context(3)
+ 
+c Change -e to -ae (short)
+ $E any(CLao) $A + [K_BKQUOTE] > $AE context(2) $A 
+ $E any(CLao) any(CLao) $A + [K_BKQUOTE] > $AE context(2) context(3) $A 
+ $E any(CLao) $A + "a" > $AE context(2) $A 
+ $E any(CLao) any(CLao) $A + "a" > $AE context(2) context(3) $A 
+   
+c Or back again, -ae to -e (short)
+ $AE any(CLao) $A + [K_BKQUOTE] > $E context(2) $A
+ $AE any(CLao) any(CLao) $A + [K_BKQUOTE] > $E context(2) context(3) $A
+ 
+c Change -e to -eu (long)
+ $E any(CLao) $A + "u" > context(2) $JJ 
+ $E any(CLao) any(CLao) $A + "u" > context(2) context(3) $JJ
+  
+c Change -e to -er (long)
+ $E any(CLao) $A + "r" > $E context(2) $II 
+ $E any(CLao) any(CLao) $A + "r" > $E context(2) context(3) $II
+ 
+c Change -o (short) to -oh (short)
+ $OO any(CLao) $A + [K_BKQUOTE] > $E context(2) $AA $A
+ $OO any(CLao) any(CLao) $A + [K_BKQUOTE] > $E context(2) context(3) $AA $A      
+ 
+c Change -e to -eo
+ $E any(CLao) $A + "o" > $AE context(2) $W
+ $E any(CLao) any(CLao) $A + "o" > $AE context(2) context(3) $W
+
+c Backspace - delete both vowel components
+ $E any(CLao) $A + [K_BKSP] > context(2)
+ $AE any(CLao) $A + [K_BKSP] > context(2)
+ $OO any(CLao) $A + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) $A + [K_BKSP] > context(2)
+ $AE any(CLao) any(CLao) $A + [K_BKSP] > context(2) context(3)
+ $OO any(CLao) any(CLao) $A + [K_BKSP] > context(2) context(3)
+
+ match > use(mf)
+ 
+c -oe, -er syllables
+group(os7) using keys
+ + any(C) > index(CLao,1)          
+ + any(V) > dk(1) $OAng use(Start)
+
+c Backspace - delete both vowel components
+ $E any(CLao) any(VILao) + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) any(VILao) + [K_BKSP] > context(2) context(3)
+
+ match > use(mf)
+ 
+c -oh' syllables
+group(os8) using keys 
+c Change -o to -oh (long)
+ $E any(CLao) $AA $A + "h" > context(2) $OH 
+ $E any(CLao) any(CLao) $AA $A + "h" > context(2) context(3) $OH
+
+c Change when adding final consonant
+ $E any(CLao) $AA $A + any(C) > context(2) $MaiKong index(CLao,5)
+ $E any(CLao) any(CLao) $AA $A + any(C) > context(2) context(3) $MaiKong index(CLao,6)
+ + any(V) > dk(1) $OAng use(Start)
+ 
+c Change (short) -oh to (long) -oo
+ $E any(CLao) $AA $A + "o" > $OO context(2)
+ $E any(CLao) any(CLao) $AA $A + "o" > $OO context(2) context(3)
+
+c Change (short) -oh to (short) -o
+ $E any(CLao) $AA $A + "q" > $OO context(2) $A
+ $E any(CLao) any(CLao) $AA $A + "q" > $OO context(2) context(3) $A
+ 
+ $E any(CLao) $AA $A + [K_BKQUOTE] > $OO context(2) $A
+ $E any(CLao) any(CLao) $AA $A + [K_BKQUOTE] > $OO context(2) context(3) $A
+
+c Change -o to -oe (short)
+ $E any(CLao) $AA $A + "e" > $E context(2) $I 
+ $E any(CLao) any(CLao) $AA $A + "e" > $E context(2) context(3) $I 
+ 
+c Backspace - delete all vowel components
+ $E any(CLao) $AA $A + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) $AA $A + [K_BKSP] > context(2) context(3)
+ 
+ match > use(mf)
+     
+c -oh syllables
+group(os9) using keys
+ $OH + any(C) > $OAng index(CLao,2)          
+ + any(V) > dk(1) $OAng use(Start)
+
+ match > use(mf)
+
+c -ua syllables
+group(os10) using keys                     
+ $MaiKong $W + any(C) > $W index(CLao,3)
+ + any(V) > dk(1) $OAng use(Start)
+
+c Change -ua (long) to -ua' (short)
+ + [K_BKQUOTE] > $A
+
+c Backspace - delete both vowel components
+ $MaiKong $W + [K_BKSP] > nul
+
+ match > use(mf) 
+ 
+c -ua' syllables
+group(os11) using keys
+ $MaiKong $W $A + any(C) > $MaiKan $W index(CLao,4)
+ + any(V) > dk(1) $OAng use(Start)
+
+c Backspace - delete all three vowel components
+ $MaiKong $W $A + [K_BKSP] > nul
+ 
+ match > use(mf)
+ 
+c -eua, -eua' (-uea) syllables
+group(os12) using keys
+ + any(C) > index(CLao,1)          
+ + any(V) > dk(1) $OAng use(Start)
+
+c Alternate short and long using quote
+ $J $OAng + [K_BKQUOTE] > $JJ $OAng
+ $JJ $OAng + [K_BKQUOTE] > $J $OAng
+
+c Backspace - delete all three vowel components
+ $E any(CLao) any(VJLao) $OAng + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) any(VJLao) $OAng + [K_BKSP] > context(2) context(3)
+ 
+ match > use(mf)
+ 
+c -ia syllables
+group(os13) using keys                  
+ $E any(CLao) $NY + any(C) > index(CLao,2) $IA index(CLao,4)
+ $E any(CLao) any(CLao) $NY + any(C) > index(CLao,2) index(CLao,3) $IA index(CLao,5)
+ + any(V) > dk(1) $OAng use(Start)
+ 
+c Change to short form
+ $E any(CLao) $NY + [K_BKQUOTE] > $E index(CLao,2) $MaiKan $NY
+ $E any(CLao) any(CLao) $NY + [K_BKQUOTE] > $E index(CLao,2) index(CLao,3) $MaiKan $NY
+
+c Backspace - delete both vowel components
+ $E any(CLao) $NY + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) $NY + [K_BKSP] > context(2) context(3)
+ 
+ match > use(mf)
+ 
+c -ia' syllables (and old sp. -ia)
+group(os14) using keys              
+ $E any(CLao) $MaiKan $NY + any(C) > context(2) $MaiKan $IA index(CLao,5)
+ $E any(CLao) any(CLao) $MaiKan $NY + any(C) > context(2) context(3) $MaiKan $IA index(CLao,6)
+ $E any(CLao) $MaiKan $NY $A + any(C) > context(2) $MaiKan $IA index(CLao,6)
+ $E any(CLao) any(CLao) $MaiKan $NY $A + any(C) > context(2) context(3) $MaiKan $IA index(CLao,7)
+ $E any(CLao) $MaiKan $IA + any(C) > context(2) $MaiKan $IA index(CLao,5)
+ $E any(CLao) any(CLao) $MaiKan $IA + any(C) > context(2) context(3) $MaiKan $IA index(CLao,6)
+ + any(C) > dk(1) index(CLao,1)
+ + any(V) > dk(1) $OAng use(Start)
+ 
+c Alternate forms using quote key
+ $E any(CLao) $MaiKan $NY + [K_BKQUOTE] > context $A
+ $E any(CLao) $MaiKan $NY $A + [K_BKQUOTE] > $E context(2) $MaiKan $IA
+ $E any(CLao) $MaiKan $IA + [K_BKQUOTE] > $E context(2) $NY
+ $E any(CLao) any(CLao) $MaiKan $NY + [K_BKQUOTE] > context $A
+ $E any(CLao) any(CLao) $MaiKan $NY $A + [K_BKQUOTE] > $E context(2) context(3) $MaiKan $IA
+ $E any(CLao) any(CLao) $MaiKan $IA + [K_BKQUOTE] > $E context(2) context(3) $NY
+ 
+c Backspace - delete all vowel components
+ $E any(CLao) $MaiKan $NY + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) $MaiKan $NY + [K_BKSP] > context(2) context(3)
+ $E any(CLao) $MaiKan $NY $A + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) $MaiKan $NY $A + [K_BKSP] > context(2) context(3)
+ $E any(CLao) $MaiKan $IA + [K_BKSP] > context(2)
+ $E any(CLao) any(CLao) $MaiKan $IA + [K_BKSP] > context(2) context(3)
+
+ match > use(mf)
+
+c -ao syllables
+group(os15) using keys
+ + any(C) > dk(1) index(CLao,1)
+ + any(V) > dk(1) $OAng use(Start)
+
+c Backspace - delete all vowel components and restore -a
+ $E any(CLao) $MaiKong $AA + [K_BKSP] > context(2) $A
+ $E any(CLao) any(CLao) $MaiKong $AA + [K_BKSP] > context(2) context(3) $A
+
+c -am syllables
+group(os16) using keys
+ + any(C) > dk(1) index(CLao,1)
+ + any(V) > dk(1) $OAng use(Start)
+
+c Convert to old spelling (using quote)
+ $AM + [K_BKQUOTE] > $MaiKan $M  
+
+c Backspace - change to -a
+ $AM + [K_BKSP] > $A
+ 
+
+c ====================================================================
+c Modify the final where required
+c ====================================================================
+group(mf) 
+ any(LaoNonFinal) > index(LaoFinal,1) 
+ 
+c ====================================================================
+c Add a character to a closed syllable form - modify the final or start a new syllable
+c ====================================================================
+group(cs) using keys
+ $N + "g" > $NG                                                       
+ 
+ + any(C) > dk(1) index(CLao,1)
+ + any(V) > dk(1) $OAng use(Start) 
+  
+ + [K_BKSP] > use(restoreOpen) 
+ 
+c ====================================================================
+c Restore a closed syllable to the appropriate open syllable form
+c ====================================================================
+group(restoreOpen)
+
+c general rule
+ any(CLao) > nul  
+ 
+c -a-, -o-, -e'-, -ae'- syllables
+ $MaiKan any(CLao) > $A
+ any(CLao) $MaiKong any(CLao) > $E context(1) $AA $A
+ any(CLao) any(CLao) $MaiKong any(CLao) > $E context(1) context(2) $AA $A
+
+c -ee, -ae, oo syllables
+ any(VP1) any(CLao) any(CLao) > context(1) context(2)
+ any(VP1) any(CLao) any(CLao) any(CLao) > context(1) context(2) context(3)
+ 
+c -oh'- syllables (very rare, probably only loan and onomatopeic words)
+ any(CLao) $MaiKan $OAng any(CLao) > $E context(1) $AA $A
+ any(CLao) any(CLao) $MaiKan $OAng any(CLao) > $E context(1) context(2) $AA $A
+
+c -oh- syllables
+ $OAng any(CLao) > $OH
+ 
+c -ua- syllables
+ $W any(CLao) > $MaiKong $W                    
+ 
+c -ua'- syllables
+ $MaiKan $W any(CLao) > $MaiKong $W $A
+
+c -ia-, -ia'- syllables
+ any(CLao) $IA any(CLao) > $E context(1) $NY 
+ any(CLao) any(CLao) $IA any(CLao) > $E context(1) context(2) $NY 
+ any(CLao) $MaiKan $IA any(CLao) > $E context(1) $MaiKan $NY 
+ any(CLao) any(CLao) $MaiKan $IA any(CLao) > $E context(1) $MaiKan context(2) $NY  
+ 
+c -euu, -eua' syllables
+ any(VJLao) $OAng any(CLao) > context(1) context(2)
+  
+c ====================================================================
+c Check for tone marks in a syllable before backspacing the last non-tone character
+c ====================================================================
+group(checkForTones)                                               
+ any(ToneLao) > nul
+ any(ToneLao) any(LaoLetter) > context(2)
+ any(ToneLao) any(LaoLetter) any(LaoLetter) > context(2) context(3)
+ 
+ nomatch > use(Filter)
+ 
+c ====================================================================
+c Add a tone mark and terminate the syllable, but only if a valid syllable
+c ====================================================================
+group(addTone) using keys    
+ 
+ any(VPrefix) any(CLao) + any(T) > context index(ToneLao,3) dk(1)
+ any(VPrefix) any(CLao) any(CLao) + any(T) > context(1) context(2) index(ToneLao,4) context(3) dk(1)
+ any(VPrefix) any(CLao) $IA + any(T) > context(1) context(2) index(ToneLao,4) context(3) dk(1)
+ any(VPrefix) any(CLao) any(CLao) any(CLao) + any(T) > context(1) context(2) context(3) index(ToneLao,5) context(4) dk(1)
+ any(VPrefix) any(CLao) any(CLao) $IA + any(T) > context(1) context(2) context(3) index(ToneLao,5) context(4) dk(1)
+  
+ $OH + any(T) > context index(ToneLao,2) dk(1)
+ any(VSSLao) + any(T) > context index(ToneLao,2) dk(1)
+ any(VSSLao) any(CLao) + any(T) > context(1) index(ToneLao,3) context(2) dk(1)
+ any(VSSLao) any(CLao) any(CLao) + any(T) > context(1) index(ToneLao,4) context(2) context(3) dk(1)
+
+ any(CLao) any(VNDLao) + any(T) > context(1) index(ToneLao,3) context(2) dk(1)
+ any(CLao) any(VNDLao) any(CLao) + any(T) > context(1) index(ToneLao,4) context(2) context(3) dk(1) 
+ any(CLao) any(CLao) any(VNDLao) any(CLao) + any(T) > context(1) context(2) index(ToneLao,5) context(3) context(4) dk(1)
+ 
+ $AA $A + any(T) > index(ToneLao,3) context dk(1)     
+ 
+ $MaiKong $AA + any(T) > context(1) index(ToneLao,3) context(2)
+
+c ====================================================================

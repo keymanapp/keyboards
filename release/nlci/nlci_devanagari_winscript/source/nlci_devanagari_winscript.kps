@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1201.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>WInscript_Hindi.png</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,22 +17,12 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">NLCI Malayalam WinScript</Name>
-    <Copyright URL="">2002-2018 NLCI, Bangalore</Copyright>
+    <Name URL="">Devanagari WinScript [NLCI]</Name>
+    <Copyright URL="">© 2002-2019 NLCI, Bangalore</Copyright>
+    <Version URL="">1.0</Version>
+    <Author URL="">Binila Sanki, SG NLCI</Author>
   </Info>
   <Files>
-    <File>
-      <Name>..\build\nlci_malayalam_winscript.kvk</Name>
-      <Description>File nlci_malayalam_winscript.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>..\build\nlci_malayalam_winscript.kmx</Name>
-      <Description>NLCI Malayalam WinScript Keyboard</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -39,30 +30,45 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>welcome\nlci_malayalami_winscript.png</Name>
-      <Description>File nlci_malayalami_winscript.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\nlci_malayalami_winscript_S.png</Name>
-      <Description>File nlci_malayalami_winscript_S.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\nlci_devanagari_winscript.js</Name>
+      <Description>File nlci_devanagari_winscript.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\nlci_devanagari_winscript.kvk</Name>
+      <Description>File nlci_devanagari_winscript.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\nlci_devanagari_winscript.kmx</Name>
+      <Description>Keyboard NLCI Devanagari WinScript</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>WInscript_Hindi.png</Name>
+      <Description>File WInscript_Hindi.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>NLCI Malayalam WinScript</Name>
-      <ID>NLCI Malayalam WinScript Keyboard</ID>
+      <Name>NLCI Devanagari WinScript</Name>
+      <ID>nlci_devanagari_winscript</ID>
+      <Version>1.0</Version>
       <Languages>
-        <Language ID="ml">Malayalam</Language>
+        <Language ID="hi">Hindi</Language>
+        <Language ID="mjt-Deva">Sauria Paharia (Devanagari)</Language>
+        <Language ID="kfk-Deva">Kinnauri (Devanagari)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

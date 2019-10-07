@@ -1,9 +1,9 @@
 Keyboard Data
 -------------
 
-* Name:           Nubian
-* Copyright:      (C) 2008-2009, 2016, 2018 SIL International
-* Version:        1.2.1
+* Name:           SIL Nubian
+* Copyright:      (C) 2008-2019 SIL International
+* Version:        1.2.2
 * Keyman Version: 9.0
 * BCP-47 codes:   dgl-Copt, fia-Copt, xnz-Copt
 

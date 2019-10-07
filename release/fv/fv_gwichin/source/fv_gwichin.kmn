@@ -1,12 +1,12 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "gwi"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '9.2'
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "gwi"
+store(&COPYRIGHT) "(c) 2008-2019 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) "Gwich'in"
 store(&HOTKEY) '[CTRL SHIFT K_1]'
-store(&BITMAP) 'fv_gwichin.bmp'
-store(&VISUALKEYBOARD) 'fv_gwichin.kvk'
+store(&BITMAP) 'fv_gwichin.ico'
+store(&VISUALKEYBOARD) 'fv_gwichin.kvks'
  
 begin Unicode > use(main)                      
  
@@ -18,6 +18,195 @@ store(let) 'AEIMNOUWYaeimnouwy'
 store(alllet) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 group(main) using keys   
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) 'fv_gwichin.keyman-touch-layout'
+
+'į' + [SHIFT T_Q] > U+0069 U+0328 U+0300 c 'į̀'
+'Ǫ' + [SHIFT T_Q] > U+004F U+0328 U+0300 c 'Ǫ̀'
+'U' + [SHIFT T_Q] > U+0055 U+0328 U+0300 c 'Ù'
+'Ų' + [SHIFT T_Q] > U+0055 U+0328 U+0300 c 'Ų̀'
+'ų' + [SHIFT T_Q] > U+0075 U+0328 U+0300 c 'ų̀'
+'I' + [SHIFT T_Q] > 'Ì'
+'ą' + [SHIFT T_Q] > U+0061 U+0328 U+0300 c 'ą̀'
+'e' + [SHIFT T_Q] > 'è'
+'Ą' + [SHIFT T_Q] > U+0041 U+0328 U+0300 c 'Ą̀'
+'u' + [SHIFT T_Q] > 'ù'
+'i' + [SHIFT T_Q] > 'ì'
+'ę' + [SHIFT T_Q] > U+0065 U+0328 U+0300 c 'ę̀'
+'A' + [SHIFT T_Q] > 'À'
+'O' + [SHIFT T_Q] > 'Ò'
+'Ę' + [SHIFT T_Q] > U+0045 U+0328 U+0300 c 'Ę̀'
+'E' + [SHIFT T_Q] > 'È'
+'a' + [SHIFT T_Q] > 'à'
+'o' + [SHIFT T_Q] > 'ò'
+'ǫ' + [SHIFT T_Q] > U+006F U+0328 U+0300 c 'ǫ̀'
+'Į' + [SHIFT T_Q] > U+0049 U+0328 U+0300 c 'Į̀'
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'È' layer('default')
++ [SHIFT T_E_1] > 'Ę' layer('default')
++ [SHIFT T_E_2] > U+0045 U+0328 U+0300 c 'Ę̀' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_R] > 'R' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ù' layer('default')
++ [SHIFT T_U_1] > 'Ų' layer('default')
++ [SHIFT T_U_2] > U+0055 U+0328 U+0300 c 'Ų̀' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Ì' layer('default')
++ [SHIFT T_I_1] > 'Į' layer('default')
++ [SHIFT T_I_2] > U+0049 U+0328 U+0300 c 'Į̀' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O_0] > 'Ò' layer('default')
++ [SHIFT T_O_1] > 'Ǫ' layer('default')
++ [SHIFT T_O_2] > U+004F U+0328 U+0300 c 'Ǫ̀' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P] > 'Ł' layer('default')
++ [SHIFT T_A_0] > 'À' layer('default')
++ [SHIFT T_A_1] > 'Ą' layer('default')
++ [SHIFT T_A_2] > U+0041 U+0328 U+0300 c 'Ą̀' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
+'ì' + [SHIFT T_F] > U+0069 U+0328 U+0300 c 'į̀'
+'U' + [SHIFT T_F] > 'Ų'
+'ò' + [SHIFT T_F] > U+006F U+0328 U+0300 c 'ǫ̀'
+'Ì' + [SHIFT T_F] > U+0049 U+0328 U+0300 c 'Į̀'
+'ù' + [SHIFT T_F] > U+0075 U+0328 U+0300 c 'ų̀'
+'I' + [SHIFT T_F] > 'Į'
+'Ò' + [SHIFT T_F] > U+004F U+0328 U+0300 c 'Ǫ̀'
+'e' + [SHIFT T_F] > 'ę'
+'Ù' + [SHIFT T_F] > U+0055 U+0328 U+0300 c 'Ų̀'
+'à' + [SHIFT T_F] > U+0061 U+0328 U+0300 c 'ą̀'
+'À' + [SHIFT T_F] > U+0041 U+0328 U+0300 c 'Ą̀'
+'u' + [SHIFT T_F] > 'ų'
+'i' + [SHIFT T_F] > 'į'
+'A' + [SHIFT T_F] > 'Ą'
+'O' + [SHIFT T_F] > 'Ǫ'
+'è' + [SHIFT T_F] > U+0065 U+0328 U+0300 c 'ę̀'
+'È' + [SHIFT T_F] > U+0045 U+0328 U+0300 c 'Ę̀'
+'E' + [SHIFT T_F] > 'Ę'
+'a' + [SHIFT T_F] > 'ą'
+'o' + [SHIFT T_F] > 'ǫ'
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
+'o' + [SHIFT T_X] > U+006F U+0328 U+0300 c 'ǫ̀'
+'I' + [SHIFT T_X] > U+0049 U+0328 U+0300 c 'Į̀'
+'E' + [SHIFT T_X] > U+0045 U+0328 U+0300 c 'Ę̀'
+'A' + [SHIFT T_X] > U+0041 U+0328 U+0300 c 'Ą̀'
+'u' + [SHIFT T_X] > U+0075 U+0328 U+0300 c 'ų̀'
+'O' + [SHIFT T_X] > U+004F U+0328 U+0300 c 'Ǫ̀'
+'e' + [SHIFT T_X] > U+0065 U+0328 U+0300 c 'ę̀'
+'a' + [SHIFT T_X] > U+0061 U+0328 U+0300 c 'ą̀'
+'i' + [SHIFT T_X] > U+0069 U+0328 U+0300 c 'į̀'
+'U' + [SHIFT T_X] > U+0055 U+0328 U+0300 c 'Ų̀'
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V] > 'V' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
+'į' + [T_Q] > U+0069 U+0328 U+0300 c 'į̀'
+'Ǫ' + [T_Q] > U+004F U+0328 U+0300 c 'Ǫ̀'
+'U' + [T_Q] > 'Ù'
+'Ų' + [T_Q] > U+0055 U+0328 U+0300 c 'Ų̀'
+'ų' + [T_Q] > U+0075 U+0328 U+0300 c 'ų̀'
+'I' + [T_Q] > 'Ì'
+'ą' + [T_Q] > U+0061 U+0328 U+0300 c 'ą̀'
+'e' + [T_Q] > 'è'
+'Ą' + [T_Q] > U+0041 U+0328 U+0300 c 'Ą̀'
+'u' + [T_Q] > 'ù'
+'i' + [T_Q] > 'ì'
+'ę' + [T_Q] > U+0065 U+0328 U+0300 c 'ę̀'
+'A' + [T_Q] > 'À'
+'O' + [T_Q] > 'Ò'
+'Ę' + [T_Q] > U+0045 U+0328 U+0300 c 'Ę̀'
+'E' + [T_Q] > 'È'
+'a' + [T_Q] > 'à'
+'o' + [T_Q] > 'ò'
+'ǫ' + [T_Q] > U+006F U+0328 U+0300 c 'ǫ̀'
+'Į' + [T_Q] > U+0049 U+0328 U+0300 c 'Į̀'
++ [T_W] > 'w'
++ [T_E_0] > 'è'
++ [T_E_1] > 'ę'
++ [T_E_2] > U+0065 U+0328 U+0300 c 'ę̀'
++ [T_E] > 'e'
++ [T_R] > 'r'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U_0] > 'ù'
++ [T_U_1] > 'ų'
++ [T_U_2] > U+0075 U+0328 U+0300 c 'ų̀'
++ [T_U] > 'u'
++ [T_I_0] > 'ì'
++ [T_I_1] > 'į'
++ [T_I_2] > U+0069 U+0328 U+0300 c 'į̀'
++ [T_I] > 'i'
++ [T_O_0] > 'ò'
++ [T_O_1] > 'ǫ'
++ [T_O_2] > U+006F U+0328 U+0300 c 'ǫ̀'
++ [T_O] > 'o'
++ [T_P] > 'ł'
++ [T_A_0] > 'à'
++ [T_A_1] > 'ą'
++ [T_A_2] > U+0061 U+0328 U+0300 c 'ą̀'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
+'ì' + [T_F] > U+0069 U+0328 U+0300 c 'į̀'
+'U' + [T_F] > 'Ų'
+'ò' + [T_F] > U+006F U+0328 U+0300 c 'ǫ̀'
+'Ì' + [T_F] > U+0049 U+0328 U+0300 c 'Į̀'
+'ù' + [T_F] > U+0075 U+0328 U+0300 c 'ų̀'
+'I' + [T_F] > 'Į'
+'Ò' + [T_F] > U+004F U+0328 U+0300 c 'Ǫ̀'
+'e' + [T_F] > 'ę'
+'Ù' + [T_F] > U+0055 U+0328 U+0300 c 'Ų̀'
+'à' + [T_F] > U+0061 U+0328 U+0300 c 'ą̀'
+'À' + [T_F] > U+0041 U+0328 U+0300 c 'Ą̀'
+'u' + [T_F] > 'ų'
+'i' + [T_F] > 'į'
+'A' + [T_F] > 'Ą'
+'O' + [T_F] > 'Ǫ'
+'è' + [T_F] > U+0065 U+0328 U+0300 c 'ę̀'
+'È' + [T_F] > U+0045 U+0328 U+0300 c 'Ę̀'
+'E' + [T_F] > 'Ę'
+'a' + [T_F] > 'ą'
+'o' + [T_F] > 'ǫ'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z] > 'z'
+'o' + [T_X] > U+006F U+0328 U+0300 c 'ǫ̀'
+'I' + [T_X] > U+0049 U+0328 U+0300 c 'Į̀'
+'E' + [T_X] > U+0045 U+0328 U+0300 c 'Ę̀'
+'A' + [T_X] > U+0041 U+0328 U+0300 c 'Ą̀'
+'u' + [T_X] > U+0075 U+0328 U+0300 c 'ų̀'
+'O' + [T_X] > U+004F U+0328 U+0300 c 'Ǫ̀'
+'e' + [T_X] > U+0065 U+0328 U+0300 c 'ę̀'
+'a' + [T_X] > U+0061 U+0328 U+0300 c 'ą̀'
+'i' + [T_X] > U+0069 U+0328 U+0300 c 'į̀'
+'U' + [T_X] > U+0055 U+0328 U+0300 c 'Ų̀'
++ [T_C] > 'c'
++ [T_V] > 'v'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
 
 + any(before) > index(after,1)
 + any(original) > index(before,1)      
@@ -119,12 +308,12 @@ c *********
 ',;%' + any(let) > index(let,4) U+0328  U+0308 U+030c 
 ',%;' + any(let) > index(let,4) U+0328  U+0308 U+030c
 
-';^,' + any(let) > index(let,4) U+0328  U+0308 U+0302 c dia cir ogo
-'^;,' + any(let) > index(let,4)  U+0328 U+0308 U+0302
-';,^' + any(let) > index(let,4) U+0328  U+0308 U+0302 
-'^,;' + any(let) > index(let,4)  U+0328 U+0308 U+0302
-',;^' + any(let) > index(let,4) U+0328  U+0308 U+0302 
-',^;' + any(let) > index(let,4)  U+0328 U+0308 U+0302
+';^,' + any(let) > index(let,4) U+0328 U+0308 U+0302 c dia cir ogo
+'^;,' + any(let) > index(let,4) U+0328 U+0308 U+0302
+';,^' + any(let) > index(let,4) U+0328 U+0308 U+0302 
+'^,;' + any(let) > index(let,4) U+0328 U+0308 U+0302
+',;^' + any(let) > index(let,4) U+0328 U+0308 U+0302 
+',^;' + any(let) > index(let,4) U+0328 U+0308 U+0302
 
 ';&,' + any(let) > index(let,4) U+0328  U+0308 U+030B c dia dac ogo
 '&;,' + any(let) > index(let,4) U+0328  U+0308 U+030B
@@ -162,18 +351,18 @@ c *********
 ',=' + any(let) > index(let,3) U+0304  U+0328
 
 '=`,' + any(let) > index(let,4)  U+0328  U+0304 U+0300  c mac gra ogo
-'`=,' + any(let) > index(let,4)  U+0328  U+0304   U+0300        
-'`,=' + any(let) > index(let,4)  U+0328  U+0304   U+0300   
-'=,`' + any(let) > index(let,4)  U+0328  U+0304   U+0300   
-',`=' + any(let) > index(let,4)  U+0328  U+0304   U+0300   
-',=`' + any(let) > index(let,4)  U+0328  U+0304   U+0300          
+'`=,' + any(let) > index(let,4)  U+0328  U+0304 U+0300        
+'`,=' + any(let) > index(let,4)  U+0328  U+0304 U+0300   
+'=,`' + any(let) > index(let,4)  U+0328  U+0304 U+0300   
+',`=' + any(let) > index(let,4)  U+0328  U+0304 U+0300   
+',=`' + any(let) > index(let,4)  U+0328  U+0304 U+0300          
 
 '=/,' + any(let) > index(let,4)  U+0328  U+0304 U+0301  c mac acu ogo
-'/=,' + any(let) > index(let,4)  U+0328  U+0304  U+0301             
+'/=,' + any(let) > index(let,4)  U+0328  U+0304 U+0301             
 '=,/' + any(let) > index(let,4)  U+0328  U+0304 U+0301  
-'/,=' + any(let) > index(let,4)  U+0328  U+0304  U+0301 
-',=/' + any(let) > index(let,4)  U+0328  U+0304  U+0301  
-',/=' + any(let) > index(let,4)  U+0328  U+0304  U+0301 
+'/,=' + any(let) > index(let,4)  U+0328  U+0304 U+0301 
+',=/' + any(let) > index(let,4)  U+0328  U+0304 U+0301  
+',/=' + any(let) > index(let,4)  U+0328  U+0304 U+0301 
 
 '=%,' + any(let) > index(let,4)  U+0328  U+0304 U+030c  c mac car ogo
 '%=,' + any(let) > index(let,4)  U+0328  U+0304  U+030c
@@ -183,11 +372,11 @@ c *********
 ',%=' + any(let) > index(let,4)  U+0328  U+0304  U+030c
 
 '=^,' + any(let) > index(let,4)  U+0328  U+0304  U+0302 c mac cir ogo
-'^=,' + any(let) > index(let,4)   U+0328  U+0304  U+0302
+'^=,' + any(let) > index(let,4)  U+0328  U+0304  U+0302
 '=,^' + any(let) > index(let,4)  U+0328  U+0304  U+0302 
-'^,=' + any(let) > index(let,4)   U+0328  U+0304  U+0302
+'^,=' + any(let) > index(let,4)  U+0328  U+0304  U+0302
 ',=^' + any(let) > index(let,4)  U+0328  U+0304  U+0302 
-',^=' + any(let) > index(let,4)   U+0328  U+0304  U+0302
+',^=' + any(let) > index(let,4)  U+0328  U+0304  U+0302
 
 '=&,' + any(let) > index(let,4)  U+0328  U+0304  U+030B c mac dac ogo
 '&=,' + any(let) > index(let,4)  U+0328  U+0304  U+030B
@@ -204,19 +393,19 @@ c ***********
 '=;' + any (let) > index(let,3) U+0308 U+0304
 
 ';=,' + any (let) > index(let,4) U+0328 U+0308 U+0304
-'=;,' + any (let) > index(let,4) U+0328  U+0308 U+0304
-';,=' + any (let) > index(let,4) U+0328  U+0308 U+0304
-'=,;' + any (let) > index(let,4) U+0328  U+0308 U+0304
-',;=' + any (let) > index(let,4) U+0328  U+0308 U+0304
-',=;' + any (let) > index(let,4) U+0328  U+0308 U+0304    
+'=;,' + any (let) > index(let,4) U+0328 U+0308 U+0304
+';,=' + any (let) > index(let,4) U+0328 U+0308 U+0304
+'=,;' + any (let) > index(let,4) U+0328 U+0308 U+0304
+',;=' + any (let) > index(let,4) U+0328 U+0308 U+0304
+',=;' + any (let) > index(let,4) U+0328 U+0308 U+0304    
 
 c ***********
 c *** misc ***
 c ***********
 
-'.' + any(let) > index(let,2) U+0323  c dot under
-"~" + any(let) > index(let,2) U+0303 c tilde
-"+(" + any(let) > index(let,3) U+0306  c breve      
+'.' + any(let)  > index(let,2) U+0323 c dot under
+"~" + any(let)  > index(let,2) U+0303 c tilde
+"+(" + any(let) > index(let,3) U+0306 c breve      
 "+)" + any(let) > index(let,3) U+0325 c ring under
 '+' + "O" > "Œ"
 "+" + "o" > "œ"

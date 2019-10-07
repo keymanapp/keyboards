@@ -1,15 +1,81 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "str"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.1"
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "str"
+store(&COPYRIGHT) "(c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) 'SENĆOŦEN'
-store(&BITMAP) 'fv_sencoten.bmp'
+store(&BITMAP) 'fv_sencoten.ico'
 store(&HOTKEY) '[CTRL SHIFT K_6]'
-store(&VISUALKEYBOARD) 'fv_sencoten.kvk'
+store(&VISUALKEYBOARD) 'fv_sencoten.kvks'
+store(&KMW_HELPFILE) 'fv_sencoten_kmw_help.htm'
  
 begin Unicode > use(main)                      
 group(main) using keys  
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_sencoten.keyman-touch-layout"
+
++ [T_Q] > 'Q'
++ [T_W_0] > 'W̱'
++ [T_W] > 'W'
++ [T_E] > 'E'
+'N' + [T_R] > 'Ṉ'
+'W' + [T_R] > 'W̱'
+'K' + [T_R] > 'Ḵ'
+'T' + [T_R] > 'Ṯ'
+'X' + [T_R] > 'X̱'
++ [T_T_0] > 'Ṯ'
++ [T_T_1] > 'Ⱦ'
++ [T_T_2] > 'Ŧ'
++ [T_T] > 'T'
++ [T_Y] > 'Y'
++ [T_U] > 'U'
++ [T_I_0] > 'Í'
++ [T_I] > 'I'
++ [T_O] > 'O'
++ [T_P] > 'P'
++ [T_A_0] > 'Á'
++ [T_A_1] > 'Ⱥ'
++ [T_A] > 'A'
++ [T_S_0] > 'Ś'
++ [T_S] > 'S'
++ [T_D] > 'D'
+'A' + [T_F] > 'Ⱥ'
+'T' + [T_F] > 'Ⱦ'
+'C' + [T_F] > 'Ȼ'
+'K' + [T_G] > '₭'
+'T' + [T_G] > 'Ŧ'
+'L' + [T_G] > 'Ƚ'
++ [T_H] > 'H'
++ [T_J] > 'J'
++ [T_K_0] > 'Ḵ'
++ [T_K_1] > 'Ḱ'
++ [T_K_2] > '₭'
++ [T_K] > 'K'
++ [T_L_0] > 'Ƚ'
++ [T_L] > 'L'
++ [T_COLON] > ','
++ [T_Z] > 's'
++ [T_X] > 'Z'
++ [T_C_0] > 'X̱'
++ [T_C] > 'X'
++ [T_V_0] > 'Ć'
++ [T_V_1] > 'Ȼ'
++ [T_V] > 'C'
+'I' + [T_B] > 'Í'
+'A' + [T_B] > 'Á'
+'S' + [T_B] > 'Ś'
+'K' + [T_B] > 'Ḱ'
+'C' + [T_B] > 'Ć'
++ [T_N] > 'B'
++ [T_M_0] > 'Ṉ'
++ [T_M] > 'N'
++ [T_COMMA] > 'M'
+
+c --- END OF TOUCH LAYOUT RULES ---
 
 store(quote0) "[{]}" [RALT K_9] [RALT K_0] [SHIFT RALT K_9] [SHIFT RALT K_0] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT]  
 store(quote1) "‘“’”«»‹›[]{}"

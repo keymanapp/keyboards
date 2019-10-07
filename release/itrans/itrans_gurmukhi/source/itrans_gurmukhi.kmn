@@ -1,0 +1,194 @@
+﻿store(&VERSION) "10.0" 
+store(&KEYBOARDVERSION) '1.0.0'
+store(&NAME) 'Gurmukhi Phonetic (ITRANS)'
+store(&TARGETS) 'windows macosx linux web'
+store(©RIGHT) '©2019 sanskritdocuments.org'
+store(&MESSAGE) 'A Phonetic (ITRANS) keyboard for Gurmukhi script for writing Punjabi and Sindhi languages.'
+store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
+store(&BITMAP) 'itrans_gurmukhi.ico'
+store(&VISUALKEYBOARD) 'itrans_gurmukhi.kvks'
+store(&COPYRIGHT) '©sanskritdocuments.org'
+
+begin Unicode > use(main)
+group(main) using keys
+
+c 	Special Symbols
++ "#"	>	"ੴ" c ek onkar
++ "*"	>	"☬" c khanda 
++ "$"	>	"ੳ" c ura
++ "%"	>	"ੲ" c iri
++ "&"	>	"ੵ" c yakash
++ "w"	>	"ੵ" c Udaat
+
+c Special Marks
++ "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
++ "+"	>	U+200D	c ZERO-WIDTH JOINER
++ "^"	>	"੍"	c VIRAMA
+
+c 	Punctuation
+store(Punctuation) "!" "(" ")" "-"  ":" ";" "" "?" "{" "}" '"' "," "." "=" "\" "|" "[" "]" "`" "'" "/"
++ any(Punctuation)	>	index(Punctuation,1)
+
++ "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
++ "@"	>	"@" 
+
+"," + ","	>	"੶"	c	Gurmukhi ABBREVIATION SIGN
+"." + "."	>	"।"	c twice for DANDA
+"।" + "."	>	"॥"	c thrice for DOUBLE DANDA
+"॥" + "."	>	U+2026	c four dots for a HORIZONTAL ELLIPSIS
+
+"-" + "-"	>	U+2013	c hyphen twice for EN DASH
+U+2013 + "-"	>	U+2014	c three times for EM DASH
+
+c 	numbers - Gurmukhi DigitsU
+store(Digits)	"0"	"1"	"2"	"3"	"4"	"5"	"6"	"7"	"8"	"9"
+store(DigitsU)	"੦"	"੧"	"੨"	"੩"	"੪"	"੫"	"੬"	"੭"	"੮"	"੯"
++ any(Digits)	>	index(DigitsU,1)
+any(DigitsU) + [K_BKSP]	>	index(Digits,1)
+
+c  standalone vowel signs with @
+"@" + "A"	>	"ਾ"
+"@" + "i"	>	"ਿ"
+"@" + "I"	>	"ੀ"
+"@" + "u"	>	"ੁ"
+"@" + "U"	>	"ੂ"
+"@" + "e"	>	"ੇ"
+"@" + "o"	>	"ੋ"
+"@" + "a"	>	"@a"
+"@a" + "a"	>	"ਾ"
+"@a" + "i"	>	"ੈ"
+"@a" + "u"	>	"ੌ"
+"ਿ" + "i"	>	"ੀ"
+"ੁ" + "u"	>	"ੂ"
+"ੇ" + "e"	>	"ੀ"
+"ੇ" + "i"	>	"ੈ"
+"ੋ" + "o"	>	"ੂ"
+"ੋ" + "u"	>	"ੌ"
+
+c  Independent Vowels
++ "a"	>	"ਅ"
+"ਅ" + "a"	>	"ਆ"
++ "A"	>	"ਆ"
++ "i"	>	"ਇ"
+"ਇ" + "i"	>	"ਈ"
+"ਏ" + "e"	>	"ਈ"
++ "I"	>	"ਈ"
++ "u"	>	"ਉ"
+"ਉ" + "u"	>	"ਊ"
+"ਓ" + "o"	>	"ਊ"
++ "U"	>	"ਊ"
++ "e"	>	"ਏ"
+"ਅ" + "i"	>	"ਐ"
+"ਏ" + "i"	>	"ਐ"
++ "o"	>	"ਓ"
+"ਅ" + "u"	>	"ਔ"
+"ਓ" + "u"	>	"ਔ"
+
+c  Vowel Modifiers
++ "H"	>	"ਃ" c VISARGA - H
++ "M"	>	"ੰ" c TIPPI - changed to BINDI by context
+"ੰ" + "M"	>	"ਁ"	c ADAK BINDI - MM
++ "<"	>	"ਂ" c BINDI - <
++ ">"	>	"ੱ" c ADDAK
+
+c Subscript letters ( pairī̃ akkhar, or "letters at the foot")
+c are formed by Virama followed by r, v and h.
+
+c  ununsed - beep
++ "E"	>	beep
++ "F"	>	beep
++ "O"	>	beep
++ "Q"	>	beep
++ "V"	>	beep
++ "W"	>	beep
++ "X"	>	beep
++ "Z"	>	beep
+
+c  Consonants
++ "b"	>	"ਬ੍"
++ "B"	>	"ਭ੍"
++ "c"	>	"ਚ੍"
++ "C"	>	"ਛ੍"
++ "d"	>	"ਦ੍"
++ "D"	>	"ਡ੍"
++ "g"	>	"ਗ੍"
++ "G"	>	"ਘ੍"
++ "h"	>	"ਹ੍"
++ "j"	>	"ਜ੍"
++ "J"	>	"ਝ੍"
++ "k"	>	"ਕ੍"
++ "K"	>	"ਖ੍"
++ "l"	>	"ਲ੍"
++ "m"	>	"ਮ੍"
++ "n"	>	"ਨ੍"
++ "N"	>	"ਣ੍"
++ "p"	>	"ਪ੍"
++ "P"	>	"ਫ੍"
++ "r"	>	"ਰ੍"
++ "R"	>	"ੜ੍" c RRA
++ "s"	>	"ਸ੍"
++ "t"	>	"ਤ੍"
++ "T"	>	"ਟ੍"
++ "v"	>	"ਵ੍"
++ "y"	>	"ਯ੍"
++ "Y"	>	"ਞ੍"
+
+c  alternate mapping with ~
+"~" + "n"	>	"ਞ੍"
+"~" + "N"	>	"ਙ੍"
+
+c  add h to consonants
+"ਕ੍" + "h"	>	"ਖ੍"
+"ਗ੍" + "h"	>	"ਘ੍"
+"ਚ੍" + "h"	>	"ਚ੍" c same c=ch
+"ਛ੍" + "h"	>	"ਛ੍" c same C=Ch
+"ਜ੍" + "h"	>	"ਝ੍"
+"ਟ੍" + "h"	>	"ਠ੍"
+"ਡ੍" + "h"	>	"ਢ੍"
+"ਤ੍" + "h"	>	"ਥ੍"
+"ਦ੍" + "h"	>	"ਧ੍"
+"ਪ੍" + "h"	>	"ਫ੍"
+"ਬ੍" + "h"	>	"ਭ੍"
+"ਸ੍" + "h"	>	"ਸ਼੍" c sh/S
+
+c  special combinations
+"ਘ੍" + "Y"	>	"ਜ੍ਞ੍"	c	GY
+"ਣ੍" + "g"	>	"ਙ੍"	c	Ng
+
+c  Nukta - https://r12a.github.io/scripts/gurmukhi/#nukta
+c Using all precomposed forms
++ "f"	>	"ਫ਼੍" c FA
++ "q"	>	"ਗ਼੍" c GHHA
++ "x"	>	"ਖ਼੍" c KHHA
++ "z"	>	"ਜ਼੍" c ZA
++ "L"	>	"ਲ਼੍" c LLA
++ "S"	>	"ਸ਼੍" c sh/S
+
+c  Rules for Consonants + Vowel Signs
+store(Vyanjana) 'ਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਲ਼ਵਸ਼ਸਹਖ਼ਗ਼ਜ਼ੜਫ਼'
+store(ViramaMaatraa) 'eiouAIU'
+store(ViramaMaatraaU) "ੇ" "ਿ" "ੋ" "ੁ" "ਾ" "ੀ" "ੂ"
+store(aPlusMaatraa) 'aiu'
+store(aPlusMaatraaU) "ਾ"  "ੈ" "ੌ" 
+
+c 	implicit akaara deletion 
+store(opt1endings) outs(Punctuation) ' '
+
+any(Vyanjana)"੍" + any(opt1endings)	> index(Vyanjana,1) index(opt1endings,3)
+any(Vyanjana) + "^"	>	index(Vyanjana,1)"੍"U+200C
+any(Vyanjana)"੍" + "^"	>	index(Vyanjana,1)"੍" U+200C
+any(Vyanjana)"੍" + "a"	>	index(Vyanjana,1)
+any(Vyanjana) + any(aPlusMaatraa) >	context index(aPlusMaatraaU,2) 
+any(Vyanjana)"੍" + any(ViramaMaatraa) >	index(Vyanjana,1) index(ViramaMaatraaU,3) 
+any(Vyanjana)"ਿ" + "i"	>	index(Vyanjana,1)"ੀ"	c ii
+any(Vyanjana)"ੁ" + "u"	>	index(Vyanjana,1)"ੂ"	c uu
+any(Vyanjana)"ੇ" + "e"	>	index(Vyanjana,1)"ੀ"	c ee
+any(Vyanjana)"ੇ" + "i"	>	index(Vyanjana,1)"ੈ"	c ei
+any(Vyanjana)"ੋ" + "o"	>	index(Vyanjana,1)"ੂ"	c oo
+any(Vyanjana)"ੋ" + "u"	>	index(Vyanjana,1)"ੌ"	c ou
+
+store(Bindis) "M<"
+store(BindiMaatraaU) "ਾ" "ੀ" "ੈ" "ੌ" 
+any(BindiMaatraaU) + any(Bindis) > index(BindiMaatraaU,1)"ਂ"
+
+c  EOF

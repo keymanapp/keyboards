@@ -1,6 +1,10 @@
-﻿store(&NAME) 'NLCI Malayalam WinScript'
-store(&COPYRIGHT) '© NLCI 2000-2018'
-store(&KEYBOARDVERSION) '2.0.0'
+﻿store (&VERSION) '10.0'
+store(&NAME) 'Malayalam WinScript(NLCI)'
+store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.0'
+store(&BITMAP) 'nlci_malayalam_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_malayalam_winscript.kvks'
+store(&TARGETS) 'windows macosx linux web'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -44,7 +48,10 @@ c Adjust the behavior of 'i'
 
 c Adjust the behavior of l
 'ല' + 'l' > 'ള'
-'ള' + 'l' > 'ഴ'      
+'ള' + 'l' > 'ഴ'       
+
+c Adjust the behavior of L
+'ള' + 'L' > 'ഴ'
 
 c Adjust the behavior of n
 c 'ന' + 'n' > 'ഩ'     
@@ -61,20 +68,25 @@ c Adjust the behavior of R
 'ൃ' + 'R' > 'ൄ'     
    
 c Adjust the behavior of S
-+ 'S' > nul  
-
+   + 'S' > nul
+'`' dk(bt) + 'S' > 'S'
 c Adjust the behavior of u
 'ഉ' + 'u' > 'ഊ'    
 'ു' + 'u' > 'ൂ' 
 
 c Adjust the behavior of s
-'സ' + 's'> 'ഷ'
+'സ' + 's'> 'ഷ'                    
+
+c Adjust the behavior of f   
+ +'f' > nul
+'`' dk(bt) + 'f' > 'f' 
+
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '്' U+200C
 any(consonants) '്' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",;:.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Add Malayalam Chillu
@@ -85,6 +97,7 @@ any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
 
 c Add praslesham
 + 'F' > 'ഽ'    
+'`' dk(bt) + 'F'  > 'F'
 
 c Add ^
 '്ല' + '^' > 'ൢ'
@@ -144,7 +157,7 @@ any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
 any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + chandrakala
-any (consonants) + 'x' > context '്'          
+any (consonants) + 'x' > context '്'      
 any(vowels) + 'x' > context '്'   
 
 c vowels + chandrakala
@@ -155,5 +168,5 @@ any(vowelMatras) + 'x' > context '്'
 c Vowel sign elongation
 'ീ' + 'i' > context 'ീ' 
 'ൂ' + 'u' > context 'ൂ'
-'ാ' + 'a' > context 'ാ'
+
 
