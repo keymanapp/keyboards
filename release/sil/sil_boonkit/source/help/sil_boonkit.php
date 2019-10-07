@@ -19,14 +19,14 @@ and selecting the On Screen Keyboard menu item.     </p>
 
 
       <H2>Keyboard Layout</H2>
-	  <img src="BoonkitUnshifted.PNG" alt="boonkit unshifted keyboard">
+	  <img src="BoonkitUnshifted.png" alt="boonkit unshifted keyboard">
 	  <p> Boonkit Keyboard unshifted</p>
 	  <p></p>
-	  <img src="Boonkitshifted.PNG" alt="boonkit shifted keyboard">
+	  <img src="Boonkitshifted.png" alt="boonkit shifted keyboard">
 	  <p> Boonkit Keyboard shifted</p>
       <P class=Caption></P><A name=license></A>
       <H2>License</H2>
-      <P>SIL Boonkit Keyman Keyboard is copyright &copy; 2008-2017 SIL 
+      <P>SIL Boonkit Keyman Keyboard is copyright &copy; 2008-2018 SIL 
       International. It is distributed under The MIT License (MIT)</P>
       <DIV class=Note>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy

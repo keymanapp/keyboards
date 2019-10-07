@@ -2,53 +2,115 @@
 c Eastern Congo keyboard layout
 c 
 
-store(&version) "9.0"
+store(&version) "10.0"
 store(&name) "Eastern Congo"
 store(&BITMAP) 'sil_eastern_congo.ico'
-store(&copyright) "© 2005-2018 SIL - Eastern Congo Group"
+store(&copyright) "© 2005-2019 SIL - Eastern Congo Group"
 store(&MESSAGE) 'Eastern Congo keyboard for languages of the Democratic Republic of the Congo.'
-store(&TARGETS) 'windows macosx'
-store(&ETHNOLOGUECODE) 'buu flr kmw led lgg lik log mdj mdm omi tbt tmv'
+store(&TARGETS) 'any'
+c store(&ETHNOLOGUECODE) 'buu flr kmw led lgg lik log mdj mdm omi tbt tmv'
 store(&VISUALKEYBOARD) 'sil_eastern_congo.kvks'
-store(&KEYBOARDVERSION) '1.3.1'
-store(&WINDOWSLANGUAGES) 'x0409'
+store(&KEYBOARDVERSION) '1.4'
+store(&LAYOUTFILE) 'sil_eastern_congo.keyman-touch-layout'
 
 begin Unicode > use(main)
 
-store(accent) U+02C6 U+02C7 U+02C9 U+0300 U+0301
-store(regvowel) U+0041 U+0045 U+0049 U+004F U+0055 \
-    U+0061 U+0065 U+0069 U+006F U+0075 \
-    U+0038 U+002A U+0039 U+0028 U+0037 U+0026   c alternate vowels
-store(spvowel) U+00C4 U+0190 U+0197 U+0186 U+0244 \
-    U+00E4 U+025B U+0268 U+0254 U+0289 \
-    U+026A U+0049 U+0275 U+019F U+028A U+01B1 c alternate vowels
-store(vowel) outs(regvowel) outs(spvowel)
-store(nasal) U+006D U+006E U+004D U+004E
-store(regnasal) U+006E U+004E
-store(spnasal)  U+014B U+014A
-store(Lendu) U+0052 U+0053 U+005A U+0072 U+0073 U+007A c these can take accents
+c store(accent) U+02C6 U+02C7 U+02C9 U+0300 U+0301
+
+c Standard characters that can take all diacritics ADEIMNORSUZ
+store(basic_diacritics) U+0041 U+0044 U+0045 U+0049 U+004D \
+                        U+004E U+004F U+0052 U+0053 \
+                        U+0055 U+005A \
+                        U+0061 U+0064 U+0065 U+0069 U+006D \
+                        U+006E U+006F U+0072 U+0073 \
+                        U+0075 U+007A
+
+c All characters on standard keyboard
+store(all_basic_chars) "A"    "B"    "C"    "D"    "E"    "F"    "G"    "H"    "I"    "J"    "K" "L" \
+                       "M"    "N"    "O"    "P"    "Q"    "R"    "S"    "T"    "U"    "V"    "W" "X" \
+                       "Y"    "Z"    \
+                       "a"    "b"    "c"    "d"    "e"    "f"    "g"    "h"    "i"    "j"    "k" "l" \
+                       "m"    "n"    "o"    "p"    "q"    "r"    "s"    "t"    "u"    "v"    "w" "x" \
+                       "y"    "z"    
+store(all_misc_chars)  "~"    "!"    "@"    "#"    "$"    "%"    "^"    "&"    "*" "(" \
+                       ")"    "_"    "+"    "{"    "}"    "|"    ":"    '"'    "<"    ">"    "?" \
+                       "`"    "1"    "2"    "3"    "4"    "5"    "6"    "7"    "8" "9" \
+                       "0"    "-"    "="    "["    "]"    "\"    ";"    "'"    ","    "."    "/"
+
+c Characters made with semi-colon
+store(semi_chars_K)    "A"    "B"    "C"    "D"    "E"           "G"    "H"    "I"    "J" \
+                       "M"    "N"    "O"    "P"           "R"           "T"    "U" \
+                       "a"    "b"    "c"    "d"    "e"                  "h"    "i"    "j" \
+                       "m"    "n"    "o"    "p"           "r"           "t"    "u" \
+                       "&"    "*"    "(" \
+                       "6"    "7"    "8"    "9"    ":"     "="   "|"    '"'   
+
+store(semi_chars_U)    U+00C4 U+0181 U+00C7 U+018A U+0190        U+00DF U+0126 U+0197 U+A7AA \
+                       U+019D U+014A U+0186 U+00D8        U+018F        U+018E U+0244 \
+                       U+00E4 U+0253 U+00E7 U+0257 U+025B               U+0127 U+0268 U+0266 \
+                       U+0272 U+014B U+0254 U+00F8        U+0259        U+01DD U+0289 \
+                       U+01B1 U+0196 U+019F \
+                       U+026A U+028A U+0269 U+0275 U+A789 U+A78A U+A71C U+A78C
+
+c Special characters that can take all diacritics  AEIOPRTUaeioprtu68*9(7&
+store(dia_chars_K)     "A"           "C"           "E"                         "I" \
+                       "M"    "N"    "O"    "P"           "R"           "T"    "U" \
+                       "a"    "b"    "c"    "d"    "e"                  "h"    "i" \
+                       "m"    "n"    "o"    "p"           "r"           "t"    "u" \
+                       "&"    "*"    "(" \
+                       "6"    "7"    "8"    "9"    
+store(dia_chars_U)     U+00C4        U+00C7        U+0190                      U+0197 \
+                       U+019D U+014A U+0186 U+00D8        U+018F        U+018E U+0244 \
+                       U+00E4 U+0253 U+00E7 U+0257 U+025B               U+0127 U+0268 \
+                       U+0272 U+014B U+0254 U+00F8        U+0259        U+01DD U+0289 \
+                       U+01B1 U+0196 U+019F \
+                       U+026A U+028A U+0269 U+0275 
+
+
+c store(regvowel) U+0041 U+0045 U+0049 U+004F U+0052 U+0055 \
+c                 U+0061 U+0065 U+0069 U+006F U+0072 U+0075 \
+c                 U+0038 U+002A U+0039 U+0028 U+0037 U+0026   c alternate vowels
+c store(spvowel)  U+00C4 U+0190 U+0197 U+0186 U+018F U+0244 \
+c                 U+00E4 U+025B U+0268 U+0254 U+0259 U+0289 \
+c                 U+026A U+0049 U+0275 U+019F U+028A U+01B1 c alternate vowels
+c store(regcons) U+0062 U+0063 U+0064        U+0068 U+006E U+006D \
+c                U+0042 U+0043 U+0044 U+0047 U+0048 U+004E U+004D
+c store(spcons)  U+0253 U+00E7 U+0257        U+0127 U+014B U+0272 \
+c                U+0181 U+00C7 U+018A U+00DF U+0126 U+014A U+019D
+c store(regvowel_K)  U+0054 U+0050 \
+c                    U+0074 U+0070
+c store(regvowel_U) U+018E U+00D8 \
+c                   U+01DD U+00F8 
+c store(vowel) outs(regvowel) outs(spvowel) outs(regvowel_U)
+c store(nasal) U+006D U+006E U+004D U+004E
+c store(regnasal) U+006E U+004E U+004D U+006D
+c store(spnasal)  U+014B U+014A U+019D U+0272
+
 group(main) using keys
-";" + any(regvowel) > index(spvowel,2)          c special vowel
-"^" + any(vowel) > index(vowel,2) U+0302        c circumflex
-"!" + any(vowel) > index(vowel,2) U+030C        c caron
-"`" + any(vowel) > index(vowel,2) U+0300        c grave
-"'" + any(vowel) > index(vowel,2) U+0301        c acute
-":" + any(vowel) > index(vowel,2) U+0308        c diaersis (This was " before.)
-"@" + any(vowel) > index(vowel,2) U+0304    c macron
-"^;" + any(regvowel) > index(spvowel,3) U+0302
-"!;" + any(regvowel) > index(spvowel,3) U+030C
-"`;" + any(regvowel) > index(spvowel,3) U+0300
-"';" + any(regvowel) > index(spvowel,3) U+0301
-":;" + any(regvowel) > index(spvowel,3) U+0308
-'@;' + any(regvowel) > index(spvowel,3) U+0304
-c ";" + "'" > U+A78C  c glottal stop
-"'" + any(nasal) > index(nasal,2) U+0301
-"`" + any(nasal) > index(nasal,2) U+0300
-"';" + any(regnasal) > index(spnasal,3) U+0301
-"`;" + any(regnasal) > index(spnasal,3) U+0300
-"'" + any(Lendu) > index(Lendu,2) U+0301
-"`" + any(Lendu) > index(Lendu,2) U+0300
-"!" + any(Lendu) > index(Lendu,2) U+030C
+
+c Basic characters on keyboard
++ any(all_basic_chars) > index(all_basic_chars,1)
++ any(all_misc_chars)  > index(all_misc_chars,1)
+
+c special characters made with semicolon
+";" + any(semi_chars_K)    > index(semi_chars_U,2)         c all special characters
+
+c standard characters on keyboard
+"^" + any(basic_diacritics) > index(basic_diacritics,2) U+0302 use(nfc)       c circumflex
+"!" + any(basic_diacritics) > index(basic_diacritics,2) U+030C use(nfc)        c caron
+"`" + any(basic_diacritics) > index(basic_diacritics,2) U+0300 use(nfc)        c grave
+"'" + any(basic_diacritics) > index(basic_diacritics,2) U+0301 use(nfc)        c acute
+":" + any(basic_diacritics) > index(basic_diacritics,2) U+0308 use(nfc)        c diaersis (This was " before.)
+"@" + any(basic_diacritics) > index(basic_diacritics,2) U+0304 use(nfc)        c macron
+"~" + any(basic_diacritics) > index(basic_diacritics,2) U+0303 use(nfc)        c tilde
+
+"^;" + any(dia_chars_K) > index(dia_chars_U,3) U+0302 use(nfc)
+"!;" + any(dia_chars_K) > index(dia_chars_U,3) U+030C use(nfc)
+"`;" + any(dia_chars_K) > index(dia_chars_U,3) U+0300 use(nfc)
+"';" + any(dia_chars_K) > index(dia_chars_U,3) U+0301 use(nfc)
+":;" + any(dia_chars_K) > index(dia_chars_U,3) U+0308 use(nfc)
+'@;' + any(dia_chars_K) > index(dia_chars_U,3) U+0304 use(nfc)
+'~;' + any(dia_chars_K) > index(dia_chars_U,3) U+0303 use(nfc)
 
 c ";" + "9" > U+027F c o bar
 c ";" + "(" > U+019F c capital O bar
@@ -63,24 +125,20 @@ c "!;" + "(" > U+019F U+030C c capital O bar with caron
 c "^;" + "(" > U+019F U+0302 c capital O bar with circumflex
 c "@;" + "(" > U+019F U+0304 c capital O bar with macron
 
-";" + "N" > U+014A c capital eng
-";" + "n" > U+014B c eng
 ".." + "." > U+2026 c ellipses
 ";" + "<" > U+2039 c single guillemet open
 ";" + ">" > U+203A c single guillemet close
 U+2039 + "<" > U+00AB c double guillemet open
 U+203A + ">" > U+00BB c double guillemet close
+U+00AB + "<" > U+00AB U+202F U+2039
+U+00BB + ">" > U+203A U+202F U+00BB
+
 c ";" + "`" > U+2018 c single open quote
 c ";" + "'" > U+2019 c single close quote
 "=" + "`" > U+2018 c single open quote
 "=" + "'" > U+2019 c single close quote
 U+2018 + "`" > U+201C c double open quote
 U+2019 + "'" > U+201D c double close quote
-";" + "c" > U+00E7 c c cedilla
-";" + "C" > U+00C7 c C cedilla
-";" + "H" > U+0126 c H bar
-";" + "h" > U+0127 c h bar
-";" + "B" > U+00DF c German sz
 ";" + "-" > U+2013 c en dash
 ";" + "_" > U+2014 c em dash
 ";" + "x" > U+00D7 c multiplication
@@ -91,8 +149,6 @@ U+2019 + "'" > U+201D c double close quote
 "(C" + ")" > U+00A9 c copyright symbol
 "(R" + ")" > U+00AE c trademark symbol
 
-";" + ":" > U+A789  c modifier letter colon (Budu past tense)
-";" + "=" > U+A78A  c modifier letter short equal (Budu future tense)
 U+0020 + "!" > U+202F "!" c U+202F is narrow nbsp, U+00A0 is nbsp
 U+0020 + "?" > U+202F "?"
 U+0020 + ":" > U+202F ":"
@@ -107,26 +163,183 @@ U+00AB + U+0020 > U+00AB U+202F
 ";" + "'" > U+02CA  c modifier letter acute accent
 U+02CA + "'" > U+A78C  c glottal stop
 ";" + "`" > U+02CB  c modifier letter grave accent
-"=;" + "'" > U+0301  c combining acute accent
-"=;" + "`" > U+0300  c combining grave accent
-"=;" + "!" > U+030C  c combining caron accent
-"=;" + "^" > U+0302  c combining circumflex accent
-"=;" + "@" > U+0304  c combining macron
+"=;" + "'" > U+0301 use(nfc)  c combining acute accent
+"=;" + "`" > U+0300 use(nfc)  c combining grave accent
+"=;" + "!" > U+030C use(nfc)  c combining caron accent
+"=;" + "^" > U+0302 use(nfc)  c combining circumflex accent
+"=;" + "@" > U+0304 use(nfc)  c combining macron
 
 c changed lines 117-125 to use dk(block_convert) to terminate processing on advice from MD. AC 26/04/18
-"'" + "'" > "''" dk(block_convert) c single apostrophe, stop context
-";" + ";" > ";;" dk(block_convert)
-"`" + "`" > "``" dk(block_convert)
-'"' + '"' > '""' dk(block_convert)
-"=" + "=" > "==" dk(block_convert)
-":" + ":" > "::" dk(block_convert)
-"^" + "^" > "^^" dk(block_convert)
-"@" + "@" > "@@" dk(block_convert)
+"'" + "'" > "'" dk(block_convert) c single apostrophe, stop context
+";" + ";" > ";" dk(block_convert)
+"`" + "`" > "`" dk(block_convert)
+'"' + '"' > '"' dk(block_convert)
+"=" + "=" > "=" dk(block_convert)
+":" + ":" > ":" dk(block_convert)
+"^" + "^" > "^" dk(block_convert)
+"@" + "@" > "@" dk(block_convert)
 c "'" + "'" > U+0027 dk(block_convert)   c apostrophe, stop context
 c any(accent) + any(vowel) > index(vowel,2) index(accent,1)
-any(vowel) any(accent) + [K_BKSP] > nul
-any(vowel) any(accent) + [SHIFT K_BKSP] > index(vowel,1)
+c any(vowel) any(accent) + [K_BKSP] > nul
+c any(vowel) any(accent) + [SHIFT K_BKSP] > index(vowel,1)
 
 c any(accent) + [K_BKSP] > ""
+
+group(nfc)
+
+c stacking diacritics
+c a circ acute
+U+00E2 U+0301 > U+1EA5
+U+00C2 U+0301 > U+1EA4
+c a circ grave
+U+00E2 U+0300 > U+1EA7
+U+00C2 U+0300 > U+1EA6
+c a circ tilde - not currently supported by keyboard
+U+00E2 U+0303 > U+1EAB
+U+00C2 U+0303 > U+1EAA
+c a diaeresis macron
+U+00E4 U+0304 > U+01DF
+U+00C4 U+0304 > U+01DE
+
+c e circ acute
+U+00EA U+0301 > U+1EBF
+U+00CA U+0301 > U+1EBE
+c e circ grave
+U+00EA U+0300 > U+1EC1
+U+00CA U+0300 > U+1EC0
+c e circ tilde - not supported by this keyboard
+U+00EA U+0303 > U+1EC5
+U+00CA U+0303 > U+1EC4
+c e macron acute
+U+0113 U+0301 > U+1E17
+U+0112 U+0301 > U+1E16
+c e macron grave
+U+0113 U+0300 > U+1E15
+U+0112 U+0300 > U+1E14
+
+c i diaeresis acute
+U+00EF U+0301 > U+1E2F
+U+00CF U+0301 > U+1E2E
+
+c o circ acute
+U+00F4 U+0301 > U+1ED1
+U+00D4 U+0301 > U+1ED0
+c o circ grave
+U+00F4 U+0300 > U+1ED3
+U+00D4 U+0300 > U+1ED2
+c o circ tilde - not supported by this keyboard
+U+00F4 U+0303 > U+1ED7
+U+00D4 U+0303 > U+1ED6
+c o diaeresis macron
+U+00F6 U+0304 > U+022B
+U+00D6 U+0304 > U+022A
+c o tilde acute
+U+00F5 U+0301 > U+1E4D
+U+00D5 U+0301 > U+1E4C
+c o tilde diaeresis - not supported by this keyboard
+U+00F5 U+0308 > U+1E4F
+U+00D5 U+0308 > U+1E4E
+c o tilde macron
+U+00F5 U+0304 > U+022D
+U+00D5 U+0304 > U+022C
+c o macron acute
+U+014D U+0301 > U+1E53
+U+014C U+0301 > U+1E52
+c o macron grave
+U+014D U+0300 > U+1E51
+U+014C U+0300 > U+1E50
+c slash o acute
+U+00F8 U+0301 > U+01FF
+U+00D8 U+0301 > U+01FE
+
+c u diaeresis acute
+U+00FC U+0301 > U+01D8
+U+00DC U+0301 > U+01D7
+c u diaeresis grave
+U+00FC U+0300 > U+01DC
+U+00DC U+0300 > U+01DB
+c u diaeresis caron
+U+00FC U+030C > U+01DA
+U+00DC U+030C > U+01D9
+c u diaeresis macron
+U+00FC U+0304 > U+01D6
+U+00DC U+0304 > U+01D5
+c u tilde acute
+U+0169 U+0301 > U+1E79
+U+0168 U+0301 > U+1E78
+c u macron diaeresis - not currently supported by keyboard
+U+016B U+0308 > U+1E7B
+U+016A U+0308 > U+1E7A
+
+
+store(basic)      "a"    "A"    "e"    "E"    "i"    "I"    "o"    "O"    "u"    "U"
+store(grave_nfc)  U+00E0 U+00C0 U+00E8 U+00C8 U+00EC U+00CC U+00F2 U+00D2 U+00F9 U+00D9
+store(acute_nfc)  U+00E1 U+00C1 U+00E9 U+00C9 U+00ED U+00CD U+00F3 U+00D3 U+00FA U+00DA
+store(circ_nfc)   U+00E2 U+00C2 U+00EA U+00CA U+00EE U+00CE U+00F4 U+00D4 U+00FB U+00DB
+store(caron_nfc)  U+01CE U+01CD U+011B U+011A U+01D0 U+01CF U+01D2 U+01D1 U+01D4 U+01D3
+store(diaer_nfc)  U+00E4 U+00C4 U+00EB U+00CB U+00EF U+00CF U+00F6 U+00D6 U+00FC U+00DC
+store(macron_nfc) U+0101 U+0100 U+0113 U+0112 U+012B U+012A U+014D U+014C U+016B U+016A
+store(tilde_nfc)  U+00E3 U+00C3 U+1EBD U+1EBC U+0129 U+0128 U+00F5 U+00D5 U+0169 U+0168
+
+any(basic) U+0300 > index(grave_nfc,1)
+any(basic) U+0301 > index(acute_nfc,1)
+any(basic) U+0302 > index(circ_nfc,1)
+any(basic) U+030C > index(caron_nfc,1)
+any(basic) U+0308 > index(diaer_nfc,1)
+any(basic) U+0304 > index(macron_nfc,1)
+any(basic) U+0303 > index(tilde_nfc,1)
+
+c cedilla acute
+U+00E7 U+0301 > U+1E09
+U+00C7 U+0301 > U+1E08
+
+c m acute
+U+006D U+0301 > U+1E3F
+U+004D U+0301 > U+1E3E
+
+c n acute
+U+006E U+0301 > U+0144
+U+004E U+0301 > U+0143
+c n grave
+U+006E U+0300 > U+01F9
+U+004E U+0300 > U+01F8
+c n tilde
+U+006E U+0303 > U+00F1
+U+004E U+0303 > U+00D1
+c n caron
+U+006E U+030C > U+0148
+U+004E U+030C > U+0147
+
+c d caron
+U+0064 U+030C > U+010F
+U+0044 U+030C > U+010E
+
+c r acute
+U+0072 U+0301 > U+0155
+U+0052 U+0301 > U+0154
+c r caron
+U+0072 U+030C > U+0159
+U+0052 U+030C > U+0158
+
+c s acute
+U+0073 U+0301 > U+015B
+U+0053 U+0301 > U+015A
+c s circumflex
+U+0073 U+0302 > U+015D
+U+0053 U+0302 > U+015C
+c s caron
+U+0073 U+030C > U+0161
+U+0053 U+030C > U+0160
+
+c z acute
+U+007A U+0301 > U+017A
+U+005A U+0301 > U+0179
+c z circumflex
+U+007A U+0302 > U+1E91
+U+005A U+0302 > U+1E90
+c z caron
+U+007A U+030C > U+017E
+U+005A U+030C > U+017D
+
 
 c EOF
