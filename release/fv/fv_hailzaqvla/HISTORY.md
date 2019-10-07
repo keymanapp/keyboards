@@ -1,6 +1,10 @@
 Haiɫzaqvla Change History
 ============================
 
+9.3 (27 Jun 2019)
+----------------
+* Canonical ordering normalized (U+0323)
+
 9.2 (9 May 2019)
 ----------------
 * Added .kps file

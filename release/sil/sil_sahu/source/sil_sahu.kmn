@@ -1,0 +1,41 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Sahu (SIL)'
+store(&COPYRIGHT) 'Copyright (c) 2019 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&MNEMONICLAYOUT) '1'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'sil_sahu.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(base1) 'abcdegijnosuy?'
+
+store(output1) U+0276 U+0253 U+02A6 U+0257 U+025B U+0260 U+0268 \
+               U+02A5 U+014B U+0254 U+02A7 U+028A U+0272 U+02A1
+
+c Implosive plus combining macron below
+'b' + 'b' > 'b' U+0331
+'d' + 'd' > 'd' U+0331
+'g' + 'g' > 'g' U+0331
+'j' + 'j' > 'j' U+0331
+
+'B' + 'B' > 'B' U+0331
+'D' + 'D' > 'D' U+0331
+'G' + 'G' > 'G' U+0331
+'J' + 'J' > 'J' U+0331
+
+c ~ modifier keys
+any(base1) + '~' > index(output1, 1)
+
+c Touchscreen keys
++ [SHIFT T_B_MACRON_BELOW] > 'B' U+0331
++ [SHIFT T_D_MACRON_BELOW] > 'D' U+0331
++ [SHIFT T_G_MACRON_BELOW] > 'G' U+0331
++ [SHIFT T_J_MACRON_BELOW] > 'J' U+0331
+
++ [T_B_MACRON_BELOW] > 'b' U+0331
++ [T_D_MACRON_BELOW] > 'd' U+0331
++ [T_G_MACRON_BELOW] > 'g' U+0331
++ [T_J_MACRON_BELOW] > 'j' U+0331

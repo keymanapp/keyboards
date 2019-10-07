@@ -3,7 +3,7 @@ Haiɫzaqvla keyboard
 
 Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
 
-Version 9.2
+Version 9.3
 
 Haiɫzaqvla keyboard layout for Unicode
 
@@ -19,7 +19,3 @@ Supported Platforms
 
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0323)
