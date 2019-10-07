@@ -5,7 +5,7 @@
 ?>
 
     <p>Eastern Congo keyboard for languages of the Democratic Republic of the Congo.</p>
-    <h2>Layout</h2>
+    <h2>Desktop Layout</h2>
 <div id='osk-container'>
   <h2>Desktop Keyboard Layout</h2>
   <div id='osk' data-states='default shift'></div>
@@ -52,6 +52,9 @@
             </tr>
             <tr>
                 <td>;8</td><td>ɩ</td><td>;*</td><td>Ɩ</td>
+            </tr>
+            <tr>
+                <td>;6</td><td>ɪ</td><td></td><td></td>
             </tr>
             <tr>
                 <td>;m</td><td>ɲ</td><td>;M</td><td>Ɲ</td>
@@ -261,3 +264,10 @@
 
         </tbody>
     </table>
+
+<div id='osk-container'>
+  <h2>Mobile Keyboard Layout</h2>
+  <p>The mobile layout can use the same keystrokes as the desktop. However, the mobile layout also has most of the special characters on longpress keys as well. For example, epsilon can be typed by using longpress e. The combining marks can also be typed different from the desktop keyboard. There is a key to the right of the spacebar where the combining marks can be accessed. If you do it this way, the combining mark <em>must</em> be typed after the base character (not before as the desktop does).</p>
+<div id='osk-tablet' data-states='default shift numeric'></div>
+</div>
+

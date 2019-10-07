@@ -1,6 +1,21 @@
 SIL EL - Ethiopian Latin Change History
 =======================================
 
+1.4.0 (05 May 2019)
+-------------------
+* Added Nuer compatibilty:
+  - U+025B U+0308 (ɛ̈)
+  - U+0190 U+0308 (Ɛ̈)
+  - U+025B U+0331 U+0308 (ɛ̱̈)
+  - U+0190 U+0331 U+0308 (Ɛ̱̈)
+  - U+0263 (ɣ)
+  - U+0194 (Ɣ)
+  - U+0254 U+0308 (ɔ̈)
+  - U+0186 U+0308 (Ɔ̈)
+* Add "]" to ";" and "<" as trigger for ŋ and Ŋ
+* Add "[" to "#" as diaresis (◌̈) trigger
+* Updated supported languages list
+
 1.3.2 (26 Apr 2019)
 -------------------
 * Fixed BCP47 codes
