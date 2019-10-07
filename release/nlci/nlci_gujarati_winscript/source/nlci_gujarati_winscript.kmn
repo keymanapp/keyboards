@@ -1,6 +1,10 @@
-﻿store(&NAME) 'NLCI Gujarati WinScript'
-store(&COPYRIGHT) '© NLCI 2000-2018'
-store(&KEYBOARDVERSION) '2.0.0'
+﻿Store (&VERSION) '10.0'
+store(&NAME) 'NLCI Gujarati WinScript'  
+store(&COPYRIGHT) '© 2000-2019 NLCI, Bangalore'
+store(&KEYBOARDVERSION) '2.0'
+store(&BITMAP) 'nlci_gujarati_winscript.ico'
+store(&TARGETS) 'any windows'
+store(&VISUALKEYBOARD) 'nlci_gujarati_winscript.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -43,7 +47,8 @@ c Adjust the behavior of R
 'ૃ' + 'R' >'ૄ'
    
 c Adjust the behavior of S
-+ 'S' >  'ઁ'  
++ 'S' >  'ઁ'     
+'`' dk(bt) + 'S' > 'S'
 
 c Adjust the behavior of u
 'ઉ' + 'u' > 'ઊ'    
@@ -53,21 +58,29 @@ c Adjust the behavior of s
 'સ' + 's'> 'ઁ'
 
 c Adjust the behavior of E
- + 'E' > nul       
+ + 'E' > nul  
+ '`' dk(bt) + 'E' > 'E'     
  
  c Adjust the behavior of O
- + 'O' > nul      
+ + 'O' > nul     
+ '`' dk(bt) + 'O' > 'O' 
  
  c Adjust the behavior of F
  + 'F' > nul   
- + 'f' > nul   
+ + 'f' > nul
+ '`' dk(bt) + 'f' > 'f' 
+ '`' dk(bt) + 'F' > 'F'     
+ 
+ C Adjust the behavior of x
+ '`' dk(bt) + 'x' > 'x'
+ '`' dk(bt) + 'X' > 'X'
  
 
 c Adjust the behavior of X
 any(cons) + 'X' > context '્' U+200C
 any(cons) '્' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",;:.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]}-/;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c Restrict the ZW characters 
