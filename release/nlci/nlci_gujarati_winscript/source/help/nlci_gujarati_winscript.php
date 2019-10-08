@@ -13,7 +13,87 @@
 END;
   require_once('header.php');
 ?>
+<head>
+    <meta charset="utf-8" />
+    <title>NLCI Gujarati WinScript Keyboard help</title>
+    <style>
 
+        html, body {
+            font-family: sans-serif;
+            font-size: 100%;
+        }
+        samp {
+            font-family: Annapurna; 
+            font-size:20pt; 
+            
+        }
+        kbd {
+            color:black; 
+            font: 0.8em sans-serif; 
+            border:solid 1px grey; 
+            background:#ccc; 
+            margin:2px 1px; 
+            padding:2px 3px; 
+            -webkit-border-radius: 3px; 
+            -moz-border-radius: 3px; 
+            border-radius: 3px;
+        }
+
+
+        /* Table */
+        .inputSequences {
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 592px;
+        }
+
+        .inputSequences th, 
+        .inputSequences td {
+            padding: 7px 17px;
+        }
+        /* .inputSequences caption {
+            margin: 7px;
+        } */
+
+        /* Table Header */
+        .inputSequences thead th {
+            border-bottom: 2px solid #6ea1cc;
+            text-transform: uppercase;
+        }
+
+        /* Table Body */
+        .inputSequences tbody td {
+            border-bottom: 1px solid #e1edff;
+            color: #353535;
+            text-align: center;
+        }
+        .inputSequences tbody tr:nth-child(odd) td {
+            background-color: #f4fbff;
+        }
+        /* 
+        .inputSequences tbody td:nth-child(4),
+        .inputSequences tbody td:first-child,
+        .inputSequences tbody td:last-child {
+            text-align: right;
+        }
+        */
+        .inputSequences tbody tr:hover td {
+            background-color: #ffffa2;
+            border-color: #ffff0f;
+        }
+
+        /* Table Footer */
+        /* 
+            .inputSequences tfoot th {
+            border-top: 2px solid #6ea1cc;
+            text-align: right;
+        } 
+        */
+
+
+    </style>
+</head>
+<body>
     
     <h1>NLCI Gujarati WinScript Keyboard help</h1>
 
