@@ -18,12 +18,12 @@
 
 <h1>Indigenous NT Integrated Keyboard for Keyman</h1>
 
-<p><small>Rajiv Rawat</small></p>
+<p><small>By Rajiv Rawat</small></p>
 
 <p>This is the Keyman version of the universal keyboard for the 11 official languages of the Northwest Territories (Inuktitut in Roman Orthography). Additional characters for other circumpolar languages have also been included.</p>
 <p>It retains the standard US keyboard layout while providing access to special characters and diacritics through the <strong>Alt-Gr (Right Alt)</strong> key on Desktop computers.</p>
 <p>On mobile devices such as tablets and smartphones, the longpress popup provides the same functionality.</p>
-<p>The keyboard is intended to be intuitive and easy to use for the widest number of users. As such, it hopes to facilitate widescale acceptance and adoption of the incredible linguistic diversity in the Canadian North.</p>
+<p>The keyboard is intended to reduce keyboard switching and be intuitive and easy to use for the widest number of users. As such, it hopes to facilitate widescale acceptance and adoption of the incredible linguistic diversity in the Canadian North.</p>
 
 <h4>Note</h4>
 
