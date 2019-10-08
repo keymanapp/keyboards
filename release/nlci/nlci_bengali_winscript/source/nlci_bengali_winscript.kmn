@@ -1,6 +1,10 @@
-﻿store(&NAME) 'NLCI Bengali WinScript'
-store(&COPYRIGHT) '© NLCI 2000-2018'
-store(&KEYBOARDVERSION) '2.0.0'
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Bengali Winscript Keyboard [NLCI]'   
+store(&COPYRIGHT) '© 2000-2019 NLCI, Bangalore'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'nlci_bengali_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_bengali_winscript.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -44,7 +48,8 @@ c Adjust the behavior of R
 'ৃ' + 'R' > 'ৄ'     
    
 c Adjust the behavior of S
-+ 'S' > 'ঁ'  
++ 'S' > 'ঁ'   
+'`' dk(bt) + 'S' > 'S'
 
 c Adjust the behavior of u
 'উ' + 'u' > 'ঊ'    
@@ -63,24 +68,33 @@ c Adjust the behavior of y
 'য' + 'y' > 'য়'    
 
 c Adjust the behavior of E
- + 'E' > nul      
+ + 'E' > nul 
+ '`' dk(bt) + 'E' > 'E'     
  
 c Adjust the behavior of O
- + 'O' > nul   
+ + 'O' > nul 
+ '`' dk(bt) + 'O' > 'O'  
 
 c Adjust the behavior of F
- + 'F' > nul  
+ + 'F' > nul      
+ '`' dk(bt) + 'F' > 'F'
 
 c Adjust the behavior of f
  + 'f' > '়'     
+ '`' dk(bt) + 'f' > 'f'   
  
+c Adjust the behavior of x
+'`' dk(bt) + 'x' > 'x' 
+
+C Adjust the behavior of X
+'`' dk(bt) + 'X' > 'X'
 
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '্' U+200C
 any(consonants) '্' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",;:.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]}-/;\~@#$%^&*(_+:<?|)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
 c = is a modifier key that alters the default behavior of some keystrokes
