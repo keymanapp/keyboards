@@ -49,7 +49,8 @@ c Adjust the behavior of R
 'ୃ' + 'R' > 'ୄ'     
    
 c Adjust the behavior of S
-+ 'S' > 'ଁ'  
++ 'S' > 'ଁ'    
+'`' dk(bt) + 'S' > 'S'
 
 c Adjust the behavior of u
 'ଉ' + 'u' > 'ଊ'    
@@ -59,23 +60,31 @@ c Adjust the behavior of s
 'ସ' + 's'> 'ଷ'
 
 c Adjust the behavior of E
- + 'E' > nul            
+ + 'E' > nul  
+ '`' dk(bt) + 'E' > 'E'          
  
 c Adjust the behavior of O
  + 'O' > nul    
+ '`' dk(bt) + 'O' > 'O'
  
  c Adjust the behavior of F
  + 'F' > nul    
+ '`' dk(bt) + 'F' > 'F'
 
 c Adjust the behavior of y
 'ଯ' + 'y' > 'ୟ'   
 
 c Adjust the behavior of f
- +'f' > '଼'    
+ +'f' > '଼'  
+ '`' dk(bt) + 'f' > 'f'  
  
 c Adjust the behavior of D and d
 'ଢ' + 'D' > 'ଢ଼'
 'ଡ' + 'd' > 'ଡ଼'   
+
+c Adjust the behavior of x and X
+'`' dk(bt) + 'x' > 'x'
+'`' dk(bt) + 'X' > 'X'
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '୍' U+200C
