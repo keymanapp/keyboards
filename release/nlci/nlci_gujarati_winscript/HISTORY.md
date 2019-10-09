@@ -1,4 +1,4 @@
-#NLCI Gujarati WinScript Keyboard Change History
+# Gujarati WinScript (NLCI)Change History
 
 ## 2.0 (2019)
 * A Complete rewrite of the keyboard by Binila Sanki (SG, NLCI)

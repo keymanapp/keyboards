@@ -1,6 +1,6 @@
-# NLCI Gujarati WinScript Keyboard
+#  Gujarati WinScript(NLCI)
 
-Copyright (C) 2002-2019 NLCI, Banglore
+Copyright (c) 2002-2019 NLCI, Bangalore
 
 Version 2.0
 
@@ -12,3 +12,4 @@ This Keyboard mimic Gujarati WinScript Keyboard Layout designed by NLCI in 1988.
  * Windows
  * macOS
  * Web
+ * linux
