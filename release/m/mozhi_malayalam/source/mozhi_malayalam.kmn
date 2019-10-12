@@ -1,5 +1,5 @@
 ﻿store(&VERSION) '9.0'
-﻿c Malayalam Keyman Keyboard for Mozhi Keyboard Layout
+c Malayalam Keyman Keyboard for Mozhi Keyboard Layout
 c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
@@ -60,10 +60,28 @@ any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
 '1/16' + '\' > U+0d76
 '1/8' + '\' > U+0d77
 '3/16' + '\' > U+0d78
- 
+
+c Joiners (This is a new addition to the spec)
++ '+' > U+200D dk(zwj)  c Explicit zero-width-joiner
+U+200D dk(zwj) + '+' > '+' c To enable the keyboarding of '+' sign
++ '|' > U+200C dk(zwnj) c Exlplicit zero-width-non-joiner
+U+200C dk(zwnj) + '|' > U+200B dk(zwsp) c Explicit zero-width-space
+U+200B dk(zwsp) + '|' > '|' c To enable the keyboarding of '|' sign
+
+c Explicit Virma
+c Virama added explicitely (using ~) should be preserved 
+U+0D4D + '~' > U+0D4D dk(vir)
+c U+0D4D dk(vir) + any(consonants) > U+0D4D U+200D index(consonants, 3)
+any(chills_anu) + '~' > index(chill_anu_bases, 1) '്' dk(vir)
+dk(vir) + '_' > Nul c cancels the explicit virama property  
+any(consonants) U+0D4D dk(vir) + any(cDirectSmallKeys) > index(consonants, 1) U+0D4D U+200C index(cDirectSmallValues, 4)
+any(consonants) U+0D4D dk(vir) + any(cDirectCapsKeys) > index(consonants, 1) U+0D4D U+200C index(cDirectCapsValues, 4)
+any(consonants) U+0D4D dk(vir) + any(chillSource) > index(consonants, 1) U+0D4D U+200C index(chills, 4)
+any(consonants) U+0D4D dk(vir) + 'm' > index(consonants, 1) U+0D4D U+200C U+0D2E U+0D4D
+
 c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
 + 'm' > 'ം'
-'ം' + '~' > 'മ്'
+c 'ം' + '~' > 'മ്'  c <= this is now handled directly by Explicit Virama rule above
 
 c To solve issue 13: നുക്ത
 '്' + 'F' > '़്'
@@ -113,7 +131,8 @@ c Archaic Forms
 'റ്റ' + '\' > 'ഺ'
 'ൻ' + '\' > 'ഩ്'
 'ന' + '\' > 'ഩ'
-'ം' + '\' > 'ഀ'
+'ം' + '\' > 'ൔ'
+'ൔ' + '\' > 'ഀ'
 'ഀ' + '\' > 'ഁ'
 'ൻ' + '@' > context dk(at)
 dk(at) + 'e' > 'െ'
