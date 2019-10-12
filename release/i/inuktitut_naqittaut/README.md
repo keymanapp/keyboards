@@ -3,7 +3,7 @@ Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ keyboard
 
 Copyright (C) 2015-2019 Pirurvik Centre and SIL International
 
-Version 1.4
+Version 1.5
 
 A Canadian Aboriginal Syllabics script keyboard for Inuktut languages
 
