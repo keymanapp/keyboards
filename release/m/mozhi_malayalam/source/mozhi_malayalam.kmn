@@ -87,6 +87,7 @@ c Modify the behaviour of '_' as a contextual substitutions blocker
 + '_' > '_' dk(noconjuncts)
 '_' dk(noconjuncts) + '_' > '__'
 '_' + '_' > '__'
+'_' dk(noconjuncts) + '~' > U+0D4D
 '_' dk(noconjuncts) + any(cDirectSmallKeys) > index(cDirectSmallValues, 3) U+0D4D
 '_' dk(noconjuncts) + any(cDirectCapsKeys) > index(cDirectCapsValues, 3) U+0D4D
 '_' dk(noconjuncts) + any(chillSource) > index(chills, 3)
