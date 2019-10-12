@@ -76,8 +76,8 @@ U+0D4D + '~' > U+0D4D dk(vir)
 c U+0D4D dk(vir) + any(consonants) > U+0D4D U+200D index(consonants, 3)
 any(chills_anu) + '~' > index(chill_anu_bases, 1) '്' dk(vir)
 dk(vir) + '_' > Nul c cancels the explicit virama property  
-any(consonants) U+0D4D dk(vir) + any(cDirectSmallKeys) > index(consonants, 1) U+0D4D U+200C index(cDirectSmallValues, 4)
-any(consonants) U+0D4D dk(vir) + any(cDirectCapsKeys) > index(consonants, 1) U+0D4D U+200C index(cDirectCapsValues, 4)
+any(consonants) U+0D4D dk(vir) + any(cDirectSmallKeys) > index(consonants, 1) U+0D4D U+200C index(cDirectSmallValues, 4) U+0D4D
+any(consonants) U+0D4D dk(vir) + any(cDirectCapsKeys) > index(consonants, 1) U+0D4D U+200C index(cDirectCapsValues, 4) U+0D4D
 any(consonants) U+0D4D dk(vir) + any(chillSource) > index(consonants, 1) U+0D4D U+200C index(chills, 4)
 any(consonants) U+0D4D dk(vir) + 'm' > index(consonants, 1) U+0D4D U+200C U+0D2E U+0D4D
 any(consonants) U+0D4D dk(vir) + 't' > index(consonants, 1) U+0D4D U+200C U+0D31 U+0D4D U+0D31 U+0D4D
@@ -87,8 +87,8 @@ c Modify the behaviour of '_' as a contextual substitutions blocker
 + '_' > '_' dk(noconjuncts)
 '_' dk(noconjuncts) + '_' > '__'
 '_' + '_' > '__'
-'_' dk(noconjuncts) + any(cDirectSmallKeys) > index(cDirectSmallValues, 3)
-'_' dk(noconjuncts) + any(cDirectCapsKeys) > index(cDirectCapsValues, 3)
+'_' dk(noconjuncts) + any(cDirectSmallKeys) > index(cDirectSmallValues, 3) U+0D4D
+'_' dk(noconjuncts) + any(cDirectCapsKeys) > index(cDirectCapsValues, 3) U+0D4D
 '_' dk(noconjuncts) + any(chillSource) > index(chills, 3)
 '_' dk(noconjuncts) + 'm' > U+0D2E U+0D4D
 '_' dk(noconjuncts) + 't' > U+0D31 U+0D4D U+0D31 U+0D4D
