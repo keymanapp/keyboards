@@ -1,108 +1,36 @@
-Mozhi Malayalam Keyboard Change History
-=======================
-2.1 (21 August 2019)
-----------------------
-# Major Release
-This release is after thorough checking of the keyboard for about a year.
+# History of Mozhi Layout
+Initially there was 'Kerala.com' guestbook, for Malayalees world over to come together and discuss. Tony Thomas, who pioneered writing in Malayalam characters, used 'Kerala' font by clicking on Malayalam letters in ‘Charmap’ application. The year was 1996.
 
-## Major Changes
-* Added support for a few more archaic characters
-  * Chillu ma
+In the meantime, Binu Thomas Meledom, Binu Anand P.S, Konda Reddy, and Soji Joseph coded an application called 'Lathi', which used Achayan transliteration scheme. The transliteration engine was written by Sreedhar Shenoy.
 
-2.0.8 (27 September 2018)
---------------------
-## Major Changes
-* Added support for Nukta (F key)
-* nta is now Standard nta
-  * nta^ will give legacy nta
-* Fix bug // > avagraha
-* Standardized the ZW characters
-  * always remove none joiner before vowels
-  * always remove zwnj before a word final chars
-  * '_' will output zwnj only after a chandrakkala
-  * prevent the typing of repeated zw(n)j
-  * Removed redundant rules to prevent ZWNJ after Chillus (before Double consonants)
-* Internal: Cleaning up
-  * Removed redundant rules for malayalam fractions
-  * Removed commented out rules and irrelvant comments
-  * Reorganized the order of consonants to the natural malayalam order
-  * Reorganized stores to the beginning of the code file
-  * Commented out redundant rules that prevents zwnj after chillu
-* Fix bug: nta + h (after correcting the encoding of nta, the earlier rule got broken)
-* nj now outputs ഞ്ഞ് in word medial and word final positions
-* 'മ്യ' and 'മ്ര' conjunct after 'സ''
-* Expanded Error Correction Rules
-* Unused keys are now mapped as per the specs
-* Expanded Extra elongation for vowel signs
-* Expanded the Archaic character support
-* Fixed the behavior of 'R' according to the spec
-* Legacy encoding of 'nta' and it's combinations
-* Backspace is now more intuitive (not exhaustive though)
-* Smart quotes are now the first preference, and quotes cycles now
-* Emoji and other extended character support
+Parallelly, Cibu C.J developed a Unix command line application called ‘Varamozhi’, which transliterated from any transliteration scheme to any given Malayalam font. The name of the package, ‘Varamozhi’ was suggested by [Vinod](http://www.nitc.ac.in/nitc/user_profile/index.jsp?__tg_login=pathari) and the Logo was designed by [Rajesh](http://rajsid.tripod.com/personal.htm).
 
-2.0.7 (19 September 2018)
---------------------
-## Major changes in this release are
-  - Fix #11 add support for danda viramas
-  - Fix #18 cch should output 'ച്ച്'
-  - Fix #19 Stop using '\' for vowel signs
-  - Fix #20 chandrakkala repeating issue
-  - Fix #21 Add support for chandrabindu
-  - Fix #22 Modify rule for Anusvara and Vattu
+Soon, Binu Thomas Meledom, Binu Anand P.S. and Konda Reddy created another application, 'Madhuri' using Cibu's Varamozhi transliteration engine. 'Madhuri' became very popular among the Kerala diaspora.
 
-2.0.6 (17 September 2018)
---------------------
-A rule to handle `vattu` in the code was causing the keyboard to malfunction (only in Firefox with TSF integration). This was due to a known, but yet to be fixed bug in the TSF integration. We have modified the code so that the keyboard will function correctly in Firefox.
+Cibu C.J created Varamozhi Editor application in June 2002, with Unicode and multi-font capabilities. Most of the 'Madhuri' users who also happened to be members of Varamozhi yahoogroup slowly changed over to the new Varamozhi Editor.
 
+Varamozhi gradually made inroads into Malayalam Internet communities. In 2004 November, it achieved a greater pace when a fellow active participant 'Viswam' suggested using Mozhi, Varamozhi combination as the base of communication in Aksharaslokam group, a yahoo group led by [Umesh Nair](http://malayalam.usvishakh.net/blog/). The extreme requirement of accurate spellings in the group also turned out to be a critical test-bedfor the fault-tolerance and accuracy of varamozhi editor and the built-in dictionary.
 
-2.0.5 (12 August 2018)
---------------------
-## പ്രധാന മാറ്റങ്ങൾ
-* ട്രാൻസ്ലിറ്ററേഷൻ ബൈപാസ് ചെയ്യാനായുള്ള റൂൾ കൂടി ചേർത്തിരിക്കുന്നു.
-  * സമചിഹ്നം ഇട്ടതിനു ശേഷം റ്റൈപ്പ് ചെയ്താൽ ഇംഗ്ലീഷ് അക്ഷരങ്ങൾ നേരിട്ട് ലഭിക്കും
-  * സമചിഹ്നം റ്റൈപ്പ് ചെയ്യാനായി രണ്ട് പ്രാവശ്യം സമചിഹ്നം അടിക്കുക
-  * ഒരു ഇംഗ്ലീഷ് അക്ഷരത്തിനു ശേഷം അടിക്കുന്ന അക്ഷരങ്ങളെല്ലാം ഇംഗ്ലീഷിൽ തന്നെയായിരിക്കും വരുന്നത്
-  * ചില ചിഹ്നങ്ങളും ട്രാൻസ്ലിറ്ററേഷൻ ബൈപാസ് ചെയ്യാനാകും (ഉദാ: .@=~ മുതലായവ).
-  * വെബ്, ഇമെയ്‌ൽ അഡ്രസ് അടിക്കേണ്ടതായി വരുമ്പോൾ ഇത് ഉപകാരമായി വരും
-* ലെഗസി ചില്ല്
-  * മൊഴിയിൽ ഈ പഴയ ചില്ല് (ലെഗസി) ലഭിക്കുവാനായി ചില്ലിനു ശേഷം ^ ചേർത്താൽ മതിയാകും.
-  * [ൿ/ൺ/ൻ/ർ/ൽ/ൾ] + ^	ക്zwj/ണ്zwj/ന്zwj/ര്zwj/ല്zwj/ള്zwj
-  * സ്പെക്കിലില്ലെങ്കിലും, ഇത് തിരിച്ച് വരാനുള്ള റൂൾ കൂടി ഉൾപ്പെടുത്തി. അറ്റോമിക് -> സീക്വൻസ് -> അറ്റോമിക്
-  * ക്zwj/ണ്zwj/ന്zwj/ര്zwj/ല്zwj/ള്zwj + ^	[ൿ/ൺ/ൻ/ർ/ൽ/ൾ]
-* ഭിന്നസംഖ്യകൾ
-  * 1/8, 1/16, 3/16 എന്നിവയ്ക്ക് ശേഷം '' റ്റൈപ്പ് ചെയ്താൽ അവയുടെ മലയാള ചിഹ്നം ലഭിക്കും
-* മറ്റ് ചെറിയ വ്യത്യാസങ്ങൾ
-  * ഈ-യുടെ സ്വരാക്ഷര ചിഹ്നം ഇപ്പോൾ ഈ + \ അടിച്ചാൽ കിട്ടും
-  * 'I' അടിച്ചാൽ ഈ വരും (മുമ്പ് ഐ ആണ് വന്നിരുന്നത്)
+Later, ['Malayalam Wikipedia'](http://ml.wikipedia.org/) and the blogger community followed the same path in their inspired movement of adapting to UNICODE Malayalam text. Most of the members and participants in the [forums of chinta](http://chintha.com/), the first independednt Unicode malayalam site, were also participated in this silent revolution. [Malayalavedhi.com](http://www.malayalavedhi.com/) was another forum where varamozhi was being introduced by and among it's members.
 
-2.0.4 (30 July 2018)
---------------------
-* Solve anusvaram issue
+In June 2005, [Raj Nair](http://peringz.googlepages.com/) created 'Mozhi Keyman' using [Tavultesoft Keyman](http://www.tavultesoft.com/keyman/Tavultesoft) with inputs from Sunny Varghese who had earlier created a similar application, 'Vamozhi', with Tavultesoft Keyman. Mozhi Keyman became part of Varamozhi in July 2005.
 
-2.0.3 (30 July 2018)
---------------------
-* Basic mozhi map is complete (testing pending)
+Kevin who was a great admirer of ‘Rachana’application and its philosophy created ‘Anjali’, a Malayalam Unicode Font, out of 6 independent GPL’d font files from Rachana. Later, when the Rachana team decided to create their own Malayalam Unicode Font, they asked Kevin to discontinue creating Anjali using Rachana files. That prompted Kevin to create AnjaliOldLipi from scratch and it became part of the Varamozhi group in September of 2005.
 
-2.0.2 (26 July 2018)
---------------------
+In 2007, Cibu removed most stacking, U-sign and UU-sign, RA-sign conjuncts from AnjaliOldLipi and created [AnjaliNewLipi](https://sites.google.com/site/cibu/anjalioldlipi-font) to aid easier reading in small font sizes. Released under SIL OFL 1.1.
 
-2.0.1 (25 July 2018)
---------------------
+Since then, many Malayalam domains have provided interfaces for mozhi compatible user input on their sites like in Malayalam Wikipedia.
 
-2.0 (25 July 2018)
-------------------
-Mozhi 2.0 is a complete re-write of the Mozhi keyboard by Junaid P. V. Because this version replaces the existing keyboard by Mr. Raj Nair, here is a little bit of background.
+In 2006, [Antony Deign](http://adeign.googlepages.com/ilamozhi.html), another malayalam blogger, created an online interactive lite version of the program. This was primarily aimed at those who can not install the core programs locally on their systems.
 
-Mozhi Malayalam was originally created by Raj Nair, but the source is lost. Junaid created a new source and this released based on Junaid's code. There are several missings/mismatches with the Mozhi Spec. We will soon release another update with improvements.
+Later in 2007 Aug-Sept, [Raj Nair (Peringodan)](http://peringz.googlepages.com) developed a more refined [javascript](http://peringz.googlepages.com/mozhi_offline.htm) version which could be used both on-line and off-line. Shortly, the same script was incorporated into Malayalam Wikipedia input pages. In 2011, Junaid P V transformed this tool as a pan-Indic transliteration tool named Naaraayam extension supporting Mozhi for Malayalam along with many other languages. Currently it is evolved as ULS in Wikipedia.
 
-1.2 (29 May 2018)
------------------
-* Migrated to GitHub
+As of late 2007, the major chunk of fresh Malayalam Unicode text on and off the net, (predominantly by the blogger and wikipedia community) is being produced using either Varamozhi Editor or Mozhi keyman or a combination of Varamozhi tools. It is also popularly used for applications such as electronic mailing and internet messaging. Those who are familiar with the scheme also makes use of the mangLIish input method - malayalam contend in English letters) for easy and unambigous text for mobile SMS and PDA-like non-malayalam environments.
 
-1.1
------------------
+After some years, Mozhi Keyman became unmaintained. Then a [Keymagic](https://keymagic.net/downloads/) module for [Malayalam Mozhi](http://bloghelpline.cyberjalakam.com/2011/03/blog-post_20.html) following Mozhi scheme was written by Junaid P V in 2011 March. ([Google Code](http://code.google.com/p/keymagic), [Naaraayam exe](http://naaraayam.googlecode.com/files/KeyMagic-1.4-Malayalam-setup.exe)).
 
-1.0
------------------
-* Initial version for Unicode 5.1
+In 2012 Feb and Apr, [Jeesmon Jacob](https://github.com/jeesmon) compiled the Varamozhi source code for [Android](https://play.google.com/store/apps/details?id=com.jeesmon.apps.varamozhi) and [iOS](https://apps.apple.com/in/app/varamozhi/id514987251) to create Varamozhi apps in both the platforms.
+
+In 2015 Benjamin Varghese created a [Mozhi module for InKey](http://inkeysoftware.com/keyboard/mlym-Mozhi/index.html) application. 
+
+In early 2018, Junaid created [a new Keman Keyboard for Mozhi (Malayalam)](#). Benjamin Varghese with the help of Binila Sanki is maintaining this keyboard.
