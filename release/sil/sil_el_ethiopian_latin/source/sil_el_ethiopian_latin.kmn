@@ -1,9 +1,8 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'SIL EL - Ethiopian Latin'
-store(&TARGETS) 'windows macosx linux'
-store(&KEYBOARDVERSION) '1.3.2'
-c store(&ETHNOLOGUECODE) 'amf bcq gmv gof guk gwd kqy kxc mdx moy mpe suq tsb wal'
-store(&BITMAP) 'sil_el_ethiopian_latin.bmp'
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.4.0'
+store(&BITMAP) 'sil_el_ethiopian_latin.ico'
 store(&COPYRIGHT) '© 2017-2019 SIL Ethiopia'
 store(&MESSAGE) 'The SIL EL - Ethiopian Latin keyboard enables typing in many Ethiopian Latin based languages.'
 c store(&LAYOUT) 'default'
@@ -43,7 +42,7 @@ U+0027 + "'"    > U+2018 c ‘ (rota)
 
        + '"' > U+201C c “
 U+201C + '"' > U+201D c ”
-U+201D + '"' > U+0022 c "  
+U+201D + '"' > U+0022 c "
 U+0022 + '"' > U+201C c “ (rota)
 
 "<"    + "'"    > U+2039 c ‹
@@ -132,13 +131,18 @@ c ------------------------------------------------------------------------------
 ";" + "G" > U+0193 c Ɠ
 "G" + "<" > U+0193 c Ɠ
 
+"]" + "g" > U+0263 c ɣ
+"]" + "G" > U+0194 c Ɣ
+
 ";" + "h" > U+0127 c ħ
 ";" + "H" > U+0126 c Ħ
 
 ";" + "n" > U+014B c ŋ
 "n" + "<" > U+014B c ŋ
+"]" + "n" > U+014B c ŋ
 ";" + "N" > U+014A c Ŋ
 "N" + "<" > U+014A c Ŋ
+"]" + "N" > U+014A c Ŋ
 
 ":" + "n" > U+0272 c ɲ
 "=" + "n" > U+0272 c ɲ
@@ -373,6 +377,17 @@ U+028B + "9" > U+028B U+0304 c ʋ̄
 U+01B2 + "9" > U+01B2 U+0304 c Ʋ̄
 
 c ------------------------------------------------------------------------------
+c macron below + diaeresis characters: + U+0331 + U+0308
+c ------------------------------------------------------------------------------
+U+025B U+0331 + "#" > U+025B U+0331 U+0308 c ɛ̱̈
+U+025B U+0331 + "[" > U+025B U+0331 U+0308 c ɛ̱̈
+U+025B U+0308 + "0" > U+025B U+0331 U+0308 c ɛ̱̈ => keep decomposed order consistent with sudan nuer keyboard
+
+U+0190 U+0331 + "#" > U+0190 U+0331 U+0308 c Ɛ̱̈
+U+0190 U+0331 + "[" > U+0190 U+0331 U+0308 c Ɛ̱̈
+U+0190 U+0308 + "0" > U+0190 U+0331 U+0308 c Ɛ̱̈ => keep decomposed order consistent with sudan nuer keyboard
+
+c ------------------------------------------------------------------------------
 c macron below characters: composed else + U+0331
 c ------------------------------------------------------------------------------
 "a"    + "0" > U+0061 U+0331 c a̱
@@ -415,9 +430,24 @@ c ------------------------------------------------------------------------------
 c diaeresis characters: composed else + U+0308
 c ------------------------------------------------------------------------------
 any(plainvowels) + "#" > index(diaeresisvowels, 1) c äëïöüÄËÏÖÜ
+any(plainvowels) + "[" > index(diaeresisvowels, 1) c äëïöüÄËÏÖÜ
+
+U+025B + "#" > U+025B U+0308 c ɛ̈
+U+025B + "[" > U+025B U+0308 c ɛ̈
+U+0190 + "#" > U+0190 U+0308 c Ɛ̈
+U+0190 + "[" > U+0190 U+0308 c Ɛ̈
 
 U+0268 + "#" > U+0268 U+0308 c ɨ̈
+U+0268 + "[" > U+0268 U+0308 c ɨ̈
 U+0197 + "#" > U+0197 U+0308 c Ɨ̈
+U+0197 + "[" > U+0197 U+0308 c Ɨ̈
+
+U+0254 + "#" > U+0254 U+0308 c ɔ̈
+U+0254 + "[" > U+0254 U+0308 c ɔ̈
+U+0186 + "#" > U+0186 U+0308 c Ɔ̈
+U+0186 + "[" > U+0186 U+0308 c Ɔ̈
 
 U+0289 + "#" > U+0289 U+0308 c ʉ̈
+U+0289 + "[" > U+0289 U+0308 c ʉ̈
 U+0244 + "#" > U+0244 U+0308 c Ʉ̈
+U+0244 + "[" > U+0244 U+0308 c Ʉ̈
