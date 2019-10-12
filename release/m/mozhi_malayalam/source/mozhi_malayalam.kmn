@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.0.8-rc2'
+store(&KEYBOARDVERSION) '2.0.8.2'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -79,6 +79,17 @@ any(consonants) U+0D4D dk(vir) + any(cDirectCapsKeys) > index(consonants, 1) U+0
 any(consonants) U+0D4D dk(vir) + any(chillSource) > index(consonants, 1) U+0D4D U+200C index(chills, 4)
 any(consonants) U+0D4D dk(vir) + 'm' > index(consonants, 1) U+0D4D U+200C U+0D2E U+0D4D
 
+c Preventing Contextual Substitutions
+c Modify the behaviour of '_' as a contextual substitutions blocker
++ '_' > '_' dk(noconjuncts)
+'_' dk(noconjuncts) + '_' > '__'
+'_' + '_' > '__'
+'_' dk(noconjuncts) + any(cDirectSmallKeys) > index(cDirectSmallValues, 3)
+'_' dk(noconjuncts) + any(cDirectCapsKeys) > index(cDirectCapsValues, 3)
+'_' dk(noconjuncts) + any(chillSource) > index(chills, 3)
+'_' dk(noconjuncts) + 'm' > U+0D2E U+0D4D
+
+
 c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
 + 'm' > 'ം'
 c 'ം' + '~' > 'മ്'  c <= this is now handled directly by Explicit Virama rule above
@@ -100,7 +111,7 @@ any(chills) + '^' > index(chillBases, 1) '്' U+200D
 any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, but I'm adding this to cycle between atomic and sequence chillu
 
 c chill breakers
-any(chills_anu) + '_' > index(chills_anu, 1) dk(4)
+any(chills_anu) + '_' > index(chills_anu, 1) '_' dk(noconjuncts)
 any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
 any(chills_anu) + 'a' > index(chill_anu_Bases,1)
 any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
@@ -425,12 +436,16 @@ c Issue 50: Extra elongation for vowel sign
 'ോ' + 'O' > 'ൂൂ'
 'ൗ' + 'u' > 'ൗൗ'
 
+c Important! The behaviour of '_' has been updated in the new mozhi spec. 
+c According to the new spec, '_' will just block the execution contextual substitution
+c of characters. for eg. nn => ന്ന് wherein n_n => ൻൻ.  So the following rules are 
+c now depricated and hence I'm commenting them out. In a future release we can delete them from the source 
 c '_' will output zwnj only after a chandrakkala
-'്' + '_' > '്' U+200C    
+c '്' + '_' > '്' U+200C    
 c prevent the typing of repeated zw(n)j
-U+200C + '_' > context                   
-U+200D + '_' > context
-'_' + 'm' > 'മ്' c fix issue 43
+c U+200C + '_' > context                   
+c U+200D + '_' > context
+c '_' + 'm' > 'മ്' c fix issue 43
 
 c Fix issue 54, Legacy encoding of ൻ്റ 
 'ൻ്റ്' + '^' > 'ന്റ്'
