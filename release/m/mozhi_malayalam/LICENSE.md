@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2006-2018 Raj Nair
+Copyright (c) 2002-2019 Junaid P. V.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
