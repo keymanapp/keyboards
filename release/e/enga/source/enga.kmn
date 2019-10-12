@@ -1,0 +1,31 @@
+﻿c enga generated from template at 2019-08-22 15:42:51
+c with name "Enga"
+store(&VERSION) '10.0'
+store(&NAME) 'Enga'
+store(&COPYRIGHT) '© 2019 Stanley Stanis Kaka, Marc Durdin'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'enga.kvks'
+store(&LAYOUTFILE) 'enga.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+platform('desktop') + [SHIFT K_F] > 'Ŋ'
+platform('desktop') + [SHIFT K_C] > 'Ē'
+platform('desktop') + [K_C] > 'ē'
+platform('desktop') + [K_F] > 'ŋ'
++ [RALT K_C] > 'c'
++ [RALT SHIFT K_C] > 'C'
++ [RALT K_F] > 'f'
++ [RALT SHIFT K_F] > 'F'
+
++ [SHIFT T_NG] > 'Ŋ'
++ [SHIFT T_EE] > 'Ē'
++ [T_EE] > 'ē'
++ [T_NG] > 'ŋ'
+
+c cfhqvxz are not used in Enga
+
+
