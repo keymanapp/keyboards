@@ -4,7 +4,7 @@
    require_once('header.php');
 ?>
 
-<p>This keyboard was developed to input New Tai Lue (新傣文), a script which is used for the Tai Lue (aka ᦅᧄ ᦺᦑ, Tai Lü, Dai Lue, Xishuangbanna Dai, 傣仂, 傣泐, etc.) language in Xishuangbanna Prefecture in Yunnan, China. The NTL OneKey keyboard is designed to work with the <a href="https://github.com/silnrsi/font-nokyung/releases" target="_blank">Nokyung</a> font, but you can use this keyboard with any Unicode New Tai Lue font.</p>
+<p>This keyboard was developed to input New Tai Lue (新傣文), a script which is used for the Tai Lue (aka ᦅᧄᦺᦑᦟᦹᧉ, Tai Lü, Dai Lue, Xishuangbanna Dai, 傣泐语, 傣仂语, etc.) language in Xishuangbanna Prefecture in Yunnan, China. The NTL OneKey keyboard is designed to work with the <a href="https://github.com/silnrsi/font-nokyung/releases" target="_blank">Nokyung</a> font, but you can use this keyboard with any Unicode New Tai Lue font.</p>
 
 <h2>Desktop Layout</h2>
 <p>The NTL OneKey desktop keyboard layout enables users to input almost any new Tai Lue character with one press of a single key (possibly in combination with the Shift key).
