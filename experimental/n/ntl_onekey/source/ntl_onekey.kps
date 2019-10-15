@@ -7,7 +7,6 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>ntl_onekey.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,18 +16,12 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">NTL OneKey</Name>
+    <Name URL="">NTL OneKey (新傣文一键)</Name>
     <Version URL=""></Version>
     <Copyright URL="">© 2015-2019 SIL International</Copyright>
     <Author URL="">A. Cheuk and E. Ding</Author>
   </Info>
   <Files>
-    <File>
-      <Name>ntl_onekey.bmp</Name>
-      <Description>File ntl_onekey.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
-    </File>
     <File>
       <Name>..\build\ntl_onekey.js</Name>
       <Description>File ntl_onekey.js</Description>
@@ -83,12 +76,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\ntl_onekey.kvk</Name>
+      <Description>File ntl_onekey.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>新傣文一键</Name>
       <ID>ntl_onekey</ID>
-      <Version>1.004</Version>
+      <Version>1.4</Version>
       <Languages>
         <Language ID="khb-Talu">Lü (New Tai Lue)</Language>
       </Languages>
