@@ -116,7 +116,7 @@
     </tr>
     <tr>
       <td>ᦈ</td>
-      <td>U+1989</td>
+      <td>U+1988</td>
       <td>z</td>
     </tr>
     <tr>
