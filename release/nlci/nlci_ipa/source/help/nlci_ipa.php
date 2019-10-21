@@ -16,7 +16,7 @@
 <h2>Technical Support</h2>
 
 <p class=MsoBodyText >If you have problems using the NLCI Unicode IPA
-keyboard, please contact:</p>
+keyboard, please contact:nlci@nlife.in</p>
 
 
 
