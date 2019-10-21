@@ -12,4 +12,4 @@ This Keyboard mimic IPA WinScript Keyboard Layout designed by NLCI in 1988. Seve
  * Windows
  * macOS
  * Web
- * Linux
+ 
