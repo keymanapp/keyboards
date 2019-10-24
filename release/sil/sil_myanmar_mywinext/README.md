@@ -12,4 +12,5 @@ Burmese Keyboard for Unicode Encoding. This Layout has been designed to resemble
  * macOS
  * Web
 
-
+## TO DO
+ * The line "store(sil_myanmar_mywinext.ico)" in the sil_myanmar_mywinext.kmn file serves no purpose and may be a source of confusion. It should be removed the next time this keyboard is updated (or if this keyboard is used as a basis for another keyboard).
