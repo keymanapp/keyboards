@@ -6,7 +6,7 @@ store(&BITMAP) 'nlci_devanagari_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_devanagari_winscript.kvks'
 store(&LAYOUTFILE) 'nlci_devanagari_winscript.keyman-touch-layout'
 store(&TARGETS) 'any'
-store(&KEYBOARDVERSION) '2.1'
+store(&KEYBOARDVERSION) '2.2'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -29,7 +29,7 @@ store(cons) 'कखगघङ' \
     	   	'यरलवशषसहळ'
 
 
-store(consonants) outs(cons) 'ऱऴड़ढ़ऩक़ख़ज़'
+store(consonants) outs(cons) 'ऱऴड़ढ़ऩक़ख़ज़ग़'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'aSf'
 
 c Adjust the behavior of 'a'
@@ -57,7 +57,7 @@ c Adjust the behavior of L
 'ळ' + 'L' > 'ऴ'
 
 c Adjust the bahavior of d
-'ड' + 'd' > 'ड़ '   
+'ड' + 'd' > 'ड़'   
 'ढ' + 'D' > 'ढ़'
  
 c Adjust the behavior of n
@@ -68,7 +68,8 @@ c Adjust the behavior of o
 'ो' + 'o' > 'ॊ'   
 
 c Adjust the behavior of r
- 'र' + 'r' > 'ऱ'       
+'र' + 'r' > 'ऱ'    
+         
  
 c Adjust the behavior of R
 'ऋ' + 'R' > 'ॠ'   
@@ -107,12 +108,13 @@ c full stop
   
 c dot
 any(consonants)'़' + any(vowelKeys)  > context  index(vowelMatras,3)
+   
+                 
 
-
-
-c Adjust the behavior of X
-any(consonants) + 'X' > context '्' U+200C
+c Adjust the behavior of X 
+any(consonants) + 'X' > context '्' U+200C 
 any(consonants) '्' + 'X' > context U+200C
+any(consonants)'़' + 'X' > context '्' U+200C   
 U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
@@ -163,7 +165,8 @@ any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + virama
 any (consonants) + 'x' > context '्'          
-any(vowels) + 'x' > context '्'   
+any(vowels) + 'x' > context '्'  
+any (consonants)'़' + 'x' > context '्' 
 
 c vowels + virama
 any(vowels) + 'x' > context '्' 
