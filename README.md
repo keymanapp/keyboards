@@ -17,7 +17,7 @@ multiple keyboards share the same prefix indicating provenance, for example `sil
 
 First, read the guide! <https://help.keyman.com/developer/keyboards/>
 
-Keyman Developer 10.0 is recommended to edit these files. <https://keyman.com/developer>
+Keyman Developer 12.0 is recommended to edit these files. <https://keyman.com/developer>
 
 ## Building Keyboards
 
