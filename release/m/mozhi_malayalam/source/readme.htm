@@ -7,6 +7,27 @@
 </head>
 
 <body>
+    <style>
+        kbd {
+            /* Source: https://www.rgagnon.com/jsdetails/js-nice-effect-the-KBD-tag.html*/
+            margin: 0px 0.1em;
+            padding: 0.1em 0.6em;
+            border-radius: 3px;
+            border: 1px solid rgb(204, 204, 204);
+            color: rgb(51, 51, 51);
+            line-height: 1.4;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            display: inline-block;
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 2px #ffffff;
+            background-color: rgb(247, 247, 247);
+            -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+            -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            text-shadow: 0 1px 0 #fff;
+        }
+    </style>
     <h1>Mozhi Malayalam Keyman Keybaord Updated 2.0</h1>
     <p>The first implementation of the Mozhi Malayalam keyboard was done by Raj Nair (Peringodan) in 2015, but the source for the same is lost. This version is a complete re-write, and is updated to match the current spec of Mozhi Scheme Version 2.0 (Unicode
         11)
@@ -68,14 +89,16 @@
         <li> നിത്യജീവിത്തിൽ സാധാരണ ഉപയോഗിക്കേണ്ടതായി വരുന്നില്ലാത്ത ചില കീബോർഡ് കീകൾ പ്രത്യേക ഉദ്ദേശത്തിനായി മൊഴിയിൽ മാറ്റിയെടുത്തിട്ടുണ്ട്.</li>
         <table border="1">
             <tr>
-                <th>Key</th>
-                <th>Name</th>
-                <th>Purpose</th>
-                <th>Description</th>
-                <th>Example</th>
+                <th>കീ</th>
+                <th>പേര്</th>
+                <th>മൊഴിയിലെ ഉദ്ദേശ്യം</th>
+                <th>വിവരണം</th>
+                <th>ഉദാഹരണം</th>
             </tr>
             <tr>
-                <td>~</td>
+                <td>
+                    <kbd>~</kbd>
+                </td>
                 <td>റ്റിൽഡ കീ</td>
                 <td>പ്രധാനമായും വാക്കുകൾ പിരിച്ചെഴുതുവാൻ</td>
                 <td>ചന്ദ്രക്കലയിട്ട് പിരിച്ചെഴുതിയ രൂപം വേണമെങ്കിൽ റ്റിൽഡ ഉപയോഗിച്ചാൽ മതിയാകുന്നതാണ്.
@@ -87,28 +110,24 @@
                 </td>
             </tr>
             <tr>
-                <td>_</td>
+                <td><kbd>_</kbd></td>
                 <td>അണ്ടർസ്കോർ കീ</td>
                 <td>മൊഴി നിയമങ്ങൾ തടയുക</td>
                 <td>റ്റൈപ്പിംഗിൻ്റെ വേഗത്തിനും സ്വാഭാവികതയ്ക്കുമായി മൊഴി ചില നിയമങ്ങൾ ഉൾക്കൊള്ളിച്ചിട്ടുണ്ട്. ഉദാ: nj → ഞ്. ഇത്തരം നിയമങ്ങൾ മൊഴിയിലെ നിയമങ്ങളാണ്. യൂനിക്കോഡിലേത് അല്ല. _ റ്റൈപ്പ് ചെയ്യുന്നതു വഴി മൊഴിയുടെ നിയമങ്ങൾ വഴിയുണ്ടാകുന്ന മാറ്റങ്ങൾ തടയാനാകും</td>
                 <td>nj → ഞ്, n_j → ൻജ്</td>
             </tr>
             <tr>
-                <td>/</td>
+                <td><kbd>/</kbd></td>
                 <td>റിവേഴ്സ് സോളിഡസ് (ബാക്ക് സ്ലാഷ്)</td>
-                <td>മുൻകാല രൂപങ്ങൾക്കായി</td>
-                <td>മലയാള ഭാഷയിലെ പല അക്ഷരങ്ങൾക്കും ഇപ്പോൾ ഉള്ളതിൽനിന്നും വ്യത്യസ്ഥമായ രൂപം മുമ്പുണ്ടായിരുന്നു. ഇത്തരം രൂപങ്ങൾ ലഭിക്കാനായി \ കീ ഉപയോഗിക്കാം</td>
-                <td>ii → ഈ, ii\ → ൟ</td>
+                <td>മുൻകാല രൂപങ്ങൾക്കായി
+                    <hr>പ്രചാരം കുറഞ്ഞ അക്ഷരങ്ങൾക്കായി</td>
+                <td>മലയാള ഭാഷയിലെ പല അക്ഷരങ്ങൾക്കും ഇപ്പോൾ ഉള്ളതിൽനിന്നും വ്യത്യസ്ഥമായ രൂപം മുമ്പുണ്ടായിരുന്നു. ഇത്തരം രൂപങ്ങൾ ലഭിക്കാനായി \ കീ ഉപയോഗിക്കാം
+                    <hr>ഭാഷയിലെ ചില അക്ഷരങ്ങൾ അപൂർവമായി മാത്രം ഉപയോഗിക്കപ്പെടുന്നവയാണ്. അത്തരം അക്ഷരങ്ങൾ റ്റൈപ്പ് ചെയ്യാനായി \ കീ ഉപയോഗിക്കാം.</td>
+                <td>ii → ഈ, ii\ → ൟ
+                    <hr>L → ൾ; L\ → ഌ LL → ള്ള്; LL\ → ൡ kau → കൗ; kau\ → കൌ varththamaanam → വർത്തമാനം; var\ththamaanam → വൎത്തമാനം 1921 → 1921; 1\921 → ൧൯൨൧</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td>പ്രചാരം കുറഞ്ഞ അക്ഷരങ്ങൾക്കായി</td>
-                <td>ഭാഷയിലെ ചില അക്ഷരങ്ങൾ അപൂർവമായി മാത്രം ഉപയോഗിക്കപ്പെടുന്നവയാണ്. അത്തരം അക്ഷരങ്ങൾ റ്റൈപ്പ് ചെയ്യാനായി \ കീ ഉപയോഗിക്കാം.</td>
-                <td>L → ൾ; L\ → ഌ LL → ള്ള്; LL\ → ൡ kau → കൗ; kau\ → കൌ varththamaanam → വർത്തമാനം; var\ththamaanam → വൎത്തമാനം 1921 → 1921; 1\921 → ൧൯൨൧</td>
-            </tr>
-            <tr>
-                <td>=</td>
+                <td><kbd>=</kbd></td>
                 <td>സമചിഹ്നം</td>
                 <td>മലയാളം റ്റൈപ്പ് ചെയ്യുന്നതിനിടയിൽ കീബോർഡ് മാറ്റാതെ ഇംഗ്ലീഷ് റ്റൈപ്പ് ചെയ്യാൻ</td>
                 <td>ഒരു ഇംഗ്ലീഷ് അക്ഷരത്തിനു പിന്നാലെ വരുന്ന അക്ഷരങ്ങളെല്ലാം ഇംഗ്ലീഷിൽ തന്നെ ആയിരിക്കും</td>
