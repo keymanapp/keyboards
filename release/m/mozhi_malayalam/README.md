@@ -4,7 +4,7 @@ Copyright (c) 2017-2019 Junaid P. V.
 
 Version 2.0
 
-Copyright (C) 2006-2018 Raj Nair
+Copyright (C) 2006-2018 Raj Nair for an older version
 
 Version 1.2
 
@@ -14,5 +14,6 @@ This keyboard uses the Mozhi layout to let you type in Malayalam. It is a phonet
 Supported Platforms
 -------------------
  * Windows
+ * Linux
  * macOS
  * Web
