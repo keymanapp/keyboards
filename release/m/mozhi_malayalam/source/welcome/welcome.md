@@ -6,7 +6,7 @@ Mozhi Malayalam Keyboard. Transliteration scheme was originally developed for Va
 
 < img src="mozhi_layout.png"> </img>
 
-
+```perl
 # a -> അ
 ##  ്+ a -> deletes ്
 ## വ്യഞ്ജനാക്ഷരം + a -> വ്യഞ്ജനാക്ഷരം +  ദീൎഘചിഹ്നം ( ാ) 
@@ -15,3 +15,9 @@ Mozhi Malayalam Keyboard. Transliteration scheme was originally developed for Va
 ## ബ് + b -> ബ്ബ്
 # c -> ൿ
 ## ൿ + c ‍-> ക്ക്
+# d -> ദ്
+# e -> എ
+## വ്യഞ്ജനാക്ഷരം + a -> വ്യഞ്ജനാക്ഷരം +   െ
+### ഉദാ: ക് ‍+ e -> കെ
+
+```
