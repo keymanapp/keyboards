@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.0.8.2'
+store(&KEYBOARDVERSION) '2.0.8.4'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -50,7 +50,7 @@ c digits
 store(digits) '0123456789'
 store(malDigits) '൦൧൨൩൪൫൬൭൮൯'
 any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
-'1' + '\' > U+0d67
+any(digits) + '\' > index(malDigits, 1)
 '10' + '\' > U+0d70
 '100' + '\' > U+0d71
 '1000' + '\' > U+0d72
