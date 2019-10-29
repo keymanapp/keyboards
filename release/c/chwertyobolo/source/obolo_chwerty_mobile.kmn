@@ -1,0 +1,117 @@
+﻿store(&NAME) 'Obolo Chwerty'
+store(&TARGETS) 'iphone ipad androidphone androidtablet mobile tablet'
+store(&LAYOUTFILE) 'obolo_chwerty_mobile.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&COPYRIGHT) '© ONfC'
+store(&MESSAGE) 'A simple keyboard layout (chwerty) to help you type very easily in usem Obolo.'
+store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very easily in usem Obolo.'
+
+begin Unicode > use(main)
+
+store(accentibles) 'aeiọoumnAEIỌOUMN'
+store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] 
+store(nasals) 'mnMN'
+store(nnas) [T_CCM] [T_CRN] [SHIFT T_CCM] [SHIFT T_CRN]
+store(vow) 'aeiouAEIOU'
+store(grave) 'àèìòùÀÈÌÒÙ'
+store(acute) 'áéíóúÁÉÍÓÚ'
+store(circum) 'âêîôûÂÊÎÔÛ'
+store(caron) 'ǎěǐǒǔǍĚǏǑǓ'
+store(acnasals) 'ḿńḾŃ'
+store(spguy) 'mnọMNỌ'
+store(spguyop) 'ḿǹộḾǸỘ'
+store(erase) [K_BKSP] [SHIFT K_BKSP] [ALT K_BKSP]
+store(gravekeys) [T_GRV] [SHIFT T_GRV]
+store(acutekeys) [T_ACU] [SHIFT T_ACU]
+store(circumflexkeys) [T_CCM] [SHIFT T_CCM]
+store(caronkeys) [T_CRN] [SHIFT T_CRN]
+
+group(main) using keys
+
++ [T_ENG] > dk(1)
++ [SHIFT T_ENG] > dk(2)
+
++ [K_Q] > 'ch'
++ [SHIFT K_Q] > 'CH'
++ [SHIFT T_Q] > 'Ch'
+
++ [K_X] > 'ọ'
++ [SHIFT K_X] > 'Ọ'
+
++ [K_H] > 'sh'
++ [SHIFT K_H] > 'SH'
++ [SHIFT T_H] > 'Sh'
+
++ [K_C] > 'n̄'
++ [SHIFT K_C] > 'N̄'
+
++ [SHIFT K_HYPHEN] > '-'
++ [SHIFT K_PERIOD] > '.'
+
+c deadkey for english equivalent
+dk(1) + [K_Q] > 'q'
+dk(2) + [SHIFT K_Q] > 'Q'
+
+dk(1) + [K_H] > 'h'
+dk(2) + [SHIFT K_H] > 'H'
+
+dk(1) + [K_X] > 'x'
+dk(2) + [SHIFT K_X] > 'X'
+
+dk(1) + [K_C] > 'c'
+dk(2) + [SHIFT K_C] > 'C'
+
+c deadkey for tones
+dk(1) + [T_GRV] > "`"
+dk(2) + [SHIFT T_GRV] > "`"
+
+dk(1) + [T_ACU] > "´"
+dk(2) + [SHIFT T_ACU] > "´"
+
+dk(1) + [T_CCM] > "ˆ"
+dk(2) + [SHIFT T_CCM] > "ˆ"
+
+dk(1) + [T_CRN] > "ˇ"
+dk(2) + [SHIFT T_CRN] > "ˇ"
+
+dk(1) + [K_HYPHEN] > "¯"
+dk(2) + [SHIFT K_HYPHEN] > "¯"
+
+dk(1) + [K_PERIOD] > "U+0323"
+dk(2) + [SHIFT K_PERIOD] > "U+0323"
+
+c make up for
+'m' + any(gravekeys) > 'm̀'
+'M' + any(gravekeys) > 'M̀'
+
+'n' + any(gravekeys) > 'ǹ'
+'N' + any(gravekeys) > 'Ǹ'
+
+'ọ' + any(gravekeys) > 'ọ̀'
+'Ọ' + any(gravekeys) > 'Ọ̀'
+
+'ọ' + any(acutekeys) > 'ọ́'
+'Ọ' + any(acutekeys) > 'Ọ́'
+
+'ọ' + any(circumflexkeys) > 'ộ'
+'Ọ' + any(circumflexkeys) > 'Ộ'
+
+'ọ' + any(caronkeys) > 'ọ̌'
+'Ọ' + any(caronkeys) > 'Ọ̌'
+
+c any and index
+any(vow) + any(gravekeys) > index(grave,1)
+any(vow) + any(acutekeys) > index(acute,1)
+any(vow) + any(circumflexkeys) > index(circum,1)
+any(vow) + any(caronkeys) > index(caron,1)
+any(nasals) + any(acutekeys) > index(acnasals,1)
+
+c virtual keys
+any(grave) + any(erase) > index(vow,1)
+any(acute) + any(erase) > index(vow,1)
+any(circum) + any(erase) > index(vow,1)
+any(caron) + any(erase) > index(vow,1)
+any(spguyop) + any(erase) > index(spguy,1)
+
+notany(accentibles) + any(accents) > context beep c prevent diacritics (stacking, on empty space, and plain consonants)
+any(nasals) + any(nnas) > context beep c prevent certain accents on nasal consonants
