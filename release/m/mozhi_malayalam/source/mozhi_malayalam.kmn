@@ -359,14 +359,18 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c
 'ൾ' + 'l' > 'ഌ'            
 
 c Normally it was not required in Keymagic. Following does not happen
-c automatically in Keyman
+c automatically in Keyman --Junaid
+c The following rules handle the chillu-ka based forms and their back-space behavior
 
-'ൿ' + 'l' > 'ക്ല്'
-'ൿ' + 'L' > 'ക്ല്' c deadkey(capl)
-'ൿ' + 'v' > 'ക്വ്'
-'ൿ' + 'k' > 'ക്ക്'
-'ൿ' + 'c' > 'ക്ക്' dk(3) c deadkey(doublec)
+'ൿ' + 'l' > 'ക്ല്' dk(3)
+'ൿ' + 'L' > 'ക്ല്' dk(3) 
+'ൿ' + 'v' > 'ക്വ്' dk(3)
+'ൿ' + 'k' > 'ക്ക്' dk(3)
+'ൿ' + 'c' > 'ക്ക്' dk(3) c deadkey(chillu-ka)
 'ക്ക്' dk(3) + 'h' > 'ച്ച്'
+'ക്ക്' dk(3) + [K_BKSP] > 'ൿ'
+'ക്ല്' dk(3) + [K_BKSP] > 'ൿ'
+'ക്വ്' dk(3) + [K_BKSP] > 'ൿ'
 
 c digits
 '\' + '0' > '൦'
