@@ -14193,6 +14193,15 @@ type="checkbox"/>
 </div>
 </div>
 <hr style="clear:both;"/>
+<p xml:lang="fr">Ce clavier définit certaines touches qui sont définies par défaut comme "hotkeys" lorsque Keyman est installé. 
+Pour utiliser ce clavier, il faut aller dans <b>Configuration.../Hotkeys</b>, 
+sélectionnez le nom de la touche de raccourci et modifiez la touche de raccourci ou désactivez-la. 
+<br />Actuellement, </p>
+<ul xml:lang="fr">
+<li>"Switch Keyman Desktop Off" utilise Shift+Alt+O</li>
+<li>"Ouvrir le menu du clavier" utilise Maj+Alt+M</li>
+<li>"Show On Screen Keyboard Pane" utilise Shift+Alt+K</li>
+</ul> 
 <p xml:lang="fr">Le Clavier Camerounais est un produit de SIL Cameroun. Pour plus  d´infos sur le Claver Camerounais ou la technologie linguistique au Cameroun,  veuillez visiter <a href="https://langtechcameroon.info">https://langtechcameroon.info</a>
 </p>
 <p xml:lang="fr" style="text-align: center;  font-style: italic;">Copyright 2018,  SIL Cameroun</p>
@@ -28405,6 +28414,15 @@ type="checkbox"/>
 </div>
 </div>
 <hr style="clear:both;"/>
+<p xml:lang="en">This keyboard defines some keys that are set by default as "hotkeys" when Keyman is installed. 
+To use this keyboard, you will want to go to <b>Configuration.../Hotkeys</b>, 
+select the hotkey name, and either change the hotkey or turn it off. 
+<br />Currently, </p>
+<ul xml:lang="en">
+<li>"Switch Keyman Desktop Off" uses Shift+Alt+O</li>
+<li>"Open Keyboard Menu" uses Shift+Alt+M</li>
+<li>"Show On Screen Keyboard Pane" uses Shift+Alt+K</li>
+</ul>
 <p xml:lang="en">The Cameroon Keyboard is developed by SIL Cameroon. For more  information about the Cameroon Keyboard or Language Technology in Cameroon, see  <a href="https://langtechcameroon.info">https://langtechcameroon.info</a>
 </p>
 <p xml:lang="en" style="text-align: center; font-style: italic;">Copyright 2018, SIL  Cameroon</p>
