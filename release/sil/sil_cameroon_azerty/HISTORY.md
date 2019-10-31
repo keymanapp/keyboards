@@ -2,7 +2,7 @@ Change History
 =======================
 6.0.1 (2019)
 -----------------
-Updating Documentation and screenshots
+Updating Documentation and screenshots, Upgrade to Keyman 12
 
 6.0 (2018)
 -----------------
