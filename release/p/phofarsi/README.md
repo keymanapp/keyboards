@@ -8,10 +8,7 @@ Version 1.0
 Description
 -----------
 
-phofarsi generated from template
-
-Links
------
+phofarsi is a farsi phonetic keyboard that enables anyone who uses a reqular English keybaord write in Farsi. Look at the three screenshots in the welcome.html and you are immediately ready to write away in Farsi.
 
 Supported Platforms
 -------------------
