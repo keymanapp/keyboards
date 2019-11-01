@@ -8,7 +8,7 @@ Version 1.2
 Description
 -----------
 
-This keyboard is designed for the Brahui language spoken in Pakistan, in its standard Perso-Brahui script, as used in Balochistan Pakistan. It is based on phonetic keyboard for Brahui Language developed by Pakistani linguist, author, researcher and Software Developer Mr.Rehmat Aziz Chitrali for Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Brahui Keyboard.
+This keyboard is designed for the Brahui language spoken in Pakistan, in its standard latin script, as used in Balochistan Pakistan. It is based on phonetic keyboard for Brahui Language developed by Pakistani linguist, author, researcher and Software Developer Mr.Rehmat Aziz Chitrali for Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Brahui Latin Keyboard.
 
 This is the first Brahui language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, Software Developer and Researcher. This keyboard is for Brahui Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Brahui language.
 
