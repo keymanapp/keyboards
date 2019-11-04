@@ -197,7 +197,7 @@ END;
             </tr>
             <tr>
                 <td><kbd>=</kbd><kbd>z</kbd> </td>
-                <td>శ</td>
+                <td>ఴ</td>
                 
             </tr>
 </tbody>
