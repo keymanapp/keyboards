@@ -187,7 +187,8 @@ END;
 </tbody>
     </table>
 	
-	
+	<p>
+	Eg <kbd>k</kbd> <kbd>i</kbd> <kbd>i</kbd> <kbd>i</kbd> will generate <kbd>કીી</kbd></p>
 	
 	 <h3>Conjuncts</h3>
 
