@@ -12,3 +12,5 @@ This Keyboard mimic Bengali WinScript Keyboard Layout designed by NLCI in 1988. 
  * Windows
  * macOS
  * Web
+ * Linux
+ 
