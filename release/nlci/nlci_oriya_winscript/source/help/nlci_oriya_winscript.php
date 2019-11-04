@@ -119,11 +119,7 @@ kbd {
     
     
     
-    <tr>
-        <td><kbd>r</kbd><kbd>r</kbd>  </td>
-        <td>ଡ଼</td>
-        
-    </tr>
+    
     <tr>
         <td><kbd>R</kbd><kbd>R</kbd>  </td>
         <td>ୠ</td>
@@ -215,7 +211,7 @@ kbd {
     </tr>
 </tbody>
 </table>
-
+<p> Eg <kbd>k</kbd> <kbd>i</kbd> <kbd>i</kbd> <kbd>i</kbd> will generate <samp>କୀୀ</samp></p>
 
 
 <h3>Virama</h3>
