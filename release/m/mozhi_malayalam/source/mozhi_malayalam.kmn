@@ -4,13 +4,14 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.0.8.2'
+store(&KEYBOARDVERSION) '2.0.8.4'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
 store(&ETHNOLOGUECODE) 'mal'
 store(&WINDOWSLANGUAGES) 'x044C'
 store(&LANGUAGE) 'x044C'
+store(&VISUALKEYBOARD) 'mozhi_malayalam.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -50,7 +51,7 @@ c digits
 store(digits) '0123456789'
 store(malDigits) '൦൧൨൩൪൫൬൭൮൯'
 any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
-'1' + '\' > U+0d67
+any(digits) + '\' > index(malDigits, 1)
 '10' + '\' > U+0d70
 '100' + '\' > U+0d71
 '1000' + '\' > U+0d72
@@ -358,14 +359,18 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c
 'ൾ' + 'l' > 'ഌ'            
 
 c Normally it was not required in Keymagic. Following does not happen
-c automatically in Keyman
+c automatically in Keyman --Junaid
+c The following rules handle the chillu-ka based forms and their back-space behavior
 
-'ൿ' + 'l' > 'ക്ല്'
-'ൿ' + 'L' > 'ക്ല്' c deadkey(capl)
-'ൿ' + 'v' > 'ക്വ്'
-'ൿ' + 'k' > 'ക്ക്'
-'ൿ' + 'c' > 'ക്ക്' dk(3) c deadkey(doublec)
+'ൿ' + 'l' > 'ക്ല്' dk(3)
+'ൿ' + 'L' > 'ക്ല്' dk(3) 
+'ൿ' + 'v' > 'ക്വ്' dk(3)
+'ൿ' + 'k' > 'ക്ക്' dk(3)
+'ൿ' + 'c' > 'ക്ക്' dk(3) c deadkey(chillu-ka)
 'ക്ക്' dk(3) + 'h' > 'ച്ച്'
+'ക്ക്' dk(3) + [K_BKSP] > 'ൿ'
+'ക്ല്' dk(3) + [K_BKSP] > 'ൿ'
+'ക്വ്' dk(3) + [K_BKSP] > 'ൿ'
 
 c digits
 '\' + '0' > '൦'
@@ -395,7 +400,7 @@ c digits
 + 'Z' > 'ഴ്'
 + 'q' > 'ക്ക്'
 + 't' > 'റ്റ്'
-+ 'x' > 'ക്ഷ്'
++ 'x' > 'ക്സ്'
 + '~' > '്'
                   
 c Error Correction in Conjuncts
