@@ -2852,7 +2852,7 @@ areas denote articulations judged impossible.</span></p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
   3.0pt;margin-left:0in;line-height:12.0pt;page-break-after:avoid'><span
-  style='font-family:"Charis SIL"'>&#61853;</span></p>
+  style='font-family:"Charis SIL"'>&#42780;</span></p>
   </td>
   <td width=38 valign=top style='width:28.85pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2907,7 +2907,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=32 valign=top style='width:24.05pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#61852;</span></p>
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL"'>&#42779;</span></p>
   </td>
   <td width=38 valign=top style='width:28.85pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
