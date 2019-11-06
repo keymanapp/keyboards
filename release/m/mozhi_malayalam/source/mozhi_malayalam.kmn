@@ -21,6 +21,9 @@ store(consonants) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധന�
 store(vowels) "അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔ"
 store(vowelsigns) "ാിീുൂൃൄൢൣെേൈൊോൗ"
 
+c Store non word initial contexts
+store(KeyContexts) outs(consonants) outs(vowels) outs(vowelsigns)
+
 c Consonants
 store(cDirectSmallKeys) 'kqQgjdpfbyvwzsh'
 store(cDirectSmallValues)  'കഖഖഗജദപഫബയവവശസഹ'
@@ -95,6 +98,7 @@ c Modify the behaviour of '_' as a contextual substitutions blocker
 '_' dk(noconjuncts) + any(chillSource) > index(chills, 3)
 '_' dk(noconjuncts) + 'm' > U+0D2E U+0D4D
 '_' dk(noconjuncts) + 't' > U+0D31 U+0D4D U+0D31 U+0D4D
+
 
 c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
 + 'm' > 'ം'
@@ -309,9 +313,9 @@ any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 any(consonants) U+0D62 + 'l' > index(consonants,1) U+0D63
 
 c The sequence 'nj' produces 'ഞ്ഞ്', iff it is typed after a vowel, vowelsign or a consonant   To Fix #39
-any(consonants) 'ൻ' + 'j' > index(consonants, 1) 'ഞ്ഞ്'
-any(vowels) 'ൻ' + 'j' > index(vowels, 1) 'ഞ്ഞ്'
-any(vowelsigns) 'ൻ' + 'j' > index(vowelsigns, 1) 'ഞ്ഞ്'
+any(KeyContexts) 'ൻ' + 'j' > index(KeyContexts, 1) 'ഞ്ഞ്'
+'ഞ്ഞ്' + any(cDirectCapsKeys) > 'ഞ്' index(cDirectCapsValues, 5) 
+'ഞ്ഞ്' + any(cDirectSmallKeys) > 'ഞ്' index(cDirectSmallValues,5)
 
 c ['([അ-ഊഌഎ-ഐഒ-ഹ])([ഽ-ൂെ-ൌൗ])+R', '', '$2$3റ്'],
 any(vowels) + 'R' > context 'ർ'
