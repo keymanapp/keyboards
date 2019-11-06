@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Syriac Phonetic Basic 1.1 generated from template.
+    Syriac Phonetic Basic 1.2 generated from template.
 </p>
 
 <h1>Keyboard Layout</h1>
