@@ -11,7 +11,7 @@
 </p>
 
 <h1>Keyboard Layout</h1>
-<p>Combining marks should be type after the base character.</p>
+<p>Combining marks should be typed after the base character.</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
