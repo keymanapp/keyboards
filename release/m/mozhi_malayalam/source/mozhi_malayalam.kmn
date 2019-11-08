@@ -89,6 +89,7 @@ any(consonants) U+0D4D dk(vir) + 't' > index(consonants, 1) U+0D4D U+200C U+0D31
 
 c Preventing Contextual Substitutions
 c Modify the behaviour of '_' as a contextual substitutions blocker
+'_' dk(noconjuncts) + 'n' > 'ൻ' dk(noconjuncts)
 + '_' > '_' dk(noconjuncts)
 '_' dk(noconjuncts) + '_' > '__'
 '_' + '_' > '__'
@@ -97,6 +98,7 @@ c Modify the behaviour of '_' as a contextual substitutions blocker
 '_' dk(noconjuncts) + any(cDirectCapsKeys) > index(cDirectCapsValues, 3) U+0D4D
 '_' dk(noconjuncts) + any(chillSource) > index(chills, 3)
 '_' dk(noconjuncts) + 'm' > U+0D2E U+0D4D
+'ൻ' dk(noconjuncts) + 'j' > 'ഞ്'
 '_' dk(noconjuncts) + 't' > U+0D31 U+0D4D U+0D31 U+0D4D
 
 
@@ -314,9 +316,12 @@ any(consonants) U+0D62 + 'l' > index(consonants,1) U+0D63
 
 c The sequence 'nj' produces 'ഞ്ഞ്', iff it is typed after a vowel, vowelsign or a consonant   To Fix #39
 any(KeyContexts) 'ൻ' + 'j' > index(KeyContexts, 1) 'ഞ്ഞ്'
-'ഞ്ഞ്' + any(cDirectCapsKeys) > 'ഞ്' index(cDirectCapsValues, 5) 
-'ഞ്ഞ്' + any(cDirectSmallKeys) > 'ഞ്' index(cDirectSmallValues,5)
-
+'ഞ്ഞ്' + any(cDirectCapsKeys) > 'ഞ്' index(cDirectCapsValues, 5) '്'
+'ഞ്ഞ്' + any(cDirectSmallKeys) > 'ഞ്' index(cDirectSmallValues,5) '്'
+'ഞ്ഞ്' + 'c' > 'ഞ്ച്'
+'ഞ്ഞ്ൻ' + 'j' > 'ഞ്ഞ്'
+'ഞ്ഞ്' + 't' > 'ഞ്റ്റ്'
+c #c1
 c ['([അ-ഊഌഎ-ഐഒ-ഹ])([ഽ-ൂെ-ൌൗ])+R', '', '$2$3റ്'],
 any(vowels) + 'R' > context 'ർ'
 any(vowelSigns) + 'R' > context 'ർ'
