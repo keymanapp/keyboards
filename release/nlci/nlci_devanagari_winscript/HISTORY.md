@@ -1,5 +1,8 @@
 #NLCI Devanagari WinScript Keyboard Change History
 
+## 2.2 (2019)
+* Improved nukta and halant behavior 
+
 ## 2.1 (2019)
 * Updated Keyboard by Binila Sanki (NLCI)
 

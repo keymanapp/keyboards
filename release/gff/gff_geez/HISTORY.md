@@ -1,5 +1,8 @@
 # ግዕዝ (Ge'ez) Change History
 
+## 2019-11-03 1.4
+* Fix to number input for orders of 10.
+
 ## 2019-04-05 1.3
  * Packing uses new shared folder for GFF keyboards.
 
