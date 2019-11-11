@@ -29,18 +29,18 @@ store(&version) "9.0"
 store(&name) "Polytonic Greek (SIL)"
 store(&BITMAP) 'sil_greek_polytonic.ico'
 c HOTKEY "^+G"
-store(&COPYRIGHT) '(c) 2002-2018 SIL International'
+store(&COPYRIGHT) '(c) 2002-2019 SIL International'
 store(&message) "The Greek (polytonic precomposed) keyboard is distributed under the MIT license."
 
 c LANGUAGE x208, x22
 
 c ----------------------------------------------------------------------------
-store(&TARGETS) 'windows macosx web'
+store(&TARGETS) 'windows macosx linux web'
 store(&ETHNOLOGUECODE) 'grc ell'
 store(&LANGUAGE) 'x0408'
 store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '1.4'
+store(&KEYBOARDVERSION) '1.5'
 
 begin Unicode > use(MainU)
 
@@ -119,7 +119,7 @@ store(upV)          U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9
 store(upVRo)        U+1F09 U+1F19 U+1F29 U+1F39 U+1F49 U+1F59 U+1F69
 store(upVRoGr)      U+1F0B U+1F1B U+1F2B U+1F3B U+1F4B U+1F5B U+1F6B
 store(upVRoAc)      U+1F0D U+1F1D U+1F2D U+1F3D U+1F4D U+1F5D U+1F6D
-store(upVAc)        U+0386 U+0388 U+0389 U+038A U+038C U+038E U+038F
+store(upVAc)        U+1FBB U+1FC9 U+1FCB U+1FDB U+1FF9 U+1FEB U+1FFB
 store(upVGr)        U+1FBA U+1FC8 U+1FCA U+1FDA U+1FF8 U+1FEA U+1FFA
 
 c store(upVDP)        U+0391 U+0397 U+0399 U+03A5 U+03A9
@@ -131,7 +131,7 @@ store(K_upVSm)      "A"    "E"    "J"    "I"    "O"    "W"
 store(upVSm)        U+0391 U+0395 U+0397 U+0399 U+039F U+03A9
 store(upVSm_Sm)     U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F68
 store(upVSm_Gr)     U+1FBA U+1FC8 U+1FCA U+1FDA U+1FF8 U+1FFA
-store(upVSm_Ac)     U+0386 U+0388 U+0389 U+038A U+038C U+038F
+store(upVSm_Ac)     U+1FBB U+1FC9 U+1FCB U+1FDB U+1FF9 U+1FFB
 store(upVSmGr)      U+1F0A U+1F1A U+1F2A U+1F3A U+1F4A U+1F6A
 store(upVSmAc)      U+1F0C U+1F1C U+1F2C U+1F3C U+1F4C U+1F6C
 
@@ -160,9 +160,9 @@ c `      '      ~      a      a`     a'     a~     e
 c i                    o                    u
 c w                           a_
 c j_                          w_
-store(Sm_in)        xff    xff    xff    U+03B1 U+1F70 U+03AC U+1FB6 U+03B5 U+1F72 U+03AD U+03B7 U+1F74 U+03AE U+1FC6 \
-                    U+03B9 U+1F76 U+03AF U+1FD6 U+03BF U+1F78 U+03CC U+03C5 U+1F7A U+03CD U+1FE6 \
-                    U+03C9 U+1F7C U+03CE U+1FF6 U+1FB3 U+1FB2 U+1FB4 U+1FB7 \
+store(Sm_in)        xff    xff    xff    U+03B1 U+1F70 U+1F71 U+1FB6 U+03B5 U+1F72 U+1F73 U+03B7 U+1F74 U+1F75 U+1FC6 \
+                    U+03B9 U+1F76 U+1F77 U+1FD6 U+03BF U+1F78 U+1F79 U+03C5 U+1F7A U+1F7B U+1FE6 \
+                    U+03C9 U+1F7C U+1F7D U+1FF6 U+1FB3 U+1FB2 U+1FB4 U+1FB7 \
                     U+1FC3 U+1FC2 U+1FC4 U+1FC7 U+1FF3 U+1FF2 U+1FF4 U+1FF7
 
 store(Sm_Sm)        xff    xff    xff    U+1F00 U+1F02 U+1F04 U+1F06 U+1F10 U+1F12 U+1F14 U+1F20 U+1F22 U+1F24 U+1F26 \
@@ -183,7 +183,7 @@ c "A"    "E"    "J"    "I"    "O"    "U"    "W"
 
 c store(lowv2)        U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9 U+1FB3 U+1FC3 U+1FF3
 c store(lowvGr)       U+1F70 U+1F72 U+1F74 U+1F76 U+1F78 U+1F7A U+1F7C U+1FB2 U+1FC2 U+1FF2
-c store(lowvAc)       U+03AC U+03AD U+03AE U+03AF U+03CC U+03CD U+03CE U+1FB4 U+1FC4 U+1FF4
+c store(lowvAc)       U+1F71 U+1F73 U+1F75 U+1F77 U+1F79 U+1F7B U+1F7D U+1FB4 U+1FC4 U+1FF4
 store(lowvSm)       U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F50 U+1F60 U+1F80 U+1F90 U+1FA0
 store(lowvRo)       U+1F01 U+1F11 U+1F21 U+1F31 U+1F41 U+1F51 U+1F61 U+1F81 U+1F91 U+1FA1
 store(lowvSmGr)     U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F52 U+1F62 U+1F82 U+1F92 U+1FA2
@@ -201,9 +201,9 @@ c Rough Breathing
 store(K_Ro)         "hH<"
 c store(K_Ronoth)     "<"
 store(Ro)           U+0314
-store(Ro_in)        xff    xff    xff    U+03B1 U+1F70 U+03AC U+1FB6 U+03B5 U+1F72 U+03AD \
-                    U+03B7 U+1F74 U+03AE U+1FC6 U+03B9 U+1F76 U+03AF U+1FD6 U+03BF U+1F78 U+03CC \
-                    U+03C5 U+1F7A U+03CD U+1FE6 U+03C9 U+1F7C U+03CE U+1FF6 \
+store(Ro_in)        xff    xff    xff    U+03B1 U+1F70 U+1F71 U+1FB6 U+03B5 U+1F72 U+1F73 \
+                    U+03B7 U+1F74 U+1F75 U+1FC6 U+03B9 U+1F76 U+1F77 U+1FD6 U+03BF U+1F78 U+1F79 \
+                    U+03C5 U+1F7A U+1F7B U+1FE6 U+03C9 U+1F7C U+1F7D U+1FF6 \
                     U+1FB3 U+1FB2 U+1FB4 U+1FB7 U+1FC3 U+1FC2 U+1FC4 U+1FC7 \
                     U+1FF3 U+1FF2 U+1FF4 U+1FF7
 
@@ -225,11 +225,11 @@ c Diaresis
 store(K_Di)         '"'
 store(Di)           U+0308
 c i      i`     i'     u      u`     u'
-store(Di_in)        U+03B9 U+1F76 U+03AF U+03C5 U+1F7A U+03CD
-store(Di_Di)        U+03CA U+1FD2 U+0390 U+03CB U+1FE2 U+03B0
+store(Di_in)        U+03B9 U+1F76 U+1F77 U+03C5 U+1F7A U+1F7B
+store(Di_Di)        U+03CA U+1FD2 U+1FD3 U+03CB U+1FE2 U+1FE3
 store(Di_Ro)        U+1F31 U+1F33 U+1F35 U+1F51 U+1F53 U+1F55
 c i"     i">    u"     u"<    u">
-store(SD_Di)        U+03CA U+0390 U+03CB U+1FE2 U+03B0
+store(SD_Di)        U+03CA U+1FD3 U+03CB U+1FE2 U+1FE3
 c i>     i>>    u>     u'<    u>>
 store(SD_Sm)        U+1F30 U+1F34 U+1F50 U+1F52 U+1F54
 
@@ -258,9 +258,9 @@ store(Gr_Gr)        xff    xff    xff    U+1F70 U+1F02 U+1F03 U+1F72 U+1F13 U+1F
                     U+1F76 U+1F33 U+1F78 U+1F42 U+1F43 U+1F7A U+1F52 U+1F53 U+1F7C U+1F62 U+1F63 \
                     U+1FB2 U+1F82 U+1F83 U+1FC2 U+1F92 U+1F93 U+1FF2 U+1FA2 U+1FA3 U+1FD2 U+1FE2
 
-store(Gr_Ac)        xff    xff    xff    U+03AC U+1F04 U+1F05 U+03AD U+1F15 U+03AE U+1F24 U+1F25 \
-                    U+03AF U+1F35 U+03CC U+1F44 U+1F45 U+03CD U+1F54 U+1F55 U+03CE U+1F64 U+1F65 \
-                    U+1FB4 U+1F84 U+1F85 U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+0390 U+03B0
+store(Gr_Ac)        xff    xff    xff    U+1F71 U+1F04 U+1F05 U+1F73 U+1F15 U+1F75 U+1F24 U+1F25 \
+                    U+1F77 U+1F35 U+1F79 U+1F44 U+1F45 U+1F7B U+1F54 U+1F55 U+1F7D U+1F64 U+1F65 \
+                    U+1FB4 U+1F84 U+1F85 U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+1FD3 U+1FE3
 
 c store(XG_in)        U+0313 U+0314 U+0301 U+0342 xff    xff    xff    xff
 c store(XG_Gr)        xff    xff    U+0300 U+0300 xff    xff    xff    xff
@@ -273,10 +273,10 @@ store(Ac_in)        xff    xff    xff    U+03B1 U+1F00 U+1F01 U+03B5 U+1F10 U+1F
                     U+03B7 U+1F20 U+1F21 U+03B9 U+1F30 U+1F31 U+03BF U+1F40 U+1F41 \
                     U+03C5 U+1F50 U+1F51 U+03C9 U+1F60 U+1F61 U+1FB3 U+1F80 U+1F81 \
                     U+1FC3 U+1F90 U+1F91 U+1FF3 U+1FA0 U+1FA1 U+03CA U+03CB
-store(Ac_Ac)        xff    xff    xff    U+03AC U+1F04 U+1F05 U+03AD U+1F14 U+1F15 \
-                    U+03AE U+1F24 U+1F25 U+03AF U+1F34 U+1F35 U+03CC U+1F44 U+1F45 \
-                    U+03CD U+1F54 U+1F55 U+03CE U+1F64 U+1F65 U+1FB4 U+1F84 U+1F85 \
-                    U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+0390 U+03B0
+store(Ac_Ac)        xff    xff    xff    U+1F71 U+1F04 U+1F05 U+1F73 U+1F14 U+1F15 \
+                    U+1F75 U+1F24 U+1F25 U+1F77 U+1F34 U+1F35 U+1F79 U+1F44 U+1F45 \
+                    U+1F7B U+1F54 U+1F55 U+1F7D U+1F64 U+1F65 U+1FB4 U+1F84 U+1F85 \
+                    U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5 U+1FD3 U+1FE3
 
 c store(XA_in)        U+0313 U+0314 U+0300 U+0342 xff    xff    xff    xff
 c store(XA_Ac)        xff    xff    U+0301 U+0301 xff    xff    xff    xff
@@ -290,8 +290,8 @@ store(Ci_in)        xff    xff    U+03B1 U+1F00 U+1F01 U+03B7 U+1F20 U+1F21 \
 store(Ci_Ci)        xff    xff    U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
                     U+1FD6 U+1F36 U+1F37 U+1FE6 U+1F56 U+1F57 U+1FF6 U+1F66 U+1F67 \
                     U+1FB7 U+1F86 U+1F87 U+1FC7 U+1F96 U+1F97 U+1FF7 U+1FA6 U+1FA7
-store(Ci_Ac)        xff    xff    U+03AC U+1F04 U+1F05 U+03AE U+1F24 U+1F25 \
-                    U+03AF U+1F34 U+1F35 U+03CD U+1F54 U+1F55 U+03CE U+1F64 U+1F65 \
+store(Ci_Ac)        xff    xff    U+1F71 U+1F04 U+1F05 U+1F75 U+1F24 U+1F25 \
+                    U+1F77 U+1F34 U+1F35 U+1F7B U+1F54 U+1F55 U+1F7D U+1F64 U+1F65 \
                     U+1FB4 U+1F84 U+1F85 U+1FC4 U+1F94 U+1F95 U+1FF4 U+1FA4 U+1FA5
 
 store(GC_Ci)        xff    xff    U+1FB6 U+1F06 U+1F07 U+1FC6 U+1F26 U+1F27 \
@@ -308,9 +308,9 @@ c store(XC_Ci)        xff    xff    U+0342 U+0342 xff    xff    xff    xff
 c Iota subscript
 store(K_Io)         "!|+_"
 store(Io)           U+0345
-store(Io_in)        U+03B1 U+1F00 U+1F02 U+1F04 U+1F06 U+1F01 U+1F03 U+1F05 U+1F07 U+1F70 U+03AC U+1FB6 \
-                    U+03B7 U+1F20 U+1F22 U+1F24 U+1F26 U+1F21 U+1F23 U+1F25 U+1F27 U+1F74 U+03AE U+1FC6 \
-                    U+03C9 U+1F60 U+1F62 U+1F64 U+1F66 U+1F61 U+1F63 U+1F65 U+1F67 U+1F70 U+03AC U+1FB6
+store(Io_in)        U+03B1 U+1F00 U+1F02 U+1F04 U+1F06 U+1F01 U+1F03 U+1F05 U+1F07 U+1F70 U+1F71 U+1FB6 \
+                    U+03B7 U+1F20 U+1F22 U+1F24 U+1F26 U+1F21 U+1F23 U+1F25 U+1F27 U+1F74 U+1F75 U+1FC6 \
+                    U+03C9 U+1F60 U+1F62 U+1F64 U+1F66 U+1F61 U+1F63 U+1F65 U+1F67 U+1F70 U+1F71 U+1FB6
 store(Io_Io)        U+1FB3 U+1F80 U+1F82 U+1F84 U+1F86 U+1F81 U+1F83 U+1F85 U+1F87 U+1FB2 U+1FB4 U+1FB7 \
                     U+1FC3 U+1F90 U+1F92 U+1F94 U+1F96 U+1F91 U+1F93 U+1F95 U+1F97 U+1FC2 U+1FC4 U+1FC7 \
                     U+1FF3 U+1FA0 U+1FA2 U+1FA4 U+1FA6 U+1FA1 U+1FA3 U+1FA5 U+1FA7 U+1FF2 U+1FF4 U+1FF7
@@ -356,12 +356,12 @@ store(Ap)           U+2019 c 1FBF
 
 c Equals for eta & omega
 store(K_Eq)         "=~^"
-store(J_E)          U+03B5 U+1F10 U+1F11 U+1F72 U+03AD U+1F14 U+1F13 U+1F15
-store(J_J)          U+03B7 U+1F20 U+1F21 U+1F74 U+03AE U+1F24 U+1F23 U+1F25
+store(J_E)          U+03B5 U+1F10 U+1F11 U+1F72 U+1F73 U+1F14 U+1F13 U+1F15
+store(J_J)          U+03B7 U+1F20 U+1F21 U+1F74 U+1F75 U+1F24 U+1F23 U+1F25
 store(J_JIo)        U+1FC3 U+1F90 U+1F91 U+1FC2 U+1FC4 U+1F94 U+1F93 U+1F95
 
-store(W_O)          U+03BF U+1F40 U+1F41 U+1F78 U+03CC U+1F44 U+1F43 U+1F45
-store(W_W)          U+03C9 U+1F60 U+1F61 U+1F7C U+03CE U+1F64 U+1F63 U+1F65
+store(W_O)          U+03BF U+1F40 U+1F41 U+1F78 U+1F79 U+1F44 U+1F43 U+1F45
+store(W_W)          U+03C9 U+1F60 U+1F61 U+1F7C U+1F7D U+1F64 U+1F63 U+1F65
 store(W_WIo)        U+1FF3 U+1FA0 U+1FA1 U+1FF2 U+1FF4 U+1FA4 U+1FA3 U+1FA5
 
 c H for chi, theta, phi, rho
@@ -384,47 +384,47 @@ store(Eng_in)       U+03BD U+039D
 store(K_GG)         "g"    "G"
 store(Eng)          U+03B3 U+0393
 c Uppercase with iota subscript - something to do with dipthongs
-store(I_upAEOUi1)   U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 U+1F36 U+1F37
-store(I_upAEOJu1)   U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57
-store(AI_A)         U+1FBA U+0386 U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F
-store(AI_J)         U+1FCA U+0389 U+1F28 U+1F29 U+1F2A U+1F2B U+1F2C U+1F2D U+1F2E U+1F2F
-store(I_upAEOUi2)   U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35
-store(I_upAEOJu2)   U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55
-store(AI_E)         U+1FC8 U+0388 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D
-store(AI_O)         U+1FF8 U+038C U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D
-store(I_upAEOUi3)   U+1F76 U+03AF xff    U+1F31 xff    U+1F33 xff    U+1F35
-store(AI_U)         U+1FEA U+038E xff    U+1F59 xff    U+1F5B xff    U+1F5D
+store(I_upAEOUi1)   U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 U+1F36 U+1F37
+store(I_upAEOJu1)   U+1F7A U+1F7B U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57
+store(AI_A)         U+1FBA U+1FBB U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F
+store(AI_J)         U+1FCA U+1FCB U+1F28 U+1F29 U+1F2A U+1F2B U+1F2C U+1F2D U+1F2E U+1F2F
+store(I_upAEOUi2)   U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35
+store(I_upAEOJu2)   U+1F7A U+1F7B U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55
+store(AI_E)         U+1FC8 U+1FC9 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D
+store(AI_O)         U+1FF8 U+1FF9 U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D
+store(I_upAEOUi3)   U+1F76 U+1F77 xff    U+1F31 xff    U+1F33 xff    U+1F35
+store(AI_U)         U+1FEA U+1FEB xff    U+1F59 xff    U+1F5B xff    U+1F5D
 
 
-store(I_upAEOU)     U+1FBA U+0386 U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
-                    U+1FC8 U+0388 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
-                    U+1FF8 U+038C U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D \
-                    U+1FEA U+038E xff    U+1F59 xff    U+1F5B xff    U+1F5D
+store(I_upAEOU)     U+1FBA U+1FBB U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
+                    U+1FC8 U+1FC9 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
+                    U+1FF8 U+1FF9 U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D \
+                    U+1FEA U+1FEB xff    U+1F59 xff    U+1F5B xff    U+1F5D
 
-store(I_upAEOUi)    U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 U+1F36 U+1F37 \
-                    U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
-                    U+1F76 U+03AF U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
-                    U+1F76 U+03AF xff    U+1F31 xff    U+1F33 xff    U+1F35
+store(I_upAEOUi)    U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 U+1F36 U+1F37 \
+                    U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
+                    U+1F76 U+1F77 U+1F30 U+1F31 U+1F32 U+1F33 U+1F34 U+1F35 \
+                    U+1F76 U+1F77 xff    U+1F31 xff    U+1F33 xff    U+1F35
 
 store(I_upAEOUA)    U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 \
                     U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 \
                     U+039F U+039F U+039F U+039F U+039F U+039F U+039F U+039F \
                     U+03A5 U+03A5 xff    U+03A5 xff    U+03A5 xff    U+03A5
 
-store(I_upAEOJ)     U+1FBA U+0386 U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
-                    U+1FC8 U+0388 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
-                    U+1FF8 U+038C U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D \
-                    U+1FCA U+0389 U+1F28 U+1F29 U+1F2A U+1F2B U+1F2C U+1F2D U+1F2E U+1F2F
+store(I_upAEOJ)     U+1FBA U+1FBB U+1F08 U+1F09 U+1F0A U+1F0B U+1F0C U+1F0D U+1F0E U+1F0F \
+                    U+1FC8 U+1FC9 U+1F18 U+1F19 U+1F1A U+1F1B U+1F1C U+1F1D \
+                    U+1FF8 U+1FF9 U+1F48 U+1F49 U+1F4A U+1F4B U+1F4C U+1F4D \
+                    U+1FCA U+1FCB U+1F28 U+1F29 U+1F2A U+1F2B U+1F2C U+1F2D U+1F2E U+1F2F
 
 store(I_upAEOJA)    U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 U+0391 \
                     U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 U+0395 \
                     U+039F U+039F U+039F U+039F U+039F U+039F U+039F U+039F \
                     U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397 U+0397
 
-store(I_upAEOJu)    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57 \
-                    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 \
-                    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 \
-                    U+1F7A U+03CD U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57
+store(I_upAEOJu)    U+1F7A U+1F7B U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57 \
+                    U+1F7A U+1F7B U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 \
+                    U+1F7A U+1F7B U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 \
+                    U+1F7A U+1F7B U+1F50 U+1F51 U+1F52 U+1F53 U+1F54 U+1F55 U+1F56 U+1F57
 
 store(K_upVSmTi1)     "A"   "J"    "I"    "W"
 store(upVSmTi2)       U+1F0E U+1F2E U+1F3E U+1F6E
@@ -435,45 +435,45 @@ store(upVRoTi2)       U+1F0F U+1F2F U+1F3F U+1F5F U+1F6F
 
 c Vowels
 store(V_in)         U+0313 U+0314 U+0300 U+0301 xff    xff    xff    xff    xff    xff    xff
-store(V_A)          U+1F00 U+1F01 U+1F70 U+03AC U+1FB6 U+1F02 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
+store(V_A)          U+1F00 U+1F01 U+1F70 U+1F71 U+1FB6 U+1F02 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
 store(V_ABr)        U+1F00 U+1F01 U+03B1 U+03B1 U+1FB6 U+1F00 U+1F00 U+1F04 U+1F01 U+1F01 U+1F07
-store(V_J)          U+1F20 U+1F21 U+1F74 U+03AE U+1FC6 U+1F22 U+1F24 U+1F26 U+1F23 U+1F25 U+1F27
+store(V_J)          U+1F20 U+1F21 U+1F74 U+1F75 U+1FC6 U+1F22 U+1F24 U+1F26 U+1F23 U+1F25 U+1F27
 store(V_JBr)        U+1F20 U+1F21 U+03B7 U+03B7 U+1FC6 U+1F20 U+1F20 U+1F26 U+1F21 U+1F21 U+1F27
-store(V_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1FE6 U+1F52 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
-store(V_UDi)        U+03CB U+03CB U+1FE2 U+03B0 U+03CB U+1FE2 U+03B0 U+03CB U+1FE2 U+03B0 U+03CB
-store(V_W)          U+1F60 U+1F61 U+1F7C U+03CE U+1FF6 U+1F62 U+1F64 U+1F66 U+1F63 U+1F65 U+1F67
+store(V_U)          U+1F50 U+1F51 U+1F7A U+1F7B U+1FE6 U+1F52 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
+store(V_UDi)        U+03CB U+03CB U+1FE2 U+1FE3 U+03CB U+1FE2 U+1FE3 U+03CB U+1FE2 U+1FE3 U+03CB
+store(V_W)          U+1F60 U+1F61 U+1F7C U+1F7D U+1FF6 U+1F62 U+1F64 U+1F66 U+1F63 U+1F65 U+1F67
 
 c store(XV_XBr)       U+0313 U+0314 U+0313 U+0313 xff    U+0314 U+0314 xff
 store(XV_U)         U+1F50 U+1F51 U+1F52 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
-store(XV_UDi)       U+03CB U+03CB U+1FE2 U+03B0 U+03CB U+1FE2 U+03B0 U+03CB
+store(XV_UDi)       U+03CB U+03CB U+1FE2 U+1FE3 U+03CB U+1FE2 U+1FE3 U+03CB
 
 store(E_in)         U+0313 U+0314 U+0300 U+0301 xff    xff    xff
-store(E_E)          U+1F10 U+1F11 U+1F72 U+03AD U+1F14 U+1F13 U+1F15
+store(E_E)          U+1F10 U+1F11 U+1F72 U+1F73 U+1F14 U+1F13 U+1F15
 store(E_EBr)        U+1F10 U+1F11 U+03B5 U+03B5 U+1F10 U+1F11 U+1F11
 store(E_I)          U+1F30 U+1F31 U+0376 U+0377 U+1F34 U+1F33 U+1F35
-store(E_IDi)        U+03CA U+03CA U+1FD2 U+0390 U+0390 U+1FD2 U+0390
-store(E_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1F54 U+1F53 U+1F55
-store(E_O)          U+1F40 U+1F41 U+1F78 U+03CC U+1F44 U+1F43 U+1F45
+store(E_IDi)        U+03CA U+03CA U+1FD2 U+1FD3 U+1FD3 U+1FD2 U+1FD3
+store(E_U)          U+1F50 U+1F51 U+1F7A U+1F7B U+1F54 U+1F53 U+1F55
+store(E_O)          U+1F40 U+1F41 U+1F78 U+1F79 U+1F44 U+1F43 U+1F45
 store(E_OBr)        U+1F40 U+1F41 U+03BF U+03BF U+1F40 U+1F41 U+1F41
 
 store(I_in)         U+0313 U+0314 U+0300 U+0301 U+0342 xff    xff    xff    xff    xff
 store(I_I)          U+1F30 U+1F31 U+0376 U+0377 U+1FD6 U+1F34 U+1F36 U+1F33 U+1F35 U+1F37
-store(I_IDi)        U+03CA U+03CA U+1FD2 U+0390 U+03CA U+0390 U+03CA U+1FD2 U+0390 U+03CA
-store(I_A)          U+1F00 U+1F01 U+1F70 U+03AC U+1FB6 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
+store(I_IDi)        U+03CA U+03CA U+1FD2 U+1FD3 U+03CA U+1FD3 U+03CA U+1FD2 U+1FD3 U+03CA
+store(I_A)          U+1F00 U+1F01 U+1F70 U+1F71 U+1FB6 U+1F04 U+1F06 U+1F03 U+1F05 U+1F07
 store(I_ABr)        U+1F00 U+1F01 U+03B1 U+03B1 U+1FB6 U+1F00 U+1F04 U+1F01 U+1F01 U+1F07
-store(I_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1FE6 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
+store(I_U)          U+1F50 U+1F51 U+1F7A U+1F7B U+1FE6 U+1F54 U+1F56 U+1F53 U+1F55 U+1F57
 store(I_UBr)        U+1F50 U+1F51 U+03C5 U+03C5 U+1FE6 U+1F50 U+1F56 U+1F51 U+1F51 U+1F57
 
 store(XI_XBr)       U+0313 U+0314 U+0313 xff    U+0314 U+0314 xff
 store(XI_I)         U+1F30 U+1F31 U+1F34 U+1F36 U+1F33 U+1F35 U+1F37
-store(XI_IDi)       U+03CA U+03CA U+0390 U+03CA U+1FD2 U+0390 U+03CA
+store(XI_IDi)       U+03CA U+03CA U+1FD3 U+03CA U+1FD2 U+1FD3 U+03CA
 
 store(O_in)         U+0313 U+0314 U+0300 U+0301 xff    xff    xff    xff
-store(O_O)          U+1F40 U+1F41 U+1F78 U+03CC U+1F42 U+1F44 U+1F43 U+1F45
+store(O_O)          U+1F40 U+1F41 U+1F78 U+1F79 U+1F42 U+1F44 U+1F43 U+1F45
 store(O_OBr)        U+1F40 U+1F41 U+03BF U+03BF U+1F40 U+1F40 U+1F41 U+1F41
 store(O_EBr)        U+1F10 U+1F11 U+03B5 U+03B5 U+1F10 U+1F10 U+1F11 U+1F11
-store(O_U)          U+1F50 U+1F51 U+1F7A U+03CD U+1F52 U+1F54 U+1F53 U+1F55
-store(O_UDi)        U+03CB U+03CB U+1FE2 U+03B0 U+1FE2 U+03B0 U+1FE2 U+03B0
+store(O_U)          U+1F50 U+1F51 U+1F7A U+1F7B U+1F52 U+1F54 U+1F53 U+1F55
+store(O_UDi)        U+03CB U+03CB U+1FE2 U+1FE3 U+1FE2 U+1FE3 U+1FE2 U+1FE3
 
 c Punctuation
 store(K_punc)       ","    "."    ":"    "?"    ";"    "%"

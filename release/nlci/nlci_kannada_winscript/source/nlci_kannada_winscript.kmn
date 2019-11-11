@@ -1,6 +1,10 @@
-﻿store(&NAME) 'NLCI Kannada WinScript'
-store(&COPYRIGHT) '© NLCI 2000-2018'
-store(&KEYBOARDVERSION) '2.0.0'
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Kannada WinScript[NLCI] '
+store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'windows macosx linux web'
+store(&BITMAP) 'nlci_kannada_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_kannada_winscript.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -20,7 +24,7 @@ store(cons) 'ಕಖಗಘಙ' \
     	   	'ಟಠಡಢಣ' \
     	   	'ತಥದಧನ' \
     	   	'ಪಫಬಭಮ' \
-    	   	'ಯರಲವಶಷಸಹಹಳ'
+    	   	'ಯರಲವಶಷಸಹಳ'
 
 store(consonants) outs(cons) 'ಱೞ'
 store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
@@ -42,7 +46,10 @@ c Adjust the behavior of 'i'
 
 c Adjust the behavior of l
 'ಲ' + 'l' > 'ಳ'
-'ಳ' + 'l' > 'ೞ'      
+'ಳ' + 'l' > 'ೞ'     
+
+c Adjust the behavior of L
+'ಳ' + 'L' > 'ೞ' 
 
 c Adjust the behavior of o
 'ಒ' + 'o' > 'ಓ'    
@@ -56,20 +63,29 @@ c Adjust the behavior of R
 'ೃ' + 'R' > 'ೄ'     
    
 c Adjust the behavior of S
-+ 'S' > nul  
++ 'S' > nul                
+
+c Adjust the behavior of F
++ 'F' > nul  
+'`' dk(bt) + 'F' > 'F'
++ 'f' > nul    
+'`' dk(bt) + 'f' > 'f'
 
 c Adjust the behavior of u
 'ಉ' + 'u' > 'ಊ'    
 'ು' + 'u' > 'ೂ' 
 
 c Adjust the behavior of s
-'ಸ' + 's'> 'ಶ'
+'ಸ' + 's'> 'ಶ'    
+
+c Adjust the behavior of S
+'`' dk(bt) + 'S' > 'S'
 
 c Adjust the behavior of X
 any(consonants) + 'X' > context '್' U+200C
 any(consonants) '್' + 'X' > context U+200C
 U+200C + 'X' > context beep
-store(WordFinalPunct) ' ",;:.>!]})' 
+store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
   
 c = is a modifier key that alters the default behavior of some keystrokes
@@ -101,7 +117,6 @@ U+2014 + '`' > '---'
 U+2014 + [K_BKSP] > '---'    
 
 c backtick for change into English
-
 + '`' > '`' dk(bt)
 '`' dk(bt) + any(allKeys) > index(allKeys, 3)
 any(allKeys) + any(allKeys) > context index(allKeys, 2)

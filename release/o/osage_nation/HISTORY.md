@@ -1,6 +1,10 @@
 Osage Keyboard Change History
 =======================
 
+1.2.1 (19 Oct 2018)
+-----------------
+* Changed to use .kvk (compiled OSK) in the .kps file
+
 1.2 (14 May 2018)
 -----------------
 * Changed touch layout key for U+104E6

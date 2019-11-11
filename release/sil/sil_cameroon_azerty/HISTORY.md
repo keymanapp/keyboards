@@ -1,21 +1,30 @@
-Cameroon AZERTY Keyboard Change History
+Change History
 =======================
 
-1.2.1 (14 Sep 2018)
+6.0 (2018)
 -----------------
-* Added linux support
+Rewrote Documentation, Enabled external Keyboards with Mobile Clients. Submitted to new Keyman Repository
 
-1.2 (10 Apr 2018)
+5.0 (Unreleased)
 -----------------
-* Added MacOS support
-* Uploaded to GitHub
+Optimization of Mobile Keyboards for Keyman 10.
 
-1.1 (Nov 2007)
+4.0 (2017)
 -----------------
-* Updated to match behaviour of QWERTY layout
+Added Mobile Keyboards
 
-
-1.0 (May 2006)
+3.0 (2010)
 -----------------
-* Initial version
-* Approximates keying of version 3.x legacy keyboard
+Major Revision of Keyboards
+
+2.0 (2000)
+-----------------
+Unicode (Created for MSKLC and Keyman)
+
+Cameroon Keyboard 1.0 (Date Unknown)
+-----------------
+
+Non-Unicode
+
+* Created by Jenni Beadle
+
