@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1353.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>12.0.52.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>landuma-Image.bmp</GraphicFile>
     <MSIFileName>N:\T\TribalFonts\Keyman10\keymandesktop-11.0.1353.0\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
@@ -23,27 +24,6 @@
     <WebSite URL="www.ethnos360.org">www.ethnos360.org</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>landuma.kvk</Name>
-      <Description>File landuma.kvk</Description>
-      <Filepath>landuma/build\landuma.kvk</Filepath>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>landuma.kmx</Name>
-      <Description>Keyboard landuma</Description>
-      <Filepath>landuma/build\landuma.kmx</Filepath>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>landuma.js</Name>
-      <Description>File landuma.js</Description>
-      <Filepath>landuma/build\landuma.js</Filepath>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
     <File>
       <Name>landuma-Image.bmp</Name>
       <Description>File landuma-Image.bmp</Description>
@@ -63,37 +43,50 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>Andika-R.ttf</Name>
+      <Name>..\build\landuma.js</Name>
+      <Description>File landuma.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\landuma.kvk</Name>
+      <Description>File landuma.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\landuma.kmx</Name>
+      <Description>Keyboard landuma</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-Regular.ttf</Name>
       <Description>Font Andika</Description>
-      <Filepath>release/shared/fonts/sil/andika/Andika-Regular.ttf</Filepath>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>Andika_README.txt</Name>
-      <Description>Andika README</Description>
-      <Filepath>release/shared/fonts/sil/andika/Andika_README.txt</Filepath>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika_README.txt</Name>
+      <Description>File Andika_README.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>FONTLOG.txt</Name>
-      <Description>Font Log</Description>
-      <Filepath>release/shared/fonts/sil/andika/FONTLOG.txt</Filepath>
+      <Name>..\..\..\shared\fonts\sil\andika\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>OFL-FAQ.txt</Name>
-      <Description>OFL-FAQ</Description>
-      <Filepath>release/shared/fonts/sil/andika/OFL-FAQ.txt</Filepath>
+      <Name>..\..\..\shared\fonts\sil\andika\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>OFL.txt</Name>
-      <Description>OFL</Description>
-      <Filepath>release/shared/fonts/sil/andika/OFL.txt</Filepath>
+      <Name>..\..\..\shared\fonts\sil\andika\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
@@ -102,10 +95,8 @@
     <Keyboard>
       <Name>landuma</Name>
       <ID>landuma</ID>
-      <Version>2019.04.17.1</Version>
-      <Languages>
-        <Language ID="ldm-Latn">Landoma</Language>
-      </Languages>
+      <Version>1.1</Version>
+      <Languages/>
     </Keyboard>
   </Keyboards>
   <Strings/>

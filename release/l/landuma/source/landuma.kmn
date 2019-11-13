@@ -9,7 +9,7 @@ store(&version) '9.0'
 store(&NAME) 'landuma'
 store(&BITMAP) 'l.bmp'
 store(&COPYRIGHT) '© 2019 Ethnos360'
-store(&KEYBOARDVERSION) '2019.04.17.1'
+store(&KEYBOARDVERSION) '1.1'
 store(&message) "This keyboard is freely redistributable."
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'landuma.keyman-touch-layout'
@@ -35,6 +35,15 @@ c Direct Replacement
 + "v" > U+025b c ɛ
 + "a" > U+0251 c ɑ
 + "g" > U+0261 U+0062 c ɡb
++ "?" > U+0020 U+003f c space ?
++ "!" > U+0020 U+0021 c space !
++ ":" > U+0020 U+003a U+0020 c space : space
+
+c Added for touch screen ? ! and :
++ [T_20_3f_20] > U+0020 U+003f U+0020 c space ? space
++ [T_20_21_20] > U+0020 U+0021 U+0020 c space ! space
++ [T_20_3a_20] > U+0020 U+003a U+0020 c space : space
+
 c Caps
 + "Q" > U+018f c Ə
 + "Z" > U+0245 c Ʌ
@@ -43,6 +52,10 @@ c Caps
 + "G" > U+0047 U+0062 c Gb
 + "<" > U+00ab c «
 + ">" > U+00bb c »
+
+c Added for touch screen « and » :
++ [T_20_ab_20] > U+0020 U+00ab U+0020 c space « space
++ [T_20_bb_20] > U+0020 U+00bb U+0020 c space » space
 
 c Direct Replacement Originals
 dk(semicolon) + "q" > U+0071 c "q"
@@ -64,6 +77,7 @@ dk(semicolon) + ">" > U+003E c ">"
 c Added for touch screen gb and Gb on g
 + [T_261_62] > U+0261 U+0062 c ɡb
 + [T_47_62] > U+0047 U+0062 c Gb
++ [T_47_42] > U+0047 U+0042 c GB
 
 c Vowels with accents with deɑdkey:
 dk(semicolon) + "w" > U+00ea c ê
