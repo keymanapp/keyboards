@@ -1,8 +1,8 @@
-<?php 
+<?php
   $pagename = 'ᓀᐦᐃᔭᐍᐏᐣ (Cree Syllabics) Keyboard Help';
   $pagetitle = 'ᓀᐦᐃᔭᐍᐏᐣ (Cree Syllabics) Keyboard Help';
   $pagestyle = <<<END
-  
+
 .lang2 {font-family:"Noto Sans", "Gadugi", "Euphemia UACS", Euphemia, sans-serif}
 kbd { display: inline-block; box-sizing: border-box; border-radius: 4px; min-width: 1.5em; padding: 0 .25em; background-color: #EEE; text-align: center; box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2); }
 kbd.special { padding: .1rem .25rem; font-size: small; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; }
@@ -36,7 +36,7 @@ it's spoken as <strong> ᐠ + ᐄ + ᐠ +  ᐤ + ᐊ + ᕀ </strong></p>
 first press the first sound of <strong>ᑮ</strong>, which is <kbd>ᐠ</kbd>:</p>
 
 <figure>
-  <img alt="pressing ᐠ" src="press-k.jpg" />
+  <img alt="Pressing ᐠ" src="press-k.jpg" />
 </figure>
 
 <p> The keyboard has changed, and now the vowels (ᐁ ᐃ ᐅ ᐊ ᐄ ᐆ ᐋ) have
@@ -44,7 +44,7 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
 (ᑫ ᑭ ᑯ ᑲ ᑮ ᑰ ᑳ, respectively). </p>
 
 <figure>
-  <img alt="vowels replaced with ᑫ ᑭ ᑯ ᑲ ᑮ ᑰ ᑳ" src="layout-kv.jpg" />
+  <img alt="Vowels replaced with ᑫ ᑭ ᑯ ᑲ ᑮ ᑰ ᑳ" src="layout-kv.jpg" />
 </figure>
 
 <p>Now, press <kbd>ᑮ</kbd>.</p>
@@ -56,7 +56,7 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
   press <kbd>ᐠ</kbd>. We're back to this screen: </p>
 
 <figure>
-  <img alt="vowels replaced with ᑫ ᑭ ᑯ ᑲ ᑮ ᑰ ᑳ" src="layout-kv.jpg" />
+  <img alt="Vowels replaced with ᑫ ᑭ ᑯ ᑲ ᑮ ᑰ ᑳ" src="layout-kv.jpg" />
 </figure>
 
 <p> But this time, the syllabic we want to type, <strong>ᑿ</strong>, is
@@ -65,7 +65,7 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
   the <strong>ᐤ</strong> sound. To do this, press <kbd>ᐤ</kbd>. </p>
 
 <figure>
-  <img alt="pressing ᐤ after ᐠ" src="press-w.jpg" />
+  <img alt="Pressing ᐤ after ᐠ" src="press-w.jpg" />
 </figure>
 
 <p>After pressing this, the keys will have
@@ -74,7 +74,7 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
   ᑿ ᑹ ᑽ ᒁ:</p>
 
 <figure>
-  <img alt="syllables replaced with ᑵ ᑷ ᑻ ᑿ ᑹ ᑽ ᒁ" src="layout-kwv.jpg" />
+  <img alt="Syllables replaced with ᑵ ᑷ ᑻ ᑿ ᑹ ᑽ ᒁ" src="layout-kwv.jpg" />
 </figure>
 
 <p> Now, we can press the syllable we want: <kbd>ᑿ</kbd>. </p>
@@ -95,7 +95,7 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
 
 <h3>Default</h3>
 <figure>
-  <img alt="Numeric" src="layout-default.jpg" />
+  <img alt="Default layout" src="layout-default.jpg" />
 </figure>
 
 <h3>Consonant pressed</h3>
@@ -103,7 +103,7 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
 <kbd>ᐟ</kbd>, <kbd>ᐠ</kbd>, <kbd>ᐨ</kbd>, <kbd>ᒼ</kbd>, <kbd>ᐣ</kbd>,
 <kbd>ᐢ</kbd>, or <kbd>ᕀ</kbd>. </p>
 <figure>
-  <img alt="layout after pressing ᐠ" src="layout-kv.jpg" />
+  <img alt="Layout after pressing ᐠ" src="layout-kv.jpg" />
 </figure>
 
 <h3>Consonant and ᐤ pressed</h3>
@@ -111,7 +111,7 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
 already pressed <kbd>ᑊ</kbd>, <kbd>ᐟ</kbd>, <kbd>ᐠ</kbd>, <kbd>ᐨ</kbd>,
 <kbd>ᒼ</kbd>, <kbd>ᐣ</kbd>, <kbd>ᐢ</kbd>, or <kbd>ᕀ</kbd>. </p>
 <figure>
-  <img alt="layout after pressing ᐠᐤ" src="layout-kwv.jpg" />
+  <img alt="Layout after pressing ᐠᐤ" src="layout-kwv.jpg" />
 </figure>
 
 <h3>ᐤ pressed</h3>
@@ -122,7 +122,7 @@ already pressed <kbd>ᑊ</kbd>, <kbd>ᐟ</kbd>, <kbd>ᐠ</kbd>, <kbd>ᐨ</kbd>,
 <h3>Numeric</h3>
 <p>After pressing <kbd class="special">123</kbd> from any other screen.</p>
 <figure>
-  <img alt="Numeric" src="layout-numeric.jpg" />
+  <img alt="Numeric layout" src="layout-numeric.jpg" />
 </figure>
 
 <h3>Punctuation Subkeys</h3>
