@@ -3,7 +3,7 @@ c with name "Cipher Music (SIL)"
 store(&VERSION) '10.0'
 store(&NAME) 'Cipher Music (SIL)'
 store(&COPYRIGHT) '© 2009-2019 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'windows macosx linux web'
 store(&VISUALKEYBOARD) 'sil_cipher_music.kvks'
 store(&BITMAP) 'sil_cipher_music.ico'
@@ -72,7 +72,25 @@ U+0036 U+0338 U+0307 + "6" > U+0036 U+0338 U+0323
 U+0037 U+20E5 U+0307 + "7" > U+0037 U+20E5 U+0323 c reverse because of shape of 7
 U+1D1B1              + "8" > U+1D1B2              c glissando down
 
+c  Set kepatihan mode by default
+
+c store(opt1) 'kepatihan'
+c + [RALT K_HYPHEN]	>	set(opt1='0') c 
+c + [RALT K_EQUAL]	>	reset(opt1)  c 
+
+c Indonesian
+c if(opt1 = 'kepatihan') "-" + "-" > U+0305 c combining overline
+c if(opt1 = 'kepatihan') "=" + "=" > U+033F c combining double overline
+
+c Chinese
+c $keymanonly: if(opt1 = '0') "-" + "-" > U+0332 c combining low line
+c $keymanonly: if(opt1 = '0') "=" + "=" > U+0333 c combining double low line
+
+c using options.htm
 store(option_key) ''
+
++ [RALT K_HYPHEN]	>	set(option_key='jianpu') c 
++ [RALT K_EQUAL]	>	reset(option_key)  c 
 
 c Indonesian
 if(option_key = '') "-" + "-" > U+0305 c combining overline
@@ -107,17 +125,20 @@ U+201C " " + [SHIFT K_COMMA] > U+201C U+202F U+2018 c '<'
 U+2019 + [SHIFT K_PERIOD] > '>'
 U+2018 + [SHIFT K_COMMA] > '<'
 
-+ [RCTRL SHIFT K_PERIOD] > U+0323 c underdot
-+ [RCTRL SHIFT K_COMMA]  > U+0307 c overdot
-+ [RCTRL K_PERIOD]       > U+02D9 c middle dot (not sure if this is correct)
-+ [RCTRL SHIFT K_1] > U+1D100
-+ [RCTRL SHIFT K_2] > U+1D101
-+ [RCTRL SHIFT K_3] > U+1D102
-+ [RCTRL SHIFT K_4] > U+1D103
-+ [RCTRL SHIFT K_5] > U+1D106
-+ [RCTRL SHIFT K_6] > U+1D107
-+ [RCTRL SHIFT K_QUOTE] > U+1D112 c breath mark
-+ [RCTRL SHIFT K_COLON] > U+1D108 c repeat dots / not documented?
++ [RALT K_PERIOD] > U+0323 c underdot
++ [RALT K_COMMA]  > U+0307 c overdot
++ [RALT K_1] > U+1D100
++ [RALT K_2] > U+1D101
++ [RALT K_3] > U+1D102
++ [RALT K_4] > U+1D103
++ [RALT K_5] > U+1D106
++ [RALT K_6] > U+1D107
++ [RALT K_QUOTE] > U+1D112 c breath mark
++ [RALT K_COLON] > U+1D108 c repeat dots / not documented?
+
++ [RALT K_SLASH]       > U+02D9 c middle dot (not sure if this is correct)
++ [RALT K_RBRKT] > '}'
++ [RALT K_LBRKT] > '{'
 
 + [SHIFT K_M] > 'M'
 + [SHIFT K_N] > 'N'
@@ -142,9 +163,6 @@ U+00C1 + [SHIFT K_Z] > 'Z'
 + [SHIFT K_BKSLASH] > '|'
 + [SHIFT K_RBRKT] > U+1D178 c '}'
 + [SHIFT K_LBRKT] > U+1D177 c '{'
-
-+ [RCTRL K_RBRKT] > '}'
-+ [RCTRL K_LBRKT] > '{'
 
 + [SHIFT K_P] > 'P'
 + [SHIFT K_O] > 'O'
