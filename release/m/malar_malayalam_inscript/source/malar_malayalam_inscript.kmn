@@ -1,0 +1,376 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Malar Malayalam Inscript'
+store(&COPYRIGHT) '2019 © Ramesh Kunnappully [MIT License]'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'malar_malayalam_inscript.kvks'
+store(&LAYOUTFILE) 'malar_malayalam_inscript.keyman-touch-layout'
+store(&BITMAP) 'malar_malayalam_inscript.ico'
+store(&MESSAGE) 'Malar Malayalam Inscript Keyboard is a customized version of the Malayalam Inscript keyboard. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 12.1. Malayalam Unicode fonts under the SIL Open Font License are available at https://smc.org.in/fonts/.'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_BKQUOTE] > 'ൊ'
++ [K_1] > '൧'
++ [K_2] > '൨'
++ [K_3] > '൩'
++ [K_4] > '൪'
++ [K_5] > '൫'
++ [K_6] > '൬'
++ [K_7] > '൭'
++ [K_8] > '൮'
++ [K_9] > '൯'
++ [K_0] > '൦'
++ [K_HYPHEN] > '-'
++ [K_EQUAL] > 'ൃ'
++ [K_BKSLASH] > U+200C
+
++ [K_Q] > 'ൗ'
++ [K_W] > 'ൈ'
++ [K_E] > 'ാ'
++ [K_R] > 'ീ'
++ [K_T] > 'ൂ'
++ [K_Y] > 'ബ'
++ [K_U] > 'ഹ'
++ [K_I] > 'ഗ'
++ [K_O] > 'ദ'
++ [K_P] > 'ജ'
++ [K_LBRKT] > 'ഡ'
++ [K_RBRKT] > Nul
+
++ [K_A] > 'ോ'
++ [K_S] > 'േ'
++ [K_D] > '്'
++ [K_F] > 'ി'
++ [K_G] > 'ു'
++ [K_H] > 'പ'
++ [K_J] > 'ര'
++ [K_K] > 'ക'
++ [K_L] > 'ത'
++ [K_COLON] > 'ച'
++ [K_QUOTE] > 'ട'
+
++ [K_Z] > 'െ'
++ [K_X] > 'ം'
++ [K_C] > 'മ'
++ [K_V] > 'ന'
++ [K_B] > 'വ'
++ [K_N] > 'ല'
++ [K_M] > 'സ'
++ [K_COMMA] > ','
++ [K_PERIOD] > '.'
++ [K_SLASH] > 'യ'
+
++ [SHIFT K_BKQUOTE] > 'ഒ'
++ [SHIFT K_1] > '!'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '#'
++ [SHIFT K_4] > '₹'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > '^'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '('
++ [SHIFT K_0] > ')'
++ [SHIFT K_HYPHEN] > 'ഃ'
++ [SHIFT K_EQUAL] > 'ഋ'
++ [SHIFT K_BKSLASH] > '|'
+
++ [SHIFT K_Q] > 'ഔ'
++ [SHIFT K_W] > 'ഐ'
++ [SHIFT K_E] > 'ആ'
++ [SHIFT K_R] > 'ഈ'
++ [SHIFT K_T] > 'ഊ'
++ [SHIFT K_Y] > 'ഭ'
++ [SHIFT K_U] > 'ങ'
++ [SHIFT K_I] > 'ഘ'
++ [SHIFT K_O] > 'ധ'
++ [SHIFT K_P] > 'ഝ'
++ [SHIFT K_LBRKT] > 'ഢ'
++ [SHIFT K_RBRKT] > 'ഞ'
+
++ [SHIFT K_A] > 'ഓ'
++ [SHIFT K_S] > 'ഏ'
++ [SHIFT K_D] > 'അ'
++ [SHIFT K_F] > 'ഇ'
++ [SHIFT K_G] > 'ഉ'
++ [SHIFT K_H] > 'ഫ'
++ [SHIFT K_J] > 'റ' 
++ [SHIFT K_K] > 'ഖ' 
++ [SHIFT K_L] > 'ഥ' 
++ [SHIFT K_COLON] > 'ഛ' 
++ [SHIFT K_QUOTE] > 'ഠ'
+ 
++ [SHIFT K_Z] > 'എ'
++ [SHIFT K_X] > dk(X)
++ [SHIFT K_C] > 'ണ' 
++ [SHIFT K_V] > dk(V)
++ [SHIFT K_B] > 'ഴ' 
++ [SHIFT K_N] > 'ള' 
++ [SHIFT K_M] > 'ശ' 
++ [SHIFT K_COMMA] > 'ഷ' 
++ [SHIFT K_PERIOD] > '>' 
++ [SHIFT K_SLASH] > '?' 
+
++ [RALT K_BKQUOTE] > U+0060
++ [RALT K_1] > '1'
++ [RALT K_2] > '2'
++ [RALT K_3] > '3'
++ [RALT K_4] > '4'
++ [RALT K_5] > '5'
++ [RALT K_6] > '6'
++ [RALT K_7] > '7'
++ [RALT K_8] > '8'
++ [RALT K_9] > '9'
++ [RALT K_0] > '0'
++ [RALT K_HYPHEN] > '-'
++ [RALT K_EQUAL] > '='
++ [RALT K_BKSLASH] > '\'
+
++ [RALT K_Q] > Nul
++ [RALT K_W] > Nul
++ [RALT K_E] > Nul
++ [RALT K_R] > Nul
++ [RALT K_T] > Nul
++ [RALT K_Y] > Nul
++ [RALT K_U] > Nul
++ [RALT K_I] > Nul
++ [RALT K_O] > Nul
++ [RALT K_P] > Nul
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
+
++ [RALT K_A] > Nul
++ [RALT K_S] > Nul
++ [RALT K_D] > Nul
++ [RALT K_F] > Nul
++ [RALT K_G] > Nul
++ [RALT K_H] > Nul
++ [RALT K_J] > Nul
++ [RALT K_K] > Nul
++ [RALT K_L] > Nul
++ [RALT K_COLON] > ';'
++ [RALT K_QUOTE] > U+0027
+
++ [RALT K_Z] > Nul
++ [RALT K_X] > Nul
++ [RALT K_C] > Nul
++ [RALT K_V] > Nul
++ [RALT K_B] > Nul
++ [RALT K_N] > Nul
++ [RALT K_M] > Nul
++ [RALT K_COMMA] > ','
++ [RALT K_PERIOD] > '.'
++ [RALT K_SLASH] > '/'
+
++ [SHIFT RALT K_BKQUOTE] > '~'
++ [SHIFT RALT K_1] > '!'
++ [SHIFT RALT K_2] > '@'
++ [SHIFT RALT K_3] > '#'
++ [SHIFT RALT K_4] > '$'
++ [SHIFT RALT K_5] > '%'
++ [SHIFT RALT K_6] > '^'
++ [SHIFT RALT K_7] > '&'
++ [SHIFT RALT K_8] > '*'
++ [SHIFT RALT K_9] > '('
++ [SHIFT RALT K_0] > ')'
++ [SHIFT RALT K_HYPHEN] > '_'
++ [SHIFT RALT K_EQUAL] > '+'
++ [SHIFT RALT K_BKSLASH] > '|'
+
++ [SHIFT RALT K_Q] > Nul
++ [SHIFT RALT K_W] > Nul
++ [SHIFT RALT K_E] > Nul
++ [SHIFT RALT K_R] > Nul
++ [SHIFT RALT K_T] > Nul
++ [SHIFT RALT K_Y] > Nul
++ [SHIFT RALT K_U] > Nul
++ [SHIFT RALT K_I] > Nul
++ [SHIFT RALT K_O] > Nul
++ [SHIFT RALT K_P] > Nul
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_LBRKT] > '{'
+
++ [SHIFT RALT K_A] > Nul
++ [SHIFT RALT K_S] > Nul
++ [SHIFT RALT K_D] > Nul
++ [SHIFT RALT K_F] > Nul
++ [SHIFT RALT K_G] > Nul
++ [SHIFT RALT K_H] > Nul
++ [SHIFT RALT K_J] > Nul
++ [SHIFT RALT K_K] > Nul
++ [SHIFT RALT K_L] > Nul
++ [SHIFT RALT K_COLON] > ':'
++ [SHIFT RALT K_QUOTE] > U+0022
+
++ [SHIFT RALT K_Z] > Nul
++ [SHIFT RALT K_X] > Nul
++ [SHIFT RALT K_C] > Nul
++ [SHIFT RALT K_V] > Nul
++ [SHIFT RALT K_B] > Nul
++ [SHIFT RALT K_N] > Nul
++ [SHIFT RALT K_M] > Nul
++ [SHIFT RALT K_COMMA] > '<'
++ [SHIFT RALT K_PERIOD] > '>'
++ [SHIFT RALT K_SLASH] > '?'
+
+'ണ്' + [K_RBRKT] > 'ൺ'
+'ന്' + [K_RBRKT] > 'ൻ'
+'ര്' + [K_RBRKT] > 'ർ'
+'ല്' + [K_RBRKT] > 'ൽ'
+'ള്' + [K_RBRKT] > 'ൾ'
+'ക്' + [K_RBRKT] > 'ൿ'
+'മ്' + [K_RBRKT] > 'ൔ'
+'യ്' + [K_RBRKT] > 'ൕ'
+'ഴ്' + [K_RBRKT] > 'ൖ'
+
+c Special Rules
+store(consonants) 'കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷസഹളഴറഺഩ'
+
+'ൗ' + [K_Q] > 'ൌ'
+'ൌ' + [K_Q] > 'ൗ'
+
+any(consonants) 'ൗ' + [K_Q] > index(consonants, 1) 'ൌ'
+any(consonants) 'ൌ' + [K_Q] > index(consonants, 1) 'ൗ'
+
+'ം' + [K_X] > 'ഀ' 
+'ഀ' + [K_X] > 'ഁ' 
+'ഁ' + [K_X] > 'ം' 
+
+any(consonants) 'ം' + [K_X] > index(consonants, 1) 'ഀ' 
+any(consonants) 'ഀ' + [K_X] > index(consonants, 1)  'ഁ' 
+any(consonants) 'ഁ' + [K_X] > index(consonants, 1) 'ം' 
+
+'്' + [K_D] > '഻'
+'഻' + [K_D] > '഼' 
+'഼' + [K_D] > '്'
+
+any(consonants) '്' + [K_D] > index(consonants, 1) '഻'
+any(consonants) '഻' + [K_D] > index(consonants, 1) '഼' 
+any(consonants) '഼' + [K_D] > index(consonants, 1) '്'
+
+'്ല' + [K_N] > 'ൢ' 
+'ൢ' + [K_N] > 'ൣ'
+'ൣ'+ [K_N] > '്ല'
+
+any(consonants) '്ല' + [K_N] > index(consonants, 1) 'ൢ' 
+any(consonants) 'ൢ' + [K_N] > index(consonants, 1) 'ൣ'
+any(consonants) 'ൣ'+ [K_N] > index(consonants, 1) '്ല'
+
+'ൃ' + [K_EQUAL] > 'ൄ'
+'ൄ' + [K_EQUAL] > 'ൃ'
+
+any(consonants) 'ൃ' + [K_EQUAL] > index(consonants, 1) 'ൄ'
+any(consonants) 'ൄ' + [K_EQUAL] > index(consonants, 1) 'ൃ'
+
+'ലു' + [K_RBRKT] > 'ഌ'
+'ഌ' + [K_RBRKT] > 'ലു'
+
+'ലൂ' + [K_RBRKT] > 'ൡ'
+'ൡ'+ [K_RBRKT] > 'ലൂ'
+
+'ന' + [K_RBRKT] > 'ഩ'
+'ഩ' + [K_RBRKT] > 'ന'
+
+'ട' + [K_RBRKT] > 'ഺ'
+'ഺ' + [K_RBRKT] > 'ട' 
+
+'റ്റ' + [K_RBRKT] > 'ഺ' dk(TTTA)
+'ഺ' dk(TTTA) + [K_RBRKT] > 'റ്റ'
+
+'അ' + [K_RBRKT] > 'ഽ' 
+ 'ഽ' + [K_RBRKT] > 'അ' 
+
+'ആ' + [K_RBRKT] > 'ഽഽ'
+'ഽഽ' + [K_RBRKT] > 'ആ'
+
+'ഈ' + [K_RBRKT] > 'ൟ'
+'ൟ' + [K_RBRKT] > 'ഈ'
+
+'ഋ' + [K_RBRKT] > 'ൠ'
+'ൠ' + [K_RBRKT] > 'ഋ'
+
+'ർ' + [K_RBRKT] > 'ൎ'
+'ൎ' + [K_RBRKT] > 'ർ'
+
+'പറ' + [K_RBRKT] > '൏'
+
+'1/160' + [K_RBRKT] > '൘'
+'൧/൧൬൦' + [K_RBRKT] > '൘'
+
+'1/40' + [K_RBRKT] > '൙'
+'൧/൪൦' + [K_RBRKT] > '൙'
+
+'1/20' + [K_RBRKT] > '൛'
+'൧/൨൦' + [K_RBRKT] > '൛'
+
+'1/10' + [K_RBRKT] > '൜'
+'൧/൧൦' + [K_RBRKT] > '൜'
+
+'3/20' + [K_RBRKT] > '൝'
+'൩/൨൦' + [K_RBRKT] > '൝'
+
+'1/8' + [K_RBRKT] > '൷'
+'൧/൮' + [K_RBRKT] > '൷'
+
+'3/16' + [K_RBRKT] > '൸'
+'൩/൧൬' + [K_RBRKT] > '൸'
+
+'1/5' + [K_RBRKT] > '൞'
+'൧/൫' + [K_RBRKT] > '൞' 
+
+'1/4' + [K_RBRKT] > '൳'
+'൧/൪' + [K_RBRKT] > '൳'
+
+'3/80' + [K_RBRKT] > '൚'
+'൩/൮൦' + [K_RBRKT] > '൚'
+
+'1/2' + [K_RBRKT] > '൴'
+'൧/൨' + [K_RBRKT] > '൴'
+
+'1/16' + [K_RBRKT] > '൶'
+'൧/൧൬' + [K_RBRKT] > '൶'
+
+'3/4' + [K_RBRKT] > '൵'
+'൩/൪' + [K_RBRKT] > '൵'
+
+'10'+ [K_RBRKT] > '൰'
+'൧൦'+ [K_RBRKT] > '൰'
+
+'100'+ [K_RBRKT] > '൱'
+'൧൦൦'+ [K_RBRKT] > '൱'
+
+'1000'+ [K_RBRKT] > '൲'
+'൧൦൦൦'+ [K_RBRKT] > '൲'
+
+'നു' + [K_RBRKT] > '൹'
+
+C / After Number
+store(Number) "0123456789൦൧൨൩൪൫൬൭൮൯"
+any(Number) + [K_SLASH] > index(Number,1) '/'
+
+C Apostrophe, Quotation, Accent
+U+0027 + [K_RBRKT] > U+2018
+U+2018 + [K_RBRKT] > U+2019
+U+2019 + [K_RBRKT] > U+0060
+U+0060 + [K_RBRKT] > U+00B4
+U+00B4 + [K_RBRKT] > U+0027
+U+0022 + [K_RBRKT] > U+201C
+U+201C + [K_RBRKT] > U+201D
+U+201D + [K_RBRKT] > U+0022
+
+C Dash
+U+002D + [K_RBRKT] > U+2013
+U+2013 + [K_HYPHEN] > context U+2013
+U+2013 + [K_RBRKT] > U+2014
+U+2014 + [K_HYPHEN] > context U+2014
+U+2014 + [K_RBRKT] > U+002D
+U+002D + [K_HYPHEN] > context U+002D
+
+C ZWNJ
+U+200C + [K_BKSLASH] > U+200C beep
+
+
+C End

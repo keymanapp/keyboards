@@ -1,6 +1,10 @@
 SIL Ethiopic Power-G Change History
 ===================================
 
+1.2.1 (26 Apr 2019)
+-----------------
+* Added and fixed BCP47 codes
+
 1.2 (27 Mar 2017)
 -----------------
 

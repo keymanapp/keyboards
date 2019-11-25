@@ -1,0 +1,172 @@
+﻿store (&VERSION) '10.0'
+store(&NAME) 'Malayalam WinScript(NLCI)'
+store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.0'
+store(&BITMAP) 'nlci_malayalam_winscript.ico'
+store(&VISUALKEYBOARD) 'nlci_malayalam_winscript.kvks'
+store(&TARGETS) 'windows macosx linux web'
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowelKeys) 'AiIuUReEYoOVMH'
+store(vowels) 'ആഇഈഉഊഋഎഏഐഒഓഔംഃ'
+store(vowelMatras) 'ാിീുൂൃെേൈൊോൗംഃ'
+store(consKeys) 'kKgGW' \
+    	   	   	'cCjJw' \
+    	   	   	'tTdDN' \
+    	   	   	'qQ[{n' \
+    	   	   	'pPbBm' \
+    	   	   	'yrlvzZshL'
+
+store(cons) 'കഖഗഘങ' \
+    	   	'ചഛജഝഞ' \
+    	   	'ടഠഡഢണ' \
+    	   	'തഥദധന' \
+    	   	'പഫബഭമ' \
+    	   	'യരലവശഷസഹള'
+
+store(consonants) outs(cons) 'റഴഩഺ'
+store(chillu_base) 'ണനരലളകയമഴ'
+store(chillu) 'ൺൻർൽൾൿൔൕൖ'
+store(allKeys) outs(consKeys) outs(vowelKeys) 'azZ'
+
+c Adjust the behavior of 'a'
++ 'a' > 'അ'   
+'അ' + 'a' > 'ആ'               
+any(consonants) + 'a' > context dk(a)
+dk(a) + 'a' > 'ാ' dk(aa)
+'ാ' dk(aa) + 'a' > 'അ'
+
+c Adjust the behavior of 'e'
+'എ' + 'e' > 'ഏ'      
+'െ' + 'e' > 'േ'  
+
+c Adjust the behavior of 'i'
+'ഇ' + 'i' > 'ഈ' 
+'ി' + 'i' > 'ീ'    
+
+c Adjust the behavior of l
+'ല' + 'l' > 'ള'
+'ള' + 'l' > 'ഴ'       
+
+c Adjust the behavior of L
+'ള' + 'L' > 'ഴ'
+
+c Adjust the behavior of n
+c 'ന' + 'n' > 'ഩ'     
+
+c Adjust the behavior of o
+'ഒ' + 'o' > 'ഓ'    
+'ൊ' + 'o' > 'ോ'   
+
+c Adjust the behavior of r
+ 'ര' + 'r' > 'റ'       
+ 
+c Adjust the behavior of R
+'ഋ' + 'R' > 'ൠ'   
+'ൃ' + 'R' > 'ൄ'     
+   
+c Adjust the behavior of S
+   + 'S' > nul
+'`' dk(bt) + 'S' > 'S'
+c Adjust the behavior of u
+'ഉ' + 'u' > 'ഊ'    
+'ു' + 'u' > 'ൂ' 
+
+c Adjust the behavior of s
+'സ' + 's'> 'ഷ'                    
+
+c Adjust the behavior of f   
+ +'f' > nul
+'`' dk(bt) + 'f' > 'f' 
+
+
+c Adjust the behavior of X
+any(consonants) + 'X' > context '്' U+200C
+any(consonants) '്' + 'X' > context U+200C
+U+200C + 'X' > context beep
+store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|<?)' 
+U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
+
+c Add Malayalam Chillu
+any(chillu_base) '്' + 'x' > index(chillu, 1)
+any(chillu) + 'x' > context beep   
+any(chillu) + '`' > index(chillu_base, 1)'്' U+200D
+any(chillu_base) '്' U+200D + '`' > index(chillu, 1)
+
+c Add praslesham
++ 'F' > 'ഽ'    
+'`' dk(bt) + 'F'  > 'F'
+
+c Add ^
+'്ല' + '^' > 'ൢ'
+'ൢ' + '^' > 'ൣ'   
+                                           
+
+c = is a modifier key that alters the default behavior of some keystrokes
++ '=' > '=' dk(eq)
+'=' dk(eq)+ 'r' > 'റ'
+'=' dk(eq)+ 'z' > 'ഴ'     
+
+c nta
+'ന്' + 't' > 'ൻ്റ'       
+
+c Support for Legacy nta
+'ൻ്റ' + '`' > 'ന്റ'
+'ന്റ' + '`' > 'ന്' U+200D 'റ'
+'ന്' U+200D 'റ' + '`' > 'ൻ്റ'
+
+c Restrict the ZW characters 
+U+200C + 'x' > context beep
+U+200D + 'X' > context beep
+U+200C + 'X' > context beep
+U+200D + 'x' > context beep             
+
+c Smart quotes
++ '"' > U+201C
+U+201C + '"' > U+201D
+U+201D + '"' > '"'
+
++ "'" > U+2018
+U+2018 + "'" > U+2019
+U+2019 + "'" > "'"
+
+c Dashes
+'--' + '`' > U+2013 
+U+2013 + '`' > '--' 
+U+2013 + [K_BKSP] > '--'
+'---' + '`' > U+2014
+U+2014 + '`' > '---'
+U+2014 + [K_BKSP] > '---'    
+
+c backtick to change into English
++ '`' > '`' dk(bt)
+'`' dk(bt) + any(allKeys) > index(allKeys, 3)
+any(allKeys) + any(allKeys) > context index(allKeys, 2)
+
+c numbers
+store(numberKeys) '1234567890'
+store(malayalamNumbers) '൧൨൩൪൫൬൭൮൯൦'
+'`' dk(bt) + any(numberKeys) > index(malayalamNumbers, 3)
+any(malayalamNumbers) + any(numberKeys) > context index(malayalamNumbers, 2)
+
+
++ any(vowelKeys) > index(vowels, 1)
++ any(consKeys) > index(cons, 1)
+any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
+
+c cons + chandrakala
+any (consonants) + 'x' > context '്'      
+any(vowels) + 'x' > context '്'   
+
+c vowels + chandrakala
+any(vowels) + 'x' > context '്' 
+'അ' + 'x' > context '്'
+any(vowelMatras) + 'x' > context '്'      
+
+c Vowel sign elongation
+'ീ' + 'i' > context 'ീ' 
+'ൂ' + 'u' > context 'ൂ'
+
+

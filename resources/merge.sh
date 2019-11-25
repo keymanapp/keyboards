@@ -47,6 +47,8 @@ function merge_keyboard_info {
   local pInKmpM=
   local pInJs=
   local pInJsM=
+  local pHelpLink=
+  local pHelpLinkFlag=
   local pValidateId=
     
   if [ -f build/"$keyboard_info_packageFilename" ]; then
@@ -59,6 +61,11 @@ function merge_keyboard_info {
     pInJsM=-m
   fi
   
+  if [ -f source/help/"$base_keyboard".php ]; then
+    pHelpLink="https://help.keyman.com/keyboard/$base_keyboard"
+    pHelpLinkFlag=-add-help-link
+  fi  
+
   if [[ $group == release && $shortname != packages ]]; then
     pValidateId=-m-validate-id
   fi
@@ -68,7 +75,8 @@ function merge_keyboard_info {
     return 1
   fi
   
-  $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" -source-path "$group/$shortname/$base_keyboard" "$pOut" || die "Failed to merge keyboard_info for $1"
+  # echo $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" $pHelpLinkFlag "$pHelpLink" -source-path "$group/$shortname/$base_keyboard" "$pOut" 
+  $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" $pHelpLinkFlag "$pHelpLink" -source-path "$group/$shortname/$base_keyboard" "$pOut"   || die "Failed to merge keyboard_info for $1"
   
   return 0
 }

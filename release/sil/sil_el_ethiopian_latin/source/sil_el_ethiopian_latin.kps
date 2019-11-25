@@ -1,41 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.961.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>sil_el_ethiopian_latin.bmp</GraphicFile>
+    <GraphicFile>sil_el_sideimage.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
@@ -43,17 +19,11 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">SIL EL - Ethiopian Latin</Name>
-    <Copyright URL="">© 2017-2018 SIL Ethiopia</Copyright>
+    <Copyright URL="">© 2017-2019 SIL Ethiopia</Copyright>
     <Author URL="mailto:computer_ethiopia@sil.org">SIL Ethiopia</Author>
     <WebSite URL="http://www.silethiopia.org">www.silethiopia.org</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>sil_el_ethiopian_latin.bmp</Name>
-      <Description>File sil_el_ethiopian_latin.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
-    </File>
     <File>
       <Name>..\build\sil_el_ethiopian_latin.kmx</Name>
       <Description>Keyboard SIL EL - Ethiopian Latin</Description>
@@ -61,7 +31,13 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
+      <Name>..\build\sil_el_ethiopian_latin.js</Name>
+      <Description>Keyboard SIL EL - Ethiopian Latin</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
@@ -78,6 +54,57 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
     </File>
+    <File>
+      <Name>sil_el_sideimage.bmp</Name>
+      <Description>File sil_el_sideimage.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>SIL EL - Ethiopian Latin</Name>
+      <ID>sil_el_ethiopian_latin</ID>
+      <Version>1.4.0</Version>
+      <Languages>
+        <Language ID="amf-Latn">Hamer-Banna</Language>
+        <Language ID="anu-Latn">Anuak</Language>
+        <Language ID="bcq-Latn">Bench</Language>
+        <Language ID="bst-Latn">Basketo</Language>
+        <Language ID="bwo-Latn">Boro</Language>
+        <Language ID="gmv-Latn">Gamo</Language>
+        <Language ID="gof-Latn">Gofa</Language>
+        <Language ID="gru-Latn">Kistane</Language>
+        <Language ID="guk-Latn">Gumuz</Language>
+        <Language ID="gwd-Latn">Gawwada</Language>
+        <Language ID="hdy-Latn">Hadiyya</Language>
+        <Language ID="kbr-Latn">Kafa</Language>
+        <Language ID="kmq-Latn">Kwama</Language>
+        <Language ID="kqy-Latn">Koorete</Language>
+        <Language ID="ktb-Latn">Kambaata</Language>
+        <Language ID="kxc-Latn">Konso</Language>
+        <Language ID="lgn-Latn">T'apo</Language>
+        <Language ID="mdx-Latn">Dizin</Language>
+        <Language ID="mdy-Latn">Male</Language>
+        <Language ID="moy-Latn">Shekkacho</Language>
+        <Language ID="mpe-Latn">Majang</Language>
+        <Language ID="muz-Latn">Mursi</Language>
+        <Language ID="myf-Latn">Bambassi</Language>
+        <Language ID="mym-Latn">Me'en</Language>
+        <Language ID="nnj-Latn">Nyangatom</Language>
+        <Language ID="nus-Latn">Nuer</Language>
+        <Language ID="she-Latn">Sheko</Language>
+        <Language ID="sid-Latn">Sidamo</Language>
+        <Language ID="so">Somali</Language>
+        <Language ID="ssy-Latn">Saho</Language>
+        <Language ID="suq-Latn">Suri</Language>
+        <Language ID="tsb-Latn">Tsamai</Language>
+        <Language ID="wal-Latn">Wolaytta</Language>
+        <Language ID="wti-Latn">Berta</Language>
+        <Language ID="xom-Latn">Komo</Language>
+        <Language ID="zay-Latn">Zayse</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>

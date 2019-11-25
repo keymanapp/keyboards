@@ -125,6 +125,12 @@ function commit_and_push {
 # Main
 #
 
+# Ensure s.keyman.com is up to date
+
+pushd $S_KEYMAN_COM
+git pull origin master || return 1
+popd
+
 upload_keyboards || exit 1
 if [ $keyboards_to_push == 1 ]; then
   commit_and_push || exit 1

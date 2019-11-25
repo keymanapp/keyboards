@@ -2,7 +2,7 @@ Rachitrali-Brahui Keyboard Data
 -------------
 
 Copyright:      (C) 2018 Rehmat Aziz Chitrali
-Version:        1.0
+Version:        1.0.1
 
 Description
 -----------

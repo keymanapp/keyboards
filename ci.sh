@@ -1,7 +1,16 @@
 #!/bin/bash
 
 function display_usage {
-  echo "Usage: ci.sh [-no-exe] [release|legacy|experimental[/k/keyboard]]"
+  echo "
+Usage: ci.sh [flags] [release|legacy|experimental[/k/keyboard]]
+
+Flags:
+  -no-exe                   Prepare packages and .js files but not bundled installers
+  -upload-only              Only upload keyboards already prepared
+  -zip-only                 Only prepare and transfer the database
+  -prepare-and-upload-only  Prepare and upload keyboards but not database
+"
+
   exit 1
 }
 
@@ -56,7 +65,7 @@ function run {
     rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
     exit 0
   fi
-  
+
   if [ -d "$CI_CACHE/upload" ]; then
     rm -rf "$CI_CACHE/upload"
   fi
@@ -71,26 +80,28 @@ function run {
   check_and_download_keymandesktop_artifacts
   upload_keyboards_by_target
 
-  zip_keyboard_info
-  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+  if [[ $DO_DATA == true ]]; then
+    zip_keyboard_info
+    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+  fi
 }
 
 ##
-## Calls the Keyman Desktop downloads API to determine latest stable Keyman Desktop version 
+## Calls the Keyman Desktop downloads API to determine latest stable Keyman Desktop version
 ## on download server and populates shell variables from there
 ##
 ## GET https://downloads.keyman.com/api/version/windows/2.0
 ##
 function check_latest_stable_keymandesktop {
   local API_VERSION_JSON=`curl -s "$DOWNLOADS_KEYMAN_COM_URL/api/version/windows/2.0"`
-  if [ -z "$API_VERSION_JSON" ]; then 
+  if [ -z "$API_VERSION_JSON" ]; then
     die "Unable to download version data"
   fi
   KEYMANDESKTOP_VERSION=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.version'`
-  MSI_FILENAME=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files[].file | match("^keymandesktop.+.msi$").string'`
+  MSI_FILENAME=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files[].file | match("^keymandesktop.*.msi$").string'`
   MSI_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["'$MSI_FILENAME'"].md5'`
   SETUP_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["setup.exe"].md5'`
-  
+
   SETUP_EXE_URL=$DOWNLOADS_KEYMAN_COM_URL/windows/stable/$KEYMANDESKTOP_VERSION/setup.exe
   MSI_URL=$DOWNLOADS_KEYMAN_COM_URL/windows/stable/$KEYMANDESKTOP_VERSION/$MSI_FILENAME
 }
@@ -100,14 +111,15 @@ function check_latest_stable_keymandesktop {
 ## version from downloads.keyman.com
 ##
 ## GET https://downloads.keyman.com/windows/stable/<version>/setup.exe
-## GET https://downloads.keyman.com/windows/stable/<version>/keymandesktop<num>.msi
+## GET https://downloads.keyman.com/windows/stable/<version>/keymandesktop[num].msi
+##     (11.0 and later versions do not include version number)
 ##
 function check_and_download_keymandesktop_artifacts {
 
   if [ ! -d "$CI_CACHE/$KEYMANDESKTOP_VERSION" ]; then
     mkdir "$CI_CACHE/$KEYMANDESKTOP_VERSION"
   fi
-  
+
   check_and_download $KEYMANDESKTOP_VERSION/setup.exe $SETUP_MD5 "$SETUP_EXE_URL"
   check_and_download $KEYMANDESKTOP_VERSION/$MSI_FILENAME $MSI_MD5 "$MSI_URL"
 }
@@ -134,7 +146,7 @@ function upload_keyboards_by_target {
     upload_keyboards legacy
     upload_keyboards experimental
   fi
-  
+
   rsync_to_downloads_keyman_com "$CI_CACHE/upload/" keyboards/ true
 }
 
@@ -146,14 +158,14 @@ function check_and_download {
   local filename=$1
   local md5=$2
   local url=$3
-    
+
   if [ -f "$CI_CACHE/$filename" ]; then
     local md5=$(md5sum "$CI_CACHE/$filename" | cut -f 1 -d ' ')
     if [ "$md5" == "$2" ]; then
       return
     fi
   fi
-  
+
   echo "Downloading $url"
   curl -# -o "$CI_CACHE/$filename" "$url"
 }
@@ -182,11 +194,11 @@ function upload_keyboard {
   local shortname=$(basename $(dirname "$keyboard"))
   local buildpath=$KEYBOARDROOT/$group/$shortname/$base_keyboard/build
   local keyboard_info=$buildpath/$base_keyboard.keyboard_info
-  
+
   echo "${t_grn}Uploading $keyboard${t_end}"
-  
+
   [ -f "$keyboard_info" ] || die "Failed to locate $keyboard_info"
-  
+
   local package_filename=`cat "$keyboard_info" | $JQ -r '.packageFilename'`
   local js_filename=`cat "$keyboard_info" | $JQ -r '.jsFilename'`
   local min_required_version=`cat "$keyboard_info" | $JQ -r '.minKeymanVersion'`
@@ -212,12 +224,12 @@ function upload_keyboard {
   local keyboard_info_upload_path=$base_keyboard/$package_version/$base_keyboard.keyboard_info
   local installer_upload_path=$base_keyboard/$package_version/$installer_filename
   local js_upload_path=$base_keyboard/$package_version/$js_filename
-  
+
   local package_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$package_upload_path
   local keyboard_info_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$keyboard_info_upload_path
   local installer_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$installer_upload_path
   local js_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$js_upload_path
-  
+
   echo "${t_grn}Package name: $package_name${t_end}"
 
   prepare_for_upload "$buildpath/$base_keyboard.keyboard_info" "$keyboard_info_upload_path"
@@ -225,7 +237,7 @@ function upload_keyboard {
   if [[ ! -z $js_filename ]]; then
     prepare_for_upload "$buildpath/$js_filename" "$js_upload_path"
   fi
-  
+
   if [[ ! -z $package_filename ]]; then
     prepare_for_upload "$buildpath/$package_filename" "$package_upload_path"
   fi
@@ -239,7 +251,7 @@ function upload_keyboard {
       else
         echo "$package_name requires minimum of Keyman Desktop $min_required_version, so a bundled installer will not be created with version $KEYMANDESKTOP_VERSION."
       fi
-    fi  
+    fi
   fi
 }
 
@@ -252,11 +264,11 @@ function create_package_installer {
   local kmp_filename=$3
   local package_name=$4
   local package_version=$5
-  
+
   local kmp_basename=`basename "$kmp_filename"`
-  
+
   # Generate installer metadata
-  
+
   cat > "$buildpath/setup.inf" <<END
 [Setup]
 Version=$KEYMANDESKTOP_VERSION
@@ -277,15 +289,15 @@ END
   if [[ -f "$buildpath/setup.zip" ]]; then
     rm "$buildpath/setup.zip"
   fi
-   
+
   "$APP7Z" a "$buildpath/setup.zip" "$CI_CACHE/$KEYMANDESKTOP_VERSION/$MSI_FILENAME" "$buildpath/setup.inf" "$kmp_filename" || die "Unable to build archive at $buildpath"
   cat "$CI_CACHE/$KEYMANDESKTOP_VERSION/setup.exe" "$buildpath/setup.zip" > "$exe_filename" || die "Unable to build sfx at $buildpath"
-  
+
   rm "$buildpath/setup.zip"
   rm "$buildpath/setup.inf"
-  
+
   # Codesign the archive
-  
+
   codesign "$exe_filename" "Keyman Desktop Setup"
 }
 
@@ -294,14 +306,14 @@ END
 ##
 function upload_keyboards {
   # $1 = path to build keyboards
-  # for each keyboard, if a build.sh file exists, call it, otherwise, run the default 
+  # for each keyboard, if a build.sh file exists, call it, otherwise, run the default
   # build based on the folder name and location.
-  
+
   # excluded folders are: shared, packages and template
 
   local group=$1
   local excluded_folders=" shared packages template "
-  
+
   echo "Uploading keyboards for $1"
   local shortname
   for shortname in "$KEYBOARDROOT/$group/"*/ ; do
@@ -309,10 +321,10 @@ function upload_keyboards {
     if [[ "$base_shortname" == '*' ]]; then
       return 0
     fi
-    
+
     if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
       echo "- Skipping folder $group/$base_shortname"
-    else 
+    else
       if [[ "$base_shortname" < "$START" ]]; then
         echo "- Skipping folder $group/$base_shortname, before $START"
       else
@@ -324,12 +336,12 @@ function upload_keyboards {
       fi
     fi
   done
-  
+
   #
-  # If a packages/ folder exists, we now need to build it. We have to wait until the keyboards are built because it 
+  # If a packages/ folder exists, we now need to build it. We have to wait until the keyboards are built because it
   # depends on files created by the keyboards
   #
-  
+
   if [ -d "$KEYBOARDROOT/$group/packages" ]; then
     echo "- Building $group/packages"
     local package
@@ -337,7 +349,7 @@ function upload_keyboards {
       upload_keyboard "$group" "$package"
     done
   fi
-  
+
   return 0
 }
 
@@ -348,7 +360,7 @@ function upload_keyboards {
 function zip_keyboard_info {
   # We use an @list file to give a specific list of files to
   # 7z so that it does not include pathnames in the archive
-  # The "./" on the front of the search is also needed to force 7Z to not 
+  # The "./" on the front of the search is also needed to force 7Z to not
   # include pathnames in the archive
   local files=(./.cache/upload/*/*/*.keyboard_info)
   printf "%s\n" "${files[@]}" > .cache/keyboard_info.list
