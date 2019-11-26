@@ -93,7 +93,7 @@ function run {
 ## GET https://downloads.keyman.com/api/version/windows/2.0
 ##
 function check_latest_stable_keymandesktop {
-  local API_VERSION_JSON=`curl -s "$DOWNLOADS_KEYMAN_COM_URL/api/version/windows/2.0"`
+  local API_VERSION_JSON=`curl -f -s "$DOWNLOADS_KEYMAN_COM_URL/api/version/windows/2.0"`
   if [ -z "$API_VERSION_JSON" ]; then
     die "Unable to download version data"
   fi
@@ -101,6 +101,14 @@ function check_latest_stable_keymandesktop {
   MSI_FILENAME=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files[].file | match("^keymandesktop.*.msi$").string'`
   MSI_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["'$MSI_FILENAME'"].md5'`
   SETUP_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["setup.exe"].md5'`
+
+  if [ -z "$KEYMANDESKTOP_VERSION" ]; then
+    die "Keyman Desktop version could not be extracted from $API_VERSION_JSON"
+  fi
+
+  if [ -z "$MSI_FILENAME" ]; then
+    die "MSI filename could not be extracted from $API_VERSION_JSON"
+  fi
 
   SETUP_EXE_URL=$DOWNLOADS_KEYMAN_COM_URL/windows/stable/$KEYMANDESKTOP_VERSION/setup.exe
   MSI_URL=$DOWNLOADS_KEYMAN_COM_URL/windows/stable/$KEYMANDESKTOP_VERSION/$MSI_FILENAME
@@ -167,7 +175,7 @@ function check_and_download {
   fi
 
   echo "Downloading $url"
-  curl -# -o "$CI_CACHE/$filename" "$url"
+  curl -f -# -o "$CI_CACHE/$filename" "$url" || die "Unable to download $url"
 }
 
 ##
