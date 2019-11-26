@@ -3,7 +3,7 @@
   $pagetitle = 'ᓀᐦᐃᔭᐍᐏᐣ (Cree Syllabics) Keyboard Help';
   $pagestyle = <<<END
 
-.lang2 {font-family:"Noto Sans", "Gadugi", "Euphemia UACS", Euphemia, sans-serif}
+.lang2, [lang=cr], [lang=crk] {font-family:"Noto Sans", "Gadugi", "Euphemia UACS", Euphemia, sans-serif}
 kbd { display: inline-block; box-sizing: border-box; border-radius: 4px; min-width: 1.5em; padding: 0 .25em; background-color: #EEE; text-align: center; box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2); }
 kbd.special { padding: .1rem .25rem; font-size: small; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; }
 kbd.spacebar { min-width: 4em }
@@ -97,21 +97,22 @@ been replaced by all syllables starting with the <strong>ᐠ</strong> sound
 
 <p> This keyboard has two spacebars: the normal spacebar
 <kbd class="spacebar">&nbsp;&nbsp;&nbsp;&nbsp;</kbd> on the very bottom row of the
-keyboard, and the <em>half</em> spacebar <kbd class="nnbsp">&nbsp;&nbsp;</kbd>, on the
-second-to-bottom row. The half spacebar is not only half the size of a normal
-spacebar on the keyboard, but it also inserts a thinner space. </p>
+keyboard, and the <em>half spacebar</em> <kbd class="nnbsp">&nbsp;&nbsp;</kbd>, on the
+second-to-bottom row. The half spacebar is not only half the size of a
+normal spacebar on the keyboard, but it also inserts a thinner space. </p>
 
 <h3>When do I use the half spacebar?</h3>
 
 <p>When you want to separate components <strong>within a
-  word</strong>.</p>
+word</strong>.</p>
 
 <p>If you are familiar with Cree standard Roman orthography (SRO), you use a
-half space <kbd class="nnbsp">&nbsp;&nbsp;</kbd> whenever you'd use a dash in SRO. For
+half space <kbd class="nnbsp">&nbsp;&nbsp;</kbd> whenever you'd use a hyphen in SRO. For
 example, in <span lang="cr">ê-itwêt</span>, you would write it in
-syllabics on this keyboard by typing <kbd>ᐁ</kbd> <kbd
-  class="nnbsp">&nbsp;&nbsp;</kbd> <kbd>ᐃ</kbd> <kbd>ᐟ</kbd> <kbd>ᐤ</kbd>
-<kbd>ᑘ</kbd> <kbd>ᐟ</kbd> (<span lang="cr">ᐁ&#x202F;ᐃᑘᐟ</span>).</p>
+syllabics on this keyboard by typing <kbd>ᐁ</kbd>
+<kbd class="nnbsp">&nbsp;&nbsp;</kbd> <kbd>ᐃ</kbd> <kbd>ᐟ</kbd>
+<kbd>ᐤ</kbd> <kbd>ᑘ</kbd> <kbd>ᐟ</kbd>
+(<span lang="cr">ᐁ&#x202F;ᐃᑘᐟ</span>).</p>
 
 <p>Other examples are complex words like
 <strong><span lang="cr">ᓂᓇᓅᐦᑌ&#x202F;ᓂᐹᐣ</span></strong>. This is one
@@ -121,8 +122,8 @@ and the core part of the word,
 <strong><span lang="cr">ᓂᐹᐣ</span></strong> (eng. “sleep”).
 Use the half space <kbd class="nnbsp">&nbsp;&nbsp;</kbd> between the two
 parts of the word to insert a small gap between the two parts. The small
-gap is noticable, but not as large as a normal space, which would indicate
-a new word.</p>
+gap is subtle but noticable &mdash; not as large as a normal space, which
+would indicate a new word.</p>
 
 <p>Unlike the normal space, the half space <strong>is not a
 word-breaker</strong>. This means that, when apps see a half-space in a
