@@ -398,7 +398,8 @@
                 "sk": [
                   {
                     "text": "T̯",
-                    "id": "T_T_Breve"
+                    "id": "T_T_Breve",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -512,19 +513,23 @@
                   },
                   {
                     "text": "Ɑ̀",
-                    "id": "T_2C6D_Grave"
+                    "id": "T_2C6D_Grave",
+                    "layer": "shift"
                   },
                   {
                     "text": "Ɑ́",
-                    "id": "T_2C6D_Acute"
+                    "id": "T_2C6D_Acute",
+                    "layer": "shift"
                   },
                   {
                     "text": "Ɑ̈",
-                    "id": "T_2C6D_Diaeresis"
+                    "id": "T_2C6D_Diaeresis",
+                    "layer": "shift"
                   },
                   {
                     "text": "Ɑ̄",
-                    "id": "T_2C6D_Macron"
+                    "id": "T_2C6D_Macron",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -538,11 +543,13 @@
                 "sk": [
                   {
                     "text": "Ḍ",
-                    "id": "T_D_Dot"
+                    "id": "T_D_Dot",
+                    "layer": "shift"
                   },
                   {
                     "text": "D̯",
-                    "id": "T_D_Breve"
+                    "id": "T_D_Breve",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -606,7 +613,8 @@
                 "sk": [
                   {
                     "text": "V̱",
-                    "id": "T_V_Macron"
+                    "id": "T_V_Macron",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -616,7 +624,8 @@
                 "sk": [
                   {
                     "text": "Ḅ",
-                    "id": "T_B_Dot"
+                    "id": "T_B_Dot",
+                    "layer": "shift"
                   }
                 ]
               },
@@ -631,6 +640,7 @@
               {
                 "id": "K_PERIOD",
                 "text": ".",
+                "layer": "default",
                 "sk": [
                   {
                     "text": ",",
@@ -792,9 +802,16 @@
                 "layer": "shift"
               },
               {
-                "id": "K_HYPHEN",
-                "text": "_",
-                "layer": "shift"
+                "id": "K_BKQUOTE",
+                "text": "`",
+                "layer": "default",
+                "sk": [
+                  {
+                    "text": "~",
+                    "id": "K_BKQUOTE",
+                    "layer": "shift"
+                  }
+                ]
               },
               {
                 "id": "K_EQUAL",
@@ -887,7 +904,14 @@
               {
                 "id": "K_HYPHEN",
                 "text": "-",
-                "layer": "default"
+                "layer": "default",
+                "sk": [
+                  {
+                    "text": "_",
+                    "id": "K_HYPHEN",
+                    "layer": "shift"
+                  }
+                ]
               },
               {
                 "id": "K_8",
