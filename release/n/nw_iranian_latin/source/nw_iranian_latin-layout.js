@@ -1056,7 +1056,8 @@
           }
         ]
       }
-    ]
+    ],
+    "displayUnderlying": false
   },
   "phone": {
     "font": "Arial",

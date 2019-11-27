@@ -46,7 +46,7 @@ function die {
   if [ $rc == 0 ]; then
     rc=999
   fi
-  
+
   (>&2 echo "${t_red}$msg${t_end}")
   (>&2 echo "${t_red}Aborting with error $rc${t_end}")
   exit $rc
@@ -58,18 +58,21 @@ function parse_args {
   DO_CODESIGN=false
   DO_UPLOAD_ONLY=false
   DO_ZIP_ONLY=false
+  DO_DATA=true
   DO_EXE=true
   WARNINGS_AS_ERRORS=false
   TARGET=
+  PROJECT_TARGET_TYPE=
   PROJECT_TARGET=
   FLAG_SILENT=
   FLAG_DEBUG=
   FLAG_CLEAN=
   FLAG_TARGET=
   START=
-  
+
+  local lastkey
   local key
-  
+
   # Parse args
   for key in "$@"; do
     if [[ -z "$lastkey" ]]; then
@@ -85,6 +88,9 @@ function parse_args {
           ;;
         -zip-only)
           DO_ZIP_ONLY=true
+          ;;
+        -prepare-and-upload-only)
+          DO_DATA=false
           ;;
         -no-exe)
           DO_EXE=false
@@ -103,12 +109,15 @@ function parse_args {
           ;;
         -w)
           WARNINGS_AS_ERRORS=true
-          ;;          
-        -h|-?)
+          ;;
+        -h|-\?)
           display_usage
           ;;
+        -T)
+          lastkey="$key"
+          ;;
         -t)
-          lastkey=$key
+          lastkey="$key"
           ;;
         *)
           TARGET="$key"
@@ -121,6 +130,10 @@ function parse_args {
         -t)
           FLAG_TARGET=-t
           PROJECT_TARGET="$key"
+          ;;
+        -T)
+          FLAG_TARGET=-t
+          PROJECT_TARGET_TYPE="$key"
           ;;
       esac
       lastkey=
@@ -145,10 +158,10 @@ function verlt {
 # verlt 2.4.10 2.4.9 && echo "yes" || echo "no" # no
 # verlt 2.4.8 2.4.10 && echo "yes" || echo "no" # yes
 # verlte 2.5.6 2.5.6 && echo "yes" || echo "no" # yes
-# verlt 2.5.6 2.5.6 && echo "yes" || echo "no" # no 
+# verlt 2.5.6 2.5.6 && echo "yes" || echo "no" # no
 
 # if $(verlte 2.5.7 2.5.6) ; then echo "yes" ; else echo "no" ; fi # no
 # if $(verlt 2.4.10 2.4.9) ; then echo "yes" ; else echo "no" ; fi # no
 # if $(verlt 2.4.8 2.4.10) ; then echo "yes" ; else echo "no" ; fi # yes
 # if $(verlte 2.5.6 2.5.6) ; then echo "yes" ; else echo "no" ; fi # yes
-# if $(verlt 2.5.6 2.5.6)  ; then echo "yes" ; else echo "no" ; fi # no 
+# if $(verlt 2.5.6 2.5.6)  ; then echo "yes" ; else echo "no" ; fi # no

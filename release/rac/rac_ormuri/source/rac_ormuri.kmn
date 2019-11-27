@@ -1,0 +1,145 @@
+﻿c This keyboard is designed for the Ormuri language of South Waziristan Pakistan, Pakistan, in its standard Perso-Arabic script, as used in South Waziristan. It is based on phonetic keyboard for Ormuri Language developed by Mr.Rehmat Aziz Chitrali for Khowar Academy and Wikipedia in 1996, and later approved by Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8, Mac OSX and Linux Ubuntu as Ormuri Keyboard.
+c This is the first Ormuri language keyboard created by Rehmat Aziz Chitrali, Pakistani linguistic, Computer Scientist, Software Engineer and Researcher. This keyboard is for Ormuri Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Ormuri language.
+c The Ormuri Keyboard Project(OKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan. The project was developed in collaboration with Jeremy Kirkham at Sandy Bay, Tasmania, Australia and Tavultesoft and Keymanweb.
+c Khowar Academy Chitral was established in April 1996 specifically to promote the 27 languages of Khyber Pakhtunkhwa, Pakistan. The Academy has worked extensively on Ormuri linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Ormuri, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
+store(&VERSION) '10.0'
+store(&NAME) 'Rachitrali-Ormuri'
+store(&COPYRIGHT) '© 2019 Rehmat Aziz Chitrali'
+store(&VISUALKEYBOARD) 'rac_ormuri.kvks'
+store(&BITMAP) 'rac_ormuri.ico'
+store(&TARGETS) 'any'
+store(&KMW_RTL) '1'
+c store(&ETHNOLOGUECODE) 'oru'  
+store(&LAYOUTFILE) 'rac_ormuri.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.0'
+c store(&LANGUAGE) 'x0401'
+c store(&WINDOWSLANGUAGES) 'x0401'
+store(&MESSAGE) 'This keyboard was developed by Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa, Pakistan for keyboarding the Dameli language in the Arabic Script. You can use this keyboard with any extended Arabic script Unicode font.'
+begin Unicode > use(main)
+
+
+group(main) using keys
++ [RALT K_W] > 'ۇ'
++ [RALT K_EQUAL] > '®'
++ [RALT K_HYPHEN] > '©'
++ [RALT K_BKQUOTE] > '~'
++ [SHIFT K_L] > 'ݭ'
++ [SHIFT K_N] > 'ں'
++ [SHIFT K_BKQUOTE] > 'ڼ'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_W] > 'ٔ'
++ [SHIFT K_Q] > 'ݫ'
++ [K_BKSLASH] > 'ډ'
++ [K_SLASH] > 'ګ'
++ [K_BKQUOTE] > 'ټ'
++ [K_PERIOD] > U+06D4
++ [K_COMMA] > U+060C
++ [K_M] > U+0645
++ [K_N] > U+0646
++ [K_B] > U+0628
++ [K_V] > U+0637
++ [K_C] > U+0686
++ [K_X] > U+0634
++ [K_Z] > U+0632
++ [K_QUOTE] > 'ړ'
++ [K_COLON] > '@'
++ [K_L] > U+0644
++ [K_K] > U+06A9
++ [K_J] > U+062C
++ [K_H] > U+062D
++ [K_G] > U+06AF
++ [K_F] > U+0641
++ [K_D] > U+062F
++ [K_S] > U+0633
++ [K_A] > U+0627
++ [K_RBRKT] > 'ځ'
++ [K_LBRKT] > 'څ'
++ [K_P] > U+067E
++ [K_O] > U+06C1
++ [K_I] > U+06CC
++ [K_U] > 'ێ'
++ [K_Y] > U+06D2
++ [K_T] > U+062A
++ [K_R] > U+0631
++ [K_E] > U+0639
++ [K_W] > U+0648
++ [K_Q] > U+0642
++ [K_EQUAL] > U+003D
++ [K_HYPHEN] > U+002D
++ [K_0] > U+06F0
++ [K_9] > U+06F9
++ [K_8] > U+06F8
++ [K_7] > U+06F7
++ [K_6] > U+06F6
++ [K_5] > U+06F5
++ [K_4] > U+06F4
++ [K_3] > U+06F3
++ [K_2] > U+06F2
++ [K_1] > U+06F1
+
+c Shift keys
++ [SHIFT K_BKSLASH] > 'ݬ'
++ [SHIFT K_PERIOD] > 'ڒ'
++ [SHIFT K_SLASH] > U+061F
++ [SHIFT K_G] > U+063A
++ [SHIFT K_COMMA] > 'ږ'
++ [SHIFT K_M] > 'ّ'
++ [SHIFT K_B] > 'ً'
++ [SHIFT K_V] > U+0638
++ [SHIFT K_C] > U+062B
++ [SHIFT K_X] > U+0698
++ [SHIFT K_Z] > U+0630
++ [SHIFT K_oE2] > 'ۇ'
++ [SHIFT K_QUOTE] > 'ۍ'
++ [SHIFT K_K] > U+062E
++ [SHIFT K_J] > U+0636
++ [SHIFT K_H] > U+06BE
++ [SHIFT K_F] > 'ې'
++ [SHIFT K_D] > U+0688
++ [SHIFT K_S] > U+0635
++ [SHIFT K_A] > U+0622
++ [SHIFT K_RBRKT] > 'ي'
++ [SHIFT K_LBRKT] > 'ښ'
++ [SHIFT K_P] > 'ُ'
++ [SHIFT K_O] > 'ۃ'
++ [SHIFT K_I] > 'ِ'
++ [SHIFT K_U] > 'ٸ'
++ [SHIFT K_Y] > 'َ'
++ [SHIFT K_T] > U+0679
++ [SHIFT K_R] > U+0691
++ [SHIFT K_E] > 'ٰ'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_0] > U+0030
++ [SHIFT K_9] > U+0039
++ [SHIFT K_8] > U+0038
++ [SHIFT K_7] > U+0037
++ [SHIFT K_6] > U+0036
++ [SHIFT K_5] > U+0035
++ [SHIFT K_4] > U+0034
++ [SHIFT K_3] > U+0033
++ [SHIFT K_2] > U+0032
++ [SHIFT K_1] > U+0031
+
+c RAlt keys
++ [RALT K_PERIOD] > '>'
++ [RALT K_COMMA] > '<'
++ [RALT K_QUOTE] > '}'
++ [RALT K_COLON] > '{'
++ [RALT K_6] > '^'
++ [RALT K_BKSLASH] > '\'
++ [RALT K_LBRKT] > '['
++ [RALT K_SLASH] > '/'
++ [RALT K_4] > '$'
++ [RALT K_5] > '٪'
++ [RALT K_0] > ')'
++ [RALT K_9] > '('
++ [RALT K_8] > '*'
++ [RALT K_7] > '&'
++ [RALT K_3] > '#'
++ [RALT K_2] > '@'
++ [RALT K_1] > '!'
++ [RALT K_RBRKT] > ']'
++ [RALT K_L] > U+060F
++ [RALT K_P] > '|'
+

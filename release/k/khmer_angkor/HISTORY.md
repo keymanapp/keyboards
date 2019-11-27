@@ -1,6 +1,10 @@
 Khmer Angkor Change History
 =======================
 
+1.0.6 (13 May 2019)
+-------------------
+* update language tag
+
 1.0.5 (19 June 2018)
 -------------------
 * update the touch layout

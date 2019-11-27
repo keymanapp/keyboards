@@ -1,9 +1,9 @@
-inuktitut_pirurvik keyboard
-===========================
+Kiputtijjut | ᑭᐳᑦᑎᔾᔪᑦ keyboard
+=============================
 
-Copyright (C) 2015 Pirurvik Centre and Tavultesoft
+Copyright (C) 2015-2019 Pirurvik Centre and SIL International
 
-Version 1.1
+Version 1.3
 
 A transliteration keyboard for Inuktut languages,
 Canadian Aboriginal Syllabics script

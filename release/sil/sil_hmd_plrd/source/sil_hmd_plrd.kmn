@@ -1,0 +1,88 @@
+c 
+c Sample Keyboard: Miao
+c Miao of unknown flavor Calling it Ahmao
+c 
+c Provided by: Erich Fickle
+c              
+c
+c Fonts: 
+c
+
+VERSION 9.0
+store(&NAME) 'Ahmao (SIL)'
+store(&TARGETS) 'windows macosx linux web'
+store(&ETHNOLOGUECODE) 'hmd'
+store(&COPYRIGHT) '(c) 2014-2018 SIL International'
+store(&KEYBOARDVERSION) '1.1'
+store(&BITMAP) 'sil_hmd_plrd.ico'
+store(&VISUALKEYBOARD) 'sil_hmd_plrd.kvks'
+
+begin Unicode > use(Umain)
+
+
+group (Umain) using keys
++ [SHIFT K_R]  > dk(dead)
++ [SHIFT K_A]  > dk(dead)
++ [SHIFT K_X]  > dk(dead)
++ [SHIFT K_C]  > dk(dead)
+
++ [K_BKQUOTE] > "`"
++ 'a' > u+16F43
++ 'b' > u+16F00
++ 'c' > u+16F0E
++ 'd' > u+16F0A
++ 'e' > u+16F18   c Glyph variation here for style (longer tail)
++ 'f' > u+16F07
++ 'g' > u+16F1E
++ 'h' > u+16F26
++ 'i' > u+16F61
++ 'j' > u+16F2F
++ 'k' > u+16F20
++ 'l' > u+16F16
++ 'm' > u+16F04
++ 'n' > u+16F10
++ 'o' > u+16F59
++ 'p' > u+16F23   c Glyph variation here for style (more squared)
++ 'q' > u+16F1A
++ 'r' > u+16F35
++ 's' > u+16F3A
++ 't' > u+16F37
++ 'u' > u+16F6A
++ 'v' > u+16F08
++ 'w' > u+16F42
++ 'x' > u+16F33   c Glyph Variation here for style (more relaxed curve)
++ 'y' > u+16F3D
++ 'z' > u+16F3B   c possible Glyph variation here for style
++ 'A' > nul       c NOT USED by Ahmao
++ 'B' > u+16F57   c CHECK THIS! I strongly suspect it is wrong
++ 'C' > nul       c  NOT USED by Ahmao Not Assigned
++ 'D' > u+16F62
++ 'E' > u+16F5E
++ 'F' > u+16F74
++ 'G' > u+16F73
++ 'H' > u+16F5C
++ 'I' > u+16F7B
++ 'J' > u+16F7A
++ 'K' > u+16F54
++ 'L' > u+16F75
++ 'M' > u+16F7A
++ 'N' > u+16F5D
++ 'O' > u+16F5F
++ 'P' > u+16F77
++ 'Q' > u+16F6B
++ 'R' > nul       c NOT USED by Ahmao
++ 'S' > u+16F79
++ 'T' > u+16F57
++ 'U' > u+16F51
++ 'V' > u+16F7E
++ 'W' > u+16F28
++ 'Y' > u+16F68
++ 'Z' > u+16F60
++ '+' > ':'
++ '=' > ';'
++ '/' > '?'
++ '{' > u+16F91
++ '}' > u+16F90
++ "'" > u+16F8F
++ '_' > u+16F5D  c was at A-14 on DM keyboard, that key rarely exists.
+
