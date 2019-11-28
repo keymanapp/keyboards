@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-set -u
+# set -u TODO (lookup how to validate bash env var when -u is in use)
 
 # Parse parameters
 
@@ -105,13 +105,7 @@ echo "${kps//@KEYBOARDS/$KEYBOARD_LINES}" > source/fv_all.kps
   
 mkdir -p build || die "Failed to create build folder for fv_all"
 
-KMCOMP="../../../tools/kmcomp.exe"
-
-case "${OSTYPE}" in
-  "cygwin") KMCOMP_LAUNCHER= ;;
-  "msys") KMCOMP_LAUNCHER= ;;
-  *) KMCOMP_LAUNCHER=wine ;;
-esac
+. ../../../resources/env.sh
 
 $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "fv_all.kpj" $FLAG_TARGET "$PROJECT_TARGET"
 

@@ -24,18 +24,13 @@ SHLVL=0
 # TODO: Copy the final keyboard_info.json to resources/
 
 #
-# Define paths
+# Import environment
 #
-KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
-case "${OSTYPE}" in
-  "cygwin") KMCOMP_LAUNCHER= ;;
-  "msys") KMCOMP_LAUNCHER= ;;
-  *) KMCOMP_LAUNCHER=wine ;;
-esac
+. resources/env.sh
 
 # Master json schema is from https://api.keyman.com/schemas/keyboard_info.json
+
 KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
 KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.json"
 
