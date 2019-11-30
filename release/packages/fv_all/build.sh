@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-# set -u TODO (lookup how to validate bash env var when -u is in use)
+# set -u TODO: this is not 100% right yet
 
 # Parse parameters
 

@@ -4,6 +4,9 @@
 # then with kmcomp x64, then compares the results. Some cleanup
 # is done to avoid mismatches on time and date stamps.
 #
+# Note: exactly the same version of kmcomp and kmcmpdll must be 
+# used as the version number is compiled in.
+#
 
 set -e
 set -u
