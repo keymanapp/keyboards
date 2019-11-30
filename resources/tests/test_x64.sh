@@ -10,7 +10,9 @@ set -u
 
 # Start in keyboards root
 
-pushd ../..
+KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd ../.. && pwd )"
+
+pushd "$KEYBOARDROOT"
 
 #
 # Build list of files to compare
