@@ -44,6 +44,13 @@ for key in "$@"; do
   fi
 done
 
+if [[ ! -z $FLAG_CLEAN ]]; then
+  if [[ -d build ]]; then 
+    rm -rf build/
+  fi
+  exit 0;
+fi
+
 # For each keyboard in the fv/ folder, if a .kmx exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
 # The fonts which are shared across the packages are already listed in fv_all.kps.in.
 # If fonts need changing, manually update the file.

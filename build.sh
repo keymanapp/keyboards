@@ -97,14 +97,14 @@ else
   if [[ "$TARGET" ]]; then
     if [[ "$TARGET" == */*/* ]] && [[ (-d "$TARGET") ]]; then
       group=$(cut -d / -f 1 <<< "$TARGET")
-      echo "--- Only building $group $TARGET ---"
+      echo "--- Only $group $TARGET ---"
       build_keyboard $group "$TARGET"
     elif [[ "$TARGET" == */* ]] && [[ (-d "$TARGET") ]]; then
-      echo "--- Only building $TARGET ---"
+      echo "--- Only $TARGET ---"
       build_keyboard_group "$TARGET"
     elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "legacy" ]] || [[ "$TARGET" == "experimental" ]]; then
       # Assuming release|legacy|experimental
-      echo "--- Only building $TARGET ---"
+      echo "--- Only $TARGET ---"
       build_keyboards "$TARGET"
     else
       display_usage

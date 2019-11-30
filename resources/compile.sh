@@ -142,8 +142,10 @@ function build_keyboard {
   # Validate the .keyboard_info before build
   #
   
-  validate_keyboard_info "$keyboard_infoFilename" || die "Failed to validate $keyboard_infoFilename in $keyboard"
-  validate_keyboard_uniqueness "$group" "$keyboard" "$base_keyboard"
+  if [[ -z $FLAG_CLEAN ]]; then
+    validate_keyboard_info "$keyboard_infoFilename" || die "Failed to validate $keyboard_infoFilename in $keyboard"
+    validate_keyboard_uniqueness "$group" "$keyboard" "$base_keyboard"
+  fi
   
   if [ "$DO_BUILD" = false ]; then
     popd
@@ -170,10 +172,12 @@ function build_keyboard {
   local keyboard_info_jsFilename=
   local keyboard_info_documentationFilename=
   
-  lines=$($KMCOMP_LAUNCHER "$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
-  lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
+  if [[ -z $FLAG_CLEAN ]]; then
+    lines=$($KMCOMP_LAUNCHER "$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
+   lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
   
-  eval $lines
+    eval $lines
+  fi
 
   #
   # Determine how we will build the keyboard. If a build.sh file exists, then that does

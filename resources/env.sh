@@ -1,14 +1,14 @@
 #!/bin/bash
 
-set -e
-# TODO: set -u
-
 #
 # Setup environment for all build scripts
 #
 
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 
+#
+# Check execution environment for x86 vs x64
+#
 case "${OSTYPE}" in
   "cygwin") 
     KMCOMP_LAUNCHER=
@@ -24,8 +24,11 @@ case "${OSTYPE}" in
     ;;
 esac
 
+#
 # Allow override of compiler selection via environment KMCOMP_BITNESS
-if [[ -z $KMCOMP_BITNESS ]]; then
+#
+
+if [ -v ${KMCOMP_BITNESS+defined} ]; then
   KMCOMP_BITNESS=$KMCOMP_DEFAULT_BITNESS
 fi
 
@@ -35,6 +38,7 @@ else
   KMCOMP="$KEYBOARDROOT/tools/kmcomp.x64.exe"
 fi
 
+echo "Using $KMCOMP_BITNESS bit version of kmcomp"
 #echo "KMCOMP=$KMCOMP"
 #echo "KEYBOARDROOT=$KEYBOARDROOT"
 #echo "KMCOMP_BITNESS=$KMCOMP_BITNESS"
