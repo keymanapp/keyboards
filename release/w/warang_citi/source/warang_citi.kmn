@@ -1,0 +1,68 @@
+﻿c Happy Typing!
+store(&VERSION) '10.0'
+store(&NAME) 'Warang Citi'
+store(&COPYRIGHT) '© 2019'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows iphone androidphone'
+store(&VISUALKEYBOARD) 'warang_citi.kvks'
+store(&MESSAGE) 'Happy Typing'
+store(&KMW_HELPTEXT) 'Denga'
+store(&BITMAP) 'warang_citi.ico'
+store(&KMW_EMBEDCSS) 'warang_citi.css'
+store(&KMW_HELPFILE) 'warang_citi-help.htm'
+store(&LAYOUTFILE) 'warang_citi.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+"c" + any(H)  > "𑣏"
+"𑣓" + any(N) > "𑣐"
+"𑣓" + any(G) > "𑣊"
+"𑣓" + any(J) > "𑣍"
+"𑣜" + any(R) > "𑣛"
+"𑣒" + any(H) > "𑣕"
+"𑣑" + any(H) > "𑣔"
++ "f" > U+200D
+
+"C" + any(H)  > "𑢯"
+"𑢳" + any(N) > "𑢰"
+"𑢳" + any(G) > "𑢪"
+"𑢳" + any(J) > "𑢭"
+"𑢼" + any(R) > "𑢻"
+"𑢲" + any(H) > "𑢵"
+"𑢱" + any(H) > "𑢴"
++ "F" > U+200D
+
+store(Latin) "q" "w" "e" "r" "t" "y" "i" "u" "o" "p" "a" "s" "d" "g" "h" "j" "k" "l" "z" "x" "c" "v" "b" "n" "m" "@" "Q" "W" "E" "R" "T" "Y" "U" "I" "O" "P" "A" "S" "D" "G" "H" "J" "K" "L" "Z" "X" "C" "V" "B" "N" "M"
+store(Warang) "𑣄" "𑣟" "𑣈" "𑣜" "𑣒" "𑣅" "𑣆" "𑣇" "𑣉" "𑣘" "𑣁" "𑣞" "𑣑" "𑣋" "𑣙" "𑣎" "𑣌" "𑣚" "z" "𑣝" "c" "𑣀" "𑣗" "𑣓" "𑣖" "𑣿" "𑢤" "𑢿" "𑢨" "𑢼" "𑢲" "𑢥" "𑢧" "𑢦" "𑢩" "𑢸" "𑢡" "𑢾" "𑢱" "𑢫" "𑢹" "𑢮" "𑢬" "𑢺" "Z" "𑢽" "C" "𑢠" "𑢷" "𑢳" "𑢶"
++ any(Latin) > index(Warang,1)
+
+store(H) "H" "h"
+store(N) "N" "n"
+store(J) "J" "j"
+store(G) "G" "g"
+store(A) "A" "a"
+store(R) "R" "r"
+store(I) "I" "i"
+store(U) "U" "u"
+
+store(Chitiko) "𑣀" "𑣂" "𑣃" "𑣅" "𑣆" "𑣇" "𑣈" "𑣉" "𑣊" "𑣋" "𑣌" "𑣍" "𑣎" "𑣏" "𑣐" "𑣑" "𑣒" "𑣓" "𑣔" "𑣕" "𑣖" "𑣗" "𑣘" "𑣙" "𑣚" "𑣛" "𑣜" "𑣝" "𑣞" "𑣟" "𑣿" "𑢵" "𑢴" "𑢤" "𑢿" "𑢨" "𑢼" "𑢲" "𑢥" "𑢣" "𑢢" "𑢩" "𑢸" "𑢾" "𑢱" "𑢴" "𑢫" "𑢹" "𑢮" "𑢬" "𑢺" "𑢽" "𑢯" "𑢠" "𑢷" "𑢰" "𑢪" "𑢭" "𑢳" "𑢶"
+store(MarangChitiko)  "𑢵" "𑢴" "𑢤" "𑢿" "𑢨" "𑢼" "𑢲" "𑢥" "𑢣" "𑢢" "𑢩" "𑢸" "𑢾" "𑢱" "𑢴" "𑢫" "𑢹" "𑢮" "𑢬" "𑢺" "𑢽" "𑢯" "𑢠" "𑢷" "𑢰" "𑢪" "𑢭" "𑢳" "𑢶"
+store(HudingChitiko) "𑣀" "𑣂" "𑣃" "𑣅" "𑣆" "𑣇" "𑣈" "𑣉" "𑣊" "𑣋" "𑣌" "𑣍" "𑣎" "𑣏" "𑣐" "𑣑" "𑣒" "𑣓" "𑣔" "𑣕" "𑣖" "𑣗" "𑣘" "𑣙" "𑣚" "𑣛" "𑣜" "𑣝" "𑣞" "𑣟"
+
+any(Chitiko) + "i" > context "𑣂"
+any(Chitiko) + "u" > context "𑣃"
+any(Chitiko) + "I" > context "𑢢"
+any(Chitiko) + "U" > context "𑢣"
+any(Chitiko) "𑣁" + "i" > context(1) "𑣆"
+any(Chitiko) "𑣁" + "u" > context(1) "𑣇"
+any(MarangChitiko) "𑢡" + any(I) > context(1) "𑢦"
+any(MarangChitiko) "𑢡" + any(U) > context(1) "𑢧"
+
+store(Numbers) "0" "1" "2" "3" "4" "5" "6" "7" "8" "9"
+store(Leneka) "𑣠" "𑣡" "𑣢" "𑣣" "𑣤" "𑣥" "𑣦" "𑣧" "𑣨" "𑣩"
++ any(Numbers) > index(Leneka,1)
+any(Leneka) + [K_BKSP] > index(Numbers,1)
+
+"𑣿" + [K_BKSP] > "@"
