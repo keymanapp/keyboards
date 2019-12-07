@@ -13,7 +13,7 @@
 <p>˘a will produce ă (available on aA).</p>
 <p>°u will produce ů (available on uU).</p>
 <p>˛a will produce ą (available on aAeE).</p>
-<p>`a will produce ą (available on aAeEiIoOuU).</p>
+<p>`a will produce à (available on aAeEiIoOuU).</p>
 <p>·z will produce ż (available on zZ).</p>
 <p>´a will produce á (available on aAcCeEiIlLnNoOrRsSuUyYzZ).</p>
 <p>˝o will produce ő (available on oOuU).</p>
