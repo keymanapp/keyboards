@@ -6,18 +6,19 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>..\README.md</ReadMeFile>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Warang Citi</Name>
-    <Copyright URL="">© 2019</Copyright>
+    <Copyright URL="">© 2019 Mangu Purty</Copyright>
     <Author URL="mailto:mpurty1@gmail.com">Mangu Purty</Author>
   </Info>
   <Files>
@@ -88,6 +89,18 @@
       <FileType>.ico</FileType>
     </File>
     <File>
+      <Name>warang_citi.keyman-touch-layout</Name>
+      <Description>File warang_citi.keyman-touch-layout</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.keyman-touch-layout</FileType>
+    </File>
+    <File>
+      <Name>warang_citi-code.js</Name>
+      <Description>File warang_citi-code.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
       <Name>warang_citi-help.htm</Name>
       <Description>File warang_citi-help.htm</Description>
       <CopyLocation>0</CopyLocation>
@@ -100,22 +113,16 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\HISTORY.md</Name>
-      <Description>File HISTORY.md</Description>
+      <Name>help\warang_citi-help.php</Name>
+      <Description>File warang_citi-help.php</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.php</FileType>
     </File>
     <File>
-      <Name>..\LICENSE.md</Name>
-      <Description>File LICENSE.md</Description>
+      <Name>..\assets\BoyoGagrai.ttf</Name>
+      <Description>Font BoyoGagraiUnicode</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <Name>..\README.md</Name>
-      <Description>File README.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -123,6 +130,8 @@
       <Name>Warang Citi</Name>
       <ID>warang_citi</ID>
       <Version>1.0</Version>
+      <OSKFont>..\assets\BoyoGagrai.ttf</OSKFont>
+      <DisplayFont>..\assets\BoyoGagrai.ttf</DisplayFont>
       <Languages>
         <Language ID="hoc-Wara">Ho (Warang Citi)</Language>
       </Languages>
