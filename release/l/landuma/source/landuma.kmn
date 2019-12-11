@@ -1,0 +1,102 @@
+﻿c landuma.KMN
+c Keyboard for Kirk Rogers
+c Charis SIL Font
+c Originally Created 2019.04.15
+c Lee Partridge
+c Ethnos360
+
+store(&VERSION) '10.0'
+store(&NAME) 'landuma'
+store(&BITMAP) 'l.bmp'
+store(&COPYRIGHT) '© 2019 Ethnos360'
+store(&KEYBOARDVERSION) '2019.04.17.1'
+store(&message) "This keyboard is freely redistributable."
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'landuma.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'landuma.kvks'
+store(&hotkey) "[CTRL SHIFT K_L]" c Shift+Ctrl+L
+c store(&ETHNOLOGUECODE) 'ldm'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Assign Deadkeys
+ + ";" > dk(semicolon)
+
+c Rules for the accent character itself (type it twice)
+dk(Semicolon)+ ";" > ";"
+
+c Direct Replacement
++ "q" > U+0259 c ə
++ "z" > U+028c c ʌ
++ "x" > U+0254 c ɔ
++ "v" > U+025b c ɛ
++ "a" > U+0251 c ɑ
++ "g" > U+0261 U+0062 c ɡb
++ "?" > U+0020 U+003f c space ?
++ "!" > U+0020 U+0021 c space !
++ ":" > U+0020 U+003a U+0020 c space : space
+
+c Added for touch screen ? ! and :
++ [T_20_3f_20] > U+0020 U+003f U+0020 c space ? space
++ [T_20_21_20] > U+0020 U+0021 U+0020 c space ! space
++ [T_20_3a_20] > U+0020 U+003a U+0020 c space : space
+
+c Caps
++ "Q" > U+018f c Ə
++ "Z" > U+0245 c Ʌ
++ "X" > U+0186 c Ɔ
++ "V" > U+0190 c Ɛ
++ "G" > U+0047 U+0062 c Gb
++ "<" > U+0020 U+00ab U+0020 c space « space
++ ">" > U+0020 U+00bb U+0020 c space » space
+
+c Added for touch screen « and » :
++ [T_20_ab_20] > U+0020 U+00ab U+0020 c space « space
++ [T_20_bb_20] > U+0020 U+00bb U+0020 c space » space
+
+c Direct Replacement Originals
+dk(semicolon) + "q" > U+0071 c "q"
+dk(semicolon) + "z" > U+007a c "z"
+dk(semicolon) + "x" > U+0078 c "x"
+dk(semicolon) + "v" > U+0076 c "v"
+dk(semicolon) + "a" > U+0061 c "a"
+dk(semicolon) + "g" > U+0067 c "g"
+c caps
+dk(semicolon) + "Q" > U+0051 c "Q"
+dk(semicolon) + "Z" > U+005a c "Z"
+dk(semicolon) + "X" > U+0058 c "X"
+dk(semicolon) + "V" > U+0056 c "V"
+dk(semicolon) + "A" > U+0041 c "A"
+dk(semicolon) + "G" > U+0047 c "G"
+dk(semicolon) + "<" > U+003C c "<"
+dk(semicolon) + ">" > U+003E c ">"
+
+c Added for touch screen gb and Gb on g
++ [T_261_62] > U+0261 U+0062 c ɡb
++ [T_47_62] > U+0047 U+0062 c Gb
++ [T_47_42] > U+0047 U+0042 c GB
+
+c Vowels with accents with deɑdkey:
+dk(semicolon) + "w" > U+00ea c ê
+dk(semicolon) + "e" > U+00e9 c é
+dk(semicolon) + "r" > U+00e8 c è
+dk(semicolon) + "i" > U+00ee c î
+dk(semicolon) + "o" > U+00f4 c ô
+dk(semicolon) + "s" > U+00e0 c à
+dk(semicolon) + "d" > U+00eb c ë
+dk(semicolon) + "c" > U+00e7 c ç
+dk(semicolon) + "n" > U+014b c ŋ
+dk(semicolon) + "m" > U+0272 c ɲ
+c Caps
+dk(semicolon) + "W" > U+00ca c Ê
+dk(semicolon) + "E" > U+00c9 c É
+dk(semicolon) + "R" > U+00c8 c È
+dk(semicolon) + "I" > U+00ce c Î
+dk(semicolon) + "O" > U+00d4 c Ô
+dk(semicolon) + "S" > U+00c0 c À
+dk(semicolon) + "D" > U+00cb c Ë
+dk(semicolon) + "C" > U+00c7 c Ç
+dk(semicolon) + "N" > U+014a c Ŋ
+dk(semicolon) + "M" > U+019d c Ɲ
