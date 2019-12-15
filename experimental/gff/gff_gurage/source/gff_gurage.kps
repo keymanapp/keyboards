@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1352.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>12.0.63.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>..\..\..\..\release\gff\gff_amharic\source\readme.htm</ReadMeFile>
     <GraphicFile>sideimage-gurage.bmp</GraphicFile>
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keyman-build\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
@@ -40,6 +39,13 @@
       <Item>
         <Name>OFL (Zebidar Font License)</Name>
         <FileName>OFL.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Gurage Keyboard Manual (Gurage)</Name>
+        <FileName>GurageTyping-Gurage.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -91,23 +97,23 @@
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\release\gff\gff_amharic\source\readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>sideimage-gurage.bmp</Name>
       <Description>File sideimage-gurage.bmp</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>GurageTyping-Gurage.pdf</Name>
+      <Description>File GurageTyping-Gurage.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ጉራጌ (Gurage)</Name>
       <ID>gff_gurage</ID>
-      <Version>0.5</Version>
+      <Version>0.6</Version>
       <OSKFont>Zebidar-R.ttf</OSKFont>
       <DisplayFont>Zebidar-R.ttf</DisplayFont>
       <Languages>
