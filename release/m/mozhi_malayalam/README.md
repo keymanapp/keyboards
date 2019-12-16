@@ -1,10 +1,10 @@
 Mozhi Malayalam Keyboard
 =====================
-Copyright (c) 2017-2019 Junaid P. V.
+Copyright © 2017-2020 Junaid P. V.
 
-Version 2.0
+Version 2.1
 
-Copyright (C) 2006-2018 Raj Nair for an older version
+Copyright © 2006-2018 Raj Nair for an older version
 
 Version 1.2
 
