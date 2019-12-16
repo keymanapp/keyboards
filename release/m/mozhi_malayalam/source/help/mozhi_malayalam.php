@@ -12,948 +12,2630 @@
 END;
   require_once('header.php');
 ?>
+    <title>Mozhi Malayalam Keyman Keyboard</title>
+    <style>
+        html,
+        body {
+            font-family: sans-serif;
+            font-size: 100%;
+        }
+
+        samp {
+            font-family: sans-serif;
+            font-size: 20pt;
+
+        }
+
+        kbd {
+            color: black;
+            font: 0.8em sans-serif;
+            border: solid 1px grey;
+            background: #ccc;
+            margin: 2px 1px;
+            padding: 2px 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
 
 
-<p style='margin:0px'>Keyboard &#169; 2006-2018 Raj Nair</p>
+        /* Table */
+        .inputSequences {
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 592px;
+        }
 
-<div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
-the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
+        .inputSequences th,
+        .inputSequences td {
+            padding: 7px 17px;
+        }
 
-<h2>Overview</h2>
-<p>
-This keyboard uses the Mozhi layout to let you type in Malayalam.  It is a phonetic keyboard, based on the normal English (QWERTY) keyboard letters.  This makes the keyboard easy to use for anybody familiar with Malayalam, or with a normal keyboard.
-</p>
-<p>
-    This keyboard has now been updated to support Unicode 5.1 encoding of Atomic Chilus.
-</p>
-</div>
+        /* .inputSequences caption {
+            margin: 7px;
+        } */
 
+        /* Table Header */
+        .inputSequences thead th {
+            border-bottom: 2px solid #6ea1cc;
+            text-transform: uppercase;
+        }
 
-<div id='Using'>
-<h2>Using this Keyboard</h2>
-</div>
+        /* Table Body */
+        .inputSequences tbody td {
+            border-bottom: 1px solid #e1edff;
+            color: #353535;
+            text-align: center;
+        }
 
-<h3>Keyboard Layout</h3>
-		<!-- On Screen Keyboard is automatically included here -->
+        .inputSequences tbody tr:nth-child(odd) td {
+            background-color: #f4fbff;
+        }
 
-<h4>Default state</h4>
-<p><img src="mozhi_malayalamU_.png" alt="Mozhi Malayalam Keyboard: default state"></p>
-<h4>Shift state</h4>
-<p><img src="mozhi_malayalamU_S.png" alt="Mozhi Malayalam Keyboard: default state"></p>
+        /* 
+        .inputSequences tbody td:nth-child(4),
+        .inputSequences tbody td:first-child,
+        .inputSequences tbody td:last-child {
+            text-align: right;
+        }
+        */
+        .inputSequences tbody tr:hover td {
+            background-color: #ffffa2;
+            border-color: #ffff0f;
+        }
 
-<div id='Quickstart'>
-<h3>Quickstart</h3>
-		<!-- Basic instructions designed to get users up and running with typing -->
-<p>The Mozhi keyboard layout was designed to make it easy to type in Malayalam.  The characters are arranged according to the closest English consonants and vowels.  Most Malayalam characters have both consonant and vowel parts, and each part should be typed separately.  The consonant part is always typed before the vowel, no matter where the vowel part is written.
-</p>
+        /* Table Footer */
+        /* 
+            .inputSequences tfoot th {
+            border-top: 2px solid #6ea1cc;
+            text-align: right;
+        } 
+        */
+    </style>
+</head>
 
-<p>
-For example, typing <kbd>i</kbd> will produce the vowel <span class='highlightExample lang2' style='font-size:200%'>ഇ</span>.  If the <kbd>i</kbd> key is typed after a consonant, though, the vowel will be combined with the consonant.  For example, typing <kbd>ki</kbd> produces <span class='highlightExample lang2' style='font-size:200%'>കി</span>.  If you press Backspace once, only the vowel part will be erased, and you can type a different vowel.
-</p>
+<body>
+    <h1>Mozhi Malayalam Keyman Keyboard</h1>
 
+    <p>Mozhi Malayalam Keyboard. Transliteration scheme was originally developed for Varamozhi Application. It uses a
+        unique English character sequence for each Malayalam letter.</p>
 
-</div>
-
-<div id="Examples">
-<h3>Examples</h3>
-		<!-- Simple example(s) illustrating the notes in the Quickstart section above -->
-
-	<table style='border-style:solid; border-width:1px; border-color:#8080FF; background-color:#E0E0FF; padding:4px'>
-		<col class="col1" />
-		<col class="col2" />
-		<col class="col3" />
-		<col class="col4" />
-
-		<tr style='color:#0000AF; font-weight:bold'>
-			<td>Language</td>
-			<td>Phrase</td>
-			<td>Meaning</td>
-			<td>Type the following keys</td>
-		</tr>
-		<tr style='color:#0000AF; font-weight:normal'>
-			<td>Malayalam</td>
-			<td><span class='lang2' style='color:#0000FF; font-size:120%'>മലയാളം</span></td>
-			<td>"Malayam language"</td>
-			<td><kbd>m</kbd><kbd>a</kbd><kbd>l</kbd><kbd>a</kbd><kbd>y</kbd><kbd>a</kbd><kbd>a</kbd><kbd>L</kbd><kbd>a</kbd><kbd>m</kbd></td>
-		</tr>
-	</table>
-</div>
-
-<div id="Documentation">
-<h3>Keyboard Details</h3>
-		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-
-<p>The On Screen Keyboard shows the 35 normal consonants <span class='lang2' style='font-size:200%'>ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ ണ ത ഥ ദ ധ ന പ ഫ ബ ഭ മ യ ര ല വ ശ ഷ സ ഹ ള ഴ റ</span>, the vowels <span class='lang2' style='font-size:200%'>അ ആ ഇ ഈ ഉ ഊ ഋ എ ഏ ഐ ഒ ഓ ഔ</span>, and the <span class='lang2' style='font-size:200%'>്</span> mark.  There are also numbers and punctuation marks.</p>
-
-<p>Malayalam vowels and consonants are usually combined, so when you type a consonant and a vowel part, they will be joined into one character.  If you use the arrow keys to move through the text, you only need to press an arrow key once to move past each character.  If you press Delete before (on the left of) a combined consonant and vowel, it will be erased completely, but if you press Backspace after a character, only the vowel part will be erased (even if the vowel part appears before the consonant).
-</p>
-
-<h4>Vowels and Consonants</h4>
-<p>When you type consonants and vowel parts, you should always type the consonant part first, even when the vowel part appears on the left of the consonant.  If you type any of the independent vowels, they will not be combined with consonants.  If you want to type just the vowel part, without a consonant, type <kbd>@</kbd>, then the vowel.  For example, typing <kbd>e</kbd> produces <span class='lang2' style='font-size:200%'>എ</span>, while typing <kbd>@e</kbd> produces <span class='lang2' style='font-size:200%'>െ</span>.
-</p>
-<p>In Malayalam writing, all the consonants naturally include the vowel sound <span class='highlightExample lang2' style='font-size:200%'>അ</span>.  If you want to write a consonant with no vowel, you need to add the <span class='lang2' style='font-size:200%'>്</span> mark.  With the Mozhi keyboard, this mark is added automatically every time you type a consonant.  You can also add the mark by typing <kbd>~</kbd> right after typing a consonant.  After you have typed the <span class='lang2' style='font-size:200%'>്</span> mark, you cannot type a vowel to combine with that consonant.
-</p>
-<p>Malayalam includes many combined consonants, and these are not on the keyboard.  To type a combined consonant, type the first consonant, then the second consonant, and then a vowel.  The computer will then combine the two consonants into a single combined character.  For example, typing <span class='keys'>kka</span> produces the combined consonant <span class='highlightExample lang2' style='font-size:200%'>ക്ക</span>.
-</p>
-
-<h4>Keystroke Examples</h4>
-<p>In the following table you can see examples of how to type the different vowels with the consonant <span class='highlightExample lang2' style='font-size:200%'>ക</span>.</p>
-<br/>
-<table>
-	<col style="width:80px" span=3 />
-	<col class="col2" />
-	<tr style='text-align:center; font-weight:normal'>
-		<td>Consonant</td><td>Vowel</td><td>Combined</td><td>Keystrokes</td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'>ക</td><td class='lang2' style='font-size:200%'>്</td><td class='lang2' style='font-size:200%'>ക്</td><td><span class='keys'>k</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>അ</td><td class='lang2' style='font-size:200%'>ക</td><td><span class='keys'>ka</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ആ</td><td class='lang2' style='font-size:200%'>കാ</td><td><span class='keys'>kA</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഇ</td><td class='lang2' style='font-size:200%'>കി</td><td><span class='keys'>ki</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഈ</td><td class='lang2' style='font-size:200%'>കീ</td><td><span class='keys'>kI</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഉ</td><td class='lang2' style='font-size:200%'>കു</td><td><span class='keys'>ku</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഊ</td><td class='lang2' style='font-size:200%'>കൂ</td><td><span class='keys'>kU</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഋ</td><td class='lang2' style='font-size:200%'>കൃ</td><td><span class='keys'>kr^</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>എ</td><td class='lang2' style='font-size:200%'>കെ</td><td><span class='keys'>ke</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഏ</td><td class='lang2' style='font-size:200%'>കേ</td><td><span class='keys'>kE</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഐ</td><td class='lang2' style='font-size:200%'>കൈ</td><td><span class='keys'>kai</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഒ</td><td class='lang2' style='font-size:200%'>കൊ</td><td><span class='keys'>ko</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഓ</td><td class='lang2' style='font-size:200%'>കോ</td><td><span class='keys'>kO</span></td>
-	</tr>
-	<tr style='text-align:center'>
-		<td class='lang2' style='font-size:200%'></td><td class='lang2' style='font-size:200%'>ഔ</td><td class='lang2' style='font-size:200%'>കൌ</td><td><span class='keys'>kau</span></td>
-	</tr>
-
-</table>
-
-</div>
+    <h2>Keyboard layout</h2>
 
 
-<div id="KeyboardChart">
-<h2>Keyboard Reference Chart</h2>
-<p>The following chart lists all the characters available with this keyboard.  Below each character are the keys used to type it.
-<br/>Because Malayalam includes hundreds of combined consonants, these are not shown on this chart.  You can type some combined consonants by typing the two consonants with no vowel.  Other combined consonants are on the keyboard (see the bottom of this chart).</p>
-
-<table border=0 cellspacing=2 cellpadding=1>
-	<col width=65 style='text-align:center; background-color:#dedede' />
-	<col span=16 width=65 style='text-align:center; background-color:#ffffff' />
-
-	<tr style='text-align:center; font-weight:normal; background-color:#dedede'>
-		<td style='text-align:right; font-weight:bold; background-color:#dedede' valign=bottom>\<span style='text-decoration:underline'>&nbsp;Vowels</span>&nbsp;<br/>C'nants\</td>
-		<td><span class='lang2' >്</span><br/><span class='keys'>~</span></td>
-		<td><span class='lang2' >അ</span><br/><span class='keys'>a</span></td>
-		<td><span class='lang2' >ആ</span><br/><span class='keys'>A</span></td>
-		<td><span class='lang2' >ഇ</span><br/><span class='keys'>i</span></td>
-		<td><span class='lang2' >ഈ</span><br/><span class='keys'>I</span></td>
-		<td><span class='lang2' >ഉ</span><br/><span class='keys'>u</span></td>
-		<td><span class='lang2' >ഊ</span><br/><span class='keys'>U</span></td>
-		<td><span class='lang2' >ഋ</span><br/><span class='keys'>r^</span></td>
-		<td><span class='lang2' >എ</span><br/><span class='keys'>e</span></td>
-		<td><span class='lang2' >ഏ</span><br/><span class='keys'>E</span></td>
-		<td><span class='lang2' >ഐ</span><br/><span class='keys'>ai</span></td>
-		<td><span class='lang2' >ഒ</span><br/><span class='keys'>o</span></td>
-		<td><span class='lang2' >ഓ</span><br/><span class='keys'>O</span></td>
-		<td><span class='lang2' >ഔ</span><br/><span class='keys'>au</span></td>
-		<td><span class='lang2' >ം</span><br/><span class='keys'>am</span></td>
-		<td><span class='lang2' >ഃ</span><br/><span class='keys'>H</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ക</span><br/><span class='keys'>k</span></td>
-		<td><span class='lang2' >ക്</span><br/><span class='keys'>k~</span></td>
-		<td><span class='lang2' >ക</span><br/><span class='keys'>k</span></td>
-		<td><span class='lang2' >കാ</span><br/><span class='keys'>kA</span></td>
-		<td><span class='lang2' >കി</span><br/><span class='keys'>ki</span></td>
-		<td><span class='lang2' >കീ</span><br/><span class='keys'>kI</span></td>
-		<td><span class='lang2' >കു</span><br/><span class='keys'>ku</span></td>
-		<td><span class='lang2' >കൂ</span><br/><span class='keys'>kU</span></td>
-		<td><span class='lang2' >കൃ</span><br/><span class='keys'>kr^</span></td>
-		<td><span class='lang2' >കെ</span><br/><span class='keys'>ke</span></td>
-		<td><span class='lang2' >കേ</span><br/><span class='keys'>kE</span></td>
-		<td><span class='lang2' >കൈ</span><br/><span class='keys'>kai</span></td>
-		<td><span class='lang2' >കൊ</span><br/><span class='keys'>ko</span></td>
-		<td><span class='lang2' >കോ</span><br/><span class='keys'>kO</span></td>
-		<td><span class='lang2' >കൌ</span><br/><span class='keys'>kau</span></td>
-		<td><span class='lang2' >കം</span><br/><span class='keys'>kam</span></td>
-		<td><span class='lang2' >കഃ</span><br/><span class='keys'>kaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഖ</span><br/><span class='keys'>kh</span></td>
-		<td><span class='lang2' >ഖ്</span><br/><span class='keys'>kh~</span></td>
-		<td><span class='lang2' >ഖ</span><br/><span class='keys'>kh</span></td>
-		<td><span class='lang2' >ഖാ</span><br/><span class='keys'>khA</span></td>
-		<td><span class='lang2' >ഖി</span><br/><span class='keys'>khi</span></td>
-		<td><span class='lang2' >ഖീ</span><br/><span class='keys'>khI</span></td>
-		<td><span class='lang2' >ഖു</span><br/><span class='keys'>khu</span></td>
-		<td><span class='lang2' >ഖൂ</span><br/><span class='keys'>khU</span></td>
-		<td><span class='lang2' >ഖൃ</span><br/><span class='keys'>khr^</span></td>
-		<td><span class='lang2' >ഖെ</span><br/><span class='keys'>khe</span></td>
-		<td><span class='lang2' >ഖേ</span><br/><span class='keys'>khE</span></td>
-		<td><span class='lang2' >ഖൈ</span><br/><span class='keys'>khai</span></td>
-		<td><span class='lang2' >ഖൊ</span><br/><span class='keys'>kho</span></td>
-		<td><span class='lang2' >ഖോ</span><br/><span class='keys'>khO</span></td>
-		<td><span class='lang2' >ഖൌ</span><br/><span class='keys'>khau</span></td>
-		<td><span class='lang2' >ഖം</span><br/><span class='keys'>kham</span></td>
-		<td><span class='lang2' >ഖഃ</span><br/><span class='keys'>khaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഗ</span><br/><span class='keys'>g</span></td>
-		<td><span class='lang2' >ഗ്</span><br/><span class='keys'>g~</span></td>
-		<td><span class='lang2' >ഗ</span><br/><span class='keys'>g</span></td>
-		<td><span class='lang2' >ഗാ</span><br/><span class='keys'>gA</span></td>
-		<td><span class='lang2' >ഗി</span><br/><span class='keys'>gi</span></td>
-		<td><span class='lang2' >ഗീ</span><br/><span class='keys'>gI</span></td>
-		<td><span class='lang2' >ഗു</span><br/><span class='keys'>gu</span></td>
-		<td><span class='lang2' >ഗൂ</span><br/><span class='keys'>gU</span></td>
-		<td><span class='lang2' >ഗൃ</span><br/><span class='keys'>gr^</span></td>
-		<td><span class='lang2' >ഗെ</span><br/><span class='keys'>ge</span></td>
-		<td><span class='lang2' >ഗേ</span><br/><span class='keys'>gE</span></td>
-		<td><span class='lang2' >ഗൈ</span><br/><span class='keys'>gai</span></td>
-		<td><span class='lang2' >ഗൊ</span><br/><span class='keys'>go</span></td>
-		<td><span class='lang2' >ഗോ</span><br/><span class='keys'>gO</span></td>
-		<td><span class='lang2' >ഗൌ</span><br/><span class='keys'>gau</span></td>
-		<td><span class='lang2' >ഗം</span><br/><span class='keys'>gam</span></td>
-		<td><span class='lang2' >ഗഃ</span><br/><span class='keys'>gaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഘ</span><br/><span class='keys'>gh</span></td>
-		<td><span class='lang2' >ഘ്</span><br/><span class='keys'>gh~</span></td>
-		<td><span class='lang2' >ഘ</span><br/><span class='keys'>gh</span></td>
-		<td><span class='lang2' >ഘാ</span><br/><span class='keys'>ghA</span></td>
-		<td><span class='lang2' >ഘി</span><br/><span class='keys'>ghi</span></td>
-		<td><span class='lang2' >ഘീ</span><br/><span class='keys'>ghI</span></td>
-		<td><span class='lang2' >ഘു</span><br/><span class='keys'>ghu</span></td>
-		<td><span class='lang2' >ഘൂ</span><br/><span class='keys'>ghU</span></td>
-		<td><span class='lang2' >ഘൃ</span><br/><span class='keys'>ghr^</span></td>
-		<td><span class='lang2' >ഘെ</span><br/><span class='keys'>ghe</span></td>
-		<td><span class='lang2' >ഘേ</span><br/><span class='keys'>ghE</span></td>
-		<td><span class='lang2' >ഘൈ</span><br/><span class='keys'>ghai</span></td>
-		<td><span class='lang2' >ഘൊ</span><br/><span class='keys'>gho</span></td>
-		<td><span class='lang2' >ഘോ</span><br/><span class='keys'>ghO</span></td>
-		<td><span class='lang2' >ഘൌ</span><br/><span class='keys'>ghau</span></td>
-		<td><span class='lang2' >ഘം</span><br/><span class='keys'>gham</span></td>
-		<td><span class='lang2' >ഘഃ</span><br/><span class='keys'>ghaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ങ</span><br/><span class='keys'>ng</span></td>
-		<td><span class='lang2' >ങ്</span><br/><span class='keys'>ng~</span></td>
-		<td><span class='lang2' >ങ</span><br/><span class='keys'>ng</span></td>
-		<td><span class='lang2' >ങാ</span><br/><span class='keys'>ngA</span></td>
-		<td><span class='lang2' >ങി</span><br/><span class='keys'>ngi</span></td>
-		<td><span class='lang2' >ങീ</span><br/><span class='keys'>ngI</span></td>
-		<td><span class='lang2' >ങു</span><br/><span class='keys'>ngu</span></td>
-		<td><span class='lang2' >ങൂ</span><br/><span class='keys'>ngU</span></td>
-		<td><span class='lang2' >ങൃ</span><br/><span class='keys'>ngr^</span></td>
-		<td><span class='lang2' >ങെ</span><br/><span class='keys'>nge</span></td>
-		<td><span class='lang2' >ങേ</span><br/><span class='keys'>ngE</span></td>
-		<td><span class='lang2' >ങൈ</span><br/><span class='keys'>ngai</span></td>
-		<td><span class='lang2' >ങൊ</span><br/><span class='keys'>ngo</span></td>
-		<td><span class='lang2' >ങോ</span><br/><span class='keys'>ngO</span></td>
-		<td><span class='lang2' >ങൌ</span><br/><span class='keys'>ngau</span></td>
-		<td><span class='lang2' >ങം</span><br/><span class='keys'>ngam</span></td>
-		<td><span class='lang2' >ങഃ</span><br/><span class='keys'>ngaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ച</span><br/><span class='keys'>ch</span></td>
-		<td><span class='lang2' >ച്</span><br/><span class='keys'>ch~</span></td>
-		<td><span class='lang2' >ച</span><br/><span class='keys'>ch</span></td>
-		<td><span class='lang2' >ചാ</span><br/><span class='keys'>chA</span></td>
-		<td><span class='lang2' >ചി</span><br/><span class='keys'>chi</span></td>
-		<td><span class='lang2' >ചീ</span><br/><span class='keys'>chI</span></td>
-		<td><span class='lang2' >ചു</span><br/><span class='keys'>chu</span></td>
-		<td><span class='lang2' >ചൂ</span><br/><span class='keys'>chU</span></td>
-		<td><span class='lang2' >ചൃ</span><br/><span class='keys'>chr^</span></td>
-		<td><span class='lang2' >ചെ</span><br/><span class='keys'>che</span></td>
-		<td><span class='lang2' >ചേ</span><br/><span class='keys'>chE</span></td>
-		<td><span class='lang2' >ചൈ</span><br/><span class='keys'>chai</span></td>
-		<td><span class='lang2' >ചൊ</span><br/><span class='keys'>cho</span></td>
-		<td><span class='lang2' >ചോ</span><br/><span class='keys'>chO</span></td>
-		<td><span class='lang2' >ചൌ</span><br/><span class='keys'>chau</span></td>
-		<td><span class='lang2' >ചം</span><br/><span class='keys'>cham</span></td>
-		<td><span class='lang2' >ചഃ</span><br/><span class='keys'>chaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഛ</span><br/><span class='keys'>chh</span></td>
-		<td><span class='lang2' >ഛ്</span><br/><span class='keys'>chh~</span></td>
-		<td><span class='lang2' >ഛ</span><br/><span class='keys'>chh</span></td>
-		<td><span class='lang2' >ഛാ</span><br/><span class='keys'>chhA</span></td>
-		<td><span class='lang2' >ഛി</span><br/><span class='keys'>chhi</span></td>
-		<td><span class='lang2' >ഛീ</span><br/><span class='keys'>chhI</span></td>
-		<td><span class='lang2' >ഛു</span><br/><span class='keys'>chhu</span></td>
-		<td><span class='lang2' >ഛൂ</span><br/><span class='keys'>chhU</span></td>
-		<td><span class='lang2' >ഛൃ</span><br/><span class='keys'>chhr^</span></td>
-		<td><span class='lang2' >ഛെ</span><br/><span class='keys'>chhe</span></td>
-		<td><span class='lang2' >ഛേ</span><br/><span class='keys'>chhE</span></td>
-		<td><span class='lang2' >ഛൈ</span><br/><span class='keys'>chhai</span></td>
-		<td><span class='lang2' >ഛൊ</span><br/><span class='keys'>chho</span></td>
-		<td><span class='lang2' >ഛോ</span><br/><span class='keys'>chhO</span></td>
-		<td><span class='lang2' >ഛൌ</span><br/><span class='keys'>chhau</span></td>
-		<td><span class='lang2' >ഛം</span><br/><span class='keys'>chham</span></td>
-		<td><span class='lang2' >ഛഃ</span><br/><span class='keys'>chhaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ജ</span><br/><span class='keys'>j</span></td>
-		<td><span class='lang2' >ജ്</span><br/><span class='keys'>j~</span></td>
-		<td><span class='lang2' >ജ</span><br/><span class='keys'>j</span></td>
-		<td><span class='lang2' >ജാ</span><br/><span class='keys'>jA</span></td>
-		<td><span class='lang2' >ജി</span><br/><span class='keys'>ji</span></td>
-		<td><span class='lang2' >ജീ</span><br/><span class='keys'>jI</span></td>
-		<td><span class='lang2' >ജു</span><br/><span class='keys'>ju</span></td>
-		<td><span class='lang2' >ജൂ</span><br/><span class='keys'>jU</span></td>
-		<td><span class='lang2' >ജൃ</span><br/><span class='keys'>jr^</span></td>
-		<td><span class='lang2' >ജെ</span><br/><span class='keys'>je</span></td>
-		<td><span class='lang2' >ജേ</span><br/><span class='keys'>jE</span></td>
-		<td><span class='lang2' >ജൈ</span><br/><span class='keys'>jai</span></td>
-		<td><span class='lang2' >ജൊ</span><br/><span class='keys'>jo</span></td>
-		<td><span class='lang2' >ജോ</span><br/><span class='keys'>jO</span></td>
-		<td><span class='lang2' >ജൌ</span><br/><span class='keys'>jau</span></td>
-		<td><span class='lang2' >ജം</span><br/><span class='keys'>jam</span></td>
-		<td><span class='lang2' >ജഃ</span><br/><span class='keys'>jaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഝ</span><br/><span class='keys'>jh</span></td>
-		<td><span class='lang2' >ഝ്</span><br/><span class='keys'>jh~</span></td>
-		<td><span class='lang2' >ഝ</span><br/><span class='keys'>jh</span></td>
-		<td><span class='lang2' >ഝാ</span><br/><span class='keys'>jhA</span></td>
-		<td><span class='lang2' >ഝി</span><br/><span class='keys'>jhi</span></td>
-		<td><span class='lang2' >ഝീ</span><br/><span class='keys'>jhI</span></td>
-		<td><span class='lang2' >ഝു</span><br/><span class='keys'>jhu</span></td>
-		<td><span class='lang2' >ഝൂ</span><br/><span class='keys'>jhU</span></td>
-		<td><span class='lang2' >ഝൃ</span><br/><span class='keys'>jhr^</span></td>
-		<td><span class='lang2' >ഝെ</span><br/><span class='keys'>jhe</span></td>
-		<td><span class='lang2' >ഝേ</span><br/><span class='keys'>jhE</span></td>
-		<td><span class='lang2' >ഝൈ</span><br/><span class='keys'>jhai</span></td>
-		<td><span class='lang2' >ഝൊ</span><br/><span class='keys'>jho</span></td>
-		<td><span class='lang2' >ഝോ</span><br/><span class='keys'>jhO</span></td>
-		<td><span class='lang2' >ഝൌ</span><br/><span class='keys'>jhau</span></td>
-		<td><span class='lang2' >ഝം</span><br/><span class='keys'>jham</span></td>
-		<td><span class='lang2' >ഝഃ</span><br/><span class='keys'>jhaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഞ</span><br/><span class='keys'>nj</span></td>
-		<td><span class='lang2' >ഞ്</span><br/><span class='keys'>nj~</span></td>
-		<td><span class='lang2' >ഞ</span><br/><span class='keys'>nj</span></td>
-		<td><span class='lang2' >ഞാ</span><br/><span class='keys'>njA</span></td>
-		<td><span class='lang2' >ഞി</span><br/><span class='keys'>nji</span></td>
-		<td><span class='lang2' >ഞീ</span><br/><span class='keys'>njI</span></td>
-		<td><span class='lang2' >ഞു</span><br/><span class='keys'>nju</span></td>
-		<td><span class='lang2' >ഞൂ</span><br/><span class='keys'>njU</span></td>
-		<td><span class='lang2' >ഞൃ</span><br/><span class='keys'>njr^</span></td>
-		<td><span class='lang2' >ഞെ</span><br/><span class='keys'>nje</span></td>
-		<td><span class='lang2' >ഞേ</span><br/><span class='keys'>njE</span></td>
-		<td><span class='lang2' >ഞൈ</span><br/><span class='keys'>njai</span></td>
-		<td><span class='lang2' >ഞൊ</span><br/><span class='keys'>njo</span></td>
-		<td><span class='lang2' >ഞോ</span><br/><span class='keys'>njO</span></td>
-		<td><span class='lang2' >ഞൌ</span><br/><span class='keys'>njau</span></td>
-		<td><span class='lang2' >ഞം</span><br/><span class='keys'>njam</span></td>
-		<td><span class='lang2' >ഞഃ</span><br/><span class='keys'>njaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ട</span><br/><span class='keys'>T</span></td>
-		<td><span class='lang2' >ട്</span><br/><span class='keys'>T~</span></td>
-		<td><span class='lang2' >ട</span><br/><span class='keys'>T</span></td>
-		<td><span class='lang2' >ടാ</span><br/><span class='keys'>TA</span></td>
-		<td><span class='lang2' >ടി</span><br/><span class='keys'>Ti</span></td>
-		<td><span class='lang2' >ടീ</span><br/><span class='keys'>TI</span></td>
-		<td><span class='lang2' >ടു</span><br/><span class='keys'>Tu</span></td>
-		<td><span class='lang2' >ടൂ</span><br/><span class='keys'>TU</span></td>
-		<td><span class='lang2' >ടൃ</span><br/><span class='keys'>Tr^</span></td>
-		<td><span class='lang2' >ടെ</span><br/><span class='keys'>Te</span></td>
-		<td><span class='lang2' >ടേ</span><br/><span class='keys'>TE</span></td>
-		<td><span class='lang2' >ടൈ</span><br/><span class='keys'>Tai</span></td>
-		<td><span class='lang2' >ടൊ</span><br/><span class='keys'>To</span></td>
-		<td><span class='lang2' >ടോ</span><br/><span class='keys'>TO</span></td>
-		<td><span class='lang2' >ടൌ</span><br/><span class='keys'>Tau</span></td>
-		<td><span class='lang2' >ടം</span><br/><span class='keys'>Tam</span></td>
-		<td><span class='lang2' >ടഃ</span><br/><span class='keys'>TaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഠ</span><br/><span class='keys'>Th</span></td>
-		<td><span class='lang2' >ഠ്</span><br/><span class='keys'>Th~</span></td>
-		<td><span class='lang2' >ഠ</span><br/><span class='keys'>Th</span></td>
-		<td><span class='lang2' >ഠാ</span><br/><span class='keys'>ThA</span></td>
-		<td><span class='lang2' >ഠി</span><br/><span class='keys'>Thi</span></td>
-		<td><span class='lang2' >ഠീ</span><br/><span class='keys'>ThI</span></td>
-		<td><span class='lang2' >ഠു</span><br/><span class='keys'>Thu</span></td>
-		<td><span class='lang2' >ഠൂ</span><br/><span class='keys'>ThU</span></td>
-		<td><span class='lang2' >ഠൃ</span><br/><span class='keys'>Thr^</span></td>
-		<td><span class='lang2' >ഠെ</span><br/><span class='keys'>The</span></td>
-		<td><span class='lang2' >ഠേ</span><br/><span class='keys'>ThE</span></td>
-		<td><span class='lang2' >ഠൈ</span><br/><span class='keys'>Thai</span></td>
-		<td><span class='lang2' >ഠൊ</span><br/><span class='keys'>Tho</span></td>
-		<td><span class='lang2' >ഠോ</span><br/><span class='keys'>ThO</span></td>
-		<td><span class='lang2' >ഠൌ</span><br/><span class='keys'>Thau</span></td>
-		<td><span class='lang2' >ഠം</span><br/><span class='keys'>Tham</span></td>
-		<td><span class='lang2' >ഠഃ</span><br/><span class='keys'>ThaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഡ</span><br/><span class='keys'>D</span></td>
-		<td><span class='lang2' >ഡ്</span><br/><span class='keys'>D~</span></td>
-		<td><span class='lang2' >ഡ</span><br/><span class='keys'>D</span></td>
-		<td><span class='lang2' >ഡാ</span><br/><span class='keys'>DA</span></td>
-		<td><span class='lang2' >ഡി</span><br/><span class='keys'>Di</span></td>
-		<td><span class='lang2' >ഡീ</span><br/><span class='keys'>DI</span></td>
-		<td><span class='lang2' >ഡു</span><br/><span class='keys'>Du</span></td>
-		<td><span class='lang2' >ഡൂ</span><br/><span class='keys'>DU</span></td>
-		<td><span class='lang2' >ഡൃ</span><br/><span class='keys'>Dr^</span></td>
-		<td><span class='lang2' >ഡെ</span><br/><span class='keys'>De</span></td>
-		<td><span class='lang2' >ഡേ</span><br/><span class='keys'>DE</span></td>
-		<td><span class='lang2' >ഡൈ</span><br/><span class='keys'>Dai</span></td>
-		<td><span class='lang2' >ഡൊ</span><br/><span class='keys'>Do</span></td>
-		<td><span class='lang2' >ഡോ</span><br/><span class='keys'>DO</span></td>
-		<td><span class='lang2' >ഡൌ</span><br/><span class='keys'>Dau</span></td>
-		<td><span class='lang2' >ഡം</span><br/><span class='keys'>Dam</span></td>
-		<td><span class='lang2' >ഡഃ</span><br/><span class='keys'>DaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഢ</span><br/><span class='keys'>Dh</span></td>
-		<td><span class='lang2' >ഢ്</span><br/><span class='keys'>Dh~</span></td>
-		<td><span class='lang2' >ഢ</span><br/><span class='keys'>Dh</span></td>
-		<td><span class='lang2' >ഢാ</span><br/><span class='keys'>DhA</span></td>
-		<td><span class='lang2' >ഢി</span><br/><span class='keys'>Dhi</span></td>
-		<td><span class='lang2' >ഢീ</span><br/><span class='keys'>DhI</span></td>
-		<td><span class='lang2' >ഢു</span><br/><span class='keys'>Dhu</span></td>
-		<td><span class='lang2' >ഢൂ</span><br/><span class='keys'>DhU</span></td>
-		<td><span class='lang2' >ഢൃ</span><br/><span class='keys'>Dhr^</span></td>
-		<td><span class='lang2' >ഢെ</span><br/><span class='keys'>Dhe</span></td>
-		<td><span class='lang2' >ഢേ</span><br/><span class='keys'>DhE</span></td>
-		<td><span class='lang2' >ഢൈ</span><br/><span class='keys'>Dhai</span></td>
-		<td><span class='lang2' >ഢൊ</span><br/><span class='keys'>Dho</span></td>
-		<td><span class='lang2' >ഢോ</span><br/><span class='keys'>DhO</span></td>
-		<td><span class='lang2' >ഢൌ</span><br/><span class='keys'>Dhau</span></td>
-		<td><span class='lang2' >ഢം</span><br/><span class='keys'>Dham</span></td>
-		<td><span class='lang2' >ഢഃ</span><br/><span class='keys'>DhaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ണ</span><br/><span class='keys'>N</span></td>
-		<td><span class='lang2' >ണ്</span><br/><span class='keys'>N~</span></td>
-		<td><span class='lang2' >ണ</span><br/><span class='keys'>N</span></td>
-		<td><span class='lang2' >ണാ</span><br/><span class='keys'>NA</span></td>
-		<td><span class='lang2' >ണി</span><br/><span class='keys'>Ni</span></td>
-		<td><span class='lang2' >ണീ</span><br/><span class='keys'>NI</span></td>
-		<td><span class='lang2' >ണു</span><br/><span class='keys'>Nu</span></td>
-		<td><span class='lang2' >ണൂ</span><br/><span class='keys'>NU</span></td>
-		<td><span class='lang2' >ണൃ</span><br/><span class='keys'>Nr^</span></td>
-		<td><span class='lang2' >ണെ</span><br/><span class='keys'>Ne</span></td>
-		<td><span class='lang2' >ണേ</span><br/><span class='keys'>NE</span></td>
-		<td><span class='lang2' >ണൈ</span><br/><span class='keys'>Nai</span></td>
-		<td><span class='lang2' >ണൊ</span><br/><span class='keys'>No</span></td>
-		<td><span class='lang2' >ണോ</span><br/><span class='keys'>NO</span></td>
-		<td><span class='lang2' >ണൌ</span><br/><span class='keys'>Nau</span></td>
-		<td><span class='lang2' >ണം</span><br/><span class='keys'>Nam</span></td>
-		<td><span class='lang2' >ണഃ</span><br/><span class='keys'>NaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ത</span><br/><span class='keys'>th</span></td>
-		<td><span class='lang2' >ത്</span><br/><span class='keys'>th~</span></td>
-		<td><span class='lang2' >ത</span><br/><span class='keys'>th</span></td>
-		<td><span class='lang2' >താ</span><br/><span class='keys'>thA</span></td>
-		<td><span class='lang2' >തി</span><br/><span class='keys'>thi</span></td>
-		<td><span class='lang2' >തീ</span><br/><span class='keys'>thI</span></td>
-		<td><span class='lang2' >തു</span><br/><span class='keys'>thu</span></td>
-		<td><span class='lang2' >തൂ</span><br/><span class='keys'>thU</span></td>
-		<td><span class='lang2' >തൃ</span><br/><span class='keys'>thr^</span></td>
-		<td><span class='lang2' >തെ</span><br/><span class='keys'>the</span></td>
-		<td><span class='lang2' >തേ</span><br/><span class='keys'>thE</span></td>
-		<td><span class='lang2' >തൈ</span><br/><span class='keys'>thai</span></td>
-		<td><span class='lang2' >തൊ</span><br/><span class='keys'>tho</span></td>
-		<td><span class='lang2' >തോ</span><br/><span class='keys'>thO</span></td>
-		<td><span class='lang2' >തൌ</span><br/><span class='keys'>thau</span></td>
-		<td><span class='lang2' >തം</span><br/><span class='keys'>tham</span></td>
-		<td><span class='lang2' >തഃ</span><br/><span class='keys'>thaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഥ</span><br/><span class='keys'>thh</span></td>
-		<td><span class='lang2' >ഥ്</span><br/><span class='keys'>thh~</span></td>
-		<td><span class='lang2' >ഥ</span><br/><span class='keys'>thh</span></td>
-		<td><span class='lang2' >ഥാ</span><br/><span class='keys'>thhA</span></td>
-		<td><span class='lang2' >ഥി</span><br/><span class='keys'>thhi</span></td>
-		<td><span class='lang2' >ഥീ</span><br/><span class='keys'>thhI</span></td>
-		<td><span class='lang2' >ഥു</span><br/><span class='keys'>thhu</span></td>
-		<td><span class='lang2' >ഥൂ</span><br/><span class='keys'>thhU</span></td>
-		<td><span class='lang2' >ഥൃ</span><br/><span class='keys'>thhr^</span></td>
-		<td><span class='lang2' >ഥെ</span><br/><span class='keys'>thhe</span></td>
-		<td><span class='lang2' >ഥേ</span><br/><span class='keys'>thhE</span></td>
-		<td><span class='lang2' >ഥൈ</span><br/><span class='keys'>thhai</span></td>
-		<td><span class='lang2' >ഥൊ</span><br/><span class='keys'>thho</span></td>
-		<td><span class='lang2' >ഥോ</span><br/><span class='keys'>thhO</span></td>
-		<td><span class='lang2' >ഥൌ</span><br/><span class='keys'>thhau</span></td>
-		<td><span class='lang2' >ഥം</span><br/><span class='keys'>thham</span></td>
-		<td><span class='lang2' >ഥഃ</span><br/><span class='keys'>thhaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ദ</span><br/><span class='keys'>d</span></td>
-		<td><span class='lang2' >ദ്</span><br/><span class='keys'>d~</span></td>
-		<td><span class='lang2' >ദ</span><br/><span class='keys'>d</span></td>
-		<td><span class='lang2' >ദാ</span><br/><span class='keys'>dA</span></td>
-		<td><span class='lang2' >ദി</span><br/><span class='keys'>di</span></td>
-		<td><span class='lang2' >ദീ</span><br/><span class='keys'>dI</span></td>
-		<td><span class='lang2' >ദു</span><br/><span class='keys'>du</span></td>
-		<td><span class='lang2' >ദൂ</span><br/><span class='keys'>dU</span></td>
-		<td><span class='lang2' >ദൃ</span><br/><span class='keys'>dr^</span></td>
-		<td><span class='lang2' >ദെ</span><br/><span class='keys'>de</span></td>
-		<td><span class='lang2' >ദേ</span><br/><span class='keys'>dE</span></td>
-		<td><span class='lang2' >ദൈ</span><br/><span class='keys'>dai</span></td>
-		<td><span class='lang2' >ദൊ</span><br/><span class='keys'>do</span></td>
-		<td><span class='lang2' >ദോ</span><br/><span class='keys'>dO</span></td>
-		<td><span class='lang2' >ദൌ</span><br/><span class='keys'>dau</span></td>
-		<td><span class='lang2' >ദം</span><br/><span class='keys'>dam</span></td>
-		<td><span class='lang2' >ദഃ</span><br/><span class='keys'>daH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ധ</span><br/><span class='keys'>dh</span></td>
-		<td><span class='lang2' >ധ്</span><br/><span class='keys'>dh~</span></td>
-		<td><span class='lang2' >ധ</span><br/><span class='keys'>dh</span></td>
-		<td><span class='lang2' >ധാ</span><br/><span class='keys'>dhA</span></td>
-		<td><span class='lang2' >ധി</span><br/><span class='keys'>dhi</span></td>
-		<td><span class='lang2' >ധീ</span><br/><span class='keys'>dhI</span></td>
-		<td><span class='lang2' >ധു</span><br/><span class='keys'>dhu</span></td>
-		<td><span class='lang2' >ധൂ</span><br/><span class='keys'>dhU</span></td>
-		<td><span class='lang2' >ധൃ</span><br/><span class='keys'>dhr^</span></td>
-		<td><span class='lang2' >ധെ</span><br/><span class='keys'>dhe</span></td>
-		<td><span class='lang2' >ധേ</span><br/><span class='keys'>dhE</span></td>
-		<td><span class='lang2' >ധൈ</span><br/><span class='keys'>dhai</span></td>
-		<td><span class='lang2' >ധൊ</span><br/><span class='keys'>dho</span></td>
-		<td><span class='lang2' >ധോ</span><br/><span class='keys'>dhO</span></td>
-		<td><span class='lang2' >ധൌ</span><br/><span class='keys'>dhau</span></td>
-		<td><span class='lang2' >ധം</span><br/><span class='keys'>dham</span></td>
-		<td><span class='lang2' >ധഃ</span><br/><span class='keys'>dhaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ന</span><br/><span class='keys'>n</span></td>
-		<td><span class='lang2' >ന്</span><br/><span class='keys'>n~</span></td>
-		<td><span class='lang2' >ന</span><br/><span class='keys'>n</span></td>
-		<td><span class='lang2' >നാ</span><br/><span class='keys'>nA</span></td>
-		<td><span class='lang2' >നി</span><br/><span class='keys'>ni</span></td>
-		<td><span class='lang2' >നീ</span><br/><span class='keys'>nI</span></td>
-		<td><span class='lang2' >നു</span><br/><span class='keys'>nu</span></td>
-		<td><span class='lang2' >നൂ</span><br/><span class='keys'>nU</span></td>
-		<td><span class='lang2' >നൃ</span><br/><span class='keys'>nr^</span></td>
-		<td><span class='lang2' >നെ</span><br/><span class='keys'>ne</span></td>
-		<td><span class='lang2' >നേ</span><br/><span class='keys'>nE</span></td>
-		<td><span class='lang2' >നൈ</span><br/><span class='keys'>nai</span></td>
-		<td><span class='lang2' >നൊ</span><br/><span class='keys'>no</span></td>
-		<td><span class='lang2' >നോ</span><br/><span class='keys'>nO</span></td>
-		<td><span class='lang2' >നൌ</span><br/><span class='keys'>nau</span></td>
-		<td><span class='lang2' >നം</span><br/><span class='keys'>nam</span></td>
-		<td><span class='lang2' >നഃ</span><br/><span class='keys'>naH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >പ</span><br/><span class='keys'>p</span></td>
-		<td><span class='lang2' >പ്</span><br/><span class='keys'>p~</span></td>
-		<td><span class='lang2' >പ</span><br/><span class='keys'>p</span></td>
-		<td><span class='lang2' >പാ</span><br/><span class='keys'>pA</span></td>
-		<td><span class='lang2' >പി</span><br/><span class='keys'>pi</span></td>
-		<td><span class='lang2' >പീ</span><br/><span class='keys'>pI</span></td>
-		<td><span class='lang2' >പു</span><br/><span class='keys'>pu</span></td>
-		<td><span class='lang2' >പൂ</span><br/><span class='keys'>pU</span></td>
-		<td><span class='lang2' >പൃ</span><br/><span class='keys'>pr^</span></td>
-		<td><span class='lang2' >പെ</span><br/><span class='keys'>pe</span></td>
-		<td><span class='lang2' >പേ</span><br/><span class='keys'>pE</span></td>
-		<td><span class='lang2' >പൈ</span><br/><span class='keys'>pai</span></td>
-		<td><span class='lang2' >പൊ</span><br/><span class='keys'>po</span></td>
-		<td><span class='lang2' >പോ</span><br/><span class='keys'>pO</span></td>
-		<td><span class='lang2' >പൌ</span><br/><span class='keys'>pau</span></td>
-		<td><span class='lang2' >പം</span><br/><span class='keys'>pam</span></td>
-		<td><span class='lang2' >പഃ</span><br/><span class='keys'>paH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഫ</span><br/><span class='keys'>ph</span></td>
-		<td><span class='lang2' >ഫ്</span><br/><span class='keys'>ph~</span></td>
-		<td><span class='lang2' >ഫ</span><br/><span class='keys'>ph</span></td>
-		<td><span class='lang2' >ഫാ</span><br/><span class='keys'>phA</span></td>
-		<td><span class='lang2' >ഫി</span><br/><span class='keys'>phi</span></td>
-		<td><span class='lang2' >ഫീ</span><br/><span class='keys'>phI</span></td>
-		<td><span class='lang2' >ഫു</span><br/><span class='keys'>phu</span></td>
-		<td><span class='lang2' >ഫൂ</span><br/><span class='keys'>phU</span></td>
-		<td><span class='lang2' >ഫൃ</span><br/><span class='keys'>phr^</span></td>
-		<td><span class='lang2' >ഫെ</span><br/><span class='keys'>phe</span></td>
-		<td><span class='lang2' >ഫേ</span><br/><span class='keys'>phE</span></td>
-		<td><span class='lang2' >ഫൈ</span><br/><span class='keys'>phai</span></td>
-		<td><span class='lang2' >ഫൊ</span><br/><span class='keys'>pho</span></td>
-		<td><span class='lang2' >ഫോ</span><br/><span class='keys'>phO</span></td>
-		<td><span class='lang2' >ഫൌ</span><br/><span class='keys'>phau</span></td>
-		<td><span class='lang2' >ഫം</span><br/><span class='keys'>pham</span></td>
-		<td><span class='lang2' >ഫഃ</span><br/><span class='keys'>phaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ബ</span><br/><span class='keys'>b</span></td>
-		<td><span class='lang2' >ബ്</span><br/><span class='keys'>b~</span></td>
-		<td><span class='lang2' >ബ</span><br/><span class='keys'>b</span></td>
-		<td><span class='lang2' >ബാ</span><br/><span class='keys'>bA</span></td>
-		<td><span class='lang2' >ബി</span><br/><span class='keys'>bi</span></td>
-		<td><span class='lang2' >ബീ</span><br/><span class='keys'>bI</span></td>
-		<td><span class='lang2' >ബു</span><br/><span class='keys'>bu</span></td>
-		<td><span class='lang2' >ബൂ</span><br/><span class='keys'>bU</span></td>
-		<td><span class='lang2' >ബൃ</span><br/><span class='keys'>br^</span></td>
-		<td><span class='lang2' >ബെ</span><br/><span class='keys'>be</span></td>
-		<td><span class='lang2' >ബേ</span><br/><span class='keys'>bE</span></td>
-		<td><span class='lang2' >ബൈ</span><br/><span class='keys'>bai</span></td>
-		<td><span class='lang2' >ബൊ</span><br/><span class='keys'>bo</span></td>
-		<td><span class='lang2' >ബോ</span><br/><span class='keys'>bO</span></td>
-		<td><span class='lang2' >ബൌ</span><br/><span class='keys'>bau</span></td>
-		<td><span class='lang2' >ബം</span><br/><span class='keys'>bam</span></td>
-		<td><span class='lang2' >ബഃ</span><br/><span class='keys'>baH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഭ</span><br/><span class='keys'>bh</span></td>
-		<td><span class='lang2' >ഭ്</span><br/><span class='keys'>bh~</span></td>
-		<td><span class='lang2' >ഭ</span><br/><span class='keys'>bh</span></td>
-		<td><span class='lang2' >ഭാ</span><br/><span class='keys'>bhA</span></td>
-		<td><span class='lang2' >ഭി</span><br/><span class='keys'>bhi</span></td>
-		<td><span class='lang2' >ഭീ</span><br/><span class='keys'>bhI</span></td>
-		<td><span class='lang2' >ഭു</span><br/><span class='keys'>bhu</span></td>
-		<td><span class='lang2' >ഭൂ</span><br/><span class='keys'>bhU</span></td>
-		<td><span class='lang2' >ഭൃ</span><br/><span class='keys'>bhr^</span></td>
-		<td><span class='lang2' >ഭെ</span><br/><span class='keys'>bhe</span></td>
-		<td><span class='lang2' >ഭേ</span><br/><span class='keys'>bhE</span></td>
-		<td><span class='lang2' >ഭൈ</span><br/><span class='keys'>bhai</span></td>
-		<td><span class='lang2' >ഭൊ</span><br/><span class='keys'>bho</span></td>
-		<td><span class='lang2' >ഭോ</span><br/><span class='keys'>bhO</span></td>
-		<td><span class='lang2' >ഭൌ</span><br/><span class='keys'>bhau</span></td>
-		<td><span class='lang2' >ഭം</span><br/><span class='keys'>bham</span></td>
-		<td><span class='lang2' >ഭഃ</span><br/><span class='keys'>bhaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >മ</span><br/><span class='keys'>m</span></td>
-		<td><span class='lang2' >മ്</span><br/><span class='keys'>m~</span></td>
-		<td><span class='lang2' >മ</span><br/><span class='keys'>m</span></td>
-		<td><span class='lang2' >മാ</span><br/><span class='keys'>mA</span></td>
-		<td><span class='lang2' >മി</span><br/><span class='keys'>mi</span></td>
-		<td><span class='lang2' >മീ</span><br/><span class='keys'>mI</span></td>
-		<td><span class='lang2' >മു</span><br/><span class='keys'>mu</span></td>
-		<td><span class='lang2' >മൂ</span><br/><span class='keys'>mU</span></td>
-		<td><span class='lang2' >മൃ</span><br/><span class='keys'>mr^</span></td>
-		<td><span class='lang2' >മെ</span><br/><span class='keys'>me</span></td>
-		<td><span class='lang2' >മേ</span><br/><span class='keys'>mE</span></td>
-		<td><span class='lang2' >മൈ</span><br/><span class='keys'>mai</span></td>
-		<td><span class='lang2' >മൊ</span><br/><span class='keys'>mo</span></td>
-		<td><span class='lang2' >മോ</span><br/><span class='keys'>mO</span></td>
-		<td><span class='lang2' >മൌ</span><br/><span class='keys'>mau</span></td>
-		<td><span class='lang2' >മം</span><br/><span class='keys'>mam</span></td>
-		<td><span class='lang2' >മഃ</span><br/><span class='keys'>maH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >യ</span><br/><span class='keys'>y</span></td>
-		<td><span class='lang2' >യ്</span><br/><span class='keys'>y~</span></td>
-		<td><span class='lang2' >യ</span><br/><span class='keys'>y</span></td>
-		<td><span class='lang2' >യാ</span><br/><span class='keys'>yA</span></td>
-		<td><span class='lang2' >യി</span><br/><span class='keys'>yi</span></td>
-		<td><span class='lang2' >യീ</span><br/><span class='keys'>yI</span></td>
-		<td><span class='lang2' >യു</span><br/><span class='keys'>yu</span></td>
-		<td><span class='lang2' >യൂ</span><br/><span class='keys'>yU</span></td>
-		<td><span class='lang2' >യൃ</span><br/><span class='keys'>yr^</span></td>
-		<td><span class='lang2' >യെ</span><br/><span class='keys'>ye</span></td>
-		<td><span class='lang2' >യേ</span><br/><span class='keys'>yE</span></td>
-		<td><span class='lang2' >യൈ</span><br/><span class='keys'>yai</span></td>
-		<td><span class='lang2' >യൊ</span><br/><span class='keys'>yo</span></td>
-		<td><span class='lang2' >യോ</span><br/><span class='keys'>yO</span></td>
-		<td><span class='lang2' >യൌ</span><br/><span class='keys'>yau</span></td>
-		<td><span class='lang2' >യം</span><br/><span class='keys'>yam</span></td>
-		<td><span class='lang2' >യഃ</span><br/><span class='keys'>yaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ര</span><br/><span class='keys'>r</span></td>
-		<td><span class='lang2' >ര്</span><br/><span class='keys'>r~</span></td>
-		<td><span class='lang2' >ര</span><br/><span class='keys'>r</span></td>
-		<td><span class='lang2' >രാ</span><br/><span class='keys'>rA</span></td>
-		<td><span class='lang2' >രി</span><br/><span class='keys'>ri</span></td>
-		<td><span class='lang2' >രീ</span><br/><span class='keys'>rI</span></td>
-		<td><span class='lang2' >രു</span><br/><span class='keys'>ru</span></td>
-		<td><span class='lang2' >രൂ</span><br/><span class='keys'>rU</span></td>
-		<td><span class='lang2' >രൃ</span><br/><span class='keys'>rr^</span></td>
-		<td><span class='lang2' >രെ</span><br/><span class='keys'>re</span></td>
-		<td><span class='lang2' >രേ</span><br/><span class='keys'>rE</span></td>
-		<td><span class='lang2' >രൈ</span><br/><span class='keys'>rai</span></td>
-		<td><span class='lang2' >രൊ</span><br/><span class='keys'>ro</span></td>
-		<td><span class='lang2' >രോ</span><br/><span class='keys'>rO</span></td>
-		<td><span class='lang2' >രൌ</span><br/><span class='keys'>rau</span></td>
-		<td><span class='lang2' >രം</span><br/><span class='keys'>ram</span></td>
-		<td><span class='lang2' >രഃ</span><br/><span class='keys'>raH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ല</span><br/><span class='keys'>l</span></td>
-		<td><span class='lang2' >ല്</span><br/><span class='keys'>l~</span></td>
-		<td><span class='lang2' >ല</span><br/><span class='keys'>l</span></td>
-		<td><span class='lang2' >ലാ</span><br/><span class='keys'>lA</span></td>
-		<td><span class='lang2' >ലി</span><br/><span class='keys'>li</span></td>
-		<td><span class='lang2' >ലീ</span><br/><span class='keys'>lI</span></td>
-		<td><span class='lang2' >ലു</span><br/><span class='keys'>lu</span></td>
-		<td><span class='lang2' >ലൂ</span><br/><span class='keys'>lU</span></td>
-		<td><span class='lang2' >ലൃ</span><br/><span class='keys'>lr^</span></td>
-		<td><span class='lang2' >ലെ</span><br/><span class='keys'>le</span></td>
-		<td><span class='lang2' >ലേ</span><br/><span class='keys'>lE</span></td>
-		<td><span class='lang2' >ലൈ</span><br/><span class='keys'>lai</span></td>
-		<td><span class='lang2' >ലൊ</span><br/><span class='keys'>lo</span></td>
-		<td><span class='lang2' >ലോ</span><br/><span class='keys'>lO</span></td>
-		<td><span class='lang2' >ലൌ</span><br/><span class='keys'>lau</span></td>
-		<td><span class='lang2' >ലം</span><br/><span class='keys'>lam</span></td>
-		<td><span class='lang2' >ലഃ</span><br/><span class='keys'>laH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >വ</span><br/><span class='keys'>v</span></td>
-		<td><span class='lang2' >വ്</span><br/><span class='keys'>v~</span></td>
-		<td><span class='lang2' >വ</span><br/><span class='keys'>v</span></td>
-		<td><span class='lang2' >വാ</span><br/><span class='keys'>vA</span></td>
-		<td><span class='lang2' >വി</span><br/><span class='keys'>vi</span></td>
-		<td><span class='lang2' >വീ</span><br/><span class='keys'>vI</span></td>
-		<td><span class='lang2' >വു</span><br/><span class='keys'>vu</span></td>
-		<td><span class='lang2' >വൂ</span><br/><span class='keys'>vU</span></td>
-		<td><span class='lang2' >വൃ</span><br/><span class='keys'>vr^</span></td>
-		<td><span class='lang2' >വെ</span><br/><span class='keys'>ve</span></td>
-		<td><span class='lang2' >വേ</span><br/><span class='keys'>vE</span></td>
-		<td><span class='lang2' >വൈ</span><br/><span class='keys'>vai</span></td>
-		<td><span class='lang2' >വൊ</span><br/><span class='keys'>vo</span></td>
-		<td><span class='lang2' >വോ</span><br/><span class='keys'>vO</span></td>
-		<td><span class='lang2' >വൌ</span><br/><span class='keys'>vau</span></td>
-		<td><span class='lang2' >വം</span><br/><span class='keys'>vam</span></td>
-		<td><span class='lang2' >വഃ</span><br/><span class='keys'>vaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ശ</span><br/><span class='keys'>S</span></td>
-		<td><span class='lang2' >ശ്</span><br/><span class='keys'>S~</span></td>
-		<td><span class='lang2' >ശ</span><br/><span class='keys'>S</span></td>
-		<td><span class='lang2' >ശാ</span><br/><span class='keys'>SA</span></td>
-		<td><span class='lang2' >ശി</span><br/><span class='keys'>Si</span></td>
-		<td><span class='lang2' >ശീ</span><br/><span class='keys'>SI</span></td>
-		<td><span class='lang2' >ശു</span><br/><span class='keys'>Su</span></td>
-		<td><span class='lang2' >ശൂ</span><br/><span class='keys'>SU</span></td>
-		<td><span class='lang2' >ശൃ</span><br/><span class='keys'>Sr^</span></td>
-		<td><span class='lang2' >ശെ</span><br/><span class='keys'>Se</span></td>
-		<td><span class='lang2' >ശേ</span><br/><span class='keys'>SE</span></td>
-		<td><span class='lang2' >ശൈ</span><br/><span class='keys'>Sai</span></td>
-		<td><span class='lang2' >ശൊ</span><br/><span class='keys'>So</span></td>
-		<td><span class='lang2' >ശോ</span><br/><span class='keys'>SO</span></td>
-		<td><span class='lang2' >ശൌ</span><br/><span class='keys'>Sau</span></td>
-		<td><span class='lang2' >ശം</span><br/><span class='keys'>Sam</span></td>
-		<td><span class='lang2' >ശഃ</span><br/><span class='keys'>SaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഷ</span><br/><span class='keys'>sh</span></td>
-		<td><span class='lang2' >ഷ്</span><br/><span class='keys'>sh~</span></td>
-		<td><span class='lang2' >ഷ</span><br/><span class='keys'>sh</span></td>
-		<td><span class='lang2' >ഷാ</span><br/><span class='keys'>shA</span></td>
-		<td><span class='lang2' >ഷി</span><br/><span class='keys'>shi</span></td>
-		<td><span class='lang2' >ഷീ</span><br/><span class='keys'>shI</span></td>
-		<td><span class='lang2' >ഷു</span><br/><span class='keys'>shu</span></td>
-		<td><span class='lang2' >ഷൂ</span><br/><span class='keys'>shU</span></td>
-		<td><span class='lang2' >ഷൃ</span><br/><span class='keys'>shr^</span></td>
-		<td><span class='lang2' >ഷെ</span><br/><span class='keys'>she</span></td>
-		<td><span class='lang2' >ഷേ</span><br/><span class='keys'>shE</span></td>
-		<td><span class='lang2' >ഷൈ</span><br/><span class='keys'>shai</span></td>
-		<td><span class='lang2' >ഷൊ</span><br/><span class='keys'>sho</span></td>
-		<td><span class='lang2' >ഷോ</span><br/><span class='keys'>shO</span></td>
-		<td><span class='lang2' >ഷൌ</span><br/><span class='keys'>shau</span></td>
-		<td><span class='lang2' >ഷം</span><br/><span class='keys'>sham</span></td>
-		<td><span class='lang2' >ഷഃ</span><br/><span class='keys'>shaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >സ</span><br/><span class='keys'>s</span></td>
-		<td><span class='lang2' >സ്</span><br/><span class='keys'>s~</span></td>
-		<td><span class='lang2' >സ</span><br/><span class='keys'>s</span></td>
-		<td><span class='lang2' >സാ</span><br/><span class='keys'>sA</span></td>
-		<td><span class='lang2' >സി</span><br/><span class='keys'>si</span></td>
-		<td><span class='lang2' >സീ</span><br/><span class='keys'>sI</span></td>
-		<td><span class='lang2' >സു</span><br/><span class='keys'>su</span></td>
-		<td><span class='lang2' >സൂ</span><br/><span class='keys'>sU</span></td>
-		<td><span class='lang2' >സൃ</span><br/><span class='keys'>sr^</span></td>
-		<td><span class='lang2' >സെ</span><br/><span class='keys'>se</span></td>
-		<td><span class='lang2' >സേ</span><br/><span class='keys'>sE</span></td>
-		<td><span class='lang2' >സൈ</span><br/><span class='keys'>sai</span></td>
-		<td><span class='lang2' >സൊ</span><br/><span class='keys'>so</span></td>
-		<td><span class='lang2' >സോ</span><br/><span class='keys'>sO</span></td>
-		<td><span class='lang2' >സൌ</span><br/><span class='keys'>sau</span></td>
-		<td><span class='lang2' >സം</span><br/><span class='keys'>sam</span></td>
-		<td><span class='lang2' >സഃ</span><br/><span class='keys'>saH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഹ</span><br/><span class='keys'>h</span></td>
-		<td><span class='lang2' >ഹ്</span><br/><span class='keys'>h~</span></td>
-		<td><span class='lang2' >ഹ</span><br/><span class='keys'>h</span></td>
-		<td><span class='lang2' >ഹാ</span><br/><span class='keys'>hA</span></td>
-		<td><span class='lang2' >ഹി</span><br/><span class='keys'>hi</span></td>
-		<td><span class='lang2' >ഹീ</span><br/><span class='keys'>hI</span></td>
-		<td><span class='lang2' >ഹു</span><br/><span class='keys'>hu</span></td>
-		<td><span class='lang2' >ഹൂ</span><br/><span class='keys'>hU</span></td>
-		<td><span class='lang2' >ഹൃ</span><br/><span class='keys'>hr^</span></td>
-		<td><span class='lang2' >ഹെ</span><br/><span class='keys'>he</span></td>
-		<td><span class='lang2' >ഹേ</span><br/><span class='keys'>hE</span></td>
-		<td><span class='lang2' >ഹൈ</span><br/><span class='keys'>hai</span></td>
-		<td><span class='lang2' >ഹൊ</span><br/><span class='keys'>ho</span></td>
-		<td><span class='lang2' >ഹോ</span><br/><span class='keys'>hO</span></td>
-		<td><span class='lang2' >ഹൌ</span><br/><span class='keys'>hau</span></td>
-		<td><span class='lang2' >ഹം</span><br/><span class='keys'>ham</span></td>
-		<td><span class='lang2' >ഹഃ</span><br/><span class='keys'>haH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ള</span><br/><span class='keys'>L</span></td>
-		<td><span class='lang2' >ള്</span><br/><span class='keys'>L~</span></td>
-		<td><span class='lang2' >ള</span><br/><span class='keys'>L</span></td>
-		<td><span class='lang2' >ളാ</span><br/><span class='keys'>LA</span></td>
-		<td><span class='lang2' >ളി</span><br/><span class='keys'>Li</span></td>
-		<td><span class='lang2' >ളീ</span><br/><span class='keys'>LI</span></td>
-		<td><span class='lang2' >ളു</span><br/><span class='keys'>Lu</span></td>
-		<td><span class='lang2' >ളൂ</span><br/><span class='keys'>LU</span></td>
-		<td><span class='lang2' >ളൃ</span><br/><span class='keys'>Lr^</span></td>
-		<td><span class='lang2' >ളെ</span><br/><span class='keys'>Le</span></td>
-		<td><span class='lang2' >ളേ</span><br/><span class='keys'>LE</span></td>
-		<td><span class='lang2' >ളൈ</span><br/><span class='keys'>Lai</span></td>
-		<td><span class='lang2' >ളൊ</span><br/><span class='keys'>Lo</span></td>
-		<td><span class='lang2' >ളോ</span><br/><span class='keys'>LO</span></td>
-		<td><span class='lang2' >ളൌ</span><br/><span class='keys'>Lau</span></td>
-		<td><span class='lang2' >ളം</span><br/><span class='keys'>Lam</span></td>
-		<td><span class='lang2' >ളഃ</span><br/><span class='keys'>LaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ഴ</span><br/><span class='keys'>Sh</span></td>
-		<td><span class='lang2' >ഴ്</span><br/><span class='keys'>Sh~</span></td>
-		<td><span class='lang2' >ഴ</span><br/><span class='keys'>Sh</span></td>
-		<td><span class='lang2' >ഴാ</span><br/><span class='keys'>ShA</span></td>
-		<td><span class='lang2' >ഴി</span><br/><span class='keys'>Shi</span></td>
-		<td><span class='lang2' >ഴീ</span><br/><span class='keys'>ShI</span></td>
-		<td><span class='lang2' >ഴു</span><br/><span class='keys'>Shu</span></td>
-		<td><span class='lang2' >ഴൂ</span><br/><span class='keys'>ShU</span></td>
-		<td><span class='lang2' >ഴൃ</span><br/><span class='keys'>Shr^</span></td>
-		<td><span class='lang2' >ഴെ</span><br/><span class='keys'>She</span></td>
-		<td><span class='lang2' >ഴേ</span><br/><span class='keys'>ShE</span></td>
-		<td><span class='lang2' >ഴൈ</span><br/><span class='keys'>Shai</span></td>
-		<td><span class='lang2' >ഴൊ</span><br/><span class='keys'>Sho</span></td>
-		<td><span class='lang2' >ഴോ</span><br/><span class='keys'>ShO</span></td>
-		<td><span class='lang2' >ഴൌ</span><br/><span class='keys'>Shau</span></td>
-		<td><span class='lang2' >ഴം</span><br/><span class='keys'>Sham</span></td>
-		<td><span class='lang2' >ഴഃ</span><br/><span class='keys'>ShaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >റ</span><br/><span class='keys'>R</span></td>
-		<td><span class='lang2' >റ്</span><br/><span class='keys'>R~</span></td>
-		<td><span class='lang2' >റ</span><br/><span class='keys'>R</span></td>
-		<td><span class='lang2' >റാ</span><br/><span class='keys'>RA</span></td>
-		<td><span class='lang2' >റി</span><br/><span class='keys'>Ri</span></td>
-		<td><span class='lang2' >റീ</span><br/><span class='keys'>RI</span></td>
-		<td><span class='lang2' >റു</span><br/><span class='keys'>Ru</span></td>
-		<td><span class='lang2' >റൂ</span><br/><span class='keys'>RU</span></td>
-		<td><span class='lang2' >റൃ</span><br/><span class='keys'>Rr^</span></td>
-		<td><span class='lang2' >റെ</span><br/><span class='keys'>Re</span></td>
-		<td><span class='lang2' >റേ</span><br/><span class='keys'>RE</span></td>
-		<td><span class='lang2' >റൈ</span><br/><span class='keys'>Rai</span></td>
-		<td><span class='lang2' >റൊ</span><br/><span class='keys'>Ro</span></td>
-		<td><span class='lang2' >റോ</span><br/><span class='keys'>RO</span></td>
-		<td><span class='lang2' >റൌ</span><br/><span class='keys'>Rau</span></td>
-		<td><span class='lang2' >റം</span><br/><span class='keys'>Ram</span></td>
-		<td><span class='lang2' >റഃ</span><br/><span class='keys'>RaH</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
-		<td colspan=17>&nbsp;</td>
-	</tr>
-
-	<tr class='keymanweb' style='text-align:center; font-weight:normal; background-color:#ffffff'>
-		<td style='text-align:left; font-weight:bold; background-color:#dedede' valign=top>Combined Consonants, etc.</td>
-		<td><span class='lang2' >ત્ર</span><br/><span class='keys'>^</span></td>
-		<td><span class='lang2' >ૃ</span><br/><span class='keys'>=</span></td>
-		<td><span class='lang2' >ઋ</span><br/><span class='keys'>+</span></td>
-		<td><span class='lang2' >ക്ക്</span><br/><span class='keys'>q</span></td>
-		<td><span class='lang2' >ക്യു</span><br/><span class='keys'>Q</span></td>
-		<td><span class='lang2' >വ്</span><br/><span class='keys'>w</span></td>
-		<td><span class='lang2' >ઐ</span><br/><span class='keys'>W</span></td>
-		<td><span class='lang2' >ડ</span><br/><span class='keys'>[[</span></td>
-		<td><span class='lang2' >ઢ</span><br/><span class='keys'>{</span></td>
-		<td><span class='lang2' >઼</span><br/><span class='keys'>]</span></td>
-		<td><span class='lang2' >ઞ</span><br/><span class='keys'>}</span></td>
-		<td><span class='lang2' >ഫ്</span><br/><span class='keys'>f</span></td>
-		<td><span class='lang2' >ഗ്ഗ്</span><br/><span class='keys'>G</span></td>
-		<td><span class='lang2' >ജ്ജ്</span><br/><span class='keys'>J</span></td>
-		<td><span class='lang2' >ക്ക്</span><br/><span class='keys'>K</span></td>
-		<td><span class='lang2' >છ</span><br/><span class='keys'>:</span></td>
-	</tr>
-	<tr style='text-align:center; font-weight:normal'>
-		<td><span class='lang2' >ശ്</span><br/><span class='keys'>z</span></td>
-		<td><span class='lang2' >ശ്ശ്</span><br/><span class='keys'>Z</span></td>
-		<td><span class='lang2' >ക്ഷ്</span><br/><span class='keys'>x</span></td>
-		<td><span class='lang2' >ക്ഷ്</span><br/><span class='keys'>X</span></td>
-		<td><span class='lang2' >ച്ച്</span><br/><span class='keys'>C</span></td>
-		<td><span class='lang2' >വ്വ്</span><br/><span class='keys'>V</span></td>
-		<td><span class='lang2' >ബ്ബ്</span><br/><span class='keys'>B</span></td>
-		<td><span class='lang2' >മ്മ്</span><br/><span class='keys'>M</span></td>
-		<td><span class='lang2' >ષ</span><br/><span class='keys'>&lt;</span></td>
-		<td><span class='lang2' >।</span><br/><span class='keys'>&gt;</span></td>
-	</tr>
-
-</table>
-
-<h3>Atomic Chillus</h3>
-<p>This keyboard now supports atomic encoding of Malayalam Chillus using Unicode 5.1 standards.</p>
-    <table>
-        <tr>
-            <th>Chillu</th>
-            <th>Keystroke</th>
-            <th>Unicode 5.0
-            <br/>
-            representation</th>
-            <th>Unicode 5.1
-            <br/>
-            representation</th>
-        </tr>
-        <tr>
-            <td>NN (ൺ)</td>
-            <td><kbd>Shift</kbd><kbd>n</kbd></td>
-            <td>U+0D32 U+0D4D U+200D</td>
-            <td>U+0D7A</td>
-        </tr>
-        <tr>
-            <td>N (ൻ)</td>
-            <td><kbd>n</kbd></td>
-            <td>U+0D28 U+0D4D U+200D</td>
-            <td>U+0D7B</td>
-        </tr>
-        <tr>
-            <td>RR (ർ)</td>
-            <td><kbd>r</kbd></td>
-            <td>U+0D30 U+0D4D U+200D</td>
-            <td>U+0D7C</td>
-        </tr>
-        <tr>
-            <td>L (ൽ)</td>
-            <td><kbd>l</kbd></td>
-            <td>U+0D32 U+0D4D U+200D</td>
-            <td>U+0D7D</td>
-        </tr>
-        <tr>
-            <td>LL (ൾ)</td>
-            <td><kbd>Shift</kbd><kbd>l</kbd></td>
-            <td>U+0D33 U+0D4D U+200D</td>
-            <td>U+0D7E</td>
-        </tr>
-        <tr>
-            <td>K (ൿ)</td>
-            <td><kbd>k</kbd><kbd>_</kbd></td>
-            <td>U+0D15 U+0D4D U+200D</td>
-            <td>U+0D7F</td>
-        </tr>
-    </table>
-
-
-</div>
+    <img src="mozhi_layout.png"> </img>
+    <img src="mozhi_malayalam.png"> </img>
+    <div id="sites-canvas-main" class="sites-canvas-main">
+        <div id="sites-canvas-main-content">
+            <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0"
+                class="sites-layout-name-one-column sites-layout-hbox">
+                <tbody>
+                    <tr>
+                        <td class="sites-layout-tile sites-tile-name-content-1">
+                            <div dir="ltr">
+                                <p>
+                                </p>
+                                <div class="sites-embed-align-right-wrapping-on">
+                                    <div class="sites-embed-border-off sites-embed" style="width:400px;">
+                                        <div class="sites-embed-content sites-embed-type-toc">
+                                            <div class="goog-toc sites-embed-toc-maxdepth-6">
+                                                <p>Contents</p>
+                                                <div dir="ltr">
+                                                    <div class="sites-embed-align-right-wrapping-on">
+                                                        <div class="sites-embed-border-off sites-embed"
+                                                            style="width:400px;">
+                                                            <div class="sites-embed-content sites-embed-type-toc">
+                                                                <div class="goog-toc sites-embed-toc-maxdepth-6">
+                                                                    <p>Contents</p>
+                                                                    <ol class="goog-toc">
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Basic-mapping"><strong>1
+                                                                                </strong>Basic mapping</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Semi-vowel-signs"><strong>2
+                                                                                </strong>Semi-vowel signs</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Separate-two-words-without-space"><strong>3
+                                                                                </strong>Separate two words without
+                                                                                space</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Consonant-Cluster"><strong>4
+                                                                                </strong>Consonant Cluster</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Chillus"><strong>5
+                                                                                </strong>Chillus</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Chillu-or-conjunct"><strong>6
+                                                                                </strong>Chillu or conjunct</a>
+                                                                            <ol class="goog-toc">
+                                                                                <li class="goog-toc"><a
+                                                                                        href="#TOC-Exceptions"><strong>6.1
+                                                                                        </strong>Exceptions</a></li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Explicit-Chandrakkala-instead-of-Chillu"><strong>7
+                                                                                </strong>Explicit Chandrakkala instead
+                                                                                of Chillu</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Stand-alone-combining-marks"><strong>8
+                                                                                </strong>Stand-alone combining marks</a>
+                                                                        </li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Doubling-of-NYA-"><strong>9
+                                                                                </strong>Doubling of ഞ (NYA)</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Shortcuts-for-conjuncts"><strong>10
+                                                                                </strong>Shortcuts for conjuncts</a>
+                                                                        </li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Error-correction-in-conjuncts"><strong>11
+                                                                                </strong>Error correction in
+                                                                                conjuncts</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Mapping-for-unmapped-keys"><strong>12
+                                                                                </strong>Mapping for unmapped keys</a>
+                                                                        </li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Extra-elongation-for-vowel-signs"><strong>13
+                                                                                </strong>Extra elongation for vowel
+                                                                                signs</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Archaic-letters"><strong>14
+                                                                                </strong>Archaic letters</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Joiners"><strong>15
+                                                                                </strong>Joiners</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Escape-by-word"><strong>16
+                                                                                </strong>Escape by word</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Compatibility-mapping"><strong>17
+                                                                                </strong>Compatibility mapping</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Legacy-encoding"><strong>18
+                                                                                </strong>Legacy encoding</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Backspace"><strong>19
+                                                                                </strong>Backspace</a></li>
+                                                                        <li class="goog-toc"><a
+                                                                                href="#TOC-Convenience-Mapping-and-Emoji"><strong>20
+                                                                                </strong>Convenience Mapping and
+                                                                                Emoji</a></li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h2><a name="TOC-Basic-mapping"></a>Basic mapping</h2>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:47px;height:31px">Mozhi</td>
+                                                                <td style="width:72px;height:31px">Malayalam<br>
+                                                                </td>
+                                                                <td style="width:83px;height:31px">Unicode Name<br>
+                                                                </td>
+                                                                <td style="width:62px;height:31px">&nbsp;Example</td>
+                                                                <td style="width:92px;height:31px">
+                                                                    &nbsp;Example<br>&nbsp;in Mozhi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:17px">&nbsp;a</td>
+                                                                <td style="width:72px;height:17px">&nbsp;അ</td>
+                                                                <td style="width:83px;height:17px">&nbsp;A</td>
+                                                                <td style="width:62px;height:17px">&nbsp;അല</td>
+                                                                <td style="width:92px;height:17px">&nbsp;ala</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:17px">&nbsp;aa</td>
+                                                                <td style="width:72px;height:17px">&nbsp;ആ</td>
+                                                                <td style="width:83px;height:17px">&nbsp;AA</td>
+                                                                <td style="width:62px;height:17px">&nbsp;ആല</td>
+                                                                <td style="width:92px;height:17px">&nbsp;aala</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:17px">&nbsp;i</td>
+                                                                <td style="width:72px;height:17px">&nbsp;ഇ</td>
+                                                                <td style="width:83px;height:17px">&nbsp;I</td>
+                                                                <td style="width:62px;height:17px">&nbsp;ഇല</td>
+                                                                <td style="width:92px;height:17px">&nbsp;ila&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:17px">&nbsp;ii</td>
+                                                                <td style="width:72px;height:17px">&nbsp;ഈ</td>
+                                                                <td style="width:83px;height:17px">&nbsp;II</td>
+                                                                <td style="width:62px;height:17px">&nbsp;ഈറ</td>
+                                                                <td style="width:92px;height:17px">&nbsp;iirra</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:17px">&nbsp;u</td>
+                                                                <td style="width:72px;height:17px">&nbsp;ഉ</td>
+                                                                <td style="width:83px;height:17px">&nbsp;U<br>
+                                                                </td>
+                                                                <td style="width:62px;height:17px">&nbsp;ഉമ</td>
+                                                                <td style="width:92px;height:17px">&nbsp;uma</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:17px">&nbsp;uu</td>
+                                                                <td style="width:72px;height:17px">&nbsp;ഊ</td>
+                                                                <td style="width:83px;height:17px">&nbsp;UU</td>
+                                                                <td style="width:62px;height:17px">&nbsp;ഊമ</td>
+                                                                <td style="width:92px;height:17px">&nbsp;uuma</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:17px">&nbsp;R</td>
+                                                                <td style="width:72px;height:17px">&nbsp;ഋ</td>
+                                                                <td style="width:83px;height:17px">&nbsp;VOCALIC R<br>
+                                                                </td>
+                                                                <td style="width:62px;height:17px">&nbsp;ഋതു</td>
+                                                                <td style="width:92px;height:17px">&nbsp;Rthu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:47px;height:31px">&nbsp;RR</td>
+                                                                <td style="width:72px;height:31px">&nbsp;ൠ</td>
+                                                                <td style="width:83px;height:31px">&nbsp;VOCALIC RR</td>
+                                                                <td style="width:62px;height:31px">&nbsp;ൠന്ന്</td>
+                                                                <td style="width:92px;height:31px">&nbsp;RRnn</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table><br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:39px;height:17px">&nbsp;e</td>
+                                                                <td style="width:69px;height:17px">&nbsp;എ<br>
+                                                                </td>
+                                                                <td style="width:82px;height:17px">&nbsp;E<br>
+                                                                </td>
+                                                                <td style="width:67px;height:17px">&nbsp;എലി</td>
+                                                                <td style="width:97px;height:17px">&nbsp;eli</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:39px;height:17px">&nbsp;E<br></td>
+                                                                <td style="width:69px;height:17px">&nbsp;ഏ</td>
+                                                                <td style="width:82px;height:17px">&nbsp;EE</td>
+                                                                <td style="width:67px;height:17px">&nbsp;ഏലം</td>
+                                                                <td style="width:97px;height:17px">&nbsp;Elam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:39px;height:17px">&nbsp;ai</td>
+                                                                <td style="width:69px;height:17px">&nbsp;ഐ</td>
+                                                                <td style="width:82px;height:17px">&nbsp;AI</td>
+                                                                <td style="width:67px;height:17px">&nbsp;ഐക്യം</td>
+                                                                <td style="width:97px;height:17px">&nbsp;aikyam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:39px;height:17px">&nbsp;o</td>
+                                                                <td style="width:69px;height:17px">&nbsp;ഒ</td>
+                                                                <td style="width:82px;height:17px">&nbsp;O</td>
+                                                                <td style="width:67px;height:17px">&nbsp;ഒരു</td>
+                                                                <td style="width:97px;height:17px">&nbsp;oru</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:39px;height:17px">&nbsp;O</td>
+                                                                <td style="width:69px;height:17px">&nbsp;ഓ</td>
+                                                                <td style="width:82px;height:17px">&nbsp;OO</td>
+                                                                <td style="width:67px;height:17px">&nbsp;ഓരം</td>
+                                                                <td style="width:97px;height:17px">&nbsp;Oram</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:39px;height:17px">&nbsp;au</td>
+                                                                <td style="width:69px;height:17px">&nbsp;ഔ</td>
+                                                                <td style="width:82px;height:17px">&nbsp;AU<br>
+                                                                </td>
+                                                                <td style="width:67px;height:17px">&nbsp;ഔഷധം</td>
+                                                                <td style="width:97px;height:17px">&nbsp;aushadham</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:58px;height:19px">&nbsp;H</td>
+                                                                <td style="width:68px;height:19px">&nbsp;ഃ</td>
+                                                                <td style="width:80px;height:19px">&nbsp;VISARGA</td>
+                                                                <td style="width:58px;height:19px">&nbsp;ദുഃഖം</td>
+                                                                <td style="width:91px;height:19px">&nbsp;duHkham</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;ka</td>
+                                                                <td>&nbsp;ക<br>
+                                                                </td>
+                                                                <td>&nbsp;KA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;കല</td>
+                                                                <td style="width:60px">&nbsp;kala</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;kha<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ഖ</td>
+                                                                <td style="width:60px">&nbsp;KHA</td>
+                                                                <td style="width:60px">&nbsp;നഖം</td>
+                                                                <td style="width:60px">&nbsp;nakham</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;ga</td>
+                                                                <td style="width:60px">&nbsp;ഗ</td>
+                                                                <td style="width:60px">&nbsp;GA</td>
+                                                                <td style="width:60px">&nbsp;ഗരം</td>
+                                                                <td style="width:60px">&nbsp;garam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;gha</td>
+                                                                <td style="width:60px">&nbsp;ഘ</td>
+                                                                <td style="width:60px">&nbsp;GHA</td>
+                                                                <td style="width:60px">&nbsp;മേഘം</td>
+                                                                <td style="width:60px">&nbsp;mEgham</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;nga</td>
+                                                                <td style="width:60px">&nbsp;ങ</td>
+                                                                <td style="width:60px">&nbsp;NGA</td>
+                                                                <td style="width:60px">&nbsp;ങ്യാവൂ</td>
+                                                                <td style="width:60px">&nbsp;ngyaavuu</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:61px;height:17px">&nbsp;cha</td>
+                                                                <td style="width:55px;height:17px">&nbsp;ച<br>
+                                                                </td>
+                                                                <td style="width:52px;height:17px">&nbsp;CA<br>
+                                                                </td>
+                                                                <td style="width:66px;height:17px">&nbsp;ചരം</td>
+                                                                <td style="width:75px;height:17px">&nbsp;charam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:61px;height:17px">&nbsp;chha<br>
+                                                                </td>
+                                                                <td style="width:55px;height:17px">&nbsp;ഛ</td>
+                                                                <td style="width:52px;height:17px">&nbsp;CHA</td>
+                                                                <td style="width:66px;height:17px">&nbsp;ഛായ</td>
+                                                                <td style="width:75px;height:17px">&nbsp;chhaaya</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:61px;height:17px">&nbsp;ja</td>
+                                                                <td style="width:55px;height:17px">&nbsp;ജ</td>
+                                                                <td style="width:52px;height:17px">&nbsp;JA</td>
+                                                                <td style="width:66px;height:17px">&nbsp;ജലം</td>
+                                                                <td style="width:75px;height:17px">&nbsp;jalam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:61px;height:17px">&nbsp;jha</td>
+                                                                <td style="width:55px;height:17px">&nbsp;ഝ</td>
+                                                                <td style="width:52px;height:17px">&nbsp;JHA</td>
+                                                                <td style="width:66px;height:17px">&nbsp;ഝാൻസി</td>
+                                                                <td style="width:75px;height:17px">&nbsp;jhaansi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:61px;height:17px">&nbsp;nja</td>
+                                                                <td style="width:55px;height:17px">&nbsp;ഞ</td>
+                                                                <td style="width:52px;height:17px">&nbsp;NYA</td>
+                                                                <td style="width:66px;height:17px">&nbsp;ഞാൻ</td>
+                                                                <td style="width:75px;height:17px">&nbsp;njaan</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;Ta</td>
+                                                                <td>&nbsp;ട<br>
+                                                                </td>
+                                                                <td>&nbsp;TTA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ടിപ്പു</td>
+                                                                <td style="width:60px">&nbsp;Tippu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;Tha<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ഠ<br></td>
+                                                                <td style="width:60px">&nbsp;TTHA</td>
+                                                                <td style="width:60px">&nbsp;പാഠം</td>
+                                                                <td style="width:60px">&nbsp;paaTham</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;Da</td>
+                                                                <td style="width:60px">&nbsp;ഡ</td>
+                                                                <td style="width:60px">&nbsp;DDA</td>
+                                                                <td style="width:60px">&nbsp;ഡപ്പി</td>
+                                                                <td style="width:60px">&nbsp;Dappi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;Dha</td>
+                                                                <td style="width:60px">&nbsp;ഢ </td>
+                                                                <td style="width:60px">&nbsp;DDHA</td>
+                                                                <td style="width:60px">&nbsp;ദൃഢം</td>
+                                                                <td style="width:60px">&nbsp;dRDham</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;Na</td>
+                                                                <td style="width:60px">&nbsp;ണ</td>
+                                                                <td style="width:60px">&nbsp;NNA</td>
+                                                                <td style="width:60px">&nbsp;മണം</td>
+                                                                <td style="width:60px">&nbsp;maNam</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;tha</td>
+                                                                <td>&nbsp;ത<br>
+                                                                </td>
+                                                                <td>&nbsp;TA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;തത്ത</td>
+                                                                <td style="width:60px">&nbsp;thaththa</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;thha<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ഥ</td>
+                                                                <td style="width:60px">&nbsp;THA</td>
+                                                                <td style="width:60px">&nbsp;കഥ</td>
+                                                                <td style="width:60px">&nbsp;kathha</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;da</td>
+                                                                <td style="width:60px">&nbsp;ദ</td>
+                                                                <td style="width:60px">&nbsp;DA</td>
+                                                                <td style="width:60px">&nbsp;ദയ</td>
+                                                                <td style="width:60px">&nbsp;daya</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;dha</td>
+                                                                <td style="width:60px">&nbsp;ധ</td>
+                                                                <td style="width:60px">&nbsp;DHA</td>
+                                                                <td style="width:60px">&nbsp;ധനം</td>
+                                                                <td style="width:60px">&nbsp;dhanam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;na</td>
+                                                                <td style="width:60px">&nbsp;ന</td>
+                                                                <td style="width:60px">&nbsp;NA</td>
+                                                                <td style="width:60px">&nbsp;നന്ന്</td>
+                                                                <td style="width:60px">&nbsp;nann~</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;pa</td>
+                                                                <td>&nbsp;പ<br>
+                                                                </td>
+                                                                <td>&nbsp;PA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;പല</td>
+                                                                <td style="width:60px">&nbsp;pala</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;pha<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ഫ</td>
+                                                                <td style="width:60px">&nbsp;PHA</td>
+                                                                <td style="width:60px">&nbsp;ഫലം</td>
+                                                                <td style="width:60px">&nbsp;phalam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;ba</td>
+                                                                <td style="width:60px">&nbsp;ബ</td>
+                                                                <td style="width:60px">&nbsp;BA</td>
+                                                                <td style="width:60px">&nbsp;ബലം</td>
+                                                                <td style="width:60px">&nbsp;balam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;bha</td>
+                                                                <td style="width:60px">&nbsp;ഭ</td>
+                                                                <td style="width:60px">&nbsp;BHA</td>
+                                                                <td style="width:60px">&nbsp;ഭയം</td>
+                                                                <td style="width:60px">&nbsp;bhayam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;ma</td>
+                                                                <td style="width:60px">&nbsp;മ</td>
+                                                                <td style="width:60px">&nbsp;MA</td>
+                                                                <td style="width:60px">&nbsp;മയം</td>
+                                                                <td style="width:60px">&nbsp;mayam</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;ya</td>
+                                                                <td>&nbsp;യ<br>
+                                                                </td>
+                                                                <td>&nbsp;YA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;യതി</td>
+                                                                <td style="width:60px">&nbsp;yathi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;ra<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ര</td>
+                                                                <td style="width:60px">&nbsp;RA</td>
+                                                                <td style="width:60px">&nbsp;രണ്ട്</td>
+                                                                <td style="width:60px">&nbsp;raNT</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;la</td>
+                                                                <td style="width:60px">&nbsp;ല</td>
+                                                                <td style="width:60px">&nbsp;LA</td>
+                                                                <td style="width:60px">&nbsp;ലത</td>
+                                                                <td style="width:60px">&nbsp;latha</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;va</td>
+                                                                <td style="width:60px">&nbsp;വ</td>
+                                                                <td style="width:60px">&nbsp;VA</td>
+                                                                <td style="width:60px">&nbsp;വരം</td>
+                                                                <td style="width:60px">&nbsp;varam</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;Sa</td>
+                                                                <td>&nbsp;ശ<br>
+                                                                </td>
+                                                                <td>&nbsp;SHA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ശരം</td>
+                                                                <td style="width:60px">&nbsp;Saram</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;sha<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ഷ</td>
+                                                                <td style="width:60px">&nbsp;SSA</td>
+                                                                <td style="width:60px">&nbsp;ഷാരം</td>
+                                                                <td style="width:60px">&nbsp;shaaram</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;sa</td>
+                                                                <td style="width:60px">&nbsp;സ</td>
+                                                                <td style="width:60px">&nbsp;SA</td>
+                                                                <td style="width:60px">&nbsp;സാരം</td>
+                                                                <td style="width:60px">&nbsp;saaram</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;ha</td>
+                                                                <td style="width:60px">&nbsp;ഹ</td>
+                                                                <td style="width:60px">&nbsp;HA</td>
+                                                                <td style="width:60px">&nbsp;ഹാരം</td>
+                                                                <td style="width:60px">&nbsp;haaram</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;La</td>
+                                                                <td>&nbsp;ള<br>
+                                                                </td>
+                                                                <td>&nbsp;LLA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ഇള</td>
+                                                                <td style="width:60px">&nbsp;iLa</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;zha<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;ഴ</td>
+                                                                <td style="width:60px">&nbsp;LLLA</td>
+                                                                <td style="width:60px">&nbsp;ഇഴ</td>
+                                                                <td style="width:60px">&nbsp;izha</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px">&nbsp;rra</td>
+                                                                <td style="width:60px">&nbsp;റ</td>
+                                                                <td style="width:60px">&nbsp;RRA</td>
+                                                                <td style="width:60px">&nbsp;പറ</td>
+                                                                <td style="width:60px">&nbsp;parra</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:55px;height:17px">&nbsp;ta</td>
+                                                                <td style="width:63px;height:17px">&nbsp;റ്റ</td>
+                                                                <td style="width:163px;height:17px">&nbsp;RRA, VIRAMA,
+                                                                    RRA<br></td>
+                                                                <td style="width:62px;height:17px">പാറ്റ&nbsp;</td>
+                                                                <td style="width:67px;height:17px">&nbsp;paata</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:54px;height:16px">&nbsp;$<br>
+                                                                </td>
+                                                                <td style="width:69px;height:16px">U+20B9<br></td>
+                                                                <td style="width:169px;height:16px">&nbsp;INDIAN RUPEE
+                                                                    SIGN <br></td>
+                                                                <td style="width:60px">&nbsp;$100</td>
+                                                                <td style="width:60px">&nbsp;₹100</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h2><a name="TOC-Semi-vowel-signs"></a>Semi-vowel signs</h2>
+                                                    Described by examples:<br><br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:60px;height:22px">&nbsp;sya<br></td>
+                                                                <td style="width:60px;height:22px">&nbsp;സ്യ</td>
+                                                                <td style="width:134px;height:22px">&nbsp;SA, VIRAMA,
+                                                                    YA<br>
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;സസ്യം</td>
+                                                                <td style="width:60px">&nbsp;sasyam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px;height:22px">&nbsp;sra<br>
+                                                                </td>
+                                                                <td style="width:60px;height:22px">&nbsp;സ്ര </td>
+                                                                <td style="width:134px;height:22px">&nbsp;SA, VIRAMA,
+                                                                    RA<br></td>
+                                                                <td style="width:60px">&nbsp;സ്രാവം</td>
+                                                                <td style="width:60px">&nbsp;sraavam</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px;height:22px">&nbsp;sla</td>
+                                                                <td style="width:60px;height:22px">&nbsp;സ്ല</td>
+                                                                <td style="width:134px;height:22px">&nbsp;SA, VIRAMA, LA
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;സ്ലാവിക്</td>
+                                                                <td style="width:60px">&nbsp;slaavik</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px;height:22px">&nbsp;sLa</td>
+                                                                <td style="width:60px;height:22px">&nbsp;സ്ള</td>
+                                                                <td style="width:134px;height:22px">&nbsp;SA, VIRAMA,
+                                                                    LLA</td>
+                                                                <td style="width:60px">&nbsp;ബ്ളോഗ്</td>
+                                                                <td style="width:60px">&nbsp;bLOg</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:60px;height:22px">&nbsp;sva</td>
+                                                                <td style="width:60px;height:22px">&nbsp;സ്വ</td>
+                                                                <td style="width:134px;height:22px">&nbsp;SA, VIRAMA, VA
+                                                                </td>
+                                                                <td style="width:60px">&nbsp;സ്വരം</td>
+                                                                <td style="width:60px">&nbsp;svaram</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h2><a name="TOC-Separate-two-words-without-space"></a>Separate two words
+                                                            without space</h2>Use '_' (underscore) to start a new
+                                                    sequence out of context from previously typed text. The same effect
+                                                    can be achieved by typing a space instead and then later removing
+                                                    it. This feature is useful for:<br>
+                                                    <ul>
+                                                        <li>Get chillu letter in contexts where it would otherwise form
+                                                            a conjunct with the following consonant. Example: 'nna' for
+                                                            ന്ന Vs 'n_na' for ൻന.</li>
+                                                        <li>Get a full vowel in-between a word<br></li>
+                                                    </ul>If just '_' alone is typed, then that will appear to the user
+                                                    and will be consumed only when a valid letter is typed after
+                                                    it.<br><br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:122px;height:16px">&nbsp;pon_</td>
+                                                                <td style="width:112px;height:16px">&nbsp;പൊൻ_</td>
+                                                                <td style="width:291px;height:16px">&nbsp;PA, SIGN O,
+                                                                    CHILLU N, _<br></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:122px;height:16px">&nbsp;pon_naaNyam
+                                                                </td>
+                                                                <td style="width:112px;height:16px">
+                                                                    &nbsp;പൊൻനാണ്യം&nbsp;</td>
+                                                                <td style="width:291px;height:16px">&nbsp;PA, SIGN O,
+                                                                    CHILLU N, NA, SIGN AA ... <br></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;m~adani</td>
+                                                                <td>&nbsp;മ്അദനി</td>
+                                                                <td>&nbsp;MA, VIRAMA, A, DA, NA, SIGNI<span
+                                                                        style="font-size:10pt">&nbsp;</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:122px;height:16px">&nbsp;in_ka</td>
+                                                                <td style="width:112px;height:16px">&nbsp;ഇൻക <br></td>
+                                                                <td style="width:291px;height:16px">&nbsp;I, CHILLU N,
+                                                                    KA</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table><br>
+                                                    <table border="1" cellspacing="0"
+                                                        style="font-size:13.3333px;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width:113px;height:17px">&nbsp;n_~erra</td>
+                                                                <td style="width:104px;height:17px">&nbsp;ൻെറ</td>
+                                                                <td style="width:289px;height:17px">&nbsp;CHILLU-N, SIGN
+                                                                    E, RRA</td>
+                                                                <td style="width:169px;height:17px">&nbsp;എൻെറ</td>
+                                                                <td style="width:65px;height:17px">&nbsp;en:~erra</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width:113px;height:21px">&nbsp;L_~ka</td>
+                                                                <td style="width:104px;height:21px">&nbsp;ൾ്ക</td>
+                                                                <td style="width:289px;height:21px">&nbsp;CHILLU-LL,
+                                                                    VIRAMA, KA</td>
+                                                                <td style="width:169px;height:21px">&nbsp;visual: ൾ,
+                                                                    subscript ക</td>
+                                                                <td style="width:65px;height:21px">&nbsp;L_~ka</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h2><a name="TOC-Consonant-Cluster"></a>Consonant Cluster</h2>
+                                                    <div>Consonant Cluster in a word is the sequence of English letters
+                                                        representing more than one consonant. As an example, the word in
+                                                        Mozhi, 'Sruthi' has the consonant cluster: 'Sr' - for consonants
+                                                        'Sa' and 'ra'. This definition is used in sections below.<br>
+                                                        <h2><a name="TOC-Chillus"></a>Chillus</h2>The letters N, n, m,
+                                                        r, l or L at the beginning of a word or after a vowel will form
+                                                        a chillu. Anusvara (ം) is considered a chillu.<br><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;svam<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;സ്വം <br>
+                                                                    </td>
+                                                                    <td style="width:243px;height:22px">&nbsp;SA,
+                                                                        VIRAMA, VA, ANUSVARA <br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;avan<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;അവൻ</td>
+                                                                    <td style="width:243px;height:22px">&nbsp;A, VA,
+                                                                        CHILLU N<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Sr</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ശ്ര് <br>
+                                                                    </td>
+                                                                    <td style="width:243px;height:22px">&nbsp;SHA,
+                                                                        VIRAMA, RA, VIRAMA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;n</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ൻ</td>
+                                                                    <td style="width:243px;height:22px">&nbsp;CHILLU N
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;m</td>
+                                                                    <td>&nbsp;ം</td>
+                                                                    <td>&nbsp;ANUSVARA</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a name="TOC-Chillu-or-conjunct"></a>Chillu or conjunct</h2>
+                                                        A chillu-capable letter in a consonant cluster will not form a
+                                                        chillu if that<span
+                                                            style="background-color:transparent;font-size:10pt">&nbsp;cluster
+                                                            starts with the following sequence. (Please ignore the
+                                                            ending 'a' which is to show the cluster in its simplest
+                                                            form):</span>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;NTa<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്ട&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, TA<br></td>
+                                                                    <td style="width:60px">&nbsp;മണ്ട</td>
+                                                                    <td style="width:60px">&nbsp;maNTa</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;NTha</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്ഠ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, THA</td>
+                                                                    <td style="width:60px">&nbsp;കുണ്ഠിതം</td>
+                                                                    <td style="width:60px">&nbsp;kuNThitham</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;NDa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്ഡ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, DDA</td>
+                                                                    <td style="width:60px">&nbsp;പാണ്ഡു</td>
+                                                                    <td style="width:60px">&nbsp;paaNDu</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;NDha</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്ഢ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, DDHA</td>
+                                                                    <td style="width:60px">&nbsp;കണ്ഢം</td>
+                                                                    <td style="width:60px">&nbsp;kaNDham</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;NNa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്ണ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, NNA<br></td>
+                                                                    <td style="width:60px">&nbsp;കണ്ണ്</td>
+                                                                    <td style="width:60px">&nbsp;kaNN</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Nma<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്മ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, MA<br></td>
+                                                                    <td style="width:60px">&nbsp;വെണ്മ</td>
+                                                                    <td style="width:60px">&nbsp;veNma</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Nya</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്യ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, YA<br></td>
+                                                                    <td style="width:60px">&nbsp;നാണ്യം</td>
+                                                                    <td style="width:60px">&nbsp;naaNyam</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Nva<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ണ്വ&nbsp;
+                                                                        <br></td>
+                                                                    <td style="width:172px;height:22px">&nbsp;NNA,
+                                                                        VIRAMA, VA<br></td>
+                                                                    <td style="width:60px">&nbsp;കണ്വൻ</td>
+                                                                    <td style="width:60px">&nbsp;kaNvan</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;ntha<br>
+                                                                    </td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്ത&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, TA</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;തന്ത</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;thantha
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;nthha<br>
+                                                                    </td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്ഥ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, THA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;പാന്ഥൻ</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;paanthhan
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;nda</td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്ദ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, DA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;നന്ദി</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;nandi</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;ndha<br>
+                                                                    </td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്ധ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, DHA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;അന്ധൻ</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;andhan</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;nna</td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്ന&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, NA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;പിന്നെ</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;pinne</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;nma</td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്മ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, MA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;നന്മ</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;nanma</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;nya</td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്യ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, YA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;അന്യം</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;anyam</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;nra</td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്ര&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, RA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;ന്രസ്ഥി
+                                                                    </td>
+                                                                    <td style="width:92px;height:17px">&nbsp;nrasthhi
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:62px;height:17px">&nbsp;nva</td>
+                                                                    <td style="width:50px;height:17px">&nbsp;ന്വ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:173px;height:17px">&nbsp;NA,
+                                                                        VIRAMA, VA<br></td>
+                                                                    <td style="width:70px;height:17px">&nbsp;അന്വയം</td>
+                                                                    <td style="width:92px;height:17px">&nbsp;anvayam
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:63px;height:17px">&nbsp;mpa<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:17px">&nbsp;മ്പ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:17px">&nbsp;MA,
+                                                                        VIRAMA, PA<br></td>
+                                                                    <td style="width:59px;height:17px">&nbsp;കമ്പം</td>
+                                                                    <td style="width:94px;height:17px">&nbsp;kampam</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:63px;height:17px">&nbsp;mma<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:17px">&nbsp;മ്മ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:17px">&nbsp;MA,
+                                                                        VIRAMA, MA<br></td>
+                                                                    <td style="width:59px;height:17px">&nbsp;അമ്മ</td>
+                                                                    <td style="width:94px;height:17px">&nbsp;amma</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:63px;height:17px">&nbsp;mya</td>
+                                                                    <td style="width:60px;height:17px">&nbsp;മ്യ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:17px">&nbsp;MA,
+                                                                        VIRAMA, YA<br></td>
+                                                                    <td style="width:59px;height:17px">&nbsp;രമ്യം</td>
+                                                                    <td style="width:94px;height:17px">&nbsp;ramyam</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:63px;height:17px">&nbsp;mra<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:17px">&nbsp;മ്ര <br>
+                                                                    </td>
+                                                                    <td style="width:172px;height:17px">&nbsp;MA,
+                                                                        VIRAMA, RA<br></td>
+                                                                    <td style="width:59px;height:17px">&nbsp;കമ്രം</td>
+                                                                    <td style="width:94px;height:17px">&nbsp;kamram</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:63px;height:17px">&nbsp;mla</td>
+                                                                    <td style="width:60px;height:17px">&nbsp;മ്ല&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:17px">&nbsp;MA,
+                                                                        VIRAMA, LA<br></td>
+                                                                    <td style="width:59px;height:17px">&nbsp;അമ്ലം</td>
+                                                                    <td style="width:94px;height:17px">&nbsp;amlam</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;rya<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ര്യ <br>
+                                                                    </td>
+                                                                    <td style="width:173px;height:22px">&nbsp;RA,
+                                                                        VIRAMA, YA</td>
+                                                                    <td style="width:60px">&nbsp;ഭാര്യ</td>
+                                                                    <td style="width:60px">&nbsp;bhaarya</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>&nbsp;lpa</td>
+                                                                    <td>&nbsp;ല്പ <br></td>
+                                                                    <td>&nbsp;LA, VIRAMA, PA<br></td>
+                                                                    <td style="width:60px">&nbsp;അല്പം</td>
+                                                                    <td style="width:60px">&nbsp;alpam</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;lma</td>
+                                                                    <td>&nbsp;ല്മ <br></td>
+                                                                    <td>&nbsp;LA, VIRAMA, MA<br></td>
+                                                                    <td style="width:60px">&nbsp;കല്മഷം</td>
+                                                                    <td style="width:60px">&nbsp;kalmasham</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;lya<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ല്യ <br>
+                                                                    </td>
+                                                                    <td style="width:175px;height:22px">&nbsp;LA,
+                                                                        VIRAMA, YA</td>
+                                                                    <td style="width:60px">&nbsp;അഹല്യ</td>
+                                                                    <td style="width:60px">&nbsp;ahalya</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;lva</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ല്വ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:175px;height:22px">&nbsp;LA,
+                                                                        VIRAMA, VA</td>
+                                                                    <td style="width:60px">&nbsp;വില്വാദ്രി</td>
+                                                                    <td style="width:60px">&nbsp;vilvaadri</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;lla</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ല്ല&nbsp;
+                                                                    </td>
+                                                                    <td style="width:175px;height:22px">&nbsp;LA,
+                                                                        VIRAMA, LA</td>
+                                                                    <td style="width:60px">&nbsp;ഇല്ല</td>
+                                                                    <td style="width:60px">&nbsp;illa</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Lya<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ള്യ <br>
+                                                                    </td>
+                                                                    <td style="width:176px;height:22px">&nbsp;LLA,
+                                                                        VIRAMA, YA</td>
+                                                                    <td style="width:60px">&nbsp;ജാള്യം</td>
+                                                                    <td style="width:60px">&nbsp;jaaLyam</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;LLa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ള്ള&nbsp;
+                                                                    </td>
+                                                                    <td style="width:176px;height:22px">&nbsp;LLA,
+                                                                        VIRAMA, LLA</td>
+                                                                    <td style="width:60px">&nbsp;ഉള്ള</td>
+                                                                    <td style="width:60px">&nbsp;uLLa</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>Following examples are for more than two consonants in a
+                                                        consonant cluster.<br><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:63px;height:28px">&nbsp;..NDya<br>
+                                                                    </td>
+                                                                    <td style="width:48px;height:28px">&nbsp;ണ്ഡ്യ<br>
+                                                                    </td>
+                                                                    <td style="width:305px;height:28px">&nbsp;NNA,
+                                                                        VIRAMA, DDA, VIRAMA, YA</td>
+                                                                    <td style="width:79px;height:28px">&nbsp;പാണ്ഡ്യൻ
+                                                                    </td>
+                                                                    <td style="width:60px">&nbsp;paaNDyan</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:63px;height:30px">&nbsp;..nthrya
+                                                                    </td>
+                                                                    <td style="width:48px;height:30px">&nbsp;ന്ത്ര്യ<br>
+                                                                    </td>
+                                                                    <td style="width:305px;height:30px">&nbsp;NA,
+                                                                        VIRAMA, TA, VIRAMA, RA, VIRAMA, YA<br></td>
+                                                                    <td style="width:79px;height:30px">
+                                                                        &nbsp;സ്വാതന്ത്ര്യം</td>
+                                                                    <td style="width:60px">&nbsp;svaathanthryam</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h3><a name="TOC-Exceptions"></a>Exceptions</h3>If a consonant
+                                                        cluster starts as &lt;chill-capable consonant A&gt;&lt;consonant
+                                                        B&gt;&lt;consonant B&gt; then consonant A will form chillu.
+                                                        Example:<br><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;alppam<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;അൽപ്പം<br>
+                                                                    </td>
+                                                                    <td style="width:306px;height:22px">&nbsp;A, CHILLU
+                                                                        L, PA, VIRAMA, PA, ANUSVARA<br></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>The 'മ്യ' and 'മ്ര' conjuncts are not formed if they follow
+                                                        'സം'. Example:<br><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:96px;height:16px">
+                                                                        &nbsp;samyOgam<br>
+                                                                    </td>
+                                                                    <td style="width:73px;height:16px">&nbsp;സംയോഗം<br>
+                                                                    </td>
+                                                                    <td style="width:254px;height:16px">&nbsp;SA,
+                                                                        ANUSVARA, YA, SIGN OO, ...<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:96px;height:18px">&nbsp;samrambham
+                                                                    </td>
+                                                                    <td style="width:73px;height:18px">&nbsp;സംരംഭം</td>
+                                                                    <td style="width:254px;height:18px">&nbsp;SA,
+                                                                        ANUSVARA, RA, ANUSVARA, ...</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>If 'മ്യ' and 'മ്ര' conjunct are required after&nbsp;<span
+                                                                style="font-size:13.3333px;background-color:transparent">'സ'</span><span
+                                                                style="background-color:transparent;font-size:10pt">,
+                                                                then please use '_' to make it the word initial
+                                                                consonant cluster. Examples:</span></p>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:92px;height:15px">&nbsp;sa_myak<br>
+                                                                    </td>
+                                                                    <td style="width:73px;height:15px">&nbsp;സമ്യക്<br>
+                                                                    </td>
+                                                                    <td style="width:262px;height:15px">&nbsp;SA, MA,
+                                                                        VIRAMA, YA, ...<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:92px;height:24px">&nbsp;sa_mraaTT
+                                                                    </td>
+                                                                    <td style="width:73px;height:24px">&nbsp;സമ്രാട്ട്
+                                                                    </td>
+                                                                    <td style="width:262px;height:24px">&nbsp;SA, MA,
+                                                                        VIRAMA, RA, SIGN AA, ...</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>While writing '<span style="font-size:13.3333px">ൻ്റ'
+                                                            conjunct by 'nt..' sequence, 'n' will produce Chillu-N as
+                                                            follows:</span><br><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="font-size:13.3333px;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:54px;height:30px">&nbsp;nta</td>
+                                                                    <td style="width:54px;height:30px">&nbsp;ൻ്റ</td>
+                                                                    <td style="width:196px;height:30px">&nbsp;CHILLU-N,
+                                                                        VIRAMA, RRA</td>
+                                                                    <td style="width:73px;height:30px">&nbsp;എൻ്റെ</td>
+                                                                    <td style="width:70px;height:30px">&nbsp;ente</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:54px;height:17px">&nbsp;nrra</td>
+                                                                    <td style="width:54px;height:17px">&nbsp;ൻറ</td>
+                                                                    <td style="width:196px;height:17px">&nbsp;CHILLU N,
+                                                                        RRA</td>
+                                                                    <td style="width:73px;height:17px">&nbsp;എൻറോൾ</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;enrrOL</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a
+                                                                name="TOC-Explicit-Chandrakkala-instead-of-Chillu"></a>Explicit
+                                                                Chandrakkala instead of Chillu</span></h2>To get
+                                                        chandrakkala instead of a chillu or after U-sign use '~'
+                                                        (tilda). If '~' is placed between two consonants, it would use a
+                                                        ZWNJ to produce virama explicit.<br><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:92px;height:17px">&nbsp;avan~<br>
+                                                                    </td>
+                                                                    <td style="width:74px;height:17px">&nbsp;അവന്<br>
+                                                                    </td>
+                                                                    <td style="width:359px;height:17px">&nbsp;..., NA,
+                                                                        VIRAMA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:92px;height:17px">&nbsp;avanu~</td>
+                                                                    <td style="width:74px;height:17px">&nbsp;അവനു്</td>
+                                                                    <td style="width:359px;height:17px">&nbsp;..., NA,
+                                                                        SIGN U, VIRAMA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:92px;height:17px">&nbsp;vaalmeeki
+                                                                    </td>
+                                                                    <td style="width:74px;height:17px">&nbsp;വാല്മീകി
+                                                                        &nbsp;</td>
+                                                                    <td style="width:359px;height:17px">&nbsp;..., LA,
+                                                                        VIRAMA, MA, ... &nbsp;<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:92px;height:17px">&nbsp;vaal_meeki
+                                                                    </td>
+                                                                    <td style="width:74px;height:17px">
+                                                                        &nbsp;വാൽമീകി&nbsp;</td>
+                                                                    <td style="width:359px;height:17px">&nbsp;...,
+                                                                        CHILLU L, MA, ...<span
+                                                                            style="font-size:10pt">&nbsp;&nbsp;</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:92px;height:17px">&nbsp;vaal~meeki
+                                                                    </td>
+                                                                    <td style="width:74px;height:17px">
+                                                                        &nbsp;വാല്&zwnj;മീകി</td>
+                                                                    <td style="width:359px;height:17px">&nbsp;..., LA,
+                                                                        VIRAMA,&nbsp;ZWNJ,&nbsp;MA, ...<span
+                                                                            style="background-color:transparent;font-size:10pt">&nbsp;&nbsp;</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:92px;height:20px">&nbsp;vaal~_meeki
+                                                                    </td>
+                                                                    <td style="width:74px;height:20px">
+                                                                        &nbsp;വാല്മീകി&nbsp;</td>
+                                                                    <td style="width:359px;height:20px">&nbsp;..., LA,
+                                                                        VIRAMA, MA, ...</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>Sometimes users type '~' even when it is not required at the
+                                                            word endings. Those '~'s are always consumed.</p>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;ath</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;അത്</td>
+                                                                    <td style="width:137px;height:22px">&nbsp;A, TA,
+                                                                        VIRAMA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:18px">&nbsp;ath~<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:18px">
+                                                                        &nbsp;അത്&nbsp;<br></td>
+                                                                    <td style="width:137px;height:18px">&nbsp;A, TA,
+                                                                        VIRAMA</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a name="TOC-Stand-alone-combining-marks"></a>Stand-alone
+                                                            combining marks<br></h2><span
+                                                            style="font-size:13.3333px">The Chandrakkala character '~'
+                                                            (tilde) can be used to get stand-alone signs.</span><br
+                                                            style="font-size:13.3333px"><br style="font-size:13.3333px">
+                                                        <table border="1" cellspacing="0"
+                                                            style="font-size:13.3333px;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:75px;height:20px">&nbsp;~<br></td>
+                                                                    <td style="width:87px;height:20px">&nbsp;്</td>
+                                                                    <td style="width:191px;height:20px">&nbsp;VIRAMA
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:75px;height:15px">&nbsp;~a</td>
+                                                                    <td style="width:87px;height:15px">
+                                                                        &lt;empty&gt;&nbsp;</td>
+                                                                    <td style="width:191px;height:15px">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:75px;height:17px">&nbsp;~aa</td>
+                                                                    <td style="width:87px;height:17px">&nbsp;ാ</td>
+                                                                    <td style="width:191px;height:17px">&nbsp;SIGN AA
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:75px;height:19px">&nbsp;~i<br></td>
+                                                                    <td style="width:87px;height:19px">&nbsp;ി</td>
+                                                                    <td style="width:191px;height:19px">&nbsp;SIGN I<br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:75px;height:20px">&nbsp;~am</td>
+                                                                    <td style="width:87px;height:20px">&nbsp;ം</td>
+                                                                    <td style="width:191px;height:20px">
+                                                                        &nbsp;ANUSVARA<br></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a name="TOC-Doubling-of-NYA-"></a>Doubling of ഞ (NYA)</h2>
+                                                        The sequence 'nj' produces 'ഞ്ഞ്', iff it is typed after any of
+                                                        the following:<br>
+                                                        <ol>
+                                                            <li>a vowel<br></li>
+                                                            <li>a vowel sign</li>
+                                                            <li>a consonant</li>
+                                                        </ol>At the same time, 'njnja' also produces 'ഞ്ഞ'.&nbsp;<span
+                                                            style="background-color:transparent;font-size:10pt">To
+                                                            produce singular form in those cases, use underscore '_', by
+                                                            forcing it to be at word initial position.&nbsp;</span>
+                                                    </div>
+                                                    <div><span
+                                                            style="background-color:transparent;font-size:10pt">Examples:</span>
+                                                    </div>
+                                                    <div><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>&nbsp;njaan</td>
+                                                                    <td>&nbsp;ഞാൻ</td>
+                                                                    <td>&nbsp;NYA, SIGN AA, CHILLU N</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;manj</td>
+                                                                    <td>&nbsp;മഞ്ഞ്</td>
+                                                                    <td>&nbsp;MA, NYA, VIRAMA, NYA, VIRAMA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;manjnj</td>
+                                                                    <td>&nbsp;മഞ്ഞ്</td>
+                                                                    <td>&nbsp;MA, NYA, VIRAMA, NYA, VIRAMA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;manjnj~</td>
+                                                                    <td>&nbsp;മഞ്ഞ്</td>
+                                                                    <td>&nbsp;MA, NYA, VIRAMA, NYA, VIRAMA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:73px;height:15px">&nbsp;ma_nj</td>
+                                                                    <td style="width:75px;height:15px">&nbsp;<span
+                                                                            style="font-size:13.3333px">മ</span>ഞ്<br>
+                                                                    </td>
+                                                                    <td style="width:277px;height:15px">&nbsp;MA, NYA,
+                                                                        VIRAMA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;jnjaanam</td>
+                                                                    <td>&nbsp;ജ്ഞാനം</td>
+                                                                    <td>&nbsp;JA, NYA, SIGN AA, NA, ANUSVARA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;anjjanam</td>
+                                                                    <td>&nbsp;അഞ്ജനം</td>
+                                                                    <td>&nbsp;A, NYA, VIRAMA, JA, NA, ANUSVARA</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p><br>However a similar nasal, 'ng' (ങ NGA) does not behaves in
+                                                            this fashion. Examples:</p>
+                                                        <table border="1" cellspacing="0"
+                                                            style="font-size:13.3333px;font-weight:400;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>&nbsp;sing</td>
+                                                                    <td>&nbsp;സിങ്</td>
+                                                                    <td>&nbsp;SA, SIGN I, NGA, VIRAMA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;ingng</td>
+                                                                    <td>&nbsp;ഇങ്ങ്</td>
+                                                                    <td>&nbsp;A, NGA, VIRAMA, NGA, VIRAMA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;Saarngga</td>
+                                                                    <td>&nbsp;ശാർങ്ഗ</td>
+                                                                    <td>&nbsp;SHA, CHILLU RR, NGA, VIRAMA, GA<br></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div>
+                                                        <h2><a name="TOC-Shortcuts-for-conjuncts"></a>Shortcuts for
+                                                            conjuncts</h2>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:58px;height:18px">&nbsp;nka<br>
+                                                                    </td>
+                                                                    <td style="width:58px;height:18px">&nbsp;ങ്ക <br>
+                                                                    </td>
+                                                                    <td style="width:172px;height:18px">&nbsp;NGA,
+                                                                        VIRAMA, KA<br>
+                                                                    </td>
+                                                                    <td style="width:74px;height:18px">&nbsp;മങ്ക</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;manka</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:58px;height:18px">&nbsp;ncha<br>
+                                                                    </td>
+                                                                    <td style="width:58px;height:18px">&nbsp;ഞ്ച <br>
+                                                                    </td>
+                                                                    <td style="width:172px;height:18px">&nbsp;GYA,
+                                                                        VIRAMA, CA<br></td>
+                                                                    <td style="width:74px;height:18px">&nbsp;പുഞ്ച</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;puncha</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:58px;height:18px">&nbsp;nchha</td>
+                                                                    <td style="width:58px;height:18px">&nbsp;ഞ്ഛ <br>
+                                                                    </td>
+                                                                    <td style="width:172px;height:18px">&nbsp;GYA,
+                                                                        VIRAMA, CHA</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;വാഞ്ഛ</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;vaanchha
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:58px;height:17px">&nbsp;ccha</td>
+                                                                    <td style="width:58px;height:17px">&nbsp;ച്ച</td>
+                                                                    <td style="width:172px;height:17px">&nbsp;CA,
+                                                                        VIRAMA, CA</td>
+                                                                    <td style="width:74px;height:17px">&nbsp;പച്ച</td>
+                                                                    <td style="width:74px;height:17px">&nbsp;paccha</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:58px;height:18px">&nbsp;cchha</td>
+                                                                    <td style="width:58px;height:18px">&nbsp;ച്ഛ <br>
+                                                                    </td>
+                                                                    <td style="width:172px;height:18px">&nbsp;CA,
+                                                                        VIRAMA, CHA</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;പുച്ഛം</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;pucchham
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:58px;height:17px">&nbsp;tta</td>
+                                                                    <td style="width:58px;height:17px">&nbsp;ട്ട<br>
+                                                                    </td>
+                                                                    <td style="width:172px;height:17px">&nbsp;TTA,
+                                                                        VIRAMA, TTA<br></td>
+                                                                    <td style="width:74px;height:17px">&nbsp;പട്ട</td>
+                                                                    <td style="width:74px;height:17px">&nbsp;patta</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:58px;height:18px">&nbsp;ttha</td>
+                                                                    <td style="width:58px;height:18px">&nbsp;ത്ത&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:18px">&nbsp;TA,
+                                                                        VIRAMA, TA</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;തത്ത</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;thattha
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:58px;height:18px">&nbsp;tthha</td>
+                                                                    <td style="width:58px;height:18px">&nbsp;ത്ഥ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:172px;height:18px">&nbsp;TA,
+                                                                        VIRAMA, THA</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;അർത്ഥം</td>
+                                                                    <td style="width:74px;height:18px">&nbsp;artthham
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a name="TOC-Error-correction-in-conjuncts"></a>
+                                                            <p>Error correction in conjuncts</p>
+                                                        </h2>
+                                                        <div>
+                                                            <table border="1" cellspacing="0"
+                                                                style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="width:65px;height:15px">&nbsp;Tta
+                                                                        </td>
+                                                                        <td style="width:53px;height:15px">&nbsp;ട്ട
+                                                                        </td>
+                                                                        <td style="width:148px;height:15px">&nbsp;TTA,
+                                                                            VIRAMA, TTA</td>
+                                                                        <td style="width:60px">&nbsp;പട്ട</td>
+                                                                        <td style="width:60px">&nbsp;paTta</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:65px;height:15px">&nbsp;tTa
+                                                                        </td>
+                                                                        <td style="width:53px;height:15px">&nbsp;ട്ട
+                                                                        </td>
+                                                                        <td style="width:148px;height:15px">&nbsp;TTA,
+                                                                            VIRAMA, TTA</td>
+                                                                        <td style="width:60px">&nbsp;പട്ട</td>
+                                                                        <td style="width:60px">&nbsp;patTa</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:65px;height:15px">&nbsp;nTa
+                                                                        </td>
+                                                                        <td style="width:53px;height:15px">&nbsp;ണ്ട
+                                                                        </td>
+                                                                        <td style="width:148px;height:15px">&nbsp;NNA,
+                                                                            VIRAMA, TTA</td>
+                                                                        <td style="width:60px">&nbsp;പണ്ട്</td>
+                                                                        <td style="width:60px">&nbsp;panT</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:65px;height:15px">&nbsp;Nta
+                                                                        </td>
+                                                                        <td style="width:53px;height:15px">&nbsp;ണ്ട
+                                                                        </td>
+                                                                        <td style="width:148px;height:15px">&nbsp;NNA,
+                                                                            VIRAMA, TTA</td>
+                                                                        <td style="width:60px">&nbsp;പണ്ട്</td>
+                                                                        <td style="width:60px">&nbsp;paNt</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <h2><a name="TOC-Mapping-for-unmapped-keys"></a>Mapping for
+                                                            unmapped keys</h2>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:59px;height:22px">&nbsp;ea</td>
+                                                                    <td style="width:59px;height:22px">&nbsp;ഈ</td>
+                                                                    <td style="width:136px;height:22px">&nbsp;II</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:59px;height:22px">&nbsp;ee</td>
+                                                                    <td style="width:59px;height:22px">&nbsp;ഈ</td>
+                                                                    <td style="width:136px;height:22px">&nbsp;II</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:59px;height:22px">&nbsp;ie</td>
+                                                                    <td style="width:59px;height:22px">&nbsp;ഈ</td>
+                                                                    <td style="width:136px;height:22px">&nbsp;II</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:59px;height:22px">&nbsp;ei</td>
+                                                                    <td style="width:59px;height:22px">&nbsp;ഐ</td>
+                                                                    <td style="width:136px;height:22px">&nbsp;AI</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:59px;height:22px">&nbsp;oo</td>
+                                                                    <td style="width:59px;height:22px">&nbsp;ഊ</td>
+                                                                    <td style="width:136px;height:22px">&nbsp;UU</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:59px;height:22px">&nbsp;ou</td>
+                                                                    <td style="width:59px;height:22px">&nbsp;ഔ</td>
+                                                                    <td style="width:136px;height:22px">&nbsp;AU<br>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;c<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ൿ</td>
+                                                                    <td style="width:134px;height:22px">&nbsp;CHILLU
+                                                                        K<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;fa<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഫ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:134px;height:22px">&nbsp;PHA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;qa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഖ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:134px;height:22px">&nbsp;KHA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;wa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;വ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:134px;height:22px">&nbsp;VA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;xa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ക്സ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:134px;height:22px">&nbsp;KA,
+                                                                        VIRAMA, SA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;za</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ശ</td>
+                                                                    <td style="width:134px;height:22px">&nbsp;SHA</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;A<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ആ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:133px;height:22px">&nbsp;AA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ba<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ബ്ബ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:133px;height:22px">&nbsp;BA,
+                                                                        VIRAMA, BA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ca</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ച്ച</td>
+                                                                    <td style="width:133px;height:22px">&nbsp;CA,
+                                                                        VIRAMA, CA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Fa<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഫ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:133px;height:22px">&nbsp;PHA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ga</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഗ്ഗ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:133px;height:22px">&nbsp;GA,
+                                                                        VIRAMA, GA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;I</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഈ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:133px;height:22px">&nbsp;II</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ja</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ജ്ജ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:133px;height:22px">&nbsp;JA,
+                                                                        VIRAMA, JA<br></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ka<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ക്ക&nbsp;
+                                                                    </td>
+                                                                    <td style="width:132px;height:22px">&nbsp;KA,
+                                                                        VIRAMA, KA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ma<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;മ്മ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:132px;height:22px">&nbsp;MA,
+                                                                        VIRAMA, MA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Pa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;പ്പ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:132px;height:22px">&nbsp;PA,
+                                                                        VIRAMA, PA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Qa<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഖ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:132px;height:22px">&nbsp;KHA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;U</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഊ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:132px;height:22px">&nbsp;UU</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Va</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;വ്വ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:132px;height:22px">&nbsp;VA,
+                                                                        VIRAMA, VA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Wa</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;വ്വ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:132px;height:22px">&nbsp;VA,
+                                                                        VIRAMA, VA</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Xa<br></td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ക്സ</td>
+                                                                    <td style="width:134px;height:22px">&nbsp;KA,
+                                                                        VIRAMA, SSA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ya<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;യ്യ <br>
+                                                                    </td>
+                                                                    <td style="width:134px;height:22px">&nbsp;YA,
+                                                                        VIRAMA, YA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:32px">&nbsp;Za<br></td>
+                                                                    <td style="width:60px;height:32px">&nbsp;ഴ</td>
+                                                                    <td style="width:134px;height:32px">&nbsp;LLLA</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a name="TOC-Extra-elongation-for-vowel-signs"></a>Extra
+                                                            elongation for vowel signs</h2>('..' denotes that the last
+                                                        letter can be repeated to get last Malayalam vowel sign
+                                                        repeated)
+                                                    </div>
+                                                    <div><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;aaa..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ആാാ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;AA, SIGN
+                                                                        AA, SIGN AA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;kaaa..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;കാാ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;KA, SIGN
+                                                                        AA, SIGN AA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;AA..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ആാ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;AA, SIGN
+                                                                        AA, SIGN AA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;kAA..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;കാാ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;KA, SIGN
+                                                                        AA, SIGN AA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;iii..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ഈൗ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;II, AU
+                                                                        LENGTH MARK<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;kiii..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;കീീ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;KA, SIGN
+                                                                        II, SIGN II<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;eee..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ഈൗ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;II, AU
+                                                                        LENGTH MARK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;keee..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;കീീ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;KA, SIGN
+                                                                        II, SIGN II</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:15px">&nbsp;II..</td>
+                                                                    <td style="width:89px;height:15px">&nbsp;ഈൗ..</td>
+                                                                    <td style="width:300px;height:15px">&nbsp;II, AU
+                                                                        LENGTH MARK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;kII..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;കീീ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;KA, SIGN
+                                                                        II, SIGN II</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:15px">&nbsp;EE..</td>
+                                                                    <td style="width:89px;height:15px">&nbsp;ഏേ..</td>
+                                                                    <td style="width:300px;height:15px">&nbsp;EE, SIGN
+                                                                        EE</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;kEE..</td>
+                                                                    <td style="width:89px;height:17px"><span
+                                                                            style="font-size:13.3333px">&nbsp;കേേ..</span>&nbsp;
+                                                                    </td>
+                                                                    <td style="width:300px;height:17px">&nbsp;KA, SIGN
+                                                                        EE, SIGN EE</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;uuu..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ഊൗ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;UU, AU
+                                                                        LENGTH MARK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:22px">&nbsp;kuuu..</td>
+                                                                    <td style="width:89px;height:22px">&nbsp;കൂൂ..</td>
+                                                                    <td style="width:300px;height:22px">&nbsp;KA, SIGN
+                                                                        UU, SIGN UU<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:15px">&nbsp;UU..&nbsp;
+                                                                    </td>
+                                                                    <td style="width:89px;height:15px">&nbsp;ഊൗ..</td>
+                                                                    <td style="width:300px;height:15px">&nbsp;UU, AU
+                                                                        LENGTH MARK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;kUU..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;കൂൂ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;KA, SIGN
+                                                                        UU, SIGN UU</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;ooo..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ഊൗ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;UU, AU
+                                                                        LENGTH MARK</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:15px">&nbsp;kooo..</td>
+                                                                    <td style="width:89px;height:15px">&nbsp;കൂൂ..</td>
+                                                                    <td style="width:300px;height:15px">&nbsp;KA, SIGN
+                                                                        UU, SIGN UU</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;OO..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ഓാ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;AU, SIGN
+                                                                        AA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;kOO..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;കോോ..</td>
+                                                                    <td style="width:300px;height:17px">
+                                                                        &nbsp;KA,&nbsp;AU LENGTH MARK, AU LENGTH MARK
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:71px;height:17px">&nbsp;auu..</td>
+                                                                    <td style="width:89px;height:17px">&nbsp;ഔൗ..</td>
+                                                                    <td style="width:300px;height:17px">&nbsp;AU, AU
+                                                                        LENGTH MARK</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>All vowel producing letters have above property.</p>
+                                                        <p>
+                                                        </p>
+                                                        <h2><a name="TOC-Archaic-letters"></a>Archaic letters</h2>To get
+                                                        the archaic form of a letter, please use the symbol '\'
+                                                        following it. Even more archaic form is given out by repeating
+                                                        it - example: '\\'. In the table below an archaic character is
+                                                        represented by its codepoint, if it is not available in the <a
+                                                            href="https://github.com/googlefonts/noto-fonts/tree/master/unhinted/NotoSansMalayalam"
+                                                            target="_blank" rel="nofollow">latest version of Noto Sans
+                                                            Malayalam</a>&nbsp;font.<br><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;അ\<br></td>
+                                                                    <td style="width:48px;height:17px">&nbsp;a\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;ഽ
+                                                                    </td>
+                                                                    <td style="width:211px;height:17px">
+                                                                        &nbsp;AVAGRAHA<br>
+                                                                    </td>
+                                                                    <td style="width:90px;height:17px">&nbsp;അസോഽസൗ</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;asOa\sau
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:19px">&nbsp;ഇ\</td>
+                                                                    <td style="width:48px;height:19px">&nbsp;ii\&nbsp;
+                                                                    </td>
+                                                                    <td style="width:62px;height:19px">&nbsp;ൟ</td>
+                                                                    <td style="width:211px;height:19px">&nbsp;ARCHAIC
+                                                                        II&nbsp;</td>
+                                                                    <td style="width:90px;height:19px">&nbsp;ൟറ</td>
+                                                                    <td style="width:70px;height:19px">&nbsp;ii\rra</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;ക്\</td>
+                                                                    <td style="width:48px;height:17px">&nbsp;k\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;ൿ</td>
+                                                                    <td style="width:211px;height:17px">&nbsp;CHILLU
+                                                                        K<br></td>
+                                                                    <td style="width:90px;height:17px">&nbsp;ആമ്പിൿ</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;aampik\
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;റ്റ്\<br>
+                                                                    </td>
+                                                                    <td style="width:48px;height:17px">&nbsp;t\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;ഺ്</td>
+                                                                    <td style="width:211px;height:17px">&nbsp;TTTA <br>
+                                                                    </td>
+                                                                    <td style="width:90px;height:17px">&nbsp;അഺ്</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;at\</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;റ്റ\<br>
+                                                                    </td>
+                                                                    <td style="width:48px;height:17px">&nbsp;ta\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;ഺ&nbsp;
+                                                                    </td>
+                                                                    <td style="width:211px;height:17px">&nbsp;TTTA</td>
+                                                                    <td style="width:90px;height:17px">&nbsp;അഺ</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;ata\</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;ൻ\</td>
+                                                                    <td style="width:48px;height:17px">&nbsp;n\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;ഩ്</td>
+                                                                    <td style="width:211px;height:17px">&nbsp;NNNA <br>
+                                                                    </td>
+                                                                    <td style="width:90px;height:17px">&nbsp;അഩ്</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;an\</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;ന\</td>
+                                                                    <td style="width:48px;height:17px">&nbsp;na\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;ഩ</td>
+                                                                    <td style="width:211px;height:17px">&nbsp;NNNA&nbsp;
+                                                                    </td>
+                                                                    <td style="width:90px;height:17px">&nbsp;അഩ</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;ana\</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;നു\</td>
+                                                                    <td style="width:48px;height:17px">&nbsp;nu\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;൹</td>
+                                                                    <td style="width:211px;height:17px">&nbsp;DATE
+                                                                        MARK<br></td>
+                                                                    <td style="width:90px;height:17px">&nbsp;17-൹</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;17-nu\</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;&nbsp;ം\\</td>
+                                                                    <td>&nbsp;m\\</td>
+                                                                    <td>&nbsp;U+0D00</td>
+                                                                    <td>&nbsp;ANUSVARA ABOVE</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;&nbsp;ം\\\</td>
+                                                                    <td>&nbsp;m\\\</td>
+                                                                    <td>&nbsp;U+0D01</td>
+                                                                    <td>&nbsp;CANDRABINDU</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;&nbsp;ം\</td>
+                                                                    <td>&nbsp;m\</td>
+                                                                    <td>&nbsp;ൔ</td>
+                                                                    <td>&nbsp;CHILLU M</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;യ്\</td>
+                                                                    <td>&nbsp;y\&nbsp;</td>
+                                                                    <td>&nbsp;ൕ</td>
+                                                                    <td>&nbsp;CHILLU Y</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;ഴ്\</td>
+                                                                    <td>&nbsp;zh\</td>
+                                                                    <td>&nbsp;ൖ</td>
+                                                                    <td>&nbsp;CHILLU LLL</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;ക്\</td>
+                                                                    <td>&nbsp;k\</td>
+                                                                    <td>&nbsp;ൿ</td>
+                                                                    <td>&nbsp;CHILLU K</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:17px">&nbsp;ർ\</td>
+                                                                    <td style="width:48px;height:17px">&nbsp;r\</td>
+                                                                    <td style="width:62px;height:17px">&nbsp;ൎ&nbsp;<br>
+                                                                    </td>
+                                                                    <td style="width:211px;height:17px">&nbsp;DOT REPH
+                                                                    </td>
+                                                                    <td style="width:90px;height:17px">&nbsp;ഭാൎയ്യ</td>
+                                                                    <td style="width:70px;height:17px">&nbsp;bhaar\ya
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:47px;height:20px">&nbsp;<span
+                                                                            style="color:rgb(0,0,0);font-family:sans-serif;line-height:21px"><span>₹\<br></span></span>
+                                                                    </td>
+                                                                    <td style="width:48px;height:20px">&nbsp;$\</td>
+                                                                    <td style="width:62px;height:20px"><span
+                                                                            style="color:rgb(0,0,0);font-family:sans-serif;font-size:16px;line-height:21px">&nbsp;₨</span>&nbsp;
+                                                                    </td>
+                                                                    <td style="width:211px;height:20px">&nbsp;RUPEE SIGN
+                                                                    </td>
+                                                                    <td style="width:90px;height:20px">&nbsp;₨10</td>
+                                                                    <td style="width:70px;height:20px">&nbsp;$\10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;പറ\</td>
+                                                                    <td>&nbsp;parra\</td>
+                                                                    <td>&nbsp;൏</td>
+                                                                    <td>&nbsp;PARA SIGN</td>
+                                                                    <td>&nbsp;</td>
+                                                                    <td>&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:43px;height:17px">&nbsp;ൾ\<br></td>
+                                                                    <td style="width:44px;height:17px">&nbsp;L\</td>
+                                                                    <td style="width:84px;height:17px">&nbsp;ഌ</td>
+                                                                    <td style="width:200px;height:17px">&nbsp;VOCALIC
+                                                                        L<br></td>
+                                                                    <td style="width:75px;height:17px">&nbsp;ഌകാരം</td>
+                                                                    <td style="width:86px;height:17px">&nbsp;L\kaaram
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:43px;height:17px">&nbsp;<span
+                                                                            style="font-size:13.3333px">ക്&zwnj;ള്\</span>
+                                                                    </td>
+                                                                    <td style="width:44px;height:17px">&nbsp;kL\</td>
+                                                                    <td style="width:84px;height:17px">&nbsp;കൢ*</td>
+                                                                    <td style="width:200px;height:17px">&nbsp;KA, SIGN
+                                                                        VOCALIC L</td>
+                                                                    <td style="width:75px;height:17px">&nbsp;കൢപ്തം</td>
+                                                                    <td style="width:86px;height:17px">&nbsp;kL\ptham
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:43px;height:17px">&nbsp;ള്ള്\<br>
+                                                                    </td>
+                                                                    <td style="width:44px;height:17px">&nbsp;LL\</td>
+                                                                    <td style="width:84px;height:17px">&nbsp;ൡ</td>
+                                                                    <td style="width:200px;height:17px">&nbsp;VOCALIC LL
+                                                                    </td>
+                                                                    <td style="width:75px;height:17px">&nbsp;ൡതം</td>
+                                                                    <td style="width:86px;height:17px">&nbsp;LL\tham
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:43px;height:17px">&nbsp;<span
+                                                                            style="font-size:13.3333px">ക്ള്ള്\</span>
+                                                                    </td>
+                                                                    <td style="width:44px;height:17px">&nbsp;kLL\</td>
+                                                                    <td style="width:84px;height:17px">&nbsp;കൣ*</td>
+                                                                    <td style="width:200px;height:17px">&nbsp;KA, SIGN
+                                                                        VOCALIC LL</td>
+                                                                    <td style="width:75px;height:17px">&nbsp;കൣതം</td>
+                                                                    <td style="width:86px;height:17px">&nbsp;kLL\tham
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:43px;height:19px">&nbsp;കൗ\</td>
+                                                                    <td style="width:44px;height:19px">&nbsp;kau\</td>
+                                                                    <td style="width:84px;height:19px">&nbsp;കൌ*<br>
+                                                                    </td>
+                                                                    <td style="width:200px;height:19px">&nbsp;KA, SIGN
+                                                                        AU<br></td>
+                                                                    <td style="width:75px;height:19px">&nbsp;കൌതുകം</td>
+                                                                    <td style="width:86px;height:19px">&nbsp;kau\thukam
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:43px;height:15px">&nbsp;</td>
+                                                                    <td style="width:44px;height:15px">&nbsp;~\</td>
+                                                                    <td style="width:84px;height:15px">&nbsp;U+0D3C</td>
+                                                                    <td style="width:200px;height:15px">&nbsp;CIRCLE
+                                                                        ABOVE VIRAMA</td>
+                                                                    <td style="width:75px;height:15px">&nbsp;</td>
+                                                                    <td style="width:86px;height:15px">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:43px;height:15px">&nbsp;</td>
+                                                                    <td style="width:44px;height:15px">&nbsp;~\\</td>
+                                                                    <td style="width:84px;height:15px">&nbsp;U+0D3B</td>
+                                                                    <td style="width:200px;height:15px">&nbsp;VERTICAL
+                                                                        BAR VIRAMA</td>
+                                                                    <td style="width:75px;height:15px">&nbsp;</td>
+                                                                    <td style="width:86px;height:15px">&nbsp;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>* The consonant 'k' is just an example consonant to show
+                                                        the vowel sign.
+                                                    </div>
+                                                    <div><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:57px;height:18px">&nbsp;1\<br>
+                                                                    </td>
+                                                                    <td style="width:100px;height:18px">&nbsp;൧<br>
+                                                                    </td>
+                                                                    <td style="width:177px;height:18px">&nbsp;ONE<br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:57px;height:30px">&nbsp;10\<br>
+                                                                    </td>
+                                                                    <td style="width:100px;height:30px">&nbsp;൰</td>
+                                                                    <td style="width:177px;height:30px">&nbsp;TEN<br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:57px;height:30px">&nbsp;100\</td>
+                                                                    <td style="width:100px;height:30px">&nbsp;൱</td>
+                                                                    <td style="width:177px;height:30px">
+                                                                        &nbsp;HUNDRED<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:57px;height:30px">&nbsp;1000\</td>
+                                                                    <td style="width:100px;height:30px">&nbsp;൲</td>
+                                                                    <td style="width:177px;height:30px">
+                                                                        &nbsp;THOUSAND<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:57px;height:30px">&nbsp;1/4\</td>
+                                                                    <td style="width:100px;height:30px">&nbsp;൳</td>
+                                                                    <td style="width:177px;height:30px">&nbsp;ONE
+                                                                        QUARTER <br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:57px;height:30px">&nbsp;1/2\</td>
+                                                                    <td style="width:100px;height:30px">&nbsp;൴</td>
+                                                                    <td style="width:177px;height:30px">&nbsp;ONE
+                                                                        HALF<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:57px;height:32px">&nbsp;3/4\</td>
+                                                                    <td style="width:100px;height:32px">&nbsp;൵</td>
+                                                                    <td style="width:177px;height:32px">&nbsp;THREE
+                                                                        QUARTERS<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;...</td>
+                                                                    <td>&nbsp;...</td>
+                                                                    <td>&nbsp;&lt;remaining fractions&gt;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p><span style="background-color:transparent;font-size:10pt">Digits
+                                                                after a Malayalam digit will be a converted to Malayalam
+                                                                digit.</span></p>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:52px;height:17px">&nbsp;1\210</td>
+                                                                    <td style="width:52px;height:17px">&nbsp;൧൨൧൦</td>
+                                                                    <td style="width:206px;height:17px">&nbsp;ONE, TWO,
+                                                                        ONE, ZERO<br></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a name="TOC-Joiners"></a>
+                                                        </h2>Explicit joiners can be typed as follows:<br><br
+                                                            style="font-size:13.3333px">
+                                                        <table border="1" cellspacing="0"
+                                                            style="font-size:13.3333px;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:46px;height:41px">&nbsp;+<br></td>
+                                                                    <td style="width:89px;height:41px">&nbsp;U+200D<br>
+                                                                    </td>
+                                                                    <td style="width:222px;height:41px">&nbsp;ZERO WIDTH
+                                                                        JOINER<br></td>
+                                                                    <td style="width:150px;height:41px">&nbsp;ന്&zwj;
+                                                                        (legacy sequence)</td>
+                                                                    <td style="width:126px;height:41px">&nbsp;n~+</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:46px;height:18px">&nbsp;|<br></td>
+                                                                    <td style="width:89px;height:18px">&nbsp;U+200C</td>
+                                                                    <td style="width:222px;height:18px">&nbsp;ZERO
+                                                                        WIDTH&nbsp;NON JOINER</td>
+                                                                    <td style="width:150px;height:18px">&nbsp;ൻ്&zwnj;റ
+                                                                    </td>
+                                                                    <td style="width:126px;height:18px">&nbsp;n|~rra
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:46px;height:16px">&nbsp;||</td>
+                                                                    <td style="width:89px;height:16px">&nbsp;U+200B</td>
+                                                                    <td style="width:222px;height:16px">&nbsp;ZERO WIDTH
+                                                                        SPACE<br></td>
+                                                                    <td style="width:150px;height:16px">&nbsp;ൻ&#8203;െ
+                                                                    </td>
+                                                                    <td style="width:126px;height:16px">&nbsp;n||~e</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div><br></div>
+                                                        <h2><a name="TOC-Escape-by-word"></a>Escape by word</h2>
+                                                        <p><span style="background-color:transparent;font-size:10pt">Transliteration
+                                                                is not attempted if it is preceded by '='.</span></p>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;=a
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;a</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p>Keys after an English letter will be kept as it is. Along
+                                                            with English letters, it is continued for the following
+                                                            special characters: . : / @. When any of the rest of the
+                                                            special characters including space is entered, escaping is
+                                                            broken and transliteration will be continuted. Examples:</p>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:215px;height:19px">
+                                                                        &nbsp;=abc@example.com enna&nbsp;</td>
+                                                                    <td style="width:233px;height:19px">
+                                                                        &nbsp;abc@example.com എന്ന</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;=http://www.9.com-l</td>
+                                                                    <td>&nbsp;http://www.9.com-ൽ</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;9l</td>
+                                                                    <td>&nbsp;9ൽ</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p style="font-size:13.3333px"><br></p>
+                                                        <h2><a name="TOC-Compatibility-mapping"></a>
+                                                            <p>Compatibility mapping</p>
+                                                        </h2>Previous versions of Mozhi had 'Ra' stands for റ. Since
+                                                        vowel (ഋ) and consonant(റ) can be distinguished from their
+                                                        contexts, 'Ra' can be overloaded for&nbsp;<span
+                                                            style="font-size:13.3333px;background-color:transparent">റ
+                                                            too</span><span
+                                                            style="background-color:transparent;font-size:10pt">.
+                                                            ഏxamples:</span>
+                                                    </div>
+                                                    <div><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;pR<br></td>
+                                                                    <td style="width:60px;height:22px">&nbsp;പൃ</td>
+                                                                    <td style="width:156px;height:22px">&nbsp;PA, SIGN
+                                                                        VOCALIC R<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;pRa<br>
+                                                                    </td>
+                                                                    <td style="width:60px;height:22px">&nbsp;പ്ര</td>
+                                                                    <td style="width:156px;height:22px">&nbsp;PA,
+                                                                        VIRAMA, RA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;R</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;ഋ</td>
+                                                                    <td style="width:156px;height:22px">&nbsp;VOCALIC
+                                                                        R<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:60px;height:22px">&nbsp;Ra</td>
+                                                                    <td style="width:60px;height:22px">&nbsp;റ</td>
+                                                                    <td style="width:156px;height:22px">&nbsp;RRA</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&nbsp;aR</td>
+                                                                    <td>&nbsp;അർ <br></td>
+                                                                    <td>&nbsp;A, CHILLU R<br></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2><a name="TOC-Legacy-encoding"></a>Legacy encoding</h2>
+                                                        <div>Chillu sequences mentioned in Unicode standard before its
+                                                            version 5.1 are produced by adding '^' after the standard
+                                                            chillu-letter.</div>
+                                                        <div><br></div>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:52px;height:24px">&nbsp;n^<br>
+                                                                    </td>
+                                                                    <td style="width:52px;height:24px">&nbsp;ൻ^&nbsp;
+                                                                    </td>
+                                                                    <td style="width:52px;height:24px">&nbsp;ന്&zwj;
+                                                                    </td>
+                                                                    <td style="width:164px;height:24px">&nbsp;NA,
+                                                                        VIRAMA, ZWJ<br></td>
+                                                                    <td style="width:103px;height:24px">
+                                                                        &nbsp;മോഹന്&zwj;ലാല്&zwj;</td>
+                                                                    <td style="width:138px;height:24px">
+                                                                        &nbsp;mohan^_laal^</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:52px;height:17px">&nbsp;l^</td>
+                                                                    <td style="width:52px;height:17px">&nbsp;ൽ^</td>
+                                                                    <td style="width:52px;height:17px">&nbsp;ല്&zwj;
+                                                                    </td>
+                                                                    <td style="width:164px;height:17px">&nbsp;LA,
+                                                                        VIRAMA, ZWJ</td>
+                                                                    <td style="width:103px;height:17px">
+                                                                        &nbsp;മോഹന്&zwj;ലാല്&zwj;</td>
+                                                                    <td style="width:138px;height:17px">
+                                                                        &nbsp;mohan^_laal^</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div>
+                                                        <div style="font-size:13.3333px"><br></div>
+                                                        <div style="font-size:13.3333px">There are multiple legacy
+                                                            encoding for&nbsp;<span
+                                                                style="font-size:13.3333px;background-color:transparent">ൻ്റ.
+                                                                The sequence specified in the standard is not fully
+                                                                supported in popular input tools or OSes.</span></div>
+                                                        <div style="font-size:13.3333px"><br></div>
+                                                        <table border="1" cellspacing="0"
+                                                            style="font-size:13.3333px;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:88px;height:63px">&nbsp;nt^a<br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;nta^</span><br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;nte^</span><br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;...</span>
+                                                                    </td>
+                                                                    <td style="width:76px;height:63px">&nbsp;ൻ്റ്<span
+                                                                            style="font-size:13.3333px">^a</span><br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;ൻ്റ^</span><span
+                                                                            style="font-size:13.3333px"><br></span><span
+                                                                            style="font-size:13.3333px">&nbsp;ൻ്റെ^</span>
+                                                                    </td>
+                                                                    <td style="width:39px;height:63px">&nbsp;ന്റ</td>
+                                                                    <td style="width:155px;height:63px">&nbsp;NA,
+                                                                        VIRAMA, RRA</td>
+                                                                    <td style="width:76px;height:63px">&nbsp;എന്റെ</td>
+                                                                    <td style="width:82px;height:63px">
+                                                                        &nbsp;ent^e<br>&nbsp;ente^</td>
+                                                                    <td style="width:255px;height:63px">&nbsp;Sequence
+                                                                        common in Linux community and many input tools
+                                                                        in the market.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:88px;height:63px">&nbsp;nt^^a<br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;nta^^</span><br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;nte^^</span><span
+                                                                            style="font-size:13.3333px">&nbsp;</span><br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;...</span>
+                                                                    </td>
+                                                                    <td style="width:76px;height:63px">&nbsp;ൻ്റ്^<span
+                                                                            style="font-size:13.3333px">^a</span><br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;ൻ്റ</span><span
+                                                                            style="font-size:13.3333px">^^<br></span><span
+                                                                            style="font-size:13.3333px">&nbsp;ൻ്റെ</span><span
+                                                                            style="font-size:13.3333px">^^</span></td>
+                                                                    <td style="width:39px;height:63px">&nbsp;ന്&zwj;റ
+                                                                    </td>
+                                                                    <td style="width:155px;height:63px">&nbsp;NA,
+                                                                        VIRAMA, ZWJ, RRA</td>
+                                                                    <td style="width:76px;height:63px">
+                                                                        &nbsp;&nbsp;എന്&zwj;റെ</td>
+                                                                    <td style="width:82px;height:63px">
+                                                                        &nbsp;ent^^e&nbsp;<br
+                                                                            style="font-size:13.3333px"><span
+                                                                            style="font-size:13.3333px">&nbsp;ente^^</span>
+                                                                    </td>
+                                                                    <td style="width:255px;height:63px">&nbsp;Used by
+                                                                        Microsoft Windows natively.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <h2><a name="TOC-Backspace"></a>Backspace</h2>
+                                                    <div>On backspace, use the OS's backspace operation. However, next
+                                                        key would use the context of the existing input. Example:</div>
+                                                    <div><br>
+                                                        <table border="1" cellspacing="0"
+                                                            style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="width:155px;height:18px">&nbsp;nna<br>
+                                                                    </td>
+                                                                    <td style="width:56px;height:18px">&nbsp;ന്ന</td>
+                                                                    <td style="width:152px;height:18px">&nbsp;NA,
+                                                                        VIRAMA, NA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:155px;height:17px">
+                                                                        &nbsp;nna&lt;backspace&gt;<br></td>
+                                                                    <td style="width:56px;height:17px">&nbsp;ന്</td>
+                                                                    <td style="width:152px;height:17px">&nbsp;NA,
+                                                                        VIRAMA<br></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width:155px;height:21px">
+                                                                        &nbsp;nna&lt;backspace&gt;ka</td>
+                                                                    <td style="width:56px;height:21px">&nbsp;ങ്ക</td>
+                                                                    <td style="width:152px;height:21px">&nbsp;NGA,
+                                                                        VIRAMA, KA<br></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table><br>
+                                                    </div>
+                                                    <div>
+                                                        <h2><a name="TOC-Convenience-Mapping-and-Emoji"></a>Convenience
+                                                            Mapping and Emoji</h2>
+                                                        <div style="font-size:13.3333px">Following mapping does not have
+                                                            anything to do with Malayalam; however, these are useful
+                                                            essentials:</div>
+                                                        <div style="font-size:13.3333px"><br>
+                                                            <table border="1" cellspacing="0"
+                                                                style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="width:155px;height:18px">&nbsp;--<br>
+                                                                        </td>
+                                                                        <td style="width:56px;height:18px">&nbsp;—</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="width:155px;height:17px">
+                                                                            &nbsp;-&gt;<br></td>
+                                                                        <td style="width:56px;height:17px">&nbsp;→</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>&nbsp;:)</td>
+                                                                        <td>&nbsp;😊</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>&nbsp;:(</td>
+                                                                        <td>&nbsp;☹</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>&nbsp;:D</td>
+                                                                        <td>&nbsp;😄</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>&nbsp;:x</td>
+                                                                        <td>&nbsp;😘</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
