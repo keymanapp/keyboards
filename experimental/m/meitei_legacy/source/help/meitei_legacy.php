@@ -10,10 +10,7 @@ It follows the keystrokes of the legacy font Ratha99, but produces Unicode data.
 
 <h2>Keyboard Layout</h2>
 
-<div id='osk-container'>
-  <h3>Desktop Keyboard Layout</h3>
-  <div id='osk' data-states='default shift'></div>
-</div>
+<img src="meitei_legacy.png" alt="Meitei keyboard layout" style="width:600px;">
 
 <h2 Usage Notes</h2>
 <p>
