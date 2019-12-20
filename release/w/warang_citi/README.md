@@ -16,4 +16,3 @@ Warang Citi Keyboard based on English (US) keyboard.
  * Mobile devices
  * Desktop devices
  * Tablet devices
-
