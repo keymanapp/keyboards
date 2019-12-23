@@ -122,9 +122,9 @@ c disable English characters
 + [SHIFT K_U] > nul
 + [SHIFT K_I] > nul
 + [SHIFT K_O] > nul
-+ [SHIFT K_P] > nul
-+ [SHIFT K_LBRKT] > nul
-+ [SHIFT K_RBRKT] > nul
+c + [SHIFT K_P] > nul
+c + [SHIFT K_LBRKT] > nul
+c + [SHIFT K_RBRKT] > nul
 + [SHIFT K_F] > nul
 + [SHIFT K_G] > nul
 + [SHIFT K_K] > nul
@@ -138,7 +138,7 @@ c disable English characters
 + [SHIFT K_PERIOD] > nul
 
 + [ALT K_BKQUOTE] > nul
-+ [ALT K_HYPHEN] > nul
+c + [ALT K_HYPHEN] > nul
 + [ALT K_EQUAL] > nul
 + [ALT K_Q] > nul
 + [ALT K_R] > nul
@@ -209,5 +209,13 @@ c disable English characters
 + [CTRL ALT K_COMMA] > nul
 + [CTRL ALT K_PERIOD] > nul
 + [CTRL ALT K_SLASH] > nul
+
+
+c extra
+U+002E U+002E + [K_PERIOD]  > U+2026
++ [SHIFT K_LBRKT]           > U+00D7
++ [SHIFT K_RBRKT]           > U+00F7
++ [SHIFT K_P]               > U+2212
++ [ALT K_HYPHEN]            > U+2010
 
 c End of keyboard
