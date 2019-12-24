@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1352.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>12.0.64.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>..\..\..\..\release\gff\gff_amharic\source\readme.htm</ReadMeFile>
     <GraphicFile>sideimage-gurage.bmp</GraphicFile>
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keyman-build\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
@@ -53,6 +52,13 @@
       <Item>
         <Name>Amharic Keyboard Manual (English)</Name>
         <FileName>AmharicTyping-English.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>የጉራጊና ኪቦርድ መርጀ</Name>
+        <FileName>GurageTyping-Gurage-ጉራጊና.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -104,12 +110,6 @@
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\release\gff\gff_amharic\source\readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>..\..\..\..\release\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</Name>
       <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
@@ -128,13 +128,13 @@
       <FileType>.pdf</FileType>
     </File>
     <File>
-      <Name>..\gff_amharic.kvk</Name>
+      <Name>..\..\..\..\release\gff\gff_amharic\build\gff_amharic.kvk</Name>
       <Description>File gff_amharic.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\gff_amharic.kmx</Name>
+      <Name>..\..\..\..\release\gff\gff_amharic\build\gff_amharic.kmx</Name>
       <Description>Keyboard አማርኛ (Amharic)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
@@ -145,12 +145,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.bmp</FileType>
     </File>
+    <File>
+      <Name>GurageTyping-Gurage-ጉራጊና.pdf</Name>
+      <Description>File GurageTyping-Gurage-ጉራጊና.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ጉራጌ (Gurage)</Name>
       <ID>gff_gurage</ID>
-      <Version>0.5</Version>
+      <Version>0.6</Version>
       <OSKFont>Zebidar-R.ttf</OSKFont>
       <DisplayFont>Zebidar-R.ttf</DisplayFont>
       <Languages>
