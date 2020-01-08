@@ -1,10 +1,11 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c The Ge'ez Frontier Foundation's mnemonic input method for Blin script under Eritrean conventions on US-QWERTY
-c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
+c The Ge'ez Frontier Foundation's mnemonic input method for the experimental Gurage orthography
+c devised by Dr. Fekede Menuta.  The keyboard is intended for use with the "Zebidar" font which
+c in turn is deived from Abyssinica SIL with glyph modifications and private use additions.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_gurage/0.5/gff_gurage.php
+c Documentation :  https://help.keyman.com/keyboard/gff_gurage/0.6/gff_gurage.php
 c Source        :  https://github.com/keymanapp/keyboards/gff_gurage
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
@@ -16,8 +17,8 @@ c
 store(&KEYBOARDVERSION) '0.6'
 store(&NAME) 'ጉራጌ (Gurage)'
 store(&ETHNOLOGUECODE) 'sgw'
-store(&COPYRIGHT) '© 2009-2019 Ge’ez Frontier Foundation'
-  store(&Message) 'This is a Gurage language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&COPYRIGHT) '© 2019-2020 Ge’ez Frontier Foundation'
+  store(&Message) 'This is a Gurage language mnemonic input method.  It requires the "Zebidar" Ethiopic which contains experimental characters.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
 store(&BITMAP) 'gff_gurage.ico'
