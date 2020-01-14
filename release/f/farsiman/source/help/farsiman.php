@@ -4,7 +4,7 @@
   require_once('header.php');
 ?>
 
-<p>Farsiman is a Farsi phonetic keyboard that enables anyone who uses a reqular English keybaord write in Farsi. Look at the three screenshots in the welcome.html and you are immediately ready to write away in Farsi.</p>
+<p>Farsiman is a Farsi phonetic keyboard that enables anyone who uses a regular English keyboard write in Farsi. Look at the three screenshots in the welcome.htm and you are immediately ready to write away in Farsi.</p>
 
 <div id='osk-container'>
   <h2>Desktop Keyboard Layout</h2>
