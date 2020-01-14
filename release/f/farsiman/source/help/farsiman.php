@@ -8,7 +8,16 @@
 
 <div id='osk-container'>
   <h2>Desktop Keyboard Layout</h2>
-  <div id='osk' data-states='default shift rightalt ctrlalt'></div>
+  <p>
+To get:
+</p>
+<ul>
+<li>Zero width joiner (ZWJ), type "Alt + ."</li>
+<li>Zero width non-joiner (ZWNJ), type "Alt + Spacebar"</li>
+<li>Right-to-left mark (RLM), type "Alt + r", and</li>
+<li>Left-to-right mark (LRM), type "Alt + l".</li>
+</ul>
+  <div id='osk' data-states='default shift alt ctrlalt'></div>
 </div>
 
 <div id='osk-phone-container'>

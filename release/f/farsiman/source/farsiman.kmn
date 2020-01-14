@@ -141,7 +141,7 @@ c + [SHIFT K_RBRKT] > nul
 c + [ALT K_HYPHEN] > nul
 + [ALT K_EQUAL] > nul
 + [ALT K_Q] > nul
-+ [ALT K_R] > nul
+c + [ALT K_R] > nul
 + [ALT K_T] > nul
 + [ALT K_Y] > nul
 + [ALT K_U] > nul
@@ -155,14 +155,14 @@ c + [ALT K_HYPHEN] > nul
 + [ALT K_H] > nul
 + [ALT K_J] > nul
 + [ALT K_K] > nul
-+ [ALT K_L] > nul
+c + [ALT K_L] > nul
 + [ALT K_COLON] > nul
 + [ALT K_QUOTE] > nul
 + [ALT K_Z] > nul
 + [ALT K_X] > nul
 + [ALT K_C] > nul
 + [ALT K_COMMA] > nul
-+ [ALT K_PERIOD] > nul
+c + [ALT K_PERIOD] > nul
 
 + [CTRL ALT K_BKQUOTE] > nul
 + [CTRL ALT K_1] > nul
@@ -217,5 +217,10 @@ U+002E U+002E + [K_PERIOD]  > U+2026
 + [SHIFT K_RBRKT]           > U+00F7
 + [SHIFT K_P]               > U+2212
 + [ALT K_HYPHEN]            > U+2010
+
++ [ALT K_PERIOD]            > U+200D    c Zero width joiner (ZWJ)
++ [ALT K_SPACE]             > U+200C    c Zero width non-joiner (ZWNJ)
++ [ALT K_R]                 > U+200F    c Right-to-left mark (RLM)
++ [ALT K_L]                 > U+200E    c Left-to-right mark (LRM)
 
 c End of keyboard
