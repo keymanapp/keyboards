@@ -6,11 +6,12 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keyman-build\keymandesktop.msi</MSIFileName>
+    <GraphicFile>..\..\..\gff\gff_gurage\source\sideimage-gurage.bmp</GraphicFile>
+    <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
   <StartMenu>
-    <Folder>Zebidar Gurage Keyboard</Folder>
+    <Folder>ጉራጌ (Gurage)</Folder>
     <AddUninstallEntry/>
     <Items>
       <Item>
@@ -28,6 +29,13 @@
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
+        <Name>የጉራጊና ኪቦርድ መርጀ</Name>
+        <FileName>GurageTyping-Gurage-ጉራጊና.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
         <Name>Gurage Keyboard Manual (English)</Name>
         <FileName>GurageTyping-English.pdf</FileName>
         <Arguments></Arguments>
@@ -35,14 +43,7 @@
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
-        <Name>OFL (Font License)</Name>
-        <FileName>OFL.txt</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>Amharic Keyboard Manual (Amharic)</Name>
+        <Name>Amharic Keyboard Manual (አማርኛ)</Name>
         <FileName>AmharicTyping-Amharic.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
@@ -56,8 +57,8 @@
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
-        <Name>የጉራጊና ኪቦርድ መርጀ</Name>
-        <FileName>GurageTyping-Gurage-ጉራጊና.pdf</FileName>
+        <Name>Font License</Name>
+        <FileName>OFL.txt</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -67,16 +68,52 @@
   <Info>
     <Version URL="">0.6</Version>
     <Name URL="">Zebidar Gurage Keyboard</Name>
-    <Copyright URL="">© 2019 Ge’ez Frontier Foundation</Copyright>
-    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Copyright URL="">© 2019-2020 Ge’ez Frontier Foundation</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Ge’ez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
   <Files>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\gff_gurage.kvks</Name>
+      <Description>File gff_gurage.kvks</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvks</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\GurageTyping-English.pdf</Name>
+      <Description>File GurageTyping-English.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\GurageTyping-Gurage-ጉራጊና.pdf</Name>
+      <Description>File GurageTyping-Gurage-ጉራጊና.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\sideimage-gurage.bmp</Name>
+      <Description>File sideimage-gurage.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
     <File>
       <Name>..\..\..\gff\gff_gurage\source\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\Zebidar-R.ttf</Name>
+      <Description>Font Zebidar Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\gff\gff_gurage\build\gff_gurage.kvk</Name>
@@ -86,33 +123,9 @@
     </File>
     <File>
       <Name>..\..\..\gff\gff_gurage\build\gff_gurage.kmx</Name>
-      <Description>Keyboard Ge'ez</Description>
+      <Description>Keyboard ጉራጌ (Gurage)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\gff\gff_gurage\source\GurageTyping-English.pdf</Name>
-      <Description>File GurageTyping-English.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\gff\gff_gurage\source\Zebidar-R.ttf</Name>
-      <Description>Font Zebidar Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\gff\gff_gurage\source\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\gff\gff_amharic\source\AmharicTyping-Amharic.pdf</Name>
@@ -139,16 +152,16 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\..\..\gff\gff_gurage\source\sideimage-gurage.bmp</Name>
-      <Description>File sideimage-gurage.bmp</Description>
+      <Name>..\..\..\gff\gff_amharic\build\gff_amharic.js</Name>
+      <Description>File gff_amharic.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
+      <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\..\..\gff\gff_gurage\source\GurageTyping-Gurage-ጉራጊና.pdf</Name>
-      <Description>File GurageTyping-Gurage-ጉራጊና.pdf</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -166,8 +179,6 @@
       <Name>አማርኛ (Amharic)</Name>
       <ID>gff_amharic</ID>
       <Version>1.8</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</DisplayFont>
       <Languages>
         <Language ID="am">Amharic</Language>
       </Languages>
