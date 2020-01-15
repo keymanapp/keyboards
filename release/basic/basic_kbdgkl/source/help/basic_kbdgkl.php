@@ -14,12 +14,11 @@
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
 
 <p>^a will produce â (available on aAeEiIoOuU).</p>
-<p>`a will produce ą (available on aAeEiIoOuU).</p>
+<p>`a will produce à (available on aAeEiIoOuU).</p>
+<p>~a will produce ã (available on aAnNoO).</p>
 <p>´a will produce á (available on aAeEiIoOuUyY).</p>
 <p>´c will produce ç (available on cC).</p>
-<p>~a will produce ã (available on aAnNoO).</p>
 <p>¨a will produce ä (available on aAeEiIoOuUyY).</p>
-<p>`a will produce à (available on aAeEiIoOuU).</p>
 
 
 <h1>Keyboard Layout</h1>
