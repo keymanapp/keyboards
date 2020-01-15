@@ -1,7 +1,7 @@
 Shavian IGC keyboard
 ==============
 
-© Shavian.info
+© 2020 Shavian.info
 
 Version 1.0
 
