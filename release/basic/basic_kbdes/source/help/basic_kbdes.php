@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Tatar Basic Keyboard Help';
+  $pagename = 'Spanish Variation Basic Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
