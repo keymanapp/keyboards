@@ -9,7 +9,7 @@ Description
 -----------
 
 Burushãski Girminas was developed by Quwat K. Sunny for Burushãski of yasin while working on a large project. 
-It can be used flawlessly in other variants Burushaski, shina and khowar.
+It can be used flawlessly in other variants of Burushaski, shina and khowar.
 
 
 Links
