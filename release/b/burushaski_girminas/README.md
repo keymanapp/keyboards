@@ -10,6 +10,9 @@ Burushãski Girminas is a Latin-base keyboard developed by Quwat K. Sunny for Bu
 
 Links
 -----
+Download:     https://keyman.com/keyboards/burushaski_girminas
+Sponsored by: http://www.dardistantimes.com
+
 
 Supported Platforms
 -------------------
