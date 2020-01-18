@@ -9,7 +9,7 @@
     Gaelic Basic 1.1 generated from template.
 </p>
 
-<p>This keyboard makes use of the SHIFT+RALT+O keys which are set by default when Keyman is installed. 
+<p>This keyboard makes use of the SHIFT+RALT+O key which is set by default when Keyman is installed. 
 	To use this keyboard, you must go to <b>Configuration.../Hotkeys</b> and select the hotkey for "Switch Keyman Desktop Off". 
 	Either change the hotkey or turn it off.</p>
 
@@ -17,7 +17,7 @@
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>
 
 <p>`a will produce à (available on aAeEiIoOuU).</p>
-<p>´a will produce á (available on aAeEiIoOuUyY).</p>
+<p>'a will produce á (available on aAeEiIoOuUyY).</p>
 
 <h1>Keyboard Layout</h1>
 
