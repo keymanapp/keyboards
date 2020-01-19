@@ -23,12 +23,12 @@ Type @ for Warang Citi letter OWANG <br>
 <h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
+<div id='osk-phone' data-states='default shift numeric lock wara-default wara-shift wara-numeric wara-lock'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
 
-<div id='osk-tablet' data-states='default shift numeric'>
+<div id='osk-phone' data-states='default shift numeric lock wara-default wara-shift wara-numeric wara-lock'>
 </div>
 
 
