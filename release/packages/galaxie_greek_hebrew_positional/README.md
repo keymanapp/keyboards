@@ -1,9 +1,9 @@
 Galaxie Greek/Hebrew (Positional) Keyboard Package
 ==================================================
 
-Copyright (C) 2004-2018 Galaxie Software and SIL International
+Copyright (C) 2004-2019 Galaxie Software and SIL International
 
-Version 2.2
+Version 2.2.1
 
 __DESCRIPTION__
 This package includes 2 positional keyboards called: Galaxie Greek (Phonetic) and 

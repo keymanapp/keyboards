@@ -4,19 +4,60 @@
     <BuildPath>$PROJECTPATH\build</BuildPath>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
     <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>False</CheckFilenameConventions>
+    <ProjectType>keyboard</ProjectType>
   </Options>
   <Files>
     <File>
       <ID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ID>
       <Filename>galaxie_greek_hebrew_positional.kps</Filename>
       <Filepath>source\galaxie_greek_hebrew_positional.kps</Filepath>
-      <FileVersion>2.2</FileVersion>
+      <FileVersion>2.2.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Galaxie Greek/Hebrew (Positional)</Name>
-        <Copyright>2004-2018 Galaxie Software and SIL International</Copyright>
-        <Version>2.2</Version>
+        <Copyright>2004-2019 Galaxie Software and SIL International</Copyright>
+        <Version>2.2.1</Version>
       </Details>
+    </File>
+    <File>
+      <ID>id_d3cc7ea9cf1c488b0662f2c5765fdfab</ID>
+      <Filename>galaxie_hebrew_positional.kmn</Filename>
+      <Filepath>..\..\g\galaxie_hebrew_positional\source\galaxie_hebrew_positional.kmn</Filepath>
+      <FileVersion>2.2</FileVersion>
+      <FileType>.kmn</FileType>
+      <Details>
+        <Name>Galaxie Hebrew (Positional)</Name>
+        <Copyright>2004-2018 Galaxie Software and SIL International</Copyright>
+      </Details>
+    </File>
+    <File>
+      <ID>id_5e19948b19e2d5b4ca6993f1a97f7872</ID>
+      <Filename>galaxie_greek_positional.kmn</Filename>
+      <Filepath>..\..\g\galaxie_greek_positional\source\galaxie_greek_positional.kmn</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.kmn</FileType>
+      <Details>
+        <Name>Galaxie Greek (Phonetic)</Name>
+        <Copyright>Copyright 2004-2018 Galaxie Software and SIL International</Copyright>
+        <Message>http://www.galaxie.com</Message>
+      </Details>
+    </File>
+    <File>
+      <ID>id_c61a5242d4510646e82a6759ca7015d8</ID>
+      <Filename>galaxie_hebrew_positional.bmp</Filename>
+      <Filepath>..\..\g\galaxie_hebrew_positional\source\galaxie_hebrew_positional.bmp</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.bmp</FileType>
+      <ParentFileID>id_d3cc7ea9cf1c488b0662f2c5765fdfab</ParentFileID>
+    </File>
+    <File>
+      <ID>id_698eb710ee5e6a87d67dddb534781b67</ID>
+      <Filename>galaxie_greek_positional.bmp</Filename>
+      <Filepath>..\..\g\galaxie_greek_positional\source\galaxie_greek_positional.bmp</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.bmp</FileType>
+      <ParentFileID>id_5e19948b19e2d5b4ca6993f1a97f7872</ParentFileID>
     </File>
     <File>
       <ID>id_2953db7f04181940605d4ff324e7423f</ID>
@@ -59,91 +100,52 @@
       <ParentFileID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ParentFileID>
     </File>
     <File>
-      <ID>id_de082d4e3448605dd023e831f1b6b732</ID>
+      <ID>id_b8b4f7f506620adc6129f960461e7470</ID>
       <Filename>galaxie_hebrew_positional.js</Filename>
-      <Filepath>source\..\..\..\g\galaxie_hebrew_positional\build\galaxie_hebrew_positional.js</Filepath>
+      <Filepath>source\..\build\galaxie_hebrew_positional.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ParentFileID>
     </File>
     <File>
-      <ID>id_c08fd81e1e6f148d31f1bc365886e276</ID>
+      <ID>id_23878a69893d4496d818b727008974e3</ID>
       <Filename>galaxie_hebrew_positional.kvk</Filename>
-      <Filepath>source\..\..\..\g\galaxie_hebrew_positional\build\galaxie_hebrew_positional.kvk</Filepath>
+      <Filepath>source\..\build\galaxie_hebrew_positional.kvk</Filepath>
       <FileVersion></FileVersion>
       <FileType>.kvk</FileType>
       <ParentFileID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ParentFileID>
     </File>
     <File>
-      <ID>id_9d4a56aa29add674771406c51eae5ade</ID>
+      <ID>id_7f46a4a9bc241645d4c96774f4a7e0aa</ID>
       <Filename>galaxie_hebrew_positional.kmx</Filename>
-      <Filepath>source\..\..\..\g\galaxie_hebrew_positional\build\galaxie_hebrew_positional.kmx</Filepath>
+      <Filepath>source\..\build\galaxie_hebrew_positional.kmx</Filepath>
       <FileVersion></FileVersion>
       <FileType>.kmx</FileType>
       <ParentFileID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ParentFileID>
     </File>
     <File>
-      <ID>id_984d05111b8ee3f1faa4c41ba5187a15</ID>
+      <ID>id_b91e4114eaeaef4c79fcb17f21c2adc4</ID>
       <Filename>galaxie_greek_positional.js</Filename>
-      <Filepath>source\..\..\..\g\galaxie_greek_positional\build\galaxie_greek_positional.js</Filepath>
+      <Filepath>source\..\build\galaxie_greek_positional.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ParentFileID>
     </File>
     <File>
-      <ID>id_1ee854c6aa8b14064fbbaf7e6aa1b228</ID>
+      <ID>id_fa82eec7dcc2a307e0799b324d5f6de4</ID>
       <Filename>galaxie_greek_positional.kvk</Filename>
-      <Filepath>source\..\..\..\g\galaxie_greek_positional\build\galaxie_greek_positional.kvk</Filepath>
+      <Filepath>source\..\build\galaxie_greek_positional.kvk</Filepath>
       <FileVersion></FileVersion>
       <FileType>.kvk</FileType>
       <ParentFileID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ParentFileID>
     </File>
     <File>
-      <ID>id_6a0d3cd3b1a2b18ccc710d5277afaf6f</ID>
+      <ID>id_205438a41d8473457fa7d63053a955e3</ID>
       <Filename>galaxie_greek_positional.kmx</Filename>
-      <Filepath>source\..\..\..\g\galaxie_greek_positional\build\galaxie_greek_positional.kmx</Filepath>
+      <Filepath>source\..\build\galaxie_greek_positional.kmx</Filepath>
       <FileVersion></FileVersion>
       <FileType>.kmx</FileType>
       <ParentFileID>id_21c4c4aaca0a3122b8234ac6c2a5c661</ParentFileID>
-    </File>
-    <File>
-      <ID>id_d3cc7ea9cf1c488b0662f2c5765fdfab</ID>
-      <Filename>galaxie_hebrew_positional.kmn</Filename>
-      <Filepath>..\..\g\galaxie_hebrew_positional\source\galaxie_hebrew_positional.kmn</Filepath>
-      <FileVersion>2.2</FileVersion>
-      <FileType>.kmn</FileType>
-      <Details>
-        <Name>Galaxie Hebrew (Positional)</Name>
-        <Copyright>2004-2018 Galaxie Software and SIL International</Copyright>
-      </Details>
-    </File>
-    <File>
-      <ID>id_c61a5242d4510646e82a6759ca7015d8</ID>
-      <Filename>galaxie_hebrew_positional.bmp</Filename>
-      <Filepath>..\..\g\galaxie_hebrew_positional\source\galaxie_hebrew_positional.bmp</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.bmp</FileType>
-      <ParentFileID>id_d3cc7ea9cf1c488b0662f2c5765fdfab</ParentFileID>
-    </File>
-    <File>
-      <ID>id_5e19948b19e2d5b4ca6993f1a97f7872</ID>
-      <Filename>galaxie_greek_positional.kmn</Filename>
-      <Filepath>..\..\g\galaxie_greek_positional\source\galaxie_greek_positional.kmn</Filepath>
-      <FileVersion>1.0</FileVersion>
-      <FileType>.kmn</FileType>
-      <Details>
-        <Name>Galaxie Greek (Phonetic)</Name>
-        <Copyright>Copyright 2004-2018 Galaxie Software and SIL International</Copyright>
-        <Message>http://www.galaxie.com</Message>
-      </Details>
-    </File>
-    <File>
-      <ID>id_698eb710ee5e6a87d67dddb534781b67</ID>
-      <Filename>galaxie_greek_positional.bmp</Filename>
-      <Filepath>..\..\g\galaxie_greek_positional\source\galaxie_greek_positional.bmp</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.bmp</FileType>
-      <ParentFileID>id_5e19948b19e2d5b4ca6993f1a97f7872</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>

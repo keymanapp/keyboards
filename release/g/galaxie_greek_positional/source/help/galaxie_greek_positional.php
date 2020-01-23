@@ -554,7 +554,7 @@ END;
 
     <div id='Quickstart'>
         <h2>Quickstart</h2>
-        <p>This keyboard layout works intuitively with the QWERTY (English) keyboard. You can find most of the Greek letters by thinking of similar letters in English, by sound or appearance. For example, type <span class='keys'>w"[[me/ga</span> to get
+        <p>This keyboard layout works intuitively with the QWERTY (English) keyboard. You can find most of the Greek letters by thinking of similar letters in English, by sound or appearance. For example, type <span class='keys'>w"[me/ga</span> to get
             <span class='lang2'>ὧμέγα</span>.</p>
 
         <p>As you can see, accents and breathing marks are typed after the vowel. They can be typed in any order. For example, <span class='lang2'>ΰ</span> is typed <span class='keys'>u/+</span> or <span class='keys'>u+/</span>.</p>

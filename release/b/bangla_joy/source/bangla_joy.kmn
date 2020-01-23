@@ -1,0 +1,167 @@
+﻿c KeymanWizard 1.1
+c KeymanWizard Font: Arial
+c TIKE will use the line above to identify this file as a Keyman Wizard file
+c Delete the first line to stop the file opening in the Wizard editor
+c (Created by Keyman Developer 6.2.179.0)
+
+
+store(&VERSION) '10.0'
+store(&NAME) 'Bangla Joy'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'bangla_joy.kvks'
+store(&BITMAP) 'bangla_joy.ico'
+store(&MESSAGE) "The most popular layout ever been in Bangladesh"
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'bangla_joy.kvks'
+store(&COPYRIGHT) '© 2007-2019 Arun Sarkar'
+c store(&ETHNOLOGUECODE) 'ben'
+c store(&WINDOWSLANGUAGES) 'x0445'
+c store(&LANGUAGE) 'x0445'
+store(&LAYOUTFILE) 'bangla_joy.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_SPACE] > U+0020
++ [SHIFT K_SPACE] > U+0020
++ [SHIFT LCTRL K_SPACE] > U+0020
++ [RALT K_SPACE] > U+0020
++ [SHIFT RALT K_SPACE] > U+0020
++ [K_0] > U+09E6
++ [SHIFT K_0] > U+0029
++ [RALT K_0] > U+09F8
++ [K_1] > U+09E7
++ [SHIFT K_1] > U+0021
++ [RALT K_1] > U+09F4
++ [K_2] > U+09E8
++ [SHIFT K_2] > U+0040
++ [RALT K_2] > U+09F5
++ [K_3] > U+09E9
++ [SHIFT K_3] > U+0023
++ [RALT K_3] > U+09F6
++ [K_4] > U+09EA
++ [SHIFT K_4] > U+09F3
++ [RALT K_4] > U+09F7
++ [K_5] > U+09EB
++ [SHIFT K_5] > U+0025
++ [RALT K_5] > U+09F2
++ [K_6] > U+09EC
++ [SHIFT K_6] > U+00F7
++ [K_7] > U+09ED
++ [SHIFT K_7] > U+0981
++ [RALT K_7] > U+09FA
++ [K_8] > U+09EE
++ [SHIFT K_8] > U+00D7
++ [K_9] > U+09EF
++ [SHIFT K_9] > U+0028
++ [K_A] > U+09C3
++ [SHIFT K_A] > U+09B0 U+09CD
++ [RALT K_A] > U+098B
++ [K_B] > U+09A8
++ [SHIFT K_B] > U+09A3
++ [SHIFT RALT K_B] > U+09C4
++ [K_C] > U+09C7
++ [SHIFT K_C] > U+09C8
++ [RALT K_C] > U+098F
++ [SHIFT RALT K_C] > U+09E0
++ [K_D] > U+09BF
++ [SHIFT K_D] > U+09C0
++ [RALT K_D] > U+0987
++ [K_E] > U+09A1
++ [SHIFT K_E] > U+09A2
++ [RALT K_E] > U+0988
++ [K_F] > U+09BE
++ [SHIFT K_F] > U+0985
++ [RALT K_F] > U+0986
++ [K_G] > U+09CD
++ [SHIFT K_G] > U+0964
++ [RALT K_G] > U+09CD
++ [K_H] > U+09AC
++ [SHIFT K_H] > U+09AD
++ [RALT K_H] > U+09F0
++ [K_I] > U+09B9
++ [SHIFT K_I] > U+099E
++ [RALT K_I] > U+0990
++ [SHIFT RALT K_I] > U+09BD
++ [K_J] > U+0995
++ [SHIFT K_J] > U+0996
++ [K_K] > U+09A4
++ [SHIFT K_K] > U+09A5
++ [K_L] > U+09A6
++ [SHIFT K_L] > U+09A7
++ [K_M] > U+09AE
++ [SHIFT K_M] > U+09B6
++ [K_N] > U+09B8
++ [SHIFT K_N] > U+09B7
++ [K_O] > U+0997
++ [SHIFT K_O] > U+0998
++ [RALT K_O] > U+0994
++ [K_P] > U+09DC
++ [SHIFT K_P] > U+09DD
++ [K_Q] > U+0999
++ [SHIFT K_Q] > U+0982
++ [SHIFT RALT K_Q] > U+098C
++ [K_R] > U+09AA
++ [SHIFT K_R] > U+09AB
++ [K_S] > U+09C1
++ [SHIFT K_S] > U+09C2
++ [RALT K_S] > U+0989
++ [K_T] > U+099F
++ [SHIFT K_T] > U+09A0
++ [K_U] > U+099C
++ [SHIFT K_U] > U+099D
++ [RALT K_U] > U+098A
++ [K_V] > U+09B0
++ [SHIFT K_V] > U+09B2
++ [RALT K_V] > U+09F1
++ [SHIFT RALT K_V] > U+09E3
++ [K_W] > U+09AF
++ [SHIFT K_W] > U+09DF
++ [SHIFT RALT K_W] > U+09E1
++ [K_X] > U+09CB
++ [SHIFT K_X] > U+09CC
++ [RALT K_X] > U+0993
++ [SHIFT RALT K_X] > U+09D7
++ [K_Y] > U+099A
++ [SHIFT K_Y] > U+099B
++ [K_Z] > U+09CD U+09B0
++ [SHIFT K_Z] > U+09CD U+09AF
++ [SHIFT RALT K_Z] > U+09E2
++ [K_NPSTAR] > U+002A
++ [SHIFT K_NPSTAR] > U+002A
++ [K_NPPLUS] > U+002B
++ [SHIFT K_NPPLUS] > U+002B
++ [K_NPMINUS] > U+002D
++ [SHIFT K_NPMINUS] > U+002D
++ [K_COLON] > U+003B
++ [SHIFT K_COLON] > U+003A
++ [K_EQUAL] > U+003D
++ [SHIFT K_EQUAL] > U+002B
++ [RALT K_EQUAL] > U+2260
++ [K_COMMA] > U+002C
++ [SHIFT K_COMMA] > U+003C
++ [SHIFT RALT K_COMMA] > U+2264
++ [K_HYPHEN] > U+002D
++ [SHIFT K_HYPHEN] > U+005F
++ [RALT K_HYPHEN] > U+09F9
++ [K_PERIOD] > U+002E
++ [SHIFT K_PERIOD] > U+003E
++ [RALT K_PERIOD] > U+09BC
++ [SHIFT RALT K_PERIOD] > U+2265
++ [K_SLASH] > U+002F
++ [SHIFT K_SLASH] > U+003F
++ [K_BKQUOTE] > U+200C
++ [SHIFT K_BKQUOTE] > U+200D
++ [K_LBRKT] > U+005B
++ [SHIFT K_LBRKT] > U+007B
++ [K_BKSLASH] > U+0983
++ [SHIFT K_BKSLASH] > U+09CE
++ [K_RBRKT] > U+005D
++ [SHIFT K_RBRKT] > U+007D
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
++ [K_oE2] > U+200C
++ [SHIFT K_oE2] > U+200D
+
+c EOF

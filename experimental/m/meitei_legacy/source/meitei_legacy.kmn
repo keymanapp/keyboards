@@ -1,0 +1,85 @@
+﻿c meitei_legacy
+store(&VERSION) '10.0'
+store(&NAME) 'Meitei (Legacy)'
+store(&COPYRIGHT) '© 2019 SIL International'
+store(&KEYBOARDVERSION) '0.1'
+store(&TARGETS) 'windows macosx linux web'
+store(&VISUALKEYBOARD) 'meitei_legacy.kvks'
+store(&MESSAGE) 'This is a keyboard for entering Unicode data in the Meitei script. It follows the keystrokes of the legacy font Ratha99, but produces Unicode data.'
+
+begin Unicode > use(main)
+
+store(unused) '"' "#$%&'()*+,-.:;<=>?@^`{|}~" 
+store(esc) "/"
+store(used) "!.0123456789ABCDEFGIKMNORSTWXZ[\]_abcdefgijklmopqrsvwxyz"
+store(suppress) "HJLPQUVYhntu"
+
+group(main) using keys
+
++ any(unused) > index(unused,1)
++ any(suppress) > nul
++ any(esc) > index(esc,1)
+any(esc) + any(used) > index(used,2)
+any(esc) + any(suppress) > index(suppress,2)
+
+c Letters   
++ "s" > U+ABC0	 c ꯀ KOK 
++ "K" > U+ABC1	 c ꯁ SAM 
++ "m" > U+ABC2	 c ꯂ LAI 
++ "a" > U+ABC3	 c ꯃ MIT 
++ "w" > U+ABC4	 c ꯄ PA 
++ "e" > U+ABC5	 c ꯅ NA 
++ "v" > U+ABC6	 c ꯆ CHIL 
++ "f" > U+ABC7	 c ꯇ TIL 
++ "S" > U+ABC8	 c ꯈ KHOU 
++ "Z" > U+ABC9	 c ꯉ NGOU 
++ "F" > U+ABCA	 c ꯊ THOU 
++ "_" > U+ABCB	 c ꯋ WAI 
++ "\" > U+ABCC	 c ꯌ YANG 
++ "o" > U+ABCD	 c ꯍ HUK 
++ "B" > U+ABCE	 c ꯎ UN 
++ "T" > U+ABCF	 c ꯏ I 
++ "W" > U+ABD0	 c ꯐ PHAM 
++ "[" > U+ABD1	 c ꯑ ATIYA 
++ "x" > U+ABD2	 c ꯒ GOK 
++ "C" > U+ABD3	 c ꯓ JHAM 
++ "j" > U+ABD4	 c ꯔ RAI 
++ "q" > U+ABD5	 c ꯕ BA 
++ "c" > U+ABD6	 c ꯖ JIL 
++ "r" > U+ABD7	 c ꯗ DIL 
++ "X" > U+ABD8	 c ꯘ GHOU 
++ "R" > U+ABD9	 c ꯙ DHOU 
++ "z" > U+ABDA	 c ꯚ BHAM 
+c Final consonants   
++ "d" > U+ABDB	 c ꯛ KOK LONSUM 
++ "M" > U+ABDC	 c ꯜ LAI LONSUM 
++ "A" > U+ABDD	 c ꯝ MIT LONSUM 
++ "N" > U+ABDE	 c ꯞ PA LONSUM 
++ "E" > U+ABDF	 c ꯟ NA LONSUM 
++ "G" > U+ABE0	 c ꯠ TIL LONSUM 
++ "i" > U+ABE1	 c ꯡ NGOU LONSUM 
++ "]" > U+ABE2	 c ꯢ I LONSUM 
+c Dependent vowel signs   
++ "O" > U+ABE3	 c ꯣ ONAP 
++ "g" > U+ABE4	 c ꯤ INAP 
++ "k" > U+ABE5	 c ꯥ ANAP 
++ "l" > U+ABE6	 c ꯦ YENAP 
++ "y" > U+ABE7	 c ꯧ SOUNAP 
++ "b" > U+ABE8	 c ꯨ UNAP 
++ "p" > U+ABE9	 c ꯩ CHEINAP 
++ "I" > U+ABEA	 c ꯪ NUNG 
+c Punctuation   
++ "!" > U+ABEB	 c ꯫ CHEIKHEI 
++ "." > U+ABEC	 c ꯬ LUM IYEK 
++ "D" > U+ABED	 c ꯭ APUN IYEK 
+c Digits   
++ "0" > U+ABF0	 c ꯰ ZERO 
++ "1" > U+ABF1	 c ꯱ ONE 
++ "2" > U+ABF2	 c ꯲ TWO 
++ "3" > U+ABF3	 c ꯳ THREE 
++ "4" > U+ABF4	 c ꯴ FOUR 
++ "5" > U+ABF5	 c ꯵ FIVE 
++ "6" > U+ABF6	 c ꯶ SIX 
++ "7" > U+ABF7	 c ꯷ SEVEN 
++ "8" > U+ABF8	 c ꯸ EIGHT 
++ "9" > U+ABF9	 c ꯹ NINE 
