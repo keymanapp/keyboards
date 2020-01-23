@@ -1,0 +1,18 @@
+﻿c fulfulde generated from template at 2019-08-25 15:55:31
+c with name "fulfulde"
+store(&VERSION) '10.0'
+store(&NAME) 'fulfulde'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any androidphone androidtablet'
+store(&VISUALKEYBOARD) 'fulfulde.kvks'
+store(&LAYOUTFILE) 'fulfulde.keyman-touch-layout'
+begin Unicode > use(main)
+
+store(basekey) "bdnyBDNY"
+store(output_char) "ɓɗŋƴƁƊŊƳ"
+
+group(main) using keys
+";" + any(basekey) > index(output_char,2)
+"j" + "n" > "ɲ"
+"j" + "N" > "Ɲ"
