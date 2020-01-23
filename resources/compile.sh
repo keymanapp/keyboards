@@ -76,16 +76,31 @@ function build_keyboards {
     # depends on files created by the keyboards
     #
     
-    if [ -d "$KEYBOARDROOT/$group/packages" ]; then
-      echo "- $ACTION_VERB $group/packages"
-      local package
-      for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
-        build_keyboard "$group" "$package"
-      done
+    if [[ -z "$PROJECT_TARGET_TYPE" ]]; then
+      if [ -d "$KEYBOARDROOT/$group/packages" ]; then
+        echo "- $ACTION_VERB $group/packages"
+        local package
+        for package in "$KEYBOARDROOT/$group/packages/"*/ ; do
+          build_keyboard "$group" "$package"
+        done
+      fi
     fi
   fi
   
   return 0
+}
+
+function build_keyboard_group {
+  # Build a single group of keyboards, e.g. release/a
+  # This function is only valid for the keyboards repo; it is
+  # unnecessary for the keyboards_starter repo.
+  local shortname=$(basename "$1")
+  local group=$(dirname "$1")
+
+  local keyboard
+  for keyboard in "$group/$shortname/"*/ ; do
+    build_keyboard "$group" "$keyboard"
+  done
 }
 
 #----------------------------------------------------------------------------------------
@@ -168,7 +183,11 @@ function build_keyboard {
   if [ -f build.sh ]; then
     # We call this build.sh and assume it generates the
     # right stuff
-    . ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
+    if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
+      PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
+      FLAG_TARGET=-t
+    fi
+    ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
     if [[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]; then
@@ -185,6 +204,11 @@ function build_keyboard {
     return 0
   fi
   
+  if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
+    popd
+    return 0
+  fi
+
   #
   # Copy the documentation file manually
   #
@@ -275,14 +299,22 @@ function build_release_keyboard {
   if [[ -d build ]]; then
     rm -rf build/ || die
   fi
-  
+
   if [[ ! -z "$FLAG_CLEAN" ]]; then
+    # We only remove the tests folder when cleaning the repo
+    if [[ -d tests ]]; then
+      rm -rf tests/ || die
+    fi
     return 0
   fi
   
   # Recreate build folder
   
   mkdir build || die "Failed to create build folder for $keyboard"
+
+  if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
+    PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
+  fi
   
   $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
   

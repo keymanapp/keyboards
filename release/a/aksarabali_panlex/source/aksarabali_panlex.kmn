@@ -1,0 +1,260 @@
+﻿store(&NAME) 'Aksara Bali Unicode'
+store(&TARGETS) 'any'
+store(&VERSION) '9.0'
+store(&COPYRIGHT) '© 2019 The PanLex Project of The Long Now Foundation'
+store(&KEYBOARDVERSION) '1.1.0'
+store(&MESSAGE) 'Aksara Bali Unicode, based on Bali Simbar'
+store(&BITMAP) 'aksarabali_panlex.ico'
+store(&VISUALKEYBOARD) 'aksarabali_panlex.kvks'
+store(&LAYOUTFILE) 'aksarabali_panlex.keyman-touch-layout'
+
+store(adeg_flag) '0'
+
+store(adeg)    '᭄'
+store(tedong)  'ᬵ'
+store(cecek)   'ᬂ'
+store(surang)  'ᬃ'
+store(bisah)   'ᬄ'
+store(candra)  'ᬁ'
+store(ricem)   'ᬀ'
+store(rerekan) '᬴'
+store(zwnj)    U+200C
+store(lf)      U+0A
+
+store(cons_key)  [K_Q] [K_W] [K_R] [K_T] [K_Y] [K_P] \
+                 [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] \
+                 [K_Z] [SHIFT K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M] \
+                 [K_LBRKT] [K_RBRKT] [K_BKSLASH] [SHIFT K_BKSLASH] [K_BKQUOTE] \
+                 [T_TTH] [T_TH] [T_DD] [T_DDH] [T_DH] [T_JH] [T_KH] [T_CH] \
+                 [T_KHOT] [T_KAF] [T_EF] [T_VE] [T_TZIR] [T_ZAL] [T_ASYURA]
+store(cons_main) 'ᭉᬯᬭᬢᬬᬧ' \
+                 'ᬲᬤᬖᬕᬳᬚᬓᬮ' \
+                 'ᬜᬜᬡᬘᬪᬩᬦᬫ' \
+                 'ᬱᬰᬗᬨᬝ' \
+                 'ᬞᬣᬟᬠᬥᬛᬔᬙ' \
+                 'ᭆᭅᭈᭉᭇᭊᭋ'
+
+store(cons_tedong_key) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_P] \
+                       [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] \
+                       [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M] \
+                       [SHIFT K_LBRKT] [SHIFT K_RBRKT] [K_BKQUOTE]
+store(cons_tedong)     'ᭉᬯᬭᬢᬬᬧ' \
+                       'ᬲᬤᬖᬕᬳᬚᬓᬮ' \
+                       'ᬡᬘᬪᬩᬦᬫ' \
+                       'ᬱᬰᬝ'
+
+store(dvowel_short_key)   [K_E] [SHIFT K_E] [K_I] [K_O] [K_U]
+store(dvowel_short)       'ᭂᬾᬶᭀᬸ'
+store(dvowel_auto_ha_key) outs(dvowel_short_key) \
+                          [SHIFT K_I] [SHIFT K_U] [T_PEPET_TEDONG]
+store(dvowel_auto_ha)     outs(dvowel_short) \
+                          'ᬷᬹᭃ'
+store(dvowel_key)         outs(dvowel_auto_ha_key) \
+                          [SHIFT K_A] [CTRL SHIFT K_E] [T_TALING_REPA] [T_TALING_REPA_TEDONG] \
+                          [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
+store(dvowel)             outs(dvowel_auto_ha) \
+                          'ᬵᬿᬿᭁ' \ 
+                          'ᬺᬻᬼᬽ'
+store(dvowel_front)       'ᬶᬾ'
+store(dvowel_back)        'ᬸᭀ'
+
+store(syllabic_key) [T_RA_REPA] [T_RA_REPA_TEDONG] [T_LA_LENGA] [T_LA_LENGA_TEDONG]
+store(syllabic)     'ᬋᬌᬍᬎ'
+store(vowel_key)    outs(syllabic_key) \
+                    [CTRL SHIFT K_A] [CTRL SHIFT K_E] [CTRL SHIFT K_I] [CTRL SHIFT K_O] [CTRL SHIFT K_U] \
+                    [SHIFT K_A] [T_AKARA_TEDONG] [T_IKARA_TEDONG] [T_UKARA_TEDONG] [T_TALING_REPA] [T_TALING_REPA_TEDONG]
+store(vowel)        outs(syllabic) \
+                    'ᬅᬏᬇᬑᬉ' \
+                    'ᬆᬆᬈᬊᬐᬒ'
+
+store(force_mark_key) [ALT K_E] [ALT SHIFT K_E] [ALT K_I] [ALT K_O] [ALT K_U] \
+                      [ALT SHIFT K_A] [ALT CTRL SHIFT K_E] [ALT SHIFT K_I] [ALT SHIFT K_U] \
+                      [T_CECEK] [T_SURANG] [T_BISAH] [T_CANDRA] [T_RICEM]
+store(force_mark)     outs(dvowel_short) \
+                      'ᬵᬿᬷᬹ' \
+                      $cecek $surang $bisah $candra $ricem
+
+store(punc_key) [SHIFT K_SPACE] [K_COMMA] [CTRL K_COMMA] [K_PERIOD] [CTRL K_PERIOD] [SHIFT K_COLON] \
+                [K_HYPHEN] [SHIFT K_HYPHEN] [SHIFT K_COMMA] [SHIFT K_PERIOD] [CTRL ALT K_O] \
+                [CTRL SHIFT K_HYPHEN] [CTRL SHIFT K_BKSLASH] [CTRL SHIFT K_8] [CTRL SHIFT K_0] \
+                [CTRL SHIFT K_EQUAL] [CTRL SHIFT K_SLASH] \
+                [T_LBRKT] [T_RBRKT] [T_HYPHEN]
+store(punc)     ' ᭞,᭟.᭝᭠·᭚᭛᭜—|❖⏑⏓/' \
+                '[]-'
+
+store(endpunc_key) [K_COMMA] [K_PERIOD] [SHIFT K_COLON] [K_ENTER]
+store(endpunc)     '᭞᭟᭝' $lf
+
+store(numeral_key) [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] \
+                   [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] \
+                   [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
+store(numeral)     '1234567890᭑᭒᭓᭔᭕᭖᭗᭘᭙᭐'
+
+store(syllabic_mod_key) [K_E] [CTRL K_PERIOD]
+store(adeg_key)         [K_SPACE] [K_SLASH]
+store(tedong_key)       [CTRL K_A] [CTRL K_O]
+
+store(cons)              outs(cons_main) $rerekan
+store(mark)              outs(dvowel) $cecek $surang
+store(mark_all)          outs(mark) $bisah $adeg $zwnj
+store(cons_vowel_dvowel) outs(cons) outs(vowel) outs(dvowel)
+store(cons_vowel_mark)   outs(cons) outs(vowel) outs(mark)
+
+store(indep_key) outs(vowel_key) outs(punc_key) outs(numeral_key) outs(force_mark_key)
+store(indep)     outs(vowel)     outs(punc)     outs(numeral)     outs(force_mark)
+
+store(ra_repa) 'ᬋᬌ◌ᬺ'
+
+begin Unicode > use(main)
+
+group(main) using keys
+  c backspace special cases
+  any(cons) $adeg any(cons) + [K_BKSP] > context(1) '?' set(adeg_flag='0')
+  $adeg any(cons) + [K_BKSP] > nul set(adeg_flag='0')
+  any(cons) any(mark_all) + [K_BKSP] > context(1) '?' set(adeg_flag='0')
+  any(cons) $rerekan any(mark_all) + [K_BKSP] > context(1) context(2) '?' set(adeg_flag='0')
+
+  c la lenga
+  if(adeg_flag='0') $adeg 'ᬮ?' + any(syllabic_mod_key) > 'ᬼ'
+  'ᬮ?' + any(syllabic_mod_key) > 'ᬍ'
+  'ᬍ' + any(tedong_key) > 'ᬎ'
+  platform("hardware") 'ᬍ' + [CTRL K_U] > 'ᬎ'
+
+  c ra repa
+  if(adeg_flag='0') $adeg 'ᬭ?' + any(syllabic_mod_key) > 'ᬺ'
+  'ᬭ?' + any(syllabic_mod_key) > 'ᬋ'
+  platform("hardware") 'ᬭ?' + [CTRL K_QUOTE] > 'ᬌ'
+  platform("hardware") 'ᬭ?' + [CTRL K_O] > 'ᬌ'
+  'ᬋ' + any(tedong_key) > 'ᬌ'
+
+  c post-consonant input: derived consonants
+  platform("hardware") 'ᬦ?' + [CTRL K_PERIOD] > 'ᬡ?' c n => ṇ
+  platform("hardware") 'ᬦ?' + [CTRL K_QUOTE] > 'ᬜ?' c n => ny
+  'ᬦ?' + [K_Y] > 'ᬜ?' c n => ny
+  platform("hardware") 'ᬦ?' + [SHIFT K_Y] > 'ᬦ' $adeg 'ᬬ?' c n-y override
+  platform("hardware") 'ᬦ?' + [CTRL K_Y] > 'ᬦ' $adeg 'ᬬ?' c n-y override
+  'ᬦ?' + [K_G] > 'ᬗ?' c n => ng
+  platform("hardware") 'ᬲ?' + [CTRL K_PERIOD] > 'ᬱ?' c s => ṣ
+  platform("hardware") 'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ?' c s => ś
+  'ᬲ?' + [K_H] > 'ᬰ?' c s => ś
+  'ᬧ?' + [K_H] > 'ᬨ?' c p => ph
+  'ᬩ?' + [K_H] > 'ᬪ?' c b => bh
+  platform("hardware") 'ᬢ?' + [CTRL K_PERIOD] > 'ᬝ?' c t => ṭ
+  'ᬢ?' + [K_H] > 'ᬣ?' c t => th
+  'ᬝ?' + [K_H] > 'ᬞ?' c ṭ => ṭh
+  platform("hardware") 'ᬤ?' + [CTRL K_PERIOD] > 'ᬟ?' c d => ḍ
+  'ᬤ?' + [K_H] > 'ᬥ?' c d => dh
+  'ᬟ?' + [K_H] > 'ᬠ?' c ḍ => ḍh
+  'ᬘ?' + [K_H] > 'ᬙ?' c c => ch
+  'ᬚ?' + [K_H] > 'ᬛ?' c j => jh
+  'ᬓ?' + [K_H] > 'ᬔ?' c k => kh
+  'ᬕ?' + [K_H] > 'ᬖ?' c g => gh
+
+  c post-consonant input: ng
+  'ᬗ?' + [K_N] > 'ᬗᭂᬦ?' c ng => nge /_n
+
+  c post-consonant input: ny
+  'ᬦ?' + [K_C] > 'ᬜ' $adeg 'ᬘ?' c n => ny /_c
+  platform("touch") 'ᬦ?' + [T_CH] > 'ᬜ' $adeg 'ᬘ?' c n => ny /_ch
+  'ᬦ?' + [K_J] > 'ᬜ' $adeg 'ᬚ?' c n => ny /_j
+  platform("touch") 'ᬦ?' + [T_JH] > 'ᬜ' $adeg 'ᬚ?' c n => ny /_jh
+  'ᬚ?' + [K_N] > context(1) $adeg 'ᬜ?' c n => ny /j_
+  platform("hardware") 'ᬚ᭄ᬜ?' + [K_Y] > context c ignore y after jny
+
+  c post-consonant input: ś
+  platform("hardware") 'ᬲ' $adeg 'ᬲ?' + [K_H] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
+  platform("hardware") 'ᬲ' $adeg 'ᬲ?' + [CTRL K_QUOTE] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
+  'ᬲ?' + [K_RBRKT] > 'ᬰ' $adeg 'ᬰ?' c s => ś /_ś
+  'ᬰ?' + [K_S] > context(1) $adeg 'ᬰ?' c s => ś /ś_
+  'ᬲ?' + [K_C] > 'ᬰ' $adeg 'ᬘ?' c s => ś /_c
+  platform("touch") 'ᬲ?' + [T_CH] > 'ᬰ' $adeg 'ᬘ?' c s => ś /_c
+
+  c post-consonant input: retroflex
+  'ᬓ?' + [K_S] > context(1) $adeg 'ᬱ?' c s => ṣ /k_
+  any(ra_repa) + [K_S] > context(1) 'ᬱ?' c s => ṣ /ṛ_
+  'ᬱ?' + [K_T] > context(1) $adeg 'ᬝ?' c t => ṭ /ṣ_
+  'ᬡ?' + [K_T] > context(1) $adeg 'ᬝ?' c t => ṭ /ṇ_
+  c 'ᬡ?' + [K_D] > context(1) $adeg 'ᬟ?' c d => ḍ /ṇ_
+  'ᬱ?' + [K_N] > context(1) $adeg 'ᬡ?' c n => ṇ /ṣ_
+  c any(ra_repa) + [K_N] > context(1) 'ᬡ?' c n => ṇ /ṛ_
+
+  c post-consonant input: surang
+  any(cons_vowel_dvowel) 'ᬭ?' + any(cons_key) > context(1) $surang index(cons_main, 4) '?'
+
+  c post-consonant input: general
+  '?' + any(cons_key) > $adeg index(cons_main, 2) '?' set(adeg_flag='0')
+  if(adeg_flag='0') $adeg + any(cons_key) > context index(cons_main, 3) '?' set(adeg_flag='1')
+  if(adeg_flag='1') $adeg + any(cons_key) > context $zwnj index(cons_main, 3) '?' set(adeg_flag='0')
+  if(adeg_flag='1') $adeg + any(syllabic_key) > context $zwnj index(syllabic, 3) set(adeg_flag='0')
+  '?' + any(dvowel_key) > index(dvowel, 2)
+  '?' + [K_A] > nul
+  '?' + [K_COLON] > $bisah
+
+  c adeg-adeg
+  '?' + any(adeg_key) > $adeg set(adeg_flag='0')
+  + [K_SLASH] > $adeg set(adeg_flag='0')
+  '?' + any(endpunc_key) > $adeg index(endpunc, 2)
+  $adeg + any(adeg_key) > context set(adeg_flag='1')
+
+  c diphthongs
+  any(dvowel_front) + [K_A] > context 'ᬬ'
+  any(dvowel_front) + any(dvowel_short_key) > context 'ᬬ' index(dvowel_short, 2)
+  any(dvowel_back) + [K_A] > context 'ᬯ'
+  any(dvowel_back) + any(dvowel_short_key) > context 'ᬯ' index(dvowel_short, 2)
+
+  c candra / ricem
+  platform("hardware") 'ᬫ?' + [CTRL SHIFT K_QUOTE] > $candra
+  platform("hardware") 'ᬫ?' + [CTRL SHIFT K_PERIOD] > $ricem
+  platform("hardware") 'ᬅ' $tedong + [CTRL SHIFT K_A] > 'ᬅ' $candra
+  platform("hardware") 'ᬑ' + [CTRL SHIFT K_O] > context $candra
+  platform("hardware") 'ᬑ' $candra + [CTRL SHIFT K_O] > 'ᬒ' $candra c om
+  platform("touch") + [T_OM] > 'ᬒᬁ' c om
+
+  c other marks
+  '?' + [ALT K_R] > $rerekan '?'
+  + [ALT K_R] > $rerekan
+  any(cons_vowel_mark) 'ᬳ?' + [K_SPACE] > context(1) $bisah
+  any(cons_vowel_mark) 'ᬗ?' + [K_SPACE] > context(1) $cecek
+  any(cons_vowel_mark) 'ᬭ?' + [K_SPACE] > context(1) $surang
+
+  c punctuation
+  + [CTRL SHIFT K_COMMA] > '᭚᭜᭚'
+  platform("hardware") '᭚᭜᭚' + [CTRL SHIFT K_COMMA] > '᭟᭜᭟'
+  + [CTRL SHIFT K_PERIOD] > '᭛᭜᭛'
+  platform("hardware") '᭛᭜᭛' + [CTRL SHIFT K_PERIOD] > '᭟᭜᭟'
+  platform("hardware") '᭞' + [K_COMMA] > ','
+  platform("touch") '᭞' + [K_COMMA] > '᭟'
+  platform("hardware") '᭟' + [K_PERIOD] > '.'
+  platform("hardware") '᭝' + [SHIFT K_COLON] > ':'
+  platform("hardware") '᭠' + [K_HYPHEN] > '-'
+  platform("hardware") '᭚᭚' + [SHIFT K_COMMA] > '←'
+  platform("hardware") '←' + [SHIFT K_COMMA] > '⟵'
+  platform("hardware") '᭛᭛' + [SHIFT K_PERIOD] > '→'
+  platform("hardware") '→' + [SHIFT K_PERIOD] > '⟶'
+  platform("hardware") '❖' + [CTRL SHIFT K_8] > '◆'
+  platform("hardware") '◆' + [CTRL SHIFT K_8] > '◇'
+  platform("hardware") '◇' + [CTRL SHIFT K_8] > '×'
+  platform("hardware") '×' + [CTRL SHIFT K_8] > '❖'
+
+  c tedong
+  '?' + any(tedong_key) > $tedong
+  + any(tedong_key) > $tedong
+  '?' + any(cons_tedong_key) > $adeg index(cons_tedong, 2) $tedong
+  + any(cons_tedong_key) > index(cons_tedong, 1) $tedong
+  platform("hardware") 'ᬅ' + [CTRL SHIFT K_A] > context $tedong
+  platform("hardware") 'ᬏ' + [CTRL SHIFT K_E] > 'ᬐ'
+
+  c general input
+  + [K_SPACE] > nul
+  + [SHIFT K_O] > nul
+  $zwnj + [CTRL K_SLASH] > context
+  + [CTRL K_SLASH] > $zwnj
+  + any(cons_key) > index(cons_main, 1) '?'
+  '?' + any(indep_key) > index(indep, 2)
+  + any(indep_key) > index(indep, 1)
+
+  c ha insertion
+  $adeg + [K_A] > context $zwnj 'ᬳ'
+  $adeg + any(dvowel_auto_ha_key) > context $zwnj 'ᬳ' index(dvowel_auto_ha, 2)
+  + [K_A] > 'ᬳ'
+  + any(dvowel_auto_ha_key) > 'ᬳ' index(dvowel_auto_ha, 1)

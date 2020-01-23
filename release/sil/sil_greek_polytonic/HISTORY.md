@@ -1,6 +1,10 @@
 Polytonic Greek (SIL) Keyboard Change History
 =======================
 
+1.5 (6 Sept 2019)
+-----------------
+* Updated keyboard to use oxia (for polytonic) instead of tonos
+
 1.4 (14 May 2018)
 -----------------
 * migrated source to GitHub

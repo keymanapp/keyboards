@@ -1,12 +1,12 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1"
+store(&KEYBOARDVERSION) "9.2"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "thp"
-store(&COPYRIGHT) "(c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) "(c) 2008-2019 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) 'Nłeʔkepmxcin'
 store(&BITMAP) 'fv_nlekepmxcin.ico'
 store(&VISUALKEYBOARD) 'fv_nlekepmxcin.kvks'
- store(&KMW_HELPFILE) 'fv_nlekepmxcin_kmw_help.htm'
+store(&KMW_HELPFILE) 'fv_nlekepmxcin_kmw_help.htm'
  
 begin Unicode > use(main)                      
 group(main) using keys
@@ -16,7 +16,7 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) "fv_nlekepmxcin.keyman-touch-layout"
+store(&LAYOUTFILE) 'fv_nlekepmxcin.keyman-touch-layout'
 
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
@@ -58,7 +58,7 @@ store(&LAYOUTFILE) "fv_nlekepmxcin.keyman-touch-layout"
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I_1] > 'Ị' layer('default')
-+ [SHIFT T_I_2] > 'Ị́' layer('default')
++ [SHIFT T_I_2] > U+0049 U+0323 U+0301 layer('default')
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O_0] > 'Ó' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
@@ -97,10 +97,10 @@ store(&LAYOUTFILE) "fv_nlekepmxcin.keyman-touch-layout"
 'C' + [SHIFT T_V] > 'C̣'
 'S' + [SHIFT T_V] > 'Ṣ'
 'c' + [SHIFT T_V] > 'c̣'
-'í' + [SHIFT T_V] > 'ị́'
+'í' + [SHIFT T_V] > U+0069 U+0323 U+0301 c 'ị́'
 's' + [SHIFT T_V] > 'ṣ'
 'Ə' + [SHIFT T_V] > 'Ə̣'
-'Í' + [SHIFT T_V] > 'Ị́'
+'Í' + [SHIFT T_V] > U+0049 U+0323 U+0301 c 'Ị́'
 'L' + [SHIFT T_V] > 'Ḷ'
 'l' + [SHIFT T_V] > 'ḷ'
 'ə́' + [SHIFT T_V] > 'ə̣́'
@@ -113,7 +113,7 @@ store(&LAYOUTFILE) "fv_nlekepmxcin.keyman-touch-layout"
 + [SHIFT T_M] > 'M' layer('default')
 + [SHIFT T_COMMA_0] > 'Ə́' layer('default')
 + [SHIFT T_COMMA_1] > 'Ə̣' layer('default')
-+ [SHIFT T_COMMA_2] > 'Ə̣́' layer('default')
++ [SHIFT T_COMMA_2] > U+018F U+0323 U+0301 layer('default') c 'Ə̣́'
 + [SHIFT T_COMMA] > 'Ə' layer('default')
 + [T_Q_0] > 'q̓'
 + [T_Q] > 'q'
@@ -155,7 +155,7 @@ store(&LAYOUTFILE) "fv_nlekepmxcin.keyman-touch-layout"
 + [T_U] > 'u'
 + [T_I_0] > 'í'
 + [T_I_1] > 'ị'
-+ [T_I_2] > 'ị́'
++ [T_I_2] > U+0069 U+0323 U+0301 c 'ị́'
 + [T_I] > 'i'
 + [T_O_0] > 'ó'
 + [T_O] > 'o'
@@ -194,10 +194,10 @@ store(&LAYOUTFILE) "fv_nlekepmxcin.keyman-touch-layout"
 'C' + [T_V] > 'C̣'
 'S' + [T_V] > 'Ṣ'
 'c' + [T_V] > 'c̣'
-'í' + [T_V] > 'ị́'
+'í' + [T_V] > U+0069 U+0323 U+0301 c 'ị́'
 's' + [T_V] > 'ṣ'
 'Ə' + [T_V] > 'Ə̣'
-'Í' + [T_V] > 'Ị́'
+'Í' + [T_V] > U+0049 U+0323 U+0301 c 'Ị́'
 'l' + [T_V] > 'ḷ'
 'L' + [T_V] > 'Ḷ'
 'ə́' + [T_V] > 'ə̣́'
