@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.52.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -54,7 +54,7 @@
   </StartMenu>
   <Info>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
-    <Version URL="">8.0.0</Version>
+    <Version URL="">8.1.0</Version>
     <Name URL="">GFF Amharic Keyboard</Name>
     <Copyright URL="">Creative Commons Attribution 3.0</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
@@ -101,12 +101,6 @@
       <Description>File Welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\AbyssinicaSIL-R.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
@@ -210,12 +204,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Amharic</Name>
       <ID>gff_amh_7</ID>
-      <Version>1.4</Version>
+      <Version>1.5</Version>
       <Languages>
         <Language ID="am">Amharic</Language>
       </Languages>
@@ -223,7 +223,7 @@
     <Keyboard>
       <Name>Ethiopic - (Language Neutral)</Name>
       <ID>gff_ethiopic_7</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
       <Languages/>
     </Keyboard>
   </Keyboards>
