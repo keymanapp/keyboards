@@ -1,11 +1,11 @@
 ﻿<?php /*
   Name:             Keyboard_gff_amhamaric
-  Copyright:        Keyboard ©1997-2019 The Ge'ez Frontier Foundation 
+  Copyright:        Keyboard ©1997-2020 The Ge'ez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    14 Mar 2019
+  Modified Date:    22 Jan 2020
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -28,7 +28,7 @@ EXTRA;
   require_once('header.php');
 ?>
 
-<p style='margin:0px'>Keyboard &#169; 1997-2019. Ge'ez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard &#169; 1997-2020. Ge'ez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -184,6 +184,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.9, 22 Jan 2020</dt>
+  <dd>Package migration to Abyssinica SIL 2.000</dd>
   <dt>Version 1.8, 9 Mar 2019</dt>
   <dd>Fix to recognize apostrophe after Salis forms.</dd>
   <dt>Version 1.7, 1 Dec 2018</dt>
