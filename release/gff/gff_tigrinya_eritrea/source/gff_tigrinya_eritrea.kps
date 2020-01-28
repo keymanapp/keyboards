@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1352.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>12.0.64.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -56,7 +56,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">GFF Tigrinya-Eritrean Keyboard</Name>
-    <Copyright URL="">2009-2019 Ge'ez Frontier Foundation</Copyright>
+    <Copyright URL="">2009-2020 Ge'ez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
@@ -78,12 +78,6 @@
       <Description>Keyboard Tigrinya</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
@@ -211,14 +205,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.bmp</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ትግርኛ (Tigrinya)</Name>
       <ID>gff_tigrinya_eritrea</ID>
-      <Version>1.2</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica_sil\AbyssinicaSIL-R.ttf</DisplayFont>
+      <Version>1.3</Version>
       <Languages>
         <Language ID="ti-Ethi-ER">Tigrinya (Ethiopic, Eritrea)</Language>
       </Languages>

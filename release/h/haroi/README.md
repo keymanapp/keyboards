@@ -1,9 +1,7 @@
 Haroi Keyboard
 =====================
 
-Copyright (c) 2019 SIL International
-
-Version 1.0
+Copyright (c) 2019-2020 SIL International
 
 __DESCRIPTION__
 This keyboard is adapted from VNI.
