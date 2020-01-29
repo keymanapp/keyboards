@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Burush&atilde;ski Alphabet - Roman/latin Keyboard Help';
+  $pagename = 'Burush&atilde;ski Girminas - Roman/latin Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
@@ -7,15 +7,15 @@
 
 
 <p>
-  &nbsp; Please  use the keyboard as you would use any other American English keyboard except  for pronunciation unique to <br />
-  &nbsp; Burush&atilde;ski, Shina and Khowar. Following is the chart you  can use as a guidance for writing in Burush&atilde;ski. The keyboard <br />
-  &nbsp; is designed and developed after careful consideration of  the linguistic context in which burusho people live. <br />
+Please use the keyboard as you would use any other American English keyboard except for phoneme unique to 
+Burushãski, Shina and Khowar. Following is the chart that can be used as a guidance. The 
+keyboard is designed and developed after careful consideration of the linguistic context in which burusho people live. 
 </p>
 <p>
-  &nbsp; This means the proposed alphabets would not only be easy for burusho speakers to write but they are common to <br />
-  &nbsp; Urdu, Shina and Khowar speakers. While IPA standards are  excellent for academia and language professionals, this <br />
-  &nbsp; keyboard and the proposed alphabets are for the common  people to communicate.
-</p>
+This means the proposed alphabets would not only be easy for burusho speakers to write but they also are common to the speakers of 
+Urdu, Shina and Khowar. While IPA standards are excellent for language professionals, this 
+keyboard and the proposed alphabets are for the common people to communicate. </p>
+
     <table class="inputSequences">
         <tbody>
   <tr>
@@ -251,3 +251,9 @@
   </tr>
         </tbody>
     </table>
+
+<h1>Using the keyboard on touch devices</h1>
+<p>On mobile devices where burushaski girminas keyboard is installed, press key and hold for the character "s" to appear.  See the following exhibit.
+</p>
+<p><IMG SRC="welcome_html_2feda655.jpg" NAME="graphics1" ALIGN=LEFT WIDTH=680 HEIGHT=294 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#2e75b5"><SDFIELD TYPE=DOCINFO SUBTYPE=CREATE FORMAT=AUTHOR></SDFIELD></FONT>
+	</p>
