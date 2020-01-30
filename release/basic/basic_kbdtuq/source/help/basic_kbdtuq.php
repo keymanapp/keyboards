@@ -10,7 +10,7 @@
 </p>
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
 <p>^a will produce ä (available on aAeEıIoOuUiİ).</p>
-<p>¨a will produce ä (available on aAeEıIoOuUyiİ).</p>
+<p>¨a will produce ä (available on aAeEıIoOuUiİ).</p>
 <p>~a will produce ã (available on aAnNoO).</p>
 <p>`a will produce à (available on aAeEıIoOuUiİ).</p>
 <p>´a will produce á (available on aAeEıIoOuUiİ).</p>
