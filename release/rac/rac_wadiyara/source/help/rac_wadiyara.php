@@ -1,10 +1,9 @@
-<html>
-<head>
-<META http-equiv=Content-Type content="text/html; charset=UTF-8">
-  <title>The Rachitrali-Wadiyara Keyboard Package</title>
-</head>
-<body style="max-width:600px;">
-<h1>The Rachitrali-Wadiyara Keyboard Package</h1>
+<?php 
+  $pagename = 'The Rachitrali-Wadiyara Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
+<h1>The Rachitrali-Wadiyara Keyboard Help</h1>
       <P><SPAN class=author_date_hits>Rehmat Aziz Chitrali, 
       2020-01-29</SPAN></P>
 
@@ -100,6 +99,4 @@ SOFTWARE.</p></DIV>
 <li><a href='http://keymankeyboards.com/iso:kxp'>Other keyboards for these languages</a></li>
 </ul>
 
-</body>
-</html>
 
