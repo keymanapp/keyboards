@@ -30,3 +30,4 @@ Supported Platforms
  * macOS
  * iOS
  * Android
+ * Linux
