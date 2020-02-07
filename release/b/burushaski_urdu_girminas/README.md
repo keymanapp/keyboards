@@ -1,12 +1,13 @@
 Burushaski Urdu Phonetic Keyboard
 ===========================
 
-Copyright (c) 2007-2019 Zeeshan Hyder
+Copyright (c) 2019-2020 Quwat Khan
 
 Version 1.2
 
 __DESCRIPTION__
-This package includes a phonetic keyboard called <b>Urdu Phonetic</b> and the font <b>Pak Nastaleeq</b> designed for the Urdu languages.
+
+یہ اردو رسم الخط میں بُری شاسکی لکھنے کا کی بورڈ ہے۔ اگر آپ نے پہلے فونیٹک اردو کی بورڈ استعمال کیا ہے تو آپ آسانی سے بری شاسکی میں بھی لکھ سکتےہیں ۔ اضافی بروشاسکی صوتی حروف جو مرحوم علامہ نصیر الدین ہنزائی کی کتابوں میں یا اُن کی ڈکشنیری میں نظر آتے ہیں اُن کو فونیٹک کی بورڈ میں شامل کیا گیا ہے۔ آسانی کے لیے تمام بُری شاسکی اضافی صوتی حروف شفٹ اور آلٹ بٹن دبا کر مندرجہ ذیل گائید کو دیکھ کر لکھ سکتےہیں۔ اچھی خوش خطی کے لیے ہم جمیل نستلیق فونٹ کا مشورہ دیتے ہیں۔ 
 
 Links
 -----
