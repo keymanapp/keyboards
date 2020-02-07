@@ -1,4 +1,4 @@
-The MIT License (MIT)
+﻿The MIT License (MIT)
 
 Copyright (c) 2007-2019 Quwat K. Sunny
 

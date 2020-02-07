@@ -1,4 +1,4 @@
-Burushaski Urdu Phonetic Keyboard
+﻿Burushaski Urdu Phonetic Keyboard
 ===========================
 
 Copyright (c) 2019-2020 Quwat Khan
