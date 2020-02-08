@@ -12,8 +12,11 @@ Saraiki generated from template
 
 Links
 -----
+https://saraiki.jimdofree.com
 
 Supported Platforms
 -------------------
  * Windows
+ * macOS
+ * Linux
  
