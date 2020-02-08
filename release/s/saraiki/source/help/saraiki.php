@@ -1,13 +1,13 @@
 <?php
-  $pagename = 'Saraiki Keyboard';
-  $pagetitle = 'Saraiki Keyboard';
+  $pagename = 'Saraiki (Khojki) Keyboard';
+  $pagetitle = 'Saraiki (Khojki) Keyboard';
   require_once('header.php');
 ?>
 
-<h1>Saraiki Keyboard Help</h1>
+<h1>Saraiki (Khojki) Keyboard Help</h1>
 
 <p>
-    Desktop keyboard for typing Saraiki.
+  Desktop keyboard for typing Saraiki with the Khojki script.
 </p>
 
 <h1>Desktop Keyboard Layout</h1>
