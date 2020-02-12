@@ -1,67 +1,45 @@
-# Open Source Keyman keyboards
+Sundanese Keyboard
+=====================
 
-## File Layout
+Copyright (c) 2020 Ilham Nurwansah
 
-Keyboards are grouped into three folders:
+Version 1.0
 
-  * `release` - keyboards with full source that pass our stringent quality checks, Unicode only
-  * `legacy` - binary distributions of keyboards, migrated from Tavultesoft servers, Unicode and 
-    non-Unicode
-  * `experimental` - keyboards that have not yet passed the quality check, available from the 
-    'experimental' category in Keyman apps with Keyman 10 and later. Unicode only.
+__DESCRIPTION__
+Keyboard for Sundanese script, supported with Unicode table. 
 
-Within each of the folders, keyboards are further grouped by first letter or by prefix, where 
-multiple keyboards share the same prefix indicating provenance, for example `sil` or `gff`.
+Links
+-----
 
-## Contributing
+ * Home:     https://kairaga.com/font-sunda/keyboard
+ * Help:     https://kairaga.com/font-sunda/keyboard/help
+ * Contact:  ilhamnurwansah@gmail.com 
 
-First, read the guide! <https://help.keyman.com/developer/keyboards/>
+Supported Platforms
+-------------------
+ * Windows
+ * macOS
+ * Linux
 
-Keyman Developer 12.0 is recommended to edit these files. <https://keyman.com/developer>
 
-## Building Keyboards
+Todo
+----
 
-### Prerequisites
+* Fill in the blanks in this README.md file:
+  * Fill in the name of keyboard
+  * Complete the copyright information: YYYY should be year (or range of years from date of first release to date of present release), followed by copyright holder (person or legally recognised entity)
+  * Fill in the version number: change "A.B" to the version number of the present release; use "1.0" if this is a new keyboard
+  * Fill in a description of the keyboard
+  * Fill in the Links information (or delete the line if it doesn't apply)
+  * Delete any platforms under the "Supported Platforms" section that your keyboard files do not support. The result should agree with the "store(&TARGETS)" information in the .kmn file. (If "store(&TARGETS)" is "any", then leave all the platforms in the list.)
+* Update the LICENSE.md file with the same copyright information used in the README.md file [note, to be included in the Keyman keyboards repo, you must use MIT license]
+* Update HISTORY.md to give date of first release (and any other history you want)
+* Rename the template.keyboard_info file to match your project name (project_name + ".keyboard_info" extension), for example "inuktitut_latin.keyboard_info" for the "inuktitut_latin" keyboard.
+  * Complete the information in the .keyboard_info file by filling in data for "language" and "description".
+  * replace "zzz-Latn" with the BCP 47 code for the language-script-region for which this keyboard is designed, for example: "tpi" for Tok Pisin (where no script or region subtag is needed), "ahk-Thai" for Ahka written with the Thai script, or "ti-ET" for Tigrigna as used in Ethiopia. (Keyman BCP 47 support allows a language-script-region triplet. The language code is required: the two-letter ISO 639-1 code, if one exists, or else the three-letter ISO 639-3 (Ethnologue) code. Script and region are optional. Script should be included unless the language code has a "Suppress-Script" entry in the http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry registry. See https://www.w3.org/International/questions/qa-choosing-language-tags for details.)
+  * if this keyboard supports more than one language, separate the codes with commas: "zzz", "qqq" and place each on a separate line
+  * supply a meaningful description for the keyboard; this description will be what website visitors will see when they view the keyboard details and on which they can search
+* This should cover many cases, but if the keyboard is more complicated, see: https://help.keyman.com/developer/cloud/keyboard_info/1.0/ for more details of what can be included in the .keyboard_info file, and for examples.
+* Finally, remove these TODO items from this file once you have completed them!
 
-Windows:
-  * Git for Windows (or MinGW)
-  * You will need to use **Git Bash** or equivalent to build (not tested with Cygwin), not 
-    Windows Command Prompt or PowerShell.
-  * You can also **WSL** (Bash on Ubuntu on Windows) if you place the repo in a 
-    Windows-accessible path (such as `/mnt/c/...`), so the Keyman Developer Compiler 
-    can run (requires Windows 10 Anniversary Update or later). Beware of line-ending changes
-    if mixing Windows and WSL usage!
-
-Linux, macOS:
-  * **WINE** is required in order to run the Keyman Developer 
-    compiler which is currently a Windows-only executable.
-
-### Build instructions
-
-`build.sh` can be used to build all the keyboards from the command line.
-  
-* The Keyman Developer compiler is included in the `tools/` folder and so Keyman Developer 
-  is not required for builds.
-  
-* Common `build.sh` parameters:
-  * `--help     List build.cmd parameters`
-  * `-s         Quieter build`
-  * `-c         Clean instead of build`
-  * `-d         Include debug information`
-  * `-w         Treat warnings as errors`
-  * `[target]   Specific folder to build`
-
-* Each keyboard also includes a project file which can be used to build the project - either from the command line 
-  kmcomp compiler, or from the Keyman Developer IDE.
-
-## Deprecated keyboards
-
-If a keyboard has been replaced by another keyboard, include a DEPRECATED.md file in the folder referencing the 
-new keyboard name.
-
-## Common links
-
-   * <https://help.keyman.com/developer/keyboards/>: Guide to working with this repository 
-   * <https://keyman.com/developer/keymanweb/keyboards.php>: Published documentation for each keyboard
-   * <https://r.keymanweb.com/api/4.0/keyboards/>: JSON API for compiled keyboards available from Keyman Cloud
-   * <https://help.keyman.com/developer/cloud/keyboard_info/>: Documentation on the .keyboard_info file format used in this repository
+ 
