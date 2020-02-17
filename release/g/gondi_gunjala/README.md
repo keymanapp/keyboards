@@ -1,9 +1,9 @@
 Gondi (Gunjala) Keyboard
 =======================
 
-Copyright (C) 2019 SIL International
+Copyright (C) 2019-2020 SIL International
 
-Version 1.0
+Version 1.1
 
 __DESCRIPTION__
 This Gondi (Gunjala) keyboard has been designed for typing the Adilabad Gondi (wsg) language 
