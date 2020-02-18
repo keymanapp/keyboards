@@ -1217,12 +1217,12 @@ function writetable(k,r)
 <ul>
     <li><b>Nglegena.</b> This is the basic 20 letters (consonantal syllables), and also the 16 murda letters and mahaprana letters. They can stand alone by themselves, and assigned the voice of 'a' /ɔ/.</li>
     <li><b>Sandhangan.</b> This is the basic 4 ('wulu', 'suku', 'taling', 'pepet') vowels, and 6 long vowels (including 'tarung'). They cannot stand alone by themselves, and must be joined by <b>nglegena</b>. Also for the sake of category, I would put the 8 'aksara swara', even though they can stand by themselves.</li>
-    <li><b>Lettter.</b> When you type a letter, if it's a vowel (aeioux), then you get the character 'ha' with the approriate 'sandhangan' immediately (one-to-two mapping, or in the case of 'o', one-to-three). If you type a consonant, you will get the '<b>nglegena</b>' form with the <b>pangkon</b> attached (one-to-two, or one-to-three in the cases of 'f','v','z').</li>
+    <li><b>Letter.</b> When you type a letter, if it's a vowel (aeioux), then you get the character 'ha' with the appropriate 'sandhangan' immediately (one-to-two mapping, or in the case of 'o', one-to-three). If you type a consonant, you will get the '<b>nglegena</b>' form with the <b>pangkon</b> attached (one-to-two, or one-to-three in the cases of 'f','v','z').</li>
     <li><b>X-Q rule.</b> Typing 'x' will give you ('ha'+)'pepet'. Typing 'q' will give you '<b>pangkon</b>'. These are the only arbitrary placement that you need to memorize. It just happened to fit nicely in QWERTY keyboard, because X and Q are unused (while 'f', 'v', and 'z', even though not found in native Javanese language, they are 'aksara <b>rekan</b>', and frequently used in words borrowed from Indonesian)</li>
     <li><b>Pangkon.</b> So, why the '<b>nglegena</b>' was attached with 'pangkon' by default? Well, it's because if you just type a consonant, it could be anywhere, in the start, middle, or end of a syllable. If it's in the start, you just need to add a vowel, and the pangkon will be replaced by the appropriate '<b>sandhangan</b>' (minus the 'ha', they're not needed anymore), if it's in the middle, it will transform to '<b>wyanjana</b>', if it's 'r' or 'y'. If it's in the end, it would transform to '<b>sesigeg</b>' if it's 'r', 'h', or 'ng'<ul>
         <li><em>Rule 1: Pangkon + Vowel will remove the 'pangkon' and add a 'sandhangan' where appropriate.</li>
         <li>Rule 2: Pangkon + Consonant will turn the consonant into 'pasangan', followed by another 'pangkon'</em></li>
-        <li>Rule 3: Pangkon + Consonant + Pangkon + Consonant will put a Zero-Width Joiner after first pangkon, so that it won't try to form a double subcript glyphs.</em></li></ul>
+        <li>Rule 3: Pangkon + Consonant + Pangkon + Consonant will put a Zero-Width Joiner after first pangkon, so that it won't try to form a double subscript glyphs.</em></li></ul>
     </li>
     <li><b>Sesigeg.</b> If you type 'r', 'h', or 'n' followed by 'g', you will get 'sesigeg' ('layar', 'wignyan', or 'cecak'). If it is immediately followed by a '<b>wyanjana</b>' and/or vowel, they will transform to 'ra', 'ha', and 'nga' automatically (+ applicable '<b>sandhangan</b>'), because 'layar', 'wignyan', or 'cecak' are basically 'ra pangkon', 'ha pangkon', and 'nga pangkon'. So all rules regarding '<b>pangkon</b>' + '<b>letter</b>' would apply to them as well. To type them independently, you can use:<ul>
         <li>'R' - 'layar'</li>
@@ -1290,7 +1290,7 @@ function writetable(k,r)
     <li>In the news: Ahok was released on this day (2019-01-24) and made quite a big news. So lets dedicate this piece of code to his freedom, shall we.</li>
 </ul>
 
-<p>Version 1.1</p>
+<p>A month later</p>
 <ul>
     <li>As I started reading more on the documentation, I was able to simplify most of the code, and also cover more rare glyph combinations, such as 'jnya'.</li>
     <li>I've run checks on the common keyboard tongue-twister, all documented in the section above. As well as mad the help page, and this welcome page.</li>
@@ -1302,13 +1302,10 @@ function writetable(k,r)
     <li>To develop the Android version.</li>
 </ul>
 
-<h2>Keyboard Source File</h2>
-
-<p>If you have Keyman Developer installed, you can now modify the keyboard source file (right-click to save to disk): <a type='application/octet-stream' href='jawa.kmn'>jawa.kmn</a>.</p>
-
 <h2>Change History</h2>
-<p>1.0.1: documentation, help file, welcome file, fix bugs, more Sundanese support, rekan support, code simplification with store()s, less comments, harder to read, but shorter code - 2019-01-28</p>
-<p>1.0.0: Initial release - 2019-01-24</p>
+<p>2020-02-18: Trying to publish it again</p>
+<p>2019-01-28: Adding documentation, help file, welcome file, fix bugs, more Sundanese support, rekan support, code simplification with store()s, less comments, harder to read, but shorter code</p>
+<p>1.0: Initial release - 2019-01-24</p>
 
 <p>License and copyrights:</p>
 <p>This keyboard is developed by Benny Lin using Keyman software. It is available for free to use from Github and elsewhere. If you make modification, please credit Benny Lin and Keyman software. You can find him in his Github, Wikipedia, or Telegram, all under the name @bennylin</p>
