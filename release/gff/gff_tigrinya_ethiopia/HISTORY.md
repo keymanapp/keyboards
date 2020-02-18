@@ -1,5 +1,8 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+## 2020-01-22 1.3
+* Package migration to Abyssinica SIL 2.000
+
 ## 2019-03-09 1.2
 * Fix to recognize apostrophe after Salis forms.
 * Change "Wx" and transliterated store names to localized names.

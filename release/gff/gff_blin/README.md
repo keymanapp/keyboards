@@ -1,9 +1,9 @@
 ብሊን (Blin) Keyboard
 ====================
 
-Copyright (C) 2009-2019 Ge'ez Frontier Foundation
+Copyright (C) 2009-2020 Ge'ez Frontier Foundation
 
-Version 1.3
+Version 1.4
 
 This is a Blin (ብሊን, ISO-639-2 byn) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard.
@@ -18,5 +18,5 @@ Links
 Supported Platforms
 -------------------
  * Windows
- * macOs
+ * macOS
  * Linux

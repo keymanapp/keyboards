@@ -29,6 +29,14 @@ menu item. Similar keyboards are also available for other desktop and mobile pla
 
 <h2>History</h2>
 
+<h3>1.3 (20 Jan 2020)</h3>
+<ul>
+  <li>Put feh, hah and tatweel on the shift level since they are not used in the </li>
+  <li>Balochi alphabet. In their place put fatah, kasreh and shin. Also moved the </li>
+  <li>Arabic yeh to unused shift Y. Other shifted letters moved around to accomodate. </li>
+  <li>Other minor changes. </li>
+</ul>
+
 <h3>1.2 (9 Aug 2019)</h3>
 <ul>
   <li>Removed deadkeys for Indic numbers. Use ctrl combination instead. </li>

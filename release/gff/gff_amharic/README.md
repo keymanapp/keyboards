@@ -1,9 +1,9 @@
 አማርኛ (Amharic) Keyboard
 =======================
 
-Copyright (C) 1997-2019 Ge'ez Frontier Foundation, SIL International
+Copyright (C) 1997-2020 Ge'ez Frontier Foundation, SIL International
 
-Version 1.8
+Version 1.9
 
 This is an Amharic (amh, አማርኛ) language mnemonic input method.  It requires a font supporting
 Ethiopic script under the Unicode 4.1 standard.
@@ -21,6 +21,8 @@ Links
 Supported Platforms
 -------------------
  * Windows
+ * macOS
+ * Linux
  * Web
  * Mobile Web
  * iOS

@@ -1,5 +1,8 @@
 # ብሊን (Blin) Change History
 
+## 2020-01-22 1.4
+* Package migration to Abyssinica SIL 2.000
+
 ## 2019-04-05 1.3
  * New side image added at the recommendation of Tekie Alibekit.
  * Packing uses new shared folder for GFF keyboards.

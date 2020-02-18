@@ -37,16 +37,16 @@ body,td,th {
 </TABLE>
 <hr>
 <h1 class="style11">Overview</h1>
-<p>Burushãski Girminas is latin based keyboard developed by Quwat K. Sunny. It was developed primarily for Burushãski of Yasin. It can flawlessly be used in other variants of Burushaski as well as shina and khowar. Additional characters requested by speakers of other <FONT FACE="Calibri, sans-serif">Burush&atilde;ski</FONT> variants. Quwat is an native speaker of 
-  Burushãski from Yasin, Qořqolhți.</p>
-<p class="style18"><a href="#YSB">Yasin Burushãski orthography</a> <br>
+<p>BurushÃ£ski Girminas is latin based keyboard developed by Quwat K. Sunny. It was developed primarily for BurushÃ£ski of Yasin. It can flawlessly be used in other variants of Burushaski as well as shina and khowar. Additional characters requested by speakers of other <FONT FACE="Calibri, sans-serif">Burush&atilde;ski</FONT> variants. Quwat is an native speaker of 
+  BurushÃ£ski from Yasin, QoÅqolhÈi.</p>
+<p class="style18"><a href="#YSB">Yasin BurushÃ£ski orthography</a> <br>
     <a href="#use">Using Yasin Burushaski orthography </a><br>
     <a href="#desktop">How to use the keyboard (Desktop)</a><br>
     <a href="#touch">How to use the keyboard on touch devices (tablets, phones)</a></p>
 <HR>
 <table width="100%" border="0" cellpadding="10">
   <tr>
-    <td width="96%"align="left" valign="top"><h3 class="style11"><a name="YSB"></a>Yasin Burushãski orthography</h3>
+    <td width="96%"align="left" valign="top"><h3 class="style11"><a name="YSB"></a>Yasin BurushÃ£ski orthography</h3>
         <hr>
         <table width="700" cellpadding="4" cellspacing="2">
           <col width="64">
@@ -75,12 +75,12 @@ body,td,th {
             <td align="left" bgcolor="#0066CC"><div align="center" class="style9">
                 <div align="left">E</div>
             </div></td>
-            <td><div align="left">behé</div></td>
+            <td><div align="left">behÃ©</div></td>
             <td><div align="left"></div></td>
             <td align="left" bgcolor="#FF00CC"><div align="center" class="style9">
                 <div align="left">F</div>
             </div></td>
-            <td><div align="left">sáhf</div></td>
+            <td><div align="left">sÃ¡hf</div></td>
             <td align="left" bgcolor="#660000"><div align="center" class="style9">
                 <div align="center">G</div>
             </div></td>
@@ -94,12 +94,12 @@ body,td,th {
             <td width="1" align="left" nowrap bgcolor="#FF6600"><div align="center" class="style9">
                 <div align="center">&#262;</div>
             </div></td>
-            <td align="left"><div align="left">&#263;ap&aacute;n, ćhéļ</div></td>
+            <td align="left"><div align="left">&#263;ap&aacute;n, ÄhÃ©Ä¼</div></td>
             <td width="6" align="left" bgcolor="#339900"><div align="center" class="style9">
                 <div align="center">&#7692;</div>
             </div></td>
             <td align="left"><div align="left">
-                <p>ḍünǧ,dánǧ</p>
+                <p>á¸Ã¼nÇ§,dÃ¡nÇ§</p>
             </div></td>
             <td align="left" bgcolor="#0066CC"><div align="center" class="style9">
                 <div align="left">&Eacute;</div>
@@ -123,7 +123,7 @@ body,td,th {
             <td width="1" align="left" nowrap bordercolor="#FFFFFF" bgcolor="#FF6600"><div align="center" class="style9">
                 <div align="center">&Ccedil;</div>
             </div></td>
-            <td align="left" bordercolor="#FFFFFF"><div align="left">&ccedil;&uuml;m,  çám &ccedil;ham</div></td>
+            <td align="left" bordercolor="#FFFFFF"><div align="left">&ccedil;&uuml;m,  Ã§Ã¡m &ccedil;ham</div></td>
             <td width="6" bordercolor="#FFFFFF"><div align="center"></div></td>
             <td bordercolor="#FFFFFF"><div align="left"></div></td>
             <td bordercolor="#FFFFFF"><div align="left"></div></td>
@@ -204,7 +204,7 @@ body,td,th {
             </div></td>
             <td><div align="left">bar, gar </div></td>
             <td align="left" bgcolor="#CC0066"><div align="left" class="style9">S</div></td>
-            <td><div align="left">sap, shón</div></td>
+            <td><div align="left">sap, shÃ³n</div></td>
             <td><div align="left"></div></td>
             <td align="left" bgcolor="#CC9900"><div align="left" class="style9">T</div></td>
             <td align="left"><div align="left">t&oacute;k, th&aacute;n&#487; </div></td>
@@ -217,7 +217,7 @@ body,td,th {
             <td bgcolor="#999900"><div align="left" class="style9">
                 <div align="center">&Otilde;</div>
             </div></td>
-            <td><div align="left">õsén</div></td>
+            <td><div align="left">ÃµsÃ©n</div></td>
             <td width="6" nowrap><div align="center"></div></td>
             <td>&nbsp;</td>
             <td width="6" nowrap><div align="center"></div></td>
@@ -240,7 +240,7 @@ body,td,th {
             <td bgcolor="#999900"><div align="left" class="style9">
                 <div align="center">&Oacute;</div>
             </div></td>
-            <td><div align="left">chópor</div></td>
+            <td><div align="left">chÃ³por</div></td>
             <td width="6" nowrap><div align="center"></div></td>
             <td>&nbsp;</td>
             <td width="6" nowrap><div align="center"></div></td>
@@ -307,184 +307,184 @@ body,td,th {
             <td width="229" valign="bottom" nowrap bgcolor="#CCCCCC"><p><strong>Sentence</strong></p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="bottom"><p>ã</p></td>
-            <td width="73" nowrap valign="bottom"><p>sãtik</p></td>
+            <td width="74" nowrap valign="bottom"><p>Ã£</p></td>
+            <td width="73" nowrap valign="bottom"><p>sÃ£tik</p></td>
             <td width="223" nowrap valign="bottom"><p>yesterday</p></td>
-            <td width="229" nowrap valign="bottom"><p>né sãtik akho ḍǐm bám</p></td>
+            <td width="229" nowrap valign="bottom"><p>nÃ© sÃ£tik akho á¸Çm bÃ¡m</p></td>
           </tr>
           <tr>
             <td width="74" nowrap valign="top"><p>a</p></td>
             <td width="73" nowrap valign="top"><p>bar</p></td>
             <td width="223" nowrap valign="top"><p>word, gorge</p></td>
-            <td width="229" nowrap valign="top"><p>&nbsp;güćé bo bar an ḍuwa ka jagha sén</p></td>
+            <td width="229" nowrap valign="top"><p>&nbsp;gÃ¼ÄÃ© bo bar an á¸uwa ka jagha sÃ©n</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>á</p></td>
-            <td width="73" nowrap valign="top"><p>ápai, apái</p></td>
+            <td width="74" nowrap valign="top"><p>Ã¡</p></td>
+            <td width="73" nowrap valign="top"><p>Ã¡pai, apÃ¡i</p></td>
             <td width="223" nowrap valign="top"><p>near me, (he) is not</p></td>
-            <td width="229" nowrap valign="top"><p>ja apái bo api.</p></td>
+            <td width="229" nowrap valign="top"><p>ja apÃ¡i bo api.</p></td>
           </tr>
           <tr>
             <td width="74" nowrap valign="top"><p>i</p></td>
             <td width="73" nowrap valign="top"><p>ikhar</p></td>
             <td width="223" nowrap valign="top"><p>himself/itself</p></td>
-            <td width="229" nowrap valign="top"><p>né ikhar ajo ḍéephoghori</p></td>
+            <td width="229" nowrap valign="top"><p>nÃ© ikhar ajo á¸Ã©ephoghori</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ǐ</p></td>
-            <td width="73" nowrap valign="top"><p>ǐlji</p></td>
+            <td width="74" nowrap valign="top"><p>Ç</p></td>
+            <td width="73" nowrap valign="top"><p>Çlji</p></td>
             <td width="223" nowrap valign="top"><p>after</p></td>
-            <td width="229" nowrap valign="top"><p>ja ǐlji gogha siýam.</p></td>
+            <td width="229" nowrap valign="top"><p>ja Çlji gogha siÃ½am.</p></td>
           </tr>
           <tr>
             <td width="74" nowrap valign="top"><p>e</p></td>
-            <td width="73" nowrap valign="top"><p>țerék</p></td>
+            <td width="73" nowrap valign="top"><p>ÈerÃ©k</p></td>
             <td width="223" nowrap valign="top"><p>white poplar</p></td>
-            <td width="229" nowrap valign="top"><p>țerék ajo ghosanüm maýimi.</p></td>
+            <td width="229" nowrap valign="top"><p>ÈerÃ©k ajo ghosanÃ¼m maÃ½imi.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>é</p></td>
-            <td width="73" nowrap valign="top"><p>éť</p></td>
+            <td width="74" nowrap valign="top"><p>Ã©</p></td>
+            <td width="73" nowrap valign="top"><p>Ã©Å¥</p></td>
             <td width="223" nowrap valign="top"><p>do</p></td>
-            <td width="229" nowrap valign="top"><p>ḍoro éť.</p></td>
+            <td width="229" nowrap valign="top"><p>á¸oro Ã©Å¥.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ée</p></td>
-            <td width="73" nowrap valign="top"><p>éeť</p></td>
+            <td width="74" nowrap valign="top"><p>Ã©e</p></td>
+            <td width="73" nowrap valign="top"><p>Ã©eÅ¥</p></td>
             <td width="223" nowrap valign="top"><p>make it done</p></td>
-            <td width="229" nowrap valign="top"><p>né ḍewaqal ḍoro éeț</p></td>
+            <td width="229" nowrap valign="top"><p>nÃ© á¸ewaqal á¸oro Ã©eÈ</p></td>
           </tr>
           <tr>
             <td width="74" nowrap valign="top"><p>o</p></td>
-            <td width="73" nowrap valign="top"><p>opái</p></td>
+            <td width="73" nowrap valign="top"><p>opÃ¡i</p></td>
             <td width="223" nowrap valign="top"><p>with them, near them</p></td>
-            <td width="229" nowrap valign="top"><p>wé opai béska api.</p></td>
+            <td width="229" nowrap valign="top"><p>wÃ© opai bÃ©ska api.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>õ</p></td>
-            <td width="73" nowrap valign="top"><p>õsén</p></td>
+            <td width="74" nowrap valign="top"><p>Ãµ</p></td>
+            <td width="73" nowrap valign="top"><p>ÃµsÃ©n</p></td>
             <td width="223" nowrap valign="top"><p>teach them</p></td>
-            <td width="229" nowrap valign="top"><p>ghéýu gha sabaq õsén.</p></td>
+            <td width="229" nowrap valign="top"><p>ghÃ©Ã½u gha sabaq ÃµsÃ©n.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ó</p></td>
-            <td width="73" nowrap valign="top"><p>ḍohón.</p></td>
+            <td width="74" nowrap valign="top"><p>Ã³</p></td>
+            <td width="73" nowrap valign="top"><p>á¸ohÃ³n.</p></td>
             <td width="223" nowrap valign="top"><p>hold </p></td>
-            <td width="229" nowrap valign="top"><p>arén ćé ḍohón</p></td>
+            <td width="229" nowrap valign="top"><p>arÃ©n ÄÃ© á¸ohÃ³n</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ũ</p></td>
-            <td width="73" nowrap valign="top"><p>bũm</p></td>
+            <td width="74" nowrap valign="top"><p>Å©</p></td>
+            <td width="73" nowrap valign="top"><p>bÅ©m</p></td>
             <td width="223" nowrap valign="top"><p>(of a liquid) thick</p></td>
-            <td width="229" nowrap valign="top"><p>chai ajo bũm mani.</p></td>
+            <td width="229" nowrap valign="top"><p>chai ajo bÅ©m mani.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ü</p></td>
-            <td width="73" nowrap valign="top"><p>büm</p></td>
+            <td width="74" nowrap valign="top"><p>Ã¼</p></td>
+            <td width="73" nowrap valign="top"><p>bÃ¼m</p></td>
             <td width="223" nowrap valign="top"><p>(sh) was</p></td>
-            <td width="229" nowrap valign="top"><p>mo akho büm.</p></td>
+            <td width="229" nowrap valign="top"><p>mo akho bÃ¼m.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ǩh</p></td>
-            <td width="73" nowrap valign="top"><p>ǩhaŝh</p></td>
+            <td width="74" nowrap valign="top"><p>Ç©h</p></td>
+            <td width="73" nowrap valign="top"><p>Ç©haÅh</p></td>
             <td width="223" nowrap valign="top"><p>till, until</p></td>
-            <td width="229" nowrap valign="top"><p>akho ǩhãŝh ḍãýamam.</p></td>
+            <td width="229" nowrap valign="top"><p>akho Ç©hÃ£Åh á¸Ã£Ã½amam.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>šh</p></td>
-            <td width="73" nowrap valign="top"><p>šhapik</p></td>
+            <td width="74" nowrap valign="top"><p>Å¡h</p></td>
+            <td width="73" nowrap valign="top"><p>Å¡hapik</p></td>
             <td width="223" nowrap valign="top"><p>food, bread</p></td>
-            <td width="229" nowrap valign="top"><p>paqo šhéh</p></td>
+            <td width="229" nowrap valign="top"><p>paqo Å¡hÃ©h</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>Ǯ</p></td>
-            <td width="73" nowrap valign="top"><p>ǯakün</p></td>
+            <td width="74" nowrap valign="top"><p>Ç®</p></td>
+            <td width="73" nowrap valign="top"><p>Ç¯akÃ¼n</p></td>
             <td width="223" nowrap valign="top"><p>donkey</p></td>
-            <td width="229" nowrap valign="top"><p>ǯakün ḍiýa.</p></td>
+            <td width="229" nowrap valign="top"><p>Ç¯akÃ¼n á¸iÃ½a.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ǧ</p></td>
-            <td width="73" nowrap valign="top"><p>phainǧ</p></td>
+            <td width="74" nowrap valign="top"><p>Ç§</p></td>
+            <td width="73" nowrap valign="top"><p>phainÇ§</p></td>
             <td width="223" nowrap valign="top"><p>lie</p></td>
-            <td width="229" nowrap valign="top"><p>pháinǧ aýéț</p></td>
+            <td width="229" nowrap valign="top"><p>phÃ¡inÇ§ aÃ½Ã©È</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ļ</p></td>
-            <td width="73" nowrap valign="top"><p>ļamãn</p></td>
+            <td width="74" nowrap valign="top"><p>Ä¼</p></td>
+            <td width="73" nowrap valign="top"><p>Ä¼amÃ£n</p></td>
             <td width="223" nowrap valign="top"><p>the hanging flap of shirt/kamiz</p></td>
-            <td width="229" nowrap valign="top"><p>ļamãn će ḍohón.</p></td>
+            <td width="229" nowrap valign="top"><p>Ä¼amÃ£n Äe á¸ohÃ³n.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ț</p></td>
-            <td width="73" nowrap valign="top"><p>țați</p></td>
+            <td width="74" nowrap valign="top"><p>È</p></td>
+            <td width="73" nowrap valign="top"><p>ÈaÈi</p></td>
             <td width="223" nowrap valign="top"><p>father</p></td>
-            <td width="229" nowrap valign="top"><p>țați hãļé bái</p></td>
+            <td width="229" nowrap valign="top"><p>ÈaÈi hÃ£Ä¼Ã© bÃ¡i</p></td>
           </tr>
           <tr>
             <td width="74" nowrap valign="top"><p>gh</p></td>
             <td width="73" nowrap valign="top"><p>ghosanum</p></td>
             <td width="223" nowrap valign="top"><p>tall, long</p></td>
-            <td width="229" nowrap valign="top"><p>țerék ajo ghosanum ḍuwa.</p></td>
+            <td width="229" nowrap valign="top"><p>ÈerÃ©k ajo ghosanum á¸uwa.</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ý</p></td>
-            <td width="73" nowrap valign="top"><p>țaýǐ</p></td>
+            <td width="74" nowrap valign="top"><p>Ã½</p></td>
+            <td width="73" nowrap valign="top"><p>ÈaÃ½Ç</p></td>
             <td width="223" nowrap valign="top"><p>that way</p></td>
-            <td width="229" nowrap valign="top"><p>țaýi aýi néh</p></td>
+            <td width="229" nowrap valign="top"><p>ÈaÃ½i aÃ½i nÃ©h</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ć</p></td>
-            <td width="73" nowrap valign="top"><p>ćapán</p></td>
+            <td width="74" nowrap valign="top"><p>Ä</p></td>
+            <td width="73" nowrap valign="top"><p>ÄapÃ¡n</p></td>
             <td width="223" nowrap valign="top"><p>sew it</p></td>
-            <td width="229" nowrap valign="top"><p>gatünz ćapán</p></td>
+            <td width="229" nowrap valign="top"><p>gatÃ¼nz ÄapÃ¡n</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ç</p></td>
-            <td width="73" nowrap valign="top"><p>çüm</p></td>
+            <td width="74" nowrap valign="top"><p>Ã§</p></td>
+            <td width="73" nowrap valign="top"><p>Ã§Ã¼m</p></td>
             <td width="223" nowrap valign="top"><p>poke</p></td>
-            <td width="229" nowrap valign="top"><p>çüm éț</p></td>
+            <td width="229" nowrap valign="top"><p>Ã§Ã¼m Ã©È</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ḍ</p></td>
-            <td width="73" nowrap valign="top"><p>ḍohón.</p></td>
+            <td width="74" nowrap valign="top"><p>á¸</p></td>
+            <td width="73" nowrap valign="top"><p>á¸ohÃ³n.</p></td>
             <td width="223" nowrap valign="top"><p>hold </p></td>
-            <td width="229" nowrap valign="top"><p>arén ćé ḍohón</p></td>
+            <td width="229" nowrap valign="top"><p>arÃ©n ÄÃ© á¸ohÃ³n</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ćh</p></td>
-            <td width="73" nowrap valign="top"><p>ćhéļ</p></td>
+            <td width="74" nowrap valign="top"><p>Äh</p></td>
+            <td width="73" nowrap valign="top"><p>ÄhÃ©Ä¼</p></td>
             <td width="223" nowrap valign="top"><p>water</p></td>
-            <td width="229" nowrap valign="top"><p>ćhéļ achhi</p></td>
+            <td width="229" nowrap valign="top"><p>ÄhÃ©Ä¼ achhi</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>çh</p></td>
-            <td width="73" nowrap valign="top"><p>çhám</p></td>
+            <td width="74" nowrap valign="top"><p>Ã§h</p></td>
+            <td width="73" nowrap valign="top"><p>Ã§hÃ¡m</p></td>
             <td width="223" nowrap valign="top"><p>hungry</p></td>
-            <td width="229" nowrap valign="top"><p>çhám amana.</p></td>
+            <td width="229" nowrap valign="top"><p>Ã§hÃ¡m amana.</p></td>
           </tr>
           <tr>
             <td width="74" nowrap valign="top"><p>chh</p></td>
-            <td width="73" nowrap valign="top"><p>chhaghórüm</p></td>
+            <td width="73" nowrap valign="top"><p>chhaghÃ³rÃ¼m</p></td>
             <td width="223" nowrap valign="top"><p>cold</p></td>
-            <td width="229" nowrap valign="top"><p>chhaghorüm ćhéļ achhi</p></td>
+            <td width="229" nowrap valign="top"><p>chhaghorÃ¼m ÄhÃ©Ä¼ achhi</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>țh</p></td>
-            <td width="73" nowrap valign="top"><p>țháț/ țhap</p></td>
+            <td width="74" nowrap valign="top"><p>Èh</p></td>
+            <td width="73" nowrap valign="top"><p>ÈhÃ¡È/ Èhap</p></td>
             <td width="223" nowrap valign="top"><p>cold/ night</p></td>
-            <td width="229" nowrap valign="top"><p>țhápé țháț amana.</p></td>
+            <td width="229" nowrap valign="top"><p>ÈhÃ¡pÃ© ÈhÃ¡È amana.</p></td>
           </tr>
           <tr>
             <td width="74" nowrap valign="top"><p>th</p></td>
-            <td width="73" nowrap valign="top"><p>tháng</p></td>
+            <td width="73" nowrap valign="top"><p>thÃ¡ng</p></td>
             <td width="223" nowrap valign="top"><p>push, nudge</p></td>
-            <td width="229" nowrap valign="top"><p>thanǧ éț</p></td>
+            <td width="229" nowrap valign="top"><p>thanÇ§ Ã©È</p></td>
           </tr>
           <tr>
-            <td width="74" nowrap valign="top"><p>ṅ</p></td>
-            <td width="73" nowrap valign="top"><p>ṅýa, ṅýám</p></td>
-            <td width="223" nowrap valign="top"><p> Bear, sweet</p></td>
-            <td width="229" nowrap valign="top"><p>ṅýã ṅýám jinari šhiçimi</p></td>
+            <td width="74" nowrap valign="top"><p>á¹</p></td>
+            <td width="73" nowrap valign="top"><p>á¹Ã½a, á¹Ã½Ã¡m</p></td>
+            <td width="223" nowrap valign="top"><p>Â Bear, sweet</p></td>
+            <td width="229" nowrap valign="top"><p>á¹Ã½Ã£ á¹Ã½Ã¡m jinari Å¡hiÃ§imi</p></td>
           </tr>
         </table>
       <hr>
@@ -493,18 +493,18 @@ body,td,th {
           <col width="64" span="13">
           <tr height="19">
             <td width="112" bgcolor="#FF9900" class="style9"><strong>Characters</strong></td>
-            <td width="92" height="19" bgcolor="#999900"><div align="center" class="style9">Á</div></td>
-            <td width="58" bgcolor="#000000"><div align="center" class="style9">Ã</div></td>
-            <td width="15" bgcolor="#FF6600"><div align="center" class="style9">Ć</div></td>
-            <td width="71" bgcolor="#669933"><div align="center" class="style9">Ç</div></td>
-            <td width="56" bgcolor="#FF0099"><div align="center" class="style9">Ḍ</div></td>
-            <td width="25" bgcolor="#3399CC"><div align="center" class="style9">É</div></td>
-            <td width="36" bgcolor="#663366"><div align="center" class="style9">Ǧ</div></td>
-            <td width="24" bgcolor="#CCCCCC"><div align="center" class="style9">Ǐ</div></td>
-            <td width="26" bgcolor="#009900"><div align="center" class="style9">Ǯ</div></td>
-            <td width="40" bgcolor="#FF9900"><div align="center" class="style9">Ǩ</div></td>
-            <td width="29" bgcolor="#0066CC"><div align="center" class="style9">Ļ</div></td>
-            <td colspan="2" bgcolor="#FFCC00"><div align="center" class="style10">Ṅ</div></td>
+            <td width="92" height="19" bgcolor="#999900"><div align="center" class="style9">Ã</div></td>
+            <td width="58" bgcolor="#000000"><div align="center" class="style9">Ã</div></td>
+            <td width="15" bgcolor="#FF6600"><div align="center" class="style9">Ä</div></td>
+            <td width="71" bgcolor="#669933"><div align="center" class="style9">Ã</div></td>
+            <td width="56" bgcolor="#FF0099"><div align="center" class="style9">á¸</div></td>
+            <td width="25" bgcolor="#3399CC"><div align="center" class="style9">Ã</div></td>
+            <td width="36" bgcolor="#663366"><div align="center" class="style9">Ç¦</div></td>
+            <td width="24" bgcolor="#CCCCCC"><div align="center" class="style9">Ç</div></td>
+            <td width="26" bgcolor="#009900"><div align="center" class="style9">Ç®</div></td>
+            <td width="40" bgcolor="#FF9900"><div align="center" class="style9">Ç¨</div></td>
+            <td width="29" bgcolor="#0066CC"><div align="center" class="style9">Ä»</div></td>
+            <td colspan="2" bgcolor="#FFCC00"><div align="center" class="style10">á¹</div></td>
           </tr>
           <tr height="19">
             <td bgcolor="#FF9900" class="style9"><strong>Key Combinations </strong></td>
@@ -523,13 +523,13 @@ body,td,th {
           </tr>
           <tr height="19">
             <td bgcolor="#000000" class="style9">Characters</td>
-            <td height="19" bgcolor="#999900"><div align="center" class="style10">Ó</div></td>
-            <td bgcolor="#000000"><div align="center" class="style10">Õ</div></td>
-            <td bgcolor="#FF6600"><div align="center" class="style10">Ř</div></td>
-            <td bgcolor="#669933"><div align="center" class="style10">Š</div></td>
-            <td bgcolor="#FF0099"><div align="center" class="style10">Ũ</div></td>
-            <td bgcolor="#3399CC"><div align="center" class="style10">Ü</div></td>
-            <td bgcolor="#663366"><div align="center" class="style10">Ý</div></td>
+            <td height="19" bgcolor="#999900"><div align="center" class="style10">Ã</div></td>
+            <td bgcolor="#000000"><div align="center" class="style10">Ã</div></td>
+            <td bgcolor="#FF6600"><div align="center" class="style10">Å</div></td>
+            <td bgcolor="#669933"><div align="center" class="style10">Å </div></td>
+            <td bgcolor="#FF0099"><div align="center" class="style10">Å¨</div></td>
+            <td bgcolor="#3399CC"><div align="center" class="style10">Ã</div></td>
+            <td bgcolor="#663366"><div align="center" class="style10">Ã</div></td>
             <td bgcolor="#CCCCCC"><div align="center" class="style10"></div></td>
             <td><div align="center" class="style10"></div></td>
             <td><div align="center" class="style10"></div></td>
