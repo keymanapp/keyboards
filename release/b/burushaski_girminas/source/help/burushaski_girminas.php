@@ -1,3 +1,10 @@
+<?php 
+  $pagename = 'Burush&atilde;ski Girminas - Roman/latin Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML> 
 	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
