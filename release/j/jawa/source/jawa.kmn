@@ -7,7 +7,7 @@ c Recommended Fonts: Noto Sans Javanese 2 and above, or Tuladha Jejeg
 store(&VERSION) '9.0'
 store(&ETHNOLOGUECODE) 'jav'
 store(&NAME) 'Nulisa Aksara Jawa'
-store(&MESSAGE) 'Based on is.gd/nulisa Javanese Script Online Transliterator'
+store(&MESSAGE) 'Based on http://is.gd/nulisa Javanese Script Online Transliterator'
 store(&KEYBOARDVERSION) '1.0'
 store(&VISUALKEYBOARD) 'jawa.kvks'
 store(&BITMAP) 'jawa.bmp'
@@ -37,20 +37,20 @@ store(isI) 'Ii'
 store(isO) 'OoÙ'
 store(isU) 'Uu'
 store(isX) 'Xx Í'
-store(isVowel) 'eiux'
-store(indexVowel) $Taling $Wulu $Suku $Pepet
-store(isVowel2) 'eiu'
+store(isVowel) 'iuex'
+store(indexVowel) $Wulu $Suku $Taling $Pepet
+store(isVowel2) 'iue'
 store(isVowel3) 'AIUEO' c capital vowel
 store(indexVowel3) U+A984 U+A986 U+A988 U+A98C U+A98E   
 
-store(isSandhangan) $Tarung $Wulu $Suku $Taling $Pepet \
+store(indexSandhangan) $Tarung $Wulu $Suku $Taling $Pepet \
                     U+A9B3 $Tolong U+A9B7 U+A9B9 U+A9BB \
                     c a, i, u, e, x, cecak telu, tolong, ii, uu, ai
-store(isNglegena) U+A98F U+A992 U+A994 U+A995 U+A997 U+A99A U+A99B U+A99D U+A9A0 U+A9A2 \
+store(indexNglegena) U+A98F U+A992 U+A994 U+A995 U+A997 U+A99A U+A99B U+A99D U+A9A0 U+A9A2 \
                   U+A9A4 U+A9A5 U+A9A7 U+A9A9 U+A9AA U+A9AB U+A9AD U+A9AE U+A9B1 U+A9B2 \
                   c 20 aksara sorted by Unicode (ka-ga-nga)
-store(isNglegena2) outs(isNglegena) U+A9B3 c with cecak telu
-store(isAll) outs(isNglegena) outs(isSandhangan)
+store(indexNglegena2) outs(indexNglegena) U+A9B3 c with cecak telu
+store(indexAll) outs(indexNglegena) outs(indexSandhangan)
 
 store(isBasic) 'kgcjtdnpbmMlLwWs' c 16 characters Except 'y': 'y' is special 
                                   c  because it can become pengkal
@@ -68,16 +68,16 @@ store(indexMurda)  U+A991 U+A993 U+A996 U+A999 U+A99C U+A99E U+A99F U+A9A6 U+A9A
 store(isCapital) 'KGCJTDNPBSZQ'
 store(indexCapital) U+A991 U+A993 U+A996 U+A999 U+A9A1 U+A9A3 \
                     U+A99F U+A9A6 U+A9A8 U+A9AF U+A9B0 U+A990
-store(isMurda) outs(indexCapital) U+A998 U+A99C U+A99E U+A9AC c 16 characters 
-store(isNglegena3) outs(isNglegena2) outs(isMurda)
+store(indexMurda2) outs(indexCapital) U+A998 U+A99C U+A99E U+A9AC c 16 characters 
+store(indexNglegena3) outs(indexNglegena2) outs(indexMurda2)
 
-store(isWyanjana) $Keret $Pengkal $Cakra
-store(isAll2) outs(isNglegena2) outs(isMurda) outs(isWyanjana)
+store(indexWyanjana) $Keret $Pengkal $Cakra
+store(indexAll2) outs(indexNglegena2) outs(indexMurda2) outs(indexWyanjana)
 store(isWyanjana2) 'yr'
 store(indexWyanjana2) $Pengkal $Cakra 
 
 store(isSesigeg) $Cecak $Layar $Wignyan
-store(indexSesigeg) U+A994 U+A9AB U+A9B2
+store(indexSesigeg) U+A994 U+A9AB U+A9B2 c 'nga', 'ra', 'ha'
 store(isSesigeg2) 'rhq'
 store(indexSesigeg2) $Layar $Wignyan $Pangkon
 store(isPanjingan) 'yrlw'
@@ -90,11 +90,11 @@ store(indexEverything) outs(indexBasic) outs(indexBasic2) outs(indexCapital) out
 
 store(isNumbers) '1234567890'
 store(isSpecial) "-=[]\;',./"
-store(isSpecial2) '!@#$%^&*()_+|{}:"<>'
+store(isSpecial2) '~!@#$%^&*()_+|{}:"<>?'
 store(indexNumbers) U+A9D1 U+A9D2 U+A9D3 U+A9D4 U+A9D5 U+A9D6 U+A9D7 U+A9D8 U+A9D9 U+A9D0 
 store(indexSpecial) U+A980 U+A9CF U+A9CC U+A9CD U+A9CA U+A9C3 U+A9C4 U+A9C8 U+A9C9 U+A9C5
-store(indexSpecial2) U+A989 U+A98A U+A994 U+A99A U+A99B U+A99D $Keret $Pengkal $Cakra \
-                     U+A998 U+A99C U+A998 U+A9CB U+A9C1 U+A9C2 U+A9C7 U+A9C6 U+A9DE U+A9DF
+store(indexSpecial2) U+A9B3 U+A989 U+A98A U+A994 U+A99A U+A99B U+A99D $Keret $Pengkal $Cakra \
+                     U+A998 U+A99C U+A998 U+A9CB U+A9C1 U+A9C2 U+A9C7 U+A9C6 U+A9DE U+A9DF U+A9B3
 store(isOthers) outs(isNumbers) outs(isSpecial)
 store(indexOthers) outs(indexNumbers) outs(indexSpecial)
 store(&TARGETS) 'windows macosx linux'
@@ -133,13 +133,13 @@ c   with pengkal, the first time one types the vowel "nggra" it deletes the pang
 c   time it "nggraa" it adds the tarung.
 U+A994 $Pangkon U+A992 $Pangkon + any(isWyanjana2) > \
   context(1) context(2) context(3) index(indexWyanjana2,5) $Pangkon   c nggr/nggy
-any(isNglegena) $Pangkon U+A9A0 $Pangkon + 'h' > context(1) context(2) U+A99B context(4) c <K>th
-any(isNglegena) $Pangkon U+A9A2 $Pangkon + 'h' > context(1) context(2) U+A99D context(4) c <K>dh
-any(isNglegena) $Pangkon any(isNglegena) $Pangkon + any(isBasic)  > \
+any(indexNglegena) $Pangkon U+A9A0 $Pangkon + 'h' > context(1) context(2) U+A99B context(4) c <K>th
+any(indexNglegena) $Pangkon U+A9A2 $Pangkon + 'h' > context(1) context(2) U+A99D context(4) c <K>dh
+any(indexNglegena) $Pangkon any(indexNglegena) $Pangkon + any(isBasic)  > \
   context(1) context(2) $ZWJ context(3) context(4) index(indexBasic,5) $Pangkon
-any(isNglegena) $Pangkon any(isNglegena) $Pangkon + 'y'           > \
+any(indexNglegena) $Pangkon any(indexNglegena) $Pangkon + 'y'           > \
   context(1) context(2) context(3) $Pengkal $Pangkon
-any(isNglegena) $Pangkon any(isNglegena) $Pangkon + any(isBasic2) > \
+any(indexNglegena) $Pangkon any(indexNglegena) $Pangkon + any(isBasic2) > \
   context(1) context(2) $ZWJ context(3) context(4) index(indexBasic2,5) U+A9B3 $Pangkon
 
 c c c c c c c c c
@@ -147,9 +147,11 @@ c Vowel rules
 c c c c c c c c c
 
 + 'a' > U+A9B2
-c if(opt1='1') + 'o' > U+A9B2 $Taling $Tarung
-c if(opt1='2') + 'o' > U+A9B2 $Taling $Tarung
-c if(opt1='3') + 'o' > U+A9B2 $Tolong c Sundanese 'o'
++ 'o' > U+A9B2 $Taling $Tarung
+  c todo: to be implemented - the difference between Javanese and Sundanese 'o'
+  c if(opt1='1') + 'o' > U+A9B2 $Taling $Tarung
+  c if(opt1='2') + 'o' > U+A9B2 $Taling $Tarung
+  c if(opt1='3') + 'o' > U+A9B2 $Tolong c Sundanese 'o'
 + any(isVowel)  > U+A9B2 index(indexVowel,1) c 'eiux'
 + any(isVowel3) > index(indexVowel3,1) c 'AIUEO'
 
@@ -167,13 +169,13 @@ any(isSesigeg) + 'o'          > index(indexSesigeg,1) $Taling $Tarung  c sesigeg
    $Cakra $Pangkon + any(isX) > $Keret                c cakra + x = cakra keret
 if(opt1='3') $Keret + any(isU) > context $Tolong      c Sundanese -reu
 
-    any(isAll2) + any(isA) > context $Tarung        c nglegena/wyanjana/murda + a = aa
-any(isNglegena) + any(isI) > context U+A9BB         c ai
-any(isNglegena) + any(isU) > context U+A9BB $Tarung c au
+    any(indexAll2) + any(isA) > context $Tarung        c nglegena/wyanjana/murda + a = aa
+any(indexNglegena) + any(isI) > context U+A9BB         c ai
+any(indexNglegena) + any(isU) > context U+A9BB $Tarung c au
                                                     c no 'ae'
                                                     c no 'ax'
                                                     c no 'ao'
-any(isNglegena) U+A9B3 + any(isO) > context U+A9B3  U+A9B2 $Taling $Tarung c strange exception with 'fao'
+any(indexNglegena) U+A9B3 + any(isO) > context U+A9B3  U+A9B2 $Taling $Tarung c strange exception with 'fao'
          $Wulu + any(isA) > context U+A9AA          c ia -> iya
          $Wulu + any(isI) > U+A9B7                  c ii
          $Wulu + any(isU) > context U+A9AA $Suku    c iu -> iyu
@@ -191,7 +193,7 @@ any(isNglegena) U+A9B3 + any(isO) > context U+A9B3  U+A9B2 $Taling $Tarung c str
          $Taling + any(isU) > context U+A9AA $Suku  c eu -> eyu
                                                     c no 'ee'
                                                     c no 'ex'  
-if(opt1='3') $Pepet + any(isU) > context $Tolong      c Sundanes eu
+if(opt1='3') $Pepet + any(isU) > context $Tolong      c Sundanese eu
           $Taling + any(isO) > context U+A9AA $Taling $Tarung  c eo -> eyo
   $Taling $Tarung + any(isA) > context U+A9AE       c oa -> owa
   $Taling $Tarung + any(isI) > context U+A9AE $Wulu c oi -> owi
@@ -220,6 +222,7 @@ c c c c c c c c c
                    + any(isSesigeg2) > index(indexSesigeg2,1)          c -r,-h,'q' -> layar, wignyan, pangkon
                U+A9A4 $Pangkon + 'c' > U+A99A $Pangkon U+A995 $Pangkon c -nc- -> nyc
                U+A9A4 $Pangkon + 'j' > U+A99A $Pangkon U+A997 $Pangkon c -nj- -> nyj
+               U+A9A4 $Pangkon + 'n' > U+A99F $Pangkon                 c -nn- -> Na Murda
                U+A9A0 $Pangkon + 'h' > U+A99B $Pangkon                 c th-
                U+A9A2 $Pangkon + 'h' > U+A99D $Pangkon                 c dh-
 if(opt1='1')   U+A9A4 $Pangkon + 'y' > U+A99A $Pangkon                 c ny-
@@ -227,20 +230,20 @@ if(opt1='2')   U+A9A4 $Pangkon + 'y' > U+A99A $Pangkon                 c ny-
 if(opt1='3')   U+A9A4 $Pangkon + 'y' > context  U+A99A $Pangkon        c Sundanese ny-
                U+A9A4 $Pangkon + 'g' > $Cecak                          c -ng -> cecak
 any(isSesigeg) U+A9A4 $Pangkon + 'g' > context(1) U+A994 $Pangkon      c no double sesigeg + cecak
-                any(isSesigeg) + 'h' > context(1) U+A9B2 $Pangkon      c no double sesigeg + wignyan
-             any(isAll) $Cecak + 'g' > context U+A992 $Pangkon         c -ngg-
-                        $Cecak + 'g' > U+A994 $Pangkon U+A992 $Pangkon c ngg-
-           any(isAll) $Wignyan + 'r' > context U+A9AB $Pangkon         c -hr-
-any(isAll) any(isSesigeg) + any(isPanjingan)  > context index(indexPanjingan,3) $Pangkon
-           any(isSesigeg) + any(isPanjingan2) > index(indexSesigeg,1) $Pangkon index(indexPanjingan2,2) $Pangkon
-           any(isSesigeg) + any(isWyanjana2)  > index(indexSesigeg,1) index(indexWyanjana2,2) $Pangkon
-any(isNglegena3) $Pangkon + any(isWyanjana2)  > context(1) index(indexWyanjana2,3) $Pangkon    c pengkal/cakra
+                any(indexSesigeg) + 'h' > context(1) U+A9B2 $Pangkon      c no double sesigeg + wignyan
+             any(indexAll) $Cecak + 'g' > context U+A992 $Pangkon         c -ngg-
+                           $Cecak + 'g' > U+A994 $Pangkon U+A992 $Pangkon c ngg-
+           any(indexAll) $Wignyan + 'r' > context U+A9AB $Pangkon         c -hr-
+any(indexAll) any(indexSesigeg) + any(isPanjingan)  > context index(indexPanjingan,3) $Pangkon
+           any(indexSesigeg) + any(isPanjingan2) > index(indexSesigeg,1) $Pangkon index(indexPanjingan2,2) $Pangkon
+           any(indexSesigeg) + any(isWyanjana2)  > index(indexSesigeg,1) index(indexWyanjana2,2) $Pangkon
+any(indexNglegena3) $Pangkon + any(isWyanjana2)  > context(1) index(indexWyanjana2,3) $Pangkon    c pengkal/cakra
 
 c c c c c c c c c
 c Number & other rules
 c c c c c c c c c
 
-+ '`' > $ZWJ c zero width joiner ZWJ
++ '`' > $ZWJ     c zero width joiner ZWJ
 nul + any(isNumbers) > context(1) U+A9C7 index(indexNumbers,2)
 notany(indexNumbers) + any(isNumbers) > context(1) U+A9C7 index(indexNumbers,2)
 any(indexNumbers) + any(isEverything) > context(1) U+A9C7 index(indexEverything,2) $Pangkon
@@ -258,13 +261,20 @@ c c c c c c c c c
 
 store(isYRH) 'YRH'
 
-+ any(isCapital) > index(indexCapital,1) $Pangkon c except FMLWV
-c if capital FMLWV, show lowercase version instead
+  c + '~' > U+A9B3                                                 c cecak telu
++ any(isCapital) > index(indexCapital,1) $Pangkon              c except FMLWV
+  c if capital FMLWV, show lowercase version instead
 + any(isYRH) > index(isSesigeg,1)
 any(isMurdaAble) $Pangkon + 'h' > index(indexMurda,1) $Pangkon c Murda rules
-+ '~' > nul c empty
 + any(isSpecial2) > index(indexSpecial2,1)
-+ '?' > nul c empty
+           + '?'  > U+A9B3                                       c special '?' switcher
+  $Pangkon + '?'  > U+A9B3
+    U+A9B3 + '?'  > $Tarung
+   $Tarung + '?'  > $Tolong
+   $Tolong + '?'  > U+A9B7
+    U+A9B7 + '?'  > U+A9B9
+    U+A9B9 + '?'  > U+A9BB
+    U+A9BB + '?'  > U+A9B3
 
 c c c c c c c c c
 c Alt rules
@@ -279,11 +289,16 @@ c c c c c c c c c
 c Beeping rules
 c c c c c c c c c
 c For invalid combinations
+c c c c c c c c c
 
-store(isNotAllowed) 'q' outs(isYRH) '&*(-' outs(isAltKeys) c pangkon, sesigeg, wyanjana, panyangga
-store(indexNotAllowed) $Pangkon outs(isSesigeg) outs(isWyanjana) U+A980 
+store(isNotAllowed) 'q' outs(isYRH) '&*(-~' outs(isAltKeys) c pangkon, sesigeg (cecak-layar-wignyan), wyanjana
+                                                            c (keret-pengkal-cakra), panyangga, cecak telu, alt keys
+store(isNotAllowed2) 'q&*(-~' outs(isAltKeys)
+store(indexNotAllowed) $Pangkon outs(isSesigeg) outs(indexWyanjana) U+A980 U+A9B3
+store(indexNotAllowed2) outs(indexSandhangan) outs(indexVowel3) c sandhangan, aksara swara (capital vowels) 
 store(isNumbers2) outs(isNumbers) U+A9C7
 
-any(indexNotAllowed) + any(isNotAllowed) > context beep c eg. pangkon + pangkon
-any(isNumbers2) + any(isNotAllowed) > context beep c pada pangkat invalid combinations
-U+A9C7 + ':' > context beep c pangkat + pangkat
+ any(indexNotAllowed) + any(isNotAllowed)  > context beep c eg. pangkon + pangkon
+any(indexNotAllowed2) + any(isNotAllowed2) > context beep c eg. sandhangan + pangkon           c TODO: let 'O-' (Om) be possible
+      any(isNumbers2) + any(isNotAllowed)  > context beep c pada pangkat invalid combinations
+                              U+A9C7 + ':' > context beep c pangkat + pangkat

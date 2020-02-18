@@ -5,7 +5,7 @@
   <title>Javanese Script Easy Keyboard - Nulisa Aksara Jawa</title>
   <style type='text/css'>
     table { border-collapse: collapse }
-    td { border: solid 1px #c0c0c0; font: 1.2em Tahoma; width: 1.5em; text-align: center; cursor: default }
+    td { border: solid 1px #c0c0c0; font: 1.2em Tahoma; width: 1.5em; text-align: center; cursor: default; line-height: 2em }
     th { border: solid 1px #c0c0c0; font: bold 1.2em Arial; width: 1.5em; background: #c0c0c0 }
     h1 { font: bold 12pt Arial }
     #info { position: absolute; background-color: #F6FAB8; border: solid 1px gray; padding: 2px; font: 8pt Arial }
@@ -76,74 +76,22 @@
       divinfo = document.getElementById('info');
     } 
   //--></script>
+
 </head>
 <body onload='javascript:loaded()'>       
+<h1>Table of Content</h1>
+<ol>
+  <li><a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a></li>
+  <li><a href="#2">Usage Notes</a></li>
+  <li><a href="#3">Development Notes</a></li>
+  <li><a href="#4">Change History</a></li>
+</ol>
+<h1 id="1">Nulisa Aksara Jawa keyboard shortcuts</h1>
 
-<h1>Nulisa Aksara Jawa keyboard shortcuts</h1>
+<p>Please refer to this combination table for the intended output. Don't rely on the On-Screen keyboard, as it has many limitations. If the pressed button doesn't produce the same result as below, please contact the author.</p>
 
-<p>Please refer to this documentation for the up-to-date keyboard layout. Don't rely on the On-Screen keyboard, as it has many limitations.</p>
-
-<p>Type prefix key on the left/top, followed by key on top/left (look at the arrow) to get character.</p>
+<p>If you type the key on the left, followed by key on top, you'll get the following character.</p>
                             
-<!-- script type='text/javascript'>
-var   k1=' abcdefghijklmnoprstuwxyz',
-r1=Array("'á ć é   í  ĺ ńó ŕś ú  ýź",
-         '"              ő    ű    ',
-         "*ă   ĕ ğ ĭ     ŏ    ŭ    ",
-         "%  čďě      ľ ň  řšť    ž",
-         ". ḃċḋėḟġḣı  ŀṁṅ ṗṙṡṫ ẇẋẏż",
-         ",ą ç ę ģ į ķļ ņ  ŗşţų    ",
-         "`à   è   ì     ò    ù    ",
-         "^â ĉ ê ĝĥîĵ    ô  ŝ ûŵ ŷ ",
-         ":ä   ë   ï     ö    ü  ÿ ",
-         "~ã       ĩ    ñõ    ũ    ",
-         "@å                  ů    ",
-         "-ā  đē  ħī  ł  ō   ŧū    "),
-      k2=' ABCDEFGHIJKLMNOPRSTUWXYZ',
-r2=Array("'Á Ć É   Í  Ĺ ŃÓ ŔŚ Ú  ÝŹ",
-         '"              Ő    Ű    ',
-         "*Ă   Ĕ Ğ Ĭ     Ŏ    Ŭ    ",
-         "%  ČĎĚ      Ľ Ň  ŘŠŤ    Ž",
-         ". Ċ  Ė Ġ İ  Ŀ           Ż",
-         ",ĄÇ  Ę Ģ Į ĶĻ Ņ  ŖŞŢŲ    ",
-         "`À   È   Ì     Ò    Ù    ",
-         "^ÂĈ  Ê ĜĤÎĴ    Ô  Ŝ ÛŴ Ŷ ",
-         ":Ä   Ë   Ï     Ö    Ü  Ÿ ",
-         "~Ã       Ĩ    ÑÕ    Ũ    ",
-         "@Å                  Ů    ",
-         "-Ā  ĐĒ  ĦĪ  Ł  Ō   ŦŪ    ");
-
-writetable(k1,r1);
-document.write('<br />');
-writetable(k2,r2);
-function writetable(k,r)
-{                                  
-  document.write('<table><tr>
-    <td>
-  for(var x = 1; x < k.length; x++)
-    document.write('
-    <th>'+k.charAt(x)+'</th>');
-  document.write('</tr>');
-  for(var y = 0; y < r.length; y++)
-  {
-    document.write("<tr>
-    <th>"+r[y].charAt(0)+"</th>");
-    for(x = 1; x < r[y].length; x++)
-      if(r[y].charAt(x) == ' ')
-        document.write('
-    <td>
-      else
-        document.write('
-    <td>
-    for(x = r[y].length; x < k.length; x++)
-      document.write('
-    <td>
-    document.write('</tr>');
-  }
-  document.write('</table>');
-}
-</script -->
-         
 <table width="100%"><tbody>
   <tr>
     <td>→</td>
@@ -235,6 +183,8 @@ function writetable(k,r)
 </table>
 
 <br />
+
+<p>If you type the key on the top, followed by key on left, you'll get the following character.</p>
 
 <table width="100%"><tbody>
   <tr>
@@ -732,7 +682,7 @@ function writetable(k,r)
     <th>/</th></tr>
 <tr>
     <th>&nbsp;</th>
-    <td>zwj
+    <td>ZWJ<sup>[1]</sup>
     </td><td>꧑
     </td><td>꧒
     </td><td>꧓
@@ -756,8 +706,8 @@ function writetable(k,r)
     </td></tr>
   <tr>
     <th>shift+</th>
-    <th>
-    </th><td>ꦉ
+    <td>꦳
+    </td><td>ꦉ
     </td><td>ꦊ
     </td><td>ꦔ
     </td><td>ꦚ
@@ -776,10 +726,10 @@ function writetable(k,r)
     </td><td>꧆
     </td><td>꧞
     </td><td>꧟
-    </td><th>
-    </th></tr>
+    </td><td><sup>[2]</sup>
+    </td></tr>
   <tr>
-    <th>alt+</th>
+    <th rowspan="2">alt+</th>
     <th>
     </th><td>꦳
     </td><td>ꦴ
@@ -802,8 +752,32 @@ function writetable(k,r)
     </th><th>
     </th><th>
     </th></tr>
+  <tr>
+    <th><small>(ketik)</small>
+    </th><td>?
+    </td><td>??
+    </td><td>?x3
+    </td><td>?x4
+    </td><td>?x5
+    </td><td>?x6
+    </td><td>
+    </td><td>
+    </td><td>
+    </td><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th></tr>
 </table>
-<p>ZWJ = Zero-Width Joiner</p>
+<p><sup>[1]</sup> ZWJ = Zero-Width Joiner</p>
+<p><sup>[2]</sup> ? = switcher. Type multiple times to go through the 6 long vowels (sandhangan)</p>
 
 <p style='font-weight: bold'>Hidden features / Fitur tersembunyi. They're still in testing mode, and may change in the future.</p>
 <ul>
@@ -951,7 +925,7 @@ function writetable(k,r)
     </th><th>pra
     </th><th>p</th></tr>
 </table>
-<p>* Untuk pengetikan ꦥ+ꦵ (<i>tolong</i>), ketik 'p' lalu ALT+3
+<p>* <s>Untuk pengetikan ꦥ+ꦵ (<i>tolong</i>), ketik 'p' lalu ALT+3</s>
 <br />
 
 <table>
@@ -1212,74 +1186,99 @@ function writetable(k,r)
 <tr><th>Karakter</th><td></td></tr>
 <tr><th>Input</th><td></td></tr>
 </table>-->
-<h2>Usage Notes</h2>
+<h1 id="2">Usage Notes</h1>
 <p>How to use the keyboard (for user), or read the codes (for developer)</p>
 <ul>
-    <li><b>Nglegena.</b> This is the basic 20 letters (consonantal syllables), and also the 16 murda letters and mahaprana letters. They can stand alone by themselves, and assigned the voice of 'a' /ɔ/.</li>
-    <li><b>Sandhangan.</b> This is the basic 4 ('wulu', 'suku', 'taling', 'pepet') vowels, and 6 long vowels (including 'tarung'). They cannot stand alone by themselves, and must be joined by <b>nglegena</b>. Also for the sake of category, I would put the 8 'aksara swara', even though they can stand by themselves.</li>
-    <li><b>Letter.</b> When you type a letter, if it's a vowel (aeioux), then you get the character 'ha' with the appropriate 'sandhangan' immediately (one-to-two mapping, or in the case of 'o', one-to-three). If you type a consonant, you will get the '<b>nglegena</b>' form with the <b>pangkon</b> attached (one-to-two, or one-to-three in the cases of 'f','v','z').</li>
-    <li><b>X-Q rule.</b> Typing 'x' will give you ('ha'+)'pepet'. Typing 'q' will give you '<b>pangkon</b>'. These are the only arbitrary placement that you need to memorize. It just happened to fit nicely in QWERTY keyboard, because X and Q are unused (while 'f', 'v', and 'z', even though not found in native Javanese language, they are 'aksara <b>rekan</b>', and frequently used in words borrowed from Indonesian)</li>
-    <li><b>Pangkon.</b> So, why the '<b>nglegena</b>' was attached with 'pangkon' by default? Well, it's because if you just type a consonant, it could be anywhere, in the start, middle, or end of a syllable. If it's in the start, you just need to add a vowel, and the pangkon will be replaced by the appropriate '<b>sandhangan</b>' (minus the 'ha', they're not needed anymore), if it's in the middle, it will transform to '<b>wyanjana</b>', if it's 'r' or 'y'. If it's in the end, it would transform to '<b>sesigeg</b>' if it's 'r', 'h', or 'ng'<ul>
-        <li><em>Rule 1: Pangkon + Vowel will remove the 'pangkon' and add a 'sandhangan' where appropriate.</li>
-        <li>Rule 2: Pangkon + Consonant will turn the consonant into 'pasangan', followed by another 'pangkon'</em></li>
-        <li>Rule 3: Pangkon + Consonant + Pangkon + Consonant will put a Zero-Width Joiner after first pangkon, so that it won't try to form a double subscript glyphs.</em></li></ul>
+    <li><b>Adeg-adeg</b> (sentence openings). Type the pipe symbol (|) to get 'adeg-adeg' ꧋. Type \ to get ꧊. 'Rerenggan kiwa/tengen' ꧁ and ꧂ can be typed using { and }.</li>
+    <li><b>Nglegena.</b> This is the basic 20 letters (consonantal syllables), and also the 16 <b>murda</b> letters and <b>mahaprana</b> letters. They can stand alone by themselves, and by default assigned the voice of 'a' /ɔ/.</li>
+    <li><b>Sandhangan</b> (vowels). This is the basic 4 vowels ('wulu', 'suku', 'taling', 'pepet'), and 6 long vowels (including 'tarung', see <b>double vowels</b>). They cannot stand alone by themselves, and must be joined by a <b>nglegena</b>. Also for the sake of category, I would include here the 8 'aksara swara' vowels (A/E/I/O/U/Ai/Ii/II), even though these vowels can stand by themselves, without nglegena. To type standalone sandhangan<ul>
+        <li>'qe' - 'taling' ꦺ</li>
+        <li>'qi' - 'wulu' ꦶ</li>
+        <li>'qo' - 'taling tarung' ꦺꦴ</li>
+        <li>'qu' - 'suku' ꦸ</li>
+        <li>'qx' - 'pepet' ꦼ</li>
+    </ul></li>
+    <li><b>Letters.</b> When you type a letter, if it's a vowel (a/e/i/o/u/x), then you get the character 'ha' with the appropriate 'sandhangan' immediately (one-to-two mapping, or in the case of 'o', one-to-three). If you type a consonant, you will get the '<b>nglegena</b>' form with the <b>pangkon</b> attached (one-to-two, or one-to-three in the cases of 'f','v','z').</li>
+    <li><b>X-Q rule.</b> Typing 'x' will give you ('ha'+)'pepet'. Typing 'q' will give you '<b>pangkon</b>'. These are the only arbitrary placement that you need to memorize. It just happened to fit nicely in QWERTY keyboard, because X and Q are unused letters (while 'f', 'v', and 'z', even though not found in native Javanese language, they are 'aksara <b>rekan</b>', and frequently used in words borrowed from Indonesian)</li>
+    <li><b>Pangkon</b> (virama). So, why the '<b>nglegena</b>' was attached with 'pangkon' by default? Well, it's because if you just type a consonant, it could be anywhere, in the start, middle, or end of a syllable. If it's in the start, you just need to add a vowel, and the pangkon will be replaced by the appropriate '<b>sandhangan</b>' (minus the 'ha', they're not needed anymore), if it's in the middle, it will transform to '<b>wyanjana</b>', if it's 'r' or 'y'. If it's in the end, it would transform to '<b>sesigeg</b>' if it's 'r', 'h', or 'ng'<ul>
+        <li><em>Rule 1: Pangkon + Vowel will remove the 'pangkon' and add a 'sandhangan' where appropriate.</em></li>
+        <li><em>Rule 2: Pangkon + Consonant will turn the consonant into 'pasangan', followed by another 'pangkon'</em></li>
+        <li><em>Rule 3: Pangkon + Consonant + Pangkon + Consonant will put a Zero-Width Joiner after first pangkon, so that it won't try to form a double subscript glyphs.</em></li></ul>
     </li>
-    <li><b>Sesigeg.</b> If you type 'r', 'h', or 'n' followed by 'g', you will get 'sesigeg' ('layar', 'wignyan', or 'cecak'). If it is immediately followed by a '<b>wyanjana</b>' and/or vowel, they will transform to 'ra', 'ha', and 'nga' automatically (+ applicable '<b>sandhangan</b>'), because 'layar', 'wignyan', or 'cecak' are basically 'ra pangkon', 'ha pangkon', and 'nga pangkon'. So all rules regarding '<b>pangkon</b>' + '<b>letter</b>' would apply to them as well. To type them independently, you can use:<ul>
+    <li><b>Sesigeg</b> (final consonants). If you type an 'r', an 'h', or an 'n'-followed-by-'g', you will get a 'sesigeg' ('layar', 'wignyan', or 'cecak'). If it is immediately followed by a '<b>wyanjana</b>' and/or a vowel, they will transform to 'ra', 'ha', and 'nga' automatically (+ applicable '<b>sandhangan</b>'), because 'layar', 'wignyan', or 'cecak' are basically 'ra pangkon', 'ha pangkon', and 'nga pangkon'. So all rules regarding '<b>pangkon</b>' + '<b>letter</b>' would apply to them as well. To type them independently, you can use:<ul>
         <li>'R' - 'layar'</li>
         <li>'H' - 'wignyan'</li>
         <li>'Y' - 'cecak'</li></ul></li>
-    <li><b>Double consonant.</b> If you type these two/three letters in sequence, you would get different character (replacing the first one)<ul>
+    <li><b>Double consonants.</b> If you type these two/three letters in sequence, you would get different character (replacing the first one)<ul>
         <li>'ny' - 'nya pangkon' ꦚ꧀ (replacing 'na pangkon' ꦤ꧀)</li>
-        <li>'ng' - 'cecak' &nbsp; ꦁ</li>
+        <li>'ng' - 'cecak' &nbsp; ꦁ (see <b>sesigeg</b>)</li>
+        <li>'nn' - 'na murda' ꦟ꧀</li>
         <li>'th' - 'tha pangkon' ꦛ꧀ (replacing 'ta pangkon' ꦠ꧀)</li>
         <li>'dh' - 'dha pangkon' ꦝ꧀ (replacing 'da pangkon' ꦢ꧀)</li>
         <li>'nj' - 'nya pangkon ja pangkon' ꦚ꧀ꦗ꧀ (nasal sound)</li>
         <li>'nc' - 'nya pangkon ca pangkon' ꦚ꧀ꦕ꧀ (nasal sound)</li>
     </ul></li>
-    <li><b>Wyanjana.</b> If you type a consonant followed by 'r' or 'y', you will get 'wyanjana' ('cakra' or 'pengkal'), followed by '<b>pangkon</b>'*. You need to type a vowel afterwards, lest you would have invalid 'wyanjana'+'pangkon' combination. If you type 'r' followed by 'x', you will get 'cakra keret' instead of 'cakra + pepet'. To type them independently, you can use:<ul>
+    <li><b>Double vowels.</b> If you type these two/three letters in sequence, you would get different character (replacing the first one)<ul>
+        <li>'aa' - 'tarung' ꦴ</li>
+        <li>'ai' - 'dirga mure' ꦻ</li>
+        <li>'au' - 'dirga mure + tarung' ꦻꦴ</li>
+        <li>'ii' - 'wulu melik' ꦷ</li>
+        <li>'i'/'e' + any other vowel - instead of 'ha' in the middle, you get 'ya'</li>
+        <li>'uu' - 'suku mendhut' ꦹ</li>
+        <li>'u'/'o' + any other vowel - instead of 'ha' in the middle, you get 'wa'</li>
+    </ul></li>
+    <li><b>Wyanjana</b> (medial consonants). If you type a consonant followed by an 'r' or a 'y', you will get 'wyanjana' ('cakra' or 'pengkal'), followed by a '<b>pangkon</b>'*. You need to type a vowel afterwards, lest you would have an invalid 'wyanjana'+'pangkon' combination. If you type a consonant followed by an 'r' followed by an 'x', you will get a 'cakra keret' instead of 'cakra + pepet'. To type them independently, you can use:<ul>
         <li>'&' (SHIFT+7) or (ALT+7) - 'cakra keret'</li>
         <li>'(' (SHIFT+8) or (ALT+8) - 'pengkal'</li>
         <li>')' (SHIFT+9) or (ALT+9) - 'cakra'</li>
         <li>*Now, I know it's highly unusual to see 'wyanjana' with 'pangkon', but I decided for the sake of code brevity. Otherwise I have to make separate rules for 'wyanjana'. Instead, since they ends with 'pangkon', all the rules for 'pangkon' also applies for them. In one way, it makes sense, because if you only type 'br' for example, it doesn't have a vowel yet. If you leave it like that, of course it's wrong. Only after you type a vowel would the 'pangkon' get replaced by applicable '<b>sandhangan</b>'</li></ul></li>
-    <li><b>Rekan.</b> They're supplementing the letters that aren't found in Javanese language, namely 'fvz'. Some sources equate 'f' and 'v' as 'pa cecak telu'. I differentiate them: 'f' as 'pa cecak telu'(+'pangkon') and 'v' as 'wa cecak telu'(+'pangkon'). 'z' is 'ja cecak telu'(+'pangkon'). Writing 'fvz' would also ends with '<b>pangkon</b>'. For other rekan (Arabic or Chinese) that uses 'cecak telu':<ul>
+    <li><b>Rekan.</b> They're supplementing the letters that aren't found in Javanese language, namely 'f/v/z'. Some sources equate 'f' and 'v' as 'pa + cecak telu', while some others differentiate them. I subscribe to the second group: 'f' as 'pa + cecak telu'(+'pangkon') and 'v' as 'wa + cecak telu'(+'pangkon'). 'z' is 'ja + cecak telu'(+'pangkon'). Writing 'f/v/z' would also ends with '<b>pangkon</b>'. For other rekan that uses 'cecak telu':<ul>
 <li> ꦒ꦳ GA + CECAK TELU = غ (γa).
 </li><li> ꦗ꦳ JA + CECAK TELU = ز (za).
 </li><li> ꦢ꦳ DA + CECAK TELU = ذ (dza).
 </li><li> ꦦ꦳ PA MURDA + CECAK TELU = ف (fa).
 </li><li> ꦔ꦳ NGA + CECAK TELU = ع ('a).
 </li><li> ꦱ꦳ SA + CECAK TELU = ش (ša).
-</li><li> ꦲ꦳ HA + CECAK TELU = ح (ḥa).</li></ul>, there are no shortcut, you have to be creative, and found a way to write it your own with the available means. For example, to type 'dza', you can type 'da'+ALT-1, 'dzi' = 'da'+ALT-1+'qi'. For Chinese 'rekan', I couldn't find any reliable source regarding their history, list, and usage (pronounciation), only from <a href='https://en.wikipedia.org/w/index.php?title=Javanese_script&oldid=880704499#Additional_Aksara'>Wikipedia</a>, and they're archaic/not proper pinyin/mandarin and not suitable for modern usage. I'm not listing them here for now, because I'm planning to build a systematic index of every Chinese syllable and their Javanese script counterpart (<a href="https://id.wiktionary.org/wiki/Indeks:Pinyin-Aksara_Jawa">Indeks:Pinyin-Aksara Jawa</a>).</li>
-    <li><b>Murda</b> and Mahaprana. I store them in the capital Latin letters, but it doesn't necessarily mean they're Javanese capital letter, it's just for convenience and mnemonic. The number is only 16 ('KGCJTDNPBSZQ'), meaning that many capital Latin letters (FVMLW) doesn't store 'murda' letters. I used Q for 'Ka Sasak', Z for 'Sa Mahaprana' (to differentiate from S, 'Sa Murda'), and H, R, Y for '<b>wyanjana</b>'. If you typed a murda it will also attached by '<b>pangkon</b>' and the above rules apply. Below are some <b>double consonant</b> combinations for murda letters.<ul>
+</li><li> ꦲ꦳ HA + CECAK TELU = ح (ḥa).</li></ul>
+For these letters there are no shortcuts, you have to be creative, and found a way to write it your own with the available means. For example, to type 'dza', you can type 'da'+'~' (tilde), 'dzi' = 'da'+'~'+'q'+'	i'. <br />For Chinese 'rekan', I couldn't find any reliable source regarding their history, list, and usage (pronounciation), only from <a href='https://en.wikipedia.org/w/index.php?title=Javanese_script&oldid=880704499#Additional_Aksara'>Wikipedia</a>, and they're archaic/not proper pinyin/mandarin and not suitable for modern usage. I'm not listing them here for now, because I'm planning to build a systematic index of every Chinese syllable and their Javanese script counterpart (<a href="https://id.wiktionary.org/wiki/Indeks:Pinyin-Aksara_Jawa">Indeks:Pinyin-Aksara Jawa</a>).</li>
+    <li><b>Murda</b> and Mahaprana. I store them in the capital Latin consonant letters, but it doesn't necessarily mean they're Javanese capital letter, it's just for convenience and mnemonic. Their number is only 10 single-letter Murda ('KGCJTDNPBS') and 3 multi-letters Murda. Below are some <b>double consonant</b> combinations for murda letters.<ul>
         <li>'Th' - 'tta mahaprana pangkon' ꦜ꧀ (replacing 'Ta pangkon' ꦡ꧀)</li>
         <li>'Dh' - 'dda mahaprana pangkon' ꦞ꧀ (replacing 'Da pangkon' ꦣ꧀)</li>
         <li>'jny' - 'nya murda pangkon' ꦘ꧀</li>
-    </ul></li>
-    <li><b>Special</b> letters. 'Aksara ganten' and long vowel ('swara')<ul>
-        <li>'rx' - 'pa cerek' ꦉ (replacing 'ra pepet' ꦫꦼ)</li>
-        <li>'lx' - 'cecak' ꦊ</li>
+        <li>the 10 murda above can also be written by typing the 10 corresponding nglegena with 'h'. So 'kh' = "K", 'gh' = 'G', etc. <em>Except</em> 'dh' and 'th'.</li>
+    </ul>
+The other 10 capital Latin consonant letters (QZHRY) and (FVMLW) doesn't store 'murda' letters. I used Q for 'Ka Sasak', Z for 'Sa Mahaprana' (to differentiate from S, 'Sa Murda'), and H, R, Y for '<b>wyanjana</b>'. If you typed a murda it will also attached by '<b>pangkon</b>' and the above 'pangkon' rules apply. (FVMLW) are currently unused. The six capital Latin vowel letters and x (AEIOUX) are used for 'aksara swara' (see <b>sandhangan</b> above). Some special 'aksara swara' (long vowels):<ul>
         <li>'Aa' - 'A tarung' ꦄꦴ (long-A)</li>
-        <li>'Ai' - aksara swara 'Ai' ꦍ</li>
-        <li>'Ii' - aksara swara 'Ii' ꦇ (long-I)</li>
-        <li>'II' - aksara swara 'I Kawi' ꦅ</li>
+        <li>'Ai' - 'Ai' ꦍ</li>
+        <li>'Ii' - 'Ii' ꦇ (long-I)</li>
+        <li>'II' - 'I Kawi' ꦅ</li>
         <li>'Uu' - 'U tarung' ꦈꦴ (long-U)</li>
         <li>'Oo' - 'O tarung' 'Au' ꦎꦴ (long-O)</li>
+</ul></li>
+    <li><b>Special</b> letters. 'Aksara ganten'<ul>
+        <li>'rx' - 'pa cerek' ꦉ (replacing 'ra pepet' ꦫꦼ)</li>
+        <li>'lx' - 'nga lelet' ꦊ</li>
         <li>'RR' - 'ra agung + pangkon' ꦬ꧀</li>
-        <li>and others special double vowel combinations.</li>
     </ul></li>
-    <li><b>Numbers.</b> For numbers, you just typed it normally. The only difference with normal numbers is that Javanese numbers are always enclosed/surrounded by 'pada pangkat' (looks like semicolon). Rule: when a non-number followed by number, it's separated by 'pada pangkat'. When a number followed by non-number, it's separated by 'pada pangkat' as well. If the number is in the beginning, it's started with 'pada pangkat'. If a number is at the end, followed by period ('pada lungsi'), it's also ended with 'pada pangkat' before the 'pada lungsi'. Except if it's at the very end, and there's no more character to follow, then you have to manually close the 'pada pangkat' by typing semicolon ':'.</li>
+    <li><b>Numbers.</b> For numbers, you just typed it normally. The only difference with normal numbers is that Javanese numbers are always enclosed/surrounded by 'pada pangkat' ꧇ (looks like a semicolon) by typing a semicolon ':'. Rule: <ul>
+        <li>when a non-number followed by number, it's separated by 'pada pangkat'</li>
+        <li>when a number followed by non-number, it's separated by 'pada pangkat' as well</li>
+        <li>if the number is in the beginning, it's started with 'pada pangkat'</li>
+        <li>if a number is at the end, followed by period ('pada lungsi')</li>
+        <li>a number will be ended with 'pada pangkat' before the 'pada lungsi' automatically, except if it's at the very end, and there's no more character to follow, then you have to manually close the 'pada pangkat' by typing semicolon ':'.</li></ul></li>
     <li><b>Special</b> characters. See the visual mapping of the keyboard for reference, or the table above. They might move in the future. I'm trying to make it as intuitive as possible. Some special combinations:<ul>
-        <li>꧅꧉ꦧ꧀ꦖ꧉꧅or ꧅ꦧ꧀ꦖ꧅or ꧅ꦧ꧀ꦕ꧅'purwapada' - to introduce a poem. It can be typed as such: '/.bcha./' or '/bcha/' or '/bCa/' or '/bca/'</li>
-        <li>꧅꧉ꦟ꧀ꦢꦿ꧉꧅or ꧅ꦟ꧀ꦢꦿ꧅'madyapada' - to indicates a new song within a poem. It can be typed as such: '/.Ndra./' or '/Ndra/'</li>
-        <li>꧅꧉ꦆ꧉꧅or ꧅ꦆ꧅'wasanapada' - to end a poem. It can be typed as such: '/.I./' or '/I/'</li>
+        <li>꧅꧉ꦧ꧀ꦖ꧉꧅or ꧅ꦧ꧀ꦖ꧅or ꧅ꦧ꧀ꦕ꧅'purwapada' - to introduce a poem. <br /><br />It can be typed as such: '/.bcha./' or '/bcha/' or '/bCa/' or '/bca/'</li>
+        <li>꧅꧉ꦟ꧀ꦢꦿ꧉꧅or ꧅ꦟ꧀ꦢꦿ꧅'madyapada' - to indicates a new song within a poem. <br /><br />It can be typed as such: '/.Ndra./' or '/Ndra/'</li>
+        <li>꧅꧉ꦆ꧉꧅or ꧅ꦆ꧅'wasanapada' - to end a poem. <br /><br />It can be typed as such: '/.I./' or '/I/'</li>
     </ul></li>
     <li><b>Invalid</b> combinations. I have tried to reduce the possibility of invalid combinations as minimal as possible.<ul>
-        <li>Combination of '<b>pangkon</b>', '<b>sesigeg</b>', '<b>wyanjana</b>', '<b>panyangga</b>' and themselves is not allowed (eg. q+q)</li>
-        <li>Combination of '<b>number</b>' and number's 'pada pangkat', and the abovementioned is not allowed. (But the reverse is allowed)</li>
-        <li>Combination of 'pada pangkat' and 'pada pangkat' is not allowed</li>
+        <li>Combination of a '<b>pangkon</b>', '<b>sesigeg</b>', '<b>wyanjana</b>', '<b>panyangga</b>' and themselves is not allowed (eg. q+q)</li>
+        <li>Combination of a 'number' and number's 'pada pangkat', and a 'pangkon', 'sesigeg', 'wyanjana', 'panyangga' is not allowed. (But the reverse is allowed)</li>
+        <li>Combination of a 'pada pangkat' and another 'pada pangkat' is not allowed</li>
     </ul></li>
 </ul>
 
-<h2>Development Notes</h2>
+<h1 id="3">Development Notes</h1>
 
 <p>Version 1.0</p>
 <ul>
@@ -1302,7 +1301,7 @@ function writetable(k,r)
     <li>To develop the Android version.</li>
 </ul>
 
-<h2>Change History</h2>
+<h1 id="4">Change History</h1>
 <p>2020-02-18: Trying to publish it again</p>
 <p>2019-01-28: Adding documentation, help file, welcome file, fix bugs, more Sundanese support, rekan support, code simplification with store()s, less comments, harder to read, but shorter code</p>
 <p>1.0: Initial release - 2019-01-24</p>
