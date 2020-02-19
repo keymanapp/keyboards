@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.64.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0.2</Version>
+    <Version URL=""></Version>
     <Name URL="">Burushãski Girminas</Name>
-    <Copyright URL="">2018 Quwat K. Sunny©</Copyright>
+    <Copyright URL="">2020 Quwat K. Sunny©</Copyright>
+    <Author URL="">Quwat K. Sunny</Author>
   </Info>
   <Files>
+    <File>
+      <Name>..\build\burushaski_girminas.kvk</Name>
+      <Description>File burushaski_girminas.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
     <File>
       <Name>..\build\burushaski_girminas.kmx</Name>
       <Description>Keyboard Burushãski Girminas</Description>
@@ -31,14 +40,6 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
-    
-       
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -46,27 +47,27 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>burushaski_girminas.ico</Name>
-      <Description>File burushaski_girminas.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>welcome_html_2feda655.jpg</Name>
-      <Description>File welcome_html_2feda655.jpg</Description>
+      <Name>welcome\burushaski_girminas.jpg</Name>
+      <Description>File burushaski_girminas.jpg</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Burushãski Girminas</Name>
       <ID>burushaski_girminas</ID>
-      <Version>1.0.2</Version>
+      <Version>1.0.3</Version>
       <Languages>
-        <Language ID="bsk-Latn">Burushaski (Latin)</Language>
-        <Language ID="khw-Latn">Khowar (Latin)</Language>
+        <Language ID="bsk-Latn-PK">Burushaski (Latin, Pakistan)</Language>
         <Language ID="scl-Latn">Shina (Latin)</Language>
+        <Language ID="khw-Latn">Khowar (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
