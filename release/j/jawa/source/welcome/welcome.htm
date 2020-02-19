@@ -81,12 +81,33 @@
 <body onload='javascript:loaded()'>       
 <h1>Table of Content</h1>
 <ol>
+  <li><a href="#5">Welcome!</a></li>
   <li><a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a></li>
   <li><a href="#2">Usage Notes</a></li>
   <li><a href="#3">Development Notes</a></li>
   <li><a href="#4">Change History</a></li>
 </ol>
-<h1 id="1">Nulisa Aksara Jawa keyboard shortcuts</h1>
+<h1 id="5">Welcome! ꧁ꦱꦸꦒꦼꦁꦫ‌ꦮꦸꦃ‌ꦲꦶꦁꦤꦸꦭꦶꦱ꧀ꦱ‌ꦄꦏ꧀ꦱꦫꦗꦮ꧂</h1>
+<hr />
+<p>Thank you for using this keyboard. This keyboard aim to simplify the writing of Javanese script (Js). Nowadays Javanese speakers do not write (nor type) much in this script anymore, largely because the writing system has been supplanted by Latin script.</p>
+<p>The current Js keyboard layouts that exist in the world require people to memorize an arbitrary placement of characters (for example the default Javanese keyboard layout in Win 10), since there are more than 26 letters/characters in Js.</p>
+<p>This keyboard aim to simplify that by requiring user to memorize only very small amount of placement, and user can type naturally just like they type in Latin script. The users are only required, at minimal, to remember that the letter 'x' is mapped to 'ě' (pěpět) or <a href="https://en.wikipedia.org/wiki/Schwa">schwa</a> sound (IPA: /ə/).</p>
+<p>Technically, this is achieved by making the software to be smart enough to look the characters typed previously (look-back algorithm) to accomplish this seamlessly.</p>
+<p>If you have never tried my web-based Js transliterator, of which this is based from, I suggest you can give it a try here: <a href="//is.gd/nulisa">is.gd/nulisa</a> (url link shortener to <a href="//bennylin.github.io/transliterasi">my Github page</a>)</p>
+<p><b>How does it work?</b><br />Well, to simply put it, if you want to write "aku", just type "a-k-u" and it will give you ꦲꦏꦸ. You don't need to know which button to press for ꦲ, ꦏ‌, or ꦸ. It would work for 95% of the time. <br />The best part about it? It's language independent (as long as they're 26-letters-Latin based). It means, you can type in any language, e.g. Indonesian, or even English. For example: "rumah", just type "r-u-m-a-h" to get ꦫꦸꦩꦃ, or "far", just type "f-a-r" to get ꦥ꦳ꦂ.</p>
+<p><b>But...</b> you still need to know how the Javanese script work to be able to get the correct output. Js is phonetic-based writing. It means that you write what you hear, not what is written (in Latin). For example, if I want to write my name, "Benny", I need to first visualize how the it sounds (if you familiar with IPA, think of it as broad-transcription IPA), so I get either "/be-ni/" or "/ben-ni/". Now I would say that both are correct, but I prefer the second one, so I'm typing it as "b-e-n-n-i" to get ꦧꦺꦟꦶ. And this cannot be solved in the software level, because the software couldn't have any idea how a word sounds.</p>
+<p><b>What about the space bar?</b> Javanese script is a <i>scriptio continua</i> script; it doesn't have any space between words. In fact, adding a space between words would make the sentence look bad (it broke the <b>pasangan</b>s, among others). Therefore, that long space bar in the bottom of you keyboard is largely unused (what a waste of <i>space</i> :p). If you type space, nothing would happen. But what if you want to force a space? There are two alternatives: <b>regular space</b>, type Ctrl+Space, <b>zero-width space</b> (ZWS), type ` (on the left of number 1 on most keyboard layouts).</p>
+<p>With this approach, I believe typing Javanese script using Nulisa Aksara Jawa is <u>the easiest way to type Javanese script</u>!</p>
+<h1 id="1"><big>Nulisa Aksara Jawa keyboard shortcuts</big></h1>
+<hr />
+<p><b>ToC</b>: 
+  <a href="#5">Welcome!</a> |
+  <a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a> |
+  <a href="#2">Usage Notes</a> |
+  <a href="#3">Development Notes</a> |
+  <a href="#4">Change History</a>
+</p>
+<p>The keyboard layout is designed with Indonesian qwerty keyboard layout (equal to American keyboard) as the logic basis. Therefore, even though theoritically it could also work for other keyboard layout (British, German, DVORAK, etc), but no test have been done on those layouts. If you use non-Indonesian keyboard, I would love to hear your feedback!</p>
 
 <p>Please refer to this combination table for the intended output. Don't rely on the On-Screen keyboard, as it has many limitations. If the pressed button doesn't produce the same result as below, please contact the author.</p>
 
@@ -1187,6 +1208,14 @@
 <tr><th>Input</th><td></td></tr>
 </table>-->
 <h1 id="2">Usage Notes</h1>
+<hr />
+<p><b>ToC</b>: 
+  <a href="#5">Welcome!</a> |
+  <a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a> |
+  <a href="#2">Usage Notes</a> |
+  <a href="#3">Development Notes</a> |
+  <a href="#4">Change History</a>
+</p>
 <p>How to use the keyboard (for user), or read the codes (for developer)</p>
 <ul>
     <li><b>Adeg-adeg</b> (sentence openings). Type the pipe symbol (|) to get 'adeg-adeg' ꧋. Type \ to get ꧊. 'Rerenggan kiwa/tengen' ꧁ and ꧂ can be typed using { and }.</li>
@@ -1279,7 +1308,14 @@ The other 10 capital Latin consonant letters (QZHRY) and (FVMLW) doesn't store '
 </ul>
 
 <h1 id="3">Development Notes</h1>
-
+<hr />
+<p><b>ToC</b>: 
+  <a href="#5">Welcome!</a> |
+  <a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a> |
+  <a href="#2">Usage Notes</a> |
+  <a href="#3">Development Notes</a> |
+  <a href="#4">Change History</a>
+</p>
 <p>Version 1.0</p>
 <ul>
     <li>I started with importing the logic behind my other project: <a href="http://is.gd/nulisa">Nulisa Aksara Jawa - Javanese Transliteration</a> and reading the documentation of Keyman. I was able to do the bare minimum coding to make the keyboard able to type the most common combinations in just one day.</li>
@@ -1302,6 +1338,14 @@ The other 10 capital Latin consonant letters (QZHRY) and (FVMLW) doesn't store '
 </ul>
 
 <h1 id="4">Change History</h1>
+<hr />
+<p><b>ToC</b>: 
+  <a href="#5">Welcome!</a> |
+  <a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a> |
+  <a href="#2">Usage Notes</a> |
+  <a href="#3">Development Notes</a> |
+  <a href="#4">Change History</a>
+</p>
 <p>2020-02-18: Trying to publish it again</p>
 <p>2019-01-28: Adding documentation, help file, welcome file, fix bugs, more Sundanese support, rekan support, code simplification with store()s, less comments, harder to read, but shorter code</p>
 <p>1.0: Initial release - 2019-01-24</p>
