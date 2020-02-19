@@ -1,6 +1,10 @@
 gff_amharic Change History
 ==========================
 
+1.9.1 (29 Jan 2020)
+-------------------
+* Correction to syllabary table.
+
 1.9 (22 Jan 2020)
 -----------------
 * Package migration to Abyssinica SIL 2.000
