@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2002-2019 NLCI Bangalore
+Copyright (c) 2002-2020 NLCI Bangalore
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

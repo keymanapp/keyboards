@@ -1,5 +1,8 @@
 #NLCI Devanagari WinScript Keyboard Change History
 
+## 2.2.1 (2020)
+* Added half chandra bindhu
+
 ## 2.2 (2019)
 * Improved nukta and halant behavior 
 
