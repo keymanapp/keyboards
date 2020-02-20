@@ -1,0 +1,137 @@
+﻿c Burushãski Girminas is latin based keyboard developed by Quwat K. Sunny. It was developed primarily for Burushãski of Yasin. It can flawlessly be used in other variants of Burushaski as well as shina and khowar.
+store(&VERSION) '10.0'
+store(&NAME) 'Burushãski Girminas'
+store(&COPYRIGHT) '2020 Quwat K. Sunny'
+store(&KEYBOARDVERSION) '1.0.3'
+store(&TARGETS) 'any'
+store(&BITMAP) 'burushaski_girminas.ico'
+store(&KMW_HELPTEXT) 'ŝhaw, ćapan, çuk, ćhapuk, ćhéļ ďaļ'
+store(&LAYOUTFILE) 'burushaski_girminas.keyman-touch-layout'
+
+store(&VISUALKEYBOARD) 'burushaski_girminas.kvks'
+
+begin Unicode > use(main)
+
+
+group(main) using keys
+
+"n" + "." > U+1E47
+U+1E47 + "." > "n."
+"n." + "." > U+1E47 "."
+"N" + "." > U+1E46
+U+1E46 + "." > "N."  c capitalization of the same rule
+"N." + "." > U+1E46 "."
+
+"n" + "'" > U+1E45
+U+1E45 + "'" > "n'"
+"n'" + "," > U+1E45 "'"
+"N" + "'" > U+1E44
+U+1E44 + "'" > "N."  c capitalization of the same rule
+"N'" + "'" > U+1E44 "'"
+
+"a" + "a" > U+00E3 c  ã
+"A" + "A" > U+00C3 c  Ã
+
+"a" + "'" > U+00E1 c  á 
+"A" + "'" > U+00C1  c Á            
+
+"c" + "c" >  U+0107 c 
+"C" + "C" >  U+0106 c 
+
+"C" + "," >  U+00C7 c
+"c" + "," >  U+00E7 c
+
+"c" + "'" >  U+010B c
+"C" + "'" >  U+010A c
+
+
+"c" + "." > U+0063 U+0317 c 
+U+0063 U+0317 + "." > "c."
+"c." + "." > U+0063 U+0317 "."
+"C" + "." > U+0043 U+0317
+
+U+0043 U+0317 + "." > "C."  c capitalization of the same rule
+"C." + "." > U+0043 U+0317 "."
+
++ [T_0063_0317] > U+0063 U+0317 C for c̣
++ [T_0043_0317] > U+0043 U+0317
+
+"e" + "e" >  U+00E9 c
+"E" + "E" >  U+00C9 c
+
+"g" + "g" >  U+01E7 c
+
+"g" + "." > U+0121
+U+0121 + "." > "g."
+"g." + "." > U+0121 "."
+"G" + "." > U+0120
+U+0120 + "." > "G."  c capitalization of the same rule
+"G." + "." > U+0120 "."
+
+"D" + "D" >  U+1E0C c
+"d" + "d" >  U+1E0D c
+
+"j" + "j" >  U+01EF C Ǯakun in Yasin
+"J" + "J" >  U+01EE C Ǯakun in Yasin
+
+"z" + "." >  U+017C C Ǯakun in Hunza
+"Z" + "." >  U+017B C Żakun in Hunza
+
+"s" + "." > U+0219   C Hunza
+"S" + "." > U+0218   C Hunza
+
+
+"S" + "'" > U+015A C in Hunza Ș
+"s" + "'" > U+015B C in Hunza
+
+"u" + "'" > U+00FA C Hunza
+"U" + "'" > U+00DA C Hunza
+
+"k" + "k" > "ǩh"   c
+"K" + "k" > "Ǩh"   c
+
+"S" + "S" > U+0160 c
+"s" + "s" > U+0161 c
+
+"S" + "," > U+015E c  Ş
+"s" + "," > U+015F c
+
+
+
+"r" + "h" > U+0159  C Dařkot
+"R" + "h" > U+0158  C Dařkut
+
+"r" + "." > U+0157  C Hunza
+U+0157 + "." > "r."
+"r." + "." > U+0157 "."
+"R" + "." > U+0156
+U+0156 + "." > "R."  c capitalization of the same rule
+"R." + "." > U+0156 "."
+
+
+"O" + "O" > U+00D5  c
+"o" + "o" > U+00F5  c
+
+"o" + "'" > U+00F3  c
+"O" + "'" > U+00D3  c
+
+"i" + "i" > U+01D0  c
+"I" + "i" > U+01CF  c
+
+"l" + "l" >  U+013C c
+"L" + "L" >  U+013B c
+U+013C + "l" > "ll"
+
+
+"t" + "t" > U+021B c
+"T" + "T" > U+021A c
+
+"u" + "." > U+00FC c
+"U" + "." > U+00DC c
+
+"u" + "u" > U+0169 c
+"U" + "U" >  U+0168 c
+
+"y" + "y" >  U+00FD c
+"Y" + "Y" >  U+00DD c
+
