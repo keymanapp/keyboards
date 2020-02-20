@@ -8,7 +8,7 @@ store(&VERSION) '9.0'
 store(&ETHNOLOGUECODE) 'jav'
 store(&NAME) 'Nulisa Aksara Jawa'
 store(&MESSAGE) 'Based on http://is.gd/nulisa Javanese Script Online Transliterator'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.01'
 store(&VISUALKEYBOARD) 'jawa.kvks'
 store(&BITMAP) 'jawa.bmp'
 store(&COPYRIGHT) '© Benny Lin 2019-01-24'
@@ -162,7 +162,8 @@ c c c c c c c c c
 + any(isVowel)  > U+A9B2 index(indexVowel,1) c 'eiux'
 + any(isVowel3) > index(indexVowel3,1) c 'AIUEO'
 
-c $Pangkon + 'a' > nul
+$Pangkon + 'a' > nul
+
 $Pangkon + any(isVowel) > index(indexVowel,2)
 $Pangkon + 'o' > $Taling $Tarung
 
@@ -250,17 +251,21 @@ c c c c c c c c c
 c Number & other rules
 c c c c c c c c c
 
-+ '`' > $ZWJ     c zero width joiner ZWJ
-c nul + any(isNumbers) > context(1) U+A9C7 index(indexNumbers,2)
-c notany(indexNumbers) + any(isNumbers) > context(1) U+A9C7 index(indexNumbers,2)
-any(indexNumbers) + any(isEverything) > context(1) U+A9C7 index(indexEverything,2) $Pangkon
-any(indexNumbers) + any(isVowel)      > context(1) U+A9C7 U+A9B2 index(indexVowel,2)
-any(indexNumbers) + any(isVowel3)     > context(1) U+A9C7 index(indexVowel3,2)
-any(indexNumbers) + 'X'               > context(1) U+A9C7 U+A984 U+A9BC 
-any(indexNumbers) + 'a'               > context(1) U+A9C7 U+A9B2 
-any(indexNumbers) + any(isSpecial)    > context(1) U+A9C7 index(indexSpecial,2)
-any(indexNumbers) + any(isSpecial2)   > context(1) U+A9C7 index(indexSpecial2,2)
-+ any(isOthers) > index(indexOthers,1) 
++ '`' > $ZWJ                              c zero width joiner ZWJ
++ any(isOthers) > index(indexOthers,1)    c numbers and symbols
+  c c c c c to automatically add "pada pangkat", but "nul" and "notany" doesn't work on mobile, 
+  c c c c c so need to figure out later. TODO TOFIX.
+  c nul + any(isNumbers) > context(1) U+A9C7 index(indexNumbers,2)
+  c notany(indexNumbers) + any(isNumbers) > context(1) U+A9C7 index(indexNumbers,2)
+  
+  c c c c c these codes are actually working, but for behavior consistency, wait for the above is solved
+  c any(indexNumbers) + any(isEverything) > context(1) U+A9C7 index(indexEverything,2) $Pangkon
+  c any(indexNumbers) + any(isVowel)      > context(1) U+A9C7 U+A9B2 index(indexVowel,2)
+  c any(indexNumbers) + any(isVowel3)     > context(1) U+A9C7 index(indexVowel3,2)
+  c any(indexNumbers) + 'X'               > context(1) U+A9C7 U+A984 U+A9BC 
+  c any(indexNumbers) + 'a'               > context(1) U+A9C7 U+A9B2 
+  c any(indexNumbers) + any(isSpecial)    > context(1) U+A9C7 index(indexSpecial,2)
+  c any(indexNumbers) + any(isSpecial2)   > context(1) U+A9C7 index(indexSpecial2,2)
 
 c c c c c c c c c
 c Shift rules
