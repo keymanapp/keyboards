@@ -530,7 +530,7 @@ body,td,th {
             <td bgcolor="#000000" class="style9">Key Combinations </td>
             <td height="19"><div align="center" class="style10">O    +single quote </div></td>
             <td height="19"><div align="center" class="style10">O+O</div></td>
-            <td><div align="center" class="style10">R + H</div></td>
+            <td><div align="center" class="style10">R + h</div></td>
             <td><div align="center" class="style10">S + S</div></td>
             <td><div align="center" class="style10">U + U</div></td>
             <td><div align="center" class="style10">U + Dot</div></td>
