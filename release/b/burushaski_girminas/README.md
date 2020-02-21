@@ -1,7 +1,7 @@
 ﻿﻿Burushãski Girminas keyboard
 ==============
 
-2020 © Quwat K. Sunny
+© 2020 Quwat K. Sunny
 Version 1.0.3
 
 Description

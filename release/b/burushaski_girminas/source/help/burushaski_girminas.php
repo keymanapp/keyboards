@@ -26,8 +26,13 @@ body,td,th {
 -->
     </style>
 
-<p>Burushãski Girminas is latin based keyboard developed by Quwat K. Sunny. It was developed primarily for Burushãski of Yasin. It can flawlessly be used in other variants of Burushaski as well as shina and khowar. Additional characters requested by speakers of other <FONT FACE="Calibri, sans-serif">Burush&atilde;ski</FONT> variants. Quwat is an native speaker of 
+<p>Burushãski Girminas is a Latin-based keyboard developed by Quwat K. Sunny. It was developed primarily for Burushãski of Yasin. It can flawlessly be used in other variants of Burushaski as well as shina and khowar. Additional characters requested by speakers of other <FONT FACE="Calibri, sans-serif">Burush&atilde;ski</FONT> variants. Quwat is an native speaker of 
   Burushãski from Yasin, Qořqolhți.</p>
+<p class="style18"><a href="#YSB">Yasin Burushãski orthography</a> <br>
+    <a href="#use">Using Yasin Burushaski orthography </a><br>
+    <a href="#desktop">How to use the keyboard (Desktop)</a><br>
+    <a href="#touch">How to use the keyboard on touch devices (tablets, phones)</a></p>
+<HR>
 <table width="100%" border="0" cellpadding="10">
   <tr>
     <td width="96%"align="left" valign="top"><h3 class="style11"><a name="YSB"></a>Yasin Burushãski orthography</h3>
@@ -488,7 +493,7 @@ body,td,th {
             <td width="26" bgcolor="#009900"><div align="center" class="style9">Ǯ</div></td>
             <td width="40" bgcolor="#FF9900"><div align="center" class="style9">Ǩ</div></td>
             <td width="29" bgcolor="#0066CC"><div align="center" class="style9">Ļ</div></td>
-            <td colspan="2" bgcolor="#FFCC00"><div align="center" class="style10">Ṅ</div></td>
+            <td colspan="2" bgcolor="#FFCC00"><div align="center" class="style9">Ṅ</div></td>
           </tr>
           <tr height="19">
             <td bgcolor="#FF9900" class="style9"><strong>Key Combinations </strong></td>
@@ -507,13 +512,13 @@ body,td,th {
           </tr>
           <tr height="19">
             <td bgcolor="#000000" class="style9">Characters</td>
-            <td height="19" bgcolor="#999900"><div align="center" class="style10">Ó</div></td>
-            <td bgcolor="#000000"><div align="center" class="style10">Õ</div></td>
-            <td bgcolor="#FF6600"><div align="center" class="style10">Ř</div></td>
-            <td bgcolor="#669933"><div align="center" class="style10">Š</div></td>
-            <td bgcolor="#FF0099"><div align="center" class="style10">Ũ</div></td>
-            <td bgcolor="#3399CC"><div align="center" class="style10">Ü</div></td>
-            <td bgcolor="#663366"><div align="center" class="style10">Ý</div></td>
+            <td height="19" bgcolor="#999900"><div align="center" class="style9">Ó</div></td>
+            <td bgcolor="#000000"><div align="center" class="style9">Õ</div></td>
+            <td bgcolor="#FF6600"><div align="center" class="style9">Ř</div></td>
+            <td bgcolor="#669933"><div align="center" class="style9">Š</div></td>
+            <td bgcolor="#FF0099"><div align="center" class="style9">Ũ</div></td>
+            <td bgcolor="#3399CC"><div align="center" class="style9">Ü</div></td>
+            <td bgcolor="#663366"><div align="center" class="style9">Ý</div></td>
             <td bgcolor="#CCCCCC"><div align="center" class="style10"></div></td>
             <td><div align="center" class="style10"></div></td>
             <td><div align="center" class="style10"></div></td>
@@ -547,10 +552,18 @@ body,td,th {
             <td width="62" valign="top" bgcolor="#FF6633"><p align="left" class="style9">&#288;</p></td>
             <td width="62" valign="top" bgcolor="#0099CC"><p align="left" class="style9">&#7750;</p></td>
             <td width="62" valign="top" bgcolor="#006600"><p align="left" class="style9">&#342;</p></td>
-            <td width="62" valign="top" bgcolor="#003366"><p align="left" class="style9">&#536;</p></td>
+            <td width="62" valign="top" bgcolor="#003366"><div>
+              <div class="style9">
+                <div align="center">Ş</div>
+              </div>
+            </div>            </td>
             <td width="62" valign="top" bgcolor="#99CC33"><p align="left" class="style9">&#346;</p></td>
             <td width="62" valign="top" bgcolor="#CCCC00"><p align="left" class="style9">&#379;</p></td>
-            <td width="62" valign="top" bgcolor="#330066"><p align="left" class="style9">&nbsp;</p></td>
+            <td width="62" valign="top" bgcolor="#330066"><div>
+              <div class="style9">
+                <div align="center">Ș</div>
+              </div>
+            </div>            </td>
           </tr>
           <tr>
             <td valign="top" bgcolor="#FF0000"><div align="left" class="style9">C +Dot</div></td>
@@ -558,12 +571,14 @@ body,td,th {
             <td valign="top" bgcolor="#FF6633"><div align="left" class="style9">G + Dot</div></td>
             <td valign="top" bgcolor="#0099CC"><div align="left" class="style9">N + Dot</div></td>
             <td valign="top" bgcolor="#006600"><div align="left" class="style9">R + Dot</div></td>
-            <td valign="top" bgcolor="#003366"><div align="left" class="style9">S + S</div></td>
-            <td valign="top" bgcolor="#99CC33"><div align="left" class="style9">S+ Comma</div></td>
+            <td valign="top" bgcolor="#003366"><div align="left" class="style9">
+              <div align="center">S + comma </div>
+            </div></td>
+            <td valign="top" bgcolor="#99CC33"><div align="left" class="style9">S+ single quote </div></td>
             <td valign="top" bgcolor="#CCCC00"><div align="left" class="style9">z + dot </div></td>
-            <td valign="top" bgcolor="#330066"><div align="left" class="style9"></div></td>
+            <td valign="top" bgcolor="#330066"><div align="left" class="style9"> S + dot </div></td>
           </tr>
-        </table>
+      </table>
       <hr>
         <p><font color="#000000"><font size=5 style="font-size: 20pt"><font color="#000000"><font size=5 style="font-size: 20pt"><font face="Calibri"><a name="touch"></a></font></font></font><font face="Calibri">Using
           the keyboard on touch devices </font><font color="#000000"><font size=5 style="font-size: 20pt"><font color="#000000"><font size=5 style="font-size: 20pt"><font color="#000000"><font size=5 style="font-size: 20pt"><font color="#000000"><font size=5 style="font-size: 20pt"><font face="Calibri"><img src="burushaski_girminas.jpg" width="112" height="100" hspace="8" vspace="0" align="right"></font></font></font></font></font></font></font></font></font></font></font></p>
