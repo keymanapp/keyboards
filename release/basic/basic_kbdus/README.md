@@ -1,19 +1,19 @@
-US Basic keyboard
-==============
+Indonesian-Suku Basic keyboard
+==============================
 
-© 2008-2019 SIL International
+© 2008-2019 SIL International (US Basic), 2020 Benny Lin
 
-Version 1.1.1
+Version 1.0
 
 Description
 -----------
 
-US Basic generated from template
+Indonesian Basic keyboard layout generated from US Basic layout
 
 Links
 -----
 
-Home: https://keyman.com/keyboards/basic_kbdus
+Home: https://keyman.com/keyboards/basic_kbdid
 
 Supported Platforms
 -------------------
