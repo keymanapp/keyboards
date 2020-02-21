@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.65.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>12.0.52.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,7 +10,6 @@
     <GraphicFile>welcome\RAC.jpg</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Wadiyara</Folder>
@@ -26,13 +25,43 @@
     </Items>
   </StartMenu>
   <Info>
-    <Version URL=""></Version>
+    <Version URL="">1.0</Version>
     <Name URL="">Rachitrali-Wadiyara</Name>
     <Copyright URL="">© 2020 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa Pakistan</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <WebSite URL="https://help.keyman.com/keyboard/rac_wadiyara/1.0/rac_wadiyara.php">https://help.keyman.com/keyboard/rac_wadiyara/1.0/rac_wadiyara.php</WebSite>
   </Info>
   <Files>
+    <File>
+      <Name>..\build\rac_wadiyara.js</Name>
+      <Description>File rac_wadiyara.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_wadiyara.keyboard_info</Name>
+      <Description>File rac_wadiyara.keyboard_info</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.keyboard_info</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_wadiyara.kmp</Name>
+      <Description>File rac_wadiyara.kmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmp</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_wadiyara.kvk</Name>
+      <Description>File rac_wadiyara.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\rac_wadiyara.kmx</Name>
+      <Description>Keyboard Rachitrali-Wadiyara</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -52,12 +81,6 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\rac_wadiyara ctrl alt.png</Name>
-      <Description>File rac_wadiyara ctrl alt.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\rac_wadiyara shift.png</Name>
       <Description>File rac_wadiyara shift.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -70,58 +93,10 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
+      <Name>help\rac_wadiyara.php</Name>
+      <Description>File rac_wadiyara.php</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
-      <Description>File Scheherazade_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
-      <Description>Font Scheherazade Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
-      <Description>Font Scheherazade</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\build\rac_wadiyara.js</Name>
-      <Description>File rac_wadiyara.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\build\rac_wadiyara.kvk</Name>
-      <Description>File rac_wadiyara.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>..\build\rac_wadiyara.kmx</Name>
-      <Description>Keyboard Rachitrali-Wadiyara</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
+      <FileType>.php</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -130,8 +105,6 @@
       <ID>rac_wadiyara</ID>
       <Version>1.0</Version>
       <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="kxp-Arab-PK">Wadiyara Koli (Arabic, Pakistan)</Language>
       </Languages>
