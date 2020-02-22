@@ -1,91 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Javanese Script Easy Keyboard - Nulisa Aksara Jawa</title>
-  <style type='text/css'>
-    table { border-collapse: collapse }
-    td { border: solid 1px #c0c0c0; font: 1.2em Tahoma; width: 1.5em; text-align: center; cursor: default; line-height: 2em }
-    th { border: solid 1px #c0c0c0; font: bold 1.2em Arial; width: 1.5em; background: #c0c0c0 }
-    h1 { font: bold 12pt Arial }
-    #info { position: absolute; background-color: #F6FAB8; border: solid 1px gray; padding: 2px; font: 8pt Arial }
-    
-  </style>
-  <script type='text/javascript'><!--
-    var divinfo = null;
-                           
-    function getpageoffset(elem)
-    {
-      var res = {x: 0, y: 0};
-      while(elem != null)
-      {
-        res.x += elem.offsetLeft;
-        res.y += elem.offsetTop;
-        elem = elem.offsetParent;
-      }
-      return res;
-    }
-    
-    function trim(s)
-    {
-      var i = 0, j = s.length-1, t = '';
-      while(i < s.length && s.charCodeAt(i) <= 32) i++;
-      while(j >= 0 && s.charCodeAt(j) <= 32) j--;
-      while(i <= j) t += s.charAt(i++);
-      return t;
-    }
-    
-    function tdmouseover(e)
-    {
-      var se = this;
-      with(getpageoffset(se))
-      {
-        divinfo.style.left = x + 4 + 'px';
-        divinfo.style.top = y + se.offsetHeight + 4 + 'px';
-      }
-      var s = '', t = trim(se.innerHTML);
-      //alert(t);
-      
-      if(t == '&nbsp;') return false;
-      
-      for(var i = 0; i < t.length; i++)
-      {                   
-        var v = t.charCodeAt(i);
-        ch = v.toString(16).toUpperCase();
-        while(ch.length < 4) ch='0'+ch;
-        if(s != '') s += ' ';
-        s += 'U+'+ch;
-      }
-      divinfo.innerHTML = s + ' ' + t; //se.innerHTML;
-      divinfo.style.display = 'block';
-    }
-    function tdmouseout(e)
-    {
-      divinfo.style.display = 'none';
-    }
-    
-    function loaded()
-    {
-      var tds = document.getElementsByTagName('td');
-      for(var i = 0; i < tds.length; i++)
-      {
-        if(tds[i].className.indexOf('noinfo') >= 0) continue;
-        tds[i].onmouseover = tdmouseover;
-        tds[i].onmouseout = tdmouseout;
-      }
-      divinfo = document.getElementById('info');
-    } 
-  //--></script>
+<?php 
+  $pagename = 'Nulisa Aksara Jawa Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
 
-</head>
-<body onload='javascript:loaded()'>       
-<h1>Table of Content</h1>
-<ol>
-  <li><a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a></li>
-  <li><a href="#2">Usage Notes</a></li>
-  <li><a href="#3">Development Notes</a></li>
-  <li><a href="#4">Change History</a></li>
-</ol>
 <h1 id="1">Nulisa Aksara Jawa keyboard shortcuts</h1>
 
 <p>Please refer to this combination table for the intended output. Don't rely on the On-Screen keyboard, as it has many limitations. If the pressed button doesn't produce the same result as below, please contact the author.</p>
@@ -1278,39 +1197,3 @@ The other 10 capital Latin consonant letters (QZHRY) and (FVMLW) doesn't store '
     </ul></li>
 </ul>
 
-<h1 id="3">Development Notes</h1>
-
-<p>Version 1.0</p>
-<ul>
-    <li>I started with importing the logic behind my other project: <a href="http://is.gd/nulisa">Nulisa Aksara Jawa - Javanese Transliteration</a> and reading the documentation of Keyman. I was able to do the bare minimum coding to make the keyboard able to type the most common combinations in just one day.</li>
-    <li>The purpose of the keyboard remain the same with my previous projects: to make typing Javanese script as naturally as possible using regular QWERTY keyboard (US English), with minimal memorizing of arbitrary positions. I've managed to reduce it into just 2: X and Q, both keys are not used in Javanese script. X is for 'pepet' (schwa) vowel, while Q is for 'pangkon' (virama) vowel-killer. With this spirit, one can easily type (10-fingers typing) 60 or 70 WPM of Javanese script.</li>
-    <li>The target user (other than myself), are students, teachers, scholars, hobbyist, and other people who wanted to learn Javanese Script through typing. Hopefully through typing with this keyboard, people will learn the rules and the combinations that they can't get from reading books or writing by hand themselves.</li>
-    <li>What this keyboard won't do is to teach the consonant duplication rule. Basically if a root word that ends with a consonant get a suffix, then the last consonant should be written double (with 'pasangan' or 'sesigeg'). To do this automatically would require a dictionary lookup method. This keyboard assume the typist would know the rule and double the consonant accordingly. What if they don't do it? Well, it would be pronounced incorrectly, because Javanese script is a phonetic writing system (such as IPA)</li>
-    <li>In the news: Ahok was released on this day (2019-01-24) and made quite a big news. So lets dedicate this piece of code to his freedom, shall we.</li>
-</ul>
-
-<p>A month later</p>
-<ul>
-    <li>As I started reading more on the documentation, I was able to simplify most of the code, and also cover more rare glyph combinations, such as 'jnya'.</li>
-    <li>I've run checks on the common keyboard tongue-twister, all documented in the section above. As well as mad the help page, and this welcome page.</li>
-    <li>Made some features (options) using CTRL key. For full explanation, see section about Hidden Features above.</li>
-</ul>
-
-<p>Further plan</p>
-<ul>
-    <li>To develop the Android version.</li>
-</ul>
-
-<h1 id="4">Change History</h1>
-<p>2020-02-18: Trying to publish it again</p>
-<p>2019-01-28: Adding documentation, help file, welcome file, fix bugs, more Sundanese support, rekan support, code simplification with store()s, less comments, harder to read, but shorter code</p>
-<p>1.0: Initial release - 2019-01-24</p>
-
-<p>License and copyrights:</p>
-<p>This keyboard is developed by Benny Lin using Keyman software. It is available for free to use from Github and elsewhere. If you make modification, please credit Benny Lin and Keyman software. You can find him in his Github, Wikipedia, or Telegram, all under the name @bennylin</p>
-
-
-<div style='display: none' id='info'></div>
-       
-</body>
-</html>
