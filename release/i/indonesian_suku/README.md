@@ -1,19 +1,28 @@
 Indonesian-Suku Basic keyboard
 ==============================
 
-© 2008-2019 SIL International (US Basic), 2020 Benny Lin
+© 2020 Benny Lin
 
 Version 1.0
 
 Description
 -----------
 
-Indonesian Basic keyboard layout generated from US Basic layout
+This keyboard is designed for the Indonesia language and Indonesian languages (700+ bahasa suku). It will also be useful for other languages that do not require special characters.
+
+This keyboard was designed with this question in mind: "What would a default Indonesian mobile/touch keyboard layout look like if it was invented in 2020?" The existing keyboard now is not perfect, it still have room for improvement.
+
+My main design change is as follows:
+* Put largely foreign letters "zxq" in the corner
+* Show the several variations of 'e' (schwa), 'e acute', and 'e accent grave'.
+* Move symbols in the symbol layer.
+
+Other than that, this keyboard also designed to provide support for Indonesian local languages that uses accented letters. As of version 1.0, all the 10 largest languages of Indonesia have been supported: Javanese, Sundanese, Madurese, Batak, Minang, Bugis, Makassar, Bali, Banjar, Aceh
 
 Links
 -----
 
-Home: https://keyman.com/keyboards/basic_kbdid
+Home: https://github.com/bennylin/keyboards
 
 Supported Platforms
 -------------------
