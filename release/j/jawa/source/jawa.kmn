@@ -4,8 +4,7 @@ c Created by: Benny Lin
 c
 c Recommended Fonts: Noto Sans Javanese 2 and above, or Tuladha Jejeg
 
-store(&VERSION) '9.0'
-store(&ETHNOLOGUECODE) 'jav'
+store(&VERSION) '10.0'
 store(&NAME) 'Nulisa Aksara Jawa'
 store(&MESSAGE) 'Based on http://is.gd/nulisa Javanese Script Online Transliterator'
 store(&KEYBOARDVERSION) '1.1'
@@ -13,6 +12,8 @@ store(&VISUALKEYBOARD) 'jawa.kvks'
 store(&BITMAP) 'jawa.bmp'
 store(&COPYRIGHT) '© 2019-2020 Benny Lin'
 store(&KMW_HELPFILE) 'jawa-help.htm'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'jawa.keyman-touch-layout'
 
 c constants
 c 20 basic nglegena, sorted by ka-ga-nga (unicode sort)
@@ -188,12 +189,6 @@ store(indexSpecial2) $CecakTelu $Re $Le $Nga $Nya $Tha $Dha $Keret $Pengkal $Cak
 
 store(isOthers) outs(isNumbers) outs(isSpecial)
 store(indexOthers) outs(indexNumbers) outs(indexSpecial)
-
-
-store(&TARGETS) 'any'
-store(&LANGUAGE) 'x0421'
-store(&WINDOWSLANGUAGES) 'x0421'
-store(&LAYOUTFILE) 'jawa.keyman-touch-layout'
 
 begin Unicode > use(Aksara)
 
