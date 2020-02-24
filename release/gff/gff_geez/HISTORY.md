@@ -1,5 +1,8 @@
 # ግዕዝ (Ge'ez) Change History
 
+## 2020-01-29 1.4.1
+* Correction to syllabary table.
+
 ## 2019-11-03 1.4
 * Fix to number input for orders of 10.
 
