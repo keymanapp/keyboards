@@ -8,32 +8,14 @@ store(&VERSION) '9.0'
 store(&ETHNOLOGUECODE) 'jav'
 store(&NAME) 'Nulisa Aksara Jawa'
 store(&MESSAGE) 'Based on http://is.gd/nulisa Javanese Script Online Transliterator'
-store(&KEYBOARDVERSION) '1.02'
+store(&KEYBOARDVERSION) '1.1'
 store(&VISUALKEYBOARD) 'jawa.kvks'
 store(&BITMAP) 'jawa.bmp'
-store(&COPYRIGHT) '© Benny Lin 2019-01-24'
+store(&COPYRIGHT) 'Â© 2019-2020 Benny Lin'
 store(&KMW_HELPFILE) 'jawa-help.htm'
 
 c constants
-store(Cecak) U+A981
-store(Layar) U+A982
-store(Wignyan) U+A983
-store(Keret) U+A9BD
-store(Pengkal) U+A9BE
-store(Cakra) U+A9BF
-store(Pangkon) U+A9C0
-store(Pepet) U+A9BC
-store(Taling) U+A9BA
-store(Tarung) U+A9B4
-store(Tolong) U+A9B5
-store(Wulu) U+A9B6
-store(Suku) U+A9B8
-store(CecakTelu) U+A9B3
-store(LongI) U+A9B7
-store(LongU) U+A9B9
-store(Dirga) U+A9BB
-store(ZWJ) U+200C
-
+c 20 basic nglegena, sorted by ka-ga-nga (unicode sort)
 store(Ka) U+A98F
 store(Ga) U+A992
 store(Nga) U+A994
@@ -55,11 +37,11 @@ store(Wa) U+A9AE
 store(Sa) U+A9B1
 store(Ha) U+A9B2
 
-store(Re) U+A989
-store(Le) U+A98A
-store(Leu) U+A98B
-store(TaMurda) U+A9A1
-store(DaMahaprana) U+A9A3
+store(Re) U+A989  c pa cerek, vocalic r
+store(Le) U+A98A  c nga lelet, vocalic l
+store(Leu) U+A98B c nga lelet raswadi, vocalic ll
+
+c other rare characters, murdas and mahapranas
 store(KaMurda) U+A991
 store(GaMurda) U+A993
 store(CaMurda) U+A996
@@ -67,6 +49,8 @@ store(JaMahaprana) U+A999
 store(TtaMahaprana) U+A99C
 store(DdaMahaprana) U+A99E
 store(NaMurda) U+A99F
+store(TaMurda) U+A9A1
+store(DaMahaprana) U+A9A3
 store(PaMurda) U+A9A6
 store(BaMurda) U+A9A8
 store(SaMurda) U+A9AF
@@ -75,15 +59,37 @@ store(KaSasak) U+A990
 store(NyaMurda) U+A998
 store(RaAgung) U+A9AC
 
-store(AkaraA) U+A984
-store(AkaraIKawi) U+A985
-store(AkaraI) U+A986
-store(AkaraIi) U+A987
-store(AkaraU) U+A988
-store(AkaraE) U+A98C
-store(AkaraAi) U+A98D
-store(AkaraO) U+A98E
+c sandhagan, sesigeg, wyanjana
+store(Cecak) U+A981      c anuswara
+store(Layar) U+A982      c repha
+store(Wignyan) U+A983    c visarga
+store(Keret) U+A9BD      c [medial] vocalic r
+store(Pengkal) U+A9BE    c medial ya
+store(Cakra) U+A9BF      c medial ra
+store(Pangkon) U+A9C0    c virama
+store(CecakTelu) U+A9B3  c nukta
+store(Pepet) U+A9BC      c ae
+store(Taling) U+A9BA     c e
+store(Tarung) U+A9B4     c aa
+store(Tolong) U+A9B5     c o
+store(Wulu) U+A9B6       c i
+store(Suku) U+A9B8       c u
+store(WuluMelik) U+A9B7  c ii
+store(SukuMendut) U+A9B9 c uu
+store(DirgaMure) U+A9BB  c ai
+store(ZWJ) U+200C        c zero-width-space
 
+c aksara swara / standalone vowels
+store(Akara) U+A984
+store(IkaraKawi) U+A985
+store(Ikara) U+A986
+store(Ikara2) U+A987
+store(Ukara) U+A988
+store(Ekara) U+A98C
+store(Aikara) U+A98D
+store(Okara) U+A98E
+
+c numbers
 store(Num1) U+A9D1
 store(Num2) U+A9D2
 store(Num3) U+A9D3
@@ -95,16 +101,16 @@ store(Num8) U+A9D8
 store(Num9) U+A9D9
 store(Num0) U+A9D0
 
-store(Panyangga) U+A980
-store(Pangrangkep) U+A9CF
+c symbols
+store(Panyangga) U+A980   c candrabindu
+store(Pangrangkep) U+A9CF 
 store(Piseleh1) U+A9CC
 store(Piseleh2) U+A9CD
 store(Adeg1) U+A9CA
 store(PadaAndap) U+A9C3
 store(PadaMadya) U+A9C4
 store(PadaLuhur) U+A9C5
-store(PadaLingsa) U+A9C8
-store(PadaLungsi) U+A9C9
+store(PadaLingsa) U+A9C8  c danda
 store(Adeg2) U+A9CB
 store(Rerenggan1) U+A9C1
 store(Rerenggan2) U+A9C2
@@ -113,20 +119,20 @@ store(PadaPangkat) U+A9C7
 store(Tirta) U+A9DE
 store(Isen2) U+A9DF
 
-store(isA) 'Aa' c 'âæ'
+store(isA) 'Aa' c 'Ã¢Ã¦'
 store(isI) 'Ii'
 store(isU) 'Uu'
-store(isE) 'Ee' c 'ÈèÉé'
-store(isX) 'Xx' c 'Êê'
-store(isO) 'Oo' c 'ô'
+store(isE) 'Ee' c 'ÃˆÃ¨Ã‰Ã©'
+store(isX) 'Xx' c 'ÃŠÃª'
+store(isO) 'Oo' c 'Ã´'
 store(isVowel) 'iuex'
 store(indexVowel) $Wulu $Suku $Taling $Pepet
 store(isVowel2) 'iue'
 store(isVowel3) 'AIUEO' c capital vowel
-store(indexVowel3) $AkaraA $AkaraI $AkaraU $AkaraE $AkaraO
+store(indexVowel3) $Akara $Ikara $Ukara $Ekara $Okara
 
 store(indexSandhangan) $Tarung $Wulu  $Suku  $Taling $Pepet \
-                       $Tolong $LongI $LongU $Dirga  $CecakTelu
+                       $Tolong $WuluMelik $SukuMendut $DirgaMure  $CecakTelu
 store(indexNglegena) $Ha $Na  $Ca $Ra $Ka  $Da $Ta $Sa $Wa  $La \
                      $Pa $Dha $Ja $Ya $Nya $Ma $Ga $Ba $Tha $Nga
 store(indexNglegena2) outs(indexNglegena) $CecakTelu
@@ -207,10 +213,10 @@ c c c c c c c c c
 + [CTRL K_SPACE] > ' '
   c + [CTRL K_4] > U+035C c combining double breve below
   c + [CTRL K_5] > U+0308 c combining diaresis
-  c + [CTRL K_6] > $TaMurda U+035C $AkaraE U+0308 c Chinese rekan
-  c + [CTRL K_7] > $SaMurda U+035C $AkaraE U+0308 c Chinese rekan
-  c + [CTRL K_8] > $Na U+035C $AkaraE U+0308 c Chinese rekan
-  c + [CTRL K_9] > $Ha U+A9C0 $Wa $AkaraE U+0308 c Chinese rekan
+  c + [CTRL K_6] > $TaMurda U+035C $Ekara U+0308 c Chinese rekan
+  c + [CTRL K_7] > $SaMurda U+035C $Ekara U+0308 c Chinese rekan
+  c + [CTRL K_8] > $Na U+035C $Ekara U+0308 c Chinese rekan
+  c + [CTRL K_9] > $Ha U+A9C0 $Wa $Ekara U+0308 c Chinese rekan
 
 c avoid double pasangan, insert ZWJ; except when typing 'jny' -> nya murda and 'ngg'+'[ry]'
    $Ja $Pangkon $Na $Pangkon + 'y' > U+A998 $Pangkon c nya murda
@@ -259,21 +265,21 @@ $Pangkon + 'o' > $Taling $Tarung
 c if(opt1='3') $Keret + any(isU) > context $Tolong      c Sundanese -reu
 
     any(indexAll2) + any(isA) > context $Tarung         c nglegena/wyanjana/murda + a = aa
-any(indexNglegena) + any(isI) > context $Dirga          c ai
-any(indexNglegena) + any(isU) > context $Dirga $Tarung  c au
+any(indexNglegena) + any(isI) > context $DirgaMure      c ai
+any(indexNglegena) + any(isU) > context $DirgaMure $Tarung  c au
                                                         c no 'ae'
                                                         c no 'ax'
                                                         c no 'ao'
 any(indexNglegena) $CecakTelu + any(isO) > context $CecakTelu $Ha $Taling $Tarung c strange exception with 'fao'
          $Wulu + any(isA) > context $Ya                 c ia -> iya
-         $Wulu + any(isI) > $LongI                      c ii
+         $Wulu + any(isI) > $WuluMelik                  c ii
          $Wulu + any(isU) > context $Ya $Suku           c iu -> iyu
          $Wulu + any(isE) > context $Ya $Taling         c ie -> iye
          $Wulu + any(isX) > context $Ya $Pepet          c ix -> iyx
          $Wulu + any(isO) > context $Ya $Taling $Tarung c io -> iyo
          $Suku + any(isA) > context $Wa                 c ua -> uwa
          $Suku + any(isI) > context $Wa $Wulu           c ui -> uwi
-         $Suku + any(isU) > $LongU                      c uu
+         $Suku + any(isU) > $SukuMendut                 c uu
          $Suku + any(isE) > context $Wa $Taling         c ue -> uwe
          $Suku + any(isX) > context $Wa $Pepet          c ux -> uwx
          $Suku + any(isO) > context $Wa $Taling $Tarung c uo -> uwo
@@ -290,16 +296,16 @@ c if(opt1='3') $Pepet + any(isU) > context $Tolong      c Sundanese eu
   $Taling $Tarung + any(isE) > context $Wa $Taling      c oe -> owe
   $Taling $Tarung + any(isX) > context $Wa $Pepet       c ox -> owx
                                                         c no 'oo'
-                 + 'X'      > $AkaraA $Pepet            c
-         $AkaraA + any(isA) > context $Tarung           c Aa
-         $AkaraA + any(isI) > $AkaraAi                  c Ai
-         $AkaraI + 'i'      > $AkaraIi                  c Ii
-         $AkaraI + 'I'      > $AkaraIKawi               c II / I Kawi
-         $AkaraU + any(isU) > context $Tarung           c Uu
-         $AkaraO + any(isO) > context $Tarung           c Au
+                 + 'X'      > $Akara $Pepet             c
+         $Akara + any(isA) > context $Tarung            c Aa
+         $Akara + any(isI) > $Aikara                    c Ai
+         $Ikara + 'i'      > $Ikara2                    c Ii
+         $Ikara + 'I'      > $IkaraKawi                 c II / I Kawi
+         $Ukara + any(isU) > context $Tarung            c Uu
+         $Okara + any(isO) > context $Tarung            c Au
              $Le + any(isU) > $Leu                      c lx + u -> nga lelet raswadi
-c if(opt1='3') $Le + any(isU) > $Le $Tolong              c Sundanese lx + u
-c if(opt1='3') $Re + any(isU) > $Re $Tolong              c Sundanese rx + u
+c if(opt1='3') $Le + any(isU) > $Le $Tolong               c Sundanese lx + u
+c if(opt1='3') $Re + any(isU) > $Re $Tolong               c Sundanese rx + u
          $Layar + 'R'      > $RaAgung $Pangkon          c RR = Ra Agung
 
 c c c c c c c c c
@@ -343,7 +349,7 @@ c c c c c c c c c c c c
   c any(indexNumbers) + any(isEverything) > context(1) $PadaPangkat index(indexEverything,2) $Pangkon
   c any(indexNumbers) + any(isVowel)      > context(1) $PadaPangkat $Ha index(indexVowel,2)
   c any(indexNumbers) + any(isVowel3)     > context(1) $PadaPangkat index(indexVowel3,2)
-  c any(indexNumbers) + 'X'               > context(1) $PadaPangkat $AkaraA $Pepet
+  c any(indexNumbers) + 'X'               > context(1) $PadaPangkat $Akara $Pepet
   c any(indexNumbers) + 'a'               > context(1) $PadaPangkat $Ha
   c any(indexNumbers) + any(isSpecial)    > context(1) $PadaPangkat index(indexSpecial,2)
   c any(indexNumbers) + any(isSpecial2)   > context(1) $PadaPangkat index(indexSpecial2,2)
@@ -354,27 +360,27 @@ c c c c c c c c c
 
 store(isYRH) 'YRH'
 
-  c + '~' > $CecakTelu                                                 c cecak telu
+  c + '~' > $CecakTelu                                         c cecak telu
 + any(isCapital) > index(indexCapital,1) $Pangkon              c except FMLWV
   c if capital FMLWV, show lowercase version instead
 + any(isYRH) > index(isSesigeg,1)
 any(isMurdaAble) $Pangkon + 'h' > index(indexMurda,1) $Pangkon c Murda rules
 + any(isSpecial2) > index(indexSpecial2,1)
-           + '?'  > $CecakTelu                                       c special '?' switcher
-  $Pangkon + '?'  > $CecakTelu
-    $CecakTelu + '?'  > $Tarung
-   $Tarung + '?'  > $Tolong
-   $Tolong + '?'  > $LongI
-    $LongI + '?'  > $LongU
-    $LongU + '?'  > $Dirga
-    $Dirga + '?'  > $CecakTelu
+            + '?' > $CecakTelu                                 c special '?' switcher
+   $Pangkon + '?' > $CecakTelu
+ $CecakTelu + '?' > $Tarung
+    $Tarung + '?' > $Tolong
+    $Tolong + '?' > $WuluMelik
+ $WuluMelik + '?' > $SukuMendut
+$SukuMendut + '?' > $DirgaMure
+ $DirgaMure + '?' > $CecakTelu
 
 c c c c c c c c c
 c Alt rules
 c c c c c c c c c
 
 store(isAltKeys) [ALT K_1] [ALT K_2] [ALT K_3] [ALT K_4] [ALT K_5] [ALT K_6] [ALT K_7] [ALT K_8] [ALT K_9]
-store(indexAltKeys) $CecakTelu $Tarung $Tolong $LongI $LongU $Dirga $Keret $Pengkal $Cakra
+store(indexAltKeys) $CecakTelu $Tarung $Tolong $WuluMelik $SukuMendut $DirgaMure $Keret $Pengkal $Cakra
 
 + any(isAltKeys) > index(indexAltKeys,1)
 
