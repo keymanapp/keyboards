@@ -1,0 +1,96 @@
+﻿c This keyboard is for use with Keyman 13.0
+c UDI Unicode keyboard for Keyman 12.0
+c Created by Mark Mwanzia 2020
+c Created by Keyman Developer 13.0.100.0)
+c with name "Udi Keyboard"
+
+store(&VERSION) '10.01'
+store(&NAME) 'Udi(SIL)'
+store(&COPYRIGHT) '©SIL International (Eurasia)'
+store(&KEYBOARDVERSION) '1.01'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'udi_keyboard.kvks'
+store(&LAYOUTFILE) 'udi_keyboard.keyman-touch-layout'
+store(&BITMAP) 'udi_keyboard.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Store the upper and lowercase vowels with different accents
+store( plainalphabet )    'c'    'e'    'g'    'i'    'j'    'o'    's'    'u'    'C'    'E'    'G'    'I'    'O'    'S'    'U'     
+store( groupopnbrk )     U+010D U+011B U+011F U+01D0 U+01F0 U+01D2 U+0161 U+01D4 U+010C U+011A U+011E U+01CF U+01D1 U+0160 U+01D3
+
+store( plainalphabet1 )   'o'    's'    'u'    'O'    'S'     'U'
+store( groupclsbrk )     U+00F6 U+015B U+00FC U+00D6 U+015A  U+00DC
+
+store( plainalphabet2 )    'c'    'k'    'q'    'p'    's'    't'    'C'     'K'    'Q'    'P'    'S'    'T'
+store( groupquote )      U+0063  U+006B U+0071 U+0070 U+0073 U+0074 U+0043  U+004B U+0051 U+0050 U+0053 U+0054
+
+store( plainalphabet3 )   'c'    'i'    's'    'C'    'I'    'S'
+store( groupbkquote)     U+00E7 U+0131 U+015F U+00C7 U+0049 U+015E
+
+                                                                        
+c Output deadkeys only for the accent characters pressed
++ "[" > dk(opnbracket)  c OpenBracket for accent
++ "]" > dk(clsbracket)  c CloseBracket for accent
++ "`" > dk(bkquote)     c Backquote for accent 
++ "'" > dk(quote)       c quote for accent 
+
+c Rules for accented characters
+dk(opnbracket) + any( plainalphabet )  > index( groupopnbrk, 2 )
+dk(clsbracket) + any( plainalphabet1 ) > index( groupclsbrk, 2 )
+dk(quote)      + any( plainalphabet2 ) > index( groupquote, 2 )U+02B9 
+dk(bkquote)    + any( plainalphabet3 ) > index( groupbkquote, 2 )
+ 
+
+c Rules for other characters
+dk(opnbracket) + [K_W] > U+0259 U+030C              	   	   	c SCHWA_WITH_CARON
+dk(opnbracket) + [SHIFT K_W] > U+018F U+030C        	   	   	c CAPITAL SCHWA_WITH_COMBINING_CARON
+dk(opnbracket) + [SHIFT K_J] > U+004A U+030C        	   	   	c LATIN_CAPITAL_LETTER_J_WITH_COMBINING_CARON  
+dk(clsbracket) + [SHIFT K_C] > U+00C7 U+030C 
+dk(clsbracket) + [K_C] > U+00E7 U+030C 
+
+
++  "'" > U+02BC                                   c MODIFIER_LETTER_APOSTROPHE
++ [K_W] > U+0259                                  c 'w' KEY IS REPLACED BY SMALL SCHWA
++ [SHIFT K_W] > U+018F                            c 'W' IS REPLACED BY SCHWA
++ [K_I] > U+0069                                  c TYPES SMALL DOTTED I
++ [SHIFT K_I] > U+0130                            c 'I' IS DOTTED_CAPITAL_I 
+                        
+"<" + "<" > U+00AB        c Angled quotes
+">" + ">" > U+00BB        c Angled quotes 
+
+c Rules for the accent character itself (type it twice)
+dk(opnbracket) + "[" > "["    c Open Bracket
+dk(clsbracket) + "]" > "]"    c Closed Bracket
+dk(bkquote)    + "`" > "`"    c Backquote
+dk(quote)      + "'" > "'"    c Quote 
+
+if(&platform = 'touch') + [T_Q_Acute] > U+0071 U+02B9
+if(&platform = 'touch') + [SHIFT T_Q_Acute] > U+0051 U+02B9
+
+if(&platform = 'touch') + [T_W_Caron] > U+0259 U+030C
+if(&platform = 'touch') + [SHIFT T_W_Caron] > U+018F U+030C
+
+if(&platform = 'touch') + [T_T_Acute] > U+0074 U+02B9
+if(&platform = 'touch') + [SHIFT T_T_Acute] > U+0054 U+02B9
+
+if(&platform = 'touch') + [T_P_Acute] > U+0070 U+02B9
+if(&platform = 'touch') + [SHIFT T_P_Acute] > U+0050 U+02B9
+
+if(&platform = 'touch') + [T_S_Acute] > U+0073 U+02B9
+if(&platform = 'touch') + [SHIFT T_S_Acute] > U+0053 U+02B9
+
+if(&platform = 'touch') + [SHIFT T_J_Caron] > U+004A U+030C
+
+if(&platform = 'touch') + [T_K_Acute] > U+006B U+02B9
+if(&platform = 'touch') + [SHIFT T_K_Acute] > U+004B U+02B9
+
+if(&platform = 'touch') + [T_C_Caron] > U+00E7 U+030C
+if(&platform = 'touch') + [SHIFT T_C_Caron] > U+00C7 U+030C
+
+if(&platform = 'touch') + [T_C_Acute] > U+0063 U+02B9
+if(&platform = 'touch') + [SHIFT T_C_Acute] > U+0043 U+02B9
+
+c End of keyboard
