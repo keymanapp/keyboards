@@ -1,6 +1,27 @@
 Nulisa Aksara Jawa Keyboard Change History
 =======================
 
+-----------------
+26 Feb 2020
+-----------------
+KMN file
+*add pangkon + pada lingsa/lungsi rule
+*add exception rule for pasangan "nga lelet" > pasangan "la pepet"
+*add ALT+0 = pepet
+*disallow number/symbol + pangkon/sesigeg/wyanjana
+*dirgamure (ai) also works for murda and cecak telu (rekan) now (line 270-1)
+*add 'reu' (long 're')
+*change the way '?' switcher rotate (no more cecak telu, include '?' symbol)
+*restore some commented-out codes: space > zws, 'eu', and 'ny'
+*change ZWJ constant name > ZWS
+
+KPS file
+* Add more supported languages (total 8)
+
+HTM file
+* Expand welcome2.htm
+
+Minor update on the layout in kvks and touch
 
 -----------------
 22 Feb 2020 - 1.1
