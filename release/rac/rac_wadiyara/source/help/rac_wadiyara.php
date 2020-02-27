@@ -1,3 +1,9 @@
+<?php 
+  $pagename = 'Rachitralli Wadiyara Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -647,14 +653,19 @@ the Keyman icon and selecting the On Screen Keyboard menu item. </p>
 
 <p>The keyboard layout is displayed below in Keyboard graphics.</p>
 
-<h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
-</div>
+<h3><span style='mso-fareast-font-family:"Times New Roman"'>Base Version<o:p></o:p></span></h3>
 
-<h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift numeric'>
-</div>
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+mso-no-proof:yes'><img width=908 height=307 id="_x0000_i1026"
+src="rac_wadiyara_base.png" alt="Base Version"></span><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
 
+<h3><span style='mso-fareast-font-family:"Times New Roman"'>Shift Version<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+mso-no-proof:yes'><img width=909 height=308 id="_x0000_i1025"
+src="rac_wadiyara_shift.png" alt="Shift Version"></span><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
 
 <h2><span style='mso-fareast-font-family:"Times New Roman"'>How to use the
 Rachitrali-Wadiyara Keyboard? Please read the following:-<u1:p></u1:p><o:p></o:p></span></h2>

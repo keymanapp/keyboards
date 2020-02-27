@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.74.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <GraphicFile>welcome\RAC.jpg</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Wadiyara</Folder>
@@ -25,7 +26,7 @@
     </Items>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Rachitrali-Wadiyara</Name>
     <Copyright URL="">© 2020 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa Pakistan</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
@@ -63,22 +64,58 @@
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>welcome\rac_wadiyara base.png</Name>
-      <Description>File rac_wadiyara base.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\rac_wadiyara shift.png</Name>
-      <Description>File rac_wadiyara shift.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\rac_wadiyara_base.png</Name>
+      <Description>File rac_wadiyara_base.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\rac_wadiyara_shift.png</Name>
+      <Description>File rac_wadiyara_shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade_README.txt</Name>
+      <Description>File Scheherazade_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Bold.ttf</Name>
+      <Description>Font Scheherazade Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</Name>
+      <Description>Font Scheherazade</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -87,8 +124,10 @@
       <ID>rac_wadiyara</ID>
       <Version>1.0</Version>
       <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="kxp-Arab-PK">Wadiyara Koli (Arabic, Pakistan)</Language>
+        <Language ID="kxp-Arab">Wadiyara Koli (Arabic)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
