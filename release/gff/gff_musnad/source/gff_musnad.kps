@@ -12,13 +12,36 @@
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
-    <Items/>
+    <Folder>GFF Musnad ( 𐩣𐩯𐩬𐩵) Keyboard</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Welcome</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Musnad Keyboard</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>OFL (Qataban Font License)</Name>
+        <FileName>OFL.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
   </StartMenu>
   <Info>
     <Name URL="">GFF Musnad ( 𐩣𐩯𐩬𐩵)</Name>
     <Copyright URL="">© 2020 Geez Frontier Foundation</Copyright>
-    <Author URL="mailto:keyboards@geez.org">Ge'ez Frontier Foundation</Author>
+    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -59,7 +82,7 @@
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>Qataban 1_0.ttf</Name>
+      <Name>Qataban-1_0.ttf</Name>
       <Description>Font Qataban</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
@@ -67,9 +90,10 @@
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>GFF Musnad</Name>
+      <Name>GFF Musnad (𐩣𐩯𐩬𐩵)</Name>
       <ID>gff_musnad</ID>
       <Version>1.0</Version>
+      <RTL>True</RTL>
       <Languages>
         <Language ID="xsa-Sarb">Musnad</Language>
       </Languages>
