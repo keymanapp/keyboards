@@ -22,7 +22,7 @@ follows the Windows 10 Slovak layout.
 <p>˙z will produce ż (available on zZ).</p>
 <p>´a will produce á (available on aAcCeEiIlLnNoOrRsSuUyYzZ).</p>
 <p>¸c will produce ç (available on cCsStT).</p>
-<p>¨a will produce ä (available on aAeEoOuU).</p>
+<p>¨a will produce ä (available on aAoOuU).</p>
 
 <h1>Keyboard Layout</h1>
 
