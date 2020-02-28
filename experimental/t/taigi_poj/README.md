@@ -1,7 +1,7 @@
 PhahTaigi POJ Keyman Keyboard
 ==============
 
-© Ngô͘ Ka-bêng
+© 2020 Ngô͘ Ka-bêng
 
 Version 1.0
 
