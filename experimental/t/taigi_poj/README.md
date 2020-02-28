@@ -3,7 +3,7 @@ PhahTaigi POJ Keyman Keyboard
 
 © 2020 Ngô͘ Ka-bêng
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
