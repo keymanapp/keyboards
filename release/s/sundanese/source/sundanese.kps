@@ -7,29 +7,23 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>README.md</ReadMeFile>
-    <GraphicFile>sundanese.bmp</GraphicFile>
+    <GraphicFile>source\sundanese.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder>Sunda Baku</Folder>
+    <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
     <Version URL="">1.0.2</Version>
-    <Name URL="">Sunda Baku</Name>
+    <Name URL="">Sunda Baku Keyboard</Name>
     <Copyright URL="">©Ilham Nurwansah</Copyright>
     <Author URL="mailto:ilhamnurwansah@gmail.com">Ilham Nurwansah</Author>
-    <WebSite URL="https://kairaga.com/font-sunda/keyboard">https://kairaga.com/font-sunda/keyboard</WebSite>
+    <WebSite URL="https://kairaga.com">https://kairaga.com</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>build\kairaga_regular.ttf</Name>
-      <Description>Font Kairaga regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
     <File>
       <Name>HISTORY.md</Name>
       <Description>File HISTORY.md</Description>
@@ -49,28 +43,10 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>sundanese.bmp</Name>
-      <Description>File sundanese.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
-    </File>
-    <File>
-      <Name>sundanese.ico</Name>
-      <Description>File sundanese.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
       <Name>sundanese.keyboard_info</Name>
       <Description>File sundanese.keyboard_info</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.keyboard_info</FileType>
-    </File>
-    <File>
-      <Name>sundanese.keyman-touch-layout</Name>
-      <Description>File sundanese.keyman-touch-layout</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.keyman-touch-layout</FileType>
     </File>
     <File>
       <Name>sundanese.kmn</Name>
@@ -79,46 +55,82 @@
       <FileType>.kmn</FileType>
     </File>
     <File>
-      <Name>sundanese.kpj.user</Name>
-      <Description>File sundanese.kpj.user</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.user</FileType>
-    </File>
-    <File>
-      <Name>sundanese.kvks</Name>
-      <Description>File sundanese.kvks</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvks</FileType>
-    </File>
-    <File>
       <Name>sundanese.kpj</Name>
       <Description>File sundanese.kpj</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kpj</FileType>
     </File>
     <File>
-      <Name>sundanese.kps</Name>
-      <Description>File sundanese.kps</Description>
+      <Name>sundanese.kpj.user</Name>
+      <Description>File sundanese.kpj.user</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kps</FileType>
+      <FileType>.user</FileType>
     </File>
     <File>
-      <Name>build\sundanese.js</Name>
+      <Name>source\kairaga_regular.otf</Name>
+      <Description>Font Kairaga regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>source\kairaga_regular.ttf</Name>
+      <Description>Font Kairaga regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>source\readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>source\sundanese.bmp</Name>
+      <Description>File sundanese.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>source\sundanese.js</Name>
       <Description>File sundanese.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>build\sundanese.kvk</Name>
+      <Name>source\sundanese.kmp</Name>
+      <Description>File sundanese.kmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmp</FileType>
+    </File>
+    <File>
+      <Name>source\sundanese.kvk</Name>
       <Description>File sundanese.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>build\sundanese.kmx</Name>
+      <Name>source\sundanese.kmx</Name>
       <Description>Keyboard Sunda Baku</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>source\sundanese.kps</Name>
+      <Description>File sundanese.kps</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kps</FileType>
+    </File>
+    <File>
+      <Name>source\sundanese.kvks</Name>
+      <Description>File sundanese.kvks</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvks</FileType>
+    </File>
+    <File>
+      <Name>source\sundanese.ico</Name>
+      <Description>File sundanese.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -126,8 +138,8 @@
       <Name>Sunda Baku</Name>
       <ID>sundanese</ID>
       <Version>1.0.2</Version>
-      <OSKFont>build\kairaga_regular.ttf</OSKFont>
-      <DisplayFont>build\kairaga_regular.ttf</DisplayFont>
+      <OSKFont>source\kairaga_regular.ttf</OSKFont>
+      <DisplayFont>source\kairaga_regular.ttf</DisplayFont>
       <Languages/>
     </Keyboard>
   </Keyboards>
