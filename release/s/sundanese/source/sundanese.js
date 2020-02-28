@@ -1,4 +1,36 @@
+
+KeymanWeb.KR(new Keyboard_sundanese());
+
+function Keyboard_sundanese()
 {
+  
+  this.KI="Keyboard_sundanese";
+  this.KN="Sunda Baku";
+  this.KMINVER="9.0";
+  this.KV={F:' 1em "Kairaga regular"',K102:0};
+  this.KV.KLS={
+    "default": ["`","᮱","᮲","᮳","᮴","᮵","᮶","᮷","᮸","᮹","᮰","-","=","","","","ᮋ","ᮝ","ᮨ","ᮛ","ᮒ","ᮚ","ᮥ","ᮤ","ᮧ","ᮕ","ᮦ","ᮩ","᮫","","","","","ᮞ","ᮓ","ᮖ","ᮌ","ᮠ","ᮏ","ᮊ","ᮜ","᮪","'","","","","","","","ᮐ","ᮟ","ᮎ","ᮗ","ᮘ","ᮔ","ᮙ",",",",","/","","","","","",""],
+    "shift": ["~","!","@","#","$","%","^","&","*","(",")","_","+","","","","ᮁ","","ᮈ","ᮢ","","ᮡ","ᮅ","ᮄ","ᮇ","","ᮆ","ᮉ","|","","","","ᮃ","","","","ᮍ","ᮂ","ᮑ","","ᮣ",":","\"","","","","","","","","","","","","ᮀ","","<",">","?","","","","","",""]
+  };
+  this.KV.BK=(function(x){
+    var
+      empty=Array.apply(null, Array(65)).map(String.prototype.valueOf,""),
+      result=[], v, i,
+      modifiers=['default','shift','ctrl','shift-ctrl','alt','shift-alt','ctrl-alt','shift-ctrl-alt'];
+    for(i=modifiers.length-1;i>=0;i--) {
+      v = x[modifiers[i]];
+      if(v || result.length > 0) {
+        result=(v ? v : empty).slice().concat(result);
+      }
+    }
+    return result;
+  })(this.KV.KLS);
+  this.KDU=0;
+  this.KH="https://kairaga.com/font-sunda/keyboard/help";
+  this.KM=0;
+  this.KBVER="1.0.2";
+  this.KMBM=0x0010;
+  this.KVKL={
   "tablet": {
     "displayUnderlying": false,
     "layer": [
@@ -515,4 +547,488 @@
     "font": "Kairaga regular",
     "fontsize": ""
   }
+}
+;
+  this.KVER="12.0.66.0";
+  this.gs=function(t,e) {
+    return this.g_main(t,e);
+  };
+  this.g_main=function(t,e) {
+    var k=KeymanWeb,r=0,m=0;
+    if(k.KKM(e, 0x4010, 0x31)) {
+      if(1){
+        r=m=1;   // Line 37
+        k.KO(0,t,"!");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xDE)) {
+      if(1){
+        r=m=1;   // Line 16
+        k.KO(0,t,"\"");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x33)) {
+      if(1){
+        r=m=1;   // Line 35
+        k.KO(0,t,"#");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x34)) {
+      if(1){
+        r=m=1;   // Line 34
+        k.KO(0,t,"$");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x35)) {
+      if(1){
+        r=m=1;   // Line 33
+        k.KO(0,t,"%");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x37)) {
+      if(1){
+        r=m=1;   // Line 31
+        k.KO(0,t,"&");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xDE)) {
+      if(1){
+        r=m=1;   // Line 23
+        k.KO(0,t,"'");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x39)) {
+      if(1){
+        r=m=1;   // Line 29
+        k.KO(0,t,"(");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x30)) {
+      if(1){
+        r=m=1;   // Line 28
+        k.KO(0,t,")");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x38)) {
+      if(1){
+        r=m=1;   // Line 30
+        k.KO(0,t,"*");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xBB)) {
+      if(1){
+        r=m=1;   // Line 26
+        k.KO(0,t,"+");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xBC)) {
+      if(1){
+        r=m=1;   // Line 22
+        k.KO(0,t,",");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xBD)) {
+      if(1){
+        r=m=1;   // Line 25
+        k.KO(0,t,"-");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xBE)) {
+      if(1){
+        r=m=1;   // Line 21
+        k.KO(0,t,".");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xBF)) {
+      if(1){
+        r=m=1;   // Line 20
+        k.KO(0,t,"/");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x30)) {
+      if(1){
+        r=m=1;   // Line 83
+        k.KO(0,t,"᮰");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x31)) {
+      if(1){
+        r=m=1;   // Line 92
+        k.KO(0,t,"᮱");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x32)) {
+      if(1){
+        r=m=1;   // Line 91
+        k.KO(0,t,"᮲");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x33)) {
+      if(1){
+        r=m=1;   // Line 90
+        k.KO(0,t,"᮳");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x34)) {
+      if(1){
+        r=m=1;   // Line 89
+        k.KO(0,t,"᮴");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x35)) {
+      if(1){
+        r=m=1;   // Line 88
+        k.KO(0,t,"᮵");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x36)) {
+      if(1){
+        r=m=1;   // Line 87
+        k.KO(0,t,"᮶");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x37)) {
+      if(1){
+        r=m=1;   // Line 86
+        k.KO(0,t,"᮷");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x38)) {
+      if(1){
+        r=m=1;   // Line 85
+        k.KO(0,t,"᮸");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x39)) {
+      if(1){
+        r=m=1;   // Line 84
+        k.KO(0,t,"᮹");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xBA)) {
+      if(1){
+        r=m=1;   // Line 50
+        k.KO(0,t,":");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xBA)) {
+      if(1){
+        r=m=1;   // Line 63
+        k.KO(0,t,"᮪");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xBC)) {
+      if(1){
+        r=m=1;   // Line 19
+        k.KO(0,t,"<");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xBB)) {
+      if(1){
+        r=m=1;   // Line 24
+        k.KO(0,t,"=");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xBE)) {
+      if(1){
+        r=m=1;   // Line 18
+        k.KO(0,t,">");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xBF)) {
+      if(1){
+        r=m=1;   // Line 17
+        k.KO(0,t,"?");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x32)) {
+      if(1){
+        r=m=1;   // Line 36
+        k.KO(0,t,"@");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x41)) {
+      if(1){
+        r=m=1;   // Line 40
+        k.KO(0,t,"ᮃ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x45)) {
+      if(1){
+        r=m=1;   // Line 54
+        k.KO(0,t,"ᮈ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x47)) {
+      if(1){
+        r=m=1;   // Line 48
+        k.KO(0,t,"ᮍ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x48)) {
+      if(1){
+        r=m=1;   // Line 41
+        k.KO(0,t,"ᮂ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x49)) {
+      if(1){
+        r=m=1;   // Line 46
+        k.KO(0,t,"ᮄ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x4A)) {
+      if(1){
+        r=m=1;   // Line 42
+        k.KO(0,t,"ᮑ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x4C)) {
+      if(1){
+        r=m=1;   // Line 51
+        k.KO(0,t,"ᮣ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x4E)) {
+      if(1){
+        r=m=1;   // Line 49
+        k.KO(0,t,"ᮀ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x4F)) {
+      if(1){
+        r=m=1;   // Line 45
+        k.KO(0,t,"ᮇ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x51)) {
+      if(1){
+        r=m=1;   // Line 55
+        k.KO(0,t,"ᮁ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x52)) {
+      if(1){
+        r=m=1;   // Line 53
+        k.KO(0,t,"ᮢ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x55)) {
+      if(1){
+        r=m=1;   // Line 47
+        k.KO(0,t,"ᮅ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x59)) {
+      if(1){
+        r=m=1;   // Line 52
+        k.KO(0,t,"ᮡ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xDB)) {
+      if(1){
+        r=m=1;   // Line 72
+        k.KO(0,t,"ᮦ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xDC)) {
+      if(1){
+        r=m=1;   // Line 14
+        k.KO(0,t,"᮫");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0xDD)) {
+      if(1){
+        r=m=1;   // Line 39
+        k.KO(0,t,"ᮩ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0x36)) {
+      if(1){
+        r=m=1;   // Line 32
+        k.KO(0,t,"^");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xBD)) {
+      if(1){
+        r=m=1;   // Line 27
+        k.KO(0,t,"_");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x42)) {
+      if(1){
+        r=m=1;   // Line 58
+        k.KO(0,t,"ᮘ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x43)) {
+      if(1){
+        r=m=1;   // Line 60
+        k.KO(0,t,"ᮎ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x44)) {
+      if(1){
+        r=m=1;   // Line 70
+        k.KO(0,t,"ᮓ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x45)) {
+      if(1){
+        r=m=1;   // Line 80
+        k.KO(0,t,"ᮨ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x46)) {
+      if(1){
+        r=m=1;   // Line 69
+        k.KO(0,t,"ᮖ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x47)) {
+      if(1){
+        r=m=1;   // Line 68
+        k.KO(0,t,"ᮌ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x48)) {
+      if(1){
+        r=m=1;   // Line 67
+        k.KO(0,t,"ᮠ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x49)) {
+      if(1){
+        r=m=1;   // Line 75
+        k.KO(0,t,"ᮤ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x4A)) {
+      if(1){
+        r=m=1;   // Line 66
+        k.KO(0,t,"ᮏ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x4B)) {
+      if(1){
+        r=m=1;   // Line 65
+        k.KO(0,t,"ᮊ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x4C)) {
+      if(1){
+        r=m=1;   // Line 64
+        k.KO(0,t,"ᮜ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x4D)) {
+      if(1){
+        r=m=1;   // Line 56
+        k.KO(0,t,"ᮙ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x4E)) {
+      if(1){
+        r=m=1;   // Line 57
+        k.KO(0,t,"ᮔ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x4F)) {
+      if(1){
+        r=m=1;   // Line 74
+        k.KO(0,t,"ᮧ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x50)) {
+      if(1){
+        r=m=1;   // Line 73
+        k.KO(0,t,"ᮕ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x51)) {
+      if(1){
+        r=m=1;   // Line 82
+        k.KO(0,t,"ᮋ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x52)) {
+      if(1){
+        r=m=1;   // Line 79
+        k.KO(0,t,"ᮛ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x53)) {
+      if(1){
+        r=m=1;   // Line 71
+        k.KO(0,t,"ᮞ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x54)) {
+      if(1){
+        r=m=1;   // Line 78
+        k.KO(0,t,"ᮒ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x55)) {
+      if(1){
+        r=m=1;   // Line 76
+        k.KO(0,t,"ᮥ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x56)) {
+      if(1){
+        r=m=1;   // Line 59
+        k.KO(0,t,"ᮗ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x57)) {
+      if(1){
+        r=m=1;   // Line 81
+        k.KO(0,t,"ᮝ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x58)) {
+      if(1){
+        r=m=1;   // Line 61
+        k.KO(0,t,"ᮟ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x59)) {
+      if(1){
+        r=m=1;   // Line 77
+        k.KO(0,t,"ᮚ");
+      }
+    }
+    else if(k.KKM(e, 0x4000, 0x5A)) {
+      if(1){
+        r=m=1;   // Line 62
+        k.KO(0,t,"ᮐ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xDB)) {
+      if(1){
+        r=m=1;   // Line 44
+        k.KO(0,t,"ᮆ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xDC)) {
+      if(1){
+        r=m=1;   // Line 15
+        k.KO(0,t,"|");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xDD)) {
+      if(1){
+        r=m=1;   // Line 43
+        k.KO(0,t,"ᮉ");
+      }
+    }
+    else if(k.KKM(e, 0x4010, 0xC0)) {
+      if(1){
+        r=m=1;   // Line 38
+        k.KO(0,t,"~");
+      }
+    }
+    return r;
+  };
 }
