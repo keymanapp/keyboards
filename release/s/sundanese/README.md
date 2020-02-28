@@ -12,12 +12,10 @@ Links
 *Home: https://kairaga.com/font-sunda/keyboard
 *Help: https://kairaga.com/font-sunda/keyboard/help
 *Contact: ilhamnurwansah@gmail.com
+
 Supported Platforms
 -------------------
  * Windows
  * macOS
  * Linux
  * Web
- * Mobile Web
- * iOS
- * Android
