@@ -12,6 +12,7 @@ Traditional Layout for Nepal Bhasa in Newa (Prachalit) script with dead keys sup
 
 Links
 -----
+* Home: https://keyman.com/keyboards/newa_traditional
 
 Supported Platforms
 -------------------
