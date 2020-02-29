@@ -1,4 +1,4 @@
-newa-traditional keyboard
+Newa Traditional keyboard
 ==============
 
 (cc) Santosh Pradhan
