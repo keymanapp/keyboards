@@ -1,4 +1,4 @@
-PhahTaigi POJ Keyman Keyboard Change History
+PhahTaigi POJ Change History
 ====================
 
 1.1 (2020-02-29)
