@@ -1,7 +1,7 @@
 newa-traditional keyboard
 ==============
 
-©
+(cc) Santosh Pradhan
 
 Version 1.0
 
