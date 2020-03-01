@@ -1,12 +1,12 @@
 <?php
-$pagename = 'PhahTaigi POJ Keyman Keyboard Help';
+$pagename = 'PhahTaigi POJ Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');
 ?>
 
 <p>
-PhahTaigi POJ Keyman Keyboard for Tâi-gí (Taiwanese).
+PhahTaigi POJ for Tâi-gí (Taiwanese) Pe̍h-ōe-jī.
 </p>
 
 <h1>Keyboard Layout</h1>

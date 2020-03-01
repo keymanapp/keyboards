@@ -1,14 +1,14 @@
-PhahTaigi POJ Keyman Keyboard
+PhahTaigi POJ
 ==============
 
 © 2020 Ngô͘ Ka-bêng
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-PhahTaigi POJ Keyman Keyboard for Tâi-gí (Taiwanese).
+PhahTaigi POJ for Tâi-gí (Taiwanese) Pe̍h-ōe-jī.
 
 Links
 -----
