@@ -1,7 +1,7 @@
 Yoruba Basic Change History
 ====================
 
-1.2 (2020-03-02)
+1.1 (2020-03-02)
 ----------------
 * Updated keyboard to support grave and acute with m
 
