@@ -6,6 +6,7 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <GraphicFile>sundanese.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +18,9 @@
   <Info>
     <Version URL="">1.0.2</Version>
     <Name URL="">Sunda Baku Keyboard</Name>
-    <Copyright URL="">©Ilham Nurwansah</Copyright>
+    <Copyright URL="">© 2020 Ilham Nurwansah</Copyright>
     <Author URL="mailto:ilhamnurwansah@gmail.com">Ilham Nurwansah</Author>
-    <WebSite URL="https://kairaga.com">https://kairaga.com</WebSite>
+    <WebSite URL="https://kairaga.com/font-sunda/keyboard">https://kairaga.com/font-sunda/keyboard</WebSite>
   </Info>
   <Files>
     <File>
@@ -41,24 +42,6 @@
       <FileType>.ico</FileType>
     </File>
     <File>
-      <Name>sundanese.js</Name>
-      <Description>File sundanese.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>kairaga_regular.otf</Name>
-      <Description>Font Kairaga regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>sundanese.kmp</Name>
-      <Description>File sundanese.kmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmp</FileType>
-    </File>
-    <File>
       <Name>..\build\sundanese.kvk</Name>
       <Description>File sundanese.kvk</Description>
       <CopyLocation>0</CopyLocation>
@@ -77,10 +60,10 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\sundanese.keyboard_info</Name>
-      <Description>File sundanese.keyboard_info</Description>
+      <Name>..\build\sundanese.js</Name>
+      <Description>File sundanese.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.keyboard_info</FileType>
+      <FileType>.js</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -90,7 +73,9 @@
       <Version>1.0.2</Version>
       <OSKFont>kairaga_regular.ttf</OSKFont>
       <DisplayFont>kairaga_regular.ttf</DisplayFont>
-      <Languages/>
+      <Languages>
+        <Language ID="su-Sund">Sundanese (Sundanese)</Language>
+      </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
