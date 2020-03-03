@@ -18,7 +18,7 @@ This keyboard is designed for the Yoruba language of Nigeria.
 
 <p>[a will produce à (available on aAeEiImMnNoOuU).</p>
 <p>\e will produce ẹ (available on eEoOsS).</p>
-<p>´a will produce á (available on aAeEiImMnNoOuU).</p>
+<p>'a will produce á (available on aAeEiImMnNoOuU).</p>
 
 <p>To access the "deadkey" itself, type a space after it.</p>
 
