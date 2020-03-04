@@ -173,7 +173,8 @@
               },
               {
                 "id": "K_LBRKT",
-                "text": "["
+                "text": "[",
+                "sp": "8"
               },
               {
                 "id": "K_RBRKT",
@@ -253,6 +254,7 @@
               {
                 "id": "K_QUOTE",
                 "text": "'",
+                "sp": "8",
                 "sk": [
                   {
                     "text": "‘",
@@ -266,7 +268,8 @@
               },
               {
                 "id": "K_BKSLASH",
-                "text": "\\"
+                "text": "\\",
+                "sp": "8"
               }
             ]
           },
@@ -320,7 +323,17 @@
               },
               {
                 "id": "K_M",
-                "text": "m"
+                "text": "m",
+                "sk": [
+                  {
+                    "text": "m̀",
+                    "id": "T_M_Grave"
+                  },
+                  {
+                    "text": "ḿ",
+                    "id": "U_1E3F"
+                  }
+                ]
               },
               {
                 "id": "K_COMMA",
@@ -709,7 +722,18 @@
               },
               {
                 "id": "K_M",
-                "text": "M"
+                "text": "M",
+                "sk": [
+                  {
+                    "text": "M̀",
+                    "id": "T_M_Grave",
+                    "layer": "shift"
+                  },
+                  {
+                    "text": "Ḿ",
+                    "id": "U_1E3E"
+                  }
+                ]
               },
               {
                 "id": "K_COMMA",
@@ -761,6 +785,7 @@
           }
         ]
       }
-    ]
+    ],
+    "displayUnderlying": false
   }
 }
