@@ -5,7 +5,7 @@
 ?>
 
   <p>
-
+Romanized layout for Nepal Bhasa in Prachalit script.
   </p>
 
 <h1>Keyboard Layout</h1>
@@ -14,11 +14,7 @@
 <div id='osk' data-states='default shift alt'>
 </div>
 
-<h2>Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift symbol'>
-</div>
-
-<h2>Phone Keyboard Layout</h2>
+<h2>Phone/Tablet Keyboard Layout</h2>
 <div id='osk-phone' data-states='default shift numeric'>
 </div>
 
