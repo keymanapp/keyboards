@@ -1,4 +1,4 @@
-Sundanese Keyboard Change History
+Sunda Baku Keyboard Change History
 
 1.0.2. 
 Mobile layout dropped. Improvement on layout for PC and on screen keyboard. 
