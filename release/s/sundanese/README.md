@@ -1,11 +1,11 @@
-Keyboard Aksara Sunda Baku (Keyboard for Sundanese Official Script)
+Sunda Baku Keyboard 
 =====================
 Copyright (c) 2020 Ilham Nurwansah
 
-Version 1.0
+Version 1.0.2
 
 
-Keyboard for Sundanese script, supported with Unicode table.
+Keyboard for official Sundanese script (aksara Sunda baku) , supported with Unicode table.
 
 Links
 -----
