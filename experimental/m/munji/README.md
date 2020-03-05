@@ -12,6 +12,7 @@ Munji keyboard based on Persian standard
 
 Links
 -----
+Home: https://keyman.com/keyboards/munji
 
 Supported Platforms
 -------------------
