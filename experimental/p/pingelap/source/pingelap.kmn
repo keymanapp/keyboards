@@ -1,0 +1,18 @@
+﻿c pingelap generated from template at 2020-02-27 20:25:19
+c with name "pingelap"
+store(&VERSION) '10.0'
+store(&NAME) 'pingelap'
+store(&COPYRIGHT) '©2020 Pingelap Bible Translation Organization'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'pingelap.kvks'
+store(&LAYOUTFILE) 'pingelap.keyman-touch-layout'
+store(&BITMAP) 'pingelap.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT K_LBRKT] > "Ɛ"
++ [K_LBRKT] > "ɛ"
+"Ɛ" + "{" > "{"
+"ɛ" + "[" > "["
