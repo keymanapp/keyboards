@@ -12,7 +12,7 @@ Romanized layout for Nepal Bhasa in Prachalit script.
 
 Links
 -----
-* Home: 
+* Home: https://keyman.com/keyboards/newa_romanized
 
 Supported Platforms
 -------------------
