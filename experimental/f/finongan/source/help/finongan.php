@@ -1,8 +1,8 @@
 <?php
-$pagename = Finongan Keyboard Help';
-$pagetitle = $pagename;
-// Header
-require_once('header.php');
+  $pagename = 'Finongan Keyboard Help';
+  $pagetitle = $pagename;
+  // Header
+  require_once('header.php');
 ?>
 
 <p>
