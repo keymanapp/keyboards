@@ -12,6 +12,7 @@ Finongan keyboard based on US.
 
 Links
 -----
+Home: https://keyman.com/keyboards/finongan
 
 Supported Platforms
 -------------------
