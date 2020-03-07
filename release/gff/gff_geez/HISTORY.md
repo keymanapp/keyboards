@@ -1,5 +1,8 @@
 # ግዕዝ (Ge'ez) Change History
 
+## 2020-03-07 1.5
+* Allow continuation of Indo-Arab numeral sequences.
+
 ## 2020-01-29 1.4.1
 * Correction to syllabary table.
 
