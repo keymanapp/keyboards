@@ -1,17 +1,18 @@
 Yoruba Basic keyboard
 ==============
 
-(c) 2018 SIL International
+(c) 2018-2020 SIL International
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Yoruba Basic generated from template
+This keyboard is designed for the Yoruba language of Nigeria.
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdyba
 
 Supported Platforms
 -------------------
