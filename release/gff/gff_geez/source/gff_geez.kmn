@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '9.0'
-store(&KEYBOARDVERSION) '1.5'
+  store(&KEYBOARDVERSION) '1.5'
   store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
   store(&EthnologueCode) 'gez'
   store(&Copyright) '© 2009-2020 Ge' U+0027 'ez Frontier Foundation'
@@ -319,6 +319,7 @@ c enhance this later, look for something that can copy a match over
 c ---------------------End Input of Numbers-----------------------------------------------------
 
 c ---------------------Begin ዜማ Group--------------------------------------------------------
+  any(ዜማ) + any(ዜማ፡keys) > index(ዜማ, 1) index(ዜማ, 2)
   group(ዜማ፡group) using keys
   + any(ዜማ፡keys) > index(ዜማ, 1)
   nomatch        > use(main)             
