@@ -12,7 +12,7 @@ It includes an on screen keyboard which can be viewed by clicking on the Keyman 
 and selecting the On Screen Keyboard menu item. Similar keyboards are also available for other desktop and mobile platforms.</p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift alt shift-alt ctrl'>
+<div id='osk' data-states='default shift right-alt right-shift-alt left-ctrl'>
 </div>
 
 <h2>Tablet Keyboard Layout</h2>
@@ -26,4 +26,5 @@ and selecting the On Screen Keyboard menu item. Similar keyboards are also avail
 <p>For Android and iOS, you may use long press key combinations.</p>
 
 <h2>Release History</h2>
+<p>Version 1.1, released 29 February 2020</p>
 <p>Version 1.0, released 5 August 2019</p>

@@ -1,6 +1,10 @@
 Balochi InPage Keyboard Change History
 ======================================
 
+1.1 (2020-02-29)
+-----------------
+Put non-Balochi letters on non-default layers.
+
 1.0 (2019-08-05)
 -----------------
 Initial version.
