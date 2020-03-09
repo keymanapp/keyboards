@@ -29,6 +29,11 @@ menu item. Similar keyboards are also available for other desktop and mobile pla
 
 <h2>History</h2>
 
+<h3>1.3.1 (12 Feb 2020)</h3>
+<ul>
+  <li>Fixed package to include png keyboard images. Remove font from touch.</li>
+</ul>
+
 <h3>1.3 (20 Jan 2020)</h3>
 <ul>
   <li>Put feh, hah and tatweel on the shift level since they are not used in the </li>
