@@ -6,7 +6,7 @@ require_once('header.php');
 ?>
 
 <p>
-Gilaki Phonetic keyboard based on Persian.
+Keyboard for the Gilaki language based on a phonetic layout.
 </p>
 
 <h1>Keyboard Layout</h1>
@@ -20,4 +20,7 @@ Gilaki Phonetic keyboard based on Persian.
 Press and hold on the key with a little dot on the top right to reveal them.</p>
 
 <div id='osk-phone' data-states='default shift numeric'>
+</div>
+
+<div id='osk-tablet' data-states='default shift'>
 </div>
