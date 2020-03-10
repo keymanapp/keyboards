@@ -21,3 +21,6 @@ Press and hold on the key with a little dot on the top right to reveal them.</p>
 
 <div id='osk-phone' data-states='default numeric symbol'>
 </div>
+
+<div id='osk-tablet' data-states='default shift'>
+</div>
