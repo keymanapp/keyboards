@@ -8,6 +8,15 @@ require_once('header.php');
 <p>
 Wakhi Cyrillic keyboard.
 </p>
+<p>
+For the letters combined with diacritic symbols, first type the letter, then type the diacritic symbol. The diacritic symbols are on the top row under the keys 1, 2 and 3.
+
+<p>
+If you have problem using the Wakhi Cyrillic keyboard please contact: writing.xikwor@gmail.com
+</p>
+
+<p> См. здесь <a href="file:wakhi_cyrillic_help.pdf">здесь</a> для инструкций на русском языке.</p>
+<h1>Keyboard Layout</h1>
 
 <h1>Keyboard Layout</h1>
 
