@@ -19,7 +19,7 @@ c store(&LANGUAGE) 'x0473'
 c store(&WINDOWSLANGUAGES) 'x0473'
 store(&COPYRIGHT) '© 2009-2020 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Tigrinya language mnemonic input method that applies Ethiopian writing conventions.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
-store(&KEYBOARDVERSION) '1.4'
+store(&KEYBOARDVERSION) '1.4b'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_T]'
 store(&BITMAP) 'gff_tigrinya_et.ico'
@@ -53,8 +53,8 @@ c the following is Tigrinya specific
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)   'aAuUiIeEoO'
-  store(loneVowelEthio)  'ኣዓኡዑኢዒእዕኦዖ'
+  store(loneVowelKeys)   'aAuUiIeEoO'[T_HAMIS]
+  store(loneVowelEthio)  'ኣዓኡዑኢዒእዕኦዖኤ'
   store(composableVowel) 'ኢእዒዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
@@ -88,7 +88,7 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
   store(ካዕብ-key) 'uU' c 'ùÙúÚûÛüÜ'
   store(ሣልስ-key) 'iI' c ìÌíÍîÎïÏ'
   store(ራብዕ-key) 'aA' c 'àÀáÁâÂãÃåÅ'
-  store(ኃምስ-key) [K_oEA] c 'æÆ'
+  store(ኃምስ-key) [T_HAMIS] c 'æÆ'
   store(ሳብዕ-key) 'oO' c 'òÒóÓôÔõÕöÖøØ'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
@@ -167,6 +167,7 @@ c ---------------------Input of Basic Syllables---------------------------------
   any(ሳድስ) + any(ሣልስ-key) > index(ሣልስ,1)
   any(ሳድስ) + any(ራብዕ-key) > index(ራብዕ,1)
   any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
+  c any(ሳድስ) + [T_HAMIS] > index(ኃምስ,1)
   any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
   any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------

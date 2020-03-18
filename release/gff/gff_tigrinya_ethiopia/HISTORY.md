@@ -1,5 +1,8 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+## 2020-03-17
+* Introduction of Touch Layout (Beta)
+
 ## 2020-01-29 1.3.1
 * Correction to syllabary table.
 
