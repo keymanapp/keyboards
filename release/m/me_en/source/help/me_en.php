@@ -1,12 +1,12 @@
 <?php
-$pagename = 'Me’en Keyboard Help';
+$pagename = 'Me’en (Latin) Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');
 ?>
 
 <p>
-    Me’en keyboard based on US keyboard layout.
+    Me’en (Latin) keyboard based on US keyboard layout.
 </p>
 
 <h1>Keyboard Layout</h1>
@@ -34,7 +34,6 @@ require_once('header.php');
 
 <h2>Touch</h2>
 <div id='osk-phone' data-states='default shift numeric symbol'>
-<div id='osk-tablet' data-states='default shift numeric symbol'>
 </div>
 
 <p>© 2020 Wycliffe Ethiopia</p>
