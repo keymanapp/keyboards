@@ -1,4 +1,4 @@
-Me’en Change History
+Me’en (Latin) Change History
 ====================
 
 1.0 (2020-02-25)
