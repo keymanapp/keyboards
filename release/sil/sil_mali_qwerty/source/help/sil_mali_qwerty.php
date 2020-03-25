@@ -17,3 +17,9 @@
 <img src='mali_all.png' alt='Keyboard Layout'>
 <p><b>Clavier à l’écran</b></p>
 <img src='mali_shift.png' alt='Keyboard Layout'>
+
+<h2>Disposition du clavier du téléphone / Phone keyboard layout</h2>
+
+<div id='osk-phone' data-states='default shift numeric symbol'>
+</div>
+
