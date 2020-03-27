@@ -1,0 +1,120 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Mro Phonetic'
+store(&COPYRIGHT) '© 2020 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'web desktop'
+store(&VISUALKEYBOARD) 'mro_phonetic.kvks'
+store(&BITMAP) 'mro_phonetic.ico'
+
+begin Unicode > use(main)
+
+store(nul) "ABCDEFGIJKNOPSTUVWXYZ"
+c store(LatinDigits) "1234567890"
+c store(MroDigits)     U+16A61 U+16A62 U+16A63 U+16A64 U+16A65 U+16A66 U+16A67 U+16A68 U+16A69 U+16A60
+c store(BengaliDigits) U+09E7  U+09E8  U+09E9  U+09EA  U+09EB  U+09EC  U+09ED  U+09EE  U+09EF  U+09E6
+
+group(main) using keys
+
+    + any(nul)    > nul
+ 
+    + [K_A]       > U+16A46
+    + [K_B]       > U+16A44
+    + [K_C]       > U+16A4B
+    + [K_D]       > U+16A45
+    + [K_E]       > U+16A58
+    + [K_F]       > U+16A47
+    + [K_G]       > U+16A41
+    + [K_H]       > U+16A49
+    + [SHIFT K_H] > U+16A5C
+    + [K_I]       > U+16A4A
+    + [K_J]       > U+16A59
+    + [K_K]       > U+16A4C
+    + [K_L]       > U+16A4D
+    + [SHIFT K_L] > U+16A5A
+    + [K_M]       > U+16A4E
+    + [SHIFT K_M] > U+16A43
+    + [K_N]       > U+16A4F
+    + [K_O]       > U+16A52
+    + [K_P]       > U+16A50
+    + [K_Q]       > U+16A5B
+    + [SHIFT K_Q] > U+16A5E
+    + [K_R]       > U+16A53
+    + [SHIFT K_R] > U+16A5D
+    + [K_S]       > U+16A54
+    + [K_T]       > U+16A40
+    + [K_U]       > U+16A51
+    + [K_V]       > U+16A55
+    + [K_W]       > U+16A57
+    + [K_X]       > U+16A48
+    + [K_Y]       > U+16A42
+    + [K_Z]       > U+16A56
+
+    + [K_BKQUOTE] > "`"
+    + [SHIFT K_BKQUOTE] > "~"
+    + [K_1]       > U+16A61
+    + [K_2]       > U+16A62
+    + [K_3]       > U+16A63
+    + [K_4]       > U+16A64
+    + [K_5]       > U+16A65
+    + [K_6]       > U+16A66
+    + [K_7]       > U+16A67
+    + [K_8]       > U+16A68
+    + [K_9]       > U+16A69
+    + [K_0]       > U+16A60
+    + [K_HYPHEN]  > "-"
+    + [K_EQUAL]  > "="
+
+    + [SHIFT K_1] > "!"
+    + [SHIFT K_2] > "@"
+    + [SHIFT K_3] > "#"
+    + [SHIFT K_4] > U+09F3
+    + [SHIFT K_5] > "%"
+    + [SHIFT K_6] > "^"
+    + [SHIFT K_7] > "&"
+    + [SHIFT K_8] > "*"
+    + [SHIFT K_9] > "("
+    + [SHIFT K_0] > ")"
+    + [SHIFT K_HYPHEN]  > "_"
+    + [SHIFT K_EQUAL]  > "+"
+
+    + [RALT K_1]  > U+0031
+    + [RALT K_2]  > U+0032
+    + [RALT K_3]  > U+0033
+    + [RALT K_4]  > U+0034
+    + [RALT K_5]  > U+0035
+    + [RALT K_6]  > U+0036
+    + [RALT K_7]  > U+0037
+    + [RALT K_8]  > U+0038
+    + [RALT K_9]  > U+0039
+    + [RALT K_0]  > U+0030
+    + [SHIFT RALT K_1]  > U+09E7
+    + [SHIFT RALT K_2]  > U+09E8
+    + [SHIFT RALT K_3]  > U+09E9
+    + [SHIFT RALT K_4]  > U+09EA
+    + [SHIFT RALT K_5]  > U+09EB
+    + [SHIFT RALT K_6]  > U+09EC
+    + [SHIFT RALT K_7]  > U+09ED
+    + [SHIFT RALT K_8]  > U+09EE
+    + [SHIFT RALT K_9]  > U+09EF
+    + [SHIFT RALT K_0]  > U+09E6
+
+    + [K_LBRKT]   > U+16A6E
+    + [K_RBRKT]   > U+16A6F
+    + [K_BKSLASH] > "\"
+    + [SHIFT K_LBRKT]   > "{"
+    + [SHIFT K_RBRKT]   > "}"
+    + [RALT K_LBRKT]   > "["
+    + [RALT K_RBRKT]   > "]"
+
+    + [SHIFT K_BKSLASH] > "|"
+    + [K_COLON]         > ";"
+    + [SHIFT K_COLON]   > ":" 
+    + [K_QUOTE]         > "'"
+    + [SHIFT K_QUOTE]   > '"'
+    + [K_COMMA]         > ","
+    + [SHIFT K_COMMA]   > "<"
+    + [K_PERIOD]        > "."
+    + [SHIFT K_PERIOD]  > ">"
+    + [K_SLASH]         > "/"
+    + [SHIFT K_SLASH]   > "?"
+
