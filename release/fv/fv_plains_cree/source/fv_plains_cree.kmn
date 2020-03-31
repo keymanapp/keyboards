@@ -12,117 +12,15 @@ group(main) using keys
 
 c --- START OF TOUCH LAYOUT RULES ---
 
-  U+1401 + [T_W_DOT] > U+140D     c ᐁ -> ᐍ
-  U+1403 + [T_LONG_DOT] > U+1404  c ᐃ -> ᐄ
-  U+1403 + [T_W_DOT] > U+140F     c ᐃ -> ᐏ
-  U+1404 + [T_W_DOT] > U+1411     c ᐄ -> ᐑ
-  U+1405 + [T_LONG_DOT] > U+1406  c ᐅ -> ᐆ
-  U+1405 + [T_W_DOT] > U+1413     c ᐅ -> ᐓ
-  U+1406 + [T_W_DOT] > U+1415     c ᐆ -> ᐕ
-  U+140A + [T_LONG_DOT] > U+140B  c ᐊ -> ᐋ
-  U+140A + [T_W_DOT] > U+1418     c ᐊ -> ᐘ
-  U+140B + [T_W_DOT] > U+141A     c ᐋ -> ᐚ
-  U+140F + [T_LONG_DOT] > U+1411  c ᐏ -> ᐑ
-  U+1413 + [T_LONG_DOT] > U+1415  c ᐓ -> ᐕ
-  U+1418 + [T_LONG_DOT] > U+141A  c ᐘ -> ᐚ
-  U+142F + [T_W_DOT] > U+143B     c ᐯ -> ᐻ
-  U+1431 + [T_LONG_DOT] > U+1432  c ᐱ -> ᐲ
-  U+1431 + [T_W_DOT] > U+143D     c ᐱ -> ᐽ
-  U+1432 + [T_W_DOT] > U+143F     c ᐲ -> ᐿ
-  U+1433 + [T_LONG_DOT] > U+1434  c ᐳ -> ᐴ
-  U+1433 + [T_W_DOT] > U+1441     c ᐳ -> ᑁ
-  U+1434 + [T_W_DOT] > U+1443     c ᐴ -> ᑃ
-  U+1438 + [T_LONG_DOT] > U+1439  c ᐸ -> ᐹ
-  U+1438 + [T_W_DOT] > U+1445     c ᐸ -> ᑅ
-  U+1439 + [T_W_DOT] > U+1447     c ᐹ -> ᑇ
-  U+143D + [T_LONG_DOT] > U+143F  c ᐽ -> ᐿ
-  U+1441 + [T_LONG_DOT] > U+1443  c ᑁ -> ᑃ
-  U+1445 + [T_LONG_DOT] > U+1447  c ᑅ -> ᑇ
-  U+144C + [T_W_DOT] > U+1458     c ᑌ -> ᑘ
-  U+144E + [T_LONG_DOT] > U+144F  c ᑎ -> ᑏ
-  U+144E + [T_W_DOT] > U+145A     c ᑎ -> ᑚ
-  U+144F + [T_W_DOT] > U+145C     c ᑏ -> ᑜ
-  U+1450 + [T_LONG_DOT] > U+1451  c ᑐ -> ᑑ
-  U+1450 + [T_W_DOT] > U+145E     c ᑐ -> ᑞ
-  U+1451 + [T_W_DOT] > U+1460     c ᑑ -> ᑠ
-  U+1455 + [T_LONG_DOT] > U+1456  c ᑕ -> ᑖ
-  U+1455 + [T_W_DOT] > U+1462     c ᑕ -> ᑢ
-  U+1456 + [T_W_DOT] > U+1464     c ᑖ -> ᑤ
-  U+145A + [T_LONG_DOT] > U+145C  c ᑚ -> ᑜ
-  U+145E + [T_LONG_DOT] > U+1460  c ᑞ -> ᑠ
-  U+1462 + [T_LONG_DOT] > U+1464  c ᑢ -> ᑤ
-  U+146B + [T_W_DOT] > U+1475     c ᑫ -> ᑵ
-  U+146D + [T_LONG_DOT] > U+146E  c ᑭ -> ᑮ
-  U+146D + [T_W_DOT] > U+1477     c ᑭ -> ᑷ
-  U+146E + [T_W_DOT] > U+1479     c ᑮ -> ᑹ
-  U+146F + [T_LONG_DOT] > U+1470  c ᑯ -> ᑰ
-  U+146F + [T_W_DOT] > U+147B     c ᑯ -> ᑻ
-  U+1470 + [T_W_DOT] > U+147D     c ᑰ -> ᑽ
-  U+1472 + [T_LONG_DOT] > U+1473  c ᑲ -> ᑳ
-  U+1472 + [T_W_DOT] > U+147F     c ᑲ -> ᑿ
-  U+1473 + [T_W_DOT] > U+1481     c ᑳ -> ᒁ
-  U+1477 + [T_LONG_DOT] > U+1479  c ᑷ -> ᑹ
-  U+147B + [T_LONG_DOT] > U+147D  c ᑻ -> ᑽ
-  U+147F + [T_LONG_DOT] > U+1481  c ᑿ -> ᒁ
-  U+1489 + [T_W_DOT] > U+1493     c ᒉ -> ᒓ
-  U+148B + [T_LONG_DOT] > U+148C  c ᒋ -> ᒌ
-  U+148B + [T_W_DOT] > U+1495     c ᒋ -> ᒕ
-  U+148C + [T_W_DOT] > U+1497     c ᒌ -> ᒗ
-  U+148D + [T_LONG_DOT] > U+148E  c ᒍ -> ᒎ
-  U+148D + [T_W_DOT] > U+1499     c ᒍ -> ᒙ
-  U+148E + [T_W_DOT] > U+149B     c ᒎ -> ᒛ
-  U+1490 + [T_LONG_DOT] > U+1491  c ᒐ -> ᒑ
-  U+1490 + [T_W_DOT] > U+149D     c ᒐ -> ᒝ
-  U+1491 + [T_W_DOT] > U+149F     c ᒑ -> ᒟ
-  U+1495 + [T_LONG_DOT] > U+1497  c ᒕ -> ᒗ
-  U+1499 + [T_LONG_DOT] > U+149B  c ᒙ -> ᒛ
-  U+149D + [T_LONG_DOT] > U+149F  c ᒝ -> ᒟ
-  U+14A3 + [T_W_DOT] > U+14AD     c ᒣ -> ᒭ
-  U+14A5 + [T_LONG_DOT] > U+14A6  c ᒥ -> ᒦ
-  U+14A5 + [T_W_DOT] > U+14AF     c ᒥ -> ᒯ
-  U+14A6 + [T_W_DOT] > U+14B1     c ᒦ -> ᒱ
-  U+14A7 + [T_LONG_DOT] > U+14A8  c ᒧ -> ᒨ
-  U+14A7 + [T_W_DOT] > U+14B3     c ᒧ -> ᒳ
-  U+14A8 + [T_W_DOT] > U+14B5     c ᒨ -> ᒵ
-  U+14AA + [T_LONG_DOT] > U+14AB  c ᒪ -> ᒫ
-  U+14AA + [T_W_DOT] > U+14B7     c ᒪ -> ᒷ
-  U+14AB + [T_W_DOT] > U+14B9     c ᒫ -> ᒹ
-  U+14AF + [T_LONG_DOT] > U+14B1  c ᒯ -> ᒱ
-  U+14B3 + [T_LONG_DOT] > U+14B5  c ᒳ -> ᒵ
-  U+14B7 + [T_LONG_DOT] > U+14B9  c ᒷ -> ᒹ
-  U+14C0 + [T_W_DOT] > U+14CA     c ᓀ -> ᓊ
-  U+14C2 + [T_LONG_DOT] > U+14C3  c ᓂ -> ᓃ
-  U+14C4 + [T_LONG_DOT] > U+14C5  c ᓄ -> ᓅ
-  U+14C7 + [T_LONG_DOT] > U+14C8  c ᓇ -> ᓈ
-  U+14C7 + [T_W_DOT] > U+14CC     c ᓇ -> ᓌ
-  U+14C8 + [T_W_DOT] > U+14CE     c ᓈ -> ᓎ
-  U+14CC + [T_LONG_DOT] > U+14CE  c ᓌ -> ᓎ
-  U+14ED + [T_W_DOT] > U+14F7     c ᓭ -> ᓷ
-  U+14EF + [T_LONG_DOT] > U+14F0  c ᓯ -> ᓰ
-  U+14EF + [T_W_DOT] > U+14F9     c ᓯ -> ᓹ
-  U+14F0 + [T_W_DOT] > U+14FB     c ᓰ -> ᓻ
-  U+14F1 + [T_LONG_DOT] > U+14F2  c ᓱ -> ᓲ
-  U+14F1 + [T_W_DOT] > U+14FD     c ᓱ -> ᓽ
-  U+14F2 + [T_W_DOT] > U+14FF     c ᓲ -> ᓿ
-  U+14F4 + [T_LONG_DOT] > U+14F5  c ᓴ -> ᓵ
-  U+14F4 + [T_W_DOT] > U+1501     c ᓴ -> ᔁ
-  U+14F5 + [T_W_DOT] > U+1503     c ᓵ -> ᔃ
-  U+14F9 + [T_LONG_DOT] > U+14FB  c ᓹ -> ᓻ
-  U+14FD + [T_LONG_DOT] > U+14FF  c ᓽ -> ᓿ
-  U+1501 + [T_LONG_DOT] > U+1503  c ᔁ -> ᔃ
-  U+1526 + [T_W_DOT] > U+1530     c ᔦ -> ᔰ
-  U+1528 + [T_LONG_DOT] > U+1529  c ᔨ -> ᔩ
-  U+1528 + [T_W_DOT] > U+1532     c ᔨ -> ᔲ
-  U+1529 + [T_W_DOT] > U+1534     c ᔩ -> ᔴ
-  U+152A + [T_LONG_DOT] > U+152B  c ᔪ -> ᔫ
-  U+152A + [T_W_DOT] > U+1536     c ᔪ -> ᔶ
-  U+152B + [T_W_DOT] > U+1538     c ᔫ -> ᔸ
-  U+152D + [T_LONG_DOT] > U+152E  c ᔭ -> ᔮ
-  U+152D + [T_W_DOT] > U+153A     c ᔭ -> ᔺ
-  U+152E + [T_W_DOT] > U+153C     c ᔮ -> ᔼ
-  U+1532 + [T_LONG_DOT] > U+1534  c ᔲ -> ᔴ
-  U+1536 + [T_LONG_DOT] > U+1538  c ᔶ -> ᔸ
-  U+153A + [T_LONG_DOT] > U+153C  c ᔺ -> ᔼ
+store(withoutW) 'ᐁᐃᐄᐅᐆᐊᐋᐯᐱᐲᐳᐴᐸᐹᑌᑎᑏᑐᑑᑕᑖᑫᑭᑮᑯᑰᑲᑳᒉᒋᒌᒍᒎᒐᒑᒣᒥᒦᒧᒨᒪᒫᓀᓇᓈᓭᓯᓰᓱᓲᓴᓵᔦᔨᔩᔪᔫᔭᔮ'
+store(withW) 'ᐍᐏᐑᐓᐕᐘᐚᐻᐽᐿᑁᑃᑅᑇᑘᑚᑜᑞᑠᑢᑤᑵᑷᑹᑻᑽᑿᒁᒓᒕᒗᒙᒛᒝᒟᒭᒯᒱᒳᒵᒷᒹᓊᓌᓎᓷᓹᓻᓽᓿᔁᔃᔰᔲᔴᔶᔸᔺᔼ'
+store(withoutLong) 'ᐃᐅᐊᐏᐓᐘᐱᐳᐸᐽᑁᑅᑎᑐᑕᑚᑞᑢᑭᑯᑲᑷᑻᑿᒋᒍᒐᒕᒙᒝᒥᒧᒪᒯᒳᒷᓂᓄᓇᓌᓯᓱᓴᓹᓽᔁᔨᔪᔭᔲᔶᔺ'
+store(withLong) 'ᐄᐆᐋᐑᐕᐚᐲᐴᐹᐿᑃᑇᑏᑑᑖᑜᑠᑤᑮᑰᑳᑹᑽᒁᒌᒎᒑᒗᒛᒟᒦᒨᒫᒱᒵᒹᓃᓅᓈᓎᓰᓲᓵᓻᓿᔃᔩᔫᔮᔴᔸᔼ'
+
+  any(withoutW) + [T_W_DOT1] > index(withW, 1)
+  any(withoutW) + [T_W_DOT2] > index(withW, 1)
+  any(withoutLong) + [T_LONG_DOT1] > index(withLong, 1)
+  any(withoutLong) + [T_LONG_DOT2] > index(withLong, 1)
 
 
 c --- END OF TOUCH LAYOUT RULES ---
