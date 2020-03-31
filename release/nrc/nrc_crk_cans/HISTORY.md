@@ -2,6 +2,7 @@ nrc_crk_cans Keyboard Change History
 ====================================
 
 1.1.0 (30 Mar 2020)
+-------------------
 
  - Change: numeric layer layout (digits and symbols) completely revamped
  - Added <kbd>«</kbd> and <kbd>»</kbd> as preferred quotation mark punctuation 
