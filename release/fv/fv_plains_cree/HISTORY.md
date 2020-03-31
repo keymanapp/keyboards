@@ -7,7 +7,8 @@
 * Change: moved ᐦ (h) to top-right corner; less likely to hit it instead of backspace
 * Change: moved frequently used ᕽ (hk) to default layer, under ᕽ (hk)
 * Change: place backspace on second row from the bottom to be consistent with other touch layouts
-* Change: place w in bottom row
+* Change: place ᐤ (w) next to w diacritic key 
+* Change: make spacebar wider
 * Change: moved th- keys (for Woods Cree) to shift layer — unused in Plains Cree
 * Change: better labels for keys that insert long diacritic and w diacritic
 * Change: moved full-stop key to numeric layout, as punctuation is seldom used when texting in Cree
