@@ -3,7 +3,7 @@
 
 """
 Generates KMN rules for all syllabics sequences with the
-[T_LONG_DOTn] and [T_W_DOTn] keys.
+[T_LONG_DOT] and [T_W_DOT] keys.
 
 This script requires Python 3.6+.
 """
@@ -106,8 +106,5 @@ print(f"store(withLong) '{''.join(with_long_store)}'")
 
 print()
 
-for key in ("[T_W_DOT1]", "[T_W_DOT2]"):
-    print(f"  any(withoutW) + {key} > index(withW, 1)")
-
-for key in ("[T_LONG_DOT1]", "[T_LONG_DOT2]"):
-    print(f"  any(withoutLong) + {key} > index(withLong, 1)")
+print(f"  any(withoutW) + [T_W_DOT] > index(withW, 1)")
+print(f"  any(withoutLong) + [T_LONG_DOT] > index(withLong, 1)")
