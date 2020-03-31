@@ -12,9 +12,16 @@ group(main) using keys
 
 c --- START OF TOUCH LAYOUT RULES ---
 
+  U+1401 + [T_W_DOT] > U+140D     c ᐁ -> ᐍ
   U+1403 + [T_LONG_DOT] > U+1404  c ᐃ -> ᐄ
+  U+1403 + [T_W_DOT] > U+140F     c ᐃ -> ᐏ
+  U+1404 + [T_W_DOT] > U+1411     c ᐄ -> ᐑ
   U+1405 + [T_LONG_DOT] > U+1406  c ᐅ -> ᐆ
+  U+1405 + [T_W_DOT] > U+1413     c ᐅ -> ᐓ
+  U+1406 + [T_W_DOT] > U+1415     c ᐆ -> ᐕ
   U+140A + [T_LONG_DOT] > U+140B  c ᐊ -> ᐋ
+  U+140A + [T_W_DOT] > U+1418     c ᐊ -> ᐘ
+  U+140B + [T_W_DOT] > U+141A     c ᐋ -> ᐚ
   U+140F + [T_LONG_DOT] > U+1411  c ᐏ -> ᐑ
   U+1413 + [T_LONG_DOT] > U+1415  c ᐓ -> ᐕ
   U+1418 + [T_LONG_DOT] > U+141A  c ᐘ -> ᐚ
