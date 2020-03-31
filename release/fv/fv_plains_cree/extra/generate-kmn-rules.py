@@ -64,6 +64,12 @@ with open("./syllabics.tsv", "r", encoding="UTF-8") as f:
 
         consonant = entry["consonant"] or None
         has_w = to_bool(entry["has.w"])
+
+        # Fix vowels not getting w:
+        if consonant == "w":
+            consonant = None
+            has_w = True
+
         vowel = without_diacritic(entry["vowel"])
         is_long = to_bool(entry["has.long.vowel"])
 
