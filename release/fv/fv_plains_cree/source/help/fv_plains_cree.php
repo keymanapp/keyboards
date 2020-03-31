@@ -57,4 +57,3 @@ This keyboard is for writing <b>ᓀᐦᐃᔭᐍᐏᐣ</b> (Plains Cree syllabics
 
 <h2>Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift numeric'></div>
-</div>
