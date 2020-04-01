@@ -1,11 +1,11 @@
 ᓀᐦᐃᔭᐍᐏᐣ Change History
 ============================
 
-10.0 (31 Mar 2020)
+10.0 (1 Apr 2020)
 ------------------
 * Change: revamped numeric/symbols layer to match `nrc_crk_cans` v1.1.0
 * Change: moved ᐦ (h) to top-right corner; less likely to hit it instead of backspace
-* Change: moved frequently used ᕽ (hk) to default layer, under ᕽ (hk)
+* Change: moved frequently used ᕽ (hk) to default layer, under ᐦ (h)
 * Change: place backspace on second row from the bottom to be consistent with other touch layouts
 * Change: place ᐤ (w) next to w diacritic key 
 * Change: make spacebar wider
