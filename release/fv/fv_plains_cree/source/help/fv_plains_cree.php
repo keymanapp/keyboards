@@ -6,6 +6,7 @@
 table.keyboard-layer {
   margin: 12px;
   border-collapse:collapse;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, Gadugi, Euphemia, "Euphemia UCAS", "Aboriginal Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"}
 }
 table.keyboard-layer,
 table.keyboard-layer td,
@@ -17,7 +18,6 @@ table.keyboard-layer td {
 }
 td.keyboard-layer__special { background-color: #fcc; }
 td.keyboard-layer__empty { background-color: #888; }
-.lang2 {font-family: "Gadugi", "Euphemia UCAS", "Euphemia", "Aboriginal Sans", sans-serif}
 END;
 
   require_once('header.php');
