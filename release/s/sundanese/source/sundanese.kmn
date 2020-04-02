@@ -1,16 +1,17 @@
 ﻿c This keyboard layout does not include old Sundanese character listed on Unicode.
 store(&NAME) 'Sunda Baku'
 store(&COPYRIGHT) '© 2020 Ilham Nurwansah'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '1.0.3'
 store(&BITMAP) 'sundanese.ico'
 store(&TARGETS) 'windows macosx linux web'
 store(&KMW_HELPTEXT) 'https://kairaga.com/font-sunda/keyboard/help'
 store(&MESSAGE) 'Keyboard for Official Sundanese Script '
 store(&VISUALKEYBOARD) 'sundanese.kvks'
+store(&LAYOUTFILE) 'sundanese.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
-+ [K_BKSLASH] > '᮫'
++ [K_BKSLASH] > '\'
 + [SHIFT K_BKSLASH] > '|'
 + [SHIFT K_QUOTE] > '"'
 + [SHIFT K_SLASH] > '?'
@@ -89,3 +90,13 @@ group(main) using keys
 + [K_3] > '᮳'
 + [K_2] > '᮲'
 + [K_1] > '᮱'
++ [T_new_473] > '{'
++ [T_new_561] > '}'
++ [T_new_734] > '\'
++ [t_new_778] > '['
++ [t_new_866] > ']'
++ [T_new_996] > ';'
++ [T_new_1420] > 'Rp' 
++ [T_new_1468] > '$' 
++ [T_new_1517] > '~'
++ [T_new_1567] > '€' 
