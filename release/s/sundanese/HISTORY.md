@@ -9,7 +9,7 @@ Sunda Baku Keyboard Change History
 * Improvement on layout for PC and on screen keyboard. 
 
 1.0.1 (18 February 2020)
-*Added mobile layout. 
+* Added mobile layout. 
 
 1.0 (4 February 2020)
-*Created by Ilham Nurwansah
+* Created by Ilham Nurwansah.
