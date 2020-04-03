@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.102.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Clavier du Mali (Qwerty)</Name>
-    <Copyright URL="">© 2004-2018 SIL Mali</Copyright>
+    <Copyright URL="">© 2004-2020 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -44,12 +44,6 @@
       <Description>Keyboard Clavier du Mali (Qwerty)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>welcome\style.css</Name>
-      <Description>File style.css</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.css</FileType>
     </File>
     <File>
       <Name>..\build\sil_mali_qwerty.js</Name>
@@ -105,41 +99,77 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>welcome\mali_all.png</Name>
+      <Description>File mali_all.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\mali_shift.png</Name>
+      <Description>File mali_shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\TableauTouchesQWertybw.pdf</Name>
+      <Description>File TableauTouchesQWertybw.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>welcome\TableauTouchesQWertyCouleur.pdf</Name>
+      <Description>File TableauTouchesQWertyCouleur.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Clavier du Mali (Qwerty)</Name>
       <ID>sil_mali_qwerty</ID>
-      <Version>3.3</Version>
+      <Version>4.0</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\charis_sil_mali\CharisSILMali-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis_sil_mali\CharisSILMali-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bm-Latn">Bamanankan</Language>
+        <Language ID="bbo-Latn">Northern Bobo Madaré (Latin)</Language>
         <Language ID="bmq-Latn">Bomu</Language>
+        <Language ID="boo-Latn">Tiemacèwè Bozo (Latin)</Language>
         <Language ID="boz-Latn">Bozo, Tieyaxo</Language>
+        <Language ID="bwx-Latn">Bu-Nao Bunu (Latin)</Language>
         <Language ID="bze-Latn">Bozo, Jenaama</Language>
+        <Language ID="bzx-Latn">Kɛlɛngaxo Bozo (Latin)</Language>
+        <Language ID="dba-Latn">Bangime (Latin)</Language>
+        <Language ID="dbu-Latn">Bondum Dom Dogon (Latin)</Language>
         <Language ID="dds-Latn">Dogon, Donno So</Language>
+        <Language ID="djm-Latn">Jamsay Dogon (Latin)</Language>
         <Language ID="dsq-Latn">Tadaksahak</Language>
+        <Language ID="dtk-Latn">Tene Kan Dogon (Latin)</Language>
         <Language ID="dtm-Latn">Dogon, Tomo Kan</Language>
         <Language ID="dts-Latn">Dogon, Toro So</Language>
+        <Language ID="dtt-Latn">Toro Tegu Dogon (Latin)</Language>
         <Language ID="dux-Latn">Duungooma</Language>
+        <Language ID="emk-Latn">Eastern Maninkakan (Latin)</Language>
         <Language ID="ffm-Latn">Fulfulde, Maasina</Language>
+        <Language ID="fuc-Latn">Pulaar (Latin)</Language>
+        <Language ID="fuf-Latn">Pular (Latin)</Language>
+        <Language ID="fuh-Latn">Western Niger Fulfulde (Latin)</Language>
         <Language ID="hmb-Latn">Songhay, Humburi Senni</Language>
         <Language ID="jow-Latn">Jowulu</Language>
         <Language ID="kao-Latn">Xaasongaxango</Language>
         <Language ID="khq-Latn">Songhay, Koyra Chiini</Language>
+        <Language ID="mlq-Latn">Western Maninkakan (Latin)</Language>
         <Language ID="mwk-Latn">Maninkakan, Kita</Language>
         <Language ID="myk-Latn">Sénoufo, Mamara</Language>
+        <Language ID="seb-Latn">Shempire Senoufo (Latin)</Language>
         <Language ID="ses-Latn">Songhay, Koyraboro Senni</Language>
         <Language ID="shz-Latn">Sénoufo, Syenara</Language>
         <Language ID="snk-Latn">Soninke</Language>
         <Language ID="spp-Latn">Sénoufo, Supyire</Language>
         <Language ID="taq-Latn">Tamasheq</Language>
-        <Language ID="bzx-Latn">Kɛlɛngaxo Bozo (Latin)</Language>
-        <Language ID="boo-Latn">Tiemacèwè Bozo (Latin)</Language>
-        <Language ID="dba-Latn">Bangime (Latin)</Language>
-        <Language ID="dbu-Latn">Bondum Dom Dogon (Latin)</Language>
-        <Language ID="dtt-Latn">Toro Tegu Dogon (Latin)</Language>
-        <Language ID="fuc-Latn">Pulaar (Latin)</Language>
-        <Language ID="fuf-Latn">Pular (Latin)</Language>
+        <Language ID="tmh">Tamashek</Language>
+        <Language ID="ttq-Latn">Tawallammat Tamajaq (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
