@@ -1,0 +1,119 @@
+﻿c To type in Indonesian language. This is a basic keyboard with no special letters. The touch layout have some modification.
+c 
+c Untuk mengetik bahasa Indonesia. Ini adalah papan ketik dasar tanpa huruf khusus. Tampilan untuk gawai memiliki beberapa modifikasi.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Indonesia'
+store(&VISUALKEYBOARD) 'indonesia.kvks'
+store(&BITMAP) 'indonesia.ico'
+store(&COPYRIGHT) '© 2020 Benny Lin'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&MESSAGE) 'Indonesian basic keyboard'
+store(&LAYOUTFILE) 'indonesia.keyman-touch-layout'
+store(&KMW_HELPTEXT) 'readme.htm'
+
+store(controls) "ABCDEFGHIJKLMNOOPQRSTUVWXYZ\<>;_,/'"
+store(symbols) "`~!@#$%^&*()-_=+[{]}\|;:,<.>/?'" "'"
+store(numbers) "1234567890"
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+if(&platform = 'touch') + any(controls) > use(Touch)
+c if(&platform = 'touch') + any(symbols) > use(Touch)
+
+c space and custom-space button
++ [K_SPACE] > U+0020
++ [T_SPACE] > U+0020
+c if(&layer = 'symbols') + ' ' > ' ' set(&layer = "default") c symbol followed by space
+                                                           c  = back to the letters
+
+c new sentece markers
+'.' + [K_SPACE] > '.' ' ' set(&layer = "shift") c full stop = new sentence.
+'?' + [K_SPACE] > '?' ' ' set(&layer = "shift") c after question = new sentence.
+'!' + [K_SPACE] > '!' ' ' set(&layer = "shift") c after exclamation = new sentence.
+' ' + [K_SPACE] > '.' ' ' set(&layer = "shift") c double space = full stop,
+                                                c start with capital letter
+                
+c button rotation 1: "z", "x", "q"
+"z" + [K_Z] > "x"
+"x" + [K_Z] > "q"
+"q" + [K_Z] > "z"
+"Z" + [K_Z] > "x"
+"X" + [K_Z] > "q"
+"Q" + [K_Z] > "z"
+
+c this is for the physical keyboard rule
+"z" + [SHIFT K_Z] > "X"
+"x" + [SHIFT K_Z] > "Q"
+"q" + [SHIFT K_Z] > "Z"
+"Z" + [SHIFT K_Z] > "X"
+"X" + [SHIFT K_Z] > "Q"
+"Q" + [SHIFT K_Z] > "Z"
+
+"z" + [CAPS K_Z] > "X"
+"x" + [CAPS K_Z] > "Q"
+"q" + [CAPS K_Z] > "Z"
+"Z" + [CAPS K_Z] > "X"
+"X" + [CAPS K_Z] > "Q"
+"Q" + [CAPS K_Z] > "Z"
+
+c custom keys for touch layout
++ [T_NG] > 'n' 'g'
++ [T_NY] > 'n' 'y'
++ [SHIFT T_NG] > 'N' 'g' set(&layer = "default")
++ [SHIFT T_NY] > 'N' 'y' set(&layer = "default")
++ [SHIFT T_NG2] > 'N' 'G' c ALL CAPS ('capital' layer)
++ [SHIFT T_NY2] > 'N' 'Y' c ALL CAPS ('capital' layer)
++ [T_COM] > '.' 'c' 'o' 'm'
++ [T_ORG] > '.' 'o' 'r' 'g'
++ [T_COID] > '.' 'c' 'o' '.' 'i' 'd'
+
+if(&layer = 'symbols') + any(symbols) > index(symbols, 2) set(&layer = "default")
+
+c I can't seem to make any of these lines work: <numbers> + ' ' then go to default layer
+c if(&layer = 'symbols') any(numbers) + ' ' > index(numbers, 2) ' ' set(&layer = "default")
+c if(&layer = 'symbols') "1" + " " > "1" " " set(&layer = "default")
+c "1" + " " > "1" " " set(&layer = "default")
+
+group(Touch) using keys
+
+c button rotation 2: ",", "?", "!"
+"," + "," > "?"
+"?" + "," > "!"
+"!" + "," > ","
+
+c button rotation 3: "/", "(", ")"
+"/" + "/" > "("
+"(" + "/" > ")"
+")" + "/" > "/"
+
+c button rotation 4: "'", ":", '"'
+"'" + "'" > ":"
+":" + "'" > '"'
+'"' + "'" > "'"
+
+if(&layer = 'shift') "z" + "Z" > "X" set(&layer = "default")
+if(&layer = 'shift') "x" + "Z" > "Q" set(&layer = "default")
+if(&layer = 'shift') "q" + "Z" > "Z" set(&layer = "default")
+if(&layer = 'shift') "Z" + "Z" > "X" set(&layer = "default")
+if(&layer = 'shift') "X" + "Z" > "Q" set(&layer = "default")
+if(&layer = 'shift') "Q" + "Z" > "Z" set(&layer = "default")
+if(&layer = 'shiftwithnumbers') "z" + "Z" > "X" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "x" + "Z" > "Q" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "q" + "Z" > "Z" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "Z" + "Z" > "X" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "X" + "Z" > "Q" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "Q" + "Z" > "Z" set(&layer = "withnumbers")
+
+"z" + "Z" > "X"
+"x" + "Z" > "Q"
+"q" + "Z" > "Z"
+"Z" + "Z" > "X"
+"X" + "Z" > "Q"
+"Q" + "Z" > "Z"
+
+if(&layer = 'shift') + any(controls) > index(controls, 2) set(&layer = "default")
+if(&layer = 'shiftwithnumbers') + any(controls) > index(controls, 2) set(&layer = "withnumbers")

@@ -1,0 +1,36 @@
+Indonesia keyboard
+Papan ketik Indonesia
+=====================
+© 2020 Benny Lin
+
+Version 1.0
+Versi 1.0
+
+Description
+Deskripsi
+-----------
+
+To type in Indonesian language. This is a basic keyboard with no special letters.
+
+Untuk mengetik bahasa Indonesia. Ini adalah papan ketik dasar tanpa huruf khusus.
+
+Links
+Pranala
+-------
+
+https://github.com/bennylin/keyboards
+
+Supported Platforms
+Sistem yang didukung
+--------------------
+ * Windows
+ * macOS
+ * Linux
+ * Web
+ * iPhone
+ * iPad
+ * Android phone
+ * Android tablet
+ * Mobile devices
+ * Desktop devices
+ * Tablet devices
