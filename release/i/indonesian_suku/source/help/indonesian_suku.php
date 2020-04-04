@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Indonesian Basic Keyboard Help';
-  $pagetitle = 'Indonesian Basic Keyboard Help';
+  $pagename = 'Indonesian-Suku Keyboard Help';
+  $pagetitle = 'Indonesian-Suku Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 
@@ -26,7 +26,7 @@ Other than that, this keyboard also designed to provide support for Indonesian l
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
 
