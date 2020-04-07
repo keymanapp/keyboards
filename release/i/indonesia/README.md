@@ -18,7 +18,11 @@ Links
 Pranala
 -------
 
-https://github.com/bennylin/keyboards
+Download keyboard (Unduh papan ketik):
+* https://keyman.com/keyboards/indonesia
+
+Feedback (Umpan balik):
+* https://github.com/bennylin/keyboards
 
 Supported Platforms
 Sistem yang didukung
