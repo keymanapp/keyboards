@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This script builds a single keyboard package for the FirstVoices app.
 set -e
 set -u
 
@@ -44,19 +44,22 @@ for key in "$@"; do
   fi
 done
 
-# For each keyboard in the fv/ folder, if a .kmx exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
+# For each keyboard in the following folders:
+# fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
+# If a .kmx or .js exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
 # The fonts which are shared across the packages are already listed in fv_all.kps.in.
 # If fonts need changing, manually update the file.
 
 FILE_LINES=
 KEYBOARD_LINES=
 
-for keyboard in ../../fv/*/ ; do
+for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../../basic/basic_kbdcan/ ; do
   id=$(basename "$keyboard")
+  group=$(basename $(dirname $keyboard))
+
+  # Only interested in keyboards with a .kmx / .js
   
-  # Only interested in keyboards with a .kmx
-  
-  if [[ ! -f $keyboard/build/$id.kmx ]]; then continue; fi
+  if [[ ! -f $keyboard/build/$id.kmx ]] && [[ ! -f $keyboard/build/$id.js ]]; then continue; fi
 
   echo "Extracting $id"
   
@@ -69,16 +72,27 @@ for keyboard in ../../fv/*/ ; do
   langname=${kpsdata[3]}
   
   # Build a file entry
-  
-  FILE_LINES_0='
-    <File>
-      <Name>..\..\..\fv\'"$id"'\build\'"$id"'.kmx</Name>
-      <Description>File '"$id"'.kmx</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>'
-
-  FILE_LINES="$FILE_LINES$FILE_LINES_0"
+  FILE_LINES_0=''
+  FILE_LINES_1=''
+  if [ -f $keyboard/build/$id.kmx ]; then
+    FILE_LINES_0='
+      <File>
+        <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.kmx</Name>
+        <Description>File '"$id"'.kmx</Description>
+        <CopyLocation>0</CopyLocation>
+        <FileType>.kmx</FileType>
+      </File>'
+  fi
+  if [ -f $keyboard/build/$id.js ]; then
+    FILE_LINES_1='
+      <File>
+        <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.js</Name>
+        <Description>File '"$id"'.js</Description>
+        <CopyLocation>0</CopyLocation>
+        <FileType>.js</FileType>
+      </File>'
+  fi
+  FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
   
   # Build a keyboard entry
     
