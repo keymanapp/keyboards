@@ -13,7 +13,7 @@ applications.  Simply type the pinyin using tone numbers
 and as soon as a number is typed, the syllable will be 
 changed to the accented form.</p>
 
-<p>You may enter either u: or v for ü.</p>
+<p>You may enter either u: or v for &uuml;.</p>
 
 <p>The font that is used must include all of the accented 
 vowels required by pinyin, at the correct Unicode code points.</p>

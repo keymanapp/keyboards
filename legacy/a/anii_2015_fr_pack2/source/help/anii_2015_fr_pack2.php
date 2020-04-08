@@ -14,6 +14,4 @@ on websites) and not least as a touch-keyboard on Android and iOS devices (table
 <h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
-</div>
-
+	<p><a href="Layout.png"><img class="keyboard" src="Layout.png" alt="Layout" /></a></p>
