@@ -18,8 +18,8 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 
 Links
 -----
-* Home: https://keyman.com/keyboards/rac_pashto
-* Web:  https://keymanweb.com/#haz,Keyboard_rac_hazaragi
+* Home: https://keyman.com/keyboards/rac_hazaragi
+* Web:  https://keymanweb.com/#haz-Arab,Keyboard_rac_hazaragi
 * Help: https://help.keyman.com/keyboard/rac_hazaragi
 * Contact: Rehmat Aziz Chitrali linguist and researcher rachitrali@yahoo.com
 
