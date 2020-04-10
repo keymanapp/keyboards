@@ -46,68 +46,68 @@ if(&layer = 'shift') ' ' + [T_SPACE] > ' ' ' ' c normal double space
 if(&layer = 'default') ' ' + [T_SPACE2] > '.' ' ' set(&layer = "shift2")
 if(&layer = 'shift2') ' ' + [T_SPACE2] > ' ' ' '
 
-+ [T_1] > U+200B c zero-width space
++ [T_1] > U+200D c zero-width joiner
 
 c These button rotation works for touch device.
 + [T_2] > "a"
 "a" + [T_2] > "b"
 "b" + [T_2] > "c"
 + [SHIFT T_2] > "A"
-"A" + [T_2] > "B"
-"B" + [T_2] > "C"
+"A" + [SHIFT T_2] > "B"
+"B" + [SHIFT T_2] > "C"
 
 + [T_3] > "d"
 "d" + [T_3] > "e"
 "e" + [T_3] > "f"
 + [SHIFT T_3] > "D"
-"D" + [T_3] > "E"
-"E" + [T_3] > "F"
+"D" + [SHIFT T_3] > "E"
+"E" + [SHIFT T_3] > "F"
 
 + [T_4] > "g"
 "g" + [T_4] > "h"
 "h" + [T_4] > "i"
 + [SHIFT T_4] > "G"
-"G" + [T_4] > "H"
-"H" + [T_4] > "I"
+"G" + [SHIFT T_4] > "H"
+"H" + [SHIFT T_4] > "I"
 
 + [T_5] > "j"
 "j" + [T_5] > "k"
 "k" + [T_5] > "l"
 + [SHIFT T_5] > "J"
-"J" + [T_5] > "K"
-"K" + [T_5] > "L"
+"J" + [SHIFT T_5] > "K"
+"K" + [SHIFT T_5] > "L"
 
 + [T_6] > "m"
 "m" + [T_6] > "n"
 "n" + [T_6] > "o"
 + [SHIFT T_6] > "M"
-"M" + [T_6] > "N"
-"N" + [T_6] > "O"
+"M" + [SHIFT T_6] > "N"
+"N" + [SHIFT T_6] > "O"
 
 + [T_7] > "p"
 "p" + [T_7] > "q"
 "q" + [T_7] > "r"
 "r" + [T_7] > "s"
 + [SHIFT T_7] > "P"
-"P" + [T_7] > "Q"
-"Q" + [T_7] > "R"
-"R" + [T_7] > "S"
+"P" + [SHIFT T_7] > "Q"
+"Q" + [SHIFT T_7] > "R"
+"R" + [SHIFT T_7] > "S"
 
 + [T_8] > "t"
 "t" + [T_8] > "u"
 "u" + [T_8] > "v"
 + [SHIFT T_8] > "T"
-"T" + [T_8] > "U"
-"U" + [T_8] > "V"
+"T" + [SHIFT T_8] > "U"
+"U" + [SHIFT T_8] > "V"
 
 + [T_9] > "w"
 "w" + [T_9] > "x"
 "x" + [T_9] > "y"
 "y" + [T_9] > "z"
 + [SHIFT T_9] > "W"
-"W" + [T_9] > "X"
-"X" + [T_9] > "Y"
-"Y" + [T_9] > "Z"
+"W" + [SHIFT T_9] > "X"
+"X" + [SHIFT T_9] > "Y"
+"Y" + [SHIFT T_9] > "Z"
 
 c custom keys for touch layout
 + [T_COM] > '.' 'c' 'o' 'm'
