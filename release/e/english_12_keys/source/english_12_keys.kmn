@@ -1,0 +1,142 @@
+﻿c 12 keys numpad keyboard, modernized.
+c 
+c https://en.wikipedia.org/wiki/E.161
+c 
+c Benefit: Large keys! For people with big fingers, visual impairment, or just want to have a nonstalgia.
+
+store(&VERSION) '10.0'
+store(&NAME) 'English 12-Keys Keyboard'
+store(&VISUALKEYBOARD) 'english_12_keys.kvks'
+store(&BITMAP) 'english_12_keys.ico'
+store(&COPYRIGHT) '© 2020 Benny Lin'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&MESSAGE) 'English 12-Keys Numpad Keyboard'
+store(&LAYOUTFILE) 'english_12_keys.keyman-touch-layout'
+store(&KMW_HELPTEXT) 'readme.htm'
+
+store(controls) "ABCDEFGHIJKLMNOOPQRSTUVWXYZ\<>;_,/'"
+store(symbols) "`~!@#$%^&*()-_=+[{]}\|;:,<.>/?'" "'"
+store(numbers) "1234567890"
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+if(&platform = 'touch') + any(controls) > use(Touch)
+c if(&platform = 'touch') + any(symbols) > use(Touch)
+
+c space and custom-space button
++ [K_SPACE] > U+0020
++ [T_SPACE] > U+0020
++ [T_SPACE2] > U+0020
+c if(&layer = 'symbols') + ' ' > ' ' set(&layer = "default") c symbol followed by space
+                                                           c  = back to the letters
+
+c new sentece markers
+'.' + [T_SPACE] > '.' ' ' set(&layer = "shift") c full stop = new sentence.
+'.' + [T_SPACE2] > '.' ' ' set(&layer = "shift2")
+'?' + [T_SPACE] > '?' ' ' set(&layer = "shift") c after question = new sentence.
+'?' + [T_SPACE2] > '?' ' ' set(&layer = "shift2")
+'!' + [T_SPACE] > '!' ' ' set(&layer = "shift") c after exclamation = new sentence.
+'!' + [T_SPACE2] > '!' ' ' set(&layer = "shift2")
+if(&layer = 'qwerty') ' ' + [T_SPACE] > '.' ' ' set(&layer = "shift") c double space = full stop,
+                                                                      c start with capital letter
+if(&layer = 'shift') ' ' + [T_SPACE] > ' ' ' ' c normal double space
+if(&layer = 'default') ' ' + [T_SPACE2] > '.' ' ' set(&layer = "shift2")
+if(&layer = 'shift2') ' ' + [T_SPACE2] > ' ' ' '
+
++ [T_1] > U+200B c zero-width space
+
+c These button rotation works for touch device.
++ [T_2] > "a"
+"a" + [T_2] > "b"
+"b" + [T_2] > "c"
++ [SHIFT T_2] > "A"
+"A" + [T_2] > "B"
+"B" + [T_2] > "C"
+
++ [T_3] > "d"
+"d" + [T_3] > "e"
+"e" + [T_3] > "f"
++ [SHIFT T_3] > "D"
+"D" + [T_3] > "E"
+"E" + [T_3] > "F"
+
++ [T_4] > "g"
+"g" + [T_4] > "h"
+"h" + [T_4] > "i"
++ [SHIFT T_4] > "G"
+"G" + [T_4] > "H"
+"H" + [T_4] > "I"
+
++ [T_5] > "j"
+"j" + [T_5] > "k"
+"k" + [T_5] > "l"
++ [SHIFT T_5] > "J"
+"J" + [T_5] > "K"
+"K" + [T_5] > "L"
+
++ [T_6] > "m"
+"m" + [T_6] > "n"
+"n" + [T_6] > "o"
++ [SHIFT T_6] > "M"
+"M" + [T_6] > "N"
+"N" + [T_6] > "O"
+
++ [T_7] > "p"
+"p" + [T_7] > "q"
+"q" + [T_7] > "r"
+"r" + [T_7] > "s"
++ [SHIFT T_7] > "P"
+"P" + [T_7] > "Q"
+"Q" + [T_7] > "R"
+"R" + [T_7] > "S"
+
++ [T_8] > "t"
+"t" + [T_8] > "u"
+"u" + [T_8] > "v"
++ [SHIFT T_8] > "T"
+"T" + [T_8] > "U"
+"U" + [T_8] > "V"
+
++ [T_9] > "w"
+"w" + [T_9] > "x"
+"x" + [T_9] > "y"
+"y" + [T_9] > "z"
++ [SHIFT T_9] > "W"
+"W" + [T_9] > "X"
+"X" + [T_9] > "Y"
+"Y" + [T_9] > "Z"
+
+c custom keys for touch layout
++ [T_COM] > '.' 'c' 'o' 'm'
++ [T_ORG] > '.' 'o' 'r' 'g'
+
+if(&layer = 'symbols') + any(symbols) > index(symbols, 2) set(&layer = "default")
+
+c I can't seem to make any of these lines work: <numbers> + ' ' then go to default layer
+c if(&layer = 'symbols') any(numbers) + ' ' > index(numbers, 2) ' ' set(&layer = "default")
+c if(&layer = 'symbols') "1" + " " > "1" " " set(&layer = "default")
+c "1" + " " > "1" " " set(&layer = "default")
+
+group(Touch) using keys
+
+c button rotation 2: ",", "?", "!"
+"," + "," > "?"
+"?" + "," > "!"
+"!" + "," > ","
+
+c button rotation 3: "/", "(", ")"
+"/" + "/" > "("
+"(" + "/" > ")"
+")" + "/" > "/"
+
+c button rotation 4: "'", ":", '"'
+"'" + "'" > ":"
+":" + "'" > '"'
+'"' + "'" > "'"
+
+if(&layer = 'shift') + any(controls) > index(controls, 2) set(&layer = "qwerty")
+if(&layer = 'shiftwithnumbers') + any(controls) > index(controls, 2) set(&layer = "withnumbers")
+c if(&layer = 'shift2') + any(controls) > index(controls, 2) set(&layer = "default")
