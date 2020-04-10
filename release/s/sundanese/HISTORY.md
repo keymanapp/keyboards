@@ -1,8 +1,11 @@
 Sunda Baku Keyboard Change History
 
-1.0.3 (2 April 2020)
+1.0.3 (10 April 2020)
 * Improvement on mobile layout (keys reposition and layers rearrangement).    
-* Added character ᮃ (a) for blank key of the On Screen Keyboard in normal position. 
+* Updated font Kairaga regular to version 2.0
+* Added character ᮃ (a) for blank key of the Onscreen Keyboard on default layer.
+* Added longpress key on ᮪ with  ᮫ (virama) to shape conjoint glyphs. 
+* Added layer for Sundanese numeric and symbols --> |᮱|.  
 
 1.0.2. (5 March 2020)
 * Mobile layout dropped. 
