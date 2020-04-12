@@ -1,12 +1,14 @@
 ﻿c This keyboard layout does not include old Sundanese character listed on Unicode.
+store(&VERSION) "10.0"
 store(&NAME) 'Sunda Baku'
 store(&COPYRIGHT) '© 2020 Ilham Nurwansah'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '1.0.3'
 store(&BITMAP) 'sundanese.ico'
-store(&TARGETS) 'windows macosx linux web'
 store(&KMW_HELPTEXT) 'https://kairaga.com/font-sunda/keyboard/help'
 store(&MESSAGE) 'Keyboard for Official Sundanese Script '
 store(&VISUALKEYBOARD) 'sundanese.kvks'
+store(&LAYOUTFILE) 'sundanese.keyman-touch-layout'
+store(&TARGETS) 'any'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -68,6 +70,7 @@ group(main) using keys
 + [K_F] > 'ᮖ'
 + [K_D] > 'ᮓ'
 + [K_S] > 'ᮞ'
++ [K_A] > 'ᮃ'
 + [K_LBRKT] > 'ᮦ'
 + [K_P] > 'ᮕ'
 + [K_O] > 'ᮧ'
@@ -89,3 +92,15 @@ group(main) using keys
 + [K_3] > '᮳'
 + [K_2] > '᮲'
 + [K_1] > '᮱'
++ [T_new_473] > '{'
++ [T_new_561] > '}'
++ [t_new_778] > '['
++ [t_new_866] > ']'
++ [T_new_996] > ';'
++ [T_new_1420] > 'Rp' 
++ [T_new_1468] > '$' 
++ [T_new_1517] > '~'
++ [T_new_1567] > '€' 
++ [T_new_215] > '᮫'
++ [T_new_317] > '\'
++ [T_new_417] > '—'
