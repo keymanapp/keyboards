@@ -13,10 +13,13 @@ Links
 -------
 
 Download keyboard :
-* https://keyman.com/keyboards/english-12-keys
+* https://keyman.com/keyboards/english_12_keys
 
 Feedback:
 * https://github.com/bennylin/keyboards
+
+Home:
+* https://bennylin.github.io/keyboards
 
 Supported Platforms
 --------------------
