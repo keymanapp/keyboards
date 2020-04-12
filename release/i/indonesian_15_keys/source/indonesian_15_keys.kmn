@@ -1,0 +1,180 @@
+﻿c 12 keys numpad keyboard, modernized and adapted for Indonesian.
+c 
+c https://en.wikipedia.org/wiki/E.161
+c 
+c Solely for touch layout. Physical layout are regular qwerty.
+c 
+c Benefit: Large keys! For people with big fingers, visual impairment, or just want to have a nonstalgia.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Indonesian 15-Keys Keyboard'
+store(&VISUALKEYBOARD) 'indonesian_15_keys.kvks'
+store(&BITMAP) 'indonesian_15_keys.ico'
+store(&COPYRIGHT) '© 2020 Benny Lin'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&MESSAGE) 'Indonesian 15-Keys Numpad Keyboard'
+store(&LAYOUTFILE) 'indonesian_15_keys.keyman-touch-layout'
+store(&KMW_HELPTEXT) 'readme.htm'
+
+store(controls) "ABCDEFGHIJKLMNOOPQRSTUVWXYZ\<>;_,/'"
+store(symbols) "`~!@#$%^&*()-_=+[{]}\|;:,<.>/?'" "'"
+store(numbers) "1234567890"
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+if(&platform = 'touch') + any(controls) > use(Touch)
+c if(&platform = 'touch') + any(symbols) > use(Touch)
+
+c space and custom-space button
++ [K_SPACE] > U+0020
++ [T_SPACE] > U+0020
++ [T_SPACE2] > U+0020
+c if(&layer = 'symbols') + ' ' > ' ' set(&layer = "default") c symbol followed by space
+                                                           c  = back to the letters
+
+c new sentece markers
+'.' + [T_SPACE] > '.' ' ' set(&layer = "shift") c full stop = new sentence.
+'.' + [T_SPACE2] > '.' ' ' set(&layer = "shift2")
+'?' + [T_SPACE] > '?' ' ' set(&layer = "shift") c after question = new sentence.
+'?' + [T_SPACE2] > '?' ' ' set(&layer = "shift2")
+'!' + [T_SPACE] > '!' ' ' set(&layer = "shift") c after exclamation = new sentence.
+'!' + [T_SPACE2] > '!' ' ' set(&layer = "shift2")
+if(&layer = 'qwerty') ' ' + [T_SPACE] > '.' ' ' set(&layer = "shift") c double space = full stop,
+                                                                      c start with capital letter
+if(&layer = 'default') ' ' + [T_SPACE2] > '. ' set(&layer = "shift2")
+if(&layer = 'shift') ' ' + [T_SPACE] > '  ' c normal double space
+if(&layer = 'shift2') ' ' + [T_SPACE2] > '  '
+
++ [T_1] > U+200D c zero-width joiner
+
+c These button rotation works for touch device.
++ [T_2] > "a"
+"a" + [T_2] > "b"
+"b" + [T_2] > "c"
++ [SHIFT T_2] > "A"
+"A" + [SHIFT T_2] > "B"
+"B" + [SHIFT T_2] > "C"
+
++ [T_3] > "d"
+"d" + [T_3] > "e"
+"e" + [T_3] > "f"
++ [SHIFT T_3] > "D"
+"D" + [SHIFT T_3] > "E"
+"E" + [SHIFT T_3] > "F"
+
++ [T_4] > "g"
+"g" + [T_4] > "h"
+"h" + [T_4] > "i"
++ [SHIFT T_4] > "G"
+"G" + [SHIFT T_4] > "H"
+"H" + [SHIFT T_4] > "I"
+
++ [T_5] > "j"
+"j" + [T_5] > "k"
+"k" + [T_5] > "l"
++ [SHIFT T_5] > "J"
+"J" + [SHIFT T_5] > "K"
+"K" + [SHIFT T_5] > "L"
+
++ [T_6] > "m"
+"m" + [T_6] > "n"
+"n" + [T_6] > "o"
++ [SHIFT T_6] > "M"
+"M" + [SHIFT T_6] > "N"
+"N" + [SHIFT T_6] > "O"
+
++ [T_7] > "p"
+"p" + [T_7] > "r"
+"r" + [T_7] > "s"
++ [SHIFT T_7] > "P"
+"P" + [SHIFT T_7] > "R"
+"R" + [SHIFT T_7] > "S"
+
++ [T_8] > "t"
+"t" + [T_8] > "u"
+"u" + [T_8] > "v"
++ [SHIFT T_8] > "T"
+"T" + [SHIFT T_8] > "U"
+"U" + [SHIFT T_8] > "V"
+
++ [T_9] > "w"
+"w" + [T_9] > "y"
+"y" + [T_9] > "z"
++ [SHIFT T_9] > "W"
+"W" + [SHIFT T_9] > "Y"
+"Y" + [SHIFT T_9] > "Z"
+
++ [T_XQ] > 'x'
+"x" + [T_XQ] > "q"
++ [SHIFT T_XQ] > "X"
+"X" + [SHIFT T_XQ] > "Q"
+
+"z" + [K_Z] > "x"
+"x" + [K_Z] > "q"
+"q" + [K_Z] > "z"
+"Z" + [K_Z] > "x"
+"X" + [K_Z] > "q"
+"Q" + [K_Z] > "z"
+
+c custom keys for touch layout
++ [T_NG] > 'ng'
++ [T_NY] > 'ny'
++ [SHIFT T_NG] > 'Ng' set(&layer = "default")
++ [SHIFT T_NY] > 'Ny' set(&layer = "default")
++ [SHIFT T_NG2] > 'NG' c ALL CAPS ('capital' layer)
++ [SHIFT T_NY2] > 'NY' c ALL CAPS ('capital' layer)
++ [T_RP] > 'Rp '
++ [T_COM] > '.com'
++ [T_ORG] > '.org'
++ [T_COID] > '.co.id'
+
+if(&layer = 'symbols') + any(symbols) > index(symbols, 2) set(&layer = "default")
+
+c I can't seem to make any of these lines work: <numbers> + ' ' then go to default layer
+c if(&layer = 'symbols') any(numbers) + ' ' > index(numbers, 2) ' ' set(&layer = "default")
+c if(&layer = 'symbols') "1" + " " > "1" " " set(&layer = "default")
+c "1" + " " > "1" " " set(&layer = "default")
+
+group(Touch) using keys
+
+c button rotation 2: ",", "?", "!"
+"," + "," > "?"
+"?" + "," > "!"
+"!" + "," > ","
+
+c button rotation 3: "/", "(", ")"
+"/" + "/" > "("
+"(" + "/" > ")"
+")" + "/" > "/"
+
+c button rotation 4: "'", ":", '"'
+"'" + "'" > ":"
+":" + "'" > '"'
+'"' + "'" > "'"
+
+if(&layer = 'shift') "z" + "Z" > "X" set(&layer = "default")
+if(&layer = 'shift') "x" + "Z" > "Q" set(&layer = "default")
+if(&layer = 'shift') "q" + "Z" > "Z" set(&layer = "default")
+if(&layer = 'shift') "Z" + "Z" > "X" set(&layer = "default")
+if(&layer = 'shift') "X" + "Z" > "Q" set(&layer = "default")
+if(&layer = 'shift') "Q" + "Z" > "Z" set(&layer = "default")
+if(&layer = 'shiftwithnumbers') "z" + "Z" > "X" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "x" + "Z" > "Q" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "q" + "Z" > "Z" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "Z" + "Z" > "X" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "X" + "Z" > "Q" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "Q" + "Z" > "Z" set(&layer = "withnumbers")
+
+"z" + "Z" > "X"
+"x" + "Z" > "Q"
+"q" + "Z" > "Z"
+"Z" + "Z" > "X"
+"X" + "Z" > "Q"
+"Q" + "Z" > "Z"
+
+if(&layer = 'shift') + any(controls) > index(controls, 2) set(&layer = "qwerty")
+if(&layer = 'shiftwithnumbers') + any(controls) > index(controls, 2) set(&layer = "withnumbers")
+c if(&layer = 'shift2') + any(controls) > index(controls, 2) set(&layer = "default")
