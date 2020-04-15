@@ -1,0 +1,285 @@
+store(&VERSION) '10.0'
+store(&NAME) 'Yorùbá with Dot'
+store(&COPYRIGHT) '© 2012-2020 SIL International'
+store(&KEYBOARDVERSION) '1.4'
+store(&BITMAP) 'sil_yoruba_dot.ico'
+store(&VISUALKEYBOARD) 'sil_yoruba_dot.kvks'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'sil_yoruba_dot.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys 
+c ==========
+c ==Stores==
+c ==========
+c Letters
+store(base) 'a'    'e'    'i'    'o'    'u'    'A'    'E'    'I'    'O'    'U'    
+store(grv)  U+00E0 U+00E8 U+00EC U+00F2 U+00F9 U+00C0 U+00C8 U+00CC U+00D2 U+00D9  
+store(act)  U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D3 U+00DA 
+store(crc)  U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB 
+store(crn)  U+01CE U+011B U+01D0 U+01D2 U+01D4 U+01CD U+011A U+01CF U+01D1 U+01D3 
+store(mac)  U+0101 U+0113 U+012B U+014D U+016B U+0100 U+0112 U+012A U+014C U+016A 
+
+store(grv.all) outs(base) outs(grv) outs(grv) outs(grv) outs(grv) outs(grv)
+store(act.all) outs(base) outs(act) outs(act) outs(act) outs(act) outs(act)
+store(crc.all) outs(base) outs(crc) outs(crc) outs(crc) outs(crc) outs(crc)
+store(crn.all) outs(base) outs(crn) outs(crn) outs(crn) outs(crn) outs(crn)
+store(mac.all) outs(base) outs(mac) outs(mac) outs(mac) outs(mac) outs(mac)
+
+store(not.grv) outs(grv) outs(base) outs(act) outs(crc) outs(crn) outs(mac)
+store(not.act) outs(act) outs(base) outs(grv) outs(crc) outs(crn) outs(mac)
+store(not.crc) outs(crc) outs(base) outs(grv) outs(act) outs(crn) outs(mac)
+store(not.crn) outs(crn) outs(base) outs(grv) outs(act) outs(crc) outs(mac) 
+store(not.mac) outs(mac) outs(base) outs(grv) outs(act) outs(crc) outs(crn)
+
+store(dot)  U+1EB9 U+1ECD U+1EB8 U+1ECC     
+store(nsl)  'm'    'n'    'M'    'N' 
+store(dot+nsl) outs(dot) outs(nsl)
+
+c Accents
+store(ac.grv) U+0300
+store(ac.act) U+0301
+store(ac.crc) U+0302
+store(ac.crn) U+030C
+store(ac.mac) U+0304
+ 
+store(ac.all) outs(ac.grv) outs(ac.act) outs(ac.crc) outs(ac.crn) outs(ac.mac) 
+ 
+store(ac.grv.all) nul outs(ac.grv) outs(ac.grv) outs(ac.grv) outs(ac.grv)
+store(ac.act.all) nul outs(ac.act) outs(ac.act) outs(ac.act) outs(ac.act)
+store(ac.crc.all) nul outs(ac.crc) outs(ac.crc) outs(ac.crc) outs(ac.crc)
+store(ac.crn.all) nul outs(ac.crn) outs(ac.crn) outs(ac.crn) outs(ac.crn)
+store(ac.mac.all) nul outs(ac.mac) outs(ac.mac) outs(ac.mac) outs(ac.mac) 
+
+store(not.ac.grv) outs(ac.grv) outs(ac.act) outs(ac.crc) outs(ac.crn) outs(ac.mac)
+store(not.ac.act) outs(ac.act) outs(ac.grv) outs(ac.crc) outs(ac.crn) outs(ac.mac)
+store(not.ac.crc) outs(ac.crc) outs(ac.grv) outs(ac.act) outs(ac.crn) outs(ac.mac)
+store(not.ac.crn) outs(ac.crn) outs(ac.grv) outs(ac.act) outs(ac.crc) outs(ac.mac)
+store(not.ac.mac) outs(ac.mac) outs(ac.grv) outs(ac.act) outs(ac.crc) outs(ac.crn) 
+ 
+c Keys
+store(key.grv) '['
+store(key.act) ']'
+store(key.crc) '{'
+store(key.crn) '}'
+store(key.mac) '|'   
+      
+store(key.all) outs(key.grv) outs(key.act) outs(key.crc) outs(key.crn) outs(key.mac)
+
+c ================
+c ==Basic Output==
+c ================
+c Unshifted QWERTY US
++ '=' > '='
++ '-' > '-'
++ '0' > '0'
++ '9' > '9'
++ '8' > '8'
++ '7' > '7'
++ '6' > '6'
++ '5' > '5'
++ '4' > '4'
++ '3' > '3'
++ '2' > '2'
++ '1' > '1'
++ '`' > dk(un) c types underlying character  
+dk(un) + '`' > '`'
+
++ '\' > '\'
++ ']' > '´'  c acute accent
+dk(un) + ']' > ']'
++ '[' > '`'  c grave accent
+dk(un) + '[' > '['
++ 'p' > 'p'
++ 'o' > 'o'
++ 'i' > 'i'
++ 'u' > 'u'
++ 'y' > 'y'
++ 't' > 't'
++ 'r' > 'r'
++ 'e' > 'e'
++ 'w' > 'w'
++ 'q' > 'gb'
+dk(un) + 'q' > 'q'
+'gb' + [K_BKSP] > nul
+
++ "'" > "'"
++ ';' > ';'
++ 'l' > 'l'
++ 'k' > 'k'
++ 'j' > 'j'
++ 'h' > 'h'
++ 'g' > 'g'
++ 'f' > 'f'
++ 'd' > 'd'
++ 's' > 's'
++ 'a' > 'a'
+
++ '/' > '/'
++ '.' > '.'
++ ',' > ','
++ 'm' > 'm'
++ 'n' > 'n'
++ 'b' > 'b'
++ 'v' > U+1EB9 
+dk(un) + 'v' > 'v' 
++ 'c' > 'c'
++ 'x' > U+1ECD 
+dk(un) + 'x' > 'x' 
++ 'z' > U+1E63  
+dk(un) + 'z' > 'z'
+
+c Shifted QWERTY US
++ '+' > '+'
++ '_' > '_'
++ ')' > ')'
++ '(' > '('
++ '*' > '*'
++ '&' > '&'
++ '^' > U+20A6  
+dk(un) + '^' > '^'
++ '%' > '%'
++ '$' > '$'
++ '#' > '#'
++ '@' > '@'
++ '!' > '!'
++ '~' > '~'
+
++ '|' > U+02C9 c macron accent
+dk(un) + '|' > '|'
++ '}' > U+02C7  c caron accent
+dk(un) + '}' > '}'
++ '{' > U+02C6 c circumflex accent
+dk(un) + '{' > '{'
++ 'P' > 'P'
++ 'O' > 'O'
++ 'I' > 'I'
++ 'U' > 'U'
++ 'Y' > 'Y'
++ 'T' > 'T'
++ 'R' > 'R'
++ 'E' > 'E'
++ 'W' > 'W'
++ 'Q' > 'GB'
+dk(un) + 'Q' > 'Q'
+'GB' + [K_BKSP] > nul
+
++ '"' > '"'
++ ':' > ':'
++ 'L' > 'L'
++ 'K' > 'K'
++ 'J' > 'J'
++ 'H' > 'H'
++ 'G' > 'G'
++ 'F' > 'F'
++ 'D' > 'D'
++ 'S' > 'S'
++ 'A' > 'A'
+
++ '?' > '?'
++ '>' > '>'
++ '<' > '<'
++ 'M' > 'M'
++ 'N' > 'N'
++ 'B' > 'B'
++ 'V' > U+1EB8 
+dk(un) + 'V' > 'V' 
++ 'C' > 'C'
++ 'X' > U+1ECC  
+dk(un) + 'X' > 'X'
++ 'Z' > U+1E62      
+dk(un) + 'Z' > 'Z'
+
+c Additional: QWERTY UK
+c + '¬' > '¬' 
+c + '£' > '£'      
+
+c RALT
++ [RALT K_Q] > "q"
++ [RALT K_Z] > "z"
++ [RALT K_X] > "x"
++ [RALT K_C] > "c"
++ [RALT K_LBRKT] > "["
++ [RALT K_RBRKT] > "]"
++ [SHIFT RALT  K_Q] > "Q"
++ [SHIFT RALT K_Z] > "Z"
++ [SHIFT RALT  K_X] > "X"
++ [SHIFT RALT K_C] > "C"
++ [SHIFT RALT K_LBRKT] > "{"
++ [SHIFT RALT K_RBRKT] > "}"
++ [SHIFT RALT K_BKSLASH] > "|"
+c ===========
+c ==Accents==
+c ===========
+c Backspace
+any(dot+nsl) any(ac.all) + [K_BKSP] > nul
+     
+c General
+any(dot+nsl) + any(key.all) > index(dot+nsl, 1) index(ac.all, 2)   
+
+c Grave
+any(not.grv) + any(key.grv) > index(grv.all, 1)
+any(dot+nsl) any(not.ac.grv) + any(key.grv) > index(dot+nsl, 1) index(ac.grv.all, 2)
+
+c Acute
+any(not.act) + any(key.act) > index(act.all, 1)
+any(dot+nsl) any(not.ac.act) + any(key.act) > index(dot+nsl, 1) index(ac.act.all, 2)
+ 
+c Circumflex
+any(not.crc) + any(key.crc) > index(crc.all, 1)
+any(dot+nsl) any(not.ac.crc) + any(key.crc) > index(dot+nsl, 1) index(ac.crc.all, 2)
+  
+c Caron
+any(not.crn) + any(key.crn) > index(crn.all, 1)
+any(dot+nsl) any(not.ac.crn) + any(key.crn) > index(dot+nsl, 1) index(ac.crn.all, 2)
+
+c Macron
+any(not.mac) + any(key.mac) > index(mac.all, 1)
+any(dot+nsl) any(not.ac.mac) + any(key.mac) > index(dot+nsl, 1) index(ac.mac.all, 2)
+
+c ===========
+c ==Mobile Layout==
+c ===========
+c A
++ [T_1ECD_0300] > U+1ECD U+0300 c grave
++ [T_1ECD_0301] > U+1ECD U+0301 c acute
++ [T_1ECD_0302] > U+1ECD U+0302 c circumflex
++ [T_1ECD_030C] > U+1ECD U+030C c caron
++ [T_1ECD_0304] > U+1ECD U+0304 c macron
++ [SHIFT T_1ECC_0300] > U+1ECC U+0300 c grave
++ [SHIFT T_1ECC_0301] > U+1ECC U+0301 c acute
++ [SHIFT T_1ECC_0302] > U+1ECC U+0302 c circumflex
++ [SHIFT T_1ECC_030C] > U+1ECC U+030C c caron
++ [SHIFT T_1ECC_0304] > U+1ECC U+0304 c macron
+
+c E
++ [T_1EB9_0300] > U+1EB9 U+0300 c grave
++ [T_1EB9_0301] > U+1EB9 U+0301 c acute
++ [T_1EB9_0302] > U+1EB9 U+0302 c circumflex
++ [T_1EB9_030C] > U+1EB9 U+030C c caron
++ [T_1EB9_0304] > U+1EB9 U+0304 c macron
++ [SHIFT T_1EB8_0300] > U+1EB8 U+0300 c grave
++ [SHIFT T_1EB8_0301] > U+1EB8 U+0301 c acute
++ [SHIFT T_1EB8_0302] > U+1EB8 U+0302 c circumflex
++ [SHIFT T_1EB8_030C] > U+1EB8 U+030C c caron
++ [SHIFT T_1EB8_0304] > U+1EB8 U+0304 c macron
+
+c M
++ [T_006D_0300] > U+006D U+0300 c grave
++ [T_006D_0302] > U+006D U+0302 c circumflex
++ [T_006D_030C] > U+006D U+030C c caron
++ [T_006D_0304] > U+006D U+0304 c macron
++ [SHIFT T_004D_0300] > U+004D U+0300 c grave
++ [SHIFT T_004D_0302] > U+004D U+0302 c circumflex
++ [SHIFT T_004D_030C] > U+004D U+030C c caron
++ [SHIFT T_004D_0304] > U+004D U+0304 c macron
+
+c N
++ [T_006E_0302] > U+006E U+0302 c circumflex
++ [T_006E_0304] > U+006E U+0304 c macron
++ [SHIFT T_004E_0302] > U+004E U+0302 c circumflex
++ [SHIFT T_004E_0304] > U+004E U+0304 c macron
+
+
+c EOF
