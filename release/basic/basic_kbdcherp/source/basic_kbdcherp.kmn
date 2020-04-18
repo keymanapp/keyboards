@@ -19,6 +19,9 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+store(nul) "bBfFpPrRzZ"
++ any(nul) > nul
+
 + [K_SPACE] > U+0020
 
 + [K_0] > U+0030
@@ -182,122 +185,152 @@ match > use(deadkeys)
 
 group(deadkeys)
 
+c c
 store(dkf0063) U+0020 U+13a0
 store(dkt0063) U+13a7 U+13a7
 dk(0063) any(dkf0063) > index(dkt0063, 2)
 
+c C
 store(dkf0043) U+0020 U+13a0
 store(dkt0043) U+13a7 U+13a7
 dk(0043) any(dkf0043) > index(dkt0043, 2)
 
+c d
 store(dkf0064) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0064) U+13d3 U+13d3 U+13d5 U+13d7 U+13d9 U+13da U+13db
 dk(0064) any(dkf0064) > index(dkt0064, 2)
 
+c D
 store(dkf0044) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0044) U+13d3 U+13d3 U+13d5 U+13d7 U+13d9 U+13da U+13db
 dk(0044) any(dkf0044) > index(dkt0044, 2)
 
+c g
 store(dkf0067) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0067) U+13a6 U+13a6 U+13a8 U+13a9 U+13aa U+13ab U+13ac
 dk(0067) any(dkf0067) > index(dkt0067, 2)
 
+c G
 store(dkf0047) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0047) U+13a6 U+13a6 U+13a8 U+13a9 U+13aa U+13ab U+13ac
 dk(0047) any(dkf0047) > index(dkt0047, 2)
 
+c h
 store(dkf0068) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0068) U+13ad U+13ad U+13ae U+13af U+13b0 U+13b1 U+13b2
 dk(0068) any(dkf0068) > index(dkt0068, 2)
 
+c H
 store(dkf0048) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0048) U+13ad U+13ad U+13ae U+13af U+13b0 U+13b1 U+13b2
 dk(0048) any(dkf0048) > index(dkt0048, 2)
 
+c j
 store(dkf006a) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt006a) U+13e3 U+13e3 U+13e4 U+13e5 U+13e6 U+13e7 U+13e8
 dk(006a) any(dkf006a) > index(dkt006a, 2)
 
+c J
 store(dkf004a) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt004a) U+13e3 U+13e3 U+13e4 U+13e5 U+13e6 U+13e7 U+13e8
 dk(004a) any(dkf004a) > index(dkt004a, 2)
 
+c k
 store(dkf006b) U+0020 U+13a0 U+13a3
 store(dkt006b) U+13a7 U+13a7 U+13aa
 dk(006b) any(dkf006b) > index(dkt006b, 2)
 
+c K
 store(dkf004b) U+0020 U+13a0 U+13a3
 store(dkt004b) U+13a7 U+13a7 U+13aa
 dk(004b) any(dkf004b) > index(dkt004b, 2)
 
+c l
 store(dkf006c) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt006c) U+13b3 U+13b3 U+13b4 U+13b5 U+13b6 U+13b7 U+13b8
 dk(006c) any(dkf006c) > index(dkt006c, 2)
 
+c L
 store(dkf004c) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt004c) U+13b3 U+13b3 U+13b4 U+13b5 U+13b6 U+13b7 U+13b8
 dk(004c) any(dkf004c) > index(dkt004c, 2)
 
+c m
 store(dkf006d) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4
 store(dkt006d) U+13b9 U+13b9 U+13ba U+13bb U+13bc U+13bd
 dk(006d) any(dkf006d) > index(dkt006d, 2)
 
+c M
 store(dkf004d) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4
 store(dkt004d) U+13b9 U+13b9 U+13ba U+13bb U+13bc U+13bd
 dk(004d) any(dkf004d) > index(dkt004d, 2)
 
+c n
 store(dkf006e) U+0020 U+13a0 U+13a1 U+0068 U+0048 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt006e) U+13be U+13be U+13c1 U+13c0 U+13c0 U+13c2 U+13c3 U+13c4 U+13c5
 dk(006e) any(dkf006e) > index(dkt006e, 2)
 
+c N
 store(dkf004e) U+0020 U+13a0 U+13a1 U+0068 U+0048 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt004e) U+13be U+13be U+13c1 U+13c0 U+13c0 U+13c2 U+13c3 U+13c4 U+13c5
 dk(004e) any(dkf004e) > index(dkt004e, 2)
 
+c q
 store(dkf0071) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a5
 store(dkt0071) U+13ca U+13c6 U+13c7 U+13c8 U+13c9 U+13cb
 dk(0071) any(dkf0071) > index(dkt0071, 2)
 
+c Q
 store(dkf0051) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a5
 store(dkt0051) U+13ca U+13c6 U+13c7 U+13c8 U+13c9 U+13cb
 dk(0051) any(dkf0051) > index(dkt0051, 2)
 
+c s
 store(dkf0073) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5 U+0078 U+0058 U+0060
 store(dkt0073) U+13cd U+13cc U+13ce U+13cf U+13d0 U+13d1 U+13d2 U+13cd U+13cd U+13cd
 dk(0073) any(dkf0073) > index(dkt0073, 2)
 
+c S
 store(dkf0053) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5 U+0078 U+0058 U+0060
 store(dkt0053) U+13cd U+13cc U+13ce U+13cf U+13d0 U+13d1 U+13d2 U+13cd U+13cd U+13cd
 dk(0053) any(dkf0053) > index(dkt0053, 2)
 
+c t
 store(dkf0074) U+0020 U+13a0 U+13a1 U+13a2 U+13a4 U+13a5
 store(dkt0074) U+13d4 U+13d4 U+13d6 U+13d8 U+13da U+13db
 dk(0074) any(dkf0074) > index(dkt0074, 2)
 
+c T
 store(dkf0054) U+0020 U+13a0 U+13a1 U+13a2 U+13a4 U+13a5
 store(dkt0054) U+13d4 U+13d4 U+13d6 U+13d8 U+13da U+13db
 dk(0054) any(dkf0054) > index(dkt0054, 2)
 
+c w
 store(dkf0077) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0077) U+13e9 U+13e9 U+13ea U+13eb U+13ec U+13ed U+13ee
 dk(0077) any(dkf0077) > index(dkt0077, 2)
 
+c W
 store(dkf0057) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0057) U+13e9 U+13e9 U+13ea U+13eb U+13ec U+13ed U+13ee
 dk(0057) any(dkf0057) > index(dkt0057, 2)
 
+c x
 store(dkf0078) U+0020
 store(dkt0078) U+0078
 dk(0078) any(dkf0078) > index(dkt0078, 2)
 
+c X
 store(dkf0058) U+0020
 store(dkt0058) U+0058
 dk(0058) any(dkf0058) > index(dkt0058, 2)
 
+c y
 store(dkf0079) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0079) U+13ef U+13ef U+13f0 U+13f1 U+13f2 U+13f3 U+13f4
 dk(0079) any(dkf0079) > index(dkt0079, 2)
 
+c Y
 store(dkf0059) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
 store(dkt0059) U+13ef U+13ef U+13f0 U+13f1 U+13f2 U+13f3 U+13f4
 dk(0059) any(dkf0059) > index(dkt0059, 2)
