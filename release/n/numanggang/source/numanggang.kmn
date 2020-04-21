@@ -1,0 +1,19 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Numanggang'
+store(&COPYRIGHT) '© 2020 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'numanggang.kvks'
+store(&LAYOUTFILE) 'numanggang.keyman-touch-layout'
+store(&BITMAP) 'numanggang.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ ";" > "ŋ"
+"ŋ" + ";" > ";"
+";" + ";" > "ŋŋ"
++ "|" > "Ŋ"
+"Ŋ" + "|" > "|"
+"|" + "|" > "ŊŊ"
