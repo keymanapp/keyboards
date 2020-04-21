@@ -102,6 +102,11 @@ store(nul) "bBfFpPrRzZ"
 + [K_N] > dk(006e)
 + [SHIFT K_N] > dk(004e)
 
+dk(006e) + "h" > U+13c0
+dk(006e) + "H" > U+13c0
+dk(004e) + "h" > U+13c0
+dk(004e) + "H" > U+13c0
+
 + [NCAPS K_O] > U+13a3
 + [CAPS K_O] > U+006f
 + [NCAPS SHIFT K_O] > U+13a3
@@ -119,8 +124,14 @@ store(nul) "bBfFpPrRzZ"
 + [K_S] > dk(0073)
 + [SHIFT K_S] > dk(0053)
 
+dk(0073) + "x" > U+13cd
+dk(0073) + "X" > U+13cd
+dk(0053) + "x" > U+13cd
+dk(0053) + "X" > U+13cd
+
 + [K_T] > dk(0074)
 + [SHIFT K_T] > dk(0054)
+
 
 + [NCAPS K_U] > U+13a4
 + [CAPS K_U] > U+0075
@@ -266,13 +277,13 @@ store(dkt004d) U+13b9 U+13b9 U+13ba U+13bb U+13bc U+13bd
 dk(004d) any(dkf004d) > index(dkt004d, 2)
 
 c n
-store(dkf006e) U+0020 U+13a0 U+13a1 U+0068 U+0048 U+13a2 U+13a3 U+13a4 U+13a5
-store(dkt006e) U+13be U+13be U+13c1 U+13c0 U+13c0 U+13c2 U+13c3 U+13c4 U+13c5
+store(dkf006e) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
+store(dkt006e) U+13be U+13be U+13c1 U+13c2 U+13c3 U+13c4 U+13c5
 dk(006e) any(dkf006e) > index(dkt006e, 2)
 
 c N
-store(dkf004e) U+0020 U+13a0 U+13a1 U+0068 U+0048 U+13a2 U+13a3 U+13a4 U+13a5
-store(dkt004e) U+13be U+13be U+13c1 U+13c0 U+13c0 U+13c2 U+13c3 U+13c4 U+13c5
+store(dkf004e) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5
+store(dkt004e) U+13be U+13be U+13c1 U+13c2 U+13c3 U+13c4 U+13c5
 dk(004e) any(dkf004e) > index(dkt004e, 2)
 
 c q
@@ -286,14 +297,16 @@ store(dkt0051) U+13ca U+13c6 U+13c7 U+13c8 U+13c9 U+13cb
 dk(0051) any(dkf0051) > index(dkt0051, 2)
 
 c s
-store(dkf0073) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5 U+0078 U+0058 U+0060
-store(dkt0073) U+13cd U+13cc U+13ce U+13cf U+13d0 U+13d1 U+13d2 U+13cd U+13cd U+13cd
+store(dkf0073) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5 U+0060
+store(dkt0073) U+13cd U+13cc U+13ce U+13cf U+13d0 U+13d1 U+13d2 U+13cd
 dk(0073) any(dkf0073) > index(dkt0073, 2)
 
 c S
-store(dkf0053) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5 U+0078 U+0058 U+0060
-store(dkt0053) U+13cd U+13cc U+13ce U+13cf U+13d0 U+13d1 U+13d2 U+13cd U+13cd U+13cd
+
+store(dkf0053) U+0020 U+13a0 U+13a1 U+13a2 U+13a3 U+13a4 U+13a5 U+0060
+store(dkt0053) U+13cd U+13cc U+13ce U+13cf U+13d0 U+13d1 U+13d2 U+13cd
 dk(0053) any(dkf0053) > index(dkt0053, 2)
+
 
 c t
 store(dkf0074) U+0020 U+13a0 U+13a1 U+13a2 U+13a4 U+13a5
