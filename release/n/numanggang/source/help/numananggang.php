@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Inuktitut - Latin Basic Keyboard Help';
+  $pagename = 'Numanggang Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
@@ -16,7 +16,7 @@ Type the ; key a third time to get "ŋŋ".
 </p>
 <p>
 Type the | key to get the "Ŋ" character.
-Type the | key again to get the "Ŋ" character.
+Type the | key again to get the "|" character.
 Type the | key a third time to get "ŊŊ".
 </p>
 
@@ -25,4 +25,4 @@ Type the | key a third time to get "ŊŊ".
   <h2>Desktop layout</h2>
 	<div id='osk' data-states='default shift'></div>
   <h2>Touch layout</h2>
-	<div id='osk' data-states='default shift numeric'></div>
+	<div id='osk-phone' data-states='default shift numeric'></div>
