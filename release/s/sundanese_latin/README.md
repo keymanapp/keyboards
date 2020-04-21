@@ -1,4 +1,4 @@
-Sunda Latin
+Sundanese Latin
 =====================
 Copyright (c) 2020 Ilham Nurwansah
 
