@@ -12,6 +12,7 @@ Keyboard for typing Numanggang
 
 Links
 -----
+https://keyman.com/keyboards/numanggang
 
 Supported Platforms
 -------------------
