@@ -1,0 +1,68 @@
+﻿c version 2.0.01  14 Mar 2013
+c Emulates WinMac Dene keyboard but outputs Unicode characters as per the standard pioneered by
+c Chris Harvey (languagegeek.com) and further refined through consultation with stakeholders from
+c the Aboriginal communities in workshops held in Yellowknife Feb-March 2010
+c This keyboard is intended for online use where it is not feasable to install a system keyboard.
+c Installable system keyboards should be downloaded from
+c http://www.languagegeek.com/dene/keyboards/romdene.html#NWTDene
+c 
+c 
+store(&VERSION) '10.0'
+store(&NAME) 'Dene'
+store(&COPYRIGHT) '(c) 2010-2020 Jim Stauffer'
+store(&MESSAGE) 'Dene keyboard for Unicode Fonts'
+c store(&ETHNOLOGUECODE) 'dgr chp scs xsl gwi'
+store(&BITMAP) 'dene.ico'
+store(&VISUALKEYBOARD) 'dene.kvks'
+store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '2.1'
+begin Unicode > use(main)
+
+
+group(main) using keys   
++ [SHIFT K_BKQUOTE] > 'Q' c move q to tilde key
++ [K_BKQUOTE] > 'q'
++ [SHIFT K_RBRKT] > ':' c move colon to right bracket key
++ [K_RBRKT] > ';'
+c 
+c control overrides diacritics to output numbers (may be intercepted by software)
+c + [CTRL K_1] > '1'    note 1 & 9 are not used for diacritics - command disabled, F1 is often used as help shortcut
++ [CTRL K_2] > '2'
++ [CTRL K_3] > '3'
++ [CTRL K_4] > '4'
++ [CTRL K_5] > '5'
++ [CTRL K_6] > '6'
++ [CTRL K_7] > '7'
++ [CTRL K_8] > '8'
+c + [CTRL K_9] > '9'
+c 
++ U+0069 > U+0131 c switch latin small letter i to latin small letter dotless ı
+c 
++ [SHIFT K_COLON] > U+0141 c Latin Capital Letter L with Stroke
++ [K_COLON] > U+0142 c Latin Small Letter L with Stroke
++ [SHIFT K_LBRKT] > U+0241 c Latin Capital Letter Glottal Stop
++ [K_LBRKT] > U+0242 c Latin Small Letter Glottal Stop
++ [SHIFT K_Q] > U+018E c Latin Capital Letter Reversed E
++ [K_Q] > U+01DD c Latin Small Letter Turned E   
+c 
+c using number keys to add diacritics
++ [K_2] > 'E' U+0308 c Combining Diaeresis
++ [K_3] > 'e' U+0308 
++ [K_4] > U+0301 c Combining Accute Accent
++ [K_5] > U+0300 c Combining Grave Accent
++ [K_6] > U+0328 c Combining Ogonek
++ [K_7] > U+0328 U+0301 c stacked diacritics always have ogonek before accent
++ [K_8] > U+0328 U+0300
+c 
+c example of constraint - not yet implemented
+c "E" U+0308 + U+0300 > beep
+c 
+c Numeric keypad outputs numbers, not diacritics
++[K_NP2] > "2"
++[K_NP3] > "3"
++[K_NP4] > "4"
++[K_NP5] > "5"
++[K_NP6] > "6"
++[K_NP7] > "7"
++[K_NP8] > "8"
+c end of source code
