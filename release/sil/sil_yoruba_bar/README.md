@@ -30,6 +30,6 @@ Supported Platforms
 
 To Do
 -------------------
-* Add v and V tp RALT layer and remove cC
+* Add v and V to RALT layer and remove cC
 * On touch layout change output of | to produce \
 * On touch layout add these keys as a longpress to underscore: ^ ~ `
