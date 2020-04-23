@@ -1,7 +1,7 @@
 Dene keyboard
 ==============
 
-(c) 2010-2020 Jim Stauffer
+(c) 2013-2020 Jim Stauffer
 
 Version 2.1
 

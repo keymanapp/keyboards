@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-(c) 2010-2020 Jim Stauffer
+(c) 2013-2020 Jim Stauffer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
