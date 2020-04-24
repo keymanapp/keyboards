@@ -13,7 +13,7 @@ This keyboard includes an on screen keyboard which can be viewed by clicking on 
 Links
 -----
 * Home: https://kairaga.com/keyboard/sunda-latin
-* Help: https://kairaga.com/keyboard/sunda-latin.help
+* Help: https://kairaga.com/keyboard/sunda-latin/help
 * Contact: ilhamnurwansah@gmail.com
 
 Supported Platforms
