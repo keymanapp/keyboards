@@ -3,7 +3,7 @@ Rawang keyboard
 
 (c) 2007-2020 R.James
 
-Version 1.1
+Version 1.5
 
 Description
 -----------
