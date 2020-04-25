@@ -3,7 +3,7 @@ Korean RR Keyboard
 
 (c) 2010-2020 SIL International
 
-Version 1.0
+Version 1.1
 
 __DESCRIPTION__
 This keyboard is designed for entering the Korean language, supporting both the 
