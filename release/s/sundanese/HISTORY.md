@@ -1,5 +1,9 @@
 Sunda Baku Keyboard Change History
 
+1.0.4 (25 April 2020) 
+* Updated font Kairaga Regular to vesion 3.0 
+* Corrected keys on mobile layout 
+
 1.0.3 (10 April 2020)
 * Improvement on mobile layout (keys reposition and layers rearrangement).    
 * Updated font Kairaga regular to version 2.0
