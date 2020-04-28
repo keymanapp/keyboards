@@ -1,4 +1,4 @@
-c Turkmen keyboard for Keyman
+﻿c Turkmen keyboard for Keyman
 c for use with Unicode fonts in Windows 98 upwards
 c types in Cyrillic but using Windows and Unicode fonts
 c do NOT use with TimesCA
@@ -12,17 +12,18 @@ store(&VERSION) '10.0'
 store(&NAME) "Turkmen Cyrillic"
 store(&BITMAP) 'turkmen_cyrl.ico'
 store(&VISUALKEYBOARD) 'turkmen_cyrl.kvks'
-store(&COPYRIGHT) '� 2002-2020 David Gray'
+store(&COPYRIGHT) '© 2002-2020 David Gray'
 c store(&WINDOWSLANGUAGES) 'x0442'
 c store(&LANGUAGE) 'x0442'
 c store(&ETHNOLOGUECODE) 'tuk'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'turkmen_cyrl.keyman-touch-layout'
 c store(&WINDOWSLANGUAGES) 'x0442'
-store(&KEYBOARDVERSION) '1.2'
+store(&KEYBOARDVERSION) '1.3'
 
 begin UNICODE > use(Main)
 group(Main) using keys
+c ★
 
 + "w" > U+0432              c  v
 + "e" > U+0435              
@@ -74,86 +75,67 @@ group(Main) using keys
 '<' + '<' > U+00AB          c double chevron <
 '>' + '>' > U+00BB          c double chevron >    
 
-+ 'X' > U+04A2
-+ 'x' > U+04A3
-+ '|' > U+04D8
-+ '\' > U+04D9
-+ 'Q' > U+04E8
-+ 'q' > U+04E9
-+ '{' > U+04AE
-+ '[' > U+04AF
-+ '}' > U+0428
-+ ']' > U+0448
++ '`' > U+0436 c modified to match Latin
++ '~' > U+0416 c modified to match Latin
++ "^" > U+2116 c modified to match Latin
++ 'Q' > U+04D8 c modified to match Latin
++ 'q' > U+04D9 c modified to match Latin
++ '{' > U+04A2 c modified to match Latin
++ '[' > U+04A3 c modified to match Latin
++ '}' > U+04E8 c modified to match Latin
++ ']' > U+04E9 c modified to match Latin
++ '|' > U+0428 c modified to match Latin
++ '\' > U+0448 c modified to match Latin
++ 'X' > U+04AE c modified to match Latin
++ 'x' > U+04AF c modified to match Latin
+
 + 'J' > U+0496
 + 'j' > U+0497
 
 + ';' > deadkey(1)      c specifies deadkey
++ ':' > deadkey(1)      c specifies deadkey 
+deadkey(1) + '`' > '`'
+deadkey(1) + '~' > '~'
+
 deadkey(1) + ';' > ';'
+deadkey(1) + ':' > ':'
+deadkey(1) + '^' > '^'
 
-deadkey(1) + 'q' > U+044A
 deadkey(1) + 'e' > U+044D
-deadkey(1) + 'y' > U+0439
-deadkey(1) + 'u' > U+044E
-deadkey(1) + 'o' > U+0451
-deadkey(1) + '[' > '['
-deadkey(1) + ']' > ']'
-deadkey(1) + 'a' > U+044F
-deadkey(1) + 's' > U+0448
-deadkey(1) + 'j' > U+0436
-deadkey(1) + "'" > "'"
-deadkey(1) + 'x' > U+0449
-deadkey(1) + 'c' > U+0446
-deadkey(1) + 'v' > U+044C
-deadkey(1) + 'n' > U+04A3
-
-deadkey(1) + 'Q' > U+042A
 deadkey(1) + 'E' > U+042D
-deadkey(1) + 'Y' > U+0419
+
+deadkey(1) + 'u' > U+044E
 deadkey(1) + 'U' > U+042E 
+
+deadkey(1) + 'o' > U+0451
 deadkey(1) + 'O' > U+0401
-deadkey(1) + '{' > '{'
-deadkey(1) + '}' > '}'
+
+deadkey(1) + '\' > U+0449
+deadkey(1) + '|' > U+0429
+
+deadkey(1) + 'a' > U+044F
 deadkey(1) + 'A' > U+042F
-deadkey(1) + 'S' > U+0428
+
+deadkey(1) + 's' > U+0446
+deadkey(1) + 'S' > U+0426
+
+deadkey(1) + 'g' > U+044A
+deadkey(1) + 'G' > U+042A
+
+deadkey(1) + 'j' > U+0436
 deadkey(1) + 'J' > U+0416 
-deadkey(1) + "'" > "'"
-deadkey(1) + 'X' > U+0429
-deadkey(1) + 'C' > U+0426
+
+deadkey(1) + 'v' > U+044C
 deadkey(1) + 'V' > U+042C
+
+deadkey(1) + 'n' > U+04A3
 deadkey(1) + 'N' > U+04A2
 
-+ ':' > deadkey(2)      c specifies deadkey 
-deadkey(2) + ':' > ':'
+deadkey(1) + '[' > '['
+deadkey(1) + '{' > '{'
 
-deadkey(2) + 'q' > U+044A
-deadkey(2) + 'e' > U+044D
-deadkey(2) + 'y' > U+0439
-deadkey(2) + 'u' > U+044E
-deadkey(2) + 'o' > U+0451
-deadkey(2) + '[' > '['
-deadkey(2) + ']' > ']'
-deadkey(2) + 'a' > U+044F
-deadkey(2) + 's' > U+0448
-deadkey(2) + 'j' > U+0436
-deadkey(2) + "'" > "'"
-deadkey(2) + 'x' > U+0449
-deadkey(2) + 'c' > U+0446
-deadkey(2) + 'v' > U+044C
-deadkey(2) + 'n' > U+04A3
+deadkey(1) + ']' > ']'
+deadkey(1) + '}' > '}'
 
 
-deadkey(2) + 'Q' > U+042A
-deadkey(2) + 'E' > U+042D
-deadkey(2) + 'Y' > U+0419
-deadkey(2) + 'U' > U+042E 
-deadkey(2) + 'O' > U+0401
-deadkey(2) + '{' > '{'
-deadkey(2) + '}' > '}'
-deadkey(2) + 'A' > U+042F
-deadkey(2) + 'S' > U+0428
-deadkey(2) + 'J' > U+0416 
-deadkey(2) + "'" > "'"
-deadkey(2) + 'X' > U+0429
-deadkey(2) + 'C' > U+0426
-deadkey(2) + 'V' > U+042C
-deadkey(2) + 'N' > U+04A2
+
