@@ -14,3 +14,8 @@ Supported Platforms
  * Windows
  * macOS
  * Web
+
+
+__TO DO__
+Please see https://github.com/keymanapp/keyboards/issues/319 for discussion of adding a touch layout for this keyboard.
+The original discussion was for the "burmese02" keyboard, but that keyboard has been deprecated and replaced by this one.
