@@ -578,7 +578,7 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >ஷா</span><br/><span class='keys'>{t</span></td>
 		<td><span class='lang2' >ஷி</span><br/><span class='keys'>{h</span></td>
 		<td><span class='lang2' >ஷீ</span><br/><span class='keys'>{j</span></td>
-		<td><span class='lang2' >ஷு</span><br/><span class='keys'>{''</span></td>
+		<td><span class='lang2' >ஷு</span><br/><span class='keys'>{'</span></td>
 		<td><span class='lang2' >ஷூ</span><br/><span class='keys'>{^</span></td>
 		<td><span class='lang2' >ஷெ</span><br/><span class='keys'>{v</span></td>
 		<td><span class='lang2' >ஷே</span><br/><span class='keys'>{b</span></td>
@@ -604,20 +604,20 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >ஸௌ</span><br/><span class='keys'>Qv`</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
-		<td style='background-color:#dedede'><span class='lang2' >ஹ</span><br/><span class='keys'>[}]</span></td>
-		<td><span class='lang2' >ஹ்</span><br/><span class='keys'>[}]f</span></td>
-		<td><span class='lang2' >ஹ‍</span><br/><span class='keys'>[}]</span></td>
-		<td><span class='lang2' >ஹா</span><br/><span class='keys'>[}]t</span></td>
-		<td><span class='lang2' >ஹி</span><br/><span class='keys'>[}]h</span></td>
-		<td><span class='lang2' >ஹீ</span><br/><span class='keys'>[}]j</span></td>
-		<td><span class='lang2' >ஹு</span><br/><span class='keys'>[}]'</span></td>
-		<td><span class='lang2' >ஹூ</span><br/><span class='keys'>[}]^</span></td>
-		<td><span class='lang2' >ஹெ</span><br/><span class='keys'>[}]v</span></td>
-		<td><span class='lang2' >ஹே</span><br/><span class='keys'>[}]b</span></td>
-		<td><span class='lang2' >ஹை</span><br/><span class='keys'>[}]u</span></td>
-		<td><span class='lang2' >ஹொ</span><br/><span class='keys'>[}]*</span></td>
-		<td><span class='lang2' >ஹோ</span><br/><span class='keys'>[}]&amp;</span></td>
-		<td><span class='lang2' >ஹௌ</span><br/><span class='keys'>[}]v`</span></td>
+		<td style='background-color:#dedede'><span class='lang2' >ஹ</span><br/><span class='keys'>}</span></td>
+		<td><span class='lang2' >ஹ்</span><br/><span class='keys'>}f</span></td>
+		<td><span class='lang2' >ஹ‍</span><br/><span class='keys'>}</span></td>
+		<td><span class='lang2' >ஹா</span><br/><span class='keys'>}t</span></td>
+		<td><span class='lang2' >ஹி</span><br/><span class='keys'>}h</span></td>
+		<td><span class='lang2' >ஹீ</span><br/><span class='keys'>}j</span></td>
+		<td><span class='lang2' >ஹு</span><br/><span class='keys'>}'</span></td>
+		<td><span class='lang2' >ஹூ</span><br/><span class='keys'>}^</span></td>
+		<td><span class='lang2' >ஹெ</span><br/><span class='keys'>}v</span></td>
+		<td><span class='lang2' >ஹே</span><br/><span class='keys'>}b</span></td>
+		<td><span class='lang2' >ஹை</span><br/><span class='keys'>}u</span></td>
+		<td><span class='lang2' >ஹொ</span><br/><span class='keys'>}*</span></td>
+		<td><span class='lang2' >ஹோ</span><br/><span class='keys'>}&amp;</span></td>
+		<td><span class='lang2' >ஹௌ</span><br/><span class='keys'>}v`</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
 		<td style='background-color:#dedede'><span class='lang2' >க்ஷ</span><br/><span class='keys'>\</span></td>
