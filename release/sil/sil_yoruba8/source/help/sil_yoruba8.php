@@ -319,8 +319,10 @@ END;
   <p>This keyboard includes an On Screen Keyboard view for easy reference. The On Screen Keyboard displays best on a QWERTY US layout.</p>  
   </section>
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
-</div>
+	<h3>Default (unshifted)</h3>
+	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+	<h3>Shift</h3>
+	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
 
 
 
