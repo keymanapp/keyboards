@@ -156,12 +156,12 @@ This character is entered by typing <span class='keys'>|</span> (Shift+Vertical 
 	<tr style='text-align:center'>
 		<td></td><td class='lang2'>உ</td><td class='lang2'>கு</td><td><span class='keys'>G</span></td>
 		<td></td>
-		<td></td><td class='lang2'>உ</td><td class='lang2'>ஜு</td><td></td>
+		<td></td><td class='lang2'>உ</td><td class='lang2'>ஜு</td><td><span class='keys'>['</span></td>
 	</tr>
 	<tr style='text-align:center'>
 		<td></td><td class='lang2'>ஊ</td><td class='lang2'>கூ</td><td><span class='keys'>g^</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஊ</td><td class='lang2'>ஜூ</td><td></td>
+		<td></td><td class='lang2'>ஊ</td><td class='lang2'>ஜூ</td><td><span class='keys'>[^</span></td>
 	</tr>
 	<tr style='text-align:center'>
 		<td></td><td class='lang2'>எ</td><td class='lang2'>கெ</td><td><span class='keys'>gv</span></td>
@@ -405,7 +405,7 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >பௌ</span><br/><span class='keys'>kv`</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
-		<td style='background-color:#dedede'><span class='lang2' >ம</span><br/><span class='keys'>k</span></td>
+		<td style='background-color:#dedede'><span class='lang2' >ம</span><br/><span class='keys'>e</span></td>
 		<td><span class='lang2' >ம்</span><br/><span class='keys'>ef</span></td>
 		<td><span class='lang2' >ம</span><br/><span class='keys'>e</span></td>
 		<td><span class='lang2' >மா</span><br/><span class='keys'>et</span></td>
@@ -562,8 +562,8 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >ஜா</span><br/><span class='keys'>[t</span></td>
 		<td><span class='lang2' >ஜி</span><br/><span class='keys'>[h</span></td>
 		<td><span class='lang2' >ஜீ</span><br/><span class='keys'>[j</span></td>
-		<td><span class='lang2' >ஜு</span><br/> </td>
-		<td><span class='lang2' >ஜூ</span><br/> </td>
+		<td><span class='lang2' >ஜு</span><br/><span class='keys'>['</span></td>
+		<td><span class='lang2' >ஜூ</span><br/><span class='keys'>[^</span></td>
 		<td><span class='lang2' >ஜெ</span><br/><span class='keys'>[v</span></td>
 		<td><span class='lang2' >ஜே</span><br/><span class='keys'>[b</span></td>
 		<td><span class='lang2' >ஜை</span><br/><span class='keys'>[u</span></td>
@@ -578,8 +578,8 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >ஷா</span><br/><span class='keys'>{t</span></td>
 		<td><span class='lang2' >ஷி</span><br/><span class='keys'>{h</span></td>
 		<td><span class='lang2' >ஷீ</span><br/><span class='keys'>{j</span></td>
-		<td><span class='lang2' >ஷு</span><br/> </td>
-		<td><span class='lang2' >ஷூ</span><br/> </td>
+		<td><span class='lang2' >ஷு</span><br/><span class='keys'>{''</span></td>
+		<td><span class='lang2' >ஷூ</span><br/><span class='keys'>{^</span></td>
 		<td><span class='lang2' >ஷெ</span><br/><span class='keys'>{v</span></td>
 		<td><span class='lang2' >ஷே</span><br/><span class='keys'>{b</span></td>
 		<td><span class='lang2' >ஷை</span><br/><span class='keys'>{u</span></td>
@@ -594,8 +594,8 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >ஸா</span><br/><span class='keys'>Qt</span></td>
 		<td><span class='lang2' >ஸி</span><br/><span class='keys'>Qh</span></td>
 		<td><span class='lang2' >ஸீ</span><br/><span class='keys'>Qj</span></td>
-		<td><span class='lang2' >ஸு</span><br/> </td>
-		<td><span class='lang2' >ஸூ</span><br/> </td>
+		<td><span class='lang2' >ஸு</span><br/><span class='keys'>Q'</span></td>
+		<td><span class='lang2' >ஸூ</span><br/><span class='keys'>Q^</span></td>
 		<td><span class='lang2' >ஸெ</span><br/><span class='keys'>Qv</span></td>
 		<td><span class='lang2' >ஸே</span><br/><span class='keys'>Qt</span></td>
 		<td><span class='lang2' >ஸை</span><br/><span class='keys'>Qu</span></td>
@@ -610,8 +610,8 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >ஹா</span><br/><span class='keys'>[}]t</span></td>
 		<td><span class='lang2' >ஹி</span><br/><span class='keys'>[}]h</span></td>
 		<td><span class='lang2' >ஹீ</span><br/><span class='keys'>[}]j</span></td>
-		<td><span class='lang2' >ஹு</span><br/> </td>
-		<td><span class='lang2' >ஹூ</span><br/> </td>
+		<td><span class='lang2' >ஹு</span><br/><span class='keys'>[}]'</span></td>
+		<td><span class='lang2' >ஹூ</span><br/><span class='keys'>[}]^</span></td>
 		<td><span class='lang2' >ஹெ</span><br/><span class='keys'>[}]v</span></td>
 		<td><span class='lang2' >ஹே</span><br/><span class='keys'>[}]b</span></td>
 		<td><span class='lang2' >ஹை</span><br/><span class='keys'>[}]u</span></td>
@@ -626,8 +626,8 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 		<td><span class='lang2' >க்ஷா</span><br/><span class='keys'>\t</span></td>
 		<td><span class='lang2' >க்ஷி</span><br/><span class='keys'>\h</span></td>
 		<td><span class='lang2' >க்ஷீ</span><br/><span class='keys'>\j</span></td>
-		<td><span class='lang2' >க்ஷு</span><br/> </td>
-		<td><span class='lang2' >க்ஷூ</span><br/> </td>
+		<td><span class='lang2' >க்ஷு</span><br/><span class='keys'>\'</span></td>
+		<td><span class='lang2' >க்ஷூ</span><br/><span class='keys'>\^</span></td>
 		<td><span class='lang2' >க்ஷெ</span><br/><span class='keys'>\v</span></td>
 		<td><span class='lang2' >க்ஷே</span><br/><span class='keys'>\b</span></td>
 		<td><span class='lang2' >க்ஷை</span><br/><span class='keys'>\u</span></td>
@@ -653,3 +653,4 @@ This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges 
 
 
 <p style='margin:0px'>Keyboard &#169; 2008-2020 Visual Media and SIL International</p>
+
