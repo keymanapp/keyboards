@@ -1,14 +1,14 @@
 Obolo keyboard
 ==============
 
-©
+© 2020 Rogers Edeh
 
 Version 1.0.0
 
 Description
 -----------
 
-Quick Obolo generated from template
+Obolo Chwerty generated from template
 
 Links
 -----
