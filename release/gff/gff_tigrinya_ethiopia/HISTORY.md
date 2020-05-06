@@ -2,8 +2,8 @@
 
 1.3.10 (2020-05-06)
 -----------------------
+* Refinement of Touch Layout mappings (Beta 2)
 * Work around for issue: https://github.com/keymanapp/keyman/issues/1113
-* Some mapping refinements.
 
 1.3.9 (2020-03-17)
 -----------------------
