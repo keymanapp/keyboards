@@ -1,5 +1,10 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+1.3.10 (2020-05-06)
+-----------------------
+* Work around for issue: https://github.com/keymanapp/keyman/issues/1113
+* Some mapping refinements.
+
 1.3.9 (2020-03-17)
 -----------------------
 * Introduction of Touch Layout (Beta)
