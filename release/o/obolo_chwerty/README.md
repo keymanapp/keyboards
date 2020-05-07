@@ -8,7 +8,7 @@ Version 1.0.0
 Description
 -----------
 
-Obolo Chwerty generated from template
+Obolo Chwerty layout for typing Obolo language. In this layout, accents are typed after the base letters. So, simply tap the given letters and tap the appropriate accents to pace them on the letters.
 
 Links
 -----
