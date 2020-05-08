@@ -7,12 +7,12 @@ store(&VISUALKEYBOARD) 'obolo_chwerty.kvks'
 store(&LAYOUTFILE) 'obolo_chwerty.keyman-touch-layout'
 store(&MESSAGE) 'A simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
 store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
-store(&KMW_HELPFILE) 'obolo_chwerty_mobile-help.htm'
+store(&KMW_HELPFILE) 'obolo_chwerty-help.htm'
 
 begin Unicode > use(main)
 
 store(accentibles) 'aeiọoumnAEIỌOUMN'
-store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [CTRL SHIFT K_6] [CTRL SHIFT K_7] [CTRL SHIFT K_8] [CTRL SHIFT K_9]
+store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKSLASH] [SHIFT K_BKSLASH] [K_BKQUOTE] [SHIFT K_BKQUOTE]
 store(nasals) 'mnMN'
 store(nnas) [T_CCM] [T_CRN] [SHIFT T_CCM] [SHIFT T_CRN] [CTRL SHIFT K_6] [CTRL SHIFT K_7]
 store(vow) 'aeiouAEIOU'
@@ -24,10 +24,10 @@ store(acnasals) 'ḿńḾŃ'
 store(spguy) 'mnọMNỌ'
 store(spguyop) 'ḿǹộḾǸỘ'
 store(erase) [K_BKSP] [SHIFT K_BKSP] [ALT K_BKSP]
-store(gravekeys) [T_GRV] [SHIFT T_GRV] [CTRL SHIFT K_8]
-store(acutekeys) [T_ACU] [SHIFT T_ACU] [CTRL SHIFT K_9]
-store(circumflexkeys) [T_CCM] [SHIFT T_CCM] [CTRL SHIFT K_6]
-store(caronkeys) [T_CRN] [SHIFT T_CRN] [CTRL SHIFT K_7]
+store(gravekeys) [T_GRV] [SHIFT T_GRV] [K_BKQUOTE]
+store(acutekeys) [T_ACU] [SHIFT T_ACU] [K_BKSLASH]
+store(circumflexkeys) [T_CCM] [SHIFT T_CCM] [SHIFT K_BKQUOTE]
+store(caronkeys) [T_CRN] [SHIFT T_CRN] [SHIFT K_BKSLASH]
 
 group(main) using keys
 
@@ -61,6 +61,9 @@ dk(2) + [SHIFT K_X] > 'X'
 
 dk(1) + [K_C] > 'c'
 dk(2) + [SHIFT K_C] > 'C'
+
+dk(1) + [K_E] > 'ẹ'
+dk(2) + [SHIFT K_E] > 'Ẹ'
 
 dk(1) + [K_S] > 'ṣ'
 dk(2) + [SHIFT K_S] > 'Ṣ'
