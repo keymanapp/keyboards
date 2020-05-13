@@ -1,0 +1,26 @@
+﻿c Simplified Esperanto Keyboard for Keyman 10.0
+c
+c This keyboard program uses a simplified set of keys
+c for typing Esperanto special letters
+c
+c @author: Andrea Vaccari
+
+store(&VERSION) '10.0'
+store(&NAME) 'Esperanto'
+store(&COPYRIGHT) '© 2020 Andrea Vaccari'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any windows'
+store(&LAYOUTFILE) 'esperanto.keyman-touch-layout'
+store(&BITMAP) 'esperanto.ico'
+store(&KMW_EMBEDCSS) 'esperanto.css'
+store(&KMW_HELPFILE) 'esperanto-help.htm'
+store(&MnemonicLayout) "1"
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(defaultchars) "CcGgHhJjSsUu"
+store(specialchars) "ĈĉĜĝĤĥĴĵŜŝÛû"
+
+any(defaultchars) + "x" > index(specialchars, 1)
