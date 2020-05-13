@@ -22,26 +22,9 @@
   require_once('header.php');
 ?>
 
-<br/>
-<a href="#Overview">Overview</a><br/>
-<a href="#Using">Using this Keyboard</a><br/>
-<a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-<a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-<a style='margin-left:20px' href="#Examples">Examples</a><br/>
-<a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a style='margin-left:30px' href="#KeyboardChart">Complete Keyboard Reference Chart</a><br/>
-<a href="#Authorship">Authorship</a><br/>
-
-
-<div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
-the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
-
-<h2>Overview</h2>
 <p>
 This keyboard is designed for the Tamil language and based on the new Tamil typewriter layout.  The keyboard is designed for users who are familiar with both this layout and the Tamil script, and is intended for use with a normal QWERTY (English) keyboard.
 </p>
-</div>
 
 
 <div id='Using'>
@@ -210,7 +193,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 	<tr style='text-align:center'>
 		<td></td><td class='lang2'>ஔ</td><td class='lang2'>கௌ</td><td><span class='keys'>bfs</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஔ</td><td class='lang2'>ஜௌ</td><td><span class='keys'>$fs</span></td>
+		<td></td><td class='lang2'>ஔ</td><td class='lang2'>ஜௌ</td><td><span class='keys'>b$s</span></td>
 	</tr>
 
 </table>
@@ -304,7 +287,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ஞி</span><br/><span class='keys'>"p</span></td>
 		<td><span class='lang2' >ஞீ</span><br/><span class='keys'>"P</span></td>
 		<td><span class='lang2' >ஞு</span><br/><span class='keys'>"[</span></td>
-		<td><span class='lang2' >ஞூ</span><br/><span class='keys'>"{</span></td>
+		<td><span class='lang2' >ஞூ</span><br/><span class='keys'>Q</span></td>
 		<td><span class='lang2' >ஞெ</span><br/><span class='keys'>b"</span></td>
 		<td><span class='lang2' >ஞை</span><br/><span class='keys'>n"</span></td>
 		<td><span class='lang2' >ஞை</span><br/><span class='keys'>i"</span></td>
@@ -320,7 +303,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >டி</span><br/><span class='keys'>lp</span></td>
 		<td><span class='lang2' >டீ</span><br/><span class='keys'>lP</span></td>
 		<td><span class='lang2' >டு</span><br/><span class='keys'>L</span></td>
-		<td><span class='lang2' >டூ</span><br/><span class='keys'>l{</span></td>
+		<td><span class='lang2' >டூ</span><br/><span class='keys'>L:</span></td>
 		<td><span class='lang2' >டெ</span><br/><span class='keys'>bl</span></td>
 		<td><span class='lang2' >டே</span><br/><span class='keys'>nl</span></td>
 		<td><span class='lang2' >டை</span><br/><span class='keys'>il</span></td>
@@ -335,8 +318,8 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ணா</span><br/><span class='keys'>zh</span></td>
 		<td><span class='lang2' >ணி</span><br/><span class='keys'>zp</span></td>
 		<td><span class='lang2' >ணீ</span><br/><span class='keys'>zP</span></td>
-		<td><span class='lang2' >ணு</span><br/><span class='keys'>Q</span></td>
-		<td><span class='lang2' >ணூ</span><br/><span class='keys'>Qh</span></td>
+		<td><span class='lang2' >ணு</span><br/><span class='keys'>q</span></td>
+		<td><span class='lang2' >ணூ</span><br/><span class='keys'>q}</span></td>
 		<td><span class='lang2' >ணெ</span><br/><span class='keys'>bz</span></td>
 		<td><span class='lang2' >ணே</span><br/><span class='keys'>nz</span></td>
 		<td><span class='lang2' >ணை</span><br/><span class='keys'>iz</span></td>
@@ -352,7 +335,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >தி</span><br/><span class='keys'>jp</span></td>
 		<td><span class='lang2' >தீ</span><br/><span class='keys'>jP</span></td>
 		<td><span class='lang2' >து</span><br/><span class='keys'>J</span></td>
-		<td><span class='lang2' >தூ</span><br/><span class='keys'>Jh</span></td>
+		<td><span class='lang2' >தூ</span><br/><span class='keys'>J}</span></td>
 		<td><span class='lang2' >தெ</span><br/><span class='keys'>bj</span></td>
 		<td><span class='lang2' >தே</span><br/><span class='keys'>nj</span></td>
 		<td><span class='lang2' >தை</span><br/><span class='keys'>ij</span></td>
@@ -368,7 +351,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >நி</span><br/><span class='keys'>ep</span></td>
 		<td><span class='lang2' >நீ</span><br/><span class='keys'>eP</span></td>
 		<td><span class='lang2' >நு</span><br/><span class='keys'>E</span></td>
-		<td><span class='lang2' >நூ</span><br/><span class='keys'>Eh</span></td>
+		<td><span class='lang2' >நூ</span><br/><span class='keys'>E}</span></td>
 		<td><span class='lang2' >நெ</span><br/><span class='keys'>be</span></td>
 		<td><span class='lang2' >நே</span><br/><span class='keys'>ne</span></td>
 		<td><span class='lang2' >நை</span><br/><span class='keys'>ie</span></td>
@@ -398,9 +381,9 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ம</span><br/><span class='keys'>k</span></td>
 		<td><span class='lang2' >மா</span><br/><span class='keys'>kh</span></td>
 		<td><span class='lang2' >மி</span><br/><span class='keys'>kp</span></td>
-		<td><span class='lang2' >ம்மீ</span><br/><span class='keys'>kP</span></td>
+		<td><span class='lang2' >மீ</span><br/><span class='keys'>kP</span></td>
 		<td><span class='lang2' >மு</span><br/><span class='keys'>K</span></td>
-		<td><span class='lang2' >மூ</span><br/><span class='keys'>k{</span></td>
+		<td><span class='lang2' >மூ</span><br/><span class='keys'>K:</span></td>
 		<td><span class='lang2' >மெ</span><br/><span class='keys'>bk</span></td>
 		<td><span class='lang2' >மே</span><br/><span class='keys'>nk</span></td>
 		<td><span class='lang2' >மை</span><br/><span class='keys'>ik</span></td>
@@ -432,7 +415,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ரி</span><br/><span class='keys'>up</span></td>
 		<td><span class='lang2' >ரீ</span><br/><span class='keys'>uP</span></td>
 		<td><span class='lang2' >ரு</span><br/><span class='keys'>U</span></td>
-		<td><span class='lang2' >ரூ</span><br/><span class='keys'>u{</span></td>
+		<td><span class='lang2' >ரூ</span><br/><span class='keys'>U:</span></td>
 		<td><span class='lang2' >ரெ</span><br/><span class='keys'>bu</span></td>
 		<td><span class='lang2' >ரே</span><br/><span class='keys'>nu</span></td>
 		<td><span class='lang2' >ரை</span><br/><span class='keys'>iu</span></td>
@@ -448,7 +431,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >லி</span><br/><span class='keys'>yp</span></td>
 		<td><span class='lang2' >லீ</span><br/><span class='keys'>yP</span></td>
 		<td><span class='lang2' >லு</span><br/><span class='keys'>Y</span></td>
-		<td><span class='lang2' >லூ</span><br/><span class='keys'>Yh</span></td>
+		<td><span class='lang2' >லூ</span><br/><span class='keys'>Y}</span></td>
 		<td><span class='lang2' >லெ</span><br/><span class='keys'>by</span></td>
 		<td><span class='lang2' >லே</span><br/><span class='keys'>ny</span></td>
 		<td><span class='lang2' >லை</span><br/><span class='keys'>iy</span></td>
@@ -480,7 +463,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ழி</span><br/><span class='keys'>Hp</span></td>
 		<td><span class='lang2' >ழீ</span><br/><span class='keys'>HP</span></td>
 		<td><span class='lang2' >ழு</span><br/><span class='keys'>G</span></td>
-		<td><span class='lang2' >ழூ</span><br/><span class='keys'>H{</span></td>
+		<td><span class='lang2' >ழூ</span><br/><span class='keys'>G:</span></td>
 		<td><span class='lang2' >ழெ</span><br/><span class='keys'>bH</span></td>
 		<td><span class='lang2' >ழே</span><br/><span class='keys'>nH</span></td>
 		<td><span class='lang2' >ழை</span><br/><span class='keys'>iH</span></td>
@@ -496,7 +479,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ளி</span><br/><span class='keys'>sp</span></td>
 		<td><span class='lang2' >ளீ</span><br/><span class='keys'>sP</span></td>
 		<td><span class='lang2' >ளு</span><br/><span class='keys'>S</span></td>
-		<td><span class='lang2' >ளூ</span><br/><span class='keys'>s{</span></td>
+		<td><span class='lang2' >ளூ</span><br/><span class='keys'>S:</span></td>
 		<td><span class='lang2' >ளெ</span><br/><span class='keys'>bs</span></td>
 		<td><span class='lang2' >ளே</span><br/><span class='keys'>ns</span></td>
 		<td><span class='lang2' >ளை</span><br/><span class='keys'>is</span></td>
@@ -512,7 +495,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >றி</span><br/><span class='keys'>wp</span></td>
 		<td><span class='lang2' >றீ</span><br/><span class='keys'>wP</span></td>
 		<td><span class='lang2' >று</span><br/><span class='keys'>W</span></td>
-		<td><span class='lang2' >றூ</span><br/><span class='keys'>Wh</span></td>
+		<td><span class='lang2' >றூ</span><br/><span class='keys'>W}</span></td>
 		<td><span class='lang2' >றெ</span><br/><span class='keys'>bw</span></td>
 		<td><span class='lang2' >றே</span><br/><span class='keys'>nw</span></td>
 		<td><span class='lang2' >றை</span><br/><span class='keys'>iw</span></td>
@@ -528,7 +511,7 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >னி</span><br/><span class='keys'>dp</span></td>
 		<td><span class='lang2' >னீ</span><br/><span class='keys'>dP</span></td>
 		<td><span class='lang2' >னு</span><br/><span class='keys'>D</span></td>
-		<td><span class='lang2' >னூ</span><br/><span class='keys'>Dh</span></td>
+		<td><span class='lang2' >னூ</span><br/><span class='keys'>D}</span></td>
 		<td><span class='lang2' >னெ</span><br/><span class='keys'>bd</span></td>
 		<td><span class='lang2' >னே</span><br/><span class='keys'>nd</span></td>
 		<td><span class='lang2' >னை</span><br/><span class='keys'>id</span></td>
@@ -560,20 +543,20 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ஜௌ</span><br/><span class='keys'>b$s</span></td>
 		</tr>
 	<tr style='text-align:center; font-weight:normal'>
-		<td style='background-color:#dedede'><span class='lang2' >ஷ</span><br/><span class='keys'>^</span></td>
-		<td><span class='lang2' >ஷ்</span><br/><span class='keys'>^;</span></td>
-		<td><span class='lang2' >ஷ‍</span><br/><span class='keys'>^</span></td>
-		<td><span class='lang2' >ஷா</span><br/><span class='keys'>^h</span></td>
-		<td><span class='lang2' >ஷி</span><br/><span class='keys'>^p</span></td>
-		<td><span class='lang2' >ஷீ</span><br/><span class='keys'>^P</span></td>
+		<td style='background-color:#dedede'><span class='lang2' >ஷ</span><br/><span class='keys'>&</span></td>
+		<td><span class='lang2' >ஷ்</span><br/><span class='keys'>&;</span></td>
+		<td><span class='lang2' >ஷ‍</span><br/><span class='keys'>&</span></td>
+		<td><span class='lang2' >ஷா</span><br/><span class='keys'>&h</span></td>
+		<td><span class='lang2' >ஷி</span><br/><span class='keys'>&p</span></td>
+		<td><span class='lang2' >ஷீ</span><br/><span class='keys'>&P</span></td>
 		<td><span class='lang2' >ஷு</span><br/><span class='keys'>&%</span></td>
 		<td><span class='lang2' >ஷூ</span><br/><span class='keys'>&^</span></td>
-		<td><span class='lang2' >ஷெ</span><br/><span class='keys'>b^</span></td>
-		<td><span class='lang2' >ஷே</span><br/><span class='keys'>n^</span></td>
-		<td><span class='lang2' >ஷை</span><br/><span class='keys'>i^</span></td>
-		<td><span class='lang2' >ஷொ</span><br/><span class='keys'>b^h</span></td>
-		<td><span class='lang2' >ஷோ</span><br/><span class='keys'>n^h</span></td>
-		<td><span class='lang2' >ஷௌ</span><br/><span class='keys'>b^s</span></td>
+		<td><span class='lang2' >ஷெ</span><br/><span class='keys'>b&</span></td>
+		<td><span class='lang2' >ஷே</span><br/><span class='keys'>n&</span></td>
+		<td><span class='lang2' >ஷை</span><br/><span class='keys'>i&</span></td>
+		<td><span class='lang2' >ஷொ</span><br/><span class='keys'>b&h</span></td>
+		<td><span class='lang2' >ஷோ</span><br/><span class='keys'>n&h</span></td>
+		<td><span class='lang2' >ஷௌ</span><br/><span class='keys'>b&s</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
 		<td style='background-color:#dedede'><span class='lang2' >ஸ</span><br/><span class='keys'>!</span></td>
@@ -592,36 +575,36 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ஸௌ</span><br/><span class='keys'>b!s</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
-		<td style='background-color:#dedede'><span class='lang2' >ஹ</span><br/><span class='keys'>]</span></td>
-		<td><span class='lang2' >ஹ்</span><br/><span class='keys'>];</span></td>
-		<td><span class='lang2' >ஹ‍</span><br/><span class='keys'>]</span></td>
-		<td><span class='lang2' >ஹா</span><br/><span class='keys'>]h</span></td>
-		<td><span class='lang2' >ஹி</span><br/><span class='keys'>]p</span></td>
-		<td><span class='lang2' >ஹீ</span><br/><span class='keys'>]P</span></td>
+		<td style='background-color:#dedede'><span class='lang2' >ஹ</span><br/><span class='keys'>+</span></td>
+		<td><span class='lang2' >ஹ்</span><br/><span class='keys'>+;</span></td>
+		<td><span class='lang2' >ஹ‍</span><br/><span class='keys'>+</span></td>
+		<td><span class='lang2' >ஹா</span><br/><span class='keys'>+h</span></td>
+		<td><span class='lang2' >ஹி</span><br/><span class='keys'>+p</span></td>
+		<td><span class='lang2' >ஹீ</span><br/><span class='keys'>+P</span></td>
 		<td><span class='lang2' >ஹு</span><br/><span class='keys'>+%</span></td>
 		<td><span class='lang2' >ஹூ</span><br/><span class='keys'>+^</span></td>
-		<td><span class='lang2' >ஹெ</span><br/><span class='keys'>b]</span></td>
-		<td><span class='lang2' >ஹே</span><br/><span class='keys'>n]</span></td>
-		<td><span class='lang2' >ஹை</span><br/><span class='keys'>i]</span></td>
-		<td><span class='lang2' >ஹொ</span><br/><span class='keys'>b]h</span></td>
-		<td><span class='lang2' >ஹோ</span><br/><span class='keys'>n]h</span></td>
-		<td><span class='lang2' >ஹௌ</span><br/><span class='keys'>b]s</span></td>
+		<td><span class='lang2' >ஹெ</span><br/><span class='keys'>b+</span></td>
+		<td><span class='lang2' >ஹே</span><br/><span class='keys'>n+</span></td>
+		<td><span class='lang2' >ஹை</span><br/><span class='keys'>i+</span></td>
+		<td><span class='lang2' >ஹொ</span><br/><span class='keys'>b+h</span></td>
+		<td><span class='lang2' >ஹோ</span><br/><span class='keys'>n+h</span></td>
+		<td><span class='lang2' >ஹௌ</span><br/><span class='keys'>b+s</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
-		<td style='background-color:#dedede'><span class='lang2' >க்ஷ</span><br/><span class='keys'>B</span></td>
-		<td><span class='lang2' >க்ஷ்</span><br/><span class='keys'>B;</span></td>
-		<td><span class='lang2' >க்ஷ‍</span><br/><span class='keys'>B</span></td>
-		<td><span class='lang2' >க்ஷா</span><br/><span class='keys'>Bh</span></td>
-		<td><span class='lang2' >க்ஷி</span><br/><span class='keys'>Bp</span></td>
-		<td><span class='lang2' >க்ஷீ</span><br/><span class='keys'>BP</span></td>
+		<td style='background-color:#dedede'><span class='lang2' >க்ஷ</span><br/><span class='keys'>\</span></td>
+		<td><span class='lang2' >க்ஷ்</span><br/><span class='keys'>\;</span></td>
+		<td><span class='lang2' >க்ஷ‍</span><br/><span class='keys'>\</span></td>
+		<td><span class='lang2' >க்ஷா</span><br/><span class='keys'>\h</span></td>
+		<td><span class='lang2' >க்ஷி</span><br/><span class='keys'>\p</span></td>
+		<td><span class='lang2' >க்ஷீ</span><br/><span class='keys'>\P</span></td>
 		<td><span class='lang2' >க்ஷு</span><br/><span class='keys'>\%</span></td>
 		<td><span class='lang2' >க்ஷூ</span><br/><span class='keys'>\^</span></td>
-		<td><span class='lang2' >க்ஷெ</span><br/><span class='keys'>bB</span></td>
-		<td><span class='lang2' >க்ஷே</span><br/><span class='keys'>nB</span></td>
-		<td><span class='lang2' >க்ஷை</span><br/><span class='keys'>iB</span></td>
-		<td><span class='lang2' >க்ஷொ</span><br/><span class='keys'>bBh</span></td>
-		<td><span class='lang2' >க்ஷோ</span><br/><span class='keys'>nBh</span></td>
-		<td><span class='lang2' >க்ஷௌ</span><br/><span class='keys'>bBs</span></td>
+		<td><span class='lang2' >க்ஷெ</span><br/><span class='keys'>\B</span></td>
+		<td><span class='lang2' >க்ஷே</span><br/><span class='keys'>\n</span></td>
+		<td><span class='lang2' >க்ஷை</span><br/><span class='keys'>\i</span></td>
+		<td><span class='lang2' >க்ஷொ</span><br/><span class='keys'>\Bh</span></td>
+		<td><span class='lang2' >க்ஷோ</span><br/><span class='keys'>\nh</span></td>
+		<td><span class='lang2' >க்ஷௌ</span><br/><span class='keys'>\bs</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
 		<td colspan=14>&nbsp;</td>
@@ -631,23 +614,25 @@ This character is entered by typing <span class='keys'>_</span> (Shift+Underscor
 		<td><span class='lang2' >ஸ்ரீ</span><br/><span class='keys'>_</span></td>
 		<td><span class='lang2' >ஃ</span><br/><span class='keys'>`</span></td>
 		<td><span class='lang2' >*</span><br/><span class='keys'>~</span></td>
-		<td><span class='lang2' >ஹ</span><br/><span class='keys'>0</span></td>
-		<td><span class='lang2' >!</span><br/><span class='keys'>+</span></td>
+		<td><span class='lang2' >ஹ</span><br/><span class='keys'>+</span></td>
+		<td><span class='lang2' >!</span><br/><span class='keys'>|</span></td>
 		<td><span class='lang2' >,</span><br/><span class='keys'>.</span></td>
 		<td><span class='lang2' >?</span><br/><span class='keys'>&gt;</span></td>
 		<td><span class='lang2' >.</span><br/><span class='keys'>/</span></td>
 		<td><span class='lang2' >_</span><br/><span class='keys'>?</span></td>
-		<td><span class='lang2' >?</span><br/><span class='keys'>.</span></td>
 		<td><span class='lang2' >'</span><br/><span class='keys'>*</span></td>
 		<td><span class='lang2' >"</span><br/><span class='keys'>@</span></td>
 		<td><span class='lang2' >%</span><br/><span class='keys'>#</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
 		<td style='background-color:#dedede'></td>
-		<td><span class='lang2' >(</span><br/><span class='keys'>9</span></td>
-		<td><span class='lang2' >)</span><br/><span class='keys'>0</span></td>
+		<td><span class='lang2' >(</span><br/><span class='keys'>(</span></td>
+		<td><span class='lang2' >)</span><br/><span class='keys'>)</span></td>
 		<td><span class='lang2' >-</span><br/><span class='keys'>-</span></td>
 		<td><span class='lang2' >=</span><br/><span class='keys'>=</span></td>
+		<td><span class='lang2' >:</span><br/><span class='keys'>:</span></td>
+		<td><span class='lang2' >;</span><br/><span class='keys'>;</span></td>
+		<td><span class='lang2' >?</span><br/><span class='keys'>_</span></td>
 	</tr>
 </table>
 
