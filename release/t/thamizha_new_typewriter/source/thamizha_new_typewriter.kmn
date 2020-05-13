@@ -1,0 +1,136 @@
+﻿store(&VERSION) '10.0'
+store(&KEYBOARDVERSION) '2.1'
+store(&Name) "புதிய தட்டெழுதி | New Typewriter"
+store(&COPYRIGHT) '© 2008-2020 thamizha.com and SIL International'
+c *** Bugs Fixing Modifications by K. Sethu, March 2008
+c *** (addition of 5 lines at the bottom)
+store(&MESSAGE) 'New Type Writer Unicode Keyboard - Contributed by Umar(csd_one@yahoo.com), Mugunth (mugunth@gmail.com) and K. Sethu (skhome@gmail.com) ; March-October 2008'
+store(&BITMAP) 'thamizha_new_typewriter.ico'
+c store(&language) "Tamil"
+c store(&WINDOWSLANGUAGES) 'x0449'
+c store(&LANGUAGE) 'x0449'
+c store(&ETHNOLOGUECODE) 'tam'
+store(&VISUALKEYBOARD) 'thamizha_new_typewriter.kvks'
+store(&TARGETS) 'windows macosx linux web'
+
+begin Unicode > use(main)
+group(main) using keys
+c ---mappings--- >>
+store (Euyir) "mM,<cCvVIxX"
+store (Tuyir) U+0B85 U+0B86 U+0B87 U+0B88 U+0B89 U+0B8A U+0B8E U+0B8F U+0B90 U+0B92 U+0B93 
+store (EstrL) "wertyuasdfgHjkl'z" '"'
+store (TstrL) U+0BB1 U+0BA8 U+0B9A U+0BB5 U+0BB2 U+0BB0 U+0BAF U+0BB3 U+0BA9 U+0B95 U+0BAA U+0BB4  U+0BA4 U+0BAE U+0B9F U+0B99 U+0BA3 U+0B9E
+store (EstrGr) "!$&+"
+store (TstrGr) U+0BB8 U+0B9C U+0BB7 U+0BB9
+store (Osubst1) "~@#*./>?|"
+store (Rsubst1) "*" '"' "%',.?_!"
+store (no_disp) "%^hpP[]{}ABZ"
+store (Eukar1) "qQWERYUSDFGJKL"
+store (Tukar1) U+0BA3 U+0B9E U+0BB1 U+0BA8 U+0B9A U+0BB2 U+0BB0 U+0BB3 U+0BA9 U+0B95 U+0BB4 U+0BA4 U+0BAE U+0B9F
+store (ukar2) U+0B99 U+0BAA U+0BAF U+0BB5
+store (aikar1) U+0BA3 U+0BA9 U+0BB2 U+0BB3
+store (Tukar2) U+0B9E U+0BA3 U+0BA4 U+0BA8 U+0BA9 U+0BB1 U+0BB2
+store (Tuukar3) U+0B9F U+0BAE U+0BB4 U+0BB0 U+0BB3
+
+
++ "`" > U+0B83 
++ "o" > U+0B9F U+0BBF 
++ "O" > U+0B9F U+0BC0 
++ "_" > U+0BB8 U+0BCD U+0BB0 U+0BC0
++ "\" > U+0B95 U+0BCD U+0BB7
++ "i" > dk(ai)
++ "b" > dk(e)
++ "n" > dk(E1)
+U+0B95 U+0BCD U+0BB7 + "i" > context U+0BC8
++ "B" > U+0BC6
+U+0B95 U+0BCD U+0BB7 + "n" > context U+0BC7
+U+0B9F U+0BBF + [K_BKSP] > nul 
+U+0B9F U+0BC0 + [K_BKSP] > nul
+U+0BB8 U+0BCD U+0BB0 U+0BC0 + [K_BKSP] > nul
+U+0B95 U+0BCD U+0BB7 + [K_BKSP] > nul
+
++ any (no_disp) > nul
++ any (Osubst1) > index (Rsubst1,1)
++ any (Euyir)> index (Tuyir,1)
++ any (EstrL)> index (TstrL,1)
++ any (EstrGr)> index (TstrGr,1)
+
+any (TstrL) + ";" > context U+0BCD c --uyirmey--
+any (TstrL) U+0BCD + [K_BKSP] > nul
+any (TstrL)+ "h" > context U+0BBE  c --nedil---
+any (TstrL) + "p" > context U+0BBF c ---ikaram---
+any (TstrL) + "P" > context U+0BC0 c ---iikaaram--
+any (TstrL) U+0BBF + [K_BKSP] > nul
+any (TstrL) U+0BBF + [K_BKSP] > nul             
+c ---ukaram---
+c ukaram 1
++ any (Eukar1) > index (Tukar1,1) U+0BC1
+any (Tukar1) U+0BC1 + [K_BKSP] > nul
+
+c ukaram 2
+any (ukar2) + "[" > context U+0BC1
+any (ukar2) U+0BC1 + [K_BKSP] > nul
+
+c --uukaram--
+c uukar 1
++ "T" > U+0B95 U+0BC2
++ "N" > U+0B9A U+0BC2
+U+0B95 U+0BC2 + [K_BKSP] > nul
+U+0B9A U+0BC2 + [K_BKSP] > nul
+
+c uukar 2
+any (ukar2) + "{" > context U+0BC2 
+any (ukar2) U+0BC2 + [K_BKSP] > nul  
+any (Tukar2) U+0BC1 + "}" > context(1) U+0BC2
+any (Tukar2) U+0BC2 + [K_BKSP] > nul  
+
+c uukar 3
+any (Tuukar3) U+0BC1 + ":" > context(1) U+0BC2
+any (Tuukar3) U+0BC2 + [K_BKSP] > nul 
+ 
+c ---aikaram---
+c aikar1
+any (aikar1) + "]" > context U+0BC8
+any (aikar1) U+0BC8 + [K_BKSP] > nul  
+c aikar2
+dk(ai)+ any (EstrL) > index (TstrL,2) U+0BC8
+any (TstrL) U+0BC8 + [K_BKSP] > nul   
+
+c <<e - E- au >>
+dk(e) + any (EstrL) > index (TstrL,2) U+0BC6
+any (TstrL) U+0BC6 + [K_BKSP] > nul
+dk(E1) + any (EstrL) > index (TstrL,2) U+0BC7
+any (TstrL) U+0BC7 + [K_BKSP] > nul
+U+0BC6 + "h" > U+0BCA 
+U+0BC7 + "h" > U+0BCB 
+U+0BC6 + "s" > U+0BCC
+
+any (TstrL) U+0BCA + [K_BKSP] > nul
+any (TstrL) U+0BCB + [K_BKSP] > nul
+any (TstrL) U+0BCC + [K_BKSP] > nul
+
+c ---granta---
+any (TstrGr) + ";" > context U+0BCD
+any (TstrGr) U+0BCD + [K_BKSP] > nul
+any (TstrGr) + "h" > context U+0BBE  
+any (TstrGr) + "p" > context U+0BBF
+any (TstrGr) + "P" > context U+0BC0  
+any (TstrGr) + "%" > context U+0BC1 
+any (TstrGr) + "^" > context U+0BC2
+dk(ai)+ any (EstrGr) > index (TstrGr,2) U+0BC8
+any (TstrGr) U+0BC8 + [K_BKSP] > nul   
+ 
+dk(e) + any (EstrGr) > index (TstrGr,2) U+0BC6
+dk(E1) + any (EstrGr) > index (TstrGr,2) U+0BC7 
+any (TstrGr) U+0BCA + [K_BKSP] > nul
+any (TstrGr) U+0BCB + [K_BKSP] > nul
+any (TstrGr) U+0BCC + [K_BKSP] > nul
+
+c *** The following 5 bugs fixing lines added by K. Sethu (March 2008)
+store (EVow_for_La) ";hpP"
+store (TVow_for_La) U+0BCD U+0BBE U+0BBF U+0BC0
+U+0B92  + "s" > U+0B94
+U+0B94  + any (EVow_for_La) >  U+0B92 U+0BB3 index (TVow_for_La,2)
+U+0BCC + any (EVow_for_La) >  U+0BC6 U+0BB3 index (TVow_for_La,2)
+
+c EOF
