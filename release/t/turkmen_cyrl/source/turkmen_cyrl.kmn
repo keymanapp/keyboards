@@ -1,0 +1,141 @@
+﻿c Turkmen keyboard for Keyman
+c for use with Unicode fonts in Windows 98 upwards
+c types in Cyrillic but using Windows and Unicode fonts
+c do NOT use with TimesCA
+c Version for computers with US keyboards
+
+c By David Gray, July 2002
+c Edited by David Gray, April 2004 - O umlaut was missing
+c Edited by Tpbaehr, Dec 2010 - Fixed language codes, minor clean up.
+
+store(&VERSION) '10.0'
+store(&NAME) "Turkmen Cyrillic"
+store(&BITMAP) 'turkmen_cyrl.ico'
+store(&VISUALKEYBOARD) 'turkmen_cyrl.kvks'
+store(&COPYRIGHT) '© 2002-2020 David Gray'
+c store(&WINDOWSLANGUAGES) 'x0442'
+c store(&LANGUAGE) 'x0442'
+c store(&ETHNOLOGUECODE) 'tuk'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'turkmen_cyrl.keyman-touch-layout'
+c store(&WINDOWSLANGUAGES) 'x0442'
+store(&KEYBOARDVERSION) '1.3'
+
+begin UNICODE > use(Main)
+group(Main) using keys
+c ★
+
++ "w" > U+0432              c  v
++ "e" > U+0435              
++ "r" > U+0440              
++ "t" > U+0442              
++ "y" > U+044B              c 61
++ "u" > U+0443              c y
++ "i" > U+0438              c long i
++ "o" > U+043E              
++ "p" > U+043F              
++ "a" > U+0430              
++ "s" > U+0441              c c
++ "d" > U+0434              
++ "f" > U+0444              
++ "g" > U+0433              
++ "k" > U+043A              
++ "l" > U+043B              
++ "z" > U+0437              
++ "h" > U+0445              
++ "c" > U+0447              c ch
++ "v" > U+0439              c y
++ "b" > U+0431              
++ "n" > U+043D              
++ "m" > U+043C              
+
++ 'W' > U+0412              c V
++ 'E' > U+0415              
++ 'R' > U+0420               
++ 'T' > U+0422              
++ 'Y' > U+042B              c 61 cap
++ 'U' > U+0423              c Y
++ 'I' > U+0418              c long I
++ 'O' > U+041E              
++ 'P' > U+041F              c R
++ 'A' > U+0410              
++ 'S' > U+0421              
++ 'D' > U+0414              
++ 'F' > U+0424              
++ 'G' > U+0413              
++ 'K' > U+041A              
++ 'L' > U+041B              
++ 'Z' > U+0417              
++ 'H' > U+0425              
++ 'C' > U+0427              
++ 'V' > U+0419              
++ 'B' > U+0411              
++ 'N' > U+041D              
++ 'M' > U+041C              
+'<' + '<' > U+00AB          c double chevron <
+'>' + '>' > U+00BB          c double chevron >    
+
++ '`' > U+0436 c modified to match Latin
++ '~' > U+0416 c modified to match Latin
++ "^" > U+2116 c modified to match Latin
++ 'Q' > U+04D8 c modified to match Latin
++ 'q' > U+04D9 c modified to match Latin
++ '{' > U+04A2 c modified to match Latin
++ '[' > U+04A3 c modified to match Latin
++ '}' > U+04E8 c modified to match Latin
++ ']' > U+04E9 c modified to match Latin
++ '|' > U+0428 c modified to match Latin
++ '\' > U+0448 c modified to match Latin
++ 'X' > U+04AE c modified to match Latin
++ 'x' > U+04AF c modified to match Latin
+
++ 'J' > U+0496
++ 'j' > U+0497
+
++ ';' > deadkey(1)      c specifies deadkey
++ ':' > deadkey(1)      c specifies deadkey 
+deadkey(1) + '`' > '`'
+deadkey(1) + '~' > '~'
+
+deadkey(1) + ';' > ';'
+deadkey(1) + ':' > ':'
+deadkey(1) + '^' > '^'
+
+deadkey(1) + 'e' > U+044D
+deadkey(1) + 'E' > U+042D
+
+deadkey(1) + 'u' > U+044E
+deadkey(1) + 'U' > U+042E 
+
+deadkey(1) + 'o' > U+0451
+deadkey(1) + 'O' > U+0401
+
+deadkey(1) + '\' > U+0449
+deadkey(1) + '|' > U+0429
+
+deadkey(1) + 'a' > U+044F
+deadkey(1) + 'A' > U+042F
+
+deadkey(1) + 's' > U+0446
+deadkey(1) + 'S' > U+0426
+
+deadkey(1) + 'g' > U+044A
+deadkey(1) + 'G' > U+042A
+
+deadkey(1) + 'j' > U+0436
+deadkey(1) + 'J' > U+0416 
+
+deadkey(1) + 'v' > U+044C
+deadkey(1) + 'V' > U+042C
+
+deadkey(1) + 'n' > U+04A3
+deadkey(1) + 'N' > U+04A2
+
+deadkey(1) + '[' > '['
+deadkey(1) + '{' > '{'
+
+deadkey(1) + ']' > ']'
+deadkey(1) + '}' > '}'
+
+
+

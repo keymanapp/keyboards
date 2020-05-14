@@ -1,13 +1,13 @@
 FirstVoices Keyboard Package
 ==================================================
 
-(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
+(c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
 
-Version 12.0
+Version 12.2
 
 __DESCRIPTION__
 
-This package includes all the FirstVoices keyboards for Windows. It is distributed as part of the FirstVoices project.
+This package includes all the FirstVoices keyboards for Windows, Android, and iOS. It is distributed as part of the FirstVoices project.
 
 Note that the package will not be listed under the languages included in the package on keyman.com, as we have 
 excluded them from the .keyboard_info. This is intentional: the package is included as a convenience for the distribution
@@ -17,5 +17,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Android
+ * iOS
 
 

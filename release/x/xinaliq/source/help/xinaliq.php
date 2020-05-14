@@ -70,15 +70,20 @@
 <p>“o” 1x = o 2x = ö 3x = o</p>
 <p>“i” 1x =  2x = ı 3x = i</p>
 
- <div id='osk-container'>
 
-  <h2>OnScreen Keyboard layout</h2>
-	<h3>Default (unshifted)</h3>
-	<p><a href="xinaliqU_.png"><img class="keyboard" src="xinaliqU_.png" alt="Default (unshifted) state" /></a></p>
-	<h3>Shift</h3>
-	<p><a href="xinaliqU_S.png"><img class="keyboard" src="xinaliqU_S.png" alt="Shift state" /></a></p>
 
-    <div id='osk' data-states='default shift'></div>
+<h1>Keyboard Layout</h1>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
 </div>
-<p>(c) 2019 Kenneth Keyes</p>
-</body>
+
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal them.</p>
+
+<div id='osk-tablet' data-states='default shift numeric'>
+</div>
+
+
+<p>(c) 2019-2020 Kenneth Keyes</p>

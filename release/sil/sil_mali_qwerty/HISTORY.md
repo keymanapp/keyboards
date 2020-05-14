@@ -1,6 +1,10 @@
 Clavier du Mali (Qwerty) Keyboard Change History
 =======================
 
+4.0 (2020-02-26)
+----------------
+* Updated to support new characters
+
 3.3 (12-Sep-2018)
 ------------------
 * Moved to open github system
