@@ -1,6 +1,11 @@
 Khmer Angkor Change History
 =======================
 
+1.0.7 (14 May 2020)
+-------------------
+
+* Testing KDO
+
 1.0.6 (13 May 2019)
 -------------------
 * update language tag
