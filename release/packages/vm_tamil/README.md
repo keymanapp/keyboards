@@ -3,7 +3,7 @@ Tamil (Visual Media) keyboard
 
 (c) 2008-2020 Visual Media and SIL International
 
-Version 1.3
+Version 1.3.1
 
 Description
 -----------
