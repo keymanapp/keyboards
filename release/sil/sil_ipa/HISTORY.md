@@ -1,5 +1,9 @@
-SIL IPA Keyboard Change History
+IPA (SIL) Keyboard Change History
 =======================
+
+1.8 (1 Mayb 2020)
+-------------------
+* Add hotkey to access options
 
 1.7 (28 Feb 2018)
 -------------------
