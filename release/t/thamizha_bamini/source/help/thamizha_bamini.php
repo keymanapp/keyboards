@@ -47,10 +47,6 @@ intended for use with a normal QWERTY (English) keyboard. </p>
 
 <div id='osk'>
   <h3>Desktop Keyboard layout</h3>
-	<h4>Default (unshifted)</h4>
-	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
-	<h4>Shift</h4>
-	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
 </div>
 		
 
@@ -59,10 +55,10 @@ intended for use with a normal QWERTY (English) keyboard. </p>
 		<!-- Basic instructions designed to get users up and running with typing -->
 
 <p>This keyboard layout was designed for ease of typing.  Characters are arranged on the keyboard according to how frequently they are used.  Grantha letters, which are used for typing Sanskrit, are typed using the <span class='keys'>[S*]</span> key. 
-Short and long vowels appear next to each other.  For example, <span class='highlightExample'>ஆ</span> (<span class='keys'>q</span> key) is above <span class='highlightExample'>அ</span> (<span class='keys'>a</span> key) , and <span class='highlightExample'>ஓ</span> (<span class='keys'>x</span> key) is beside <span class='highlightExample'>ஒ</span> (<span class='keys'>c</span> key).  Characters which normally appear together are also close together on the keyboard.</p>
+Short and long vowels appear next to each other.  For example, <span class='highlightExample'>ஆ</span> (<span class='keys'>[Sm]</span> key) is above <span class='highlightExample'>அ</span> (<span class='keys'>m;</span> key) , and <span class='highlightExample'>ஓ</span> (<span class='keys'>[Sx]</span> key) is beside <span class='highlightExample'>ஒ</span> (<span class='keys'>x</span> key).  Characters which normally appear together are also close together on the keyboard.</p>
 
 <p>Most of the characters used in Tamil are combinations of consonants and vowels, and these do not appear on the keyboard. Combined consonant-vowel characters are entered by typing the consonant, then the vowel.  To enter <span class='highlightExample'>ஙா</span>, which is a combination of <span class='highlightExample'>ங</span> and <span class='highlightExample'>ஆ</span>,
- type <span class='keys'>b</span> then <span class='keys'>q</span>, and the combinant character will automatically be displayed.  Pressing Backspace once will delete only the vowel component, so the character displayed on the screen will change back to <span class='highlightExample'>ங</span>, and change again if a different vowel is typed.</p>
+ type <span class='keys'>q</span> then <span class='keys'>h</span>, and the combinant character will automatically be displayed.  Pressing Backspace once will delete only the vowel component, so the character displayed on the screen will change back to <span class='highlightExample'>ங</span>, and change again if a different vowel is typed.</p>
 
 
 </div>
@@ -101,8 +97,7 @@ Short and long vowels appear next to each other.  For example, <span class='high
 <p>The full keyboard layout consists of the twelve vowels <span class='lang2'>அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ</span>, the eighteen consonants <span class='lang2'>க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன</span>, the five Grantha consonants <span class='lang2'>ஸ ஷ ஜ ஹ க்ஷ</span>, the SRii consonant <span class='lang2'>ஸ்ரீ</span>, and the Pulli <span class='lang2'>்</span> and Aytham <span class='lang2'>ஃ</span> marks.</p>
 
 <h4>Pulli Marks and Vowels</h4>
-<p>Because the consonants contain the implicit vowel <span class='lang2'>அ</span>, to produce a pure consonant it is necessary to add the Pulli mark <span class='lang2'>்</span> by typing a lower case <span class='keys'>f</span> immediately after the consonant.  Typing the same consonant twice in a row will also convert the first consonant to a consonant-Pulli combinant.  This automatic conversion is then disabled, so that typing the same consonant a third time will not produce a Pulli mark on the second consonant.  Thus typing the same consonant repeatedly results in Pulli marks on the first, third, fifth and so on: <span class='lang2'>க்கக்கக்கக்க</span></p>
-<p>Similarly, tying a soft consonant followed by the corresponding hard consonant automatically produces a Pulli mark on the first consonant: <span class='lang2'>ங்க</span>
+<p>Because the consonants contain the implicit vowel <span class='lang2'>அ</span>, to produce a pure consonant it is necessary to add the Pulli mark <span class='lang2'>்</span> by typing a lower case <span class='keys'>;</span> immediately after the consonant.  </p>
 <p>The first vowel <span class='lang2'>அ</span> is implicit in the consonants, so typing this vowel after a consonant will not display the vowel or change the consonant to a combinant.  However, this does de-link the consonant from the next keystroke, so that typing another vowel will result in that vowel being displayed independently, rather than combining with the consonant.  This also prevents the Pulli mark being entered.</p>
 <p>In general, typing a vowel after anything other than a consonant produces an independent vowel.</p>
 
@@ -128,69 +123,69 @@ Short and long vowels appear next to each other.  For example, <span class='high
 		<td>Consonant</td><td>Vowel/Pulli</td><td>Combinant</td><td>Keystrokes</td>
 	</tr>
 	<tr style='text-align:center'>
-		<td class='lang2'>க</td><td>்</td><td class='lang2'>க்</td><td><span class='keys'>hf</span></td>
+		<td class='lang2'>க</td><td>்</td><td class='lang2'>க்</td><td><span class='keys'>f;</span></td>
 		<td></td>
-		<td class='lang2'>ஜ</td><td>்</td><td class='lang2'>ஜ்</td><td><span class='keys'>[SE]f</span></td>
+		<td class='lang2'>ஜ</td><td>்</td><td class='lang2'>ஜ்</td><td><span class='keys'>[[;</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>அ</td><td class='lang2'>க‍</td><td><span class='keys'>ha</span></td>
+		<td></td><td class='lang2'>அ</td><td class='lang2'>க‍</td><td><span class='keys'>f</span></td>
 		<td></td>
-		<td></td><td class='lang2'>அ</td><td class='lang2'>ஜ‍</td><td><span class='keys'>[SE]a</span></td>
+		<td></td><td class='lang2'>அ</td><td class='lang2'>ஜ‍</td><td><span class='keys'>[</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஆ</td><td class='lang2'>கா</td><td><span class='keys'>hq</span></td>
+		<td></td><td class='lang2'>ஆ</td><td class='lang2'>கா</td><td><span class='keys'>fh</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஆ</td><td class='lang2'>ஜா</td><td><span class='keys'>[SE]q</span></td>
+		<td></td><td class='lang2'>ஆ</td><td class='lang2'>ஜா</td><td><span class='keys'>[[h</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>இ</td><td class='lang2'>கி</td><td><span class='keys'>hs</span></td>
+		<td></td><td class='lang2'>இ</td><td class='lang2'>கி</td><td><span class='keys'>fp</span></td>
 		<td></td>
-		<td></td><td class='lang2'>இ</td><td class='lang2'>ஜி</td><td><span class='keys'>[SE]s</span></td>
+		<td></td><td class='lang2'>இ</td><td class='lang2'>ஜி</td><td><span class='keys'>[[p</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஈ</td><td class='lang2'>கீ</td><td><span class='keys'>hw</span></td>
+		<td></td><td class='lang2'>ஈ</td><td class='lang2'>கீ</td><td><span class='keys'>f[SP]</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஈ</td><td class='lang2'>ஜீ</td><td><span class='keys'>[SE]w</span></td>
+		<td></td><td class='lang2'>ஈ</td><td class='lang2'>ஜீ</td><td><span class='keys'>[[[SP]</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>உ</td><td class='lang2'>கு</td><td><span class='keys'>hd</span></td>
+		<td></td><td class='lang2'>உ</td><td class='lang2'>கு</td><td><span class='keys'>[SF]</span></td>
 		<td></td>
-		<td></td><td class='lang2'>உ</td><td class='lang2'>ஜு</td><td><span class='keys'>[SE]d</span></td>
+		<td></td><td class='lang2'>உ</td><td class='lang2'>ஜு</td><td><span class='keys'>[[-</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஊ</td><td class='lang2'>கூ</td><td><span class='keys'>he</span></td>
+		<td></td><td class='lang2'>ஊ</td><td class='lang2'>கூ</td><td><span class='keys'>[S$]</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஊ</td><td class='lang2'>ஜூ</td><td><span class='keys'>[SE]e</span></td>
+		<td></td><td class='lang2'>ஊ</td><td class='lang2'>ஜூ</td><td><span class='keys'>[[--</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>எ</td><td class='lang2'>கெ</td><td><span class='keys'>hg</span></td>
+		<td></td><td class='lang2'>எ</td><td class='lang2'>கெ</td><td><span class='keys'>nf</span></td>
 		<td></td>
-		<td></td><td class='lang2'>எ</td><td class='lang2'>ஜெ</td><td><span class='keys'>[SE]g</span></td>
+		<td></td><td class='lang2'>எ</td><td class='lang2'>ஜெ</td><td><span class='keys'>n[[</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஏ</td><td class='lang2'>கே</td><td><span class='keys'>ht</span></td>
+		<td></td><td class='lang2'>ஏ</td><td class='lang2'>கே</td><td><span class='keys'>[SN]f</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஏ</td><td class='lang2'>ஜே</td><td><span class='keys'>[SE]t</span></td>
+		<td></td><td class='lang2'>ஏ</td><td class='lang2'>ஜே</td><td><span class='keys'>[SN][[</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஐ</td><td class='lang2'>கை</td><td><span class='keys'>hr</span></td>
+		<td></td><td class='lang2'>ஐ</td><td class='lang2'>கை</td><td><span class='keys'>if</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஐ</td><td class='lang2'>ஜை</td><td><span class='keys'>[SE]r</span></td>
+		<td></td><td class='lang2'>ஐ</td><td class='lang2'>ஜை</td><td><span class='keys'>;[[</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஒ</td><td class='lang2'>கொ</td><td><span class='keys'>hc</span></td>
+		<td></td><td class='lang2'>ஒ</td><td class='lang2'>கொ</td><td><span class='keys'>nfh</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஒ</td><td class='lang2'>ஜொ</td><td><span class='keys'>[SE]c</span></td>
+		<td></td><td class='lang2'>ஒ</td><td class='lang2'>ஜொ</td><td><span class='keys'>n[[h</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஓ</td><td class='lang2'>கோ</td><td><span class='keys'>hx</span></td>
+		<td></td><td class='lang2'>ஓ</td><td class='lang2'>கோ</td><td><span class='keys'>[SN]fh</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஓ</td><td class='lang2'>ஜோ</td><td><span class='keys'>[SE]x</span></td>
+		<td></td><td class='lang2'>ஓ</td><td class='lang2'>ஜோ</td><td><span class='keys'>[SN][[h</span></td>
 	</tr>
 	<tr style='text-align:center'>
-		<td></td><td class='lang2'>ஔ</td><td class='lang2'>கௌ</td><td><span class='keys'>hz</span></td>
+		<td></td><td class='lang2'>ஔ</td><td class='lang2'>கௌ</td><td><span class='keys'>nfs</span></td>
 		<td></td>
-		<td></td><td class='lang2'>ஔ</td><td class='lang2'>ஜௌ</td><td><span class='keys'>[SE]z</span></td>
+		<td></td><td class='lang2'>ஔ</td><td class='lang2'>ஜௌ</td><td><span class='keys'>n[[s</span></td>
 	</tr>
 
 </table>
@@ -256,8 +251,8 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 		<td><span class='lang2' >ஙா</span><br/ ><span class='keys'>qh</span></td></td>
 		<td><span class='lang2' >ஙி</span><br/ ><span class='keys'>qp</span></td></td>
 		<td><span class='lang2' >ஙீ</span><br/ ><span class='keys'>q[SP]</span></td></td>
-		<td><span class='lang2' >ஙு</span><br/ ><span class='keys'>q[SF]</span></td></td>
-		<td><span class='lang2' >ஙூ</span><br/ ><span class='keys'>q[S$]</span></td></td>
+		<td><span class='lang2' >ஙு</span><br/ ><span class='keys'>q-</span></td></td>
+		<td><span class='lang2' >ஙூ</span><br/ ><span class='keys'>q--</span></td></td>
 		<td><span class='lang2' >ஙெ</span><br/ ><span class='keys'>nq</span></td></td>
 		<td><span class='lang2' >ஙே</span><br/ ><span class='keys'>[SN]q</span></td></td>
 		<td><span class='lang2' >ஙை</span><br/ ><span class='keys'>iq</span></td></td>
@@ -291,7 +286,7 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 		<td><span class='lang2' >ஞு</span><br/ ><span class='keys'>[SQ][-]</span></td></td>
 		<td><span class='lang2' >ஞூ</span><br/ ><span class='keys'>[SQ][-][-]</span></td></td>
 		<td><span class='lang2' >ஞெ</span><br/ ><span class='keys'>n[SQ]</span></td></td>
-		<td><span class='lang2' >ஞை</span><br/ ><span class='keys'>[SN][SQ]</span></td></td>
+		<td><span class='lang2' >ஞே</span><br/ ><span class='keys'>[SN][SQ]</span></td></td>
 		<td><span class='lang2' >ஞை</span><br/ ><span class='keys'>i[SQ]</span></td></td>
 		<td><span class='lang2' >ஞொ</span><br/ ><span class='keys'>n[SQ]h</span></td></td>
 		<td><span class='lang2' >ஞோ</span><br/ ><span class='keys'>[SN][SQ]h</span></td></td>
@@ -519,7 +514,7 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 		<td><span class='lang2' >னை</span><br/ ><span class='keys'>id</span></td></td>
 		<td><span class='lang2' >னொ</span><br/ ><span class='keys'>ndh</span></td></td>
 		<td><span class='lang2' >னோ</span><br/ ><span class='keys'>[SN]dh</span></td></td>
-		<td><span class='lang2' >னௌs</span><br/ ><span class='keys'>nds</span></td></td>
+		<td><span class='lang2' >னௌ</span><br/ ><span class='keys'>nds</span></td></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
 		<td colspan=14>&nbsp;</td>
@@ -553,28 +548,28 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 		<td><span class='lang2' >ஷீ</span><br/ ><span class='keys'>\[SP]</span></td></td>
 		<td><span class='lang2' >ஷு</span><br/ ><span class='keys'>\[-]</span></td></td>
 		<td><span class='lang2' >ஷூ</span><br/ ><span class='keys'>\[-][-]</span></td></td>
-		<td><span class='lang2' >ஷெ</span><br/ ><span class='keys'>n]</span></td></td>
-		<td><span class='lang2' >ஷே</span><br/ ><span class='keys'>[SN];</span></td></td>
+		<td><span class='lang2' >ஷெ</span><br/ ><span class='keys'>n\</span></td></td>
+		<td><span class='lang2' >ஷே</span><br/ ><span class='keys'>[SN]\</span></td></td>
 		<td><span class='lang2' >ஷை</span><br/ ><span class='keys'>i\</span></td></td>
 		<td><span class='lang2' >ஷொ</span><br/ ><span class='keys'>n\h</span></td></td>
 		<td><span class='lang2' >ஷோ</span><br/ ><span class='keys'>[SN]\h</span></td></td>
 		<td><span class='lang2' >ஷௌ</span><br/ ><span class='keys'>n\s</span></td></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee''>
-		<td style='background-color:#dedede'><span class='lang2' >ஸ</span><br/ ><span class='keys'>]]</span></td></td>
-		<td><span class='lang2' >ஸ்</span><br/ ><span class='keys'>]];</span></td></td>
-		<td><span class='lang2' >ஸ‍</span><br/ ><span class='keys'>]]</span></td></td>
-		<td><span class='lang2' >ஸா</span><br/ ><span class='keys'>]]h</span></td></td>
-		<td><span class='lang2' >ஸி</span><br/ ><span class='keys'>]]p</span></td></td>
-		<td><span class='lang2' >ஸீ</span><br/ ><span class='keys'>]][SP]</span></td></td>
-		<td><span class='lang2' >ஸு</span><br/ ><span class='keys'>]][-]</span></td></td>
-		<td><span class='lang2' >ஸூ</span><br/ ><span class='keys'>]][-][-]</span></td></td>
-		<td><span class='lang2' >ஸெ</span><br/ ><span class='keys'>n]]</span></td></td>
-		<td><span class='lang2' >ஸே</span><br/ ><span class='keys'>[SN]]]</span></td></td>
-		<td><span class='lang2' >ஸை</span><br/ ><span class='keys'>i]]</span></td></td>
-		<td><span class='lang2' >ஸொ</span><br/ ><span class='keys'>n]]h</span></td></td>
-		<td><span class='lang2' >ஸோ</span><br/ ><span class='keys'>[SN]]]h</span></td></td>
-		<td><span class='lang2' >ஸௌ</span><br/ ><span class='keys'>n]]s</span></td></td>
+		<td style='background-color:#dedede'><span class='lang2' >ஸ</span><br/ ><span class='keys'>]</span></td></td>
+		<td><span class='lang2' >ஸ்</span><br/ ><span class='keys'>];</span></td></td>
+		<td><span class='lang2' >ஸ‍</span><br/ ><span class='keys'>]</span></td></td>
+		<td><span class='lang2' >ஸா</span><br/ ><span class='keys'>]h</span></td></td>
+		<td><span class='lang2' >ஸி</span><br/ ><span class='keys'>]p</span></td></td>
+		<td><span class='lang2' >ஸீ</span><br/ ><span class='keys'>][SP]</span></td></td>
+		<td><span class='lang2' >ஸு</span><br/ ><span class='keys'>][-]</span></td></td>
+		<td><span class='lang2' >ஸூ</span><br/ ><span class='keys'>][-][-]</span></td></td>
+		<td><span class='lang2' >ஸெ</span><br/ ><span class='keys'>n]</span></td></td>
+		<td><span class='lang2' >ஸே</span><br/ ><span class='keys'>[SN]]</span></td></td>
+		<td><span class='lang2' >ஸை</span><br/ ><span class='keys'>i]</span></td></td>
+		<td><span class='lang2' >ஸொ</span><br/ ><span class='keys'>n]h</span></td></td>
+		<td><span class='lang2' >ஸோ</span><br/ ><span class='keys'>[SN]]h</span></td></td>
+		<td><span class='lang2' >ஸௌ</span><br/ ><span class='keys'>n]s</span></td></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
 		<td style='background-color:#dedede'><span class='lang2' >ஹ</span><br/ ><span class='keys'>`</span></td></td>
@@ -593,25 +588,25 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 		<td><span class='lang2' >ஹௌ</span><br/ ><span class='keys'>n`s</span></td></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee''>
-		<td style='background-color:#dedede'><span class='lang2' >க்ஷ</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷ்</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷ‍</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷா</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷி</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷீ</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷு</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷூ</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷெ</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷே</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷை</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷொ</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷோ</span><br/ ><span class='keys'></span></td></td>
-		<td><span class='lang2' >க்ஷௌ</span><br/ ><span class='keys'></span></td></td>
+		<td style='background-color:#dedede'><span class='lang2' >க்ஷ</span><br/ ><span class='keys'>f;\</span></td></td>
+		<td><span class='lang2' >க்ஷ்</span><br/ ><span class='keys'>f;\;</span></td></td>
+		<td><span class='lang2' >க்ஷ‍</span><br/ ><span class='keys'>f;\</span></td></td>
+		<td><span class='lang2' >க்ஷா</span><br/ ><span class='keys'>f;\h</span></td></td>
+		<td><span class='lang2' >க்ஷி</span><br/ ><span class='keys'>f;\p</span></td></td>
+		<td><span class='lang2' >க்ஷீ</span><br/ ><span class='keys'>f;\[SP]</span></td></td>
+		<td><span class='lang2' >க்ஷு</span><br/ ><span class='keys'>f;\-</span></td></td>
+		<td><span class='lang2' >க்ஷூ</span><br/ ><span class='keys'>f;\--</span></td></td>
+		<td><span class='lang2' >க்ஷெ</span><br/ ><span class='keys'>f;n\</span></td></td>
+		<td><span class='lang2' >க்ஷே</span><br/ ><span class='keys'>f;[SN]\</span></td></td>
+		<td><span class='lang2' >க்ஷை</span><br/ ><span class='keys'>f;i\</span></td></td>
+		<td><span class='lang2' >க்ஷொ</span><br/ ><span class='keys'>f;n\h</span></td></td>
+		<td><span class='lang2' >க்ஷோ</span><br/ ><span class='keys'>f;[SN]\h</span></td></td>
+		<td><span class='lang2' >க்ஷௌ</span><br/ ><span class='keys'>f;n\s</span></td></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
 		<td colspan=14>&nbsp;</td>
 	</tr>
-	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
+	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
 		<td style='text-align:left; font-weight:bold; background-color:#dedede' valign=top>Other Characters</td>
 		<td><span class='lang2' >ஃ</span><br/ ><span class='keys'>/</span></td></td>
 		<td><span class='lang2' >.</span><br/ ><span class='keys'>.</span></td></td>
@@ -621,10 +616,28 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 		<td><span class='lang2' >(</span><br/ ><span class='keys'>[S(]</span></td></td>
 		<td><span class='lang2' >)</span><br/ ><span class='keys'>[S)]</span></td></td>
 		<td><span class='lang2' >'</span><br/ ><span class='keys'>[S|]</span></td></td>
+		<td><span class='lang2' >'</span><br/ ><span class='keys'>'</span></td></td>
 		<td><span class='lang2' >:</span><br/ ><span class='keys'>[S:]</span></td></td>
 		<td><span class='lang2' >,</span><br/ ><span class='keys'>[S>]</span></td></td>
 		<td><span class='lang2' >?</span><br/ ><span class='keys'>[S/]</span></td></td>
+		<td><span class='lang2' >=</span><br/ ><span class='keys'>=</span></td></td>
 	</tr>
+	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
+		<td style='text-align:left; font-weight:bold; background-color:#dedede' valign=top></td>
+		<td><span class='lang2' >~</span><br/ ><span class='keys'>[S~]</span></td></td>
+		<td><span class='lang2' >*</span><br/ ><span class='keys'>[S*]</span></td></td>
+		<td><span class='lang2' >_</span><br/ ><span class='keys'>[S_]</span></td></td>
+		<td><span class='lang2' >+</span><br/ ><span class='keys'>[S+]</span></td></td>
+		<td><span class='lang2' >{</span><br/ ><span class='keys'>[S{}]</span></td></td>
+		<td><span class='lang2' >}</span><br/ ><span class='keys'>[S}]</span></td></td>
+		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
+		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
+		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
+		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
+		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
+		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
+		<td><span class='lang2' ></span><br/ ><span class='keys'></span></td></td>
+	</tr> 
 	</table>
 </div>
 
