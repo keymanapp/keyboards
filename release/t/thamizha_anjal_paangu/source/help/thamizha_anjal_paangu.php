@@ -41,10 +41,6 @@ This keyboard is designed for the Tamil language.  It is a phonetic keyboard, wh
 
 <div id='osk'>
   <h3>Desktop Keyboard layout</h3>
-	<h4>Default (unshifted)</h4>
-	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
-	<h4>Shift</h4>
-	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
 </div>
 
 
@@ -78,7 +74,7 @@ This keyboard is designed for the Tamil language.  It is a phonetic keyboard, wh
 		</tr>
 		<tr style='color:#0000AF; font-weight:normal'>
 			<td>Tamil</td>
-			<td><span class='lang2' style='color:#0000FF; font-size:120%'>தமிழ் அரிச்சுவடி</span><</td>
+			<td><span class='lang2' style='color:#0000FF; font-size:120%'>தமிழ் அரிச்சுவடி</span></td>
 			<td>"Tamil alphabet"</td>
 			<td><span class='keys'>thamiz arissuvadi</span></td>
 		</tr>
@@ -291,8 +287,8 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >எ</span><br/><span class='keys'>e</span></td>
 		<td><span class='lang2' >ஏ</span><br/><span class='keys'>ee</span></td>
 		<td><span class='lang2' >ஐ</span><br/><span class='keys'>ai</span></td>
-		<td><span class='lang2' >ஒ</span><br/><span class='keys'>u</span></td>
-		<td><span class='lang2' >ஓ</span><br/><span class='keys'>uu</span></td>
+		<td><span class='lang2' >ஒ</span><br/><span class='keys'>o</span></td>
+		<td><span class='lang2' >ஓ</span><br/><span class='keys'>oo</span></td>
 		<td><span class='lang2' >ஔ</span><br/><span class='keys'>au</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#dedede'>
@@ -302,12 +298,12 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td>  </td>
 		<td> <span class='keys'>I</span></td>
 		<td>  </td>
-		<td> <span class='keys'>O</span></td>
+		<td> <span class='keys'>U</span></td>
 		<td>  </td>
 		<td> <span class='keys'>E</span></td>
 		<td>  </td>
 		<td>  </td>
-		<td> <span class='keys'>U</span></td>
+		<td> <span class='keys'>O</span></td>
 		<td>  </td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -317,13 +313,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >கா</span><br/><span class='keys'>kaa</span></td>
 		<td><span class='lang2' >கி</span><br/><span class='keys'>ki</span></td>
 		<td><span class='lang2' >கீ</span><br/><span class='keys'>kii</span></td>
-		<td><span class='lang2' >கு</span><br/><span class='keys'>ko</span></td>
-		<td><span class='lang2' >கூ</span><br/><span class='keys'>koo</span></td>
+		<td><span class='lang2' >கு</span><br/><span class='keys'>ku</span></td>
+		<td><span class='lang2' >கூ</span><br/><span class='keys'>kuu</span></td>
 		<td><span class='lang2' >கெ</span><br/><span class='keys'>ke</span></td>
 		<td><span class='lang2' >கே</span><br/><span class='keys'>kee</span></td>
 		<td><span class='lang2' >கை</span><br/><span class='keys'>kai</span></td>
-		<td><span class='lang2' >கொ</span><br/><span class='keys'>ku</span></td>
-		<td><span class='lang2' >கோ</span><br/><span class='keys'>kuu</span></td>
+		<td><span class='lang2' >கொ</span><br/><span class='keys'>ko</span></td>
+		<td><span class='lang2' >கோ</span><br/><span class='keys'>koo</span></td>
 		<td><span class='lang2' >கௌ</span><br/><span class='keys'>kau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -333,13 +329,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >ஙா</span><br/><span class='keys'>Xaa</span></td>
 		<td><span class='lang2' >ஙி</span><br/><span class='keys'>Xi</span></td>
 		<td><span class='lang2' >ஙீ</span><br/><span class='keys'>Xii</span></td>
-		<td><span class='lang2' >ஙு</span><br/><span class='keys'>Xo</span></td>
-		<td><span class='lang2' >ஙூ</span><br/><span class='keys'>Xoo</span></td>
+		<td><span class='lang2' >ஙு</span><br/><span class='keys'>Xu</span></td>
+		<td><span class='lang2' >ஙூ</span><br/><span class='keys'>Xuu</span></td>
 		<td><span class='lang2' >ஙெ</span><br/><span class='keys'>Xe</span></td>
 		<td><span class='lang2' >ஙே</span><br/><span class='keys'>Xee</span></td>
 		<td><span class='lang2' >ஙை</span><br/><span class='keys'>Xai</span></td>
-		<td><span class='lang2' >ஙொ</span><br/><span class='keys'>Xu</span></td>
-		<td><span class='lang2' >ஙோ</span><br/><span class='keys'>Xuu</span></td>
+		<td><span class='lang2' >ஙொ</span><br/><span class='keys'>Xo</span></td>
+		<td><span class='lang2' >ஙோ</span><br/><span class='keys'>Xoo</span></td>
 		<td><span class='lang2' >ஙௌ</span><br/><span class='keys'>Xau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -349,13 +345,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >சா</span><br/><span class='keys'>saa</span></td>
 		<td><span class='lang2' >சி</span><br/><span class='keys'>si</span></td>
 		<td><span class='lang2' >சீ</span><br/><span class='keys'>sii</span></td>
-		<td><span class='lang2' >சு</span><br/><span class='keys'>so</span></td>
-		<td><span class='lang2' >சூ</span><br/><span class='keys'>soo</span></td>
+		<td><span class='lang2' >சு</span><br/><span class='keys'>su</span></td>
+		<td><span class='lang2' >சூ</span><br/><span class='keys'>suu</span></td>
 		<td><span class='lang2' >செ</span><br/><span class='keys'>se</span></td>
 		<td><span class='lang2' >சே</span><br/><span class='keys'>see</span></td>
 		<td><span class='lang2' >சை</span><br/><span class='keys'>sai</span></td>
-		<td><span class='lang2' >சொ</span><br/><span class='keys'>su</span></td>
-		<td><span class='lang2' >சோ</span><br/><span class='keys'>suu</span></td>
+		<td><span class='lang2' >சொ</span><br/><span class='keys'>so</span></td>
+		<td><span class='lang2' >சோ</span><br/><span class='keys'>soo</span></td>
 		<td><span class='lang2' >சௌ</span><br/><span class='keys'>sau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -365,13 +361,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >ஞா</span><br/><span class='keys'>Waa</span></td>
 		<td><span class='lang2' >ஞி</span><br/><span class='keys'>Wi</span></td>
 		<td><span class='lang2' >ஞீ</span><br/><span class='keys'>Wii</span></td>
-		<td><span class='lang2' >ஞு</span><br/><span class='keys'>Wo</span></td>
-		<td><span class='lang2' >ஞூ</span><br/><span class='keys'>Woo</span></td>
+		<td><span class='lang2' >ஞு</span><br/><span class='keys'>Wu</span></td>
+		<td><span class='lang2' >ஞூ</span><br/><span class='keys'>Wuu</span></td>
 		<td><span class='lang2' >ஞெ</span><br/><span class='keys'>We</span></td>
 		<td><span class='lang2' >ஞை</span><br/><span class='keys'>Wee</span></td>
 		<td><span class='lang2' >ஞை</span><br/><span class='keys'>Wai</span></td>
-		<td><span class='lang2' >ஞொ</span><br/><span class='keys'>Wu</span></td>
-		<td><span class='lang2' >ஞோ</span><br/><span class='keys'>Wuu</span></td>
+		<td><span class='lang2' >ஞொ</span><br/><span class='keys'>Wo</span></td>
+		<td><span class='lang2' >ஞோ</span><br/><span class='keys'>Woo</span></td>
 		<td><span class='lang2' >ஞௌ</span><br/><span class='keys'>Wau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -381,13 +377,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >டா</span><br/><span class='keys'>taa</span></td>
 		<td><span class='lang2' >டி</span><br/><span class='keys'>ti</span></td>
 		<td><span class='lang2' >டீ</span><br/><span class='keys'>tii</span></td>
-		<td><span class='lang2' >டு</span><br/><span class='keys'>to</span></td>
-		<td><span class='lang2' >டூ</span><br/><span class='keys'>too</span></td>
+		<td><span class='lang2' >டு</span><br/><span class='keys'>tu</span></td>
+		<td><span class='lang2' >டூ</span><br/><span class='keys'>tuu</span></td>
 		<td><span class='lang2' >டெ</span><br/><span class='keys'>te</span></td>
 		<td><span class='lang2' >டே</span><br/><span class='keys'>tee</span></td>
 		<td><span class='lang2' >டை</span><br/><span class='keys'>tai</span></td>
-		<td><span class='lang2' >டொ</span><br/><span class='keys'>tu</span></td>
-		<td><span class='lang2' >டோ</span><br/><span class='keys'>tuu</span></td>
+		<td><span class='lang2' >டொ</span><br/><span class='keys'>to</span></td>
+		<td><span class='lang2' >டோ</span><br/><span class='keys'>too</span></td>
 		<td><span class='lang2' >டௌ</span><br/><span class='keys'>tau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -397,13 +393,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >ணா</span><br/><span class='keys'>Naa</span></td>
 		<td><span class='lang2' >ணி</span><br/><span class='keys'>Ni</span></td>
 		<td><span class='lang2' >ணீ</span><br/><span class='keys'>Nii</span></td>
-		<td><span class='lang2' >ணு</span><br/><span class='keys'>No</span></td>
-		<td><span class='lang2' >ணூ</span><br/><span class='keys'>Noo</span></td>
+		<td><span class='lang2' >ணு</span><br/><span class='keys'>Nu</span></td>
+		<td><span class='lang2' >ணூ</span><br/><span class='keys'>Nuu</span></td>
 		<td><span class='lang2' >ணெ</span><br/><span class='keys'>Ne</span></td>
 		<td><span class='lang2' >ணே</span><br/><span class='keys'>Nee</span></td>
 		<td><span class='lang2' >ணை</span><br/><span class='keys'>Nai</span></td>
-		<td><span class='lang2' >ணொ</span><br/><span class='keys'>Nu</span></td>
-		<td><span class='lang2' >ணோ</span><br/><span class='keys'>Nuu</span></td>
+		<td><span class='lang2' >ணொ</span><br/><span class='keys'>No</span></td>
+		<td><span class='lang2' >ணோ</span><br/><span class='keys'>Noo</span></td>
 		<td><span class='lang2' >ணௌ</span><br/><span class='keys'>Nau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -413,13 +409,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >தா</span><br/><span class='keys'>Taa</span></td>
 		<td><span class='lang2' >தி</span><br/><span class='keys'>Ti</span></td>
 		<td><span class='lang2' >தீ</span><br/><span class='keys'>Tii</span></td>
-		<td><span class='lang2' >து</span><br/><span class='keys'>To</span></td>
-		<td><span class='lang2' >தூ</span><br/><span class='keys'>Too</span></td>
+		<td><span class='lang2' >து</span><br/><span class='keys'>Tu</span></td>
+		<td><span class='lang2' >தூ</span><br/><span class='keys'>Tuu</span></td>
 		<td><span class='lang2' >தெ</span><br/><span class='keys'>Te</span></td>
 		<td><span class='lang2' >தே</span><br/><span class='keys'>Tee</span></td>
 		<td><span class='lang2' >தை</span><br/><span class='keys'>Tai</span></td>
-		<td><span class='lang2' >தொ</span><br/><span class='keys'>Tu</span></td>
-		<td><span class='lang2' >தோ</span><br/><span class='keys'>Tu</span></td>
+		<td><span class='lang2' >தொ</span><br/><span class='keys'>To</span></td>
+		<td><span class='lang2' >தோ</span><br/><span class='keys'>Too</span></td>
 		<td><span class='lang2' >தௌ</span><br/><span class='keys'>Tau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -429,13 +425,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >நா</span><br/><span class='keys'>waa</span></td>
 		<td><span class='lang2' >நி</span><br/><span class='keys'>wi</span></td>
 		<td><span class='lang2' >நீ</span><br/><span class='keys'>wii</span></td>
-		<td><span class='lang2' >நு</span><br/><span class='keys'>wo</span></td>
-		<td><span class='lang2' >நூ</span><br/><span class='keys'>woo</span></td>
+		<td><span class='lang2' >நு</span><br/><span class='keys'>wu</span></td>
+		<td><span class='lang2' >நூ</span><br/><span class='keys'>wuu</span></td>
 		<td><span class='lang2' >நெ</span><br/><span class='keys'>we</span></td>
 		<td><span class='lang2' >நே</span><br/><span class='keys'>wee</span></td>
 		<td><span class='lang2' >நை</span><br/><span class='keys'>wai</span></td>
-		<td><span class='lang2' >நொ</span><br/><span class='keys'>wu</span></td>
-		<td><span class='lang2' >நோ</span><br/><span class='keys'>wuu</span></td>
+		<td><span class='lang2' >நொ</span><br/><span class='keys'>wo</span></td>
+		<td><span class='lang2' >நோ</span><br/><span class='keys'>woo</span></td>
 		<td><span class='lang2' >நௌ</span><br/><span class='keys'>wau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -445,29 +441,29 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >பா</span><br/><span class='keys'>paa</span></td>
 		<td><span class='lang2' >பி</span><br/><span class='keys'>pi</span></td>
 		<td><span class='lang2' >பீ</span><br/><span class='keys'>pii</span></td>
-		<td><span class='lang2' >பு</span><br/><span class='keys'>po</span></td>
-		<td><span class='lang2' >பூ</span><br/><span class='keys'>poo</span></td>
+		<td><span class='lang2' >பு</span><br/><span class='keys'>pu</span></td>
+		<td><span class='lang2' >பூ</span><br/><span class='keys'>puu</span></td>
 		<td><span class='lang2' >பெ</span><br/><span class='keys'>pe</span></td>
 		<td><span class='lang2' >பே</span><br/><span class='keys'>pee</span></td>
 		<td><span class='lang2' >பை</span><br/><span class='keys'>pai</span></td>
-		<td><span class='lang2' >பொ</span><br/><span class='keys'>pu</span></td>
-		<td><span class='lang2' >போ</span><br/><span class='keys'>puu</span></td>
+		<td><span class='lang2' >பொ</span><br/><span class='keys'>po</span></td>
+		<td><span class='lang2' >போ</span><br/><span class='keys'>poo</span></td>
 		<td><span class='lang2' >பௌ</span><br/><span class='keys'>pau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
 		<td style='background-color:#dedede'><span class='lang2' >ம</span><br/> </td>
 		<td><span class='lang2' >ம்</span><br/><span class='keys'>m</span></td>
-		<td><span class='lang2' >மா</span><br/><span class='keys'>ma</span></td>
+		<td><span class='lang2' >ம</span><br/><span class='keys'>ma</span></td>
 		<td><span class='lang2' >மா</span><br/><span class='keys'>maa</span></td>
 		<td><span class='lang2' >மி</span><br/><span class='keys'>mi</span></td>
 		<td><span class='lang2' >ம்மீ</span><br/><span class='keys'>mii</span></td>
-		<td><span class='lang2' >மு</span><br/><span class='keys'>mo</span></td>
-		<td><span class='lang2' >மூ</span><br/><span class='keys'>moo</span></td>
+		<td><span class='lang2' >மு</span><br/><span class='keys'>mu</span></td>
+		<td><span class='lang2' >மூ</span><br/><span class='keys'>muu</span></td>
 		<td><span class='lang2' >மெ</span><br/><span class='keys'>me</span></td>
 		<td><span class='lang2' >மே</span><br/><span class='keys'>mee</span></td>
 		<td><span class='lang2' >மை</span><br/><span class='keys'>mai</span></td>
-		<td><span class='lang2' >மொ</span><br/><span class='keys'>mu</span></td>
-		<td><span class='lang2' >மோ</span><br/><span class='keys'>muu</span></td>
+		<td><span class='lang2' >மொ</span><br/><span class='keys'>mo</span></td>
+		<td><span class='lang2' >மோ</span><br/><span class='keys'>moo</span></td>
 		<td><span class='lang2' >மௌ</span><br/><span class='keys'>mau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -477,13 +473,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >யா</span><br/><span class='keys'>yaa</span></td>
 		<td><span class='lang2' >யி</span><br/><span class='keys'>yi</span></td>
 		<td><span class='lang2' >யீ</span><br/><span class='keys'>yii</span></td>
-		<td><span class='lang2' >யு</span><br/><span class='keys'>yo</span></td>
-		<td><span class='lang2' >யூ</span><br/><span class='keys'>yoo</span></td>
+		<td><span class='lang2' >யு</span><br/><span class='keys'>yu</span></td>
+		<td><span class='lang2' >யூ</span><br/><span class='keys'>yuu</span></td>
 		<td><span class='lang2' >யெ</span><br/><span class='keys'>ye</span></td>
 		<td><span class='lang2' >யே</span><br/><span class='keys'>yee</span></td>
 		<td><span class='lang2' >யை</span><br/><span class='keys'>yai</span></td>
-		<td><span class='lang2' >யொ</span><br/><span class='keys'>yu</span></td>
-		<td><span class='lang2' >யோ</span><br/><span class='keys'>yuu</span></td>
+		<td><span class='lang2' >யொ</span><br/><span class='keys'>yo</span></td>
+		<td><span class='lang2' >யோ</span><br/><span class='keys'>yoo</span></td>
 		<td><span class='lang2' >யௌ</span><br/><span class='keys'>yau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -493,13 +489,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >ரா</span><br/><span class='keys'>raa</span></td>
 		<td><span class='lang2' >ரி</span><br/><span class='keys'>ri</span></td>
 		<td><span class='lang2' >ரீ</span><br/><span class='keys'>rii</span></td>
-		<td><span class='lang2' >ரு</span><br/><span class='keys'>ro</span></td>
-		<td><span class='lang2' >ரூ</span><br/><span class='keys'>roo</span></td>
+		<td><span class='lang2' >ரு</span><br/><span class='keys'>ru</span></td>
+		<td><span class='lang2' >ரூ</span><br/><span class='keys'>ruu</span></td>
 		<td><span class='lang2' >ரெ</span><br/><span class='keys'>re</span></td>
 		<td><span class='lang2' >ரே</span><br/><span class='keys'>ree</span></td>
 		<td><span class='lang2' >ரை</span><br/><span class='keys'>rai</span></td>
-		<td><span class='lang2' >ரொ</span><br/><span class='keys'>ru</span></td>
-		<td><span class='lang2' >ரோ</span><br/><span class='keys'>ruu</span></td>
+		<td><span class='lang2' >ரொ</span><br/><span class='keys'>ro</span></td>
+		<td><span class='lang2' >ரோ</span><br/><span class='keys'>roo</span></td>
 		<td><span class='lang2' >ரௌ</span><br/><span class='keys'>rau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -509,13 +505,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >லா</span><br/><span class='keys'>laa</span></td>
 		<td><span class='lang2' >லி</span><br/><span class='keys'>li</span></td>
 		<td><span class='lang2' >லீ</span><br/><span class='keys'>lii</span></td>
-		<td><span class='lang2' >லு</span><br/><span class='keys'>lo</span></td>
-		<td><span class='lang2' >லூ</span><br/><span class='keys'>loo</span></td>
+		<td><span class='lang2' >லு</span><br/><span class='keys'>lu</span></td>
+		<td><span class='lang2' >லூ</span><br/><span class='keys'>luu</span></td>
 		<td><span class='lang2' >லெ</span><br/><span class='keys'>le</span></td>
 		<td><span class='lang2' >லே</span><br/><span class='keys'>lee</span></td>
 		<td><span class='lang2' >லை</span><br/><span class='keys'>lai</span></td>
-		<td><span class='lang2' >லொ</span><br/><span class='keys'>lu</span></td>
-		<td><span class='lang2' >லோ</span><br/><span class='keys'>luu</span></td>
+		<td><span class='lang2' >லொ</span><br/><span class='keys'>lo</span></td>
+		<td><span class='lang2' >லோ</span><br/><span class='keys'>loo</span></td>
 		<td><span class='lang2' >லௌ</span><br/><span class='keys'>lau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -525,13 +521,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >வா</span><br/><span class='keys'>vaa</span></td>
 		<td><span class='lang2' >வி</span><br/><span class='keys'>vi</span></td>
 		<td><span class='lang2' >வீ</span><br/><span class='keys'>vii</span></td>
-		<td><span class='lang2' >வு</span><br/><span class='keys'>vo</span></td>
-		<td><span class='lang2' >வூ</span><br/><span class='keys'>voo</span></td>
+		<td><span class='lang2' >வு</span><br/><span class='keys'>vu</span></td>
+		<td><span class='lang2' >வூ</span><br/><span class='keys'>vuu</span></td>
 		<td><span class='lang2' >வெ</span><br/><span class='keys'>ve</span></td>
 		<td><span class='lang2' >வே</span><br/><span class='keys'>vee</span></td>
 		<td><span class='lang2' >வை</span><br/><span class='keys'>vai</span></td>
-		<td><span class='lang2' >வொ</span><br/><span class='keys'>vu</span></td>
-		<td><span class='lang2' >வோ</span><br/><span class='keys'>vuu</span></td>
+		<td><span class='lang2' >வொ</span><br/><span class='keys'>vo</span></td>
+		<td><span class='lang2' >வோ</span><br/><span class='keys'>voo</span></td>
 		<td><span class='lang2' >வௌ</span><br/><span class='keys'>vau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -541,13 +537,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >ழா</span><br/><span class='keys'>zaa</span></td>
 		<td><span class='lang2' >ழி</span><br/><span class='keys'>zi</span></td>
 		<td><span class='lang2' >ழீ</span><br/><span class='keys'>zii</span></td>
-		<td><span class='lang2' >ழு</span><br/><span class='keys'>zo</span></td>
-		<td><span class='lang2' >ழூ</span><br/><span class='keys'>zoo</span></td>
+		<td><span class='lang2' >ழு</span><br/><span class='keys'>zu</span></td>
+		<td><span class='lang2' >ழூ</span><br/><span class='keys'>zuu</span></td>
 		<td><span class='lang2' >ழெ</span><br/><span class='keys'>ze</span></td>
 		<td><span class='lang2' >ழே</span><br/><span class='keys'>zee</span></td>
 		<td><span class='lang2' >ழை</span><br/><span class='keys'>zai</span></td>
-		<td><span class='lang2' >ழொ</span><br/><span class='keys'>zu</span></td>
-		<td><span class='lang2' >ழோ</span><br/><span class='keys'>zuu</span></td>
+		<td><span class='lang2' >ழொ</span><br/><span class='keys'>zo</span></td>
+		<td><span class='lang2' >ழோ</span><br/><span class='keys'>zoo</span></td>
 		<td><span class='lang2' >ழௌ</span><br/><span class='keys'>zau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -557,13 +553,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >ளா</span><br/><span class='keys'>Laa</span></td>
 		<td><span class='lang2' >ளி</span><br/><span class='keys'>Li</span></td>
 		<td><span class='lang2' >ளீ</span><br/><span class='keys'>Lii</span></td>
-		<td><span class='lang2' >ளு</span><br/><span class='keys'>Lo</span></td>
-		<td><span class='lang2' >ளூ</span><br/><span class='keys'>Loo</span></td>
+		<td><span class='lang2' >ளு</span><br/><span class='keys'>Lu</span></td>
+		<td><span class='lang2' >ளூ</span><br/><span class='keys'>Luu</span></td>
 		<td><span class='lang2' >ளெ</span><br/><span class='keys'>Le</span></td>
 		<td><span class='lang2' >ளே</span><br/><span class='keys'>Lee</span></td>
 		<td><span class='lang2' >ளை</span><br/><span class='keys'>Lai</span></td>
-		<td><span class='lang2' >ளொ</span><br/><span class='keys'>Lu</span></td>
-		<td><span class='lang2' >ளோ</span><br/><span class='keys'>Luu</span></td>
+		<td><span class='lang2' >ளொ</span><br/><span class='keys'>Lo</span></td>
+		<td><span class='lang2' >ளோ</span><br/><span class='keys'>Loo</span></td>
 		<td><span class='lang2' >ளௌ</span><br/><span class='keys'>Lau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal'>
@@ -573,13 +569,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >றா</span><br/><span class='keys'>Raa</span></td>
 		<td><span class='lang2' >றி</span><br/><span class='keys'>Ri</span></td>
 		<td><span class='lang2' >றீ</span><br/><span class='keys'>Rii</span></td>
-		<td><span class='lang2' >று</span><br/><span class='keys'>Ro</span></td>
-		<td><span class='lang2' >றூ</span><br/><span class='keys'>Roo</span></td>
+		<td><span class='lang2' >று</span><br/><span class='keys'>Ru</span></td>
+		<td><span class='lang2' >றூ</span><br/><span class='keys'>Ruu</span></td>
 		<td><span class='lang2' >றெ</span><br/><span class='keys'>Re</span></td>
 		<td><span class='lang2' >றே</span><br/><span class='keys'>Ree</span></td>
 		<td><span class='lang2' >றை</span><br/><span class='keys'>Rai</span></td>
-		<td><span class='lang2' >றொ</span><br/><span class='keys'>Ru</span></td>
-		<td><span class='lang2' >றோ</span><br/><span class='keys'>Ruu</span></td>
+		<td><span class='lang2' >றொ</span><br/><span class='keys'>Ro</span></td>
+		<td><span class='lang2' >றோ</span><br/><span class='keys'>Roo</span></td>
 		<td><span class='lang2' >றௌ</span><br/><span class='keys'>Rau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#eeeeee'>
@@ -589,13 +585,13 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 		<td><span class='lang2' >னா</span><br/><span class='keys'>naa</span></td>
 		<td><span class='lang2' >னி</span><br/><span class='keys'>ni</span></td>
 		<td><span class='lang2' >னீ</span><br/><span class='keys'>nii</span></td>
-		<td><span class='lang2' >னு</span><br/><span class='keys'>no</span></td>
-		<td><span class='lang2' >னூ</span><br/><span class='keys'>noo</span></td>
+		<td><span class='lang2' >னு</span><br/><span class='keys'>nu</span></td>
+		<td><span class='lang2' >னூ</span><br/><span class='keys'>nuu</span></td>
 		<td><span class='lang2' >னெ</span><br/><span class='keys'>ne</span></td>
 		<td><span class='lang2' >னே</span><br/><span class='keys'>nee</span></td>
 		<td><span class='lang2' >னை</span><br/><span class='keys'>nai</span></td>
-		<td><span class='lang2' >னொ</span><br/><span class='keys'>nu</span></td>
-		<td><span class='lang2' >னோ</span><br/><span class='keys'>nuu</span></td>
+		<td><span class='lang2' >னொ</span><br/><span class='keys'>no</span></td>
+		<td><span class='lang2' >னோ</span><br/><span class='keys'>noo</span></td>
 		<td><span class='lang2' >னௌ</span><br/><span class='keys'>nau</span></td>
 	</tr>
 	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
@@ -702,21 +698,6 @@ There are two ways of entering this character: <span class='keys'>Sri</span> or 
 
 <h2>Troubleshooting</h2>
 <div>
-<h4>Using Tamil keyboards with Word 2007</h4>
-<p style='margin-bottom: 4px'>Sometimes when using Word 2007, the Pulli mark ் is not suppressed correctly.  For example:</p>
-  <table style='text-align:left'>
-  <col width=180 span=3 />
-  <tr><th>Key sequence</th><th>Correct output</th><th>Word output</th></tr>
-  <tr class='lang2'><td>&#x0b95; + &#x0b85; + &#x0b95;</td><td>&#x0b95;&#x0b95;</td><td>&#x0b95;&#x0bcd;&#x0b95;</td></tr>
-  <tr class='lang2'><td>&#x0b95; + &#x0b95; + &#x0b95;+ &#x0b95;</td>
-    <td>&#x0b95;&#x0bcd;&#x0b95;&#x0b95;&#x0bcd;&#x0b95;</td>
-    <td>&#x0b95;&#x0bcd;&#x0b95;&#x0bcd;&#x0b95;&#x0bcd;&#x0b95;</td>
-  </tr>
-  </table>
-
-<p style='margin-top: 4px'>The easiest ways to deal with this are to move the cursor and press Backspace to delete the unwanted Pulli mark, or else enable the <span style='font-weight:bold'>Text Services Framework Add-In</span> if you are using Keyman Desktop Professional.    
-Disabling <span style='font-style:italic'>Tamil language editing</span> in <span style='font-style:italic'>Microsoft Office Language Settings</span> will also correct the input behaviour, but this is not recommended, as it makes selection of fonts more difficult.</p>   
-</div>
 <h4> Fonts</h4>
 <p>This keyboard allows only the standard Tamil characters, so will work with the fonts supplied with Windows.  No further downloads of fonts should be required.</p>
 <p>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a href="http://help.keymanweb.com/troubleshooting/">KeymanWeb troubleshooting guide</a>.</p>
@@ -744,6 +725,7 @@ Disabling <span style='font-style:italic'>Tamil language editing</span> in <span
 <p>
 This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.com) and K. Sethu (skhome@gmail.com).  For more information about keyboards produced by these developers, see <a target="_blank" href="http://thamizha.com">http://thamizha.com</a>.  Tavultesoft gratefully acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb.  Their effort assists in enabling people to communicate in their own language.
 </p>
+
 
 
 
