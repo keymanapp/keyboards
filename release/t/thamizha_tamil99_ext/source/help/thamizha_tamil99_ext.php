@@ -26,15 +26,12 @@
 <p>
 This keyboard is designed for the Tamil language, and is an extension of the Tamil 99 standard which has been officially approved by the regional government of Tamil Nadu.  It includes more characters on the keyboard than the standard Tamil99 keyboard.  Typing follows a consonant-vowel pattern, and the Tamil characters are arranged to make typing simple and fast for users who are familiar with the script.  It is designed for use with a normal QWERTY (English) keyboard.
 </p>
-<p>
-<a href="#Related">Click here</a> to see other keyboard layouts for Tamil.
-</p>
-</div>
+
 
 
 <div id='Using'>
 <h2>Using this Keyboard</h2>
-
+</div>
 <h3>Desktop Keyboard Layout</h3>
 		<!-- On Screen Keyboard is included here -->
 <div id='osk'>
@@ -45,7 +42,7 @@ This keyboard is designed for the Tamil language, and is an extension of the Tam
 		<!-- Basic instructions designed to get users up and running with typing -->
 
 <p>This keyboard layout was designed for ease of typing.  Characters are arranged on the keyboard according to how frequently they are used.  Grantha letters, which are used for typing Sanskrit, are typed using the <span class='keys'>[S*]</span> key. 
-Short and long vowels appear next to each other.  For example, <span class='highlightExample'>ஆ</span> (<span class='keys'>q</span> key) is above <span class='highlightExample'>அ</span> (<span class='keys'>a</span> key) , and <span class='highlightExample'>ஓ</span> (<span class='keys'>x</span> key) is beside <span class='highlightExample'>ஒ</span> (<span class='keys'>c</span> key).  Characters which normally appear together are also close together on the keyboard.</p
+Short and long vowels appear next to each other.  For example, <span class='highlightExample'>ஆ</span> (<span class='keys'>q</span> key) is above <span class='highlightExample'>அ</span> (<span class='keys'>a</span> key) , and <span class='highlightExample'>ஓ</span> (<span class='keys'>x</span> key) is beside <span class='highlightExample'>ஒ</span> (<span class='keys'>c</span> key).  Characters which normally appear together are also close together on the keyboard.</p>
 
 <p>Most of the characters used in Tamil are combinations of consonants and vowels, and these do not appear on the keyboard. Combined consonant-vowel characters are entered by typing the consonant, then the vowel.  To enter <span class='highlightExample'>ஙா</span>, which is a combination of <span class='highlightExample'>ங</span> and <span class='highlightExample'>ஆ</span>,
  type <span class='keys'>b</span> then <span class='keys'>q</span>, and the combinant character will automatically be displayed.  Pressing Backspace once will delete only the vowel component, so the character displayed on the screen will change back to <span class='highlightExample'>ங</span>, and change again if a different vowel is typed.</p>
@@ -713,7 +710,7 @@ This character is entered by typing <span class='keys'>T</span>.  Currently, som
 
 <h2>Troubleshooting</h2>
 
-<h4> Fonts</h4>
+<h4>Fonts</h4>
 <p>Some of the fonts included with Windows do not include all the Tamil characters that are available with this keyboard.  In order to display every character correctly, we recommend you download and install <span style="font-weight:bold">Tamil fonts</span>.</p>
 <p>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a href="http://helpkeymanweb.com/troubleshooting/">KeymanWeb troubleshooting guide</a>.</p>
 
