@@ -35,10 +35,6 @@ This keyboard is designed for the Tamil language and based on the new Tamil type
 <div id='osk'>
 
   <h3>Desktop Keyboard layout</h3>
-	<h4>Default (unshifted)</h4>
-	<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
-	<h4>Shift</h4>
-	<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
 
 </div><br style="clear: left">
 
