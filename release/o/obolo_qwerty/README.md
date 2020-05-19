@@ -1,4 +1,4 @@
-obolo_qwerty keyboard
+Obolo Qwerty keyboard
 ==============
 
 © Rogers Edeh
@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-obolo_qwerty generated from template
+A simple keyboard (QWERTY layout) for typing Obolo language.
 
 Links
 -----
