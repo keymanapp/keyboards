@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Clavier du Burkina';
-  $pagetitle = 'Clavier du Burkina';
+  $pagename = 'Guide d'utilisation pour le clavier du Burkina / Clavier du Burkina Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = '
   .clavbur9 {
 	font-family: Charis SIL;
@@ -21,11 +21,9 @@
   require_once('header.php');
  ?>
 
-<div class='clavbur9'>
+<h2>Disposition du clavier de l&apos;ordinateur / Desktop keyboard layout</h2>
 
-<h2 align="center">Guide d'utilisation pour le clavier du Burkina vérsion 9.0.1</h2>
-
-<h2>Comment composer les caractères spéciaux :</h2>
+<h3>Comment composer les caractères spéciaux / How to compose special characters:</h3>
 <table class='keytable' bgcolor="#FFFFCC">
           <tr class="ListHeaderColor">
             <th> Taper</th>
@@ -165,11 +163,14 @@
             <td>»</td>
           </tr>
 </table>
-<table width="100%" border="0" cellspacing="0" cellpadding="2" class="FooterColor">
-  <tr> 
-    <td> <div align="left">©2007 <a href="http://sil-burkina.org">SIL Burkina Faso<br />
-    </a>BP 1784, Ouagadougou 01, Burkina Faso<br /> 
-    50.36.48.51 </div></td>
-  </tr>
-</table>
+</div>
+
+<h2>Disposition du clavier du téléphone / Phone keyboard layout</h2>
+
+<p>À cause de la quantité limitée de touches, certains caractères sont cachés. Garder l&apos;appui sur une touche avec un petit point en haut à droite pour les révéler et les utiliser.</p>
+<p>Because of the limited number of keys, some characters are hidden. Press and hold a key with a small dot in the upper right corner to reveal and use them.</p>
+	
+<div id='osk-tablet' data-states='default shift numeric'>
+</div>
+
 </div>

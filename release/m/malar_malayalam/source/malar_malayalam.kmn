@@ -1,0 +1,318 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Malar Malayalam'
+store(&COPYRIGHT) '© 2019 Ramesh Kunnappully [MIT License]'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'malar_malayalam.kvks'
+store(&LAYOUTFILE) 'malar_malayalam.keyman-touch-layout'
+store(&BITMAP) 'malar_malayalam.ico'
+store(&MESSAGE) 'Malar Malayalam Keyboard is a transliteration based Malayalam Input Method. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 12.1. Malayalam Unicode fonts under the SIL Open Font License are available at https://smc.org.in/fonts/ and http://rachana.org.in/.'
+
+begin Unicode > use(main)
+
+store(Digits)   '0'    '1'    '2'    '3'    '4'    '5'    '6'    '7'    '8'    '9'
+store(DigitsML) U+0D66  U+0D67  U+0D68  U+0D69  U+0D6A  U+0D6B  U+0D6C  U+0D6D  U+0D6E  U+0D6F
+
+store(Consonants) U+0D15    U+0D16    U+0D17    U+0D18    U+0D19    \
+                  U+0D1A    U+0D1B    U+0D1C    U+0D1D    U+0D1E    \
+                  U+0D1F    U+0D20    U+0D21    U+0D22    U+0D23    \
+                  U+0D24    U+0D25    U+0D26    U+0D27    U+0D28    \
+                  U+0D2A    U+0D2B    U+0D2C    U+0D2D    U+0D2E    \
+                  U+0D2F    U+0D30    U+0D32    U+0D35    U+0D36    \
+                  U+0D37    U+0D38    U+0D39    U+0D33    U+0D34    \
+                  U+0D31    U+0D3A    U+0D29
+
+group(main) using keys
+
+c Digits
+any(Digits) + [K_BKSLASH] > index(DigitsML,1)
+any(DigitsML) + any(Digits) > context index(DigitsML,2)
+dk(x) + any(Digits) > index(DigitsML,2)
+
+C Vowels
++ [K_A] > U+0D05                            c അ
+U+0D05 + [K_A] > U+0D06                     c ആ
++ [SHIFT K_A] > U+0D06                      c ആ
+U+0D06 + [K_BKSLASH] > U+0D3E               c ാ
++ [K_I] > U+0D07                            c ഇ
+U+0D07 + [K_BKSLASH] > U+0D3F               c ി
++ [SHIFT K_I] > U+0D08                      c ഈ
+U+0D07 + [K_I] > U+0D08                     c ഈ
+U+0D0E + [K_E] > U+0D08                     c ഈ
+U+0D08 + [K_BKSLASH] > U+0D40               c ീ
++[K_U] > U+0D09                             c ഉ
+U+0D09 + [K_BKSLASH] > U+0D41               c ു
++ [SHIFT K_U] > U+0D0A                      c ഊ
+U+0D09 + [K_U] > U+0D0A                     c ഊ
+U+0D12 + [K_O] > U+0D0A                     c ഊ
+U+0D0A + [K_BKSLASH] > U+0D42               c ൂ
+U+0D31 U+0D4D + [SHIFT K_R] > U+0D0B        c ഋ
+U+0D0B + [K_BKSLASH] > U+0D43               c ൃ
++ [K_E] > U+0D0E                            c എ
+U+0D0E + [K_BKSLASH] > U+0D46               c െ
+U+0D05 + [K_E] > U+0D0F                     c ഏ
++ [SHIFT K_E] > U+0D0F                      c ഏ
+U+0D0F + [K_BKSLASH] > U+0D47               c േ
+U+0D05 + [K_I] > U+0D10                     c ഐ
+U+0D0E + [K_I] > U+0D10                     c ഐ
+U+0D10 + [K_BKSLASH] > U+0D48               c ൈ
++ [K_O] > U+0D12                            c ഒ
+U+0D12 + [K_BKSLASH] > U+0D4A               c ൊ
++ [SHIFT K_O] > U+0D13                      c ഓ
+U+0D13 + [K_BKSLASH] > U+0D4B               c ോ
+U+0D05 + [K_U] > U+0D14                     c ഔ
+U+0D12 + [K_U] > U+0D14 dk(ou)              c ഔ
+U+0D14 + [K_BKSLASH] > U+0D57               c ൗ
+U+0D14 dk(ou) + [K_BKSLASH] > U+0D4C        c ൌ
++ [SHIFT K_M] > U+0D02                      c ം
++ [SHIFT K_H] > U+0D03                      c ഃ
+
+c Consonants
++ [K_K] > U+0D15 U+0D4D                     c ക്
++ [SHIFT K_K] > U+0D16 U+0D4D               c ഖ്
+U+0D15 U+0D4D + [K_H] > U+0D16 U+0D4D       c ഖ്
++ [K_G] > U+0D17 U+0D4D                     c ഗ്
++ [SHIFT K_G] > U+0D18 U+0D4D               c ഘ്
+U+0D17 U+0D4D + [K_H] > U+0D18 U+0D4D       c ഘ്
+U+0D23 U+0D4D + [K_G] > U+0D19 U+0D4D       c ങ്
+U+005F dk(c1) + [K_H] > U+0D1A U+0D4D       c ച്     
+U+0D1A U+0D4D + [K_H] > U+0D1B U+0D4D       c ഛ്
+U+005F dk(c2) + [K_H] > U+0D1B U+0D4D       c ഛ്
++ [K_J] > U+0D1C U+0D4D                     c ജ്
++ [SHIFT K_J] > U+0D1D U+0D4D               c ഝ്
+U+0D1C U+0D4D + [K_H] > U+0D1D U+0D4D       c ഝ്
+U+0D28 U+0D4D + [K_J] > U+0D1E U+0D4D       c ഞ്
++ [K_T] > U+0D1F U+0D4D                     c ട്
++ [SHIFT K_T] > U+0D20 U+0D4D               c ഠ്
++ [SHIFT K_D] > U+0D21 U+0D4D               c ഡ്
+U+0D21 U+0D4D + [K_H] > U+0D22 U+0D4D       c ഢ്
++ [SHIFT K_N] > U+0D23 U+0D4D               c ണ് 
+U+0D1F U+0D4D + [K_H] > U+0D24 U+0D4D       c ത്
+U+0D20 U+0D4D + [K_H] > U+0D25 U+0D4D       c ഥ്
++ [K_D] > U+0D26 U+0D4D                     c ദ്
+U+0D26 U+0D4D + [K_H] > U+0D27 U+0D4D       c ധ്
++ [K_N] > U+0D28 U+0D4D                     c ന്
++ [K_P] > U+0D2A U+0D4D                     c പ്
++ [K_F] > U+0D2B U+0D4D                     c ഫ്
++ [K_B] > U+0D2C U+0D4D                     c ബ്
+U+0D2C U+0D4D + [K_H] > U+0D2D U+0D4D       c ഭ്
++ [K_M] > U+0D2E U+0D4D                     c മ്
++ [K_Y] > U+0D2F U+0D4D                     c യ് 
++ [K_R] > U+0D30 U+0D4D                     c ര്
++ [K_L] > U+0D32 U+0D4D                     c ല്
++ [K_V] > U+0D35 U+0D4D                     c വ്
++ [K_W] > U+0D35 U+0D4D                     c വ്
++ [SHIFT K_S] > U+0D36 U+0D4D               c ശ്
++ [K_Z] > U+0D36 U+0D4D                     c ശ്
+U+0D38 U+0D4D + [K_H] > U+0D37 U+0D4D       c ഷ് 
++ [K_S] > U+0D38 U+0D4D                     c സ്
++ [K_H] > U+0D39 U+0D4D                     c ഹ്
++ [SHIFT K_L] > U+0D33 U+0D4D               c ള്
+U+0D36 U+0D4D + [K_H] > U+0D34 U+0D4D       c ഴ് 
++ [SHIFT K_R] > U+0D31 U+0D4D               c റ്
+U+0D30 U+0D4D + [K_R] > U+0D31 U+0D4D       c റ്
+
+U+0D28 U+0D4D + [K_T] > U+0D28 U+0D4D U+0D31 U+0D4D                 c ന്റ്
+U+0D20 U+0D4D + [SHIFT K_T] > U+0D31 U+0D4D U+0D31 U+0D4D           c റ്റ്
+U+0D28 U+0D4D + [K_K] > U+0D19 U+0D4D U+0D15 U+0D4D                 c ങ്ക്
+U+0D28 U+0D4D + [K_G] > U+0D19 U+0D4D U+0D19 U+0D4D                 c ങ്ങ്
+U+0D28 U+0D4D U+0D31 U+0D4D + [K_H] > U+0D28 U+0D4D U+0D24 U+0D4D   c ന്ത്
+U+0D28 U+0D4D U+005F dk(c1) + [K_H] > U+0D1E U+0D4D U+0D1A U+0D4D   c ഞ്ച് 
+
+c Chillu
+U+0D28 U+0D4D + [K_BKSLASH] > U+0D7B        c ൻ
+U+0D23 U+0D4D + [K_BKSLASH] > U+0D7A        c ൺ
+U+0D32 U+0D4D + [K_BKSLASH] > U+0D7D        c ൽ
+U+0D33 U+0D4D + [K_BKSLASH] > U+0D7E        c ൾ
+U+0D30 U+0D4D + [K_BKSLASH] > U+0D7C        c ർ
+U+0D15 U+0D4D + [K_BKSLASH] > U+0D7F        c ൿ
+U+0D2E U+0D4D + [K_BKSLASH] > U+0D54        c ൔ
+U+0D2F U+0D4D + [K_BKSLASH] > U+0D55        c ൕ
+U+0D34 U+0D4D + [K_BKSLASH] > U+0D56        c ൖ
+
+c Indian Rupee Sign
++ [SHIFT K_4] > U+20B9                      c ₹
+U+20B9 + [K_BKSLASH] > U+0024               c $
+U+0024 + [K_BKSLASH] > U+20B9               c ₹
+
+c  Special Rules
++ [SHIFT K_BKQUOTE] > U+0D4D                                        c ്
+any(Consonants) U+0D4D + [K_A] > index(Consonants,1)                c
+any(Consonants) U+0D4D + [SHIFT K_A] > index(Consonants,1) U+0D3E   c ാ
+any(Consonants) + [K_A] > index(Consonants,1) U+0D3E                c ാ
+any(Consonants) U+0D4D + [K_I] > index(Consonants,1) U+0D3F         c ി
+any(Consonants) U+0D4D + [SHIFT K_I] > index(Consonants,1) U+0D40   c ീ
+any(Consonants) U+0D3F + [K_I] > index(Consonants,1) U+0D40         c ീ
+any(Consonants) U+0D46 + [K_E] > index(Consonants,1) U+0D40         c ീ
+any(Consonants) U+0D4D + [K_U] > index(Consonants,1) U+0D41         c ു
+any(Consonants) U+0D4D + [SHIFT K_U] > index(Consonants,1) U+0D42   c ൂ
+any(Consonants) U+0D41 + [K_U] > index(Consonants,1) U+0D42         c ൂ
+any(Consonants) U+0D4A + [K_O] > index(Consonants,1) U+0D42         c ൂ
+any(Consonants) U+0D4D + [SHIFT K_R] > index(Consonants,1) U+0D43   c ൃ
+any(Consonants) U+0D4D + [K_E] > index(Consonants,1) U+0D46         c െ
+any(Consonants) U+0D4D + [SHIFT K_E] > index(Consonants,1) U+0D47   c േ
+any(Consonants) + [K_E] > index(Consonants,1) U+0D47                c േ
+any(Consonants) + [K_I] > index(Consonants,1) U+0D48                c ൈ
+any(Consonants) U+0D46 + [K_I] > index(Consonants,1) U+0D48         c ൈ
+any(Consonants) U+0D4D + [K_O] > index(Consonants,1) U+0D4A         c ൊ
+any(Consonants) U+0D4D + [SHIFT K_O] > index(Consonants,1) U+0D4B   c ോ
+any(Consonants) + [K_U] > index(Consonants,1) U+0D57                c ൗ
+any(Consonants) U+0D4A + [K_U] > index(Consonants,1) U+0D4C         c ൌ
+
+c Archaic Letters and Signs
+U+0D31 U+0D4D U+0D31 U+0D4D + [K_BKSLASH] > U+0D3A U+0D4D           c ഺ്
+U+0D31 U+0D4D U+0D31 + [K_BKSLASH] > U+0D3A                         c ഺ
+U+0D7B + [K_BKSLASH] > U+0D29 U+0D4D                                c ഩ്
+U+0D28 + [K_BKSLASH] > U+0D29                                       c ഩ
+U+0D32 U+0D41 + [K_BKSLASH] > U+0D0C                                c ഌ
+U+0D32 U+0D42 + [K_BKSLASH] > U+0D61                                c ൡ
+U+0D08 + [SHIFT K_I] > U+0D5F                                       c ൟ
+U+0D0B + [SHIFT K_R] > U+0D60                                       c ൠ
+U+0D60 + [K_BKSLASH] > U+0D44                                       c ൄ
+U+0D05 + [K_BKSLASH] > U+0D3D                                       c ഽ 
+
+
+U+0D4D + [SHIFT K_BKQUOTE] > U+0D3B                                     c ഻
+U+0D3B + [SHIFT K_BKQUOTE] > U+0D3C                                     c ഼
+U+0D3C + [SHIFT K_BKQUOTE] > U+0D4D                                     c ്
+any(Consonants) U+0D4D + [SHIFT K_BKQUOTE] > index(Consonants,1) U+0D3B c ഻
+any(Consonants) U+0D3B + [SHIFT K_BKQUOTE] > index(Consonants,1) U+0D3C c ഼
+any(Consonants) U+0D3C + [SHIFT K_BKQUOTE] > index(Consonants,1) U+0D4D c ്
+
+U+0D43 + [SHIFT K_R] > U+0D44                                       c ൄ
+U+0D43 + [K_BKSLASH] > U+0D44                                       c ൄ
+U+0D44 + [SHIFT K_R] > U+0D43                                       c ൃ
+U+0D44 + [K_BKSLASH] > U+0D43                                       c ൃ
+any(Consonants) U+0D43 + [SHIFT K_R] > index(Consonants, 1) U+0D44  c ൄ
+any(Consonants) U+0D43 + [K_BKSLASH] > index(Consonants, 1) U+0D44  c ൄ
+any(Consonants) U+0D44 + [SHIFT K_R] > index(Consonants, 1) U+0D43  c ൃ
+any(Consonants) U+0D44 + [K_BKSLASH] > index(Consonants, 1) U+0D43  c ൃ
+
+U+0D02 + [SHIFT K_M] > U+0D00                                       c ഀ
+U+0D02 + [K_BKSLASH] > U+0D00                                       c ഀ
+U+0D00 + [SHIFT K_M] > U+0D01                                       c ഁ
+U+0D00 + [K_BKSLASH] > U+0D01                                       c ഁ
+U+0D01 + [SHIFT K_M] > U+0D02                                       c ം
+U+0D01 + [K_BKSLASH] > U+0D02                                       c ം
+any(Consonants) U+0D02 + [SHIFT K_M] > index(Consonants, 1) U+0D00  c ഀ
+any(Consonants) U+0D02 + [K_BKSLASH] > index(Consonants, 1) U+0D00  c ഀ
+any(Consonants) U+0D00 + [SHIFT K_M] > index(Consonants, 1) U+0D01  c ഁ
+any(Consonants) U+0D00 + [K_BKSLASH] > index(Consonants, 1) U+0D01  c ഁ
+any(Consonants) U+0D01 + [SHIFT K_M] > index(Consonants, 1) U+0D02  c ം
+any(Consonants) U+0D01 + [K_BKSLASH] > index(Consonants, 1) U+0D02  c ം
+
+U+0D0C + [K_BKSLASH] > U+0D62            c ൢ
+U+0D61  + [K_BKSLASH] > U+0D63           c ൣ
+any(Consonants) U+0D4D U+0D0C + [K_BKSLASH] > index(Consonants, 1) U+0D62   c ൢ
+any(Consonants) U+0D4D U+0D61  + [K_BKSLASH] > index(Consonants, 1) U+0D63  c ൣ
+
+U+0D7C + [K_BKSLASH] > U+0D4E            c ൎ
+U+0D4E + [K_BKSLASH] > U+0D7C            c ർ
+
+'1' U+002F '160' + [K_BKSLASH] > U+0D58  c ൘
+'1' U+002F '40'  + [K_BKSLASH] > U+0D59  c ൙
+'1' U+002F '20'  + [K_BKSLASH] > U+0D5B  c ൛
+'1' U+002F '10'  + [K_BKSLASH] > U+0D5C  c ൜
+'3' U+002F '20'  + [K_BKSLASH] > U+0D5D  c ൝
+'1' U+002F '8'   + [K_BKSLASH] > U+0D77  c ൷
+'3' U+002F '16'  + [K_BKSLASH] > U+0D78  c ൸
+'1' U+002F '5'   + [K_BKSLASH] > U+0D5E  c ൞
+'1' U+002F '4'   + [K_BKSLASH] > U+0D73  c ൳
+'3' U+002F '80'  + [K_BKSLASH] > U+0D5A  c ൚
+'1' U+002F '2'   + [K_BKSLASH] > U+0D74  c ൴
+'1' U+002F '16'  + [K_BKSLASH] > U+0D76  c ൶
+'3' U+002F '4'   + [K_BKSLASH] > U+0D75  c ൵
+
+'10'+ [K_BKSLASH] > U+0D70               c ൰
+'100'+ [K_BKSLASH] > U+0D71              c ൱
+'1000'+ [K_BKSLASH] > U+0D72             c ൲ 
+
+U+0D2A U+0D31 + [K_BKSLASH] > U+0D4F     c ൏
+U+0D28 U+0D41 + [K_BKSLASH] > U+0D79     c ൹
+
+C Other Keys
++ [K_BKQUOTE] > U+0060
++ [K_1] > '1'
++ [SHIFT K_1] > U+0021
++ [K_2] > '2'
++ [SHIFT K_2] > U+0040
++ [K_3] > '3'
++ [SHIFT K_3] > U+0023
++ [K_4] > '4'
++ [K_5] > '5'
++ [SHIFT K_5] > U+0025
++ [K_6] > '6'
++ [SHIFT K_6] > U+005E
++ [K_7] > '7'
++ [SHIFT K_7] > U+0026
++ [K_8] > '8'
++ [SHIFT K_8] > U+002A
++ [K_9] > '9'
++ [SHIFT K_9] > U+0028
++ [K_0] > '0'
++ [SHIFT K_0] > U+0029
++ [K_HYPHEN] > U+002D
++ [SHIFT K_HYPHEN] > U+005F
++ [K_EQUAL] > U+003D
++ [SHIFT K_EQUAL] > U+002B
++ [K_BKSLASH] > U+005C
++ [K_LBRKT] > U+005B
++ [SHIFT K_LBRKT] > U+007B
++ [K_RBRKT] > U+005D
++ [SHIFT K_RBRKT] > U+007D
++ [K_COLON] > U+003B
++ [SHIFT K_COLON] > U+003A
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
++ [K_COMMA] > U+002C
++ [SHIFT K_COMMA] > U+003C
++ [K_PERIOD] > U+002E
++ [SHIFT K_PERIOD] > U+003E
++ [K_SLASH] > U+002F
++ [SHIFT K_SLASH] > U+003F
+
++ [K_X] > dk(x)
++ [SHIFT K_X] > dk(x)
++ [K_Q] > Nul
++ [SHIFT K_Q] > Nul
++ [SHIFT K_W] > Nul
++ [SHIFT K_Y] > Nul
++ [SHIFT K_P] > Nul
++ [SHIFT K_F] > Nul
++ [SHIFT K_Z] > Nul
++ [SHIFT K_V] > Nul
++ [SHIFT K_B] > Nul
++ [K_C] > U+005F dk(c1)
++ [SHIFT K_C] > U+005F dk(c2)
+
+c ZWNJ
++[SHIFT K_BKSLASH] > U+200C c ZWNJ
+U+200C + [SHIFT K_BKSLASH] > U+200C c ZWNJ
+U+200C + U+0020 > U+0020
+U+0020 + [SHIFT K_BKSLASH] > U+0020
+
+C Apostrophe, Quotation, Accent
+U+0027 + [K_BKSLASH] > U+2018           c ‘
+U+2018 + [K_BKSLASH] > U+2019           c ’
+U+2019 + [K_BKSLASH] > U+0060           c `
+U+0060 + [K_BKSLASH] > U+00B4           c ´
+U+00B4 + [K_BKSLASH] > U+0027           c '
+U+0022 + [K_BKSLASH] > U+201C           c “
+U+201C + [K_BKSLASH] > U+201D           c ”
+U+201D + [K_BKSLASH] > U+0022           c "
+
+C Dash
+U+002D + [K_BKSLASH] > U+2013           c –
+U+2013 + [K_HYPHEN] > context U+2013    c –
+U+2013 + [K_BKSLASH] > U+2014           c —
+U+2014 + [K_HYPHEN] > context U+2014    c —
+U+2014 + [K_BKSLASH] > U+002D           c -
+U+002D + [K_HYPHEN] > context U+002D    c -
+
+c Tilde, Backslash, Vertical bar & Dollar symbol
+dk(x) + [SHIFT K_BKQUOTE] > U+007E      c ~
+dk(x) + [K_BKSLASH] > U+005C            c \
+dk(x) + [SHIFT K_BKSLASH] > U+007C      c |
+dk(x) + [SHIFT K_4] > U+0024            c $
+
+C End

@@ -13,10 +13,10 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '9.0'
-store(&KEYBOARDVERSION) '1.3'
+  store(&KEYBOARDVERSION) '1.5'
   store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
   store(&EthnologueCode) 'gez'
-  store(&Copyright) '© 2009-2019 Ge' U+0027 'ez Frontier Foundation'
+  store(&Copyright) '© 2009-2020 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
@@ -75,6 +75,7 @@ c ---------------------Maps for Numbers-----------------------------------------
   store(arabNumbers) '123456789'
   store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
   store(arabNumbersWithZero) '0123456789'
+  store(arabNumbersCharacters) '0123456789.,:'
   store(ColonOrComma) ':,'
   store(ethWordspaceOrComma) '፡፣'
 c ---------------------End Numbers--------------------------------------------------------------
@@ -285,6 +286,9 @@ c Ethiopic Numerals
 
   '#' + any(arabNumbersWithZero) > index(arabNumbersWithZero,2)
   '#' + '#' > '#'
+  any(arabNumbersCharacters) + any(arabNumbersCharacters)  >  index(arabNumbersCharacters,1) index(arabNumbersCharacters,2)
+  '$' + any(arabNumbersWithZero) > '$' index(arabNumbersWithZero,2)
+
   + '1' > '፩'
   + any(ArabOnes) > index(ones,1)
 
@@ -301,19 +305,21 @@ c ልዩ cases for multiples of one
 
 c upto the order of 100 million
   any(ones)      + '0' > index(tens,1)
-  any(tens)      + '0' > index(ones,1)  '፻' c Hundreds
-  any(ones)  '፻ '+ '0' > index(tens,1)  '፻' c Thousands
-  any(tens)  '፻' + '0' > index(ones,1)  '፼' c Ten Thousands
-  any(ones)  '፼' + '0' > index(tens,1)  '፼' c Hundred Thousands
+  any(tens)      + '0' > index(ones,1) '፻'  c Hundreds
+  any(ones)  '፻' + '0' > index(tens,1) '፻'  c Thousands
+  any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
+  any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
   any(tens)  '፼' + '0' > index(ones,1) '፻፼' c Millions
   any(ones) '፻፼' + '0' > index(tens,1) '፻፼' c Ten Millions
-  any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions
+  any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions 
+  any(ones) '፼፼' + '0' > context beep  c do not go any higher, alert the user with a beep 
 
 c enhance this later, look for something that can copy a match over
   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
 c ---------------------End Input of Numbers-----------------------------------------------------
 
 c ---------------------Begin ዜማ Group--------------------------------------------------------
+  any(ዜማ) + any(ዜማ፡keys) > index(ዜማ, 1) index(ዜማ, 2)
   group(ዜማ፡group) using keys
   + any(ዜማ፡keys) > index(ዜማ, 1)
   nomatch        > use(main)             

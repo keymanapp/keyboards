@@ -1,5 +1,11 @@
 Change History
 =======================
+6.0.3 (October 2019)
+Fixed single key problem. Upgrade to Keyman 12.
+
+6.0.2 (December 2018)
+Style Changes and OSK updates
+
 6.0.1 (November 2018)
 ---------------------
 Fix font for mobile keyboards. Include OSK in keyboard package

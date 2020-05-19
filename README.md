@@ -17,7 +17,7 @@ multiple keyboards share the same prefix indicating provenance, for example `sil
 
 First, read the guide! <https://help.keyman.com/developer/keyboards/>
 
-Keyman Developer 10.0 is recommended to edit these files. <https://keyman.com/developer>
+Keyman Developer 12.0 is recommended to edit these files. <https://keyman.com/developer>
 
 ## Building Keyboards
 
@@ -35,6 +35,7 @@ Windows:
 Linux, macOS:
   * **WINE** is required in order to run the Keyman Developer 
     compiler which is currently a Windows-only executable.
+ * See <https://help.keyman.com/knowledge-base/95> for Mac configuration information.
 
 ### Build instructions
 
@@ -65,3 +66,5 @@ new keyboard name.
    * <https://keyman.com/developer/keymanweb/keyboards.php>: Published documentation for each keyboard
    * <https://r.keymanweb.com/api/4.0/keyboards/>: JSON API for compiled keyboards available from Keyman Cloud
    * <https://help.keyman.com/developer/cloud/keyboard_info/>: Documentation on the .keyboard_info file format used in this repository
+
+
