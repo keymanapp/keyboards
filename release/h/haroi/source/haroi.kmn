@@ -4,7 +4,7 @@ store(&TARGETS) 'any'
 store(&BITMAP) 'haroi.ico'
 store(&VISUALKEYBOARD) 'haroi.kvks'
 store(&LAYOUTFILE) 'haroi.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&COPYRIGHT) '© 2019 SIL International'
 store(&MESSAGE) 'This keyboard is adapted from VNI.'
 
@@ -136,12 +136,21 @@ U+0043 + [K_8]  > U+010C
 
 
 c Vowel lengths in Haroi, long vowels: a e ê i o ô ơ u ư  î  û 
-store(haroilongvowelslower)  U+00E2 U+00EA U+00F4 U+01A1 U+01B0 U+00EE U+00FB 
-store(haroilongvowelsupper)  U+00C2 U+00CA U+00D4 U+01A0 U+01AF U+00CE U+00DB
-store(haroianylongvowel)     outs(haroilongvowelslower) outs(haroilongvowelsupper)
+store(haroilongvowelsloweracute) U+00E2 U+00EA U+00F4 U+00EE U+00FB 
+store(haroilongvowelsupperacute) U+00C2 U+00CA U+00D4 U+00CE U+00DB
+store(haroianylongvowelacute) outs(haroilongvowelsloweracute) outs(haroilongvowelsupperacute)
+store(haroilongvowelslowerhorn)  U+01A1 U+01B0  
+store(haroilongvowelsupperhorn)  U+01A0 U+01AF
+store(haroianylongvowelhorn) outs(haroilongvowelslowerhorn) outs(haroilongvowelsupperhorn)
+store(haroianylongvowel)     outs(haroianylongvowelacute) outs(haroianylongvowelhorn)
+store(haroilongvowelsbaseacute)  'a' 'e' 'o' 'i' 'u' 'A' 'E' 'O' 'I' 'U'
+store(haroilongvowelsbasehorn)   'o' 'u' 'O' 'U'
 
 any(haroianylongvowel) + [K_8]   > index(haroianylongvowel,1) U+0306  c generate â̆ ê̆ ô̆ ơ̆ ư̆ î̆ û̆ (v+2 accents (v quality + shortness))
 
+c Cope with decomposed context too
+any(haroilongvowelsbaseacute) U+0302 + [K_8]  > index(haroianylongvowelacute,1) U+0306  c aeoiuy 6 + 8 > â̆ ê̆ ô̆ ơ̆ ư̆ î̆ û̆ and their capital counterpart
+any(haroilongvowelsbasehorn) U+031B + [K_8]  > index(haroianylongvowelhorn,1) U+0306  c aeoiuy 6 + 8 > â̆ ê̆ ô̆ ơ̆ ư̆ î̆ û̆ and their capital counterpart
 
 c Additional strokes needed to Vietnamese keyboard:
 c v + 2 accents (shortness and tones) 

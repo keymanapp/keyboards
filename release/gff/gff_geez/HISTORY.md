@@ -1,5 +1,14 @@
 # ግዕዝ (Ge'ez) Change History
 
+## 2020-03-07 1.5
+* Allow continuation of Indo-Arab numeral sequences.
+
+## 2020-01-29 1.4.1
+* Correction to syllabary table.
+
+## 2019-11-03 1.4
+* Fix to number input for orders of 10.
+
 ## 2019-04-05 1.3
  * Packing uses new shared folder for GFF keyboards.
 

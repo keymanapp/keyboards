@@ -1,9 +1,9 @@
 ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions)
 ==========================================================
 
-Copyright (C) 2009-2019 Ge'ez Frontier Foundation
+Copyright (C) 2009-2020 Ge'ez Frontier Foundation
 
-Version 1.2
+Version 1.3.10
 
 This is a Tigrinya (ti-ET, ትግርኛ-ኢትዮጵያ) language mnemonic input method that applies Ethiopian writing conventions.  It requires
 a font supporting Ethiopic script under the Unicode 3.0 standard. 
@@ -21,3 +21,12 @@ Supported Platforms
  * Windows
  * macOS
  * Linux
+ * Web
+ * iPhone
+ * iPad
+ * Android phone
+ * Android tablet
+ * Mobile devices
+ * Desktop devices
+ * Tablet devices
+

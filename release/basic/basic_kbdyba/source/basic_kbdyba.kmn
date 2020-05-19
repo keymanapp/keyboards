@@ -13,8 +13,8 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'basic_kbdyba.kvks'
 store(&BITMAP) 'basic_kbdyba.ico'
 store(&LAYOUTFILE) 'basic_kbdyba.keyman-touch-layout'
-store(&COPYRIGHT) '(c) 2018 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '(c) 2018-2020 SIL International'
+store(&KEYBOARDVERSION) '1.1'
 
 begin Unicode > use(main)
 
@@ -135,6 +135,17 @@ group(main) using keys
 + [NCAPS SHIFT K_M] > U+004d
 + [CAPS SHIFT K_M] > U+006d
 
+c 2020-Mar-02 added grave m
+dk(005b) + [K_M]       > U+006d U+0300 
+dk(005b) + [SHIFT K_M] > U+004D U+0300 
+c 2020-Mar-02 added acute m
+dk(0027) + [K_M]       > U+1e3f 
+dk(0027) + [SHIFT K_M] > U+1e3e 
+
++ [T_M_Grave] > U+006d U+0300
++ [SHIFT T_M_Grave] > U+004d U+0300
+
+
 + [NCAPS K_N] > U+006e
 + [CAPS K_N] > U+004e
 + [NCAPS SHIFT K_N] > U+004e
@@ -243,19 +254,23 @@ group(main) using keys
 + [K_oE2] > U+005c
 + [SHIFT K_oE2] > U+007c
 
+
 match > use(deadkeys)
 
 group(deadkeys)
 
+c grave
 store(dkf005b) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006e U+004e U+006f U+004f U+0075 U+0055
 store(dkt005b) U+005b U+00e0 U+00c0 U+00e8 U+00c8 U+00ec U+00cc U+01f9 U+01f8 U+00f2 U+00d2 U+00f9 U+00d9
 dk(005b) any(dkf005b) > index(dkt005b, 2)
 
+c dot below
 store(dkf005c) U+0020 U+0065 U+0045 U+006f U+004f U+0073 U+0053
 store(dkt005c) U+005c U+1eb9 U+1eb8 U+1ecd U+1ecc U+1e63 U+1e62
 dk(005c) any(dkf005c) > index(dkt005c, 2)
 
-store(dkf0027) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006e U+004e U+006f U+004f U+0075 U+0055
-store(dkt0027) U+0027 U+00e1 U+00c1 U+00e9 U+00c9 U+00ed U+00cd U+0144 U+0143 U+00f3 U+00d3 U+00fa U+00da
+c 2020-Mar-02 added acute m
+store(dkf0027) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006d U+004d U+006e U+004e U+006f U+004f U+0075 U+0055
+store(dkt0027) U+0027 U+00e1 U+00c1 U+00e9 U+00c9 U+00ed U+00cd U+1e3f U+1e3e U+0144 U+0143 U+00f3 U+00d3 U+00fa U+00da
 dk(0027) any(dkf0027) > index(dkt0027, 2)
 

@@ -3,8 +3,6 @@ Cipher Music (SIL) keyboard
 
 © 2009-2019 SIL International
 
-Version 1.0
-
 Description
 -----------
 
@@ -17,7 +15,10 @@ orthographic use, although it is usable for song lyrics in simple
 Roman writing systems. This solution is primarily intended for 
 fairly straightforward songbooks for singers, not for complex 
 instrumental music. It can handle harmony lines fine, but not a 
-lot of intricacies or subtleties (e.g. no staccato).
+lot of intricacies or subtleties (e.g. no staccato). The default 
+for this keyboard is Indonesian kepatihan. The keyboard has an 
+option key to change to Chinese jianpu. Please read the 
+documentation for how to switch to Chinese jianpu.
 
 This keyboard and the Doulos SIL Cipher font (which will be installed
 with this keyboard) work best with applications using the Graphite 

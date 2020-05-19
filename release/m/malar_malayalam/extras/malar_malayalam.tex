@@ -1,0 +1,163 @@
+% !TeX program = XeLaTeX
+
+% Malar Malayalam Keyboard Key Mapping
+% Gayathri Font: https://fonts.google.com/specimen/Gayathri
+% Roboto Mono Font: https://fonts.google.com/specimen/Roboto+Mono
+
+\documentclass[a4paper]{article}
+
+\usepackage[svgnames,dvipsnames]{xcolor}
+\usepackage[colorlinks,bookmarksopen]{hyperref}
+\usepackage{tabls}
+\usepackage[inner=.25in,outer=.25in,
+   top=.25in,bottom=.25in,]{geometry}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX,Mapping=tex-text]{Gayathri}
+\newfontfamily\malayalamfont[Script=Malayalam, Mapping=tex-text]{Gayathri}
+\newfontfamily\Manjari[Script=Malayalam]{Gayathri}
+\newfontfamily\En[Mapping=tex-text]{Roboto Mono}
+\def\en{\color{DarkGreen!100}\normalsize\En}
+\def\enh{\color{DarkGreen!100}\En}
+\def\enb{\color{Black!100}\normalsize\En}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{malayalam}
+\setotherlanguages{english}
+\makeatletter
+\def\@urlcolor{black!60}
+\def\bsh{\expandafter\@gobble\string\\}
+\def\sla{\expandafter\@gobble\string\/}
+\def\vbar{\expandafter\@gobble\string\|}
+\def\dlr{\expandafter\@gobble\string\$}
+\def\tld{\expandafter\@gobble\string\~}
+\def\appo{\expandafter\@gobble\string\'}
+\def\quo{\expandafter\@gobble\string\"}
+\makeatother
+
+\begin{document}
+\Large
+\centering
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\multicolumn{10}{c}{\enh{Malar Malayalam Keyboard}}\\
+\hline
+\multicolumn{10}{c}{സ്വരങ്ങൾ, സ്വരചിഹ്നങ്ങൾ}\\
+\hline
+
+അ & ആ & ഇ & ഈ & ഉ & ഊ & ഋ & എ & ഏ & ഐ \\
+\en a &\en aa A &\en i &\en ii ee I &\en u &\en uu oo U &
+\en RR &\en e &\en E ae &\en ai ei \\
+\hline
+
+& ാ & ി & ീ & ു & ൂ & ൃ & െ & േ & ൈ \\
+&\en aa\bsh\space A\bsh\ &\en i\bsh &\en ii\bsh\space ee\bsh\space I\bsh &
+\en u\bsh &\en uu\bsh\space oo\bsh\space U\bsh\space &\en RR\bsh &
+\en e\bsh &\en E\bsh\space ae\bsh &\en ai\bsh\space ei\bsh\space \\
+\hline
+
+ഒ & ഓ & ഔ & അം അഃ & ഌ& ൡ & ൠ & ൟ & ഽ & ് \\
+\en o &\en O &\en au\space ou &\en aM \space aH &\en lu\bsh &
+\en luu\bsh\space loo\bsh\space lU\bsh &\en RRR &
+\en II &\en a\bsh &\en\tld \\
+\hline
+
+ൊ & ോ & ൗ\space\space ൌ & ം \space  ഃ  &
+ൢ &   ൣ &  ൄ & ഀ \space\space ഁ &&  ഻ \space  ഼ \\
+\en o\bsh &\en O\bsh &\en au\bsh\space ou\bsh &\en M  \space \space H &
+\en lu\bsh\bsh &\en luu\bsh\bsh\space loo\bsh\bsh\space lU\bsh\bsh &
+\en RRR\bsh &\en MM\space MMM &&\en\tld\tld\space\tld\tld\tld \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} 
+\multicolumn{11}{c}{വ്യഞ്ജനങ്ങൾ, ചില്ലുകൾ, ചിഹ്നങ്ങൾ}\\
+\hline
+ക് & ഖ് & ഗ് & ഘ് & ങ് &
+ച് & ഛ് & ജ് & ഝ് & ഞ് & ൏\\
+\en k &\en kh K &\en g &\en gh G &\en Ng &
+\en ch &\en Ch chh &\en j &\en jh J &\en nj &\en paRa\bsh \\
+\hline
+
+ട് & ഠ് & ഡ് & ഢ് & ണ് &
+ത് & ഥ് & ദ് & ധ് & ന് & ൹\\
+\en t &\en T &\en D &\en Dh &\en N &
+\en th &\en Th &\en d &\en dh &\en n &\en nu\bsh \\
+\hline
+
+പ് & ഫ് & ബ് & ഭ് & മ് &
+യ് & ര് & ല് & വ് & ശ് & ₹\space\space\dlr\\
+\en p &\en f &\en b &\en bh &\en m &
+\en y &\en r &\en l &\en v\space w&\en z S&
+\en\space\dlr\space\space\dlr\bsh \\
+\hline
+
+ഷ് & സ് & ഹ് & ള് & ഴ് & റ് &ഩ്& ഺ് & ൎ & &\enb ZWNJ \\
+\en sh &\en s &\en h &\en L &\en zh &\en R\space rr &
+\en n\bsh\bsh &\en TT\bsh &\en r\bsh\bsh &&\en\vbar \\
+\hline
+
+ൻ & ൺ & ൽ & ൾ & ർ & ൿ & ൔ & ൕ & ൖ & &\enb Cancel \\
+\en n\bsh &\en N\bsh &\en l\bsh &\en L\bsh &\en r\bsh&
+\en k\bsh &\en m\bsh &\en y\bsh &\en zh\bsh &&\en x\space X \\
+\hline
+
+ങ്ങ് &	ങ്ക് &	ന്റ് &	ഞ്ച് & റ്റ് & ക്ഷ്	& 
+ണ്ട് & ന്ദ് & ന്ത് & മ്പ് & ന്മ് \\
+\en ng &\en nk\space Ngk &\en nt &\en nch\space njch &\en TT &
+\en ksh &\en Nt &\en nd &\en nth &\en mp  &\en nm  \\
+\hline
+
+ഞ്ഞ് & ക്ക് & വ്വ് & ന്ന് & ല്ല് & യ്യ് &ത്ത് & 
+ന്ധ് & ദ്ധ് & ജ്ഞ് & ട്ട് \\
+\en njnj &\en kk &\en vv &\en nn &\en ll &\en yy &\en thth &
+\en ndh &\en ddh &\en jnj &\en tt \\
+\hline
+
+\multicolumn{11}{c}{ഉദാഹരണങ്ങൾ}\\
+\hline
+
+ക & കാ & കി & കീ & കു & കൂ & കൃ & കൄ & 
+കെ & കേ & കൈ   \\
+\en ka &\en kaa &\en ki &\en kii &\en ku &\en kuu &\en kR &
+\en kRR &\en ke &\en kE &\en kai  \\
+\hline
+
+കൊ & കോ & കൗ & കൌ & കം & കഁ  & കഀ & 
+കഃ & ക് & ക഻ & ക഼ \\
+\en ko &\en kO &\en kau &\en kou &\en kaM &\en kaMM &
+\en kaMMM &\en kaH &\en k\space\en ka\tld &
+\en k\tld &\en k\tld\tld  \\
+\hline
+
+ ക്ര & ക്യ & ക്വ & ക്ല & കൢ & കൣ &ക്ഹ്&
+\enb\tld&\enb\bsh\space\vbar& ‘ക’ & “ക” \\
+\en kra &\en kya &\en kva &\en kla &\en klu\bsh\bsh &
+\en kluu\bsh\bsh &\en kxh&\en x\tld&\en x\bsh\space x\vbar&
+\en\appo\bsh ka\appo\bsh\bsh&\en\quo\bsh ka\quo\bsh\bsh \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\multicolumn{13}{c}{അക്കങ്ങൾ, ഭിന്നസംഖ്യകൾ}\\
+\hline
+
+൦ & ൧ & ൨ & ൩ & ൪ & ൫  & ൬  & ൭  & ൮ &
+൯ & ൰& ൱ & ൲ \\
+\en 0\bsh\space x0 &\en 1\bsh\space x1 &\en 2\bsh\space x2 &
+\en 3\bsh\space x3 &\en 4\bsh\space x4 &\en 5\bsh\space x5 &
+\en 6\bsh\space x6 &\en 7\bsh\space x7 &\en 8\bsh\space x8 &
+\en 9\bsh\space x9 &\en 10\bsh &\en 100\bsh  &\en 1000\bsh \\
+\hline
+
+൘ & ൙ & ൚ & ൛ & ൶ & ൜ & ൷ & ൝ & 
+൸ & ൞ & ൳ & ൴ & ൵ \\
+\en 1\sla160\bsh &\en 1\sla40\bsh&\en 3\sla80\bsh &
+\en 1\sla20\bsh &\en 1\sla16\bsh &\en 1\sla10\bsh &
+\en 1\sla8\bsh &\en 3\sla20\bsh &\en	 3\sla16\bsh &
+\en 1\sla5\bsh &\en 1\sla4\bsh &\en 1\sla2\bsh &
+\en 3\sla4\bsh \\
+\hline
+\end{tabular}
+
+\end{document}
