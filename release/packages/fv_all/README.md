@@ -3,7 +3,7 @@ FirstVoices Keyboard Package
 
 (c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
 
-Version 12.1
+Version 12.2
 
 __DESCRIPTION__
 
