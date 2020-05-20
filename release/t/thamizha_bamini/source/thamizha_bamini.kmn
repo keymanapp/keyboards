@@ -1,0 +1,200 @@
+﻿store(&VERSION) '10.0'
+store(&Name) "சுரதா-பாமுனி | Suratha Bamini"
+c *** Bugs Fixing Modifications by K. Sethu, April 2008 (addition of 8 lines at the bottom)
+store(&BITMAP) 'thamizha_bamini.ico'
+store(&MESSAGE) 'Bamini2Unicode - - Contributed by Suratha Yarl Vaanan(suratha@hotmail.com), Mugunth (mugunth@gmail.com); Sethu (skhome@gmail.com)'
+c store(&language) "Tamil"
+store(&COPYRIGHT) '© 2008-2020 thamizha.com and SIL International'
+c store(&WINDOWSLANGUAGES) 'x0449'
+c store(&LANGUAGE) 'x0449'
+c store(&ETHNOLOGUECODE) 'tam'
+store(&VISUALKEYBOARD) 'thamizha_bamini.kvks'
+store(&KEYBOARDVERSION) '2.1'
+store(&TARGETS) 'windows macosx linux web'
+   
+begin Unicode > use(main)
+group(main) using keys  
+ 
+"கு" + 'h'>  "கூ"        
+"கூ" + ';'>  "குர்"         
+"கூ" + 'p'>  "குரி"        
+"கூ" + 'P'>  "குரீ"        
+
+"சு" + 'h'>  "சூ"  
+"சூ" + ';'>  "சுர்"  
+"சூ" + 'p'>  "சுரி"  
+"சூ" + 'P'>  "சுரீ"         
+
+"பு" + 'h'>  "பூ" 
+"பூ"+ ';'>  "புர்"  
+"பூ" + 'p'>  "புரி"  
+"பூ" + 'P'>  "புரீ"                
+  
+"டு" + 'h'>  "டூ"      
+"டூ"  + ';'>  "டுர்"  
+"டூ"  + 'p'>  "டுரி"  
+"டூ"   + 'P'>  "டுரீ"                
+
+"ணு" + 'h'>  "ணூ"    
+"ணூ"     + ';'>  "ணுர்"  
+"ணூ"   + 'p'>  "ணுரி"  
+"ணூ"      + 'P'>  "ணுரீ"           
+    
+"து" + 'h'>  "தூ"      
+"தூ"           + ';'>  "துர்"  
+"தூ"         + 'p'>  "துரி"  
+"தூ"            + 'P'>  "துரீ"        
+
+
+"நு" + 'h'>  "நூ"   
+"நூ"           + ';'>  "நுர்"  
+"நூ"           + 'p'>  "நுரி"  
+"நூ"            + 'P'>  "நுரீ"        
+
+
+"னு" + 'h'>  "னூ" 
+"னூ"           + ';'>  "னுர்"  
+"னூ"            + 'p'>  "னுரி"  
+"னூ"          + 'P'>  "னுரீ"        
+        
+"மு" + 'h'>  "மூ"           
+ "மூ"                     + ';'>  "முர்"  
+ "மூ"                       + 'p'>  "முரி"  
+ "மூ"                     + 'P'>  "முரீ"        
+        
+"யு" + 'h'>  "யூ"    
+ "யூ"                       + ';'>  "யுர்"  
+ "யூ"                        + 'p'>  "யுரி"  
+ "யூ"                        + 'P'>  "யுரீ"        
+
+
+    
+"ரு" + 'h'>  "ரூ"             
+"ரூ"                              + ';'>  "ருர்"  
+"ரூ"                              + 'p'>  "ருரி"  
+"ரூ"                        + 'P'>  "ருரீ"        
+
+
+"று" + 'h'>  "றூ"     
+"றூ"                                + ';'>  "றுர்"  
+"றூ"                                 + 'p'>  "றுரி"  
+"றூ"                        + 'P'>  "றுரீ"        
+      
+
+"லு" + 'h'>  "லூ"  
+ "லூ"                                 + ';'>  "லுர்"  
+"லூ"                                   + 'p'>  "லுரி"  
+"லூ"                       + 'P'>  "லுரீ"           
+
+      
+"ளு" + 'h'>  "ளூ"                
+"ளூ"                                        + ';'>  "ளுர்"  
+"ளூ"                                      + 'p'>  "ளுரி"  
+"ளூ"                             + 'P'>  "ளுரீ"           
+
+
+"ழு" + 'h'>  "ழூ"                       
+ "ழூ"                                     + ';'>  "ழுர்"  
+ "ழூ"                                    + 'p'>  "ழுரி"  
+ "ழூ"                           + 'P'>  "ழுரீ"           
+
+"வு" + 'h'>  "வூ"                   
+"வூ"                                     + ';'>  "வுர்"  
+"வூ"                               + 'p'>  "வுரி"  
+ "வூ"                  + 'P'>  "வுரீ"           
+
+
++ "!" > u+0021      
++ "(" > u+0028
+      + ")" > u+0029
+      + "?" > u+003F
+    +  ':' > u+003a  
+         + "@" > u+003b                                   
+                 
+  u+0bbe + ';' >  u+0bb0 U+0bcD                                    
++ "H" > u+0bb0 U+0bcD
++ ">" > u+002c
+      + "/" > u+0b83
+      + "B" > u+0b9f u+0bc0                 
+    +  '^' > u+0b9f u+0bc2                           
+     + "b" > u+0b9f u+0bbf
+    + "#" > u+0b9a u+0bc2                
+         + "$" > u+0b95 u+0bc2
+      + "%" > u+0bae u+0bc2 
+       + "&" > u+0bb0 u+0bc2 
+       + "." > u+002E 
+         + "|" > u+0027 
+          + "-" > u+002D
+
+  store(mey1a)     'F'  'R'   'L' 'Z' 'J' 'E'     'D' 'G' 'K' 'A' 'U' 'W'    'Y' 'S' 'O' 'T'                              
+  store(meyra)        u+0b95 u+0b9a   u+0b9f u+0ba3 u+0ba4 u+0ba8  u+0ba9 u+0baa  u+0bae u+0baf u+0bb0 u+0bb1 u+0bb2 u+0bb3 u+0bb4  u+0bb5 
+           
+   + any(mey1a)    > index(meyra,1) u+0bc1   
+   
+     any(meyra) u+0bc1  + '}'    >  index(meyra,1) u+0bc2
+  
+   any(meyra) u+0bc1  + '+'    >  index(meyra,1) u+0bc2
+                        
+ 
+      
+   
+store(uyir1)     'm' 'M' ',' '<' 'c' 'C' 'v' 'V' 'I' 'x' 'X'                               
+  store(uyir)     u+0b85 u+0b86 u+0b87 u+0b88 u+0b89 u+0b8a u+0b8e u+0b8f u+0b90 u+0b92 u+0b93                              
+
+   + any(uyir1)    >  index(uyir,1)     
+  u+0b85 + 'm' > u+0b86                                   
+  u+0b87 + ',' > u+0b88                             
+  u+0b89 + 'c' > u+0b8a           
+  u+0b8e + 'v' > u+0b8f                             
+   u+0b92 + 'x' > u+0b93      
+     
+store(mey1)     'f' 'q' 'r' '[' 'Q' 'l' 'z' 'j' 'e' 'd' 'g' 'k' 'a' 'u' 'w' 'y' 's' 'o' 't' '\' ']' '`' 'h'
+store(meyr)    u+0b95 u+0b99 u+0b9a u+0b9c u+0b9e u+0b9f u+0ba3 u+0ba4 u+0ba8 u+0ba9 u+0baa  u+0bae u+0baf u+0bb0 u+0bb1 u+0bb2 u+0bb3 u+0bb4  u+0bb5 u+0bb7  u+0bb8 u+0bb9   u+0bbe                
+     
+     
+     U+0bbe  + ';' >  u+0bb0  U+0bcD 
+      U+0bbe  + 'p' >  u+0bb0  U+0bbf
+       U+0bbe  + 'P' >  u+0bb0  U+0bC0 
+       u+0bb0  U+0bbf + 'p' >  u+0bb0  U+0bC0   
+   
+        U+0bbe  + '-' >  u+0bb0  U+0bc1                               
+        u+0bb0  U+0bc1  + '-' >   u+0bb0  U+0bc2                                 
+                                                                     
+                                                         
+  + any(mey1)     > index(meyr,1)    
+                   
+   + "i" > dk(3)                                            
+   + "N" > dk(2)    
+     + "n" > dk(1)
+    dk(1) + "n" > dk(2)
+  dk(3)+ any(mey1)    > index(meyr,2)  U+0bc8                                  
+ dk(1)+ any(mey1)    > index(meyr,2)  U+0bc6 
+  dk(2)+ any(mey1)    > index(meyr,2)  U+0bc7 
+    + any(mey1)    > index(meyr,1) 
++ ';' >  U+0bcD
++ "h"  >  U+0bbe           
++ "p"  >  U+0bbf                                       
++ "P"  >  U+0bC0                        
+                                                    
+ any(meyr) U+0bbf + 'p'    >  index(meyr,1) U+0bc0          
+ any(meyr) + U+002D    >  index(meyr,1) U+0bc1
+                                                        
+ any(meyr) U+0bc1 + U+002D   >  index(meyr,1) U+0bc2      
+                                                                           
+ + u+002d  > U+0bc1                                    
+                                                             
+ any(meyr) U+0bc1  + "-"    >  index(meyr,1) U+0bc2                   
+ 
+c *** Following  8 lines added by K. Sethu (March 2008)
+store (EVow_for_La) ";hpP"
+store (TVow_for_La) U+0BCD U+0BBE U+0BBF U+0BC0
+U+0BC6 + "h" > U+0BCA 
+U+0BC7 + "h" > U+0BCB 
+U+0BC6 + "s" > U+0BCC
+U+0B92  + "s" > U+0B94
+U+0B94  + any (EVow_for_La) >  U+0B92 U+0BB3 index (TVow_for_La,2)
+U+0BCC + any (EVow_for_La) >  U+0BC6 U+0BB3 index (TVow_for_La,2)
+
+    
+c EOF
+                                 

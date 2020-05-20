@@ -3,7 +3,7 @@ Turkmen Cyrillic Keyboard
 
 Copyright (c) 2002-2020 David Gray
 
-Version 1.2
+Version 1.3
 
 __DESCRIPTION__
 Turkmen Cyrillic is a Cyrillic script keyboard for Turkmen. This keyboard 

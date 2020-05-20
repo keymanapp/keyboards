@@ -1,6 +1,10 @@
 US Basic Change History
 ====================
 
+1.2 (2020-05-01)
+----------------
+* Add a phone layout
+
 1.1.1 (2019-04-22)
 ----------------
 * Removed script where "Suppress-Script" is set to Latn in BCP 47

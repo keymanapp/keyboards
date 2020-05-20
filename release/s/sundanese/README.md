@@ -2,7 +2,7 @@ Sunda Baku Keyboard
 =====================
 Copyright (c) 2020 Ilham Nurwansah
 
-Version 1.0.3
+Version 1.0.4
 
 
 Keyboard for official Sundanese script (aksara Sunda baku) , supported with Unicode table.
