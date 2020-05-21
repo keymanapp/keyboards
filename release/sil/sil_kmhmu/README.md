@@ -1,7 +1,7 @@
 Kmhmu (SIL) Keyboard
 =====================
 
-Copyright (C) 2008-2019 SIL International
+Copyright (C) 2008-2020 SIL International
 
 Version 1.5
 
