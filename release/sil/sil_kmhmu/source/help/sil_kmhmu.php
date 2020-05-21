@@ -140,12 +140,12 @@ EXTRA;
 <tr>
   <td>●</td>
   <td>(</td>
-  <td class='kmhmu'> [</td>
+  <td class='kmhmu'> [ or {</td>
 </tr>
 <tr>
   <td>●</td>
   <td>)</td>
-  <td class='kmhmu'> ] </td>
+  <td class='kmhmu'> ] or }</td>
 </tr>
 </table>
 <h2 style="clear: left; page-break-before: always">Desktop Keyboard layout - Unshifted</h2>
