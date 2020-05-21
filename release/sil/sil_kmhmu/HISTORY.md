@@ -1,13 +1,13 @@
 SIL Kmhmu Keyboard Change History
 =======================
 
-1.5 (06 May 2019)
+1.5 (21 May 2020)
 -----------------
 * Replaced shift+u and shift+y with appropriate Unicode Characters
 * Changed name from kmhmu_2008 to SIL Kmhmu
 * Updated touch layout
 * Added support for iOS, Android, Web and Linux
-* Updated copyright lines
+* Added the latest udpated Kmhmu MX and Kmhmu OT to the package
 
 1.1 (21 May 2018)
 -----------------
