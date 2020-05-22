@@ -167,6 +167,6 @@ EXTRA;
   <p>When using outside Keyman app, the default system font may be used instead.</p>
 
 <hr/>
-<p>&copy; 2008-2020 John Durdin</p>
+<p>&copy; 2008-2020 SIL International</p>
 </body>
 </html>
