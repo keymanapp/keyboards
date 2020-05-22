@@ -1,0 +1,84 @@
+﻿c obolo_qwerty generated from template at 2020-05-09 09:03:09 with name "obolo_qwerty"
+store(&VERSION) '9.0'
+store(&NAME) 'Obolo Qwerty'
+store(&ETHNOLOGUECODE)'ann'
+store(&COPYRIGHT) '© Rogers Edeh'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'obolo_qwerty.kvks'
+store(&LAYOUTFILE) 'obolo_qwerty.keyman-touch-layout'
+store(&MESSAGE) 'A simple keyboard layout (Qwerty) to help you type very easily in Obolo language.'
+store(&KMW_HELPTEXT) 'A simple keyboard layout (Qwerty) to help you type very easily in Obolo language.'
+
+begin Unicode > use(main)
+
+store(accentibles) 'aeiọoumnAEIỌOUMN'
+store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKQUOTE] [SHIFT K_BKQUOTE] [K_BKSLASH] [SHIFT K_BKSLASH]
+store(nasals) 'mnMN'
+store(nnas) [T_CCM] [T_CRN] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKSLASH] [SHIFT K_BKSLASH]
+store(vow) 'aeiouAEIOU'
+store(grave) 'àèìòùÀÈÌÒÙ'
+store(acute) 'áéíóúÁÉÍÓÚ'
+store(circum) 'âêîôûÂÊÎÔÛ'
+store(caron) 'ǎěǐǒǔǍĚǏǑǓ'
+store(acnasals) 'ḿńḾŃ'
+store(spguy) 'mnọMNỌ'
+store(spguyop) 'ḿǹộḾǸỘ'
+store(dotable) 'oOsS'
+store(n) 'nN'
+store(erase) [K_BKSP] [SHIFT K_BKSP] [ALT K_BKSP]
+store(gravekeys) [T_GRV] [SHIFT T_GRV] [K_BKQUOTE]
+store(acutekeys) [T_ACU] [SHIFT T_ACU] [K_BKSLASH]
+store(circumflexkeys) [T_CCM] [SHIFT T_CCM] [SHIFT K_BKQUOTE]
+store(caronkeys) [T_CRN] [SHIFT T_CRN] [SHIFT K_BKSLASH]
+store(dotkeys) [T_DOT] [SHIFT T_DOT] [K_EQUAL]
+store(macronkeys) [T_NAS] [SHIFT T_NAS] [SHIFT K_EQUAL]
+
+group(main) using keys
+
+'o' + any(dotkeys) > 'ọ'
+'O' + any(dotkeys) > 'Ọ'
+
+'s' + any(dotkeys) > 'ṣ'
+'S' + any(dotkeys) > 'Ṣ'
+
+c make up for
+'m' + any(gravekeys) > 'm̀'
+'M' + any(gravekeys) > 'M̀'
+
+'n' + any(gravekeys) > 'ǹ'
+'N' + any(gravekeys) > 'Ǹ'
+
+'ọ' + any(gravekeys) > 'ọ̀'
+'Ọ' + any(gravekeys) > 'Ọ̀'
+
+'ọ' + any(acutekeys) > 'ọ́'
+'Ọ' + any(acutekeys) > 'Ọ́'
+
+'ọ' + any(circumflexkeys) > 'ộ'
+'Ọ' + any(circumflexkeys) > 'Ộ'
+
+'ọ' + any(caronkeys) > 'ọ̌'
+'Ọ' + any(caronkeys) > 'Ọ̌'
+
+'n' + any(macronkeys) > 'n̄'
+'N' + any(macronkeys) > 'N̄'
+
+c any and index
+any(vow) + any(gravekeys) > index(grave,1)
+any(vow) + any(acutekeys) > index(acute,1)
+any(vow) + any(circumflexkeys) > index(circum,1)
+any(vow) + any(caronkeys) > index(caron,1)
+any(nasals) + any(acutekeys) > index(acnasals,1)
+
+c virtual keys
+any(grave) + any(erase) > index(vow,1)
+any(acute) + any(erase) > index(vow,1)
+any(circum) + any(erase) > index(vow,1)
+any(caron) + any(erase) > index(vow,1)
+any(spguyop) + any(erase) > index(spguy,1)
+
+notany(accentibles) + any(accents) > context beep c prevent diacritics (stacking, on empty space, and on plain consonants)
+notany(dotable) + any(dotkeys) > context beep
+notany(n) + any(macronkeys) > context beep
+any(nasals) + any(nnas) > context beep c prevent certain accents on nasal consonants
