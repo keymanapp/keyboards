@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-Obolo Qwerty keyboard, a simple keyboard in QWERTY layout, for typing Obolo language.
+Obolo Qwerty keyboard is a simple keyboard, in QWERTY layout, for typing Obolo language.
 
 Links
 -----
