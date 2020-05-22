@@ -8,6 +8,7 @@ SIL Kmhmu Keyboard Change History
 * Updated touch layout
 * Added support for iOS, Android, Web and Linux
 * Added the latest udpated Kmhmu MX and Kmhmu OT to the package
+* Copyright transferred to SIL International with permission of author
 
 1.1 (21 May 2018)
 -----------------
