@@ -1,7 +1,7 @@
 Obolo Qwerty keyboard
 ==============
 
-© Rogers Edeh
+© 2020 Rogers Edeh
 
 Version 1.0
 
