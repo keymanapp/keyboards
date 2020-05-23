@@ -1,5 +1,11 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+
+1.3.11 (2020-05-23)
+-----------------------
+* Refinement of Touch Layout mappings (Beta 3)
+* Fixed a missing longpress mapping for K_2 on layer2
+
 1.3.10 (2020-05-06)
 -----------------------
 * Refinement of Touch Layout mappings (Beta 2)
