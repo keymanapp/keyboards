@@ -1,9 +1,9 @@
 Plains Cree Syllabics Keyboard
 ==============================
 
-Copyright (C) 2019 National Research Council Canada
+Copyright (C) 2019, 2020 National Research Council Canada
 
-Version 1.0.1
+Version 1.1.0
 
 Description
 -----------

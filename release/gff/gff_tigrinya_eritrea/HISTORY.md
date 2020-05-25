@@ -1,5 +1,8 @@
 # ትግርኛ-ኤርትራ (Tigrinya Keyboard for Eritrean Conventions) Change History
 
+## 2020-01-29 1.3.1
+* Correction to syllabary table.
+
 ## 2020-01-22 1.3
 * Package migration to Abyssinica SIL 2.000
 

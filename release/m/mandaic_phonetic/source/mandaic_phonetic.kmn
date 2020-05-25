@@ -1,0 +1,145 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Mandaic Phonetic'
+store(&Targets) "windows macosx linux web"
+store(&VISUALKEYBOARD) 'mandaic_phonetic.kvks'
+store(&BITMAP) 'mandaic_phonetic.ico'
+store(&COPYRIGHT) '© 2020 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(nul) "~QWERTYUIPFGHKLZXCVBNM"
++ any(nul) > nul
+
++ [K_SPACE] > U+0020
+
++ [K_0] > U+0030
++ [SHIFT K_0] > U+0028
+
++ [K_1] > U+0031
++ [SHIFT K_1] > U+0021
++ [SHIFT CTRL K_1] > U+200d
+
++ [K_2] > U+0032
++ [SHIFT K_2] > U+0040
++ [SHIFT CTRL K_2] > U+200c
+
++ [K_3] > U+0033
++ [SHIFT K_3] > U+0023
++ [SHIFT CTRL K_3] > U+200e
+
++ [K_4] > U+0034
++ [SHIFT K_4] > U+0024
++ [SHIFT CTRL K_4] > U+200f
+
++ [K_5] > U+0035
++ [SHIFT K_5] > U+0025
+
++ [K_6] > U+0036
++ [SHIFT K_6] > U+005e
+
++ [K_7] > U+0037
++ [SHIFT K_7] > U+0026
+
++ [K_8] > U+0038
++ [SHIFT K_8] > U+002a
+
++ [K_9] > U+0039
++ [SHIFT K_9] > U+0029
+
++ [K_A] > U+0840
++ [SHIFT K_A] > U+085b
+
++ [K_B] > U+0841
+
++ [K_C] > U+0851
+
++ [K_D] > U+0843
++ [SHIFT K_D] > U+085a
+
++ [K_E] > U+0856
+
++ [K_F] > U+0857
+
++ [K_G] > U+0842
+
++ [K_H] > U+0844
+
++ [K_I] > U+084f
+
++ [K_J] > U+0849
++ [SHIFT K_J] > U+0640
+
++ [K_K] > U+084a
+
++ [K_L] > U+084b
+
++ [K_M] > U+084c
+
++ [K_N] > U+084d
+
++ [K_O] > U+0847
++ [SHIFT K_O] > U+00d7
+
++ [K_P] > U+0850
+
++ [K_Q] > U+0852
+
++ [K_R] > U+0853
+
++ [K_S] > U+084e
++ [SHIFT K_S] > U+0859
+
++ [K_T] > U+0855
+
++ [K_U] > U+0845
+
++ [K_V] > U+0858
+
++ [K_W] > U+0854
+
++ [K_X] > U+085e
+
++ [K_Y] > U+0848
+
++ [K_Z] > U+0846
+
++ [K_COLON] > U+061b
++ [SHIFT K_COLON] > U+003a
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > U+002b
+
++ [K_COMMA] > U+060c
++ [SHIFT K_COMMA] > U+002c
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+005f
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > U+002e
+
++ [K_SLASH] > U+005c
++ [SHIFT K_SLASH] > U+061f
+
++ [K_BKQUOTE] > U+0640
+
++ [K_LBRKT] > U+005b
++ [SHIFT K_LBRKT] > U+003c
+
++ [K_BKSLASH] > U+005c
++ [SHIFT K_BKSLASH] > U+007c
+
++ [K_RBRKT] > U+005d
++ [SHIFT K_RBRKT] > U+003e
+
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
+
++ [K_oE2] > U+005c
++ [SHIFT K_oE2] > U+007c
+
+

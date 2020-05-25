@@ -162,14 +162,14 @@ already pressed <kbd>ᑊ</kbd>, <kbd>ᐟ</kbd>, <kbd>ᐠ</kbd>, <kbd>ᐨ</kbd>,
 <h3>Numeric</h3>
 <p>After pressing <kbd class="special">123</kbd> from any other screen.</p>
 <figure>
-  <img alt="Numeric layout" src="layout-numeric.jpg" />
+  <img alt="Numeric layout" src="layout-numeric.png" />
 </figure>
 
 <h3>Punctuation Subkeys</h3>
 <p> Obtain this pop-up by pressing-and-holding the <kbd>᙮</kbd> key near
     the bottom-right corner of the keyboard.</p>
 <figure>
-  <img alt="Punctuation subkeys" src="layout-punctuation.jpg" />
+  <img alt="Punctuation subkeys" src="layout-punctuation.png" />
 </figure>
 
 <hr/>
