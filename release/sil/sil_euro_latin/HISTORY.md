@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 1.9 (15 Apr 2020)
+* Added DejaVu Sans back into package
 ## 1.8.1 (7 Dec 2018)
 * Switch abc and currency keys on numeric/symbol layers of touch layout.
 ## 1.8: (6 Jul 2018)

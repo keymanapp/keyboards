@@ -1,5 +1,8 @@
 # ብሊን (Blin) Change History
 
+## 2020-01-29 1.4.1
+* Correction to syllabary table.
+
 ## 2020-01-22 1.4
 * Package migration to Abyssinica SIL 2.000
 
