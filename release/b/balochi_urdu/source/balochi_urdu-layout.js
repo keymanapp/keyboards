@@ -1,6 +1,6 @@
 {
   "tablet": {
-    "font": "Tahoma",
+    "font": "Lateef",
     "layer": [
       {
         "id": "default",
@@ -278,35 +278,35 @@
             "key": [
               {
                 "id": "K_1",
-                "text": ""
+                "text": "!"
               },
               {
                 "id": "K_2",
-                "text": ""
+                "text": "@"
               },
               {
                 "id": "K_3",
-                "text": ""
+                "text": "#"
               },
               {
                 "id": "K_4",
-                "text": ""
+                "text": "$"
               },
               {
                 "id": "K_5",
-                "text": ""
+                "text": "٪"
               },
               {
                 "id": "K_6",
-                "text": "‌"
+                "text": "^"
               },
               {
                 "id": "K_7",
-                "text": ""
+                "text": "ۖ"
               },
               {
                 "id": "K_8",
-                "text": ""
+                "text": "٭"
               },
               {
                 "id": "K_9",
@@ -318,11 +318,11 @@
               },
               {
                 "id": "K_HYPHEN",
-                "text": "»"
+                "text": "«"
               },
               {
                 "id": "K_EQUAL",
-                "text": "«"
+                "text": "»"
               },
               {
                 "id": "K_BKSP",
@@ -778,7 +778,7 @@
               },
               {
                 "id": "K_SLASH",
-                "text": ""
+                "text": "/"
               },
               {
                 "id": "K_ENTER",
@@ -1608,7 +1608,7 @@
         ]
       }
     ],
-    "fontsize": "",
+    "font": "Lateef",
     "displayUnderlying": false
   }
 }
