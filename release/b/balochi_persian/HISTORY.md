@@ -1,6 +1,10 @@
 Balochi Persian Change History
 ==============================
 
+1.1 (2020-05-25)
+----------------
+Put non-Balochi letters on secondary layers.
+
 1.0 (2019-07-16)
 ----------------
 Initial version.

@@ -1,8 +1,8 @@
 Balochi Phonetic Change History
 ===============================
-1.3.1 (11 Feb 2020)
+1.3.1 (25 May 2020)
 ----------------
-Fixed package to include png keyboard images. Remove font from touch.
+Fixed package to include png keyboard images. Other minor changes.
 
 1.3 (20 Jan 2020)
 ----------------
