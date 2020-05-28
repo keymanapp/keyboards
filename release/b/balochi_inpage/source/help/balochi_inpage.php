@@ -12,7 +12,7 @@ and selecting the On Screen Keyboard menu item. Similar keyboards are also avail
 <h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift right-alt right-shift-alt left-ctrl'>
+<div id='osk' data-states='default shift rightalt rightalt-shift leftctrl'>
 </div>
 
 <h2>Tablet Keyboard Layout</h2>
