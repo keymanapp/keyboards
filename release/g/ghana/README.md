@@ -5,7 +5,7 @@ Keyboard Data
 * Copyright:      (C) 2017-2020 SIL International
 * Version:        1.2.2
 * Keyman Version: 10.0
-* BCP-47 codes:   hag ewe
+* BCP-47 codes:   ak, ee, ada, dga, hag, nzi, xsm
 
 Description
 -----------
