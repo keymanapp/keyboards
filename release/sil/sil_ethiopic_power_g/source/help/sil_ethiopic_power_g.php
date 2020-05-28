@@ -2,6 +2,7 @@
   $pagename = 'SIL Ethiopic Power-G Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
+
     table { border-collapse:collapse; border-spacing:0; empty-cells:show }
     td, th { vertical-align:top; font-size:12pt;}
     h1, h2, h3, h4, h5, h6 { clear:both;}
@@ -1606,11 +1607,11 @@
     .Table14_1 { height:0.9cm; }
     .Table5_4 { height:1.101cm; }
     .Internet_20_link { color:#0000ff; text-decoration:underline; }
-    .Keyboard { font-family:Calibri; font-size:11pt; font-weight:bold; }
-    .Output { font-family:Abyssinica SIL; font-size:14pt; letter-spacing:normal; }
+    .Keyboard { font-family:Calibri; font-size:14pt; font-weight:bold; }
+    .Output { font-family:Abyssinica SIL; font-size:16pt; letter-spacing:normal; }
     .T6 { font-family:Calibri; font-size:11pt; }
     /* ODF styles with no properties representable as CSS */
-    .Table1.1 .Table14.10 .Table14.100 .Table14.101 .Table14.11 .Table14.12 .Table14.13 .Table14.14 .Table14.15 .Table14.16 .Table14.17 .Table14.18 .Table14.19 .Table14.2 .Table14.20 .Table14.21 .Table14.22 .Table14.23 .Table14.24 .Table14.25 .Table14.26 .Table14.27 .Table14.28 .Table14.29 .Table14.3 .Table14.30 .Table14.31 .Table14.32 .Table14.33 .Table14.34 .Table14.35 .Table14.36 .Table14.37 .Table14.38 .Table14.39 .Table14.4 .Table14.40 .Table14.41 .Table14.42 .Table14.43 .Table14.44 .Table14.45 .Table14.46 .Table14.47 .Table14.48 .Table14.49 .Table14.5 .Table14.50 .Table14.51 .Table14.52 .Table14.53 .Table14.54 .Table14.55 .Table14.56 .Table14.57 .Table14.58 .Table14.59 .Table14.6 .Table14.60 .Table14.61 .Table14.62 .Table14.63 .Table14.64 .Table14.65 .Table14.66 .Table14.67 .Table14.68 .Table14.69 .Table14.7 .Table14.70 .Table14.71 .Table14.72 .Table14.73 .Table14.74 .Table14.75 .Table14.76 .Table14.77 .Table14.78 .Table14.79 .Table14.8 .Table14.80 .Table14.81 .Table14.82 .Table14.83 .Table14.84 .Table14.85 .Table14.86 .Table14.87 .Table14.88 .Table14.89 .Table14.9 .Table14.90 .Table14.91 .Table14.92 .Table14.93 .Table14.94 .Table14.95 .Table14.96 .Table14.97 .Table14.98 .Table14.99 .Table19.1 .Table2.1 .Table3.1 .Table5.1 .Table6.1 .Table7.1 .Table7.2 .T1 .T2 .T5 .T7 .T8 .WW8Num1z0 .WW8Num1z1 .WW8Num1z2 .WW8Num1z3 .WW8Num1z4 .WW8Num1z5 .WW8Num1z6 .WW8Num1z7 .WW8Num1z8  { }
+    .Table1.1 .Table14.10 .Table14.100 .Table14.101 .Table14.11 .Table14.12 .Table14.13 .Table14.14 .Table14.15 .Table14.16 .Table14.17 .Table14.18 .Table14.19 .Table14.2 .Table14.20 .Table14.21 .Table14.22 .Table14.23 .Table14.24 .Table14.25 .Table14.26 .Table14.27 .Table14.28 .Table14.29 .Table14.3 .Table14.30 .Table14.31 .Table14.32 .Table14.33 .Table14.34 .Table14.35 .Table14.36 .Table14.37 .Table14.38 .Table14.39 .Table14.4 .Table14.40 .Table14.41 .Table14.42 .Table14.43 .Table14.44 .Table14.45 .Table14.46 .Table14.47 .Table14.48 .Table14.49 .Table14.5 .Table14.50 .Table14.51 .Table14.52 .Table14.53 .Table14.54 .Table14.55 .Table14.56 .Table14.57 .Table14.58 .Table14.59 .Table14.6 .Table14.60 .Table14.61 .Table14.62 .Table14.63 .Table14.64 .Table14.65 .Table14.66 .Table14.67 .Table14.68 .Table14.69 .Table14.7 .Table14.70 .Table14.71 .Table14.72 .Table14.73 .Table14.74 .Table14.75 .Table14.76 .Table14.77 .Table14.78 .Table14.79 .Table14.8 .Table14.80 .Table14.81 .Table14.82 .Table14.83 .Table14.84 .Table14.85 .Table14.86 .Table14.87 .Table14.88 .Table14.89 .Table14.9 .Table14.90 .Table14.91 .Table14.92 .Table14.93 .Table14.94 .Table14.95 .Table14.96 .Table14.97 .Table14.98 .Table14.99 .Table19.1 .Table2.1 .Table3.1 .Table5.1 .Table6.1 .Table7.1 .Table7.2 .T1 .T2 .T5 .T7 .T8 .T9 .WW8Num1z0 .WW8Num1z1 .WW8Num1z2 .WW8Num1z3 .WW8Num1z4 .WW8Num1z5 .WW8Num1z6 .WW8Num1z7 .WW8Num1z8  { }
   </style>
 </head>
 <body dir="ltr" style=
@@ -1648,9 +1649,9 @@
         "a__Note_on_Power_Ge'ez_“Caps_Lock”_Compatibility"></a>Note on Power
         Ge'ez “Caps Lock” Compatibility</h5>
         <p class="Standard">The original Power Ge'ez (Phonetic) keyboard from
-        Concepts Data Systems used the “<span class=
-        "Keyboard">Caps&nbsp;Lock</span>” key to produce less frequently used
-        characters. SIL Power-G Ethiopic is is not compatible with this keying
+        Concepts Data Systems used the <span class=
+        "Keyboard">Caps&nbsp;Lock</span> key to produce less frequently used
+        characters. SIL Ethiopic Power-G is is not compatible with this keying
         method. Instead, multiple alternative methods for creating these less
         frequently used characters have been provided.</p>
         <p class="Standard">The preferred method for creating these less
@@ -1660,10 +1661,11 @@
         <p class="Standard">For example, to create <span class=
         "Output">ሠ</span> the chart shows <span class=
         "Keyboard">s&nbsp;[&nbsp;or&nbsp;J</span>. To produce this character
-        using the preferred method, first press the &nbsp;s &nbsp;key, and then
-        press the <span class="Keyboard">[</span> key. Alternatively, a capital
-        <span class="Keyboard">J</span> can be typed to produce the
-        <span class="Output">ሠ</span> character.</p>
+        using the preferred method, first press the <span class=
+        "Keyboard">s</span> key, and then press the <span class=
+        "Keyboard">[</span> key. Alternatively, a capital <span class=
+        "Keyboard">J</span> can be typed to produce the <span class=
+        "Output">ሠ</span> character.</p>
         <p class="Standard">As another example, to create <span class=
         "Output">ፀ</span> the chart shows <span class=
         "Keyboard">T&nbsp;[&nbsp;or&nbsp;V</span>. To produce this character
