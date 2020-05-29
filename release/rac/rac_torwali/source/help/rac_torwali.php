@@ -611,7 +611,7 @@ style='mso-bidi-language:FA'><span dir=RTL></span>11</span></span></p>
 standard Perso-Arabic script, as used in Pakistan. It is based on phonetic
 keyboard for Torwali Language developed by Pakistani linguist, author, Scientist,
 Inventor researcher and Software Developer Mr.Rehmat Aziz Chitrali for Khowar
-Academy(an literary Association working on the language and culture
+Academy (a literary Association working on the language and culture
 documentation in Northern Pakistan) used in Windows 8.1 and above as Torwali
 Keyboard. </p>
 
