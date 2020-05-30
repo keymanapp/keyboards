@@ -19,7 +19,7 @@ If you have problem using the Wakhi Anglicized keyboard based on English please 
 <h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift ctrl'>
+<div id='osk' data-states='default shift'>
 </div>
 
 <h2>Mobile Keyboard Layout</h2>
