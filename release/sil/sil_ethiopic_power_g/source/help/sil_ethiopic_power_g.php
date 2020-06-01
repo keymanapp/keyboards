@@ -2,7 +2,6 @@
   $pagename = 'SIL Ethiopic Power-G Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-
     table { border-collapse:collapse; border-spacing:0; empty-cells:show }
     td, th { vertical-align:top; font-size:12pt;}
     h1, h2, h3, h4, h5, h6 { clear:both;}
@@ -1615,19 +1614,8 @@
 END;
   require_once('header.php');
 ?>
-  <table border="0" cellspacing="0" cellpadding="0" width="100%" class=
-  "Table1">
-    <colgroup>
-      <col width="778">
-    </colgroup>
-    <tr class="Table11">
-      <td style="text-align:left;width:17.801cm;" class="Table1_A1">
-        <p class="Title">SIL Ethiopic Power-G Keyboard <span class=
-        "T7">Help</span></p>
-      </td>
-    </tr>
-  </table>
-  <h3 class="Heading_20_3"><a id="a__Introduction"></a>Introduction</h3>
+
+
   <p class="Standard">The “SIL Ethiopic Power-G” keyboard enables typing in all
   Ethiopic <span class="T5">Saba</span> Fidel <span class="T6">scripts</span>
   using the keyboarding sequences found in the “Power Ge'ez (Phonetic)”
