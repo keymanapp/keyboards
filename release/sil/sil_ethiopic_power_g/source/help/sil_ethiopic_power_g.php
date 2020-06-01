@@ -1615,7 +1615,6 @@ END;
   require_once('header.php');
 ?>
 
-
   <p class="Standard">The “SIL Ethiopic Power-G” keyboard enables typing in all
   Ethiopic <span class="T5">Saba</span> Fidel <span class="T6">scripts</span>
   using the keyboarding sequences found in the “Power Ge'ez (Phonetic)”
