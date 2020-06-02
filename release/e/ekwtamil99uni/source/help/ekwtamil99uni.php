@@ -25,21 +25,9 @@
   ?>
 
   
-<p style='margin:0px'>Keyboard &#169; 2008, 2015, 2018 thamizha.com and Tavultesoft</p>
+<p style='margin:0px'>Keyboard &#169; 2008, 2015, 2018-2020 thamizha.com and SIL International</p>
 
 <br/>
-<a href="#Overview">Overview</a><br/>
-<a href="#Using">Using this Keyboard</a><br/>
-<a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-<a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-<a style='margin-left:20px' href="#Examples">Examples</a><br/>
-<a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a style='margin-left:30px' href="chart.php">Complete Keyboard Reference Chart</a><br/>
-<a href="#Troubleshooting">Troubleshooting</a><br/>
-<a href="#Resources">Further Resources</a><br/>
-<a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
-<a href="#Technical">Technical Information</a><br/>
-<a style='margin-left:20px' href="#Authorship">Authorship</a><br/>
 
 <h4><a target="_blank" href="chart.pdf"><img border=0 style='vertical-align:bottom' src="<?php echo cdn('img/pdficon_small.gif'); ?>" /></a> Download this documentation in <a target="_blank" href="chart.pdf">PDF format</a>.</h4>
 
@@ -280,30 +268,6 @@ Disabling <span style='font-style:italic'>Tamil language editing</span> in <span
 
 </div>
 
-<div id="Resources">
-		<!-- List of places to go for further information  -->
-
-<h2>Further Resources</h2>
-<div id="Related">
-		<!-- A list of links to related keyboards - to the help pages or to (download) the keyboards? -->
-
-<h3>Related Keyboard Layouts</h3>
-<p>Other Keyboard Layouts for the Tamil language:</p>
-<p><a href="/go?language=tam&amp;keyboard=Keyboard_ekwbamuni">Suratha Bamuni (Bamini Typewriter)</a><br/>
-<a href="/go?language=tam&amp;keyboard=Keyboard_ekwunitamil">Anjal Paangu</a><br/>
-<a href="/go?language=tam&amp;keyboard=Keyboard_isis_tamil">ISIS Tamil</a><br/>
-<a href="/go?language=tam&amp;keyboard=Keyboard_tamil">Inscript Tamil</a><br/>
-<a href="/go?language=tam&amp;keyboard=Keyboard_visual_media_tamil_modular">Modular (Visual Media)</a><br/>
-<a href="/go?language=tam&amp;keyboard=Keyboard_visual_media_tamil_typewriter">Typewriter (Visual Media)</a></p>
-
-</div>
-<h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://www.tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=451&amp;FromKeyman=0">Download Tamil99 Keyboard for Keyman Desktop</a></p>
-<p><a target="_blank" href="http://www.omniglot.com/writing/tamil.htm">Tamil Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/tamil_language">Tamil Language at Wikipedia.org</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/tamil_script.htm">Tamil Script at Wikipedia.org</a></p>
-
-</div>
 
 
 
@@ -326,20 +290,9 @@ This keyboard was created by Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.co
 </p>
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Tamil99 Keyboard for Keyman Desktop and KeymanWeb is Copyright 2008, 2015, 2018 thamizha.com and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
+The Tamil99 Keyboard for Keyman Desktop and KeymanWeb is Copyright 2008, 2015, 2018-2020 thamizha.com and SIL International.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
 </p>
-<p>
-THIS SOFTWARE IS PROVIDED BY TAVULTESOFT PTY LTD "AS IS" AND ANY
-EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL TAVULTESOFT PTY LTD BE LIABLE FOR ANY
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</p>
+
 </div>
 
 
