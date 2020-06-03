@@ -5,18 +5,17 @@ c to Mr. Makara Sok, the project support specialist at Keyman, who help updating
 store(&VERSION) '9.0'
 store(&NAME) 'Easy Chakma'
 store(&ETHNOLOGUECODE) 'ccp'
-store(&COPYRIGHT) '© 2015-2018 Bivuti Chakma (Suz Moriz)'
-store(&KEYBOARDVERSION) '1.18'
+store(&COPYRIGHT) '© 2015-2020 Bivuti Chakma (Suz Moriz)'
+store(&KEYBOARDVERSION) '1.19'
 store(&MESSAGE) 'This is first Easy Chakma Visual Order Natural Keyboard for unicode & ASCII.'
 store(&BITMAP) 'easy_chakma.ico'
 store(&VISUALKEYBOARD) 'easy_chakma.kvks'
-store(&TARGETS) 'any'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
 store(&LAYOUTFILE) 'easy_chakma.keyman-touch-layout'
 
 begin Unicode > use(main)
 
 group(main) using keys
-
 
 c Chakma Various Signs
 + [SHIFT K_7] > U+11100 c Chakma Sign Chandrabindu
@@ -66,6 +65,7 @@ c Chakma Consonants
 + [K_N] > U+11125
 + [K_I] > U+11126   
 + [K_SLASH] > U+11144 c New added Chakma LHAA
++ [SHIFT K_4] > U+11147 c New added Chakma VAA for Pali writing
 
 c Chakma Dependent Vowel Signs
 + [K_F] > U+11127 
@@ -119,7 +119,6 @@ c Various Other Signs
 + [SHIFT K_0] > ')'
 + [SHIFT K_9] > '('
 + [SHIFT K_5] > '%'
-+ [SHIFT K_4] > '$'
 + [SHIFT K_3] > '#'
 + [SHIFT K_2] > '@'
 + [SHIFT K_1] > '!'
