@@ -735,7 +735,7 @@ style='font-size:18.0pt'>توروالی سافٹ ویر اور توروالی ٹ
 
 <h2><a name=license></a><span style='mso-fareast-font-family:"Times New Roman"'>License<o:p></o:p></span></h2>
 
-<p>Rachitrali-Torwali Keyboard is copyright © 2020 Rehmat Aziz Chitrali.
+<p>Rachitrali-Torwali Keyboard is copyright © 2018-2020 Rehmat Aziz Chitrali.
 It is distributed under The MIT License (MIT)</p>
 
 <div>
