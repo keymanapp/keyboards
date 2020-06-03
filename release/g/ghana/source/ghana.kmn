@@ -1,39 +1,76 @@
-﻿store(&VERSION) '9.0'
+﻿store(&VERSION) '10.0'
 store(&NAME) 'Ghana'
-store(&WINDOWSLANGUAGES) 'x0809'
+c store(&WINDOWSLANGUAGES) 'x0809'
 store(&BITMAP) 'ghana.ico'
-store(&VISUALKEYBOARD) 'ghana.kvk'
-store(&LAYOUTFILE) 'ghana-layout.js'
-store(&COPYRIGHT) '© 2017-2018 SIL International'
+store(&VISUALKEYBOARD) 'ghana.kvks'
+store(&LAYOUTFILE) 'ghana.keyman-touch-layout'
+store(&COPYRIGHT) '© 2017-2020 SIL International'
 store(&MESSAGE) 'The Ghana keyboard is distributed under The MIT License (MIT).'
-store(&KEYBOARDVERSION) '1.2.1'
-store(&ETHNOLOGUECODE) 'hag'
+store(&KEYBOARDVERSION) '1.2.2'
+c store(&ETHNOLOGUECODE) 'hag ewe'
 store(&TARGETS) 'any'
 store(&KMW_HELPTEXT) 'This is a keyboard for the languages of Ghana.'
 begin Unicode > use(main)
 
+store(vow) "aeiouAEIOU" 
+store(vow_acute) "áéíóúÁÉÍÓÚ" 
+store(vow_grave) "àèìòùÀÈÌÒÙ" 
+store(vow_nasal) "ãẽĩõũÃẼĨÕŨ" 
+store(vow_ext_vkey) [RALT K_A] [RALT SHIFT K_A] [RALT K_E] [RALT SHIFT K_E] [RALT K_I] [RALT SHIFT K_I] [RALT K_O] [RALT SHIFT K_O] [RALT K_U] [RALT SHIFT K_U]
+store(vow_ext_key)  "a"         "A"              "e"        "E"              "i"        "I"              "o"        "O"              "u"        "U"
+store(vow_ext)      U+0259      U+018F           U+025B     U+0190           U+0269     U+0196           U+0254      U+0186          U+028B     U+01B2
+
 group(main) using keys
 
-+ [K_COLON] > dk(003b)  
-+ [K_E] > 'e'
-+ [SHIFT K_E] > 'E'
-+ [K_G] > 'g'
-+ [SHIFT K_G] > 'G'
-+ [K_I] > 'i'
-+ [SHIFT K_I] > 'I'
-+ [K_N] > 'n'
-+ [SHIFT K_N] > 'N'    
-+ [K_O] > 'o'
-+ [SHIFT K_O] > 'O'
-+ [K_U] > 'u'        
-+ [K_Z] > 'z'
-+ [SHIFT K_Z] > 'Z'
-+ [K_SPACE] > ' '
+   + [K_COLON] > dk(003b)  
 
-match > use(deadkeys)
+   + [K_QUOTE]         > dk(acute)  
+   + [K_BKQUOTE]       > dk(grave)
+   + [SHIFT K_BKQUOTE] > dk(nasal)
+  deadkey(acute)  + "'" > "'"  
+  deadkey(grave)  + "`" > "`"  
+  deadkey(nasal)  + "~" > "~"  
 
-group(deadkeys) 
+dk(acute) + any(vow) > index(vow_acute,2)
+dk(grave) + any(vow) > index(vow_grave,2)
+dk(nasal) + any(vow) > index(vow_nasal,2)
 
-store(dkf003b) U+0020 U+0065 U+006f U+006e U+0045 U+004f U+004e U+0049 U+0075 U+0069 U+007A U+005A U+0067 U+0047 
-store(dkt003b) U+003b U+025b U+0254 U+014b U+0190 U+0186 U+014a U+018f U+028b U+0269 U+0292 U+01B7 U+0263 U+0194
-dk(003b) any(dkf003b) > index(dkt003b, 2)
+dk(acute) dk(003b) + any(vow_ext_key) > index(vow_ext,3) U+0301
+dk(grave) dk(003b) + any(vow_ext_key) > index(vow_ext,3) U+0300
+dk(nasal) dk(003b) + any(vow_ext_key) > index(vow_ext,3) U+0303
+dk(acute)          + any(vow_ext_vkey) > index(vow_ext,2) U+0301
+dk(grave)          + any(vow_ext_vkey) > index(vow_ext,2) U+0300
+dk(nasal)          + any(vow_ext_vkey) > index(vow_ext,2) U+0303
+
+   + [RALT K_4] > "$"
+   + [SHIFT K_4] > "¢"
+   + [RALT K_A]       > U+0259 c schwa
+   + [RALT SHIFT K_A] > U+018F
+   + [RALT K_D]       > U+0256 c hooked d
+   + [RALT SHIFT K_D] > U+0189
+   + [RALT K_E]       > U+025B c epsilon
+   + [RALT SHIFT K_E] > U+0190
+   + [RALT K_F]       > U+0192 c hooked f
+   + [RALT SHIFT K_F] > U+0191
+   + [RALT K_G]       > U+0263 c gamma
+   + [RALT SHIFT K_G] > U+0194
+   + [RALT K_I]       > U+0269 c iota
+   + [RALT SHIFT K_I] > U+0196
+   + [RALT K_N]       > U+014B c eng
+   + [RALT SHIFT K_N] > U+014A
+   + [RALT K_O]       > U+0254 c open o
+   + [RALT SHIFT K_O] > U+0186
+   + [RALT K_U]       > U+028B c upsilon
+   + [RALT SHIFT K_U] > U+01B2
+   + [RALT K_Z]       > U+0292 c ezh
+   + [RALT SHIFT K_Z] > U+01B7
+ 
+c match > use(deadkeys)
+
+c group(deadkeys) 
+
+store(dkf003b) U+0020 U+0061 U+0064 U+0065 U+0066 U+0067 U+0069 U+006E U+006f U+0075 U+007A \
+                      U+0041 U+0044 U+0045 U+0046 U+0047 U+0049 U+004E U+004f U+0055 U+005A
+store(dkt003b) U+003b U+0259 U+0256 U+025b U+0192 U+0263 U+0269 U+014B U+0254 U+028B U+0292 \
+                      U+018F U+0189 U+0190 U+0191 U+0194 U+0196 U+014A U+0186 U+01B2 U+01B7 
+dk(003b) + any(dkf003b) > index(dkt003b, 2)
