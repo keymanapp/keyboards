@@ -1,6 +1,10 @@
 Ghana Keyboard Change History
 ===============================
 
+1.2.3 (4 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 1.2.2 (28 May 2020)
 -------------------
 * Added support for more languages which required schwa, hooked d, hooked f and combining marks
