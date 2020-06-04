@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Ghana Keyboard
 * Copyright:      (C) 2017-2020 SIL International
-* Version:        1.2.2
+* Version:        1.2.3
 * Keyman Version: 10.0
 * BCP-47 codes:   ak, ee, ada, dga, hag, nzi, xsm
 
