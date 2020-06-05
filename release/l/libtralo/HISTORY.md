@@ -1,6 +1,10 @@
 LIBTRALO Keyboard Change History
 =======================
 
+1.6.2 (4 Jun 2020)
+-----------------
+* Updated htm files for readability on Linux
+
 1.6.1 (14 Sep 2018)
 -----------------
 * Added dnj language

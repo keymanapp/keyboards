@@ -1,6 +1,10 @@
 Osage Keyboard Change History
 =======================
 
+1.2.2 (5 Jun 2020)
+-----------------
+* Updated htm files for readability on Linux
+
 1.2.1 (19 Oct 2018)
 -----------------
 * Changed to use .kvk (compiled OSK) in the .kps file
