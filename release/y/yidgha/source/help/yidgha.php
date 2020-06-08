@@ -17,8 +17,5 @@ menu item. Similar keyboards are also available for other desktop and mobile pla
 <p>Shift keys</p>
 <img src="shift.png">
 
-<h2>Release History</h2>
-<p>Version 1.0.2, released 14 September 2018</p>
-<p>Version 1.0, released 5 May 2018</p>
 
 </body>
