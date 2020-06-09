@@ -119,10 +119,6 @@
 <tr><td class='noinfo'>'</td><td class='noinfo'>]</td><td class='noinfo'>;</td></tr>
 </table>
 
-<br />
-
-<br />
-<p>&copy; 1999-2019 Ethnos360.</p>
 
 <div style='display: none' id='info'></div>
        
