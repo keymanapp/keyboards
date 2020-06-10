@@ -1,11 +1,12 @@
-﻿store(&version) '9.0'
+﻿store(&version) '10.0'
 store(&NAME) 'Tai Dam (SIL)'
 store(&BITMAP) 'sil_tai_dam.ico'
-store(&COPYRIGHT) 'Copyright © 2007-2018 SIL International'
+store(&COPYRIGHT) 'Copyright © 2007-2020 SIL International'
 c store(&ETHNOLOGUECODE) 'blt'  	c deprecated in Kmn 10.
-store(&KEYBOARDVERSION) '2.2.1'
-store(&TARGETS) 'windows macosx linux'
+store(&KEYBOARDVERSION) '2.2.2'
+store(&TARGETS) 'windows macosx linux web'
 store(&MESSAGE) 'The SIL Tai Dam keyboard is distributed under The MIT License (MIT).'
+store(&VISUALKEYBOARD) 'sil_tai_dam.kvks'
 
 c This keyboard is designed for typing Tai Dam text using the Tai Viet script. It uses a
 c mnemonic layout based on the US English keyboard. That is, each Tai Viet character is assigned
@@ -20,7 +21,6 @@ c June 2016: included linux in &TARGETS
 c June 2016: updated source to Keyman Developer 9
 c 2007: Released as Tai Dam US keyboard.
 
-store(&VISUALKEYBOARD) 'sil_tai_dam.kvks'
 
 begin Unicode > use(main)
 
