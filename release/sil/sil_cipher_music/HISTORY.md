@@ -1,6 +1,10 @@
 Cipher Music (SIL) Change History
 =================================
 
+1.1.1 (2020-06-10)
+----------------
+* Updated htm files for readability on Linux
+
 1.1 (2019-11-11)
 ----------------
 * Moved all LCTRL SHIFT keys to RALT
