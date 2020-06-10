@@ -127,9 +127,6 @@
 	{font-family:"Yu Mincho";
 	panose-1:2 2 4 0 0 0 0 0 0 0;}
 @font-face
-	{font-family:\660E\671DL;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
 	{font-family:"Yu Gothic Light";
 	panose-1:2 11 3 0 0 0 0 0 0 0;}
 @font-face
@@ -2541,9 +2538,7 @@ font-family:SutonnyMJ'>&nbsp;</span></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal><span style='font-size:13.0pt;font-family:"Arial Black",sans-serif;
-  color:#00B0F0'>Shift+</span><span style='font-size:13.0pt;font-family:"Arial Black",sans-serif;
-  color:#00B0F0'>&#69930;&#69907;&#69919;Semi-c</span><span style='font-size:
-  13.0pt;font-family:"Arial Black",sans-serif;color:#00B0F0'>olon</span></p>
+  color:#00B0F0'>Shift+Semi-colon</span></p>
   </td>
  </tr>
  <tr>
@@ -2568,8 +2563,7 @@ font-family:SutonnyMJ'>&nbsp;</span></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal><span style='font-size:13.0pt;font-family:"Arial Black",sans-serif;
-  color:#00B0F0'>Shift+</span><span style='font-size:13.0pt;font-family:"Arial Black",sans-serif;
-  color:#00B0F0'>&#69930;&#69907;&#69919;4</span></p>
+  color:#00B0F0'>Shift+4</span></p>
   </td>
  </tr>
  <tr>
