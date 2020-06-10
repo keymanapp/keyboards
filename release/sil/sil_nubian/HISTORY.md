@@ -1,5 +1,10 @@
-SIL Nubian Change History
+Nubian (SIL) Change History
 =======================
+
+1.2.3 (8 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+* Renamed keyboard so that "SIL" is at the end of the name
 
 1.2.2 (29 Apr 2019)
 -------------------

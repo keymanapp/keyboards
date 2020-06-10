@@ -50,6 +50,3 @@ menu item. Similar keyboards are also available for other desktop and mobile pla
 </div>
 
 
-<h2>Release History</h2>
-<p>Version 1.0, released 10 February 2017</p>
-<p>Version 1.0.1, released 18 June 2018</p>

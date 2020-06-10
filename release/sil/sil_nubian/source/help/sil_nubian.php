@@ -1,12 +1,12 @@
 <?php 
-  $pagename = 'SIL Nubian Keyboard Help';
-  $pagetitle = 'SIL Nubian Keyboard Help';
+  $pagename = 'Nubian (SIL) Keyboard Help';
+  $pagetitle = 'Nubian (SIL) Keyboard Help';
   require_once('header.php');
 ?>
 
 <h2>Font</h2>
 <p style="text-align: justify;">
-The "SIL Nubian" keyboard is designed to work with the  <A href="http://scripts.sil.org/SophiaNubian" target=_blank>Sophia Nubian</A> 
+The "Nubian (SIL)" keyboard is designed to work with the  <A href="https://software.sil.org/SophiaNubian" target=_blank>Sophia Nubian</A> 
 font. However, you can use this keyboard with any Coptic  
 Unicode font.  
 </p>
