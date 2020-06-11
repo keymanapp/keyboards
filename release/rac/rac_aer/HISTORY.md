@@ -1,6 +1,9 @@
 Rachitrali-Aer Change History
 =============================
 
+1.1.2 (11 June 2020) 
+* Updated htm files for readability on Linux
+
 1.1.1 (14 May 2019) 
 * Changed ctrl-a key on shift layer to be special
 

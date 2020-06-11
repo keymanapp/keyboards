@@ -1,9 +1,9 @@
 Rachitrali-Aer Keyboard Data
 -------------
 
-Copyright (C) 2018-2019 Rehmat Aziz Chitrali
+Copyright (C) 2018-2020 Rehmat Aziz Chitrali
 
-Version 1.1.1
+Version 1.1.2
 
 Description
 -----------
@@ -29,13 +29,14 @@ Aer, including acoustic phonetics, phonology, morphology, syntax, grammar and se
 
 Links
 -----
-
+ * Home: https://keyman.com/keyboards/rac_aer
  * Contact: Rehmat Aziz Chitrali at rachitrali@yahoo.com
  
 Supported Platforms
 -------------------
  * Windows
- * Web
  * macOS
+ * Linux
+ * Web
  * iOS
  * Android
