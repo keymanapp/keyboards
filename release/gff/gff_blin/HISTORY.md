@@ -1,5 +1,8 @@
 # ብሊን (Blin) Change History
 
+## 2020-06-10 1.4.2
+* Updated htm files for readability on Linux
+
 ## 2020-01-29 1.4.1
 * Correction to syllabary table.
 

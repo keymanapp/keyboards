@@ -3,7 +3,7 @@
 
 Copyright (C) 1997-2020 Ge'ez Frontier Foundation, SIL International
 
-Version 1.9.1
+Version 1.9.2
 
 This is an Amharic (amh, አማርኛ) language mnemonic input method.  It requires a font supporting
 Ethiopic script under the Unicode 4.1 standard.
