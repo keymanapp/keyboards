@@ -1,9 +1,9 @@
 Rachitrali-Brahui-Latin Keyboard Data
 ===============================
 
-Copyright (C) 2018-2019 Rehmat Aziz Chitrali
+Copyright (C) 2018-2020 Rehmat Aziz Chitrali
 
-Version 1.2
+Version 1.2.1
 
 Description
 -----------
@@ -18,9 +18,10 @@ Khowar Academy Chitral was established in April 1996 specifically to promote the
 
 Links
 -----
-•Home: https://keymanweb.com/#brh,Keyboard_rac_brahui_latin
-•Help: https://help.keyman.com/keyboard/rac_brahui_latin
-•Contact: Rehmat Aziz Chitrali linguist and researcher rachitrali@yahoo.com
+* Home: https://keyman.com/keyboards/rac_brahui_latin
+* Web: https://keymanweb.com/#brh,Keyboard_rac_brahui_latin
+* Help: https://help.keyman.com/keyboard/rac_brahui_latin
+* Contact: Rehmat Aziz Chitrali linguist and researcher rachitrali@yahoo.com
 
 
 Supported Platforms
