@@ -3,7 +3,7 @@
 
 Copyright (C) 2009-2020 Ge'ez Frontier Foundation
 
-Version 1.4.1
+Version 1.4.2
 
 This is a Blin (ብሊን, ISO-639-2 byn) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard.
