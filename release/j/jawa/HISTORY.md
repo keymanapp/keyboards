@@ -2,7 +2,12 @@ Nulisa Aksara Jawa Keyboard Change History
 =======================
 
 -----------------
-26 Feb 2020
+10 Jun 2020 - v1.1.1
+-----------------
+* Updated htm files for readability on Linux
+
+-----------------
+26 Feb 2020 - v1.1
 -----------------
 KMN file
 *add pangkon + pada lingsa/lungsi rule
