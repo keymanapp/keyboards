@@ -21,14 +21,8 @@ Home: https://keyman.com/keyboards/korean_rr
 Supported Platforms
 -------------------
  * Windows
- * macOS
- * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
 
+To Do
+-----
+ * The .keyman-touch-layout is left in the repo for use in the future.
