@@ -48,7 +48,7 @@ combined to form <a target="_blank" href="https://en.wikipedia.org/wiki/Hangul">
 
 <p>The keyboard has been developed and tested using the standard Unicode Korean fonts distributed with Microsoft Windows, but any font that includes Unicode Korean (<b>hangeul</b> and <b>hanja</b>) characters may be used.
 </p>
-</div>
+
 
 <div id="Using">
 <h2>Using this Keyboard</h2>
