@@ -1,32 +1,18 @@
-<?php /*
-  Name:             keyboard_greekclassical-chart
-  Copyright:        Keyboard ©2003 Manuel Lopez
-  Documentation:    
-  Description:      
-  Create Date:      3 Nov 2009
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Greek Classical Keyboard</title>
+    <LINK REL="stylesheet" HREF="style.css" TYPE="text/css" />
 
-  Modified Date:    3 Nov 2009
-  Authors:          pbaehr
-  Related Files:    keyboard_greekclassical.php
-  Dependencies:     
-
-  Bugs:             
-  Todo:             
-  Notes:            
-  History:          3 Nov 2009 - pbaehr - Wrote KMW help
-*/
-  $pagename = 'Greek Classical Typing Chart';
-  $pagetitle = 'Greek Classical Typing Chart';
-  $style = <<<END
-.lang2 {font-family:"Palatino Linotype", Tahoma; font-weight: bold; font-size: 1.5em; color: #0000ff; line-height:2em}
-h4 {font-size:11pt;}
-table.grid { border-collapse: collapse; }
-table.grid tr td, table.grid tr th { border: solid 1px #cccccc; }
-END;
-
-  require_once('header.php');
-?>
-
+	<script src="keyrenderer.js" type="text/javascript"></script>
+	<style type="text/css">
+	.lang2,.languageExample {font-family:"Galatia SIL"; color:blue}
+	.lang2 {font-size:150%}
+	</style>
+	
+</head>
+<body>
 
 <h2>Complete Typing Chart</h2>
 <p>The following charts list all the characters available with this keyboard. Below each character are the keys required to type that character. If a key combination is not permitted by the language or available in this keyboard, it is left blank.</p>
@@ -774,12 +760,12 @@ END;
 	<col width=75 />
 	<tr style='text-align:center; font-weight:normal; background-color:#dedede'>
 		<td><span class='lang2' style='font-size:24pt'>·</span><br/><span class='keys'>:</span></td>
-	</tr>
 </table>	
 <div id="Back">
-<p><a href="greekclassical.php">Back to Greek Classical Keyboard Help</a><br/>
+<p><a href="welcome.htm">Back to Greek Classical Keyboard Help</a><br/>
 </p>
 </div>
 
 
-
+</body>
+</html>
