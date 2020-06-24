@@ -3,7 +3,7 @@ store(&VERSION) '10.0'
 store(&TARGETS) 'mobile'
 store(&NAME) 'Cree Syllabics'
 store(&COPYRIGHT) 'Copyright © 2019, 2020 National Research Council Canada'
-store(&KEYBOARDVERSION) '1.1.0'
+store(&KEYBOARDVERSION) '1.2.0'
 
 store(&LAYOUTFILE) 'nrc_crk_cans.keyman-touch-layout'
 
@@ -20,7 +20,7 @@ store(cwV) 'ᒓᒕᒗᒙᒛᒝᒟ'
 store(mV) 'ᒣᒥᒦᒧᒨᒪᒫ'
 store(mwV) 'ᒭᒯᒱᒳᒵᒷᒹ'
 store(nV) 'ᓀᓂᓃᓄᓅᓇᓈ'
-store(nwV) 'ᓊᓌᓎ'
+store(nwV) 'ᓊᓌᓎᣆᣈᣊᣌ'
 store(sV) 'ᓭᓯᓰᓱᓲᓴᓵ'
 store(swV) 'ᓷᓹᓻᓽᓿᔁᔃ'
 store(yV) 'ᔦᔨᔩᔪᔫᔭᔮ'
@@ -225,34 +225,42 @@ group(main) using keys
   U+1422 U+1424 + [U_140A] > U+1501 layer('default') c ᐢ ᐤ + [ ᐊ ] > ᔁ
   U+1422 U+1424 + [U_1503] > U+1503 layer('default') c ᐢ ᐤ + [ ᔃ ] > ᔃ
   U+1422 U+1424 + [U_140B] > U+1503 layer('default') c ᐢ ᐤ + [ ᐋ ] > ᔃ
-  U+1540 + [U_1526] > U+1526 layer('default') c ᕀ + [ ᔦ ] > ᔦ
-  U+1540 + [U_1401] > U+1526 layer('default') c ᕀ + [ ᐁ ] > ᔦ
-  U+1540 + [U_1528] > U+1528 layer('default') c ᕀ + [ ᔨ ] > ᔨ
-  U+1540 + [U_1403] > U+1528 layer('default') c ᕀ + [ ᐃ ] > ᔨ
-  U+1540 + [U_1529] > U+1529 layer('default') c ᕀ + [ ᔩ ] > ᔩ
-  U+1540 + [U_1404] > U+1529 layer('default') c ᕀ + [ ᐄ ] > ᔩ
-  U+1540 + [U_152A] > U+152A layer('default') c ᕀ + [ ᔪ ] > ᔪ
-  U+1540 + [U_1405] > U+152A layer('default') c ᕀ + [ ᐅ ] > ᔪ
-  U+1540 + [U_152B] > U+152B layer('default') c ᕀ + [ ᔫ ] > ᔫ
-  U+1540 + [U_1406] > U+152B layer('default') c ᕀ + [ ᐆ ] > ᔫ
-  U+1540 + [U_152D] > U+152D layer('default') c ᕀ + [ ᔭ ] > ᔭ
-  U+1540 + [U_140A] > U+152D layer('default') c ᕀ + [ ᐊ ] > ᔭ
-  U+1540 + [U_152E] > U+152E layer('default') c ᕀ + [ ᔮ ] > ᔮ
-  U+1540 + [U_140B] > U+152E layer('default') c ᕀ + [ ᐋ ] > ᔮ
-  U+1540 U+1424 + [U_1530] > U+1530 layer('default') c ᕀ ᐤ + [ ᔰ ] > ᔰ
-  U+1540 U+1424 + [U_1401] > U+1530 layer('default') c ᕀ ᐤ + [ ᐁ ] > ᔰ
-  U+1540 U+1424 + [U_1532] > U+1532 layer('default') c ᕀ ᐤ + [ ᔲ ] > ᔲ
-  U+1540 U+1424 + [U_1403] > U+1532 layer('default') c ᕀ ᐤ + [ ᐃ ] > ᔲ
-  U+1540 U+1424 + [U_1534] > U+1534 layer('default') c ᕀ ᐤ + [ ᔴ ] > ᔴ
-  U+1540 U+1424 + [U_1404] > U+1534 layer('default') c ᕀ ᐤ + [ ᐄ ] > ᔴ
-  U+1540 U+1424 + [U_1536] > U+1536 layer('default') c ᕀ ᐤ + [ ᔶ ] > ᔶ
-  U+1540 U+1424 + [U_1405] > U+1536 layer('default') c ᕀ ᐤ + [ ᐅ ] > ᔶ
-  U+1540 U+1424 + [U_1538] > U+1538 layer('default') c ᕀ ᐤ + [ ᔸ ] > ᔸ
-  U+1540 U+1424 + [U_1406] > U+1538 layer('default') c ᕀ ᐤ + [ ᐆ ] > ᔸ
-  U+1540 U+1424 + [U_153A] > U+153A layer('default') c ᕀ ᐤ + [ ᔺ ] > ᔺ
-  U+1540 U+1424 + [U_140A] > U+153A layer('default') c ᕀ ᐤ + [ ᐊ ] > ᔺ
-  U+1540 U+1424 + [U_153C] > U+153C layer('default') c ᕀ ᐤ + [ ᔼ ] > ᔼ
-  U+1540 U+1424 + [U_140B] > U+153C layer('default') c ᕀ ᐤ + [ ᐋ ] > ᔼ
+  U+1429 + [U_1526] > U+1526 layer('default') c ᐩ + [ ᔦ ] > ᔦ
+  U+1429 + [U_1401] > U+1526 layer('default') c ᐩ + [ ᐁ ] > ᔦ
+  U+1429 + [U_1528] > U+1528 layer('default') c ᐩ + [ ᔨ ] > ᔨ
+  U+1429 + [U_1403] > U+1528 layer('default') c ᐩ + [ ᐃ ] > ᔨ
+  U+1429 + [U_1529] > U+1529 layer('default') c ᐩ + [ ᔩ ] > ᔩ
+  U+1429 + [U_1404] > U+1529 layer('default') c ᐩ + [ ᐄ ] > ᔩ
+  U+1429 + [U_152A] > U+152A layer('default') c ᐩ + [ ᔪ ] > ᔪ
+  U+1429 + [U_1405] > U+152A layer('default') c ᐩ + [ ᐅ ] > ᔪ
+  U+1429 + [U_152B] > U+152B layer('default') c ᐩ + [ ᔫ ] > ᔫ
+  U+1429 + [U_1406] > U+152B layer('default') c ᐩ + [ ᐆ ] > ᔫ
+  U+1429 + [U_152D] > U+152D layer('default') c ᐩ + [ ᔭ ] > ᔭ
+  U+1429 + [U_140A] > U+152D layer('default') c ᐩ + [ ᐊ ] > ᔭ
+  U+1429 + [U_152E] > U+152E layer('default') c ᐩ + [ ᔮ ] > ᔮ
+  U+1429 + [U_140B] > U+152E layer('default') c ᐩ + [ ᐋ ] > ᔮ
+  U+1429 U+1424 + [U_1530] > U+1530 layer('default') c ᐩ ᐤ + [ ᔰ ] > ᔰ
+  U+1429 U+1424 + [U_1401] > U+1530 layer('default') c ᐩ ᐤ + [ ᐁ ] > ᔰ
+  U+1429 U+1424 + [U_1532] > U+1532 layer('default') c ᐩ ᐤ + [ ᔲ ] > ᔲ
+  U+1429 U+1424 + [U_1403] > U+1532 layer('default') c ᐩ ᐤ + [ ᐃ ] > ᔲ
+  U+1429 U+1424 + [U_1534] > U+1534 layer('default') c ᐩ ᐤ + [ ᔴ ] > ᔴ
+  U+1429 U+1424 + [U_1404] > U+1534 layer('default') c ᐩ ᐤ + [ ᐄ ] > ᔴ
+  U+1429 U+1424 + [U_1536] > U+1536 layer('default') c ᐩ ᐤ + [ ᔶ ] > ᔶ
+  U+1429 U+1424 + [U_1405] > U+1536 layer('default') c ᐩ ᐤ + [ ᐅ ] > ᔶ
+  U+1429 U+1424 + [U_1538] > U+1538 layer('default') c ᐩ ᐤ + [ ᔸ ] > ᔸ
+  U+1429 U+1424 + [U_1406] > U+1538 layer('default') c ᐩ ᐤ + [ ᐆ ] > ᔸ
+  U+1429 U+1424 + [U_153A] > U+153A layer('default') c ᐩ ᐤ + [ ᔺ ] > ᔺ
+  U+1429 U+1424 + [U_140A] > U+153A layer('default') c ᐩ ᐤ + [ ᐊ ] > ᔺ
+  U+1429 U+1424 + [U_153C] > U+153C layer('default') c ᐩ ᐤ + [ ᔼ ] > ᔼ
+  U+1429 U+1424 + [U_140B] > U+153C layer('default') c ᐩ ᐤ + [ ᐋ ] > ᔼ
+  U+1423 U+1424 + [U_18C6] > U+18C6 layer('default') c ᐣ ᐤ + [ ᣆ ] > ᣆ
+  U+1423 U+1424 + [U_1403] > U+18C6 layer('default') c ᐣ ᐤ + [ ᐃ ] > ᣆ
+  U+1423 U+1424 + [U_18C8] > U+18C8 layer('default') c ᐣ ᐤ + [ ᣈ ] > ᣈ
+  U+1423 U+1424 + [U_1404] > U+18C8 layer('default') c ᐣ ᐤ + [ ᐄ ] > ᣈ
+  U+1423 U+1424 + [U_18CA] > U+18CA layer('default') c ᐣ ᐤ + [ ᣊ ] > ᣊ
+  U+1423 U+1424 + [U_1405] > U+18CA layer('default') c ᐣ ᐤ + [ ᐅ ] > ᣊ
+  U+1423 U+1424 + [U_18CC] > U+18CC layer('default') c ᐣ ᐤ + [ ᣌ ] > ᣌ
+  U+1423 U+1424 + [U_1406] > U+18CC layer('default') c ᐣ ᐤ + [ ᐆ ] > ᣌ
   c Backspace rules: break apart a syllable on backspace
   any(wV) + [K_BKSP] > U+1424 layer('wV')
   any(pV) + [K_BKSP] > U+144A layer('pV')
@@ -269,5 +277,5 @@ group(main) using keys
   any(nwV) + [K_BKSP] > U+1423 U+1424 layer('nwV')
   any(sV) + [K_BKSP] > U+1422 layer('sV')
   any(swV) + [K_BKSP] > U+1422 U+1424 layer('swV')
-  any(yV) + [K_BKSP] > U+1540 layer('yV')
-  any(ywV) + [K_BKSP] > U+1540 U+1424 layer('ywV')
+  any(yV) + [K_BKSP] > U+1429 layer('yV')
+  any(ywV) + [K_BKSP] > U+1429 U+1424 layer('ywV')
