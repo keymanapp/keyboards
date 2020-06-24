@@ -2,11 +2,6 @@ if(typeof KeyRenderer == 'undefined')
 {
   var KeyRenderer = new function()
   {
-    if(location.hostname.indexOf('tavultesoft.local')>=0)
-      var site='s.keymanweb.tavultesoft.local';
-    else
-      var site='s.keymanweb.com';
-  
     this.render = function(s)
     {
       return "<span class='highlightKeys'>" + this.renderInternal(s, true) + "</span>";
@@ -25,7 +20,7 @@ if(typeof KeyRenderer == 'undefined')
           if(ch != '[')
           {
             /* Ctrl+Shift+Alt+key */
-            var t = '';
+            var t = ch;
             while(s.charAt(i) != ']' && i < s.length)
             {
               t += s.charAt(i);
@@ -35,7 +30,7 @@ if(typeof KeyRenderer == 'undefined')
             if(n >= 0)
             {
               ch = t.substr(n,t.length-n);
-              t = t.substr(0,n);
+              t = t.substr(0,n-1);
             }
             else
             {
@@ -43,9 +38,9 @@ if(typeof KeyRenderer == 'undefined')
               t = t.substr(0, t.length-1);
             }
             r += "<span class='key-grp'>";
-            if(t.indexOf('C') >= 0) r += "<img src='http://"+site+"/keys/tr.gif' title='Ctrl' alt='Ctrl' class='key-ctrl' />";
-            if(t.indexOf('S') >= 0) r += "<img src='http://"+site+"/keys/tr.gif' title='Shift' alt='Shift' class='key-shift' />";
-            if(t.indexOf('A') >= 0) r += "<img src='http://"+site+"/keys/tr.gif' title='Alt' alt='Alt' class='key-alt' />";
+            if(t.indexOf('C') >= 0) r += "<img src='tr.gif' title='Ctrl' alt='Ctrl' class='key-ctrl' />";
+            if(t.indexOf('S') >= 0) r += "<img src='tr.gif' title='Shift' alt='Shift' class='key-shift' />";
+            if(t.indexOf('A') >= 0) r += "<img src='tr.gif' title='Alt' alt='Alt' class='key-alt' />";
             endspan = true;
           }
         }
@@ -69,7 +64,7 @@ if(typeof KeyRenderer == 'undefined')
             else if(ch == '&quot;') ch = '"';
           }
           chv = ch.charCodeAt(0);
-          r += "<img src='http://"+site+"/keys/tr.gif' class='key-"+chv.toString()+"' title='"+this.encodeEntities(ch)+"' alt='"+this.encodeEntities(ch)+"' />";
+          r += "<img src='tr.gif' class='key-"+chv.toString()+"' title='"+this.encodeEntities(ch)+"' alt='"+this.encodeEntities(ch)+"' />";
         }
         if(endspan) r += "</span>";
         i++;

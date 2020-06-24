@@ -12,7 +12,7 @@ p {font-size: 10pt; }
 
 #title a, #footer a { color: white; text-decoration: none }
 
-#container {margin: 0 auto 0 auto; background-color:#FFFFFF;}
+#container {margin: 0 auto 0 auto; width: 960px; background-color:#FFFFFF;}
 
 /*Top Nav*/
 #banner {background-image: url(/images/banner.png); background-repeat: no-repeat; height: 110px; margin-top: 1px}
@@ -31,7 +31,7 @@ p {font-size: 10pt; }
 
 /*Footer*/
 
-#footer {float: left; background-color: #6a2915; text-align: center; color:#FFFFFF; padding-top: 20px; padding-bottom: 20px; font-size: 9pt;}
+#footer {float: left; background-color: #6a2915; width: 100%; text-align: center; color:#FFFFFF; padding-top: 20px; padding-bottom: 20px; font-size: 9pt;}
 
 /* Display tables */
 
@@ -109,25 +109,28 @@ table.display tr th { padding: 2px 8px; background: #f3e5de }
 
 /* On-Screen Keyboard */
 
-        .key { 
+	.key { 
             float: left;
             display: block; 
             position: relative;
             overflow: hidden;
             height: 35px;
             
-                margin: 2px 0px 0px 2px;
-                border: solid 1px grey;
+                margin: 2px 0px 0px 4px;
               
         }
         
         #K_SPACE {
           width: 234px; 
           
+            background-image: url('key-space.gif'); 
+          
         }
 
         #K_BKSLASH {
           width: 42px; 
+          
+            background-image: url('key-bkslash.gif'); 
           
         }
         
@@ -138,10 +141,12 @@ table.display tr th { padding: 2px 8px; background: #f3e5de }
         }
         
         #K_SHIFTL {
-          width: 80px;
+          width: 80px;background-image: url('key-shiftl.gif');
         }
         
         .plain {
+          
+            background-image: url('key-plain.gif');
           
           background-repeat: no-repeat;
           width: 34px;
@@ -149,8 +154,6 @@ table.display tr th { padding: 2px 8px; background: #f3e5de }
         
         .special {
           background-repeat: no-repeat;
-          
-            background: #c0c0c0;
           
         }
         
@@ -174,13 +177,14 @@ table.display tr th { padding: 2px 8px; background: #f3e5de }
 					font:
 						12pt
 							 
-						"Galatia SIL"; 
+						"Latha"; 
           position: absolute; 
           display: block;
           right: 5px;
           bottom: 4px;
           color: blue;
         }
+
 	
 /* example and key images */
 
@@ -194,11 +198,11 @@ table.display tr th { padding: 2px 8px; background: #f3e5de }
 #keymanExample th { padding: 2px 5px; text-align: left; }
 
 .highlightKeys .key-print { display: none }
-.highlightKeys img { vertical-align: baseline; margin: 0 2px 0 0; background-image: url('keys2.gif'); height: 15px; width: 15px; }
+.highlightKeys img { vertical-align: top; margin: 0 2px 0 0; background-image: url('keys2.gif'); height: 15px; width: 15px; }
 .key-grp { margin: 0 4px; }
 .key-shift { width: 41px !important; margin-right: 0px !important; background-position: 0 -45px; }
-.key-ctrl { width: 33px !important; margin-right: 0px !important; background-position: -41px -45px; }
-.key-alt { width: 32px !important; margin-right: 0px !important; background-position: -74px -45px; }
+.key-ctrl { width: 34px !important; margin-right: 0px !important; background-position: -41px -45px; }
+.key-alt { width: 30px !important; margin-right: 0px !important; background-position: -75px -45px; }
 .key-32 { width: 37px !important; }
 
 .key-33 { background-position: -37px 0px; }
