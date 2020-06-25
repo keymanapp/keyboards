@@ -1,13 +1,13 @@
 <?php /*
-  Name:             keyboard_greekclassical
-  Copyright:        Keyboard ©2003 Manuel Lopez
+  Name:             keyboard_greekclassical-chart
+  Copyright:        Keyboard ©2003-2020 Manuel Lopez and SIL International
   Documentation:    
   Description:      
   Create Date:      3 Nov 2009
 
   Modified Date:    3 Nov 2009
   Authors:          pbaehr
-  Related Files:    chart.php
+  Related Files:    keyboard_greekclassical.php
   Dependencies:     
 
   Bugs:             
@@ -15,54 +15,31 @@
   Notes:            
   History:          3 Nov 2009 - pbaehr - Wrote KMW help
 */
-  $pagename = 'Greek Classical Keyboard Help';
-  $pagetitle = 'Greek Classical Keyboard Help';
+  $pagename = 'Greek Classical Typing Chart';
+  $pagetitle = 'Greek Classical Typing Chart';
   $style = <<<END
-.lang2 {font-family:"Palatino Linotype", Tahoma; font-weight: bold; font-size: 1.2em; color: #0000ff}
+.lang2 {font-family:"Palatino Linotype", Tahoma; font-weight: bold; font-size: 1.5em; color: #0000ff; line-height:2em}
 h4 {font-size:11pt;}
 table.grid { border-collapse: collapse; }
 table.grid tr td, table.grid tr th { border: solid 1px #cccccc; }
 END;
 
   require_once('header.php');
-
-
 ?>
 
-<p style='margin:0px'>Keyboard &#169; 2003 Manuel Lopez</p>
-
-<br/>
-<a href="#Overview">Overview</a><br/>
-<a href="#Using">Using this Keyboard</a><br/>
-<a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-<a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-<a style='margin-left:20px' href="#Examples">Examples</a><br/>
-<a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a style='margin-left:30px' target="_blank" href='chart.php'>Complete Typing Chart</a><br/>
-<a href="#Troubleshooting">Troubleshooting</a><br/>
-<a href="#Resources">Further Resources</a><br/>
-<a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
-<a href="#Technical">Technical Information</a><br/>
-<a style='margin-left:20px' href="#Author">Authorship</a><br/>
-
-<div id='Overview'>
-<h2>Overview</h2>
 
 <p>This keyboard layout is designed for Classical Greek, the language of Ancient Greece. It is a mnemonic keyboard layout. This means that the arrangement of the letters in the layout depends on the order of the keys on your actual keyboard.</p>
 
 <p>This keyboard layout works best with a QWERTY (English) keyboard. It mimics the QWERTY (English) layout, not the modern Greek layout. It uses standard Unicode fonts.</p>
 
-<p><a href="#Related">Click here</a> to see other keyboards for Greek.</p>
 
-</div>
 <div id='Using'>
 <h2>Using this Keyboard</h2>
 
-<h3>Keyboard Layout</h3>
-<div id='osk'>
+<h3>Desktop Keyboard Layout</h3>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
-<div id='Quickstart'>
 <h3>Quickstart</h3>
 <p>This keyboard layout works intuitively with the QWERTY (English) keyboard. You can find most of the Greek letters by thinking of similar letters in English, by sound or appearance. For example, type <span class='keys'>w[[=me/ga</span> to get <span class='lang2'>ὧμέγα</span>.</p>
 
@@ -70,13 +47,33 @@ END;
 
 <p>When you type an accent by itself or after a non-accentable letter, you will get that key's standard symbol instead. For example, typing <span class='keys'>/</span> by itself will give you <span class='lang2'>/</span> <b>not</b> <span class='lang2'>´</span>.</p>
 
+<p>The characters on the Right ALT layers are not well documented except for looking at the On-Screen Keyboard.</p>
+
 <p>To get a Latin letter instead of a Greek letter, type <span class='keys'>`</span> before the letter (<span class='keys'>`</span> shares a key with <span class='keys'>~</span>). For example, to get <span class='lang2'>d</span> instead of <span class='lang2'>δ</span>, type <span class='keys'>`d</span>.</p>
 
-</div>
 
 <div id="Examples">
 <h3>Examples</h3>
-<?php renderLanguageExamples(); ?>
+<table cellspacing=4 style='border-style:solid; border-width:1px; border-color:#8080FF; background-color:#E0E0FF; padding:4px'>
+		<col width=100px />
+		<col width=150px />
+		<col width=150px />
+		<col width=350px />
+
+		<tr style='color:#0000AF; font-weight:bold'>
+			<td>Language</td>
+			<td>Phrase</td>
+			<td>Meaning</td>
+			<td>Type the following keys</td>
+		</tr>
+		<tr style='color:#0000AF; font-weight:normal'>
+			<td>Greek</td>
+			<td><span class='lang2'>οἷον δή νυ θεοὺς βροτοὶ αἰτιόωνται</span></td>
+			<td>"How ready men are to blame the gods" Homer, The Oddyssey 1.32</td>
+			<td><span class='keys'>oi[[=on dh/ nu qeou\s brotoi\ ai]tio/wntai</span></td>
+		</tr>
+	</table>
+
 </div>
 
 <div id="Documentation">
@@ -189,32 +186,9 @@ for full details on how to type all the Greek Classical keyboard's letters, diac
 </div>
 <div id="Troubleshooting">
 <h2>Troubleshooting</h2>
-<p class='keymanweb'>If the characters you type or those on the On Screen Keyboard do not appear to display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">KeymanWeb troubleshooting guide</a>.</p>
 
-<p>For any other questions, <a target="_blank" href="http://www.tavultesoft.com/contact.php">contact us</a>.</p>
+<p>For any other questions, <a target="_blank" href="https://community.software.sil.org/c/keyman">contact our Keyman community site</a>.</p>
 
-</div>
-<div id="Resources">
-<h2>Further Resources</h2>
-
-<div id="Related">
-<h3>Related Keyboard Layouts</h3>
-<p>Other Classical and Polytonic Greek keyboard layouts:</p>
-<p><a href="http://www.tavultesoft.com/greek/" target="_blank">Greek Keyboards Home</a></p>
-
-<p>Non-classical and Monotonic Greek keyboard layouts:</p>
-<p><a href="/go?language=greek&amp;keyboard=keyboard_greek">Greek Basic</a><br/>
-<a href="/go?language=greek&amp;keyboard=keyboard_greek_220">Greek (220) Basic</a><br/>
-<a href="/go?language=greek&amp;keyboard=keyboard_greek_319">Greek (319) Basic</a></p>
-
-</div>
-<div>
-<h3>Other Internet Resources</h3>
-<p><a target="_blank" href="https://keyman.com/keyboards/greekclassical">Download the Greek Classical Keyboard for Keyman Desktop</a></p>
-<p><a target="_blank" href="http://www.omniglot.com/writing/greek.htm">More on the Greek Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="https://en.wikipedia.org/wiki/Greek_alphabet">More on the Greek Writing System at Wikipedia.org</a></p>
-<p><a target="_blank" href="https://en.wikipedia.org/wiki/Greek_language">More on the Greek Language at Wikipedia.org</a></p>
-</div>
 </div>
 <div id="Technical">
 <h2>Technical Information</h2>
@@ -229,27 +203,8 @@ for full details on how to type all the Greek Classical keyboard's letters, diac
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-This keyboard was created by Manuel Lopez.  Tavultesoft graciously acknowledges the contribution made by the author in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. His effort has assisted greatly in enabling people to communicate in Classical Greek.
+This keyboard was created by Manuel Lopez.  SIL International graciously acknowledges the contribution made by the author in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. His effort has assisted greatly in enabling people to communicate in Classical Greek.
 </p>
-</div>
-<div id="Copyright">
-<h3>Copyright and Terms of Use</h3>
-<p>
-The Greek Classical keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2003 Manuel Lopez and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
-</p>
-<p>
-THIS SOFTWARE IS PROVIDED BY TAVULTESOFT PTY LTD "AS IS" AND ANY
-EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL TAVULTESOFT PTY LTD BE LIABLE FOR ANY
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</p>
-
 </div>
 
 
