@@ -4,6 +4,7 @@
 1.2 (2020-06-24)
 ----------------
 * Move source to Github
+* Changed CTRL key to LCTRL
 * Merge web/mobile with desktop
 * Add more characters from desktop keyboard to mobile (not all characters are on mobile)
 
