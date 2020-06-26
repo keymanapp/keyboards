@@ -19,7 +19,7 @@ Links
 -----
 
 
- * Home:    https://keymanweb.com/#ks-Arab,Keyboard_rac_kashmiri
+ * Home:    https://keyman.com/keyboards/rac_kashmiri
  * Help:    https://help.keyman.com/keyboard/rac_kashmiri
  * Contact: Rehmat Aziz Chitrali linguist and researcher <rachitrali@yahoo.com>
 
