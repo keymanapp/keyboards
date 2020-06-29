@@ -1,0 +1,169 @@
+﻿c tamajaq_unicode generated from template at 2020-06-19 08:40:34
+c with name "Tamajaq-Unicode"
+store(&VERSION) '10.0'
+store(&NAME) 'Tamajaq-Unicode'
+store(&COPYRIGHT) '© 2020 Christian Grandouiller'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'tamajaq_unicode.kvks'
+store(&LAYOUTFILE) 'tamajaq_unicode.keyman-touch-layout'
+store(&BITMAP) 'tamajaq_unicode.ico'
+
+begin Unicode > use(common)
+
+store(punctuationsKey) [K_HYPHEN] [K_QUOTE] [K_PERIOD] [K_COMMA] [K_COLON] [SHIFT K_COLON] [SHIFT K_QUOTE] [SHIFT K_SLASH] [SHIFT K_1]
+store(punctuations)    U+002D U+0027 U+002E U+002C U+003B U+003A U+0022 U+003F U+0021
+
+store(numeralKey) '1234567890'
+store(numeral) '1234567890'
+
+store(symbolKey)   '`~@#$%^&*()_'
+store(symbol)   '`~@#$%^&*()_'
+
+group(common) using keys 
++ any(punctuationsKey)  > index(punctuations, 1)
++ any(numeralKey)       > index(numeral, 1)
++ any(symbolKey)        > index(symbol, 1)
+
+nomatch > use(main)
+group(main) using keys
+  ","  + "<" > "‘"  
+  ","  + ">" > "’"  
+  ","  + "C" > "Ç"  
+  ","  + "c" > "ç"  
+  ","  + "G" > "Ɣ"  
+  ","  + "g" > "ɣ"  
+  ","  + "Z" > "Ž"  
+  ","  + "z" > "ž"  
+
+  "."  + "]" > "ṣ̌"  
+  "."  + "}" > "Ṣ̌"  
+  "."  + "+" > "Ŋ̇"  
+  "."  + "=" > "ŋ̇"  
+  "."  + "B" > "Ḅ"  
+  "."  + "b" > "ḅ"  
+  "."  + "D" > "Ḍ"  
+  "."  + "d" > "ḍ"  
+  "."  + "F" > "F̣"  
+  "."  + "f" > "f̣"  
+  "."  + "g" > "ġ"  
+  "."  + "G" > "G̣"  
+  "."  + "H" > "Ḥ"  
+  "."  + "h" > "ḥ"  
+  "."  + "j" > "j̇"  
+  "."  + "J" > "J̣"  
+  "."  + "K" > "Ḳ"  
+  "."  + "k" > "ḳ"  
+  "."  + "L" > "Ḷ"  
+  "."  + "l" > "ḷ"  
+  "."  + "M" > "Ṃ"  
+  "."  + "m" > "ṃ"  
+  "."  + "N" > "Ṇ"  
+  "."  + "n" > "ṇ"  
+  "."  + "R" > "Ṛ"  
+  "."  + "r" > "ṛ"  
+  "."  + "S" > "Ṣ"  
+  "."  + "s" > "ṣ"  
+  "."  + "T" > "Ṭ"  
+  "."  + "t" > "ṭ"  
+  "."  + "W" > "Ẉ"  
+  "."  + "w" > "ẉ"  
+  "."  + "Y" > "Ỵ"  
+  "."  + "y" > "ỵ"  
+  "."  + "Z" > "Ẓ"  
+  "."  + "z" > "ẓ"  
+
+  ".,"  + "Z" > "Ẓ̌"  
+  ".,"  + "z" > "ẓ̌"  
+
+  "/"  + "A" > "Á"  
+  "/"  + "a" > "á"  
+  "/"  + "E" > "É"  
+  "/"  + "e" > "é"  
+  "/"  + "I" > "Í"  
+  "/"  + "i" > "í"  
+  "/"  + "O" > "Ó"  
+  "/"  + "o" > "ó"  
+  "/"  + "U" > "Ú"  
+  "/"  + "u" > "ú"  
+
+  ":"  + "A" > "Ä"  
+  ":"  + "a" > "ä"  
+  ":"  + "E" > "Ë"  
+  ":"  + "e" > "ë"  
+  ":"  + "I" > "Ï"  
+  ":"  + "i" > "ï"  
+  ":"  + "O" > "Ö"  
+  ":"  + "o" > "ö"  
+  ":"  + "U" > "Ü"  
+  ":"  + "u" > "ü"  
+
+  ";"  + "[" > "["  
+  ";"  + "]" > "]"  
+  ";"  + "{" > "{"  
+  ";"  + "}" > "}"  
+  ";"  + "+" > "+"  
+  ";"  + "=" > "="  
+
+  "^"  + "A" > "Â"  
+  "^"  + "a" > "â"  
+  "^"  + "E" > "Ê"  
+  "^"  + "e" > "ê"  
+  "^"  + "I" > "Î"  
+  "^"  + "i" > "î"  
+  "^"  + "O" > "Ô"  
+  "^"  + "o" > "ô"  
+  "^"  + "U" > "Û"  
+  "^"  + "u" > "û"  
+
+  "`"  + "A" > "À"  
+  "`"  + "a" > "à"  
+  "`"  + "E" > "È"  
+  "`"  + "e" > "è"  
+  "`"  + "I" > "Ì"  
+  "`"  + "i" > "ì"  
+  "`"  + "O" > "Ò"  
+  "`"  + "o" > "ò"  
+  "`"  + "U" > "Ù"  
+  "`"  + "u" > "ù"  
+
+  "~"  + "A" > "Ă"  
+  "~"  + "a" > "ă"  
+  "~"  + "E" > "Ĕ"  
+  "~"  + "e" > "ĕ"  
+  "~"  + "I" > "Ĭ"  
+  "~"  + "i" > "ĭ"  
+  "~"  + "O" > "Ŏ"  
+  "~"  + "o" > "ŏ"  
+  "~"  + "U" > "Ŭ"  
+  "~"  + "u" > "ŭ"  
+  
+  "‘"  + "<" > "“"  
+  "’"  + ">" > "”"  
+  "‹"  + "<" > "«"  
+  "›"  + ">" > "»"  
+
+   + "[" > "ǝ"  
+   + "]" > "š"  
+   + "{" > "Ǝ"  
+   + "}" > "Š"  
+   + "+" > "Ŋ"  
+   + "<" > "‹"  
+   + "=" > "ŋ"  
+   + ">" > "›"
+   + "q" > "q"
+   + "Q" > "Q"
+   + "x" > "x"
+   + "X" > "X"  
+
+   + "v" > "v"
+   + "V" > "V"
+   + "p" > "p"
+   + "P" > "P"
+   + "/" > "/"
+   + "|" > "|"
+   + "\" > "\"
+
+
+c EOF
+
