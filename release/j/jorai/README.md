@@ -1,16 +1,17 @@
 Jorai Keyboard
 =====================
 
-Copyright (C) 2018 Jorai Bible Association
+Copyright (C) 2018-2020 Jorai Bible Association
 
-Version 1.0.2
+Version 1.0.3
 
 __DESCRIPTION__
-The Jorai Windows keyboard was designed for the Jorai (or Jarai) language of Viet Nam.
+The Jorai keyboard was designed for the Jorai (or Jarai) language of Viet Nam.
 
 Supported Platforms
 -------------------
  * Windows
+ * Linux
  * macOS
  * Mobile Web
  * iOS

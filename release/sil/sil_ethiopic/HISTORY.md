@@ -1,6 +1,10 @@
 SIL Ethiopic Change History
 ===========================
 
+2.0.3 (20 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 2.0.2 (26 Apr 2019)
 ---------------------
 * added BCP47 codes

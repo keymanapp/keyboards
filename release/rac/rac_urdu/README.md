@@ -1,8 +1,8 @@
 Rachitrali-Urdu Keyboard Data
 -----------------------------
 
-Copyright:      (C) 2018 Rehmat Aziz Chitrali
-Version:        1.0
+Copyright:      (C) 2018-2020 Rehmat Aziz Chitrali
+Version:        1.0.1
 
 Description
 -----------
@@ -28,7 +28,7 @@ Urdu, including acoustic phonetics, phonology, morphology, syntax, grammar and s
 Links
 -----
 
- * Home:    https://keyman.com/
+ * Home:    https://keyman.com/keyboards/rac_urdu
  * Help:    https://help.keyman.com/keyboard/rac_urdu
  * Contact: Rehmat Aziz Chitrali
  * Email: <rachitrali@yahoo.com>
@@ -36,8 +36,9 @@ Links
 Supported Platforms
 -------------------
  * Windows
+ * macOS
+ * Linux
  * Web
- * OSX
  * Android
  * iPhone
  * iPad

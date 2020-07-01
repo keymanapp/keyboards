@@ -1,7 +1,11 @@
 IPA (SIL) Keyboard Change History
 =======================
 
-1.8 (1 Mayb 2020)
+1.8.1 (4 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
+1.8 (1 May 2020)
 -------------------
 * Add hotkey to access options
 

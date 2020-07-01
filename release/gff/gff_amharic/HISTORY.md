@@ -1,6 +1,10 @@
 gff_amharic Change History
 ==========================
 
+1.9.2 (10 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 1.9.1 (29 Jan 2020)
 -------------------
 * Correction to syllabary table.
