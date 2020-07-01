@@ -1,5 +1,8 @@
 # ትግርኛ-ኤርትራ (Tigrinya Keyboard for Eritrean Conventions) Change History
 
+## 2020-06-10 1.3.2
+* Updated htm files for readability on Linux
+
 ## 2020-01-29 1.3.1
 * Correction to syllabary table.
 

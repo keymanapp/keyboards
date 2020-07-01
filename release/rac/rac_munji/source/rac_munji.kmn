@@ -1,0 +1,169 @@
+﻿c This keyboard is designed for the Munji language spoken in the Afghanistan and Pakistan, in its standard Perso-Arabic script, as used in Afghanistan and Pakistan. It is based on phonetic keyboard for Munji Language developed by Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer Mr.Rehmat Aziz Chitrali for Khowar Academy(an literary Association working on the language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Munji Keyboard.
+c 
+c This is the first Munji language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, author, researcher, Inventor, Scientist and Software Developer. This keyboard is for Munji Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Munji language.
+c 
+c The Munji Keyboard Project(MKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.
+c 
+c Khowar Academy Chitral was established in April 1996 specifically to promote the endangered languages of Chitral Pakistan. The Academy has worked extensively on Munji linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Munji, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
+store(&VERSION) '9.0'
+
+store(&NAME) 'Rachitrali-Munji'
+store(&COPYRIGHT) '© 2020 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan'
+store(&MESSAGE) 'Read Munji, Write Munji and Speak Munji - Message by Rehmat Aziz Chitrali '
+c store(&ETHNOLOGUECODE) 'mnj'
+store(&LANGUAGE) 'x0401'
+store(&WINDOWSLANGUAGES) 'x0401'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'rac_munji.ico'
+store(&VISUALKEYBOARD) 'rac_munji.kvks'
+store(&LAYOUTFILE) 'rac_munji.keyman-touch-layout'
+store(&KMW_RTL) '1'
+store(&KMW_HELPTEXT) 'https://help.keyman.com/keyboard/rac_munji/1.0/rac_munji.php'
+store(&ETHNOLOGUECODE) 'mnj'
+begin Unicode > use(main)
+group(main) using keys
++ [SHIFT K_BKQUOTE] > 'أ'
++ [K_BKSLASH] > 'ݢ'
++ [SHIFT K_BKSLASH] > 'ڱ'
+
++ [K_SPACE] > U+0020
+
++ [K_0] > U+06f0
++ [SHIFT K_0] > ')'
+
++ [K_1] > U+06f1
++ [SHIFT K_1] > U+0021
+
++ [K_2] > U+06f2
++ [SHIFT K_2] > U+0040
+
++ [K_3] > U+06f3
++ [SHIFT K_3] > '#'
+
++ [K_4] > U+06f4
++ [SHIFT K_4] > '$'
+
++ [K_5] > U+06f5
++ [SHIFT K_5] > '%'
+
++ [K_6] > U+06f6
++ [SHIFT K_6] > '^'
+
++ [K_7] > U+06f7
++ [SHIFT K_7] > '&'
+
++ [K_8] > U+06f8
++ [SHIFT K_8] > '*'
+
++ [K_9] > U+06f9
++ [SHIFT K_9] > '('
+
++ [K_A] > U+0627            c req for Wadiyara
++ [SHIFT K_A] > U+0622
+
++ [K_B] > U+0628            c req for Wadiyara
++ [SHIFT K_B] > U+064b
+
++ [K_C] > U+0686            c req for Wadiyara
++ [SHIFT K_C] > U+062b      c req for Wadiyara
+
++ [K_D] > U+062f            c req for Wadiyara
++ [SHIFT K_D] > U+0688      c req for Wadiyara
+
++ [K_E] > U+0639            c req for Wadiyara
++ [SHIFT K_E] > U+0670
+
++ [K_F] > U+0641            c req for Wadiyara
++ [SHIFT K_F] > 'ڤ'
+
++ [K_G] > U+06af            c req for Wadiyara
++ [SHIFT K_G] > U+063a      c req for Wadiyara
+
++ [K_H] > U+062d            c req for Wadiyara
++ [SHIFT K_H] > U+06BE 
+
++ [K_I] > U+06cc            c req for Wadiyara
++ [SHIFT K_I] > U+0650
+
++ [K_J] > U+062c            c req for Wadiyara
++ [SHIFT K_J] > U+0636      c req for Wadiyara
+
++ [K_K] > U+06a9            c req for Wadiyara
++ [SHIFT K_K] > U+062e      c req for Wadiyara
+
++ [K_L] > U+0644            c req for Wadiyara
++ [SHIFT K_L] > 'ؤ'
+
++ [K_M] > U+0645            c req for Wadiyara
++ [SHIFT K_M] > U+0651
+
++ [K_N] > U+0646            c req for Wadiyara
++ [SHIFT K_N] > U+06ba
+
++ [K_O] > U+06c1            c req for Wadiyara
++ [SHIFT K_O] > U+06c3
+
++ [K_P] > U+067e            c req for Wadiyara
++ [SHIFT K_P] > U+064f
+
++ [K_Q] > U+0642            c req for Wadiyara
++ [SHIFT K_Q] > 'ۍ'
+
++ [K_R] > U+0631            c req for Wadiyara
++ [SHIFT K_R] > U+0691      c req for Wadiyara
+
++ [K_S] > U+0633            c req for Wadiyara
++ [SHIFT K_S] > U+0635      c req for Wadiyara
+
++ [K_T] > U+062A            c req for Wadiyara
++ [SHIFT K_T] > U+0679      c req for Wadiyara
+
++ [K_U] > U+0621            c req for Wadiyara
++ [SHIFT K_U] > U+0626
+
++ [K_V] > U+0637            c req for Wadiyara
++ [SHIFT K_V] > U+0638      c req for Wadiyara
+
++ [K_W] > U+0648            c req for Wadiyara
++ [SHIFT K_W] > U+0654
+
++ [K_X] > U+0634            c req for Wadiyara
++ [SHIFT K_X] > U+0698      c req for Wadiyara
+
++ [K_Y] > U+06d2            c req for Wadiyara
++ [SHIFT K_Y] > U+064e
+
++ [K_Z] > U+0632            c req for Wadiyara
++ [SHIFT K_Z] > U+0630      c req for Wadiyara
+
++ [K_COLON] > U+061b
++ [SHIFT K_COLON] > 'ۂ'
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > '+'
+
++ [K_COMMA] > '،'
++ [SHIFT K_COMMA] > 'إ'
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > '_'
+
++ [K_PERIOD] > U+06d4
++ [SHIFT K_PERIOD] > '۔'
+
++ [K_SLASH] > U+002f
++ [SHIFT K_SLASH] > U+061f
+
++ [K_BKQUOTE] > 'ښ'
+
++ [K_LBRKT] > 'ځ'
++ [SHIFT K_LBRKT] > 'ې'
+
++ [K_RBRKT] > 'څ'
++ [SHIFT K_RBRKT] > 'ي'
+
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
+
+
