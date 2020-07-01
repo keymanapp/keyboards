@@ -6,7 +6,6 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,7 +16,7 @@
   </StartMenu>
   <Info>
     <Name URL="">sxava</Name>
-    <Copyright URL="">©Fetrigon</Copyright>
+    <Copyright URL="">© 2020 Fetrigon</Copyright>
     <Author URL="">Jonathan Keku</Author>
     <Version URL=""></Version>
   </Info>
@@ -41,16 +40,16 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>readme.htm</Name>
-      <Description></Description>
+      <Name>..\extras\Segoe_ui_historic.ttf</Name>
+      <Description>Font Segoe UI Historic</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -58,6 +57,8 @@
       <Name>sxava</Name>
       <ID>sxava</ID>
       <Version>1.0</Version>
+      <OSKFont>..\extras\Segoe_ui_historic.ttf</OSKFont>
+      <DisplayFont>..\extras\Segoe_ui_historic.ttf</DisplayFont>
       <Languages>
         <Language ID="eo">Esperanto</Language>
       </Languages>

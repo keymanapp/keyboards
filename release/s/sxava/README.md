@@ -1,7 +1,7 @@
 sxava keyboard
 ==============
 
-©Fetrigon
+© 2020 Fetrigon
 
 Version 1.0
 
