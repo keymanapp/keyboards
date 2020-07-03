@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'Obolo Chwerty'
 store(&ETHNOLOGUECODE)'ann'
-store(&COPYRIGHT) '© 2019 Rogers Edeh'
+store(&COPYRIGHT) '© 2020 Rogers Katelem Edeh'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'obolo_chwerty.kvks'
 store(&LAYOUTFILE) 'obolo_chwerty.keyman-touch-layout'
@@ -11,7 +11,7 @@ store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very e
 begin Unicode > use(main)
 
 store(accentibles) 'aeiọoumnAEIỌOUMN'
-store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKSLASH] [SHIFT K_BKSLASH] [K_BKQUOTE] [SHIFT K_BKQUOTE]
+store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKQUOTE] [SHIFT K_BKQUOTE] [K_BKSLASH] [SHIFT K_BKSLASH]
 store(nasals) 'mnMN'
 store(nnas) [T_CCM] [T_CRN] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKSLASH] [SHIFT K_BKSLASH]
 store(vow) 'aeiouAEIOU'
@@ -47,6 +47,10 @@ group(main) using keys
 + [K_C] > 'n̄'
 + [SHIFT K_C] > 'N̄'
 
++ [CTRL SHIFT K_C] > 'cC' c for desktop
++ [CTRL SHIFT K_X] > 'xX'
++ [CTRL SHIFT K_H] > 'Sh'
++ [CTRL SHIFT K_Q] > 'Ch'
 
 c deadkey for english equivalent
 dk(1) + [K_Q] > 'q'
@@ -60,9 +64,6 @@ dk(2) + [SHIFT K_X] > 'X'
 
 dk(1) + [K_C] > 'c'
 dk(2) + [SHIFT K_C] > 'C'
-
-dk(1) + [K_E] > 'ẹ'
-dk(2) + [SHIFT K_E] > 'Ẹ'
 
 dk(1) + [K_S] > 'ṣ'
 dk(2) + [SHIFT K_S] > 'Ṣ'
@@ -109,6 +110,15 @@ any(vow) + any(circumflexkeys) > index(circum,1)
 any(vow) + any(caronkeys) > index(caron,1)
 any(nasals) + any(acutekeys) > index(acnasals,1)
 
+'ch' + any(erase) > nul c change backspace behaviour for special diagraphs
+'Ch' + any(erase) > nul
+'CH' + any(erase) > nul
+'sh' + any(erase) > nul
+'Sh' + any(erase) > nul
+'SH' + any(erase) > nul
+'n̄' + any(erase) > nul
+'N̄' + any(erase) > nul
+
 c virtual keys
 any(grave) + any(erase) > index(vow,1)
 any(acute) + any(erase) > index(vow,1)
@@ -118,24 +128,3 @@ any(spguyop) + any(erase) > index(spguy,1)
 
 notany(accentibles) + any(accents) > context beep c prevent diacritics (stacking, on empty space, and plain consonants)
 any(nasals) + any(nnas) > context beep c prevent certain accents on nasal consonants
-
-c desktop
-begin Unicode > use(main)
-
-group(main) using keys
-+ [K_C] > 'n̄'
-+ [K_X] > 'ọ'
-+ [K_H] > 'sh'
-+ [K_Q] > 'ch'
-
-+ [SHIFT K_C] > 'N̄'
-+ [SHIFT K_X] > 'Ọ'
-+ [SHIFT K_H] > 'SH'
-+ [SHIFT K_Q] > 'CH'
-
-
-+ [CTRL SHIFT K_C] > 'cC'
-+ [CTRL SHIFT K_X] > 'xX'
-+ [CTRL SHIFT K_H] > 'Sh'
-+ [CTRL SHIFT K_Q] > 'Ch'
-
