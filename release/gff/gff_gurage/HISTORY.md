@@ -1,7 +1,7 @@
 # ጉራጌ (Gurage) Change History
 
-## 2020-05-08 0.6.9 (0.7 Beta)
-* Addition of Gurage Keyboard
+## 2020-07-05 0.6.9 (0.7 Beta 1)
+* Addition of Gurage Touch Keyboard
 
 ## 2020-01-29 0.6.1
 * Correction to syllabary table.
