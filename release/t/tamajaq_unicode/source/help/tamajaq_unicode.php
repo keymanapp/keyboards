@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Haroi Keyboard Help';
-  $pagetitle = 'Haroi Keyboard Help';
+  $pagename = 'Tamajaq-Unicode Keyboard Help';
+  $pagetitle = 'Tamajaq-Unicode Keyboard Help';
   $style = <<<EXTRA
 	.kbd {
 		background-color: #eee;
