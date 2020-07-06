@@ -1,31 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Tamajaq-Unicode</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-	kbd {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-    color: #333;
-    display: inline-block;
-    font-size: .85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap; }
-	table { border-collapse: collapse;  width: 700px; }
-	th, td { text-align: center; padding: 8px; }
-	tr:nth-child(even) { background-color: #f2f2f2 }
-	th { background-color: #4CAF50; color: white; }
-  </style>
-</head>
-<body>
+<?php 
+  $pagename = 'Haroi Keyboard Help';
+  $pagetitle = 'Haroi Keyboard Help';
+  $style = <<<EXTRA
+	.kbd {
+		background-color: #eee;
+		border-radius: 3px;
+		border: 1px solid #b4b4b4;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+		color: #333;
+		display: inline-block;
+		font-size: .85em;
+		font-weight: 700;
+		line-height: 1;
+		padding: 2px 4px;
+		white-space: nowrap; 
+		}
+	.table { border-collapse: collapse;  width: 700px; }
+	.th, .td { text-align: center; padding: 8px; }
+	.tr:nth-child(even) { background-color: #f2f2f2 }
+	.th { background-color: #4CAF50; color: white; }
+EXTRA;
+  require_once('header.php');
+?>
+
 
 <h1>Start Using Tamajaq-Unicode</h1>
 
@@ -33,19 +30,14 @@
     This keyboard covers all posible characters needed to type Tamajaq language for Latin orthography. Additional characters have been added to avoid having to switch keyboard to French or English while typing.
 </p>
 
+
+	
 <h1>Keyboard Layout</h1>
-  <h2>Desktop Keyboard Layout</h2>
-	<h3>Default (unshifted)</h3>
-	<p><a href="tamajaq-unicode_default.png"><img class="keyboard" src="tamajaq-unicode_default.png" alt="Default (unshifted) state" /></a></p>
-	<h3>Shift</h3>
-	<p><a href="tamajaq-unicode_shift.png"><img class="keyboard" src="tamajaq-unicode_shift.png" alt="Shift state" /></a></p>
-  <h2>Touch Layout</h2>
-	<h3>Default</h3>
-	<p><a href="tamajaq-unicode_default_touch.png"><img class="keyboard" src="tamajaq-unicode_default_touch.png" alt="Default state" /></a></p>
-	<h3>Shift</h3>
-	<p><a href="tamajaq-unicode_shift_touch.png"><img class="keyboard" src="tamajaq-unicode_shift_touch.png" alt="Shift state" /></a></p>
-	<h3>Numeric</h3>
-	<p><a href="tamajaq-unicode_num_touch.png"><img class="keyboard" src="tamajaq-unicode_num_touch.png" alt="Numeric state" /></a></p>
+	<h2>Desktop Keyboard Layout</h2>
+	<div id='osk' data-states='default shift'></div>
+
+	<h2>Mobile/Tablet Keyboard Layout</h2>
+	<div id='osk-tablet' data-states='default shift numeric'></div>
 	
 
 <h1>Special Keystrokes</h1>
@@ -160,6 +152,3 @@
 </tbody></table>
 
 <p>© 2020 Christian Grandouiller</p>
-
-</body>
-</html>
