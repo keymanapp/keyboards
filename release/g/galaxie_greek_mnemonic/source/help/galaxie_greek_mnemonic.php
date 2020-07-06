@@ -35,7 +35,7 @@ END;
 
 <h1>Galaxie Greek (Mnemonic) Keyboard</h1>
 
-        <p style='margin:0px'>Keyboard &#169; 2004-2018 Galaxie Software and SIL International</p>
+        <p style='margin:0px'>Keyboard &#169; 2004-2020 Galaxie Software and SIL International</p>
 
         <br/>
         <a href="#Overview">Overview</a><br/>
@@ -2213,6 +2213,7 @@ END;
             </p>
 
                 <p>
+					Version 3.2.2 released 6 Jul 2020. Add rules to mitigate NFD issues.<br/>
                 	Version 3.2.1 released 14 Sept 2018. Add support for Linux.<br/>
                 	Version 3.2 released 10 Aug 2018. Moved source to GitHub.<br/>
                 	Version 3.1 released 24 May 2012. Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). Amended Hebrew help.<br/>

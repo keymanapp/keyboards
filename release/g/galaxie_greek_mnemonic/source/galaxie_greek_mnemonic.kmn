@@ -1,6 +1,6 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'Galaxie Greek (Mnemonic)'
-store(&COPYRIGHT) '© 2004-2018 Galaxie Software and SIL International'
+store(&COPYRIGHT) '© 2004-2020 Galaxie Software and SIL International'
 
 $KeymanOnly: store(&mnemoniclayout) '1'
 c store(&WINDOWSLANGUAGES) 'x0408'
@@ -9,7 +9,7 @@ c store(&ETHNOLOGUECODE) 'grc ell cpg pnt tsd yej'
 store(&BITMAP) 'galaxie_greek_mnemonic.ico'
 store(&VISUALKEYBOARD) 'galaxie_greek_mnemonic.kvks'
 store(&TARGETS) 'windows macosx linux web'
-store(&KEYBOARDVERSION) '3.2.1'
+store(&KEYBOARDVERSION) '3.2.2'
 
 begin Unicode > use(main)
 
@@ -444,70 +444,105 @@ $KeymanWeb: store( dia )   '+?'
 store( mac )   '-'
 store( vra )   '_' 
 
+store( sm_combining ) U+0313
+store( rg_combining ) U+0314
+store( gra_combining ) U+0300
+store( acc_combining ) U+0301
+store( circ_combining ) U+0342
+store( io_combining ) U+0345
+store( dia_combining ) U+0308
+store( mac_combining ) U+0304
+store( vra_combining ) U+0306
+
 
 c ==Single Diacritic Rules==
 c lowercase: breathing, accents, iota, other
 any( plain ) + any( sm ) > index( smooth, 1 )
 any( smooth ) + any( sm ) > index( plain, 1 )
-any( plain ) + any( rg ) > index( rough, 1 )
+  any( plain ) any( sm_combining ) + any( sm ) > index( plain, 1 )  c NFD of above rule
+any( plain ) + any( rg ) > index( rough, 1 )    c no NFD needed
 any( rough ) + any( rg ) > index( plain, 1 )
+  any( plain ) any( rg_combining ) + any( rg ) > index( plain, 1 )  c NFD of above rule
 
 any( plain ) + any( gra ) > index( grave, 1 )
 any( grave ) + any( gra ) > index( plain, 1 )
+  any( plain ) any( gra_combining ) + any ( gra ) > index( plain, 1 )   c NFD of above rule  
 any( plain ) + any( acc ) > index( acute, 1 )  
 any( acute ) + any( acc ) > index( plain, 1 )  
+  any( plain ) any( acc_combining ) + any( acc ) > index( plain, 1 )  c NFD of above rule  
 any( plain ) + any( circ ) > index( circumflex, 1 ) 
 any( circumflex ) + any( circ ) > index( plain, 1 ) 
+  any( plain ) any( circ_combining) + any( circ ) > index( plain, 1 ) c NFD of above rule  
 
 any( plain ) + any( io ) > index( iota, 1 )    
 any( iota ) + any( io ) > index( plain, 1 ) 
+  any ( plain ) any( io_combining ) + any( io ) > index( plain, 1 ) 
 
 any( plain ) + any( dia ) > index( dialytika, 1 ) 
 any( dialytika ) + any( dia ) > index( plain, 1 ) 
-any( plain ) + any( mac ) > index( macron,1 ) 
-any( macron ) + any( mac ) > index( plain,1 ) 
-any( plain ) + any( vra ) > index( vrachy,1 )  
-any( vrachy ) + any( vra ) > index( plain,1 ) 
+  any( plain ) any( dia_combining ) + any( dia ) > index( plain, 1 ) 
+  
+any( plain ) + any( mac ) > index( macron, 1 ) 
+any( macron ) + any( mac ) > index( plain, 1 ) 
+  any( plain ) any( mac_combining ) + any( mac ) > index( plain, 1 )  c NOT VISIBLE IN FLEx FIELD
+
+any( plain ) + any( vra ) > index( vrachy, 1 )  
+any( vrachy ) + any( vra ) > index( plain, 1 ) 
+  any( plain ) any( vra_combining ) + any( vra ) > index( plain, 1 )  c NOT VISIBLE IN FLEx FIELD
 
 c caps: breathing, accents, iota, other
 any( c.pl ) + any ( sm ) > index( c.sm, 1 )
 any( c.sm ) + any ( sm ) > index( c.pl, 1 )
+  any( c.pl ) any( sm_combining )  + any ( sm ) > index( c.pl, 1 )
 any( c.pl ) + any ( rg ) > index( c.rg, 1 )
 any( c.rg ) + any ( rg ) > index( c.pl, 1 )
+  any( c.pl ) any( rg_combining ) + any ( rg ) > index( c.pl, 1 )
 
 any( c.pl ) + any ( gra ) > index( c.gra, 1 )
 any( c.gra ) + any ( gra ) > index( c.pl, 1 )
+  any( c.pl ) any(gra_combining ) + any ( gra ) > index( c.pl, 1 )
 any( c.pl ) + any ( acc ) > index( c.acc, 1 )
 any( c.acc ) + any ( acc ) > index( c.pl, 1 )
+  any( c.pl ) any( acc_combining ) + any ( acc ) > index( c.pl, 1 )
+
 c no c.circ
 
 any( c.pl ) + any ( io ) > index( c.io, 1 )  
 any( c.io ) + any ( io ) > index( c.pl, 1 )
+  any( c.pl ) any( io_combining ) + any ( io ) > index( c.pl, 1 )      c NOT VISIBLE IN FLEx FIELD
 
 any( c.pl ) + any ( dia ) > index( c.dia, 1 ) 
 any( c.dia ) + any ( dia ) > index( c.pl, 1 ) 
+  any( c.pl ) any( dia_combining ) + any ( dia ) > index( c.pl, 1 ) 
 any( c.pl ) + any ( mac ) > index( c.mac, 1 )
 any( c.mac ) + any ( mac ) > index( c.pl, 1 )
+  any( c.pl ) any( mac_combining ) + any ( mac ) > index( c.pl, 1 )    c NOT VISIBLE IN FLEx FIELD
 any( c.pl ) + any ( vra ) > index( c.vra, 1 )
 any( c.vra ) + any ( vra ) > index( c.pl, 1 )
+  any( c.pl ) any( vra_combining ) + any ( vra ) > index( c.pl, 1 )    c NOT VISIBLE IN FLEx FIELD
 
 c lowercase: rho + breathing
 U+03C1 + any( sm ) > U+1FE4
 U+1FE4 + any( sm ) > U+03C1
+  U+03C1 any( sm_combining ) + any( sm ) > U+03C1
 U+03C1 + any( rg ) > U+1FE5
 U+1FE5 + any( rg ) > U+03C1
+  U+03C1 any( rg_combining ) + any( rg ) > U+03C1
 
 c caps: rho + breathing
 U+03A1 + any( sm ) > U+1FBF U+03A1
 U+1FBF U+03A1 + any( sm ) > U+03A1   
 U+03A1 + any( rg ) > U+1FEC    
 U+1FEC + any( rg ) > U+03A1 
+  U+1FEC any( rg_combining ) + any( rg ) > U+03A1 
   
 
 c ==Double Diacritic Rules==
 c lowercase: breathing + accent
 any( smooth ) + any( gra ) > index( sm_gra, 1 )
+ any( plain ) any( sm_combining ) + any( gra ) > index( sm_gra, 1 )
 any( sm_gra ) + any( gra ) > index( smooth, 1 )
+ any( plain ) any( sm_combining ) any( gra_combining ) + any( gra ) > index( smooth, 1 )
 any( smooth ) + any( acc ) > index( sm_acc, 1 )
 any( sm_acc ) + any( acc ) > index( smooth, 1 )
 any( smooth ) + any( circ ) > index( sm_circ, 1 )
