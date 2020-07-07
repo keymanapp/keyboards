@@ -6,6 +6,7 @@
 table.keyboard-layer {
   margin: 12px;
   border-collapse:collapse;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Tahoma, Euphemia, "Euphemia UCAS", "Aboriginal Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 table.keyboard-layer,
 table.keyboard-layer td,
@@ -17,7 +18,6 @@ table.keyboard-layer td {
 }
 td.keyboard-layer__special { background-color: #fcc; }
 td.keyboard-layer__empty { background-color: #888; }
-.lang2 {font-family: "Gadugi", "Euphemia UCAS", "Euphemia", "Aboriginal Sans", sans-serif}
 END;
 
   require_once('header.php');
@@ -35,7 +35,7 @@ This keyboard is for writing <b>ᓀᐦᐃᔭᐍᐏᐣ</b> (Plains Cree syllabics
 <table class="keyboard-layer">
   <tr><td align='center'>ᐃ</td><td>ᐱ</td><td>ᑎ</td><td>ᑭ</td><td>ᒋ</td><td>ᒥ</td><td>ᓂ</td><td>ᓯ</td><td>ᔨ</td><td>ᐦ</td></tr>
   <tr><td>ᐊ</td><td>ᐸ</td><td>ᑕ</td><td>ᑲ</td><td>ᒐ</td><td>ᒪ</td><td>ᓇ</td><td>ᓴ</td><td>ᔭ</td><td>ᕽ</td></tr>
-  <tr><td>⇧</td><td>ᑊ</td><td>ᐟ</td><td>ᐠ</td><td>ᐨ</td><td>ᒼ</td><td>ᐣ</td><td>ᐢ</td><td>ᕀ</td><td>⌫</td></tr>
+  <tr><td>⇧</td><td>ᑊ</td><td>ᐟ</td><td>ᐠ</td><td>ᐨ</td><td>ᒼ</td><td>ᐣ</td><td>ᐢ</td><td>ᐩ</td><td>⌫</td></tr>
   <tr><td>123</td><td>🌐</td><td class="keyboard-layer__special">◌̇</td><td colspan="4">space</td><td class="keyboard-layer__special">◌ᐧ</td><td>ᐤ</td><td>⏎</td></tr>
 </table>
 
