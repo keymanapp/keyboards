@@ -540,154 +540,252 @@ U+1FEC + any( rg ) > U+03A1
 c ==Double Diacritic Rules==
 c lowercase: breathing + accent
 any( smooth ) + any( gra ) > index( sm_gra, 1 )
- any( plain ) any( sm_combining ) + any( gra ) > index( sm_gra, 1 )
+  any( plain ) any( sm_combining ) + any( gra ) > index( sm_gra, 1 )
 any( sm_gra ) + any( gra ) > index( smooth, 1 )
- any( plain ) any( sm_combining ) any( gra_combining ) + any( gra ) > index( smooth, 1 )
+  any( plain ) any( sm_combining ) any( gra_combining ) + any( gra ) > index( smooth, 1 )
 any( smooth ) + any( acc ) > index( sm_acc, 1 )
+  any( plain ) any( sm_combining ) + any( acc ) > index( sm_acc, 1 )
 any( sm_acc ) + any( acc ) > index( smooth, 1 )
+  any( plain ) any( sm_combining ) any( acc_combining ) + any( acc ) > index( smooth, 1 )
 any( smooth ) + any( circ ) > index( sm_circ, 1 )
+  any( plain ) any( sm_combining ) + any( circ ) > index( sm_circ, 1 )
 any( sm_circ ) + any( circ ) > index( smooth, 1 ) 
+  any( plain ) any( sm_combining ) any(circ_combining ) + any( circ ) > index( smooth, 1 ) 
 
 any( rough ) + any( gra ) > index( rg_gra, 1 )
+  any( plain ) any( rg_combining ) + any( gra ) > index( rg_gra, 1 )
 any( rg_gra ) + any( gra ) > index( rough, 1 )
+  any( plain ) any( rg_combining ) any( gra_combining ) + any( gra ) > index( rough, 1 )
 any( rough ) + any( acc ) > index( rg_acc, 1 )
+  any( plain ) any( rg_combining ) + any( acc ) > index( rg_acc, 1 )
 any( rg_acc ) + any( acc ) > index( rough, 1 )
+  any( plain ) any( rg_combining ) any( acc_combining ) + any( acc ) > index( rough, 1 )
 any( rough ) + any( circ ) > index( rg_circ, 1 )
+  any( plain ) any( rg_combining ) + any( circ ) > index( rg_circ, 1 )
 any( rg_circ ) + any( circ ) > index( rough, 1 )
+  any( plain ) any( rg_combining ) any( circ_combining ) + any( circ ) > index( rough, 1 )
 
 c caps: breathing + accent
 any( c.sm ) + any( gra ) > index( c.sm_gra, 1 )
+  any( c.pl ) any( sm_combining ) + any( gra ) > index( c.sm_gra, 1 )
 any( c.sm_gra ) + any( gra ) > index( c.sm, 1 )
+  any( c.pl ) any( sm_combining ) any( gra_combining ) + any( gra ) > index( c.sm, 1 )
 any( c.sm ) + any( acc ) > index( c.sm_acc, 1 )
+  any( c.pl ) any( sm_combining ) + any( acc ) > index( c.sm_acc, 1 )
 any( c.sm_acc ) + any( acc ) > index( c.sm, 1 )
+  any( c.pl ) any( sm_combining ) any( acc_combining ) + any( acc ) > index( c.sm, 1 )
 any( c.sm ) + any( circ ) > index( c.sm_circ, 1 )
+  any( c.pl ) any( sm_combining ) + any( circ ) > index( c.sm_circ, 1 )
 any( c.sm_circ ) + any( circ ) > index( c.sm, 1 ) 
+  any( c.pl ) any( sm_combining ) any( circ_combining ) + any( circ ) > index( c.sm, 1 ) 
 
 any( c.rg ) + any( gra ) > index( c.rg_gra, 1 )
+  any( c.pl ) any( rg_combining ) + any( gra ) > index( c.rg_gra, 1 )
 any( c.rg_gra ) + any( gra ) > index( c.rg, 1 )
+  any( c.pl ) any( rg_combining ) any( gra_combining ) + any( gra ) > index( c.rg, 1 )
 any( c.rg ) + any( acc ) > index( c.rg_acc, 1 )
+  any( c.pl ) any( rg_combining ) + any( acc ) > index( c.rg_acc, 1 )
 any( c.rg_acc ) + any( acc ) > index( c.sm, 1 )
+  any( c.pl ) any( rg_combining ) any( acc_combining ) + any( acc ) > index( c.sm, 1 )
 any( c.rg ) + any( circ ) > index( c.rg_circ, 1 )
+  any( c.pl ) any( rg_combining ) + any( circ ) > index( c.rg_circ, 1 )
 any( c.rg_circ ) + any( circ ) > index( c.rg, 1 ) 
+  any( c.pl ) any( rg_combining ) any( circ_combining ) + any( circ ) > index( c.rg, 1 )
 
 c lowercase: accent + breathing
 any( grave ) + any( sm ) > index( sm_gra, 1 ) 
+  any( plain ) any( gra_combining ) + any( sm ) > index( sm_gra, 1 ) 
 any( sm_gra ) + any( sm ) > index( grave, 1 ) 
+  any( plain ) any( sm_combining ) any( gra_combining ) + any( sm ) > index( grave, 1 )
 any( grave ) + any( rg ) > index( rg_gra, 1 ) 
+  any( plain ) any(gra_combining ) + any( rg ) > index( rg_gra, 1 ) 
 any( rg_gra ) + any( rg ) > index( grave, 1 ) 
+  any( plain ) any(rg_combining ) any( gra_combining ) + any( rg ) > index( grave, 1 ) 
 
 any( acute ) + any( sm ) > index( sm_acc, 1 ) 
+  any( plain ) any( acc_combining ) + any( sm ) > index( sm_acc, 1 )
 any( sm_acc ) + any( sm ) > index( acute, 1 ) 
+  any( plain ) any( sm_combining ) any( acc_combining ) + any( sm ) > index( acute, 1 ) 
 any( acute ) + any( rg ) > index( rg_acc, 1 ) 
+  any( plain ) any( acc_combining ) + any( rg ) > index( rg_acc, 1 )
 any( rg_acc ) + any( rg ) > index( acute, 1 ) 
+  any( plain ) any( rg_combining ) any( acc_combining ) + any( rg ) > index( acute, 1 )
 
 any( circumflex ) + any( sm ) > index( sm_circ, 1 ) 
+  any( plain ) any( circ_combining ) + any( sm ) > index( sm_circ, 1 )
 any( sm_circ ) + any( sm ) > index( circumflex, 1 ) 
+  any( plain ) any( sm_combining ) any( circ_combining ) + any( sm ) > index( circumflex, 1 ) 
 any( circumflex ) + any( rg ) > index( rg_circ, 1 ) 
+  any( plain ) any( circ_combining ) + any( rg ) > index( rg_circ, 1 )
 any( rg_circ ) + any( rg ) > index( circumflex, 1 ) 
+  any( plain ) any( rg_combining ) any( circ_combining ) + any( rg ) > index( circumflex, 1 )
 
 c caps: accent + breathing
 any( c.gra ) + any( sm ) > index( c.sm_gra, 1 ) 
+  any( c.pl ) any( gra_combining ) + any( sm ) > index( c.sm_gra, 1 )
 any( c.sm_gra ) + any( sm ) > index( c.gra, 1 ) 
+  any( c.pl ) any( sm_combining ) any(gra_combining ) + any( sm ) > index( c.gra, 1 ) 
 any( c.gra ) + any( rg ) > index( c.rg_gra, 1 ) 
+  any( c.pl ) any( gra_combining ) + any( rg ) > index( c.rg_gra, 1 ) 
 any( c.rg_gra ) + any( rg ) > index( c.gra, 1 ) 
+  any( c.pl ) any( rg_combining ) any( gra_combining ) + any( rg ) > index( c.gra, 1 )
 
 any( c.acc ) + any( sm ) > index( c.sm_acc, 1 ) 
+  any( c.pl ) any( acc_combining ) + any( sm ) > index( c.sm_acc, 1 ) 
 any( c.sm_acc ) + any( sm ) > index( c.acc, 1 ) 
+  any( c.pl ) any( sm_combining ) any( acc_combining ) + any( sm ) > index( c.acc, 1 )
 any( c.acc ) + any( rg ) > index( c.rg_acc, 1 ) 
+  any( c.pl ) any( acc_combining ) + any( rg ) > index( c.rg_acc, 1 )  
 any( c.rg_acc ) + any( rg ) > index( c.acc, 1 ) 
+  any( c.pl ) any( rg_combining ) any( acc_combining ) + any( rg ) > index( c.acc, 1 ) 
 
 c no c.circ
 
 c lowercase: breathing + iota
 any( smooth ) + any( io ) > index( sm_io, 1 )
+  any( plain ) any( sm_combining ) + any( io ) > index( sm_io, 1 )
 any( sm_io ) + any( io ) > index( smooth, 1 )
+  any( plain ) any( sm_combining ) any( io_combining ) + any( io ) > index( smooth, 1 )
 any( rough ) + any( io ) > index( rg_io, 1 )
+  any( plain ) any( rg_combining ) + any( io ) > index( rg_io, 1 )
 any( rg_io ) + any( io ) > index( rough, 1 )
+  any( plain ) any(rg_combining ) any(io_combining ) + any( io ) > index( rough, 1 )
 
 c caps: breathing + iota
 any( c.sm ) + any( io ) > index( c.sm_io, 1 )
+  any( c.pl ) any( sm_combining ) + any( io ) > index( c.sm_io, 1 )
 any( c.sm_io ) + any( io ) > index( c.sm, 1 )
+  any( c.pl ) any(sm_combining ) any( io_combining ) + any( io ) > index( c.sm, 1 )
 any( c.rg ) + any( io ) > index( c.rg_io, 1 )
+  any( c.pl ) any(rg_combining ) + any( io ) > index( c.rg_io, 1 )
 any( c.rg_io ) + any( io ) > index( c.rg, 1 )
+  any( c.pl ) any( rg_combining ) any( io_combining ) + any( io ) > index( c.rg, 1 )
 
 c lowercase: iota + breathing
 any( iota ) + any( sm ) > index( sm_io, 1 ) 
+  any( plain ) any( io_combining ) + any( sm ) > index( sm_io, 1 )
 any( sm_io ) + any( sm ) > index( iota, 1 )
+  any( plain ) any( sm_combining ) any( io_combining ) + any( sm ) > index( iota, 1 )
 any( iota ) + any( rg ) > index( rg_io, 1 ) 
+  any( plain ) any( io_combining ) + any( rg ) > index( rg_io, 1 ) 
 any( rg_io ) + any( rg ) > index( iota, 1 )
+  any( plain ) any(rg_combining ) any(io_combining ) + any( rg ) > index( iota, 1 )
 
 c caps: iota + breathing
 any( c.io ) + any( sm ) > index( c.sm_io, 1 ) 
+  any( c.pl ) any( io_combining ) + any( sm ) > index( c.sm_io, 1 )
 any( c.sm_io ) + any( sm ) > index( c.io, 1 )
+  any( c.pl ) any( sm_combining ) any( io_combining ) + any( sm ) > index( c.io, 1 )
 any( c.io ) + any( rg ) > index( c.rg_io, 1 ) 
+  any( c.pl ) any( io_combining ) + any( rg ) > index( c.rg_io, 1 )
 any( c.rg_io ) + any( rg ) > index( c.io, 1 )
+  any( c.pl ) any( rg_combining ) any( io_combining ) + any( rg ) > index( c.io, 1 )
 
 c lowercase: breathing + macron
 any( smooth ) + any( mac ) > index( macron, 1 ) U+0313  
+  any( plain ) any( sm_combining ) + any( mac ) > index( macron, 1 ) U+0313 
 any( macron ) U+0313 + any( mac ) > index( smooth, 1 ) 
+  any( plain ) any( mac_combining ) U+0313 + any( mac ) > index( smooth, 1 ) 
 any( rough ) + any( mac ) > index( macron, 1 ) U+0314  
+  any( plain ) any( rg_combining ) + any( mac ) > index( macron, 1 ) U+0314
 any( macron ) U+0314 + any( mac ) > index( rough, 1 ) 
+  any( plain ) any(mac_combining ) U+0314 + any( mac ) > index( rough, 1 ) 
 
 c caps: breathing + macron
 any( c.sm ) + any( mac ) > index( c.mac, 1 ) U+0313  
+  any( c.pl ) any( sm_combining ) + any( mac ) > index( c.mac, 1 ) U+0313 
 any( c.mac ) U+0313 + any( mac ) > index( c.sm, 1 ) 
+  any( c.pl ) any( mac_combining ) U+0313 + any( mac ) > index( c.sm, 1 ) 
 any( c.rg ) + any( mac ) > index( c.mac, 1 ) U+0314  
+  any( c.pl ) any( rg_combining ) + any( mac ) > index( c.mac, 1 ) U+0314
 any( c.mac ) U+0314 + any( mac ) > index( c.rg, 1 ) 
+  any( c.pl ) any( mac_combining ) U+0314 + any( mac ) > index( c.rg, 1 ) 
 
 c lowercase: macron + breathing
 any( macron ) + any( sm ) > index( macron, 1 ) U+0313  
+  any( plain ) any( mac_combining ) + any( sm ) > index( macron, 1 ) U+0313 
 any( macron ) U+0313 + any( sm ) > index( macron, 1 ) 
+  any( plain ) any( mac_combining ) U+0313 + any( sm ) > index( macron, 1 )
 any( macron ) + any( rg ) > index( macron, 1 ) U+0314  
+  any( plain ) any( mac_combining ) + any( rg ) > index( macron, 1 ) U+0314 
 any( macron ) U+0314 + any( rg ) > index( macron, 1 ) 
+  any( plain ) any( mac_combining ) U+0314 + any( rg ) > index( macron, 1 ) 
 
 c caps: macron + breathing
 any( c.mac ) + any( sm ) > index( c.mac, 1 ) U+0313  
+  any( c.pl ) any( mac_combining ) + any( sm ) > index( c.mac, 1 ) U+0313 
 any( c.mac ) U+0313 + any( sm ) > index( c.mac, 1 ) 
+  any( c.pl ) any( mac_combining ) U+0313 + any( sm ) > index( c.mac, 1 ) 
 any( c.mac ) + any( rg ) > index( c.mac, 1 ) U+0314  
+  any( c.pl ) any( mac_combining ) + any( rg ) > index( c.mac, 1 ) U+0314 
 any( c.mac ) U+0314 + any( rg ) > index( c.mac, 1 ) 
+  any( c.pl ) any( mac_combining ) U+0314 + any( rg ) > index( c.mac, 1 )
 
 c lowercase: accent + iota
 any( grave ) + any( io ) > index( gra_io, 1 ) 
+  any( plain ) any( gra_combining ) + any( io ) > index( gra_io, 1 ) 
 any( gra_io ) + any( io ) > index( grave, 1 ) 
+  any( plain ) any( gra_combining ) any( io_combining ) + any( io ) > index( grave, 1 ) 
 
 any( acute ) + any( io ) > index( acc_io, 1 ) 
+  any( plain ) any( acc_combining ) + any( io ) > index( acc_io, 1 ) 
 any( acc_io ) + any( io ) > index( acute, 1 ) 
+  any( plain ) any( acc_combining ) any( io_combining ) + any( io ) > index( acute, 1 ) 
 
 any( circumflex ) + any( io ) > index( circ_io, 1 ) 
+  any( plain ) any( circ_combining ) + any( io ) > index( circ_io, 1 ) 
 any( circ_io ) + any( io ) > index( circumflex, 1 ) 
+  any( plain ) any( circ_combining ) any( io_combining ) + any( io ) > index( circumflex, 1 )
 
 c no caps: accent + iota
 
 c lowercase: iota + accent
 any( iota ) + any( gra ) > index( gra_io, 1 ) 
+  any( plain ) any( io_combining ) + any( gra ) > index( gra_io, 1 )
 any( gra_io ) + any( gra ) > index( iota, 1 )
+  any( plain ) any( gra_combining ) any( io_combining ) + any( gra ) > index( iota, 1 )
 any( iota ) + any( acc ) > index( acc_io, 1 ) 
+  any( plain ) any( io_combining ) + any( acc ) > index( acc_io, 1 ) 
 any( acc_io ) + any( acc ) > index( iota, 1 ) 
+  any( plain ) any( acc_combining ) any( io_combining ) + any( acc ) > index( iota, 1 )
 any( iota ) + any( circ ) > index( circ_io, 1 ) 
+  any( plain ) any( io_combining ) + any( circ ) > index( circ_io, 1 )
 any( circ_io ) + any( circ ) > index( iota, 1 ) 
+  any( plain ) any( circ_combining ) any( io_combining ) + any( circ ) > index( iota, 1 ) 
 
 c no caps: iota + accent
 
 c lowercase: accent + dia
 any( grave ) + any( dia ) > index( gra_dia, 1 ) 
+  any( plain ) any( gra_combining ) + any( dia ) > index( gra_dia, 1 ) 
 any( gra_dia ) + any( dia ) > index( grave, 1 ) 
+  any( plain ) any( gra_combining ) any( dia_combining ) + any( dia ) > index( grave, 1 )
 
 any( acute ) + any( dia ) > index( acc_dia, 1 ) 
+  any( plain ) any( acc_combining ) + any( dia ) > index( acc_dia, 1 ) 
 any( acc_dia ) + any( dia ) > index( acute, 1 ) 
+  any( plain ) any( acc_combining ) any( dia_combining ) + any( dia ) > index( acute, 1 )
 
 any( circumflex ) + any( dia ) > index( circ_dia, 1 ) 
+  any( plain ) any( circ_combining ) + any( dia ) > index( circ_dia, 1 )
 any( circ_dia ) + any( dia ) > index( circumflex, 1 ) 
+  any( plain ) any( circ_combining ) any( dia_combining ) + any( dia ) > index( circumflex, 1 ) 
 
 c no caps: accent + dia
 
 c lowercase: dia + accent
 any( dialytika ) + any( gra ) > index( gra_dia, 1 ) 
+  any( plain ) any( dia_combining ) + any( gra ) > index( gra_dia, 1 ) 
 any( gra_dia ) + any( gra ) > index( dialytika, 1 )
+  any( plain ) any( gra_combining ) any( dia_combining ) + any( gra ) > index( dialytika, 1 )
 any( dialytika ) + any( acc ) > index( acc_dia, 1 ) 
+  any( plain ) any( dia_combining ) + any( acc ) > index( acc_dia, 1 ) 
 any( acc_dia ) + any( acc ) > index( dialytika, 1 ) 
+  any( plain ) any( acc_combining ) any( dia_combining ) + any( acc ) > index( dialytika, 1 ) 
 any( dialytika ) + any( circ ) > index( circ_dia, 1 ) 
+  any( plain ) any( dia_combining ) + any( circ ) > index( circ_dia, 1 ) 
 any( circ_dia ) + any( circ ) > index( dialytika, 1 ) 
+  any( plain ) any(circ_combining ) any( dia_combining ) + any( circ ) > index( dialytika, 1 ) 
  
 c no caps: dia + accent
 
