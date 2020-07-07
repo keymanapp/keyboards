@@ -9,6 +9,7 @@ Malar Malayalam Keyboard Change History
 * Add `*\` keystroke for Multiplication sign (00D7).
 * Add support for Numeric Keypad in keyboard.
 * Improve handling of Backspace keystroke.
+* Add phone layout to touch layout.
 
 1.0 (2019-10-24)
 ----------------
