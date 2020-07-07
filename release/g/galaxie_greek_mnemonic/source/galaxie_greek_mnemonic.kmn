@@ -482,13 +482,13 @@ any( plain ) + any( dia ) > index( dialytika, 1 )
 any( dialytika ) + any( dia ) > index( plain, 1 ) 
   any( plain ) any( dia_combining ) + any( dia ) > index( plain, 1 ) 
   
-any( plain ) + any( mac ) > index( macron, 1 ) 
+any( plain ) + any( mac ) > index( macron, 1 )                          c NOT VISIBLE IN FLEx FIELD
 any( macron ) + any( mac ) > index( plain, 1 ) 
-  any( plain ) any( mac_combining ) + any( mac ) > index( plain, 1 )  c NOT VISIBLE IN FLEx FIELD
+  any( plain ) any( mac_combining ) + any( mac ) > index( plain, 1 )    
 
-any( plain ) + any( vra ) > index( vrachy, 1 )  
+any( plain ) + any( vra ) > index( vrachy, 1 )                          c NOT VISIBLE IN FLEx FIELD  
 any( vrachy ) + any( vra ) > index( plain, 1 ) 
-  any( plain ) any( vra_combining ) + any( vra ) > index( plain, 1 )  c NOT VISIBLE IN FLEx FIELD
+  any( plain ) any( vra_combining ) + any( vra ) > index( plain, 1 )  
 
 c caps: breathing, accents, iota, other
 any( c.pl ) + any ( sm ) > index( c.sm, 1 )
@@ -507,11 +507,11 @@ any( c.acc ) + any ( acc ) > index( c.pl, 1 )
 
 c no c.circ
 
-any( c.pl ) + any ( io ) > index( c.io, 1 )  
-any( c.io ) + any ( io ) > index( c.pl, 1 )
-  any( c.pl ) any( io_combining ) + any ( io ) > index( c.pl, 1 )      c NOT VISIBLE IN FLEx FIELD
+any( c.pl ) + any ( io ) > index( c.io, 1 )                             c NOT VISIBLE IN FLEx FIELD
+any( c.io ) + any ( io ) > index( c.pl, 1 )                             
+  any( c.pl ) any( io_combining ) + any ( io ) > index( c.pl, 1 )      
 
-any( c.pl ) + any ( dia ) > index( c.dia, 1 ) 
+any( c.pl ) + any ( dia ) > index( c.dia, 1 )                           
 any( c.dia ) + any ( dia ) > index( c.pl, 1 ) 
   any( c.pl ) any( dia_combining ) + any ( dia ) > index( c.pl, 1 ) 
 any( c.pl ) + any ( mac ) > index( c.mac, 1 )
@@ -653,13 +653,13 @@ any( rg_io ) + any( io ) > index( rough, 1 )
 
 c caps: breathing + iota
 any( c.sm ) + any( io ) > index( c.sm_io, 1 )
-  any( c.pl ) any( sm_combining ) + any( io ) > index( c.sm_io, 1 )
+  any( c.pl ) any( sm_combining ) + any( io ) > index( c.sm_io, 1 )                                     c NOT VISIBLE IN FLEx FIELD
 any( c.sm_io ) + any( io ) > index( c.sm, 1 )
-  any( c.pl ) any(sm_combining ) any( io_combining ) + any( io ) > index( c.sm, 1 )
+  any( c.pl ) any(sm_combining ) any( io_combining ) + any( io ) > index( c.sm, 1 )                     c NOT VISIBLE IN FLEx FIELD
 any( c.rg ) + any( io ) > index( c.rg_io, 1 )
-  any( c.pl ) any(rg_combining ) + any( io ) > index( c.rg_io, 1 )
+  any( c.pl ) any(rg_combining ) + any( io ) > index( c.rg_io, 1 )                                      c NOT VISIBLE IN FLEx FIELD
 any( c.rg_io ) + any( io ) > index( c.rg, 1 )
-  any( c.pl ) any( rg_combining ) any( io_combining ) + any( io ) > index( c.rg, 1 )
+  any( c.pl ) any( rg_combining ) any( io_combining ) + any( io ) > index( c.rg, 1 )                    c NOT VISIBLE IN FLEx FIELD
 
 c lowercase: iota + breathing
 any( iota ) + any( sm ) > index( sm_io, 1 ) 
@@ -673,53 +673,53 @@ any( rg_io ) + any( rg ) > index( iota, 1 )
 
 c caps: iota + breathing
 any( c.io ) + any( sm ) > index( c.sm_io, 1 ) 
-  any( c.pl ) any( io_combining ) + any( sm ) > index( c.sm_io, 1 )
+  any( c.pl ) any( io_combining ) + any( sm ) > index( c.sm_io, 1 )                                     c NOT VISIBLE IN FLEx FIELD
 any( c.sm_io ) + any( sm ) > index( c.io, 1 )
-  any( c.pl ) any( sm_combining ) any( io_combining ) + any( sm ) > index( c.io, 1 )
+  any( c.pl ) any( sm_combining ) any( io_combining ) + any( sm ) > index( c.io, 1 )                    c NOT VISIBLE IN FLEx FIELD
 any( c.io ) + any( rg ) > index( c.rg_io, 1 ) 
-  any( c.pl ) any( io_combining ) + any( rg ) > index( c.rg_io, 1 )
+  any( c.pl ) any( io_combining ) + any( rg ) > index( c.rg_io, 1 )                                     c NOT VISIBLE IN FLEx FIELD    
 any( c.rg_io ) + any( rg ) > index( c.io, 1 )
-  any( c.pl ) any( rg_combining ) any( io_combining ) + any( rg ) > index( c.io, 1 )
+  any( c.pl ) any( rg_combining ) any( io_combining ) + any( rg ) > index( c.io, 1 )                    c NOT VISIBLE IN FLEx FIELD
 
 c lowercase: breathing + macron
 any( smooth ) + any( mac ) > index( macron, 1 ) U+0313  
-  any( plain ) any( sm_combining ) + any( mac ) > index( macron, 1 ) U+0313 
+  any( plain ) any( sm_combining ) + any( mac ) > index( macron, 1 ) U+0313                             c NOT VISIBLE IN FLEx FIELD
 any( macron ) U+0313 + any( mac ) > index( smooth, 1 ) 
-  any( plain ) any( mac_combining ) U+0313 + any( mac ) > index( smooth, 1 ) 
+  any( plain ) any( mac_combining ) U+0313 + any( mac ) > index( smooth, 1 )                            c NOT VISIBLE IN FLEx FIELD
 any( rough ) + any( mac ) > index( macron, 1 ) U+0314  
-  any( plain ) any( rg_combining ) + any( mac ) > index( macron, 1 ) U+0314
+  any( plain ) any( rg_combining ) + any( mac ) > index( macron, 1 ) U+0314                             c NOT VISIBLE IN FLEx FIELD
 any( macron ) U+0314 + any( mac ) > index( rough, 1 ) 
-  any( plain ) any(mac_combining ) U+0314 + any( mac ) > index( rough, 1 ) 
+  any( plain ) any(mac_combining ) U+0314 + any( mac ) > index( rough, 1 )                              c NOT VISIBLE IN FLEx FIELD
 
 c caps: breathing + macron
 any( c.sm ) + any( mac ) > index( c.mac, 1 ) U+0313  
-  any( c.pl ) any( sm_combining ) + any( mac ) > index( c.mac, 1 ) U+0313 
+  any( c.pl ) any( sm_combining ) + any( mac ) > index( c.mac, 1 ) U+0313                               c NOT VISIBLE IN FLEx FIELD
 any( c.mac ) U+0313 + any( mac ) > index( c.sm, 1 ) 
-  any( c.pl ) any( mac_combining ) U+0313 + any( mac ) > index( c.sm, 1 ) 
+  any( c.pl ) any( mac_combining ) U+0313 + any( mac ) > index( c.sm, 1 )                               c NOT VISIBLE IN FLEx FIELD
 any( c.rg ) + any( mac ) > index( c.mac, 1 ) U+0314  
-  any( c.pl ) any( rg_combining ) + any( mac ) > index( c.mac, 1 ) U+0314
+  any( c.pl ) any( rg_combining ) + any( mac ) > index( c.mac, 1 ) U+0314                               c NOT VISIBLE IN FLEx FIELD
 any( c.mac ) U+0314 + any( mac ) > index( c.rg, 1 ) 
-  any( c.pl ) any( mac_combining ) U+0314 + any( mac ) > index( c.rg, 1 ) 
+  any( c.pl ) any( mac_combining ) U+0314 + any( mac ) > index( c.rg, 1 )                               c NOT VISIBLE IN FLEx FIELD
 
 c lowercase: macron + breathing
 any( macron ) + any( sm ) > index( macron, 1 ) U+0313  
-  any( plain ) any( mac_combining ) + any( sm ) > index( macron, 1 ) U+0313 
+  any( plain ) any( mac_combining ) + any( sm ) > index( macron, 1 ) U+0313                             c NOT VISIBLE IN FLEx FIELD 
 any( macron ) U+0313 + any( sm ) > index( macron, 1 ) 
-  any( plain ) any( mac_combining ) U+0313 + any( sm ) > index( macron, 1 )
+  any( plain ) any( mac_combining ) U+0313 + any( sm ) > index( macron, 1 )                             c NOT VISIBLE IN FLEx FIELD
 any( macron ) + any( rg ) > index( macron, 1 ) U+0314  
-  any( plain ) any( mac_combining ) + any( rg ) > index( macron, 1 ) U+0314 
+  any( plain ) any( mac_combining ) + any( rg ) > index( macron, 1 ) U+0314                             c NOT VISIBLE IN FLEx FIELD
 any( macron ) U+0314 + any( rg ) > index( macron, 1 ) 
-  any( plain ) any( mac_combining ) U+0314 + any( rg ) > index( macron, 1 ) 
+  any( plain ) any( mac_combining ) U+0314 + any( rg ) > index( macron, 1 )                             c NOT VISIBLE IN FLEx FIELD
 
 c caps: macron + breathing
 any( c.mac ) + any( sm ) > index( c.mac, 1 ) U+0313  
-  any( c.pl ) any( mac_combining ) + any( sm ) > index( c.mac, 1 ) U+0313 
+  any( c.pl ) any( mac_combining ) + any( sm ) > index( c.mac, 1 ) U+0313                               c NOT VISIBLE IN FLEx FIELD
 any( c.mac ) U+0313 + any( sm ) > index( c.mac, 1 ) 
-  any( c.pl ) any( mac_combining ) U+0313 + any( sm ) > index( c.mac, 1 ) 
+  any( c.pl ) any( mac_combining ) U+0313 + any( sm ) > index( c.mac, 1 )                               c NOT VISIBLE IN FLEx FIELD    
 any( c.mac ) + any( rg ) > index( c.mac, 1 ) U+0314  
-  any( c.pl ) any( mac_combining ) + any( rg ) > index( c.mac, 1 ) U+0314 
+  any( c.pl ) any( mac_combining ) + any( rg ) > index( c.mac, 1 ) U+0314                               c NOT VISIBLE IN FLEx FIELD
 any( c.mac ) U+0314 + any( rg ) > index( c.mac, 1 ) 
-  any( c.pl ) any( mac_combining ) U+0314 + any( rg ) > index( c.mac, 1 )
+  any( c.pl ) any( mac_combining ) U+0314 + any( rg ) > index( c.mac, 1 )                               c NOT VISIBLE IN FLEx FIELD
 
 c lowercase: accent + iota
 any( grave ) + any( io ) > index( gra_io, 1 ) 
@@ -759,17 +759,17 @@ c lowercase: accent + dia
 any( grave ) + any( dia ) > index( gra_dia, 1 ) 
   any( plain ) any( gra_combining ) + any( dia ) > index( gra_dia, 1 ) 
 any( gra_dia ) + any( dia ) > index( grave, 1 ) 
-  any( plain ) any( gra_combining ) any( dia_combining ) + any( dia ) > index( grave, 1 )
+  any( plain ) any( dia_combining ) any( gra_combining ) + any( dia ) > index( grave, 1 )
 
 any( acute ) + any( dia ) > index( acc_dia, 1 ) 
   any( plain ) any( acc_combining ) + any( dia ) > index( acc_dia, 1 ) 
 any( acc_dia ) + any( dia ) > index( acute, 1 ) 
-  any( plain ) any( acc_combining ) any( dia_combining ) + any( dia ) > index( acute, 1 )
+  any( plain ) any( dia_combining ) any( acc_combining ) + any( dia ) > index( acute, 1 )
 
 any( circumflex ) + any( dia ) > index( circ_dia, 1 ) 
-  any( plain ) any( circ_combining ) + any( dia ) > index( circ_dia, 1 )
+  any( plain ) any( circ_combining ) + any( dia ) > index( circ_dia, 1 )                                     c NOT VISIBLE IN FLEx FIELD
 any( circ_dia ) + any( dia ) > index( circumflex, 1 ) 
-  any( plain ) any( circ_combining ) any( dia_combining ) + any( dia ) > index( circumflex, 1 ) 
+  any( plain ) any( dia_combining ) any( circ_combining ) + any( dia ) > index( circumflex, 1 )             
 
 c no caps: accent + dia
 
@@ -777,15 +777,15 @@ c lowercase: dia + accent
 any( dialytika ) + any( gra ) > index( gra_dia, 1 ) 
   any( plain ) any( dia_combining ) + any( gra ) > index( gra_dia, 1 ) 
 any( gra_dia ) + any( gra ) > index( dialytika, 1 )
-  any( plain ) any( gra_combining ) any( dia_combining ) + any( gra ) > index( dialytika, 1 )
+  any( plain ) any( dia_combining ) any( gra_combining ) + any( gra ) > index( dialytika, 1 )
 any( dialytika ) + any( acc ) > index( acc_dia, 1 ) 
   any( plain ) any( dia_combining ) + any( acc ) > index( acc_dia, 1 ) 
 any( acc_dia ) + any( acc ) > index( dialytika, 1 ) 
-  any( plain ) any( acc_combining ) any( dia_combining ) + any( acc ) > index( dialytika, 1 ) 
+  any( plain ) any( dia_combining ) any( acc_combining ) + any( acc ) > index( dialytika, 1 ) 
 any( dialytika ) + any( circ ) > index( circ_dia, 1 ) 
-  any( plain ) any( dia_combining ) + any( circ ) > index( circ_dia, 1 ) 
+  any( plain ) any( dia_combining ) + any( circ ) > index( circ_dia, 1 )                                    c NOT VISIBLE IN FLEx FIELD
 any( circ_dia ) + any( circ ) > index( dialytika, 1 ) 
-  any( plain ) any(circ_combining ) any( dia_combining ) + any( circ ) > index( dialytika, 1 ) 
+  any( plain ) any( dia_combining ) any(circ_combining ) + any( circ ) > index( dialytika, 1 ) 
  
 c no caps: dia + accent
 
@@ -793,79 +793,139 @@ c no caps: dia + accent
 c ==Triple Diacritic Rules==
 c lowercase: breathing accent + iota
 any( sm_gra ) + any( io ) > index( sm_gra_io, 1 ) 
+  any( plain ) any( sm_combining ) any( gra_combining ) + any( io ) > index( sm_gra_io, 1 ) 
 any( sm_gra_io ) + any ( io ) > index( sm_gra, 1)
+  any( plain ) any( sm_combining ) any( gra_combining ) any(io_combining ) + any ( io ) > index( sm_gra, 1)
 any( sm_acc ) + any( io ) > index( sm_acc_io, 1 ) 
+  any( plain ) any( sm_combining ) any( acc_combining ) + any( io ) > index( sm_acc_io, 1 ) 
 any( sm_acc_io ) + any ( io ) > index( sm_acc, 1)
+  any( plain ) any( sm_combining ) any( acc_combining ) any( io_combining ) + any ( io ) > index( sm_acc, 1)
 any( sm_circ ) + any( io ) > index( sm_circ_io, 1 ) 
+  any( plain ) any( sm_combining ) any( circ_combining ) + any( io ) > index( sm_circ_io, 1 ) 
 any( sm_circ_io ) + any ( io ) > index( sm_circ, 1 )
+  any( plain ) any( sm_combining ) any( circ_combining ) any( io_combining ) + any ( io ) > index( sm_circ, 1 ) 
 
 any( rg_gra ) + any( io ) > index( rg_gra_io, 1 ) 
+  any( plain ) any( rg_combining ) any( gra_combining ) + any( io ) > index( rg_gra_io, 1 )
 any( rg_gra_io ) + any ( io ) > index (rg_gra, 1)
+  any( plain ) any( rg_combining ) any( gra_combining ) any( io_combining ) + any ( io ) > index (rg_gra, 1)
 any( rg_acc ) + any( io ) > index( rg_acc_io, 1 ) 
+  any( plain ) any( rg_combining ) any( acc_combining ) + any( io ) > index( rg_acc_io, 1 ) 
 any( rg_acc_io ) + any ( io ) > index (rg_acc, 1)
+  any( plain ) any(rg_combining ) any( acc_combining ) any( io_combining ) + any ( io ) > index (rg_acc, 1)
 any( rg_circ ) + any( io ) > index( rg_circ_io, 1 ) 
+  any( plain ) any( rg_combining ) any( circ_combining ) + any( io ) > index( rg_circ_io, 1 )
 any( rg_circ_io ) + any ( io ) > index (rg_circ, 1)
+  any( plain ) any( rg_combining ) any( circ_combining ) any( io_combining ) + any ( io ) > index (rg_circ, 1)
 
 c caps: breathing accent + iota
 any( c.sm_gra ) + any( io ) > index( c.sm_gra_io, 1 ) 
+  any( c.pl ) any( sm_combining ) any( gra_combining ) + any( io ) > index( c.sm_gra_io, 1 ) 
 any( c.sm_gra_io ) + any( io ) > index (c.sm_gra, 1 )
+  any( c.pl ) any( sm_combining ) any( gra_combining ) any( io_combining ) + any( io ) > index (c.sm_gra, 1 )   
 any( c.sm_acc ) + any( io ) > index( c.sm_acc_io, 1 ) 
+  any( c.pl ) any( sm_combining ) any( acc_combining ) + any( io ) > index( c.sm_acc_io, 1 )                    c NOT VISIBLE IN FLEx FIELD
 any( c.sm_acc_io ) + any( io ) > index( c.sm_acc, 1 )
+  any( c.pl ) any( sm_combining ) any( acc_combining ) any( io_combining ) + any( io ) > index( c.sm_acc, 1 )   
 any( c.sm_circ ) + any( io ) > index( c.sm_circ_io, 1 ) 
+  any( c.pl ) any( sm_combining ) any( circ_combining ) + any( io ) > index( c.sm_circ_io, 1 )                  c NOT VISIBLE IN FLEx FIELD
 any( c.sm_circ_io ) + any( io ) > index( c.sm_circ, 1 )
+  any( c.pl ) any( sm_combining ) any( circ_combining ) any( io_combining ) + any( io ) > index( c.sm_circ, 1 ) 
 
 any( c.rg_gra ) + any( io ) > index( c.rg_gra_io, 1 ) 
+  any( c.pl ) any( rg_combining ) any( gra_combining ) + any( io ) > index( c.rg_gra_io, 1 )                    c NOT VISIBLE IN FLEx FIELD    
 any( c.rg_gra_io ) + any( io ) > index( c.rg_gra, 1 )
+  any( c.pl ) any(rg_combining ) any( gra_combining ) any( io_combining ) + any( io ) > index( c.rg_gra, 1 )    
 any( c.rg_acc ) + any( io ) > index( c.rg_acc_io, 1 ) 
+  any( c.pl ) any( rg_combining ) any( acc_combining ) + any( io ) > index( c.rg_acc_io, 1 )                    c NOT VISIBLE IN FLEx FIELD
 any( c.rg_acc_io ) + any( io ) > index( c.rg_acc, 1 )
+  any( c.pl ) any( rg_combining ) any( acc_combining ) any( io_combining ) + any( io ) > index( c.rg_acc, 1 )
 any( c.rg_circ ) + any( io ) > index( c.rg_circ_io, 1 ) 
+  any( c.pl ) any( rg_combining ) any( circ_combining ) + any( io ) > index( c.rg_circ_io, 1 )                  c NOT VISIBLE IN FLEx FIELD    
 any( c.rg_circ_io ) + any( io ) > index( c.rg_circ, 1 )
+  any( c.pl ) any( rg_combining ) any( circ_combining ) any( io_combining ) + any( io ) > index( c.rg_circ, 1 )
 
 c lowercase: breathing iota + accent
 any( sm_io ) + any( gra ) > index( sm_gra_io, 1 ) 
+  any( plain ) any( sm_combining ) any( io_combining ) + any( gra ) > index( sm_gra_io, 1 ) 
 any( sm_gra_io ) + any( gra ) > index( sm_io, 1 )
+  any( plain ) any( sm_combining ) any(gra_combining ) any( io_combining ) + any( gra ) > index( sm_io, 1 )
 any( sm_io ) + any( acc ) > index( sm_acc_io, 1 ) 
+  any( plain ) any( sm_combining ) any( io_combining ) + any( acc ) > index( sm_acc_io, 1 ) 
 any( sm_acc_io ) + any( acc ) > index( sm_io, 1 )
-any( sm_io ) + any( circ ) > index( sm_circ_io, 1 ) 
+  any( plain ) any( sm_combining ) any( acc_combining ) any( io_combining ) + any( acc ) > index( sm_io, 1 )
+any( sm_io ) + any( circ ) > index( sm_circ_io, 1 )
+  any( plain ) any( sm_combining ) any( io_combining ) + any( circ ) > index( sm_circ_io, 1 )
 any( sm_circ_io ) + any( circ ) > index( sm_io, 1 )
+  any( plain ) any( sm_combining ) any( circ_combining ) any( io_combining ) + any( circ ) > index( sm_io, 1 )
 
 any( rg_io ) + any( gra ) > index( rg_gra_io, 1 ) 
+  any( plain ) any( rg_combining ) any( io_combining ) + any( gra ) > index( rg_gra_io, 1 ) 
 any( rg_gra_io ) + any( gra ) > index( rg_io, 1 )
+  any( plain ) any( rg_combining ) any( gra_combining ) any( io_combining ) + any( gra ) > index( rg_io, 1 )
 any( rg_io ) + any( acc ) > index( rg_acc_io, 1 ) 
+  any( plain ) any( rg_combining ) any( io_combining ) + any( acc ) > index( rg_acc_io, 1 ) 
 any( rg_acc_io ) + any( acc ) > index( rg_io, 1 )
+  any( plain ) any( rg_combining ) any( acc_combining ) any( io_combining ) + any( acc ) > index( rg_io, 1 )
 any( rg_io ) + any( circ ) > index( rg_circ_io, 1 ) 
+  any( plain ) any( rg_combining ) any( io_combining ) + any( circ ) > index( rg_circ_io, 1 ) 
 any( rg_circ_io ) + any( circ ) > index( rg_io, 1 )
+  any( plain ) any( rg_combining ) any( circ_combining ) any( io_combining ) + any( circ ) > index( rg_io, 1 )
 
 c caps: breathing iota + accent
 any( c.sm_io ) + any( gra ) > index( c.sm_gra_io, 1 ) 
-any( c.sm_gra_io ) + any( gra ) > index( c.sm_io, 1 )
-any( c.sm_io ) + any( acc ) > index( c.sm_acc_io, 1 ) 
-any( c.sm_acc_io ) + any( acc ) > index( c.sm_io, 1 )
-any( c.sm_io ) + any( circ ) > index( c.sm_circ_io, 1 ) 
-any( c.sm_circ_io ) + any( circ ) > index( c.sm_io, 1 )
+  any( c.pl ) any( sm_combining ) any( io_combining ) + any( gra ) > index( c.sm_gra_io, 1 )                    c NOT VISIBLE IN FLEx FIELD            
+any( c.sm_gra_io ) + any( gra ) > index( c.sm_io, 1 )                                                           
+  any( c.pl ) any( sm_combining ) any( gra_combining ) any( io_combining ) + any( gra ) > index( c.sm_io, 1 )   c NOT VISIBLE IN FLEx FIELD
+any( c.sm_io ) + any( acc ) > index( c.sm_acc_io, 1 )                                                           
+  any( c.pl ) any( sm_combining ) any( io_combining ) + any( acc ) > index( c.sm_acc_io, 1 )                    c NOT VISIBLE IN FLEx FIELD
+any( c.sm_acc_io ) + any( acc ) > index( c.sm_io, 1 )                                                           
+  any( c.pl ) any( sm_combining ) any( acc_combining ) any( io_combining ) + any( acc ) > index( c.sm_io, 1 )   c NOT VISIBLE IN FLEx FIELD
+any( c.sm_io ) + any( circ ) > index( c.sm_circ_io, 1 )                                                         
+  any( c.pl ) any( sm_combining ) any( io_combining ) + any( circ ) > index( c.sm_circ_io, 1 )                  c NOT VISIBLE IN FLEx FIELD
+any( c.sm_circ_io ) + any( circ ) > index( c.sm_io, 1 )                                                         
+  any( c.pl ) any( sm_combining ) any( circ_combining ) any( io_combining ) + any( circ ) > index( c.sm_io, 1 ) c NOT VISIBLE IN FLEx FIELD
 
-any( c.rg_io ) + any( gra ) > index( c.rg_gra_io, 1 ) 
+any( c.rg_io ) + any( gra ) > index( c.rg_gra_io, 1 )                                               
+  any( c.pl ) any( rg_combining ) any( io_combining ) + any( gra ) > index( c.rg_gra_io, 1 )                    c NOT VISIBLE IN FLEx FIELD
 any( c.rg_gra_io ) + any( gra ) > index( c.rg_io, 1 )
+  any( c.pl ) any( rg_combining ) any( gra_combining ) any( io_combining ) + any( gra ) > index( c.rg_io, 1 )   c NOT VISIBLE IN FLEx FIELD
 any( c.rg_io ) + any( acc ) > index( c.rg_acc_io, 1 ) 
+  any( c.pl ) any( rg_combining ) any( io_combining ) + any( acc ) > index( c.rg_acc_io, 1 )                    c NOT VISIBLE IN FLEx FIELD
 any( c.rg_acc_io ) + any( acc ) > index( c.rg_io, 1 )
+  any( c.pl ) any( rg_combining ) any( acc_combining ) any( io_combining ) + any( acc ) > index( c.rg_io, 1 )   c NOT VISIBLE IN FLEx FIELD
 any( c.rg_io ) + any( circ ) > index( c.rg_circ_io, 1 ) 
+  any( c.pl ) any( rg_combining ) any( io_combining ) + any( circ ) > index( c.rg_circ_io, 1 )                  c NOT VISIBLE IN FLEx FIELD
 any( c.rg_circ_io ) + any( circ ) > index( c.rg_io, 1 )
+  any( c.pl ) any( rg_combining ) any( circ_combining ) any( io_combining) + any( circ ) > index( c.rg_io, 1 )  c NOT VISIBLE IN FLEx FIELD
 
 c lowercase: accent iota + breathing
 any( gra_io ) + any( sm ) > index( sm_gra_io, 1 )
+  any( plain) any( gra_combining ) any( io_combining ) + any( sm ) > index( sm_gra_io, 1 )                      
 any( sm_gra_io ) + any( sm ) > index( gra_io, 1 )
+  any( plain ) any( sm_combining ) any( gra_combining ) any( io_combining ) + any( sm ) > index( gra_io, 1 )
 any( gra_io ) + any( rg ) > index( rg_gra_io, 1 )
+  any( plain ) any( gra_combining ) any( io_combining ) + any( rg ) > index( rg_gra_io, 1 )
 any( rg_gra_io ) + any( rg ) > index( gra_io, 1 )
+  any( plain ) any( rg_combining ) any( gra_combining ) any( io_combining ) + any( rg ) > index( gra_io, 1 )
 
 any( acc_io ) + any( sm ) > index( sm_acc_io, 1 )
+  any( plain ) any( acc_combining ) any( io_combining ) + any( sm ) > index( sm_acc_io, 1 )
 any( sm_acc_io ) + any( sm ) > index( acc_io, 1 )
+  any( plain ) any( sm_combining ) any( acc_combining ) any( io_combining ) + any( sm ) > index( acc_io, 1 )
 any( acc_io ) + any( rg ) > index( rg_acc_io, 1 )
+  any( plain ) any( acc_combining ) any( io_combining ) + any( rg ) > index( rg_acc_io, 1 )
 any( rg_acc_io ) + any( rg ) > index( acc_io, 1 )
+  any( plain ) any( rg_combining ) any( acc_combining ) any( io_combining ) + any( rg ) > index( acc_io, 1 )
 
 any( circ_io ) + any( sm ) > index( sm_circ_io, 1 )
+  any( plain ) any( circ_combining ) any( io_combining ) + any( sm ) > index( sm_circ_io, 1 )
 any( sm_circ_io ) + any( sm ) > index( circ_io, 1 )
+  any( plain ) any( sm_combining ) any( circ_combining ) any( io_combining ) + any( sm ) > index( circ_io, 1 )
 any( circ_io ) + any( rg ) > index( rg_circ_io, 1 )
+  any( plain ) any( circ_combining ) any( io_combining ) + any( rg ) > index( rg_circ_io, 1 )
 any( rg_circ_io ) + any( rg ) > index( circ_io, 1 )
+  any( plain ) any( rg_combining ) any( circ_combining ) any( io_combining ) + any( rg ) > index( circ_io, 1 )
 
 c no! caps: accent iota + breathing
 
