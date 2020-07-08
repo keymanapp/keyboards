@@ -1,6 +1,10 @@
 Busa Change History
 =======================
 
+1.4.1 (8 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 1.4 (8 Jan 2019)
 -----------------
 * Moved keyboard to github repo

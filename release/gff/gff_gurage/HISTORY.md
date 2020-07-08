@@ -1,5 +1,8 @@
 # ጉራጌ (Gurage) Change History
 
+## 2020-01-29 0.6.2
+* Updated htm files for readability on Linux
+
 ## 2020-01-29 0.6.1
 * Correction to syllabary table.
 

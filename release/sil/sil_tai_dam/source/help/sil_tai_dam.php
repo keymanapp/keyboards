@@ -1,10 +1,8 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:keys="http://www.tavultesoft.com/xml/keys" xmlns:oskexportdetails="http://www.tavultesoft.com/xml/oskexportdetails">
-<?php
+﻿<?php
   $pagename = 'Tai Dam (SIL) Keyboard Help';
   $pagetitle = 'Tai Dam (SIL) Keyboard Help';
   require_once('header.php');
 ?>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
 <h2>Font</h2>
 
 <p>The Tai Dam (SIL) keyboard can be used with any font that supports the Tai Viet script. The Tai Heritage Pro font, which was used to create the keyboard layout shown below, is included for your convenience.</p>
@@ -140,6 +138,3 @@
    </tr>
  
  </table>
-
-
-</body>

@@ -1,7 +1,7 @@
 ጉራጌ (Gurage) Keyboard
 ====================
 
-Copyright (C) 2019 Ge'ez Frontier Foundation
+Copyright (C) 2019-2020 Ge'ez Frontier Foundation
 
 Version 0.6.9
 

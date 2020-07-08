@@ -1,9 +1,9 @@
 Osage Keyboard
 =====================
 
-Copyright (C) 2018 Osage Nation
+Copyright (C) 2018-2020 Osage Nation
 
-Version 1.2.1
+Version 1.2.2
 
 OSAGE DESCRIPTION__
 This is a keyboard for typing the Osage language in the Osage script.
@@ -17,6 +17,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
  * Mobile Web
  * iOS
