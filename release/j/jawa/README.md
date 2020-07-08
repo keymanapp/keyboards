@@ -9,25 +9,22 @@ This keyboard is designed to type all Javanese characters and stacks directly. Y
 Links
 -----
 
- * Home:     https://github.com/bennylin/transliterasijawa
+ * Home:     https://keyman.com/keyboards/jawa
+ * Mobile Web: https://play.google.com/store/apps/details?id=com.tavultesoft.kmapro
+ * Author Home: https://github.com/bennylin/transliterasijawa
  * Help:     fb.me/bennylin.solo
  * Contact:  bennylin.idwiki@hotmail.com
 
 Supported Platforms
 -------------------
- * https://keyman.com/keyboards/jawa
- ** Windows
- ** Linux
- ** Mac
- * https://keymanweb.com/#jv-java
- ** Web
- ** Mobile Web
- * https://play.google.com/store/apps/details?id=com.tavultesoft.kmapro
- ** Android
-
-Future:
+ * Windows
+ * macOS
+ * Linux
+ * Web
+ * Mobile Web
  * iOS
-
+ * Android
+ 
 Documentation
 -------------
 

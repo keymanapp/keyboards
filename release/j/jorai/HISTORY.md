@@ -1,5 +1,10 @@
 Jorai Keyboard Change History
 =======================
+
+1.0.3 (5 Jun 2020)
+-----------------
+* Updated htm files for readability on Linux
+
 1.0.2 (27 June 2018)
 --------------------
 * Include the correct touch keyboard in the keyboard package

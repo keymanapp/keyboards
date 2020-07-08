@@ -1,5 +1,10 @@
 Persian Phonetic Change History
 ===============================
+
+1.0.2 (8 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 1.0.1 (18 Jun 2018)
 -------------------
 Add touch keyboard to package
