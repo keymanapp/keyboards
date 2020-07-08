@@ -1,6 +1,10 @@
 # ጉራጌ (Gurage) Change History
 
-## 2020-01-29 0.6.2
+
+## 2020-07-05 0.6.9 (0.7 Beta 1)
+* Addition of Gurage Touch Keyboard
+
+## 2020-06-10 0.6.2
 * Updated htm files for readability on Linux
 
 ## 2020-01-29 0.6.1
