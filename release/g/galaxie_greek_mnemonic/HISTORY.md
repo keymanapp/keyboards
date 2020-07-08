@@ -1,8 +1,8 @@
 Galaxie Greek (Mnemonic) Keyboard Change History
 =======================
 
-## 3.2.2 (6 Jul 2020)
-* Added rules to mitigate NFD issues
+## 3.3 (6 Jul 2020)
+* Added rules to mitigate NFD contextual matches and improve compatibility with FLEx.
 
 ## 3.2.1 (14 Sept 2018)
 * Added linux

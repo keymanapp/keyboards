@@ -2213,7 +2213,7 @@ END;
             </p>
 
                 <p>
-					Version 3.2.2 released 6 Jul 2020. Add rules to mitigate NFD issues.<br/>
+					Version 3.3 released 6 Jul 2020. Added rules to mitigate NFD contextual matches and improve compatibility with FLEx.<br/>
                 	Version 3.2.1 released 14 Sept 2018. Add support for Linux.<br/>
                 	Version 3.2 released 10 Aug 2018. Moved source to GitHub.<br/>
                 	Version 3.1 released 24 May 2012. Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). Amended Hebrew help.<br/>
