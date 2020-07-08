@@ -1,6 +1,13 @@
 nrc_crk_cans Keyboard Change History
 ====================================
 
+1.2.0 (24 Jun 2020)
+-------------------
+
+ * Added: rare nwV syllabics, found in the `Unified Canadian Aboriginal Syllabics Extended` block of Unicode
+ * Change: use U+1429 CANADIAN SYLLABICS FINAL PLUS instead of U+1540 CANADIAN SYLLABICS WEST-CREE Y
+    - despite the name, the former is _not_ preferred by West Cree syllabics writers
+
 1.1.0 (30 Mar 2020)
 -------------------
 

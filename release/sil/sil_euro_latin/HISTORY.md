@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 1.9.1 (4 Jun 2020)
+* Updated htm files for readability on Linux
 ## 1.9 (15 Apr 2020)
 * Added DejaVu Sans back into package
 ## 1.8.1 (7 Dec 2018)

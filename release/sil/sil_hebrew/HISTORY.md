@@ -1,6 +1,10 @@
 Hebrew (SIL) Keyboard Change History
 =======================
 
+1.7.2 (10 Jun 2020)
+-----------------
+* Updated htm files for readability on Linux
+
 1.7.1 (14 Sept 2018)
 -----------------
 * Rename keyboard

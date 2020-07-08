@@ -1,6 +1,9 @@
 Rachitrali-Kalasha Change History
 =======================
 
+## 1.2.1 (11 Jun 2020) 
+* Updated htm files for readability on Linux
+
 ## 1.2 (15 May 2018) 
 * Add example text for web-based keyboard
 
