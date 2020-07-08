@@ -1,9 +1,9 @@
 Cherokee Nation (SIL) Keyboard 
 =====================
 
-Copyright (C) 2012-2019 SIL International
+Copyright (C) 2012-2020 SIL International
 
-Version 1.2
+Version 1.2.1
 
 __DESCRIPTION__
 
@@ -15,6 +15,7 @@ Supported Platforms
 
  * Windows
  * Macosx
+ * Linux
  * Web
  * iOS
  * Android

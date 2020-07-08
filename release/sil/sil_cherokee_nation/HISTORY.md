@@ -1,6 +1,10 @@
 Cherokee Nation (SIL) Change History
 =======================
 
+1.2.1 (8 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 1.2 (11 Jan 2019)
 -----------------
 * Move keyboard from legacy to release

@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           NW Iranian Latin
-* Copyright:      (C) 2017-2019 SIL International
-* Version:        1.0.2
+* Copyright:      (C) 2017-2020 SIL International
+* Version:        1.0.3
 * Keyman Version: 11.0
 * BCP-47 codes:   glk-Latn
 
@@ -17,7 +17,6 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
-
  * Home:     https://keyman.com/keyboards/nw_iranian_latin
  * Help:     https://help.keyman.com/keyboard/nw_iranian_latin
  * Contact:  https://community.software.sil.org/c/keyman
@@ -27,6 +26,7 @@ Supported Platforms
 
  * Windows
  * Macosx
+ * Linux
  * Web
  * iOS
  * Android

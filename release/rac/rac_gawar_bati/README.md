@@ -1,9 +1,9 @@
 Rachitrali-Gawar-Bati Keyboard
 ==============================
 
-Copyright (C) 2017-2019 Rehmat Aziz Chitrali
+Copyright (C) 2017-2020 Rehmat Aziz Chitrali
 
-Version 1.0.1
+Version 1.0.2
 
 Description
 -----------
@@ -25,6 +25,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
  * Android
  * iOS
