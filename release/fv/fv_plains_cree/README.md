@@ -1,9 +1,9 @@
 ᓀᐦᐃᔭᐍᐏᐣ keyboard
 ======================
 
-Copyright (c) 2020 National Research Council Canada, 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
+Copyright (c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
 
-Version 10.0
+Version 10.0.1
 
 ᓀᐦᐃᔭᐍᐏᐣ keyboard layout for Unicode
 
