@@ -1,6 +1,9 @@
 Malar Malayalam Keyboard Change History
 ====================
 
+1.2 (2020-07-10)
+* Rebuilt with kmcomp 13.0.109.0 stable
+
 1.1 (2020-07-01)
 ----------------
 
