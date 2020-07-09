@@ -13,6 +13,8 @@ Shavian alphabet for Esperanto
 Links
 -----
 
+Home: https://keyman.com/keyboards/sxava
+
 Supported Platforms
 -------------------
  * Windows
