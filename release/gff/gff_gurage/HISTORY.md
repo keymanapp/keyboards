@@ -1,6 +1,9 @@
 # ጉራጌ (Gurage) Change History
 
 
+## 2020-07-09 0.6.10 (0.7 Beta 2)
+* Fixed missing compositions
+
 ## 2020-07-05 0.6.9 (0.7 Beta 1)
 * Addition of Gurage Touch Keyboard
 
