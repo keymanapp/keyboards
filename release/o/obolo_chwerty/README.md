@@ -1,9 +1,9 @@
 Obolo keyboard
 ==============
 
-© 2020 Rogers Katelem Edeh
+© 2019-2020 Rogers Katelem Edeh
 
-Version 1.0.0
+Version 1.1
 
 Description
 -----------
