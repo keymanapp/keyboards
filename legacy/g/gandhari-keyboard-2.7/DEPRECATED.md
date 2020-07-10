@@ -1,0 +1,1 @@
+This keyboard has been deprecated and replaced by legacy/g/gandhari-keyboard-2.7
