@@ -70,7 +70,9 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   version=${kpsdata[1]}
   bcp47=${kpsdata[2]}
   langname=${kpsdata[3]}
-  
+  oskFont=${kpsdata[4]}
+  displayFont=${kpsdata[5]}
+
   # Build a file entry
   FILE_LINES_0=''
   FILE_LINES_1=''
@@ -95,12 +97,24 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
   
   # Build a keyboard entry
-    
+
+  # Check for font info (relative path already adjusted)
+  OSK_FONT_LINES_0=''
+  if [ -f "$oskFont" ]; then
+    OSK_FONT_LINES_0='
+      <OSKFont>'"$oskFont"'</OSKFont>'
+  fi
+  DISPLAY_FONT_LINES_0=''
+  if [ -f "$displayFont" ]; then
+    DISPLAY_FONT_LINES_0='
+      <DisplayFont>'"$displayFont"'</DisplayFont>'
+  fi
+
   KEYBOARD_LINES_0='
     <Keyboard>
       <Name>'"$name"'</Name>
       <ID>'"$id"'</ID>
-      <Version>'"$version"'</Version>
+      <Version>'"$version"'</Version>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
       <Languages>
         <Language ID="'"$bcp47"'">'"$langname"'</Language>
       </Languages>
