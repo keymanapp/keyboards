@@ -14,5 +14,10 @@ my $name = $1 if($kps =~ /\<Keyboard\>\s*\<Name\>(.*?)\<\/Name\>/);
 my $version = $1 if($kps =~ /\<Keyboard\>.+<Version\>(.*?)\<\/Version\>/s);
 my $bcp47 = $1 if($kps =~ /\<Keyboard\>.+<Language\s+ID="(.+?)"\>/s);
 my $langname = $1 if($kps =~ /\<Keyboard\>.+<Language.+?\>(.+?)\<\/Language\>/s);
+# Regex for font paths will intentionally skip 1 level
+my $oskFont = ' ';
+$oskFont = $1 if($kps =~ /\<Keyboard\>.+<OSKFont\>\.\.\\(.*?)\<\/OSKFont\>/s);
+my $displayFont = ' ';
+$displayFont = $1 if($kps =~ /\<Keyboard\>.+<DisplayFont\>\.\.\\(.*?)\<\/DisplayFont\>/s);
 
-print "$name\n$version\n$bcp47\n$langname";
+print "$name\n$version\n$bcp47\n$langname\n$oskFont\n$displayFont";
