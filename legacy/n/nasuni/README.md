@@ -3,7 +3,7 @@ Naskapi Common keyboard
 
 (c) 2004-2020 FirstVoices, Chris Harvey
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
