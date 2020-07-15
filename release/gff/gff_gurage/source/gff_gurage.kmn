@@ -14,7 +14,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '10.0'
-store(&KEYBOARDVERSION) '0.6.9'
+store(&KEYBOARDVERSION) '0.6.11'
 store(&NAME) 'ጉራጌ (Gurage)'
 c store(&ETHNOLOGUECODE) 'sgw'
 store(&COPYRIGHT) '© 2019-2020 Ge’ez Frontier Foundation'
@@ -142,6 +142,7 @@ c ---------------------Input of Labiovelars-------------------------------------
   any(ካዕብ፡ልዩ)   + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
   any(ካዕብ፡ልዩ)   + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
   any(ካዕብ፡ልዩ)   + any(ራብዕ-key) > index(ዘመደ፡ራብዕ,1)
+  any(ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(ዘመደ፡ኃምስ,1)
   any(ዘመደ፡ሣልስ)  + any(ግዕዝ-key) > index(ዘመደ፡ኃምስ,1)
 c ---------------------End Input of Labiovelars-------------------------------------------------
 
@@ -241,5 +242,27 @@ c enhance this later, look for something that can copy a match over
 
 + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
+
+c ---------------------Input of Non-Gurgage Characters------------------------------------------
+c
+c This section has mappings for non-Gurage letters that have been made accessing on the touch
+c keyboard.
+c
+  store(non-gurage፡ሳድስ)  'ህሥቭኅዽፅጸጵ'
+  store(non-gurage፡ግዕዝ)  'ሀሠቨኀዸፀጸጰ'  						
+  store(non-gurage፡ካዕብ)  'ሁሡቩኁዹፁጹጱ'
+  store(non-gurage፡ሣልስ)  'ሂሢቪኂዺፂጺጲ'
+  store(non-gurage፡ራብዕ)  'ሃሣቫኃዻፃጻጳ'
+  store(non-gurage፡ኃምስ)  'ሄሤቬኄዼፄጼጴ'
+  store(non-gurage፡ሳብዕ)  'ሆሦቮኆዾፆጾጶ'        
+
+  any(non-gurage፡ሳድስ) + any(ግዕዝ-key) > index(non-gurage፡ግዕዝ,1)
+  any(non-gurage፡ሳድስ) + any(ካዕብ-key) > index(non-gurage፡ካዕብ,1)
+  any(non-gurage፡ሳድስ) + any(ሣልስ-key) > index(non-gurage፡ሣልስ,1)
+  any(non-gurage፡ሳድስ) + any(ራብዕ-key) > index(non-gurage፡ራብዕ,1)
+  any(non-gurage፡ሳድስ) + any(ኃምስ-key) > index(non-gurage፡ኃምስ,1)
+  any(non-gurage፡ሣልስ) + any(ግዕዝ-key) > index(non-gurage፡ኃምስ,1)  
+  any(non-gurage፡ሳድስ) + any(ሳብዕ-key) > index(non-gurage፡ሳብዕ,1)
+c ---------------------End Input of Non-Gurgage Characters--------------------------------------
                                             
 c =====================End Functional Section===================================================
