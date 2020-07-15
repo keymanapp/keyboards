@@ -370,9 +370,11 @@ c special letters
 "-k" + "a" > U+A611
 "-k" + "u" > U+A61C
 c archaic nasal vowels
-"-ta" + "~" > U+A619
+"-" U+A55A + "~" > U+A619 c -ta~
 "-" U+0257 "O" + "~" > U+A61E
-"-ni" + "~" > U+A616
+
++ [RALT K_N] > "-n"
+"-" U+A547 + "~" > U+A616 c -ni~
 
 c Punctuation and extraneous keys
 + [RALT K_COMMA] >  U+A60D
