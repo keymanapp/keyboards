@@ -3,7 +3,7 @@
 
 Copyright (C) 2019-2020 Ge'ez Frontier Foundation
 
-Version 0.6.9 (0.7 Beta)
+Version 0.6.11 (0.7 Beta 3)
 
 This is a Gurage (ጉራጌ , ISO-639-2 swg) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard along with 4 additions for the
