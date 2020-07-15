@@ -1,14 +1,14 @@
 Qom keyboard
 ==============
 
-© Latinoamerica Habla
+© 2020 Latinoamérica Habla
 
 Version 1.0
 
 Description
 -----------
 
-Qom keyboard based on Latin American Spanish
+Keyboard layout for the Qom language, based on Latin American Spanish keyboard distribution.
 
 Links
 -----
