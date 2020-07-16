@@ -96,20 +96,19 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   fi
   FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
   
-  # Build a keyboard entry
-
-  # Check for font info (relative path already adjusted)
+  # Check for optional font info
   OSK_FONT_LINES_0=''
-  if [ -f "$oskFont" ]; then
+  if [[ "$oskFont" != 'none' ]]; then
     OSK_FONT_LINES_0='
       <OSKFont>'"$oskFont"'</OSKFont>'
   fi
   DISPLAY_FONT_LINES_0=''
-  if [ -f "$displayFont" ]; then
+  if [[ "$displayFont" != 'none' ]]; then
     DISPLAY_FONT_LINES_0='
       <DisplayFont>'"$displayFont"'</DisplayFont>'
   fi
 
+  # Build a keyboard entry
   KEYBOARD_LINES_0='
     <Keyboard>
       <Name>'"$name"'</Name>
