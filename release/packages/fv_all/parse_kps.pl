@@ -17,7 +17,7 @@ my $langname = $1 if($kps =~ /\<Keyboard\>.+<Language.+?\>(.+?)\<\/Language\>/s)
 # Font paths are optional
 my $oskFont = 'none';
 $oskFont = $1 if($kps =~ /\<Keyboard\>.+<OSKFont\>(.*?)\<\/OSKFont\>/s);
-my $displayFont = ' ';
+my $displayFont = 'none';
 $displayFont = $1 if($kps =~ /\<Keyboard\>.+<DisplayFont\>(.*?)\<\/DisplayFont\>/s);
 
 print "$name\n$version\n$bcp47\n$langname\n$oskFont\n$displayFont";
