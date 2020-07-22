@@ -3,6 +3,14 @@
 set -e
 set -u
 
+function die () {
+    # TODO: Incorporate build-utils.sh for keyboards repo
+    echo
+    echo "$*"
+    echo
+    exit 1
+}
+
 # Parse parameters
 
 FLAG_SILENT=
@@ -36,7 +44,7 @@ for key in "$@"; do
         PROJECT_TARGET="$key"
         if [[ "$PROJECT_TARGET" != "fv_all.kps" ]]; then 
           echo "Skipping fv_all.kps"
-          exit 0; 
+          exit 0;
         fi
         ;;
     esac
@@ -44,7 +52,7 @@ for key in "$@"; do
   fi
 done
 
-# For each keyboard in the following folders:
+# For each keyboard in the following release folders:
 # fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
 # If a .kmx or .js exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
 # The fonts which are shared across the packages are already listed in fv_all.kps.in.
@@ -70,7 +78,9 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   version=${kpsdata[1]}
   bcp47=${kpsdata[2]}
   langname=${kpsdata[3]}
-  
+  oskFont=${kpsdata[4]}
+  displayFont=${kpsdata[5]}
+
   # Build a file entry
   FILE_LINES_0=''
   FILE_LINES_1=''
@@ -94,13 +104,24 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   fi
   FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
   
+  # Check for optional font info
+  OSK_FONT_LINES_0=''
+  if [[ "$oskFont" != 'none' ]]; then
+    OSK_FONT_LINES_0='
+      <OSKFont>'"$oskFont"'</OSKFont>'
+  fi
+  DISPLAY_FONT_LINES_0=''
+  if [[ "$displayFont" != 'none' ]]; then
+    DISPLAY_FONT_LINES_0='
+      <DisplayFont>'"$displayFont"'</DisplayFont>'
+  fi
+
   # Build a keyboard entry
-    
   KEYBOARD_LINES_0='
     <Keyboard>
       <Name>'"$name"'</Name>
       <ID>'"$id"'</ID>
-      <Version>'"$version"'</Version>
+      <Version>'"$version"'</Version>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
       <Languages>
         <Language ID="'"$bcp47"'">'"$langname"'</Language>
       </Languages>
@@ -108,6 +129,11 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
 
   KEYBOARD_LINES="$KEYBOARD_LINES$KEYBOARD_LINES_0"
 done
+
+# Verify keyboards exist
+if [[ $KEYBOARD_LINES = '' ]]; then
+  die "No built keyboards exist for fv_all"
+fi
 
 # Insert replaced text into fv_all.kps
 
