@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Tamajaq-Unicode Keyboard Help';
-  $pagetitle = 'Tamajaq-Unicode Keyboard Help';
+  $pagename = 'Tawallammat Latin Keyboard Help';
+  $pagetitle = 'Tawallammat Latin Keyboard Help';
   $style = <<<EXTRA
 	.kbd {
 		background-color: #eee;
@@ -24,7 +24,7 @@ EXTRA;
 ?>
 
 
-<h1>Start Using Tamajaq-Unicode</h1>
+<h1>Start Using Tawallammat Latin</h1>
 
 <p>
     This keyboard covers all posible characters needed to type Tamajaq language for Latin orthography. Additional characters have been added to avoid having to switch keyboard to French or English while typing.

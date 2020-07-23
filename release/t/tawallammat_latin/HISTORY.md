@@ -1,4 +1,4 @@
-Tamajaq-Unicode Change History
+Tawallammat Latin Change History
 ====================
 
 1.0 (2020-06-19)
