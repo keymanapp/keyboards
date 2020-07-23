@@ -16,7 +16,7 @@
 	<p>To type a consonant, you must type the consonant first, and then the vowel. For example:</p>
 <ul>ɓꔀ (be) will produce ꔇ.</ul>
 
-<p>The hyphen characters on the RIGHT ALT layer are used for accessing historic syllables. Type the character followed by a vowel and the historic syllable will be formed.</p>
+<p>The hyphen characters on the RIGHT ALT layer are used for accessing historic syllables. Type the character followed by a vowel and the historic syllable will be formed. There are not historic syllables for every vowel, so the hyphen may remain in the text unexpectedly).</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
