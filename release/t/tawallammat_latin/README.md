@@ -1,4 +1,4 @@
-Tamajaq-Unicode keyboard
+Tawallammat Latin keyboard
 ==============
 
 © 2020 Christian Grandouiller
