@@ -1,25 +1,25 @@
 <?php /*
   Name:             keyboard_visual_media_tamil_modular
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Additional help
 */
   require_once('servervars.php');
   $pagename = 'Tamil Modular (Visual Media) Keyboard Help';
   $pagetitle = 'Tamil Modular (Visual Media) Keyboard Help';
   $style = '.lang2 {font-size:130%}';
-  $relatedSites = array("http://$site_tavultesoft/tamil" => "Tamil Keyboards Home");
+  $relatedSites = array("$keyman_com/tamil" => "Tamil Keyboards Home");
   require_once('header.php');
 ?>
 
@@ -44,7 +44,7 @@
 
 
 <div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
+		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
 the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
 
 <h2>Overview</h2>
@@ -80,7 +80,7 @@ For example, the standalone vowel <span class='highlightExample'>இ</span> is e
 </p>
 
 <p>
-Grantha letters, which are used for typing Sanskrit, appear on the keyboard and are treated as normal consonants. 
+Grantha letters, which are used for typing Sanskrit, appear on the keyboard and are treated as normal consonants.
 </p>
 
 </div>
@@ -96,7 +96,7 @@ Grantha letters, which are used for typing Sanskrit, appear on the keyboard and 
 <div id="Documentation">
 <h3>Keyboard Details</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>The visible keyboard layout consists of the eighteen consonants <span class='lang2'>க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன</span>, the five Grantha consonants and SRii<span class='lang2'>ஸ ஷ ஜ ஹ க்ஷ ஸ்ரீ</span>, eleven vowels <span class='lang2'>அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ</span>, a range of vowel components and combinants characters, and the Pulli <span class='lang2'>்</span> and Aytham <span class='lang2'>ஃ</span> marks, as well as various punctuation marks.  The majority of characters are typed using a combination of keystrokes.</p>
 
 <p>Although many Tamil characters are typed using separate keys for consonants and components, the characters that appear on screen will be combinants, which the computer sees as a single character.  This means that while two (or more) keystrokes are required to display most consonant-vowel combinants, when you use the arrow keys to move the cursor through the text, only a single keystroke is needed to move past each character.  Moving the cursor to the left of a combinant character and pressing Delete will erase the whole character, but if you move the cursor to the right of a combinant and press Backspace, only the vowel component will be erased.  This is the case whether the vowel component appears to the left or right of, above or below the consonant.
@@ -116,7 +116,7 @@ Because the consonants contain the implicit vowel <span class='highlightExample'
 <h4>The SRii Character <img src='srii/tamil_srii.png' style='vertical-align:middle' /></h4>
 <p>
 This character is entered by typing <span class='keys'>|</span> (Shift+Vertical Bar or Shift+Backslash).  Currently, some browsers do not display this character correctly.  <a href="srii/tamil_srii.php">Click here</a> if you are having difficulty entering this character.
-</p>	
+</p>
 </div>
 
 <h4>Keystroke Examples</h4>
