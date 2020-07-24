@@ -3,7 +3,7 @@ Vai Typewriter (Athinkra) keyboard
 
 (c) 2008-2020 Athinkra, LLC
 
-Version 1.2
+Version 1.2.1
 
 Description
 -----------
