@@ -3088,7 +3088,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
-  color:blue'>Africanist Upstep</span></p>
+  color:blue'>Africanist downstep</span></p>
   </td>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3145,7 +3145,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
-  color:blue'>Africanist downstep (raised)</span></p>
+  color:blue'>Africanist upstep (raised)</span></p>
   </td>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3201,7 +3201,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
-  color:blue'>Africanist downstep (lowered)</span></p>
+  color:blue'>Africanist upstep (lowered)</span></p>
   </td>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
