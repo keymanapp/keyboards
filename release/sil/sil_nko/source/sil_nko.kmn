@@ -1,0 +1,79 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'N' U+0027 'Ko (SIL)'
+store(&COPYRIGHT) '© 2020 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'sil_nko.kvks'
+store(&LAYOUTFILE) 'sil_nko.keyman-touch-layout'
+store(&KMW_RTL) '1'
+store(&BITMAP) 'sil_nko.ico'
+
+begin Unicode > use(main)
+
+store(digitKey) "1098765432"
+store(nkoDigit) U+07C0 U+07C1 U+07C2 U+07C3 U+07C4 U+07C5 U+07C6 U+07C7 U+07C8 U+07C9 
+
+store(letterKey)  [K_H]  [K_G]  [K_F]  [K_D]  [K_S]  [K_A] \
+                  [K_Z]  [SHIFT K_M]  [K_RBRKT] [K_QUOTE] [K_Q] [K_COLON] [K_J] [K_U] [K_PERIOD] [K_Y] \
+                  [SHIFT K_G] [K_COMMA] [K_I] [K_K] [K_SLASH] [K_M] \
+                  [K_E]  [K_P]  [K_O]  [K_L] [K_LBRKT] [K_R] [K_T] [K_W]
+store(nkoLetter)  U+07CA U+07CB U+07CC U+07CD U+07CE U+07CF \
+                  U+07D0 U+07D1 U+07D2 U+07D3 U+07D4 U+07D5 U+07D6 U+07D7 U+07D8 U+07D9 \ 
+                  U+07Da U+07Db U+07Dc U+07Dd U+07De U+07Df \
+                  U+07e0 U+07e1 U+07e2 U+07e3 U+07e4 U+07e5 U+07e6 U+07e7
+
+store(ArchaicKey) [SHIFT K_S]  [SHIFT K_D]  [SHIFT K_F]
+store(nkoArchaic) U+07E8       U+07E9       U+07EA 
+
+store(ToneKey) [K_N]  [K_B]  [SHIFT K_C] [SHIFT K_V] [SHIFT K_N] [SHIFT K_B] [SHIFT K_X] [K_V]  [K_C]
+store(nkoTone) U+07EB U+07Ec U+07Ed      U+07Ee      U+07Ef      U+07f0      U+07f1      U+07F4 U+07F5 
+
+store(diacKey) [K_X]  [SHIFT K_Z]
+store(nkoDiac) U+07F2 U+07F3 
+
+store(ExtrasKey) [SHIFT K_A] [SHIFT K_H] [SHIFT K_L]
+store(nkoExtras) U+07F6      U+07FA      U+07FD
+
+store(PunctKey) [SHIFT K_J] [K_BKSLASH] [SHIFT K_BKSLASH]
+store(nkoPunct) U+07F7      U+07F8      U+07F9
+
+store(CurrencyKey) ":"    '"'
+store(nkoCurrency) U+07FE U+07FF
+
+store(otherKey) [K_HYPHEN]  [K_EQUAL]   [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_PERIOD] [SHIFT K_COMMA] [SHIFT K_SLASH] [RALT K_SLASH] \
+                [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5]      [SHIFT K_6] \
+                [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] [SHIFT K_HYPHEN] [SHIFT K_EQUAL] \
+                [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T]      [SHIFT K_Y] \
+                [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P] [SHIFT K_LBRKT]  [SHIFT K_RBRKT] \
+                [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4]     [RALT K_5] \
+                [RALT K_6]  [RALT K_7]  [RALT K_8]  [RALT K_9]  [RALT K_0]       [RALT K_HYPHEN] \
+                [RALT K_EQUAL] [RALT K_U] [RALT K_I]
+
+store(others)   U+002D      U+003D       U+00B2     U+00B3              U+002E         U+061F  U+060C U+061B\
+                U+0026      U+00A9       U+0022     U+0027      U+0028           U+002D \
+                U+002A      U+005F       U+003A     U+003B      U+0029           U+002B \
+                U+0025      U+00B0       U+00B7     U+0024      U+00A3           U+20AC \
+                U+003C      U+003E       U+2248     U+2260      U+FD3E           U+FD3F \
+                U+221E      U+007C       U+007E     U+0023      U+007B           U+005B \
+                U+00A6      U+002F       U+005C     U+005E      U+0040           U+005D \
+                U+007D      U+2264       U+2265
+
+
+group(main) using keys
+
+c digits
++ any(digitKey) > index(nkoDigit,1)
+
+c letters
++ any(letterKey) > index(nkoLetter,1)
++ any(ArchaicKey) > index(nkoArchaic,1)
++ any(ToneKey) > index(nkoTone,1)
++ any(diacKey) > index(nkoDiac,1)
+
++ any(otherKey) > index(others,1)
++ any(PunctKey) > index(nkoPunct,1)
++ any(ExtrasKey) > index(nkoExtras,1)
++ any(CurrencyKey) > index(nkoCurrency,1)
+
+
+
