@@ -25,6 +25,21 @@ group(common) using keys
 + any(numeralKey)       > index(numeral, 1)
 + any(symbolKey)        > index(symbol, 1)
 
+c for long press of two unicode code-point characters
+   + [T_0066_0323] > U+0066 U+0323  c f̣
+   + [T_0067_0323] > U+0067 U+0323  c g̣
+   + [T_006A_0323] > U+006A U+0323  c j̣
+   + [T_014B_0307] > U+014B U+0307  c ŋ̇
+   + [T_0161_0323] > U+0161 U+0323  c ṣ̌
+   + [T_017E_0323] > U+017E U+0323  c ẓ̌
+   
+   + [SHIFT T_0046_0323] > U+0046 U+0323  c F̣
+   + [SHIFT T_0047_0323] > U+0047 U+0323  c G̣
+   + [SHIFT T_004A_0323] > U+004A U+0323  c J̣
+   + [SHIFT T_014A_0307] > U+014A U+0307  c Ŋ̇
+   + [SHIFT T_0160_0323] > U+0160 U+0323  c Ṣ̌
+   + [SHIFT T_017D_0323] > U+017D U+0323  c Ẓ̌
+
 nomatch > use(main)
 group(main) using keys
   ","  + "<" > "‘"  
@@ -46,11 +61,11 @@ group(main) using keys
   "."  + "d" > "ḍ"  
   "."  + "F" > "F̣"  
   "."  + "f" > "f̣"  
-  "."  + "g" > "ġ"  
+  "."  + "g" > "g̣"  
   "."  + "G" > "G̣"  
   "."  + "H" > "Ḥ"  
   "."  + "h" > "ḥ"  
-  "."  + "j" > "j̇"  
+  "."  + "j" > "j̣"
   "."  + "J" > "J̣"  
   "."  + "K" > "Ḳ"  
   "."  + "k" > "ḳ"  
@@ -163,7 +178,6 @@ group(main) using keys
    + "/" > "/"
    + "|" > "|"
    + "\" > "\"
-
 
 
 c EOF
