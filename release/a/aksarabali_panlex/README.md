@@ -1,7 +1,7 @@
 Aksara Bali Unicode Keyboard
 ============================
 
-Copyright (C) 2020 The PanLex Project of The Long Now Foundation
+Copyright (C) 2019-2020 The PanLex Project of The Long Now Foundation
 
 Version 1.1.1
 
