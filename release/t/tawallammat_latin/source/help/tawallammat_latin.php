@@ -38,6 +38,13 @@ EXTRA;
 
 	<h2>Mobile/Tablet Keyboard Layout</h2>
 	<div id='osk-tablet' data-states='default shift numeric'></div>
+
+	<h3>Long Press</h3>
+	<p>Press and hold on the key with a little dot on the top right to reveal more keys.</p>
+	<p>Press and hold on key <kbd>.</kbd>, you should see:</p>
+	<p><a href="tawallammat_latin_longpress.jpg"><img class="keyboard" src="tawallammat_latin_longpress.jpg" width=40% /></a></p>
+	<p>Press and hold on key <kbd>a</kbd>, you should see:</p>
+	<p><a href="tawallammat_latin_longpress_a.jpg"><img class="keyboard" src="tawallammat_latin_longpress_a.jpg" width=40% /></a></p>
 	
 
 <h1>Special Keystrokes</h1>
@@ -49,21 +56,21 @@ EXTRA;
  <tr><td><kbd>,</kbd> + <kbd>g</kbd></td><td> ɣ  </td></tr>
  <tr><td><kbd>,</kbd> + <kbd>Z</kbd></td><td> Ž  </td></tr>
  <tr><td><kbd>,</kbd> + <kbd>z</kbd></td><td> ž  </td></tr>
- <tr><td><kbd>.</kbd> + <kbd>]</kbd></td><td> ṣ̌  </td></tr>
- <tr><td><kbd>.</kbd> + <kbd>}</kbd></td><td> Ṣ̌  </td></tr>
- <tr><td><kbd>.</kbd> + <kbd>+</kbd></td><td> Ŋ̇  </td></tr>
- <tr><td><kbd>.</kbd> + <kbd>=</kbd></td><td> ŋ̇  </td></tr>
+ <tr><td><kbd>.</kbd> + <kbd>]</kbd> <br>(On mobile: press and hold on key <kbd>s</kbd> and roll over to <kbd>ṣ̌</kbd>)</td><td> ṣ̌  </td></tr>
+ <tr><td><kbd>.</kbd> + <kbd>}</kbd> <br>(On mobile: press and hold on key <kbd>S</kbd> and roll over to <kbd>Ṣ̌</kbd>)</td><td> Ṣ̌  </td></tr>
+ <tr><td><kbd>.</kbd> + <kbd>+</kbd> <br>(On mobile: press and hold on key <kbd>Ŋ</kbd> and roll over to <kbd>Ŋ̇</kbd>)</td><td> Ŋ̇  </td></tr>
+ <tr><td><kbd>.</kbd> + <kbd>=</kbd> <br>(On mobile: press and hold on key <kbd>ŋ</kbd> and roll over to <kbd>ŋ̇</kbd>)</td><td> ŋ̇  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>B</kbd></td><td> Ḅ  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>b</kbd></td><td> ḅ  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>D</kbd></td><td> Ḍ  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>d</kbd></td><td> ḍ  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>F</kbd></td><td> F̣  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>f</kbd></td><td> f̣  </td></tr>
- <tr><td><kbd>.</kbd> + <kbd>g</kbd></td><td> ġ  </td></tr>
+ <tr><td><kbd>.</kbd> + <kbd>g</kbd></td><td> g̣  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>G</kbd></td><td> G̣  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>H</kbd></td><td> Ḥ  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>h</kbd></td><td> ḥ  </td></tr>
- <tr><td><kbd>.</kbd> + <kbd>j</kbd></td><td> j̇  </td></tr>
+ <tr><td><kbd>.</kbd> + <kbd>j</kbd></td><td> j̣  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>J</kbd></td><td> J̣  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>K</kbd></td><td> Ḳ  </td></tr>
  <tr><td><kbd>.</kbd> + <kbd>k</kbd></td><td> ḳ  </td></tr>
@@ -137,12 +144,12 @@ EXTRA;
  <tr><td><kbd>~</kbd> + <kbd>o</kbd></td><td> ŏ  </td></tr>
  <tr><td><kbd>~</kbd> + <kbd>U</kbd></td><td> Ŭ  </td></tr>
  <tr><td><kbd>~</kbd> + <kbd>u</kbd></td><td> ŭ  </td></tr>
- <tr><td><kbd>,</kbd> + <kbd>></kbd></td><td>’</td></tr>
- <tr><td><kbd>,</kbd> + <kbd><</kbd></td><td>‘</td></tr>
- <tr><td><kbd>‘</kbd> + <kbd><</kbd></td><td>“</td></tr>
- <tr><td><kbd>’</kbd> + <kbd>></kbd></td><td>”</td></tr>
- <tr><td><kbd>‹</kbd> + <kbd><</kbd></td><td> «  </td></tr>
- <tr><td><kbd>›</kbd> + <kbd>></kbd></td><td>»  </td></tr>
+ <tr><td><kbd>,</kbd> + <kbd>></kbd></td><td>’ (right single quotation mark)</td></tr>
+ <tr><td><kbd>,</kbd> + <kbd><</kbd></td><td>‘ (left single quotation mark)</td></tr>
+ <tr><td><kbd>‘</kbd> (left single quotation mark) + <kbd><</kbd></td><td>“</td></tr>
+ <tr><td><kbd>’</kbd> (right single quotation mark) + <kbd>></kbd></td><td>”</td></tr>
+ <tr><td><kbd>‹</kbd> + <kbd><</kbd> <br>(press <kbd>‹</kbd> twice)</td><td> «  </td></tr>
+ <tr><td><kbd>›</kbd> + <kbd>></kbd> <br>(press <kbd>›</kbd> twice)</td><td>»  </td></tr>
  <tr><td><kbd>;</kbd> + <kbd>[</kbd></td><td> [  </td></tr>
  <tr><td><kbd>;</kbd> + <kbd>]</kbd></td><td> ]  </td></tr>
  <tr><td><kbd>;</kbd> + <kbd>{</kbd></td><td> {  </td></tr>
