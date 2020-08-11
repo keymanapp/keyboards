@@ -1,14 +1,14 @@
-Makuri Keyboard with Combosed ë and ü keyboard
+Makuri (SIL) Keyboard
 ==============
 
-© SIL Internatonal
+© 2020 SIL International
 
 Version 1.0
 
 Description
 -----------
 
-Makuri Keyboard with Combosed ë and ü generated from template
+Makuri Keyboard with Composed ë and ü generated from template
 
 Links
 -----
