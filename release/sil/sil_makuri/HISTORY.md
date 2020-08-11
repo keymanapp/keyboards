@@ -1,6 +1,6 @@
-Makuri Keyboard with Combosed ë and ü Change History
+Makuri (SIL) Keyboard Change History
 ====================
 
-1.0 (2020-06-19)
+1.0 (2020-08-11)
 ----------------
-* Created by 
+* Created by S Dysart
