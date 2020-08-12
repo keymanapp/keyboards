@@ -1,6 +1,9 @@
 Tawallammat Latin Change History
 ====================
 
+1.2 (2020-08-12)
+* Added a contributor, Mr. Joseph Gallop
+
 1.1 (2020-08-06)
 * Added characters with diacritics to longpress on touch layout
 * Updated keyboard icon
