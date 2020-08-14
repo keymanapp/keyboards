@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.103.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,8 +17,9 @@
   </StartMenu>
   <Info>
     <Name URL="">ᓀᐦᐃᔭᐍᐏᐣ (Plains Cree)</Name>
-    <Copyright URL="">(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Copyright URL="">(c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -33,14 +34,22 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</Name>
+      <Description>File AboriginalSerifREGULAR.ttf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ᓀᐦᐃᔭᐍᐏᐣ</Name>
       <ID>fv_plains_cree</ID>
       <Version></Version>
+      <OSKFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</DisplayFont>
       <Languages>
-        <Language ID="crk-Cans">Plains Cree (Unified Canadian Aboriginal Syllabics)</Language>
+        <Language ID="crk-Cans">ᓀᐦᐃᔭᐍᐏᐣ (Cree syllabics)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
