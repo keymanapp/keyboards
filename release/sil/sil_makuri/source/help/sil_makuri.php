@@ -21,7 +21,7 @@ and selecting the On Screen Keyboard menu itme.
 </div>
 
 <h2>Mobile/Phone Keyboard Layout</h2>
-<div id='osk-phone' data-states='default shift Num1 Num2'>
+<div id='osk-tablet' data-states='default shift Num1 Num2'>
 </div>
 
 <h2>Links</h2>
