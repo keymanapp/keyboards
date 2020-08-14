@@ -12,6 +12,7 @@ Makuri Keyboard with Composed ë and ü generated from template
 
 Links
 -----
+https://keyman.com/keyboards/sil_makuri
 
 Supported Platforms
 -------------------
