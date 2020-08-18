@@ -1,7 +1,15 @@
 #!/bin/bash
-
+# This script builds a single keyboard package for the FirstVoices app.
 set -e
 set -u
+
+function die () {
+    # TODO: Incorporate build-utils.sh for keyboards repo
+    echo
+    echo "$*"
+    echo
+    exit 1
+}
 
 # Parse parameters
 
@@ -36,7 +44,7 @@ for key in "$@"; do
         PROJECT_TARGET="$key"
         if [[ "$PROJECT_TARGET" != "fv_all.kps" ]]; then 
           echo "Skipping fv_all.kps"
-          exit 0; 
+          exit 0;
         fi
         ;;
     esac
@@ -44,19 +52,22 @@ for key in "$@"; do
   fi
 done
 
-# For each keyboard in the fv/ folder, if a .kmx exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
+# For each keyboard in the following release folders:
+# fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
+# If a .kmx or .js exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
 # The fonts which are shared across the packages are already listed in fv_all.kps.in.
 # If fonts need changing, manually update the file.
 
 FILE_LINES=
 KEYBOARD_LINES=
 
-for keyboard in ../../fv/*/ ; do
+for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../../basic/basic_kbdcan/ ; do
   id=$(basename "$keyboard")
+  group=$(basename $(dirname $keyboard))
+
+  # Only interested in keyboards with a .kmx / .js
   
-  # Only interested in keyboards with a .kmx
-  
-  if [[ ! -f $keyboard/build/$id.kmx ]]; then continue; fi
+  if [[ ! -f $keyboard/build/$id.kmx ]] && [[ ! -f $keyboard/build/$id.js ]]; then continue; fi
 
   echo "Extracting $id"
   
@@ -67,26 +78,50 @@ for keyboard in ../../fv/*/ ; do
   version=${kpsdata[1]}
   bcp47=${kpsdata[2]}
   langname=${kpsdata[3]}
-  
-  # Build a file entry
-  
-  FILE_LINES_0='
-    <File>
-      <Name>..\..\..\fv\'"$id"'\build\'"$id"'.kmx</Name>
-      <Description>File '"$id"'.kmx</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>'
+  oskFont=${kpsdata[4]}
+  displayFont=${kpsdata[5]}
 
-  FILE_LINES="$FILE_LINES$FILE_LINES_0"
+  # Build a file entry
+  FILE_LINES_0=''
+  FILE_LINES_1=''
+  if [ -f $keyboard/build/$id.kmx ]; then
+    FILE_LINES_0='
+      <File>
+        <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.kmx</Name>
+        <Description>File '"$id"'.kmx</Description>
+        <CopyLocation>0</CopyLocation>
+        <FileType>.kmx</FileType>
+      </File>'
+  fi
+  if [ -f $keyboard/build/$id.js ]; then
+    FILE_LINES_1='
+      <File>
+        <Name>..\..\..\'"$group"'\'"$id"'\build\'"$id"'.js</Name>
+        <Description>File '"$id"'.js</Description>
+        <CopyLocation>0</CopyLocation>
+        <FileType>.js</FileType>
+      </File>'
+  fi
+  FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
   
+  # Check for optional font info
+  OSK_FONT_LINES_0=''
+  if [[ "$oskFont" != 'none' ]]; then
+    OSK_FONT_LINES_0='
+      <OSKFont>'"$oskFont"'</OSKFont>'
+  fi
+  DISPLAY_FONT_LINES_0=''
+  if [[ "$displayFont" != 'none' ]]; then
+    DISPLAY_FONT_LINES_0='
+      <DisplayFont>'"$displayFont"'</DisplayFont>'
+  fi
+
   # Build a keyboard entry
-    
   KEYBOARD_LINES_0='
     <Keyboard>
       <Name>'"$name"'</Name>
       <ID>'"$id"'</ID>
-      <Version>'"$version"'</Version>
+      <Version>'"$version"'</Version>'"$OSK_FONT_LINES_0$DISPLAY_FONT_LINES_0"'
       <Languages>
         <Language ID="'"$bcp47"'">'"$langname"'</Language>
       </Languages>
@@ -94,6 +129,11 @@ for keyboard in ../../fv/*/ ; do
 
   KEYBOARD_LINES="$KEYBOARD_LINES$KEYBOARD_LINES_0"
 done
+
+# Verify keyboards exist
+if [[ $KEYBOARD_LINES = '' ]]; then
+  die "No built keyboards exist for fv_all"
+fi
 
 # Insert replaced text into fv_all.kps
 

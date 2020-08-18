@@ -1,0 +1,276 @@
+﻿
+store(&VERSION) '10.0'
+store(&NAME) 'Korean RR'
+c 
+c Keyboard follows the input conventions of Revised Romanization of Korean, as offically adopted by RoK (July 2000).
+c To allow entry of all normally-used Hangul characters, the start of each syllable must be marked, by one of the following:
+c (1) being the start of Korean characters in a run
+c (2) being capitalized, or
+c (c) following a space - the first space after a run of Korean will convert the pending jamo to Hangeul.
+c 
+c In each case, the IME will be visible until the last syallable has been converted to Hangeul.
+c 
+store(&mnemoniclayout)  '0'           
+store(&capsalwaysoff)   '1'
+store(&VISUALKEYBOARD) 'korean_rr.kvks'
+store(&BITMAP) 'korean_rr.ico'
+store(&KMW_EMBEDJS) 'korean_ime.js'
+
+c store(HelpFile) 'welcome.htm'
+store(&KMW_HELPTEXT) '<div><a href="http://help.keymanweb.com/go?keyboard=Keyboard_korean_rr" target="KeymanWebHelp">Help on this keyboard</a></div><div id=' U+0027 'Keyboard_Korean_IME' U+0027 '></div>'
+store(&COPYRIGHT)    '© 2010-2020 SIL International'
+c store(&WINDOWSLANGUAGES) 'x0412'
+c store(&LANGUAGE) 'x0412'
+c store(&ETHNOLOGUECODE) 'kor'
+c store(&TARGETS) 'any'
+c store(&LAYOUTFILE) 'korean_rr.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.2'
+store(&TARGETS) 'windows web'
+
+begin Unicode > use(combineJamo)                                           
+
+c Keys used for IME selection
+store(numberKey)   '123456789' [K_NP1][K_NP2][K_NP3][K_NP4][K_NP5][K_NP6][K_NP7][K_NP8][K_NP9]                                                
+store(digits)      '123456789123456789'
+
+c Other number pad keys
+store(numPadKey)   [K_NP0][K_NPPLUS][K_NPMINUS][K_NPSLASH][K_NPDOT][K_NPSTAR]
+store(numPadChar)  '0+-/.*'
+
+c Punctuation (and other) keys never used for romanized entry or selection
+store(punctKey)    '0!@#$%^&*()-=_+`~[]{}\|;:",./<>?' "'"
+
+
+store(ucLetter)    'ABCDEGHIJKLMNOPRSTUWY'     c upper-case letters used for starting a new Hangul
+store(lcLetter)    'abcdeghijklmnoprstuwy'     c lower-case letters used for continuing a Hangul character
+store(noJamo)      'fqvxzFQVXZ'                c keys that are not used for Korean romanization
+                              
+store(choseongK)   'cgndrmbsjktphlCGNDRMBSJKTPHL'
+store(choseongS)   'ᄎᄀᄂᄃᄅᄆᄇᄉᄌᄏᄐᄑᄒᄅᄎᄀᄂᄃᄅᄆᄇᄉᄌᄏᄐᄑᄒᄅ'
+
+store(choseong)    'ᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄋᄌᄍᄎᄏᄐᄑᄒ' U+1113 U+1114 U+1115 U+1116 U+1117 U+1118 U+1119 U+111A U+111B \
+                   U+111C U+111D U+111E U+111F U+1120 U+1121 U+1122 U+1123 U+1124 U+1125 U+1126 U+1127 U+1128 \ 
+                   U+1129 U+112A U+112B U+112C U+112D U+112E U+112F U+1130 U+1131 U+1132 U+1133 U+1134 U+1135 \
+                   U+1136 U+1137 U+1138 U+1139 U+113A U+113B U+113C U+113D U+113E U+113F U+1140 U+1141 U+1142 \
+                   U+1143 U+1144 U+1145 U+1146 U+1147 U+1148 U+1149 U+114A U+114B U+114C U+114D U+114E U+114F \
+                   U+1150 U+1151 U+1152 U+1153 U+1154 U+1155 U+1156 U+1157 U+1158 U+1159
+
+                              
+store(jungseongK)  'auoieywAUOIEYW'
+store(jungseongS)  'ᅡᅮᅩᅵᅦᅨᅰᅡᅮᅩᅵᅦᅨᅰ'
+store(jungseong)   U+1160 U+1161 U+1162 U+1163 U+1164 U+1165 U+1166 U+1167 U+1168 U+1169 U+116A U+116B U+116C U+116D U+116E U+116F \
+                   U+1170 U+1171 U+1172 U+1173 U+1174 U+1175 U+1176 U+1177 U+1178 U+1179 U+117A U+117B U+117C U+117D U+117E U+117F \
+                   U+1180 U+1181 U+1182 U+1183 U+1184 U+1185 U+1186 U+1187 U+1188 U+1189 U+118A U+118B U+118C U+118D U+118E U+118F \
+                   U+1190 U+1191 U+1192 U+1193 U+1194 U+1195 U+1196 U+1197 U+1198 U+1199 U+119A U+119B U+119C U+119D U+119E U+119F \
+                   U+11A0 U+11A1 U+11A2
+
+store(jongseongK)  'cgndlmbsjktphr'
+store(jongseongS)  'ᆾᆨᆫᆮᆯᆷᆸᆺᆽᆨᆮᆸᇂᆯ' 'ᆨᆮᆸᆿᇀᇁ'
+store(jongseong)   U+11A8 U+11A9 U+11AA U+11AB U+11AC U+11AD U+11AE U+11AF \
+                   U+11B0 U+11B1 U+11B2 U+11B3 U+11B4 U+11B5 U+11B6 U+11B7 U+11B8 U+11B9 U+11BA U+11BB U+11BC U+11BD U+11BE U+11BF \
+                   U+11C0 U+11C1 U+11C2 U+11C3 U+11C4 U+11C5 U+11C6 U+11C7 U+11C8 U+11C9 U+11CA U+11CB U+11CC U+11CD U+11CE U+11CF \
+                   U+11D0 U+11D1 U+11D2 U+11D3 U+11D4 U+11D5 U+11D6 U+11D7 U+11D8 U+11D9 U+11DA U+11DB U+11DC U+11DD U+11DE U+11DF \
+                   U+11E0 U+11E1 U+11E2 U+11E3 U+11E4 U+11E5 U+11C6 U+11E7 U+11E8 U+11E9 U+11EA U+11EB U+11EC U+11ED U+11EE U+11EF \
+                   U+11F0 U+11F1 U+11F2 U+11F3
+
+store(noVowelK)    'bcdfghjklmnpqrstvwxyz' c keys that should never follow y or w
+
+store(jj) outs(jungseong) outs(jongseong)  c all jamo that can terminate a Hangul character
+
+c External processing routines
+store(show_ime)     'show_ime.dll:show_ime'
+store(hide_ime)     'hide_ime.dll:hide_ime'
+store(jamo_combine) 'jamo_combine.dll:jamo_combine'
+store(select_hanja) 'select_hanja.dll:select_hanja'
+store(scroll_hanja) 'scroll_hanja.dll:scroll_hanja'
+
+c Test if pending jamo should be combined to Hangul, or if IME is being used, other pre-filtering
+group(combineJamo) using keys                             
+
+c Keys that cannot be converted to Korean
+$keymanonly: + any(noJamo) > context beep
+$keymanweb:  + any(noJamo) > context
+
+c Any other upper case letter key
+ any(jj) + any(ucLetter)  > context call(jamo_combine) call(hide_ime) use(main)
+
+c Space bar - combine and drop space
+ any(jj) + [K_SPACE]      > context call(jamo_combine) call(hide_ime)
+ 
+c Other characters
+ any(jj) + any(punctKey)  > context call(jamo_combine) call(hide_ime) index(punctKey,2)
+ any(jj) + any(numPadKey) > context call(jamo_combine) call(hide_ime) index(numPadChar,2 )
+ any(jj) + [K_ENTER]      > context call(jamo_combine) call(hide_ime) use(copyEnter)
+ any(jj) + [K_TAB]        > context call(jamo_combine) call(hide_ime) use(copyEnter)
+ 
+c Select from IME
+ any(jj) + any(numberKey) > context call(select_hanja)
+ dk(ye) + any(numberKey)  > call(select_hanja) c drop deadkey, assume ye wanted
+ dk(we) + any(numberKey)  > call(select_hanja) c drop deadkey, assume we wanted
+
+$keymanonly: dk(ye) + any(noVowelK) > context beep
+$keymanonly: dk(we) + any(noVowelK) > context beep
+$keymanweb:  dk(ye) + any(noVowelK) > context 
+$keymanweb:  dk(we) + any(noVowelK) > context 
+
+c Scroll IME display
+ + [K_PGUP] > call(scroll_hanja)
+ + [K_PGDN] > call(scroll_hanja)
+                         
+c Backspace: check context and modify or hide IME if last character is jamo
+ any(jj) + [K_BKSP]       > call(show_ime)
+ any(choseong) + [K_BKSP] > call(hide_ime)
+
+c For all allowed letters, continue with main group. Everything else will just be echoed
+ + any(ucLetter) > call(jamo_combine) call(hide_ime) use(main)
+ + any(lcLetter) > use(main)                                                            
+ 
+ + any(numberKey) > index(digits,1)
+ + any(punctKey) > index(punctKey,1)
+ 
+ nomatch > call(hide_ime)
+
+group(main) using keys
+
+c Complete pending initial consonant
+ 'ᄀ' + 'g' > 'ᄁ'
+ 'ᄃ' + 'd' > 'ᄄ'
+ 'ᄇ' + 'b' > 'ᄈ'
+ 'ᄀ' + 'k' > 'ᄁ'
+ 'ᄃ' + 't' > 'ᄄ'
+ 'ᄇ' + 'p' > 'ᄈ'
+ 'ᄉ' + 's' > 'ᄊ'
+ 'ᄌ' + 'j' > 'ᄍ'
+ 'ᄀ' + 'G' > 'ᄁ'
+ 'ᄃ' + 'D' > 'ᄄ'
+ 'ᄇ' + 'B' > 'ᄈ'
+ 'ᄏ' + 'K' > 'ᄁ'
+ 'ᄐ' + 'T' > 'ᄄ'
+ 'ᄑ' + 'P' > 'ᄈ'  
+ 'ᄉ' + 'S' > 'ᄊ'
+ 'ᄌ' + 'J' > 'ᄍ'
+
+ 'ᄎ' + 'h' > context
+ 'ᄎ' + 'H' > context
+
+c Prevent any other double choseong combinations
+ any(choseong) + any(choseongK) > context
+
+c Choseong - start a syllable
+ + any(choseongK) > index(choseongS, 1)
+
+c Jungsong (vowel) key - use separate group
+ + any(jungseongK) > use(g_jungseong)         
+
+c Jongseong (final consonant) key - use separate group, allowing for 'double letter' consonants
+ any(jungseong) + any(jongseongK) > context use(g_jongseong)
+ any(jongseong) + any(jongseongK) > context use(g_jongseong)
+ dk(ye) + any(jongseongK)         > use(g_jongseong)  c drop deadkey (accept ye) if final consonant typed
+ dk(we) + any(jongseongK)         > use(g_jongseong)  c drop deadkey (accept we) if final consonant typed
+
+$keymanonly: nomatch > beep
+$keymanweb:  nomatch > nul
+
+c Process jungseong (vowel) input
+group(g_jungseong) using keys
+
+c Complete pending vowel (a u o i e -> ᅡᅥᅩᅵᅦ)
+ 'ᅦ' + 'u' > 'ᅳ'
+ 'ᅡ' + 'e' > 'ᅢ'
+ 'ᅡ' + 'i' > 'ᅢ'        c alternate -ai- for -ae- (AOS)
+ 'ᅣ' + 'e' > 'ᅤ'
+ 'ᅣ' + 'i' > 'ᅤ'        c alternate -yai- for -yae- (AOS)
+ 'ᅦ' + 'o' > 'ᅥ'        c eo
+ 'ᅨ' + 'o' > 'ᅧ'        c ye o... yeo
+ 'ᅨ' dk(ye) + 'a' > 'ᅣ' c ye DK a... ya
+ 'ᅨ' dk(ye) + 'o' > 'ᅭ' c ye DK o... yo
+ 'ᅨ' dk(ye) + 'e' > 'ᅨ' c ye DK e... ye
+ 'ᅨ' dk(ye) + 'u' > 'ᅲ' c ye DK u...yu
+
+ 'ᅪ' + 'e' > 'ᅫ'
+ 'ᅪ' + 'i' > 'ᅫ'        c alternate -wai- for -wae- (AOS)
+ 'ᅩ' + 'e' > 'ᅬ'
+ 'ᅰ' + 'o' > 'ᅯ'
+ 'ᅰ' dk(we) + 'a' > 'ᅪ'
+ 'ᅰ' dk(we) + 'o' > 'ᅯ'
+ 'ᅰ' dk(we) + 'i' > 'ᅱ'
+ 'ᅰ' dk(we) + 'e' > 'ᅰ'
+        
+ 'ᅩ' + 'o'        > 'ᅮ' c -oo- alternate for -u-
+ 'ᅰ' dk(we) + 'u' > 'ᅮ' c -wu- alternate for -u-
+ 'ᅯ' + 'o'        > 'ᅮ' c -woo- alternate for -u-
+     
+ 'ᅮ' + 'i' > 'ᅴ' c u i...ui
+ 'ᅳ' + 'i' > 'ᅴ' c eu i...eui
+
+c Special handling of y and w (required since jamo are for ye, we, not for y,w)
+ any(choseong) + 'y' > context 'ᅨ' dk(ye)    
+ any(choseong) + 'w' > context 'ᅰ' dk(we)    
+ any(choseong) + 'Y' > context 'ᅨ' dk(ye)    
+ any(choseong) + 'W' > context 'ᅰ' dk(we)    
+
+ + 'y' > '예' dk(ye)    
+ + 'w' > '웨' dk(we)    
+ + 'Y' > '예' dk(ye)    
+ + 'W' > '웨' dk(we)    
+
+c Vowel after choseong
+ any(choseong) + any(jungseongK) > context index(jungseongS,2)
+ 
+c Vowel starting a new syllable
+ + any(jungseongK) > 'ᄋ' index(jungseongS,1)
+
+c Prevent other vowel combinations, or starting a new syllable if the last syllable not yet composed
+ any(jungseong) + any(jungseongK) > context                                                         
+ any(jongseong) + any(jungseongK) > context
+ 
+c Display IME after any jungseong
+ match > call(show_ime)
+ 
+$keymanonly: nomatch > beep
+$keymanweb:  nomatch > nul
+
+c Jongseong (final)
+
+group(g_jongseong) using keys
+
+c (Single) final consonant letter after jungseong (vowel)
+ any(jungseong) + any(jongseongK) > context index(jongseongS, 2)
+
+c Second letter of final consonant pair
+ 'ᆫ' + 'g' > 'ᆼ'    c -ng
+ 'ᄎ' + 'h' > 'ᆾ'    c -ch
+ 'ᄎ' + 'k' > 'ᆨ'    c -ck
+
+ 'ᆨ' + 'g' > 'ᆩ'    c -kk
+ 'ᆺ' + 's' > 'ᆻ'    c -ss
+ 'ᆫ' + 'c' > 'ᆬ'    c -nc (-nch)
+ 'ᆫ' + 'j' > 'ᆬ'    c -nj (-nch)
+ 'ᆬ' + 'h' > 'ᆬ'    c -nch(-nch)
+ 'ᆫ' + 'h' > 'ᆭ'    c -nh
+ 'ᆯ' + 'g' > 'ᆰ'    c -rk
+ 'ᆯ' + 'm' > 'ᆱ'    c -rm
+ 'ᆯ' + 'b' > 'ᆲ'    c -rb
+ 'ᆯ' + 's' > 'ᆳ'    c -rs
+ 'ᆯ' + 't' > 'ᆴ'    c -rt
+ 'ᆯ' + 'p' > 'ᆵ'    c -rp
+ 'ᆯ' + 'h' > 'ᆶ'    c -rh
+ 'ᆸ' + 's' > 'ᆹ'    c -ps
+ 'ᆨ' + 's' > 'ᆪ'    c -ks
+ 
+ 'ᆨ' + 'h' > 'ᆿ'    c -kh
+ 'ᆮ' + 'h' > 'ᇀ'    c -th
+ 'ᆸ' + 'h' > 'ᇁ'    c -ph
+
+c Prevent any other final combinations
+ any(jongseong) + any(jongseongK) > context 
+  
+c Display IME after any jongseong
+ match > call(show_ime)
+
+$keymanonly: nomatch > beep
+$keymanweb:  nomatch > nul
+
+c Special group to allow Enter and Tab to be handled correctly by KMW (compose before processing key)
+group(copyEnter) using keys
+ nomatch > call(hide_ime)

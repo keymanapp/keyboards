@@ -1,9 +1,9 @@
-SIL IPA Keyboard Keyboard
+IPA (SIL) Keyboard Keyboard
 =====================
 
-Copyright (C) 2002-2019 SIL International
+Copyright (C) 2002-2020 SIL International
 
-Version 1.7
+Version 1.8.2
 
 __DESCRIPTION__
 

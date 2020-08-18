@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'SIL IPA Keyboard Help';
-  $pagetitle = 'SIL IPA Keyboard Help';
+  $pagename = 'IPA (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
@@ -13,7 +13,20 @@ Diacritics are typed as sequences of an appropriate key. <span
 style='color:blue'>Blue denotes non-IPA sanctioned phonetic symbols (they may
 be used by other traditions such as Americanist, Chinese or Russian). </span></p>
 
-<p>As described above (and below), the default for this keyboard is to type a letter followed by a "modifier". For example, this sequence "b>" would produce "ɓ". If you wish to use the opposite sequence (>b) that is possible. Go to <b>Keyman Configuration</b>, select the keyboard, click on <b>Keyboard options</b> and choose <b>Before</b>. You may need to exit Keyman configuration before the default behavior changes.</p>
+<p>As described above (and below), the default for this keyboard is to type a letter followed by a "modifier". 
+	For example, this sequence "b>" would produce "ɓ". If you wish to use the opposite sequence (>b) that is 
+	possible. Use one or the other of these options. <b>Do not turn <i>Before</i> on with Keyman configuration 
+  and off with the RALT hotkeys.</b> </p>
+
+<ol>
+	<li><b>Using Keyman Configuration</b>: On Windows, go to <b>Keyman Configuration</b>, 
+	select the keyboard, click on <b>Keyboard options</b> and choose <b>Before</b>. 
+	You may need to exit Keyman configuration before the default behavior changes. This method will change your default to <i>Before</i> and 
+	everytime you switch to this keyboard it will remain using the <i>Before</i> style until you change it back to <i>After</i> style using <b>Keyman configuration</b>.</li>
+<li><b>Using RALT hotkeys</b>: It is also possible to switch from <i>After</i> to <i>Before</i> using the RALT HYPHEN sequence (RALT+-). 
+	Switch back to <i>After</i> using the RALT EQUAL sequence (RALT+=). This method will change to <i>Before</i> during just this session of 
+	using the keyboard. After you stop using the keyboard it will return to <i>After</i>.</li>
+</ol>
 
 
 <h3>Consonants</h3>
@@ -3075,7 +3088,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
-  color:blue'>Africanist Upstep</span></p>
+  color:blue'>Africanist downstep</span></p>
   </td>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3132,7 +3145,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
-  color:blue'>Africanist downstep (raised)</span></p>
+  color:blue'>Africanist upstep (raised)</span></p>
   </td>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -3188,7 +3201,7 @@ areas denote articulations judged impossible.</span></p>
   border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
-  color:blue'>Africanist downstep (lowered)</span></p>
+  color:blue'>Africanist upstep (lowered)</span></p>
   </td>
   <td width=33 valign=top style='width:25.0pt;border:none;border-bottom:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt'>

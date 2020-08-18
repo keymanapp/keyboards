@@ -1,6 +1,12 @@
 SIL Ethiopic Power-G Change History
 ===================================
 
+1.2.2 (27 May 2020)
+-------------------
+* cleaning up welcome.html (reducing table width so will not be cut at help.keyman.com)
+* correcting package logos
+* correcting contact email address
+
 1.2.1 (26 Apr 2019)
 -----------------
 * Added and fixed BCP47 codes

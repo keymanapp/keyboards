@@ -1,6 +1,10 @@
 Embera Northern Change History
 =======================
 
+10.1.3 (9 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 10.1.2 (2019-Jan-14)
 --------------------
 * Adjust package to use shared fonts

@@ -1,9 +1,9 @@
 Tai Dam (SIL) Keyboard
 =====================
 
-Copyright (C) 2007-2018 SIL International
+Copyright (C) 2007-2020 SIL International
 
-Version 2.2.1
+Version 2.2.2
 
 
 __DESCRIPTION__
@@ -17,3 +17,4 @@ Supported Platforms
  * Windows
  * Linux
  * macOS
+ * Web

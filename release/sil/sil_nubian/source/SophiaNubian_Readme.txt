@@ -103,7 +103,7 @@ CONTACT
 ========
 For more information please visit the Sophia Nubian page on SIL
 International's Computers and Writing systems website:
-http://scripts.sil.org/SophiaNubian
+https://software.sil.org/SophiaNubian
 
 Or send an email to <fonts AT sil DOT org>
 

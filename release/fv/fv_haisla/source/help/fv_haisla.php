@@ -15,6 +15,7 @@ More information about the Haisla archive on FirstVoices can be found here: http
 <h1>Keyboard Layout</h1>
 
 <p>
+
 The Haisla keyboard uses the English keyboard as a base, with added key combinations in order to create special characters.
 
 <h2>Desktop Keyboard Layout</h2>
@@ -151,8 +152,6 @@ The Haisla keyboard uses the English keyboard as a base, with added key combinat
 
 </body>
 </html>
-
-</div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <p>Due to the size and number of keys, some characters are hidden in the long press.
