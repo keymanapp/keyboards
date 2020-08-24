@@ -3,7 +3,7 @@ Tawallammat Latin keyboard
 
 © 2020 Christian Grandouiller
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
