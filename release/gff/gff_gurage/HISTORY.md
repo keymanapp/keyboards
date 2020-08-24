@@ -1,7 +1,9 @@
 # ጉራጌ (Gurage) Change History
 
+## 2020-07-12 0.6.12 (0.7 Beta 4)
+* Font migration from Zebidar to ዘቢዳር
 
-## 2020-07-12 0.6.10 (0.7 Beta 3)
+## 2020-07-12 0.6.11 (0.7 Beta 3)
 * Added <KA'IB> + T_HAMIS > <ZEMEDE:HAMIS>
 
 ## 2020-07-09 0.6.10 (0.7 Beta 2)
