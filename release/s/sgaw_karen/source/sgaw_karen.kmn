@@ -9,7 +9,7 @@ c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Sgaw Karen'
-store(&Targets) "windows macosx linux web"
+store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sgaw_karen.kvks'
 store(&BITMAP) 'sgaw_karen.ico'
 store(&LAYOUTFILE) 'sgaw_karen.keyman-touch-layout'
@@ -162,5 +162,17 @@ group(main) using keys
 
 + [K_QUOTE] > U+1012
 + [SHIFT K_QUOTE] > U+1062 U+1064
+
+
+c mitigating ​ေ U+1031 issues
+
+store(bcons) 'ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠ'
+
+match > use(normalise)
+
+group(normalise)
+
+U+200b U+1031 any(bcons) > context(3) context(2)
+
 
 
