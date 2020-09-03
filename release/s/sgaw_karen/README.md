@@ -1,17 +1,13 @@
 Sgaw Karen keyboard
 ==============
 
-©
+© 2020 SIL International
 
 Version 1.0
 
 Description
 -----------
-
-Sgaw Karen generated from template
-
-Links
------
+This keyboard is designed for S’gaw Karen (Kayin, ကညီ) language spoken in Myanmar and many other countries.
 
 Supported Platforms
 -------------------
