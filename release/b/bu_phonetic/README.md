@@ -3,7 +3,7 @@ BU Phonetic keyboard
 
 © 2006-2020 J. Albert Bickford
 
-Version 1.0
+Version 2.0
 
 Description
 -----------

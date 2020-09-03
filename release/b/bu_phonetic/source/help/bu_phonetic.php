@@ -22,7 +22,7 @@
 <h1>The BU Phonetic Keyboarding System</h1>
 <h2>Albert Bickford, May 16, 2006</h2>
 
-<p>The BU Phonetic Keyboard (for Keyman 6.0 and higher, <a href='http://www.tavultesoft.com/'>www.tavultesoft.com</a>) provides access to a wide range of characters for Latin-based scripts in Unicode 4.1.0 (<a href='http://www.unicode.org/'>www.unicode.org</a>), including:</p>
+<p>The BU Phonetic Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode 4.1.0 (<a href='http://www.unicode.org/'>www.unicode.org</a>), including:</p>
 <ul>
 <li>English, Spanish, French, German, and other major European languages</li>
 <li>nearly complete set of IPA and Americanist phonetic symbols, include obscure and obsolete symbols</li>
@@ -32,4 +32,5 @@
 </ul>
 
 <p><a href='bukeys.pdf' target='_blank'>PDF format documentation</a><br/>
-<a href='bukeys.doc' target='_blank'>Microsoft Word format documentation</a></p>
+
+<p>© 2006-2020 J. Albert Bickford</p>

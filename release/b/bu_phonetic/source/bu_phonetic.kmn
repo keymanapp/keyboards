@@ -1,11 +1,10 @@
-﻿c BU (BickfordUnicode) keyboard for Keyman 6
+﻿c BU (BickfordUnicode) keyboard
 c Revised: 2005 Nov 13
 
 store(&VERSION)     '10.0'             c Will not work with earlier versions of Keyman.
-store(&NAME)        "BU keyboard"
-store(&COPYRIGHT) '(c) 2006-2020 by Albert Bickford.'
-store(&MESSAGE)     "May be freely distributed and modified.  May not be sold.  See documentation (BUKeys.pdf) for terms of use."
-store(&BITMAP) 'BUKey.bmp'
+store(&NAME)        'BU Phonetic'
+store(&COPYRIGHT)   '(c) 2006-2020 by Albert Bickford.'
+store(&BITMAP) 'bu_phonetic.ico'
 store(&HOTKEY)      [CTRL ALT K_U]
 store(&MnemonicLayout) "1"
 
@@ -1084,6 +1083,7 @@ c Main processing (Unicode)
 c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 store(&TARGETS) 'windows macosx'
+store(&KEYBOARDVERSION) '2.0'
 
 begin Unicode > use(main)
 group(main) using keys
