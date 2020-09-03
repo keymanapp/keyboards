@@ -13,7 +13,7 @@ Hay varias combinaciones de teclas para <b>acceder a caracteres especiales</b>:<
 	<li><p>Intenta combinar el apóstrofe con las letras clave <b>y, t, x, a, e, i, o</b> (mayusculas y minusculas) para obtener los distintos caracteres especiales.</p></li>
 </ul>
 <h2>Dispositivos móviles</h2>
-<p>En el caso de celulares, el proceso es similar. Luego de instalar el teclado y activarlo, el apóstrofe aparecerá a la derecha de la barra espaciadora.</p>
+<p>En el caso de celulares, el proceso es similar. Luego de instalar el teclado y activarlo, el apóstrofe aparecerá a la derecha de la barra espaciadora. Sin embargo, puedes encontrar los caracteres especiales al mantener apretadas distintas teclas, como la y para ỹ</p>
 
 <h1>Distribución de caracteres en el teclado</h1>
 <p>Las imagenes a continuación representan los caracteres en cada tecla en el modo normal y con shift o alt derecho apretado.</p> 
