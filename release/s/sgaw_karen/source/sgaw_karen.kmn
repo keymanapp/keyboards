@@ -168,11 +168,18 @@ c mitigating ​ေ U+1031 issues
 
 store(bcons) 'ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠ'
 
+store(medialbcons)   'ှၠြျွ'
+
 match > use(normalise)
 
 group(normalise)
 
-U+200b U+1031 any(bcons) > context(3) context(2)
+c ​ေ U+1031 attached to single consonant
 
+U+200b U+1031 any(bcons) > context(1) context(3) context(2)
+
+c ​ေ U+1031 attached to double consonant
+
+U+200b any(bcons) U+1031 any(medialbcons) > context(1) context(2) context(4) context(3)
 
 
