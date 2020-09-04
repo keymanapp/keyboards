@@ -1,0 +1,124 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'N' U+0027 'Ko Phonetic'
+store(&BITMAP) 'nko.ico'
+store(&VISUALKEYBOARD) 'nko.kvks'
+c store(&ETHNOLOGUECODE) 'nqo'
+store(&KMW_RTL) '1'
+store(&COPYRIGHT) '© 2012-2020 Michael Everson and SIL International'
+store(&KEYBOARDVERSION) '1.3'
+store(&LAYOUTFILE) 'nko.keyman-touch-layout'
+store(&TARGETS) 'any'
+
+begin UNICODE > use(MainU)
+
+group(MainU) using keys
+
+c ccccccccccc c
+c Basic Rules c
+c ccccccccccc c
+
+c Basic Rules follows exactly the Unicode chart for NKo
+
+c digits
+     +  '0'    >   U+07c0
+     +  '1'    >   U+07c1
+     +  '2'    >   U+07c2
+     +  '3'    >   U+07c3
+     +  '4'    >   U+07c4
+     +  '5'    >   U+07c5
+     +  '6'    >   U+07c6
+     +  '7'    >   U+07c7
+     +  '8'    >   U+07c8
+     +  '9'    >   U+07c9
+
+c letters
+       + 'a'   >   U+07ca
+       + 'E'   >   U+07cb     
+       + 'i'   >   U+07cc
+       + 'e'   >   U+07cd
+       + 'u'   >   U+07ce
+       + 'O'   >   U+07cf     
+       + 'o'   >   U+07d0
+       + '`'   >   U+07D1    
+       + 'N'   >   U+07d2
+       + 'b'   >   U+07d3
+       + 'p'   >   U+07d4
+       + 't'   >   U+07d5
+       + 'j'   >   U+07d6
+       + 'c'   >   U+07d7    
+       + 'd'   >   U+07d8
+       + 'r'   >   U+07d9
+       + 'R'   >   U+07da    
+       + 's'   >   U+07db
+       + 'g'   >   U+07dc    
+       + 'f'   >   U+07dd
+       + 'k'   >   U+07de
+       + 'l'   >   U+07df
+U+07e3 + 'n'   >   U+07e0     c "nn"
+       + 'm'   >   U+07e1
+U+07e3 + 'y'   >   U+07e2     c "ny"
+       + 'n'   >   U+07e3
+       + 'h'   >   U+07e4
+       + 'w'   >   U+07e5
+       + 'y'   >   U+07e6                 
+U+07e2 + 'w'   >   U+07E7     c "nyw"                              
+ 
+c archaic letters
+U+07D6 + '/'   >   U+07E8     c "j/"                             
+U+07D7 + '/'   >   U+07E9     c "c/"                           
+U+07D9 + '/'   >   U+07EA     c "r/"                          
+
+c tone marks
+       + '-'   >   U+07eb    
+       + '~'   >   U+07ec    
+U+07ee + '.'   >   U+07ed   c "^."
+       + '^'   >   U+07ee   
+       + '>'   >   U+07ef    
+       + '#'   >   U+07f0    
+       + '<'   >   U+07f1    
+       + '.'   >   U+07f2    
+       + '%'   >   U+07f3     
+       + "'"   >   U+07f4      
+       + '"'   >   U+07f5          
+
+c symbol
+       + '/'   >   U+07F6     
+        
+c punctuation
+U+07f2 U+07f2 + '.' >   U+07F7  c "..."    
+            + ','   >   U+07f8                     
+            + '!'   >   U+07f9                                                       
+                                                           
+c letter extender
+U+07F8 + '/'   >   U+07FA   c  ",/"   
+ 
+c ccccccccccc c
+c Extra Rules c
+c ccccccccccc c
+
+c additional keys
+       + '='   >   '=' 
+       + '['   >   '['
+       + ']'   >   ']'
+       + '\'   >   '\'
+       + ';'   >   ';' 
+       
+       + '@'   >   '@'
+       + '$'   >   '$' 
+       + '&'   >   '&'
+       + '*'   >   '*' 
+       + '('   >   '('
+       + ')'   >   ')' 
+       + '_'   >   '_'
+       + '+'   >   '+'
+       + '{'   >   '{'
+       + '}'   >   '}' 
+       + '|'   >   '|'
+       + ':'   >   ':' 
+       + '?'   >   '?'  
+       
+c nuls
+store(nul) 'qzxvQWTYUIPASDFGHJKLZXCVBM'
+
+    + any(nul) > nul
+                               
