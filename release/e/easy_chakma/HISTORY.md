@@ -1,6 +1,9 @@
 Easy Chakma Keyboard Change History
 ============================
 
+1.20 (10 Jul 2020)
+* Updated font
+
 1.19 (02 Jun 2020)
 * added VAA (U+11147) character to the keyboards
 * Updated font
