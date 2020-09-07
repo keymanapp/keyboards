@@ -3,12 +3,12 @@ Qom keyboard
 
 © 2020 Latinoamérica Habla
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Keyboard layout for the Qom language, based on Latin American Spanish keyboard distribution.
+Distribución de teclado para lengua Qom. Creada sobre la base de español para Latinoamérica.
 
 Links
 -----
