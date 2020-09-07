@@ -6,6 +6,7 @@ Hawaiian (SIL) Change History
 * Moved to \release from \legacy
 * Imported only the Unicode keyboard, even though the original package has both Unicode and ANSI keyboards
 * Updated metadata
+* Changed keyboard name to "Hawaiian (SIL)"
 
 
 1.0 (2008-03-26)
