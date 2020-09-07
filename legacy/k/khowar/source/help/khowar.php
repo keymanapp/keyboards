@@ -15,11 +15,11 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
     <title>Khowar Help</title>
-    <link rel='icon' href='Khowar.ico'/>     
+    <link rel='icon' href='Khowar.ico'/>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <!--[if lt IE 9]>
     <script src="html5shiv.js"></script>
-    <![endif]-->    
+    <![endif]-->
 </head>
 
 <body>
@@ -27,12 +27,12 @@
   <p>Keyboard &#169; 2013 Tavultesoft</p>
    <section id='overview'>
     <h2>Overview</h2>
-    <p>This is the first Khowar language keyboard created by pakistani linguistic, software engineer and researcher Mr.Rehmat Aziz. This is a Phonetic keyboard for the Khowar Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali in 1996 for Wikipedia and later approved by the Khowar Academy of Pakistan as the standard keyboard for the Khowar language.</p> 
+    <p>This is the first Khowar language keyboard created by pakistani linguistic, software engineer and researcher Mr.Rehmat Aziz. This is a Phonetic keyboard for the Khowar Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali in 1996 for Wikipedia and later approved by the Khowar Academy of Pakistan as the standard keyboard for the Khowar language.</p>
     <h4>Basic Function</h4>
-    <p>You can get many of the Khowar letters on this keyboard by typing the closest English equivalent. For example, type <kbd>n</kbd> to get <samp>ن</samp>. Keys without a direct Khowar equivalent in Enlish get the remaining characters. For example, type <kbd>[</kbd> to get <samp>ٸ</samp>.</p>    
+    <p>You can get many of the Khowar letters on this keyboard by typing the closest English equivalent. For example, type <kbd>n</kbd> to get <samp>ن</samp>. Keys without a direct Khowar equivalent in Enlish get the remaining characters. For example, type <kbd>[</kbd> to get <samp>ٸ</samp>.</p>
     <p>As there are many more letters in the Khowar alphabet then the english alphabet, additional Khowar letters are typed by first holding the SHIFT key or CONTROL + ALT key. For instance, type <kbd>Ctrl</kbd> + <kbd>Alt</kbd> <kbd>a</kbd> to get <samp>ﷲ</samp>.</p>
     <h4>Fonts</h4>
-    <p>This is a Unicode keyboard and works with any Unicode font which has support for the Nastaleeq Script such as NafeesPakistaniWebNaskh. To find other fonts on your computer which support this keyboard, use the Keyman <a href='http://help.keyman.com.local/products/desktop/10.0/docs/basic_fonthelper.php'>Font Helper</a>.</p>
+    <p>This is a Unicode keyboard and works with any Unicode font which has support for the Nastaleeq Script such as NafeesPakistaniWebNaskh. To find other fonts on your computer which support this keyboard, use the Keyman <a href='https://help.keyman.com/products/desktop/10.0/docs/basic_fonthelper.php'>Font Helper</a>.</p>
     <p>The NafeesPakistaniWebNaskh font does not support all Khowar characters - currently these unicode characters are unsupported: U+0772, U+076F, U+0771, U+0658, U+0770, U+0602, U+0656, U+0613, U+0614, U+0601, U+0611, U+0657, U+0610, U+0612, U+060F, U+0603, U+FDFD, U+0600.</p>
     <aside>
         <p>Update - Windows 8 now has several fonts that support all Khowar characters: Arial, Microsoft Sans Serif, Tahoma and Times New Roman.</p>
@@ -738,5 +738,5 @@
             <kbd>Ctrl</kbd>
         </div>
     </article>
-  </section>    
+  </section>
 </body>
