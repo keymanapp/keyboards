@@ -12,6 +12,8 @@ Hawaiian (SIL) is a Unicode keyboard with compatible fonts, included with permis
 
 Links
 -----
+Home: https://keyman.com/keyboards/sil_hawaiian
+Help: http://help.keyman.com/keyboard/venetian
 
 Supported Platforms
 -------------------
