@@ -39,4 +39,4 @@ Type yellow symbols, followed by pink letters / Dìgita i segni xali, e dòpo i 
 <br /><br />
 </div>
 
-<p>© 2007-2020 Paul Durdin and Fabio Lazarin</p>
+<p>© 2007-2020 SIL International</p>
