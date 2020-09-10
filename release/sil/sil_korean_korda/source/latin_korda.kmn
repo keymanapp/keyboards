@@ -1,0 +1,261 @@
+﻿c The Korean KORDA Latin keyboard is built to type Korean using the transliteration system KORDA (Korean Romanization for Data Application). KORDA is designed to make Latin-Korean transliteration easy, accurate, and 'computerizable'.
+c The Korean KORDA Latin keyboard converts Latin letters into Korean hangeul after you press spacebar.
+store(&Version) '10.0'
+store(&mnemoniclayout) '1'
+store(&NAME) 'Korean KORDA Latin'
+store(&TARGETS) 'windows macosx linux'
+store(&COPYRIGHT) '© 2006-2020 SIL International'
+store(&BITMAP) 'latin_korda.ico'
+store(&VISUALKEYBOARD) 'latin_korda.kvks'
+store(&KEYBOARDVERSION) '3.0'
+
+begin Unicode > use(constraints)       
+
+c Choseong (Sylable-initial consonants)
+store(choseongK)  'cgndrmbsjktph'
+store(choseongSK) 'gndrmbsjktph'
+store(choseongSK1) 'cgndrmbsjktph'
+store(choseongSK2) 'gdbsjh' 
+store(choseongS)  'ᄀᄂᄃᄅᄆᄇᄉᄌᄏᄐᄑᄒ'
+store(choseong)   'ᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄋᄌᄍᄎᄏᄐᄑᄒ' U+1113 U+1114 U+1115 U+1116 U+1117 U+1118 U+1119 U+111A U+111B \
+                  U+111C U+111D U+111E U+111F U+1120 U+1121 U+1122 U+1123 U+1124 U+1125 U+1126 U+1127 U+1128 \ 
+                  U+1129 U+112A U+112B U+112C U+112D U+112E U+112F U+1130 U+1131 U+1132 U+1133 U+1134 U+1135 \
+                  U+1136 U+1137 U+1138 U+1139 U+113A U+113B U+113C U+113D U+113E U+113F U+1140 U+1141 U+1142 \
+                  U+1143 U+1144 U+1145 U+1146 U+1147 U+1148 U+1149 U+114A U+114B U+114C U+114D U+114E U+114F \
+                  U+1150 U+1151 U+1152 U+1153 U+1154 U+1155 U+1156 U+1157 U+1158 U+1159
+
+c Jungseong (Vowels)
+store(jungseongK) 'auoieyw'
+store(jungseongKy) 'auoe'
+store(jungseongKw) 'aoei'
+store(jungseongSK) 'auoie'
+store(jungseongSK0) 'yw'
+store(jungseongSK1) 'auoieyw'
+store(jungseongSK2) 'auoie'
+store(jungseongS)  'ᅡᅥᅩᅵᅦ'
+store(jungseongP) 'yw' c prefix
+store(jungseong)   U+1160 U+1161 U+1162 U+1163 U+1164 U+1165 U+1166 U+1167 U+1168 U+1169 U+116A U+116B U+116C U+116D U+116E U+116F \
+                   U+1170 U+1171 U+1172 U+1173 U+1174 U+1175 U+1176 U+1177 U+1178 U+1179 U+117A U+117B U+117C U+117D U+117E U+117F \
+                   U+1180 U+1181 U+1182 U+1183 U+1184 U+1185 U+1186 U+1187 U+1188 U+1189 U+118A U+118B U+118C U+118D U+118E U+118F \
+                   U+1190 U+1191 U+1192 U+1193 U+1194 U+1195 U+1196 U+1197 U+1198 U+1199 U+119A U+119B U+119C U+119D U+119E U+119F \
+                   U+11A0 U+11A1 U+11A2
+
+
+c Jongseong (Sylable-final consonants)
+store(jongseongK)  'cgndlmbsjktph'
+store(jongseongSK) 'gndlmbsjktph'
+store(jongseongSK1) 'cgndlmbsjktph'
+store(jongseongSK2) 'ghsjmbtp'
+store(jongseongSKn) 'gjh' c n+*
+store(jongseongSKl) 'gmbstph' c l+*
+store(jongseongP) 'c'
+store(jongseongS)  'ᆨᆫᆮᆯᆷᆸᆺᆽᆿᇀᇁᇂ'
+store(jongseong)   U+11A8 U+11A9 U+11AA U+11AB U+11AC U+11AD U+11AE U+11AF \
+                   U+11B0 U+11B1 U+11B2 U+11B3 U+11B4 U+11B5 U+11B6 U+11B7 U+11B8 U+11B9 U+11BA U+11BB U+11BC U+11BD U+11BE U+11BF \
+                   U+11C0 U+11C1 U+11C2 U+11C3 U+11C4 U+11C5 U+11C6 U+11C7 U+11C8 U+11C9 U+11CA U+11CB U+11CC U+11CD U+11CE U+11CF \
+                   U+11D0 U+11D1 U+11D2 U+11D3 U+11D4 U+11D5 U+11D6 U+11D7 U+11D8 U+11D9 U+11DA U+11DB U+11DC U+11DD U+11DE U+11DF \
+                   U+11E0 U+11E1 U+11E2 U+11E3 U+11E4 U+11E5 U+11C6 U+11E7 U+11E8 U+11E9 U+11EA U+11EB U+11EC U+11ED U+11EE U+11EF \
+                   U+11F0 U+11F1 U+11F2 U+11F3
+         
+store(punct_or_number) '1234567890!@#$%^&*()-=_+`~[]{}\|;:",./<>?' "'"
+store(unused) 'qfzxvQWERTYUIOPASDFGHJKLZXCVBNM'
+         
+group(constraints) using keys
+
+c TODO: prevent illegal sequences of characters - constraints pre-rules
+
+c Choseong constraints
+ + any(choseongSK1) > use(main)
+'c' + 'h' > context use(main)
+'g' + 'g' > context use(main)
+'d' + 'd' > context use(main)
+'b' + 'b' > context use(main)
+'s' + 's' > context use(main)
+'j' + 'j' > context use(main)
+any(choseongK) + any(choseongK) > context beep
+
+c Jungseong constraints
+'c' + any(jungseongK) > context beep
+'y' + any(jongseongK) > context beep
+'w' + any(jongseongK) > context beep
+'y' + any(choseongK) > context beep
+'w' + any(choseongK) > context beep
+
+any(choseongSK) + any(jungseongK) > context use(main)
+c any(choseongSK2) context(1) + any(jungseongK) > context use(main)
+'gg' + any(jungseongK) > context use(main) 
+'dd' + any(jungseongK) > context use(main) 
+'bb' + any(jungseongK) > context use(main) 
+'ss' + any(jungseongK) > context use(main) 
+'jj' + any(jungseongK) > context use(main) 
+'hh' + any(jungseongK) > context use(main) 
+'ch' + any(jungseongK) > context use(main)
+
+'y' + any(jungseongKy) > context use(main)
+'w' + any(jungseongKw) > context use(main)
+'o' + 'o' > context use(main)
+'e' + 'u' > context use(main)
+'a' + 'e' > context use(main)
+'o' + 'e' > context use(main)
+'u' + 'i' > context use(main)
+                                          
+'yo' + 'o' > context use(main)
+'ya' + 'e' > context use(main)
+'wa' + 'e' > context use(main)
+
++ any(jungseongSK1) > use(main)
+
+any(jungseongK) + any(jungseongK) > context beep
+
+c Jongseong constraints
+any(jungseongSK2) + any(jongseongSK1) > context use(main)
+any(jungseongSK2) 'n' + any(jongseongSKn) > context use(main)
+any(jungseongSK2) 'g' + 'g' > context use(main)
+any(jungseongSK2) 's' + 's' > context use(main)
+any(jungseongSK2) 'b' + 's' > context use(main)
+any(jungseongSK2) 'l' + any(jongseongSKl) > context use(main)
+
+any(jongseongK) + any(jongseongK) > context beep
+
+any(jungseongK) any(jongseongK) + any(jungseongK) > context beep c block ju after ju jo
+any(jungseongK) any(jongseongK) + any(choseongK) > context beep c block cho after ju jo
+
+any(jungseongK) any(jongseongK) any(jongseongK) + any(jungseongK) > context beep c block ju after ju jo jo
+any(jungseongK) any(jongseongK) any(jongseongK) + any(choseongK) > context beep c block cho after ju jo jo
+
+any(jungseongSK2) + any(choseongSK) > context beep  c final blocking rule - must be after jongseong rules
+
+any(choseongK) + any(punct_or_number) > context beep
+any(jungseongK) + any(punct_or_number) > context beep
+any(jongseongK) + any(punct_or_number) > context beep
++ any(punct_or_number) > use(main)
+
+any(jungseongK) + ' ' > context use(main)
+any(jungseongK) any(jongseongK) + ' ' > context use(main)
+any(jungseongK) any(jongseongK) any(jongseongK) + ' ' > context use(main)
+
+
+dk(space)+' ' > context use(main)
+        
+
+c + ' ' > beep c not matched with nomatch
+' ' + ' ' > context use(main)
+
+nomatch > beep
+
+
+group(main) using keys
+
++ ' ' > use(tojamo_jongseong) call(jamo_combine) dk(space)
+
+c Combining jamo
+store(jamo_combine) 'jamo_combine.dll:jamo_combine'
+dk(space)+' '>' '
+' '+' '>'  '
+
+
+c Other characters
++ any(punct_or_number) > index(punct_or_number, 1)
++ any(unused) > nul
+
+group(tojamo_jongseong)
+
+any(jongseongSK) > index(jongseongS, 1)
+
+'n' 'g' > 'ᆼ'
+'c' 'h' > 'ᆾ' 
+
+c combinations
+
+'g' 'g' > 'ᆩ'
+'s' 's' > 'ᆻ'
+
+'n' 'j' > 'ᆬ'
+'n' 'h' > 'ᆭ'
+'l' 'g' > 'ᆰ'
+'l' 'm' > 'ᆱ'
+'l' 'b' > 'ᆲ'
+'l' 's' > 'ᆳ'
+'l' 't' > 'ᆴ'
+'l' 'p' > 'ᆵ'
+'l' 'h' > 'ᆶ'
+'b' 's' > 'ᆹ'
+
+any(jungseongSK) > context
+
+match > use(tojamo_jungseong)
+
+group(tojamo_jungseong)
+                 
+c closed syllables
+any(jungseongSK) any(jongseong) > index(jungseongS, 1) context(2)
+c a u o i e
+c ᅡᅥᅩᅵᅦ
+'y' 'a' any(jongseong) > 'ᅣ' context(3)
+'y' 'u' any(jongseong) > 'ᅧ' context(3)
+'y' 'o' any(jongseong) > 'ᅭ' context(3)
+'o' 'o' any(jongseong) > 'ᅮ' context(3)
+'yo' 'o' any(jongseong) > 'ᅲ' context(4)
+'e' 'u' any(jongseong) > 'ᅳ' context(3)
+'a' 'e' any(jongseong) > 'ᅢ' context(3)
+'ya' 'e' any(jongseong) > 'ᅤ' context(4)
+'y' 'e' any(jongseong) > 'ᅨ' context(3)
+'w' 'a' any(jongseong) > 'ᅪ' context(3)
+'wa' 'e' any(jongseong) > 'ᅫ' context(4)
+'o' 'e' any(jongseong) > 'ᅬ' context(3)
+'w' 'o' any(jongseong) > 'ᅯ' context(3)
+'w' 'e' any(jongseong) > 'ᅰ' context(3)
+'w' 'i' any(jongseong) > 'ᅱ' context(3)
+'u' 'i' any(jongseong) > 'ᅴ' context(3)
+        
+c open syllables
+any(jungseongSK) > index(jungseongS, 1)
+c a u o i e
+c ᅡᅥᅩᅵᅦ
+'y' 'a'  > 'ᅣ' 
+'y' 'u'  > 'ᅧ' 
+'y' 'o'  > 'ᅭ' 
+'o' 'o'  > 'ᅮ' 
+'yo' 'o'  > 'ᅲ' 
+'e' 'u'  > 'ᅳ' 
+'a' 'e'  > 'ᅢ' 
+'ya' 'e'  > 'ᅤ' 
+'y' 'e'  > 'ᅨ' 
+'w' 'a'  > 'ᅪ' 
+'wa' 'e'  > 'ᅫ' 
+'o' 'e'  > 'ᅬ' 
+'w' 'o'  > 'ᅯ' 
+'w' 'e'  > 'ᅰ' 
+'w' 'i'  > 'ᅱ' 
+'u' 'i'  > 'ᅴ' 
+
+match > use(tojamo_choseong)
+
+group(tojamo_choseong)
+
+c closed syllables
+any(choseongSK) any(jungseong) any(jongseong) > index(choseongS, 1) context(2) context(3)
+
+c second half of initial consonant - standard alphabet
+
+'g' 'g' any(jungseong) any(jongseong) > 'ᄁ' context(3) context(4)
+'d' 'd' any(jungseong) any(jongseong) > 'ᄄ' context(3) context(4)
+'b' 'b' any(jungseong) any(jongseong) > 'ᄈ' context(3) context(4)
+'s' 's' any(jungseong) any(jongseong) > 'ᄊ' context(3) context(4)
+'j' 'j' any(jungseong) any(jongseong) > 'ᄍ' context(3) context(4)
+'c' 'h' any(jungseong) any(jongseong) > 'ᄎ' context(3) context(4)
+any(jungseong) any(jongseong) > 'ᄋ' context(1) context(2)
+
+c open syllables
+
+any(choseongSK) any(jungseong) > index(choseongS, 1) context(2) 
+
+c second half of initial consonant - standard alphabet
+
+'g' 'g' any(jungseong) > 'ᄁ' context(3) 
+'d' 'd' any(jungseong) > 'ᄄ' context(3) 
+'b' 'b' any(jungseong) > 'ᄈ' context(3) 
+'s' 's' any(jungseong) > 'ᄊ' context(3) 
+'j' 'j' any(jungseong) > 'ᄍ' context(3) 
+'c' 'h' any(jungseong) > 'ᄎ' context(3) 
+any(jungseong) > 'ᄋ' context(1)
