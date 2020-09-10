@@ -15,8 +15,8 @@
   Notes:            
   History:          01 Jun 2012 - pbaehr - Generate documentation from Keyman Desktop documentation
 */
-  $pagename = "N'Ko Keyboard Help";
-  $pagetitle = "N'Ko Keyboard Help";
+  $pagename = "N'Ko Phonetic Keyboard Help";
+  $pagetitle = "N'Ko Phonetic Keyboard Help";
   $style = <<<END
 /* 
 ===========
@@ -111,28 +111,6 @@ END;
 	<p>This keyboard is phonetic. Most N'Ko characters can be found by typing an equivalent Latin letter. For example, typing <kbd>d</kbd> produces <samp>ߘ</samp>. Some N'Ko characters require keyboard combinations. For example, type <kbd>n</kbd><kbd>y</kbd> to get <samp>ߢ</samp>. Archaic characters can be typed by following the letter with a <kbd>/</kbd>. For example, for <samp>ߪ</samp> type <kbd>r</kbd><kbd>/</kbd>. Finally, tone marks are typed <b>before</b> the base letter.</p>
 	<h4>On Screen Keyboard</h4>
 	<p>This keyboard includes an On Screen Keyboard view for easy reference. The On Screen Keyboard works best when associated with a QWERTY US layout.</p>
-	<h4>Fonts</h4>
-	<p>This keyboard installs with the OFL Unicode Graphite N'Ko font <b>Conarky</b>, which offers full support for this keyboard.</p>
-	<aside class='break'>
-		<h4>How to Correctly Display N'Ko in Windows</h4>
-		<p>N'Ko letters join together like Arabic when they display correctly. In order to have N'Ko letters display correctly, you must use a <a href='http://scripts.sil.org/cms/scripts/page.php?site_id=projects&item_id=graphite_home'>Graphite</a> font and a Graphite-enabled Web or desktop application.</p>
-		<h5>Graphite Fonts</h5>
-		<p>The N'Ko font <b>Conakry</b> which installs with this keyboard is a Graphite font. You should use Conakry or another Graphite N'Ko font whenever you type N'Ko. The standard Windows font Ebrima offers basic support for N'Ko, but it will not join letters together. To learn which fonts on your computer may support N'Ko, use the Keyman Desktop Font Helper.</p>
-		<h5>N'Ko on the Internet</h5>
-		<p>The Firefox web browser can be used to type and display N'Ko correctly. Here is how:</p>
-		<ol>
-			<li>If you do not have Firefox, <a href='http://www.mozilla.org'>download and install it here</a>.</li>
-			<li>Type <code>about:config</code> in the Firefox address bar.</li>
-			<li>Press <kbd>Enter</kbd>.</li>
-			<li>Click <i>I'll be careful, I promise</i>.</li> 
-			<li>Type <code>graphite</code> in the search bar.</li>
-			<li>Firefox will display <code>gfx.font_rendering.graphite.enabled</code>. Double-click on the name to set the <b>Value</b> to <b>true</b>.</li>
-			<li>If you see the preference name become bold and the <b>Value</b> set to <b>true</b>, then Firefox is now Graphite-enabled.</li>
-		</ol>
-		<p>You should use Firefox or another Graphite-enabled Web browser whenever you wish to type or view N'Ko. For additional help using Graphite on Firefox and the Web, including tips for using N'Ko on your own website, see <a href='http://scripts.sil.org/cms/scripts/page.php?site_id=projects&item_id=graphite_firefox'>Using Graphite in Mozilla Firefox</a> by SIL.</p>
-		<h5>N'Ko on the Desktop</h5>
-		<p>To type and view N'Ko correctly on your Windows Desktop, you must use a Graphite-enabled application. Many desktop applications are not Graphite-enabled. For a list of Graphite-enabled applications, see <a href='http://scripts.sil.org/cms/scripts/page.php?site_id=projects&item_id=graphite_apps'>Applications that support Graphite</a> by SIL.</p> 
-	</aside>
   
   <h2>Using the N'Ko keyboard on Android</h2>
   <p>April 2015: Android 4.x series does not support N'Ko in the system. This means that you can display N'Ko in the Keyman Pro app and in the Keyman Browser, but not in other apps in the system. Furthermore, the current release of Keyman Pro will not join the N'Ko letters together. This may be supported in a future version of the app.</p>
