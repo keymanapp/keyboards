@@ -12,6 +12,7 @@ store(&BITMAP) 'sil_moore.ico'
 
 store(&SHIFTFREESCAPS) '1'
 c store(&CAPSONONLY) '1'
+store(&VISUALKEYBOARD) 'sil_moore.kvks'
 
 begin Unicode > use(main)
 
@@ -50,28 +51,28 @@ store(keys_1a) [NCAPS RALT K_E] [NCAPS RALT K_LBRKT] [NCAPS RALT K_RBRKT]
 store(outs_1a) '€'        dk(circumflex) '¤'
               
 
-+ any(keys_0u) > use(dkouts) index(outs_0u,1)
-+ any(keys_0s) > use(dkouts) index(outs_0s,1)
-+ any(keys_0a) > use(dkouts) index(outs_0a,1)
-+ any(keys_1u) > use(dkouts) index(outs_1u,1)
-+ any(keys_1s) > use(dkouts) index(outs_1s,1)
-+ any(keys_1a) > use(dkouts) index(outs_1a,1)
-+ any(keys_2u) > use(dkouts) index(outs_2u,1)
-+ any(keys_2s) > use(dkouts) index(outs_2s,1)
++ any(keys_0u) > index(outs_0u,1)
++ any(keys_0s) > index(outs_0s,1)
++ any(keys_0a) > index(outs_0a,1)
++ any(keys_1u) > index(outs_1u,1)
++ any(keys_1s) > index(outs_1s,1)
++ any(keys_1a) > index(outs_1a,1)
++ any(keys_2u) > index(outs_2u,1)
++ any(keys_2s) > index(outs_2s,1)
 c + any(keys_2a) > use(dkouts) index(outs_2a,1)
-+ any(keys_3u) > use(dkouts) index(outs_3u,1)
-+ any(keys_3s) > use(dkouts) index(outs_3s,1)
++ any(keys_3u) > index(outs_3u,1)
++ any(keys_3s) > index(outs_3s,1)
 c + any(keys_3a) > use(dkouts) index(outs_3a,1)
 
 c Additional items in requirements but not on keyboard map - our suggestions
 
-+ [RALT SHIFT K_2] > use(dkouts) '²'  c moved from backquote in original proposal - backquote used for tones
-+ [RALT CAPS K_2] > use(dkouts) '²'  c moved from backquote in original proposal - backquote used for tones
-+ [RALT NCAPS K_O] > use(dkouts) 'ɔ'
-+ [RALT SHIFT K_4] > use(dkouts) "ʼ"
-+ [RALT CAPS K_4] > use(dkouts) "ʼ"
-+ [RALT SHIFT K_7] > use(dkouts) 'é'
-+ [RALT CAPS K_7] > use(dkouts) 'é'
++ [RALT SHIFT K_2] > '²'  c moved from backquote in original proposal - backquote used for tones
++ [RALT CAPS K_2] > '²'  c moved from backquote in original proposal - backquote used for tones
++ [RALT NCAPS K_O] > 'ɔ'
++ [RALT SHIFT K_4] > "ʼ"
++ [RALT CAPS K_4] > "ʼ"
++ [RALT SHIFT K_7] > 'é'
++ [RALT CAPS K_7] > 'é'
 
 c Tone marks - rotate tone marks if necessary
                                  
@@ -88,7 +89,7 @@ c Characters for linguists
 store(keys_ling) [NCAPS RALT K_G] [NCAPS RALT K_M] [NCAPS RALT K_D] [RALT SHIFT K_D] [RALT CAPS K_D] [NCAPS RALT K_H] [NCAPS RALT K_J] [RALT SHIFT K_G] [RALT CAPS K_G] [RALT K_N] [RALT SHIFT K_N] [RALT CAPS K_N] 
 store(outs_ling) 'ŋʔɖɗɗɦɟɠɠɲɳɳ'
 
-+ any(keys_ling) > use(dkouts) index(outs_ling, 1)
++ any(keys_ling) > index(outs_ling, 1)
 
 c Handle deadkeys
 
@@ -112,8 +113,3 @@ dk(circumflex) + any(vowel) > index(circumvowel, 2)
 any(deadkeys) + any(keys_dead) > index(deadchars, 1) index(deadchars, 2)
 any(deadkeys) + ' ' > index(deadchars, 1)
 
-c Output deadkeys that were not matched
-
-group(dkouts)
-
-any(deadkeys) > index(deadchars, 1)

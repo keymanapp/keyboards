@@ -6,6 +6,11 @@
 ?>
 
 <h1>Moor gʋndga</h1>
+
+<div id='osk-container'>
+  <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
+</div>
+
 <p>Gʋndg kãngã naana moor gʋls-biis la gom-biis yĩnga.</p>
 <p>B yag-a-la fãrendã gʋndg zugu.</p>
 <p>Moorã gʋndg mamseg lagma teed a taab n be kaane. Rẽ, bɩ-y pak mamsegã n bãng gʋls-biisã zĩisi.</p>
@@ -19,6 +24,10 @@
 <p>Ce clavier est destiné à la saisie et à l’affichage de textes/documents en langue mooré. Il est construit 
 à partir du clavier AZERTY français. Une infographie incluse dans ce pack permet de repérer les différents 
 emplacements des caractères spécifiques au mooré.</p>
+
+<div id='osk-container'>
+  <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
+</div>
 
 <p>Ce clavier doit être utilisé conjointement avec une police de caractères comme <i>Doulos SIL</i> ou <i>Charis SIL</i>.</p>
 
@@ -47,6 +56,10 @@ de ces polices de caractères depuis le site <a href='http://software.sil.org/'>
   
   <p>This keyboard is designed for input of the Mooré language.  It is based on the French keyboard as used in Burkina
   Faso.  A visual keyboard is included in this package; please refer to it for placement of specific characters.</p>
+  
+  <div id='osk-container'>
+  <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
+  </div>
   
   <p>This keyboard should be used with a font such as <i>Charis SIL</i> or <i>Doulos SIL</i>.  <i>Charis SIL</i> is included in this package, and
   updated versions of all these fonts can be downloaded from <a href='http://software.sil.org/'>http://software.sil.org/</a>.</p>
