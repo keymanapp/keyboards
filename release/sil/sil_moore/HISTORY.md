@@ -6,6 +6,8 @@ Mooré - Burkina Faso Change History
 * Moved to \release from \legacy
 * Updated metadata
 * Added Linux support
+* Added OSK
+* Removed unsupported/unnecessary keyboard code blocks
 
 1.0 (2006)
 * Created by Tavultesoft Pty Ltd
