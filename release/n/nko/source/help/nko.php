@@ -103,7 +103,7 @@ END;
 ?>
  
 <body>
-  <p>Keyboard &#169; 2012 Tavultesoft Pty Ltd</p>
+  <p>Keyboard &#169; 2012-2020 Michael Everson and SIL International</p>
   <section id='overview'>
 	<h2>Overview</h2>
 	<p>This keyboard is designed for the N'Ko script of West Africa. The keyboard has been developed to make it easy to type all of the letters and diacritics necessary for N'Ko. This keyboard is fully compliant with the <a href='http://unicode.org/standard/standard.html'>Unicode Standard</a>.</p>
