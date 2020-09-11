@@ -7,22 +7,22 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
   Authors:     Tavultesoft Pty Ltd
 */
   $pagename = 'Korean KORDA Jamo (SIL) Keyboard Help';
-  $pagetitle = 'Korean KORDA (SIL) Jamo Keyboard Help';
+  $pagetitle = 'Korean KORDA Jamo (SIL) Keyboard Help';
   require_once('header.php');
 ?>
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" />
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Korean KORDA Jamo (SIL) Keyboards Help</title>
+  <title>Korean KORDA Jamo (SIL) Keyboard Help</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-   <h1>Korean KORDA Jamo (SIL) Keyboards Help</h1>
+   <h1>Korean KORDA Jamo (SIL) Keyboard Help</h1>
    <div id='overview'>
     <h2>Overview</h2>
-    <p>The Korean KORDA Jamo (SIL) keyboards are built to type Korean using the transliteration system KORDA (Korean Romanization for Data Application). KORDA is designed to make Latin-Korean transliteration easy, accurate, and computerizable. For more information on KORDA, see <a href='about_korda.pdf'>About KORDA</a>.</p>
-    <p>The Korean KORDA Jamo (SIL) keyboards create hangeul syllables from jamo letters each time you press <kbd>Spacebar</kbd>.</p>
+    <p>The Korean KORDA Jamo (SIL) keyboard is built to type Korean using the transliteration system KORDA (Korean Romanization for Data Application). KORDA is designed to make Latin-Korean transliteration easy, accurate, and computerizable. For more information on KORDA, see <a href='about_korda.pdf'>About KORDA</a>.</p>
+    <p>The Korean KORDA Jamo (SIL) keyboard creates hangeul syllables from jamo letters each time you press <kbd>Spacebar</kbd>.</p>
     <h4>On Screen Keyboard</h4>
     <p>This keyboard includes an On Screen Keyboard view for easy reference. The On Screen Keyboard works best when associated with a QWERTY US layout.</p>
     <h4>Fonts</h4>
@@ -272,8 +272,8 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
     <br style="clear: left" />    
 
     <h2 class='details'>Keyboard Details</h2>
-    <h3 class='jamo'>Korean KORDA Jamo Keyboard</h3>
-    <p>The Korean KORDA Jamo keyboard converts Korean jamo into hangeul after you press <kbd>Spacebar</kbd>. As you type, Korean jamo are shown. When you press <kbd>Spacebar</kbd>, the jamo are converted into a hangeul syllable.
+    <h3 class='jamo'>Korean KORDA Jamo (SIL) Keyboard</h3>
+    <p>The Korean KORDA Jamo (SIL) keyboard converts Korean jamo into hangeul after you press <kbd>Spacebar</kbd>. As you type, Korean jamo are shown. When you press <kbd>Spacebar</kbd>, the jamo are converted into a hangeul syllable.
     <p style='margin-left:40px'><b>Example:</b> type <span class='keys'>s</span><span class='keys'>a</span><span class='keys'>m</span> to see <span class='lang2'>ᄉ</span><span class='lang2'>ᅡ</span><span class='lang2'>ᄆ</span>. Press <kbd>Spacebar</kbd> to get <span class='lang2'>삼</span>.</p>
     <p>Pressing <kbd>Spacebar</kbd> twice will insert a space. If you wish to insert uncombined jamo into your text, press <kbd>Shift</kbd>+<kbd>Spacebar</kbd>.</p>
     <p>The letters c, y, and w require you to type another key to get a jamo. The letter c needs h. The letters y and w need vowels.</p>
