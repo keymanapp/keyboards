@@ -6,14 +6,14 @@
 ?>
 <h1>Comienza a utilizar el teclado Qom</h1>
 <h2>Computadoras de escritorio / portátiles</h2>
-<p>Este teclado registra cuando una <b>letra clave</b> aparece seguida de un <b>apóstrofe</b> y genera el carácter especial que corresponda. Por ejemplo: si presionas la “y” y luego el apóstrofe, al presionar la siguiente letra verá que la y se transforma en <b>ỹ</b>.
-Hay varias combinaciones de teclas para <b>acceder a caracteres especiales</b>:</p>
+<p>Este teclado funciona de forma muy similar a las tildes en español. Cuando quieres escribir "á", por ejemplo, presionas la tilde (a la derecha de la “p”) y luego la tecla “a”. Para Qom, la tecla importante está <b>a la derecha del cero</b>. Con ella, puedo obtener lo siguiente:
 <ul>
-	<li><p>En general, puedes utilizar la tecla a la derecha de la letra "p" para obtener el apóstrofe</p></li>
-	<li><p>Intenta combinar el apóstrofe con las letras clave <b>y, t, x, a, e, i, o</b> (mayusculas y minusculas) para obtener los distintos caracteres especiales.</p></li>
+	<li><p>Si presionas la tecla a la derecha del cero y luego la “y”, verás que la y se transforma en <b>ỹ</b>. Lo mismo sucederá con la mayúscula.</p></li>
+	<li><p>Si presionas la tecla a la derecha del cero y luego el espacio, verás que inserta el <b>apóstrofe</b>.</p></li>
 </ul>
+<p>Las palabras con apóstrofe entre ellas nunca se dividirán al final de un renglón: quedarán juntas allí o bajarán juntas al renglón siguiente.</p>
 <h2>Dispositivos móviles</h2>
-<p>En el caso de celulares, el proceso es similar. Luego de instalar el teclado y activarlo, el apóstrofe aparecerá a la derecha de la barra espaciadora. También puedes encontrar los caracteres especiales al mantener apretadas distintas teclas, como la y para ỹ.</p>
+<p>En el caso de celulares, el apóstrofe aparecerá a la derecha de la barra espaciadora. Para obtener la ỹ, simplemente <b>mantén presionada</b> la "y" en la pantalla (aparecerá arriba).</p>
 
 <h1>Distribución de caracteres en el teclado</h1>
 <p>Las imagenes a continuación representan los caracteres en cada tecla en el modo normal y con shift o alt derecho apretado.</p> 
@@ -22,7 +22,7 @@ Hay varias combinaciones de teclas para <b>acceder a caracteres especiales</b>:<
 </div>
 
 <h2>Teclado móvil</h2>
-<p>Combina el apóstrofe a la derecha de la barra espaciadora con las distintas letras clave. También puedes mantener presionada la y para acceder a la "ỹ".</p>
+<p>En el caso de celulares, el apóstrofe aparecerá a la derecha de la barra espaciadora. Para obtener la ỹ, simplemente <b>mantén presionada</b> la "y" en la pantalla (aparecerá arriba).</p>
 
 <div id='osk-phone' data-states='default shift numeric symbol'>
 </div>
