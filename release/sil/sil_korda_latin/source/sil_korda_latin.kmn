@@ -146,7 +146,7 @@ nomatch > beep
 
 group(main) using keys
 
-+ ' ' > call(jamo_combine) dk(space) use(tojamo_jongseong)
++ ' ' > use(tojamo_jongseong)
 
 c Combining jamo
 store(jamo_combine) 'jamo_combine.dll:jamo_combine'
@@ -259,3 +259,6 @@ c second half of initial consonant - standard alphabet
 'j' 'j' any(jungseong) > 'ᄍ' context(3) 
 'c' 'h' any(jungseong) > 'ᄎ' context(3) 
 any(jungseong) > 'ᄋ' context(1)
+
+match > call(jamo_combine) dk(space)
+nomatch > call(jamo_combine) dk(space)
