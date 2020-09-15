@@ -12,7 +12,7 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
 ?>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Korean KORDA Jamo (SIL) Keyboard Help</title>
+  <title>Korean KORDA Latin (SIL) Keyboard Help</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
