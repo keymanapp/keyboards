@@ -16,7 +16,8 @@
 <p>Since the majority of users of S'gaw Karen language will likely be bilingual with Burmese, some Burmese characters are added to the keyboard convenient purposes. Users do not have to switch keyboards to type characters from loanwords. Those characters are: ်, ာ, ​ေ, ဗ, ဉ and ယ. Some characters combinations are also added to the keyboard for these same purposes: ◌ၢၢ်, ◌ၢၣ်, ◌ၢာ်, လီၤ, ◌ၢၤ, ◌ှ့ and ဒီး.</p> 
 <p>The characters ဒ and ူ can be found on both Unshift and Shift layers as this is more about convenience for transition from the Burmese keyboard.</p>
 <p>​ေ has to be typed before the consonant it is attached to. For example, type ​ေ and then ဂ to get ​ဂေ. The same rule applies to all consonants.</p>
-
+<p> ္ on "Shift + X" of Desktop layout can be used for stacking consonant.</p>
+<p>ဓ was added to the Touch layout for it may be used in loanwords, however this character is not on Desktop layout.</p>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
