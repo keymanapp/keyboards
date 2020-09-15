@@ -10,15 +10,7 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
   $pagetitle = 'Korean KORDA Latin (SIL) Keyboard Help';
   require_once('header.php');
 ?>
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" />
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Korean KORDA Latin (SIL) Keyboard Help</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
-<body>
-   <h1>Korean KORDA Latin (SIL) Keyboard Help</h1>
+
    <div id='overview'>
     <h2>Overview</h2>
     <p>The Korean KORDA (SIL) keyboard is built to type Korean using the transliteration system KORDA (Korean Romanization for Data Application). KORDA is designed to make Latin-Korean transliteration easy, accurate, and computerizable. For more information on KORDA, see <a href='about_korda.pdf'>About KORDA</a>.</p>
@@ -421,5 +413,4 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
             </tr>    
         </table>
     </div>
-</body>
-</html>
+
