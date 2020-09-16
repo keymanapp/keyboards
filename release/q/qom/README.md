@@ -7,11 +7,11 @@ Version 1.1
 
 Description
 -----------
-
 Distribución de teclado para lengua Qom. Creada sobre la base de español para Latinoamérica.
 
 Links
 -----
+https://keyman.com/keyboards/qom
 
 Supported Platforms
 -------------------
