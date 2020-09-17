@@ -10,20 +10,12 @@ store(&VISUALKEYBOARD) 'qom.kvks'
 store(&BITMAP) 'qom.ico'
 store(&LAYOUTFILE) 'qom.keyman-touch-layout'
 store(&COPYRIGHT) '© 2020 Latinoamérica Habla'
-store(&KEYBOARDVERSION) '1'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
-store(CommaAboveRight) U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0074 U+0054 U+0078 U+0058
 
 begin Unicode > use(main)
 
 group(main) using keys
-
-c Comma Above Right store (If U+02BC is preceeded by character below, they merge with it)
-any(CommaAboveRight) + [K_LBRKT] > index(CommaAboveRight,1) U+0315
-
-c Special Characters (Combined with apostrophe)
-U+0079 + [K_LBRKT] > U+1EF9
-U+0059 + [K_LBRKT] > U+1EF8 
 
 + [K_SPACE] > U+0020
 
@@ -35,11 +27,9 @@ U+0059 + [K_LBRKT] > U+1EF8
 
 + [K_2] > U+0032
 + [SHIFT K_2] > U+0022
-+ [RALT K_2] > U+0040
 
 + [K_3] > U+0033
 + [SHIFT K_3] > U+0023
-+ [RALT K_3] > U+0023
 
 + [K_4] > U+0034
 + [SHIFT K_4] > U+0024
@@ -190,9 +180,8 @@ U+0059 + [K_LBRKT] > U+1EF8
 + [NCAPS SHIFT K_Z] > U+005a
 + [CAPS SHIFT K_Z] > U+007a
 
-+ [K_LBRKT] > U+02bc c A la derecha del cero
-+ [SHIFT K_LBRKT] > U+003F
-+ [RALT K_LBRKT] > U+005C
++ [K_LBRKT] > dk(00b4)
++ [SHIFT K_LBRKT] > dk(00a8)
 
 + [K_RBRKT] > U+002b
 + [SHIFT K_RBRKT] > U+002a
@@ -203,19 +192,21 @@ U+0059 + [K_LBRKT] > U+1EF8
 
 + [K_SLASH] > U+002d
 + [SHIFT K_SLASH] > U+005f
++ [RALT K_SLASH] > U+2011
 
 + [K_PERIOD] > U+002e
 + [SHIFT K_PERIOD] > U+003a
 
 + [K_BKSLASH] > U+007d
 + [SHIFT K_BKSLASH] > U+005d
++ [RALT K_BKSLASH] > dk(0060)
 
 + [NCAPS K_COLON] > U+00f1
 + [CAPS K_COLON] > U+00d1
 + [NCAPS SHIFT K_COLON] > U+00d1
 + [CAPS SHIFT K_COLON] > U+00f1
 
-+ [K_HYPHEN] > U+0027
++ [K_HYPHEN] > dk(0027)
 + [SHIFT K_HYPHEN] > U+003f
 + [RALT K_HYPHEN] > U+005c
 
@@ -232,3 +223,28 @@ U+0059 + [K_LBRKT] > U+1EF8
 
 + [K_oE2] > U+003c
 + [SHIFT K_oE2] > U+003e
+
+
+match > use(deadkeys)
+
+group(deadkeys)
+
+store(dkf00b4) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055 U+0079 U+0059
+store(dkt00b4) U+00b4 U+00e1 U+00c1 U+00e9 U+00c9 U+00ed U+00cd U+00f3 U+00d3 U+00fa U+00da U+00fd U+00dd
+dk(00b4) any(dkf00b4) > index(dkt00b4, 2)
+
+store(dkf00a8) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055 U+0079
+store(dkt00a8) U+00a8 U+00e4 U+00c4 U+00eb U+00cb U+00ef U+00cf U+00f6 U+00d6 U+00fc U+00dc U+00ff
+dk(00a8) any(dkf00a8) > index(dkt00a8, 2)
+
+store(dkf0060) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055
+store(dkt0060) U+0060 U+00e0 U+00c0 U+00e8 U+00c8 U+00ec U+00cc U+00f2 U+00d2 U+00f9 U+00d9
+dk(0060) any(dkf0060) > index(dkt0060, 2)
+
+store(dkf005e) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055
+store(dkt005e) U+005e U+00e2 U+00c2 U+00ea U+00ca U+00ee U+00ce U+00f4 U+00d4 U+00fb U+00db
+dk(005e) any(dkf005e) > index(dkt005e, 2)
+
+store(dkf0027) U+0020 U+0079 U+0059
+store(dkt0027) U+02BC U+1EF9 U+1EF8
+dk(0027) any(dkf0027) > index(dkt0027, 2)
