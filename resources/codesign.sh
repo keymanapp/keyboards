@@ -38,7 +38,7 @@ function codesign {
     cmd //c "c:\\codesign\\signtime.bat" "$SIGNTOOL" - - "$SC_URL" - //d "$SIGNNAME" "$SIGNFILE" || die "Unable to sign $SIGNFILE"
   else
     "$SIGNTOOL" sign //f "$SC_PFX_SHA256" //fd sha256 //du "$SC_URL" //p "$SC_PWD" //v //d "$SIGNNAME" "$SIGNFILE" || die "Unable to sign with sha256 $SIGNFILE"
-    codesign_timestamp "$SIGNFILE" sha256msi || die "Unable to timestamp $SIGNFILE"
+    codesign_timestamp "$SIGNFILE" || die "Unable to timestamp $SIGNFILE"
   fi
 }
 
