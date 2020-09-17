@@ -1,7 +1,7 @@
 Gandhari keyboard
 ==============
 
-© 2004-2010 Andrew Glass
+© 2004-2020 Andrew Glass
 
 Version 2.8
 
