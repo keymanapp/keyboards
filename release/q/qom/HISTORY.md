@@ -9,5 +9,7 @@ Qom Change History
 	- Replacement of apostrophe
 	- On-screen keyboard reorganization
 	- Updated documentation 
+1.2 Update 2 (20-09-18)
+	- Fix for mobile.
 ----------------
 * Created by Latinoamérica Habla
