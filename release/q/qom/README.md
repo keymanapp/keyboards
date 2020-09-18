@@ -3,7 +3,7 @@ Qom keyboard
 
 © 2020 Latinoamérica Habla
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
