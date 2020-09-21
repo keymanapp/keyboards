@@ -14,7 +14,6 @@
   <meta name=ProgId content=Word.Document>
   <meta name=Generator content="Microsoft Word 11">
   <meta name=Originator content="Microsoft Word 11">
-  <link rel=File-List href="welcome_files/filelist.xml">
   <title>Indic Roman Transliteration: </title>
   <!--[if gte mso 9]><xml>
     <o:DocumentProperties>
