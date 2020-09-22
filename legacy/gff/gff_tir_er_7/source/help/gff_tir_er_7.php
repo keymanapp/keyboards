@@ -108,7 +108,7 @@ We also use the apostrophe for Ethiopic numbers, so <span class='keys'>'1</span>
 so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፣</span> and a second time gives English semi-colon <span class='input'>;</span>. 
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='TigringaErTyping-English.pdf'>Typing in Tigringa</a> for full details on how to type all Tigringa letters, numbers and punctuation.
+See <a target="_blank" href='TigrignaErTyping-English.pdf'>Typing in Tigrigna</a> for full details on how to type all Tigrigna letters, numbers and punctuation.
 </p>
 </div>
 </div>

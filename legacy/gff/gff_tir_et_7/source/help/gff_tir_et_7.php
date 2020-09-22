@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  $pagename = 'Tigringa (Ethiopia) (GFF) Keyboard Help';
-  $pagetitle = 'Tigringa (Ethiopia) Keyboard Help';
+  $pagename = 'Tigrigna (Ethiopia) (GFF) Keyboard Help';
+  $pagetitle = 'Tigrigna (Ethiopia) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
@@ -48,12 +48,12 @@ EXTRA;
 <div id='Overview'>
 <h2>Overview</h2>
 <p>
-This keyboard is designed for use with the Tigringa language of Ethiopia in Africa. Typing follows a consonant-vowel pattern. It is designed for use with a standard (QWERTY) keyboard.
+This keyboard is designed for use with the Tigrigna language of Ethiopia in Africa. Typing follows a consonant-vowel pattern. It is designed for use with a standard (QWERTY) keyboard.
 </p>
 <p class='keymanweb'>Most computers will automatically download a special font to display this keyboard correctly.  However, if the layout or the charts below do not display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 <p>
-<a href="#Related">Click here</a> to see keyboard layouts for Tigringa (Eritrea) or other Ethiopic languages, like Amharic, Awngi, Bench, Blin, Dizi, Ge'ez, Me'en, Mursi, Sebatbeit, and Suri.
+<a href="#Related">Click here</a> to see keyboard layouts for Tigrigna (Eritrea) or other Ethiopic languages, like Amharic, Awngi, Bench, Blin, Dizi, Ge'ez, Me'en, Mursi, Sebatbeit, and Suri.
 </p>
 </div>
 
@@ -67,9 +67,9 @@ This keyboard is designed for use with the Tigringa language of Ethiopia in Afri
 <div id='Quickstart'>
 <h3>Quickstart</h3>
 
-<p>This keyboard is designed to work intuitively with a standard (QWERTY) keyboard. This means that the Tigringa sounds in this keyboard can be found by thinking of the most similar English letters. For example, you can type <span class='keys'>selamat</span> to get <span class='highlightExample'>ሰላማት</span>.
+<p>This keyboard is designed to work intuitively with a standard (QWERTY) keyboard. This means that the Tigrigna sounds in this keyboard can be found by thinking of the most similar English letters. For example, you can type <span class='keys'>selamat</span> to get <span class='highlightExample'>ሰላማት</span>.
 </p>
-<p>As you can see, each Tigringa character is typed with the base consonant first and then the vowel. For example, <span class='highlightExample'>ጤ</span> is typed <span class='keys'>T</span> then <span class='keys'>ie</span>.
+<p>As you can see, each Tigrigna character is typed with the base consonant first and then the vowel. For example, <span class='highlightExample'>ጤ</span> is typed <span class='keys'>T</span> then <span class='keys'>ie</span>.
 </p>
 </div>
 
@@ -82,19 +82,19 @@ This keyboard is designed for use with the Tigringa language of Ethiopia in Afri
 <h3>Keyboard Details</h3>
 	
 <p>
-The Tigringa keyboard uses an intuitive <i>phonetic</i> system where the Tigringa sounds are matched to the nearest English letters. You can think of how a word sounds in
-Tigringa and then type it out with English.
+The Tigrigna keyboard uses an intuitive <i>phonetic</i> system where the Tigrigna sounds are matched to the nearest English letters. You can think of how a word sounds in
+Tigrigna and then type it out with English.
 </p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>selamat</span> produces <span class='highlightExample'>ሰላማት</span>
 </p>
 <p>
-Because Tigringa has more sounds than English, we sometimes have to adjust this
+Because Tigrigna has more sounds than English, we sometimes have to adjust this
 rule. For example, English does not have <span class='highlightExample'>ጽ</span> or <span class='highlightExample'>ቕ</span> and the closest similar letters would be <span class='input'>s</span> and <span class='input'>q</span> respectively. In this case you should type <span class='keys'>S</span> or <span class='keys'>Q</span>, for capital <span class='input'>S</span> and capital <span class='input'>Q</span>:</p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>SbuQ</span> produces <span class='highlightExample'>ጽቡቕ</span></p>
 <p>When the letter you want to type does not appear when you hit the similar sounding key in English, try using the capital next. If typing the capital does not work, then try hitting the key two times:
 </p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>aarbi</span> produces <span class='highlightExample'>ዓርቢ</span></p>
-<p>Next, when you need to type the extra letters of Tigringa like <span class='highlightExample'>ሏ</span>,<span class='highlightExample'>ሟ</span>,<span class='highlightExample'>ኴ</span> you can do so by typing an extra vowel after a <span class='input'>u</span>:
+<p>Next, when you need to type the extra letters of Tigrigna like <span class='highlightExample'>ሏ</span>,<span class='highlightExample'>ሟ</span>,<span class='highlightExample'>ኴ</span> you can do so by typing an extra vowel after a <span class='input'>u</span>:
 </p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>mua</span> produces <span class='highlightExample'>ሟ</span></p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>guie</span> produces <span class='highlightExample'>ጔ</span></p>
@@ -108,7 +108,7 @@ We also use the apostrophe for Ethiopic numbers, so <span class='keys'>'1</span>
 so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semi-colon <span class='input'>;</span>. 
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='TigringaEtTyping-English.pdf'>Typing in Tigringa</a> for full details on how to type all Tigringa letters, numbers and punctuation.
+See <a target="_blank" href='TigrignaEtTyping-English.pdf'>Typing in Tigrigna</a> for full details on how to type all Tigrigna letters, numbers and punctuation.
 </p>
 </div>
 </div>
@@ -137,14 +137,14 @@ See <a target="_blank" href='TigringaEtTyping-English.pdf'>Typing in Tigringa</a
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_muz_7">Mursi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_sgw_7">Sebatbeit</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tir_er_7">Tigringa (Eritrea)</a></p>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tir_er_7">Tigrigna (Eritrea)</a></p>
 
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="https://keyman.com/keyboards/gff-tir-et-powerpack-7">Download the Tigringa (Ethiopia) Keyboard for Keyman Desktop</a></p>
-<p><a target="_blank" href="http://www.omniglot.com/writing/tigrinya.htm">More on the Tigringa Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="https://en.wikipedia.org/wiki/Tigrinya_language">More on the Tigringa Language at Wikipedia.org</a><br/></p>
+<p><a target="_blank" href="https://keyman.com/keyboards/gff-tir-et-powerpack-7">Download the Tigrigna (Ethiopia) Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="http://www.omniglot.com/writing/tigrinya.htm">More on the Tigrigna Writing System at Omniglot.com</a><br/>
+<a target="_blank" href="https://en.wikipedia.org/wiki/Tigrinya_language">More on the Tigrigna Language at Wikipedia.org</a><br/></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
 <a target="_blank" href="https://en.wikipedia.org/wiki/Ge%27ez_script">More on the Ge'ez Script at Wikipedia.org</a></p>
 </div>
@@ -169,7 +169,7 @@ This keyboard was created by the Ge'ez Frontier Foundation.  Tavultesoft graciou
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Tigringa keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2009 Ge'ez Frontier Foundation and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
+The Tigrigna keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2009 Ge'ez Frontier Foundation and Tavultesoft.  It may be freely distributed and used, but must not be modified or adapted in any way without written permission from Tavultesoft.
 </p>
 <p>
 THIS SOFTWARE IS PROVIDED BY TAVULTESOFT PTY LTD "AS IS" AND ANY
