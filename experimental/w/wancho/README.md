@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-Wancho generated from template
+This keyboard is designed for the Wancho language of India using the Wancho script created by Banwang Losu.
 
 Links
 -----
