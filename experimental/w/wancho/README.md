@@ -12,6 +12,7 @@ This keyboard is designed for the Wancho language of India using the Wancho scri
 
 Links
 -----
+https://keyman.com/keyboards/wancho
 
 Supported Platforms
 -------------------
