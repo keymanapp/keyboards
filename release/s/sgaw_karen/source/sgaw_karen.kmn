@@ -19,23 +19,6 @@ store(&KEYBOARDVERSION) '1.0'
 begin Unicode > use(main)
 
 group(main) using keys
-+ [SHIFT K_P] > '>'
-+ [SHIFT K_O] > '္'
-+ [SHIFT K_X] > 'ဒီး'
-+ [SHIFT K_SLASH] > '?'
-+ [SHIFT K_PERIOD] > '။'
-+ [SHIFT K_COMMA] > '၊'
-+ [SHIFT K_M] > 'ာ'
-+ [SHIFT K_COLON] > 'း'
-+ [SHIFT K_J] > 'ြ'
-+ [SHIFT K_S] > 'ၠ'
-+ [SHIFT K_I] > '်'
-+ [K_SLASH] > 'ၣ်'
-+ [K_M] > 'ာ်'
-+ [K_COLON] > 'ၤ'
-+ [K_J] > 'ဲ'
-+ [K_F] > 'ၢ်'
-+ [K_A] > 'ှ'
 
 + [K_SPACE] > U+0020
 
@@ -69,6 +52,7 @@ group(main) using keys
 + [K_9] > U+1049
 + [SHIFT K_9] > U+0028
 
++ [K_A] > U+103e
 + [SHIFT K_A] > U+1017
 
 + [K_B] > U+1018
@@ -83,6 +67,7 @@ group(main) using keys
 + [K_E] > U+1014
 + [SHIFT K_E] > U+200b U+1031
 
++ [K_F] > U+1062 U+103a
 + [SHIFT K_F] > U+101c U+102e U+1064
 
 + [K_G] > U+102b
@@ -92,7 +77,10 @@ group(main) using keys
 + [SHIFT K_H] > U+1036
 
 + [K_I] > U+1004
++ [SHIFT K_I] > U+103a
 
++ [K_J] > U+1032
++ [SHIFT K_J] > U+103c
 
 + [K_K] > U+102f
 + [SHIFT K_K] > U+1012
@@ -100,13 +88,17 @@ group(main) using keys
 + [K_L] > U+1030
 + [SHIFT K_L] > U+1030
 
++ [K_M] > U+102c U+103a
++ [SHIFT K_M] > U+102c
 
 + [K_N] > U+100a
 + [SHIFT K_N] > U+1009
 
 + [K_O] > U+101e
++ [SHIFT K_O] > U+1039
 
-+ [K_P] > nul
++ [K_P] > U+1005
++ [SHIFT K_P] > nul
 
 + [K_Q] > U+1006
 + [SHIFT K_Q] > U+1061
@@ -115,6 +107,7 @@ group(main) using keys
 + [SHIFT K_R] > U+1062 U+1062 U+103a
 
 + [K_S] > U+103b
++ [SHIFT K_S] > U+1060
 
 + [K_T] > U+1021
 + [SHIFT K_T] > U+1062 U+1063 U+103a
@@ -129,6 +122,7 @@ group(main) using keys
 + [SHIFT K_W] > U+101d
 
 + [K_X] > U+1011
++ [SHIFT K_X] > U+1012 U+102E U+1038
 
 + [K_Y] > U+1015
 + [SHIFT K_Y] > U+1062 U+102c U+103a
@@ -140,13 +134,17 @@ group(main) using keys
 + [K_EQUAL] > U+2018
 + [SHIFT K_EQUAL] > U+2019
 
++ [K_COLON] > U+1064
++ [SHIFT K_COLON] > U+1038
+
 + [K_COMMA] > U+002c
++ [SHIFT K_COMMA] > U+104a
 
 + [K_HYPHEN] > U+002d
 + [SHIFT K_HYPHEN] > U+005f
 
 + [K_PERIOD] > U+002e
-
++ [SHIFT K_PERIOD] > U+104b
 
 + [K_BKQUOTE] > U+0060
 + [SHIFT K_BKQUOTE] > U+007e
@@ -162,6 +160,10 @@ group(main) using keys
 
 + [K_QUOTE] > U+1012
 + [SHIFT K_QUOTE] > U+1062 U+1064
+
++ [K_SLASH] > U+1063 U+103a
++ [SHIFT K_SLASH] > U+003f
+
 
 
 c mitigating ​ေ U+1031 issues

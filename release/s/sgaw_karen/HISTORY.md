@@ -3,6 +3,7 @@ Sgaw Karen Change History
 
 1.0 (2020-09-01)
 ----------------
+* Removed ​ေ ာ ဗ and ဉ from touch layout as suggested
 * Added ဓ to touch layout
 * Added ္ to both desktop and touch layouts
 * Touch layout has been modified per users' suggestions and comments
