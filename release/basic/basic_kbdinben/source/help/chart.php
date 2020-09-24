@@ -609,9 +609,4 @@
 	
 </table>
 
-<div id="Back">
-<p><a href="bengali.php">Back to Bengali Basic Keyboard Help</a><br/>
-</p>
-</div>
-
 
