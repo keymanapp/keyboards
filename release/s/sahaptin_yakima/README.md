@@ -15,6 +15,17 @@ Links
 
 Supported Platforms
 -------------------
- * All
+ * Windows
+ * macOS
+ * Linux
+ * Web
+ * iPhone
+ * iPad
+ * Android phone
+ * Android tablet
+ * Mobile devices
+ * Desktop devices
+ * Tablet devices
+
 
  
