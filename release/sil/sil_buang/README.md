@@ -3,7 +3,7 @@ Buang (SIL) keyboard
 
 © 2008-2020 SIL International
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
