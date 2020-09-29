@@ -19,7 +19,7 @@
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
 
-<div id='osk-tablet' data-states='default shift ctrl'>
+<div id='osk-tablet' data-states='default shift'>
 </div>
 
 <p>©2020 Banwang Losu</p>
