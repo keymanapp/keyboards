@@ -3,7 +3,7 @@ Wancho keyboard
 
 ©2020 Banwang Losu
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------
