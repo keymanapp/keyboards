@@ -1,6 +1,6 @@
 <?php /*
   Name:        Indic Roman Transliteration
-  Copyright:   
+  Copyright:
   Description: For use in typing transliterated Indic texts. This is a simplified keyboard for typing Roman script with accents or diacritics.
   Authors:     SIL
 */
