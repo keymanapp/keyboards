@@ -21,7 +21,11 @@ on websites) and not least as a touch-keyboard on Android and iOS devices (table
 
 <div id='osk-mobi-container'>
   <h3>Mobile Keyboard Layout</h3>
-  <div id='osk-mobile' data-states='default shift numeric'></div>
+  <div id='osk-phone' data-states='default shift numeric'></div>
+  <h3>Longpress</h3>
+  <p>Keys with a little dot on the top right can be pressed and held for more keys.</p>
+  <p><a href="anii_mobile_numeric_longpress.png"><img class="keyboard" src="anii_mobile_numeric_longpress.png" alt="Numeric state with Longpress" /></a></p>
+
 </div>
 
 <div id='osk-tablet-container'>
