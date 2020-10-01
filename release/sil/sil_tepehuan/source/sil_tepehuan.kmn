@@ -1,0 +1,160 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Tepehuan (SIL)'
+store(&COPYRIGHT) '© 2008-2020 SIL Mexico'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows macosx linux'
+store(&VISUALKEYBOARD) 'sil_tepehuan.kvks'
+
+c Keyboard created by KMDECOMP
+c
+c Meta details: Registered=1; Version=0
+c               Flags=0; HotKey=30055
+c
+
+c store(&21) "Created with Tavultesoft Keyman Developer version 8.0.355.0" 
+c store(&22) "0" 
+c store(&23) "Tavultesoft Keyman" 
+store(store6) "aeiouAEIOU" 
+store(store7) "áéíóúÁÉÍÓÚ" 
+store(store8) "äëïöüÄËÏÖÜ" 
+store(store9) "bdglL" 
+store(store10) "βðɣƚȽ" 
+store(store11) "?!" 
+store(store12) "¿¡" 
+store(store13) "acdhortɇy123.:" 
+store(store14) "ª©°ʰº®™ʷʸ¹²³•¨" 
+store(store15) "eE0cn" 
+store(store16) "ɇɆ∅¢ŋ" 
+store(store17) "cjszS" 
+store(store18) "čǰšžŠ" 
+c store(&20) "8.0.355.0" 
+store(&BITMAP) 'sil_tepehuan.ico'
+
+begin Unicode > use(group1)
+
+group(group1) using keys
+  "!"  + "!" > "¡"  c line(0)
+  "%"  + "%" > "‰"  c line(0)
+   + "'" > "Ꞌ"  c line(0)
+  any(store9) "-"  + "-" > index(store10, 1) "-"  c line(0)
+  any(store9)  + "-" > index(store10, 1)  c line(0)
+  any(store10)  + "-" > index(store9, 1) "-"  c line(0)
+  "-"  + "-" > "–"  c line(0)
+  "–"  + "-" > "—"  c line(0)
+  "—"  + "-" > "----"  c line(0)
+  ".."  + "." > "…"  c line(0)
+  "…"  + "." > "...."  c line(0)
+  "?"  + "/" > "ʔ"  c line(0)
+  "1/"  + "2" > "½"  c line(0)
+  "1/"  + "4" > "¼"  c line(0)
+  "‹"  + "<" > "«"  c line(0)
+  "Ꞌ"  + "<" > "‘"  c line(0)
+  '"'  + "<" > "“"  c line(0)
+   + "<" > "‹"  c line(0)
+  "="  + "=" > "­"  c line(0)
+  "­"  + "=" > "—"  c line(0)
+  "—"  + "=" > "===="  c line(0)
+  "ɇ"  + "=" > "w"  c line(0)
+  "Ɇ"  + "=" > "W"  c line(0)
+  "ɨ"  + "=" > "["  c line(0)
+  "Ɨ"  + "=" > "{"  c line(0)
+  "ñ"  + "=" > "]"  c line(0)
+  "Ñ"  + "=" > "}"  c line(0)
+  "Ꞌ"  + "=" > "'"  c line(0)
+  "-"  + "=" > "-"  c line(0)
+  "›"  + ">" > "»"  c line(0)
+  "Ꞌ"  + ">" > "’"  c line(0)
+  '"'  + ">" > "”"  c line(0)
+   + ">" > "›"  c line(0)
+  "?"  + "?" > "¿"  c line(0)
+  any(store13)  + "@" > index(store14, 1)  c line(0)
+  "///"  + "A" > "/Á"  c line(0)
+  ":::"  + "A" > '"' "Ä"  c line(0)
+  "//"  + "A" > "/A"  c line(0)
+  "::"  + "A" > '"' "A"  c line(0)
+  "/"  + "A" > "Á"  c line(0)
+  ":"  + "A" > "Ä"  c line(0)
+  "///"  + "E" > "/É"  c line(0)
+  ":::"  + "E" > '"' "Ë"  c line(0)
+  "//"  + "E" > "/E"  c line(0)
+  "::"  + "E" > '"' "E"  c line(0)
+  "/"  + "E" > "É"  c line(0)
+  ":"  + "E" > "Ë"  c line(0)
+  "///"  + "I" > "/Í"  c line(0)
+  ":::"  + "I" > '"' "Ï"  c line(0)
+  "//"  + "I" > "/I"  c line(0)
+  "::"  + "I" > '"' "I"  c line(0)
+  "/"  + "I" > "Í"  c line(0)
+  ":"  + "I" > "Ï"  c line(0)
+  "///"  + "O" > "/Ó"  c line(0)
+  ":::"  + "O" > '"' "Ö"  c line(0)
+  "//"  + "O" > "/O"  c line(0)
+  "::"  + "O" > '"' "O"  c line(0)
+  "/"  + "O" > "Ó"  c line(0)
+  ":"  + "O" > "Ö"  c line(0)
+  "///"  + "U" > "/Ú"  c line(0)
+  ":::"  + "U" > '"' "Ü"  c line(0)
+  "//"  + "U" > "/U"  c line(0)
+  "::"  + "U" > '"' "U"  c line(0)
+  "/"  + "U" > "Ú"  c line(0)
+  ":"  + "U" > "Ü"  c line(0)
+   + "W" > "Ɇ"  c line(0)
+   + "[" > "ɨ"  c line(0)
+   + "]" > "ñ"  c line(0)
+  any(store17) "^"  + "^" > index(store18, 1) "^"  c line(0)
+  any(store17)  + "^" > index(store18, 1)  c line(0)
+  any(store18)  + "^" > index(store17, 1) "^"  c line(0)
+  "‹"  + "`" > "<"  c line(0)
+  "›"  + "`" > ">"  c line(0)
+  "«"  + "`" > "<<"  c line(0)
+  "»"  + "`" > ">>"  c line(0)
+  "‘"  + "`" > "'"  c line(0)
+  "’"  + "`" > "'"  c line(0)
+  "“"  + "`" > '"'  c line(0)
+  "”"  + "`" > '"'  c line(0)
+  "///"  + "a" > "/á"  c line(0)
+  ":::"  + "a" > '"' "ä"  c line(0)
+  "//"  + "a" > "/a"  c line(0)
+  "::"  + "a" > '"' "a"  c line(0)
+  "/"  + "a" > "á"  c line(0)
+  ":"  + "a" > "ä"  c line(0)
+  "///"  + "e" > "/é"  c line(0)
+  ":::"  + "e" > '"' "ë"  c line(0)
+  "//"  + "e" > "/e"  c line(0)
+  "::"  + "e" > '"' "e"  c line(0)
+  "/"  + "e" > "é"  c line(0)
+  ":"  + "e" > "ë"  c line(0)
+  "///"  + "i" > "/í"  c line(0)
+  ":::"  + "i" > '"' "ï"  c line(0)
+  "//"  + "i" > "/i"  c line(0)
+  "::"  + "i" > '"' "i"  c line(0)
+  "/"  + "i" > "í"  c line(0)
+  ":"  + "i" > "ï"  c line(0)
+  "///"  + "o" > "/ó"  c line(0)
+  ":::"  + "o" > '"' "ö"  c line(0)
+  "//"  + "o" > "/o"  c line(0)
+  "::"  + "o" > '"' "o"  c line(0)
+  "/"  + "o" > "ó"  c line(0)
+  ":"  + "o" > "ö"  c line(0)
+  "///"  + "u" > "/ú"  c line(0)
+  ":::"  + "u" > '"' "ü"  c line(0)
+  "//"  + "u" > "/u"  c line(0)
+  "::"  + "u" > '"' "u"  c line(0)
+  "/"  + "u" > "ú"  c line(0)
+  ":"  + "u" > "ü"  c line(0)
+   + "w" > "ɇ"  c line(0)
+   + "{" > "Ɨ"  c line(0)
+  any(store15) "|"  + "|" > index(store16, 1) "|"  c line(0)
+  any(store15)  + "|" > index(store16, 1)  c line(0)
+  any(store16)  + "|" > index(store15, 1) "|"  c line(0)
+  "+"  + "|" > "†"  c line(0)
+   + "}" > "Ñ"  c line(0)
+  "r̃"  + "~" > "r~"  c line(0)
+  "e~"  + "~" > "ə~"  c line(0)
+  "r~"  + "~" > "r̃~"  c line(0)
+  "e"  + "~" > "ə"  c line(0)
+  "r"  + "~" > "r̃"  c line(0)
+  "ə"  + "~" > "e~"  c line(0)
+
+c EOF
+
