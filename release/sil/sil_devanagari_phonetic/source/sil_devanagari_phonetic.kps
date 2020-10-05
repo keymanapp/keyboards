@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.112.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,8 @@
   </StartMenu>
   <Info>
     <Name URL="">Devanagari Phonetic (SIL)</Name>
-    <Copyright URL="">2002-2018 SIL International</Copyright>
+    <Copyright URL="">2002-2020 SIL International</Copyright>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -68,14 +69,23 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_devanagari_phonetic.js</Name>
+      <Description>File sil_devanagari_phonetic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Devanagari Phonetic (SIL)</Name>
       <ID>sil_devanagari_phonetic</ID>
+      <Version>1.4</Version>
       <Languages>
         <Language ID="hi">Hindi</Language>
         <Language ID="mai">Maithili</Language>
+        <Language ID="lif-Deva">Limbu (Devanagari)</Language>
+        <Language ID="cdm-Deva">Chepang (Devanagari)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
