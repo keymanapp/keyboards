@@ -2,7 +2,7 @@
   $pagename = 'Devanagari Phonetic (SIL)  Keyboard Help';
   $pagetitle = 'Devanagari Phonetic (SIL)  Keyboard Help';
   $pagestyle = <<<END
-    samp {font-family: Annapurna; font-size:20pt;   }
+    samp {font-family: Annapurna SIL; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
     .inputSequences {border-collapse: collapse;font-size: 14px;min-width: 592px;}
     .inputSequences th, .inputSequences td {padding: 7px 17px;}
