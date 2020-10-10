@@ -8,7 +8,7 @@ Version 1.1
 Description
 -----------
 
-This keyboard is designed for the Experanto language. Type an x after cghjsu to accent them.
+This keyboard is designed for the Esperanto language. Type an x after cghjsu to accent them.
 
 Links
 -----
