@@ -67,7 +67,7 @@ END;
 
 <p style="text-align: justify;">
 This is a Gurage (sgw-ET) language mnemonic input method that is compatible with the 2018 provisional orthography. 
-It requires the specially prepared &ldquo;Zebidar&rdquo; font that is included with this package.
+It requires the specially prepared &ldquo;Gurage Zebidar&rdquo; font that is included with this package.
 The Gurage keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
