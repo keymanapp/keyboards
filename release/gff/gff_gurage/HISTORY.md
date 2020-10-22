@@ -1,11 +1,7 @@
 # ጉራጌ (Gurage) Change History
 
 ## 2020-07-12 0.6.12 (0.7 Beta 4)
-<<<<<<< HEAD
-* Font migration from Zebidar to ዘቢዳር
-=======
 * Including fonts from https://github.com/raeytype/gurage-font-collection
->>>>>>> master
 
 ## 2020-07-12 0.6.11 (0.7 Beta 3)
 * Added <KA'IB> + T_HAMIS > <ZEMEDE:HAMIS>
