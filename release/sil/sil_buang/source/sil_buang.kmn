@@ -1,0 +1,34 @@
+﻿c sil_buang generated from template at 2020-09-25 13:29:45
+c with name "Buang (SIL)"
+store(&VERSION) '10.0'
+store(&NAME) 'Buang (SIL)'
+store(&COPYRIGHT) '© 2008-2020 SIL International'
+store(&KEYBOARDVERSION) '1.2'
+store(&TARGETS) 'windows macosx linux'
+store(&mnemoniclayout) '1'
+store(&BITMAP) 'sil_buang.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+'o' + '"' > U+00f6 c o with diaeresis
+'O' + '"' > U+00d6 c O with diaeresis
+'e' + '"' > U+00eb c e with diaeresis
+'E' + '"' > U+00cb c E with diaeresis
+'k' + '"' > U+1e33 c k with dot under
+'K' + '"' > U+1e32 c K with dot under
+'g' + '"' > U+0121 c g with dot over
+'G' + '"' > U+0120 c G with dot over
+c '"' + '"' > U+0022 c double quote - v1.01 disabled, this rule has no impact on above lines and seems unnecessary
+            
+      
+c v 1.01 - add o^
+
+'o' + '^' > 'ô'
+'O' + '^' > 'Ô'
+'e' + '^' > 'ê'
+'E' + '^' > 'Ê'
+
+c End of keyboard
+
