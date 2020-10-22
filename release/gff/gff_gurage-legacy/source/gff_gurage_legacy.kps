@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.109.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.113.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -48,7 +48,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Legacy Gurage Keyboard</Name>
-    <Copyright URL="">© 2019-2020 Ge’ez Frontier Foundation</Copyright>
+    <Copyright URL="">© 2008-2020 Ge’ez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge’ez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
@@ -102,19 +102,29 @@
       <FileType>.pdf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
+      <Name>AbyssinicaSILGurageFider-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Gurage Fider</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>Gurage-Fider-1966.ttf</Name>
+      <Description>Font Gurage Fider 1966</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>Gurage-Fider-1977.ttf</Name>
+      <Description>Font Gurage Fider 1982</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>ጉራጌ (Gurage)</Name>
+      <Name>ጉራጌ (Gurage) Legacy</Name>
       <ID>gff_gurage_legacy</ID>
-      <Version>0.6.11</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <Version>0.1</Version>
       <Languages/>
     </Keyboard>
   </Keyboards>
