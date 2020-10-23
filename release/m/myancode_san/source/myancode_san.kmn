@@ -47,22 +47,22 @@ c when capslock is on,produce  number digit. otherwise english digit
 + [K_1] > '၁'
 + [SHIFT K_1] > 'ဍ'
 + [RALT K_1] > U+0021
-+ [SHIFT RALT K_1] > U+0021
++ [SHIFT RALT K_1] > U+0031
 
 + [K_2] > '၂'
 + [SHIFT K_2] > 'ဏ္ဍ'
 + [RALT K_2] > U+0040
-+ [SHIFT RALT K_2] > U+0040
++ [SHIFT RALT K_2] > U+0032
 
 + [K_3] > '၃'
 + [SHIFT K_3] > 'ဋ'
 + [RALT K_3] > U+0023
-+ [SHIFT RALT K_3] > U+0023
++ [SHIFT RALT K_3] > U+0033
 
 + [K_4] > '၄'
 + [SHIFT K_4] > '၎'
 + [RALT K_4] > U+0024
-+ [SHIFT RALT K_4] > U+0024
++ [SHIFT RALT K_4] > U+0034
 
 + [K_5] > '၅'
 + [SHIFT K_5] > U+0025
@@ -267,13 +267,6 @@ U+1031 any(medial) > context(2) context(1)
 
 c ​ေ U+1031 attached to double consonant
 any(consonants) U+1031 $virama any(consonants) > context(1) context(3) context(4) context(2)
-
-
-c reordering kinzi ( i prefer to type kinzi after consonant )
-any(consonants) U+200b  outs(kinzi) >  outs(kinzi) context(1)
-any(consonants) U+1031 U+200b  outs(kinzi) >  outs(kinzi) context(1) context(2)
-any(consonants) any(medial) U+200b outs(kinzi)  > outs(kinzi) context(1) context(2)
-any(consonants) any(medial) U+1031 U+200b outs(kinzi)  > outs(kinzi) context(1) context(2) context(3)
 
 c  double tap kinzi
 any(consonants) U+103a U+103a >  outs(kinzi) context(1)
