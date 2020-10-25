@@ -16,7 +16,7 @@ the Unicode 4.1 standard published in 2005. The following fonts are packaged wit
 keyboard representing different stages of the evolution of the orthography.  All fonts
 have been derived from [Abyssinica SIL](https://software.sil.org/abyssinica/).
 
-* Gurage Fider 1996 - the initial orthography devised by Dr. Wolf Leslau and Sahle Selassie
+* Gurage Fider 1966 - the initial orthography devised by Dr. Wolf Leslau and Sahle Selassie
                       Berhane Mariam in 1962 and published in 1966 in the seminal work:
                       *Ethiopians Speak: Studies In Cultural Background. Volume 2. Chaha.*
 

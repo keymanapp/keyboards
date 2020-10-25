@@ -66,12 +66,39 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Gurage (sgw-ET) language mnemonic input method that is compatible with the 2018 provisional orthography. 
-It requires the specially prepared &ldquo;Zebidar&rdquo; font that is included with this package.
-The Gurage keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
+This is a Gurage (ጉራጌ , ISO-639-2 swg) language mnemonic input method.  It requires a font
+supporting Ethiopic script under the Unicode 4.1 standard. This keyboard is the immediate
+successor to the GFF Sebatbeit keyboard (gff-sgw-7.kmn version 7.0).
+</p>
+
+<p style="text-align: justify;">
+This Gurage keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
+
+<p style="text-align: justify;">
+The keyboard is given the name "Legacy" because it is designed to work withthe Gurage orthography introduced in the 1966 publication
+<em>Ethiopians Speak: Studies in Cultural Background, Volume 2. Chaha</em>
+and successor orthographies through the formal adoption by the Unicode 4.1 standard published in 2005. The following fonts are packaged with the
+keyboard representing different stages of the evolution of the orthography.  All fonts
+have been derived from <a href="https://software.sil.org/abyssinica/">Abyssinica SIL</a>.
+</p>
+
+<dl>
+  <dt><strong>Gurage Fider 1966</strong></dt>
+  <dd>The initial orthography devised by Dr. Wolf Leslau and Sahle Selassie Berhane Mariam in 1962 and published in 1966 in the seminal work:
+     <em>Ethiopians Speak: Studies In Cultural Background. Volume 2. Chaha.</em>
+  </dd>
+
+  <dt><strong>Gurage Fider 1977</strong></dt>
+  <dd>An orthography developed independently between 1974-1977 by Carolyn Ford and Degefe Gebre Mariam and first used in publishing a selection of the Gospel of Matthew on January 7, 1977 and later used to publish the Gurage New Testament (ገደር ጕርዳ በጕራጊና) in 1983.
+  </dd>
+
+  <dt><strong>Gurage Fider 1998</strong></dt>
+  <dd>The successor to the 1977 orthography developed to publish the Gurage Bible and becoming the reference glyphs under Unicode 4.1.  The glpyhs have been in use from 1998 until a new orthography was introduced in 2013. The glpyhs may also be generated from the <a href="https://scripts.sil.org/ttw/fonts3go.cgi">TypeTuner website</a> with the language selection "Sebat Bet Gurage".
+  </dd>
+</dl>
 
 <p>A more complete typing manual is provided as a PDF file with this distribution.</p>
 
@@ -100,7 +127,7 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>Key</th><th>+[eE]</th><th>+[uU]</th><th>+[iI]</th><th>+[aA]</th><th>+[iI][eE]</th><th>&nbsp;</th><th>+[oO]</th><th>+[uU][eE]</th><th>+[uU][iI]</th><th>+[uU][aA]</th><th>+[uU][iI][eE]</th><th>+[uU][uU]</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
   </tr>
   <tr>
-    <th>[hH]</th><td>ሐ</td><td>ሑ</td><td>ሒ</td><td>ሓ</td><td>ሔ</td><td>ሕ</td><td>ሖ</td><td></td><td></td><td>ሗ</td><td></td><td></td><th>h</th>
+    <th>[hH]</th><td>ኸ</td><td>ኹ</td><td>ኺ</td><td>ኻ</td><td>ኼ</td><td>ኽ</td><td>ኾ</td><td>ዀ</td><td>ዂ</td><td>ዃ</td><td>ዄ</td><td>ዅ</td><th>h</th>
   <tr>
     <th>[hH][yY]</th><td>ⷐ</td><td>ⷑ</td><td>ⷒ</td><td>ⷓ</td><td>ⷔ</td><td>ⷕ</td><td>ⷖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>hʸ</th>
   </tr>
@@ -123,7 +150,7 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[qQ]</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>ቊ</td><td>ቋ</td><td>ቌ</td><td>ቍ</td><th>kʼ</th>
   </tr>
   <tr>
-    <th>[qQ][yY]</th><td>ቐ</td><td>ቑ</td><td>ቒ</td><td>ቓ</td><td>ቔ</td><td>ቕ</td><td>ቖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>k'ʸ</th>
+    <th>[qQ][yY]</th><td>ⷀ</td><td>ⷁ</td><td>ⷂ</td><td>ⷃ</td><td>ⷄ</td><td>ⷅ</td><td>ⷆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>k'ʸ</th>
   </tr>
   <tr>
     <th>[bBvV]</th><td>በ</td><td>ቡ</td><td>ቢ</td><td>ባ</td><td>ቤ</td><td>ብ</td><td>ቦ</td><td>ᎄ</td><td>ᎅ</td><td>ቧ</td><td>ᎆ</td><td>ᎇ</td><th>b</th>
@@ -147,7 +174,7 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[kK]</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>ኲ</td><td>ኳ</td><td>ኴ</td><td>ኵ</td><th>k</th>
   </tr>
   <tr>
-    <th>[kK][yY]</th><td>ኸ</td><td>ኹ</td><td>ኺ</td><td>ኻ</td><td>ኼ</td><td>ኽ</td><td>ኾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>kʸ</th>
+    <th>[kK][yY]</th><td>ⷐ</td><td>ⷑ</td><td>ⷒ</td><td>ⷓ</td><td>ⷔ</td><td>ⷕ</td><td>ⷖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>kʸ</th>
   </tr>
   <tr>
     <th>[wW]</th><td>ወ</td><td>ዉ</td><td>ዊ</td><td>ዋ</td><td>ዌ</td><td>ው</td><td>ዎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>w</th>
@@ -174,7 +201,7 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[gG]</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>ጒ</td><td>ጓ</td><td>ጔ</td><td>ጕ</td><th>g</th>
   </tr>
   <tr>
-    <th>[gG][yY]</th><td>ጘ</td><td>ጙ</td><td>ጚ</td><td>ጛ</td><td>ጜ</td><td>ጝ</td><td>ጞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>gʸ</th>
+    <th>[gG][yY]</th><td>ⷘ</td><td>ⷙ</td><td>ⷚ</td><td>ⷛ</td><td>ⷜ</td><td>ⷝ</td><td>ⷞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>gʸ</th>
   </tr>
   <tr>
     <th>T</th><td>ጠ</td><td>ጡ</td><td>ጢ</td><td>ጣ</td><td>ጤ</td><td>ጥ</td><td>ጦ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>tʼ</th>
