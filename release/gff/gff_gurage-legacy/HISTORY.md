@@ -1,4 +1,4 @@
-# ጉራጌ (Gurage) Legacy Change History
+# ጉራጊና (Gurage) Legacy Change History
 
 
 ## 2020-10-24 0.1

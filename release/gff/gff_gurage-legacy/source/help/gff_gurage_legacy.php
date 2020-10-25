@@ -66,7 +66,7 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Gurage (ጉራጌ , ISO-639-2 swg) language mnemonic input method.  It requires a font
+This is a Gurage (ጉራጊና, ISO-639-2 swg) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard. This keyboard is the immediate
 successor to the GFF Sebatbeit keyboard (gff-sgw-7.kmn version 7.0).
 </p>
