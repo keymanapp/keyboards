@@ -1,4 +1,4 @@
-# ጉራጌ (Gurage) Change History
+# ጉራጊና (Gurage) Change History
 
 ## 2020-07-12 0.6.12 (0.7 Beta 4)
 * Including fonts from https://github.com/raeytype/gurage-font-collection
