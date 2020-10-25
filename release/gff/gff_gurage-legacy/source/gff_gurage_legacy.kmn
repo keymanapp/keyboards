@@ -57,7 +57,7 @@ c ---------------------End Maps of Sebatbeit Forms------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(loneVowelKeys)   'aAuUiIeEoO'[T_HAMIS]
-  store(loneVowelEthio)  'አዓኡዑኢዒእዕኦዖኤ'
+  store(loneVowelEthio)  'ኣዓኡዑኢዒኧዕኦዖኤ'
   store(composableVowel) 'ኢእዒዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
@@ -119,6 +119,7 @@ c
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
+  'ኧ' + any(ግዕዝ-key) > 'እ'
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
