@@ -1,4 +1,4 @@
-ጉራጌ (Gurage) Legacy Keyboard
+ጉራጊና (Gurage) Legacy Keyboard
 ============================
 
 Copyright (C) 2008-2020 Ge'ez Frontier Foundation
