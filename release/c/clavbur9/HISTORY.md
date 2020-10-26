@@ -1,6 +1,10 @@
 Clavier du Burkina Change History
 =======================
 
+9.1.1 24-Mar-2020
+-----------------
+* Added Kaansa language to list of languages supported
+
 9.1 24-Mar-2020
 -----------------
 * Added pug language code
