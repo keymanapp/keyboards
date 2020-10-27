@@ -56,6 +56,9 @@ table.zaima td, table.zaima th { border: thin solid #666; text-align: center }
 table.zaima th { text-align: center; background-color: #d7d0b9 }
 table.zaima { border-bottom: hidden }
 table.zaima { empty-cells: show }
+
+dt { font-weight: bold; text-decoration: underline; }
+dd { margin: 0.5em; padding: 0 0 0.5em 0; }
 END;
   require_once('header.php');
 
@@ -66,12 +69,50 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Gurage (sgw-ET) language mnemonic input method that is compatible with the 2018 provisional orthography. 
+This is a Gurage ((ጉራጊና, ISO-639-2 sgw-ET) language mnemonic input method that is compatible with the 2018 provisional orthography. 
 It requires the specially prepared &ldquo;Gurage Zebidar&rdquo; font that is included with this package.
 The Gurage keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
+
+<p style="text-align: justify;">
+The following fonts are packaged with the keyboard and have all been derived from pre-existing fonts available under the
+SIL <a href="http://scripts.sil.org/OFL">Open Font License</a> (OFL):
+</p>
+
+<dl>
+  <dt><strong>Gurage Ethiopia Jiret</strong></dt>
+  <dd>The Gurage Ethiopic Fantuwua font is derived from the Ethiopic Fantuwua font
+  from the <a href="https://senamirmir.org/projects/typography/washra.html">WashRa 4.1</a> collection.
+  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageEthiopiaJiret.txt">FONTLOG</a>) for details.
+  </dd>
+
+  <dt><strong>Gurage Ethiopic Fantuwua</strong></dt>
+  <dd>The Gurage Ethiopic Fantuwua font is derived from the Ethiopic Fantuwua font
+  from the <a href="https://senamirmir.org/projects/typography/washra.html">WashRa 4.1</a> collection.
+  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageEthiopicFantuwua.txt">FONTLOG</a>) for details.
+  </dd>
+
+  <dt><strong>Gurage Noto Sans Ethiopic</strong></dt>
+  <dd>The Gurage Noto Sans Ethiopic font is derived from the
+  <a href="https://github.com/googlefonts/noto-fonts">Noto Serif Ethiopic</a> font.
+  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageNotoSansEthiopic.txt">FONTLOG</a>) for details.
+  </dd>
+
+  <dt><strong>Gurage Noto Serif Ethiopic</strong></dt>
+  <dd>The Gurage Noto Serif Ethiopic font is derived from the
+  <a href="https://github.com/googlefonts/noto-fonts">Noto Serif Ethiopic</a> font.
+  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageNotoSerifEthiopic.txt">FONTLOG</a>) for details.
+  </dd>
+
+  <dt><strong>Gurage Zebidar</strong></dt>
+  <dd>The Gurage Zebidar font had previously been released under the name "Zebidar" and is derived
+  from the <a href="https://software.sil.org/abyssinica/">Abyssinica SIL 2.0</a> typeface.
+  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageZebidar.txt">FONTTLOG</a> for details.
+  </dd>
+</dl>
+
 
 <p>A more complete typing manual is provided as a PDF file with this distribution.</p>
 
