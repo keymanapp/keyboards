@@ -3,7 +3,8 @@
 
 1.5 (26 Oct 2020)
 --------------------
-* Add Doulos font to the package 
+* Add Andika font to the package 
+* Update numeric layer 
 
 1.4.1 (18 Jun 2018)
 -------------------
