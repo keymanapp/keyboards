@@ -1,6 +1,6 @@
 {
   "phone": {
-    "font": "Charis SIL",
+    "font": "Andika",
     "layer": [
       {
         "id": "default",
@@ -543,9 +543,15 @@
             "id": 3,
             "key": [
               {
+                "id": "K_SHIFT",
+                "text": "*Shift*",
+                "sp": "1",
+                "nextlayer": "shift"
+              },
+              {
                 "id": "K_LBRKT",
                 "text": "[",
-                "pad": "110",
+                "pad": "",
                 "sk": [
                   {
                     "id": "U_00AB",
@@ -623,10 +629,10 @@
             "id": 4,
             "key": [
               {
-                "id": "K_LOWER",
-                "text": "*abc*",
+                "id": "K_NUMLOCK",
+                "text": "*123*",
                 "width": "150",
-                "sp": "1",
+                "sp": "2",
                 "nextlayer": "default"
               },
               {
@@ -651,6 +657,8 @@
           }
         ]
       }
-    ]
+    ],
+    "fontsize": "",
+    "displayUnderlying": false
   }
 }
