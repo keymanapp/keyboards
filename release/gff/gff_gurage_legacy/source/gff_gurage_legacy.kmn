@@ -1,11 +1,10 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c The Ge'ez Frontier Foundation's mnemonic input method for the experimental Gurage orthography
-c devised by Dr. Fekede Menuta.  The keyboard is intended for use with the "Zebidar" font which
-c in turn is deived from Abyssinica SIL with glyph modifications and private use additions.
+c The Ge'ez Frontier Foundation's mnemonic input method for Gurage script on US-QWERTY
+c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_gurage/0.6/gff_gurage.php
+c Documentation :  https://help.keyman.com/keyboard/gff_gurage-legacy/0.1/gff_gurage_legacy.php
 c Source        :  https://github.com/keymanapp/keyboards/gff_gurage
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
@@ -14,16 +13,16 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '10.0'
-store(&KEYBOARDVERSION) '0.7'
-store(&NAME) 'ጉራጌ (Gurage)'
+store(&KEYBOARDVERSION) '0.1'
+store(&NAME) 'ጉራጌ (Gurage) Legacy'
 c store(&ETHNOLOGUECODE) 'sgw'
-store(&COPYRIGHT) '© 2019-2020 Ge’ez Frontier Foundation'
-store(&MESSAGE) 'This is a Gurage language mnemonic input method.  It requires the "Gurage Zebidar" Ethiopic which contains experimental characters.'
+store(&COPYRIGHT) '© 2008-2020 Ge’ez Frontier Foundation'
+  store(&Message) 'This is a Gurage language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
-store(&BITMAP) 'gff_gurage.ico'
-store(&VISUALKEYBOARD) 'gff_gurage.kvks'
-store(&LAYOUTFILE) 'gff_gurage.keyman-touch-layout'
+store(&BITMAP) 'gff_gurage_legacy.ico'
+store(&VISUALKEYBOARD) 'gff_gurage_legacy.kvks'
+store(&LAYOUTFILE) 'gff_gurage_legacy.keyman-touch-layout'
 c 
 c =====================End Identity Section=====================================================
 
@@ -34,31 +33,31 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-store(ግዕዝ) 'ሐⷐለመረሰሸቀቐበተቸነኘአከኸወዐዘዠየደጀገጘጠጨፈፐ'
-store(ካዕብ) 'ሑⷑሉሙሩሱሹቁቑቡቱቹኑኙኡኩኹዉዑዙዡዩዱጁጉጙጡጩፉፑ'
-store(ሣልስ) 'ሒⷒሊሚሪሲሺቂቒቢቲቺኒኚኢኪኺዊዒዚዢዪዲጂጊጚጢጪፊፒ'
-store(ራብዕ) 'ሓⷓላማራሳሻቃቓባታቻናኛኣካኻዋዓዛዣያዳጃጋጛጣጫፋፓ'
-store(ኃምስ) 'ሔⷔሌሜሬሴሼቄቔቤቴቼኔኜኤኬኼዌዔዜዤዬዴጄጌጜጤጬፌፔ'
-store(ሳድስ) 'ሕⷕልምርስሽቅቕብትችንኝእክኽውዕዝዥይድጅግጝጥጭፍፕ'
-store(ሳብዕ) 'ሖⷖሎሞሮሶሾቆቖቦቶቾኖኞኦኮኾዎዖዞዦዮዶጆጎጞጦጮፎፖ'
+store(ግዕዝ) 'ኸⷐለመረሰሸቀⷀበተቸነኘኧከⷈወዐዘዠየደጀገⷘጠጨፈፐ'
+store(ካዕብ) 'ኹⷑሉሙሩሱሹቁⷁቡቱቹኑኙኡኩⷉዉዑዙዡዩዱጁጉⷙጡጩፉፑ'
+store(ሣልስ) 'ኺⷒሊሚሪሲሺቂⷂቢቲቺኒኚኢኪⷊዊዒዚዢዪዲጂጊⷚጢጪፊፒ'
+store(ራብዕ) 'ኻⷓላማራሳሻቃⷃባታቻናኛኣካⷋዋዓዛዣያዳጃጋⷛጣጫፋፓ'
+store(ኃምስ) 'ኼⷔሌሜሬሴሼቄⷄቤቴቼኔኜኤኬⷌዌዔዜዤዬዴጄጌⷜጤጬፌፔ'
+store(ሳድስ) 'ኽⷕልምርስሽቅⷅብትችንኝእክⷍውዕዝዥይድጅግⷝጥጭፍፕ'
+store(ሳብዕ) 'ኾⷖሎሞሮሶሾቆⷆቦቶቾኖኞኦኮⷎዎዖዞዦዮዶጆጎⷞጦጮፎፖ'
 
 store(keys) 'h_lmrsxq_btcnN_k_w_zZydjg_TCfp'
 
 
 c the following is Sebatbeit specific
 store(ሌሎች፡keys) 'HLMRXBVvQKWYDJGSFP'
-store(ሌሎች፡ሳድስ)  'ሕልምርሽብብብቅክውይድጅግስፍፕ'
+store(ሌሎች፡ሳድስ)  'ኽልምርሽብብብቅክውይድጅግስፍፕ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Begin Maps of Sebatbeit Forms-----------------------------------------------
-store(potentialSebatbeit) 'ሕቅክግ'
-store(sebatbeit)  'ⷕቕኽጝ'
+store(potentialSebatbeit) 'ኽቅክግ'
+store(sebatbeit)  'ⷕⷅⷍⷝ'
 store(sebatbeitY) 'yY'
 c ---------------------End Maps of Sebatbeit Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(loneVowelKeys)   'aAuUiIeEoO'[T_HAMIS]
-  store(loneVowelEthio)  'ኣዓኡዑኢዒእዕኦዖኤ'
+  store(loneVowelEthio)  'ኣዓኡዑኢዒኧዕኦዖኤ'
   store(composableVowel) 'ኢእዒዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
@@ -68,12 +67,12 @@ c --------------------Maps for Labiovelars--------------------------------------
   store(ዘመደ፡ራብዕ፡መደበኛ) 'ሟቧጷጿፏፗ'
 
 c 'hmbqkKgfp'
-store(ካዕብ፡ልዩ)  'ሑሙቡቁኩጉፉፑ'
-store(ዘመደ፡ግዕዝ) 'ᎀᎄቈኰጐᎈᎌ'
-store(ዘመደ፡ካዕብ) 'ᎃᎇቍኵጕᎋᎏ'
-store(ዘመደ፡ሣልስ) 'ᎁᎅቊኲጒᎉᎍ'
-store(ዘመደ፡ራብዕ) 'ሗሟቧቋኳጓፏፗ'
-store(ዘመደ፡ኃምስ) 'ᎂᎆቌኴጔᎊᎎ'
+store(ካዕብ፡ልዩ)  'ኹሙቡቁኩጉፉፑ'
+store(ዘመደ፡ግዕዝ) 'ዀᎀᎄቈኰጐᎈᎌ'
+store(ዘመደ፡ካዕብ) 'ዅᎃᎇቍኵጕᎋᎏ'
+store(ዘመደ፡ሣልስ) 'ዂᎁᎅቊኲጒᎉᎍ'
+store(ዘመደ፡ራብዕ) 'ዃሟቧቋኳጓፏፗ'
+store(ዘመደ፡ኃምስ) 'ዄᎂᎆቌኴጔᎊᎎ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -120,6 +119,7 @@ c
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
+  'ኧ' + any(ግዕዝ-key) > 'እ'
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
