@@ -12,7 +12,7 @@
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder>Zebidar Gurage Keyboard</Folder>
+    <Folder>Legacy Gurage Keyboard</Folder>
     <AddUninstallEntry/>
     <Items>
       <Item>
@@ -31,21 +31,14 @@
       </Item>
       <Item>
         <Name>የጉራጊና ኪቦርድ መርጀ</Name>
-        <FileName>GurageTyping-Gurage.pdf</FileName>
+        <FileName>GurageTyping-Legacy-Gurage.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
         <Name>Gurage Keyboard Manual (English)</Name>
-        <FileName>GurageTyping-English.pdf</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>OFL (Zebidar Font License)</Name>
-        <FileName>OFL.txt</FileName>
+        <FileName>GurageTyping-Legacy-English.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -54,8 +47,8 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">GFF Gurage Keyboard</Name>
-    <Copyright URL="">© 2019-2020 Ge’ez Frontier Foundation</Copyright>
+    <Name URL="">GFF Legacy Gurage Keyboard</Name>
+    <Copyright URL="">© 2008-2020 Ge’ez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge’ez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
@@ -67,26 +60,26 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\gff_gurage.kvk</Name>
-      <Description>File gff_gurage.kvk</Description>
+      <Name>..\build\gff_gurage_legacy.kvk</Name>
+      <Description>File gff_gurage_legacy.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\build\gff_gurage.kmx</Name>
-      <Description>Keyboard Ge'ez</Description>
+      <Name>..\build\gff_gurage_legacy.kmx</Name>
+      <Description>Keyboard Gurage</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\gff_gurage.js</Name>
-      <Description>File gff_gurage.js</Description>
+      <Name>..\build\gff_gurage_legacy.js</Name>
+      <Description>File gff_gurage_legacy.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>GurageTyping-English.pdf</Name>
-      <Description>File GurageTyping-English.pdf</Description>
+      <Name>GurageTyping-Legacy-English.pdf</Name>
+      <Description>File GurageTyping-Legacy-English.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
     </File>
@@ -103,51 +96,39 @@
       <FileType>.bmp</FileType>
     </File>
     <File>
-      <Name>GurageTyping-Gurage.pdf</Name>
-      <Description>File GurageTyping-Gurage.pdf</Description>
+      <Name>Gurage-Fider-1966.ttf</Name>
+      <Description>Font Gurage Fider 1966</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>Gurage-Fider-1977.ttf</Name>
+      <Description>Font Gurage Fider 1982</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>Gurage-Fider-1998.ttf</Name>
+      <Description>Font Gurage Fider 1998</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>GurageTyping-Legacy-Gurage.pdf</Name>
+      <Description>File GurageTyping-Legacy-Gurage.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>GurageEthiopiaJiret-Regular.ttf</Name>
-      <Description>Font Gurage Ethiopia Jiret Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>GurageZebidar-Regular.ttf</Name>
-      <Description>Font Gurage Zebidar Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>GurageNotoSerifEthiopic-Regular.ttf</Name>
-      <Description>Font Gurage Noto Serif Ethiopic Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>GurageEthiopicFantuwua-Regular.ttf</Name>
-      <Description>Font Gurage Ethiopic Fantuwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>GurageNotoSansEthiopic-Regular.ttf</Name>
-      <Description>Font Gurage Noto Sans Ethiopic Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>ጉራጌ (Gurage)</Name>
-      <ID>gff_gurage</ID>
-      <Version>0.7</Version>
-      <OSKFont>GurageZebidar-Regular.ttf</OSKFont>
-      <DisplayFont>GurageZebidar-Regular.ttf</DisplayFont>
+      <Name>ጉራጌ (Gurage) Legacy</Name>
+      <ID>gff_gurage_legacy</ID>
+      <Version>0.1</Version>
+      <OSKFont>Gurage-Fider-1998.ttf</OSKFont>
+      <DisplayFont>Gurage-Fider-1998.ttf</DisplayFont>
       <Languages>
-        <Language ID="sgw-Ethi">Sebat Bet Gurage</Language>
+        <Language ID="sgw-Ethi">Sebat Bet Gurage (Ethiopic)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
