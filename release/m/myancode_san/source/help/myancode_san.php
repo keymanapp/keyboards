@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'myWin Extended (SIL)';
-  $pagetitle = 'myWin Extended (SIL)';
+  $pagename = 'MyanCode-San';
+  $pagetitle = 'MyanCode-San';
   require_once('header.php');
 ?>
 
