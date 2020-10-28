@@ -1,4 +1,4 @@
-Yorùbá with Bar Change History
+YorÃ¹bÃ¡ with Bar Change History
 ====================
 
 1.2.1 (2020-10-27)
