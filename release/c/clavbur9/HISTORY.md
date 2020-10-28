@@ -1,7 +1,7 @@
 Clavier du Burkina Change History
 =======================
 
-9.1.1 24-Mar-2020
+9.1.1 28-Oct-2020
 -----------------
 * Added Kaansa language to list of languages supported
 
