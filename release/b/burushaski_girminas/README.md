@@ -2,7 +2,7 @@
 ==============
 
 © 2020 Quwat K. Sunny
-Version 1.0.3
+Version 1.0.4
 
 Description
 -----------

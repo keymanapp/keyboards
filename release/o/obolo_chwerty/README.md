@@ -3,7 +3,7 @@ Obolo keyboard
 
 © 2019-2020 Rogers Katelem Edeh
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------
