@@ -1,9 +1,9 @@
 Malar Braille Keyboard
 ==============
 
-Copyright (c) 2019 Ramesh Kunnappully
+Copyright (c) 2019-2020 Ramesh Kunnappully
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------

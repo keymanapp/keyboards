@@ -1,9 +1,9 @@
 ﻿Bangla Joy Keyboard
 ===============================
 
-Copyright (C) 2007-2019 Arun Sarkar
+Copyright (C) 2007-2020 Arun Sarkar
 
-Version 1.1
+Version 1.1.1
 
 __DESCRIPTION__
 This keyboard is designed for use with the Bengali language of Bangladesh, 

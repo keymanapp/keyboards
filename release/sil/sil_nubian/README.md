@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           Nubian (SIL)
 * Copyright:      (C) 2008-2020 SIL International
-* Version:        1.2.3
+* Version:        1.2.4
 * Keyman Version: 9.0
 * BCP-47 codes:   dgl-Copt, fia-Copt, xnz-Copt
 
