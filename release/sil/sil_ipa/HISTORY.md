@@ -1,6 +1,10 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+1.8.4 (27 Oct 2020)
+-------------------
+* Increment version number to force recompile of touch layout.
+
 1.8.3 (15 Sept 2020)
 -------------------
 * Updated documentation to remove underlined links
