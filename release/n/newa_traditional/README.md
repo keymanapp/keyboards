@@ -1,9 +1,9 @@
 Newa Traditional keyboard
 ==============
 
-(cc) Santosh Pradhan
+(c) 2000 Santosh Pradhan
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------
