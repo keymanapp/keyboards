@@ -1,7 +1,7 @@
 Bashkir Basic Change History
 ====================
 
-1.1 (2020-10-28)
+1.1.1 (2020-10-28)
 ----------------
 * Increment version number to force recompile of touch layout.
 
