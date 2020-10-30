@@ -1,7 +1,7 @@
 MyanCode-San keyboard
 ==============
 
-© SIL 2020 International
+© 2020 SIL International
 
 Version 1.0
 
@@ -12,6 +12,7 @@ Myanmar Keyboard with sanskrit extenstions
 
 Links
 -----
+https://keyman.com/keyboards/myancode_san
 
 Supported Platforms
 -------------------
