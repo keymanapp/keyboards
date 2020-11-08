@@ -8,7 +8,7 @@ Version 1.0.1
 Description
 -----------
 
-Gilaki based on Persian
+Gilaki based on Gboard and gilakikeyboard.ir
 
 
 Supported Platforms
