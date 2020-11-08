@@ -6,7 +6,7 @@ require_once('header.php');
 ?>
 
 <p>
-Gilaki keyboard based on Persian.
+Gilaki based on Gboard by gilakikeyboard.ir
 </p>
 
 <h1>Keyboard Layout</h1>
