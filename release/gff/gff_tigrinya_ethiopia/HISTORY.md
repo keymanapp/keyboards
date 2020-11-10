@@ -1,6 +1,10 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
 
+1.3.12 (2020-06-10)
+-----------------------
+* Updated htm files for readability on Linux
+
 1.3.11 (2020-05-25)
 -----------------------
 * Refinement of Touch Layout mappings (Beta 3)

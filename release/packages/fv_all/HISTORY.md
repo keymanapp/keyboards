@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 12.3 (16 Jul 2020)
+* Add Aboriginal Serif font to touch layout keyboards
+
 ## 12.2 (29 Apr 2020)
 * Add touch layout keyboards and DejaVuSans.ttf font
 

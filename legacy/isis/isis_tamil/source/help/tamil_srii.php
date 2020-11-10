@@ -1,29 +1,29 @@
 <?php /*
   Name:             sri
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Initial version
 */
   require_once('servervars.php');
   $pagename = 'Tamil Keyboards Help';
   $pagetitle = 'Tamil Keyboards Help';
   $style = '.lang2 {font-size:130%}';
-  $relatedSites = array("http://$site_tavultesoft/tamil" => "Tamil Keyboards Home");
+  $relatedSites = array("$keyman_com/tamil" => "Tamil Keyboards Home");
 
   require_once('header.php');
 ?>
-   	
+
 <div class='KeymanWeb'>
 
 <h2>The SRii Character <img src='tamil_srii.png' style='vertical-align:bottom' /></h2>

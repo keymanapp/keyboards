@@ -1,12 +1,12 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Malar Malayalam'
-store(&COPYRIGHT) '© 2019 Ramesh Kunnappully [MIT License]'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© 2019-2020 Ramesh Kunnappully [MIT License]'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'malar_malayalam.kvks'
 store(&LAYOUTFILE) 'malar_malayalam.keyman-touch-layout'
 store(&BITMAP) 'malar_malayalam.ico'
-store(&MESSAGE) 'Malar Malayalam Keyboard is a transliteration based Malayalam Input Method. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 12.1. Malayalam Unicode fonts under the SIL Open Font License are available at https://smc.org.in/fonts/ and http://rachana.org.in/.'
+store(&MESSAGE) 'Malar Malayalam Keyboard is a transliteration based Malayalam Input Method. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 13.0. Malayalam Unicode fonts under the SIL Open Font License are available at https://smc.org.in/fonts/ and http://rachana.org.in/.'
 
 begin Unicode > use(main)
 
@@ -21,6 +21,13 @@ store(Consonants) U+0D15    U+0D16    U+0D17    U+0D18    U+0D19    \
                   U+0D2F    U+0D30    U+0D32    U+0D35    U+0D36    \
                   U+0D37    U+0D38    U+0D39    U+0D33    U+0D34    \
                   U+0D31    U+0D3A    U+0D29
+
+store(VowelSigns) U+0D3E    U+0D3F    U+0D40     U+0D41    U+0D42   \
+                  U+0D43    U+0D44    U+0D46     U+0D47    U+0D48   \
+                  U+0D4A    U+0D4B    U+0D4C     U+0D57    U+0D02   \
+                  U+0D03    U+0D00    U+0D01	 U+0D62	   U+0D63   \
+                  U+0D3B    U+0D3C
+
 
 group(main) using keys
 
@@ -169,7 +176,8 @@ U+0D32 U+0D42 + [K_BKSLASH] > U+0D61                                c ൡ
 U+0D08 + [SHIFT K_I] > U+0D5F                                       c ൟ
 U+0D0B + [SHIFT K_R] > U+0D60                                       c ൠ
 U+0D60 + [K_BKSLASH] > U+0D44                                       c ൄ
-U+0D05 + [K_BKSLASH] > U+0D3D                                       c ഽ 
+U+0D05 + [K_BKSLASH] > U+0D3D                                       c ഽ
+dk(x) + [SHIFT K_M] > U+0D04                                        c ഄ
 
 
 U+0D4D + [SHIFT K_BKQUOTE] > U+0D3B                                     c ഻
@@ -230,6 +238,7 @@ U+0D4E + [K_BKSLASH] > U+0D7C            c ർ
 U+0D2A U+0D31 + [K_BKSLASH] > U+0D4F     c ൏
 U+0D28 U+0D41 + [K_BKSLASH] > U+0D79     c ൹
 
+
 C Other Keys
 + [K_BKQUOTE] > U+0060
 + [K_1] > '1'
@@ -285,6 +294,22 @@ C Other Keys
 + [K_C] > U+005F dk(c1)
 + [SHIFT K_C] > U+005F dk(c2)
 
++ [K_NP0] > '0'
++ [K_NP1] > '1'
++ [K_NP2] > '2'
++ [K_NP3] > '3'
++ [K_NP4] > '4'
++ [K_NP5] > '5'
++ [K_NP6] > '6'
++ [K_NP7] > '7'
++ [K_NP8] > '8'
++ [K_NP9] > '9'
++ [K_NPSTAR] > U+002A
++ [K_NPPLUS] > U+002B
++ [K_NPMINUS] > U+002D
++ [K_NPDOT] > U+002E
++ [K_NPSLASH] > U+002F
+
 c ZWNJ
 +[SHIFT K_BKSLASH] > U+200C c ZWNJ
 U+200C + [SHIFT K_BKSLASH] > U+200C c ZWNJ
@@ -304,15 +329,27 @@ U+201D + [K_BKSLASH] > U+0022           c "
 C Dash
 U+002D + [K_BKSLASH] > U+2013           c –
 U+2013 + [K_HYPHEN] > context U+2013    c –
+U+2013 + [K_NPMINUS] > context U+2013   c –
 U+2013 + [K_BKSLASH] > U+2014           c —
 U+2014 + [K_HYPHEN] > context U+2014    c —
+U+2014 + [K_NPMINUS] > context U+2014   c —
 U+2014 + [K_BKSLASH] > U+002D           c -
 U+002D + [K_HYPHEN] > context U+002D    c -
+U+002D + [K_NPMINUS] > context U+002D   c -
 
 c Tilde, Backslash, Vertical bar & Dollar symbol
 dk(x) + [SHIFT K_BKQUOTE] > U+007E      c ~
 dk(x) + [K_BKSLASH] > U+005C            c \
 dk(x) + [SHIFT K_BKSLASH] > U+007C      c |
 dk(x) + [SHIFT K_4] > U+0024            c $
+
+c Division & Multiplication symbol
+U+002F + [K_BKSLASH] > U+00F7           c ÷
+U+002A + [K_BKSLASH] > U+00D7           c ×
+
+C Backspace
+any(Consonants) + [K_BKSP] > index(Consonants,1) U+0D4D 
+any(Consonants) any(VowelSigns) + [K_BKSP] > index(Consonants,1) U+0D4D
+any(Consonants) U+0D4D + [K_BKSP] > Nul
 
 C End

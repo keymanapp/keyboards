@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'Guide d'utilisation pour le clavier du Burkina / Clavier du Burkina Keyboard Help';
+  $pagename = "Guide d'utilisation pour le clavier du Burkina / Clavier du Burkina Keyboard Help";
   $pagetitle = $pagename;
   $pagestyle = '
   .clavbur9 {
@@ -34,14 +34,14 @@
           </tr>
           <tr class="ListHeaderColor">
             <td class="ListFooterColor">; a </td>
-            <td class="ListFooterColor">ə</td> 
+            <td class="ListFooterColor">ə</td>
             <td bgcolor="#000000" class="ListFooterColor">&nbsp;</td>
             <td colspan="2" rowspan="4" class="ListFooterColor"><p>NB: Taper les diacritiques <u>après<br />
             </u> les caractères de bases<br />
             et non pas avant.</p>            </td>
           </tr>
-        
-         
+
+
           <tr class="ListFooterColor">
             <td bgcolor="#FFFF00">, a </td>
             <td>ɑ</td>
@@ -169,7 +169,7 @@
 
 <p>À cause de la quantité limitée de touches, certains caractères sont cachés. Garder l&apos;appui sur une touche avec un petit point en haut à droite pour les révéler et les utiliser.</p>
 <p>Because of the limited number of keys, some characters are hidden. Press and hold a key with a small dot in the upper right corner to reveal and use them.</p>
-	
+
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
