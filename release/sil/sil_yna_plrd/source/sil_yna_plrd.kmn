@@ -1,0 +1,114 @@
+﻿c 
+c Sample Keyboard: Gan Yi Unicode
+c 
+c Provided by: Modified from David Morse' legacy keyboard by Erich Fickle
+c              
+c
+c Fonts: 
+c
+
+store(&VERSION) '10.0'
+store(&NAME) 'Gan Yi (SIL)'
+store(&TARGETS) 'windows macosx linux web'
+store(&COPYRIGHT) '© 2014-2020 SIL International'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'sil_yna_plrd.kvks'
+
+begin Unicode > use(Umain)
+
+group (Umain) using keys
+c THIS IS NOT FINISHED
++ 'A' > u+16F79 u+16F54 c CHECK THIS! not /M/ u+16F7A Font work needed
++ 'B' > u+16F67
++ 'C' > u+16F69 u+16F54	c CHECK THIS! font work needed
++ 'D' > u+16F62
++ 'E' > u+16F5F		c CHECK THIS! font work needed
++ 'F' > u+16F74
++ 'G' > u+16F73
++ 'H' > u+16F5C
++ 'I' > u+16F7B
++ 'J' > u+16F67	c CHECK THIS! This is probably a gyph variation of shift-M
++ 'K' > u+16F54
++ 'L' > u+16F76
++ 'M' > u+16F7A
++ 'N' > u+16F5D
++ 'O' > u+16F71 u+16f71	c CHECK THIS! Font work needed
++ 'P' > u+16F78
++ 'Q' > u+16F6B
++ 'R' > u+16F75		c CHECK THIS! Glyph variation
++ 'S' > u+16F79
++ 'T' > u+16F58
++ 'U' > u+16F51
++ 'V' > u+16F5B   c this is likely an alloglyph of 16F58, check it!
+c Check wordlists, it should be missing. Set Comparison does not list it.
++ 'W' > u+16F6E
++ 'X' > u+16F39
++ 'Y' > u+16F68
++ 'Z' > nul        c THIS KEY IS NOT ASSIGNED
++ 'a' > u+16F43
++ 'b' > u+16F00
++ 'c' > u+16F0E
++ 'd' > u+16F0A
++ 'e' > u+16F18
++ 'f' > u+16F07
++ 'g' > u+16F1E
++ 'h' > u+16F26
++ 'i' > u+16F61
++ 'j' > u+16F2F
++ 'k' > u+16F54
++ 'l' > u+16F16
++ 'm' > u+16F04
++ 'n' > u+16F10
++ 'o' > u+16F59
++ 'p' > u+16F02
++ 'q' > u+16F56
++ 'r' > u+16F35
++ 's' > u+16F3A
++ 't' > u+16F0D
++ 'u' > u+16F6A
++ 'v' > u+16F08
++ 'w' > u+16F13
++ 'x' > nul       c THIS KEY IS NOT ASSIGNED
++ 'y' > u+16F3D
++ 'z' > u+16F3B
++ '_' > '_'
++ '-' > '-'
++ '+' > ':'
++ '=' > ';'
++ '{' > U+16F7C
++ '[' > '"'
+c + '}' >       c check this
++ ']' > u+16F90 c duplicate double quote, so Tone key moved here
++ ':' > '='
++ ';' > u+16F5B c  or u+16F5c alloglyph? CHECK THIS
++ '"' > "'"     c single quote, not the aspiration mark
++ '<' > u+16F23
++ ',' > ','
++ '>' > u+16F37
++ '.' > u+3002 c CHINESE STYLE STOP OR PERIOD
++ '?' > '?'   c ALLOGLYPH OF Latin ?, larger, bolder
++ '/' > '/'
++ '1' > '1'
++ '2' > '2'
++ '3' > '3'
++ '4' > '4'
++ '5' > '5'
++ '6' > '6'
++ '7' > '7'
++ '8' > '8'
++ '9' > '9'
++ '0' > '0'
++ '!' > '!'
++ '@' > u+16F71
++ '#' > u+16F7E
++ '$' > u+16F5E
++ '%' > u+16F79
++ '^' > '.'
++ '&' > u+16F50
++ '*' > '*'
++ '(' > '('
++ ')' > ')'
++ '{' > u+16F90 c TONE KEY, guessed from Hei Yi.
++ "'" > u+16F91 c TONE KEY, a guess 
++ '/' > u+16F8F c TONE key from White Yi, a guess
+

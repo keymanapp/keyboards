@@ -1,6 +1,15 @@
 ᓀᐦᐃᔭᐍᐏᐣ Change History
 ============================
 
+10.0.2 (16 Jul 2020)
+--------------------
+* Use AboriginalSerifREGULAR.ttf font for touch layout
+
+10.0.1 (23 Jun 2020)
+--------------------
+* Change: use U+1429 CANADIAN SYLLABICS FINAL PLUS instead of U+1540 CANADIAN SYLLABICS WEST-CREE Y
+    - despite the name, the former is _not_ prefered by West Cree syllabics writers
+
 10.0 (1 Apr 2020)
 ------------------
 * Change: revamped numeric/symbols layer to match `nrc_crk_cans` v1.1.0
