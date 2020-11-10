@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Yidgha Phonetic
-* Copyright:      (C) 2018 Forum for Language Initiatives
-* Version:        1.0.2
+* Copyright:      (C) 2018-2020 Forum for Language Initiatives
+* Version:        1.0.3
 * Keyman Version: 10.0
 * BCP-47 codes:   ydg-Arab
 
@@ -25,11 +25,8 @@ Supported Platforms
 
  * Windows
  * Macosx
+ * Linux
  * Web
  * iOS
  * Android
 
-Todo
-----
-
-* 

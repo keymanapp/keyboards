@@ -1,9 +1,9 @@
 Yupik Cyrillic (SIL) Keyboard
 =====================
 
-Copyright (C) 2006-2018 SIL International
+Copyright (C) 2006-2020 SIL International
 
-Version 2.0.1
+Version 2.0.2
 
 
 __DESCRIPTION__
@@ -15,4 +15,5 @@ Supported Platforms
  * Windows
  * macOS
  * Linux
+ * Web
  
