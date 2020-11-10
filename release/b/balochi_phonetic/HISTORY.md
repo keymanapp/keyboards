@@ -1,6 +1,14 @@
 Balochi Phonetic Change History
 ===============================
-1.3 (20 Aug 2020)
+1.3.2 (27 October 2020)
+----------------
+Increment version number to force recompile of touch layout.
+
+1.3.1 (25 May 2020)
+----------------
+Fixed package to include png keyboard images. Other minor changes.
+
+1.3 (20 Jan 2020)
 ----------------
 Put feh, hah and tatweel on the shift level since they are not used in the
 Balochi alphabet. In their place put fatah, kasreh and shin. Also moved the

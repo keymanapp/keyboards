@@ -1,25 +1,25 @@
 <?php /*
   Name:             keyboard_ekwbamuni
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
   require_once('servervars.php');
   $pagename = 'Suratha Bamuni (Bamini) Keyboard Help';
   $pagetitle = 'Suratha Bamuni Keyboard Help';
   $style = '.lang2 {font-size:130%}';
-  $relatedSites = array("http://$site_tavultesoft/tamil" => "Tamil Keyboards Home");
+  $relatedSites = array("$keyman_com/tamil" => "Tamil Keyboards Home");
   require_once('header.php');
 ?>
 
@@ -44,7 +44,7 @@
 
 
 <div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
+		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
 the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
 
 <h2>Overview</h2>
@@ -80,7 +80,7 @@ For example, the standalone vowel <span class='highlightExample'>இ</span> is e
 </p>
 
 <p>
-Grantha letters, which are used for typing Sanskrit, appear on the keyboard and are treated as normal consonants. 
+Grantha letters, which are used for typing Sanskrit, appear on the keyboard and are treated as normal consonants.
 </p>
 
 </div>
@@ -95,7 +95,7 @@ Grantha letters, which are used for typing Sanskrit, appear on the keyboard and 
 <div id="Documentation">
 <h3>Keyboard Details</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>The full keyboard layout consists of the eighteen consonants <span class='lang2'>க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன</span>, four Grantha consonants <span class='lang2'>ஸ ஷ ஜ ஹ</span> (<span class='lang2'>க்ஷ</span> and <span class='lang2'>ஸ்ரீ</span> are typed with key combinations), eleven vowels <span class='lang2'>அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ</span>, vowel diacritics <span class='lang2'>ி ீ ா ர் பெ பே பை </span>, combinants and components <span class='lang2'>சூ கூ மூ டூ ரூ ஞ று நு சு வு லு ரு ழு யு ளு னு கு பு து மு டு ணு டி டீ</span> and the Pulli <span class='lang2'>்</span> and Aytham <span class='lang2'>ஃ</span> marks, as well as various punctuation marks.  The vowel <span class='lang2'>ஔ</span> is typed using a combination of keystrokes.</p>
 
 <p>Although Tamil characters are typed using separate keys for consonants and diacritics, the characters that appear on screen will be combinants, which the computer sees as a single character.  This means that while two (or more) keystrokes are required to display most consonant-vowel combinants, when you use the arrow keys to move the cursor through the text, only a single keystroke is needed to move past each character.  Moving the cursor to the left of a combinant character and pressing Delete will erase the whole character, but if you move the cursor to the right of a combinant and press Backspace, only the vowel component will be erased.  This is the case whether the vowel component appears to the left or right of, above or below the consonant.
@@ -208,7 +208,7 @@ This character is entered by typing <span class='keys'>];uP</span>.  <span class
 
 </div>
 
- 
+
 <div id="Troubleshooting">
 		<!-- How to resolve common issues/difficulties using the keyboard; including link to Square Boxes help page -->
 
@@ -226,9 +226,9 @@ This character is entered by typing <span class='keys'>];uP</span>.  <span class
     <td>&#x0b95;&#x0bcd;&#x0b95;&#x0bcd;&#x0b95;&#x0bcd;&#x0b95;</td>
   </tr>
   </table>
-  
-<p style='margin-top: 4px'>The easiest ways to deal with this are to move the cursor and press Backspace to delete the unwanted Pulli mark, or else enable the <span style='font-weight:bold'>Text Services Framework Add-In</span> if you are using Keyman Desktop Professional.    
-Disabling <span style='font-style:italic'>Tamil language editing</span> in <span style='font-style:italic'>Microsoft Office Language Settings</span> will also correct the input behaviour, but this is not recommended, as it makes selection of fonts more difficult.</p>   
+
+<p style='margin-top: 4px'>The easiest ways to deal with this are to move the cursor and press Backspace to delete the unwanted Pulli mark, or else enable the <span style='font-weight:bold'>Text Services Framework Add-In</span> if you are using Keyman Desktop Professional.
+Disabling <span style='font-style:italic'>Tamil language editing</span> in <span style='font-style:italic'>Microsoft Office Language Settings</span> will also correct the input behaviour, but this is not recommended, as it makes selection of fonts more difficult.</p>
 </div>
 
 <h4> Fonts</h4>

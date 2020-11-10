@@ -2,7 +2,7 @@ Xinaliq Keyboard
 =====================
 
 Copyright (C) 2019-2020 Kenneth Keyes
-Version 1.1
+Version 1.1.2
 
 __DESCRIPTION__
 Keyboard for Xinaliq (kjj) using the Latin Orthography approved by the Ministry of Education of the Republic of Azerbaijan.

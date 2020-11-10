@@ -1,6 +1,10 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.4.1 (27 October 2020)
+------------------
+* Increment version number to force recompile of touch layout.
+
 1.4 (28 June 2019)
 ------------------
 * Added support back in for small cap I

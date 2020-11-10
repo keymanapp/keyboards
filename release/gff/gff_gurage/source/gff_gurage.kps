@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.64.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.113.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -31,7 +31,7 @@
       </Item>
       <Item>
         <Name>የጉራጊና ኪቦርድ መርጀ</Name>
-        <FileName>GurageTyping-Gurage-ጉራጊና.pdf</FileName>
+        <FileName>GurageTyping-Gurage.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -54,7 +54,7 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Zebidar Gurage Keyboard</Name>
+    <Name URL="">GFF Gurage Keyboard</Name>
     <Copyright URL="">© 2019-2020 Ge’ez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge’ez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
@@ -79,16 +79,16 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
+      <Name>..\build\gff_gurage.js</Name>
+      <Description>File gff_gurage.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
       <Name>GurageTyping-English.pdf</Name>
       <Description>File GurageTyping-English.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>Zebidar-R.ttf</Name>
-      <Description>Font Zebidar Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>OFL.txt</Name>
@@ -103,19 +103,49 @@
       <FileType>.bmp</FileType>
     </File>
     <File>
-      <Name>GurageTyping-Gurage-ጉራጊና.pdf</Name>
-      <Description>File GurageTyping-Gurage-ጉራጊና.pdf</Description>
+      <Name>GurageTyping-Gurage.pdf</Name>
+      <Description>File GurageTyping-Gurage.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>GurageEthiopiaJiret-Regular.ttf</Name>
+      <Description>Font Gurage Ethiopia Jiret Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>GurageZebidar-Regular.ttf</Name>
+      <Description>Font Gurage Zebidar Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>GurageNotoSerifEthiopic-Regular.ttf</Name>
+      <Description>Font Gurage Noto Serif Ethiopic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>GurageEthiopicFantuwua-Regular.ttf</Name>
+      <Description>Font Gurage Ethiopic Fantuwua</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>GurageNotoSansEthiopic-Regular.ttf</Name>
+      <Description>Font Gurage Noto Sans Ethiopic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ጉራጌ (Gurage)</Name>
       <ID>gff_gurage</ID>
-      <Version>0.6</Version>
-      <OSKFont>Zebidar-R.ttf</OSKFont>
-      <DisplayFont>Zebidar-R.ttf</DisplayFont>
+      <Version>0.7</Version>
+      <OSKFont>GurageZebidar-Regular.ttf</OSKFont>
+      <DisplayFont>GurageZebidar-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="sgw-Ethi">Sebat Bet Gurage</Language>
       </Languages>

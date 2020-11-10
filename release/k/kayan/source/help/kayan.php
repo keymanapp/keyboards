@@ -14,11 +14,17 @@ This keyboard is designed for typing the Latin-based script of the Kayǎn peopl
 </p>
 <br/>
 
-<h2>Keyboard Layout</h2>
-<div id='osk'>
+<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt'>
+</div>
+
+<h2>Mobile/Tablet Keyboard Layout</h2>
+
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
   
-<h2>Key sequences</h2>
+<h1>Key sequences</h1>
 
 <p>Type in the order that Kayǎn is hand written.</p>
 <ol>
@@ -27,7 +33,7 @@ This keyboard is designed for typing the Latin-based script of the Kayǎn peopl
   <li>tone mark</li>
 </ol>
 
-<h2>Fonts</h2>
+<h1>Fonts</h1>
 
 <p>Here is a list of fonts that work well for typing Kayǎn on a computer:</p>
 <ul>
@@ -43,7 +49,7 @@ This keyboard is designed for typing the Latin-based script of the Kayǎn peopl
 </ul>
 <p>Phones with Android 6 and above also work well.</p>
 
-<h2>Special Issue</h2>
+<h1>Special Issue</h1>
 
 <p>All fonts do not display the U+0300 and U+0301 sequence correctly for Kayǎn. There is a font feature that has been proposed to help with this problem.</p>
 

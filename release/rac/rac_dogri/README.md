@@ -1,9 +1,9 @@
 Rachitrali-Dogri Keyboard Data
 ==============================
 
-Copyright (C) 2019 Rehmat Aziz Chitrali
+Copyright (C) 2019-2020 Rehmat Aziz Chitrali
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------
@@ -14,7 +14,7 @@ This is the first Dogri language keyboard created by Rehmat Aziz Chitrali, Pakis
 
 The Dogri Keyboard Project(DKP) was supervised and developed by Rehmat Aziz Chitrali, who heads the Khowar Academy Chitral Pakistan.
 
-Khowar Academy Chitral was established in April 1996 specifically to promote the endangered  languages of Chitral Pakistan. The Academy has worked extensively on Dogri  linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Dogri, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
+Khowar Academy Chitral was established in April 1996 specifically to promote the endangered languages of Chitral Pakistan. The Academy has worked extensively on Dogri  linguistics, standardization for computing, and modeling of script, speech and language. Research is being conducted in all aspects of Dogri, including acoustic phonetics, phonology, morphology, syntax, grammar and semantics.
 
 Links
 -----

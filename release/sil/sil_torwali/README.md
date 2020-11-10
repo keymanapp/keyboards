@@ -1,9 +1,9 @@
 Torwali (SIL) Keyboard 
 =====================
 
-Copyright (C) 2016-2019 SIL International
+Copyright (C) 2016-2020 SIL International
 
-Version 1.0
+Version 1.0.2
 
 __DESCRIPTION__
 
@@ -17,6 +17,7 @@ Supported Platforms
 
  * Windows
  * Macosx
+ * Linux
  * Web
  * iOS
  * Android
