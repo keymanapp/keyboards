@@ -1,16 +1,16 @@
-Cabecar Keyboard
+Cabécar Keyboard / Teclado Cabécar
 ==============
 
 © 2020 Victoria Quint
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Cabecar Keyboard
+Cabécar Keyboard / Teclado Cabécar
 
-Supported Platforms
+Supported Platforms / Plataformas Soportadas
 -------------------
  * Windows
  * macOS

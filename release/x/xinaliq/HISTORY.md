@@ -1,6 +1,14 @@
 Xinaliq Keyboard Change History
 =======================
 
+1.1.2 (27 Oct 2020)
+-----------------
+* Increment version number to force recompile of touch layout.
+
+1.1.1 (4 Jun 2020)
+-----------------
+* Updated htm files for readability on Linux
+
 1.1 (27 February 2020)
 -----------------
 * Reworked the base keyboard by importing from the Windows AZL keyboard dll.
@@ -9,6 +17,5 @@ Xinaliq Keyboard Change History
 
 1.0 (22 March 2019)
 -----------------
-
 * Initial release
 

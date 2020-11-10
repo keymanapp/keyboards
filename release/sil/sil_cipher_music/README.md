@@ -1,7 +1,7 @@
 Cipher Music (SIL) keyboard
 ===========================
 
-© 2009-2019 SIL International
+© 2009-2020 SIL International
 
 Description
 -----------

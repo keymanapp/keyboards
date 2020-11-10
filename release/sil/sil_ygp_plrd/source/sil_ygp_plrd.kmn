@@ -1,0 +1,99 @@
+﻿c Sample Keyboard: yclUni
+c Bai Yi keyboard
+c Provided by: Erich Fickle, from David Morse legacy keyboard 
+c              
+c
+c Fonts: 
+c
+
+store(&VERSION) '10.0'
+store(&NAME) 'Bai Yi – White Yi (SIL)'
+store(&TARGETS) 'windows macosx linux web'
+store(&COPYRIGHT) '© 2014-2020 SIL International'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'sil_ygp_plrd.kvks'
+
+begin Unicode > use(Umain)
+
+group (Umain) using keys
++ 'a' > u+16F43
++ 'b' > u+16F00
++ 'c' > u+16F0E
++ 'd' > u+16F0A
++ 'e' > u+16F18
++ 'f' > u+16F07
++ 'g' > u+16F1E
++ 'h' > u+16F26
++ 'i' > u+16F61
++ 'j' > u+16F2F
++ 'k' > u+16F0F    c Glyph variation
++ 'l' > u+16F16
++ 'm' > u+16F04
++ 'n' > u+16F10
++ 'o' > u+16F59
++ 'p' > u+16F26
++ 'q' > u+16F6B
++ 'r' > u+16F35
++ 's' > u+16F3A
++ 't' > u+16F37
++ 'u' > u+16F6A
++ 'v' > u+16F08
++ 'w' > u+16F42
++ 'x' > u+16F33   c Glyph variation
++ 'y' > u+16F3D
++ 'z' > u+16F3B
++ 'A' > nul       c KEY NOT ASSIGNED
++ 'B' > u+16F57
++ 'C' > u+16F12
++ 'D' > u+16F62
++ 'E' > u+16F6A u+16F61  c very rare, but extent, white yi only ligature
++ 'F' > u+16F5B      c Glyph Variation here
++ 'G' > u+16F73
++ 'H' > u+16F5C
++ 'I' > u+16F7B
++ 'J' > nul        c DOESN'T EXIST IN TEXTS
++ 'K' > u+16F54
++ 'L' > u+16F75
++ 'M' > u+16F7A
++ 'N' > u+16F5D
++ 'O' > u+16F5F     c BaiYi inform this is variation of /e/ redone from curvy epsilon
++ 'P' > u+16F77
++ 'Q' > u+16F6B
++ 'R' > nul       c doesn't exist, experimental      check this
++ 'S' > u+16F79
++ 'T' > u+16F58
++ 'U' > u+16F51
++ 'V' > u+16F7E
++ 'W' > u+16F28
++ 'X' > nul       c KEY NOT ASSIGNED
++ 'Y' > u+16F68
++ 'Z' > u+16F60
++ '1' > '1'
++ '2' > '2'
++ '3' > '3'
++ '4' > '4'
++ '5' > '5'
++ '6' > '6'
++ '7' > '7'
++ '8' > '8'
++ '9' > '9'
++ '0' > '0'
++ '!' > u+16F02
+c + '@' > ''
++ '#' > u+16F2A
++ '$' > u+16F14
++ '%' > u+16F0B
++ '^' > u+16F38
++ '&' > "'"
++ '*' > '*'
++ '(' > '('
++ ')' > ')'
++ '+' > ':'
++ '-' > '-'
++ ':' > u+16F66
++ ';' > u+16F71
++ '"' > '"'
++ '=' > ';'
++ "'" > "'"
+c
+

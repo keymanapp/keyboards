@@ -1,0 +1,170 @@
+﻿c Improved Unicode keyboard created by A. Umar
+
+store(&VERSION) '10.0'
+store(&KEYBOARDVERSION) '2.1'
+store(&Name) "அஞ்சல் பாங்கு | Anjal Paangu"
+store(&BITMAP) 'thamizha_anjal_paangu.ico'
+c store(&WINDOWSLANGUAGES) 'x0449'
+c store(&ETHNOLOGUECODE) 'tam'
+store(&VISUALKEYBOARD) 'thamizha_anjal_paangu.kvks'
+c store(&LANGUAGE) 'x0449'
+store(&COPYRIGHT) '© 2008-2020 thamizha.com and SIL International'
+store(&MESSAGE) 'New Tamil Unicode Keyboard - Contributed by Umar(csd_one@yahoo.com), Mugunth (mugunth@gmail.com); Sethu (skhome@gmail.com)'
+store(&TARGETS) 'windows macosx linux web'
+
+begin Unicode > use(main)
+c *** Bugs fixing lines at bottom half by K. Sethu indicated by c *** comment blocks
+
+c *** This is a mnemonical layout. That is can use with non english european language keyboards directly
+c store(&mnemoniclayout) "0"
+c ***NOT*** a mnemonic layout if set to "0", so comment out to avoid KeymanWeb incompatibility (JMD, Tavultesoft, 5/12/08)
+
+c store( &HotKey ) "[Alt K_7]"
+
+c ***Storages
+store(uyir_kuRil_keys) "aiueo"
+store(uyir_kuRil_codes) U+0B85 U+0B87 U+0B89 U+0B8E U+0B92
+store(uyir_nedil_keys) "AIUEO"
+store(uyir_nedil_codes) U+0B86 U+0B88 U+0B8A U+0B8F U+0B93
+
+store(pure_mey_keys) "wrtypsdghjklzvbnmWRTSLXN"
+store(mey_keys_base_codes) U+0BA8 U+0BB0 U+0B9F U+0BAF U+0BAA U+0B9A U+0B9F U+0B95 U+0BB9 U+0B9C U+0B95 U+0BB2 U+0BB4 U+0BB5 U+0BAA U+0BA9 U+0BAE U+0B9E U+0BB1 U+0BA4 U+0BB8 U+0BB3 U+0B99 U+0BA3
+
+store(akaramey_codes) U+0B95 U+0B99 U+0B9A U+0B9C U+0B9E U+0B9F U+0BA3 U+0BA4 U+0BA9 U+0BAA U+0BAE U+0BAF U+0BB0 U+0BB1 U+0BB2 U+0BB3 U+0BB4 U+0BB5 U+0BB6 U+0BB7 U+0BB8 U+0BA8 U+0BB9
+
+store(vowelmodif_codes) U+0BBF U+0BC0 U+0BC1 U+0BC2 U+0BC6 U+0BC7 U+0BCA U+0BCB U+0BC8 U+0BBE U+0BCC
+store(nul) "fcQYPDFGHJKZCVBM"
+c ***
+
+group(main) using keys
+
++ any(nul) > nul
+c *** Uyir Assignments
++ any(uyir_kuRil_keys) > index(uyir_kuRil_codes,1)
++ any(uyir_nedil_keys) > index(uyir_nedil_codes,1)
+c ***
+
+c *** Dipthongs Assignments
+c --ai & au--
+U+0B85 + "i" > U+0B90
+U+0B85 + "u" > U+0B94
+
+c *** Aytham
++ "q" > U+0B83
+
+c *** Mey assignments
++ any(pure_mey_keys) > index(mey_keys_base_codes,1) U+0BCD
+
+c *** Inflections
+
+c **--akaramey, aakaaramey --
+U+0BCD + "a" > nul
+any(akaramey_codes) + "a" > index(akaramey_codes,1) U+0BBE
+U+0BCD + "A" > U+0BBE
+
+c ** --ikaramey, iikaaramey--
+U+0BCD + "i" > U+0BBF
+U+0BCD + "I" > U+0BC0
+U+0BBF + "i" > U+0BC0
+
+c ** --ukaramey, uukaaramey ---
+U+0BCD + "u" > U+0BC1
+U+0BCD + "U" > U+0BC2
+U+0BC1 + "u" > U+0BC2
+
+c ** --ekaramey, eekaaramey ---
+U+0BCD + "e" > U+0BC6
+U+0BCD + "E" > U+0BC7
+U+0BC6 + "e" > U+0BC7
+
+c **--aikaaramey--
+any(akaramey_codes) + "i" > index(akaramey_codes,1) U+0BC8
+
+c --okaramey, ookaaramey---
+U+0BCD + "o" > U+0BCA
+U+0BCD + "O" > U+0BCB
+U+0BCA + "o" > U+0BCB
+
+c ** -- aukaaramey --
+any(akaramey_codes) + "u" > index(akaramey_codes,1) U+0BCc
+
+c --double stroke combination--
+U+0b85 + "a" > U+0B86
+U+0b87 + "i" > U+0B88
+U+0b89 + "u" > U+0B8A
+U+0b8E + "e" > U+0B8F
+U+0b92 + "o" > U+0B93 
+
+c ---multi key combination---
+
+c **-- th>த்
+U+0B9F U+0BCD + "h" > U+0BA4 U+0BCD
+
+c **-- ch>ச்
+U+0063 + "h" > U+0B9A U+0BCD  
+
+c ** -- mappings for ஷ்
+U+0B9A U+0BCD + "h" > U+0BB7 U+0BCD 
+
+c *** key assignment sH --> ஶ் (U+0BB6)
+U+0B9A U+0BCD + "H" > U+0BB6 U+0BCD
+c ***
+
+c *** nj > ஞ் and ng > ங்
+
+U+0BA9 U+0BCD +"j" > U+0B9e U+0BCD     
+U+0BA9 U+0BCD +"g" > u+0b99 U+0BCD  
+
+c *** To assure keystroke "ng" maps to ங் even if after a space
+" " U+0BA8 U+0BCD + "g" >  " " u+0B99 U+0BCD
+
+c *** To assure keystroke "nj" maps to ஞ் even if after a space
+" " U+0BA8 U+0BCD + "j" >  " " U+0B9E U+0BCD
+
+c *** Separate key "x" for க்ஷ்
++ "x" > U+0B95 U+0BCD U+0BB7 U+0BCD
+
+c *** Split form of க்ஷ் : +"K"+ "s" + "h" => க்‌ஷ்
+U+004B U+0B9A U+0BCD + "h" > U+0B95 U+0BCD U+200C U+0BB7 U+0BCD
+
+c *** Old Unicode ஸ்ரீ (ஸ் + ரீ) "Sri" > ஸ்ரீ
+U+0BB8 U+0BCD U+0BB0 U+0BCD + "i" > U+0BB8 U+0BCD U+0BB0 U+0BC0
+
+c *** New Unicode ஸ்ரீ (ஶ் + ரீ ) "Shri" > ஶ்ரீ
+U+0BB8 U+0BCD U+0BB9 U+0BCD U+0BB0 U+0BCD + "i" > U+0BB6 U+0BCD U+0BB0 U+0BC0
+
+c Smart changes
+
+c **-- "n"(ன்) + "d"(ட்) => ண்ட்
+U+0BA9 U+0BCD +"d" > U+0BA3 U+0BCD U+0B9F U+0BCD
+
+c **-- {+ "n"(ன்) + "d"|"t"(ட்)} + "h" => ண்ட் + "h" => ந்த்
+U+0BA3 U+0BCD U+0B9F U+0BCD + "h" > U+0BA8 U+0BCD U+0BA4 U+0BCD
+U+0BA9 U+0BCD U+0B9F U+0BCD + "h" > U+0BA8 U+0BCD U+0BA4 U+0BCD
+
+c **-- {+ "n"(ன்) + "d"|"t" (ட்)} +"r"(ர்) => ண்ட் + "r" => ன்ற்   as in "mandram"
+U+0BA3 U+0BCD U+0B9F U+0BCD +"r" > U+0BA9 U+0BCD U+0BB1 U+0BCD
+U+0BA9 U+0BCD U+0B9F U+0BCD +"r" > U+0BA9 U+0BCD U+0BB1 U+0BCD
+
+c **--  ட் + "r"(ர்) => ற்ற்
+U+0B9F U+0BCD + "r"  >  U+0BB1 U+0BCD U+0BB1 U+0BCD
+
+c **--  "n"(ன்) + "-" => ந் (to turn
+U+0BA9 U+0BCD + "-" > U+0BA8 U+0BCD
+
+c **--  space + "n" => ந்
+" " + "n" >  " " U+0BA8 U+0BCD 
+
+c *** ஞ்ஜ் => ஞ்ச் ( njj = njs or njch)
+U+0B9E U+0BCD + "j" > U+0B9E U+0BCD U+0B9A U+0BCD    
+c ***
+
+c *** "tth" (ட்த்) => "thth" (த்த்)
+U+0B9F U+0BCD U+0B9F U+0BCD + "h" > U+0BA4 U+0BCD U+0BA4 U+0BCD
+
+c *** Backspace mappings
+any(akaramey_codes) U+0BCD + [K_BKSP] > nul 
+any(akaramey_codes) + [K_BKSP] > index(akaramey_codes,1) U+0BCD
+any(vowelmodif_codes) + [K_BKSP] > U+0BCD
+c ****
+c EOF
