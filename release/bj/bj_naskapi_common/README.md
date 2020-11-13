@@ -1,7 +1,7 @@
 Naskapi (Common) Keyboard
 =====================
 
-Copyright (c) 2001-2019 Bill Jancewicz
+Copyright (c) 2001-2020 Bill Jancewicz
 
 Version 1.2
 
