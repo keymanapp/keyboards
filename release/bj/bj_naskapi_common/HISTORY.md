@@ -1,6 +1,12 @@
 Naskapi (Common) Keyboard Change History
 =======================
 
+1.3 (Nov 2020)
+-----------------
+* Split Naskapi (Common) from Naskapi (Classical)
+* Added support for any platforms
+* Added OSK
+
 1.2 (Feb 2019)
 -----------------
 * Moved to Keyman GitHub repo
