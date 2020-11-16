@@ -1,14 +1,14 @@
 SIL Yupik Cyrillic Keyboard (Russian Layout)
 ==============
 
-© 2009-2020 SIL International
+© 2019-2020 SIL International
 
-Version 0.9
+Version 1.0
 
 Description
 -----------
 
-Yupic Cyrillic keyboard based on Russian Basic ver. 1.1
+The layout of the SIL Yupic Cyrillic (Russian) keyboard is based on the Russian Basic keyboard, ver. 1.1.
 
 Links
 -----

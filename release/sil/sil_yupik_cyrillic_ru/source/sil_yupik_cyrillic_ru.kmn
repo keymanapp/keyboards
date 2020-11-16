@@ -17,7 +17,7 @@ store(&VISUALKEYBOARD) 'sil_yupik_cyrillic_ru.kvks'
 store(&BITMAP) 'sil_yupik_cyrillic_ru.ico'
 store(&LAYOUTFILE) 'sil_yupik_cyrillic_ru.keyman-touch-layout'
 store(&COPYRIGHT) '© 2009-2020 SIL International'
-store(&KEYBOARDVERSION) '0.9'
+store(&KEYBOARDVERSION) '1.0'
 store(&NAME) 'SIL Yupik Cyrillic RU'
 store(&MESSAGE) 'SIL' U+0027 's Yupik Cyrillic RU keyboard is distributed under The MIT License (MIT).'
 
@@ -340,8 +340,10 @@ U+04b3 + [CAPS SHIFT K_LBRKT] > U+0445
 
 platform('touch') + [T_0430_0304] > U+0430 U+0304
 platform('touch') + [T_0410_0304] > U+0410 U+0304
-platform('touch') + [T_s0410_0304] > U+0410 U+0304
+platform('touch') + [SHIFT T_0410_0304] > U+0410 U+0304
 platform('touch') + [T_044F_0304] > U+044F U+0304
 platform('touch') + [T_042F_0304] > U+042F U+0304
+platform('touch') + [SHIFT T_042F_0304] > U+042F U+0304
 platform('touch') + [T_044E_0304] > U+044E U+0304
 platform('touch') + [T_042E_0304] > U+042E U+0304
+platform('touch') + [SHIFT T_042E_0304] > U+042E U+0304
