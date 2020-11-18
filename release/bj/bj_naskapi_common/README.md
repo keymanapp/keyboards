@@ -3,7 +3,7 @@ Naskapi (Common) Keyboard
 
 Copyright (c) 2001-2020 Bill Jancewicz
 
-Version 1.3
+Version 1.4
 
 __DESCRIPTION__
 The Naskapi (Common) keyboard is a phonetic-style 
@@ -19,6 +19,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
  * Mobile Web
  * iOS
