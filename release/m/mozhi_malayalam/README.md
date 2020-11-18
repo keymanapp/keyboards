@@ -2,6 +2,7 @@ Mozhi Malayalam Keyboard
 =====================
 Copyright © 2017-2020 Junaid P. V.
 
+Version 2.1
 
 Copyright © 2006-2018 Raj Nair for an older version
 
@@ -12,5 +13,4 @@ Supported Platforms
  * Windows
  * Linux
  * macOS
- * Linux
  * Web
