@@ -607,12 +607,11 @@ U+17D2 U+1799 U+17D2 any(c_out) U+17C1 U+17BA > context(3) context(4) U+17BF c �
 U+17D2 U+1799 U+17D2 any(c_out) U+17C1 U+17B9 > context(3) context(4) U+17BF c គ្រេ្យឹង > គ្រឿង
 U+17D2 U+1799 U+17D2 any(c_out) U+17C1 U+17B8 > context(3) context(4) U+17BF c គ្រេ្យីង > គ្រឿង
 
-c No-break space is added to these symbols so they won't be dropped off at the end of the line
-U+17D4 > U+00A0 U+17D4
-U+17D5 > U+00A0 U+17D5
-U+17D7 > U+00A0 U+17D7
-U+17D6 > U+00A0 U+17D6
-
-
+c In everyday practice, both 'regular space' and 'no-break space' are not used before punctuation, i.e. ។ ! etc. 
+c An annoying issue of having line broken up at the end of the line dropping the punctuation (។, ! and also ៗ) to the next line.
+c It may be helpful to include a rule where a 'Zero Width No-Break Space' should be output together with those punct.
+c ref: https://www.unicode.org/L2/L2020/20008-core-text.pdf
+c ref: https://www.unicode.org/versions/Unicode12.0.0/ch23.pdf#G12985
+c ref: https://www.compart.com/en/unicode/U+FEFF
 
 c EOF
