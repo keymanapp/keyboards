@@ -3696,7 +3696,7 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
   normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
-  color:black'>&nbsp;&#6026;&#6098;&#6027;</span></p>
+  color:black'>&#6026;&#6098;&#6027;</span></p>
   </td>
  </tr>
  <tr>
@@ -3721,7 +3721,194 @@ Symbol'>·</span><span style='font-size:7.0pt;line-height:105%;font-family:"Time
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
   normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
-  color:black'>&nbsp;&#6033;&#6098;&#6034;</span></p>
+  color:black'>&#6033;&#6098;&#6034;</span></p>
+  </td>
+ </tr>
+  <tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>14</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ពន្ឋ </span><span lang=EN-GB style='font-size:
+  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ព ន ្ឋ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  </span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ពន្ធ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>15</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ព័ន្ឋ </span><span lang=EN-GB style='font-size:
+  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ព ័ ន ្ឋ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  </span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ព័ន្ធ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>16</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ឪ្យ </span><span lang=EN-GB style='font-size:
+  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ឪ ្យ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  </span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ឱ្យ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>17</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ឳ្យ </span><span lang=EN-GB style='font-size:
+  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ឳ ្យ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  </span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ឱ្យ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>18</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ញ្វ </span><span lang=EN-GB style='font-size:
+  10.0pt;font-family:"Khmer Mondulkiri";color:black'>(</span><span lang=KHM
+  style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>ញ ្វ</span><span
+  lang=EN-GB style='font-size:10.0pt;font-family:"Khmer Mondulkiri";color:black'>)&nbsp;
+  </span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ព្វា</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>19</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>េ ្យ ឺ </span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ឿ</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>20</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>េ ្យ ឹ</span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ឿ</span></p>
+  </td>
+ </tr>
+  <td width=48 valign=top style='width:35.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'>21</p>
+  </td>
+  <td width=321 valign=bottom style='width:240.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>េ ្យ ី</span></p>
+  </td>
+  <td width=184 valign=bottom style='width:138.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraph style='margin:0in;margin-bottom:.0001pt;line-height:
+  normal'><span lang=KHM style='font-size:10.0pt;font-family:"Khmer Mondulkiri";
+  color:black'>ឿ</span></p>
   </td>
  </tr>
 </table>
