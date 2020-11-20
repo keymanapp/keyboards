@@ -1,6 +1,11 @@
 Khmer Angkor Change History
 =======================
 
+1.0.7 (17 Nov 2020)
+----------------------
+* update icon
+* add new rules
+
 1.0.6 (13 May 2019)
 -------------------
 * update language tag
