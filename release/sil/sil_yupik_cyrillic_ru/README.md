@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-The layout of the SIL Yupic Cyrillic (Russian) keyboard is based on the Russian Basic keyboard, ver. 1.1.
+The layout of the SIL Yupic Cyrillic (Russian) keyboard is based on the Russian Basic keyboard, ver. 1.1. Additional characters required for the Yupik language have been added to the layout.
 
 Links
 -----
