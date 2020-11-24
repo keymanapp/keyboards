@@ -3,7 +3,7 @@ Cameroon AZERTY keyboard
 
 Copyright (C) 2018-2020 SIL Cameroon
 
-Version 6.0.2
+Version 6.0.3
 
 __DESCRIPTION__
 
