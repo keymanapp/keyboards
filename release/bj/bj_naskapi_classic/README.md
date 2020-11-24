@@ -8,10 +8,7 @@ Version 2.1
 Description
 -----------
 
-Naskapi (Classic) generated from template
-
-Links
------
+The Naskapi (Classic) keyboard is a "typewriter-style" layout (type one key for one character). It uses Unified Canadian Aboriginal Syllabics.
 
 Supported Platforms
 -------------------
