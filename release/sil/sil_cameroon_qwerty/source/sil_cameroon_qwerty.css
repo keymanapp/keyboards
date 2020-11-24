@@ -1,27 +1,41 @@
 /***
-   Cameroon Qwerty CSS
-   Copyright 2017 SIL International
+   Cameroon QWERTY CSS
+   Copyright 2020 SIL International
 ***/
-
  
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-deadkey {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;} 
-.ios .kmw-keyboard-sil_cameroon_qwerty .phone.ios .kmw-key.kmw-key-deadkey {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;}
+ /*CamKey*/
+.android .kmw-keyboard-sil_cameroon_qwerty #default-T_CAM,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_CAM,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_CAM,
+.android .kmw-keyboard-sil_cameroon_qwerty #shift-T_CAM,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #shift-T_CAM,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #shift-T_CAM {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;} 
+.ios .kmw-keyboard-sil_cameroon_qwerty #default-T_CAM,
+.ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_CAM {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;}
+
 .web .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;} 
 .osk .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;} 
 .desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;} 
         
+/* Green Diacritics on web */
+.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_QUOTE,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_LBRKT,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_RBRKT,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_BKSLASH,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_QUOTE,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_RBRKT,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_LBRKT,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_BKQUOTE,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_C,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_K,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_L,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_J,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_J,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_K,
+.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_L { background: #598059; background: linear-gradient(#ffffff, #598059); }
 
-/* Common key appearance styles (can override with form-factor styles if necessary) */
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key-default{color:#000;background-color:#eee;}
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key-shift{color:#aaa;background-color:#ddd;}     /*color was #88f (blue) */
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key-shift-on{color:#88f;background-color:#ccf;}
-/* .kmw-key-deadkey{color:#0d0;background-color:#eee;}  */
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key-deadkey{background: #8c4646; color:#0F0; background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF;}
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key-blank{color:#000;background-color:rgba(100,100,100,0.5);}
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key-hidden{visibility:hidden;}
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key-touched{background-color:#88f;} 
 
-/* Green Diacritics */
+/* Green Diacritics on iOS */
 .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0300,
 .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0304,
 .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0301,
@@ -36,6 +50,26 @@
 .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_1DC4,
 .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_030D,
 .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_0330 { background: #598059; background: linear-gradient(#ffffff, #598059); }
+
+@media (prefers-color-scheme: dark) {
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0300,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0304,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0301,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_030C,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0302,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0303,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0308,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #default-T_0327,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_1DC5,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_1DC6,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_1DC7,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_1DC4,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_030D,
+  .ios .kmw-keyboard-sil_cameroon_qwerty #shift-T_0330 { background: #598059; background: linear-gradient(#3d3d3e, #598059); }
+}
+
+
+/* Green Diacritics on Android (Preferred selector) */
 .android .kmw-keyboard-sil_cameroon_qwerty #default-T_0300,
 .android .kmw-keyboard-sil_cameroon_qwerty #default-T_0304,
 .android .kmw-keyboard-sil_cameroon_qwerty #default-T_0301,
@@ -50,63 +84,36 @@
 .android .kmw-keyboard-sil_cameroon_qwerty #shift-T_1DC4,
 .android .kmw-keyboard-sil_cameroon_qwerty #shift-T_030D,
 .android .kmw-keyboard-sil_cameroon_qwerty #shift-T_0330 { background: #598059; background: linear-gradient(#7f7f7f, #598059); }
-/* #7f7f7f is 50% Grey, #598059 is 30% Green */
 
-/* Yellow Vowels */
-/*
-android.kmw-keyboard-sil_cameroon_qwerty #default-K_A,
-.android .kmw-keyboard-sil_cameroon_qwerty #default-K_E,
-.android .kmw-keyboard-sil_cameroon_qwerty #default-K_I,
-.android .kmw-keyboard-sil_cameroon_qwerty #default-K_O, 
-.android .kmw-keyboard-sil_cameroon_qwerty #default-K_U,
-.android .kmw-keyboard-sil_cameroon_qwerty #shift-K_A,
-.android .kmw-keyboard-sil_cameroon_qwerty #shift-K_E,
-.android .kmw-keyboard-sil_cameroon_qwerty #shift-K_I,
-.android .kmw-keyboard-sil_cameroon_qwerty #shift-K_O,
-.android .kmw-keyboard-sil_cameroon_qwerty #shift-K_U,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_025B,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0259,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0289,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0153,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0268,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0254,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_00E6,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_03B1,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0190,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_018F,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0152,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0244,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0197,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0186,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_00C6,
-.android .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_2C6D { background: #abab78; background: linear-gradient(#7f7f7f, #abab78); }     
-*/
-/* #abab78 is 30% of #aaaa00 yellow */
-/*
-.ios .kmw-keyboard-sil_cameroon_qwerty #default-K_A,
-.ios .kmw-keyboard-sil_cameroon_qwerty #default-K_E,
-.ios .kmw-keyboard-sil_cameroon_qwerty #default-K_I,
-.ios .kmw-keyboard-sil_cameroon_qwerty #default-K_O, 
-.ios .kmw-keyboard-sil_cameroon_qwerty #default-K_U,
-.ios .kmw-keyboard-sil_cameroon_qwerty #shift-K_A,
-.ios .kmw-keyboard-sil_cameroon_qwerty #shift-K_E,
-.ios .kmw-keyboard-sil_cameroon_qwerty #shift-K_I,
-.ios .kmw-keyboard-sil_cameroon_qwerty #shift-K_O,
-.ios .kmw-keyboard-sil_cameroon_qwerty #shift-K_U,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_025B,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0259,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0289,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0153,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0268,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_0254,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_00E6,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-nocaps-U_03B1,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0190,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_018F,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0152,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0244,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0197,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_0186,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_00C6,
-.ios .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-nocaps-U_2C6D { background: #abab78; background: linear-gradient(#ffffff, #abab78); } 
-*/
+
+/* Handle Keyman 10.0-13.0 bug #3910 */
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_0300,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_0304,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_0301,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_030C,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_0302,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_0303,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_0308,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #default-T_0327,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #shift-T_1DC5,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #shift-T_1DC6,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #shift-T_1DC7,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #shift-T_1DC4,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #shift-T_030D,
+.android .kmw-keyboard-sil_cameroon_qwerty\:\:sil_cameroon_qwerty #shift-T_0330 { background: #598059; background: linear-gradient(#7f7f7f, #598059); }
+
+/* Handle Keyman 13.0 Bug #3910 */
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_0300,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_0304,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_0301,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_030C,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_0302,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_0303,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_0308,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #default-T_0327,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #shift-T_1DC5,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #shift-T_1DC6,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #shift-T_1DC7,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #shift-T_1DC4,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #shift-T_030D,
+.android .kmw-keyboard-cloud\:\:sil_cameroon_qwerty #shift-T_0330 { background: #598059; background: linear-gradient(#7f7f7f, #598059); }
