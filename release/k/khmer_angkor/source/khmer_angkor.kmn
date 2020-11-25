@@ -1,10 +1,10 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) "Khmer Angkor"
-store(&COPYRIGHT) '© 2015-2019 SIL International'
+store(&COPYRIGHT) '© 2015-2020 SIL International'
 store(&MESSAGE) "More than just a Khmer Unicode keyboard."
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'khmer_angkor.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.0.6'
+store(&KEYBOARDVERSION) '1.0.7'
 store(&BITMAP) 'khmer_angkor.ico'
 store(&VISUALKEYBOARD) 'khmer_angkor.kvks'
 
@@ -587,5 +587,31 @@ c U+17D4 U+179B U+17D4 > U+17D8 c ។ល។  transforms to U+17D8
 
 U+178A U+17D2 U+1792 > U+178A U+17D2 U+178B  c ដ្ធ > ដ្ឋ
 U+1791 U+17D2 U+178B > U+1791 U+17D2 U+1792  c ទ្ឋ  > ទ្ធ
+
+c additional rules
+
+U+1796 U+1793 U+17D2 U+178B > context(1) context(2) context(3) U+1792 c ពន្ឋ > ពន្ធ
+U+1796 U+17D0 U+1793 U+17D2 U+178B > context(1) context(2) context(3) context(4) U+1792 c ព័ន្ឋ > ព័ន្ធ
+
+
+U+17AA U+17D2 U+1799 > U+17B1 context(2) context(3)  c ឪ្យ > ឱ្យ
+U+17B3 U+17D2 U+1799 > U+17B1 context(2) context(3)  c ឳ្យ > ឱ្យ
+
+U+1789 U+17D2 U+179C > U+1796 context(2) context(3) U+17B6 c ញ្វ (as in សញ្វវុធ) > ព្វា as in សញ្វវុធ
+
+U+17D2 U+1799 U+17C1 U+17BA > U+17BF c េ្យឺ > ឿ
+U+17D2 U+1799 U+17C1 U+17B9 > U+17BF c េ្យឹ > ឿ
+U+17D2 U+1799 U+17C1 U+17B8 > U+17BF c េ្យី > ឿ
+
+U+17D2 U+1799 U+17D2 any(c_out) U+17C1 U+17BA > context(3) context(4) U+17BF c គ្រេ្យឺង > គ្រឿង
+U+17D2 U+1799 U+17D2 any(c_out) U+17C1 U+17B9 > context(3) context(4) U+17BF c គ្រេ្យឹង > គ្រឿង
+U+17D2 U+1799 U+17D2 any(c_out) U+17C1 U+17B8 > context(3) context(4) U+17BF c គ្រេ្យីង > គ្រឿង
+
+c In everyday practice, both 'regular space' and 'no-break space' are not used before punctuation, i.e. ។ ! etc. 
+c An annoying issue of having line broken up at the end of the line dropping the punctuation (។, ! and also ៗ) to the next line.
+c It may be helpful to include a rule where a 'Zero Width No-Break Space' should be output together with those punct.
+c ref: https://www.unicode.org/L2/L2020/20008-core-text.pdf
+c ref: https://www.unicode.org/versions/Unicode12.0.0/ch23.pdf#G12985
+c ref: https://www.compart.com/en/unicode/U+FEFF
 
 c EOF
