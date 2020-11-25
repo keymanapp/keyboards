@@ -7,7 +7,7 @@
 <p>The Naskapi (Classic) keyboard is a "typewriter-style" layout (type one key for one character). It uses Unified Canadian Aboriginal Syllabics.</p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
@@ -16,7 +16,7 @@
 
 <h2>Fonts</h2>
 
-<p>The fonts included in this package were developed and are copyrighted by 
+<p>The font included in this package were developed and are copyrighted by 
 Bill Jancewicz (SIL).</p>
 
 
