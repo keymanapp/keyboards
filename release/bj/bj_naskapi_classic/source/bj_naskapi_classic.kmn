@@ -86,19 +86,40 @@ group(main) using keys
 + "~"             >     U+201D c right double quotation mark
 
 
-+ [ALT K_E]             >     U+14D5 c li
-+ [ALT K_C]             >     U+14D7 c lu
-+ [ALT K_D]             >     U+14DA c la
-+ [SHIFT ALT K_D]             >     U+14EA c l
-+ [ALT K_T]             >     U+1546 c ri
-+ [ALT K_B]             >     U+1548 c ru
-+ [ALT K_G]             >     U+154B c ra
-+ [SHIFT ALT K_G]             >     U+1550 c r
++ [RALT K_E]             >     U+14D5 c li
++ [RALT K_C]             >     U+14D7 c lu
++ [RALT K_D]             >     U+14DA c la
++ [SHIFT RALT K_D]             >     U+14EA c l
++ [RALT K_T]             >     U+1546 c ri
++ [RALT K_B]             >     U+1548 c ru
++ [RALT K_G]             >     U+154B c ra
++ [SHIFT RALT K_G]             >     U+1550 c r
 
 c + "ñ"             >     U+150C c skw [no longer used]
 
 c TODO
 c + "ù"             >     U+1427 c mid dot [claimed to exist, but not]
 
+c added numerals and symbols
+store(numerals)     '1234567890'
+store(numeral_keys) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0]
+store(symbols)      '-=[]\!$%^&*()_+"?'
+store(symbol_keys)  [K_HYPHEN] [K_EQUAL] [K_LBRKT] [K_RBRKT] [K_BKSLASH] [SHIFT K_1] [SHIFT K_4] [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] [SHIFT K_HYPHEN] [SHIFT K_EQUAL] [SHIFT K_QUOTE] [SHIFT K_SLASH]
+
++ any(numeral_keys) > index(numerals,1)
++ any(symbol_keys)  > index(symbols,1)
++ "'"               > U+0027
+
+store(unused_ralt_keys)         [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_EQUAL] \ 
+                                [RALT K_Q] [RALT K_W] [RALT K_R] [RALT K_Y] [RALT K_U] [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_BKSLASH] \
+                                [RALT K_A] [RALT K_S] [RALT K_F] [RALT K_H] [RALT K_J] [RALT K_K] [RALT K_L] [RALT K_COLON] [RALT K_QUOTE] \
+                                [RALT K_Z] [RALT K_X] [RALT K_V] [RALT K_N] [RALT K_M] [RALT K_COMMA] [RALT K_PERIOD] [RALT K_SLASH]
+store(unused_shift_ralt_keys)   [SHIFT RALT K_BKQUOTE] [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8] [SHIFT RALT K_9] [SHIFT RALT K_0] [SHIFT RALT K_HYPHEN] [SHIFT RALT K_EQUAL] \ 
+                                [SHIFT RALT K_Q] [SHIFT RALT K_W] [SHIFT RALT K_R] [SHIFT RALT K_Y] [SHIFT RALT K_U] [SHIFT RALT K_I] [SHIFT RALT K_O] [SHIFT RALT K_P] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_BKSLASH] \
+                                [SHIFT RALT K_A] [SHIFT RALT K_S] [SHIFT RALT K_F] [SHIFT RALT K_H] [SHIFT RALT K_J] [SHIFT RALT K_K] [SHIFT RALT K_L] [SHIFT RALT K_COLON] [SHIFT RALT K_QUOTE] \
+                                [SHIFT RALT K_Z] [SHIFT RALT K_X] [SHIFT RALT K_V] [SHIFT RALT K_N] [SHIFT RALT K_M] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] [SHIFT RALT K_SLASH]
+
++ any(unused_ralt_keys)         > nul
++ any(unused_shift_ralt_keys)   > nul
 
 c EOF
