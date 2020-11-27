@@ -1,6 +1,10 @@
 gff_amharic Change History
 ==========================
 
+2.0 (26 Nov 2020)
+------------------
+* Addition of new style touch keyboard.
+
 1.9.2 (10 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux
