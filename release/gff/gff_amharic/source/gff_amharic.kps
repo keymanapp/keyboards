@@ -10,7 +10,6 @@
     <GraphicFile>..\..\..\shared\gff\sideimage.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder>GFF Amharic Keyboard</Folder>
@@ -63,7 +62,7 @@
   <Info>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
     <Name URL="">GFF Amharic Keyboard</Name>
-    <Version URL=""></Version>
+    <Version URL="">2.0</Version>
     <Copyright URL="">© 1997-2020 Ge'ez Frontier Foundation, SIL International</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
   </Info>
@@ -219,20 +218,36 @@
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\build\gff_amharic_x.js</Name>
-      <Description>File gff_amharic_x.js</Description>
+      <Name>..\build\gff_amharic_2.js</Name>
+      <Description>File gff_amharic_2.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\build\gff_amharic_2.kmx</Name>
+      <Description>Keyboard አማርኛ (Amharic)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
   </Files>
   <Keyboards>
-    <Keyboard>
+     <Keyboard>
       <Name>አማርኛ (Amharic)</Name>
       <ID>gff_amharic</ID>
       <Version>1.9.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="am">am</Language>
       </Languages>
+    </Keyboard>
+    <Keyboard>
+      <Name>አማርኛ (Amharic)</Name>
+      <ID>gff_amharic_2</ID>
+      <Version>2.0</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <Languages/>
     </Keyboard>
   </Keyboards>
   <Strings/>
