@@ -22,8 +22,8 @@ store(&HotKey) '[CTRL ALT K_A]'
 store(&BITMAP) 'gff_amharic.ico'
 store(&VISUALKEYBOARD) 'gff_amharic.kvks'
 store(&TARGETS) 'any'
-store(&LAYOUTFILE) 'gff_amharic_x.keyman-touch-layout'
-
+store(&LAYOUTFILE) 'gff_amharic_2.keyman-touch-layout'
+$keymanonly:  store(&MnemonicLayout) "0"
 c 
 c =====================End Identity Section=====================================================
 
@@ -81,12 +81,18 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(ግዕዝ-key) 'eE' c 'äÄéÉèÈêÊëË'
-  store(ካዕብ-key) 'uU' c 'ùÙúÚûÛüÜ'
-  store(ሣልስ-key) 'iI' c ìÌíÍîÎïÏ'
-  store(ራብዕ-key) 'aA' c 'àÀáÁâÂãÃåÅ'
-  store(ኃምስ-key) [T_HAMIS] c 'æÆ'
-  store(ሳብዕ-key) 'oO' c 'òÒóÓôÔõÕöÖøØ'
+$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'
+$keymanweb:  store(ግዕዝ-key)  'eE'
+$keymanonly: store(ካዕብ-key) 'uUùÙúÚûÛüÜ'
+$keymanweb:  store(ካዕብ-key) 'uU'
+$keymanonly: store(ሣልስ-key) 'iIìÌíÍîÎïÏ'
+$keymanweb:  store(ሣልስ-key) 'iI'
+$keymanonly: store(ራብዕ-key) 'aAàÀáÁâÂãÃåÅ'
+$keymanweb:  store(ራብዕ-key) 'aA'
+$keymanonly: store(ኃምስ-key) 'æÆ'[T_HAMIS]
+$keymanweb:  store(ኃምስ-key) [T_HAMIS]
+$keymanonly: store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
+$keymanweb:  store(ሳብዕ-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c =====================End Data Section=========================================================
@@ -216,17 +222,17 @@ c
 c ---------------------End Input of Punctuation-------------------------------------------------
 
 c ---------------------Input of European Characters---------------------------------------------
-c  store(euro)    'ÇçÐðÝýÿßÑñ'
-c  store(euroMap) 'ጭችድድይይይጽኝኝ'
-c  + any(euro) > index(euroMap,1)
+$keymanonly:  store(euro)    'ÇçÐðÝýÿßÑñ'
+$keymanonly:  store(euroMap) 'ጭችድድይይይጽኝኝ'
+$keymanonly:  + any(euro) > index(euroMap,1)
 
-c  'ጽ' + 'ß' > 'ፅ'
-c  + '¨' > U+135F
+$keymanonly:  'ጽ' + 'ß' > 'ፅ'
+$keymanonly:  + '¨' > U+135F
 
-c  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+$keymanonly:  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
 c  this mapping has an Amharic bias
-c  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
-c  + any(euroVowels) > index(euroVowelsMap,1)
+$keymanonly:  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+$keymanonly:  + any(euroVowels) > index(euroVowelsMap,1)
 c ---------------------End Input of European Characters-----------------------------------------
 
 c ---------------------Input of Numbers---------------------------------------------------------
