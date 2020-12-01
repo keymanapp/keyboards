@@ -23,7 +23,7 @@ store(&BITMAP) 'gff_amharic.ico'
 store(&VISUALKEYBOARD) 'gff_amharic.kvks'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'gff_amharic_2.keyman-touch-layout'
-$keymanonly:  store(&MnemonicLayout) "0"
+$keymanonly:  store(&mnemonicLayout) "1"
 c 
 c =====================End Identity Section=====================================================
 
@@ -188,7 +188,7 @@ c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
   any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
-  any(ሳድስ)      + [CTRL K_SPACE] > index(ሳድስ,1) deadkey(1)
+$keymanonly:    any(ሳድስ)      + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
   any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             
@@ -196,7 +196,7 @@ c
 
 
       + ':'     > '፡'
-      + [SHIFT K_SPACE] > '፡'
+$keymanonly:    + [SHIFT ' '] > '፡'
   '፡' + ':' > '።'
   '፡' + '-' > '፦'
   '፡' + '+' > '፠'
