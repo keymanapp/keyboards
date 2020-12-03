@@ -2,6 +2,7 @@
 
 % Malar Malayalam Keyboard Key Mapping
 % Manjari Font: https://smc.org.in/fonts/manjari
+% Gayathri Font: https://smc.org.in/fonts/gayathri
 % Roboto Mono Font: https://fonts.google.com/specimen/Roboto+Mono
 
 \documentclass[a4paper]{article}
@@ -17,6 +18,7 @@
 \newfontfamily\malayalamfont[Script=Malayalam, Mapping=tex-text]{Manjari}
 \newfontfamily\Manjari[Script=Malayalam]{Manjari}
 \newfontfamily\En[Mapping=tex-text]{Roboto Mono}
+\newfontfamily\Mal[Mapping=tex-text]{Gayathri}
 \def\en{\color{DarkGreen!100}\normalsize\En}
 \def\enh{\color{DarkGreen!100}\En}
 \def\enb{\color{Black!100}\normalsize\En}
@@ -102,7 +104,7 @@
 
 ൻ & ൺ & ൽ & ൾ & ർ & ൿ & ൔ & ൕ & ൖ & &\enb Cancel \\
 \en n\bsh &\en N\bsh &\en l\bsh &\en L\bsh &\en r\bsh&
-\en k\bsh &\en m\bsh &\en y\bsh &\en zh\bsh &&\en x\space X \\
+\en k\bsh &\en m\bsh &\en y\bsh &\en zh\bsh &&\en q\space Q \\
 \hline
 
 ങ്ങ് &	ങ്ക് &	ന്റ് &	ഞ്ച് & റ്റ് & ക്ഷ്	& 
@@ -120,7 +122,7 @@
 \multicolumn{11}{c}{ഉദാഹരണങ്ങൾ}\\
 \hline
 
-ക & കാ & കി & കീ & കു & കൂ & കൃ & കൄ & 
+ക & കാ & കി & കീ & കു & കൂ & കൃ &\Mal കൄ & 
 കെ & കേ & കൈ   \\
 \en ka &\en kaa &\en ki &\en kii &\en ku &\en kuu &\en kR &
 \en kRR &\en ke &\en kE &\en kai  \\
@@ -162,5 +164,4 @@
 \en 3\sla4\bsh \\
 \hline
 \end{tabular}
-
 \end{document}
