@@ -1,6 +1,10 @@
 ᐊᓂᔑᓇᐯᒧᐎᓐ Change History
 ============================
 
+9.3 (16 Jul 2020)
+-----------------
+* Use AboriginalSerifREGULAR.ttf font for touch layout
+
 9.2 (9 May 2019)
 ----------------
 * Added .kps file

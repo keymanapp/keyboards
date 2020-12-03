@@ -1,6 +1,10 @@
 ᑌᓀ ᔭᕠᐁ Change History
 ============================
 
+9.2 (16 July 2020)
+------------------
+* Use AboriginalSerifREGULAR.ttf font for touch layout
+
 9.1 (26 Oct 2018)
 -----------------
 * Changed file names to remove "_kmw" in preparation for a future Desktop version

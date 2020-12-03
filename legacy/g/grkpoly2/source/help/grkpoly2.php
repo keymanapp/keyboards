@@ -55,6 +55,8 @@ END;
 
 <p>This keyboard mimics the modern Greek layout. It uses standard Unicode fonts.</p>
 
+<p><b>Note</b>: This keyboard makes use of AltGr or CTRL+ALT keys. It is also possible to activate Keyman's "Simulate AltGr with Ctrl+Alt" option. This can be done in <b>Keyman Configuration / Options / General</b>.</p>
+
 <p><a href="#Related">Click here</a> to see other keyboards for Greek.</p>
 
 </div>
@@ -156,7 +158,7 @@ END;
 	</tr>
 </table>
 
-<p>All precomposed letters are typed with accents first (before the letter). Accents can be typed in any order, except iota subscript, which must come last. Iota subscript can be typed with AltGr or Ctrl+Alt.</p>
+<p>All precomposed letters are typed with accents first (before the letter). Accents can be typed in any order, except iota subscript, which must come last. Iota subscript can be typed with AltGr or Ctrl+Alt. It is also possible to activate Keyman's "Simulate AltGr with Ctrl+Alt" option. This can be done in <b>Keyman Configuration / Options / General</b>.</p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>:'y</span> or <span class='keys'>':y</span> produces <span class='lang2'>ΰ</span>.</p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>~&gt;[CAi]a</span> or <span class='keys'>^&gt;[CAi]a</span> or <span class='keys'>&gt;~[CAi]a</span> or <span class='keys'>&gt;^[CAi]a</span> produces <span class='lang2'>ᾆ</span>.</p>
 

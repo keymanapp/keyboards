@@ -1,0 +1,300 @@
+﻿c myanmar keyboard with full sanskrit extensions support
+store(&VERSION) '10.0'
+store(&NAME) 'MyanCode-San'
+store(&COPYRIGHT) '© 2020 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'myancode_san.ico'
+store(&TARGETS) 'windows macosx linux web'
+store(&VISUALKEYBOARD) 'myancode_san.kvks'
+c store(&LAYOUTFILE) 'myancode_san.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [K_SPACE] > U+0020
+
+c numpad
+c numpad key mapping
+c when capslock is on,produce  number digit. otherwise english digit
++ [NCAPS K_NP0] > U+0030
++ [CAPS K_NP0]  > U+1040
++ [NCAPS K_NP1] > U+0031
++ [CAPS K_NP1]  > U+1041
++ [NCAPS K_NP2] > U+0032
++ [CAPS K_NP2]  > U+1042
++ [NCAPS K_NP3] > U+0033
++ [CAPS K_NP3]  > U+1043
++ [NCAPS K_NP4] > U+0034
++ [CAPS K_NP4]  > U+1044
++ [NCAPS K_NP5] > U+0035
++ [CAPS K_NP5]  > U+1045
++ [NCAPS K_NP6] > U+0036
++ [CAPS K_NP6]  > U+1046
++ [NCAPS K_NP7] > U+0037
++ [CAPS K_NP7]  > U+1047
++ [NCAPS K_NP8] > U+0038
++ [CAPS K_NP8]  > U+1048
++ [NCAPS K_NP9] > U+0039
++ [CAPS K_NP9]  > U+1049
+
++ [K_NPSTAR]  > 	U+002A
++ [K_NPPLUS]  > 	U+002B
++ [K_NPMINUS] > 	U+002D
++ [K_NPDOT]   > 	U+002E
++ [K_NPSLASH] > 	U+002F 
+
++ [K_1] > '၁'
++ [SHIFT K_1] > 'ဍ'
++ [RALT K_1] > U+0021
++ [SHIFT RALT K_1] > U+0031
+
++ [K_2] > '၂'
++ [SHIFT K_2] > 'ဏ္ဍ'
++ [RALT K_2] > U+0040
++ [SHIFT RALT K_2] > U+0032
+
++ [K_3] > '၃'
++ [SHIFT K_3] > 'ဋ'
++ [RALT K_3] > U+0023
++ [SHIFT RALT K_3] > U+0033
+
++ [K_4] > '၄'
++ [SHIFT K_4] > '၎င်း'
++ [RALT K_4] > U+0024
++ [SHIFT RALT K_4] > U+0034
+
++ [K_5] > '၅'
++ [SHIFT K_5] > U+0025
++ [RALT K_5] > U+0025
++ [SHIFT RALT K_5] > U+0035
+
++ [K_6] > '၆'
++ [SHIFT K_6] > U+002F
++ [RALT K_6] > U+005E
++ [SHIFT RALT K_6] > U+0036
+
++ [K_7] > '၇'
++ [SHIFT K_7] > 'ရ'
++ [RALT K_7] > U+0026
++ [SHIFT RALT K_7] > U+0037
+
++ [K_8] > '၈'
++ [SHIFT K_8] > 'ဂ'
++ [RALT K_8] > U+002A
++ [SHIFT RALT K_8] > U+0038
+
++ [K_9] > '၉'
++ [SHIFT K_9] > U+0028
++ [SHIFT RALT K_9] > U+0039
+
++ [K_0] > '၀'
++ [SHIFT K_0] > U+0029
++ [SHIFT RALT K_0] > U+0030
+
++ [K_A] > U+200b U+1031
++ [SHIFT K_A] > 'ဗ'
++ [RALT K_A] > U+1031
+
++ [K_B] > 'ဘ'
++ [SHIFT K_B] > 'ဎ'
+
++ [K_C] > 'ခ'
++ [SHIFT K_C] > 'ဃ'
+
++ [K_D] > 'ိ'
++ [SHIFT K_D] > 'ီ'
+
++ [K_E] > 'န'
++ [SHIFT K_E] > 'ဣ'
+
++ [K_F] > '်'
++ [SHIFT K_F] > '္'
+
++ [K_G] > 'ါ'
++ [SHIFT K_G] > 'ွ'
+
++ [K_H] > '့'
++ [SHIFT K_H] > 'ံ'
+
++ [K_I] > 'င'
++ [SHIFT K_I] > 'ဦ'
+
++ [K_J] > 'ြ'
++ [SHIFT K_J] > 'ဲ'
+
++ [K_K] > 'ု'
++ [SHIFT K_K] > 'ၐ'
+
++ [K_L] > 'ူ'
++ [SHIFT K_L] > 'ၑ'
+
++ [K_M] > 'ာ'
++ [SHIFT K_M] > 'ၗ'
+
++ [K_N] > 'ည'
++ [SHIFT K_N] > 'ဉ'
+
++ [K_O] > 'သ'
++ [SHIFT K_O] > 'ဿ'
+
++ [K_P] > 'စ'
++ [SHIFT K_P] > 'ဏ'
+
++ [K_Q] > 'ဆ'
++ [SHIFT K_Q] > 'ဈ'
+
++ [K_R] > 'မ'
++ [SHIFT K_R] > 'ဤ'
+
++ [K_S] > 'ျ'
++ [SHIFT K_S] > 'ှ'
+
++ [K_T] > 'အ'
++ [SHIFT K_T] > '၍'
+
++ [K_U] > 'က'
++ [SHIFT K_U] > 'ဥ'
+
++ [K_V] > 'လ'
++ [SHIFT K_V] > 'ဠ'
+
++ [K_W] > 'တ'
++ [SHIFT K_W] > 'ဝ'
+
++ [K_X] > 'ထ'
++ [SHIFT K_X] > 'ဌ'
+
++ [K_Y] > 'ပ'
++ [SHIFT K_Y] > '၌'
+
++ [K_Z] > 'ဖ'
++ [SHIFT K_Z] > 'ဇ'
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+00d7
++ [RALT K_HYPHEN] > U+005F
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > U+002b
+
++ [K_COLON] > 'း'
++ [SHIFT K_COLON] > 'ၖ'
++ [RALT K_COLON] > U+003B
++ [RALT SHIFT K_COLON] > U+003A
+
++ [K_BKQUOTE] > 'ဩ'
++ [SHIFT K_BKQUOTE] > 'ဪ'
++ [RALT K_BKQUOTE] > "ရ်္"
++ [RALT SHIFT K_BKQUOTE] > U+007E
+
++ [K_COMMA] > 'ယ'
++ [SHIFT K_COMMA] > 'ၘ'
++ [RALT K_COMMA] > U+002c
++ [RALT SHIFT K_COMMA] > U+003C
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > 'ၙ'
++ [RALT K_PERIOD] > U+002E
++ [RALT SHIFT K_PERIOD] > U+003E
+
++ [K_LBRKT] > 'ဟ'
++ [SHIFT K_LBRKT] > 'ဧ'
++ [RALT K_LBRKT] > U+005b
++ [SHIFT RALT K_LBRKT] > u+007b
+
++ [K_RBRKT] > U+2018
++ [SHIFT K_RBRKT] > U+2019
++ [RALT K_RBRKT] > U+005d
++ [SHIFT RALT K_RBRKT] > U+007d
+
++ [K_BKSLASH] > '၏'
++ [SHIFT K_BKSLASH] > U+100b U+1039 U+100c
++ [RALT K_BKSLASH] > U+005C
++ [RALT SHIFT K_BKSLASH] > U+007C
+
++ [K_QUOTE] > 'ဒ'
++ [SHIFT K_QUOTE] > 'ဓ'
++ [RALT K_QUOTE] > U+0027
++ [RALT SHIFT K_QUOTE] > U+0027
+
++ [K_SLASH] > '။'
++ [SHIFT K_SLASH] > '၊'
++ [RALT K_SLASH] > U+002F
++ [RALT SHIFT K_SLASH] > U+003f
+
+
+
+c mitigating ​ေ U+1031 issues
+
+store(consonants) 'ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဿၐၑ'
+store(medial)   'ျွှြ'
+store(virama)   '္'
+store(yapint)   'ျ'
+store(yayint)   'ြ'
+store(waswe)    'ွ'
+store(hahtoe)   'ှ'
+store(lonegyitin) 'ိ'
+store(tachaungngin) 'ု' 
+store(aukmyit) 	  '့'
+store(kinzi) 'င်္' 
+
+c for prevent wrong input order
+store(not_ahead_of_yapint) 	   	U+103D U+103E U+102D U+102E U+102F U+1030 U+1032 U+1036 
+store(not_ahead_of_waswe) 	   	U+103E U+102D U+102E U+102F U+1030 U+1034 U+1036 U+1037
+store(not_ahead_of_hahtoe) 	   	U+102D U+102E U+102F U+1030 U+1032 U+1036 U+1037
+store(not_ahead_of_lonegyitin) 	U+102F
+store(not_ahead_of_tachaungngin) U+1036
+store(ahead_of_aukmyit)  U+1037 U+1032 U+102F
+store(seven_zero)   	U+1047 U+1040
+store(not_with_seven_zero) U+102B U+102C U+102D U+102E U+102F U+1030 U+103D U+103E
+
+
+match > use(normalise)
+
+group(normalise)
+
+c ​ေ U+1031 attached to prebuild double consonant ဏ္ဍ ဋ္ဌ
+U+200b U+1031 'ဏ္ဍ' > 'ဏ္ဍ' context(2)
+U+200b U+1031 'ဋ္ဌ' > 'ဋ္ဌ' context(2)
+
+c ​ေ U+1031 attached to single consonant
+U+200b U+1031 any(consonants) > context(3) context(2)
+
+c ​ေ U+1031 attached to consonant and medial
+U+1031 any(medial) any(medial) > context(2) context(3) context(1)
+U+1031 any(medial) > context(2) context(1)
+
+c ​ေ U+1031 attached to double consonant
+any(consonants) U+1031 $virama any(consonants) > context(1) context(3) context(4) context(2)
+
+c  double tap kinzi
+any(consonants) U+103a U+103a >  outs(kinzi) context(1)
+any(consonants) U+1031 U+103a U+103a >  outs(kinzi) context(1) context(2)
+any(consonants) any(medial) U+103a U+103a  > outs(kinzi) context(1) context(2)
+any(consonants) any(medial) U+1031 U+103a U+103a  > outs(kinzi) context(1) context(2) context(3)
+
+c two single quote to double quoute
+U+2018 U+2018 > U+201c
+U+2019 U+2019 > U+201d
+U+0027 U+0027 > U+0022
+
+c preventing wrong order input
+
+any(not_ahead_of_yapint) $yapint > beep
+any(not_ahead_of_waswe) $waswe > beep
+any(not_ahead_of_hahtoe) $hahtoe > beep
+any(not_ahead_of_lonegyitin) $lonegyitin > beep
+any(not_ahead_of_tachaungngin) $tachaungngin > beep
+$aukmyit any(ahead_of_aukmyit) > beep
+any(seven_zero) any(not_with_seven_zero) > beep
+
+c sanskrit
+c double tap ( double sign vowel to vowel )
+'ၖ' 'ၖ' > 'ၒ'
+'ၗ' 'ၗ' > 'ၓ'
+'ၘ' 'ၘ' > 'ၔ'
+'ၙ' 'ၙ' > 'ၕ'
+
+
+c eof

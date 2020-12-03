@@ -3,7 +3,7 @@ Yorùbá with Bar keyboard
 
 © 2012-2020 SIL International
 
-Version 1.2
+Version 1.2.1
 
 Description
 -----------

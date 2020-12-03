@@ -1,6 +1,10 @@
 Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ Change History
 ==================================
 
+1.6 (16 Jul 2020)
+-----------------
+* Use AboriginalSerifREGULAR.ttf font for touch layout
+
 1.5 (20 Sept 2019)
 ---------------
 * Changed license to MIT with permission of author

@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 1994-2019 Bible Translation & Literacy, SIL International
+© 1994-2020 Bible Translation & Literacy, SIL International
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

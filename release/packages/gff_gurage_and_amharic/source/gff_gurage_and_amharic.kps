@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.108.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.113.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -60,8 +60,8 @@
     </Items>
   </StartMenu>
   <Info>
-    <Version URL="">0.7.2</Version>
-    <Name URL="">Zebidar Gurage and Amharic Keyboard Package</Name>
+    <Version URL="">0.7.3</Version>
+    <Name URL="">Gurage and Amharic Keyboard Package</Name>
     <Copyright URL="">© 2019-2020 Ge’ez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge’ez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
@@ -96,12 +96,6 @@
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\gff\gff_gurage\source\Zebidar-R.ttf</Name>
-      <Description>Font Zebidar Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\gff_gurage.kvk</Name>
@@ -163,14 +157,42 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\GurageEthiopiaJiret-Regular.ttf</Name>
+      <Description>Font Gurage Ethiopia Jiret</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\GurageEthiopicFantuwua-Regular.ttf</Name>
+      <Description>Font Gurage Ethiopic Fantuwua</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\GurageNotoSansEthiopic-Regular.ttf</Name>
+      <Description>Font Gurage Noto Sans Ethiopic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\GurageNotoSerifEthiopic-Regular.ttf</Name>
+      <Description>Font Gurage Noto Serif Ethiopic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\gff\gff_gurage\source\GurageZebidar-Regular.ttf</Name>
+      <Description>Font Gurage Zebidar Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ጉራጌ (Gurage)</Name>
       <ID>gff_gurage</ID>
       <Version>0.6.2</Version>
-      <OSKFont>..\..\..\gff\gff_gurage\source\Zebidar-R.ttf</OSKFont>
-      <DisplayFont>..\..\..\gff\gff_gurage\source\Zebidar-R.ttf</DisplayFont>
       <Languages>
         <Language ID="sgw-Ethi">Sebat Bet Gurage</Language>
       </Languages>

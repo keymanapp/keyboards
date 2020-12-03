@@ -2,7 +2,7 @@ Rachitrali-Munji Keyboard
 -------------------------
 
 Copyright:      (C) 2020 Rehmat Aziz Chitrali
-Version:        1.0
+Version:        1.0.1
 
 Description
 -----------

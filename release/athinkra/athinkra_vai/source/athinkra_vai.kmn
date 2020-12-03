@@ -1,0 +1,430 @@
+﻿c
+c
+c
+c Keyboard for Vai Unicode font 
+c Created by Jason Glavy for Athinkra LLC
+c Revision 1.1.1
+c
+store(&VERSION) "10.0"
+store(&NAME) "Vai (Athinkra)"
+store(&BITMAP) 'athinkra_vai.ico'
+store(&TARGETS) 'web desktop'
+store(&COPYRIGHT) '© 2008-2020 Athinkra, LLC'
+store(&KEYBOARDVERSION) '1.2'
+store(&VISUALKEYBOARD) 'athinkra_vai.kvks'
+
+begin Unicode > use(Umain)
+store(blank) "`1234567890=qwrtyp[]\sdfghjkl;'zcvnm,./!@#$%^&*()_+{}|:<>?" '"'
+store(nul) "QWRYUIPASFGHKLZCVBM"
+
+group (Umain) using keys
++ any(nul) > nul
++ any(blank) > index(blank,1)
++ "e" > U+A500
++ "i" > U+A524
++ "a" > U+A549
++ "o" > U+A571
++ "u" > U+A595
++ "O" > U+A5BA 
++ "E" > U+A5E1
+c nasal vowels
+U+A500 + "~" > U+A501 
+U+A524 + "~" > U+A525
+U+A549 + "~" > U+A54A
+U+A571 + "~" > U+A572
+U+A595 + "~" > U+A596
+U+A5BA + "~" > U+A5BB
+U+A5E1 + "~" > U+A5E2
+
+"g" + "b" > "gb"            
+
+"n" + "g" > U+014B
+U+014B + "a" > U+A54B
+U+014B + "O" > U+A5BC 
+U+014B + "E" > U+A5E3
+
+"h" + "e" > U+A502
+"h" + "i" > U+A526
+"h" + "a" > U+A54C
+"h" + "o" > U+A573
+"h" + "u" > U+A597
+"h" + "O" > U+A5BD
+"h" + "E" > U+A5E5
+U+A526 + "~" > U+A527 c Nasal i 
+U+A54C + "~" > U+A54D c Nasal a
+U+A597 + "~" > U+A598 c Nasal u
+U+A5BD + "~" > U+A5BE c Nasal O
+U+A5E5 + "~" > U+A5E6 c Nasal E
+
+"w" + "e" > U+A503
+"w" + "i" > U+A528
+"w" + "a" > U+A54E
+"w" + "o" > U+A574
+"w" + "u" > U+A599
+"w" + "O" > U+A5BF 
+"w" + "E" > U+A5E6
+U+A503 + "~" > U+A504 c Nasal e 
+U+A528 + "~" > U+A529 c Nasal i 
+U+A54E + "~" > U+A54F c Nasal a 
+U+A574 + "~" > U+A575 c Nasal o 
+U+A599 + "~" > U+A59A c Nasal u
+U+A5BF + "~" > U+A5C0 c Nasal O
+U+A5E6 + "~" > U+A5E7 c Nasal E
+
+"p" + "e" > U+A505 
+"p" + "i" > U+A52A 
+"p" + "a" > U+A550 
+"p" + "o" > U+A576  
+"p" + "u" > U+A59B
+"p" + "O" > U+A5C1  
+"p" + "E" > U+A5E8 
+
++ "b" > U+0253 
+U+0253 + "h" > "bh"
+"bh" + "e" > U+A506 
+"bh" + "i" > U+A52B 
+"bh" + "a" > U+A551 
+"bh" + "o" > U+A577  
+"bh" + "u" > U+A59C 
+"bh" + "O" > U+A5C2  
+"bh" + "E" > U+A5E9 
+U+0253 "h" + "e" > U+A506 
+U+0253 "h" + "i" > U+A52B 
+U+0253 "h" + "a" > U+A551 
+U+0253 "h" + "o" > U+A577  
+U+0253 "h" + "u" > U+A59C 
+U+0253 "h" + "O" > U+A5C2  
+U+0253 "h" + "E" > U+A5E9 
+
+U+0253  + "e" > U+A507 
+U+0253  + "i" > U+A52C 
+U+0253  + "a" > U+A552 
+U+0253  + "o" > U+A578 
+U+0253  + "u" > U+A59D 
+U+0253  + "O" > U+A5C3  
+U+0253  + "E" > U+A5EA 
+
+"m" U+0253 + "e" > U+A508 
+"m" U+0253 + "i" > U+A52D 
+"m" U+0253 + "a" > U+A553 
+"m" U+0253 + "o" > U+A579 
+"m" U+0253 + "u" > U+A59E 
+"m" U+0253 + "O" > U+A5C4  
+"m" U+0253 + "E" > U+A5EB 
+ 
+"kp" + "e" > U+A509 
+"kp" + "i" > U+A52E 
+"kp" + "a" > U+A554 
+"kp" + "o" > U+A57A 
+"kp" + "u" > U+A59F 
+"kp" + "O" > U+A5C5  
+"kp" + "E" > U+A5EC 
+U+A554 + "~" > U+A555 c Nasal a 
+U+A5EC + "~" > U+A5ED c Nasal E 
+
+"mgb" + "e" > U+A50A 
+"mgb" + "i" > U+A52F 
+"mgb" + "a" > U+A556 
+"mgb" + "o" > U+A57B 
+"mgb" + "u" > U+A5A0 
+"mgb" + "O" > U+A5C6  
+"mgb" + "E" > U+A5EE 
+
+"gb" + "e" > U+A50B
+"gb" + "i" > U+A530
+"gb" + "a" > U+A557
+"gb" + "o" > U+A57C
+"gb" + "u" > U+A5A1
+"gb" + "O" > U+A5C7 
+"gb" + "E" > U+A5EF
+U+A5C7 + "~" > U+A5C8 c Nasal O 
+U+A5EF + "~" > U+A5F0 c Nasal E 
+
+"f" + "e" > U+A50C
+"f" + "i" > U+A531
+"f" + "a" > U+A558
+"f" + "o" > U+A57D
+"f" + "u" > U+A5A2
+"f" + "O" > U+A5C9 
+"f" + "E" > U+A5F1
+
+"v" + "e" > U+A50D
+"v" + "i" > U+A532
+"v" + "a" > U+A559
+"v" + "o" > U+A57E
+"v" + "u" > U+A5A3
+"v" + "O" > U+A5CA  
+"v" + "E" > U+A5F2
+
+"t" + "e" > U+A50E
+"t" + "i" > U+A533
+"t" + "a" > U+A55A
+"t" + "o" > U+A57F
+"t" + "u" > U+A5A4
+"t" + "O" > U+A5CB 
+"t" + "E" > U+A5F3
+
++ "T" > U+00FE
+U+00FE + "e" > U+A50F
+U+00FE + "i" > U+A534
+U+00FE + "a" > U+A55B
+U+00FE + "o" > U+A580
+U+00FE + "u" > U+A5A5
+U+00FE + "O" > U+A5CC 
+U+00FE + "E" > U+A5F4
+
+
+"d" + "e" > U+A510
+"d" + "i" > U+A535
+"d" + "a" > U+A55C
+"d" + "o" > U+A581
+"d" + "u" > U+A5A6
+"d" + "O" > U+A5CD 
+"d" + "E" > U+A5F5
+ 
++ "D" > U+00F0
+U+00F0 + "e" > U+A511
+U+00F0 + "i" > U+A536
+U+00F0 + "a" > U+A55D
+U+00F0 + "o" > U+A582
+U+00F0 + "u" > U+A5A7
+U+00F0 + "O" > U+A5CE 
+U+00F0 + "E" > U+A5F6
+
+"l" + "e" > U+A512
+"l" + "i" > U+A537
+"l" + "a" > U+A55E
+"l" + "o" > U+A583
+"l" + "u" > U+A5A8
+"l" + "O" > U+A5CF 
+"l" + "E" > U+A5F7
+
+"r" + "e" > U+A513
+"r" + "i" > U+A538
+"r" + "a" > U+A55F
+"r" + "o" > U+A584
+"r" + "u" > U+A5A9
+"r" + "O" > U+A5D0 
+"r" + "E" > U+A5F8
+
+"d" + "l" > U+0257
+U+0257 + "e" > U+A514
+U+0257 + "i" > U+A539
+U+0257 + "a" > U+A560
+U+0257 + "o" > U+A585
+U+0257 + "u" > U+A5AA
+U+0257 + "O" > U+A5D1 
+U+0257 + "E" > U+A5F9
+
+"n" + "d" > "n" U+0257
+"n" U+0257 + "e" > U+A515
+"n" U+0257 + "i" > U+A53A
+"n" U+0257 + "a" > U+A561
+"n" U+0257 + "o" > U+A586
+"n" U+0257 + "u" > U+A5AB
+"n" U+0257 + "O" > U+A5D2 
+"n" U+0257 + "E" > U+A5FA
+
+"s" + "e" > U+A516
+"s" + "i" > U+A53B
+"s" + "a" > U+A562
+"s" + "o" > U+A587
+"s" + "u" > U+A5AC
+"s" + "O" > U+A5D3 
+"s" + "E" > U+A5FB
+
+"s" + "h" >  U+0283 
+U+0283 + "e" > U+A517
+U+0283 + "i" > U+A53C
+U+0283 + "a" > U+A563
+U+0283 + "o" > U+A588
+U+0283 + "u" > U+A5AD
+U+0283 + "O" > U+A5D4 
+U+0283 + "E" > U+A5FC
+
+"z" + "e" > U+A518
+"z" + "i" > U+A53D
+"z" + "a" > U+A564
+"z" + "o" > U+A589
+"z" + "u" > U+A5AE
+"z" + "O" > U+A5D5 
+"z" + "E" > U+A5FD
+ 
++ "J" >  U+0292  
+U+0292 + "e" > U+A519
+U+0292 + "i" > U+A53E
+U+0292 + "a" > U+A565
+U+0292 + "o" > U+A58A
+U+0292 + "u" > U+A5AF
+U+0292 + "O" > U+A5D6 
+U+0292 + "E" > U+A5FE
+
+"c" + "e" > U+A51A
+"c" + "i" > U+A53F
+"c" + "a" > U+A566
+"c" + "o" > U+A58B
+"c" + "u" > U+A5B0
+"c" + "O" > U+A5D7 
+"c" + "E" > U+A5FF
+
+"j" + "e" > U+A51B
+"j" + "i" > U+A540
+"j" + "a" > U+A567
+"j" + "o" > U+A58C
+"j" + "u" > U+A5B1
+"j" + "O" > U+A5D8 
+"j" + "E" > U+A600
+
+"nj" + "e" > U+A51C
+"nj" + "i" > U+A541
+"nj" + "a" > U+A568
+"nj" + "o" > U+A58D
+"nj" + "u" > U+A5B2
+"nj" + "O" > U+A5D9 
+"nj" + "E" > U+A601
+
+"y" + "e" > U+A51D
+"y" + "i" > U+A542
+"y" + "a" > U+A569
+"y" + "o" > U+A58E
+"y" + "u" > U+A5B3
+"y" + "O" > U+A5DA 
+"y" + "E" > U+A602
+
+"k" + "e" > U+A51E
+"k" + "i" > U+A543
+"k" + "a" > U+A56A
+"k" + "o" > U+A58F
+"k" + "u" > U+A5B4
+"k" + "O" > U+A5DB 
+"k" + "E" > U+A603
+U+A56A + "~" > U+A56B c Nasal a
+
+U+014B "g" + "e" > U+A51F
+U+014B "g" + "i" > U+A544
+U+014B "g" + "a" > U+A56C
+U+014B "g" + "o" > U+A590
+U+014B "g" + "u" > U+A5B5
+U+014B "g" + "O" > U+A5DC 
+U+014B "g" + "E" > U+A604
+U+A604 + "~" > U+A605 c Nasal E
+
+"g" + "e" > U+A520
+"g" + "i" > U+A545
+"g" + "a" > U+A56D
+"g" + "o" > U+A591
+"g" + "u" > U+A5B6
+"g" + "O" > U+A5DD 
+"g" + "E" > U+A606
+U+A606 + "~" > U+A607 c Nasal E
+
+"m" + "e" > U+A521
+"m" + "i" > U+A546
+"m" + "a" > U+A56E
+"m" + "o" > U+A592
+"m" + "u" > U+A5B7
+"m" + "O" > U+A5DE 
+"m" + "E" > U+A608
+
+"n" + "e" > U+A522
+"n" + "i" > U+A547
+"n" + "a" > U+A56F
+"n" + "o" > U+A593
+"n" + "u" > U+A5B8
+"n" + "O" > U+A5DF 
+"n" + "E" > U+A609
+
+"n" + "y" > U+0272   
+U+0272 + "e" > U+A523
+U+0272 + "i" > U+A548
+U+0272 + "a" > U+A570
+U+0272 + "o" > U+A594
+U+0272 + "u" > U+A5B9
+U+0272 + "O" > U+A5E0 
+U+0272 + "E" > U+A60A
+
+c special letters
++ [SHIFT K_SPACE] > U+200B c Zero Width Spacing 
++ "N" > U+014B
++ "X" > U+A60C
++ "x" > U+A60B 
+
+
++ [RALT K_B] > "-" U+0253
+"-" U+0253 + "a" > U+A617
++ [RALT K_F] > "-f"
+"-f" + "e" > U+A613
+"-f" + "a" > U+A610
++ [RALT K_T] > "-t"
+"-t" + "i" > U+A615
+"-t" + "O" > U+A61D
++ [RALT K_D] > "-" U+0257 
+"-" U+0257 + "a" > U+A61A
+"-" U+0257 + "o" > U+A61B
++ [RALT K_S] > "-s"
+"-s" + "o" > U+A612
++ [RALT K_C] > "-j"
+"-j" + "O" > U+A61F
++ [RALT K_K] > "-k"
+"-k" + "e" > U+A614
+"-k" + "a" > U+A611
+"-k" + "u" > U+A61C
+c archaic nasal vowels
+"-" U+A55A + "~" > U+A619 c -ta~
+"-" U+0257 "O" + "~" > U+A61E
+
++ [RALT K_N] > "-n"
+"-" U+A547 + "~" > U+A616 c -ni~
+
+c Punctuation and extraneous keys
++ [RALT K_COMMA] >  U+A60D
++ [RALT K_PERIOD] > U+A60E 
++ [RALT K_SLASH] >  U+A60f
++ [RALT K_COLON] > U+2026 
++ [RALT K_E] > U+20B5           
++ [RALT K_BKSLASH] > U+00AB 
++ [SHIFT RALT K_BKSLASH] > U+00BB 
++ [RALT K_LBRKT] > U+201C
++ [SHIFT RALT K_LBRKT] > U+201D
++ [RALT K_RBRKT] > U+2018
++ [SHIFT RALT K_RBRKT] > U+2019
++ [RALT K_G] > U+00A9
++ [RALT K_W] > U+00A4
++ [RALT K_D] > U+00AE
++ [RALT K_Y] > U+00A5 
++ [RALT K_Y] > U+00B0
++ [RALT K_1] > U+A60C
++ [SHIFT RALT K_1] > U+A621
++ [RALT K_2] > '€'
++ [SHIFT RALT K_2] > '꘢'
++ [RALT K_3] > '£'
++ [SHIFT RALT K_3] > '꘣'
++ [RALT K_4] > '¢'
++ [SHIFT RALT K_4] > '꘤'
++ [RALT K_5] > '§'
++ [SHIFT RALT K_5] > '꘥'
++ [RALT K_6] > '™'
++ [SHIFT RALT K_6] > '꘦'
++ [RALT K_7] > '¶'
++ [SHIFT RALT K_7] > '꘧'
++ [RALT K_8] > '•'
++ [SHIFT RALT K_8] > '꘨'
++ [RALT K_9] > '≤'
++ [SHIFT RALT K_9] > '꘩'
++ [RALT K_0] > '≥'
++ [SHIFT RALT K_0] > '꘠'
+c  [ALT K_-] > U+2013
+C [SHIFT ALT K_-] > U+2014
+c [ALT K_=] > U+2260
+C [SHIFT ALT K_=] > U+00B1
++ [RALT K_Z] > '÷'
++ [RALT K_G] > '×'
+"-" + "-" > U+2013
+U+2013 + "-" > U+2014  
+U+2014 + "-" > "-"
+".." + "." > U+2026
+"=" + "/" > U+2260 
+"+" + "-" > U+00B1
+"+/" + "-" > U+00B1
+
+

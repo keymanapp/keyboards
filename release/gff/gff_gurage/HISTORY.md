@@ -1,5 +1,16 @@
-# ጉራጌ (Gurage) Change History
+# ጉራጊና (Gurage) Change History
 
+## 2020-10-25 0.7
+* Updates to sync with the Gurage Legacy keyboard.
+
+## 2020-07-12 0.6.12 (0.7 Beta 4)
+* Including fonts from https://github.com/raeytype/gurage-font-collection
+
+## 2020-07-12 0.6.11 (0.7 Beta 3)
+* Added <KA'IB> + T_HAMIS > <ZEMEDE:HAMIS>
+
+## 2020-07-09 0.6.10 (0.7 Beta 2)
+* Fixed missing compositions
 
 ## 2020-07-05 0.6.9 (0.7 Beta 1)
 * Addition of Gurage Touch Keyboard

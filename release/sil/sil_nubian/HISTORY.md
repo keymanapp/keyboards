@@ -1,6 +1,10 @@
 Nubian (SIL) Change History
 =======================
 
+1.2.4 (27 Oct 2020)
+-------------------
+* Increment version number to force recompile of touch layout.
+
 1.2.3 (8 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux
