@@ -1,6 +1,10 @@
 Burushaski Girminas Change History
 ====================
 
+1.0.4 (2020-10-27)
+----------------
+* Increment version number to force recompile of touch layout.
+
 1.0.3 (2020-02-09)
 ----------------
 * On the request of commmunity members of different variants of Burushaski, additional characters were
