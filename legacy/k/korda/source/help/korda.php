@@ -10,14 +10,7 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
   $pagetitle = 'Korean KORDA Keyboard Help';
   require_once('header.php');
 ?>
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" />
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Korean KORDA Keyboards Help</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
-<body>
+<link rel="stylesheet" href="style.css" type="text/css" />
    <h1>Korean KORDA Keyboards Help</h1>
    <div id='overview'>
     <h2>Overview</h2>
@@ -34,7 +27,7 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
         <li>Gulim</li>
         <li>Gungsuh</li>
         <li>Malgun Gothic</li>
-    </ul>    
+    </ul>
   <div id='layout'>
    <h2>Keyboard Layout</h2>
     <h3 style="clear:left">Korean KORDA Keyboard</h3>
@@ -269,7 +262,7 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
     <div class="key special" id="K_CTRLR">
     <div class="keycap">Ctrl</div>
     </div>
-    <br style="clear: left" />    
+    <br style="clear: left" />
 
     <h2 class='details'>Keyboard Details</h2>
     <h3 class='jamo'>Korean KORDA Jamo Keyboard</h3>
@@ -286,7 +279,7 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
 
     <h2 class='guide'>Complete Typing Guide</h2>
     <div class='consonants'>
-        <h3>Consonants</h3>    
+        <h3>Consonants</h3>
         <table class='grid'>
             <col width=50 />
             <col width=125 />
@@ -296,37 +289,37 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄀ</td><td><span class='keys'>g</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄁ</td><td><span class='keys'>g</span>+<span class='keys'>g</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄂ</td><td><span class='keys'>n</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄃ</td><td><span class='keys'>d</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄄ</td><td><span class='keys'>d</span>+<span class='keys'>d</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄅ</td><td>Initial: <span class='keys'>r</span><br/>Final: <span class='keys'>l</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄆ</td><td><span class='keys'>m</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄇ</td><td><span class='keys'>b</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄈ</td><td><span class='keys'>b</span>+<span class='keys'>b</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄉ</td><td><span class='keys'>s</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄊ</td><td><span class='keys'>s</span>+<span class='keys'>s</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᆼ</td><td>Initial: <b>Automatic</b><br/>Final: <span class='keys'>n</span>+<span class='keys'>g</span></td>
             </tr>
@@ -335,16 +328,16 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄍ</td><td><span class='keys'>j</span>+<span class='keys'>j</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄎ</td><td><span class='keys'>c</span>+<span class='keys'>h</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄏ</td><td><span class='keys'>k</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄐ</td><td><span class='keys'>t</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄑ</td><td><span class='keys'>p</span></td>
             </tr>
@@ -354,14 +347,14 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
         </table>
     </div>
     <div class='vowels'>
-        <h3>Vowels</h3>    
+        <h3>Vowels</h3>
         <table class='grid'>
             <col width=50 />
-            <col width=125 />    
-            
+            <col width=125 />
+
             <tr>
                 <th>Jamo</th><th>Keystroke</th>
-            </tr>            
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅡ</td><td><span class='keys'>a</span></td>
             </tr>
@@ -400,22 +393,22 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅦ</td><td><span class='keys'>e</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅨ</td><td><span class='keys'>y</span>+<span class='keys'>e</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅪ</td><td><span class='keys'>w</span>+<span class='keys'>a</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅫ</td><td><span class='keys'>w</span>+<span class='keys'>a</span>+<span class='keys'>e</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅬ</td><td><span class='keys'>o</span>+<span class='keys'>e</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅯ</td><td><span class='keys'>w</span>+<span class='keys'>o</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅰ</td><td><span class='keys'>w</span>+<span class='keys'>e</span></td>
             </tr>
@@ -424,8 +417,6 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅴ</td><td><span class='keys'>u</span>+<span class='keys'>i</span></td>
-            </tr>    
+            </tr>
         </table>
     </div>
-</body>
-</html>
