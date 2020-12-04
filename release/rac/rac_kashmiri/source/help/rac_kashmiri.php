@@ -3,8 +3,6 @@
   $pagetitle = 'The Rachitrali-Kashmiri Keyboard Package';
   require_once('header.php');
 ?>
-<link rel=File-List href="rac_kashmiri_files/filelist.xml">
-<link rel=Edit-Time-Data href="rac_kashmiri_files/editdata.mso">
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -30,8 +28,6 @@ w\:* {behavior:url(#default#VML);}
   <o:Version>12.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
-<link rel=themeData href="rac_kashmiri_files/themedata.thmx">
-<link rel=colorSchemeMapping href="rac_kashmiri_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:Zoom>80</w:Zoom>
