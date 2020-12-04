@@ -219,12 +219,18 @@ U+0115 + [K_5]   > context(1) U+0323     c for E85 > Ẹ̆
 
 any(gravevowels) + [K_5]    > context(1) U+0323     c for o25 > ọ̀
 
-c Cope with diacritic and composing overline
-U+0300 + [K_5] > context(1) U+0323
-U+0301 + [K_5] > context(1) U+0323
-U+0303 + [K_5] > context(1) U+0323
-U+0306 + [K_5] > context(1) U+0323
-U+0309 + [K_5] > context(1) U+0323
+
+store(diacritic)  U+0300 U+0301 U+0302 U+0303 U+0306 U+0309 U+031B U+0323
+
+c Add another diacritic in NFD
+any(diacritic) + [K_1] > context(1) U+0301 c acute
+any(diacritic) + [K_2] > context(1) U+0300 c grave
+any(diacritic) + [K_3] > context(1) U+0309 c hook above
+any(diacritic) + [K_4] > context(1) U+0303 c tilde
+any(diacritic) + [K_5] > context(1) U+0323 c dot below
+any(diacritic) + [K_6] > context(1) U+0302 c grave
+any(diacritic) + [K_7] > context(1) U+031b c horn
+any(diacritic) + [K_8] > context(1) U+0306 c breve
 
 c =======================================================================================================
 
