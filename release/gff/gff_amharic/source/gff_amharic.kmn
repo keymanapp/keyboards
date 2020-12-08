@@ -51,8 +51,8 @@ c the following is Amharic specific
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)  'aAuUiIeEoO'[T_HAMIS]
-  store(loneVowelEthio) 'አአኡኡኢኢእእኦኦኤ'
+  store(loneVowelKeys)  [T_GEEZ]'aAuUiIeEoO'[T_HAMIS]
+  store(loneVowelEthio) 'አአአኡኡኢኢእእኦኦኤ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -81,8 +81,8 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'
-$keymanweb:  store(ግዕዝ-key)  'eE'
+$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'[T_GEEZ]
+$keymanweb:  store(ግዕዝ-key)  'eE'[T_GEEZ]
 $keymanonly: store(ካዕብ-key) 'uUùÙúÚûÛüÜ'
 $keymanweb:  store(ካዕብ-key) 'uU'
 $keymanonly: store(ሣልስ-key) 'iIìÌíÍîÎïÏ'
