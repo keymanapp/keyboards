@@ -1,0 +1,267 @@
+﻿c bj_cree_east_james_bay generated from template at 2020-12-08 14:22:39
+c with name "CreeBoard"
+store(&VERSION) '10.0'
+store(&NAME) 'CreeBoard'
+store(&COPYRIGHT) '© 2001-2020 Bill Jancewicz'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'bj_cree_east_james_bay.kvks'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c File Name: CRBRDUNI.KMN
+c File Version: 2001
+c Written by Bill Jancewicz
+
+c Revision: 02 May 2001, (BJ) redone for Unicode
+
+c Cree Keyboard for SIL & or BJ Coded font.
+c This Cree keyboard is based on the Eastern James Bay Cree School Board
+c Old Macintosh keyboard layout. (Not Roman: Q=che, q=chi)
+c Luci Salt's keyboard suggestions applied. See the doc file with the Keyboard
+c Layout illustrated, CREEBRD.DOC
+
+
++ "Q"             > U+1489  c che
++ [SHIFT RALT K_Q] > U+1553  c fe
++ "q"             > U+148B  c chi
++ [RALT K_Q]       > U+148C  c chii
+
++ "A"             > U+148D  c chu
++ [SHIFT RALT K_A] > U+148E  c chuu
++ "a"             > U+1490  c cha
++ [RALT K_A]       > U+1491  c chaa
+
++ "Z"             > U+14BB  c m
++ [SHIFT RALT K_Z] > U+14BD  c mw
++ "z"             > U+14A1  c ch
++ [RALT K_Z]       > deadkey(1)  c dead
+
++ "W"             > U+14A3  c me
++ [SHIFT RALT K_W] > U+1555  c fi
++ "w"             > U+14A5  c mi
++ [RALT K_W]       > U+14A6  c mii
+
++ "S"             > U+14A7  c mu
++ [SHIFT RALT K_S] > U+14A8  c muu
++ "s"             > U+14AA  c ma
++ [RALT K_S]       > U+14AB  c maa
+
++ "X"             > U+1525  c sh
++ [SHIFT RALT K_X] > deadkey(1)
++ "x"             > U+14D0  c n
++ [RALT K_X]       > U+14C3  c nii (also RALT+E)
+
++ "E"             > U+14C0  c ne
++ [SHIFT RALT K_E] > deadkey(1)
++ "e"             > U+14C2  c ni
++ [RALT K_E]       > U+14C3  c nii (also RALT+X)
+
++ "D"             > U+14C4  c nu
++ [SHIFT RALT K_D] > U+14C5  c nuu
++ "d"             > U+14C7  c na
++ [RALT K_D]       > U+14C8  c naa
+
++ "C"             > U+1427  c dot
++ [SHIFT RALT K_C] > U+1424  c w
++ "c"             > U+1483  c k
++ [RALT K_C]       > U+1484  c kw
+
++ "R"             > U+146B  c ke
++ [SHIFT RALT K_R] > U+1557  c fu
++ "r"             > U+146D  c ki
++ [RALT K_R]       > U+146E  c kii
+
++ "F"             > U+146F  c ku
++ [SHIFT RALT K_F] > U+1470  c kuu
++ "f"             > U+1472  c ka
++ [RALT K_F]       > U+1473  c kaa
+
++ "V"             > U+1510   c she
++ [SHIFT RALT K_V] > deadkey(1)
++ "v"             > U+153E   c y
++ [RALT K_V]       > deadkey(1)
+
++ "T"             > U+1526  c ye
++ [SHIFT RALT K_T] > U+1559  c fa
++ "t"             > U+1528  c yi
++ [RALT K_T]       > U+1529  c yii
+
++ "G"             > U+152A  c yu
++ [SHIFT RALT K_G] > U+152B  c yuu
++ "g"             > U+152D  c ya
++ [RALT K_G]       > U+152E  c yaa
+
++ "B"             > U+1511  c shi
++ [SHIFT RALT K_B] > U+1512  c shii
++ "b"             > U+1466  c t
++ [RALT K_B]       > U+1432  c pii
+
++ "Y"             > U+144C  c te
++ [SHIFT RALT K_Y] > U+155D  c f
++ "y"             > U+144E  c ti
++ [RALT K_Y]       > U+144F  c tii
+
++ "H"             > U+1450  c tu
++ [SHIFT RALT K_H] > U+1451  c tuu
++ "h"             > U+1455  c ta
++ [RALT K_H]       > U+1456  c taa
+
++ "N"             > U+1513  c shu
++ [SHIFT RALT K_N] > U+1514  c shuu
++ "n"             > U+1449  c p
++ [RALT K_N]       > deadkey(1)  c dead
+
++ "U"             > U+142F  c pe
++ [SHIFT RALT K_U] > deadkey(1) c dead
++ "u"             > U+1431  c pi
++ [RALT K_U]       > U+1432  c pii
+
++ "J"             > U+1433  c pu
++ [SHIFT RALT K_J] > U+1434  c puu
++ "j"             > U+1438  c pa
++ [RALT K_J]       > U+1439  c paa
+
++ "M"             > U+1515  c sha
++ [SHIFT RALT K_M] > U+1516  c shaa
++ "m"             > U+1505  c s
++ [RALT K_M]       > U+1404  c ii (also RALT+I)
+
++ "I"             > U+1401  c e
++ [SHIFT RALT K_I] > deadkey(1)  c dead
++ "i"             > U+1403  c i
++ [RALT K_I]       > U+1404  c ii (also RALT+M)
+
++ "K"             > U+1405  c u
++ [SHIFT RALT K_K] > U+1406  c uu
++ "k"             > U+140A  c a
++ [RALT K_K]       > U+140B  c aa
+
++ "<"             > U+14EA  c l
++ [SHIFT RALT K_COMMA] > U+201C  c open double quote
++ ","             > U+002C  c comma
++ [RALT K_COMMA]      > U+003C  c less than
+
++ "O"             > U+14ED  c se
++ [SHIFT RALT K_O] > U+1556  c fii
++ "o"             > U+14EF  c si
++ [RALT K_O]       > U+14F0  c sii
+
++ "L"             > U+14F1  c su
++ [SHIFT RALT K_L] > U+14F2  c suu
++ "l"             > U+14F4  c sa
++ [RALT K_L]       > U+14F5  c saa
+
++ ">"             > U+002E  c period
++ [SHIFT RALT K_PERIOD] > U+201D  c closed double quote
++ "."             > U+166E  c cree period
++ [RALT K_PERIOD]       > U+003E  c greater than
+
++ "P"             > U+14D3  c le
++ [SHIFT RALT K_P] > U+1558  c fuu
++ "p"             > U+14D5  c li
++ [RALT K_P]       > U+14D6  c lii
+
++ ":"             > U+14D7  c lu
++ [SHIFT RALT K_COLON] > U+14D8  c luu
++ ";"             > U+14DA  c la
++ [RALT K_COLON]       > U+14DB  c laa
+
++ "?"             > U+1550  c r
++ [SHIFT RALT K_SLASH] > U+0022  c straight quote
++ "/"             > U+1426  c h
++ [RALT K_SLASH]       > U+0027  c straight apostrophe
+
++ "{"             > U+1543  c re
++ [SHIFT RALT K_LBRKT] > U+155A  c faa
++ "["             > U+1546  c ri
++ [RALT K_LBRKT]       > U+1547  c rii
+
++ '"'             > U+1548  c ru
++ [SHIFT RALT K_QUOTE] > U+1549  c ruu
++ "'"             > U+154B  c ra
++ [RALT K_QUOTE]       > U+154C  c raa
+
++ '}'             > U+007D  c }
++ [SHIFT RALT K_RBRKT] > U+007B  c {
++ "]"             > U+005D  c ]
++ [RALT K_RBRKT]       > U+005B  c [
+
++ '|'             > U+007C  c |
++ [SHIFT RALT K_BKSLASH] > deadkey(1)  c dead
+c '\' > '\'
++ [RALT K_BKSLASH]       > deadkey(1)  c dead
+
+c top row
+
++ "~"             > U+1424  c w
++ [SHIFT RALT K_BKQUOTE] > deadkey(1)  c dead
++ "`"             > U+1427  c mid dot
++ [RALT K_BKQUOTE]       > deadkey(1)  c dead
+
++ "!"             > U+0021  c !
++ [SHIFT RALT K_1] > U+155E  c the
++ "1"             > U+0031  c 1
++ [RALT K_1]      > deadkey(1)  c dead
+
++ "@"             > U+166D  c Christ
++ [SHIFT RALT K_2] > U+1560  c thi
++ "2"             > U+0032  c 2
++ [RALT K_2]       > U+0040  c @
+
++ "#"             > U+0023  c #
++ [SHIFT RALT K_3] > U+1564  c thu
++ "3"             > U+0033  c 3
++ [RALT K_3]       > deadkey(1)  c dead
+
++ "$"             > U+0024  c $
++ [SHIFT RALT K_4] > U+1566  c tha
++ "4"             > U+0034  c 4
++ [RALT K_4]       > deadkey(1)  c dead
+
++ "%"             > U+0025  c %
++ [SHIFT RALT K_5] > U+156A  c th
++ "5"             > U+0035  c 5
++ [RALT K_5]       > deadkey(1)  c dead
+
++ "^"             > U+003F  c ?
++ [SHIFT RALT K_6] > deadkey(1)  c dead
++ "6"             > U+0036  c 6
++ [RALT K_6]       > deadkey(1)  c dead
+
++ "&"             > U+002F  c /
++ [SHIFT RALT K_7] > U+1562  c thii
++ "7"             > U+0037  c 7
++ [RALT K_7]       > deadkey(1)  c dead
+
++ "*"             > U+002A  c *
++ [SHIFT RALT K_8] > U+1565  c thuu
++ "8"             > U+0038  c 8
++ [RALT K_8]       > deadkey(1)  c dead
+
++ "("             > U+005B  c [
++ [SHIFT RALT K_9] > U+1567  c thaa
++ "9"             > U+0039  c 9
++ [RALT K_9]       > U+0028  c (
+
++ ")"             > U+005D  c ]
++ [SHIFT RALT K_0] > U+002B  c +
++ "0"             > U+0030  c 0
++ [RALT K_0]       > U+0029  c )
+
++ "_"             > U+1427  c mid dot
++ [SHIFT RALT K_HYPHEN] > U+005F  c _
++ "-"             > U+003D  c =
++ [RALT K_HYPHEN]       > U+002D  c -
+
++ "+"             > U+003A  c :
++ [SHIFT RALT K_EQUAL] > deadkey(1)  c dead
++ "="             > U+003B  c ;
++ [RALT K_EQUAL]       > deadkey(1)  c dead
+
+
+
+c EOF
+
