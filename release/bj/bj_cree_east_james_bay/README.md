@@ -3,7 +3,7 @@ CreeBoard keyboard
 
 © 2001-2020 Bill Jancewicz
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
@@ -16,5 +16,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Desktop
 
 
