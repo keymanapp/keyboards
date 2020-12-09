@@ -1,1 +1,1 @@
-retrived from: https://www.eastcree.org/cree/en/resources/how-to/cree-fonts/
+retrieved from: https://www.eastcree.org/cree/en/resources/how-to/cree-fonts/
