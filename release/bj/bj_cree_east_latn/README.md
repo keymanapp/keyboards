@@ -8,7 +8,7 @@ Version 1.1
 Description
 -----------
 
-Roman keyboard for typing vowel length (circumflex "hats" over vowels) in roman orthography (East Cree)
+Roman keyboard for typing vowel length (circumflex "hats" over vowels) in roman orthography (East Cree).
 
 Supported Platforms
 -------------------
