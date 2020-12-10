@@ -4,10 +4,9 @@
   require_once('header.php');
 ?>
 
-<p>
-    Roman keyboard for typing vowel length (macrons over vowels) in Standard Roman Orthography (SRO-Western Cree).
+<p>Roman keyboard for typing vowel length (macrons over vowels) in Standard Roman Orthography (SRO-Western Cree).</p>
 
-</p>
+<p>Macrons over long vowels are available by typing two vowels in a row. Thus, typing "aa" would become "ā". The long vowels are aeio and AEIO.</p>
 
 <h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
