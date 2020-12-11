@@ -3,10 +3,9 @@ c with name "Western Cree (TH-Woods)"
 store(&VERSION) '10.0'
 store(&NAME) 'Western Cree (TH-Woods)'
 store(&COPYRIGHT) '© 2003-2020 Bill Jancewicz'
-store(&KEYBOARDVERSION) '1.0'
-store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.1'
 store(&VISUALKEYBOARD) 'bj_cree_woods.kvks'
-store(&LAYOUTFILE) 'bj_cree_woods.keyman-touch-layout'
+store(&TARGETS) 'windows macosx linux web desktop'
 
 begin Unicode > use(main)
 
@@ -159,6 +158,8 @@ c   mw +    vowel  >  w     m vowel
      U+14BD U+140A > U+1427 U+14AA
 c   Consonant + w + vowel   >  w Consonant vowel
    any(CC)   U+1424  any(VV) > U+1427 index(CC,1) index(VV,3)
+
+   any(CC_shth)   U+1424  any(VV) > U+1427 index(CC_shth,1) index(VV,3)
 
 c Convert consonant followed by vowels into syllable:
 

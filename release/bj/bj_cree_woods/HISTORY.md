@@ -1,6 +1,11 @@
 Western Cree (TH-Woods) Change History
 ====================
 
-1.0 (2020-12-07)
+1.1 (2020-12-07)
 ----------------
-* Created by Bill Jancewicz
+* migrate to the public repo
+* fix the two keys and add rules for sh and th
+
+1.0
+----------------
+* Created by Bill Jancewicz in 2003
