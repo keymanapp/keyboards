@@ -21,20 +21,34 @@ store(ConsKey) "ptkcmnsyf"
 store(CapConsKey) "PTKCMNSYF"
 
 c Consonant followed by vowel:
-c            p      t      k      c      m      n       s      sh     y       f      th
-store(Ce)  U+142F U+144C U+146B U+1489 U+14A3 U+14C0  U+14ED U+1510 U+1526  U+1553 U+15A7
-store(Ci)  U+1431 U+144E U+146D U+148B U+14A5 U+14C2  U+14EF U+1511 U+1528  U+1555 U+15A8
-store(Cii) U+1432 U+144F U+146E U+148C U+14A6 U+14C3  U+14F0 U+1512 U+1529  U+1556 U+15A9
-store(Cu)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+1513 U+152A  U+1557 U+15AA
-store(Cuu) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+1514 U+152B  U+1558 U+15AB
-store(Co)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+1513 U+152A  U+1557 U+15AA
-store(Coo) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+1514 U+152B  U+1558 U+15AB
-store(Ca)  U+1438 U+1455 U+1472 U+1490 U+14AA U+14C7  U+14F4 U+1515 U+152D  U+1559 U+15AC
-store(Caa) U+1439 U+1456 U+1473 U+1491 U+14AB U+14C8  U+14F5 U+1516 U+152E  U+155A U+15AD
+c            p      t      k      c      m      n       s      y       f    
+store(Ce)  U+142F U+144C U+146B U+1489 U+14A3 U+14C0  U+14ED U+1526  U+1553 
+store(Ci)  U+1431 U+144E U+146D U+148B U+14A5 U+14C2  U+14EF U+1528  U+1555 
+store(Cii) U+1432 U+144F U+146E U+148C U+14A6 U+14C3  U+14F0 U+1529  U+1556 
+store(Cu)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+152A  U+1557 
+store(Cuu) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+152B  U+1558 
+store(Co)  U+1433 U+1450 U+146F U+148D U+14A7 U+14C4  U+14F1 U+152A  U+1557 
+store(Coo) U+1434 U+1451 U+1470 U+148E U+14A8 U+14C5  U+14F2 U+152B  U+1558 
+store(Ca)  U+1438 U+1455 U+1472 U+1490 U+14AA U+14C7  U+14F4 U+152D  U+1559 
+store(Caa) U+1439 U+1456 U+1473 U+1491 U+14AB U+14C8  U+14F5 U+152E  U+155A 
+
+c Consonant sh and th followed by vowel:
+store(Ce_shth)  U+1510 U+15A7
+store(Ci_shth)  U+1511 U+15A8
+store(Cii_shth) U+1512 U+15A9
+store(Cu_shth)  U+1513 U+15AA
+store(Cuu_shth) U+1514 U+15AB
+store(Co_shth)  U+1513 U+15AA
+store(Coo_shth) U+1514 U+15AB
+store(Ca_shth)  U+1515 U+15AC
+store(Caa_shth) U+1516 U+15AD
 
 c Standalone or trailing consonant, "western finals":
-c            p      t      k      c      m      n       s      sh     y       f      th
-store(CC)  U+144A U+141F U+1420 U+1428 U+14BC U+1423  U+1422 U+1525 U+1429  U+155D U+15AE
+c            p      t      k      c      m      n       s      y       f
+store(CC)  U+144A U+141F U+1420 U+1428 U+14BC U+1423  U+1422  U+1429  U+155D
+
+c Standalone or trailing sh and th
+store(CC_shth)  U+1525 U+15AE 
 
 c Vowel keys
 store(VowelKey) "eiuoa"
@@ -157,6 +171,18 @@ c Convert consonant followed by vowels into syllable:
     any(CC) U+1406 > index(Coo,1) 
     any(CC) U+140A > index(Ca,1) 
     any(CC) U+140B > index(Caa,1)
+
+c Convert consonant sh and th followed by vowels into syllable:
+
+    any(CC_shth) U+1401 > index(Ce_shth,1) 
+    any(CC_shth) U+1403 > index(Ci_shth,1) 
+    any(CC_shth) U+1404 > index(Cii_shth,1) 
+    any(CC_shth) U+1405 > index(Cu_shth,1) 
+    any(CC_shth) U+1406 > index(Cuu_shth,1) 
+    any(CC_shth) U+1405 > index(Co_shth,1) 
+    any(CC_shth) U+1406 > index(Coo_shth,1) 
+    any(CC_shth) U+140A > index(Ca_shth,1) 
+    any(CC_shth) U+140B > index(Caa_shth,1)
    
 
 c Vowel followed by duplicate vowel changes to long form:
@@ -168,6 +194,11 @@ c Vowel followed by duplicate vowel changes to long form:
     any(Co) U+1405 > index(Coo,1)  
     any(Ca) U+140A > index(Caa,1)  
 
+    any(Ci_shth) U+1403 > index(Cii_shth,1)  
+    any(Cu_shth) U+1405 > index(Cuu_shth,1)  
+    any(Co_shth) U+1405 > index(Coo_shth,1)  
+    any(Ca_shth) U+140A > index(Caa_shth,1)  
+
 c Vowel (other than u, already handled above) followed by u makes u word-final:
     any(Ce)  U+1405 > index(Ce,1)  U+1424
     any(Ci)  U+1405 > index(Ci,1)  U+1424
@@ -177,14 +208,27 @@ c Vowel (other than u, already handled above) followed by u makes u word-final:
     any(Ca)  U+1405 > index(Ca,1)  U+1424
     any(Caa) U+1405 > index(Caa,1) U+1424
 
+    any(Ce_shth)  U+1405 > index(Ce_shth,1)  U+1424
+    any(Ci_shth)  U+1405 > index(Ci_shth,1)  U+1424
+    any(Cii_shth) U+1405 > index(Cii_shth,1) U+1424
+    any(Cuu_shth) U+1405 > index(Cuu_shth,1) U+1424
+    any(Coo_shth) U+1405 > index(Coo_shth,1) U+1424
+    any(Ca_shth)  U+1405 > index(Ca_shth,1)  U+1424
+    any(Caa_shth) U+1405 > index(Caa_shth,1) U+1424
+
 c Word-final u followed by any letter changes u back to standalone:
     U+1424 any(CC) > U+1427 index(CC,2)
     U+1424 any(VV) > U+1427 index(VV,2)
+
+    U+1424 any(CC_shth) > U+1427 index(CC_shth,2)
+
 c Word-final u+h+any letter changes u back to standalone
     U+1424 U+1426 any(CC) > U+1405 U+1426 index(CC,3)
     U+1424 U+1426 any(VV) > U+1405 U+1426 index(VV,3)
     U+1424  U+1427   > U+1405  U+1427
 
+    U+1424 U+1426 any(CC_shth) > U+1405 U+1426 index(CC_shth,3)
+    
 c Special rule for Christ (remember, ch is already c)
 c     ch     r      i      s      t    > christ symbol
     U+1428 U+1552 U+1403 U+1422 U+141F > U+166D
