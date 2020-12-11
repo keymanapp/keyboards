@@ -10,8 +10,6 @@ store(&LAYOUTFILE) 'bj_cree_woods.keyman-touch-layout'
 
 begin Unicode > use(main)
 
-group(main) using keys
-
 c ================================================================
 c STORES
 c ================================================================
@@ -19,8 +17,8 @@ c ================================================================
 c initial consonant keys (The Î is U+1525 which is the sh consonant)
 c (The ÿ is U+15AE which is the th consonant that looks like y)
 
-store(ConsKey) "ptkcmnsÎyfÿ"
-store(CapConsKey) "PTKCMNSÎYFÿ"
+store(ConsKey) "ptkcmnsyf"
+store(CapConsKey) "PTKCMNSYF"
 
 c Consonant followed by vowel:
 c            p      t      k      c      m      n       s      sh     y       f      th
