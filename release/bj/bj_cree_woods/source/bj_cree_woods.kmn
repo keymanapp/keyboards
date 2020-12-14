@@ -101,7 +101,7 @@ c Alternate consonants: (voiced for voiceless)
     + "v" > U+155D
     + "z" > U+1422
 c "r" and "l" sigma character (western style)
-    + "l" > U+14EB
+    + "l" > U+14EC 
     + "r" > U+1552
 
 c Vowel key to vowel:
@@ -121,6 +121,22 @@ c Period
 
 c Special thin non-breaking space for preverbs:
     + "_" > U+202F
+
+c various symbols and numbers
+store(numbers_keys)     '1234567890'
+store(numbers_chars)    U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+0030
+store(symbols_keys)     "`-=[]\;',/"
+store(symbols_chars)    U+0060 U+002D U+003D U+005B U+005D U+005C U+003B U+0027 U+002C U+002F     
+store(symbols_Skeys)    '~!@#$%^&*()_+{}|:"<>?'
+store(symbols_Schars)   U+007E U+0021 U+0040 U+0023 U+0024 U+0025 U+005E U+0026 U+002A U+0028 U+0029 U+005F U+002B U+007B U+007D U+007C U+003A U+0022 U+003C U+003E U+003F
+
++ any(numbers_keys) > index(numbers_chars,1)
++ any(symbols_keys) > index(symbols_chars,1)
++ any(symbols_Skeys)    > index(symbols_Schars,1)
+
+c unwanted keys: q x Q D G J Z X V B
+store(unwanted_keys)    "qxQDGJZXVB"
++ any(unwanted_keys) > nul
 
 c If we did anything, then go look for syllables    
     match   > use(MakeSyllables)
@@ -229,6 +245,9 @@ c Word-final u+h+any letter changes u back to standalone
     U+1424  U+1427   > U+1405  U+1427
 
     U+1424 U+1426 any(CC_shth) > U+1405 U+1426 index(CC_shth,3)
+
+c final hk to output U+157D (ᕽ)
+U+1426 U+1420 > U+157D
     
 c Special rule for Christ (remember, ch is already c)
 c     ch     r      i      s      t    > christ symbol
