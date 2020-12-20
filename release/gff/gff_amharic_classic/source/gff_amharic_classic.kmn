@@ -20,9 +20,8 @@ store(&KEYBOARDVERSION) '2.0'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_A]'
 store(&BITMAP) 'gff_amharic.ico'
-store(&VISUALKEYBOARD) 'gff_amharic.kvks'
-store(&TARGETS) 'any'
-store(&LAYOUTFILE) 'gff_amharic.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'gff_amharic_classic.kvks'
+store(&LAYOUTFILE) 'gff_amharic_classic.keyman-touch-layout'
 $keymanonly:  store(&mnemonicLayout) "1"
 c 
 c =====================End Identity Section=====================================================
@@ -99,6 +98,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
+store(&TARGETS) 'iphone ipad androidphone androidtablet mobile'
 
   begin Unicode > use(main)
   group(main) using keys
