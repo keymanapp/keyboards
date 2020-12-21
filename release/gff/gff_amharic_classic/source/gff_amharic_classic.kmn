@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '10.0'
-store(&NAME) 'አማርኛ (Amharic Classic)'
+store(&NAME) 'አማርኛ (Amharic) Classic'
 store(&COPYRIGHT) '© 2009-2020 Ge' U+0027 'ez Frontier Foundation'
 store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
 store(&KEYBOARDVERSION) '2.0'
@@ -98,7 +98,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&TARGETS) 'iphone ipad androidphone androidtablet mobile'
+store(&TARGETS) 'iphone ipad androidphone androidtablet mobile tablet'
 
   begin Unicode > use(main)
   group(main) using keys
