@@ -65,12 +65,12 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 
 <div id='osk-phone-container'>
   <h2>Phone Keyboard Layout</h2>
-  <div id='osk-phone' data-states='default non-amharic punctuation punctuation-2'></div>
+  <div id='osk-phone' data-states='default symbol'></div>
 </div>
 
 <div id='osk-tablet-container'>
   <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default non-amharic punctuation punctuation-2'></div>
+  <div id='osk-tablet' data-states='default symbol'></div>
 </div>
 
 <p>Note: Longpress keys are not currently visible in this static documentation, and so some additional letters may be accessible through these longpress keys.</p>
