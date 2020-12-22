@@ -63,11 +63,6 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 
 <h3>Keyboard Layout</h3>
 
-<div id='osk-container'>
-  <h2>Desktop Keyboard Layout</h2>
-  <div id='osk' data-states='default shift'></div>
-</div>
-
 <div id='osk-phone-container'>
   <h2>Phone Keyboard Layout</h2>
   <div id='osk-phone' data-states='default non-amharic punctuation punctuation-2'></div>
