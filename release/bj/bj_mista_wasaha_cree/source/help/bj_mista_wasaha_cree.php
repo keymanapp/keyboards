@@ -9,3 +9,6 @@
 </p>
 
 <h1>Keyboard Layout</h1>
+
+<div id='osk' data-states='default shift'>
+</div>

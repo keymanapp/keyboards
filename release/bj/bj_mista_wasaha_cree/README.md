@@ -7,11 +7,7 @@ Version 1.1
 
 Description
 -----------
-
-Swampy Cree (Tataskweyak) generated from template
-
-Links
------
+This keyboard is distinguished by: TH characters that resemble Y characters (with a bar), w-dot precedes the character (East Cree style), western finals, zig-zag R's and L's. It uses Unified Canadian Aboriginal Syllabics.
 
 Supported Platforms
 -------------------
@@ -19,11 +15,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
  * Desktop devices
- * Tablet devices
 
