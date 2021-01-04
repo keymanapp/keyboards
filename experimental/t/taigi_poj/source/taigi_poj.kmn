@@ -227,6 +227,8 @@ c
 + [CAPS K_W] > U+0057
 + [NCAPS SHIFT K_W] > U+0057
 + [CAPS SHIFT K_W] > U+0077
++ [ALT K_W] > "e͘"
++ [ALT SHIFT K_W] > "E͘"
 
 + [NCAPS K_X] > U+0078
 + [CAPS K_X] > U+0058
@@ -314,6 +316,9 @@ c
 "o" + "o" > "o͘"
 "O" + "o" > "O͘"
 "O" + "O" > "O͘"
+"e" + "e" > "e͘"
+"E" + "e" > "E͘"
+"E" + "E" > "E͘"
 
 c
 c Finals with tone numbers
@@ -757,6 +762,7 @@ c Finals with tone number 8
 "o͘h" + "8" > "o̍͘h"
 "ek" + "8" > "e̍k"
 "eh" + "8" > "e̍h"
+"e͘h" + "8" > "e̍͘h"
 "oh" + "8" > "o̍h"
 "aih" + "8" > "a̍ih"
 "auh" + "8" > "a̍uh"
@@ -790,6 +796,7 @@ c Capitalized
 "O͘h" + "8" > "O̍͘h"
 "Ek" + "8" > "E̍k"
 "Eh" + "8" > "E̍h"
+"E͘h" + "8" > "E̍͘h"
 "Oh" + "8" > "O̍h"
 "Aih" + "8" > "A̍ih"
 "Auh" + "8" > "A̍uh"
@@ -823,6 +830,7 @@ c Uppercased
 "O͘H" + "8" > "O̍͘H"
 "EK" + "8" > "E̍K"
 "EH" + "8" > "E̍H"
+"E͘H" + "8" > "E̍͘H"
 "OH" + "8" > "O̍H"
 "AIH" + "8" > "A̍IH"
 "AUH" + "8" > "A̍UH"
@@ -964,6 +972,8 @@ any(vowels) + "2" > index(vowels_tone2, 1)
 any(vowels) "ⁿ" + "2" > index(vowels_tone2, 1) "ⁿ"
 "o͘" + "2" > "ó͘"
 "O͘" + "2" > "Ó͘"
+"e͘" + "2" > "é͘"
+"E͘" + "2" > "É͘"
 "m" + "2" > "ḿ"
 "M" + "2" > "Ḿ"
 "ng" + "2" > "ńg"
@@ -975,6 +985,8 @@ any(vowels) + "3" > index(vowels_tone3, 1)
 any(vowels) "ⁿ" + "3" > index(vowels_tone3, 1) "ⁿ"
 "o͘" + "3" > "ò͘"
 "O͘" + "3" > "Ò͘"
+"e͘" + "3" > "è͘"
+"E͘" + "3" > "È͘"
 "m" + "3" > "m̀"
 "M" + "3" > "M̀"
 "ng" + "3" > "ǹg"
@@ -986,6 +998,8 @@ any(vowels) + "5" > index(vowels_tone5, 1)
 any(vowels) "ⁿ" + "5" > index(vowels_tone5, 1) "ⁿ"
 "o͘" + "5" > "ô͘"
 "O͘" + "5" > "Ô͘"
+"e͘" + "5" > "ê͘"
+"E͘" + "5" > "Ê͘"
 "m" + "5" > "m̂"
 "M" + "5" > "M̂"
 "ng" + "5" > "n̂g"
@@ -997,6 +1011,8 @@ any(vowels) + "7" > index(vowels_tone7, 1)
 any(vowels) "ⁿ" + "7" > index(vowels_tone7, 1) "ⁿ"
 "o͘" + "7" > "ō͘"
 "O͘" + "7" > "Ō͘"
+"e͘" + "7" > "ē͘"
+"E͘" + "7" > "Ē͘"
 "m" + "7" > "m̄"
 "M" + "7" > "M̄"
 "ng" + "7" > "n̄g"
@@ -1008,6 +1024,8 @@ any(vowels) + "9" > index(vowels_tone9, 1)
 any(vowels) "ⁿ" + "9" > index(vowels_tone9, 1) "ⁿ"
 "o͘" + "9" > "ŏ͘"
 "O͘" + "9" > "Ŏ͘"
+"e͘" + "9" > "ĕ͘"
+"E͘" + "9" > "Ĕ͘"
 "m" + "9" > "m̆"
 "M" + "9" > "M̆"
 "ng" + "9" > "n̆g"
@@ -1060,6 +1078,13 @@ c o͘ with tone mark
 "o" + [T_o7] > "ō͘"
 "o" + [T_o8] > "o̍͘"
 "o" + [T_o9] > "ŏ͘"
+c e͘ with tone mark
+"e" + [T_e2] > "é͘"
+"e" + [T_e3] > "è͘"
+"e" + [T_e5] > "ê͘"
+"e" + [T_e7] > "ē͘"
+"e" + [T_e8] > "e̍͘"
+"e" + [T_e9] > "ĕ͘"
 c m with tone mark
 + [T_m2] > "ḿ"
 + [T_m3] > "m̀"
@@ -1117,6 +1142,13 @@ c O͘ with tone mark
 "O" + [T_o7u] > "Ō͘"
 "O" + [T_o8u] > "O̍͘"
 "O" + [T_o9u] > "Ŏ͘"
+c E͘ with tone mark
+"E" + [T_e2u] > "É͘"
+"E" + [T_e3u] > "È͘"
+"E" + [T_e5u] > "Ê͘"
+"E" + [T_e7u] > "Ē͘"
+"E" + [T_e8u] > "E̍͘"
+"E" + [T_e9u] > "Ĕ͘"
 c M with tone mark
 + [T_m2u] > "Ḿ"
 + [T_m3u] > "M̀"
