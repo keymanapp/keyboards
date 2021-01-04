@@ -21,6 +21,7 @@
 <p><b>Aspirated consonants:</b> The rdfgj keys have been replaced with tʰqcʰpʰk</p>
 <p><b>Length dot:</b> The b key has been replaced with the length dot.</p>
 <p><b>Glottal stop:</b> The right slanted apostrophe used to represent a glottal stop ʼ has replaced the v key.</p>
+<p><b>Acute accent:</b> The acute accent can be with the comma key following the base character.</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
