@@ -1,6 +1,12 @@
 Rohingya Arabic Keyboard Change History
 =======================
 
+1.1 (14 Dec 2020)
+-------------------
+* Add right-alt layers 
+* Add tablet keyboard
+* Changed font to use Scheherazade New Rohingya
+
 1.0.2 (8 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux
