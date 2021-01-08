@@ -1,7 +1,7 @@
 Swampy Cree (Tataskweyak) Change History
 ====================
 
-1.1 (2021-12-09)
+1.1 (2021-01-08)
 ----------------
 * migrate to the public repo
 * fix the two keys and add rules for sh and th
