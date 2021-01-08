@@ -1,7 +1,7 @@
 Bari (SIL) Keyboard
 =====================
 
-Copyright (C) 2016-20218 SIL International
+Copyright (C) 2016-2021 SIL International
 
 Version 1.1.1
 
