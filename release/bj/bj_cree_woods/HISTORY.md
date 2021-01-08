@@ -1,6 +1,10 @@
 Western Cree (TH-Woods) Change History
 ====================
 
+1.2 (2021-01-08)
+-----------------
+* add rules for R and L to output the same characters as r and l
+
 1.1 (2020-12-07)
 ----------------
 * migrate to the public repo

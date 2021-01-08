@@ -1,9 +1,9 @@
 Western Cree (TH-Woods) keyboard
 ==============
 
-© 2003-2020 Bill Jancewicz
+© 2003-2021 Bill Jancewicz
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
