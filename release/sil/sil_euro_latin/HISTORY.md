@@ -1,6 +1,6 @@
 # EuroLatin (SIL) Keyboard Change History
 
-## 1.9.3 (2 Dec 2020)
+## 1.9.3 (11 Jan 2021)
 * Add support for Zapotec [ztg]
 * Add support for Mingrelian [xmf]
 ## 1.9.2 (12 Aug 2020)
