@@ -1,0 +1,177 @@
+﻿store(&VERSION) "10.0"
+store(&NAME) 'Ó tissi (Pit River)'
+store(&COPYRIGHT) '© 2020 Indigenous Language Network'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'o_tissi.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'o_tissi.kvks'
+store(&BITMAP) 'o_tissi.ico'
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [SHIFT K_COMMA] > ','
++ [K_COMMA] > '́'
++ [K_SLASH] > 'ʰ'
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'
+
+c touch keyboard
+c regular lower case letters
+
++ [K_Q] > 'q'
++ [K_W] > 'w'
++ [K_E] > 'e'
++ [K_T] > 't'
++ [K_Y] > 'y'
++ [K_U] > 'u'
++ [K_I] > 'i'
++ [K_O] > 'o'
++ [K_P] > 'p'
++ [K_A] > 'a'
++ [K_S] > 's'
++ [K_H] > 'h'
++ [K_K] > 'k'
++ [K_L] > 'l'
++ [K_C] > 'c'
++ [K_V] > U+02BC
++ [K_N] > 'n'
++ [K_M] > 'm'
+
+c glottalized lower case letters
+
++ [T_gc] > 'c̓'
++ [T_gq] > 'q̓'
++ [T_gw] > 'w̓'
++ [T_gt] > 't̓'
++ [T_gy] > 'y̓'
++ [T_gp] > 'p̓'
++ [T_gh] > 'h̓'
++ [T_gk] > 'k̓'
++ [T_gl] > 'l̓'
++ [T_gn] > 'n̓'
++ [T_gm] > 'm̓'
+
+c aspirated lower case letters
+
++ [T_at] > 'tʰ'
++ [T_aq] > 'qʰ'
++ [T_ap] > 'pʰ'
++ [T_ac] > 'cʰ'
++ [T_ak] > 'kʰ'
+
+c high tone vowels
+
++ [U_00E1] > 'á'
++ [U_00E9] > 'é'
++ [U_00ED] > 'í'
++ [U_00F3] > 'ó'
++ [U_00FA] > 'ú'
+
+c symbols
+
++ [U_002C] > ','
++ [U_02D1] > 'ˑ'
++ [U_02BC] > 'ʼ'
++ [U_003F] > '?'
++ [U_002E] > '.'
+
+c glottalized uppercase letters
+
++[SHIFT T_ugq] > 'Q̓'
++[SHIFT T_ugw] > 'W̓'
++[SHIFT T_ugt] > 'T̓'
++[SHIFT T_ugy] > 'Y̓'
++[SHIFT T_ugp] > 'P̓'
++[SHIFT T_ugh] > 'H̓'
++[SHIFT T_ugk] > 'K̓'
++[SHIFT T_ugl] > 'L̓'
++[SHIFT T_ugc] > 'C̓'
++[SHIFT T_ugn] > 'N̓'
++[SHIFT T_ugm] > 'M̓'
+
+c aspirated uppercase letters
+
++[SHIFT T_uat] > 'Tʰ'
++[SHIFT T_uaq] > 'Qʰ'
++[SHIFT T_uac] > 'Cʰ'
++[SHIFT T_uak] > 'Kʰ'
++[SHIFT T_uap] > 'Pʰ'
+
+c on screen keyboard
+
+store(english) "zx``ZXVB"
++ any(english) > nul
+
+c symbols
+
+c +[K_V] > ','
++[K_B] > 'ˑ'
+
+c aspirated consonants
+
++[K_R] > 'tʰ'
++[K_D] > 'qʰ'
++[K_F] > 'cʰ'
++[K_G] > 'pʰ'
++[K_J] > 'kʰ'
+
+c glottalized consonants
+
++[RALT K_C] > 'c̓'
++[RALT K_Q] > 'q̓'
++[RALT K_W] > 'w̓'
++[RALT K_T] > 't̓'
++[RALT K_Y] > 'y̓'
++[RALT K_P] > 'p̓'
++[RALT K_H] > 'h̓'
++[RALT K_K] > 'k̓'
++[RALT K_L] > 'l̓'
++[RALT K_N] > 'n̓'
++[RALT K_M] > 'm̓'
+
+c high tone vowels
+
++[RALT K_A] > 'á'
++[RALT K_E] > 'é'
++[RALT K_I] > 'í'
++[RALT K_O] > 'ó'
++[RALT K_U] > 'ú'
+
+c uppercase glottalized consonants
+
++ [SHIFT RALT K_C] > 'C̓'
++ [SHIFT RALT K_Q] > 'Q̓'
++ [SHIFT RALT K_W] > 'W̓'
++ [SHIFT RALT K_T] > 'T̓'
++ [SHIFT RALT K_Y] > 'Y̓'
++ [SHIFT RALT K_P] > 'P̓'
++ [SHIFT RALT K_H] > 'H̓'
++ [SHIFT RALT K_K] > 'K̓'
++ [SHIFT RALT K_L] > 'L̓'
++ [SHIFT RALT K_N] > 'N̓'
++ [SHIFT RALT K_M] > 'M̓'
+
+c uppercase aspirated consonants
+
++[SHIFT K_R] > 'Tʰ'
++[SHIFT K_D] > 'Qʰ'
++[SHIFT K_F] > 'Cʰ'
++[SHIFT K_G] > 'Pʰ'
++[SHIFT K_J] > 'Kʰ'
+
+c uppercase hightone vowels
+
++[SHIFT RALT K_A] > 'Á'
++[SHIFT RALT K_E] > 'É'
++[SHIFT RALT K_I] > 'Í'
++[SHIFT RALT K_O] > 'Ó'
++[SHIFT RALT K_U] > 'Ú'

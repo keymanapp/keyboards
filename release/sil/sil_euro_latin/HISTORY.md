@@ -1,5 +1,8 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 1.9.3 (11 Jan 2021)
+* Add support for Zapotec [ztg]
+* Add support for Mingrelian [xmf]
 ## 1.9.2 (12 Aug 2020)
 * Assign DejaVu Sans font as display font
 ## 1.9.1 (4 Jun 2020)
