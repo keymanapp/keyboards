@@ -10,32 +10,32 @@ function merge_keyboard_info {
   local group=$2
   local shortname=$3
   local base_keyboard=$4
-  
+
   echo "Merging $keyboard_info for $base_keyboard"
-  
+
   cp "$keyboard_info" "build/$keyboard_info" || die
-  
+
   # Need to call into kmcomp to read the .kmp/.kmx and .js data
   # and merge the compiled data with the source keyboard_info data
-  
+
   #
   # We can try and deduce packageFilename and jsFilename
   #
-   
+
   if [ ! -n "$keyboard_info_packageFilename" ]; then
     # See if a name.kmp file exists in the build/ folder
     if [ -f "build/$base_keyboard.kmp" ]; then
       keyboard_info_packageFilename=$base_keyboard.kmp
     fi
   fi
-    
+
   if [ ! -n "$keyboard_info_jsFilename" ]; then
     # See if a name.js file exists in the build/ folder
     if [ -f "build/$base_keyboard.js" ]; then
       keyboard_info_jsFilename=$base_keyboard.js
     fi
   fi
-  
+
   #
   # Here we come a bit unstuck with slash vs backslash, because of quoted parameters
   # to a Windows PE executable. So we pass \\ instead of / to avoid the problem. Lots
@@ -50,7 +50,7 @@ function merge_keyboard_info {
   local pHelpLink=
   local pHelpLinkFlag=
   local pValidateId=
-    
+
   if [ -f build/"$keyboard_info_packageFilename" ]; then
     pInKmp=build\\"$keyboard_info_packageFilename"
     pInKmpM=-m
@@ -60,23 +60,28 @@ function merge_keyboard_info {
     pInJs=build\\"$keyboard_info_jsFilename"
     pInJsM=-m
   fi
-  
+
   if [ -f source/help/"$base_keyboard".php ]; then
     pHelpLink="https://help.keyman.com/keyboard/$base_keyboard"
     pHelpLinkFlag=-add-help-link
-  fi  
+  fi
 
   if [[ $group == release && $shortname != packages ]]; then
     pValidateId=-m-validate-id
   fi
-  
+
   if [[ -z "$pInKmp" && -z "$pInJs" ]]; then
     echo Failure: neither a .kmp nor a .js were found for this folder
     return 1
   fi
-  
-  # echo $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" $pHelpLinkFlag "$pHelpLink" -source-path "$group/$shortname/$base_keyboard" "$pOut" 
+
+  # echo $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" $pHelpLinkFlag "$pHelpLink" -source-path "$group/$shortname/$base_keyboard" "$pOut"
   $KMCOMP_LAUNCHER "$KMCOMP" $pValidateId -s $pInKmpM "$pInKmp" $pInJsM "$pInJs" $pHelpLinkFlag "$pHelpLink" -source-path "$group/$shortname/$base_keyboard" "$pOut"   || die "Failed to merge keyboard_info for $1"
-  
+
+  # Use the date of the last committed change in this folder and insert into the destination .keyboard_info
+  # Note, we trim the +00:00 time zone component and replace it with Z
+  local pDate=$(TZ=UTC git show --quiet --date=iso-strict-local --format="%cd" | cut -c 1-19 -)Z
+  sed -i '/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut"
+
   return 0
 }
