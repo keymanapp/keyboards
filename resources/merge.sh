@@ -82,11 +82,12 @@ function merge_keyboard_info {
   # Note, we trim the +00:00 time zone component and replace it with Z
   local pDate=$(TZ=UTC git show --quiet --date=iso-strict-local --format="%cd" | cut -c 1-19 -)Z
 
-  # for macos sed is
-  case "${OSTYPE}" in
-    "darwin") sed -i '' 's/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut" ;;
-    *) sed -i '/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut" ;;
-  esac
+  # for macos sed is not quite gnu-compatible
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    sed -i '' 's/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut"
+  else
+    sed -i '/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut" ;;
+  fi
 
   return 0
 }
