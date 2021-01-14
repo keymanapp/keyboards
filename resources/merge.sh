@@ -80,13 +80,13 @@ function merge_keyboard_info {
 
   # Use the date of the last committed change in this folder and insert into the destination .keyboard_info
   # Note, we trim the +00:00 time zone component and replace it with Z
-  local pDate=$(TZ=UTC git show --quiet --date=iso-strict-local --format="%cd" | cut -c 1-19 -)Z
+  local pDate=$(TZ=UTC git log --quiet --date=iso-strict-local --format="%cd" -n 1 -- . | cut -c 1-19 -)Z
 
   # for macos sed is not quite gnu-compatible
   if [[ "$OSTYPE" == "darwin"* ]]; then
     sed -i '' 's/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut"
   else
-    sed -i '/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut" ;;
+    sed -i '/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut"
   fi
 
   return 0
