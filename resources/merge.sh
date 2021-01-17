@@ -84,9 +84,9 @@ function merge_keyboard_info {
 
   # for macos sed is not quite gnu-compatible
   if [[ "$OSTYPE" == "darwin"* ]]; then
-    sed -i '' 's/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut"
+    sed -i '' -E 's/.+"lastModifiedDate".+/  "lastModifiedDate": "'$pDate'",/' "build/$keyboard_info"
   else
-    sed -i '/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "$pOut"
+    sed -i '/"lastModifiedDate"/c\  "lastModifiedDate": "'$pDate'",' "build/$keyboard_info"
   fi
 
   return 0
