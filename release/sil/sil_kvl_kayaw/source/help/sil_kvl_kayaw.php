@@ -49,12 +49,12 @@
 
 <div id='osk-phone-container'>
   <h2>Phone Keyboard Layout</h2>
-  <div id='osk-phone' data-states='default shift Symbol'></div>
+  <div id='osk-phone' data-states='default shift numeric'></div>
 </div>
 
 <div id='osk-tablet-container'>
   <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default shift Symbol'></div>
+  <div id='osk-tablet' data-states='default shift numeric'></div>
 </div>
 
 <h2>License</h2>
