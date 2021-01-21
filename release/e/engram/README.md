@@ -48,4 +48,3 @@ Supported Platforms
 
 ToDo
 ----
-Add images.
