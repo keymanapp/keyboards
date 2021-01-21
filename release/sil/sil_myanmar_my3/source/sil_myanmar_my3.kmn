@@ -3,10 +3,11 @@ store(&NAME) "Myanmar3 (SIL)"
 store(&BITMAP) 'sil_myanmar_my3.ico'
 store(&VISUALKEYBOARD) 'sil_myanmar_my3.kvks'
 store(&capsalwaysoff) "1"
-store(&TARGETS) 'windows macosx linux web'
+store(&TARGETS) 'any windows macosx linux web'
 store(&KEYBOARDVERSION) '1.5'
 store(&ETHNOLOGUECODE) 'mya'
 store(&COPYRIGHT) '© 2015-2018 SIL International'
+store(&LAYOUTFILE) 'sil_myanmar_my3.keyman-touch-layout'
 
 begin Unicode > use(Main)
 
@@ -162,3 +163,5 @@ any(mediaU) U+1031 + [K_BKSP]> U+1031
 
 U+1039 any(consU) U+1031 + [K_BKSP] > U+1039 outs(filler) U+1031
 U+1039 any(consU) + [K_BKSP] > nul
+
++ [T_1007] > U+1007
