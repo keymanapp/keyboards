@@ -3,7 +3,7 @@ Engram keyboard layout
 
 © 2021 Arno Klein
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
