@@ -3,27 +3,32 @@ Engram keyboard layout
 
 © 2021 Arno Klein
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Please see https://engram.dev
+# Arno's Engram key layout
 
-The [Engram layout](https://github.com/binarybottle/engram-layout) is a keyboard layout optimized for comfortable and efficient touch typing in English created by [Arno Klein](https://binarybottle.com), with open source code to create other optimized key layouts.
+Engram is a key layout optimized for comfortable and efficient touch typing in English 
+created by [Arno Klein](https://binarybottle.com), 
+with [open source code](https://github.com/binarybottle/engram) to create other optimized key layouts.
 
-             Y  G  U  K            B  L  D  F  Q 
-             I  O  E  A            R  T  S  N  J
-             V  Z  X  C            H  W  P  M
+Letters are optimally arranged according to a scoring model that reflects ergonomic factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs: 
 
-Letters are optimally arranged to reduce lateral finger movements, following ergonomic principles, and facilitating high-frequency letter pairs. Punctuation marks are grouped together in the middle columns (accessed by the Shift and Ctrl keys) and numbers are paired with symbols that resemble them (accessed by the Shift Key):
+                 Y  O  U  X    W  D  C  V  Q 
+                 I  H  E  A    R  T  S  N  Z      
+                 P  K  J  G    L  B  F  M             
 
-          ~  |  =  <  +   $    @   >  &  %  *  `
-          #  1  2  3  4   5    6   7  8  9  0  ^
+Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and R-Alt keys) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
 
-             Y  G  U  K  '-/  "_\  B  L  D  F  Q
-             I  O  E  A  ,;?  .:!  R  T  S  N  J      
-             V  Z  X  C  ([{  )]}  H  W  P  M             
+          $  -  =  ~  +   <    >   /  &  %  *  ^  `
+          #  1  2  3  4   5    6   7  8  9  0  |  \
+
+             Y  O  U  X  ([{  )]}  W  D  C  V  Q 
+             I  H  E  A  ,;:  .?!  R  T  S  N  Z      
+             P  K  J  G  "#@  '-_  L  B  F  M             
+
 
 Links
 -----
@@ -43,4 +48,3 @@ Supported Platforms
 
 ToDo
 ----
-Fix up headers for readme.htm and welcome.htm to be well formed. This will help display on Linux.
