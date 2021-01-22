@@ -31,10 +31,8 @@
   <b>For Touch Screen Keyboards</b>
 </p>
 <ul>
-  <li>q is replaced by U+0304 (Combining Macron)</li>
-  <li>z is replaced by U+0300 (Combining Grave Accent)</li>
-  <li>x is replaced by U+0302 (Combining Circumflex Accent)</li>
-  <li>v is replaced by U+030C (Combining Caron)</li>
+  <li>accents are on the first row of both default and shift layers</li>
+  <li>numerals are accessed through the numeric layer</li>
 </ul>
 
 <p>
@@ -48,17 +46,12 @@
 </div>
 
 <div id='osk-phone-container'>
-  <h2>Phone Keyboard Layout</h2>
+  <h2>Mobile Keyboard Layout</h2>
   <div id='osk-phone' data-states='default shift numeric'></div>
 </div>
 
-<div id='osk-tablet-container'>
-  <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default shift numeric'></div>
-</div>
-
 <h2>License</h2>
-<p>Kayaw (SIL) Keyman Keyboard is copyright &copy; 2018 SIL International. It is distributed under The MIT License (MIT)</p>
+<p>Kayaw (SIL) Keyman Keyboard is copyright &copy; 2018-2021 SIL International. It is distributed under The MIT License (MIT)</p>
 
 <div class="note">
   <p>Permission is hereby granted, free of charge, to any person obtaining a copy
