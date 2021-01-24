@@ -2,7 +2,7 @@
   $pagename = 'Nepali Traditional Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
-	  	key, span.kbd { background: none repeat scroll 0% 0% #F7F7F7; padding: 0.1em 0.6em; border: 1px solid #CCC; font-size: 10pt; font-family: 'Noto Sans Newa',sans-serif; color: #333; box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px #FFF inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: 0px 1px 0px #FFF; line-height: 1.4; white-space: nowrap;
+	  	key, span.kbd { background: none repeat scroll 0% 0% #F7F7F7; padding: 0.1em 0.6em; border: 1px solid #CCC; font-size: 10pt; color: #333; box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px #FFF inset; border-radius: 3px; display: inline-block; margin: 0px 0.1em; text-shadow: 0px 1px 0px #FFF; line-height: 1.4; white-space: nowrap;
 	}
 END;
   require_once('header.php');
@@ -33,14 +33,13 @@ While most of the layout remains the same as in desktop version, numerals have b
 </div>
 <h3>Notable longpresses </h3>
 		<ul>
-		<li><key>𑐷</key><key>𑐂</key><key>𑐃</key> are in <key>𑐶</key></li>
-		<li><key>𑐿</key><key>𑐊</key><key>𑐋</key> are in <key>𑐾</key></li>
-		<li><key>𑐹</key><key>𑐄</key><key>𑐅</key> are in <key>𑐸</key></li>
-		<li><key>zwj</key><key>zwnj</key> are in <key>𑑂</key></li> 
-		<li>non joining <key>𑐫𑑂‌</key> as in <span class="noto-sans-newa">𑐩𑐫𑑂‌𑐖𑐸 </span> is in <key>𑐫</key></li>
-		<li><key>𑐲</key> is in <key>𑐳</key></li>
-		<li><key>𑐎𑑂𑐲</key> is in <key>𑐎</key></li>
-		<li><key>𑐖𑑂𑐘</key> is in <key>𑐖</key></li>
+		<li><key>ी</key><key>इ</key><key>ई</key> are in <key>ि</key></li>
+		<li><key>ै</key><key>ए</key><key>ऐ</key> are in <key>े</key></li>
+		<li><key>ू</key><key>उ</key><key>ऊ</key> are in <key>ु</key></li>
+		<li><key>zwj</key><key>zwnj</key> are in <key>्</key></li> 
+		<li><key>ष</key> is in <key>स</key></li>
+		<li><key>क्ष</key> is in <key>क</key></li>
+		<li><key>ज्ञ</key> is in <key>ज</key></li>
 		</ul>
 
 <p>For Android and iOS, you may use long press key combinations.</p>
