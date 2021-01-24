@@ -12,6 +12,9 @@ Nepali Traditional generated from template
 
 Links
 -----
+Home: 
+https://keyman.com/keyboards/nepali_traditional
+
 
 Supported Platforms
 -------------------
