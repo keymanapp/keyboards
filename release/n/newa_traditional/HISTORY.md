@@ -1,6 +1,9 @@
 Newa Traditional Change History
 ====================
 
+1.2 (2021-01-26)
+----------------
+* fix '7' key in phone numeric layout. remove some repeated characters.
 
 1.1.1 (2020-10-27)
 ----------------
