@@ -4,7 +4,7 @@ store(&BITMAP) 'sil_myanmar_my3.ico'
 store(&VISUALKEYBOARD) 'sil_myanmar_my3.kvks'
 store(&capsalwaysoff) "1"
 store(&TARGETS) 'any windows macosx linux web'
-store(&KEYBOARDVERSION) '1.5'
+store(&KEYBOARDVERSION) '1.6'
 store(&ETHNOLOGUECODE) 'mya'
 store(&COPYRIGHT) '© 2015-2018 SIL International'
 store(&LAYOUTFILE) 'sil_myanmar_my3.keyman-touch-layout'
@@ -97,9 +97,12 @@ store(vowelEU)  U+1031
 store(allDiaU)  U+102F U+1030 U+102D U+102E U+1032 U+1036 U+1037
 store(firstDiaU) U+102D U+102F U+1032
 store(secondDiaU) U+102D U+1036 U+1037 U+102F
-
+store(scott) U+1031
 store(stackK)   'F'
 store(stackU)   U+1039
+
+
+
 
 group(Main) using keys
 + any(vowelEK) > outs(filler) outs(vowelEU)
@@ -116,7 +119,6 @@ U+1031 + any(mediaK) > index(mediaU, 2) U+1031
 
 c + '`' > dk(backquote)
 c dk(backquote) + any(baseK) > U+1039 index(baseu,2)
-
 
 U+101E U+103C U+1031 U+102C + any(asatK) > U+102A
 U+1025 + 'D' > U+1026
@@ -157,11 +159,13 @@ any(wDiaU) any(hDiaU) U+1031 + any(rDiaK) > index(rDiaU, 4) context
 
 + any(mediaK) > index(mediaU, 1)
 
-U+200B U+1031 + [K_BKSP] > nul
+any(filler) U+1031 + [K_BKSP] > nul
 any(baseU) U+1031 + [K_BKSP] > outs(filler) U+1031
 any(mediaU) U+1031 + [K_BKSP]> U+1031
 
 U+1039 any(consU) U+1031 + [K_BKSP] > U+1039 outs(filler) U+1031
 U+1039 any(consU) + [K_BKSP] > nul
 
-+ [T_1007] > U+1007
++ [T_104e_1004_103a_1038] > U+104e U+1004  U+103a  U+1038
+c any(ScottVowel) + any(consU) > index(consU, 2) index(ScottVowel,1)
+any(scott) + any(consU) > context(2) context(1)
