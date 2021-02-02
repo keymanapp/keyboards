@@ -1,11 +1,11 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'Kayaw'
-store(&TARGETS) 'any windows iphone androidphone androidtablet'
+store(&TARGETS) 'any'
 store(&ETHNOLOGUECODE) 'kvl'
 store(&VISUALKEYBOARD) 'sil_kvl_kayaw.kvks'
 store(&LAYOUTFILE) 'sil_kvl_kayaw.keyman-touch-layout'
 store(&KEYBOARDVERSION) '1.2'
-store(&COPYRIGHT) '©2018 SIL International'
+store(&COPYRIGHT) '©2018 - 2021 SIL International'
 begin Unicode > use(main)
 
 
@@ -83,7 +83,7 @@ group(main) using keys
 + [K_M] > 'm'
 + [K_N] > 'n'
 + [K_B] > 'b'
-+ [K_V] > 'v'
++ [K_V] > U+030C
 + [K_C] > 'c'
 + [K_QUOTE] > U+0027
 + [K_COLON] > ';'
