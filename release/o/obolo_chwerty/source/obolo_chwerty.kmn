@@ -1,17 +1,18 @@
-﻿store(&VERSION) '9.0'
+﻿store(&VERSION) '10.0'
 store(&NAME) 'Obolo Chwerty'
-store(&ETHNOLOGUECODE)'ann'
-store(&COPYRIGHT) '© 2019 Rogers Edeh'
+store(&COPYRIGHT) '© 2019-2021 Rogers Katelem Edeh'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'obolo_chwerty.kvks'
 store(&LAYOUTFILE) 'obolo_chwerty.keyman-touch-layout'
-store(&MESSAGE) 'A simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
+store(&BITMAP) 'ann_kb_48.ico'
+store(&MESSAGE) 'This is a simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
 store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
+store(&KEYBOARDVERSION) '1.1.1'
 
 begin Unicode > use(main)
 
-store(accentibles) 'aeiọoumnAEIỌOUMN'
-store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKSLASH] [SHIFT K_BKSLASH] [K_BKQUOTE] [SHIFT K_BKQUOTE]
+store(accentibles) 'aeiọoumnAEIỌOUMNn̄'
+store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKQUOTE] [K_BKSLASH]
 store(nasals) 'mnMN'
 store(nnas) [T_CCM] [T_CRN] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKSLASH] [SHIFT K_BKSLASH]
 store(vow) 'aeiouAEIOU'
@@ -24,50 +25,95 @@ store(spguy) 'mnọMNỌ'
 store(spguyop) 'ḿǹộḾǸỘ'
 store(erase) [K_BKSP] [SHIFT K_BKSP] [ALT K_BKSP]
 store(gravekeys) [T_GRV] [SHIFT T_GRV] [K_BKQUOTE]
-store(acutekeys) [T_ACU] [SHIFT T_ACU] [K_BKSLASH]
-store(circumflexkeys) [T_CCM] [SHIFT T_CCM] [SHIFT K_BKQUOTE]
+store(acutekeys) [T_ACU] [SHIFT T_ACU] [SHIFT K_BKQUOTE]
+store(circumflexkeys) [T_CCM] [SHIFT T_CCM] [K_BKSLASH]
 store(caronkeys) [T_CRN] [SHIFT T_CRN] [SHIFT K_BKSLASH]
+
 
 group(main) using keys
 
 + [T_ENG] > dk(1)
 + [SHIFT T_ENG] > dk(2)
 
-+ [K_Q] > 'ch'
-+ [SHIFT K_Q] > 'CH'
-+ [SHIFT T_Q] > 'Ch'
++ [CAPS K_Q] > 'CH'
++ [CAPS K_H] > 'SH'
++ [CAPS K_X] > 'Ọ'
++ [CAPS K_C] > 'N̄'
 
-+ [K_X] > 'ọ'
-+ [SHIFT K_X] > 'Ọ'
++ [NCAPS K_Q] > 'ch'
++ [NCAPS K_H] > 'sh'
++ [NCAPS K_X] > 'ọ'
++ [NCAPS K_C] > 'n̄'
 
-+ [K_H] > 'sh'
-+ [SHIFT K_H] > 'SH'
-+ [SHIFT T_H] > 'Sh'
++ [SHIFT CAPS K_Q] > 'ch'
++ [SHIFT CAPS K_H] > 'sh'
++ [SHIFT CAPS K_X] > 'ọ'
++ [SHIFT CAPS K_C] > 'n̄'
 
-+ [K_C] > 'n̄'
-+ [SHIFT K_C] > 'N̄'
++ [SHIFT NCAPS K_Q] > 'Ch'
++ [SHIFT NCAPS K_H] > 'Sh'
++ [SHIFT NCAPS K_X] > 'Ọ'
++ [SHIFT NCAPS K_C] > 'N̄'
 
+c (for touch layout)
++ [T_Q] > 'ch'
++ [SHIFT T_Q] > 'CH'
++ [SHIFT T_QU] > 'Ch'
 
-c deadkey for english equivalent
-dk(1) + [K_Q] > 'q'
-dk(2) + [SHIFT K_Q] > 'Q'
++ [T_H] > 'sh'
++ [SHIFT T_H] > 'SH'
++ [SHIFT T_SH] > 'Sh'
 
-dk(1) + [K_H] > 'h'
-dk(2) + [SHIFT K_H] > 'H'
++ [T_X] > 'ọ'
++ [SHIFT T_X] > 'Ọ'
 
-dk(1) + [K_X] > 'x'
-dk(2) + [SHIFT K_X] > 'X'
++ [T_C] > 'n̄'
++ [SHIFT T_C] > 'N̄'
 
-dk(1) + [K_C] > 'c'
-dk(2) + [SHIFT K_C] > 'C'
+c for mobile longpress
++ [SHIFT T_MWG] > 'M̀'
++ [T_MWG] > 'm̀'
++ [SHIFT T_ORWG] > 'Ọ̀'
++ [T_ORWG] > 'ọ̀'
 
-dk(1) + [K_E] > 'ẹ'
-dk(2) + [SHIFT K_E] > 'Ẹ'
+c English equivalent (for desktop)
+']' + [CAPS K_C] > 'C'
+']' + [NCAPS K_C] > 'c'
+']' + [SHIFT NCAPS K_C] > 'C'
+']' + [SHIFT CAPS K_C] > 'c'
+
+']' + [CAPS K_X] > 'X'
+']' + [NCAPS K_X] > 'x'
+']' + [SHIFT NCAPS K_X] > 'X'
+']' + [SHIFT CAPS K_X] > 'x'
+
+']' + [CAPS K_H] > 'H'
+']' + [NCAPS K_H] > 'h'
+']' + [SHIFT NCAPS K_H] > 'H'
+']' + [SHIFT CAPS K_H] > 'h'
+
+']' + [CAPS K_Q] > 'Q'
+']' + [NCAPS K_Q] > 'q'
+']' + [SHIFT NCAPS K_Q] > 'Q'
+']' + [SHIFT CAPS K_Q] > 'q'
+
+c English equivalent (for touch layout)
+dk(1) + [T_Q] > 'q'
+dk(2) + [SHIFT T_Q] > 'Q'
+
+dk(1) + [T_H] > 'h'
+dk(2) + [SHIFT T_H] > 'H'
+
+dk(1) + [T_X] > 'x'
+dk(2) + [SHIFT T_X] > 'X'
+
+dk(1) + [T_C] > 'c'
+dk(2) + [SHIFT T_C] > 'C'
 
 dk(1) + [K_S] > 'ṣ'
 dk(2) + [SHIFT K_S] > 'Ṣ'
 
-c deadkey for tones
+c deadkey for tones (touch layout only)
 dk(1) + [T_GRV] > "`"
 dk(2) + [SHIFT T_GRV] > "`"
 
@@ -87,8 +133,8 @@ c make up for
 'm' + any(gravekeys) > 'm̀'
 'M' + any(gravekeys) > 'M̀'
 
-'n' + any(gravekeys) > 'ǹ'
-'N' + any(gravekeys) > 'Ǹ'
+'n' + any(gravekeys) > 'ǹ'
+'N' + any(gravekeys) > 'Ǹ'
 
 'ọ' + any(gravekeys) > 'ọ̀'
 'Ọ' + any(gravekeys) > 'Ọ̀'
@@ -102,12 +148,32 @@ c make up for
 'ọ' + any(caronkeys) > 'ọ̌'
 'Ọ' + any(caronkeys) > 'Ọ̌'
 
+']' + [K_BKSLASH] > '#'
+
+'n̄' + [K_BKSLASH] > 'ñ'
+'N̄' + [K_BKSLASH] > 'Ñ'
+
+'s' + [K_BKSLASH] > 'ṣ'
+'S' + [K_BKSLASH] > 'Ṣ'
+
+';' + [SHIFT K_N] > '₦'
+
 c any and index
 any(vow) + any(gravekeys) > index(grave,1)
 any(vow) + any(acutekeys) > index(acute,1)
 any(vow) + any(circumflexkeys) > index(circum,1)
 any(vow) + any(caronkeys) > index(caron,1)
 any(nasals) + any(acutekeys) > index(acnasals,1)
+
+c change backspace behaviour for special diagraphs
+'ch' + any(erase) > nul
+'Ch' + any(erase) > nul
+'CH' + any(erase) > nul
+'sh' + any(erase) > nul
+'Sh' + any(erase) > nul
+'SH' + any(erase) > nul
+'n̄' + any(erase) > nul
+'N̄' + any(erase) > nul
 
 c virtual keys
 any(grave) + any(erase) > index(vow,1)
@@ -116,26 +182,5 @@ any(circum) + any(erase) > index(vow,1)
 any(caron) + any(erase) > index(vow,1)
 any(spguyop) + any(erase) > index(spguy,1)
 
-notany(accentibles) + any(accents) > context beep c prevent diacritics (stacking, on empty space, and plain consonants)
 any(nasals) + any(nnas) > context beep c prevent certain accents on nasal consonants
-
-c desktop
-begin Unicode > use(main)
-
-group(main) using keys
-+ [K_C] > 'n̄'
-+ [K_X] > 'ọ'
-+ [K_H] > 'sh'
-+ [K_Q] > 'ch'
-
-+ [SHIFT K_C] > 'N̄'
-+ [SHIFT K_X] > 'Ọ'
-+ [SHIFT K_H] > 'SH'
-+ [SHIFT K_Q] > 'CH'
-
-
-+ [CTRL SHIFT K_C] > 'cC'
-+ [CTRL SHIFT K_X] > 'xX'
-+ [CTRL SHIFT K_H] > 'Sh'
-+ [CTRL SHIFT K_Q] > 'Ch'
-
+c notany(accentibles) + any(accents) > context beep c prevent diacritics (stacking, on empty space, and plain consonants)
