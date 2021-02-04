@@ -7,7 +7,7 @@ Version 1.1.1
 
 Description
 -----------
-Obolo Chwerty layout for typing Obolo language. In this layout, accents are typed after the base letters. So, simply tap the given letters and tap the appropriate accents to pace them on the letters.
+Obolo Chwerty Keyboard is a simple keyboard layout for typing Obolo language. In this layout, accents are typed after the base letters. So, simply tap the given letters and tap the appropriate accents to pace them on the letters.
 
 Links
 -----
