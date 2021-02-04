@@ -36,7 +36,8 @@ While most of the layout remains the same as in desktop version, numerals have b
 		<li><key>ी</key><key>इ</key><key>ई</key> are in <key>ि</key></li>
 		<li><key>ै</key><key>ए</key><key>ऐ</key> are in <key>े</key></li>
 		<li><key>ू</key><key>उ</key><key>ऊ</key> are in <key>ु</key></li>
-		<li><key>zwj</key><key>zwnj</key> are in <key>्</key></li> 
+		<li><key>zwj</key><key>zwnj</key> are in <key>्</key></li>
+		<li><key>र्‍</key> is in <key>र</key></li>
 		<li><key>ष</key> is in <key>स</key></li>
 		<li><key>क्ष</key> is in <key>क</key></li>
 		<li><key>ज्ञ</key> is in <key>ज</key></li>
