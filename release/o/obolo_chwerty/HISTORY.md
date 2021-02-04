@@ -15,7 +15,7 @@ Obolo Change History
 
 1.1.1 (2021-02-04)
 ----------------
-* Updated keys CH and SH on SHIFT layer to match key cap on touchscreen and desktop.
+* Updated output for keys CH and SH on SHIFT layer to match key cap on touchscreen and desktop.
 * Resolved capslock issue for keys CH, SH, Ọ and N̄ on desktop.
 * Added long press on touchscreen for frequently used accented letters.
 * Added the Naira sign (₦) and Ñ (an alternative where software cannot render N̄ well, though Ñ is not part of the Obolo orthography.)
