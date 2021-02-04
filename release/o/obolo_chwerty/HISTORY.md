@@ -1,6 +1,6 @@
-Obolo Change History
+Obolo Chwerty Change History
 ====================
 
-1.0 (2019-07-20)
+1.0.1 (2020-02-29)
 ----------------
-* Created by Rogers Katelem Edeh
+* Created by AwajiKatelem Edeh

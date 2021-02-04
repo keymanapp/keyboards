@@ -1,14 +1,14 @@
-Obolo keyboard
+Obolo Chwerty keyboard
 ==============
 
-© 2020 Rogers Edeh
+© Rogers Katelem Edeh
 
-Version 1.0.0
+Version 1.1.1
 
 Description
 -----------
 
-Obolo Chwerty layout for typing Obolo language. In this layout, accents are typed after the base letters. So, simply tap the given letters and tap the appropriate accents to pace them on the letters.
+Obolo Chwerty 
 
 Links
 -----
