@@ -3,12 +3,12 @@ Nepali Traditional keyboard
 
 (c) 2021 Santosh Pradhan
 
-Version 1.0
+Version 1.1.0
 
 Description
 -----------
 
-Nepali Traditional generated from template
+Traditional Layout for Nepali in Devanagari script with dead keys for special characters for users familiar with Preeti like fonts. 
 
 Links
 -----
