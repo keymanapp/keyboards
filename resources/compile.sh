@@ -6,9 +6,9 @@
 
 function build_keyboards {
   # $1 = path to build keyboards
-  # for each keyboard, if a build.sh file exists, call it, otherwise, run the default 
+  # for each keyboard, if a build.sh file exists, call it, otherwise, run the default
   # build based on the folder name and location.
-  
+
   # excluded folders are: shared, packages and template
 
   if [[ $KEYBOARDS_STARTER == 1 ]]; then
@@ -18,7 +18,7 @@ function build_keyboards {
       if [ ! "$(ls -A $starter_keyboard)" ]; then
         if [ "$WARNINGS_AS_ERRORS" = true ]; then
           die "$starter_keyboard is empty."
-        fi  
+        fi
         echo "$starter_keyboard is empty. skipping..."
         continue
       fi
@@ -27,18 +27,18 @@ function build_keyboards {
       if [[ "$base_starter_keyboard" == '*' ]]; then
         exit 0
       fi
-      
+
       if [[ "$excluded_folders" == *" $base_starter_keyboard "* ]]; then
         echo "- Skipping folder /$base_starter_keyboard"
-      else 
+      else
         echo "- $ACTION_VERB /$base_starter_keyboard"
         build_keyboard "$base_starter_keyboard"
       fi
     done
-  else 
+  else
     local group=$1
     local excluded_folders=" shared packages template "
-    
+
     echo "$ACTION_VERB keyboards for $1"
 
     local shortname
@@ -46,7 +46,7 @@ function build_keyboards {
       if [ ! "$(ls -A $shortname)" ]; then
         if [ "$WARNINGS_AS_ERRORS" = true ]; then
           die "$shortname is empty."
-        fi  
+        fi
         echo "$shortname is empty. skipping..."
         continue
       fi
@@ -55,27 +55,33 @@ function build_keyboards {
       if [[ "$base_shortname" == '*' ]]; then
         exit 0
       fi
-      
+
       if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
         echo "- Skipping folder $group/$base_shortname"
-      else 
-        if [[ "$base_shortname" < "$START" ]]; then
-          echo "- Skipping folder $group/$base_shortname, before $START"
+      else
+        if [[ "$base_shortname" < "$START_BASE" ]]; then
+          echo "- Skipping folder $group/$base_shortname, before $START_BASE"
         else
           echo "- $ACTION_VERB $group/$base_shortname"
           local keyboard
           for keyboard in "$shortname"*/ ; do
-            build_keyboard "$group" "$keyboard"
+            local basename_keyboard
+            basename_keyboard=`basename "$keyboard"`
+            if [[ "$basename_keyboard" < "$START_KEYBOARD" ]]; then
+              echo "- Skipping keyboard $keyboard, before $START_KEYBOARD"
+            else
+              build_keyboard "$group" "$keyboard"
+            fi
           done
         fi
       fi
     done
 
     #
-    # If a packages/ folder exists, we now need to build it. We have to wait until the keyboards are built because it 
+    # If a packages/ folder exists, we now need to build it. We have to wait until the keyboards are built because it
     # depends on files created by the keyboards
     #
-    
+
     if [[ -z "$PROJECT_TARGET_TYPE" ]]; then
       if [ -d "$KEYBOARDROOT/$group/packages" ]; then
         echo "- $ACTION_VERB $group/packages"
@@ -86,7 +92,7 @@ function build_keyboards {
       fi
     fi
   fi
-  
+
   return 0
 }
 
@@ -120,11 +126,11 @@ function build_keyboard {
     local base_keyboard=$(basename "$keyboard")
     local shortname=$(basename $(dirname "$keyboard"))
   fi
-  
-  echo "$ACTION_VERB $base_keyboard"
-    
+
+  echo "$t_blu$ACTION_VERB $base_keyboard$t_end"
+
   pushd "$keyboard"
-  
+
   #
   # Check if .keyboard_info doesn't exist
   #
@@ -132,28 +138,28 @@ function build_keyboard {
   if [ ! -f "$keyboard_infoFilename" ]; then
     if [ "$WARNINGS_AS_ERRORS" = true ]; then
       die "$keyboard_infoFilename doesn't exist"
-    fi  
-    echo "  No $keyboard_infoFilename file. Skipping..."   
+    fi
+    echo "  No $keyboard_infoFilename file. Skipping..."
     popd
     return 0
   fi
-  
+
   #
   # Validate the .keyboard_info before build
   #
-  
+
   validate_keyboard_info "$keyboard_infoFilename" || die "Failed to validate $keyboard_infoFilename in $keyboard"
   validate_keyboard_uniqueness "$group" "$keyboard" "$base_keyboard"
-  
+
   if [ "$DO_BUILD" = false ]; then
     popd
     return 0
   fi
-  
+
   #
   # Get documentation, .js and .kmp data out of the .keyboard_info
   #
-  # Load the relevant fields from the .keyboard_info file into local variables. These are 
+  # Load the relevant fields from the .keyboard_info file into local variables. These are
   # needed for the legacy/ folder, where we don't assume filenames. For release/ and
   # experimental/ folders, we can determine because there will only ever be one matching
   # filename.
@@ -164,15 +170,15 @@ function build_keyboard {
   #  * keyboard_info_jsFilename
   #  * keyboard_info_documentationFilename
   #
-  
+
   local keyboard_info_license=
   local keyboard_info_packageFilename=
   local keyboard_info_jsFilename=
   local keyboard_info_documentationFilename=
-  
+
   lines=$($KMCOMP_LAUNCHER "$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
   lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
-  
+
   eval $lines
 
   #
@@ -198,12 +204,12 @@ function build_keyboard {
       copy_keyboard "$keyboard" || die "Failed to copy $group keyboard $base_keyboard"
     fi
   fi
-  
+
   if [[ ! -z "$FLAG_CLEAN" ]]; then
     popd
     return 0
   fi
-  
+
   if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
     popd
     return 0
@@ -217,28 +223,28 @@ function build_keyboard {
     #echo "Documentation filename = $keyboard_info_documentationFilename"
     cp "source/$keyboard_info_documentationFilename" "build/$keyboard_info_documentationFilename" || die
   fi
-  
+
   #
   # Now, validate the build artifacts and merge the data with the .keyboard_info file.
   # These tests are mostly needed for the legacy/ folder.
   #
-  
+
   if [ -n "$keyboard_info_packageFilename" ]; then test -f "build/$keyboard_info_packageFilename" || die "Could not find output file build/$keyboard_info_packageFilename"; fi
   if [ -n "$keyboard_info_jsFilename" ]; then test -f "build/$keyboard_info_jsFilename" || die "Could not find output file build/$keyboard_info_jsFilename"; fi
   if [ -n "$keyboard_info_documentationFilename" ]; then test -f "build/$keyboard_info_documentationFilename" || die "Could not find output file build/$keyboard_info_documentationFilename"; fi
-    
+
   merge_keyboard_info "$base_keyboard.keyboard_info" $group $shortname "$base_keyboard" || die "Failed to merge keyboard_info for $base_keyboard"
-    
+
   #
   # Back to root of repo
   #
-  
+
   popd
   return 0
 }
 
 #----------------------------------------------------------------------------------------
-# Copy the pre-compiled keyboard artifacts from the source/ to build/ folder for 
+# Copy the pre-compiled keyboard artifacts from the source/ to build/ folder for
 # legacy/ keyboards
 #----------------------------------------------------------------------------------------
 
@@ -251,9 +257,9 @@ function copy_keyboard {
   else
     echo "Copying keyboard $keyboard"
   fi
-  
+
   # Clean build folder
-  
+
   if [[ -d build ]]; then
     rm -rf build/ || die
   fi
@@ -261,13 +267,13 @@ function copy_keyboard {
   if [[ ! -z "$FLAG_CLEAN" ]]; then
     return 0
   fi
-  
+
   # Recreate build folder
 
   mkdir build || die "Failed to create build folder for $keyboard"
-  
+
   # Copy the target files
-  
+
   if [ -n "$keyboard_info_packageFilename" ]; then
     #echo "Package filename = $keyboard_info_packageFilename"
     cp "source/$keyboard_info_packageFilename" "build/$keyboard_info_packageFilename" || die
@@ -277,9 +283,9 @@ function copy_keyboard {
     #echo "JS filename = $keyboard_info_jsFilename"
     cp "source/$keyboard_info_jsFilename" "build/$keyboard_info_jsFilename" || die
   fi
-  
+
   # TODO: Copy fonts
-  
+
   return 0
 }
 
@@ -291,11 +297,11 @@ function build_release_keyboard {
   local keyboard=$1
   local base_keyboard=$(basename "$keyboard")
   echo "$ACTION_VERB keyboard $1"
-  
+
   local kpj="$base_keyboard.kpj"
 
   # Clean build folder
-  
+
   if [[ -d build ]]; then
     rm -rf build/ || die
   fi
@@ -307,17 +313,17 @@ function build_release_keyboard {
     fi
     return 0
   fi
-  
+
   # Recreate build folder
-  
+
   mkdir build || die "Failed to create build folder for $keyboard"
 
   if [[ ! -z "$PROJECT_TARGET_TYPE" ]]; then
     PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
   fi
-  
+
   $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
-  
+
   return 0
 }
 
