@@ -69,6 +69,8 @@ function parse_args {
   FLAG_CLEAN=
   FLAG_TARGET=
   START=
+  START_BASE=
+  START_KEYBOARD=
 
   local lastkey
   local key
@@ -126,6 +128,11 @@ function parse_args {
       case "$lastkey" in
         -start)
           START="$key"
+          START_BASE=`dirname "$START"`
+          START_KEYBOARD=`basename "$START"`
+          if [[ "START_BASE" == "." ]]; then
+            START_BASE="$START"
+          fi
           ;;
         -t)
           FLAG_TARGET=-t
