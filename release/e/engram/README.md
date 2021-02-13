@@ -3,7 +3,7 @@ Engram keyboard layout
 
 © 2021 Arno Klein
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
@@ -22,12 +22,12 @@ Letters are optimally arranged according to a scoring model that reflects ergono
 
 Punctuation marks are logically grouped together in the middle columns (accessed by the Shift and R-Alt keys) and numbers are paired with mathematical and logic symbols (accessed by the Shift Key):
 
-          $  -  =  ~  +   <    >   /  &  %  *  ^  `
-          #  1  2  3  4   5    6   7  8  9  0  |  \
+          {  |  =  ~  +   <  >   ^  &  %  *  }  \
+          [  1  2  3  4   5  6   7  8  9  0  ]  /
 
-             Y  O  U  X  ([{  )]}  W  D  C  V  Q 
-             I  H  E  A  ,;:  .?!  R  T  S  N  Z      
-             P  K  J  G  "#@  '-_  L  B  F  M             
+             Y  O  U  X  '(  ")  W  D  C  V  Q  #$  @` 
+             I  H  E  A  ,;  .:  R  T  S  N  Z      
+             P  K  J  G  -_  ?!  L  B  F  M             
 
 
 Links
@@ -48,3 +48,5 @@ Supported Platforms
 
 ToDo
 ----
+
+Fix CapsLock key.
