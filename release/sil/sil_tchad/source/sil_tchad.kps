@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1056.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.235.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -19,8 +19,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tchad</Name>
-    <Copyright URL="">© 2017-2018 SIL International</Copyright>
-    <Author URL="mailto:computer_support_chad@sil.org">Jeff Heath</Author>
+    <Copyright URL="">© 2017-2021 SIL International</Copyright>
+    <Author URL="mailto:langtech_chad@sil.org">Jeff Heath</Author>
   </Info>
   <Files>
     <File>
@@ -65,16 +65,28 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>AndikaAfr-R.ttf</Name>
+      <Description>Font Andika Afr</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>AndikaAfr-R.woff</Name>
+      <Description>File AndikaAfr-R.woff</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.woff</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tchad</Name>
       <ID>sil_tchad</ID>
-      <Version></Version>
+      <Version>4.1</Version>
+      <OSKFont>AndikaAfr-R.ttf</OSKFont>
+      <DisplayFont>AndikaAfr-R.ttf</DisplayFont>
       <Languages>
-        <Language ID="bbz-Latn">Babalia Creole Arabic</Language>
         <Language ID="shu-Latn">Chadian Arabic</Language>
-        <Language ID="arb-Latn">Standard Arabic</Language>
         <Language ID="sjg-Latn">Assangori</Language>
         <Language ID="bmi-Latn">Bagirmi</Language>
         <Language ID="bva-Latn">Barein</Language>
@@ -123,7 +135,7 @@
         <Language ID="kvf-Latn">Kabalai</Language>
         <Language ID="ckq-Latn">Kajakse</Language>
         <Language ID="kbl-Latn">Kanembu</Language>
-        <Language ID="knc-Latn">Central Kanuri</Language>
+        <Language ID="kr-Latn">Kanuri (Latin)</Language>
         <Language ID="kzr-Latn">Karang</Language>
         <Language ID="kth-Latn">Karanga</Language>
         <Language ID="klf-Latn">Kendeje</Language>
@@ -205,6 +217,7 @@
         <Language ID="zag-Latn">Zaghawa</Language>
         <Language ID="zna-Latn">Zan Gula</Language>
         <Language ID="zrn-Latn">Zerenkel</Language>
+        <Language ID="bbz-Latn">Babalia Creole Arabic (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
