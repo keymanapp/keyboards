@@ -1,6 +1,14 @@
 Tchad Keyboard Change History
 =======================
 
+4.1 (4 Feb 2021)
+------------------
+* Included Andika Afr font with mobile keyboards to avoid boxes with X
+
+4.0 (18 Aug 2020)
+------------------
+* Reduced number of special chars on long-press vowels
+
 3.3.2 (22 Aug 2018)
 ------------------
 * Improved mobile support
