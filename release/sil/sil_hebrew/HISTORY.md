@@ -1,6 +1,10 @@
 Hebrew (SIL) Keyboard Change History
 =======================
 
+1.8 (8 Feb 2021)
+-----------------
+* Touch layout created by Martin Zhang
+
 1.7.2 (10 Jun 2020)
 -----------------
 * Updated htm files for readability on Linux
