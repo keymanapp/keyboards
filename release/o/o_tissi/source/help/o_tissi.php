@@ -24,7 +24,7 @@
 <p><b>Acute accent:</b> The acute accent can be typed with the comma key following the base character.</p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt rightalt-shift'>
+<div id='osk' data-states='default shift'>
 </div>
 
 
