@@ -2,7 +2,7 @@
 c with name "Ma'di"
 store(&VERSION) '10.0'
 store(&NAME) 'Ma' U+0027 'di'
-store(&COPYRIGHT) '© SIL International'
+store(&COPYRIGHT) '© 2021 SIL International'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_madi.kvks'
@@ -132,6 +132,9 @@ c tone mark on vowel with dot below
 U+0323 U+002F   > context(1) U+0301 c type / after any vowel with a below dot to get the vowel with both a combining below dot and a combining acute accent
 U+0323 U+005E   > context(1) U+0302 c type ^ after any vowel with a below dot to get the vowel with both a combining below dot and a combining circumflex accent
 U+0323 U+007E   > context(1) U+0303 c type ~ after any vowel with a below dot to get the vowel with both a combining below dot and a combining tilde sign
+
+c full stop
+U+0323 U+002E U+002E > U+002E c to get a clear vowel with a full stop after a vowel with a dot below, press the period key twice.
 
 
 c EOF
