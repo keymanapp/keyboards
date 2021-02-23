@@ -121,17 +121,17 @@ c store(vowels_circumflex)    U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U
 c store(vowels_tilde)         U+00E3 U+1EBD U+0129 U+00F5 U+0169 U+00C3 U+1EBC U+0128 U+00D5 U+0168
 
 c vowel quality - dot below
-any(vowels) U+002E          > index(vowels,1) U+0323
+any(vowels) U+002E          > index(vowels,1) U+0323 c type any vowel + dot to get the vowel with a combining dot below
 
 c tone marks
-any(vowels) U+002F          > index(vowels,1) U+0301
-any(vowels) U+005E          > index(vowels,1) U+0302
-any(vowels) U+007E          > index(vowels,1) U+0303
+any(vowels) U+002F          > index(vowels,1) U+0301 c type any vowel + / to get the vowel with a combining acute accent
+any(vowels) U+005E          > index(vowels,1) U+0302 c type any vowel + ^ to get the vowel with a combining circumflex accent
+any(vowels) U+007E          > index(vowels,1) U+0303 c type any vowel + ~ to get the vowel with a combining tilde sign
 
 c tone mark on vowel with dot below
-U+0323 U+002F   > context(1) U+0301
-U+0323 U+005E   > context(1) U+0302
-U+0323 U+007E   > context(1) U+0303
+U+0323 U+002F   > context(1) U+0301 c type / after any vowel with a below dot to get the vowel with both a combining below dot and a combining acute accent
+U+0323 U+005E   > context(1) U+0302 c type ^ after any vowel with a below dot to get the vowel with both a combining below dot and a combining circumflex accent
+U+0323 U+007E   > context(1) U+0303 c type ~ after any vowel with a below dot to get the vowel with both a combining below dot and a combining tilde sign
 
 
 c EOF
