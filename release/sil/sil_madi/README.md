@@ -1,17 +1,14 @@
 Ma'di keyboard
 ==============
 
-© SIL International
+2021 © SIL International
 
 Version 1.0
 
 Description
 -----------
 
-Ma'di generated from template
-
-Links
------
+This keyboard is desgined based on the new orthogrphy of Ma'di language spoken in South Sudan and Uganda.
 
 Supported Platforms
 -------------------
