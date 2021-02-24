@@ -1,6 +1,10 @@
 Gwich'in Change History
 ============================
 
+9.2.1 (23 Feb 2021)
+----------------
+* Increment version number to force recompile of touch layout.
+
 9.2 (27 Jun 2019)
 ----------------
 * Canonical ordering normalized (U+0323 and U+0328)
