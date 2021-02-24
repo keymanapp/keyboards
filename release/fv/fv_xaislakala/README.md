@@ -1,9 +1,9 @@
 X̄a'ʼislak̓ala keyboard
 ======================
 
-Copyright (C) 2008-2018 FirstVoices, SIL International. Portions © 2006 Chris Harvey
+Copyright (C) 2008-2021 FirstVoices, SIL International. Portions © 2006 Chris Harvey
 
-Version 9.1
+Version 9.1.1
 
 X̄a'ʼislak̓ala (Haisla) keyboard layout for Unicode
 
