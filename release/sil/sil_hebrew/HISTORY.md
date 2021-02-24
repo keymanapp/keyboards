@@ -3,7 +3,7 @@ Hebrew (SIL) Keyboard Change History
 
 1.8 (22 Feb 2021)
 -----------------
-* Tablet touch layout created by Martin Zhang
+* Tablet touch layout based on one created by Martin Zhang
 * Added 4 keys on RALT layers that SBL had included
 * Added SBL Hebrew and Ezra SIL Hebrew fonts to the package
 
