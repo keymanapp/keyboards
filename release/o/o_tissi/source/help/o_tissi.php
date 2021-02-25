@@ -16,14 +16,12 @@
 <h1>Keyboard Layout</h1>
 
   <h2>Desktop Keyboard layout</h2>
-<p><b>Tone diacritics on vowels:</b> Hold the right-alt button while pressing the key of the vowel you desire.</p>
-<p><b>Glottalized diacritics on consonants:</b> Hold the right-alt button while pressing the consonant you desire.</p>
-<p><b>Aspirated consonants:</b> The rdfgj keys have been replaced with tʰqcʰpʰk</p>
-<p><b>Length dot:</b> The b key has been replaced with the length dot.</p>
-<p><b>Glottal stop:</b> The right slanted apostrophe used to represent a glottal stop ʼ has replaced the v key.</p>
-<p><b>Acute accent:</b> The acute accent can be typed with the comma key following the base character.</p>
+<p><b>High tone diacritic on vowels:</b>Press B after typing the desired vowel. </p>
+<p><b>Glottalized diacritic on consonants:</b> Press J after typing the desired consonant.</p>
+<p><b>Aspirated consonants:</b> The RDFGV keys have been replaced with pʰtʰcʰkʰqʰ.</p>
+<p><b>Syllable dot:</b> The Z key has been replaced with the syllable dot.</p>
+<p><b>Glottal stop:</b> The right slanted apostrophe used to represent a glottal stop ʼ can be typed by holding SHIFT then pressing J.</p>
 
-<h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
 
