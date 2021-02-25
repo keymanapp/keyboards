@@ -1,6 +1,10 @@
 Nłeʔkepmxcin Change History
 ============================
 
+9.2.1 (24 Feb 2021)
+-------------------
+* Updated htm files for readability on Linux
+
 9.2 (28 Jun 2019)
 -----------------
 * Changed rules to use canonical ordering with U+0323
