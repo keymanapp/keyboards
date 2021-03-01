@@ -1,6 +1,10 @@
 Hebrew (SIL) Keyboard Change History
 =======================
 
+1.8.1 (28 Feb 2021)
+-----------------
+* Added tablet layout to package
+
 1.8 (22 Feb 2021)
 -----------------
 * Tablet touch layout based on one created by Martin Zhang

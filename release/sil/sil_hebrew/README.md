@@ -3,7 +3,7 @@ Hebrew (SIL) Keyboard
 
 Copyright (C) 2001-2021 SIL International
 
-Version 1.8
+Version 1.8.1
 
 __DESCRIPTION__
 This keyboard is designed for Biblical Hebrew.
