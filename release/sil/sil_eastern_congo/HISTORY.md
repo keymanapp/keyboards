@@ -1,6 +1,12 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.5 (10 March 2021)
+------------------
+* Changed ";" special access key to "]"
+* Added oe ligature
+* Added slash v character for Mangbetu language
+
 1.4.1 (27 October 2020)
 ------------------
 * Increment version number to force recompile of touch layout.

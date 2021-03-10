@@ -5,12 +5,11 @@ c
 store(&version) "10.0"
 store(&name) "Eastern Congo"
 store(&BITMAP) 'sil_eastern_congo.ico'
-store(&copyright) "© 2005-2020 SIL - Eastern Congo Group"
+store(&copyright) "© 2005-2021 SIL - Eastern Congo Group"
 store(&MESSAGE) 'Eastern Congo keyboard for languages of the Democratic Republic of the Congo.'
 store(&TARGETS) 'any'
-c store(&ETHNOLOGUECODE) 'buu flr kmw led lgg lik log mdj mdm omi tbt tmv'
 store(&VISUALKEYBOARD) 'sil_eastern_congo.kvks'
-store(&KEYBOARDVERSION) '1.4.1'
+store(&KEYBOARDVERSION) '1.5'
 store(&LAYOUTFILE) 'sil_eastern_congo.keyman-touch-layout'
 
 begin Unicode > use(main)
@@ -39,33 +38,34 @@ store(all_misc_chars)  "~"    "!"    "@"    "#"    "$"    "%"    "^"    "&"    "
 
 c Characters made with semi-colon
 store(semi_chars_K)    "A"    "B"    "C"    "D"    "E"           "G"    "H"    "I"    "J" \
-                       "M"    "N"    "O"    "P"           "R"           "T"    "U" \
+                       "M"    "N"    "O"    "P"    "Q"    "R"           "T"    "U"    "V" \
                        "a"    "b"    "c"    "d"    "e"                  "h"    "i"    "j" \
-                       "m"    "n"    "o"    "p"           "r"           "t"    "u" \
+                       "m"    "n"    "o"    "p"    "q"    "r"           "t"    "u"    "v" \
                        "&"    "*"    "(" \
                        "6"    "7"    "8"    "9"    ":"     "="   "|"    '"'   
 
 store(semi_chars_U)    U+00C4 U+0181 U+00C7 U+018A U+0190        U+00DF U+0126 U+0197 U+A7AA \
-                       U+019D U+014A U+0186 U+00D8        U+018F        U+018E U+0244 \
+                       U+019D U+014A U+0186 U+00D8 U+0152 U+018F        U+018E U+0244 U+A75E \
                        U+00E4 U+0253 U+00E7 U+0257 U+025B               U+0127 U+0268 U+0266 \
-                       U+0272 U+014B U+0254 U+00F8        U+0259        U+01DD U+0289 \
+                       U+0272 U+014B U+0254 U+00F8 U+0153 U+0259        U+01DD U+0289 U+A75F \
                        U+01B1 U+0196 U+019F \
                        U+026A U+028A U+0269 U+0275 U+A789 U+A78A U+A71C U+A78C
 
 c Special characters that can take all diacritics  AEIOPRTUaeioprtu68*9(7&
 store(dia_chars_K)     "A"           "C"           "E"                         "I" \
-                       "M"    "N"    "O"    "P"           "R"           "T"    "U" \
+                       "M"    "N"    "O"    "P"    "Q"    "R"           "T"    "U" \
                        "a"    "b"    "c"    "d"    "e"                  "h"    "i" \
-                       "m"    "n"    "o"    "p"           "r"           "t"    "u" \
+                       "m"    "n"    "o"    "p"    "q"    "r"           "t"    "u" \
                        "&"    "*"    "(" \
                        "6"    "7"    "8"    "9"    
 store(dia_chars_U)     U+00C4        U+00C7        U+0190                      U+0197 \
-                       U+019D U+014A U+0186 U+00D8        U+018F        U+018E U+0244 \
+                       U+019D U+014A U+0186 U+00D8 U+0152 U+018F        U+018E U+0244 \
                        U+00E4 U+0253 U+00E7 U+0257 U+025B               U+0127 U+0268 \
-                       U+0272 U+014B U+0254 U+00F8        U+0259        U+01DD U+0289 \
+                       U+0272 U+014B U+0254 U+00F8 U+0153 U+0259        U+01DD U+0289 \
                        U+01B1 U+0196 U+019F \
                        U+026A U+028A U+0269 U+0275 
 
+store(spc) "]"
 
 c store(regvowel) U+0041 U+0045 U+0049 U+004F U+0052 U+0055 \
 c                 U+0061 U+0065 U+0069 U+006F U+0072 U+0075 \
@@ -93,7 +93,7 @@ c Basic characters on keyboard
 + any(all_misc_chars)  > index(all_misc_chars,1)
 
 c special characters made with semicolon
-";" + any(semi_chars_K)    > index(semi_chars_U,2)         c all special characters
+any(spc) + any(semi_chars_K)    > index(semi_chars_U,2)         c all special characters
 
 c standard characters on keyboard
 "^" + any(basic_diacritics) > index(basic_diacritics,2) U+0302 use(nfc)       c circumflex
@@ -104,13 +104,13 @@ c standard characters on keyboard
 "@" + any(basic_diacritics) > index(basic_diacritics,2) U+0304 use(nfc)        c macron
 "~" + any(basic_diacritics) > index(basic_diacritics,2) U+0303 use(nfc)        c tilde
 
-"^;" + any(dia_chars_K) > index(dia_chars_U,3) U+0302 use(nfc)
-"!;" + any(dia_chars_K) > index(dia_chars_U,3) U+030C use(nfc)
-"`;" + any(dia_chars_K) > index(dia_chars_U,3) U+0300 use(nfc)
-"';" + any(dia_chars_K) > index(dia_chars_U,3) U+0301 use(nfc)
-":;" + any(dia_chars_K) > index(dia_chars_U,3) U+0308 use(nfc)
-'@;' + any(dia_chars_K) > index(dia_chars_U,3) U+0304 use(nfc)
-'~;' + any(dia_chars_K) > index(dia_chars_U,3) U+0303 use(nfc)
+"^" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0302 use(nfc)
+"!" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+030C use(nfc)
+"`" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0300 use(nfc)
+"'" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0301 use(nfc)
+":" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0308 use(nfc)
+'@' any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0304 use(nfc)
+'~' any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0303 use(nfc)
 
 c ";" + "9" > U+027F c o bar
 c ";" + "(" > U+019F c capital O bar
@@ -126,26 +126,25 @@ c "^;" + "(" > U+019F U+0302 c capital O bar with circumflex
 c "@;" + "(" > U+019F U+0304 c capital O bar with macron
 
 ".." + "." > U+2026 c ellipses
-";" + "<" > U+2039 c single guillemet open
-";" + ">" > U+203A c single guillemet close
+c QUOTES
+any(spc) + "<" > U+2039 c single guillemet open
+any(spc) + ">" > U+203A c single guillemet close
 U+2039 + "<" > U+00AB c double guillemet open
 U+203A + ">" > U+00BB c double guillemet close
 U+00AB + "<" > U+00AB U+202F U+2039
 U+00BB + ">" > U+203A U+202F U+00BB
 
-c ";" + "`" > U+2018 c single open quote
-c ";" + "'" > U+2019 c single close quote
 "=" + "`" > U+2018 c single open quote
 "=" + "'" > U+2019 c single close quote
 U+2018 + "`" > U+201C c double open quote
 U+2019 + "'" > U+201D c double close quote
-";" + "-" > U+2013 c en dash
-";" + "_" > U+2014 c em dash
-";" + "x" > U+00D7 c multiplication
-";" + "\" > U+00F7 c division
-";1/" + "4" > U+00BC
-";1/" + "2" > U+00BD
-";3/" + "4" > U+00BE
+any(spc) + "-" > U+2013 c en dash
+any(spc) + "_" > U+2014 c em dash
+any(spc) + "x" > U+00D7 c multiplication
+any(spc) + "\" > U+00F7 c division
+any(spc) "1/" + "4" > U+00BC
+any(spc) "1/" + "2" > U+00BD
+any(spc) "3/" + "4" > U+00BE
 "(C" + ")" > U+00A9 c copyright symbol
 "(R" + ")" > U+00AE c trademark symbol
 
@@ -154,30 +153,30 @@ U+0020 + "?" > U+202F "?"
 U+0020 + ":" > U+202F ":"
 U+0020 ";" + U+0020 > U+202F ";" U+0020
 U+2039 + U+0020 > U+2039 U+202F  c narrow nbsp inside left single guillemet
-U+0020 ";" + ">" > U+202F U+203A
+U+0020 any(spc) + ">" > U+202F U+203A
 U+00AB + U+0020 > U+00AB U+202F
-";" + "s" > U+202F c narrow nbsp
+any(spc) + "s" > U+202F c narrow nbsp
 
-";" + "!" > U+02C7  c caron
-";" + "^" > U+02C6  c circumflex
-";" + "'" > U+02CA  c modifier letter acute accent
+any(spc) + "!" > U+02C7  c caron
+any(spc) + "^" > U+02C6  c circumflex
+any(spc) + "'" > U+02CA  c modifier letter acute accent
 U+02CA + "'" > U+A78C  c glottal stop
-";" + "`" > U+02CB  c modifier letter grave accent
-"=;" + "'" > U+0301 use(nfc)  c combining acute accent
-"=;" + "`" > U+0300 use(nfc)  c combining grave accent
-"=;" + "!" > U+030C use(nfc)  c combining caron accent
-"=;" + "^" > U+0302 use(nfc)  c combining circumflex accent
-"=;" + "@" > U+0304 use(nfc)  c combining macron
+any(spc) + "`" > U+02CB  c modifier letter grave accent
+"=" any(spc) + "'" > U+0301 use(nfc)  c combining acute accent
+"=" any(spc) + "`" > U+0300 use(nfc)  c combining grave accent
+"=" any(spc) + "!" > U+030C use(nfc)  c combining caron accent
+"=" any(spc) + "^" > U+0302 use(nfc)  c combining circumflex accent
+"=" any(spc) + "@" > U+0304 use(nfc)  c combining macron
 
 c changed lines 117-125 to use dk(block_convert) to terminate processing on advice from MD. AC 26/04/18
 "'" + "'" > "'" dk(block_convert) c single apostrophe, stop context
-";" + ";" > ";" dk(block_convert)
 "`" + "`" > "`" dk(block_convert)
 '"' + '"' > '"' dk(block_convert)
 "=" + "=" > "=" dk(block_convert)
 ":" + ":" > ":" dk(block_convert)
 "^" + "^" > "^" dk(block_convert)
 "@" + "@" > "@" dk(block_convert)
+"]" + "]" > "]" dk(block_convert)
 c "'" + "'" > U+0027 dk(block_convert)   c apostrophe, stop context
 c any(accent) + any(vowel) > index(vowel,2) index(accent,1)
 c any(vowel) any(accent) + [K_BKSP] > nul
