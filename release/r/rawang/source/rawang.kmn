@@ -6,14 +6,15 @@ c
 
 store(&VERSION) "10.0" 
 store(&NAME) "Rawang" 
-store(&COPYRIGHT) "© 2007-2020 R.James " 
+store(&COPYRIGHT) '© 2007-2021 R.James'
 store(&MESSAGE) "Rvwàng Unicode Keyboard" 
 c store(&MNEMONICLAYOUT) "1" 
 store(&VISUALKEYBOARD) 'rawang.kvks'
 c store(&ETHNOLOGUECODE) "raw" 
 store(&BITMAP) 'rawang.ico'
-store(&KEYBOARDVERSION) '1.5'
-store(&TARGETS) 'web desktop'
+store(&KEYBOARDVERSION) '1.6'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'rawang.keyman-touch-layout'
 
 begin Unicode > use(main)
 
