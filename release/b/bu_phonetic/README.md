@@ -1,9 +1,9 @@
 BU Phonetic keyboard
 ==============
 
-© 2006-2020 J. Albert Bickford
+© 2006-2021 J. Albert Bickford
 
-Version 2.0
+Version 2.0.1
 
 Description
 -----------
@@ -16,10 +16,14 @@ Unicode keyboard for
 
 See the documentation (BUkeys.pdf) for 
   - how to use the keyboard
-  - terms of use
+
+Links
+-----
+https://keyman.com/keyboards/bu_phonetic
 
 Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
 
