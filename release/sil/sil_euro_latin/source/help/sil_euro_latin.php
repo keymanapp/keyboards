@@ -3,7 +3,7 @@
   $pagetitle = 'EuroLatin (SIL) Keyboard Help';
   require_once('header.php');
 ?>
-<p>The EuroLatin keyboard enables you to type in <b>all</b> European languages which use Latin-script, and most Latin-script languages from the rest of the world. The keyboard is designed to be used with any Latin hardware keyboard. It uses simple sequences of <code>symbol + character</code> to type letters and other characters not available on a standard keyboard.</p>
+<p>The EuroLatin keyboard enables you to type in <b>all</b> European languages which use Latin-script and many Latin-script languages from the rest of the world. However, the keyboard should not be expected to be enhanced for languages outside of Europe. The keyboard is designed to be used with any Latin hardware keyboard. It uses simple sequences of <code>symbol + character</code> to type letters and other characters not available on a standard keyboard.</p>
 
 <h1>Fonts</h1>
 
