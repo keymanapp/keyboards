@@ -1,14 +1,14 @@
 ጉራጊና (Gurage) Keyboard
 ====================
 
-Copyright (C) 2019-2020 Ge'ez Frontier Foundation
+Copyright (C) 2019-2010 Ge'ez Frontier Foundation
 
-Version 0.7
+Version 0.8
 
-This is a Gurage (ጉራጊና , ISO-639-2 swg) language mnemonic input method.  It requires a font
-supporting Ethiopic script under the Unicode 4.1 standard along with 4 additions for the
-2018 pilot orthography developed by Dr. Fekede Menuta. The included "Gurage" fonts contain
-reference glyphs for the experimental orthography.
+This is a Gurage (ጉራጊና , ISO-639-2 swg) language mnemonic input method for the 
+Gurage orthography devised by Dr. Fekede Menuta and adopted in Unicode 14.  It requires a font
+supporting the Ethiopic Extended-B block defined in the Unicode 14 standard. A collection
+of six fonts with names beginning with "Gurage" are included with this package.
 
 Links
 -----
