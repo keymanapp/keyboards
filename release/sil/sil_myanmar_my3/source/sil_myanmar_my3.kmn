@@ -4,7 +4,7 @@ store(&BITMAP) 'sil_myanmar_my3.ico'
 store(&VISUALKEYBOARD) 'sil_myanmar_my3.kvks'
 store(&capsalwaysoff) "1"
 store(&TARGETS) 'any windows macosx linux web'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.7'
 store(&ETHNOLOGUECODE) 'mya'
 store(&COPYRIGHT) '© 2015-2018 SIL International'
 store(&LAYOUTFILE) 'sil_myanmar_my3.keyman-touch-layout'
@@ -37,7 +37,7 @@ begin Unicode > use(Main)
 
 
 store(addK) '<>]}'
-store(addU) U+104A U+104B U+1029 U+102A
+store(addU)  U+104A U+104B U+1029 U+102A
 
 store(numK)     '1234567890'
 store(numU)     U+1041 U+1042 U+1043 U+1044 U+1045 \
@@ -167,5 +167,6 @@ U+1039 any(consU) U+1031 + [K_BKSP] > U+1039 outs(filler) U+1031
 U+1039 any(consU) + [K_BKSP] > nul
 
 + [T_104e_1004_103a_1038] > U+104e U+1004  U+103a  U+1038
++ [T_1004_103a_1039] > U+1004 U+103a U+1039
 c any(ScottVowel) + any(consU) > index(consU, 2) index(ScottVowel,1)
-any(scott) + any(consU) > context(2) context(1)
+c any(scott) + any(consU) > context(2) context(1)
