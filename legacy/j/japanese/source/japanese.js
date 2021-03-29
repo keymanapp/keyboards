@@ -35,6 +35,7 @@ function Keyboard_japanese()
   this.KV=null;                   // Visual Keyboard description - null for CJK
   this.KM=0;                      // Do not use mnemonic layout
   this.KH='<div id="Help_'+this.KI+'"></div>'; // Placeholder for the IME UI
+  this.KBVER='1.0.1';
   /*this.KV={F:' 1em "Tahoma"',K102:0,BK:new Array("`","1","2","3","4","5","6","7","8","9","0","-","=","","","","く","わ","え","る","と","ゆ","う","い","お","ぷ","[","]","\\","","","","あ","す","ど","ふ","ぐ","ほ","じ","く","る",";","'","","","","","","","る","きす","く","ゔ","ぶ","ん","む",",",".","/","","","","","","")};*/
   this.elemID = 'Help_'+this.KI;
   this.elem = null;
