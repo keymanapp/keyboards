@@ -1,5 +1,10 @@
-<html>
-<body>
+<?php 
+  $pagename = 'Layout Huruf Latin dan Aksara Jawa Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
+
 <h2>Layout Huruf Latin dan Aksara Jawa</h2>
 <p>&nbsp;</p>
 <p>Layout Huruf Latin dan Layout Standar Aksara Jawa hasil keputusan KAJ I 24 Maret 2021</p>
@@ -32,7 +37,7 @@
 <p>Yang perlu diperhatikan
 <ul>
 <li>Semua tombol aksara nglegena dan sandhangan swara di layer shift menjadi huruf Latinnya di layer default</li>
-<li><b>PENTING</b>: Posisi huruf Latin 'a' dan 'ng' di layout fisik layer default dibalik! ( = susunan NgWERTY. Huruf 'ng' tidak kompatibel dengan posisi aksara Nga di layer shift). Hal ini disebabkan posisi kelingking kiri lebih sering mengetikkan huruf 'a' di keyboard fisik. Namun posisi di layout digital layer default tidak dibalik ( = susunan AWERTY. Huruf 'ng' masih kompatibel dengan posisi aksara Nga di layer shift)</li>
+<li><b>PENTING</b>: Posisi huruf Latin 'a' dan 'ng' di layout fisik layer default dibalik! ( = susunan NgWERTY. Huruf 'ng' tidak kompatibel dengan posisi aksara Nga di layer shift, tapi huruf 'a' dan 'A' kompatibel dengan posisi aksara 'A-kara'). Hal ini disebabkan posisi kelingking kiri lebih sering mengetikkan huruf 'a' di keyboard fisik. Namun posisi di layout digital layer default tidak dibalik ( = susunan AWERTY. Huruf 'ng' masih kompatibel dengan posisi aksara Nga di layer shift)</li>
 <li>Fisik: Tombol 'pangkon' di layer shift menjadi Tombol 'ng' di layer default. Tombol 'aksara nga' di layer shift menjadi Tombol 'a' di layer default.<br />
 Digital: Tombol 'pangkon' di layer shift menjadi Tombol 'a' di layer default</li>
 <li>Tombol 'pepet' di layer shift menjadi Rotasi Tombol 'z', 'x', dan 'q' di layer default.</li>
@@ -51,5 +56,4 @@ Digital: Tombol 'pangkon' di layer shift menjadi Tombol 'a' di layer default</li
 <li>Catatan untuk CAPSLOCK: "Layer" Caps Lock mirip dengan layer Shift, namun hanya meliputi 26 tombol saja (huruf A-Z di layout QWERTY). Selain dari 26 tombol itu harus diketik menggunakan Shift. Hal yang sama untuk Caps Lock + Right Alt.</li>
 </ul>
 </p>
-</body>
-</html>
+

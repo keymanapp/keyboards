@@ -1,7 +1,6 @@
 Latin-Jawa Keyboard Change History
-=======================
------------------
-26 March 2021 - v1.0
+============================
+1.0 (2021-03-30)
 -----------------
 Layout Huruf Latin dan Layout Standar Aksara Jawa hasil keputusan KAJ I 24 Maret 2021
 

@@ -1,9 +1,13 @@
 Latin-Jawa Keyboard 
-===========================
+================
 
-Copyright (C) 2021 Benny Lin
+© Benny Lin
 
-__DESCRIPTION__
+Version 1.0
+
+Description
+-----------
+
 This keyboard is designed to type all Latin and Javanese characters using the 2021 standard for Javanese Scripit keyboard layout. There are 4 layers for physical keyboard and 3 layers for digital keyboard (touch layout). Able to type in Javanese Latin, Indonesian, and English with ease. Able to type in Javanese script in several languages that uses it. Featuring longpress, rotating keys, zero width space, variant selector 1, and other features.
 
 Links
@@ -20,9 +24,13 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * Mobile Web
- * iOS
- * Android
+ * iPhone
+ * iPad
+ * Android phone
+ * Android tablet
+ * Mobile devices
+ * Desktop devices
+ * Tablet devices
  
 Documentation
 -------------

@@ -2,13 +2,15 @@
 c 
 c Benny Lin
 store(&NAME) 'Layout Huruf Latin dan Aksara Jawa'
-store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&TARGETS) 'any'
 store(&KEYBOARDVERSION) '1.0'
 store(&COPYRIGHT) 'Bennylin 2021'
 store(&MESSAGE) 'Layout Huruf Latin dan Aksara Jawa Kongres Aksara Jawa I'
 store(&KMW_HELPTEXT) 'https://bennylin.github.io/kongres'
 store(&VISUALKEYBOARD) 'latin_jawa.kvks'
 store(&LAYOUTFILE) 'latin_jawa.keyman-touch-layout'
+store(&BITMAP) 'latin_jawa.ico'
+store(&KMW_HELPFILE) 'latin_jawa-help.htm'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -16,7 +18,7 @@ store(ZWS) U+200B
 store(ZWJ) U+200C
 store(VS1) U+FE00
 
-
+c Latin layers start
 + [K_BKQUOTE] >       'å'
 'å' + [K_BKQUOTE] >       'ɔ'
 'ɔ' + [K_BKQUOTE] >       'ā'
@@ -31,12 +33,11 @@ store(VS1) U+FE00
 + [K_8] >             '8'
 + [K_9] >             '9'
 + [K_0] >             '0'
-+ [K_HYPHEN] >        'í'
-'í' + [K_HYPHEN] >       'ɪ'
-'ɪ' + [K_HYPHEN] >       'í'
-+ [K_EQUAL] >         'û'
-'û' + [K_EQUAL] >       'ʊ'
-'ʊ' + [K_EQUAL] >       'û'
++ [K_HYPHEN] >        '-'
++ [K_EQUAL] >        'í'
+'í' + [K_EQUAL] >       'ɪ'
+'ɪ' + [K_EQUAL] >       'û'
+'û' + [K_EQUAL] >       'í'
 + [K_Q] >             'ng'
 + [K_W] >             'w'
 + [K_E] >             'e'
@@ -146,8 +147,6 @@ c rightalt on digital keyboard
 + [SHIFT RALT K_LBRKT] >         '['
 + [SHIFT RALT K_RBRKT] >         ']'
 + [SHIFT RALT K_BKSLASH] >         "|"
-"|" + [SHIFT RALT K_BKSLASH] >         "\" 
-c "\" + [SHIFT RALT K_BKSLASH] >         "|" c Note: \\ dimungkinkan, misalnya di pemrograman maupun alamat URL https:\\, sementara || hampir tidak pernah dipakai.
 + [SHIFT RALT K_A] >             'A'
 + [SHIFT RALT K_S] >             'S'
 + [SHIFT RALT K_D] >             'D'
@@ -171,8 +170,10 @@ c "\" + [SHIFT RALT K_BKSLASH] >         "|" c Note: \\ dimungkinkan, misalnya d
 + [SHIFT RALT K_M] >             'M'
 + [SHIFT RALT K_COMMA] >         '<'
 + [SHIFT RALT K_PERIOD] >        '>'
-+ [SHIFT RALT K_SLASH] >         '-'
++ [SHIFT RALT K_SLASH] >         '\'
+c Latin layers end
 
+c Aksara layers start
 + [SHIFT K_BKQUOTE] >       '꧇'
 + [SHIFT K_1] >             '꧑'
 + [SHIFT K_2] >             '꧒'
@@ -372,3 +373,4 @@ c longpress
 + [SHIFT T_new_341] > '꧈ꦹ'
 + [SHIFT T_new_351] > 'ꦅ'
 + [SHIFT T_new_361] > 'ꦇ'
+c Aksara layers end
