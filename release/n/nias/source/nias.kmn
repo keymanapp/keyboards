@@ -1,0 +1,25 @@
+﻿c Press [ to get ö and ] to get ŵ. ALT-RIGHT+[ will produce [ and ALT-RIGHT+] produces ]. Add SHIFT to that to get { and }.
+c 
+c Tekan [ menghasilkan ö dan ] menghasilkan ŵ. Tekan ALT-KANAN+[ untuk mengetik [ dan ALT-RIGHT+] untuk ], SHIFT+ALT-RIGHT+[ untuk { dan SHIFT+ALT-RIGHT+] untuk }.
+store(&VERSION) '10.0'
+store(&NAME) 'Nias'
+store(&COPYRIGHT) '©2021 Sirus Laia'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'nias.kvks'
+store(&BITMAP) 'nias_keyboard.ico'
+store(&LAYOUTFILE) 'nias.keyman-touch-layout'
+store(&MESSAGE) 'Nias keyboard with ö and ŵ'
+store(&KMW_HELPTEXT) 'readme.htm'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_LBRKT] > '{'
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
++ [K_RBRKT] > 'ŵ'
++ [SHIFT K_RBRKT] > 'Ŵ'
++ [SHIFT K_LBRKT] > 'Ö'
++ [K_LBRKT] > 'ö'
