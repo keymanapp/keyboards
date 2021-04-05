@@ -1,6 +1,10 @@
 Engram Change History
 ====================
 
+2.0 (2021-04-05)
+----------------
+* Reengineered layout based on revised scoring model that better reflects finger dexterity and takes into account relative finger strengths.
+
 1.2 (2021-02-14)
 ----------------
 * Revised arrangement of the punctuation keys so that there is no need for the R-Alt key.
