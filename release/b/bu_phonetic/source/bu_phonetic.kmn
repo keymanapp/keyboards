@@ -1,12 +1,13 @@
 ﻿c BU (BickfordUnicode) keyboard
-c Revised: 2005 Nov 13
 
 store(&VERSION)     '10.0'             c Will not work with earlier versions of Keyman.
 store(&NAME)        'BU Phonetic'
-store(&COPYRIGHT)   '(c) 2006-2020 by Albert Bickford.'
+store(&COPYRIGHT) '(c) 2006-2021 Albert Bickford'
 store(&BITMAP) 'bu_phonetic.ico'
 store(&HOTKEY)      [CTRL ALT K_U]
 store(&MnemonicLayout) "1"
+store(&TARGETS) 'windows macosx linux'
+store(&KEYBOARDVERSION) '2.0.1'
 
 
 
@@ -15,9 +16,6 @@ c   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 c   * *   IMPORTANT!  READ THIS BEFORE ATTEMPTING TO MODIFY THIS KEYBOARD   * *
 c   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 c   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-c 1) See the documentation (BUkeys.doc), in the section on Terms of Use, for conditions under which
-c    this keyboard may be modified.
 
 c 2) This keyboard supports both Windows ANSI applications (8-bit encoding) as well as Unicode applications.  In 
 c     several places in the code below, separate stores need to be set up for ANSI data, and there is a separate 
@@ -1082,8 +1080,6 @@ c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 c Main processing (Unicode)
 c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-store(&TARGETS) 'windows macosx'
-store(&KEYBOARDVERSION) '2.0'
 
 begin Unicode > use(main)
 group(main) using keys
