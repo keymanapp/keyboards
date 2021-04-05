@@ -6,6 +6,11 @@ store(&VISUALKEYBOARD) 'engram.kvks'
 store(&TARGETS) 'web desktop'
 begin Unicode > use(main)
 
+c CapsLock off, "a" key produces "q": + [NCAPS K_A] > U+0071
+c CapsLock on, Shift+"a" key produces "q": + [CAPS SHIFT K_A] > U+0071
+c CapsLock off, Shift+"a" key produces "Q": + [NCAPS SHIFT K_A] > U+0051
+c CapsLock on, "a" key produces "Q": + [CAPS K_A] > U+0051
+
 group(main) using keys
 + [K_BKQUOTE] > '['
 + [K_1] > '1'
@@ -101,3 +106,4 @@ group(main) using keys
 + [SHIFT K_COMMA] > 'M'
 + [SHIFT K_PERIOD] > 'F'
 + [SHIFT K_SLASH] > 'P'
+
