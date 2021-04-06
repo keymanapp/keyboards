@@ -1,18 +1,18 @@
 <?php /*
   Name:             Keyboard_gff_tir_er_7
-  Copyright:        Keyboard ©2009 The Ge'ez Frontier Foundation 
-  Documentation:    
-  Description:      
+  Copyright:        Keyboard ©2009 The Ge'ez Frontier Foundation
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin, pbaehr
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Full help
 */
   $pagename = 'Tigrigna (Eritrea) (GFF) Keyboard Help';
@@ -80,7 +80,7 @@ This keyboard is designed for use with the Tigrigna language of Eritrea in Afric
 
 <div id="Documentation">
 <h3>Keyboard Details</h3>
-	
+
 <p>
 The Tigrigna keyboard uses an intuitive <i>phonetic</i> system where the Tigrigna sounds are matched to the nearest English letters. You can think of how a word sounds in
 Tigrigna and then type it out with English.
@@ -105,10 +105,10 @@ Finally, we must introduce a special rule for ' (apostrophe). Some words are spe
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>T'uum</span> becomes <span class='highlightExample'>ጥዑም</span></p>
 <p>
 We also use the apostrophe for Ethiopic numbers, so <span class='keys'>'1</span> becomes <span class='highlightExample'>፩</span> and so on. If an English apostrophe <span class='highlightExample'>'</span> is needed in your document, type it twice: <span class='keys'>''</span>. This works for other punctuation as well,
-so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፣</span> and a second time gives English semi-colon <span class='input'>;</span>. 
+so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፣</span> and a second time gives English semi-colon <span class='input'>;</span>.
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='TigrignaErTyping-English.pdf'>Typing in Tigrigna</a> for full details on how to type all Tigrigna letters, numbers and punctuation.
+See <a target="_blank" href='TigrinyaErTyping-English.pdf'>Typing in Tigrigna</a> for full details on how to type all Tigrigna letters, numbers and punctuation.
 </p>
 </div>
 </div>

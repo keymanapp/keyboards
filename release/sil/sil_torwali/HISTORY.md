@@ -1,6 +1,14 @@
 Torwali (SIL) Change History
 =======================
 
+1.0.2 (27 Oct 2020)
+-------------------
+* Increment version number to force recompile of touch layout.
+
+1.0.1 (8 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
 1.0 (3 Jan 2019)
 -----------------
 * Updated keyboard to match MSKLC keyboard

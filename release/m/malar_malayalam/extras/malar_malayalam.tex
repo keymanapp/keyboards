@@ -1,7 +1,8 @@
 % !TeX program = XeLaTeX
 
 % Malar Malayalam Keyboard Key Mapping
-% Gayathri Font: https://fonts.google.com/specimen/Gayathri
+% Manjari Font: https://smc.org.in/fonts/manjari
+% Gayathri Font: https://smc.org.in/fonts/gayathri
 % Roboto Mono Font: https://fonts.google.com/specimen/Roboto+Mono
 
 \documentclass[a4paper]{article}
@@ -13,10 +14,11 @@
    top=.25in,bottom=.25in,]{geometry}
 
 \usepackage{fontspec}
-\setmainfont[Ligatures=TeX,Mapping=tex-text]{Gayathri}
-\newfontfamily\malayalamfont[Script=Malayalam, Mapping=tex-text]{Gayathri}
-\newfontfamily\Manjari[Script=Malayalam]{Gayathri}
+\setmainfont[Ligatures=TeX,Mapping=tex-text]{Manjari}
+\newfontfamily\malayalamfont[Script=Malayalam, Mapping=tex-text]{Manjari}
+\newfontfamily\Manjari[Script=Malayalam]{Manjari}
 \newfontfamily\En[Mapping=tex-text]{Roboto Mono}
+\newfontfamily\Mal[Mapping=tex-text]{Gayathri}
 \def\en{\color{DarkGreen!100}\normalsize\En}
 \def\enh{\color{DarkGreen!100}\En}
 \def\enb{\color{Black!100}\normalsize\En}
@@ -33,6 +35,9 @@
 \def\tld{\expandafter\@gobble\string\~}
 \def\appo{\expandafter\@gobble\string\'}
 \def\quo{\expandafter\@gobble\string\"}
+\def\str{\expandafter\@gobble\string\*}
+\def\div{\expandafter\@gobble\string\÷}
+\def\mlt{\expandafter\@gobble\string\×}
 \makeatother
 
 \begin{document}
@@ -63,10 +68,10 @@
 \hline
 
 ൊ & ോ & ൗ\space\space ൌ & ം \space  ഃ  &
-ൢ &   ൣ &  ൄ & ഀ \space\space ഁ &&  ഻ \space  ഼ \\
+ൢ &   ൣ &  ൄ & ഀ \space\space ഁ &ഄ&  ഻ \space  ഼ \\
 \en o\bsh &\en O\bsh &\en au\bsh\space ou\bsh &\en M  \space \space H &
 \en lu\bsh\bsh &\en luu\bsh\bsh\space loo\bsh\bsh\space lU\bsh\bsh &
-\en RRR\bsh &\en MM\space MMM &&\en\tld\tld\space\tld\tld\tld \\
+\en RRR\bsh &\en MM\space MMM &\en xM&\en\tld\tld\space\tld\tld\tld \\
 \hline
 \end{tabular}
 
@@ -92,14 +97,14 @@
 \en\space\dlr\space\space\dlr\bsh \\
 \hline
 
-ഷ് & സ് & ഹ് & ള് & ഴ് & റ് &ഩ്& ഺ് & ൎ & &\enb ZWNJ \\
+ഷ് & സ് & ഹ് & ള് & ഴ് & റ് &ഩ്& ഺ് & ൎ &\div\space\space\space\mlt&\enb ZWNJ \\
 \en sh &\en s &\en h &\en L &\en zh &\en R\space rr &
-\en n\bsh\bsh &\en TT\bsh &\en r\bsh\bsh &&\en\vbar \\
+\en n\bsh\bsh &\en TT\bsh &\en r\bsh\bsh &\en\sla\bsh\space\space\str\bsh&\en\vbar \\
 \hline
 
 ൻ & ൺ & ൽ & ൾ & ർ & ൿ & ൔ & ൕ & ൖ & &\enb Cancel \\
 \en n\bsh &\en N\bsh &\en l\bsh &\en L\bsh &\en r\bsh&
-\en k\bsh &\en m\bsh &\en y\bsh &\en zh\bsh &&\en x\space X \\
+\en k\bsh &\en m\bsh &\en y\bsh &\en zh\bsh &&\en q\space Q \\
 \hline
 
 ങ്ങ് &	ങ്ക് &	ന്റ് &	ഞ്ച് & റ്റ് & ക്ഷ്	& 
@@ -117,7 +122,7 @@
 \multicolumn{11}{c}{ഉദാഹരണങ്ങൾ}\\
 \hline
 
-ക & കാ & കി & കീ & കു & കൂ & കൃ & കൄ & 
+ക & കാ & കി & കീ & കു & കൂ & കൃ &\Mal കൄ & 
 കെ & കേ & കൈ   \\
 \en ka &\en kaa &\en ki &\en kii &\en ku &\en kuu &\en kR &
 \en kRR &\en ke &\en kE &\en kai  \\
@@ -159,5 +164,4 @@
 \en 3\sla4\bsh \\
 \hline
 \end{tabular}
-
 \end{document}

@@ -53,15 +53,15 @@ c LPE   1.4     25-FEB-2014     added U+A71d..U+A71F
 c LPE   1.5     27-FEB-2018     All changes are now reflected in HISTORY.md
  
 store(&VERSION) '10.0'
-store(&NAME) 'SIL IPA'
+store(&NAME) 'IPA (SIL)'
 store(&BITMAP) 'sil_ipa.ico'
 c HOTKEY  "^+P"
-store(&COPYRIGHT) '© 2002-2019 SIL International'
-store(&MESSAGE) 'The SIL IPA Keyman keyboard is distributed under The MIT License (MIT).'
+store(&COPYRIGHT) '© 2002-2020 SIL International'
+store(&MESSAGE) 'The IPA (SIL) Keyman keyboard is distributed under The MIT License (MIT).'
 c store(&author) "M. Hosken, D. Bevan"
 c store(&language) ""
 c store(&WINDOWSLANGUAGES) 'x040F'
-store(&KEYBOARDVERSION) '1.7'
+store(&KEYBOARDVERSION) '1.8.4'
 store(&LAYOUTFILE) 'sil_ipa.keyman-touch-layout'
 store(&TARGETS) 'any'
 
@@ -343,6 +343,9 @@ c any(hatD)   + "^"  > index(hatU,1)
 c any(pipeD)  + "|"  > index(pipeU,1) c this was added for Chinese IPA
 
 store(option_key) ''
+
+$keymanonly: + [RALT "-"]	>	set(option_key='before') c 
+$keymanonly: + [RALT "="]	>	reset(option_key)  c 
 
 store(controls)  "=><^|"
 $keymanonly: store(controls-before) ["="][SHIFT ">"] [SHIFT "<"] [SHIFT '^'] [SHIFT "|"]

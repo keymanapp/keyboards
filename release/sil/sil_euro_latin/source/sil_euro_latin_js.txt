@@ -1,4 +1,4 @@
-﻿this.KHF=function(e) { 
+this.KHF=function(e) { 
   var h = document.getElementsByTagName('head');
   var stext = 
   "#keyboard_europeanlatin_help { text-align: left; padding: 0; background: #f5e3de; font-size: 8pt; font-family: Tahoma; cursor: default; padding: 4px; }"+
@@ -55,7 +55,8 @@
       for(var j = 0; j < sc.length; j++)
       {
 		var chvo = so.charAt(j), chvc = sc.charAt(j), chvp = sp.charAt(j);
-		/* Special case for characters p umlaut, g tilde because they aren't precomposed */
+		/* Special case for characters n umlaut, p umlaut, g tilde because they aren't precomposed */
+		if(sxv == ':' && chvo == 'n') { chvo = 'n̈'; chvp = 'N̈'; }
 		if(sxv == ':' && chvo == 'p') { chvo = 'p̈'; chvp = 'P̈'; }
 		if(sxv == '~' && chvo == 'g') { chvo = 'g̃'; chvp = 'G̃'; }
         sx += '<th>'+sxv+chvc+'</th>';

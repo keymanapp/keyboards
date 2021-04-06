@@ -28,3 +28,6 @@ Supported Platforms
  * Desktop devices
  * Tablet devices
 
+To do
+-----
+* Fix up version number in welcome.htm (should have been version 1.0)

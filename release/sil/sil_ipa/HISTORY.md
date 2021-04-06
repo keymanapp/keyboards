@@ -1,5 +1,26 @@
-SIL IPA Keyboard Change History
+IPA (SIL) Keyboard Change History
 =======================
+
+1.8.4 (27 Oct 2020)
+-------------------
+* Increment version number to force recompile of touch layout.
+
+1.8.3 (15 Sept 2020)
+-------------------
+* Updated documentation to remove underlined links
+* Updated documentation for vl alveolo-palatal fricative (not vd)
+
+1.8.2 (27 Jul 2020)
+-------------------
+* Updated documentation to correct Africanist upstep and downstep. Not behavior changes.
+
+1.8.1 (4 Jun 2020)
+-------------------
+* Updated htm files for readability on Linux
+
+1.8 (1 May 2020)
+-------------------
+* Add hotkey to access options
 
 1.7 (28 Feb 2018)
 -------------------

@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1086.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.239.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Hebrew (SIL)</Name>
-    <Copyright URL="">Copyright © 2003-2018 SIL International</Copyright>
+    <Copyright URL="">Copyright © 2003-2021 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -26,30 +26,6 @@
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>welcome\sil_hebrewU_.png</Name>
-      <Description>File sil_hebrewU_.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\sil_hebrewU_A.png</Name>
-      <Description>File sil_hebrewU_A.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\sil_hebrewU_S.png</Name>
-      <Description>File sil_hebrewU_S.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\sil_hebrewU_SA.png</Name>
-      <Description>File sil_hebrewU_SA.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
     </File>
     <File>
       <Name>welcome\welcome.htm</Name>
@@ -69,12 +45,81 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>SBL_Hbrw.ttf</Name>
+      <Description>Font SBL Hebrew</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>SBL_Hbrw_LICENSE.txt</Name>
+      <Description>File SBL_Hbrw_LICENSE.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\EzraSIL_Licenses.txt</Name>
+      <Description>File EzraSIL_Licenses.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</Name>
+      <Description>Font Ezra SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_hebrew.js</Name>
+      <Description>File sil_hebrew.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hebrew (SIL)</Name>
       <ID>sil_hebrew</ID>
-      <Version></Version>
+      <Version>1.8.1</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</DisplayFont>
       <Languages>
         <Language ID="hbo-Hebr">Ancient Hebrew</Language>
       </Languages>

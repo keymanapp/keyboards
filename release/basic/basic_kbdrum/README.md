@@ -28,3 +28,8 @@ Supported Platforms
  * Desktop devices
  * Tablet devices
 
+To do
+-----
+* Fix typing mistakes in welcome.htm and basic_kbdrum.php
+  * "This keyboard uses five deadkeys, such as:" > "This keyboard uses nine deadkeys, on the following keycaps:"
+  * "Mnemonic Basic Basic" > "Mnemonic Basic" (3 places in welcome.htm)

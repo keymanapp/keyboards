@@ -1,17 +1,16 @@
-﻿store(&VERSION) '9.0'
+﻿store(&VERSION) '10.0'
 store(&BITMAP) 'sil_mali_qwerty.ico'
-store(&COPYRIGHT) '© 2004-2018 SIL Mali'
+store(&COPYRIGHT) '© 2004-2020 SIL International'
 store(&NAME) 'Clavier du Mali (Qwerty)'
-store(&HotKey ) "[K_F12]"
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_mali_qwerty.kvks'
-store(&KEYBOARDVERSION) '3.3'
+store(&KEYBOARDVERSION) '4.0.1'
 store(&LAYOUTFILE) 'sil_mali_qwerty.keyman-touch-layout'
 
 begin Unicode > use(Main)
 
 c The basic keyboard was done by Doug Higby for Burkina Faso + Tones over nasals
-c This was last modified by Dan Brubaker in January 2008 and Oct 2017
+c This was modified by Dan Brubaker in January 2008, Oct 2017 and Feb 2020
 c All characters are composed as much as practical i.e. one single character  instead of two.
 c All composed sequences were added by Dan Brubaker in November 2007
 c The following 2 stores are used with the group(angleit) near the bottom of this table
@@ -37,19 +36,15 @@ store(modifierK) outs(toneK) $TildeK
 
 store(specchar1K) "ABCDEFGHIJKMNOPRUWYZabcdefghijkmnoprsuwyz?[]{}VvLlQqSTt\;Xx~<>`" "'"
 
-c U+2019 is not on any keyboard
-c store(specchar1K) "ABCDEFGHIJKMNOPRUWYZabcdefghijkmnoprsuwyz?[]{}VvLlQqSTt\;’Xx~<>`" "'"
-
-
 c Use the 2 lines below the stores to select matching lc and UC schwas
 store(CapSchwa) U+018E c Backwards E
 store(LCSchwa)  U+01DD
 c store(CapSchwa) U+018F c  "ǝ" that goes with the "Ə" below
 c store(LCSchwa)  U+0259  c "Ə"
 
-c The following lines create NFC values only for ANSI equivalents.  This fixes problems with
-c French spelling and grammar checkers which don't recognize valid decomposed characters.
-c Composed characters will center and raise the diacritics better in all Unicode fonts, thus making the character "look" correct over a much greater range of Unicode fonts.
+c French spelling and grammar checkers don't recognize valid decomposed characters.
+c Composed characters will center and raise the diacritics better in all Unicode fonts,
+c thus making the character "look" correct over a much greater range of Unicode fonts.
  
 store(LatinVowel)      "AEIOUaeiou"
 store(CompositeAcute)  "Á" "É" U+00CD U+00D3 U+00DA "á" U+00E9 U+00ED U+00F3 U+00FA 
@@ -78,7 +73,7 @@ store(Umodifiable)  U+0041 U+0045 U+018E U+0190 U+0049 U+0196 \
                     U+0078 U+0067 U+006C U+0044 U+0048 U+004C \
                     U+0054 U+0251 U+0268 U+0153 U+00E6 "T" c Note d, g, h, l, s, t, x needed for Arabic letters
 store(Composite) outs(CompositeAcute)  outs(CompositeGrave) \
-                 outs(CompositeCirc)   outs(CompositeNasal) outs(CompositeDrsis) \
+                 outs(CompositeCirc)   outs(CompositeDrsis) \
                  outs(CompositeMacron) outs(CompositeCaron) outs(CompositeDotUnder) 
 
 c Added quite a few character to below
@@ -90,16 +85,15 @@ c e open        oe      gamma    ss sign      iota          enya
 c k hook  copyright    eng        o open    Lf AmDQ     r hook
 c ;        u open      w hook    y hook       zed          OE
 c enya       eng        ENYA      ENG      DBL cross    cross
-c smiley   a alpha   Lf AmSQ Rt AmSQ     esh          glottal
+c EngPound  a alpha   Lf AmSQ Rt AmSQ     esh          glottal
 c db arrow    \      Apostrophy  i barred       g alpha        tilda
 c Lf wedge Rt wedge Lf Acc   Straight Acc
-
 store(Uspecchar1)   $CapSchwa U+0181 U+00C7 U+018A U+0190 U+20AC \
-                    U+0194 U+2026 U+0196 U+019D U+0268 U+2713 \
+                    U+0194 U+0268 U+0196 U+019D U+2026 U+2713 \
                     U+014A U+0186 U+201D U+00D8 U+01B2 U+00A7  \
                     U+01B3 U+01B7 $LCSchwa U+0253 U+00E7 U+0257 \
                     U+025B U+0153 U+0263 U+0294 U+0269 U+0272 \
-                    U+02BC U+00A9 U+014B U+0254 U+201C U+2116 \
+                    U+00040 U+00A9 U+014B U+0254 U+201C U+2116 \
                     ";" U+028B U+00B0 U+01B4 U+0292 U+0268 \
                     "[" "]" "{" "}" U+2021 U+2020 \
                     U+00A3 U+02BC U+2019 U+2018 U+0283 U+00E6 \
@@ -129,6 +123,13 @@ c comma before everything
 
 any(Umodifiable) + any(modifierK) > context index(Umodifier,2) use(Udiacritics) use(NFC)
 
+c Deletion rules
+any(CompositeAcute) + [K_BKSP] > index(LatinVowel,1)
+any(CompositeGrave) + [K_BKSP] > index(LatinVowel,1)
+any(CompositeDrsis) + [K_BKSP] > index(LatinVowel,1)
+any(CompositeCirc) + [K_BKSP] > index(LatinVowel,1)
+any(CompositeNasal) + [K_BKSP] > index(LatinVowel,1)
+
 c When adding a second modifier over the TILDA, we need to check the order.
 
 any(Composite) + $TildeK > context $UTilde use(fixtilde)
@@ -143,7 +144,6 @@ c below 2 hyphens goes to Em-dash AND the Apostrophy after jusqu` doesn't go ove
 "qu" + "`" > "qu’"
 "Qu" + "`" > "Qu’"
 "rd" + "`"  > "rd’" c aujourd'hui d'autres d'onyx d'eau
-
  
 + "[" > "ɲ" 
 + "{" > "Ɲ"
@@ -158,7 +158,7 @@ c Extra characters with combined accents
 "V" + "%" > "Ə" c Capital Schwa variant
 "v" + "%" > U+0259 c lc Schwa variant
 "B" + "%" > U+0102 c Capital A with breve accent
-"b" + "%" > "ɑ̆" c small alpha a  with breve accent
+"b" + "%" > "ɑ̆" c small alpha a with breve accent
 "M" + "/" > "Ḿ" c acute m
 "m" + "/" > "ḿ" c acute
 "N" + "/" > "Ń" c acute n
@@ -188,7 +188,6 @@ c Extra characters with combined accents
 "n" + "@" > U+1E49 c LineUnder
                        
 c Fractions
-
 "!1" + "2" > "½"
 "!1" + "4" > "¼"
 "!3" + "4" > "¾"
@@ -205,9 +204,8 @@ c Fractions
 "!5" + "8" > "⅝"
 "!7" + "8" > "⅞"
 
-"!" + "a" > U+2116 c Numero sign
+"!" + "a" > U+0040 c arobase for Emails AT sign
 "!" + "b" > U+00AE c R circle sign = Registered Sign
-c "!" + "b" > U+00B0 c Degree sign
 "!" + "c" > U+2126 c Ohm sign
 "!" + "d" > U+2260 c Not Equal to
 "!" + "e" > U+00B1 c Plus/Minus sign
@@ -215,15 +213,25 @@ c "!" + "b" > U+00B0 c Degree sign
 "!" + "g" > U+00F7 c Division sign  
 "!" + "h" > U+221E c Infinity sign
 "!" + "i" > U+2264 c Less-Than or Equal to  
-"!" + "k" >  U+2026 c 3 dots = ellipsis
+"!" + "k" > U+2026 c 3 dots = ellipsis
 "!" + "j" > U+2265 c Greater-Than or Equal to
-"!" + "l" > U+00A3 c English Pound sign
-"!" + "m" > U+03C7 c Chi  fancy X lower case Greek
+"!" + "l" > U+00F8 c Small letter o with stroke
+"!" + "m" > U+00B5 c micro sign
 "!" + "n" > U+02A7 c T-Esh ligature
 "!" + "o" > U+02A4 c D-Ezh ligature
-"!" + "p" > U+03A7 c Chi  fancy X upper case Greek, NOT in Charis SIL
+"!" + "p" > U+03BB c lamda
 "!" + "q" > U+003C c Left wedge
 "!" + "Q" > U+003E c Right wedge
+"!" + "r" > U+0280 c Small CAP R for French r sound
+"!" + "s" > U+2713 c Check mark DUPICATE
+"!" + "t" > U+0265 c Upside down h equals a rounded u
+"!" + "u" > U+1D7E c barred u
+"!" + "v" > U+0244 c barred CAP U
+"!" + "w" > U+1D7C c barred iota
+"!" + "x" > U+03C7 c Chi  fancy X lower case Greek
+"!" + "y" > "@yahoo.com"
+"!" + "z" > "@wycliffe.org"
+
 "!1" + " " > U+00B9 c 1 superscript
 "!2" + " " > U+00B2 c 2 superscript
 "!3" + " " > U+00B3 c 3 superscript
@@ -240,12 +248,6 @@ c "!" + "b" > U+00B0 c Degree sign
 "kk" + "s" > U+00A0 c No-Break Space
 "kk" + "h" > U+2011 c Non-Breaking Hyphen
   
-c The following rule is simple diacritic placement with no restructuring involved - don't need to go to rules
-c This adds an accent after the remaining vowels (which should appear centered over the vowel)
-c any(Umodifiable) + any(modifierK) > context index(Umodifier,2) c FOR no accents over tilde
-
-U+0251 + any(modifierK) > context index(Umodifier,2)
-
 $keymanweb: + any(lessthan) > U+2039 use(angleit)
 $keymanweb: + any(greaterthan) > U+203A use(angleit)
 $keymanonly: + "<" > U+2039 use(angleit)
@@ -271,10 +273,9 @@ any(CompositeMacron) $UTilde > index(CompositeNasal,1) $UMacron use(NFC)
 any(CompositeCaron)  $UTilde > index(CompositeNasal,1) $UCaron 
 any(CompositeNasal)  $UTilde any(Utone) > context(1) context(3)
 
+c Two groups of Constraints: Udiacritics and NFC
 group(Udiacritics)
-c Constraints
 any(Utone) any(Utone) > beep context(1)
-U+0303 any(Utone) U+0303 > beep context(1) context(2)
 any(CompositeAcute)  any(Utone) > beep context(1)
 any(CompositeGrave)  any(Utone) > beep context(1)
 any(CompositeNasal) $UTilde > beep context(1)
@@ -284,6 +285,7 @@ any(CompositeMacron) any(Utone) > beep context(1)
 any(CompositeCaron)  any(Utone) > beep context(1)
 any(Umodifier) any(Umodifier) $UTilde > $UTilde context(1) context(2)
 any(Umodifier) $UTilde > context(2) context(1)
+U+0303 any(Utone) U+0303 > beep context(1) context(2)
 
 group(NFC)
 
@@ -295,3 +297,5 @@ any(LatinVowel) $UCirc      > index(CompositeCirc,1)
 any(LatinVowel) $UMacron    > index(CompositeMacron,1)
 any(LatinVowel) $UCaron     > index(CompositeCaron,1)
 any(LatinVowel) $UDotUnder  > index(CompositeDotUnder,1)
+
+c End of Keyboard

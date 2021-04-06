@@ -1,0 +1,106 @@
+﻿c venetia_et_histria generated from template at 2020-09-08 10:32:27
+c with name "Venetia et Histria"
+store(&VERSION) '10.0'
+store(&NAME) 'Venetia et Histria'
+store(&COPYRIGHT) '© 2007-2020 SIL International'
+store(&KEYBOARDVERSION) '2.0'
+store(&VISUALKEYBOARD) 'venetia_et_histria.kvks'
+store(&LAYOUTFILE) 'venetia_et_histria.keyman-touch-layout'
+store(&TARGETS) 'windows macosx linux web iphone ipad androidphone androidtablet'
+store(&BITMAP) 'venetia_et_histria.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+c + [SHIFT CTRL ALT 'z'] > 'Ʒ'
+c + [CTRL ALT 'z'] > 'ʒ'
++ [CTRL ALT K_oE2] > '«'
++ [SHIFT CTRL ALT K_oE2] > '»'
++ [SHIFT CTRL K_oE2] > '>'
++ [CTRL K_oE2] > '<'
++ [K_oE2] > 'ƚ'
++ [SHIFT K_oE2] > 'Ƚ'
+c + [SHIFT ALT 'l'] > 'Ł'
+c + [ALT 'l'] > 'ł'
+c + [CTRL 'l'] > 'ƚ'
+c + [SHIFT CTRL 'l'] > 'Ƚ'
+c + [ALT 'c'] > 'ç'
+c + [SHIFT ALT 'c'] > 'Ç'
+c + [SHIFT ALT 'n'] > 'Ñ'
+c + [ALT 'n'] > 'ñ'
+c + [ALT 'z'] > 'ẑ'
+c + [SHIFT ALT 'z'] > 'Ẑ'
+c + [SHIFT ALT 'a'] > 'Â'
+c + [ALT 'a'] > 'â'
+c + [SHIFT CTRL 's'] > 'Š'
+c + [CTRL 's'] > 'š'
+c + [CTRL 'z'] > 'ž'
+c + [SHIFT CTRL 'z'] > 'Ž'
+c + [CTRL 'g'] > 'ǧ'
+c + [SHIFT CTRL 'g'] > 'Ǧ'
+c + [SHIFT CTRL 'c'] > U+010C
+c + [CTRL 'c'] > U+010D
+
+
+c combining characters:
+
+c . + cgzns -> cgzns with dot
+store(undotted) 'CcGgZzNnSs'
+store(dotted) 'ĊċĠġŻżṄṅṠṡ'
+
+'.' + any(undotted) > index(dotted, 2)
+'.' + '.' > '.' dk(1)
+
+
+c , or ` + aeiou -> aeiou with grave
+store(ungraved) 'AaEeIiOoUuNnCcZz'
+store(graved) 'ÀàÈèÌìÒòÙùÑñÇçƷʒ'
+
+',' + any(ungraved) > index(graved, 2)
+'`' + any(ungraved) > index(graved, 2)
+
+
+c ' + aeiouc -> aeiouc with acute
+store(unacute) 'AaEeIiOoUuCc'
+store(acute) 'ÁáÉéÍíÓóÚúĆć'
+
+"'" + any(unacute) > index(acute, 2)
+"'" + "'" > "'" dk(1)
+
+c : + aeiou -> aeiou with diaresis
+store(undiaresis) 'AaEeIiOoUu'
+store(diaresis) 'ÄäËëÏïÖöÜü'
+
+':' + any(undiaresis) > index(diaresis, 2)
+
+c ^ + az -> az with circumflex
+store(uncirc) 'AaZz'
+store(circ) 'ÂâẐẑ'
+
+'^' + any(uncirc) > index(circ, 2)
+
+c ~ + ncz -> n with tilde, c with cedilla, ezh
+store(unspecial) 'AaOoNn'
+store(special) 'ÃãÕõÑñ'
+
+'~' + any(unspecial) > index(special, 2)
+
+c - + dl -> dl with bar
+store(unbarred) 'DdLlNn'
+store(barred) 'ĐđȽƚÑñ'
+
+'-' + any(unbarred) > index(barred, 2)
+'-' + '-' > '-' dk(1)
+
+c + + cgsz with caron
+store(uncaron) 'CcGgSsZz'
+store(caron) 'ČčǦǧŠšŽž'
+
+'+' + any(uncaron) > index(caron, 2)
+'+' + '+' > '+' dk(1)
+
+c \ + l for polish l - not used much
+store(unstroke) 'Ll'
+store(stroke) 'Łł'
+
+'\' + any(unstroke) > index(stroke, 2)

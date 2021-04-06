@@ -33,16 +33,17 @@ c 06EB > 08EA    x1
 c 06EC > 08EB    x1
 c 06ED > 08EE
 
-store(&VERSION) '9.0'
+store(&VERSION) '10.0'
 store(&NAME) 'Rohingya Arabic'
 store(&BITMAP) 'rohingya_arab.ico'
 c store(&WINDOWSLANGUAGES) 'x0401'
-store(&COPYRIGHT) '© 2012-2019 SIL International'
+store(&COPYRIGHT) '© 2012-2020 SIL International'
 store(&MESSAGE) 'The Rohingya Arabic keyboard is distributed under the MIT software license.'
-store(&KEYBOARDVERSION) '1.0.1'
-store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '1.1'
 store(&VISUALKEYBOARD) 'rohingya_arab.kvks'
 store(&KMW_RTL) '1'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'rohingya_arab.keyman-touch-layout'
 
 begin Unicode > use(Main)
 
@@ -57,7 +58,7 @@ store(baseK)    '!' \
                 'sdfghjkl;' \
                 'ZXCVBNM?' \
                 'zxcvbnm,./'
-c unused "I"
+c "I" is a deadkey
 
 store(baseU)    U+0021 \
                 U+06F1 U+06F2 U+06F3 U+06F4 U+06F5 U+06F6 U+06F7 U+06F8 U+06F9 U+06F0 U+0640 \
@@ -85,6 +86,8 @@ store(allvowels)  outs(uvowelU) outs(lvowelU) outs(uvowelU-tan) outs(lvowelU-tan
 store(uvowel)   U+064C U+064F U+064E U+08E4 U+08E5 U+08E7 U+08E8
 store(lvowel)   U+0650 U+08E6 U+08E9
 
+store(toneRAK) [RALT K_U] [RALT K_I] [RALT K_O]
+store(toneSRAKus) [SHIFT RALT K_U] [SHIFT RALT K_I] [SHIFT RALT K_O]
 store(toneKus) '[]\'
 store(toneK)   '$%#'
 store(utoneU)   U+08EA U+08EB U+08EC
@@ -92,12 +95,14 @@ store(ltoneU)   U+08ED U+08EE U+08EF
 store(alltoneU) outs(utoneU) outs(ltoneU)
 
 store(dK)       '1234567890' \
-                'aeioUr!A' 
+                'aeioUr!At' 
 store(dU)       U+0661 U+0662 U+0663 U+0664 U+0665 U+0666 U+0667 U+0668 U+0669 U+0660 \
-                U+08E4 U+08E9 U+064D U+08E7 U+08E8 U+0698 U+08E4 U+FDF2
+                U+08E4 U+08E9 U+064D U+08E7 U+08E8 U+0698 U+08E4 U+FDF2 U+0629
 
 group(Main) using keys
 
++ [RALT K_T] > U+0629
++ [RALT K_R] > U+0698
   + any(baseK)   > index(baseU, 1)
   + any(lvowelK) > index(lvowelU,1)
   + any(uvowelK) > index(uvowelU,1)
@@ -134,9 +139,21 @@ any(uvowelU-tan) + any(toneKus) > context index(utoneU, 2)
 any(lvowelU) + any(toneKus) > context index(ltoneU, 2)
 any(lvowelU-tan) + any(toneKus) > context index(ltoneU, 2)
 
+any(uvowelU) + any(toneRAK) > context index(utoneU, 2)
+any(uvowelU-tan) + any(toneRAK) > context index(utoneU, 2)
+any(lvowelU) + any(toneRAK) > context index(ltoneU, 2)
+any(lvowelU-tan) + any(toneRAK) > context index(ltoneU, 2)
+
+any(uvowelU) + any(toneSRAKus) > context index(utoneU, 2)
+any(uvowelU-tan) + any(toneSRAKus) > context index(utoneU, 2)
+any(lvowelU) + any(toneSRAKus) > context index(ltoneU, 2)
+any(lvowelU-tan) + any(toneSRAKus) > context index(ltoneU, 2)
+
 c illegal to have tone mark with no vowel symbol
   + any(toneK)   > beep
   + any(toneKus)   > beep
+  + any(toneRAK) > beep
+  + any(toneSRAKus) > beep
 
  + 'I' > deadkey(1)
 deadkey(1) + any(dK) > index(dU, 2)

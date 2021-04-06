@@ -1,4 +1,4 @@
-﻿<?php 
+﻿<?php
   $pagename = 'Galaxie Greek (Phonetic) Keyboard Help';
   $pagetitle = 'Galaxie Greek (Phonetic) Keyboard Help';
   $pagestyle = <<<END
@@ -35,7 +35,7 @@ END;
     <a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
     <a style='margin-left:20px' href="#Examples">Examples</a><br/>
     <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-    <a style='margin-left:30px' target="_blank" href='keyboardchart.htm'>Complete Typing Chart</a><br/>
+    <a style='margin-left:30px' target="_blank" href='keyboardchart.php'>Complete Typing Chart</a><br/>
     <a href="#Technical">Technical Information</a><br/>
     <a style='margin-left:20px' href="#Author">Authorship</a><br/>
 
@@ -705,7 +705,7 @@ END;
         <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>:</span> produces <span class='lang2'>·</span>.</p>
 
         <p>
-            See the <a href="keyboardchart.htm">Complete Typing Chart</a> for full details on how to type all the Galaxie Greek keyboard's letters, diacritics, and punctuation.
+            See the <a href="keyboardchart.php">Complete Typing Chart</a> for full details on how to type all the Galaxie Greek keyboard's letters, diacritics, and punctuation.
         </p>
 
     </div>
