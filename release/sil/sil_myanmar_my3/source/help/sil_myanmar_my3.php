@@ -24,6 +24,12 @@
 
 		</div>
 				<p align="right"><a href="#top">^^အပေါ်သို့</a></p>
+
+        </h3>
+        <h3 id="mobile">Mobile/Tablet Keyboard Layout</h2>
+            <div id='osk-phone' data-states='default shift numeric'>
+            </div>
+        </h3>
 		<h3 id="2">
 			၂။ ပါဠ်ဆင့် ( စာလုံးဆင့် )များ ရိုက်သွင်းနည်း
 		</h3>
