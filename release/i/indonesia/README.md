@@ -1,10 +1,10 @@
 Indonesia keyboard
 Papan ketik Indonesia
 =====================
-© 2020 Benny Lin
+© 2020-2021 Benny Lin
 
-Version 1.0
-Versi 1.0
+Version 2.0
+Versi 2.0
 
 Description
 Deskripsi
