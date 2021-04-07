@@ -1,6 +1,10 @@
 Khmer Angkor Change History
 =======================
 
+1.0.9 (7 Apr 2021)
+----------------------
+* fix broken images on help and welcome pages
+
 1.0.8 (24 Mar 2021)
 ----------------------
 * fix the broken link on welcome page
