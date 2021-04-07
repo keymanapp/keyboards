@@ -14,7 +14,7 @@ Engram is a key layout optimized for comfortable and efficient touch typing in E
 created by [Arno Klein](https://binarybottle.com), 
 with [open source code](https://github.com/binarybottle/engram) to create other optimized key layouts.
 
-Letters are optimally arranged according to a scoring model that reflects ergonomic factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs: 
+Letters are optimally arranged according to a scoring model that reflects ergonomics factors that promote reduction of lateral finger movements and increase in efficient typing of high-frequency letter pairs: 
 
                 B Y O U   L D W V Z
                 C I E A   H T S N Q
