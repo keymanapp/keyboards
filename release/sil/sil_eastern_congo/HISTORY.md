@@ -1,6 +1,13 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.5 (1 April 2021)
+------------------
+* Added oe ligature
+* Added slash v character for Mangbetu language
+* Added extra high and extra low tone
+* added U+02BC for glottal stop
+
 1.4.1 (27 October 2020)
 ------------------
 * Increment version number to force recompile of touch layout.
