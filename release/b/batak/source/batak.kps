@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>14.0.270.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL="">1.0</Version>
+    <Name URL="">Batak keyboard layout</Name>
+    <Copyright URL="">2021</Copyright>
+    <Author URL="">Benny Lin</Author>
+    <WebSite URL="https://bennylin.github.io/">https://bennylin.github.io/</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\batak.kvk</Name>
+      <Description>File batak.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\batak.kmx</Name>
+      <Description>Keyboard Batak keyboard layout</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\batak.js</Name>
+      <Description>File batak.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\batak\NotoSansBatak-Regular.ttf</Name>
+      <Description>Font Noto Sans Batak</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Batak keyboard layout</Name>
+      <ID>batak</ID>
+      <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\batak\NotoSansBatak-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\batak\NotoSansBatak-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="btk-Batk">Batak languages (Batak)</Language>
+        <Language ID="bbc-Batk">Batak Toba (Batak)</Language>
+        <Language ID="btm-Batk">Batak Mandailing (Batak)</Language>
+        <Language ID="bts-Batk">Batak Simalungun (Batak)</Language>
+        <Language ID="btd-Batk">Batak Dairi (Batak)</Language>
+        <Language ID="btx-Batk">Batak Karo (Batak)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

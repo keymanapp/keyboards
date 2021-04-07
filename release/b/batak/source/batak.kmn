@@ -1,0 +1,134 @@
+﻿c Layout untuk bahasa-bahasa Batak yang menggunakan aksara Batak (Surat Batak): Batak BTK, Simalungun BTS, Toba BBC, Karo BTX, Pakpak BTD, and Mandailing BTM.
+c 
+c Mengandung semua aksara Batak dan simbol-simbol Latin.
+c 
+c 52 aksara Batak tepat menggantikan 52 huruf Latin (26x2). 4 karakter bindu tidak ada di keyboard fisik, hanya ada di touch layout (keyboard digital). Touch layout juga diberi tambahan layer huruf Latin.
+store(&NAME) 'Batak keyboard layout'
+store(&VISUALKEYBOARD) 'batak.kvks'
+store(&LAYOUTFILE) 'batak.keyman-touch-layout'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) 'Bennylin 2021'
+store(&MESSAGE) 'Batak keyboard (Batak BTK, Simalungun BTS, Toba BBC, Karo BTX, Pakpak BTD, and Mandailing BTM)'
+store(&KMW_HELPTEXT) 'https://bennylin.github.io/'
+store(&KMW_HELPFILE) 'batak-help.htm'
+begin Unicode > use(main)
+
+group(main) using keys
+c 52 aksara Batak (minus 4 simbol bindu), pas menempati 26 huruf Latin x 2
+c Berikut ini adalah urutan Unicode, dan lokasi di keyboard.
+
+c ᯀ | [K_A] | U+1BC0: BATAK LETTER A
+c ᯁ | [SHIFT K_A] | U+1BC1: BATAK LETTER SIMALUNGUN A
+c ᯂ | [K_K] | U+1BC2: BATAK LETTER HA/KA
+c ᯃ | [SHIFT K_K] | U+1BC3: BATAK LETTER SIMALUNGUN HA/KA
+c ᯄ | [K_H] | U+1BC4: BATAK LETTER MANDAILING HA
+c ᯅ | [K_B] | U+1BC5: BATAK LETTER BA
+c ᯆ | [SHIFT K_B] | U+1BC6: BATAK LETTER KARO BA
+c ᯇ | [K_P] | U+1BC7: BATAK LETTER PA
+c ᯈ | [SHIFT K_P] | U+1BC8: BATAK LETTER SIMALUNGUN PA
+c ᯉ | [K_N] | U+1BC9: BATAK LETTER NA
+c ᯊ | [SHIFT K_N] | U+1BCA: BATAK LETTER MANDAILING NA
+c ᯋ | [K_W] | U+1BCB: BATAK LETTER WA
+c ᯌ | [SHIFT K_W] | U+1BCC: BATAK LETTER SIMALUNGUN WA
+c ᯍ | [SHIFT K_V] | U+1BCD: BATAK LETTER PAKPAK WA
+c ᯎ | [K_G] | U+1BCE: BATAK LETTER GA
+c ᯏ | [SHIFT K_G] | U+1BCF: BATAK LETTER SIMALUNGUN GA
+c ᯐ | [K_J] | U+1BD0: BATAK LETTER JA
+c ᯑ | [K_D] | U+1BD1: BATAK LETTER DA
+c ᯒ | [K_R] | U+1BD2: BATAK LETTER RA
+c ᯓ | [SHIFT K_R] | U+1BD3: BATAK LETTER SIMALUNGUN RA
+c ᯔ | [K_M] | U+1BD4: BATAK LETTER MA
+c ᯕ | [SHIFT K_M] | U+1BD5: BATAK LETTER SIMALUNGUN MA
+c ᯖ | [K_T] | U+1BD6: BATAK LETTER SOUTHERN TA
+c ᯗ | [SHIFT K_T] | U+1BD7: BATAK LETTER NORTHERN TA
+c ᯘ | [K_S] | U+1BD8: BATAK LETTER SA
+c ᯙ | [K_Z] | U+1BD9: BATAK LETTER SIMALUNGUN SA
+c ᯚ | [SHIFT K_S] | U+1BDA: BATAK LETTER MANDAILING SA
+c ᯛ | [K_Y] | U+1BDB: BATAK LETTER YA
+c ᯜ | [SHIFT K_Y] | U+1BDC: BATAK LETTER SIMALUNGUN YA
+c ᯝ | [K_F] | U+1BDD: BATAK LETTER NGA
+c ᯞ | [K_L] | U+1BDE: BATAK LETTER LA
+c ᯟ | [SHIFT K_L] | U+1BDF: BATAK LETTER SIMALUNGUN LA
+c ᯠ | [K_V] | U+1BE0: BATAK LETTER NYA
+c ᯡ | [K_C] | U+1BE1: BATAK LETTER CA
+c ᯢ | [SHIFT K_D] | U+1BE2: BATAK LETTER NDA
+c ᯣ | [SHIFT K_X] | U+1BE3: BATAK LETTER MBA
+c ᯤ | [SHIFT K_I] | U+1BE4: BATAK LETTER I
+c ᯥ | [SHIFT K_U] | U+1BE5: BATAK LETTER U
+c ᯦ | [SHIFT K_C] | U+1BE6: BATAK SIGN TOMPI
+c ᯧ | [K_E] | U+1BE7: BATAK VOWEL SIGN E
+c ᯨ | [SHIFT K_E] | U+1BE8: BATAK VOWEL SIGN PAKPAK E
+c ᯩ | [K_X] | U+1BE9: BATAK VOWEL SIGN EE
+c ᯪ | [K_I] | U+1BEA: BATAK VOWEL SIGN I
+c ᯫ | [SHIFT K_J] | U+1BEB: BATAK VOWEL SIGN KARO I
+c ᯬ | [K_O] | U+1BEC: BATAK VOWEL SIGN O
+c ᯭ | [SHIFT K_O] | U+1BED: BATAK VOWEL SIGN KARO O
+c ᯮ | [K_U] | U+1BEE: BATAK VOWEL SIGN U
+c ᯯ | [SHIFT K_Z] | U+1BEF: BATAK VOWEL SIGN U FOR SIMALUNGUN SA
+c ᯰ | [SHIFT K_F] | U+1BF0: BATAK CONSONANT SIGN NG
+c ᯱ | [SHIFT K_H] | U+1BF1: BATAK CONSONANT SIGN H
+c ᯲ | [K_Q] | U+1BF2: BATAK PANGOLAT
+c ᯳ | [SHIFT K_Q] | U+1BF3: BATAK PANONGONAN 
+
+c Berikut ini adalah lokasi di keyboard (mulai baris 1 kolom 1 hingga baris 3 kolom terakhir)
++ [K_Q] >             '᯲' c pangolat 
++ [K_W] >             'ᯋ'
++ [K_E] >             'ᯧ'
++ [K_R] >             'ᯒ'
++ [K_T] >             'ᯖ'
++ [K_Y] >             'ᯛ'
++ [K_U] >             'ᯮ' c u "anak ni surat"
++ [K_I] >             'ᯪ' c i "anak ni surat"
++ [K_O] >             'ᯬ'
++ [K_P] >             'ᯇ'
++ [K_A] >             'ᯀ'
++ [K_S] >             'ᯘ'
++ [K_D] >             'ᯑ'
++ [K_F] >             'ᯝ' c nga
++ [K_G] >             'ᯎ'
++ [K_H] >             'ᯄ'
++ [K_J] >             'ᯐ'
++ [K_K] >             'ᯂ'
++ [K_L] >             'ᯞ'
++ [K_Z] >             'ᯙ'
++ [K_X] >             'ᯨ' c e pepet/schwa
++ [K_C] >             'ᯡ'
++ [K_V] >             'ᯠ'
++ [K_B] >             'ᯅ'
++ [K_N] >             'ᯉ'
++ [K_M] >             'ᯔ'
+
++ [SHIFT K_Q] >       '᯳' c panongonan
++ [SHIFT K_W] >       'ᯌ'
++ [SHIFT K_E] >       'ᯩ'
++ [SHIFT K_R] >       'ᯓ'
++ [SHIFT K_T] >       'ᯗ'
++ [SHIFT K_Y] >       'ᯜ'
++ [SHIFT K_U] >       'ᯥ' c u "ina ni surat"
++ [SHIFT K_I] >       'ᯤ' c i "ina ni surat"
++ [SHIFT K_O] >       'ᯭ'
++ [SHIFT K_P] >       'ᯈ'
++ [SHIFT K_A] >       'ᯁ'
++ [SHIFT K_S] >       'ᯚ'
++ [SHIFT K_D] >       'ᯢ' c nda "karo"
++ [SHIFT K_F] >       'ᯰ' c consonant sign -ng
++ [SHIFT K_G] >       'ᯏ'
++ [SHIFT K_H] >       'ᯱ' c consonant sign -h
++ [SHIFT K_J] >       'ᯫ' c i "karo"
++ [SHIFT K_K] >       'ᯱ'
++ [SHIFT K_L] >       'ᯟ'
++ [SHIFT K_Z] >       'ᯯ' c vowel sign u for simalungun sa
++ [SHIFT K_X] >       'ᯣ' c mba "karo"
++ [SHIFT K_C] >       '᯦' c tompi
++ [SHIFT K_V] >       'ᯍ'
++ [SHIFT K_B] >       'ᯆ'
++ [SHIFT K_N] >       'ᯊ'
++ [SHIFT K_M] >       'ᯕ'
+
+c Hanya touch layout / touch layout only
+
++ [T_new_1] > '᯼'
++ [T_new_2] > '᯽'
++ [T_new_3] > '᯾'
++ [T_new_4] > '᯿'
