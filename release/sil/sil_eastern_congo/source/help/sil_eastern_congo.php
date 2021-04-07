@@ -157,7 +157,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>;&apos;&apos;</td><td>&#x02BC;</td><td>Glottal stop (modifier apostrophe)</td>
+                <td>;?</td><td>&#x02BC;</td><td>Glottal stop (modifier apostrophe)</td>
             </tr>
             <tr>
                 <td>;&apos;&apos;</td><td>&#xA78C;</td><td>Glottal stop (Saltillo)</td>
