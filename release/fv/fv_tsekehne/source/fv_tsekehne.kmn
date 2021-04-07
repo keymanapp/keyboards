@@ -1,12 +1,13 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1"
+store(&KEYBOARDVERSION) "9.1.1"
 store(&TARGETS) "any"
-store(&COPYRIGHT) "© 2008-2018 FirstVoices, SIL International. Portions © 2006 Chris Harvey"
+store(&COPYRIGHT) "© 2008-2021 FirstVoices, SIL International. Portions © 2006 Chris Harvey"
 store(&NAME) "Tsek'ehne"
 c With validations
 store(&BITMAP) 'fv_tsekehne.ico'
 store(&VISUALKEYBOARD) 'fv_tsekehne.kvks'
 store(&KMW_HELPFILE) 'fv_tsekehne_help.htm'
+store(&LAYOUTFILE) 'fv_tsekehne.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -17,7 +18,6 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) 'fv_tsilhqotin.keyman-touch-layout'
 
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W] > 'W' layer('default')

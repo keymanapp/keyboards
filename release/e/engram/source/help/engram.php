@@ -11,7 +11,7 @@
 is a keyboard layout optimized for comfortable and efficient touch typing in English created by <a href="https://binarybottle.com">Arno Klein</a>, 
 with open source code to create other optimized key layouts.
 Letters are optimally arranged to reduce lateral finger movements, 
-following ergonomic principles, and facilitating high-frequency letter pairs. 
+following ergonomics principles, and facilitating high-frequency letter pairs. 
 The most common punctuation marks are logically grouped together in the middle columns 
 (accessed directly and by the Shift key) and numbers are paired with mathematical 
 and logic symbols (accessed by the Shift Key):</p>
