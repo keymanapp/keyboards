@@ -11,6 +11,7 @@ Obolo Chwerty Keyboard is a simple keyboard layout for typing Obolo language. In
 
 Links
 -----
+https://keyman.com/keyboards/obolo_chwerty
 
 Supported Platforms
 -------------------
