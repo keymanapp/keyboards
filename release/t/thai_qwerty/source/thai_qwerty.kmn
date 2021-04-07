@@ -1,0 +1,50 @@
+﻿c thai_qwerty generated from template at 2021-04-07 09:31:12
+c with name "Thai QWERTY"
+store(&VERSION) '10.0'
+store(&NAME) 'Thai QWERTY'
+store(&COPYRIGHT) '© 2021 Sebastian Restrepo & LatamAsia'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'thai_qwerty.kvks'
+store(&LAYOUTFILE) 'thai_qwerty.keyman-touch-layout'
+store(&BITMAP) 'thai_qwerty.ico'
+store(&KMW_EMBEDCSS) 'thai_qwerty.css'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_M] > 'ม'
++ [K_N] > 'น'
++ [K_B] > 'บ'
++ [K_V] > 'ึ'
++ [K_C] > 'จ'
++ [K_X] > 'ะ'
++ [K_Z] > 'ท'
++ [K_L] > 'ล'
++ [K_K] > 'ค'
++ [K_J] > 'ช'
++ [K_H] > 'ห'
++ [K_G] > 'ก'
++ [K_F] > 'ฟ'
++ [K_D] > 'ด'
++ [K_S] > 'ส'
++ [K_A] > 'า'
++ [K_P] > 'ป'
++ [K_O] > 'อ'
++ [K_I] > 'ิ'
++ [K_U] > 'ุ'
++ [K_Y] > 'ย'
++ [K_T] > 'ต'
++ [K_R] > 'ร'
++ [K_E] > 'เ'
++ [K_W] > 'ว'
++ [K_Q] > 'พ'
+
+c rota for kho for desktop preferably
+c U+0E04 + [K_K]      > U+0E02
+c U+0E02 + [K_K]      > U+0E03
+c U+0E03 + [K_K]      > U+0E06
+c U+0E06 + [K_K]      > U+0E05
+c U+0E05 + [K_K]      > U+0E04
+
+c rota for kho
