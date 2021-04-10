@@ -8,20 +8,25 @@
 .kmw-keyboard-gff_amharic #default-K_O  { background:  #f2a2e8  ; color: black; }
 */
 
-.kmw-keyboard-gff_amharic #default-T_GEEZ { background:  #e2f0cb ; color: black; }
-.kmw-keyboard-gff_amharic #default-K_U  { background:  #ffffb5  ; color: black; }
-.kmw-keyboard-gff_amharic #default-K_I  { background:  #fea3aa  ; color: black; }  /* #ff9aa2 */ 
-.kmw-keyboard-gff_amharic #default-K_A  { background: #ccf1ff  ; color: black; }
-.kmw-keyboard-gff_amharic #default-T_HAMIS { background:  #e0d7ff  ; color: black; }
-.kmw-keyboard-gff_amharic #default-K_O  { background: #f8b88b  ; color: black; } /* ffb782 */
+.kmw-keyboard-gff_amharic #default-T_GEEZ,
+.kmw-keyboard-gff_amharic #non-amharic-T_GEEZ
+  { background:  #e2f0cb ; color: black; }
+.kmw-keyboard-gff_amharic #default-K_U,
+.kmw-keyboard-gff_amharic #non-amharic-K_U
+  { background:  #ffffb5  ; color: black; }
+.kmw-keyboard-gff_amharic #default-K_I,
+.kmw-keyboard-gff_amharic #non-amharic-K_I 
+  { background:  #fea3aa  ; color: black; }  /* #ff9aa2 */ 
+.kmw-keyboard-gff_amharic #default-K_A,
+.kmw-keyboard-gff_amharic #non-amharic-K_A 
+  { background: #ccf1ff  ; color: black; }
+.kmw-keyboard-gff_amharic #default-T_HAMIS,
+.kmw-keyboard-gff_amharic #non-amharic-T_HAMIS
+  { background:  #e0d7ff  ; color: black; }
+.kmw-keyboard-gff_amharic #default-K_O,
+.kmw-keyboard-gff_amharic #non-amharic-K_O
+  { background: #fad6b6  ; color: black; } /* ffb782 */ /* f8b88b */
 
-/* non-amharic layer*/
-.kmw-keyboard-gff_amharic #non-amharic-T_GEEZ { background:  #e2f0cb ; color: black; }
-.kmw-keyboard-gff_amharic #non-amharic-K_U  { background:  #ffffb5  ; color: black; }
-.kmw-keyboard-gff_amharic #non-amharic-K_I  { background:  #fea3aa  ; color: black; }  /* #ff9aa2 */
-.kmw-keyboard-gff_amharic #non-amharic-K_A  { background: #ccf1ff  ; color: black; }
-.kmw-keyboard-gff_amharic #non-amharic-T_HAMIS { background:  #e0d7ff  ; color: black; }
-.kmw-keyboard-gff_amharic #non-amharic-K_O  { background: #f8b88b  ; color: black; } /* ffb782 */
 
 /* default layer ግዕዝ */
 div#popup-default-U_1200, /* ሀ */
@@ -346,7 +351,7 @@ div#popup-non-amharic-U_12BE, /* ኾ */
 div#popup-non-amharic-U_131E, /* ጞ */
 div#popup-non-amharic-U_1346, /* ፆ */
 div#popup-non-amharic-U_1356  /* ፖ */
-{ background:  #f8b88b  ; color: black; }
+{ background:  #fad6b6  ; color: black; } /* f8b88b*/
 
 /* default layer ዘመደ-ራብዕ */
 div#popup-default-U_120F, /* ሏ  */
@@ -383,103 +388,68 @@ div#popup-non-amharic-U_12C3, /* ዃ */
 div#popup-non-amharic-U_1357  /* ፗ */
 { background:  #e1cec9  ; color: black; }
 
+
 /* ዘመደ-ግዕዝ */
 div#popup-default-U_1248, /* ቈ */
-div#popup-default-U_1258, /* ቘ */
+div#popup-non-amharic-U_1258, /* ቘ */
 div#popup-default-U_1288, div#popup-non-amharic-U_1288, /* ኈ */
 div#popup-default-U_12B0, /* ኰ */
 div#popup-non-amharic-U_12C0, /* ዀ */
 div#popup-default-U_1310,  /* ጐ */
-div#popup-default-U_2D93  /* ⶓ */
-/*
+div#popup-non-amharic-U_2D93  /* ⶓ */
 {
-background-color: #00ff00;
-opacity: 0.4;
-background-image:  linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transp
-/*
-{
-background-color: #00ff00;
-opacity: 0.4;
-background-image:  linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%), linear-gradient(315deg, #ffffff 25%, #00ff00 25%);
-background-position:  8px 0, 8px 0, 0 0, 0 0;
-background-size: 8px 8px;
-background-repeat: repeat;
-}
-*/
-{
-background-color: #e2f0cb;
-opacity: 0.4;
-background-size: 4px 4px;
-background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 2px, #e2f0cb 0, #e2f0cb 50%);
+background: #ffffff;
+background: linear-gradient(180deg, #ffffff 0%, #e2f0cb 100%);
 }
 
 /* ዘመደ-ካዕብ */
 div#popup-default-U_124D, /* ቍ */
-div#popup-default-U_125D, /* ቝ */
+div#popup-non-amharic-U_125D, /* ቝ */
 div#popup-default-U_128D, div#popup-non-amharic-U_128D, /* ኍ */
 div#popup-default-U_12B5, /* ኵ */
 div#popup-non-amharic-U_12C5, /* ዅ */
 div#popup-default-U_1315,  /* ጕ */
-div#popup-default-U_2D96  /* ⶔ */
+div#popup-non-amharic-U_2D96  /* ⶔ */
 {
-background-color: #faf884;
-opacity: 0.4;
-background-size: 4px 4px;
-background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 2px, #faf884 0, #faf884 50%);
+background: #ffffff;
+background: linear-gradient(180deg, #ffffff 0%, #ffffb5 100%);
 }
 
 /* ዘመደ-ሣልስ */
 div#popup-default-U_124A, /* ቊ */
-div#popup-default-U_125A, /* ቚ */
+div#popup-non-amharic-U_125A, /* ቚ */
 div#popup-default-U_128A, div#popup-non-amharic-U_128A, /* ኊ */
 div#popup-default-U_12B2, /* ኲ */
 div#popup-non-amharic-U_12C2, /* ዂ */
 div#popup-default-U_1312,  /* ጒ */
-div#popup-default-U_2D94  /* ⶔ */
+div#popup-non-amharic-U_2D94  /* ⶔ */
 {
-background-color: #ff9aa2;
-opacity: 0.4;
-background-size: 4px 4px;
-background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 2px, #ff9aa2 0, #ff9aa2 50%);
+background: #ffffff;
+background: linear-gradient(180deg, #ffffff 0%, #fea3aa 100%);
 }
 
 /* ዘመደ-ራብዕ */
 div#popup-default-U_124B, /* ቋ */
-div#popup-default-U_125B, /* ቛ */
+div#popup-non-amharic-U_125B, /* ቛ */
 div#popup-default-U_128B, div#popup-non-amharic-U_128B, /* ኋ */
 div#popup-default-U_12B3, /* ኳ */
 div#popup-non-amharic-U_12C3, /* ዃ */
 div#popup-default-U_1313,  /* ጓ */
 div#popup-non-amharic-U_131F /* ጟ */
 {
-background-color: #b2cefe;
-opacity: 0.4;
-background-size: 4px 4px;
-background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 2px, #b2cefe 0, #b2cefe 50%);
+background: #ffffff;
+background: linear-gradient(180deg, #ffffff 0%, #ccf1ff 100%);
 }
-
 
 /* ዘመደ-ኃምስ */
 div#popup-default-U_124C, /* ቌ */
-div#popup-default-U_125C, /* ቜ */
+div#popup-non-amharic-U_125C, /* ቜ */
 div#popup-default-U_128C, div#popup-non-amharic-U_128C, /* ኌ */
-div#popup-default-U_12B3, /* ኴ */
-div#popup-non-amharic-U_12C3, /* ዄ */
+div#popup-default-U_12B4, /* ኴ */
+div#popup-non-amharic-U_12C4, /* ዄ */
 div#popup-default-U_1314,  /* ጔ */
-div#popup-default-U_2D95  /* ⶕ */
+div#popup-non-amharic-U_2D95  /* ⶕ */
 {
-background-color: #f8b88b;
-opacity: 0.4;
-background-size: 4px 4px;
-background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 2px, #f8b88b 0, #f8b88b 50%);
+background: #ffffff;
+background: linear-gradient(180deg, #ffffff 0%, #e0d7ff 100%);
 }
-
-/*
-.ios.kmw-keyboard-gff_amharic #default-U_1200,
-.ios.kmw-keyboard-gff_amharic #default-U_1210,
-.ios.kmw-keyboard-gff_amharic #default-K_E { background: greenyellow; }
-
-.android.kmw-keyboard-gff_amharic #default-U_1201,
-.android.kmw-keyboard-gff_amharic #default-U_1210,
-.android.kmw-keyboard-gff_amharic #default-K_E { background: greenyellow; }
-*/
