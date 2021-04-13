@@ -1,17 +1,19 @@
-Obolo keyboard
+Obolo Chwerty keyboard
 ==============
 
-© 2020 Rogers Edeh
+© Rogers Katelem Edeh
 
-Version 1.0.0
+Version 1.1.1
 
 Description
 -----------
 
-Obolo Chwerty layout for typing Obolo language. In this layout, accents are typed after the base letters. So, simply tap the given letters and tap the appropriate accents to pace them on the letters.
+Obolo Chwerty Keyboard is a keyboard layout for the Obolo language of Nigeria.
+On this keyboard, accents are typed after the base letters. So, to type Obolo language, simply tap the given latters and tap the appropriate accent key to place the accent on the letter.
 
 Links
 -----
+https://keyman.com/keyboards/obolo_chwerty
 
 Supported Platforms
 -------------------
