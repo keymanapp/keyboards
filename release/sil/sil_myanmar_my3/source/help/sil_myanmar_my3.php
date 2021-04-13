@@ -15,17 +15,16 @@
 
 		<h3 id="1">
 			၁။Myanmar3 လက်ကွက် ဇယား
-		</h3 >
+		</h3>
 		<h4>Shift မနှိပ်ထားပုံ</h4>
 
 	     <p><img src="sil_myanmar_my3U_.png"></p>
 		<h4>Shift နှိပ်ထားပုံ</h4>
       <p><img src="sil_myanmar_my3U_S.png"></p>
 
-		</div>
 				<p align="right"><a href="#top">^^အပေါ်သို့</a></p>
 
-        </h3>
+
         <h3 id="mobile">Mobile/Tablet Keyboard Layout</h2>
             <div id='osk-phone' data-states='default shift numeric'>
             </div>
