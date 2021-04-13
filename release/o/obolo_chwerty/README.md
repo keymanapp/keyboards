@@ -8,7 +8,7 @@ Version 1.1.1
 Description
 -----------
 
-Obolo Chwerty Keyboard is a keyboard layout for the Obolo language of Nigeria.
+Obolo Chwerty Keyboard is a keyboard layout for the Obolo language of Nigeria. The keyboard covers the need of every dialect in that language.
 On this keyboard, accents are typed after the base letters. So, to type Obolo language, simply tap the given latters and tap the appropriate accent key to place the accent on the letter.
 
 Links
