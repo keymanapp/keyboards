@@ -11,14 +11,6 @@
 <p>This and other features make Obolo Language unique. Hence this unique layout.
 <p>
 <!-- Insert Keyboard Layout Images or HTML here --> 
-<img src="default.png"
-alt="Keyboard Layout (default)"
-style="width:695px;height:189px;">
-<p>
-<img src="shift.png"
-alt="Keyboard Layout (shift)"
-style="width:695px;height:189px;">
-<p>
  In this language, note that:
  <p>(1) You cannot place more than one accent on a letter.
  <p>(2) Some accents are optional and are not required. They are only used in primers and for beginners.
