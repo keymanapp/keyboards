@@ -103,7 +103,7 @@ Except for the optional accents which are not required, the keyboard will notify
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <p>Due to the size and number of keys, some characters are hidden in the long press. 
 	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
-<div id='osk-tablet' data-states='default shift numeric'>
+<div id='osk-tablet' data-states='default shift alt'>
 </div>
 
 <p>
@@ -115,13 +115,13 @@ The position of your BACKSLASH key depends on type of keyboard you are using.
 <p>The three keyboard types and the respective position of the BACKSLASH keys are shown below.
 <p>You can tell where your BACKSLASH key is by looking at the shape of your ENTER/RETURN key:
 <p>
- <img src="chwertyenterkey1.png"
+ <img src="chwertyftkey1.png"
 alt="ANSI Keyboard">
 <p>
-<img src="chwertyenterkey2.png"
+<img src="chwertyftkey2.png"
 alt="ISO/JIS Keyboard">
 <p>
-<img src="chwertyenterkey3.png"
+<img src="chwertyftkey3.png"
 alt="Backward-L Keyboard">
 <p>
 Keyman ... type to the world in your language.
