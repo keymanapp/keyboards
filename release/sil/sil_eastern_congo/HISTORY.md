@@ -1,6 +1,11 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.5.1 (16 April 2021)
+------------------
+* Changed key for double-acute to !!
+* Made characters using U+030F use NFC
+
 1.5 (1 April 2021)
 ------------------
 * Added oe ligature
