@@ -9,7 +9,7 @@ store(&copyright) "© 2005-2021 SIL - Eastern Congo Group"
 store(&MESSAGE) 'Eastern Congo keyboard for languages of the Democratic Republic of the Congo.'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_eastern_congo.kvks'
-store(&KEYBOARDVERSION) '1.5'
+store(&KEYBOARDVERSION) '1.5.1'
 store(&LAYOUTFILE) 'sil_eastern_congo.keyman-touch-layout'
 
 begin Unicode > use(main)
@@ -25,9 +25,9 @@ store(basic_diacritics) U+0041 U+0044 U+0045 U+0049 U+004D \
                         U+0075 U+007A
 
 c Characters than can take extra high and extra low tone
-store(spc_high_lowK)  "e"    "r"    "i"    "6"    "8"    "o"    "u"    "7"    "t"    "9"    "p"    "m"    "n"
-store(spc_high_low)   U+025B U+0259 U+0268 U+026A U+0269 U+0254 U+0289 U+028A U+01DD U+0275 U+00F8 U+0272 U+014B 
-store(basic_high_low) U+0061 U+0065 U+0069 U+006F U+0075 U+006D U+006E
+c store(spc_high_lowK)  "e"    "r"    "i"    "6"    "8"    "o"    "u"    "7"    "t"    "9"    "p"    "m"    "n"
+c store(spc_high_low)   U+025B U+0259 U+0268 U+026A U+0269 U+0254 U+0289 U+028A U+01DD U+0275 U+00F8 U+0272 U+014B 
+c store(basic_high_low) U+0061 U+0065 U+0069 U+006F U+0075 U+006D U+006E
               
 
 
@@ -105,10 +105,10 @@ any(spc) + any(semi_chars_K)    > index(semi_chars_U,2)         c all special ch
 c standard characters on keyboard
 "^" + any(basic_diacritics) > index(basic_diacritics,2) U+0302 use(nfc)       c circumflex
 "!" + any(basic_diacritics) > index(basic_diacritics,2) U+030C use(nfc)        c caron
-"``" + any(basic_high_low) > index(basic_high_low,3) U+030F use(nfc)        c double grave
+c "``" + any(basic_high_low) > index(basic_high_low,3) U+030F use(nfc)        c double grave
 "`" + any(basic_diacritics) > index(basic_diacritics,2) U+0300 use(nfc)        c grave
 "'" + any(basic_diacritics) > index(basic_diacritics,2) U+0301 use(nfc)        c acute
-"''" + any(basic_high_low) > index(basic_high_low,3) U+030B use(nfc)        c double acute
+c "!!" + any(basic_high_low) > index(basic_high_low,3) U+030B use(nfc)        c double acute
 ":" + any(basic_diacritics) > index(basic_diacritics,2) U+0308 use(nfc)        c diaersis (This was " before.)
 "@" + any(basic_diacritics) > index(basic_diacritics,2) U+0304 use(nfc)        c macron
 "~" + any(basic_diacritics) > index(basic_diacritics,2) U+0303 use(nfc)        c tilde
@@ -116,9 +116,9 @@ c standard characters on keyboard
 "^" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0302 use(nfc)
 "!" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+030C use(nfc)
 "`" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0300 use(nfc)
-"``" any(spc) + any(spc_high_lowK) > index(spc_high_low,4) U+030F use(nfc)
+c "``" any(spc) + any(spc_high_lowK) > index(spc_high_low,4) U+030F use(nfc)
 "'" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0301 use(nfc)
-"''" any(spc) + any(spc_high_lowK) > index(spc_high_low,4) U+030B use(nfc)
+c "''" any(spc) + any(spc_high_lowK) > index(spc_high_low,4) U+030B use(nfc)
 ":" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0308 use(nfc)
 '@' any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0304 use(nfc)
 '~' any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0303 use(nfc)
@@ -351,5 +351,23 @@ c z caron
 U+007A U+030C > U+017E
 U+005A U+030C > U+017D
 
+c double grave aeiou - not supported by this keyboard
+U+0061 U+030F > U+0201
+U+0041 U+030F > U+0200
+
+U+0065 U+030F > U+0205
+U+0045 U+030F > U+0204
+
+U+0069 U+030F > U+0209
+U+0049 U+030F > U+0208
+
+U+006F U+030F > U+020D
+U+004F U+030F > U+020C
+
+U+0072 U+030F > U+0211
+U+0052 U+030F > U+0210
+
+U+0075 U+030F > U+0215
+U+0045 U+030F > U+0214
 
 c EOF
