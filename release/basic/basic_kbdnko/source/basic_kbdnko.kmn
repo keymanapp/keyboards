@@ -13,24 +13,15 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'basic_kbdnko.kvks'
 store(&BITMAP) 'basic_kbdnko.ico'
 store(&LAYOUTFILE) 'basic_kbdnko.keyman-touch-layout'
-store(&COPYRIGHT) '(c) 2018-2019 SIL International'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&COPYRIGHT) '(c) 2018-2021 SIL International'
+store(&KEYBOARDVERSION) '1.1'
 store(&KMW_RTL) '1'
 
 begin Unicode > use(main)
 
 group(main) using keys
 
-+ [SHIFT K_BKQUOTE] > dk(dead)
-+ [SHIFT K_2] > dk(dead)
-+ [SHIFT K_3] > dk(dead)
-+ [SHIFT K_4] > dk(dead)
-+ [SHIFT K_6] > dk(dead)
-+ [SHIFT K_7] > dk(dead)
-+ [SHIFT K_E] > dk(dead)
-+ [SHIFT K_R] > dk(dead)
-+ [SHIFT K_T] > dk(dead)
-+ [SHIFT K_U] > dk(dead)
++ [SHIFT K_BKQUOTE] > U+07FD
 
 + [K_SPACE] > U+0020
 
@@ -41,17 +32,22 @@ group(main) using keys
 + [SHIFT K_1] > U+07f9
 
 + [K_2] > U+07c2
++ [SHIFT K_2] > U+0040
 
 + [K_3] > U+07c3
++ [SHIFT K_3] > U+0023
 
 + [K_4] > U+07c4
++ [SHIFT K_4] > U+0024
 
 + [K_5] > U+07c5
 + [SHIFT K_5] > U+0025
 
 + [K_6] > U+07c6
++ [SHIFT K_6] > nul
 
 + [K_7] > U+07c7
++ [SHIFT K_7] > U+0026
 
 + [K_8] > U+07c8
 + [SHIFT K_8] > U+002a
@@ -72,6 +68,7 @@ group(main) using keys
 + [SHIFT K_D] > U+005b
 
 + [K_E] > U+07e0
++ [SHIFT K_E] > U+2E1D
 
 + [K_F] > U+07cc
 + [SHIFT K_F] > U+005d
@@ -110,13 +107,16 @@ group(main) using keys
 + [SHIFT K_Q] > U+07e9
 
 + [K_R] > U+07e5
++ [SHIFT K_R] > U+2E1C
 
 + [K_S] > U+07ce
 + [SHIFT K_S] > U+00b0
 
 + [K_T] > U+07e6
++ [SHIFT K_T] > U+07FF
 
 + [K_U] > U+07d7
++ [SHIFT K_U] > U+07FE
 
 + [K_V] > U+07f4
 + [SHIFT K_V] > U+07ee

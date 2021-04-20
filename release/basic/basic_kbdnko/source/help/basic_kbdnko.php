@@ -15,13 +15,23 @@ This keyboard is designed for languages using the N’Ko script.
 </p>
 <p>A font must be installed to support this keyboard. Windows includes the <b>Ebrima</b> font which supports the <b>N'Ko</b> script.</p>
 <br/>
+<p>The Noto Sans NKo font is included in the keyboard package to avoid tofu of the newly added characters.</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk'>
 </div>
 
-<h2>Mobile/Tablet Keyboard Layout</h2>
+<h2>Phone Keyboard Layout</h2>
+<div id='osk-phone'>
+</div>
+
+<h2>NOTE:</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. Press and hold on the key with a little dot on the top right to reveal them.</p>
+<img src="phone_longpress.png" alt="Phone Layout, Longpress">
+
+<h2>Tablet Keyboard Layout</h2>
 <div id='osk-tablet'>
 </div>
+
 
 
