@@ -1,6 +1,10 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.5.1 (20 April 2021)
+------------------
+* Removed extra high and extra low tone
+
 1.5 (1 April 2021)
 ------------------
 * Added oe ligature
