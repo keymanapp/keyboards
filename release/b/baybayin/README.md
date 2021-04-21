@@ -7,7 +7,7 @@ Version 1.0
 
 Keyboard for Tagalog with Baybayin script.
 
-This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item.
+This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. It covers every Baybayin characters listed on the Unicode Standard 13.0.
 
 
 Links
