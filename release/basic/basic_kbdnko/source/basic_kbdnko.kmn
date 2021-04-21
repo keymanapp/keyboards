@@ -21,8 +21,6 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-+ [SHIFT K_BKQUOTE] > U+07FD
-
 + [K_SPACE] > U+0020
 
 + [K_0] > U+07c0
@@ -44,7 +42,7 @@ group(main) using keys
 + [SHIFT K_5] > U+0025
 
 + [K_6] > U+07c6
-+ [SHIFT K_6] > nul
++ [SHIFT K_6] > U+07f7
 
 + [K_7] > U+07c7
 + [SHIFT K_7] > U+0026
@@ -151,7 +149,8 @@ group(main) using keys
 + [K_SLASH] > U+07de
 + [SHIFT K_SLASH] > U+061f
 
-+ [K_BKQUOTE] > U+07f7
++ [K_BKQUOTE] > nul
++ [SHIFT K_BKQUOTE] > U+07FD
 
 + [K_LBRKT] > U+07e4
 + [SHIFT K_LBRKT] > U+2039
