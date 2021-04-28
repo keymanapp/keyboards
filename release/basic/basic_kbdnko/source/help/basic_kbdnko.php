@@ -21,15 +21,7 @@ This keyboard is designed for languages using the N’Ko script.
 <div id='osk'>
 </div>
 
-<h2>Phone Keyboard Layout</h2>
-<div id='osk-phone'>
-</div>
-
-<h2>NOTE:</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. Press and hold on the key with a little dot on the top right to reveal them.</p>
-<img src="phone_longpress.png" alt="Phone Layout, Longpress">
-
-<h2>Tablet Keyboard Layout</h2>
+<h2>Phone/Tablet Keyboard Layout</h2>
 <div id='osk-tablet'>
 </div>
 
