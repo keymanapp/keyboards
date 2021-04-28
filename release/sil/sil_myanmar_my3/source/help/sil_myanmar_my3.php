@@ -223,6 +223,3 @@
 				<br />
 				<p align="right"><a href="#top">^^အပေါ်သို့</a></p>
 
-    <p>ဤအချက်အလက်များအား suntun မူလ စာပြုစုပြီး andjc မှ ဖြည့်စွက်ထားသည်။<br/>
-    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0;width: 80px;" src="80x15.png" /></a><br />ဤအချက်အလက် ပြုစုမှုကို <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 International License</a> ဖြင့် စရင်းသွင်းပါသည်။
-    </p>
