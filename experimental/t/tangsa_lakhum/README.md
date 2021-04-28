@@ -10,6 +10,7 @@ Tangsa Lukhum generated from template
 
 Links
 -----
+https://keyman.com/keyboards/tangsa_lakhum
 
 Supported Platforms
 -------------------
@@ -17,13 +18,7 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
+
 
 This layout uses a deadkey on the left bracket "[" position to generate additional Lakhum characters.
 For example:
