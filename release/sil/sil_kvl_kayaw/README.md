@@ -1,9 +1,9 @@
 Kayaw (SIL) Keyboard
 =====================
 
-Copyright (C) 2018 SIL International
+Copyright (C) 2018 - 2021 SIL International
 
-Version 1.0
+Version 1.2
 
 __DESCRIPTION__
 
@@ -38,4 +38,6 @@ Supported Platforms
  * macOS
  * iOS
  * Android
+ * Linux
+ * Web
   

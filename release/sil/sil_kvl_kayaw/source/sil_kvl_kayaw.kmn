@@ -1,15 +1,17 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'Kayaw'
-store(&TARGETS) 'any windows iphone androidphone androidtablet'
+store(&TARGETS) 'any'
 store(&ETHNOLOGUECODE) 'kvl'
 store(&VISUALKEYBOARD) 'sil_kvl_kayaw.kvks'
 store(&LAYOUTFILE) 'sil_kvl_kayaw.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.0'
-store(&COPYRIGHT) '©2018 SIL International'
+store(&KEYBOARDVERSION) '1.2'
+store(&COPYRIGHT) '©2018 - 2021 SIL International'
 begin Unicode > use(main)
 
 
 group(main) using keys
++ [K_X] > '̂̌'
++ [K_Z] > '̂̄'
 + [K_Q] > '̀̌'
 + [SHIFT K_7] > '7'
 + [SHIFT K_6] > '6'
@@ -81,10 +83,8 @@ group(main) using keys
 + [K_M] > 'm'
 + [K_N] > 'n'
 + [K_B] > 'b'
-+ [K_V] > '̌'
++ [K_V] > U+030C
 + [K_C] > 'c'
-+ [K_X] > '̂̌'
-+ [K_Z] > '̂̄'
 + [K_QUOTE] > U+0027
 + [K_COLON] > ';'
 + [K_L] > 'l'
@@ -106,3 +106,9 @@ group(main) using keys
 + [K_R] > 'r'
 + [K_E] > 'e'
 + [K_W] > 'w'
+
+C For Touchscreen only
++ [T_0302_030C] > U+0302 U+030C 
++ [T_0300_0304] > U+0300 U+0304
++ [T_0302_0304] >  U+0302 U+0304
++ [T_0300_030C] >  U+0300 U+030C

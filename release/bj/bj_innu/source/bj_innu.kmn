@@ -1,0 +1,41 @@
+﻿c Keyboard for Unicode Fonts (Uses Doulos SIL)
+c See also Innu2-u (raised-u plus vowels with hats, schwaa, and s-wedge)
+c This keyboard raised-u only
+c Bill Jancewicz June 2005
+
+store(&VERSION) "10.0"
+store(&NAME) "Innu"
+store(&COPYRIGHT) '(c) 2005-2020 Bill Jancewicz SIL/NDC'
+c store(&MESSAGE) "This keyboard may be freely used and redistributed"
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.1'
+store(&BITMAP) 'bj_innu.ico'
+store(&VISUALKEYBOARD) 'bj_innu.kvks'
+store(&LAYOUTFILE) 'bj_innu.keyman-touch-layout'
+
+begin UNICODE > use(main)
+
+group(main) using keys
+
+c Raised-u
+"k" + "w" > U+006B U+1D58
+"m" + "w" > U+006D U+1D58
+"sh" + "w" > U+0073 U+0068 U+1D58
+"t" + "w" > U+0074 U+1D58
+
+U+1D58 + "a" > "wa" c allows "w" to show preceding vowels (raised u only final)
+U+1D58 + "i" > "wi"              
+U+1D58 + "u" > "wu"
+U+1D58 + "e" > "we"
+
+c Raised-upper case-U
+"K" + "W" > U+004B U+1D41
+"M" + "W" > U+004D U+1D41
+"SH" + "W" > U+0053 U+0048 U+1D41
+"T" + "W" > U+0054 U+1D41
+
+U+1D41 + "A" > "WA" c allows "w" to show preceding vowels (raised U only final)
+U+1D41 + "I" > "WI"              
+U+1D41 + "U" > "WU"
+U+1D41 + "E" > "WE"
+

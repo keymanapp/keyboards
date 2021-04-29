@@ -66,7 +66,7 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Gurage (ጉራጊና, ISO-639-2 swg) language mnemonic input method.  It requires a font
+This is a Gurage (ጉራጊና, ISO-639-2 sgw-Ethi-XL) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard. This keyboard is the immediate
 successor to the GFF Sebatbeit keyboard (gff-sgw-7.kmn version 7.0).
 </p>
@@ -78,7 +78,7 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 </p>
 
 <p style="text-align: justify;">
-The keyboard is given the name "Legacy" because it is designed to work withthe Gurage orthography introduced in the 1966 publication
+The keyboard is given the name &ldquo;Legacy&rdquo; because it is designed to work withthe Gurage orthography introduced in the 1966 publication
 <em>Ethiopians Speak: Studies in Cultural Background, Volume 2. Chaha</em>
 and successor orthographies through the formal adoption by the Unicode 4.1 standard published in 2005. The following fonts are packaged with the
 keyboard representing different stages of the evolution of the orthography.  All fonts

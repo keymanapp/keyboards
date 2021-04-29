@@ -16,11 +16,23 @@ END;
 require_once('header.php');
 ?>
 
-  <h2>Keyboard layout</h2>
-	<h3>Default (unshifted)</h3>
-	<p><a href="sil_bengali_phoneticU_.png"><img class="keyboard" src="sil_bengali_phoneticU_.png" alt="Default (unshifted) state" /></a></p>
-	<h3>Shift</h3>
-	<p><a href="sil_bengali_phoneticU_S.png"><img class="keyboard" src="sil_bengali_phoneticU_S.png" alt="Shift state" /></a></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
+
+<h2>Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+
+<div id='osk-tablet' data-states='default shift'>
+</div>
+
+<h2>Phone Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+
+<div id='osk-phone' data-states='default shift numeric'>
+</div>
 
   <h2>Other input sequences</h2>
 
@@ -107,14 +119,9 @@ require_once('header.php');
                 <td>U+09DD</td>
             </tr>
             <tr>
-                <td><kbd>q</kbd> <kbd>y</kbd></td>
-                <td><samp>&#x09DF;</samp></td>
-                <td>U+09DF</td>
-            </tr>
-            <tr>
                 <td><kbd>q</kbd> <kbd>R</kbd></td>
-                <td><samp>&#x09E0;</samp></td>
-                <td>U+09E0</td>
+                <td><samp>&#x098B;</samp></td>
+                <td>U+098B</td>
             </tr>
             <tr>
                 <td><kbd>q</kbd> <kbd>L</kbd></td>
@@ -133,11 +140,15 @@ require_once('header.php');
             </tr>
             <tr>
                 <td><kbd>q</kbd> <kbd>.</kbd></td>
-                <td><samp>&#x09F7;</samp></td>
-                <td>U+09F7</td>
+                <td><samp>&#x0965;</samp></td>
+                <td>U+0965</td>
+            </tr>
+            <tr>
+                <td><kbd>q</kbd> <kbd>X</kbd></td>
+                <td><samp>&#x09CD;&#x200C;</samp></td>
+                <td>U+09CD U+200C (ZWNJ)</td>
             </tr>
 
         </tbody>
   </table>
-
-                                                                                  
+                                            

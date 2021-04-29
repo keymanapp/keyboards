@@ -10,8 +10,6 @@ This package also includes a Cyrillic Turkmen keyboard.  Both keyboards are Unic
   $pagetitle = 'Turkmen Latin and Cyrillic Unicode Keyboard Help';
   require_once('header.php');
 ?>
-﻿<html>
-<head>
 <style type="text/css">
 p { font: 10pt Tahoma }
 h1 { font: bold 16pt Tahoma; color: #4444cc }
@@ -21,79 +19,78 @@ table.display tr td { font: 10pt Tahoma; border: solid 1px #ccccff; padding: 3px
 table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding: 3px; text-align: center; }
 table.display { border-collapse: collapse; }
 
-        .key { 
+        .key {
             float: left;
-            display: block; 
+            display: block;
             position: relative;
             overflow: hidden;
             height: 35px;
             margin: 2px 0px 0px 4px;
-            
+
         }
-        
+
         #K_SPACE {
-          width: 234px; 
-          
-            background-image: url('key-space.gif'); 
-          
+          width: 234px;
+
+            background-image: url('key-space.gif');
+
         }
 
         #K_BKSLASH {
-          width: 42px; 
-          
-            background-image: url('key-bkslash.gif'); 
-          
+          width: 42px;
+
+            background-image: url('key-bkslash.gif');
+
         }
-        
+
         #K_oE2 {
-          
+
             display:none;
-          
+
         }
-        
+
         #K_SHIFTL {
           width: 80px;background-image: url('key-shiftl.gif');
         }
-        
+
         .plain {
-          
+
             background-image: url('key-plain.gif');
-          
+
           background-repeat: no-repeat;
           width: 34px;
         }
-        
+
         .special {
           background-repeat: no-repeat;
-          
+
         }
-        
+
         .keycap {
-          font: bold 7pt Arial; 
-          position: absolute; 
-          left: 6px; 
+          font: bold 7pt Arial;
+          position: absolute;
+          left: 6px;
           top: 6px;
         }
-        
-        .key .keycap {          
+
+        .key .keycap {
           display: block;
         }
-        
+
         .special .keycap {
           display: block;
         }
-        
+
         .keytext {
           font: 12pt Arial;
-          position: absolute; 
+          position: absolute;
           display: block;
           right: 5px;
           bottom: 4px;
           color: blue;
         }
     </style>
-</head>
-<body>
+
 <h1 style='margin-bottom: 2px'>Turkmen Latin and Cyrillic Keyboards</h1>
 <p style='margin-top: 2px'><i>Created by David Gray</i></p>
 <p>This package includes 2 Turkmen keyboards: <b>Latin-Turkmen-Unicode</b> and <b>Cyrillic-Turkmen-Unicode</b>.
@@ -106,7 +103,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <h2>Latin Keyboard Layout Notes</h2>
 
 <p>The <span style="color: #4444CC;">★</span> key (<b>;</b>) is a special key. Type it before most keys to get the QWERTY US value of that key. Type it before some keys to get special characters.</p>
-    
+
 <table class='display'>
 <tr>
 <th>Type</th><th>To Get</th><th class='gap'></th>
@@ -177,13 +174,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-backspace.gif');
           ">
 <div class="keycap">Backspace</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 52px;
-        
+
           background-image: url('key-tab.gif');
           ">
 <div class="keycap">Tab</div>
@@ -241,7 +238,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div class="keytext">ä</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 62px;
-        
+
           background-image: url('key-capslock.gif');
           ">
 <div class="keycap">Caps Lock</div>
@@ -292,7 +289,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 70px;
-        
+
           background-image: url('key-enter.gif');
           ">
 <div class="keycap">Enter</div>
@@ -346,13 +343,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 90px;
-        
+
           background-image: url('key-shiftr.gif');
           ">
 <div class="keycap">Shift</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrll.gif');
           ">
 <div class="keycap">Ctrl</div>
@@ -360,7 +357,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 30px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altl.gif');
           ">
 <div class="keycap">Alt</div>
@@ -370,7 +367,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altr.gif');
           ">
 <div class="keycap">Alt</div>
@@ -378,7 +375,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 54px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrlr.gif');
           ">
 <div class="keycap">Ctrl</div>
@@ -437,13 +434,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-backspace.gif');
           ">
 <div class="keycap">Backspace</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 52px;
-        
+
           background-image: url('key-tab.gif');
           ">
 <div class="keycap">Tab</div>
@@ -501,7 +498,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div class="keytext">Ä</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 62px;
-        
+
           background-image: url('key-capslock.gif');
           ">
 <div class="keycap">Caps Lock</div>
@@ -552,7 +549,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 70px;
-        
+
           background-image: url('key-enter.gif');
           ">
 <div class="keycap">Enter</div>
@@ -606,13 +603,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 90px;
-        
+
           background-image: url('key-shiftr.gif');
           ">
 <div class="keycap">Shift</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrll.gif');
           ">
 <div class="keycap">Ctrl</div>
@@ -620,7 +617,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 30px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altl.gif');
           ">
 <div class="keycap">Alt</div>
@@ -630,7 +627,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altr.gif');
           ">
 <div class="keycap">Alt</div>
@@ -638,16 +635,16 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 54px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrlr.gif');
           ">
 <div class="keycap">Ctrl</div>
 </div><br style="clear: left"><br /><br />
-           
+
 <h2>Cyrillic Keyboard Layout Notes</h2>
 
 <p>The <span style="color: #4444CC;">★</span> key (<b>;</b>) is a special key. Type it before some keys to get additional letters and symbols.</p>
-                           
+
 <table class='display'>
 <tr>
 <th>Type</th><th>To Get</th><th class='gap'></th>
@@ -716,13 +713,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-backspace.gif');
           ">
 <div class="keycap">Backspace</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 52px;
-        
+
           background-image: url('key-tab.gif');
           ">
 <div class="keycap">Tab</div>
@@ -780,7 +777,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div class="keytext">ә</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 62px;
-        
+
           background-image: url('key-capslock.gif');
           ">
 <div class="keycap">Caps Lock</div>
@@ -831,7 +828,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 70px;
-        
+
           background-image: url('key-enter.gif');
           ">
 <div class="keycap">Enter</div>
@@ -885,13 +882,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 90px;
-        
+
           background-image: url('key-shiftr.gif');
           ">
 <div class="keycap">Shift</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrll.gif');
           ">
 <div class="keycap">L Ctrl</div>
@@ -899,7 +896,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 30px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altl.gif');
           ">
 <div class="keycap">L ALt</div>
@@ -909,7 +906,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altr.gif');
           ">
 <div class="keycap">R ALt</div>
@@ -917,7 +914,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 54px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrlr.gif');
           ">
 <div class="keycap">R Ctrl</div>
@@ -976,13 +973,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-backspace.gif');
           ">
 <div class="keycap">Backspace</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 52px;
-        
+
           background-image: url('key-tab.gif');
           ">
 <div class="keycap">Tab</div>
@@ -1040,7 +1037,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div class="keytext">Ә</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 62px;
-        
+
           background-image: url('key-capslock.gif');
           ">
 <div class="keycap">Caps Lock</div>
@@ -1091,7 +1088,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 70px;
-        
+
           background-image: url('key-enter.gif');
           ">
 <div class="keycap">Enter</div>
@@ -1145,13 +1142,13 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 90px;
-        
+
           background-image: url('key-shiftr.gif');
           ">
 <div class="keycap">Shift</div>
 </div><br style="clear: left"><div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrll.gif');
           ">
 <div class="keycap">L Ctrl</div>
@@ -1159,7 +1156,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 30px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altl.gif');
           ">
 <div class="keycap">L ALt</div>
@@ -1169,7 +1166,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 </div>
 <div class="key special" id="" style="
         width: 50px;
-        
+
           background-image: url('key-altr.gif');
           ">
 <div class="keycap">R ALt</div>
@@ -1177,7 +1174,7 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 <div style="width: 54px; display: block; float: left;"> </div>
 <div class="key special" id="" style="
         width: 60px;
-        
+
           background-image: url('key-ctrlr.gif');
           ">
 <div class="keycap">R Ctrl</div>
@@ -1185,11 +1182,8 @@ keyboard also includes an On Screen Keyboard and includes the Cyrillic letters n
 
 
 <br />
-<p>Version 1.3 - Minor corrections to Help and On Screen Keyboard - 29 March 2012</p> 
+<p>Version 1.3 - Minor corrections to Help and On Screen Keyboard - 29 March 2012</p>
 <p>Version 1.2 - Minor enhancements to both keyboards, including adding dedicated "\" and "Ž" keys to TLU - 10 December 2010</p>
 <p>Version 1.1 - Keyman Desktop 7.0 Release - 8 November 2007</p>
-       
-<p>Keyboard Home Page: <a href='https://keyman.com/keyboards/turkmen'>https://keyman.com/keyboards/turkmen</a></p>
 
-</body>
-</html>
+<p>Keyboard Home Page: <a href='https://keyman.com/keyboards/turkmen'>https://keyman.com/keyboards/turkmen</a></p>
