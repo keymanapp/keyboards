@@ -292,19 +292,4 @@ dk(nasal) any(baseVowels) > index(baseVowels, 2) U+0331
 dk(highToneDiaresis) any(baseVowels) > index(diaresisVowels, 2) U+0301
 
 dk(highToneNasal) any(baseVowels) > index(highToneVowels, 2) U+0331
-match > use(deadkeys)
 
-group(deadkeys)
-
-store(baseVowels) 'a' 'A' 'e' 'E' 'i' 'I' 'o' 'O' 'u' 'U'
-store(highToneVowels) 'á' 'Á' 'é' 'É' 'í' 'Í' 'ó' 'Ó' 'ú' 'Ú'
-dk(highTone) any(baseVowels) > index(highToneVowels, 2)
-
-store(diaresisVowels) 'ä' 'Ä' 'ë' 'Ë' 'ï' 'Ï' 'ö' 'Ö' 'ü' 'Ü'
-dk(diaresis) any(baseVowels) > index(diaresisVowels, 2)
-
-dk(nasal) any(baseVowels) > index(baseVowels, 2) U+0331
-
-dk(highToneDiaresis) any(baseVowels) > index(diaresisVowels, 2) U+0301
-
-dk(highToneNasal) any(baseVowels) > index(highToneVowels, 2) U+0331
