@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    22 Jan 2020
+  Modified Date:    11 Apr 2021
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -70,12 +70,12 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 
 <div id='osk-phone-container'>
   <h2>Phone Keyboard Layout</h2>
-  <div id='osk-phone' data-states='default symbol'></div>
+  <div id='osk-phone' data-states='default non-amharic punctuation punctuation-2'></div>
 </div>
 
 <div id='osk-tablet-container'>
   <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default symbol'></div>
+  <div id='osk-tablet' data-states='default non-amharic punctuation punctuation-2'></div>
 </div>
 
 <p>Note: Longpress keys are not currently visible in this static documentation, and so some additional letters may be accessible through these longpress keys.</p>
@@ -184,6 +184,10 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 2.1, 11 Apr 2021</dt>
+  <dd>CSS Colored keys.</dd>
+  <dt>Version 2.0, 1 Dec 2020</dt>
+  <dd>Addition of new style touch keyboard.</dd>
   <dt>Version 1.9, 22 Jan 2020</dt>
   <dd>Package migration to Abyssinica SIL 2.000</dd>
   <dt>Version 1.8, 9 Mar 2019</dt>

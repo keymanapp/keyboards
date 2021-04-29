@@ -1,16 +1,8 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
-
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=unicode">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 12">
-<meta name=Originator content="Microsoft Word 12">
-<link rel=File-List href="rac_kashmiri_files/filelist.xml">
-<link rel=Edit-Time-Data href="rac_kashmiri_files/editdata.mso">
+<?php
+  $pagename = 'The Rachitrali-Kashmiri Keyboard Package';
+  $pagetitle = 'The Rachitrali-Kashmiri Keyboard Package';
+  require_once('header.php');
+?>
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -19,7 +11,6 @@ w\:* {behavior:url(#default#VML);}
 .shape {behavior:url(#default#VML);}
 </style>
 <![endif]-->
-<title>The Rachitrali-Kashmiri Package</title>
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>FSC</o:Author>
@@ -37,8 +28,6 @@ w\:* {behavior:url(#default#VML);}
   <o:Version>12.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
-<link rel=themeData href="rac_kashmiri_files/themedata.thmx">
-<link rel=colorSchemeMapping href="rac_kashmiri_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:Zoom>80</w:Zoom>
@@ -592,9 +581,6 @@ ul
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
-</head>
-
-<body lang=EN-US style='tab-interval:.5in;max-width:600px'>
 
 <div class=Section1>
 
@@ -742,7 +728,3 @@ DEALINGS IN THE SOFTWARE.</p>
 </ul>
 
 </div>
-
-</body>
-
-</html>

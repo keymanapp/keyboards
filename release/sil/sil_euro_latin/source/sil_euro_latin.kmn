@@ -6,7 +6,7 @@ c https://community.software.sil.org/c/keyman
 store(&version) '10.0'
 store(&NAME) 'EuroLatin (SIL)'
 store(&BITMAP) 'sil_euro_latin.ico'
-store(&COPYRIGHT) 'Copyright (C) 1994-2020 SIL International'
+store(&COPYRIGHT) 'Copyright (C) 1994-2021 SIL International'
 
 $keymanonly: store(&mnemoniclayout) '1'
 
@@ -14,7 +14,7 @@ c KeymanWeb-specific header statements
 store(&KMW_HELPFILE) 'sil_euro_latin.html'
 store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
 store(&LAYOUTFILE) 'sil_euro_latin.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.9.2'
+store(&KEYBOARDVERSION) '1.9.4'
 store(&TARGETS) 'any'
 
 begin Unicode > use(Main)
@@ -81,8 +81,12 @@ store(lineK) 'BbDdhKkLlNnRrTtZz'
 c :
 store(dieresisO) 'äëḧïöẗüẅẍÿÄËḦÏÖÜẄẌŸ'
 store(dieresisK) 'aehiotuwxyAEHIOUWXY'
+':' dk(1) + "n" > U+006E U+0308    c for Guinea-Bissau Creole (pov)
+':' dk(1) + "N" > U+004E U+0308    c for Guinea-Bissau Creole (pov)
 ':' dk(1) + "p" > U+0070 U+0308    c for Romani
 ':' dk(1) + "P" > U+0050 U+0308    c for Romani
+if(&platform = 'touch') + [T_N_Dieresis] > U+006E U+0308           c for Guinea-Bissau Creole on Touch devices
+if(&platform = 'touch') + [SHIFT T_N_Dieresis] > U+004E U+0308     c for Guinea-Bissau Creole on Touch devices
 if(&platform = 'touch') + [T_P_Dieresis] > U+0070 U+0308           c for Romani on Touch devices
 if(&platform = 'touch') + [SHIFT T_P_Dieresis] > U+0050 U+0308     c for Romani on Touch devices
 
@@ -99,12 +103,12 @@ store(dotbelowO) 'ẠạḄḅḌḍẸẹḤḥỊịḲḳḶḷṂṃṆṇ�
 store(dotbelowK) 'AaBbDdEeHhIiKkLlMmNnOoRrSsTtUuVvWwYyZz'
 
 c ,
-store(cedillaO) 'ąĄçÇḑḐęĘģĢḩḨįĮķĶļĻņŅǫǪŗŖşŞţŢųŲⱬⱫ'
-store(cedillaK) 'aAcCdDeEgGhHiIkKlLnNoOrRsStTuUzZ'
+store(cedillaO) 'ąĄçÇḉḈḑḐęĘģĢḩḨįĮķĶļĻņŅǫǪŗŖşŞţŢųŲⱬⱫ' c added c cedilla accent for Mingrelian 12/2/2020
+store(cedillaK) 'aAcC' "'" '"' 'dDeEgGhHiIkKlLnNoOrRsStTuUzZ'
 
 c =
-store(extendedO) 'ƆɔƏəɁɂƝɲŊŋƟɵẞßÞþȜȝƷʒ'
-store(extendedK) 'CcEeGgJjNnOoSsTtYyZz'
+store(extendedO) 'ƆɔƏəɁɂƝɲŊŋƟɵẞßÞþȜȝƷʒƔɣ' c added gamma for Mingrelian 12/2/2020
+store(extendedK) 'CcEeGgJjNnOoSsTtYyZzXx'
 '=' dk(1) + "'" >  U+A78C c Lowercase Saltillo
 '=' dk(1) + '"' >  U+A78B c Uppercase Saltillo
 
@@ -127,6 +131,13 @@ store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
 '~' dk(1) + any(tildeK) > index(tildeO, 3)
 '-' dk(1) + any(macronK) > index(macronO, 3)
 '_' dk(1) + any(lineK) > index(lineO, 3)
+'_' dk(1) + "x" > U+0078 U+0331 c Zapotec addition 12/2/2020
+'_' dk(1) + "X" > U+0058 U+0331 c Zapotec addition 12/2/2020
+
+if(&platform = 'touch') + [T_0078_0331] > U+0078 U+0331           c Zapotec addition 12/2/2020
+if(&platform = 'touch') + [SHIFT T_0058_0331] > U+0058 U+0331     c Zapotec addition 12/2/2020
+
+
 ':' dk(1) + any(dieresisK) > index(dieresisO, 3)
 '@' dk(1) + any(ringK) > index(ringO, 3)
 '.' dk(1) + any(dottedK) > index(dottedO, 3)
@@ -139,9 +150,17 @@ store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
 '·.' + '.' > '…'
 
 
-c Preferred for diagraphs
+c Preferred for digraphs
 'A\' dk(1) + 'E' > 'Æ'
 'a\' dk(1) + 'e' > 'æ'
+'c\' dk(1) + 'h' > U+0063 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+'C\' dk(1) + 'h' > U+0043 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+'C\' dk(1) + 'H' > U+0043 U+0332 U+0048 U+0332  c Zapotec addition 12/2/2020
+
+if(&platform = 'touch') + [T_ch_macron] > U+0063 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+if(&platform = 'touch') + [SHIFT T_Ch_macron] > U+0043 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
+if(&platform = 'touch') + [SHIFT T_CHmacron] > U+0043 U+0332 U+0048 U+0332  c Zapotec addition 12/2/2020
+
 'D\' dk(1) + 'Z' > U+01C4   c Serbian additions 1/5/09
 'D\' dk(1) + 'z' > U+01C5
 'd\' dk(1) + 'z' > U+01C6
@@ -152,8 +171,8 @@ c Preferred for diagraphs
 'L\' dk(1) + 'J' > U+01C7   c Serbian additions 1/5/09
 'L\' dk(1) + 'j' > U+01C8
 'l\' dk(1) + 'j' > U+01C9
-'N\' dk(1) + 'G' > 'Ŋ'      c depricated - see extended - no longer in help/osk
-'n\' dk(1) + 'g' > 'ŋ'      c depricated - see extended - no longer in help/osk
+'N\' dk(1) + 'G' > 'Ŋ'      c deprecated - see extended - no longer in help/osk
+'n\' dk(1) + 'g' > 'ŋ'      c deprecated - see extended - no longer in help/osk
 'N\' dk(1) + 'J' > U+01CA   c Serbian additions 1/5/09
 'N\' dk(1) + 'j' > U+01CB
 'n\' dk(1) + 'j' > U+01CC
@@ -163,10 +182,10 @@ c Preferred for diagraphs
 'o\' dk(1) + 'e' > 'œ'
 'O\' dk(1) + 'I' > 'Ƣ'
 'o\' dk(1) + 'i' > 'ƣ'
-'S\' dk(1) + 'S' > 'ẞ'     c depricated - see extended - no longer in help/osk
-'s\' dk(1) + 's' > 'ß'     c depricated - see extended - no longer in help/osk
-'T\' dk(1) + 'H' > 'Þ'     c depricated - see extended - no longer in help/osk
-'t\' dk(1) + 'h' > 'þ'     c depricated - see extended - no longer in help/osk
+'S\' dk(1) + 'S' > 'ẞ'     c deprecated - see extended - no longer in help/osk
+'s\' dk(1) + 's' > 'ß'     c deprecated - see extended - no longer in help/osk
+'T\' dk(1) + 'H' > 'Þ'     c deprecated - see extended - no longer in help/osk
+'t\' dk(1) + 'h' > 'þ'     c deprecated - see extended - no longer in help/osk
 'T\' dk(1) + 'M' > '™'
 't\' dk(1) + 'm' > '™'
 
@@ -187,16 +206,16 @@ c Preferred for diagraphs
 '5//' + '8' > '⅝'
 '7//' + '8' > '⅞'
 
-c The fractions below have been depricated. Use format above.
-'¹/' + '2' > '½'       c depricated - no longer in help/osk
-'¹/' + '3' > '⅓'       c depricated - no longer in help/osk
-'²/' + '3' > '⅔'       c depricated - no longer in help/osk
-'¹/' + '4' > '¼'       c depricated - no longer in help/osk
-'³/' + '4' > '¾'       c depricated - no longer in help/osk
-'¹/' + '8' > '⅛'       c depricated - no longer in help/osk
-'³/' + '8' > '⅜'       c depricated - no longer in help/osk
-'⁵/' + '8' > '⅝'       c depricated - no longer in help/osk
-'⁷/' + '8' > '⅞'       c depricated - no longer in help/osk
+c The fractions below have been deprecated. Use format above.
+'¹/' + '2' > '½'       c deprecated - no longer in help/osk
+'¹/' + '3' > '⅓'       c deprecated - no longer in help/osk
+'²/' + '3' > '⅔'       c deprecated - no longer in help/osk
+'¹/' + '4' > '¼'       c deprecated - no longer in help/osk
+'³/' + '4' > '¾'       c deprecated - no longer in help/osk
+'¹/' + '8' > '⅛'       c deprecated - no longer in help/osk
+'³/' + '8' > '⅜'       c deprecated - no longer in help/osk
+'⁵/' + '8' > '⅝'       c deprecated - no longer in help/osk
+'⁷/' + '8' > '⅞'       c deprecated - no longer in help/osk
 
 c angled quotes
 c "<" + "<" > '«'

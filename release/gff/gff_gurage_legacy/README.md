@@ -3,9 +3,9 @@
 
 Copyright (C) 2008-2020 Ge'ez Frontier Foundation
 
-Version 0.1
+Version 0.11
 
-This is a Gurage (ጉራጌ , ISO-639-2 swg-Ethi) language mnemonic input method.  It requires a font
+This is a Gurage (ጉራጊና , ISO-639-2 sgw-Ethi-XL) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard. This keyboard is the immediate
 successor to the GFF Sebatbeit keyboard (gff-sgw-7.kmn version 7.0).
 
