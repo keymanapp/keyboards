@@ -225,10 +225,10 @@ group(main) using keys
 
 c rota rules
 
-U+0E48 + [K_BKQUOTE]      > U+0E49
-U+0E49 + [K_BKQUOTE]      > U+0E4A
-U+0E4A + [K_BKQUOTE]      > U+0E4B
-U+0E4B + [K_BKQUOTE]      > U+0E48
+U+0E48 + [K_BKQUOTE]    > U+0E49
+U+0E49 + [K_BKQUOTE]    > U+0E4A
+U+0E4A + [K_BKQUOTE]    > U+0E4B
+U+0E4B + [K_BKQUOTE]    > U+0E48
 
 U+0E1E + [K_LBRKT]      > U+0E1C
 U+0E1C + [K_LBRKT]      > U+0E20
@@ -334,8 +334,3 @@ c space key configuration
 + [K_SPACE] > deadkey(space)
 deadkey(space) + [K_SPACE] > U+0020
 
-c group(normalize) using context
-
-c only for N, Z key
-c deadkey(space) U+0E13 > U+0E19
-c deadkey(space) U+0E18 > U+0E17
