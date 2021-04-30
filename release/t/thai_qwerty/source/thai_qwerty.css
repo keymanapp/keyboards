@@ -1,9 +1,60 @@
-/*red keys on desktop layout*/
-/***********************
-To do after the desktop layout is finalized
-.desktop .kmw-keyboard-thai_qwerty #shift-K_A,
-.desktop .kmw-keyboard-thai_qwerty #shift-K_A { background: #ff0000; }  
+/*
+Color Coding:
+Q: B, R, B
+W: B
+R: B
+T: G, G
+Y: B, B
+P: G
+S: R, R, B, R
+D: G, G, B
+F: B, R
+G: G
+H: R, B
+J: G
+K: B, R, R, B, B <<<<<<<<<<<<<<<<<<<<<<< *ONLY FOUND TWO KEYS ON LONGPRESS
+L: B, B
+Z: B, B, R, R, B, B
+C: G
+B: G
+N: B, B,
+M: B
+[: B, R, B
+]: B
 */
+
+/*red keys on desktop layout - shift, altgr and shift-altgr*/
+.desktop .kmw-keyboard-thai_qwerty #shift-K_S,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_LBRKT,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_F,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_K
+{ background: #bf4040; }
+
+/*green keys on desktop layout - shift, altgr and shift-altgr*/
+.desktop .kmw-keyboard-thai_qwerty #shift-K_T,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_P,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_D,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_J,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_C,
+.desktop .kmw-keyboard-thai_qwerty #rightalt-K_T,
+.desktop .kmw-keyboard-thai_qwerty #rightalt-K_P,
+
+{ background: #40bf6a; }
+
+/*blue keys on desktop layout - shift, altgr and shift-altgr*/
+.desktop .kmw-keyboard-thai_qwerty #shift-K_S,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_RBRKT,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_H,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_L,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_Z,
+.desktop .kmw-keyboard-thai_qwerty #shift-K_N,
+.desktop .kmw-keyboard-thai_qwerty #rightalt-K_Q,
+.desktop .kmw-keyboard-thai_qwerty #rightalt-K_Y,
+.desktop .kmw-keyboard-thai_qwerty #rightalt-K_LBRKT,
+.desktop .kmw-keyboard-thai_qwerty #rightalt-K_RBRKT
+{ background: #4040bf; }
+
+/**********************************************************************************************/
 
 /*red keys on touch layout*/
 div#popup-default-U_0E1C,
@@ -14,11 +65,11 @@ div#popup-default-U_0E1D,
 div#default-K_H,
 div#popup-default-U_0E09,
 div#popup-default-U_0E02,
-div#popup-default-U_0E03,
+div#popup-numeric-U_0E05, /*oddly on numeric layout*/
 div#popup-default-U_0E16,
 div#popup-default-U_0E10,
-div#shift-K_Q,
-div#shift-U_0E03,
+div#shift-K_Q, /*for the desktop layout*/
+div#numeric-U_0E03
 { background: #bf4040; }
 
 
@@ -33,18 +84,17 @@ To do after the desktop layout is finalized
 /*green keys on touch layout*/
 div#default-K_T,
 div#popup-default-U_0E0F,
-div#default-K_O,
 div#default-K_P,
 div#default-K_D,
 div#popup-default-U_0E0E,
 div#default-K_G,
+div#default-K_J,
 div#default-K_C,
-div#default-K_B,
+div#default-K_B
 { background: #40bf6a; }
 
 /*blue keys on touch layout*/
 div#default-K_Q,
-div#popup-default-U_0E20,
 div#default-K_W,
 div#default-K_R,
 div#default-K_Y,
@@ -53,11 +103,11 @@ div#popup-default-U_0E0B,
 div#popup-default-U_0E11,
 div#default-K_F,
 div#popup-default-U_0E2E,
-div#default-K_J,
 div#popup-default-U_0E0C,
 div#default-K_K,
-div#popup-default-U_0E03,
-div#popup-default-U_0E05,
+div#popup-default-U_0E03, /*shouldn't this be red?*/
+div#popup-default-U_0E05,  /*shouldn't this be red?*/
+div#popup-default-U_0E06,
 div#default-K_L,
 div#popup-default-U_0E2C,
 div#default-K_Z,
@@ -66,9 +116,10 @@ div#popup-default-U_0E12,
 div#popup-default-U_0E11,
 div#default-K_N,
 div#popup-default-U_0E13,
-div#popup-default-U_0E07,
 div#default-K_M,
-div#shift-K_Y,
-div#shift-K_RBRKT,
-div#shift-U_0E05,
+div#shift-K_Y, /*for desktop layout*/
+div#default-K_LBRKT,
+div#popup-default-U_0E20,
+div#default-K_RBRKT
 { background: #4040bf; }
+
