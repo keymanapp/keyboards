@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2020 Makara SOK
+Copyright (c) 2021 SIL International
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
