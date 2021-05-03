@@ -1,7 +1,7 @@
 Bunong Keyboard Data
 ------------------------------
 
-Copyright (C) 2020 Makara SOK
+Copyright (C) 2021 SIL International
 
 Version 1.0
 
