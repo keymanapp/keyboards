@@ -1,0 +1,80 @@
+﻿store(&NAME) 'Tamajaq Tawallammat Latin'
+store(&TARGETS) 'any windows macosx linux desktop'
+store(&COPYRIGHT) '©The Christian & Missionary Alliance in Canada'
+store(&KEYBOARDVERSION) '1.0'
+store(&VISUALKEYBOARD) 'tamajaq_tawallammat_latin.kvks'
+store(&LAYOUTFILE) 'tamajaq_tawallammat_latin.keyman-touch-layout'
+store(&BITMAP) 'tamajaq_tawallammat_latin.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+store(plainconsonants)  "b" "d" "h" "k" "l" "m" "n" "r" "s" "t" "v" "w" "z" "B" "D" "H" "K" "L" "M" "N" "R" "S" "T" "V" "W" "Z"
+store(dotconsonants) U+1E05 U+1E0D U+1E25 U+1E33 U+1E37 U+1E43 U+1E47 U+1E5B U+1E63 U+1E6D U+1E7F U+1E89 U+1E93 U+1E04 U+1E0C U+1E24 U+1E32 U+1E36 U+1E42 U+1E46 U+1E5A U+1E62 U+1E6C U+1E7E U+1E88 U+1E92
+store(plainvowels) "aeiouAEIOU"
+store(hatvowels) "âêîôûÂÊÎÔÛ"
+store(dresisvowels) "äëïöüÄËÏÖÜ"
+store(gravevowels) "àèìòùÀÈÌÒÙ"
+store(aiguvowels) "áéíóúÁÉÍÓÚ"
+store(nodot) "aeiouAEIOUɣƔ1234567890 .,<>;'[]{}\|/?`~-_=+!@#$%^&*()"
++ [SHIFT K_BKSLASH] > 'Ŋ'
++ [K_BKSLASH] > 'ŋ'
++ [K_RBRKT] > '»'
++ [K_LBRKT] > '«'
+
++ "c" > 'š'
++ "v" > 'ɣ'
++ "p" > 'ə'
++ "V" > 'Ɣ'
++ "C" > 'Š'
++ "P" > 'Ǝ'
+
+c + ";" > deadkey(dot)
+";" + any(plainconsonants) > index(dotconsonants,2)
+";" + "f" > "f" U+0323 
+";" + "g" > "g" U+0323
+";" + "j" > "j" U+0323
+";" + "q" > "q" U+0323
+";" + "x" > "x" U+0323
+";" + "c" > U+0161 U+0323
+";" + "p" > "p" U+0323
+";" + "F" > "F" U+0323 
+";" + "G" > "G" U+0323
+";" + "J" > "J" U+0323
+";" + "Q" > "Q" U+0323
+";" + "X" > "X" U+0323
+";" + "C" > U+0160 U+0323
+";" + "P" > "P" U+0323
+c dk(dot) + ";" > ";"
+";" + "a" > "å"
+";" + "A" > "Å"
+
+"^" + any(plainvowels) > index(hatvowels,2)
+'"' + any(plainvowels) > index(dresisvowels,2)
+"`" + any(plainvowels) > index(gravevowels,2)
+"'" + any(plainvowels) > index(aiguvowels,2)
+"~" + "a" > "ã"
+"~" + "A" > "Ã"
+"~" + "o" > "õ"
+"~" + "O" > "Õ"
+
+"<" + "<" > "«"
+">" + ">" > "»"
+
+"," + "a" > "ă"
+"," + "A" > "Ă"
+"," + "n" > "ŋ"
+"," + "N" > "Ŋ"
+"," + "c" > "ç"
+"," + "C" > "Ç"
+
+"/" + "c" > "c"
+"/" + "v" > "v"
+"/" + "p" > "p"
+"/" + "C" > "C"
+"/" + "V" > "V"
+"/" + "P" > "P"
+"/" + [SHIFT K_BKSLASH] > '|'
+"/" + [K_BKSLASH] > '\'
+"/" + [K_RBRKT] > ']'
+"/" + [K_LBRKT] > '['
