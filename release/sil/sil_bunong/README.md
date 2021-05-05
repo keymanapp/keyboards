@@ -1,4 +1,4 @@
-Bunong Keyboard Data
+Bunong (SIL) Keyboard Data
 ------------------------------
 
 Copyright (C) 2021 SIL International
@@ -13,8 +13,9 @@ This keyboard is designed for typing Bonong language using Khmer characters.
 Supported Platforms
 -------------------
  * Windows
- * Web
  * macOS
  * Linux
+ * Web
+ * Mobile Web
  * iOS
  * Android
