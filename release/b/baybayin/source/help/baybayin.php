@@ -10,7 +10,6 @@ This keyboard lets you type Baybayin script in Unicode. This keyboard includes a
 </p>
 
 <h1>Desktop Keyboard Layout</h1>
-<img src="/source/welcome/baybayin-kb1.png"; height="250"> 
 <div id='osk' data-states='default shift'>
 </div>
 
