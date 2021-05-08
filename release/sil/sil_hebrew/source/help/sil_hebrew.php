@@ -30,19 +30,17 @@ END;
 
 
 
-<h2>Keyboard Layout</h2>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<h3>Normal</h3>
-<p class="centered"><img src="sil_hebrewU_.png" alt="Hebrew keyboard layout: Unshifted"></p>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<h3>Shift</h3>
-<p class="centered"><img src="sil_hebrewU_S.png" alt="Hebrew keyboard layout: Shift"></p>
+<div id='osk-tablet' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<h3>Alt</h3>
-<p class="centered"><img src="sil_hebrewU_A.png" alt="Hebrew keyboard layout: Alt"></p>
-
-<h3>Shift + Alt</h3>
-<p class="centered"><img src="sil_hebrewU_SA.png" alt="Hebrew keyboard layout: Shift + Alt"></p>
 
 <table class="inputSequences">
     <colgroup>

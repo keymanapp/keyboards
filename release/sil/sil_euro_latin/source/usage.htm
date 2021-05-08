@@ -80,7 +80,8 @@ window.onload = function() {
       for(var j = 0; j < sc.length; j++)
       {
 		var chvo = so.charAt(j), chvc = sc.charAt(j), chvp = sp.charAt(j);
-		/* Special case for characters p umlaut, g tilde because they aren't precomposed */
+		/* Special case for characters n umlaut, p umlaut, g tilde because they aren't precomposed */
+		if(sxv == ':' && chvo == 'n') { chvo = 'n̈'; chvp = 'N̈'; }
 		if(sxv == ':' && chvo == 'p') { chvo = 'p̈'; chvp = 'P̈'; }
 		if(sxv == '~' && chvo == 'g') { chvo = 'g̃'; chvp = 'G̃'; }
         sx += '<th>'+sxv+chvc+'</th>';
@@ -164,8 +165,8 @@ window.onload = function() {
   <td x="*" c="aeghiou" o="ăĕğḫĭŏŭ" p="ĂĔĞḪĬŎŬ">˘</td>
   <td x="~" c="aegilnouvy" o="ãẽgĩɫñõũṽỹ" p="ÃẼGĨⱢÑÕŨṼỸ">˜</td>
   <td x="-" c="abdeghijlortuyz" o="āƀđēḡħīɉłōɍŧūȳƶ" p="ĀɃĐĒḠĦĪɈŁŌɌŦŪȲƵ">ˉ</td>
-  <td x='_' c="bdhklnrtz" o="ḇḏẖḵḻṉṟṯẕ" p="ḆḎ ḴḺṈṞṮẔ">&nbsp;̱</td>
-  <td x=":" c="aehioptuwxy" o="äëḧïöpẗüẅẍÿ" p="ÄËḦÏÖP ÜẄẌŸ">¨</td>
+  <td x='_' c="bdhklnrtxz" o="ḇḏẖḵḻṉṟṯxẕ" p="ḆḎ ḴḺṈṞṮXẔ">&nbsp;̱</td>
+  <td x=":" c="aehinoptuwxy" o="äëḧïnöpẗüẅẍÿ" p="ÄËḦÏNÖP ÜẄẌŸ">¨</td>
   <td x="@" c="auwy" o="åůẘẙ" p="ÅŮ  ">˚</td>
   <td x="." c="abcdefghijlmnoprstwxyz" o="ȧḃċḋėḟġḣıȷŀṁṅȯṗṙṡṫẇẋẏż" p="ȦḂĊḊĖḞĠḢİ ĿṀṄȮṖṘṠṪẆẊẎŻ">˙</td>
   <td x="|" c="abdehiklmnorstuvwyz" o="ạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ" p="ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒ">.</td>
@@ -176,7 +177,7 @@ window.onload = function() {
 
 <tr class='key'>
   <th class='title' rowspan='3'>Other<br />Letters</th>
-  <th class='prompt'>Type <span class='elkey'>=</span> then</th><th>c</th><th>e</th><th>g</th><th>j</th><th>n</th><th>o</th><th>s</th><th>t</th><th>y</th><th>z</th><th>'</th></tr>
+  <th class='prompt'>Type <span class='elkey'>=</span> then</th><th>c</th><th>e</th><th>g</th><th>j</th><th>n</th><th>o</th><th>s</th><th>t</th><th>x</th><th>y</th><th>z</th><th>'</th></tr>
 <tr class='out'>
   <th class='prompt'>Result</th>
   <td>ɔ</td>
@@ -187,6 +188,7 @@ window.onload = function() {
   <td>ɵ</td>
   <td>ß</td>
   <td>þ</td>
+  <td>ɣ</td>
   <td>ȝ</td>
   <td>ʒ</td>
   <td>ꞌ</td>
@@ -201,6 +203,7 @@ window.onload = function() {
   <td>Ɵ</td>
   <td>ẞ</td>
   <td>Þ</td>
+  <td>Ɣ</td>
   <td>Ȝ</td>
   <td>Ʒ</td>
   <td>Ꞌ</td>
@@ -232,11 +235,23 @@ window.onload = function() {
 <tr class='gap'><th colspan='16'></th></tr>
 
 <tr class='key'>
+  <th class='title' rowspan='3'><br /></th>
+  <th class='prompt'>Type <span class='elkey'>,</span> then</th><th>'</th><th>"</th></tr>
+<tr class='out'>
+  <th class='prompt'>Result</th>
+  <td>ḉ</td>
+  <td>Ḉ</td>
+</tr>
+
+<tr class='gap'><th colspan='16'></th></tr>
+
+<tr class='key'>
   <th class='title' rowspan='3'>Digraphs</th>
-  <th class='prompt'>Type</th><th>a\e</th><th colspan='2'>d\z</th><th>f\i</th><th>f\l</th><th>i\j</th><th colspan='2'>l\j</th><th colspan='2'>n\j</th><th>o\e</th><th>o\i</th></tr>
+  <th class='prompt'>Type</th><th>a\e</th><th colspan='2'>c\h</th><th colspan='2'>d\z</th><th>f\i</th><th>f\l</th><th>i\j</th><th colspan='2'>l\j</th><th colspan='2'>n\j</th><th>o\e</th><th>o\i</th></tr>
 <tr class='out'>
   <th class='prompt'>Result</th>
   <td>æ</td>
+  <td colspan='2'>c̲h̲</td>
   <td colspan='2'>ǆ</td>
   <td rowspan='2'>ﬁ</td>
   <td rowspan='2'>ﬂ</td>
@@ -249,6 +264,8 @@ window.onload = function() {
 <tr class='out'>
   <th class='prompt'></th>
   <td>Æ</td>
+  <td>C̲h̲</td>
+  <td>C̲H̲</td>
   <td>ǅ</td>
   <td>Ǆ</td>
   <td>Ĳ</td>

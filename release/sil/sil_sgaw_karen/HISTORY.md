@@ -1,6 +1,9 @@
 Sgaw Karen Change History
 ====================
 
+1.0.1 (2021-20-01)
+* Updated help
+
 1.0 (2020-09-01)
 ----------------
 * Removed ​ေ ာ ဗ and ဉ from touch layout as suggested
