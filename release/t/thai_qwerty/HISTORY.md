@@ -1,6 +1,6 @@
 Thai QWERTY Change History
 ====================
 
-1.0 (2021-04-07)
+1.0 (2021-05-01)
 ----------------
 * Created by Sebastian Restrepo
