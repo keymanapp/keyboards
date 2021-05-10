@@ -7,7 +7,7 @@ c store(&ETHNOLOGUECODE) 'kjg'
 store(&capsalwaysoff) "1"
 c store(&WINDOWSLANGUAGES) 'x0454'
 store(&COPYRIGHT) '© 2008-2020 SIL International'
-store(&KEYBOARDVERSION) '1.5'
+store(&KEYBOARDVERSION) '1.6'
 store(&NAME) 'Kmhmu (SIL)'
 store(&BITMAP) 'sil_kmhmu.ico'
 store(&VISUALKEYBOARD) 'sil_kmhmu.kvks'
@@ -18,8 +18,8 @@ begin Unicode > use(Start)
 
 c Define sets of characters for matching and filtering: basic consonant sets
 c (Composites and extra characters will be handled by specific rules)
-store(Consonant)  "ກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫອຮໝໜ" U+0EBC
-store(ConsonantKey) "d07'9l-pf84mo[xz/r2,1i];svI<O^"
+store(Consonant)  "ກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫອຮໝໜໞໟ" U+0EBC
+store(ConsonantKey) "d07'9l-pf84mo[xz/r2,1i];svI<OYU^"
 
 c Basic vowel character sets
 store(Vowel) "ເແໂໄໃ" "ະຽາ" U+0ECD U+0EB3 U+0EB1 U+0EBB U+0EB4 \
@@ -92,12 +92,8 @@ c + "U" > U+0EB5 U+0EC9
 U+200B + '|' > '|'
 
 c Specials for Kmhmu - adapted May 08
-any(LaoCharacter) + [K_SPACE] > context U+2009 U+200B c Space inserts thin space plus ZWSP when pressed once (5/08)
-U+2009 U+200B + [K_SPACE] > U+0020          c Special handling of double space - remove preceding thin space (5/08)
-+ [SHIFT K_SPACE] > U+0020  c Force a normal space (5/08)
-+ [LCTRL K_SPACE] > U+2009
-+ [RCTRL K_SPACE] > U+2009
+
 c + "Y" > U+0E81 U+0ECC  c commented out as we have changed over to unicode
-+ "Y" > U+0EDE
+c + "Y" > U+0EDE
 c + "U" > U+0E8D U+0ECC  c commented out as we have changed over to unicode
-+ "U" > U+0EDF
+c + "U" > U+0EDF

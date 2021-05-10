@@ -1,9 +1,9 @@
 Kʷak̓ʷala keyboard
 ======================
 
-Copyright (c) 2008-2020 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
+Copyright (c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
 
-Version 9.2
+Version 9.2.1
 
 Kʷak̓ʷala keyboard layout for Unicode
 

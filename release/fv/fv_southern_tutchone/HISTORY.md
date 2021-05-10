@@ -1,6 +1,10 @@
 Southern Tutchone Change History
 ============================
 
+9.2.1 (23 Feb 2021)
+----------------
+* Increment version number to force recompile of touch layout
+
 9.2 (1 Jul 2019)
 ----------------
 * Fix canonical ordering for U+0328

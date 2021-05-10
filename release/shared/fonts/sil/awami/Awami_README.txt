@@ -92,6 +92,3 @@ Computers and Writing systems website: http://software.sil.org/awami
 
 Support through the website: http://software.sil.org/awami/support
 
-
-
-
