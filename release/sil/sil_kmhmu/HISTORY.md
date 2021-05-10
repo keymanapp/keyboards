@@ -1,6 +1,10 @@
 SIL Kmhmu Keyboard Change History
 =======================
 
+1.6 (19 Nov 2020)
+-------------------
+* Fixed the space issue after ໞ or ໟ (half space instead of regular space after words end in these two)
+
 1.5 (21 May 2020)
 -----------------
 * Replaced shift+u and shift+y with appropriate Unicode Characters

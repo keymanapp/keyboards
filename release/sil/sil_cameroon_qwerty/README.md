@@ -3,7 +3,7 @@
 
 Copyright (C) 2018-2020 SIL Cameroon
 
-Version 6.0.4
+Version 6.0.5
 
 __DESCRIPTION__
 
