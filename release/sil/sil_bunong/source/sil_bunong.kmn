@@ -10,43 +10,44 @@ store(&KMW_EMBEDCSS) 'sil_bunong.css'
 begin Unicode > use(main)
 
 group(main) using keys
-+ [SHIFT K_COMMA] > nul
++ [SHIFT K_4] > '៛'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_HYPHEN] > '_'
++ [K_BKSLASH] > '\'
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
 + [SHIFT K_M] > nul
 + [SHIFT K_N] > nul
 + [SHIFT K_X] > nul
 + [SHIFT K_Z] > nul
-+ [SHIFT K_A] > nul
++ [SHIFT K_A] > 'ៈ'
 + [SHIFT K_D] > nul
-+ [SHIFT K_F] > nul
++ [SHIFT K_F] > 'ឞ'
 + [SHIFT K_Y] > nul
 + [SHIFT K_L] > nul
-+ [SHIFT K_COLON] > nul
-+ [SHIFT K_QUOTE] > nul
-+ [SHIFT K_BKSLASH] > nul
 + [SHIFT K_RBRKT] > nul
 + [SHIFT K_P] > nul
-+ [SHIFT K_HYPHEN] > nul
 + [SHIFT K_8] > nul
 + [SHIFT K_7] > nul
 + [SHIFT K_6] > nul
-+ [SHIFT K_4] > nul
 + [SHIFT K_R] > nul
 + [SHIFT K_Q] > nul
-+ [K_BKSLASH] > nul
 + [K_Z] > ','
 + [K_SLASH] > '.'
 + [K_RBRKT] > '៖'
 + [SHIFT K_BKQUOTE] > '»'
-+ [SHIFT K_EQUAL] > '='
++ [SHIFT K_EQUAL] > '+'
 + [SHIFT K_0] > ')'
 + [SHIFT K_9] > '('
 + [SHIFT K_5] > '%'
-+ [SHIFT K_3] > '"'
++ [SHIFT K_3] > '#'
 + [SHIFT K_2] > 'ៗ'
 + [SHIFT K_1] > '!'
-+ [SHIFT K_PERIOD] > '៕'
++ [SHIFT K_PERIOD] > '>'
 + [SHIFT K_SLASH] > '?'
-+ [SHIFT K_H] > 'ៈ'
++ [SHIFT K_H] > nul
 + [SHIFT K_O] > 'ៅ'
 + [SHIFT K_S] > 'ៃ'
 + [SHIFT K_E] > 'ែ'
@@ -55,7 +56,7 @@ group(main) using keys
 + [SHIFT K_W] > 'ឺ'
 + [SHIFT K_I] > 'ី'
 + [SHIFT K_G] > 'អ'
-+ [SHIFT K_V] > 'ឞ'
++ [SHIFT K_V] > nul
 + [SHIFT K_B] > 'ព'
 + [SHIFT K_T] > 'ទ'
 + [SHIFT K_J] > 'ញ'
@@ -80,8 +81,6 @@ group(main) using keys
 + [K_8] > '៨'
 + [K_9] > '៩'
 + [K_0] > '០'
-+ [K_HYPHEN] > nul
-+ [K_EQUAL] > nul
 + [K_LBRKT] > 'ៀ'
 + [K_P] > 'ផ'
 + [K_O] > 'ោ'
@@ -113,3 +112,64 @@ U+200B + [K_SPACE] > U+0020
 + [T_17D2_179B] > U+17D2 U+179B
 + [T_17D2_179C] > U+17D2 U+179C
 + [T_17D2_17A0] > U+17D2 U+17A0
+
+c Rotas
+
+c ។ > ៕ > ។
+U+17D4 + [K_PERIOD]             > U+17D5        c press ។ twice to get ៕
+U+17D5 + [K_PERIOD]             > U+17D4        c press it again to get ។
+
+c « > " > ' > «
+U+00AB + [K_BKQUOTE]            > U+0022
+U+0022 + [K_BKQUOTE]            > U+0027
+U+0027 + [K_BKQUOTE]            > U+00AB
+
+c » > " > ' > »
+U+00BB + [SHIFT K_BKQUOTE]            > U+0022
+U+0022 + [SHIFT K_BKQUOTE]            > U+0027
+U+0027 + [SHIFT K_BKQUOTE]            > U+00BB
+
+c " > ' > "
+U+0022 + [SHIFT K_QUOTE]        > U+0027        c press Shift + " twice to get a single quote
+U+0027 + [SHIFT K_QUOTE]        > U+0022        c press Shift + " again to get a double quote
+
+c \ > / > | > \
+U+005C + [K_BKSLASH]            > U+002F
+U+002F + [K_BKSLASH]            > U+007C
+U+007C + [K_BKSLASH]            > U+005C
+
+c ( > [ > { > (
+U+0028 + [SHIFT K_9]            > U+005B
+U+005B + [SHIFT K_9]            > U+007B
+U+007B + [SHIFT K_9]            > U+0028
+
+c ) > ] > } > )
+U+0029 + [SHIFT K_0]            > U+005D
+U+005D + [SHIFT K_0]            > U+007D
+U+007D + [SHIFT K_0]            > U+0029
+
+c U+17B7 > U+17B8 & U+17B9 > U+17BA - above vowel rota
+U+17B7 + [K_I]                  > U+17B8
+U+17B8 + [K_I]                  > U+17B7
+
+U+17B9 + [K_W]                  > U+17BA
+U+17BA + [K_W]                  > U+17B9
+
+c U+17BB > U+17BC, កុ > កូ > កុ
+U+17BB + [K_U]                  > U+17BC
+U+17BC + [K_U]                  > U+17BB
+
+c U+17C1 > U+17C2 > U+17C3, កេ > កែ > កៃ > កេ
+U+17C1 + [K_E]                  > U+17C2
+U+17C2 + [K_E]                  > U+17C3
+U+17C3 + [K_E]                  > U+17C1
+
+c U+17C0 > U+17BF, កៀ > កឿ > កៀ
+U+17C0 + [K_LBRKT]              > U+17BF
+U+17BF + [K_LBRKT]              > U+17C0
+
+c U+17C4 > U+17C5, កោ > កៅ > កោ
+U+17C4 + [K_O]                  > U+17C5
+U+17C5 + [K_O]                  > U+17C4
+
+c EoF
