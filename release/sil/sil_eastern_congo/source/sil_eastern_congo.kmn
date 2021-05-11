@@ -9,7 +9,7 @@ store(&copyright) "© 2005-2021 SIL - Eastern Congo Group"
 store(&MESSAGE) 'Eastern Congo keyboard for languages of the Democratic Republic of the Congo.'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_eastern_congo.kvks'
-store(&KEYBOARDVERSION) '1.5'
+store(&KEYBOARDVERSION) '1.5.2'
 store(&LAYOUTFILE) 'sil_eastern_congo.keyman-touch-layout'
 
 begin Unicode > use(main)
@@ -23,13 +23,6 @@ store(basic_diacritics) U+0041 U+0044 U+0045 U+0049 U+004D \
                         U+0061 U+0064 U+0065 U+0069 U+006D \
                         U+006E U+006F U+0072 U+0073 \
                         U+0075 U+007A
-
-c Characters than can take extra high and extra low tone
-store(spc_high_lowK)  "e"    "r"    "i"    "6"    "8"    "o"    "u"    "7"    "t"    "9"    "p"    "m"    "n"
-store(spc_high_low)   U+025B U+0259 U+0268 U+026A U+0269 U+0254 U+0289 U+028A U+01DD U+0275 U+00F8 U+0272 U+014B 
-store(basic_high_low) U+0061 U+0065 U+0069 U+006F U+0075 U+006D U+006E
-              
-
 
 c All characters on standard keyboard
 store(all_basic_chars) "A"    "B"    "C"    "D"    "E"    "F"    "G"    "H"    "I"    "J"    "K" "L" \
@@ -105,10 +98,8 @@ any(spc) + any(semi_chars_K)    > index(semi_chars_U,2)         c all special ch
 c standard characters on keyboard
 "^" + any(basic_diacritics) > index(basic_diacritics,2) U+0302 use(nfc)       c circumflex
 "!" + any(basic_diacritics) > index(basic_diacritics,2) U+030C use(nfc)        c caron
-"``" + any(basic_high_low) > index(basic_high_low,3) U+030F use(nfc)        c double grave
 "`" + any(basic_diacritics) > index(basic_diacritics,2) U+0300 use(nfc)        c grave
 "'" + any(basic_diacritics) > index(basic_diacritics,2) U+0301 use(nfc)        c acute
-"''" + any(basic_high_low) > index(basic_high_low,3) U+030B use(nfc)        c double acute
 ":" + any(basic_diacritics) > index(basic_diacritics,2) U+0308 use(nfc)        c diaersis (This was " before.)
 "@" + any(basic_diacritics) > index(basic_diacritics,2) U+0304 use(nfc)        c macron
 "~" + any(basic_diacritics) > index(basic_diacritics,2) U+0303 use(nfc)        c tilde
@@ -116,9 +107,7 @@ c standard characters on keyboard
 "^" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0302 use(nfc)
 "!" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+030C use(nfc)
 "`" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0300 use(nfc)
-"``" any(spc) + any(spc_high_lowK) > index(spc_high_low,4) U+030F use(nfc)
 "'" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0301 use(nfc)
-"''" any(spc) + any(spc_high_lowK) > index(spc_high_low,4) U+030B use(nfc)
 ":" any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0308 use(nfc)
 '@' any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0304 use(nfc)
 '~' any(spc) + any(dia_chars_K) > index(dia_chars_U,3) U+0303 use(nfc)
@@ -180,14 +169,14 @@ any(spc) + "`" > U+02CB  c modifier letter grave accent
 "=" any(spc) + "@" > U+0304 use(nfc)  c combining macron
 
 c changed lines 117-125 to use dk(block_convert) to terminate processing on advice from MD. AC 26/04/18
-"''" + "'" > "'" dk(block_convert) c single apostrophe, stop context
-"``" + "`" > "`" dk(block_convert)
+"'" + "'" > "'" dk(block_convert) c single apostrophe, stop context
+any(spc) + any(spc) > outs(spc) dk(block_convert)
+"`" + "`" > "`" dk(block_convert)
 '"' + '"' > '"' dk(block_convert)
 "=" + "=" > "=" dk(block_convert)
 ":" + ":" > ":" dk(block_convert)
 "^" + "^" > "^" dk(block_convert)
 "@" + "@" > "@" dk(block_convert)
-any(spc) + any(spc) > outs(spc) dk(block_convert)
 c "'" + "'" > U+0027 dk(block_convert)   c apostrophe, stop context
 c any(accent) + any(vowel) > index(vowel,2) index(accent,1)
 c any(vowel) any(accent) + [K_BKSP] > nul
@@ -350,6 +339,5 @@ U+005A U+0302 > U+1E90
 c z caron
 U+007A U+030C > U+017E
 U+005A U+030C > U+017D
-
 
 c EOF

@@ -3,15 +3,16 @@ store(&NAME) 'Baybayin'
 store(&COPYRIGHT) '© 2021 Ilham Nurwansah'
 store(&KEYBOARDVERSION) '1.0'
 store(&VISUALKEYBOARD) 'baybayin.kvks'
-store(&TARGETS) 'windows macosx linux web desktop'
+store(&TARGETS) 'windows macosx linux web'
 store(&MESSAGE) 'Keyboard for typing Baybayin script'
 store(&BITMAP) 'baybayin.ico'
 store(nul) "acefjoqrvxzBCDEFGHJKLMOPQRSTVWXYZ"
-+ any(nul) > nul
 
 begin Unicode > use(main)
 
 group(main) using keys
++ any(nul) > nul
+
 + [SHIFT K_EQUAL] > '᜔'
 + [K_U] > 'ᜓ'
 + [K_I] > 'ᜒ'

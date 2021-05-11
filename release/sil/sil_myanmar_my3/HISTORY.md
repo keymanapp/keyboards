@@ -1,5 +1,8 @@
 Myanmar3 (SIL) Keyboard Change History
 =======================
+# 1.7.2 (27 Apr 2021)
+* Added Pyidaungsu font
+
 # 1.7.1 (13 Apr 2021)
 * Renamed welcome.htm file
 
