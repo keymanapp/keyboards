@@ -38,3 +38,9 @@ Sistem yang didukung
  * Mobile devices
  * Desktop devices
  * Tablet devices
+
+To Do
+-----
+* The copyright that shows on the .kmp is still 2020. If you could change that in the .kps file **Details** tab, **Copyright** field, that would be great.
+* The other issue would be a bigger change. It looks to me like when you install the package, the preview **Readme** does not handle graphics. So, I would recommend that you change the `readme.htm` to just have a quick summary like the first 2 paragraphs WITHOUT the graphics. THEN, add a welcome.htm file which is the equivalent of what you have in the readme.htm. The end result would be when the user installs the package they can click on **Readme** and it gives the quick summary and THEN after the user clicks on "Install" the welcome.htm file will popup and that one does display graphics properly. This would better follow how we handle other keyboard packages.
+
