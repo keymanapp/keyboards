@@ -1,6 +1,20 @@
 Khmer Angkor Change History
 =======================
 
+1.0.9 (7 Apr 2021)
+----------------------
+* fix broken images on help and welcome pages
+
+1.0.8 (24 Mar 2021)
+----------------------
+* fix the broken link on welcome page
+* add example to the keyboard_info
+* add tablet layout
+* update phone layout
+* get rid of the Lunar Dates layer on touch layout
+* update documentations
+* change OSK font to Khmer Mondulkiri
+
 1.0.7 (17 Nov 2020)
 ----------------------
 * update icon
