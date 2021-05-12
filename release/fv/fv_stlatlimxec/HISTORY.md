@@ -1,6 +1,10 @@
 Sƛ̓aƛ̓imxəc Change History
 ============================
 
+9.2.1 (24 Feb 2021)
+-------------------
+* Updated htm files for readability on Linux
+
 9.2 (1 Jul 2019)
 -----------------
  * canonical ordering for U+0323 changed
