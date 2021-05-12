@@ -172,4 +172,14 @@ c U+17C4 > U+17C5, កោ > កៅ > កោ
 U+17C4 + [K_O]                  > U+17C5
 U+17C5 + [K_O]                  > U+17C4
 
+c  ះ > ៈ > ៖ > :
+U+17D6 + [K_RBRKT]              > U+17C7
+U+17C7 + [K_RBRKT]              > U+17C8
+U+17C8 + [K_RBRKT]              > U+003A
+U+003A + [K_RBRKT]              > U+17D6
+
+c - > —  
+U+002D + [K_HYPHEN]              > U+2014
+U+2014 + [K_HYPHEN]              > U+002D
+
 c EoF
