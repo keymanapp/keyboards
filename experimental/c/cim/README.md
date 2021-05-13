@@ -1,7 +1,7 @@
 CIM keyboard
 ==============
 
-© 2020-2021 YuriOh and Victoria Quint
+© 2020-2021 Yuri Oh and Victoria Quint
 
 Version 1.1
 
