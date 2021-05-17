@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1'
+store(&KEYBOARDVERSION) '2.1.1'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -33,8 +33,8 @@ store(cDirectCapsValues) 'ഡശടഫ'
 c produce vowels
 store(vDirectSmallValues) "അഎഇഒഉ"
 store(vDirectSmallKeys) "aeiou"
-store(vDirectCapsValues) "ആഏഈഓഋഊ"
-store(vDirectCapsKeys) "AEIORU"
+store(vDirectCapsValues) "ആഏഈഓഊ"
+store(vDirectCapsKeys) "AEIOU"
 
 c Chills
 store(chills) 'ൺൻർൽൾൿ'
@@ -176,6 +176,15 @@ dk(at) + 'e' > 'െ'
 '്' + '\' > U+0D3C
 U+0D3C + '\' > U+0D3B
 any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
+
+c Handling Ru/Ra
+any(consonants) + 'R' > index(consonants,1) 'റ'
+any(vowels) + 'R' > index(vowels,1) 'റ'
+any(vowelsigns) + 'R' > index(vowelsigns,1) 'റ'  
++ 'R' > 'ഋ'
+'ഋ' + 'R' > 'ൠ'
+c any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
+
 
 c always remove none joiner before vowels
 U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
