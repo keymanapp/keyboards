@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1.3'
+store(&KEYBOARDVERSION) '2.1.4'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -314,12 +314,13 @@ any(vowelsigns) 'ം' + 'r' > index(vowelsigns,1) 'മ്ര്'
 'സം' + 'y' > 'സംയ്'
 
 c Bypassing transliteration (Solve Issue: https://github.com/beniza/keyboards/issues/2)
-+ '=' > dk(1)
-dk(1) + '=' > '=' c to provide a way to keyin an actual '='                                                        
++ '\' > dk(1)
+dk(1) + '\' > '\' c to provide a way to keyin an actual '='   
+'\' + '\' > '\\'                                                     
 
 c Experimental: the sign chars at the end are added for enabling special strings such as web addresses or email ids. 
 c Warning: treating = as an escapable can create inadvertent consequences as there may be cases to treat is as the dk. 
-store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>~@.=' 
+store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ>\~@.=' 
 dk(1) + any(escapable) > index(escapable, 2)     
 any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 
