@@ -1,6 +1,11 @@
 Malar Malayalam Keyboard Change History
 ====================
 
+1.4 (2021-05-08)
+----------------
+* Improved support for Numeric Keypad in keyboard.
+* Updated Keymapping Chart.
+
 1.3 (2020-12-03)
 ----------------
 * Position of `Menu` key corrected in touch layout for phone.
