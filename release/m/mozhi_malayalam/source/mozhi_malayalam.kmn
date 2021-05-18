@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1.2'
+store(&KEYBOARDVERSION) '2.1.3'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -523,8 +523,14 @@ c ''  +  [K_BKSP] > ''
 'റ്റ' + [K_BKSP] > nul
 
 c Convenience Mapping and Emoji
-'---' + '\' > '—'
-'--' + '\' > '–'
+'-' + '-' > '–'
+'–' + '-' > '—'
+'-' + '>' > '→'
+'→' + '#' > '↓'
+'↓' + '#' > '←'
+'<' + '-' > '←'
+'←' + '#' > '↑'
+'↑' + '#' > '→'
 '\' + '-' > '−'
 '\' + '*' > '×'
 '\' + '/' > '÷'
@@ -532,6 +538,7 @@ c Convenience Mapping and Emoji
 ':' + '(' > '☹'
 ':' + 'D' > '😄'
 ':' + 'x' > '😘'
+':' + '/' > '🤔'
 
 
 c Smart single quotes
