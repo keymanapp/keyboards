@@ -15,6 +15,12 @@ store(&VISUALKEYBOARD) 'mozhi_malayalam.kvks'
 store(&MESSAGE) 'A complete rebuild of Mozhi keyboard updated for Mozhi 2.0'
 begin Unicode > use(main)
 
+group(ru) using keys
+c to handle the special case of 'RR'. In the main group, this rule won't fire as ഋ is part of the vowel store
+'ഋ' + 'R' > 'ൠ'
++ 'R' > 'ഋ'
+nomatch > use(main)
+
 group(main) using keys
 
 store(consonants) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷസഹളഴറ"
@@ -183,8 +189,7 @@ c Handling Ru/Ra
 any(consonants) + 'R' > index(consonants,1) 'റ'
 any(vowels) + 'R' > index(vowels,1) 'റ'
 any(vowelsigns) + 'R' > index(vowelsigns,1) 'റ'  
-+ 'R' > 'ഋ'
-'ഋ' + 'R' > 'ൠ'
++ 'R' > use(ru)
 c any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
 
 
