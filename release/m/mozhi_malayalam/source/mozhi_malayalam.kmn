@@ -18,6 +18,7 @@ begin Unicode > use(main)
 group(ru) using keys
 c to handle the special case of 'RR'. In the main group, this rule won't fire as ഋ is part of the vowel store
 'ഋ' + 'R' > 'ൠ'
+'ൃ' + 'R' > 'ൄ'
 + 'R' > 'ഋ'
 nomatch > use(main)
 
@@ -186,6 +187,8 @@ U+0D3C + '#' > U+0D3B
 any(consonants) '്ല്' + '#' > index(consonants, 1) U+0D62
 
 c Handling Ru/Ra
+'ഋ' + 'R' > 'ൠ'
+'ൃ' + 'R' > 'ൄ'
 any(consonants) + 'R' > index(consonants,1) 'റ'
 any(vowels) + 'R' > index(vowels,1) 'റ'
 any(vowelsigns) + 'R' > index(vowelsigns,1) 'റ'  
