@@ -4,36 +4,13 @@
   require_once('header.php');
 ?>
 
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-	kbd {
-		background-color: #eee;
-		border-radius: 3px;
-		border: 1px solid #b4b4b4;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-		color: #333;
-		display: inline-block;
-		font-size: .85em;
-		font-weight: 700;
-		line-height: 1;
-		padding: 2px 4px;
-		white-space: nowrap;
-   }
-  </style>
-</head>
-<body>
-
-<h1>Start Using Ma'di Keyboard</h1>
-
 <p>
     This keyboard is desgined based on the new orthogrphy of Ma'di language spoken in South Sudan and Uganda.
 </p>
 
 <p>Ma'di keyboard is similar to the English (US) keyboard, except the way to type out the below dot and tone marks on the vowels.</p>
 <ul>
-  <li>Type any vowel + dot to get the vowel with a combining dot below. <br/>For examples: <br/>
+  <li>Vowels with a combining dot below. <br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
 		  <li><kbd>U</kbd> + <kbd>.</kbd> &#x21D2; ụ </li> 
 		  <li><kbd>Shift</kbd> <kbd>U</kbd> + <kbd>.</kbd> &#x21D2; Ụ </li>
@@ -65,7 +42,7 @@
 		  <li><kbd>Shift</kbd> <kbd>E</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; Ẽ </li>
 	  </ul>
   </li>
-  <li>Type / after any vowel with a below dot to get the vowel with both a combining below dot and a combining acute accent. For the other two tone marks, follow this same method.<br/>For examples: <br/>
+  <li>Type / after any vowel with a below dot or vice versa to get the vowel with both a combining below dot and a combining acute accent. For the other two tone marks, follow this same method.<br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
 		  <li><kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; ụ́ </li> 
 		  <li><kbd>Shift</kbd> <kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; Ụ́ </li>
@@ -77,32 +54,29 @@
   </li>
 </ul>
 
-<p><b>Note:</b>The glottal stop character is on the normal single quote key <kbd>'</kbd>. For example: ã'ụ́ (chicken), type <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> + <kbd>'</kbd> + <kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd>.
+<p><b>Note: </b>The glottal stop character is on the normal single quote key <kbd>'</kbd>. For example: ã'ụ́ (chicken), type <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> + <kbd>'</kbd> + <kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd>.
 </p>
 
-<h2>Full stop</h2>
-<p><kbd>.</kbd> key would output the sentence final punctuation mark -- full stop -- if the character right before it is a vowel with a dot below or a tone mark.</p>
-<p>For examples:</p>
-	  <ul style="font-family:Charis SIL">
-		  <li><kbd>Shift</kbd> <kbd>N</kbd> + <kbd>Y</kbd> + <kbd>I</kbd> + <kbd>/</kbd> + <kbd>Space</kbd> + <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> + <kbd>N</kbd> + <kbd>Y</kbd> + <kbd>A</kbd> + <kbd>/</kbd> + <kbd>Space</kbd> + <kbd>'</kbd> + <kbd>I</kbd> + <kbd>.</kbd> + <kbd>.</kbd> &#x21D2; Nyí ãnyá 'ị.	(You are grinding the grain.)</li>
-		  <li><kbd>Shift</kbd> <kbd>M</kbd> + <kbd>A</kbd> + <kbd>/</kbd> + <kbd>Space</kbd> + <kbd>T</kbd> + <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> + <kbd>Space</kbd> + <kbd>L</kbd> + <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> + <kbd>.</kbd> &#x21D2; Má tã lã. (I'm reading.)</li> 
-	  </ul>
+<p>To get a vowel with a tone mark and a below dot, type a vowel with the tone mark and then type the below dot, i.e. <kbd>A</kbd> + <kbd>/</kbd> + <kbd>.</kbd> &#x21D2; ạ́. Or type a vowel with a dot below and then a tone mark, i.e. <kbd>A</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; ạ́.</p>
 
-<p>To get a vowel without a dot below at the end of the sentence, press the <kbd>.</kbd> key thrice after the vowel.</p>
-<p>For example:</p>
-	  <ul style="font-family:Charis SIL">
-		  <li><kbd>Shift</kbd> <kbd>N</kbd> + <kbd>Y</kbd> + <kbd>I</kbd> + <kbd>/</kbd> + <kbd>Space</kbd> + <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> + <kbd>N</kbd> + <kbd>Y</kbd> + <kbd>A</kbd> + <kbd>/</kbd> + <kbd>Space</kbd> + <kbd>I</kbd> + <kbd>D</kbd> + <kbd>A</kbd> + <kbd>.</kbd> + <kbd>.</kbd> + <kbd>.</kbd> &#x21D2; Nyí ãnyá ida.	(You are regrinding the grain.)</li> 
-	  </ul>
+<p>There is also a way to cycle through all vowels with the tone marks. Type a vowel and then press <kbd>X</kbd> or <kbd>Shift</kbd><kbd>X</kbd></p> once to get the vowel with a COMBINING ACUTE ACCENT (◌́), twice to get the vowel with COMBINING CIRCUMFLEXACCENT (◌̂) and thrice to get the vowel with COMBINING TILDE (◌̃).
+
+<h2>Full stop</h2>
+<p><kbd>\</kbd> + <kbd>.</kbd> output the sentence final punctuation mark -- full stop. You can also rotate through to pick your desired output by pressing the period key again and again.</p>
 	  
 <h1>Keyboard Layout</h1>
 <h2>Keyboard Layout on PC</h2>
 <div id='osk' data-states='default shift'>
 
-<h2>Keyboard Layout on mobile devices</h2>
+<h2>Keyboard Layout on Phones</h2>
 <div id='tablet' data-states='default shift numeric'>
+
 	<h3>Long Press</h3>
 	<p>Press and hold on a key with a little dot on the top right corner of the key to reveal more keys, then roll over to the key you like.</p>
-	<p><a href="touch_longpress.png"><img width="80%" class="keyboard" src="touch_longpress.png" alt="Long Press state" /></a></p>
+	<p><a href="touch_longpress.png"><img width="80%" class="keyboard" src="phone_longpress.png" alt="Long Press state" /></a></p>
+	
+<h2>Keyboard Layout on Tablets</h2>
+<div id='tablet' data-states='default shift numeric'>
 
 
 </div>
