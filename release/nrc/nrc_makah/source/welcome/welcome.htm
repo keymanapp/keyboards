@@ -45,12 +45,20 @@
     }
     figure {
       text-align: center;
+      margin-inline: auto;
     }
-    .subfigures {
+    figure > img {
+      max-width: 100%;
+      height: auto;
+    }
+    figure.subfigures {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
+    }
+    .subfigures > img {
+      max-width: 33%;
     }
   </style>
 </head>
@@ -79,11 +87,11 @@
       ordinarily be on an English keyboard. </p>
 
     <figure class="subfigures">
-      <img src="long-press-r.gif" width=248 height=248
+      <img src="key-r-2x.png" width=256 height=256
            alt="Animation of pressing and holding “ƛ” to obtain “r”">
-      <img src="long-press-f.gif" width=248 height=248
+      <img src="key-f-2x.png" width=256 height=256
            alt="Animation of pressing and holding “ɫ” to obtain “f”">
-      <img src="long-press-v.gif" width=248 height=248
+      <img src="key-v-2x.png" width=256 height=256
            alt="Animation of pressing and holding “Ɂ” to obtain “v”">
     </figure>
   </section>
