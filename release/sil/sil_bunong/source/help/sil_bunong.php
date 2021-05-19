@@ -21,19 +21,23 @@
 	Rota rules help you to flick through the similar characters. These work on both the desktop and touch layotus.
 </p>
 <ul>
-<li>Press <kbd>I</kbd> twice to get <span style="font-family:Khmer Mondulkiri;"> ី</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">ិ</span>.</li>
-<li>Press <kbd>W</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">ឺ</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">ឹ</span>.</li>
-<li>Press <kbd>U</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">ូ</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">ុ</span>.</li>
-<li>Press <kbd>E</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">ែ</span>, thrice <span style="font-family:Khmer Mondulkiri;">ៃ</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">េ</span>.</li>
-<li>Press <kbd>[</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">ឿ</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">ៀ</span>.</li>
-<li>Press <kbd>O</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">ៅ</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">ោ</span>.</li>
-<li>Press <kbd>I</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">ិ</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">ី</span>.</li>
+<li>Press <kbd>I</kbd> twice to get <span> ី</span> and press it one more time to get back to <span>ិ</span>.</li>
+<li>Press <kbd>W</kbd> twice to get <span>ឺ</span> and press it one more time to get back to <span>ឹ</span>.</li>
+<li>Press <kbd>U</kbd> twice to get <span>ូ</span> and press it one more time to get back to <span>ុ</span>.</li>
+<li>Press <kbd>E</kbd> twice to get <span>ែ</span>, thrice <span>ៃ</span> and press it one more time to get back to <span>េ</span>.</li>
+<li>Press <kbd>[</kbd> twice to get <span>ឿ</span> and press it one more time to get back to <span>ៀ</span>.</li>
+<li>Press <kbd>O</kbd> twice to get <span>ៅ</span> and press it one more time to get back to <span>ោ</span>.</li>
+<li>Press <kbd>I</kbd> twice to get <span>ិ</span> and press it one more time to get back to <span>ី</span>.</li>
 </ul>
 <ul>
-<li>Press <kbd>.</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">៕</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">។</span>.</li>
-<li>Press <kbd>`</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">"</span>, thrice <span style="font-family:Khmer Mondulkiri;">'</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">«</span>.</li>
-<li>Press <kbd>Shift</kbd><kbd>`</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">"</span>, thrice <span style="font-family:Khmer Mondulkiri;">'</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">»</span>.</li>
-<li>Press <kbd>I</kbd> twice to get <span style="font-family:Khmer Mondulkiri;">ិ</span> and press it one more time to get back to <span style="font-family:Khmer Mondulkiri;">ី</span>.</li>
+<li>Press <kbd>]</kbd> twice to get <span>ះ</span>, thrice to get <span>ៈ</span>, quadruple to get <span>:</span> and press it one more time to get back to <span>៖</span>.</li>
+<li>Press <kbd>.</kbd> twice to get <span>៕</span> and press it one more time to get back to <span>។</span>.</li>
+<li>Press <kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>«</span>.</li>
+<li>Press <kbd>Shift</kbd><kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>»</span>.</li>
+<li>Press <kbd>-</kbd> twice to get <span>—</span> and press it one more time to get back to <span>-</span>.</li>
+<li>Press <kbd>)</kbd> twice to get <span>]</span>, thrice to get <span>}</span> and press it one more time to get back to <span>)</span>.</li>
+<li>Press <kbd>(</kbd> twice to get <span>[</span>, thrice to get <span>{</span> and press it one more time to get back to <span>(</span>.</li>
+<li>Press <kbd>\</kbd> twice to get <span>/</span>, thrice to get <span>|</span> and press it one more time to get back to <span>\</span>.</li>
 </ul>
 
 <h1>Keyboard Layout</h1>
