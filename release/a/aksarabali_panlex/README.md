@@ -20,3 +20,8 @@ Supported Platforms
  * Linux
  * Mobile
  * Web
+
+To Do
+-----
+* Updated the php file to use a span class for a Bali font. It might be good to do that for the welcome.htm 
+  file next time the keyboard is touched.
