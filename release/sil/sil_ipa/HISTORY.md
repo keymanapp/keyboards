@@ -3,7 +3,7 @@ IPA (SIL) Keyboard Change History
 
 1.8.5 (20 May 2021)
 -------------------
-* Add support for conflict when used with German hardware keyboard
+* Resolves conflict with `{` key with German hardware keyboard
 
 1.8.4 (27 Oct 2020)
 -------------------
