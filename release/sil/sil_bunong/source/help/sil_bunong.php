@@ -48,7 +48,7 @@
   <h2>Phone</h2>
    <div id='osk-phone' data-states='default shift'></div>
    <h3>Longpress</h3>
-	<p>Keys with a little dot on the top right can be pressed and held for more keys.</p>
+	<p>Keys with a little dot on the top right can be pressed and held for more keys. Note also these keys can be pressed on again and again to cycle through characters shown in the longpress. See the rota rules above.</p>
 	<p><a href="phone_longpress.png"><img class="keyboard" src="phone_longpress.png" alt="Longpress state" /></a></p>
 	
      <h2>Tablet</h2>
