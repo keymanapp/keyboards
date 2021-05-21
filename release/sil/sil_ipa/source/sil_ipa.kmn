@@ -345,10 +345,8 @@ c any(pipeD)  + "|"  > index(pipeU,1) c this was added for Chinese IPA
 store(option_key) ''
 
 $keymanonly: + [RALT "-"]	>	set(option_key='before') c 
-$keymanonly: + [RALT "="]	>	reset(option_key)  c 
-
 c German keyboard has } on RALT+0 == RALT+= so use RALT SHIFT = instead for reset
-$keymanonly: if(&baselayout = 'de') + [RALT SHIFT "="]	>	reset(option_key)  c 
+$keymanonly: if(&baselayout = 'de-de') + [RALT SHIFT "="]	>	reset(option_key)  c 
 $keymanonly: if(&baselayout != 'de-de') + [RALT "="]	>	reset(option_key)  c 
 
 store(controls)  "=><^|"
