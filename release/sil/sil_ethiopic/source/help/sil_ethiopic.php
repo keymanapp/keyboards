@@ -1,17 +1,7 @@
 <?php
-  $pagename = 'SIL Ethiopic Keyboard Help';
+  $pagename = 'SIL Ethiopic Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
- #section2 td p a {
-     text-decoration: none; color: blue
- }
-  require_once('header.php');
-END;
-?>
-
-<head>
-  <style type="text/css">
-      @page {  }
         table { border-collapse:collapse; border-spacing:0; empty-cells:show }
         td, th { vertical-align:top; font-size:12pt;}
         h1, h2, h3, h4, h5, h6 { clear:both }
@@ -1613,11 +1603,9 @@ END;
         .Output { font-family:Abyssinica SIL; font-size:11pt; letter-spacing:normal; }
         <!-- ODF styles with no properties representable as CSS -->
         .Table1.1 .Table14.1 .Table19.1 .Table2.1 .Table3.1 .Table5.1 .Table6.1 .Table7.1 .Table7.2 .T1 .WW8Num1z0 .WW8Num1z1 .WW8Num1z2 .WW8Num1z3 .WW8Num1z4 .WW8Num1z5 .WW8Num1z6 .WW8Num1z7 .WW8Num1z8  { }
-  </style>
-</head>
-
-  <h3 class="Heading_20_3"><a id="a__Introduction" name=
-  "a__Introduction"></a>Introduction</h3>
+END;
+  require_once('header.php');
+?>
 
   <p class="Standard">The “SIL Ethiopic” keyboard was developed to input
   Ethiopic Fidel scripts. You can use this keyboard with any Ethiopic Unicode
@@ -1625,7 +1613,7 @@ END;
   Basketo, Gumuz and Gamo-Gofa-Dawro) or the two Private Use Area (PUA)
   characters of this keyboard (“<span class="Output"></span>” and
   “<span class="Output"></span>”). The <a href=
-  "http://scripts.sil.org/AbyssinicaSIL" class="Internet_20_link">Abyssinica
+  "http://software.sil.org/abyssinica" class="Internet_20_link">Abyssinica
   SIL</a> font (version 1.5+) is recommended if you need to use these newer
   Unicode 6.0+ or PUA characters.</p>
 
