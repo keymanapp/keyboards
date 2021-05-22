@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-This keyboard is designed for typing Bonong language using Khmer characters.
+This keyboard is designed for typing Bunong language using Khmer characters.
 
 Supported Platforms
 -------------------
