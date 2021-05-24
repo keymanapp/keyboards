@@ -111,7 +111,6 @@ c Modify the behaviour of '_' as a contextual substitutions blocker
 
 c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
 + 'm' > 'ം'
-c 'ം' + '~' > 'മ്'  c <= this is now handled directly by Explicit Virama rule above
 
 c To solve issue 13: നുക്ത
 '്' + 'F' > '़്'
@@ -131,7 +130,7 @@ any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, bu
 
 c chill breakers
 any(chills_anu) + '_' > index(chills_anu, 1) '_' dk(noconjuncts)
-any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
+c any(chills_anu) + '~' > index(chill_anu_Bases,1) '്' c there is another similar rule that handles this case
 any(chills_anu) + 'a' > index(chill_anu_Bases,1)
 any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
 any(chills_anu) + 'i' > index(chill_anu_Bases,1) 'ി'
@@ -418,6 +417,7 @@ c digits
 '8' + '#' > '൮'
 '9' + '#' > '൯'
 
+c gemination
 + 'B' > 'ബ്ബ്'
 + 'C' > 'ച്ച്'
 + 'G' > 'ഗ്ഗ്'
