@@ -14204,7 +14204,7 @@ sélectionnez le nom de la touche de raccourci et modifiez la touche de raccourc
 </ul> 
 <p xml:lang="fr">Le Clavier Camerounais est un produit de SIL Cameroun. Pour plus  d´infos sur le Claver Camerounais ou la technologie linguistique au Cameroun,  veuillez visiter <a href="https://langtechcameroon.info">https://langtechcameroon.info</a>
 </p>
-<p xml:lang="fr" style="text-align: center;  font-style: italic;">Copyright 2018-2020  SIL Cameroun</p>
+<p xml:lang="fr" style="text-align: center;  font-style: italic;">Copyright 2018-2021 SIL Cameroun</p>
 </div>
 </div>
 </div>
@@ -28425,7 +28425,7 @@ select the hotkey name, and either change the hotkey or turn it off.
 </ul>
 <p xml:lang="en">The Cameroon Keyboard is developed by SIL Cameroon. For more  information about the Cameroon Keyboard or Language Technology in Cameroon, see  <a href="https://langtechcameroon.info">https://langtechcameroon.info</a>
 </p>
-<p xml:lang="en" style="text-align: center; font-style: italic;">Copyright 2018-2020 SIL  Cameroon</p>
+<p xml:lang="en" style="text-align: center; font-style: italic;">Copyright 2018-2021 SIL Cameroon</p>
 </div>
 </div>
 </div>
