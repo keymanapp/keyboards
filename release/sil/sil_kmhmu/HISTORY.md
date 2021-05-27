@@ -1,6 +1,10 @@
 SIL Kmhmu Keyboard Change History
 =================================
 
+1.8 (21 May 2021)
+-----------------
+* Improved display of diacritics on touch layouts as well
+
 1.7 (17 May 2021)
 -----------------
 * Added a special font for the On Screen Keyboard to improve display of diacritics
