@@ -10,9 +10,9 @@ Description
 Keyboard for Old Hungarian.
  
 Desktop layout based on xkeyboard-config's "Old Hungarian (for ligatures)" 
-keyboard layout by AndrÃ¡s Tisza and Viktor KovÃ¡cs.
+keyboard layout by András Tisza and Viktor Kovács.
 
-Mobile layout based on design by AndrÃ¡s Tisza.
+Mobile layout based on design by András Tisza.
 
 Links
 -----
