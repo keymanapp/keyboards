@@ -178,7 +178,7 @@
                 "text": "]"
               },
               {
-                "id": "T_new_26",
+                "id": "",
                 "text": "",
                 "width": "10",
                 "sp": "10"
@@ -238,7 +238,17 @@
               },
               {
                 "id": "K_BKSLASH",
-                "text": "'"
+                "text": "'",
+                "sk": [
+                  {
+                    "text": "‘",
+                    "id": "U_2018"
+                  },
+                  {
+                    "text": "’",
+                    "id": "U_2019"
+                  }
+                ]
               }
             ]
           },
@@ -320,6 +330,10 @@
                 "text": " ",
                 "width": "1100",
                 "sp": "0"
+              },
+              {
+                "id": "U_0630",
+                "text": "  ذ"
               }
             ]
           }
@@ -440,7 +454,7 @@
                 "text": "'"
               },
               {
-                "id": "T_new_495",
+                "id": "",
                 "text": "",
                 "width": "10",
                 "sp": "10"
@@ -488,7 +502,17 @@
               },
               {
                 "id": "K_L",
-                "text": "\""
+                "text": "\"",
+                "sk": [
+                  {
+                    "text": "“",
+                    "id": "U_201C"
+                  },
+                  {
+                    "text": "”",
+                    "id": "U_201D"
+                  }
+                ]
               },
               {
                 "id": "K_COLON",
@@ -496,7 +520,14 @@
               },
               {
                 "id": "K_QUOTE",
-                "text": "ـ"
+                "text": "-",
+                "pad": "",
+                "sk": [
+                  {
+                    "text": "–",
+                    "id": "U_2013"
+                  }
+                ]
               },
               {
                 "id": "K_BKSLASH",
@@ -579,9 +610,17 @@
               },
               {
                 "id": "U_200C",
-                "text": "zwnj ",
-                "width": "1100",
+                "text": "*ZWNJ*",
+                "width": "980",
                 "sp": "0"
+              },
+              {
+                "id": "U_200F",
+                "text": "rlm"
+              },
+              {
+                "id": "U_200E",
+                "text": "lrm"
               }
             ]
           }
@@ -704,7 +743,7 @@
                 "text": "]"
               },
               {
-                "id": "T_new_26",
+                "id": "",
                 "text": "",
                 "width": "10",
                 "sp": "10"
@@ -844,7 +883,7 @@
             "key": [
               {
                 "id": "K_NUMLOCK",
-                "text": "*abc*",
+                "text": "ا‌ب‌ج",
                 "sp": "1",
                 "nextlayer": "default"
               },
@@ -865,7 +904,7 @@
         ]
       }
     ],
-    "fontsize": ""
+    "fontsize": "1.4em"
   },
   "phone": {
     "layer": [
@@ -1145,6 +1184,22 @@
                     "id": "U_0022"
                   },
                   {
+                    "text": "“",
+                    "id": "U_201C"
+                  },
+                  {
+                    "text": "”",
+                    "id": "U_201D"
+                  },
+                  {
+                    "text": "‘",
+                    "id": "U_2018"
+                  },
+                  {
+                    "text": "’",
+                    "id": "U_2019"
+                  },
+                  {
                     "text": "‹",
                     "id": "U_203A"
                   },
@@ -1375,7 +1430,7 @@
                 "text": "\""
               },
               {
-                "id": "T_new_1028",
+                "id": "",
                 "text": "",
                 "width": "10",
                 "sp": "10"
@@ -1447,10 +1502,14 @@
                 "sp": "1"
               },
               {
-                "id": "U_200C",
-                "text": "zwnj ",
-                "width": "610",
+                "id": "K_SPACE",
+                "text": " ",
+                "width": "555",
                 "sp": "0"
+              },
+              {
+                "id": "U_200C",
+                "text": "*ZWNJ*"
               },
               {
                 "id": "K_ENTER",
@@ -1654,9 +1713,18 @@
             "id": 2,
             "key": [
               {
+                "id": "U_200F",
+                "text": "rlm",
+                "sk": [
+                  {
+                    "text": "lrm",
+                    "id": "U_200E"
+                  }
+                ]
+              },
+              {
                 "id": "K_4",
                 "text": "ء",
-                "pad": "50",
                 "layer": "shift"
               },
               {
@@ -1695,13 +1763,14 @@
               {
                 "id": "U_002D",
                 "text": "-",
-                "layer": "shift"
-              },
-              {
-                "id": "T_new_707",
-                "text": "",
-                "width": "10",
-                "sp": "10"
+                "pad": "",
+                "layer": "shift",
+                "sk": [
+                  {
+                    "text": "–",
+                    "id": "U_2013"
+                  }
+                ]
               }
             ]
           },
@@ -1783,7 +1852,7 @@
             "key": [
               {
                 "id": "K_LOWER",
-                "text": "*abc*",
+                "text": "ا‌ب‌ج",
                 "width": "150",
                 "sp": "1",
                 "nextlayer": "default"
@@ -1812,6 +1881,7 @@
       }
     ],
     "font": "Lateef",
-    "displayUnderlying": false
+    "displayUnderlying": false,
+    "fontsize": "1.4em"
   }
 }

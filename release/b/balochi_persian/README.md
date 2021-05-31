@@ -1,9 +1,9 @@
 Balochi Persian keyboard
-==============
+========================
 
-© 2019-2020 SIL International
+© 2019-2021 SIL International
 
-Version 1.1
+Version 1.4
 
 Description
 -----------
