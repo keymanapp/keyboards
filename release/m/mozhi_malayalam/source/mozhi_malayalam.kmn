@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1.6'
+store(&KEYBOARDVERSION) '2.1.7'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -266,16 +266,18 @@ c Fix #50: Extra elongation for vowel signs
 'ഋ' + 'O' > 'റോ'
 'ഋ' + '~' > 'റ്'
 'ഌ' + 'l' > 'ൡ'
-'എ' + 'a' > 'ഈ'
+'എ' + 'a' > 'ഏ'
 'എ' + 'e' > 'ഈ'
 'എ' + 'i' > 'ഐ'
 'ഒ' + 'o' > 'ഊ'
+'ഒ' + 'a' > 'ഓ'
 'ഒ' + 'u' > 'ഔ'  
 'ി' + 'e' > 'ീ'
 'ി' + 'i' > 'ൈ'
-'െ' + 'a' > 'ീ'
+'െ' + 'a' > 'േ'
 'െ' + 'e' > 'ീ'
-'ൊ' + 'o' > 'ോ'
+c 'ൊ' + 'o' > 'ോ'
+'ൊ' + 'a' > 'ോ'
 'ൊ' + 'u' > 'ൗ'
 
 c Stand-alone vowel signs after chandrakkala (Solve Issue: https://github.com/beniza/keyboards/issues/8)
