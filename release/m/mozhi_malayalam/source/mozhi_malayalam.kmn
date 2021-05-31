@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1.4'
+store(&KEYBOARDVERSION) '2.1.5'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -27,21 +27,6 @@ group(main) using keys
 store(consonants) "കഖഗഘങചഛജഝഞടഠഡഢണതഥദധനപഫബഭമയരലവശഷസഹളഴറ"
 store(vowels) "അആഇഈഉഊഋൠഌൡഎഏഐഒഓഔ"
 store(vowelsigns) "ാിീുൂൃൄൢൣെേൈൊോൗ"
-
-c complex combinations with sequencial forms of na and ta
-c 'റ്' dk(na_ta) + 'e' > 'െറ'
-c 'റ്' dk(na_ta) + 'E' > 'േറ'
-c 'റ്' dk(na_ta) + 'o' > 'െറാ'
-c 'റ്' dk(na_ta) + 'O' > 'േറാ'
-
-c 'റ്' dk(na_ta) 'ർ' + 'e' > '്രെറ'
-c 'റ്' dk(na_ta) 'ർ' + 'E' > '്രേറ'
-c 'റ്' dk(na_ta) 'ർ' + 'o' > '്രെറാ'
-c 'റ്' dk(na_ta) 'ർ' + 'O' > '്രേറാ'
-c 'റ്' dk(na_ta) 'യ്' + 'e' > '്യെറ'
-c 'റ്' dk(na_ta) 'യ്' + 'E' > '്യേറ'
-c 'റ്' dk(na_ta) 'യ്' + 'o' > '്യെറാ'
-c 'റ്' dk(na_ta) 'യ്' + 'O' > '്യേറാ'
 
 c Store non word initial contexts
 store(KeyContexts) outs(consonants) outs(vowels) outs(vowelsigns)
@@ -69,6 +54,9 @@ store(chill_anu_Bases) "ണനരലളകമ"
 
 c always remove zwnj before a word final chars
 store(WordFinalChars) ' ?.!)]}"”’'
+
+c sequential nta and tta are to be dealt with separately
+store(nt_tt_base) 'ൻറ'
 
 c Store Universal KeyStroke stores
 store(Keystrokes) outs(chillSource) outs(vDirectSmallKeys) outs(vDirectCapsKeys) outs(WordFinalChars) outs(cDirectSmallKeys) outs(cDirectCapsKeys)
@@ -111,7 +99,10 @@ any(consonants) U+0D4D dk(vir) + 't' > index(consonants, 1) U+0D4D U+200C U+0D31
 
 c Preventing Contextual Substitutions
 c Modify the behaviour of '_' as a contextual substitutions blocker
-'_' dk(noconjuncts) + 'n' > 'ൻ' dk(noconjuncts)
+c 'ൻ_' dk(noconjuncts) + 'r' > 'ൻ' dk(vir) 'റ്' c dk(no_n_conjunct)
+any(nt_tt_base) '_' dk(noconjuncts) + 'r' > index(nt_tt_base, 1) dk(vir) 'റ്'
+
+c '_' dk(noconjuncts) + 'n' > 'ൻ' dk(noconjuncts)
 + '_' > '_' dk(noconjuncts)
 '_' dk(noconjuncts) + '_' > '__'
 '_' + '_' > '__'
@@ -122,7 +113,6 @@ c Modify the behaviour of '_' as a contextual substitutions blocker
 '_' dk(noconjuncts) + 'm' > U+0D2E U+0D4D
 'ൻ' dk(noconjuncts) + 'j' > 'ഞ്'
 '_' dk(noconjuncts) + 't' > U+0D31 U+0D4D U+0D31 U+0D4D
-
 
 c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
 + 'm' > 'ം'
@@ -205,6 +195,31 @@ dk(at) + 'e' > 'െ'
 U+0D3C + '#' > U+0D3B
 any(consonants) '്ല്' + '#' > index(consonants, 1) U+0D62
 
+c complex forms involving nta and tta
+store(subform_base) 'യലവ'
+store(subform_key) 'ylv'
+store(vkey) 'eEoO'
+store(vlform) 'െേെേ'
+store(vrform) nul nul 'ാാ'
+
+any(nt_tt_base) 'റ്' + any(vkey) > index(nt_tt_base, 1) index(vlform, 4) 'റ' index(vrform, 4)
+any(nt_tt_base) 'റ' + 'i' > index(nt_tt_base, 1) 'ൈറ'
+any(nt_tt_base) 'റൗ' + '#' > index(nt_tt_base, 1) 'െറൗ'
+
+any(nt_tt_base) 'റ്' + any(subform_key) > index(nt_tt_base, 1) 'റ്' index(subform_base, 4) '്' dk(subform)
+any(nt_tt_base) 'റ്' any(subform_base) '്' dk(subform) + any(vkey) > index(nt_tt_base, 1) index(vlform, 7) 'റ്' index(subform_base, 4) index(vrform, 7)
+any(nt_tt_base) 'റ്' any(subform_base) dk(2)  + 'i' > index(nt_tt_base, 1) 'ൈറ്' index(subform_base, 4)
+any(nt_tt_base) 'റ്' any(subform_base) 'ൗ'  + '#' > index(nt_tt_base, 1) 'െറ്' index(subform_base, 4) 'ൗ'
+
+any(nt_tt_base) 'റ്' + 'r' > index(nt_tt_base, 1) '്രറ്' dk(subform)
+any(nt_tt_base) '്രറ്' dk(subform) + any(subform_key) > index(nt_tt_base, 1) '്രറ്' index(subform_base, 7) '്'
+any(nt_tt_base) '്രറ്' any(subform_base) '്' + any(vkey) > index(nt_tt_base, 1)  '്ര' index(vlform, 8) 'റ്' index(subform_base, 6) index(vrform, 8)
+any(nt_tt_base) '്രറ്' any(subform_base) dk(2) + 'i' > index(nt_tt_base, 1)  '്രൈറ്' index(subform_base, 6)
+any(nt_tt_base) '്രറ്' any(subform_base) 'ൗ'  + '#' > index(nt_tt_base, 1)  '്രെറ്' index(subform_base, 6) 'ൗ'
+any(nt_tt_base) '്രറ്' dk(subform) + any(vkey) > index(nt_tt_base, 1) '്ര' index(vlform, 7) 'റ' index(vrform, 7)
+any(nt_tt_base) '്രറ' dk(2) + 'i' > index(nt_tt_base, 1) '്രൈറ'
+any(nt_tt_base) '്രറൗ' + '#' > index(nt_tt_base, 1) '്രെറൗ'
+
 c Handling Ru/Ra
 'ഋ' + 'R' > 'ൠ'
 'ൃ' + 'R' > 'ൄ'
@@ -274,15 +289,21 @@ dk(2) + 'u' > 'ൗ'
 'ി' + 'i' > 'ീ'
 '്' + 'u' > 'ു'
 '്' + 'U' > 'ൂ'
-'ു' + 'u' > 'ൂ'   
+'ു' + 'u' > 'ൂ'
 '്' + 'R' > 'ൃ'
 'ൃ' + 'R' > 'ൄ'   
+'്' dk(subform) + 'a' > dk(2)
+'്' dk(subform) + 'i' > 'ി'
+'്' dk(subform) + 'I' > 'ീ' 
+'്' dk(subform) + 'u' > 'ു'
+'്' dk(subform) + 'U' > 'ൂ'
+'്' dk(subform) + 'R' > 'ൃ'
 '്' + 'e' > 'െ'
 '്' + 'E' > 'േ'
 'െ' + 'e' > 'ീ'
-'്' + 'o' > 'ൊ'   
+'്' + 'o' > 'ൊ'
 '്' + 'O' > 'ോ'   
-'്' + 'o' > 'ൂ'   
+'ൊ' + 'o' > 'ൂ'   
 
 c To solve issue-20 ചന്ദ്രക്കലയ്ക്ക് ശേഷം ~ റ്റൈപ്പ് ചെയ്താൽ രണ്ടാമത്തെ ചന്ദ്രക്കല വരുന്നു
 '്' + '~' > '്'   
