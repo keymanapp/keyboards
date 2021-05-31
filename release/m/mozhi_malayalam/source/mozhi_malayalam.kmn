@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1.5'
+store(&KEYBOARDVERSION) '2.1.6'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -380,6 +380,13 @@ any(KeyContexts) 'ൻ' + 'j' > index(KeyContexts, 1) 'ഞ്ഞ്'
 'ഞ്ഞ്' + 'c' > 'ഞ്ച്'
 'ഞ്ഞ്ൻ' + 'j' > 'ഞ്ഞ്'
 'ഞ്ഞ്' + 't' > 'ഞ്റ്റ്'
+
+c The sequence 'nh' also should produces 'ഞ്ഞ്', word medially and word final positions   To Fix #39
+any(KeyContexts) 'ൻ' + 'h' > index(KeyContexts, 1) 'ഞ്ഞ്'
+'ഞ്ഞ്' + any(cDirectCapsKeys) > 'ഞ്' index(cDirectCapsValues, 5) '്'
+'ഞ്ഞ്ൻ' + 'h' > 'ഞ്ഞ്'
+
+
 c #c1
 c ['([അ-ഊഌഎ-ഐഒ-ഹ])([ഽ-ൂെ-ൌൗ])+R', '', '$2$3റ്'],
 any(vowels) + 'R' > context 'ർ'
@@ -408,6 +415,7 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c
 'ന്ര്' + 'r' > 'ന്റ്'
 'ൻ' + 'k' > 'ങ്ക്'
 'ൻ' + 'j' > 'ഞ്'
+'ൻ' + 'h' > 'ഞ്'
 'ൻ' + 'n' > 'ന്ന്'
 'ൻ' + 'd' > 'ന്ദ്'
 'ൻ' + 't' >  'ൻ്റ്' c To solve issue 35: the encoding of ൻ്റ
@@ -423,6 +431,7 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c
 'ൽ' + 'm' > 'ല്മ്'
 'ൽ' + 'p' > 'ല്പ്'
 'ൽ' + 'v' > 'ല്വ്'
+'ൽ' + 'h' > 'ള്'
 
 'ൾ' + 'L' > 'ള്ള്' c deadkey(capl)
 'ൾ' + 'l' > 'ഌ'            
