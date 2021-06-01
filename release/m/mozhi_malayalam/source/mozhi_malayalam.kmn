@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1.7'
+store(&KEYBOARDVERSION) '2.1.8'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -124,6 +124,40 @@ any(consonants) + 'm' > index(consonants,1) 'ം'
 any(vowels) + 'm' > index(vowels,1) 'ം'
 any(vowelsigns) + 'm' > index(vowelsigns,1) 'ം'  
 any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
+
+c modify the behaviour of 'r' 
++ 'r' > 'ഋ' dk(ru)
+any(consonants) '്' + 'r' > index(consonants, 1) 'ൃ' dk(ru)
+'ഋ' dk(ru) + 'r' > 'ൠ'
+'ഋ' dk(ru) + '~' > 'ര്'
+'ഋ' dk(ru) + 'a' > 'ര'
+'ഋ' dk(ru) + 'A' > 'രാ'
+'ഋ' dk(ru) + 'i' > 'രി'
+'ഋ' dk(ru) + 'I' > 'രീ'
+'ഋ' dk(ru) + 'u' > 'രു'
+'ഋ' dk(ru) + 'U' > 'രൂ'
+'ഋ' dk(ru) + 'R' > 'രൃ'
+'ഋ' dk(ru) + 'e' > 'രെ'
+'ഋ' dk(ru) + 'E' > 'രേ'
+'ഋ' dk(ru) + 'o' > 'രൊ'
+'ഋ' dk(ru) + 'O' > 'രോ'
+'ൃ' dk(ru) + 'r' > 'ൃർ'
+'ൃ' dk(ru) + '~' > '്ര്'
+'ൃ' dk(ru) + 'a' > '്ര'
+'ൃ' dk(ru) + 'A' > '്രാ'
+'ൃ' dk(ru) + 'i' > '്രി'
+'ൃ' dk(ru) + 'I' > '്രീ'
+'ൃ' dk(ru) + 'u' > '്രു'
+'ൃ' dk(ru) + 'U' > '്രൂ'
+'ൃ' dk(ru) + 'R' > '്രൃ'
+'ൃ' dk(ru) + 'e' > '്രെ'
+'ൃ' dk(ru) + 'E' > '്രേ'
+'ൃ' dk(ru) + 'o' > '്രൊ'
+'ൃ' dk(ru) + 'O' > '്രോ'
+
+any(consonants) + 'r' > index(consonants, 1) 'ർ'
+any(vowels) + 'r' > index(vowels, 1) 'ർ'
+any(vowelsigns) + 'r' > index(vowelsigns, 1) 'ർ'
 
 c produce chill
 + any(chillSource) > index(chills,1)
