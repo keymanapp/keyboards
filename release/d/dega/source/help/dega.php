@@ -22,6 +22,8 @@
 <li><kbd> U </kbd> + <kbd> U </kbd> = Ư </li>
 <li><kbd> U </kbd> + <kbd> X </kbd> = Ŭ </li>
 <li><kbd> U </kbd> + <kbd> U </kbd> + <kbd> X </kbd> = Ư̆ </li>
+<li><kbd> U </kbd> + <kbd> W </kbd> = Ư </li>
+<li><kbd> U </kbd> + <kbd> W </kbd> + <kbd> X </kbd> = Ư̆ </li>
 </ul>
 
 <ul>
@@ -54,11 +56,6 @@
 <li><kbd> D </kbd> + <kbd> D </kbd> = Đ </li>
 </ul>
 
-<ul>
-<li><kbd> Z </kbd> + <kbd> Z </kbd> =  ̂</li>
-<li><kbd> X </kbd> + <kbd> X </kbd> =  ̆</li>
-</ul>
-
 <h2>Lower Case</h2>
 <ul>
 <li><kbd> e </kbd> + <kbd> e </kbd> = ê </li>
@@ -70,6 +67,9 @@
 <li><kbd> u </kbd> + <kbd> u </kbd> = ư </li>
 <li><kbd> u </kbd> + <kbd> x </kbd> = ŭ </li>
 <li><kbd> u </kbd> + <kbd> u </kbd> + <kbd> x </kbd> = ư̆ </li>
+<li><kbd> u </kbd> + <kbd> w </kbd> = ư </li>
+<li><kbd> u </kbd> + <kbd> w </kbd> + <kbd> x </kbd> = ư̆ </li>
+
 </ul>
 
 <ul>
@@ -100,11 +100,6 @@
 <li><kbd> b </kbd> + <kbd> b </kbd> = ƀ </li>
 <li><kbd> n </kbd> + <kbd> n </kbd> = ñ </li>
 <li><kbd> d </kbd> + <kbd> d </kbd> = đ </li>
-</ul>
-
-<ul>
-<li><kbd> z </kbd> + <kbd> z </kbd> =  ̂</li>
-<li><kbd> x </kbd> + <kbd> x </kbd> =  ̆</li>
 </ul>
 
 <h1>Keyboard Layout</h1>
