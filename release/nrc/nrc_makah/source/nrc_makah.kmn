@@ -13,23 +13,28 @@ store(ejective) 'cčkptƛqCČKPTQ'
 begin Unicode > use(main)
 
 group(main) using keys
-+ [T_XSH_LOWER] > 'x' U+030C
-+ [T_XSH_UPPER] > 'X' U+030C
++ [T_XSH]         > 'x' U+030C
++ [SHIFT T_XSH]   > 'X' U+030C
 
 c Add ejective diacritic to certain consonants:
-+ [T_CEJ_LOWER]  > 'c' U+0313
-+ [T_CEJ_UPPER]  > 'C' U+0313
-+ [T_CHEJ_LOWER] > 'č' U+0313
-+ [T_CHEJ_UPPER] > 'Č' U+0313
-+ [T_KEJ_LOWER]  > 'k' U+0313
-+ [T_KEJ_UPPER]  > 'K' U+0313
-+ [T_PEJ_LOWER]  > 'p' U+0313
-+ [T_PEJ_UPPER]  > 'P' U+0313
-+ [T_TEJ_LOWER]  > 't' U+0313
-+ [T_TEJ_UPPER]  > 'T' U+0313
-+ [T_LSHEJ]      > 'ƛ' U+0313
-+ [T_QEJ_LOWER]  > 'q' U+0313
-+ [T_QEJ_UPPER]  > 'Q' U+0313
++ [T_CEJ]         > 'c' U+0313
++ [SHIFT T_CEJ]   > 'C' U+0313
++ [T_CHEJ]        > 'č' U+0313
++ [SHIFT T_CHEJ]  > 'Č' U+0313
++ [T_KEJ]         > 'k' U+0313
++ [SHIFT T_KEJ]   > 'K' U+0313
++ [T_LSHEJ]       > 'ƛ' U+0313
++ [SHIFT T_LSHEJ] > 'ƛ' U+0313  c There is no capital ƛ!
++ [T_PEJ]         > 'p' U+0313
++ [SHIFT T_PEJ]   > 'P' U+0313
++ [T_QEJ]         > 'q' U+0313
++ [SHIFT T_QEJ]   > 'Q' U+0313
++ [T_TEJ]         > 't' U+0313
++ [SHIFT T_TEJ]   > 'T' U+0313
+
+c There is no capital ŋ!
++ [T_ENG]         > 'ŋ' 
++ [SHIFT T_ENG]   > 'ŋ' 
 
 c Backspace deletes both diacritic AND base character:
 any(ejective) U+0313 + [K_BKSP] > nul
