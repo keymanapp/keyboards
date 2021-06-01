@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start Using Dega Keyboard</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-	kbd {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-    color: #333;
-    display: inline-block;
-    font-size: .85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap; }
-  </style>
-</head>
-<body>
-
-<h1>Start Using Dega Keyboard</h1>
+<?php 
+  $pagename = "Dega Keyboard";
+  $pagetitle = "Dega Keyboard Help";
+  require_once('header.php');
+?>
 
 <p>
     Dega keyboard is created for indigenous people in the Central Highlands of Vietnam, to preserve their writing, this Dega keyboard can be used by Êđê, Jơrai, Kơ’Ho, Mơnông, Bahnar and many other indigenous ethnic groups.
@@ -129,35 +107,17 @@
 <li><kbd> x </kbd> + <kbd> x </kbd> =  ̆</li>
 </ul>
 
-
 <h1>Keyboard Layout</h1>
 
-<!-- Insert Keyboard Layout Images or HTML here -->
   <h2>Desktop</h2>
-	<h3>Default (unshifted)</h3>
-	<p><a href="desktop_layoutU_.png"><img width="100%" class="keyboard" src="desktop_layoutU_.png" alt="Default (unshifted) state" /></a></p>
-   <h3>Shift</h3>
-	<p><a href="desktop_layoutU_S.png"><img width="100%" class="keyboard" src="desktop_layoutU_S.png" alt="Shift state" /></a></p>
+   <div id='osk' data-states='default shift'></div>
 
   <h2>Phone</h2>
-	<h3>Default (unshifted)</h3>
-	<p><a href="phone_default.png"><img width="60%" class="keyboard" src="phone_default.png" alt="Default (unshifted) state" /></a></p>
-   <h3>Shift</h3>
-	<p><a href="phone_shift.png"><img width="60%" class="keyboard" src="phone_shift.png" alt="Shift state" /></a></p>
-   <h3>Numeric</h3>
-	<p><a href="phone_numeric.png"><img width="60%" class="keyboard" src="phone_numeric.png" alt="Numeric state" /></a></p>
-	
+   <div id='osk-phone' data-states='default shift numeric'></div>
+
    <h3>Longpress</h3>
-	<p>On mobile phone, keys with a little dot on the top right can be pressed and held for more keys.</p>
-	<p><a href="touch_longpress.png"><img width="60%" class="keyboard" src="touch_longpress.png" alt="Longpress state" /></a></p>
+	<p>Keys with a little dot on the top right can be pressed and held for more keys.</p>
+	<p><a href="touch_longpress.png"><img class="keyboard" src="touch_longpress.png" alt="Longpress state" /></a></p>
 	
   <h2>Tablet</h2>
-	<h3>Default (unshifted)</h3>
-	<p><a href="tablet_default.png"><img width="100%" class="keyboard" src="tablet_default.png" alt="Default (unshifted) state" /></a></p>
-   <h3>Shift</h3>
-	<p><a href="tablet_shift.png"><img width="100%" class="keyboard" src="tablet_shift.png" alt="Shift state" /></a></p>
-	
-<p>© 2021 MSFJ</p>
-
-</body>
-</html>
+   <div id='osk-tablet' data-states='default shift'></div>

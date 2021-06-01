@@ -120,6 +120,7 @@ c transform
 'n' + [K_N]     > 'ñ'
 'o' + [K_O]     > 'ô'
 'o' + [K_W]     > 'ơ'
+'u' + [K_U]     > 'ư'
 'z' + [K_Z]     > '̂'
 'x' + [K_X]     > '̆'
 
@@ -132,8 +133,28 @@ c transform
 'N' + [SHIFT K_N]     > 'Ñ'
 'O' + [SHIFT K_O]     > 'Ô'
 'O' + [SHIFT K_W]     > 'Ơ'
+'U' + [SHIFT K_U]     > 'Ư'
 'Z' + [SHIFT K_Z]     > '̂'
 'X' + [SHIFT K_X]     > '̆'
+
+c additional rules (emailed in May 30, 2021)
+
+store(vx)   'EUIYOAeuiyoa'
+
+any(vx) + [K_X]         > index(vx,1) U+0306
+any(vx) + [SHIFT K_X]   > index(vx,1) U+0306
+
+
+store(vvx)  'ÊƯÔÂêưôâ'
+
+any(vvx) + [K_X]        > index(vvx,1) U+0306 
+any(vvx) + [SHIFT K_X]  > index(vvx,1) U+0306
+
+'Ơ' + [K_X]           > 'Ơ' U+0306 
+'Ơ' + [SHIFT K_X]     > 'Ơ' U+0306 
+'ơ' + [K_X]           > 'ơ' U+0306
+'ơ' + [SHIFT K_X]     > 'ơ' U+0306
+
 
 
 c EoF
