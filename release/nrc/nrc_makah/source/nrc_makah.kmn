@@ -38,4 +38,6 @@ c There is no capital ŋ!
 
 c Backspace deletes both diacritic AND base character:
 any(ejective) U+0313 + [K_BKSP] > nul
+any(ejective) U+0313 + [SHIFT K_BKSP] > nul
 any(x)        U+030c + [K_BKSP] > nul
+any(x)        U+030c + [SHIFT K_BKSP] > nul
