@@ -43,56 +43,65 @@ any(x)        U+030c + [K_BKSP] > nul
 any(x)        U+030c + [SHIFT K_BKSP] > nul
 
 c Physical keyboard layout
+c Note: the physical layout behaves differently than the longpress mobile
+c layout.
 c See: https://makahmuseum.com/makah-keyboard/#:~:text=Remapped%20key%20sequences
 group(hardware) using keys
+c Default layer
 + [K_BKQUOTE]            > 'ḥ'
-+ [SHIFT K_BKQUOTE]      > 'Ḥ'
-+ [RALT K_BKQUOTE]       > '`'
-+ [SHIFT RALT K_BKQUOTE] > '~'
-+ [K_1]                  > '!'
-+ [RALT K_1]             > '1'
-+ [K_2]                  > 'ʷ'
-+ [SHIFT RALT K_1]       > '!'
-+ [RALT K_2]             > '2'
-+ [SHIFT RALT K_2]       > '@'
-+ [K_3]                  > 'š'
-+ [SHIFT K_3]            > 'Š'
-+ [RALT K_3]             > '3'
-+ [SHIFT RALT K_3]       > '#'
-+ [K_4]                  > 'č'
-+ [SHIFT K_4]            > 'Č'
-+ [RALT K_4]             > '4'
-+ [SHIFT RALT K_4]       > '$'
-+ [K_5]                  > 'ƛ'
-+ [RALT K_5]             > '5'
-+ [K_6]                  > 'ŋ'
-+ [RALT K_6]             > '6'
-+ [K_7]                  > 'x' U+030C
-+ [SHIFT K_7]            > 'X' U+030C
-+ [RALT K_7]             > '7'
-+ [RALT K_7]             > '&'
-+ [K_8]                  > 'ɫ'
-+ [SHIFT K_8]            > 'Ɫ'
-+ [RALT K_8]             > '8'
-+ [SHIFT RALT K_8]       > '*'
-+ [K_9]                  > 'Ɂ'
-+ [RALT K_9]             > '9'
 + [K_0]                  > '°'
++ [K_1]                  > '!'
++ [K_2]                  > 'ʷ'
++ [K_3]                  > 'š'
++ [K_4]                  > 'č'
++ [K_5]                  > 'ƛ'
++ [K_6]                  > 'ŋ'
++ [K_7]                  > 'x' U+030C
++ [K_8]                  > 'ɫ'
++ [K_9]                  > 'Ɂ'
++ [K_LBRKT]              > '‘'
++ [K_RBRKT]              > '’'
++ [K_COLON]              > '·'
++ [K_QUOTE]              > U+0313
+
+c Shift layout
++ [SHIFT K_BKQUOTE]      > 'Ḥ'
++ [SHIFT K_3]            > 'Š'
++ [SHIFT K_4]            > 'Č'
++ [SHIFT K_7]            > 'X' U+030C
++ [SHIFT K_8]            > 'Ɫ'
++ [SHIFT K_LBRKT]        > '“'
++ [SHIFT K_RBRKT]        > '”'
+
+c Alt layout
++ [RALT K_BKQUOTE]       > '`'
 + [RALT K_0]             > '0'
++ [RALT K_1]             > '1'
++ [RALT K_2]             > '2'
++ [RALT K_3]             > '3'
++ [RALT K_4]             > '4'
++ [RALT K_5]             > '5'
++ [RALT K_6]             > '6'
++ [RALT K_7]             > '&'
++ [RALT K_7]             > '7'
++ [RALT K_8]             > '8'
++ [RALT K_9]             > '9'
 + [RALT K_HYPHEN]        > '«'
 + [RALT K_EQUAL]         > '»'
-+ [K_LBRKT]              > '‘'
-+ [SHIFT K_LBRKT]        > '“'
 + [RALT K_LBRKT]         > '['
-+ [SHIFT RALT K_LBRKT]   > '{'
-+ [K_RBRKT]              > '’'
-+ [SHIFT K_RBRKT]        > '”'
 + [RALT K_RBRKT]         > ']'
-+ [SHIFT RALT K_RBRKT]   > '}'
-+ [K_COLON]              > '·'
 + [RALT K_COLON]         > ';'
-+ [K_QUOTE]              > U+0313
 + [RALT K_QUOTE]         > '‘'
+
+c Alt+Shift layout
++ [SHIFT RALT K_1]       > '!'
++ [SHIFT RALT K_2]       > '@'
++ [SHIFT RALT K_3]       > '#'
++ [SHIFT RALT K_4]       > '$'
++ [SHIFT RALT K_8]       > '*'
++ [SHIFT RALT K_BKQUOTE] > '~'
++ [SHIFT RALT K_LBRKT]   > '{'
++ [SHIFT RALT K_RBRKT]   > '}'
 
 c Backspacing x̌ should remove entire grapheme cluseter (copy-pasted from mobile)
 any(x) U+030c + [K_BKSP] > nul
