@@ -2,7 +2,7 @@
 store(&VERSION) '10.0'
 store(&NAME) 'Makah'
 store(&COPYRIGHT) '2021 © National Research Council Canada'
-store(&TARGETS) 'mobile'
+store(&TARGETS) 'mobile desktop tablet'
 store(&LAYOUTFILE) 'nrc_makah.keyman-touch-layout'
 store(&MESSAGE) 'On behalf of the Makah Cultural & Research Center'
 store(&KEYBOARDVERSION) '1.0'
@@ -12,7 +12,11 @@ store(ejective) 'cčkptƛqCČKPTQ'
 
 begin Unicode > use(main)
 
-group(main) using keys
+group(main)
+ platform('hardware') > use(hardware)
+ nomatch > use(mobile)
+
+group(mobile) using keys
 + [T_XSH]         > 'x' U+030C
 + [SHIFT T_XSH]   > 'X' U+030C
 
@@ -32,8 +36,60 @@ c Add ejective diacritic to certain consonants:
 + [T_TEJ]         > 't' U+0313
 + [SHIFT T_TEJ]   > 'T' U+0313
 
-c Backspace deletes both diacritic AND base character:
+c Backspace [ON MOBILE-ONLY!] deletes both diacritic AND base character:
 any(ejective) U+0313 + [K_BKSP] > nul
 any(ejective) U+0313 + [SHIFT K_BKSP] > nul
 any(x)        U+030c + [K_BKSP] > nul
 any(x)        U+030c + [SHIFT K_BKSP] > nul
+
+c Physical keyboard layout
+c See: https://makahmuseum.com/makah-keyboard/#:~:text=Remapped%20key%20sequences
+group(hardware) using keys
++ [K_BKQUOTE]            > 'ḥ'
++ [SHIFT K_BKQUOTE]      > 'Ḥ'
++ [RALT K_BKQUOTE]       > '`'
++ [SHIFT RALT K_BKQUOTE] > '~'
++ [K_1]                  > '!'
++ [RALT K_1]             > '1'
++ [K_2]                  > 'ʷ'
++ [SHIFT RALT K_1]       > '!'
++ [RALT K_2]             > '2'
++ [SHIFT RALT K_2]       > '@'
++ [K_3]                  > 'š'
++ [SHIFT K_3]            > 'Š'
++ [RALT K_3]             > '3'
++ [SHIFT RALT K_3]       > '#'
++ [K_4]                  > 'č'
++ [SHIFT K_4]            > 'Č'
++ [RALT K_4]             > '4'
++ [SHIFT RALT K_4]       > '$'
++ [K_5]                  > 'ƛ'
++ [RALT K_5]             > '5'
++ [K_6]                  > 'ŋ'
++ [RALT K_6]             > '6'
++ [K_7]                  > 'x' U+030C
++ [SHIFT K_7]            > 'X' U+030C
++ [RALT K_7]             > '7'
++ [RALT K_7]             > '&'
++ [K_8]                  > 'ɫ'
++ [SHIFT K_8]            > 'Ɫ'
++ [RALT K_8]             > '8'
++ [SHIFT RALT K_8]       > '*'
++ [K_9]                  > 'Ɂ'
++ [RALT K_9]             > '9'
++ [K_0]                  > '°'
++ [RALT K_0]             > '0'
++ [RALT K_HYPHEN]        > '«'
++ [RALT K_EQUAL]         > '»'
++ [K_LBRKT]              > '‘'
++ [SHIFT K_LBRKT]        > '“'
++ [RALT K_LBRKT]         > '['
++ [SHIFT RALT K_LBRKT]   > '{'
++ [K_RBRKT]              > '’'
++ [SHIFT K_RBRKT]        > '”'
++ [RALT K_RBRKT]         > ']'
++ [SHIFT RALT K_RBRKT]   > '}'
++ [K_COLON]              > '·'
++ [RALT K_COLON]         > ';'
++ [K_QUOTE]              > U+0313
++ [RALT K_QUOTE]         > '‘'
