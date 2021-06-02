@@ -1,22 +1,24 @@
-﻿c 1.1 - simplification of code and user interface; to pair with updated lexical model
+﻿c 1.2 corrections to touch layout; prepare for release
 c 
-c 1.0 - Cook Islands Maori keyboard initial version
+c 1.1 - simplification of code and user interface; to pair with updated lexical model
+c 
+c 1.0 - Cook Islands Māori keyboard initial version
 
 store(&VERSION) '10.0'
-store(&NAME) 'CIM'
+store(&NAME) 'Cook Islands Māori'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'cim.kvks'
 store(&BITMAP) 'cim.ico'
 store(&LAYOUTFILE) 'cim.keyman-touch-layout'
 store(&COPYRIGHT) '© 2020-2021 Yuri Oh and Victoria Quint'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 
 begin Unicode > use(main)
 
 group(main) using keys
-+ [K_BKQUOTE] > dk(macron)
++ [K_BKQUOTE] > '`'
 
-+ [K_HYPHEN] > U+0027
++ [K_HYPHEN] > '-'
 + [K_0] > '0'
 + [K_9] > '9'
 + [K_8] > '8'
@@ -353,11 +355,17 @@ group(main) using keys
 + [SHIFT ALT K_oE2] > U+00b1
 
 
+begin Unicode > use(main)
+
+group(main) using keys
+
+platform('touch') " " + " " > ". "
+platform('touch') ". " + " " > "  "
+
 match > use(deadkeys)
 
 group(deadkeys)
 
-c I don't think we need any of the below code as those combos aren't in CIM. will see what Ake wants
 store(dkf00b4) U+0020 U+0061 U+0041 U+0063 U+0043 U+0065 U+0045 U+0069 U+0049 U+006c U+004c U+006e U+004e U+006f U+004f U+0072 U+0052 U+0073 U+0053 U+0075 U+0055 U+0079 U+0059 U+007a U+005a
 store(dkt00b4) U+00b4 U+00e1 U+00c1 U+0107 U+0106 U+00e9 U+00c9 U+00ed U+00cd U+013a U+0139 U+0144 U+0143 U+00f3 U+00d3 U+0155 U+0154 U+015b U+015a U+00fa U+00da U+00fd U+00dd U+017a U+0179
 dk(00b4) any(dkf00b4) > index(dkt00b4, 2)
