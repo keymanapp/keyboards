@@ -32,10 +32,6 @@ c Add ejective diacritic to certain consonants:
 + [T_TEJ]         > 't' U+0313
 + [SHIFT T_TEJ]   > 'T' U+0313
 
-c There is no capital ŋ!
-+ [T_ENG]         > 'ŋ' 
-+ [SHIFT T_ENG]   > 'ŋ' 
-
 c Backspace deletes both diacritic AND base character:
 any(ejective) U+0313 + [K_BKSP] > nul
 any(ejective) U+0313 + [SHIFT K_BKSP] > nul
