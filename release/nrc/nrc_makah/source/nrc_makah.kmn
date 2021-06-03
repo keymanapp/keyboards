@@ -12,14 +12,11 @@ store(ejective) 'cčkptƛqCČKPTQ'
 
 begin Unicode > use(main)
 
-group(main)
- platform('hardware') > use(hardware)
- nomatch > use(mobile)
+group(main) using keys
 
-group(mobile) using keys
+c Mobile (touch) layout
 + [T_XSH]         > 'x' U+030C
 + [SHIFT T_XSH]   > 'X' U+030C
-
 c Add ejective diacritic to certain consonants:
 + [T_CEJ]         > 'c' U+0313
 + [SHIFT T_CEJ]   > 'C' U+0313
@@ -36,16 +33,10 @@ c Add ejective diacritic to certain consonants:
 + [T_TEJ]         > 't' U+0313
 + [SHIFT T_TEJ]   > 'T' U+0313
 
-c Backspace [ON MOBILE-ONLY!] deletes both diacritic AND base character:
-any(ejective) U+0313 + [K_BKSP] > nul
-any(ejective) U+0313 + [SHIFT K_BKSP] > nul
-any(x)        U+030c + [K_BKSP] > nul
-any(x)        U+030c + [SHIFT K_BKSP] > nul
 
 c Physical keyboard layout
 c Note: the physical layout behaves differently than the mobile layout.
 c See: https://makahmuseum.com/makah-keyboard/#remapped-key-sequences
-group(hardware) using keys
 c Default layer
 + [K_BKQUOTE]            > 'ḥ'
 + [K_1]                  > '!'
@@ -116,6 +107,12 @@ c Alt+Shift layout
 + [SHIFT RALT K_PERIOD]  > '>'
 + [SHIFT RALT K_SLASH]   > '?'
 
-c Backspacing x̌ should remove entire grapheme cluseter (copy-pasted from mobile)
-any(x) U+030c + [K_BKSP] > nul
-any(x) U+030c + [SHIFT K_BKSP] > nul
+
+c Backspace on mobile deletes both diacritic AND base character:
+c This differs from the hardware layout that treats ◌̓ as a unit, separate from
+c the character it attaches to.
+platform('touch') any(ejective) U+0313 + [K_BKSP] > nul
+platform('touch') any(ejective) U+0313 + [SHIFT K_BKSP] > nul
+c Delete x̌/X̌ as if it's a composed character (both on physical + touch layout)
+any(x)        U+030c + [K_BKSP] > nul
+any(x)        U+030c + [SHIFT K_BKSP] > nul
