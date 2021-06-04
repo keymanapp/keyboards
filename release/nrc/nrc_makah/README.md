@@ -24,6 +24,11 @@ Supported Platforms
  * Android phone
  * Android tablet
  * Mobile devices
+ * Windows
+ * Linux
+ * MacOS
+ * Web
+ * Mobile Web
 
 Acknowledgments
 ---------------
