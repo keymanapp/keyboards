@@ -1,12 +1,13 @@
 <?php 
   $pagename = 'Krung Keyboard Help';
   $pagetitle = 'Krung Keyboard Help';
+  $pagestyle = <<<END
+  table, td, th { border: 1px solid black; text-align: center;}
+  table { border-collapse: collapse; }
+END;
   require_once('header.php');
-
-
 ?>
 
-<h1>Krung Keyboard</h1>
 <p>
     This is a romanized Keyman keyboard for Krung language spoken as an ethnic minority language in Cambodia.
 </p>
@@ -18,7 +19,7 @@ others are automatically converted to their corresponding counterparts depending
 language uses Khmer characters for their writing. Unicode codepoints and names
 are given for your information.
 </p>
-<table style="width:80%" border="1">
+<table>
   <tr>
    <td rowspan="2" ><strong>Key</strong>
    </td>
@@ -328,7 +329,7 @@ are given for your information.
 </table>
 <h2>Vowel</h2>
 <h3>The table below shows the output of vowels when typed after a consonant or a consonant cluster.</h3>
-<table style="width:80%" border="1">
+<table>
   <tr>
    <td rowspan="2" ><strong>Key</strong>
    </td>
@@ -570,7 +571,7 @@ U+179C : KHMER LETTER VO
   </tr>
 </table>
 <h3>The table below shows the output of vowels when typed in isolation.</h3>
-<table style="width:20%" border="1">
+<table>
   <tr>
    <td rowspan="2" ><strong>Key</strong>
    </td>
@@ -774,7 +775,7 @@ consonant and then the vowel you desire. Here are some exmaples:
 - khv > ឃឹ<br>
 ...etc
 </p>
-<table style="width:50%" border="1">
+<table>
   <tr>
    <td>
    </td>
@@ -1501,7 +1502,7 @@ consonant and then the vowel you desire. Here are some exmaples:
 To type a consonant cluster, you may type the first member of the cluster
 followed by the second member.
 </p>
-<table style="width:50%" border="1">
+<table>
   <tr>
    <td><strong>Key</strong>
    </td>
@@ -1563,7 +1564,7 @@ are underlined.
 </li>
 </ul>
 <h2>Numerals and Signs</h2>
-<table style="width:400px" border="1">
+<table>
   <tr>
    <td><strong>Key</strong>
    </td>
@@ -1613,7 +1614,7 @@ are underlined.
    </td>
   </tr>
 </table>
-<table style="width:400px" border="1">
+<table>
   <tr>
    <td><strong>Key</strong>
    </td>
@@ -1658,5 +1659,4 @@ are underlined.
   </tr>
 </table>
 
-<p>For more examples, please refer to the documentation on Romanization of Krung here:</p>
-<iframe align="middle" src="krung_romanization.pdf" width="80%" height="500px">
+<p>For more examples, please refer to the documentation on Romanization of Krung <a href="krung_romanization.pdf" target="_blank">here.</a></p>
