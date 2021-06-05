@@ -207,8 +207,8 @@ group(main) using keys
 + [CAPS K_N] > U+004e
 + [NCAPS SHIFT K_N] > U+004e
 + [CAPS SHIFT K_N] > U+006e
-+ [NCAPS ALT K_N] > dk(007e)
-+ [NCAPS SHIFT ALT K_N] > U+02dc
++ [NCAPS ALT K_N] > U+00D1
++ [NCAPS SHIFT ALT K_N] > U+00F1
 
 + [NCAPS K_O] > U+006f
 + [CAPS K_O] > U+004f
@@ -336,8 +336,8 @@ group(main) using keys
 
 + [K_BKQUOTE] > U+0060
 + [SHIFT K_BKQUOTE] > U+007e
-+ [ALT K_BKQUOTE] > dk(0060)
-+ [SHIFT ALT K_BKQUOTE] > U+0060
++ [ALT K_BKQUOTE] > U+0060
++ [SHIFT ALT K_BKQUOTE] > U+007e
 
 + [K_RBRKT] > U+005d
 + [SHIFT K_RBRKT] > U+007d
@@ -359,17 +359,7 @@ group(main) using keys
 platform('touch') " " + " " > ". "
 platform('touch') ". " + " " > "  "
 
-match > use(deadkeys)
 
-group(deadkeys)
-
-store(dkf007e) U+0020 U+0061 U+0041 U+0069 U+0049 U+006e U+004e U+006f U+004f U+0075 U+0055
-store(dkt007e) U+007e U+00e3 U+00c3 U+0129 U+0128 U+00f1 U+00d1 U+00f5 U+00d5 U+0169 U+0168
-dk(007e) any(dkf007e) > index(dkt007e, 2)
-
-store(dkf0060) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055
-store(dkt0060) U+0060 U+00e0 U+00c0 U+00e8 U+00c8 U+00ec U+00cc U+00f2 U+00d2 U+00f9 U+00d9
-dk(0060) any(dkf0060) > index(dkt0060, 2)
 
 
 
