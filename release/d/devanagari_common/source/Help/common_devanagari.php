@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+  $pagename = 'WIn Publishing Trust Common Devanagari Keyboard Help';
+  $pagetitle = 'WIn Publishing Trust Common Devanagari Keyboard Help';
+  require_once('header.php');
+?>
+ <style>
 
-<head>
-    <meta charset="utf-8" />
-    <title>WIn Publishing Trust Common Devanagari Keyboard help.</title>
-  
         html, body {
             font-family: sans-serif;
-            font-size: 90%;
+            font-size: 100%;
         }
         samp {
             font-family: sans-serif; 
@@ -22,7 +22,6 @@
             margin:2px 1px; 
             padding:2px 3px; 
             -webkit-border-radius: 3px; 
-			
             -moz-border-radius: 3px; 
             border-radius: 3px;
         }
@@ -31,7 +30,7 @@
         /* Table */
         .inputSequences {
             border-collapse: collapse;
-            font-size: 12px;
+            font-size: 14px;
             min-width: 592px;
         }
 
@@ -72,7 +71,7 @@
 
         /* Table Footer */
         /* 
-         .inputSequences tfoot th {
+            .inputSequences tfoot th {
             border-top: 2px solid #6ea1cc;
             text-align: right;
         } 
@@ -85,22 +84,14 @@
 <body>
     <h1>WIn Publishing Trust Common Devanagari Keyboard help.</h1>
 
-    <p>This Common Devanagari keyboard layout designed by WIn Publishing Trust in 2021. Keyboard is designed for Hindi Typing. Keyboard keys are laid out based on Full deva winscript and Hindi winscript..</p>
+    <p>This Common Devanagari keyboard layout designed by WIn Publishing Trust in 2021. Keyboard is designed for Hindi Typing. Keyboard keys are laid out based on Full deva winscript and Hindi winscript. </p>
 
     <h2>Keyboard layout</h2>
 
     
-    </tbody>
-	<p>1.Normal view </p>
-	<p><img src="Hindi1.jpg" alt="image" height="230" width="590" > </img></p>
-	<p>2. Shift view (Press Shift key)</p>
-	<p><img src="Hindi2.jpg" alt="image" height="230" width="590" > </img></p>
-	<p>3. RightAlt view (Press RightAlt key)</p>
-	<p><img src="Hindi3.jpg" alt="image" height="230" width="590" > </img></p>
-	<p>4. RightAlt + SHIFT view (Press RightAlt + SHIFT key)</p>
-	<p><img src="Hindi4.jpg" alt="image" height="230" width="590" > </img></p>
-	
-    <h2>Input sequences</h2>
+   <p><img src="Hindi1.jpg" alt="image" height="230" width="590" > </img></p>
+       
+ <h2>Input sequences</h2>
     	
 	 <table class="inputSequences">
 	 <h3>Special cases</h3>
@@ -111,126 +102,188 @@
             <tr>
                 <th>Keys</th>
                 <th>Character</th>
-                <th>Keys</th>
-                <th>Character</th>              
+              
           </tr>
         </thead>
         <tbody>
             <tr>
-			     <td><kbd>`</kbd><kbd>b</kbd>  </td>
-                <td>ॿ</td>
-                 <td><kbd>k</kbd><kbd>k</kbd>  </td>
-                <td>क़</td> 
+                <td><kbd>`</kbd><kbd>y</kbd> </td>
+                <td>ॺ</td>
                 
             </tr>
             <tr>
                 <td><kbd>`</kbd><kbd>g</kbd>  </td>
                 <td>ॻ</td>
-				<td><kbd>j</kbd><kbd>x</kbd>/<kbd>w</kbd> </td>
-                <td>ज्ञ</td>
                 
             </tr>
             <tr>
                 <td><kbd>`</kbd><kbd>j</kbd>  </td>
                 <td>ॼ</td>
-			    <td><kbd>k</kbd><kbd>x</kbd><kbd>Z</kbd> </td>
-                <td>क्ष</td>
                 
             </tr>
             <tr>
                 <td><kbd>`</kbd><kbd>[</kbd>  </td>
                 <td>ॾ</td>
-				<td><kbd>`</kbd><kbd>y</kbd> </td>
-                <td>ॺ</td>
                 
             </tr>
-
+			 <tr>
+               <td><kbd>`</kbd><kbd>b</kbd>  </td>
+                <td>ॿ</td>
+               
+            </tr>
 			 <tr>
                 <td><kbd>L</kbd><kbd>L</kbd>  </td>
                 <td>ऴ</td>
-				<td><kbd>K</kbd><kbd>K</kbd>  </td>
-				<td>ख़</td>
-			               
+                
             </tr>
 			 <tr>
                 <td><kbd>r</kbd><kbd>r</kbd>  </td>
                 <td>ऱ</td>
-                <td><kbd>M</kbd><kbd>M</kbd>  </td>
-                <td>ॱ</td>               
+                
             </tr>
 			 <tr>
                 <td><kbd>[</kbd><kbd>[</kbd>  </td>
                 <td>ड़</td>
-                <td><kbd>q</kbd><kbd>q</kbd>  </td>
-                <td>॰</td>
-                              
+                
             </tr>
 			 <tr>
                 <td><kbd>j</kbd><kbd>j</kbd>  </td>
                 <td>ज़</td>
-                <td><kbd>|</kbd><kbd>`</kbd>  </td>
-                <td>.</td>               
+                
             </tr>
 			 <tr>
                 <td><kbd>g</kbd><kbd>g</kbd>  </td>
                 <td>ग़</td>
-                <td><kbd>|</kbd><kbd>`</kbd><kbd>`</kbd> </td>
-                <td>...</td>               
+                
             </tr>
 			
 			 <tr>
                 <td><kbd>{</kbd><kbd>{</kbd>  </td>
                 <td>ढ़</td>
-                  <td><kbd>-</kbd><kbd>`</kbd>  </td>
-                <td>—</td>            
+                
             </tr>
 			 <tr>
                 <td><kbd>P</kbd><kbd>P</kbd>  </td>
                 <td>फ़</td>
-				 <td><kbd>S</kbd><kbd>S</kbd>  </td>
-                 <td>ॐ</td>
                 
-              
             </tr>
 			 <tr>
                 <td><kbd>y</kbd><kbd>y</kbd>  </td>
                 <td>य़</td>
-                <td><kbd>Ralt+j</kbd>  </td>
-                <td>ॹ </td>
-			
-            </tr>
- <tr>
-               <td><kbd> Ralt+d</kbd>  </td>
-                <td>ॸ</td>				
-               <td><kbd>RAlt + ^</kbd> </td>
-                <td>ॠ </td>               
-            </tr>
-			 <tr>
-			    <td><kbd>RAlt + -</kbd> </td>
-                <td>ॡ </td>  
-
-               <td><kbd>Ralt + o</kbd> </td>
-                <td>ॳ</td>                
-            </tr>
-			 <tr>
-                <td><kbd>RAlt + A</kbd> </td>
-                <td>ॲ</td> 
-               <td><kbd>RAlt + O</kbd> </td>
-                <td>ॴ </td>				
                 
+            </tr>
+			 <tr>
+                <td><kbd>k</kbd><kbd>k</kbd>  </td>
+                <td>क़</td>
+                
+            </tr>
+			 <tr>
+                <td><kbd>K</kbd><kbd>K</kbd>  </td>
+                <td>ख़</td>
+                
+            </tr>
+			
+            <tr>
+               <td><kbd>Ralt+j</kbd>  </td>
+                <td>ॹ </td>
+                
+            </tr>
            
+           
+            <tr>
+               <td><kbd>j</kbd><kbd>x</kbd>/<kbd>w</kbd> </td>
+                <td>ज्ञ</td>
+               
+            </tr>
+            <tr>
+                <td><kbd>k</kbd><kbd>x</kbd><kbd>Z</kbd> </td>
+                <td>क्ष</td>
+                
+            </tr>
+			 <tr>
+                <td><kbd> Ralt+d</kbd>  </td>
+                <td>ॸ</td>
+                
+            </tr>
+           
+				
+				<tr>
+               <td><kbd>RAlt + ^</kbd> </td>
+                <td>ॠ </td>
+               
+            </tr>
+			<tr>
+               <td><kbd>S</kbd><kbd>S</kbd>  </td>
+                <td>ॐ</td>
+				
+			</tr>
+			
+               
+            <tr>
+               <td><kbd>M</kbd><kbd>M</kbd>  </td>
+                <td>ॱ</td>
+               
+            </tr>
+			<tr>
+               <td><kbd>q</kbd><kbd>q</kbd>  </td>
+                <td>॰</td>
+               
+            </tr>
+			<tr>
+               <td><kbd>|</kbd><kbd>`</kbd>  </td>
+                <td>.</td>
+               
+            </tr>
+			<tr>
+               <td><kbd>|</kbd><kbd>`</kbd><kbd>`</kbd> </td>
+                <td>...</td>
+               
+            </tr>
+			<tr>
+               <td><kbd>-</kbd><kbd>`</kbd>  </td>
+                <td>—</td>
+               
+            </tr>
+			
+			<tr>
+               <td><kbd>RAlt + A</kbd> </td>
+                <td>ॲ</td>
+               
+			
+				<tr>
+               <td><kbd>RAlt + -</kbd> </td>
+                <td>ॡ </td>
+               
+            </tr>
+			<tr>
+               <td><kbd>Ralt + o</kbd> </td>
+                <td>ॳ</td>
+               
+            </tr>
+			<tr>
+               <td><kbd>RAlt + O</kbd> </td>
+                <td>ॴ </td>
+               
+            </tr>
 			<tr>
                <td><kbd>Ralt + w</kbd> </td>
                 <td>ॵ</td>
-                <td><kbd>Ralt + u </kbd> </td>
-                <td>ॶ</td>              
+               
+            </tr><tr>
+               <td><kbd>Ralt + u </kbd> </td>
+                <td>ॶ</td>
+               
             </tr>
 			<tr>
                <td><kbd>RAlt+ |</kbd> </td>
                 <td>ॎ</td>
-                <td><kbd>Ralt+e</kbd> </td>
-                <td>ॕ</td>              
-            </tr>	   
+               
+            </tr>
+			<tr>
+               <td><kbd>Ralt+e</kbd> </td>
+                <td>ॕ</td>
+            </tr>
+			   
 			<tr>
                 <td><kbd>x</kbd>  </td>
                 <td>्</td>            
@@ -238,8 +291,7 @@
 			
         </tbody>
     </table>
-
-     <table class="inputSequences">
+ <table class="inputSequences">
 	 <h3>Vowels</h3>
 	 
 	 
@@ -295,16 +347,13 @@
 	<p>•    A non-joined conjunct is typed by pressing <kbd>X</kbd> between any consonants. e.g:  <kbd>n</kbd><kbd>X</kbd><kbd>n</kbd> will generate <samp>न्‌न </samp> </p>
 	
 	<h3>Dependent/Independent Vowels</h3>
-
+ 
     <p>The keyboard will normally produce independent vowels, except after consonants, when it will produce independent vowels. </p>
 	    Eg:<kbd>i</kbd> ➔ <kbd>इ</kbd> vowel after consonants Eg:<kbd>g</kbd><kbd>i</kbd> will generate <samp>गि </samp>             
     
     
-	<p>•    To force an independent vowel after a consonant, press <kbd>A</kbd> after the consonant. Eg: <kbd>g</kbd><kbd>A</kbd><kbd>i</kbd> will generate<samp>गइ </samp>	
+	<p> •    To force an independent vowel after a consonant, press <kbd>A</kbd> after the consonant.      Eg:      <kbd>g</kbd><kbd>A</kbd><kbd>i</kbd> will generate<samp>गइ </samp>	</p>
     
     
-</body>
-
-</html>
-
+ </body>
 
