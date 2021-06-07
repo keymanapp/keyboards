@@ -3,7 +3,7 @@ Makah (Qʷi·qʷi·diččaq) Keyboard
 
 © 2021 National Research Council Canada
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
