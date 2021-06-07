@@ -2,7 +2,7 @@
 c with name "ahom_star"
 c Language Ahom
 store(&VERSION) '10.0'
-store(&COPYRIGHT) '©HemantaGogoi Ngi Mon'
+store(&COPYRIGHT) '© 2021 HemantaGogoi Ngi Mon'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'ahom_star.kvks'
@@ -11,11 +11,21 @@ store(&MESSAGE) 'New vesrsion of Ahom keyboard'
 store(&KMW_HELPTEXT) 'Ahom Unicode'
 store(&BITMAP) 'ahom_star.ico'
 store(&KMW_HELPFILE) 'ahom_star-help.htm'
-store(&NAME) 'ahom_star'
+store(&NAME) 'Ahom Star'
 
 begin Unicode > use(main)
 
 group(main) using keys
++ [K_PERIOD] > '.'
++ [K_HYPHEN] > '-'
++ [K_EQUAL] > '='
++ [K_COMMA] > ','
++ [K_SLASH] > '/'
++ [K_QUOTE] > U+0027
++ [K_COLON] > ';'
++ [K_BKSLASH] > '\'
++ [K_RBRKT] > ']'
++ [K_LBRKT] > '['
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_COMMA] > '<'
@@ -96,3 +106,21 @@ group(main) using keys
 + [K_3] > '𑜳'
 + [K_2] > '𑜲'
 + [K_1] > '𑜱'
+
+c nulify the unused keys
++ [SHIFT K_Y] > nul
++ [SHIFT K_S] > nul
++ [SHIFT K_F] > nul
++ [SHIFT K_C] > nul
+
+c arabic numeral
+'#' + [K_0] > '0'
+'#' + [K_9] > '9'
+'#' + [K_8] > '8'
+'#' + [K_7] > '7'
+'#' + [K_6] > '6'
+'#' + [K_5] > '5'
+'#' + [K_4] > '4'
+'#' + [K_3] > '3'
+'#' + [K_2] > '2'
+'#' + [K_1] > '1'
