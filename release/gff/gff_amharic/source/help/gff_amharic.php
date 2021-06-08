@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    22 Jan 2020
+  Modified Date:    11 Apr 2021
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -184,6 +184,10 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 2.1, 11 Apr 2021</dt>
+  <dd>CSS Colored keys.</dd>
+  <dt>Version 2.0, 1 Dec 2020</dt>
+  <dd>Addition of new style touch keyboard.</dd>
   <dt>Version 1.9, 22 Jan 2020</dt>
   <dd>Package migration to Abyssinica SIL 2.000</dd>
   <dt>Version 1.8, 9 Mar 2019</dt>

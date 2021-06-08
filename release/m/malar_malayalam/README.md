@@ -1,9 +1,9 @@
 Malar Malayalam Keyboard
 ==============
 
-2019-2020 © Ramesh Kunnappully
+2019-2021 © Ramesh Kunnappully
 
-Version 1.3
+Version 1.4
 
 Description
 -----------
@@ -12,7 +12,9 @@ Description
 
 Links
 -----
-https://keyman.com/keyboards/malar_malayalam
+ * Keyboard Home : https://keyman.com/keyboards/malar_malayalam/
+ * Keyboard Help : https://help.keyman.com/keyboard/malar_malayalam/
+ * Keyboard Demo : https://malarproject.gitlab.io/ml/
 
 Supported Platforms
 -------------------
