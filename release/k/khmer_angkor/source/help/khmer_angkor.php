@@ -337,7 +337,7 @@ divination lore and Khmer lunar dates.</p>
 
 <p class=MsoNormal><img width=602 height=643
 src="khmer_angkor/image001.png"></p>
-<p class=MsoNormal><img width=602 height=643
+<p class=MsoNormal><img width=602
 src="khmer_angkor/image002.png"></p>
 
 <h2 style='margin-left:.5in'><a name="_Toc515267264">Touch Layout –Android/iOS</a></h2>
