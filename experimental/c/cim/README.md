@@ -1,14 +1,9 @@
-CIM keyboard
+Cook Islands Maori keyboard
 ==============
 
 © 2020-2021 Yuri Oh and Victoria Quint
 
-Version 1.1
-
-Integrated keystrokes for macrons, Saltillo, and 'okina.
------------
-
-Version 1.0
+Version 1.2
 
 Description
 -----------
