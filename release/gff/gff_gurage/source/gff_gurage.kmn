@@ -58,8 +58,8 @@ store(sebatbeitY) 'yY'
 c ---------------------End Maps of Sebatbeit Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)   'aAuUiIeEoO'[T_HAMIS]
-  store(loneVowelEthio)  'ኣዓኡዑኢዒእዕኦዖኤ'
+  store(loneVowelKeys)   [T_GEEZ]'aAuUiIeEoO'[T_HAMIS]
+  store(loneVowelEthio)  'አኣዓኡዑኢዒእዕኦዖኤ'
   store(composableVowel) 'ኢእዒዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
@@ -89,7 +89,7 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(ግዕዝ-key) 'eE' c 'äÄéÉèÈêÊëË'
+  store(ግዕዝ-key) 'eE'[T_GEEZ] c 'äÄéÉèÈêÊëË'
   store(ካዕብ-key) 'uU' c 'ùÙúÚûÛüÜ'
   store(ሣልስ-key) 'iI' c ìÌíÍîÎïÏ'
   store(ራብዕ-key) 'aA' c 'àÀáÁâÂãÃåÅ'
