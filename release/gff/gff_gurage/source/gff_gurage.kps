@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.265.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -115,12 +115,6 @@
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>GurageZebidar-Regular.ttf</Name>
-      <Description>Font Gurage Zebidar Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>GurageNotoSerifEthiopic-Regular.ttf</Name>
       <Description>Font Gurage Noto Serif Ethiopic Regular</Description>
       <CopyLocation>0</CopyLocation>
@@ -144,14 +138,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ጉራጌ (Gurage)</Name>
       <ID>gff_gurage</ID>
       <Version>0.8</Version>
-      <OSKFont>GurageZebidar-Regular.ttf</OSKFont>
-      <DisplayFont>GurageZebidar-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="sgw-Ethi">Sebat Bet Gurage</Language>
       </Languages>

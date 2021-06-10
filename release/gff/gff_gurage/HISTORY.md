@@ -1,8 +1,9 @@
 # ጉራጊና (Gurage) Change History
 
-## 2021-03-21 0.8
+## 2021-06-09 0.8
 * Update for Ethiopic Extended-B block from Unicode 14
 * Guage Wookianos added.
+* Abyssinica SIL v2.1 replaces Gurage Zebidar
 
 ## 2020-10-25 0.7
 * Updates to sync with the Gurage Legacy keyboard.
