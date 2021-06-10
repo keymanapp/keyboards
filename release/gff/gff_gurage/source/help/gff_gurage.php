@@ -114,12 +114,6 @@ SIL <a href="http://scripts.sil.org/OFL">Open Font License</a> (OFL):
   <a href="https://github.com/googlefonts/noto-fonts">Noto Serif Ethiopic</a> font.
   See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageNotoSerifEthiopic.txt">FONTLOG</a>) for details.
   </dd>
-
-  <dt><strong>Gurage Zebidar</strong></dt>
-  <dd>The Gurage Zebidar font had previously been released under the name "Zebidar" and is derived
-  from the <a href="https://software.sil.org/abyssinica/">Abyssinica SIL 2.0</a> typeface.
-  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageZebidar.txt">FONTTLOG</a> for details.
-  </dd>
 </dl>
 
 
