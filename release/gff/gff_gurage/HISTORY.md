@@ -2,7 +2,7 @@
 
 ## 2021-06-09 0.8
 * Update for Ethiopic Extended-B block from Unicode 14.
-* The Guage Wookianos font added from the "Gurage Font Collection".
+* The Gurage Wookianos font added from the "Gurage Font Collection".
 * Abyssinica SIL v2.1 replaces Gurage Zebidar.
 
 ## 2020-10-25 0.7
