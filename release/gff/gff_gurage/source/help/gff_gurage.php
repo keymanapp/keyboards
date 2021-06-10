@@ -1,6 +1,6 @@
 <?php 
   $pagename = "GFF Gurage";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Ge&rsquo;ez Language";
+  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for the Gurage Language";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
