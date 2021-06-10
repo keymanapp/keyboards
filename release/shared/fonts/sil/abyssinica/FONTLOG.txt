@@ -19,12 +19,11 @@ Ethiopic-based writing system. In addition, there is provision for other
 Latin characters and symbols. This font makes use of state-of-the-art font
 technologies to support the need to position arbitrary combinations of 
 *Ethiopic* base glyphs and combining marks optimally. It also supports
-almost 200 kerning pairs. This version of the font also supports Stylistic
-Sets and Character Variants (OpenType) or Features (Graphite) which make 
-glyph alternates available for a number of Ethiopic and punctuation 
-characters. See the AbyssinicaSILOpenTypeFontFeatures.pdf, 
-AbyssinicaSILGraphiteFontFeatures.pdf and AbyssinicaSILTypeTunerGuide.pdf
-for details on applications which support Stylistic Sets and how to access them.
+almost 200 kerning pairs. This version of the font also supports Character 
+Variants (OpenType) or Features (Graphite) which make glyph alternates 
+available for a number of Ethiopic and punctuation characters. See the 
+AbyssinicaSILFontFeatures.pdf, for details on applications which support 
+Character Variants and how to access them.
 
 One font from this typeface family is included in this release:
 
@@ -56,6 +55,13 @@ Reserved Font Names and would have to be named something like "Nations Ethiopic"
 ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
+
+9 June 2021 (WSTech Team) Abyssinica SIL version 2.100
+- Added U+1E7E0..U+1E7E6, U+1E7E8..U+1E7EB, U+1E7ED..U+1E7EE, U+1E7F0..U+1E7FE
+- Modified a few kerning pairs and added kerning pairs for some of the new characters
+- Changed Latin digits (for use in Ethiopic) to use a serif style
+- Modified Ethiopic digits to have a more consistent size
+- Added cv02 to support digits with connecting above and below lines
 
 11 September 2019 (Sharon Correll) Abyssinica SIL version 2.000
 - Added U+02D0, U+034F, U+2423, U+25CA
@@ -90,58 +96,20 @@ ChangeLog
 
 Information for Contributors
 ----------------------------
+We welcome contributions to this font project, such as new glyphs, enhanced 
+smart font code, or bug fixes. The best way to begin the process is to file 
+an issue in the Github project (https://github.com/silnrsi/font-abyssinica) 
+or respond to an existing issue and express your interest. Then we can begin 
+to correspond with you regarding what all might be required and discuss how 
+to best submit your contributions.
 
-The release of Abyssinica SIL version 1.0 under the OFL license provides a
-means for people to contribute to the project. For information on what
-you're allowed to change or modify, consult the OFL and OFL-FAQ. The OFL-FAQ
-also gives a very general rationale regarding why you would want to
-contribute to the project.
-
-Anyone can make their own modified version of Abyssinica SIL (using a different
-name), but SIL International will continue to maintain and develop the
-canonical version of the Abyssinica SIL font. As the package maintainer, we
-warmly welcome contributions. Here are some things to keep in mind:
-
-Format: We are open to contributions in various formats, but if you want to
-maximise the chances of us including your work, please make it available to
-us (via email or a URL) as either a FontLab database (preferred) or a
-PostScript Type 1 (or OT-CFF) font.
-
-Source files: We're including the FontLab database used in
-developing the font. The font, however, was not solely built from
-this FontLab database, so a simple "Generate Font" will not give you an
-identical result. The database is provided not as canonical source but
-as an aid to anyone who might find it useful to have access to it. For those
-who may find them useful, we are also providing the Graphite GDL file
-(ETKernComb.gdl), VOLT project files (Abyssinica_SIL.vtp, AboveMarks.vtg, 
-Kern.vtl, Mark.vtl) and an AAT perl script (abyssinica-aat.pl - this is run with 
-the .ttf and .xml files as input, and writes the actual table source, then runs one 
-of Apple's font tools to compile the tables and add them to the .ttf. (So it can  
-only be run on a Mac, with the Apple tools installed.)).
- 
-Copyright attribution: If you submit something for inclusion in the main
-Abyssinica SIL fonts, we will ask you to affirm that it is your original work,
-and ask you to assign the copyright of your work to SIL International. This
-is to ensure that future releases can be made under improved versions of the
-OFL without needing to track you down for further permission. This follows
-the same principle used by the FSF. Keep in mind that we are a
-not-for-profit organization committed to free/libre and open source
-software, and that any contributions incorporated in the fonts will always
-be available under the OFL or a similar license.
-
-Quality: Because we want to be able to guarantee a high level of quality for
-the primary Abyssinica SIL font, we will review submissions carefully. Please
-don't be discouraged if we do not include a submission for this reason, or
-ask you to make specific revisions.
-
-Types of contributions: If you wish to make a contribution - a set of
-additional glyphs, scripts, code, etc. - please contact us before you do any
-work to see if it is a contribution we currently need. Every addition adds
-to the complexity of the project and needs to be carefully planned. This
-also avoids two people working on the same type of addition at the same time.
-
-When submissions will be included: We do not have a current timetable for
-when an updated font will be released. 
+To enable us to accept contributions in a way that honors your contribution 
+and respects your copyright while preserving long-term flexibility for open 
+source licensing, you would also need to agree to the SIL International 
+Contributor License Agreement for Font Software (v1.0) prior to sending us 
+your contribution. To read more about this requirement and find out how to 
+submit the required form, please visit the CLA information page
+(https://software.sil.org/fontcla).
 
 
 Acknowledgements
@@ -150,10 +118,38 @@ Acknowledgements
 be sure to add your name (N), email (E), web-address (W) and description
 (D). This list is sorted by last name in alphabetical order.)
 
-N: Walt Agee, Sharon Correll, Lorna Evans, Victor Gaultney  / Daniel Yacob, Kjell Magne Yri
+N: Walt Agee
 E: fonts@sil.org
 W: http://scripts.sil.org/
-D: SIL designers and font engineers / non-SIL script experts
+D: Designer
+
+N: Sharon Correll
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: OpenType and Graphite support
+
+N: Lorna Evans
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: Contributed some extended Ethiopic glyphs and OpenType and Graphite work
+
+N: Victor Gaultney
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: Designer
+
+N: Annie Olsen
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: Designer
+
+N: Daniel Yacob
+E: yacob@geez.org
+W: http://www.geez.org/, https://github.com/geezorg
+D: Font designer, contributed significant input on the design of extended Ethiopic
+
+N: Kjell Magne Yri
+D: Font based on his original calligraphic design
 
 The Abyssinica SIL project is maintained by SIL International.
 
