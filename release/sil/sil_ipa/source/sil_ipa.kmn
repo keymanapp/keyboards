@@ -56,12 +56,12 @@ store(&VERSION) '10.0'
 store(&NAME) 'IPA (SIL)'
 store(&BITMAP) 'sil_ipa.ico'
 c HOTKEY  "^+P"
-store(&COPYRIGHT) '© 2002-2020 SIL International'
+store(&COPYRIGHT) '© SIL International'
 store(&MESSAGE) 'The IPA (SIL) Keyman keyboard is distributed under The MIT License (MIT).'
 c store(&author) "M. Hosken, D. Bevan"
 c store(&language) ""
 c store(&WINDOWSLANGUAGES) 'x040F'
-store(&KEYBOARDVERSION) '1.8.4'
+store(&KEYBOARDVERSION) '1.8.5'
 store(&LAYOUTFILE) 'sil_ipa.keyman-touch-layout'
 store(&TARGETS) 'any'
 
@@ -345,7 +345,9 @@ c any(pipeD)  + "|"  > index(pipeU,1) c this was added for Chinese IPA
 store(option_key) ''
 
 $keymanonly: + [RALT "-"]	>	set(option_key='before') c 
-$keymanonly: + [RALT "="]	>	reset(option_key)  c 
+c German keyboard has } on RALT+0 == RALT+= so use RALT SHIFT = instead for reset
+$keymanonly: if(&baselayout = 'de-de') + [RALT SHIFT "="]	>	reset(option_key)  c 
+$keymanonly: if(&baselayout != 'de-de') + [RALT "="]	>	reset(option_key)  c 
 
 store(controls)  "=><^|"
 $keymanonly: store(controls-before) ["="][SHIFT ">"] [SHIFT "<"] [SHIFT '^'] [SHIFT "|"]
