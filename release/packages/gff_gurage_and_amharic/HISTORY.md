@@ -1,5 +1,9 @@
 # Amharic (አማርኛ) & Gurage (ጉራጌ) Keyboards
 
+
+## 0.8 (06 Jun 2021)
+* Resync with Gurage package for Unicode 14 updates.
+
 ## 0.7.4 (11 Apr 2021)
 * Resync with Amharic package to include keyboard update.
 
