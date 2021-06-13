@@ -1,5 +1,9 @@
 Balochi Phonetic Change History
 ===============================
+1.3.2 (27 October 2020)
+----------------
+Increment version number to force recompile of touch layout.
+
 1.3.1 (25 May 2020)
 ----------------
 Fixed package to include png keyboard images. Other minor changes.

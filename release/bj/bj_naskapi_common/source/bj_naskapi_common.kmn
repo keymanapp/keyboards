@@ -1,0 +1,235 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Naskapi (Common)'
+store(&BITMAP) 'bj_naskapi_common.ico'
+store(&COPYRIGHT) '(c) 2001-2020 Bill Jancewicz'
+store(&KEYBOARDVERSION) '1.4'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'bj_naskapi_common.kvks'
+store(&LAYOUTFILE) 'bj_naskapi_common.keyman-touch-layout'
+
+begin Unicode > use(Umain)
+
+store(i)  "iIeE"
+store(u)  "uUoO"
+store(a)  "aA"
+
+store(w)  "wW"
+store(p)  "pPbB"
+store(t)  "tTdD"
+store(k)  "kKgG"
+store(c)  "cCjJ"
+store(m)  "mM"
+store(n)  "nN"
+store(s)  "sS"
+store(y)  "yY"
+store(l)  "lL"
+store(r)  "rR"
+
+group(Umain) using keys
+
++ "_" > U+202F c narrow non-breaking space
++ "<" > U+2018 c open single quote
++ ">" > U+2019 c close single quote
+U+2018 + "<" > U+201C c open double quote
+U+2019 + ">" > U+201D c close double quote
+
++ any(i) > U+1403 c single vowels
++ any(u) > U+1405  
++ any(a) > U+140A 
+
+U+1403 + any(i) > U+1403 deadkey(3)  c long vowels (double)
+U+1405 + any(u) > U+1405 deadkey(4) 
+U+140A + any(a) > U+140A deadkey(5) 
+
+c The following three rules added for 1.2 to fix stand-alone vowel issue on touch devices
+deadkey(3) + any(i) > U+1403
+deadkey(4) + any(u) > U+1405
+deadkey(5) + any(a) > U+140A
+
+c "H" > U+1426 disabled
+c "h" > U+1426 disabled
++ "h" > deadkey(6)
++ "H" > deadkey(6)
+deadkey(6) + "=" > U+1426 c h= > "h" syllabic
+
+c single consonants
++ any(w) > U+1424
+
++ any(p) > U+1449
++ any(t) > U+1466
++ any(k) > U+1483
++ any(c) > U+14A1
++ any(m) > U+14BB
++ any(n) > U+14D0
++ any(s) > U+1505
++ any(y) > U+153E
++ "'"    > U+141F
++ any(l) > U+14EA
++ any(r) > U+1550
+
+U+1424 + any(i) > U+140E c wi
+U+140E + any(i) > U+140E deadkey(3)  c wii
+
+U+1424 + any(a) > U+141B c wa
+U+141B + any(a) > U+141B deadkey(5)  c waa
+
+U+1449 + any(i) > U+1431 c pi
+U+1431 + any(i) > U+1431 deadkey(3)  c pii
+
+U+1449 + any(u) > U+1433 c pu
+U+1433 + any(u) > U+1433 deadkey(4)  c puu
+
+U+1449 + any(a) > U+1438 c pa
+U+1438 + any(a) > U+1438 deadkey(5)  c paa
+
+U+1449 U+1424 + any(a) > U+1448 c pwa
+U+1448 + any(a) > U+1448 deadkey(5)  c pwaa
+
+U+1466 + any(i) > U+144E c ti
+U+144E + any(i) > U+144E deadkey(3)  c tii
+
+U+1466 + any(u) > U+1450 c tu
+U+1450 + any(u) > U+1450 deadkey(4)  c tuu
+
+U+1466 + any(a) > U+1455 c ta
+U+1455 + any(a) > U+1455 deadkey(5)  c taa
+
+U+1466 U+1424 + any(a) > U+1465 c twa
+U+1465 + any(a) > U+1465 deadkey(5)  c twaa
+
+U+1483 + any(i) > U+146D c ki
+U+146D + any(i) > U+146D deadkey(3)  c kii
+
+U+1483 + any(u) > U+146F c ku
+U+146F + any(u) > U+146F deadkey(4)  c kuu
+
+U+1483 + any(a) > U+1472 c ka
+U+1472 + any(a) > U+1472 deadkey(5)  c kaa
+
+deadkey(6) + any(k) > U+1427 U+1483 c hk  
+
+U+1483 + any(w) > U+1484 c kw
+U+1484 + any(a) > U+1482 c kwa
+U+1482 + any(a) > U+1482 deadkey(5)  c kwaa
+
+
+U+14A1 + any(i) > U+148B c chi
+U+148B + any(i) > U+148B deadkey(3)  c chii
+
+U+14A1 + any(u) > U+148D c chu
+U+148D + any(u) > U+148D deadkey(4)  c chuu
+
+U+14A1 + any(a) > U+1490 c cha
+U+1490 + any(a) > U+1490 deadkey(5)  c chaa
+
+U+14A1 + "h" > U+14A1
+U+14A1 + "H" > U+14A1
+
+U+14A1 U+1424 + any(a) > U+14A0 c chwa
+U+14A0 + any(a) > U+14A0 deadkey(5)  c chwaa
+
+U+14BB + any(i) > U+14A5 c mi
+U+14A5 + any(i) > U+14A5 deadkey(3)  c mii
+
+U+14BB + any(u) > U+14A7 c mu
+U+14A7 + any(u) > U+14A7 deadkey(4)  c muu
+
+U+14BB + any(a) > U+14AA c ma
+U+14AA + any(a) > U+14AA deadkey(5)  c maa
+
+U+14BB + any(w) > U+14BD c mw
+U+14BD + any(a) > U+14BA c mwa
+U+1504 + any(a) > U+1504 deadkey(5)  c mwaa
+
+U+14D0 + any(i) > U+14C2 c ni
+U+14C2 + any(i) > U+14C2 deadkey(3)  c nii
+
+U+14D0 + any(u) > U+14C4 c nu
+U+14C4 + any(u) > U+14C4 deadkey(4)  c nuu
+
+U+14D0 + any(a) > U+14C7 c na
+U+14C7 + any(a) > U+14C7 deadkey(5)  c naa
+
+U+14D0 U+1424 + any(a) > U+14CF c nwa
+U+14CF + any(a) > U+14CF deadkey(5)  c nwaa
+
+U+1505 + any(i) > U+14EF c si
+U+14EF + any(i) > U+14EF deadkey(3)  c sii
+
+U+1505 + any(u) > U+14F1 c su
+U+14F1 + any(u) > U+14F1 deadkey(4)  c suu
+
+U+1505 + any(a) > U+14F4 c sa
+U+14F4 + any(a) > U+14F4 deadkey(5)  c saa
+
+U+1505 + "h" > U+1505
+U+1505 + "H" > U+1505
+
+U+1505 U+1424 + any(a) > U+1504 c swa
+U+1504 + any(a) > U+1504 deadkey(5)  c swaa
+
+U+153E + any(i) > U+1528 c yi
+U+1528 + any(i) > U+1528 deadkey(3)  c yii
+
+U+153E + any(u) > U+152A c yu
+U+152A + any(u) > U+152A deadkey(4)  c yuu
+
+U+153E + any(a) > U+152D c ya
+U+152D + any(a) > U+152D deadkey(5)  c yaa
+
+U+153E U+1424 + any(a) > U+153D c ywa
+U+153D + any(a) > U+153D deadkey(5)  c ywaa
+
+U+14EA + any(i) > U+14D5 c li
+U+14D5 + any(i) > U+14D5 deadkey(3)  c lii
+
+U+14EA + any(u) > U+14D7 c lu
+U+14D7 + any(u) > U+14D7 deadkey(4)  c luu
+
+U+14EA + any(a) > U+14DA c la
+U+14DA + any(a) > U+14DA deadkey(5)  c laa
+
+U+14EA U+1424 + any(a) > U+1427 U+14DA c lwa
+
+U+1550 + any(i) > U+1546 c ri
+U+1546 + any(i) > U+1546 deadkey(3)  c rii
+
+U+1550 + any(u) > U+1548 c ru
+U+1548 + any(u) > U+1548 deadkey(4)  c ruu
+
+U+1550 + any(a) > U+154B c ra
+U+154B + any(a) > U+154B deadkey(5)  c raa
+
+U+1550 U+1424 + any(a) > U+1427 U+154B c rwa
+
+U+1505 U+1449 U+1424 + any(a) > U+150C c pwa
+U+150C + any(a) > U+150C deadkey(5)  c pwaa
+U+1505 U+1466 U+1424 + any(a) > U+150D c twa
+U+150D + any(a) > U+150D deadkey(5)  c twaa
+U+1505 U+1484 + any(a) > U+150E c skwa
+U+150E + any(a) > U+150E deadkey(5)  c skwaa
+U+1505 U+14A1 U+1424 + any(a) > U+150F c schwa
+U+150F + any(a) > U+150F deadkey(5)  c schwaa
+
+U+14A1 U+1546 U+1505 + any(t) > U+166D c Christ
+
++ "X" > U+166D
++ "x" > U+166D
+
++ "." > U+166E
+
+c dead keys
+
++ "Q" > deadkey(1)
++ "q" > deadkey(1)
++ "F" > deadkey(1)
++ "f" > deadkey(1)
++ "Z" > deadkey(1)
++ "z" > deadkey(1)
+c "V" > deadkey(1) to type verse sfm's
+c "v" > deadkey(1)
++ "=" > deadkey(1)
+
+U+1403 deadkey(3) + any(i) > context U+1403
+U+1405 deadkey(4) + any(u) > context U+1405
+U+140A deadkey(5) + any(a) > context U+140A

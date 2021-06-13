@@ -5,8 +5,8 @@ Keyboard Data
 -------------
 
 * Name:           Rachitrali-Burushaski
-* Copyright:      (C) 2017 Rehmat Aziz Chitrali
-* Version:        1.0
+* Copyright:      (C) 2017-2020 Rehmat Aziz Chitrali
+* Version:        1.0.1
 * Keyman Version: 9.0
 * BCP-47 codes:   bsk-Arab
 

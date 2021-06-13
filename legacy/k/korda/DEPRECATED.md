@@ -1,0 +1,1 @@
+This keyboard has been deprecated and replaced by release/sil/sil_korda_jamo and release/sil/sil_korda_latin

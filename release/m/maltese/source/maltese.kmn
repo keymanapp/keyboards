@@ -1,0 +1,39 @@
+﻿c Maltese Unicode Keyboard for Keyman 5.0
+c
+c Written by Gyula Zsigri, June, 2001
+
+store(&VERSION) '10.0'
+store(&NAME) "Maltese"
+c LANGUAGE x3a, x01
+store(&TARGETS) 'windows macosx linux web'
+store(&COPYRIGHT) '© 2001-2020 Gyula Zsigri'
+store(&KEYBOARDVERSION) '1.1'
+store(&BITMAP) 'maltese.ico'
+store(&VISUALKEYBOARD) 'maltese.kvks'
+
+begin Unicode > use(Main)
+
+group(Main) using keys
+
+store(acutebase) "'" 'A' 'a' 'C' 'c' 'E' 'e' 'G' 'g' 'H' 'h' 'I' 'i' 'O' 'o' 'U' 'u' 'Y' 'y' 'Z' 'z'
+store(acute) "'" U+00C1 U+00E1 U+010A U+010B U+00C9 U+00E9 U+0120 U+0121 U+0126 U+0127 U+00CD U+00ED U+00D3 U+00F3 U+00DA U+00FA U+00DD U+00FD U+017B U+017C
+store(gravebase) '`' 'A' 'a' 'E' 'e' 'I' 'i' 'O' 'o' 'U' 'u'
+store(grave) '`' U+00C0 U+00E0 U+00C8 U+00E8 U+00CC U+00EC U+00D2 U+00F2 U+00D9 U+00F9
+store(circumbase) '^' 'A' 'a' 'E' 'e' 'I' 'i' 'O' 'o' 'U' 'u'
+store(circumflex) '^' U+00C2 U+00E2 U+00CA U+00EA U+00CE U+00EE U+00D4 U+00F4 U+00DB U+00FB
+store(dierbase) '"' 'A' 'a' 'E' 'e' 'I' 'i' 'O' 'o' 'U' 'u' 'Y' 'y'
+store(dieresis) '"' U+00C4 U+00E4 U+00CB U+00EB U+00CF U+00EF U+00D6 U+00F6 U+00DC U+00FC U+0178 U+00FF
+
+c Deadkeys
++ "'" > dk(1)  c acute
++ "`" > dk(2)  c grave
++ "^" > dk(3)  c circumflex
++ '"' > dk(4)  c dieresis
+
+c Rules
+dk(1) + any(acutebase) > index(acute, 2)
+dk(2) + any(gravebase) > index(grave, 2)
+dk(3) + any(circumbase) > index(circumflex, 2)
+dk(4) + any(dierbase) > index(dieresis, 2)
+
+c End of keyboard

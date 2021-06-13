@@ -1,0 +1,132 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Old Hungarian'
+store(&COPYRIGHT) '© 2021 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'old_hungarian.kvks'
+store(&KMW_RTL) '1'
+store(&LAYOUTFILE) 'old_hungarian.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(LCncK) [NCAPS K_A]      [NCAPS K_QUOTE]  [NCAPS K_B]      [NCAPS RALT K_A]     [NCAPS K_C]      [NCAPS RALT K_C] [NCAPS K_7]      [NCAPS K_D]     [NCAPS RALT K_QUOTE]  \
+             [NCAPS K_E]      [NCAPS RALT K_E] [NCAPS K_COLON]  [NCAPS K_F]          [NCAPS K_G]      [NCAPS K_Q]      [NCAPS K_H]      [NCAPS K_I]     [NCAPS K_oE2]  [NCAPS RALT K_I]       \
+             [NCAPS K_J]      [NCAPS K_K]      [NCAPS RALT K_K] [NCAPS RALT K_RBRKT] [NCAPS K_L]      [NCAPS K_Z]      [NCAPS K_M]      [NCAPS K_N]     [NCAPS K_8]           \
+             [NCAPS K_O]      [NCAPS K_EQUAL]  [NCAPS RALT K_0] [NCAPS K_0]          [NCAPS K_LBRKT]  [NCAPS K_P]      [NCAPS RALT K_S] [NCAPS K_R]     [NCAPS RALT K_R]      \
+             [NCAPS K_S]      [NCAPS K_X]      [NCAPS K_T]      [NCAPS RALT K_D]     [NCAPS K_9]      [NCAPS RALT K_H] [NCAPS K_U]      [NCAPS K_RBRKT] [NCAPS K_BKSLASH]     \
+             [NCAPS K_HYPHEN] [NCAPS K_V]      [NCAPS K_Y]      [NCAPS K_W]          [NCAPS RALT K_T] [NCAPS RALT K_U]
+store(LCcK)  [CAPS SHIFT K_A]      [CAPS SHIFT K_QUOTE]  [CAPS SHIFT K_B]      [CAPS SHIFT RALT K_A]     [CAPS SHIFT K_C]      [CAPS SHIFT RALT K_C] [CAPS SHIFT K_7]      [CAPS SHIFT K_D]     [CAPS SHIFT RALT K_QUOTE]  \
+             [CAPS SHIFT K_E]      [CAPS SHIFT RALT K_E] [CAPS SHIFT K_COLON]  [CAPS SHIFT K_F]          [CAPS SHIFT K_G]      [CAPS SHIFT K_Q]      [CAPS SHIFT K_H]      [CAPS SHIFT K_I]     [CAPS SHIFT K_oE2] [CAPS SHIFT RALT K_I]        \
+             [CAPS SHIFT K_J]      [CAPS SHIFT K_K]      [CAPS SHIFT RALT K_K] [CAPS SHIFT RALT K_RBRKT] [CAPS SHIFT K_L]      [CAPS SHIFT K_Z]      [CAPS SHIFT K_M]      [CAPS SHIFT K_N]     [CAPS SHIFT K_8]           \
+             [CAPS SHIFT K_O]      [CAPS SHIFT K_EQUAL]  [CAPS SHIFT RALT K_0] [CAPS SHIFT K_0]          [CAPS SHIFT K_LBRKT]  [CAPS SHIFT K_P]      [CAPS SHIFT RALT K_S] [CAPS SHIFT K_R]     [CAPS SHIFT RALT K_R]      \
+             [CAPS SHIFT K_S]      [CAPS SHIFT K_X]      [CAPS SHIFT K_T]      [CAPS SHIFT RALT K_D]     [CAPS SHIFT K_9]      [CAPS SHIFT RALT K_H] [CAPS SHIFT K_U]      [CAPS SHIFT K_RBRKT] [CAPS SHIFT K_BKSLASH]     \
+             [CAPS SHIFT K_HYPHEN] [CAPS SHIFT K_V]      [CAPS SHIFT K_Y]      [CAPS SHIFT K_W]          [CAPS SHIFT RALT K_T] [CAPS SHIFT RALT K_U]
+store(lcU)   U+10CC0    U+10CC1    U+10CC2    U+10CC3        U+10CC4    U+10CC5    U+10CC6    U+10CC7   U+10CC8 \
+             U+10CC9    U+10CCA    U+10CCB    U+10CCC        U+10CCD    U+10CCE    U+10CCF    U+10CD0   U+10CD1 U+10CD1 \
+             U+10CD2    U+10CD3    U+10CD4    U+10CD5        U+10CD6    U+10CD7    U+10CD8    U+10CD9   U+10CDA \
+             U+10CDB    U+10CDC    U+10CDD    U+10CDE        U+10CDF    U+10CE0    U+10CE1    U+10CE2   U+10CE3 \
+             U+10CE4    U+10CE5    U+10CE6    U+10CE7        U+10CE8    U+10CE9    U+10CEA    U+10CEB   U+10CEC \
+             U+10CED    U+10CEE    U+10CEF    U+10CF0        U+10CF1    U+10CF2
+
+store(UCncK) [CAPS K_A]      [CAPS K_QUOTE]  [CAPS K_B]      [CAPS RALT K_A]     [CAPS K_C]      [CAPS RALT K_C] [CAPS K_7]      [CAPS K_D]     [CAPS RALT K_QUOTE]  \
+             [CAPS K_E]      [CAPS RALT K_E] [CAPS K_COLON]  [CAPS K_F]          [CAPS K_G]      [CAPS K_Q]      [CAPS K_H]      [CAPS K_I]     [CAPS K_oE2]  [CAPS RALT K_I]       \
+             [CAPS K_J]      [CAPS K_K]      [CAPS RALT K_K] [CAPS RALT K_RBRKT] [CAPS K_L]      [CAPS K_Z]      [CAPS K_M]      [CAPS K_N]     [CAPS K_8]           \
+             [CAPS K_O]      [CAPS K_EQUAL]  [CAPS RALT K_0] [CAPS K_0]          [CAPS K_LBRKT]  [CAPS K_P]      [CAPS RALT K_S] [CAPS K_R]     [CAPS RALT K_R]      \
+             [CAPS K_S]      [CAPS K_X]      [CAPS K_T]      [CAPS RALT K_D]     [CAPS K_9]      [CAPS RALT K_H] [CAPS K_U]      [CAPS K_RBRKT] [CAPS K_BKSLASH]     \
+             [CAPS K_HYPHEN] [CAPS K_V]      [CAPS K_Y]      [CAPS K_W]          [CAPS RALT K_T] [CAPS RALT K_U]
+store(UCcK)  [NCAPS SHIFT K_A]      [NCAPS SHIFT K_QUOTE]  [NCAPS SHIFT K_B]      [NCAPS SHIFT RALT K_A]     [NCAPS SHIFT K_C]      [NCAPS SHIFT RALT K_C] [NCAPS SHIFT K_7]      [NCAPS SHIFT K_D]     [NCAPS SHIFT RALT K_QUOTE]  \
+             [NCAPS SHIFT K_E]      [NCAPS SHIFT RALT K_E] [NCAPS SHIFT K_COLON]  [NCAPS SHIFT K_F]          [NCAPS SHIFT K_G]      [NCAPS SHIFT K_Q]      [NCAPS SHIFT K_H]      [NCAPS SHIFT K_I]     [NCAPS SHIFT K_oE2]   [NCAPS SHIFT RALT K_I]      \
+             [NCAPS SHIFT K_J]      [NCAPS SHIFT K_K]      [NCAPS SHIFT RALT K_K] [NCAPS SHIFT RALT K_RBRKT] [NCAPS SHIFT K_L]      [NCAPS SHIFT K_Z]      [NCAPS SHIFT K_M]      [NCAPS SHIFT K_N]     [NCAPS SHIFT K_8]           \
+             [NCAPS SHIFT K_O]      [NCAPS SHIFT K_EQUAL]  [NCAPS SHIFT RALT K_0] [NCAPS SHIFT K_0]          [NCAPS SHIFT K_LBRKT]  [NCAPS SHIFT K_P]      [NCAPS SHIFT RALT K_S] [NCAPS SHIFT K_R]     [NCAPS SHIFT RALT K_R]      \
+             [NCAPS SHIFT K_S]      [NCAPS SHIFT K_X]      [NCAPS SHIFT K_T]      [NCAPS SHIFT RALT K_D]     [NCAPS SHIFT K_9]      [NCAPS SHIFT RALT K_H] [NCAPS SHIFT K_U]      [NCAPS SHIFT K_RBRKT] [NCAPS SHIFT K_BKSLASH]     \
+             [NCAPS SHIFT K_HYPHEN] [NCAPS SHIFT K_V]      [NCAPS SHIFT K_Y]      [NCAPS SHIFT K_W]          [NCAPS SHIFT RALT K_T] [NCAPS SHIFT RALT K_U]
+store(ucU)   U+10C80          U+10C81          U+10C82          U+10C83              U+10C84           U+10C85         U+10C86          U+10C87         U+10C88 \
+             U+10C89          U+10C8A          U+10C8B          U+10C8C              U+10C8D           U+10C8E         U+10C8F          U+10C90         U+10C91 U+10C91 \
+             U+10C92          U+10C93          U+10C94          U+10C95              U+10C96           U+10C97         U+10C98          U+10C99         U+10C9A \
+             U+10C9B          U+10C9C          U+10C9D          U+10C9E              U+10C9F           U+10CA0         U+10CA1          U+10CA2         U+10CA3 \
+             U+10CA4          U+10CA5          U+10CA6          U+10CA7              U+10CA8           U+10CA9         U+10CAA          U+10CAB         U+10CAC \
+             U+10CAD          U+10CAE          U+10CAF          U+10CB0              U+10CB1           U+10CB2
+
+store(numbersU) U+10CFA U+10CFB U+10CFC U+10CFD U+10CFE U+10CFF
+store(numbersK) [K_1]   [K_2]   [K_3]   [K_4]   [K_5]   [K_6]
+store(numpad)   [K_NP7] [K_NP8] [K_NP9] [K_NP4] [K_NP5] [K_NP6]
+
+group(main) using keys
+
++ any(LCcK)         > index(lcU,1)
++ any(LCncK)        > index(lcU,1)
++ any(UCcK)         > index(ucU,1)
++ any(UCncK)        > index(ucU,1)
++ any(numbersK)     > index(numbersU,1)
++ any(numpad)       > index(numbersU,1)
+
+
++ [RALT K_BKQUOTE]     > U+200E c LRM
++ [K_NP3]              > U+200E c LRM
+
++ [SHIFT K_BKQUOTE] > U+200F c RLM
++ [K_NP1]           > U+200F c RLM
+
++ [K_COMMA]        > U+2E41 c REVERSED COMMA
++ [SHIFT K_COMMA]  > U+2E2E c REVERSED QUESTION MARK
+
++ [K_BKQUOTE]          > U+00A7
+
++ [K_PERIOD]       > "."
++ [SHIFT K_PERIOD] > ":"
++ [K_SLASH]        > U+002D
++ [SHIFT K_SLASH]  > U+005F
+
+
++ [SHIFT K_1]     > U+0027
++ [SHIFT K_2]     > U+0022
++ [SHIFT K_3]     > U+002B
++ [SHIFT K_4]     > U+0021
++ [SHIFT K_5]     > U+0025
++ [SHIFT K_6]     > U+002F
+
++ [RALT K_1]      > U+2E42
++ [RALT K_2]      > U+201F
++ [RALT K_3]      > U+002D
++ [RALT K_4]      > U+203C
++ [RALT K_5]      > U+2026
++ [RALT K_6]      > U+005C
++ [RALT K_7]      > U+003D
++ [RALT K_8]      > U+0028
++ [RALT K_9]      > U+0029
++ [RALT K_HYPHEN] > U+00A7
++ [RALT K_EQUAL]  > U+00A9
++ [RALT K_W]      > U+007C
++ [RALT K_F]      > U+005B
++ [RALT K_G]      > U+005D
++ [RALT K_X]      > U+0023
++ [RALT K_V]      > U+0040
++ [RALT K_B]      > U+007B
++ [RALT K_N]      > U+007D
++ [RALT K_Q]      > U+005C
++ [RALT K_COLON]  > U+0024
++ [RALT K_COMMA]  > U+204F
++ [RALT K_SLASH]  > U+002A
+
+c angle marks
++ [RALT K_M]      > U+003C
++ [RALT K_PERIOD] > U+003E
++ [RALT K_oE2]    > U+003C
++ [RALT K_Z]      > U+003E
+
++ [SHIFT RALT K_BKQUOTE] > U+0030
++ [SHIFT RALT K_1]       > U+0031
++ [SHIFT RALT K_2]       > U+0032
++ [SHIFT RALT K_3]       > U+0033
++ [SHIFT RALT K_4]       > U+0034
++ [SHIFT RALT K_5]       > U+0035
++ [SHIFT RALT K_6]       > U+0036
++ [SHIFT RALT K_7]       > U+0037
++ [SHIFT RALT K_8]       > U+0038
++ [SHIFT RALT K_9]       > U+0039
++ [SHIFT RALT K_W]       > U+007E
++ [SHIFT RALT K_V]       > U+0026
++ [SHIFT RALT K_COLON]   > U+20AC
+
+
+
