@@ -6,7 +6,8 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <GraphicFile>..\build\newfox.png</GraphicFile>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>newfox.png</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,42 +19,78 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Indigenous NT</Name>
-    <Copyright URL="">©(c) 2021 Rajiv Rawat</Copyright>
+    <Copyright URL="">(c) 2021 Rajiv Rawat</Copyright>
   </Info>
   <Files>
     <File>
-      <Name>..\build\..\build\indigenous_nt.kvk</Name>
+      <Name>indigenous_nt.kvk</Name>
       <Description>File indigenous_nt.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\build\..\build\indigenous_nt.kmx</Name>
+      <Name>indigenous_nt.kmx</Name>
       <Description>Keyboard Indigenous NT</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\..\build\indigenous_nt.js</Name>
+      <Name>indigenous_nt.js</Name>
       <Description>File indigenous_nt.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\DejaVuSans.ttf</Name>
-      <Description>Font DejaVu Sans</Description>
+      <Name>newfox.png</Name>
+      <Description>File newfox.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\build\keyboard.css</Name>
+      <Name>keyboard.css</Name>
       <Description>File keyboard.css</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.css</FileType>
     </File>
     <File>
-      <Name>..\build\newfox.png</Name>
-      <Description>File newfox.png</Description>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>NotoSans-Regular.ttf</Name>
+      <Description>Font Noto Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>indigenous_nt_layout.png</Name>
+      <Description>File indigenous_nt_layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>layer-alt.png</Name>
+      <Description>File layer-alt.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>layer-default.png</Name>
+      <Description>File layer-default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>layer-longpress.png</Name>
+      <Description>File layer-longpress.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>layer-numeric.png</Name>
+      <Description>File layer-numeric.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
@@ -63,10 +100,19 @@
       <Name>Indigenous NT</Name>
       <ID>indigenous_nt</ID>
       <Version>4.0</Version>
-      <OSKFont>..\build\DejaVuSans.ttf</OSKFont>
-      <DisplayFont>..\build\DejaVuSans.ttf</DisplayFont>
+      <OSKFont>NotoSans-Regular.ttf</OSKFont>
+      <DisplayFont>NotoSans-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="en">English</Language>
+        <Language ID="chp">Denë Sųłıné</Language>
+        <Language ID="gwi">Gwichʼin</Language>
+        <Language ID="dgr">Tłı̨chǫ</Language>
+        <Language ID="scs">Sahtú Dene</Language>
+        <Language ID="xsl">Dehcho Dene</Language>
+        <Language ID="den">Dene</Language>
+        <Language ID="ikt">Sallirmiutun + Kangiryuarmiutun</Language>
+        <Language ID="esi">Uummarmiutun</Language>
+        <Language ID="cr">Cree</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
