@@ -1,7 +1,7 @@
 # ጉራጊና (Gurage) Change History
 
 ## 2021-06-22 0.8.1
-* Change of language version from '14.0' (non-existent) to '10.0'.
+* Change of Keyman version from '14.0' (non-existent) to '10.0'.
 
 ## 2021-06-09 0.8
 * Update for Ethiopic Extended-B block from Unicode 14.
