@@ -1,10 +1,6 @@
 Balochi Urdu keyboard
 =====================
 
-© 2019-2021 SIL International
-
-Version 1.4
-
 Description
 -----------
 
