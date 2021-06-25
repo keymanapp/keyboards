@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Start using the Makah (Qʷi·qʷi·diččaq) keyboard</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+      font-size: 1.25rem;
+    }
+    body, h1, h2, p { font-family: Andika, sans-serif }
+    main { flex: 1 }
+    h1 {
+      margin-bottom: 0;
+      color: #612a09;
+    }
+    .version { margin-top: .5rem }
+    .version, .copyright {
+      font: italic 0.8em sans-serif;
+    }
+    samp {
+      font-family: Andika, Arial, sans-serif;
+      font-size: 1.2em;
+      text-shadow: 0 0 4px rgb(0 0 0 / 10%);
+    }
+    kbd {
+      display: inline-block;
+
+      font: 1.1rem sans-serif;
+      vertical-align: middle;
+      text-align: center;
+
+      min-width: 1em;
+      padding: 3px 5px;
+
+      border: solid 1px #C6CBD1;
+      border-radius: 3px;
+
+      color: #333;
+      background-color: #FAFAFA;
+      border-bottom-color: #959DA5;
+      box-shadow: inset 0 -1px #959DA5;
+    }
+    kbd.glottal {
+      color: #000;
+      background-color: #ffdda6;
+      border-color: rgba(0,0,0,0.1);
+      border-bottom-color: #ffb07b;
+      box-shadow: inset 0 -1px #ffdda6;
+    }
+    figure {
+      text-align: center;
+      margin-inline: auto;
+    }
+    figure > img {
+      max-width: 100%;
+      height: auto;
+    }
+    figure.subfigures {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .subfigures > img {
+      max-width: 33%;
+    }
+
+    .blue, .green {
+      display: inline-block;
+      color: white;
+      padding: 0.25rem;
+      border-radius: 4px;
+    }
+    .green { background-color: #009057; }
+    .blue { background-color: #0075ad; }
+  </style>
+</head>
+<body>
+
+<main>
+  <h1>Welcome to the Makah (Qʷi·qʷi·diččaq) keyboard</h1>
+
+  <p> This package contains both a
+    <strong><a href="#mobile">mobile</a></strong> keyboard layout
+    (for smartphones and tablets) and a
+    <strong><a href="#desktop">desktop</a></strong> keyboard layout (for Windows, macOS, and other physical keyboards).
+
+  <section>
+    <h2 id="mobile"> Mobile keyboard </h2>
+
+    <section>
+      <h3 id="tutorial">Tutorial</h3>
+
+      <p> This is a <strong>longpress</strong> keyboard. To type letters
+      like <samp>č</samp>, <samp>c̓</samp>, <samp>č̓</samp>, press and hold the
+      <strong>most similar letter</strong>: in this case, <kbd>c</kbd>.
+
+      <figure>
+        <img src="./long-press-c.gif" width=576 height=302
+             alt="Animation of the pop-up obtained by pressing and holding the C key">
+      </figure>
+
+      <h3> Typing English <samp>R</samp>, <samp>F</samp>, <samp>V</samp> </h3>
+
+      <p> The keys for English <samp>R</samp>, <samp>F</samp>, <samp>V</samp> are
+        replaced with common Makah letters on this keyboard, but you can still
+        type the English letters. <strong>Longpress</strong> the key where the letter would
+        ordinarily be on an English keyboard. </p>
+
+      <figure class="subfigures">
+        <img src="key-r-2x.png" width=256 height=256
+             alt="Longpress options of “ƛ” to obtain “r”">
+        <img src="key-f-2x.png" width=256 height=256
+             alt="Longpress options of “ɫ” to obtain “f”">
+        <img src="key-v-2x.png" width=256 height=256
+             alt="Longpress options of “Ɂ” to obtain “v”">
+      </figure>
+    </section>
+
+    <section>
+      <h3>Keyboard Layout</h3>
+
+      <h4 id="default-layer">Lowercase keys (default)</h4>
+      <figure>
+        <img src="default.png" width=540 height=282
+             alt="Screenshot of lowercase keys">
+      </figure>
+
+      <h4 id="shift-layer">Uppercase keys</h4>
+      <figure>
+        <img src="shift.png" width=540 height=282
+             alt="Screenshot of uppercase keys">
+      </figure>
+
+      <h4 id="numeric-layer">Numbers, symbols, and punctuation</h4>
+      <figure>
+        <img src="numeric.png" width=540 height=282
+             alt="Screenshot of numbers, symbols, and punctuation keys">
+      </figure>
+    </section>
+  </section>
+
+  <section>
+    <h2 id="desktop"> Desktop layout </h2>
+
+    <p> The <strong>desktop</strong> layout implements the layout designed in
+      collaboration with the
+      <a href="https://makahmuseum.com/departments/makah-language-program/">Makah Language Program</a>,
+      itself based on an older
+      <a href="http://www.languagegeek.com/nwc/keymaps/WakashanCanada/MakahNum.pdf">Language Geek</a>
+      keyboard.
+
+    <p> Please see the
+      <a href="https://makahmuseum.com/makah-keyboard/">Makah Keyboard page</a>
+      on the Makah Museum for more information about this keyboard layout.
+
+    <section>
+      <h3> Keyboard layout </h3>
+
+      <figure>
+        <!-- http://www.keyboard-layout-editor.com/#/gists/90db9f968bb5911833d0cb37211c0a1e -->
+        <img src="desktop.png" width=1245 height=435
+             alt="Desktop keyboard layout">
+      </figure>
+
+      <p>To get the bottom-right character (in <span class="blue">blue</span>),
+        hold the <kbd>Alt</kbd> key on the <strong>right-hand side</strong> of
+        the keyboard, then press the desired key.
+
+      <p>To get the top-right character (in <span class="green">green</span>),
+        hold any <kbd>Shift</kbd> key, in addition to <kbd>Alt</kbd> on the
+        <strong>right-hand side</strong> of the keyboard, then press the desired key.
+
+        <p>To add a glottal mark to a letter (for example, k → k̓), press
+        the desired constant key <strong>first</strong>, then press the
+        <kbd class="glottal">◌̓</kbd> key.
+    </section>
+  </section>
+
+  <section>
+    <h2 id="fonts"> Fonts </h2>
+    <p> Fonts that work well for typing Makah on a computer: </p>
+    <ul>
+      <li>Andika</li>
+      <li>Arial</li>
+      <li>Times New Roman</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p class="copyright">© 2021 National Research Council Canada</p>
+</footer>
+
+</body>
+</html>

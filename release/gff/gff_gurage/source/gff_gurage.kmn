@@ -1,8 +1,7 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
 c The Ge'ez Frontier Foundation's mnemonic input method for the experimental Gurage orthography
-c devised by Dr. Fekede Menuta.  The keyboard is intended for use with the "Zebidar" font which
-c in turn is deived from Abyssinica SIL with glyph modifications and private use additions.
+c devised by Dr. Fekede Menuta and adopted in the Unicode 14 Ethiopic Extended-B block.
 c 
 c Keyman        :  http://www.keyman.com/
 c Documentation :  https://help.keyman.com/keyboard/gff_gurage/0.6/gff_gurage.php
@@ -14,16 +13,17 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '10.0'
-store(&KEYBOARDVERSION) '0.7'
+store(&KEYBOARDVERSION) '0.8.1'
 store(&NAME) 'ጉራጌ (Gurage)'
 c store(&ETHNOLOGUECODE) 'sgw'
-store(&COPYRIGHT) '© 2019-2020 Ge’ez Frontier Foundation'
-store(&MESSAGE) 'This is a Gurage language mnemonic input method.  It requires the "Gurage Zebidar" Ethiopic which contains experimental characters.'
+store(&COPYRIGHT) '© 2019-2021 Ge’ez Frontier Foundation'
+store(&MESSAGE) 'This is a Gurage (ጉራጊና) language mnemonic input method.  It requires a font supporting the Ethiopic Extended-B block defined in the Unicode 14 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
 store(&BITMAP) 'gff_gurage.ico'
 store(&VISUALKEYBOARD) 'gff_gurage.kvks'
 store(&LAYOUTFILE) 'gff_gurage.keyman-touch-layout'
+store(&KMW_EMBEDCSS) 'gff_gurage.css'
 c 
 c =====================End Identity Section=====================================================
 
@@ -34,13 +34,13 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-store(ግዕዝ) 'ሐⷐለመረሰሸቀቐበተቸነኘአከኸወዐዘዠየደጀገጘጠጨፈፐ'
-store(ካዕብ) 'ሑⷑሉሙሩሱሹቁቑቡቱቹኑኙኡኩኹዉዑዙዡዩዱጁጉጙጡጩፉፑ'
-store(ሣልስ) 'ሒⷒሊሚሪሲሺቂቒቢቲቺኒኚኢኪኺዊዒዚዢዪዲጂጊጚጢጪፊፒ'
-store(ራብዕ) 'ሓⷓላማራሳሻቃቓባታቻናኛኣካኻዋዓዛዣያዳጃጋጛጣጫፋፓ'
-store(ኃምስ) 'ሔⷔሌሜሬሴሼቄቔቤቴቼኔኜኤኬኼዌዔዜዤዬዴጄጌጜጤጬፌፔ'
-store(ሳድስ) 'ሕⷕልምርስሽቅቕብትችንኝእክኽውዕዝዥይድጅግጝጥጭፍፕ'
-store(ሳብዕ) 'ሖⷖሎሞሮሶሾቆቖቦቶቾኖኞኦኮኾዎዖዞዦዮዶጆጎጞጦጮፎፖ'
+store(ግዕዝ) 'ሐ𞟠ለመረሰሸቀቐበተቸነኘአከኸወዐዘዠየደጀገጘጠጨፈፐ'
+store(ካዕብ) 'ሑ𞟡ሉሙሩሱሹቁቑቡቱቹኑኙኡኩኹዉዑዙዡዩዱጁጉጙጡጩፉፑ'
+store(ሣልስ) 'ሒ𞟢ሊሚሪሲሺቂቒቢቲቺኒኚኢኪኺዊዒዚዢዪዲጂጊጚጢጪፊፒ'
+store(ራብዕ) 'ሓ𞟣ላማራሳሻቃቓባታቻናኛኣካኻዋዓዛዣያዳጃጋጛጣጫፋፓ'
+store(ኃምስ) 'ሔ𞟤ሌሜሬሴሼቄቔቤቴቼኔኜኤኬኼዌዔዜዤዬዴጄጌጜጤጬፌፔ'
+store(ሳድስ) 'ሕ𞟥ልምርስሽቅቕብትችንኝእክኽውዕዝዥይድጅግጝጥጭፍፕ'
+store(ሳብዕ) 'ሖ𞟦ሎሞሮሶሾቆቖቦቶቾኖኞኦኮኾዎዖዞዦዮዶጆጎጞጦጮፎፖ'
 
 store(keys) 'h_lmrsxq_btcnN_k_w_zZydjg_TCfp'
 
@@ -52,13 +52,13 @@ c ---------------------End Maps of Syllabic Forms-------------------------------
 
 c ---------------------Begin Maps of Sebatbeit Forms-----------------------------------------------
 store(potentialSebatbeit) 'ሕቅክግ'
-store(sebatbeit)  'ⷕቕኽጝ'
+store(sebatbeit)  '𞟥ቕኽጝ'
 store(sebatbeitY) 'yY'
 c ---------------------End Maps of Sebatbeit Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)   'aAuUiIeEoO'[T_HAMIS]
-  store(loneVowelEthio)  'ኣዓኡዑኢዒእዕኦዖኤ'
+  store(loneVowelKeys)   [T_GEEZ]'aAuUiIeEoO'[T_HAMIS]
+  store(loneVowelEthio)  'አኣዓኡዑኢዒእዕኦዖኤ'
   store(composableVowel) 'ኢእዒዕ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
@@ -68,12 +68,12 @@ c --------------------Maps for Labiovelars--------------------------------------
   store(ዘመደ፡ራብዕ፡መደበኛ) 'ሟቧጷጿፏፗ'
 
 c 'hmbqkKgfp'
-store(ካዕብ፡ልዩ)  'ሑሙቡቁኩጉፉፑ'
-store(ዘመደ፡ግዕዝ) 'ᎀᎄቈኰጐᎈᎌ'
-store(ዘመደ፡ካዕብ) 'ᎃᎇቍኵጕᎋᎏ'
-store(ዘመደ፡ሣልስ) 'ᎁᎅቊኲጒᎉᎍ'
-store(ዘመደ፡ራብዕ) 'ሗሟቧቋኳጓፏፗ'
-store(ዘመደ፡ኃምስ) 'ᎂᎆቌኴጔᎊᎎ'
+store(ካዕብ፡ልዩ)  'ሑሙቁቡኩጉፉፑ'
+store(ዘመደ፡ግዕዝ) '𞟨ᎀቈᎄኰጐᎈᎌ'
+store(ዘመደ፡ካዕብ) '𞟫ᎃ𞟲ᎇ𞟷𞟺ᎋᎏ'
+store(ዘመደ፡ሣልስ) '𞟩𞟭𞟰𞟳𞟵𞟸𞟻𞟽'
+store(ዘመደ፡ራብዕ) 'ሗሟቋቧኳጓፏፗ'
+store(ዘመደ፡ኃምስ) '𞟪𞟮𞟱𞟴𞟶𞟹𞟼𞟾'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -88,7 +88,7 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-  store(ግዕዝ-key) 'eE' c 'äÄéÉèÈêÊëË'
+  store(ግዕዝ-key) 'eE'[T_GEEZ] c 'äÄéÉèÈêÊëË'
   store(ካዕብ-key) 'uU' c 'ùÙúÚûÛüÜ'
   store(ሣልስ-key) 'iI' c ìÌíÍîÎïÏ'
   store(ራብዕ-key) 'aA' c 'àÀáÁâÂãÃåÅ'
