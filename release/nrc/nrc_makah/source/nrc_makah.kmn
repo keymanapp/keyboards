@@ -1,0 +1,119 @@
+﻿c Mobile (Android, iPhone, iPad) and desktop keyboard for Qʷi·qʷi·diččaq (Makah).
+store(&VERSION) '10.0'
+store(&NAME) 'Makah'
+store(&COPYRIGHT) '2021 © National Research Council Canada'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'nrc_makah.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'nrc_makah.kvks'
+store(&MESSAGE) 'On behalf of the Makah Cultural & Research Center'
+store(&KEYBOARDVERSION) '1.1'
+
+store(x) 'xX'
+store(ejective) 'cčkptƛqCČKPTQ'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c Mobile (touch) layout
++ [T_XSH]         > 'x' U+030C
++ [SHIFT T_XSH]   > 'X' U+030C
+c Add ejective diacritic to certain consonants:
++ [T_CEJ]         > 'c' U+0313
++ [SHIFT T_CEJ]   > 'C' U+0313
++ [T_CHEJ]        > 'č' U+0313
++ [SHIFT T_CHEJ]  > 'Č' U+0313
++ [T_KEJ]         > 'k' U+0313
++ [SHIFT T_KEJ]   > 'K' U+0313
++ [T_LSHEJ]       > 'ƛ' U+0313
++ [SHIFT T_LSHEJ] > 'ƛ' U+0313  c There is no capital ƛ!
++ [T_PEJ]         > 'p' U+0313
++ [SHIFT T_PEJ]   > 'P' U+0313
++ [T_QEJ]         > 'q' U+0313
++ [SHIFT T_QEJ]   > 'Q' U+0313
++ [T_TEJ]         > 't' U+0313
++ [SHIFT T_TEJ]   > 'T' U+0313
+
+
+c Physical keyboard layout
+c Note: the physical layout behaves differently than the mobile layout.
+c See: https://makahmuseum.com/makah-keyboard/#remapped-key-sequences
+c Default layer
++ [K_BKQUOTE]            > 'ḥ'
++ [K_1]                  > '!'
++ [K_2]                  > 'ʷ'
++ [K_3]                  > 'š'
++ [K_4]                  > 'č'
++ [K_5]                  > 'ƛ'
++ [K_6]                  > 'ŋ'
++ [K_7]                  > 'x' U+030C
++ [K_8]                  > 'ɫ'
++ [K_9]                  > 'Ɂ'
++ [K_0]                  > '°'
++ [K_LBRKT]              > '‘'
++ [K_RBRKT]              > '’'
++ [K_COLON]              > '·'
++ [K_QUOTE]              > U+0313
+
+c Shift layout
++ [SHIFT K_BKQUOTE]      > 'Ḥ'
++ [SHIFT K_3]            > 'Š'
++ [SHIFT K_4]            > 'Č'
++ [SHIFT K_7]            > 'X' U+030C
++ [SHIFT K_8]            > 'Ɫ'
++ [SHIFT K_LBRKT]        > '“'
++ [SHIFT K_RBRKT]        > '”'
+
+c Alt layout
++ [RALT K_BKQUOTE]       > '`'
++ [RALT K_1]             > '1'
++ [RALT K_2]             > '2'
++ [RALT K_3]             > '3'
++ [RALT K_4]             > '4'
++ [RALT K_5]             > '5'
++ [RALT K_6]             > '6'
++ [RALT K_7]             > '7'
++ [RALT K_8]             > '8'
++ [RALT K_9]             > '9'
++ [RALT K_0]             > '0'
++ [RALT K_HYPHEN]        > '«'
++ [RALT K_EQUAL]         > '»'
++ [RALT K_LBRKT]         > '['
++ [RALT K_RBRKT]         > ']'
++ [RALT K_BKSLASH]       > '\'
++ [RALT K_COLON]         > ';'
++ [RALT K_QUOTE]         > "'"
++ [RALT K_COMMA]         > ','
++ [RALT K_PERIOD]        > '.'
++ [RALT K_SLASH]         > '/'
+
+c Alt+Shift layout
++ [SHIFT RALT K_BKQUOTE] > '~'
++ [SHIFT RALT K_1]       > '!'
++ [SHIFT RALT K_2]       > '@'
++ [SHIFT RALT K_3]       > '#'
++ [SHIFT RALT K_4]       > '$'
++ [SHIFT RALT K_5]       > '%'
++ [SHIFT RALT K_6]       > '^'
++ [SHIFT RALT K_7]       > '&'
++ [SHIFT RALT K_8]       > '*'
++ [SHIFT RALT K_9]       > '('
++ [SHIFT RALT K_0]       > ')'
++ [SHIFT RALT K_LBRKT]   > '{'
++ [SHIFT RALT K_RBRKT]   > '}'
++ [SHIFT RALT K_BKSLASH] > '|'
++ [SHIFT RALT K_COLON]   > ':'  c Note: there appears to be an mistake in the image on Makah Museum
++ [SHIFT RALT K_QUOTE]   > '"'
++ [SHIFT RALT K_COMMA]   > '<'
++ [SHIFT RALT K_PERIOD]  > '>'
++ [SHIFT RALT K_SLASH]   > '?'
+
+
+c Backspace on mobile deletes both diacritic AND base character:
+c This differs from the hardware layout that treats ◌̓ as a unit, separate from
+c the character it attaches to.
+platform('touch') any(ejective) U+0313 + [K_BKSP] > nul
+platform('touch') any(ejective) U+0313 + [SHIFT K_BKSP] > nul
+c Delete x̌/X̌ as if it's a composed character (both on physical + touch layout)
+any(x)        U+030c + [K_BKSP] > nul
+any(x)        U+030c + [SHIFT K_BKSP] > nul
