@@ -6,12 +6,12 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'buhid.kvks'
 store(&LAYOUTFILE) 'buhid.keyman-touch-layout'
 store(&MESSAGE) 'Keyboard for tyiping Buhid script'
-store(nul) "acefjoqrvxzBCDEFGHJKLMOPQRSTVWXYZ"
-+any(nul) > nul
+store(nul) "acefjoqvxzBCDEFGHJKLMOPQRSTVWXYZ"
 
 begin Unicode > use(main)
 
 group(main) using keys
++ any(nul) > nul
 + [K_U] > 'ᝓ'
 + [K_I] > 'ᝒ'
 + [K_H] > 'ᝑ'
