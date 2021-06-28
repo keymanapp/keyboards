@@ -1,0 +1,20 @@
+﻿c lamkaang generated from template at 2021-06-28 15:02:02
+c with name "Lamkaang"
+store(&VERSION) '10.0'
+store(&NAME) 'Lamkaang'
+store(&COPYRIGHT) '© Lamkaang Community'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'lamkaang.kvks'
+store(&LAYOUTFILE) 'lamkaang.keyman-touch-layout'
+
+store(base) "AaEeIiOoUuÚúTtLlYy"
+store(alt)  "ÁáÉéÍíÓóÚúŮůṬṭḶḷẎẏ"
+
+store(&KEYBOARDVERSION) '1.0'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+any(base) + "`" > index(alt, 1)
