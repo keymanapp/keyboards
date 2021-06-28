@@ -13,6 +13,7 @@
 
     
    <p><img src="Hindi1.jpg" alt="image" height="230" width="590" > </img></p>
+   <p><img src="Hindi2.jpg" alt="image" height="230" width="590" > </img></p>
        
  <h2>Input sequences</h2>
     	
