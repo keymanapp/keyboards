@@ -9,6 +9,7 @@ __DESCRIPTION__
 This keyboard is for the Lamkaang language. In addition to the normal English letters, it can produce this letters:
 
 ÁáÉéÍíÓóÚúŮůṬṭḶḷẎẏ
+
 After typing the base letter, press the backtick (`) key once or twice to add the desired accent mark.
 
 Supported Platforms
