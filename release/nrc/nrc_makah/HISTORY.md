@@ -1,6 +1,10 @@
 Makah (Qʷi·qʷi·diččaq) Change History
 =====================================
 
+1.1.1 (2021-07-02)
+----------------
+* Updated version of Andika distributed with keyboard including new typefaces of Andika (R/I/B/BI)
+
 1.1 (2021-06-22)
 ----------------
 * Add missing image for `welcome.htm`
