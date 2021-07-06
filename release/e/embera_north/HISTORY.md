@@ -1,6 +1,10 @@
 Embera Northern Change History
 =======================
 
+10.1.4 (1 Jul 2021)
+-------------------
+* Updated to use new version of Charis SIL
+
 10.1.3 (9 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux
