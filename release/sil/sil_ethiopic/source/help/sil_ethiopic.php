@@ -1,29 +1,7 @@
 <?php
-  $pagename = 'SIL Ethiopic Keyboard Help';
-  $pagetitle = 'SIL Ethiopic Keyboard Help';
-  require_once('header.php');
-?>
-
-<head profile="http://dublincore.org/documents/dcmi-terms/">
-  <meta name="generator" content=
-  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
-  <meta http-equiv="Content-Type" content=
-  "application/xhtml+xml; charset=utf-8">
-
-  <title lang="en-US">SIL Ethiopic Keybard Map</title>
-  <meta name="DCTERMS.title" content="SIL Ethiopic Keybard Map" lang="en-US">
-  <meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646">
-  <meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml">
-  <meta name="DCTERMS.issued" content="2017-03-04T09:40:41.802792852" scheme=
-  "DCTERMS.W3CDTF">
-  <meta name="DCTERMS.provenance" content="" lang="en-US">
-  <meta name="DCTERMS.subject" content="," lang="en-US">
-  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en">
-  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en">
-  <link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en">
-  <link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en">
-  <style type="text/css">
-      @page {  }
+  $pagename = 'SIL Ethiopic Help';
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         table { border-collapse:collapse; border-spacing:0; empty-cells:show }
         td, th { vertical-align:top; font-size:12pt;}
         h1, h2, h3, h4, h5, h6 { clear:both }
@@ -1625,25 +1603,9 @@
         .Output { font-family:Abyssinica SIL; font-size:11pt; letter-spacing:normal; }
         <!-- ODF styles with no properties representable as CSS -->
         .Table1.1 .Table14.1 .Table19.1 .Table2.1 .Table3.1 .Table5.1 .Table6.1 .Table7.1 .Table7.2 .T1 .WW8Num1z0 .WW8Num1z1 .WW8Num1z2 .WW8Num1z3 .WW8Num1z4 .WW8Num1z5 .WW8Num1z6 .WW8Num1z7 .WW8Num1z8  { }
-  </style>
-</head>
-
-<body dir="ltr" style=
-"max-width:21.001cm;margin-top:1.3cm; margin-bottom:1.499cm; margin-left:1.499cm; margin-right:1.499cm;">
-<table border="0" cellspacing="0" cellpadding="0" width="100%" class="Table1">
-  <colgroup>
-      <col width="787">
-    </colgroup>
-
-    <tr class="Table11">
-      <td style="text-align:left;width:18.002cm;" class="Table1_A1">
-        <p class="Title">SIL Ethiopic Keyboard Map</p>
-      </td>
-    </tr>
-  </table>
-
-  <h3 class="Heading_20_3"><a id="a__Introduction" name=
-  "a__Introduction"></a>Introduction</h3>
+END;
+  require_once('header.php');
+?>
 
   <p class="Standard">The “SIL Ethiopic” keyboard was developed to input
   Ethiopic Fidel scripts. You can use this keyboard with any Ethiopic Unicode
@@ -1651,7 +1613,7 @@
   Basketo, Gumuz and Gamo-Gofa-Dawro) or the two Private Use Area (PUA)
   characters of this keyboard (“<span class="Output"></span>” and
   “<span class="Output"></span>”). The <a href=
-  "http://scripts.sil.org/AbyssinicaSIL" class="Internet_20_link">Abyssinica
+  "http://software.sil.org/abyssinica" class="Internet_20_link">Abyssinica
   SIL</a> font (version 1.5+) is recommended if you need to use these newer
   Unicode 6.0+ or PUA characters.</p>
 
@@ -9026,4 +8988,3 @@
   class="Internet_20_link">ethiopia</a><a href=
   "mailto:computer_ethiopia@sil.org" class=
   "Internet_20_link">@sil.org</a></span></p>
-</body>
