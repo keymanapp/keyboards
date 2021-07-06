@@ -1,6 +1,10 @@
 Engram Change History
 ====================
 
+2.0 (2021-04-05)
+----------------
+* Reengineered layout based on revised scoring model that better reflects finger dexterity and takes into account relative finger strengths.
+
 1.3 (2021-03-01)
 ----------------
 * v1.2 layouts are based on fixed initializations; v1.3 is based on searching a wider solution space and evaluating 60 million more layouts.

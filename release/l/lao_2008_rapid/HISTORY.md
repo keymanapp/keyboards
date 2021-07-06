@@ -1,6 +1,10 @@
 Lao 2008 Rapid Keyboard Change History
 =======================
 
+1.1.2 (7 May 2021)
+-----------------
+* Renamed readme.html to readme.htm so it will open when keyboard is installed
+
 1.1.1 (13 May 2019)
 -----------------
 * Updated language tag

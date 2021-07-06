@@ -3,7 +3,7 @@ Khmer Angkor keyboard
 
 Copyright (C) 2015-2021 SIL International
 
-Version 1.0.8
+Version 1.0.9
 
 Description
 -----------
