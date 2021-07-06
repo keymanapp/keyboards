@@ -1,10 +1,10 @@
 LIBTRALO Keyboard
 =====================
 
-Copyright (C) 2008-2020 SIL International
+Copyright (C) 2008-2021 SIL International
 Copyright (C) 1999-2003 Mark A. Konrad
 
-Version 1.6.2
+Version 1.6.3
 
 __DESCRIPTION__
 
