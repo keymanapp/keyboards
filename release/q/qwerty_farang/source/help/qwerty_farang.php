@@ -84,4 +84,7 @@
   <h3>Lexical Model</h3>
 	<p>This keyboard employs a Lexical Model per the Chulalongkorn University Thai Language Word Frequency List. It will offer auto-complete suggestions (predictive text) for single words at a time, but it will not understand multiple words.</p>
 	
+	<p>Press any initial character to get top three suggestions beginning with that character. The next character typed narrows down the suggestion.</p>	
+	<p><a href="ct5k.png"><img class="keyboard" src="ct5k.png" alt="Predictive Text" /></a></p>
+	
 <p>© 2021 Sebastian Restrepo & LatamAsia</p>
