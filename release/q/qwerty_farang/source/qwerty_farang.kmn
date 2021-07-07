@@ -13,22 +13,30 @@ store(&KMW_EMBEDCSS) 'qwerty_farang.css'
 begin Unicode > use(main)
 
 group(main) using keys
++ [SHIFT K_P] > '̍'
++ [RALT K_G] > 'ꜰ'
++ [K_C] > 'ไ'
++ [SHIFT K_C] > 'ใ'
++ [RALT K_A] > 'ะ'
++ [RALT K_W] > '₩'
++ [RALT K_M] > 'ᴍ'
++ [RALT K_P] > '̎'
++ [RALT K_B] > '≠'
++ [RALT K_N] > '≈'
++ [RALT K_EQUAL] > '๋'
++ [RALT K_O] > '°'
++ [SHIFT K_O] > 'โ'
++ [SHIFT K_W] > 'ะ'
++ [RALT K_D] > 'ษ'
 + [RALT K_I] > 'ʀ'
 + [RALT K_F] > 'ʟ'
-+ [RALT K_G] > 'ꜰ'
 + [RALT K_U] > 'ʜ'
 + [RALT K_Y] > '¥'
 + [RALT K_H] > 'ฅ'
-+ [RALT K_N] > '≠'
-+ [RALT K_B] > '≈'
-+ [RALT K_M] > '×'
-+ [RALT K_W] > '₩'
 + [RALT K_E] > '€'
-+ [RALT K_EQUAL] > '๋'      c beep when typed without a base
 + [RALT K_V] > 'ฑ'
 + [RALT K_C] > 'ฒ'
 + [RALT K_X] > 'ฐ'
-+ [RALT K_P] > '°'
 + [RALT K_BKSLASH] > '๎'    c beep when typed without a base
 + [RALT K_RBRKT] > 'ฺ'      c beep when typed without a base
 + [RALT K_QUOTE] > '๛'
@@ -36,21 +44,15 @@ group(main) using keys
 + [RALT K_L] > '๚'
 + [RALT K_K] > 'ฆ'
 + [RALT K_J] > 'ฃ'
-+ [RALT K_D] > 'ᴍ'
 + [RALT K_S] > 'ซ'
-+ [RALT K_A] > 'ษ'
 + [RALT K_T] > 'ฦ'
 + [K_P] > 'ป'
-+ [SHIFT K_J] > 'เข้าใจ'
++ [SHIFT K_J] > 'ใ'
 + [SHIFT K_RBRKT] > 'ง'
-+ [SHIFT K_P] > 'เป็นไปได้ '
 + [RALT K_LBRKT] > 'ภ'
 + [SHIFT K_LBRKT] > 'ผ'
 + [K_LBRKT] > 'พ'
-+ [SHIFT K_C] > 'อยู่ที่'
-+ [SHIFT K_O] > 'ไ'
-+ [K_O] > 'โ'
-+ [K_C] > 'อ'
++ [K_O] > 'อ'
 + [RALT K_PERIOD] > '≥'
 + [RALT K_COMMA] > '≤'
 + [SHIFT K_X] > 'ๆ'
@@ -59,7 +61,6 @@ group(main) using keys
 + [RALT K_SLASH] > '÷'
 + [RALT K_Z] > 'ถ'
 + [RALT K_Q] > 'ฌ'
-+ [RALT K_O] > 'ใ'
 + [RALT K_R] > 'ๅ'
 + [RALT K_HYPHEN] > '−'
 + [SHIFT K_BKSLASH] > '|'   c beep when typed without a base
@@ -100,7 +101,6 @@ group(main) using keys
 + [SHIFT K_T] > 'ฏ'
 + [SHIFT K_R] > 'ฤ'
 + [SHIFT K_E] > 'แ'
-+ [SHIFT K_W] > 'ะ'
 + [K_QUOTE] > U+0027
 + [K_SLASH] > '/'
 + [K_PERIOD] > '.'
@@ -163,10 +163,10 @@ U+0E49 + [K_BKQUOTE]    > U+0E4A
 U+0E4A + [K_BKQUOTE]    > U+0E4B
 U+0E4B + [K_BKQUOTE]    > U+0E48
 
-c พ > ผ > ภ
-U+0E1E + [K_LBRKT]      > U+0E1C
-U+0E1C + [K_LBRKT]      > U+0E20
-U+0E20 + [K_LBRKT]      > U+0E1E
+c ช > ฉ > ฌ
+U+0E0A + [K_Q]      > U+0E09
+U+0E09 + [K_Q]      > U+0E0C
+U+0E0C + [K_Q]      > U+0E0A
 
 c ว > ะ
 U+0E27 + [K_W]      > U+0E30
@@ -197,14 +197,15 @@ c ิ > ี
 U+0E34 + [K_I]      > U+0E35
 U+0E35 + [K_I]      > U+0E34
 
-c โ > ไ > ใ
-U+0E42 + [K_O]      > U+0E44
-U+0E44 + [K_O]      > U+0E43
-U+0E43 + [K_O]      > U+0E42
+c อ > โ > °
+U+0E2D + [K_O]      > U+0E42
+U+0E42 + [K_O]      > U+00B0
+U+00B0 + [K_O]      > U+0E2D
 
-c ้ > ๋                             *****NOT WORKING******
-U+0E49 + [K_LBRKT]      > U+0E4B    c shouldn't the key be [SHIFT K_BKQUOTE]?
-U+0E4B + [K_LBRKT]      > U+0E49 
+c พ > ผ > ภ
+U+0E1E + [K_LBRKT]      > U+0E1C
+U+0E1C + [K_LBRKT]      > U+0E20
+U+0E20 + [K_LBRKT]      > U+0E1E
 
 c ํ > ฺ > ๎ > ̍ > ̎
 U+0E4D + [K_BKSLASH]      > U+0E3A
@@ -213,9 +214,10 @@ U+0E4E + [K_BKSLASH]      > U+030D
 U+030D + [K_BKSLASH]      > U+030E
 U+030E + [K_BKSLASH]      > U+0E4D
 
-c ั > า
+c ั > า > ะ
 U+0E31 + [K_A]      > U+0E32
-U+0E32 + [K_A]      > U+0E31
+U+0E32 + [K_A]      > U+0E30
+U+0E30 + [K_A]      > U+0E31
 
 c ส > ศ > ซ > ษ
 U+0E2A + [K_S]      > U+0E28
@@ -238,11 +240,6 @@ U+0E4C + [K_G]      > U+0E01
 c ห > ฮ
 U+0E2B + [K_H]      > U+0E2E
 U+0E2E + [K_H]      > U+0E2B
-
-c ช > ฉ > ฌ
-U+0E0A + [K_Q]      > U+0E09
-U+0E09 + [K_Q]      > U+0E0C
-U+0E0C + [K_Q]      > U+0E0A
 
 c ค > ข > ฆ
 U+0E04 + [K_K]      > U+0E02
@@ -271,6 +268,10 @@ c ็ > ๆ
 U+0E47 + [K_X]      > U+0E46
 U+0E46 + [K_X]      > U+0E47
 
+c > ไ > ใ
+U+0E44 + [K_C]      > U+0E43
+U+0E43 + [K_C]      > U+0E44
+
 c ึ > ื
 U+0E36 + [K_V]      > U+0E37
 U+0E37 + [K_V]      > U+0E36
@@ -287,36 +288,21 @@ c ม > ำ
 U+0E21 + [K_M]      > U+0E33
 U+0E33 + [K_M]      > U+0E21
 
-c ั > ไ > ใ                                     ******NOT WORKING******
-U+0E31 + [K_I]      > U+0E44    c having the left vowel rotates with the above sign is not logical
-U+0E44 + [K_I]      > U+0E43
-U+0E43 + [K_I]      > U+0E44
-
 c ฆ > ฃ > ฅ
 U+0E06 + [RALT K_K]  > U+0E03
 U+0E03 + [RALT K_K]  > U+0E05
 U+0E05 + [RALT K_K]  > U+0E03
 
-c ฃ > ฅ
-U+0E03 + [RALT K_J]    > U+0E05
-U+0E05 + [RALT K_J]    > U+0E03
-
-U+0E03 + [U_0E03]    > U+0E05
-U+0E05 + [U_0E03]    > U+0E03
-
-c ฦ > ๅ
-U+0E26 + [RALT K_R]  > U+0E45
+c ๅ > ฦ
 U+0E45 + [RALT K_R]  > U+0E26
-
-U+0E26 + [U_0E26]  > U+0E45
-U+0E45 + [U_0E26]  > U+0E26
+U+0E26 + [RALT K_R]  > U+0E45
 
 c ᴍ > ʟ > ꜰ > ʜ > ʀ
-U+1D0D + [RALT K_D]  > U+029F
-U+029F + [RALT K_D]  > U+A730
-U+A730 + [RALT K_D]  > U+029C
-U+029C + [RALT K_D]  > U+0280
-U+0280 + [RALT K_D]  > U+1D0D
+U+1D0D + [RALT K_M]  > U+029F
+U+029F + [RALT K_M]  > U+A730
+U+A730 + [RALT K_M]  > U+029C
+U+029C + [RALT K_M]  > U+0280
+U+0280 + [RALT K_M]  > U+1D0D
 
 U+1D0D + [U_1D0D]  > U+029F
 U+029F + [U_1D0D]  > U+A730
