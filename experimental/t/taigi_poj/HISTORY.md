@@ -1,6 +1,11 @@
 PhahTaigi POJ Change History
 ====================
 
+1.3 (2021-07-14)
+----------------
+* Fixed bug for tone marks for "-un" final
+* Added colon and semicolon on mobile keyboard
+
 1.2 (2020-12-31)
 ----------------
 * Added support for e͘
