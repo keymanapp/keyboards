@@ -1,9 +1,9 @@
 Eastern Congo Keyboard
 =====================
 
-Copyright (C) 2005-2021 SIL International
+Copyright (C) SIL International
 
-Version 1.5.2
+Version 1.5.3
 
 __DESCRIPTION__
 Eastern Congo keyboard for languages of the Democratic Republic of the Congo.
