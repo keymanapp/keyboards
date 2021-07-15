@@ -3,7 +3,7 @@ Obolo Chwerty keyboard
 
 © 2019 - 2021 Rogers Katelem Edeh
 
-Version 1.1.2
+Version 1.2.0
 
 Description
 -----------
