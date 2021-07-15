@@ -1,0 +1,87 @@
+﻿c wakhi standard keyboard
+store(&VERSION) '10.0'
+store(&NAME) 'Wakhi Standard'
+store(&COPYRIGHT) '© 2021 Masood Karim'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'wakhi_standard.kvks'
+store(&LAYOUTFILE) 'wakhi_standard.keyman-touch-layout'
+store(&BITMAP) 'wakhi_standard.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
++ ';' > deadkey(1)
+deadkey(1) + ';' > ';'
+
+'u' + 'u' > u+0289  c latin_small_letter_u_bar
+'U' + 'U' > u+0244  c latin_capital letter_u bar
+
+'e' + 'e' > u+0259  c latin_small_letter_schwa
+deadkey(1) + 'u' > u+044b  c cyrillic_small_letter_yeru
+
+'a' + '`' > u+00e1  c latin_small_letter_a_with_acute
+'e' + '`' > u+00e9  c latin_small_letter_e_with_acute
+'i' + '`' > u+00ed  c latin_small_letter_i_with_acute
+'o' + '`' > u+00f3  c latin_small_letter_o_with_acute
+'u' + '`' > u+00fa  c latin_small_letter_u_with_acute
+'u' + '/' > u+0289 u+0301  c latin_small_letter_u bar_combining_acute_accent
+'e' + '/' > u+0259 u+0301  c latin_small_letter_schwa_combining_acute_accent
+deadkey(1) + '/' > u+044b u+0301  c cyrillic small letter yeru combining acute accent
+
+deadkey(1) + 'c' > u+010d  c latin_small_letter_c_with_caron
+deadkey(1) + 'C' > u+010c  c latin_capital_letter_c_with_caron
+'c' + 'c' > u+010d u+0323  c latin_small_letter_c_with_caron combining_dot_below
+'C' + 'C' > u+010c u+0323  c latin_capital_letter_c_with_caron combining dot below
+deadkey(1) + 'd' > u+03b4  c greek_small_letter_delta
+deadkey(1) + 'D' > u+0394  c greek_capital_letter_delta
+'d' + 'd' > u+1e0d  c latin_small_letter_d_with_dot_below
+'D' + 'D' > u+1e0c  c latin_capital_letter_d_with_dot_below
+deadkey(1) + 'g' > u+0263  c greek small letter gamma
+deadkey(1) + 'G' > u+0194  c greek capital letter gamma
+'g' + 'g' > u+0263 u+030c  c greek small letter gamma combining caron
+'G' + 'G' > u+0194 u+030c  c greek capital letter gamma combining caron
+deadkey(1) + 'j' > u+01f0  c latin_small_letter_j_with_caron
+deadkey(1) + 'J' > u+004a u+030c  c latin_capital_letter_j combining_caron
+'j' + 'j' >  u+01f0 u+0323  c latin_small_letter_j_with_caron combining_dot_below
+'J' + 'J' >  u+004a u+030c u+0323  c latin_capital_letter_j_with_caron combining_dot_below
+deadkey(1) + 's' > u+0161  c latin_small_letter_s_with_caron
+deadkey(1) + 'S' > u+0160  c latin_capital_letter_s_with_caron
+'s' + 's' > u+0161 u+0323  c latin_small_letter_s_with_caron combining_dot_below
+'S' + 'S' > u+0160 u+0323  c latin_capital_letter_s_with_caron combining_dot_below
+deadkey(1) + 't' > u+03b8  c greek_small_letter_theta
+deadkey(1) + 'T' > u+0398  c greek_capital_letter_theta
+'t' + 't' > u+1e6d  c latin_small_letter_t_with_dot_below
+'T' + 'T' > u+1e6c  c latin_capital_letter_t_with_dot_below
+deadkey(1) + 'x' > u+0078 u+030c  c latin_small_letter_x combining_caron
+deadkey(1) + 'X' > u+0058 u+030c  c latin_capital_letter_x combining_caron
+'x' + 'x' > u+0078 u+030c  c latin_small_letter_x combining_caron
+'X' + 'X' > u+0058 u+030c  c latin_capital_letter_x combining_caron
+'d' + 'z' > u+0292  c latin_small_letter_ezh
+'D' + 'Z' > u+01b7  c latin_capital_letter_ezh
+deadkey(1) + 'z' > u+017e  c latin_small_letter_z_with_caron
+deadkey(1) + 'Z' > u+017d  c latin_capital_letter_z_with_caron
+'z' + 'z' > u+017e u+0323  c latin_small_letter_z_with_caron combining_dot_below
+'Z' + 'Z' > u+017d u+0323  c latin_capital_letter_z_with_caron combining_dot_below
+
+c touch rules
++ [T_0289_0301] > u+0289 u+0301 c u
++ [T_0259_0301] > u+0259 u+0301
++ [T_044B_0301] > u+044b u+0301
++ [T_010D_0323] > u+010d u+0323  c c
++ [SHIFT T_010C_0323] > u+010c u+0323  
++ [T_0263_030C] > u+0263 u+030c  c g
++ [SHIFT T_0194_030C] > u+0194 u+030c  
++ [SHIFT T_004a_030C] > u+004a u+030c  c J
++ [T_01F0_0323] >  u+01f0 u+0323
++ [SHIFT T_004A_030C_0323] >  u+004a u+030c u+0323
++ [T_0161_0323] > u+0161 u+0323  c s
++ [SHIFT T_0160_0323] > u+0160 u+0323
+
++ [T_0078_030C] > u+0078 u+030c  c x
++ [SHIFT T_0058_030C] > u+0058 u+030c
+
++ [T_017E_0323] > u+017e u+0323  c latin_small_letter_z_with_caron combining_dot_below
++ [SHIFT T_017D_0323] > u+017d u+0323  c latin_capital_letter_z_with_caron combining_dot_below
