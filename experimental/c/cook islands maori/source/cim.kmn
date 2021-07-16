@@ -1,0 +1,365 @@
+﻿c 1.2 corrections to touch layout; prepare for release
+c 
+c 1.1 - simplification of code and user interface; to pair with updated lexical model
+c 
+c 1.0 - Cook Islands Māori keyboard initial version
+
+store(&VERSION) '10.0'
+store(&NAME) 'Cook Islands Māori'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'cim.kvks'
+store(&BITMAP) 'cim.ico'
+store(&LAYOUTFILE) 'cim.keyman-touch-layout'
+store(&COPYRIGHT) '© 2020-2021 Yuri Oh and Victoria Quint'
+store(&KEYBOARDVERSION) '1.2'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_BKQUOTE] > '`'
+
++ [K_HYPHEN] > '-'
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'
++ [K_PERIOD] > '.'
++ [K_COMMA] > ','
++ [K_M] > 'm'
++ [K_N] > 'n'
++ [K_B] > 'b'
++ [K_V] > 'v'
++ [K_C] > 'c'
++ [K_X] > 'x'
++ [K_Z] > 'z'
++ [K_L] > 'l'
++ [K_K] > 'k'
++ [K_J] > 'j'
++ [K_H] > 'h'
++ [K_G] > 'g'
++ [K_F] > 'f'
++ [K_D] > 'd'
++ [K_S] > 's'
++ [K_A] > 'a'
++ [K_P] > 'p'
++ [K_O] > 'o'
++ [K_I] > 'i'
++ [K_U] > 'u'
++ [K_Y] > 'y'
++ [K_T] > 't'
++ [K_R] > 'r'
++ [K_E] > 'e'
++ [K_W] > 'w'
++ [K_Q] > 'q'
+
++ [K_SPACE] > U+0020
++ [ALT K_SPACE] > U+00a0
++ [SHIFT ALT K_SPACE] > U+00a0
+
++ [K_0] > U+0030
++ [SHIFT K_0] > U+0029
++ [ALT K_0] > U+00ba
++ [SHIFT ALT K_0] > U+201a
+
++ [K_1] > U+0031
++ [SHIFT K_1] > U+0021
++ [ALT K_1] > U+00a1
++ [SHIFT ALT K_1] > U+2044
+
++ [K_2] > U+0032
++ [SHIFT K_2] > U+0040
++ [ALT K_2] > U+2122
++ [SHIFT ALT K_2] > U+20ac
+
++ [K_3] > U+0033
++ [SHIFT K_3] > U+0023
++ [ALT K_3] > U+00a3
++ [SHIFT ALT K_3] > U+2039
+
++ [K_4] > U+0034
++ [SHIFT K_4] > U+0024
++ [ALT K_4] > U+00a2
++ [SHIFT ALT K_4] > U+203a
+
++ [K_5] > U+0035
++ [SHIFT K_5] > U+0025
++ [ALT K_5] > U+221e
++ [SHIFT ALT K_5] > U+fb01
+
++ [K_6] > U+0036
++ [SHIFT K_6] > U+005e
++ [ALT K_6] > U+00a7
++ [SHIFT ALT K_6] > U+fb02
+
++ [K_7] > U+0037
++ [SHIFT K_7] > U+0026
++ [ALT K_7] > U+00b6
++ [SHIFT ALT K_7] > U+2021
+
++ [K_8] > U+0038
++ [SHIFT K_8] > U+002a
++ [ALT K_8] > U+2022
++ [SHIFT ALT K_8] > U+00b0
+
++ [K_9] > U+0039
++ [SHIFT K_9] > U+0028
++ [ALT K_9] > U+00aa
++ [SHIFT ALT K_9] > U+00b7
+
++ [NCAPS K_A] > U+0061
++ [CAPS K_A] > U+0041
++ [NCAPS SHIFT K_A] > U+0041
++ [CAPS SHIFT K_A] > U+0061
++ [NCAPS ALT K_A] > U+0101
++ [NCAPS SHIFT ALT K_A] > U+0100
+
++ [NCAPS K_B] > U+0062
++ [CAPS K_B] > U+0042
++ [NCAPS SHIFT K_B] > U+0042
++ [CAPS SHIFT K_B] > U+0062
++ [NCAPS ALT K_B] > U+222b
++ [NCAPS SHIFT ALT K_B] > U+0131
+
++ [NCAPS K_C] > U+0063
++ [CAPS K_C] > U+0043
++ [NCAPS SHIFT K_C] > U+0043
++ [CAPS SHIFT K_C] > U+0063
++ [NCAPS ALT K_C] > U+00e7
++ [NCAPS SHIFT ALT K_C] > U+00c7
+
++ [NCAPS K_D] > U+0064
++ [CAPS K_D] > U+0044
++ [NCAPS SHIFT K_D] > U+0044
++ [CAPS SHIFT K_D] > U+0064
++ [NCAPS ALT K_D] > U+2202
++ [NCAPS SHIFT ALT K_D] > U+00ce
+
++ [NCAPS K_E] > U+0065
++ [CAPS K_E] > U+0045
++ [NCAPS SHIFT K_E] > U+0045
++ [CAPS SHIFT K_E] > U+0065
++ [NCAPS ALT K_E] > U+0113
++ [NCAPS SHIFT ALT K_E] > U+0112
+
++ [NCAPS K_F] > U+0066
++ [CAPS K_F] > U+0046
++ [NCAPS SHIFT K_F] > U+0046
++ [CAPS SHIFT K_F] > U+0066
++ [NCAPS ALT K_F] > U+0192
++ [NCAPS SHIFT ALT K_F] > U+00cf
+
++ [NCAPS K_G] > U+0067
++ [CAPS K_G] > U+0047
++ [NCAPS SHIFT K_G] > U+0047
++ [CAPS SHIFT K_G] > U+0067
++ [NCAPS ALT K_G] > U+00a9
++ [NCAPS SHIFT ALT K_G] > U+02dd
+
++ [NCAPS K_H] > U+0068
++ [CAPS K_H] > U+0048
++ [NCAPS SHIFT K_H] > U+0048
++ [CAPS SHIFT K_H] > U+0068
++ [NCAPS ALT K_H] > U+02d9
++ [NCAPS SHIFT ALT K_H] > U+00d3
+
++ [NCAPS K_I] > U+0069
++ [CAPS K_I] > U+0049
++ [NCAPS SHIFT K_I] > U+0049
++ [CAPS SHIFT K_I] > U+0069
++ [NCAPS ALT K_I] > U+012B
++ [NCAPS SHIFT ALT K_I] > U+012A
+
++ [NCAPS K_J] > U+006a
++ [CAPS K_J] > U+004a
++ [NCAPS SHIFT K_J] > U+004a
++ [CAPS SHIFT K_J] > U+006a
++ [NCAPS ALT K_J] > U+2206
++ [NCAPS SHIFT ALT K_J] > U+00d4
+
++ [NCAPS K_K] > U+006b
++ [CAPS K_K] > U+004b
++ [NCAPS SHIFT K_K] > U+004b
++ [CAPS SHIFT K_K] > U+006b
++ [NCAPS ALT K_K] > U+02da
++ [NCAPS SHIFT ALT K_K] > U+2225
+
++ [NCAPS K_L] > U+006c
++ [CAPS K_L] > U+004c
++ [NCAPS SHIFT K_L] > U+004c
++ [CAPS SHIFT K_L] > U+006c
++ [NCAPS ALT K_L] > U+00ac
++ [NCAPS SHIFT ALT K_L] > U+00d2
+
++ [NCAPS K_M] > U+006d
++ [CAPS K_M] > U+004d
++ [NCAPS SHIFT K_M] > U+004d
++ [CAPS SHIFT K_M] > U+006d
++ [NCAPS ALT K_M] > U+00b5
++ [NCAPS SHIFT ALT K_M] > U+00c2
+
++ [NCAPS K_N] > U+006e
++ [CAPS K_N] > U+004e
++ [NCAPS SHIFT K_N] > U+004e
++ [CAPS SHIFT K_N] > U+006e
++ [NCAPS ALT K_N] > U+00D1
++ [NCAPS SHIFT ALT K_N] > U+00F1
+
++ [NCAPS K_O] > U+006f
++ [CAPS K_O] > U+004f
++ [NCAPS SHIFT K_O] > U+004f
++ [CAPS SHIFT K_O] > U+006f
++ [NCAPS ALT K_O] > U+014D
++ [NCAPS SHIFT ALT K_O] > U+014C
+
++ [NCAPS K_P] > U+0070
++ [CAPS K_P] > U+0050
++ [NCAPS SHIFT K_P] > U+0050
++ [CAPS SHIFT K_P] > U+0070
++ [NCAPS ALT K_P] > U+03c0
++ [NCAPS SHIFT ALT K_P] > U+220f
+
++ [NCAPS K_Q] > U+0071
++ [CAPS K_Q] > U+0051
++ [NCAPS SHIFT K_Q] > U+0051
++ [CAPS SHIFT K_Q] > U+0071
++ [NCAPS ALT K_Q] > U+0153
++ [NCAPS SHIFT ALT K_Q] > U+0152
+
++ [NCAPS K_R] > U+0072
++ [CAPS K_R] > U+0052
++ [NCAPS SHIFT K_R] > U+0052
++ [CAPS SHIFT K_R] > U+0072
++ [NCAPS ALT K_R] > U+00ae
++ [NCAPS SHIFT ALT K_R] > U+2030
+
++ [NCAPS K_S] > U+0073
++ [CAPS K_S] > U+0053
++ [NCAPS SHIFT K_S] > U+0053
++ [CAPS SHIFT K_S] > U+0073
++ [NCAPS ALT K_S] > U+00df
++ [NCAPS SHIFT ALT K_S] > U+00cd
+
++ [NCAPS K_T] > U+0074
++ [CAPS K_T] > U+0054
++ [NCAPS SHIFT K_T] > U+0054
++ [CAPS SHIFT K_T] > U+0074
++ [NCAPS ALT K_T] > U+2020
++ [NCAPS SHIFT ALT K_T] > U+02c7
+
++ [NCAPS K_U] > U+0075
++ [CAPS K_U] > U+0055
++ [NCAPS SHIFT K_U] > U+0055
++ [CAPS SHIFT K_U] > U+0075
++ [NCAPS ALT K_U] > U+016B
++ [NCAPS SHIFT ALT K_U] > U+016A
+
++ [NCAPS K_V] > U+0076
++ [CAPS K_V] > U+0056
++ [NCAPS SHIFT K_V] > U+0056
++ [CAPS SHIFT K_V] > U+0076
++ [NCAPS ALT K_V] > U+221a
++ [NCAPS SHIFT ALT K_V] > U+25ca
+
++ [NCAPS K_W] > U+0077
++ [CAPS K_W] > U+0057
++ [NCAPS SHIFT K_W] > U+0057
++ [CAPS SHIFT K_W] > U+0077
++ [NCAPS ALT K_W] > U+2211
++ [NCAPS SHIFT ALT K_W] > U+201e
+
++ [NCAPS K_X] > U+0078
++ [CAPS K_X] > U+0058
++ [NCAPS SHIFT K_X] > U+0058
++ [CAPS SHIFT K_X] > U+0078
++ [NCAPS ALT K_X] > U+2248
++ [NCAPS SHIFT ALT K_X] > U+02db
+
++ [NCAPS K_Y] > U+0079
++ [CAPS K_Y] > U+0059
++ [NCAPS SHIFT K_Y] > U+0059
++ [CAPS SHIFT K_Y] > U+0079
++ [NCAPS ALT K_Y] > U+00a5
++ [NCAPS SHIFT ALT K_Y] > U+00c1
+
++ [NCAPS K_Z] > U+007a
++ [CAPS K_Z] > U+005a
++ [NCAPS SHIFT K_Z] > U+005a
++ [CAPS SHIFT K_Z] > U+007a
++ [NCAPS ALT K_Z] > U+03a9
++ [NCAPS SHIFT ALT K_Z] > U+00b8
+
++ [K_COLON] > U+003B
++ [SHIFT K_COLON] > U+003A
++ [ALT K_COLON] > U+A78C
++ [SHIFT ALT K_COLON] > U+A78B
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > U+002b
++ [ALT K_EQUAL] > U+2260
++ [SHIFT ALT K_EQUAL] > U+00b1
+
++ [K_COMMA] > U+002c
++ [SHIFT K_COMMA] > U+003c
++ [ALT K_COMMA] > U+2264
++ [SHIFT ALT K_COMMA] > U+00af
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+005f
++ [ALT K_HYPHEN] > U+2013
++ [SHIFT ALT K_HYPHEN] > U+2014
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > U+003e
++ [ALT K_PERIOD] > U+2265
++ [SHIFT ALT K_PERIOD] > U+02d8
+
++ [K_SLASH] > U+002f
++ [SHIFT K_SLASH] > U+003f
++ [ALT K_SLASH] > U+00f7
++ [SHIFT ALT K_SLASH] > U+00bf
+
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
++ [ALT K_QUOTE] > U+02BB
++ [SHIFT ALT K_QUOTE] > U+02BB
+
++ [K_LBRKT] > U+005b
++ [SHIFT K_LBRKT] > U+007b
++ [ALT K_LBRKT] > U+201c
++ [SHIFT ALT K_LBRKT] > U+201d
+
++ [K_BKQUOTE] > U+0060
++ [SHIFT K_BKQUOTE] > U+007e
++ [ALT K_BKQUOTE] > U+0060
++ [SHIFT ALT K_BKQUOTE] > U+007e
+
++ [K_RBRKT] > U+005d
++ [SHIFT K_RBRKT] > U+007d
++ [ALT K_RBRKT] > U+2018
++ [SHIFT ALT K_RBRKT] > U+2019
+
++ [K_BKSLASH] > U+005c
++ [SHIFT K_BKSLASH] > U+007c
++ [ALT K_BKSLASH] > U+00ab
++ [SHIFT ALT K_BKSLASH] > U+00bb
+
++ [K_oE2] > U+00a7
++ [SHIFT K_oE2] > U+00b1
++ [ALT K_oE2] > U+00a7
++ [SHIFT ALT K_oE2] > U+00b1
+
+
+
+platform('touch') " " + " " > ". "
+platform('touch') ". " + " " > "  "
+if(&layer = 'default') " " + " " > ". " layer('shift')
+
+
+
+
