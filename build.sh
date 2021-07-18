@@ -3,8 +3,8 @@
 #
 # This script is built with commands available to Git Bash on Windows. (mingw32)
 #
-# This script and scripts in resources/ should be identical in the 
-# https://github.com/keymanapp/keyboards and 
+# This script and scripts in resources/ should be identical in the
+# https://github.com/keymanapp/keyboards and
 # https://github.com/keymanapp/keyboards_starter repos
 #
 
@@ -31,10 +31,24 @@ KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
 . "$KEYBOARDROOT/resources/util.sh"
 
+# Look for xmllint on path or XMLLINT env var
+if [ -z ${XMLLINT+x} ]; then
+  if ! hash xmllint 2>/dev/null; then
+    XMLLINT=
+  else
+    XMLLINT=xmllint
+  fi
+fi
+
+
 case "${OSTYPE}" in
-  "cygwin") KMCOMP_LAUNCHER= ;;
-  "msys") KMCOMP_LAUNCHER= ;;
-  "darwin"*) 
+  "cygwin")
+    KMCOMP_LAUNCHER=
+    ;;
+  "msys")
+    KMCOMP_LAUNCHER=
+    ;;
+  "darwin"*)
     # For Catalina (10.15) onwards, must use wine64
     base_macos_ver=10.15
     macos_ver=$(sw_vers -productVersion)
@@ -50,7 +64,9 @@ case "${OSTYPE}" in
       KMCOMP="$KEYBOARDROOT/tools/kmcomp.x64.exe"
     fi
     ;;
-  *) KMCOMP_LAUNCHER=wine ;;
+  *)
+    KMCOMP_LAUNCHER=wine
+    ;;
 esac
 
 # Master json schema is from https://api.keyman.com/schemas/keyboard_info.json
