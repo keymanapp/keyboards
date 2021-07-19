@@ -12,6 +12,9 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+store(vowel) "aeiou" "AEIOU" 
+store(AcuteVowel) U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+store(spV) U+0259 U+0289 U+044B U+018F U+0244 U+042B
 
 + ';' > deadkey(1)
 deadkey(1) + ';' > ';'
@@ -20,16 +23,19 @@ deadkey(1) + ';' > ';'
 'U' + 'U' > u+0244  c latin_capital letter_u bar
 
 'e' + 'e' > u+0259  c latin_small_letter_schwa
-deadkey(1) + 'u' > u+044b  c cyrillic_small_letter_yeru
+'E' + 'E' > u+018F  c 
 
-'a' + '`' > u+00e1  c latin_small_letter_a_with_acute
-'e' + '`' > u+00e9  c latin_small_letter_e_with_acute
-'i' + '`' > u+00ed  c latin_small_letter_i_with_acute
-'o' + '`' > u+00f3  c latin_small_letter_o_with_acute
-'u' + '`' > u+00fa  c latin_small_letter_u_with_acute
+deadkey(1) + 'u' > U+044b  c cyrillic_small_letter_yeru
+deadkey(1) + 'U' > U+042B
+
+any(vowel) + '`' > index(AcuteVowel,1)
+
+any(spV) + '`' > index(spV,1) U+0301
 'u' + '/' > u+0289 u+0301  c latin_small_letter_u bar_combining_acute_accent
+'U' + '/' > u+0244 u+0301
 'e' + '/' > u+0259 u+0301  c latin_small_letter_schwa_combining_acute_accent
-deadkey(1) + '/' > u+044b u+0301  c cyrillic small letter yeru combining acute accent
+'E' + '/' > u+018F u+0301 
+c deadkey(1) + '/' > u+044b u+0301  c cyrillic small letter yeru combining acute accent
 
 deadkey(1) + 'c' > u+010d  c latin_small_letter_c_with_caron
 deadkey(1) + 'C' > u+010c  c latin_capital_letter_c_with_caron
@@ -68,14 +74,23 @@ deadkey(1) + 'Z' > u+017d  c latin_capital_letter_z_with_caron
 
 c touch rules
 + [T_0289_0301] > u+0289 u+0301 c u
-+ [T_0259_0301] > u+0259 u+0301
-+ [T_044B_0301] > u+044b u+0301
-+ [T_010D_0323] > u+010d u+0323  c c
-+ [SHIFT T_010C_0323] > u+010c u+0323  
++ [SHIFT T_018F_0301] > U+018F U+0301
+
++ [T_0259_0301] > U+0259 U+0301
++ [SHIFT T_0244_0301] > U+0244 U+0301
+
++ [T_044B_0301] > U+044B U+0301
++ [SHIFT T_042B_0301] > U+042B U+0301
+
++ [T_010D_0323] > U+010d U+0323  c c
++ [SHIFT T_010C_0323] > u+010c u+0323
+
 + [T_0263_030C] > u+0263 u+030c  c g
 + [SHIFT T_0194_030C] > u+0194 u+030c  
+
 + [SHIFT T_004a_030C] > u+004a u+030c  c J
 + [T_01F0_0323] >  u+01f0 u+0323
+
 + [SHIFT T_004A_030C_0323] >  u+004a u+030c u+0323
 + [T_0161_0323] > u+0161 u+0323  c s
 + [SHIFT T_0160_0323] > u+0160 u+0323
