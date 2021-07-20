@@ -3,7 +3,7 @@ Amharic (አማርኛ) & Gurage (ጉራጌ) Keyboards
 
 Copyright (C) 2019-2021 Ge'ez Frontier Foundation
 
-Version 0.8.1
+Version 0.9
 =======
 
 This package aggregates the GFF Amharic and Gurage keyboards.  Complete documentation on the keyboards
