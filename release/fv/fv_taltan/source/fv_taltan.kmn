@@ -1,5 +1,5 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.1"
+store(&KEYBOARDVERSION) "9.1.2"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "tht"
 store(&COPYRIGHT) "© 2008-2021 FirstVoices, SIL International. Portions © 2006 Chris Harvey"
@@ -10,13 +10,13 @@ store(&KMW_HELPFILE) 'fv_taltan_help.htm'
 begin Unicode > use(main)
 
 
-group(main) using keys 
+group(main) using keys
 
 c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) 'fv_tsilhqotin.keyman-touch-layout'
+store(&LAYOUTFILE) 'fv_taltan.keyman-touch-layout'
 
 + [SHIFT T_Q_0] > '!' layer('default')
 + [SHIFT T_Q] > '?' layer('default')
@@ -129,10 +129,10 @@ store(overaccent)  U+0304   c  macron
 store(overaccentkey)   [k_slash]
 
 any(underaccent) + any(underaccentkey) > context beep
-any(overaccent) + any(overaccentkey) > context beep  
+any(overaccent) + any(overaccentkey) > context beep
 any(underaccent) + any(overaccentkey) > context beep
 any(overaccent) + any(underaccentkey) > context beep
-                               
+
 c store(accentkey) [K_equal] [K_Bkquote]  [K_RBRKT]
 store(NumbersAndPunctuation) '°1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(overaccentkey) > context beep
@@ -153,9 +153,9 @@ c original punctuation
 + [SHIFT RALT K_LBRKT] > '{'
 + [RALT K_RBRKT] > ']'
 + [RALT K_LBRKT] > '['
-+ [RALT K_EQUAL] > '='    
++ [RALT K_EQUAL] > '='
 + [RALT shift K_EQUAL] > '+'
-+ [RALT K_HYPHEN] > '_' 
++ [RALT K_HYPHEN] > '_'
 
 c Guillemets
 + [SHIFT RALT K_0] > '›'
@@ -167,7 +167,7 @@ c Quotes
 + [SHIFT K_RBRKT] > "”"
 + [SHIFT K_lbrkt] > "“"
 + [K_BKQUOTE] > "‘"
-+ [K_QUOTE] > "’"      
++ [K_QUOTE] > "’"
 
 c Punctuation New
 + [shift k_comma] > ";"
@@ -178,7 +178,7 @@ c language
 + [shift caps k_colon] > "ł"
 + [ncaps K_colon] > "ł"
 + [caps k_colon] > "Ł"
-                                             
+
 + [K_slash] >  U+0304   c  macron
 + [K_LBRKT] > U+0331 c combining macron below
 
