@@ -1,6 +1,10 @@
 Russian - Mnemonic Basic Change History
 ====================
 
+1.1 (2021-07-23)
+----------------
+* Revert desktop deadkey behavior to Microsoft's
+
 1.0 (2019-08-13)
 ----------------
 * Imported from Win10 by Makara SOK using the import tool
