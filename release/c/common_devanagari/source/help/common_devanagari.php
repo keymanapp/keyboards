@@ -1,11 +1,11 @@
 <?php
-  $pagename = 'WIn Publishing Trust Common Devanagari Keyboard Help';
-  $pagetitle = 'WIn Publishing Trust Common Devanagari Keyboard Help';
+  $pagename = 'Common Devanagari Keyboard Help';
+  $pagetitle = 'Common Devanagari Keyboard Help';
   require_once('header.php');
 ?>
 
 <body>
-    <h1>WIn Publishing Trust Common Devanagari Keyboard help.</h1>
+    <h1>Trust Common Devanagari Keyboard help.</h1>
 
     <p>This Common Devanagari keyboard layout designed by WIn Publishing Trust in 2021. Keyboard is designed for Hindi Typing. Keyboard keys are laid out based on Full deva winscript and Hindi winscript. </p>
 
