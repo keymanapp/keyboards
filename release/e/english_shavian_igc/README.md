@@ -1,8 +1,6 @@
 Shaw Imperial keyboard
 ==============
 
-© Shavian.info
-
 Version 1.01
 
 Description

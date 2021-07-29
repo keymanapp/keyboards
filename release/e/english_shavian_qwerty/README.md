@@ -1,8 +1,6 @@
 Shaw QWERTY keyboard
 ==============
 
-© Shavian.info
-
 Version 1.0
 
 Description
