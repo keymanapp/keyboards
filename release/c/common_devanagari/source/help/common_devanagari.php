@@ -1,19 +1,19 @@
 <?php
-  $pagename = 'WIn Publishing Trust Common Devanagari Keyboard Help';
-  $pagetitle = 'WIn Publishing Trust Common Devanagari Keyboard Help';
+  $pagename = 'Common Devanagari Keyboard Help';
+  $pagetitle = 'Common Devanagari Keyboard Help';
   require_once('header.php');
 ?>
 
 <body>
-    <h1>WIn Publishing Trust Common Devanagari Keyboard help.</h1>
+    <h1>Trust Common Devanagari Keyboard help.</h1>
 
     <p>This Common Devanagari keyboard layout designed by WIn Publishing Trust in 2021. Keyboard is designed for Hindi Typing. Keyboard keys are laid out based on Full deva winscript and Hindi winscript. </p>
 
     <h2>Keyboard layout</h2>
 
     
-   <p><img src="Hindi1.jpg" alt="image" height="230" width="590" > </img></p>
-   <p><img src="Hindi2.jpg" alt="image" height="230" width="590" > </img></p>
+   <p><img src="H1.png" alt="image" height="230" width="590" > </img></p>
+   <p><img src="H2.png" alt="image" height="230" width="590" > </img></p>
        
  <h2>Input sequences</h2>
     	
@@ -217,7 +217,7 @@
 	<h3>Dependent/Independent Vowels</h3>
  
     <p>The keyboard will normally produce independent vowels, except after consonants, when it will produce independent vowels. </p>
-	    Eg:<kbd>i</kbd> ➔ <kbd>इ</kbd> vowel after consonants Eg:<kbd>g</kbd><kbd>i</kbd> will generate <samp>गि </samp>             
+	    Eg:<kbd>i</kbd> ➔ <kbd>इ</kbd> vowel after consonants Eg:<kbd>g</kbd><kbd>i</kbd> will generate <samp>गि </samp> <kbd>g</kbd><kbd>i</kbd><kbd>i</kbd>  will generate <samp>गी </samp>             
     
     
 	<p> •    To force an independent vowel after a consonant, press <kbd>A</kbd> after the consonant.      Eg:      <kbd>g</kbd><kbd>A</kbd><kbd>i</kbd> will generate<samp>गइ </samp>	</p>
