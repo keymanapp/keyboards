@@ -1,12 +1,12 @@
-Shaw Imperial keyboard
+Shaw QWERTY keyboard
 ==============
 
-Version 1.1
+Version 1.0
 
 Description
 -----------
 
-Shavian alphabet keyboard for English, inspired by the Shavian Imperial Good Companion typewriter layout.
+Shavian alphabet keyboard for English, inspired by the old pre-Unicode, QWERTY-based ASCII mapping commonly used for Shavian.
 
 Links
 -----
