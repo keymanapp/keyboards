@@ -1,9 +1,13 @@
 Balochi Phonetic Change History
 ===============================
+1.4.1 (19 July 2021)
+--------------------
+Fix issue in package blocking distribution of Lateef font.
+
 1.4 (28 May 2021)
 -----------------
-Zal and Hamza letters added. Left and right single and double quotation marks 
-added. En-dash added. Right-to-left mark and left-to-right mark added. 
+Zal and Hamza letters added. Left and right single and double quotation marks
+added. En-dash added. Right-to-left mark and left-to-right mark added.
 
 1.3.2 (27 October 2020)
 -----------------------
@@ -22,7 +26,7 @@ Other minor changes.
 
 1.2 (9 Aug 2019)
 ----------------
-Removed deadkeys for Indic numbers. Use ctrl combination instead. Added the 
+Removed deadkeys for Indic numbers. Use ctrl combination instead. Added the
 zero-width joiner and better visuals for the zero-width non-joiner. Added
 ', ", :, and - to desktop versions. Made unused tablet keys output nothing.
 Corrected key visuals for key pairs like () for tablet keyboard.
