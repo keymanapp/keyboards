@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-Uma phonetic keyboard designed to mimic Zhuyin layout for Chinese-language IME with characters from the Uma alphabet
+Uma phonetic keyboard designed to mimic Zhuyin layout for Chinese-language IME with characters from the Uma alphabet.
 
 Links
 -----
