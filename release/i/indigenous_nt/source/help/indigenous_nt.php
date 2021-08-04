@@ -30,6 +30,8 @@
 
 <p>Note that the diacritics are typed after the vowel as in the Vowel First Dene convention.</p>
 
+<img style="width: 100%;" src="indigenous_nt_layout.png">
+
 <h2>Tablets and Mobiles</h2>
 
 <p>On mobile devices such as tablets and smartphones, the standard iOS keyboard layers for letters and numbers have been retained with the addition of an <strong>Alt</strong> key that provides access to the full range of combined diacritic bearing characters used in Northern Indigenous languages. </p>
