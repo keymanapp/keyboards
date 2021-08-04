@@ -1,14 +1,13 @@
 Lao Pali keyboard
 ==============
 
-© 2019
+© 2021 John Durdin
 
 Version 1.0
 
 Description
 -----------
-
-Lao Pali generated from template
+The keyboard uses the official Lao standard layout, adapted to support entry of the Lao Pali and Lao Sanskrit characters included in Unicode 13.
 
 Links
 -----

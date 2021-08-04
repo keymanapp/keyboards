@@ -17,16 +17,11 @@ EXTRA;
 
   
   <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-  <p><img alt="Lao Pali keyboard layout: normal (default) state" src="./lao_pali_U.png"/></p>
+  <p><img alt="Lao Pali keyboard layout: normal (default) state" src="lao_pali_U.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-  <p><img alt="Lao Pali keyboard layout: shift state" src="./lao_pali_S.png"/></p>
+  <p><img alt="Lao Pali keyboard layout: shift state" src="lao_pali_S.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
-  <p><img alt="Lao Pali keyboard layout: AltGr state" src="./lao_pali_RA.png"/></p>
-
-
-  <hr/>
-  <p>&copy; 2021 John Durdin</p>
-
+  <p><img alt="Lao Pali keyboard layout: AltGr state" src="lao_pali_RA.png"/></p>
 
 </body>
 </html>
