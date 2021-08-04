@@ -21,13 +21,9 @@ EXTRA;
   </p>
   
   <h2 style="clear: left; page-break-before: always">Keyboard layout - Unshifted</h2>
-  <p><img alt="Lao Pali keyboard layout: normal (default) state" src="./lao_pali_us_U.png"/></p>
+  <p><img alt="Lao Pali keyboard layout: normal (default) state" src="lao_pali_us_U.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Shift</h2>
-  <p><img alt="Lao Pali keyboard layout: shift state" src="./lao_pali_us_S.png"/></p>
-
-  <hr/>
-
-  <p>&copy; 2021  Dr Khampha Sidavong & John Durdin</p> 
+  <p><img alt="Lao Pali keyboard layout: shift state" src="lao_pali_us_S.png"/></p>
 
 </body>
 </html>
