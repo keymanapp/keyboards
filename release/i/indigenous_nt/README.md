@@ -9,7 +9,7 @@ This is the Keyman edition of an universal keyboard for the official languages o
 Links
 -----
 
- * Contact:  prayaga.org@gmail.com
+ * Contact:  ecelanguages@gmail.com
  
 Supported Platforms
 -------------------
