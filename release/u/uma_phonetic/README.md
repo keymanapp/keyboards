@@ -3,12 +3,12 @@ Uma phonetic keyboard
 
 ©Houma Language Project 2021
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Uma phonetic keyboard designed to mimic Zhuyin layout for Chinese-language IME with characters from the Uma alphabet.
+Uma Phonetic Keyboard version 1.1 created for typing in the Uma alphabet by the Houma Language Project.
 
 Links
 -----
