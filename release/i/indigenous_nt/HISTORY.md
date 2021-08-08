@@ -4,7 +4,7 @@ Indigenous NT Keyboard Change History
 4.0.2 (12 Jul 2021)
 -----------------
 
-* All layers on touch layout will now default to the default layer upon key press.
+* All alphanumeric layers on touch layout will now default to the default layer upon key press.
 
 4.0.1 (25 Jun 2021)
 -----------------
