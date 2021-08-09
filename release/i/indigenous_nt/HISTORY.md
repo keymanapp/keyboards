@@ -1,6 +1,11 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.1 (25 Jun 2021)
+-----------------
+
+* Reverted NFD to NFC encoding for vowels with diacritics in touch layout.
+
 4.0.0 (10 Jun 2021)
 -----------------
 

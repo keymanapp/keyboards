@@ -1,5 +1,10 @@
 # ጉራጊና (Gurage) Change History
 
+## 2021-07-18 0.9
+* Addition of a tablet keyboard.
+* Fix to Gurage Noto Sans Ethiopic font.
+* Abyssinica SIL (Combined) font added.
+
 ## 2021-06-22 0.8.1
 * Change of Keyman version from '14.0' (non-existent) to '10.0'.
 
