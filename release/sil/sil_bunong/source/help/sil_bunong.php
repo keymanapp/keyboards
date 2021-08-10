@@ -30,7 +30,7 @@
 <li>Press <kbd>I</kbd> twice to get <span>ិ</span> and press it one more time to get back to <span>ី</span>.</li>
 </ul>
 <ul>
-<li>Press <kbd>]</kbd> twice to get <span>ះ</span>, thrice to get <span>ៈ</span>, quadruple to get <span>:</span> and press it one more time to get back to <span>៖</span>.</li>
+<li>Press <kbd>]</kbd> twice to get <span>:</span> and press it one more time to get back to <span>៖</span>.</li>
 <li>Press <kbd>.</kbd> twice to get <span>៕</span> and press it one more time to get back to <span>។</span>.</li>
 <li>Press <kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>«</span>.</li>
 <li>Press <kbd>Shift</kbd><kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>»</span>.</li>
