@@ -1,12 +1,12 @@
 <?php 
-  $pagename = 'Bunong (SIL) Keyboard Help';
+  $pagename = 'Bunong ឞូន៝ង (SIL) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 ?>
 
 <p>
-    This keyboard is designed for typing Bunong language using Khmer characters.
+    Bunong ឞូន៝ង (SIL) keyboard is designed for typing Bunong language using Khmer characters.
 </p>
 
 <p>
@@ -30,7 +30,7 @@
 <li>Press <kbd>I</kbd> twice to get <span>ិ</span> and press it one more time to get back to <span>ី</span>.</li>
 </ul>
 <ul>
-<li>Press <kbd>]</kbd> twice to get <span>ះ</span>, thrice to get <span>ៈ</span>, quadruple to get <span>:</span> and press it one more time to get back to <span>៖</span>.</li>
+<li>Press <kbd>]</kbd> twice to get <span>:</span> and press it one more time to get back to <span>៖</span>.</li>
 <li>Press <kbd>.</kbd> twice to get <span>៕</span> and press it one more time to get back to <span>។</span>.</li>
 <li>Press <kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>«</span>.</li>
 <li>Press <kbd>Shift</kbd><kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>»</span>.</li>
