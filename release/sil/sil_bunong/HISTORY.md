@@ -1,6 +1,12 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
 
+1.2 (12 Aug 2021)
+-----------------
+
+* Added translations to the Welcome page
+* Update English version of the Help page
+
 1.1 (09 Aug 2021)
 -----------------
 
