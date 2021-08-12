@@ -2,7 +2,7 @@
 store(&NAME) 'Bunong ឞូន៝ង (SIL)'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© 2021 SIl International'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&BITMAP) 'sil_bunong.ico'
 store(&VISUALKEYBOARD) 'sil_bunong.kvks'
 store(&LAYOUTFILE) 'sil_bunong.keyman-touch-layout'
@@ -107,6 +107,8 @@ group(main) using keys
 + [K_K] > 'ក'
 + [K_SPACE] > U+200B
 U+200B + [K_SPACE] > U+0020
+U+0020 + [K_SPACE] > U+200B
+
 + [SHIFT K_SPACE] > U+0020
 
 c subscripts for phone layout
