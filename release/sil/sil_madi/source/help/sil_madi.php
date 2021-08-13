@@ -1,14 +1,14 @@
 <?php
-  $pagename = 'Ma'di Keyboard Help';
-  $pagetitle = 'Ma'di Keyboard Help';
+  $pagename = 'Ma'di (SIL) Keyboard Help';
+  $pagetitle = 'Ma'di (SIL) Keyboard Help';
   require_once('header.php');
 ?>
 
 <p>
-    This keyboard is desgined based on the new orthogrphy of Ma'di language spoken in South Sudan and Uganda.
+    Ma'di (SIL) keyboard is designed based on the new orthography of Ma'di language spoken in South Sudan and Uganda.
 </p>
 
-<p>Ma'di keyboard is similar to the English (US) keyboard, except the way to type out the below dot and tone marks on the vowels.</p>
+<p>This keyboard is similar to the English (US) keyboard, except the way to type out the below dot and tone marks on the vowels.</p>
 <ul>
   <li>Vowels with a combining dot below. <br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
