@@ -1,6 +1,6 @@
 <?php 
   $pagename = "GFF Gurage";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Ge&rsquo;ez Language";
+  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for the Gurage Language";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -69,8 +69,11 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Gurage ((ጉራጊና, ISO-639-2 sgw-ET) language mnemonic input method that is compatible with the 2018 provisional orthography. 
-It requires the specially prepared &ldquo;Gurage Zebidar&rdquo; font that is included with this package.
+This is a Gurage (ጉራጊና , ISO-639-2 swg) language mnemonic input method
+for the Gurage orthography devised by Dr. Fekede Menuta and adopted in Unicode 14.  It requires a font
+supporting the Ethiopic Extended-B block defined in the Unicode 14 standard.</p>
+
+<p style="text-align: justify;">
 The Gurage keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
@@ -93,6 +96,12 @@ SIL <a href="http://scripts.sil.org/OFL">Open Font License</a> (OFL):
   from the <a href="https://senamirmir.org/projects/typography/washra.html">WashRa 4.1</a> collection.
   See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageEthiopicFantuwua.txt">FONTLOG</a>) for details.
   </dd>
+  
+  <dt><strong>Gurage Ethiopic Wookianos</strong></dt>
+  <dd>The Gurage Ethiopic Fantuwua font is derived from the Ethiopic Wookianos font
+  from the <a href="https://senamirmir.org/projects/typography/washra.html">WashRa 4.1</a> collection.
+  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageEthiopicWookianos.txt">FONTLOG</a>) for details.
+  </dd>
 
   <dt><strong>Gurage Noto Sans Ethiopic</strong></dt>
   <dd>The Gurage Noto Sans Ethiopic font is derived from the
@@ -104,12 +113,6 @@ SIL <a href="http://scripts.sil.org/OFL">Open Font License</a> (OFL):
   <dd>The Gurage Noto Serif Ethiopic font is derived from the
   <a href="https://github.com/googlefonts/noto-fonts">Noto Serif Ethiopic</a> font.
   See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageNotoSerifEthiopic.txt">FONTLOG</a>) for details.
-  </dd>
-
-  <dt><strong>Gurage Zebidar</strong></dt>
-  <dd>The Gurage Zebidar font had previously been released under the name "Zebidar" and is derived
-  from the <a href="https://software.sil.org/abyssinica/">Abyssinica SIL 2.0</a> typeface.
-  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageZebidar.txt">FONTTLOG</a> for details.
   </dd>
 </dl>
 
@@ -141,15 +144,15 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>Key</th><th>+[eE]</th><th>+[uU]</th><th>+[iI]</th><th>+[aA]</th><th>+[iI][eE]</th><th>&nbsp;</th><th>+[oO]</th><th>+[uU][eE]</th><th>+[uU][iI]</th><th>+[uU][aA]</th><th>+[uU][iI][eE]</th><th>+[uU][uU]</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
   </tr>
   <tr>
-    <th>[hH]</th><td>ሐ</td><td>ሑ</td><td>ሒ</td><td>ሓ</td><td>ሔ</td><td>ሕ</td><td>ሖ</td><td></td><td></td><td>ሗ</td><td></td><td></td><th>h</th>
+    <th>[hH]</th><td>ሐ</td><td>ሑ</td><td>ሒ</td><td>ሓ</td><td>ሔ</td><td>ሕ</td><td>ሖ</td><td>𞟨</td><td>𞟩</td><td>ሗ</td><td>𞟪</td><td>𞟫</td><th>h</th>
   <tr>
-    <th>[hH][yY]</th><td>ⷐ</td><td>ⷑ</td><td>ⷒ</td><td>ⷓ</td><td>ⷔ</td><td>ⷕ</td><td>ⷖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>hʸ</th>
+    <th>[hH][yY]</th><td>𞟠</td><td>𞟡</td><td>𞟢</td><td>𞟣</td><td>𞟤</td><td>𞟥</td><td>𞟦</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>hʸ</th>
   </tr>
   <tr>
     <th>[lL]</th><td>ለ</td><td>ሉ</td><td>ሊ</td><td>ላ</td><td>ሌ</td><td>ል</td><td>ሎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>l</th>
   </tr>
   <tr>
-    <th>[mM]</th><td>መ</td><td>ሙ</td><td>ሚ</td><td>ማ</td><td>ሜ</td><td>ም</td><td>ሞ</td><td>ᎀ</td><td>ᎁ</td><td>ሟ</td><td>ᎂ</td><td>ᎃ</td><th>m</th>
+    <th>[mM]</th><td>መ</td><td>ሙ</td><td>ሚ</td><td>ማ</td><td>ሜ</td><td>ም</td><td>ሞ</td><td>ᎀ</td><td>𞟭</td><td>ሟ</td><td>𞟮</td><td>ᎃ</td><th>m</th>
   </tr>
   <tr>
     <th>[rR]</th><td>ረ</td><td>ሩ</td><td>ሪ</td><td>ራ</td><td>ሬ</td><td>ር</td><td>ሮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>r</th>
@@ -161,13 +164,13 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[xX]</th><td>ሸ</td><td>ሹ</td><td>ሺ</td><td>ሻ</td><td>ሼ</td><td>ሽ</td><td>ሾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʃ</th>
   </tr>
   <tr>
-    <th>[qQ]</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>ቊ</td><td>ቋ</td><td>ቌ</td><td>ቍ</td><th>kʼ</th>
+    <th>[qQ]</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>𞟰</td><td>ቋ</td><td>𞟱</td><td>𞟲</td><th>kʼ</th>
   </tr>
   <tr>
     <th>[qQ][yY]</th><td>ቐ</td><td>ቑ</td><td>ቒ</td><td>ቓ</td><td>ቔ</td><td>ቕ</td><td>ቖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>k'ʸ</th>
   </tr>
   <tr>
-    <th>[bBvV]</th><td>በ</td><td>ቡ</td><td>ቢ</td><td>ባ</td><td>ቤ</td><td>ብ</td><td>ቦ</td><td>ᎄ</td><td>ᎅ</td><td>ቧ</td><td>ᎆ</td><td>ᎇ</td><th>b</th>
+    <th>[bBvV]</th><td>በ</td><td>ቡ</td><td>ቢ</td><td>ባ</td><td>ቤ</td><td>ብ</td><td>ቦ</td><td>ᎄ</td><td>𞟳</td><td>ቧ</td><td>𞟱</td><td>ᎇ</td><th>b</th>
   </tr>
   <tr>
     <th>t</th><td>ተ</td><td>ቱ</td><td>ቲ</td><td>ታ</td><td>ቴ</td><td>ት</td><td>ቶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>t</th>
@@ -185,7 +188,7 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>e</th><td>አ<br/>ee</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>a</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
   </tr>
   <tr>
-    <th>[kK]</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>ኲ</td><td>ኳ</td><td>ኴ</td><td>ኵ</td><th>k</th>
+    <th>[kK]</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>𞟵</td><td>ኳ</td><td>𞟶</td><td>𞟷</td><th>k</th>
   </tr>
   <tr>
     <th>[kK][yY]</th><td>ኸ</td><td>ኹ</td><td>ኺ</td><td>ኻ</td><td>ኼ</td><td>ኽ</td><td>ኾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>kʸ</th>
@@ -212,7 +215,7 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[jJ]</th><td>ጀ</td><td>ጁ</td><td>ጂ</td><td>ጃ</td><td>ጄ</td><td>ጅ</td><td>ጆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʤ</th>
   </tr>
   <tr>
-    <th>[gG]</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>ጒ</td><td>ጓ</td><td>ጔ</td><td>ጕ</td><th>g</th>
+    <th>[gG]</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>𞟸</td><td>ጓ</td><td>𞟹</td><td>𞟺</td><th>g</th>
   </tr>
   <tr>
     <th>[gG][yY]</th><td>ጘ</td><td>ጙ</td><td>ጚ</td><td>ጛ</td><td>ጜ</td><td>ጝ</td><td>ጞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>gʸ</th>
@@ -230,10 +233,10 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>S</th><td>ጸ</td><td>ጹ</td><td>ጺ</td><td>ጻ</td><td>ጼ</td><td>ጽ</td><td>ጾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>sʼ</th>
   </tr>
   <tr>
-    <th>[fF]</th><td>ፈ</td><td>ፉ</td><td>ፊ</td><td>ፋ</td><td>ፌ</td><td>ፍ</td><td>ፎ</td><td>ᎈ</td><td>ᎉ</td><td>ፏ</td><td>ᎊ</td><td>ᎋ</td><th>f</th>
+    <th>[fF]</th><td>ፈ</td><td>ፉ</td><td>ፊ</td><td>ፋ</td><td>ፌ</td><td>ፍ</td><td>ፎ</td><td>ᎈ</td><td>𞟻</td><td>ፏ</td><td>𞟼</td><td>ᎋ</td><th>f</th>
   </tr>
   <tr>
-    <th>p</th><td>ፐ</td><td>ፑ</td><td>ፒ</td><td>ፓ</td><td>ፔ</td><td>ፕ</td><td>ፖ</td><td>ᎌ</td><td>ᎍ</td><td>ፗ</td><td>ᎎ</td><td>ᎏ</td><th>p</th>
+    <th>p</th><td>ፐ</td><td>ፑ</td><td>ፒ</td><td>ፓ</td><td>ፔ</td><td>ፕ</td><td>ፖ</td><td>ᎌ</td><td>𞟽</td><td>ፗ</td><td>𞟾</td><td>ᎏ</td><th>p</th>
   </tr>
   <tr>
     <td style="background-color: #ffffff; border-left-color: #ffffff; border-bottom-color: #ffffff;">&nbsp;</td><td>+ə</td><td>+u</td><td>+i</td><td>+a</td><td>+e</td><td>ɨ/-</td><td>+o</td><td>+ʷə</td><td>+ʷu</td><td>+ʷi</td><td>+ʷa</td><td>+ʷe</td><th>IPA</th>
@@ -308,7 +311,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2019-2020. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2019-2021. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
