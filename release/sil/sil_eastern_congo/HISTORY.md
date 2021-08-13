@@ -1,6 +1,10 @@
 Eastern Congo Keyboard Change History
 =====================================
 
+1.5.3 (2021-07-01)
+----------------
+* Updated to use new version of Charis SIL
+
 1.5.2 (23 April 2021)
 ------------------
 * Fixed bug where ''e should produce 'e. Instead it produced 'é. This also occurred 

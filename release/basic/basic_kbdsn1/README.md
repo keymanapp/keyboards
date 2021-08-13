@@ -1,9 +1,9 @@
 Sinhala Basic keyboard
 ==============
 
-(c) 2009-2020 SIL International
+(c) SIL International
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
@@ -22,4 +22,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Tablet
 

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Start Using Bunong ឞូន៝ង (SIL) keyboard</title>
+  <style type="text/css" media="screen">
+	li.en { font: 10pt Tahoma; }
+	h1 { font: bold 16pt; color: #4444cc; margin-bottom: 2px }
+    h2 { font: bold 12pt; color: #4444cc; }
+	li.km { font: 11pt Khmer Mondulkiri; }
+    
+	.tabs{
+    // width: 100%;
+    // display: inline-blockblock;
+    margin: 40px auto;
+    position: relative;
+	}
+
+	.tabs .tab{
+    float: left;
+    display: block;
+	}
+
+	.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+	}
+
+	.tabs .tab>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: #FFF;
+    background: #4A83FD;
+	}
+
+	.tabs .content {
+    z-index: 0;/* or display: none; */
+    overflow: hidden;
+    // width: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    // background: #303030;
+    // color: #DFDFDF;
+    border: solid black 1px;
+    opacity:0;
+    transition: opacity 400ms ease-out;
+	}
+
+	.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0;
+    background: #303030;
+    color: #F5F5F5;
+	}
+
+	.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;/* or display: block; */
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+	}
+	table {
+	border-collapse: collapse;
+	}
+
+	td, th {
+	border: 1px solid #999;
+	padding: 0.5rem;
+	text-align: left;
+	}
+
+	kbd
+	{
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    background-color:#f7f7f7;
+    border:1px solid #ccc;
+    border-radius:3px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    color:#333;
+    display:inline-block;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+    line-height:1.4;
+    margin:0 .2em;
+    padding:.2em .6em;
+    text-shadow:0 1px 0 #fff;
+	}
+  </style>
+</head>
+<body>
+
+<ul class="tabs">
+
+  <li class="tab km">
+      <input type="radio" name="tabs" checked="checked" id="tab1" />
+      <label for="tab1">ឞូន៝ង</label>
+      <div id="tab-content1" class="content">
+
+<h1>នតុមត្រ៝ង់​ កាដារនទើល៝ត់ «Bunong ឞូន៝ង (SIL)»</h1>
+
+<p style="text-align: justify;">
+កាដារនទើ​ល៝ត់អ្យា ញជេងគៃមាញចីសរាឆ៝តានាវងើយឞូន៝ង អីទ៝ង់រាឆ៝ទ្រោន។
+</p>
+
+<p style="text-align: justify;">
+នតីលញចីស «Khmer Mondulkiri» គែសលាប់តាត្រោម កាដារនទើល៝ត់​ «Bunong ឞូន៝ង (SIL)»។  នោកឞ៝ន់ងលាប់ មោលាសរាហ្វាត់ កាដារនទើល៝ត់​ «Bunong ឞូន៝ង (SIL)»  គែសងលាប់​ មោលាសគែសរាហ្វាត់ នតីលញចីស «Khmer Mondulkiri» នទ្រែលដ៝ង់។ 
+</p>
+
+<p style="text-align: justify;">
+ទឹងលែៈរាង្លៃរាង្លាប់តាត្រោមតោរាឆ៝ប់គែសញ៝ម់នអឹរ គៃមាកើលអ៝ន់ឞ៝ន់ទើសមាឆៃរាង្លៃរាង្លាប់។
+</p>
+
+<p style="text-align: justify;">
+អ្វាញ់តាត្រោមតារាងនាវល៝ត់​រាខាច់ឞើសទ៝ង់អ្យាគៃមាទើសជ៝យ លាសកើយ្សរាឆ៝អេងៗតឹងនទើល៝ត់៖ ​
+</p>
+
+<table>
+<thead><tr><th>នាវរាខាច់</th><th>នទើល៝ត់​តោរាឆ៝ប់(រាលាតក្វ៝ង់)</th><th>នទើល៝ត់​កុមព្យូតើ</th></tr></thead><tbody>
+ <tr><td>ឹ > ឺ</td><td><kbd>ឹ</kbd></td><td><kbd>W</kbd></td></tr>
+ <tr><td>េ > ែ > ៃ </td><td><kbd>េ</kbd></td><td><kbd>E</kbd></td></tr>
+ <tr><td>ុ > ូ</td><td><kbd>ុ</kbd></td><td><kbd>U</kbd></td></tr>
+ <tr><td>ិ > ី </td><td><kbd>ិ</kbd></td><td><kbd>I</kbd></td></tr>
+ <tr><td>ោ > ៅ </td><td><kbd>ោ</kbd></td><td><kbd>O</kbd></td></tr>
+ <tr><td>ៀ > ឿ </td><td><kbd>ៀ</kbd></td><td><kbd>[</kbd></td></tr>
+ <tr><td>៖ > : </td><td><kbd>៖</kbd></td><td><kbd>]</kbd></td></tr>
+ <tr><td>\ > / > |</td><td><kbd>\</kbd></td><td><kbd>\</kbd></td></tr>
+ <tr><td>" > ' </td><td><kbd>"</kbd></td><td><kbd>Shift</kbd> <kbd>'</kbd></td></tr>
+ <tr><td>« > " > '</td><td><kbd>«</kbd></td><td><kbd>`</kbd></td></tr>
+ <tr><td>» > " > '</td><td><kbd>»</kbd></td><td><kbd>Shift</kbd> <kbd>`</kbd></td></tr>
+ <tr><td>- > — </td><td><kbd>-</kbd></td><td><kbd>-</kbd></td></tr>
+ <tr><td>( > [ > { </td><td><kbd>(</kbd></td><td><kbd>Shift</kbd> <kbd>9</kbd></td></tr>
+ <tr><td>) > ] > } </td><td><kbd>)</kbd></td><td><kbd>Shift</kbd> <kbd>0</kbd></td></tr>
+ <tr><td>។ > ៕ > ! > ? > ៗ </td><td><kbd>។</kbd></td><td><kbd>.</kbd></td></tr>
+ <tr><td>ZWSP > ⎵ </td><td><kbd>Spacebar</kbd></td><td><kbd>Spacebar</kbd></td></tr>
+</tbody></table>
+
+<p style="text-align: justify;">
+នាវមឞើសមានទើល៝ត់រាខាច់ងគ្លែៈទុត ល៝ត់ <kbd>Spacebar</kbd> ទូត៝ង់គៃមាគិតទូនាវងើយ ល៝ត់ ២ត៝ង់គៃមា​អ្វាញ់ឆៃងខាស​ងាយ។
+</p>
+
+<h2>កាដារនទើញចីស</h2>
+
+<h3>កុមព្យូតើ - រាទាប់ត៝ល់១</h3>
+<p><a href="desktop_layout_default.png"><img class="keyboard" src="desktop_layout_default.png" width="100%" alt="Default (unshifted) state" /></a></p>
+
+<h3>កុមព្យូតើ - រាទាប់ត៝ល់២ <kbd>Shift</kbd></h3>
+<p><a href="desktop_layout_shift.png"><img class="keyboard" src="desktop_layout_shift.png" width="100%" alt="Shift state" /></a></p>
+
+<h3>តោរាឆ៝ប់ - រាទាប់ត៝ល់១</h3>
+<p><a href="phone_layout_default.png"><img class="keyboard" src="phone_layout_default.png" alt="Default state" /></a></p>
+
+<h3>តោរាឆ៝ប់ - រាទាប់ត៝ល់២ <kbd>⇧</kbd></h3>
+<p><a href="phone_layout_shift.png"><img class="keyboard" src="phone_layout_shift.png" alt="Shift state" /></a></p>
+
+<h3>តោរាឆ៝ប់ - ល៝ត់ជ៝ៈ</h3>
+<p style="text-align: justify;">
+នទើល៝ត់​អីគែសរាព្លៃជេៈៗឞើសលើមពែសឞើសមា ទើយ​ល៝ត់គៃ​មាអ្វាញ់រាឆ៝​អេងៗជិត នោកឞ៝ន់ល៝ត់ជ៝ៈ។
+</p>
+<p><a href="phone_longpress.png"><img class="keyboard" src="phone_longpress.png" alt="Longpress state" /></a></p>
+
+<h3>តោរាឆ៝ប់រាលាតក្វ៝ង់ - រាទាប់ត៝ល់១</h3>
+<p><a href="tablet_layout_default.png"><img class="keyboard" src="tablet_layout_default.png" alt="Default state" /></a></p>
+
+<h3>តោរាឆ៝ប់រាលាតក្វ៝ង់ - រាទាប់ត៝ល់២ <kbd>⇧</kbd></h3>
+<p><a href="tablet_layout_shift.png"><img class="keyboard" src="tablet_layout_shift.png" alt="Shift state" /></a></p>
+
+<p>&#169; 2021 SIL International</p>
+
+</div>
+</li>
+
+
+  <li class="tab km">
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2">ខ្មែរ</label>
+      <div id="tab-content2" class="content">
+<h1>ចាប់ផ្ដើមប្រើក្ដារចុច «Bunong ឞូន៝ង (SIL)»</h1>
+
+<p style="text-align: justify;">
+ក្ដារចុចនេះត្រូវបានបង្កើតឡើងសម្រាប់វាយអត្ថបទភាសាព្នង ដោយប្រើតួអក្សរខ្មែរ។</p>
+
+<p style="text-align: justify;">
+ពុម្ពអក្សរ «Khmer Mondulkiri» ត្រូវបានដាក់បញ្ចូលក្នុងកញ្ចប់ក្ដារចុចនេះស្រាប់។ ពុម្ពអក្សរនេះនឹងត្រូវបានដំឡើង និងលុបចេញ ជាមួយនឹងក្ដារចុចនេះ។
+</p>
+
+<p style="text-align: justify;">
+ស្រៈទាំងអស់ក្នុងប្លង់ក្ដារចុចសម្រាប់ទូរសព្ទត្រូវបានរំលេចពណ៌ ដើម្បីជួយអ្នកឱ្យងាយរកឃើញ។
+</p>
+
+<p style="text-align: justify;">
+តារាងខាងក្រោមបង្ហាញពីជម្រើសនៃការផ្លាស់ប្ដូរតួអក្សរសម្រាប់គ្រាប់ចុចមួយចំនួន៖
+</p>
+
+<table>
+<thead><tr><th>ការផ្លាស់ប្ដូរ</th><th>គ្រាប់ចុចទូរសព្ទ/ថេប្លេត</th><th>គ្រាប់ចុចកុំព្យូទ័រ</th></tr></thead><tbody>
+ <tr><td>ឹ > ឺ</td><td><kbd>ឹ</kbd></td><td><kbd>W</kbd></td></tr>
+ <tr><td>េ > ែ > ៃ </td><td><kbd>េ</kbd></td><td><kbd>E</kbd></td></tr>
+ <tr><td>ុ > ូ</td><td><kbd>ុ</kbd></td><td><kbd>U</kbd></td></tr>
+ <tr><td>ិ > ី </td><td><kbd>ិ</kbd></td><td><kbd>I</kbd></td></tr>
+ <tr><td>ោ > ៅ </td><td><kbd>ោ</kbd></td><td><kbd>O</kbd></td></tr>
+ <tr><td>ៀ > ឿ </td><td><kbd>ៀ</kbd></td><td><kbd>[</kbd></td></tr>
+ <tr><td>៖ > : </td><td><kbd>៖</kbd></td><td><kbd>]</kbd></td></tr>
+ <tr><td>\ > / > |</td><td><kbd>\</kbd></td><td><kbd>\</kbd></td></tr>
+ <tr><td>" > ' </td><td><kbd>"</kbd></td><td><kbd>Shift</kbd> <kbd>'</kbd></td></tr>
+ <tr><td>« > " > '</td><td><kbd>«</kbd></td><td><kbd>`</kbd></td></tr>
+ <tr><td>» > " > '</td><td><kbd>»</kbd></td><td><kbd>Shift</kbd> <kbd>`</kbd></td></tr>
+ <tr><td>- > — </td><td><kbd>-</kbd></td><td><kbd>-</kbd></td></tr>
+ <tr><td>( > [ > { </td><td><kbd>(</kbd></td><td><kbd>Shift</kbd> <kbd>9</kbd></td></tr>
+ <tr><td>) > ] > } </td><td><kbd>)</kbd></td><td><kbd>Shift</kbd> <kbd>0</kbd></td></tr>
+ <tr><td>។ > ៕ > ! > ? > ៗ </td><td><kbd>។</kbd></td><td><kbd>.</kbd></td></tr>
+ <tr><td>ZWSP > ⎵ </td><td><kbd>Spacebar</kbd></td><td><kbd>Spacebar</kbd></td></tr>
+</tbody></table>
+
+<p style="text-align: justify;">
+សេចក្ដីពន្យល់សម្រាប់គ្រាប់ចុចដកឃ្លា៖ ចុច <kbd>Spacebar</kbd> ម្ដងដើម្បីសម្គាល់ចុងពាក្យ [ដំណកឃ្លាមើលមិនឃើញ (ZWSP)] ហើយចុចពីរដងដើម្បីបានដំណកឃ្លាធម្មតា។
+</p>
+
+<h2>ប្លង់ក្ដារចុច</h2>
+
+<h3>កុំព្យូទ័រ - ស្រទាប់ដើម</h3>
+<p><a href="desktop_layout_default.png"><img class="keyboard" src="desktop_layout_default.png" width="100%" alt="Default (unshifted) state" /></a></p>
+
+<h3>កុំព្យូទ័រ - ស្រទាប់ <kbd>Shift</kbd></h3>
+<p><a href="desktop_layout_shift.png"><img class="keyboard" src="desktop_layout_shift.png" width="100%" alt="Shift state" /></a></p>
+
+<h3>ទូរសព្ទ - ស្រទាប់ដើម</h3>
+<p><a href="phone_layout_default.png"><img class="keyboard" src="phone_layout_default.png" alt="Default state" /></a></p>
+
+<h3>ទូរសព្ទ - ស្រទាប់ <kbd>⇧</kbd></h3>
+<p><a href="phone_layout_shift.png"><img class="keyboard" src="phone_layout_shift.png" alt="Shift state" /></a></p>
+
+<h3>ទូរសព្ទ - ចុចឱ្យជាប់</h3>
+<p style="text-align: justify;">
+ចុចឱ្យជាប់លើគ្រាប់ចុចដែលមានចំណុចតូចមួយនៅខាងលើផ្នែកខាងស្ដាំ ដើម្បីបង្ហាញគ្រាប់ចុចច្រើនទៀត។
+</p>
+<p><a href="phone_longpress.png"><img class="keyboard" src="phone_longpress.png" alt="Longpress state" /></a></p>
+
+<h3>ថេប្លេត - ស្រទាប់ដើម</h3>
+<p><a href="tablet_layout_default.png"><img class="keyboard" src="tablet_layout_default.png" alt="Default state" /></a></p>
+
+<h3>ថេប្លេត - ស្រទាប់ <kbd>⇧</kbd></h3>
+<p><a href="tablet_layout_shift.png"><img class="keyboard" src="tablet_layout_shift.png" alt="Shift state" /></a></p>
+
+<p>&#169; 2021 SIL International</p>
+     </div>
+  </li>
+
+    <li class="tab en">
+      <input type="radio" name="tabs" id="tab3" />
+      <label for="tab3">English</label>
+      <div id="tab-content2" class="content">
+<h1>Start Using Bunong ឞូន៝ង (SIL) Keyboard</h1>
+
+<p style="text-align: justify;">
+This keyboard is designed for typing Bunong language using Khmer characters.</p>
+
+<p style="text-align: justify;">
+Khmer Mondulkiri font is included in the keyboard package. It will be installed and uninstalled along with the keyboard.
+</p>
+
+<p style="text-align: justify;">
+All vowels on the phone layout are highlighted to help you locate where the Bunong vowels are.
+</p>
+
+<p style="text-align: justify;">
+Look in the following table of Rotation (Rota) rules to see the character options/choices for each key:
+</p>
+
+<table>
+<thead><tr><th>Rotation</th><th>Phone/Tablet Key</th><th>Computer Key</th></tr></thead><tbody>
+ <tr><td>ឹ > ឺ</td><td><kbd>ឹ</kbd></td><td><kbd>W</kbd></td></tr>
+ <tr><td>េ > ែ > ៃ </td><td><kbd>េ</kbd></td><td><kbd>E</kbd></td></tr>
+ <tr><td>ុ > ូ</td><td><kbd>ុ</kbd></td><td><kbd>U</kbd></td></tr>
+ <tr><td>ិ > ី </td><td><kbd>ិ</kbd></td><td><kbd>I</kbd></td></tr>
+ <tr><td>ោ > ៅ </td><td><kbd>ោ</kbd></td><td><kbd>O</kbd></td></tr>
+ <tr><td>ៀ > ឿ </td><td><kbd>ៀ</kbd></td><td><kbd>[</kbd></td></tr>
+ <tr><td>៖ > : </td><td><kbd>៖</kbd></td><td><kbd>]</kbd></td></tr>
+ <tr><td>\ > / > |</td><td><kbd>\</kbd></td><td><kbd>\</kbd></td></tr>
+ <tr><td>" > ' </td><td><kbd>"</kbd></td><td><kbd>Shift</kbd> <kbd>'</kbd></td></tr>
+ <tr><td>« > " > '</td><td><kbd>«</kbd></td><td><kbd>`</kbd></td></tr>
+ <tr><td>» > " > '</td><td><kbd>»</kbd></td><td><kbd>Shift</kbd> <kbd>`</kbd></td></tr>
+ <tr><td>- > — </td><td><kbd>-</kbd></td><td><kbd>-</kbd></td></tr>
+ <tr><td>( > [ > { </td><td><kbd>(</kbd></td><td><kbd>Shift</kbd> <kbd>9</kbd></td></tr>
+ <tr><td>) > ] > } </td><td><kbd>)</kbd></td><td><kbd>Shift</kbd> <kbd>0</kbd></td></tr>
+ <tr><td>។ > ៕ > ! > ? > ៗ </td><td><kbd>។</kbd></td><td><kbd>.</kbd></td></tr>
+ <tr><td>ZWSP > ⎵ </td><td><kbd>Spacebar</kbd></td><td><kbd>Spacebar</kbd></td></tr>
+</tbody></table>
+
+<p style="text-align: justify;">
+Explanation of the final Rota rule: Press <kbd>Spacebar</kbd> once to mark the end of a word [invisible space (ZWSP)] and twice for a visible space.
+</p>
+
+<h2>Keyboard Layouts</h2>
+
+<h3>Desktop - Unshifted [Same as 'Default']</h3>
+<p><a href="desktop_layout_default.png"><img class="keyboard" src="desktop_layout_default.png" width="100%" alt="Default (unshifted) state" /></a></p>
+
+<h3>Desktop - Shifted</h3>
+<p><a href="desktop_layout_shift.png"><img class="keyboard" src="desktop_layout_shift.png" width="100%" alt="Shift state" /></a></p>
+
+<h3>Phone - Default</h3>
+<p><a href="phone_layout_default.png"><img class="keyboard" src="phone_layout_default.png" alt="Default state" /></a></p>
+
+<h3>Phone - Shift</h3>
+<p><a href="phone_layout_shift.png"><img class="keyboard" src="phone_layout_shift.png" alt="Shift state" /></a></p>
+
+<h3>Phone - Longpress</h3>
+<p style="text-align: justify;">
+Keys with a little dot on the top right can be pressed and held for more keys.
+</p>
+<p><a href="phone_longpress.png"><img class="keyboard" src="phone_longpress.png" alt="Longpress state" /></a></p>
+
+<h3>Tablet - Default</h3>
+<p><a href="tablet_layout_default.png"><img class="keyboard" src="tablet_layout_default.png" alt="Default state" /></a></p>
+
+<h3>Tablet - Shift</h3>
+<p><a href="tablet_layout_shift.png"><img class="keyboard" src="tablet_layout_shift.png" alt="Shift state" /></a></p>
+
+<p>&#169; 2021 SIL International</p>
+
+     </div>
+  </li>
+
+</ul>
+
+</body>
+</html>

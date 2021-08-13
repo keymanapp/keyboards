@@ -1,6 +1,21 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.2 (12 Jul 2021)
+-----------------
+
+* All alphabetic layers on touch layout will now default to the default layer upon key press.
+
+4.0.1 (25 Jun 2021)
+-----------------
+
+* Reverted NFD to NFC encoding for vowels with diacritics in touch layout.
+
+4.0.0 (10 Jun 2021)
+-----------------
+
+* Revamped touch (mobile) keyboard and synced it with standard iOS keyboard.
+
 3.4.1 (17 Jan 2020)
 -----------------
 

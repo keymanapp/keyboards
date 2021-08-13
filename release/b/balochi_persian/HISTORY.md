@@ -1,8 +1,12 @@
 Balochi Persian Change History
 ==============================
+1.4 (28 May 2021)
+-----------------
+Zal letter added. Left and right single and double quotation marks 
+added. En-dash added. Additional right-to-left mark and left-to-right mark added. 
 
-1.1 (2020-05-25)
-----------------
+1.1 (25 May 2020)
+-----------------
 Put non-Balochi letters on secondary layers.
 
 1.0 (2019-07-16)

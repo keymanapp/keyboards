@@ -1,11 +1,5 @@
-Keyboard Data
--------------
-
-* Name:           Balochi Phonetic
-* Copyright:      (C) 2017-2020 SIL International
-* Version:        1.3.2
-* Keyman Version: 10.0
-* BCP-47 codes:   bcc-Arab
+Balochi Phonetic keyboard
+=========================
 
 Description
 -----------
