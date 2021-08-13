@@ -1,13 +1,11 @@
 Uma phonetic Change History
 ====================
-1.1 (2021-08-07)
+3.1 (2021-08-13
 ----------------
-* Fixed bugs with the keyboard layout
-* Updated keyboard documentation
-* Created by Houma Language Project
-----------------
+* Updated Keyboard Layout
+* Bug fixes
+* Added new mobile layout
 
 1.0 (2021-07-31)
 ----------------
-* Created by Houma Language Project
-----------------
+* Created by Jack Rittenberry
