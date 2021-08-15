@@ -134,7 +134,7 @@ function build_keyboard {
   #
   # Check if .keyboard_info doesn't exist
   #
-  keyboard_infoFilename="$base_keyboard.keyboard_info"
+  local keyboard_infoFilename="$base_keyboard.keyboard_info"
   if [ ! -f "$keyboard_infoFilename" ]; then
     if [ "$WARNINGS_AS_ERRORS" = true ]; then
       die "$keyboard_infoFilename doesn't exist"
@@ -145,11 +145,13 @@ function build_keyboard {
   fi
 
   #
-  # Validate the .keyboard_info before build
+  # Validate the .keyboard_info and .kps before build
   #
 
+  local packageFilename="source/$base_keyboard.kps"
   validate_keyboard_info "$keyboard_infoFilename" || die "Failed to validate $keyboard_infoFilename in $keyboard"
   validate_keyboard_uniqueness "$group" "$keyboard" "$base_keyboard"
+  validate_package_file "$packageFilename" || die "Failed to validate $packageFilename"
 
   if [ "$DO_BUILD" = false ]; then
     popd
