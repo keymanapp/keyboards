@@ -1,0 +1,59 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Nkonya'
+store(&COPYRIGHT) '(c) 1993-2021 GILLBT'
+store(&KEYBOARDVERSION) '8.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'nkonya.kvks'
+store(&LAYOUTFILE) 'nkonya.keyman-touch-layout'
+store(&BITMAP) 'nkonya.ico'
+store(&CasedKeys) 'a'..'z' '=' '[' ']'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c &CasedKeys currently (2021-08) won't apply unless a rule is present,
+c so the following makes sure all unmodified alphabetic keys have a rule.
+store(normal) 'abcdefghijklmnoprstuvwyz' c 'q' and 'x' handled below
++ any(normal) > index(normal,1)
+
+c following taken from original (GhanaUnicode-NKO.kmn)
+'\' + 'q' >	'\q'	c allow easy typing of \q for scriptures
++ "[" > U+025B
+";" + "[" > "["
++ "{" > U+0190
+";" + "{" > "{"
++ "]" > U+0254
+";" + "]" > "]"
++ "}" > U+0186
+";" + "}" > "}"
++ "=" > U+014B
+";" + "=" > "="
++ "+" > U+014A
+";" + "+" > "+"
++ "x" > U+0269
+";" + "x" > "x"
++ "X" > U+0196
+";" + "X" > "X"
++ "q" > U+028B
+";" + "q" > "q"
++ "Q" > U+01B2
+";" + "Q" > "Q"
+"'" + "a" > "a" U+0301
+"'" + "A" > "A" U+0301
+"'" + "e" > "e" U+0301
+"'" + "E" > "E" U+0301
+"'" + "i" > "i" U+0301
+"'" + "I" > "I" U+0301
+"'" + "o" > "o" U+0301
+"'" + "O" > "O" U+0301
+"'" + "u" > "u" U+0301
+"'" + "U" > "U" U+0301
+"'" + "[" > U+025B U+0301
+"'" + "{" > U+0190 U+0301
+"'" + "]" > U+0254 U+0301
+"'" + "}" > U+0186 U+0301
+"'" + "x" > U+0269 U+0301
+"'" + "X" > U+0196 U+0301
+"'" + "q" > U+028B U+0301
+"'" + "Q" > U+01B2 U+0301
