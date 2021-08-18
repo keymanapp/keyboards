@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Ma'di (SIL) Keyboard Help';
-  $pagetitle = 'Ma'di (SIL) Keyboard Help';
+  $pagename = 'Ma\'di (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
