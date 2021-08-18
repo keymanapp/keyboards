@@ -1,6 +1,10 @@
 Shan (SIL) Keyboard Change History
 =======================
 
+1.3.2 (18 Aug 2021)
+-----------------
+* Added U+107E to SHIFT+Z key
+
 1.3.1 (5 Jan 2021)
 -----------------
 * Improved documentation for accessing anusvara
