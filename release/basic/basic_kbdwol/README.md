@@ -1,17 +1,15 @@
 Wolof Basic keyboard
 ==============
 
-(c) 2018 SIL International
-
-Version 1.0
+(c) SIL International
 
 Description
 -----------
-
-Wolof Basic generated from template
+Keyboard for the Wolof language of Senegal. This keyboard is based on the Windows 10 keyboard layout.
 
 Links
 -----
+https://keyman.com/keyboards/basic_kbdwol
 
 Supported Platforms
 -------------------
