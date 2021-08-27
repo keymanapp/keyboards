@@ -1,18 +1,18 @@
 ﻿c obolo_qwerty generated from template at 2020-05-09 09:03:09 with name "obolo_qwerty"
-store(&VERSION) '9.0'
+store(&VERSION) '14.0'
 store(&NAME) 'Obolo Qwerty'
-store(&ETHNOLOGUECODE)'ann'
-store(&COPYRIGHT) '© 2020 Rogers Edeh'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© 2020 - 2021 Rogers Katelem Edeh'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'obolo_qwerty.kvks'
 store(&LAYOUTFILE) 'obolo_qwerty.keyman-touch-layout'
-store(&MESSAGE) 'A simple keyboard layout (Qwerty) to help you type very easily in Obolo language.'
-store(&KMW_HELPTEXT) 'A simple keyboard layout (Qwerty) to help you type very easily in Obolo language.'
+store(&BITMAP) 'obolo_qwerty.ico'
+store(&MESSAGE) 'A simple keyboard layout for the Obolo language of Nigeria. The keyboard covers the need of every the dialect in that language.'
+store(&KMW_HELPTEXT) 'A simple keyboard layout (QWERTY) to help you type very easily in Obolo language.'
 
 begin Unicode > use(main)
 
-store(accentibles) 'aeiọoumnAEIỌOUMN'
+store(accentibles) 'aeiọoumnAEIỌOUMNn̄'
 store(accents) [T_GRV] [T_ACU] [T_CCM] [T_CRN] [SHIFT T_GRV] [SHIFT T_ACU] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKQUOTE] [SHIFT K_BKQUOTE] [K_BKSLASH] [SHIFT K_BKSLASH]
 store(nasals) 'mnMN'
 store(nnas) [T_CCM] [T_CRN] [SHIFT T_CCM] [SHIFT T_CRN] [K_BKSLASH] [SHIFT K_BKSLASH]
@@ -25,22 +25,35 @@ store(acnasals) 'ḿńḾŃ'
 store(spguy) 'mnọMNỌ'
 store(spguyop) 'ḿǹộḾǸỘ'
 store(dotable) 'oOsS'
-store(n) 'nN'
 store(erase) [K_BKSP] [SHIFT K_BKSP] [ALT K_BKSP]
 store(gravekeys) [T_GRV] [SHIFT T_GRV] [K_BKQUOTE]
-store(acutekeys) [T_ACU] [SHIFT T_ACU] [K_BKSLASH]
-store(circumflexkeys) [T_CCM] [SHIFT T_CCM] [SHIFT K_BKQUOTE]
+store(acutekeys) [T_ACU] [SHIFT T_ACU] [SHIFT K_BKQUOTE]
+store(circumflexkeys) [T_CCM] [SHIFT T_CCM] [K_BKSLASH]
 store(caronkeys) [T_CRN] [SHIFT T_CRN] [SHIFT K_BKSLASH]
-store(dotkeys) [T_DOT] [SHIFT T_DOT] [SHIFT K_PERIOD]
-store(macronkeys) [T_NAS] [SHIFT T_NAS] [SHIFT K_HYPHEN]
 
 group(main) using keys
+c for touchscreen
++ [T_NMCR] > 'n̄'
++ [SHIFT T_NMCR] > 'N̄'
 
-'o' + any(dotkeys) > 'ọ'
-'O' + any(dotkeys) > 'Ọ'
++ [T_OWD] > 'ọ'
++ [SHIFT T_OWD] > 'Ọ'
 
-'s' + any(dotkeys) > 'ṣ'
-'S' + any(dotkeys) > 'Ṣ'
++ [T_ORGR] > 'ọ̀'
++ [SHIFT T_ORGR] > 'Ọ̀'
+
++ [T_MGR] > 'm̀'
++ [SHIFT T_MGR] > 'M̀'
+
+c for desktop
+'o' + [K_LBRKT] > 'ọ'
+'O' + [K_LBRKT] > 'Ọ'
+
+'n' + [K_LBRKT] > 'n̄'
+'N' + [K_LBRKT] > 'N̄'
+
+'s' + [K_LBRKT] > 'ṣ'
+'S' + [K_LBRKT] > 'Ṣ'
 
 c make up for
 'm' + any(gravekeys) > 'm̀'
@@ -61,8 +74,8 @@ c make up for
 'ọ' + any(caronkeys) > 'ọ̌'
 'Ọ' + any(caronkeys) > 'Ọ̌'
 
-'n' + any(macronkeys) > 'n̄'
-'N' + any(macronkeys) > 'N̄'
+'n̄' + any(circumflexkeys) > 'ñ'
+'N̄' + any(circumflexkeys) > 'Ñ'
 
 c any and index
 any(vow) + any(gravekeys) > index(grave,1)
@@ -78,7 +91,8 @@ any(circum) + any(erase) > index(vow,1)
 any(caron) + any(erase) > index(vow,1)
 any(spguyop) + any(erase) > index(spguy,1)
 
+'n̄' + any(erase) > nul
+'N̄' + any(erase) > nul
+
 notany(accentibles) + any(accents) > context beep c prevent diacritics (stacking, on empty space, and on plain consonants)
-notany(dotable) + any(dotkeys) > context beep
-notany(n) + any(macronkeys) > context beep
 any(nasals) + any(nnas) > context beep c prevent certain accents on nasal consonants

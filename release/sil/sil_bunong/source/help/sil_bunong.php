@@ -1,45 +1,50 @@
 <?php 
-  $pagename = 'Bunong (SIL) Keyboard Help';
+  $pagename = 'Bunong ឞូន៝ង (SIL) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 ?>
 
-<p>
-    This keyboard is designed for typing Bunong language using Khmer characters.
+<h1>Start Using Bunong ឞូន៝ង (SIL) Keyboard</h1>
+
+<p style="text-align: justify;">
+This keyboard is designed for typing Bunong language using Khmer characters.</p>
+
+<p style="text-align: justify;">
+Khmer Mondulkiri font is included in the keyboard package. It will be installed and uninstalled along with the keyboard.
 </p>
 
-<p>
-	Khmer Mondulkiri font is embedded and included in the keyboard package. It will be installed and uninstalled along with the keyboard.
+<p style="text-align: justify;">
+All vowels on the phone layout are highlighted to help you locate where the Bunong vowels are.
 </p>
 
-<p>
-	All vowels on the phone layout are highlighted to help you locate where the Bunong vowels are on both the Default and Shift layers.
+<p style="text-align: justify;">
+Look in the following table of Rotation (Rota) rules to see the character options/choices for each key:
 </p>
 
-<p>
-	Rota rules help you to flick through the similar characters. These work on both the desktop and touch layotus.
-</p>
-<ul>
-<li>Press <kbd>I</kbd> twice to get <span> ី</span> and press it one more time to get back to <span>ិ</span>.</li>
-<li>Press <kbd>W</kbd> twice to get <span>ឺ</span> and press it one more time to get back to <span>ឹ</span>.</li>
-<li>Press <kbd>U</kbd> twice to get <span>ូ</span> and press it one more time to get back to <span>ុ</span>.</li>
-<li>Press <kbd>E</kbd> twice to get <span>ែ</span>, thrice <span>ៃ</span> and press it one more time to get back to <span>េ</span>.</li>
-<li>Press <kbd>[</kbd> twice to get <span>ឿ</span> and press it one more time to get back to <span>ៀ</span>.</li>
-<li>Press <kbd>O</kbd> twice to get <span>ៅ</span> and press it one more time to get back to <span>ោ</span>.</li>
-<li>Press <kbd>I</kbd> twice to get <span>ិ</span> and press it one more time to get back to <span>ី</span>.</li>
-</ul>
-<ul>
-<li>Press <kbd>]</kbd> twice to get <span>ះ</span>, thrice to get <span>ៈ</span>, quadruple to get <span>:</span> and press it one more time to get back to <span>៖</span>.</li>
-<li>Press <kbd>.</kbd> twice to get <span>៕</span> and press it one more time to get back to <span>។</span>.</li>
-<li>Press <kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>«</span>.</li>
-<li>Press <kbd>Shift</kbd><kbd>`</kbd> twice to get <span>"</span>, thrice <span>'</span> and press it one more time to get back to <span>»</span>.</li>
-<li>Press <kbd>-</kbd> twice to get <span>—</span> and press it one more time to get back to <span>-</span>.</li>
-<li>Press <kbd>)</kbd> twice to get <span>]</span>, thrice to get <span>}</span> and press it one more time to get back to <span>)</span>.</li>
-<li>Press <kbd>(</kbd> twice to get <span>[</span>, thrice to get <span>{</span> and press it one more time to get back to <span>(</span>.</li>
-<li>Press <kbd>\</kbd> twice to get <span>/</span>, thrice to get <span>|</span> and press it one more time to get back to <span>\</span>.</li>
-</ul>
+<table>
+<thead><tr><th>Rotation</th><th>Phone/Tablet Key</th><th>Computer Key</th></tr></thead><tbody>
+ <tr><td>ឹ > ឺ</td><td><kbd>ឹ</kbd></td><td><kbd>W</kbd></td></tr>
+ <tr><td>េ > ែ > ៃ </td><td><kbd>េ</kbd></td><td><kbd>E</kbd></td></tr>
+ <tr><td>ុ > ូ</td><td><kbd>ុ</kbd></td><td><kbd>U</kbd></td></tr>
+ <tr><td>ិ > ី </td><td><kbd>ិ</kbd></td><td><kbd>I</kbd></td></tr>
+ <tr><td>ោ > ៅ </td><td><kbd>ោ</kbd></td><td><kbd>O</kbd></td></tr>
+ <tr><td>ៀ > ឿ </td><td><kbd>ៀ</kbd></td><td><kbd>[</kbd></td></tr>
+ <tr><td>៖ > : </td><td><kbd>៖</kbd></td><td><kbd>]</kbd></td></tr>
+ <tr><td>\ > / > |</td><td><kbd>\</kbd></td><td><kbd>\</kbd></td></tr>
+ <tr><td>" > ' </td><td><kbd>"</kbd></td><td><kbd>Shift</kbd> <kbd>'</kbd></td></tr>
+ <tr><td>« > " > '</td><td><kbd>«</kbd></td><td><kbd>`</kbd></td></tr>
+ <tr><td>» > " > '</td><td><kbd>»</kbd></td><td><kbd>Shift</kbd> <kbd>`</kbd></td></tr>
+ <tr><td>- > — </td><td><kbd>-</kbd></td><td><kbd>-</kbd></td></tr>
+ <tr><td>( > [ > { </td><td><kbd>(</kbd></td><td><kbd>Shift</kbd> <kbd>9</kbd></td></tr>
+ <tr><td>) > ] > } </td><td><kbd>)</kbd></td><td><kbd>Shift</kbd> <kbd>0</kbd></td></tr>
+ <tr><td>។ > ៕ > ! > ? > ៗ </td><td><kbd>។</kbd></td><td><kbd>.</kbd></td></tr>
+ <tr><td>ZWSP > ⎵ </td><td><kbd>Spacebar</kbd></td><td><kbd>Spacebar</kbd></td></tr>
+</tbody></table>
 
+<p style="text-align: justify;">
+Explanation of the final Rota rule: Press <kbd>Spacebar</kbd> once to mark the end of a word [invisible space (ZWSP)] and twice for a visible space.
+</p>
 <h1>Keyboard Layout</h1>
 
   <h2>Desktop</h2>

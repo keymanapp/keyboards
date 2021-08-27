@@ -1,0 +1,28 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Colchian Phonetic'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&LAYOUTFILE) 'colchis_phonetic.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'colchis_phonetic.kvks'
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+store(khutsuri) U+10A0      U+10A1      U+10A2      U+10A3      U+10A4      U+10A5      U+10A6      U+10A7 \
+                U+10A8      U+10A9      U+10AA      U+10AB      U+10AC      U+10AD      U+10AE      U+10AF \
+                U+10B0      U+10B1      U+10B2      U+10B3      U+10B4      U+10B5      U+10B6      U+10B7 \
+                U+10B8      U+10B9      U+10BA      U+10BB      U+10BC      U+10BD      U+10BE      U+10BF \
+                U+10C0      U+10C1      U+10C2      U+10C3      U+10C4      U+10C5      U+10C7      U+10CD
+store(latin)    [K_A]       [K_B]       [K_G]       [K_D]       [K_E]       [K_V]       [K_Z]       [SHIFT K_T] \
+                [K_I]       [K_K]       [K_L]       [K_M]       [K_N]       [K_O]       [K_P]       [SHIFT K_J] \
+                [K_R]       [K_S]       [K_T]       [K_U]       [K_F]       [K_Q]       [SHIFT K_R] [K_Y] \
+                [SHIFT K_S] [SHIFT K_C] [K_C]       [SHIFT K_Z] [K_W]       [SHIFT K_W] [K_X]       [K_J] \
+                [K_H]       [SHIFT K_E] [SHIFT K_I] [SHIFT K_V] [SHIFT K_X] [SHIFT K_A] [SHIFT K_U] [SHIFT K_Y] 
+
+store(nul) "OPDFGHKBNM"
+group(main) using keys
+
++ any(latin) > index(khutsuri,1)
++ [SHIFT K_Q] > U+20AC
++ [SHIFT K_L] > U+20BE
++ [SHIFT K_M] > U+10FB
++ any(nul) > nul
