@@ -1,0 +1,89 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Colchis Latin'
+store(&VISUALKEYBOARD) 'colchis_latin.kvks'
+store(&BITMAP) 'colchis_latin.ico'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'colchis_latin.keyman-touch-layout'
+begin Unicode > use(main)
+
+store(GE_U)   U+0194          U+0263    U+01A7           U+01A8     U+A786          U+A787    U+2C6B          U+2C6C \
+              U+01B7          U+0292    U+00C7           U+00E7     U+015E          U+015F
+store(GE_Key) [SHIFT K_LBRKT] [K_LBRKT] [SHIFT K_RBRKT]  [K_RBRKT]  [SHIFT K_COMMA] [K_COMMA] [SHIFT K_QUOTE] [K_QUOTE] \
+              [SHIFT K_W]     [K_W]     [SHIFT K_PERIOD] [K_PERIOD] [SHIFT K_COLON] [K_COLON]
+
+store(V_K) "aeiouAEIOU"
+store(V_U) "âêîôûÂÊÎÔÛ"
+
+group(main) using keys  
+
+c Georgian letters
++ any(GE_Key) > index(GE_U,1)
+
+"^" + any(V_K) > index(V_U,2)
+
++ [SHIFT K_SLASH] > ':'
++ [SHIFT K_BKSLASH] > ';'
+
++ [SHIFT K_EQUAL] > '_'
++ [SHIFT K_HYPHEN] > '?'
++ [SHIFT K_0] > '='
++ [SHIFT K_9] > ')'
++ [SHIFT K_8] > '('
++ [SHIFT K_7] > '/'
++ [SHIFT K_6] > '&'
++ [SHIFT K_5] > '%'
++ [SHIFT K_4] > '+'
++ [SHIFT K_3] > U+005e
++ [SHIFT K_2] > U+0027
++ [SHIFT K_1] > '!'
++ [SHIFT K_BKQUOTE] > '̆'
++ [K_BKQUOTE] > '"'
++ [K_BKSLASH] > ','
++ [K_EQUAL] > '-'
++ [K_HYPHEN] > '*'
++ [K_SLASH] > '.'
++ [RALT K_Q] > "@"
++ [RALT K_A] > U+00E6
++ [SHIFT RALT K_A] > U+00C6
++ [RALT K_E] > U+20AC
++ [RALT K_T] > U+20BA
++ [RALT K_BKQUOTE] > "<"
++ [RALT K_1] > ">"
++ [RALT K_2] > "£"
++ [RALT K_3] > "#"
++ [RALT K_4] > "$"
++ [RALT K_5] > "½"
++ [RALT K_7] > "{"
++ [RALT K_8] > "["
++ [RALT K_9] > "]"
++ [RALT K_0] > "}"
++ [RALT K_HYPHEN] > "\"
++ [RALT K_EQUAL] > "|"
++ [RALT K_LBRKT] > "¨"
++ [RALT K_RBRKT] > "~"
++ [RALT K_BKSLASH] > "`"
+
++ [RALT K_W] > "w"
++ [SHIFT RALT K_W] > "W"
+
+
+
+
+c ejective rules
+"t" + "t" > 't̆' 
+"T" + "T" > 'T̆'
+"ç" + [K_PERIOD] > 'ç̆'
+"Ç" + ">" > 'Ç̆'
+"k" + "k" > 'k̆'
+"K" + "K" > 'K̆'
+"p" + "p" > 'p̆'
+"P" + "P" > 'P̆'
+"ʒ" + "w" > 'ʒ̆'
+"Ʒ" + "W" > 'Ʒ̆'
+"z" + "z" > 'z̆'
+"Z" + "Z" > 'Z̆'
+
+
+
