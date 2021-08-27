@@ -12,7 +12,7 @@
 </p>
 
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
-<p>^a will produce ä (available on aAeEiIoOuU). (The ^ is on the US "[" key.)</p>
+<p>^a will produce â (available on aAeEiIoOuU). (The ^ is on the US "[" key.)</p>
 <p>¨a will produce ä (available on aAeEiIoOuUy). (The ¨ is on the US "{" key.)</p>
 <p>~o will produce õ (available on aAnNoO).(The ~ is on the US "Right Alt 2" key.)</p>
 
