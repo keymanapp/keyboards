@@ -1,18 +1,23 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
 
+1.3 (30 Aug 2021)
+-----------------
+
+* Fixed the output of a longpress key of ។ on the default layer
+
 1.2 (12 Aug 2021)
 -----------------
 
 * Added translations to the Welcome page
-* Update English version of the Help page
+* Updated English version of the Help page
 
 1.1 (09 Aug 2021)
 -----------------
 
 * Updated keyboard name
-* Remove Reahmok. (The rota on the ] key will be ៖ > : )
-* Move ៈ to ; key​ on desktop
+* Removed Reahmok. (The rota on the ] key will be ៖ > : )
+* Moved ៈ to ; key​ on desktop
 * `» > " > ' > »` updated to `» > " > ' > »`
 * `« > " > ' > «` updated to `« > " > ' > «`
 

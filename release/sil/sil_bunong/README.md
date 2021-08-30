@@ -3,7 +3,7 @@ Bunong ឞូន៝ង (SIL) Keyboard Data
 
 Copyright (C) 2021 SIL International
 
-Version 1.2
+Version 1.3
 
 Description
 -----------
