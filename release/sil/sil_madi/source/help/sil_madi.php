@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Ma'di (SIL) Keyboard Help';
-  $pagetitle = 'Ma'di (SIL) Keyboard Help';
+  $pagename = 'Ma\'di (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
@@ -67,18 +67,18 @@
 <h1>Keyboard Layout</h1>
 <h2>Keyboard Layout on PC</h2>
 <div id='osk' data-states='default shift'>
+</div>
 
 <h2>Keyboard Layout on Phones</h2>
-<div id='tablet' data-states='default shift numeric'>
+<div id='osk-phone' data-states='default shift numeric'>
+</div>
 
 	<h3>Long Press</h3>
 	<p>Press and hold on a key with a little dot on the top right corner of the key to reveal more keys, then roll over to the key you like.</p>
 	<p><a href="touch_longpress.png"><img width="80%" class="keyboard" src="phone_longpress.png" alt="Long Press state" /></a></p>
 	
 <h2>Keyboard Layout on Tablets</h2>
-<div id='tablet' data-states='default shift numeric'>
-
-
+<div id='osk-tablet' data-states='default shift'>
 </div>
 
 

@@ -3,7 +3,7 @@ Colchis Latin Keyboard
 
 © SIL International
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------

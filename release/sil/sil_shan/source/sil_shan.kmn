@@ -9,13 +9,13 @@ c store(&hotkey) [CTRL ALT K_S]
 store(&TARGETS) 'windows macosx linux web'
 store(&BITMAP) 'sil_shan.ico'
 store(&VISUALKEYBOARD) 'sil_shan.kvks'
-store(&KEYBOARDVERSION) '1.3.1'
+store(&KEYBOARDVERSION) '1.3.2'
 begin Unicode > use(Main)
 
 store(baseK)    'qwertyui' \
                 'opzxcvbn' \
                 'QWERYUIO' \
-                'PKXCVN'
+                'PZXCVN'
 store(baseU)    U+1078 U+1010 U+107C U+1019 U+1022 U+1015 U+1075 U+1004 \
                 U+101D U+1081 U+107D U+1011 U+1076 U+101C U+101A U+107A \
                 U+AA61 U+107B U+A9E3 U+109E U+107F U+1077 U+101B U+101E \
@@ -96,6 +96,7 @@ group(Main) using keys
 + [RALT K_Z] > U+A9E4
 + [RALT K_X] > U+AA67
 + [SHIFT RALT K_X] > U+AA69
++ [SHIFT RALT K_H] > U+1036
 + [RALT K_S] > U+101D U+A9E5
 
 + any(prevK) > outs(filler) index(prevU, 1)
@@ -110,6 +111,7 @@ any(filler) any(prevU) + [RALT K_X] > U+AA67 index(prevU, 2)
 any(filler) any(prevU) + [SHIFT RALT K_X] > U+AA69 index(prevU, 2)
 any(filler) any(prevU) + [K_BKSP] > nul
 any(baseU) any(prevU) + [K_BKSP] > outs(filler) index(prevU, 2)
+
 
 c any(ydiaU) any(rdiaU) any(wdiaU) any(udiaU) any(sdiaU) any(ldiaU) any(ldotU)
 any(ymedU) any(rmedU) any(w1medU) any(udiaU) any(sdiaU) any(ldiaU) + any(asatK) > index(asatU, 7) context
@@ -274,3 +276,6 @@ U+1036 any(ldiaU) any(ldotU) + any(m3DiaK) > index(mDia, 4) index(ldiaU,2) U+103
 U+1036 any(ldiaU) + any(m3DiaK) > index(mDia, 3) index(ldiaU,2) U+1036
 U+1036 any(ldotU) + any(m3DiaK) > index(mDia, 3) U+1036 index(ldotU,2)
 U+1036 + any(m3DiaK) > index(mDia, 2) context
+
+c fix ၵျေႃႇ
+any(prevU) + any(m2DiaK) > index(mDia, 2) context
