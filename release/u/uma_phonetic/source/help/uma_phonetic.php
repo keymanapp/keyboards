@@ -7,7 +7,7 @@
 <h1>Start Using Uma Phonetic</h1>
 
 <p>
-    Uma Phonetic Keyboard version 1.0 created for the Houma Language Project for typing in Uma.
+    Uma Phonetic Keyboard version 1.1 created for the Houma Language Project for typing in Uma.
 </p>
 
 <h1>Keyboard Layout</h1>
