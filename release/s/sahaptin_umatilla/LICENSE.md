@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© Confederated Tribes of the Umatilla Indian Reservation
+© 2021 Confederated Tribes of the Umatilla Indian Reservation
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
