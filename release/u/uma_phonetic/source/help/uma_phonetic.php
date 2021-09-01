@@ -12,6 +12,12 @@
 
 <h1>Keyboard Layout</h1>
 
-<img src="keyboardlayout.PNG" alt="Uma Keyboard Layout">
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
 
-<p>©Houma Language Project 2021</p>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift numeric'>
+</div>
+
+<p>© 2021 Houma Language Project</p>
