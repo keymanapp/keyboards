@@ -13,7 +13,11 @@ Version 1.0 developed by Jonathan Geary (JonathanGeary@ctuir.org), adapted from 
 
 Links
 -----
-
+ * CTUIR Language Program Website: https://ctuir.org/departments/education/language/
+ * CTUIR Language Program YouTube Channel: https://www.youtube.com/channel/UCUCtupEOS9ptdKLxW7zGD7g
+ * Online Umatilla Dictionary: https://dictionary.ctuir.org/
+  * Contact: JonathanGeary@ctuir.org
+  
 Supported Platforms
 -------------------
  * Windows
