@@ -1,7 +1,7 @@
-﻿c masaram_gondi with name "Masaram Gondi (ITRANS)"
-c 
+﻿c masaram_gondi with name "Masaram Gondi (ITRANS)" 
 c Font
 c NotoSansMasaramGondi-Regular from Google
+c by Rajesh Kumar Dhuriya
 store(&VERSION) '10.0'
 store(&NAME) 'Masaram Gondi (ITRANS)'
 store(&COPYRIGHT) '© Rajesh Kumar Dhuriya'
@@ -33,7 +33,7 @@ c	Special Symbols
 
 + "_"	>	U+200C	c ZERO-WIDTH NON-JOINER
 + "+"	>	U+200D	c ZERO-WIDTH JOINER
-+ "^"	>	"𑵅"	c VIRAMA
++ "^"	>	"𑵄"	c VIRAMA
 
 c	Punctuation
 store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" '"' "," "." "=" "<" ">" "|"
@@ -100,10 +100,12 @@ c Independent Vowels
 + "U"	>	"𑴅"
 + "["	>	"𑴆"
 + "e"	>	"𑴆"
++ "E"	>	"𑴆"
 "𑴀" + "i"	>	"𑴈"
 "𑴆" + "i"	>	"𑴈"
 + "]"	>	"𑴉"
 + "o"	>	"𑴉"
++ "O"	>	"𑴉"
 "𑴀" + "u"	>	"𑴋"
 "𑴉" + "u"	>	"𑴋"
 + "{" > "𑴈" c DEVANAGARI LETTER AY
@@ -127,6 +129,8 @@ c Consonants
 + "j"	>	"𑴓𑵄"
 + "J"	>	"𑴔𑵄"
 + "k"	>	"𑴌𑵄"
++ "q"   >  "𑴌𑵂"
++ "Q"   >  "𑴌𑵄"
 + "K"	>	"𑴍𑵄"
 + "l"	>	"𑴧𑵄"
 + "L"	>	"𑴭𑵄"
@@ -143,11 +147,14 @@ c Consonants
 + "T"	>	"𑴖𑵄"
 + "v"	>	"𑴨𑵄"
 + "w"	>	"𑴨𑵄"
++ "W"	>	"𑴨𑵄"
 + "x"	>	"𑴮𑵄"
 + "y"	>	"𑴥𑵄"
++ "z"   >  "𑴓𑵂𑵄"
 + "f"	>	"𑴡𑵂𑵄"
 
 c duplicate mappings for ease of typing consonants
+
 + "F"	>	"𑴐𑵄"
 + "X"	>	"𑴯𑵄"
 + "Y"	>	"𑴕𑵄"
@@ -192,21 +199,25 @@ c add h to consonants
 store(Vyanjana) '𑴌𑴮𑴪𑴍𑴎𑴏𑴐𑴑𑴒𑴓𑴯𑴔𑴕𑴖𑴗𑴘𑴙𑴚𑴛𑴜𑴝𑴞𑴟𑴠𑴡𑴢𑴣𑴤𑴥𑴦𑴧𑴭𑴨𑴪𑴫𑴬𑴩'
 store(NuktaVyanjana) '𑴌𑴍𑴎𑴓𑴔𑴘𑴙𑴡𑴟𑴦𑴭𑴥𑴑'
 store(ViramaMaatraa) 'eiouAEIOrRU[]W{}qQzZ\'
-store(ViramaMaatraaU) "𑴺" "𑴲" "𑴽" "𑴴" "𑴱" "𑵇" "𑴳" "𑴱" "𑵆" "𑴶" "𑴵" "𑴺" "𑴽" "𑴺" '𑴼' '𑴿' 'ऺ' '𑴱𑵀'  'ॖ' 'ॗ' "𑵃"
+store(ViramaMaatraaU) "𑴺" "𑴲" "𑴽" "𑴴" "𑴱" "𑵇" "𑴳" "𑴱" "𑵆" "𑴶" "𑴵" "𑴺" "𑴽" "𑴺" '𑴼' '𑴿' 'ऺ' '𑴱𑵀'  'ॖ' 'ॗ' "𑵃" "𑵅"
 store(opt1endings) outs(Punctuation) ' '
 
-store(ViramaMaatraaU) "𑴺" "𑴲" "𑴳" "𑴴" "𑴱" "𑵃" "𑴳" "𑴶" "𑴵" "𑴽"  '𑴿' '𑵀' "𑵃"
+c store(ViramaMaatraaU) "𑴺" "𑴲" "𑴳" "𑴴" "𑴱" "𑵃" "𑴳" "𑴶" "𑴵" "𑴽"  '𑴿' '𑵀' "𑵃" "𑵅"
 store(aPlusMaatraa) 'aeiuw'
 store(aPlusMaatraaU) "𑴱" "𑴺" "𑴼" "𑴿" "𑵃"
 $keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + any(opt1endings)	>	index(Vyanjana,2) index(opt1endings,4)
 $keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + "`"	>	index(Vyanjana,2) "ʼ"
 $keymanonly: if(opt1 = 'gondi') any(Vyanjana) + "^"	>	index(Vyanjana,2) "𑵄" U+200C
-$keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + "^"	>	index(Vyanjana,2) "𑵄" U+200C
-
+$keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + "^"	>	index(Vyanjana,2) "𑵅" U+200C
+$keymanonly: if(opt1 = 'gondi') any(Vyanjana)"𑵄" + any(Vyanjana)	>	index(Vyanjana,2) U+11D45
+any(Vyanjana)"𑵄" + "^"	>	index(Vyanjana,1)"𑵅"
 any(Vyanjana)"𑵄" + "a"	>	index(Vyanjana,1)
+
+c any(Vyanjana)"𑵄" + any(ViramaMaatraa)	>	index(Vyanjana,1) U+11D45
+
 any(Vyanjana) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
 any(Vyanjana)"𑵄" + any(ViramaMaatraa) 	>	index(Vyanjana,1) index(ViramaMaatraaU,3) 
- 
+
 any(Vyanjana)"𑴲" + "i"	>	 index(Vyanjana,1)"𑴳"	 c ii
 any(Vyanjana)"𑴴" + "u"	>	 index(Vyanjana,1)"𑴵"	 c uu
 any(Vyanjana)"𑴺" + "e"	>	 index(Vyanjana,1)"𑴳"	 c ee
@@ -225,6 +236,7 @@ $keymanonly: if(opt1 = 'gondi') any(NuktaVyanjana)"𑵂" "𑵄" + any(opt1ending
 $keymanonly: if(opt1 = 'gondi') any(NuktaVyanjana)"𑵂" "𑵄" + "`"	>	index(NuktaVyanjana,2) "ʼ"
 $keymanonly: if(opt1 = 'gondi') any(NuktaVyanjana)"𑵂" "𑵄" + "^"	>	index(NuktaVyanjana,2) "𑵄" U+200C
 $keymanonly: if(opt1 = 'gondi') any(NuktaVyanjana)"𑵂" + "^"	>	index(NuktaVyanjana,2) "𑵄" U+200C
+
 any(NuktaVyanjana)"𑵂""𑵄" + "^"	>	index(NuktaVyanjana,1)"𑵂""𑵄"
 any(NuktaVyanjana)"𑵂""𑵄" + "a"	>	index(NuktaVyanjana,1)"𑵂"
 any(NuktaVyanjana)"𑵂" + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,3) 
@@ -235,3 +247,4 @@ any(NuktaVyanjana)"𑵂""𑴺" + "e"	>	 index(NuktaVyanjana,1)"𑵂""𑴳"	 c ee
 any(NuktaVyanjana)"𑵂""𑴺" + "i"	>	index(NuktaVyanjana,1)"𑵂""𑴼"	 c ei
 any(NuktaVyanjana)"𑵂""𑴽" + "o"	>	 index(NuktaVyanjana,1)"𑵂""𑴵"	 c oo
 any(NuktaVyanjana)"𑵂""𑴽" + "u"	>	index(NuktaVyanjana,1)"𑵂""𑴿"	 c ou
+
