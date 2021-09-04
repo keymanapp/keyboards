@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-Uma Graphic generated from template
+Uma Graphic Keyboard created for typing in the Uma alphabet by the Houma Language Project.
 
 Links
 -----
