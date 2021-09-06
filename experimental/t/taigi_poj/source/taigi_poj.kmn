@@ -10,7 +10,7 @@ store(&VISUALKEYBOARD) 'taigi_poj.kvks'
 store(&BITMAP) 'taigi_poj.ico'
 store(&LAYOUTFILE) 'taigi_poj.keyman-touch-layout'
 store(&COPYRIGHT) '© 2020-2021 Ngô͘ Ka-bêng'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.4'
 
 begin Unicode > use(main)
 
@@ -307,12 +307,21 @@ c
 + [ALT K_oE2] > U+005c
 + [ALT SHIFT K_oE2] > U+007c
 
+c
+c Store vowels
+c
+store(vowels) 'aiueoAIUEO'
+store(vowels_tone2) 'áíúéóÁÍÚÉÓ'
+store(vowels_tone3) 'àìùèòÀÌÙÈÒ'
+store(vowels_tone5) 'âîûêôÂÎÛÊÔ'
+store(vowels_tone7) 'āīūēōĀĪŪĒŌ'
+store(vowels_tone9) 'ăĭŭĕŏĂĬŬĔŎ'
 
 c
 c Special input rules
 c
-"n" + "n" > "ⁿ"
-"N" + "N" > "ⁿ"
+any(vowels) "n" + "n" > context(1) "ⁿ"
+any(vowels) "N" + "N" > context(1) "ⁿ"
 "o" + "o" > "o͘"
 "O" + "o" > "O͘"
 "O" + "O" > "O͘"
@@ -976,13 +985,6 @@ c
 c Vowels with tone numbers
 c
 c Vowels with tone number 2
-store(vowels) 'aiueoAIUEO'
-store(vowels_tone2) 'áíúéóÁÍÚÉÓ'
-store(vowels_tone3) 'àìùèòÀÌÙÈÒ'
-store(vowels_tone5) 'âîûêôÂÎÛÊÔ'
-store(vowels_tone7) 'āīūēōĀĪŪĒŌ'
-store(vowels_tone9) 'ăĭŭĕŏĂĬŬĔŎ'
-
 any(vowels) + "2" > index(vowels_tone2, 1)
 any(vowels) "ⁿ" + "2" > index(vowels_tone2, 1) "ⁿ"
 "o͘" + "2" > "ó͘"
