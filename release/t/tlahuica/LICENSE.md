@@ -1,6 +1,6 @@
 ﻿The MIT License (MIT)
 
-©Free Use 2021
+© 2021 Aldo R. V.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
