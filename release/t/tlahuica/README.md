@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-Para waa mindinaa mundowee pjyɇkakjo :) Versión 1.0
+Pa wañɇ muweñjɇ pjyɇkakjo :) Versión 1.0
 
 Links
 -----
