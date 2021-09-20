@@ -3,7 +3,7 @@ Shan (SIL) Keyboard Change History
 
 1.4 (20 Sept 2021)
 -----------------
-* Add table layout
+* Add tablet layout
 
 1.3.2 (20 Aug 2021)
 -----------------
