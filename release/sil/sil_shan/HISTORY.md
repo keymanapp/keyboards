@@ -1,6 +1,10 @@
 Shan (SIL) Keyboard Change History
 =======================
 
+1.4 (20 Sept 2021)
+-----------------
+* Add tablet layout
+
 1.3.2 (20 Aug 2021)
 -----------------
 * Added U+107E to SHIFT+Z key and U+1036 to RALT SHIFT+H key
