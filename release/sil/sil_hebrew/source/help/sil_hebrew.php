@@ -18,6 +18,7 @@
       table+table {margin-top: 30px;}
       .important {text-align: center;font-size: 20px;background-color: #D0E4F5;padding-top:20px;padding-bottom:20px;max-width:850px;margin-left:auto;margin-right: auto;}
       .centered {text-align: center;}
+      .hebr {font-family: "Ezra SIL","SBL Hebrew",sans-serif;}
       p.centered+table {margin-top:32px;}
 END;
   require_once('header.php');
@@ -40,7 +41,6 @@ END;
 
 <div id='osk-tablet' data-states='default shift rightalt rightalt-shift'>
 </div>
-
 
 <div>
 <table class="inputSequences">
@@ -1778,4 +1778,7 @@ END;
         </tbody>
     </table>
 </div>
+
+
+
 
