@@ -9,7 +9,7 @@ Description
 -----------
 
 This keyboard layout is designed for Adlam. it is based on the keyboard layout from Windows 10. 
-The Ebrima font distributed with Windows 20 supports Adlam. Noto Sans Adlam also supports Adlam.
+The Ebrima font distributed with Windows 10 supports Adlam. Noto Sans Adlam also supports Adlam.
 
 Links
 -----
