@@ -12,8 +12,24 @@
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
-    <Items/>
+    <Folder>Ge'ez Berhan</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Ge'ez Berhan Keyboard</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Typing Manual</Name>
+        <FileName>GeezBerhan-Manual.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
   </StartMenu>
   <Info>
     <Version URL=""></Version>
@@ -40,12 +56,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.bmp</FileType>
     </File>
+    <File>
+      <Name>..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>source\help\GeezBerhan-Manual.pdf</Name>
+      <Description>File GeezBerhan-Manual.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Ge'ez Berhan</Name>
       <ID>geezbrhan</ID>
       <Version>1.0</Version>
+      <OSKFont>..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="am">Amharic</Language>
         <Language ID="ti">Tigrinya</Language>
