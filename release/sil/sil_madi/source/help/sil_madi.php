@@ -12,7 +12,7 @@
 <ul>
   <li>Vowels with a combining dot below. <br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
-		  <li><kbd>U</kbd> + <kbd>.</kbd> &#x21D2; ụ </li> 
+		  <li><kbd>U</kbd> + <kbd>.</kbd> &#x21D2; ụ </li>
 		  <li><kbd>Shift</kbd> <kbd>U</kbd> + <kbd>.</kbd> &#x21D2; Ụ </li>
 		  <li><kbd>E</kbd> + <kbd>.</kbd> &#x21D2; ẹ </li>
 		  <li><kbd>Shift</kbd> <kbd>E</kbd> + <kbd>.</kbd> &#x21D2; Ẹ </li>
@@ -20,7 +20,7 @@
   </li>
   <li>Type any vowel + / to get the vowel with a combining acute accent. <br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
-		  <li><kbd>A</kbd> + <kbd>/</kbd> &#x21D2; á </li> 
+		  <li><kbd>A</kbd> + <kbd>/</kbd> &#x21D2; á </li>
 		  <li><kbd>Shift</kbd> <kbd>A</kbd> + <kbd>/</kbd> &#x21D2; Á </li>
 		  <li><kbd>E</kbd> + <kbd>/</kbd> &#x21D2; é </li>
 		  <li><kbd>Shift</kbd> <kbd>E</kbd> + <kbd>/</kbd> &#x21D2; É </li>
@@ -28,7 +28,7 @@
   </li>
   <li>Type any vowel + ^ to get the vowel with a combining circumflex accent. <br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
-		  <li><kbd>A</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; â </li> 
+		  <li><kbd>A</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; â </li>
 		  <li><kbd>Shift</kbd> <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; Â </li>
 		  <li><kbd>E</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; ê </li>
 		  <li><kbd>Shift</kbd> <kbd>E</kbd> + <kbd>Shift</kbd> <kbd>6</kbd> &#x21D2; Ê </li>
@@ -36,7 +36,7 @@
   </li>
   <li>Type any vowel + ~ to get the vowel with a combining tilde sign. <br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
-		  <li><kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; ã </li> 
+		  <li><kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; ã </li>
 		  <li><kbd>Shift</kbd> <kbd>A</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; Ã </li>
 		  <li><kbd>E</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; ẽ </li>
 		  <li><kbd>Shift</kbd> <kbd>E</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; Ẽ </li>
@@ -44,7 +44,7 @@
   </li>
   <li>Type / after any vowel with a below dot or vice versa to get the vowel with both a combining below dot and a combining acute accent. For the other two tone marks, follow this same method.<br/>For examples: <br/>
 	  <ul style="font-family:Charis SIL">
-		  <li><kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; ụ́ </li> 
+		  <li><kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; ụ́ </li>
 		  <li><kbd>Shift</kbd> <kbd>U</kbd> + <kbd>.</kbd> + <kbd>/</kbd> &#x21D2; Ụ́ </li>
 		  <li><kbd>E</kbd> + <kbd>.</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; ẹ̃ </li>
 		  <li><kbd>Shift</kbd> <kbd>E</kbd> + <kbd>.</kbd> + <kbd>Shift</kbd> <kbd>`</kbd> &#x21D2; Ẹ̃ </li>
@@ -63,7 +63,7 @@
 
 <h2>Full stop</h2>
 <p><kbd>\</kbd> + <kbd>.</kbd> output the sentence final punctuation mark -- full stop. You can also rotate through to pick your desired output by pressing the period key again and again.</p>
-	  
+
 <h1>Keyboard Layout</h1>
 <h2>Keyboard Layout on PC</h2>
 <div id='osk' data-states='default shift'>
@@ -75,8 +75,8 @@
 
 	<h3>Long Press</h3>
 	<p>Press and hold on a key with a little dot on the top right corner of the key to reveal more keys, then roll over to the key you like.</p>
-	<p><a href="touch_longpress.png"><img width="80%" class="keyboard" src="phone_longpress.png" alt="Long Press state" /></a></p>
-	
+	<p><a href="phone_longpress.png"><img width="80%" class="keyboard" src="phone_longpress.png" alt="Long Press state" /></a></p>
+
 <h2>Keyboard Layout on Tablets</h2>
 <div id='osk-tablet' data-states='default shift'>
 </div>
