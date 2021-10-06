@@ -9,9 +9,14 @@
     Keyboard for Old Hungarian.
 </p>
 
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
+
+<p>Zero Width Joiner is available on the key that says <b>Lig</b> (Ligatúrákhoz),<br/>
+the Right to left mark to available on the key that says <b>JB</b> (Jobbról-balra)<br/>
+and the Left to right mark is available on the key that says <b>BJ</b> (Balról-jobbra)</p>
+
+
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 
