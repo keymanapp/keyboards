@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Old Hungarian'
 store(&COPYRIGHT) '© 2021 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'old_hungarian.kvks'
 store(&KMW_RTL) '1'
@@ -60,6 +60,7 @@ group(main) using keys
 + any(numbersK)     > index(numbersU,1)
 + any(numpad)       > index(numbersU,1)
 
++ [K_BKQUOTE]          > U+200D c Lig
 
 + [RALT K_BKQUOTE]     > U+200E c LRM
 + [K_NP3]              > U+200E c LRM
