@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.281.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.282.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>source\readme.htm</ReadMeFile>
-    <GraphicFile>source\geezbrhan-sideimage.bmp</GraphicFile>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>geezbrhan-sideimage.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -40,40 +40,70 @@
   </Info>
   <Files>
     <File>
-      <Name>build\geezbrhan.kmx</Name>
+      <Name>..\build\geezbrhan.kmx</Name>
       <Description>Keyboard Ge'ez Berhan</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>source\GeezBrhan.ico</Name>
+      <Name>GeezBrhan.ico</Name>
       <Description>File GeezBrhan.ico</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ico</FileType>
     </File>
     <File>
-      <Name>source\geezbrhan-sideimage.bmp</Name>
+      <Name>geezbrhan-sideimage.bmp</Name>
       <Description>File geezbrhan-sideimage.bmp</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.bmp</FileType>
     </File>
     <File>
-      <Name>..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
       <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>source\help\GeezBerhan-Manual.pdf</Name>
+      <Name>help\GeezBerhan-Manual.pdf</Name>
       <Description>File GeezBerhan-Manual.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
     </File>
     <File>
-      <Name>source\readme.htm</Name>
+      <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL_README.txt</Name>
+      <Description>File AbyssinicaSIL_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -81,23 +111,23 @@
       <Name>Ge'ez Berhan</Name>
       <ID>geezbrhan</ID>
       <Version>1.0</Version>
-      <OSKFont>..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="am">Amharic</Language>
         <Language ID="ti">Tigrinya</Language>
         <Language ID="awn">Awngi</Language>
         <Language ID="sgw">Sebat Bet Gurage</Language>
         <Language ID="byn">Bilin</Language>
-        <Language ID="mym-Ethi">Me'en (Ethiopic)</Language>
-        <Language ID="muz-Ethi">Mursi (Ethiopic)</Language>
-        <Language ID="suq-Ethi">Suri (Ethiopic)</Language>
-        <Language ID="guk-Ethi">Gumuz (Ethiopic)</Language>
+        <Language ID="mym">Me'en (Ethiopic)</Language>
+        <Language ID="muz">Mursi (Ethiopic)</Language>
+        <Language ID="suq">Suri (Ethiopic)</Language>
+        <Language ID="guk">Gumuz (Ethiopic)</Language>
         <Language ID="gez">Geez</Language>
-        <Language ID="bst-Ethi">Basketo (Ethiopic)</Language>
-        <Language ID="gmv-Ethi">Gamo (Ethiopic)</Language>
-        <Language ID="gof-Ethi">Gofa (Ethiopic)</Language>
-        <Language ID="dwr-Ethi">Dawro (Ethiopic)</Language>
+        <Language ID="bst">Basketo (Ethiopic)</Language>
+        <Language ID="gmv">Gamo (Ethiopic)</Language>
+        <Language ID="gof">Gofa (Ethiopic)</Language>
+        <Language ID="dwr">Dawro (Ethiopic)</Language>
         <Language ID="har">Harari</Language>
         <Language ID="tig">Tigre</Language>
       </Languages>
