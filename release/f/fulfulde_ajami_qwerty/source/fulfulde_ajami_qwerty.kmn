@@ -1,0 +1,118 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Fulfulde Ajami (QWERTY)'
+store(&COPYRIGHT) '© 2021 SIL International'
+store(&KMW_RTL) '1'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'fulfulde_ajami_qwerty.ico'
+store(&LAYOUTFILE) 'fulfulde_ajami_qwerty.keyboard-layout'
+store(&VISUALKEYBOARD) 'fulfulde_ajami_qwerty.kvks'
+
+begin Unicode > use(main)
+
+c DIGITS
+store(intl_digits) "0123456789"
+store(key_digits)   [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] \
+                    [RALT K_7] [RALT K_8] [RALT K_9]
+store(ajami_digits) U+0660     U+0661     U+0662     U+0663     U+0664     U+0665     U+0666 \
+                    U+0667     U+0668     U+0669
+
+
+store(Kpunct)    [SHIFT K_1]       [RALT K_QUOTE] [SHIFT K_3] [RALT K_RBRKT] [SHIFT K_8]     [RALT K_HYPHEN] [SHIFT K_6] \
+                 [SHIFT K_PERIOD]  [K_HYPHEN]     [K_EQUAL]   [K_LBRKT]      [SHIFT K_2]     [K_RBRKT] \
+                 [K_BKSLASH]       [SHIFT K_BKSLASH] \
+                 [K_QUOTE]         [SHIFT K_QUOTE] \
+                 [K_COMMA]         [SHIFT K_COMMA]            [K_PERIOD]     [SHIFT K_SLASH] [SHIFT K_5]     [RALT K_EQUAL] \
+                 [SHIFT K_9]       [SHIFT K_0]
+store(Upunct)    U+0021            U+0022         U+0023      U+0027         U+002A          U+002D          U+002F \
+                 U+003A            U+003C         U+003E      U+005B         U+005C          U+005D  \
+                 U+00AB            U+00BB \
+                 U+201C            U+201D \
+                 U+060C            U+061B                     U+061E          U+061F         U+066A          U+066D \
+                 U+FD3E            U+FD3F
+
+store(Kdia)      [SHIFT K_A]      [SHIFT K_U]      [K_I]  [SHIFT K_I]     [SHIFT K_W]      [SHIFT K_Q]      [SHIFT K_LBRKT]  [SHIFT K_HYPHEN] \
+                 [SHIFT K_O]      [SHIFT K_E]      [K_O]  [SHIFT K_RBRKT] [RALT SHIFT K_A] [RALT SHIFT K_I] [RALT K_O]       [RALT K_U] \
+                 [RALT SHIFT K_E] [RALT SHIFT K_O]
+store(Udia)      U+064E           U+064F           U+0650 U+0650          U+0651           U+0652           U+0654           U+0658 \
+                 U+065B           U+065C           U+065D U+0670          U+08F5           U+08F6           U+08F7           U+08F8 \
+                 U+08F9           U+08FD
+
+store(Kbase) [SHIFT K_J] [K_SLASH]       [K_COLON]       [SHIFT K_COLON] [K_A] \
+             [K_B]       [K_T]           [SHIFT K_C]     [K_J]           [K_H]          [K_X]       [K_D]       \
+             [RALT K_Z]  [K_R]           [K_Z]           [K_S]           [K_C]          [SHIFT K_S] [RALT K_D]  \
+             [SHIFT K_D] [SHIFT K_Z]     [K_U]           [K_G]           [SHIFT K_F]    [K_Q]       [SHIFT K_K] \
+             [K_L]       [K_M]           [K_N]           [SHIFT K_H]     [K_W]          [K_Y]       [RALT K_B]  \
+             [SHIFT K_T] \
+             [SHIFT K_4] [K_F]           [SHIFT K_EQUAL] [K_BKQUOTE]     [K_K]          [SHIFT K_G] [K_V]       \
+             [SHIFT K_V] \
+             [RALT K_P]  [SHIFT K_X]     [K_P]           [SHIFT K_P]     [RALT K_COMMA] \
+             [SHIFT K_B] [SHIFT K_Y]     [SHIFT K_N]     [RALT K_N]
+store(Ubase) U+0621      U+0622          U+0623          U+0625          U+0627 \
+             U+0628      U+062A          U+062B          U+062C          U+062D         U+062E      U+062F \
+             U+0630      U+0631          U+0632          U+0633          U+0634         U+0635      U+0636 \
+             U+0637      U+0638          U+0639          U+063A          U+0641         U+0642      U+0643 \
+             U+0644      U+0645          U+0646          U+0647          U+0648         U+064A      U+067B \
+             U+069F \
+             U+06A1      U+06A2          U+06A4          U+06A7          U+06A9         U+06AF      U+06C6 \
+             U+06D1 \
+             U+0752      U+075D          U+0760          U+0761          U+0767 \
+             U+08A1      U+08A8          U+08A9          U+08BD
+
+store(nul) "RLM"
+
+store(K_RTL) [RALT K_Q] [RALT K_W] [RALT K_E] [RALT K_R]
+store(U_RTL) U+200C     U+200D     U+200E     U+200F c ZWNJ ZWJ LRM RLM
+
+c additions for fuv
+store(Kfuv_punct) [RALT SHIFT K_4]       [RALT SHIFT K_5]     [RALT SHIFT K_7]      [RALT SHIFT K_9]       [RALT SHIFT K_0] \
+                  [RALT SHIFT K_EQUAL]   [RALT SHIFT K_COMMA] [RALT SHIFT K_PERIOD] [RALT SHIFT K_HYPHEN]  [RALT SHIFT K_2] \
+                  [RALT SHIFT K_6]       [RALT SHIFT K_1]     [RALT SHIFT K_LBRKT]  [RALT SHIFT K_BKSLASH] [RALT SHIFT K_RBRKT] \
+                  [RALT SHIFT K_BKQUOTE] [RALT SHIFT K_3]     [RALT SHIFT K_8]
+store(fuv_punct)  U+0024                 U+0025               U+0026                U+0028                 U+0029 \
+                  U+002b                 U+002c               U+002e                U+003d                 U+0040 \
+                  U+005e                 U+005f               U+007b                U+007c                 U+007d \
+                  U+007e                 U+00d7               U+00f7
+
+store(Kfuv_base)  [RALT SHIFT K_W] [RALT SHIFT K_H] [RALT K_Y]  [RALT SHIFT K_P]
+store(fuv_base)   U+0624           U+0629           U+0649            U+067E
+
+store(Kfuc_base)  [RALT SHIFT K_Y] [RALT SHIFT K_C]  [RALT SHIFT K_B]
+store(fuc_base)   U+0683           U+0756            U+08A0
+
+c tanween
+store(Udia1)      U+064E U+064F U+0650 U+08F8
+store(Udia2)      U+064B U+064c U+064d U+08FB
+
+
+
+group(main) using keys
+
++ any(key_digits) > index(ajami_digits,1)
++ any(intl_digits) > index(intl_digits,1)
++ any(Kpunct) > index(Upunct,1)
++ any(Kdia) > index(Udia,1) use(tanween)
++ any(Kbase) > index(Ubase,1)
+
++ any(Kfuc_base) > index(fuc_base,1)
++ any(Kfuv_base) > index(fuv_base,1)
++ any(Kfuv_punct) > index(fuv_punct,1)
+
++ any(K_RTL) > index(U_RTL,1)
++ [SHIFT K_BKQUOTE] > U+FDF2 c Allah
++ [SHIFT K_7]       > U+0640 c kashida
++ [K_E] > U+0649 U+0670
+U+00AB + [K_BKSLASH] > U+2039
+U+00BB + [SHIFT K_BKSLASH]       > U+203A
+U+201C + [K_QUOTE] > U+2018
+U+201D + [SHIFT K_QUOTE]       > U+2019
+U+002D + [RALT K_HYPHEN] > U+2013
++ any(nul) > nul
+
+group(tanween)
+
+U+064E U+064E > U+064B
+U+064F U+064F > U+064C
+U+0650 U+0650 > U+064D
+U+08F8 U+08F8 > U+08FB
+U+08FD U+08FD > U+08FC
