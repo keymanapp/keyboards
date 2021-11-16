@@ -4,6 +4,8 @@ Khmer Angkor Change History
 1.1 (27 Oct 2021)
 ----------------------
 * update rules for ប (U+1794) and ័ (U+17D0)
+* add robat rule
+* add regression tests
 
 1.0.9 (7 Apr 2021)
 ----------------------
