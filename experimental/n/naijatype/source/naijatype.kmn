@@ -15,6 +15,7 @@ c v27 Added languages
 c v28 Added ʉɄ option for 10 vowel languages and did a major overhaul of the whole physical keyboard so that it rotates between single character and combining underlined/underdotted reliably.
 c v29 Corrected oversight (bug) which didn't allow tone on underline and underdot letters.
 c v30 Type kbv or version; to show the keyboard version.
+c v31-33 Corrected behaviour of ? and ! and updated to match App version number for Google Play
 store(&VERSION) '9.0'
 store(&NAME) 'Naija Type'
 store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
@@ -81,7 +82,7 @@ store(ToneRota2)     outs(ToneCore) outs(ToneLast)    c And the final tone mark 
 store(ToneSubset)     outs(ToneRota1) U+0304    c All the tones
 store(TonesAll)                outs(ToneSubset) U+030B U+030F U+1DC4 U+1DC5 U+1DC6 U+1DC7
 store(WhiteSpace) [K_ENTER] " " [K_TAB]
-store(&KEYBOARDVERSION) '30'
+store(&KEYBOARDVERSION) '33'
 
 begin Unicode > use(main)
 
