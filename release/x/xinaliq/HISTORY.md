@@ -1,6 +1,11 @@
 Xinaliq Keyboard Change History
 =======================
 
+1.1.3 (6 Dec 2021)
+* Added s with cedilla
+* Remove stray longpress keys on shift key in default layer of touch layout
+* Use canonical tag "kjj" instead of "kjj-Latn"
+
 1.1.2 (27 Oct 2020)
 -----------------
 * Increment version number to force recompile of touch layout.
