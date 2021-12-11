@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #----------------------------------------------------------------------------------------
 # Build all the keyboards in a given group
@@ -132,6 +132,29 @@ function build_keyboard {
   pushd "$keyboard"
 
   #
+  # For keyboards from an external source, we need to copy them from the
+  # source repository.
+  #
+
+  if [ -f external_source ]; then
+    if [ -d "build/" ]; then
+      # We want to make sure we rebuild or get correct binaries
+      rm -rf "build/"
+    fi
+
+    retrieve_external_keyboard || die "unable to retrieve external keyboard $base_keyboard"
+
+    if [ -f .source_is_binary ]; then
+      # For keyboards supplied as binary (only possible with signed contract with SIL),
+      # we do not do any further processing and assume that what we are given is good,
+      # although we can still validate the .keyboard_info and file names etc.
+      #
+      # Note: retrieve_external_keyboard will create .source_is_binary as required
+      echo "  Keyboard binary was sourced from external location"
+    fi
+  fi
+
+  #
   # Check if .keyboard_info doesn't exist
   #
   local keyboard_infoFilename="$base_keyboard.keyboard_info"
@@ -198,7 +221,9 @@ function build_keyboard {
     ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
-    if [[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]; then
+    # Externally sourced keyboards (see above) may have the .source_is_binary flag,
+    # in which case they are trated identically to legacy keyboards
+    if [ ! -f .source_is_binary ] && ([[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]); then
       # We will do a release/experimental build for $keyboard (experimental keyboards are built same way as release keyboards)
       build_release_keyboard "$keyboard" || die "Failed to build $group keyboard $base_keyboard"
     else
