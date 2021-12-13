@@ -100,3 +100,8 @@ parameter to clean the folder:
 
 Otherwise, the build will abort when any additional files are present, to avoid
 accidental overwriting of data.
+
+The file `.source_is_binary` will be created in (or deleted from) the keyboard
+folder during the build if the external keyboard source is a binary file. This
+file should not be created by the user, nor should it be committed to the
+repository.
