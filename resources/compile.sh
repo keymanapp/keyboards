@@ -222,7 +222,7 @@ function build_keyboard {
   else
     # We will use the standard build based on the group
     # Externally sourced keyboards (see above) may have the .source_is_binary flag,
-    # in which case they are trated identically to legacy keyboards
+    # in which case they are treated identically to legacy keyboards
     if [ ! -f .source_is_binary ] && ([[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]); then
       # We will do a release/experimental build for $keyboard (experimental keyboards are built same way as release keyboards)
       build_release_keyboard "$keyboard" || die "Failed to build $group keyboard $base_keyboard"
