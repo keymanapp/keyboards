@@ -50,7 +50,7 @@ verify_external_target_folder_is_clean() {
   # .gitignore
   # external_source
   # README_EXTERNAL.md
-  local files=`find * \! -name '.gitignore' -a \! -name 'external_source' -a \! -name 'README_EXTERNAL.md' -print`
+  local files=`find * \! -name '.gitignore' -a \! -name '.source_is_binary' -a \! -name 'external_source' -a \! -name 'README_EXTERNAL.md' -print`
   if [ ! -z "$files" ]; then
     echo "The target folder contains unexpected files:"
     echo $files
