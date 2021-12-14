@@ -66,12 +66,14 @@ github.com.
 
 
 The file `external_source` must contain one line for each file to be downloaded,
-in a `file=url` format. For example:
+in a `file url sha256` format. For example:
 
 ```
-external_experiment_3.keyboard_info=https://github.com/mcdurdin/external_experiment_3/releases/download/1.0/external_experiment_3.keyboard_info
-source/external_experiment_3.kmp=https://github.com/mcdurdin/external_experiment_3/releases/download/1.0/external_experiment_3.kmp
+external_experiment_3.keyboard_info https://github.com/mcdurdin/external_experiment_3/releases/download/1.0/external_experiment_3.keyboard_info 191278d97d00fa8511de58464c1a02c70176794762c62fbe3bbb79d28f2821d8
+source/external_experiment_3.kmp https://github.com/mcdurdin/external_experiment_3/releases/download/1.0/external_experiment_3.kmp 73695bf67e1a000b7681515a70fe6ef40c6896dc271dc34f2de78c8f72dfc834
 ```
+
+The two required files are `<keyboard>.keyboard_info` and `source/<keyboard>.kmp`.
 
 The `.keyboard_info` file must contain all metadata that cannot be easily
 determined from the compiled files. See keyboards in the legacy/ folder for
