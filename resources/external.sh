@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#set -u
+#set -e
+
 #----------------------------------------------------------------------------------------
 # Source keyboard from external repository or binary download location
 #----------------------------------------------------------------------------------------
@@ -123,13 +126,16 @@ retrieve_external_binary_keyboard() {
   # for each line in the external_source file
   while IFS="" read -r line
   do
-    line=`echo "$line" | sed 's/^[ \t]*//;s/[ \t]*$//'` # line=`awk '{$1=$1};1' "$line"`
-    local filename="${line%=*}"
-    local url="${line##*=}"
-    echo "  Downloading $filename from $url"
+    line=`echo "$line" | sed 's/^[ \t]*//;s/[ \t]*$//'` # trim whitespace
+    local regex='(.+) (.+) (.+)'
+    [[ $line =~ $regex ]] || die "Invalid entry \"$line\", expecting file url hash"
+    local filename="${BASH_REMATCH[1]}"
+    local url="${BASH_REMATCH[2]}"
+    local sha256="${BASH_REMATCH[3]}"
     [[ $filename =~ \.\. ]] && die "path cannot contain .."
     [[ $filename =~ ^/ ]] && die "path cannot start with /"
-    curl -s -L "$url" --output "$filename" --create-dirs
+    curl -s -L "$url" --output "$filename" --create-dirs || die "Unable to download $filename"
+    echo "$sha256 $filename" | sha256sum -c --quiet || die "Invalid checksum for $filename"
   done < external_source
 }
 
