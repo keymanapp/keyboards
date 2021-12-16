@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2015 FirstVoices, First Peoples' Cultural Foundation, SIL International
+© 2015-2021 FirstVoices, First Peoples' Cultural Foundation, SIL International
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
