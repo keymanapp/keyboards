@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1'
+store(&KEYBOARDVERSION) '2.1.4'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -33,8 +33,8 @@ store(cDirectCapsValues) 'ഡശടഫ'
 c produce vowels
 store(vDirectSmallValues) "അഎഇഒഉ"
 store(vDirectSmallKeys) "aeiou"
-store(vDirectCapsValues) "ആഏഈഓഋഊ"
-store(vDirectCapsKeys) "AEIORU"
+store(vDirectCapsValues) "ആഏഈഓഊ"
+store(vDirectCapsKeys) "AEIOU"
 
 c Chills
 store(chills) 'ൺൻർൽൾൿ'
@@ -55,16 +55,16 @@ c digits
 store(digits) '0123456789'
 store(malDigits) '൦൧൨൩൪൫൬൭൮൯'
 any(malDigits) + any(digits) > index(malDigits,1) index(malDigits,2)
-any(digits) + '\' > index(malDigits, 1)
-'10' + '\' > U+0d70
-'100' + '\' > U+0d71
-'1000' + '\' > U+0d72
-'1/4' + '\' > U+0d73
-'1/2' + '\' > U+0d74
-'3/4' + '\' > U+0d75
-'1/16' + '\' > U+0d76
-'1/8' + '\' > U+0d77
-'3/16' + '\' > U+0d78
+any(digits) + '#' > index(malDigits, 1)
+'10' + '#' > U+0d70
+'100' + '#' > U+0d71
+'1000' + '#' > U+0d72
+'1/4' + '#' > U+0d73
+'1/2' + '#' > U+0d74
+'3/4' + '#' > U+0d75
+'1/16' + '#' > U+0d76
+'1/8' + '#' > U+0d77
+'3/16' + '#' > U+0d78
 
 c Joiners (This is a new addition to the spec)
 + '+' > U+200D dk(zwj)  c Explicit zero-width-joiner
@@ -144,38 +144,49 @@ any(chills_anu) + 'R' > index(chill_anu_Bases,1) 'ൃ'
 any(chills_anu) + 'r' > index(chill_anu_bases,1) '്ര്' c Ben's addition
 
 c Archaic Forms
-'.' + '\' >  '।'
-'..' + '\' > '॥'
-'അ' + '\' > 'ഽ'    
-'ഈ' + '\' > 'ൟ'
-'ീ' + '\' > 'ൟ'
-'ക്' + '\' > 'ൿ'
-'റ്റ്' + '\' > 'ഺ്'
-'റ്റ' + '\' > 'ഺ'
-'ൻ' + '\' > 'ഩ്'
-'ന' + '\' > 'ഩ'
-'ം' + '\' > 'ൔ'
-'ൔ' + '\' > 'ഀ'
-'ഀ' + '\' > 'ഁ'
+'.' + '#' >  '।'
+'..' + '#' > '॥'
+'അ' + '#' > 'ഽ'    
+'ഈ' + '#' > 'ൟ'
+'ീ' + '#' > 'ൟ'
+'ക്' + '#' > 'ൿ'
+'റ്റ്' + '#' > 'ററ്'
+'ററ്' + '#' > 'ഺ്'
+'ററ' + '#' > 'ഺ'
+'ൻ' + '#' > 'ഩ്'
+'ൻ്റ്' + '#' > 'ൻറ്'
+'ന' + '#' > 'ഩ'
+'നു' + '#' > '൹' c Malayalam Date Mark
+'ം' + '#' > 'ൔ'
+'ൔ' + '#' > 'ഀ'
+'ഀ' + '#' > 'ഁ'
 'ൻ' + '@' > context dk(at)
 dk(at) + 'e' > 'െ'
 'ൾ' + '@' > context '്' c dk(at)
-'നു' + '\' > '൹' c Malayalam Date Mark
-'ർ' + '\' > 'ൎ'
+'ർ' + '#' > 'ൎ'
 + '$' > '₹' 
-'₹' + '\' > '₨'
-'₨' + '\' > '$' c Ben's additions
-'പറ' + '\' > U+0D4F
-'ൾ' + '\' > 'ഌ'
-'്ള്' + '\' > 'ൢ'
-'ള്ള്' + '\' > 'ൡ'
-'ഌ' + '\' > 'ൡ' c Ben's additions
-'്ള്ള്' + '\' > 'ൣ'
-'ൢ' + '\' > 'ൣ' c Ben's additions
-'ൗ' + '\' > 'ൌ'
-'്' + '\' > U+0D3C
-U+0D3C + '\' > U+0D3B
-any(consonants) '്ല്' + '\' > index(consonants, 1) U+0D62
+'₹' + '#' > '₨'
+'₨' + '#' > '$' c Ben's additions
+'പറ' + '#' > U+0D4F
+'ൾ' + '#' > 'ഌ'
+'്ള്' + '#' > 'ൢ'
+'ള്ള്' + '#' > 'ൡ'
+'ഌ' + '#' > 'ൡ' c Ben's additions
+'്ള്ള്' + '#' > 'ൣ'
+'ൢ' + '#' > 'ൣ' c Ben's additions
+'ൗ' + '#' > 'ൌ'
+'്' + '#' > U+0D3C
+U+0D3C + '#' > U+0D3B
+any(consonants) '്ല്' + '#' > index(consonants, 1) U+0D62
+
+c Handling Ru/Ra
+any(consonants) + 'R' > index(consonants,1) 'റ'
+any(vowels) + 'R' > index(vowels,1) 'റ'
+any(vowelsigns) + 'R' > index(vowelsigns,1) 'റ'  
++ 'R' > 'ഋ'
+'ഋ' + 'R' > 'ൠ'
+c any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
+
 
 c always remove none joiner before vowels
 U+200C + any(vDirectSmallKeys) > index(vDirectSmallValues,2)
@@ -303,12 +314,13 @@ any(vowelsigns) 'ം' + 'r' > index(vowelsigns,1) 'മ്ര്'
 'സം' + 'y' > 'സംയ്'
 
 c Bypassing transliteration (Solve Issue: https://github.com/beniza/keyboards/issues/2)
-+ '=' > dk(1)
-dk(1) + '=' > '=' c to provide a way to keyin an actual '='                                                        
++ '\' > dk(1)
+dk(1) + '\' > '\' c to provide a way to keyin an actual '='   
+'\' + '\' > '\\'                                                     
 
 c Experimental: the sign chars at the end are added for enabling special strings such as web addresses or email ids. 
 c Warning: treating = as an escapable can create inadvertent consequences as there may be cases to treat is as the dk. 
-store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\>~@.=' 
+store(escapable) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ>\~@.=' 
 dk(1) + any(escapable) > index(escapable, 2)     
 any(escapable) + any(escapable) > index(escapable, 1) index(escapable, 2)
 
@@ -512,8 +524,14 @@ c ''  +  [K_BKSP] > ''
 'റ്റ' + [K_BKSP] > nul
 
 c Convenience Mapping and Emoji
-'---' + '\' > '—'
-'--' + '\' > '–'
+'-' + '-' > '–'
+'–' + '-' > '—'
+'-' + '>' > '→'
+'→' + '#' > '↓'
+'↓' + '#' > '←'
+'<' + '-' > '←'
+'←' + '#' > '↑'
+'↑' + '#' > '→'
 '\' + '-' > '−'
 '\' + '*' > '×'
 '\' + '/' > '÷'
@@ -521,6 +539,7 @@ c Convenience Mapping and Emoji
 ':' + '(' > '☹'
 ':' + 'D' > '😄'
 ':' + 'x' > '😘'
+':' + '/' > '🤔'
 
 
 c Smart single quotes
