@@ -337,8 +337,7 @@ divination lore and Khmer lunar dates.</p>
 
 <p class=MsoNormal><img width=602 height=643
 src="khmer_angkor/image001.png"></p>
-
-<p class=MsoNormal><img width=602 height=213
+<p class=MsoNormal><img width=602
 src="khmer_angkor/image002.png"></p>
 
 <h2 style='margin-left:.5in'><a name="_Toc515267264">Touch Layout –Android/iOS</a></h2>
@@ -371,24 +370,36 @@ line-height:105%;font-family:"Khmer Mondulkiri"'>&#6098;</span>”<span lang=KHM
 style='font-size:18.0pt;line-height:105%;font-family:DaunPenh'> </span>each
 time to get a subscript.</p>
 
-<p class=MsoNormal>Default layout</p>
+<p class=MsoNormal>Phone - Default layout with longpress triggered on រ key</p>
 
-<p class=MsoNormal><img width=575 height=252
-src="khmer_angkor/image003.jpg"></p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>Numeric layout</p>
-
-<p class=MsoNormal><img width=577 height=196
-src="khmer_angkor/image004.jpg"></p>
+<p class=MsoNormal><img width=308 height=202
+src="khmer_angkor/image003.png"></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>Divination Lore and Khmer Lunar Dates layout</p>
+<p class=MsoNormal>Phone - Numeric layout</p>
 
-<p class=MsoNormal><img width=577 height=195
-src="khmer_angkor/image005.jpg"></p>
+<p class=MsoNormal><img width=308 height=152
+src="khmer_angkor/image004.png"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Tablet - Default layout</p>
+
+<p class=MsoNormal><img width=601 height=229
+src="khmer_angkor/tabletDefault.png"></p>
+
+<p class=MsoNormal>Tablet - Shift layout</p>
+
+<p class=MsoNormal><img width=601 height=227
+src="khmer_angkor/tabletShift.png"></p>
+
+<p class=MsoNormal>Tablet - AltGr layout</p>
+
+<p class=MsoNormal><img width=601 height=228
+src="khmer_angkor/tabletAltGr.png"></p>
+
+<p class=MsoNormal>&nbsp;</p>
 
 <p class=MsoNormal align=center style='text-align:center'><span
 style='font-size:16.0pt;line-height:105%;font-family:"Calibri Light",sans-serif;
@@ -4009,7 +4020,7 @@ lang=KHM> </span><span style='font-family:"Courier New"'>[U+17C8]</span>.</p>
     To get Khmer fonts, you may visit one of the three sources below:
 <ul style="list-style-type:circle">
     <li><a href="http://www.khmeros.info/?q=en/fonts">Khmer Fonts by the Khmer Software Initiative</a></li>
-    <li><a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=mondulkiri">Khmer Font by SIL International</a></li>
+    <li><a href="https://software.sil.org/mondulkiri">Khmer Font by SIL International</a></li>
     <li><a href="https://fonts.google.com/?subset=khmer">Khmer Fonts by Google</a> </li>
 </ul>
 
@@ -4019,7 +4030,7 @@ lang=KHM> </span><span style='font-family:"Courier New"'>[U+17C8]</span>.</p>
 </p>
 
 <ul style="list-style-type:circle">
-    <li><a href="http://unicode.org/charts/PDF/U1780.pdf">Khmer character chart (Unicode Standard 10.0)</a></li>
+    <li><a href="http://unicode.org/charts/PDF/U1780.pdf">Khmer character chart</a></li>
     <li><a href="https://www.ethnologue.com/country/KH">Cambodia on ethnologue</a></li>
-    <li><a href="http://www.unicode.org/versions/Unicode10.0.0/ch16.pdf">Khmer Script by Unicode Standard</a> </li>
+    <li><a href="http://www.unicode.org/versions/latest/ch16.pdf">Khmer Script by Unicode Standard</a> </li>
 </ul>

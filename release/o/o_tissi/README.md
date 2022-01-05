@@ -1,9 +1,9 @@
 Ó tissi keyboard
 ==============
 
-© 2020 Indigenous Language Network
+© 2020-2021 Indigenous Language Network
 
-Version 1.0
+Version 2.0
 
 Description
 -----------

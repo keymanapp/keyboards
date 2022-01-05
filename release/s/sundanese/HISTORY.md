@@ -1,4 +1,7 @@
 Sunda Baku Keyboard Change History
+1.0.5 (5 August 2021) 
+* Updated font Kairaga Regular to vesion 3.1
+* Fix ligatures and glyph combinations of the font
 
 1.0.4 (25 April 2020) 
 * Updated font Kairaga Regular to vesion 3.0 

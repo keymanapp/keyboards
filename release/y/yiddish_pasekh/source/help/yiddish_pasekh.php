@@ -1,10 +1,10 @@
 <?php
   $pagename = 'Yiddish Pasekh Keyboard Help';
-  $pagetitle = 'Yiddish Pasekh Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
-<h2>Overview</h2>
+
 
 <p>This keyboard layout is designed to type Yiddish by transliteration.</p>
 
@@ -60,16 +60,17 @@ combinations:</P>
 
 <table class='grid'>
 <tr><th>Key</th><th>Yiddish</th><th>Note</th></tr>
-<tr><td><span class='keys'>E</span></td><td><span class='lang2'>ײ</span></td><td class='note'>ey</td></tr>
-<tr><td><span class='keys'>I</span></td><td><span class='lang2'>י</span></td><td class='note'>i</td></tr>
-<tr><td><span class='keys'>J</span></td><td><span class='lang2'>ײ</span></td><td class='note'>ey (the name of J rhymes with ey)</td></tr>
-<tr><td><span class='keys'>O</span></td><td><span class='lang2'>ױ</span></td><td class='note'>oy</td></tr>
-<tr><td><span class='keys'>U</span></td><td><span class='lang2'>ו</span></td><td class='note'>u</td></tr>
-<tr><td><span class='keys'>Y</span></td><td><span class='lang2'>ײַ</span></td><td class='note'>ay (the name of Y rhymes with ay)</td></tr>
-<tr><td><span class='keys'>yi</span></td><td><span class='lang2'>ייִ</span></td><td></td></tr>
-<tr><td><span class='keys'>iy</span></td><td><span class='lang2'>יִי</span></td><td></td></tr>
-<tr><td><span class='keys'>Ei</span></td><td><span class='lang2'>ײיִ</span></td><td></td></tr>
-<tr><td><span class='keys'>Ui</span></td><td><span class='lang2'>ויִ</span></td><td></td></tr>
+<tr><td><span class='keys'>E</span></td><td><span class='lang2'>ײ</span></td><td class='note'>ey (yiddish double yod)</td></tr>
+<tr><td><span class='keys'>I</span></td><td><span class='lang2'>י</span></td><td class='note'>i (yod)</td></tr>
+<tr><td><span class='keys'>J</span></td><td><span class='lang2'>ײ</span></td><td class='note'>ey (yiddish double yod)</td></tr>
+<tr><td><span class='keys'>O</span></td><td><span class='lang2'>ױ</span></td><td class='note'>oy (yiddish vav yod)</td></tr>
+<tr><td><span class='keys'>U</span></td><td><span class='lang2'>ו</span></td><td class='note'>u (vav)</td></tr>
+<tr><td><span class='keys'>Y</span></td><td><span class='lang2'>ײַ</span></td><td class='note'>ay (yiddish double yod + patah)</td></tr>
+<tr><td><span class='keys'>yi</span></td><td><span class='lang2'>ייִ</span></td><td class='note'>(yod+yod+hiriq)</td></tr>
+<tr><td><span class='keys'>iy</span></td><td><span class='lang2'>יִי</span></td><td class='note'>(yod+hiriq+yod)</td></tr>
+<tr><td><span class='keys'>Ei</span></td><td><span class='lang2'>ײיִ</span></td><td class='note'>(yiddish double yod+yod+hiriq)</td></tr>
+<tr><td><span class='keys'>Ui</span></td><td><span class='lang2'>ויִ</span></td><td class='note'>(vav+yod+hiriq)</td></tr>
+<tr><td><span class='keys'>II</span></td><td><span class='lang2'>יִ</span></td><td class='note'>(yod+hiriq)</td></tr>
 </table>
 
 <p>Hebrew-specific letters are typed with shifted keys, too:</p>
@@ -98,10 +99,4 @@ hyphen after a Yiddish letter, press the hyphen key twice.</p>
 <p>A hyphen after a hyphen turns the hyphen into an en dash.<br />
 A hyphen after an en dash turns the en dash into an em dash.<br />
 A <em>geresh</em> after a <em>geresh</em> turns the <em>geresh</em> into <em>gershayim.</em></p>
-
-
-<div id="Copyright">
-<p>© 2002-2019 Gyula Zsigri.</p>
-
-</div>
 
