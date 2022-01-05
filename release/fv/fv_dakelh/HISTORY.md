@@ -1,6 +1,10 @@
 Dakelh Change History
 ============================
 
+9.1.2 (24 Feb 2021)
+-------------------
+* Updated htm files for readability on Linux
+
 9.1.1 (29 Oct 2019)
 -------------------
 * Restored enhanced touch layouts

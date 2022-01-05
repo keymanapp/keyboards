@@ -12,18 +12,18 @@ and selecting the On Screen Keyboard menu item. Similar keyboards are also avail
 <h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift shift-ctrl'>
+<div id='osk' data-states='default shift ctrl shift-ctrl'>
 </div>
 
 <h2>Phone Keyboard Layout</h2>
 <p>Due to the size and number of keys, some characters are hidden in the long press.
 Press and hold on the key with a little dot on the top right to reveal them.</p>
-
 <div id='osk-phone' data-states='default shift numeric'>
 </div>
 
 <h2>Tablet Keyboard Layout</h2>
-
+<p>Due to the size and number of keys, some characters are hidden in the long press.
+Press and hold on the key with a little dot on the top right to reveal them.</p>
 <div id='osk-tablet' data-states='default shift shift-ctrl'>
 </div>
 

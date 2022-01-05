@@ -1,0 +1,132 @@
+﻿c Keyboard for Siloti Nagri, traditional script of the Sylheti language spoken in Sylhet, Bangladesh
+store(&VERSION) '10.0'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© 2019-2021 Sylheti Translation And Research'
+store(&NAME) 'SYL'
+store(&MESSAGE) 'www.sylheti.org.uk'
+store(&KEYBOARDVERSION) '1.1'
+store(&BITMAP) 'sylheti_nagri.ico'
+store(&VISUALKEYBOARD) 'sylheti_nagri.kvks'
+store(&LAYOUTFILE) 'sylheti_nagri.keyman-touch-layout'
+begin Unicode > use(main)
+
+c script uses Bengali digits
+store(numkeys) [K_0] .. [K_9]
+store(digitsU) U+09E6 .. U+09EF
+
+group(main) using keys
++ [K_BKQUOTE] > dk(1)
+
+c default layer
++ any(numkeys) > index(digitsU,1)
++ [K_HYPHEN] > '-'
++ [K_EQUAL] > '='
+
++ [K_Q] > U+2018
++ [K_W] > U+2019
++ [K_E] > 'ꠦ' c U+A826
++ [K_R] > 'ꠞ' c U+A81E
++ [K_T] > 'ꠔ'
++ [K_Y] > 'ꠂ'
++ [K_U] > 'ꠥ'
++ [K_I] > 'ꠤ' c U+A824
++ [K_O] > 'ꠧ'
++ [K_P] > 'ꠙ'
++ [K_RBRKT] > ']'
++ [K_LBRKT] > '['
++ [K_BKSLASH] > '\'
++ [K_oE2] > '\'
+
++ [K_A] > 'ꠣ'
++ [K_S] > 'ꠡ'
++ [K_D] > 'ꠖ'
++ [K_F] > '।'
++ [K_G] > 'ꠉ'
++ [K_H] > 'ꠢ'
++ [K_J] > 'ꠎ'
++ [K_K] > 'ꠇ'
++ [K_L] > 'ꠟ' c U+A81F
++ [K_COLON] > ';'
++ [K_QUOTE] > U+0027
+
++ [K_Z] > 'ꠒ'
++ [K_X] > 'ꠐ' c U+A810
++ [K_C] > 'ꠌ'
++ [K_V] > '꠆ꠞ'
++ [K_B] > 'ꠛ'
++ [K_N] > 'ꠘ'
++ [K_M] > 'ꠝ'
++ [K_COMMA] > ','
++ [K_PERIOD] > '.'
++ [K_SLASH] > '/'
+
+c shift layer
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_1] > '!'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '£'
++ [SHIFT K_4] > '৳'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > U+A806 c '꠆' 
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '('
++ [SHIFT K_0] > ')'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_EQUAL] > '+'
+
++ [SHIFT K_Q] > U+201C
++ [SHIFT K_W] > U+201D
++ [SHIFT K_E] > 'ꠄ'
++ [SHIFT K_R] > 'ꠠ'
++ [SHIFT K_T] > 'ꠕ'
++ [SHIFT K_Y] > U+A806 U+200c c hasanta with ZWNJ
++ [SHIFT K_U] > 'ꠃ'
++ [SHIFT K_I] > 'ꠁ'
++ [SHIFT K_O] > 'ꠅ'
++ [SHIFT K_P] > 'ꠚ'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_BKSLASH] > '|'
+
++ [SHIFT K_oE2] > '|'
+
++ [SHIFT K_A] > 'ꠀ'
++ [SHIFT K_S] > 'ꠡ꠆'
++ [SHIFT K_D] > 'ꠗ'
++ [SHIFT K_F] > '॥'
++ [SHIFT K_G] > 'ꠊ'
++ [SHIFT K_H] > U+A82C c alternate hasanta
++ [SHIFT K_J] > 'ꠏ'
++ [SHIFT K_K] > 'ꠈ'
++ [SHIFT K_L] > '꠆ꠟ'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_QUOTE] > '"'
+
++ [SHIFT K_Z] > 'ꠓ'
++ [SHIFT K_X] > 'ꠑ'
++ [SHIFT K_C] > 'ꠍ' c U+A80D
++ [SHIFT K_V] > '꠆ꠔ'
++ [SHIFT K_B] > 'ꠜ'
++ [SHIFT K_N] > 'ꠘ꠆'
++ [SHIFT K_M] > 'ꠋ'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_SLASH] > '?'
+
+
+
+dk(1) + '+' > '⁕'
+dk(1) + '`' > '`'
+dk(1) + [K_1] > U+A828
+dk(1) + [K_2] > U+A829
+dk(1) + [K_3] > U+A82A
+dk(1) + [K_4] > U+A82B
+dk(1) + [SHIFT K_3] > '#'
+dk(1) + [SHIFT K_4] > '$'
+dk(1) + [SHIFT K_5] > '€'
+
+c + [SHIFT RALT K_6] > U+A806 U+200b c  '꠆​' Zero Width Space
+c + [SHIFT K_H] > 'ꠇ꠆'
+c + [SHIFT K_Y] > U+A806 c '꠆'
+

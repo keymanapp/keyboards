@@ -1,17 +1,22 @@
 Hebrew (SIL) Keyboard
 =====================
 
-Copyright (C) 2001-2020 SIL International
-
-Version 1.7.2
+Copyright (C) SIL International
 
 __DESCRIPTION__
-Biblical Hebrew keyboard layout.
-
+This keyboard is designed for Biblical Hebrew and represents the official Biblical Hebrew keyboard from SIL
 
 Supported Platforms
 -------------------
  * Windows
  * macOS
  * linux
+ * Web
+ * iPhone
+ * iPad
+ * Android phone
+ * Android tablet
+ * Mobile devices
+ * Tablet devices
+
 

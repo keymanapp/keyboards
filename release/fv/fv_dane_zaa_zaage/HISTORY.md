@@ -1,5 +1,14 @@
 Dane-Z̲aa Z̲áágéʔ Change History
-============================
+====================
+
+9.2 (14 Dec 2021)
+----------------
+* Designed and added desktop keyboard, based on Doig River font
+* Updated touch layout (ogonek characters on long press)
+* Added rules for correct ordering of ogonek (U+0328) and diacritics
+* All associated desktop/web keyboard files added
+* Updated help documentation
+* Updated copyright format
 
 9.1 (26 Oct 2018)
 -----------------

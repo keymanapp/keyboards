@@ -1,9 +1,9 @@
 X̱aayda-X̱aad Kil keyboard
 ======================
 
-Copyright (c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
+Copyright (c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
 
-Version 9.1
+Version 9.2
 
 X̱aayda-X̱aad Kil keyboard layout for Unicode
 
