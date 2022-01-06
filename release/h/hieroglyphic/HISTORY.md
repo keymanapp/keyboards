@@ -1,6 +1,10 @@
 Hieroglyphic Keyboard Change History
 =======================
 
+1.4 (6 Jan 2021)
+-------------------
+* Add tablet layout
+
 1.3.2 (29 Apr 2021)
 -------------------
 * Remove JS file from keyboard package as the keyboard does not currently support mobile devices
