@@ -1,6 +1,14 @@
 Tchad Keyboard Change History
 =======================
 
+4.2 (4 Jan 2022)
+------------------
+* Reduced number of special chars on long-press vowels
+* Included Andika Afr font with mobile keyboards to avoid boxes with X
+* Fixed some layer switches in the touch layout
+* Made shu first language, removed MSA (arb) and Babalia (bbz), removed most -Latn to make canonical
+* Improvements to visual keyboard layout
+
 3.3.2 (22 Aug 2018)
 ------------------
 * Improved mobile support
