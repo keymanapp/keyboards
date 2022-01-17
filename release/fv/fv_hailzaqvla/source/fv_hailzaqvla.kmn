@@ -12,6 +12,9 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+c special letter keys also behave correctly with capslock
+store(&CasedKeys) [K_BKQUOTE] [K_BKSLASH] [K_RBRKT] [K_LBRKT]
+
 + [K_BKQUOTE] > 'ħ'
 + [K_BKSLASH] > 'ɫ'
 + [K_RBRKT] > 'ƛ'
