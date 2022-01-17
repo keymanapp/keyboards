@@ -1,0 +1,249 @@
+﻿c old_turkic_udw21_qwerty generated from template at 2022-01-14 14:14:17
+c with name "Old Turkic UDW21 (QWERTY)"
+store(&VERSION) '10.0'
+store(&NAME) 'Old Turkic UDW21 (QWERTY)'
+store(&COPYRIGHT) '© 2022 Mehmet Oguz Derin and Takahiro Harada'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'old_turkic_udw21_qwerty.kvks'
+store(&LAYOUTFILE) 'old_turkic_udw21_qwerty.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+store(backness) ''
+store(articulation) ''
+store(space) ''
+
+begin Unicode > use(main)
+
+group(main)
+  if(backness = '') if(articulation = '') > use(initial)
+  if(backness = '') if(articulation != '') > use(middle)
+  if(backness = 'back') > use(back)
+  if(backness = 'front') > use(front)
+
+group(initial) using keys
+  nul + [K_BKSP] > set(backness = '') set(articulation = '') set(space = ' ')
+  + [SHIFT K_SPACE] > U+00020
+  if(space = '') + [K_SPACE] > set(backness = '') set(articulation = '') set(space = ' ')
+  if(space = ' ') + [K_SPACE] > U+0003A set(space = '')
+  + [K_A] > set(backness = 'back')
+  + [K_E] > set(backness = 'front')
+  + [K_W] > U+10C03 set(backness = 'back')
+  + [K_I] > U+10C03 set(backness = 'front')
+  + [K_O] > U+10C06 set(backness = 'back')
+  + [K_U] > U+10C07 set(backness = 'front')
+  + [K_K] > set(articulation = 'k')
+  + [K_C] > set(articulation = 'c')
+  + [K_T] > set(articulation = 't')
+  + [K_P] > set(articulation = 'p')
+  + [K_G] > set(articulation = 'g')
+  + [K_D] > set(articulation = 'd')
+  + [K_B] > set(articulation = 'b')
+  + [K_H] > set(articulation = 'k')
+  + [K_X] > set(articulation = 'x')
+  + [K_S] > set(articulation = 's')
+  + [K_F] > set(articulation = 'p')
+  + [K_Z] > set(articulation = 'z')
+  + [K_V] > set(articulation = 'b')
+  + [K_Q] > set(articulation = 'q')
+  + [K_J] > set(articulation = 'j')
+  + [K_N] > set(articulation = 'n')
+  + [K_M] > set(articulation = 'm')
+  + [K_R] > set(articulation = 'r')
+  + [K_Y] > set(articulation = 'y')
+  + [K_L] > set(articulation = 'l')
+
+group(middle) using keys
+  nul + [K_BKSP] > set(backness = '') set(articulation = '') set(space = ' ')
+  + [SHIFT K_SPACE] > U+00020
+  + [K_SPACE] > set(backness = '') set(articulation = '') set(space = ' ')
+  if(articulation = 'k') + [K_A] > U+10C34 set(backness = 'back') set(articulation = '')
+  if(articulation = 'k') + [K_E] > U+10C1A set(backness = 'front') set(articulation = '')
+  if(articulation = 'k') + [K_W] > U+10C34 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'k') + [K_I] > U+10C1A U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'k') + [K_O] > U+10C34 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'k') + [K_U] > U+10C1A U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'c') + [K_A] > U+10C32 set(backness = 'back') set(articulation = '')
+  if(articulation = 'c') + [K_E] > U+10C32 set(backness = 'front') set(articulation = '')
+  if(articulation = 'c') + [K_W] > U+10C32 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'c') + [K_I] > U+10C32 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'c') + [K_O] > U+10C32 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'c') + [K_U] > U+10C32 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 't') + [K_A] > U+10C43 set(backness = 'back') set(articulation = '')
+  if(articulation = 't') + [K_E] > U+10C45 set(backness = 'front') set(articulation = '')
+  if(articulation = 't') + [K_W] > U+10C43 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 't') + [K_I] > U+10C45 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 't') + [K_O] > U+10C43 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 't') + [K_U] > U+10C45 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'p') + [K_A] > U+10C2F set(backness = 'back') set(articulation = '')
+  if(articulation = 'p') + [K_E] > U+10C2F set(backness = 'front') set(articulation = '')
+  if(articulation = 'p') + [K_W] > U+10C2F U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'p') + [K_I] > U+10C2F U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'p') + [K_O] > U+10C2F U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'p') + [K_U] > U+10C2F U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'g') + [K_A] > U+10C0D set(backness = 'back') set(articulation = '')
+  if(articulation = 'g') + [K_E] > U+10C0F set(backness = 'front') set(articulation = '')
+  if(articulation = 'g') + [K_W] > U+10C0D U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'g') + [K_I] > U+10C0F U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'g') + [K_O] > U+10C0D U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'g') + [K_U] > U+10C0F U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'd') + [K_A] > U+10C11 set(backness = 'back') set(articulation = '')
+  if(articulation = 'd') + [K_E] > U+10C13 set(backness = 'front') set(articulation = '')
+  if(articulation = 'd') + [K_W] > U+10C11 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'd') + [K_I] > U+10C13 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'd') + [K_O] > U+10C11 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'd') + [K_U] > U+10C13 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'b') + [K_A] > U+10C09 set(backness = 'back') set(articulation = '')
+  if(articulation = 'b') + [K_E] > U+10C0B set(backness = 'front') set(articulation = '')
+  if(articulation = 'b') + [K_W] > U+10C09 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'b') + [K_I] > U+10C0B U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'b') + [K_O] > U+10C09 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'b') + [K_U] > U+10C0B U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'x') + [K_A] > U+10C41 set(backness = 'back') set(articulation = '')
+  if(articulation = 'x') + [K_E] > U+10C40 set(backness = 'front') set(articulation = '')
+  if(articulation = 'x') + [K_W] > U+10C41 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'x') + [K_I] > U+10C40 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'x') + [K_O] > U+10C41 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'x') + [K_U] > U+10C40 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 's') + [K_A] > U+10C3D set(backness = 'back') set(articulation = '')
+  if(articulation = 's') + [K_E] > U+10C3E set(backness = 'front') set(articulation = '')
+  if(articulation = 's') + [K_W] > U+10C3D U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 's') + [K_I] > U+10C3E U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 's') + [K_O] > U+10C3D U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 's') + [K_U] > U+10C3E U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'z') + [K_A] > U+10C14 set(backness = 'back') set(articulation = '')
+  if(articulation = 'z') + [K_E] > U+10C14 set(backness = 'front') set(articulation = '')
+  if(articulation = 'z') + [K_W] > U+10C14 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'z') + [K_I] > U+10C14 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'z') + [K_O] > U+10C14 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'z') + [K_U] > U+10C14 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'q') + [K_A] > U+10C2C set(backness = 'back') set(articulation = '')
+  if(articulation = 'q') + [K_E] > U+10C2D set(backness = 'front') set(articulation = '')
+  if(articulation = 'q') + [K_W] > U+10C2C U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'q') + [K_I] > U+10C2D U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'q') + [K_O] > U+10C2C U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'q') + [K_U] > U+10C2D U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'j') + [K_A] > U+10C2A set(backness = 'back') set(articulation = '')
+  if(articulation = 'j') + [K_E] > U+10C2A set(backness = 'front') set(articulation = '')
+  if(articulation = 'j') + [K_W] > U+10C2A U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'j') + [K_I] > U+10C2A U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'j') + [K_O] > U+10C2A U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'j') + [K_U] > U+10C2A U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'n') + [K_A] > U+10C23 set(backness = 'back') set(articulation = '')
+  if(articulation = 'n') + [K_E] > U+10C24 set(backness = 'front') set(articulation = '')
+  if(articulation = 'n') + [K_W] > U+10C23 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'n') + [K_I] > U+10C24 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'n') + [K_O] > U+10C23 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'n') + [K_U] > U+10C24 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'm') + [K_A] > U+10C22 set(backness = 'back') set(articulation = '')
+  if(articulation = 'm') + [K_E] > U+10C22 set(backness = 'front') set(articulation = '')
+  if(articulation = 'm') + [K_W] > U+10C22 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'm') + [K_I] > U+10C22 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'm') + [K_O] > U+10C22 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'm') + [K_U] > U+10C22 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'r') + [K_A] > U+10C3A set(backness = 'back') set(articulation = '')
+  if(articulation = 'r') + [K_E] > U+10C3C set(backness = 'front') set(articulation = '')
+  if(articulation = 'r') + [K_W] > U+10C3A U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'r') + [K_I] > U+10C3C U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'r') + [K_O] > U+10C3A U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'r') + [K_U] > U+10C3C U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'y') + [K_A] > U+10C16 set(backness = 'back') set(articulation = '')
+  if(articulation = 'y') + [K_E] > U+10C18 set(backness = 'front') set(articulation = '')
+  if(articulation = 'y') + [K_W] > U+10C16 U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'y') + [K_I] > U+10C18 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'y') + [K_O] > U+10C16 U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'y') + [K_U] > U+10C18 U+10C07 set(backness = 'front') set(articulation = '')
+  if(articulation = 'l') + [K_A] > U+10C1E set(backness = 'back') set(articulation = '')
+  if(articulation = 'l') + [K_E] > U+10C20 set(backness = 'front') set(articulation = '')
+  if(articulation = 'l') + [K_W] > U+10C1E U+10C03 set(backness = 'back') set(articulation = '')
+  if(articulation = 'l') + [K_I] > U+10C20 U+10C03 set(backness = 'front') set(articulation = '')
+  if(articulation = 'l') + [K_O] > U+10C1E U+10C06 set(backness = 'back') set(articulation = '')
+  if(articulation = 'l') + [K_U] > U+10C20 U+10C07 set(backness = 'front') set(articulation = '')
+  + [K_A] > set(backness = 'back')
+  + [K_E] > set(backness = 'front')
+  + [K_W] > U+10C03 set(backness = 'back')
+  + [K_I] > U+10C03 set(backness = 'front')
+  + [K_O] > U+10C06 set(backness = 'back')
+  + [K_U] > U+10C07 set(backness = 'front')
+  + [K_K] > set(articulation = 'k')
+  + [K_C] > set(articulation = 'c')
+  + [K_T] > set(articulation = 't')
+  + [K_P] > set(articulation = 'p')
+  + [K_G] > set(articulation = 'g')
+  + [K_D] > set(articulation = 'd')
+  + [K_B] > set(articulation = 'b')
+  + [K_H] > set(articulation = 'k')
+  + [K_X] > set(articulation = 'x')
+  + [K_S] > set(articulation = 's')
+  + [K_F] > set(articulation = 'p')
+  + [K_Z] > set(articulation = 'z')
+  + [K_V] > set(articulation = 'b')
+  + [K_Q] > set(articulation = 'q')
+  + [K_J] > set(articulation = 'j')
+  + [K_N] > set(articulation = 'n')
+  + [K_M] > set(articulation = 'm')
+  + [K_R] > set(articulation = 'r')
+  + [K_Y] > set(articulation = 'y')
+  + [K_L] > set(articulation = 'l')
+
+group(back) using keys
+  nul + [K_BKSP] > set(backness = '') set(articulation = '') set(space = ' ')
+  + [SHIFT K_SPACE] > U+00020
+  + [K_SPACE] > set(backness = '') set(articulation = '') set(space = ' ')
+  + [K_A] > U+10C00
+  + [K_E] > set(backness = 'front')
+  + [K_W] > U+10C03
+  + [K_I] > U+10C03 set(backness = 'front')
+  + [K_O] > U+10C06
+  + [K_U] > U+10C07 set(backness = 'front')
+  + [K_K] > U+10C34
+  + [K_C] > U+10C32
+  + [K_T] > U+10C43
+  + [K_P] > U+10C2F
+  + [K_G] > U+10C0D
+  + [K_D] > U+10C11
+  + [K_B] > U+10C09
+  + [K_H] > U+10C34
+  + [K_X] > U+10C41
+  + [K_S] > U+10C3D
+  + [K_F] > U+10C2F
+  + [K_Z] > U+10C14
+  + [K_V] > U+10C09
+  + [K_Q] > U+10C2C
+  + [K_J] > U+10C2A
+  + [K_N] > U+10C23
+  + [K_M] > U+10C22
+  + [K_R] > U+10C3A
+  + [K_Y] > U+10C16
+  + [K_L] > U+10C1E
+
+group(front) using keys
+  nul + [K_BKSP] > set(backness = '') set(articulation = '') set(space = ' ')
+  + [SHIFT K_SPACE] > U+00020
+  + [K_SPACE] > set(backness = '') set(articulation = '') set(space = ' ')
+  + [K_A] > set(backness = 'back')
+  + [K_E] > U+10C00
+  + [K_W] > U+10C03 set(backness = 'back')
+  + [K_I] > U+10C03
+  + [K_O] > U+10C06 set(backness = 'back')
+  + [K_U] > U+10C07
+  + [K_K] > U+10C1A
+  + [K_C] > U+10C32
+  + [K_T] > U+10C45
+  + [K_P] > U+10C2F
+  + [K_G] > U+10C0F
+  + [K_D] > U+10C13
+  + [K_B] > U+10C0B
+  + [K_H] > U+10C1A
+  + [K_X] > U+10C40
+  + [K_S] > U+10C3E
+  + [K_F] > U+10C2F
+  + [K_Z] > U+10C14
+  + [K_V] > U+10C0B
+  + [K_Q] > U+10C2D
+  + [K_J] > U+10C2A
+  + [K_N] > U+10C24
+  + [K_M] > U+10C22
+  + [K_R] > U+10C3C
+  + [K_Y] > U+10C18
+  + [K_L] > U+10C20
