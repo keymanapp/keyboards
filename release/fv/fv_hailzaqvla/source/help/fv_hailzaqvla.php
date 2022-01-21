@@ -55,7 +55,7 @@ END;
   <li>p̓ t̓ a̓, etc: Type the letter you want, then hold SHIFT and press , (comma) to add the glottal.</li>
   <li>á ú, à ù, etc:
     <ul>
-      <li>Type the letter you want, then hold SHIFT and press - to add the ´ accent.</li>
+      <li>Type the letter you want, then hold SHIFT and press - (hyphen) to add the ´ accent.</li>
       <li>Type the letter you want, then hold ALT and press ` (next to the number 1) to add the ` accent.</li>
     </ul>
   </li>
