@@ -5,7 +5,6 @@ store(&KMW_RTL) '1'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&BITMAP) 'hausa_ajami_qwerty.ico'
-c  store(&LAYOUTFILE) 'hausa_ajami_qwerty.keyboard-layout'
 store(&VISUALKEYBOARD) 'hausa_ajami_qwerty.kvks'
 store(&LAYOUTFILE) 'hausa_ajami_qwerty.keyman-touch-layout'
 
@@ -65,7 +64,7 @@ store(Uhack) U+0643           U+0646           U+06A0           U+06A2          
              U+06A7           U+06A8 
 store(nul) "`opGNMOPRT"
 
-store(K_RTL) [RALT K_Q] [RALT K_W] [RALT K_E] [RALT K_R]
+store(K_RTL) [RALT SHIFT K_Q] [RALT SHIFT K_W] [RALT SHIFT K_E] [RALT SHIFT K_R]
 store(U_RTL) U+200C     U+200D     U+200E     U+200F c ZWNJ ZWJ LRM RLM
 
 store(Kextra_punct) [SHIFT K_4]            [RALT SHIFT K_5] [RALT SHIFT K_7]     [RALT SHIFT K_9]       [RALT SHIFT K_0] \
