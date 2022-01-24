@@ -25,7 +25,6 @@ Transliteration Implementation App (iOS): https://apps.apple.com/app/ascii-turk/
 
 Base Keyboard: https://keyman.com/keyboards/basic_kbdus
 
-
 Font: https://fonts.google.com/noto/specimen/Noto+Sans+Old+Turkic
 
 Supported Platforms
