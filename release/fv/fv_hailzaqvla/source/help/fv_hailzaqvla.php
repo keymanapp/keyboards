@@ -36,20 +36,21 @@ END;
 
 <ul>
   <li>ħ: type the ` key (next to the number 1).</li>
-  <li>λ: type the [ key.</li>
-  <li>ƛ: type the ] key.</li>
+  <li>λ: type the [ key. (Capital is not available in all fonts.)</li>
+  <li>ƛ: type the ] key. (Capital is not available.)</li>
   <li>ɫ: type the \ key.</li>
   <li>ʔ: hold ALT and type the / key.</li>
   <li>ǧ x̌:
     <ul>
-      <li>Hold ALT and type g/x.</li>
-      <li>OR type g/x, then hold SHIFT and press 6 to add the extra ˇ mark.</li>
+      <li>Type g/x, then hold SHIFT and press 6 to add the extra ˇ mark.</li>
+      <li>OR hold ALT and type g/x.</li>
     </ul>
   </li>
   <li>ḷ ṃ ṇ:
     <ul>
-      <li>Hold ALT and type l/m/n.</li>
-      <li>OR type l/m/n, then hold SHIFT and press . (period) to add the extra dot.</li>
+      <li>Type l/m/n, then hold SHIFT and press . (period) to add the extra dot.</li>
+      <li>OR hold ALT and type l/m/n. 
+      <br><em>Note: ALT+SHIFT+M is used in Keyman by default to open the Keyman menu, so this method cannot be used to type Ṃ. You must either use the first method, or go to Configuration < Hotkeys in the Keyman menu to remove that default.</em></li>
     </ul>
   </li>
   <li>p̓ t̓ a̓, etc: Type the letter you want, then hold SHIFT and press , (comma) to add the glottal.</li>
