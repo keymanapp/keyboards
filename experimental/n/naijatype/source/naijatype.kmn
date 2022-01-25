@@ -2,7 +2,7 @@
 c Touch keyboard uses long press on related letters.
 c Comma to left of space bar + Emoji. Removed capitals on long press default keyboard.
 c Note we need to output K_ keys on punctuation with appropriate modifier keys held down to make sure the key runs through the Keyman Layout rules and converts space + ? into ? + space. This makes it handle the automatic space put in at the end of predictive texting better.
-c
+c 
 c Added small capital I.
 c Restored the globe language menu but moved it left.
 c Custom CSS styling to try to match the less cluttered Google look.
@@ -16,6 +16,7 @@ c v28 Added ʉɄ option for 10 vowel languages and did a major overhaul of the w
 c v29 Corrected oversight (bug) which didn't allow tone on underline and underdot letters.
 c v30 Type kbv or version; to show the keyboard version.
 c v31-33 Corrected behaviour of ? and ! and updated to match App version number for Google Play
+c v34 Layout changed to make space bar bigger and avoid pressing full stop.
 store(&VERSION) '9.0'
 store(&NAME) 'Naija Type'
 store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
@@ -82,7 +83,7 @@ store(ToneRota2)     outs(ToneCore) outs(ToneLast)    c And the final tone mark 
 store(ToneSubset)     outs(ToneRota1) U+0304    c All the tones
 store(TonesAll)                outs(ToneSubset) U+030B U+030F U+1DC4 U+1DC5 U+1DC6 U+1DC7
 store(WhiteSpace) [K_ENTER] " " [K_TAB]
-store(&KEYBOARDVERSION) '33'
+store(&KEYBOARDVERSION) '34'
 
 begin Unicode > use(main)
 
