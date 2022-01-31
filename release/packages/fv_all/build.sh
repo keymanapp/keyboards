@@ -81,6 +81,12 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   oskFont=${kpsdata[4]}
   displayFont=${kpsdata[5]}
 
+  # Override sil_euro_latin keyboard to English language
+  if [[ $id = 'sil_euro_latin' ]]; then
+    bcp47="en"
+    langname="English"
+  fi
+
   # Build a file entry
   FILE_LINES_0=''
   FILE_LINES_1=''
