@@ -1,7 +1,7 @@
 Xinaliq Keyboard
 =====================
 
-Copyright (C) 2019-2021 Kenneth Keyes
+Copyright (C) 2019-2022 Kenneth Keyes
 Version 1.1.3
 
 __DESCRIPTION__
