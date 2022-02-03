@@ -4,20 +4,20 @@
     <version>10.0</version>
     <kbdname>basic_kbdhebl3</kbdname>
     <flags>
-      <key102/>
+      <displayunderlying/>
       <usealtgr/>
     </flags>
   </header>
-  <encoding name="unicode" fontname="Arial" fontsize="-12">
+  <encoding name="unicode" fontname="SBL Hebrew" fontsize="12">
     <layer shift="RA">
-      <key vkey="K_0">‏</key>
+      <key vkey="K_0">RLM</key>
       <key vkey="K_3">€</key>
       <key vkey="K_4">₪</key>
       <key vkey="K_5">°</key>
       <key vkey="K_6">֫</key>
       <key vkey="K_7">ֽ</key>
       <key vkey="K_8">×</key>
-      <key vkey="K_9">‎</key>
+      <key vkey="K_9">LRM</key>
       <key vkey="K_A">ְ</key>
       <key vkey="K_C">ֱ</key>
       <key vkey="K_E">ָ</key>
@@ -30,7 +30,7 @@
       <key vkey="K_Q">ׂ</key>
       <key vkey="K_R">ֳ</key>
       <key vkey="K_S">ּ</key>
-      <key vkey="K_U">ֹ</key>
+      <key vkey="K_U">ֹ  </key>
       <key vkey="K_W">ׁ</key>
       <key vkey="K_X">ֶ</key>
       <key vkey="K_Y">װ</key>
@@ -48,11 +48,11 @@
     </layer>
     <layer shift="SRA">
       <key vkey="K_B">׆</key>
-      <key vkey="K_C">͏</key>
-      <key vkey="K_J">‍</key>
+      <key vkey="K_C">CGJ</key>
+      <key vkey="K_J">ZWJ</key>
       <key vkey="K_L">“</key>
-      <key vkey="K_N">‌</key>
-      <key vkey="K_U">ֺ</key>
+      <key vkey="K_N">ZWNJ</key>
+      <key vkey="K_U">ֺ   </key>
       <key vkey="K_COLON">”</key>
       <key vkey="K_COMMA">‘</key>
       <key vkey="K_PERIOD">’</key>
@@ -157,10 +157,6 @@
       <key vkey="K_BKSLASH">|</key>
       <key vkey="K_RBRKT">{</key>
       <key vkey="K_BKQUOTE">~</key>
-    </layer>
-    <layer shift="LC">
-      <key vkey="K_LBRKT">‎</key>
-      <key vkey="K_RBRKT">‏</key>
     </layer>
   </encoding>
 </visualkeyboard>
