@@ -1,0 +1,86 @@
+﻿c remington_gail generated from template at 2022-01-25 14:06:35
+c with name "Remington GAIL"
+store(&VERSION) '14.0'
+store(&NAME) 'Remington GAIL'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '0.5'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'remington_gail.kvks'
+store(&LAYOUTFILE) 'remington_gail.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(digitsK) [K_0] .. [K_9]
+store(digitsU) U+0030 .. U+0039
+
+store(IdigitsK) [RALT K_0] .. [RALT K_9]
+store(IdigitsU) U+0966 .. U+096F
+
+store(consK) "v"    "b"    "m"    ")"    ","    \
+             "d"    "x"    "p"    "N"    "t"    ">"   "V" \
+             "B"    "M"    "<"    "r"    "n"    "u"    "i"    "Q"    "c"    "e"   ";" \
+             "j"    "y"    "G"    "o"    "l"    "g"
+store(consU) U+0905 U+0907 U+0909 U+090B U+090F \
+             U+0915 U+0917 U+091A U+091B U+091C U+091D U+091F \
+             U+0920 U+0921 U+0922 U+0924 U+0926 U+0928 U+092A U+092B U+092C U+092E U+092F \
+             U+0930 U+0932 U+0933 U+0935 U+0938 U+0939
+
+store(halfK) "D"    "["    "X"    "?"    "P"    "T"    "."    "R"    "F"    "/"    \
+             "U"    "I"    "C"    "H"    "E"    "Y"    "O"    "'"    '"'    "L"
+store(halfU) U+0915 U+0916 U+0917 U+0918 U+091A U+091C U+0923 U+0924 U+0925 U+0927 \
+             U+0928 U+092A U+092C U+092D U+092E U+0932 U+0935 U+0936 U+0937 U+0938
+store(all)   U+0904 .. U+0939
+
+store(nukta1) U+0928 U+0930 U+0933 U+0915 U+0916 U+0917 U+091C U+0921 U+0922 U+092B U+092F
+store(nukta2) U+0929 U+0931 U+0934 U+0958 U+0959 U+095A U+095B U+095C U+095D U+095E U+095F
+
+store(diaK) [K_A]  [K_BKQUOTE] "A"    "f"    "h"    "q"    "w"    "="    "W"    "s"    "S"    "+"
+store(diaU) U+0902 U+093C      U+093E U+093F U+0940 U+0941 U+0942 U+0943 U+0945 U+0947 U+0948 U+094D
+
+store(punctK) [SHIFT K_1] [SHIFT K_7] [SHIFT K_6] [K_BKSLASH]      [SHIFT K_BKSLASH] \
+              [SHIFT K_4] [K_RBRKT]   [SHIFT K_5] [SHIFT K_HYPHEN] [SHIFT K_2]       [K_HYPHEN]
+store(punctU) U+0964      U+0022      U+0027      U+0028           U+0029            \
+              U+002A      U+002C      U+002D      U+002E           U+002F            U+003B
+
+group(main) using keys
+
++ any(digitsK) > index(digitsU,1)
++ any(IdigitsK) > index(IdigitsU,1)
++ any(consK)   > index(consU,1)
++ any(halfK)   > index(halfU,1) U+094D U+200D
+any(all) U+094D + [K_K]         > index(all,1)
+any(all) U+094D + [SHIFT K_A]   > index(all,1)
+any(all) U+094D U+200D + [K_K]         > index(all,1)
+any(all) U+094D U+200D + [SHIFT K_A]   > index(all,1)
+
++ any(diaK)    > index(diaU,1)
++ any(punctK)  > index(punctU,1)
+
++ [SHIFT K_9]       > U+0924 U+094D U+0930 
++ [SHIFT K_8]       > U+0926 U+094D U+0927
++ [SHIFT K_BKQUOTE] > U+0926 U+094D U+092F
++ [K_Z]             > U+094D U+0930
++ [K_K]             > U+093E
++ [SHIFT K_3] > U+0903
++ [SHIFT K_J] > U+0936 U+094D U+0930
++ [SHIFT K_K] > U+091C U+094D U+091E
++ [SHIFT K_Z] > U+0930 U+094D
++ [SHIFT K_RBRKT] > U+0926 U+094D U+092C 
++ [SHIFT K_LBRKT] > U+0915 U+094D U+0937 U+094D U+200D
++ [SHIFT K_COLON] > U+0930 U+0941
+
+any(nukta1) + [K_BKQUOTE] > index(nukta2,1)
+U+0905 + [K_K]       > U+0906
+U+0905 + [SHIFT K_A] > U+0906
+U+0907 + [SHIFT K_Z] > U+0908
+U+0909 + [SHIFT K_Z] > U+090A
+U+090F + [SHIFT K_W] > U+090D
+U+090F + [K_S]       > U+0910
+U+0964 + [SHIFT K_1] > U+0965
+U+0906 + [SHIFT K_W] > U+0911
+U+0906 + [K_S]       > U+0913
+U+0906 + [SHIFT K_S] > U+0914
+U+093E + [SHIFT K_W] > U+0949
+U+093E + [K_S]       > U+094B
+U+093E + [SHIFT K_S] > U+094C
+
