@@ -2,7 +2,7 @@
 store(&NAME) 'Bunong ឞូន៝ង (SIL)'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© 2021 SIL International'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.4'
 store(&BITMAP) 'sil_bunong.ico'
 store(&VISUALKEYBOARD) 'sil_bunong.kvks'
 store(&LAYOUTFILE) 'sil_bunong.keyman-touch-layout'
@@ -27,7 +27,7 @@ group(main) using keys
 + [SHIFT K_A] > nul
 + [SHIFT K_D] > nul
 + [SHIFT K_F] > 'ឞ'
-+ [SHIFT K_Y] > nul
++ [SHIFT K_Y] > 'ួ'
 + [SHIFT K_L] > nul
 + [SHIFT K_RBRKT] > nul
 + [SHIFT K_P] > nul
@@ -165,9 +165,10 @@ U+17B8 + [K_I]                  > U+17B7
 U+17B9 + [K_W]                  > U+17BA
 U+17BA + [K_W]                  > U+17B9
 
-c U+17BB > U+17BC, កុ > កូ > កុ
+c U+17BB > U+17BC, កុ > កូ > កួ > កុ
 U+17BB + [K_U]                  > U+17BC
-U+17BC + [K_U]                  > U+17BB
+U+17BC + [K_U]                  > U+17BD
+U+17BD + [K_U]                  > U+17BB
 
 c U+17C1 > U+17C2 > U+17C3, កេ > កែ > កៃ > កេ
 U+17C1 + [K_E]                  > U+17C2

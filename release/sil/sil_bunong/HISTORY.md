@@ -4,6 +4,13 @@ Bunong ឞូន៝ង (SIL) Change History
 1.3 (30 Aug 2021)
 -----------------
 
+* Fixed the issue where ៈ key does not work on Android. 
+* Added ួ to the keyboard
+* Updated highlighted keycaps
+
+1.3 (30 Aug 2021)
+-----------------
+
 * Fixed the output of a longpress key of ។ on the default layer
 
 1.2 (12 Aug 2021)
