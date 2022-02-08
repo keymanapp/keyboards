@@ -1,11 +1,11 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
 
-1.3 (30 Aug 2021)
+1.4 (8 Feb 2022)
 -----------------
 
 * Fixed the issue where ៈ key does not work on Android. 
-* Added ួ to the keyboard
+* Added ួ  and a thin space to the keyboard
 * Updated highlighted keycaps
 
 1.3 (30 Aug 2021)

@@ -60,4 +60,4 @@ Explanation of the final Rota rule: Press <kbd>Spacebar</kbd> once to mark the e
    <div id='osk-tablet' data-states='default shift'></div>
 
 
-<p>(c) 2021 SIL International</p>
+<p>(c) 2021 - 2022 SIL International</p>
