@@ -32,7 +32,7 @@
 	standard American English keyboard, most keys only need one press to print 
 	out a character to the screen.
 	<br /><br />
-	<img src = "PME_US_Natural_Desktop.PNG" alt = "Postmodern English US Natural Style Desktop">
+	<img src = "PME_US_Natural_Desktop_Keyboard.PNG" alt = "Postmodern English US Natural Style Desktop">
 	<br /><br />
 	Notice that some keys on the keyboard are highlighted in yellow. This indicates 
 	that these keys have alternate options when the correct key combinations are pressed. 
