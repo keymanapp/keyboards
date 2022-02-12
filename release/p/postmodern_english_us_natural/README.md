@@ -16,8 +16,4 @@ http://www.PostmodernEnglish.org
 
 Supported Platforms
 -------------------
- * Windows
- * macOS
- * Linux
- * Desktop devices
-
+ * All
