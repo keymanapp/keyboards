@@ -1,11 +1,11 @@
 <?php
-	$pagename = 'Postmodern English US Natural Desktop Keyboard Help';
+	$pagename = 'Postmodern English US Natural Layout Help';
 	$pagetitle = $pagename;
 	// Header
 	require_once('header.php');
 ?>
 
-<h1>Start Using the Postmodern English US Natural Desktop Layout</h1>
+<h1>Start Using the Postmodern English US Natural Layout</h1>
 
 <p>
     This is a Postmodern English keyboard with a typical United States key layout, 
@@ -15,7 +15,7 @@
 	language. In itself, Postmodern English is a refactor of how English writing 
 	functions, which focuses on making it as phonetic, consistent, and condensed 
 	as possible. Though not the first attempt at doing this by any means, we hope 
-	that it can become the best. For more information on Postmodern English and 
+	that it can become the greatest. For more information on Postmodern English and 
 	the related community efforts, please visit 
 	<a href = "http://www.PostmodernEnglish.org">www.PostmodernEnglish.org</a>.
 </p>
