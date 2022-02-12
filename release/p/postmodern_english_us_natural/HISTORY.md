@@ -1,4 +1,4 @@
-Postmodern English US Natural Desktop Change History
+Postmodern English US Natural Change History
 ====================
 
 1.000 (2022-02-11)
