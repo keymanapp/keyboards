@@ -44,11 +44,11 @@
 	character will be printed to screen. Which character is printed to screen depends both on 
 	the green and yellow keys pressed.
 	<br /><br />
-	Take notice of the symbols printed on the green “;” key: a semicolon and “ALT”. This “ALT” 
+	Take notice of the symbols printed on the green “;” key: a semicolon and “DK”. This “DK” 
 	means that this key can be used to type the character below the main character for any key, 
-	by first pressing the green “ALT” key, and then any yellow key. So for example, if you want 
-	to type Ԅ, which is below the R key, you would first press the green “ALT” key, and then 
-	press the R key to type out an Ԅ. To just type a semicolon, press the “ALT” key two times 
+	by first pressing the green “DK” key, and then any yellow key. So for example, if you want 
+	to type Ԅ, which is below the R key, you would first press the green “DK” key, and then 
+	press the R key to type out an Ԅ. To just type a semicolon, press the “DK” key two times 
 	in a row. It’s that simple.
 	<br /><br />
 	Typing any alternate characters is easy after some practice. Regardless of capitalization, 
@@ -90,5 +90,5 @@
 	the "smiley face" button will bring you to the emoji selection keyboard. Here's what the 
 	mobile keyboard looks like:
 	<br /><br />
-	<img src = "PME_Mobile_Keyboard.jpg" alt = "Postmodern English US Natural Style Mobile">
+	<img src = "PME_Mobile_Keyboard.jpg" alt = "Postmodern English Mobile">
 </p>
