@@ -3,7 +3,7 @@ Devanagari Romanized (SIL)
 
 Copyright © 2015-2022 SIL International
 
-Version 1.5
+Version 1.6
 
 __DESCRIPTION__
 
