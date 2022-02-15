@@ -87,7 +87,7 @@
 	bring you to a numbers and symbols keyboard. On the numbers and symbols keyboard, a new 
 	key labeled "Núm" will appear. Pressing this key will bring you to a number pad, much 
 	like you'd see on an ATM machine. The final button worth mentioning on the main keyboard, 
-	the "smiley face" button will bring you to the emoji selection keyboard. Here's what the 
+	the "smiley face" button, will bring you to the emoji selection keyboard. Here's what the 
 	mobile keyboard looks like:
 	<br /><br />
 	<img src = "pme_mobile_keyboard.jpg" alt = "Postmodern English Mobile">
