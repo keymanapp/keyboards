@@ -24,7 +24,6 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_W_0] > '’W' layer('default')
 + [SHIFT T_W_1] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_T_0] > '’T' layer('default')
 + [SHIFT T_T_1] > 'T̓' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
@@ -33,9 +32,11 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_Y] > 'Y' layer('default')
 + [SHIFT T_U_0] > '’U' layer('default')
 + [SHIFT T_U_1] > 'U̓' layer('default')
++ [SHIFT T_U_2] > 'Ù' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > '’I' layer('default')
 + [SHIFT T_I_1] > 'I̓' layer('default')
++ [SHIFT T_I_2] > 'Ì' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_P_0] > '’P' layer('default')
 + [SHIFT T_P_1] > 'P̓' layer('default')
@@ -44,6 +45,7 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_A_1] > "Ǎ" layer('default')
 + [SHIFT T_A_01] > 'A̓' layer('default')
 + [SHIFT T_A_0] > '’A' layer('default')
++ [SHIFT T_A_3] > "À" layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
@@ -83,19 +85,22 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_Q] > 'q'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
-+ [T_E] > 'e'
 + [T_T_0] > 't̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
 + [T_U_0] > 'u̓'
++ [T_U_1] > 'ù'
 + [T_U] > 'u'
 + [T_I_0] > 'i̓'
 + [T_I] > 'i'
-+ [T_O] > "’ǎ"
++ [T_I_1] > 'ì'
 + [T_P_0] > 'p̓'
 + [T_P] > 'p'
 + [T_A_0] > 'a̓'
++ [T_A_1] > 'ǎ'
++ [T_A_2] > '’ǎ'
++ [T_A_3] > 'à'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
@@ -123,8 +128,10 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_M_0] > 'm̓'
 + [T_M_1] > 'm͡m'
 + [T_M] > 'm'
-+ [T_SCHWA] > 'ə'   
++ [T_SCHWA] > 'ə'
++ [T_SCHWA_0] > 'ə̀'
 + [SHIFT T_SCHWA] > 'Ə'
++ [SHIFT T_SCHWA_0] > 'Ə̀'
 
 'p' + [T_R] > 'p̓'
 'U' + [T_R] > 'U̓'
@@ -194,7 +201,6 @@ c Guillemets
 c Quotes
 + [SHIFT K_equal] > "”"
 + [SHIFT K_hyphen] > "“"
-+ [K_BKQUOTE] > "‘"
 + [K_QUOTE] > "’"
                               
 c language
@@ -204,8 +210,9 @@ c language
 + "{" > U+0308           c diaeresis
 + "/" > U+0313      c apostrophe
 + "\" > U+0323 c underdot 
-+ "|" > U+0361 c tie       
-+ "~" > "·"
++ "|" > U+0361 c tie   
++ [K_BKQUOTE] > "·"    
++ "~" > "ˇ"
 
 
 + [caps shift K_RBRKT] > 'ə'   
