@@ -1,5 +1,5 @@
 <?php
-	$pagename = 'Postmodern English US Natural Layout Help';
+	$pagename = 'Postmodern English UK Natural Layout Help';
 	$pagetitle = $pagename;
 	// Header
 	require_once('header.php');
