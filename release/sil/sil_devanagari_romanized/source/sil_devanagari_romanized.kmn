@@ -1,0 +1,267 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Devanagari Romanized (SIL)'
+store(&COPYRIGHT) '© 2015-2022 SIL International'
+store(&KEYBOARDVERSION) '1.6'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&VISUALKEYBOARD) 'sil_devanagari_romanized.kvks'
+store(&LAYOUTFILE) 'sil_devanagari_romanized.keyman-touch-layout'
+store(&BITMAP) 'sil_devanagari_romanized.ico'
+
+begin Unicode > use(main)
+c numbers
+store(Digits)     "0"    "1"    "2"    "3"    "4"    "5"    "6" \
+                  "7"    "8"    "9"
+store(DigitsU)    U+0966 U+0967 U+0968 U+0969 U+096A U+096B U+096C \
+                  U+096D U+096E U+096F
+
+c consonants (so we can reposition the reph)
+store(Consonants)    "k"    "K"    "g"    "G"    "M"    \
+                     "c"    "C"    "j"    "J"    "V"    "q"     \
+                     "Q"    "z"    "Z"    "N"    "t"    "T"     "d"    "D"    "n"    \
+                     "p"    "P"    "b"    "B"    "m"    "y"     \
+                     "r"    "l"    "L"    "v"     "x"    "S"    "s"    "h" \
+                     "+"    "="
+
+store(ConsonantsU)   U+0915 U+0916 U+0917 U+0918 U+0919 \
+                     U+091A U+091B U+091C U+091D U+091E U+091F  \
+                     U+0920 U+0921 U+0922 U+0923 U+0924 U+0925 U+0926 U+0927 U+0928 \
+                     U+092A U+092B U+092C U+092D U+092E U+092F  \
+                     U+0930 U+0932 U+0933 U+0935 U+0936 U+0937 U+0938 U+0939 \
+                     U+0960 U+0961
+
+c                    aakar  ikar   iikar  ukar   uukar  ekar   aikar  okar   aukar
+store(MatraVsU)      U+093E U+093f U+0940 U+0941 U+0942 U+0947 U+0948 U+094b U+094c
+
+c                           a   aa  e   ai  i   ii  o   au  u   uu
+store(MaatraU)        U+0906 U+0905 U+090F U+0910 U+0907 U+0908 U+0913 U+0914 U+0909 U+090a
+c                           candra a o e
+store(candraU)        U+0972 U+0911  U+090D 
+store(RomanCs)       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" \
+                     "~`;:" c plus some punctuation used in allomorph constraints (the others come thru anyway)
+
+c                       ka क       khha ख   ggha घ  za  ज    dddha ध  rha  र   fa  फ    yya  य   llla ल  rra 
+store(LowDotWallahs)    U+0915  U+0916  U+0917  U+091c  U+0921  U+0922  U+092b  U+092f  U+0933  U+0930 U+0928
+store(LowDotOutputs)    U+0958  U+0959  U+095a  U+095b  U+095c  U+095d  U+095e  U+095f  U+0934  U+0931 U+0929
+
+group(main) using keys
++ "a" 	 > U+093E c aakar (matra) ा
++ "A" 	 > U+0905 c a अ
++ "b" 	 > U+092c c ba ब
++ "B" 	 > U+092d c bHa भ
++ "c" 	 > U+091a c ca च
++ "C" 	 > U+091b c cHa छ
++ "d" 	 > U+0926 c da द
++ "D" 	 > U+0927 c dHa ध
++ "e" 	 > U+0947 c ekar (matra) े
++ "E" 	 > U+0948 c aikar (matra) ै
++ "f" 	 > U+091f c Ta ट
++ "F" 	 > U+0920 c THA ठ
++ "g" 	 > U+0917 c ga ग 
++ "G" 	 > U+0918 c gHa घ
++ "h" 	 > U+0939 c ha ह
++ "H" 	 > U+0903 c Aaam (matra) ः
++ "i" 	 > U+093f c ikar (matra) ि
++ "I" 	 > U+0940 c iikar (matra) ी
++ "j"    > U+091c c ja ज
++ "J"    > U+091d c jHa झ
++ "k"    > U+0915 c ka क
++ "K"    > U+0916 c kHa ख
++ "l"    > U+0932 c la ल
++ "L" 	 > U+0933 c La ळ
++ "m"    > U+092e c ma म
++ "M"    > U+0919 c nG ङ 
++ "n"    > U+0928 c na न 
++ "N"    > U+0923 c aana  ण 
++ "o"    > U+094b c okar (matra) ो
++ "O"    > U+094c c aukar (matra) ौ
++ "p"    > U+092a c pa प 
++ "P"    > U+092b c pHa फ
+
+c Output deadkeys only for the accent keys pressed
++ "q"       > dk(1)     c followed by vowel will produce syllabic form
+
+dk(1) + "a"     > U+0906    c syllabic AA आ
+dk(1) + "A"     > U+0905    c syllabic  अ 
+dk(1) + "e"     > U+090F    c syllabic E ए
+dk(1) + "E"     > U+0910    c syllabic AI ऐ
+dk(1) + "i"     > U+0907    c syllabic I इ
+dk(1) + "I"     > U+0908    c syllabic II ई
+dk(1) + "o"     > U+0913    c syllabic O ओ
+dk(1) + "O"     >  U+0914    c syllabic AU औ
+dk(1) + "u"     > U+0909    c syllabic U उ
+dk(1) + "U"     > U+090a    c syllabic UU ऊ
+
+dk(1) + [RALT K_Z]      > U+090B  c syllabic RI dk(1)+ctrl+alt+z= ऋ
+dk(1) + [LCTRL LALT K_Z]      > U+090B  c syllabic RI dk(1)+ctrl+alt+z= ऋ  fixed by Sam
+
+dk(1) + [RALT K_E]      > U+090E c short E  ऎ
+dk(1) + [LCTRL LALT K_E]      > U+090E c short E  ऎ fixed by Sam
+dk(1) + [RALT K_A]      > U+0972 c candra A  
+dk(1) + [LCTRL LALT K_A]      > U+0972 c candra A  fixed by Sam
+U+090F + [RALT K_5]   > U+090D c candra e   ऍ (ए + ) *
+U+090F + [LCTRL LALT K_5]   > U+090D c candra e   ऍ (ए + ) fixed by Sam *
+U+0906 + [RALT K_5]   > U+0911 c candra o   ऑ (आ+) *
+U+0906 + [LCTRL LALT K_5]   > U+0911 c candra o   ऑ (आ+) fixed by Sam *
+
++ "r"     > U+0930          c ra र
++ "R"     > U+094d U+0930   c ्+ र  =  ्र 
+any(ConsonantsU) + "R"  > index(ConsonantsU,1) U+094D U+0930  c consonants +   ्र 
+
++ "s"     > U+0938    c sa स
++ "S"     > U+0937    c SHA ष
++ "t"     > U+0924    c ta त
++ "T"     > U+0925    c tHa थ
++ "u"     > U+0941    c regular ukar ु
++ "U"     > U+0942    c uukar ू
++ "v"     > U+0921    c Da ड
++ "V"     > U+0922    c DHA ढ
++ "w"     > U+0935    c wa व
++ "W"     > U+0926 U+094d U+0935   c dwa द्व
++ "x"     > U+094d U+200D          c halant (and the zero-width joiner to get half-character) ्‍ + ZWJ
+
+U+0939 + "x"    > U+0939 U+094d U+200D  c for Kangri, the default 'x' behavior for post-h is non-joining ह्‍  -- ह्‍ज  
+
++ "X"     > U+094d U+200C  c halant (and the zero-width non-joining to get full-char plus halant) ् + ZWNJ
++ "y"     > U+092f  c ya य
++ "Y"     > U+0930 U+094D U+200D c  ra virama (joinya) र्‍
++ "z"     > U+0936  c sHa श
++ "Z"     > U+0915 U+094d U+0937  c ksHa क्ष
++ [K_PERIOD]         > U+0964  c danda ।
++"Q"     > U+0924 U+094D U+0924 c tta त्त
+c RALT codes: 
++ [RALT K_Q] > U+097D   c glottal ॽ
++ [RALT K_W] > U+0945 c candra e ॅ
++ [RALT K_E] > U+0946   c short E maatra ॆ
++ [RALT K_R] > U+0930 U+094D  c ra virama र्
++ [RALT K_O] > U+094A c short o ॊ
++ [RALT K_U] > U+090E c short E
++ [RALT K_LBRKT] > U+093c   c lower dot ़ 
++ [RALT K_RBRKT] > U+0971   c high dot ॱ
++ [RALT K_BKSLASH] > U+00B7   c mid dot ·
++ [RALT K_A] > U+0949 c candra_o ॉ 
++ [RALT K_F] > U+0950 c om ॐ
++ [RALT K_G] > U+097B c gga ॻ 
++ [RALT K_H] > U+093d  c avagraha ऽ
++ [RALT K_J] > U+097c      c gya (rde change)  ॼ
++ [RALT K_K] > U+02BC   c modifier apostrophe  ʼ
++ [RALT K_L] > U+0962   c lrii ॢ
++ [RALT K_COLON] > U+201c  c barred visarga “
++ [RALT K_QUOTE] > U+201d c ”
++ [RALT K_Z] > U+0943  c rikar ृ
++ [RALT K_X] > U+094D  c virama ्‍
++ [RALT K_V] > U+097E  c ddda ॾ   
++ [RALT K_B] > U+097F  c bba ॿ
++ [RALT K_N] > U+091e   c nYa ञ
++ [RALT K_PERIOD] > "."   c Roman period .
++ [RALT SHIFT K_1]  > U+0951  c stress udatta ॑
++ [RALT SHIFT K_2]  > U+0952  c stress anudatta   ॒
++ [RALT SHIFT K_3]  > U+0953  c grave accent ॓
++ [RALT SHIFT K_4]  > U+0954  c acute accent ॔
++ [RALT SHIFT K_5]  > U+0970  c abbreviation ॰
++ [RALT SHIFT K_A]  > U+0904  c short a ऄ
++ [RALT SHIFT K_L]  > U+0963  c vocalic ll ॣ
++ [RALT SHIFT K_Z]  > U+0944  c vocalic rr  ॄ
++ [RALT K_SLASH]  > U+200C c zwnj
++ [RALT SHIFT K_SLASH]  > U+200D  c zwj
+c special characters preceding lowdot
+c WARNING: note that the Government of India recommends *not* using the
+c precomposed characters 0958-095F, but encoding the data as consonant + 093C
+c which is what it really is. (Since the dot can be applied to any consonant,
+c why were these eight picked out for special precomposed encoding?). The
+c Unicode Technical Committee agrees with that, and in fact had already
+c excluded those characters from its "Normalized Composed Form", meaning that
+c any process which normalizes the data should leave the sequence uncomposed.
+c so... commenting out the following 
+c any(LowDotWallahs) + ">"    > index(LowDotOutputs,1)
+
++ "`"             	 > U+0901 c candra bindu ँ
++ "~"             	 > U+0902 c anusvara ं
++ "."             	 > U+0964 c period produces Devanagri full stop ।
+"-" + "-"       	 > U+2013  c hit hyphen twice for en dash 
+U+2013 + "-"       	 > U+2014  c three times for em dash 
++ [SHIFT K_COMMA]    > U+2018 c left single quotation mark ‘
++ [SHIFT K_PERIOD]   > U+2019 c right single quotation mark ’
+
+
+c semicolon ";" is keyed between consonants to produce a stack / conjunct
++ ";"           > U+094d   c use the DEVANAGARI SIGN VIRAMA so we get the full conjunct 
+
+c Digits: we get the Arabic wallahs with the numeric key
+c and Devanagari with a subsequent backspace or Shift + RALT + sequences 
+
++ any(Digits)     > index(DigitsU,1)
++ [RALT K_0]    >  U+0030 c digit 0 
++ [RALT K_1]    > U+0031 c digit 1
++ [RALT K_2]    > U+0032 c digit 2
++ [RALT K_3]    > U+0033 c digit 3
++ [RALT K_4]    > U+0034 c digit 4
++ [RALT K_5]    > U+0035 c digit 5
++ [RALT K_6]    > U+0036 c digit 6
++ [RALT K_7]    > U+0037 c digit 7
++ [RALT K_8]    > U+0038 c digit 8
++ [RALT K_9]    > U+0039 c Devanagari digit 9
+
+c Numbers in English //fixed by Sam
+
++ [LCTRL LALT K_0] > U+0030
++ [LCTRL LALT K_1] > U+0031
++ [LCTRL LALT K_2] > U+0032
++ [LCTRL LALT K_3] > U+0033
++ [LCTRL LALT K_4] > U+0034
++ [LCTRL LALT K_5] > U+0035
++ [LCTRL LALT K_6] > U+0036
++ [LCTRL LALT K_7] > U+0037
++ [LCTRL LALT K_8] > U+0038
++ [LCTRL LALT K_9] > U+0039
+
+"1/" + "4"     	 > U+00bc c 1/4
+"1/" + "2"     	 > U+00bd c 1/2
+"3/" + "4"     	 > U+00be c 3/4
+
+"[" + "["       > U+230A 
+"]" + "]"       > U+230B
+
+c Special characters and symbols ( ॑/  ॒/॓/॔/॰/ऄ/ॣ/ॄ/zwnj/zwj ‍)//fixed by Sam
+
++ [LCTRL LALT SHIFT K_1]  > U+0951  c stress udatta ॑
++ [LCTRL LALT SHIFT K_2]  > U+0952  c stress anudatta   ॒
++ [LCTRL LALT SHIFT K_3]  > U+0953  c grave accent ॓
++ [LCTRL LALT SHIFT K_4]  > U+0954  c acute accent ॔
++ [LCTRL LALT SHIFT K_5]  > U+0970  c abbreviation ॰
++ [LCTRL LALT SHIFT K_A]  > U+0904  c short a ऄ
++ [LCTRL LALT SHIFT K_L]  > U+0963  c vocalic ll ॣ
++ [LCTRL LALT SHIFT K_Z]  > U+0944  c vocalic rr  ॄ
++ [LCTRL LALT K_SLASH]  > U+200C c zwnj
++ [LCTRL LALT SHIFT K_SLASH]  > U+200D  c zwj ‍‍
+
+c punctuations//fixed by Sam
+
++ [LCTRL LALT SHIFT K_COLON]   > U+003B c ;
++ [RALT SHIFT K_COLON] > U+003B c ;
++ [SHIFT K_BKSLASH] > U+0965  c danda ॥
+
+c ( Q W E R O [ ] \ A F G H J K L ; ' Z V B N /)//fixed by Sam
++ [LCTRL LALT K_Q] > U+097D   c glottal ॽ
++ [LCTRL LALT K_W] > U+0945 c candra e ॅ
++ [LCTRL LALT K_E] > U+0946   c short E maatra ॆ
++ [LCTRL LALT K_R] > U+0930 U+094D  c ra virama र्
++ [LCTRL LALT K_O] > U+094A c short o ॊ
++ [LCTRL LALT K_U] > U+090E c short E
++ [LCTRL LALT K_LBRKT] > U+093c   c lower dot ़ 
++ [LCTRL LALT K_RBRKT] > U+0971   c high dot ॱ
++ [LCTRL LALT K_BKSLASH] > U+00B7   c mid dot ·
++ [LCTRL LALT K_A] > U+0949 c candra_o ॉ 
++ [LCTRL LALT K_F] > U+0950 c om ॐ
++ [LCTRL LALT K_G] > U+097B c gga ॻ 
++ [LCTRL LALT K_H] > U+093d  c avagraha ऽ
++ [LCTRL LALT K_J] > U+097c      c gya (rde change)  ॼ
++ [LCTRL LALT K_K] > U+02BC   c modifier apostrophe  ʼ
++ [LCTRL LALT K_L] > U+0962   c lrii ॢ
++ [LCTRL LALT K_COLON] > U+201c  c barred visarga “
++ [LCTRL LALT K_QUOTE] > U+201d c ”
++ [LCTRL LALT K_Z] > U+0943  c rikar ृ
++ [LCTRL LALT K_X] > U+094D  c virama ्‍
++ [LCTRL LALT K_V] > U+097E  c ddda ॾ   
++ [LCTRL LALT K_B] > U+097F  c bba ॿ
++ [LCTRL LALT K_N] > U+091e   c nYa ञ
++ [LCTRL LALT K_PERIOD] > "."   c Roman period .
