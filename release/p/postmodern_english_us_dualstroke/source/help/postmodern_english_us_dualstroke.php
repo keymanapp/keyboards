@@ -1,15 +1,15 @@
 <?php
-	$pagename = 'Postmodern English US Natural Layout Help';
+	$pagename = 'Postmodern English US DualStroke Layout Help';
 	$pagetitle = $pagename;
 	// Header
 	require_once('header.php');
 ?>
 
-<h1>Start Using the Postmodern English US Natural Layout</h1>
+<h1>Start Using the Postmodern English US DualStroke Layout</h1>
 
 <p>
     This is a Postmodern English keyboard with a typical United States key layout, 
-	and in the "Natural" Postmodern English style (as opposed to the DualStroke 
+	and in the "DualStroke" Postmodern English style (as opposed to the Natural 
 	style). The Postmodern English project is an open source, community-driven 
 	effort to build dictionaries around all the major accents of the English
 	language. In itself, Postmodern English is a refactor of how English writing 
@@ -28,53 +28,61 @@
 	Compared to the standard American English keyboard, the Postmodern English 
 	keyboard functions very similarly with some minor changes.
 	<br /><br />
-	This is the layout of the Postmodern English Natural keyboard. As with the 
-	standard American English keyboard, most keys only need one press to print 
-	out a character to the screen.
+	This is the layout of the Postmodern English DualStroke keyboard. As with the standard 
+	American English keyboard, most keys only need one press to print out a character to the 
+	screen.
 	<br /><br />
-	<img src = "pme_us_natural_desktop_keyboard.png" alt = "Postmodern English US Natural Style Desktop">
+	<img src = "pme_us_dualstroke_desktop_keyboard.png" alt = "Postmodern English US DualStroke Style Desktop">
 	<br /><br />
-	Notice that some keys on the keyboard are highlighted in yellow. This indicates 
-	that these keys have alternate options when the correct key combinations are pressed. 
-	The alternate options are displayed below the main character in the keyboard image.
+	Notice that some keys on the keyboard are highlighted in yellow. This indicates that these 
+	keys have alternate options when the correct key combinations are pressed. The alternate 
+	options are sometimes displayed below the main character in the keyboard image. Yellow 
+	colored keys that do not have an alternate option displayed on the key are characters which 
+	can be accented.
 	<br /><br />
-	In order to type any alternate character on screen, the “dead key” must first be pressed. 
-	This key is highlighted in green in the image above, and will initially do nothing when 
-	pressed. However, when a yellow or green key is pressed after the green key, the alternate 
-	character will be printed to screen. Which character is printed to screen depends both on 
-	the green and yellow keys pressed.
+	In order to type any alternate key on screen, one of the three “dead keys” must first be 
+	pressed. These keys are highlighted in green in the image above, and will initially do 
+	nothing when pressed. However, when a yellow or green key is pressed after a green key, the 
+	alternate character will be printed to screen. Which character is printed to screen depends 
+	both on the green and yellow keys pressed.
 	<br /><br />
-	Take notice of the symbols printed on the green “;” key: a semicolon and “DK”. This “DK” 
-	means that this key can be used to type the character below the main character for any key, 
-	by first pressing the green “DK” key, and then any yellow key. So for example, if you want 
-	to type Ԅ, which is below the R key, you would first press the green “DK” key, and then 
-	press the R key to type out an Ԅ. To just type a semicolon, press the “DK” key two times 
-	in a row. It’s that simple.
+	Take notice of the symbols printed on the green 1, 2, and 3 keys. The 1 key has both the 
+	acute accent and the “AK” symbols on it, the 2 key has the macron accent printed on it, and 
+	the 3 key lastly has the overring accent on it. What this means is that the 1 dead key can be 
+	used to start some non-accentable characters in yellow (using AK, standing for alternate key, 
+	not to be confused with the ALT key), or any character with an acute accent. Similarly, the 2 
+	dead key can be used to start a macron accented character, and the 3 dead key can be used to 
+	begin an overring accented character. To just type “1”, “2”, or “3”, the 1, 2, or 3 key 
+	respectively will need to be pressed twice in a row. For example, to type the alternate 
+	character Ԏ, you would first press the green "AK" key, and then the J key. Or if you wanted 
+	to type Ů, you would press the green overring key, followed by the U key. It's that simple.
 	<br /><br />
 	Typing any alternate characters is easy after some practice. Regardless of capitalization, 
 	all of these key combinations work the same way. The following list shows all of the “dead 
 	key” combination presses used for alternate characters:
 	<br /><br />
-	; + ; = ;<br />
-	; + Ћ = Þ<br />
-	; + R = Ԅ<br />
-	; + T = Է<br />
-	; + J = Ԏ<br />
-	; + N = Ŋ<br />
-	; + Ч = X<br />
-	; + Á = !<br />
-	; + Ā = @<br />
-	; + Å = #<br />
-	; + É = $<br />
-	; + Ē = %<br />
-	; + Ú = ^<br />
-	; + Ū = & <br />
-	; + Ů = *<br />
-	; + Ī = (<br />
-	; + Ó = )<br />
-	; + Ō = _<br />
-	; + W = Q (non-Postmodern letter)<br />
-	; + Ҁ = C (non-Postmodern letter)<br />
+	1 + 1 = 1<br />
+	2 + 2 = 2<br />
+	3 + 3 = 3<br />
+	1 + Ћ = Þ<br />
+	1 + E = É<br />
+	2 + E = Ē<br />
+	1 + R = Ԅ<br />
+	1 + T = Է<br />
+	1 + U = Ú<br />
+	2 + U = Ū<br />
+	3 + U = Ů<br />
+	2 + I = Ī<br />
+	1 + O = Ó<br />
+	2 + O = Ō<br />
+	1 + A = Á<br />
+	2 + A = Ā<br />
+	3 + A = Å<br />
+	1 + J = Ԏ<br />
+	1 + N = Ŋ<br />
+	1 + Ч = X<br />
+	1 + W = Q (Non-Postmodern letter)<br />
+	1 + Ҁ = C (Non-Postmodern letter)<br />
 </p>
 <br /><br />
 <h3>Usage Instructions For Mobile Keyboard</h3>
