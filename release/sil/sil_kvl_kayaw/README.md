@@ -1,9 +1,7 @@
 Kayaw (SIL) Keyboard
 =====================
 
-Copyright (C) 2018 - 2021 SIL International
-
-Version 1.2
+Copyright (C) SIL International
 
 __DESCRIPTION__
 
