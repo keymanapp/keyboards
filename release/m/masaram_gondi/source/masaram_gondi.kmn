@@ -1,16 +1,16 @@
-﻿c masaram_gondi with name "Masaram Gondi (ITRANS)" 
+﻿store(&VERSION) '10.0'
+c masaram_gondi with name "Masaram Gondi (ITRANS)" 
 c Font
 c NotoSansMasaramGondi-Regular from Google
 c by Rajesh Kumar Dhuriya
-store(&VERSION) '10.0'
 store(&NAME) 'Masaram Gondi (ITRANS)'
 store(&COPYRIGHT) '© Rajesh Kumar Dhuriya'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'masaram_gondi.kvks'
 store(&LAYOUTFILE) 'masaram_gondi.keyman-touch-layout'
-c store(&KMW_HELPTEXT) 'https://gondi.bwiit.in/keyboard'
-store(&MESSAGE) 'The script was designed for writing Gondi (ISO 639-3: gon), a Dravidian language spoken by 2.6 million people, primarily in Madhya Pradesh and Maharashtra,with some speakers in Andhra Pradesh and Chhattisgarh.'
+store(&KMW_HELPTEXT) 'https://gondidarshan.org/keyboard'
+store(&MESSAGE) 'This keyboard is for typing the Gondi language in the Masarm Gondi script.'
 store(&BITMAP) 'masaram_gondi.ico'
 
 group(main) using keys
@@ -161,18 +161,19 @@ c duplicate mappings for ease of typing consonants
 
 c Nukta with preceding dot
 "." + "k"	>	".𑴌𑵄" c .k
-".𑴌𑵄" + "h"	>	".𑴍𑵄" c .kh
+".𑴌𑵄" + "h" >	".𑴍𑵄" c .kh
 "." + "g"	>	".𑴎𑵄" c .g
-"." + "j"	>	"𑴓𑵂𑵄" c .j
-".𑴓𑵄" + "h"	>	".𑴔" c .jh
-"." + "D"	>	"𑴘𑵂𑵄" c .D
-"𑴘𑵄" + "h"	>	"𑴙𑵂𑵄" c .Dh
-"." + "f"	>	"𑴡𑵂𑵄" c .f
-"." + "n"	>	"𑴟𑵂" c .n
-"." + "r"	>	"𑴦𑵂" c .r
-"." + "L"	>	"𑴭𑵂𑵄" c .L
-"." + "y"	>	"𑴥𑵂𑵄" c .y
-"." + "c"	>	".𑴑𑵄" c .c - ca plus nukta for Konkani
+"." + "j"	 >	"𑴓𑵂𑵄" c .j
+".𑴓𑵄" + "h" >	".𑴔" c .jh
+"." + "D"   >	"𑴘𑵂𑵄" c .D
+"𑴘𑵄" + "h"  >	"𑴙𑵂𑵄" c .Dh
+"𑴖𑵄" + "h"  > "𑴗𑵄" c Th
+"." + "f"	 >	"𑴡𑵂𑵄" c .f
+"." + "n"	 >	"𑴟𑵂" c .n
+"." + "r"	 >	"𑴦𑵂" c .r
+"." + "L"	 >	"𑴭𑵂𑵄" c .L
+"." + "y"	 >	"𑴥𑵂𑵄" c .y
+"." + "c"	 >	".𑴑𑵄" c .c - ca plus nukta for Konkani
 
 c alternate mapping with ~
 "~" + "n"	>	"𑴕𑵄" c ~n
@@ -181,7 +182,7 @@ c alternate mapping with ~
 c add h to consonants
 "𑴌𑵄" + "h" >	 "𑴍𑵄"
 "𑴎𑵄" + "h"  >	   "𑴏𑵄"
-"𑴑𑵄" + "h"	>	"𑴑𑵄" c same c=ch
+"𑴑𑵄" + "h"	>	"𑴒𑵄" c same c=ch
 "𑴒𑵄" + "h"	>	"𑴒𑵄" c same C=Ch
 "𑴓𑵄" + "h"	>	"𑴔𑵄"
 "𑴛𑵄" + "h"	>	"𑴜𑵄"

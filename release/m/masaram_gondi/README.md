@@ -1,9 +1,7 @@
-Masaram Gondi keyboard
+Masaram Gondi (ITRANS) keyboard
 ==============
 
 © Rajesh Kumar Dhuriya
-
-Version 1.0
 
 Description
 -----------

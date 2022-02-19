@@ -1,5 +1,10 @@
-Clavier du Mali (Qwerty) Keyboard Change History
+Clavier du Mali (Azerty) Keyboard Change History
 =======================
+
+3.3.1 (18-Feb-2022)
+------------------
+* Updated to use new fonts
+* Added languages: djm, dtk, tmh
 
 3.3 (17-Sep-2018)
 ------------------

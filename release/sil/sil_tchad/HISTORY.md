@@ -1,6 +1,10 @@
 Tchad Keyboard Change History
 =======================
 
+4.2.1 (17 Feb 2022)
+------------------
+* Updated to use font from shared fonts
+
 4.2 (4 Jan 2022)
 ------------------
 * Reduced number of special chars on long-press vowels
