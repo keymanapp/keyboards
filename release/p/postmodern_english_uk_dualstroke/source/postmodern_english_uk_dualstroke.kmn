@@ -1,13 +1,19 @@
-﻿store(&NAME) 'Postmodern English US Dualstroke'
+﻿store(&NAME) 'Postmodern English UK Dualstroke'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© 2022, The Postmodern English Project'
-store(&BITMAP) 'postmodern_english_us_dualstroke.ico'
-store(&VISUALKEYBOARD) 'postmodern_english_us_dualstroke.kvks'
-store(&LAYOUTFILE) 'postmodern_english_us_dualstroke.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'postmodern_english_uk_dualstroke.kvks'
+store(&LAYOUTFILE) 'postmodern_english_uk_dualstroke.keyman-touch-layout'
+store(&BITMAP) 'postmodern_english_uk_dualstroke.ico'
+
 begin Unicode > use(main)
 
 group(main) using keys
+
++ [RALT K_4] > '€'
++ [RALT K_BKQUOTE] > '¦'
++ [SHIFT K_oE2] > '|'
++ [K_oE2] > '\'
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_COMMA] > '<'
@@ -18,7 +24,7 @@ group(main) using keys
 + [SHIFT K_C] > 'Ҁ'
 + [SHIFT K_X] > 'Ч'
 + [SHIFT K_Z] > 'Z'
-+ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_BKQUOTE] > '¬'
 + [SHIFT K_EQUAL] > '+'
 + [SHIFT K_HYPHEN] > '_'
 + [SHIFT K_0] > ')'
@@ -28,7 +34,7 @@ group(main) using keys
 + [SHIFT K_6] > '^'
 + [SHIFT K_5] > '%'
 + [SHIFT K_4] > '$'
-+ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_QUOTE] > '@'
 + [SHIFT K_COLON] > ':'
 + [SHIFT K_L] > 'L'
 + [SHIFT K_K] > 'K'
@@ -39,7 +45,7 @@ group(main) using keys
 + [SHIFT K_D] > 'D'
 + [SHIFT K_S] > 'S'
 + [SHIFT K_A] > 'A'
-+ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_BKSLASH] > '~'
 + [SHIFT K_RBRKT] > '}'
 + [SHIFT K_LBRKT] > '{'
 + [SHIFT K_P] > 'P'
@@ -63,7 +69,7 @@ group(main) using keys
 + [K_C] > 'ҁ'
 + [K_X] > 'ч'
 + [K_Z] > 'z'
-+ [K_BKSLASH] > '\'
++ [K_BKSLASH] > '#'
 + [K_RBRKT] > ']'
 + [K_LBRKT] > '['
 + [K_QUOTE] > U+0027
@@ -127,7 +133,7 @@ dk(one) + [SHIFT K_C] > 'C'
 dk(one) + 'N' > 'Ŋ'
 
 + '2' > dk(two)
-+ '@' > dk(two)
++ '"' > dk(two)
 dk(two) + 'a' > 'ā'
 dk(two) + 'e' > 'ē'
 dk(two) + 'i' > 'ī'
@@ -139,13 +145,13 @@ dk(two) + 'E' > 'Ē'
 dk(two) + 'I' > 'Ī'
 dk(two) + 'O' > 'Ō'
 dk(two) + 'U' > 'Ū'
-dk(two) + '@' > '@'
+dk(two) + '"' > '"'
 
 + '3' > dk(three)
-+ '#' > dk(three)
++ [SHIFT K_3] > dk(three)
 dk(three) + 'a' > 'å'
 dk(three) + 'u' > 'ů'
 dk(three) + '3' > '3'
 dk(three) + 'A' > 'Å'
 dk(three) + 'U' > 'Ů'
-dk(three) + '#' > '#'
+dk(three) + [SHIFT K_3] > '£'
