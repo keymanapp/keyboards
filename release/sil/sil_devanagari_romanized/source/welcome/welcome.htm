@@ -7,6 +7,10 @@
     p { font: 10pt Tahoma; }
     h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
     h2 { font: bold 12pt Tahoma; color: #4444cc; }
+    .margin-50 {  margin-left: 50px;  }
+    .image-size {width: calc(100% - 50px); }
+    .text-wrapper { margin-bottom: 10px; }
+    .padding-50 { padding: 10px 10px 20px 50px; }
   </style>
 </head>
 <body>
@@ -20,7 +24,77 @@ Devanagari Romanized (SIL) keyboard is designed for the languages of Nepal. This
 <h1>Keyboard Layout</h1>
 
 <!-- Insert Keyboard Layout Images or HTML here -->
+<h2>Default (unshifted)</h2>
+<p class="margin-50"><img class="image-size" src="sil_devanagari_romanized_default.jpg" alt="Default Layout of Devanagari Romanized (SIL) Keyboard"/></p>
 
+<h2>Shift</h2>
+<p class="margin-50"><img class="image-size" src="sil_devanagari_romanized_shift.jpg" alt="Shift Layout of Devanagari Romanized (SIL) Keyboard"/></p>
+
+<h2>Right-Alt</h2>
+<p class="margin-50"><img class="image-size" src="sil_devanagari_romanized_ralt.jpg" alt="Right Alt Layout of Devanagari Romanized (SIL) Keyboard"/></p>
+
+<h2>Right-Alt and Shift</h2>
+<p class="margin-50"><img class="image-size" src="sil_devanagari_romanized_ralt_shift.jpg" alt="Right Alt + Shift Layout of Devanagari Romanized (SIL) Keyboard"/></p>
+
+<div class="text-wrapper">
+<h2>रेफ  (Reff)</h2>
+<pre class="padding-50">
+<key>र</key> + <key>्</key> + <key>क</key> → र्क
+</pre>
+<h2>अरु अक्षरहरू (Other Letters)</h2>
+<pre class="padding-50">
+<key>f</key> → ट
+<key>Shift</key> + <key>f</key> → ठ
+<key>v</key> → ड
+<key>Shift</key> + <key>v</key> → ढ
+<key>Shift</key> + <key>w</key> → द्व
+<key>Shift</key> + <key>z</key> → क्ष
+</pre>
+<h2>आधा अक्षरहरू  (Half-Letters)</h2>
+<pre class="padding-50">
+<key>k</key> + <key>;</key> → क्
+<key>K</key> + <key>;</key> → ख्
+</pre>
+<h2>संयुक्त अक्षरहरू (Combined Letters)</h2>
+<pre class="padding-50">
+क + ् + क → क्क
+क + ् + त → क्त
+क + ् + र → क्र
+ङ +  ् + क → ङ्क
+ङ + ् + ख → ङ्ख
+श + ् + र → श्र
+द + ् + ध → द्ध (बुद्ध)
+द + ् + द → द्द (मद्दत)
+द + ्  + व → द्व (द्वारा)
+द + ् + य + → द्य
+द + ् + र → द्र
+प + ् + र → प्र
+ट + ् + ट → ट्ट
+ठ + ् + ठ → ठ्ठ
+ह + ृ → हृ (हृदय)
+ह + ् + र → ह्र (गाह्रो)
+ह + ् + य → ह्य (ह्याकुला)
+ह + ् + व → ह्व (विह्वोल)
+क + ् + ष → क्ष
+त + ् + र → त्र
+ज + ् + ञ → ज्ञ
+</pre>
+<h2>ZWJ (Zero Width Joiner)</h2>
+<p class="padding-50">हलन्त नदेखिने गरि फरक तरिकाले जोड्न परेमा ZWJ को प्रयोग हुन्छ ।</p>
+<pre class="padding-50">
+झ + र + ्‍ य ो → झर्‍यो
+र्‍ + य  +ा + ल→ र्‍याल
+ह + ा + न्‍ + न + ु → हान्‍नु
+</pre>
+<p class="padding-50">Here <key>x</key> is the ZWJ.</p>
+<h2>ZWNJ (Zero Width Non Joiner)</h2>
+<p class="padding-50">हलन्त देखिने गरि जोड्न परेमा ZWNJ को प्रयोग हुन्छ ।</p>
+<pre class="padding-50">
+श्री + मा + न्‌(Shift + x ) + को → श्रीमान्‌को
+</pre>
+<p class="padding-50">Here <key>Shift</key> + <key>x</key> is the ZWNJ.</p>
+</div>
+<a href="..\..\extras\Dev_Rom_Keyboard_Layout.pdf">Devanagari Romanized Keyboard PDF</a>
 <p>©2015-2022 SIL International</p>
 
 </body>
