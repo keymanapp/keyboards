@@ -1,4 +1,5 @@
 
+
 <?php
 $pagename = 'Devanagari Romanized (SIL) Keyboard Help';
 $pagetitle = $pagename;
@@ -8,11 +9,12 @@ key, span.kbd { background: none repeat scroll 0% 0% #F7F7F7; padding: 0.1em 0.6
 END;
 require_once('header.php');
 ?>
-<p>Devanagari Romanized (SIL) Keyboard is designed for the Nepali language and other ethnic language spoken in Nepal. This keyboard lets you type Devnagari script in Unicode. The keyboard follows it's own standard layout. This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. Most computers will display the letters on this keyboard without a special font. But, AnnapurnaSIL-Nepal font is recommended.<br><br>This keyboard was created by SIL International.
+<p>Devanagari Romanized (SIL) keyboard is designed for the languages of Nepal. This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. Many Unicode fonts will display the letters on this keyboard, but Annapurna SIL Nepal font is recommended.
+<br><br>This keyboard was created by SIL International.
 </p>
 <h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt rightalt-shift leftctrl-leftalt leftctrl-leftalt-shift'>
+<div id='osk' data-states='default shift rightalt rightaltshift'>
 </div>
 <h3>How to type in Devanagari Romanized (SIL) Keyboard? How it is different than other Nepali keyboards? </h3>
 Most of the alfabetical keys represents the Devnagari letters with similar sounds. For instance, <key>k</key> represents 'क', <key>K</key> (<key>Shift</key>+<key>k</key>) represents 'ख' and <key>g</key> represents 'ग'. Similarly, you can find the related letters with ease using this keyboard.
@@ -139,5 +141,6 @@ Here <key>Shift</key> + <key>x</key> is the ZWNJ.
 Just press the english numeric keys to type numbers in the Devnagari script.
 <h2>Phone Keyboard Layout</h2>
 While most of the layout remains the same as in desktop version, Alt-Ctrl have been moved to separate key on the bottom right of the screen.
-<div id='osk-phone' data-states='default shift rightalt rightalt-shift Ctrl-Alt'>
+<div id='osk-phone' data-states='default shift rightalt rightaltshift'>
 </div>
+<p>Note: We can get same result using Left Ctrl and Left Alt as Right Alt key. <br>Right Alt → Left Ctrl + Left Alt. </p>
