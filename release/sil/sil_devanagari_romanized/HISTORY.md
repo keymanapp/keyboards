@@ -17,5 +17,5 @@ Devanagari Romanized (SIL) Change History
 
 1.6 (2022-02-14)
 -------------------------
-* Devanagari Letter Vocalic- R ऋ (LCtl-LAlt) is fixed now.
-* Devanagari Double Danda > Shift + | is fixed now.
+* Devanagari Letter Vocalic- R /U+090B/ (LCtl-LAlt) is fixed now.
+* Devanagari Double Danda > /U+0965/ Shift + | is fixed now.
