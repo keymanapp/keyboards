@@ -8,7 +8,7 @@ store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'xinaliq.keyman-touch-layout'
 store(&VISUALKEYBOARD) 'xinaliq.kvks'
 store(&NAME) 'Xinaliq'
-store(&KEYBOARDVERSION) '1.1.2'
+store(&KEYBOARDVERSION) '1.1.3'
 begin Unicode > use(main)
 
 group(main) using keys 
@@ -158,8 +158,8 @@ c ***lowercase consonants****
 
 's' + 's' > 'ss'            c doubled 's'
 'ss' + 's' > 'ŝ'            c circumflex
-'ŝ' + 's' > '̂ss'            c circumflex 's' and 's'
-'̂ss' + 's' > 's'            c reverts to base character 's'
+'ŝ' + 's' > 'ş'             c circumflex 's' and 's'
+'ş' + 's' > 's'             c reverts to base character 's'
 
 'z' + 'z' > 'ż'             c dot above
 'ż' + 'z' > 'ẑ'             c circumflex
@@ -199,15 +199,15 @@ c ***uppercase consonants****
 'P̂P̂' + 'P' > 'P'            C REVERTS TO BASE CHARACTER 'P'
 
 'T' + 'T' > 'Ṫ'            C DOT ABOVE
-'Ṫ' + 'T' > 'T̂'		     C CIRCUMFLEX
-'T̂' + 'T' > 'T̂T̂'		      C DOUBLED CIRCUMFLEX
-'T̂T̂' + 'T' > 'TT'		     C DOUBLED T
+'Ṫ' + 'T' > 'T̂'            C CIRCUMFLEX
+'T̂' + 'T' > 'T̂T̂'           C DOUBLED CIRCUMFLEX
+'T̂T̂' + 'T' > 'TT'          C DOUBLED T
 'TT' + 'T' > 'T'           C REVERTS TO BASE CHARACTER 'T'
 
 'S' + 'S' > 'SS'           C DOUBLED 'S'
 'SS' + 'S' > 'Ŝ'           C CIRCUMFLEX
-'Ŝ' + 'S' > '̂SS'           C CIRCUMFLEX 'S' AND 'S'
-'̂SS' + 'S' > 'S'           C REVERTS TO BASE CHARACTER  'S'
+'Ŝ' + 'S' > 'Ş'            C CIRCUMFLEX 'S' AND 'S'
+'Ş' + 'S' > 'S'            C REVERTS TO BASE CHARACTER  'S'
 
 'Z' + 'Z' > 'Ż'            C DOT ABOVE
 'Ż' + 'Z' > 'Ẑ'            C CIRCUMFLEX
