@@ -26,22 +26,23 @@
 <h2>Deməli, kirəş hasım izahat lək̇ink̂uijmə:</h2>
 <p>“q” 1x = q ; “q” 2x = q̇ ; “q” 3x = q̂ ; “q” 4x = q̂q̂ ; “q” 5x = q </p>
 <p>“t” 1x = t ; “t” 2x = ṫ ; “t” 3x = t̂ ; “t” 4x = t̂t̂ ; “t” 5x = tt ; “t” 6x = t</p>
-<p>“p” 1x = p “p” 2x = ṗ “p” 3x = p̂ “p” 4x = p̂p̂ “p” 5x = p</p>
-<p>“k” 1x = k; “k” 2x = k̇; “k” 3x = k̂; “k” 4x = k̂k̂; 5x = k</p>
-<p>“s” 1x = s ; “s” ; 2x = ss ; “s”  3x = ŝ ; “s”  4x = ş ; “s”  5x = s</p>
-<p>“c” 1x = c 2x = ċ 3x = ĉ 4x = ĉĉ 5x = ç 6x = c</p>
+<p>“p” 1x = p ; “p” 2x = ṗ ; “p” 3x = p̂ ; “p” 4x = p̂p̂ ; “p” 5x = p</p>
+<p>“k” 1x = k ; “k” 2x = k̇ ; “k” 3x = k̂ ; “k” 4x = k̂k̂ ; “k” 5x = k</p>
+<p>“s” 1x = s ; “s” 2x = ss ; “s” 3x = ŝ ; “s” 4x = ş ; “s” 6x = s</p>
+<p>“c” 1x = c ; “c” 2x = ċ ; “c” 3x = ĉ ; “c” 4x = ĉĉ ; “c” 5x = ç ; “c” 6x = c</p>
 <h3>Xüsusi diakritik olan digər samitlər üçün biz bir az daha sadə şərtlər istifadə etmişik:</h3>
 <h3>Xüsusi dam t̂ui samitirduru yir sətkəm rəḣət işarədişilli istifadə kuijmə:</h3>
 <p>“z” 1x = z ; “z” 2x = ż ; “z”  3x = ẑ ; “z” 4x = z</p>
-<p>“g” 1x = g 2x = ğ 3x = ğg 4x = ĝ 5x = g</p>
-<p>“h” 1x = h 2x = ḣ 3x = ĥ 4x = h</p>
-<p>“x” 1x = x 2x = x̂ 3x = x</p>
+<p>“g” 1x = g ; “g” 2x = ğ ; “g”  3x = ğg ; “g” 4x = ĝ ; “g” 5x = g</p>
+<p>“h” 1x = h ; “h” 2x = ḣ ; “h”  3x = ĥ ; “h” 4x = h</p>
+<p>“x” 1x = x ; “x” 2x = x̂ ; “x”  3x = x</p>
 <h3>Saitlər üçün çox az fərq var, buna görə də daha asan üsul istifadə etmişik:</h3>
 <h3>Saitirdirir lap dənə fərq t̂uijmə, hine görə sətkəm rəḣət qaydaş istifadə kuijmə:</h3>
-<p>“e” 1x = e 2x = ə 3x = e</p>
-<p>“u” 1x = u 2x = ü 3x = u</p>
-<p>“o” 1x = o 2x = ö 3x = o</p>
-<p>“i” 1x =  2x = ı 3x = i</p>
+<p>“e” 1x = e ; “e” 2x = ə ; “e” 3x = e</p>
+<p>“u” 1x = u ; “u” 2x = ü ; “u” 3x = u</p>
+<p>“o” 1x = o ; “o” 2x = ö ; “o” 3x = o</p>
+<p>“i” 1x = i ; “i” 2x = ı ; “i” 3x = i</p>
+
 
 <h1>How to use this keyboard</h1>
 <p>This keyboard is based on the Standard Azeri keyboard, so it uses the keyboard assignments which are familiar to Azerbaijani speakers.</p>
@@ -55,20 +56,20 @@
 <h2>So, we can summarize as follows:</h2>
 <p>“q” 1x = q ; “q” 2x = q̇ ; “q” 3x = q̂ ; “q” 4x = q̂q̂ ; “q” 5x = q </p>
 <p>“t” 1x = t ; “t” 2x = ṫ ; “t” 3x = t̂ ; “t” 4x = t̂t̂ ; “t” 5x = tt ; “t” 6x = t</p>
-<p>“p” 1x = p “p” 2x = ṗ “p” 3x = p̂ “p” 4x = p̂p̂ “p” 5x = p</p>
-<p>“k” 1x = k; “k” 2x = k̇; “k” 3x = k̂; “k” 4x = k̂k̂; 5x = k</p>
-<p>“s” 1x = s ; “s” ; 2x = ss ; “s”  3x = ŝ ; “s”  4x = ş ; “s”  5x = s</p>
-<p>“c” 1x = c 2x = ċ 3x = ĉ 4x = ĉĉ 5x = ç 6x = c</p>
+<p>“p” 1x = p ; “p” 2x = ṗ ; “p” 3x = p̂ ; “p” 4x = p̂p̂ ; “p” 5x = p</p>
+<p>“k” 1x = k ; “k” 2x = k̇ ; “k” 3x = k̂ ; “k” 4x = k̂k̂ ; “k” 5x = k</p>
+<p>“s” 1x = s ; “s” 2x = ss ; “s” 3x = ŝ ; “s” 4x = ş ; “s” 6x = s</p>
+<p>“c” 1x = c ; “c” 2x = ċ ; “c” 3x = ĉ ; “c” 4x = ĉĉ ; “c” 5x = ç ; “c” 6x = c</p>
 <h3>For other consonants which have special diacritics, we have used a little simpler convention: </h3>
 <p>“z” 1x = z ; “z” 2x = ż ; “z”  3x = ẑ ; “z” 4x = z</p>
-<p>“g” 1x = g 2x = ğ 3x = ğg 4x = ĝ 5x = g</p>
-<p>“h” 1x = h 2x = ḣ 3x = ĥ 4x = h</p>
-<p>“x” 1x = x 2x = x̂ 3x = x</p>
+<p>“g” 1x = g ; “g” 2x = ğ ; “g”  3x = ğg ; “g” 4x = ĝ ; “g” 5x = g</p>
+<p>“h” 1x = h ; “h” 2x = ḣ ; “h”  3x = ĥ ; “h” 4x = h</p>
+<p>“x” 1x = x ; “x” 2x = x̂ ; “x”  3x = x</p>
 <h3>For vowels, there is very little variation, so this is even simpler: </h3>
-<p>“e” 1x = e 2x = ə 3x = e</p>
-<p>“u” 1x = u 2x = ü 3x = u</p>
-<p>“o” 1x = o 2x = ö 3x = o</p>
-<p>“i” 1x =  2x = ı 3x = i</p>
+<p>“e” 1x = e ; “e” 2x = ə ; “e” 3x = e</p>
+<p>“u” 1x = u ; “u” 2x = ü ; “u” 3x = u</p>
+<p>“o” 1x = o ; “o” 2x = ö ; “o” 3x = o</p>
+<p>“i” 1x = i ; “i” 2x = ı ; “i” 3x = i</p>
 
 
 
@@ -86,4 +87,4 @@
 </div>
 
 
-<p>(c) 2019-2020 Kenneth Keyes</p>
+<p>(c) 2019-2022 Kenneth Keyes</p>

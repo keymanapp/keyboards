@@ -1,6 +1,13 @@
 Haiɫzaqvla Change History
 ============================
 
+9.4 (18 Jan 2022)
+----------------
+* Added desktop layout based on keyboard designed for the Heiltsuk Language & Culture Mobilization Partnership
+* Fixed Unicode values for touch layout
+* Added some characters to touch layout
+* Updated documentation
+
 9.3 (27 Jun 2019)
 ----------------
 * Canonical ordering normalized (U+0323)
