@@ -3,8 +3,6 @@ Postmodern English UK Natural keyboard
 
 © 2022, The Postmodern English Project
 
-Version 1.0
-
 Description
 -----------
 
