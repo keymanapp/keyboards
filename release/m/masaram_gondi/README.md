@@ -12,6 +12,8 @@ Masaram Gondi
 
 Links
 -----
+* <a href="https://gondidarshan.org/keyboard">Typing guide</a>
+* <a href="https://www.paypal.me/hinditutorpoint">Donate</a>
 
 Supported Platforms
 -------------------
