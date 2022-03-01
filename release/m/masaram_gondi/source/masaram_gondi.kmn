@@ -2,10 +2,11 @@
 c Font
 c NotoSansMasaramGondi-Regular from Google
 c by Rajesh Kumar Dhuriya
+
 store(&VERSION) '10.0'
 store(&NAME) 'Masaram Gondi (ITRANS)'
 store(&COPYRIGHT) '© 2022 Rajesh Kumar Dhuriya'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'masaram_gondi.kvks'
 store(&LAYOUTFILE) 'masaram_gondi.keyman-touch-layout'
@@ -23,7 +24,7 @@ store(opt1) 'gondi'
 
 c	Special Symbols
 
-+ "#"	>	"ॐ"
++ "#"	>	"#"
 + "$"	>	"₹"
 + "%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
 + "*"	>	"❀"
@@ -98,18 +99,18 @@ c Independent Vowels
 "𑴄" + "u"	>	"𑴅"
 "𑴉" + "o"	>	"𑴅"
 + "U"	>	"𑴅"
-+ "["	>	"𑴆"
++ "["	>	"["
 + "e"	>	"𑴆"
 + "E"	>	"𑴆"
 "𑴀" + "i"	>	"𑴈"
 "𑴆" + "i"	>	"𑴈"
-+ "]"	>	"𑴉"
++ "]"	>	"]"
 + "o"	>	"𑴉"
 + "O"	>	"𑴉"
 "𑴀" + "u"	>	"𑴋"
 "𑴉" + "u"	>	"𑴋"
-+ "{" > "𑴈" c DEVANAGARI LETTER AY
-+ '}' > '𑴋'
++ "{" > "{" c DEVANAGARI LETTER AY
++ '}' > '}'
 
 c Vowel Modifiers
 + "H"	>	"𑵁" c VISARGA - H
@@ -158,16 +159,16 @@ c duplicate mappings for ease of typing consonants
 + "F"	>	"𑴐𑵄"
 + "X"	>	"𑴯𑵄"
 + "Y"	>	"𑴕𑵄"
++ "Z"	>	"𑴰𑵄"
 
 c Nukta with preceding dot
-"." + "k"	>	".𑴌𑵄" c .k
-".𑴌𑵄" + "h" >	".𑴍𑵄" c .kh
+"." + "k"	>  ".𑴌𑵄" c .k
+".𑴌𑵄" + "h" >	 ".𑴍𑵄" c .kh
 "." + "g"	>	".𑴎𑵄" c .g
 "." + "j"	 >	"𑴓𑵂𑵄" c .j
-".𑴓𑵄" + "h" >	".𑴔" c .jh
-"." + "D"   >	"𑴘𑵂𑵄" c .D
-"𑴘𑵄" + "h"  >	"𑴙𑵂𑵄" c .Dh
-"𑴖𑵄" + "h"  > "𑴗𑵄"
+".𑴓𑵄" + "h" >	 ".𑴔" c .jh
+"." + "D"   >  "𑴘𑵂𑵄" c .D
+"𑴖𑵄" + "h"  >  "𑴗𑵄"
 "." + "f"	 >	"𑴡𑵂𑵄" c .f
 "." + "n"	 >	"𑴟𑵂" c .n
 "." + "r"	 >	"𑴦𑵂" c .r
@@ -197,7 +198,7 @@ c add h to consonants
 "𑴏𑵄" + "Y"	>	"𑴯𑵄"	c	GY
 "𑴚𑵄" + "g"	>	"𑴐𑵄"	c	Ng
 
-store(Vyanjana) '𑴌𑴮𑴪𑴍𑴎𑴏𑴐𑴑𑴒𑴓𑴯𑴔𑴕𑴖𑴗𑴘𑴙𑴚𑴛𑴜𑴝𑴞𑴟𑴠𑴡𑴢𑴣𑴤𑴥𑴦𑴧𑴭𑴨𑴪𑴫𑴬𑴩'
+store(Vyanjana) '𑴌𑴮𑴪𑴍𑴎𑴏𑴐𑴑𑴒𑴓𑴯𑴔𑴕𑴖𑴗𑴘𑴙𑴚𑴛𑴜𑴝𑴞𑴟𑴠𑴡𑴢𑴣𑴤𑴥𑴦𑴧𑴭𑴨𑴪𑴫𑴬𑴩𑴰'
 store(NuktaVyanjana) '𑴌𑴍𑴎𑴓𑴔𑴘𑴙𑴡𑴟𑴦𑴭𑴥𑴑'
 store(ViramaMaatraa) 'eiouAEIOrRU[]W{}qQzZ\'
 store(ViramaMaatraaU) "𑴺" "𑴲" "𑴽" "𑴴" "𑴱" "𑵇" "𑴳" "𑴱" "𑵆" "𑴶" "𑴵" "𑴺" "𑴽" "𑴺" '𑴼' '𑴿' 'ऺ' '𑴱𑵀'  'ॖ' 'ॗ' "𑵃" "𑵅"
