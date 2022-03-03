@@ -158,10 +158,11 @@ c These stores are for consonant (cluster) and consonant shifter configuration
 
 store(v_above)         U+17B7 U+17B8 U+17B9 U+17BA \
                        U+17BE U+17D0               c These vowels are rendered above the base consonant.
-store(shiftable_c_1st) U+179F U+17A0 U+17A2        c These consonants shift to the 2nd series when adding U+17CA to them.        
+store(shiftable_c_1st) U+179F U+17A0 U+17A2        c These consonants shift to the 2nd series when adding U+17CA to them. 
+store(shiftable_BA)    U+1794                      c BA is unique because it can be used with both U+17CA (shift to 2nd) and and U+179C (shift to PA, still in 1st series). 
 store(shiftable_c_2nd) U+1784 U+1789 U+1798 U+1799 \
-                       U+179A U+179C U+1794 U+1793 \       
-                       U+179B                      c These consonants shift to the 1st series when adding U+17C9 to them.
+                       U+179A U+179C U+1793 U+179B c These consonants shift to the 1st series when adding U+17C9 to them.   
+store(shiftable_c_2nd_with_BA)  outs(shiftable_c_2nd) outs(shiftable_BA)                                           
 store(c_2nd_combo_LO)  U+1799 U+1798 U+1784 U+1794 \
                        U+179C                      c These can be combined with U+179B to make a 2nd series consonant cluster.
 store(c_2nd_combo_MO)  U+1799 U+179B U+1784 U+179A c These can be combined with U+1798 to make a 2nd series consonant cluster. 
@@ -231,12 +232,12 @@ any(v_combo_R) U+17C7 + [K_BKSP] > nul
 c When pressing [K_U] after ាំ and ុំ, the U+17BB is converted to a respective consonant shifter placing before them (ាំ and ុំ).
 
 any(shiftable_c_1st) U+17B6 U+17C6 + [K_U] > context(1) U+17CA context(2) context(3) c fix ស ាំ ុ > ស៊ាំ
-any(shiftable_c_2nd) U+17B6 U+17C6 + [K_U] > context(1) U+17C9 context(2) context(3) c fix ម ាំ  ុ > ម៉ាំ   
+any(shiftable_c_2nd_with_BA) U+17B6 U+17C6 + [K_U] > context(1) U+17C9 context(2) context(3) c fix ម ាំ  ុ > ម៉ាំ   
 
 c Consonant shifter constraints (beep when the consonant shifter is used in inappropriate environment)
 
 any(shiftable_c_1st) + [SHIFT K_QUOTE] > context U+17C9 beep 
-any(shiftable_c_2nd) + [K_SLASH]       > context U+17CA beep
+any(shiftable_c_2nd_with_BA) + [K_SLASH]       > context U+17CA beep
 
 c 1st series consonant clusters
 
@@ -415,10 +416,10 @@ U+17A0 U+17D2 U+1794 any(v_above) U+17BB         > context(1) context(2) context
 U+17A0 U+17D2 U+1794 U+17BB U+17C6 U+17B6 U+17C6 > context(1) context(2) context(3) U+17C9 context(6) context(7)        c change U+17BB preceded by HA and coeng BA to U+17C9 before U+17B6 U+17C6
 
 
-U+17A0 U+17D2 any(shiftable_c_2nd) U+17BB any(v_above)         > context(1) context(2) context(3) U+17CA context(5)                   c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before the above vowel
-U+17A0 U+17D2 any(shiftable_c_2nd) U+17BB U+17B6 U+17C6        > context(1) context(2) context(3) U+17CA context(3) context(6)        c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before ាំ 
-U+17A0 U+17D2 any(shiftable_c_2nd) any(v_above) U+17BB         > context(1) context(2) context(3) U+17CA context(4)                   c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before the above vowel  
-U+17A0 U+17D2 any(shiftable_c_2nd) U+17BB U+17C6 U+17B6 U+17C6 > context(1) context(2) context(3) U+17CA context(6) context(7)        c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before U+17B6 U+17C6
+U+17A0 U+17D2 any(shiftable_c_2nd_with_BA) U+17BB any(v_above)         > context(1) context(2) context(3) U+17CA context(5)                   c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before the above vowel
+U+17A0 U+17D2 any(shiftable_c_2nd_with_BA) U+17BB U+17B6 U+17C6        > context(1) context(2) context(3) U+17CA context(3) context(6)        c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before ាំ 
+U+17A0 U+17D2 any(shiftable_c_2nd_with_BA) any(v_above) U+17BB         > context(1) context(2) context(3) U+17CA context(4)                   c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before the above vowel  
+U+17A0 U+17D2 any(shiftable_c_2nd_with_BA) U+17BB U+17C6 U+17B6 U+17C6 > context(1) context(2) context(3) U+17CA context(6) context(7)        c change U+17BB preceded by HA and coeng shiftable_c_2nd to U+17CA before U+17B6 U+17C6
 
 c consonant clusters --2nd > 1st series (with U+17BB)
 
@@ -441,10 +442,10 @@ any(shiftable_c_1st) U+17BB U+17C6 U+17B6 U+17C6 > context(1) U+17CA context(4) 
 
 c single consonants --2nd > 1st series (with U+17BB)
 
-any(shiftable_c_2nd) U+17BB any(v_above)         > context(1) U+17C9 context(3)                   c change U+17BB to U+17C9 before the above vowel
-any(shiftable_c_2nd) U+17BB U+17B6 U+17C6        > context(1) U+17C9 context(3) context(4)        c change U+17BB to U+17C9 before ាំ 
-any(shiftable_c_2nd) any(v_above) U+17BB         > context(1) U+17C9 context(2)                   c change U+17BB to U+17C9 before the above vowel  
-any(shiftable_c_2nd) U+17BB U+17C6 U+17B6 U+17C6 > context(1) U+17C9 context(4) context(5) c change U+17BB U+17C6 to U+17C9 
+any(shiftable_c_2nd_with_BA) U+17BB any(v_above)         > context(1) U+17C9 context(3)                   c change U+17BB to U+17C9 before the above vowel
+any(shiftable_c_2nd_with_BA) U+17BB U+17B6 U+17C6        > context(1) U+17C9 context(3) context(4)        c change U+17BB to U+17C9 before ាំ 
+any(shiftable_c_2nd_with_BA) any(v_above) U+17BB         > context(1) U+17C9 context(2)                   c change U+17BB to U+17C9 before the above vowel  
+any(shiftable_c_2nd_with_BA) U+17BB U+17C6 U+17B6 U+17C6 > context(1) U+17C9 context(4) context(5) c change U+17BB U+17C6 to U+17C9 
                                                                                                        
 c prevent incorrect use of consonant shifter with 2nd series consonant clusters (without U+17BB)
 
@@ -522,8 +523,8 @@ U+17A2 U+17D2 U+179C U+17BB U+17C6 U+17B6              > context(1) context(2) c
 
 c U+17B6 U+17BB and U+17C6 in that order preceeded by any second series consonant (cluster) are transformed to U+17C9 U+17B6 and U+17C6
 
-any(shiftable_c_2nd) U+17B6 U+17BB U+17C6 > context(1) U+17C9 context(2) context(4) 
-any(shiftable_c_2nd) U+17BB U+17C6 U+17B6 > context(1) U+17C9 context(4) context(3) 
+any(shiftable_c_2nd_with_BA) U+17B6 U+17BB U+17C6 > context(1) U+17C9 context(2) context(4) 
+any(shiftable_c_2nd_with_BA) U+17BB U+17C6 U+17B6 > context(1) U+17C9 context(4) context(3) 
 
 U+179B U+17D2 any(c_2nd_combo_LO) U+17B6 U+17BB U+17C6 > context(1) context(2) context(3) U+17C9 context(4) context(6)
 U+179B U+17D2 any(c_2nd_combo_LO) U+17BB U+17C6 U+17B6 > context(1) context(2) context(3) U+17C9 context(6) context(5)
