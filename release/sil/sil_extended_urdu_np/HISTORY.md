@@ -6,7 +6,8 @@ Extended Urdu NP (SIL) Change History
 * Modified to move to Keyman github repository
 * Added OSK
 * Added mobile layout
-* Added characters for other languages including Brahui, Balti and new characters for Shina
+* Added characters for Balti, Brahui
+* Changed small high dotless head of khah to U+08FF for Shina, Phalura
 * Changed combining toe to lam with toe
 * Moved some lesser used characters to Right-ALT section to make room for new characters
 
