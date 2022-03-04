@@ -1,6 +1,10 @@
 Khmer Angkor Change History
 =======================
 
+1.2 (3 Mar 2022)
+----------------------
+* fix BA issue with 17BB
+
 1.1 (27 Oct 2021)
 ----------------------
 * update rules for ប (U+1794) and ័ (U+17D0)
