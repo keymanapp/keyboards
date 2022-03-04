@@ -2,12 +2,12 @@
 ==============
 
 2020 © Quwat K. Sunny
-Version 2.0.22
+Version 2.0.23
 
 Description
 -----------
 
-Burushãski Girminas is latin/Roman based keyboard developed for for Buruśo Mahraka/Maraka, a representative body of Buruśo Community from Hunza, Nagar and Yasin. 
+Burushaski Girminas is latin/Roman based keyboard developed by Quwat K. Sunny using the orthography developed and approved by Buruśo Mahraka/Maraka, a representative body of Buruśo Community from Hunza, Nagar and Yasin. 
 
 Links
 -----
