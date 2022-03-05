@@ -12,8 +12,6 @@ Burushaski Girminas is latin/Roman based keyboard developed by Quwat K. Sunny us
 Links
 -----
 Homepage:     https://keyman.com/keyboards/burushaski_girminas
-Sponsored by: http://www.dardistantimes.com
-
 
 Supported Platforms
 -------------------
