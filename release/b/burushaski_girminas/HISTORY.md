@@ -4,7 +4,7 @@ Burushaski Girminas Change History
 2.0.23 (2022-02-27)
 ----------------
 
-Previously owned by Quwat K. Sunny. This keyboard is now adopted and own by Burusho Mahraka, a representative
+Previously owned by Quwat K. Sunny. This keyboard is now adopted and owned by Burusho Mahraka, a representative
 body of all the three varieties of Burushaski, Hunza, Nagar and Yasin. 
 
 
