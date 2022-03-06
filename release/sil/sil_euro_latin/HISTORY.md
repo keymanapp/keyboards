@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
-
+## 1.9.5 (24 Aug 2021)
+* Add support for Anglo-Saxon ash (ae ligature) with macron.
+* Add support for upper and lowercase yogh to touch layout on G key.
 ## 1.9.4 (18 Mar 2021)
 * Add support for Guinea-Bissau Creole [pov]
 * Correct formatting of Keyman Web help file

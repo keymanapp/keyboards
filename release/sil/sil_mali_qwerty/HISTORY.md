@@ -1,6 +1,12 @@
 Clavier du Mali (Qwerty) Keyboard Change History
 =======================
 
+
+4.0.2 (2022-02-18)
+----------------
+* Updated to use new fonts
+* Removed language: bwx
+
 4.0.1 (2020-10-27)
 ----------------
 * Increment version number to force recompile of touch layout.
