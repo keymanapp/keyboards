@@ -1,5 +1,8 @@
 Myanmar3 (SIL) Keyboard Change History
 =======================
+# 1.7.3 (29 Nov 2021)
+* Updated touch layout, numeric layer to access shift state
+
 # 1.7.2 (27 Apr 2021)
 * Added Pyidaungsu font
 

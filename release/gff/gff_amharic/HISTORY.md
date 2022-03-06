@@ -1,6 +1,11 @@
 gff_amharic Change History
 ==========================
 
+2.2 (19 Jul 2021)
+------------------
+* Extensions for Unicode 14
+* Addition of the Abyssinica SIL (Connected)
+
 2.1 (11 Apr 2021)
 ------------------
 * CSS Colored keys.

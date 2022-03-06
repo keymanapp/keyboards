@@ -1,14 +1,14 @@
-﻿store(&VERSION) '10.0'
+﻿store(&VERSION) '14.0'
 store(&NAME) 'Obolo Chwerty'
 store(&COPYRIGHT) '© 2019-2021 Rogers Katelem Edeh'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'obolo_chwerty.kvks'
 store(&LAYOUTFILE) 'obolo_chwerty.keyman-touch-layout'
 store(&BITMAP) 'obolo_chwerty.ico'
-store(&MESSAGE) 'A keyboard layout (chwerty) for the Obolo language of Nigeria.'
+store(&MESSAGE) 'A keyboard layout (chwerty) for the Obolo language of Nigeria. The keyboard covers the need of every dialect in that language.'
 store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
 c store(&CasedKeys) [K_X] [K_C] [K_H] [K_Q]
-store(&KEYBOARDVERSION) '1.1.2'
+store(&KEYBOARDVERSION) '1.2.0'
 
 begin Unicode > use(main)
 
@@ -100,6 +100,13 @@ c English equivalent (for desktop)
 ']' + [SHIFT CAPS K_Q] > 'q'
 
 ']' + [SHIFT K_6] > '^'
+
+c 
+']' + [K_BKQUOTE] > "`"
+']' + [SHIFT K_BKQUOTE] > "´"
+
+']' + [K_BKSLASH] > "ˆ"
+']' + [SHIFT K_BKSLASH] > "ˇ"
 
 c English equivalent (for touch layout)
 dk(1) + [T_Q] > 'q'
