@@ -2,7 +2,7 @@ Made February 2022
 
 The MIT License (MIT)
 
-This is a keyboard for the Koalib/Rere language, Ŋenuvǝ.
+(c)2022 Kamma Organization for Development Initiatives
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
