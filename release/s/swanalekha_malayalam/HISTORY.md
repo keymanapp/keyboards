@@ -1,6 +1,14 @@
 Swanalekha Malayalam Keyboard Change History
 ============================================
 
+1.2.6 (6 March 2022)
+-----------------
+* Add phone layout
+* Update tablet layout
+* Add 'SPACE'+'~' combination to type 'ZWJ'
+* Add support for inputting MALAYALAM VOWEL SIGN VOCALIC RR
+* Improve inputting of 'ദുഃ, 'ങ്', 'മ്', 'ZWJ' & 'ZWNJ'
+
 1.2.5 (7 May 2021)
 -----------------
 * Rename readme.html to readme.htm so it will open when installed
