@@ -1,4 +1,4 @@
-﻿c Burushaski Girminas is latin/Roman based keyboard developed by Quwat K. Sunny using the orthography approved by Buruśo Mahraka, a representative body of all three varieties of Buruśaski from Hunza Nagar and Yasin.
+c Burushaski Girminas is latin/Roman based keyboard developed by Quwat K. Sunny using the orthography approved by Buruśo Mahraka, a representative body of all three varieties of Buruśaski from Hunza Nagar and Yasin.
 store(&VERSION) '10.0'
 store(&NAME) 'Burushãski Girminas'
 store(&COPYRIGHT) '2020 Quwat K. Sunny'
@@ -17,13 +17,15 @@ group(main) using keys
 store( plainvowels )  'a'    'e'    'i'    'o'    'u'      'A'    'E'    'I'    'O'    'U'
 store( acutevowels )  U+00E1 U+00E9 U+00ED U+00F3 U+00FA   U+00C1 U+00C9 U+00CD U+00D3 U+00DA
 store (tildediacritic) U+00E3 U+1EBD U+0129 U+00F5 U+0169  U+00C3 U+1EBC U+0128 U+00D5 U+0168
+store( longvowels )  U+0101  U+0113 U+012B  U+014D U+016B U+0100 U+0112 U+012A U+014C U+016A
 
 
 "," + "e" > U+00E9 c extra acute e for causative
-"," + "E" > U+00C9 c capitalization of the same rule 
+"," + "E" > U+00C9 c capitalization of the same rule  
 
 "'" + any( plainvowels ) > index( acutevowels, 2 )
-'~' + any( plainvowels ) > index(tildediacritic, 2) 
+'~' + any( plainvowels ) > index(tildediacritic, 2)
+';' + any( plainvowels ) > index (longvowels,2)
 
 
 "." + "c" >  U+0063 U+0323  c for IPA ʈʂ as in c̣arara 
@@ -56,8 +58,8 @@ U+015A + "h" > "Sh"
 "." + "t" > U+1E6D  c for IPA ʈ as in țechnology 
 "." + "T" > U+1E6C   c capitalization of the same rule. 
 
-"." + "y" >  U+00FD  c
-"." + "Y" >  U+00DD  c
+"." + "y" >  U+0079 U+0323  c
+"." + "Y" >  U+0059 U+0323 c
 
 "." + "z" >  U+1E93  C for IPA ʐ as in ẓakun (donkey)
-"." + "Z" >  U+1E92  C Capitalization of the same rule Ẓ
+"." + "Z" >  U+1E92  C Capitalization of the same rule 
