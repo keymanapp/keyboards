@@ -2,18 +2,19 @@
 c Font
 c NotoSansMasaramGondi-Regular from Google
 c by Rajesh Kumar Dhuriya
+
 store(&VERSION) '10.0'
 store(&NAME) 'Masaram Gondi (ITRANS)'
 store(&COPYRIGHT) '© Rajesh Kumar Dhuriya'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'masaram_gondi.kvks'
 store(&LAYOUTFILE) 'masaram_gondi.keyman-touch-layout'
-c store(&KMW_HELPTEXT) 'https://gondi.bwiit.in/keyboard'
-store(&MESSAGE) 'The script was designed for writing Gondi (ISO 639-3: gon), a Dravidian language spoken by 2.6 million people, primarily in Madhya Pradesh and Maharashtra,with some speakers in Andhra Pradesh and Chhattisgarh.'
-store(&BITMAP) 'masaram_gondi.ico'
+store(&KMW_HELPTEXT) 'https://gondidarshan.org/keyboard'
+store(&MESSAGE) 'This keyboard is for typing the Gondi language in the Masarm Gondi script.'
 
 group(main) using keys
+store(&BITMAP) 'masaram_gondi.ico'
 
 begin Unicode > use(main)
 
@@ -23,7 +24,7 @@ store(opt1) 'gondi'
 
 c	Special Symbols
 
-+ "#"	>	"ॐ"
++ "#"	>	"#"
 + "$"	>	"₹"
 + "%"	>	U+0FD5	c ࿕ RIGHT-FACING SVASTI SIGN
 + "*"	>	"❀"
@@ -158,21 +159,22 @@ c duplicate mappings for ease of typing consonants
 + "F"	>	"𑴐𑵄"
 + "X"	>	"𑴯𑵄"
 + "Y"	>	"𑴕𑵄"
++ "Z"	>	"𑴰𑵄"
 
 c Nukta with preceding dot
-"." + "k"	>	".𑴌𑵄" c .k
-".𑴌𑵄" + "h"	>	".𑴍𑵄" c .kh
+"." + "k"	>  ".𑴌𑵄" c .k
+".𑴌𑵄" + "h" >	 ".𑴍𑵄" c .kh
 "." + "g"	>	".𑴎𑵄" c .g
-"." + "j"	>	"𑴓𑵂𑵄" c .j
-".𑴓𑵄" + "h"	>	".𑴔" c .jh
-"." + "D"	>	"𑴘𑵂𑵄" c .D
-"𑴘𑵄" + "h"	>	"𑴙𑵂𑵄" c .Dh
-"." + "f"	>	"𑴡𑵂𑵄" c .f
-"." + "n"	>	"𑴟𑵂" c .n
-"." + "r"	>	"𑴦𑵂" c .r
-"." + "L"	>	"𑴭𑵂𑵄" c .L
-"." + "y"	>	"𑴥𑵂𑵄" c .y
-"." + "c"	>	".𑴑𑵄" c .c - ca plus nukta for Konkani
+"." + "j"	 >	"𑴓𑵂𑵄" c .j
+".𑴓𑵄" + "h" >	 ".𑴔" c .jh
+"." + "D"   >  "𑴘𑵂𑵄" c .D
+"𑴖𑵄" + "h"  >  "𑴗𑵄"
+"." + "f"	 >	"𑴡𑵂𑵄" c .f
+"." + "n"	 >	"𑴟𑵂" c .n
+"." + "r"	 >	"𑴦𑵂" c .r
+"." + "L"	 >	"𑴭𑵂𑵄" c .L
+"." + "y"	 >	"𑴥𑵂𑵄" c .y
+"." + "c"	 >	".𑴑𑵄" c .c - ca plus nukta for Konkani
 
 c alternate mapping with ~
 "~" + "n"	>	"𑴕𑵄" c ~n
@@ -181,7 +183,7 @@ c alternate mapping with ~
 c add h to consonants
 "𑴌𑵄" + "h" >	 "𑴍𑵄"
 "𑴎𑵄" + "h"  >	   "𑴏𑵄"
-"𑴑𑵄" + "h"	>	"𑴑𑵄" c same c=ch
+"𑴑𑵄" + "h"	>	"𑴒𑵄" c same c=ch
 "𑴒𑵄" + "h"	>	"𑴒𑵄" c same C=Ch
 "𑴓𑵄" + "h"	>	"𑴔𑵄"
 "𑴛𑵄" + "h"	>	"𑴜𑵄"
@@ -196,7 +198,7 @@ c add h to consonants
 "𑴏𑵄" + "Y"	>	"𑴯𑵄"	c	GY
 "𑴚𑵄" + "g"	>	"𑴐𑵄"	c	Ng
 
-store(Vyanjana) '𑴌𑴮𑴪𑴍𑴎𑴏𑴐𑴑𑴒𑴓𑴯𑴔𑴕𑴖𑴗𑴘𑴙𑴚𑴛𑴜𑴝𑴞𑴟𑴠𑴡𑴢𑴣𑴤𑴥𑴦𑴧𑴭𑴨𑴪𑴫𑴬𑴩'
+store(Vyanjana) '𑴌𑴮𑴪𑴍𑴎𑴏𑴐𑴑𑴒𑴓𑴯𑴔𑴕𑴖𑴗𑴘𑴙𑴚𑴛𑴜𑴝𑴞𑴟𑴠𑴡𑴢𑴣𑴤𑴥𑴦𑴧𑴭𑴨𑴪𑴫𑴬𑴩𑴰'
 store(NuktaVyanjana) '𑴌𑴍𑴎𑴓𑴔𑴘𑴙𑴡𑴟𑴦𑴭𑴥𑴑'
 store(ViramaMaatraa) 'eiouAEIOrRU[]W{}qQzZ\'
 store(ViramaMaatraaU) "𑴺" "𑴲" "𑴽" "𑴴" "𑴱" "𑵇" "𑴳" "𑴱" "𑵆" "𑴶" "𑴵" "𑴺" "𑴽" "𑴺" '𑴼' '𑴿' 'ऺ' '𑴱𑵀'  'ॖ' 'ॗ' "𑵃" "𑵅"
