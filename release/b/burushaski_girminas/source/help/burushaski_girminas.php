@@ -148,7 +148,7 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
               <td><p>a</p></td>
               <td><p>aa</p></td>
               <td bgcolor="#EDEDED"><p><strong>aa</strong>mala</p></td>
-              <td><p>A;</p></td>
+              <td><p>A<strong>:</strong></p></td>
             </tr>
             <tr>
               <td><p>e</p></td>
@@ -156,7 +156,7 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
               <td><p>ɛ</p></td>
               <td><p>ee</p></td>
               <td bgcolor="#EDEDED"><p><strong>ee</strong>mali</p></td>
-              <td><p>ɛ;</p></td>
+              <td><p>ɛ<strong>:</strong></p></td>
             </tr>
             <tr>
               <td><p>i</p></td>
@@ -164,7 +164,7 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
               <td><p>i</p></td>
               <td><p>ii</p></td>
               <td bgcolor="#EDEDED"><p><strong>ii</strong>lji</p></td>
-              <td><p>I;</p></td>
+              <td><p>I<strong>:</strong></p></td>
             </tr>
             <tr>
               <td><p>o</p></td>
@@ -172,7 +172,7 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
               <td><p>o</p></td>
               <td><p>oo</p></td>
               <td bgcolor="#EDEDED"><p><strong>oo</strong><em>girmin</em></p></td>
-              <td><p>O;</p></td>
+              <td><p>O<strong>:</strong></p></td>
             </tr>
             <tr>
               <td><p>u</p></td>
@@ -180,7 +180,7 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
               <td><p>u</p></td>
               <td><p>uu</p></td>
               <td bgcolor="#EDEDED"><p><strong>uu</strong>likal</p></td>
-              <td><p>U;</p></td>
+              <td><p>U<strong>:</strong></p></td>
             </tr>
             <tr>
               <td><p>ã / ẽ / ĩ / õ / ũ</p></td>
