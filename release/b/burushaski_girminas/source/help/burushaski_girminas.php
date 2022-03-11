@@ -24,11 +24,12 @@ body,td,th {
 }
 -->
     </style>
+
 <TABLE WIDTH=680 BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="page-break-before: always">
 	<COL WIDTH=680>
 	<TR>
-		<TD WIDTH=680 BGCOLOR="#ffffff">
-			<P ALIGN=LEFT class="style3" LANG="en-GB"><FONT FACE="Calibri, sans-serif"><FONT SIZE=5 STYLE="font-size: 20pt">Burushaski Orthography and Keyboard&nbsp; &nbsp; &nbsp;&nbsp;</FONT></FONT></P>		</TD>
+		<TD WIDTH=680>
+			<P ALIGN=LEFT class="style3" LANG="en-GB"><FONT FACE="Calibri, sans-serif"><FONT SIZE=5 STYLE="font-size: 20pt; color: #000000;">Burushaski Orthography and Keyboard&nbsp; &nbsp; &nbsp;&nbsp;</FONT></FONT></P>		</TD>
 	</TR>
 </TABLE>
 <hr>
@@ -43,13 +44,13 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
 <HR>
 <table width="100%" border="0" cellpadding="10">
   <tr>
-    <tdalign="left" valign="top">&nbsp;</td>
+    &nbsp;</td>
   </tr>
   <tr>
-    <tdalign="left" valign="top">&nbsp;</td>
+    &nbsp;</td>
   </tr>
   <tr>
-    <td width="96%"align="left" valign="top"><h3 class="style11"><a name="desktop"></a>Typing  characters with Burushaski Girminas Keyboard (Desktop) </h3>
+    <td width="96%" height="1802"align="left" valign="top"><h3 class="style11"><a name="desktop"></a>Typing  characters with Burushaski Girminas Keyboard (Desktop) </h3>
         <p>For  diacritic vowels with&nbsp;tilde, there is only one rule -- on your keyboard press tilde (~)&nbsp; followed by your desired vowel.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
 <table border-bottom="1px" solid cellspacing="4" cellpadding="6">
           <col width="64" span="13">
@@ -101,8 +102,8 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
         <tr height="19">
           <td width="126" bgcolor="#ddd" class="style19"><strong>Output</strong></td>
           <td width="92" height="19" bgcolor="#999900"><div align="center" class="style9">Ṅ</div></td>
-          <td width="58" bgcolor="#000000"><div align="center" class="style9">Ț</div></td>
-          <td width="75" bgcolor="#FF6600"><div align="center" class="style9">Ý</div></td>
+          <td width="58" bgcolor="#000000"><div align="center" class="style9">Ṭ</div></td>
+          <td width="75" bgcolor="#FF6600"><div align="center" class="style9">Ṭ</div></td>
           <td width="64" bgcolor="#669933"><div align="center" class="style9">Ẓ</div></td>
           <td width="56" bgcolor="#8944DD"><div align="center" class="style9">Ṣ</div></td>
         </tr>
@@ -204,7 +205,7 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
               <td bgcolor="#EDEDED"><p><strong>t</strong>erek</p></td>
               <td><p>t</p></td>
               <td><p>ṭ</p></td>
-              <td bgcolor="#EDEDED"><p><strong>t</strong>iki</p></td>
+              <td bgcolor="#EDEDED"><p><strong>ṭ</strong>iki</p></td>
               <td><p>ʈ</p></td>
             </tr>
             <tr>
@@ -398,6 +399,6 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
       <p>On mobile devices, where keyman engine and Burushaski Girminas is installed, press and hold the main
       character for the accentuating characters to appear. A seperate android keyboard is available in the google play store for download. </p>
       <p>&nbsp;Please download here:&nbsp;<a href="https://play.google.com/store/apps/details?id=burushaski.girminas" title="Burushaski Girminas Android App" target="new">Burushaski Girminas</a>      </p>
-    <p>Since the keyboard is a beta version, feedback and recommendations are welcomed. </p></td>
+    <p>feedback and recommendations are welcomed. </p></td>
   </tr>
 </table>
