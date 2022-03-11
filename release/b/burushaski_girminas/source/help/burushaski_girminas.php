@@ -5,14 +5,7 @@
   require_once('header.php');
 ?>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML> 
-	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-	<TITLE>welcome to Burush&atilde;ski Girmin&atilde;s Keyboard</TITLE>
-	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.7  (Win32)">
-	<META NAME="CREATED" CONTENT="0;0">
-	<META NAME="CHANGED" CONTENT="20200125;22164502">
-    <style type="text/css">
+<style type="text/css">
 <!--
 .style3 {
 	color: #FF3300;
@@ -31,13 +24,11 @@ body,td,th {
 }
 -->
     </style>
-    </HEAD>
-<BODY  LANG="en-US" DIR="LTR">
 <TABLE WIDTH=680 BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="page-break-before: always">
-   <COL WIDTH=680>
+	<COL WIDTH=680>
 	<TR>
-		<TD WIDTH=680>
-			<P ALIGN=LEFT class="style3" LANG="en-GB"><FONT FACE="Calibri, sans-serif" style="color: #000000"><FONT SIZE=5 STYLE="font-size: 20pt">Burushaski Orthography and Keyboard&nbsp; &nbsp; &nbsp;&nbsp;</FONT></FONT></P>		</TD>
+		<TD WIDTH=680 BGCOLOR="#ffffff">
+			<P ALIGN=LEFT class="style3" LANG="en-GB"><FONT FACE="Calibri, sans-serif"><FONT SIZE=5 STYLE="font-size: 20pt">Burushaski Orthography and Keyboard&nbsp; &nbsp; &nbsp;&nbsp;</FONT></FONT></P>		</TD>
 	</TR>
 </TABLE>
 <hr>
@@ -110,7 +101,7 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
         <tr height="19">
           <td width="126" bgcolor="#ddd" class="style19"><strong>Output</strong></td>
           <td width="92" height="19" bgcolor="#999900"><div align="center" class="style9">Ṅ</div></td>
-          <td width="58" bgcolor="#000000"><div align="center" class="style9">Ṭ</div></td>
+          <td width="58" bgcolor="#000000"><div align="center" class="style9">Ț</div></td>
           <td width="75" bgcolor="#FF6600"><div align="center" class="style9">Ý</div></td>
           <td width="64" bgcolor="#669933"><div align="center" class="style9">Ẓ</div></td>
           <td width="56" bgcolor="#8944DD"><div align="center" class="style9">Ṣ</div></td>
@@ -410,5 +401,3 @@ Hunza, Yasin and Nagar. The unique characters of Burushaski, mostly retroflexes 
     <p>Since the keyboard is a beta version, feedback and recommendations are welcomed. </p></td>
   </tr>
 </table>
-</BODY>
-</HTML>
