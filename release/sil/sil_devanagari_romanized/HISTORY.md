@@ -35,4 +35,4 @@ Devanagari Romanized (SIL) Change History
 /*Removed*/
 *The default 'x' behavior for post-h is non-joining for Kangri has been removed.
 
-*Tablet layout added.
+*Minor Changes in phone keyboard layout.
