@@ -5,10 +5,16 @@
 ?>
 
   <style type="text/css">
+    @font-face {
+      font-display: swap;
+      font-family: 'Noto Sans Masaram Gondi';
+      src: URL('./NotoSansMasaramGondi-Regular.ttf') format('truetype');
+    }
     p { font: 10pt Tahoma; }
     h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
     h2 { font: bold 14pt Tahoma; color: #4444cc; }
     h3 { font: bold 12pt Tahoma; color: #4444cc; }
+    .gond { font-family:Noto Sans Masaram Gondi;}
     .char { font-family:Noto Sans Masaram Gondi; font-size: 28px;}
     .key  { font: 12pt Tahoma; color: #708090; }
     .cell-t{box-shadow:0 0 .25rem rgba(0,0,0,.075)!important}
@@ -327,7 +333,7 @@ will install the <b>Noto Sans Masaram Gondi</b> font.
       <h4 class="text-start">Sentences Example (वाक्य उदाहरण)</h4>
       <div class="row">
         <h5>1- meraa naama rajesha kumaara dhuriyaa hai. </h5>
-        <h5 style="font-family: Masaram-Gondi;">𑵑. 𑴤𑴺𑴦𑴱 𑴟𑴱𑴤 𑴦𑴱𑴓𑴺𑴩 𑴌𑴴𑴤𑴱𑴦 𑴞𑴴𑴦𑴲𑴥𑴱 𑴬𑴼.</h5>
+        <h5 class="gond">𑵑. 𑴤𑴺𑴦𑴱 𑴟𑴱𑴤 𑴦𑴱𑴓𑴺𑴩 𑴌𑴴𑴤𑴱𑴦 𑴞𑴴𑴦𑴲𑴥𑴱 𑴬𑴼.</h5>
         <h5>1- मेरा नाम राजेश कुमार धुरिया है । </h5>
       </div>
     </div>
