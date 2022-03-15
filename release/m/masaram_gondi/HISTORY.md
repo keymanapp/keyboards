@@ -1,6 +1,11 @@
 Masaram Gondi (ITRANS) Change History
 ====================
 
+1.2.1 (2022-03-15)
+----------------
+* Updates to welcome and readme files to display the font on installation
+* No changes to keyboard function
+
 1.2 (2022-03-03)
 ----------------
 * Small enhancements to the keyboard
