@@ -1,6 +1,8 @@
-﻿The MIT License (MIT)
+Made February 2022
 
-© 2020-2022 Quwat K. Sunny
+The MIT License (MIT)
+
+(c)2022 Kamma Organization for Development Initiatives
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
