@@ -12,6 +12,7 @@ Telex or TELEX (Vietnamese: Quốc ngữ điện tín, lit. 'national language t
 
 **Note:** This keyboard uses [Quy tắc đặt dấu thanh kiểu mới](https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_mới)
 
+For [Quy tắc đặt dấu thanh kiểu mới](https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_mới), see [this version](https://github.com/miketvo/keyboards/tree/vietnamese-telex-legacy).
 
 Report a bug:
 -----------
