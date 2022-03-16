@@ -11,7 +11,7 @@ require_once('header.php');
 <p>The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their respective keys on the US English keyboard. The keyboard layout can be viewed by clicking on the Keyman icon and selecting the On-Screen Keyboard menu item, or by opening the Help documentation. This layout matches the “Devanagari Romanized (SAG)” Windows keyboard layout.</p>
 <h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt rightaltshift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 <h2>Note:</h2>
 <p>You can use Left Ctrl + Left Alt in place of the Right Alt key.</p>
@@ -148,5 +148,5 @@ Most of the alfabetical keys represents the Devnagari letters with similar sound
 <h2>Tablet Keyboard Layout</h2>
 <p>The layout for tablet version remains same as the phone layout. </p>
 <h2>Phone Keyboard Layout</h2>
-<div id='osk-phone' data-states='default shift rightalt rightaltshift'>
+<div id='osk-phone' data-states='default shift rightalt rightalt-shift'>
 </div>
