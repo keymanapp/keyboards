@@ -1,7 +1,7 @@
 <?php 
   $pagename = 'Vietnamese Telex Keyboard Help';
   $pagetitle = $pagename;
-  $style = 'p { font: 10pt Tahoma; } h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px } h2 { font: bold 12pt Tahoma; color: #4444cc; } table { border-collapse: collapse; } th, td { border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt; } code { border: 1px solid rgb(199, 199, 199); border-radius: 3pt; background: rgb(238, 238, 238); padding: 1pt 2pt; }';
+  $style = 'p { font: 10pt Tahoma; } h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px } h2 { font: bold 12pt Tahoma; color: #4444cc; } table { border-collapse: collapse; } th, td { border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt; } code { border: 1px solid rgb(199, 199, 199); border-radius: 3pt; background: rgb(238, 238, 238); padding: 1pt 2pt; } .msg-important { color: rgb(238, 0, 0); background-color: rgb(255, 213, 213); border: 2px dashed rgb(238, 0, 0); padding: 8pt 16pt; margin: 8pt 0; display: inline-block; }';
 
   // Header
   require_once('header.php');
@@ -129,6 +129,11 @@
 <p>
   If more than one tone marking key is pressed, the last one will be used. For example, typing <code>asf</code> will return "à". To write a tone marking key as a normal character, one has to press it twice: <code>her</code> becomes <code>hẻ</code>, while <code>herr</code> becomes <code>her</code>.
 </p>
+
+<div class="msg-important">
+  <p><b>Important Notice:</b> This keyboard uses <a href="https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_mới">Quy tắc đặt dấu thanh kiểu mới</a>.</p>
+  <p>For <a href="https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_cũ">Quy tắc đặt dấu thanh kiểu cũ</a>, use <a href="https://keyman.com/keyboards/vietnamese_telex_legacy">Vietnamese Telex (Legacy Mode)</a>.</p>
+</div>>
 
 <hr>
 
