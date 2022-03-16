@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Vietnamese Telex Keyboard Help';
+  $pagename = 'Vietnamese Telex Keyboard (Legacy Mode) Help';
   $pagetitle = $pagename;
   $style = 'p { font: 10pt Tahoma; } h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px } h2 { font: bold 12pt Tahoma; color: #4444cc; } table { border-collapse: collapse; } th, td { border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt; } code { border: 1px solid rgb(199, 199, 199); border-radius: 3pt; background: rgb(238, 238, 238); padding: 1pt 2pt; } .msg-important { color: rgb(238, 0, 0); background-color: rgb(255, 213, 213); border: 2px dashed rgb(238, 0, 0); padding: 8pt 16pt; margin: 8pt 0; display: inline-block; }';
 
@@ -7,7 +7,7 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using Keyman Vietnamese Telex keyboard</h1>
+<h1>Start Using Keyman Vietnamese Telex (Legacy Mode) keyboard</h1>
 
 <p>
   Because the Vietnamese alphabet uses a complex system of diacritical marks, Telex requires the user to type in a base letter, followed by one or two characters that represent the diacritical marks:
