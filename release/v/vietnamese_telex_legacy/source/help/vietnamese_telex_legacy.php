@@ -7,8 +7,6 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using Keyman Vietnamese Telex (Legacy Mode) keyboard</h1>
-
 <p>
   Because the Vietnamese alphabet uses a complex system of diacritical marks, Telex requires the user to type in a base letter, followed by one or two characters that represent the diacritical marks:
 </p>

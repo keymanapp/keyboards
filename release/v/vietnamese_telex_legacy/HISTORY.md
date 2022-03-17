@@ -1,4 +1,4 @@
-Vietnamese Telex Change History
+Vietnamese Telex (Legacy Mode) Change History
 ====================
 
 1.0 (2022-03-16)
