@@ -1,3 +1,4 @@
+
 <?php
 $pagename = 'Devanagari Romanized (SIL) Keyboard Help';
 $pagetitle = $pagename;
@@ -7,19 +8,50 @@ key, span.kbd { background: none repeat scroll 0% 0% #F7F7F7; padding: 0.1em 0.6
 END;
 require_once('header.php');
 ?>
-
-<p>
-The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their respective keys on the US English keyboard. The keyboard layout can be viewed by clicking on the Keyman icon and selecting the On-Screen Keyboard menu item, or by opening the Help documentation. This layout matches the “Devanagari Romanized (SAG)” Windows keyboard layout.
-</p>
-
+<p>The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their respective keys on the US English keyboard. The keyboard layout can be viewed by clicking on the Keyman icon and selecting the On-Screen Keyboard menu item, or by opening the Help documentation. This layout matches the “Devanagari Romanized (SAG)” Windows keyboard layout.</p>
+<h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
-<h4>Note: You can use Left Ctrl + Left Alt in place of the Right Alt key.</h4>
-
-<div class="text-wrapper">
-<h2>Using the Dead Key</h2>
-<p>In the Nepali language there are many letters and symbols, and not all of them will fit on the QWERTY layout. To create more characters, we use a 'dead key'. A 'dead key' produces no output, instead it changes the output of the keys that are pressed immediately afterwards. In this keyboard, we are using the <key>q</key> as a dead key. For example, if you want to write vowel letters separately as shown below, you should use <key>q</key> key.</p>
+<h2>Note:</h2>
+<p>You can use Left Ctrl + Left Alt in place of the Right Alt key.</p>
+<h3>How to type in Devanagari Romanized (SIL) Keyboard? How it is different than other Nepali keyboards? </h3>
+Most of the alfabetical keys represents the Devnagari letters with similar sounds. For instance, <key>k</key> represents 'क', <key>K</key> (<key>Shift</key>+<key>k</key>) represents 'ख' and <key>g</key> represents 'ग'. Similarly, you can find the related letters with ease using this keyboard.
+<h4>
+  <li>इकार (iikar)</li>  
+</h4>
+<pre class="padding-50">
+<key>k</key> + <key>i</key> → कि (ह्रस्व)
+<key>k</key> + <key>Shift</key> +  <key>i</key> → की (दीर्घ)
+</pre>
+<h4>
+  <li>ह्रस्व उकार र दीर्घ ऊकार (rasso ukar and dhirga uukar)</li>  
+</h4>
+<pre class="padding-50">
+<key>k</key> + <key>u</key> → कु (उकार)
+<key>k</key> + <key>Shift</key> +  <key>u</key> → कू (ऊकार)
+</pre>
+<h4>
+  <li>एकार र ऐकार (ikar and ekar)</li>  
+</h4>
+<pre class="padding-50">
+<key>k</key> + <key>e</key> → के (एकार)
+<key>k</key> + <key>Shift</key> +  <key>e</key> → कै (ऐकार)
+</pre>
+<h4>
+  <li>ओकार र औकार (okar and aukar)</li>  
+</h4>
+<pre class="padding-50">
+<key>k</key> + <key>o</key> → को (ओकार)
+<key>k</key> + <key>Shift</key> +  <key>o</key> → कौ (औकार)
+</pre>
+<h4>
+  <li>Dead Key</li>
+</h4>
+<p>In the Nepali language there are many letters and symbols, and not all of them will fit on the QWERTY layout. To create more characters, we use a 'dead key'. A 'dead key' produces no output, instead it changes the output of the keys that are pressed immediately afterwards. In this keyboard, we are using the q as a dead key.</p>
+<h4>
+  <li>स्वर अक्षरहरू छुट्टै लेख्न परेमा (If you want to write vowels separately)</li>  
+</h4>
 <pre class="padding-50">
 <key>q</key> + <key>Shift</key> + <key>a</key> → अ
 <key>q</key> + <key>a</key> → आ
@@ -34,7 +66,9 @@ The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their 
 <key>q</key> + <key>o</key> → ओ
 <key>q</key> + <key>Shift</key> + <key>o</key> → औ
 </pre>
-<h2>The हलन्त (halanta)</h2>
+<h4>
+  <li>The हलन्त (halanta)</li>  
+</h4>
 <p>The हलन्त (halanta) looks like this (्) and goes under the base of the consonant. When you add a हलन्त (halanta) to the consonant characters, you cancel their respective vowel sound, for example प्, क्, ट्. The हलन्त (halanta) can be used to join consnants in three different ways: <ul><li>The consonants can joined together to make a conjunct</li><li>The first consonant becomes a half-character</li><li>The first consonant is followed by an explicit halanta</li></ul></p>
 <div class="halanta-wrapper margin-50">
 <h4>संयुक्त/संयोजन (Conjuncts)</h4>
@@ -56,19 +90,25 @@ The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their 
 श्री + मा + न्‌(Shift + x ) + को → श्रीमान्‌को
 </pre>
 </div>
-<h2>रेफ (reph)</h2>
+<h4>
+  <li>रेफ (reph)</li>  
+</h4>
 <p>It is the letter 'र' (ra) with the inherent short vowel dropped. The mark by which it is denoted is placed over the letter following it, such as- कर्म, हर्ष etc. Reph looks like a right-facing sickle.</p>
 <pre class="padding-50">
 <key>र</key> + <key>्</key> + <key>क</key> → र्क
 <key>र</key> + <key>्</key> + <key>म</key> → र्म
 </pre>
-<h2>रकार (rakār)</h2>
+<h4>
+  <li>रकार (rakār)</li>  
+</h4>
 <p>Rakar is used to indicate a consonant conjunct ending in "Ra". Rakār looks like a left-facing diagonal dash (sometimes duplicated in some cases). Note that reph will go above the letter while rakār will go beneath. In this keyboard we input rakār by two ways as shown below.</p>
 <pre class="padding-50">
 <key>p</key> + <key>Shift</key> + <key>R</key> → प्र
 <key>p</key> + <key>;</key> + <key>r</key> → प + ् + र → प्र
 </pre>
-<h2>बारम्बार प्रयोग हुने संयुक्त अक्षरहरू (Common Conjuncts)</h2>
+<h4>
+  <li>बारम्बार प्रयोग हुने संयुक्त अक्षरहरू (Common Conjuncts)</li>  
+</h4>
 <p>A conjunct consonant comprises two or more consonants with nothing separating them; in particular there is no vowel between them. In this case we use halanta/virama (्), which tries to combine two or more consonants together. Some of the frequently occuring arrangements are shown below.</p>
 <pre class="padding-50">
 त +  ् + म → त्म
@@ -97,16 +137,16 @@ The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their 
 त +  ् + र → त्र
 * ह +  ृ → हृ (हृदय)
 </pre>
-<h2>विशेष संयोजन अक्षरहरू (Special Conjuncts)</h2>
+<h4>
+  <li>विशेष संयोजन अक्षरहरू (Special Conjuncts)</li>
+</h4>
 <p>Normally the symbols for a conjunct consonants are constructed from their component symbols and are quite obvious to see, and their construction reflects their pronunciation. However, there are two which are quite different from their component parts. In Devanagari, such a sound is represented by concatenating two consonants to form what is known as a ligature.</p>
 <pre class="padding-50">
 क + ् + ष → क्ष
 ज + ् + ञ → ज्ञ
 </pre>
-</div>
-
+<h2>Tablet Keyboard Layout</h2>
+<p>The layout for tablet version remains same as the phone layout. </p>
 <h2>Phone Keyboard Layout</h2>
-<p>While most of the layout remains the same as in desktop version, Alt-Ctrl has been moved to separate key on the bottom right of the screen.</p>
-
-<div id='osk-phone' data-states='default shift rightalt rightaltshift'>
+<div id='osk-phone' data-states='default shift rightalt rightalt-shift'>
 </div>
