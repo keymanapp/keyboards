@@ -3,8 +3,6 @@ Keyman Vietnamese Telex (Legacy Mode) keyboard
 
 © 2022 Mike Vo
 
-Version 1.0
-
 Description
 -----------
 
