@@ -1,0 +1,49 @@
+﻿c Enggano Keyboard 
+c 
+c This keyboard program provides support for the dotted
+c and nasalized vowels in Enggano orthography.
+
+store(&Version) "9.0"             c This keyboard is for use with Keyman 9.0
+store(&NAME) 'Enggano'
+store(&BITMAP) 'enggano.ico'
+store(&MnemonicLayout) "1"        c This keyboard uses a mnemonic layout.
+store(&TARGETS) 'any desktop'
+store(&VISUALKEYBOARD) 'enggano.kvks'
+store(&LAYOUTFILE) 'enggano.keyman-touch-layout'
+store(&COPYRIGHT) '© Mary Dalrymple'
+store(&ETHNOLOGUECODE) 'eno'
+
+begin Unicode > use(Main)
+
+group( Main ) using keys
++ [T_0065_0303] > U+0065 U+0303
++ [T_0065_0307] > U+0065 U+0307
++ [T_0065_0307_0303] > U+0065 U+0307 U+0303
++ [T_0075_0303] > U+0075 U+0303
++ [T_0075_0307] > U+0075 U+0307
++ [T_0075_0307_0303] > U+0075 U+0307 U+0303
++ [T_0069_0303] > U+0069 U+0303
++ [T_006F_0303] > U+006F U+0303
++ [T_0061_0303] > U+0061 U+0303
++ [T_0045_0303] > U+0045 U+0303
++ [T_0045_0307] > U+0045 U+0307
++ [T_0045_0307_0303] > U+0045 U+030 U+0303
++ [T_0055_0303] > U+0055 U+0303
++ [T_0055_0307] > U+0055 U+0307
++ [T_0055_0307_0303] > U+0055 U+0307 U+0303
++ [T_0049_0303] > U+0049 U+0303
++ [T_004F_0303] > U+004F U+0303
++ [T_0041_0303] > U+0041 U+0303
+
+store(eu) 'e' 'u' 'E' 'U'
+
+any(eu) + '*' > context U+0307
+any(eu) + '~' > context U+0303
+any(eu) U+0307 + '~' > context U+0303
+any(eu) U+0303 + '*' > context U+0307 U+0303   c swap order of diacritics
+
+store(aio) 'a' 'i' 'o' 'A' 'I' 'O'
+
+any(aio) + '~' > context U+0303
+
+c End of keyboard
