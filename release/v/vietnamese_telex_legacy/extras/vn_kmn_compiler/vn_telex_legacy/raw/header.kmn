@@ -1,16 +1,16 @@
-c Vietnamese Telex keyboard by Mike Vo
+c Vietnamese Telex (Legacy Mode) keyboard by Mike Vo
 
 
 c *******************************************************************
 c HEADERS
 c *******************************************************************
 store(&VERSION) '10.0'
-store(&NAME) 'Vietnamese Telex'
+store(&NAME) 'Vietnamese Telex (Legacy Mode)'
 store(&COPYRIGHT) '© 2022 Mike Vo'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
-store(&VISUALKEYBOARD) 'vietnamese_telex.kvks'
-store(&LAYOUTFILE) 'vietnamese_telex.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'vietnamese_telex_legacy.kvks'
+store(&LAYOUTFILE) 'vietnamese_telex_legacy.keyman-touch-layout'
 
 
 c *******************************************************************
@@ -1897,4 +1897,4 @@ group(main) using keys
     'GiA' + 'J' > 'GiẠ'
     'GIA' + 'J' > 'GIẠ'
 
-    c Python auto generated rules, see https://github.com/miketvo/vn_kmn_compiler/tree/main/vn_telex
+    c Python auto generated rules, see https://github.com/miketvo/vn_kmn_compiler/tree/main/vn_telex_legacy
