@@ -26,7 +26,7 @@ Look in the following table of Rotation (Rota) rules to see the character option
 <thead><tr><th>Rotation</th><th>Phone/Tablet Key</th><th>Computer Key</th></tr></thead><tbody>
  <tr><td>ឹ > ឺ</td><td><kbd>ឹ</kbd></td><td><kbd>W</kbd></td></tr>
  <tr><td>េ > ែ > ៃ </td><td><kbd>េ</kbd></td><td><kbd>E</kbd></td></tr>
- <tr><td>ុ > ូ</td><td><kbd>ុ</kbd></td><td><kbd>U</kbd></td></tr>
+ <tr><td>ុ > ូ > ួ </td><td><kbd>ុ</kbd></td><td><kbd>U</kbd></td></tr>
  <tr><td>ិ > ី </td><td><kbd>ិ</kbd></td><td><kbd>I</kbd></td></tr>
  <tr><td>ោ > ៅ </td><td><kbd>ោ</kbd></td><td><kbd>O</kbd></td></tr>
  <tr><td>ៀ > ឿ </td><td><kbd>ៀ</kbd></td><td><kbd>[</kbd></td></tr>
@@ -60,4 +60,4 @@ Explanation of the final Rota rule: Press <kbd>Spacebar</kbd> once to mark the e
    <div id='osk-tablet' data-states='default shift'></div>
 
 
-<p>(c) 2021 SIL International</p>
+<p>(c) 2021 - 2022 SIL International</p>
