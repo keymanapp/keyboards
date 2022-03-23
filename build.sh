@@ -76,6 +76,7 @@ KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.js
 . "$KEYBOARDROOT/resources/compile.sh"
 . "$KEYBOARDROOT/resources/validate.sh"
 . "$KEYBOARDROOT/resources/merge.sh"
+. "$KEYBOARDROOT/resources/external.sh"
 
 #
 # Build parameters

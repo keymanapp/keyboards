@@ -1,6 +1,11 @@
 Clavier du Mali (Qwertz) Keyboard Change History
 =======================
 
+3.3.2 (18-Feb-2022)
+------------------
+* Updated to use new fonts
+* Added languages: djm, dtk, tmh
+
 3.3.1 (1-Oct-2018)
 ------------------
 * Changed keyboard to be Keyman 10 compliant to support RALT keys in Keyman web
