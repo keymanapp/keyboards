@@ -1,6 +1,11 @@
 Colchis Latin
 ===============================
 
+1.1 (29 Mar 2022)
+------------------
+* Update keyboard to support the reformed orthography
+* Move keyboard to release
+
 1.0.1 (19 Aug 2021)
 ------------------
 * Adjust width of keys for phone layout so keys will not be different widths.
