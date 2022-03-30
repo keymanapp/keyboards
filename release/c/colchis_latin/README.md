@@ -3,8 +3,6 @@ Colchis Latin Keyboard
 
 © SIL International
 
-Version 1.0.1
-
 Description
 -----------
 This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages as used in Georgia.
