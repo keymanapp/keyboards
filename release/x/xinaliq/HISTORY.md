@@ -1,6 +1,9 @@
 Xinaliq Keyboard Change History
 =======================
 
+1.1.4 (7 Apr 2022)
+* Fix help documentation for c key
+
 1.1.3 (2 Feb 2022)
 * Added s with cedilla
 * Remove circumflex ss
