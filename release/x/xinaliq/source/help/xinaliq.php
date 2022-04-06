@@ -28,8 +28,8 @@
 <p>“t” 1x = t ; “t” 2x = ṫ ; “t” 3x = t̂ ; “t” 4x = t̂t̂ ; “t” 5x = tt ; “t” 6x = t</p>
 <p>“p” 1x = p ; “p” 2x = ṗ ; “p” 3x = p̂ ; “p” 4x = p̂p̂ ; “p” 5x = p</p>
 <p>“k” 1x = k ; “k” 2x = k̇ ; “k” 3x = k̂ ; “k” 4x = k̂k̂ ; “k” 5x = k</p>
-<p>“s” 1x = s ; “s” 2x = ss ; “s” 3x = ŝ ; “s” 4x = ş ; “s” 6x = s</p>
-<p>“c” 1x = c ; “c” 2x = ċ ; “c” 3x = ĉ ; “c” 4x = ĉĉ ; “c” 5x = ç ; “c” 6x = c</p>
+<p>“s” 1x = s ; “s” 2x = ss ; “s” 3x = ŝ ; “s” 4x = ş ; “s” 5x = s</p>
+<p>“c” 1x = c ; “c” 2x = ċ ; “c” 3x = ĉ ; “c” 4x = ĉĉ ; “c” 5x = c</p>
 <h3>Xüsusi diakritik olan digər samitlər üçün biz bir az daha sadə şərtlər istifadə etmişik:</h3>
 <h3>Xüsusi dam t̂ui samitirduru yir sətkəm rəḣət işarədişilli istifadə kuijmə:</h3>
 <p>“z” 1x = z ; “z” 2x = ż ; “z”  3x = ẑ ; “z” 4x = z</p>
@@ -58,8 +58,8 @@
 <p>“t” 1x = t ; “t” 2x = ṫ ; “t” 3x = t̂ ; “t” 4x = t̂t̂ ; “t” 5x = tt ; “t” 6x = t</p>
 <p>“p” 1x = p ; “p” 2x = ṗ ; “p” 3x = p̂ ; “p” 4x = p̂p̂ ; “p” 5x = p</p>
 <p>“k” 1x = k ; “k” 2x = k̇ ; “k” 3x = k̂ ; “k” 4x = k̂k̂ ; “k” 5x = k</p>
-<p>“s” 1x = s ; “s” 2x = ss ; “s” 3x = ŝ ; “s” 4x = ş ; “s” 6x = s</p>
-<p>“c” 1x = c ; “c” 2x = ċ ; “c” 3x = ĉ ; “c” 4x = ĉĉ ; “c” 5x = ç ; “c” 6x = c</p>
+<p>“s” 1x = s ; “s” 2x = ss ; “s” 3x = ŝ ; “s” 4x = ş ; “s” 5x = s</p>
+<p>“c” 1x = c ; “c” 2x = ċ ; “c” 3x = ĉ ; “c” 4x = ĉĉ ; “c” 5x = c</p>
 <h3>For other consonants which have special diacritics, we have used a little simpler convention: </h3>
 <p>“z” 1x = z ; “z” 2x = ż ; “z”  3x = ẑ ; “z” 4x = z</p>
 <p>“g” 1x = g ; “g” 2x = ğ ; “g”  3x = ğg ; “g” 4x = ĝ ; “g” 5x = g</p>
