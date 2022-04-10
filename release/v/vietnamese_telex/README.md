@@ -3,8 +3,6 @@ Keyman Vietnamese Telex keyboard
 
 © 2022 Mike Vo
 
-Version 1.01
-
 Description
 -----------
 
