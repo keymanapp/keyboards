@@ -14,4 +14,4 @@ Within each section of the repository, there is a level of subfolders that serve
 
 Only Unicode keyboards are allowed.
 
-You may need to create a subfolder for your keyboard if one doesn't exist. For example, if your keyboard is named `xyz`, you may need to create a folder `x` under `experimental` in which to place the `xyz` folder containing your keyboard project, so that you have the proper folder structure: `experimental/x/xyz`.
+You may need to create a subfolder for your keyboard if one doesn't exist. For example, if your keyboard is named `xyz`, you may need to create a folder `x` under `experimental` in which to place the `xyz` folder containing your keyboard project, so that you have the proper folder structure: `experimental/x/xyz`
