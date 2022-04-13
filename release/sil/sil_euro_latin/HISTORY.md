@@ -1,4 +1,10 @@
 # EuroLatin (SIL) Keyboard Change History
+
+## 1.9.6 (11 Apr 2022)
+* remove xmf (Mingrelian) = issue #1798
+* remove any non -Latn BCP 47 tags
+* put BCP 47 tags in alphabetical order
+* remove -Latn from BCP 47 tags unless canonical form needs it (bgx-Latn, crh-Latn, fub-Latn, fuh-Latn, rmy-Latn, zqe-Latn)
 ## 1.9.5 (24 Aug 2021)
 * Add support for Anglo-Saxon ash (ae ligature) with macron.
 * Add support for upper and lowercase yogh to touch layout on G key.
