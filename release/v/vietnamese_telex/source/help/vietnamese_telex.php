@@ -128,8 +128,8 @@
 </p>
 
 <div style='color: rgb(238, 0, 0); background-color: rgb(255, 213, 213); border: 2px dashed rgb(238, 0, 0); padding: 8pt 16pt; margin: 8pt 0; display: inline-block;'>
-  <p><b>Important Notice:</b> This keyboard uses <a href="https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_mới">Quy tắc đặt dấu thanh kiểu mới</a>.</p>
-  <p>For <a href="https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_cũ">Quy tắc đặt dấu thanh kiểu cũ</a>, use <a href="https://keyman.com/keyboards/vietnamese_telex_legacy">Vietnamese Telex (Legacy Mode)</a>.</p>
+  <p><b>Important Notice:</b> This keyboard uses <a href="https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_cũ">Quy tắc đặt dấu thanh kiểu cũ</a> (òa, òe, úy) by default.</p>
+  <p>You can turn on <a href="https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ#Kiểu_mới">Quy tắc đặt dấu thanh kiểu mới</a> (oà, oè, uý) in <b>Keyman → Configuration → Keyboard Layouts → Vietnamese Telex → Keyboard Options</b></p>
 </div>
 
 <hr>
