@@ -26,7 +26,7 @@ END;
 
 <h1>Keyboard layouts</h1>
 	<h2>Desktop</h2>
-<div id='osk' data-states='default shift rightalt rightalt-shift'>
+<div id='osk' data-states='default shift alt shift-alt'>
 </div>
 
 	<h2>Touch</h2>
