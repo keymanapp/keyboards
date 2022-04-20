@@ -10,6 +10,7 @@ This keyboard is for the Adiga (AKA Adygha, Adyga, Circassian) language based on
 <h1>Keyboard Layout</h1>
   <h2>Desktop Keyboard Layout</h2>
   <div id='osk' data-states='default shift'>
+  </div>
 
     <h2>Physical Keyboard Key Combinations</h2>
     <p>
@@ -39,3 +40,4 @@ This keyboard is for the Adiga (AKA Adygha, Adyga, Circassian) language based on
 
   <h2>Touch Keyboard Layout</h2>
   <div id='osk-phone' data-states='default shift numeric'>
+  </div>
