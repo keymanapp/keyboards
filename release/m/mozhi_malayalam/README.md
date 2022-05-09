@@ -1,5 +1,9 @@
 Mozhi Malayalam Keyboard
 =====================
+Copyright © 2022 Benjamin C. Varghese & Cibu C. J.
+
+Version 2.2
+
 Copyright © 2017-2020 Junaid P. V.
 
 Version 2.1
