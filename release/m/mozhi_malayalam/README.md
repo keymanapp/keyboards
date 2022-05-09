@@ -1,6 +1,6 @@
 Mozhi Malayalam Keyboard
 =====================
-Copyright © 2022 Benjamin C. Varghese & Cibu C. J.
+Copyright © 2021-2022 Benjamin C. Varghese & Cibu C. J.
 
 Version 3.2
 
