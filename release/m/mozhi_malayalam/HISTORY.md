@@ -45,5 +45,5 @@ In 2015 Benjamin Varghese created a [Mozhi module for InKey](http://inkeysoftwar
 ## Keyman Mozhi 2 (Updated)
 In early 2018, Junaid created [a new Keman Keyboard for Mozhi (Malayalam)](#). Benjamin Varghese with the help of Binila Sanki is maintaining this keyboard.
 
-## Keyman Mozhi 2 (Autogerated)
-Cibu has written an engine that can auto generate the Keyman Rules directly from the spec. The 2022 release includes the rules generated using this tool.
+## Keyman Mozhi 3 (Autogerated)
+Cibu has written an engine that can auto generate the Keyman Rules directly from the spec. The 2022 release includes the rules generated using this tool. The underlying spec is still Mozhi Spec 2.0.
