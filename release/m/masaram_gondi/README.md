@@ -9,7 +9,8 @@ This is a Phonetic (ITRANS) keyboard layout for Gondi languages written in Masar
 
 Links
 -----
-https://keyman.com/keyboards/masaram_gondi
+* Home: https://keyman.com/keyboards/masaram_gondi
+* Typing guide: https://gondidarshan.org/keyboard">Typing guide</a>
 
 Supported Platforms
 -------------------

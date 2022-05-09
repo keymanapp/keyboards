@@ -1,3 +1,4 @@
+
 <?php
 $pagename = 'Devanagari Romanized (SIL) Keyboard Help';
 $pagetitle = $pagename;
@@ -7,12 +8,10 @@ key, span.kbd { background: none repeat scroll 0% 0% #F7F7F7; padding: 0.1em 0.6
 END;
 require_once('header.php');
 ?>
-<p>Devanagari Romanized (SIL) keyboard is designed for the languages of Nepal. This keyboard includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. Many Unicode fonts will display the letters on this keyboard, but Annapurna SIL Nepal font is recommended.
-<br><br>This keyboard was created by SIL International.
-</p>
+<p>The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their respective keys on the US English keyboard. The keyboard layout can be viewed by clicking on the Keyman icon and selecting the On-Screen Keyboard menu item, or by opening the Help documentation. This layout matches the “Devanagari Romanized (SAG)” Windows keyboard layout.</p>
 <h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt rightaltshift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
 <h2>Note:</h2>
 <p>You can use Left Ctrl + Left Alt in place of the Right Alt key.</p>
@@ -146,11 +145,8 @@ Most of the alfabetical keys represents the Devnagari letters with similar sound
 क + ् + ष → क्ष
 ज + ् + ञ → ज्ञ
 </pre>
-<h4>
-  <li>अंकहरू (Numbers)</li>
-</h4>
-Just press the english numeric keys to type numbers in the Devnagari script.
+<h2>Tablet Keyboard Layout</h2>
+<p>The layout for tablet version remains same as the phone layout. </p>
 <h2>Phone Keyboard Layout</h2>
-While most of the layout remains the same as in desktop version, Alt-Ctrl have been moved to separate key on the bottom right of the screen.
-<div id='osk-phone' data-states='default shift rightalt rightaltshift'>
+<div id='osk-phone' data-states='default shift rightalt rightalt-shift'>
 </div>
