@@ -4,7 +4,7 @@ c Original work done by Raj Nair, but the source is not available
 c This keyboard was created by Junaid P. V.
 c This keyboard closely follows Mozhi Spec (https://sites.google.com/site/cibu/mozhi/mozhi2)
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '2.1.4'
+store(&KEYBOARDVERSION) '2.1.8'
 store(&BITMAP) 'mozhi_malayalam.ico'
 store(&COPYRIGHT) '© 2017-2020 Junaid P. V.'
 store(&TARGETS) 'windows macosx linux web'
@@ -14,6 +14,13 @@ c store(&LANGUAGE) 'x044C'
 store(&VISUALKEYBOARD) 'mozhi_malayalam.kvks'
 store(&MESSAGE) 'A complete rebuild of Mozhi keyboard updated for Mozhi 2.0'
 begin Unicode > use(main)
+
+group(ru) using keys
+c to handle the special case of 'RR'. In the main group, this rule won't fire as ഋ is part of the vowel store
+'ഋ' + 'R' > 'ൠ'
+'ൃ' + 'R' > 'ൄ'
++ 'R' > 'ഋ'
+nomatch > use(main)
 
 group(main) using keys
 
@@ -47,6 +54,9 @@ store(chill_anu_Bases) "ണനരലളകമ"
 
 c always remove zwnj before a word final chars
 store(WordFinalChars) ' ?.!)]}"”’'
+
+c sequential nta and tta are to be dealt with separately
+store(nt_tt_base) 'ൻറ'
 
 c Store Universal KeyStroke stores
 store(Keystrokes) outs(chillSource) outs(vDirectSmallKeys) outs(vDirectCapsKeys) outs(WordFinalChars) outs(cDirectSmallKeys) outs(cDirectCapsKeys)
@@ -89,7 +99,10 @@ any(consonants) U+0D4D dk(vir) + 't' > index(consonants, 1) U+0D4D U+200C U+0D31
 
 c Preventing Contextual Substitutions
 c Modify the behaviour of '_' as a contextual substitutions blocker
-'_' dk(noconjuncts) + 'n' > 'ൻ' dk(noconjuncts)
+c 'ൻ_' dk(noconjuncts) + 'r' > 'ൻ' dk(vir) 'റ്' c dk(no_n_conjunct)
+any(nt_tt_base) '_' dk(noconjuncts) + 'r' > index(nt_tt_base, 1) dk(vir) 'റ്'
+
+c '_' dk(noconjuncts) + 'n' > 'ൻ' dk(noconjuncts)
 + '_' > '_' dk(noconjuncts)
 '_' dk(noconjuncts) + '_' > '__'
 '_' + '_' > '__'
@@ -101,10 +114,8 @@ c Modify the behaviour of '_' as a contextual substitutions blocker
 'ൻ' dk(noconjuncts) + 'j' > 'ഞ്'
 '_' dk(noconjuncts) + 't' > U+0D31 U+0D4D U+0D31 U+0D4D
 
-
 c To solve issue 22: m റ്റൈപ്പ് ചെയ്യുമ്പോൾ അനുസ്വാരത്തിനു പകരം മ് ആണ് വരുന്നത്
 + 'm' > 'ം'
-c 'ം' + '~' > 'മ്'  c <= this is now handled directly by Explicit Virama rule above
 
 c To solve issue 13: നുക്ത
 '്' + 'F' > '़്'
@@ -113,6 +124,40 @@ any(consonants) + 'm' > index(consonants,1) 'ം'
 any(vowels) + 'm' > index(vowels,1) 'ം'
 any(vowelsigns) + 'm' > index(vowelsigns,1) 'ം'  
 any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
+
+c modify the behaviour of 'r' 
++ 'r' > 'ഋ' dk(ru)
+any(consonants) '്' + 'r' > index(consonants, 1) 'ൃ' dk(ru)
+'ഋ' dk(ru) + 'r' > 'ൠ'
+'ഋ' dk(ru) + '~' > 'ര്'
+'ഋ' dk(ru) + 'a' > 'ര'
+'ഋ' dk(ru) + 'A' > 'രാ'
+'ഋ' dk(ru) + 'i' > 'രി'
+'ഋ' dk(ru) + 'I' > 'രീ'
+'ഋ' dk(ru) + 'u' > 'രു'
+'ഋ' dk(ru) + 'U' > 'രൂ'
+'ഋ' dk(ru) + 'R' > 'രൃ'
+'ഋ' dk(ru) + 'e' > 'രെ'
+'ഋ' dk(ru) + 'E' > 'രേ'
+'ഋ' dk(ru) + 'o' > 'രൊ'
+'ഋ' dk(ru) + 'O' > 'രോ'
+'ൃ' dk(ru) + 'r' > 'ൃർ'
+'ൃ' dk(ru) + '~' > '്ര്'
+'ൃ' dk(ru) + 'a' > '്ര'
+'ൃ' dk(ru) + 'A' > '്രാ'
+'ൃ' dk(ru) + 'i' > '്രി'
+'ൃ' dk(ru) + 'I' > '്രീ'
+'ൃ' dk(ru) + 'u' > '്രു'
+'ൃ' dk(ru) + 'U' > '്രൂ'
+'ൃ' dk(ru) + 'R' > '്രൃ'
+'ൃ' dk(ru) + 'e' > '്രെ'
+'ൃ' dk(ru) + 'E' > '്രേ'
+'ൃ' dk(ru) + 'o' > '്രൊ'
+'ൃ' dk(ru) + 'O' > '്രോ'
+
+any(consonants) + 'r' > index(consonants, 1) 'ർ'
+any(vowels) + 'r' > index(vowels, 1) 'ർ'
+any(vowelsigns) + 'r' > index(vowelsigns, 1) 'ർ'
 
 c produce chill
 + any(chillSource) > index(chills,1)
@@ -124,7 +169,7 @@ any(chillBases) '്' U+200D + '^' > index(chills, 1) c Not part of the spec, bu
 
 c chill breakers
 any(chills_anu) + '_' > index(chills_anu, 1) '_' dk(noconjuncts)
-any(chills_anu) + '~' > index(chill_anu_Bases,1) '്'
+c any(chills_anu) + '~' > index(chill_anu_Bases,1) '്' c there is another similar rule that handles this case
 any(chills_anu) + 'a' > index(chill_anu_Bases,1)
 any(chills_anu) + 'A' > index(chill_anu_Bases,1) 'ാ'
 any(chills_anu) + 'i' > index(chill_anu_Bases,1) 'ി'
@@ -149,7 +194,6 @@ c Archaic Forms
 'അ' + '#' > 'ഽ'    
 'ഈ' + '#' > 'ൟ'
 'ീ' + '#' > 'ൟ'
-'ക്' + '#' > 'ൿ'
 'റ്റ്' + '#' > 'ററ്'
 'ററ്' + '#' > 'ഺ്'
 'ററ' + '#' > 'ഺ'
@@ -160,6 +204,12 @@ c Archaic Forms
 'ം' + '#' > 'ൔ'
 'ൔ' + '#' > 'ഀ'
 'ഀ' + '#' > 'ഁ'
+'ക്' + '#' > 'ൿ'
+'യ്' + '#' > 'ൕ'
+'ഴ്' + '#' > 'ൖ'
+'ൕ' + '#' > '഼'
+'ൖ' + '#' > '഼'
+'ൿ' + '#' > '഼'
 'ൻ' + '@' > context dk(at)
 dk(at) + 'e' > 'െ'
 'ൾ' + '@' > context '്' c dk(at)
@@ -179,12 +229,38 @@ dk(at) + 'e' > 'െ'
 U+0D3C + '#' > U+0D3B
 any(consonants) '്ല്' + '#' > index(consonants, 1) U+0D62
 
+c complex forms involving nta and tta
+store(subform_base) 'യലവ'
+store(subform_key) 'ylv'
+store(vkey) 'eEoO'
+store(vlform) 'െേെേ'
+store(vrform) nul nul 'ാാ'
+
+any(nt_tt_base) 'റ്' + any(vkey) > index(nt_tt_base, 1) index(vlform, 4) 'റ' index(vrform, 4)
+any(nt_tt_base) 'റ' + 'i' > index(nt_tt_base, 1) 'ൈറ'
+any(nt_tt_base) 'റൗ' + '#' > index(nt_tt_base, 1) 'െറൗ'
+
+any(nt_tt_base) 'റ്' + any(subform_key) > index(nt_tt_base, 1) 'റ്' index(subform_base, 4) '്' dk(subform)
+any(nt_tt_base) 'റ്' any(subform_base) '്' dk(subform) + any(vkey) > index(nt_tt_base, 1) index(vlform, 7) 'റ്' index(subform_base, 4) index(vrform, 7)
+any(nt_tt_base) 'റ്' any(subform_base) dk(2)  + 'i' > index(nt_tt_base, 1) 'ൈറ്' index(subform_base, 4)
+any(nt_tt_base) 'റ്' any(subform_base) 'ൗ'  + '#' > index(nt_tt_base, 1) 'െറ്' index(subform_base, 4) 'ൗ'
+
+any(nt_tt_base) 'റ്' + 'r' > index(nt_tt_base, 1) '്രറ്' dk(subform)
+any(nt_tt_base) '്രറ്' dk(subform) + any(subform_key) > index(nt_tt_base, 1) '്രറ്' index(subform_base, 7) '്'
+any(nt_tt_base) '്രറ്' any(subform_base) '്' + any(vkey) > index(nt_tt_base, 1)  '്ര' index(vlform, 8) 'റ്' index(subform_base, 6) index(vrform, 8)
+any(nt_tt_base) '്രറ്' any(subform_base) dk(2) + 'i' > index(nt_tt_base, 1)  '്രൈറ്' index(subform_base, 6)
+any(nt_tt_base) '്രറ്' any(subform_base) 'ൗ'  + '#' > index(nt_tt_base, 1)  '്രെറ്' index(subform_base, 6) 'ൗ'
+any(nt_tt_base) '്രറ്' dk(subform) + any(vkey) > index(nt_tt_base, 1) '്ര' index(vlform, 7) 'റ' index(vrform, 7)
+any(nt_tt_base) '്രറ' dk(2) + 'i' > index(nt_tt_base, 1) '്രൈറ'
+any(nt_tt_base) '്രറൗ' + '#' > index(nt_tt_base, 1) '്രെറൗ'
+
 c Handling Ru/Ra
-any(consonants) + 'R' > index(consonants,1) 'റ'
-any(vowels) + 'R' > index(vowels,1) 'റ'
-any(vowelsigns) + 'R' > index(vowelsigns,1) 'റ'  
-+ 'R' > 'ഋ'
 'ഋ' + 'R' > 'ൠ'
+'ൃ' + 'R' > 'ൄ'
+any(consonants) + 'R' > index(consonants,1) 'റ്'
+any(vowels) + 'R' > index(vowels,1) 'റ്'
+any(vowelsigns) + 'R' > index(vowelsigns,1) 'റ്'  
++ 'R' > use(ru)
 c any(consonants) any(vowels) + 'm' > index(consonants,1)  index(vowels,2) 'ം'
 
 
@@ -224,18 +300,19 @@ c Fix #50: Extra elongation for vowel signs
 'ഋ' + 'O' > 'റോ'
 'ഋ' + '~' > 'റ്'
 'ഌ' + 'l' > 'ൡ'
-'എ' + 'a' > 'ഈ'
+'എ' + 'a' > 'ഏ'
 'എ' + 'e' > 'ഈ'
 'എ' + 'i' > 'ഐ'
 'ഒ' + 'o' > 'ഊ'
+'ഒ' + 'a' > 'ഓ'
 'ഒ' + 'u' > 'ഔ'  
 'ി' + 'e' > 'ീ'
 'ി' + 'i' > 'ൈ'
-'െ' + 'a' > 'ീ'
+'െ' + 'a' > 'േ'
 'െ' + 'e' > 'ീ'
-'ൊ' + 'o' > 'ോ'
+c 'ൊ' + 'o' > 'ോ'
+'ൊ' + 'a' > 'ോ'
 'ൊ' + 'u' > 'ൗ'
-
 
 c Stand-alone vowel signs after chandrakkala (Solve Issue: https://github.com/beniza/keyboards/issues/8)
 '്' + 'A' > 'ാ'
@@ -248,15 +325,21 @@ dk(2) + 'u' > 'ൗ'
 'ി' + 'i' > 'ീ'
 '്' + 'u' > 'ു'
 '്' + 'U' > 'ൂ'
-'ു' + 'u' > 'ൂ'   
+'ു' + 'u' > 'ൂ'
 '്' + 'R' > 'ൃ'
 'ൃ' + 'R' > 'ൄ'   
+'്' dk(subform) + 'a' > dk(2)
+'്' dk(subform) + 'i' > 'ി'
+'്' dk(subform) + 'I' > 'ീ' 
+'്' dk(subform) + 'u' > 'ു'
+'്' dk(subform) + 'U' > 'ൂ'
+'്' dk(subform) + 'R' > 'ൃ'
 '്' + 'e' > 'െ'
 '്' + 'E' > 'േ'
 'െ' + 'e' > 'ീ'
-'്' + 'o' > 'ൊ'   
+'്' + 'o' > 'ൊ'
 '്' + 'O' > 'ോ'   
-'്' + 'o' > 'ൂ'   
+'ൊ' + 'o' > 'ൂ'   
 
 c To solve issue-20 ചന്ദ്രക്കലയ്ക്ക് ശേഷം ~ റ്റൈപ്പ് ചെയ്താൽ രണ്ടാമത്തെ ചന്ദ്രക്കല വരുന്നു
 '്' + '~' > '്'   
@@ -333,6 +416,13 @@ any(KeyContexts) 'ൻ' + 'j' > index(KeyContexts, 1) 'ഞ്ഞ്'
 'ഞ്ഞ്' + 'c' > 'ഞ്ച്'
 'ഞ്ഞ്ൻ' + 'j' > 'ഞ്ഞ്'
 'ഞ്ഞ്' + 't' > 'ഞ്റ്റ്'
+
+c The sequence 'nh' also should produces 'ഞ്ഞ്', word medially and word final positions   To Fix #39
+any(KeyContexts) 'ൻ' + 'h' > index(KeyContexts, 1) 'ഞ്ഞ്'
+'ഞ്ഞ്' + any(cDirectCapsKeys) > 'ഞ്' index(cDirectCapsValues, 5) '്'
+'ഞ്ഞ്ൻ' + 'h' > 'ഞ്ഞ്'
+
+
 c #c1
 c ['([അ-ഊഌഎ-ഐഒ-ഹ])([ഽ-ൂെ-ൌൗ])+R', '', '$2$3റ്'],
 any(vowels) + 'R' > context 'ർ'
@@ -361,6 +451,7 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c
 'ന്ര്' + 'r' > 'ന്റ്'
 'ൻ' + 'k' > 'ങ്ക്'
 'ൻ' + 'j' > 'ഞ്'
+'ൻ' + 'h' > 'ഞ്'
 'ൻ' + 'n' > 'ന്ന്'
 'ൻ' + 'd' > 'ന്ദ്'
 'ൻ' + 't' >  'ൻ്റ്' c To solve issue 35: the encoding of ൻ്റ
@@ -376,6 +467,7 @@ any(consonants) '്' + 'L' > index(consonants,1) '്ള്'  c deadkey(capl) c
 'ൽ' + 'm' > 'ല്മ്'
 'ൽ' + 'p' > 'ല്പ്'
 'ൽ' + 'v' > 'ല്വ്'
+'ൽ' + 'h' > 'ള്'
 
 'ൾ' + 'L' > 'ള്ള്' c deadkey(capl)
 'ൾ' + 'l' > 'ഌ'            
@@ -395,17 +487,18 @@ c The following rules handle the chillu-ka based forms and their back-space beha
 'ക്വ്' dk(3) + [K_BKSP] > 'ൿ'
 
 c digits
-'\' + '0' > '൦'
-'\' + '1' > '൧'
-'\' + '2' > '൨'
-'\' + '3' > '൩'
-'\' + '4' > '൪'
-'\' + '5' > '൫'
-'\' + '6' > '൬'
-'\' + '7' > '൭'
-'\' + '8' > '൮'
-'\' + '9' > '൯'
+'0' + '#' > '൦'
+'1' + '#' > '൧'
+'2' + '#' > '൨'
+'3' + '#' > '൩'
+'4' + '#' > '൪'
+'5' + '#' > '൫'
+'6' + '#' > '൬'
+'7' + '#' > '൭'
+'8' + '#' > '൮'
+'9' + '#' > '൯'
 
+c gemination
 + 'B' > 'ബ്ബ്'
 + 'C' > 'ച്ച്'
 + 'G' > 'ഗ്ഗ്'
@@ -532,9 +625,9 @@ c Convenience Mapping and Emoji
 '<' + '-' > '←'
 '←' + '#' > '↑'
 '↑' + '#' > '→'
-'\' + '-' > '−'
-'\' + '*' > '×'
-'\' + '/' > '÷'
+dk(1) + '-' > '−'
+dk(1) + '*' > '×'
+dk(1) + '/' > '÷'
 ':' + ')' > '😊'
 ':' + '(' > '☹'
 ':' + 'D' > '😄'
