@@ -1,7 +1,11 @@
 Mooré - Burkina Faso Change History
 ====================
 
-120.1 (2021-07-01)
+2.0.2 (2022-05-19)
+------------------
+* Add NCAPS modifier to rules to avoid inconsistent matches
+
+2.0.1 (2021-07-01)
 ----------------
 * Updated to use new version of Charis SIL
 

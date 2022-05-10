@@ -3,7 +3,6 @@ Mooré - Burkina Faso keyboard
 
 © SIL International
 
-Version 2.0.1
 
 Description
 -----------
