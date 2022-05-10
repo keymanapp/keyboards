@@ -1,9 +1,8 @@
 Dagbani keyboard based on US
 ==============
 
-©2021 SIL International
+©2021-2022 SIL International
 
-Version 1.0
 
 Description
 -----------
