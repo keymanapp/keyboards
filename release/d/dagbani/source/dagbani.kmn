@@ -14,11 +14,13 @@ store(&VISUALKEYBOARD) 'dagbani.kvks'
 store(&BITMAP) 'dagbani.ico'
 store(&LAYOUTFILE) 'dagbani.keyman-touch-layout'
 store(&COPYRIGHT) '©2021 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 
 begin Unicode > use(main)
 
-store(basekey) "eongzEONGZ"
+c store(basekey) "eongzEONGZ"
+store(basekey) [NCAPS K_E] [NCAPS K_O] [NCAPS K_N] [NCAPS K_G] [NCAPS K_Z] \
+               [NCAPS SHIFT K_E] [NCAPS SHIFT K_O] [NCAPS SHIFT K_N] [NCAPS SHIFT K_G] [NCAPS SHIFT K_Z]
 store(output_char) "ɛɔŋɣʒƐƆŊƔƷ"
 
 group(main) using keys
