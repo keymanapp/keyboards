@@ -1,6 +1,10 @@
 Change History
 =======================
 
+6.0.5 (2022-May 12)
+-------------------
+* Add NCAPS modifier to some rules to avoid inconsistent matches
+
 6.0.4 (2022-Feb-17)
 -----------------
 * Updated to use font from shared folders
