@@ -6,19 +6,19 @@ store(&VISUALKEYBOARD) 'balochi_latin.kvks'
 store(&BITMAP) 'balochi_latin.ico'
 store(&LAYOUTFILE) 'balochi_latin.keyman-touch-layout'
 store(&COPYRIGHT) '© 2020-2021 SIL International'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&MESSAGE) 'The Balochi Latin keyboard is distributed under The MIT License (MIT).'
 store(&KMW_HELPTEXT) 'This is a modified US keyboard for typing Balochi in Latin script.'
 
 begin Unicode > use(main)
 
 group(main) using keys
-+ [SHIFT ALT K_X] > 'X'
-+ [SHIFT ALT K_F] > 'F'
-+ [SHIFT ALT K_V] > 'V'
-+ [ALT K_V] > 'v'
-+ [ALT K_F] > 'f'
-+ [ALT K_X] > 'x'
++ [NCAPS SHIFT ALT K_X] > 'X'
++ [NCAPS SHIFT ALT K_F] > 'F'
++ [NCAPS SHIFT ALT K_V] > 'V'
++ [NCAPS ALT K_V] > 'v'
++ [NCAPS ALT K_F] > 'f'
++ [NCAPS ALT K_X] > 'x'
 
 + [K_SPACE] > U+0020
 
