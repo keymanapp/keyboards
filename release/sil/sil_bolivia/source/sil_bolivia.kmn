@@ -7,7 +7,7 @@ c Source KeyboardID: 0000040a
 c
 c 
 
-store(&VERSION) '15.0'
+store(&VERSION) '10.0'
 store(&NAME) 'Indígenas Bolivianos'
 store(&Targets) "any"
 store(&VISUALKEYBOARD) 'sil_bolivia.kvks'
@@ -247,6 +247,20 @@ c cedilla
 + [RALT K_COMMA] > U+003c
 + [RALT K_PERIOD] > U+003e
 
++ [T_0067_0303] > U+0067 U+0303
++ [T_0268_0308] > U+0268 U+0308
++ [T_0268_0303] > U+0268 U+0303
++ [T_007A_0308] > U+007A U+0308
++ [T_007A_0303] > U+007A U+0303
++ [T_0063_0308] > U+0063 U+0308
++ [T_0063_0303] > U+0063 U+0303
++ [SHIFT T_0047_0303] > U+0047 U+0303
++ [SHIFT T_0197_0308] > U+0197 U+0308
++ [SHIFT T_0197_0303] > U+0197 U+0303
++ [SHIFT T_005A_0308] > U+005A U+0308
++ [SHIFT T_005A_0303] > U+005A U+0303
++ [SHIFT T_0043_0308] > U+0043 U+0308
++ [SHIFT T_0043_0303] > U+0043 U+0303
 
 match > use(deadkeys)
 
@@ -304,3 +318,5 @@ dk(00a8) U+0063 > U+0063 U+0308 c [SHIFT K_QUOTE]
 dk(00a8) U+0043 > U+0043 U+0308
 dk(00a8) U+007A > U+007A U+0308 c [SHIFT K_QUOTE]
 dk(00a8) U+005A > U+005A U+0308
+
+
