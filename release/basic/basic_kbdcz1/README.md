@@ -1,9 +1,7 @@
 Czech (QWERTY) Basic keyboard
 ==============
 
-(c) 2009-2019 SIL International
-
-Version 1.1
+(c) 2009-2022 SIL International
 
 Description
 -----------

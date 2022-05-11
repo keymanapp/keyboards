@@ -1,6 +1,11 @@
 Clavier du Mali (Azerty) Keyboard Change History
 =======================
 
+
+3.3.2 (12-May-2022)
+-------------------
+* Remove extraneous specchar1K store
+
 3.3.1 (18-Feb-2022)
 ------------------
 * Updated to use new fonts
