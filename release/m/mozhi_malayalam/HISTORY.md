@@ -47,3 +47,4 @@ In early 2018, Junaid created [a new Keman Keyboard for Mozhi (Malayalam)](https
 
 ## Keyman Mozhi 3 (Auto generated)
 Cibu has written an engine that can auto generate the Keyman Rules directly from the spec. The 2022 release includes the rules generated using this tool. The underlying spec is still Mozhi Spec 2.0.
+"Transfer of copyright to Cibu C. J. with Mr. Junaid's express permission."
