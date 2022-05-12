@@ -1,6 +1,10 @@
 'Uwik̓ala Change History
 ============================
 
+9.2.1 (13 May 2022)
+-------------------
+* Add NCAPS modifier to some rules to avoid inconsistent matches
+
 9.2 (24 Mar 2022)
 -------------------
 * Updated touch layout (additional keys)
