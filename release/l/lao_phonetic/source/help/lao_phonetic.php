@@ -1,27 +1,25 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<head>
-<title>Lao Phonetic keyboard</title>
-<style>
-html * {font-family: Arial;background-color:#ffffe0;}
-body p {margin-left: 10px}
-p, li {line-height: 150%}
+<?php
+  $pagename = 'Lao Phonetic Keyboard Help';
+  $pagetitle = 'Lao Phonetic Keyboard Help';
+  $style = <<<EXTRA
+  html * {font-family: Arial;background-color:#ffffe0;}
+  body p {margin-left: 10px}
+  p, li {line-height: 150%}
+  
+  span.lao {font-family: "Saysettha OT"; font-size: 120%; font-weight: bold;}
+  span.wd {font-family: helvetica,Arial,sansserif; font-weight: bold; }
+  
+  table.phonetic {margin-left: 20px; border: 3px double black; border-collapse:collapse; font-size: 100%;font-family: Tahoma;}
+  table.phonetic tr td {text-align: center; border-right: 1pt solid gray; border-bottom: 1pt dotted gray;}
+  table.phonetic tr td.lao {font-family: "Saysettha OT"; font-size: 120%; font-weight: bold; border-right: 1pt dotted gray;}
+  table.phonetic tr th {font-style: italic; font-weight: normal; border-right: 1pt solid gray; border-bottom: 1pt solid gray; }
+  
+  img {margin-left:30px; margin-right:30px}
+  img.inline {margin:0; height: 1em}
+EXTRA;
+  require_once('header.php');
+?>
 
-span.lao {font-family: "Saysettha OT"; font-size: 120%; font-weight: bold;}
-span.wd {font-family: helvetica,Arial,sansserif; font-weight: bold; }
-
-table.phonetic {margin-left: 20px; border: 3px double black; border-collapse:collapse; font-size: 100%;font-family: Tahoma;}
-table.phonetic tr td {text-align: center; border-right: 1pt solid gray; border-bottom: 1pt dotted gray;}
-table.phonetic tr td.lao {font-family: "Saysettha OT"; font-size: 120%; font-weight: bold; border-right: 1pt dotted gray;}
-table.phonetic tr th {font-style: italic; font-weight: normal; border-right: 1pt solid gray; border-bottom: 1pt solid gray; }
-
-img {margin-left:30px; margin-right:30px}
-img.inline {margin:0; height: 1em}
-</style>
-</head>
-<body>
-<h1>Lao Phonetic keyboard</h1>
 <p>
 This package includes a phonetic-input keyboard, for entering Lao characters according to the sounds of the letters on an English keyboard, and
 a selection of Lao OpenType (Unicode) fonts, optimized for use on OS X, but also fully compatible with Windows, iOS and most other platforms.
@@ -312,5 +310,6 @@ type any vowel letter, then press backspace to delete the Lao vowel character, l
   <b> + `</b><span class="wd"> &#8594; </span><b>$</b>
 </li></ul>
 <p>Copyright 2015-2022 <a href="http://laoscript.net/">Dr John M Durdin</a>, <a href="http://laoscript.net/">laoscript.net</a></p>
+
 </body>
 </html>
