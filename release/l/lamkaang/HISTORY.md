@@ -1,4 +1,4 @@
-_________ Keyboard Change History
+Lamkaang Keyboard Change History
 =======================
 
 1.0.1 (13 May 2022)
