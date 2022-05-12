@@ -1,6 +1,10 @@
 Tai Dam Lao (SIL) keyboard change history:
 =======================
 
+2.0.4 (13 May 2022)
+-------------------
+* Remove duplicate MESSAGE store
+
 2.0.3 (10 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux
