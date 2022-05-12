@@ -7,7 +7,7 @@
 
 
 <p>
-    Teclado para las lenguas indígenas de Bolivia. Keyboard for the indigenous languages of Bolivia.
+    Teclado para las lenguas indígenas de Bolivia. El teclado es compatible tanto con la ortografía antigua (ILV) como con la nueva. Keyboard for the indigenous languages of Bolivia. The keyboard supports both the old (SIL) and new orthographies. 
 </p>
 
 <p>Este teclado utiliza "teclas muertas" que se enumeran a continuación:</p>
@@ -28,5 +28,5 @@
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
 
-<div id='osk-tablet' data-states='default shift rightalt'>
+<div id='osk-tablet' data-states='default shift'>
 </div>

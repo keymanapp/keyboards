@@ -5,7 +5,8 @@ Indígenas Bolivianos keyboard
 
 Description
 -----------
-Teclado para las lenguas indígenas de Bolivia. Keyboard for the indigenous languages of Bolivia.
+Teclado para las lenguas indígenas de Bolivia. El teclado es compatible tanto con la ortografía antigua (ILV) como con la nueva. 
+Keyboard for the indigenous languages of Bolivia. The keyboard supports both the old (SIL) and new orthographies.
 
 Links
 -----
