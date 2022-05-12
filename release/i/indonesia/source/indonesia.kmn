@@ -6,14 +6,14 @@ store(&VERSION) '10.0'
 store(&NAME) 'Indonesia'
 store(&VISUALKEYBOARD) 'indonesia.kvks'
 store(&BITMAP) 'indonesia.ico'
-store(&COPYRIGHT) '© 2020-2021 Benny Lin'
-store(&KEYBOARDVERSION) '2.0'
+store(&COPYRIGHT) '© 2020-2022 Benny Lin'
+store(&KEYBOARDVERSION) '2.0.1'
 store(&TARGETS) 'any'
 store(&MESSAGE) 'Indonesian basic keyboard'
 store(&LAYOUTFILE) 'indonesia.keyman-touch-layout'
 store(&KMW_HELPTEXT) 'readme.htm'
 
-store(controls) "ABCDEFGHIJKLMNOOPQRSTUVWXYZ\<>;_,/'"
+store(controls) "ABCDEFGHIJKLMNOOPQRSTUVWXY" [NCAPS K_Z] "\<>;_,/'"
 store(symbols) "`~!@#$%^&*()-_=+[{]}\|;:,<.>/?'" "'"
 store(numbers) "1234567890"
 
@@ -39,20 +39,20 @@ c new sentece markers
 
 c These button rotation works for physical device and touch device.
 c button rotation 1: "z", "x", "q"
-"z" + [K_Z] > "x"
-"x" + [K_Z] > "q"
-"q" + [K_Z] > "z"
-"Z" + [K_Z] > "x"
-"X" + [K_Z] > "q"
-"Q" + [K_Z] > "z"
+"z" + [NCAPS K_Z] > "x"
+"x" + [NCAPS K_Z] > "q"
+"q" + [NCAPS K_Z] > "z"
+"Z" + [NCAPS K_Z] > "x"
+"X" + [NCAPS K_Z] > "q"
+"Q" + [NCAPS K_Z] > "z"
 
 c this is for the physical keyboard rule
-"z" + [SHIFT K_Z] > "X"
-"x" + [SHIFT K_Z] > "Q"
-"q" + [SHIFT K_Z] > "Z"
-"Z" + [SHIFT K_Z] > "X"
-"X" + [SHIFT K_Z] > "Q"
-"Q" + [SHIFT K_Z] > "Z"
+"z" + [NCAPS SHIFT K_Z] > "X"
+"x" + [NCAPS SHIFT K_Z] > "Q"
+"q" + [NCAPS SHIFT K_Z] > "Z"
+"Z" + [NCAPS SHIFT K_Z] > "X"
+"X" + [NCAPS SHIFT K_Z] > "Q"
+"Q" + [NCAPS SHIFT K_Z] > "Z"
 
 "z" + [CAPS K_Z] > "X"
 "x" + [CAPS K_Z] > "Q"
@@ -96,25 +96,18 @@ c button rotation 4: "'", ":", '"'
 ":" + "'" > '"'
 '"' + "'" > "'"
 
-if(&layer = 'shift') "z" + "Z" > "X" set(&layer = "default")
-if(&layer = 'shift') "x" + "Z" > "Q" set(&layer = "default")
-if(&layer = 'shift') "q" + "Z" > "Z" set(&layer = "default")
-if(&layer = 'shift') "Z" + "Z" > "X" set(&layer = "default")
-if(&layer = 'shift') "X" + "Z" > "Q" set(&layer = "default")
-if(&layer = 'shift') "Q" + "Z" > "Z" set(&layer = "default")
-if(&layer = 'shiftwithnumbers') "z" + "Z" > "X" set(&layer = "withnumbers")
-if(&layer = 'shiftwithnumbers') "x" + "Z" > "Q" set(&layer = "withnumbers")
-if(&layer = 'shiftwithnumbers') "q" + "Z" > "Z" set(&layer = "withnumbers")
-if(&layer = 'shiftwithnumbers') "Z" + "Z" > "X" set(&layer = "withnumbers")
-if(&layer = 'shiftwithnumbers') "X" + "Z" > "Q" set(&layer = "withnumbers")
-if(&layer = 'shiftwithnumbers') "Q" + "Z" > "Z" set(&layer = "withnumbers")
-
-"z" + "Z" > "X"
-"x" + "Z" > "Q"
-"q" + "Z" > "Z"
-"Z" + "Z" > "X"
-"X" + "Z" > "Q"
-"Q" + "Z" > "Z"
+if(&layer = 'shift') "z" + [NCAPS SHIFT K_Z] > "X" set(&layer = "default")
+if(&layer = 'shift') "x" + [NCAPS SHIFT K_Z] > "Q" set(&layer = "default")
+if(&layer = 'shift') "q" + [NCAPS SHIFT K_Z] > "Z" set(&layer = "default")
+if(&layer = 'shift') "Z" + [NCAPS SHIFT K_Z] > "X" set(&layer = "default")
+if(&layer = 'shift') "X" + [NCAPS SHIFT K_Z] > "Q" set(&layer = "default")
+if(&layer = 'shift') "Q" + [NCAPS SHIFT K_Z] > "Z" set(&layer = "default")
+if(&layer = 'shiftwithnumbers') "z" + [NCAPS SHIFT K_Z] > "X" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "x" + [NCAPS SHIFT K_Z] > "Q" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "q" + [NCAPS SHIFT K_Z] > "Z" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "Z" + [NCAPS SHIFT K_Z] > "X" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "X" + [NCAPS SHIFT K_Z] > "Q" set(&layer = "withnumbers")
+if(&layer = 'shiftwithnumbers') "Q" + [NCAPS SHIFT K_Z] > "Z" set(&layer = "withnumbers")
 
 if(&layer = 'shift') + any(controls) > index(controls, 2) set(&layer = "default")
 if(&layer = 'shiftwithnumbers') + any(controls) > index(controls, 2) set(&layer = "withnumbers")
