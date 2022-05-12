@@ -1,6 +1,10 @@
 Bengali Phonetic (ITRANS) Version History
 ===========================
 
+1.0.1 (2022-05-13)
+------------------
+* Remove duplicate ©RIGHT store
+
 1.0.0 (2019-06-01)
 ----------------
 * 20190523
