@@ -35,7 +35,7 @@ Website homepage/Situs web: https://github.com/bennylin/keyboards
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift capital shiftwithnumbers numeric symbols'>
+<div id='osk-tablet' data-states='default shift symbols numeric capital withnumbers shiftwithnumbers capitalwithnumbers'>
 </div>
 
 
