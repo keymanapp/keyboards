@@ -2,6 +2,11 @@ Cook Islands Maori
 
 Change History
 ====================
+
+1.2.1 (2022-05-16)
+------------------
+* Remove extraneous rules for default keys
+
 1.2(2021-06-01)
 ---------------
 * updated features of touch layout - streamlined longpress keys, auto-capitalization and punctuation features.
