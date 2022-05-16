@@ -2,8 +2,7 @@ Keyboard Data
 -------------
 
 * Name:           Nailangs
-* Copyright:      (C) 2015-2019 Adebunmi Adeniran
-* Version:        1.3.1
+* Copyright:      (C) 2015-2022 Adebunmi Adeniran
 * Keyman Version: 10.0
 * BCP-47 codes:   bin-Latn efi-Latn fuv-Latn ha-Latn idu-Latn ig-Latn ijs-Latn bms-Latn knc-Latn kby-Latn krt-Latn tiv-Latn urh-Latn yo-Latn
 
