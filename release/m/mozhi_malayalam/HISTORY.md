@@ -43,4 +43,8 @@ In 2012 Feb and Apr, [Jeesmon Jacob](https://github.com/jeesmon) compiled the Va
 In 2015 Benjamin Varghese created a [Mozhi module for InKey](http://inkeysoftware.com/keyboard/mlym-Mozhi/index.html) application. 
 
 ## Keyman Mozhi 2 (Updated)
-In early 2018, Junaid created [a new Keman Keyboard for Mozhi (Malayalam)](#). Benjamin Varghese with the help of Binila Sanki is maintaining this keyboard.
+In early 2018, Junaid created [a new Keman Keyboard for Mozhi (Malayalam)](https://keyman.com/keyboards/mozhi_malayalam). Benjamin Varghese with the help of Binila Sanki maintained this keyboard.
+
+## Keyman Mozhi 3 (Auto generated)
+Cibu has written an engine that can auto generate the Keyman Rules directly from the spec. The 2022 release includes the rules generated using this tool. The underlying spec is still Mozhi Spec 2.0.
+"Transfer of copyright to Cibu C. J. with Mr. Junaid's express permission."

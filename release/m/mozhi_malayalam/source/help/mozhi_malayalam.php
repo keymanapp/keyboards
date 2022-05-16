@@ -107,7 +107,7 @@ END;
     <img src="mozhi_layout.png"> </img>
 	<div id="KeyboardChart">
 		<h2>Keyboard Reference Chart</h2>
-		<p>The following chart lists all the characters available with this keyboard.  Below each character are the keys used to type it.
+		<p>The following chart lists the keystrokes for the commonly used Malayalam characters. Below each character are the keys used to type it.
 		<br/>Because Malayalam includes hundreds of combined consonants, these are not shown on this chart.  You can type some combined consonants by typing the two consonants with no vowel.  Other combined consonants are on the keyboard (see the bottom of this chart).</p>
 		<table>
 			<col width=65 style='text-align:center; background-color:#dedede;' />
@@ -854,5 +854,5 @@ END;
 		</table>
     </div>
 	<h2>Mozhi 2.0 Spec</h2>
-		<p>For more information, please visit the <a href="https://sites.google.com/site/cibu/mozhi/mozhi2">online Mozhi 2.0 Spec.</a></p>
+		<p>For more information and a complete coverage of characters supported along with the keystrokes, please visit the <a href="https://sites.google.com/site/cibu/mozhi/mozhi2">online Mozhi 2.0 Spec.</a></p>
 </body>
