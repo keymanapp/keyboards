@@ -1,7 +1,7 @@
 Old Hungarian keyboard
 ==============
 
-© 2021 SIL International
+© SIL International
 
 Description
 -----------

@@ -3,7 +3,6 @@ Ukwuani keyboard
 
 © 2022 ULDECF
 
-Version 1.0
 
 Description
 -----------
