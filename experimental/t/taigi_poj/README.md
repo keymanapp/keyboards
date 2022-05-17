@@ -3,7 +3,6 @@ PhahTaigi POJ
 
 © Ngô͘ Ka-bêng
 
-Version 1.4
 
 Description
 -----------
