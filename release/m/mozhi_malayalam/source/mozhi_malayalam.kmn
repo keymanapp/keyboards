@@ -1,16 +1,16 @@
-﻿store(&VERSION) '9.0'
+store(&VERSION) '9.0'
 c Malayalam Keyboard using Mozhi Input Romanization
 c Authors in contribution year order:
-c     Raj Nair, Junaid P. V., Cibu C. J.
+c     Raj Nair, Junaid P. V., Benjamin C. Varghese, Cibu C. J.
 c These rules are auto-generated from Mozhi specification:
 c https://sites.google.com/site/cibu/mozhi2
 c Contact: beniza@gmail.com or cibucj@gmail.com
 store(&NAME) 'Malayalam Mozhi'
-store(&KEYBOARDVERSION) '3.2'
+store(&KEYBOARDVERSION) '3.2.22.05.17.10'
 store(&BITMAP) 'mozhi_malayalam.ico'
-store(&COPYRIGHT) '© Cibu C. J.'
+store(&COPYRIGHT) '© 2021-2022 Benjamin C. Varghese; Cibu C. J.'
 store(&TARGETS) 'windows macosx linux web'
-store(&VISUALKEYBOARD) 'mozhi_malayalam.kvks'
+c store(&VISUALKEYBOARD) 'mozhi_malayalam.kvks'
 store(&MESSAGE) 'Malayalam Keyboard using Mozhi Input Romanization'
 store(&ETHNOLOGUECODE) 'mal'
 store(&LANGUAGE) 'x044C'
@@ -123,14 +123,14 @@ c ----------------
 c In combination with: ം[`~]a → മ്അ
 dk(key_3) "മ്അ" + "a" > "ംാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_3) "്അ"
+dk(key_3) "മ" dk(key_3) "്അ" + "a" > "ംാ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 dk(key_3) "മ" dk(key_4) "്അ" + "a" > "ംാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_3) "മ" dk(key_14) "്അ" + "a" > "ംാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_3) "്അ"
-dk(key_3) "മ" dk(key_3) "്അ" + "a" > "ംാ"
 
 c In combination with: [`~]a → ്അ
 dk(key_3) "്അ" + "a" > "ാ"
@@ -145,14 +145,14 @@ c ----------------
 c In combination with: ം[`~]a → മ്അ
 dk(key_3) "മ്അ" + "i" > "ംൈ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_3) "്അ"
+dk(key_3) "മ" dk(key_3) "്അ" + "i" > "ംൈ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 dk(key_3) "മ" dk(key_4) "്അ" + "i" > "ംൈ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_3) "മ" dk(key_14) "്അ" + "i" > "ംൈ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_3) "്അ"
-dk(key_3) "മ" dk(key_3) "്അ" + "i" > "ംൈ"
 
 c In combination with: [`~]a → ്അ
 dk(key_3) "്അ" + "i" > "ൈ"
@@ -167,14 +167,14 @@ c ----------------
 c In combination with: ം[`~]a → മ്അ
 dk(key_3) "മ്അ" + "u" > "ംൗ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_3) "്അ"
+dk(key_3) "മ" dk(key_3) "്അ" + "u" > "ംൗ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 dk(key_3) "മ" dk(key_4) "്അ" + "u" > "ംൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_3) "മ" dk(key_14) "്അ" + "u" > "ംൗ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_3) "്അ"
-dk(key_3) "മ" dk(key_3) "്അ" + "u" > "ംൗ"
 
 c In combination with: [`~]a → ്അ
 dk(key_3) "്അ" + "u" > "ൗ"
@@ -413,29 +413,29 @@ c ----------------
 c In combination with: ംR → മൃ
 dk(key_6) "മൃ" + "A" > "ംറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "മ" dk(key_10) "ൃ" + "A" > "ംറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "മ" dk(key_6) "ൃ" + "A" > "ംറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "മ" dk(key_10) "ൃ" + "A" > "ംറാ"
 
 c In combination with: ൻR → നൃ
 dk(key_6) "നൃ" + "A" > "ൻറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ന" dk(key_10) "ൃ" + "A" > "ൻറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ന" dk(key_6) "ൃ" + "A" > "ൻറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ന" dk(key_10) "ൃ" + "A" > "ൻറാ"
 
 c In combination with: ർR → രൃ
 dk(key_6) "രൃ" + "A" > "ർറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ര" dk(key_10) "ൃ" + "A" > "ർറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ര" dk(key_6) "ൃ" + "A" > "ർറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ര" dk(key_10) "ൃ" + "A" > "ർറാ"
 
 c In combination with: ്R → ൃ
 dk(key_6) "ൃ" + "A" > "്റാ"
@@ -462,29 +462,29 @@ c ----------------
 c In combination with: ംR → മൃ
 dk(key_6) "മൃ" + "E" > "ംറേ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "മ" dk(key_10) "ൃ" + "E" > "ംറേ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "മ" dk(key_6) "ൃ" + "E" > "ംറേ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "മ" dk(key_10) "ൃ" + "E" > "ംറേ"
 
 c In combination with: ൻR → നൃ
 dk(key_6) "നൃ" + "E" > "ൻറേ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ന" dk(key_10) "ൃ" + "E" > "ൻറേ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ന" dk(key_6) "ൃ" + "E" > "ൻറേ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ന" dk(key_10) "ൃ" + "E" > "ൻറേ"
 
 c In combination with: ർR → രൃ
 dk(key_6) "രൃ" + "E" > "ർറേ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ര" dk(key_10) "ൃ" + "E" > "ർറേ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ര" dk(key_6) "ൃ" + "E" > "ർറേ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ര" dk(key_10) "ൃ" + "E" > "ർറേ"
 
 c In combination with: ്R → ൃ
 dk(key_6) "ൃ" + "E" > "്റേ"
@@ -511,29 +511,29 @@ c ----------------
 c In combination with: ംR → മൃ
 dk(key_6) "മൃ" + "O" > "ംറോ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "മ" dk(key_10) "ൃ" + "O" > "ംറോ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "മ" dk(key_6) "ൃ" + "O" > "ംറോ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "മ" dk(key_10) "ൃ" + "O" > "ംറോ"
 
 c In combination with: ൻR → നൃ
 dk(key_6) "നൃ" + "O" > "ൻറോ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ന" dk(key_10) "ൃ" + "O" > "ൻറോ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ന" dk(key_6) "ൃ" + "O" > "ൻറോ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ന" dk(key_10) "ൃ" + "O" > "ൻറോ"
 
 c In combination with: ർR → രൃ
 dk(key_6) "രൃ" + "O" > "ർറോ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ര" dk(key_10) "ൃ" + "O" > "ർറോ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ര" dk(key_6) "ൃ" + "O" > "ർറോ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ര" dk(key_10) "ൃ" + "O" > "ർറോ"
 
 c In combination with: ്R → ൃ
 dk(key_6) "ൃ" + "O" > "്റോ"
@@ -560,29 +560,29 @@ c ----------------
 c In combination with: ംR → മൃ
 dk(key_6) "മൃ" + "a" > "ംറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "മ" dk(key_10) "ൃ" + "a" > "ംറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "മ" dk(key_6) "ൃ" + "a" > "ംറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "മ" dk(key_10) "ൃ" + "a" > "ംറ"
 
 c In combination with: ൻR → നൃ
 dk(key_6) "നൃ" + "a" > "ൻറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ന" dk(key_10) "ൃ" + "a" > "ൻറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ന" dk(key_6) "ൃ" + "a" > "ൻറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ന" dk(key_10) "ൃ" + "a" > "ൻറ"
 
 c In combination with: ർR → രൃ
 dk(key_6) "രൃ" + "a" > "ർറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-dk(key_6) "ര" dk(key_10) "ൃ" + "a" > "ർറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 dk(key_6) "ര" dk(key_6) "ൃ" + "a" > "ർറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+dk(key_6) "ര" dk(key_10) "ൃ" + "a" > "ർറ"
 
 c In combination with: ്R → ൃ
 dk(key_6) "ൃ" + "a" > "്റ"
@@ -629,11 +629,11 @@ c ----------------
 c In combination with: ൻc → ഞ്ച്
 dk(key_8) "ഞ്ച്" + "h" > "ഞ്ച്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-dk(key_8) "ഞ" dk(key_4) "്ച" dk(key_4) "്" + "h" > "ഞ്ച്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_8) "ച്"
 dk(key_8) "ഞ്" dk(key_8) "ച്" + "h" > "ഞ്ച്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+dk(key_8) "ഞ" dk(key_4) "്ച" dk(key_4) "്" + "h" > "ഞ്ച്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_8) "ഞ" dk(key_14) "്ച" dk(key_14) "്" + "h" > "ഞ്ച്"
@@ -654,13 +654,13 @@ c In combination with: ൻc → ഞ്ച്
 c Duplicate rule:
 c dk(key_8) "ഞ്ച്" + "h" > "ൻച്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c dk(key_8) "ഞ" dk(key_4) "്ച" dk(key_4) "്" + "h" > "ൻച്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_8) "ച്"
 c Duplicate rule:
 c dk(key_8) "ഞ്" dk(key_8) "ച്" + "h" > "ൻച്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c dk(key_8) "ഞ" dk(key_4) "്ച" dk(key_4) "്" + "h" > "ൻച്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
@@ -819,47 +819,47 @@ c ----------------
 c In combination with: ൻററ്r → ൻ്രററ്
 "ൻ" dk(key_10) "്രററ്" + "E" > "ൻ്രേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "E" > "ൻ്രേററ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "E" > "ൻ്രേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "E" > "ൻ്രേററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "E" > "ൻ്രേററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "E" > "ൻ്രേററ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "E" > "ൻ്രേററ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" "റ" dk(key_10) "ർറ്" + "E" > "ൻ്രേററ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "E" > "ൻ്രേററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "E" > "ൻ്രേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "E" > "ൻ്രേററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "E" > "ൻ്രേററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) "ർറ" dk(key_14) "്" + "E" > "ൻ്രേററ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "E" > "ൻ്രേററ"
+
 c In combination with: ററ്r → റ്രറ്
 "ൻ" "റ" dk(key_10) "്രറ്" + "E" > "ൻ്രേററ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "E" > "ൻ്രേററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "E" > "ൻ്രേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "E" > "ൻ്രേററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "E" > "ൻ്രേററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "E" > "ൻ്രേററ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "E" > "ൻ്രേററ"
 
 c In combination with: ്r → ൃ
 "ൻ" "ററ" dk(key_10) "ൃ" + "E" > "ൻ്രേററ"
@@ -867,17 +867,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "ററ്" dk(key_10) "ർ" + "E" > "ൻ്രേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "E" > "ൻ്രേററ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "E" > "ൻ്രേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "E" > "ൻ്രേററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "E" > "ൻ്രേററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" dk(key_10) "ർ" + "E" > "ൻ്രേററ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "E" > "ൻ്രേററ"
 
 c Rule: ററ്rE → റ്രേറ
 c ----------------
@@ -886,51 +886,51 @@ c In combination with: ൻററ്r → ൻ്രററ്
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രററ്" + "E" > "ൻറ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "E" > "ൻറ്രേറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "E" > "ൻറ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "E" > "ൻറ്രേറ"
+c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "E" > "ൻറ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "E" > "ൻറ്രേറ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "E" > "ൻറ്രേറ"
+
 c In combination with: റ്r → ർറ്
 "റ" dk(key_10) "ർറ്" + "E" > "റ്രേറ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) "ർറ" dk(key_4) "്" + "E" > "റ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "E" > "റ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "E" > "റ്രേറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) "ർറ" dk(key_4) "്" + "E" > "റ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) "ർറ" dk(key_14) "്" + "E" > "റ്രേറ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "E" > "റ്രേറ"
+
 c In combination with: ററ്r → റ്രറ്
 "റ" dk(key_10) "്രറ്" + "E" > "റ്രേറ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "E" > "റ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "E" > "റ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "E" > "റ്രേറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "E" > "റ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "E" > "റ്രേറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "E" > "റ്രേറ"
 
 c In combination with: ്r → ൃ
 "റ" "റ" dk(key_10) "ൃ" + "E" > "റ്രേറ"
@@ -938,17 +938,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "റ" "റ്" dk(key_10) "ർ" + "E" > "റ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "E" > "റ്രേറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "E" > "റ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "E" > "റ്രേറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "E" > "റ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "E" > "റ്രേറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "E" > "റ്രേറ"
 
 c Rule: ൻറ്rE → ൻ്രേറ
 c ----------------
@@ -956,32 +956,32 @@ c ----------------
 c In combination with: ൻറ്r → ൻ്രറ്
 "ൻ" dk(key_10) "്രറ്" + "E" > "ൻ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "E" > "ൻ്രേറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്ര" dk(key_14) "റ്" + "E" > "ൻ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "E" > "ൻ്രേറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "E" > "ൻ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "E" > "ൻ്രേറ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "E" > "ൻ്രേറ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" dk(key_10) "ർറ്" + "E" > "ൻ്രേറ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "E" > "ൻ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "ർ" dk(key_14) "റ്" + "E" > "ൻ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "E" > "ൻ്രേറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "E" > "ൻ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) "ർറ" dk(key_14) "്" + "E" > "ൻ്രേറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "E" > "ൻ്രേറ"
 
 c In combination with: ്r → ൃ
 "ൻ" "റ" dk(key_10) "ൃ" + "E" > "ൻ്രേറ"
@@ -989,17 +989,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "റ്" dk(key_10) "ർ" + "E" > "ൻ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "E" > "ൻ്രേറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_14) "റ്" dk(key_10) "ർ" + "E" > "ൻ്രേറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "E" > "ൻ്രേറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "E" > "ൻ്രേറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "E" > "ൻ്രേറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "E" > "ൻ്രേറ"
 
 c Rule: യ്rE → യ്‌രേ
 c ----------------
@@ -1045,47 +1045,47 @@ c ----------------
 c In combination with: ൻററ്r → ൻ്രററ്
 "ൻ" dk(key_10) "്രററ്" + "O" > "ൻ്രേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "O" > "ൻ്രേററാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "O" > "ൻ്രേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "O" > "ൻ്രേററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "O" > "ൻ്രേററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "O" > "ൻ്രേററാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "O" > "ൻ്രേററാ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" "റ" dk(key_10) "ർറ്" + "O" > "ൻ്രേററാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "O" > "ൻ്രേററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "O" > "ൻ്രേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "O" > "ൻ്രേററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "O" > "ൻ്രേററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) "ർറ" dk(key_14) "്" + "O" > "ൻ്രേററാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "O" > "ൻ്രേററാ"
+
 c In combination with: ററ്r → റ്രറ്
 "ൻ" "റ" dk(key_10) "്രറ്" + "O" > "ൻ്രേററാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "O" > "ൻ്രേററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "O" > "ൻ്രേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "O" > "ൻ്രേററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "O" > "ൻ്രേററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "O" > "ൻ്രേററാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "O" > "ൻ്രേററാ"
 
 c In combination with: ്r → ൃ
 "ൻ" "ററ" dk(key_10) "ൃ" + "O" > "ൻ്രേററാ"
@@ -1093,17 +1093,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "ററ്" dk(key_10) "ർ" + "O" > "ൻ്രേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "O" > "ൻ്രേററാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "O" > "ൻ്രേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "O" > "ൻ്രേററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "O" > "ൻ്രേററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" dk(key_10) "ർ" + "O" > "ൻ്രേററാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "O" > "ൻ്രേററാ"
 
 c Rule: ററ്rO → റ്രേറാ
 c ----------------
@@ -1112,51 +1112,51 @@ c In combination with: ൻററ്r → ൻ്രററ്
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രററ്" + "O" > "ൻറ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "O" > "ൻറ്രേറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "O" > "ൻറ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "O" > "ൻറ്രേറാ"
+c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "O" > "ൻറ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "O" > "ൻറ്രേറാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "O" > "ൻറ്രേറാ"
+
 c In combination with: റ്r → ർറ്
 "റ" dk(key_10) "ർറ്" + "O" > "റ്രേറാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) "ർറ" dk(key_4) "്" + "O" > "റ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "O" > "റ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "O" > "റ്രേറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) "ർറ" dk(key_4) "്" + "O" > "റ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) "ർറ" dk(key_14) "്" + "O" > "റ്രേറാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "O" > "റ്രേറാ"
+
 c In combination with: ററ്r → റ്രറ്
 "റ" dk(key_10) "്രറ്" + "O" > "റ്രേറാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "O" > "റ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "O" > "റ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "O" > "റ്രേറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "O" > "റ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "O" > "റ്രേറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "O" > "റ്രേറാ"
 
 c In combination with: ്r → ൃ
 "റ" "റ" dk(key_10) "ൃ" + "O" > "റ്രേറാ"
@@ -1164,17 +1164,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "റ" "റ്" dk(key_10) "ർ" + "O" > "റ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "O" > "റ്രേറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "O" > "റ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "O" > "റ്രേറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "O" > "റ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "O" > "റ്രേറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "O" > "റ്രേറാ"
 
 c Rule: ൻറ്rO → ൻ്രേറാ
 c ----------------
@@ -1182,32 +1182,32 @@ c ----------------
 c In combination with: ൻറ്r → ൻ്രറ്
 "ൻ" dk(key_10) "്രറ്" + "O" > "ൻ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "O" > "ൻ്രേറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്ര" dk(key_14) "റ്" + "O" > "ൻ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "O" > "ൻ്രേറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "O" > "ൻ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "O" > "ൻ്രേറാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "O" > "ൻ്രേറാ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" dk(key_10) "ർറ്" + "O" > "ൻ്രേറാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "O" > "ൻ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "ർ" dk(key_14) "റ്" + "O" > "ൻ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "O" > "ൻ്രേറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "O" > "ൻ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) "ർറ" dk(key_14) "്" + "O" > "ൻ്രേറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "O" > "ൻ്രേറാ"
 
 c In combination with: ്r → ൃ
 "ൻ" "റ" dk(key_10) "ൃ" + "O" > "ൻ്രേറാ"
@@ -1215,17 +1215,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "റ്" dk(key_10) "ർ" + "O" > "ൻ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "O" > "ൻ്രേറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_14) "റ്" dk(key_10) "ർ" + "O" > "ൻ്രേറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "O" > "ൻ്രേറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "O" > "ൻ്രേറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "O" > "ൻ്രേറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "O" > "ൻ്രേറാ"
 
 c Rule: യ്rO → യ്‌രോ
 c ----------------
@@ -1290,47 +1290,47 @@ c ----------------
 c In combination with: ൻററ്r → ൻ്രററ്
 "ൻ" dk(key_10) "്രററ്" + "e" > "ൻ്രെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "e" > "ൻ്രെററ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "e" > "ൻ്രെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "e" > "ൻ്രെററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "e" > "ൻ്രെററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "e" > "ൻ്രെററ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "e" > "ൻ്രെററ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" "റ" dk(key_10) "ർറ്" + "e" > "ൻ്രെററ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "e" > "ൻ്രെററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "e" > "ൻ്രെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "e" > "ൻ്രെററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "e" > "ൻ്രെററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) "ർറ" dk(key_14) "്" + "e" > "ൻ്രെററ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "e" > "ൻ്രെററ"
+
 c In combination with: ററ്r → റ്രറ്
 "ൻ" "റ" dk(key_10) "്രറ്" + "e" > "ൻ്രെററ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "e" > "ൻ്രെററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "e" > "ൻ്രെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "e" > "ൻ്രെററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "e" > "ൻ്രെററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "e" > "ൻ്രെററ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "e" > "ൻ്രെററ"
 
 c In combination with: ്r → ൃ
 "ൻ" "ററ" dk(key_10) "ൃ" + "e" > "ൻ്രെററ"
@@ -1338,17 +1338,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "ററ്" dk(key_10) "ർ" + "e" > "ൻ്രെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "e" > "ൻ്രെററ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "e" > "ൻ്രെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "e" > "ൻ്രെററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "e" > "ൻ്രെററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" dk(key_10) "ർ" + "e" > "ൻ്രെററ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "e" > "ൻ്രെററ"
 
 c Rule: ററ്re → റ്രെറ
 c ----------------
@@ -1357,51 +1357,51 @@ c In combination with: ൻററ്r → ൻ്രററ്
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രററ്" + "e" > "ൻറ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "e" > "ൻറ്രെറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "e" > "ൻറ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "e" > "ൻറ്രെറ"
+c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "e" > "ൻറ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "e" > "ൻറ്രെറ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "e" > "ൻറ്രെറ"
+
 c In combination with: റ്r → ർറ്
 "റ" dk(key_10) "ർറ്" + "e" > "റ്രെറ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) "ർറ" dk(key_4) "്" + "e" > "റ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "e" > "റ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "e" > "റ്രെറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) "ർറ" dk(key_4) "്" + "e" > "റ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) "ർറ" dk(key_14) "്" + "e" > "റ്രെറ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "e" > "റ്രെറ"
+
 c In combination with: ററ്r → റ്രറ്
 "റ" dk(key_10) "്രറ്" + "e" > "റ്രെറ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "e" > "റ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "e" > "റ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "e" > "റ്രെറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "e" > "റ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "e" > "റ്രെറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "e" > "റ്രെറ"
 
 c In combination with: ്r → ൃ
 "റ" "റ" dk(key_10) "ൃ" + "e" > "റ്രെറ"
@@ -1409,17 +1409,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "റ" "റ്" dk(key_10) "ർ" + "e" > "റ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "e" > "റ്രെറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "e" > "റ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "e" > "റ്രെറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "e" > "റ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "e" > "റ്രെറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "e" > "റ്രെറ"
 
 c Rule: ൻറ്re → ൻ്രെറ
 c ----------------
@@ -1427,32 +1427,32 @@ c ----------------
 c In combination with: ൻറ്r → ൻ്രറ്
 "ൻ" dk(key_10) "്രറ്" + "e" > "ൻ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "e" > "ൻ്രെറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്ര" dk(key_14) "റ്" + "e" > "ൻ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "e" > "ൻ്രെറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "e" > "ൻ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "e" > "ൻ്രെറ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "e" > "ൻ്രെറ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" dk(key_10) "ർറ്" + "e" > "ൻ്രെറ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "e" > "ൻ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "ർ" dk(key_14) "റ്" + "e" > "ൻ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "e" > "ൻ്രെറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "e" > "ൻ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) "ർറ" dk(key_14) "്" + "e" > "ൻ്രെറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "e" > "ൻ്രെറ"
 
 c In combination with: ്r → ൃ
 "ൻ" "റ" dk(key_10) "ൃ" + "e" > "ൻ്രെറ"
@@ -1460,17 +1460,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "റ്" dk(key_10) "ർ" + "e" > "ൻ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "e" > "ൻ്രെറ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_14) "റ്" dk(key_10) "ർ" + "e" > "ൻ്രെറ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "e" > "ൻ്രെറ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "e" > "ൻ്രെറ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "e" > "ൻ്രെറ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "e" > "ൻ്രെറ"
 
 c ================
 c Key: ri
@@ -1501,47 +1501,47 @@ c ----------------
 c In combination with: ൻററ്r → ൻ്രററ്
 "ൻ" dk(key_10) "്രററ്" + "o" > "ൻ്രെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "o" > "ൻ്രെററാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "o" > "ൻ്രെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "o" > "ൻ്രെററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "o" > "ൻ്രെററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "o" > "ൻ്രെററാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "o" > "ൻ്രെററാ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" "റ" dk(key_10) "ർറ്" + "o" > "ൻ്രെററാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "o" > "ൻ്രെററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "o" > "ൻ്രെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "o" > "ൻ്രെററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "o" > "ൻ്രെററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) "ർറ" dk(key_14) "്" + "o" > "ൻ്രെററാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "o" > "ൻ്രെററാ"
+
 c In combination with: ററ്r → റ്രറ്
 "ൻ" "റ" dk(key_10) "്രറ്" + "o" > "ൻ്രെററാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "o" > "ൻ്രെററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "o" > "ൻ്രെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "o" > "ൻ്രെററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "o" > "ൻ്രെററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "o" > "ൻ്രെററാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "o" > "ൻ്രെററാ"
 
 c In combination with: ്r → ൃ
 "ൻ" "ററ" dk(key_10) "ൃ" + "o" > "ൻ്രെററാ"
@@ -1549,17 +1549,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "ററ്" dk(key_10) "ർ" + "o" > "ൻ്രെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "o" > "ൻ്രെററാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "o" > "ൻ്രെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "o" > "ൻ്രെററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "o" > "ൻ്രെററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" dk(key_10) "ർ" + "o" > "ൻ്രെററാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "o" > "ൻ്രെററാ"
 
 c Rule: ററ്ro → റ്രെറാ
 c ----------------
@@ -1568,51 +1568,51 @@ c In combination with: ൻററ്r → ൻ്രററ്
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രററ്" + "o" > "ൻറ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "o" > "ൻറ്രെറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "o" > "ൻറ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "o" > "ൻറ്രെറാ"
+c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "o" > "ൻറ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "o" > "ൻറ്രെറാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "o" > "ൻറ്രെറാ"
+
 c In combination with: റ്r → ർറ്
 "റ" dk(key_10) "ർറ്" + "o" > "റ്രെറാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) "ർറ" dk(key_4) "്" + "o" > "റ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "o" > "റ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "o" > "റ്രെറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) "ർറ" dk(key_4) "്" + "o" > "റ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) "ർറ" dk(key_14) "്" + "o" > "റ്രെറാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "o" > "റ്രെറാ"
+
 c In combination with: ററ്r → റ്രറ്
 "റ" dk(key_10) "്രറ്" + "o" > "റ്രെറാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "o" > "റ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "o" > "റ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "o" > "റ്രെറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "o" > "റ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "o" > "റ്രെറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "o" > "റ്രെറാ"
 
 c In combination with: ്r → ൃ
 "റ" "റ" dk(key_10) "ൃ" + "o" > "റ്രെറാ"
@@ -1620,17 +1620,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "റ" "റ്" dk(key_10) "ർ" + "o" > "റ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "o" > "റ്രെറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "o" > "റ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "o" > "റ്രെറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "o" > "റ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "o" > "റ്രെറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "o" > "റ്രെറാ"
 
 c Rule: ൻറ്ro → ൻ്രെറാ
 c ----------------
@@ -1638,32 +1638,32 @@ c ----------------
 c In combination with: ൻറ്r → ൻ്രറ്
 "ൻ" dk(key_10) "്രറ്" + "o" > "ൻ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "o" > "ൻ്രെറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്ര" dk(key_14) "റ്" + "o" > "ൻ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "o" > "ൻ്രെറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "o" > "ൻ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "o" > "ൻ്രെറാ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "o" > "ൻ്രെറാ"
+
 c In combination with: റ്r → ർറ്
 "ൻ" dk(key_10) "ർറ്" + "o" > "ൻ്രെറാ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "o" > "ൻ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "ർ" dk(key_14) "റ്" + "o" > "ൻ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "o" > "ൻ്രെറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "o" > "ൻ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) "ർറ" dk(key_14) "്" + "o" > "ൻ്രെറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "o" > "ൻ്രെറാ"
 
 c In combination with: ്r → ൃ
 "ൻ" "റ" dk(key_10) "ൃ" + "o" > "ൻ്രെറാ"
@@ -1671,17 +1671,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "റ്" dk(key_10) "ർ" + "o" > "ൻ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "o" > "ൻ്രെറാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_14) "റ്" dk(key_10) "ർ" + "o" > "ൻ്രെറാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "o" > "ൻ്രെറാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "o" > "ൻ്രെറാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "o" > "ൻ്രെറാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "o" > "ൻ്രെറാ"
 
 c ================
 c Key: ru
@@ -1712,47 +1712,47 @@ c ----------------
 c In combination with: ൻററ്r → ൻ്രററ്
 "ൻ" dk(key_10) "്രററ്" + "y" > "ൻ്രററ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "y" > "ൻ്രററ്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "y" > "ൻ്രററ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "y" > "ൻ്രററ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "y" > "ൻ്രററ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "y" > "ൻ്രററ്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "y" > "ൻ്രററ്യ്"
+
 c In combination with: റ്r → ർറ്
 "ൻ" "റ" dk(key_10) "ർറ്" + "y" > "ൻ്രററ്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "y" > "ൻ്രററ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "y" > "ൻ്രററ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "ൻ്രററ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) "ർറ" dk(key_4) "്" + "y" > "ൻ്രററ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) "ർറ" dk(key_14) "്" + "y" > "ൻ്രററ്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "ൻ്രററ്യ്"
+
 c In combination with: ററ്r → റ്രറ്
 "ൻ" "റ" dk(key_10) "്രറ്" + "y" > "ൻ്രററ്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ൻ്രററ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "y" > "ൻ്രററ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ൻ്രററ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ൻ്രററ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "y" > "ൻ്രററ്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ൻ്രററ്യ്"
 
 c In combination with: ്r → ൃ
 "ൻ" "ററ" dk(key_10) "ൃ" + "y" > "ൻ്രററ്യ്"
@@ -1760,17 +1760,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "ററ്" dk(key_10) "ർ" + "y" > "ൻ്രററ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "y" > "ൻ്രററ്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "y" > "ൻ്രററ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "y" > "ൻ്രററ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" dk(key_10) "ർ" + "y" > "ൻ്രററ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" dk(key_10) "ർ" + "y" > "ൻ്രററ്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" dk(key_10) "ർ" + "y" > "ൻ്രററ്യ്"
 
 c Rule: ററ്ry → റ്രറ്യ്
 c ----------------
@@ -1779,51 +1779,51 @@ c In combination with: ൻററ്r → ൻ്രററ്
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രററ്" + "y" > "ൻറ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "y" > "ൻറ്രറ്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "y" > "ൻറ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "y" > "ൻറ്രറ്യ്"
+c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "y" > "ൻറ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "y" > "ൻറ്രറ്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "y" > "ൻറ്രറ്യ്"
+
 c In combination with: റ്r → ർറ്
 "റ" dk(key_10) "ർറ്" + "y" > "റ്രറ്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) "ർറ" dk(key_4) "്" + "y" > "റ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "ർ" dk(key_14) "റ്" + "y" > "റ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "റ്രറ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) "ർറ" dk(key_4) "്" + "y" > "റ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) "ർറ" dk(key_14) "്" + "y" > "റ്രറ്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "റ്രറ്യ്"
+
 c In combination with: ററ്r → റ്രറ്
 "റ" dk(key_10) "്രറ്" + "y" > "റ്രറ്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "റ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "y" > "റ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "റ്രറ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "റ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "y" > "റ്രറ്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "റ്രറ്യ്"
 
 c In combination with: ്r → ൃ
 "റ" "റ" dk(key_10) "ൃ" + "y" > "റ്രറ്യ്"
@@ -1831,17 +1831,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "റ" "റ്" dk(key_10) "ർ" + "y" > "റ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "y" > "റ്രറ്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_14) "റ്" dk(key_10) "ർ" + "y" > "റ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "y" > "റ്രറ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "y" > "റ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "y" > "റ്രറ്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "റ്" dk(key_10) "ർ" + "y" > "റ്രറ്യ്"
 
 c Rule: ൻറ്ry → ൻ്രറ്യ്
 c ----------------
@@ -1849,32 +1849,32 @@ c ----------------
 c In combination with: ൻറ്r → ൻ്രറ്
 "ൻ" dk(key_10) "്രറ്" + "y" > "ൻ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ൻ്രറ്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "്ര" dk(key_14) "റ്" + "y" > "ൻ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ൻ്രറ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ൻ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "y" > "ൻ്രറ്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ൻ്രറ്യ്"
+
 c In combination with: റ്r → ർറ്
 "ൻ" dk(key_10) "ർറ്" + "y" > "ൻ്രറ്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "y" > "ൻ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_10) "ർ" dk(key_14) "റ്" + "y" > "ൻ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "ൻ്രറ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) "ർറ" dk(key_4) "്" + "y" > "ൻ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_10) "ർറ" dk(key_14) "്" + "y" > "ൻ്രറ്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "ൻ്രറ്യ്"
 
 c In combination with: ്r → ൃ
 "ൻ" "റ" dk(key_10) "ൃ" + "y" > "ൻ്രറ്യ്"
@@ -1882,17 +1882,17 @@ c In combination with: ്r → ൃ
 c In combination with: r → ർ
 "ൻ" "റ്" dk(key_10) "ർ" + "y" > "ൻ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "y" > "ൻ്രറ്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_14) "റ്" dk(key_10) "ർ" + "y" > "ൻ്രറ്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "y" > "ൻ്രറ്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_4) "്" dk(key_10) "ർ" + "y" > "ൻ്രറ്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_14) "്" dk(key_10) "ർ" + "y" > "ൻ്രറ്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "റ്" dk(key_10) "ർ" + "y" > "ൻ്രറ്യ്"
 
 c Rule: ്ry → ്ര്യ്
 c ----------------
@@ -1901,56 +1901,56 @@ c In combination with: ൻററ്r → ൻ്രററ്
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രററ്" + "y" > "ൻററ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "y" > "ൻററ്ര്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രറ" dk(key_14) "റ്" + "y" > "ൻററ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "y" > "ൻററ്ര്യ്"
+c "ൻ" dk(key_10) dk(key_4) "്രററ" dk(key_4) "്" + "y" > "ൻററ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_10) dk(key_14) "്രററ" dk(key_14) "്" + "y" > "ൻററ്ര്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_10) "്രറ" dk(key_10) "റ്" + "y" > "ൻററ്ര്യ്"
+
 c In combination with: ൻറ്r → ൻ്രറ്
 c Duplicate rule:
 c "ൻ" dk(key_10) "്രറ്" + "y" > "ൻറ്ര്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ൻറ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_10) "്ര" dk(key_14) "റ്" + "y" > "ൻറ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ൻറ്ര്യ്"
+c "ൻ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ൻറ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "y" > "ൻറ്ര്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ൻറ്ര്യ്"
+
 c In combination with: ൻ്റ്r → ൻട്ര്
 "ൻ" dk(key_10) "ട്ര്" + "y" > "ൻ്റ്ര്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_10) "ട" dk(key_4) "്ര" dk(key_4) "്" + "y" > "ൻ്റ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്ര്"
 "ൻ" dk(key_10) "ട" dk(key_14) "്ര്" + "y" > "ൻ്റ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
-"ൻ" dk(key_10) "ട" dk(key_14) "്ര" dk(key_14) "്" + "y" > "ൻ്റ്ര്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_10) "ട" dk(key_4) "്ര" dk(key_4) "്" + "y" > "ൻ്റ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ര്"
 "ൻ" dk(key_10) "ട്" dk(key_14) "ര്" + "y" > "ൻ്റ്ര്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
+"ൻ" dk(key_10) "ട" dk(key_14) "്ര" dk(key_14) "്" + "y" > "ൻ്റ്ര്യ്"
 
 c In combination with: ്ര്r → ്റ്
 "്" dk(key_10) "റ്" + "y" > "്ര്ര്യ്"
@@ -1964,52 +1964,52 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c In combination with: റ്r → ർറ്
 dk(key_10) "ർറ്" + "y" > "റ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-dk(key_10) "ർറ" dk(key_4) "്" + "y" > "റ്ര്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 dk(key_10) "ർ" dk(key_14) "റ്" + "y" > "റ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "റ്ര്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+dk(key_10) "ർറ" dk(key_4) "്" + "y" > "റ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_10) "ർറ" dk(key_14) "്" + "y" > "റ്ര്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+dk(key_10) "ർ" dk(key_10) "റ്" + "y" > "റ്ര്യ്"
 
 c In combination with: ററ്r → റ്രറ്
 c Duplicate rule:
 c "റ" dk(key_10) "്രറ്" + "y" > "ററ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ററ്ര്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "റ" dk(key_10) "്ര" dk(key_14) "റ്" + "y" > "ററ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ററ്ര്യ്"
+c "റ" dk(key_10) dk(key_4) "്രറ" dk(key_4) "്" + "y" > "ററ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "റ" dk(key_10) dk(key_14) "്രറ" dk(key_14) "്" + "y" > "ററ്ര്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "റ" dk(key_10) "്ര" dk(key_10) "റ്" + "y" > "ററ്ര്യ്"
+
 c In combination with: ്റ്റ്r → ്ട്ര്
 "്" dk(key_10) "ട്ര്" + "y" > "്റ്റ്ര്യ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"്" dk(key_10) "ട" dk(key_4) "്ര" dk(key_4) "്" + "y" > "്റ്റ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്ര്"
 "്" dk(key_10) "ട" dk(key_14) "്ര്" + "y" > "്റ്റ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
-"്" dk(key_10) "ട" dk(key_14) "്ര" dk(key_14) "്" + "y" > "്റ്റ്ര്യ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"്" dk(key_10) "ട" dk(key_4) "്ര" dk(key_4) "്" + "y" > "്റ്റ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ര്"
 "്" dk(key_10) "ട്" dk(key_14) "ര്" + "y" > "്റ്റ്ര്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
+"്" dk(key_10) "ട" dk(key_14) "്ര" dk(key_14) "്" + "y" > "്റ്റ്ര്യ്"
 
 c In combination with: ്r → ൃ
 dk(key_10) "ൃ" + "y" > "്ര്യ്"
@@ -2017,20 +2017,20 @@ dk(key_10) "ൃ" + "y" > "്ര്യ്"
 c In combination with: റ്റ്r → റ്റ്ര്
 "റ്റ്" dk(key_10) "ര്" + "y" > "റ്റ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" dk(key_10) "ര" dk(key_4) "്" + "y" > "റ്റ്ര്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" dk(key_10) "ര്" + "y" > "റ്റ്ര്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" dk(key_10) "ര" dk(key_4) "്" + "y" > "റ്റ്ര്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" dk(key_10) "ര്" + "y" > "റ്റ്ര്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" dk(key_10) "ര്" + "y" > "റ്റ്ര്യ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" dk(key_10) "ര" dk(key_14) "്" + "y" > "റ്റ്ര്യ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" dk(key_10) "ര്" + "y" > "റ്റ്ര്യ്"
 
 c In combination with: r → ർ
 "്" dk(key_10) "ർ" + "y" > "്ര്യ്"
@@ -2045,38 +2045,38 @@ c ----------------
 c In combination with: ങ്ങ്t → ങ്റ്റ്
 "ങ്" dk(key_11) "റ്റ്" + "h" > "ങ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ങ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ങ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ങ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ങ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ങ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ങ്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ങ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ങ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ങ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ങ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ങ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ങ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ങ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ങ്ത്"
 
 c In combination with: t → റ്റ്
 "ങ്" "ങ്" dk(key_11) "റ്റ്" + "h" > "ങ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ങ" dk(key_4) "്ങ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ങ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ങ്" "ങ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ങ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ങ" dk(key_4) "്ങ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ങ്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ങ്" "ങ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ങ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ങ്" "ങ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ങ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ങ" dk(key_14) "്ങ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ങ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ങ്" "ങ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ങ്ത്"
 
 c Rule: ണ്ട്th → ണ്ഠ്
 c ----------------
@@ -2084,35 +2084,35 @@ c ----------------
 c In combination with: ണ്ട്t → ണ്ട്
 "ണ്" "ട്" dk(key_11) + "h" > "ണ്ഠ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+"ണ്" dk(key_11) "ട്" dk(key_11) + "h" > "ണ്ഠ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ണ" dk(key_4) "്ട" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ണ" dk(key_14) "്ട" dk(key_14) "്" dk(key_11) + "h" > "ണ്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-"ണ്" dk(key_11) "ട്" dk(key_11) + "h" > "ണ്ഠ്"
-
 c In combination with: t → റ്റ്
 "ണ്" "ട്" dk(key_11) "റ്റ്" + "h" > "ണ്ഠ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ണ" dk(key_4) "്ട" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ണ്" "ട്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ണ്ഠ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+"ണ്" dk(key_11) "ട്" dk(key_11) "റ്റ്" + "h" > "ണ്ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ണ" dk(key_4) "്ട" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഠ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ണ്" "ട്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ണ്ഠ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ണ്" "ട്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ണ" dk(key_14) "്ട" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ണ്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-"ണ്" dk(key_11) "ട്" dk(key_11) "റ്റ്" + "h" > "ണ്ഠ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ണ്" "ട്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഠ്"
 
 c Rule: ണ്ഡ്th → ണ്ഢ്
 c ----------------
@@ -2120,11 +2120,11 @@ c ----------------
 c In combination with: ഡ്t → ഡ്
 "ണ്" "ഡ്" dk(key_11) + "h" > "ണ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 "ണ്" dk(key_11) "ഡ്" dk(key_11) + "h" > "ണ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ണ" dk(key_14) "്ഡ" dk(key_14) "്" dk(key_11) + "h" > "ണ്ഢ്"
@@ -2133,13 +2133,13 @@ c In combination with: ണ്ഡ്t → ണ്ഡ്
 c Duplicate rule:
 c "ണ്" "ഡ്" dk(key_11) + "h" > "ണ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 c Duplicate rule:
 c "ണ്" dk(key_11) "ഡ്" dk(key_11) + "h" > "ണ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c "ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
@@ -2148,23 +2148,23 @@ c "ണ" dk(key_14) "്ഡ" dk(key_14) "്" dk(key_11) + "h" > "ണ്ഢ്"
 c In combination with: t → റ്റ്
 "ണ്" "ഡ്" dk(key_11) "റ്റ്" + "h" > "ണ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ണ്" "ഡ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ണ്ഢ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
-"ണ്" "ഡ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ണ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 "ണ്" dk(key_11) "ഡ്" dk(key_11) "റ്റ്" + "h" > "ണ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ണ്" "ഡ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഢ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
+"ണ്" "ഡ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ണ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ണ" dk(key_14) "്ഡ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ണ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ണ്" "ഡ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഢ്"
 
 c Rule: ദ്ദ്th → ഡ്ഢ്
 c ----------------
@@ -2181,11 +2181,11 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c In combination with: ദ്ദ്t → ഡ്ഡ്
 dk(key_11) "ഡ്ഡ്" + "h" > "ഡ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-dk(key_11) "ഡ" dk(key_4) "്ഡ" dk(key_4) "്" + "h" > "ഡ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 dk(key_11) dk(key_11) "ഡ്" dk(key_11) "ഡ്" + "h" > "ഡ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+dk(key_11) "ഡ" dk(key_4) "്ഡ" dk(key_4) "്" + "h" > "ഡ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_11) "ഡ" dk(key_14) "്ഡ" dk(key_14) "്" + "h" > "ഡ്ഢ്"
@@ -2193,20 +2193,20 @@ dk(key_11) "ഡ" dk(key_14) "്ഡ" dk(key_14) "്" + "h" > "ഡ്ഢ്"
 c In combination with: t → റ്റ്
 "ദ്ദ്" dk(key_11) "റ്റ്" + "h" > "ഡ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ദ" dk(key_4) "്ദ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഡ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ദ്ദ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ഡ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ദ" dk(key_4) "്ദ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഡ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ദ്ദ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ഡ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ദ്ദ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഡ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ദ" dk(key_14) "്ദ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ഡ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ദ്ദ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഡ്ഢ്"
 
 c Rule: റ്റ്th → ഠ്
 c ----------------
@@ -2223,20 +2223,20 @@ dk(key_11) "ട" dk(key_14) "്" + "h" > "ഠ്"
 c In combination with: t → റ്റ്
 "റ്റ്" dk(key_11) "റ്റ്" + "h" > "ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഠ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഠ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഠ്"
 
 c Rule: ൻ്റ്th → ണ്ഠ്
 c ----------------
@@ -2244,32 +2244,32 @@ c ----------------
 c In combination with: ൻ്റ്t → ണ്ട്
 dk(key_11) "ണ്ട്" + "h" > "ണ്ഠ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ണ്ഠ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 dk(key_11) "ണ" dk(key_4) "്ട" dk(key_4) "്" + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_11) "ണ" dk(key_14) "്ട" dk(key_14) "്" + "h" > "ണ്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ണ്ഠ്"
-
 c In combination with: t → റ്റ്
 "ൻ്റ്" dk(key_11) "റ്റ്" + "h" > "ണ്ഠ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്റ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്" dk(key_14) "റ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ണ്ഠ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്റ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഠ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ൻ" dk(key_10) "്റ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ണ്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്" dk(key_10) "റ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഠ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്റ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ണ്ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്" dk(key_10) "റ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഠ്"
 
 c Rule: [ഀ-ൿ]ർth → [ഀ-ൿ]ർത്
 c ----------------
@@ -2277,35 +2277,35 @@ c ----------------
 c In combination with: [ഀ-ൿ]ർt → [ഀ-ൿ]ർട്
 any(range_4) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ർത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
+any(range_4) dk(key_10) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ർത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 any(range_4) "ർ" dk(key_11) "ട" dk(key_4) "്" + "h" > index(range_4, 1) "ർത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 any(range_4) "ർ" dk(key_11) "ട" dk(key_14) "്" + "h" > index(range_4, 1) "ർത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
-any(range_4) dk(key_10) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ർത്"
-
 c In combination with: t → റ്റ്
 any(range_4) "ർ" dk(key_11) "റ്റ്" + "h" > index(range_4, 1) "ർത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-any(range_4) "ർ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > index(range_4, 1) "ർത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 any(range_4) "ർ" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > index(range_4, 1) "ർത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
+any(range_4) dk(key_10) "ർ" dk(key_11) "റ്റ്" + "h" > index(range_4, 1) "ർത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+any(range_4) "ർ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > index(range_4, 1) "ർത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 any(range_4) "ർ" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > index(range_4, 1) "ർത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-any(range_4) "ർ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > index(range_4, 1) "ർത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 any(range_4) "ർ" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > index(range_4, 1) "ർത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
-any(range_4) dk(key_10) "ർ" dk(key_11) "റ്റ്" + "h" > index(range_4, 1) "ർത്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+any(range_4) "ർ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > index(range_4, 1) "ർത്"
 
 c Rule: ട്th → ഠ്
 c ----------------
@@ -2313,17 +2313,20 @@ c ----------------
 c In combination with: [ടണഷ]്ട്t → [ടണഷ]്ട്
 any(range_30) "്" "ട്" dk(key_11) + "h" > index(range_30, 1) "്ഠ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+any(range_30) "്" dk(key_11) "ട്" dk(key_11) + "h" > index(range_30, 1) "്ഠ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 any(range_30) dk(key_4) "്ട" dk(key_4) "്" dk(key_11) + "h" > index(range_30, 1) "്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 any(range_30) dk(key_14) "്ട" dk(key_14) "്" dk(key_11) + "h" > index(range_30, 1) "്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-any(range_30) "്" dk(key_11) "ട്" dk(key_11) + "h" > index(range_30, 1) "്ഠ്"
-
 c In combination with: ട്ട്t → ട്ട്
 "ട്" "ട്" dk(key_11) + "h" > "ട്ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+"ട്" dk(key_11) "ട്" dk(key_11) + "h" > "ട്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ട" dk(key_4) "്ട" dk(key_4) "്" dk(key_11) + "h" > "ട്ഠ്"
@@ -2331,12 +2334,13 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ട" dk(key_14) "്ട" dk(key_14) "്" dk(key_11) + "h" > "ട്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-"ട്" dk(key_11) "ട്" dk(key_11) + "h" > "ട്ഠ്"
-
 c In combination with: ണ്ട്t → ണ്ട്
 c Duplicate rule:
 c "ണ്" "ട്" dk(key_11) + "h" > "ണ്ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c "ണ്" dk(key_11) "ട്" dk(key_11) + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
@@ -2346,27 +2350,23 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ണ" dk(key_14) "്ട" dk(key_14) "്" dk(key_11) + "h" > "ണ്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c "ണ്" dk(key_11) "ട്" dk(key_11) + "h" > "ണ്ഠ്"
-
 c In combination with: t → റ്റ്
 "ട്" dk(key_11) "റ്റ്" + "h" > "ഠ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ട" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ട്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ഠ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ട" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഠ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ട്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ട്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഠ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ട" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ട്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഠ്"
 
 c Rule: ഡ്th → ഢ്
 c ----------------
@@ -2384,13 +2384,13 @@ c In combination with: ണ്ഡ്t → ണ്ഡ്
 c Duplicate rule:
 c "ണ്" "ഡ്" dk(key_11) + "h" > "ണ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 c Duplicate rule:
 c "ണ്" dk(key_11) "ഡ്" dk(key_11) + "h" > "ണ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c "ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
@@ -2399,20 +2399,20 @@ c "ണ" dk(key_14) "്ഡ" dk(key_14) "്" dk(key_11) + "h" > "ണ്ഢ്"
 c In combination with: t → റ്റ്
 "ഡ്" dk(key_11) "റ്റ്" + "h" > "ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ഡ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ഡ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ഡ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ഡ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ഡ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ഡ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ഡ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഢ്"
 
 c Rule: ദ്th → ഢ്
 c ----------------
@@ -2430,13 +2430,13 @@ c In combination with: ദ്ദ്t → ഡ്ഡ്
 c Duplicate rule:
 c dk(key_11) "ഡ്ഡ്" + "h" > "ദ്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c dk(key_11) "ഡ" dk(key_4) "്ഡ" dk(key_4) "്" + "h" > "ദ്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 c Duplicate rule:
 c dk(key_11) dk(key_11) "ഡ്" dk(key_11) "ഡ്" + "h" > "ദ്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c dk(key_11) "ഡ" dk(key_4) "്ഡ" dk(key_4) "്" + "h" > "ദ്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
@@ -2445,11 +2445,11 @@ c dk(key_11) "ഡ" dk(key_14) "്ഡ" dk(key_14) "്" + "h" > "ദ്ഢ്"
 c In combination with: ന്ദ്t → ൻഡ്
 dk(key_11) "ൻഡ്" + "h" > "ന്ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-dk(key_11) "ൻഡ" dk(key_4) "്" + "h" > "ന്ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 dk(key_11) "ൻ" dk(key_11) "ഡ്" + "h" > "ന്ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+dk(key_11) "ൻഡ" dk(key_4) "്" + "h" > "ന്ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_11) "ൻഡ" dk(key_14) "്" + "h" > "ന്ഢ്"
@@ -2457,20 +2457,20 @@ dk(key_11) "ൻഡ" dk(key_14) "്" + "h" > "ന്ഢ്"
 c In combination with: t → റ്റ്
 "ദ്" dk(key_11) "റ്റ്" + "h" > "ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ദ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ദ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ദ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഢ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ദ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ഢ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ദ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഢ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ദ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ഢ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ദ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഢ്"
 
 c Rule: റ്th → ഋത്
 c ----------------
@@ -2479,6 +2479,10 @@ c In combination with: ൻ്റ്t → ണ്ട്
 c Duplicate rule:
 c dk(key_11) "ണ്ട്" + "h" > "ൻ്ഋത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ൻ്ഋത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
 c dk(key_11) "ണ" dk(key_4) "്ട" dk(key_4) "്" + "h" > "ൻ്ഋത്"
@@ -2486,10 +2490,6 @@ c dk(key_11) "ണ" dk(key_4) "്ട" dk(key_4) "്" + "h" > "ൻ്ഋത്"
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c dk(key_11) "ണ" dk(key_14) "്ട" dk(key_14) "്" + "h" > "ൻ്ഋത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ൻ്ഋത്"
 
 c In combination with: റ്റ്t → ട്
 c Duplicate rule:
@@ -2506,20 +2506,20 @@ c dk(key_11) "ട" dk(key_14) "്" + "h" > "റ്ഋത്"
 c In combination with: t → റ്റ്
 "റ്" dk(key_11) "റ്റ്" + "h" > "ഋത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഋത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ഋത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഋത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ഋത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഋത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ഋത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഋത്"
 
 c Rule: ൺth → ണ്ഠ്
 c ----------------
@@ -2527,6 +2527,10 @@ c ----------------
 c In combination with: ൺt → ണ്ട്
 c Duplicate rule:
 c dk(key_11) "ണ്ട്" + "h" > "ണ്ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
@@ -2536,27 +2540,23 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c dk(key_11) "ണ" dk(key_14) "്ട" dk(key_14) "്" + "h" > "ണ്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ണ്ഠ്"
-
 c In combination with: t → റ്റ്
 "ൺ" dk(key_11) "റ്റ്" + "h" > "ണ്ഠ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൺ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഠ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൺ" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ണ്ഠ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൺ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ണ്ഠ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ൺ" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ണ്ഠ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൺ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഠ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൺ" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ണ്ഠ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൺ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ണ്ഠ്"
 
 c Rule: ൻth → ന്ത്
 c ----------------
@@ -2564,35 +2564,35 @@ c ----------------
 c In combination with: ൻt → ൻ്റ്
 "ൻ" dk(key_11) "്റ്" + "h" > "ന്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_11) dk(key_4) "്റ" dk(key_4) "്" + "h" > "ന്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_11) "്" dk(key_14) "റ്" + "h" > "ന്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_11) "്" dk(key_10) "റ്" + "h" > "ന്ത്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_11) dk(key_4) "്റ" dk(key_4) "്" + "h" > "ന്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_11) dk(key_14) "്റ" dk(key_14) "്" + "h" > "ന്ത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_11) "്" dk(key_10) "റ്" + "h" > "ന്ത്"
+
 c In combination with: t → റ്റ്
 "ൻ" dk(key_11) "റ്റ്" + "h" > "ന്ത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ന്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ന്ത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ന്ത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ൻ" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ന്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ന്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ന്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ന്ത്"
 
 c Rule: ർth → ഋത്
 c ----------------
@@ -2600,6 +2600,10 @@ c ----------------
 c In combination with: [ഀ-ൿ]ർt → [ഀ-ൿ]ർട്
 c Duplicate rule:
 c any(range_4) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ഋത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
+c Duplicate rule:
+c any(range_4) dk(key_10) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ഋത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
@@ -2609,27 +2613,23 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c any(range_4) "ർ" dk(key_11) "ട" dk(key_14) "്" + "h" > index(range_4, 1) "ഋത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
-c Duplicate rule:
-c any(range_4) dk(key_10) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ഋത്"
-
 c In combination with: t → റ്റ്
 "ർ" dk(key_11) "റ്റ്" + "h" > "ഋത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ർ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഋത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ർ" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ഋത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ർ" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ഋത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ർ" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ഋത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ർ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഋത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ർ" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ഋത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ർ" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ഋത്"
 
 c Rule: th → ത്
 c ----------------
@@ -2638,29 +2638,33 @@ c In combination with: ങ്ങ്t → ങ്റ്റ്
 c Duplicate rule:
 c "ങ്" dk(key_11) "റ്റ്" + "h" > "ങ്ങ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ങ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ങ്ങ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ങ്" dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ങ്ങ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c "ങ" dk(key_4) "്" dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ങ്ങ്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 c Duplicate rule:
 c "ങ്" dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ങ്ങ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-c Duplicate rule:
-c "ങ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ങ്ങ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ങ" dk(key_14) "്" dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ങ്ങ്ത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ങ്" dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ങ്ങ്ത്"
+
 c In combination with: ൺt → ണ്ട്
 c Duplicate rule:
 c dk(key_11) "ണ്ട്" + "h" > "ൺത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ൺത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
@@ -2669,10 +2673,6 @@ c dk(key_11) "ണ" dk(key_4) "്ട" dk(key_4) "്" + "h" > "ൺത്"
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c dk(key_11) "ണ" dk(key_14) "്ട" dk(key_14) "്" + "h" > "ൺത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ൺത്"
 
 c In combination with: ദ്t → ഡ്
 c Duplicate rule:
@@ -2690,13 +2690,13 @@ c In combination with: ദ്ദ്t → ഡ്ഡ്
 c Duplicate rule:
 c dk(key_11) "ഡ്ഡ്" + "h" > "ദ്ദ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c dk(key_11) "ഡ" dk(key_4) "്ഡ" dk(key_4) "്" + "h" > "ദ്ദ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 c Duplicate rule:
 c dk(key_11) dk(key_11) "ഡ്" dk(key_11) "ഡ്" + "h" > "ദ്ദ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c dk(key_11) "ഡ" dk(key_4) "്ഡ" dk(key_4) "്" + "h" > "ദ്ദ്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
@@ -2718,33 +2718,33 @@ c In combination with: ൻt → ൻ്റ്
 c Duplicate rule:
 c "ൻ" dk(key_11) "്റ്" + "h" > "ൻത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ൻ" dk(key_11) dk(key_4) "്റ" dk(key_4) "്" + "h" > "ൻത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 c Duplicate rule:
 c "ൻ" dk(key_11) "്" dk(key_14) "റ്" + "h" > "ൻത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
-c "ൻ" dk(key_11) "്" dk(key_10) "റ്" + "h" > "ൻത്"
+c "ൻ" dk(key_11) dk(key_4) "്റ" dk(key_4) "്" + "h" > "ൻത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ൻ" dk(key_11) dk(key_14) "്റ" dk(key_14) "്" + "h" > "ൻത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+c Duplicate rule:
+c "ൻ" dk(key_11) "്" dk(key_10) "റ്" + "h" > "ൻത്"
+
 c In combination with: ന്ദ്t → ൻഡ്
 c Duplicate rule:
 c dk(key_11) "ൻഡ്" + "h" > "ന്ദ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c dk(key_11) "ൻഡ" dk(key_4) "്" + "h" > "ന്ദ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 c Duplicate rule:
 c dk(key_11) "ൻ" dk(key_11) "ഡ്" + "h" > "ന്ദ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c dk(key_11) "ൻഡ" dk(key_4) "്" + "h" > "ന്ദ്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
@@ -2754,6 +2754,10 @@ c In combination with: ൻ്റ്t → ണ്ട്
 c Duplicate rule:
 c dk(key_11) "ണ്ട്" + "h" > "ൻ്റ്ത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ൻ്റ്ത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
 c dk(key_11) "ണ" dk(key_4) "്ട" dk(key_4) "്" + "h" > "ൻ്റ്ത്"
@@ -2761,10 +2765,6 @@ c dk(key_11) "ണ" dk(key_4) "്ട" dk(key_4) "്" + "h" > "ൻ്റ്ത�
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c dk(key_11) "ണ" dk(key_14) "്ട" dk(key_14) "്" + "h" > "ൻ്റ്ത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c dk(key_11) "ണ്" dk(key_11) "ട്" + "h" > "ൻ്റ്ത്"
 
 c In combination with: റ്റ്t → ട്
 c Duplicate rule:
@@ -2782,6 +2782,10 @@ c In combination with: [ഀ-ൿ]ർt → [ഀ-ൿ]ർട്
 c Duplicate rule:
 c any(range_4) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ർത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
+c Duplicate rule:
+c any(range_4) dk(key_10) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ർത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
 c any(range_4) "ർ" dk(key_11) "ട" dk(key_4) "്" + "h" > index(range_4, 1) "ർത്"
@@ -2789,10 +2793,6 @@ c any(range_4) "ർ" dk(key_11) "ട" dk(key_4) "്" + "h" > index(range_4, 1) 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c any(range_4) "ർ" dk(key_11) "ട" dk(key_14) "്" + "h" > index(range_4, 1) "ർത്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
-c Duplicate rule:
-c any(range_4) dk(key_10) "ർ" dk(key_11) "ട്" + "h" > index(range_4, 1) "ർത്"
 
 c In combination with: [ടണഷ]്t → [ടണഷ]്ട്
 any(range_30) "്" dk(key_11) "ട്" + "h" > index(range_30, 1) "്ത്"
@@ -2807,6 +2807,10 @@ c In combination with: [ടണഷ]്ട്t → [ടണഷ]്ട്
 c Duplicate rule:
 c any(range_30) "്ട്" dk(key_11) + "h" > index(range_30, 1) "്ട്ത്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c any(range_30) "്" dk(key_11) "ട്" dk(key_11) + "h" > index(range_30, 1) "്ട്ത്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
 c any(range_30) dk(key_4) "്ട" dk(key_4) "്" dk(key_11) + "h" > index(range_30, 1) "്ട്ത്"
@@ -2815,13 +2819,13 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c any(range_30) dk(key_14) "്ട" dk(key_14) "്" dk(key_11) + "h" > index(range_30, 1) "്ട്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c any(range_30) "്" dk(key_11) "ട്" dk(key_11) + "h" > index(range_30, 1) "്ട്ത്"
-
 c In combination with: ട്ട്t → ട്ട്
 c Duplicate rule:
 c "ട്ട്" dk(key_11) + "h" > "ട്ട്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c "ട്" dk(key_11) "ട്" dk(key_11) + "h" > "ട്ട്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
@@ -2831,13 +2835,13 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ട" dk(key_14) "്ട" dk(key_14) "്" dk(key_11) + "h" > "ട്ട്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c "ട്" dk(key_11) "ട്" dk(key_11) + "h" > "ട്ട്ത്"
-
 c In combination with: ണ്ട്t → ണ്ട്
 c Duplicate rule:
 c "ണ്ട്" dk(key_11) + "h" > "ണ്ട്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+c Duplicate rule:
+c "ണ്" dk(key_11) "ട്" dk(key_11) + "h" > "ണ്ട്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Duplicate rule:
@@ -2847,21 +2851,17 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
 c "ണ" dk(key_14) "്ട" dk(key_14) "്" dk(key_11) + "h" > "ണ്ട്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-c Duplicate rule:
-c "ണ്" dk(key_11) "ട്" dk(key_11) + "h" > "ണ്ട്ത്"
-
 c In combination with: ണ്ഡ്t → ണ്ഡ്
 c Duplicate rule:
 c "ണ്ഡ്" dk(key_11) + "h" > "ണ്ഡ്ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-c Duplicate rule:
-c "ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഡ്ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 c Duplicate rule:
 c "ണ്" dk(key_11) "ഡ്" dk(key_11) + "h" > "ണ്ഡ്ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+c Duplicate rule:
+c "ണ" dk(key_4) "്ഡ" dk(key_4) "്" dk(key_11) + "h" > "ണ്ഡ്ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c Duplicate rule:
@@ -2879,20 +2879,20 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 c In combination with: t → റ്റ്
 dk(key_11) "റ്റ്" + "h" > "ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 dk(key_11) dk(key_14) "റ്" dk(key_14) "റ്" + "h" > "ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+dk(key_11) "റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 dk(key_11) "റ" dk(key_10) "്റ്" + "h" > "ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 dk(key_11) "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+dk(key_11) dk(key_10) "റ്" dk(key_10) "റ്" + "h" > "ത്"
 
 c ================
 c Key: |O
@@ -3270,11 +3270,11 @@ dk(key_14) "്ര്" + "a" > dk(key_3) "ൃ്അ"
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 dk(key_14) dk(key_4) "്ര" dk(key_4) "്" + "a" > dk(key_3) "ൃ്അ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
-dk(key_14) dk(key_14) "്ര" dk(key_14) "്" + "a" > dk(key_3) "ൃ്അ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ര്"
 dk(key_14) "്" dk(key_14) "ര്" + "a" > dk(key_3) "ൃ്അ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
+dk(key_14) dk(key_14) "്ര" dk(key_14) "്" + "a" > dk(key_3) "ൃ്അ"
 
 c In combination with: ്[`~] → ്
 "്" dk(key_14) + "a" > "്" dk(key_3) "്അ"
@@ -3347,71 +3347,71 @@ c Rule: ൻ്രററ്യൗ# → ൻ്രെററ്യൗ
 c ----------------
 "ൻ്ര" "ററ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രററ" dk(key_4) "്യൗ" + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" "റ" dk(key_14) "റ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" "റ" dk(key_10) "റ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ൻ്ര" "ററ്യൗ" dk(key_4) + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രററ" dk(key_4) "്യൗ" + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രററ" dk(key_14) "്യൗ" + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ൻ്ര" "ററ്യൗ" dk(key_4) + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" "റ" dk(key_10) "റ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െററ്യൗ"
 
 c Rule: റ്രറ്യൗ# → റ്രെറ്യൗ
 c ----------------
 "റ്ര" "റ്യൗ" + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്രറ" dk(key_4) "്യൗ" + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്ര" dk(key_14) "റ്യൗ" + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്ര" dk(key_10) "റ്യൗ" + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"റ്ര" "റ്യൗ" dk(key_4) + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്രറ" dk(key_4) "്യൗ" + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്രറ" dk(key_14) "്യൗ" + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"റ്ര" "റ്യൗ" dk(key_4) + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്ര" dk(key_10) "റ്യൗ" + "#" > "റ്ര" dk(key_4) "െറ്യൗ"
 
 c Rule: ൻ്രറ്യൗ# → ൻ്രെറ്യൗ
 c ----------------
 "ൻ്ര" "റ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രറ" dk(key_4) "്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" dk(key_14) "റ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" dk(key_10) "റ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
-"ൻ" dk(key_14) "്രറ" dk(key_14) "്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
 "ൻ്ര" "റ്യൗ" dk(key_4) + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രറ" dk(key_4) "്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
+"ൻ" dk(key_14) "്രറ" dk(key_14) "്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" dk(key_10) "റ്യൗ" + "#" > "ൻ്ര" dk(key_4) "െറ്യൗ"
+
 c Rule: ൻ്രററൗ# → ൻ്രെററൗ
 c ----------------
 "ൻ്ര" "ററൗ" + "#" > "ൻ്ര" dk(key_4) "െററൗ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ൻ്ര" "ററൗ" dk(key_4) + "#" > "ൻ്ര" dk(key_4) "െററൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ൻ" dk(key_4) "്രററൗ" + "#" > "ൻ്ര" dk(key_4) "െററൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രററൗ" + "#" > "ൻ്ര" dk(key_4) "െററൗ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ൻ്ര" "ററൗ" dk(key_4) + "#" > "ൻ്ര" dk(key_4) "െററൗ"
 
 c Rule: 1/160# → ൘
 c ----------------
@@ -3431,27 +3431,27 @@ c Rule: റ്രറൗ# → റ്രെറൗ
 c ----------------
 "റ്ര" "റൗ" + "#" > "റ്ര" dk(key_4) "െറൗ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"റ്ര" "റൗ" dk(key_4) + "#" > "റ്ര" dk(key_4) "െറൗ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "റ" dk(key_4) "്രറൗ" + "#" > "റ്ര" dk(key_4) "െറൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്രറൗ" + "#" > "റ്ര" dk(key_4) "െറൗ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"റ്ര" "റൗ" dk(key_4) + "#" > "റ്ര" dk(key_4) "െറൗ"
-
 c Rule: ൻ്രറൗ# → ൻ്രെറൗ
 c ----------------
 "ൻ്ര" "റൗ" + "#" > "ൻ്ര" dk(key_4) "െറൗ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ൻ്ര" "റൗ" dk(key_4) + "#" > "ൻ്ര" dk(key_4) "െറൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ൻ" dk(key_4) "്രറൗ" + "#" > "ൻ്ര" dk(key_4) "െറൗ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രറൗ" + "#" > "ൻ്ര" dk(key_4) "െറൗ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ൻ്ര" "റൗ" dk(key_4) + "#" > "ൻ്ര" dk(key_4) "െറൗ"
 
 c Rule: 1/10# → ൜
 c ----------------
@@ -3530,36 +3530,36 @@ c Rule: യ്യ്# → യ‍്യ്
 c ----------------
 "യ" "്യ്" + "#" > "യ" dk(key_4) "‍്യ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"യ" "്യ്" dk(key_4) + "#" > "യ" dk(key_4) "‍്യ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "യ" dk(key_4) "്യ" dk(key_4) "്" + "#" > "യ" dk(key_4) "‍്യ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "യ" dk(key_14) "്യ" dk(key_14) "്" + "#" > "യ" dk(key_4) "‍്യ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"യ" "്യ്" dk(key_4) + "#" > "യ" dk(key_4) "‍്യ്"
-
 c Rule: റ്റ്# → ററ്
 c ----------------
 "റ" "്റ്" + "#" > "റ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "#" > "റ" dk(key_4) "റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" "്" dk(key_14) "റ്" + "#" > "റ" dk(key_4) "റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"റ" "്റ്" dk(key_4) + "#" > "റ" dk(key_4) "റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "#" > "റ" dk(key_4) "റ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "#" > "റ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" "്" dk(key_10) "റ്" + "#" > "റ" dk(key_4) "റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "#" > "റ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"റ" "്റ്" dk(key_4) + "#" > "റ" dk(key_4) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" "്" dk(key_10) "റ്" + "#" > "റ" dk(key_4) "റ്"
 
 c Rule: ൧൦൦൦# → ൲
 c ----------------
@@ -3582,23 +3582,23 @@ c Rule: ൻ്റ്# → ൻറ്
 c ----------------
 "ൻ" "്റ്" + "#" > "ൻ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "#" > "ൻ" dk(key_4) "റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "്" dk(key_14) "റ്" + "#" > "ൻ" dk(key_4) "റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ൻ" "്റ്" dk(key_4) + "#" > "ൻ" dk(key_4) "റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "#" > "ൻ" dk(key_4) "റ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ൻ" dk(key_10) "്റ്" + "#" > "ൻ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "്" dk(key_10) "റ്" + "#" > "ൻ" dk(key_4) "റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്റ" dk(key_14) "്" + "#" > "ൻ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ൻ" "്റ്" dk(key_4) + "#" > "ൻ" dk(key_4) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "്" dk(key_10) "റ്" + "#" > "ൻ" dk(key_4) "റ്"
 
 c Rule: 1/2# → ൴
 c ----------------
@@ -3656,33 +3656,33 @@ c Rule: യ്യ# → യ‍്യ
 c ----------------
 "യ" "്യ" + "#" > "യ" dk(key_4) "‍്യ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"യ" "്യ" dk(key_4) + "#" > "യ" dk(key_4) "‍്യ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "യ" dk(key_4) "്യ" + "#" > "യ" dk(key_4) "‍്യ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "യ" dk(key_14) "്യ" + "#" > "യ" dk(key_4) "‍്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"യ" "്യ" dk(key_4) + "#" > "യ" dk(key_4) "‍്യ"
-
 c Rule: ററ്# → ഺ്
 c ----------------
 "ററ്" + "#" > dk(key_4) "ഺ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ററ" dk(key_4) "്" + "#" > dk(key_4) "ഺ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_14) "റ്" + "#" > dk(key_4) "ഺ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "റ്" + "#" > dk(key_4) "ഺ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ററ്" dk(key_4) + "#" > dk(key_4) "ഺ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ററ" dk(key_4) "്" + "#" > dk(key_4) "ഺ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ററ" dk(key_14) "്" + "#" > dk(key_4) "ഺ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ററ്" dk(key_4) + "#" > dk(key_4) "ഺ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "റ്" + "#" > dk(key_4) "ഺ്"
 
 c Rule: ററൗ# → റെറൗ
 c ----------------
@@ -3695,30 +3695,30 @@ c Rule: റ്റ# → ററ
 c ----------------
 "റ" "്റ" + "#" > "റ" dk(key_4) "റ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"റ" "്റ" dk(key_4) + "#" > "റ" dk(key_4) "റ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "റ" dk(key_4) "്റ" + "#" > "റ" dk(key_4) "റ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" + "#" > "റ" dk(key_4) "റ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"റ" "്റ" dk(key_4) + "#" > "റ" dk(key_4) "റ"
-
 c Rule: ്ല്# → ൢ
 c ----------------
 "്ല്" + "#" > dk(key_4) "ൢ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ല്"
-"്" dk(key_14) "ല്" + "#" > dk(key_4) "ൢ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"്ല്" dk(key_4) + "#" > dk(key_4) "ൢ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "്ല" dk(key_4) "്" + "#" > dk(key_4) "ൢ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ല്"
+"്" dk(key_14) "ല്" + "#" > dk(key_4) "ൢ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "്ല" dk(key_14) "്" + "#" > dk(key_4) "ൢ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"്ല്" dk(key_4) + "#" > dk(key_4) "ൢ"
 
 c Rule: ൧൦൦# → ൱
 c ----------------
@@ -3734,20 +3734,20 @@ c Rule: ൻറ്# → ൻററ്
 c ----------------
 "ൻറ" "്" + "#" > "ൻറ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻറ" dk(key_4) "്" + "#" > "ൻറ" dk(key_4) "റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_14) "റ്" + "#" > "ൻറ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "റ്" + "#" > "ൻറ" dk(key_4) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ൻറ" "്" dk(key_4) + "#" > "ൻറ" dk(key_4) "റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻറ" dk(key_4) "്" + "#" > "ൻറ" dk(key_4) "റ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻറ" dk(key_14) "്" + "#" > "ൻറ" dk(key_4) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ൻറ" "്" dk(key_4) + "#" > "ൻറ" dk(key_4) "റ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "റ്" + "#" > "ൻറ" dk(key_4) "റ്"
 
 c Rule: ൻറൗ# → ൻെറൗ
 c ----------------
@@ -3760,14 +3760,14 @@ c Rule: ൻ്റ# → ൻറ
 c ----------------
 "ൻ" "്റ" + "#" > "ൻ" dk(key_4) "റ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ൻ" "്റ" dk(key_4) + "#" > "ൻ" dk(key_4) "റ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ൻ" dk(key_4) "്റ" + "#" > "ൻ" dk(key_4) "റ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്റ" + "#" > "ൻ" dk(key_4) "റ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ൻ" "്റ" dk(key_4) + "#" > "ൻ" dk(key_4) "റ"
 
 c Rule: 10# → ൰
 c ----------------
@@ -3790,14 +3790,14 @@ c Rule: ക്# → ൿ
 c ----------------
 "ക്" + "#" > dk(key_4) "ൿ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ക്" dk(key_4) + "#" > dk(key_4) "ൿ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ക" dk(key_4) "്" + "#" > dk(key_4) "ൿ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ക" dk(key_14) "്" + "#" > dk(key_4) "ൿ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ക്" dk(key_4) + "#" > dk(key_4) "ൿ"
 
 c Rule: നു# → ൹
 c ----------------
@@ -3810,14 +3810,14 @@ c Rule: ന്# → ഩ്
 c ----------------
 "ന്" + "#" > dk(key_4) "ഩ്"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ന്" dk(key_4) + "#" > dk(key_4) "ഩ്"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ന" dk(key_4) "്" + "#" > dk(key_4) "ഩ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ന" dk(key_14) "്" + "#" > dk(key_4) "ഩ്"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ന്" dk(key_4) + "#" > dk(key_4) "ഩ്"
 
 c Rule: പറ# → ൏
 c ----------------
@@ -3830,14 +3830,14 @@ c Rule: യ്# → ൕ
 c ----------------
 "യ്" + "#" > dk(key_4) "ൕ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"യ്" dk(key_4) + "#" > dk(key_4) "ൕ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "യ" dk(key_4) "്" + "#" > dk(key_4) "ൕ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "യ" dk(key_14) "്" + "#" > dk(key_4) "ൕ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"യ്" dk(key_4) + "#" > dk(key_4) "ൕ"
 
 c Rule: ററ# → ഺ
 c ----------------
@@ -3850,14 +3850,14 @@ c Rule: ഴ്# → ൖ
 c ----------------
 "ഴ്" + "#" > dk(key_4) "ൖ"
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
+"ഴ്" dk(key_4) + "#" > dk(key_4) "ൖ"
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ഴ" dk(key_4) "്" + "#" > dk(key_4) "ൖ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ഴ" dk(key_14) "്" + "#" > dk(key_4) "ൖ"
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "#"
-"ഴ്" dk(key_4) + "#" > dk(key_4) "ൖ"
 
 c Rule: ൧൦# → ൰
 c ----------------
@@ -4375,11 +4375,11 @@ c Rule: ണ്ഡ്D → ൺഡ്ഡ്
 c ----------------
 "ണ്ഡ്" + "D" > "ൺഡ്ഡ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ണ" dk(key_4) "്ഡ" dk(key_4) "്" + "D" > "ൺഡ്ഡ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 "ണ്" dk(key_11) "ഡ്" + "D" > "ൺഡ്ഡ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ണ" dk(key_4) "്ഡ" dk(key_4) "്" + "D" > "ൺഡ്ഡ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ണ" dk(key_14) "്ഡ" dk(key_14) "്" + "D" > "ൺഡ്ഡ്"
@@ -4400,65 +4400,65 @@ c Rule: ൻ്രററ്യ്E → ൻ്രേററ്യ
 c ----------------
 "ൻ്ര" "ററ്യ്" + "E" > "ൻ്രേററ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രററ" dk(key_4) "്യ" dk(key_4) "്" + "E" > "ൻ്രേററ്യ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" "റ" dk(key_14) "റ്യ്" + "E" > "ൻ്രേററ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" "റ" dk(key_10) "റ്യ്" + "E" > "ൻ്രേററ്യ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രററ" dk(key_4) "്യ" dk(key_4) "്" + "E" > "ൻ്രേററ്യ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രററ" dk(key_14) "്യ" dk(key_14) "്" + "E" > "ൻ്രേററ്യ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" "റ" dk(key_10) "റ്യ്" + "E" > "ൻ്രേററ്യ"
 
 c Rule: റ്രറ്യ്E → റ്രേറ്യ
 c ----------------
 "റ്ര" "റ്യ്" + "E" > "റ്രേറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "E" > "റ്രേറ്യ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്ര" dk(key_14) "റ്യ്" + "E" > "റ്രേറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്ര" dk(key_10) "റ്യ്" + "E" > "റ്രേറ്യ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "E" > "റ്രേറ്യ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "E" > "റ്രേറ്യ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്ര" dk(key_10) "റ്യ്" + "E" > "റ്രേറ്യ"
 
 c Rule: ൻ്രറ്യ്E → ൻ്രേറ്യ
 c ----------------
 "ൻ്ര" "റ്യ്" + "E" > "ൻ്രേറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "E" > "ൻ്രേറ്യ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" dk(key_14) "റ്യ്" + "E" > "ൻ്രേറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" dk(key_10) "റ്യ്" + "E" > "ൻ്രേറ്യ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "E" > "ൻ്രേറ്യ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "E" > "ൻ്രേറ്യ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" dk(key_10) "റ്യ്" + "E" > "ൻ്രേറ്യ"
 
 c Rule: ൻററ്E → ൻേററ
 c ----------------
 "ൻ" "ററ്" + "E" > "ൻേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" + "E" > "ൻേററ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" + "E" > "ൻേററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" + "E" > "ൻേററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" + "E" > "ൻേററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" + "E" > "ൻേററ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" + "E" > "ൻേററ"
 
 c Rule: [ഗണതനമശസഹ]്ംE → [ഗണതനമശസഹ]്‌മേ
 c ----------------
@@ -4545,11 +4545,11 @@ c Rule: ച്ച്H → ച്ച്
 c ----------------
 "ച്ച്" + "H" > context nul
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ച" dk(key_4) "്ച" dk(key_4) "്" + "H" > "ച്ച്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_8) "ച്"
 "ച്" dk(key_8) "ച്" + "H" > "ച്ച്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ച" dk(key_4) "്ച" dk(key_4) "്" + "H" > "ച്ച്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ച" dk(key_14) "്ച" dk(key_14) "്" + "H" > "ച്ച്"
@@ -4709,65 +4709,65 @@ c Rule: ൻ്രററ്യ്O → ൻ്രേററ്യാ
 c ----------------
 "ൻ്ര" "ററ്യ്" + "O" > "ൻ്രേററ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രററ" dk(key_4) "്യ" dk(key_4) "്" + "O" > "ൻ്രേററ്യാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" "റ" dk(key_14) "റ്യ്" + "O" > "ൻ്രേററ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" "റ" dk(key_10) "റ്യ്" + "O" > "ൻ്രേററ്യാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രററ" dk(key_4) "്യ" dk(key_4) "്" + "O" > "ൻ്രേററ്യാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രററ" dk(key_14) "്യ" dk(key_14) "്" + "O" > "ൻ്രേററ്യാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" "റ" dk(key_10) "റ്യ്" + "O" > "ൻ്രേററ്യാ"
 
 c Rule: റ്രറ്യ്O → റ്രേറ്യാ
 c ----------------
 "റ്ര" "റ്യ്" + "O" > "റ്രേറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "O" > "റ്രേറ്യാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്ര" dk(key_14) "റ്യ്" + "O" > "റ്രേറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്ര" dk(key_10) "റ്യ്" + "O" > "റ്രേറ്യാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "O" > "റ്രേറ്യാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "O" > "റ്രേറ്യാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്ര" dk(key_10) "റ്യ്" + "O" > "റ്രേറ്യാ"
 
 c Rule: ൻ്രറ്യ്O → ൻ്രേറ്യാ
 c ----------------
 "ൻ്ര" "റ്യ്" + "O" > "ൻ്രേറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "O" > "ൻ്രേറ്യാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" dk(key_14) "റ്യ്" + "O" > "ൻ്രേറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" dk(key_10) "റ്യ്" + "O" > "ൻ്രേറ്യാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "O" > "ൻ്രേറ്യാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "O" > "ൻ്രേറ്യാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" dk(key_10) "റ്യ്" + "O" > "ൻ്രേറ്യാ"
 
 c Rule: ൻററ്O → ൻേററാ
 c ----------------
 "ൻ" "ററ്" + "O" > "ൻേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" + "O" > "ൻേററാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" + "O" > "ൻേററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" + "O" > "ൻേററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" + "O" > "ൻേററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" + "O" > "ൻേററാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" + "O" > "ൻേററാ"
 
 c Rule: [കഗടതപഫബമയലവശസഹ]്ൽO → [കഗടതപഫബമയലവശസഹ]്‌ലോ
 c ----------------
@@ -4890,20 +4890,20 @@ c Rule: റ്റ്T → ട്ട്
 c ----------------
 "റ്റ്" + "T" > "ട്ട്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "T" > "ട്ട്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" + "T" > "ട്ട്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "T" > "ട്ട്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "T" > "ട്ട്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" + "T" > "ട്ട്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "T" > "ട്ട്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" + "T" > "ട്ട്"
 
 c Rule: ൺT → ണ്ട്
 c ----------------
@@ -5025,39 +5025,39 @@ c Rule: ന്റ്^ → ന്‍റ്
 c ----------------
 "ന്" "റ്" + "^" > "ന്‍റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ന" dk(key_4) "്റ" dk(key_4) "്" + "^" > "ന്‍റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ന്" dk(key_14) "റ്" + "^" > "ന്‍റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ന" dk(key_4) "്റ" dk(key_4) "്" + "^" > "ന്‍റ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ന" dk(key_10) "്റ്" + "^" > "ന്‍റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ന്" dk(key_10) "റ്" + "^" > "ന്‍റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ന" dk(key_14) "്റ" dk(key_14) "്" + "^" > "ന്‍റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ന്" dk(key_10) "റ്" + "^" > "ന്‍റ്"
 
 c Rule: ൻ്റ്^ → ന്റ്
 c ----------------
 "ൻ്റ്" + "^" > "ന്റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "^" > "ന്റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്" dk(key_14) "റ്" + "^" > "ന്റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "^" > "ന്റ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ൻ" dk(key_10) "്റ്" + "^" > "ന്റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്" dk(key_10) "റ്" + "^" > "ന്റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്റ" dk(key_14) "്" + "^" > "ന്റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്" dk(key_10) "റ്" + "^" > "ന്റ്"
 
 c Rule: ന്റ^ → ന്‍റ
 c ----------------
@@ -5111,17 +5111,17 @@ c Rule: റ്രെറ്യാa → റ്രേറ്യാ
 c ----------------
 "റ്ര" "െറ്യാ" + "a" > "റ്രേറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്രെറ" dk(key_4) "്യാ" + "a" > "റ്രേറ്യാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്ര" "െ" dk(key_14) "റ്യാ" + "a" > "റ്രേറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്ര" "െ" dk(key_10) "റ്യാ" + "a" > "റ്രേറ്യാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്രെറ" dk(key_4) "്യാ" + "a" > "റ്രേറ്യാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്രെറ" dk(key_14) "്യാ" + "a" > "റ്രേറ്യാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്ര" "െ" dk(key_10) "റ്യാ" + "a" > "റ്രേറ്യാ"
 
 c Rule: [ഗണതസനമശസഹ]്ംa → [ഗണതസനമശസഹ]്‌മ
 c ----------------
@@ -5143,11 +5143,11 @@ any(range_21) "്" "ൻ" + "a" > index(range_21, 1) "്‌ന"
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 any(range_21) dk(key_4) "്ൻ" + "a" > index(range_21, 1) "്‌ന"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_9) "ൻ"
-any(range_21) "്" dk(key_9) "ൻ" + "a" > index(range_21, 1) "്‌ന"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 any(range_21) dk(key_14) "്ൻ" + "a" > index(range_21, 1) "്‌ന"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_9) "ൻ"
+any(range_21) "്" dk(key_9) "ൻ" + "a" > index(range_21, 1) "്‌ന"
 
 c Rule: [കഗടതപഫബമയലവശസഹ]്ൽa → [കഗടതപഫബമയലവശസഹ]്‌ല
 c ----------------
@@ -5364,33 +5364,33 @@ c Rule: റ്രറ്യ്e → റ്രെറ്യ
 c ----------------
 "റ്ര" "റ്യ്" + "e" > "റ്രെറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "e" > "റ്രെറ്യ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്ര" dk(key_14) "റ്യ്" + "e" > "റ്രെറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്ര" dk(key_10) "റ്യ്" + "e" > "റ്രെറ്യ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "e" > "റ്രെറ്യ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "e" > "റ്രെറ്യ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്ര" dk(key_10) "റ്യ്" + "e" > "റ്രെറ്യ"
 
 c Rule: ൻ്രറ്യ്e → ൻ്രെറ്യ
 c ----------------
 "ൻ്ര" "റ്യ്" + "e" > "ൻ്രെറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "e" > "ൻ്രെറ്യ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" dk(key_14) "റ്യ്" + "e" > "ൻ്രെറ്യ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" dk(key_10) "റ്യ്" + "e" > "ൻ്രെറ്യ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "e" > "ൻ്രെറ്യ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "e" > "ൻ്രെറ്യ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" dk(key_10) "റ്യ്" + "e" > "ൻ്രെറ്യ"
 
 c Rule: റ്രെറe → റ്രറീ
 c ----------------
@@ -5406,17 +5406,17 @@ c Rule: ൻററ്e → ൻെററ
 c ----------------
 "ൻ" "ററ്" + "e" > "ൻെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" + "e" > "ൻെററ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" + "e" > "ൻെററ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" + "e" > "ൻെററ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" + "e" > "ൻെററ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" + "e" > "ൻെററ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" + "e" > "ൻെററ"
 
 c Rule: [ഗണതസനമശസഹ]്ംe → [ഗണതസനമശസഹ]്‌മെ
 c ----------------
@@ -5601,40 +5601,40 @@ c ----------------
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ന" dk(key_4) "്ന" dk(key_4) "്" + "h" > "ണ്ണ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ന്"
-"ന്" dk(key_14) "ന്" + "h" > "ണ്ണ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ന" dk(key_14) "്ന" dk(key_14) "്" + "h" > "ണ്ണ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ന്"
+"ന്" dk(key_14) "ന്" + "h" > "ണ്ണ്"
 
 c Rule: റ്റ്h → ത്
 c ----------------
 "റ്റ്" + "h" > "ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" + "h" > "ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "h" > "ത്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "h" > "ത്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" + "h" > "ത്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "h" > "ത്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" + "h" > "ത്"
 
 c Rule: ല്ല്h → ള്ള്
 c ----------------
 "ല്ല്" + "h" > "ള്ള്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ല്"
-"ല്" dk(key_14) "ല്" + "h" > "ള്ള്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ല" dk(key_4) "്ല" dk(key_4) "്" + "h" > "ള്ള്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ല്"
+"ല്" dk(key_14) "ല്" + "h" > "ള്ള്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ല" dk(key_14) "്ല" dk(key_14) "്" + "h" > "ള്ള്"
@@ -5855,11 +5855,11 @@ any(range_24) "്" "ൻ" + "i" > index(range_24, 1) "്‌നി"
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 any(range_24) dk(key_4) "്ൻ" + "i" > index(range_24, 1) "്‌നി"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_9) "ൻ"
-any(range_24) "്" dk(key_9) "ൻ" + "i" > index(range_24, 1) "്‌നി"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 any(range_24) dk(key_14) "്ൻ" + "i" > index(range_24, 1) "്‌നി"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_9) "ൻ"
+any(range_24) "്" dk(key_9) "ൻ" + "i" > index(range_24, 1) "്‌നി"
 
 c Rule: [കഗടതപഫബമയലവശസഹറ]്ൽi → [കഗടതപഫബമയലവശസഹറ]്‌ലി
 c ----------------
@@ -5972,20 +5972,20 @@ c Rule: റ്റ്j → റ്റ്ജ്
 c ----------------
 "റ്റ്" + "j" > context "ജ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "j" > "റ്റ്ജ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" + "j" > "റ്റ്ജ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "j" > "റ്റ്ജ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "j" > "റ്റ്ജ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" + "j" > "റ്റ്ജ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "j" > "റ്റ്ജ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" + "j" > "റ്റ്ജ്"
 
 c Rule: [ഀ-ൿ]ർj → [ഀ-ൿ]ർജ്
 c ----------------
@@ -6027,12 +6027,38 @@ c ================
 c Key: k
 c ================
 
+c Rule: [ഀ-ൿ]റ്k → [ഀ-ൿ]റ്ക്
+c ----------------
+any(range_4) "റ്" + "k" > context "ക്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
+any(range_4) dk(key_14) "റ്" + "k" > index(range_4, 1) "റ്ക്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+any(range_4) "റ" dk(key_4) "്" + "k" > index(range_4, 1) "റ്ക്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
+any(range_4) "റ" dk(key_14) "്" + "k" > index(range_4, 1) "റ്ക്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+any(range_4) dk(key_10) "റ്" + "k" > index(range_4, 1) "റ്ക്"
+
 c Rule: [ഀ-ൿ]ർk → [ഀ-ൿ]ർക്
 c ----------------
 any(range_4) "ർ" + "k" > context "ക്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ർ"
 any(range_4) dk(key_10) "ർ" + "k" > index(range_4, 1) "ർക്"
+
+c Rule: റ്k → ഋക്
+c ----------------
+"റ്" + "k" > "ഋക്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്" + "k" > "ഋക്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
+"റ" dk(key_14) "്" + "k" > "ഋക്"
 
 c Rule: ൻk → ങ്ക്
 c ----------------
@@ -6054,11 +6080,11 @@ c Rule: മ്ല്l → ംല്ല്
 c ----------------
 "മ്ല്" + "l" > "ംല്ല്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ല്"
-"മ്" dk(key_14) "ല്" + "l" > "ംല്ല്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "മ" dk(key_4) "്ല" dk(key_4) "്" + "l" > "ംല്ല്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ല്"
+"മ്" dk(key_14) "ല്" + "l" > "ംല്ല്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "മ" dk(key_14) "്ല" dk(key_14) "്" + "l" > "ംല്ല്"
@@ -6184,11 +6210,11 @@ c ----------------
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ന" dk(key_4) "്ന" dk(key_4) "്" + "n" > dk(key_9) "ണ്ണ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ന്"
-"ന്" dk(key_14) "ന്" + "n" > dk(key_9) "ണ്ണ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ന" dk(key_14) "്ന" dk(key_14) "്" + "n" > dk(key_9) "ണ്ണ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ന്"
+"ന്" dk(key_14) "ന്" + "n" > dk(key_9) "ണ്ണ്"
 
 c Rule: മ്ന്n → ംന്ന്
 c ----------------
@@ -6197,30 +6223,30 @@ c ----------------
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "മ" dk(key_4) "്ന" dk(key_4) "്" + "n" > dk(key_9) "ംന്ന്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ന്"
-"മ്" dk(key_14) "ന്" + "n" > dk(key_9) "ംന്ന്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "മ" dk(key_14) "്ന" dk(key_14) "്" + "n" > dk(key_9) "ംന്ന്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ന്"
+"മ്" dk(key_14) "ന്" + "n" > dk(key_9) "ംന്ന്"
 
 c Rule: റ്റ്n → റ്റ്ൻ
 c ----------------
 "റ്റ്" + "n" > context dk(key_9) "ൻ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "n" > "റ്റ്" dk(key_9) "ൻ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" + "n" > "റ്റ്" dk(key_9) "ൻ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "n" > "റ്റ്" dk(key_9) "ൻ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "n" > "റ്റ്" dk(key_9) "ൻ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" + "n" > "റ്റ്" dk(key_9) "ൻ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "n" > "റ്റ്" dk(key_9) "ൻ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" + "n" > "റ്റ്" dk(key_9) "ൻ"
 
 c Rule: [ഗഘതപശസഹ]്n → [ഗഘതപശസഹ]്ന്
 c ----------------
@@ -6292,49 +6318,49 @@ c Rule: റ്രറ്യ്o → റ്രെറ്യാ
 c ----------------
 "റ്ര" "റ്യ്" + "o" > "റ്രെറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "o" > "റ്രെറ്യാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്ര" dk(key_14) "റ്യ്" + "o" > "റ്രെറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്ര" dk(key_10) "റ്യ്" + "o" > "റ്രെറ്യാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "o" > "റ്രെറ്യാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "o" > "റ്രെറ്യാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്ര" dk(key_10) "റ്യ്" + "o" > "റ്രെറ്യാ"
 
 c Rule: ൻ്രറ്യ്o → ൻ്രെറ്യാ
 c ----------------
 "ൻ്ര" "റ്യ്" + "o" > "ൻ്രെറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "o" > "ൻ്രെറ്യാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്ര" dk(key_14) "റ്യ്" + "o" > "ൻ്രെറ്യാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്ര" dk(key_10) "റ്യ്" + "o" > "ൻ്രെറ്യാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്രറ" dk(key_4) "്യ" dk(key_4) "്" + "o" > "ൻ്രെറ്യാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്രറ" dk(key_14) "്യ" dk(key_14) "്" + "o" > "ൻ്രെറ്യാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്ര" dk(key_10) "റ്യ്" + "o" > "ൻ്രെറ്യാ"
 
 c Rule: ൻററ്o → ൻെററാ
 c ----------------
 "ൻ" "ററ്" + "o" > "ൻെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" + "o" > "ൻെററാ"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" + "o" > "ൻെററാ"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" + "o" > "ൻെററാ"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" + "o" > "ൻെററാ"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" + "o" > "ൻെററാ"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" + "o" > "ൻെററാ"
 
 c Rule: [കഗടതപഫബമയലവശസഹ]്ൽo → [കഗടതപഫബമയലവശസഹ]്‌ലൊ
 c ----------------
@@ -6448,93 +6474,93 @@ c Rule: ്റ്റ്r → ്ട്ര്
 c ----------------
 "്" "റ്റ്" + "r" > "്" dk(key_10) "ട്ര്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"്" "റ" dk(key_4) "്റ" dk(key_4) "്" + "r" > "്" dk(key_10) "ട്ര്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "്" dk(key_14) "റ്" dk(key_14) "റ്" + "r" > "്" dk(key_10) "ട്ര്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "റ്റ്"
-"്" dk(key_11) "റ്റ്" + "r" > "്" dk(key_10) "ട്ര്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"്" "റ" dk(key_4) "്റ" dk(key_4) "്" + "r" > "്" dk(key_10) "ട്ര്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "്" "റ" dk(key_10) "്റ്" + "r" > "്" dk(key_10) "ട്ര്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"്" dk(key_10) "റ്" dk(key_10) "റ്" + "r" > "്" dk(key_10) "ട്ര്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "റ്റ്"
+"്" dk(key_11) "റ്റ്" + "r" > "്" dk(key_10) "ട്ര്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "്" "റ" dk(key_14) "്റ" dk(key_14) "്" + "r" > "്" dk(key_10) "ട്ര്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"്" dk(key_10) "റ്" dk(key_10) "റ്" + "r" > "്" dk(key_10) "ട്ര്"
 
 c Rule: റ്റ്r → റ്റ്ര്
 c ----------------
 "റ്റ്" + "r" > context dk(key_10) "ര്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "r" > "റ്റ്" dk(key_10) "ര്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" + "r" > "റ്റ്" dk(key_10) "ര്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "r" > "റ്റ്" dk(key_10) "ര്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "r" > "റ്റ്" dk(key_10) "ര്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" + "r" > "റ്റ്" dk(key_10) "ര്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "r" > "റ്റ്" dk(key_10) "ര്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" + "r" > "റ്റ്" dk(key_10) "ര്"
 
 c Rule: ൻററ്r → ൻ്രററ്
 c ----------------
 "ൻ" "ററ്" + "r" > "ൻ" dk(key_10) "്രററ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "ററ" dk(key_4) "്" + "r" > "ൻ" dk(key_10) "്രററ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "റ" dk(key_14) "റ്" + "r" > "ൻ" dk(key_10) "്രററ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "റ" dk(key_10) "റ്" + "r" > "ൻ" dk(key_10) "്രററ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "ററ" dk(key_4) "്" + "r" > "ൻ" dk(key_10) "്രററ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "ററ" dk(key_14) "്" + "r" > "ൻ" dk(key_10) "്രററ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "റ" dk(key_10) "റ്" + "r" > "ൻ" dk(key_10) "്രററ്"
 
 c Rule: ൻ്റ്r → ൻട്ര്
 c ----------------
 "ൻ" "്റ്" + "r" > "ൻ" dk(key_10) "ട്ര്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "r" > "ൻ" dk(key_10) "ട്ര്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" "്" dk(key_14) "റ്" + "r" > "ൻ" dk(key_10) "ട്ര്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "r" > "ൻ" dk(key_10) "ട്ര്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ൻ" dk(key_10) "്റ്" + "r" > "ൻ" dk(key_10) "ട്ര്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" "്" dk(key_10) "റ്" + "r" > "ൻ" dk(key_10) "ട്ര്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്റ" dk(key_14) "്" + "r" > "ൻ" dk(key_10) "ട്ര്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" "്" dk(key_10) "റ്" + "r" > "ൻ" dk(key_10) "ട്ര്"
 
 c Rule: ററ്r → റ്രറ്
 c ----------------
 "റ" "റ്" + "r" > "റ" dk(key_10) "്രറ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" "റ" dk(key_4) "്" + "r" > "റ" dk(key_10) "്രറ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ" dk(key_14) "റ്" + "r" > "റ" dk(key_10) "്രറ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ" dk(key_10) "റ്" + "r" > "റ" dk(key_10) "്രറ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" "റ" dk(key_4) "്" + "r" > "റ" dk(key_10) "്രറ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" "റ" dk(key_14) "്" + "r" > "റ" dk(key_10) "്രറ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ" dk(key_10) "റ്" + "r" > "റ" dk(key_10) "്രറ്"
 
 c Rule: ്ര്r → ്റ്
 c ----------------
@@ -6543,37 +6569,37 @@ c ----------------
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "്" "ര" dk(key_4) "്" + "r" > "്" dk(key_10) "റ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
-"്" "ര" dk(key_14) "്" + "r" > "്" dk(key_10) "റ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "ര്"
 "്" dk(key_14) "ര്" + "r" > "്" dk(key_10) "റ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
+"്" "ര" dk(key_14) "്" + "r" > "്" dk(key_10) "റ്"
 
 c Rule: ൻറ്r → ൻ്രറ്
 c ----------------
 "ൻ" "റ്" + "r" > "ൻ" dk(key_10) "്രറ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" "റ" dk(key_4) "്" + "r" > "ൻ" dk(key_10) "്രറ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ" dk(key_14) "റ്" + "r" > "ൻ" dk(key_10) "്രറ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ" dk(key_10) "റ്" + "r" > "ൻ" dk(key_10) "്രറ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" "റ" dk(key_4) "്" + "r" > "ൻ" dk(key_10) "്രറ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" "റ" dk(key_14) "്" + "r" > "ൻ" dk(key_10) "്രറ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ" dk(key_10) "റ്" + "r" > "ൻ" dk(key_10) "്രറ്"
 
 c Rule: നൃr → ൻറ്
 c ----------------
 "നൃ" + "r" > dk(key_10) "ൻറ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
-"ന" dk(key_10) "ൃ" + "r" > dk(key_10) "ൻറ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_6) "ൃ"
 "ന" dk(key_6) "ൃ" + "r" > dk(key_10) "ൻറ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "ൃ"
+"ന" dk(key_10) "ൃ" + "r" > dk(key_10) "ൻറ്"
 
 c Rule: റ്r → ർറ്
 c ----------------
@@ -6624,36 +6650,36 @@ c Rule: റ്റ്s → റ്റ്സ്
 c ----------------
 "റ്റ്" + "s" > context "സ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "s" > "റ്റ്സ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" + "s" > "റ്റ്സ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "s" > "റ്റ്സ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "s" > "റ്റ്സ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" + "s" > "റ്റ്സ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "s" > "റ്റ്സ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" + "s" > "റ്റ്സ്"
 
 c Rule: [അ-ൌൗ]റ്s → [അ-ൌൗ]റ്സ്
 c ----------------
 any(range_29) "റ്" + "s" > context "സ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-any(range_29) "റ" dk(key_4) "്" + "s" > index(range_29, 1) "റ്സ്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 any(range_29) dk(key_14) "റ്" + "s" > index(range_29, 1) "റ്സ്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-any(range_29) dk(key_10) "റ്" + "s" > index(range_29, 1) "റ്സ്"
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+any(range_29) "റ" dk(key_4) "്" + "s" > index(range_29, 1) "റ്സ്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 any(range_29) "റ" dk(key_14) "്" + "s" > index(range_29, 1) "റ്സ്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+any(range_29) dk(key_10) "റ്" + "s" > index(range_29, 1) "റ്സ്"
 
 c Rule: [ഀ-ൿ]ർs → [ഀ-ൿ]ർസ്
 c ----------------
@@ -6688,14 +6714,14 @@ c Rule: [ടണഷ]്ട്t → [ടണഷ]്ട്
 c ----------------
 any(range_30) "്ട്" + "t" > context dk(key_11)
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+any(range_30) "്" dk(key_11) "ട്" + "t" > index(range_30, 1) "്ട്" dk(key_11)
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 any(range_30) dk(key_4) "്ട" dk(key_4) "്" + "t" > index(range_30, 1) "്ട്" dk(key_11)
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 any(range_30) dk(key_14) "്ട" dk(key_14) "്" + "t" > index(range_30, 1) "്ട്" dk(key_11)
-
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-any(range_30) "്" dk(key_11) "ട്" + "t" > index(range_30, 1) "്ട്" dk(key_11)
 
 c Rule: ങ്ങ്t → ങ്റ്റ്
 c ----------------
@@ -6711,18 +6737,21 @@ c Rule: ട്ട്t → ട്ട്
 c ----------------
 "ട്ട്" + "t" > context dk(key_11)
 
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+"ട്" dk(key_11) "ട്" + "t" > "ട്ട്" dk(key_11)
+
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ട" dk(key_4) "്ട" dk(key_4) "്" + "t" > "ട്ട്" dk(key_11)
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ട" dk(key_14) "്ട" dk(key_14) "്" + "t" > "ട്ട്" dk(key_11)
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-"ട്" dk(key_11) "ട്" + "t" > "ട്ട്" dk(key_11)
-
 c Rule: ണ്ട്t → ണ്ട്
 c ----------------
 "ണ്ട്" + "t" > context dk(key_11)
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
+"ണ്" dk(key_11) "ട്" + "t" > "ണ്ട്" dk(key_11)
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 "ണ" dk(key_4) "്ട" dk(key_4) "്" + "t" > "ണ്ട്" dk(key_11)
@@ -6730,18 +6759,15 @@ c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ണ" dk(key_14) "്ട" dk(key_14) "്" + "t" > "ണ്ട്" dk(key_11)
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ട്"
-"ണ്" dk(key_11) "ട്" + "t" > "ണ്ട്" dk(key_11)
-
 c Rule: ണ്ഡ്t → ണ്ഡ്
 c ----------------
 "ണ്ഡ്" + "t" > context dk(key_11)
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ണ" dk(key_4) "്ഡ" dk(key_4) "്" + "t" > "ണ്ഡ്" dk(key_11)
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_11) "ഡ്"
 "ണ്" dk(key_11) "ഡ്" + "t" > "ണ്ഡ്" dk(key_11)
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ണ" dk(key_4) "്ഡ" dk(key_4) "്" + "t" > "ണ്ഡ്" dk(key_11)
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ണ" dk(key_14) "്ഡ" dk(key_14) "്" + "t" > "ണ്ഡ്" dk(key_11)
@@ -6770,39 +6796,39 @@ c Rule: റ്റ്t → ട്
 c ----------------
 "റ്റ്" + "t" > dk(key_11) "ട്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"റ" dk(key_4) "്റ" dk(key_4) "്" + "t" > dk(key_11) "ട്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "റ്" dk(key_14) "റ്" + "t" > dk(key_11) "ട്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"റ" dk(key_4) "്റ" dk(key_4) "്" + "t" > dk(key_11) "ട്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "റ" dk(key_10) "്റ്" + "t" > dk(key_11) "ട്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"റ്" dk(key_10) "റ്" + "t" > dk(key_11) "ട്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "റ" dk(key_14) "്റ" dk(key_14) "്" + "t" > dk(key_11) "ട്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"റ്" dk(key_10) "റ്" + "t" > dk(key_11) "ട്"
 
 c Rule: ൻ്റ്t → ണ്ട്
 c ----------------
 "ൻ്റ്" + "t" > dk(key_11) "ണ്ട്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
-"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "t" > dk(key_11) "ണ്ട്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "റ്"
 "ൻ്" dk(key_14) "റ്" + "t" > dk(key_11) "ണ്ട്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_4) "്"
+"ൻ" dk(key_4) "്റ" dk(key_4) "്" + "t" > dk(key_11) "ണ്ട്"
 
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "്റ്"
 "ൻ" dk(key_10) "്റ്" + "t" > dk(key_11) "ണ്ട്"
 
-c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
-"ൻ്" dk(key_10) "റ്" + "t" > dk(key_11) "ണ്ട്"
-
 c Additional rule with DK inserted to LHS as per the RHS: dk(key_14) "്"
 "ൻ" dk(key_14) "്റ" dk(key_14) "്" + "t" > dk(key_11) "ണ്ട്"
+
+c Additional rule with DK inserted to LHS as per the RHS: dk(key_10) "റ്"
+"ൻ്" dk(key_10) "റ്" + "t" > dk(key_11) "ണ്ട്"
 
 c Rule: [ഀ-ൿ]ർt → [ഀ-ൿ]ർട്
 c ----------------
