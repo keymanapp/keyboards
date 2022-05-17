@@ -3299,5 +3299,5 @@ END;
 	</div>
 
 	<h2>Mozhi 2.0 Spec</h2>
-		<p>For more information and a complete coverage of characters supported along with the keystrokes, please visit the <a href="https://sites.google.com/site/cibu/mozhi/mozhi2">online Mozhi 2.0 Spec.</a></p>
+		<p>For more information and a complete coverage of characters supported along with the keystrokes, please visit the <a href="https://sites.google.com/site/cibu/mozhi2">online Mozhi 2.0 Spec.</a></p>
 </body>
