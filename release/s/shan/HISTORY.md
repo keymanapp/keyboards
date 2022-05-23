@@ -1,7 +1,7 @@
 Shan Change History
 =======================
 
-1.1 (27 Oct 2020)
+1.1 (27 May 2022)
 -------------------
 * Change language id to "my" to allow Microsoft Word to pick up the correct locale.
 
