@@ -1,9 +1,8 @@
 Nsilxcən keyboard
 ======================
 
-Copyright (c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
+Copyright (c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
 
-Version 9.1.1
 
 Nsilxcən keyboard layout for Unicode
 
