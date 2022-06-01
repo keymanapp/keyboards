@@ -5,16 +5,19 @@ import vn_telex.utils.charcases as charcases
 import vn_telex.utils.vnrhymes as vnr
 import vn_telex.utils.vnrhymes_old as vnro
 import vn_telex.utils.uow_rules as uow
+import vn_telex.utils.qu_tone_transfer as qugitt
 
 HEADER_PATH = './raw/header.kmn'
 OUT_PATH = './compiled/out.kmn'
+
+QU_EXCLUDES = ['qú', 'qù', 'qủ', 'qũ', 'qụ']
 
 
 def main():
     start_time = timer()
 
     print('Generating Vietnamese rhymes... ', end='')
-    rhymes = vnro.generate() + vnr.generate() + uow.generate()
+    rhymes = vnro.generate() + vnr.generate() + uow.generate() + qugitt.generate()
     print(f'{len(rhymes)} generated. [DONE]')
 
     print('Generating uppercase and lowercase permutations... ', end='')
@@ -28,10 +31,15 @@ def main():
                 rhymes_cases.append(TelexRule(base, rhymes[i].modifier.lower(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
                 rhymes_cases.append(TelexRule(base, rhymes[i].modifier.upper(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
             elif len(rhymes[i].result) == len(permutation_line) + 1:
-                result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line) + rhymes[i].modifier.lower()
-                rhymes_cases.append(TelexRule(base, rhymes[i].modifier.lower(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
-                result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line) + rhymes[i].modifier.upper()
-                rhymes_cases.append(TelexRule(base, rhymes[i].modifier.upper(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                if rhymes[i].base in QU_EXCLUDES:
+                    result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line)
+                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.lower(), result + rhymes[i].result[-1].lower(), kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.upper(), result + rhymes[i].result[-1].upper(), kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                else:
+                    result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line) + rhymes[i].modifier.lower()
+                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.lower(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                    result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line) + rhymes[i].modifier.upper()
+                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.upper(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
             progbar.print_bar(
                 percentage=round(i / len(rhymes) * 100),
                 message=f'({i}/{len(rhymes)}) Processing {rhymes[i].result}'
