@@ -2,20 +2,200 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Start Using SIL's Yupik Cyrillic (Russian based) keyboard</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
+<title>Using SIL's Yupik Cyrillic (Russian based) keyboard</title>
+<style type="text/css">
+        .key { 
+            float: left;
+            display: block; 
+            position: relative;
+            overflow: hidden;
+            height: 35px;
+            margin: 2px 0px 0px 4px;
+        }
+        
+        #K_SPACE {
+            width: 234px; 
+            background-image: url('key-space.gif'); 
+        }
 
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 15px;
-    }
-</style>
+        #K_BKSLASH {
+            width: 42px; 
+            background-image: url('key-bkslash.gif'); 
+        }
+        
+        #K_oE2 {
+            display:none;
+        }
+        
+        #K_SHIFTL {
+            width: 80px;
+            background-image: url('key-shiftl.gif');
+        }
+        
+        .plain {
+            background-image: url('key-plain.gif');
+            background-repeat: no-repeat;
+            width: 34px;
+        }
+        
+        .special {
+            background-repeat: no-repeat;
+        }
+        
+        .keycap {
+            font: bold 7pt Arial; 
+            position: absolute; 
+            left: 4px; 
+            top: 3px;
+        }
+        
+        .key .keycap {          
+            display: block;
+        }
+        
+        .special .keycap {
+            display: block;
+        }
+        
+        .keytext {
+            font: 14pt "Times New Roman"; 
+            position: absolute; 
+            display: block;
+            right: 4px;
+            bottom: 4px;
+            color: blue;
+        }
+        .keytextwide {
+            font: 12pt "Times New Roman"; 
+            position: absolute; 
+            display: block;
+            right: 2px;
+            bottom: 4px;
+            color: blue;
+        }
+        
+        td { padding-right: 25px; 
+             padding-bottom: 3px;
+        }
+        .long_narrow_table { 
+            column-count: 2; 
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        
+        .t_key { 
+            float: left;
+            display: block; 
+            position: relative;
+            overflow: hidden;
+            height: 55px;
+            margin: 0px 0px 0px 0px;
+        }
+        .t_longpress {
+            background-image: url('touch-longpress.gif');
+            background-repeat: no-repeat;
+            width: 44px;
+        }
+        .t_longpressnarrow {
+            background-image: url('touch-longpress-narrow.gif');
+            background-repeat: no-repeat;
+            width: 42px;
+        }
+        .t_longpressperiod {
+            background-image: url('touch-longpress-period.gif');
+            background-repeat: no-repeat;
+            width: 44px;
+        }
+        .t_plain {
+            background-image: url('touch-plain.gif');
+            background-repeat: no-repeat;
+            width: 44px;
+        }
+        .t_plainnarrow {
+            background-image: url('touch-plain-narrow.gif');
+            background-repeat: no-repeat;
+            width: 42px;
+        }
+        .t_shift {
+            background-image: url('touch-shift.gif');
+            background-repeat: no-repeat;
+            width: 53px;
+        }
+        .t_erase {
+            background-image: url('touch-erase.gif');
+            background-repeat: no-repeat;
+            width: 61px;
+        }
+        .t_numlock {
+            background-image: url('touch-numlock.gif');
+            background-repeat: no-repeat;
+            width: 61px;
+        }
+        .t_menu {
+            background-image: url('touch-menu.gif');
+            background-repeat: no-repeat;
+            width: 54px;
+        }
+        .t_space {
+            background-image: url('touch-space.gif');
+            background-repeat: no-repeat;
+            width: 220px;
+        }
+        .t_enter {
+            background-image: url('touch-enter.gif');
+            background-repeat: no-repeat;
+            width: 61px;
+        }
+        .t_comment {
+            background-image: url('touch-comment.gif');
+            background-repeat: no-repeat;
+            width: 220px;
+        }
+
+        .t_keytext {
+            font: 16pt "Times New Roman"; 
+            position: absolute; 
+            display: block;
+            bottom: 5px;
+            width: 44px;
+            text-align: center;
+            color: blue;
+        }
+        .t_keytextlp {
+            font: 8pt Arial; 
+            position: absolute; 
+            left: 6px; 
+            top: 5px;
+        }
+        .t_keytextlpperiod {
+            font: 8pt Arial; 
+            position: absolute; 
+            left: 4px; 
+            top: 1px;
+        }
+        .t_textcommenttop {
+            font: 11pt Arial; 
+            position: absolute; 
+            left: 4px; 
+            top: 3px;
+        }
+        .t_textcommentbottom {
+            font: 11pt Arial; 
+            position: absolute; 
+            left: 4px; 
+            bottom: 6px;
+        }
+        .t_numlocktext {
+            font: 14pt "Arial"; 
+            position: absolute; 
+            display: block;
+            bottom: 5px;
+            width: 61px;
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 <body>
 
@@ -23,74 +203,994 @@
 
 <h2><a href="welcome_ru.htm">русский</a></h2>
 
-<p>
-    The Yupik Cyrillic keyboard (sil_yupik_cyrillic_ru) is now available in both desktop and touch screen layouts. 
+<h2>Font</h2>
+
+<p>No fonts are included with this keyboard package. The keyboard can be used with any font that supports:
 </p>
+<ul>
+    <li>the Unicode block of the Cyrillic script (U+0400..U+04FF), and</li>
+    <li>the use of combining diacritic marks. (Yupik writing uses a macron over some vowels.)</li>
+</ul>
 
 <h1>Desktop Keyboard Layout</h1>
 
 <p>
-    The desktop version is based on a standard Russian layout. It has been modified to give access to the additional characters required for the Yupik language, as described by the following charts.
+    The Yupik Cyrillic keyboard (sil_yupik_cyrillic_ru) is now available in both desktop and touch screen layouts. 
+    The desktop version is based on a standard Russian layout. It has been modified to give access to the additional characters required for the Yupik language.
 </p>
 
-<blockquote>
-    <p>
-        <strong>Yellow keys</strong>&mdash;press any of these keys twice to generate the corresponding Yupik consonant with descender: Қ Ң Ӷ Ҳ. Pressing 'В' twice will generate 'Ў'.
-    </p>
-    <p>
-        <strong>Orange keys</strong>&mdash;press any of these keys twice to generate the corresponding Yupik vowel with macron above it: Ӯ А̄ Я̄ Ӣ Ю̄
-    </p>
-</blockquote>
+<p style="margin-bottom: 0.5em;">In the following keyboard charts, any key shown with two Cyrillic characters can be pressed once to produce the first character, or twice to produce the second character. For example, pressing</p>
 
-<h3>Default (unshifted)</h3>
-<p>
-    <a href="LayoutU_color.png"><img class="keyboard" src="LayoutU_color.png" alt="Default (unshifted) state" /></a>
+<div style="width: 30px; display: block; float: left;"> </div>
+<div class="key plain" id="K_Q">
+<div class="keytext">я/я̄</div>
+</div>
+
+<p style="margin-top: 3.5em;">once will output “я”, pressing it a second time will replace the “я” with “я̄”
 </p>
 
-<h3>Shift</h3>
-<p>
-    <a href="LayoutU_S_color.png"><img class="keyboard" src="LayoutU_S_color.png" alt="Shift state" /></a>
-</p>
 
-<h3>Right ALT (unshifted)</h3>
-<p>
-    <a href="LayoutU_RA.png"><img class="keyboard" src="LayoutU_RA.png" alt="Right ALT (unshifted) state" /></a>
-</p>
+<h3 style="clear:left">Unshift</h3>
+
+<div class="key plain" id="K_BKQUOTE">
+    <div class="keytext">ё</div>
+</div>
+<div class="key plain" id="K_1">
+    <div class="keytext">1</div>
+</div>
+<div class="key plain" id="K_2">
+    <div class="keytext">2</div>
+</div>
+<div class="key plain" id="K_3">
+    <div class="keytext">3</div>
+</div>
+<div class="key plain" id="K_4">
+    <div class="keytext">4</div>
+</div>
+<div class="key plain" id="K_5">
+    <div class="keytext">5</div>
+</div>
+<div class="key plain" id="K_6">
+    <div class="keytext">6</div>
+</div>
+<div class="key plain" id="K_7">
+    <div class="keytext">7</div>
+</div>
+<div class="key plain" id="K_8">
+    <div class="keytext">8</div>
+</div>
+<div class="key plain" id="K_9">
+    <div class="keytext">9</div>
+</div>
+<div class="key plain" id="K_0">
+    <div class="keytext">0</div>
+</div>
+<div class="key plain" id="K_HYPHEN">
+    <div class="keytext">-</div>
+</div>
+<div class="key plain" id="K_EQUAL">
+    <div class="keytext">=</div>
+</div>
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-backspace.gif');
+    ">
+    <div class="keycap">Backspace</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 52px;
+    background-image: url('key-tab.gif');
+    ">
+    <div class="keycap">Tab</div>
+</div>
+<div class="key plain" id="K_Q">
+    <div class="keytext">й</div>                        
+</div>
+<div class="key plain" id="K_W">
+    <div class="keytext">ц</div>
+</div>
+<div class="key plain" id="K_E">
+    <div class="keytext">у/ӯ</div>
+</div>
+<div class="key plain" id="K_R">
+    <div class="keytext">к/қ</div>
+</div>
+<div class="key plain" id="K_T">
+    <div class="keytext">е</div>                         
+</div>
+<div class="key plain" id="K_Y">
+    <div class="keytext">н/ң</div>
+</div>
+<div class="key plain" id="K_U">
+    <div class="keytext">г/ӷ</div>
+</div>
+<div class="key plain" id="K_I">
+    <div class="keytext">ш</div>
+</div>
+<div class="key plain" id="K_O">
+    <div class="keytext">щ</div>
+</div>
+<div class="key plain" id="K_P">
+    <div class="keytext">з</div>
+</div>
+<div class="key plain" id="K_LBRKT">
+    <div class="keytext">х</div>
+</div>
+<div class="key plain" id="K_RBRKT">
+    <div class="keytext">ъ</div>
+</div>
+<div class="key plain" id="K_BKSLASH">
+    <div class="keytext">\</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 62px;
+    background-image: url('key-capslock.gif');
+    ">
+    <div class="keycap">Caps Lock</div>
+</div>
+<div class="key plain" id="K_A">
+    <div class="keytext">ф</div>
+</div>
+<div class="key plain" id="K_S">
+    <div class="keytext">ы</div>
+</div>
+<div class="key plain" id="K_D">
+    <div class="keytext">в/ў</div>
+</div>
+<div class="key plain" id="K_F">
+    <div class="keytext">а/а̄</div>
+</div>
+<div class="key plain" id="K_G">
+    <div class="keytext">п</div>
+</div>
+<div class="key plain" id="K_H">
+    <div class="keytext">р</div>
+</div>
+<div class="key plain" id="K_J">
+    <div class="keytext">о</div>
+</div>
+<div class="key plain" id="K_K">
+    <div class="keytext">л</div>
+</div>
+<div class="key plain" id="K_L">
+    <div class="keytext">д</div>
+</div>
+<div class="key plain" id="K_COLON">
+    <div class="keytext">ж</div>
+</div>
+<div class="key plain" id="K_QUOTE">
+    <div class="keytext">э</div>
+</div>
+<div class="key special" id="" style="
+    width: 70px;
+    background-image: url('key-enter.gif');
+    ">
+    <div class="keycap">Enter</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="K_SHIFTL" style="
+    width: 80px;
+    ">
+    <div class="keycap">Shift</div>
+</div>
+<div class="key plain" id="K_Z">
+    <div class="keytext">я/я̄</div>
+</div>
+<div class="key plain" id="K_X">
+    <div class="keytext">ч</div>
+</div>
+<div class="key plain" id="K_C">
+    <div class="keytext">с</div>
+</div>
+<div class="key plain" id="K_V">
+    <div class="keytext">м</div>
+</div>
+<div class="key plain" id="K_B">
+    <div class="keytext">и/ӣ</div>
+</div>
+<div class="key plain" id="K_N">
+    <div class="keytext">т</div>                   
+</div>
+<div class="key plain" id="K_M">
+    <div class="keytext">ь</div>
+</div>
+<div class="key plain" id="K_COMMA">
+    <div class="keytext">б</div>
+</div>
+<div class="key plain" id="K_PERIOD">
+    <div class="keytextwide">ю/ю̄</div>
+</div>
+<div class="key plain" id="K_SLASH">
+    <div class="keytext">.</div>
+</div>
+<div class="key special" id="" style="
+    width: 90px;
+    background-image: url('key-shiftr.gif');
+    ">
+    <div class="keycap">Shift</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-ctrll.gif');
+    ">
+    <div class="keycap">Ctrl</div>
+</div>
+<div style="width: 30px; display: block; float: left;"> </div>
+<div class="key special" id="" style="
+    width: 50px;
+    background-image: url('key-altl.gif');
+    ">
+    <div class="keycap">Alt</div>
+</div>
+<div class="key plain" id="K_SPACE">
+    <div class="keycap"> </div>
+</div>
+<div class="key special" id="" style="
+    width: 50px;
+    background-image: url('key-altr.gif');
+    ">
+    <div class="keycap">Alt</div>
+</div>
+<div style="width: 54px; display: block; float: left;"> </div>
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-ctrlr.gif');
+    ">
+    <div class="keycap">Ctrl</div>
+</div>
+<br style="clear: left">
+
+
+<h3 style="clear:left">Shift</h3>
+
+<div class="key plain" id="K_BKQUOTE">
+    <div class="keytext">Ё</div>
+</div>
+<div class="key plain" id="K_1">
+    <div class="keytext">!</div>
+</div>
+<div class="key plain" id="K_2">
+    <div class="keytext">"</div>
+</div>
+<div class="key plain" id="K_3">
+    <div class="keytext">№</div>
+</div>
+<div class="key plain" id="K_4">
+    <div class="keytext">;</div>
+</div>
+<div class="key plain" id="K_5">
+    <div class="keytext">%</div>
+</div>
+<div class="key plain" id="K_6">
+    <div class="keytext">:</div>
+</div>
+<div class="key plain" id="K_7">
+    <div class="keytext">?</div>
+</div>
+<div class="key plain" id="K_8">
+    <div class="keytext">*</div>
+</div>
+<div class="key plain" id="K_9">
+    <div class="keytext">(</div>
+</div>
+<div class="key plain" id="K_0">
+    <div class="keytext">)</div>
+</div>
+<div class="key plain" id="K_HYPHEN">
+    <div class="keytext">_</div>
+</div>
+<div class="key plain" id="K_EQUAL">
+    <div class="keytext">+</div>
+</div>
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-backspace.gif');
+    ">
+    <div class="keycap">Backspace</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 52px;
+    background-image: url('key-tab.gif');
+    ">
+    <div class="keycap">Tab</div>
+</div>
+<div class="key plain" id="K_Q">
+    <div class="keytext">Й</div>
+</div>
+<div class="key plain" id="K_W">
+    <div class="keytext">Ц</div>
+</div>
+<div class="key plain" id="K_E">
+    <div class="keytext">У/Ӯ</div>
+</div>
+<div class="key plain" id="K_R">
+    <div class="keytext">К/Қ</div>
+</div>
+<div class="key plain" id="K_T">
+    <div class="keytext">Е</div>
+</div>
+<div class="key plain" id="K_Y">
+    <div class="keytext">Н/Ң</div>
+</div>
+<div class="key plain" id="K_U">
+    <div class="keytext">Г/Ӷ</div>
+</div>
+<div class="key plain" id="K_I">
+    <div class="keytext">Ш</div>
+</div>
+<div class="key plain" id="K_O">
+    <div class="keytext">Щ</div>
+</div>
+<div class="key plain" id="K_P">
+    <div class="keytext">З</div>
+</div>
+<div class="key plain" id="K_LBRKT">
+    <div class="keytext">̄Х/Ҳ</div>
+</div>
+<div class="key plain" id="K_RBRKT">
+    <div class="keytext">Ъ</div>
+</div>
+<div class="key plain" id="K_BKSLASH">
+    <div class="keytext">/</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 62px;
+    background-image: url('key-capslock.gif');
+    ">
+<div class="keycap">Caps Lock</div>
+</div>
+<div class="key plain" id="K_A">
+    <div class="keytext">Ф</div>
+</div>
+<div class="key plain" id="K_S">
+    <div class="keytext">Ы</div>
+</div>
+<div class="key plain" id="K_D">
+    <div class="keytext">В/Ў</div>
+</div>
+<div class="key plain" id="K_F">
+    <div class="keytext">А/А̄</div>
+</div>
+<div class="key plain" id="K_G">
+    <div class="keytext">П</div>
+</div>
+<div class="key plain" id="K_H">
+    <div class="keytext">Р</div>
+</div>
+<div class="key plain" id="K_J">
+    <div class="keytext">О</div>
+</div>
+<div class="key plain" id="K_K">
+    <div class="keytext">Л</div>
+</div>
+<div class="key plain" id="K_L">
+    <div class="keytext">Д</div>
+</div>
+<div class="key plain" id="K_COLON">
+    <div class="keytext">Ж</div>
+</div>
+<div class="key plain" id="K_QUOTE">
+    <div class="keytext">Э</div>
+</div>
+<div class="key special" id="" style="
+    width: 70px;
+    background-image: url('key-enter.gif');
+    ">
+    <div class="keycap">Enter</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="K_SHIFTL" style="
+    width: 80px;
+    ">
+    <div class="keycap">Shift</div>
+</div>
+<div class="key plain" id="K_Z">
+    <div class="keytext">Я/Я̄</div>
+</div>
+<div class="key plain" id="K_X">
+    <div class="keytext">Ч</div>
+</div>
+<div class="key plain" id="K_C">
+    <div class="keytext">С</div>
+</div>
+<div class="key plain" id="K_V">
+    <div class="keytext">М</div>
+</div>
+<div class="key plain" id="K_B">
+    <div class="keytext">И/Ӣ</div>
+</div>
+<div class="key plain" id="K_N">
+    <div class="keytext">Т</div>
+</div>
+<div class="key plain" id="K_M">
+    <div class="keytext">Ь</div>
+</div>
+<div class="key plain" id="K_COMMA">
+    <div class="keytext">Б</div>
+</div>
+<div class="key plain" id="K_PERIOD">
+    <div class="keytext">Ю/Ю̄</div>
+</div>
+<div class="key plain" id="K_SLASH">
+    <div class="keytext">,</div>
+</div>
+<div class="key special" id="" style="
+    width: 90px;
+    background-image: url('key-shiftr.gif');
+    ">
+    <div class="keycap">Shift</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-ctrll.gif');
+    ">
+    <div class="keycap">Ctrl</div>
+</div>
+<div style="width: 30px; display: block; float: left;"> </div>
+<div class="key special" id="" style="
+    width: 50px;
+    background-image: url('key-altl.gif');
+    ">
+    <div class="keycap">Alt</div>
+</div>
+<div class="key plain" id="K_SPACE">
+    <div class="keycap"> </div>
+</div>
+<div class="key special" id="" style="
+    width: 50px;
+    background-image: url('key-altr.gif');
+    ">
+    <div class="keycap">Alt</div>
+</div>
+<div style="width: 54px; display: block; float: left;"> </div>
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-ctrlr.gif');
+    ">
+    <div class="keycap">Ctrl</div>
+</div>
+<br style="clear: left">
+
+
+<h3 style="clear:left">Right ALT</h3>
+
+<div class="key plain" id="K_BKQUOTE">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_1">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_2">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_3">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_4">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_5">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_6">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_7">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_8">
+    <div class="keytext">₽</div>
+</div>
+<div class="key plain" id="K_9">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_0">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_HYPHEN">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_EQUAL">
+    <div class="keytext"></div>
+</div>
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-backspace.gif');
+    ">
+    <div class="keycap">Backspace</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 52px;
+    background-image: url('key-tab.gif');
+    ">
+    <div class="keycap">Tab</div>
+</div>
+<div class="key plain" id="K_Q">
+    <div class="keytext"></div>                        
+</div>
+<div class="key plain" id="K_W">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_E">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_R">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_T">
+    <div class="keytext"></div>                         
+</div>
+<div class="key plain" id="K_Y">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_U">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_I">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_O">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_P">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_LBRKT">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_RBRKT">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_BKSLASH">
+    <div class="keytext"></div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 62px;
+    background-image: url('key-capslock.gif');
+    ">
+    <div class="keycap">Caps Lock</div>
+</div>
+<div class="key plain" id="K_A">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_S">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_D">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_F">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_G">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_H">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_J">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_K">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_L">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_COLON">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_QUOTE">
+    <div class="keytext"></div>
+</div>
+<div class="key special" id="" style="
+    width: 70px;
+    background-image: url('key-enter.gif');
+    ">
+    <div class="keycap">Enter</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="K_SHIFTL" style="
+    width: 80px;
+    ">
+    <div class="keycap">Shift</div>
+</div>
+<div class="key plain" id="K_Z">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_X">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_C">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_V">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_B">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_N">
+    <div class="keytext"></div>                   
+</div>
+<div class="key plain" id="K_M">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_COMMA">
+    <div class="keytext"></div>
+</div>
+<div class="key plain" id="K_PERIOD">
+    <div class="keytextwide"></div>
+</div>
+<div class="key plain" id="K_SLASH">
+    <div class="keytext"></div>
+</div>
+<div class="key special" id="" style="
+    width: 90px;
+    background-image: url('key-shiftr.gif');
+    ">
+    <div class="keycap">Shift</div>
+</div>
+<br style="clear: left">
+
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-ctrll.gif');
+    ">
+    <div class="keycap">Ctrl</div>
+</div>
+<div style="width: 30px; display: block; float: left;"> </div>
+<div class="key special" id="" style="
+    width: 50px;
+    background-image: url('key-altl.gif');
+    ">
+    <div class="keycap">Alt</div>
+</div>
+<div class="key plain" id="K_SPACE">
+    <div class="keycap"> </div>
+</div>
+<div class="key special" id="" style="
+    width: 50px;
+    background-image: url('key-altr.gif');
+    ">
+    <div class="keycap">Alt</div>
+</div>
+<div style="width: 54px; display: block; float: left;"> </div>
+<div class="key special" id="" style="
+    width: 60px;
+    background-image: url('key-ctrlr.gif');
+    ">
+    <div class="keycap">Ctrl</div>
+</div>
+<br style="clear: left">
 
 
 <h1>Touch Screen Layout</h1>
 <p>
     The touch screen layout is very similar to the desktop layout. Several characters (ёЁ=+ъЪ\/.,) at the corners of the desktop layout had to be relocated. Yupik characters can be accessed using either a double key press or a long key press.
 </p>
-<blockquote>
-    <p>
-        <strong>Keys with a diagonal line in the upper right corner</strong>&mdash;The diagonal line marks the keys that will respond to a long press. If the key is also colored, at least on of the long-press characters will be a character used in Yupik. Otherwise, the long press will contain numbers, punctuation, or alphabetic characters that are not used in Yupik. 
-    </p>
-    <p>
-        <strong>Yellow keys</strong>&mdash;a double key press or long key press will generate the corresponding Yupik consonant with descender: Қ Ң Ӷ Ҳ. A double or long key press on 'В' will generate 'Ў', and on 'Ь' will generate the hard sign 'Ъ'.
-    </p>
-    <p>
-        <strong>Orange keys</strong>&mdash;a double or long key press will generate the corresponding Yupik vowel with macron above it: Ӯ А̄ Я̄ Ӣ Ю̄
-    </p>
-</blockquote>
+<p>
+    The chart below shows both the default character for each key, and any long press characters associated with the key. Each key is divided into two boxes. The large character in the lower box is the default character for the key—it is what you get if you just press the key normally. The small characters in the upper box are the long press characters associated with the key. If a key does not have any long press characters, the upper box is grayed in. For example:
+</p>
+<div style="width: 30px; display: block; float: left;"> </div>
+<div class="t_key t_longpress" id="K_R">
+    <div class="t_keytextlp">Қ 4</div>
+    <div class="t_keytext">к</div>
+</div>
+<div class="t_key t_comment" id="">
+    <div class="t_textcommenttop"> ← longpress characters</div>
+    <div class="t_textcommentbottom"> ← default character</div>
+</div>
+<br style="clear: left">
+<br style="clear: left">
+<div style="width: 30px; display: block; float: left;"> </div>
+<div class="t_key t_plain" id="K_A">
+    <div class="t_keytext">Ф</div>
+</div>
+<div class="t_key t_comment" id="">
+    <div class="t_textcommenttop"> ← no longpress character</div>
+    <div class="t_textcommentbottom"> ← default character</div>
+</div>
+
+<br style="clear: left">
+
 
 <h3>Default and Shift</h3>
-<p>
-    <a href="touch_default_color.png"><img class="keyboard" src="touch_default_color.png" alt="Default state" /></a>
-</p>
+
+<div class="t_key t_longpress">
+    <div class="t_keytextlp">1</div>
+    <div class="t_keytext">й</div>                        
+</div>
+<div class="t_key t_longpress" id="K_W">
+    <div class="t_keytextlp">2</div>
+    <div class="t_keytext">ц</div>
+</div>
+<div class="t_key t_longpress" id="K_E">
+    <div class="t_keytextlp">Ӯ 3</div>
+    <div class="t_keytext">у</div>
+</div>
+<div class="t_key t_longpress" id="K_R">
+    <div class="t_keytextlp">Қ 4</div>
+    <div class="t_keytext">к</div>
+</div>
+<div class="t_key t_longpress" id="K_T">
+    <div class="t_keytextlp">5</div>
+    <div class="t_keytext">е</div>                         
+</div>
+<div class="t_key t_longpress" id="K_Y">
+    <div class="t_keytextlp">Ң 6</div>
+    <div class="t_keytext">н</div>
+</div>
+<div class="t_key t_longpress" id="K_U">
+    <div class="t_keytextlp">Ӷ 7</div>
+    <div class="t_keytext">г</div>
+</div>
+<div class="t_key t_longpress" id="K_I">
+    <div class="t_keytextlp">8</div>
+    <div class="t_keytext">ш</div>
+</div>
+<div class="t_key t_longpress" id="K_O">
+    <div class="t_keytextlp">9</div>
+    <div class="t_keytext">щ</div>
+</div>
+<div class="t_key t_longpress" id="K_P">
+    <div class="t_keytextlp">0</div>
+    <div class="t_keytext">з</div>
+</div>
+<div class="t_key t_longpress" id="K_LBRKT">
+    <div class="t_keytextlp">Ҳ</div>
+    <div class="t_keytext">х</div>
+</div>
+<br style="clear: left">
+
+<div class="t_key t_plain" id="K_A">
+    <div class="t_keytext">Ф</div>
+</div>
+<div class="t_key t_plain" id="K_S">
+    <div class="t_keytext">Ы</div>
+</div>
+<div class="t_key t_longpress" id="K_D">
+    <div class="t_keytextlp">Ў</div>
+    <div class="t_keytext">В</div>
+</div>
+<div class="t_key t_longpress" id="K_F">
+    <div class="t_keytextlp">А̄</div>
+    <div class="t_keytext">А</div>
+</div>
+<div class="t_key t_plain" id="K_G">
+    <div class="t_keytext">П</div>
+</div>
+<div class="t_key t_plain" id="K_H">
+    <div class="t_keytext">Р</div>
+</div>
+<div class="t_key t_plain" id="K_J">
+    <div class="t_keytext">О</div>
+</div>
+<div class="t_key t_plain" id="K_K">
+    <div class="t_keytext">Л</div>
+</div>
+<div class="t_key t_plain" id="K_L">
+    <div class="t_keytext">Д</div>
+</div>
+<div class="t_key t_plain" id="K_COLON">
+    <div class="t_keytext">Ж</div>
+</div>
+<div class="t_key t_plain" id="K_QUOTE">
+    <div class="t_keytext">Э</div>
+</div>
+<br style="clear: left">
+
+<div class="t_key t_shift" id="K_LSHIFT"></div>
+<div class="t_key t_longpressnarrow" id="K_Z">
+    <div class="t_keytextlp">Я̄</div>
+    <div class="t_keytext">Я</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_X">
+    <div class="t_keytext">Ч</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_C">
+    <div class="t_keytext">С</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_V">
+    <div class="t_keytext">М</div>
+</div>
+<div class="t_key t_longpressnarrow" id="K_B">
+    <div class="t_keytextlp">Ӣ</div>
+    <div class="t_keytext">И</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_N">
+    <div class="t_keytext">Т</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_M">
+    <div class="t_keytext">Ь</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_COMMA">
+    <div class="t_keytext">Б</div>
+</div>
+<div class="t_key t_longpressnarrow" id="K_PERIOD">
+    <div class="t_keytextlp">Ю̄</div>
+    <div class="t_keytext">Ю</div>
+</div>
+<div class="t_key t_erase" id=""></div>
+<br style="clear: left">
+
+<div class="t_key t_numlock" id="">
+    <div class="t_numlocktext">123</div>
+</div>
+<div class="t_key t_menu" id=""></div>
+<div class="t_key t_plain" id="">
+    <div class="t_keytext">,</div>
+</div>
+<div class="t_key t_space" id=""></div>
+<div class="t_key t_longpressperiod" id="K_D">
+    <div class="t_keytextlpperiod">, ? ! ; : ' " @ #</div>
+    <div class="t_keytext">.</div>
+</div>
+<div class="t_key t_enter" id=""></div>
+<br style="clear: left">
+
+
 
 <h3>Numeric</h3>
-<p>
-    <a href="touch_numeric.png"><img class="keyboard" src="touch_numeric.png" alt="Numeric" /></a>
-</p>
+
+<div class="t_key t_plain">
+    <div class="t_keytext">1</div>                        
+</div>
+<div class="t_key t_plain" id="K_W">
+    <div class="t_keytext">2</div>
+</div>
+<div class="t_key t_plain" id="K_E">
+    <div class="t_keytext">3</div>
+</div>
+<div class="t_key t_plain" id="K_R">
+    <div class="t_keytext">4</div>
+</div>
+<div class="t_key t_plain" id="K_T">
+    <div class="t_keytext">5</div>
+</div>
+<div class="t_key t_plain" id="K_Y">
+    <div class="t_keytext">6</div>
+</div>
+<div class="t_key t_plain" id="K_U">
+    <div class="t_keytext">7</div>
+</div>
+<div class="t_key t_plain" id="K_I">
+    <div class="t_keytext">8</div>
+</div>
+<div class="t_key t_plain" id="K_O">
+    <div class="t_keytext">9</div>
+</div>
+<div class="t_key t_plain" id="K_P">
+    <div class="t_keytext">0</div>
+</div>
+<div class="t_key t_plain" id="K_LBRKT">
+    <div class="t_keytext">-</div>
+</div>
+<br style="clear: left">
+
+<div class="t_key t_plain" id="K_A">
+    <div class="t_keytext">!</div>
+</div>
+<div class="t_key t_plain" id="K_S">
+    <div class="t_keytext">"</div>
+</div>
+<div class="t_key t_longpress" id="K_D">
+    <div class="t_keytextlp">&#x2116</div>
+    <div class="t_keytext">#</div>
+</div>
+<div class="t_key t_plain" id="K_F">
+    <div class="t_keytext">;</div>
+</div>
+<div class="t_key t_plain" id="K_G">
+    <div class="t_keytext">%</div>
+</div>
+<div class="t_key t_plain" id="K_H">
+    <div class="t_keytext">:</div>
+</div>
+<div class="t_key t_plain" id="K_J">
+    <div class="t_keytext">?</div>
+</div>
+<div class="t_key t_plain" id="K_K">
+    <div class="t_keytext">*</div>
+</div>
+<div class="t_key t_plain" id="K_L">
+    <div class="t_keytext">(</div>
+</div>
+<div class="t_key t_plain" id="K_COLON">
+    <div class="t_keytext">)</div>
+</div>
+<div class="t_key t_plain" id="K_QUOTE">
+    <div class="t_keytext">_</div>
+</div>
+<br style="clear: left">
+
+<div class="t_key t_shift" id="K_LSHIFT"></div>
+<div class="t_key t_plainnarrow" id="K_Z">
+    <div class="t_keytext">'</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_X">
+    <div class="t_keytext">@</div>
+</div>
+<div class="t_key t_longpressnarrow" id="K_C">
+    <div class="t_keytextlp">£ € $</div>
+    <div class="t_keytext">₽</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_V">
+    <div class="t_keytext">/</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_B">
+    <div class="t_keytext">\</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_N">
+    <div class="t_keytext">=</div>
+</div>
+<div class="t_key t_plainnarrow" id="K_M">
+    <div class="t_keytext">+</div>
+</div>
+<div class="t_key t_longpressnarrow" id="K_COMMA">
+    <div class="t_keytextlp">{ < «</div>
+    <div class="t_keytext">[</div>
+</div>
+<div class="t_key t_longpressnarrow" id="K_PERIOD">
+    <div class="t_keytextlp">} > »</div>
+    <div class="t_keytext">]</div>
+</div>
+<div class="t_key t_erase" id=""></div>
+<br style="clear: left">
+
+<div class="t_key t_numlock" id="">
+    <div class="t_numlocktext">abc</div>
+</div>
+
+
+
+
+
+<div class="t_key t_menu" id=""></div>
+<div class="t_key t_plain" id="">
+    <div class="t_keytext">,</div>
+</div>
+<div class="t_key t_space" id=""></div>
+<div class="t_key t_plain" id="K_D">
+    <div class="t_keytext">.</div>
+</div>
+<div class="t_key t_enter" id=""></div>
+<br style="clear: left">
+
+
+
+
+
+
 
 <h3>List of characters available on long press keys</h3>
-<blockquote>
+
+<div class="long_narrow_table">
     <table>
         <tr>
             <th>key</th>
             <th>long-press characters</th>
-        </tr><tr>
+        </tr>
+        <tr>
             <td>Й</td>
             <td>1</td>
         </tr>
@@ -134,6 +1234,13 @@
             <td>Х</td>
             <td>Ҳ</td>
         </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>key</th>
+            <th>long-press characters</th>
+        </tr>
         <tr>
             <td>В</td>
             <td>Ў</td>
@@ -159,7 +1266,7 @@
             <td>Ю&#x0304</td>
         </tr>
         <tr>
-            <td>.</td>
+            <td>(period) .</td>
             <td>? ! ; : ' " @ #</td>
         </tr>
         <tr>
@@ -179,7 +1286,7 @@
             <td>&#x007D  &#x003E  &#x00BB</td>
         </tr>
     </table>
-</blockquote>
+</div>
 
 <h1>See also</h1>
 <p>
