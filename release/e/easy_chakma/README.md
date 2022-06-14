@@ -1,7 +1,7 @@
 Easy Chakma Keyboard
 ======================
 
-Copyright (C) 2015-2022 Bivuti Chakma (Suz Moriz)
+Copyright (C) 2015-2022 Bivuti Chakma
 
 Version 1.21
 
