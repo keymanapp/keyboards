@@ -1,9 +1,9 @@
 Łingít keyboard
 ======================
 
-Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
+Copyright (c) 2015-2022 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation, parts 2007 Chris Harvey
 
-Version 9.2
+Version 10.0
 
 Łingít keyboard layout for Unicode
 
@@ -18,12 +18,5 @@ Supported Platforms
 -------------------
 
  * Mobile
-
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)
- * Modify default and shift layers. There are two keys with period and longpress options. 
-   The longpress options are different on the two keys which is unusual and the keyboard
-   might benefit from consistency.
+ * Desktop (PC, Mac)
    
