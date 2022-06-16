@@ -3,7 +3,6 @@ Mon Anonta keyboard
 
 © Anonta Mon
 
-Version 1.0.1
 
 Description
 -----------
