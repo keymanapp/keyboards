@@ -1,6 +1,10 @@
 Colchis Latin
 ===============================
 
+1.2 (6 Jun 2022)
+------------------
+* Update mobile layout to follow desktop more closely
+
 1.1 (29 Mar 2022)
 ------------------
 * Update keyboard to support the reformed orthography
