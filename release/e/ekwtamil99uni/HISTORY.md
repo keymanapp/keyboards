@@ -1,5 +1,10 @@
 தமிழ்99 | Tamil99 Change History
 ============================
+2.0.3 (15 June 2022)
+--------------------
+* Corrected keys on shift layer of mobile layout
+* Added rule to desktop layout to avoid output of GHIJNU
+* Updated on-screen keyboard to include explicitly keys that were producing default output
 
 2.0.2 (1 June 2020)
 --------------------
