@@ -9,9 +9,11 @@
 #
 
 function display_usage {
-  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [target]"
+  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [-no-update-compiler] [target]"
   echo "  target should be a folder, for example: release, or release/k, or release/k/keyboard"
   echo "  (on keyboards_starter repo, target is not necessary)"
+  echo
+  echo "  -no-update-compiler     Don't check kmcomp version or update it before building, unless kmcomp.exe is missing"
   exit 1
 }
 
@@ -30,6 +32,7 @@ KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
 . "$KEYBOARDROOT/resources/util.sh"
+. "$KEYBOARDROOT/resources/download-compiler.sh"
 
 # Look for xmllint on path or XMLLINT env var
 if [ -z ${XMLLINT+x} ]; then
@@ -95,6 +98,15 @@ if [[ -d "$KEYBOARDROOT/template" ]]; then
     die "This repo should not have both a /release/ folder and a /template/ folder. The /template/ folder should be present only in the keyboards_starter repo."
   fi
   KEYBOARDS_STARTER=1
+fi
+
+#
+# Check if tools need downloading or updating
+#
+
+if ! kmcomp_exists || $DO_UPDATE_COMPILER; then
+  FORCE_UPDATE_COMPILER=false
+  download_and_check_kmcomp $FORCE_UPDATE_COMPILER
 fi
 
 #

@@ -71,6 +71,7 @@ function parse_args {
   START=
   START_BASE=
   START_KEYBOARD=
+  DO_UPDATE_COMPILER=true
 
   local lastkey
   local key
@@ -90,6 +91,9 @@ function parse_args {
           ;;
         -zip-only)
           DO_ZIP_ONLY=true
+          ;;
+        -no-update-compiler)
+          DO_UPDATE_COMPILER=false
           ;;
         -prepare-and-upload-only)
           DO_DATA=false
