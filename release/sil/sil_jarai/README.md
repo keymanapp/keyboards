@@ -1,11 +1,11 @@
-Jarai (ចារាយ) keyboard
+Jarai ចារាយ (SIL) keyboard
 ==============
 
 Version 1.0
 
 Description
 -----------
-This keyboard is designed for the English language. It will also be useful for other languages that do not require special characters.
+Jarai ចារាយ (SIL) keyboard is for typing Jarai language using Khmer script. The keyboard layouts for desktop and touch devices are adapted from Khmer NiDA keyboard.  
 
 Links
 -----

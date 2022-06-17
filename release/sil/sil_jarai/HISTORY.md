@@ -1,4 +1,4 @@
-Jarai (ចារាយ) Change History
+Jarai ចារាយ (SIL) Change History
 ====================
 
 1.0 (2022-06-13)
