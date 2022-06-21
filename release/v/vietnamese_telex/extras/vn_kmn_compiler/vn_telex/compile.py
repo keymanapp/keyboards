@@ -5,7 +5,7 @@ import vn_telex.utils.charcases as charcases
 import vn_telex.utils.vnrhymes as vnr
 import vn_telex.utils.vnrhymes_old as vnro
 import vn_telex.utils.uow_rules as uow
-import vn_telex.utils.qu_tone_transfer as qugitt
+import vn_telex.utils.qu_tone_transfer as qutt
 
 HEADER_PATH = './raw/header.kmn'
 OUT_PATH = './compiled/out.kmn'
@@ -17,7 +17,7 @@ def main():
     start_time = timer()
 
     print('Generating Vietnamese rhymes... ', end='')
-    rhymes = vnro.generate() + vnr.generate() + uow.generate() + qugitt.generate()
+    rhymes = vnro.generate() + vnr.generate() + uow.generate() + qutt.generate()
     print(f'{len(rhymes)} generated. [DONE]')
 
     print('Generating uppercase and lowercase permutations... ', end='')

@@ -3,7 +3,7 @@ from vn_telex.utils.TelexRule import TelexRule
 VOWELS = {
     'a': ['á', 'à', 'ả', 'ã', 'ạ'],
     'e': ['é', 'è', 'ẻ', 'ẽ', 'ẹ'],
-    'i': ['i', 'í', 'ỉ', 'ĩ', 'ị'],
+    'i': ['í', 'ì', 'ỉ', 'ĩ', 'ị'],
     'y': ['ý', 'ỳ', 'ỷ', 'ỹ', 'ỵ'],
     'o': ['ó', 'ò', 'ỏ', 'õ', 'ọ'],
     # 'u': ['ú', 'ù', 'ủ', 'ũ', 'ụ'],  # This is only needed if 'gi' consonant enabled (line 15)
