@@ -1,4 +1,4 @@
-class TelexRule:
+class KeymanRule:
     def __init__(self, base, modifier, result, kmn_clogic=None, kmn_ologic=None):
         self.base = base
         self.modifier = modifier

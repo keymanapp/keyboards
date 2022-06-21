@@ -1,11 +1,11 @@
 from timeit import default_timer as timer
-import vn_telex.utils.progbar as progbar
-from vn_telex.utils.TelexRule import TelexRule
-import vn_telex.utils.charcases as charcases
+import shared.progbar as progbar
+from shared.KeymanRule import KeymanRule
+import shared.charcases as charcases
 import vn_telex.utils.vnrhymes as vnr
 import vn_telex.utils.vnrhymes_old as vnro
 import vn_telex.utils.uow_rules as uow
-import vn_telex.utils.qu_tone_transfer as qutt
+import shared.qu_tone_transfer as qutt
 
 HEADER_PATH = './raw/header.kmn'
 OUT_PATH = './compiled/out.kmn'
@@ -28,18 +28,18 @@ def main():
             base = charcases.apply_case(rhymes[i].base, permutation_line)
             if len(rhymes[i].result) == len(permutation_line):
                 result = charcases.apply_case(rhymes[i].result, permutation_line)
-                rhymes_cases.append(TelexRule(base, rhymes[i].modifier.lower(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
-                rhymes_cases.append(TelexRule(base, rhymes[i].modifier.upper(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                rhymes_cases.append(KeymanRule(base, rhymes[i].modifier.lower(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                rhymes_cases.append(KeymanRule(base, rhymes[i].modifier.upper(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
             elif len(rhymes[i].result) == len(permutation_line) + 1:
                 if rhymes[i].base in QU_EXCLUDES:
                     result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line)
-                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.lower(), result + rhymes[i].result[-1].lower(), kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
-                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.upper(), result + rhymes[i].result[-1].upper(), kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                    rhymes_cases.append(KeymanRule(base, rhymes[i].modifier.lower(), result + rhymes[i].result[-1].lower(), kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                    rhymes_cases.append(KeymanRule(base, rhymes[i].modifier.upper(), result + rhymes[i].result[-1].upper(), kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
                 else:
                     result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line) + rhymes[i].modifier.lower()
-                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.lower(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                    rhymes_cases.append(KeymanRule(base, rhymes[i].modifier.lower(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
                     result = charcases.apply_case(rhymes[i].result[0:-1], permutation_line) + rhymes[i].modifier.upper()
-                    rhymes_cases.append(TelexRule(base, rhymes[i].modifier.upper(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
+                    rhymes_cases.append(KeymanRule(base, rhymes[i].modifier.upper(), result, kmn_clogic=rhymes[i].kmn_clogic, kmn_ologic=rhymes[i].kmn_ologic))
             progbar.print_bar(
                 percentage=round(i / len(rhymes) * 100),
                 message=f'({i}/{len(rhymes)}) Processing {rhymes[i].result}'
