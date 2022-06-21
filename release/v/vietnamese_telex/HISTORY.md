@@ -20,3 +20,6 @@ Vietnamese Telex Change History
 1.03 (2022-05-30)
 * Added missing `quy` + `<tone>` rules. Example: Old behavior: `quy` + `s` would produce `qúy` (incorrect); New (fixed) behavior: `quy` + `s` would produce `quý`.
 * Added smart tonal diacritic placement for `q` + `u` + `<tone>` + `<vowel>` combinations. For example: `q` + `ư` + `s` would produce `qú`, and then `qú` + `a` would produce `quá` instead of `qúa` (incorrect spelling).
+
+1.04 (2022-06-21)
+* Hotfix: Fixed incorrect output for `q` + `u` + `<tone>` + `i` combinations.
