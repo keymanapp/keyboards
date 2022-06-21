@@ -89,7 +89,7 @@
     <tr>
       <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Huyền (falling)</td>
       <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>f</td>
-      <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>huyeen<strong>f</strong></td>
+      <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>huye<strong>e</strong>n<strong>f</strong></td>
       <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>huyền
       </td></tr>
     <tr>
