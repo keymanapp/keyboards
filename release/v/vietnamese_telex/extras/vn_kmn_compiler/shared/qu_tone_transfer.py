@@ -1,4 +1,4 @@
-from vn_telex.utils.TelexRule import TelexRule
+from shared.KeymanRule import KeymanRule
 
 VOWELS = {
     'a': ['á', 'à', 'ả', 'ã', 'ạ'],
@@ -25,7 +25,7 @@ def generate():
                 if vowel != CONSONANTS[consonant_init][-1]:
                     modifier = vowel
                     result = consonant_init + CONSONANTS[consonant_init][-1] + VOWELS[vowel][c_index]
-                    rules.append(TelexRule(base, modifier, result))
+                    rules.append(KeymanRule(base, modifier, result))
     return rules
 
 
