@@ -35,13 +35,13 @@
   <tr>
     <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đ</td>
     <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>dd</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'><strong>d</strong>dau<strong>a</strong></td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d<strong>d</strong>a<strong>a</strong>u</td>
     <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đâu</td>
   </tr>
   <tr>
     <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ê</td>
     <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ee</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'><strong>d</strong>dem<strong>e</strong></td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d<strong>d</strong>e<strong>e</strong>m</td>
     <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đêm</td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@
     </tr>
     <tr>
       <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Ngang (level)</td>
-      <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>z or nothing</td>
+      <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>nothing</td>
       <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ngang</td>
       <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ngang</td>
     </tr>
