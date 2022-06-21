@@ -10,61 +10,6 @@
   Because the Vietnamese alphabet uses a complex system of diacritical marks, VNI requires the user to type in a base letter, followed by one or two characters that represent the diacritical marks:
 </p>
 
-<h2>Non-tonal diacritics</h2>
-
-<table style='border-collapse: collapse;'>
-  <tbody>
-  <tr>
-    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Character</th>
-    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Key pressed</th>
-    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Sample input</th>
-    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Sample output</th>
-  </tr>
-  <tr>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ă</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>a8</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>trang<strong>8</strong></td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>trăng</td>
-  </tr>
-  <tr>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>â</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>a6</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>can<strong>6</strong></td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>cân</td>
-  </tr>
-  <tr>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đ</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d9</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d<strong>9</strong>a<strong>6</strong>u</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đâu</td>
-  </tr>
-  <tr>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ê</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>e6</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d<strong>9</strong>e<strong>6</strong>m</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đêm</td>
-  </tr>
-  <tr>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ô</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>o6</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>nho<strong>6</strong></td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>nhô</td>
-  </tr>
-  <tr>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ơ</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>o7</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>mo<strong>7</strong></td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>mơ</td>
-  </tr>
-  <tr>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ư</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>u7</td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>tu<strong>7</strong></td>
-    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>tư</td>
-  </tr>
-  </tbody>
-</table>
-
 <h2>Tonal diacritics</h2>
 
 <table style='border-collapse: collapse;'>
@@ -117,6 +62,61 @@
       <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>nặng
       </td>
     </tr>
+  </tbody>
+</table>
+
+<h2>Non-tonal diacritics</h2>
+
+<table style='border-collapse: collapse;'>
+  <tbody>
+  <tr>
+    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Character</th>
+    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Key pressed</th>
+    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Sample input</th>
+    <th style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>Sample output</th>
+  </tr>
+  <tr>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>â</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>a6</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>can<strong>6</strong></td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>cân</td>
+  </tr>
+  <tr>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ê</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>e6</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d<strong>9</strong>e<strong>6</strong>m</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đêm</td>
+  </tr>
+  <tr>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ô</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>o6</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>nho<strong>6</strong></td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>nhô</td>
+  </tr>
+  <tr>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ơ</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>o7</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>mo<strong>7</strong></td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>mơ</td>
+  </tr>
+  <tr>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ư</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>u7</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>tu<strong>7</strong></td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>tư</td>
+  </tr>
+  <tr>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>ă</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>a8</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>trang<strong>8</strong></td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>trăng</td>
+  </tr>
+  <tr>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đ</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d9</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>d<strong>9</strong>a<strong>6</strong>u</td>
+    <td style='border: 1px solid rgb(0, 0, 0); padding: 5pt 10pt;'>đâu</td>
+  </tr>
   </tbody>
 </table>
 
