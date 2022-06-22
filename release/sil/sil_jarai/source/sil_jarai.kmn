@@ -111,13 +111,16 @@ group(main) using keys
 + [SHIFT K_K] > 'គ'
 + [K_X] > 'ខ'
 + [K_K] > 'ក'
++ [K_COMMA] > 'ុំ'
++ [RALT K_W] > '៝'
++ [SHIFT K_6] > '៍'
 
 c nul keys
-store(nulShiftKeys)  [SHIFT K_6] [SHIFT K_8] [SHIFT K_R] [SHIFT K_RBRKT] [SHIFT K_BKSLASH] [SHIFT K_PERIOD]
-store(nulDefaultKeys)   [K_RBRKT] [K_BKSLASH] [K_COMMA] 
+store(nulShiftKeys)  [SHIFT K_8] [SHIFT K_R] [SHIFT K_RBRKT] [SHIFT K_BKSLASH] [SHIFT K_PERIOD]
+store(nulDefaultKeys)   [K_RBRKT] [K_BKSLASH] 
 store(nulAltGrKeys) [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] \
-                    [RALT K_HYPHEN] [RALT K_EQUAL] [RALT K_Q] [RALT K_W] [RALT K_E] [RALT K_R] [RALT K_T] [RALT K_Y] \
-                    [RALT K_U] [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] \
+                    [RALT K_HYPHEN] [RALT K_EQUAL] [RALT K_Q] [RALT K_E] [RALT K_R] [RALT K_T] [RALT K_Y] [RALT K_U] \
+                    [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H]\
                     [RALT K_H] [RALT K_J] [RALT K_Z] [RALT K_X] [RALT K_C] [RALT K_V] [RALT K_N] [RALT K_M]
 store(nulAllKeys)   outs(nulShiftKeys) outs(nulDefaultKeys) outs(nulAltGrKeys)
 
