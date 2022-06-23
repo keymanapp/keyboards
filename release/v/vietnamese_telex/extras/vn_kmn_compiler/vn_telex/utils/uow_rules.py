@@ -1,4 +1,4 @@
-from vn_telex.utils.TelexRule import TelexRule
+from shared.KeymanRule import KeymanRule
 
 MODIFIER = 'w'
 BASE = 'uo'
@@ -12,11 +12,11 @@ def generate():
 
     for final in FINAL:
         if len(final) == 1:
-            rules.append(TelexRule(PHRASE, final, CORRECTION + final))
+            rules.append(KeymanRule(PHRASE, final, CORRECTION + final))
 
     for final in FINAL:
-        rules.append(TelexRule(BASE + final, MODIFIER, CORRECTION + final))
-        rules.append(TelexRule(CORRECTION + final, MODIFIER, BASE + final + MODIFIER))
+        rules.append(KeymanRule(BASE + final, MODIFIER, CORRECTION + final))
+        rules.append(KeymanRule(CORRECTION + final, MODIFIER, BASE + final + MODIFIER))
 
     return rules
 
