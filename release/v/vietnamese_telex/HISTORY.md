@@ -23,3 +23,6 @@ Vietnamese Telex Change History
 
 1.04 (2022-06-21)
 * Hotfix: Fixed incorrect output for `q` + `u` + `<tone>` + `i` combinations.
+
+1.05 (2022-06-23)
+* Hotfix: Address Keyman compiler warnings on duplicate/overidden rules to improve performance and make code maintenance easier. More details [here](0)
