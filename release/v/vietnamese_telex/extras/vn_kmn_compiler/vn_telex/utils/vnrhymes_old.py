@@ -2,7 +2,7 @@
 # Generate all possible Vietnamese rhymes with their Telex sequence.
 # Note: Using Quy tắc đặt dấu thanh cũ: https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ
 #
-from vn_telex.utils.TelexRule import TelexRule
+from shared.KeymanRule import KeymanRule
 
 
 KMN_CONTEXT_LOGIC = "if(option_toneplace = '')"
@@ -294,45 +294,45 @@ def generate():
                     if NUCLEI[nuclei][TONE_ID[0]] == 'oa' and final != '':
                         base = NUCLEI[nuclei][TONE_ID[0]] + final
                         result = 'o' + NUCLEI['a'][tone_id] + final
-                        rhymes.append(TelexRule(NUCLEI[nuclei][tone_id], final[0], 'o' + NUCLEI['a'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
+                        rhymes.append(KeymanRule(NUCLEI[nuclei][tone_id], final[0], 'o' + NUCLEI['a'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
                     elif NUCLEI[nuclei][TONE_ID[0]] == 'oe' and final != '':
                         base = NUCLEI[nuclei][TONE_ID[0]] + final
                         result = 'o' + NUCLEI['e'][tone_id] + final
-                        rhymes.append(TelexRule(NUCLEI[nuclei][tone_id], final[0], 'o' + NUCLEI['e'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
+                        rhymes.append(KeymanRule(NUCLEI[nuclei][tone_id], final[0], 'o' + NUCLEI['e'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
                     elif NUCLEI[nuclei][TONE_ID[0]] == 'uy' and final != '':
                         base = NUCLEI[nuclei][TONE_ID[0]] + final
                         result = 'u' + NUCLEI['y'][tone_id] + final
-                        rhymes.append(TelexRule(NUCLEI[nuclei][tone_id], final[0], 'u' + NUCLEI['y'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
+                        rhymes.append(KeymanRule(NUCLEI[nuclei][tone_id], final[0], 'u' + NUCLEI['y'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
                     elif NUCLEI[nuclei][TONE_ID[0]] == 'oo' and final != '':
                         base = NUCLEI[nuclei][TONE_ID[0]] + final
                         result = 'o' + NUCLEI['o'][tone_id] + final
-                        rhymes.append(TelexRule(NUCLEI[nuclei][tone_id], final[0], 'o' + NUCLEI['o'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
+                        rhymes.append(KeymanRule(NUCLEI[nuclei][tone_id], final[0], 'o' + NUCLEI['o'][tone_id] + final[0], kmn_clogic=KMN_CONTEXT_LOGIC))
                     else:
                         base = NUCLEI[nuclei][TONE_ID[0]] + final
                         result = NUCLEI[nuclei][tone_id] + final
 
                     if NUCLEI[nuclei][TONE_ID[0]] in ['oa', 'oe', 'uy', 'oo']:
-                        rhymes.append(TelexRule(base, modifier, result, kmn_clogic=KMN_CONTEXT_LOGIC))
-                        rhymes.append(TelexRule(result, modifier, base + modifier, kmn_clogic=KMN_CONTEXT_LOGIC))
+                        rhymes.append(KeymanRule(base, modifier, result, kmn_clogic=KMN_CONTEXT_LOGIC))
+                        rhymes.append(KeymanRule(result, modifier, base + modifier, kmn_clogic=KMN_CONTEXT_LOGIC))
                     else:
-                        rhymes.append(TelexRule(base, modifier, result))
-                        rhymes.append(TelexRule(result, modifier, base + modifier))
+                        rhymes.append(KeymanRule(base, modifier, result))
+                        rhymes.append(KeymanRule(result, modifier, base + modifier))
 
                     for tone_change in TONE_ID:
                         if tone_change != tone_id and tone_change != TONE_ID[0]:
                             if NUCLEI[nuclei][TONE_ID[0]] == 'oa' and final != '':
-                                rhymes.append(TelexRule(result, TONE_MODIFIER[tone_change], 'o' + NUCLEI['a'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
+                                rhymes.append(KeymanRule(result, TONE_MODIFIER[tone_change], 'o' + NUCLEI['a'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
                             elif NUCLEI[nuclei][TONE_ID[0]] == 'oe' and final != '':
-                                rhymes.append(TelexRule(result, TONE_MODIFIER[tone_change], 'o' + NUCLEI['e'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
+                                rhymes.append(KeymanRule(result, TONE_MODIFIER[tone_change], 'o' + NUCLEI['e'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
                             elif NUCLEI[nuclei][TONE_ID[0]] == 'uy' and final != '':
-                                rhymes.append(TelexRule(result, TONE_MODIFIER[tone_change], 'u' + NUCLEI['y'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
+                                rhymes.append(KeymanRule(result, TONE_MODIFIER[tone_change], 'u' + NUCLEI['y'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
                             elif NUCLEI[nuclei][TONE_ID[0]] == 'oo' and final != '':
-                                rhymes.append(TelexRule(result, TONE_MODIFIER[tone_change], 'o' + NUCLEI['o'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
+                                rhymes.append(KeymanRule(result, TONE_MODIFIER[tone_change], 'o' + NUCLEI['o'][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
                             else:
                                 if NUCLEI[nuclei][TONE_ID[0]] in ['oa', 'oe', 'uy', 'oo']:
-                                    rhymes.append(TelexRule(result, TONE_MODIFIER[tone_change], NUCLEI[nuclei][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
+                                    rhymes.append(KeymanRule(result, TONE_MODIFIER[tone_change], NUCLEI[nuclei][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
                                 else:
-                                    rhymes.append(TelexRule(result, TONE_MODIFIER[tone_change], NUCLEI[nuclei][tone_change] + final))
+                                    rhymes.append(KeymanRule(result, TONE_MODIFIER[tone_change], NUCLEI[nuclei][tone_change] + final))
                 else:
                     continue
 
@@ -348,7 +348,7 @@ def generate():
                                     base_vowel_accented = list(SPECIAL_VOWELS[tone_id][vowel_modifier][k].keys())[0]
                                     if list(hashtable.keys())[0] == base_vowel_accented:
                                         if SPECIAL_VOWELS[TONE_ID[0]][vowel_modifier][k][base_vowel] in FINAL_MATCH[final]:
-                                            rhymes.append(TelexRule(list(hashtable.keys())[0] + final, vowel_modifier, hashtable[base_vowel_accented] + final))
+                                            rhymes.append(KeymanRule(list(hashtable.keys())[0] + final, vowel_modifier, hashtable[base_vowel_accented] + final))
     return rhymes
 
 

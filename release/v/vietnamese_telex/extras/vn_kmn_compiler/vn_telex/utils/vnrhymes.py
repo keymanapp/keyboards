@@ -2,7 +2,7 @@
 # Generate Vietnamese rhymes that specifically uses Quy tắc đặt dấu thanh mới:
 # https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ; with their Telex sequence included.
 #
-from vn_telex.utils.TelexRule import TelexRule
+from shared.KeymanRule import KeymanRule
 
 
 KMN_CONTEXT_LOGIC = "if(option_toneplace = 'new')"
@@ -81,11 +81,11 @@ def generate():
                 if modifier != '' and (final in TONE_RANGE["Full"] or (final in TONE_RANGE['Partial'] and tone_id == TONE_ID[1] or tone_id == TONE_ID[5])):
                     base = NUCLEI[nuclei][TONE_ID[0]] + final
                     result = NUCLEI[nuclei][tone_id] + final
-                    rhymes.append(TelexRule(base, modifier, result, kmn_clogic=KMN_CONTEXT_LOGIC))
-                    rhymes.append(TelexRule(result, modifier, base + modifier, kmn_clogic=KMN_CONTEXT_LOGIC))
+                    rhymes.append(KeymanRule(base, modifier, result, kmn_clogic=KMN_CONTEXT_LOGIC))
+                    rhymes.append(KeymanRule(result, modifier, base + modifier, kmn_clogic=KMN_CONTEXT_LOGIC))
                     for tone_change in TONE_ID:
                         if tone_change != tone_id and tone_change != TONE_ID[0]:
-                            rhymes.append(TelexRule(result, TONE_MODIFIER[tone_change], NUCLEI[nuclei][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
+                            rhymes.append(KeymanRule(result, TONE_MODIFIER[tone_change], NUCLEI[nuclei][tone_change] + final, kmn_clogic=KMN_CONTEXT_LOGIC))
                 else:
                     continue
     return rhymes

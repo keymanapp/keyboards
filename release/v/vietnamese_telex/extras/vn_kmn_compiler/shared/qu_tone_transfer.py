@@ -1,9 +1,9 @@
-from vn_telex.utils.TelexRule import TelexRule
+from shared.KeymanRule import KeymanRule
 
 VOWELS = {
     'a': ['á', 'à', 'ả', 'ã', 'ạ'],
     'e': ['é', 'è', 'ẻ', 'ẽ', 'ẹ'],
-    'i': ['i', 'í', 'ỉ', 'ĩ', 'ị'],
+    'i': ['í', 'ì', 'ỉ', 'ĩ', 'ị'],
     'y': ['ý', 'ỳ', 'ỷ', 'ỹ', 'ỵ'],
     'o': ['ó', 'ò', 'ỏ', 'õ', 'ọ'],
     # 'u': ['ú', 'ù', 'ủ', 'ũ', 'ụ'],  # This is only needed if 'gi' consonant enabled (line 15)
@@ -25,7 +25,7 @@ def generate():
                 if vowel != CONSONANTS[consonant_init][-1]:
                     modifier = vowel
                     result = consonant_init + CONSONANTS[consonant_init][-1] + VOWELS[vowel][c_index]
-                    rules.append(TelexRule(base, modifier, result))
+                    rules.append(KeymanRule(base, modifier, result))
     return rules
 
 
