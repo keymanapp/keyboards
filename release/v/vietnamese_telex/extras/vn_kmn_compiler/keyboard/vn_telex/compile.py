@@ -2,10 +2,13 @@ from timeit import default_timer as timer
 import shared.progbar as progbar
 from shared.KeymanRule import KeymanRule
 import shared.charcases as charcases
-import vn_telex.utils.vnrhymes as vnr
-import vn_telex.utils.vnrhymes_old as vnro
-import vn_telex.utils.uow_rules as uow
+import shared.uow_rules as uow
+import shared.cuow_rules as cuow
+import shared.cuowc_rules as cuowc
 import shared.qu_tone_transfer as qutt
+import keyboard.vn_telex.utils.vnrhymes as vnr
+import keyboard.vn_telex.utils.vnrhymes_old as vnro
+
 
 HEADER_PATH = './raw/header.kmn'
 OUT_PATH = './compiled/out.kmn'
@@ -17,7 +20,12 @@ def main():
     start_time = timer()
 
     print('Generating Vietnamese rhymes... ', end='')
-    rhymes = vnro.generate() + vnr.generate() + uow.generate() + qutt.generate()
+    rhymes = uow.generate(modifier='w') + \
+             cuow.generate(modifier='w') + \
+             cuowc.generate() + \
+             qutt.generate() +\
+             vnro.generate() + \
+             vnr.generate()
     print(f'{len(rhymes)} generated. [DONE]')
 
     print('Generating uppercase and lowercase permutations... ', end='')
