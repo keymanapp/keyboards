@@ -1,5 +1,6 @@
 from shared.KeymanRule import KeymanRule
 
+
 VOWELS = {
     'a': ['á', 'à', 'ả', 'ã', 'ạ'],
     'e': ['é', 'è', 'ẻ', 'ẽ', 'ẹ'],
