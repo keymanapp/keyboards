@@ -12,7 +12,7 @@ function download_and_unzip_kmcomp() {
 }
 
 function get_kmcomp_version() {
-  local VERSION=$("$KMCOMP_LAUNCHER" "$KMCOMP" | grep -a Version | cut -d" " -f 2 - | sed -E 's/([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+  local VERSION=$($KMCOMP_LAUNCHER "$KMCOMP" | grep -a Version | cut -d" " -f 2 - | sed -E 's/([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
   echo $VERSION
 }
 
@@ -34,7 +34,7 @@ function download_and_check_kmcomp() {
   fi
 
   if [ "$REQUIRED_VERSION" != "$KMCOMP_VERSION" ] || $force; then
-    echo "Required version is $REQUIRED_VERSION; current version is $KMCOMP_VERSION"
+    echo "Notice: kmcomp current version is $KMCOMP_VERSION but required version is $REQUIRED_VERSION."
     download_and_unzip_kmcomp "$REQUIRED_VERSION" "$REQUIRED_TIER"
   # else
     # echo "Required version $REQUIRED_VERSION is the same as the current version $KMCOMP_VERSION"
