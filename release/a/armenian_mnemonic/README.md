@@ -1,8 +1,6 @@
 Armenian Mnemonic keyboard
 ==============
 
-Version 1.0.7
-
 Description
 -----------
 Armenian Mnemonic keyboard layout.
