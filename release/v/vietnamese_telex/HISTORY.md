@@ -16,3 +16,13 @@ Vietnamese Telex Change History
 * Added rhymes: `uym`, `uým`, `uỳm`, `uỷm`, `uỹm` and `uỵm` (currently no evidence of usage in either spoken or written Vietnamese, but I included them anyway as to future proof this IME in case those rhymes ever get used).
 * **Feature:** Merged features from my other keyboard [Vietnamese Telex (Legacy Mode)](https://keyman.com/keyboards/vietnamese_telex_legacy). The user can now choose from `Keyman Configuration / Keyboard Layouts / Vietnamese Telex / Keyboard Options` which tonal diacritics placement convention they want to use (See: [Quy tắc đặt dấu thanh trong chữ quốc ngữ](https://vi.wikipedia.org/wiki/Quy_tắc_đặt_dấu_thanh_trong_chữ_quốc_ngữ)). **Note: Because of its popularity, the older convention is now the default setting when the user first install this keyboard.** [Vietnamese Telex (Legacy Mode)](https://keyman.com/keyboards/vietnamese_telex_legacy) is now deprecated.
 * Additional documentation.
+
+1.03 (2022-05-30)
+* Added missing `quy` + `<tone>` rules. Example: Old behavior: `quy` + `s` would produce `qúy` (incorrect); New (fixed) behavior: `quy` + `s` would produce `quý`.
+* Added smart tonal diacritic placement for `q` + `u` + `<tone>` + `<vowel>` combinations. For example: `q` + `ư` + `s` would produce `qú`, and then `qú` + `a` would produce `quá` instead of `qúa` (incorrect spelling).
+
+1.04 (2022-06-21)
+* Hotfix: Fixed incorrect output for `q` + `u` + `<tone>` + `i` combinations.
+
+1.05 (2022-06-23)
+* Hotfix: Address Keyman compiler warnings on duplicate/overidden rules to improve performance and make code maintenance easier. More details [here](https://github.com/keymanapp/keyboards/pull/1889)
