@@ -2,7 +2,7 @@
 store(&NAME) 'Hausa Ajami (QWERTY)'
 store(&COPYRIGHT) '© 2022 SIL International'
 store(&KMW_RTL) '1'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'hausa_ajami_qwerty.ico'
 store(&VISUALKEYBOARD) 'hausa_ajami_qwerty.kvks'
@@ -16,7 +16,6 @@ store(key_digits)   [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT
                     [RALT K_7] [RALT K_8] [RALT K_9]
 store(ajami_digits) U+0660     U+0661     U+0662     U+0663     U+0664     U+0665     U+0666 \
                     U+0667     U+0668     U+0669
-
 
 store(Kpunct)    [SHIFT K_1]       [RALT K_QUOTE]    [SHIFT K_3] [RALT K_RBRKT]  [SHIFT K_8]     [SHIFT K_HYPHEN] [SHIFT K_6] \
                  [SHIFT K_PERIOD]  [K_HYPHEN]        [K_EQUAL]   [K_LBRKT]       [SHIFT K_2]     [K_RBRKT]        [K_BKQUOTE] \
@@ -37,10 +36,10 @@ store(Udia)      U+064E      U+064F           U+0650 U+0651      U+0652 U+0653  
                  U+065C      U+0670 
 
 store(KbaseD)    [K_A]  [K_B]  [K_C]  [K_D]  [K_F]  [K_G]  [K_H]  [K_J]  [K_K]  \
-                 [K_L]  [K_M]  [K_N]  [K_P]  [K_Q]  [K_R]  [K_S]  [K_T]  [K_V]  \ 
+                 [K_L]  [K_M]  [K_N]  [K_P]  [K_R]  [K_S]  [K_T]  [K_V]  \ 
                  [K_W]  [K_X]  [K_Y]  [K_Z]  [K_SLASH]     [K_COLON]
 store(UbaseD)    U+0627 U+0628 U+062B U+062F U+0641 U+063A U+062D U+062C U+0643 \
-                 U+0644 U+0645 U+0646 nul    U+0642 U+0631 U+0633 U+062A U+0639 \
+                 U+0644 U+0645 U+0646 nul    U+0631 U+0633 U+062A U+0639 \
                  U+0648 U+069F U+06CC U+0632 U+0623        U+0625     
 store(KbaseS)    [SHIFT K_B] [SHIFT K_C] [SHIFT K_D] [SHIFT K_F]     [SHIFT K_H]      [SHIFT K_I]      [SHIFT K_J]      [SHIFT K_K]  \
                  [SHIFT K_L] [SHIFT K_Q] [SHIFT K_S] [SHIFT K_U]     [SHIFT K_V]  \ 
@@ -55,8 +54,6 @@ store(KbaseW)    [RALT K_B] [RALT K_F] [RALT K_G] [RALT K_H] [RALT K_K]  \
 store(UbaseW)    U+0751     U+08BB     U+08C3     U+0629     U+0763 \
                  U+08BD     U+08BC \
                  U+08C4     U+063F     U+0638
-
-
 
 store(Khack) [RALT SHIFT K_K] [RALT SHIFT K_N] [RALT SHIFT K_G] [RALT SHIFT K_F] [RALT SHIFT K_Y] [RALT SHIFT K_B] \
              [RALT SHIFT K_Q] [RALT SHIFT K_C]
@@ -76,23 +73,19 @@ store(extra_punct)  U+0024                 U+0025           U+0026              
                   U+005e                 U+005f           U+007b                U+007c                 U+007d \
                   U+007e                 U+00d7           U+00f7
 
-
-
 c tanween
 store(Udia1)      U+064E U+064F U+0650
 store(Udia2)      U+064B U+064c U+064d
-
-
 
 group(main) using keys
 
 + any(key_digits) > index(ajami_digits,1)
 + any(intl_digits) > index(intl_digits,1)
 + any(Kpunct) > index(Upunct,1)
-+ any(Kdia) > index(Udia,1) use(tanween)
 + any(KbaseD) > index(UbaseD,1)
 + any(KbaseS) > index(UbaseS,1)
 + any(KbaseW) > index(UbaseW,1)
++ any(Kdia) > index(Udia,1) use(tanween)
 
 c + any(Khack) > index(Uhack,1)
 

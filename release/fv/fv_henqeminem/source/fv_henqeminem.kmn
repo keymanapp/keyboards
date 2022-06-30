@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.1"
+store(&KEYBOARDVERSION) "9.1.2"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "hur"
-store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) 'Hǝn̓q̓ǝmin̓ǝm'
 store(&BITMAP) 'fv_henqeminem.ico'
 store(&VISUALKEYBOARD) 'fv_henqeminem.kvks'
@@ -199,26 +199,26 @@ c Original Punctuation and Numbers
 + [SHIFT RALT K_HYPHEN] > '‹'
 + [RALT K_EQUAL] > '»'
 + [RALT K_HYPHEN] > '«'
-+ [SHIFT RALT K_0] > ')'
-+ [SHIFT RALT K_9] > '('
-+ [SHIFT RALT K_8] > '*'
-+ [SHIFT RALT K_7] > '&'
-+ [SHIFT RALT K_6] > '^'
-+ [SHIFT RALT K_5] > '%'
-+ [SHIFT RALT K_4] > '$'
-+ [SHIFT RALT K_3] > '#'
-+ [SHIFT RALT K_2] > '@'
-+ [SHIFT RALT K_1] > '!'
-+ [RALT K_0] > '0'
-+ [RALT K_9] > '9'
-+ [RALT K_8] > '8'
-+ [RALT K_7] > '7'
-+ [RALT K_6] > '6'
-+ [RALT K_5] > '5'
-+ [RALT K_4] > '4'
-+ [RALT K_3] > '3'
-+ [RALT K_2] > '2'
-+ [RALT K_1] > '1'
++ [NCAPS SHIFT RALT K_0] > ')'
++ [NCAPS SHIFT RALT K_9] > '('
++ [NCAPS SHIFT RALT K_8] > '*'
++ [NCAPS SHIFT RALT K_7] > '&'
++ [NCAPS SHIFT RALT K_6] > '^'
++ [NCAPS SHIFT RALT K_5] > '%'
++ [NCAPS SHIFT RALT K_4] > '$'
++ [NCAPS SHIFT RALT K_3] > '#'
++ [NCAPS SHIFT RALT K_2] > '@'
++ [NCAPS SHIFT RALT K_1] > '!'
++ [NCAPS RALT K_0] > '0'
++ [NCAPS RALT K_9] > '9'
++ [NCAPS RALT K_8] > '8'
++ [NCAPS RALT K_7] > '7'
++ [NCAPS RALT K_6] > '6'
++ [NCAPS RALT K_5] > '5'
++ [NCAPS RALT K_4] > '4'
++ [NCAPS RALT K_3] > '3'
++ [NCAPS RALT K_2] > '2'
++ [NCAPS RALT K_1] > '1'
 + [RALT K_QUOTE] > U+0027  
       
 c Language
@@ -282,7 +282,7 @@ c numbers remapped
 + [NCAPS K_7] > 'x̌'
 + [NCAPS K_6] > "š"
 + [NCAPS K_5] > 'č'
-+ [K_4] > 'ʔ'
++ [NCAPS K_4] > 'ʔ'
 + [NCAPS K_3] > "ə"
 + [NCAPS K_2] > 'ʷ'
 + [NCAPS K_1] > "θ"
@@ -290,8 +290,4 @@ c numbers remapped
 nomatch > use(x)                            
 
 group(x) using keys
-
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)
-
 
