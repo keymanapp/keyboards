@@ -6,6 +6,6 @@ Koreguaje Change History
 ----------------
 * Switched ñ to tilde modifier key
 
-0.1 (2022-06-26
+0.1 (2022-06-26)
 ---------------
 * Created using [altgr] modifier for nasal vowels
