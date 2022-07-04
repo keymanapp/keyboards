@@ -3,7 +3,7 @@ Russian Mnemonic R keyboard
 
 Description
 -----------
-Russian Mnemonic keyboard layout.
+Russian Mnemonic R keyboard layout.
 
 Links
 -----
