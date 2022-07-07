@@ -11,8 +11,8 @@ store(&COPYRIGHT) 'Copyright (c) SIL International'
 $keymanonly: store(&mnemoniclayout) '1'
 
 c KeymanWeb-specific header statements
-store(&KMW_HELPFILE) 'sil_euro_latin.html'
-store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
+c store(&KMW_HELPFILE) 'sil_euro_latin.html'
+c store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
 store(&LAYOUTFILE) 'sil_euro_latin.keyman-touch-layout'
 store(&KEYBOARDVERSION) '2.0'
 store(&TARGETS) 'any'
@@ -289,6 +289,7 @@ store(sentencePunctuation) '.?!¿¡'
 
 c Various Unicode spacing characters
 store(whitespace) ' ' U+00A0 U+000D U+000A U+0009 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F
+store(whitespace-dk) outs(whitespace) dk(1)
 c store(zwsp) U+200B
 
 group(NewContext) readonly
@@ -322,8 +323,9 @@ group(detectStartOfSentence) readonly
     c Otherwise, we'll move to the Shift layer only if we see end of a
     c sentence followed by one, two, or three spaces.
     any(sentencePunctuation) any(whitespace) > layer('shift')
-    any(sentencePunctuation) any(whitespace) any(whitespace) > layer('shift')
-    any(sentencePunctuation) any(whitespace) any(whitespace) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) any(whitespace) > layer('shift')
+    any(sentencePunctuation) dk(1) any(whitespace) any(whitespace) any(whitespace) > layer('shift')
 
     c And because we haven't see any of these situations above, we'll
     c move to the default layer. Note that this effectively drops us
