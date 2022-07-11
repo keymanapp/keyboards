@@ -1,0 +1,46 @@
+﻿c Keyboard for typing Nisenan using the current alphabet adopted by the Shingle Springs Band of Miwok Indians (SSBMI) for use in Nisenan language materials.
+c  
+c Version 1.0 developed by Jonathan Geary (jgeary@ssband.org).
+store(&VERSION) '10.0'
+store(&NAME) 'Nisenan'
+store(&COPYRIGHT) '© 2022 Shingle Springs Band of Miwok Indians'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'nisenan.kvks'
+store(&LAYOUTFILE) 'nisenan.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT CTRL K_T] > 'T́'
++ [CTRL K_T] > 't́'
++ [SHIFT CTRL K_K] > 'Ḱ'
++ [CTRL K_K] > 'ḱ'
++ [SHIFT CTRL K_C] > 'Ć'
++ [CTRL K_C] > 'ć'
++ [SHIFT CTRL K_P] > 'Ṕ'
++ [CTRL K_P] > 'ṕ'
++ [CTRL K_EQUAL] > '́'
++ [CTRL K_HYPHEN] > '̆'
++ [SHIFT CTRL K_BKSLASH] > '’'
++ [CTRL K_BKSLASH] > '˙'
++ [SHIFT CTRL K_RBRKT] > 'Ü'
++ [CTRL K_RBRKT] > 'ü'
++ [SHIFT CTRL K_LBRKT] > 'Ʉ'
++ [CTRL K_LBRKT] > 'ʉ'
++ [SHIFT CTRL K_BKQUOTE] > 'AĪ'
++ [CTRL K_BKQUOTE] > 'aī'
++ [CTRL K_U] > 'ŭ'
++ [SHIFT CTRL K_U] > 'Ŭ'
++ [CTRL K_I] > 'ĭ'
++ [SHIFT CTRL K_I] > 'Ĭ'
++ [CTRL K_O] > 'ŏ'
++ [SHIFT CTRL K_O] > 'Ŏ'
++ [CTRL K_E] > 'ĕ'
++ [SHIFT CTRL K_E] > 'Ĕ'
+
++ [T_0061_012B]       > U+0061 U+012B
++ [SHIFT T_0041_012A] > U+0041 U+012A
+
++ [T_0074_0301]       > U+0074 U+0301
++ [SHIFT T_0054_0301] > U+0054 U+0301
