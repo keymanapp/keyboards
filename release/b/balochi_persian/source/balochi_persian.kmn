@@ -1,12 +1,12 @@
 ﻿
 store(&VERSION) '10.0'
-store(&NAME) 'B. Persian'
+store(&NAME) 'Balochi Persian'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'balochi_persian.kvks'
 store(&BITMAP) 'balochi_persian.ico'
 store(&LAYOUTFILE) 'balochi_persian.keyman-touch-layout'
-store(&COPYRIGHT) '© 2019-2020 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '© 2019-2021 SIL International'
+store(&KEYBOARDVERSION) '1.4'
 store(&KMW_HELPTEXT) 'This is a Balochi keyboard based on the standard Windows Persian keyboard.'
 store(&KMW_RTL) '1'
 store(&MESSAGE) 'The Balochi Persian keyboard is distributed under The MIT License (MIT).'
@@ -14,6 +14,14 @@ store(&MESSAGE) 'The Balochi Persian keyboard is distributed under The MIT Licen
 begin Unicode > use(main)
 
 group(main) using keys
++ [CTRL K_B] > 'ذ'
++ [CTRL B08] > '‎'
++ [CTRL B09] > '‏'
++ [CTRL B10] > '–'
++ [SHIFT CTRL E11] > '“'
++ [SHIFT CTRL E12] > '”'
++ [CTRL E11] > '‘'
++ [CTRL E12] > '’'
 + [SHIFT K_QUOTE] > 'ض'
 + [K_W] > 'ئ'
 + [CTRL K_RBRKT] > '['

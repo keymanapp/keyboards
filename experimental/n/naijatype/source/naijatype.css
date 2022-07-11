@@ -1,0 +1,79 @@
+body {
+    x-background: rgb(193, 194, 193);
+    font-family: "Andika","AndikaAfr","Andika New Basic Compact";
+}
+.kmw-key-row {
+}
+.phone.android .kmw-key.kmw-key-default, .phone.ios .kmw-key.kmw-key-default {
+color: black;
+background: none; /* white;*/
+border: none;
+font-size: 1.2em;
+}
+
+.phone.android .kmw-key-layer-group, .phone.ios .kmw-key-layer-group {
+    background: #eee;
+}
+.phone.android .kmw-key.kmw-key-shift, .phone.android .kmw-key.kmw-key-special, .phone.ios .kmw-key.kmw-key-shift, .phone.ios .kmw-key.kmw-key-special {
+    color: #333;
+    background: #ccc;
+}
+.phone.android .kmw-key.kmw-key-default.kmw-spacebar, .phone.ios .kmw-key.kmw-key-default.kmw-spacebar {
+    border: 1pt solid white;
+    border-bottom: none;
+}
+
+.phone.android .kmw-key-popup-icon, .phone.ios .kmw-key-popup-icon {
+    font-size: 0.8em;
+    /*top: 70%;
+    bottom: 0px;
+    right: 8%;
+    left: initial;*/
+    color: #8b8;
+}
+
+.phone.android .kmw-banner-bar, .phone.ios .kmw-banner-bar {
+    background: #cdc;
+    color: #131;
+}
+
+.phone.android .kmw-suggestion-text, .phone.ios .kmw-suggestion-text {
+    color: #131;
+}
+
+.phone.android #kmw-popup-keys, .phone.ios #kmw-popup-keys {
+    background: #fff;
+}
+
+.phone.android #kmw-popup-keys .kmw-key.kmw-key-default, #kmw-popup-keys .kmw-key.kmw-key-default {
+background: #eee;
+}
+
+.phone.android #kmw-popup-keys .kmw-key.kmw-key-default.kmw-key-touched, #kmw-popup-keys .kmw-key.kmw-key-default.kmw-key-touched {
+background-color: #9e9;
+}
+
+.phone.android .kmw-key-touched,  .kmw-key-touched {
+background-color: #9e9;
+}
+
+.phone.android #kmw-popup-keys .kmw-key-square-ex .kmw-key,  #kmw-popup-keys .kmw-key-square-ex .kmw-key {
+margin-bottom: 30px;
+background: #eee;
+color: black;
+}
+.phone.android .kmw-keytip,  .kmw-keytip {
+margin-bottom: 15px;
+}
+#kmw-popup-keys { background-color: #eee; color: black;}
+
+@media (prefers-color-scheme: dark) {
+  div.ios div.kmw-keytip {
+    color:#333;
+  }
+
+  /* Style for callout used on phones */
+  #kmw-popup-callout {
+    background-color: #eff3f9;
+  }
+}

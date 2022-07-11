@@ -69,6 +69,10 @@ function parse_args {
   FLAG_CLEAN=
   FLAG_TARGET=
   START=
+  START_BASE=
+  START_KEYBOARD=
+  DO_UPDATE_COMPILER=true
+  FORCE_UPDATE_COMPILER=false
 
   local lastkey
   local key
@@ -88,6 +92,12 @@ function parse_args {
           ;;
         -zip-only)
           DO_ZIP_ONLY=true
+          ;;
+        -no-update-compiler)
+          DO_UPDATE_COMPILER=false
+          ;;
+        -force-update-compiler)
+          FORCE_UPDATE_COMPILER=true
           ;;
         -prepare-and-upload-only)
           DO_DATA=false
@@ -126,6 +136,11 @@ function parse_args {
       case "$lastkey" in
         -start)
           START="$key"
+          START_BASE=`dirname "$START"`
+          START_KEYBOARD=`basename "$START"`
+          if [[ "START_BASE" == "." ]]; then
+            START_BASE="$START"
+          fi
           ;;
         -t)
           FLAG_TARGET=-t

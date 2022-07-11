@@ -1,0 +1,62 @@
+﻿c Keyboard for Unicode Fonts (Uses Doulos SIL)
+c See also Innu1-u (raised-u only for "Standard Spelling")
+c This keyboard adds vowels with hats, schwaa, and s-wedge
+c Bill Jancewicz June 2005 
+
+store(&VERSION) "10.0"
+store(&NAME) "Innu (Phonemic)"
+store(&COPYRIGHT) '(c) 2005-2020 Bill Jancewicz SIL/NDC'
+c store(&MESSAGE) "This keyboard may be freely used and redistributed"
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.1'
+store(&BITMAP) 'bj_innu_phonemic.ico'
+store(&VISUALKEYBOARD) 'bj_innu_phonemic.kvks'
+store(&LAYOUTFILE) 'bj_innu_phonemic.keyman-touch-layout'
+
+
+begin UNICODE > use(main)
+
+group(main) using keys
+
+c Raised-u
+"k" + "w" > U+006B U+1D58
+"m" + "w" > U+006D U+1D58
+"sh" + "w" > U+0073 U+0068 U+1D58
+"t" + "w" > U+0074 U+1D58
+
+U+1D58 + "a" > "wa" c allows "w" to show preceding vowels (raised u only final)
+U+1D58 + "i" > "wi"              
+U+1D58 + "u" > "wu"
+U+1D58 + "e" > "we"
+
+c Raised-upper case-U
+"K" + "W" > U+004B U+1D41
+"M" + "W" > U+004D U+1D41
+"SH" + "W" > U+0053 U+0048 U+1D41
+"T" + "W" > U+0054 U+1D41
+
+U+1D41 + "A" > "WA" c allows "w" to show preceding vowels (raised U only final)
+U+1D41 + "I" > "WI"              
+U+1D41 + "U" > "WU"
+U+1D41 + "E" > "WE"
+
+c phonetic characters
+"a" + "a" > U+00E2 c a-circumflex
+"i" + "i" > U+00EE c i-circumflex  
+"u" + "u" > U+00FB c u-circumflex
+"e" + "e" > U+00EA c e-circumflex
+
+"A" + "A" > U+00C2 c A-circumflex
+"I" + "I" > U+00CE c I-circumflex
+"U" + "U" > U+00DB c U-circumflex
+"E" + "E" > U+00CA c E-circumflex
+
++ [RALT K_E] > U+0259 c schwa
++ [RALT K_S] > U+0161 c s-wedge
++ [RALT K_N] > U+00F1 c n-tilde
+
++ [SHIFT RALT K_E] > U+018F c capital schwa
++ [SHIFT RALT K_S] > U+0160 c capital s-wedge
++ [SHIFT RALT K_N] > U+00D1 c capital n-tilde
+
+

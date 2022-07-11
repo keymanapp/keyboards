@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.42.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>arcticfox.png</GraphicFile>
-    <MSIFileName>C:\projects\keyboards-starter\indigenous_nt\keymandesktop.msi</MSIFileName>
+    <GraphicFile>newfox.png</GraphicFile>
+    <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
@@ -19,9 +19,39 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Indigenous NT</Name>
-    <Copyright URL="">(c) 2019 Rajiv Rawat</Copyright>
+    <Copyright URL="">(c) 2021 Rajiv Rawat</Copyright>
   </Info>
   <Files>
+    <File>
+      <Name>newfox.png</Name>
+      <Description>File newfox.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>keyboard.css</Name>
+      <Description>File keyboard.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>NotoSans-Regular.ttf</Name>
+      <Description>Font Noto Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\indigenous_nt.js</Name>
+      <Description>File indigenous_nt.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
     <File>
       <Name>..\build\indigenous_nt.kvk</Name>
       <Description>File indigenous_nt.kvk</Description>
@@ -35,14 +65,32 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\indigenous_nt.js</Name>
-      <Description>File indigenous_nt.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>welcome\indigenous_nt_layout.png</Name>
       <Description>File indigenous_nt_layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\layer-default.png</Name>
+      <Description>File layer-default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\layer-alt.png</Name>
+      <Description>File layer-alt.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\layer-longpress.png</Name>
+      <Description>File layer-longpress.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\layer-numeric.png</Name>
+      <Description>File layer-numeric.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
@@ -51,36 +99,27 @@
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>arcticfox.png</Name>
-      <Description>File arcticfox.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
+    </File>  
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Indigenous NT</Name>
       <ID>indigenous_nt</ID>
-      <Version>3.4</Version>
+      <Version>4.0.2</Version>
+      <OSKFont>NotoSans-Regular.ttf</OSKFont>
+      <DisplayFont>NotoSans-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="en-CA">English</Language>
-        <Language ID="fr-CA">French</Language>
-        <Language ID="ikt-Latn">Inuinnaqtun</Language>
-        <Language ID="esi-Latn">Inuvialuktun</Language>
-        <Language ID="cr-Latn">Cree</Language>
-        <Language ID="chp-Latn">Chipewyan</Language>
-        <Language ID="dgr-Latn">Dogrib</Language>
-        <Language ID="gwi-Latn">Gwich'in</Language>
-        <Language ID="xsl-Latn">South Slavey</Language>
-        <Language ID="scs-Latn">North Slavey</Language>
+        <Language ID="en">English</Language>
+        <Language ID="fr">Français</Language>
+        <Language ID="chp">Denë Sųłıné</Language>
+        <Language ID="gwi">Gwichʼin</Language>
+        <Language ID="dgr">Tłı̨chǫ</Language>
+        <Language ID="scs">Sahtú Dene</Language>
+        <Language ID="xsl">Dehcho Dene</Language>
+        <Language ID="den">Dene</Language>
+        <Language ID="ikt">Sallirmiutun + Kangiryuarmiutun</Language>
+        <Language ID="esi">Uummarmiutun</Language>
+        <Language ID="cr-Latn">nēhiyawēwin</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

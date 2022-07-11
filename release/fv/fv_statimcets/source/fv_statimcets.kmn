@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1"
+store(&KEYBOARDVERSION) "9.1.2"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "lil"
-store(&COPYRIGHT) "(c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) 'St̓át̓imcets'
 store(&BITMAP) 'fv_statimcets.ico'
 store(&VISUALKEYBOARD) 'fv_statimcets.kvks'
@@ -215,9 +215,9 @@ store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“
 any(NumbersAndPunctuation) + any(overaccentkey) > context beep
 
 c original values
-store(orig0)  [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_hyphen] [RALT K_equal] [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_QUOTE] [RALT K_COLON] [RALT K_COMMA] [RALT K_PERIOD]
+store(orig0)  [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_hyphen] [RALT K_equal] [NCAPS RALT K_LBRKT] [NCAPS RALT K_RBRKT] [RALT K_QUOTE] [RALT K_COLON] [RALT K_COMMA] [RALT K_PERIOD]
 store(orig1) "‘’«»_+[]';<>"            
-store(punc0) [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_9] [SHIFT RALT K_0] [RALT K_BKSLASH] [SHIFT RALT K_BKSLASH]
+store(punc0) [NCAPS SHIFT RALT K_LBRKT] [NCAPS SHIFT RALT K_RBRKT] [SHIFT RALT K_9] [SHIFT RALT K_0] [NCAPS RALT K_BKSLASH] [NCAPS SHIFT RALT K_BKSLASH]
 store(punc1) "{}‹›\|"
 + any(orig0) > index(orig1,1)
 + any(punc0) > index(punc1,1) 
@@ -245,6 +245,4 @@ nomatch > use(x)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)
                                                         

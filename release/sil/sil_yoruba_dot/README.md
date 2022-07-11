@@ -3,7 +3,7 @@ Yorùbá with Dot keyboard
 
 © 2012-2020 SIL International
 
-Version 1.4
+Version 1.4.1
 
 Description
 -----------

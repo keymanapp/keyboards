@@ -1,0 +1,36 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Buhid'
+store(&COPYRIGHT) '© 2021 Ilham Nurwansah'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'buhid.kvks'
+store(&LAYOUTFILE) 'buhid.keyman-touch-layout'
+store(&MESSAGE) 'Keyboard for tyiping Buhid script'
+store(nul) "acefjoqvxzBCDEFGHJKLMOPQRSTVWXYZ"
+
+begin Unicode > use(main)
+
+group(main) using keys
++ any(nul) > nul
++ [K_U] > 'ᝓ'
++ [K_I] > 'ᝒ'
++ [K_H] > 'ᝑ'
++ [K_S] > 'ᝐ'
++ [K_W] > 'ᝏ'
++ [K_L] > 'ᝎ'
++ [K_R] > 'ᝍ'
++ [K_Y] > 'ᝌ'
++ [K_M] > 'ᝋ'
++ [K_B] > 'ᝊ'
++ [K_P] > 'ᝉ'
++ [K_N] > 'ᝈ'
++ [K_D] > 'ᝇ'
++ [K_T] > 'ᝆ'
++ [SHIFT K_N] > 'ᝅ'
++ [K_G] > 'ᝄ'
++ [K_K] > 'ᝃ'
++ [SHIFT K_U] > 'ᝂ'
++ [SHIFT K_I] > 'ᝁ'
++ [SHIFT K_A] > 'ᝀ'
++ [T_new_2204] > '//'
++ [T_peso] > U+20B1

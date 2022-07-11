@@ -8,86 +8,14 @@
   $pagetitle = 'ThompsonU Keyboard Help';
   require_once('header.php');
 ?>
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>How To Type nɬeʔkèpmxcín (Thompson River Salish)</title>
   <style type='text/css'>
     table { border-collapse: collapse }
     td { border: solid 1px #c0c0c0; font: 1.2em Charis SIL; width: 1.5em; text-align: center; cursor: default }
     th { border: solid 1px #c0c0c0; font: bold 1.2em Charis SIL; width: 1.5em; background: #c0c0c0 }
     h1 { font: bold 12pt Charis SIL }
     #info { position: absolute; background-color: #F6FAB8; border: solid 1px gray; padding: 2px; font: 8pt Arial }
-    
+
   </style>
-  <script type='text/javascript'><!--
-    var divinfo = null;
-                           
-    function getpageoffset(elem)
-    {
-      var res = {x: 0, y: 0};
-      while(elem != null)
-      {
-        res.x += elem.offsetLeft;
-        res.y += elem.offsetTop;
-        elem = elem.offsetParent;
-      }
-      return res;
-    }
-    
-    function trim(s)
-    {
-      var i = 0, j = s.length-1, t = '';
-      while(i < s.length && s.charCodeAt(i) <= 32) i++;
-      while(j >= 0 && s.charCodeAt(j) <= 32) j--;
-      while(i <= j) t += s.charAt(i++);
-      return t;
-    }
-    
-    function tdmouseover(e)
-    {
-      var se = this;
-      with(getpageoffset(se))
-      {
-        divinfo.style.left = x + 4 + 'px';
-        divinfo.style.top = y + se.offsetHeight + 4 + 'px';
-      }
-      var s = '', t = trim(se.innerHTML);
-      //alert(t);
-      
-      if(t == '&nbsp;') return false;
-      
-      for(var i = 0; i < t.length; i++)
-      {                   
-        var v = t.charCodeAt(i);
-        ch = v.toString(16).toUpperCase();
-        while(ch.length < 4) ch='0'+ch;
-        if(s != '') s += ' ';
-        s += 'U+'+ch;
-      }
-      divinfo.innerHTML = s + ' ' + t; //se.innerHTML;
-      divinfo.style.display = 'block';
-    }
-    function tdmouseout(e)
-    {
-      divinfo.style.display = 'none';
-    }
-    
-    function loaded()
-    {
-      var tds = document.getElementsByTagName('td');
-      for(var i = 0; i < tds.length; i++)
-      {
-        if(tds[i].className.indexOf('noinfo') >= 0) continue;
-        tds[i].onmouseover = tdmouseover;
-        tds[i].onmouseout = tdmouseout;
-      }
-      divinfo = document.getElementById('info');
-    } 
-  //--></script>
-</head>
-<body onload='javascript:loaded()'>       
 
 <h1>How To Type nɬeʔkèpmxcín (Thompson River Salish)</h1>
 
@@ -101,7 +29,7 @@ This page explains how to:<br>
  <a href="#bull">Type • (bullet)<br>
  <a href="#rounded">Type rounded consonants</a><br>
  <a href="#rdglott">Type rounded and glottalized consonants</a><p>
- 
+
  <a name="single">When the ThompsonU keyboard is selected, the keys shown in the grey row are reassigned to nɬeʔkèpmxcín letter symbols as shown in the white row:</a>
 <table><tbody>
   <tr><th>4</th></th><th>6</th><th>7</th><th>8</th><th>f</th><th>|</th>&nbsp;</th></tr>
@@ -142,7 +70,7 @@ Note: the shorth double hyphen shows correctly in the Charis SIL font, but may n
 <tr><th>p</th><th>t</th><th>c</th><th>4</th><th>k</th><th>q</th><th>m</th><th>n</th><th>l</th><th>r</th><th>y</th><th>8</th><th>w</th><th>4</th><th>6</th></tr>
 <tr><td>p̓</td><td>t̕</td><td>c̕</td><td>ƛ</td><td>k̕</td><td>q̓</td><td>m̓</td><td>n̓</td><td>l̕</td><td>r̕</td><td>y̓</td><td>ɣ̓</td><td>w̓</td><td>ƛ̓</td><td>ʕ̓</td><th>'</th></tr>
 </table>
-                            
+
 <br />
 
 <a name="subdot">Sub-dotted consonants and vowels are obtained by typing a period followed by the consonant or vowel symbol as shown:</a>
@@ -191,11 +119,75 @@ Sub-dotted vowels with grave stress are obtained by typing a period followed by 
 
 <br />
 
-Note: When the cursor is over any of the symbols (or symbol sequences) in the white rows, their Unicode values are displayed.<p> 
+Note: When the cursor is over any of the symbols (or symbol sequences) in the white rows, their Unicode values are displayed.<p>
 
 <!--<p>&copy; 1994-2007 Tavultesoft Pty Ltd.  All rights reserved.</p>-->
 For related information visit <a href="http://www.meltr.org/">www.meltr.org</a></p>
 <div style='display: none' id='info'></div>
-       
-</body>
-</html>
+
+<script type='text/javascript'>
+    var divinfo = null;
+
+    function getpageoffset(elem)
+    {
+      var res = {x: 0, y: 0};
+      while(elem != null)
+      {
+        res.x += elem.offsetLeft;
+        res.y += elem.offsetTop;
+        elem = elem.offsetParent;
+      }
+      return res;
+    }
+
+    function trim(s)
+    {
+      var i = 0, j = s.length-1, t = '';
+      while(i < s.length && s.charCodeAt(i) <= 32) i++;
+      while(j >= 0 && s.charCodeAt(j) <= 32) j--;
+      while(i <= j) t += s.charAt(i++);
+      return t;
+    }
+
+    function tdmouseover(e)
+    {
+      var se = this;
+      with(getpageoffset(se))
+      {
+        divinfo.style.left = x + 4 + 'px';
+        divinfo.style.top = y + se.offsetHeight + 4 + 'px';
+      }
+      var s = '', t = trim(se.innerHTML);
+      //alert(t);
+
+      if(t == '&nbsp;') return false;
+
+      for(var i = 0; i < t.length; i++)
+      {
+        var v = t.charCodeAt(i);
+        ch = v.toString(16).toUpperCase();
+        while(ch.length < 4) ch='0'+ch;
+        if(s != '') s += ' ';
+        s += 'U+'+ch;
+      }
+      divinfo.innerHTML = s + ' ' + t; //se.innerHTML;
+      divinfo.style.display = 'block';
+    }
+    function tdmouseout(e)
+    {
+      divinfo.style.display = 'none';
+    }
+
+    function loaded()
+    {
+      var tds = document.getElementsByTagName('td');
+      for(var i = 0; i < tds.length; i++)
+      {
+        if(tds[i].className.indexOf('noinfo') >= 0) continue;
+        tds[i].onmouseover = tdmouseover;
+        tds[i].onmouseout = tdmouseout;
+      }
+      divinfo = document.getElementById('info');
+    }
+    loaded();
+  </script>

@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.1'
+store(&KEYBOARDVERSION) '9.1.3'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "caf"
-store(&COPYRIGHT) '(c) 2008-2019 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&COPYRIGHT) '(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Dakelh'
 store(&BITMAP) 'fv_dakelh.ico'
 store(&VISUALKEYBOARD) 'fv_dakelh.kvks'
@@ -160,16 +160,16 @@ c Original Punctuation
 + [RALT K_COMMA] > '<'
 + [SHIFT RALT K_BKQUOTE] > '~'
 + [RALT K_BKQUOTE] > '`'
-+ [SHIFT RALT K_COLON] > ':'
-+ [RALT K_COLON] > ';'
++ [NCAPS SHIFT RALT K_COLON] > ':'
++ [NCAPS RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
 + [RALT K_QUOTE] > U+0027
-+ [RALT K_BKSLASH] > '\'
-+ [SHIFT RALT K_BKSLASH] > '|'
-+ [SHIFT RALT K_RBRKT] > '}'
-+ [SHIFT RALT K_LBRKT] > '{'
-+ [RALT K_RBRKT] > ']'
-+ [RALT K_LBRKT] > '['
++ [NCAPS RALT K_BKSLASH] > '\'
++ [NCAPS SHIFT RALT K_BKSLASH] > '|'
++ [NCAPS SHIFT RALT K_RBRKT] > '}'
++ [NCAPS SHIFT RALT K_LBRKT] > '{'
++ [NCAPS RALT K_RBRKT] > ']'
++ [NCAPS RALT K_LBRKT] > '['
 + [RALT K_EQUAL] > '+'
 + [RALT K_HYPHEN] > '_' 
 
@@ -221,8 +221,3 @@ any(overaccent) any(underaccent) > context(2) context(1)
 
 
 group(x) using keys
-
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)
-
-

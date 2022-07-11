@@ -1,6 +1,10 @@
 Serbian (Cyrillic) Basic Change History
 =======================================
 
+1.2.1 (2020-10-28)
+----------------
+* Increment version number to force recompile of touch layout.
+
 1.2 (2019-07-10)
 ----------------
 * Import from Windows 10                           

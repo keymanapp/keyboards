@@ -1,6 +1,10 @@
 Rawang Change History
 ====================
 
+1.6 (2021-03-10)
+----------------
+* Added tablet layout
+
 1.5 (2020-04-17)
 ----------------
 * Moved to release

@@ -1,6 +1,11 @@
 BU Phonetic Change History
 ====================
 
+2.0.1 (2021-03-18)
+------------------
+* Removed "Terms of Use" section
+* Added Linux to list of targets
+
 2.0 (2020-09-02)
 ----------------
 * Deprecated the legacy BU keyboard

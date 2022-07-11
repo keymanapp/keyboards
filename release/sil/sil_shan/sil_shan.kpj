@@ -4,17 +4,30 @@
     <BuildPath>$PROJECTPATH\build</BuildPath>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
     <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>True</CheckFilenameConventions>
+    <ProjectType>keyboard</ProjectType>
   </Options>
   <Files>
     <File>
       <ID>id_7dd2145ce2a2bab850c9d9d2a7cab5ff</ID>
       <Filename>sil_shan.kmn</Filename>
       <Filepath>source\sil_shan.kmn</Filepath>
-      <FileVersion>1.3</FileVersion>
+      <FileVersion>1.4</FileVersion>
       <FileType>.kmn</FileType>
       <Details>
         <Name>Shan (SIL)</Name>
-        <Copyright>(c) 2012-2018 SIL Interanational</Copyright>
+        <Copyright>(c) SIL International</Copyright>
+      </Details>
+    </File>
+    <File>
+      <ID>id_e09030659928d78e4f65174d8d79b61a</ID>
+      <Filename>sil_shan.kps</Filename>
+      <Filepath>source\sil_shan.kps</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.kps</FileType>
+      <Details>
+        <Name>Shan (SIL)</Name>
+        <Copyright>(c) 2012-2021 SIL International</Copyright>
       </Details>
     </File>
     <File>
@@ -24,18 +37,6 @@
       <FileVersion></FileVersion>
       <FileType>.ico</FileType>
       <ParentFileID>id_7dd2145ce2a2bab850c9d9d2a7cab5ff</ParentFileID>
-    </File>
-    <File>
-      <ID>id_e09030659928d78e4f65174d8d79b61a</ID>
-      <Filename>sil_shan.kps</Filename>
-      <Filepath>source\sil_shan.kps</Filepath>
-      <FileVersion>1.3</FileVersion>
-      <FileType>.kps</FileType>
-      <Details>
-        <Name>Shan (SIL)</Name>
-        <Copyright>(c) 2012-2018 SIL Interanational</Copyright>
-        <Version>1.3</Version>
-      </Details>
     </File>
     <File>
       <ID>id_1ec7254f6dc6b46ec63ea71983fab87a</ID>
@@ -147,6 +148,14 @@
       <Filepath>source\..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</Filepath>
       <FileVersion></FileVersion>
       <FileType>.ttf</FileType>
+      <ParentFileID>id_e09030659928d78e4f65174d8d79b61a</ParentFileID>
+    </File>
+    <File>
+      <ID>id_3d086b247dd3c7b633d01de884a36a84</ID>
+      <Filename>sil_shan.js</Filename>
+      <Filepath>source\..\build\sil_shan.js</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.js</FileType>
       <ParentFileID>id_e09030659928d78e4f65174d8d79b61a</ParentFileID>
     </File>
   </Files>

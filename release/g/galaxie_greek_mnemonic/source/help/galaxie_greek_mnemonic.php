@@ -35,7 +35,7 @@ END;
 
 <h1>Galaxie Greek (Mnemonic) Keyboard</h1>
 
-        <p style='margin:0px'>Keyboard &#169; 2004-2018 Galaxie Software and SIL International</p>
+        <p style='margin:0px'>Keyboard &#169; 2004-2021 Galaxie Software and SIL International</p>
 
         <br/>
         <a href="#Overview">Overview</a><br/>
@@ -2212,26 +2212,6 @@ END;
                 effort has assisted greatly in enabling people to communicate in Koine Greek.
             </p>
 
-                <p>
-                	Version 3.2.1 released 14 Sept 2018. Add support for Linux.<br/>
-                	Version 3.2 released 10 Aug 2018. Moved source to GitHub.<br/>
-                	Version 3.1 released 24 May 2012. Added to Hebrew keyboard Latin output and Ctrl+Space (to prevent word-final form). Amended Hebrew help.<br/>
-                	Version 3.0 released 23 August 2011. Optimised for multiple European hardware layouts.<br/>
-                	Version 2.1 released 15 December 2009. Full Greek documentation.<br/>
-                	Version 2.02 released 11 April 2008. Fixed Greek: rho + dasia and rho + psili with [ and ] keys.<br/>
-                	Version 2.0 for Keyman Desktop 7.0. Released 24 October 2007
-                </p>
-
-        </div>
-        <div id="Copyright" class='break'>
-            <h3>Copyright</h3>
-            <p>
-                The Galaxie BibleScript Greek keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2011-2018 Galaxie Greek and SIL International. It is released under the MIT license.
-            </p>
-
-
-
-        </div>
 
     </div>
     <script type='text/javascript'>

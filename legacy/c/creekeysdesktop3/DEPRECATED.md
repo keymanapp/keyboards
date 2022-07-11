@@ -1,0 +1,1 @@
+This keyboard has been deprecated and replaced by release/bj/bj_cree_east and release/bj/bj_cree_east_james_bay.

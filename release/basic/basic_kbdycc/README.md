@@ -1,9 +1,9 @@
 Serbian (Cyrillic) Basic keyboard
 ==============
 
-© 2009-2019 SIL International
+© 2009-2020 SIL International
 
-Version 1.2
+Version 1.2.1
 
 Description
 -----------
