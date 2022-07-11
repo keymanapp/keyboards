@@ -9,7 +9,7 @@ function regression_build {
   local SHOULD_BUILD_PACKAGES="$1"
   local SHOULD_DECOMP="$2"
   local BUILDPATH=
-  local BUILDTARGET=
+  local BUILDTARGET="-T kmn"
   local DEBUGBUILD=
 
   #------------------------------------
@@ -18,7 +18,7 @@ function regression_build {
   # We don't want to build .kmp files
   # BUILDTARGET=
   if $SHOULD_BUILD_PACKAGES; then
-    BUILDTARGET="-T kmn"
+    BUILDTARGET=
   fi
 
   # TESTING: build just a specific path
@@ -50,8 +50,10 @@ function regression_build {
   local NO_COMPILER_VERSION=
   $KMCOMP_LAUNCHER "$KMCOMP" | grep -- '-no-compiler-version' && NO_COMPILER_VERSION=-no-compiler-version
 
-  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
-  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
+  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH release 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH experimental 2>&1 | tee -a "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH release 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
+  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH experimental 2>&1 | tee -a "$OUTPUT/build.log" || die "Unable to build keyboards"
 
   #
   # Copy results into target folder
