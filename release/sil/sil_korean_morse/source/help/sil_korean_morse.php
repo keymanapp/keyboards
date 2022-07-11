@@ -12,14 +12,8 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
   $pagetitle = 'Korean Morse (SIL) Keyboard Help';
   require_once('header.php');
 ?>
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" />
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Korean Morse (SIL) Keyboard Help</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
-<body>
+
    <h1>Korean Morse (SIL) Keyboard Help</h1>
    <div id='overview'>
     <h2>Overview</h2>
@@ -37,7 +31,7 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
         <li>Gulim</li>
         <li>Gungsuh</li>
         <li>Malgun Gothic</li>
-    </ul>    
+    </ul>
   <div id='layout'>
    <h2>Keyboard Layout</h2>
     <h3 style="clear:left">Korean Morse (SIL) Keyboard</h3>
@@ -272,7 +266,7 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
     <div class="key special" id="K_CTRLR">
     <div class="keycap">Ctrl</div>
     </div>
-    <br style="clear: left" />    
+    <br style="clear: left" />
 
     <h2 class='details'>Keyboard Details</h2>
     <p>The Korean Morse (SIL) keyboard converts Korean jamo into hangeul after you press <kbd>Spacebar</kbd>. As you type, Korean jamo are shown.
@@ -282,7 +276,7 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
 
     <h2 class='guide'>Complete Typing Guide</h2>
     <div class='consonants'>
-        <h3>Consonants</h3>    
+        <h3>Consonants</h3>
         <table class='grid'>
             <col width=50 />
             <col width=125 />
@@ -292,37 +286,37 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄀ</td><td><span class='keys'>l</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄁ</td><td><span class='keys'>l</span>+<span class='keys'>l</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄂ</td><td><span class='keys'>f</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄃ</td><td><span class='keys'>b</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄄ</td><td><span class='keys'>b</span>+<span class='keys'>b</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄅ</td><td><span class='keys'>v</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄆ</td><td><span class='keys'>m</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄇ</td><td><span class='keys'>w</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄈ</td><td><span class='keys'>w</span>+<span class='keys'>w</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄉ</td><td><span class='keys'>g</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄊ</td><td><span class='keys'>g</span>+<span class='keys'>g</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᆼ</td><td><span class='keys'>k</span></td>
             </tr>
@@ -331,16 +325,16 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄍ</td><td><span class='keys'>p</span>+<span class='keys'>p</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄎ</td><td><span class='keys'>c</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄏ</td><td><span class='keys'>x</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄐ</td><td><span class='keys'>z</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᄑ</td><td><span class='keys'>o</span></td>
             </tr>
@@ -350,14 +344,14 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
         </table>
     </div>
     <div class='vowels'>
-        <h3>Vowels</h3>    
+        <h3>Vowels</h3>
         <table class='grid'>
             <col width=50 />
-            <col width=125 />    
-            
+            <col width=125 />
+
             <tr>
                 <th>Jamo</th><th>Keystroke</th>
-            </tr>            
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅡ</td><td><span class='keys'>e</span></td>
             </tr>
@@ -396,22 +390,22 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅦ</td><td><span class='keys'>t</span>+<span class='keys'>u</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅨ</td><td><span class='keys'>s</span>+<span class='keys'>u</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅪ</td><td><span class='keys'>a</span>+<span class='keys'>e</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅫ</td><td><span class='keys'>a</span>+<span class='keys'>e</span>+<span class='keys'>u</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅬ</td><td><span class='keys'>a</span>+<span class='keys'>u</span></td>
-            </tr>        
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅯ</td><td><span class='keys'>h</span>+<span class='keys'>t</span></td>
-            </tr>    
+            </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅰ</td><td><span class='keys'>h</span>+<span class='keys'>t</span>+<span class='keys'>u</span></td>
             </tr>
@@ -420,8 +414,6 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅴ</td><td><span class='keys'>d</span>+<span class='keys'>u</span></td>
-            </tr>    
+            </tr>
         </table>
     </div>
-</body>
-</html>

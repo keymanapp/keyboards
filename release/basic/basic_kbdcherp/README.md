@@ -1,9 +1,7 @@
 Cherokee Nation Phonetic Basic keyboard
 ==============
 
-(c) 2009-2020 SIL International
-
-Version 1.0
+(c) 2009-2022 SIL International
 
 Description
 -----------

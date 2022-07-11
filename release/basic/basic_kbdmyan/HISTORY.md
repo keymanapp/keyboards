@@ -1,7 +1,12 @@
 Myanmar (Phonetic order) Basic Change History
 ====================
 
+1.2 (2020-11-03)
+------------------
+* Add Padauk font to the package
+
 1.1 (2019-07-23)
+------------------
 * Remove English characters (abc... and ABC...)
 
 1.0 (2019-07-18)

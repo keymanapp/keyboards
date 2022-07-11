@@ -15,13 +15,15 @@ This keyboard is designed for languages using the N’Ko script.
 </p>
 <p>A font must be installed to support this keyboard. Windows includes the <b>Ebrima</b> font which supports the <b>N'Ko</b> script.</p>
 <br/>
+<p>The Noto Sans NKo font is included in the keyboard package to avoid tofu of the newly added characters.</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk'>
 </div>
 
-<h2>Mobile/Tablet Keyboard Layout</h2>
+<h2>Phone/Tablet Keyboard Layout</h2>
 <div id='osk-tablet'>
 </div>
+
 
 

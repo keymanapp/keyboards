@@ -50,5 +50,5 @@ This keyboard is designed for the <b>Kʷak̓ʷala</b> language of the BC Coast r
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

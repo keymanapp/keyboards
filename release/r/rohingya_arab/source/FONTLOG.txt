@@ -1,5 +1,5 @@
 FONTLOG 
-Scheherazade font
+Scheherazade New font
 =================
 
 This file provides detailed information on the Scheherazade font software. 
@@ -9,7 +9,7 @@ and any derivative works.
 Basic Font Information
 ----------------------
 
-Scheherazade, named after the heroine of the classic Arabian Nights tale, 
+Scheherazade New, named after the heroine of the classic Arabian Nights tale, 
 is designed in a similar style to traditional typefaces such as Monotype Naskh, 
 extended to cover the full Unicode Arabic repertoire.
 
@@ -27,10 +27,10 @@ literate communities.
 
 Two fonts from this typeface family are included in this release:
 
-     * Scheherazade Regular
-     * Scheherazade Bold
+     * Scheherazade New Regular
+     * Scheherazade New Bold
 
-This release supports virtually all of the Unicode 8.0 Arabic character 
+This release supports virtually all of the Unicode 13.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
 recommended for normal use). Font smarts are implemented using OpenType 
 and Graphite technologies.
@@ -63,11 +63,50 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-2018-05-10 (SIL TypeTuner) Tuned version of Scheherazade Version 2.020 (maintenance release)
+2020-12-14 (SIL TypeTuner) Tuned version of Scheherazade New Version 3.000 (official release)
 - Tuned and delivered by SIL TypeTuner 
 (http://scripts.sil.org/ttw/fonts2go.cgi).
 - See included xml file for details of feature changes.
 
+2020-11-5 (SIL WSTech team) Scheherazade New Version 3.000 (official release)
+- Renamed font to Scheherazade New
+- Resized glyphs to better fit standard Arabic script fonts
+- Adjusted line-spacing to reflect larger characters
+- Adjusted underline and strikethrough positions and weight
+- Updated Arabic script character repertoire to support all characters in the 
+  Unicode 13.0 BMP Arabic blocks (except for U+08E2 disputed end of ayah)
+- Updated Latin script repertoire to support "Recommended characters for Non-Roman fonts"
+  https://scriptsource.org/entry/gg5wm9hhd3
+- Added U+204F and U+2E41 for Sindhi language support
+- Added U+FDFA (sallallahou alayhe wasallam), U+FDFB (jallajalalouhou), and U+FDFD (bismillah)
+- Added Private Use Area honorific ligatures (all of these are in the Unicode pipeline 
+  at non-stable codepoints).
+- Adjusted vertical position of isolate keheh-like characters
+- Changed design of small v and inverted small v characters (U+063D, U+065A,
+  U+065B, U+0692, U+06B5, U+06C9, U+06CE, U+06EE, U+06EF, U+06FF, U+0756,
+  U+0769, U+077E, U+08B2, U+08BE..U+08C2)
+- Changed design of U+06C5 for Kyrgyz language and added feature cv51, Kyrgyz OE,	 
+  supporting the bar design
+- Changed design of U+0677 and U+06C7
+- Changed design of high hamza characters (U+0674..U+0678)
+- Adjusted the weight and position of some dashes to make them consistent
+- Implemented new Allah ligature rules
+- Implemented support for UNICODE ARABIC MARK RENDERING (UTR #53) 
+- Improved kerning - reh/waw, lam-alef ligature, AE+kaf-like initials, and others
+- Added collision fixes for certain combinations
+- Fixed bug in forming of lam/alef ligatures when automatic kashida justification is turned on
+- Added UI name strings for Graphite and OpenType features
+- Removed support for Sindhi-style heh when Sindhi language is selected
+- Removed support for Urdu-style heh when Urdu language is selected
+- Removed "Arabic U" feature
+- Removed "Show invisible characters" feature
+- Removed "Jeh hack" feature
+- Removed "Dotless head of Khah hack" feature
+- Added feature cv54, Yeh hamza, for Kyrgyz language
+- Added Kyrgyz language support in Graphite and OpenType
+- Added Wolof language support in Graphite and OpenType
+- Added support for Comma downward when Sindhi language is selected
+  
 2015-08-19 (SIL NRSI team) Scheherazade Version 2.100 (official release)
 - Renamed postscript name of Scheherazade Regular from "Scheherazade" 
   to "Scheherazade-Regular"
@@ -124,7 +163,6 @@ ChangeLog
 - 0603 now supports up to 4 digits
 - fixed lam+alef collisions with combining marks below 
 - upper vowel changed to render below maddah (except for 065E)
-
     
 2013-04-18 (SIL NRSI team) Scheherazade Version 1.930 (test release)
 - Typetuner now adjusts Graphite features as well as OpenType 
@@ -199,11 +237,33 @@ ChangeLog
 - First public version
 - Released under the SIL Freeware License
 
+Information for Contributors
+----------------------------
+We welcome contributions to this font project, such as new glyphs, enhanced 
+smart font code, or bug fixes. The best way to begin the process is to file 
+an issue in the Github project (https://github.com/silnrsi/font-scheherazade) 
+or respond to an existing issue and express your interest. Then we can begin 
+to correspond with you regarding what all might be required and discuss how 
+to best submit your contributions.
+
+To enable us to accept contributions in a way that honors your contribution 
+and respects your copyright while preserving long-term flexibility for open 
+source licensing, you would also need to agree to the SIL International 
+Contributor License Agreement for Font Software (v1.0) prior to sending us 
+your contribution. To read more about this requirement and find out how to 
+submit the required form, please visit the CLA information page
+(https://software.sil.org/fontcla).
+
 Acknowledgements
 ----------------
 (Here is where contributors can be acknowledged. If you make modifications
 be sure to add your name (N), email (E), web-address (W) and description
 (D). This list is sorted by last name in alphabetical order.)
+
+N: Sharon Correll
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: Contributing Designer, Graphite, OpenType, and TypeTuner code, and build support
 
 N: Bob Hallissy
 E: fonts@sil.org
@@ -232,6 +292,6 @@ D: Contributing Designer
 
 The Scheherazade project is maintained by SIL International.
 
-For more information please visit the Scheherazade font page on 
+For more information please visit the Scheherazade New font page on 
 SIL International's Computers and Writing Systems website:
-http://scripts.sil.org/Scheherazade
+http://software.sil.org/scheherazade/

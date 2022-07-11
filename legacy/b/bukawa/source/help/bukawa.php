@@ -1,15 +1,8 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
-
 <?php
   $pagename = 'Bukawa Keyboard Help';
   $pagetitle = 'Bukawa Keyboard Help';
   require_once('header.php');
 ?>
-<body lang=EN-US style='tab-interval:.5in'>
 
 <div class=WordSection1>
 
@@ -444,7 +437,3 @@ NORTH ADELAIDE<br>
 <span class=SpellE>Sth</span> Australia 5006</p>
 
 </div>
-
-</body>
-
-</html>

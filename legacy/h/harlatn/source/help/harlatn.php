@@ -1,6 +1,6 @@
 <?php /*
   Name:        Harari (Lâtîn harfi)
-  Copyright:   
+  Copyright:
   Description: This keyboard uses the revised Harari Latin orthography.
   Authors:     Vicnet, State Library of Victoria
 */
@@ -8,17 +8,12 @@
   $pagetitle = 'Harari (Lâtîn harfi) Keyboard Help';
   require_once('header.php');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Harari (Lâtîn harfi) Unicode Keyboard Layout</title>
 <style type="text/css">
 <!--
 body {
 	font-family: "Doulos SIL Compact",Doulos SIL,serif;
 	font-size: 1.1em;
-	background: #ffffff url(or.bmp) no-repeat; 
+	background: #ffffff url(or.bmp) no-repeat;
 	color: #000000;
 	/* margin: 3.5em 0 0 0; */
 	margin: 0px;
@@ -85,9 +80,7 @@ caption {display: none;}
 
 -->
 </style>
-</head>
 
-<body>
 <div id="masthead">
 <h1>Harari (Lâtîn harfi) Unicode keyboard layout</h1>
 </div>
@@ -104,8 +97,8 @@ caption {display: none;}
 
 	<h2>How to type in Harari</h2>
 
-	<p>This keyboard layout was designed for use with the revised Harari Latin orthography adopted by the Harari 
-	Community Language schools in Melbourne, Australia. The Latin script is used to teach the younger 
+	<p>This keyboard layout was designed for use with the revised Harari Latin orthography adopted by the Harari
+	Community Language schools in Melbourne, Australia. The Latin script is used to teach the younger
 	Harari children their own language. </p>
 
 <h3>Normal</h3>
@@ -155,6 +148,3 @@ Australia<br />
 
 </div>
 </div>
-
-</body>
-</html>

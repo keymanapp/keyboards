@@ -1,6 +1,18 @@
 Change History
 =======================
 
+6.0.5 (2022-May 12)
+-------------------
+* Add NCAPS modifier to some rules to avoid inconsistent matches
+
+6.0.4 (2022-Feb-17)
+-----------------
+* Updated to use font from shared folders
+
+6.0.3 (2020-Nov)
+-----------------
+* Major Update to CSS for compatibility with Keyman 10-14
+
 6.0.2 (2020-Jun-23)
 -----------------
 * Updated htm files for readability on Linux

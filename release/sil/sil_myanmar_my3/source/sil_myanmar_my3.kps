@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.118.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -16,9 +16,9 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.5</Version>
+    <Version URL=""></Version>
     <Name URL="">Myanmar3 (SIL)</Name>
-    <Copyright URL="">© 2015-2018 SIL International</Copyright>
+    <Copyright URL="">© 2015-2021 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -52,10 +52,10 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\welcome.html</Name>
-      <Description>File welcome.html</Description>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.html</FileType>
+      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\sil\padauk\FONTLOG.txt</Name>
@@ -93,14 +93,62 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_myanmar_my3.js</Name>
+      <Description>File sil_myanmar_my3.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome\sil_myanmar_my3_mobile_default.png</Name>
+      <Description>File sil_myanmar_my3_mobile_default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\sil_myanmar_my3_mobile_numeric.png</Name>
+      <Description>File sil_myanmar_my3_mobile_numeric.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\sil_myanmar_my3_mobile_shift.png</Name>
+      <Description>File sil_myanmar_my3_mobile_shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu_Font_User_Manual_05.pdf</Name>
+      <Description>File Pyidaungsu_Font_User_Manual_05.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Bold.ttf</Name>
+      <Description>Font Pyidaungsu-Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Numbers.ttf</Name>
+      <Description>Font PyidaungsuNumbers</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Regular.ttf</Name>
+      <Description>Font Pyidaungsu</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Myanmar3 (SIL)</Name>
       <ID>sil_myanmar_my3</ID>
-      <Version>1.5</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</DisplayFont>
+      <Version>1.7.2</Version>
+      <OSKFont>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\mymr\Pyidaungsu\Pyidaungsu-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="my">Burmese</Language>
       </Languages>

@@ -1,6 +1,14 @@
 Change History
 =======================
 
+6.0.6 (2022-Feb-17)
+-----------------
+* Updated to use font from shared folders
+
+6.0.5 (2020-Nov)
+-----------------
+* Major Update to CSS for compatibility with Keyman 10-14
+
 6.0.4 (2020-Jun-23)
 -----------------
 * Updated htm files for readability on Linux

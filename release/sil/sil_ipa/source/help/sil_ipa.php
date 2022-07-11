@@ -2,22 +2,16 @@
   $pagename = 'IPA (SIL) Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
- #section2 td p a {
-     text-decoration: none; color: blue
- }
-  require_once('header.php');
+    #section2 td p a {
+      text-decoration: none; color: blue
+    }
+    #section2 td h1 { font: bold 16pt Tahoma; color: #4444cc }
+    #section2 td h2 { font: bold 14pt Tahoma; color: #4444cc }
+    #section2 td h3 { font: bold 12pt Tahoma; color: #4444cc }
+    #section2 td span.key { font: bold 10pt Verdana; padding: 0 4px; border: solid 1px #aaaaaa; margin: 0 4px; }
 END;
+  require_once('header.php');
 ?>
-
-<head>
-<style type='text/css'>
-    a {text-decoration: none; color: blue} 
-    h1 { font: bold 16pt Tahoma; color: #4444cc }
-    h2 { font: bold 14pt Tahoma; color: #4444cc }
-    h3 { font: bold 12pt Tahoma; color: #4444cc }
-    span.key { font: bold 10pt Verdana; padding: 0 4px; border: solid 1px #aaaaaa; margin: 0 4px; }
-</style>
-</head>
 
 <h2 style='margin-top:0in'>Keyboard Layout</h2>
 
@@ -40,10 +34,10 @@ be used by other traditions such as Americanist, Chinese or Russian). </span></p
 	You may need to exit Keyman configuration before the default behavior changes. This method will change your default to <i>Before</i> and 
 	everytime you switch to this keyboard it will remain using the <i>Before</i> style until you change it back to <i>After</i> style using <b>Keyman configuration</b>.</li>
 <li><b>Using RALT hotkeys</b>: It is also possible to switch from <i>After</i> to <i>Before</i> using the RALT HYPHEN sequence (RALT+-). 
-	Switch back to <i>After</i> using the RALT EQUAL sequence (RALT+=). This method will change to <i>Before</i> during just this session of 
+	Switch back to <i>After</i> using the RALT EQUAL sequence (RALT+=) (RALT+SHIFT+= on a German keyboard). 
+	This method will change to <i>Before</i> during just this session of 
 	using the keyboard. After you stop using the keyboard it will return to <i>After</i>.</li>
 </ol>
-
 
 <h3>Consonants</h3>
 

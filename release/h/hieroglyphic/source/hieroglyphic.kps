@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1093.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,15 +18,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Hieroglyphic</Name>
-    <Copyright URL="">© 2010-2019 Christian Casey</Copyright>
+    <Copyright URL="">© 2010-2022 Christian Casey</Copyright>
   </Info>
   <Files>
-    <File>
-      <Name>..\build\hieroglyphic.js</Name>
-      <Description>File hieroglyphic.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
     <File>
       <Name>..\build\hieroglyphic.kvk</Name>
       <Description>File hieroglyphic.kvk</Description>
@@ -81,12 +75,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\hieroglyphic.js</Name>
+      <Description>File hieroglyphic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hieroglyphic</Name>
       <ID>hieroglyphic</ID>
-      <Version></Version>
+      <Version>1.4</Version>
+      <OSKFont>..\assets\Gardiner.ttf</OSKFont>
+      <DisplayFont>..\assets\Gardiner.ttf</DisplayFont>
       <Languages>
         <Language ID="egy-Egyp">Egyptian (Ancient) (Egyptian hieroglyphs)</Language>
       </Languages>

@@ -3,7 +3,7 @@ Keyboard Data
 
 * Name:           NW Iranian Latin
 * Copyright:      (C) 2017-2020 SIL International
-* Version:        1.0.3
+* Version:        1.0.4
 * Keyman Version: 11.0
 * BCP-47 codes:   glk-Latn
 

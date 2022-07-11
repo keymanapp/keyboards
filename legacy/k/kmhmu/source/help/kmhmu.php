@@ -9,25 +9,19 @@
   $pagetitle = 'Kmhmu 2008 Keyboard Help';
   require_once('header.php');
 ?>
-﻿<html xmlns:keys="http://www.tavultesoft.com/xml/keys"  xmlns:oskexportdetails="http://www.tavultesoft.com/xml/oskexportdetails">
-<head>
-<META http-equiv="Content-Type" content="text/html">
 <link rel="stylesheet" media="screen" href="keydocs.css" type="text/css" />
 <link rel="stylesheet" media="print" href="keydocs.css" type="text/css" />
-<title>Kmhmu 2008 Keyboard and Font</title>
 <style type="text/css">
   p { font: 10pt Tahoma }
   h1 { font: bold 16pt Tahoma; color: #4444cc }
-  h2 { font: bold 12pt Tahoma; color: #4444cc } 
+  h2 { font: bold 12pt Tahoma; color: #4444cc }
   span.kmhmu {font-family: Kmhmu OT; font-size: 12 pt }
 </style>
-</head>
-<body>
 <h1 style='margin-bottom: 2px'>Kmhmu 2008 Keyboard and Font</h1>
 <p>Thank you for downloading and installing the <b>Kmhmu 2008</b> keyboard/font package for <i>Tavultesoft <b>Keyman</b></i>. </p>
 <p>This package includes the <b>Kmhmu 2008</b> keyboard and the compatible font <b>Kmhmu OT</b>.</p>
 <h2>Using the Kmhmu OT Font</h1>
-<p>There is currently no Unicode standard encoding for Kmhmu, and standard Lao Unicode (OpenType) fonts do not permit all character sequences found in Kmhmu to be displayed correctly.  
+<p>There is currently no Unicode standard encoding for Kmhmu, and standard Lao Unicode (OpenType) fonts do not permit all character sequences found in Kmhmu to be displayed correctly.
 The <b>Kmhmu OT</b> font has been developed to work around those limitations, while keeping to the Unicode encoding for Lao characters.</p>
 <p>In Microsoft Word and some other Microsoft applications, when selecting the <b>Kmhmu OT</b> font, it is usually necessary to set both the <i>Latin text</i> font and the <i>Complex script</i> font to <b>Kmhmu OT</b>.  A simple way to do this in Word is to create a paragraph (or character) style, and set the font for <i>"all scripts"</i> to be Kmhmu OT.  If the new style is added to your Normal template, it can be applied whenever entering Kmhmu text.</p><h2>Keyboard Layout Notes</h2>
 <p>Keyboard layout (as shown below) follows the Lao standard, with the following minor differences to simplify entry of Kmhmu text:</p>
@@ -99,10 +93,10 @@ The <b>Kmhmu OT</b> font has been developed to work around those limitations, wh
 <div class="keycap">=</div>
 <div class="keytext">ໍ</div>
 </div>
-<div class="key special" id="" style="width: 60px; 
+<div class="key special" id="" style="width: 60px;
 	background-image: url('key-backspace.png');">
 <div class="keycap">Backspace</div>
-</div><br style="clear: left"><div class="key special" id="" style="width: 52px; 
+</div><br style="clear: left"><div class="key special" id="" style="width: 52px;
 	background-image: url('key-tab.png');">
 <div class="keycap">Tab</div>
 </div>
@@ -204,7 +198,7 @@ The <b>Kmhmu OT</b> font has been developed to work around those limitations, wh
 <div class="keycap">'</div>
 <div class="keytext">ງ</div>
 </div>
-<div class="key special" id="" style="width: 70px;    
+<div class="key special" id="" style="width: 70px;
       background-image: url('key-enter.png');">
 <div class="keycap">Enter</div>
 </div><br style="clear: left"><div class="key special" id="K_SHIFTL" style="width: 80px;">
@@ -255,28 +249,28 @@ The <b>Kmhmu OT</b> font has been developed to work around those limitations, wh
 </div>
 <div class="key special" id="" style="
     width: 90px;
-    
+
       background-image: url('key-shiftr.png');
       ">
 <div class="keycap">Shift</div>
-</div><br style="clear: left"><div class="key special" id="" style="width: 60px;    
+</div><br style="clear: left"><div class="key special" id="" style="width: 60px;
       background-image: url('key-ctrll.png');">
 <div class="keycap">L Ctrl</div>
 </div>
 <div style="width: 30px; display: block; float: left;"> </div>
-<div class="key special" id="" style="width: 50px;    
+<div class="key special" id="" style="width: 50px;
       background-image: url('key-altl.png');">
 <div class="keycap">L ALt</div>
 </div>
 <div class="key plain" id="K_SPACE">
 <div class="keycap"> </div>
 </div>
-<div class="key special" id="" style="width: 50px;    
+<div class="key special" id="" style="width: 50px;
       background-image: url('key-altr.png');">
 <div class="keycap">R ALt</div>
 </div>
 <div style="width: 54px; display: block; float: left;"> </div>
-<div class="key special" id="" style="width: 60px;    
+<div class="key special" id="" style="width: 60px;
       background-image: url('key-ctrlr.png');">
 <div class="keycap">R Ctrl</div>
 </div>
@@ -335,10 +329,10 @@ The <b>Kmhmu OT</b> font has been developed to work around those limitations, wh
 <div class="keycap">=</div>
 <div class="keytext">ໍ່</div>
 </div>
-<div class="key special" id="" style="width: 60px;    
+<div class="key special" id="" style="width: 60px;
       background-image: url('key-backspace.png');">
 <div class="keycap">Backspace</div>
-</div><br style="clear: left"><div class="key special" id="" style="width: 52px;    
+</div><br style="clear: left"><div class="key special" id="" style="width: 52px;
       background-image: url('key-tab.png');">
 <div class="keycap">Tab</div>
 </div>
@@ -393,7 +387,7 @@ The <b>Kmhmu OT</b> font has been developed to work around those limitations, wh
 <div class="key plain" id="K_BKSLASH">
 <div class="keycap">\</div>
 <div class='keytext2'>ZWSP</div>
-</div><br style="clear: left"><div class="key special" id="" 
+</div><br style="clear: left"><div class="key special" id=""
   style="width: 62px; background-image: url('key-capslock.png'); ">
 <div class="keycap">Caps Lock</div>
 </div>
@@ -441,7 +435,7 @@ The <b>Kmhmu OT</b> font has been developed to work around those limitations, wh
 <div class="keycap">'</div>
 <div class="keytext">=</div>
 </div>
-<div class="key special" id="" style="width: 70px;    
+<div class="key special" id="" style="width: 70px;
       background-image: url('key-enter.png');">
 <div class="keycap">Enter</div>
 </div><br style="clear: left"><div class="key special" id="K_SHIFTL" style="width: px;">
@@ -490,31 +484,31 @@ The <b>Kmhmu OT</b> font has been developed to work around those limitations, wh
 <div class="keycap">/</div>
 <div class="keytext">)</div>
 </div>
-<div class="key special" id="" style="width: 90px;    
+<div class="key special" id="" style="width: 90px;
       background-image: url('key-shiftr.png');">
 <div class="keycap">Shift</div>
-</div><br style="clear: left"><div class="key special" id="" style="width: 60px;    
+</div><br style="clear: left"><div class="key special" id="" style="width: 60px;
       background-image: url('key-ctrll.png');">
 <div class="keycap">L Ctrl</div>
 </div>
 <div style="width: 30px; display: block; float: left;"> </div>
-<div class="key special" id="" style="width: 50px;    
+<div class="key special" id="" style="width: 50px;
       background-image: url('key-altl.png');">
 <div class="keycap">L ALt</div>
 </div>
 <div class="key plain" id="K_SPACE">
 <div class="keycap"> </div>
 </div>
-<div class="key special" id="" style="width: 50px;    
+<div class="key special" id="" style="width: 50px;
       background-image: url('key-altr.png');">
 <div class="keycap">R ALt</div>
 </div>
 <div style="width: 54px; display: block; float: left;"> </div>
-<div class="key special" id="" style="width: 60px;    
+<div class="key special" id="" style="width: 60px;
       background-image: url('key-ctrlr.png');">
 <div class="keycap">R Ctrl</div>
 </div>
-<br style="clear: left"><br style="clear: left"><h2 style="clear: left">Keyboard layout - with Right  
+<br style="clear: left"><br style="clear: left"><h2 style="clear: left">Keyboard layout - with Right
 Alt</h2>
 <div class="key plain" id="K_BKQUOTE">
 <div class="keycap">`</div>
@@ -564,10 +558,10 @@ Alt</h2>
 <div class="key plain" id="K_EQUAL">
 <div class="keycap">=</div>
 </div>
-<div class="key special" id="" style="width: 60px;    
+<div class="key special" id="" style="width: 60px;
       background-image: url('key-backspace.png');">
 <div class="keycap">Backspace</div>
-</div><br style="clear: left"><div class="key special" id="" style="width: 52px;    
+</div><br style="clear: left"><div class="key special" id="" style="width: 52px;
       background-image: url('key-tab.png');">
 <div class="keycap">Tab</div>
 </div>
@@ -612,7 +606,7 @@ Alt</h2>
 </div>
 <div class="key plain" id="K_BKSLASH">
 <div class="keycap">\</div>
-</div><br style="clear: left"><div class="key special" id="" style="width: 62px;    
+</div><br style="clear: left"><div class="key special" id="" style="width: 62px;
       background-image: url('key-capslock.png');">
 <div class="keycap">Caps Lock</div>
 </div>
@@ -649,7 +643,7 @@ Alt</h2>
 <div class="key plain" id="K_QUOTE">
 <div class="keycap">'</div>
 </div>
-<div class="key special" id="" style="width: 70px;    
+<div class="key special" id="" style="width: 70px;
       background-image: url('key-enter.png');">
 <div class="keycap">Enter</div>
 </div><br style="clear: left"><div class="key special" id="K_SHIFTL" style="width: px;">
@@ -690,28 +684,28 @@ Alt</h2>
 </div>
 <div class="key special" id="" style="
     width: 90px;
-    
+
       background-image: url('key-shiftr.png');
       ">
 <div class="keycap">Shift</div>
-</div><br style="clear: left"><div class="key special" id="" style="width: 60px;    
+</div><br style="clear: left"><div class="key special" id="" style="width: 60px;
       background-image: url('key-ctrll.png');">
 <div class="keycap">L Ctrl</div>
 </div>
 <div style="width: 30px; display: block; float: left;"> </div>
-<div class="key special" id="" style="width: 50px;    
+<div class="key special" id="" style="width: 50px;
       background-image: url('key-altl.png');">
 <div class="keycap">L ALt</div>
 </div>
 <div class="key plain" id="K_SPACE">
 <div class="keycap"> </div>
 </div>
-<div class="key special" id="" style="width: 50px;    
+<div class="key special" id="" style="width: 50px;
       background-image: url('key-altr.png');">
 <div class="keycap">R ALt</div>
 </div>
 <div style="width: 54px; display: block; float: left;"> </div>
-<div class="key special" id="" style="width: 60px;    
+<div class="key special" id="" style="width: 60px;
       background-image: url('key-ctrlr.png');">
 <div class="keycap">R Ctrl</div>
 </div>
@@ -722,5 +716,3 @@ Alt</h2>
 
 <p>Version 1.0 for Keyman Desktop 7.0. Released 29 August 2008. Created by John Durdin.</p>
 <p>This keyboard package may be freely used or distributed in unmodified form.</p>
-</body>
-</html>

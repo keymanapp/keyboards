@@ -1,99 +1,40 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html alng="en">
+
 <head>
-  <meta charset="utf-8">
-    <title>Mozhi Malayalam Keyboard</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <style>
-p { font: 10pt Tahoma }
-h1 { font: bold 16pt Tahoma; color: #4444cc }
-h2 { font: bold 10pt Tahoma; color: 0 }
-    </style>
-    <style type="text/css">
-        .key {
-            float: left;
-            display: block;
-            position: relative;
-            overflow: hidden;
-            height: 35px;
-
-                margin: 2px 0px 0px 2px;
-                border: solid 1px grey;
-
-        }
-
-        #K_SPACE {
-          width: 234px;
-
-        }
-
-        #K_BKSLASH {
-          width: 42px;
-
-        }
-
-        #K_oE2 {
-
-            display:none;
-
-        }
-
-        #K_SHIFTL {
-          width: 80px;
-        }
-
-        .plain {
-
-          background-repeat: no-repeat;
-          width: 34px;
-        }
-
-        .special {
-          background-repeat: no-repeat;
-
-            background: #c0c0c0;
-
-        }
-
-        .keycap {
-          font: bold 7pt Arial;
-          position: absolute;
-          left: 6px;
-          top: 6px;
-        }
-
-        .key .keycap {
-          display: block;
-        }
-
-        .special .keycap {
-          display: block;
-        }
-
-        .keytext {
-
-					font:
-						12pt
-
-						"Arial";
-          position: absolute;
-          display: block;
-          right: 5px;
-          bottom: 4px;
-          color: blue;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <title>Mozhi Malayalam Keyman Keyboard Updated 2.0</title>
 </head>
+
 <body>
-<h1 style="clear:left">Mozhi Malayalam Keyboard</h1>
-<p>
-    This keyboard is designed to type Malayalam using an unshifted and a shifted keyboard. The keyboard types in a phonetic style based on the English (QWERTY) layout. This keyboard currently supports Unicode 5.1.
-</p>
-<br/>
-<h1 style="clear:left">Fonts</h1>
-<p>
-    This keyboard comes packaged with the AnjaliOldLipi.ttf font,. To find other fonts on your computer which support this keyboard, use the Keyman Desktop Font Helper.
-</p>
+    <style>
+        kbd {
+            /* Source: https://www.rgagnon.com/jsdetails/js-nice-effect-the-KBD-tag.html*/
+            margin: 0px 0.1em;
+            padding: 0.1em 0.6em;
+            border-radius: 3px;
+            border: 1px solid rgb(204, 204, 204);
+            color: rgb(51, 51, 51);
+            line-height: 1.4;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            display: inline-block;
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 2px #ffffff;
+            background-color: rgb(247, 247, 247);
+            -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+            -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            text-shadow: 0 1px 0 #fff;
+        }
+    </style>
+    <h1>Mozhi Malayalam Keyman Keyboard Updated 2.0</h1>
+    <p>The first implementation of the Mozhi Malayalam keyboard was done by Raj Nair (Peringodan) in 2015, but the source for the same is lost. This version is a complete re-write, and is updated to match the current spec of Mozhi Scheme Version 2.0 (Unicode
+        11)
+    </p>
+
+    <p>Mozhi is aguably the most popular keyboard layout used by regular netisons for keyboarding Malayalam script. Its wide acceptance is primarilty due to its intuitive design, which match very close to the way people write Malayalam using the Latin alphabets.
+        So this is mainly a transliteration type scheme and it was originally developed for Varamozhi Application.</p>
 
 </body>
-</html>
+</html>  

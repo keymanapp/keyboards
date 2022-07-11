@@ -1,9 +1,9 @@
 Georgian (Ergonomic) Basic keyboard
 ==============
 
-(c) 2009-2019 SIL International
+(c) 2009-2020 SIL International
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------
