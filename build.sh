@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+set -e
+set -u
+
 #
 # This script is built with commands available to Git Bash on Windows. (mingw32)
 #
@@ -9,7 +12,7 @@
 #
 
 function display_usage {
-  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [-no-update-compiler|-force-update-compiler] [target]"
+  echo "Usage: $0 [-validate] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [-no-update-compiler|-force-update-compiler] [target]"
   echo "  target should be a folder, for example: release, or release/k, or release/k/keyboard"
   echo "  (on keyboards_starter repo, target is not necessary)"
   echo
@@ -52,13 +55,7 @@ locate_keyboardinfo_schema
 #
 
 function parse_args {
-  DO_VALIDATE=true
   DO_BUILD=true
-  DO_CODESIGN=false
-  DO_UPLOAD_ONLY=false
-  DO_ZIP_ONLY=false
-  DO_DATA=true
-  DO_EXE=true
   WARNINGS_AS_ERRORS=false
   TARGET=
   PROJECT_TARGET_TYPE=
@@ -75,36 +72,21 @@ function parse_args {
   DO_UPDATE_COMPILER=true
   FORCE_UPDATE_COMPILER=false
 
-  local lastkey
+  local lastkey=
   local key
 
   # Parse args
   for key in "$@"; do
     if [[ -z "$lastkey" ]]; then
       case "$key" in
-        -upload-only)
-          DO_UPLOAD_ONLY=true
-          ;;
         -validate)
           DO_BUILD=false
-          ;;
-        -codesign)
-          DO_CODESIGN=true
-          ;;
-        -zip-only)
-          DO_ZIP_ONLY=true
           ;;
         -no-update-compiler)
           DO_UPDATE_COMPILER=false
           ;;
         -force-update-compiler)
           FORCE_UPDATE_COMPILER=true
-          ;;
-        -prepare-and-upload-only)
-          DO_DATA=false
-          ;;
-        -no-exe)
-          DO_EXE=false
           ;;
         -no-color)
           FLAG_COLOR=-no-color
@@ -175,6 +157,7 @@ util_set_log_color_mode "$FLAG_COLOR"
 # Are we in the keyboards_starter repo?
 #
 
+KEYBOARDS_STARTER=0
 if [[ -d "$KEYBOARDROOT/template" ]]; then
   if [[ -d "$KEYBOARDROOT/release" ]]; then
     die "This repo should not have both a /release/ folder and a /template/ folder. The /template/ folder should be present only in the keyboards_starter repo."
