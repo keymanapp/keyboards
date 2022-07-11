@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+. "$KEYBOARDROOT/resources/zip.inc.sh"
+
 function get_kmcomp_full_version() {
   local VERSION=$($KMCOMP_LAUNCHER "$KMCOMP" | grep -a Version | cut -d" " -f 2 - | cut -d"," -f 1 -)
   echo $VERSION
@@ -8,6 +10,7 @@ function get_kmcomp_full_version() {
 function regression_build {
   local SHOULD_BUILD_PACKAGES="$1"
   local SHOULD_DECOMP="$2"
+  local SHOULD_ZIP="$3"
   local BUILDPATH=
   local BUILDTARGET="-T kmn"
   local DEBUGBUILD=
@@ -22,6 +25,7 @@ function regression_build {
   fi
 
   # TESTING: build just a specific path
+  # For testing purposes, probably should ./build.sh -c first
   #BUILDPATH=release/a
 
   # We'll do a debug build because it makes comparison MUCH easier for .js in particular
@@ -50,10 +54,15 @@ function regression_build {
   local NO_COMPILER_VERSION=
   $KMCOMP_LAUNCHER "$KMCOMP" | grep -- '-no-compiler-version' && NO_COMPILER_VERSION=-no-compiler-version
 
-  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH release 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
-  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH experimental 2>&1 | tee -a "$OUTPUT/clean.log" || die "Unable to clean keyboards"
-  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH release 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
-  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH experimental 2>&1 | tee -a "$OUTPUT/build.log" || die "Unable to build keyboards"
+  if [ ! -z "$BUILDPATH" ]; then
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
+  else
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c release 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c experimental 2>&1 | tee -a "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET release 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET experimental 2>&1 | tee -a "$OUTPUT/build.log" || die "Unable to build keyboards"
+  fi
 
   #
   # Copy results into target folder
@@ -61,6 +70,7 @@ function regression_build {
 
   echo "Copying final build files into $OUTPUT/"
   cp -u "$KEYBOARDROOT"/release/*/*/build/* "$OUTPUT/"
+  cp -u "$KEYBOARDROOT"/experimental/*/*/build/* "$OUTPUT/"
 
   #
   # Decompile all .kmx in output/ into .kmn; this helps us with text comparisons and round-tripping
@@ -73,5 +83,14 @@ function regression_build {
       echo "Decompiling $i"
       $KMCOMP_LAUNCHER "$KEYBOARDROOT/tools/kmcomp/kmdecomp.exe" "$i" || die "Failed to decompile $i"
     done
+  fi
+
+  #
+  # Zip the resulting files
+  #
+
+  if $SHOULD_ZIP; then
+    echo "Zipping results into $OUTPUT.zip"
+    create_zip_file_strip_paths "$OUTPUT.zip" "$OUTPUT/*"
   fi
 }
