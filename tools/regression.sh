@@ -35,6 +35,7 @@ function display_usage {
   echo "General flags:"
   echo "  --packages, -p    Build .kmp packages as well as .kmx / .js"
   echo "  --decomp, -D      Decompile .kmx into .kmn in output after build"
+  echo "  --zip, -z         Also compress the output files into a <version>.zip file"
   echo "  --help, -h        Show this help"
   exit 0
 }
@@ -57,6 +58,7 @@ function parse_args {
   SHOULD_DOWNLOAD=false
   SHOULD_READ_TIER=false
   SHOULD_DECOMP=false
+  SHOULD_ZIP=false
   LOCAL_PATH=
   REQUIRED_VERSION=
   REQUIRED_TIER=stable
@@ -91,6 +93,9 @@ function parse_args {
           SHOULD_EXTRACT_LOCAL=true
           SHOULD_SEARCH_LOCAL=true
           lastkey="$key"
+          ;;
+        --zip|-z)
+          SHOULD_ZIP=true
           ;;
         --help|-h)
           display_usage
@@ -211,7 +216,7 @@ if $SHOULD_EXTRACT_LOCAL; then
     find_local_compiler
   fi
   extract_local_compiler "$LOCAL_PATH"
-  regression_build "$SHOULD_BUILD_PACKAGES" "$SHOULD_DECOMP"
+  regression_build "$SHOULD_BUILD_PACKAGES" "$SHOULD_DECOMP" "$SHOULD_ZIP"
 else
   if $SHOULD_READ_TIER; then
     read_tier_from_tier_md "$TIER_MD"
@@ -225,5 +230,5 @@ else
     download_and_unzip_kmcomp "$REQUIRED_VERSION" "$REQUIRED_TIER"
   fi
 
-  regression_build "$SHOULD_BUILD_PACKAGES" "$SHOULD_DECOMP"
+  regression_build "$SHOULD_BUILD_PACKAGES" "$SHOULD_DECOMP" "$SHOULD_ZIP"
 fi
