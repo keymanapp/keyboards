@@ -46,8 +46,12 @@ function regression_build {
   # Clean and build; we'll force -no-color because we are writing to a log file with tee
   #
 
-  "$KEYBOARDROOT/build.sh" -no-color -no-compiler-version -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log"
-  "$KEYBOARDROOT/build.sh" -no-color -no-compiler-version -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH 2>&1 | tee "$OUTPUT/build.log"
+  # Only add flag if this version of kmcomp supports it
+  local NO_COMPILER_VERSION=
+  $KMCOMP_LAUNCHER "$KMCOMP" | grep -- '-no-compiler-version' && NO_COMPILER_VERSION=-no-compiler-version
+
+  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+  "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
 
   #
   # Copy results into target folder
