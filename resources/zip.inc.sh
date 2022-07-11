@@ -30,7 +30,3 @@ function create_zip_file_strip_paths() {
     or die \"Zip failed: \$ZipError\n\";
   " -- "$ZIP" "$FILES"
 }
-
-  create_zip_file_strip_paths \
-    "output/16.0.30-alpha-local.zip" \
-    "output/16.0.30-alpha-local/*"
