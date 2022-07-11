@@ -1,205 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-<title>Yupik Cyrillic keyboard (Russian layout)</title>
+<?php 
+  $pagename = 'Yupik Cyrillic keyboard (Russian layout)';
+  $pagetitle = 'Yupik Cyrillic keyboard (Russian layout)';
+  require_once('header.php');
+?>
 <style type="text/css">
-        .key { 
-            float: left;
-            display: block; 
-            position: relative;
-            overflow: hidden;
-            height: 35px;
-            margin: 2px 0px 0px 4px;
-        }
-        
-        #K_SPACE {
-            width: 234px; 
-            background-image: url('key-space.gif'); 
-        }
+    .key { 
+        float: left;
+        display: block; 
+        position: relative;
+        overflow: hidden;
+        height: 35px;
+        margin: 2px 0px 0px 4px;
+    }
+    
+    #K_SPACE {
+        width: 234px; 
+        background-image: url('key-space.gif'); 
+    }
 
-        #K_BKSLASH {
-            width: 42px; 
-            background-image: url('key-bkslash.gif'); 
-        }
-        
-        #K_oE2 {
-            display:none;
-        }
-        
-        #K_SHIFTL {
-            width: 80px;
-            background-image: url('key-shiftl.gif');
-        }
-        
-        .plain {
-            background-image: url('key-plain.gif');
-            background-repeat: no-repeat;
-            width: 34px;
-        }
-        
-        .special {
-            background-repeat: no-repeat;
-        }
-        
-        .keycap {
-            font: bold 7pt Arial; 
-            position: absolute; 
-            left: 4px; 
-            top: 3px;
-        }
-        
-        .key .keycap {          
-            display: block;
-        }
-        
-        .special .keycap {
-            display: block;
-        }
-        
-        .keytext {
-            font: 13pt "Times New Roman"; 
-            position: absolute; 
-            display: block;
-            right: 4px;
-            bottom: 4px;
-            color: blue;
-        }
-        .keytextwide {
-            font: 11pt "Times New Roman"; 
-            position: absolute; 
-            display: block;
-            right: 2px;
-            bottom: 4px;
-            color: blue;
-        }
-        .doublepress {
-            color: red;
-        }
-        
-        td { padding-right: 25px; 
-             padding-bottom: 3px;
-        }
-        .long_narrow_table { 
-            column-count: 2; 
-            margin-top: 20px;
-            margin-left: 30px;
-        }
-        
-        .t_key { 
-            float: left;
-            display: block; 
-            position: relative;
-            overflow: hidden;
-            height: 55px;
-            margin: 0px 0px 0px 0px;
-        }
-        .t_longpress {
-            background-image: url('touch-longpress.gif');
-            background-repeat: no-repeat;
-            width: 44px;
-        }
-        .t_longpressnarrow {
-            background-image: url('touch-longpress-narrow.gif');
-            background-repeat: no-repeat;
-            width: 42px;
-        }
-        .t_longpressperiod {
-            background-image: url('touch-longpress-period.gif');
-            background-repeat: no-repeat;
-            width: 44px;
-        }
-        .t_plain {
-            background-image: url('touch-plain.gif');
-            background-repeat: no-repeat;
-            width: 44px;
-        }
-        .t_plainnarrow {
-            background-image: url('touch-plain-narrow.gif');
-            background-repeat: no-repeat;
-            width: 42px;
-        }
-        .t_shift {
-            background-image: url('touch-shift.gif');
-            background-repeat: no-repeat;
-            width: 53px;
-        }
-        .t_erase {
-            background-image: url('touch-erase.gif');
-            background-repeat: no-repeat;
-            width: 61px;
-        }
-        .t_numlock {
-            background-image: url('touch-numlock.gif');
-            background-repeat: no-repeat;
-            width: 61px;
-        }
-        .t_menu {
-            background-image: url('touch-menu.gif');
-            background-repeat: no-repeat;
-            width: 54px;
-        }
-        .t_space {
-            background-image: url('touch-space.gif');
-            background-repeat: no-repeat;
-            width: 220px;
-        }
-        .t_enter {
-            background-image: url('touch-enter.gif');
-            background-repeat: no-repeat;
-            width: 61px;
-        }
-        .t_comment {
-            background-image: url('touch-comment.gif');
-            background-repeat: no-repeat;
-            width: 220px;
-        }
+    #K_BKSLASH {
+        width: 42px; 
+        background-image: url('key-bkslash.gif'); 
+    }
+    
+    #K_oE2 {
+        display:none;
+    }
+    
+    #K_SHIFTL {
+        width: 80px;
+        background-image: url('key-shiftl.gif');
+    }
+    
+    .plain {
+        background-image: url('key-plain.gif');
+        background-repeat: no-repeat;
+        width: 34px;
+    }
+    
+    .special {
+        background-repeat: no-repeat;
+    }
+    
+    .keycap {
+        font: bold 7pt Arial; 
+        position: absolute; 
+        left: 4px; 
+        top: 3px;
+    }
+    
+    .key .keycap {          
+        display: block;
+    }
+    
+    .special .keycap {
+        display: block;
+    }
+    
+    .keytext {
+        font: 13pt "Times New Roman"; 
+        position: absolute; 
+        display: block;
+        right: 4px;
+        bottom: 4px;
+        color: blue;
+    }
+    .keytextwide {
+        font: 11pt "Times New Roman"; 
+        position: absolute; 
+        display: block;
+        right: 2px;
+        bottom: 4px;
+        color: blue;
+    }
+    .doublepress {
+        color: red;
+    }
+    
+    td { padding-right: 25px; 
+         padding-bottom: 3px;
+    }
+    .long_narrow_table { 
+        column-count: 2; 
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
+    .t_key { 
+        float: left;
+        display: block; 
+        position: relative;
+        overflow: hidden;
+        height: 55px;
+        margin: 0px 0px 0px 0px;
+    }
+    .t_longpress {
+        background-image: url('touch-longpress.gif');
+        background-repeat: no-repeat;
+        width: 44px;
+    }
+    .t_longpressnarrow {
+        background-image: url('touch-longpress-narrow.gif');
+        background-repeat: no-repeat;
+        width: 42px;
+    }
+    .t_longpressperiod {
+        background-image: url('touch-longpress-period.gif');
+        background-repeat: no-repeat;
+        width: 44px;
+    }
+    .t_plain {
+        background-image: url('touch-plain.gif');
+        background-repeat: no-repeat;
+        width: 44px;
+    }
+    .t_plainnarrow {
+        background-image: url('touch-plain-narrow.gif');
+        background-repeat: no-repeat;
+        width: 42px;
+    }
+    .t_shift {
+        background-image: url('touch-shift.gif');
+        background-repeat: no-repeat;
+        width: 53px;
+    }
+    .t_erase {
+        background-image: url('touch-erase.gif');
+        background-repeat: no-repeat;
+        width: 61px;
+    }
+    .t_numlock {
+        background-image: url('touch-numlock.gif');
+        background-repeat: no-repeat;
+        width: 61px;
+    }
+    .t_menu {
+        background-image: url('touch-menu.gif');
+        background-repeat: no-repeat;
+        width: 54px;
+    }
+    .t_space {
+        background-image: url('touch-space.gif');
+        background-repeat: no-repeat;
+        width: 220px;
+    }
+    .t_enter {
+        background-image: url('touch-enter.gif');
+        background-repeat: no-repeat;
+        width: 61px;
+    }
+    .t_comment {
+        background-image: url('touch-comment.gif');
+        background-repeat: no-repeat;
+        width: 220px;
+    }
 
-        .t_keytext {
-            font: 16pt "Times New Roman"; 
-            position: absolute; 
-            display: block;
-            bottom: 5px;
-            width: 44px;
-            text-align: center;
-            color: blue;
-        }
-        .t_keytextlp {
-            font: 8pt Arial; 
-            position: absolute; 
-            left: 6px; 
-            top: 5px;
-        }
-        .t_keytextlpperiod {
-            font: 8pt Arial; 
-            position: absolute; 
-            left: 4px; 
-            top: 1px;
-        }
-        .t_textcommenttop {
-            font: 11pt Arial; 
-            position: absolute; 
-            left: 4px; 
-            top: 3px;
-        }
-        .t_textcommentbottom {
-            font: 11pt Arial; 
-            position: absolute; 
-            left: 4px; 
-            bottom: 6px;
-        }
-        .t_numlocktext {
-            font: 14pt "Arial"; 
-            position: absolute; 
-            display: block;
-            bottom: 5px;
-            width: 61px;
-            text-align: center;
-        }
+    .t_keytext {
+        font: 16pt "Times New Roman"; 
+        position: absolute; 
+        display: block;
+        bottom: 5px;
+        width: 44px;
+        text-align: center;
+        color: blue;
+    }
+    .t_keytextlp {
+        font: 8pt Arial; 
+        position: absolute; 
+        left: 6px; 
+        top: 5px;
+    }
+    .t_keytextlpperiod {
+        font: 8pt Arial; 
+        position: absolute; 
+        left: 4px; 
+        top: 1px;
+    }
+    .t_textcommenttop {
+        font: 11pt Arial; 
+        position: absolute; 
+        left: 4px; 
+        top: 3px;
+    }
+    .t_textcommentbottom {
+        font: 11pt Arial; 
+        position: absolute; 
+        left: 4px; 
+        bottom: 6px;
+    }
+    .t_numlocktext {
+        font: 14pt "Arial"; 
+        position: absolute; 
+        display: block;
+        bottom: 5px;
+        width: 61px;
+        text-align: center;
+    }
 
 
-    </style>
-</head>
+</style>
+
 <body>
 
 <h1>Yupik Cyrillic keyboard (Russian layout)</h1>
@@ -1296,9 +1296,6 @@
     SIL International has also published a Yupik Cyrillic keyboard that is based on an English QWERTY keyboard layout. It assigns each Cyrillic character to the key of its nearest phonetically equivalent English character. See the <b>sil_yupik_cyrillic</b> layout.
 </p>
 
-<p>
-    © 2019 SIL International
-</p>
+<p>© 2009-2019 SIL International</p>
 
 </body>
-</html>

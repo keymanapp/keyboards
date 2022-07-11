@@ -1,22 +1,25 @@
 <?php 
-  $pagename = 'Russian Basic Keyboard Help';
-  $pagetitle = 'Russian Basic Keyboard Help';
-  // Header we will tidy up later  
+  $pagename = 'Yupik Cyrillic (Russian based) keyboard from SIL International';
+  $pagetitle = 'Yupik Cyrillic (Russian based) keyboard from SIL International';
   require_once('header.php');
 ?>
-<p>
-    Russian Basic 1.1 generated from template.
-</p>
 
-<h1>Keyboard Layout</h1>
+<style type="text/css">
+  p { font: 10pt Tahoma; }
+  h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
+  h2 { font: bold 12pt Tahoma; color: #4444cc; }
+</style>
 
-<h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift rightalt'>
-</div>
+<body>
 
-<h2>Mobile/Tablet Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift'>
-</div>
+<h1>Клавиатура Yupik Cyrillic (русская) от SIL International</h1>
 
+<h2><a href="welcome_ru.htm">Продолжайте с русским языком</a></h2>
+
+<h1>Yupik Cyrillic (Russian based) keyboard from SIL International</h1>
+
+<h2><a href="welcome_en.htm">Proceed with English</a></h2>
 
 <p>© 2009-2019 SIL International</p>
+
+</body>
