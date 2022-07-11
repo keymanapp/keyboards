@@ -68,6 +68,7 @@ function parse_args {
   FLAG_CLEAN=
   FLAG_TARGET=
   FLAG_COLOR=
+  FLAG_COMPILER_VERSION=
   START=
   START_BASE=
   START_KEYBOARD=
@@ -110,6 +111,10 @@ function parse_args {
           ;;
         -color)
           FLAG_COLOR=-color
+          ;;
+        -no-compiler-version)
+          # This flag is used only for regression tests.
+          FLAG_COMPILER_VERSION=-no-compiler-version
           ;;
         -start)
           lastkey=$key
