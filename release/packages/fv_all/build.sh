@@ -1,20 +1,23 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script builds a single keyboard package for the FirstVoices app.
 set -e
 set -u
 
-function die () {
-    # TODO: Incorporate build-utils.sh for keyboards repo
-    echo
-    echo "$*"
-    echo
-    exit 1
-}
+#
+# Define paths (we are three levels down from KEYBOARDROOT)
+#
+KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../../.." && pwd )"
+
+. "$KEYBOARDROOT/resources/util.sh"
+. "$KEYBOARDROOT/resources/environment.sh"
+
+locate_kmcomp
 
 # Parse parameters
 
 FLAG_SILENT=
 FLAG_CLEAN=
+FLAG_COLOR=
 FLAG_DEBUG=
 FLAG_TARGET=
 PROJECT_TARGET=
@@ -36,13 +39,20 @@ for key in "$@"; do
       -t)
         lastkey="$key"
         ;;
+      -no-color)
+        FLAG_COLOR=-no-color
+        ;;
+      -color)
+        FLAG_COLOR=-color
+        ;;
+
     esac
   else
     case "$lastkey" in
       -t)
         FLAG_TARGET=-t
         PROJECT_TARGET="$key"
-        if [[ "$PROJECT_TARGET" != "fv_all.kps" ]]; then 
+        if [[ "$PROJECT_TARGET" != "fv_all.kps" ]]; then
           echo "Skipping fv_all.kps"
           exit 0;
         fi
@@ -51,6 +61,8 @@ for key in "$@"; do
     lastkey=
   fi
 done
+
+util_set_log_color_mode "$FLAG_COLOR"
 
 # For each keyboard in the following release folders:
 # fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
@@ -66,13 +78,13 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   group=$(basename $(dirname $keyboard))
 
   # Only interested in keyboards with a .kmx / .js
-  
+
   if [[ ! -f $keyboard/build/$id.kmx ]] && [[ ! -f $keyboard/build/$id.js ]]; then continue; fi
 
   echo "Extracting $id"
-  
+
   # Load relevant fields from the .kps file
-  
+
   mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
   name=${kpsdata[0]}
   version=${kpsdata[1]}
@@ -109,7 +121,7 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
       </File>'
   fi
   FILE_LINES="$FILE_LINES$FILE_LINES_0$FILE_LINES_1"
-  
+
   # Check for optional font info
   OSK_FONT_LINES_0=''
   if [[ "$oskFont" != 'none' ]]; then
@@ -148,17 +160,9 @@ kps="${kps//@FILES/$FILE_LINES}"
 echo "${kps//@KEYBOARDS/$KEYBOARD_LINES}" > source/fv_all.kps
 
 # Build fv_all.kmp, using kmcomp as per normal build script
-  
+
 mkdir -p build || die "Failed to create build folder for fv_all"
 
-KMCOMP="../../../tools/kmcomp.exe"
-
-case "${OSTYPE}" in
-  "cygwin") KMCOMP_LAUNCHER= ;;
-  "msys") KMCOMP_LAUNCHER= ;;
-  *) KMCOMP_LAUNCHER=wine ;;
-esac
-
-$KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "fv_all.kpj" $FLAG_TARGET "$PROJECT_TARGET"
+$KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG "fv_all.kpj" $FLAG_TARGET "$PROJECT_TARGET"
 
 rm source/fv_all.kps
