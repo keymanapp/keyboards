@@ -181,7 +181,7 @@ function extract_local_compiler {
   local TARGET="$KEYBOARDROOT/tools/kmcomp"
   rm -rf "$TARGET"
   mkdir -p "$TARGET"
-  unzip -o "$SOURCE" -d "$TARGET/" || die "Unable to unzip $SOURCE"
+  unzip -q -o "$SOURCE" -d "$TARGET/" || die "Unable to unzip $SOURCE"
 }
 
 #

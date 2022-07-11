@@ -16,7 +16,7 @@ function download_and_unzip_kmcomp() {
   cleanup_legacy_kmcomp
   rm -rf "$KMCOMP_ZIP_PATH"
   mkdir -p "$KMCOMP_ZIP_PATH"
-  unzip -o "$KMCOMP_ZIP_FILE" -d "$KMCOMP_ZIP_PATH" || die "Unable to unzip kmcomp.zip"
+  unzip -q -o "$KMCOMP_ZIP_FILE" -d "$KMCOMP_ZIP_PATH" || die "Unable to unzip kmcomp.zip"
 
   rm -f "$KMCOMP_ZIP_FILE"
 }
