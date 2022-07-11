@@ -354,7 +354,7 @@ function build_release_keyboard {
     PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
   fi
 
-  $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
+  $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG $FLAG_COMPILER_VERSION "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
 
   return 0
 }

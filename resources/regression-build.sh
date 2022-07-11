@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+function get_kmcomp_full_version() {
+  local VERSION=$($KMCOMP_LAUNCHER "$KMCOMP" | grep -a Version | cut -d" " -f 2 - | cut -d"," -f 1 -)
+  echo $VERSION
+}
+
 function regression_build {
   local SHOULD_BUILD_PACKAGES="$1"
   local SHOULD_DECOMP="$2"
@@ -27,7 +32,7 @@ function regression_build {
   # Get the kmcomp version for determining our output folder
   #
 
-  local KMCOMP_VERSION=$(get_kmcomp_version)
+  local KMCOMP_VERSION=$(get_kmcomp_full_version)
 
   #
   # Prepare the output folder
@@ -41,8 +46,8 @@ function regression_build {
   # Clean and build; we'll force -no-color because we are writing to a log file with tee
   #
 
-  "$KEYBOARDROOT/build.sh" -no-color -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log"
-  "$KEYBOARDROOT/build.sh" -no-color -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH 2>&1 | tee "$OUTPUT/build.log"
+  "$KEYBOARDROOT/build.sh" -no-color -no-compiler-version -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log"
+  "$KEYBOARDROOT/build.sh" -no-color -no-compiler-version -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH 2>&1 | tee "$OUTPUT/build.log"
 
   #
   # Copy results into target folder
