@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 2.0 (5 Jul 2022)
+* add Caps Lock support and start of sentence detection for mobile devices.
 ## 1.9.6 (11 Apr 2022)
 * remove xmf (Mingrelian) = issue #1798
 * remove any non -Latn BCP 47 tags
