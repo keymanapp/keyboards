@@ -1,11 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e
+set -u
 
 function display_usage {
   echo "
 Usage: ci.sh [flags] [release|legacy|experimental[/k/keyboard]]
 
 Flags:
-  -no-exe                   Prepare packages and .js files but not bundled installers
+  -no-exe                   Ignored, legacy flag
   -upload-only              Only upload keyboards already prepared
   -zip-only                 Only prepare and transfer the database
   -prepare-and-upload-only  Prepare and upload keyboards but not database
@@ -27,7 +30,7 @@ JQ="$KEYBOARDROOT/tools/jq-win64.exe"
 RSYNC="$KEYBOARDROOT/tools/rsync.exe"
 CI_CACHE="$KEYBOARDROOT/.cache"
 
-if [ ! -z "$SEVENZ_HOME" ]; then
+if [ ! -z "${SEVENZ_HOME+x}" ]; then
   APP7Z="$SEVENZ_HOME/7z"
 else
   APP7Z="/c/Program Files/7-Zip/7z.exe"
@@ -37,6 +40,79 @@ fi
 . "$KEYBOARDROOT/resources/util.sh"
 . "$KEYBOARDROOT/resources/codesign.sh"
 . "$KEYBOARDROOT/resources/rsync-tools.sh"
+
+function parse_args {
+  DO_CODESIGN=false
+  DO_UPLOAD_ONLY=false
+  DO_ZIP_ONLY=false
+  DO_DATA=true
+  DO_EXE=false
+  TARGET=
+  FLAG_COLOR=
+  START=
+  START_BASE=
+  START_KEYBOARD=
+  DO_UPDATE_COMPILER=true
+  FORCE_UPDATE_COMPILER=false
+
+  local lastkey=
+  local key
+
+  # Parse args
+  for key in "$@"; do
+    if [[ -z "$lastkey" ]]; then
+      case "$key" in
+        -upload-only)
+          DO_UPLOAD_ONLY=true
+          ;;
+        -codesign)
+          DO_CODESIGN=true
+          ;;
+        -zip-only)
+          DO_ZIP_ONLY=true
+          ;;
+        -no-update-compiler)
+          DO_UPDATE_COMPILER=false
+          ;;
+        -force-update-compiler)
+          FORCE_UPDATE_COMPILER=true
+          ;;
+        -prepare-and-upload-only)
+          DO_DATA=false
+          ;;
+        -no-exe)
+          # Ignore this flag; legacy only
+          ;;
+        -no-color)
+          FLAG_COLOR=-no-color
+          ;;
+        -color)
+          FLAG_COLOR=-color
+          ;;
+        -start)
+          lastkey=$key
+          ;;
+        -h|-\?)
+          display_usage
+          ;;
+        *)
+          TARGET="$key"
+      esac
+    else
+      case "$lastkey" in
+        -start)
+          START="$key"
+          START_BASE=`dirname "$START"`
+          START_KEYBOARD=`basename "$START"`
+          if [[ "START_BASE" == "." ]]; then
+            START_BASE="$START"
+          fi
+          ;;
+      esac
+      lastkey=
+    fi
+  done
+}
 
 parse_args "$@"
 
@@ -76,60 +152,12 @@ function run {
   fi
   mkdir "$CI_CACHE/data"
 
-  check_latest_stable_keymandesktop
-  check_and_download_keymandesktop_artifacts
   upload_keyboards_by_target
 
   if [[ $DO_DATA == true ]]; then
     zip_keyboard_info
     rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
   fi
-}
-
-##
-## Calls the Keyman Desktop downloads API to determine latest stable Keyman Desktop version
-## on download server and populates shell variables from there
-##
-## GET https://downloads.keyman.com/api/version/windows/2.0
-##
-function check_latest_stable_keymandesktop {
-  local API_VERSION_JSON=`curl -f -s "$DOWNLOADS_KEYMAN_COM_URL/api/version/windows/2.0"`
-  if [ -z "$API_VERSION_JSON" ]; then
-    die "Unable to download version data"
-  fi
-  KEYMANDESKTOP_VERSION=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.version'`
-  MSI_FILENAME=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files[].file | match("^keymandesktop.*.msi$").string'`
-  MSI_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["'$MSI_FILENAME'"].md5'`
-  SETUP_MD5=`echo $API_VERSION_JSON | $JQ -r '.windows.stable.files["setup.exe"].md5'`
-
-  if [ -z "$KEYMANDESKTOP_VERSION" ]; then
-    die "Keyman Desktop version could not be extracted from $API_VERSION_JSON"
-  fi
-
-  if [ -z "$MSI_FILENAME" ]; then
-    die "MSI filename could not be extracted from $API_VERSION_JSON"
-  fi
-
-  SETUP_EXE_URL=$DOWNLOADS_KEYMAN_COM_URL/windows/stable/$KEYMANDESKTOP_VERSION/setup.exe
-  MSI_URL=$DOWNLOADS_KEYMAN_COM_URL/windows/stable/$KEYMANDESKTOP_VERSION/$MSI_FILENAME
-}
-
-##
-## Checks if the files in the CI_CACHE are out of date, and if so, downloads an updated
-## version from downloads.keyman.com
-##
-## GET https://downloads.keyman.com/windows/stable/<version>/setup.exe
-## GET https://downloads.keyman.com/windows/stable/<version>/keymandesktop[num].msi
-##     (11.0 and later versions do not include version number)
-##
-function check_and_download_keymandesktop_artifacts {
-
-  if [ ! -d "$CI_CACHE/$KEYMANDESKTOP_VERSION" ]; then
-    mkdir "$CI_CACHE/$KEYMANDESKTOP_VERSION"
-  fi
-
-  check_and_download $KEYMANDESKTOP_VERSION/setup.exe $SETUP_MD5 "$SETUP_EXE_URL"
-  check_and_download $KEYMANDESKTOP_VERSION/$MSI_FILENAME $MSI_MD5 "$MSI_URL"
 }
 
 ##
@@ -159,26 +187,6 @@ function upload_keyboards_by_target {
 }
 
 ##
-## Checks if a specific file is missing or has a different md5, and if so, downloads it
-## from the URL given
-##
-function check_and_download {
-  local filename=$1
-  local md5=$2
-  local url=$3
-
-  if [ -f "$CI_CACHE/$filename" ]; then
-    local md5=$(md5sum "$CI_CACHE/$filename" | cut -f 1 -d ' ')
-    if [ "$md5" == "$2" ]; then
-      return
-    fi
-  fi
-
-  echo "Downloading $url"
-  curl -f -# -o "$CI_CACHE/$filename" "$url" || die "Unable to download $url"
-}
-
-##
 ## Prepare for upload puts a file into the upload cache
 ## in preparation for it being rsync'd to the server
 ##
@@ -192,8 +200,7 @@ function prepare_for_upload {
 }
 
 ##
-## Prepares a single keyboard for upload, including building
-## the bundled installer for Windows
+## Prepares a single keyboard for upload
 ##
 function upload_keyboard {
   local group=$1
@@ -227,16 +234,9 @@ function upload_keyboard {
 
   local package_version=`cat "$keyboard_info" | $JQ -r '.version'`
   local package_name=`cat "$keyboard_info" | $JQ -r '.name'`
-  local installer_filename=keymandesktop-$KEYMANDESKTOP_VERSION-$base_keyboard-$package_version.exe
   local package_upload_path=$base_keyboard/$package_version/$package_filename
   local keyboard_info_upload_path=$base_keyboard/$package_version/$base_keyboard.keyboard_info
-  local installer_upload_path=$base_keyboard/$package_version/$installer_filename
   local js_upload_path=$base_keyboard/$package_version/$js_filename
-
-  local package_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$package_upload_path
-  local keyboard_info_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$keyboard_info_upload_path
-  local installer_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$installer_upload_path
-  local js_url=$DOWNLOADS_KEYMAN_COM_URL/keyboards/$js_upload_path
 
   echo "${t_grn}Package name: $package_name${t_end}"
 
@@ -249,64 +249,6 @@ function upload_keyboard {
   if [[ ! -z $package_filename ]]; then
     prepare_for_upload "$buildpath/$package_filename" "$package_upload_path"
   fi
-
-  if [[ $DO_EXE == true ]]; then
-    if [[ ${package_filename##*.} == kmp ]] && [[ "$platform_windows" == full || "$platform_windows" == basic || "$platform_windows" == dictionary ]]; then
-    # We only upload a combined installer for .kmp files that have a Windows target
-      if $(verlte "$min_required_version" "$KEYMANDESKTOP_VERSION"); then
-        create_package_installer "$buildpath" "$buildpath/$installer_filename" "$buildpath/$package_filename" "$package_name" "$package_version"
-        prepare_for_upload "$buildpath/$installer_filename" "$installer_upload_path"
-      else
-        echo "$package_name requires minimum of Keyman Desktop $min_required_version, so a bundled installer will not be created with version $KEYMANDESKTOP_VERSION."
-      fi
-    fi
-  fi
-}
-
-##
-## Create a .exe installer from a package file for the selected Keyman Desktop version
-##
-function create_package_installer {
-  local buildpath=$1
-  local exe_filename=$2
-  local kmp_filename=$3
-  local package_name=$4
-  local package_version=$5
-
-  local kmp_basename=`basename "$kmp_filename"`
-
-  # Generate installer metadata
-
-  cat > "$buildpath/setup.inf" <<END
-[Setup]
-Version=$KEYMANDESKTOP_VERSION
-OnlineProductID=20
-MSIFileName=$MSI_FILENAME
-MSIOptions=
-Title=Keyman Desktop $KEYMANDESKTOP_VERSION
-License=license.html
-
-[Packages]
-$kmp_basename=$package_name $package_version
-
-[Strings]
-END
-
-  # Construct the archive
-
-  if [[ -f "$buildpath/setup.zip" ]]; then
-    rm "$buildpath/setup.zip"
-  fi
-
-  "$APP7Z" a "$buildpath/setup.zip" "$CI_CACHE/$KEYMANDESKTOP_VERSION/$MSI_FILENAME" "$buildpath/setup.inf" "$kmp_filename" || die "Unable to build archive at $buildpath"
-  cat "$CI_CACHE/$KEYMANDESKTOP_VERSION/setup.exe" "$buildpath/setup.zip" > "$exe_filename" || die "Unable to build sfx at $buildpath"
-
-  rm "$buildpath/setup.zip"
-  rm "$buildpath/setup.inf"
-
-  # Codesign the archive
-
-  codesign "$exe_filename" "Keyman Desktop Setup"
 }
 
 ##
