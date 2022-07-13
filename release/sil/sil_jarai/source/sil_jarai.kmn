@@ -9,7 +9,28 @@ store(&VISUALKEYBOARD) 'sil_jarai.kvks'
 store(&LAYOUTFILE) 'sil_jarai.keyman-touch-layout'
 store(&BITMAP) 'sil_jarai.ico'
 
+
 begin Unicode > use(main)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+store(&CasedKeys) [K_A] .. [K_Z]
+store(ShiftOutSingle) '!ៗ"៛«៍៝ៈ»៖ឈឺែឝទួូីៅភឿៃឌធអះញគឡ៉ឍឃជពឞណំ'
+store(vCombo1)  'ាំ'
+store(vCombo2)  'ោះ'
+store(vCombo3)  'េះ'
+store(vCombo4)  'ុះ'
+store(ShiftOutAll)  outs(ShiftOutSingle) outs(vCombo1) outs(vCombo2) outs(vCombo3) outs(vCombo4)
+
+group(PostKeystroke) readonly
+c We get here after every keystroke and model action is processed
+
+c Don't swap off the caps lock layer automatically
+if(&layer = 'caps') > context
+
+c Do swap off the shift layer automatically
+if(&newLayer = "") if(&layer = 'shift') any(ShiftOutSingle) > context layer('default')
+
 
 group(main) using keys
 + [SHIFT K_V] > 'េះ'
