@@ -14,7 +14,6 @@ begin Unicode > use(main)
 begin PostKeystroke > use(PostKeystroke)
 
 c This tells Keyman which keys should have casing behavior applied
-store(&CasedKeys) [K_A] .. [K_Z]
 store(ShiftOutSingle) '!ៗ"៛«៍៝ៈ»៖ឈឺែឝទួូីៅភឿៃឌធអះញគឡ៉ឍឃជពឞណំ'
 store(vCombo1)  'ាំ'
 store(vCombo2)  'ោះ'
@@ -25,7 +24,7 @@ store(ShiftOutAll)  outs(ShiftOutSingle) outs(vCombo1) outs(vCombo2) outs(vCombo
 group(PostKeystroke) readonly
 c We get here after every keystroke and model action is processed
 
-c Don't swap off the caps lock layer automatically
+c Don't swap off the caps lock layer automatically (behave as ShiftLocked)
 if(&layer = 'caps') > context
 
 c Do swap off the shift layer automatically
