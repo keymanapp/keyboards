@@ -223,7 +223,8 @@ function build_keyboard {
       PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
       FLAG_TARGET=-t
     fi
-    ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
+
+    ./build.sh $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG $FLAG_COMPILER_VERSION $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
     # Externally sourced keyboards (see above) may have the .source_is_binary flag,
@@ -354,7 +355,7 @@ function build_release_keyboard {
     PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
   fi
 
-  $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
+  $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG $FLAG_COMPILER_VERSION "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
 
   return 0
 }
