@@ -20,6 +20,7 @@ FLAG_CLEAN=
 FLAG_COLOR=
 FLAG_DEBUG=
 FLAG_TARGET=
+FLAG_COMPILER_VERSION=
 PROJECT_TARGET=
 lastkey=
 
@@ -45,7 +46,10 @@ for key in "$@"; do
       -color)
         FLAG_COLOR=-color
         ;;
-
+      -no-compiler-version)
+        # This flag is used only for regression tests.
+        FLAG_COMPILER_VERSION=-no-compiler-version
+        ;;
     esac
   else
     case "$lastkey" in
@@ -63,6 +67,12 @@ for key in "$@"; do
 done
 
 util_set_log_color_mode "$FLAG_COLOR"
+
+if [ ! -z "$FLAG_CLEAN" ]; then
+  rm -f ./source/fv_all.kps
+  rm -rf ./build/
+  exit 0
+fi
 
 # For each keyboard in the following release folders:
 # fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
@@ -163,6 +173,6 @@ echo "${kps//@KEYBOARDS/$KEYBOARD_LINES}" > source/fv_all.kps
 
 mkdir -p build || die "Failed to create build folder for fv_all"
 
-$KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG "fv_all.kpj" $FLAG_TARGET "$PROJECT_TARGET"
+$KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_COMPILER_VERSION $FLAG_DEBUG "fv_all.kpj" $FLAG_TARGET "$PROJECT_TARGET"
 
 rm source/fv_all.kps
