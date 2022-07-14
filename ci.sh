@@ -138,7 +138,7 @@ function run {
       mkdir "$CI_CACHE/upload"
     fi
     zip_keyboard_info
-    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ false
     exit 0
   fi
 
@@ -156,7 +156,7 @@ function run {
 
   if [[ $DO_DATA == true ]]; then
     zip_keyboard_info
-    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ false
   fi
 }
 
