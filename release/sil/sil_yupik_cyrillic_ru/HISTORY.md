@@ -1,5 +1,11 @@
-Yupik Cyrillic Change History
+Yupik Cyrillic Keyboard, Russian Layout (SIL International)
+Change History
 ====================
+
+1.0 (2022-07-14)
+----------------
+* Updated documentation
+* Added Russian translation of documentation
 
 1.0 (2020-11-13)
 ----------------
