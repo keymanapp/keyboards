@@ -1,7 +1,7 @@
 Tai Dam Typewriter (SIL) Keyboard
 =========================
 
-Copyright (C) 2007-2018 SIL International
+Copyright (C) 2007-2022 SIL International
 
 Version 1.1
 
