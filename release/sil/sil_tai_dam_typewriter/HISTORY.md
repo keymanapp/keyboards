@@ -3,6 +3,7 @@ Tai Dam Typewriter (SIL) Keyboard Change History
 
 2019, 2022:
     * Documentation brought up to publishing standards.
+    * Keyboard package source rewritten.
     * No change to keyboard.
 
 Nov 2018: Version 1.1 
