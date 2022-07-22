@@ -24,9 +24,6 @@ c We'll define some useful stores here
 store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
 store(out) 'a' .. 'z'     'A' .. 'Z'
 
-store(caps) 'A'..'Z'
-store(digit) '0'..'9'
-
 group(NewContext) readonly
     c Any time we get a new context, by mouse click, tap,
     c cursor movement, new document, etc, we'll try and
@@ -37,7 +34,8 @@ group(PostKeystroke) readonly
     c We get here after every keystroke and model action is processed
 
     c Okay, let's stay on the numeric layer if we are there already
-    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&newLayer = "") if(&layer = 'numerals') > context
+    if(&newLayer = "") if(&layer = 'symbols') > context
 
     c Don't swap off the caps lock layer automatically
     if(&layer = 'caps') > context
