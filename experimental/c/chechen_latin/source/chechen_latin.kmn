@@ -41,6 +41,7 @@ group(PostKeystroke) readonly
 
     c Don't swap off the caps lock layer automatically
     if(&layer = 'caps') > context
+    if(&layer = 'rightalt-caps') > context
 
     c no other changes, so detect sentence or layer change, as long
     c as the user hasn't attempted to change layer themselves.
@@ -104,4 +105,4 @@ group(main) using keys
 + [RALT K_A] > 'ä'
 
 + [RALT U_00E7] > U+00E7 U+0307
-+ [SHIFT RALT U_00C7] > U+00C7 U+0307
++ [SHIFT RALT U_00E7] > U+00C7 U+0307
