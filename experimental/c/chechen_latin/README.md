@@ -18,8 +18,8 @@ The alphabet defined in this project was introduced in 1992 in the Chechen Repub
 Links
 -----
 
-[Wikipedia](https://en.wikipedia.org/wiki/Chechen_language)
-[Link 1](https://archive.org/details/ChR-alphabet-1992/mode/1up)
+[Wikipedia](https://en.wikipedia.org/wiki/Chechen_language)  
+[Archive](https://archive.org/details/ChR-alphabet-1992/mode/1up)
 
 Copyright
 ---------
