@@ -102,14 +102,48 @@
         layout: '_symbols',
       }];
 
+      const desktopLayouts = [{
+        name: 'Lower case layout',
+        layout: 'desktop_default',
+      }, {
+        name: 'Upper case layout',
+        layout: 'desktop_shift',
+      }, {
+        name: 'Lower case layout with right alt',
+        layout: 'desktop_rightalt',
+      }, {
+        name: 'Upper case layout with right alt',
+        layout: 'desktop_rightalt_shift',
+      }];
+
       if (prefix === 'iphone' || prefix === 'android') {
         for (let i = 0; i < mobileLayouts.length; i++) {
+
           let wrapper = document.createElement('div');
           let img = document.createElement('img');
           let label = document.createElement('h2');
 
           img.src = prefix + mobileLayouts[i].layout + '.png';
+          img.style.width = '100%';
+
           label.innerText = mobileLayouts[i].name;
+
+          wrapper.appendChild(label);
+          wrapper.appendChild(img);
+
+          layout.appendChild(wrapper);
+        }
+      } else {
+        for (let i = 0; i < desktopLayouts.length; i++) {
+
+          let wrapper = document.createElement('div');
+          let img = document.createElement('img');
+          let label = document.createElement('h2');
+
+          img.src = desktopLayouts[i].layout + '.png';
+          img.style.width = '100%';
+
+          label.innerText = desktopLayouts[i].name;
 
           wrapper.appendChild(label);
           wrapper.appendChild(img);
