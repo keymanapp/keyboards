@@ -37,11 +37,10 @@ group(PostKeystroke) readonly
     if(&newLayer = "") if(&layer = 'numerals') > context
     if(&newLayer = "") if(&layer = 'symbols') > context
 
-    c Don't swap off the caps lock layer automatically
+    c Don't swap off the 'caps lock', 'rightalt-caps' and 'rightalt' layers automatically
     if(&layer = 'caps') > context
     if(&layer = 'rightalt-caps') > context
-    if(&layer = 'rightalt') > context
-    if(&layer = 'rightalt-shift') > context
+    if(&layer = 'rightalt') > context    
 
     c no other changes, so detect sentence or layer change, as long
     c as the user hasn't attempted to change layer themselves.
@@ -63,10 +62,13 @@ group(detectStartOfSentence) readonly
     any(sentencePunctuation) ' ' > layer('shift')
     any(sentencePunctuation) '  ' > layer('shift')
 
+    c Switch back automatically from 'rightalt-shift' to `rightalt` after keystroke
+    if(&layer = 'rightalt-shift') > layer('rightalt')
+
     c And because we haven't see any of these situations above, we'll
     c move to the default layer. Note that this effectively drops us
     c back to the default layer after every keystroke that isn't blocked
-    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
+    c by the `PostKeystroke` or early `detectStartOfSentence` rules.    
     nomatch > layer('default')
 
 group(main) using keys
