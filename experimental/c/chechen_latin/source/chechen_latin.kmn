@@ -73,8 +73,10 @@ group(detectStartOfSentence) readonly
 
 group(main) using keys
 + any(key) > index(out, 1)
-+ [RALT K_QUOTE] > U+0027
-+ [RALT K_LBRKT] > ';'
++ [RALT K_EQUAL] > '"'
++ [RALT K_HYPHEN] > U+0027
++ [RALT K_0] > ':'
++ [RALT K_9] > ';'
 + [SHIFT RALT K_COLON] > 'Ç̇'
 + [RALT K_COLON] > 'ç̇'
 + [SHIFT K_QUOTE] > 'Ə'
