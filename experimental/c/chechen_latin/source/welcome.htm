@@ -138,7 +138,7 @@
           let label = document.createElement('h2');
           let helpText = document.createElement('p');
 
-          img.src = prefix + mobileLayouts[i].layout + '.png';
+          img.src = 'welcome/' + prefix + mobileLayouts[i].layout + '.png';
           img.style.width = '100%';
 
           label.innerText = mobileLayouts[i].name;
@@ -158,8 +158,10 @@
           let label = document.createElement('h2');
           let helpText = document.createElement('p');
 
-          img.src = desktopLayouts[i].layout + '.png';
-          img.style.width = '100%';
+          img.src = 'welcome/' + desktopLayouts[i].layout + '.png';
+          if (window.innerWidth < 960) {
+            img.style.width = '100%';
+          }
 
           label.innerText = desktopLayouts[i].name;
           helpText.innerText = desktopLayouts[i].helpText;
