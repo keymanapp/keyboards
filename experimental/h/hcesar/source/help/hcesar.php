@@ -12,8 +12,8 @@ chaves normalmente utilizadas no meio do layout.</p>
 commonly used keys in the middle of the layout. 
 </p>
 
-<h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
-</div>
+<h2>Keyboard Layout</h2>
+<p><a href="Hcesar_Layout.png"><img class="keyboard" src="Hcesar_Layout.png"  /></a></p>
+
 
 <p>© SIL International</p>
