@@ -5,7 +5,7 @@ Version 1.0
 
 Description
 -----------
-Tirhuta generated from template
+Tirhuta INSCRIPT keyboard layout for Maithili.
 
 Links
 -----
