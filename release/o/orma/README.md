@@ -5,7 +5,7 @@ Version 1.0
 
 Description
 -----------
-orma generated from template
+This keyboard is for the Orma language of Kenya.
 
 Links
 -----
