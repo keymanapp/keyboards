@@ -5,7 +5,7 @@ Version 1.0
 
 Description
 -----------
-Tirhuta INSCRIPT keyboard layout for Maithili.
+This is a Tirhuta aka Mithilakshar (INSCRIPT) keyboard layout for typing Maithili Language.
 
 Links
 -----
