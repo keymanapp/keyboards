@@ -1,12 +1,12 @@
 ﻿store(&VERSION) '9.0'
 store(&TARGETS) 'desktop'
 store(&NAME) 'Piaroa'
-store(&COPYRIGHT) '© 2019 Eddie Antonio Santos'
-store(&KEYBOARDVERSION) '1.1.1'
+store(&COPYRIGHT) '© 2022 Eddie Antonio Santos'
+store(&KEYBOARDVERSION) '1.2.0'
 store(&ETHNOLOGUECODE) 'pid'
-store(&MESSAGE) 'Piaroa keyboard/teclado piaroa. Uses RightAlt+a/o to type ä/ö and RightAlt+, to type a̧. Utiliza la Alt derecha para escribir la ä/ö/a̧.'
+store(&MESSAGE) 'Piaroa keyboard/teclado piaroa. Uses RightAlt+a/o/u to type ä/ö/ü and RightAlt+, to type a̧. Utiliza la Alt derecha para escribir la ä/ö/ü/a̧.'
 
-store(vowel) "aäeioöuAÄEIOÖU"
+store(vowel) "aäeioöuüAÄEIOÖUÜ"
 store(Cedilla) U+0327
 
 begin Unicode > use(main)
@@ -14,8 +14,12 @@ begin Unicode > use(main)
 group(main) using keys
 + [RALT K_A] > 'ä'
 + [RALT K_O] > 'ö'
-+ [SHIFT RALT K_O] > 'Ö'
++ [RALT K_U] > 'ü'
++ [RALT K_N] > 'ñ'
 + [SHIFT RALT K_A] > 'Ä'
++ [SHIFT RALT K_O] > 'Ö'
++ [SHIFT RALT K_U] > 'Ü'
++ [SHIFT RALT K_N] > 'Ñ'
 
 c Insert a combining cedilla only after a vowel.
 any(vowel) + [RALT K_COMMA] > index(vowel, 1) $Cedilla
