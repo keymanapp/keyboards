@@ -15,9 +15,11 @@ group(main) using keys
 + [RALT K_A] > 'ä'
 + [RALT K_O] > 'ö'
 + [RALT K_U] > 'ü'
++ [RALT K_N] > 'ñ'
 + [SHIFT RALT K_A] > 'Ä'
 + [SHIFT RALT K_O] > 'Ö'
 + [SHIFT RALT K_U] > 'Ü'
++ [SHIFT RALT K_N] > 'Ñ'
 
 c Insert a combining cedilla only after a vowel.
 any(vowel) + [RALT K_COMMA] > index(vowel, 1) $Cedilla

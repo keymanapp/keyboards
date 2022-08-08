@@ -24,7 +24,11 @@ To type **ä**, press <kbd>Right Alt</kbd>+<kbd>a</kbd>
 
 To type **ö**, press <kbd>Right Alt</kbd>+<kbd>o</kbd>
 
+To type **ü**, press <kbd>Right Alt</kbd>+<kbd>u</kbd>
+
 To type a nasal vowel (a̧/ä̧/ȩ/i̧/o̧/ö̧/u̧/ü̧), type the vowel (a/ä/e/i/o/ö/u/ü), and then press <kbd>Right Alt</kbd>+<kbd>,</kbd>.
+
+To type **ñ**, press <kbd>Right Alt</kbd>+<kbd>n</kbd>
 
 Links
 -----
