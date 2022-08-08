@@ -1,6 +1,10 @@
 Piaroa Change History
 ====================
 
+1.2.0 (2022-08-08)
+----------------
+* Add <kbd>ü̧</kbd> and <kbd>Ü̧</kbd>
+
 1.1.1 (2019-09-10)
 ----------------
 * Prepare for inclusion in keymanapp/keyboards repository.
