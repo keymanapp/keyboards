@@ -40,6 +40,8 @@
     <tr> <td>ä&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>A</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ö&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>O</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ü&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>U</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ñ</td> <td> <kbd>Alt Gr</kbd> + <kbd>N</kbd></td> </tr>
+    <tr> <td>Ñ</td> <td> <kbd>Shift</kbd> + <kbd>AltGr</kbd> + <kbd>N</kbd></td> </tr>
   </tbody>
 </table>
 
@@ -92,6 +94,8 @@ funcionará!</em></p>
     <tr> <td>ä&#x327;</td> <td> <kbd>Alt Gr</kbd> + <kbd>A</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ö&#x327;</td> <td> <kbd>Alt Gr</kbd> + <kbd>O</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ü&#x327;</td> <td> <kbd>Alt Gr</kbd> + <kbd>U</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ñ</td> <td> <kbd>Alt Gr</kbd> + <kbd>N</kbd></td> </tr>
+    <tr> <td>Ñ</td> <td> <kbd>⇧ Mayús</kbd> + <kbd>Alt Gr</kbd> + <kbd>N</kbd></td> </tr>
   </tbody>
 </table>
 
@@ -102,7 +106,7 @@ funcionará!</em></p>
 <hr>
 
 <h1>Change History</h1>
-<p>1.2.0: Add ü̧ and Ü̧.</p>
+<p>1.2.0: Add ü̧/Ü̧ and ñ/Ñ</p>
 <p>1.1.1: Prepare for inclusion in Keyman Keyboards repository.</p>
 <p>1.1.0: Prevent inserting extraneous cedillas.</p>
 <p>1.0.0: Initial release.</p>
