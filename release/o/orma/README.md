@@ -1,11 +1,11 @@
-orma keyboard
+Orma keyboard
 ==============
 
 Version 1.0
 
 Description
 -----------
-This keyboard is for the Orma language of Kenya.
+A keyboard  for the Orma language of Kenya.
 
 Links
 -----
