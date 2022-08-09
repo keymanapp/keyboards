@@ -1,0 +1,30 @@
+miluk_hanis_siuslaw keyboard
+==============
+
+Version 1.0
+
+Description
+-----------
+miluk_hanis_siuslaw generated from template
+
+Links
+-----
+
+Copyright
+---------
+See [LICENSE.md](LICENSE.md)
+
+Supported Platforms
+-------------------
+ * Windows
+ * macOS
+ * Linux
+ * Web
+ * iPhone
+ * iPad
+ * Android phone
+ * Android tablet
+ * Mobile devices
+ * Desktop devices
+ * Tablet devices
+
