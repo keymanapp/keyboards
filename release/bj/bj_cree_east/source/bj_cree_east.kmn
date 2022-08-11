@@ -126,8 +126,8 @@ group(main) using keys
 
 c  Option keys Set composite mode by default
     store(option_key)     ''
-$keymanonly: + [RALT K_HYPHEN]	>	set(option_key='nfd') c 
-$keymanonly: + [RALT K_EQUAL]	>	reset(option_key)  c 
+ + [RALT K_HYPHEN]	>	set(option_key='nfd') c 
+ + [RALT K_EQUAL]	>	reset(option_key)  c 
 
 
 c Special rules to deal with h:
@@ -255,15 +255,15 @@ c ch   ri   s    t   > christ symbol
     U+14A1 U+1546 U+1505 U+1466 > U+166D
 
 c short vowels
-$keymanonly: if(option_key = '') U+1427 any(C_ef) > index(C_efc,3)
+if(option_key = '') U+1427 any(C_ef) > index(C_efc,3)
 
 c long vowels
-$keymanonly: if(option_key = '') any(C_ef_long_a) U+140A > index(C_efc_long_a,2)
-$keymanonly: if(option_key = '') U+1427 U+1559 U+140A > U+155B c fwaa
-$keymanonly: if(option_key = '') U+1427 U+1566 U+140A > U+1568 c thwaa
+if(option_key = '') any(C_ef_long_a) U+140A > index(C_efc_long_a,2)
+if(option_key = '') U+1427 U+1559 U+140A > U+155B c fwaa
+if(option_key = '') U+1427 U+1566 U+140A > U+1568 c thwaa
 
-$keymanonly: if(option_key = '') any(C_ef_long_i) U+1403 > index(C_efc_long_i,2)
-$keymanonly: if(option_key = '') any(C_ef_long_u) U+1405 > index(C_efc_long_u,2)
+if(option_key = '') any(C_ef_long_i) U+1403 > index(C_efc_long_i,2)
+if(option_key = '') any(C_ef_long_u) U+1405 > index(C_efc_long_u,2)
 
 c If we did anything, then go back through again
     match > use(MakeSyllables)
