@@ -1,11 +1,11 @@
-Orma keyboard
+Tirhuta keyboard
 ==============
 
 Version 1.0
 
 Description
 -----------
-A keyboard  for the Orma language of Kenya.
+This is a Tirhuta aka Mithilakshar (INSCRIPT) keyboard layout for typing the Maithili Language.
 
 Links
 -----

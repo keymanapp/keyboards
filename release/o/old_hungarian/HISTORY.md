@@ -1,6 +1,10 @@
 Old Hungarian Change History
 ====================
 
+1.4 (2022-08-10)
+----------------
+* add Caps Lock support for mobile
+
 1.3 (2022-05-12)
 ----------------
 * Complete rewrite of touch layout
