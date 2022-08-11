@@ -1,9 +1,7 @@
 BJCreeUNI (east) keyboard
 =====================
 
-Copyright (C) 2016-2019 Bill Jancewicz
-
-Version 9.0.4
+Copyright (C) Bill Jancewicz
 
 East Cree Phonetic-style keyboard for Unified Canadian Aboriginal Syllabics.
 
@@ -21,4 +19,6 @@ Supported Platforms
  * MacOS
  * Linux
  * Web
+ * Mobile
+ 
 
