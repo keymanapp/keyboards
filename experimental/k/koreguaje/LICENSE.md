@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-CC-BY-SA: Creative Commons Attribution Share Alike
+© Lucien Carroll
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
