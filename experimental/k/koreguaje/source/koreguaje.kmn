@@ -1,9 +1,9 @@
-﻿c Teclado para koreguaje (y otras lenguas tucanoas) basado en el teclado típico de español. Usa la ñ para hacer las letras con tilde y la raya para hacer la u/i con barra.
+﻿c Teclado para koreguaje (y otras lenguas tucanas) basado en el teclado típico de español. Usa la ñ para hacer las letras con tilde y la raya para hacer la u/i con barra.
 store(&VERSION) '10.0'
 store(&NAME) 'Koreguaje'
-store(&COPYRIGHT) 'CC-BY-SA lucien@discurs.us'
+store(&COPYRIGHT) '© Lucien Carroll'
 store(&KEYBOARDVERSION) '0.2'
-store(&TARGETS) 'windows'
+store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'koreguaje.kvks'
 store(&LAYOUTFILE) 'koreguaje.keyman-touch-layout'
 store(&BITMAP) 'koreguaje.ico'
@@ -226,8 +226,9 @@ c
 + [K_COLON] > dk(00f1)          c combining ~
 + [SHIFT K_COLON] > dk(00d1)    
 
-+ [K_HYPHEN] > U+0027           c '
++ [K_HYPHEN] > U+a78c           c non-punct saltillo ꞌ 
 + [SHIFT K_HYPHEN] > U+003f     c ?
++ [RALT K_HYPHEN] > U+0027      c single quote '
 
 + [K_BKQUOTE] > U+00ba          c º
 + [SHIFT K_BKQUOTE] > U+00aa    c ª
