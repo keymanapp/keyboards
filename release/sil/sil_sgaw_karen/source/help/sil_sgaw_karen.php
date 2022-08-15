@@ -13,7 +13,7 @@
 </p>
 
 <h1>Keyboard Layout</h1>
-<p>Since the majority of users of S'gaw Karen keyboard will likely be bilingual with Burmese, some Burmese characters are added to the keyboard for convenience purposes. Users do not have to switch keyboards to type characters from loanwords. Those characters are: ်, ာ, ​ေ, ဗ, ဉ and ယ. Some characters combinations are also added to the keyboard for convenience purposes: ◌ၢၢ်, ◌ၢၣ်, ◌ၢာ်, လီၤ, ◌ၢၤ, ◌ှ့ and ဒီး.</p> 
+<p>Since the majority of users of S'gaw Karen keyboard will likely be bilingual with Burmese, some Burmese characters are added to the keyboard for convenience purposes. Users do not have to switch keyboards to type characters from loanwords. Those characters are: ်, ာ, ​ေ, ဗ, ဉ and ယ. Some characters combinations are also added to the keyboard for convenience purposes: ◌ၢၢ်, ◌ၢၣ်, ◌ၢာ်, လီၤ, ◌ှ့ and ဒီး.</p> 
 <p>The characters ဒ and ူ can be found on both Unshift and Shift layers as this is more about convenience for transition from the Burmese keyboard.</p>
 <p>​ေ has to be typed before the consonant it is attached to. For example, type ​ေ and then ဂ to get ​ဂေ. The same rule applies to all consonants and double consonants.</p>
 <p> ္ on "Shift + O" of Desktop layout can be used for stacking consonant.</p>
@@ -29,4 +29,4 @@
 
 <h3>Long press</h3>
 <p>Press and hold on the key with a little dot on the top right to reveal more keys.</p>
-<p><a href="mobile_layout_longpress.png"><img class="keyboard" src="mobile_layout_longpress.png" width=40% /></a></p>
+<p><a href="mobile_layout_longpress.png"><img width=60% class="keyboard" src="mobile_layout_longpress.png"></a></p>
