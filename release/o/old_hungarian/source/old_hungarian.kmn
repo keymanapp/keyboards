@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Old Hungarian'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.4'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'old_hungarian.kvks'
 store(&KMW_RTL) '1'
@@ -50,6 +50,13 @@ store(ucU)   U+10C80          U+10C81          U+10C82          U+10C83         
 store(numbersU) U+10CFA U+10CFB U+10CFC U+10CFD U+10CFE U+10CFF
 store(numbersK) [K_1]   [K_2]   [K_3]   [K_4]   [K_5]   [K_6]
 store(numpad)   [K_NP7] [K_NP8] [K_NP9] [K_NP4] [K_NP5] [K_NP6]
+
+c Add support for caps
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+$keymanweb: store(&CasedKeys) [K_A] .. [K_Z] [K_7] [K_8] [K_9] [K_0] [K_HYPHEN] [K_EQUAL] [K_oE2] 
 
 group(main) using keys
 
@@ -128,5 +135,67 @@ c angle marks
 + [NCAPS SHIFT RALT K_V]       > U+0026
 + [NCAPS SHIFT RALT K_COLON]   > U+20AC
 
+group(Touch) using keys
+    c This empty group, plus the rule that calls it, prevents control keys from affecting
+    c the base letter when used on touch keyboards, e.g. pressing 'e on a hardware keyboard
+    c will give é but on a touch keyboard this letter is accessed via long-press on e
+    c instead.
+
+c
+c Start-of-sentence and automatic layer switching
+c
+
+store(digit) '0'..'9'
+
+c Some common end-of-sentence punctuation
+store(sentencePunctuation) '.?!¿¡'
+
+c Various Unicode spacing characters
+store(whitespace) ' ' U+00A0 U+000D U+000A U+0009 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F
+store(whitespace-dk) outs(whitespace) dk(1)
+c store(zwsp) U+200B
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    platform('touch') > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Okay, let's stay on the numeric layer if we are there already
+    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Don't swap off the caps lock layer automatically
+    platform('touch') if(&layer = 'caps') > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+
+
+    c If we are at the start of a text field, we're at the 'start of a
+    c sentence', so we'll move to the Shift layer
+    nul > layer('shift')
+
+    c Otherwise, we'll move to the Shift layer only if we see end of a
+    c sentence followed by one, two, or three spaces.
+    any(sentencePunctuation) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) any(whitespace) > layer('shift')
+    any(sentencePunctuation) dk(1) any(whitespace) any(whitespace) any(whitespace) > layer('shift')
+
+    c And because we haven't see any of these situations above, we'll
+    c move to the default layer. Note that this effectively drops us
+    c back to the default layer after every keystroke that isn't blocked
+    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
+    nomatch > layer('default')
+
+c End of keyboard
 
 

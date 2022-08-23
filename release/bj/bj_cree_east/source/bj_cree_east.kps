@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.267.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">BJCreeUNI (east)</Name>
-    <Copyright URL="">Copyright © 2016-2019 Bill Jancewicz NDC/SIL</Copyright>
+    <Copyright URL="">Copyright © 2016-2022 Bill Jancewicz NDC/SIL</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
     <WebSite URL="https://keyman.com/keyboards/bj_cree_east">https://keyman.com/keyboards/bj_cree_east</WebSite>
   </Info>
@@ -36,28 +36,10 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\bj_cree_east.js</Name>
-      <Description>Keyboard BJ-OjiCree (Kingfisher)</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>bjcrus.ttf</Name>
-      <Description>Font BJCree UNI</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>bjcrusb.ttf</Name>
-      <Description>Font BJCree UNI Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -65,15 +47,47 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>options.htm</Name>
+      <Description>File options.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\cree\bjcrus.ttf</Name>
+      <Description>Font BJCree UNI</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\cree\bjcrusb.ttf</Name>
+      <Description>Font BJCree UNI Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\cree\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\build\bj_cree_east.js</Name>
+      <Description>File bj_cree_east.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>BJCreeUNI (east)</Name>
       <ID>bj_cree_east</ID>
-      <Version>9.0.3</Version>
+      <Version>9.1</Version>
+      <OSKFont>..\..\..\shared\fonts\cree\bjcrus.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\cree\bjcrus.ttf</DisplayFont>
       <Languages>
-        <Language ID="crl-Cans">Northern East Cree (Unified Canadian Aboriginal Syllabics)</Language>
-        <Language ID="crj-Cans">Southern East Cree (Unified Canadian Aboriginal Syllabics)</Language>
+        <Language ID="crl">Northern East Cree</Language>
+        <Language ID="crj">Southern East Cree</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
