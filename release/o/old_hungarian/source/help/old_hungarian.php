@@ -6,9 +6,9 @@
 ?>
 
 <p>
-    Keyboard for Old Hungarian.
+Keyboard for Old Hungarian. Desktop layout based on xkeyboard-config's "Old Hungarian (for ligatures)" 
+keyboard layout by András Tisza (2013) and Viktor Kovács (2017, 2018, 2020).
 </p>
-
 
 <h2>Desktop Keyboard Layout</h2>
 
