@@ -1,9 +1,9 @@
 Naija Type Keyboard for Touch and Physical Keyboards
 ====================================================
 
-© 2022 David Rowbory
+© 2021-2022 David Rowbory
 
-Version 34
+Version 39
 
 Description
 -----------
