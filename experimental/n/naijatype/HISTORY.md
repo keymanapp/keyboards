@@ -1,4 +1,4 @@
-Naijatype Keyboard Change History
+Naija Type Keyboard Change History
 =======================
 
 August 2022
