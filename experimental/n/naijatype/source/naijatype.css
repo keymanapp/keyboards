@@ -4,6 +4,14 @@ body {
 }
 .kmw-key-row {
 }
+/* easier selecting from below *//*
+.phone .kmw-key-square-ex  {
+   margin: 0 0 -30px 5px;
+}
+.phone .kmw-key-square-ex .kmw-key-default {
+   margin: 0 0 30px 5px;
+}*/
+
 .phone.android .kmw-key.kmw-key-default, .phone.ios .kmw-key.kmw-key-default {
 color: black;
 background: none; /* white;*/
@@ -30,6 +38,10 @@ font-size: 1.2em;
     right: 8%;
     left: initial;*/
     color: #8b8;
+}
+
+.phone.android #kmw-popup-keys {
+   border-radius: 10px; 
 }
 
 .phone.android .kmw-banner-bar, .phone.ios .kmw-banner-bar {
