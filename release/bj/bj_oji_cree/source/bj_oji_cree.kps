@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">BJ-OjiCree (Kingfisher)</Name>
-    <Copyright URL="">Copyright © 2016-2018 Bill Jancewicz NDC/SIL</Copyright>
+    <Copyright URL="">Copyright © 2016-2022 Bill Jancewicz NDC/SIL</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
     <WebSite URL="https://help.keyman.com/keyboard/bj_oji_cree">https://help.keyman.com/keyboard/bj_oji_cree</WebSite>
   </Info>
@@ -54,25 +54,39 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>bjcrus.ttf</Name>
+      <Name>..\..\..\shared\fonts\cree\bjcrus.ttf</Name>
       <Description>Font BJCree UNI</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>bjcrusb.ttf</Name>
+      <Name>..\..\..\shared\fonts\cree\bjcrusb.ttf</Name>
       <Description>Font BJCree UNI Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\cree\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>options.htm</Name>
+      <Description>File options.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>BJ-OjiCree (Kingfisher)</Name>
       <ID>bj_oji_cree</ID>
-      <Version>9.0.3</Version>
+      <Version>9.1</Version>
+      <OSKFont>..\..\..\shared\fonts\cree\bjcrus.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\cree\bjcrus.ttf</DisplayFont>
       <Languages>
-        <Language ID="ojs-Cans">Severn Ojibwa (Unified Canadian Aboriginal Syllabics)</Language>
+        <Language ID="ojs">Severn Ojibwa</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -1,4 +1,4 @@
-c File Name: bj_oji_cree.kmn
+﻿c File Name: bj_oji_cree.kmn
 c File Version: Apr 2016
 c Rewritten by Bill Jancewicz
 
@@ -55,15 +55,14 @@ c updated stores for developer version 9.0
 
 c Revision 01 Apr 2016, (BJ) bug fix for initial consonant keys ver 9.0.1
 
-store(&VERSION) '9.0'
+store(&VERSION) '10.0'
 store(&NAME) "BJ-OjiCree (Kingfisher)"
 store(&BITMAP) 'bj_oji_cree.ico'
-store(&COPYRIGHT) 'Copyright (c) April 2016-2018 Bill Jancewicz NDC/SIL'
-store(&MESSAGE) "This keyboard may be freely used and redistributed"
-store(&ETHNOLOGUECODE) 'ojs'
+store(&COPYRIGHT) 'Copyright (c) Bill Jancewicz NDC/SIL'
 store(&VISUALKEYBOARD) 'bj_oji_cree.kvks'
-store(&KEYBOARDVERSION) '9.0.3'
-store(&TARGETS) 'windows macosx linux web iphone'
+store(&KEYBOARDVERSION) '9.1'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'bj_oji_cree.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -107,6 +106,35 @@ store(Hkey) "h"
 store(CapHkey) "H"
 store(WKey) "wW"
 
+c Western Finals with U+1427 following
+store(C_wf) U+1401 U+1403 U+1404 U+1405 U+1406 U+140A U+140B U+142F U+1431 U+1432 U+1433 U+1434 U+1438 U+1439 \
+            U+144C U+144E U+144F U+1450 U+1451 U+1455 U+1456 U+146B U+146D U+146E U+146F U+1470 U+1472 U+1473 \
+            U+1489 U+148B U+148C U+148D U+148E U+1490 U+1491 U+14A3 U+14A5 U+14A6 U+14A7 U+14A8 U+14AA U+14AB \
+            U+14C0 U+14C2 U+14C3 U+14C4 U+14C5 U+14C7 U+14C8 U+14ED U+14EF U+14F0 U+14F1 U+14F2 U+14F4 U+14F5 \
+            U+1510 U+1511 U+1512 U+1513 U+1514 U+1515 U+1516 U+1526 U+1528 U+1529 U+152A U+152B U+152D U+152E \
+            U+15A7 U+15A8 U+15A9 U+15AA U+15AB U+15AC U+15AD \
+            U+155E U+1567 \
+
+store(C_wfc) U+140D U+140F U+1411 U+1413 U+1415 U+1418 U+141A U+143B U+143D U+143F U+1441 U+1443 U+1445 U+1447 \
+             U+1458 U+145A U+145C U+145E U+1460 U+1462 U+1464 U+1475 U+1477 U+1479 U+147B U+147D U+147F U+1481 \
+             U+1493 U+1495 U+1497 U+1499 U+149B U+149D U+149F U+14AD U+14AF U+14B1 U+14B3 U+14B5 U+14B7 U+14B9 \
+             U+14CA U+18C7 U+18C9 U+18CB U+18CD U+14CC U+14CE U+14F7 U+14F9 U+14FB U+14FD U+14FF U+1501 U+1503 \
+             U+1518 U+151A U+151C U+151E U+1520 U+1522 U+1524 U+1530 U+1532 U+1534 U+1536 U+1538 U+153A U+153C \
+             U+1677 U+1678 U+1679 U+167A U+167B U+167C U+167D \
+             U+18E3 U+1569 \
+
+c Western Finals (long a) w      pw     tw     kw     chw    mw     nw     sw     shw    yw     thw
+store(C_wf_long_a)        U+1418 U+1445 U+1462 U+147F U+149D U+14B7 U+14CC U+1501 U+1522 U+153A U+167C
+store(C_wfc_long_a)       U+141A U+1447 U+1464 U+1481 U+149F U+14B9 U+14CE U+1503 U+1524 U+153C U+167D
+
+c Western Finals (long i) w      pw     tw     kw     chw    mw     nw     sw     shw    yw     thw
+store(C_wf_long_i)        U+140F U+143D U+145A U+1477 U+1495 U+14AF U+18C7 U+14F9 U+151A U+1532 U+1678
+store(C_wfc_long_i)       U+1411 U+143F U+145C U+1479 U+1497 U+14B1 U+18C9 U+14FB U+151C U+1534 U+1679
+
+c Western Finals (long o/u) w      pw     tw     kw     chw    mw     nw     sw     shw    yw     thw
+store(C_wf_long_u)          U+1413 U+1441 U+145E U+147B U+1499 U+14B3 U+18CB U+14FD U+151E U+1536 U+167A
+store(C_wfc_long_u)         U+1415 U+1443 U+1460 U+147D U+149B U+14B5 U+18CD U+14FF U+1520 U+1538 U+167B
+
 c ================================================================
 c GROUP MAIN - convert keycodes
 c 
@@ -115,6 +143,11 @@ c the group MakeSyllables.)
 c ================================================================
 
 group(Main) using keys
+
+c  Option keys Set composite mode by default
+    store(option_key)     ''
+ + [RALT K_HYPHEN]	>	set(option_key='nfd') c 
+ + [RALT K_EQUAL]	>	reset(option_key)  c 
         
 c Special rules to deal with h: (western finals)
 c s   +    h      > sh (small sh character)
@@ -230,10 +263,10 @@ c Convert consonant followed by vowels into syllable:
     any(CC) U+1401 > index(Ce,1) 
     any(CC) U+1403 > index(Ci,1) 
     any(CC) U+1404 > index(Cii,1) 
-    any(CC) U+1405 > index(Cu,1) 
-    any(CC) U+1406 > index(Cuu,1) 
-    any(CC) U+1405 > index(Co,1) 
-    any(CC) U+1406 > index(Coo,1) 
+    any(CC) U+1405 > index(Cu,1) c also Co line 233 
+    any(CC) U+1406 > index(Cuu,1)  c also Coo line 234
+c    any(CC) U+1405 > index(Co,1) 
+c    any(CC) U+1406 > index(Coo,1)
     any(CC) U+140A > index(Ca,1) 
     any(CC) U+140B > index(Caa,1) 
 
@@ -242,10 +275,10 @@ c Consonant + w + vowel   >   Consonant vowel w
     any(CC) U+1424  U+1401 > index(Ce,1) U+1427  
     any(CC) U+1424  U+1403 > index(Ci,1) U+1427
     any(CC) U+1427  U+1404 > index(Cii,1) U+1427 deadkey(1) 
-    any(CC) U+1424  U+1405 > index(Cu,1) U+1427  
-    any(CC) U+1427  U+1406 > index(Cuu,1) U+1427 deadkey(1) 
-    any(CC) U+1424  U+1405 > index(Co,1) U+1427  
-    any(CC) U+1427  U+1406 > index(Coo,1) U+1427 deadkey(1) 
+    any(CC) U+1424  U+1405 > index(Cu,1) U+1427   c also Coo line 245
+    any(CC) U+1427  U+1406 > index(Cuu,1) U+1427 deadkey(1) c also Coo line 246
+c     any(CC) U+1424  U+1405 > index(Co,1) U+1427  
+c     any(CC) U+1427  U+1406 > index(Coo,1) U+1427 deadkey(1)
     any(CC) U+1424  U+140A > index(Ca,1) U+1427  
     any(CC) U+1427  U+140B > index(Caa,1) U+1427 deadkey(1) 
 
@@ -259,7 +292,7 @@ c Vowel followed by duplicate vowel changes to long form:
     any(Ca) U+140A > index(Caa,1)  
 
 c mid w
-    any(Ci) U+1427 U+1403 > index(Cii,1) U+1427 deadkey(1) 
+    any(Ci) U+1427 U+1403 > index(Cii,1) U+1427 deadkey(1)
     any(Cu) U+1427 U+1405 > index(Cuu,1) U+1427 deadkey(1)  
     any(Co) U+1427 U+1405 > index(Coo,1) U+1427 deadkey(1)  
     any(Ca) U+1427 U+140A > index(Caa,1) U+1427 deadkey(1)  
@@ -279,6 +312,19 @@ c w + vowel = vowel w
 c Special rule for Christ (remember, ch is already c)
 c ch     r      i      s      t    > christ symbol
     U+1428 U+1552 U+1403 U+1422 U+141F > U+166D
+
+
+c short vowels
+if(option_key = '') any(C_wf) U+1427 > index(C_wfc,2)
+if(option_key = '') any(C_wf) U+1427 deadkey(1) > index(C_wfc,2)
+
+c long vowels
+if(option_key = '') any(C_wf_long_a) U+140A > index(C_wfc_long_a,2)
+c $keymanonly: if(option_key = '') U+1427 U+1559 U+140A > U+155B c fwaa
+c $keymanonly: if(option_key = '') U+1427 U+1566 U+140A > U+1568 c thwaa
+
+if(option_key = '') any(C_wf_long_i) U+1403 > index(C_wfc_long_i,2)
+if(option_key = '') any(C_wf_long_u) U+1405 > index(C_wfc_long_u,2)
 
 c If we did anything, then go back through again
     match > use(MakeSyllables)
