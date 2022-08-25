@@ -30,7 +30,7 @@ your computer. </span></p>
 <p style='margin:0in;margin-bottom:.0001pt'>&nbsp;</p>
 
 <p style='margin:0in;margin-bottom:.0001pt'><span lang=EN-GB style='font-size:
-14.0pt;color:#0D0D0D'><a href="Amazigh%20keyboard%20help.pdf">Amazigh Lat
+14.0pt;color:#0D0D0D'><a href="amazigh%20keyboard%20help.pdf">Amazigh Lat
 keyboard Help PDF</a></span></p>
 
 <p style='margin:0in;margin-bottom:.0001pt'><i><span lang=EN-GB
