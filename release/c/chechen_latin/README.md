@@ -1,7 +1,6 @@
 Chechen Latin keyboard
 ==============
 
-Version 1.0
 
 Description
 -----------
