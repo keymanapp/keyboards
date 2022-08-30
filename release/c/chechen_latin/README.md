@@ -1,7 +1,6 @@
 Chechen Latin keyboard
 ==============
 
-
 Description
 -----------
 Chechen (Нохчийн мотт, Noxçiyn mott,[3] [ˈnɔxt͡ʃĩː mu͜ɔt]) is a Northeast Caucasian language spoken by 2 million people, mostly in the Chechen Republic and by members of the Chechen diaspora throughout Russia and the rest of Europe, Jordan, Central Asia (mainly Kazakhstan and Kyrgyzstan) and Georgia.
