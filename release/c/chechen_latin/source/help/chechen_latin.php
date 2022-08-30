@@ -8,9 +8,6 @@ require_once('header.php');
   <h1>Start Using Chechen Latin Keyboard</h1>
 
   <p>
-    Chechen Latin Keyboard v1.0.
-  </p>
-  <p>
 
   </p>
 
