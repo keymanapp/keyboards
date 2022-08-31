@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName>C:\Data\Keyman\balochi_urdu\source\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Balochi Urdu</Name>
-    <Copyright URL="">© 2018-2021 SIL International. This keyboard is distributed under The MIT License (MIT).</Copyright>
+    <Copyright URL="">© 2018-2022 SIL International.</Copyright>
   </Info>
   <Files>
     <File>
@@ -45,22 +46,10 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\README.md</Name>
-      <Description>File README.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
-    <File>
       <Name>..\build\balochi_urdu.js</Name>
       <Description>File balochi_urdu.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\lateef\LateefRegOT.ttf</Name>
-      <Description>Font Lateef</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>welcome\urduU_.png</Name>
@@ -86,13 +75,87 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Bold.ttf</Name>
+      <Description>Font Lateef Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-ExtraBold.ttf</Name>
+      <Description>Font Lateef ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-ExtraLight.ttf</Name>
+      <Description>Font Lateef ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Light.ttf</Name>
+      <Description>Font Lateef Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Medium.ttf</Name>
+      <Description>Font Lateef Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</Name>
+      <Description>Font Lateef</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\Lateef-SemiBold.ttf</Name>
+      <Description>Font Lateef SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\lateef\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>B. Urdu</Name>
+      <Name>Balochi Urdu</Name>
       <ID>balochi_urdu</ID>
-      <Version>1.4</Version>
+      <Version>1.5</Version>
       <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\lateef\Lateef-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bal">Baluchi</Language>
       </Languages>
