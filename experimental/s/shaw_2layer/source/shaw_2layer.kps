@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.288.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -102,12 +102,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\assets\InterAlia-Bold.ttf</Name>
+      <Description>Font Inter Alia Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\InterAlia-Regular.ttf</Name>
+      <Description>Font Inter Alia Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Shaw 2-Layer (Shift)</Name>
       <ID>shaw_2layer</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
+      <OSKFont>..\assets\InterAlia-Regular.ttf</OSKFont>
+      <DisplayFont>..\assets\InterAlia-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="en-Shaw-UK">English (Shavian, UK)</Language>
         <Language ID="en-Shaw-US">English (Shavian, US)</Language>
