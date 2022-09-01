@@ -171,16 +171,6 @@ c non-letter characters
  + any(ralt) > index(nonletterlower,1)
  + any(raltshift) > index(nonletterupper,1)
 
-c --- KeymanWeb: no CAPS or RALT ---
-
-c map all single characters
-c $keymanweb: + any(keydflt) > index(charlower,1)
-c $keymanweb: + any(keyshift) > index(charupper,1)
-
-c non-letter characters
-c $keymanweb: + any(ctlalt) > index(nonletterlower,1)
-c $keymanweb: + any(ctlaltshift) > index(nonletterupper,1)
-
 c touch-layout rules
 + any(tkeyLC) > index(tcharLC,1)
 + any(tkeyUC) > index(tcharUC,1)
