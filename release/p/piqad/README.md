@@ -5,10 +5,7 @@ Version 1.0
 
 Description
 -----------
-pIqaD generated from template
-
-Links
------
+Keyboard designed for Klingon `pIqaD` (). Uses code2000 font. Includes onscreen and mobile touch keyboards. BCP-47 code: tlh-Piqd
 
 Copyright
 ---------
