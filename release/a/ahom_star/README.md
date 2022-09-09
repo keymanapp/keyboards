@@ -1,9 +1,8 @@
 Ahom Star keyboard
 ==============
 
-© 2021 HemantaGogoi Ngi Mon
+© HemantaGogoi Ngi Mon
 
-Version 1.0
 
 Description
 -----------
