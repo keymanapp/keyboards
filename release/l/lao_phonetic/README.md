@@ -22,4 +22,4 @@ Supported Platforms
  * Linux
  * Web
  * Desktop devices
- 
+ * Touch devices
