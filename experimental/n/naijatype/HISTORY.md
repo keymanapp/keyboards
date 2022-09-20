@@ -1,8 +1,14 @@
 Naija Type Keyboard Change History
 =======================
 
+September 2022
+--------------
+* v41 Moved Naira left and stay on numeric layer, joined Hash inside it, and added space bar. Reduced unnecessary longpress items. Added more currency symbols in numeric layer. Added s underdot in touch. Added Tugbiri, Kanuri, Igala languages.
+
 August 2022
 -----------
+* v40 Using the new Keyman 15 start of sentence detection, improved welcome docs
+* v39 Added more BCP 47 languages to package, tweaked icon for visibility*
 * v38 Saltillo (letter-like apostrophe) added.
 
 * v37 Change double space behaviour (allow lots of spaces again not turning all into full stop then space), and fix bug that stopped enter working in some contexts after a full stop.
