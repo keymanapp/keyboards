@@ -38,9 +38,8 @@ TIPS
 As this font is distributed at no cost, we are unable to provide a 
 commercial level of personal technical support. The font has, however, 
 been through some testing on various platforms to be sure it works in most
-situations. In particular, it has been tested and shown to work on Windows 7,
-Windows 8 and Windows 10. Graphite capabilities have been tested on 
-Graphite-supported platforms.
+situations. In particular, it has been tested and shown to work on 
+Windows 10. Graphite capabilities have been tested on Graphite-supported platforms.
 
 If you do find a problem, please do report it through the website: 
 http://software.sil.org/awami/support.
@@ -65,25 +64,26 @@ you must be using applications that provide an adequate level of support for
 Graphite. 
 
 Keyboarding:
-This font does not include any keyboarding helps or utilities. You may use the
-built-in keyboards of the operating system. You may also need to install an
-appropriate keyboard and input method for the characters of the language you
-wish to use. If you want to enter characters that are not supported by any
-system keyboard, the Keyman program (www.keyman.com) can be helpful
-on Windows systems. Also available for Windows is MSKLC 
+This font does not include any keyboarding helps or utilities. If you 
+cannot use the built-in keyboards of the operating system, you will 
+need to install the appropriate keyboard and input method for the 
+characters of the language you wish to use. If you want to enter 
+characters that are not supported by any system keyboard, the Keyman 
+program (www.keyman.com) can be helpful on Windows, macOS, Linux, 
+Android and iOS systems. Also available for Windows is MSKLC 
 (http://www.microsoft.com/globaldev/tools/msklc.mspx). 
-For other platforms, KMFL (http://kmfl.sourceforge.net/), 
-XKB (http://www.x.org/wiki/XKB) or Ukelele (http://scripts.sil.org/ukelele) 
-can be helpful.
+For other platforms, XKB (http://www.x.org/wiki/XKB) or Ukelele 
+(http://scripts.sil.org/ukelele) can be helpful.
 
 If you want to enter characters that are not supported by any system
-keyboard, and to access the full Unicode range, you might try charmap.exe
-on Windows or, on Ubuntu or similar software, gucharmap or kcharselect.
+keyboard, and to access the full Unicode range, we suggest you use 
+gucharmap, kcharselect on Ubuntu or similar software. Another method 
+of entering some symbols is provided by a few applications such as 
+Adobe InDesign. They can display a glyph palette that shows all the 
+glyphs (symbols) in a font and allow you to enter them by clicking 
+on the glyph you want.
 
-Another method of entering some symbols is provided by a few applications such
-as LibreOffice.org. They can display a glyph palette or input
-dialog that shows all the glyphs (symbols) in a font and allow you to enter
-them by clicking on the glyph you want.
+Other suggestions are listed here: http://scriptsource.org/entry/ytr8g8n6sw
 
 CONTACT
 ========
@@ -91,4 +91,3 @@ For more information please visit the Awami Nastaliq page on SIL International's
 Computers and Writing systems website: http://software.sil.org/awami
 
 Support through the website: http://software.sil.org/awami/support
-
