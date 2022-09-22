@@ -91,15 +91,6 @@ over.</p>
 
 <h1 lang="es">Teclas</h1>
 
-<p lang="es">Este teclado admite dos estilos de uso</p>
-
-<ol lang="es">
-  <li>estilo <kbd>Ñ</kbd> como “tecla muerta” (aconsejado por uso con el teclado latinoamericano)</li>
-  <li>estilo <kbd>Alt</kbd> + <kbd>,</kbd> (aconsejado por uso con teclados que sin tecla <kbd>Ñ</kbd>)</li>
-</ol>
-
-<h2 lang="es">Como usar el estilo <kbd>Ñ</kbd> “tecla muerta”</h2>
-
 <p lang="es"p>En este teclado, la tecla <kbd>Ñ</kbd> se convierta en “tecla muerta”.
 Presionando esta tecla no escribe una letra por sí mismo; hay que presionar
 la tecla <kbd>Ñ</kbd>, luego presionar otra tecla para obtener la letra que
@@ -107,8 +98,7 @@ quieres. En esta manera, se parece a la tecla <kbd>&nbsp;&#x301;</kbd> para
 escribir el acento gráfico sobre vocales en español.</p>
 
 <p lang="es">Para teclados que no tienen un a tecla <kbd>Ñ</kbd>, puedes
-usar la combinación <kbd>Alt</kbd>+<kbd>N</kbd> en lugar de <kbd>Ñ</kbd></p>
-
+usar la combinación <kbd>Alt</kbd>+<kbd>N</kbd> en lugar de <kbd>Ñ</kbd>.</p>
 
 <table lang="es">
   <thead>
@@ -133,11 +123,11 @@ usar la combinación <kbd>Alt</kbd>+<kbd>N</kbd> en lugar de <kbd>Ñ</kbd></p>
   </tbody>
 </table>
 
-<h2 lang="es">Como usar <kbd>Alt</kbd>+<kbd>,</kbd></h2>
+<h2 lang="es">Como usar <kbd>Alt</kbd>+<kbd>N</kbd></h2>
 
 <p lang="es">Si no tienes una tecla <kbd>Ñ</kbd>, hay que presionar las teclas
 <kbd>Alt</kbd> y <kbd>n</kbd> a la misma vez, suelta las teclas, y
-luego presionar la letra en que quieres que colocar la virgulilla (~)</p>
+luego presionar la letra en que quieres que colocar la virgulilla (~).</p>
 
 <p lang="es">N. B. usuarios de macOS deben presionar <kbd>⌥ Opción</kbd> en lugar de <kbd>Alt</kbd>.</p>
 
