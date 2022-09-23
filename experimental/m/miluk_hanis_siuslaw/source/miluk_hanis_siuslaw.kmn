@@ -1,49 +1,42 @@
-c This keyboard is created for the Miluk, Hanis, and Siuslaw languages. It includes upper and lower case versions of all characters. In addition to your keys responding when pressed on their own, all keys have additional outputs when holding down the ALT key. These represent the different sounds that are found in these three languages. Notably, labialized consonants, ejectives, and geminant consonants are accessed via the ALT key.
+﻿c This keyboard is created for the miluk, hanis, shaʼyuushtlʼa, quuiich, and alsea languages. It includes upper and lower case versions of all characters. In addition to your keys responding when pressed on their own, all keys have additional outputs when holding down the shift key. These represent the different sounds that are found in these three languages. Notably, labialized consonants, ejectives, and geminant consonants are accessed via the shift key.
 store(&VERSION) '10.0'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© Jordan AG Douglas-Tavani'
 store(&MESSAGE) 'This keyboard was made by Jordan Douglas-Tavani on behalf of the Confederated Tribes of Coos, Lower Umpqua, and Siuslaw Indians for the 2022 orthographic reform.'
 store(&BITMAP) 'miluk_hanis_siuslaw.ico'
 store(&VISUALKEYBOARD) 'miluk_hanis_siuslaw.kvks'
-store(&KEYBOARDVERSION) '0.1'
-store(&NAME) 'Miluk Hanis Siuslaw'
+store(&KEYBOARDVERSION) '0.2'
+store(&NAME) 'miluk_hanis_siuslaw'
 store(&LAYOUTFILE) 'miluk_hanis_siuslaw.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
-+ [RALT K_O] > 'o'
 + [K_E] > 'e'
-+ [RALT K_R] > 'gh'
-+ [RALT K_X] > 'x̊'
-+ [RALT K_A] > 'æ'
-+ [RALT K_F] > 'g̊'
-c + [RALT K_R] > 'r̊' c This rule will never match as the rule for [RALT K_R] above will override it
 + [K_V] > 'v'
-+ [RALT K_L] > 'ɬ'
-+ [SHIFT K_A] > nul
++ [SHIFT K_A] > 'æ'
 + [SHIFT K_B] > nul
 + [SHIFT K_C] > nul
 + [SHIFT K_D] > nul
 + [SHIFT K_E] > nul
 + [SHIFT K_F] > nul
-+ [SHIFT K_G] > nul
++ [SHIFT K_G] > 'g̣'
 + [SHIFT K_H] > nul
 + [SHIFT K_I] > nul
 + [SHIFT K_J] > nul
 + [SHIFT K_K] > nul
-+ [SHIFT K_L] > nul
++ [SHIFT K_L] > 'ɬ'
 + [SHIFT K_M] > nul
 + [SHIFT K_N] > nul
-+ [SHIFT K_O] > nul
++ [SHIFT K_O] > 'o'
 + [SHIFT K_P] > nul
-+ [SHIFT K_R] > nul
++ [SHIFT K_R] > 'gh'
 + [SHIFT K_Q] > nul
 + [SHIFT K_S] > nul
 + [SHIFT K_T] > nul
 + [SHIFT K_U] > nul
 + [SHIFT K_V] > nul
 + [SHIFT K_W] > nul
-+ [SHIFT K_X] > nul
++ [SHIFT K_X] > 'x̣'
 + [SHIFT K_Y] > nul
 + [SHIFT K_Z] > nul
 + [SHIFT K_SLASH] > '?'
@@ -112,10 +105,9 @@ c + [RALT K_R] > 'r̊' c This rule will never match as the rule for [RALT K_R] a
 + [K_D] > 'd'
 + [K_S] > 's'
 + [K_A] > 'a'
-+ [T_xdot] > 'x̊'
++ [T_xdot] > 'x̣'
 + [T_ash] > 'æ'
-+ [T_rdot] > 'r̊'
-+ [T_gdot] > 'g̊'
++ [T_gdot] > 'g̣'
 + [T_barl] > 'ɬ'
 + [T_schwa] > 'ə'
 + [T_qw] > 'qw'
@@ -135,7 +127,7 @@ c + [RALT K_R] > 'r̊' c This rule will never match as the rule for [RALT K_R] a
 + [T_ejkw] > 'kߴw'
 + [T_hw] > 'hw'
 + [T_gw] > 'gw'
-+ [T_gdotw] > 'g̊w'
++ [T_gdotw] > 'g̣w'
 + [T_dz] > 'dz'
 + [T_sh] > 'sh'
 + [T_xw] > 'xw'
@@ -145,7 +137,7 @@ c + [RALT K_R] > 'r̊' c This rule will never match as the rule for [RALT K_R] a
 + [T_ejtbarl] > 'tɬߴ'
 + [T_dl] > 'dl'
 + [T_ejq] > 'qߴ'
-+ [T_xdotw] > 'x̊w'
++ [T_xdotw] > 'x̣w'
 + [T_ai] > 'ai'
 + [T_au] > 'au'
 + [T_ei] > 'ei'
@@ -154,3 +146,5 @@ c + [RALT K_R] > 'r̊' c This rule will never match as the rule for [RALT K_R] a
 + [T_gh] > 'gh'
 + [T_question] > '?'
 + [T_exclamation] > '!'
++ [T_comma] > ','
++ [T_apostrophe] > 'ߴ'
