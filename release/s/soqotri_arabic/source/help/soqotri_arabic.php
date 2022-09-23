@@ -20,10 +20,10 @@
       <p dir="rtl">تخطيط لوحة المفاتيح معروض أدناه في الرسومات البيانية </p>
       	
       	<h4 dir="rtl">النسخة الأصلية</h4>
-      	<p dir="rtl"><img src="SoqotriU_.png" alt="Base Version" style="width:600px;"></p>
+      	<p dir="rtl"><img src="soqotriU_.png" alt="Base Version" style="width:600px;"></p>
 
       	<h4 dir="rtl">نسخة التحويل </h4>
-      	<p dir="rtl"><img src="SoqotriU_S.png"  alt="Shift Version" style="width:600px;"></p>
+      	<p dir="rtl"><img src="soqotriU_S.png"  alt="Shift Version" style="width:600px;"></p>
 
 
 <h2 style='margin-bottom: 2px'>Soqotri Keyboard</h2>
@@ -33,8 +33,8 @@
       <p>The keyboard layout is displayed below in Keyboard graphics.</p>
       	
       	<h4>Base Version</h4>
-      	<p><img src="SoqotriU_.png" alt="Base Version" style="width:600px;"></p>
+      	<p><img src="soqotriU_.png" alt="Base Version" style="width:600px;"></p>
 
       	<h4>Shift Version</h4>
-      	<p><img src="SoqotriU_S.png" alt="Shift Version" style="width:600px;"></p>
+      	<p><img src="soqotriU_S.png" alt="Shift Version" style="width:600px;"></p>
                                       

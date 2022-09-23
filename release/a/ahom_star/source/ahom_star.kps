@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -33,7 +34,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Ahom Star</Name>
-    <Copyright URL="">© 2021HemantaGogoi Ngi Mon</Copyright>
+    <Copyright URL="">© 2021-2022 HemantaGogoi Ngi Mon</Copyright>
     <Author URL="mailto:drhemanta97@gmail.com">Dr Hemanta Kumar Gogoi</Author>
   </Info>
   <Files>
@@ -54,12 +55,6 @@
       <Description>File ahom_star.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>noto-serif-ahom-regular-2.otf</Name>
-      <Description>Font Noto Serif Ahom</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
     </File>
     <File>
       <Name>welcome\welcome.htm</Name>
@@ -109,14 +104,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Ahom\NotoSerifAhom-Regular.ttf</Name>
+      <Description>Font Noto Serif Ahom Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Ahom Star</Name>
       <ID>ahom_star</ID>
-      <Version>1.0</Version>
-      <OSKFont>noto-serif-ahom-regular-2.otf</OSKFont>
-      <DisplayFont>noto-serif-ahom-regular-2.otf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Ahom\NotoSerifAhom-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Ahom\NotoSerifAhom-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="aho-Ahom">Ahom (Ahom)</Language>
       </Languages>

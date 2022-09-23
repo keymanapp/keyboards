@@ -1,6 +1,10 @@
 Khmer Angkor Change History
 =======================
 
+1.3 (19 Jul 2022)
+----------------------
+* update OSK in the documentation and bump version number
+
 1.2 (3 Mar 2022)
 ----------------------
 * fix BA issue with 17BB

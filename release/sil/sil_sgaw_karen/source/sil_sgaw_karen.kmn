@@ -13,8 +13,8 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_sgaw_karen.kvks'
 store(&BITMAP) 'sil_sgaw_karen.ico'
 store(&LAYOUTFILE) 'sil_sgaw_karen.keyman-touch-layout'
-store(&COPYRIGHT) '© 2020-2021 SIL International'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&COPYRIGHT) '© 2020-2022 SIL International'
+store(&KEYBOARDVERSION) '1.1'
 
 begin Unicode > use(main)
 
@@ -131,8 +131,8 @@ group(main) using keys
 + [SHIFT K_Z] > U+1007
 
 
-+ [K_EQUAL] > U+2018
-+ [SHIFT K_EQUAL] > U+2019
++ [K_EQUAL] > U+003D 
++ [SHIFT K_EQUAL] > U+002B
 
 + [K_COLON] > U+1064
 + [SHIFT K_COLON] > U+1038
@@ -158,8 +158,8 @@ group(main) using keys
 + [K_RBRKT] > U+1027
 + [SHIFT K_RBRKT] > U+007d
 
-+ [K_QUOTE] > U+1012
-+ [SHIFT K_QUOTE] > U+1062 U+1064
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
 
 + [K_SLASH] > U+1063 U+103a
 + [SHIFT K_SLASH] > U+003f

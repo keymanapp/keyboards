@@ -7,10 +7,11 @@ store(&MESSAGE) 'Phonetic input Lao keyboard.'
 store(&COPYRIGHT) '© 2015-2022 John Durdin'
 store(&capsalwaysoff) "1"
 
-store(&TARGETS) 'windows macosx'
+store(&TARGETS) 'any'
 store(&BITMAP) 'lao_phonetic.ico'
 store(&VISUALKEYBOARD) 'lao_phonetic.kvks'
-store(&KEYBOARDVERSION) '1.1.1'
+store(&KEYBOARDVERSION) '1.1.2'
+store(&LAYOUTFILE) 'lao_phonetic.keyman-touch-layout'
 
 begin Unicode > use(Start)
 
@@ -40,8 +41,8 @@ c Final Lao consonants that are unvoiced but written as voiced
  store(LaoNonFinal) "ຕປຢ"
     
 c All initial consonants (o-ang will be inserted automatically)
- store(C)  "kKCgjJcxñdtTDnbpPFBfmyrlvwsVSHhNM"
- store(CLao) "ກຂຄງຈຽຈຊຍດຕຖທນບປຜຝພຟມຢຣລວວສວສຫຮໜໝ" "ອ" U+0EBC
+ store(C)  "kKCgjJcxdtTDnbpPFBfmyrlvwsVSHhNM"
+ store(CLao) "ກຂຄງຈຽຈຊດຕຖທນບປຜຝພຟມຢຣລວວສວສຫຮໜໝ" "ອ" U+0EBC "ຍ"
 
  store(MC) "kctnpfmh"
  store(MCLao) "ກຈຕນປຟມຮ" 

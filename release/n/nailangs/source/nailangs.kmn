@@ -1,8 +1,8 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Nailangs'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© 2015-2019 Adebunmi Adeniran'
-store(&KEYBOARDVERSION) '1.3.1'
+store(&COPYRIGHT) '© Adebunmi Adeniran'
+store(&KEYBOARDVERSION) '1.3.2'
 store(&VISUALKEYBOARD) 'nailangs.kvks'
 store(&LAYOUTFILE) 'nailangs.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'nailangs.css'
@@ -48,7 +48,6 @@ store(digitshiftcaps) [CAPS SHIFT K_0] [CAPS SHIFT K_1] [CAPS SHIFT K_2] [CAPS S
 store(digitshiftncaps) [NCAPS SHIFT K_0] [NCAPS SHIFT K_1] [NCAPS SHIFT K_2] [NCAPS SHIFT K_3] [NCAPS SHIFT K_4] [NCAPS SHIFT K_5] [NCAPS SHIFT K_6] [NCAPS SHIFT K_7] [NCAPS SHIFT K_8] [NCAPS SHIFT K_9]
 
 store(raltn) [CAPS RALT K_N] [NCAPS RALT K_N] [CAPS SHIFT RALT K_N] [NCAPS SHIFT RALT K_N]
-store(ctrlaltn) [CAPS CTRL ALT K_N] [NCAPS CTRL ALT K_N] [CAPS SHIFT CTRL ALT K_N] [NCAPS SHIFT CTRL ALT K_N]
 store(raltnchar) 'ƝɲɲƝ'
 
 store(extradflt) [K_oE2] [K_LBRKT] [K_EQUAL] [K_HYPHEN]
@@ -59,25 +58,16 @@ store(extrashift) [SHIFT K_oE2] [SHIFT K_LBRKT] [SHIFT K_EQUAL] [SHIFT K_HYPHEN]
 store(extrashiftcaps) [CAPS SHIFT K_oE2] [CAPS SHIFT K_LBRKT] [CAPS SHIFT K_EQUAL] [CAPS SHIFT K_HYPHEN]
 store(extrashiftncaps) [NCAPS SHIFT K_oE2] [NCAPS SHIFT K_LBRKT] [NCAPS SHIFT K_EQUAL] [NCAPS SHIFT K_HYPHEN]
 
-store(ralt) [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] \
-    	[RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_EQUAL] [RALT K_Q] [RALT K_oE2] [RALT K_LBRKT] \
-    	[RALT K_RBRKT] [RALT K_COLON] [RALT K_QUOTE] [RALT K_BKSLASH] [RALT K_COMMA] [RALT K_PERIOD] [RALT K_SLASH]
+store(ralt) [NCAPS RALT K_BKQUOTE] [NCAPS RALT K_1] [NCAPS RALT K_2] [NCAPS RALT K_3] [NCAPS RALT K_4] [NCAPS RALT K_5] [NCAPS RALT K_6] [NCAPS RALT K_7] \
+    	[NCAPS RALT K_8] [NCAPS RALT K_9] [NCAPS RALT K_0] [NCAPS RALT K_HYPHEN] [NCAPS RALT K_EQUAL] [NCAPS RALT K_Q] [NCAPS RALT K_oE2] [NCAPS RALT K_LBRKT] \
+    	[NCAPS RALT K_RBRKT] [NCAPS RALT K_COLON] [NCAPS RALT K_QUOTE] [NCAPS RALT K_BKSLASH] [NCAPS RALT K_COMMA] [NCAPS RALT K_PERIOD] [NCAPS RALT K_SLASH]
 
-store(raltshift) [RALT SHIFT K_BKQUOTE] [RALT SHIFT K_1] [RALT SHIFT K_2] [RALT SHIFT K_3] [RALT SHIFT K_4] [RALT SHIFT K_5] \
-    	[RALT SHIFT K_6] [RALT SHIFT K_7] [RALT SHIFT K_8] [RALT SHIFT K_9] [RALT SHIFT K_0] [RALT SHIFT K_HYPHEN] \
-    	[RALT SHIFT K_EQUAL] [RALT SHIFT K_LBRKT] [RALT SHIFT K_RBRKT] [RALT SHIFT K_COLON] [RALT SHIFT K_QUOTE] \
-    	[RALT SHIFT K_BKSLASH] [RALT SHIFT K_COMMA] [RALT SHIFT K_PERIOD] [RALT SHIFT K_SLASH]
+store(raltshift) [RALT NCAPS SHIFT K_BKQUOTE] [RALT NCAPS SHIFT K_1] [RALT NCAPS SHIFT K_2] [RALT NCAPS SHIFT K_3] [RALT NCAPS SHIFT K_4] [RALT NCAPS SHIFT K_5] \
+    	[RALT NCAPS SHIFT K_6] [RALT NCAPS SHIFT K_7] [RALT NCAPS SHIFT K_8] [RALT NCAPS SHIFT K_9] [RALT NCAPS SHIFT K_0] [RALT NCAPS SHIFT K_HYPHEN] \
+    	[RALT NCAPS SHIFT K_EQUAL] [RALT NCAPS SHIFT K_LBRKT] [RALT NCAPS SHIFT K_RBRKT] [RALT NCAPS SHIFT K_COLON] [RALT NCAPS SHIFT K_QUOTE] \
+    	[RALT NCAPS SHIFT K_BKSLASH] [RALT NCAPS SHIFT K_COMMA] [RALT NCAPS SHIFT K_PERIOD] [RALT NCAPS SHIFT K_SLASH]
 
-store(ctlalt) [CTRL ALT K_BKQUOTE] [CTRL ALT K_1] [CTRL ALT K_2] [CTRL ALT K_3] [CTRL ALT K_4] [CTRL ALT K_5] [CTRL ALT K_6] [CTRL ALT K_7] \
-    	[CTRL ALT K_8] [CTRL ALT K_9] [CTRL ALT K_0] [CTRL ALT K_HYPHEN] [CTRL ALT K_EQUAL] [CTRL ALT K_Q] [CTRL ALT K_oE2] [CTRL ALT K_LBRKT] \
-    	[CTRL ALT K_RBRKT] [CTRL ALT K_COLON] [CTRL ALT K_QUOTE] [CTRL ALT K_BKSLASH] [CTRL ALT K_COMMA] [CTRL ALT K_PERIOD] [CTRL ALT K_SLASH]
-
-store(ctlaltshift) [CTRL ALT SHIFT K_BKQUOTE] [CTRL ALT SHIFT K_1] [CTRL ALT SHIFT K_2] [CTRL ALT SHIFT K_3] [CTRL ALT SHIFT K_4] [CTRL ALT SHIFT K_5] \
-    	[CTRL ALT SHIFT K_6] [CTRL ALT SHIFT K_7] [CTRL ALT SHIFT K_8] [CTRL ALT SHIFT K_9] [CTRL ALT SHIFT K_0] [CTRL ALT SHIFT K_HYPHEN] \
-    	[CTRL ALT SHIFT K_EQUAL] [CTRL ALT SHIFT K_LBRKT] [CTRL ALT SHIFT K_RBRKT] [CTRL ALT SHIFT K_COLON] [CTRL ALT SHIFT K_QUOTE] \
-    	[CTRL ALT SHIFT K_BKSLASH] [CTRL ALT SHIFT K_COMMA] [CTRL ALT SHIFT K_PERIOD] [CTRL ALT SHIFT K_SLASH]
-
-store(spacekey) [K_SPACE] [SHIFT K_SPACE] [RALT K_SPACE] [RALT SHIFT K_SPACE] [CTRL ALT K_SPACE] [CTRL ALT SHIFT K_SPACE]
+store(spacekey) [K_SPACE] [SHIFT K_SPACE] [RALT K_SPACE] [RALT SHIFT K_SPACE] 
 
 c custom touch-layout keys
 store(tkeyLC) [T_SHWA][T_EDOT][T_IDOT][T_ODOT][T_UDOT][T_BHOOK][T_DHOOK][T_KHOOK][T_YHOOK][T_NDOT][T_NLHOOK][T_NRHOOK][T_RBAR][T_SDOT][T_EXCLAM][T_QUESTION]
@@ -144,57 +134,42 @@ store(charupper) outs(alphaupper) outs(digitupper) outs(extraupper)
 group(main) using keys
 
 c punctuation  and currency symbols
-+ [K_PERIOD] > '.'
-+ [K_COMMA] > ','
-+ [K_BKQUOTE] > '₦'
-+ [SHIFT K_PERIOD] > '.'
-+ [SHIFT K_COMMA] > ','
-+ [SHIFT K_BKQUOTE] > '₦'
++ [NCAPS K_PERIOD] > '.'
++ [NCAPS K_COMMA] > ','
++ [NCAPS K_BKQUOTE] > '₦'
++ [NCAPS SHIFT K_PERIOD] > '.'
++ [NCAPS SHIFT K_COMMA] > ','
++ [NCAPS SHIFT K_BKQUOTE] > '₦'
 
 c keys to add accent marks
-+ [K_QUOTE]         > '´' use(addmarks)
-+ [K_COLON]         > '`' use(addmarks)
-+ [K_SLASH]         > '^' use(addmarks)
-+ [K_BKSLASH]       > '~' use(addmarks)
-+ [SHIFT K_QUOTE]   > '´' use(addmarks)
-+ [SHIFT K_COLON]   > '`' use(addmarks)
-+ [SHIFT K_SLASH]   > '^' use(addmarks)
-+ [SHIFT K_BKSLASH] > '~' use(addmarks)
++ [NCAPS K_QUOTE]         > '´' use(addmarks)
++ [NCAPS K_COLON]         > '`' use(addmarks)
++ [NCAPS K_SLASH]         > '^' use(addmarks)
++ [NCAPS K_BKSLASH]       > '~' use(addmarks)
++ [NCAPS SHIFT K_QUOTE]   > '´' use(addmarks)
++ [NCAPS SHIFT K_COLON]   > '`' use(addmarks)
++ [NCAPS SHIFT K_SLASH]   > '^' use(addmarks)
++ [NCAPS SHIFT K_BKSLASH] > '~' use(addmarks)
 
 c --- Keyman Desktop: support RALT, CAPS ---
 
 c map all single characters, for all four shift/caps states
-$keymanonly: + any(keyncaps) > index(charlower,1)
-$keymanonly: + any(keycaps) > index(charupper,1)
-$keymanonly: + any(keyshiftcaps) > index(charlower,1)
-$keymanonly: + any(keyshiftncaps) > index(charupper,1)
+ + any(keyncaps) > index(charlower,1)
+ + any(keycaps) > index(charupper,1)
+ + any(keyshiftcaps) > index(charlower,1)
+ + any(keyshiftncaps) > index(charupper,1)
 
-$keymanonly: + any(raltn) > index(raltnchar,1)
-$keymanweb: + any(ctrlaltn) > index(raltnchar,1)
+ + any(raltn) > index(raltnchar,1)
 
 c digraph
-$keymanonly: + [NCAPS K_RBRKT] > 'gb'
-$keymanonly: + [CAPS K_RBRKT] > 'GB'
-$keymanonly: + [NCAPS SHIFT K_RBRKT] > 'Gb'
-$keymanonly: + [CAPS SHIFT K_RBRKT] > 'gb'
+ + [NCAPS K_RBRKT] > 'gb'
+ + [CAPS K_RBRKT] > 'GB'
+ + [NCAPS SHIFT K_RBRKT] > 'Gb'
+ + [CAPS SHIFT K_RBRKT] > 'gb'
 
 c non-letter characters
-$keymanonly: + any(ralt) > index(nonletterlower,1)
-$keymanonly: + any(raltshift) > index(nonletterupper,1)
-
-c --- KeymanWeb: no CAPS or RALT ---
-
-c map all single characters
-$keymanweb: + any(keydflt) > index(charlower,1)
-$keymanweb: + any(keyshift) > index(charupper,1)
-
-c digraph mapping
-$keymanweb: + [K_RBRKT] > 'gb'
-$keymanweb: + [SHIFT K_RBRKT] > 'Gb'
-
-c non-letter characters
-$keymanweb: + any(ctlalt) > index(nonletterlower,1)
-$keymanweb: + any(ctlaltshift) > index(nonletterupper,1)
+ + any(ralt) > index(nonletterlower,1)
+ + any(raltshift) > index(nonletterupper,1)
 
 c touch-layout rules
 + any(tkeyLC) > index(tcharLC,1)
@@ -212,7 +187,7 @@ c touch-layout rules
 + [T_ELLIPSIS] > U+2026
 
 c explicit space bar (should not be needed?)
-$keymanonly: + any(spacekey) > U+0020
+ + any(spacekey) > U+0020
 
 c --- handle gb/Gb/GB
 match   > use(gbcase-match)
