@@ -1,5 +1,10 @@
-bj_cree_east Change History
+BJCreeUNI (east) Change History
 =======================
+
+9.1 (2 Aug 2022)
+-------------------
+* Convert keyboard to produce composed characters with decomposed available through options
+* Add a real touch layout (not just the desktop .js file)
 
 9.0.4 (29 Apr 2019)
 -------------------
