@@ -12,7 +12,9 @@ group(main) using keys
 + 'ñ' > deadkey(virgulilla)
 + 'Ñ' > deadkey(virgulilla)
 c For keyboard layouts that lack a dedicated [Ñ] key:
-+ [ALT K_N] > deadkey(virgulilla)
++ [RALT K_N] > deadkey(virgulilla)
+c Workaround for macOS -- see https://github.com/keymanapp/keyman/issues/875
+platform('mac') + [ALT K_N] > deadkey(virgulilla)
 
 dk(virgulilla) + 'a' > 'ã'
 dk(virgulilla) + 'e' > 'ẽ'
