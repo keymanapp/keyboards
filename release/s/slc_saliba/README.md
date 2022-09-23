@@ -8,7 +8,7 @@ Version 1.0.0
 Description
 -----------
 
-This keyboard makes it possible to write Sâliba in the orthography
+This keyboard makes it possible to write Sáliba in the orthography
 developed by Hortensia Estrada Ramírez. In addition to basic Latin
 letters, this orthography includes five nasalized vowels ã/ẽ/ĩ/õ/ũ,
 as well as ñ. This keyboard was created in consultation with Jorge
