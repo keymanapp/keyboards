@@ -4,7 +4,7 @@ Version 0.1
 
 ## Description
 
-Karakalpak Latin generated from template
+This keyboard is designed for Latin script of Karakalpak Language.
 
 ## Links
 

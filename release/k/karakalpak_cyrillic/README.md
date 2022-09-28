@@ -4,7 +4,7 @@ Version 0.1
 
 ## Description
 
-Karakalpak Cyrillic generated from template
+This keyboard is designed for Cyrillic script of Karakalpak Language.
 
 ## Links
 
