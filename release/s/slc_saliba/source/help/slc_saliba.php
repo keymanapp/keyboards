@@ -20,11 +20,11 @@ Colombia) y tienen la misma correspondencia en este teclado.</p>
 
 <h1 lang="es">Teclas</h1>
 
-<p lang="es"p>En este teclado, la tecla <kbd>Ñ</kbd> se convierta en una
+<p lang="es">En este teclado, la tecla <kbd>Ñ</kbd> se convierta en una
 “tecla muerta”.  Presionar esta tecla no nos permite escribe una letra como en
 otros teclados (por ejemplo, en el teclado de español donde esta tecla da la
 letra ñ) sino que se utiliza como un comodín y hay que presionar la tecla
-<kbd>Ñ</kbd>, luego presionar otra tecla para obtener un de las 6 letras
+<kbd>Ñ</kbd>, luego presionar otra tecla para obtener una de las 6 letras
 mencionadas arriba.  En esta manera, se parece a la tecla del acento (´) en el
 teclado del español la cual se utiliza para escribir el acento gráfico sobre
 las vocales del español.</p>
@@ -115,7 +115,7 @@ keys on this keyboard layout.</p>
 
 <p>In this keyboard <kbd>Ñ</kbd> becomes a “dead key” which means pressing
 it once will not insert any letter (as opposed to the Latin American keyboard,
-where pressing this key will insert the letter ñ); rather, <kbd>Ñ</kbd> You
+where pressing this key will insert the letter ñ); rather, you
 must press the <kbd>Ñ</kbd> is a placeholder, and it
 must be followed up with a second key to type one of the letters mentioned
 above. This is similar to the way that the accent key (´) is used to type an
@@ -152,7 +152,7 @@ combination <kbd>AltGr</kbd>+<kbd>N</kbd> (Windows/Linux) or
 
 <p>If you do not have a dedicated <kbd>Ñ</kbd> key on your keyboard, you must
 press <kbd>AltGr</kbd> and <kbd>N</kbd> at the same time, let go of both keys,
-then press the letter that the ~ will go over.</p>
+then press the letter that the tilde (~) will go over.</p>
 
 <p>Note: <kbd>AltGr</kbd> is the <kbd>Alt</kbd> key to the right of the spacebar.</p>
 
