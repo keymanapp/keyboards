@@ -1,11 +1,15 @@
-﻿store(&VERSION) '10.0'
-store(&TARGETS) 'windows macosx linux iphone ipad androidphone androidtablet mobile desktop tablet'
+﻿c Update 2022-09-30:
+c 1.Support web keyboard plugin.
+c 2.Change keyboard layout images.
+store(&VERSION) '10.0'
+store(&TARGETS) 'any'
 store(&COPYRIGHT) '© Joshua Wong'
 store(&NAME) 'Dogra Inscript'
 store(&BITMAP) 'dogra_inscript.ico'
 store(&VISUALKEYBOARD) 'dogra_inscript.kvks'
 store(&LAYOUTFILE) 'dogra_inscript.keyman-touch-layout'
 store(&MESSAGE) 'The Dogra Inscript keyboard is designed for the Dogri language, using the Dogra script with an Inscript layout.'
+store(&KEYBOARDVERSION) '1.0.1'
 begin Unicode > use(main)
 
 group(main) using keys
