@@ -3,6 +3,7 @@ Naija Type Keyboard Change History
 
 September 2022
 --------------
+* v46 Doc adjustments, improved saltillo handling with MS Word autocurling apostrophes.
 * v45 Doc adjustments, modifier letter vertical line and saltillo added for glottals, and upside down ? and !. Code refactoring. Added Tugbiri.
 * v41 Moved Naira left and stay on numeric layer, joined Hash inside it, and added space bar. Reduced unnecessary longpress items. Added more currency symbols in numeric layer. Added s underdot in touch. Added Tugbiri, Kanuri, Igala languages.
 
