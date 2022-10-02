@@ -1,13 +1,13 @@
 ﻿c Baybayin keyboard
 store(&VERSION) '10.0'
 store(&NAME) 'Baybayin'
-store(&COPYRIGHT) '© 2021 Ilham Nurwansah'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© 2021-2022 Ilham Nurwansah'
+store(&KEYBOARDVERSION) '1.1'
 store(&VISUALKEYBOARD) 'baybayin.kvks'
-store(&TARGETS) 'windows macosx linux web'
 store(&MESSAGE) 'Keyboard for typing Baybayin script'
 store(&BITMAP) 'baybayin.ico'
 store(nul) "acefjoqrvxzBCDEFGHJKLMOPQRSTVWXYZ"
+store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
@@ -21,6 +21,7 @@ group(main) using keys
 + [K_S] > 'ᜐ'
 + [K_W] > 'ᜏ'
 + [K_L] > 'ᜎ'
++ [K_R] > 'ᜍ' 
 + [K_Y] > 'ᜌ'
 + [K_M] > 'ᜋ'
 + [K_B] > 'ᜊ'
@@ -29,8 +30,10 @@ group(main) using keys
 + [K_D] > 'ᜇ'
 + [K_T] > 'ᜆ'
 + [SHIFT K_N] > 'ᜅ'
++ [SHIFT K_R] > 'ᜟ'
 + [K_G] > 'ᜄ'
 + [K_K] > 'ᜃ'
 + [SHIFT K_I] > 'ᜁ'
 + [SHIFT K_U] > 'ᜂ'
 + [SHIFT K_A] > 'ᜀ'
++ [K_SLASH] > '᜕'
