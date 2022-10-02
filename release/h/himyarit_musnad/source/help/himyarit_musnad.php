@@ -21,7 +21,7 @@ The keyboard requires a font with the Musnad letters that is compatible with Uni
 
 <p>The mobile keyboard is identical to the desktop keyboard and all letters are available without the need for shifting.</p>
 
-<div id='osk-tablet' data-states='default'>
+<div id='osk-phone' data-states='default'>
 
 
 <p>© 2022 Riyadh Alfareh</p>
