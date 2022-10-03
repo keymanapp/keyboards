@@ -6,8 +6,9 @@ Remington GAIL (SIL) keyboard
 Description
 -----------
 
-This keyboard is an implementation of the Remington-GAIL typewriter layout for Hindi. 
-Specifically, it is based on and mimics the implementation by Webduniya for Hindi Indic Input 3.
+This keyboard is an implementation of the Remington-GAIL typewriter layout for Hindi. Specifically, 
+it is based on and mimics the implementation by Webduniya for 
+Hindi Indic Input 3. However, it also makes heavy use or RALT/AltGr for numerous keys.
 
 This keyboard is considered experimental until it has been sufficiently tested. 
 

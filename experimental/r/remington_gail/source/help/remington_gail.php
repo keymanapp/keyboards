@@ -6,7 +6,7 @@
 ?>
 
 
-<p>This keyboard is an implementation of the Remington-GAIL typewriter layout for Hindi. Specifically, it is based on and mimics the implementation by Webduniya for Hindi Indic Input 3.</p>
+<p>This keyboard is an implementation of the Remington-GAIL typewriter layout for Hindi. Specifically, it is based on and mimics the implementation by Webduniya for Hindi Indic Input 3. However, it also makes heavy use or RALT/AltGr for numerous keys.</p>
 <p>Some deviations from the Hindi Indic Input 3 layout include:</p>
 
 <p>Alternate keys are accessed by RALT+SHIFT+KEY combination instead of ESC+KEY combination</p>
