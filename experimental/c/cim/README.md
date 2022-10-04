@@ -1,9 +1,8 @@
 Cook Islands Maori keyboard
 ==============
 
-© 2020-2021 Yuri Oh and Victoria Quint
+© 2020-2022 Yuri Oh and Victoria Quint
 
-Version 1.2
 
 Description
 -----------

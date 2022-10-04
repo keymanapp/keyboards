@@ -1,5 +1,8 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+1.3.13 (2022-02-11)
+-----------------------
+* Fixed missing access to ዐ (<kbd>E</kbd><kbd>e</kbd>)
 
 1.3.12 (2020-06-10)
 -----------------------

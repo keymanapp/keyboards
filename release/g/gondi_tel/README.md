@@ -1,9 +1,7 @@
 Gondi (Telugu) Keyboard
 =======================
 
-Copyright (C) 2018 SIL International
-
-Version 1.0
+Copyright (C) 2018-2021 SIL International
 
 __DESCRIPTION__
 This Gondi (Telugu) keyboard has been designed for typing the Adilabad Gondi (wsg) language spoken in 

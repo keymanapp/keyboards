@@ -1,9 +1,8 @@
 Lamkaang Keyboard
 =====================
 
-Copyright (c) 2021 Lamkaang Community
+Copyright (c) 2021-2022 Lamkaang Community
 
-Version 1.0
 
 __DESCRIPTION__
 This keyboard is for the Lamkaang language. In addition to the normal English letters, it can produce these letters:

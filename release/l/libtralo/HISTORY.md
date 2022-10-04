@@ -1,6 +1,10 @@
 LIBTRALO Keyboard Change History
 =======================
 
+1.6.4 (18 Feb 2022)
+-----------------
+* Updated Charis SIL and Charis SIL Dan font to v 6.101
+
 1.6.3 (6 Jul 2021)
 -----------------
 * Updated Charis SIL font to v 6.001

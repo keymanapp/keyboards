@@ -1,6 +1,18 @@
 Old Hungarian Change History
 ====================
 
+1.4 (2022-08-10)
+----------------
+* add Caps Lock support for mobile
+
+1.3 (2022-05-12)
+----------------
+* Complete rewrite of touch layout
+
+1.2 (2021-10-06)
+----------------
+* Added "Lig" (ZWJ) key, replaced the following keynames: "RLM" to "JB" and "LRM" to "BJ"
+
 1.1 (2021-06-24)
 ----------------
 * Update mobile layout

@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1093.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.243.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Lepcha (SIL)</Name>
-    <Copyright URL="">© 2010-2018 SIL International</Copyright>
+    <Copyright URL="">© 2010-2022 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -39,14 +39,46 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\mingzat\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\mingzat\Mingzat-README.txt</Name>
+      <Description>File Mingzat-README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\mingzat\Mingzat-Regular.ttf</Name>
+      <Description>Font Mingzat</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\mingzat\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\mingzat\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lepcha (SIL)</Name>
       <ID>sil_lepcha</ID>
       <Version></Version>
+      <OSKFont>..\..\..\shared\fonts\sil\mingzat\Mingzat-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\mingzat\Mingzat-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="lep-Lepc">Lepcha (Róng)</Language>
+        <Language ID="lep">Lepcha (Róng)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

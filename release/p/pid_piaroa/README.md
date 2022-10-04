@@ -1,9 +1,9 @@
 Piaroa keyboard
 ===============
 
-© 2019 Eddie Antonio Santos
+© 2022 Eddie Antonio Santos
 
-Version 1.1.1
+Version 1.2.0
 
 Description
 -----------
@@ -24,18 +24,16 @@ To type **ä**, press <kbd>Right Alt</kbd>+<kbd>a</kbd>
 
 To type **ö**, press <kbd>Right Alt</kbd>+<kbd>o</kbd>
 
-To type a nasal vowel (a̧/ä̧/ȩ/i̧/o̧/ö̧/u̧), type the vowel (a/ä/e/i/o/ö/u), and then press <kbd>Right Alt</kbd>+<kbd>,</kbd>.
+To type **ü**, press <kbd>Right Alt</kbd>+<kbd>u</kbd>
+
+To type a nasal vowel (a̧/ä̧/ȩ/i̧/o̧/ö̧/u̧/ü̧), type the vowel (a/ä/e/i/o/ö/u/ü), and then press <kbd>Right Alt</kbd>+<kbd>,</kbd>.
+
+To type **ñ**, press <kbd>Right Alt</kbd>+<kbd>n</kbd>
 
 Links
 -----
 
  - [Jorge Emilio Rosés Labrada](https://sites.google.com/ualberta.ca/jrosesla/)
-
-
-TODO
-----
-
- - fix minor Spanish typos in `welcome.htm`
 
 Supported Platforms
 -------------------
