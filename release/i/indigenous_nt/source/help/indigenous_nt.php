@@ -26,9 +26,11 @@
 
 <h2>Desktop Computers</h2>
 
-<p>On Desktop computers, it retains the standard US keyboard layout while providing access to special characters and diacritics through the <strong>Alt-Gr (Right Alt)</strong> key on Desktop computers (right-Option key in Macs).</p>
+<p>On Desktop computers, it retains the standard US keyboard layout while providing access to special characters and diacritics through the <strong>Alt-Gr (Alt-right)</strong> key on Desktop computers (<strong>right-Option</strong> key in Macs).</p>
 
 <p>Note that the diacritics are typed after the vowel as in the Vowel First Dene convention.</p>
+
+<img style="width: 100%;" src="indigenous_nt_layout.png">
 
 <h2>Tablets and Mobiles</h2>
 

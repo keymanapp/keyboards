@@ -1,17 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e
+set -u
 
 #
 # This script is built with commands available to Git Bash on Windows. (mingw32)
 #
-# This script and scripts in resources/ should be identical in the 
-# https://github.com/keymanapp/keyboards and 
+# This script and scripts in resources/ should be identical in the
+# https://github.com/keymanapp/keyboards and
 # https://github.com/keymanapp/keyboards_starter repos
 #
 
 function display_usage {
-  echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [target]"
+  echo "Usage: $0 [-validate] [-start] [-s] [-d] [-c] [-w] [-T [kmn|kps]] [-t project_target] [-no-update-compiler|-force-update-compiler] [target]"
   echo "  target should be a folder, for example: release, or release/k, or release/k/keyboard"
   echo "  (on keyboards_starter repo, target is not necessary)"
+  echo
+  echo "  -no-update-compiler     Don't check kmcomp version or update it before building, unless kmcomp.exe is missing"
+  echo "  -force-update-compiler  Redownload and install kmcomp, even if correct version appears already present"
+  echo "  -color, -no-color       Force color or no-color for log messages, if omitted detects from console mode"
   exit 1
 }
 
@@ -27,39 +34,19 @@ SHLVL=0
 # Define paths
 #
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
 . "$KEYBOARDROOT/resources/util.sh"
+. "$KEYBOARDROOT/resources/environment.sh"
 
-case "${OSTYPE}" in
-  "cygwin") KMCOMP_LAUNCHER= ;;
-  "msys") KMCOMP_LAUNCHER= ;;
-  "darwin"*) 
-    # For Catalina (10.15) onwards, must use wine64
-    base_macos_ver=10.15
-    macos_ver=$(sw_vers -productVersion)
-    if verlt "$macos_ver" "$base_macos_ver"; then
-      KMCOMP_LAUNCHER=wine
-    else
-      # On Catalina, and later versions:
-      # wine-4.12.1 works; wine-5.0, wine-5.7 do not.
-      # retrieve these from:
-      # `brew tap gcenx/wine && brew install --cask --no-quarantine wine-crossover`
-      # may also need to `sudo spctl --master-disable`
-      KMCOMP_LAUNCHER=wine64
-      KMCOMP="$KEYBOARDROOT/tools/kmcomp.x64.exe"
-    fi
-    ;;
-  *) KMCOMP_LAUNCHER=wine ;;
-esac
+locate_xmllint
+locate_kmcomp
+locate_keyboardinfo_schema
 
-# Master json schema is from https://api.keyman.com/schemas/keyboard_info.json
-KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
-KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.json"
-
+. "$KEYBOARDROOT/resources/download-compiler.sh"
 . "$KEYBOARDROOT/resources/compile.sh"
 . "$KEYBOARDROOT/resources/validate.sh"
 . "$KEYBOARDROOT/resources/merge.sh"
+. "$KEYBOARDROOT/resources/external.sh"
 
 #
 # Build parameters
@@ -67,17 +54,123 @@ KEYBOARDINFO_SCHEMA_DIST_JSON="$KEYBOARDROOT/tools/keyboard_info.distribution.js
 # Default is validate keyboard_info, build keyboards, don't code-sign
 #
 
+function parse_args {
+  DO_BUILD=true
+  WARNINGS_AS_ERRORS=false
+  TARGET=
+  PROJECT_TARGET_TYPE=
+  PROJECT_TARGET=
+  FLAG_SILENT=
+  FLAG_DEBUG=
+  FLAG_CLEAN=
+  FLAG_TARGET=
+  FLAG_COLOR=
+  FLAG_COMPILER_VERSION=
+  START=
+  START_BASE=
+  START_KEYBOARD=
+  DO_UPDATE_COMPILER=true
+  FORCE_UPDATE_COMPILER=false
+
+  local lastkey=
+  local key
+
+  # Parse args
+  for key in "$@"; do
+    if [[ -z "$lastkey" ]]; then
+      case "$key" in
+        -validate)
+          DO_BUILD=false
+          ;;
+        -no-update-compiler)
+          DO_UPDATE_COMPILER=false
+          ;;
+        -force-update-compiler)
+          FORCE_UPDATE_COMPILER=true
+          ;;
+        -no-color)
+          FLAG_COLOR=-no-color
+          ;;
+        -color)
+          FLAG_COLOR=-color
+          ;;
+        -no-compiler-version)
+          # This flag is used only for regression tests.
+          FLAG_COMPILER_VERSION=-no-compiler-version
+          ;;
+        -start)
+          lastkey=$key
+          ;;
+        -s)
+          FLAG_SILENT=-s
+          ;;
+        -d)
+          FLAG_DEBUG=-d
+          ;;
+        -c)
+          FLAG_CLEAN=-c
+          ;;
+        -w)
+          WARNINGS_AS_ERRORS=true
+          ;;
+        -h|-\?)
+          display_usage
+          ;;
+        -T)
+          lastkey="$key"
+          ;;
+        -t)
+          lastkey="$key"
+          ;;
+        *)
+          TARGET="$key"
+      esac
+    else
+      case "$lastkey" in
+        -start)
+          START="$key"
+          START_BASE=`dirname "$START"`
+          START_KEYBOARD=`basename "$START"`
+          if [[ "START_BASE" == "." ]]; then
+            START_BASE="$START"
+          fi
+          ;;
+        -t)
+          FLAG_TARGET=-t
+          PROJECT_TARGET="$key"
+          ;;
+        -T)
+          FLAG_TARGET=-t
+          PROJECT_TARGET_TYPE="$key"
+          ;;
+      esac
+      lastkey=
+    fi
+  done
+}
+
 parse_args "$@"
+
+util_set_log_color_mode "$FLAG_COLOR"
 
 #
 # Are we in the keyboards_starter repo?
 #
 
+KEYBOARDS_STARTER=0
 if [[ -d "$KEYBOARDROOT/template" ]]; then
   if [[ -d "$KEYBOARDROOT/release" ]]; then
     die "This repo should not have both a /release/ folder and a /template/ folder. The /template/ folder should be present only in the keyboards_starter repo."
   fi
   KEYBOARDS_STARTER=1
+fi
+
+#
+# Check if tools need downloading or updating
+#
+
+if ! kmcomp_exists || $DO_UPDATE_COMPILER || $FORCE_UPDATE_COMPILER; then
+  download_and_check_kmcomp $FORCE_UPDATE_COMPILER
 fi
 
 #

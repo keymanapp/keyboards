@@ -8,8 +8,21 @@ packages/*/build/
 .cache
 servervars.sh
 /.project
-release/j/jawa/jawa.kpj.user
-release/j/jawa/source/jawa-help.htm
-release/j/jawa/source/jawa.keyman-touch-layout
 .vscode/
-release/l/latin_jawa/latin_jawa.kpj
+
+# compiler is downloaded into tools/kmcomp/
+/tools/kmcomp/
+
+# regression tests will be built into /output
+/output/
+
+# Program files downloaded -- legacy, these are no longer required
+# but we'll keep them in .gitignore so they don't accidentally get
+# added into commits
+/tools/keyboard_info.distribution.json
+/tools/keyboard_info.source.json
+/tools/kmcmpdll.dll
+/tools/kmcmpdll.x64.dll
+/tools/kmcomp.exe
+/tools/kmcomp.x64.exe
+/tools/kmconvert.exe

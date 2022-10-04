@@ -1,6 +1,10 @@
 Balochi Scientific Keyboard Change History
 ===============================
 
+1.0.4 (1 Sep 2022)
+------------------
+* Use bal-Latn instead of bcc-Latn
+
 1.0.3 (27 October 2020)
 -----------------
 * Increment version number to force recompile of touch layout.

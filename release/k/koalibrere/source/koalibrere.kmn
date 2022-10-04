@@ -1,0 +1,51 @@
+﻿c koalibrere generated from template at 2022-01-27 15:45:15
+c with name "Ŋenuvǝ"
+store(&VERSION) '10.0'
+store(&NAME) 'Ŋenuvǝ'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'koalibrere.kvks'
+store(&LAYOUTFILE) 'koalibrere.keyman-touch-layout'
+store(&BITMAP) 'koalibrere.ico'
+store(&MESSAGE) 'This is a keyboard for the Koalib/Rere language, Ŋenuvǝ.'
+store(&COPYRIGHT) '(c)2022 Kamma Organization for Development Initiatives'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT RALT K_C] > 'Ɔ'
++ [RALT K_C] > 'ɔ'
++ [SHIFT RALT K_E] > 'Ǝ'
++ [RALT K_E] > 'ə'
++ [K_Q] > 'ɽ'
++ [SHIFT K_Q] > 'Ɽ'
++ [K_X] > 'ŋ'
++ [SHIFT K_X] > 'Ŋ'
+
+store( plainvowels )  'a'    'e'    'i'    'o'    'u'      'A'    'E'    'I'    'O'    'U'
+store( acutevowels )  U+00E1 U+00E9 U+00ED U+00F3 U+00FA   U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+store( gravevowels )  U+00E0 U+00E8 U+00EC U+00F2 U+00F9   U+00C0 U+00C8 U+00CC U+00D2 U+00D9
+store( circumvowels ) U+00E2 U+00EA U+00EE U+00F4 U+00FB   U+00C2 U+00CA U+00CE U+00D4 U+00DB
+store( plainLetters) 't' 'T' 'd' 'D'
+store( hardLetters )  U+1E6F U+1E6E U+1E0F U+1E0E
+store( normalvowels ) 'e'  'E' 'c' 'C'
+store( specialvowels ) U+0259 U+018E U+0254 U+0186
+
++ "'" > dk(quote)     c Quote for acute accent
++ "`" > dk(bkquote)   c Backquote for grave accent
++ "^" > dk(caret)     c Caret for circumflex
++ "-" > dk(K_HYPHEN)  c hyphen for hard d and t
++ [K_BKSLASH] > dk(K_BKSLASH) c backslash for special vowels
+
+
+dk(quote)   + any( plainvowels ) > index( acutevowels, 2 )
+dk(bkquote) + any( plainvowels ) > index( gravevowels, 2 )
+dk(caret)   + any( plainvowels ) > index( circumvowels, 2 )
+dk(K_HYPHEN) + any( plainLetters ) > index( hardLetters, 2 )
+dk(K_BKSLASH) + any( normalvowels ) > index( specialvowels, 2 )
+
+dk(quote)   + "'" > "'"   c Quote
+dk(bkquote) + "`" > "`"   c Backquote
+dk(caret)   + "^" > "^"   c Caret
+dk(K_HYPHEN)   + [K_HYPHEN] > U+002D   c hyphen
+dk(K_BKSLASH)   + [K_BKSLASH] > U+005C   c backslash

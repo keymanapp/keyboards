@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'NLCI Devanagari WinScript Keyboard Help';
-  $pagetitle = 'NLCI Devanagari WinScript Keyboard Help';
+  $pagename = 'Devanagari WinScript (NLCI) Keyboard Help';
+  $pagetitle = 'Devanagari WinScript (NLCI) Keyboard Help';
   require_once('header.php');
 ?>
 <style>
@@ -80,9 +80,6 @@
 
     </style>
 </head>
-
-<body>
-    <h1>NLCI Devanagari WinScript Keyboard help</h1>
 
     <p>This Keyboard mimic Devanagari WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
@@ -250,5 +247,4 @@
     <p> <kbd>`</kbd> Backtick is used to change into English Eg <kbd>`</kbd> <kbd>त</kbd> will generate <kbd>q</kbd></p>  
 
     
-</body>
 

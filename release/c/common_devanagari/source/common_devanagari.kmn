@@ -2,8 +2,8 @@
 c with name "Common Devanagari"
 store(&VERSION) '10.0'
 store(&NAME) 'Common Devanagari'
+store(&KEYBOARDVERSION) '1.1'
 store(&COPYRIGHT) '© 2021 WIn Publishing Trust'
-store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'common_devanagari.kvks'
 store(&LAYOUTFILE) 'common_devanagari.keyman-touch-layout'
@@ -19,7 +19,7 @@ group(main) using keys
 + [SHIFT K_6] > '^'
 + [SHIFT K_7] > '&'
 + [SHIFT K_5] > '%'
-+ [SHIFT K_4] > '$'
++ [SHIFT K_4] > '“'
 + [SHIFT K_3] > '#'
 + [SHIFT K_1] > '!'
 + [SHIFT K_EQUAL] > '+'
@@ -30,7 +30,7 @@ group(main) using keys
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_H] > 'ः'
-+ [SHIFT K_M] > 'ऺ'
++ [SHIFT K_M] > 'ं'
 + [SHIFT K_N] > 'ण'
 + [SHIFT K_B] > 'भ'
 + [SHIFT K_V] > 'ऒ'
@@ -92,7 +92,7 @@ group(main) using keys
 + [K_Q] > '़'
 + [SHIFT K_QUOTE] > '’'
 + [SHIFT K_BKSLASH] > '”'
-+ [K_BKSLASH] > '“'
++ [K_BKSLASH] > '\'
 + [K_QUOTE] > '‘'
 + [K_EQUAL] > '='
 + [K_HYPHEN] > '-'
@@ -157,6 +157,15 @@ U+0934 + 'A' > U+0934 dk(backquote)
 "`" + "a" > U+0904
 "`" + "b" > U+097F
 
+'ऋ' + 'R' > 'ॠ'   
+'ृ' + 'R' > 'ॄ'  
+
+'उ' + 'u' > 'ऊ'    
+'ु' + 'u' > 'ू' 
+
+'इ' + 'i' > 'ई' 
+'ि' + 'i' > 'ी'    
+
 "।" + "`" > U+002E
 U+002E + "`" > U+2026
 
@@ -170,7 +179,7 @@ U+0907 + "i" > U+0908
 U+0909 + "u" > U+090A
 U+093C + "q" > U+0970
 U+0921 + "[" > U+095C
-U+093A + "M" > U+0971
+U+0902 + "M" > U+0971
 U+0901 + "S" > U+0950
 
 U+0933 + "L" > U+0934 
@@ -213,7 +222,7 @@ c any(ConsonG) + 'A' > context U+093E
  any(ConsonG) + 'I' > context U+0940
  any(ConsonG) + 'u' > context U+0941
  any(ConsonG) + 'U' > context U+0942
- any(ConsonG) + 'R' > context U+0944
+ any(ConsonG) + 'R' > context U+0943
  any(ConsonG) + 'e' > context U+0947
  any(ConsonG) + 'E' > context U+0948
  any(ConsonG) + '}' > context U+0949
@@ -229,7 +238,7 @@ c Double special consonants
  any(ConsonG) U+093C + 'I' > context U+0940
  any(ConsonG) U+093C + 'u' > context U+0941
  any(ConsonG) U+093C + 'U' > context U+0942
- any(ConsonG) U+093C + 'R' > context U+0944
+ any(ConsonG) U+093C + 'R' > context U+0943
  any(ConsonG) U+093C + 'e' > context U+0947
  any(ConsonG) U+093C + 'E' > context U+0948
  any(ConsonG) U+093C + '}' > context U+0949
@@ -239,6 +248,22 @@ c Double special consonants
  any(ConsonG) U+093C + 'Y' > context U+0946
  any(ConsonG) U+093C + ']' > context U+0945 
 
+c Double special consonants ं
+ any(ConsonG) U+0902 + 'a' > context U+093E
+ any(ConsonG) U+0902 + 'i' > context U+093F
+ any(ConsonG) U+0902 + 'I' > context U+0940
+ any(ConsonG) U+0902 + 'u' > context U+0941
+ any(ConsonG) U+0902 + 'U' > context U+0942
+ any(ConsonG) U+0902 + 'R' > context U+0943
+ any(ConsonG) U+0902 + 'e' > context U+0947
+ any(ConsonG) U+0902 + 'E' > context U+0948
+ any(ConsonG) U+0902 + '}' > context U+0949
+ any(ConsonG) U+0902 + 'o' > context U+094B
+ any(ConsonG) U+0902 + 'O' > context U+094C 
+ any(ConsonG) U+0902 + 'V' > context U+094A
+ any(ConsonG) U+0902 + 'Y' > context U+0946
+ any(ConsonG) U+0902 + ']' > context U+0945 
+ 
 c Special consonants halant vowels 
 
  U+0958 + 'a' > U+0958 U+093E
@@ -246,7 +271,7 @@ c Special consonants halant vowels
  U+0958 + 'I' > U+0958 U+0940
  U+0958 + 'u' > U+0958 U+0941
  U+0958 + 'U' > U+0958 U+0942
- U+0958 + 'R' > U+0958 U+0944
+ U+0958 + 'R' > U+0958 U+0943
  U+0958 + 'e' > U+0958 U+0947
  U+0958 + 'E' > U+0958 U+0948
  U+0958 + '}' > U+0958 U+0949
@@ -262,7 +287,7 @@ c Special consonants halant vowels
  U+0931 + 'I' > U+0931 U+0940
  U+0931 + 'u' > U+0931 U+0941
  U+0931 + 'U' > U+0931 U+0942
- U+0931 + 'R' > U+0931 U+0944
+ U+0931 + 'R' > U+0931 U+0943
  U+0931 + 'e' > U+0931 U+0947
  U+0931 + 'E' > U+0931 U+0948
  U+0931 + '}' > U+0931 U+0949
@@ -277,7 +302,7 @@ c Special consonants halant vowels
  U+0934 + 'I' > U+0934 U+0940
  U+0934 + 'u' > U+0934 U+0941
  U+0934 + 'U' > U+0934 U+0942
- U+0934 + 'R' > U+0934 U+0944
+ U+0934 + 'R' > U+0934 U+0943
  U+0934 + 'e' > U+0934 U+0947
  U+0934 + 'E' > U+0934 U+0948
  U+0934 + '}' > U+0934 U+0949
@@ -292,7 +317,7 @@ c Special consonants halant vowels
  U+095A + 'I' > U+095A U+0940
  U+095A + 'u' > U+095A U+0941
  U+095A + 'U' > U+095A U+0942
- U+095A + 'R' > U+095A U+0944
+ U+095A + 'R' > U+095A U+0943
  U+095A + 'e' > U+095A U+0947
  U+095A + 'E' > U+095A U+0948
  U+095A + '}' > U+095A U+0949
@@ -307,7 +332,7 @@ c Special consonants halant vowels
  U+095B + 'I' > U+095B U+0940
  U+095B + 'u' > U+095B U+0941
  U+095B + 'U' > U+095B U+0942
- U+095B + 'R' > U+095B U+0944
+ U+095B + 'R' > U+095B U+0943
  U+095B + 'e' > U+095B U+0947
  U+095B + 'E' > U+095B U+0948
  U+095B + '}' > U+095B U+0949
@@ -322,7 +347,7 @@ c Special consonants halant vowels
  U+095D + 'I' > U+095D U+0940
  U+095D + 'u' > U+095D U+0941
  U+095D + 'U' > U+095D U+0942
- U+095D + 'R' > U+095D U+0944
+ U+095D + 'R' > U+095D U+0943
  U+095D + 'e' > U+095D U+0947
  U+095D + 'E' > U+095D U+0948
  U+095D + '}' > U+095D U+0949
@@ -337,7 +362,7 @@ c Special consonants halant vowels
  U+095E + 'I' > U+095E U+0940
  U+095E + 'u' > U+095E U+0941
  U+095E + 'U' > U+095E U+0942
- U+095E + 'R' > U+095E U+0944
+ U+095E + 'R' > U+095E U+0943
  U+095E + 'e' > U+095E U+0947
  U+095E + 'E' > U+095E U+0948
  U+095E + '}' > U+095E U+0949
@@ -352,7 +377,7 @@ c Special consonants halant vowels
  U+095F + 'I' >  U+095F U+0940
  U+095F + 'u' >  U+095F U+0941
  U+095F + 'U' >  U+095F U+0942
- U+095F + 'R' >  U+095F U+0944
+ U+095F + 'R' >  U+095F U+0943
  U+095F + 'e' >  U+095F U+0947
  U+095F + 'E' >  U+095F U+0948
  U+095F + '}' >  U+095F U+0949
@@ -367,7 +392,7 @@ c Special consonants halant vowels
  U+0958 + 'I' >  U+0958 U+0940
  U+0958 + 'u' >  U+0958 U+0941
  U+0958 + 'U' >  U+0958 U+0942
- U+0958 + 'R' >  U+0958 U+0944
+ U+0958 + 'R' >  U+0958 U+0943
  U+0958 + 'e' >  U+0958 U+0947
  U+0958 + 'E' >  U+0958 U+0948
  U+0958 + '}' >  U+0958 U+0949
@@ -382,7 +407,7 @@ c Special consonants halant vowels
  U+0959 + 'I' >  U+0959 U+0940
  U+0959 + 'u' >  U+0959 U+0941
  U+0959 + 'U' >  U+0959 U+0942
- U+0959 + 'R' >  U+0959 U+0944
+ U+0959 + 'R' >  U+0959 U+0943
  U+0959 + 'e' >  U+0959 U+0947
  U+0959 + 'E' >  U+0959 U+0948
  U+0959 + '}' >  U+0959 U+0949
