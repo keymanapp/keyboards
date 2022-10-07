@@ -15,3 +15,4 @@ Boonkit Change History
  0.6.2   31-May-2018     Update BCP 47 code and switch to .kvks for onscreen keyboard, minor edits to welcome and help files
  0.6.3   13-Jun-2018     minor edits to welcome and help files
  0.6.4   18-Dec-2018     Rename .png images in help files and boonkitofl.ttf font
+ 0.6.5    7-Oct-2022     Change \ from outputting ( to behaving like `. Do not change ` behaviour.
