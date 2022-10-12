@@ -1,12 +1,16 @@
-﻿store(&VERSION) '10.0'
+﻿c 2022-10-13 Update:
+c 1.Fixed the desktop keyboard layout, now it will not produce Latin letters.
+store(&VERSION) '10.0'
 store(&NAME) 'Makasar Inscript'
 store(&COPYRIGHT) '© Joshua Wong'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'makasar_inscript.kvks'
 store(&LAYOUTFILE) 'makasar_inscript.keyman-touch-layout'
 store(&MESSAGE) 'This keyboard is designed for the Makassar language, using the Makasar script with an Inscript layout.'
 store(&BITMAP) 'makasar_inscript.ico'
+
+store(nul) "wxzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 begin Unicode > use(main)
 
@@ -36,3 +40,5 @@ group(main) using keys
 + [K_P] > '𑻣'
 + [K_G] > '𑻡'
 + [K_K] > '𑻠'
+
++ any(nul) > nul
