@@ -2,7 +2,6 @@
 c 1. Fixed the desktop keyboard layout, now it will not produce Latin letters.
 c 2. Changed the phone keyboard layout.
 store(&VERSION) '10.0'
-store(&TARGETS) 'windows macosx linux iphone ipad androidphone androidtablet mobile desktop tablet'
 store(&NAME) 'Kharoshthi Inscript'
 store(&COPYRIGHT) 'Copyright © 2022 Joshua Wong'
 store(&BITMAP) 'kharoshthi_inscript.ico'
@@ -12,6 +11,7 @@ store(&VISUALKEYBOARD) 'kharoshthi_inscript.kvks'
 store(&KEYBOARDVERSION) '1.0.1'
 
 store(nul) "WEUIOLM"
+store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
