@@ -1,5 +1,9 @@
 # ግዕዝ (Ge'ez) Change History
 
+## 2022-10-17 1.7
+* Inclusion of the Abba Garima font.
+* Sequences to support typing EMUFI elements used by the Abba Garima font.
+
 ## 2021-07-21 1.6
 * Addition of mobile and layouts.
 * Addition of the Abyssinica SIL (Connected).

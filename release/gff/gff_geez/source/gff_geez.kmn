@@ -13,10 +13,10 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '10.0'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.7'
   store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
 c  store(&EthnologueCode) 'gez'
-store(&COPYRIGHT) '© 2009-2021 Ge' U+0027 'ez Frontier Foundation'
+store(&COPYRIGHT) '© 2009-2022 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
@@ -329,11 +329,26 @@ c enhance this later, look for something that can copy a match over
   + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
 
+c ---------------------Begin of EMFUI Symbols-------------------------------------------------
+c
+c These entries are added to input the EMUFI symbols included in the Abba Garima font.
+c One additional symbol, the very frequent Rubricated Ethiopic Fullstop, is added for 
+c convenience and is also a trial to support the 500+ EMUFI symbols more fully.
+  store(emufi፡keys) '፡።‹›'  
+  store(emufi፡symbols) ''
+  'ቆመ' + '@' > ''
+  'ፕ' + '@' > '☧'
+  any(emufi፡keys) + '@' > index(emufi፡symbols,1) 
+c
+c ---------------------End of EMUFI Symbols---------------------------------------------------
+
 c ---------------------Begin ዜማ Group--------------------------------------------------------
   any(ዜማ) + any(ዜማ፡keys) > index(ዜማ, 1) index(ዜማ, 2)
   group(ዜማ፡group) using keys
   + any(ዜማ፡keys) > index(ዜማ, 1)
-  nomatch        > use(main)             
+  nomatch        > use(main)      
 c ---------------------End ዜማ Group----------------------------------------------------------
+
+       
 
 c =====================End Functional Section===================================================
