@@ -12,6 +12,7 @@ Links
 -----
 
  * Specification :  http://keyboards.ethiopic.org/specification/
+ * Abba Garima Font : https://github.com/BlackFoundryCom/AbbaGarima
  * Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
  * Contact       :  yacob@geez.org
 
