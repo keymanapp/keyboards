@@ -13,10 +13,10 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '10.0'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.7'
   store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
 c  store(&EthnologueCode) 'gez'
-store(&COPYRIGHT) '© 2009-2021 Ge' U+0027 'ez Frontier Foundation'
+store(&COPYRIGHT) '© 2009-2022 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
@@ -115,16 +115,8 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 store(&TARGETS) 'any'
-begin Unicode > use(first)
 
-c first matches a menu in the context or passes processing to main
-c remove 'using keys' and +any() when KMW bug fixed
-  group(first) using keys
-c match a menu on the context
-  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
-   
-c no menu was in the context, so process keys normally
-  nomatch > use(main)
+begin Unicode > use(main)
    
 c The main group
   group(main) using keys
@@ -132,9 +124,9 @@ c The main group
 c ---------------------Input of ልዩ Symbols-------------------------------------------------
 c 
 c The input section here is for rules that must precede other rules
-c 
+c
   + '_' > outs(ዜማ፡menu)
-  $ጥብቅ + '_' > '_'
+  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
 
   deadkey(1) + "'" > "'"
   deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
@@ -329,11 +321,25 @@ c enhance this later, look for something that can copy a match over
   + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
 
+c ---------------------Begin of EMFUI Symbols-------------------------------------------------
+c
+c These entries are added to input the EMUFI symbols included in the Abba Garima font.
+c One additional symbol, the very frequent Rubricated Ethiopic Fullstop, is added for 
+c convenience and is also a trial to support the 500+ EMUFI symbols more fully.
+  store(emufi፡keys) '፡።‹›'  
+  store(emufi፡symbols) ''
+  'ቆመ' + '@' > ''
+  'ፕ' + '@' > '☧'
+  any(emufi፡keys) + '@' > index(emufi፡symbols,1) 
+c
+c ---------------------End of EMUFI Symbols---------------------------------------------------
+
 c ---------------------Begin ዜማ Group--------------------------------------------------------
-  any(ዜማ) + any(ዜማ፡keys) > index(ዜማ, 1) index(ዜማ, 2)
-  group(ዜማ፡group) using keys
-  + any(ዜማ፡keys) > index(ዜማ, 1)
-  nomatch        > use(main)             
+group(ዜማ፡group) using keys
++ any(ዜማ፡keys) > index(ዜማ, 1)
+nomatch        > use(main)      
 c ---------------------End ዜማ Group----------------------------------------------------------
+
+       
 
 c =====================End Functional Section===================================================
