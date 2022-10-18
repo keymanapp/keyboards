@@ -115,16 +115,8 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 store(&TARGETS) 'any'
-begin Unicode > use(first)
 
-c first matches a menu in the context or passes processing to main
-c remove 'using keys' and +any() when KMW bug fixed
-  group(first) using keys
-c match a menu on the context
-  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
-   
-c no menu was in the context, so process keys normally
-  nomatch > use(main)
+begin Unicode > use(main)
    
 c The main group
   group(main) using keys
@@ -132,9 +124,9 @@ c The main group
 c ---------------------Input of ልዩ Symbols-------------------------------------------------
 c 
 c The input section here is for rules that must precede other rules
-c 
+c
   + '_' > outs(ዜማ፡menu)
-  $ጥብቅ + '_' > '_'
+  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
 
   deadkey(1) + "'" > "'"
   deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
@@ -343,10 +335,9 @@ c
 c ---------------------End of EMUFI Symbols---------------------------------------------------
 
 c ---------------------Begin ዜማ Group--------------------------------------------------------
-  any(ዜማ) + any(ዜማ፡keys) > index(ዜማ, 1) index(ዜማ, 2)
-  group(ዜማ፡group) using keys
-  + any(ዜማ፡keys) > index(ዜማ, 1)
-  nomatch        > use(main)      
+group(ዜማ፡group) using keys
++ any(ዜማ፡keys) > index(ዜማ, 1)
+nomatch        > use(main)      
 c ---------------------End ዜማ Group----------------------------------------------------------
 
        

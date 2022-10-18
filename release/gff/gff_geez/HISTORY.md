@@ -3,6 +3,8 @@
 ## 2022-10-17 1.7
 * Inclusion of the Abba Garima font.
 * Sequences to support typing EMUFI elements used by the Abba Garima font.
+* Removed spurious ኧ from a longpress.
+* Fixed Tebek insertion after Zaima Qirtse (started in Keyman v14).
 
 ## 2021-07-21 1.6
 * Addition of mobile and layouts.
