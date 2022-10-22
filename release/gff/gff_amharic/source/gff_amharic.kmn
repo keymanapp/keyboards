@@ -40,7 +40,7 @@ c language specific mappings
   store(ሣልስ)  'ሂሊሒሚሢሪሲሺቂቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጢጪጲጺፂፊፒ'
   store(ራብዕ)  'ሃላሓማሣራሳሻቃባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጣጫጳጻፃፋፓ'
   store(ኃምስ)  'ሄሌሔሜሤሬሴሼቄቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጤጬጴጼፄፌፔ'
-  store(ሳድስ)  'ህልሕምሥርስሽቅብቭትችኅንኝክኽውዐዝዥይድጅግጥጭጵጽፅፍፕ'
+  store(ሳድስ)  'ህልሕምሥርስሽቅብቭትችኅንኝክኽውዕዝዥይድጅግጥጭጵጽፅፍፕ'
   store(ሳብዕ)  'ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
 
 c QWERTY keymappings
@@ -52,7 +52,7 @@ c the following is Amharic specific
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)  [T_GEEZ]'aAuUiIeEoO'[T_HAMIS]
+  store(loneVowelKeys)  [T_ግዕዝ]'aAuUiIeEoO'[T_ኃምስ]
   store(loneVowelEthio) 'አአአኡኡኢኢእእኦኦኤ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
@@ -82,16 +82,16 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'[T_GEEZ]
-$keymanweb:  store(ግዕዝ-key)  'eE'[T_GEEZ]
+$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'[T_ግዕዝ]
+$keymanweb:  store(ግዕዝ-key)  'eE'[T_ግዕዝ]
 $keymanonly: store(ካዕብ-key) 'uUùÙúÚûÛüÜ'
 $keymanweb:  store(ካዕብ-key) 'uU'
 $keymanonly: store(ሣልስ-key) 'iIìÌíÍîÎïÏ'
 $keymanweb:  store(ሣልስ-key) 'iI'
 $keymanonly: store(ራብዕ-key) 'aAàÀáÁâÂãÃåÅ'
 $keymanweb:  store(ራብዕ-key) 'aA'
-$keymanonly: store(ኃምስ-key) 'æÆ'[T_HAMIS]
-$keymanweb:  store(ኃምስ-key) [T_HAMIS]
+$keymanonly: store(ኃምስ-key) 'æÆ'[T_ኃምስ]
+$keymanweb:  store(ኃምስ-key) [T_ኃምስ]
 $keymanonly: store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
 $keymanweb:  store(ሳብዕ-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
@@ -132,19 +132,20 @@ c Alef-A Vowels as Regular Syllables
   'እ' + any(ካዕብ-key) > 'ኡ'
   'እ' + any(ሣልስ-key) > 'ኢ'
   'እ' + any(ራብዕ-key) > 'ኣ'
+  'እ' + [T_ኃምስ]      > 'ኤ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
   'እ' + any(ሳብዕ-key) > 'ኦ'
 
 c Aynu-A Vowels as Regular Syllables
-  platform("touch")    'እ' + [T_GEEZ] > 'አ'
-  platform("hardware") 'እ' + any(ግዕዝ-key) > 'ዕ'
-  'ዕ' + any(ግዕዝ-key) > 'ዐ'
-  'ዕ' + any(ካዕብ-key) > 'ዑ'
-  'ዕ' + any(ሣልስ-key) > 'ዒ'
-  'ዕ' + any(ራብዕ-key) > 'ዓ'
-  'ዒ' + any(ግዕዝ-key) > 'ዔ'
-  'ኤ' + [T_HAMIS]    > 'ዔ'
-  'ዕ' + any(ሳብዕ-key) > 'ዖ'
+  platform("touch")   'እ' + [T_ግዕዝ] > 'አ'
+  platform("desktop") 'እ' + any(ግዕዝ-key) > 'ዕ'
+  c 'ዕ' + any(ግዕዝ-key) > 'ዐ'
+  c 'ዕ' + any(ካዕብ-key) > 'ዑ'
+  c 'ዕ' + any(ሣልስ-key) > 'ዒ'
+  c 'ዕ' + any(ራብዕ-key) > 'ዓ'
+   'ዒ' + any(ግዕዝ-key) > 'ዔ'
+   'ኤ' + [T_ኃምስ]    > 'ዔ'
+  c 'ዕ' + any(ሳብዕ-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
   'ኡ' + any(ካዕብ-key) > 'ዑ'
@@ -191,15 +192,15 @@ c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
   any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
-$keymanonly:    any(ሳድስ)      + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
+$keymanonly: any(ሳድስ)      + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
   any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             
   any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
 
 
-      + ':'     > '፡'
-$keymanonly:    + [SHIFT ' '] > '፡'
++ ':'     > '፡'
+$keymanonly: + [SHIFT ' '] > '፡'
   '፡' + ':' > '።'
   '፡' + '-' > '፦'
   '፡' + '+' > '፠'
