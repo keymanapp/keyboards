@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    19 Jul 2021
+  Modified Date:    22 Oct 2022
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -184,6 +184,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 2.3, 22 Oct 2022</dt>
+  <dd>Fixes to several problems with vowel input for touch platform.</dd>
   <dt>Version 2.2, 19 Jul 2021</dt>
   <dd>Extensions for Unicode 14</dd>
   <dd>Addition of the Abyssinica SIL (Connected)</dd>
@@ -214,7 +216,7 @@ This keyboard was created by the Ge'ez Frontier Foundation.  SIL International g
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2018 Ge'ez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2022 Ge'ez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>
