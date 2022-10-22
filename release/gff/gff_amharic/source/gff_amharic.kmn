@@ -44,7 +44,14 @@ c language specific mappings
   store(ሳብዕ)  'ሆሎሖሞሦሮሶሾቆቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጦጮጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys)  'hlHm_rsxqbvtc_nNkKw_zZydjgTCPS_fp'
+c
+c These stores were introduced in v2.3 of the keyboard to avoid producing an
+c (ignorable) masking error that began appearing with KM15 where '_' was used
+c a place holder for keys in the ሳድስ list that were not directly typed. The
+c maps below are for for the initial keystrike only.
+c
+  store(enKeys)  'hlHmrsxqbvtcnNkKwzZydjgTCPSfp'
+  store(ሳድስKeys) 'ህልሕምርስሽቅብቭትችንኝክኽውዝዥይድጅግጥጭጵጽፍፕ'
 
 c the following is Amharic specific
   store(ሌሎች፡keys) 'LMRXBVQWYDJGF'
@@ -112,7 +119,7 @@ c
   U+135F + '_' > '_'
 
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
-  + any(keys)     > index(ሳድስ,1)
+  + any(enKeys)     > index(ሳድስKeys,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
