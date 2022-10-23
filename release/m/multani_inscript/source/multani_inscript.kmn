@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Multani Inscript'
+store(&COPYRIGHT) '© Joshua Wong'
+store(&KEYBOARDVERSION) '1.0'
+=======
 ﻿c 2022-10-14 Update:
 c 1. Fixed the desktop keyboard, now it will not produce Latin letters,
 c 2. Changed the keyboard layout.
@@ -5,18 +11,26 @@ store(&VERSION) '10.0'
 store(&NAME) 'Multani Inscript'
 store(&COPYRIGHT) '© Joshua Wong'
 store(&KEYBOARDVERSION) '1.0.1'
+>>>>>>> upstream/master
 store(&TARGETS) 'any'
 store(&MESSAGE) 'This keyboard is designed for the Saraiki language, using the Multani script with an Inscript layout.'
 store(&BITMAP) 'multani_inscript.ico'
 store(&VISUALKEYBOARD) 'multani_inscript.kvks'
 store(&LAYOUTFILE) 'multani_inscript.keyman-touch-layout'
 
+<<<<<<< HEAD
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_F] > '𑊩'
+=======
 store(nul) "wofWEUIOASFHLVM"
 
 begin Unicode > use(main)
 
 group(main) using keys
 + [K_COMMA] > '𑊩'
+>>>>>>> upstream/master
 + [SHIFT K_Z] > '𑊨'
 + [SHIFT K_R] > '𑊧'
 + [K_H] > '𑊦'
@@ -54,5 +68,8 @@ group(main) using keys
 + [K_U] > '𑊂'
 + [K_I] > '𑊁'
 + [K_A] > '𑊀'
+<<<<<<< HEAD
+=======
 
 + any(nul) > nul
+>>>>>>> upstream/master

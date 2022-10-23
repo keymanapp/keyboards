@@ -1,11 +1,20 @@
+<<<<<<< HEAD
+﻿store(&VERSION) '10.0'
+store(&TARGETS) 'any'
+=======
 ﻿c 2022-10-14 Update:
 c 1. Fixed the desktop keyboard layout, now it will not produce Latin letters.
 c 2. Changed the phone keyboard layout.
 store(&VERSION) '10.0'
+>>>>>>> upstream/master
 store(&NAME) 'Kharoshthi Inscript'
 store(&COPYRIGHT) 'Copyright © 2022 Joshua Wong'
 store(&BITMAP) 'kharoshthi_inscript.ico'
 store(&LAYOUTFILE) 'kharoshthi_inscript.keyman-touch-layout'
+<<<<<<< HEAD
+store(&MESSAGE) 'This keyboard is designed for Sanskrit language, using the Kharoshthi script with an Inscript layout.'
+store(&VISUALKEYBOARD) 'kharoshthi_inscript.kvks'
+=======
 store(&MESSAGE) 'This keyboard is designed for the Sanskrit language, using the Kharoshthi script with an Inscript layout.'
 store(&VISUALKEYBOARD) 'kharoshthi_inscript.kvks'
 store(&KEYBOARDVERSION) '1.0.1'
@@ -13,6 +22,7 @@ store(&KEYBOARDVERSION) '1.0.1'
 store(nul) "WEUIOLM"
 store(&TARGETS) 'any'
 
+>>>>>>> upstream/master
 begin Unicode > use(main)
 
 group(main) using keys
@@ -84,5 +94,8 @@ group(main) using keys
 + [K_U] > '𐨂'
 + [K_I] > '𐨁'
 + [K_A] > '𐨀'
+<<<<<<< HEAD
+=======
 
 + any(nul) > nul
+>>>>>>> upstream/master
