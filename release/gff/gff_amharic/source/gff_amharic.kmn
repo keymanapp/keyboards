@@ -16,7 +16,6 @@ store(&VERSION) '15.0'
 store(&NAME) 'አማርኛ (Amharic)'
 store(&COPYRIGHT) '© 2009-2022 Geʾez Frontier Foundation'
 store(&Message) "This is an Amharic language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
-store(&KEYBOARDVERSION) '2.3'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_A]'
 store(&BITMAP) 'gff_amharic.ico'
@@ -103,12 +102,61 @@ $keymanonly: store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
 $keymanweb:  store(ሳብዕ-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
+store(touchVowels)  [T_ግዕዝ]'uia'[T_ኃምስ]'o'
+store(ሀ_ቤተሰብ) 'ሀሁሂሃሄሆ'
+store(ለ_ቤተሰብ) 'ለሉሊላሌሎ'
+store(ሐ_ቤተሰብ) 'ሐሑሒሓሔሖ'
+store(መ_ቤተሰብ) 'መሙሚማሜሞ'
+store(ሠ_ቤተሰብ) 'ሠሡሢሣሤሦ'
+store(ረ_ቤተሰብ) 'ረሩሪራሬሮ'
+store(ሰ_ቤተሰብ) 'ሰሱሲሳሴሶ'
+store(ሸ_ቤተሰብ) 'ሸሹሺሻሼሾ'
+store(ቀ_ቤተሰብ) 'ቀቁቂቃቄቆ'
+store(ቐ_ቤተሰብ) 'ቐቑቒቓቔቖ'
+store(በ_ቤተሰብ) 'በቡቢባቤቦ'
+store(ቨ_ቤተሰብ) 'ቨቩቪቫቬቮ'
+store(ተ_ቤተሰብ) 'ተቱቲታቴቶ'
+store(ቸ_ቤተሰብ) 'ቸቹቺቻቼቾ'
+store(ኀ_ቤተሰብ) 'ኀኁኂኃኄኆ'
+store(ነ_ቤተሰብ) 'ነኑኒናኔኖ'
+store(ኘ_ቤተሰብ) 'ኘኙኚኛኜኞ'
+store(ከ_ቤተሰብ) 'ከኩኪካኬኮ'
+store(ኸ_ቤተሰብ) 'ኸኹኺኻኼኾ'
+store(ወ_ቤተሰብ) 'ወዉዊዋዌዎ'
+store(ዐ_ቤተሰብ) 'ዐዑዒዓዔዖ'
+store(ዘ_ቤተሰብ) 'ዘዙዚዛዜዞ'
+store(ዠ_ቤተሰብ) 'ዠዡዢዣዤዦ'
+store(የ_ቤተሰብ) 'የዩዪያዬዮ'
+store(ደ_ቤተሰብ) 'ደዱዲዳዴዶ'
+store(ጀ_ቤተሰብ) 'ጀጁጂጃጄጆ'
+store(ገ_ቤተሰብ) 'ገጉጊጋጌጎ'
+store(ጘ_ቤተሰብ) 'ጘጙጚጛጜጞ'
+store(ጠ_ቤተሰብ) 'ጠጡጢጣጤጦ'
+store(ጨ_ቤተሰብ) 'ጨጩጪጫጬጮ'
+store(ጰ_ቤተሰብ) 'ጰጱጲጳጴጶ'
+store(ጸ_ቤተሰብ) 'ጸጹጺጻጼጾ'
+store(ፀ_ቤተሰብ) 'ፀፁፂፃፄፆ'
+store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፎ'
+store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፖ'
+
+
 c =====================End Data Section=========================================================
 
 c =====================Begin Functional Section=================================================
 c 
+store(&KEYBOARDVERSION) '3.0'
 
   begin Unicode > use(main)
+
+  group(platformCheck)
+  c  platform( 'touch' ) >  use(touchRules)
+  c  nomatch > use(main)
+
+
+  c group(touchRules) using keys
+
+
+
   group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
@@ -119,7 +167,8 @@ c
   U+135F + '_' > '_'
 
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
-  + any(enKeys)     > index(ሳድስKeys,1)
+  + any(enKeys)   > index(ሳድስKeys,1)
+
 c ---------------------End Input of Special Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -133,6 +182,7 @@ c
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
   any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
+
   'አ' + any(ግዕዝ-key) > 'ኧ'
 
 c Alef-A Vowels as Regular Syllables
@@ -205,6 +255,43 @@ $keymanonly: any(ሳድስ)      + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             
   any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
 
+
+  
+    if( &layer = "ሀ" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+    if( &layer = "ለ" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
+    if( &layer = "ሐ" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
+    if( &layer = "መ" ) + any(touchVowels) > index(መ_ቤተሰብ,2) 
+    if( &layer = "ሠ" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2) 
+    if( &layer = "ረ" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
+    if( &layer = "ሰ" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+    if( &layer = "ሸ" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
+    if( &layer = "ቀ" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
+    if( &layer = "ቐ" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2) 
+    if( &layer = "በ" ) + any(touchVowels) > index(በ_ቤተሰብ,2) 
+    if( &layer = "ቨ" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2) 
+    if( &layer = "ተ" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
+    if( &layer = "ቸ" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
+    if( &layer = "ኀ" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
+    if( &layer = "ነ" ) + any(touchVowels) > index(ነ_ቤተሰብ,2) 
+    if( &layer = "ኘ" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2) 
+    if( &layer = "ከ" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
+    if( &layer = "ኸ" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
+    if( &layer = "ዐ" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
+    if( &layer = "ወ" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
+    if( &layer = "ዘ" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2) 
+    if( &layer = "ዠ" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2) 
+    if( &layer = "የ" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
+    if( &layer = "ደ" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
+    if( &layer = "ጀ" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
+    if( &layer = "ገ" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
+    if( &layer = "ጘ" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
+    if( &layer = "ጠ" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2) 
+    if( &layer = "ጨ" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2) 
+    if( &layer = "ጰ" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
+    if( &layer = "ጸ" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+    if( &layer = "ፀ" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
+    if( &layer = "ፈ" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
+    if( &layer = "ፐ" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2) 
 
 + ':'     > '፡'
 $keymanonly: + [SHIFT ' '] > '፡'

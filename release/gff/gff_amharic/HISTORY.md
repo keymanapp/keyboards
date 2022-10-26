@@ -1,6 +1,10 @@
 gff_amharic Change History
 ==========================
 
+3.0 (22 Oct 2022)
+-----------------
+* Dynamic modifier key updates.
+
 2.3 (22 Oct 2022)
 -----------------
 * Fixes to several problems with vowel input for touch platform.
