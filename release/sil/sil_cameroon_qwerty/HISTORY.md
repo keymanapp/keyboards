@@ -1,6 +1,6 @@
 Change History
 =======================
-6.0.7 (2021-Oct)
+6.0.8 (2021-Oct)
 * Minor CSS Tweaks
 * Removing NoCaps
 
