@@ -3,7 +3,7 @@
 
 Copyright (C) SIL Cameroon
 
-Version 6.0.6
+Version 6.0.7
 
 __DESCRIPTION__
 
