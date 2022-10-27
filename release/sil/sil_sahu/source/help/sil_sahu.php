@@ -81,3 +81,5 @@
 <p>
   &#x02A1; is accessible from a longpress on the period '.' key.
 </p>
+
+<p>©2019 SIL International</p>

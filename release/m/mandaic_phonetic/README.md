@@ -1,7 +1,9 @@
 Mandaic Phonetic keyboard
 ==============
 
-© SIL International
+© 2020 SIL International
+
+Version 1.0
 
 Description
 -----------
@@ -20,6 +22,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * Mobile
 
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 #----------------------------------------------------------------------------------------
 # Build all the keyboards in a given group
@@ -132,32 +132,9 @@ function build_keyboard {
   pushd "$keyboard"
 
   #
-  # For keyboards from an external source, we need to copy them from the
-  # source repository.
-  #
-
-  if [ -f external_source ]; then
-    if [ -d "build/" ]; then
-      # We want to make sure we rebuild or get correct binaries
-      rm -rf "build/"
-    fi
-
-    retrieve_external_keyboard || die "unable to retrieve external keyboard $base_keyboard"
-
-    if [ -f .source_is_binary ]; then
-      # For keyboards supplied as binary (only possible with signed contract with SIL),
-      # we do not do any further processing and assume that what we are given is good,
-      # although we can still validate the .keyboard_info and file names etc.
-      #
-      # Note: retrieve_external_keyboard will create .source_is_binary as required
-      echo "  Keyboard binary was sourced from external location"
-    fi
-  fi
-
-  #
   # Check if .keyboard_info doesn't exist
   #
-  local keyboard_infoFilename="$base_keyboard.keyboard_info"
+  keyboard_infoFilename="$base_keyboard.keyboard_info"
   if [ ! -f "$keyboard_infoFilename" ]; then
     if [ "$WARNINGS_AS_ERRORS" = true ]; then
       die "$keyboard_infoFilename doesn't exist"
@@ -168,16 +145,11 @@ function build_keyboard {
   fi
 
   #
-  # Validate the .keyboard_info and .kps before build
+  # Validate the .keyboard_info before build
   #
 
-  if [[ -z "$FLAG_CLEAN" ]]; then
-    local packageFilename="source/$base_keyboard.kps"
-    validate_keyboard_info "$keyboard_infoFilename" || die "Failed to validate $keyboard_infoFilename in $keyboard"
-    validate_keyboard_uniqueness "$group" "$keyboard" "$base_keyboard"
-    validate_package_file "$packageFilename" || die "Failed to validate $packageFilename"
-
-  fi
+  validate_keyboard_info "$keyboard_infoFilename" || die "Failed to validate $keyboard_infoFilename in $keyboard"
+  validate_keyboard_uniqueness "$group" "$keyboard" "$base_keyboard"
 
   if [ "$DO_BUILD" = false ]; then
     popd
@@ -204,12 +176,10 @@ function build_keyboard {
   local keyboard_info_jsFilename=
   local keyboard_info_documentationFilename=
 
-  if [[ -z "$FLAG_CLEAN" ]]; then
-    lines=$($KMCOMP_LAUNCHER "$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
-    lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
+  lines=$($KMCOMP_LAUNCHER "$KMCOMP" -nologo -extract-keyboard-info packageFilename,license,jsFilename,documentationFilename "$base_keyboard.keyboard_info" | grep -v "^$" | tr -d "\r") || die "Failed to extract keyboard_info properties: at least license must be specified"
+  lines="$(sed "s/^/keyboard_info_/g" <<< "$lines")"
 
-    eval $lines
-  fi
+  eval $lines
 
   #
   # Determine how we will build the keyboard. If a build.sh file exists, then that does
@@ -223,13 +193,10 @@ function build_keyboard {
       PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
       FLAG_TARGET=-t
     fi
-
-    ./build.sh $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG $FLAG_COMPILER_VERSION $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
+    ./build.sh $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Custom build script failed with an error"
   else
     # We will use the standard build based on the group
-    # Externally sourced keyboards (see above) may have the .source_is_binary flag,
-    # in which case they are treated identically to legacy keyboards
-    if [ ! -f .source_is_binary ] && ([[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]); then
+    if [[ $group == release ]] || [[ $group == experimental ]] || [[ $KEYBOARDS_STARTER == 1 ]]; then
       # We will do a release/experimental build for $keyboard (experimental keyboards are built same way as release keyboards)
       build_release_keyboard "$keyboard" || die "Failed to build $group keyboard $base_keyboard"
     else
@@ -355,7 +322,7 @@ function build_release_keyboard {
     PROJECT_TARGET="$base_keyboard.$PROJECT_TARGET_TYPE"
   fi
 
-  $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_COLOR $FLAG_CLEAN $FLAG_DEBUG $FLAG_COMPILER_VERSION "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
+  $KMCOMP_LAUNCHER "$KMCOMP" -nologo $FLAG_SILENT $FLAG_CLEAN $FLAG_DEBUG "$kpj" $FLAG_TARGET "$PROJECT_TARGET" || die "Could not compile keyboard"
 
   return 0
 }

@@ -1,7 +1,9 @@
 sil_sahu keyboard
 ==============
 
-Copyright (c) SIL International
+Copyright (c) 2019 SIL International
+
+Version 1.0
 
 Description
 -----------
@@ -14,7 +16,6 @@ The '~' key is also a modifier.
 
 Links
 -----
-https://keyman.com/keyboards/sil_sahu
 
 Supported Platforms
 -------------------

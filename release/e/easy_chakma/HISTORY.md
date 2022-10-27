@@ -1,10 +1,6 @@
 Easy Chakma Keyboard Change History
 ============================
 
-1.21 (07 Jun 2022)
-* Added updated font
-* Updated icon
-
 1.20 (10 Jul 2020)
 * Updated font
 

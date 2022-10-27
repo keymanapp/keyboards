@@ -1,9 +1,9 @@
 Swampy Cree (Tataskweyak) keyboard
 ==============
 
-© Bill Jancewicz
+© 2017-2021 Bill Jancewicz
 
-Version 1.2
+Version 1.1
 
 Description
 -----------

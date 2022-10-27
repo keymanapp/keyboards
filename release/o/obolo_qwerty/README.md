@@ -1,14 +1,14 @@
 Obolo Qwerty keyboard
 ==============
 
-© 2020 - 2021 Rogers Katelem Edeh
+© 2020 Rogers Edeh
 
-Version 1.1
+Version 1.0
 
 Description
 -----------
 
-Obolo Qwerty Keyboard is a simple keyboard in QWERTY layout, for the Obolo language of Nigeria. It covers the need of every dialect in that language.
+Obolo Qwerty keyboard is a simple keyboard, in QWERTY layout, for typing Obolo language.
 
 Links
 -----

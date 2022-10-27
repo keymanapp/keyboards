@@ -3,9 +3,11 @@ Gilaki Phonetic keyboard
 
 © 2020 SIL International
 
+Version 1.0.1
+
 Description
 -----------
-Keyboard for the Gilaki language based on a phonetic layout. 
+Gilaki Phonetic keyboard.
 
 Supported Platforms
 -------------------

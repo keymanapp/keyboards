@@ -1,9 +1,11 @@
 ﻿Kayǎn keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) 2017-2020 SIL International
 
-For typing the Latin-based script of the Kayǎn people of Myanmar.
+Version 1.5
+
+For typing the latin-based script of the Kayǎn people of Myanmar.
 
 Supported Platforms
 -------------------

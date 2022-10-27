@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.2"
+store(&KEYBOARDVERSION) "9.1.1"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "sec"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) 'Shashishalhem'
 store(&BITMAP) 'fv_shashishalhem.ico'
 store(&VISUALKEYBOARD) 'fv_shashishalhem.kvks'
@@ -94,10 +94,10 @@ c original punctuation
 + [RALT K_QUOTE] > U+0027
 + [RALT K_BKSLASH] > '\'
 + [SHIFT RALT K_BKSLASH] > '|'
-+ [NCAPS SHIFT RALT K_RBRKT] > '}'
-+ [NCAPS SHIFT RALT K_LBRKT] > '{'
-+ [NCAPS RALT K_RBRKT] > ']'
-+ [NCAPS RALT K_LBRKT] > '['
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_LBRKT] > '{'
++ [RALT K_RBRKT] > ']'
++ [RALT K_LBRKT] > '['
 + [RALT K_EQUAL] > '+'
 + [RALT K_HYPHEN] > '_' 
 
@@ -134,3 +134,5 @@ nomatch > use(x)
 
 group(x) using keys
 
+store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
++ any(allkeys) > index(allkeys, 1)

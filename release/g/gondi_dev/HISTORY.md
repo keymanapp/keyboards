@@ -1,10 +1,6 @@
 Gondi (Devanagari) Keyboard Change History
 ==========================================
 
-1.1.1 (9 Dec 2021)
-----------------
-* Add touch layout keyboard to package
-
 1.1 (22 Aug 2019)
 -----------------
 * Mark Penny added missing retroflex flap (U+095C) and Nukta (U+093C) along with composed combinations

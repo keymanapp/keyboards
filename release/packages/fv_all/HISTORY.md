@@ -1,8 +1,5 @@
 # fv_all Keyboard Package
 
-## 12.4 (02 Feb 2022)
-* Associate sil_euro_latin keyboard with English
-
 ## 12.3 (16 Jul 2020)
 * Add Aboriginal Serif font to touch layout keyboards
 

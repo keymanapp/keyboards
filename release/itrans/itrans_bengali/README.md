@@ -1,7 +1,7 @@
 Bengali Phonetic (ITRANS) 
 =================
 
-©2019-2022 sanskritdocuments.org
+©2019 sanskritdocuments.org
 
 Description
 -------------

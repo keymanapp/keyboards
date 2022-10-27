@@ -1,5 +1,11 @@
-Balochi Urdu keyboard
-=====================
+Keyboard Data
+-------------
+
+* Name:           Balochi Urdu
+* Copyright:      (C) 2018-2020 SIL International
+* Version:        1.1.1
+* Keyman Version: 10.0
+* BCP-47 codes:   bcc-Arab
 
 Description
 -----------

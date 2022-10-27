@@ -1,17 +1,7 @@
 # ግዕዝ (Ge'ez) Change History
 
-## 2022-10-17 1.7
-* Inclusion of the Abba Garima font.
-* Sequences to support typing EMUFI elements used by the Abba Garima font.
-* Removed spurious ኧ from a longpress.
-* Fixed Tebek insertion after Zaima Qirtse (started in Keyman v14).
-
-## 2021-07-21 1.6
-* Addition of mobile and layouts.
-* Addition of the Abyssinica SIL (Connected).
-
 ## 2020-06-10 1.5.1
-* Updated htm files for readability on Linux.
+* Updated htm files for readability on Linux
 
 ## 2020-03-07 1.5
 * Allow continuation of Indo-Arab numeral sequences.

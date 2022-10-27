@@ -1,14 +1,14 @@
 N’Ko Basic keyboard
 ==============
 
-(c) 2018-2021 SIL International
+(c) 2018-2019 SIL International
 
-Version 1.1
+Version 1.0.1
 
 Description
 -----------
 
-This keyboard is designed for languages using the N’Ko script.
+N’Ko Basic generated from template
 
 Links
 -----

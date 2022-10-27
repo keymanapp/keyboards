@@ -1,9 +1,9 @@
 Krung keyboard
 ==============
 
-© 2019-2021 SIL International
+© 2019 SIL International
 
-Version 1.0.2
+Version 1.0.1
 
 Description
 -----------

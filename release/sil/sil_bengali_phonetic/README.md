@@ -1,29 +1,13 @@
-Bengali-Assamese Phonetic (SIL) Keyboard
-==============
+# Bengali-Assamese Phonetic (SIL) Keyboard
 
-Copyright (C) 2006-2021 SIL International
+Copyright (C) 2006-2018 SIL International
 
-Version 1.3
+Version 1.2.1
 
-Description
------------
+__DESCRIPTION__
 Bangla-Asamiya Keyboard for Keyman
 
-Links
------
-https://keyman.com/keyboards/sil_bengali_phonetic
-
-Supported Platforms
--------------------
+## Supported Platforms
  * Windows
  * macOS
- * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
- 

@@ -1,11 +1,11 @@
 ﻿store(&VERSION) '9.0'
 store(&BITMAP) 'sil_mali_azerty.ico'
-store(&COPYRIGHT) '© SIL Mali'
+store(&COPYRIGHT) '© 2004-2018 SIL Mali'
 store(&NAME) 'Clavier du Mali (Azerty)'
 store(&HotKey ) "[K_F11]"
 c store(&mnemoniclayout) "0"
 store(&VISUALKEYBOARD) 'sil_mali_azerty.kvks'
-store(&KEYBOARDVERSION) '3.3.2'
+store(&KEYBOARDVERSION) '3.3'
 store(&TARGETS) 'windows macosx linux web'
 
 begin Unicode > use(Main)
@@ -85,6 +85,7 @@ c Added quite a few characters to below
 c 2019 and 2018 are single American quotes (pontuation)
 c 02BC is the word forming Apostrophy for contractions
 c 201C and 201D are double American quotes, 0196 is a CAP iota
+store(specchar1K)   "ABCDEFGHIJKMNOPRUWYZabcdefghijkmnoprsuwyz?VvLlQqSTtxX"
 store(Uspecchar1)   "»"    "Ɓ"    "Ç" "Ɗ"    "Ɛ" \
                     "©"    "Ɣ"    "…" U+0196 "Ɲ" \
                     "ɨ"    "€"    "Ŋ" "Ɔ"    "”"  \

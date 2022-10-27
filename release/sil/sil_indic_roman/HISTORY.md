@@ -1,10 +1,6 @@
 Indic Roman Transliteration (SIL) Keyboard Change History
 =======================
 
-1.3.1 (2021-07-01)
-----------------
-* Updated to use new version of Charis SIL
-
 1.3 (19 Sep 2018)
 -----------------
 * Source migrated to GitHub

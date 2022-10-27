@@ -38,4 +38,8 @@ replaces two unused characters with combining diacritics.</p>
 <p>If you have problems using the SIL Bwe Karen keyboard, please visit: 
 <a href=https://community.software.sil.org/c/keyman>https://community.software.sil.org/c/keyman</a></p>
 
-
+<h2>License</h2>
+<p>
+  SIL Bwe Karen keyboard is copyright ©2018 SIL International. 
+  It is distributed under The MIT License (MIT)
+</p>

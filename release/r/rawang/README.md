@@ -1,9 +1,9 @@
 Rawang keyboard
 ==============
 
-(c) 2007-2021 R.James
+(c) 2007-2020 R.James
 
-Version 1.6
+Version 1.5
 
 Description
 -----------
@@ -20,6 +20,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * Mobile
- 
 

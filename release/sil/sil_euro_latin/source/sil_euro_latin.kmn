@@ -1,12 +1,12 @@
 ﻿c EuroLatin keyboard for Keyman
-c
+c 
 c If you make changes to this keyboard file, please consider sharing them at:
 c https://community.software.sil.org/c/keyman
 
 store(&version) '10.0'
 store(&NAME) 'EuroLatin (SIL)'
 store(&BITMAP) 'sil_euro_latin.ico'
-store(&COPYRIGHT) 'Copyright (c) SIL International'
+store(&COPYRIGHT) 'Copyright (C) 1994-2021 SIL International'
 
 $keymanonly: store(&mnemoniclayout) '1'
 
@@ -14,18 +14,10 @@ c KeymanWeb-specific header statements
 store(&KMW_HELPFILE) 'sil_euro_latin.html'
 store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
 store(&LAYOUTFILE) 'sil_euro_latin.keyman-touch-layout'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '1.9.3'
 store(&TARGETS) 'any'
 
 begin Unicode > use(Main)
-begin NewContext > use(NewContext)
-begin PostKeystroke > use(PostKeystroke)
-
-c This tells Keyman which keys should have casing behavior applied
-$keymanweb: store(&CasedKeys) [K_A] .. [K_Z]
-
-c Match our alphabet keys so we get casing behavior applied
-store(default-alpha) 'a' .. 'z'     'A' .. 'Z'
 
 group(Main) using keys
 
@@ -89,12 +81,8 @@ store(lineK) 'BbDdhKkLlNnRrTtZz'
 c :
 store(dieresisO) 'äëḧïöẗüẅẍÿÄËḦÏÖÜẄẌŸ'
 store(dieresisK) 'aehiotuwxyAEHIOUWXY'
-':' dk(1) + "n" > U+006E U+0308    c for Guinea-Bissau Creole (pov)
-':' dk(1) + "N" > U+004E U+0308    c for Guinea-Bissau Creole (pov)
 ':' dk(1) + "p" > U+0070 U+0308    c for Romani
 ':' dk(1) + "P" > U+0050 U+0308    c for Romani
-if(&platform = 'touch') + [T_N_Dieresis] > U+006E U+0308           c for Guinea-Bissau Creole on Touch devices
-if(&platform = 'touch') + [SHIFT T_N_Dieresis] > U+004E U+0308     c for Guinea-Bissau Creole on Touch devices
 if(&platform = 'touch') + [T_P_Dieresis] > U+0070 U+0308           c for Romani on Touch devices
 if(&platform = 'touch') + [SHIFT T_P_Dieresis] > U+0050 U+0308     c for Romani on Touch devices
 
@@ -161,8 +149,6 @@ if(&platform = 'touch') + [SHIFT T_0058_0331] > U+0058 U+0331     c Zapotec addi
 c Preferred for digraphs
 'A\' dk(1) + 'E' > 'Æ'
 'a\' dk(1) + 'e' > 'æ'
-'Æ' + '-' > U+01E2 c Anglo-Saxon addition 8/20/2021
-'æ' + '-' > U+01E3 c Anglo-Saxon addition 8/20/2021
 'c\' dk(1) + 'h' > U+0063 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
 'C\' dk(1) + 'h' > U+0043 U+0332 U+0068 U+0332  c Zapotec addition 12/2/2020
 'C\' dk(1) + 'H' > U+0043 U+0332 U+0048 U+0332  c Zapotec addition 12/2/2020
@@ -270,67 +256,6 @@ if(option_key = '') + any(controls) > index(controls, 2) dk(1)
 $keymanonly: if(option_key = 'RALT') + any(controls-ralt) > index(controls, 2) dk(1)
 $keymanonly: if(option_key = 'RCTRL') + any(controls-rctrl) > index(controls, 2) dk(1)
 
-$keymanweb: + any(default-alpha) > index(default-alpha, 1)
-
 group(Touch) using keys
-    c This empty group, plus the rule that calls it, prevents control keys from affecting
-    c the base letter when used on touch keyboards, e.g. pressing 'e on a hardware keyboard
-    c will give é but on a touch keyboard this letter is accessed via long-press on e
-    c instead.
-
-c
-c Start-of-sentence and automatic layer switching
-c
-
-store(digit) '0'..'9'
-
-c Some common end-of-sentence punctuation
-store(sentencePunctuation) '.?!¿¡'
-
-c Various Unicode spacing characters
-store(whitespace) ' ' U+00A0 U+000D U+000A U+0009 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F
-store(whitespace-dk) outs(whitespace) dk(1)
-c store(zwsp) U+200B
-
-group(NewContext) readonly
-    c Any time we get a new context, by mouse click, tap,
-    c cursor movement, new document, etc, we'll try and
-    c determine the best layer to use
-    platform('touch') > use(detectStartOfSentence)
-
-group(PostKeystroke) readonly
-    c We get here after every keystroke and model action is processed
-
-    c Okay, let's stay on the numeric layer if we are there already
-    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
-
-    c Don't swap off the caps lock layer automatically
-    platform('touch') if(&layer = 'caps') > context
-
-    c no other changes, so detect sentence or layer change, as long
-    c as the user hasn't attempted to change layer themselves.
-    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
-
-group(detectStartOfSentence) readonly
-    c We have a shared group for the start of sentence detection now
-    c which will set the current layer according to the current context.
-
-
-    c If we are at the start of a text field, we're at the 'start of a
-    c sentence', so we'll move to the Shift layer
-    nul > layer('shift')
-
-    c Otherwise, we'll move to the Shift layer only if we see end of a
-    c sentence followed by one, two, or three spaces.
-    any(sentencePunctuation) any(whitespace) > layer('shift')
-    any(sentencePunctuation) any(whitespace-dk) any(whitespace) > layer('shift')
-    any(sentencePunctuation) any(whitespace-dk) any(whitespace) any(whitespace) > layer('shift')
-    any(sentencePunctuation) dk(1) any(whitespace) any(whitespace) any(whitespace) > layer('shift')
-
-    c And because we haven't see any of these situations above, we'll
-    c move to the default layer. Note that this effectively drops us
-    c back to the default layer after every keystroke that isn't blocked
-    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
-    nomatch > layer('default')
 
 c End of keyboard

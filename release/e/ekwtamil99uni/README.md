@@ -1,6 +1,10 @@
 தமிழ்99 | Tamil99 keyboard
 ======================
 
+Copyright (c) 2008, 2015, 2018-2020 thamiza.com and SIL International
+
+Version 2.0.2
+
 Tamil keyboard layout following the Tamil99 standard
 
 Links
@@ -28,4 +32,4 @@ Supported Platforms
 Todo
 ----
  * Sort out the ekwtamil99uniupdt version differences
- * Mobile layout has keys producing U+0BB6 and U+0BD0. Should those be added to the desktop layout?
+ 

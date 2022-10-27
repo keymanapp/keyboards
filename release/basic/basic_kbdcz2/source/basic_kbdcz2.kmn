@@ -13,8 +13,8 @@ store(&Targets) "any"
 store(&VISUALKEYBOARD) 'basic_kbdcz2.kvks'
 store(&BITMAP) 'basic_kbdcz2.ico'
 store(&LAYOUTFILE) 'basic_kbdcz2.keyman-touch-layout'
-store(&COPYRIGHT) '(c) 2009-2022 SIL International'
-store(&KEYBOARDVERSION) '1.1.1'
+store(&COPYRIGHT) '(c) 2009-2019 SIL International'
+store(&KEYBOARDVERSION) '1.1'
 
 begin Unicode > use(main)
 
@@ -193,7 +193,7 @@ group(main) using keys
 + [NCAPS SHIFT K_Z] > U+005a
 + [CAPS SHIFT K_Z] > U+007a
 
-platform('touch') + [NCAPS SHIFT RALT K_Z] > dk(02dd)
+platform('touch') + [SHIFT RALT K_Z] > dk(02dd)
 
 + [K_COLON] > U+003b
 + [SHIFT K_COLON] > U+003a

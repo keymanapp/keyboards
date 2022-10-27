@@ -1,162 +1,237 @@
-﻿store(&VERSION) '10.0'
-store(&KEYBOARDVERSION) '9.2'
-store(&TARGETS) 'any'
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) "9.1"
+store(&TARGETS) "mobile tablet"
 c store(&ETHNOLOGUECODE) "bea"
-store(&COPYRIGHT) "© 2015 FirstVoices, First Peoples' Cultural Foundation, SIL International"
+store(&COPYRIGHT) "(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
 store(&NAME) 'Dane-Z̲aa Z̲áágéʔ'
-store(&VISUALKEYBOARD) 'fv_dane_zaa_zaage.kvks'
-store(&LAYOUTFILE) 'fv_dane_zaa_zaage.keyman-touch-layout'
 
 begin Unicode > use(main)
 
 group(main) using keys
 
-c special letter keys also behave correctly with capslock
-store(&CasedKeys) [K_F] [K_P] [K_Q] [K_R] [K_V] [K_X] [K_LBRKT] [T_DZ] [T_S] [T_TS] [T_Z]
 
-c LINE 0
+c --- START OF TOUCH LAYOUT RULES ---
 
-c combining ogonek
-+ [K_BKQUOTE] > U+0328
-c combining lowline
-+ [SHIFT K_BKQUOTE] > U+0332
-+ [ALT K_BKQUOTE] > '`'
-+ [SHIFT ALT K_BKQUOTE] > '~'
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
+store(&LAYOUTFILE) "fv_dane_zaa_zaage.keyman-touch-layout"
 
-c LINE 1
+'A' + [SHIFT T_Q] > 'Á'
+'I' + [SHIFT T_Q] > 'Í'
+'o' + [SHIFT T_Q] > 'ó'
+'Ą' + [SHIFT T_Q] > 'Ą́'
+'a' + [SHIFT T_Q] > 'á'
+'i' + [SHIFT T_Q] > 'í'
+'ǫ' + [SHIFT T_Q] > 'ǫ́'
+'Ǫ' + [SHIFT T_Q] > 'Ǫ́'
+'ę' + [SHIFT T_Q] > 'ę́'
+'E' + [SHIFT T_Q] > 'É'
+'Ę' + [SHIFT T_Q] > 'Ę́'
+'U' + [SHIFT T_Q] > 'Ú'
+'e' + [SHIFT T_Q] > 'é'
+'u' + [SHIFT T_Q] > 'ú'
+'O' + [SHIFT T_Q] > 'Ó'
+'ą' + [SHIFT T_Q] > 'ą́'
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
+'A' + [SHIFT T_R] > 'Ǎ'
+'I' + [SHIFT T_R] > 'Ǐ'
+'o' + [SHIFT T_R] > 'ǒ'
+'Ą' + [SHIFT T_R] > 'Ą̌'
+'a' + [SHIFT T_R] > 'ǎ'
+'i' + [SHIFT T_R] > 'ǐ'
+'ǫ' + [SHIFT T_R] > 'ǫ̌'
+'Ǫ' + [SHIFT T_R] > 'Ǫ̌'
+'ę' + [SHIFT T_R] > 'ę̌'
+'E' + [SHIFT T_R] > 'Ě'
+'Ę' + [SHIFT T_R] > 'Ę̌'
+'U' + [SHIFT T_R] > 'Ǔ'
+'e' + [SHIFT T_R] > 'ě'
+'u' + [SHIFT T_R] > 'ǔ'
+'O' + [SHIFT T_R] > 'Ǒ'
+'ą' + [SHIFT T_R] > 'ą̌'
++ [SHIFT T_T_0] > 'T̲s̲' layer('default')
++ [SHIFT T_T_1] > 'T̲S̲' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
+'A' + [SHIFT T_P] > 'Â'
+'I' + [SHIFT T_P] > 'Î'
+'o' + [SHIFT T_P] > 'ô'
+'Ą' + [SHIFT T_P] > 'Ą̂'
+'a' + [SHIFT T_P] > 'â'
+'i' + [SHIFT T_P] > 'î'
+'ǫ' + [SHIFT T_P] > 'ǫ̂'
+'Ǫ' + [SHIFT T_P] > 'Ǫ̂'
+'ę' + [SHIFT T_P] > 'ę̂'
+'E' + [SHIFT T_P] > 'Ê'
+'Ę' + [SHIFT T_P] > 'Ę̂'
+'U' + [SHIFT T_P] > 'Û'
+'e' + [SHIFT T_P] > 'ê'
+'u' + [SHIFT T_P] > 'û'
+'O' + [SHIFT T_P] > 'Ô'
+'ą' + [SHIFT T_P] > 'ą̂'
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S_0] > 'S̲' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D_0] > 'D̲z̲' layer('default')
++ [SHIFT T_D_1] > 'D̲Z̲' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
+'ě' + [SHIFT T_F] > 'ę̌'
+'Ě' + [SHIFT T_F] > 'Ę̌'
+'e' + [SHIFT T_F] > 'ę'
+'ó' + [SHIFT T_F] > 'ǫ́'
+'Ó' + [SHIFT T_F] > 'Ǫ́'
+'ô' + [SHIFT T_F] > 'ǫ̂'
+'Ô' + [SHIFT T_F] > 'Ǫ̂'
+'á' + [SHIFT T_F] > 'ą́'
+'Á' + [SHIFT T_F] > 'Ą́'
+'â' + [SHIFT T_F] > 'ą̂'
+'A' + [SHIFT T_F] > 'Ą'
+'O' + [SHIFT T_F] > 'Ǫ'
+'Ǒ' + [SHIFT T_F] > 'Ǫ̌'
+'Â' + [SHIFT T_F] > 'Ą̂'
+'ǒ' + [SHIFT T_F] > 'ǫ̌'
+'ǎ' + [SHIFT T_F] > 'ą̌'
+'é' + [SHIFT T_F] > 'ę́'
+'Ǎ' + [SHIFT T_F] > 'Ą̌'
+'É' + [SHIFT T_F] > 'Ę́'
+'E' + [SHIFT T_F] > 'Ę'
+'a' + [SHIFT T_F] > 'ą'
+'ê' + [SHIFT T_F] > 'ę̂'
+'o' + [SHIFT T_F] > 'ǫ'
+'Ê' + [SHIFT T_F] > 'Ę̂'
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z_0] > 'Z̲' layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
+'D' + [SHIFT T_X] > 'D̲z̲'
+'Z' + [SHIFT T_X] > 'Z̲'
+'t' + [SHIFT T_X] > 't̲s̲'
+'d' + [SHIFT T_X] > 'd̲z̲'
+'S' + [SHIFT T_X] > 'S̲'
+'z' + [SHIFT T_X] > 'z̲'
+'T' + [SHIFT T_X] > 'T̲s̲'
+'s' + [SHIFT T_X] > 's̲'
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V] > 'ʔ' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
+'A' + [T_Q] > 'Á'
+'I' + [T_Q] > 'Í'
+'o' + [T_Q] > 'ó'
+'Ą' + [T_Q] > 'Ą́'
+'a' + [T_Q] > 'á'
+'i' + [T_Q] > 'í'
+'ǫ' + [T_Q] > 'ǫ́'
+'Ǫ' + [T_Q] > 'Ǫ́'
+'ę' + [T_Q] > 'ę́'
+'E' + [T_Q] > 'É'
+'Ę' + [T_Q] > 'Ę́'
+'U' + [T_Q] > 'Ú'
+'e' + [T_Q] > 'é'
+'u' + [T_Q] > 'ú'
+'O' + [T_Q] > 'Ó'
+'ą' + [T_Q] > 'ą́'
++ [T_W] > 'w'
++ [T_E] > 'e'
+'A' + [T_R] > 'Ǎ'
+'I' + [T_R] > 'Ǐ'
+'o' + [T_R] > 'ǒ'
+'Ą' + [T_R] > 'Ą̌'
+'a' + [T_R] > 'ǎ'
+'i' + [T_R] > 'ǐ'
+'ǫ' + [T_R] > 'ǫ̌'
+'Ǫ' + [T_R] > 'Ǫ̌'
+'ę' + [T_R] > 'ę̌'
+'E' + [T_R] > 'Ě'
+'Ę' + [T_R] > 'Ę̌'
+'U' + [T_R] > 'Ǔ'
+'e' + [T_R] > 'ě'
+'u' + [T_R] > 'ǔ'
+'O' + [T_R] > 'Ǒ'
+'ą' + [T_R] > 'ą̌'
++ [T_T_0] > 't̲s̲'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
+'A' + [T_P] > 'Â'
+'I' + [T_P] > 'Î'
+'o' + [T_P] > 'ô'
+'Ą' + [T_P] > 'Ą̂'
+'a' + [T_P] > 'â'
+'i' + [T_P] > 'î'
+'ǫ' + [T_P] > 'ǫ̂'
+'Ǫ' + [T_P] > 'Ǫ̂'
+'ę' + [T_P] > 'ę̂'
+'E' + [T_P] > 'Ê'
+'Ę' + [T_P] > 'Ę̂'
+'U' + [T_P] > 'Û'
+'e' + [T_P] > 'ê'
+'u' + [T_P] > 'û'
+'O' + [T_P] > 'Ô'
+'ą' + [T_P] > 'ą̂'
++ [T_A] > 'a'
++ [T_S_0] > 's̲'
++ [T_S] > 's'
++ [T_D_0] > 'd̲z̲'
++ [T_D] > 'd'
+'ě' + [T_F] > 'ę̌'
+'Ě' + [T_F] > 'Ę̌'
+'e' + [T_F] > 'ę'
+'ó' + [T_F] > 'ǫ́'
+'Ó' + [T_F] > 'Ǫ́'
+'ô' + [T_F] > 'ǫ̂'
+'Ô' + [T_F] > 'Ǫ̂'
+'á' + [T_F] > 'ą́'
+'Á' + [T_F] > 'Ą́'
+'â' + [T_F] > 'ą̂'
+'A' + [T_F] > 'Ą'
+'O' + [T_F] > 'Ǫ'
+'Ǒ' + [T_F] > 'Ǫ̌'
+'Â' + [T_F] > 'Ą̂'
+'ǒ' + [T_F] > 'ǫ̌'
+'ǎ' + [T_F] > 'ą̌'
+'é' + [T_F] > 'ę́'
+'Ǎ' + [T_F] > 'Ą̌'
+'É' + [T_F] > 'Ę́'
+'E' + [T_F] > 'Ę'
+'a' + [T_F] > 'ą'
+'ê' + [T_F] > 'ę̂'
+'o' + [T_F] > 'ǫ'
+'Ê' + [T_F] > 'Ę̂'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z_0] > 'z̲'
++ [T_Z] > 'z'
+'D' + [T_X] > 'D̲z̲'
+'Z' + [T_X] > 'Z̲'
+'t' + [T_X] > 't̲s̲'
+'d' + [T_X] > 'd̲z̲'
+'S' + [T_X] > 'S̲'
+'z' + [T_X] > 'z̲'
+'T' + [T_X] > 'T̲s̲'
+'s' + [T_X] > 's̲'
++ [T_C] > 'c'
++ [T_V] > 'ʔ'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
 
-+ [K_Q] > 'ą'
-+ [SHIFT K_Q] > 'Ą'
-+ [ALT K_Q] > 'q'
-+ [SHIFT ALT K_Q] > 'Q'
+c --- END OF TOUCH LAYOUT RULES ---
 
-+ [K_R] > 'ę'
-+ [SHIFT K_R] > 'Ę'
-+ [ALT K_R] > 'r'
-+ [SHIFT ALT K_R] > 'R'
-
-+ [K_P] > 'ǫ'
-+ [SHIFT K_P] > 'Ǫ'
-+ [ALT K_P] > 'p'
-+ [SHIFT ALT K_P] > 'P'
-
-+ [K_LBRKT] > 'z̲'
-+ [SHIFT K_LBRKT] > 'Z̲'
-+ [ALT K_LBRKT] > '['
-+ [SHIFT ALT K_LBRKT] > '{'
-
-+ [K_RBRKT] > '/'
-+ [SHIFT K_RBRKT] > '\'
-+ [ALT K_RBRKT] > ']'
-+ [SHIFT ALT K_RBRKT] > '}'
-
-c caron
-+ [K_BKSLASH] > '̌'
-c circumflex
-+ [SHIFT K_BKSLASH] > '̂'
-+ [ALT K_BKSLASH] > '\'
-+ [SHIFT ALT K_BKSLASH] > '|'
-
-
-c LINE 2
-
-+ [K_F] > 't̲'
-+ [SHIFT K_F] > 'T̲'
-+ [ALT K_F] > 'f'
-+ [SHIFT ALT K_F] > 'F'
-
-+ [K_COLON] > 'ʔ'
-+ [SHIFT K_COLON] > 'ʔ'
-
-+ [K_QUOTE] > '’'
-+ [ALT K_QUOTE] > U+0027
-
-
-c LINE 3
-
-+ [K_X] > 's̲'
-+ [SHIFT K_X] > 'S̲'
-+ [ALT K_X] > 'x'
-+ [SHIFT ALT K_X] > 'X'
-
-+ [K_V] > 'd̲'
-+ [SHIFT K_V] > 'D̲'
-+ [ALT K_V] > 'v'
-+ [SHIFT ALT K_V] > 'V'
-
-+ [SHIFT K_COMMA] > ';'
-+ [ALT K_COMMA] > '<'
-
-+ [SHIFT K_PERIOD] > ':'
-+ [ALT K_PERIOD] > '>'
-
-c acute
-+ [K_SLASH] > '́'
-+ [ALT K_SLASH] > '/'
-
-
-c TOUCH COMBINED KEYS
-+ [T_S] > 's̲'
-+ [SHIFT T_S] > 'S̲'
-+ [T_Z] > 'z̲'
-+ [SHIFT T_Z] > 'Z̲'
-+ [T_DZ] > 'd̲z̲'
-+ [SHIFT T_DZ] > 'D̲Z̲'
-+ [T_DZ_MIDSHIFT] > 'D̲z̲'
-+ [T_TS] > 't̲s̲'
-+ [SHIFT T_TS] > 'T̲S̲'
-+ [T_TS_MIDSHIFT] > 'T̲s̲'
-
-
-c vowel character collections
-store(basevowels) "aeiouAEIOU"
-store(accents) U+0301 U+030C U+0302
-store(acutevowels) U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D3 U+00DA
-store(caronvowels) U+01CE U+011B U+01D0 U+01D2 U+01D4 U+01CD U+011A U+01CF U+01D1 U+01D3
-store(circumflexvowels) U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB
-store(ogonekvowels) U+0105 U+0119 U+012F U+01EB U+0173 U+0104 U+0118 U+012E U+01EA U+0172
-
-c accents should join with vowels
-c basevowel + accent = combined
-any(basevowels) + [K_SLASH] > index(acutevowels,1)
-any(basevowels) + [K_BKSLASH]> index(caronvowels,1)
-any(basevowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-
-c ogonek should join with vowels, and should never double
-c basevowel plus ogonek = combined vowelogonek
-any(basevowels) + [K_BKQUOTE] > index(ogonekvowels,1)
-c vowelogonek plus another ogonek = single vowelogonek (no stacking)
-any(ogonekvowels) + [K_BKQUOTE] > index(ogonekvowels,1)
-
-c if an accent is present and another is added, it should replace not stack
-c already-accented vowel + accent = fresh accented vowel
-any(acutevowels) + [K_SLASH] > index(acutevowels,1)
-any(caronvowels) + [K_SLASH] > index(acutevowels,1)
-any(circumflexvowels) + [K_SLASH] > index(acutevowels,1)
-any(acutevowels) + [K_BKSLASH] > index(caronvowels,1)
-any(caronvowels) + [K_BKSLASH] > index(caronvowels,1)
-any(circumflexvowels) + [K_BKSLASH] > index(caronvowels,1)
-any(acutevowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-any(caronvowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-any(circumflexvowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-c accent + new accent = single new accent
-any(accents) + [K_SLASH] > U+0301
-any(accents) + [K_BKSLASH] > U+030C
-any(accents) + [SHIFT K_BKSLASH] > U+0302
-
-c to add both ogonek and accent on a vowel, ensure the ogonek always joins, and accent is a diacritic
-c vowelaccent plus ogonek = vowelogonek plus accent
-any(acutevowels) + [K_BKQUOTE] > index(ogonekvowels,1) U+0301
-any(caronvowels) + [K_BKQUOTE] > index(ogonekvowels,1) U+030C
-any(circumflexvowels) + [K_BKQUOTE] > index(ogonekvowels,1) U+0302
-
-c don't double other diacritics like ogonek, low line
-U+0328 + [K_BKQUOTE] > U+0328
-U+0332 + [SHIFT K_BKQUOTE] > U+0332
-
-c if low line combined with t/d, shortcut to underlined ts/dz
-'d' + [SHIFT K_BKQUOTE] > 'd̲z̲'
-'D' + [SHIFT K_BKQUOTE] > 'D̲z̲'
-'t' + [SHIFT K_BKQUOTE] > 't̲s̲'
-'T' + [SHIFT K_BKQUOTE] > 'T̲s̲'

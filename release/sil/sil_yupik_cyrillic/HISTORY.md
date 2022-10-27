@@ -1,10 +1,6 @@
 Yupik Cyrillic (SIL) Keyboard Change History
 =======================
 
-2.0.3 (13 May 2022)
--------------------
-* Add NCAPS modifier to some rules to avoid inconsistent matches
-
 2.0.2 (4 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux

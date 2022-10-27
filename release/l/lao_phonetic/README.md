@@ -1,8 +1,9 @@
 Lao Phonetic keyboard
 ==============
 
-© 2015-2022 John Durdin
+© 2015-2018 John Durdin
 
+Version 1.1
 
 Description
 -----------
@@ -22,4 +23,4 @@ Supported Platforms
  * Linux
  * Web
  * Desktop devices
- * Touch devices
+ 

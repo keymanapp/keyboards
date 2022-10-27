@@ -1,7 +1,9 @@
 CreeBoard keyboard
 ==============
 
-© Bill Jancewicz
+© 2001-2020 Bill Jancewicz
+
+Version 1.1
 
 Description
 -----------
@@ -15,6 +17,5 @@ Supported Platforms
  * Linux
  * Web
  * Desktop
-
 
 

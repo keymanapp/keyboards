@@ -1,6 +1,11 @@
 Balochi InPage keyboard
 =======================
 
+
+© 2019-2020 SIL International
+
+Version 1.1
+
 Description
 -----------
 

@@ -1,20 +1,14 @@
 Malar Malayalam Inscript keyboard
 ==============
 
-2019-2022 © [Ramesh Kunnappully](mailto:ramesh1@protonmail.com)
+2019 © Ramesh Kunnappully
 
-Version 1.1
+Version 1.0
 
 Description
 -----------
 
-**Malar Malayalam Inscript** Keyboard is a customized version of the Malayalam Inscript keyboard. This keyboard supports all Malayalam characters encoded as per the Unicode Standard, Version 14.0.
-
-Links
------
- * Keyboard Home : https://keyman.com/keyboards/malar_malayalam_inscript/
- * Keyboard Help : https://help.keyman.com/keyboard/malar_malayalam_inscript/
- * Keyboard Demo : https://malarproject.gitlab.io/ml-inscript/
+**Malar Malayalam Inscript** Keyboard is a customized version of the Malayalam Inscript keyboard. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 12.1. Malayalam Unicode fonts under the SIL Open Font License are available at [https://smc.org.in/fonts/](https://smc.org.in/fonts/).
 
 Supported Platforms
 -------------------

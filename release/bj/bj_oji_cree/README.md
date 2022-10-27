@@ -1,7 +1,9 @@
 BJ-OjiCree (Kingfisher) keyboard
 =====================
 
-Copyright (C) Bill Jancewicz
+Copyright (C) 2016-2018 Bill Jancewicz
+
+Version 9.0.3
 
 This phonetic keyboard is designed for the Oji-Cree syllabic script used in Northwestern Ontario, Canada. The keyboard has been developed to make it easy to type all of the symbols necessary for Oji-Cree using Unified Canadian Aboriginal Syllabics.
 
@@ -15,7 +17,8 @@ Links
 
 Supported Platforms
 -------------------
- * Desktop
+ * Windows
  * Web
- * Mobile
-
+ * Mobile Web
+ * iOS
+ * Android

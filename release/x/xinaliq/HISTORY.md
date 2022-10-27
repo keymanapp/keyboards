@@ -1,15 +1,6 @@
 Xinaliq Keyboard Change History
 =======================
 
-1.1.4 (7 Apr 2022)
-* Fix help documentation for c key
-
-1.1.3 (2 Feb 2022)
-* Added s with cedilla
-* Remove circumflex ss
-* Remove stray longpress keys on shift key in default layer of touch layout
-* Use canonical tag "kjj" instead of "kjj-Latn"
-
 1.1.2 (27 Oct 2020)
 -----------------
 * Increment version number to force recompile of touch layout.

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1104.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,8 +16,8 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Bwe Karen (SIL)</Name>
-    <Copyright URL="">© 2018-2022 SIL International</Copyright>
+    <Name URL="">Bwe Karen</Name>
+    <Copyright URL="">© 2018 SIL International</Copyright>
     <Author URL="">SIL International</Author>
   </Info>
   <Files>
@@ -33,6 +32,12 @@
       <Description>Keyboard Bwe</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>CharisSILCompact-R.ttf</Name>
+      <Description>Font Charis SIL Compact</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\sil_bwe_karen.kvk</Name>
@@ -58,68 +63,14 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact_README.txt</Name>
-      <Description>File CharisSIL-Compact_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Bold.ttf</Name>
-      <Description>Font Charis SIL Compact Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-BoldItalic.ttf</Name>
-      <Description>Font Charis SIL Compact Bold Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Italic.ttf</Name>
-      <Description>Font Charis SIL Compact Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</Name>
-      <Description>Font Charis SIL Compact</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis_compact\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Bwe Karen (SIL)</Name>
+      <Name>Bwe</Name>
       <ID>sil_bwe_karen</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</DisplayFont>
+      <Version>1.0</Version>
+      <OSKFont>CharisSILCompact-R.ttf</OSKFont>
+      <DisplayFont>CharisSILCompact-R.ttf</DisplayFont>
       <Languages>
         <Language ID="bwe-Latn">Bwe Karen (Latin)</Language>
       </Languages>

@@ -1,8 +1,9 @@
 PhahTaigi POJ
 ==============
 
-© Ngô͘ Ka-bêng
+© 2020 Ngô͘ Ka-bêng
 
+Version 1.2
 
 Description
 -----------

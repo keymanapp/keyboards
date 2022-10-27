@@ -1,9 +1,9 @@
 N'Ko (SIL) keyboard
 ==============
 
-© 2020-2021 SIL International
+© 2020 SIL International
 
-Version 1.1
+Version 1.0
 
 Description
 -----------

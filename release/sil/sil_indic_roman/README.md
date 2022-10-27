@@ -1,13 +1,14 @@
 Indic Roman Transliteration (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) 2007-2018 SIL International
 
-Version 1.3.1
+Version 1.3
 
-DESCRIPTION
------------
+__DESCRIPTION__
 A simplified keyboard for typing Indic languages in Roman script with accents or diacritics.
+
+
 
 Supported Platforms
 -------------------

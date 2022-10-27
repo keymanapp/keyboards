@@ -1,5 +1,5 @@
 ﻿README 
-Abyssinica SIL 2.100
+Abyssinica SIL 2.000
 ====================
 
 Thank you for your interest in the Abyssinica SIL font.
@@ -13,8 +13,9 @@ Abyssinica SIL is a trademark of SIL International.
 	
 See the OFL and OFL-FAQ for details of the SIL Open Font License.
 See the FONTLOG for information on this and previous releases.
-See the AbyssinicaSILFontFeatures.pdf, or the Abyssinica SIL FAQ 
-(http://software.sil.org/abyssinica/support/faq/) 
+See the AbyssinicaSILOpenTypeFontFeatures.pdf, 
+AbyssinicaSILGraphiteFontFeatures.pdf, AbyssinicaSILTypeTunerGuide.pdf
+or the Abyssinica SIL FAQ (http://software.sil.org/abyssinica/support/faq/) 
 for frequently asked questions and their answers.
 
 

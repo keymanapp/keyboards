@@ -1,11 +1,13 @@
 Kayaw (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) 2018 - 2021 SIL International
+
+Version 1.2
 
 __DESCRIPTION__
 
-This keyboard is for the Kayaw language using Latin script. It is the traditional QWERTY keyboard with the following changes
+This keyboard is for the Kayaw (SIL) language.  It is the traditional QWERTY keyboard with the following changes
 
 ### For the Desktop Layout
 *6 is replaced by U+0302            (Combining Circumflex Accent)

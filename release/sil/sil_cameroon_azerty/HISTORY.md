@@ -1,5 +1,8 @@
 Change History
 =======================
+6.0.6
+-----------------
+* More diaeresis and style updates.
 
 6.0.8
 -----------------
@@ -18,7 +21,7 @@ Change History
 
 6.0.4 (2022-Feb-17)
 -----------------
-* Updated to use font from shared folders
+* Updates related to https://github.com/keymanapp/keyman/issues/2241 and diaeresis
 
 6.0.3 (2020-Nov)
 -----------------

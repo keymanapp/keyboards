@@ -1,11 +1,13 @@
-Bwe Karen (SIL) Keyboard
+SIL Bwe Karen Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) 2018 SIL International
+
+Version 1.0
 
 __DESCRIPTION__
 
-This keyboard is for the Bwe Karen Latin Script.  It follows the traditional QWERTY keyboard with the exception of putting diacritics in place of two letters not used.
+This keyboard is for the Bwe Karen Latin Script.  It follows the traditional QWERTY keyboard with the exception of putting diacritics in place of two letters not used 
 
 Links
 -----

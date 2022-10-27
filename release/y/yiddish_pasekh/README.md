@@ -1,9 +1,9 @@
 Yiddish Pasekh Keyboard
 =======================
 
-Copyright (C) 2002-2021 Gyula Zsigri
+Copyright (C) 2002-2019 Gyula Zsigri
 
-Version 1.9
+Version 1.8
 
 __DESCRIPTION__
 This keyboard layout is designed to type Yiddish by transliteration. This keyboard layout works best with a QWERTY (English) keyboard.
@@ -27,10 +27,3 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices

@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Malar Malayalam Inscript'
-store(&COPYRIGHT) '2019-2022 © Ramesh Kunnappully [MIT License]'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '2019 © Ramesh Kunnappully [MIT License]'
+store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'malar_malayalam_inscript.kvks'
 store(&LAYOUTFILE) 'malar_malayalam_inscript.keyman-touch-layout'
@@ -62,7 +62,6 @@ group(main) using keys
 + [K_COMMA] > ','
 + [K_PERIOD] > '.'
 + [K_SLASH] > 'യ'
-+ [K_SPACE] > ' '
 
 + [SHIFT K_BKQUOTE] > 'ഒ'
 + [SHIFT K_1] > '!'
@@ -114,7 +113,6 @@ group(main) using keys
 + [SHIFT K_COMMA] > 'ഷ' 
 + [SHIFT K_PERIOD] > '>' 
 + [SHIFT K_SLASH] > '?' 
-+ [SHIFT K_SPACE] > ' '
 
 + [RALT K_BKQUOTE] > U+0060
 + [RALT K_1] > '1'
@@ -166,7 +164,6 @@ group(main) using keys
 + [RALT K_COMMA] > ','
 + [RALT K_PERIOD] > '.'
 + [RALT K_SLASH] > '/'
-+ [RALT K_SPACE] > ' '
 
 + [SHIFT RALT K_BKQUOTE] > '~'
 + [SHIFT RALT K_1] > '!'
@@ -218,23 +215,6 @@ group(main) using keys
 + [SHIFT RALT K_COMMA] > '<'
 + [SHIFT RALT K_PERIOD] > '>'
 + [SHIFT RALT K_SLASH] > '?'
-+ [SHIFT RALT K_SPACE] > ' '
-
-+ [K_NP0] > '0'
-+ [K_NP1] > '1'
-+ [K_NP2] > '2'
-+ [K_NP3] > '3'
-+ [K_NP4] > '4'
-+ [K_NP5] > '5'
-+ [K_NP6] > '6'
-+ [K_NP7] > '7'
-+ [K_NP8] > '8'
-+ [K_NP9] > '9'
-+ [K_NPSTAR] > '*'
-+ [K_NPPLUS] > '+'
-+ [K_NPMINUS] > '-'
-+ [K_NPDOT] > '.'
-+ [K_NPSLASH] > '/'
 
 'ണ്' + [K_RBRKT] > 'ൺ'
 'ന്' + [K_RBRKT] > 'ൻ'
@@ -258,12 +238,10 @@ any(consonants) 'ൌ' + [K_Q] > index(consonants, 1) 'ൗ'
 'ം' + [K_X] > 'ഀ' 
 'ഀ' + [K_X] > 'ഁ' 
 'ഁ' + [K_X] > 'ം' 
-'ം' + [K_RBRKT] > 'ഄ'
 
 any(consonants) 'ം' + [K_X] > index(consonants, 1) 'ഀ' 
 any(consonants) 'ഀ' + [K_X] > index(consonants, 1)  'ഁ' 
 any(consonants) 'ഁ' + [K_X] > index(consonants, 1) 'ം' 
-any(consonants) 'ം' + [K_RBRKT] > index(consonants, 1) 'ഄ'
 
 '്' + [K_D] > '഻'
 '഻' + [K_D] > '഼' 
@@ -393,11 +371,6 @@ U+002D + [K_HYPHEN] > context U+002D
 
 C ZWNJ
 U+200C + [K_BKSLASH] > U+200C beep
-U+200C + U+0020 > U+0020
-U+0020 + [K_BKSLASH] > U+0020
 
-c Division & Multiplication symbol
-U+002F + [K_RBRKT] > U+00F7
-U+002A + [K_RBRKT] > U+00D7
 
 C End

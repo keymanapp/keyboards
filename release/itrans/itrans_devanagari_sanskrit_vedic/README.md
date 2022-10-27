@@ -1,7 +1,7 @@
 Vedic Sanskrit Devanagari Phonetic (ITRANS) 
 ============================
 
-© sanskritdocuments.org
+©2019 sanskritdocuments.org
 
 Description
 -----------

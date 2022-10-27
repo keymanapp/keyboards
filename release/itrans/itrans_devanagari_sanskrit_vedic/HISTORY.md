@@ -1,11 +1,6 @@
 Vedic Sanskrit Devanagari Phonetic (ITRANS) Version History
 ======================================
 
-1.2.2 (2022-07-01)
-----------------
-* Add Siddhanta font to keyboard package
-* Remove rules that will never fire because of earlier rule
-
 1.2.1 (2019-05-30)
 ----------------
 * 20190530 

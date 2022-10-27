@@ -1,7 +1,9 @@
 Latvian (Standard) Basic keyboard
 ==============
 
-© SIL International
+© 2019 SIL International
+
+Version 1.0
 
 Description
 -----------

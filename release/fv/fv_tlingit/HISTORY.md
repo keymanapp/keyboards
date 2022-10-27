@@ -1,13 +1,6 @@
 Łingít Change History
 ============================
 
-10.0 (2 Jun 2022)
-----------------
-* Added desktop layout modified from Language Geek keyboard (Tlingit-Yukon)
-* Added rules for diacritic handling
-* Added macron for k, g, x on desktop/mobile layouts
-* Updated documentation, added WELCOME file
-
 9.2 (9 May 2019)
 ----------------
 * Added .kps file

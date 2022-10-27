@@ -1,8 +1,5 @@
 # myWin Extended (SIL) Keyboard Change History
 
-# 1.4.1 (12 MAY 2022)
-* Remove extraneous KEYBOARDVERSION store 
-
 # 1.4 (6 JUL 2018)
 * Ported to GitHub
 

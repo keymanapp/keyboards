@@ -121,7 +121,7 @@ c --- END OF TOUCH LAYOUT RULES ---
 
 c constraints
 
-store(overaccent)  U+0301
+store(overaccent)  U+0301 
 store(overaccentkey) ";"
 
 any(overaccent) + any(overaccentkey) > context beep
@@ -146,7 +146,7 @@ c original punctuation
 + [RALT K_RBRKT] > ']'
 + [RALT K_LBRKT] > '['
 + [RALT shift K_EQUAL] > '+'
-+ [RALT K_HYPHEN] > '_'
++ [RALT K_HYPHEN] > '_'          
 + [RALT K_EQUAL] > '='
 
 c Guillemets
@@ -161,15 +161,15 @@ c Quotes
 + [K_BKQUOTE] > "‘"
 + [SHIFT K_6] > "’"
 
-c + [caps shift k_equal] > "ɨ"
-+ [shift k_equal] > "Ɨ"
-c + [caps k_equal] > "Ɨ"
-+ [k_equal] > "ɨ"
++ [caps shift k_equal] > "ɨ" 
++ [ncaps shift k_equal] > "Ɨ"
++ [caps k_equal] > "Ɨ"
++ [ncaps k_equal] > "ɨ" 
+                                             
++ ";" > U+0301 
 
-+ ";" > U+0301
 
-
-nomatch > use(x)
+nomatch > use(x)                            
 
 group(x) using keys
 

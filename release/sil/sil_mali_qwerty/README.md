@@ -1,7 +1,9 @@
 Clavier du Mali (Qwerty) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) 2004-2020 SIL International
+
+Version 4.0.1
 
 __DESCRIPTION__
 Unicode keyboard to type all special characters needed for the languages of Mali on a QWERTY keyboard. 

@@ -1,15 +1,6 @@
 lao_phonetic Change History
 ====================
 
-1.1.2 (2022-09-12)
-------------------
-* Add support for touch devices
-* Change ຍ usage in CLao to prevent issues with unreachable keys
-
-1.1.1 (2022-05-13)
-------------------
-* Remove duplicate NY store
-
 1.1 (2018-11-12)
 ----------------
 * Added to Keyman keyboards repository

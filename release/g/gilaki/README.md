@@ -1,7 +1,9 @@
 Gilaki keyboard
 ===============
 
-© SIL International
+© 2020 SIL International
+
+Version 1.0.1
 
 Description
 -----------

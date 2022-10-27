@@ -1,7 +1,9 @@
-Shaw Imperial keyboard
+Shavian IGC keyboard
 ==============
 
-Version 1.1
+© 2020 Shavian.info
+
+Version 1.0
 
 Description
 -----------

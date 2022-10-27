@@ -1,7 +1,9 @@
 Clavier du Mali (Azerty) Keyboard
 =====================
 
-Copyright (C) SIL Mali
+Copyright (C) 2004-2018 SIL Mali
+
+Version 3.3
 
 __DESCRIPTION__
 Unicode keyboard to type all special characters needed for the languages of Mali on an AZERTY keyboard. 
