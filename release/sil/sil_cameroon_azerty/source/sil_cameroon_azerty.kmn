@@ -8,7 +8,8 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_cameroon_azerty.kvks'
 store(&KMW_EMBEDCSS) 'sil_cameroon_azerty.css'
 store(&KMW_HELPTEXT) 'Use the Cameroon key to access special characters.'
-store(&CasedKeys) [K_A]..[K_Z] [K_0]..[K_9] [K_HYPHEN] [K_EQUAL] [K_LBRKT] [K_RBRKT] [K_BKSLASH] [K_QUOTE] [K_COMMA] [K_PERIOD] [K_SLASH] [K_COLON]
+store(&CasedKeys) [K_A]..[K_Z] [K_0]..[K_9] [K_HYPHEN] [K_EQUAL] [K_LBRKT] [K_RBRKT] [K_BKSLASH] [K_QUOTE] [K_COMMA] [K_PERIOD] [K_COLON]
+c Technically, [K_SLASH] should be in the above list, but I'm choosing not to add it to avoid confusion.  
 
 
 begin Unicode > use(main)
@@ -257,7 +258,6 @@ any(diablock) + [SHIFT RALT K_PERIOD] > context
 + [T_003A] > U+003A
 any(diablock) + [RALT K_PERIOD] > context
 
-+ [K_SLASH] > dk(0021)
 + [K_SLASH] > dk(0021)
 + [SHIFT K_SLASH] > U+00A7
 + [T_0021] > U+0021
