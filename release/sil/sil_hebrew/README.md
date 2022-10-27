@@ -1,12 +1,10 @@
 Hebrew (SIL) Keyboard
 =====================
 
-Copyright (C) 2001-2021 SIL International
-
-Version 1.8
+Copyright (C) SIL International
 
 __DESCRIPTION__
-This keyboard is designed for Biblical Hebrew.
+This keyboard is designed for Biblical Hebrew and represents the official Biblical Hebrew keyboard from SIL
 
 Supported Platforms
 -------------------

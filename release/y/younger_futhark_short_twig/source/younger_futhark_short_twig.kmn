@@ -1,0 +1,39 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Younger Futhark Short-twig'
+store(&COPYRIGHT) '© Joshua Wong'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'younger_futhark_short_twig.kvks'
+store(&LAYOUTFILE) 'younger_futhark_short_twig.keyman-touch-layout'
+store(&BITMAP) 'younger_futhark_short_twig.ico'
+store(&MESSAGE) 'This keyboard is designed for the Swedish language, using the Runic script (Younger Futhark Short-twig) with an Inscript layout.'
+
+store(nul) "ABCDEFGHIJKLMNOPQRSTUVWXYZcegjpqvwxz"
+
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_EQUAL] > 'ᛰ'
++ [K_HYPHEN] > 'ᛯ'
++ [K_BKQUOTE] > 'ᛮ'
++ [K_SLASH] > '᛭'
++ [K_PERIOD] > '᛬'
++ [K_COMMA] > '᛫'
++ [K_Y] > 'ᛧ'
++ [K_L] > 'ᛚ'
++ [K_M] > 'ᛙ'
++ [K_B] > 'ᛓ'
++ [K_T] > 'ᛐ'
++ [K_S] > 'ᛌ'
++ [K_A] > 'ᛆ'
++ [K_O] > 'ᚭ'
++ [K_I] > 'ᛁ'
++ [K_N] > 'ᚿ'
++ [K_H] > 'ᚽ'
++ [K_K] > 'ᚴ'
++ [K_R] > 'ᚱ'
++ [K_D] > 'ᚦ'
++ [K_U] > 'ᚢ'
++ [K_F] > 'ᚠ'
++ any(nul) > nul

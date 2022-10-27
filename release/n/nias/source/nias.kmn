@@ -1,0 +1,21 @@
+﻿c Click CTRL-RIGHT+o to get ö and CTRL-RIGHT+w to get ŵ. Similarly press SHIFT to get the capital letters.
+c 
+c Klik CTRL-KANAN+o untuk mengetik huruf ö dan CTRL-KANAN+w untuk huruf ŵ. Tekan tombol SHIFT+CTRL-KANAN+w atau o untuk mendapatkan huruf besar dari ŵ dan ö.
+store(&VERSION) '10.0'
+store(&NAME) 'Nias'
+store(&COPYRIGHT) '©2021 Sirus Laia'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'nias.kvks'
+store(&LAYOUTFILE) 'nias.keyman-touch-layout'
+store(&MESSAGE) 'Nias Keyboard with ö and ŵ characters'
+store(&KMW_HELPTEXT) 'readme.htm'
+store(&BITMAP) 'nias.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT RCTRL K_O] > 'Ö'
++ [RCTRL K_O] > 'ö'
++ [SHIFT RCTRL K_W] > 'Ŵ'
++ [RCTRL K_W] > 'ŵ'

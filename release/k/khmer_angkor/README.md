@@ -1,9 +1,9 @@
 Khmer Angkor keyboard
 =====================
 
-Copyright (C) 2015-2020 SIL International
+Copyright (C) 2015-2022 SIL International
 
-Version 1.0.7
+Version 1.3
 
 Description
 -----------
@@ -15,7 +15,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
- *LInux
+ * Linux
  * Web
  * Mobile Web
  * iOS

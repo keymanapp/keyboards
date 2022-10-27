@@ -1,0 +1,70 @@
+﻿c Keyboard file for Rossel language of Milne Bay Province, PNG
+c updated for windows, macos, linux, and web 2020-12-01
+c Version 1.4 with stores for dead key and smart quote U2019
+c Updated to 1.5 for mobile devices, 2022-07-28
+c uses ".." to produce A789 MODIFIER LETTER COLON
+c and 'e or ,e to produce e-acute and .e to produce e-hat and so on.
+c 2022-07-29, added = to underline next continuant for "your thing"
+c 
+c Font: Doulos SIL
+
+store(&VERSION) '14.0'
+store(&NAME) 'rossel'
+c NAME "ROSS"
+c BITMAP "Png1_Unicode.bmp"
+store(&BITMAP) 'R.bmp'
+store(&TARGETS) 'any'
+store( acute ) "," "'" U+2018 U+2019
+store( hat ) '.'
+store( your ) '='   c "Your thing" needs an initial underlined continuant
+c                     eg. your bushknife written =taa to produce underlined naa
+store(&KEYBOARDVERSION) '1.6'
+store(&MESSAGE) 'Rossel lg, Papua New Guinea'
+store(&COPYRIGHT) '© Jim Henderson 2022'
+store(&KMW_HELPTEXT) 'To add ^ over a, type .a and also for e and i. For acute over n, type ' U+0027 'n or ,n. Same for e or o. For colon for nasalization, type .. and for "your thing" type = before the word.'
+c store(&ETHNOLOGUECODE) 'yle'
+store(&LAYOUTFILE) 'rossel.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'rossel.kvks'
+
+begin Unicode > use(Umain)
+
+group (Umain) using keys
+'.' + '.' > '꞉' 	c U+A789 MODIFIER LETTER COLON to show nasalization of vowel
+c ';' + ';' > ':' 	c COLON to show nasalization of vowel
+any(acute) + 'A' > 'Á' 	c no longer used in the alphabet
+any(acute) + 'E' > 'É'
+any(acute) + 'O' > 'Ó'
+any(hat) + 'A' > 'Â'
+any(hat) + 'E' > 'Ê'
+any(hat) + 'I' > 'Î'
+
+c Shift on mobile stays on, so let's have ">" to put hat on A E I
+">" + 'A' > 'Â'
+">" + 'E' > 'Ê'
+">" + 'I' > 'Î'
+
+"<" + 'E' > 'É'
+"<" + 'O' > 'Ó'
+
+any(acute) + 'a' > 'á' 	c no longer used in the alphabet
+any(hat) + 'a' > 'â'
+any(acute) + 'e' > 'é'
+any(hat) + 'e' > 'ê'
+any(hat) + 'i' > 'î'
+any(acute) + 'o' > 'ó'
+
+c Underline a continuous letter for 'your thing'
+"=" any(acute) + 'n' > 'ń' U+0331        c "Your" macron under "n" acute for "your thing"
+'=' + 'n'            > 'n' U+0331        c macron under "n" for "your thing"
+any(acute) + 'n'     > 'ń'
+
+'=' any(acute) + 'N' > 'Ń' U+0332        c "Your" macron under "N" acute for "your thing"
+'=' + 'N'            > 'N' U+0332        c line under "N"
+any(acute) + 'N'     > 'Ń'
+
+'=' + 'm'        > 'm' U+0332           c no combined character available
+"=" + 'M'        > 'M' U+0332           c no combined character available
+"=" + 'l'        > U+1E3B               c LATIN SMALL LETTER L WITH LINE BELOW
+"=" + 'L'        > U+1E3A           c LATIN CAPITAL LETTER L WITH LINE BELOW
+c "=" + U+0143  > U+0143 U+0332     c N acute with underline
+c "=" + U+0144  > U+0144 U+0331     c n acute with macron under

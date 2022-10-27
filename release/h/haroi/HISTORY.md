@@ -1,6 +1,10 @@
 Haroi Keyboard Change History
 =======================
 
+1.2.1 (2021-07-01)
+----------------
+* Updated to use new version of Charis SIL
+
 1.2 (08 Dec 2020)
 * Add additional rules for handling combining overline
 

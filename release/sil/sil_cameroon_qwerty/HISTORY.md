@@ -3,6 +3,7 @@ Change History
 
 6.0.6 (2021-May)
 * Minor CSS Tweaks
+* Updated to use font from shared folders
 
 6.0.5 (2020-Nov)
 -----------------

@@ -1,0 +1,141 @@
+﻿c Lao Unicode keyboard for Tavultesoft Keyman 10.0 including Lao Pali characters.
+store(&VERSION) '10.0'
+store(&NAME) 'Lao Pali'
+store(&HOTKEY) '[CTRL SHIFT K_P]'
+store(&BITMAP) 'lao_pali.ico'
+store(&COPYRIGHT) '© 2021 John Durdin'
+store(&KEYBOARDVERSION) '1.0'
+store(&capsalwaysoff) "1"
+store(&MESSAGE) 'Lao keyboard mapping for Pali Lao.'
+store(&VISUALKEYBOARD) 'lao_pali.kvks'
+store(&LAYOUTFILE) 'lao_pali.keyman-touch-layout'
+store(&TARGETS) 'any'
+
+begin Unicode > use(Start)
+
+c Define sets of characters for matching and filtering: basic consonant sets
+c (Composites and extra characters will be handled by specific rules)
+store(Consonant)  "ກຂຄງຈສຊຍດຕຖທນບປຜຝພຟມຢຣລວຫອຮໝໜ" U+0EBC
+store(ConsonantKey) "d07'9l-pf84mo[xz/r2,1I];svi<O^"
+
+c Full vowel character set, and subsets used to define constraints (prefix, suffix, superscript/subscript vowel sets)
+store(Vowel) "ເແໂໄໃ" "ະຽາ" U+0ECD U+0EB3 U+0EB1 U+0EBB U+0EB4 \
+         U+0EB5 U+0EB6 U+0EB7 U+0EB8 U+0EB9
+store(VowelKey) "gc3w." "tPk" "=eaqyubn56"
+store(VScript) U+0ECD U+0EB3 U+0EB1 U+0EBB U+0EB4 U+0EB5 U+0EB6 U+0EB7 U+0EB8 U+0EB9
+store(VScriptKey) "=eaqyubn56"
+store(VPrefix)  "ເແໂໄໃ"
+store(VPrefixKey) "gc3w."
+store(VSuffix) "ະຽາ"
+store(VSuffixKey) "tPk"
+
+c Tone marks
+store(Tone) U+0EC8 U+0EC9 U+0ECA U+0ECB U+0ECC
+store(ToneKey) "jhHJ%"
+
+c Special (abbreviation), numeric,and punctuation characters and keyboard equivalents
+store(Sign)  "ໆຯ"
+store(SignKey) "MC"
+
+store(Numeral) "1234567890/*-+."
+store(LaoNumeral) "໑໒໓໔໕໖໗໘໙໐"
+store(NumeralKey) "!@#$&*()_W"
+store(AltNumeralKey) [RALT K_1][RALT K_2][RALT K_3][RALT K_4][RALT K_5] \
+                     [RALT K_6][RALT K_7][RALT K_8][RALT K_9][RALT K_0]
+
+store(NumberPadKey) [K_NP1] [K_NP2] [K_NP3] [K_NP4] [K_NP5] \
+           [K_NP6] [K_NP7] [K_NP8] [K_NP9] [K_NP0] \
+           [K_NPSLASH] [K_NPSTAR] [K_NPMINUS] [K_NPPLUS] [K_NPDOT]
+
+store(AltUnused) [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_BKSLASH] [RALT K_A] \
+            [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H] [RALT K_J] \
+            [RALT K_K] [RALT K_L] [RALT K_COLON] [RALT K_QUOTE] [RALT K_Z] \
+            [RALT K_X] [RALT K_V] [RALT K_B] [RALT K_N] [RALT K_PERIOD]
+
+store(Punctuation)    '"' ";.,:!?()'-"
+store(PunctuationKey) "`" "SDFGKLX?~+"
+
+c Number pad virtual key conversions - always return digits or mathematical symbols - modified keys must be processed first
+group(Start) using keys
+ + any(NumberPadKey) > index(Numeral,1)
+
+ + [RALT K_BKQUOTE] > '₭'
+ + any(AltNumeralKey) > index(Numeral,1)
+ + [RALT K_HYPHEN]  > '$'
+ + [RALT K_EQUAL]   > '€'
+
+ + [RALT K_Q]   > '+'
+ + [RALT K_W]   > '*'
+ + [RALT K_E]   > '/'
+ + [RALT K_R]   > '='
+ + [RALT K_T]   > '<'
+ + [RALT K_Y]   > '>'
+ + [RALT K_U]   > '{'
+ + [RALT K_I]   > '}'
+ + [RALT K_O]   > '['
+ + [RALT K_P]   > ']'
+ 
+c Pali extensions, likely to be added to Unicode (Jayasaro Bhikku) 
+ + [RALT K_C]     > U+0ECE c Pali Lao Yamakkan 
+ + [RALT K_M]     > U+0E83 c corresponds to Thai U+0E03
+ + [RALT K_COMMA] > U+0E85 c corresponds to Thai U+0E05
+ + [RALT K_SLASH] > U+035C c combining breve below, used in Pali texts
+
+c Trap and ignore other RALT keys to prevent accidental menu actions
+ + any(AltUnused) > beep
+
+nomatch > use(Main)
+
+c Mapping rules and simple constraints
+group(Main) using keys
+
+c Re-order tone after sala -am
+ U+0EB3 + any(ToneKey) > index(Tone,2) context
+
+c Constraints to avoid duplicated superscripts, etc.
+ any(Tone) + "e" > context U+0EB3   c override constraint in this case
+ any(Tone) + any(ToneKey) > context beep
+ any(Tone) + any(VScriptKey) > context beep
+ any(VPrefix) + any(VPrefixKey) > context beep
+ any(VPrefix) + any(ToneKey) > context beep
+ any(VSuffix) + any(ToneKey) > context beep
+ any(Vowel) + any(VScriptKey) > context beep
+ any(VScript)  + any(VScriptKey) > context beep
+ any(Sign) + any(ToneKey) > context beep
+ any(Sign) + any(VScriptKey) > context beep
+ any(Sign) + any(VSuffixKey) > context beep
+
+ U+0EB0 + "t" > context beep
+ U+0EB0 + "k" > context beep
+ U+0EB2 + "k" > context beep
+
+c Key lookup rules
++ any(ConsonantKey) > index(Consonant,1)
++ any(VowelKey) > index(Vowel,1)
++ any(ToneKey) > index(Tone,1)
++ any(SignKey) > index(Sign,1)
++ any(PunctuationKey) > index(Punctuation,1)
++ any(NumeralKey) > index(LaoNumeral,1)
+
+c Digraph HL
++ "}" > U+0EAB U+0EBC
+
+c Pali Lao characters
++ "Q" > U+0E86  c Pali GHA
++ "E" > U+0EAC  c Pali LLA
++ "R" > U+0E89  c Pali CHA
++ "T" > U+0E8C  c Pali JHA
++ "Y" > U+0E8E  c Pali NYA
++ "U" > U+0E8F  c Pali TTA
++ "{" > U+0E90  c Pali TTHA
++ "A" > U+0E91  c Pali DDA
++ ":" > U+0EA8  c Sanskrit SSA
++ '"' > U+0EA9  c Sanskrit SSA
++ "Z" > U+0E92  c Pali DDHA
++ "V" > U+0E98  c Pali DHA
++ "B" > U+0EA0  c Pali BHA
++ "N" > U+0E93  c Pali NNA 
++ ">" > U+0EBA  c Pali VIRAMA
+
++ "\" > "/"     c slash
++ "|" > U+200B	c ZWSP insertion

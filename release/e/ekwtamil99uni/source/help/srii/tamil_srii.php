@@ -32,7 +32,7 @@ This character is not displayed correctly by all browsers.</p>
 <p>
 Phonetic keyboards (based on the English keyboard layout) usually use a combination such as <span class='keys'>Sri</span> or <span class='keys'>Shri</span> to enter this character.  It is worth trying every keystroke combination that your Tamil keyboard supports, as some browsers will recognise only one of these combinations.  Some browsers do not yet support either.</p>
 
-<p>Non-phonetic keyboards use different keys or combinations of keys, but again they are limited by whether the browser recognises these.  It may be possible to enter the character by changing to a phonetic keyboard such as <a href='../../../keyboard_ekwunitamil/'>Anjal Paangu</a>.</p>
+<p>Non-phonetic keyboards use different keys or combinations of keys, but again they are limited by whether the browser recognises these.  It may be possible to enter the character by changing to a phonetic keyboard such as <a href='../../../thamizha_anjal_paangu/'>Anjal Paangu</a>.</p>
 
 <p>If the latest version of your browser does not display the character correctly when you type, please try again using the latest version of another browser.
 </p>

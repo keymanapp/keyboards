@@ -1,12 +1,9 @@
-﻿store(&Version) "9.0"
+﻿store(&Version) "10.0"
 store(&NAME) 'Swanalekha Malayalam'
-store(&WINDOWSLANGUAGES) 'x044C'
-store(&ETHNOLOGUECODE) 'mal'
-store(&LANGUAGE) 'x044C'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '2019 © Ramesh Kunnappully [MIT License]'
+store(&COPYRIGHT) ' © 2019-2022 Ramesh Kunnappully [MIT License]'
 store(&BITMAP) 'swanalekha_malayalam.ico'
-store(&KEYBOARDVERSION) '1.2.4'
+store(&KEYBOARDVERSION) '1.2.6'
 store(&MESSAGE) 'Swanalekha Malayalam Keyboard is based on Swanalekha, a transliteration based Malayalam input method developed by Santhosh Thottingal. Visit: https://swanalekha.smc.org.in'
 store(&VISUALKEYBOARD) 'swanalekha_malayalam.kvks'
 store(&LAYOUTFILE) 'swanalekha_malayalam.keyman-touch-layout'
@@ -14,6 +11,8 @@ begin Unicode > use(main)
 group(main) using keys
 +"_"> U+200C
 " "+"_"> U+200C
+U+200C + "_" > U+200C
+U+200C + " " > " "
 +"@">"@"
 "@"+"0">"൦"
 "@"+"1">"൧"
@@ -54,11 +53,16 @@ group(main) using keys
 "ൊ"+"u">"ൌ"
 "@"+"O">"ോ"
 "@"+"R">"ൃ"
+"ൃ്"+"^">"ൄ"
+"@ഋ"+"^">"ൄ"
 "@"+"u">"ു"
 "ു"+"u">"ൂ"
 "@"+"U">"ൂ"
 +"^">"്"
 +"~"> U+200D
+" "+"~"> U+200D
+U+200D + "~" > U+200D
+U+200D + " " > " "
 +"a">"അ"
 "അ"+"a">"ആ"
 "അ"+"e">"ഏ"
@@ -242,6 +246,7 @@ group(main) using keys
 "ദ്"+"R">"ദൃ"
 "ദ്"+"u">"ദു"
 "ദു"+"u">"ദൂ"
+"ദു"+"3">"ദുഃ"
 "ദ്"+"U">"ദൂ"
 +"D">"ഡ്"
 "ഡ്"+"^">"ഡ്"
@@ -567,7 +572,7 @@ group(main) using keys
 "മ്"+",">"ം,"
 "മ്"+"?">"ം?"
 "മ്"+".">"ം."
-"മ്"+"^">"മ്"
+"മ്"+"^">"മ്" deadkey(9)
 "മ്"+"~">"ം"
 "മ്"+"2">"ം"
 "മ്"+"a">"മ"
@@ -817,8 +822,9 @@ group(main) using keys
 "ണെ"+"e">"ണീ"
 "ണെ"+"i">"ണൈ"
 "ണ്"+"E">"ണേ"
-"ണ്"+"g">"Ng"
-"Ng"+"a">"ങ"
+"ണ്"+"g">"ങ്"
+"ങ്"+"^">"ങ്"
+"ങ്"+"a">"ങ"
 "ങ"+"a">"ങാ"
 "ങ"+"H">"ങഃ"
 "ങ"+"i">"ങൈ"

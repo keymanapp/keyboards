@@ -1,7 +1,7 @@
 ﻿Cameroon QWERTY keyboard
 =====================
 
-Copyright (C) 2018-2021 SIL Cameroon
+Copyright (C) SIL Cameroon
 
 Version 6.0.6
 

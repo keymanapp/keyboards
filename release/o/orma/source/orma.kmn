@@ -1,0 +1,30 @@
+﻿store(&VERSION) '15.0'
+store(base) 'nNcCaAeEiIoOuUdDkKpPtT' 
+store(mod) U+00F1 U+00D1 U+00E7 U+00C7 U+0101 U+0100 U+0113 U+0112 U+012B U+012A U+014D U+014C U+016B U+016A U+0257 U+018A U+0199 U+0198 U+01A5 U+01A4 U+01AB U+01AC
+store(&TARGETS) 'any mobile'
+store(&LAYOUTFILE) 'orma.keyman-touch-layout'
+store(&BITMAP) 'orma.ico'
+store(&NAME) 'Orma'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'orma.kvks'
+begin Unicode > use(main)
+
+group(main) using keys
+';' + any(base) > index(mod,2)
++ "'" > U+A78C
+
+
+ c open and close quotes, double and single
++ '<' > U+2018             
+U+2018 + '<' > U+201C    
++ '>' > U+2019
+U+2019 + '>' > U+201D   
+
+c greater than, less than  
+'|' + '>' > '>'
+'|' + '<' > '<'
+
+c c cedilla with hook, lowercase and uppercase
+'[' + 'c' > U+0188 U+0327 
+'[' + 'C' > U+0187 U+0327 
+

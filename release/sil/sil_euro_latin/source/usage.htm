@@ -80,7 +80,8 @@ window.onload = function() {
       for(var j = 0; j < sc.length; j++)
       {
 		var chvo = so.charAt(j), chvc = sc.charAt(j), chvp = sp.charAt(j);
-		/* Special case for characters p umlaut, g tilde because they aren't precomposed */
+		/* Special case for characters n umlaut, p umlaut, g tilde because they aren't precomposed */
+		if(sxv == ':' && chvo == 'n') { chvo = 'n̈'; chvp = 'N̈'; }
 		if(sxv == ':' && chvo == 'p') { chvo = 'p̈'; chvp = 'P̈'; }
 		if(sxv == '~' && chvo == 'g') { chvo = 'g̃'; chvp = 'G̃'; }
         sx += '<th>'+sxv+chvc+'</th>';
@@ -165,7 +166,7 @@ window.onload = function() {
   <td x="~" c="aegilnouvy" o="ãẽgĩɫñõũṽỹ" p="ÃẼGĨⱢÑÕŨṼỸ">˜</td>
   <td x="-" c="abdeghijlortuyz" o="āƀđēḡħīɉłōɍŧūȳƶ" p="ĀɃĐĒḠĦĪɈŁŌɌŦŪȲƵ">ˉ</td>
   <td x='_' c="bdhklnrtxz" o="ḇḏẖḵḻṉṟṯxẕ" p="ḆḎ ḴḺṈṞṮXẔ">&nbsp;̱</td>
-  <td x=":" c="aehioptuwxy" o="äëḧïöpẗüẅẍÿ" p="ÄËḦÏÖP ÜẄẌŸ">¨</td>
+  <td x=":" c="aehinoptuwxy" o="äëḧïnöpẗüẅẍÿ" p="ÄËḦÏNÖP ÜẄẌŸ">¨</td>
   <td x="@" c="auwy" o="åůẘẙ" p="ÅŮ  ">˚</td>
   <td x="." c="abcdefghijlmnoprstwxyz" o="ȧḃċḋėḟġḣıȷŀṁṅȯṗṙṡṫẇẋẏż" p="ȦḂĊḊĖḞĠḢİ ĿṀṄȮṖṘṠṪẆẊẎŻ">˙</td>
   <td x="|" c="abdehiklmnorstuvwyz" o="ạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓ" p="ẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒ">.</td>
@@ -246,7 +247,7 @@ window.onload = function() {
 
 <tr class='key'>
   <th class='title' rowspan='3'>Digraphs</th>
-  <th class='prompt'>Type</th><th>a\e</th><th>c\h</th><th colspan='2'>d\z</th><th>f\i</th><th>f\l</th><th>i\j</th><th colspan='2'>l\j</th><th colspan='2'>n\j</th><th>o\e</th><th>o\i</th></tr>
+  <th class='prompt'>Type</th><th>a\e</th><th colspan='2'>c\h</th><th colspan='2'>d\z</th><th>f\i</th><th>f\l</th><th>i\j</th><th colspan='2'>l\j</th><th colspan='2'>n\j</th><th>o\e</th><th>o\i</th></tr>
 <tr class='out'>
   <th class='prompt'>Result</th>
   <td>æ</td>

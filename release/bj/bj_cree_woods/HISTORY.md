@@ -1,6 +1,10 @@
 Western Cree (TH-Woods) Change History
 ====================
 
+1.3 (12 Aug 2022)
+-------------------
+* Convert keyboard to produce composed characters with decomposed available through options
+
 1.2 (2021-01-08)
 -----------------
 * add rules for R and L to output the same characters as r and l

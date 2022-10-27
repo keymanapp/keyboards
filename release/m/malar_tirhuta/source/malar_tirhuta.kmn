@@ -1,0 +1,256 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Malar Tirhuta'
+store(&COPYRIGHT) '© 2022 Ramesh Kunnappully'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'malar_tirhuta.kvks'
+store(&LAYOUTFILE) 'malar_tirhuta.keyman-touch-layout'
+store(&MESSAGE) 'Malar Tirhuta Keyboard is a transliteration based Unicode input method for Tirhuta script.'
+
+begin Unicode > use(main)
+
+store(Consonants)   U+1148F U+11490 U+11491 U+11492 U+11493 \
+                    U+11494 U+11495 U+11496 U+11497 U+11498 \
+                    U+11499 U+1149A U+1149B U+1149C U+1149D \
+                    U+1149E U+1149F U+114A0 U+114A1 U+114A2 \
+                    U+114A3 U+114A4 U+114A5 U+114A6 U+114A7 \
+                    U+114A8 U+114A9 U+114AA U+114AB U+114AC \
+                    U+114AD U+114AE U+114AF
+
+store(TNum)         U+114D0 U+114D1 U+114D2 U+114D3 U+114D4 \ 
+                    U+114D5 U+114D6 U+114D7 U+114D8 U+114D9
+
+store(ANum)         U+0030 U+0031 U+0032 U+0033 U+0034 \
+                    U+0035 U+0036 U+0037 U+0038 U+0039
+
+store(NumKey1)      [K_0] [K_1] [K_2] [K_3] [K_4] \
+                    [K_5] [K_6] [K_7] [K_8] [K_9]
+
+store(NumKey2)      [K_NP0] [K_NP1] [K_NP2] [K_NP3] [K_NP4] \
+                    [K_NP5] [K_NP6] [K_NP7] [K_NP8] [K_NP0]
+
+group(main) using keys
+
++ [K_A] > U+11481                           c - VOWEL LETTER A
+U+11481 + [K_A] > U+11482                   c - VOWEL LETTER AA
++ [SHIFT K_A] > U+11482                     c - VOWEL LETTER AA
+U+11482 + [K_BKSLASH] > U+114B0             c - VOWEL SIGN AA
++ [K_I] > U+11483                           c - VOWEL LETTER I
+U+11483 + [K_BKSLASH] > U+114B1             c - VOWEL SIGN I
+U+11483 + [K_I] > U+11484                   c - VOWEL LETTER II
++ [SHIFT K_I] > U+11484                     c - VOWEL LETTER II
+U+1148B + [K_E] > U+11484                   c - VOWEL LETTER II
+U+11484 + [K_BKSLASH] > U+114B2             c - VOWEL SIGN II
++[K_U] > U+11485                            c - VOWEL LETTER U
+U+11485 + [K_BKSLASH] > U+114B3             c - VOWEL SIGN U
+U+11485 + [K_U] > U+11486                   c - VOWEL LETTER UU
++ [SHIFT K_U] > U+11486                     c - VOWEL LETTER UU
+U+1148D + [K_O] > U+11486                   c - VOWEL LETTER UU
+U+11486 + [K_BKSLASH] > U+114B4             c - VOWEL SIGN UU
++ [SHIFT K_R] > U+11487                     c - VOWEL LETTER VOCALIC R
+U+11487 + [K_BKSLASH] > U+114B5             c - VOWEL SIGN VOCALIC R
+U+11487 + [SHIFT K_R] > U+11488             c - VOWEL LETTER VOCALIC RR
+U+11488 + [K_BKSLASH] > U+114B6             c - VOWEL SIGN VOCALIC RR
++ [SHIFT K_L] > U+11489                     c - VOWEL LETTER VOCALIC L
+U+11489 + [K_BKSLASH] > U+114B7             c - VOWEL SIGN VOCALIC L
+U+11489 + [SHIFT K_L] > U+1148A             c - VOWEL LETTER VOCALIC LL
+U+1148A + [K_BKSLASH] > U+114B8             c - VOWEL SIGN VOCALIC LL
++ [K_E] > U+1148B                           c - VOWEL LETTER E
+U+1148B + [K_BKSLASH] > U+114B9             c - VOWEL SIGN E
+U+114B9 + [K_BKSLASH] > U+114BA             c - VOWEL SIGN SHORT E
+U+11481 + [K_I] > U+1148C                   c - VOWEL LETTER AI
+U+1148B + [K_I] > U+1148C                   c - VOWEL LETTER AI
+U+1148C + [K_BKSLASH] > U+114BB             c - VOWEL SIGN EI 
++ [K_O] > U+1148D                           c - VOWEL LETTER O
+U+1148D + [K_BKSLASH] > U+114BC             c - VOWEL SIGN O
+U+114BC + [K_BKSLASH] > U+114BD             c - VOWEL SIGN SHORT O
+U+11481 + [K_U] > U+1148E                   c - VOWEL LETTER AU
+U+1148D + [K_U] > U+1148E                   c - VOWEL LETTER AU
+U+1148E + [K_BKSLASH] > U+114BE             c - VOWEL SIGN AU
+
++ [K_K] > U+1148F U+114C2                   c - CONSONANT LETTER KA + VIRAMA SIGN
+U+1148F U+114C2 + [K_H] > U+11490 U+114C2   c - CONSONANT LETTER KHA + VIRAMA SIGN
++ [SHIFT K_K] > U+11490 U+114C2             c - CONSONANT LETTER KHA + VIRAMA SIGN
++ [K_G]  > U+11491 U+114C2                  c - CONSONANT LETTER GA + VIRAMA SIGN
+U+11491 U+114C2 + [K_H] > U+11492 U+114C2   c - CONSONANT LETTER GHA + VIRAMA SIGN
++ [SHIFT K_G] > U+11492 U+114C2             c - CONSONANT LETTER GHA + VIRAMA SIGN
+U+114A2 U+114C2 + [K_G] > U+11493 U+114C2   c - CONSONANT LETTER NGA + VIRAMA SIGN
+dk(c1) + [K_H] > U+11494 U+114C2            c - CONSONANT LETTER CA + VIRAMA SIGN
+U+11494 U+114C2 + [K_H] > U+11495 U+114C2   c - CONSONANT LETTER CHA + VIRAMA SIGN
+dk(c2) + [K_H] > U+11495 U+114C2            c - CONSONANT LETTER CHA + VIRAMA SIGN
++ [K_J] > U+11496 U+114C2                   c - CONSONANT LETTER JA + VIRAMA SIGN
+U+11496 U+114C2 + [K_H] > U+11497 U+114C2   c - CONSONANT LETTER JHA + VIRAMA SIGN
++ [SHIFT K_J] > U+11497 U+114C2             c - CONSONANT LETTER JHA + VIRAMA SIGN
+U+114A2 U+114C2 + [K_J] > U+11498 U+114C2   c - CONSONANT LETTER NYA + VIRAMA SIGN
++ [K_T] > U+11499 U+114C2                   c - CONSONANT LETTER TTA + VIRAMA SIGN
++ [SHIFT K_T] > U+1149A U+114C2             c - CONSONANT LETTER TTHA + VIRAMA SIGN
++ [SHIFT K_D] > U+1149B U+114C2             c - CONSONANT LETTER DDA + VIRAMA SIGN
+U+1149B U+114C2 + [K_H] > U+1149C U+114C2   c - CONSONANT LETTER DDHA + VIRAMA SIGN
++ [SHIFT K_N] > U+1149D U+114C2             c - CONSONANT LETTER NNA + VIRAMA SIGN
+U+11499 U+114C2 + [K_H] > U+1149E U+114C2   c - CONSONANT LETTER TA + VIRAMA SIGN
+U+1149A U+114C2 + [K_H] > U+1149F U+114C2   c - CONSONANT LETTER THA + VIRAMA SIGN
++ [K_D] > U+114A0 U+114C2                   c - CONSONANT LETTER DA + VIRAMA SIGN
+U+114A0 U+114C2 + [K_H] > U+114A1 U+114C2   c - CONSONANT LETTER DHA + VIRAMA SIGN
++ [K_N] > U+114A2 U+114C2                   c - CONSONANT LETTER NA + VIRAMA SIGN
++ [K_P] > U+114A3 U+114C2                   c - CONSONANT LETTER PA + VIRAMA SIGN
++ [K_F] > U+114A4 U+114C2                   c - CONSONANT LETTER PHA + VIRAMA SIGN
++ [K_B] > U+114A5 U+114C2                   c - CONSONANT LETTER BA + VIRAMA SIGN
+U+114A5 U+114C2 + [K_H] > U+114A6 U+114C2   c - CONSONANT LETTER BHA + VIRAMA SIGN
++ [K_M] > U+114A7 U+114C2                   c - CONSONANT LETTER MA + VIRAMA SIGN
++ [K_Y] > U+114A8 U+114C2                   c - CONSONANT LETTER YA + VIRAMA SIGN
++ [K_R] > U+114A9 U+114C2                   c - CONSONANT LETTER RA + VIRAMA SIGN
++ [K_L] > U+114AA U+114C2                   c - CONSONANT LETTER LA + VIRAMA SIGN
++ [K_V] > U+114AB U+114C2                   c - CONSONANT LETTER VA + VIRAMA SIGN
++ [K_W] > U+114AB U+114C2                   c - CONSONANT LETTER VA + VIRAMA SIGN
++ [SHIFT K_S] > U+114AC U+114C2             c - CONSONANT LETTER SHA + VIRAMA SIGN
++ [K_Z] > U+114AC U+114C2                   c - CONSONANT LETTER SHA + VIRAMA SIGN
+U+114AE U+114C2 + [K_H] > U+114AD U+114C2   c - CONSONANT LETTER SSA + VIRAMA SIGN
++ [K_S] > U+114AE U+114C2                   c - CONSONANT LETTER SA + VIRAMA SIGN
++ [K_H] > U+114AF U+114C2                   c - CONSONANT LETTER HA + VIRAMA SIGN
+
++ [SHIFT K_BKQUOTE] > U+11480               c - TIRHUTA ANJI
++ [SHIFT K_M] > U+114C0                     c - TIRHUTA SIGN ANUSVARA
+U+114C0 + [SHIFT K_M] > U+114BF             c - TIRHUTA SIGN CANDRABINDU
++ [SHIFT K_H] > U+114C1                     c - TIRHUTA SIGN VISARGA
++ [K_BKQUOTE] > U+114C2                     c - VIRAMA SIGN
++ [SHIFT K_COMMA] > U+114C3                 c - TIRHUTA SIGN NUKTA
+dk(x) + [K_A] > U+114C4                     c - TIRHUTA SIGN AVAGRAHA
+dk(x) + [SHIFT K_M] > U+114C5               c - TIRHUTA GVANG
++ [SHIFT K_PERIOD] > U+114C6                c - TIRHUTA ABBREVIATION SIGN
+dk(o) + [SHIFT K_M] > U+114C7               c - TIRHUTA OM
+
+c - Consonant + Sign
+any(Consonants) U+114C2 + [K_A] > index(Consonants,1)
+any(Consonants) U+114C2 + [SHIFT K_A] > index(Consonants,1) U+114B0
+any(Consonants) + [K_A] > index(Consonants,1) U+114B0
+any(Consonants) U+114C2 + [K_I] > index(Consonants,1) U+114B1
+any(Consonants) U+114C2 + [SHIFT K_I] > index(Consonants,1) U+114B2
+any(Consonants) U+114B1 + [K_I] > index(Consonants,1) U+114B2
+any(Consonants) U+114B9 + [K_E] > index(Consonants,1) U+114B2
+any(Consonants) U+114C2 + [K_U] > index(Consonants,1) U+114B3
+any(Consonants) U+114C2 + [SHIFT K_U] > index(Consonants,1) U+114B4
+any(Consonants) U+114B3 + [K_U] > index(Consonants,1) U+114B4
+any(Consonants) U+114BC + [K_O] > index(Consonants,1) U+114B4
+any(Consonants) U+114C2 + [SHIFT K_R] > index(Consonants,1) U+114B5
+any(Consonants) U+114B5 + [SHIFT K_R] > index(Consonants,1) U+114B6
+any(Consonants) U+114C2 + [K_E] > index(Consonants,1) U+114B9
+any(Consonants) + [K_I] > index(Consonants,1) U+114BB
+any(Consonants) U+114B9 + [K_I] > index(Consonants,1) U+114BB
+any(Consonants) U+114C2 + [K_O] > index(Consonants,1) U+114BC
+any(Consonants) + [K_U] > index(Consonants,1) U+114BE
+any(Consonants) U+114BC + [K_U] > index(Consonants,1) U+114BE
+any(Consonants) U+114C2 + [SHIFT K_L] > index(Consonants,1) U+114B7
+any(Consonants) U+114B7 + [SHIFT K_L] > index(Consonants,1) U+114B8
+any(Consonants) U+114B9 + [K_BKSLASH] > index(Consonants,1) U+114BA
+any(Consonants) U+114BC + [K_BKSLASH] > index(Consonants,1) U+114BD
+any(Consonants) + [SHIFT K_M] > index(Consonants,1) U+114C0
+any(Consonants) U+114C0 + [SHIFT K_M] > index(Consonants,1) U+114BF
+any(Consonants) + [SHIFT K_H] > index(Consonants,1) U+114C1
+any(Consonants) + [K_BKQUOTE] > index(Consonants,1) U+114C2
+any(Consonants) dk(x) + [K_PERIOD] > index(Consonants,1) U+114C3
+any(Consonants) dk(x) + [K_COMMA] > index(Consonants,1)  U+114C6
+
+c - ZWNJ
++[SHIFT K_BKSLASH] > U+200C
+U+200C + [SHIFT K_BKSLASH] > U+200C
+U+200C + U+0020 > U+0020
+U+0020 + [SHIFT K_BKSLASH] > U+0020
+
+c - ZWJ
++[SHIFT K_6] > U+200D
+U+200D + [SHIFT K_6] > U+200D
+U+200D + U+0020 > U+0020
+U+0020 + [SHIFT K_6] > U+0020
+
+c - Additional
+dk(x) + [SHIFT K_H] > U+1CF2		                    c - VEDIC SIGN ARDHAVISARGA
+U+005F + [K_BKSLASH] > U+0951		                    c - DEVANAGARI STRESS SIGN UDATTA
+U+005F U+005F + [K_BKSLASH] > U+0952		            c - DEVANAGARI STRESS SIGN ANUDATTA
++ [K_LBRKT] > U+0964		                            c - DEVANAGARI DANDA
++ [K_RBRKT] > U+0965		                            c - DEVANAGARI DOUBLE DANDA
+U+114D1 U+002F + [K_BKSLASH] > U+09F4		            c - BENGALI CURRENCY NUMERATOR ONE
+U+114D2 U+002F + [K_BKSLASH] > U+09F5		            c - BENGALI CURRENCY NUMERATOR TWO
+U+114D3 U+002F + [K_BKSLASH] > U+09F6		            c - BENGALI CURRENCY NUMERATOR THREE
+U+114D4 U+002F + [K_BKSLASH] > U+09F7		            c - BENGALI CURRENCY NUMERATOR FOUR
+U+114D1 U+002F U+114D4 + [K_BKSLASH] > U+A830		    c - NORTH INDIC FRACTION ONE QUARTER
+U+114D1 U+002F U+114D2 + [K_BKSLASH] > U+A831		    c - NORTH INDIC FRACTION ONE HALF
+U+114D3 U+002F U+114D4 + [K_BKSLASH] > U+A832		    c - NORTH INDIC FRACTION THREE QUARTERS
+U+114D1 U+002F U+114D1 U+114D6 + [K_BKSLASH] > U+A833   c - NORTH INDIC FRACTION ONE SIXTEENTH
+U+114D1 U+002F U+114D8 + [K_BKSLASH] > U+A834		    c - NORTH INDIC FRACTION ONE EIGHTH
+U+114D3 U+002F U+114D1 U+114D6 + [K_BKSLASH] > U+A835   c - NORTH INDIC FRACTION THREE SIXTEENTHS
+U+007B + [K_BKSLASH] > U+A836		                    c - NORTH INDIC QUARTER MARK
+U+007D + [K_BKSLASH] > U+A837		                    c - NORTH INDIC PLACEHOLDER MARK
+U+003F + [K_BKSLASH] > U+A838		                    c - NORTH INDIC RUPEE MARK
+U+A838 + [K_BKSLASH] > U+A839		                    c - NORTH INDIC QUANTITY MARK
+
+c - Dead Keys
++ [K_C] > dk(c1)                             
++ [SHIFT K_C] > dk(c2)
++ [SHIFT K_O] > dk(o)
++ [K_X] > dk(x)
++ [SHIFT K_X] > dk(x)
++ [K_Q] > dk(q)
++ [SHIFT K_Q] > dk(q)
+
+c - Signs
+dk(x) + [K_BKQUOTE] > U+0060
+dk(x) + [SHIFT K_BKQUOTE] > U+007E
+dk(x) + [SHIFT K_4] > U+0024
+dk(x) + [SHIFT K_6] > U+005E
+dk(x) + [SHIFT K_BKSLASH] > U+007C      
+dk(x) + [K_LBRKT] > U+005B
+dk(x) + [K_RBRKT] > U+005D
+dk(x) + [SHIFT K_COMMA] > U+003C
+dk(x) + [SHIFT K_PERIOD] > U+003E
+
+c - Digits
++ any(NumKey1) > index(TNum,1)
+dk(x) + any(NumKey1) > index(ANum,2)
+any(ANum) + any(NumKey1) > context index(ANum,2)
+
+c - Other Keys
++ [K_HYPHEN] > U+002D
++ [K_EQUAL] > U+003D
++ [K_BKSLASH] > U+005C
++ [K_COLON] > U+003B
++ [K_QUOTE] > U+0027
++ [K_COMMA] > U+002C
++ [K_PERIOD] > U+002E
++ [K_SLASH] > U+002F
++ [K_SPACE] > U+0020
+
++ [SHIFT K_1] > U+0021
++ [SHIFT K_2] > U+0040
++ [SHIFT K_3] > U+0023
++ [SHIFT K_4] > U+20B9
++ [SHIFT K_5] > U+0025
++ [SHIFT K_7] > U+0026
++ [SHIFT K_8] > U+002A
++ [SHIFT K_9] > U+0028
++ [SHIFT K_0] > U+0029
++ [SHIFT K_HYPHEN] > U+005F
++ [SHIFT K_EQUAL] > U+002B
++ [SHIFT K_LBRKT] > U+007B
++ [SHIFT K_RBRKT] > U+007D
++ [SHIFT K_COLON] > U+003A 
++ [SHIFT K_QUOTE] > U+0022
++ [SHIFT K_SLASH] > U+003F 
++ [SHIFT K_SPACE] > U+0020
++ [SHIFT K_W] > Nul
++ [SHIFT K_E] > Nul
++ [SHIFT K_Y] > Nul
++ [SHIFT K_P] > Nul
++ [SHIFT K_F] > Nul
++ [SHIFT K_Z] > Nul
++ [SHIFT K_V] > Nul
++ [SHIFT K_B] > Nul
+
+c - Numeric Keypad
++ any(NumKey2) > index(ANum,1)
++ [K_NPSTAR] > U+002A
++ [K_NPPLUS] > U+002B
++ [K_NPMINUS] > U+002D
++ [K_NPDOT] > U+002E
++ [K_NPSLASH] > U+002F
+
+c - End

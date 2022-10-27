@@ -1,18 +1,48 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
-# Define terminal colours
+# Define terminal colours; we default to -no-color
 #
 
-if [ -t 2 ]; then
-  t_red=$'\e[1;31m'
-  t_grn=$'\e[1;32m'
-  t_yel=$'\e[1;33m'
-  t_blu=$'\e[1;34m'
-  t_mag=$'\e[1;35m'
-  t_cyn=$'\e[1;36m'
-  t_end=$'\e[0m'
-fi
+t_red=
+t_grn=
+t_yel=
+t_blu=
+t_mag=
+t_cyn=
+t_end=
+
+#
+# util_set_log_color_mode mode
+#
+#    mode: -no-color -- disable all color
+#          -color    -- force color mode on regardless of term settings
+#          (empty)   -- use term color mode
+#
+function util_set_log_color_mode {
+  local FLAG_COLOR="$1"
+  local COLOR
+
+  if [ "$FLAG_COLOR" == -no-color ]; then
+    COLOR=false
+  elif [ "$FLAG_COLOR" == -color ]; then
+    COLOR=true
+  elif [ -t 2 ]; then
+    COLOR=true
+  else
+    COLOR=false
+  fi
+
+  if $COLOR; then
+    t_red=$'\e[1;31m'
+    t_grn=$'\e[1;32m'
+    t_yel=$'\e[1;33m'
+    t_blu=$'\e[1;34m'
+    t_mag=$'\e[1;35m'
+    t_cyn=$'\e[1;36m'
+    t_end=$'\e[0m'
+  fi
+}
 
 #
 # We want to avoid globbing * when nothing exists
@@ -38,7 +68,7 @@ popd () {
 
 function die {
   local rc=$?
-  local msg=$1
+  local msg="$*"
 
   # We are dying, so if previous command didn't actually give
   # an error code, we still want to give an error. We'll give
@@ -50,102 +80,6 @@ function die {
   (>&2 echo "${t_red}$msg${t_end}")
   (>&2 echo "${t_red}Aborting with error $rc${t_end}")
   exit $rc
-}
-
-function parse_args {
-  DO_VALIDATE=true
-  DO_BUILD=true
-  DO_CODESIGN=false
-  DO_UPLOAD_ONLY=false
-  DO_ZIP_ONLY=false
-  DO_DATA=true
-  DO_EXE=true
-  WARNINGS_AS_ERRORS=false
-  TARGET=
-  PROJECT_TARGET_TYPE=
-  PROJECT_TARGET=
-  FLAG_SILENT=
-  FLAG_DEBUG=
-  FLAG_CLEAN=
-  FLAG_TARGET=
-  START=
-  START_BASE=
-  START_KEYBOARD=
-
-  local lastkey
-  local key
-
-  # Parse args
-  for key in "$@"; do
-    if [[ -z "$lastkey" ]]; then
-      case "$key" in
-        -upload-only)
-          DO_UPLOAD_ONLY=true
-          ;;
-        -validate)
-          DO_BUILD=false
-          ;;
-        -codesign)
-          DO_CODESIGN=true
-          ;;
-        -zip-only)
-          DO_ZIP_ONLY=true
-          ;;
-        -prepare-and-upload-only)
-          DO_DATA=false
-          ;;
-        -no-exe)
-          DO_EXE=false
-          ;;
-        -start)
-          lastkey=$key
-          ;;
-        -s)
-          FLAG_SILENT=-s
-          ;;
-        -d)
-          FLAG_DEBUG=-d
-          ;;
-        -c)
-          FLAG_CLEAN=-c
-          ;;
-        -w)
-          WARNINGS_AS_ERRORS=true
-          ;;
-        -h|-\?)
-          display_usage
-          ;;
-        -T)
-          lastkey="$key"
-          ;;
-        -t)
-          lastkey="$key"
-          ;;
-        *)
-          TARGET="$key"
-      esac
-    else
-      case "$lastkey" in
-        -start)
-          START="$key"
-          START_BASE=`dirname "$START"`
-          START_KEYBOARD=`basename "$START"`
-          if [[ "START_BASE" == "." ]]; then
-            START_BASE="$START"
-          fi
-          ;;
-        -t)
-          FLAG_TARGET=-t
-          PROJECT_TARGET="$key"
-          ;;
-        -T)
-          FLAG_TARGET=-t
-          PROJECT_TARGET_TYPE="$key"
-          ;;
-      esac
-      lastkey=
-    fi
-  done
 }
 
 #

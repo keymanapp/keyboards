@@ -1,10 +1,6 @@
 Balochi Latin keyboard
 ======================
 
-© 2020 SIL International
-
-Version 1.0
-
 Description
 -----------
 
@@ -12,6 +8,8 @@ Balochi Latin based on the US English keyboard.
 
 Links
 -----
+ * Home:     <https:/help.keyman.com/keyboard/balochi_latin>
+ * Contact:  <support@keyman.com>
 
 Supported Platforms
 -------------------
