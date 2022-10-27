@@ -99,5 +99,5 @@ for my $letter (@FidelExtra) {
 #
 # cat in this sequence:
 #
-# cat gff_amharic-modifier-keys.css gff_amharic-layer-popup-default.css gff_amharic-layer-popup-?.css gff_amharic-layer-popup-*-extra.css > gff_amharic.css
+# cat gff_amharic-modifier-keys.css gff_amharic-layer-popup-default.css gff_amharic-layer-popup-non-amharic.css gff_amharic-layer-popup-?.css gff_amharic-layer-popup-*-extra.css > gff_amharic.css
 #
