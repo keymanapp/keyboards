@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    22 Oct 2022
+  Modified Date:    27 Oct 2022
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -184,6 +184,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 3.7, 22 Oct 2022</dt>
+  <dd>Dynamic modifier key updates.</dd>
   <dt>Version 2.3, 22 Oct 2022</dt>
   <dd>Fixes to several problems with vowel input for touch platform.</dd>
   <dt>Version 2.2, 19 Jul 2021</dt>
