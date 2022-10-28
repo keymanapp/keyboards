@@ -1,6 +1,14 @@
 gff_amharic Change History
 ==========================
 
+3.0 (27 Oct 2022)
+-----------------
+* Dynamic modifier key updates.
+
+2.3 (22 Oct 2022)
+-----------------
+* Fixes to several problems with vowel input for touch platform.
+
 2.2 (19 Jul 2021)
 ------------------
 * Extensions for Unicode 14
