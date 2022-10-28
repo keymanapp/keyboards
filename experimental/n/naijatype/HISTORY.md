@@ -1,9 +1,15 @@
 Naija Type Keyboard Change History
 =======================
 
+October 2022
+------------
+* v48 vertical line and overdot added to diacritics. Alt/ShiftAlt Alternatives to underline, overline, underdot and overdot combining chars added, and capital Q popup on touch keyboard. Also v popup for combining diacritics.
+* v47 ctrl-alt ] or hyphen to produce [ and = in case one set of keys stops working (obscure keyboard problems!)
+* v46 Compensate for Word etc autocurling the apostrophe into U+2018 or U+2019 by having a starting rota for those that ends in Saltillo
+
+
 September 2022
 --------------
-* v46 Doc adjustments, improved saltillo handling with MS Word autocurling apostrophes.
 * v45 Doc adjustments, modifier letter vertical line and saltillo added for glottals, and upside down ? and !. Code refactoring. Added Tugbiri.
 * v41 Moved Naira left and stay on numeric layer, joined Hash inside it, and added space bar. Reduced unnecessary longpress items. Added more currency symbols in numeric layer. Added s underdot in touch. Added Tugbiri, Kanuri, Igala languages.
 
