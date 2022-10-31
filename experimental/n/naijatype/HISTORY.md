@@ -3,6 +3,7 @@ Naija Type Keyboard Change History
 
 October 2022
 ------------
+* v49 Removed deprecated language features. Added Alt alternative (Alt/backslash) for vertical line above letter. Re-ordered code.
 * v48 vertical line and overdot added to diacritics. Alt/ShiftAlt Alternatives to underline, overline, underdot and overdot combining chars added, and capital Q popup on touch keyboard. Also v popup for combining diacritics.
 * v47 ctrl-alt ] or hyphen to produce [ and = in case one set of keys stops working (obscure keyboard problems!)
 * v46 Compensate for Word etc autocurling the apostrophe into U+2018 or U+2019 by having a starting rota for those that ends in Saltillo
