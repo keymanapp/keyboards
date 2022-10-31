@@ -1,7 +1,7 @@
 Runeboard keyboard
 ==============
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
@@ -15,6 +15,10 @@ Links
 <p>Watch <a href=https://www.youtube.com/channel/UCWLmY2EMdJxE_ch2BTvwl1g>Rune Revival on YouTube</a>.</p>
 
 <p>For help or to report bugs, please visit the Keyman community forums <a href=https://community.software.sil.org/>here</a>.
+
+Bug Fixes
+-----------
+<p>Shift key on mobile now works.</p>
 
 Copyright
 ---------

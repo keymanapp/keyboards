@@ -3,7 +3,7 @@ Naija Type Keyboard for Touch and Physical Keyboards
 
 © 2021-2022 David Rowbory
 
-Version 46
+Version 48
 
 Description
 -----------
@@ -29,4 +29,3 @@ Supported Platforms
  * Android tablet
  * Mobile devices
  * Tablet devices
-
