@@ -1,9 +1,17 @@
 body {
-    x-background: rgb(193, 194, 193);
+    background: rgb(193, 194, 193);
     font-family: "Andika","AndikaAfr","Andika New Basic Compact";
 }
 .kmw-key-row {
 }
+/* easier selecting from below *//*
+.phone .kmw-key-square-ex  {
+   margin: 0 0 -30px 5px;
+}
+.phone .kmw-key-square-ex .kmw-key-default {
+   margin: 0 0 30px 5px;
+}*/
+
 .phone.android .kmw-key.kmw-key-default, .phone.ios .kmw-key.kmw-key-default {
 color: black;
 background: none; /* white;*/
@@ -29,7 +37,11 @@ font-size: 1.2em;
     bottom: 0px;
     right: 8%;
     left: initial;*/
-    color: #8b8;
+    color: #8b8; 
+}
+
+.phone.android #kmw-popup-keys {
+   border-radius: 10px; 
 }
 
 .phone.android .kmw-banner-bar, .phone.ios .kmw-banner-bar {
@@ -39,6 +51,11 @@ font-size: 1.2em;
 
 .phone.android .kmw-suggestion-text, .phone.ios .kmw-suggestion-text {
     color: #131;
+}
+
+.kmw-banner-bar .kmw-suggest-option {
+/* height: auto; */
+font-size: 85%;
 }
 
 .phone.android #kmw-popup-keys, .phone.ios #kmw-popup-keys {
@@ -68,8 +85,9 @@ margin-bottom: 15px;
 #kmw-popup-keys { background-color: #eee; color: black;}
 
 @media (prefers-color-scheme: dark) {
-  div.ios div.kmw-keytip {
-    color:#333;
+  div.ios div.kmw-keytip, div.android div.kmw-keytip {
+    background-color:#cdc;
+    color: #333;
   }
 
   /* Style for callout used on phones */
