@@ -2,8 +2,8 @@
  * Pastel colors for GFF Keyboards
  * Primarily from: https://www.behance.net/gallery/125405749/Top-10-trending-pastel-color-palettes-in-2021
  */
-/* modifier keys */
 
+/* functional keys */
 .phone div.kmw-key.kmw-key-shift[id$='K_LOPT'], .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
 .phone div.kmw-key.kmw-key-shift[id$='K_BKSP'], .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
 .phone div.kmw-key.kmw-key-shift[id$='K_ENTER'], .tablet div.kmw-key.kmw-key-shift[id$='K_ENTER'],
@@ -13,15 +13,15 @@
 /* { background: #f3d6ce  ; color: black; } */
   { background: #ece1d5 ; color: black ; }
 
-  .phone div.kmw-key.kmw-key-default[id$='K_SPACE'], .tablet div.kmw-key.kmw-key-default[id$='K_SPACE']
+.phone div.kmw-key.kmw-key-default[id$='K_SPACE'], .tablet div.kmw-key.kmw-key-default[id$='K_SPACE']
   { background: #f4eee7 ; color: #f4eee7 ; } /* eceae4 */
 
-.kmw-keyboard-gff_amharic #default-K_1\+shift,
-.kmw-keyboard-gff_amharic #default-U_1362
+.phone div.kmw-key.kmw-key-default[id$='K_1+shift'], .tablet div.kmw-key.kmw-key-default[id$='K_1+shift'],
+.phone div.kmw-key.kmw-key-default[id$='U_1362'], .tablet div.kmw-key.kmw-key-default[id$='U_1362']
   { background: #f4eee7 ; color: black ; }
 
-.phone div.kmw-key.kmw-key-default[id$='extra-U_00AB'], .tablet div.kmw-key.kmw-key-default[id$=''], /* « */
-.phone div.kmw-key.kmw-key-default[id$='extra-U_00BB'], .tablet div.kmw-key.kmw-key-default[id$='']  /* » */
+.phone div.kmw-key.kmw-key-default[id$='extra-U_00AB'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_00AB'], /* « */
+.phone div.kmw-key.kmw-key-default[id$='extra-U_00BB'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_00BB']  /* » */
   { background:  #ebece6 ; color: black ; } 
 
   /* numeral layer: western numerals */
@@ -521,5 +521,9 @@ div#popup-amharic-extra-U_137C /* ፻ */
 
 
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1225'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1225'],
-.phone div.kmw-key.kmw-key-default[id$='extra-U_1345'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1345']
+.phone div.kmw-key.kmw-key-default[id$='extra-U_1345'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1345'],
+.kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift
   {background: #fdfdfe ; color: black ; }
+
+
+
