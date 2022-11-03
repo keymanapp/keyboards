@@ -88,18 +88,18 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'[T_ግዕዝ]
+$keymanonly: store(ግዕዝ-key)  'eEäÄéÉèÈêÊëË'
 $keymanweb:  store(ግዕዝ-key)  'eE'[T_ግዕዝ]
 $keymanonly: store(ካዕብ-key) 'uUùÙúÚûÛüÜ'
-$keymanweb:  store(ካዕብ-key) 'uU'
+$keymanweb:  store(ካዕብ-key) 'uU'[T_ካዕብ]
 $keymanonly: store(ሣልስ-key) 'iIìÌíÍîÎïÏ'
-$keymanweb:  store(ሣልስ-key) 'iI'
+$keymanweb:  store(ሣልስ-key) 'iI'[T_ሣልስ]
 $keymanonly: store(ራብዕ-key) 'aAàÀáÁâÂãÃåÅ'
-$keymanweb:  store(ራብዕ-key) 'aA'
-$keymanonly: store(ኃምስ-key) 'æÆ'[T_ኃምስ]
+$keymanweb:  store(ራብዕ-key) 'aA'[T_ራብዕ]
+$keymanonly: store(ኃምስ-key) 'æÆ'
 $keymanweb:  store(ኃምስ-key) [T_ኃምስ]
 $keymanonly: store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
-$keymanweb:  store(ሳብዕ-key) 'oO'
+$keymanweb:  store(ሳብዕ-key) 'oO'[T_ሳብዕ]
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 store(touchVowels)  [T_ግዕዝ]'uia'[T_ኃምስ]'o'[T_WWA]
@@ -144,7 +144,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&KEYBOARDVERSION) '3.0'
+store(&KEYBOARDVERSION) '3.05'
 
   begin Unicode > use(main)
   group(main) using keys
@@ -179,7 +179,7 @@ c Alef-A Vowels as Regular Syllables
   'እ' + any(ካዕብ-key) > 'ኡ'
   'እ' + any(ሣልስ-key) > 'ኢ'
   'እ' + any(ራብዕ-key) > 'ኣ'
-  'እ' + [T_ኃምስ]      > 'ኤ'
+  'እ' + any(ኃምስ-key) > 'ኤ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
   'እ' + any(ሳብዕ-key) > 'ኦ'
 
@@ -191,7 +191,7 @@ c Aynu-A Vowels as Regular Syllables
   c 'ዕ' + any(ሣልስ-key) > 'ዒ'
   c 'ዕ' + any(ራብዕ-key) > 'ዓ'
    'ዒ' + any(ግዕዝ-key) > 'ዔ'
-   'ኤ' + [T_ኃምስ]    > 'ዔ'
+   'ኤ' + any(ኃምስ-key) > 'ዔ'
   c 'ዕ' + any(ሳብዕ-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels

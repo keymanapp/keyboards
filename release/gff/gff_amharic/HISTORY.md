@@ -1,6 +1,11 @@
 gff_amharic Change History
 ==========================
 
+
+3.05 (4 Nov 2022)
+-----------------
+* Lighter CSS with wildcard selectors.
+
 3.0 (27 Oct 2022)
 -----------------
 * Dynamic modifier key updates.

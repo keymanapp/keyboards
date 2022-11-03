@@ -184,7 +184,9 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
-  <dt>Version 3.7, 22 Oct 2022</dt>
+  <dt>Version 3.05, 04 Nov 2022</dt>
+  <dd>Lighter CSS with wildcard selectors.</dd>
+  <dt>Version 3.0, 22 Oct 2022</dt>
   <dd>Dynamic modifier key updates.</dd>
   <dt>Version 2.3, 22 Oct 2022</dt>
   <dd>Fixes to several problems with vowel input for touch platform.</dd>
