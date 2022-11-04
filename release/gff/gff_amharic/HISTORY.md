@@ -2,7 +2,7 @@ gff_amharic Change History
 ==========================
 
 
-3.05 (4 Nov 2022)
+3.1 (4 Nov 2022)
 -----------------
 * Lighter CSS with wildcard selectors.
 
