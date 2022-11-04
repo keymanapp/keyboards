@@ -13,6 +13,7 @@
 /* { background: #f3d6ce  ; color: black; } */
   { background: #ece1d5 ; color: black ; }
 
+/* default layers: latin punctuation */
 .phone div.kmw-key.kmw-key-default[id$='K_SPACE'], .tablet div.kmw-key.kmw-key-default[id$='K_SPACE']
   { background: #f4eee7 ; color: #f4eee7 ; } /* eceae4 */
 
@@ -20,12 +21,13 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1362'], .tablet div.kmw-key.kmw-key-default[id$='U_1362']        /* ። */
   { background: #f4eee7 ; color: black ; }
 
+
+/* amharic-extra layer:  punctuation */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_00AB'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_00AB'], /* « */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_00BB'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_00BB']  /* » */
   { background:  #ebece6 ; color: black ; } 
 
-
-/* punctuation layer */
+/* amharic-extra layer: ethiopic punctuation */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1361'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1361'], /* ፡ */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1362'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1362'], /* ። */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1363'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1363'], /* ፣ */
@@ -37,7 +39,7 @@
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1368'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1368']  /* ፨ */
   { background:  #f4eee7 ; color: black ; }
 
-/* numeral layer: western numerals */
+/* amharic-extra layer: western numerals */
 .phone div.kmw-key.kmw-key-default[id$='K_1'], /* 1 */
 .phone div.kmw-key.kmw-key-default[id$='K_2'], /* 2 */
 .phone div.kmw-key.kmw-key-default[id$='K_3'], /* 3 */
@@ -51,7 +53,7 @@
 .kmw-keyboard-gff_amharic #amharic-etens-extra-T_MORE
   { background:  #ebece6 ; color: black ; }
 
-/* numeral layer: ge'ez numerals */
+/* amharic-extra layer: ge'ez numerals */
 .phone div.kmw-key.kmw-key-default[id$='K_SPACE'], .tablet div.kmw-key.kmw-key-default[id$='K_SPACE'],
 .phone div.kmw-key.kmw-key-default[id$='U_1369'], .tablet div.kmw-key.kmw-key-default[id$='U_1369'], /* ፩ */
 .phone div.kmw-key.kmw-key-default[id$='U_136A'], .tablet div.kmw-key.kmw-key-default[id$='U_136A'], /* ፪ */
@@ -65,7 +67,6 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1372+shift'], .tablet div.kmw-key.kmw-key-default[id$='U_1372'],  /* ፲ */
 .kmw-keyboard-gff_amharic #amharic-tens-extra-T_MORE
   { background:  #ece1d5 ; color: black ; }
-
 
 .phone div.kmw-key.kmw-key-default[id$='U_1372'], .tablet div.kmw-key.kmw-key-default[id$='U_1372'], /* ፲ */
 .phone div.kmw-key.kmw-key-default[id$='U_1373'], .tablet div.kmw-key.kmw-key-default[id$='U_1373'], /* ፳ */
@@ -292,7 +293,7 @@
 .phone div.kmw-key.kmw-key-default[id$='T_ኃምስ'], .tablet div.kmw-key.kmw-key-default[id$='T_ኃምስ']
   { background:  #e0d7ff  ; color: black; } /* #f2a2e8 */
 
-/* default layer ሳድስ */
+/* default layer ሳድስ - used primarily when a sadis letter appears in a popup or on the -extra layers */
 /* .phone div.kmw-key.kmw-key-default[id$='U_1205'], .tablet div.kmw-key.kmw-key-default[id$='U_1205'],  /* ህ */
 /* .phone div.kmw-key.kmw-key-default[id$='U_120D'], .tablet div.kmw-key.kmw-key-default[id$='U_120D'],  /* ል */
 /* .phone div.kmw-key.kmw-key-default[id$='U_1215'], .tablet div.kmw-key.kmw-key-default[id$='U_1215'],  /* ሕ */
@@ -375,7 +376,6 @@
 .phone div.kmw-key.kmw-key-default[id$='T_ሳብዕ'], .tablet div.kmw-key.kmw-key-default[id$='T_ሳብዕ']
   { background:  #fad6b6  ; color: black; } /* f8b88b*/
 
-
 /* default layer ዘመደ-ራብዕ */
 .phone div.kmw-key.kmw-key-default[id$='U_120F'], .tablet div.kmw-key.kmw-key-default[id$='U_120F'], /* ሏ */
 .phone div.kmw-key.kmw-key-default[id$='U_1217'], .tablet div.kmw-key.kmw-key-default[id$='U_1217'], /* ሗ */
@@ -404,7 +404,6 @@
 .phone div.kmw-key.kmw-key-default[id$='U_1357'], .tablet div.kmw-key.kmw-key-default[id$='U_1357']  /* ፗ */
 .phone div.kmw-key.kmw-key-default[id$='T_WWA'], .tablet div.kmw-key.kmw-key-default[id$='T_WWA']
   { background:  #e1cec9  ; color: black; }
-
 
 /* ዘመደ-ግዕዝ */
 .phone div.kmw-key.kmw-key-default[id$='U_1248'], .tablet div.kmw-key.kmw-key-default[id$='U_1248'],  /* ቈ */
@@ -500,7 +499,7 @@
     background: linear-gradient(180deg, #ffffff 0%, #e0d7ff 100%);
   }
 
-
+/* resets sadis letters that appear in popups of the default layers, this is needed for when the keys appear on the -extra layer */
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1225'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1225'],
 .phone div.kmw-key.kmw-key-default[id$='extra-U_1345'], .tablet div.kmw-key.kmw-key-default[id$='extra-U_1345'],
 .kmw-keyboard-gff_amharic #punctuation-K_1\+shift, .kmw-keyboard-gff_amharic #punctuation-2-K_1\+shift
