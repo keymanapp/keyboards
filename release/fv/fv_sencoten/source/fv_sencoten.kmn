@@ -77,13 +77,22 @@ store(&LAYOUTFILE) 'fv_sencoten.keyman-touch-layout'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
-store(&CasedKeys) 's' c in capslock, shift S should un-caps into s
-+ 's' > 's'
-+ 'S' > 'S'
+store(&CasedKeys) 'a..z' [K_COMMA] c in capslock, caps should un-caps into lowercase, comma swaps with cedilla
 
-+ [K_COMMA] > '¸' c cedilla
-+ [SHIFT K_COMMA] > ','
-+ [SHIFT K_PERIOD] > ';'
+store(ncaps) 'a'..'z'
+store(caps) 'A'..'Z'
++ any(ncaps) > index(ncaps,1)
++ any(caps) > index(caps,1)
+
++ [K_COMMA] > ','
++ [SHIFT K_COMMA] > '¸' c cedilla
+
+c period key produces period no matter what shift state, to keep brackets parallel
+
++ [SHIFT K_PERIOD] > '.'
++ [SHIFT CAPS K_PERIOD] > '.'
+
+c regardless of caps state, /'-; keys add a diacritic to valid uppercase chars
 
 store(acu0) 'ACIKS'
 store(acu1) 'ÁĆÍḰŚ'   
@@ -95,20 +104,33 @@ store(mau0) 'KNT'
 store(mau1) 'ḴṈṮ'
 store(mau2) 'WX'  
 
-any(sla0) + [K_SLASH] > index(sla1,1)
-any(acu0) + [K_QUOTE] > index(acu1,1)
-any(bar0) + [K_HYPHEN] > index(bar1,1) 
-any(mau0) + [K_COLON] > index(mau1,1)
-any(mau2) + [K_COLON] > index(mau2,1) U+0331  
+any(sla0) + [NCAPS K_SLASH] > index(sla1,1)
+any(acu0) + [NCAPS K_QUOTE] > index(acu1,1)
+any(bar0) + [NCAPS K_HYPHEN] > index(bar1,1) 
+any(mau0) + [NCAPS K_COLON] > index(mau1,1)
+any(mau2) + [NCAPS K_COLON] > index(mau2,1) U+0331  
 
-store(quote0) "[]{}"
+any(sla0) + [CAPS K_SLASH] > index(sla1,1)
+any(acu0) + [CAPS K_QUOTE] > index(acu1,1)
+any(bar0) + [CAPS K_HYPHEN] > index(bar1,1) 
+any(mau0) + [CAPS K_COLON] > index(mau1,1)
+any(mau2) + [CAPS K_COLON] > index(mau2,1) U+0331 
+
+c regardless of caps state, replace brackets with angle quotes
+
+store(quote0ncaps)  [NCAPS K_LBRKT] [NCAPS K_RBRKT] [SHIFT NCAPS K_LBRKT] [SHIFT NCAPS K_RBRKT]
+store(quote0caps)  [CAPS K_LBRKT] [CAPS K_RBRKT] [SHIFT CAPS K_LBRKT] [SHIFT CAPS K_RBRKT]
 store(quote1) "«»‹›"
-+ any(quote0) > index(quote1,1) 
++ any(quote0ncaps) > index(quote1,1) 
++ any(quote0caps) > index(quote1,1) 
 
-store(original2) "/'-;,[]{}<>" 
-store(original1) [RALT K_SLASH] [RALT K_QUOTE] [RALT K_HYPHEN] [RALT K_COLON] [RALT K_COMMA] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD]
-+ any(original1) > index(original2,1)  
+c regardless of caps state, store original key values on right alt layer
 
+store(original0ncaps) [RALT NCAPS K_SLASH] [RALT NCAPS K_QUOTE] [RALT NCAPS K_HYPHEN] [RALT NCAPS K_COLON] [RALT NCAPS K_COMMA] [SHIFT NCAPS RALT K_COMMA] [SHIFT NCAPS RALT K_PERIOD] [RALT NCAPS K_LBRKT] [RALT NCAPS K_RBRKT] [SHIFT NCAPS RALT K_LBRKT] [SHIFT NCAPS RALT K_RBRKT]
+store(original0caps) [RALT CAPS K_SLASH] [RALT CAPS K_QUOTE] [RALT CAPS K_HYPHEN] [RALT CAPS K_COLON] [RALT CAPS K_COMMA] [SHIFT CAPS RALT K_COMMA] [SHIFT CAPS RALT K_PERIOD] [RALT CAPS K_LBRKT] [RALT CAPS K_RBRKT] [SHIFT CAPS RALT K_LBRKT] [SHIFT CAPS RALT K_RBRKT]
+store(original1) "/'-;,<>[]{}" 
++ any(original0ncaps) > index(original1,1)  
++ any(original0caps) > index(original1,1)  
 
 
 match > use(normalize)
@@ -118,5 +140,6 @@ group(normalize)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)
+C don't understand the purpose of this last part but it triggers a warning now due to all the caps
+C store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
+C + any(allkeys) > index(allkeys, 1)
