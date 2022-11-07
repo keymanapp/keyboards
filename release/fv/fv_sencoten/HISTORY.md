@@ -1,14 +1,14 @@
 SENĆOŦEN Change History
 ============================
 
-9.2 (2 Nov 2022)
+9.2 (7 Nov 2022)
 -------------------
-* Added cedilla key (desktop)
+* Added cedilla key (desktop, mobile)
 * Changed underline from = key to ; key (desktop)
 * Removed diacritics from lowercase mode (desktop)
-* Improvements to capslock behaviour
-* Removed right/left quote keys, moved guillaumets (desktop)
-* Improved onscreen keyboard indicators
+* Removed right/left quotes, moved guillaumets (desktop)
+* Improvements to capslock behaviour across desktop platforms
+* Improved onscreen keyboard indicators and documentation
 
 9.1.1 (24 Feb 2021)
 -------------------
