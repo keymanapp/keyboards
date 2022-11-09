@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.271.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.272.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <MSIFileName></MSIFileName>
+    <GraphicFile>Splash.jpg</GraphicFile>
+    <MSIFileName>C:\Projects\keyman\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
-    <Items/>
+    <Folder>Nasa Yuwe</Folder>
+    <Items>
+      <Item>
+        <Name>Guía para el teclado de Keyman</Name>
+        <FileName>welcome-es.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>User Guide for Keyman Keyboard</Name>
+        <FileName>welcome-en.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
   </StartMenu>
   <Info>
     <Name URL="">Nasa Yuwe</Name>
     <Copyright URL="">© 2022 SIL International</Copyright>
     <Author URL="mailto:tom_bogle@sil.org">Tom Bogle</Author>
     <Version URL=""></Version>
+    <WebSite URL="http://www.keyman.com/">http://www.keyman.com/</WebSite>
   </Info>
   <Files>
     <File>
@@ -41,7 +58,13 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
+      <Name>welcome-en.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome-es.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
@@ -52,6 +75,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>Splash.jpg</Name>
+      <Description>File Splash.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -59,7 +88,7 @@
       <ID>nasa_yuwe</ID>
       <Version>1.0</Version>
       <Languages>
-        <Language ID="pbb">Páez</Language>
+        <Language ID="pbb">Nasa Yuwe</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
