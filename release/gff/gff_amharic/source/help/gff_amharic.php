@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    27 Oct 2022
+  Modified Date:    11 Nov 2022
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -27,6 +27,11 @@
 EXTRA;
   require_once('header.php');
 ?>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="kb.css"/>
+</head>
 
 <p style='margin:0px'>Keyboard &#169; 1997-2020. Geʾez Frontier Foundation.</p>
 
@@ -70,12 +75,69 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 
 <div id='osk-phone-container'>
   <h2>Phone Keyboard Layout</h2>
-  <div id='osk-phone' data-states='default non-amharic punctuation punctuation-2'></div>
+<h3>Letters</h3>
+
+When the GFF Amharic mobile keyboard starts, the key layout appears as shown in the following image.  Note the relationship between the letters of the middle row and top row:
+
+<img src="images/gff_amharic-default-1.jpeg" style="border: 1px solid black;"/>
+
+Tapping a key once, the modifier letters to the left (<code>አ</code>, <code>ኡ</code>, <code>ኢ</code>) and right  (<code>ኣ</code>, <code>ኤ</code>, <code>ኦ</code>) of the spacebar. For example, tapping <code>ግ</code> the modifiers change to <code>ገ</code>, <code>ጉ</code>, <code>ጊ</code>, <code>ጋ</code>, <code>ጌ</code>, <code>ጎ</code> .  If a modifier is tapped, ግ will be updated on screen.
+
+<img src="images/gff_amharic-default-2.jpeg" style="border: 1px solid black;"/>
+
+As an alternative, if preferred, holding a key down for a few moments (called a "longpress") a popup menu appears where you can tap the letter desired.  The popup menu for <code>ግ</code> is shown below:
+
+<img src="images/gff_amharic-default-4.jpeg" style="border: 1px solid black;"/>
+
+The modifier keys will also have popups as applicable.  For example to enter the extended syllables for <code>ጐ</code>, <code>ጒ</code>, <code>ጓ</code>, <code>ጔ‹/code> and <code>ጕ</code> as shown:
+
+<img src="images/gff_amharic-default-3.jpeg" style="border: 1px solid black;"/>
+
+
+<h3>Punctuation</h3>
+
+<p>When typing letters, the <code>!</code> and <code>።</code> keys are available for entering the most common punctuation without shifting to another "layer".  The following image shows the punctuation for a longpress of <code>!</code>:</p>
+<img src="images/gff_amharic-punctuation-1.jpeg" style="border: 1px solid black;"/>
+
+<p>The punctuation for a longpress of <code>።</code>:
+<img src="images/gff_amharic-punctuation-2.jpeg" style="border: 1px solid black;"/>
+
+<p>For additional punctuation and numerals, tap the <code>123</code> key to shift to the next layer:</p>
+
+<img src="images/gff_amharic-punctuation-3.jpeg" style="border: 1px solid black;"/>
+
+<p>Note that numerals on the punctuation layer use the long press feature to make Geʾez numerals available:</p>
+
+<img src="images/gff_amharic-numerals-1.jpeg" style="border: 1px solid black;"/>
+
+<p>Tapping the <code>@</code> shifts to a 2nd layer to access all remaining punctuation:</p>
+
+<img src="images/gff_amharic-punctuation-4.jpeg" style="border: 1px solid black;"/>
+
+<p>A tap of the <code>፩</code> key will go to the final layer where Geʾez numbers and some less used, and non-Amharic letters, can be accessed.</p>
+
+<h3>Numerals</h3>
+
+<p>The last layer to shift to presents the Geʾez numbers, all Geʾez punctuation, letters of related languages, and a few lesser used letters that did not fit conveniently on the initial letters layer.</p>
+
+<p>Note the arrow button, <code>▶</code>, at the end of the row of Geʾez numerals, tapping it will slide the numerals to the remaining numbers that are orders of ten (e.g. ፳, ፴, ፵, etc.):</p>
+
+<img src="images/gff_amharic-numerals-2.jpeg" style="border: 1px solid black;"/>
+
+<p>After tapping the <code>▶</code> button, the Geʾez orders of ten appear as shown:</p>
+
+<img src="images/gff_amharic-numerals-3.jpeg" style="border: 1px solid black;"/>
+
+<p>Tapping the <code>▶</code> button again slides to the western digits, a final tap will return to the initial Geʾez numerals.</p>
+
+<img src="images/gff_amharic-numerals-4.jpeg" style="border: 1px solid black;"/>
+
+<p>Simply tap the <code>ሀለሐ</code> key to return to the starting letters layers.</p>
 </div>
 
 <div id='osk-tablet-container'>
   <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default non-amharic punctuation punctuation-2'></div>
+  <div id='osk-tablet' data-states='default non-amharic punctuation'></div>
 </div>
 
 <p>Note: Longpress keys are not currently visible in this static documentation, and so some additional letters may be accessible through these longpress keys.</p>

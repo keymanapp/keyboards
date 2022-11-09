@@ -42,7 +42,7 @@ As an alternative, if preferred, holding a key down for a few moments (called a 
 
 <img src="source/help/images/gff_amharic-default-4.jpeg" style="border: 1px solid black;"/>
 
-The modifier keys will also have popups as applicable.  For example to enter the extended syllables for `ጐ`, `ጒ`, `ጓ`, `ጔ `and `ጕ` as shown:
+The modifier keys will also have popups as applicable.  For example to enter the extended syllables for `ጐ`, `ጒ`, `ጓ`, `ጔ` and `ጕ` as shown:
 
 <img src="source/help/images/gff_amharic-default-3.jpeg" style="border: 1px solid black;"/>
 
@@ -71,7 +71,7 @@ A tap of the `፩` key will go to the final layer where Geʾez numbers and some 
 
 ### Numerals
 
-The last layer to shift to presents the Geʾez numbers, all Geʾez punctuation, letters of related languages, and a few lesser used letters that did not fit conveniently on the intial letters layer.
+The last layer to shift to presents the Geʾez numbers, all Geʾez punctuation, letters of related languages, and a few lesser used letters that did not fit conveniently on the initial letters layer.
 
 Note the arrow button, `▶`, at the end of the row of Geʾez numerals, tapping it will slide the numerals to the remaining numbers that are orders of ten (e.g. ፳, ፴, ፵, etc.):
 
