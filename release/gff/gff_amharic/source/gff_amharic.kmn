@@ -97,7 +97,7 @@ $keymanweb:  store(ሣልስ-key) 'iI'
 $keymanonly: store(ራብዕ-key) 'aAàÀáÁâÂãÃåÅ'
 $keymanweb:  store(ራብዕ-key) 'aA'
 $keymanonly: store(ኃምስ-key) 'æÆ'
-$keymanweb:  store(ኃምስ-key) [T_ኃምስ]
+c $keymanweb:  store(ኃምስ-key) [T_ኃምስ]
 $keymanonly: store(ሳብዕ-key) 'oOòÒóÓôÔõÕöÖøØ'
 $keymanweb:  store(ሳብዕ-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
@@ -225,7 +225,11 @@ c
 c if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2) for future
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
-
+c
+c Note: Given the new touch-specific logic above, much or all of the following that
+c       address letter composition may no longer be relevant.  That is, it may all effectively
+c       be $keymanonly statements.
+c
 c ---------------------Input of Double Strike Letters-------------------------------------------
   'ስ' + 's' > 'ሥ'
   'ህ' + 'h' > 'ኅ'
@@ -234,6 +238,7 @@ c ---------------------End Input of Double Strike Letters-----------------------
 
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
+
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
   any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
@@ -244,7 +249,7 @@ c Alef-A Vowels as Regular Syllables
   'እ' + any(ካዕብ-key) > 'ኡ'
   'እ' + any(ሣልስ-key) > 'ኢ'
   'እ' + any(ራብዕ-key) > 'ኣ'
-  'እ' + any(ኃምስ-key) > 'ኤ'
+$keymanonly:   'እ' + any(ኃምስ-key) > 'ኤ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
   'እ' + any(ሳብዕ-key) > 'ኦ'
 
@@ -259,7 +264,7 @@ c  platform("desktop")
   c 'ዕ' + any(ሣልስ-key) > 'ዒ'
   c 'ዕ' + any(ራብዕ-key) > 'ዓ'
    'ዒ' + any(ግዕዝ-key) > 'ዔ'
-   'ኤ' + any(ኃምስ-key) > 'ዔ'
+$keymanonly:    'ኤ' + any(ኃምስ-key) > 'ዔ'
   c 'ዕ' + any(ሳብዕ-key) > 'ዖ'
 
 c Aynu-A Vowels as Vowels
@@ -279,7 +284,7 @@ c ---------------------Input of Basic Syllables---------------------------------
   any(ሳድስ) + any(ካዕብ-key) > index(ካዕብ,1)
   any(ሳድስ) + any(ሣልስ-key) > index(ሣልስ,1)
   any(ሳድስ) + any(ራብዕ-key) > index(ራብዕ,1)
-  any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
+$keymanonly:   any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
   any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
   any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
@@ -290,7 +295,7 @@ c ---------------------Input of Labiovelars-------------------------------------
   any(ካዕብ፡ልዩ)   + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
   any(ካዕብ፡ልዩ)   + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
   any(ካዕብ፡ልዩ)   + any(ራብዕ-key) > index(ዘመደ፡ራብዕ,1)
-  any(ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(ዘመደ፡ኃምስ,1)
+$keymanonly:   any(ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(ዘመደ፡ኃምስ,1)
   any(ዘመደ፡ሣልስ)  + any(ግዕዝ-key) > index(ዘመደ፡ኃምስ,1)
 
 c Alternative input to support confusion around the 'o' glypheme:
@@ -416,7 +421,7 @@ c These keys cannot be entered via a physical keyboard, and only in an upper lay
   any(TouchExtended፡ሳድስ) + any(ካዕብ-key) > index(TouchExtended፡ካዕብ,1)
   any(TouchExtended፡ሳድስ) + any(ሣልስ-key) > index(TouchExtended፡ሣልስ,1)
   any(TouchExtended፡ሳድስ) + any(ራብዕ-key) > index(TouchExtended፡ራብዕ,1)
-  any(TouchExtended፡ሳድስ) + any(ኃምስ-key) > index(TouchExtended፡ኃምስ,1)
+$keymanonly:   any(TouchExtended፡ሳድስ) + any(ኃምስ-key) > index(TouchExtended፡ኃምስ,1)
   any(TouchExtended፡ሣልስ) + any(ግዕዝ-key) > index(TouchExtended፡ኃምስ,1)  
   any(TouchExtended፡ሳድስ) + any(ሳብዕ-key) > index(TouchExtended፡ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
@@ -439,7 +444,7 @@ c 'QKG'
   any(TouchExtended፡ካዕብ፡ልዩ)   + any(ካዕብ-key) > index(TouchExtended፡ዘመደ፡ካዕብ,1)
   any(TouchExtended፡ካዕብ፡ልዩ)   + any(ሣልስ-key) > index(TouchExtended፡ዘመደ፡ሣልስ,1)
   any(TouchExtended፡ካዕብ፡ልዩ)   + any(ራብዕ-key) > index(TouchExtended፡ዘመደ፡ራብዕ,1)
-  any(TouchExtended፡ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(TouchExtended፡ዘመደ፡ኃምስ,1)
+$keymanonly:   any(TouchExtended፡ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(TouchExtended፡ዘመደ፡ኃምስ,1)
   any(TouchExtended፡ዘመደ፡ሣልስ)  + any(ግዕዝ-key) > index(TouchExtended፡ዘመደ፡ኃምስ,1)
 c ---------------------Extensions for Touch Layout----------------------------------------------
 
