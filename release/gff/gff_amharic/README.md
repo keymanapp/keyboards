@@ -34,7 +34,8 @@ When the GFF Amharic mobile keyboard starts, the key layout appears as shown in 
 
 <img src="source/help/images/gff_amharic-default-1.jpeg" style="border: 1px solid black;"/>
 
-Tapping a key once, the modifier letters to the left (`አ`, `ኡ`, `ኢ` ) and right  (`ኣ`, `ኤ`, `ኦ`) of the spacebar. For example, tapping `ግ` the modifiers change to `ገ`, `ጉ`, `ጊ`, `ጋ`, `ጌ`, `ጎ` .  If a modifier is tapped, ግ will be updated on screen.
+Tapping a key once, the modifier letters to the left (`አ`, `ኡ`, `ኢ` ) and right  (`ኣ`, `ኤ`, `ኦ`) of the spacebar. For example, tapping `ግ` the modifiers change to `ገ`, `ጉ`, `ጊ`, `ጋ`, `ጌ`, `ጎ` .  If a modifier is tapped, ግ will be updated on screen and replaced with the selected letter.
+
 
 <img src="source/help/images/gff_amharic-default-2.jpeg" style="border: 1px solid black;"/>
 
@@ -63,7 +64,7 @@ Note that numerals on the punctuation layer use the long press feature to make G
 
 <img src="source/help/images/gff_amharic-numerals-1.jpeg" style="border: 1px solid black;"/>
 
-Tapping the `@` shifts to a 2nd layer to access all remaining punctuation:
+Tapping the `@` key shifts to a 2nd layer to access all remaining punctuation:
 
 <img src="source/help/images/gff_amharic-punctuation-4.jpeg" style="border: 1px solid black;"/>
 
