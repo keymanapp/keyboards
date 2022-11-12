@@ -46,7 +46,7 @@ code {
 <div id='Overview'>
 <h2>Overview</h2>
 <p style="text-align: justify;">
-This is a language neutral touch (only) keyboard for mobile devices.  The keyboard provides all Ethiopic letters in active use on a single layer in circular, semi-clockwise orientation.  It is meant be intuitive for new typist, but supports faster typing for experienced typist compared to the similar <a href="https://keyman.com/keyboards/gff_mesobe_fidelat">Mesobe Fidelat Keyboard</a> keyboard.
+This is a language-neutral touch (only) keyboard for mobile devices. The keyboard provides all Ethiopic letters in active use on a single layer in a circular, semi-clockwise orientation. It is meant to be intuitive for new typists but supports faster typing for experienced typists compared to the similar <a href="https://keyman.com/keyboards/gff_mesobe_fidelat">Mesobe Fidelat Keyboard</a> keyboard.
 </p>
 </div>
 
