@@ -4,7 +4,7 @@ Copyright (C) 2022 Geʾez Frontier Foundation
 
 Version 1.0
 
-This is a language neutral touch (only) keyboard for mobile devices. The keyboard provides all Ethiopic letters in active use on a single layer in circular, semi-clockwise orientation.  It is meant be intuitive for new typist and fits more comfortably on a tablet device than a mobile phone.
+This is a language-neutral touch (only) keyboard for mobile devices. The keyboard provides all Ethiopic letters in active use on a single layer in a circular, semi-clockwise orientation. It is meant to be intuitive for new typists and fits more comfortably on a tablet device than on a mobile phone.
 
 
 
