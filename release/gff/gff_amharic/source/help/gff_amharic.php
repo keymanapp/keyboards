@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    11 Nov 2022
+  Modified Date:    12 Nov 2022
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -33,7 +33,7 @@ EXTRA;
 	<link rel="stylesheet" href="kb.css"/>
 </head>
 
-<p style='margin:0px'>Keyboard &#169; 1997-2020. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard &#169; 1997-2022. Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -77,19 +77,27 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
   <h2>Phone Keyboard Layout</h2>
 <h3>Letters</h3>
 
+<p>
 When the GFF Amharic mobile keyboard starts, the key layout appears as shown in the following image.  Note the relationship between the letters of the middle row and top row:
+</p>
 
 <img src="images/gff_amharic-default-1.jpeg" style="border: 1px solid black;"/>
 
+<p>
 Tapping a key once, the modifier letters to the left (<code>አ</code>, <code>ኡ</code>, <code>ኢ</code>) and right  (<code>ኣ</code>, <code>ኤ</code>, <code>ኦ</code>) of the spacebar. For example, tapping <code>ግ</code> the modifiers change to <code>ገ</code>, <code>ጉ</code>, <code>ጊ</code>, <code>ጋ</code>, <code>ጌ</code>, <code>ጎ</code> .  If a modifier is tapped, ግ will be updated on screen.
+</p>
 
 <img src="images/gff_amharic-default-2.jpeg" style="border: 1px solid black;"/>
 
+<p>
 As an alternative, if preferred, holding a key down for a few moments (called a "longpress") a popup menu appears where you can tap the letter desired.  The popup menu for <code>ግ</code> is shown below:
+</p>
 
 <img src="images/gff_amharic-default-4.jpeg" style="border: 1px solid black;"/>
 
-The modifier keys will also have popups as applicable.  For example to enter the extended syllables for <code>ጐ</code>, <code>ጒ</code>, <code>ጓ</code>, <code>ጔ‹/code> and <code>ጕ</code> as shown:
+<p>
+The modifier keys will also have popups as applicable.  For example to enter the extended syllables for <code>ጐ</code>, <code>ጒ</code>, <code>ጓ</code>, <code>ጔ</code> and <code>ጕ</code> as shown:
+</p>
 
 <img src="images/gff_amharic-default-3.jpeg" style="border: 1px solid black;"/>
 
@@ -97,9 +105,11 @@ The modifier keys will also have popups as applicable.  For example to enter the
 <h3>Punctuation</h3>
 
 <p>When typing letters, the <code>!</code> and <code>።</code> keys are available for entering the most common punctuation without shifting to another "layer".  The following image shows the punctuation for a longpress of <code>!</code>:</p>
+
 <img src="images/gff_amharic-punctuation-1.jpeg" style="border: 1px solid black;"/>
 
-<p>The punctuation for a longpress of <code>።</code>:
+<p>The punctuation for a longpress of <code>።</code>:</p>
+
 <img src="images/gff_amharic-punctuation-2.jpeg" style="border: 1px solid black;"/>
 
 <p>For additional punctuation and numerals, tap the <code>123</code> key to shift to the next layer:</p>
@@ -228,8 +238,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <p><a target="_blank" href="http://keymankeyboards.com/?id=455">Download the Amharic Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/amharic.htm">More on the Amharic Writing System at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Amharic_language">More on the Amharic Language at Wikipedia.org</a><br/></p>
-<p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a></p>
+<p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Geʾez Script at Omniglot.com</a><br/>
+<a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Geʾez Script at Wikipedia.org</a></p>
 </div>
 </div>
 
@@ -246,7 +256,7 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
-  <dt>Version 3.1, 4 Nov 2022</dt>
+  <dt>Version 3.1, 12 Nov 2022</dt>
   <dd>Lighter CSS with wildcard selectors.</dd>
   <dt>Version 3.0, 22 Oct 2022</dt>
   <dd>Dynamic modifier key updates.</dd>
