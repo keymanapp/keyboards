@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Como usar el teclado Nasa Yuwe de Keyman</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-  </style>
-</head>
-<body>
+<?php
+  $pagename = 'Nasa Yuwe Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
 
 <h1>Guía para el uso del teclado Nasa Yuwe de Keyman</h1>
 
@@ -46,13 +38,7 @@
  <tr>
   <td style='width:43.15pt;padding:0in 5.4pt 0in 5.4pt; font-size:18.0pt;'/>
   <td>
-    <p style='font-size:14.0pt;'>para aplicar una diéresis sobre la letra u</p>
-  </td>
- </tr>
- <tr>
-  <td style='width:43.15pt;padding:0in 5.4pt 0in 5.4pt; font-size:18.0pt;'/>
-  <td>
-    <p style='font-size:14.0pt;'>para producir comillas</p>
+    <p style='font-size:14.0pt;'>y para aplicar una diéresis sobre la letra u</p>
   </td>
  </tr>
 </table>
@@ -94,6 +80,12 @@ columna seguida por la tecla en la primera línea:</p>
   <th style='width:50pt;border:solid windowtext 1.0pt; border-left:none;padding:0in 5.4pt 0in 5.4pt'>
   <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><b><span style='font-size:20.0pt;'>&gt;</span></b></p>
   </th>
+  <th style='width:50pt;border:solid windowtext 1.0pt; border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><b><span style='font-size:20.0pt;'>{</span></b></p>
+  </th>
+  <th style='width:50pt;border:solid windowtext 1.0pt; border-left:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><b><span style='font-size:20.0pt;'>}</span></b></p>
+  </th>
  </tr>
  <tr>
   <th style='border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt'>
@@ -113,6 +105,12 @@ columna seguida por la tecla en la primera línea:</p>
   </td>
   <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
   <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'>&#361;</span></p>
+  </td>
+  <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'></span></p>
+  </td>
+  <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'></span></p>
   </td>
   <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
   <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'></span></p>
@@ -164,6 +162,12 @@ columna seguida por la tecla en la primera línea:</p>
   <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
   <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'>›</span></p>
   </td>
+  <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'>‘</span></p>
+  </td>
+  <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'>’</span></p>
+  </td>
  </tr>
  <tr>
   <th style='border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt'>
@@ -198,6 +202,12 @@ columna seguida por la tecla en la primera línea:</p>
   </td>
   <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
   <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'>»</span></p>
+  </td>
+  <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'>“</span></p>
+  </td>
+  <td style='border-top:none;border-left:none; border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt'>
+  <p style='margin-bottom:0in;margin-bottom:.0001pt; text-align:center;'><span style='font-size:20.0pt; color:#1F3864;'>”</span></p>
   </td>
  </tr>
 </table>

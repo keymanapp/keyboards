@@ -1,12 +1,12 @@
 ﻿c Teclado para el idioma Nasa Yuwe de Colombia (Código BCP-47: pbb)
 store(&NAME) 'Nasa Yuwe'
 store(&COPYRIGHT) '©2022 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&MESSAGE) 'Nasa Yuwete kfxi' U+0027 'jsaa çaam'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'nasa_yuwe.keyman-touch-layout'
 store(&VISUALKEYBOARD) 'nasa_yuwe.kvks'
-store(&KMW_HELPFILE) 'nasa_yuwe-help.htm'
+store(&KMW_HELPFILE) 'welcome-es.htm'
 store(&BITMAP) 'nasa_yuwe.ico'
 begin Unicode > use(main)
 
@@ -63,5 +63,5 @@ deadkey(quote) + '>' > "›"
 c Just in case we need American quotes, here's a way to get them:
 deadkey(doublequote) + '{' > "“"
 deadkey(quote) + '{' > "‘"
-deadkey(doublequote) + '>' > "”"
-deadkey(quote) + '>' > "’"
+deadkey(doublequote) + '}' > "”"
+deadkey(quote) + '}' > "’"
