@@ -1,8 +1,6 @@
 Nasa Yuwe keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
 Teclado para Nasa Yuwe de Colombia
