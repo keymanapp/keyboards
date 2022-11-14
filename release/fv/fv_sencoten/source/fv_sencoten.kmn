@@ -77,22 +77,20 @@ store(&LAYOUTFILE) 'fv_sencoten.keyman-touch-layout'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
-store(&CasedKeys) 'a..z' [K_COMMA] c in capslock, caps should un-caps into lowercase, comma swaps with cedilla
+c in capslock, s should un-caps into lowercase, comma swaps with cedilla
+store(&CasedKeys) 's' [K_COMMA]
 
-store(ncaps) 'a'..'z'
-store(caps) 'A'..'Z'
-+ any(ncaps) > index(ncaps,1)
-+ any(caps) > index(caps,1)
-
++ 's' > 's'
++ 'S' > 'S'
 + [K_COMMA] > ','
 + [SHIFT K_COMMA] > '¸' c cedilla
 
 c period key produces period no matter what shift state, to keep brackets parallel
 
-+ [SHIFT K_PERIOD] > '.'
++ [SHIFT NCAPS K_PERIOD] > '.'
 + [SHIFT CAPS K_PERIOD] > '.'
 
-c regardless of caps state, /'-; keys add a diacritic to valid uppercase chars
+c regardless of caps state, /'-; keys add a diacritic to valid uppercase chars; otherwise produce normal key
 
 store(acu0) 'ACIKS'
 store(acu1) 'ÁĆÍḰŚ'   
@@ -104,17 +102,21 @@ store(mau0) 'KNT'
 store(mau1) 'ḴṈṮ'
 store(mau2) 'WX'  
 
-any(sla0) + [NCAPS K_SLASH] > index(sla1,1)
-any(acu0) + [NCAPS K_QUOTE] > index(acu1,1)
-any(bar0) + [NCAPS K_HYPHEN] > index(bar1,1) 
-any(mau0) + [NCAPS K_COLON] > index(mau1,1)
-any(mau2) + [NCAPS K_COLON] > index(mau2,1) U+0331  
+store(slashkey) [NCAPS K_SLASH] [CAPS K_SLASH]
+store(acutekey) [NCAPS K_QUOTE] [CAPS K_QUOTE]
+store(strokekey) [NCAPS K_HYPHEN] [CAPS K_HYPHEN]
+store(underkey) [NCAPS K_COLON] [CAPS K_COLON]
 
-any(sla0) + [CAPS K_SLASH] > index(sla1,1)
-any(acu0) + [CAPS K_QUOTE] > index(acu1,1)
-any(bar0) + [CAPS K_HYPHEN] > index(bar1,1) 
-any(mau0) + [CAPS K_COLON] > index(mau1,1)
-any(mau2) + [CAPS K_COLON] > index(mau2,1) U+0331 
+any(sla0) + any(slashkey) > index(sla1,1)
+any(acu0) + any(acutekey) > index(acu1,1)
+any(bar0) + any(strokekey) > index(bar1,1) 
+any(mau0) + any(underkey) > index(mau1,1)
+any(mau2) + any(underkey) > index(mau2,1) U+0331  
+
++ any(slashkey) > '/'
++ any(acutekey) > "'"
++ any(strokekey) > '-'
++ any(underkey) > ';' 
 
 c regardless of caps state, replace brackets with angle quotes
 
@@ -141,5 +143,5 @@ group(normalize)
 group(x) using keys
 
 C don't understand the purpose of this last part but it triggers a warning now due to all the caps
-C store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-C + any(allkeys) > index(allkeys, 1)
+store(allkeys) 'abcdefghijklmnopqrtuvwxyzABCDEFGHIJKLMNOPQRTUVWXYZ1234567890=\`~!@#$%^&*()+|'
++ any(allkeys) > index(allkeys, 1)
