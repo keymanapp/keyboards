@@ -1,10 +1,6 @@
 sil_senegal_bsc_azerty keyboard
 ==============
 
-©2021 SIL International
-
-Version 1.0.0
-
 Description
 -----------
 
