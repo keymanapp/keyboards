@@ -70,14 +70,14 @@ The Mesob layout also has the goal of providing <em>all</em> letters actively us
 The most frequently used letters generally appear in the inner rings, and less used letters appear in the out rings. Letters are arranged in a semi-alphabetic arrangement in the clockwise direction, but not strictly so.  Some effort is made to group related letters together (related either by sound or shape).
 </p>
 
-<img src="gff_mesobe_fidelat-default-1.jpeg" style="border: 1px solid black;" width="500px"/>
+<img src="images/gff_mesobe_fidelat-default-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 
 <p style="text-align: justify;">
 Tapping a key once, the modifier letters on the left (<code>ኡ</code>, <code>ኢ</code> <code>ኣ</code>,) and right  (<code>ኤ</code>, <code>ኦ</code>, <code>ዋ</code>) of the outer ring will update. For example, tapping <code>ገ</code>, the modifiers change to <code>ጉ</code>, <code>ጊ</code>, <code>ጋ</code>, <code>ጌ</code>, <code>ጎ</code> and  <code>ጓ</code>.  If a modifier is tapped, ገ will be updated on screen and replaced with the selected letter.
 </p>
 
-<img src="gff_mesobe_fidelat-default-2.jpeg" style="border: 1px solid black;" width="500px"/> 
+<img src="images/gff_mesobe_fidelat-default-2.jpeg" style="border: 1px solid black;" width="100%"/> 
 
 
 <p style="text-align: justify;">
@@ -89,7 +89,7 @@ Note how the <code>ዋ</code> key changes to <code>ጓ</code>.  Tapping the <cod
 As an alternative, if preferred, holding a key down for a few moments (called a “longpress”) a popup menu appears where you can tap the letter desired.  The popup menu for <code>ግ</code> is shown below:
 </p>
 
-<img src="gff_mesobe_fidelat-default-3.jpeg" style="border: 1px solid black;" width="500px"/> 
+<img src="images/gff_mesobe_fidelat-default-3.jpeg" style="border: 1px solid black;" width="100%"/> 
 
 
 <p style="text-align: justify;">
@@ -104,7 +104,7 @@ Like the letter keys, the <code>።</code> and <code>’</code> keys also have p
 Tap the `1/፩` key to shift to the numerals layer. The numerals layer presents the Western numbers, Geʾez numbers, and all Geʾez punctuation.
 </p>
 
-<img src="gff_mesobe_fidelat-numerals-1.jpeg" style="border: 1px solid black;" width="500px"/>
+<img src="images/gff_mesobe_fidelat-numerals-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
 Tapping the `@` shifts to a 3rd layer to access all remaining punctuation:
@@ -119,12 +119,12 @@ Tapping the `@` shifts to a 3rd layer to access all remaining punctuation:
 Punctuation is distributed over two layers on mobile phones, and appears on a single layer on tablets where more screen space is available. The first punctuation layer provides the most frequently used set of symbols:
 </p>
 
-<img src="gff_mesobe_fidelat-punctuation-1.jpeg" style="border: 1px solid black;" width="500px"/>
+<img src="images/gff_mesobe_fidelat-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
 Tapping the `#+€` key shifts to a final layer to access all remaining punctuation:
 </p>
-<img src="gff_mesobe_fidelat-punctuation-2.jpeg" style="border: 1px solid black;" width="500px"/> 
+<img src="images/gff_mesobe_fidelat-punctuation-2.jpeg" style="border: 1px solid black;" width="100%"/> 
 
 <p style="text-align: justify;">
 Simply tap the `ሀለሐ` key to return to the Mesob letters layers.
@@ -140,7 +140,7 @@ Simply tap the `ሀለሐ` key to return to the Mesob letters layers.
 The Mesob tablet layout is <em>identical</em> to the mobile phone layout with the exception that a single punctuation layer is used. The single takes advantage of the greater screen space available.  The larger punctuation layer is shown in the following image:
 </p>
 
-<img src="gff_mesobe_fidelat-tablet-punctuation-1.jpeg" style="border: 1px solid black;" width="500px"/>
+<img src="images/gff_mesobe_fidelat-tablet-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
 </div>
 </div>
 
