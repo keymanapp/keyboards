@@ -71,19 +71,19 @@ The Mesob layout also has the goal of providing <em>all</em> letters actively us
 The most frequently used letters generally appear in inner rings, and less used letters appear in the out rings. Letters are arranged in a semi-alphabetic arrangement in the clockwise direction, but not strictly so.  Some effort is made to group related letters together (related either by sound or shape).
 </p>
 
-<img src="images/gff_harege_fidelat-default-1.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harege_fidelat-default-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
 Tapping a key once enters it on to the screen in the 6th (ሳድስ) form and a “halo” appears on the keyboard of the related letters. Tapping a related letter will update the first letter, or tap the 6th letter again to go back to the starting keyboard. 
 </p>
 
-<img src="images/gff_harege_fidelat-default-2.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harege_fidelat-default-2.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
 Note the highlighted arrow button, <code>▶</code>, above the Enter key, it will appear for large families of related letters.  When you need them, the <code>▶</code> button will bring up a 2nd halo of letters that are used less frequently. Note the reverse <code>◀</code> button which will go back to the first halo.
 </p>
 
-<img src="images/gff_harege_fidelat-default-3.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harege_fidelat-default-3.jpeg" style="border: 1px solid black;" width="100%"/>
 </div>
 
 <div style="margin-left: 1em;">
@@ -93,7 +93,7 @@ Note the highlighted arrow button, <code>▶</code>, above the Enter key, it wil
 On the letter keyboards, the <code>።</code> and <code>’</code> keys are the use popup menus to offer the most frequently used punctuation that did not fit easily on the keyboard.  Tap the <code>@</code> key to access all available Western punctuation as shown:
 </p>
 
-<img src="images/gff_harege_fidelat-punctuation-1.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harege_fidelat-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
 </div>
 
 <div style="margin-left: 1em;">
@@ -103,7 +103,7 @@ On the letter keyboards, the <code>።</code> and <code>’</code> keys are the 
 Tap the <code>1/፩</code> key on the letter keyboards to shift to numerals. The numerals layer presents the Western numbers, Geʾez numbers, and all Geʾez punctuation.
 </p>
 
-<img src="images/gff_harege_fidelat-numerals-1.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harege_fidelat-numerals-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 </div>
 </div>
