@@ -10,7 +10,7 @@ function validate_keyboard_info {
     return 99
   fi
 
-  $KMCOMP_LAUNCHER "$KMCOMP" -s -v "$1" || return 1
+  $KMCOMP_LAUNCHER "$KMCOMP" -v "$1" || return 1
   return 0
 }
 
