@@ -4,6 +4,7 @@
   Documentation:    
   Description:      
   Create Date:      23 Oct 2022
+  Last Update:      19 Nov 2022
 */
   $pagename = 'Harege Fidelat Keyboard Help';
   $pagetitle = 'Harege Fidelat Keyboard Help';
@@ -132,7 +133,8 @@ their products.</p>
 <div id="Related">
 <h3>Related Keyboard Layouts</h3>
 <p>Keyboard Layouts for other Ethiopic languages:</p>
-<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
+<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
@@ -165,6 +167,8 @@ their products.</p>
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.01 19 Nov 2022</dt>
+  <dd>Various <code>nextlayer</code> attributes fixed.</dd>
   <dt>Version 1.0 12 Nov 2022</dt>
   <dd>Initial release.</dd>
 </dl>
