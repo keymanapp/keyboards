@@ -4,6 +4,7 @@
   Documentation:    
   Description:      
   Create Date:      23 Oct 2022
+  Last Update:      22 Nov 2022
 */
   $pagename = 'Mesobe Fidelat Keyboard Help';
   $pagetitle = 'Mesobe Fidelat Keyboard Help';
@@ -194,6 +195,8 @@ their products.</p>
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.01 22 Nov 2022</dt>
+  <dd>The "ፀ" key on the "ፀ-layer" set to "Default" type from "Deadkey" type.</dd>
   <dt>Version 1.0 12 Nov 2022</dt>
   <dd>Initial release.</dd>
 </dl>
