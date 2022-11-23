@@ -14,7 +14,7 @@ c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
   store(&Version) '10.0'
 store(&KEYBOARDVERSION) '1.0'
-  store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
+store(&NAME) 'ግዕዝ (EMUFI)'
 c  store(&EthnologueCode) 'gez'
 store(&COPYRIGHT) '© 2022 Ge' U+0027 'ez Frontier Foundation'
   store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
@@ -42,11 +42,11 @@ c language specific mappings
   store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys) 'hlHm_rsqbtxnkw_zydgTPSDfp'
+  store(keys) 'hlHm^rsqbtxnkw^zydgTPSDfp'
 
 c the following is Ge'ez specific
-  store(ሌሎች፡keys) 'LMRXBvVcQNKWYDjJZGCF'
-  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
+  store(ሌሎች፡keys) 'LMRXBvVcQNKWYjJZGCF'
+  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይግግዝግጥፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
@@ -99,8 +99,21 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
-  store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
+  store(ዜማ፡menu) '[᎐⓵᎓⓶᎒⓷᎙⓸᎑⓹᎔⓺᎖⓻᎕⓼᎗⓽᎘🄋_፟]'        c ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨
   store(ዜማ፡keys) '1234567890_'
+  store(AratNeteboch) ''
+  store(AratNeteboch፡menu) '[₁₂₃₄₅₆₇]'
+  store(sevenKeys) '1234567'
+  store(deret፡menu) '[①|②|③]'
+  store(deretDeret፡menu) '[]'
+  store(twoKeys) '12'
+  store(threeKeys) '123'
+  store(fourKeys) '1234'
+  store(deret፡outs) ''
+  store(difat፡menu) '[①|②|③|④]'
+  store(difat፡outs) ''
+
+c ₀₁₂₃₄₅₆₇₈₉
 c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
 c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
@@ -125,6 +138,9 @@ c The input section here is for rules that must precede other rules
 c
   + '_' > outs(ዜማ፡menu)
   outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
+
+  '።' + [K_TAB] > outs(AratNeteboch፡menu) 
+  outs(AratNeteboch፡menu) + any(sevenKeys) > use(emufi)
 
   deadkey(1) + "'" > "'"
   deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
@@ -328,7 +344,22 @@ c convenience and is also a trial to support the 500+ EMUFI symbols more fully.
   store(emufi፡symbols) ''
   'ቆመ' + '@' > ''
   'ፕ' + '@' > '☧'
-  any(emufi፡keys) + '@' > index(emufi፡symbols,1) 
+  any(emufi፡keys) + '@' > index(emufi፡symbols,1)
+
+  c 															  											
+
+  c 											   											
+
+ c 															  			
+'᎑' + [K_TAB] > outs(deret፡menu)
+outs(deret፡menu) + any(threeKeys) > use(deretGroup)
+c '' + [K_TAB] > outs(deretDifat፡menu)
+
+
+'᎔' + [K_TAB] > outs(difat፡menu)
+outs(difat፡menu) + any(fourKeys) > use(difatGroup)
+
+
 c
 c ---------------------End of EMUFI Symbols---------------------------------------------------
 
@@ -338,6 +369,18 @@ group(ዜማ፡group) using keys
 nomatch        > use(main)      
 c ---------------------End ዜማ Group----------------------------------------------------------
 
-       
+group(emufi) using keys
++ any(sevenKeys) > index(AratNeteboch, 1)
+nomatch > use(main)
+
+group(deretGroup) using keys
++ any(threeKeys) > index(deret፡outs,1)
+c + '1' > ''
+c + '2' > ''
+nomatch > use(main)
+
+group(difatGroup) using keys
++ any(fourKeys) > index(difat፡outs,1)
+nomatch > use(main)
 
 c =====================End Functional Section===================================================
