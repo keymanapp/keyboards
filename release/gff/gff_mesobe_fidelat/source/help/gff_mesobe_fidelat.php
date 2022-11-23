@@ -102,13 +102,13 @@ Like the letter keys, the <code>።</code> and <code>’</code> keys also have p
 <h4>Numerals</h4>
 
 <p style="text-align: justify;">
-Tap the `1/፩` key to shift to the numerals layer. The numerals layer presents the Western numbers, Geʾez numbers, and all Geʾez punctuation.
+Tap the <code>1/፩</code> key to shift to the numerals layer. The numerals layer presents the Western numbers, Geʾez numbers, and all Geʾez punctuation.
 </p>
 
 <img src="images/gff_mesobe_fidelat-numerals-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
-Tapping the `@` shifts to a 3rd layer to access all remaining punctuation:
+Tapping the <code>@</code> shifts to a 3rd layer to access all remaining punctuation:
 </p>
 
 </div>
@@ -123,12 +123,12 @@ Punctuation is distributed over two layers on mobile phones, and appears on a si
 <img src="images/gff_mesobe_fidelat-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
-Tapping the `#+€` key shifts to a final layer to access all remaining punctuation:
+Tapping the <code>#+€</code> key shifts to a final layer to access all remaining punctuation:
 </p>
 <img src="images/gff_mesobe_fidelat-punctuation-2.jpeg" style="border: 1px solid black;" width="100%"/> 
 
 <p style="text-align: justify;">
-Simply tap the `ሀለሐ` key to return to the Mesob letters layers.
+Simply tap the <code>ሀለሐ</code> key to return to the Mesob letters layers.
 </p>
 
 </div>

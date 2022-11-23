@@ -27,6 +27,16 @@
 EXTRA;
   require_once('header.php');
 ?>
+<style type="text/css" media="screen">
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(175, 184, 193, 0.2);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+</style>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
@@ -90,7 +100,7 @@ Tapping a key once, the modifier letters to the left (<code>አ</code>, <code>�
 <img src="images/gff_amharic-default-2.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p>
-As an alternative, if preferred, holding a key down for a few moments (called a "longpress") a popup menu appears where you can tap the letter desired.  The popup menu for <code>ግ</code> is shown below:
+As an alternative, if preferred, holding a key down for a few moments (called a “longpress”) a popup menu appears where you can tap the letter desired.  The popup menu for <code>ግ</code> is shown below:
 </p>
 
 <img src="images/gff_amharic-default-4.jpeg" style="border: 1px solid black;" width="100%"/>
@@ -104,7 +114,7 @@ The modifier keys will also have popups as applicable.  For example to enter the
 
 <h3>Punctuation</h3>
 
-<p>When typing letters, the <code>!</code> and <code>።</code> keys are available for entering the most common punctuation without shifting to another "layer".  The following image shows the punctuation for a longpress of <code>!</code>:</p>
+<p>When typing letters, the <code>!</code> and <code>።</code> keys are available for entering the most common punctuation without shifting to another “layer”.  The following image shows the punctuation for a longpress of <code>!</code>:</p>
 
 <img src="images/gff_amharic-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
