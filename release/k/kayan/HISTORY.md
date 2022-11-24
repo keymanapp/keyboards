@@ -1,6 +1,10 @@
 ﻿Change History
 =======================
 
+1.5.1 (1 Jul 2021)
+--------------------
+* Add new version of Andika font (with new weights) to the package 
+
 1.5 (26 Oct 2020)
 --------------------
 * Add Andika font to the package 

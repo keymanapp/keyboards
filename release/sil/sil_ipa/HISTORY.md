@@ -1,6 +1,10 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+1.8.6 (2021-07-01)
+----------------
+* Updated to use new version of Charis SIL
+
 1.8.5 (20 May 2021)
 -------------------
 * Resolves conflict with `{` key with German hardware keyboard

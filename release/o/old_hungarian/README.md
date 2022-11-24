@@ -1,9 +1,7 @@
 Old Hungarian keyboard
 ==============
 
-© 2021 SIL International
-
-Version 1.0
+© SIL International
 
 Description
 -----------
@@ -16,7 +14,12 @@ Mobile layout based on design by András Tisza.
 
 Links
 -----
-https://keyman.com/keyboards/old_hungarian
+Keyboard home: https://keyman.com/keyboards/old_hungarian
+
+The Unicode standard block for Old Hungarian: https://unicode.org/charts/PDF/U10C80.pdf
+
+The Kende-fonts project page: https://github.com/kende-font/kende-font
+
 
 Supported Platforms
 -------------------

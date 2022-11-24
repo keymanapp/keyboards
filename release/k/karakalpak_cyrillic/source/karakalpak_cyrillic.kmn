@@ -1,0 +1,256 @@
+﻿c karakalpak_cyrillic generated from template at 2022-09-23 11:24:22
+c with name "Karakalpak Cyrillic"
+store(&VERSION) '10.0'
+store(&NAME) 'Karakalpak Cyrillic'
+store(&COPYRIGHT) '© Shaǵala Lab'
+store(&KEYBOARDVERSION) '0.2'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'karakalpak_cyrillic.kvks'
+store(&LAYOUTFILE) 'karakalpak_cyrillic.keyman-touch-layout'
+
+c Note three entry points, rather than the traditional single entry point
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+store(&CasedKeys) [K_A] .. [K_Z]
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Okay, let's stay on the numeric layer if we are there already
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Don't swap off the caps lock layer automatically
+    if(&layer = 'caps') > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+
+    c Some common end-of-sentence punctuation
+    store(sentencePunctuation) '.?!'
+
+    c If we are at the start of a text field, we're at the 'start of a
+    c sentence', so we'll move to the Shift layer
+    nul > layer('shift')
+
+    c Otherwise, we'll move to the Shift layer only if we see end of a
+    c sentence followed by one or two spaces.
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+
+    c And because we haven't see any of these situations above, we'll
+    c move to the default layer. Note that this effectively drops us
+    c back to the default layer after every keystroke that isn't blocked
+    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
+    nomatch > layer('default')
+
+group(main) using keys
+
++ [NCAPS K_A] > U+0444
++ [CAPS K_A] > U+0424
++ [NCAPS SHIFT K_A] > U+0424
++ [CAPS SHIFT K_A] > U+0444
+
++ [NCAPS K_B] > U+0438
++ [CAPS K_B] > U+0418
++ [NCAPS SHIFT K_B] > U+0418
++ [CAPS SHIFT K_B] > U+0438
+
++ [NCAPS K_C] > U+0441
++ [CAPS K_C] > U+0421
++ [NCAPS SHIFT K_C] > U+0421
++ [CAPS SHIFT K_C] > U+0441
+
++ [NCAPS K_D] > U+0432
++ [CAPS K_D] > U+0412
++ [NCAPS SHIFT K_D] > U+0412
++ [CAPS SHIFT K_D] > U+0432
+
++ [NCAPS K_E] > U+0443
++ [CAPS K_E] > U+0423
++ [NCAPS SHIFT K_E] > U+0423
++ [CAPS SHIFT K_E] > U+0443
+
++ [NCAPS K_F] > U+0430
++ [CAPS K_F] > U+0410
++ [NCAPS SHIFT K_F] > U+0410
++ [CAPS SHIFT K_F] > U+0430
+
++ [NCAPS K_G] > U+043f
++ [CAPS K_G] > U+041f
++ [NCAPS SHIFT K_G] > U+041f
++ [CAPS SHIFT K_G] > U+043f
+
++ [NCAPS K_H] > U+0440
++ [CAPS K_H] > U+0420
++ [NCAPS SHIFT K_H] > U+0420
++ [CAPS SHIFT K_H] > U+0440
+
++ [NCAPS K_I] > U+0448
++ [CAPS K_I] > U+0428
++ [NCAPS SHIFT K_I] > U+0428
++ [CAPS SHIFT K_I] > U+0448
+
++ [NCAPS K_J] > U+043e
++ [CAPS K_J] > U+041e
++ [NCAPS SHIFT K_J] > U+041e
++ [CAPS SHIFT K_J] > U+043e
+
++ [NCAPS K_K] > U+043b
++ [CAPS K_K] > U+041b
++ [NCAPS SHIFT K_K] > U+041b
++ [CAPS SHIFT K_K] > U+043b
+
++ [NCAPS K_L] > U+0434
++ [CAPS K_L] > U+0414
++ [NCAPS SHIFT K_L] > U+0414
++ [CAPS SHIFT K_L] > U+0434
+
++ [NCAPS K_M] > U+044c
++ [CAPS K_M] > U+042c
++ [NCAPS SHIFT K_M] > U+042c
++ [CAPS SHIFT K_M] > U+044c
+
++ [NCAPS K_N] > U+0442
++ [CAPS K_N] > U+0422
++ [NCAPS SHIFT K_N] > U+0422
++ [CAPS SHIFT K_N] > U+0442
+
++ [NCAPS K_O] > U+0449
++ [CAPS K_O] > U+0429
++ [NCAPS SHIFT K_O] > U+0429
++ [CAPS SHIFT K_O] > U+0449
+
++ [NCAPS K_P] > U+0437
++ [CAPS K_P] > U+0417
++ [NCAPS SHIFT K_P] > U+0417
++ [CAPS SHIFT K_P] > U+0437
+
++ [NCAPS K_Q] > U+0439
++ [CAPS K_Q] > U+0419
++ [NCAPS SHIFT K_Q] > U+0419
++ [CAPS SHIFT K_Q] > U+0439
+
++ [NCAPS K_R] > U+043a
++ [CAPS K_R] > U+041a
++ [NCAPS SHIFT K_R] > U+041a
++ [CAPS SHIFT K_R] > U+043a
+
++ [NCAPS K_S] > U+044b
++ [CAPS K_S] > U+042b
++ [NCAPS SHIFT K_S] > U+042b
++ [CAPS SHIFT K_S] > U+044b
+
++ [NCAPS K_T] > U+0435
++ [CAPS K_T] > U+0415
++ [NCAPS SHIFT K_T] > U+0415
++ [CAPS SHIFT K_T] > U+0435
+
++ [NCAPS K_U] > U+0433
++ [CAPS K_U] > U+0413
++ [NCAPS SHIFT K_U] > U+0413
++ [CAPS SHIFT K_U] > U+0433
+
++ [NCAPS K_V] > U+043c
++ [CAPS K_V] > U+041c
++ [NCAPS SHIFT K_V] > U+041c
++ [CAPS SHIFT K_V] > U+043c
+
++ [NCAPS K_W] > U+0446
++ [CAPS K_W] > U+0426
++ [NCAPS SHIFT K_W] > U+0426
++ [CAPS SHIFT K_W] > U+0446
+
++ [NCAPS K_X] > U+0447
++ [CAPS K_X] > U+0427
++ [NCAPS SHIFT K_X] > U+0427
++ [CAPS SHIFT K_X] > U+0447
+
++ [NCAPS K_Y] > U+043d
++ [CAPS K_Y] > U+041d
++ [NCAPS SHIFT K_Y] > U+041d
++ [CAPS SHIFT K_Y] > U+043d
+
++ [NCAPS K_Z] > U+044f
++ [CAPS K_Z] > U+042f
++ [NCAPS SHIFT K_Z] > U+042f
++ [CAPS SHIFT K_Z] > U+044f
+
++ [NCAPS K_COLON] > U+0436
++ [CAPS K_COLON] > U+0416
++ [NCAPS SHIFT K_COLON] > U+0416
++ [CAPS SHIFT K_COLON] > U+0436
+
++ [K_EQUAL] > U+003d
++ [SHIFT K_EQUAL] > U+002b
+
++ [NCAPS K_COMMA] > U+0431
++ [CAPS K_COMMA] > U+0411
++ [NCAPS SHIFT K_COMMA] > U+0411
++ [CAPS SHIFT K_COMMA] > U+0431
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+005f
+
++ [NCAPS K_PERIOD] > U+044e
++ [CAPS K_PERIOD] > U+042e
++ [NCAPS SHIFT K_PERIOD] > U+042e
++ [CAPS SHIFT K_PERIOD] > U+044e
+
++ [K_SLASH] > U+002e
++ [SHIFT K_SLASH] > U+002c
+
++ [NCAPS K_BKQUOTE] > U+0451
++ [CAPS K_BKQUOTE] > U+0401
++ [NCAPS SHIFT K_BKQUOTE] > U+0401
++ [CAPS SHIFT K_BKQUOTE] > U+0451
+
++ [NCAPS K_LBRKT] > U+0445
++ [CAPS K_LBRKT] > U+0425
++ [NCAPS SHIFT K_LBRKT] > U+0425
++ [CAPS SHIFT K_LBRKT] > U+0445
+
++ [NCAPS K_RBRKT] > U+044a
++ [CAPS K_RBRKT] > U+042a
++ [NCAPS SHIFT K_RBRKT] > U+042a
++ [CAPS SHIFT K_RBRKT] > U+044a
+
++ [NCAPS K_QUOTE] > U+044d
++ [CAPS K_QUOTE] > U+042d
++ [NCAPS SHIFT K_QUOTE] > U+042d
++ [CAPS SHIFT K_QUOTE] > U+044d
+
+c dead keys and combinations for desktop only
+
+store(small_letters) [NCAPS K_F] [NCAPS K_E] [NCAPS K_B] [NCAPS K_R] [NCAPS K_Y] [NCAPS K_U] [NCAPS K_J] [NCAPS K_LBRKT]
+store(small_acute_letters) U+04D9 U+045E U+04AF U+049B U+04A3 U+0493 U+04E9 U+04B3
+
+store(capital_letters) [NCAPS SHIFT K_F] [NCAPS SHIFT K_E] [NCAPS SHIFT K_B] [NCAPS SHIFT K_R] [NCAPS SHIFT K_Y] [NCAPS SHIFT K_U] [NCAPS SHIFT K_J] [NCAPS SHIFT K_LBRKT]
+store(capital_letters2) [CAPS K_F] [CAPS K_E] [CAPS K_B] [CAPS K_R] [CAPS K_Y] [CAPS K_U] [CAPS K_J] [CAPS K_LBRKT]
+store(capital_acute_letters) U+04D8 U+040E U+04AE U+049A U+04A2 U+0492 U+04E8 U+04B2
+
+$keymanonly: + '\' > dk(backslash)
+
+dk(backslash) + any(small_letters) > index(small_acute_letters, 2)
+dk(backslash) + any(capital_letters) > index(capital_acute_letters, 2)
+dk(backslash) + any(capital_letters2) > index(capital_acute_letters, 2)
+
+dk(backslash) + '\' > '\'
+dk(backslash) + ' ' > '\'

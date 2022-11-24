@@ -1,6 +1,24 @@
 gff_amharic Change History
 ==========================
 
+
+3.1 (12 Nov 2022)
+-----------------
+* Lighter CSS with wildcard selectors.
+
+3.0 (27 Oct 2022)
+-----------------
+* Dynamic modifier key updates.
+
+2.3 (22 Oct 2022)
+-----------------
+* Fixes to several problems with vowel input for touch platform.
+
+2.2 (19 Jul 2021)
+------------------
+* Extensions for Unicode 14
+* Addition of the Abyssinica SIL (Connected)
+
 2.1 (11 Apr 2021)
 ------------------
 * CSS Colored keys.

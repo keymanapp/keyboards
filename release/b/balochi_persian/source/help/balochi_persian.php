@@ -22,5 +22,7 @@ Press and hold on the key with a little dot on the top right to reveal them.</p>
 </div>
 
 <h2>Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press.
+Press and hold on the key with a little dot on the top right to reveal them.</p>
 <div id='osk-tablet' data-states='default shift'>
 </div>

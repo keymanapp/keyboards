@@ -1,0 +1,44 @@
+﻿c 2022-10-13 Update:
+c 1.Fixed the desktop keyboard layout, now it will not produce Latin letters.
+store(&VERSION) '10.0'
+store(&NAME) 'Makasar Inscript'
+store(&COPYRIGHT) '© Joshua Wong'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'makasar_inscript.kvks'
+store(&LAYOUTFILE) 'makasar_inscript.keyman-touch-layout'
+store(&MESSAGE) 'This keyboard is designed for the Makassar language, using the Makasar script with an Inscript layout.'
+store(&BITMAP) 'makasar_inscript.ico'
+
+store(nul) "wxzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_COMMA] > '𑻷'
++ [K_Q] > '𑻲'
++ [K_PERIOD] > '𑻸'
++ [K_O] > '𑻶'
++ [K_E] > '𑻵'
++ [K_U] > '𑻴'
++ [K_I] > '𑻳'
++ [K_H] > '𑻫'
++ [K_F] > '𑻢'
++ [K_A] > '𑻱'
++ [K_S] > '𑻰'
++ [K_V] > '𑻯'
++ [K_L] > '𑻮'
++ [K_R] > '𑻭'
++ [K_Y] > '𑻬'
++ [K_J] > '𑻪'
++ [K_C] > '𑻩'
++ [K_N] > '𑻨'
++ [K_D] > '𑻧'
++ [K_T] > '𑻦'
++ [K_M] > '𑻥'
++ [K_B] > '𑻤'
++ [K_P] > '𑻣'
++ [K_G] > '𑻡'
++ [K_K] > '𑻠'
+
++ any(nul) > nul

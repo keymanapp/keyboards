@@ -1,0 +1,40 @@
+﻿c 2022-10-13 Update:
+c 1.Changed the phone keyboard layout,
+c 2.Fixed the desktop keyboard layout, now it will not produce Latin letters.
+store(&VERSION) '10.0'
+store(&NAME) 'Tagbanwa Inscript'
+store(&COPYRIGHT) '© Joshua Wong'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'tagbanwa_inscript.kvks'
+store(&LAYOUTFILE) 'tagbanwa_inscript.keyman-touch-layout'
+store(&BITMAP) 'tagbanwa_inscript.ico'
+store(&MESSAGE) 'This keyboard is designed for the Central Tagbanwa language, using the Tagbanwa script with an Inscript layout.'
+
+store(nul) "qrfjzxcvABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_PERIOD] > '᜶'
++ [K_COMMA] > '᜵'
++ [K_O] > 'ᝳ'
++ [K_E] > 'ᝲ'
++ [K_H] > 'ᝥ'
++ [K_S] > 'ᝰ'
++ [K_W] > 'ᝯ'
++ [K_L] > 'ᝮ'
++ [K_Y] > 'ᝬ'
++ [K_M] > 'ᝫ'
++ [K_B] > 'ᝪ'
++ [K_P] > 'ᝩ'
++ [K_N] > 'ᝨ'
++ [K_D] > 'ᝧ'
++ [K_T] > 'ᝦ'
++ [K_G] > 'ᝤ'
++ [K_K] > 'ᝣ'
++ [K_U] > 'ᝢ'
++ [K_I] > 'ᝡ'
++ [K_A] > 'ᝠ'
+
++ any(nul) > nul

@@ -2,12 +2,42 @@
 c with name "CreeBoard"
 store(&VERSION) '10.0'
 store(&NAME) 'CreeBoard'
-store(&COPYRIGHT) '© 2001-2020 Bill Jancewicz'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '© Bill Jancewicz'
+store(&KEYBOARDVERSION) '1.2'
 store(&VISUALKEYBOARD) 'bj_cree_east_james_bay.kvks'
-store(&TARGETS) 'windows macosx linux web desktop'
+store(&TARGETS) 'desktop web'
 
 begin Unicode > use(main)
+
+c Eastern Finals (short)
+store(C_ef)  U+1401 U+1403 U+1404 U+1405 U+1406 U+140A U+140B U+142F U+1431 U+1432 U+1433 U+1434 U+1438 U+1439 \
+             U+144C U+144E U+144F U+1450 U+1451 U+1455 U+1456 U+146B U+146D U+146E U+146F U+1470 U+1472 U+1473 \
+             U+1489 U+148B U+148C U+148D U+148E U+1490 U+1491 U+14A3 U+14A5 U+14A6 U+14A7 U+14A8 U+14AA U+14AB \
+             U+14C0 U+14C2 U+14C3 U+14C4 U+14C5 U+14C7 U+14C8 U+14ED U+14EF U+14F0 U+14F1 U+14F2 U+14F4 U+14F5 \
+             U+1510 U+1511 U+1512 U+1513 U+1514 U+1515 U+1516 U+1543 U+1546 U+1547 U+1548 U+1549 U+154B U+154C \
+             U+14D3 U+14D5 U+14D6 U+14D7 U+14D8 U+14DA U+14DB U+1526 U+1528 U+1529 U+152A U+152B U+152D U+152E \
+             U+155A U+1567
+
+c Eastern Finals Composed (short)
+store(C_efc) U+140C U+140E U+1410 U+1412 U+1414 U+1417 U+1419 U+143A U+143C U+143E U+1440 U+1442 U+1444 U+1446 \
+             U+1457 U+1459 U+145B U+145D U+145F U+1461 U+1463 U+1474 U+1476 U+1478 U+147A U+147C U+147E U+1480 \
+             U+1492 U+1494 U+1496 U+1498 U+149A U+149C U+149E U+14AC U+14AE U+14B0 U+14B2 U+14B4 U+14B6 U+14B8 \
+             U+14C9 U+18C6 U+18C8 U+18CA U+18CC U+14CB U+14CD U+14F6 U+14F8 U+14FA U+14FC U+14FE U+1500 U+1502 \
+             U+1517 U+1519 U+151B U+151D U+151F U+1521 U+1523 U+18CE U+18CF U+18D0 U+18D1 U+18D2 U+18D3 U+154E \
+             U+14DC U+14DE U+14E0 U+14E2 U+14E4 U+14E6 U+14E8 U+152F U+1531 U+1533 U+1535 U+1537 U+1539 U+153B \ 
+             U+155B U+1568           
+
+c Eastern Finals (long a) w      pw     tw     kw     chw    mw     nw     sw     shw    rw     lw     yw
+store(C_ef_long_a)        U+1417 U+1444 U+1461 U+147E U+149C U+14B6 U+14CB U+1500 U+1521 U+18D3 U+14E6 U+1539
+store(C_efc_long_a)       U+1419 U+1446 U+1463 U+1480 U+149E U+14B8 U+14CD U+1502 U+1523 U+154E U+14E8 U+153B
+
+c Eastern Finals (long i) w      pw     tw     kw     chw    mw     nw     sw     shw    rw     lw     yw
+store(C_ef_long_i)        U+140E U+143C U+1459 U+1476 U+1494 U+14AE U+18C6 U+14F8 U+1519 U+18CF U+14DE U+1531
+store(C_efc_long_i)       U+1410 U+143E U+145B U+1478 U+1496 U+14B0 U+18C8 U+14FA U+151B U+18D0 U+14E0 U+1533
+
+c Eastern Finals (long o/u) w      pw     tw     kw     chw    mw     nw     sw     shw    rw     lw     yw
+store(C_ef_long_u)          U+1412 U+1440 U+145D U+147A U+1498 U+14B2 U+18CA U+14FC U+151D U+18D1 U+14E2 U+1535
+store(C_efc_long_u)         U+1414 U+1442 U+145F U+147C U+149A U+14B4 U+18CC U+14FE U+151F U+18D2 U+14E4 U+1537
 
 group(main) using keys
 
@@ -23,6 +53,10 @@ c Old Macintosh keyboard layout. (Not Roman: Q=che, q=chi)
 c Luci Salt's keyboard suggestions applied. See the doc file with the Keyboard
 c Layout illustrated, CREEBRD.DOC
 
+c  Option keys Set composite mode by default
+    store(option_key)     ''
+ + [RALT K_EQUAL]	>	set(option_key='nfd') c 
+ + [SHIFT RALT K_EQUAL]	>	reset(option_key)  c 
 
 + "Q"             > U+1489  c che
 + [SHIFT RALT K_Q] > U+1553  c fe
@@ -257,10 +291,26 @@ c top row
 + [RALT K_HYPHEN]       > U+002D  c -
 
 + "+"             > U+003A  c :
-+ [SHIFT RALT K_EQUAL] > deadkey(1)  c dead
+c I think the intent of the deadkey was just to output a nul, so we can remove this rule to use for hotkey option
+c + [SHIFT RALT K_EQUAL] > deadkey(1)  c dead
 + "="             > U+003B  c ;
-+ [RALT K_EQUAL]       > deadkey(1)  c dead
+c I think the intent of the deadkey was just to output a nul, so we can remove this rule to use for hotkey option
+c + [RALT K_EQUAL]       > deadkey(1)  c dead
 
+match > use(nfd)
+
+group(nfd)
+
+c short vowels
+if(option_key = '') U+1427 any(C_ef) > index(C_efc,3)
+
+c long vowels
+if(option_key = '') any(C_ef_long_a) U+140A > index(C_efc_long_a,2)
+if(option_key = '') U+1427 U+1559 U+140A > U+155B c fwaa
+if(option_key = '') U+1427 U+1566 U+140A > U+1568 c thwaa
+
+if(option_key = '') any(C_ef_long_i) U+1403 > index(C_efc_long_i,2)
+if(option_key = '') any(C_ef_long_u) U+1405 > index(C_efc_long_u,2)
 
 
 c EOF

@@ -1,9 +1,7 @@
-﻿Cameroon QWERTY keyboard
+Cameroon QWERTY keyboard
 =====================
 
-Copyright (C) 2018-2020 SIL Cameroon
-
-Version 6.0.5
+Copyright (C) SIL Cameroon
 
 __DESCRIPTION__
 

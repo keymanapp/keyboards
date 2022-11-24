@@ -1,6 +1,20 @@
 Obolo Chwerty Keyboard Change History
 ====================
 
+1.2.1 (2022-06-19)
+----------------
+* Updated kb to use caps and capslock
+* Removed longpress for Q, H, X and C keys. Those are now handled in shift layer.
+* Moved accent key from numbers row on default layer, and from symbols row on shift layer.
+* Miscellaneous minor update to make kb tap into the power of km 15.
+
+1.2.0 (2021-07-05)
+----------------
+* Updated keycap for key 6 to match output on mobile shift layer, and added longpress for ^
+* Activated spacebar on layer alt for mobile/tablet layout
+* Updated documentation
+* Miscellaneous minor updates
+
 1.1.2 (2021-02-04)
 ----------------
 * Updated output for keys CH and SH on SHIFT layer to match key cap on touchscreen and desktop.

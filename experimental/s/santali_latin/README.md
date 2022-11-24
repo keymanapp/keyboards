@@ -1,9 +1,8 @@
 Santali (Latin) keyboard
 ==============
 
-© 2020 SIL International
+© 2020-2022 SIL International
 
-Version 1.0
 
 Description
 -----------

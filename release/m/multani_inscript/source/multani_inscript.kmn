@@ -1,0 +1,58 @@
+﻿c 2022-10-14 Update:
+c 1. Fixed the desktop keyboard, now it will not produce Latin letters,
+c 2. Changed the keyboard layout.
+store(&VERSION) '10.0'
+store(&NAME) 'Multani Inscript'
+store(&COPYRIGHT) '© Joshua Wong'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&MESSAGE) 'This keyboard is designed for the Saraiki language, using the Multani script with an Inscript layout.'
+store(&BITMAP) 'multani_inscript.ico'
+store(&VISUALKEYBOARD) 'multani_inscript.kvks'
+store(&LAYOUTFILE) 'multani_inscript.keyman-touch-layout'
+
+store(nul) "wofWEUIOASFHLVM"
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_COMMA] > '𑊩'
++ [SHIFT K_Z] > '𑊨'
++ [SHIFT K_R] > '𑊧'
++ [K_H] > '𑊦'
++ [K_S] > '𑊥'
++ [K_V] > '𑊤'
++ [K_L] > '𑊣'
++ [K_R] > '𑊢'
++ [K_Y] > '𑊡'
++ [K_M] > '𑊠'
++ [SHIFT K_B] > '𑊟'
++ [K_B] > '𑊝'
++ [SHIFT K_P] > '𑊜'
++ [K_P] > '𑊛'
++ [K_N] > '𑊚'
++ [SHIFT K_D] > '𑊙'
++ [K_D] > '𑊘'
++ [SHIFT K_T] > '𑊗'
++ [K_T] > '𑊖'
++ [SHIFT K_N] > '𑊕'
++ [SHIFT K_X] > '𑊔'
++ [K_Z] > '𑊓'
++ [K_X] > '𑊒'
++ [SHIFT K_Q] > '𑊑'
++ [K_Q] > '𑊐'
++ [SHIFT K_Y] > '𑊏'
++ [SHIFT K_J] > '𑊍'
++ [K_J] > '𑊌'
++ [SHIFT K_C] > '𑊋'
++ [K_C] > '𑊊'
++ [SHIFT K_G] > '𑊈'
++ [K_G] > '𑊆'
++ [SHIFT K_K] > '𑊅'
++ [K_K] > '𑊄'
++ [K_E] > '𑊃'
++ [K_U] > '𑊂'
++ [K_I] > '𑊁'
++ [K_A] > '𑊀'
+
++ any(nul) > nul
