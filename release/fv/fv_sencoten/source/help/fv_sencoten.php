@@ -21,13 +21,18 @@ This keyboard is designed for the <b>SENĆOŦEN</b> language of the BC Coast reg
 
 <p>To type in SENĆOŦEN on Mac or PC, turn CAPS LOCK on. To type a special character, type the base character and then type an accenting key. (Ṯ is typed T then Semicolon ;)</p>
 
-<img src="Sencoten.png" alt="" height="198" width="514" border="0" />
+<img src="../Sencoten.png" />
 
 <ul>
 	<li>To type the acute accent use the Apostrophe key ' — Ć is typed C then Apostrophe '</li>
 	<li>To type the slash accent use the Slash key / — Ⱥ is typed A then Slash /</li>
 	<li>To type the dash accent use the Hyphen key - — Ŧ is typed T then Hyphen -</li>
-	<li>To type the low line accent use the Semicolon key ; — Ṉ is typed N then Semicolon ;</li>
+	<li>There are two options to type the low line accent:
+		<ul>
+			<li>Use the Semicolon key ; — Ṉ is typed N then Semicolon ;</li>
+			<li>Use the Underscore key _ — Ṉ is typed N then Shift-Underscore _</li>
+		</ul>
+	</li>
 	<li>To type cedilla (glottal stop) press Shift+Comma , OR turn on Caps Lock and type Comma , (Cedilla is treated as capitalized comma.)</li>
 	<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.</li>
 	<ul>

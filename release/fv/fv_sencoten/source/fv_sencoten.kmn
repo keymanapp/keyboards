@@ -90,7 +90,7 @@ c period key produces period no matter what shift state, to keep brackets parall
 + [SHIFT NCAPS K_PERIOD] > '.'
 + [SHIFT CAPS K_PERIOD] > '.'
 
-c regardless of caps state, /'-; keys add a diacritic to valid uppercase chars; otherwise produce normal key
+c regardless of caps state, /'-;_ keys add a diacritic to valid uppercase chars; otherwise produce normal key
 
 store(acu0) 'ACIKS'
 store(acu1) 'ÁĆÍḰŚ'   
@@ -106,17 +106,21 @@ store(slashkey) [NCAPS K_SLASH] [CAPS K_SLASH]
 store(acutekey) [NCAPS K_QUOTE] [CAPS K_QUOTE]
 store(strokekey) [NCAPS K_HYPHEN] [CAPS K_HYPHEN]
 store(underkey) [NCAPS K_COLON] [CAPS K_COLON]
+store(underkey2) [NCAPS SHIFT K_HYPHEN] [CAPS SHIFT K_HYPHEN]
 
 any(sla0) + any(slashkey) > index(sla1,1)
 any(acu0) + any(acutekey) > index(acu1,1)
 any(bar0) + any(strokekey) > index(bar1,1) 
 any(mau0) + any(underkey) > index(mau1,1)
-any(mau2) + any(underkey) > index(mau2,1) U+0331  
+any(mau0) + any(underkey2) > index(mau1,1)
+any(mau2) + any(underkey) > index(mau2,1) U+0331
+any(mau2) + any(underkey2) > index(mau2,1) U+0331
 
 + any(slashkey) > '/'
 + any(acutekey) > "'"
 + any(strokekey) > '-'
 + any(underkey) > ';' 
++ any(underkey2) > '_' 
 
 c regardless of caps state, replace brackets with angle quotes
 
@@ -128,9 +132,9 @@ store(quote1) "«»‹›"
 
 c regardless of caps state, store original key values on right alt layer
 
-store(original0ncaps) [RALT NCAPS K_SLASH] [RALT NCAPS K_QUOTE] [RALT NCAPS K_HYPHEN] [RALT NCAPS K_COLON] [RALT NCAPS K_COMMA] [SHIFT NCAPS RALT K_COMMA] [SHIFT NCAPS RALT K_PERIOD] [RALT NCAPS K_LBRKT] [RALT NCAPS K_RBRKT] [SHIFT NCAPS RALT K_LBRKT] [SHIFT NCAPS RALT K_RBRKT]
-store(original0caps) [RALT CAPS K_SLASH] [RALT CAPS K_QUOTE] [RALT CAPS K_HYPHEN] [RALT CAPS K_COLON] [RALT CAPS K_COMMA] [SHIFT CAPS RALT K_COMMA] [SHIFT CAPS RALT K_PERIOD] [RALT CAPS K_LBRKT] [RALT CAPS K_RBRKT] [SHIFT CAPS RALT K_LBRKT] [SHIFT CAPS RALT K_RBRKT]
-store(original1) "/'-;,<>[]{}" 
+store(original0ncaps) [RALT NCAPS K_SLASH] [RALT NCAPS K_QUOTE] [RALT NCAPS K_HYPHEN] [RALT NCAPS K_COLON] [RALT NCAPS K_COMMA] [SHIFT NCAPS RALT K_COMMA] [SHIFT NCAPS RALT K_PERIOD] [RALT NCAPS K_LBRKT] [RALT NCAPS K_RBRKT] [SHIFT NCAPS RALT K_LBRKT] [SHIFT NCAPS RALT K_RBRKT] [NCAPS SHIFT RALT K_HYPHEN]
+store(original0caps) [RALT CAPS K_SLASH] [RALT CAPS K_QUOTE] [RALT CAPS K_HYPHEN] [RALT CAPS K_COLON] [RALT CAPS K_COMMA] [SHIFT CAPS RALT K_COMMA] [SHIFT CAPS RALT K_PERIOD] [RALT CAPS K_LBRKT] [RALT CAPS K_RBRKT] [SHIFT CAPS RALT K_LBRKT] [SHIFT CAPS RALT K_RBRKT] [CAPS SHIFT RALT K_HYPHEN]
+store(original1) "/'-;,<>[]{}_" 
 + any(original0ncaps) > index(original1,1)  
 + any(original0caps) > index(original1,1)  
 
@@ -142,6 +146,6 @@ group(normalize)
 
 group(x) using keys
 
-C don't understand the purpose of this last part but it triggers a warning now due to all the caps
+C don't understand the purpose of this last part but had to take out some keys that trigger a warning due to all the caps
 store(allkeys) 'abcdefghijklmnopqrtuvwxyzABCDEFGHIJKLMNOPQRTUVWXYZ1234567890=\`~!@#$%^&*()+|'
 + any(allkeys) > index(allkeys, 1)

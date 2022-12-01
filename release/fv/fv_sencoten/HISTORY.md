@@ -1,10 +1,10 @@
 SENĆOŦEN Change History
 ============================
 
-9.2 (7 Nov 2022)
+9.2 (1 Dec 2022)
 -------------------
 * Added cedilla key (desktop, mobile)
-* Changed underline from = key to ; key (desktop)
+* Changed underline from = key to ; OR _ key (desktop)
 * Removed diacritics from lowercase mode (desktop)
 * Removed right/left quotes, moved guillaumets (desktop)
 * Improvements to capslock behaviour across desktop platforms
