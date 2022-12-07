@@ -1,0 +1,306 @@
+﻿
+store(&VERSION) '15.0'
+store(&NAME) 'Chalchiteko'
+store(&Targets) "any"
+store(&VISUALKEYBOARD) 'chalchiteko.kvks'
+store(&BITMAP) 'chalchiteko.ico'
+store(&LAYOUTFILE) 'chalchiteko.keyman-touch-layout'
+store(&COPYRIGHT) '(c) SIL International'
+store(&KEYBOARDVERSION) '1.0'
+
+begin Unicode > use(main)
+
+c Add support for caps
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+$keymanweb: store(&CasedKeys) [K_A] .. [K_Z] 
+
+group(main) using keys
+
++ [K_SPACE] > U+0020
+
++ [K_0] > U+0030
++ [SHIFT K_0] > U+003d
+
++ [K_1] > U+0031
++ [SHIFT K_1] > U+0021
+
++ [K_2] > U+0032
++ [SHIFT K_2] > U+0022
+
++ [K_3] > U+0033
++ [SHIFT K_3] > U+0023
+
++ [K_4] > U+0034
++ [SHIFT K_4] > U+0024
+
++ [K_5] > U+0035
++ [SHIFT K_5] > U+0025
+
++ [K_6] > U+0036
++ [SHIFT K_6] > U+0026
+
++ [K_7] > U+0037
++ [SHIFT K_7] > U+002f
+
++ [K_8] > U+0038
++ [SHIFT K_8] > U+0028
+
++ [K_9] > U+0039
++ [SHIFT K_9] > U+0029
+
++ [NCAPS K_A] > U+0061
++ [CAPS K_A] > U+0041
++ [NCAPS SHIFT K_A] > U+0041
++ [CAPS SHIFT K_A] > U+0061
+
++ [NCAPS K_B] > U+0062
++ [CAPS K_B] > U+0042
++ [NCAPS SHIFT K_B] > U+0042
++ [CAPS SHIFT K_B] > U+0062
+
++ [NCAPS K_C] > U+0063 U+0068 c ch
++ [CAPS K_C] > U+0043 U+0048
++ [NCAPS SHIFT K_C] > U+0043 U+0048
++ [CAPS SHIFT K_C] > U+0063 U+0068
+
++ [NCAPS K_D] > nul c U+0064
++ [CAPS K_D] > nul c U+0044
++ [NCAPS SHIFT K_D] > nul c U+0044
++ [CAPS SHIFT K_D] > nul c U+0064
+
++ [NCAPS K_E] > U+0065
++ [CAPS K_E] > U+0045
++ [NCAPS SHIFT K_E] > U+0045
++ [CAPS SHIFT K_E] > U+0065
+
++ [NCAPS K_F] > U+006b U+0079 c ky
++ [CAPS K_F] > U+004b U+0059
++ [NCAPS SHIFT K_F] > U+004b U+0059
++ [CAPS SHIFT K_F] > U+006b U+0079
+
++ [NCAPS K_G] > U+0074 U+0078 c tx
++ [CAPS K_G] > U+0054 U+0058
++ [NCAPS SHIFT K_G] > U+0054 U+0058
++ [CAPS SHIFT K_G] > U+0074 U+0078
+
++ [NCAPS K_H] > U+0078 U+0068 c  xh
++ [CAPS K_H] > U+0058 U+0048
++ [NCAPS SHIFT K_H] > U+0058 U+0048
++ [CAPS SHIFT K_H] > U+0078 U+0068
+
++ [NCAPS K_I] > U+0069
++ [CAPS K_I] > U+0049
++ [NCAPS SHIFT K_I] > U+0049
++ [CAPS SHIFT K_I] > U+0069
+
++ [NCAPS K_J] > U+006a
++ [CAPS K_J] > U+004a
++ [NCAPS SHIFT K_J] > U+004a
++ [CAPS SHIFT K_J] > U+006a
+
++ [NCAPS K_K] > U+006b
++ [CAPS K_K] > U+004b
++ [NCAPS SHIFT K_K] > U+004b
++ [CAPS SHIFT K_K] > U+006b
+
++ [NCAPS K_L] > U+006c
++ [CAPS K_L] > U+004c
++ [NCAPS SHIFT K_L] > U+004c
++ [CAPS SHIFT K_L] > U+006c
+
++ [NCAPS K_M] > U+006d
++ [CAPS K_M] > U+004d
++ [NCAPS SHIFT K_M] > U+004d
++ [CAPS SHIFT K_M] > U+006d
+
++ [NCAPS K_N] > U+006e
++ [CAPS K_N] > U+004e
++ [NCAPS SHIFT K_N] > U+004e
++ [CAPS SHIFT K_N] > U+006e
+
++ [NCAPS K_O] > U+006f
++ [CAPS K_O] > U+004f
++ [NCAPS SHIFT K_O] > U+004f
++ [CAPS SHIFT K_O] > U+006f
+
++ [NCAPS K_P] > U+0070
++ [CAPS K_P] > U+0050
++ [NCAPS SHIFT K_P] > U+0050
++ [CAPS SHIFT K_P] > U+0070
+
++ [NCAPS K_Q] > U+0071
++ [CAPS K_Q] > U+0051
++ [NCAPS SHIFT K_Q] > U+0051
++ [CAPS SHIFT K_Q] > U+0071
+
++ [NCAPS K_R] > U+0072
++ [CAPS K_R] > U+0052
++ [NCAPS SHIFT K_R] > U+0052
++ [CAPS SHIFT K_R] > U+0072
+
++ [NCAPS K_S] > U+0073
++ [CAPS K_S] > U+0053
++ [NCAPS SHIFT K_S] > U+0053
++ [CAPS SHIFT K_S] > U+0073
+
++ [NCAPS K_T] > U+0074
++ [CAPS K_T] > U+0054
++ [NCAPS SHIFT K_T] > U+0054
++ [CAPS SHIFT K_T] > U+0074
+
++ [NCAPS K_U] > U+0075
++ [CAPS K_U] > U+0055
++ [NCAPS SHIFT K_U] > U+0055
++ [CAPS SHIFT K_U] > U+0075
+
++ [NCAPS K_V] > U+0062 U+0027 c b'
++ [CAPS K_V] > U+0042 U+0027 
++ [NCAPS SHIFT K_V] > U+0042 U+0027
++ [CAPS SHIFT K_V] > U+0062 U+0027
+
++ [NCAPS K_W] > U+0077
++ [CAPS K_W] > U+0057
++ [NCAPS SHIFT K_W] > U+0057
++ [CAPS SHIFT K_W] > U+0077
+
++ [NCAPS K_X] > U+0078
++ [CAPS K_X] > U+0058
++ [NCAPS SHIFT K_X] > U+0058
++ [CAPS SHIFT K_X] > U+0078
+
++ [NCAPS K_Y] > U+0079
++ [CAPS K_Y] > U+0059
++ [NCAPS SHIFT K_Y] > U+0059
++ [CAPS SHIFT K_Y] > U+0079
+
++ [NCAPS K_Z] > U+0074 U+007A c tz
++ [CAPS K_Z] > U+0054 U+005a
++ [NCAPS SHIFT K_Z] > U+0054 U+005a
++ [CAPS SHIFT K_Z] > U+0074 U+007a
+
+c + [K_LBRKT] > dk(00b4)
+c + [SHIFT K_LBRKT] > dk(00a8)
++ [K_LBRKT] > U+003c
++ [SHIFT K_LBRKT] > U+003e
+
++ [K_RBRKT] > U+002b
++ [SHIFT K_RBRKT] > U+002a
+c + [RALT K_RBRKT] > U+007e
+
++ [K_COMMA] > U+002c
++ [SHIFT K_COMMA] > U+003b
+
++ [K_SLASH] > U+002d
++ [SHIFT K_SLASH] > U+005f
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > U+003a
+
++ [K_BKSLASH] > U+007d
++ [SHIFT K_BKSLASH] > U+005d
+c + [RALT K_BKSLASH] > dk(0060)
+
++ [K_COLON] > U+0027 c U+00f1
++ [SHIFT K_COLON] > U+005C c U+00d1
+
++ [K_HYPHEN] > U+0040 
++ [SHIFT K_HYPHEN] > U+003f
+
++ [K_BKQUOTE] > U+007c
++ [SHIFT K_BKQUOTE] > U+00b0
+c + [RALT K_BKQUOTE] > U+00ac
+
++ [K_EQUAL] > U+00bf
++ [SHIFT K_EQUAL] > U+00a1
+
++ [K_QUOTE] > U+007b
++ [SHIFT K_QUOTE] > U+005b
+c + [RALT K_QUOTE] > dk(005e)
+
+
+match > use(deadkeys)
+
+group(deadkeys)
+
+store(dkf00b4) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055 U+0079 U+0059
+store(dkt00b4) U+00b4 U+00e1 U+00c1 U+00e9 U+00c9 U+00ed U+00cd U+00f3 U+00d3 U+00fa U+00da U+00fd U+00dd
+dk(00b4) any(dkf00b4) > index(dkt00b4, 2)
+
+store(dkf00a8) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055 U+0079
+store(dkt00a8) U+00a8 U+00e4 U+00c4 U+00eb U+00cb U+00ef U+00cf U+00f6 U+00d6 U+00fc U+00dc U+00ff
+dk(00a8) any(dkf00a8) > index(dkt00a8, 2)
+
+store(dkf0060) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055
+store(dkt0060) U+0060 U+00e0 U+00c0 U+00e8 U+00c8 U+00ec U+00cc U+00f2 U+00d2 U+00f9 U+00d9
+dk(0060) any(dkf0060) > index(dkt0060, 2)
+
+store(dkf005e) U+0020 U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006f U+004f U+0075 U+0055
+store(dkt005e) U+005e U+00e2 U+00c2 U+00ea U+00ca U+00ee U+00ce U+00f4 U+00d4 U+00fb U+00db
+dk(005e) any(dkf005e) > index(dkt005e, 2)
+
+
+group(Touch) using keys
+    c This empty group, plus the rule that calls it, prevents control keys from affecting
+    c the base letter when used on touch keyboards, e.g. pressing 'e on a hardware keyboard
+    c will give é but on a touch keyboard this letter is accessed via long-press on e
+    c instead.
+
+c
+c Start-of-sentence and automatic layer switching
+c
+
+store(digit) '0'..'9'
+
+c Some common end-of-sentence punctuation
+store(sentencePunctuation) '.?!¿¡'
+
+c Various Unicode spacing characters
+store(whitespace) ' ' U+00A0 U+000D U+000A U+0009 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F
+store(whitespace-dk) outs(whitespace) dk(1)
+c store(zwsp) U+200B
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    platform('touch') > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Okay, let's stay on the numeric layer if we are there already
+    platform('touch') if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Don't swap off the caps lock layer automatically
+    platform('touch') if(&layer = 'caps') > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    platform('touch') if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+
+
+    c If we are at the start of a text field, we're at the 'start of a
+    c sentence', so we'll move to the Shift layer
+    nul > layer('shift')
+
+    c Otherwise, we'll move to the Shift layer only if we see end of a
+    c sentence followed by one, two, or three spaces.
+    any(sentencePunctuation) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) > layer('shift')
+    any(sentencePunctuation) any(whitespace-dk) any(whitespace) any(whitespace) > layer('shift')
+    any(sentencePunctuation) dk(1) any(whitespace) any(whitespace) any(whitespace) > layer('shift')
+
+    c And because we haven't see any of these situations above, we'll
+    c move to the default layer. Note that this effectively drops us
+    c back to the default layer after every keystroke that isn't blocked
+    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
+    nomatch > layer('default')
+
+c End of keyboard
