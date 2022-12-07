@@ -1,6 +1,11 @@
 Old Hungarian Change History
 ====================
 
+1.4.1 (2022-12-02)
+----------------
+* Remove inconsistent support of Old Hungarian digits on Numlock keys
+* Update font version
+
 1.4 (2022-08-10)
 ----------------
 * add Caps Lock support for mobile
