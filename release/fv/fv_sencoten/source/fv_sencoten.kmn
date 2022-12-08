@@ -145,7 +145,3 @@ nomatch > use(x)
 group(normalize)
 
 group(x) using keys
-
-C don't understand the purpose of this last part but had to take out some keys that trigger a warning due to all the caps
-store(allkeys) 'abcdefghijklmnopqrtuvwxyzABCDEFGHIJKLMNOPQRTUVWXYZ1234567890=\`~!@#$%^&*()+|'
-+ any(allkeys) > index(allkeys, 1)
