@@ -21,7 +21,7 @@ This keyboard is designed for the <b>SENĆOŦEN</b> language of the BC Coast reg
 
 <p>To type in SENĆOŦEN on Mac or PC, turn CAPS LOCK on. To type a special character, type the base character and then type an accenting key. (Ṯ is typed T then Semicolon ;)</p>
 
-<img src="../Sencoten.png" />
+<img src="Sencoten.png" />
 
 <ul>
 	<li>To type the acute accent use the Apostrophe key ' — Ć is typed C then Apostrophe '</li>
