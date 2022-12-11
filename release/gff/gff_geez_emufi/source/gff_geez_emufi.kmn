@@ -99,36 +99,48 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
-  store(ዜማ፡menu) '[᎐⓵᎓⓶᎒⓷᎙⓸᎑⓹᎔⓺᎖⓻᎕⓼᎗⓽᎘🄋_፟]'        c ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨
+  store(ዜማ፡menu) '[᎐①᎓②᎒③᎙④᎑⑤᎔⑥᎖⑦᎕⑧᎗⑨᎘⓪_]'        c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋
   store(ዜማ፡keys) '1234567890_'
   store(AratNeteboch) ''
   store(AratNeteboch፡menu) '[₁₂₃₄₅₆₇]'
-  store(sevenKeys) '1234567'
- 
+
+  store(oneKeys) '1' 
   store(twoKeys) '12'
   store(threeKeys) '123'
   store(fourKeys) '1234'
   store(fiveKeys) '12345'
   store(sixKeys) '123456'
+  store(sevenKeys) '1234567'
   store(eightKeys) '12345678'
  
-  store(deret፡menu) '[①|②|③]'
-  store(deret፡index) ''
-  store(deretDifat፡menu) '[①|②]'  
-  store(deretDifat፡index) ''
+  store(deret፡menu) '[①|②|③|④|⑤]'
+  store(deret፡index) ''
+  store(deretDifat፡menu) '[①|②|③|④]'
+  store(deretDifat፡index) ''
   store(deretDifatDeret፡menu) '[①|②|③|④]'
   store(deretDifatDeret፡index) ''
   store(deretDifatDifat፡menu) '[①|②]'
   store(deretDifatDifat፡index) ''
   
-  store(difat፡menu) '[①|②|③|④]'
-  store(difat፡index) ''
-  store(difatDifat፡menu) '[①|②|③|④]'
-  store(difatDifat፡index) ''
-  store(difatDeret፡menu) '[①|②]'
-  store(difatDeret፡index) ''
+  store(difat፡menu) '[①|②|③|④|⑤|⑥]'
+  store(difat፡index) ''
+  store(difatDifat፡menu) '[①|②|③|④|⑤|⑥]'
+  store(difatDifat፡index) ''
+  store(difatDeret፡menu) '[①|②|③]'
+  store(difatDeret፡index) ''
   store(difatDeretDifat፡menu) '[①|②|③]'
   store(difatDeretDifat፡index) ''
+
+  store(chiret፡menu) '[①|②|③|④|⑤|⑥|⑦]'
+  store(chiret፡index) ''
+  store(yizet፡menu) '[①|②|③]'
+  store(yizet፡index) ''
+  store(hasirRikrik፡menu) '[①|②|③|④|⑤|⑥|⑦]'
+  store(hasirRikrik፡index) ''
+  store(rikrik፡menu) '[①|②|③|④|⑤|⑥|⑦]'
+  store(rikrik፡index) ''
+  store(qinat፡menu) '[①]'
+  store(qinat፡index) ''
 
 c ፩ Menus:
   store(onesBase፡menu) '[①|②|③|④|⑤|⑥]'
@@ -424,10 +436,6 @@ c  Menus:
   store(conjtensSansSerifBars፡menu) '[①|②|③]'
   store(conjtensSansSerifBars፡index) ''
 
-
-  store(Menus) 'AB'
-  store(A) '[AAAA]'
-  store(B) '[BBBB]'
 c ₀₁₂₃₄₅₆₇₈₉
 c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
@@ -440,14 +448,163 @@ c =====================End Data Section=========================================
                   
 c =====================Begin Functional Section=================================================
 c 
-store(&TARGETS) 'any'
+store(&TARGETS) 'windows macosx linux'
 
 begin Unicode > use(main)
    
 c The main group
   group(main) using keys
 
+c ---------------------Input of ልዩ Symbols-------------------------------------------------
+c 
+c The input section here is for rules that must precede other rules
+c
+  + '_' > outs(ዜማ፡menu)
+  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
+
+  deadkey(1) + "'" > "'"
+  deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
+
+  + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
+  + any(keys)     > index(ሳድስ,1)
+c ---------------------End Input of ልዩ Symbols---------------------------------------------
+
+c ---------------------Input of Double Strike Letters-------------------------------------------
+  'ስ' + 's' > 'ሥ'
+  'ህ' + 'h' > 'ኅ'
+  'ጽ' + 'S' > 'ፅ'
+c ---------------------End Input of Double Strike Letters---------------------------------------
+
+c ---------------------Input of Lone Vowels-----------------------------------------------------
+c 
+c Alef-A Vowels as Vowels
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
+    any(loneVowelKeys) + "'" > index(loneVowelKeys,1) deadkey(1)  
+
+c Alef-A Vowels as መደበኛ Syllables
+  'እ' + any(ካዕብ፡key) > 'ኡ'
+  'እ' + any(ሣልስ፡key) > 'ኢ'
+  'እ' + any(ራብዕ፡key) > 'ኣ'
+  'ኢ' + any(ግዕዝ፡key) > 'ኤ'
+  'እ' + any(ሳብዕ፡key) > 'ኦ'
+
+c Aynu-A Vowels as መደበኛ Sylalbles
+  'እ' + any(ግዕዝ፡key) > 'ዕ'
+  'ዕ' + any(ግዕዝ፡key) > 'ዐ'
+  'ዕ' + any(ካዕብ፡key) > 'ዑ'
+  'ዕ' + any(ሣልስ፡key) > 'ዒ'
+  'ዕ' + any(ራብዕ፡key) > 'ዓ'
+  'ዒ' + any(ግዕዝ፡key) > 'ዔ'
+  'ዕ' + any(ሳብዕ፡key) > 'ዖ'
+
+c Aynu-A Vowels as Vowels
+  'ኡ' + any(ካዕብ፡key) > 'ዑ'
+  'ኢ' + any(ሣልስ፡key) > 'ዒ'
+  'ኤ' + any(ግዕዝ፡key) > 'ዔ'
+  'ኦ' + any(ሳብዕ፡key) > 'ዖ'
+
+c Completing the Ge'ez "a" chain
+  'አ' + any(ራብዕ፡key) > 'ዓ'
+  'ዓ' + any(ራብዕ፡key) > 'ዐ'
+
+c Composable Aynu-A vowels as per ti-ER rules
+  'ዐ' + any(ግዕዝ፡key) > 'ዕ'
+  'ዐ' + any(ካዕብ፡key) > 'ዑ'
+  'ዐ' + any(ሣልስ፡key) > 'ዒ'
+  'ዐ' + any(ራብዕ፡key) > 'ዓ'
+  'ዐ' + any(ሳብዕ፡key) > 'ዖ'
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
+c ---------------------End Input of Lone Vowels-------------------------------------------------
+
+c ---------------------Input of Basic Syllables-------------------------------------------------
+  any(ሳድስ) + any(ግዕዝ፡key) > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ፡key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ፡key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ፡key) > index(ራብዕ,1)
+  any(ሳድስ) + any(ኃምስ፡key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ፡key) > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ፡key) > index(ሳብዕ,1)
+c ---------------------End Input of Basic Syllables---------------------------------------------
+
+c ---------------------Input of Labiovelars-----------------------------------------------------
+  any(ካዕብ፡መደበኛ) + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ካዕብ፡ልዩ)   + any(ግዕዝ፡key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡ልዩ)   + any(ካዕብ፡key) > index(ዘመደ፡ካዕብ,1) 
+  any(ካዕብ፡ልዩ)   + any(ሣልስ፡key) > index(ዘመደ፡ሣልስ,1)
+  any(ካዕብ፡ልዩ)   + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ,1)  
+  any(ዘመደ፡ሣልስ)  + any(ግዕዝ፡key) > index(ዘመደ፡ኃምስ,1)
+
+c Alternative input to support confusion around the 'o' glypheme:
+  'ኮ' + 'o' > 'ኰ'
+  'ጎ' + 'o' > 'ጐ'
+
+  'ኰ' + 'o' > 'ኮ'
+  'ጐ' + 'o' > 'ጎ'
+c ---------------------End Input of Labiovelars-------------------------------------------------
+
+c ---------------------Input of Punctuation-----------------------------------------------------
+c 
+c The only dead key for entry of ልዩ characters and
+c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
+c 
+  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+$keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
+  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
   
+
+  + ':'     > '፡'
+$keymanonly: + [SHIFT ' '] > '፡'
+  '፡' + ':' > '።'
+  '።' + ':' > '፨'
+  '፨' + ':' > '፠'  c makes circular
+  '፠' + ':' > ':'  c makes circular
+  
+      + ',' > '፥'
+  '፥' + ',' > '፣'
+  '፣' + ',' > ','
+  ',' + ',' > '፥'  c makes circular
+
+      + ';' > '፤'
+  '፤' + ';' > ';'
+  ';' + ';' > '፤'  c makes circular
+
+  '፡' + '-' > '፦'     
+  
+  + '?' > '፧'       
+  '፧' + '?' > '?'
+
+c The following group is here for compatibility with proposed ISO transliteration for Ethiopic:
+  '፡' + '#' > '፨'
+  '፡' + '+' > '፠'  
+  '፡' + ',' > '፣'  
+  '፡' + '?' > '፧'    
+
+      + '<' > '‹'
+      + '>' > '›'
+  '‹' + '<' > '«'
+  '›' + '>' > '»'
+  '«' + '<' > '<'
+  '»' + '>' > '>'
+c ---------------------End Input of Punctuation-------------------------------------------------
+
+c ---------------------Input of European Characters---------------------------------------------
+$keymanonly:  store(euro) 'ÇçÐðÝýÿßÑñ'
+$keymanonly:  store(euroMap) 'ጭችድድይይይጽኝኝ'
+$keymanonly:  + any(euro) > index(euroMap,1)
+
+$keymanonly:  'ጽ' + 'ß' > 'ፅ'
+$keymanonly:  + '¨' > U+135F
+
+$keymanonly:  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+c this mapping has an Amharic bias
+$keymanonly:  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+$keymanonly:  + any(euroVowels) > index(euroVowelsMap,1)
+c ---------------------End Input of European Characters-----------------------------------------
+
 c ---------------------Input of Numbers---------------------------------------------------------
 
 c Special Rule for Arabic Numerals
@@ -662,12 +819,21 @@ c
 'ኑ' + '=' > ''
 'ራኒ' + '=' > ''
 'ዩ' + '=' > ''
+c
+c Not ቤት but marginalia
+c
+'ኀረ' + '=' > '' 
+'ዘር'  + '=' > ''
+'አወ' + '=' > ''
+'አያይዝ' + '=' > ''
+'ጎዳ'  + '=' > ''
+'ዳና' + '=' > ''
 
  c 															  			
 '᎑' + [K_TAB] > context outs(deret፡menu)
-    outs(deret፡menu) + any(threeKeys) > use(deret፡group)
+    outs(deret፡menu) + any(fiveKeys) > use(deret፡group)
 '' + [K_TAB] > outs(deretDifat፡menu)
-    outs(deretDifat፡menu) + any(twoKeys) > use(deretDifat፡group)
+    outs(deretDifat፡menu) + any(fourKeys) > use(deretDifat፡group)
 ''+ [K_TAB] > outs(deretDifatDeret፡menu)
     outs(deretDifatDeret፡menu) + any(fourKeys) > use(deretDifatDeret፡group)
 ''+ [K_TAB] > outs(deretDifatDifat፡menu)
@@ -675,13 +841,24 @@ c
 
 
 '᎔' + [K_TAB] > outs(difat፡menu)
-    outs(difat፡menu) + any(fourKeys) > use(difat፡group)
+    outs(difat፡menu) + any(sixKeys) > use(difat፡group)
 '' + [K_TAB] > outs(difatDifat፡menu)
-    outs(difatDifat፡menu) + any(fourKeys) > use(difatDifat፡group)
+    outs(difatDifat፡menu) + any(sixKeys) > use(difatDifat፡group)
 '' + [K_TAB] > outs(difatDeret፡menu)
-    outs(difatDeret፡menu) + any(twoKeys) > use(difatDeret፡group)
+    outs(difatDeret፡menu) + any(threeKeys) > use(difatDeret፡group)
 '' + [K_TAB] > outs(difatDeretDifat፡menu)
     outs(difatDeretDifat፡menu) + any(threeKeys) > use(difatDeretDifat፡group)
+
+'᎖' + [K_TAB] > outs(chiret፡menu)
+    outs(chiret፡menu) + any(sevenKeys) > use(chiret፡group)
+'᎐' + [K_TAB] > outs(yizet፡menu)
+    outs(yizet፡menu) + any(threeKeys) > use(yizet፡group)
+'᎓' + [K_TAB] > outs(hasirRikrik፡menu)
+    outs(hasirRikrik፡menu) + any(sevenKeys) > use(hasirRikrik፡group)
+'᎒' + [K_TAB] > outs(rikrik፡menu)
+    outs(rikrik፡menu) + any(sevenKeys) > use(rikrik፡group)
+'᎕' + [K_TAB] > outs(qinat፡menu)
+    outs(qinat፡menu) + any(oneKeys) > use(qinat፡group)
 
 c ፩ Menus:
 '፩' + [K_TAB] > outs(onesBase፡menu)
@@ -977,9 +1154,6 @@ c  Menus:
 '' + [K_TAB] > outs(conjtensSansSerifBars፡menu)
     outs(conjtensSansSerifBars፡menu) + any(threeKeys) > use (conjtensSansSerifBars፡group)
 
-
-
-
 c
 c ---------------------End of EMUFI Symbols---------------------------------------------------
 
@@ -994,11 +1168,11 @@ group(emufi፡group) using keys
     nomatch > use(main)
 
 group(deret፡group) using keys
-    + any(threeKeys) > index(deret፡index,1)
+    + any(fiveKeys) > index(deret፡index,1)
     nomatch > use(main)
 
 group(deretDifat፡group) using keys
-    + any(twoKeys) > index(deret፡index,1)
+    + any(fourKeys) > index(deret፡index,1)
     nomatch > use(main)
 
 group(deretDifatDeret፡group) using keys
@@ -1010,19 +1184,39 @@ group(deretDifatDifat፡group) using keys
     nomatch > use(main)
 
 group(difat፡group) using keys
-    + any(fourKeys) > index(difat፡index,1)
+    + any(sixKeys) > index(difat፡index,1)
     nomatch > use(main)
 
 group(difatDifat፡group) using keys
-    + any(fourKeys) > index(difatDifat፡index,1)
+    + any(sixKeys) > index(difatDifat፡index,1)
     nomatch > use(main)
 
 group(difatDeret፡group) using keys
-    + any(twoKeys) > index(difatDeret፡index,1)
+    + any(threeKeys) > index(difatDeret፡index,1)
     nomatch > use(main)
 
 group(difatDeretDifat፡group) using keys
     + any(threeKeys) > index(difatDeretDifat፡index,1)
+    nomatch > use(main)
+
+group(chiret፡group) using keys
+    + any(sevenKeys) > Index(chiret፡index,1)
+    nomatch > use(main)
+
+group(yizet፡group) using keys
+    + any(threeKeys) > Index(yizet፡index,1)
+    nomatch > use(main)
+
+group(hasirRikrik፡group) using keys
+    + any(sevenKeys) > Index(hasirRikrik፡index,1)
+    nomatch > use(main)
+
+group(rikrik፡group) using keys
+    + any(sevenKeys) > Index(rikrik፡index,1)
+    nomatch > use(main)
+
+group(qinat፡group) using keys
+    + any(oneKeys) > Index(qinat፡index,1)
     nomatch > use(main)
 
 c ፩ Groups:
