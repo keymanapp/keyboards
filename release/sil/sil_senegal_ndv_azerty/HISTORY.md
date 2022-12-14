@@ -3,7 +3,7 @@ sil_senegal_ndv_azerty Change History
 
 1.0.0(2022-11-01)
 ------------------------
-Harmonised with bsc, cou, dyo, gsl, ndv, sav, snf, srr and wo azerty keyboards.
+Harmonised with bsc, cou, dyo, gsl, krx, sav, snf, srr and wo azerty keyboards.
 Help info updated.
 
 0.9.1 (2021-12-08)
