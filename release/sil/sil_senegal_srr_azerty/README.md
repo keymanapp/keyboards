@@ -5,10 +5,6 @@ __DESCRIPTION__
 The keyboard is intended to meet the needs of Seereer, sérère-sine, Serer-Sine (Latin), on all platforms.
 It is based on an azerty(fr-FR) layout for all platforms.
 All characters will be generated in NFC (Normalied Fully Composed) format.
-Links
------
-
- * Contact:  mark_skinner@sil.org
 
 Supported Platforms
 -------------------
