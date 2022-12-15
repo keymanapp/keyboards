@@ -105,14 +105,22 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   store(AratNeteboch፡menu) '[₁₂₃₄₅₆₇]'
 
   store(oneKeys) '1' 
+  store(oneKeys፡index) ' 1' 
   store(twoKeys) '12'
+  store(twoKeys፡index) ' 1  2'
   store(threeKeys) '123'
+  store(threeKeys፡index) ' 1  2  3'
   store(fourKeys) '1234'
+  store(fourKeys፡index) ' 1  2  3  4'
   store(fiveKeys) '12345'
+  store(fiveKeys፡index) ' 1  2  3  4  5'
   store(sixKeys) '123456'
+  store(sixKeys፡index) ' 1  2  3  4  5  6'
   store(sevenKeys) '1234567'
+  store(sevenKeys፡index) ' 1  2  3  4  5  6  7'
   store(eightKeys) '12345678'
- 
+  store(eightKeys፡index) ' 1  2  3  4  5  6  7  8'
+
   store(deret፡menu) '[①|②|③|④|⑤]'
   store(deret፡index) ''
   store(deretDifat፡menu) '[①|②|③|④]'
@@ -659,8 +667,8 @@ c ---------------------Input of ልዩ Symbols----------------------------------
 c 
 c The input section here is for rules that must precede other rules
 c
-  + '_' > outs(ዜማ፡menu)
-  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
+c  + '_' > outs(ዜማ፡menu)
+c  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
 
   '።' + [K_TAB] > outs(AratNeteboch፡menu) 
   outs(AratNeteboch፡menu) + any(sevenKeys) > use(emufi፡group)
@@ -1168,8 +1176,8 @@ group(emufi፡group) using keys
     nomatch > use(main)
 
 group(deret፡group) using keys
-    + any(fiveKeys) > index(deret፡index,1)
-    nomatch > use(main)
+    + any(fiveKeys፡index) > index(deret፡menu,1)
+c    nomatch > use(main)
 
 group(deretDifat፡group) using keys
     + any(fourKeys) > index(deret፡index,1)
