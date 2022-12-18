@@ -1,6 +1,6 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Indigenous NT'
-store(&KEYBOARDVERSION) '4.0.2'
+store(&KEYBOARDVERSION) '4.0.3'
 store(&TARGETS) 'any'
 store(&BITMAP) 'indigenous_nt.ico'
 store(&VISUALKEYBOARD) 'indigenous_nt.kvks'
@@ -8,6 +8,8 @@ store(&LAYOUTFILE) 'indigenous_nt.keyman-touch-layout'
 store(&COPYRIGHT) '(c) 2021 Rajiv Rawat'
 store(&KMW_EMBEDCSS) 'keyboard.css'
 begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
 
 group(main) using keys
 + [RALT K_SPACE] > ' '
@@ -130,3 +132,20 @@ group(main) using keys
 + [SHIFT RALT T_018E_0301] > U+018E U+0301
 
 + [SHIFT RALT T_0052_0302] > U+0052 U+0302
+
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    
+    nomatch > layer('default')

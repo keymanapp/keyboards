@@ -1,6 +1,12 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.3 (24 Nov 2022)
+-----------------
+
+* Swapped Alt and Number keys on touch keyboard.
+* Added beginning of sentence capitalization.
+
 4.0.2 (12 Jul 2021)
 -----------------
 
