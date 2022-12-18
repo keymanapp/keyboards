@@ -42,7 +42,7 @@ c language specific mappings
   store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys) 'hlHm^rsqbtxnkw^zydgTPSDfp'
+  store(keys) 'hlHm~rsqbtxnkw~zydgTPSDfp'
 
 c the following is Ge'ez specific
   store(ሌሎች፡keys) 'LMRXBvVcQNKWYjJZGCF'
@@ -98,57 +98,83 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
-  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
-  store(ዜማ፡menu) '[᎐①᎓②᎒③᎙④᎑⑤᎔⑥᎖⑦᎕⑧᎗⑨᎘⓪_]'        c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋
-  store(ዜማ፡keys) '1234567890_'
-  store(AratNeteboch) ''
-  store(AratNeteboch፡menu) '[₁₂₃₄₅₆₇]'
+  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'
+  store(ዜማ፡menu) '[᎐①᎓②᎒③᎙④᎑⑤᎔⑥᎖⑦᎕⑧᎗⑨᎘⓪]'        c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋
+  c store(ዜማ፡keys) '1234567890'
+  c store(AratNeteb፡menu) '[₁₂₃₄₅₆₇]'
+  c store(AratNeteb፡index) ''
+
+  store(AratNeteb፡menu) '[₁₂₃₄]'
+  store(AratNeteb፡one፡menu) '[₁₂₃₄₅₆]'
+  store(AratNeteb፡two፡menu) '[₁₂₃₄₅]'
+  store(AratNeteb፡three፡menu) '[₁₂₃₄]'
+  store(AratNeteb፡four፡menu) '[₁₂₃₄₅]'
+  store(AratNeteb፡five፡menu) '[₁₂₃₄₅₆₇]'
+  store(AratNeteb፡six፡menu) '[₁₂]'
+
+  store(Insertion፡menu) '[₁₂₃₄]'
+  store(Extender፡menu) '[₁₂₃₄]'
+  store(Mekfel፡menu) '[₁₂₃₄]'
+  store(HuletNeteb፡menu) '[₁₂₃₄]'
+  store(Semicolon፡menu) '[₁₂₃]'
+  store(Semicolon፡one፡menu) '[₁₂₃]'	
+  store(Semicolon፡two፡menu) '[₁₂]'
+  store(Semicolon፡three፡menu) '[₁₂₃]'
+
+
 
   store(oneKeys) '1' 
   store(oneKeys፡index) ' 1' 
   store(twoKeys) '12'
   store(twoKeys፡index) ' 1  2'
+  store(twoKeys፡index፡punct) ' 1 2'
   store(threeKeys) '123'
   store(threeKeys፡index) ' 1  2  3'
+  store(threeKeys፡index፡punct) ' 1 2 3'
   store(fourKeys) '1234'
   store(fourKeys፡index) ' 1  2  3  4'
+  store(fourKeys፡index፡punct) ' 1 2 3 4'
   store(fiveKeys) '12345'
   store(fiveKeys፡index) ' 1  2  3  4  5'
   store(sixKeys) '123456'
   store(sixKeys፡index) ' 1  2  3  4  5  6'
+  store(sixKeys፡index፡punct) ' 1 2 3 4 5 6'
   store(sevenKeys) '1234567'
   store(sevenKeys፡index) ' 1  2  3  4  5  6  7'
+  store(sevenKeys፡index፡punct) ' 1 2 3 4 5 6 7'
   store(eightKeys) '12345678'
   store(eightKeys፡index) ' 1  2  3  4  5  6  7  8'
+  store(tenKeys) '1234567890'
+  store(tenKeys፡index፡punct) ' 1 2 3 4 5 6 7 8 9 0'
 
   store(deret፡menu) '[①|②|③|④|⑤]'
-  store(deret፡index) ''
+c  store(deret፡index) ''
   store(deretDifat፡menu) '[①|②|③|④]'
-  store(deretDifat፡index) ''
+c  store(deretDifat፡index) ''
   store(deretDifatDeret፡menu) '[①|②|③|④]'
-  store(deretDifatDeret፡index) ''
+c  store(deretDifatDeret፡index) ''
   store(deretDifatDifat፡menu) '[①|②]'
-  store(deretDifatDifat፡index) ''
+c  store(deretDifatDifat፡index) ''
   
   store(difat፡menu) '[①|②|③|④|⑤|⑥]'
-  store(difat፡index) ''
+c  store(difat፡index) ''
   store(difatDifat፡menu) '[①|②|③|④|⑤|⑥]'
-  store(difatDifat፡index) ''
+c  store(difatDifat፡index) ''
   store(difatDeret፡menu) '[①|②|③]'
-  store(difatDeret፡index) ''
+c  store(difatDeret፡index) ''
   store(difatDeretDifat፡menu) '[①|②|③]'
-  store(difatDeretDifat፡index) ''
+c  store(difatDeretDifat፡index) ''
 
   store(chiret፡menu) '[①|②|③|④|⑤|⑥|⑦]'
-  store(chiret፡index) ''
+c  store(chiret፡index) ''
   store(yizet፡menu) '[①|②|③]'
-  store(yizet፡index) ''
+c  store(yizet፡index) ''
   store(hasirRikrik፡menu) '[①|②|③|④|⑤|⑥|⑦]'
-  store(hasirRikrik፡index) ''
+c  store(hasirRikrik፡index) ''
   store(rikrik፡menu) '[①|②|③|④|⑤|⑥|⑦]'
-  store(rikrik፡index) ''
+c  store(rikrik፡index) ''
   store(qinat፡menu) '[①]'
-  store(qinat፡index) ''
+c  store(qinat፡index) ''
 
 c ፩ Menus:
   store(onesBase፡menu) '[①|②|③|④|⑤|⑥]'
@@ -322,10 +348,10 @@ c ₀₁₂₃₄₅₆₇₈₉
 c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
 c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
-  store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
-    'qwertyuiop[]\QWERTYUIOP{}|' \
-    "asdfghjkl;'" 'ASDFGHJKL:"' \
-    'zxcvbnm,./ZXCVBNM<>?'
+c  store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
+c    'qwertyuiop[]\QWERTYUIOP{}|' \
+c    "asdfghjkl;'" 'ASDFGHJKL:"' \
+c    'zxcvbnm,./ZXCVBNM<>?'
 c =====================End Data Section=========================================================
                   
 c =====================Begin Functional Section=================================================
@@ -342,7 +368,8 @@ c
 c The input section here is for rules that must precede other rules
 c
   + '_' > outs(ዜማ፡menu)
-  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
+  outs(ዜማ፡menu) + any(tenKeys) > use(ዜማ፡group)
+  outs(ዜማ፡menu) + [K_TAB] > '_'
 
   deadkey(1) + "'" > "'"
   deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
@@ -541,11 +568,42 @@ c ---------------------Input of ልዩ Symbols----------------------------------
 c 
 c The input section here is for rules that must precede other rules
 c
-c  + '_' > outs(ዜማ፡menu)
-c  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
 
-  '።' + [K_TAB] > outs(AratNeteboch፡menu) 
-  outs(AratNeteboch፡menu) + any(sevenKeys) > use(emufi፡group)
+  '።' + [K_TAB] > outs(AratNeteb፡menu) 
+  outs(AratNeteb፡menu) + any(sevenKeys) > use(AratNeteb፡group)
+  outs(AratNeteb፡menu) + [K_TAB] > '።'
+
+  '^' + [K_TAB] > outs(Insertion፡menu) 
+  outs(Insertion፡menu) + any(fourKeys) > use(Insertion፡group)
+  outs(Insertion፡menu) + [K_TAB] > '^'
+
+  '=' + [K_TAB] > outs(Extender፡menu) 
+  outs(Extender፡menu) + any(fourKeys) > use(Extender፡group)
+  outs(Extender፡menu) + [K_TAB] > '='
+
+  '%' + [K_TAB] > outs(Mekfel፡menu) 
+  outs(Mekfel፡menu) + any(fourKeys) > use(Mekfel፡group)
+  outs(Mekfel፡menu) + [K_TAB] > '%'
+
+  '፡' + [K_TAB] > outs(HuletNeteb፡menu) 
+  outs(HuletNeteb፡menu) + any(fourKeys) > use(HuletNeteb፡group)
+  outs(HuletNeteb፡menu) + [K_TAB] > '፡'
+
+  '፤' + [K_TAB] > outs(Semicolon፡menu) 
+  outs(Semicolon፡menu) + any(fourKeys) > use(Semicolon፡group)
+  outs(Semicolon፡menu) + [K_TAB] > '፤'
+
+  '' + [K_TAB] > outs(Semicolon፡one፡menu)
+  outs(Semicolon፡one፡menu) + any(threeKeys) > use(Semicolon፡one፡group)
+  outs(Semicolon፡one፡menu) + [K_TAB] > '፤'
+  
+  '' + [K_TAB] > outs(Semicolon፡two፡menu)
+  outs(Semicolon፡two፡menu) + any(twoKeys) > use(Semicolon፡two፡group)
+  outs(Semicolon፡two፡menu) + [K_TAB] > '፤'
+  
+  '' + [K_TAB] > outs(Semicolon፡three፡menu)
+  outs(Semicolon፡three፡menu) + any(threeKeys) > use(Semicolon፡three፡group)
+  outs(Semicolon፡three፡menu) + [K_TAB] > '፤'
 
 
 c ---------------------Begin of EMFUI Symbols-------------------------------------------------
@@ -553,11 +611,11 @@ c
 c These entries are added to input the EMUFI symbols included in the Abba Garima font.
 c One additional symbol, the very frequent Rubricated Ethiopic Fullstop, is added for 
 c convenience and is also a trial to support the 500+ EMUFI symbols more fully.
-  store(emufi፡keys) '፡።‹›'  
-  store(emufi፡symbols) ''
+  c store(emufi፡keys) '፡።‹›'  
+  c store(emufi፡symbols) ''
   'ቆመ' + '@' > ''
   'ፕ' + '@' > '☧'
-  any(emufi፡keys) + '@' > index(emufi፡symbols,1)
+  c any(emufi፡keys) + '@' > index(emufi፡symbols,1)
 
 'ሃሌ' + '@' > ''
 'ሃሌሉ' + '@' > ''
@@ -1041,64 +1099,87 @@ c ---------------------End of EMUFI Symbols-------------------------------------
 
 c ---------------------Begin ዜማ Group--------------------------------------------------------
 group(ዜማ፡group) using keys
-    + any(ዜማ፡keys) > index(ዜማ, 1)
-c    nomatch > use(main)      
+    + any(tenKeys፡index፡punct) > index(ዜማ፡menu,1)  
 c ---------------------End ዜማ Group----------------------------------------------------------
 
-group(emufi፡group) using keys
-    + any(sevenKeys) > index(AratNeteboch, 1)
-c    nomatch > use(main)
+group(AratNeteb፡group) using keys
+    + any(sixKeys፡index፡punct) > index(AratNeteb፡menu, 1)
+
+group(Insertion፡group) using keys
+    + any(fourKeys፡index፡punct) > index(Insertion፡menu, 1) 
+
+group(Extender፡group) using keys
+    + any(fourKeys፡index፡punct) > index(Extender፡menu, 1) 
+
+group(Mekfel፡group) using keys
+    + any(fourKeys፡index፡punct) > index(Mekfel፡menu, 1) 
+
+group(HuletNeteb፡group) using keys
+    + any(fourKeys፡index፡punct) > index(HuletNeteb፡menu, 1) 
+    
+group(Semicolon፡group) using keys
+    + any(threeKeys፡index፡punct) > index(Semicolon፡menu, 1) 
+    
+group(Semicolon፡one፡group) using keys
+    + any(threeKeys፡index፡punct) > index(Semicolon፡one፡menu, 1) 
+    
+group(Semicolon፡two፡group) using keys
+    + any(twoKeys፡index፡punct) > index(Semicolon፡two፡menu, 1) 
+    
+group(Semicolon፡three፡group) using keys
+    + any(threeKeys፡index፡punct) > index(Semicolon፡three፡menu, 1) 
+
 
 group(deret፡group) using keys
     + any(fiveKeys፡index) > index(deret፡menu,1)
 c    nomatch > use(main)
 
 group(deretDifat፡group) using keys
-    + any(fourKeys) > index(deret፡index,1)
+    + any(fourKeys፡index) > index(deret፡menu,1)
 c    nomatch > use(main)
 
 group(deretDifatDeret፡group) using keys
-    + any(fourKeys) > index(deretDifatDeret፡index,1)
+    + any(fourKeys) > index(deretDifatDeret፡menu,1)
 c    nomatch > use(main)
 
 group(deretDifatDifat፡group) using keys
-    + any(twoKeys) > index(deretDifatDifat፡index,1)
+    + any(twoKeys፡index) > index(deretDifatDifat፡menu,1)
 c    nomatch > use(main)
 
 group(difat፡group) using keys
-    + any(sixKeys) > index(difat፡index,1)
+    + any(sixKeys፡index) > index(difat፡menu,1)
 c    nomatch > use(main)
 
 group(difatDifat፡group) using keys
-    + any(sixKeys) > index(difatDifat፡index,1)
+    + any(sixKeys፡index) > index(difatDifat፡menu,1)
 c    nomatch > use(main)
 
 group(difatDeret፡group) using keys
-    + any(threeKeys) > index(difatDeret፡index,1)
+    + any(threeKeys፡index) > index(difatDeret፡menu,1)
 c    nomatch > use(main)
 
 group(difatDeretDifat፡group) using keys
-    + any(threeKeys) > index(difatDeretDifat፡index,1)
+    + any(threeKeys፡index) > index(difatDeretDifat፡menu,1)
 c    nomatch > use(main)
 
 group(chiret፡group) using keys
-    + any(sevenKeys) > Index(chiret፡index,1)
+    + any(sevenKeys፡index) > Index(chiret፡menu,1)
 c    nomatch > use(main)
 
 group(yizet፡group) using keys
-    + any(threeKeys) > Index(yizet፡index,1)
+    + any(threeKeys፡index) > Index(yizet፡menu,1)
 c    nomatch > use(main)
 
 group(hasirRikrik፡group) using keys
-    + any(sevenKeys) > Index(hasirRikrik፡index,1)
+    + any(sevenKeys፡index) > Index(hasirRikrik፡menu,1)
 c    nomatch > use(main)
 
 group(rikrik፡group) using keys
-    + any(sevenKeys) > Index(rikrik፡index,1)
+    + any(sevenKeys፡index) > Index(rikrik፡menu,1)
 c    nomatch > use(main)
 
 group(qinat፡group) using keys
-    + any(oneKeys) > Index(qinat፡index,1)
+    + any(oneKeys፡index) > Index(qinat፡menu,1)
 c    nomatch > use(main)
 
 c ፩ Groups:
