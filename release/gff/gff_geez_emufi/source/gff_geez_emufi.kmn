@@ -104,22 +104,24 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   c store(AratNeteb፡menu) '[₁₂₃₄₅₆₇]'
   c store(AratNeteb፡index) ''
 
-  store(AratNeteb፡menu) '[₁₂₃₄]'
+  store(AratNeteb፡menu) '[₁₂₃₄₅₆]'
   store(AratNeteb፡one፡menu) '[₁₂₃₄₅₆]'
   store(AratNeteb፡two፡menu) '[₁₂₃₄₅]'
   store(AratNeteb፡three፡menu) '[₁₂₃₄]'
   store(AratNeteb፡four፡menu) '[₁₂₃₄₅]'
+  store(AratNeteb፡four፡sub፡menu) '[₁₂₃]'
   store(AratNeteb፡five፡menu) '[₁₂₃₄₅₆₇]'
   store(AratNeteb፡six፡menu) '[₁₂]'
+  store(AratNeteb፡six፡sub፡menu) '[₁₂₃₄₅]'
 
   store(Insertion፡menu) '[₁₂₃₄]'
   store(Extender፡menu) '[₁₂₃₄]'
   store(Mekfel፡menu) '[₁₂₃₄]'
   store(HuletNeteb፡menu) '[₁₂₃₄]'
   store(Semicolon፡menu) '[₁₂₃]'
-  store(Semicolon፡one፡menu) '[₁₂₃]'	
-  store(Semicolon፡two፡menu) '[₁₂]'
-  store(Semicolon፡three፡menu) '[₁₂₃]'
+  store(Semicolon፡subOne፡menu) '[₁₂₃]'	
+  store(Semicolon፡subTwo፡menu) '[₁₂]'
+  store(Semicolon፡subThree፡menu) '[₁₂₃]'
 
 
 
@@ -136,6 +138,7 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   store(fourKeys፡index፡punct) ' 1 2 3 4'
   store(fiveKeys) '12345'
   store(fiveKeys፡index) ' 1  2  3  4  5'
+  store(fiveKeys፡index፡punct) ' 1 2 3 4 5'
   store(sixKeys) '123456'
   store(sixKeys፡index) ' 1  2  3  4  5  6'
   store(sixKeys፡index፡punct) ' 1 2 3 4 5 6'
@@ -573,6 +576,39 @@ c
   outs(AratNeteb፡menu) + any(sevenKeys) > use(AratNeteb፡group)
   outs(AratNeteb፡menu) + [K_TAB] > '።'
 
+  '' + [K_TAB] > outs(AratNeteb፡one፡menu)
+  outs(AratNeteb፡one፡menu) + any(sixKeys) > use(AratNeteb፡one፡group)
+  outs(AratNeteb፡one፡menu) + [K_TAB] > ''
+  
+  '' + [K_TAB] > outs(AratNeteb፡two፡menu)
+  outs(AratNeteb፡two፡menu) + any(fiveKeys) > use(AratNeteb፡two፡group)
+  outs(AratNeteb፡two፡menu) + [K_TAB] > ''
+
+  '' + [K_TAB] > outs(AratNeteb፡three፡menu)
+  outs(AratNeteb፡three፡menu) + any(fourKeys) > use(AratNeteb፡three፡group)
+  outs(AratNeteb፡three፡menu) + [K_TAB] > ''
+
+  '' + [K_TAB] > outs(AratNeteb፡four፡menu)
+  outs(AratNeteb፡four፡menu) + any(fiveKeys) > use(AratNeteb፡four፡group)
+  outs(AratNeteb፡four፡menu) + [K_TAB] > ''
+
+  '' + [K_TAB] > outs(AratNeteb፡four፡sub፡menu)
+  outs(AratNeteb፡four፡sub፡menu) + any(threeKeys) > use(AratNeteb፡four፡sub፡group)
+  outs(AratNeteb፡four፡sub፡menu) + [K_TAB] > ''
+
+  '' + [K_TAB] > outs(AratNeteb፡five፡menu)
+  outs(AratNeteb፡five፡menu) + any(sevenKeys) > use(AratNeteb፡five፡group)
+  outs(AratNeteb፡five፡menu) + [K_TAB] > ''
+
+  '' + [K_TAB] > outs(AratNeteb፡six፡menu)
+  outs(AratNeteb፡six፡menu) + any(twoKeys) > use(AratNeteb፡six፡group)
+  outs(AratNeteb፡six፡menu) + [K_TAB] > ''
+
+  '' + [K_TAB] > outs(AratNeteb፡six፡sub፡menu)
+  outs(AratNeteb፡six፡sub፡menu) + any(fiveKeys) > use(AratNeteb፡six፡sub፡group)
+  outs(AratNeteb፡six፡sub፡menu) + [K_TAB] > ''
+
+
   '^' + [K_TAB] > outs(Insertion፡menu) 
   outs(Insertion፡menu) + any(fourKeys) > use(Insertion፡group)
   outs(Insertion፡menu) + [K_TAB] > '^'
@@ -593,17 +629,17 @@ c
   outs(Semicolon፡menu) + any(fourKeys) > use(Semicolon፡group)
   outs(Semicolon፡menu) + [K_TAB] > '፤'
 
-  '' + [K_TAB] > outs(Semicolon፡one፡menu)
-  outs(Semicolon፡one፡menu) + any(threeKeys) > use(Semicolon፡one፡group)
-  outs(Semicolon፡one፡menu) + [K_TAB] > '፤'
+  '' + [K_TAB] > outs(Semicolon፡subOne፡menu)
+  outs(Semicolon፡subOne፡menu) + any(threeKeys) > use(Semicolon፡subOne፡group)
+  outs(Semicolon፡subOne፡menu) + [K_TAB] > '፤'
   
-  '' + [K_TAB] > outs(Semicolon፡two፡menu)
-  outs(Semicolon፡two፡menu) + any(twoKeys) > use(Semicolon፡two፡group)
-  outs(Semicolon፡two፡menu) + [K_TAB] > '፤'
+  '' + [K_TAB] > outs(Semicolon፡subTwo፡menu)
+  outs(Semicolon፡subTwo፡menu) + any(twoKeys) > use(Semicolon፡subTwo፡group)
+  outs(Semicolon፡subTwo፡menu) + [K_TAB] > '፤'
   
-  '' + [K_TAB] > outs(Semicolon፡three፡menu)
-  outs(Semicolon፡three፡menu) + any(threeKeys) > use(Semicolon፡three፡group)
-  outs(Semicolon፡three፡menu) + [K_TAB] > '፤'
+  '' + [K_TAB] > outs(Semicolon፡subThree፡menu)
+  outs(Semicolon፡subThree፡menu) + any(threeKeys) > use(Semicolon፡subThree፡group)
+  outs(Semicolon፡subThree፡menu) + [K_TAB] > '፤'
 
 
 c ---------------------Begin of EMFUI Symbols-------------------------------------------------
@@ -1097,38 +1133,61 @@ c  Menus:
 c
 c ---------------------End of EMUFI Symbols---------------------------------------------------
 
-c ---------------------Begin ዜማ Group--------------------------------------------------------
-group(ዜማ፡group) using keys
-    + any(tenKeys፡index፡punct) > index(ዜማ፡menu,1)  
-c ---------------------End ዜማ Group----------------------------------------------------------
-
 group(AratNeteb፡group) using keys
     + any(sixKeys፡index፡punct) > index(AratNeteb፡menu, 1)
 
+group(AratNeteb፡one፡group) using keys
+   + any(sixKeys፡index፡punct) > index(AratNeteb፡one፡menu, 1) 
+
+group(AratNeteb፡two፡group) using keys
+   + any(fiveKeys፡index፡punct) > index(AratNeteb፡two፡menu, 1)
+
+group(AratNeteb፡three፡group) using keys
+  + any(fourKeys፡index፡punct) > index(AratNeteb፡three፡menu, 1)
+
+group(AratNeteb፡four፡group) using keys
+  + any(fiveKeys፡index፡punct) > index(AratNeteb፡four፡menu, 1)
+
+group(AratNeteb፡four፡sub፡group) using keys
+  + any(threeKeys፡index፡punct) > index(AratNeteb፡four፡sub፡menu, 1)
+
+group(AratNeteb፡five፡group) using keys
+  + any(sevenKeys፡index፡punct) > index(AratNeteb፡five፡menu, 1) 
+
+group(AratNeteb፡six፡group) using keys
+  + any(twoKeys፡index፡punct) > index(AratNeteb፡six፡menu, 1)
+
+group(AratNeteb፡six፡sub፡group) using keys
+  + any(fiveKeys፡index፡punct) > index(AratNeteb፡six፡sub፡menu, 1) 
+
 group(Insertion፡group) using keys
-    + any(fourKeys፡index፡punct) > index(Insertion፡menu, 1) 
+  + any(fourKeys፡index፡punct) > index(Insertion፡menu, 1) 
 
 group(Extender፡group) using keys
-    + any(fourKeys፡index፡punct) > index(Extender፡menu, 1) 
+  + any(fourKeys፡index፡punct) > index(Extender፡menu, 1) 
 
 group(Mekfel፡group) using keys
-    + any(fourKeys፡index፡punct) > index(Mekfel፡menu, 1) 
+  + any(fourKeys፡index፡punct) > index(Mekfel፡menu, 1) 
 
 group(HuletNeteb፡group) using keys
-    + any(fourKeys፡index፡punct) > index(HuletNeteb፡menu, 1) 
+  + any(fourKeys፡index፡punct) > index(HuletNeteb፡menu, 1) 
     
 group(Semicolon፡group) using keys
     + any(threeKeys፡index፡punct) > index(Semicolon፡menu, 1) 
     
-group(Semicolon፡one፡group) using keys
-    + any(threeKeys፡index፡punct) > index(Semicolon፡one፡menu, 1) 
+group(Semicolon፡subOne፡group) using keys
+    + any(threeKeys፡index፡punct) > index(Semicolon፡subOne፡menu, 1) 
     
-group(Semicolon፡two፡group) using keys
-    + any(twoKeys፡index፡punct) > index(Semicolon፡two፡menu, 1) 
+group(Semicolon፡subTwo፡group) using keys
+    + any(twoKeys፡index፡punct) > index(Semicolon፡subTwo፡menu, 1) 
     
-group(Semicolon፡three፡group) using keys
-    + any(threeKeys፡index፡punct) > index(Semicolon፡three፡menu, 1) 
+group(Semicolon፡subThree፡group) using keys
+    + any(threeKeys፡index፡punct) > index(Semicolon፡subThree፡menu, 1) 
 
+c ---------------------Begin ዜማ Group--------------------------------------------------------
+
+group(ዜማ፡group) using keys
+    + any(tenKeys፡index፡punct) > index(ዜማ፡menu,1)  
 
 group(deret፡group) using keys
     + any(fiveKeys፡index) > index(deret፡menu,1)
@@ -1180,7 +1239,9 @@ c    nomatch > use(main)
 
 group(qinat፡group) using keys
     + any(oneKeys፡index) > Index(qinat፡menu,1)
-c    nomatch > use(main)
+
+c ---------------------End ዜማ Group----------------------------------------------------------
+c ---------------------Begin Number Group--------------------------------------------------
 
 c ፩ Groups:
 group(onesBase፡group) using keys
@@ -1475,5 +1536,7 @@ group(conjtensRedBody፡group) using keys
     + any(twoKeys፡index) > index(conjtensRedBody፡menu,1)
 group(conjtensSansSerifBars፡group) using keys
     + any(threeKeys፡index) > index(conjtensSansSerifBars፡menu,1)
+    
+c ---------------------End Number Group----------------------------------------------------
 
 c =====================End Functional Section===================================================
