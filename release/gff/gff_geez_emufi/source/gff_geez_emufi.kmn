@@ -99,10 +99,8 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'
-  store(ዜማ፡menu) '[᎐①᎓②᎒③᎙④᎑⑤᎔⑥᎖⑦᎕⑧᎗⑨᎘⓪]'        c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋
-  c store(ዜማ፡keys) '1234567890'
-  c store(AratNeteb፡menu) '[₁₂₃₄₅₆₇]'
-  c store(AratNeteb፡index) ''
+  store(ዜማ፡menu) '[᎐①|᎓②|᎒③|᎙④|᎑⑤|᎔⑥|᎖⑦|᎕⑧|᎗⑨|᎘⓪]'        c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋
+  c ₀₁₂₃₄₅₆₇₈₉
 
   store(AratNeteb፡menu) '[₁₂₃₄₅₆]'
   store(AratNeteb፡one፡menu) '[₁₂₃₄₅₆]'
@@ -122,6 +120,8 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   store(Semicolon፡subOne፡menu) '[₁₂₃]'	
   store(Semicolon፡subTwo፡menu) '[₁₂]'
   store(Semicolon፡subThree፡menu) '[₁₂₃]'
+  store(Hareg፡menu) '[₁₂₃₄₅₆₇₈₉]'
+
 
   store(oneKeys) '1'[K_TAB]
   store(oneKeys፡index) ' 1' 
@@ -145,37 +145,27 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   store(sevenKeys፡index፡punct) ' 1 2 3 4 5 6 7'
   store(eightKeys) '12345678'[K_TAB]
   store(eightKeys፡index) ' 1  2  3  4  5  6  7  8'
+  store(nineKeys) '123456789'[K_TAB]
+  store(nineKeys፡index፡punct) ' 1 2 3 4 5 6 7 8 9'
   store(tenKeys) '1234567890'[K_TAB]
   store(tenKeys፡index፡punct) ' 1 2 3 4 5 6 7 8 9 0'
 
   store(deret፡menu) '[①|②|③|④|⑤]'
-c  store(deret፡index) ''
   store(deretDifat፡menu) '[①|②|③|④]'
-c  store(deretDifat፡index) ''
   store(deretDifatDeret፡menu) '[①|②|③|④]'
-c  store(deretDifatDeret፡index) ''
   store(deretDifatDifat፡menu) '[①|②]'
-c  store(deretDifatDifat፡index) ''
   
-  store(difat፡menu) '[①|②|③|④|⑤|⑥]'
-c  store(difat፡index) ''
+  store(difat፡menu) '[①|②|③|④|⑤|⑥|⑦]'
   store(difatDifat፡menu) '[①|②|③|④|⑤|⑥]'
-c  store(difatDifat፡index) ''
-  store(difatDeret፡menu) '[①|②|③]'
-c  store(difatDeret፡index) ''
+  store(difatDeret፡menu) '[①|②|③|④]'
   store(difatDeretDifat፡menu) '[①|②|③]'
-c  store(difatDeretDifat፡index) ''
 
-  store(chiret፡menu) '[①|②|③|④|⑤|⑥|⑦]'
-c  store(chiret፡index) ''
-  store(yizet፡menu) '[①|②|③]'
-c  store(yizet፡index) ''
+  store(chiret፡menu) '[①|②|③|④|⑤|⑥|⑦|⑧|⑨]'
+  store(yizet፡menu) '[①|②|③|④|⑤|⑥|⑦|⑧|⑨]'
   store(hasirRikrik፡menu) '[①|②|③|④|⑤|⑥|⑦]'
-c  store(hasirRikrik፡index) ''
   store(rikrik፡menu) '[①|②|③|④|⑤|⑥|⑦]'
-c  store(rikrik፡index) ''
   store(qinat፡menu) '[①]'
-c  store(qinat፡index) ''
+  store(hidet፡menu) '[①|②|③|④]'
 
 c ፩ Menus:
   store(onesBase፡menu) '[①|②|③|④|⑤|⑥]'
@@ -597,6 +587,9 @@ c
   outs(AratNeteb፡six፡sub፡menu) + any(fiveKeys) > use(AratNeteb፡six፡sub፡group)
 
 
+  '.' + [K_TAB] > outs(Hareg፡menu) 
+  outs(Hareg፡menu) + any(nineKeys) > use(Hareg፡group)
+
   '^' + [K_TAB] > outs(Insertion፡menu) 
   outs(Insertion፡menu) + any(fourKeys) > use(Insertion፡group)
 
@@ -775,6 +768,10 @@ c
 'ራኒ' + '=' > ''
 'ዩ' + '=' > ''
 c
+'ግዕዝ'  + '=' > ''
+'ዕዝል'  + '=' > ''
+'ዓራራይ'  + '=' > ''
+c
 c Not ቤት but marginalia
 c
 'ኀረ' + '=' > '' 
@@ -814,6 +811,8 @@ c
     outs(rikrik፡menu) + any(sevenKeys) > use(rikrik፡group)
 '᎕' + [K_TAB] > outs(qinat፡menu)
     outs(qinat፡menu) + any(oneKeys) > use(qinat፡group)
+'' + [K_TAB] > outs(hidet፡menu)
+    outs(hidet፡menu) + any(oneKeys) > use(hidet፡group)
 
 c ፩ Menus:
 '፩' + [K_TAB] > outs(onesBase፡menu)
@@ -1148,6 +1147,10 @@ group(AratNeteb፡six፡sub፡group) using keys
   + any(fiveKeys፡index፡punct) > index(AratNeteb፡six፡sub፡menu, 1) 
   + [K_TAB] > ''
 
+group(Hareg፡group) using keys
+  + any(nineKeys፡index፡punct) > index(Hareg፡menu, 1)
+  + [K_TAB] > '.'
+
 group(Insertion፡group) using keys
   + any(fourKeys፡index፡punct) > index(Insertion፡menu, 1)
   + [K_TAB] > '^'
@@ -1236,6 +1239,9 @@ c    nomatch > use(main)
 
 group(qinat፡group) using keys
     + any(oneKeys፡index) > Index(qinat፡menu,1)
+
+group(hidet፡group) using keys
+    + any(oneKeys፡index) > Index(hidet፡menu,1)
 
 c ---------------------End ዜማ Group----------------------------------------------------------
 c ---------------------Begin Number Group--------------------------------------------------
