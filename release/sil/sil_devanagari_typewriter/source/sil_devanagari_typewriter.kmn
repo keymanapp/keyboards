@@ -1,0 +1,303 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Devanagari Typewriter (SIL)'
+store(&COPYRIGHT) '© 2015-2022 SIL International'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'sil_devanagari_typewriter.kvks'
+store(&LAYOUTFILE) 'sil_devanagari_typewriter.keyman-touch-layout'
+store(&BITMAP) 'sil_devanagari_typewriter.ico'
+
+begin Unicode > use(main)
+
+c numbers
+store(Digits)     "0"    "1"    "2"    "3"    "4"    "5"    "6" \
+                  "7"    "8"    "9"
+store(DigitsU)    U+0966 U+0967 U+0968 U+0969 U+096A U+096B U+096C \
+                  U+096D U+096E U+096F
+
+c consonants (so we can reposition the reph)
+store(Consonants)    "s"    "v"    "u"    "#"        \
+                     "r"    "%"    "h"    "^"        \
+                     "&"    "*"    "("    "t"    "y"     "b"    "w"    "g"    \
+                     "k"    "m"    "a"    "e"    "d"    "o"     \
+                     "["    "n"    "j"     ";"    "i"    "z"    "x" \
+                     
+
+store(ConsonantsU)   U+0915 U+0916 U+0917 U+0918  \
+                     U+091A U+091B U+091C U+091F  \
+                     U+0920 U+0921 U+0922 U+0924 U+0925 U+0926 U+0927 U+0928 \
+                     U+092A U+092B U+092C U+092D U+092E U+092F  \
+                     U+0930 U+0932 U+0935 U+0936 U+0937 U+0938 U+0939 \
+                     
+
+c                    aakar  ikar   iikar  ukar   uukar  ekar   aikar  okar   aukar   glottal
+store(MatraVsU)      U+093E U+093f U+0940 U+0941 U+0942 U+0947 U+0948 U+094b U+094c U+094D
+
+c                           a   aa  e   ai  i   ii  o   au  u   uu
+store(MaatraU)        U+0906 U+0905 U+090F U+0910 U+0907 U+0908 U+0913 U+0914 U+0909 U+090a
+c                           candra a o e
+store(candraU)        U+0972 U+0911  U+090D 
+store(RomanCs)       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" \
+                     "~`;:" c plus some punctuation used in allomorph constraints (the others come thru anyway)
+
+c                       qa      khha    ggha    za      dddha   rha     fa      yya     llla    rra
+store(LowDotWallahs)    U+0915  U+0916  U+0917  U+091c  U+0921  U+0922  U+092b  U+092f  U+0933  U+0930 U+0928
+store(LowDotOutputs)    U+0958  U+0959  U+095a  U+095b  U+095c  U+095d  U+095e  U+095f  U+0934  U+0931 U+0929
+
+group(main) using keys
+
+c Devanagari Independent Vowels
+
++ "c" 	        > U+0905 c // Devanagari Letter- A अ
++ [RALT K_V]    > U+0906 c // Devanagari Letter- Aa आ
++ "O"           > U+0907 c // Devanagari Letter- I इ
++ [RALT K_L]    > U+0908 c // Devanagari Letter- Ii II ई
++ "p"           > U+0909 c // Devanagari Letter- U उ 
++ "M"           > U+090a c // Devanagari Letter- Uu ऊ   
++ [RALT K_B]    > U+090B c // Devanagari Letter Vocalic- R ऋ
++ [RALT K_R]    > U+090D c // Devanagari Letter Candra E ऍ
++ "P"           > U+090F c // Devanagari Letter- E ए
++ [RALT K_P]    > U+0910 c // Devanagari Letter- Ai ऐ
++ [RALT K_E]    > U+0911 c // Devanagari Letter Candra O ऑ
++ "C"           > U+0913 c // Devanagari Letter- O ओ
++ [RALT K_C]    > U+0914 c // Devanagari Letter- Au औ
+
+c Devanagari Dependent Vowels
+
++ "f"               > U+093E c // Devanagari Vowel Sign- Aa ा
++ "l"               > U+093f c // Devanagari Vowel Sign- I ि
++ "L"               > U+0940 c // Devanagari Vowel Sign- Ii ी
++ [K_QUOTE]         > U+0941 c // Devanagari Vowel Sign- U ु
++ [SHIFT K_QUOTE]   > U+0942 c // Devanagari Vowel Sign- Uu ू
++ [K_EQUAL]         > U+0943 c // Devanagari Vowel Sign Vocalic-R ृ
++ [K_BKQUOTE]       > U+0947 c // Devanagari Vowel Sign-E े
++ [SHIFT K_BKQUOTE] > U+0948 c // Devanagari Vowel Sign-Ai ै
++ "F"               > U+094b c // Devanagari Vowel Sign-O ो
++ [RALT K_F]        > U+094c c // Devanagari Vowel Sign-Au ौ
+
+c Devanagari Consonants
+
++ "s"            > U+0915 c // Devanagari Letter- Ka क
++ "v"            > U+0916 c // Devanagari Letter- Kha ख
++ "u" 	         > U+0917 c // Devanagari Letter- Ga ग 
++ [SHIFT K_3] 	 > U+0918 c // Devanagari Letter- Gha घ
++ [RALT K_8]     > U+0919 c // Devanagari Letter- Nga ङ 
++ "r" 	         > U+091a c // Devanagari Letter- Ca च
++ [SHIFT K_5] 	 > U+091b c // Devanagari Letter- Cha छ
++ "h"            > U+091c c // Devanagari Letter- Ja ज
++ [RALT K_M]     > U+091d c // Devanagari Letter- Jha झ 
++ [RALT K_6]     > U+091e c // Devanagari Letter- Nya ञ
++ [SHIFT K_6] 	 > U+091f c // Devanagari Letter- Tta ट
++ [SHIFT K_7] 	 > U+0920 c // Devanagari Letter- Ttha ठ
++ [SHIFT K_8]    > U+0921 c // Devanagari Letter- Dda ड
++ [SHIFT K_9]    > U+0922 c // Devanagari Letter- Ddha ढ
++ [RALT K_0]     > U+0923 c // Devanagari Letter- Nna ण
++ "t"            > U+0924 c // Devanagari Letter- Ta त
++ "y"            > U+0925 c // Devanagari Letter- Tha थ
++ "b"            > U+0926 c // Devanagari Letter- Da द
++ "w"       	 > U+0927 c // Devanagari Letter- Dha ध
++ "g"            > U+0928 c // Devanagari Letter- Na न 
++ "k"            > U+092a c // Devanagari Letter- Pa प 
++ "m"            > U+092b c // Devanagari Letter- Pha फ
++ "a"            > U+092c c // Devanagari Letter- Ba ब
++ "e" 	         > U+092d c // Devanagari Letter- Bha भ
++ "d"            > U+092e c // Devanagari Letter- Ma म
++ "o"            > U+092f c // Devanagari Letter- Ya य
++ [K_LBRKT]      > U+0930 c // Devanagari Letter- Ra र
++ "n"            > U+0932 c // Devanagari Letter- La ल
++ [RALT K_N]     > U+0933 c // Devanagari Letter- Lla ळ
++ "j"            > U+0935 c // Devanagari Letter- Va व
++ "z"            > U+0936 c // Devanagari Letter- Sha श
++ "i"            > U+0937 c // Devanagari Letter- Ssa ष
++ [K_COLON]      > U+0938 c // Devanagari Letter- Sa स
++ "x" 	         > U+0939 c // Devanagari Letter- Ha ह
+
+c Devanagari Special Conjuncts
+
++ [RALT K_2]     > U+0915 U+094d U+0937 c // Devanagari Letter- Ksha क्ष
++ "q"            > U+0924 U+094D U+0930 c // Devanagari Letter- tra त्र
++ [SHIFT K_1]    > U+091c U+094D U+091E c // Devanagari Letter- gyaa ज्ञ
+
+c Devanagari Consonants (Half Character)
+
++ "S"               > U+0915 U+094D U+200d c // Devanagari Half Character- Ka क्‍
++ "V"               > U+0916 U+094D U+200d c // Devanagari Half Character- Kha ख्‍
++ "U" 	            > U+0917 U+094D U+200d c // Devanagari Half Character- Ga ग्‍ 
++ [RALT K_3] 	    > U+0918 U+094D U+200d c // Devanagari Half Character- Gha घ्‍
+c // Devanagari Half Character- Nga ङ N/A
++ "R" 	            > U+091a U+094D U+200d c // Devanagari Half Character- Ca च्‍
+c // Devanagari Half Character- Cha छ N/A
++ "H"               > U+091c U+094D U+200d c // Devanagari Half Character- Ja ज्‍
++ [RALT K_H]        > U+091d U+094D U+200d c // Devanagari Half Character- Jha झ्‍ 
++ [RALT K_7]        > U+091e U+094D U+200d c // Devanagari Half Character- Nya ञ्‍
+c // Devanagari Half Character- Tta ट N/A
+c // Devanagari Half Character- Ttha ठ N/A
+c // Devanagari Half Character- Dda ड N/A
+c // Devanagari Half Character- Ddha ढ N/A
++ [SHIFT K_0]       > U+0923 U+094D U+200d c // Devanagari Half Character- Nna ण्‍
++ "T"               > U+0924 U+094D U+200d c // Devanagari Half Character- Ta त्‍
++ "Y"               > U+0925 U+094D U+200d c // Devanagari Half Character- Tha थ्‍
+c // Devanagari Half Character- Da द N/A
++ "W"               > U+0927 U+094D U+200d c // Devanagari Half Character- Dha ध N/A
++ "G"               > U+0928 U+094D U+200d c // Devanagari Half Character- Na न्‍ 
++ "K"               > U+092a U+094D U+200d c // Devanagari Half Character- Pa प्‍ 
++ [RALT K_K]        > U+092b U+094D U+200d c // Devanagari Half Character- Pha फ्‍
++ "A"               > U+092c U+094D U+200d c // Devanagari Half Character- Ba ब्‍
++ "E" 	            > U+092d U+094D U+200d c // Devanagari Half Character- Bha भ्‍
++ "D"               > U+092e U+094D U+200d c // Devanagari Half Character- Ma म्‍
++ [RALT K_O]        > U+092f U+094D U+200d c // Devanagari Half Character- Ya य्‍
++ [SHIFT K_EQUAL]   > U+0930 U+094D        c // Devanagari Half Character- Ra (Ref) र्
++ [SHIFT K_BKSLASH] > U+0930 U+094D U+200d c // Devanagari Half Character- Ra र्‍
++ "N"               > U+0932 U+094D U+200d c // Devanagari Half Character- La ल्‍
++ "J"               > U+0935 U+094D U+200d c // Devanagari Half Character- Va व्‍
++ "Z"               > U+0936 U+094D U+200d c // Devanagari Half Character- Sha श्‍
++ "I"               > U+0937 U+094D U+200d c // Devanagari Half Character- Ssa ष्‍
++ [SHIFT K_COLON]   > U+0938 U+094D U+200d c // Devanagari Half Character- Sa स्‍
+ c // Devanagari Half Character- Ha ह N/A
+
++ any(Digits)     > index(DigitsU,1) c //Devanagari Digits will be executed
+
+c Various signs
+
++ [RALT K_HYPHEN] > U+0901 c // Devanagari Sign Candrabindu ँ
++ [SHIFT K_HYPHEN]> U+0902 c // Devanagari Sign Anusvara ं
++ [RALT K_D] 	  > U+0903 c // Devanagari Sign Visarga ः
++ [K_HYPHEN]      > U+093c c // Devanagari Sign Nukta (Lower dot) ़
++ [RALT K_G]      > U+093d c // Devanagari Sign Avagraha ऽ
++ [RALT K_9]      > U+0971 c // High Spacing Dot ॱ
++ [RALT K_I]      > U+00B7 c // Devanagari Sign Mid Dot ·
++ [RALT K_Q]      > U+0949 c // Devanagari Vowel Sign Candra O ॉ
++ [RALT K_W]      > U+0945 c // Devanagari Vowel Sign Candra-E ॅ
++ [RALT K_U]      > U+0950 c // Devanagari Om ॐ
+
+c Devanagari Generic Punctuation Marks
+
++ [K_Period]     > U+0964 c // Devanagari Danda ।
++ [RALT K_COMMA] > U+0965 c // Devanagari Double Danda ॥
+
+c Halanta --> Devanagari Sign Virama
+c Backslash "\" is keyed between consonants to produce a stack / conjunct
+
++ [K_BKSLASH]      > U+094D        c // use the Devanagari Sign Virama so we get the full conjunct
++ [RALT K_BKSLASH] > U+094D U+200D c // halant (and the zero-width joiner to get half-character) ्‍ + ZWJ
++ "X"              > U+094D U+200C c // halant (and the zero-width non-joining to get full-char plus halant) ् + ZWNJ
++ [RALT K_X]       > U+094D U+200C c // halant (and the zero-width non-joining to get full-char plus halant) ् + ZWNJ
+
+c Devanagari Glottal Stop
+
++ [RALT K_S]  > U+097D c // Devanagari Letter-Glottal Stop ॽ
+
+c Roman Punctuation Marks
++ [ K_COMMA]            > U+002C c // Comma ,
++ [RALT K_PERIOD] 	    > U+002E c // Period .
++ [RALT K_1]            > U+0021 c // Exclamation Mark !
++ [RALT K_Y]            > U+002D c // Hyphen minus -
+"-" + "-"               > U+2013 c // hit hyphen twice for En Dash –
+U+2013 + "-"            > U+2014 c // hit hyphen thrice Em Dash —
++ [RALT K_SLASH]        > U+002F c // solidus /
++ [RALT SHIFT K_BKSLASH]> U+005C c // Reverse Solidus \
++ [RALT SHIFT K_COLON]  > U+003A c // Colon :
++ [RALT K_COLON]        > U+003B c // Semi Colon ;
++ [SHIFT K_COMMA]       > U+2018 c // Left Single Quote '
++ [SHIFT K_PERIOD]      > U+2019 c // Right Single Quote '
++ [SHIFT K_SLASH]       > U+003F c // Question Mark ?
++ [RALT K_QUOTE]        > U+201C c // Left Double Quote "
++ [RALT SHIFT K_QUOTE]  > U+201D c // Right Double Quote "
++ [SHIFT K_LBRKT]       > U+0028 c // Left Bracket (
++ [SHIFT K_RBRKT]       > U+0029 c // Right Bracket )
++ [RALT SHIFT K_LBRKT]  > U+007B c // Left Curly Bracket {
++ [RALT SHIFT K_RBRKT]  > U+007D c // Right Curly Bracket }
++ [RALT K_LBRKT]        > U+005B c // Left Square Bracket [
++ [RALT K_RBRKT]        > U+005D c // Right Square Bracket ]
++ [RALT SHIFT K_COMMA]  > U+003C c // Less than <
++ [RALT SHIFT K_PERIOD] > U+003E c // Greater than >
+
+c Devanagari ligatures
+
++ "B" 	       > U+0926 U+094d U+092F c // dhya द्य
++ "Q"          > U+0924 U+094D U+0924 c // e tta त्त
++ [K_RBRKT]    > U+0930 U+0942        c // rū रू
++ [SHIFT K_2]  > U+0926 U+094d U+0926 c // dda द्द
++ [SHIFT K_4]  > U+0926 U+094D U+0927 c // ddha द्ध
++ [RALT K_T]   > U+0915 U+094D U+0924 c // kta क्त 
++ [RALT K_A]   > U+0926 U+094D U+0935 c // dwaa द्व
++ [RALT K_J]   > U+0936 U+094D U+0935 c // shrwa श्व
++ [RALT K_Z]   > U+0936 U+094D U+0930 c // shra श्र
+
+c Others
+
++ [K_SLASH]         > U+094D U+0930 c // Paden Ra ्र
++ [RALT K_4]        > U+094D U+092F c // ्य
++ [RALT K_5]        > U+094D U+092F U+094D U+200D c // ्य्‍
++ [RALT K_BKQUOTE]  > U+0947 U+093C c // े़  
+
+any(LowDotWallahs) + [RALT K_PERIOD] > index(LowDotOutputs,1)
+
+c Vulgar Fraction
+
+"1/" + "4"  > U+00BC c 1/4
+"1/" + "2"  > U+00BD c 1/2
+"3/" + "4"  > U+00BE c 3/4
+
+c Open/Close Punctuation Signs
+
+"[" + "["   > U+230A c Left Floor
+"]" + "]"   > U+230B c Right Floor
+
+c Ctrl-Left + Left-Alt Codes
+
++ [LCTRL LALT K_V]            > U+0906 c // Devanagari Letter- Aa आ
++ [LCTRL LALT K_L]            > U+0908 c // Devanagari Letter- Ii II ई
++ [LCTRL LALT K_B]            > U+090B c // Devanagari Letter Vocalic- R ऋ
++ [LCTRL LALT K_R]            > U+090D c // Devanagari Letter Candra E ऍ
++ [LCTRL LALT K_P]            > U+0910 c // Devanagari Letter- Ai ऐ
++ [LCTRL LALT K_E]            > U+0911 c // Devanagari Letter Candra O ऑ
++ [LCTRL LALT K_C]            > U+0914 c // Devanagari Letter- Au औ
++ [LCTRL LALT K_F]            > U+094c c // Devanagari Vowel Sign-Au ौ
++ [LCTRL LALT K_8]            > U+0919 c // Devanagari Letter- Nga ङ 
++ [LCTRL LALT K_M]            > U+091d c // Devanagari Letter- Jha झ 
++ [LCTRL LALT K_6]            > U+091e c // Devanagari Letter- Nya ञ
++ [LCTRL LALT K_0]            > U+0923 c // Devanagari Letter- Nna ण
++ [LCTRL LALT K_N]            > U+0933 c // Devanagari Letter- Lla ळ
++ [LCTRL LALT K_2]            > U+0915 U+094d U+0937 c // Devanagari Letter- Ksha क्ष
++ [LCTRL LALT K_3] 	          > U+0918 U+094D U+200d c // Devanagari Half Character- Gha घ्‍
++ [LCTRL LALT K_H]            > U+091d U+094D U+200d c // Devanagari Half Character- Jha झ्‍ 
++ [LCTRL LALT K_7]            > U+091e U+094D U+200d c // Devanagari Half Character- Nya ञ्‍
++ [LCTRL LALT K_K]            > U+092b U+094D U+200d c // Devanagari Half Character- Pha फ्‍
++ [LCTRL LALT K_O]            > U+092f U+094D U+200d c // Devanagari Half Character- Ya य्‍
++ [LCTRL LALT K_HYPHEN]       > U+0901 c // Devanagari Sign Candrabindu ँ
++ [LCTRL LALT K_D] 	          > U+0903 c // Devanagari Sign Visarga ः
++ [LCTRL LALT K_G]            > U+093d c // Devanagari Sign Avagraha ऽ
++ [LCTRL LALT K_9]            > U+0971 c // High Spacing Dot ॱ
++ [LCTRL LALT K_I]            > U+00B7 c // Devanagari Sign Mid Dot ·
++ [LCTRL LALT K_Q]            > U+0949 c // Devanagari Vowel Sign Candra O ॉ
++ [LCTRL LALT K_W]            > U+0945 c // Devanagari Vowel Sign Candra-E ॅ
++ [LCTRL LALT K_U]            > U+0950 c // Devanagari Om ॐ
++ [LCTRL LALT K_COMMA]        > U+0965 c // Devanagari Double Danda ॥
++ [LCTRL LALT K_BKSLASH]      > U+094D U+200D c // halant (and the zero-width joiner to get half-character) ्‍ + ZWJ
++ [LCTRL LALT K_X]            > U+094D U+200C c // halant (and the zero-width non-joining to get full-char plus halant) ् + ZWNJ
++ [LCTRL LALT K_S]            > U+097D c // Devanagari Letter-Glottal Stop ॽ
++ [LCTRL LALT K_PERIOD] 	  > U+002E c // Period .
++ [LCTRL LALT K_1]            > U+0021 c // Exclamation Mark !
++ [LCTRL LALT K_Y]            > U+002D c // Hyphen minus -
++ [LCTRL LALT K_SLASH]        > U+002F c // solidus /
++ [LCTRL LALT SHIFT K_BKSLASH]> U+005C c // Reverse Solidus \
++ [LCTRL LALT SHIFT K_COLON]  > U+003A c // Colon :
++ [LCTRL LALT K_COLON]        > U+003B c // Semi Colon ;
++ [LCTRL LALT K_QUOTE]        > U+201C c // Left Double Quote "
++ [LCTRL LALT SHIFT K_QUOTE]  > U+201D c // Right Double Quote "
++ [LCTRL LALT SHIFT K_LBRKT]  > U+007B c // Left Curly Bracket {
++ [LCTRL LALT SHIFT K_RBRKT]  > U+007D c // Right Curly Bracket }
++ [LCTRL LALT K_LBRKT]        > U+005B c // Left Square Bracket [
++ [LCTRL LALT K_RBRKT]        > U+005D c // Right Square Bracket ]
++ [LCTRL LALT SHIFT K_COMMA]  > U+003C c // Less than <
++ [LCTRL LALT SHIFT K_PERIOD] > U+003E c // Greater than >
++ [LCTRL LALT K_T]            > U+0915 U+094D U+0924 c // kta क्त 
++ [LCTRL LALT K_A]            > U+0926 U+094D U+0935 c // dwaa द्व
++ [LCTRL LALT K_J]            > U+0936 U+094D U+0935 c // shrwa श्व
++ [LCTRL LALT K_Z]            > U+0936 U+094D U+0930 c // shra श्र
++ [LCTRL LALT K_4]            > U+094D U+092F c // ्य
++ [LCTRL LALT K_5]            > U+094D U+092F U+094D U+200D c // ्य्‍
++ [LCTRL LALT K_BKQUOTE]      > U+0947 U+093C c // े़  
+
+any(LowDotWallahs) + [LCTRL LALT K_PERIOD] > index(LowDotOutputs,1)

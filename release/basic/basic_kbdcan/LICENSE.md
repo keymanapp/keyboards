@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2014-2019 SIL International
+© 2014-2022 SIL International
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
