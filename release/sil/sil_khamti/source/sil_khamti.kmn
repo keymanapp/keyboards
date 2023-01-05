@@ -76,12 +76,12 @@ any(ldia) + any(udiaK) > index(udia,2) context
  + any(udiaK) > index(udia, 1)
  + any(ldiaK) > index(ldia, 1)
  + any(baseK) > index(base, 1)
-c + any(takesVSK) > index(takesVS, 1) U+FE00
+ + any(takesVSK) > index(takesVS, 1) U+FE00
  + any(preK) > U+200B index(pre, 1)
  + any(medK) > index(med, 1)
 any(pre) + any(medK) > index(med, 2) index(pre, 1)
 U+200B any(pre) + any(baseK) > index(base, 3) index(pre, 2)
-c U+200B any(pre) + any(takesVSK) > index(takesVS, 3) U+FE00 index(pre, 2)
+U+200B any(pre) + any(takesVSK) > index(takesVS, 3) U+FE00 index(pre, 2)
 U+200B any(pre) + [K_BKSP] > nul
 any(base) any(pre) + [K_BKSP] > U+200B index(pre, 2)
 any(takesVS) U+FE00 + [K_BKSP] > nul
@@ -98,7 +98,7 @@ any(redup) + "j" > U+1086 U+FE00 context
 any(redup) + any(medK) > index(med, 2) context
 any(tone) + any(visargaK) > index(visarga, 2) context
 any(tone) + any(ldiaK) > index(ldia, 2) context
-c any(tone) + any(udiaK) > index(udia, 2) context
+any(tone) + any(udiaK) > index(udia, 2) context
 any(tone) + "j" > U+1086 U+FE00 context
 any(tone) + any(medK) > index(med, 2) context
 any(tone) any(redup) + any(visargaK) > index(visarga, 3) context
@@ -177,5 +177,5 @@ U+1086 U+FE00 any(ldia) any(visarga) + any(medK) > index(med, 5) context
 U+1086 U+FE00 any(ldia) any(visarga) any(redup) + any(medK) > index(med, 6) context
 U+1086 U+FE00 any(ldia) any(visarga) any(tone) + any(medK) > index(med, 6) context
 U+1086 U+FE00 any(ldia) any(visarga) any(tone) any(redup) + any(medK) > index(med, 7) context
-c any(pre) + any(medK) > index(med, 2) context
+any(pre) + any(medK) > index(med, 2) context
 any(med) any(pre) + [K_BKSP] > index(pre, 2)
