@@ -1,9 +1,9 @@
 Tchad Keyboard
 =====================
 
-Copyright (C) 2017-2022 SIL International
+Copyright (C) 2017-2023 SIL International
 
-Version 4.2.1
+Version 4.3
 
 __DESCRIPTION__
 This keyboard enables the typing of all Chadian languages using the Chadian National Alphabet. It gives the ability to type all the special characters and diacritics in this standard alphabet, as well as many additional useful characters such as phonetic symbols and French characters.
