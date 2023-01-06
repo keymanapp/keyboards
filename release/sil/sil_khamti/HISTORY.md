@@ -10,7 +10,7 @@ Khamti (SIL) Keyboard Change History
 ----------------
 ## khamti_uni Change History
 
-Khamte Shan keyboard based on Shan phonetic keyboard
+Khamti Shan keyboard based on Shan phonetic keyboard
 MJPH  1.00    24-OCT-2003     Original
 MJPH  1.01     7-NOV-2003     Add QqwJ
 MJPH  1.1      8-AUG-2005     recode to new orthography
