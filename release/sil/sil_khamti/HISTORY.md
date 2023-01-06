@@ -4,7 +4,10 @@ Khamti (SIL) Keyboard Change History
 1.0 (12 January 2023)
 ----------------
 * Imported from khamti_uni
+* Added OSK and icon
 
+
+----------------
 ## khamti_uni Change History
 
 Khamte Shan keyboard based on Shan phonetic keyboard
