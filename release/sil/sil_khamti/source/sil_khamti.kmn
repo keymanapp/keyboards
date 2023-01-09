@@ -1,4 +1,4 @@
-c Title:    Khamti (SIL) keyboard
+﻿c Title:    Khamti (SIL) keyboard
 c Description:
 c           Khamti Shan keyboard based on Shan phonetic keyboard
 c MJPH  1.00    24-OCT-2003     Original
@@ -12,7 +12,7 @@ c MJPH  0.4     24-FEB-2009     Complete character set
 c MJPH  0.5     14-OCT-2014     Allow keying ldias before udia vowels.
 
 store(&VERSION) '10.0'
-store(&NAME) 'SIL Khamti'
+store(&NAME) 'Khamti (SIL)'
 store(&BITMAP) 'sil_khamti.ico'
 c BITMAPS burmkey burmkey0
 c BITMAP burmkey
@@ -179,5 +179,4 @@ U+1086 U+FE00 any(ldia) any(visarga) + any(medK) > index(med, 5) context
 U+1086 U+FE00 any(ldia) any(visarga) any(redup) + any(medK) > index(med, 6) context
 U+1086 U+FE00 any(ldia) any(visarga) any(tone) + any(medK) > index(med, 6) context
 U+1086 U+FE00 any(ldia) any(visarga) any(tone) any(redup) + any(medK) > index(med, 7) context
-any(pre) + any(medK) > index(med, 2) context
 any(med) any(pre) + [K_BKSP] > index(pre, 2)
