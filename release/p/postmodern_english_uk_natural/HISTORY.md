@@ -16,3 +16,7 @@ Postmodern English UK Natural Change History
 1.3 (2023-01-01)
 ----------------
 - Added Right Alt modifiers for the top row of numerical and symbolical keys.
+
+1.4 (2023-01-09)
+----------------
+- Fixed a bug where the number pad and emoji mobile keyboard layers would not work.
