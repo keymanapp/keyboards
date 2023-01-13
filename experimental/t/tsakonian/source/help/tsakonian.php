@@ -12,7 +12,7 @@
 <h2>English</h2>
 The Tsakonian keyboard is designed for typing the Tsakonian language. It includes additional Greek symbols and characters for convenience.<br>It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. Similar keyboards are also available for other desktop and mobile platforms.
 
-<h2>Tablet/Mobile Layout</h1>
+<h2>Tablet/Mobile Layout</h2>
 <p>
 <img src="tsakonian-layout1-mobile.jpg" alt=layout>
 
@@ -24,8 +24,9 @@ The Tsakonian keyboard is designed for typing the Tsakonian language. It include
 
 <h3>Alt+Shift</h3>
 <p><img src="tsakonian-layout4-altshift-mobile.jpg" alt=Alt & Shift></p>
-
-<h2>Desktop Layout</h1>
+<p>
+	
+<h2>Desktop Layout</h2>
 (Only look at the main black character, not the grey in the corner.)
 <p><img src="tsakonian-layout1.jpg" alt=layout>
 
