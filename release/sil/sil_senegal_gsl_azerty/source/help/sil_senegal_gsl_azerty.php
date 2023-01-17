@@ -23,7 +23,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_gsl_azerty:</strong> A keyboard for the «gsl:Gusilay (Latin)» language, which generates NFC Unicode characters.</h1t><br>
-							<pc>Created by SIL Senegal. ©2021-2022 SIL International</p>
+							<pc>Created by SIL Senegal. ©2021-2023 SIL International</p>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
@@ -571,13 +571,6 @@ require_once('header.php');
 										</thead>
 										<tbody>
 											<tr class="pagebreak">
-												<td class="_ajami">ø</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00F8</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN CAPITAL LETTER O WITH STROKE</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
-											</tr>
-											<tr class="pagebreak">
 												<td class="_ajami">a</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0061</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN SMALL LETTER A</td>
@@ -805,6 +798,13 @@ require_once('header.php');
 												<td class="_ajami">o</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+006F</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN SMALL LETTER O</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">ø</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00F8</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN SMALL LETTER O WITH STROKE</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
@@ -1827,7 +1827,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_gsl_azerty:</strong> Um teclado para o «gsl:Gusilay (Latin)» idioma, que gera caracteres NFC Unicode.</h1t><br>
-							<pc>Criado por SIL Senegal. ©2021-2022 SIL International</p>
+							<pc>Criado por SIL Senegal. ©2021-2023 SIL International</p>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
@@ -3631,7 +3631,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_gsl_azerty:</strong> Un clavier pour la langue «gsl:Gusilay (Latin)», qui génère des caractères NFC Unicode.</h1t><br>
-							<pc>Créé par SIL Sénégal. ©2021-2022 SIL International</p>
+							<pc>Créé par SIL Sénégal. ©2021-2023 SIL International</p>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
