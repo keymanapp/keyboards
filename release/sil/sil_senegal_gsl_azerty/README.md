@@ -1,10 +1,10 @@
-sil_senegal_sav_azerty Keyboard
+sil_senegal_gsl_azerty Keyboard
 =====================
 
 __DESCRIPTION__
 The keyboard is intended to meet the needs of Gusilay (Latin script), on all platforms.
-It is losely based on an azerty(fr-FR) layout for all platforms.
-All characters will be generated in NFC (Normalied Fully Composed) format.
+It is loosely based on an azerty(fr-FR) layout for all platforms.
+All characters will be generated in NFC (Normalized Fully Composed) format.
 
 Supported Platforms
 -------------------
