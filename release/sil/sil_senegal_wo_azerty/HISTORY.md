@@ -1,6 +1,10 @@
 sil_senegal_wo_azerty Keyboard Change History
 ==========================================
 
+1.0.1 (2023-01-05)
+----------------
+Keyboard fonts named in kps.
+
 1.0.0 (1 November 2022)
 ------------------------
 Harmonised with bsc, cou, dyo, gsl, krx, ndv, sav, snf and srr azerty keyboards.
