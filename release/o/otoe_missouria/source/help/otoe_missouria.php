@@ -17,5 +17,5 @@
 
 <h2>Mobile Keyboard Layout</h2>
 <p>The key to add the stress accent should be located next to the a on the left side.</p>
-<div id='osk-phone' data-states='default shift numeric'>
+<div id='osk-phone' data-states='default shift numerals'>
 </div>
