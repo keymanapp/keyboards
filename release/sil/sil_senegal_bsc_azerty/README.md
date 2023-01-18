@@ -8,9 +8,6 @@ The keyboard is intended to meet the needs of Oniyan (Latin script), on all plat
 It is losely based on an azerty(fr-FR) layout for all platforms.
 All characters will be generated in NFC (Normalied Fully Composed) format.
 
-Links
------
-
 Supported Platforms
 -------------------
  * Windows

@@ -23,7 +23,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_bsc_azerty:</strong> A keyboard for the «bsc-sn:Oniyan-SN» language, which generates NFC Unicode characters.</h1t><br>
-							<pc>Created by SIL Senegal. ©2021 SIL International</p>
+							<pc>Created by SIL Senegal. ©2021-2023 SIL International</p>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
@@ -1926,7 +1926,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_bsc_azerty:</strong> Um teclado para o «bsc-sn:Oniyan-SN» idioma, que gera caracteres NFC Unicode.</h1t><br>
-							<pc>Criado por SIL Senegal. ©2021 SIL International</p>
+							<pc>Criado por SIL Senegal. ©2021-2023 SIL International</p>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
@@ -3829,7 +3829,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_bsc_azerty:</strong> Un clavier pour la langue «bsc-sn:Oniyan-SN», qui génère des caractères NFC Unicode.</h1t><br>
-							<pc>Créé par SIL Sénégal. ©2021 SIL International</p>
+							<pc>Créé par SIL Sénégal. ©2021-2023 SIL International</p>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
