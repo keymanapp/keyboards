@@ -5,10 +5,11 @@ Version 4.0
 
 Description
 -----------
-ausephon generated from template
+A keyboard for phonemic (broad) transcription of Australian accented English using the Harrington/Cox/Evans (HCE) system.
 
 Links
 -----
+https://sway.office.com/ZW2iPBbX0yHWcIsJ
 
 Copyright
 ---------
