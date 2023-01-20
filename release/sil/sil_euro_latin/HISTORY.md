@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 2.0.1 (20 Jan 2023)
+* Add support for Dutch acute on j
 ## 2.0 (5 Jul 2022)
 * add Caps Lock support and start of sentence detection for mobile devices.
 ## 1.9.6 (11 Apr 2022)
