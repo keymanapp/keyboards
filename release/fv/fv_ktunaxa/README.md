@@ -1,8 +1,6 @@
 Ktunaxa keyboard
 ======================
 
-Version 9.1.1
-
 Ktunaxa keyboard layout for Unicode
 
 Links

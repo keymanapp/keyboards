@@ -1,8 +1,6 @@
 K'áshogot'ı̨nę́ Yatı̨́ keyboard
 ======================
 
-Version 9.1
-
 K'áshogot'ı̨nę́ Yatı̨́ keyboard layout for Unicode
 
 Links
