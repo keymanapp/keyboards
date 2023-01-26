@@ -1,7 +1,7 @@
 ausephon keyboard
 ==============
 
-Version 4.0
+Version 10.1
 
 Description
 -----------
@@ -10,6 +10,7 @@ A keyboard for phonemic (broad) transcription of Australian accented English usi
 Links
 -----
 https://sway.office.com/ZW2iPBbX0yHWcIsJ
+Keyboard home: https://keyman.com/keyboards/ausephon
 
 Copyright
 ---------
