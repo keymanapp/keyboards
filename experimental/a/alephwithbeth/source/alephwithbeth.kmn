@@ -18,6 +18,7 @@ store(whitespace) [K_SPACE] [K_ENTER] [K_TAB]
 
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'alephwithbeth.keyman-touch-layout'
+store(&COPYRIGHT) '© Cameron Briggs 2023'
 
 begin Unicode > use(main)
 
@@ -113,6 +114,7 @@ group(main) using keys
 + [ALT K_M] > 'ם'
 + [ALT K_X] > 'ץ'
 + [SHIFT K_PERIOD] > 'ּ'
++ [SHIFT K_COMMA] > nul
 + [SHIFT K_M] > 'מּ'
 + [SHIFT K_N] > 'נּ'
 + [SHIFT K_B] > 'בּ'
