@@ -9,10 +9,10 @@
 ?>
 <body>
 
-<h1>Start Using alephwithbeth</h1>
+<h1>Start Using Aleph with Beth</h1>
 
 <p>
-    alephwithbeth 1.0.1
+    Aleph with Beth 1.0.2
 </p>
 
 <h1>Desktop Layout</h1>
