@@ -12,7 +12,7 @@
 <h1>Start Using Aleph with Beth</h1>
 
 <p>
-    Aleph with Beth 1.0.2
+    Aleph with Beth 1.0.3
 </p>
 
 <h1>Desktop Layout</h1>
