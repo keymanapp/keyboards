@@ -1,6 +1,10 @@
 Khamti (SIL) Keyboard Change History
 =======================
 
+1.1 (15 March 2023)
+-------------------
+* Add touch layout
+
 1.0 (12 January 2023)
 ----------------
 * Imported from khamti_uni
