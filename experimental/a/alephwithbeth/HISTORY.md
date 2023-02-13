@@ -1,5 +1,9 @@
 alephwithbeth Change History
 ====================
+1.0.4 (2023-02-13)
+* Removed unnecessary version numbers.
+* added description
+----------------
 1.0.3 (2023-02-11)
 * Removed the faulty auto correct feature. 
 * Captialized all words of the title.
