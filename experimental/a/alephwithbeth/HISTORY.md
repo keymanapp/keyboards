@@ -1,13 +1,21 @@
 alephwithbeth Change History
 ====================
+1.0.4 (2023-02-13)
+* Removed unnecessary version numbers.
+* added description
+----------------
+1.0.3 (2023-02-11)
+* Removed the faulty auto correct feature. 
+* Captialized all words of the title.
+* Added title to .kmn
 ----------------
 1.0.2 (2023-02-09)
-Renamed keyboard to "Aleph with Beth"
+* Renamed keyboard to "Aleph with Beth"
 ----------------
 1.0.1 (2023-02-08)
 ----------------
-Updated author and website (in kps)
-Added copyrights where needed.
+* Updated author and website (in kps)
+* Added copyrights where needed.
 ----------------
 1.0 (2023-01-28)
 ----------------

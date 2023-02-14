@@ -1,5 +1,5 @@
 ﻿store(&TARGETS) 'any'
-store(&NAME) 'alephwithbeth'
+store(&NAME) 'Aleph With Beth'
 store(&BITMAP) 'alephwithbeth.ico'
 store(&VISUALKEYBOARD) 'alephwithbeth.kvks'
 
@@ -8,7 +8,7 @@ store(sofit-forms-of-letters) "ךםןףץ"
 store(presentation-dageshed-letters-with-final-forms) "כּפּ"
 store(presentation-dageshed-sofit-forms-of-letters) "ךּףּ"
 store(dagesh) 'ּ'
-store(vowels) "ְֱֲֳִֵֶַׇׇָֹֻׅ"
+c store(vowels) "ְֱֲֳִֵֶַׇׇָֹֻׅ"
 
 store(normal-dageshed-letters-with-final-forms) "מּנּצּ"
 store(normal-undageshed-sofit-forms-of-letters) "םןץ"
@@ -19,7 +19,8 @@ store(whitespace) [K_SPACE] [K_ENTER] [K_TAB]
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'alephwithbeth.keyman-touch-layout'
 store(&COPYRIGHT) '© 2023 Cameron Briggs'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '1.0.4'
+store(&KMW_HELPTEXT) 'Aleph With Beth'
 
 begin Unicode > use(main)
 
@@ -178,13 +179,13 @@ any(presentation-dageshed-letters-with-final-forms) + any(whitespace) > index(pr
 any(normal-dageshed-letters-with-final-forms) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh
 
 c Transform final letters with a vowel
-any(letters-with-final-forms) any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2)
+c any(letters-with-final-forms) any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2)
 
 c Transform final letters with a vowel and a dagesh
-any(letters-with-final-forms) any(vowels) $dagesh + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) $dagesh
-any(letters-with-final-forms) $dagesh any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) $dagesh index(vowels,3)
-any(presentation-dageshed-letters-with-final-forms) any(vowels) + any(whitespace) > index(presentation-dageshed-sofit-forms-of-letters,1) index(vowels,2)
-any(normal-dageshed-letters-with-final-forms) any(vowels) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh index(vowels,2)
+c any(letters-with-final-forms) any(vowels) $dagesh + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) $dagesh
+c any(letters-with-final-forms) $dagesh any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) $dagesh index(vowels,3)
+c any(presentation-dageshed-letters-with-final-forms) any(vowels) + any(whitespace) > index(presentation-dageshed-sofit-forms-of-letters,1) index(vowels,2)
+c any(normal-dageshed-letters-with-final-forms) any(vowels) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh index(vowels,2)
 
 c Transform final letters with punctuation
 any(letters-with-final-forms) any(punctuation) + any(whitespace) > index(sofit-forms-of-letters,1) index(punctuation,2)
@@ -196,19 +197,19 @@ any(presentation-dageshed-letters-with-final-forms) any(punctuation) + any(white
 any(normal-dageshed-letters-with-final-forms) any(punctuation) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh index(punctuation,2)
 
 c Transfrom final letters with a punctuation and a vowel
-any(letters-with-final-forms) any(punctuation) any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) index(punctuation,2) index(vowels,3)
-any(letters-with-final-forms) any(vowels) any(punctuation) + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) index(punctuation,3)
+c any(letters-with-final-forms) any(punctuation) any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) index(punctuation,2) index(vowels,3)
+c any(letters-with-final-forms) any(vowels) any(punctuation) + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) index(punctuation,3)
 
 c Transform final letters with punctuation, a vowel, and a dagesh (phew!)
-any(letters-with-final-forms) any(punctuation) any(vowels) $dagesh + any(whitespace) > index(sofit-forms-of-letters,1) index(punctuation,2) index(vowels,3) $dagesh
-any(letters-with-final-forms) any(punctuation) $dagesh any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) index(punctuation,2) $dagesh index(vowels,4)
-any(letters-with-final-forms) any(vowels) any(punctuation) $dagesh + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) index(punctuation,3) $dagesh
-any(letters-with-final-forms) any(vowels) $dagesh any(punctuation) + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) $dagesh index(punctuation,4)
-any(letters-with-final-forms) $dagesh any(punctuation) any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) $dagesh index(punctuation,3) index(vowels,4)
-any(letters-with-final-forms) $dagesh any(vowels) any(punctuation) + any(whitespace) > index(sofit-forms-of-letters,1) $dagesh index(vowels,3) index(punctuation,4)
+c any(letters-with-final-forms) any(punctuation) any(vowels) $dagesh + any(whitespace) > index(sofit-forms-of-letters,1) index(punctuation,2) index(vowels,3) $dagesh
+c any(letters-with-final-forms) any(punctuation) $dagesh any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) index(punctuation,2) $dagesh index(vowels,4)
+c any(letters-with-final-forms) any(vowels) any(punctuation) $dagesh + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) index(punctuation,3) $dagesh
+c any(letters-with-final-forms) any(vowels) $dagesh any(punctuation) + any(whitespace) > index(sofit-forms-of-letters,1) index(vowels,2) $dagesh index(punctuation,4)
+c any(letters-with-final-forms) $dagesh any(punctuation) any(vowels) + any(whitespace) > index(sofit-forms-of-letters,1) $dagesh index(punctuation,3) index(vowels,4)
+c any(letters-with-final-forms) $dagesh any(vowels) any(punctuation) + any(whitespace) > index(sofit-forms-of-letters,1) $dagesh index(vowels,3) index(punctuation,4)
 
 
-any(presentation-dageshed-letters-with-final-forms) any(punctuation) any(vowels) + any(whitespace) > index(presentation-dageshed-sofit-forms-of-letters,1) index(punctuation,2) index(vowels,3)
-any(presentation-dageshed-letters-with-final-forms) any(vowels) any(punctuation) + any(whitespace) > index(presentation-dageshed-sofit-forms-of-letters,1) index(vowels,2) index(punctuation,3)
-any(normal-dageshed-letters-with-final-forms) any(punctuation) any(vowels) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh index(punctuation,2) index(vowels,3)
-any(normal-dageshed-letters-with-final-forms) any(vowels) any(punctuation) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh index(vowels,2) index(punctuation,3)
+c any(presentation-dageshed-letters-with-final-forms) any(punctuation) any(vowels) + any(whitespace) > index(presentation-dageshed-sofit-forms-of-letters,1) index(punctuation,2) index(vowels,3)
+c any(presentation-dageshed-letters-with-final-forms) any(vowels) any(punctuation) + any(whitespace) > index(presentation-dageshed-sofit-forms-of-letters,1) index(vowels,2) index(punctuation,3)
+c any(normal-dageshed-letters-with-final-forms) any(punctuation) any(vowels) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh index(punctuation,2) index(vowels,3)
+c any(normal-dageshed-letters-with-final-forms) any(vowels) any(punctuation) + any(whitespace) > index(normal-undageshed-sofit-forms-of-letters,1) $dagesh index(vowels,2) index(punctuation,3)
