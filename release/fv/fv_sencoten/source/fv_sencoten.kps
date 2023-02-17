@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
@@ -16,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">SENĆOŦEN</Name>
-    <Copyright URL="">(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Copyright URL="">(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
@@ -95,12 +96,6 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\Sencoten.png</Name>
-      <Description>File Sencoten.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
@@ -124,14 +119,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>help\Sencoten.png</Name>
+      <Description>File Sencoten.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\Sencoten_copy.png</Name>
+      <Description>File Sencoten_copy.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>SENĆOŦEN</Name>
       <ID>fv_sencoten</ID>
-      <Version></Version>
+      <Version>9.2</Version>
       <Languages>
-        <Language ID="str-Latn">Straits Salish (Latin)</Language>
+        <Language ID="str">Straits Salish</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

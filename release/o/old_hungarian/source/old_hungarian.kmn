@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Old Hungarian'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.4'
+store(&KEYBOARDVERSION) '1.4.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'old_hungarian.kvks'
 store(&KMW_RTL) '1'
@@ -49,7 +49,7 @@ store(ucU)   U+10C80          U+10C81          U+10C82          U+10C83         
 
 store(numbersU) U+10CFA U+10CFB U+10CFC U+10CFD U+10CFE U+10CFF
 store(numbersK) [K_1]   [K_2]   [K_3]   [K_4]   [K_5]   [K_6]
-store(numpad)   [K_NP7] [K_NP8] [K_NP9] [K_NP4] [K_NP5] [K_NP6]
+c store(numpad)   [K_NP7] [K_NP8] [K_NP9] [K_NP4] [K_NP5] [K_NP6]
 
 c Add support for caps
 begin NewContext > use(NewContext)
@@ -66,7 +66,7 @@ group(main) using keys
 + any(UCcK)         > index(ucU,1) c uppercase NCAPS SHIFT
 + any(UCncK)        > index(ucU,1) c uppercase CAPS
 + any(numbersK)     > index(numbersU,1)
-+ any(numpad)       > index(numbersU,1)
+c + any(numpad)       > index(numbersU,1) c this gave inconsistent support for old hungarian digits
 
 + [K_BKQUOTE]          > U+200D c Lig c double check
 
