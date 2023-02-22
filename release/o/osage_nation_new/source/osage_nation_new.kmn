@@ -2,14 +2,15 @@
 store(&TARGETS) 'any'
 store(&NAME) 'Osage'
 store(&COPYRIGHT) '© Osage Nation'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&MESSAGE) 'This keyboard was developed for typing the Osage language using the Osage script.'
 store(&VISUALKEYBOARD) 'osage_nation_new.kvks'
 store(&BITMAP) 'osage_nation_new.ico'
 store(&LAYOUTFILE) 'osage_nation_new.keyman-touch-layout'
 begin Unicode > use(main)
 
-store(nul) "QWERTYUOPSDFGJKLZXCVBNM"
+c Ifmore keys are added to the SHIFT layer, then this store needs modifications
+store(nul) "QWRTYOPSDFGJKLZXV"
 
 group(main) using keys 
 + any(nul) > nul
