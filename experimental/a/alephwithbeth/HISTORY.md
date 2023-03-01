@@ -1,5 +1,9 @@
 alephwithbeth Change History
 ====================
+1.0.5 (2023-02-28)
+* replaced hyphen with maqef
+* added a touch-optimized keyboard layout for phone
+------------------
 1.0.4 (2023-02-13)
 * Removed unnecessary version numbers.
 * added description
