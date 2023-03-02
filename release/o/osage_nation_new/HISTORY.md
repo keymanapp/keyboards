@@ -1,6 +1,10 @@
 Osage Keyboard Change History
 =======================
 
+1.0.1 (22 Feb 2023)
+-----------------
+* Fixes to the touch layout
+
 1.0 (4 Dec 2022)
 -----------------
 * Modified by Harris Mowbray
