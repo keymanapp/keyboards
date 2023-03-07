@@ -1,6 +1,10 @@
 SENĆOŦEN Change History
 ============================
 
+9.2.1 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
+
 9.2 (1 Dec 2022)
 -------------------
 * Added cedilla key (desktop, mobile)
