@@ -1,10 +1,6 @@
 SENĆOŦEN keyboard
 ======================
 
-Copyright (c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
-
-Version 9.2
-
 SENĆOŦEN keyboard layout for Unicode
 
 Links

@@ -1,10 +1,6 @@
 Nəxʷsƛ̓ay̓əmúcən keyboard
 ======================
 
-Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.2
-
 Nəxʷsƛ̓ay̓əmúcən keyboard layout for Unicode
 
 Links
