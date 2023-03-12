@@ -1,0 +1,97 @@
+﻿store(&VERSION) '15.0'
+store(&TARGETS) 'any'
+store(&NAME) 'Osage'
+store(&COPYRIGHT) '© Osage Nation'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&MESSAGE) 'This keyboard was developed for typing the Osage language using the Osage script.'
+store(&VISUALKEYBOARD) 'osage_nation_new.kvks'
+store(&BITMAP) 'osage_nation_new.ico'
+store(&LAYOUTFILE) 'osage_nation_new.keyman-touch-layout'
+begin Unicode > use(main)
+
+c Ifmore keys are added to the SHIFT layer, then this store needs modifications
+store(nul) "QWRTYOPSDFGJKLZXV"
+
+group(main) using keys 
++ any(nul) > nul
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_0] > ')'
++ [SHIFT K_9] > '('
++ [SHIFT K_8] > '*'
++ [SHIFT K_7] > '&'
++ [SHIFT K_6] > '^'
++ [SHIFT K_5] > '%'
++ [SHIFT K_4] > '$'
++ [SHIFT K_3] > '#'
++ [SHIFT K_2] > '@'
++ [SHIFT K_1] > '!'
++ [K_SLASH] > '𐓃'
++ [K_PERIOD] > '.'
++ [K_COMMA] > '𐓑'
++ [K_QUOTE] > '𐓌'
++ [K_COLON] > '𐓋'
++ [K_BKSLASH] > '𐒲'
++ [K_RBRKT] > '𐒱'
++ [K_LBRKT] > '𐓅'
+
++ [K_EQUAL]  > ','
++ [K_HYPHEN] > '?'
+
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'
++ [K_BKQUOTE] > U+0027
++ [K_A] > '𐒰'
++ [K_B] > '𐒴'
++ [K_C] > '𐒵'
++ [K_D] > '𐓈'
++ [K_E] > '𐒷'
++ [K_F] > '𐓉'
++ [K_G] > '𐒼'
++ [K_H] > '𐒹'
++ [K_I] > '𐒻'
++ [K_J] > U+0358
++ [K_K] > '𐒽'
++ [K_L] > '𐒿'
++ [K_M] > '𐓀'
++ [K_N] > '𐓁'
++ [K_O] > '𐓂'
++ [K_P] > '𐓄'
++ [K_Q] > '𐒾'
++ [K_R] > '𐓊'
++ [K_S] > '𐓆'
++ [K_T] > '𐓍'
++ [K_U] > '𐓎'
++ [K_V] > '𐓇'
++ [K_W] > '𐓏'
++ [K_X] > '𐓐'
++ [K_Y] > '𐓓'
++ [K_Z] > '𐓒'
+
+
++ [SHIFT K_A] > '𐒲'
++ [SHIFT K_E] > U+104B8
++ [SHIFT K_C] > U+104B6
++ [SHIFT K_H] > '𐒺'
++ [SHIFT K_I] > '𐒱'
++ [SHIFT K_U] > U+104B3
++ [SHIFT K_N] > U+0301
++ [SHIFT K_B] > U+0304
++ [SHIFT K_M] > U+030B

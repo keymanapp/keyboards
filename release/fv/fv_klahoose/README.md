@@ -1,10 +1,6 @@
 Homalco-Klahoose-Sliammon keyboard
 ======================
 
-Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.2
-
 Homalco-Klahoose-Sliammon keyboard layout for Unicode
 
 Links

@@ -1,10 +1,6 @@
 ᓀᐦᐃᔭᐍᐏᐣ keyboard
 ======================
 
-Copyright (c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 10.0.1
-
 ᓀᐦᐃᔭᐍᐏᐣ keyboard layout for Unicode
 
 Links

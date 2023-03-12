@@ -1,0 +1,616 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'sil_senegal_sav_azerty'
+store(&COPYRIGHT) '©2022-2023 SIL International'
+store(&MESSAGE) 'Un clavier pour la langue «sav:Saaf-Saafi (Latin)», qui génère des caractères NFC Unicode.'
+store(&VISUALKEYBOARD) 'sil_senegal_sav_azerty.kvks'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&LAYOUTFILE) 'sil_senegal_sav_azerty.keyman-touch-layout'
+store(&BITMAP) 'sil_senegal_sav_azerty.ico'
+store(&KMW_RTL) '0'
+store(&kmw_helptext) '<p><a href=welcome/welcome.htm#en rel=help target=_new>in English</a>, <a href=welcome/welcome.htm#fr rel=help target=_new>en fran&#x00E7;ais</a>, <a href=welcome/welcome.htm#pt rel=help target=_new>em portugu&#x00EA;s </a></p>'
+
+begin Unicode > use(SGGBFR74)
+
+group(SGGBFR74) using keys
+c setup deadkeys
+c simple deadkeys
+c setup 'simple' keys
+
++ [K_BKQUOTE] > U+0060
++ [SHIFT K_BKQUOTE]   >   U+a78c
++ [ALT CTRL K_BKQUOTE]   >   U+a78b
++ [ALT CTRL SHIFT K_BKQUOTE]   >   U+a78c
++ [SHIFT T_saltillo] > U+a78b
++ [T_saltillo] > U+a78c
+
++ [K_1]	>	U+0026
++ [SHIFT K_1]	>	U+0031
+c + [ALT CTRL K_1]	>	U+1d7d
+c + [ALT CTRL SHIFT K_1]	>	 U+2c63
+c + [T_barred_p]	>	U+1d7d
+c + [SHIFT T_barred_p]	>	 U+2c63
+
++ [K_2]	>	U+00e9
++ [SHIFT K_2]	>	U+0032
++ [ALT CTRL K_2]	>	U+00b5
++ [T_mu]	>	U+00b5
+
++ [K_3]	>	U+0022
++ [SHIFT K_3]	>	U+0033
++ [ALT CTRL K_3]	>	U+0023
++ [T_hash]	>	U+0023
+c punct may require hard space on per lang basis - fr punct
++ [ALT CTRL SHIFT K_3]	>	 U+2018
++ [T_lsnglquote]	>	 U+2018
+
++ [K_4]	>	U+0027
++ [SHIFT K_4]	>	U+0034
++ [ALT CTRL K_4]	>	U+007b
++ [T_lcurly]	>	U+007b
+c punct may require hard space on per lang basis
+c be aware of use as ellipsis and/or glottal!- fr punct
++ [ALT CTRL SHIFT K_4]	>	 U+2019
++ [T_rsnglquote]	>	 U+2019
+
++ [K_5]	>	U+0028
++ [SHIFT K_5]	>	U+0035
++ [ALT CTRL K_5]	>	U+005b
++ [T_lbrkt]	>	U+005b
+c en punct
+c + [ALT CTRL SHIFT K_5]	>	 U+2039
+c + [T_lsnglguillmet]	>	 U+2039
+c fr punct
+c + [ALT CTRL SHIFT K_5]	>	 U+2039 U+00a0
+c + [T_lsnglguillmet]	>	 U+2039 U+00a0
+
++ [K_6]	>	U+002d
++ [SHIFT K_6]	>	U+0036
++ [ALT CTRL K_6]	>	 U+007c
++ [T_vertical_bar]	>	 U+007c
+c en punct
+c + [ALT CTRL SHIFT  K_6]	>	 U+203a
+c + [T_rsnglguillmet]	>	 U+203a
+c fr punct
+c + [ALT CTRL SHIFT  K_6]	>	 U+00a0 U+203a
+c + [T_rsnglguillmet]	>	 U+00a0 U+203a
+
++ [K_7]	>	 U+2014
++ [SHIFT K_7]	>	U+0037
++ [ALT CTRL K_7]	>	 U+2013
++ [T_en_dash]	>	 U+2013
++ [T_em_dash]	>	 U+2014
+c + [ALT CTRL SHIFT K_7]	>	 beep
+
++ [K_8]	>	U+005f
++ [SHIFT K_8]	>	U+0038
++ [ALT CTRL K_8]	>	U+005c
++ [ALT CTRL SHIFT K_8]	>	 U+00b1
++ [T_bkslash]	>	U+005c
++ [T_plus_minus]	>	 U+00b1
+
+c en punct
+c + [K_9]	>	 U+00ab
+c + [T_lguillmet]	>	 U+00ab U+00a0
+c fr punct
++ [K_9]	>	 U+00ab U+00a0
++ [T_lguillmet]	>	 U+00ab U+00a0
++ [SHIFT K_9]	>	U+0039
++ [ALT CTRL K_9]	>	U+00e7
+c en punct
+c + [ALT CTRL SHIFT  K_9]	>	 U+201c
+c + [T_ldblquote]	>	 U+201c
+c fr punct
++ [ALT CTRL SHIFT  K_9]	>	 U+201c U+00a0
++ [T_ldblquote]	>	 U+201c U+00a0
+
+c en punct
+c + [K_0]	>	 U+00bb
+c + [T_rguillmet]	>	 U+00bb
+c fr punct
++ [K_0]	>	 U+00a0 U+00bb
++ [T_rguillmet]	>	 U+00a0 U+00bb								  
++ [SHIFT K_0]	>	U+0030
++ [ALT CTRL K_0]	>	U+0040
++ [T_arobas]	>	U+0040
+c en punct
+c + [ALT CTRL SHIFT  K_0]	>	 U+201d
+c + [T_rdblquote]	>	 U+201d
+c fr punct
++ [ALT CTRL SHIFT  K_0]	>	 U+00a0 U+201d
++ [T_rdblquote]	>	 U+00a0 U+201d
+
++ [K_HYPHEN]	>	U+0029
++ [SHIFT K_HYPHEN]	>	U+00b0
++ [ALT CTRL K_HYPHEN]	>	U+005d
++ [ALT CTRL SHIFT K_HYPHEN]	>	U+00d7
++ [T_rbrkt]	>	U+005d
++ [T_multiply]	>	U+00d7
++ [T_degree]    >   U+00b0
+
++ [K_EQUAL]	>	U+003d
++ [SHIFT K_EQUAL]	>	U+002b
++ [ALT CTRL K_EQUAL]	>	U+007d
++ [ALT CTRL SHIFT K_EQUAL]	>	U+00f7
++ [T_rcurly]	>	U+007d
++ [T_divide]	>	U+00f7
+
++ [K_Q]	>	U+0061
++ [SHIFT K_Q]	>	U+0041
++ [ALT CTRL K_Q]	>	U+00e4
++ [ALT CTRL SHIFT K_Q]	>	U+00c4
+
++ [K_W]	>	U+007a
++ [SHIFT K_W]	>	U+005a
++ [ALT CTRL K_W]	>	 U+00e5
++ [ALT CTRL SHIFT K_W]	>	 U+00c5
+
++ [K_E]	>	U+0065
++ [SHIFT K_E]	>	U+0045
++ [ALT CTRL K_E]	>	U+20ac
++ [T_euro]  >   U+20ac
++ [ALT CTRL SHIFT K_E]	>	U+00c9
+
++ [K_R]	>	U+0072
++ [SHIFT K_R]	>	U+0052
++ [ALT CTRL K_R]	>	U+00ae
+c + [ALT CTRL SHIFT K_R]	>	 beep
++ [T_registered]	>	U+00ae
+
++ [K_T]	>	U+0074
++ [SHIFT K_T]	>	U+0054
+c + [ALT CTRL K_T]	>	U+01ad
+c + [ALT CTRL SHIFT K_T]	>	U+01ac
+
++ [K_Y]	>	U+0079
++ [SHIFT K_Y]	>	U+0059
++ [ALT CTRL K_Y]	>	U+00fc
++ [ALT CTRL SHIFT K_Y]	>	U+00dc
+
++ [K_U]	>	U+0075
++ [SHIFT K_U]	>	U+0055
++ [ALT CTRL K_U]	>	U+00fa
++ [ALT CTRL SHIFT K_U]	>	U+00da
+
++ [K_I]	>	U+0069
++ [SHIFT K_I]	>	U+0049
++ [ALT CTRL K_I]	>	U+00ed
++ [ALT CTRL SHIFT K_I]	>	U+00cd
+
++ [K_O]	>	U+006f
++ [SHIFT K_O]	>	U+004f
++ [ALT CTRL K_O]	>	U+00f3
++ [ALT CTRL SHIFT K_O]	>	U+00d3
+
++ [K_P]	>	U+0070
++ [SHIFT K_P]	>	U+0050
++ [ALT CTRL K_P]	>	U+00f6
++ [ALT CTRL SHIFT K_P]	>	U+00d6
+
++ [K_LBRKT]	>	 U+005e
++ [SHIFT K_LBRKT]	>	 U+00a8
++ [CTRL K_LBRKT]	>	U+001b
++ [ALT CTRL K_LBRKT]	>	 U+00a5
++ [T_yen]	>	 U+00a5
+
++ [K_RBRKT]	>	U+0024
++ [SHIFT K_RBRKT]	>	U+00a3
++ [CTRL K_RBRKT]	>	U+001d
++ [ALT CTRL K_RBRKT]	>	U+00a4
++ [T_pound_sign]  >   U+00a3
++ [T_currency]	>	U+00a4
+
++ [K_BKSLASH]	>	 U+002a
++ [SHIFT K_BKSLASH]	>	U+007e
++ [CTRL K_BKSLASH]	>	U+001c
++ [ALT CTRL K_BKSLASH]	>	U+00a2
++ [ALT CTRL SHIFT K_BKSLASH]	>	U+00a6
++ [T_tilde]	>	U+007e					
++ [T_cent]	>	U+00a2
++ [T_broken_bar]	>	U+00a6
+
++ [K_A]	>	U+0071
++ [SHIFT K_A]	>	U+00e1
++ [ALT CTRL SHIFT K_A]	>	U+00d1
+
++ [K_S]	>	U+0073
++ [SHIFT K_S]	>	U+0053
++ [ALT CTRL K_S]	>	U+00df
++ [ALT CTRL SHIFT K_S]	>	U+00a7
++ [T_section]   >   U+00a7
+
++ [K_D]	>	U+0064
++ [SHIFT K_D]	>	U+0044
++ [ALT CTRL K_D]	>	U+00eb
++ [ALT CTRL SHIFT K_D]	>	U+00cb
+
++ [K_F]	>	U+0066
++ [SHIFT K_F]	>	U+0046
+
++ [K_G]	>	U+0067
++ [SHIFT K_G]	>	U+0047
+
++ [K_H]	>	U+0068
++ [SHIFT K_H]	>	U+0048
+
++ [K_J]	>	U+006a
++ [SHIFT K_J]	>	U+004a
++ [ALT CTRL K_J]	>	U+014b
++ [ALT CTRL SHIFT K_J]	>	U+014a
+
++ [K_K]	>	U+006b
++ [SHIFT K_K]	>	U+004b
++ [ALT CTRL K_K]	>	U+0153
++ [ALT CTRL SHIFT K_K]	>	U+0152
+
++ [K_L]	>	U+006c
++ [SHIFT K_L]	>	U+004c
++ [ALT CTRL K_L]	>	U+00f8
++ [ALT CTRL SHIFT K_L]	>	U+00d8
+
++ [K_COLON]	>	U+006d
++ [SHIFT K_COLON]	>	U+004d
+
++ [K_QUOTE]	>	 U+00b4
++ [SHIFT K_QUOTE]	>	U+0025
++ [ALT CTRL K_QUOTE]	>	U+003c
++ [ALT CTRL SHIFT K_QUOTE]	>	U+003e
++ [T_lt]	>	U+003c
++ [T_gt]	>	U+003e
+
++ [K_oE2]	>	U+003c
++ [SHIFT K_oE2]	>	U+003e
++ [CTRL K_oE2]	>	U+001c
+c + [ALT CTRL K_oE2]	>	beep
+C + [ALT CTRL SHIFT K_oE2]	>	beep
+
++ [K_Z]	>	U+0077
++ [SHIFT K_Z]	>	U+0057
++ [ALT CTRL K_Z]	>	 U+00e6
++ [ALT CTRL SHIFT K_Z]	>	 U+00c6
+					   
++ [K_X]	>	U+0078
++ [SHIFT K_X]	>	U+0058
++ [ALT CTRL K_X]	>	U+2117
++ [T_sound]	>	U+2117
+
++ [K_C]	>	U+0063
++ [SHIFT K_C]	>	U+0043
++ [ALT CTRL K_C]	>	U+00a9
++ [ALT CTRL SHIFT K_C]	>	 U+00a2
++ [T_copyright]	>	U+00a9
+
++ [K_V]	>	U+0076
++ [SHIFT K_V]	>	U+0056
+
++ [K_B]	>	U+0062
++ [SHIFT K_B]	>	U+0042
+
++ [K_N]	>	U+006e
++ [SHIFT K_N]	>	U+004e
++ [ALT CTRL K_N]	>	U+00f1
++ [ALT CTRL SHIFT K_N]	>	 U+00d1
++ [T_eng]	>	U+014b
++ [SHIFT T_eng]	>	U+014a
+
+c en punct
++ [K_M]	>	U+002c
+c fr punct
+c + [K_M]	>	U+00a0 U+002c
++ [SHIFT K_M]	>	U+00a0 U+003f
+c + [ALT CTRL K_M]	>	beep
++ [ALT CTRL SHIFT K_M]	>	 U+00b6
++ [T_pilcrow]	>	 U+00b6
+
+c en punct
+c + [K_COMMA]	>	U+003b
+c fr punct
++ [K_COMMA]	>	U+00a0 U+003b
++ [SHIFT K_COMMA]	>	U+002e
++ [ALT CTRL K_COMMA]	>	 U+2022
++ [ALT CTRL SHIFT K_COMMA]	>	 U+2026
++ [T_bullet]	>	 U+2022
++ [T_ellipsis]	>	 U+2026
+
+c en punct
++ [K_PERIOD]	>	U+00a0 U+003a
+c fr punct
+c + [K_PERIOD]	>	U+00a0 U+003a
++ [SHIFT K_PERIOD]	>	U+002f
++ [ALT CTRL K_PERIOD]	>	 U+00b7
++ [T_mid_dot]	>	 U+00b7
+c + [ALT CTRL SHIFT K_PERIOD]	>	 beep
+
+c en punct
+c + [K_SLASH]	>	U+0021
+c fr punct
++ [K_SLASH]	>	U+00a0 U+0021
++ [SHIFT K_SLASH]	>	U+00a7
+
++ [K_SPACE]	>	U+0020
++ [SHIFT K_SPACE]	>	U+0020
++ [CTRL K_SPACE]	>	U+0020
++ [ALT CTRL K_SPACE]	>	U+00a0
++ [ALT CTRL SHIFT K_SPACE]	>	U+202f
++ [T_nbsp]	>	U+00a0
++ [T_nnbsp]	>	U+202f
+
+c other stuff for touch
+c + [T_fcfa]  >   'fcfa'
+
+c numpad
++ [K_NP0]	>	U+0030
++ [K_NP1]	>	U+0031
++ [K_NP2]	>	U+0032
++ [K_NP3]	>	U+0033
++ [K_NP4]	>	U+0034
++ [K_NP5]	>	U+0035
++ [K_NP6]	>	U+0036
++ [K_NP7]	>	U+0037
++ [K_NP8]	>	U+0038
++ [K_NP9]	>	U+0039
+
++ [K_NPSTAR] > U+00d7
++ [K_NPPLUS] > U+002b
++ [K_NPMINUS] > U+002d
++ [K_NPSLASH] > U+00f7
+
++ [K_NPDOT]	>	U+002e
++ [SHIFT K_NPDOT]	>	U+002e
+
+c modifier keys
+c grave
+U+0024 + [K_BKQUOTE] >  U+20AC
+U+0026 + [K_BKQUOTE] >  U+0040
+U+0060 + [K_BKQUOTE] >  U+A78C
+U+0028 + [K_BKQUOTE] >  U+005B
+U+2014 + [K_BKQUOTE] >  U+2013
+U+0029 + [K_BKQUOTE] >  U+005D
+
+U+0061 + [K_BKQUOTE] >  U+00e0 
+U+0065 + [K_BKQUOTE] >  U+00e8 
+U+0069 + [K_BKQUOTE] >  U+00ec 
+U+006f + [K_BKQUOTE] >  U+00f2 
+U+0075 + [K_BKQUOTE] >  U+00f9
+U+0041 + [K_BKQUOTE] >  U+00c0 
+U+0045 + [K_BKQUOTE] >  U+00c8 
+U+0049 + [K_BKQUOTE] >  U+00cc 
+U+004f + [K_BKQUOTE] >  U+00d2 
+U+0055 + [K_BKQUOTE] >  U+00d9
++ [T_a_grave]   >   U+00e0
++ [SHIFT T_a_grave]   >   U+00c0
+c + [T_e_grave]	>	 U+00e8
+c + [SHIFT T_e_grave] > U+00c8
+c + [T_i_grave]	>	 U+00ec
+c + [SHIFT T_i_grave] > U+00cc
+c + [T_o_grave]	>	 U+00f2
+c + [SHIFT T_o_grave] > U+00d2
+c + [T_u_grave]	>	 U+00f9
+c + [SHIFT T_u_grave] > U+00d9
+c QUOTES
+U+0022 + [K_BKQUOTE]  >   U+201c U+00a0
+U+0027 + [K_BKQUOTE]  >   U+2018
+c c, s, t cedilla
+U+0063 + [K_BKQUOTE]  >   U+00e7
+U+0043 + [K_BKQUOTE]  >   U+00c7
+c U+0073 + [K_BKQUOTE]  >   U+015f
+c U+0053 + [K_BKQUOTE]  >   U+015e
+c U+0074 + [K_BKQUOTE]  >   U+0163
+c U+0054 + [K_BKQUOTE]  >   U+0162
+c + [T_c_cedilla]   > U+00e7
+c + [SHIFT T_c_cedilla] > U+00c7
+c + [T_s_cedilla]	>	 U+015f
+c + [SHIFT T_s_cedilla]	>	 U+015e
+c + [T_t_cedilla]	>	U+0163
+c + [SHIFT T_t_cedilla]	>	U+0162
+
+c acute use U+NNNN not 'char'
+U+0024 + [K_QUOTE] >  U+00A2
+U+0028 + [K_QUOTE] >  U+007B 
+U+0026 + [K_QUOTE] >  U+0023 
+U+0029 + [K_QUOTE] >  U+007D
+U+00B4 + [K_QUOTE] >  U+A78B
+U+00AB U+00A0 + [K_QUOTE] > U+003C
+U+00A0 U+00BB + [K_QUOTE] > U+003E
+
+U+0061 + [K_QUOTE] >  U+00e1 
+U+0065 + [K_QUOTE] >  U+00e9 
+U+0069 + [K_QUOTE] >  U+00ed 
+U+006f + [K_QUOTE] >  U+00f3 
+U+0075 + [K_QUOTE] >  U+00fa
+U+0041 + [K_QUOTE] >  U+00c1 
+U+0045 + [K_QUOTE] >  U+00c9 
+U+0049 + [K_QUOTE] >  U+00cd 
+U+004f + [K_QUOTE] >  U+00d3 
+U+0055 + [K_QUOTE] >  U+00da
++ [T_a_acute]	>	 U+00e1
++ [SHIFT T_a_acute] > U+00c1
++ [T_e_acute]	>	 U+00e9
++ [SHIFT T_e_acute] > U+00c9
++ [T_i_acute]	>	 U+00ed
++ [SHIFT T_i_acute] > U+00cd
++ [T_o_acute]	>	 U+00f3
++ [SHIFT T_o_acute]	>	 U+00d3
++ [T_u_acute] > u+00fa
++ [SHIFT T_u_acute] > u+00da
+c plosive
+U+0062 + [K_QUOTE] >  U+0253 
+U+0064 + [K_QUOTE] >  U+0257
+c U+0063 + [K_QUOTE] >  U+0188
+c U+0067 + [K_QUOTE] >  U+0260
+c U+0074 + [K_QUOTE] >  U+01ad
+c U+0070 + [K_QUOTE] >  U+01a5 
+U+0079 + [K_QUOTE] >  U+01b4
+U+0042 + [K_QUOTE] >  U+0181 
+U+0044 + [K_QUOTE] >  U+018a 
+c U+0043 + [K_QUOTE] >  U+0187
+c U+0047 + [K_QUOTE] >  U+0193
+c U+0054 + [K_QUOTE] >  U+01ac
+c U+0050 + [K_QUOTE] >  U+01a4 
+U+0059 + [K_QUOTE] >  U+01b3
+c eng 
+U+006e + [K_QUOTE] >  U+014b 
+U+004e + [K_QUOTE] >  U+014a
++ [T_b_hook]	>	U+0253
++ [SHIFT T_b_hook]	>	U+0181
+c + [T_c_hook]	>	U+0188
+c + [SHIFT T_c_hook]	>	U+0187
++ [T_d_hook]	>	U+0257
++ [SHIFT T_d_hook]	>	U+018a
+c + [T_g_hook]	>	U+0260
+c + [SHIFT T_g_hook]	>	 U+0193
+c + [T_p_hook]	>	U+01a5
+c + [SHIFT T_p_hook]	>	U+01a4
+c + [T_t_hook]	>	U+01ad
+c + [SHIFT T_t_hook]	>	U+01ac
++ [T_y_hook]	>	U+01b4
++ [SHIFT T_y_hook]	>	U+01b3
+c + [T_lsnglguillmet] >   U+2039
+c + [T_rsnglguillmet] >   U+203A
+c quote
+U+0022 + [K_QUOTE]  >   U+00a0 U+201d
+U+0027 + [K_QUOTE]  >   U+2019
+c U+00ab + [K_QUOTE] > U+2039
+c U+00bb + [K_QUOTE] > U+203a
+
+c circumflex
+U+0024 + [K_LBRKT] >  U+00A5
+U+00AB U+00A0 + [K_LBRKT] > U+00D7
+U+00A0 U+00BB + [K_LBRKT] > U+00F7
+
+U+0061 + [K_LBRKT] >  U+00e2 
+U+0065 + [K_LBRKT] >  U+00ea 
+U+0069 + [K_LBRKT] >  U+00ee 
+U+006f + [K_LBRKT] >  U+00f4 
+U+0075 + [K_LBRKT] >  U+00fb
+U+0041 + [K_LBRKT] >  U+00c2 
+U+0045 + [K_LBRKT] >  U+00ca 
+U+0049 + [K_LBRKT] >  U+00ce 
+U+004f + [K_LBRKT] >  U+00d4 
+U+0055 + [K_LBRKT] >  U+00db
+c c,s
+c U+0063 + [K_LBRKT] > U+0109
+c U+0043 + [K_LBRKT] > U+0108
+U+0073 + [K_LBRKT] > U+015d
+U+0053 + [K_LBRKT] > U+015c
+c + [T_a_circumflex] > U+00e2
+c + [SHIFT T_a_circumflex] > U+00c2
+c + [T_c_circumflex] > U+0109
+c + [SHIFT T_c_circumflex] > U+0108
+c + [T_e_circumflex] > U+00ea
+c + [SHIFT T_e_circumflex] > U+00ca
+c + [T_o_circumflex] > U+00f4
+c + [SHIFT T_o_circumflex] > U+00d4
++ [T_s_circumflex] > U+015d
++ [SHIFT T_s_circumflex] > U+015c
+c barred t, p
+c U+0074 + [K_LBRKT] > U+0167
+c U+0054 + [K_LBRKT] > U+0166
+c + [T_barred_t]	>	 U+0167
+c + [SHIFT T_barred_t]	>	 U+0166
+c U+0070 + [K_LBRKT] > U+1d7d
+c U+0050 + [K_LBRKT] > U+2c63
+c + [T_barred_p]	>	 U+1d7d
+c + [SHIFT T_barred_p]	>	 U+2c63
+
+c diaeresis
+U+0024 + [SHIFT K_LBRKT] >  U+00A4
+U+002E + [SHIFT K_LBRKT] >  U+2026
+
+U+0061 + [SHIFT K_LBRKT] >  U+00e4
+U+0065 + [SHIFT K_LBRKT] >  U+00eb 
+U+0069 + [SHIFT K_LBRKT] >  U+00ef 
+U+006f + [SHIFT K_LBRKT] >  U+00f6
+U+0075 + [SHIFT K_LBRKT] >  U+00fc
+U+0041 + [SHIFT K_LBRKT] >  U+00c4 
+U+0045 + [SHIFT K_LBRKT] >  U+00cb 
+U+0049 + [SHIFT K_LBRKT] >  U+00cf 
+U+004f + [SHIFT K_LBRKT] >  U+00d6
+U+0055 + [SHIFT K_LBRKT] >  U+00dc
+c y 
+U+0059 + [SHIFT K_LBRKT] >  U+0178
+U+0079 + [SHIFT K_LBRKT] >  U+00ff
++ [T_e_umlaut]	>	 U+00eb
++ [SHIFT T_e_umlaut]	>	 U+00cb
+c + [T_i_umlaut]	>	 U+00ef
+c + [SHIFT T_i_umlaut	>	 U+00cf
+c + [T_u_umlaut]	>	 U+00fc
+c + [SHIFT T_u_umlaut]	>	 U+00dc
+
+c tilde a, e, i, o, u, 
+U+0061 + [SHIFT K_BKSLASH] >  U+00e3 
+U+0065 + [SHIFT K_BKSLASH] >  U+1ebd 
+c U+0069 + [SHIFT K_BKSLASH] >  U+0129 
+U+006f + [SHIFT K_BKSLASH] >  U+00f5 
+c U+0075 + [SHIFT K_BKSLASH] >  U+0169
+U+0041 + [SHIFT K_BKSLASH] >  U+00c3 
+c U+0045 + [SHIFT K_BKSLASH] >  U+1ebc 
+c U+0049 + [SHIFT K_BKSLASH] >  U+0128 
+U+004f + [SHIFT K_BKSLASH] >  U+00d5 
+c U+0055 + [SHIFT K_BKSLASH] >  U+0168
++ [T_a_tilde]   >   U+00e3
++ [SHIFT T_a_tilde]   >   U+00c3
++ [T_e_tilde]   >   U+00e9
++ [SHIFT T_e_tilde]   >   U+00c9
+c h, n, w, y
+c U+0068 + [SHIFT K_BKSLASH] > U+0068 U+0303
+c U+0048 + [SHIFT K_BKSLASH] > U+0048 U+0303
+U+006e + [SHIFT K_BKSLASH]  > U+00f1
+U+004e + [SHIFT K_BKSLASH]  > U+00d1
+c U+0077 + [SHIFT K_BKSLASH] > U+0077 U+0303
+c U+0057 + [SHIFT K_BKSLASH] > U+0057 U+0303
+c U+0079 + [SHIFT K_BKSLASH] > U+1ef9
+c U+0059 + [SHIFT K_BKSLASH] > U+1ef8
+c + [T_h_tilde] > U+0068 U+0303
+c + [SHIFT T_h_tilde] > U+0048 U+0303
++ [T_n_tilde]  > U+00f1
++ [SHIFT T_n_tilde]  > U+00d1
+c + [T_o_tilde]	>	U+00f5
+c + [SHIFT T_o_tilde]	>	 U+00d5
+c + [T_w_tilde] > U+0077 U+0303
+c + [SHIFT T_w_tilde] > U+0057 U+0303
+c + [T_y_tilde] > U+1ef9
+c + [SHIFT T_y_tilde] > U+1ef8
+
+c degree sign
+c + U+006c + [SHIFT K_HYPHEN] > U+006c U+0325
+c + U+004c + [SHIFT K_HYPHEN] > U+004c U+0325
+c + [T_l_ring_below] > U+006c U+0325
+c + [SHIFT T_l_ring_below] > U+004c U+0325
+U+0061 + [SHIFT K_HYPHEN] > U+00e5
+U+0041 + [SHIFT K_HYPHEN] > U+00c5
+c + [T_a_ring_above] > U+00e5
+c + [SHIFT T_a_ring_above] > U+00c5
+U+006f + [SHIFT K_HYPHEN] > U+00f8
+U+004f + [SHIFT K_HYPHEN] > U+00d8
+c + [T_o_stroke] > U+00f8
+c + [SHIFT T_o_stroke] > U+00d8
+U+00AB U+00A0 + [SHIFT K_HYPHEN] > U+00A0
+U+00A0 U+00BB + [SHIFT K_HYPHEN] > U+202F
+U+002E + [SHIFT K_HYPHEN] >  U+2022
+U+002B + [SHIFT K_HYPHEN] >  U+00B1
+U+003F + [SHIFT K_HYPHEN] >  U+00B6
+U+002F + [SHIFT K_HYPHEN] >  U+007C 
+
+c section
+U+004F + [SHIFT K_SLASH] > U+0152
+U+006F + [SHIFT K_SLASH] > U+0153
+U+0041 + [SHIFT K_SLASH] > U+00C6
+U+0061 + [SHIFT K_SLASH] > U+00E6
+U+0073 + [SHIFT K_SLASH] >  U+00DF
+U+0053 + [SHIFT K_SLASH] >  U+00DF
+U+0055 + [SHIFT K_SLASH] > U+00B5
+U+0075 + [SHIFT K_SLASH] > U+00B5
+U+0043 + [SHIFT K_SLASH] >  U+00A9
+U+0063 + [SHIFT K_SLASH] >  U+00A9
+U+0050 + [SHIFT K_SLASH] >  U+2117
+U+0070 + [SHIFT K_SLASH] >  U+2117
+U+0052 + [SHIFT K_SLASH] >  U+00AE
+U+0072 + [SHIFT K_SLASH] >  U+00AE
+U+002E + [SHIFT K_SLASH] >  U+00B7
+U+002F + [SHIFT K_SLASH] >  U+005C
+
+c mistyped key
++ [T_null]  >   beep
++ [SHIFT T_null]    >   beep
+nomatch()   >   beep

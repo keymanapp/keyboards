@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2008, 2015, 2018-2022 thamiza.com and SIL International
+Copyright (c) 2008, 2015, 2018-2023 thamiza.com and SIL International
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -5,7 +5,11 @@ Runeboard Change History
 ----------------
 * Created by ᚱᚢᚾ᛫ᛗᚫᚾ
 
-1.1 (2022-10-07)
+1.1 (2022-10-20)
 ----------------
-* Bug fix - Shift key on mobile now works.
+* Shift key works now.
+
+1.2 (2023-02-15)
+----------------
+* Bug fix - three-dot punctuation mark no longer adds empty space.
 
