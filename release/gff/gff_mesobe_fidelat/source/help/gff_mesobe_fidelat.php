@@ -102,13 +102,13 @@ Like the letter keys, the <code>።</code> and <code>’</code> keys also have p
 <h4>Numerals</h4>
 
 <p style="text-align: justify;">
-Tap the `1/፩` key to shift to the numerals layer. The numerals layer presents the Western numbers, Geʾez numbers, and all Geʾez punctuation.
+Tap the <code>1/፩</code> key to shift to the numerals layer. The numerals layer presents the Western numbers, Geʾez numbers, and all Geʾez punctuation.
 </p>
 
 <img src="images/gff_mesobe_fidelat-numerals-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
-Tapping the `@` shifts to a 3rd layer to access all remaining punctuation:
+Tapping the <code>@</code> shifts to a 3rd layer to access all remaining punctuation:
 </p>
 
 </div>
@@ -123,12 +123,12 @@ Punctuation is distributed over two layers on mobile phones, and appears on a si
 <img src="images/gff_mesobe_fidelat-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
 
 <p style="text-align: justify;">
-Tapping the `#+€` key shifts to a final layer to access all remaining punctuation:
+Tapping the <code>#+€</code> key shifts to a final layer to access all remaining punctuation:
 </p>
 <img src="images/gff_mesobe_fidelat-punctuation-2.jpeg" style="border: 1px solid black;" width="100%"/> 
 
 <p style="text-align: justify;">
-Simply tap the `ሀለሐ` key to return to the Mesob letters layers.
+Simply tap the <code>ሀለሐ</code> key to return to the Mesob letters layers.
 </p>
 
 </div>
@@ -136,7 +136,6 @@ Simply tap the `ሀለሐ` key to return to the Mesob letters layers.
 
 <div id="TabletLayout">
 <h2>Tablet Layout &amp; Layers</h2>
-
 <p style="text-align: justify;">
 The Mesob tablet layout is <em>identical</em> to the mobile phone layout with the exception that a single punctuation layer is used. The single takes advantage of the greater screen space available.  The larger punctuation layer is shown in the following image:
 </p>
@@ -147,7 +146,7 @@ The Mesob tablet layout is <em>identical</em> to the mobile phone layout with th
 
 <div id="Troubleshooting">
 <h2>Troubleshooting</h2>
-<p class='keymanweb'>It is expected some of the newer letters introduced for the Gurage language will not appear on screen when using
+<p class='keymanweb' style="text-align: justify;">It is expected some of the newer letters introduced for the Gurage language will not appear on screen when using
 Keyman with other apps, such as for text messaging.  This will be resolved in the near future when companies like Apple and Samsung update
 their products.</p>
 
@@ -185,7 +184,8 @@ their products.</p>
 <div id="Technical">
 <h2>Technical Information</h2>
 <h3>System Requirements</h3>
-<p>Due to the keyboard's width it is ideally suited for tablet devices but is also suitable for larger mobile phones.
+<p style="text-align: justify;">
+Due to the keyboard's width it is ideally suited for tablet devices but is also suitable for larger mobile phones.
 </p>
 <h3>Unicode Version</h3>
 <p>This keyboard complies with Unicode 14</p>
@@ -203,13 +203,13 @@ their products.</p>
 
 <div id="Author">
 <h3>Keyboard Authorship</h3>
-<p>
+<p style="text-align: justify;">
 This keyboard was created by the Geʾez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
-<p>
+<p style="text-align: justify;">
 The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
