@@ -12,16 +12,18 @@ c
 c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-  store(&Version) '9.0'
-store(&KEYBOARDVERSION) '1.4.2'
+  store(&Version) '15.0'
+store(&KEYBOARDVERSION) '1.5'
   store(&Name) 'ብሊን (Blin)'    
-  store(&EthnologueCode) 'byn'
-store(&COPYRIGHT) '© 2009-2020 Ge' U+0027 'ez Frontier Foundation'
+c  store(&EthnologueCode) 'byn'
+store(&COPYRIGHT) '© 2009-2023 Geʾez Frontier Foundation'
   store(&Message) 'This is a Blin language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_B]'
 store(&BITMAP) 'gff_blin.ico'
 store(&VISUALKEYBOARD) 'gff_blin.kvks'
+store(&LAYOUTFILE) 'gff_blin.keyman-touch-layout'
+store(&KMW_EMBEDCSS) 'gff_blin.css'
 c 
 c =====================End Identity Section=====================================================
 
@@ -92,10 +94,18 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&TARGETS) 'windows macosx linux'
+store(&TARGETS) 'any'
   begin Unicode > use(main)
   group(main) using keys
 
+  any(ሳድስ) + [T_ግዕዝ] > index(ግዕዝ,1)
+  any(ሳድስ) + [T_ካዕብ] > index(ካዕብ,1)
+  any(ሳድስ) + [T_ሣልስ] > index(ሣልስ,1)
+  any(ሳድስ) + [T_ራብዕ] > index(ራብዕ,1)
+  any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1) 
+  any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
+    any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  
 c ---------------------Input of Special Symbols-------------------------------------------------
 c 
 c The input section here is for rules that must precede other rules
@@ -273,5 +283,7 @@ c upto the order of 100 million
 c enhance this later, look for something that can copy a match over
   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
 c ---------------------End Input of Numbers-----------------------------------------------------
+
++ [T_THOUSAND] > '፲፻'
                                             
 c =====================End Functional Section===================================================
