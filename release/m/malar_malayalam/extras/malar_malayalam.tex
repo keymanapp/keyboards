@@ -10,8 +10,13 @@
 \usepackage[svgnames,dvipsnames]{xcolor}
 \usepackage[colorlinks,bookmarksopen]{hyperref}
 \usepackage{tabls}
-\usepackage[inner=.25in,outer=.25in,
-   top=.25in,bottom=.25in,]{geometry}
+\usepackage[
+a4paper,
+left=.85cm,
+right=.85cm,
+top=.85cm,
+bottom=.85cm,
+]{geometry}
 
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX,Mapping=tex-text]{Manjari}
@@ -39,13 +44,13 @@
 \def\div{\expandafter\@gobble\string\÷}
 \def\mlt{\expandafter\@gobble\string\×}
 \makeatother
+\pagenumbering{gobble}
 
 \begin{document}
 \Large
 \centering
-
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\multicolumn{10}{c}{\enh{Malar Malayalam Keyboard}}\\
+\multicolumn{10}{c}{\href{https://keyman.com/keyboards/malar_malayalam}{\enh{Malar Malayalam Keyboard}}}\\
 \hline
 \multicolumn{10}{c}{സ്വരങ്ങൾ, സ്വരചിഹ്നങ്ങൾ}\\
 \hline
@@ -97,17 +102,17 @@
 \en\space\dlr\space\space\dlr\bsh \\
 \hline
 
-ഷ് & സ് & ഹ് & ള് & ഴ് & റ് &ഩ്& ഺ് & ൎ &\div\space\space\space\mlt&\enb ZWNJ \\
-\en sh &\en s &\en h &\en L &\en zh &\en R\space rr &
-\en n\bsh\bsh &\en TT\bsh &\en r\bsh\bsh &\en\sla\bsh\space\space\str\bsh&\en\vbar \\
+ഷ് & സ് & ഹ് & ള് & ഴ് & റ് &ഩ്& ഺ് & ൎ &\enb ZWNJ&\enb ZWJ \\
+\en sh &\en s &\en h &\en L &\en zh &\en rr\space R &
+\en n\bsh\bsh &\en TT\bsh &\en r\bsh\bsh &\en ZZ&\en WW \\
 \hline
 
-ൻ & ൺ & ൽ & ൾ & ർ & ൿ & ൔ & ൕ & ൖ & &\enb Cancel \\
+ൻ & ൺ & ൽ & ൾ & ർ & ൿ & ൔ & ൕ & ൖ &\div\space\space\space\mlt&\enb Cancel \\
 \en n\bsh &\en N\bsh &\en l\bsh &\en L\bsh &\en r\bsh&
-\en k\bsh &\en m\bsh &\en y\bsh &\en zh\bsh &&\en q\space Q \\
+\en k\bsh &\en m\bsh &\en y\bsh &\en zh\bsh &\en\sla\bsh\space\space\str\bsh&\en q\space Q \\
 \hline
 
-ങ്ങ് &	ങ്ക് &	ന്റ് &	ഞ്ച് & റ്റ് & ക്ഷ്	& 
+ങ്ങ് &	ങ്ക് &	ൻ്റ് &	ഞ്ച് & റ്റ് & ക്ഷ്	& 
 ണ്ട് & ന്ദ് & ന്ത് & മ്പ് & ന്മ് \\
 \en ng &\en nk\space Ngk &\en nt &\en nch\space njch &\en TT &
 \en ksh &\en Nt &\en nd &\en nth &\en mp  &\en nm  \\
@@ -136,9 +141,9 @@
 \hline
 
  ക്ര & ക്യ & ക്വ & ക്ല & കൢ & കൣ &ക്ഹ്&
-\enb\tld&\enb\bsh\space\vbar& ‘ക’ & “ക” \\
+\enb\tld&\enb\bsh\ & ‘ക’ & “ക” \\
 \en kra &\en kya &\en kva &\en kla &\en klu\bsh\bsh &
-\en kluu\bsh\bsh &\en kqh&\en q\tld&\en q\bsh\space q\vbar&
+\en kluu\bsh\bsh &\en kqh&\en q\tld&\en q\bsh\ &
 \en\appo\bsh ka\appo\bsh\bsh&\en\quo\bsh ka\quo\bsh\bsh \\
 \hline
 \end{tabular}
