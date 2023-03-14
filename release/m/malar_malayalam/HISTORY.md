@@ -1,6 +1,14 @@
 Malar Malayalam Keyboard Change History
 ====================
 
+1.5 (2023-03-11)
+----------------
+* Add `XX` keystroke for ZWJ (200D).
+* Change keystroke for ZWNJ (200C) to `ZZ`.
+* Add support for Conjunct `ṉṯa` as per Unicode specification.
+* Updated Keymapping Chart.
+* Updated touch layout.
+
 1.4 (2021-05-08)
 ----------------
 * Improved support for Numeric Keypad in keyboard.
