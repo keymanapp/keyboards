@@ -1,6 +1,10 @@
 Malar Malayalam Keyboard Change History
 ====================
 
+1.6 (2023-03-17)
+----------------
+* Fix `ntha` keystroke to get conjunct `n̪t̪a` `<0D28, 0D4D, 0D24>`.
+
 1.5 (2023-03-11)
 ----------------
 * Add `XX` keystroke for ZWJ (200D).
