@@ -13,6 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
+store(&KEYBOARDVERSION) '1.0'
 store(&NAME) 'ሐረሪ (Harari)'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&Message) "This is a Harari language mnemonic input method for Ethiopic script that requires Unicode 3.0 support."
@@ -141,14 +142,17 @@ store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፎፏ'
 store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፖፗ'
 c store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟥𞟦!'  for future
 
-
+store(touchVowelsLabialvelar)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ]
+store(ቈ_ቤተሰብ) 'ቈቍቊቋቌ'
+store(ኈ_ቤተሰብ) 'ኈኍኊኋኌ'
+store(ኰ_ቤተሰብ) 'ኰኵኲኳኴ'
+store(ዀ_ቤተሰብ) 'ዀዅዂዃዄ'
+store(ጐ_ቤተሰብ) 'ጐጕጒጓጔ'
 
 c =====================End Data Section=========================================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&KEYBOARDVERSION) '1.0'
-
   begin Unicode > use(main)
   group(main) using keys
 
@@ -175,6 +179,13 @@ c
   any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1) 
   any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
   any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+
+  any(ዘመደ፡ራብዕ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+
   
   if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
@@ -223,6 +234,13 @@ c
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
   if( &layer = "ፐ-extra" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
 c if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2) for future
+
+  if( &layer = "ቀ-extra-labialvelar" ) + any(touchVowelsLabialvelar) > index(ቈ_ቤተሰብ,2)
+  if( &layer = "ኀ-extra-labialvelar" ) + any(touchVowelsLabialvelar) > index(ኈ_ቤተሰብ,2)
+  if( &layer = "ከ-extra-labialvelar" ) + any(touchVowelsLabialvelar) > index(ኰ_ቤተሰብ,2)
+  if( &layer = "ኸ-extra-labialvelar" ) + any(touchVowelsLabialvelar) > index(ዀ_ቤተሰብ,2)
+  if( &layer = "ገ-extra-labialvelar" ) + any(touchVowelsLabialvelar) > index(ጐ_ቤተሰብ,2)
+  
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
 c
@@ -255,26 +273,6 @@ $keymanonly:   'እ' + any(ኃምስ-key) > 'ኤ'
 
 c Aynu-A Vowels as Regular Syllables
 
-c delete below if no longer applicable
-c  platform("touch")   'እ' + [T_ግዕዝ] > 'አ'
-c  platform("desktop") 
-c  'እ' + any(ግዕዝ-key) > 'ዕ'
-  c 'ዕ' + any(ግዕዝ-key) > 'ዐ'
-  c 'ዕ' + any(ካዕብ-key) > 'ዑ'
-  c 'ዕ' + any(ሣልስ-key) > 'ዒ'
-  c 'ዕ' + any(ራብዕ-key) > 'ዓ'
- c  'ዒ' + any(ግዕዝ-key) > 'ዔ'
-c $keymanonly:    'ኤ' + any(ኃምስ-key) > 'ዔ'
-  c 'ዕ' + any(ሳብዕ-key) > 'ዖ'
-
-c Aynu-A Vowels as Vowels
-c  'ኡ' + any(ካዕብ-key) > 'ዑ'
-c  'ኢ' + any(ሣልስ-key) > 'ዒ'
-c  'ኦ' + any(ሳብዕ-key) > 'ዖ'
-
-c Completing the Amharic "a" chain:
-c  'አ' + any(ራብዕ-key) > 'ዓ'
-c  'ዓ' + any(ራብዕ-key) > 'ዐ'
   'ዐ' + any(ራብዕ-key) > 'ዓ'
 
 c ---------------------End Input of Lone Vowels-------------------------------------------------
@@ -289,23 +287,6 @@ $keymanonly:   any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
   any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
-c ---------------------Input of Labiovelars-----------------------------------------------------
-c  any(ካዕብ፡መደበኛ) + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
-c  any(ካዕብ፡ልዩ)   + any(ግዕዝ-key) > index(ዘመደ፡ግዕዝ,1)
-c  any(ካዕብ፡ልዩ)   + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
-c  any(ካዕብ፡ልዩ)   + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
-c  any(ካዕብ፡ልዩ)   + any(ራብዕ-key) > index(ዘመደ፡ራብዕ,1)
-c $keymanonly:   any(ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(ዘመደ፡ኃምስ,1)
-c  any(ዘመደ፡ሣልስ)  + any(ግዕዝ-key) > index(ዘመደ፡ኃምስ,1)
-
-c Alternative input to support confusion around the 'o' glypheme:
-c  'ኮ' + 'o' > 'ኰ'
-c  'ጎ' + 'o' > 'ጐ'
-
-c  'ኰ' + 'o' > 'ኮ'
-c  'ጐ' + 'o' > 'ጎ'
-c ---------------------End Input of Labiovelars-------------------------------------------------
-
 c ---------------------Input of Punctuation-----------------------------------------------------
 c 
 c The only dead key for entry of special characters and
@@ -317,7 +298,6 @@ $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             
   any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
-
 
 
 + ':'     > '፡'
@@ -403,6 +383,10 @@ c enhance this later, look for something that can copy a match over
 
 + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
+
+c
+c  Review if this is still needed
+c
 
 c ---------------------Extensions for Touch Layout----------------------------------------------
 c
