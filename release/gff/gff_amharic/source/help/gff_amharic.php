@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    12 Nov 2022
+  Modified Date:    26 March 2023
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -268,6 +268,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>3.11 (26 March 2023)</dt>
+  <dd>On-screen keyboard is all text (no images).</dd>
   <dt>Version 3.1, 12 Nov 2022</dt>
   <dd>Lighter CSS with wildcard selectors.</dd>
   <dt>Version 3.0, 22 Oct 2022</dt>
@@ -286,7 +288,7 @@ for full details on how to type all Amharic letters, numbers and punctuation.
   <dt>Version 1.8, 9 Mar 2019</dt>
   <dd>Fix to recognize apostrophe after Salis forms.</dd>
   <dt>Version 1.7, 1 Dec 2018</dt>
-  <dd>The apostrophe composition stopper added between lone vowels. </dd>
+  <dd>The apostrophe composition stopper added between lone vowels.</dd>
   <dt>Version 1.6, 6 Sep 2018</dt>
   <dd>The apostrophe composition stopper added after Ka'ib and Salis forms to support some special case words.</dd>
   <dt>Version 1.5, 16 May 2018</dt>
@@ -304,7 +306,7 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL International 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2023 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>
