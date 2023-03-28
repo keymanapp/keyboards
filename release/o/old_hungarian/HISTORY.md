@@ -1,5 +1,11 @@
 Old Hungarian Change History
 ====================
+1.5 (2023-03-28)
+-----------------
+*Followigs changed on mobile layout:
+*Replaced ralt and shift-ralt.
+*on ralt-shift layer removed not required keys (just the historial bug-symbols weren't removed and status bar.
+*on shift and caps layer JB (RTL) key was replaced to Lig ( ZWJ).
 
 1.4.1 (2022-12-02)
 ----------------
