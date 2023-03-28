@@ -4,7 +4,7 @@ Old Hungarian Change History
 -----------------
 * Followigs changed on mobile layout:
 * Replaced ralt and shift-ralt layout.
-* On ralt-shift layer removed not required keys (just the historial bug-symbols weren't removed and status bar.
+* On ralt-shift layer removed not required keys (just the historial bug-symbols weren't removed and status bar.)
 * on shift and caps layer JB (RTL) key was replaced to Lig ( ZWJ).
 * On all layouts added JB (RTL) key and BJ (LTR) key to the space's line.
 
