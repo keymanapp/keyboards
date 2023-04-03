@@ -11,6 +11,8 @@ KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../../.." && pwd )"
 . "$KEYBOARDROOT/resources/util.sh"
 . "$KEYBOARDROOT/resources/environment.sh"
 
+JQ="$KEYBOARDROOT/tools/jq-win64.exe"
+
 locate_kmcomp
 
 # Parse parameters
@@ -102,6 +104,18 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   langname=${kpsdata[3]}
   oskFont=${kpsdata[4]}
   displayFont=${kpsdata[5]}
+
+  # Parse .keyboard_info file to override keyboard version because
+  # some are blank due to <FollowKeyboardVersion/> (#2143)
+  keyboardInfo="$KEYBOARDROOT/release/$group/$id/build/$id.keyboard_info"
+  if [[ ! -f $keyboardInfo ]]; then
+    die "$keyboardInfo does not exist"
+  fi
+
+  version=$(cat $keyboardInfo | $JQ -r '.version')
+  if [[ $version != ${kpsdata[1]} ]]; then
+    echo "WARNING: $id had version ${kpsdata[1]} vs $version"
+  fi
 
   # Override sil_euro_latin keyboard to English language
   if [[ $id = 'sil_euro_latin' ]]; then
