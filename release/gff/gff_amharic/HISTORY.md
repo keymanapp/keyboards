@@ -2,8 +2,8 @@ gff_amharic Change History
 ==========================
 
 
-3.11 (26 March 2023)
--------------------
+3.1.1 (6 April 2023)
+--------------------
 * On-screen keyboard is all text (no images).
 
 3.1 (12 Nov 2022)
