@@ -1,0 +1,403 @@
+﻿c =====================Begin Identity Section===================================================
+c 
+c The Ge'ez Frontier Foundation's mnemonic input method for Ge'ez script on US-QWERTY
+c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
+c 
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.2/gff_geez.php
+c Source        :  https://github.com/keymanapp/keyboards/gff_geez
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
+c 
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
+c 
+store(&Version) '10.0'
+store(&KEYBOARDVERSION) '1.0'
+store(&NAME) 'ግዕዝ (EMUFI)'
+c  store(&EthnologueCode) 'gez'
+store(&COPYRIGHT) '© 2022 Ge' U+0027 'ez Frontier Foundation'
+store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_G]'
+store(&BITMAP) 'gff_geez_emufi.ico'
+store(&VISUALKEYBOARD) 'gff_geez_emufi.kvks'
+$keymanonly:  store(&mnemonicLayout) "1"
+c 
+c =====================End Identity Section=====================================================
+
+c =====================Begin Data Section=======================================================
+
+c The remainder of this document is formatted with a fixed width font.
+
+c ---------------------Maps of Syllabic Forms---------------------------------------------------
+c the following is universal (language neutral) these mappings can be overridden by
+c language specific mappings
+  store(ግዕዝ) 'ሀለሐመሠረሰቀበተኀነከወዐዘየደገጠጰጸፀፈፐ'
+  store(ካዕብ) 'ሁሉሑሙሡሩሱቁቡቱኁኑኩዉዑዙዩዱጉጡጱጹፁፉፑ'
+  store(ሣልስ) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
+  store(ራብዕ) 'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
+  store(ኃምስ) 'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
+  store(ሳድስ) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
+  store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
+
+c QWERTY keymappings
+  store(keys) 'hlHm^rsqbtxnkw^zydgTPSDfp'
+
+c the following is Ge'ez specific
+  store(ሌሎች፡keys) 'LMRXBvVcQNKWYjJZGCF'
+  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይግግዝግጥፍ'
+c ---------------------End Maps of Syllabic Forms-----------------------------------------------
+
+c ---------------------Maps for Vowels----------------------------------------------------------
+  store(loneVowelKeys)  [T_GEEZ]'aAuUiIeEoO'[T_HAMIS]
+  store(loneVowelEthio)  'አአዐኡኡኢኢእእኦኦኤ'
+  store(composableVowel) 'አኡኢእኦዐዒዓዕ'
+c ---------------------End Vowel Maps-----------------------------------------------------------
+
+c --------------------Maps for Labiovelars------------------------------------------------------
+  store(ሳድስ፡መደበኛ) 'ልሕምሥርስሽብትንኝዝድጥጵጽፅፍፕ'
+  store(ካዕብ፡መደበኛ) 'ሉሑሙሡሩሱሹቡቱኑኙዙዱጡጱጹፁፉፑ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ሏሗሟሧሯሷሿቧቷኗኟዟዷጧጷጿጿፏፗ'
+
+c 'hhkqg'
+  store(ካዕብ፡ልዩ)  'ሁኁኩቁጉ'
+  store(ዘመደ፡ግዕዝ) 'ኈኈኰቈጐ'
+  store(ዘመደ፡ካዕብ) 'ኍኍኵቍጕ'
+  store(ዘመደ፡ሣልስ) 'ኊኊኲቊጒ'
+  store(ዘመደ፡ራብዕ) 'ኋኋኳቋጓ'
+  store(ዘመደ፡ኃምስ) 'ኌኌኴቌጔ'
+c ---------------------End Labiovelars----------------------------------------------------------
+
+c ---------------------Maps for Numbers---------------------------------------------------------
+  store(ArabOnes) '23456789'
+  store(ones)     '፪፫፬፭፮፯፰፱'
+  store(tens)     '፳፴፵፶፷፸፹፺'
+  store(arabNumbers) '123456789'
+  store(ethNumbers)  '፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼'
+  store(arabNumbersWithZero) '0123456789'
+  store(arabNumbersCharacters) '0123456789.,:'
+  store(ColonOrComma) ':,'
+  store(ethWordspaceOrComma) '፡፣'
+c ---------------------End Numbers--------------------------------------------------------------
+
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+$keymanonly: store(ግዕዝ፡key)  'eEäÄéÉèÈêÊëË'[T_GEEZ]
+$keymanweb:  store(ግዕዝ፡key)  'eE'[T_GEEZ]
+$keymanonly: store(ካዕብ፡key) 'uUùÙúÚûÛüÜ'
+$keymanweb:  store(ካዕብ፡key) 'uU'
+$keymanonly: store(ሣልስ፡key) 'iIìÌíÍîÎïÏ'
+$keymanweb:  store(ሣልስ፡key) 'iI'
+$keymanonly: store(ራብዕ፡key) 'aAàÀáÁâÂãÃåÅ'
+$keymanweb:  store(ራብዕ፡key) 'aA'
+$keymanonly: store(ኃምስ፡key) 'æÆ'[T_HAMIS]
+$keymanweb:  store(ኃምስ፡key) [T_HAMIS]
+$keymanonly: store(ሳብዕ፡key) 'oOòÒóÓôÔõÕöÖøØ'
+$keymanweb:  store(ሳብዕ፡key) 'oO'
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+
+c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
+  store(ጥብቅ) U+135F
+  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
+  store(ዜማ፡menu) '[᎐⓵᎓⓶᎒⓷᎙⓸᎑⓹᎔⓺᎖⓻᎕⓼᎗⓽᎘🄋_፟]'        c ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨
+  store(ዜማ፡keys) '1234567890_'
+  store(AratNeteboch) ''
+  store(AratNeteboch፡menu) '[₁₂₃₄₅₆₇]'
+  store(sevenKeys) '1234567'
+  store(deret፡menu) '[①|②|③]'
+  store(deretDeret፡menu) '[]'
+  store(twoKeys) '12'
+  store(threeKeys) '123'
+  store(fourKeys) '1234'
+  store(deret፡outs) ''
+  store(difat፡menu) '[①|②|③|④]'
+  store(difat፡outs) ''
+  store(deretDifat፡menu) '[①|②]'
+  store(deretDifat፡outs) ''
+  store(deretDifatDeret፡menu) '[①|②]'
+  store(deretDifatDeret፡outs) ''
+  store(deretDifatDifat፡menu) '[①|②]'
+  store(deretDifatDifat፡outs) ''
+  store(Menus) 'AB'
+  store(A) '[AAAA]'
+  store(B) '[BBBB]'
+c ₀₁₂₃₄₅₆₇₈₉
+c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
+
+c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
+  store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
+    'qwertyuiop[]\QWERTYUIOP{}|' \
+    "asdfghjkl;'" 'ASDFGHJKL:"' \
+    'zxcvbnm,./ZXCVBNM<>?'
+c =====================End Data Section=========================================================
+                  
+c =====================Begin Functional Section=================================================
+c 
+store(&TARGETS) 'any'
+
+begin Unicode > use(main)
+   
+c The main group
+  group(main) using keys
+
+c ---------------------Input of ልዩ Symbols-------------------------------------------------
+c 
+c The input section here is for rules that must precede other rules
+c
+  + '_' > outs(ዜማ፡menu)
+  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
+
+  '።' + [K_TAB] > outs(AratNeteboch፡menu) 
+  outs(AratNeteboch፡menu) + any(sevenKeys) > use(emufi)
+
+  deadkey(1) + "'" > "'"
+  deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
+
+  + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
+  + any(keys)     > index(ሳድስ,1)
+c ---------------------End Input of ልዩ Symbols---------------------------------------------
+
+c ---------------------Input of Double Strike Letters-------------------------------------------
+  'ስ' + 's' > 'ሥ'
+  'ህ' + 'h' > 'ኅ'
+  'ጽ' + 'S' > 'ፅ'
+c ---------------------End Input of Double Strike Letters---------------------------------------
+
+c ---------------------Input of Lone Vowels-----------------------------------------------------
+c 
+c Alef-A Vowels as Vowels
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
+    any(loneVowelKeys) + "'" > index(loneVowelKeys,1) deadkey(1)  
+
+c Alef-A Vowels as መደበኛ Syllables
+  'እ' + any(ካዕብ፡key) > 'ኡ'
+  'እ' + any(ሣልስ፡key) > 'ኢ'
+  'እ' + any(ራብዕ፡key) > 'ኣ'
+  'ኢ' + any(ግዕዝ፡key) > 'ኤ'
+  'እ' + any(ሳብዕ፡key) > 'ኦ'
+
+c Aynu-A Vowels as መደበኛ Sylalbles
+  'እ' + any(ግዕዝ፡key) > 'ዕ'
+  'ዕ' + any(ግዕዝ፡key) > 'ዐ'
+  'ዕ' + any(ካዕብ፡key) > 'ዑ'
+  'ዕ' + any(ሣልስ፡key) > 'ዒ'
+  'ዕ' + any(ራብዕ፡key) > 'ዓ'
+  'ዒ' + any(ግዕዝ፡key) > 'ዔ'
+  'ዕ' + any(ሳብዕ፡key) > 'ዖ'
+
+c Aynu-A Vowels as Vowels
+  'ኡ' + any(ካዕብ፡key) > 'ዑ'
+  'ኢ' + any(ሣልስ፡key) > 'ዒ'
+  'ኤ' + any(ግዕዝ፡key) > 'ዔ'
+  'ኦ' + any(ሳብዕ፡key) > 'ዖ'
+
+c Completing the Ge'ez "a" chain
+  'አ' + any(ራብዕ፡key) > 'ዓ'
+  'ዓ' + any(ራብዕ፡key) > 'ዐ'
+
+c Composable Aynu-A vowels as per ti-ER rules
+  'ዐ' + any(ግዕዝ፡key) > 'ዕ'
+  'ዐ' + any(ካዕብ፡key) > 'ዑ'
+  'ዐ' + any(ሣልስ፡key) > 'ዒ'
+  'ዐ' + any(ራብዕ፡key) > 'ዓ'
+  'ዐ' + any(ሳብዕ፡key) > 'ዖ'
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
+c ---------------------End Input of Lone Vowels-------------------------------------------------
+
+c ---------------------Input of Basic Syllables-------------------------------------------------
+  any(ሳድስ) + any(ግዕዝ፡key) > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ፡key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ፡key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ፡key) > index(ራብዕ,1)
+  any(ሳድስ) + any(ኃምስ፡key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ፡key) > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ፡key) > index(ሳብዕ,1)
+c ---------------------End Input of Basic Syllables---------------------------------------------
+
+c ---------------------Input of Labiovelars-----------------------------------------------------
+  any(ካዕብ፡መደበኛ) + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ካዕብ፡ልዩ)   + any(ግዕዝ፡key) > index(ዘመደ፡ግዕዝ,1)
+  any(ካዕብ፡ልዩ)   + any(ካዕብ፡key) > index(ዘመደ፡ካዕብ,1) 
+  any(ካዕብ፡ልዩ)   + any(ሣልስ፡key) > index(ዘመደ፡ሣልስ,1)
+  any(ካዕብ፡ልዩ)   + any(ራብዕ፡key) > index(ዘመደ፡ራብዕ,1)  
+  any(ዘመደ፡ሣልስ)  + any(ግዕዝ፡key) > index(ዘመደ፡ኃምስ,1)
+
+c Alternative input to support confusion around the 'o' glypheme:
+  'ኮ' + 'o' > 'ኰ'
+  'ጎ' + 'o' > 'ጐ'
+
+  'ኰ' + 'o' > 'ኮ'
+  'ጐ' + 'o' > 'ጎ'
+c ---------------------End Input of Labiovelars-------------------------------------------------
+
+c ---------------------Input of Punctuation-----------------------------------------------------
+c 
+c The only dead key for entry of ልዩ characters and
+c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
+c 
+  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+$keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
+  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
+  
+
+  + ':'     > '፡'
+$keymanonly: + [SHIFT ' '] > '፡'
+  '፡' + ':' > '።'
+  '።' + ':' > '፨'
+  '፨' + ':' > '፠'  c makes circular
+  '፠' + ':' > ':'  c makes circular
+  
+      + ',' > '፥'
+  '፥' + ',' > '፣'
+  '፣' + ',' > ','
+  ',' + ',' > '፥'  c makes circular
+
+      + ';' > '፤'
+  '፤' + ';' > ';'
+  ';' + ';' > '፤'  c makes circular
+
+  '፡' + '-' > '፦'     
+  
+  + '?' > '፧'       
+  '፧' + '?' > '?'
+
+c The following group is here for compatibility with proposed ISO transliteration for Ethiopic:
+  '፡' + '#' > '፨'
+  '፡' + '+' > '፠'  
+  '፡' + ',' > '፣'  
+  '፡' + '?' > '፧'    
+
+      + '<' > '‹'
+      + '>' > '›'
+  '‹' + '<' > '«'
+  '›' + '>' > '»'
+  '«' + '<' > '<'
+  '»' + '>' > '>'
+c ---------------------End Input of Punctuation-------------------------------------------------
+
+c ---------------------Input of European Characters---------------------------------------------
+$keymanonly:  store(euro) 'ÇçÐðÝýÿßÑñ'
+$keymanonly:  store(euroMap) 'ጭችድድይይይጽኝኝ'
+$keymanonly:  + any(euro) > index(euroMap,1)
+
+$keymanonly:  'ጽ' + 'ß' > 'ፅ'
+$keymanonly:  + '¨' > U+135F
+
+$keymanonly:  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+c this mapping has an Amharic bias
+$keymanonly:  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+$keymanonly:  + any(euroVowels) > index(euroVowelsMap,1)
+c ---------------------End Input of European Characters-----------------------------------------
+
+c ---------------------Input of Numbers---------------------------------------------------------
+
+c Special Rule for Arabic Numerals
+c 
+c The following attempts to auto-correct the use of Ethiopic wordspace and
+c Ethiopic comma within an Arabic numeral context.  Ethiopic wordspace gets
+c used erroneously in time formats and Ethiopic commas as an order of thousands
+c delimiter. The correction context is not known until numerals appear on _both_
+c sides of the punctuation.
+c 
+  any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
+
+c Ethiopic Numerals
+
+  '#' + any(arabNumbersWithZero) > index(arabNumbersWithZero,2)
+  '#' + '#' > '#'
+  any(arabNumbersCharacters) + any(arabNumbersCharacters)  >  index(arabNumbersCharacters,1) index(arabNumbersCharacters,2)
+  '$' + any(arabNumbersWithZero) > '$' index(arabNumbersWithZero,2)
+
+  + '1' > '፩'
+  + any(ArabOnes) > index(ones,1)
+
+c ልዩ cases for multiples of one
+    '፩' + '0' >   '፲'
+    '፲' + '0' >   '፻'
+    '፻' + '0' >  '፲፻'
+   '፲፻' + '0' >   '፼'
+    '፼' + '0' >  '፲፼'    
+   '፲፼' + '0' >  '፻፼' 
+   '፻፼' + '0' > '፲፻፼'
+  '፲፻፼' + '0' >  '፼፼'
+   '፼፼' + '0' > context beep  c do not go any higher, we could beep here
+
+c upto the order of 100 million
+  any(ones)      + '0' > index(tens,1)
+  any(tens)      + '0' > index(ones,1) '፻'  c Hundreds
+  any(ones)  '፻' + '0' > index(tens,1) '፻'  c Thousands
+  any(tens)  '፻' + '0' > index(ones,1) '፼'  c Ten Thousands
+  any(ones)  '፼' + '0' > index(tens,1) '፼'  c Hundred Thousands
+  any(tens)  '፼' + '0' > index(ones,1) '፻፼' c Millions
+  any(ones) '፻፼' + '0' > index(tens,1) '፻፼' c Ten Millions
+  any(tens) '፻፼' + '0' > index(ones,1) '፼፼' c Hundred Millions 
+  any(ones) '፼፼' + '0' > context beep  c do not go any higher, alert the user with a beep 
+
+c enhance this later, look for something that can copy a match over
+  any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
+
+  + [T_THOUSAND] > '፲፻'
+c ---------------------End Input of Numbers-----------------------------------------------------
+
+c ---------------------Begin of EMFUI Symbols-------------------------------------------------
+c
+c These entries are added to input the EMUFI symbols included in the Abba Garima font.
+c One additional symbol, the very frequent Rubricated Ethiopic Fullstop, is added for 
+c convenience and is also a trial to support the 500+ EMUFI symbols more fully.
+  store(emufi፡keys) '፡።‹›'  
+  store(emufi፡symbols) ''
+  'ቆመ' + '@' > ''
+  'ፕ' + '@' > '☧'
+  any(emufi፡keys) + '@' > index(emufi፡symbols,1)
+
+  c 															  											
+
+  c 											   											
+
+ c 															  			
+'᎑' + [K_TAB] > outs(deret፡menu)
+outs(deret፡menu) + any(threeKeys) > use(deretGroup)
+c '' + [K_TAB] > outs(deretDifat፡menu)
+
+
+'᎔' + [K_TAB] > outs(difat፡menu)
+outs(difat፡menu) + any(fourKeys) > use(difatGroup)
+
+c '' + [K_TAB] > outs(deretDifat፡menu)
+c outs(deretDifat፡menu) + any(twoKeys) > use(deretDifatGroup)
+
+c ''+ [K_TAB] > outs(deretDifatDeret፡menu)
+c outs(deretDifatDeret፡menu) + any(twoKeys) > use(deretDifatDeretGroup)
+
+c ''+ [K_TAB] > outs(deretDifatDifat፡menu)
+c outs(deretDifatDifat፡menu) + any(twoKeys) > use(deretDifatDifatGroup)
+
+c
+c ---------------------End of EMUFI Symbols---------------------------------------------------
+
+c ---------------------Begin ዜማ Group--------------------------------------------------------
+group(ዜማ፡group) using keys
++ any(ዜማ፡keys) > index(ዜማ, 1)
+nomatch        > use(main)      
+c ---------------------End ዜማ Group----------------------------------------------------------
+
+group(emufi) using keys
++ any(sevenKeys) > index(AratNeteboch, 1)
+nomatch > use(main)
+
+group(deretGroup) using keys
++ any(threeKeys) > index(deret፡outs,1)
+c + '1' > ''
+c + '2' > ''
+nomatch > use(main)
+
+group(difatGroup) using keys
+c + any(fourKeys) > index(difat፡outs,1)
++ any(twoKeys) > index(difat፡outs,1) outs( A )
+nomatch > use(main)
+
+c =====================End Functional Section===================================================
