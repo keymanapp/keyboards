@@ -2,7 +2,7 @@
 #
 # Setup JQ environment variable according to the user's system
 #
-# Windows: /resources/build/jq-win64.exe
+# Windows: ./jq-win64.exe
 # Linux/macOS: jq
 #
 
