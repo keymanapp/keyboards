@@ -10,8 +10,7 @@ KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../../.." && pwd )"
 
 . "$KEYBOARDROOT/resources/util.sh"
 . "$KEYBOARDROOT/resources/environment.sh"
-
-JQ="$KEYBOARDROOT/tools/jq-win64.exe"
+. "$KEYBOARDROOT/tools/jq.inc.sh"
 
 locate_kmcomp
 
@@ -99,7 +98,7 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
 
   mapfile -t kpsdata < <(./parse_kps.pl $keyboard/source/$id.kps)
   name=${kpsdata[0]}
-  version=${kpsdata[1]}
+  # version assigned later
   bcp47=${kpsdata[2]}
   langname=${kpsdata[3]}
   oskFont=${kpsdata[4]}
@@ -113,9 +112,6 @@ for keyboard in ../../fv/*/ ../../i/inuktitut_*/ ../../sil/sil_euro_latin/ ../..
   fi
 
   version=$(cat $keyboardInfo | $JQ -r '.version')
-  if [[ $version != ${kpsdata[1]} ]]; then
-    echo "WARNING: $id had version ${kpsdata[1]} vs $version"
-  fi
 
   # Override sil_euro_latin keyboard to English language
   if [[ $id = 'sil_euro_latin' ]]; then
