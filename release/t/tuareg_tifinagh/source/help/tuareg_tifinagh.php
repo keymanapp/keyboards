@@ -5,7 +5,7 @@ $pagetitle = $pagename;
 require_once('header.php');
 ?>
 
-<p> Tuareg Tifinagh 1.0 is designed for typing Tifinagh characters in the Tamahaq and Tamashek languages. </p>
+<p> Tuareg Tifinagh is designed for typing Tifinagh characters in the Tamahaq and Tamashek languages. </p>
 <p>
 	It is based on the Standard Moroccan Tamazight Tifinagh AZERTY keyboard and 
 	Microsoft's Central Atlas Tamazight (Tifinagh Extended) keyboard layout spec.
@@ -48,5 +48,3 @@ Press and hold on the key with a little dot on the top right to reveal them.</p>
 </div>
 <div id='osk-tablet' data-states='default shift rightalt'>
 </div>
-
-<p>© 2020 SIL International</p>

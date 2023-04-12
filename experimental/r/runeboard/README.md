@@ -1,7 +1,7 @@
 Runeboard keyboard
 ==============
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
@@ -18,7 +18,8 @@ Links
 
 Bug Fixes
 -----------
-<p>Shift key on mobile now works.</p>
+<p>V1.1 The shift key works now.</p>
+<p>V1.2 Three-dot punctuation mark no longer adds empty space.</p>
 
 Copyright
 ---------

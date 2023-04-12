@@ -3,10 +3,10 @@ c
 c If you make changes to this keyboard file, please consider sharing them at:
 c https://community.software.sil.org/c/keyman
 
-store(&version) '10.0'
+store(&version) '15.0'
 store(&NAME) 'EuroLatin (SIL)'
 store(&BITMAP) 'sil_euro_latin.ico'
-store(&COPYRIGHT) 'Copyright (c) SIL International'
+store(&COPYRIGHT) 'Copyright © SIL International'
 
 $keymanonly: store(&mnemoniclayout) '1'
 
@@ -14,7 +14,7 @@ c KeymanWeb-specific header statements
 store(&KMW_HELPFILE) 'sil_euro_latin.html'
 store(&KMW_EMBEDJS) 'sil_euro_latin_js.txt'
 store(&LAYOUTFILE) 'sil_euro_latin.keyman-touch-layout'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '2.0.3'
 store(&TARGETS) 'any'
 
 begin Unicode > use(Main)
@@ -74,9 +74,6 @@ store(tildeO) 'ãÃẽẼĩĨɫⱢñÑõÕũŨṽṼỹỸ'
 store(tildeK) 'aAeEiIlLnNoOuUvVyY'
 '~' dk(1) + "g" > U+0067 U+0303    c for Guaraní
 '~' dk(1) + "G" > U+0047 U+0303    c for Guaraní
-if(&platform = 'touch') + [T_G_Tilde] > U+0067 U+0303           c for Guaraní on touch layouts
-if(&platform = 'touch') + [SHIFT T_G_Tilde] > U+0047 U+0303     c for Guaraní on touch layouts
-
 
 c -
 store(macronO) 'ĀāɃƀĐđĒēḠḡĦħĪīɈɉŁłŌōɌɍŦŧŪūȲȳƵƶ'
@@ -131,6 +128,8 @@ store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
 "`" dk(1) + any(graveK) > index(graveO, 3)
 "#" dk(1) + any(doublegraveK) > index(doublegraveO, 3)
 "'" dk(1) + any(acuteK) > index(acuteO, 3)
+"'" dk(1) + "j" > U+006A U+0301 c Dutch addition 1/20/2023
+"'" dk(1) + "J" > U+004A U+0301
 '"' dk(1) + any(doubleacuteK) > index(doubleacuteO, 3)
 "^" dk(1) + any(circumK) > index(circumO, 3)
 '%' dk(1) + any(caronK) > index(caronO, 3)
@@ -141,10 +140,6 @@ store(currencyK) 'CcDdEefFGghkKlNnPpRrtwy'
 '_' dk(1) + any(lineK) > index(lineO, 3)
 '_' dk(1) + "x" > U+0078 U+0331 c Zapotec addition 12/2/2020
 '_' dk(1) + "X" > U+0058 U+0331 c Zapotec addition 12/2/2020
-
-if(&platform = 'touch') + [T_0078_0331] > U+0078 U+0331           c Zapotec addition 12/2/2020
-if(&platform = 'touch') + [SHIFT T_0058_0331] > U+0058 U+0331     c Zapotec addition 12/2/2020
-
 
 ':' dk(1) + any(dieresisK) > index(dieresisO, 3)
 '@' dk(1) + any(ringK) > index(ringO, 3)
