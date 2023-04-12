@@ -1,6 +1,10 @@
 SIL EL - Ethiopian Latin Change History
 =======================================
 
+1.4.1 (12 April 2023)
+-------------------
+* Added 'Latin' as a supported language so that could display as `Latin - SIL EL - Ethiopian Latin` in the ibus keyboard list for Linux users.
+
 1.4.0 (05 May 2019)
 -------------------
 * Added Nuer compatibilty:

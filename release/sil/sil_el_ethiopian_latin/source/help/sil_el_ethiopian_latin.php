@@ -1335,9 +1335,6 @@ END;
     <tr class="Table11">
       <td style="text-align:left;width:17cm;" class="Table1_A1">
         <p class="Title">SIL EL - Ethiopian Latin Keyboard</p>
-        <p class="Subtitle">© <span class="T6">2017-2019</span> SIL Ethiopia -
-        version 1.<span class="T7">4.0</span> - 201<span class=
-        "T7">9</span>-0<span class="T7">5</span>-<span class="T7">04</span></p>
       </td>
     </tr>
   </table>
@@ -6466,7 +6463,7 @@ END;
   <p class="Standard">&nbsp;</p>
   <h3 class="P7"><a id="a__License"></a>License</h3>
   <p class="Standard">This keyboard is copyright © <span class=
-  "T6">2017-2019</span> SIL Ethiopia. It is distributed under the MIT free
+  "T6">2017-2023</span> SIL Ethiopia. It is distributed under the MIT free
   software license:</p>
   <table border="0" cellspacing="0" cellpadding="0" class="Table2">
     <colgroup>
