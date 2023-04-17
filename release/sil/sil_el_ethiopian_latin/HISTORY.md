@@ -1,6 +1,11 @@
 SIL EL - Ethiopian Latin Change History
 =======================================
 
+1.4.1 (13 April 2023)
+-------------------
+* Added `mul (Multiple languages)` to the supported languages list and added
+  multiple resolutions to the icon.
+
 1.4.0 (05 May 2019)
 -------------------
 * Added Nuer compatibilty:
