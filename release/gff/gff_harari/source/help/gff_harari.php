@@ -1,22 +1,13 @@
 ﻿<?php /*
-  Name:             Keyboard_gff_amhamaric
-  Copyright:        Keyboard ©1997-2022 The Geʾez Frontier Foundation 
+  Name:             Keyboard_gff_harari
+  Copyright:        Keyboard ©2023 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
-  Create Date:      18 Sep 2009
+  Create Date:      17 April 2023
 
-  Modified Date:    12 Nov 2022
-  Authors:          dyacob, mcdurdin, pbaehr
-  Related Files:    
-  Dependencies:     
-
-  Bugs:             
-  Todo:             
-  Notes:            
-  History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename = 'አማርኛ (Amharic) Keyboard Help';
-  $pagetitle = 'አማርኛ (Amharic) Keyboard Help';
+  $pagename = 'አማርኛ (Harari) Keyboard Help';
+  $pagetitle = 'አማርኛ (Harari) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
@@ -52,8 +43,8 @@ code {
 <a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
 <a style='margin-left:20px' href="#Examples">Examples</a><br/>
 <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-English.pdf'>Complete Typing Chart - English</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-Amharic.pdf'>Complete Typing Chart - Amharic</a><br/>
+<a style='margin-left:30px' target="_blank" href='HarariTyping-English.pdf'>Complete Typing Chart - English</a><br/>
+<a style='margin-left:30px' target="_blank" href='HarariTyping-Harari.pdf'>Complete Typing Chart - Harari</a><br/>
 <a href="#Troubleshooting">Troubleshooting</a><br/>
 <a href="#Resources">Further Resources</a><br/>
 <a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
@@ -64,7 +55,7 @@ code {
 <div id='Overview'>
 <h2>Overview</h2>
 <p>
-This keyboard is designed for use with the Amharic language of Ethiopia in Africa. Typing follows a consonant-vowel pattern. It is designed for use with a standard (QWERTY) keyboard.
+This keyboard is designed for use with the Harari language of Ethiopia in Africa. Typing follows a consonant-vowel pattern. It is designed for use with a standard (QWERTY) keyboard.
 </p>
 <p class='keymanweb'>Most computers will automatically download a special font to display this keyboard correctly.  However, if the layout or the charts below do not display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
@@ -88,7 +79,7 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <h3>Letters</h3>
 
 <p>
-When the GFF Amharic mobile keyboard starts, the key layout appears as shown in the following image.  Note the relationship between the letters of the middle row and top row:
+When the GFF Harari mobile keyboard starts, the key layout appears as shown in the following image.  Note the relationship between the letters of the middle row and top row:
 </p>
 
 <img src="images/gff_amharic-default-1.jpeg" style="border: 1px solid black;" width="100%"/>
@@ -134,7 +125,7 @@ The modifier keys will also have popups as applicable.  For example to enter the
 
 <img src="images/gff_amharic-punctuation-4.jpeg" style="border: 1px solid black;" width="100%"/>
 
-<p>A tap of the <code>፩</code> key will go to the final layer where Geʾez numbers and some less used, and non-Amharic letters, can be accessed.</p>
+<p>A tap of the <code>፩</code> key will go to the final layer where Geʾez numbers and some less used, and non-Harari letters, can be accessed.</p>
 
 <h3>Numerals</h3>
 
@@ -165,9 +156,9 @@ The modifier keys will also have popups as applicable.  For example to enter the
 <div id='Quickstart'>
 <h3>Quickstart</h3>
 
-<p>This keyboard is designed to work intuitively with a standard (QWERTY) keyboard. This means that the Amharic sounds in this keyboard can be found by thinking of the most similar English letters. For example, you can type <span class='keys'>selam</span> to get <span class='highlightExample'>ሰላም</span>.
+<p>This keyboard is designed to work intuitively with a standard (QWERTY) keyboard. This means that the Harari sounds in this keyboard can be found by thinking of the most similar English letters. For example, you can type <span class='keys'>selam</span> to get <span class='highlightExample'>ሰላም</span>.
 </p>
-<p>As you can see, each Amharic character is typed with the base consonant first and then the vowel. For example, <span class='highlightExample'>ጤ</span> is typed <span class='keys'>T</span> then <span class='keys'>ie</span>.
+<p>As you can see, each Harari character is typed with the base consonant first and then the vowel. For example, <span class='highlightExample'>ጤ</span> is typed <span class='keys'>T</span> then <span class='keys'>ie</span>.
 </p>
 </div>
 
@@ -180,22 +171,22 @@ The modifier keys will also have popups as applicable.  For example to enter the
 <h3>Keyboard Details</h3>
 	
 <p>
-The Amharic keyboard uses an intuitive <i>phonetic</i> system where the Amharic sounds are matched to the nearest English letters. You can think of how a word sounds in
-Amharic and then type it out with English.
+The Harari keyboard uses an intuitive <i>phonetic</i> system where the Harari sounds are matched to the nearest English letters. You can think of how a word sounds in
+Harari and then type it out with English.
 </p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>selam</span> produces <span class='highlightExample'>ሰላም</span></p>
 <p>
-Because Amharic has more sounds than English, we sometimes have to adjust this
+Because Harari has more sounds than English, we sometimes have to adjust this
 rule. For example, English does not have <span class='highlightExample'>ጠ</span> and the closest similar letter would be <span class='input'>t</span>. In this case you should type <span class='keys'>T</span>, for capital <span class='input'>T</span>:</p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>TienaysTlN</span> produces <span class='highlightExample'>ጤናይስጥልኝ</span></p>
 <p>Notice that we used capital <span class='input'>N</span> also for <span class='highlightExample'>ኝ</span> and we needed both <span class='input'>ie</span> together to make the 5th <span class='highlightExample'>ጠ</span> letter, <span class='highlightExample'>ጤ</span>. When the letter you want to type does not appear when you hit the similar sounding key in English, try using the capital next. If typing the capital does not work, then try hitting the key two times:
 </p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>sselam</span> produces <span class='highlightExample'>ሠላም</span></p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>SSeHey</span> produces <span class='highlightExample'>ፀሐይ</span></p>
-<p>Next, when you need to type the extra letters of Amharic like <span class='highlightExample'>ሏ</span>,<span class='highlightExample'>ሟ</span>,<span class='highlightExample'>ኴ</span> you can do so by typing an extra vowel after a <span class='input'>u</span>:
+<p>Next, when you need to type the extra letters of Harari like <span class='highlightExample'>ሏ</span>,<span class='highlightExample'>ሟ</span>,<span class='highlightExample'>ኳ</span> you can do so by typing an extra vowel after a <span class='input'>u</span>:
 </p>
+<p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>lua</span> produces <span class='highlightExample'>ሏ</span></p>
 <p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>mua</span> produces <span class='highlightExample'>ሟ</span></p>
-<p style='margin-left:40px'><b>Example:</b> typing <span class='keys'>guie</span> produces <span class='highlightExample'>ጔ</span></p>
 <p>
 Finally, we must introduce a special rule for ' (apostrophe). Some words are spelt with a <span class='highlightExample'>ሳድስ</span> (6<sup>th</sup>) letter followed by a vowel, like <span class='highlightExample'>ርኤ</span> in <span class='highlightExample'>ገብርኤል</span>. We use the apostrophe here to type <span class='keys'>gebr'iel</span> to make sure we get <span class='highlightExample'>ርኤ</span> instead of <span class='highlightExample'>ሬ</span>.
 </p>
@@ -209,9 +200,9 @@ We also use the &ldquo;number sign&rdquo; (&ldquo;#&rdquo; also know as the &ldq
 so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>. 
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='AmharicTyping-English.pdf'>Typing in Amharic (English)</a> or 
-<a target="_blank" href='AmharicTyping-Amharic.pdf'>Typing in Amharic (Amharic)</a> 
-for full details on how to type all Amharic letters, numbers and punctuation.
+See <a target="_blank" href='HarariTyping-English.pdf'>Typing in Harari (English)</a> or 
+<a target="_blank" href='HarariTyping-Harari.pdf'>Typing in Harari (Harari)</a> 
+for full details on how to type all Harari letters, numbers and punctuation.
 </p>
 </div>
 </div>
@@ -247,9 +238,9 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 </div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://keymankeyboards.com/?id=455">Download the Amharic Keyboard for Keyman Desktop</a></p>
-<p><a target="_blank" href="http://www.omniglot.com/writing/amharic.htm">More on the Amharic Writing System at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Amharic_language">More on the Amharic Language at Wikipedia.org</a><br/></p>
+<p><a target="_blank" href="http://keymankeyboards.com/?id=455">Download the Harari Keyboard for Keyman Desktop</a></p>
+<p><a target="_blank" href="http://www.omniglot.com/writing/amharic.htm">More on the Harari Writing System at Omniglot.com</a><br/>
+<a target="_blank" href="http://en.wikipedia.org/wiki/Harari_language">More on the Harari Language at Wikipedia.org</a><br/></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Geʾez Script at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Geʾez Script at Wikipedia.org</a></p>
 </div>
@@ -265,36 +256,6 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 
 </div>
 
-<div id="VersionHistory">
-<h3>Version History</h3>
-<dl>
-  <dt>Version 3.1, 12 Nov 2022</dt>
-  <dd>Lighter CSS with wildcard selectors.</dd>
-  <dt>Version 3.0, 22 Oct 2022</dt>
-  <dd>Dynamic modifier key updates.</dd>
-  <dt>Version 2.3, 22 Oct 2022</dt>
-  <dd>Fixes to several problems with vowel input for touch platform.</dd>
-  <dt>Version 2.2, 19 Jul 2021</dt>
-  <dd>Extensions for Unicode 14</dd>
-  <dd>Addition of the Abyssinica SIL (Connected)</dd>
-  <dt>Version 2.1, 11 Apr 2021</dt>
-  <dd>CSS Colored keys.</dd>
-  <dt>Version 2.0, 1 Dec 2020</dt>
-  <dd>Addition of new style touch keyboard.</dd>
-  <dt>Version 1.9, 22 Jan 2020</dt>
-  <dd>Package migration to Abyssinica SIL 2.000</dd>
-  <dt>Version 1.8, 9 Mar 2019</dt>
-  <dd>Fix to recognize apostrophe after Salis forms.</dd>
-  <dt>Version 1.7, 1 Dec 2018</dt>
-  <dd>The apostrophe composition stopper added between lone vowels. </dd>
-  <dt>Version 1.6, 6 Sep 2018</dt>
-  <dd>The apostrophe composition stopper added after Ka'ib and Salis forms to support some special case words.</dd>
-  <dt>Version 1.5, 16 May 2018</dt>
-  <dd>Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.</dd>
-  <dt>Version 1.4, 7 May 2015</dt>
-  <dd>Added letters ኸ Ke ኹ Ku ኺ Ki ኻ Ka ኼ Kie ኽ K ኾ Ko to the touch layouts.</dd>
-</dl>
-
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
@@ -304,7 +265,7 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL International 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Harari keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2023 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>
