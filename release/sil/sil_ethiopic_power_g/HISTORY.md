@@ -1,6 +1,10 @@
 SIL Ethiopic Power-G Change History
 ===================================
 
+1.2.3 (19 Apr 2023)
+-------------------
+* cleanup
+
 1.2.2 (27 May 2020)
 -------------------
 * cleaning up welcome.html (reducing table width so will not be cut at help.keyman.com)

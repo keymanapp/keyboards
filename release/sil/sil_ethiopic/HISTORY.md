@@ -1,6 +1,13 @@
 SIL Ethiopic Change History
 ===========================
 
+2.0.4 (19 Apr 2023)
+-------------------
+* syncing file structure and layout with SIL Ethiopic Power-G
+8 cleaning up help file, welcome.htm, .php
+* adding multi-res layers to package icon
+* adding sidebar image
+
 2.0.3 (20 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux
