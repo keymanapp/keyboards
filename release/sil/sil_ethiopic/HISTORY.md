@@ -1,27 +1,27 @@
 SIL Ethiopic Change History
 ===========================
 
-2.0.4 (19 Apr 2023)
+2.0.4 (2023-04-19)
 -------------------
 * syncing file structure and layout with SIL Ethiopic Power-G
 8 cleaning up help file, welcome.htm, .php
 * adding multi-res layers to package icon
 * adding sidebar image
 
-2.0.3 (20 Jun 2020)
+2.0.3 (2022-06-20)
 -------------------
 * Updated htm files for readability on Linux
 
-2.0.2 (26 Apr 2019)
----------------------
+2.0.2 (2019-04-26)
+------------------
 * added BCP47 codes
 
-2.0.1 (02 April 2017)
----------------------
+2.0.1 (2017-04-02)
+------------------
 * corrected keyboarding documentation for 'ⷕ'(2dd5) from H# to H[# or K#
 
-2.0 (08 March 2017)
--------------------
+2.0 (2017-03-08)
+----------------
 * Maintainer change: Ownership is being passed from SIL NRSI to SIL Ethiopia
 * Re-wrote keyboard layout document (welcome.htm)
 * Alternate method of using '[' after letter added to key less frequently used characters, such as 's[' to produce 'ሥ'
