@@ -1,5 +1,9 @@
 Old Hungarian Change History
 ====================
+1.6 (2023-04-24)
+-----------------
+* Added to mobile shift and caps layouts Old Hungarian numbers
+
 1.5 (2023-03-28)
 -----------------
 * Followigs changed on mobile layout:
