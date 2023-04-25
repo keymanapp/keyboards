@@ -35,7 +35,7 @@ c The remainder of this document is formatted with a fixed width font.
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(ግዕዝ)   'ሀለሐመረሰሸቀቐበቨተቸነኘከኸወዐዘዠየደጀገጘጠጨጰጸፈፐ'
+  store(ግዕዝ)  'ሀለሐመረሰሸቀቐበቨተቸነኘከኸወዐዘዠየደጀገጘጠጨጰጸፈፐ'
   store(ካዕብ)  'ሁሉሑሙሩሱሹቁቑቡቩቱቹኑኙኩኹዉዑዙዡዩዱጁጉጙጡጩጱጹፉፑ'
   store(ሣልስ)  'ሂሊሒሚሪሲሺቂቒቢቪቲቺኒኚኪኺዊዒዚዢዪዲጂጊጚጢጪጲጺፊፒ'
   store(ራብዕ)  'ሃላሓማራሳሻቃቓባቫታቻናኛካኻዋዓዛዣያዳጃጋጛጣጫጳጻፋፓ'
@@ -44,8 +44,8 @@ c language specific mappings
   store(ሳብዕ)  'ሆሎሖሞሮሶሾቆቖቦቮቶቾኖኞኮኾዎዖዞዦዮዶጆጎጞጦጮጶጾፎፖ'
 
 c QWERTY keymappings
-  store(enKeys)  'hlHmrsxqQbvtcnNkKwEzZydjgGTCPSfp'
-  store(ሳድስKeys) 'ህልሕምርስሽቅቕብቭትችንኝክኽውዕዝዥይድጅግጝጥጭጵጽፍፕ'
+  store(enKeys)  'hlHmrsxqQbvtcnNkKwzZydjgGTCPSfp'
+  store(ሳድስKeys) 'ህልሕምርስሽቅቕብቭትችንኝክኽውዝዥይድጅግጝጥጭጵጽፍፕ'
 
 c the following is Blin specific
   store(ሌሎች፡keys) 'LMRXBVWYDJF'
@@ -53,11 +53,11 @@ c the following is Blin specific
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)  [T_ግዕዝ]'aAuUiIeoO'[T_ኃምስ]
-  store(loneVowelEthio) 'አአዐኡዑኢዒእኦዖኤ'
+  store(loneVowelKeys)  [T_ግዕዝ]'aAuUiIeEoO'[T_ኃምስ]
+  store(loneVowelEthio) 'እኣዐኡዑኢዒእዕኦዖኤ'
 c  store(loneVowelKeys)   'aAuUiIeEoO'
 c  store(loneVowelEthio)  'ኣዐኡኡኢኢእእኦኦ'
-  store(composableVowel) 'አኡኢእኦዐዒዓዕ'
+  store(composableVowel) 'ኣኢዐዒ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -156,13 +156,15 @@ c
   group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
-c 
-c The input section here is for rules that must precede other rules
-c 
-  + '_' > U+135F c gemination
-  U+135F + '_' > '_'
-c  U+135F + U+135E > U+135D
-c  U+135E + U+135F > U+135D
+
+$keymanonly: + [CTRL '.'] > U+135E
+$keymanonly: U+135E + [CTRL '.'] > U+135F
+$keymanonly: U+135F + [CTRL '.'] > U+135D
+c
+c The following can happen from the touch keyboards፡
+c
+$keymanweb: U+135F + U+135E > U+135D
+$keymanweb: U+135E + U+135F > U+135D
   
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
   + any(enKeys)   > index(ሳድስKeys,1)
@@ -251,29 +253,10 @@ c ---------------------Input of Lone Vowels-------------------------------------
 c 
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
-  any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
+c  any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
 
-  'አ' + any(ግዕዝ-key) > 'እ'
-  'አ' + any(ካዕብ-key) > 'ኡ'
-  'አ' + any(ሣልስ-key) > 'ኢ'
-c 'አ' + any(ራብዕ-key) > 'ኣ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
-  'አ' + any(ሳብዕ-key) > 'ኦ'
-
-c Aynu-A Vowels as Regular Sylalbles
-  'እ' + any(ግዕዝ-key) > 'ዕ'
-
-c Aynu-A Vowels as Vowels
-  'ኡ' + any(ካዕብ-key) > 'ዑ'
-  'ኢ' + any(ሣልስ-key) > 'ዒ'
-  'ኤ' + any(ግዕዝ-key) > 'ዔ'
-  'ኦ' + any(ሳብዕ-key) > 'ዖ'
-
-c Completing the Blin-ER "a" chain:
-c Blin: ኣ -> ዓ -> ዐ -> አ
-  'ኣ' + any(ራብዕ-key) > 'ዓ'
-  'ዓ' + any(ራብዕ-key) > 'ዐ' deadkey(1)
-  'ዐ' deadkey(1) + any(ራብዕ-key) > 'አ'
+  'ኣ' + any(ራብዕ-key) > 'አ'
 
   'ዐ' + any(ግዕዝ-key) > 'ዕ'
   'ዐ' + any(ካዕብ-key) > 'ዑ'
@@ -317,7 +300,7 @@ c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
   any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
-$keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
+c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
   any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             

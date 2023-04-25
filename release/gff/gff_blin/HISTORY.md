@@ -1,6 +1,6 @@
 # ብሊን (Blin) Change History
 
-## 2023-04-21 1.5
+## 2023-04-25 1.5
 * Introduction of mobile and tablet keyboards.
 
 ## 2020-06-10 1.4.2
