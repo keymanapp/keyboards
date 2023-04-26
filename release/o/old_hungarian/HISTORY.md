@@ -1,5 +1,14 @@
 Old Hungarian Change History
 ====================
+
+1.7 (2023-04-26)
+-----------------
+* Added longpress keys to default, shift and caps layer.
+* Longpress keys are:
+* full stop, reverse comma, reverse question mark, exclamation mark,
+* double exclamation mark, colon, reverse semicolon, single quotation mark,
+* double quotation mark, reverse lower and upper double 9 quotation mark, hyphen minus 
+
 1.6 (2023-04-24)
 -----------------
 * Added to mobile shift and caps layouts Old Hungarian numbers
