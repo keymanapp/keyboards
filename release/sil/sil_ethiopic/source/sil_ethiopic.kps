@@ -7,6 +7,7 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>sil_ethiopic_sideimage.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,23 +19,11 @@
   <Info>
     <Name URL="">SIL Ethiopic</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 2010-2020 SIL Ethiopia</Copyright>
+    <Copyright URL="">© 2010-2023 SIL Ethiopia</Copyright>
     <Author URL="mailto:computer_ethiopia@sil.org">SIL Ethiopia</Author>
     <WebSite URL="http://www.silethiopia.org">http://www.silethiopia.org</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>sil_ethiopic.bmp</Name>
-      <Description>File sil_ethiopic.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
-    </File>
     <File>
       <Name>..\build\sil_ethiopic.kmx</Name>
       <Description>Keyboard SIL Ethiopic</Description>
@@ -42,17 +31,41 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
+      <Name>sil_ethiopic_sideimage.bmp</Name>
+      <Description>File sil_ethiopic_sideimage.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>SIL-Ethiopic-Keyboard-Help.pdf</Name>
+      <Description>File SIL-Ethiopic-Keyboard-Help.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_ethiopic.js</Name>
+      <Description>File sil_ethiopic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name></Name>
-      <ID></ID>
-      <Version></Version>
+      <Name>SIL Ethiopic</Name>
+      <ID>sil_ethiopic</ID>
+      <Version>2.0.4</Version>
       <Languages>
         <Language ID="am">Amharic</Language>
         <Language ID="bst-Ethi">Basketo (Ethiopic)</Language>
@@ -64,7 +77,8 @@
         <Language ID="kxc-Ethi">Konso (Ethiopic)</Language>
         <Language ID="suq-Ethi">Suri (Ethiopic)</Language>
         <Language ID="tig-Ethi">Tigre (Ethiopic)</Language>
-        <Language ID="zay-Latn">Zayse-Zergulla (Latin)</Language>
+        <Language ID="zay-Ethi">Zayse-Zergulla (Ethiopic)</Language>
+        <Language ID="mul-Ethi">Multiple languages</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
