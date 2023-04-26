@@ -21,7 +21,7 @@ store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_B]'
 store(&BITMAP) 'gff_blin.ico'
 store(&VISUALKEYBOARD) 'gff_blin.kvks'
-store(&TARGETS) 'any'
+store(&TARGETS) 'any web iphone ipad androidphone androidtablet mobile desktop tablet'
 store(&LAYOUTFILE) 'gff_blin.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'gff_blin.css'
 $keymanonly:  store(&mnemonicLayout) "1"
@@ -29,8 +29,11 @@ c
 c =====================End Identity Section=====================================================
 
 c =====================Begin Data Section=======================================================
-
 c The remainder of this document is formatted with a fixed width font.
+
+c Define the set of Ethiopic characters to support contest based input:
+c
+store(Ethiopic) 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
 
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
@@ -314,7 +317,8 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   '፡' + '+' > '፠'
   '፡' + '#' > '፨'
   
-      + '.' > '።'
+c      + '.' > '።'
+any(Ethiopic) + '.' > index(Ethiopic,1) '።'
   '።' + '.' > '..'
   '.' + '.' > '..'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)

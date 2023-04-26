@@ -2,6 +2,8 @@
 
 ## 2023-04-25 1.5
 * Introduction of mobile and tablet keyboards.
+* Support for Ethiopic combining marks.
+* Context aware period and comma input.
 
 ## 2020-06-10 1.4.2
 * Updated htm files for readability on Linux.
