@@ -163,20 +163,31 @@ c ---------------------Input of Special Symbols---------------------------------
 $keymanonly: + [CTRL '.'] > U+135E
 $keymanonly: U+135E + [CTRL '.'] > U+135F
 $keymanonly: U+135F + [CTRL '.'] > U+135D
+
+c
+c Ethiopic combining marks for vowel and consonant stress.
+c The use of T_ codes here is done to avoid the warning: 
+c   "Hint: 109A The rule will never be matched for key '፞' because its key code is never fired."
+c which occurs if the keys emit U_ identifiers.
+c
++ [T_135D] > U+135D
++ [T_135E] > U+135E
++ [T_135F] > U+135F
 c
 c The following can happen from the touch keyboards፡
 c
-U+135E + U+135E > U+135F c 1 + 1 > 2
-U+135E + U+135F > U+135D c 1 + 2 > 3
-U+135F + U+135E > U+135D c 2 + 1 > 3
+U+135E + [T_135E] > U+135F c 1 + 1 > 2
+U+135E + [T_135F] > U+135D c 1 + 2 > 3
+U+135F + [T_135E] > U+135D c 2 + 1 > 3
 c
 c warn but don't combine:
 c
-U+135F + U+135F > beep  c 2 + 2
-U+135F + U+135D > beep  c 2 + 3
-U+135D + U+135E > beep  c 3 + 1
-U+135D + U+135F > beep  c 3 + 2
-U+135D + U+135D > beep  c 3 + 3
+U+135E + [T_135D] > U+135E beep  c 1 + 3
+U+135F + [T_135F] > U+135F beep  c 2 + 2
+U+135F + [T_135D] > U+135F beep  c 2 + 3
+U+135D + [T_135E] > U+135D beep  c 3 + 1
+U+135D + [T_135F] > U+135D beep  c 3 + 2
+U+135D + [T_135D] > U+135D beep  c 3 + 3
 
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
   + any(enKeys)   > index(ሳድስKeys,1)
