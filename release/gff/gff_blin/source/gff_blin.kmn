@@ -21,7 +21,7 @@ store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_B]'
 store(&BITMAP) 'gff_blin.ico'
 store(&VISUALKEYBOARD) 'gff_blin.kvks'
-store(&TARGETS) 'any web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'gff_blin.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'gff_blin.css'
 $keymanonly:  store(&mnemonicLayout) "1"
@@ -317,7 +317,6 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   '፡' + '+' > '፠'
   '፡' + '#' > '፨'
   
-c      + '.' > '።'
 any(Ethiopic) + '.' > index(Ethiopic,1) '።'
   '።' + '.' > '..'
   '.' + '.' > '..'
