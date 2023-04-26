@@ -166,9 +166,18 @@ $keymanonly: U+135F + [CTRL '.'] > U+135D
 c
 c The following can happen from the touch keyboards፡
 c
-$keymanweb: U+135F + U+135E > U+135D
-$keymanweb: U+135E + U+135F > U+135D
-  
+U+135E + U+135E > U+135F c 1 + 1 > 2
+U+135E + U+135F > U+135D c 1 + 2 > 3
+U+135F + U+135E > U+135D c 2 + 1 > 3
+c
+c warn but don't combine:
+c
+U+135F + U+135F > beep  c 2 + 2
+U+135F + U+135D > beep  c 2 + 3
+U+135D + U+135E > beep  c 3 + 1
+U+135D + U+135F > beep  c 3 + 2
+U+135D + U+135D > beep  c 3 + 3
+
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
   + any(enKeys)   > index(ሳድስKeys,1)
 c ---------------------End Input of Special Symbols---------------------------------------------
