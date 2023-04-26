@@ -32,6 +32,10 @@ c =====================Begin Data Section=======================================
 
 c The remainder of this document is formatted with a fixed width font.
 
+c Define the set of Ethiopic characters to support contest based input:
+c
+store(Ethiopic) 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
+
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
@@ -50,8 +54,8 @@ c (ignorable) masking error that began appearing with KM15 where '_' was used
 c a place holder for keys in the ሳድስ list that were not directly typed. The
 c maps below are for for the initial keystrike only.
 c
-  store(enKeys)  'hlHmrsxqbvtcnNkKwEzZydjgTCPSfp'
-  store(ሳድስKeys) 'ህልሕምርስሽቅብቭትችንኝክኽውዕዝዥይድጅግጥጭጵጽፍፕ'
+  store(enKeys)  'hlHmrsxqbvtcnNkKwzZydjgTCPSfp'
+  store(ሳድስKeys) 'ህልሕምርስሽቅብቭትችንኝክኽውዝዥይድጅግጥጭጵጽፍፕ'
 
 c the following is Amharic specific
   store(ሌሎች፡keys) 'LMRXBVQWYDJGF'
@@ -160,12 +164,15 @@ c
   group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
-c 
-c The input section here is for rules that must precede other rules
-c 
-c  + '_' > U+135F c gemination
-c  U+135F + '_' > '_'
-U+135E + U+135F > U+135D
+
+$keymanonly: + [CTRL '.'] > U+135E
+$keymanonly: U+135E + [CTRL '.'] > U+135F
+$keymanonly: U+135F + [CTRL '.'] > U+135D
+c
+c The following can happen from the touch keyboards፡
+c
+$keymanweb: U+135F + U+135E > U+135D
+$keymanweb: U+135E + U+135F > U+135D
 
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
   + any(enKeys)   > index(ሳድስKeys,1)
@@ -318,8 +325,9 @@ $keymanonly: + [SHIFT ' '] > '፡'
   '፡' + '+' > '፠'
   '፡' + '#' > '፨'  
   '።' + ':' > ':'
-  ':' + ':' > '፡'  c makes circular  
-      + '.' > '።'
+  ':' + ':' > '፡'  c makes circular
+  
+any(Ethiopic) + '.' > index(Ethiopic,1) '።'
   '።' + '.' > '..'
   '.' + '.' > '..'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
