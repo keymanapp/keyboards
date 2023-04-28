@@ -1,8 +1,8 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'Bunong ឞូន៝ង (SIL)'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© 2021 - 2022 SIL International'
-store(&KEYBOARDVERSION) '1.4'
+store(&COPYRIGHT) '© 2021 - 2023 SIL International'
+store(&KEYBOARDVERSION) '1.5'
 store(&BITMAP) 'sil_bunong.ico'
 store(&VISUALKEYBOARD) 'sil_bunong.kvks'
 store(&LAYOUTFILE) 'sil_bunong.keyman-touch-layout'
@@ -11,6 +11,8 @@ store(&KMW_EMBEDCSS) 'sil_bunong.css'
 begin Unicode > use(main)
 
 group(main) using keys
++ [SHIFT K_A] > '@'
++ [SHIFT K_8] > '*'
 + [SHIFT K_4] > '៛'
 + [SHIFT K_COMMA] > '<'
 + [SHIFT K_QUOTE] > '"'
@@ -31,7 +33,6 @@ group(main) using keys
 + [SHIFT K_L] > nul
 + [SHIFT K_RBRKT] > nul
 + [SHIFT K_P] > nul
-+ [SHIFT K_8] > '×'
 + [SHIFT K_7] > nul
 + [SHIFT K_6] > nul
 + [SHIFT K_R] > nul
@@ -49,7 +50,7 @@ group(main) using keys
 + [SHIFT K_1] > '!'
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_SLASH] > '?'
-+ [SHIFT K_H] > nul
+c + [SHIFT K_H] > nul
 + [SHIFT K_O] > 'ៅ'
 + [SHIFT K_S] > 'ៃ'
 + [SHIFT K_E] > 'ែ'
@@ -58,7 +59,7 @@ group(main) using keys
 + [SHIFT K_W] > 'ឺ'
 + [SHIFT K_I] > 'ី'
 + [SHIFT K_G] > 'អ'
-+ [SHIFT K_V] > nul
+c + [SHIFT K_V] > nul
 + [SHIFT K_B] > 'ព'
 + [SHIFT K_T] > 'ទ'
 + [SHIFT K_J] > 'ញ'
@@ -106,6 +107,7 @@ group(main) using keys
 + [K_L] > 'ល'
 + [K_K] > 'ក'
 + [K_SPACE] > U+200B
+
 U+200B + [K_SPACE] > U+0020
 U+0020 + [K_SPACE] > U+200B
 
