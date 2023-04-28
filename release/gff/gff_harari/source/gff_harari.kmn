@@ -147,7 +147,7 @@ store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፎፏ'
 store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፖፗ'
 store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟥𞟦!'
 
-store(touchVowelsLabialvelar) [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ]
+store(touchVowelsLabiolvelar) [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ]
 store(ቈ_ቤተሰብ) 'ቈቍቊቋቌ'
 store(ቘ_ቤተሰብ) 'ቘቝቚቛቜ'
 store(ኈ_ቤተሰብ) 'ኈኍኊኋኌ'
@@ -266,13 +266,13 @@ c  if( &layer = "ጘ-layer" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
  c if( &layer = "ፐ-extra" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
   if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
 
-  if( &layer = "ቈ-layer" ) + any(touchVowelsLabialvelar) > index(ቈ_ቤተሰብ,2)
-  if( &layer = "ኈ-layer" ) + any(touchVowelsLabialvelar) > index(ኈ_ቤተሰብ,2)
-  if( &layer = "ኰ-layer" ) + any(touchVowelsLabialvelar) > index(ኰ_ቤተሰብ,2)
-  if( &layer = "ዀ-layer" ) + any(touchVowelsLabialvelar) > index(ዀ_ቤተሰብ,2)
-  if( &layer = "ጐ-layer" ) + any(touchVowelsLabialvelar) > index(ጐ_ቤተሰብ,2)
-  if( &layer = "ቘ-extra" ) + any(touchVowelsLabialvelar) > index(ቘ_ቤተሰብ,2)
-  if( &layer = "ⶓ-extra" ) + any(touchVowelsLabialvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ቈ-layer" ) + any(touchVowelsLabiolvelar) > index(ቈ_ቤተሰብ,2)
+  if( &layer = "ኈ-layer" ) + any(touchVowelsLabiolvelar) > index(ኈ_ቤተሰብ,2)
+  if( &layer = "ኰ-layer" ) + any(touchVowelsLabiolvelar) > index(ኰ_ቤተሰብ,2)
+  if( &layer = "ዀ-layer" ) + any(touchVowelsLabiolvelar) > index(ዀ_ቤተሰብ,2)
+  if( &layer = "ጐ-layer" ) + any(touchVowelsLabiolvelar) > index(ጐ_ቤተሰብ,2)
+  if( &layer = "ቘ-extra" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
+  if( &layer = "ⶓ-extra" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
   
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
