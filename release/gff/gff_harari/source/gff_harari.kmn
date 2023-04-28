@@ -73,12 +73,12 @@ c --------------------Maps for Labiovelars--------------------------------------
   store(ዘመደ፡ራብዕ፡መደበኛ) 'ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
 
 c 'hhkqg'
-  store(ካዕብ፡ልዩ)  'ሁኁኩቁቑጉጙ'
-  store(ዘመደ፡ግዕዝ) 'ኈኈኰቈቘጐⶓ'
-  store(ዘመደ፡ካዕብ) 'ኍኍኵቍቝጕⶖ'
-  store(ዘመደ፡ሣልስ) 'ኊኊኲቊቚጒⶔ'
-  store(ዘመደ፡ራብዕ) 'ኋኋኳቋቛጓጟ'
-  store(ዘመደ፡ኃምስ) 'ኌኌኴቌቜጔⶕ'
+  store(ካዕብ፡ልዩ)  'ሁኁኩኹቁቑጉጙሙቡፉፑሑ'
+  store(ዘመደ፡ግዕዝ) 'ኈኈኰዀቈቘጐⶓᎀᎄᎈᎌ𞟨'
+  store(ዘመደ፡ካዕብ) 'ኍኍኵዅቍቝጕⶖᎃᎇᎋᎏ𞟫'
+  store(ዘመደ፡ሣልስ) 'ኊኊኲዂቊቚጒⶔ𞟭𞟳𞟻𞟽𞟩'
+  store(ዘመደ፡ራብዕ) 'ኋኋኳዃቋቛጓጟሟቧፏፗሗ'
+  store(ዘመደ፡ኃምስ) 'ኌኌኴዄቌቜጔⶕ𞟮𞟴𞟼𞟾𞟪'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -147,7 +147,7 @@ store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፎፏ'
 store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፖፗ'
 store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟥𞟦!'
 
-store(touchVowelsLabiolvelar) [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ]
+store(touchVowelsLabiolvelar) [T_ዘመደ_ግዕዝ][T_ዘመደ_ካዕብ][T_ዘመደ_ሣልስ][T_ዘመደ_ራብዕ][T_ዘመደ_ኃምስ]
 store(ቈ_ቤተሰብ) 'ቈቍቊቋቌ'
 store(ቘ_ቤተሰብ) 'ቘቝቚቛቜ'
 store(ኈ_ቤተሰብ) 'ኈኍኊኋኌ'
@@ -155,6 +155,13 @@ store(ኰ_ቤተሰብ) 'ኰኵኲኳኴ'
 store(ዀ_ቤተሰብ) 'ዀዅዂዃዄ'
 store(ጐ_ቤተሰብ) 'ጐጕጒጓጔ'
 store(ⶓ_ቤተሰብ) 'ⶓⶖⶔጟⶕ'
+
+store(Gurage_ቈ_key) [U_1E7F0][U_1E7F1][U_1E7F2]  c '𞟲𞟰𞟱'
+store(Gurage_ኰ_key) [U_1E7F5][U_1E7F6][U_1E7F7]  c '𞟷𞟵𞟶'
+store(Gurage_ጐ_key) [U_1E7F8][U_1E7F9][U_1E7FA]  c '𞟺𞟸𞟹'
+store(Gurage_ቈ) '𞟲𞟰𞟱'
+store(Gurage_ኰ) '𞟷𞟵𞟶'
+store(Gurage_ጐ) '𞟺𞟸𞟹'
 
 c =====================End Data Section=========================================================
 
@@ -204,12 +211,20 @@ c
   any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
   any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
 
-  any(ዘመደ፡ራብዕ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ሣልስ] > index(ዘመደ፡ሣልስ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ራብዕ] > index(ዘመደ፡ራብዕ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ኃምስ] > index(ዘመደ፡ኃምስ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
   
+  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+
+c This is slight overkill, the mappings are needed only for ቑ and ጙ on respective "extra" layers.
+c Reduce this layer to only ቑ and ጙ if problems occur:
   any(ካዕብ፡ልዩ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
   any(ካዕብ፡ልዩ) +  [T_ሣልስ] > index(ዘመደ፡ሣልስ,1)
   any(ካዕብ፡ልዩ) +  [T_ራብዕ] > index(ዘመደ፡ራብዕ,1)
@@ -222,64 +237,60 @@ c
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
   if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
   if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
-c  if( &layer = "ሠ-extra" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
   if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
   if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
   if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
-c  if( &layer = "ቐ-layer" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
   if( &layer = "ቐ-extra" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
   if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
   if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
-c  if( &layer = "ቨ-extra" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
   if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
   if( &layer = "ቸ-layer" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
   if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
-c  if( &layer = "ኀ-extra" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
   if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2) 
   if( &layer = "ኘ-layer" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
   if( &layer = "default" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
   if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
   if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
-c  if( &layer = "ኸ-extra" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
   if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
   if( &layer = "ዘ-layer" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2) 
   if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
-c  if( &layer = "ዠ-extra" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2) 
   if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
   if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
   if( &layer = "ዸ-extra" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
   if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
   if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
-c  if( &layer = "ጘ-layer" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
   if( &layer = "ጘ-extra" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
   if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2) 
   if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
   if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
   if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
- c if( &layer = "ፀ-extra" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
- c if( &layer = "ፐ-extra" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
   if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
 
   if( &layer = "ቈ-layer" ) + any(touchVowelsLabiolvelar) > index(ቈ_ቤተሰብ,2)
+  if( &layer = "ቘ-layer" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
   if( &layer = "ኈ-layer" ) + any(touchVowelsLabiolvelar) > index(ኈ_ቤተሰብ,2)
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabiolvelar) > index(ኰ_ቤተሰብ,2)
   if( &layer = "ዀ-layer" ) + any(touchVowelsLabiolvelar) > index(ዀ_ቤተሰብ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabiolvelar) > index(ጐ_ቤተሰብ,2)
-  if( &layer = "ቘ-extra" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
-  if( &layer = "ⶓ-extra" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ⶓ-layer" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+
+c Special New Gurage cases that coexist with classic Ge'ez
+  if( &layer = "ቈ-layer" ) 'ቈ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
+  if( &layer = "ኰ-layer" ) 'ኰ' + any(Gurage_ኰ_key) > index(Gurage_ኰ,3) 
+  if( &layer = "ጐ-layer" ) 'ጐ' + any(Gurage_ጐ_key) > index(Gurage_ጐ,3) 
   
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
 c
 c Note: Given the new touch-specific logic above, much or all of the following that
-c       address letter composition may no longer be relevant.  That is, it may all effectively
-c       be $keymanonly statements.
+c       addresses letter composition may no longer be relevant.  That is, it may all
+c        effectivelybe $keymanonly statements.
 c
 c ---------------------Input of Double Strike Letters-------------------------------------------
   'ስ' + 's' > 'ሥ'
@@ -422,53 +433,6 @@ c enhance this later, look for something that can copy a match over
 + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
 
-c
-c  Review if this is still needed
-c
-
-c ---------------------Extensions for Touch Layout----------------------------------------------
-c
-c For Amharic, extensions are Tigrinya and Xamtanga.
-c These keys cannot be entered via a physical keyboard, and only in an upper layer of a touch layout.
-
-  store(TouchExtended፡ግዕዝ)  'ቐጘ'
-  store(TouchExtended፡ካዕብ)  'ቑጙ'
-  store(TouchExtended፡ሣልስ)  'ቒጚ'
-  store(TouchExtended፡ራብዕ)  'ቓጛ'
-  store(TouchExtended፡ኃምስ)  'ቔጜ'
-  store(TouchExtended፡ሳድስ)  'ቕጝ'
-  store(TouchExtended፡ሳብዕ)  'ቖጞ'
-
-  any(TouchExtended፡ሳድስ) + any(ግዕዝ-key) > index(TouchExtended፡ግዕዝ,1)
-  any(TouchExtended፡ሳድስ) + any(ካዕብ-key) > index(TouchExtended፡ካዕብ,1)
-  any(TouchExtended፡ሳድስ) + any(ሣልስ-key) > index(TouchExtended፡ሣልስ,1)
-  any(TouchExtended፡ሳድስ) + any(ራብዕ-key) > index(TouchExtended፡ራብዕ,1)
-$keymanonly:   any(TouchExtended፡ሳድስ) + any(ኃምስ-key) > index(TouchExtended፡ኃምስ,1)
-  any(TouchExtended፡ሣልስ) + any(ግዕዝ-key) > index(TouchExtended፡ኃምስ,1)  
-  any(TouchExtended፡ሳድስ) + any(ሳብዕ-key) > index(TouchExtended፡ሳብዕ,1)
-c ---------------------End Input of Basic Syllables---------------------------------------------
-
-c ---------------------Input of Labiovelars-----------------------------------------------------
-  store(TouchExtended፡ሳድስ፡መደበኛ)     'ቕኽጝ'
-  store(TouchExtended፡ካዕብ፡መደበኛ)     'ቑኹጙ'
-  store(TouchExtended፡ዘመደ፡ራብዕ፡መደበኛ) 'ቛዃጟ'
-
-c 'QKG'
-  store(TouchExtended፡ካዕብ፡ልዩ)  'ቑኹጙ'
-  store(TouchExtended፡ዘመደ፡ግዕዝ) 'ቘዀⶓ'
-  store(TouchExtended፡ዘመደ፡ካዕብ) 'ቝዅⶖ'
-  store(TouchExtended፡ዘመደ፡ሣልስ) 'ቚዂⶔ'
-  store(TouchExtended፡ዘመደ፡ራብዕ) 'ቛዃጟ'
-  store(TouchExtended፡ዘመደ፡ኃምስ) 'ቜዄⶕ'
-
-  any(TouchExtended፡ካዕብ፡መደበኛ) + any(ራብዕ-key) > index(TouchExtended፡ዘመደ፡ራብዕ፡መደበኛ,1)
-  any(TouchExtended፡ካዕብ፡ልዩ)   + any(ግዕዝ-key) > index(TouchExtended፡ዘመደ፡ግዕዝ,1)
-  any(TouchExtended፡ካዕብ፡ልዩ)   + any(ካዕብ-key) > index(TouchExtended፡ዘመደ፡ካዕብ,1)
-  any(TouchExtended፡ካዕብ፡ልዩ)   + any(ሣልስ-key) > index(TouchExtended፡ዘመደ፡ሣልስ,1)
-  any(TouchExtended፡ካዕብ፡ልዩ)   + any(ራብዕ-key) > index(TouchExtended፡ዘመደ፡ራብዕ,1)
-$keymanonly:   any(TouchExtended፡ካዕብ፡ልዩ)   + any(ኃምስ-key) > index(TouchExtended፡ዘመደ፡ኃምስ,1)
-  any(TouchExtended፡ዘመደ፡ሣልስ)  + any(ግዕዝ-key) > index(TouchExtended፡ዘመደ፡ኃምስ,1)
-c ---------------------Extensions for Touch Layout----------------------------------------------
 
 + [T_BEEP] > beep
 + [T_SPACER] > beep c this should be impossible, this line needed to to avoid "Warning: 2092" warnings for unknown key T_SPACER
