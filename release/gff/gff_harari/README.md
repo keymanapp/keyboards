@@ -1,7 +1,7 @@
 # ሐረሪ (Harari) Keyboard
 
 
-Copyright (C) 2023 Geʾez Frontier Foundation, SIL International
+Copyright © 2023 Geʾez Frontier Foundation, SIL International
 
 Version 1.0
 
