@@ -1,6 +1,11 @@
 sil_senegal_knf_azerty Change History
 ====================
 
+1.0.1 (2023-04-20)
+------------------
+Place holders for  NBSP and NNBSP changed to '≈' and '≠'. 'Ĉ' and 'ĉ' added to modifier sequences. Documentaion updated.
+'readme.htm' updated based on description in kmn file.
+
 1.0.0 (2023-04-13)
 ------------------
 On touch 'othercaps' layer, characters next layer set to 'caps'.

@@ -68,7 +68,7 @@ require_once('header.php');
 									<img src="phone-othercaps.png" alt="image for layer othercaps" width="510" height="204">
 								</td></tr>
 								<tr class="compactsans"><td class="compactsans"><p>Double tapping the 'Shift'(up arrow) key will activate the Caps layers, a third tap will revert back to the 'default' layer.</p></td></tr>
-								<tr class="compactsans"><td class="compactsans"><p><strong>N.B.</strong> 'NBSP' or '≈' is a non-breaking space, 'NNBSP' is a narrow non-breaking space.</p></td></tr>
+								<tr class="compactsans"><td class="compactsans"><p><strong>N.B.</strong> '≈' is a non-breaking space and '≠' is a narrow non-breaking space.</p></td></tr>
 							</table>
 							<table class="compactsans">
 								<tr class="compactsans"><td  class="compactsans"style="text-align:left">
@@ -107,7 +107,7 @@ require_once('header.php');
 						<div class="content-inner">
 							<table class="compactsans">
 								<tr class="compactsans"><td class="compactsans" style="text-align:left">
-									<p style="width: 620px;">• 'NBSP' or '≈' is a non-breaking space, 'NNBSP' is a narrow non-breaking space.<br>•  The pink key is not present on all keyboards.<br>• The 'CAPS LOCK' key (Up arrow with bar) is supported on the desktop, but it's level of support on web and onscreen keyboards is variable. On Windows  and Mac desktop keyboards the 'Shift' key will temporarily remove the 'Caps Lock', but on Linux desktops touching the 'Shift' key releases 'Caps Lock'.<br>• On some keyboards the solidus key (second row from top on the far right) may drop to the third row depending on the shape of the 'Enter' key.<br>• On the Mac OSK the 'CTRL', 'CTRL+ALT' and 'SHIFT+CTRL+ALT' layers are shown as blank and generate no characters if clicked on, though the physical keyboard works as described below.<br>• On the Mac physical keyboard if the pink key is present (between the left 'Shift' key and the 'Z' key) this may be transposed with the 'grave' key (key at the top left) on some keyboards.</p></td>
+									<p style="width: 620px;">• '≈' is a non-breaking space and '≠' is a narrow non-breaking space.<br>•  The pink key is not present on all keyboards.<br>• The 'CAPS LOCK' key (Up arrow with bar) is supported on the desktop, but it's level of support on web and onscreen keyboards is variable. On Windows  and Mac desktop keyboards the 'Shift' key will temporarily remove the 'Caps Lock', but on Linux desktops touching the 'Shift' key releases 'Caps Lock'.<br>• On some keyboards the solidus key (second row from top on the far right) may drop to the third row depending on the shape of the 'Enter' key.<br>• On the Mac OSK the 'CTRL', 'CTRL+ALT' and 'SHIFT+CTRL+ALT' layers are shown as blank and generate no characters if clicked on, though the physical keyboard works as described below.<br>• On the Mac physical keyboard if the pink key is present (between the left 'Shift' key and the 'Z' key) this may be transposed with the 'grave' key (key at the top left) on some keyboards.</p></td>
 								</tr>
 								<tr class="compactsans"><td class="compactsans" style="text-align:left">
 									<p><strong>default</strong></p>
@@ -215,7 +215,7 @@ require_once('header.php');
 											<th>C</th>
 										<td>Ç</td>
 										<td></td>
-										<td></td>
+										<td>Ĉ</td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -223,7 +223,7 @@ require_once('header.php');
 											<th>c</th>
 										<td>ç</td>
 										<td></td>
-										<td></td>
+										<td>ĉ</td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -522,7 +522,7 @@ require_once('header.php');
 										<td>÷</td>
 										<td></td>
 										<td></td>
-										<td>NNBSP</td>
+										<td>≠</td>
 										<td></td>
 											<td />
 											<td />
@@ -660,6 +660,13 @@ require_once('header.php');
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN SMALL LETTER C</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">ĉ</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0109</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN SMALL LETTER C WITH CIRCUMFLEX</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0063 U+0302</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN SMALL LETTER C, COMBINING CIRCUMFLEX</td>
 											</tr>
 											<tr class="pagebreak">
 												<td class="_ajami">ç</td>
@@ -1104,6 +1111,13 @@ require_once('header.php');
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
 											<tr class="pagebreak">
+												<td class="_ajami">Ĉ</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0108</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN CAPITAL LETTER C WITH CIRCUMFLEX</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0043 U+0302</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN CAPITAL LETTER C, COMBINING CIRCUMFLEX</td>
+											</tr>
+											<tr class="pagebreak">
 												<td class="_ajami">Ç</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00C7</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LATIN CAPITAL LETTER C WITH CEDILLA</td>
@@ -1469,16 +1483,23 @@ require_once('header.php');
 										</thead>
 										<tbody>
 											<tr class="pagebreak">
-												<td class="_ajami">«</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00AB</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
+												<td class="_ajami">≈»</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00A0 U+00BB</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">NO-BREAK SPACE, RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
 											<tr class="pagebreak">
-												<td class="_ajami">»</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00BB</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
+												<td class="_ajami">≈”</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00A0 U+201D</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">NO-BREAK SPACE, RIGHT DOUBLE QUOTATION MARK</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">«≈</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00AB U+00A0</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LEFT-POINTING DOUBLE ANGLE QUOTATION MARK, NO-BREAK SPACE</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
@@ -1500,6 +1521,13 @@ require_once('header.php');
 												<td class="_ajami">“</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+201C</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LEFT DOUBLE QUOTATION MARK</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">“≈</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+201C U+00A0</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LEFT DOUBLE QUOTATION MARK, NO-BREAK SPACE</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
@@ -1935,7 +1963,7 @@ require_once('header.php');
 									<img src="phone-othercaps.png" alt="image for layer othercaps" width="510" height="204">
 								</td></tr>
 								<tr class="compactsans"><td class="compactsans"><p>O duplo toque da tecla 'maiúscula' (seta para cima) activará a camadas 'Caps', um terceiro toque reverterá para a camada 'default'.</p></td></tr>
-								<tr class="compactsans"><td class="compactsans"><p><strong>N.B.</strong>. 'NBSP' ou '≈' é um espaço sem quebra, 'NNBSP' é um espaço estreito sem quebra.</p></td></tr>
+								<tr class="compactsans"><td class="compactsans"><p><strong>N.B.</strong>. '≈' é um espaço sem quebra e '≠' é um espaço estreito sem quebra.</p></td></tr>
 							</table>
 							<table class="compactsans">
 								<tr class="compactsans"><td  class="compactsans"style="text-align:left">
@@ -1974,7 +2002,7 @@ require_once('header.php');
 						<div class="content-inner">
 							<table class="compactsans">
 								<tr class="compactsans"><td class="compactsans" style="text-align:left">
-									<p style="width: 620px;">• 'NBSP' ou '≈' é um espaço sem quebra, 'NNBSP' é um espaço estreito sem quebra.<br>• A tecla rosa não está presente em todos os teclados.<br>• A tecla 'CAPS LOCK' (seta para cima com barra) é suportada no ambiente de trabalho, mas o seu nível de suporte na web e nos teclados do ecrã é variável. Nos teclados de secretária Windows e Mac, a tecla 'Shift' removerá temporariamente a 'Caps Lock', mas nos computadores de secretária Linux, ao tocar na tecla 'Shift', liberta a 'Caps Lock'.<br>• Em alguns teclados, a tecla solidus (segunda linha a partir do topo à direita) pode cair para a terceira linha, dependendo do formato da tecla 'Enter'.<br>• No Mac OSK, as camadas 'CTRL', 'CTRL+ALT' e 'SHIFT+CTRL+ALT' são mostradas em branco e não geram caracteres se clicado, embora o teclado físico funcione conforme descrito abaixo.<br>• No teclado físico do Mac, se a tecla rosa estiver presente (entre a tecla 'Shift' esquerda e a tecla 'Z'), isso pode ser transposto com a tecla 'grave' tecla (tecla no canto superior esquerdo) em alguns teclados.</p></td>
+									<p style="width: 620px;">• '≈' é um espaço sem quebra e '≠' é um espaço estreito sem quebra.<br>• A tecla rosa não está presente em todos os teclados.<br>• A tecla 'CAPS LOCK' (seta para cima com barra) é suportada no ambiente de trabalho, mas o seu nível de suporte na web e nos teclados do ecrã é variável. Nos teclados de secretária Windows e Mac, a tecla 'Shift' removerá temporariamente a 'Caps Lock', mas nos computadores de secretária Linux, ao tocar na tecla 'Shift', liberta a 'Caps Lock'.<br>• Em alguns teclados, a tecla solidus (segunda linha a partir do topo à direita) pode cair para a terceira linha, dependendo do formato da tecla 'Enter'.<br>• No Mac OSK, as camadas 'CTRL', 'CTRL+ALT' e 'SHIFT+CTRL+ALT' são mostradas em branco e não geram caracteres se clicado, embora o teclado físico funcione conforme descrito abaixo.<br>• No teclado físico do Mac, se a tecla rosa estiver presente (entre a tecla 'Shift' esquerda e a tecla 'Z'), isso pode ser transposto com a tecla 'grave' tecla (tecla no canto superior esquerdo) em alguns teclados.</p></td>
 								</tr>
 								<tr class="compactsans"><td class="compactsans" style="text-align:left">
 									<p><strong>default</strong></p>
@@ -2082,7 +2110,7 @@ require_once('header.php');
 											<th>C</th>
 										<td>Ç</td>
 										<td></td>
-										<td></td>
+										<td>Ĉ</td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -2090,7 +2118,7 @@ require_once('header.php');
 											<th>c</th>
 										<td>ç</td>
 										<td></td>
-										<td></td>
+										<td>ĉ</td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -2389,7 +2417,7 @@ require_once('header.php');
 										<td>÷</td>
 										<td></td>
 										<td></td>
-										<td>NNBSP</td>
+										<td>≠</td>
 										<td></td>
 											<td />
 											<td />
@@ -2527,6 +2555,13 @@ require_once('header.php');
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LETRA MINÚSCULA LATINA C</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">ĉ</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0109</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LETRA MINÚSCULA LATINA C COM CIRCUNFLEXO</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0063 U+0302</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LETRA MINÚSCULA LATINA C, COMBINANDO CIRCUNFLEXO</td>
 											</tr>
 											<tr class="pagebreak">
 												<td class="_ajami">ç</td>
@@ -2971,6 +3006,13 @@ require_once('header.php');
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
 											<tr class="pagebreak">
+												<td class="_ajami">Ĉ</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0108</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LETRA MAIÚSCULA LATINA C COM CIRCUNFLEXO</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0043 U+0302</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LETRA MAIÚSCULA LATINA C, COMBINANDO CIRCUNFLEXO</td>
+											</tr>
+											<tr class="pagebreak">
 												<td class="_ajami">Ç</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00C7</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">LETRA MAIÚSCULA LATINA C COM CEDILHA</td>
@@ -3336,16 +3378,23 @@ require_once('header.php');
 										</thead>
 										<tbody>
 											<tr class="pagebreak">
-												<td class="_ajami">«</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00AB</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MARCA DE ASPAS DE ÂNGULO DUPLO A APONTAR PARA A ESQUERDA</td>
+												<td class="_ajami">≈»</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00A0 U+00BB</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">ESPAÇO SEM FUGA, APONTANDO PARA A DIREITA COM ASPAS DE ÂNGULO DUPLO</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
 											<tr class="pagebreak">
-												<td class="_ajami">»</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00BB</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">APONTANDO PARA A DIREITA COM ASPAS DE ÂNGULO DUPLO</td>
+												<td class="_ajami">≈”</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00A0 U+201D</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">ESPAÇO SEM FUGA, ASPAS DUPLAS À DIREITA</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">«≈</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00AB U+00A0</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MARCA DE ASPAS DE ÂNGULO DUPLO A APONTAR PARA A ESQUERDA, ESPAÇO SEM FUGA</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
@@ -3367,6 +3416,13 @@ require_once('header.php');
 												<td class="_ajami">“</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+201C</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">ASPAS DUPLAS À ESQUERDA</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">“≈</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+201C U+00A0</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">ASPAS DUPLAS À ESQUERDA, ESPAÇO SEM FUGA</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
@@ -3802,7 +3858,7 @@ require_once('header.php');
 									<img src="phone-othercaps.png" alt="image for layer othercaps" width="510" height="204">
 								</td></tr>
 								<tr class="compactsans"><td class="compactsans"><p>Une double pression sur la touche 'Maj' (flèche vers le haut) activera les calques 'Caps', une troisième pression ramènera au calque 'par défaut'.</p></td></tr>
-								<tr class="compactsans"><td class="compactsans"><p><strong>N.B.</strong> 'NBSP' ou '≈' est un espace insécable, 'NNBSP' est un espace étroit insécable.</p></td></tr>
+								<tr class="compactsans"><td class="compactsans"><p><strong>N.B.</strong> '≈' est un espace insécable et '≠' est un espace étroit insécable.</p></td></tr>
 							</table>
 							<table class="compactsans">
 								<tr class="compactsans"><td  class="compactsans"style="text-align:left">
@@ -3841,7 +3897,7 @@ require_once('header.php');
 						<div class="content-inner">
 							<table class="compactsans">
 								<tr class="compactsans"><td class="compactsans" style="text-align:left">
-									<p style="width: 620px;">• 'NBSP' ou '≈' est un espace insécable, 'NNBSP' est un espace étroit insécable.<br>• La touche rose n'est pas présente sur tous les claviers.<br>- La touche 'CAPS LOCK' (flèche vers le haut avec barre) est prise en charge sur le bureau, mais son niveau de prise en charge sur les claviers Web et à l'écran est variable. Sur les claviers de bureau Windows et Mac, la touche 'Shift' supprime temporairement le verrouillage des majuscules, mais sur les ordinateurs de bureau Linux, le fait d'appuyer sur la touche 'Shift' libère le verrouillage des majuscules.<br>• Sur certains claviers, la touche solidus (deuxième rangée à partir du haut à l'extrême droite) peut descendre jusqu'à la troisième ligne en fonction de la forme de la touche 'Entrée'.<br>• Sur Mac OSK, les couches 'CTRL', 'CTRL+ALT' et 'SHIFT+CTRL+ALT' sont affichées comme vides et ne génèrent aucun caractère si elles sont cliquées dessus , bien que le clavier physique fonctionne comme décrit ci-dessous.<br>• Sur le clavier physique Mac, si la touche rose est présente (entre la touche gauche 'Shift' et la touche 'Z'), elle peut être transposée avec la touche 'grave' (touche en haut à gauche) sur certains claviers.</p></td>
+									<p style="width: 620px;">• '≈' est un espace insécable et '≠' est un espace étroit insécable.<br>• La touche rose n'est pas présente sur tous les claviers.<br>- La touche 'CAPS LOCK' (flèche vers le haut avec barre) est prise en charge sur le bureau, mais son niveau de prise en charge sur les claviers Web et à l'écran est variable. Sur les claviers de bureau Windows et Mac, la touche 'Shift' supprime temporairement le verrouillage des majuscules, mais sur les ordinateurs de bureau Linux, le fait d'appuyer sur la touche 'Shift' libère le verrouillage des majuscules.<br>• Sur certains claviers, la touche solidus (deuxième rangée à partir du haut à l'extrême droite) peut descendre jusqu'à la troisième ligne en fonction de la forme de la touche 'Entrée'.<br>• Sur Mac OSK, les couches 'CTRL', 'CTRL+ALT' et 'SHIFT+CTRL+ALT' sont affichées comme vides et ne génèrent aucun caractère si elles sont cliquées dessus , bien que le clavier physique fonctionne comme décrit ci-dessous.<br>• Sur le clavier physique Mac, si la touche rose est présente (entre la touche gauche 'Shift' et la touche 'Z'), elle peut être transposée avec la touche 'grave' (touche en haut à gauche) sur certains claviers.</p></td>
 								</tr>
 								<tr class="compactsans"><td class="compactsans" style="text-align:left">
 									<p><strong>default</strong></p>
@@ -3949,7 +4005,7 @@ require_once('header.php');
 											<th>C</th>
 										<td>Ç</td>
 										<td></td>
-										<td></td>
+										<td>Ĉ</td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -3957,7 +4013,7 @@ require_once('header.php');
 											<th>c</th>
 										<td>ç</td>
 										<td></td>
-										<td></td>
+										<td>ĉ</td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -4256,7 +4312,7 @@ require_once('header.php');
 										<td>÷</td>
 										<td></td>
 										<td></td>
-										<td>NNBSP</td>
+										<td>≠</td>
 										<td></td>
 											<td />
 											<td />
@@ -4394,6 +4450,13 @@ require_once('header.php');
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MINUSCULE LETTRE LATINE C</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">ĉ</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0109</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MINUSCULE LETTRE LATINE C AVEC CIRCONFLEXE</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0063 U+0302</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MINUSCULE LETTRE LATINE C, COMBINANT CIRCONFLEXE</td>
 											</tr>
 											<tr class="pagebreak">
 												<td class="_ajami">ç</td>
@@ -4838,6 +4901,13 @@ require_once('header.php');
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
 											<tr class="pagebreak">
+												<td class="_ajami">Ĉ</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0108</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MAJUSCULE LETTRE LATINE C AVEC CIRCONFLEXE</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+0043 U+0302</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MAJUSCULE LETTRE LATINE C, COMBINANT CIRCONFLEXE</td>
+											</tr>
+											<tr class="pagebreak">
 												<td class="_ajami">Ç</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00C7</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">MAJUSCULE LETTRE LATINE C AVEC CEDILLE</td>
@@ -5203,16 +5273,23 @@ require_once('header.php');
 										</thead>
 										<tbody>
 											<tr class="pagebreak">
-												<td class="_ajami">«</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00AB</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">GUILLEMETS DOUBLE ANGLE POINTANT À GAUCHE</td>
+												<td class="_ajami">≈»</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00A0 U+00BB</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">ESPACE SANS RUPTURE, GUILLEMETS DOUBLE ANGLE POINTANT À DROITE</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
 											<tr class="pagebreak">
-												<td class="_ajami">»</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00BB</td>
-												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">GUILLEMETS DOUBLE ANGLE POINTANT À DROITE</td>
+												<td class="_ajami">≈”</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00A0 U+201D</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">ESPACE SANS RUPTURE, GUILLEMETS DOUBLES DROITS</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">«≈</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+00AB U+00A0</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">GUILLEMETS DOUBLE ANGLE POINTANT À GAUCHE, ESPACE SANS RUPTURE</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
@@ -5234,6 +5311,13 @@ require_once('header.php');
 												<td class="_ajami">“</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+201C</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">GUILLEMETS DOUBLES GAUCHE</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
+											</tr>
+											<tr class="pagebreak">
+												<td class="_ajami">“≈</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">U+201C U+00A0</td>
+												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;">GUILLEMETS DOUBLES GAUCHE, ESPACE SANS RUPTURE</td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 												<td style="font-family: 'Andika Afr', andika, geneva, arial, helvetica, sans-serif;"></td>
 											</tr>
