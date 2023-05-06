@@ -1,6 +1,10 @@
 Old Hungarian Change History
 ====================
 
+1.7.1 (2023-05-06)
+-----------------
+* Resolve Old Hungarian numbers fault on shift layer in mobile devices
+
 1.7 (2023-04-26)
 -----------------
 * Added longpress keys to default, shift and caps layer.
