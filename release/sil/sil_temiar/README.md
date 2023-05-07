@@ -4,8 +4,10 @@ Temiar (SIL) Keyboard
 Copyright (C) SIL Malaysia
 
 __DESCRIPTION__
-Temiar keyboard layout created by template.
-
+Simple Temiar Keyboard for Keyman.
+This keyboard uses a simple set of key sequences
+for typing Temiar, based on standard English
+or Malay keyboard layouts.
 
 Supported Platforms
 -------------------
