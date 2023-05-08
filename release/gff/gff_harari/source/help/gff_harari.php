@@ -81,44 +81,44 @@ This keyboard is designed for use with the Harari language of Ethiopia in Africa
 
 <p>When the GFF Harari mobile keyboard starts, the key layout appears as shown in the following image.  Note the relationship between the letters of the middle row and top row:</p>
 
-<img src="source/help/images/gff_harari-default-1.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-default-1.jpeg" style="border: 1px solid black;"/>
 
 <p>Tapping a key once, the modifier letters to the left (<code>አ</code>, <code>ኡ</code>, <code>ኢ</code> ) and right  (<code>ኣ</code>, <code>ኤ</code>, <code>ኦ<code>) of the spacebar will update. For example, tapping <code>ሕ</code> the modifiers change to <code>ሐ</code>, <code>ሑ</code>, <code>ሒ</code>, <code>ሓ</code>, <code>ሔ</code>, <code>ሖ</code> .  If any modifier key is tapped, ሕ will be updated on screen and replaced with the selected letter.</p>
 
-<img src="source/help/images/gff_harari-default-2.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-default-2.jpeg" style="border: 1px solid black;"/>
 
 <p>When a key has a <code>·</code> symbol in the top-right corner, it indicates that more options are available. Holding a key with a <code>·</code> down for a few moments (called a “longpress”) a popup menu appears where you can tap a letter or puncutation that appears.  The popup menu for <code>ን</code> is shown below:</p>
 
-<img src="source/help/images/gff_harari-default-3.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-default-3.jpeg" style="border: 1px solid black;"/>
 
 <p>Tapping <code>ኝ</code> will then update the modifier keys so that <code>ኘ</code>, <code>ኙ</code>, <code>ኚ</code>, etc. appear for selection. By this approach, <code>ኝ</code> was on a "hidden" or "extra" key. This approach is used to make additional letters, numbers, and punctuation available that did not fit onto the present keyboard “layer”.</p>
 
-<img src="source/help/images/gff_harari-default-6.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-default-6.jpeg" style="border: 1px solid black;"/>
 
 
 <h3>Punctuation</h3>
 
 <p>When typing letters, the <code>!</code> and <code>።</code> keys are available for entering the most common punctuation without shifting to another "layer".  The following image shows the punctuation for a longpress of <code>!</code>:</p>
 
-<img src="source/help/images/gff_harari-default-4.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-default-4.jpeg" style="border: 1px solid black;"/>
 
 
 <p>The punctuation for a longpress of <code>።</code>:</p>
 
-<img src="source/help/images/gff_harari-default-5.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-default-5.jpeg" style="border: 1px solid black;"/>
 
 <p>For additional punctuation and numerals, tap the <code>123</code> key to shift to the next layer:</p>
 
-<img src="source/help/images/gff_harari-punctuation-1.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-punctuation-1.jpeg" style="border: 1px solid black;"/>
 
 
 <p>Note that numerals on the punctuation layer use the long press approach to make Geʾez numerals available:</p>
 
-<img src="source/help/images/gff_harari-punctuation-2.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-punctuation-2.jpeg" style="border: 1px solid black;"/>
 
 <p>Tapping the <code>@<code> key shifts to a 2nd layer to access all remaining punctuation:</p>
 
-<img src="source/help/images/gff_harari-punctuation-3.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-punctuation-3.jpeg" style="border: 1px solid black;"/>
 
 <p>A tap of the <code>፩<code> key will go to the final layer where Geʾez numbers and some less used, and non-Harari letters, can be accessed.</p>
 
@@ -126,11 +126,11 @@ This keyboard is designed for use with the Harari language of Ethiopia in Africa
 
 <p>Tapping the <code>ሏሟሷ</code> key shifts to the next layer which presents all 8th order and higher letters with a “wa” sound that are occasionally needed for words of other languages.</p>
 
-<img src="source/help/images/gff_harari-labiovelar-1.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-labiovelar-1.jpeg" style="border: 1px solid black;"/>
 
 <p>Most letters have only a single extra “wa” form that can be typed directly.  Blue shaded keys indicate letters that have the full five additional “wa” syllables.  Tapping the <code>ጓ<code> key, for example, the modifier keys will update to offer the five “wa” syllables as shown:</p>
 
-<img src="source/help/images/gff_harari-labiovelar-2.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-labiovelar-2.jpeg" style="border: 1px solid black;"/>
 
 
 <h3>Numerals</h3>
@@ -139,15 +139,15 @@ This keyboard is designed for use with the Harari language of Ethiopia in Africa
 
 <p>Note the arrow button, <code>▶</code>, at the end of the row of Geʾez numerals, tapping it will slide the numerals to the orders of ten (e.g. ፳, ፴, ፵, etc.):</p>
 
-<img src="source/help/images/gff_harari-extra-1.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-extra-1.jpeg" style="border: 1px solid black;"/>
 
 <p>The Geʾez orders of ten appear as shown after the <code>▶</code> button is tapped:</p>
 
-<img src="source/help/images/gff_harari-extra-2.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-extra-2.jpeg" style="border: 1px solid black;"/>
 
 <p>Tapping the <code>▶</code> button again slides to display the last two numerals, and a final tap will return to the initial Geʾez numerals.</p>
 
-<img src="source/help/images/gff_harari-extra-3.jpeg" style="border: 1px solid black;"/>
+<img src="images/gff_harari-extra-3.jpeg" style="border: 1px solid black;"/>
 
 <p>Finally, simply tap the <code>ሀለሐ</code> key to return to the starting letters layers.</p>
 </div>
