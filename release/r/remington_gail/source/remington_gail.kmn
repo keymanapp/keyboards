@@ -1,0 +1,197 @@
+﻿c remington_gail generated from template at 2022-01-25 14:06:35
+c with name "Remington GAIL"
+store(&VERSION) '14.0'
+store(&NAME) 'Remington GAIL (SIL)'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'remington_gail.kvks'
+store(&LAYOUTFILE) 'remington_gail.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(digitsCK) [CAPS K_NP0] .. [CAPS K_NP9]
+store(digitsK) [K_0] .. [K_9]
+store(digitsU) U+0030 .. U+0039
+
+store(IdigitsNCK) [NCAPS K_NP0] .. [NCAPS K_NP9]
+store(IdigitsK) [RALT K_0] .. [RALT K_9]
+store(IdigitsU) U+0966 .. U+096F
+
+store(consK) "v"    "b"    "m"    ")"    ","    \
+             "d"    "x"    "p"    "N"    "t"    ">"   "V" \
+             "B"    "M"    "<"    "r"    "n"    "u"    "i"    "Q"    "c"    "e"   ";" \
+             "j"    "y"    "G"    "o"    "l"    "g"
+store(consU) U+0905 U+0907 U+0909 U+090B U+090F \
+             U+0915 U+0917 U+091A U+091B U+091C U+091D U+091F \
+             U+0920 U+0921 U+0922 U+0924 U+0926 U+0928 U+092A U+092B U+092C U+092E U+092F \
+             U+0930 U+0932 U+0933 U+0935 U+0938 U+0939
+
+store(halfK) [SHIFT K_D]    "["    "X"    "?"    "P"    "T"    "."    "R"    "F"    "/"    \
+             [SHIFT K_U]    "I"    "C"    "H"    "E"    "Y"    "O"    "'"    '"'    "L"
+store(halfU) U+0915         U+0916 U+0917 U+0918 U+091A U+091C U+0923 U+0924 U+0925 U+0927 \
+             U+0928         U+092A U+092C U+092D U+092E U+0932 U+0935 U+0936 U+0937 U+0938
+
+store(all)   U+0904 .. U+0939
+
+store(nukta1) U+0928 U+0930 U+0933 U+0915 U+0916 U+0917 U+091C U+0921 U+0922 U+092B U+092F
+store(nukta2) U+0929 U+0931 U+0934 U+0958 U+0959 U+095A U+095B U+095C U+095D U+095E U+095F
+
+store(diaK) [K_A]  [K_BKQUOTE] [SHIFT K_A] [K_F]  [K_H]  [K_Q]  [K_W]  [K_EQUAL] [SHIFT K_W] [K_S]  [SHIFT K_S] [SHIFT K_EQUAL] [K_HYPHEN]
+store(diaU) U+0902 U+093C      U+093E      U+093F U+0940 U+0941 U+0942 U+0943    U+0945      U+0947 U+0948      U+094D          U+003B
+
+store(punctK) [SHIFT K_1] [SHIFT K_7] [SHIFT K_6] [K_BKSLASH]      [SHIFT K_BKSLASH] \
+              [SHIFT K_4] [K_RBRKT]   [SHIFT K_5] [SHIFT K_HYPHEN] [SHIFT K_2]
+store(punctU) U+0964      U+2019      U+2018      U+0028           U+0029            \
+              U+002A      U+002C      U+002D      U+002E           U+002F
+
+store(K_RALT) [SHIFT RALT K_7] [SHIFT RALT K_8] \
+              [SHIFT RALT K_1] [SHIFT RALT K_5] [SHIFT RALT K_A] [SHIFT RALT K_X] [SHIFT RALT K_C] [SHIFT RALT K_P]  
+store(U_RALT) U+00F7           U+00D7           \
+              U+0919           U+0025           U+0959           U+095A           U+095B           U+095D
+
+store(colon) "1234567890;,()/*-‘’“”÷×!*" " "
+
+group(main) using keys
+
++ any(K_RALT) > index(U_RALT,1)
++ any(digitsK) > index(digitsU,1)    c Arabic digits
++ any(digitsCK) > index(digitsU,1)    c Arabic digits
++ any(IdigitsK) > index(IdigitsU,1)
++ any(IdigitsNCK) > index(IdigitsU,1) c Indic digits
++ any(consK)   > index(consU,1)
++ any(halfK)   > index(halfU,1) U+094D c delete U+200D 2022-09-26
+any(all) U+094D + [K_K]         > index(all,1)
+any(all) U+094D + [SHIFT K_A]   > index(all,1)
+any(all) U+094D U+200D + [K_K]         > index(all,1)
+any(all) U+094D U+200D + [SHIFT K_A]   > index(all,1)
+
++ any(diaK)    > index(diaU,1)
++ any(punctK)  > index(punctU,1)
+
++ [SHIFT K_9]       > U+0924 U+094D U+0930 
++ [SHIFT K_8]       > U+0926 U+094D U+0927
++ [SHIFT K_BKQUOTE] > U+0926 U+094D U+092F
++ [K_Z]             > U+094D U+0930             c typed after consonant/conjunct to get rakar
++ [K_K]             > U+093E
++ [SHIFT K_3] > U+0903                          c 003A change 2022-09-26
++ [SHIFT K_J] > U+0936 U+094D U+0930
++ [SHIFT K_K] > U+091C U+094D U+091E
++ [SHIFT K_Z] > U+0930 U+094D                    c typed before a consonant/conjunct to get reph
++ [SHIFT K_RBRKT] > U+0926 U+094D U+0935 
++ [SHIFT K_LBRKT] > U+0915 U+094D U+0937 U+094D c U+200D 2022-09-26
++ [SHIFT K_COLON] > U+0930 U+0942
+
+any(nukta1) + [K_BKQUOTE] > index(nukta2,1)
+U+0905 + [K_K]       > U+0906
+U+0905 + [SHIFT K_A] > U+0906
+U+0906 + [SHIFT K_W] > U+0911
+U+0906 + [K_S]       > U+0913
+U+0906 + [SHIFT K_S] > U+0914
+U+0907 + [SHIFT K_Z] > U+0908
+U+0909 + [K_Q]       > U+090A c mq
+U+090F + [SHIFT K_W] > U+090D
+U+090F + [K_S]       > U+0910
+U+093E + [SHIFT K_W] > U+0949 c ;AWa
+U+093E + [K_S]       > U+094B
+U+093E + [SHIFT K_S] > U+094C
+U+0945 + [K_A]       > U+0901 c Wa
+U+0964 + [SHIFT K_1] > U+0965
+
+U+0943 + [K_EQUAL]   > U+0944 c 2022-09-26
+U+0949 + [K_A] > U+093E U+0901 c 2022-09-27 ;AWa
+U+0902 + [SHIFT K_W] > U+0901  c 2022-09-27 ;AaW
+U+0945 + [SHIFT K_A] > U+0901  c 2022-09-27
+any(colon) + [SHIFT K_3] > context U+003A c 2022-09-26
+
+c quotes
+U+2018 + [SHIFT K_6] > U+201C  c 2022-09-26
+U+2019 + [SHIFT K_7] > U+201D  c 2022-09-26
+
+c ZWJ and ZWNJ
++ [RALT K_BKQUOTE] > U+200C c ZWNJ
++ [SHIFT RALT K_BKQUOTE] > U+200D c ZWJ
+
+c add 2022-09-26
++ [RALT K_HYPHEN] > U+091E c ञ
++ [RALT K_EQUAL] > U+002B
++ [RALT K_B]     > U+0908
++ [RALT K_E]     > U+0947 U+0902
++ [RALT K_R]     > U+0924 U+094D U+0924
++ [RALT K_T]     > U+091C U+094D U+0930
++ [RALT K_Y]     > U+0926 U+094D U+0926 
++ [RALT K_I]     > U+092B
++ [RALT K_O]     > U+0935 U+094D U+0928
++ [RALT K_P]     > U+0936
++ [RALT K_LBRKT] > U+0916
++ [RALT K_RBRKT] > U+0926 U+094D U+0927
++ [RALT K_BKSLASH] > U+093D
++ [RALT K_A]     > U+0939 U+094D U+0923
++ [RALT K_H]     > U+0940 U+0902
++ [RALT K_J]     > U+0930 U+094D U+200D
++ [RALT K_K]     > U+094D U+092F
++ [RALT K_L]     > U+0938 U+094D U+0924 U+094D U+0930
++ [RALT K_COLON] > U+003B
++ [RALT K_QUOTE] > U+0936
++ [RALT K_X]     > U+0926 U+094D U+0930
++ [RALT K_M]     > U+090A
++ [RALT K_COMMA] > U+0901
++ [RALT K_PERIOD] > U+002E
++ [RALT K_SLASH]  > U+002F
++ [SHIFT RALT K_2] > U+0918
++ [SHIFT RALT K_6] > U+0939 U+094D U+092E
++ [SHIFT RALT K_HYPHEN] > U+091E U+094D
++ [SHIFT RALT K_EQUAL] > U+003D
++ [SHIFT RALT K_E] > U+0948 U+0902
++ [SHIFT RALT K_I] > U+092A U+094D U+0930
++ [SHIFT RALT K_O] > U+0935 U+094D U+0930
++ [SHIFT RALT K_LBRKT] > U+0915 U+094D U+0937
++ [SHIFT RALT K_RBRKT] > U+0926 U+094D U+092C
++ [SHIFT RALT K_BKSLASH] > U+0950
++ [SHIFT RALT K_F] > U+0925
++ [SHIFT RALT K_H] > U+091E U+094D U+091A c modified 4/11/2023
++ [SHIFT RALT K_J] > U+0936 U+094D
++ [SHIFT RALT K_K] > U+091C U+094D U+091E U+094D
++ [SHIFT RALT K_L] > U+0938 U+094D U+0930
++ [SHIFT RALT K_R] > U+0924 U+094D U+0924 U+094D
++ [SHIFT RALT K_COLON] > U+091E U+094D U+091C c U+0903 modified 4/11/2023
++ [SHIFT RALT K_QUOTE] > U+0937
++ [SHIFT RALT K_N] > U+0926 U+094D U+092E
+
+c Changed 2023-Apr-05
++ [SHIFT RALT K_3]      > U+0939 U+094D U+0928
++ [SHIFT RALT K_4]      > U+0939 U+094D U+092F
++ [SHIFT RALT K_9]      > U+0926 U+094D U+0917
++ [SHIFT RALT K_0]      > U+0021
++ [SHIFT RALT K_B]      > U+0908 U+0902
++ [RALT K_C]            > U+095C
++ [RALT K_D]            > U+0927
++ [SHIFT RALT K_D]      > U+0937 U+094D U+0920
++ [RALT K_F]            > U+092F U+094D c U+093F
++ [RALT K_G]            > U+0918 c U+0940 U+0930 U+094D
++ [SHIFT RALT K_G]      > U+0917 U+094D U+0930 c U+0940 U+0930 U+094D
++ [SHIFT RALT K_M]      > U+0921 U+094D U+0921 c U+095C
++ [RALT K_N]            > U+0923 c U+0926 U+094D U+092F
++ [RALT K_Q]            > U+092B U+094D
++ [SHIFT RALT K_Q]      > U+091D U+094D U+0930
++ [RALT K_S]            > U+092D
++ [SHIFT RALT K_S]      > U+0937 U+094D U+091F
++ [SHIFT RALT K_T]      > U+0924 U+094D U+0930 U+094D
++ [RALT K_U]            > U+095E
++ [SHIFT RALT K_U]      > U+0928 U+094D U+0928
++ [RALT K_V]            > U+091F U+094D
++ [SHIFT RALT K_V]      > U+091F U+094D U+091F
++ [RALT K_W]            > U+0944
++ [SHIFT RALT K_W]      > U+0960 c U+090B
++ [SHIFT RALT K_Y]      > U+0926 U+094D U+092D  c modified 4/11/2023
++ [RALT K_Z]            > U+094B c U+0947 U+0930 U+094D
++ [SHIFT RALT K_Z]      > U+094C c U+0948 U+0930 U+094D
++ [SHIFT RALT K_COMMA]  > U+0922 U+094D U+0922 c U+0919
++ [SHIFT RALT K_PERIOD] > U+091D U+094D
++ [SHIFT RALT K_SLASH]  > U+003F
+
+c useful for people who are used to the old typewriter format, however, they are not implemented because they aren't consistent with other consonants
+c U+093F                             + [K_D] > U+0915 U+093F c fd
+c U+093F U+092E U+094D U+200D        + [K_D] > U+092E U+094D U+200D U+0915 U+093F c fEd
+c U+0915 U+092E U+094D U+200D        + [K_D] > U+092E U+094D U+200D U+0915 U+093F c dEf
+c U+093F U+0928 U+094D U+200D U+0924 + [K_Z] > U+0928 U+094D U+200D U+0924 U+094D U+0930 U+093F  c fUrz

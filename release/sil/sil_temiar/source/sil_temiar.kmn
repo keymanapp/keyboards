@@ -1,0 +1,38 @@
+﻿c Simple Temiar Keyboard for Keyman.
+c This keyboard uses a simple set of key sequences
+c for typing Temiar, based on standard English
+c or Malay keyboard layouts.
+store(&VERSION) '10.0'
+store(&NAME) 'Temiar (SIL)'
+store(&COPYRIGHT) '© SIL Malaysia' 
+
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'sil_temiar.kvks'
+store(&LAYOUTFILE) 'sil_temiar.keyman-touch-layout'
+store(&MESSAGE) 'Developer: Jonathan G. Lublinkhof'
+store(&KEYBOARDVERSION) '2.0'
+
+begin Unicode > use(main)
+
+group(main) using keys
+"e" + "`" > "è"
+"E" + "`" > "È"
+"e" + "'" > "é"
+"E" + "'" > "É"
+'e' + '=' > 'ë'
+"E" + "=" > "Ë"
+"e" + "~" > "ẽ"
+"E" + "~" > "Ẽ"
+'i' + '`' > 'ì'
+"I" + "`" > "Ì"
+'i' + '~' > 'ĩ'
+'I' + '~' > 'Ĩ'
+'o' + '`' > 'ò'
+"O" + "`" > "Ò"
+'o' + '~' > 'õ'
+'O' + '~' > 'Õ'
++ "|" > "ꞌ"       c Glottal stop
+'A' + '~' > 'Ã'
+'a' + '~' > 'ã'
+'u' + '~' > 'ũ'
+'U' + '~' > 'Ũ'

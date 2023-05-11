@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 12.5 (26 Mar 2023)
+* Fix keyboard versions
+
 ## 12.4 (02 Feb 2022)
 * Associate sil_euro_latin keyboard with English
 

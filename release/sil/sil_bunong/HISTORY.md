@@ -1,6 +1,22 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
 
+1.5 (6 Apr 2023)
+-----------------
+
+* Changed rota on`»` to `» > › > »` available on all platforms
+* Changed rota on `«` to `« > ‹ > «` available on all platforms
+* Added a rota to `់` -- ់ >  ៈ available on all platforms
+* Added @ to the A key on the default layer of the desktop and tablet
+* Added * to the 8 key on the shift layer of the desktop and tablet
+* On phone layout:
+	* updated longpress of `«` and `»`
+	* moved `#` to the longpress of `@` and replaced it with `"`
+	* moved `<` and `>` to the longpress of `=`
+* Updated Help documentation on welcome page according to the changes above
+* Added Bunong and Khmer translation to and updated Help documentation online (sil_bunong.php) accordingly 
+
+
 1.4 (8 Feb 2022)
 -----------------
 
