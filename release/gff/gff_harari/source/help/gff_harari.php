@@ -6,8 +6,8 @@
   Create Date:      17 April 2023
 
 */
-  $pagename = 'አማርኛ (Harari) Keyboard Help';
-  $pagetitle = 'አማርኛ (Harari) Keyboard Help';
+  $pagename = 'ሐረሪ (Harari) Keyboard Help';
+  $pagetitle = 'ሐረሪ (Harari) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
@@ -44,7 +44,6 @@ code {
 <a style='margin-left:20px' href="#Examples">Examples</a><br/>
 <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
 <a style='margin-left:30px' target="_blank" href='HarariTyping-English.pdf'>Complete Typing Chart - English</a><br/>
-<a style='margin-left:30px' target="_blank" href='HarariTyping-Harari.pdf'>Complete Typing Chart - Harari</a><br/>
 <a href="#Troubleshooting">Troubleshooting</a><br/>
 <a href="#Resources">Further Resources</a><br/>
 <a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
