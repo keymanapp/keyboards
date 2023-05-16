@@ -1,11 +1,9 @@
-<html>
+<?php 
+$pagename = "Symbolic Logic";
+$pagetitle = "Symbolic Logic";
+$pagestyle = <<<END
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=unicode">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<title>Start Using Symbolic Logic</title>
-<style>
-<!--
+  <!--
  /* Font Definitions */
  @font-face
 	{font-family:"Cambria Math";
@@ -80,17 +78,14 @@ p.msochpdefault, li.msochpdefault, div.msochpdefault
 div.WordSection1
 	{page:WordSection1;}
 -->
-</style>
 
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width, initial-scale=1">
-</head>
+END;
 
-<body lang=EN-US>
+require_once('header.php')
+
+?>
 
 <div class=WordSection1>
-
-<h1><span lang=EN>Start Using Symbolic Logic</span></h1>
 
 <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
 
@@ -1400,8 +1395,3 @@ at it since.</p>
 <h1><span lang=EN style='font-size:1.0pt'>&nbsp;</span></h1>
 
 </div>
-
-<!-- Insert Keyboard Layout Images or HTML here -->
-</body>
-
-</html>
