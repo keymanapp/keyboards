@@ -1,6 +1,10 @@
 Old Hungarian Change History
 ====================
 
+1.7.2 (2023-05-17)
+-----------------
+* Adjust BKQUOTE, 1, 2, 3, 4, 5, 6, and RALT BKQUOTE, 1, 2, 3, 4, 5, 6, 7, 8, and 9 to follow caps lock
+
 1.7.1 (2023-05-06)
 -----------------
 * Resolve Old Hungarian numbers fault on shift layer in mobile devices
