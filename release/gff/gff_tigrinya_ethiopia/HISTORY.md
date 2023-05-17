@@ -1,5 +1,11 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+
+
+1.3.14 (2023-05-17)
+-----------------------
+* Fix for missing `.js` file in package definition.
+
 1.3.13 (2022-02-11)
 -----------------------
 * Fixed missing access to ዐ (<kbd>E</kbd><kbd>e</kbd>)
