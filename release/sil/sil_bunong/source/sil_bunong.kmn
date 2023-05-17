@@ -1,8 +1,8 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'Bunong ឞូន៝ង (SIL)'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© 2021 - 2022 SIL International'
-store(&KEYBOARDVERSION) '1.4'
+store(&COPYRIGHT) '© 2021 - 2023 SIL International'
+store(&KEYBOARDVERSION) '1.5'
 store(&BITMAP) 'sil_bunong.ico'
 store(&VISUALKEYBOARD) 'sil_bunong.kvks'
 store(&LAYOUTFILE) 'sil_bunong.keyman-touch-layout'
@@ -11,6 +11,8 @@ store(&KMW_EMBEDCSS) 'sil_bunong.css'
 begin Unicode > use(main)
 
 group(main) using keys
++ [SHIFT K_A] > '@'
++ [SHIFT K_8] > '*'
 + [SHIFT K_4] > '៛'
 + [SHIFT K_COMMA] > '<'
 + [SHIFT K_QUOTE] > '"'
@@ -24,14 +26,12 @@ group(main) using keys
 + [SHIFT K_N] > nul
 + [SHIFT K_X] > nul
 + [SHIFT K_Z] > nul
-+ [SHIFT K_A] > nul
 + [SHIFT K_D] > nul
 + [SHIFT K_F] > 'ឞ'
 + [SHIFT K_Y] > 'ួ'
 + [SHIFT K_L] > nul
 + [SHIFT K_RBRKT] > nul
 + [SHIFT K_P] > nul
-+ [SHIFT K_8] > nul
 + [SHIFT K_7] > nul
 + [SHIFT K_6] > nul
 + [SHIFT K_R] > nul
@@ -106,6 +106,7 @@ group(main) using keys
 + [K_L] > 'ល'
 + [K_K] > 'ក'
 + [K_SPACE] > U+200B
+
 U+200B + [K_SPACE] > U+0020
 U+0020 + [K_SPACE] > U+200B
 
@@ -130,19 +131,19 @@ U+0021 + [K_PERIOD]             > U+003F
 U+003F + [K_PERIOD]             > U+17D7
 U+17D7 + [K_PERIOD]             > U+17D4        
 
-c « > " > ' > «
-U+00AB + [K_BKQUOTE]            > U+0022
-U+0022 + [K_BKQUOTE]            > U+0027
-U+0027 + [K_BKQUOTE]            > U+00AB
-
-c » > " > ' > »
-U+00BB + [SHIFT K_BKQUOTE]      > U+0022
-U+0022 + [SHIFT K_BKQUOTE]      > U+0027
-U+0027 + [SHIFT K_BKQUOTE]      > U+00BB
-
 c " > ' > "
 U+0022 + [SHIFT K_QUOTE]        > U+0027        c press Shift + " twice to get a single quote
 U+0027 + [SHIFT K_QUOTE]        > U+0022        c press Shift + " again to get a double quote
+
+c « > ‹ > «  and » > › > » -- Mondolkiri font doesn't render these two pairs proportionately (April 6, 2023).
+U+00AB + [K_BKQUOTE]            > U+2039
+U+2039 + [K_BKQUOTE]            > U+00AB
+U+00BB + [SHIFT K_BKQUOTE]      > U+203A
+U+203A + [SHIFT K_BKQUOTE]      > U+00BB
+
+c ់ >  ៈ
+U+17CB + [K_QUOTE]              > U+17C8
+U+17C8 + [K_QUOTE]              > U+17CB
 
 c \ > / > | > \
 U+005C + [K_BKSLASH]            > U+002F

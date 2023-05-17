@@ -1,7 +1,13 @@
 <?php
 $pagename = 'Khamti (SIL)';
 $pagetitle = 'Start Using Khamti (SIL)';
-require_once('header.php');
+$pagestyle = <<<END
+    /* Font Definitions */
+@font-face
+ {font-family:NamKio-Regular;
+ panose-1:2 11 6 4 2 2 2 2 2 4;}
+END;
+ require_once('header.php');
 ?>
 
 <h1>The SIL Khamti Keyman Keyboard Package</h1>
@@ -19,12 +25,14 @@ an on screen keyboard which can be viewed by clicking on the Keyman icon
 and selecting the On Screen Keyboard menu item.
 </p>
 
+<div id='osk-container'>
+  <h3>Desktop Keyboard Layout</h3>
+  <div id='osk' data-states='default shift'></div>
+</div>
 
-<h2>Desktop Keyboard Layout</h2>
-<h3>Default (unshifted)</h3>
-<p><a href="khamti_unshifted.png"><img class="keyboard" src="khamti_unshifted.png" alt="Default (unshifted) state" /></a></p>
-
-<h3>Shift</h3>
-<p><a href="khamti_shifted.png"><img class="keyboard" src="khamti_shifted.png" alt="Shift state" /></a></p>
+<div id='osk-mobi-container'>
+  <h3>Mobile Keyboard Layout</h3>
+  <div id='osk-phone' data-states='default shift' />
+</div>
 
 <p>© 2019-2023 SIL International</p>
