@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -48,9 +48,9 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">GFF Ge'ez Keyboard</Name>
-    <Copyright URL="">© 2009-2022 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Name URL="">GFF Geʾez Keyboard</Name>
+    <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
   <Files>
@@ -102,14 +102,28 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>Geez-Manuscript-Zemen-COLR.ttf</Name>
+      <Description>Font Geʾez Manuscript Zemen Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>AbbaGarima-Regular.ttf</Name>
+      <Description>Font Abba Garima Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ግዕዝ (EMUFI)</Name>
       <ID>gff_geez_emufi</ID>
       <Version>1.0</Version>
+      <OSKFont>Geez-Manuscript-Zemen-COLR.ttf</OSKFont>
+      <DisplayFont>Geez-Manuscript-Zemen-COLR.ttf</DisplayFont>
       <Languages>
-        <Language ID="gez">Geez</Language>
+        <Language ID="gez">Geʾez</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -12,12 +12,12 @@ c
 c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-store(&Version) '10.0'
+store(&Version) '15.0'
 store(&KEYBOARDVERSION) '1.0'
 store(&NAME) 'ግዕዝ (EMUFI)'
 c  store(&EthnologueCode) 'gez'
-store(&COPYRIGHT) '© 2022 Ge' U+0027 'ez Frontier Foundation'
-store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
+store(&Message) 'This is a Geʾez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_G]'
 store(&BITMAP) 'gff_geez_emufi.ico'
@@ -146,8 +146,10 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   store(eightKeys) '12345678'[K_TAB]
   store(eightKeys፡index) ' 1  2  3  4  5  6  7  8'
   store(nineKeys) '123456789'[K_TAB]
+  store(nineKeys፡index) ' 1  2  3  4  5  6  7  8  9'  
   store(nineKeys፡index፡punct) ' 1 2 3 4 5 6 7 8 9'
   store(tenKeys) '1234567890'[K_TAB]
+  store(tenKeys፡index) ' 1  2  3  4  5  6  7  8  9  0'
   store(tenKeys፡index፡punct) ' 1 2 3 4 5 6 7 8 9 0'
 
   store(deret፡menu) '[①|②|③|④|⑤]'
@@ -804,7 +806,7 @@ c
 '᎖' + [K_TAB] > outs(chiret፡menu)
     outs(chiret፡menu) + any(sevenKeys) > use(chiret፡group)
 '᎐' + [K_TAB] > outs(yizet፡menu)
-    outs(yizet፡menu) + any(threeKeys) > use(yizet፡group)
+    outs(yizet፡menu) + any(nineKeys) > use(yizet፡group)
 '᎓' + [K_TAB] > outs(hasirRikrik፡menu)
     outs(hasirRikrik፡menu) + any(sevenKeys) > use(hasirRikrik፡group)
 '᎒' + [K_TAB] > outs(rikrik፡menu)
@@ -1186,7 +1188,7 @@ group(Semicolon፡subThree፡group) using keys
 c ---------------------Begin ዜማ Group--------------------------------------------------------
 
 group(ዜማ፡group) using keys
-    + any(tenKeys፡index፡punct) > index(ዜማ፡menu,1)
+    + any(tenKeys፡index) > index(ዜማ፡menu,1)
     + [K_TAB] > '_'
 
 group(deret፡group) using keys
@@ -1226,7 +1228,7 @@ group(chiret፡group) using keys
 c    nomatch > use(main)
 
 group(yizet፡group) using keys
-    + any(threeKeys፡index) > Index(yizet፡menu,1)
+    + any(nineKeys፡index) > Index(yizet፡menu,1)
 c    nomatch > use(main)
 
 group(hasirRikrik፡group) using keys
