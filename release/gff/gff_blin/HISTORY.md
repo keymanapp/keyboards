@@ -1,5 +1,8 @@
 # ብሊን (Blin) Change History
 
+## 2023-05-23 1.5.2
+* Layer switch fixes for 4 mobile keys, and 2 tablet keys.
+
 ## 2023-05-07 1.5.1
 * Refresh to Waldba fonts only. Font dimensions are synched with Abyssinica.
 
