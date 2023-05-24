@@ -3,7 +3,7 @@
 
 Copyright © 2023 Geʾez Frontier Foundation, SIL International
 
-Version 1.0
+Version 1.0.1
 
 This is an Harari (har, ሐረሪ) language mnemonic input method.  It requires a font supporting
 Ethiopic script under the Unicode 14 standard.
