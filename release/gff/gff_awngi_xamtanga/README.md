@@ -1,7 +1,7 @@
 # አዊ & ኻምጣጘ (Awngi & Xamtanga) Keyboard
 
 
-Copyright © 2023 Geʾez Frontier Foundation, SIL International
+Copyright © 2023 Geʾez Frontier Foundation
 
 Version 1.0
 
