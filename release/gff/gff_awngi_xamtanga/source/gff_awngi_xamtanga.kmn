@@ -16,7 +16,7 @@ store(&Version) '15.0'
 store(&KEYBOARDVERSION) '1.0'
 store(&Name) 'አዊ & ኻምጣጘ (Awngi & Xamtanga)'    
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
-store(&Message) 'This is an Awngi & Xamtanga language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 14 standard.'
+store(&MESSAGE) 'This is an Awngi & Xamtanga language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_K]'
 store(&BITMAP) 'gff_awngi_xamtanga.ico'
@@ -57,10 +57,10 @@ c ---------------------End Maps of Syllabic Forms-------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(loneVowelKeys)  [T_ግዕዝ]'aAuUiIeEoO'[T_ኃምስ]
-  store(loneVowelEthio) 'እኣዐኡዑኢዒእዕኦዖኤ'
+  store(loneVowelEthio) 'እአዐኡዑኢዒእዕኦዖኤ'
 c  store(loneVowelKeys)   'aAuUiIeEoO'
 c  store(loneVowelEthio)  'ኣዐኡኡኢኢእእኦኦ'
-  store(composableVowel) 'ኣኢዐዒ'
+  store(composableVowel) 'አኢዐዒ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -273,7 +273,7 @@ c Alef-A Vowels as Vowels
 c  any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
 
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
-  'ኣ' + any(ራብዕ-key) > 'አ'
+  'አ' + any(ራብዕ-key) > 'ኣ'
 
   'ዐ' + any(ግዕዝ-key) > 'ዕ'
   'ዐ' + any(ካዕብ-key) > 'ዑ'

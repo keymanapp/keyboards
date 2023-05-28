@@ -5,8 +5,8 @@ Copyright © 2023 Geʾez Frontier Foundation
 
 Version 1.0
 
-This is a Awngi & Xamtanga (አዊ & ኻምጣጘ, ISO-639-3 awn & xan) language mnemonic input method.  It requires a font
-supporting Ethiopic script under the Unicode 14 standard.
+This is an Awngi & Xamtanga (አዊ & ኻምጣጘ, ISO-639-3 awn & xan) language mnemonic input method.  It requires a font
+supporting Ethiopic script under the Unicode 4.1 standard.
 
 Links
 -----
