@@ -1,6 +1,8 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
-
+2.0 (2023-05-28)
+----------------
+* 
 
 1.3.14 (2023-05-17)
 -----------------------
