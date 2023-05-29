@@ -57,10 +57,8 @@ c ---------------------End Maps of Syllabic Forms-------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(loneVowelKeys)  [T_ግዕዝ]'aAuUiIeEoO'[T_ኃምስ]
-  store(loneVowelEthio) 'እአዐኡዑኢዒእዕኦዖኤ'
-c  store(loneVowelKeys)   'aAuUiIeEoO'
-c  store(loneVowelEthio)  'ኣዐኡኡኢኢእእኦኦ'
-  store(composableVowel) 'አኢዐዒ'
+  store(loneVowelEthio) 'እኣዐኡዑኢዒእዕኦዖኤ'
+  store(composableVowel) 'ኣኢዐዒ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -206,7 +204,8 @@ c
   any(ካዕብ፡ልዩ) +  [T_ኃምስ] > index(ዘመደ፡ኃምስ,1)
   any(ካዕብ፡ልዩ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
-  
+
+  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)  
   if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
@@ -225,9 +224,9 @@ c
   if( &layer = "ኀ-extra" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
   if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2) 
   if( &layer = "ኘ-extra" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
-  if( &layer = "default" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
-  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
-  if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
+  if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
+  if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2)
   if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
   if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
@@ -275,7 +274,7 @@ c Alef-A Vowels as Vowels
 c  any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
 
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
-  'አ' + any(ራብዕ-key) > 'ኣ'
+  'ኣ' + any(ራብዕ-key) > 'አ'
 
   'ዐ' + any(ግዕዝ-key) > 'ዕ'
   'ዐ' + any(ካዕብ-key) > 'ዑ'
