@@ -1,5 +1,15 @@
 Change History
 =======================
+6.0.8
+-----------------
+* More diaeresis and style updates.
+* Removing NOCAPS from touch
+* Revert https://github.com/keymanapp/keyboards/commit/8e0c7a4d0bc82e06ae68fb6f00122fa24b32230a in favor of CasedKeys
+* Revert Latn in Language codes where this is the default.
+
+6.0.6
+-----------------
+* Updates related to https://github.com/keymanapp/keyman/issues/2241 and diaeresis
 
 6.0.5 (2022-May 12)
 -------------------

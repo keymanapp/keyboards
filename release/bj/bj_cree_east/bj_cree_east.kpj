@@ -4,6 +4,8 @@
     <BuildPath>$PROJECTPATH\build</BuildPath>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
     <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>False</CheckFilenameConventions>
+    <ProjectType>keyboard</ProjectType>
   </Options>
   <Files>
     <File>
@@ -14,19 +16,18 @@
       <FileType>.kps</FileType>
       <Details>
         <Name>BJCreeUNI (east)</Name>
-        <Copyright>Copyright © 2016-2019 Bill Jancewicz NDC/SIL</Copyright>
+        <Copyright>Copyright © 2016-2022 Bill Jancewicz NDC/SIL</Copyright>
       </Details>
     </File>
     <File>
-      <ID>id_c332482a9e0e1760ebed03761fc7cb94</ID>
+      <ID>id_1e53b493ffcaa14168fe5402d41d18d2</ID>
       <Filename>bj_cree_east.kmn</Filename>
       <Filepath>source\bj_cree_east.kmn</Filepath>
-      <FileVersion>9.0.4</FileVersion>
+      <FileVersion>9.1</FileVersion>
       <FileType>.kmn</FileType>
       <Details>
         <Name>BJCreeUNI (east)</Name>
-        <Copyright>Copyright (c) 2016-2019 Bill Jancewicz NDC/SIL</Copyright>
-        <Message>This keyboard may be freely used and redistributed</Message>
+        <Copyright>Copyright (c) Bill Jancewicz NDC/SIL</Copyright>
       </Details>
     </File>
     <File>
@@ -35,7 +36,7 @@
       <Filepath>source\bj_cree_east.ico</Filepath>
       <FileVersion></FileVersion>
       <FileType>.ico</FileType>
-      <ParentFileID>id_c332482a9e0e1760ebed03761fc7cb94</ParentFileID>
+      <ParentFileID>id_1e53b493ffcaa14168fe5402d41d18d2</ParentFileID>
     </File>
     <File>
       <ID>id_35da2410cbab4e3ca534ea0d970278a1</ID>
@@ -54,14 +55,6 @@
       <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
     </File>
     <File>
-      <ID>id_dc9996031768e1e28a20502bd3171022</ID>
-      <Filename>bj_cree_east.js</Filename>
-      <Filepath>source\..\build\bj_cree_east.js</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.js</FileType>
-      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
-    </File>
-    <File>
       <ID>id_724e5b4c63f10bc0abf7077f7c3172fc</ID>
       <Filename>welcome.htm</Filename>
       <Filepath>source\welcome\welcome.htm</Filepath>
@@ -70,27 +63,51 @@
       <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
     </File>
     <File>
-      <ID>id_cec20639572ad7e72d47e38c2a72a73a</ID>
-      <Filename>bjcrus.ttf</Filename>
-      <Filepath>source\bjcrus.ttf</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.ttf</FileType>
-      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
-    </File>
-    <File>
-      <ID>id_b073fcaf7e0bc62289fd20e015291b34</ID>
-      <Filename>bjcrusb.ttf</Filename>
-      <Filepath>source\bjcrusb.ttf</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.ttf</FileType>
-      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
-    </File>
-    <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
       <Filename>readme.htm</Filename>
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
+      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
+    </File>
+    <File>
+      <ID>id_4cf401c0bf8ed54b6ec8e5c32e66a318</ID>
+      <Filename>options.htm</Filename>
+      <Filepath>source\options.htm</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.htm</FileType>
+      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
+    </File>
+    <File>
+      <ID>id_dab9851611fee260fc1f2160e5c923f7</ID>
+      <Filename>bjcrus.ttf</Filename>
+      <Filepath>source\..\..\..\shared\fonts\cree\bjcrus.ttf</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ttf</FileType>
+      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
+    </File>
+    <File>
+      <ID>id_55a02626501fc7b3ba2fa2a4a8ca682d</ID>
+      <Filename>bjcrusb.ttf</Filename>
+      <Filepath>source\..\..\..\shared\fonts\cree\bjcrusb.ttf</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ttf</FileType>
+      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
+    </File>
+    <File>
+      <ID>id_92a795276850a771ae5543af1711e34d</ID>
+      <Filename>README.txt</Filename>
+      <Filepath>source\..\..\..\shared\fonts\cree\README.txt</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.txt</FileType>
+      <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
+    </File>
+    <File>
+      <ID>id_dc9996031768e1e28a20502bd3171022</ID>
+      <Filename>bj_cree_east.js</Filename>
+      <Filepath>source\..\build\bj_cree_east.js</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.js</FileType>
       <ParentFileID>id_def1efc039ca1847511332fa19bb1d5c</ParentFileID>
     </File>
   </Files>

@@ -2,8 +2,8 @@ Keyboard Data
 -------------
 
 * Name:           Boonkit
-* Copyright:      2008-2018(C) SIL International
-* Version:        0.6.4
+* Copyright:      2008-2022(C) SIL International
+* Version:        0.6.5
 * BCP-47 codes:   nod-Lana
 
 Description
@@ -19,4 +19,5 @@ Supported Platforms
 
  * Windows
  * Macosx
+ * Linux
  * Web

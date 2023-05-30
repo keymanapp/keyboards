@@ -6,16 +6,19 @@
 ?>
 
 <p style='margin: 16px 0 0 0'>
-A font must be installed to support this keyboard. Windows includes a number of fonts which support the <b>Armenian</b> script.</p>
-<p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
+  A font must be installed to support this keyboard. Windows includes a number of fonts which support the <b>Armenian</b> script.
+</p>
+<p>
+  If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
 <p>
-Visit <a href="https://github.com/dotland/mnemonic-kb-hy/blob/main/README.md">GitHub.com/dotland/mnemonic-kb-hy</a> for extensive documentation on using the keyboard.
+  Visit <a href="https://github.com/dotland/mnemonic-kb-hy/blob/main/README.md">GitHub.com/dotland/mnemonic-kb-hy</a> for extensive documentation on using the keyboard.
 </p>
 
-<p>This keyboard uses eighteen dead keys, such as: <kbd class="key">T</kbd><kbd class="key">t</kbd> <kbd class="key">S</kbd><kbd class="key">s</kbd> <kbd class="key">D</kbd><kbd class="key">d</kbd> <kbd class="key">G</kbd><kbd class="key">g</kbd> <kbd class="key">K</kbd><kbd class="key">k</kbd> <kbd class="key">Z</kbd><kbd class="key">z</kbd> <kbd class="key">C</kbd><kbd class="key">c</kbd> <kbd class="key">'</kbd><kbd class="key">"</kbd> <kbd class="key">\</kbd> and <kbd class="key">/</kbd>. Press one of these keys and then another key to produce the desired output. For instance, press <kbd class="key">T</kbd> and then the <kbd class="key">Space</kbd> to get Թ; press <kbd class="key">T</kbd> and then <kbd class="key">s</kbd> to get Ծ etc. Please see the tables below for a complete combination.</p>
-
+<p>
+  This keyboard uses eighteen dead keys, such as: <kbd class="key">T</kbd><kbd class="key">t</kbd> <kbd class="key">S</kbd><kbd class="key">s</kbd> <kbd class="key">D</kbd><kbd class="key">d</kbd> <kbd class="key">G</kbd><kbd class="key">g</kbd> <kbd class="key">K</kbd><kbd class="key">k</kbd> <kbd class="key">Z</kbd><kbd class="key">z</kbd> <kbd class="key">C</kbd><kbd class="key">c</kbd> <kbd class="key">'</kbd><kbd class="key">"</kbd> <kbd class="key">\</kbd> and <kbd class="key">/</kbd>, where <kbd class="key">T</kbd> is <kbd class="key">Shift</kbd>+<kbd class="key">t</kbd> or just <kbd class="key">t</kbd> with <kbd class="key">Caps Lock</kbd> turned on. Press one of these keys and then another key to produce the desired output. For instance, press <kbd class="key">T</kbd> and then the <kbd class="key">Space</kbd> to get Թ; press <kbd class="key">T</kbd> and then <kbd class="key">s</kbd> to get Ծ etc. Please see the tables below for a complete combination.
+</p>
 
 <table>
   <thead><tr><th></th><th><kbd class="key">Space</kbd></th><th><kbd class="key">s</kbd></th><th><kbd class="key">S</kbd></th></tr></thead>
@@ -286,8 +289,7 @@ The following figures show the Armenian Mnemonic keyboard layout in various modi
 The following figures show the Armenian Mnemonic keyboard layout for touch devices in various states.
 </p>
 
-<div id='osk-phone' data-states='default shift capslock numeric numeric2'>
+<div id='osk-phone' data-states='default shift caps numeric numeric2'>
 </div>
 
 <p>© <a href="https://github.com/dotland">Dotland</a></p>
-

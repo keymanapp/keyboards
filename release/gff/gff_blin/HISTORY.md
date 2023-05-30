@@ -1,7 +1,18 @@
 # ብሊን (Blin) Change History
 
+## 2023-05-23 1.5.2
+* Layer switch fixes for 4 mobile keys, and 2 tablet keys.
+
+## 2023-05-07 1.5.1
+* Refresh to Waldba fonts only. Font dimensions are synched with Abyssinica.
+
+## 2023-04-25 1.5
+* Introduction of mobile and tablet keyboards.
+* Support for Ethiopic combining marks.
+* Context aware period and comma input.
+
 ## 2020-06-10 1.4.2
-* Updated htm files for readability on Linux
+* Updated htm files for readability on Linux.
 
 ## 2020-01-29 1.4.1
 * Correction to syllabary table.

@@ -6,7 +6,7 @@ This file provides detailed information on the Awami Nastaliq font software.
 This information should be distributed along with the Awami Nastaliq font 
 and any derivative works.
 
-Basic Font Information
+## Basic Font Information
 ----------------------
 
 Awami Nastaliq is a Nastaliq-style Arabic script font supporting a wide variety of 
@@ -24,25 +24,60 @@ This font makes use of state-of-the-art font technologies to support complex
 typographic issues. Font smarts have been implemented using Graphite only. We have 
 no current plans to support OpenType.
 
-One font from this typeface family is included in this release:
-
-     * Awami Nastaliq Regular
+Five fonts from this typeface family are included in this release:
+      
+* Awami Nastaliq Regular
+* Awami Nastaliq Medium
+* Awami Nastaliq SemiBold
+* Awami Nastaliq Bold
+* Awami Nastaliq ExtraBold
 
 For detailed documentation see the contents of the 'documentation' folder.
 
 Awami Nastaliq is a trademark of SIL International.
 
-ChangeLog
+## ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-2021-Apr-29 (SIL WSTech team) Awami Nastaliq Version 2.200
+### 2023-Jan-30 (SIL WSTech team) Awami Nastaliq Version 3.100
+
+#### Improved
+- Fixed a bug that manifested as disappearing glyphs
+- Fixed some minor kerning/collision/spacing bugs
+
+### 2022-Sep-20 (SIL WSTech team) Awami Nastaliq Version 3.000
+
+#### New
+
+- Added 4 weights -- Medium, SemiBold, Bold, and ExtraBold
+- Added three characters:
+	- U+08C8 ARABIC LETTER GRAF
+	- U+069B ARABIC LETTER SEEN WITH THREE DOTS BELOW
+	- U+069C ARABIC LETTER SEEN WITH THREE DOTS BELOW AND THREE DOTS ABOVE
+
+#### Improved
+- Modified rules for forming the Allah ligature
+- Fixed a bug affecting the right margin
+- Fixed a problem with the behavior of the yeh with hamza
+- Added a short version of the final sad
+- Various improvements to beh forms
+- Collision fixes
+- Changed the default value of the short forms feature to use all short forms
+- Added a special form of khah+zabar+meem+jeem+heh-doachashmee to avoid excessive height
+- Flattened a couple of special ligatures
+- Changed dopesh to use 69 form consistently
+
+#### Removed
+- Removed "Small nuqtas" feature
+
+### 2021-Apr-29 (SIL WSTech team) Awami Nastaliq Version 2.200
 - Improved spacing and kerning involving punctuation
 - Corrected nuqtas in dul character
 - Fixed collision bug that manifested itself in Paratext
 - Fixed other obscure bugs
 
-2021-Jan-18 (SIL WSTech team) Awami Nastaliq Version 2.100
+### 2021-Jan-18 (SIL WSTech team) Awami Nastaliq Version 2.100
 - Added four honorific ligatures
 	- U+FDFA ARABIC LIGATURE SALLALLAHOU ALAYHEWASALLAM
 	- U+FDFB ARABIC LIGATURE JALLAJALALOUHOU
@@ -61,7 +96,7 @@ ChangeLog
 - Improved kerning for rehs and other final forms
 - Improved connections with medial/final fehs
 
-2019-Jun-19 (SIL WSTech team) Awami Nastaliq Version 2.000
+### 2019-Jun-19 (SIL WSTech team) Awami Nastaliq Version 2.000
 - Ten new characters - U+06C8, U+06CA, U+06CB, U+06CF, U+077E, U+077F, U+0695, U+06A4, U+08C7, U+221A
 - Adjust behavior of nuqtas over sequences of beh/teh/theh/peh/etc.
 - Changed shape of beh+seen and beh+sad before sad, tah, ain, feh, qaf, and final noon.
@@ -81,10 +116,10 @@ ChangeLog
 - Adjusted design of U+06BA (noon ghunna) to match Unicode recommendations
 - Tweaked glyph shapes and sizes
 
-2018-Apr-24 (SIL NRSI team) Awami Nastaliq Version 1.101
+### 2018-Apr-24 (SIL NRSI team) Awami Nastaliq Version 1.101
 - Fixed bug in positioning of final reh
 
-2018-Apr-03 (SIL NRSI team) Awami Nastaliq Version 1.100
+### 2018-Apr-03 (SIL NRSI team) Awami Nastaliq Version 1.100
 - Added characters: U+0604, U+0609, U+060A, U+060B, U+061C, U+0649, U+0659,
   U+066E, U+066F, U+0671, U+068E, U+069E, U+06A1, U+06B7, U+06C9, U+06E0,
   U+06E1, U+06EA, U+06ED, U+0763, U+0772, U+0773, U+0774, U+0775, U+0776,
@@ -103,7 +138,7 @@ ChangeLog
 - Fixed bug in noon-ring implementation
 - Fixed positioning problems in end of ayah
 
-2017-Jul-17 (SIL NRSI team) Awami Nastaliq Version 1.000
+### 2017-Jul-17 (SIL NRSI team) Awami Nastaliq Version 1.000
 - Adjusted spacing issues between some characters
 - Adjusted anchors on many glyphs
 - Adjusted digit kerning
@@ -114,7 +149,7 @@ ChangeLog
 - Removed U+FEFB (lam/alef ligature)
 - Tweaked positioning of some character combinations
 
-2017-Apr-11 (SIL NRSI team) Awami Nastaliq Beta3
+### 2017-Apr-11 (SIL NRSI team) Awami Nastaliq Beta3
 - Changed angle of vertical strokes on alef, lam, kaf, gaf, and tah forms
 - Increased the line height by 20%
 - Changed shapes of a number of letter forms: tah, bariyeh, feh (head shape), 
@@ -131,7 +166,7 @@ ChangeLog
 - Fixed bugs in hamza feature
 - Cleaned up positions of diacritics
 
-2016-Dec-7 (SIL NRSI team) Awami Nastaliq Beta2
+### 2016-Dec-7 (SIL NRSI team) Awami Nastaliq Beta2
 - Increased font size by 15%
 - Redesigned seen forms
 - Redesigned nuqtas, made a them little smaller and closer together
@@ -150,21 +185,21 @@ ChangeLog
 - Fixed shape of Arabic 4 and 5
 - Adjusted various letter shapes
 
-2016-Aug-1 (SIL NRSI team) Awami Nastaliq Beta1
+### 2016-Aug-1 (SIL NRSI team) Awami Nastaliq Beta1
 - Beta1 release based on Alpha2 feedback
 - Additional characters and features added
 
-2016-May-16 (SIL NRSI team) Awami Nastaliq Alpha2
+### 2016-May-16 (SIL NRSI team) Awami Nastaliq Alpha2
 - Alpha2 release based on Alpha1 feedback
 - Additional characters and features added
 
-2015-Dec-04 (SIL NRSI team) Awami Nastaliq Alpha1
+### 2015-Dec-04 (SIL NRSI team) Awami Nastaliq Alpha1
 - Preliminary design font for initial feedback
 
-2014-Sep-10 (SIL NRSI team) Awami Nastaliq Preliminary work
+### 2014-Sep-10 (SIL NRSI team) Awami Nastaliq Preliminary work
 - Preliminary design of isolate characters
 
-Information for Contributors
+## Information for Contributors
 ----------------------------
 We welcome contributions to this font project, such as new glyphs, enhanced 
 smart font code, or bug fixes. The best way to begin the process is to file 
@@ -181,7 +216,7 @@ your contribution. To read more about this requirement and find out how to
 submit the required form, please visit the CLA information page
 (https://software.sil.org/fontcla).
 
-Acknowledgements
+## Acknowledgements
 ----------------
 (Here is where contributors can be acknowledged. If you make modifications
 be sure to add your name (N), email (E), web-address (W) and description

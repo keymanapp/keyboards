@@ -1,14 +1,14 @@
 Malar Malayalam Keyboard
 ==============
 
-2019-2021 © Ramesh Kunnappully
+2019-2023 © [Ramesh Kunnappully](mailto:ramesh1@protonmail.com)
 
-Version 1.4
+Version 1.6
 
 Description
 -----------
 
-**Malar Malayalam** Keyboard is a transliteration based Malayalam input method. This keyboard supports all Malayalam characters encoded up to the Unicode Standard-Version 13.0. Malayalam Unicode fonts under the SIL Open Font License are available at [https://smc.org.in/fonts/](https://smc.org.in/fonts/) and [http://rachana.org.in/](http://rachana.org.in/).
+**Malar Malayalam** Keyboard is a transliteration based Malayalam input method. This keyboard supports all Malayalam characters encoded as per the Unicode Standard, Version 15.0.
 
 Links
 -----

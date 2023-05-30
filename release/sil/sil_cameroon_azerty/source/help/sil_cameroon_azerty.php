@@ -28425,7 +28425,7 @@ select the hotkey name, and either change the hotkey or turn it off.
 </ul>
 <p xml:lang="en">The Cameroon Keyboard is developed by SIL Cameroon. For more  information about the Cameroon Keyboard or Language Technology in Cameroon, see  <a href="https://langtechcameroon.info">https://langtechcameroon.info</a>
 </p>
-<p xml:lang="en" style="text-align: center; font-style: italic;">Copyright 2018-2022 SIL  Cameroon</p>
+<p xml:lang="en" style="text-align: center; font-style: italic;">Copyright 2018-2022 SIL Cameroon</p>
 </div>
 </div>
 </div>

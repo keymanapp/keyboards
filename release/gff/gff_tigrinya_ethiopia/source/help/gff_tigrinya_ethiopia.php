@@ -216,6 +216,24 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 </table>
 </div>
 
+<h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
+
+<div style="margin-left: 1em;">
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using “CTRL + . ”. For example:</p>
+
+<table style="margin-top: 0;">
+<tr>
+  <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፟ (“abba”, “b” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+</tr>
+</table>
+
+
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
 
 <div style="margin-left: 1em;">
@@ -224,13 +242,20 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 <table class="punct" style="margin-top: 0;">
   <tr>
     <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
-    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th>
+    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th><th>&lt;</th><th>&gt;</th><th>&lt;&lt;</th><th>&gt;&gt;</th>
   </tr>
   <tr>
     <th>Punctuation</th>
-    <td>፡</td><td>።</td><td>፣</td><td>፥</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td>
+    <td>፡</td><td>።</td><td>፣</td><td>፥</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td><td>‹</td><td>›</td><td>«</td><td>»</td>
   </tr>
 </table>
+
+
+<p>Period, ‘.’ may also be used to enter ‘።’.  When a number follows ‘፣’ and ‘።’ they will change back to their Latin form automatically.  For example:</p>
+<dir>
+123፣456	⇒  123,456<br/>
+12።50	⇒  12.50
+</dir>
 
 <h3>Keyboard Punctuation</h3>
 <p>All regular punctuation on your keyboard remains available. Most punctuation can be typed
@@ -283,7 +308,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2020. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

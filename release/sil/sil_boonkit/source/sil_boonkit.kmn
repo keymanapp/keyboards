@@ -14,13 +14,14 @@ c SAD   0.6.1    7-Feb-2018     Moved to Github Keyman Repository
 c DLR   0.6.2   31-May-2018     Update BCP 47 code and switch to .kvks for onscreen keyboard
 c DLR   0.6.3   13-Jun-2018     minor edits to welcome and help files
 c WDG   0.6.4   18-Dec-2018     Rename .png images in help files and boonkitofl.ttf font
+c MJPH  0.6.5   07-Oct-2022     Change \ from ( to sakot action (same as `) keep `
 
 store(&VERSION) '9.0'
 store(&NAME) 'Boonkit Unicode'
 store(&VISUALKEYBOARD) 'sil_boonkit.kvks'
 store(&ETHNOLOGUECODE) 'NOD'
-store(&COPYRIGHT) '© SIL International 2018'
-store(&KEYBOARDVERSION) '0.6.4'
+store(&COPYRIGHT) '© 2018-2022 SIL International'
+store(&KEYBOARDVERSION) '0.6.5'
 store(&BITMAP) 'sil_boonkit.ico'
 
 begin Unicode > use(Main)
@@ -32,7 +33,7 @@ store(baseK) '!@#$%^&*()_+' \
              'SDGJKL:'  \
              "asdfhjkl;'"  \
              'CVBNM<>?|'  \
-             'zxvbnm,/\'
+             'zxvbnm,/'
 
 store(base) \
     U+1A53 U+1A81 U+1A82 U+1A83 U+1A84 U+1A6A U+1A58 U+1A85 U+1A86 U+1A87 U+1A88 U+1A89 \
@@ -42,7 +43,7 @@ store(base) \
            U+1A25 U+1A2D U+1A2B        U+1A6B U+1A47 U+1A46 U+1A2A \
     U+1A3C U+1A49 U+1A20 U+1A2F U+1A76 U+1A75 U+1A63 U+1A48 U+1A45 U+1A26 \
                   U+1A28 U+1A4C U+1A6C U+1A7A U+002F U+1A30 U+1A4A U+1A42 U+1A24 \
-    U+1A39 U+1A38 U+1A4B U+1A65 U+1A68 U+1A34 U+1A3E        U+1A3A U+0028
+    U+1A39 U+1A38 U+1A4B U+1A65 U+1A68 U+1A34 U+1A3E        U+1A3A
 
 store(medK) '}AHZX."'
 store(med)  U+1A45 U+1A3F U+1A2B U+1A36 U+1A3E U+1A38 U+1A26
@@ -54,6 +55,8 @@ store(hack)  U+1A64 U+1A63 U+1A90 U+1A91 U+1A92 U+1A93 U+1A94 U+1A95 U+1A96 U+1A
 
 store(dhackb) U+1A3B U+1A43
 store(dhack)  U+1A5B U+1A56
+
+store(hangk)  "\`"
 
 store(sbase) U+1A20 U+1A21        U+1A23        U+1A25 U+1A26 U+1A27 \
              U+1A28 U+1A29        U+1A2B U+1A2C U+1A2D U+1A2E U+1A2F \
@@ -72,12 +75,13 @@ group(Main) using keys
 any(tall) + 'k' > context U+1A64
 + any(medK) > U+1A60 index(med, 1)
 + any(baseK) > index(base, 1)
-any(hbase) + '`' > index(hack, 1)
-U+1A60 any(dhackb) + '`' > index(dhack, 2)
-U+1A48 U+1A60 U+1A48 + '`' > U+1A54
-U+1A60 any(sbase) + '`' > context
+any(hbase) + any(hangk) > index(hack, 1)
+U+1A60 any(dhackb) + any(hangk) > index(dhack, 2)
+U+1A48 U+1A60 U+1A48 + any(hangk) > U+1A54
+U+1A60 any(sbase) + any(hangk) > context
 U+1A60 any(sbase) + [K_BKSP] > nul
-any(sbase) + '`' > U+1A60 context
+any(sbase) + any(hangk) > U+1A60 context
 + any(preVK) > U+25CC index(preV, 1)
 U+25CC any(preV) + any(baseK) > index(base, 3) index(preV, 2)
 U+25CC any(preV) + [K_BKSP] > nul
+

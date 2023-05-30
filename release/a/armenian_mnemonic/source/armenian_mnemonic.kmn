@@ -2,8 +2,8 @@
 c with name "Armenian Mnemonic"
 store(&VERSION) '14.0'
 store(&NAME) 'Armenian Mnemonic'
-store(&COPYRIGHT) '© 2022 Dotland'
-store(&KEYBOARDVERSION) '1.0.7'
+store(&COPYRIGHT) '© Dotland'
+store(&KEYBOARDVERSION) '1.1.8'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'armenian_mnemonic.keyman-touch-layout'
 store(&BITMAP) 'armenian_mnemonic.ico'
@@ -1078,7 +1078,7 @@ dk(capital_co) any(co_base_keys) > index(capital_co_res, 2)
 
 c **********************        ␠      w       W       e       E       r       R       t             T               p       P       j       J       c             C               -       ,       .       <       >       /          o       O       [       ]
 store(apostrophe_base_keys)     U+0020  U+0582  U+0552  U+0565  U+0535  U+0580  U+0550  dk(small_to)  dk(capital_to)  U+0583  U+0553  U+057B  U+054B  dk(small_co)  dk(capital_co)  U+002D  U+002C  U+002E  U+003C  U+003E  dk(slash)  U+0585  U+0555  U+005B  U+005D
-c ---------------------- '      '       և       և       է       Է       ռ       Ռ       տ             Տ               պ       Պ       ջ       Ջ       ծ             Ծ               ֊       ՚       ·       ‹       ›       ՛          °       °       ‘       ’
+c ---------------------- '      '       և       և       է       Է       ռ       Ռ       տ             Տ               պ       Պ       ճ       Ճ       ծ             Ծ               ֊       ՚       ·       ‹       ›       ՛          °       °       ‘       ’
 store(apostrophe_res)           U+0027  U+0587  U+0587  U+0567  U+0537  U+057C  U+054C  U+057F        U+054F          U+057A  U+054A  U+0573  U+0543  U+056E        U+053E          U+058A  U+055A  U+00B7  U+2039  U+203A  U+055B     U+00B0  U+00B0  U+2018  U+2019
 
 dk(apostrophe) notany(apostrophe_base_keys) > U+0027 context(2)
@@ -1087,7 +1087,7 @@ dk(apostrophe) any(apostrophe_base_keys) > index(apostrophe_res, 2)
 
 c **********************        ␠      w       W       e       E       r       R       t             T               p       P       j       J       c             C               <       >       [       ]
 store(double_quote_base_keys)   U+0020  U+0582  U+0552  U+0565  U+0535  U+0580  U+0550  dk(small_to)  dk(capital_to)  U+0583  U+0553  U+057B  U+054B  dk(small_co)  dk(capital_co)  U+003C  U+003E  U+005B  U+005D
-c ---------------------- "      "       և       և       Է       Է       Ռ       Ռ       Տ             Տ               Պ       Պ       Ջ       Ջ       Ծ             Ծ               «       »       “       ”
+c ---------------------- "      "       և       և       Է       Է       Ռ       Ռ       Տ             Տ               Պ       Պ       Ճ       Ճ       Ծ             Ծ               «       »       “       ”
 store(double_quote_res)         U+0022  U+0587  U+0587  U+0537  U+0537  U+054C  U+054C  U+054F        U+054F          U+054A  U+054A  U+0543  U+0543  U+053E        U+053E          U+00AB  U+00BB  U+201C  U+201D
 
 dk(double_quote) notany(double_quote_base_keys) > U+0022 context(2)

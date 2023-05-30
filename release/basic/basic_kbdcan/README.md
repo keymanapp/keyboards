@@ -1,9 +1,7 @@
 Canadian Multilingual Standard Basic keyboard
 ==============
 
-© 2014-2019 SIL International
-
-Version 1.1
+© SIL International
 
 Description
 -----------

@@ -1,11 +1,11 @@
 ﻿<?php /*
   Name:             Keyboard_gff_amhamaric
-  Copyright:        Keyboard ©1997-2020 The Ge'ez Frontier Foundation 
+  Copyright:        Keyboard ©1997-2022 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    19 Jul 2021
+  Modified Date:    06 April 2023
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -27,8 +27,23 @@
 EXTRA;
   require_once('header.php');
 ?>
+<style type="text/css" media="screen">
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(175, 184, 193, 0.2);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+</style>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="kb.css"/>
+</head>
 
-<p style='margin:0px'>Keyboard &#169; 1997-2020. Ge'ez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard &#169; 1997-2022. Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -54,7 +69,7 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 <p class='keymanweb'>Most computers will automatically download a special font to display this keyboard correctly.  However, if the layout or the charts below do not display correctly, please read the <a target="_blank" href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 <p>
-<a href="#Related">Click here</a> to see keyboard layouts for other Ethiopic languages, like Awngi, Bench, Blin, Dizi, Ge'ez, Me'en, Mursi, Sebatbeit, Suri and Tigrigna.
+<a href="#Related">Click here</a> to see keyboard layouts for other Ethiopic languages, like Awngi, Bench, Blin, Dizi, Geʾez, Meʾen, Mursi, Sebatbeit, Suri and Tigrigna.
 </p>
 </div>
 
@@ -70,12 +85,79 @@ This keyboard is designed for use with the Amharic language of Ethiopia in Afric
 
 <div id='osk-phone-container'>
   <h2>Phone Keyboard Layout</h2>
-  <div id='osk-phone' data-states='default non-amharic punctuation punctuation-2'></div>
+<h3>Letters</h3>
+
+<p>
+When the GFF Amharic mobile keyboard starts, the key layout appears as shown in the following image.  Note the relationship between the letters of the middle row and top row:
+</p>
+
+<img src="images/gff_amharic-default-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>
+Tapping a key once, the modifier letters to the left (<code>አ</code>, <code>ኡ</code>, <code>ኢ</code>) and right  (<code>ኣ</code>, <code>ኤ</code>, <code>ኦ</code>) of the spacebar. For example, tapping <code>ግ</code> the modifiers change to <code>ገ</code>, <code>ጉ</code>, <code>ጊ</code>, <code>ጋ</code>, <code>ጌ</code>, <code>ጎ</code> .  If a modifier is tapped, ግ will be updated on screen.
+</p>
+
+<img src="images/gff_amharic-default-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>
+As an alternative, if preferred, holding a key down for a few moments (called a “longpress”) a popup menu appears where you can tap the letter desired.  The popup menu for <code>ግ</code> is shown below:
+</p>
+
+<img src="images/gff_amharic-default-4.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>
+The modifier keys will also have popups as applicable.  For example to enter the extended syllables for <code>ጐ</code>, <code>ጒ</code>, <code>ጓ</code>, <code>ጔ</code> and <code>ጕ</code> as shown:
+</p>
+
+<img src="images/gff_amharic-default-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+
+<h3>Punctuation</h3>
+
+<p>When typing letters, the <code>!</code> and <code>።</code> keys are available for entering the most common punctuation without shifting to another “layer”.  The following image shows the punctuation for a longpress of <code>!</code>:</p>
+
+<img src="images/gff_amharic-punctuation-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>The punctuation for a longpress of <code>።</code>:</p>
+
+<img src="images/gff_amharic-punctuation-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>For additional punctuation and numerals, tap the <code>123</code> key to shift to the next layer:</p>
+
+<img src="images/gff_amharic-punctuation-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Note that numerals on the punctuation layer use the long press feature to make Geʾez numerals available:</p>
+
+<img src="images/gff_amharic-numerals-1.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Tapping the <code>@</code> shifts to a 2nd layer to access all remaining punctuation:</p>
+
+<img src="images/gff_amharic-punctuation-4.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>A tap of the <code>፩</code> key will go to the final layer where Geʾez numbers and some less used, and non-Amharic letters, can be accessed.</p>
+
+<h3>Numerals</h3>
+
+<p>The last layer to shift to presents the Geʾez numbers, all Geʾez punctuation, letters of related languages, and a few lesser used letters that did not fit conveniently on the initial letters layer.</p>
+
+<p>Note the arrow button, <code>▶</code>, at the end of the row of Geʾez numerals, tapping it will slide the numerals to the remaining numbers that are orders of ten (e.g. ፳, ፴, ፵, etc.):</p>
+
+<img src="images/gff_amharic-numerals-2.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>After tapping the <code>▶</code> button, the Geʾez orders of ten appear as shown:</p>
+
+<img src="images/gff_amharic-numerals-3.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Tapping the <code>▶</code> button again slides to the western digits, a final tap will return to the initial Geʾez numerals.</p>
+
+<img src="images/gff_amharic-numerals-4.jpeg" style="border: 1px solid black;" width="100%"/>
+
+<p>Simply tap the <code>ሀለሐ</code> key to return to the starting letters layers.</p>
 </div>
 
 <div id='osk-tablet-container'>
   <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default non-amharic punctuation punctuation-2'></div>
+  <div id='osk-tablet' data-states='default amharic-extra punctuation'></div>
 </div>
 
 <p>Note: Longpress keys are not currently visible in this static documentation, and so some additional letters may be accessible through these longpress keys.</p>
@@ -148,14 +230,16 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="Related">
 <h3>Related Keyboard Layouts</h3>
 <p>Keyboard Layouts for other Ethiopic languages:</p>
-<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
+<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_harege_fidelat">Harege Fidelat (All Languages)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mdx_7">Dizi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Ge'ez</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mym_7">Me'en</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Geʾez</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_gurage">Gurage</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mym_7">Meʾen</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_muz_7">Mursi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_sgw_7">Sebatbeit</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_eritrea">Tigrigna (Eritrea)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_ethiopia">Tigrigna (Ethiopia)</a></p>
@@ -166,8 +250,8 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <p><a target="_blank" href="http://keymankeyboards.com/?id=455">Download the Amharic Keyboard for Keyman Desktop</a></p>
 <p><a target="_blank" href="http://www.omniglot.com/writing/amharic.htm">More on the Amharic Writing System at Omniglot.com</a><br/>
 <a target="_blank" href="http://en.wikipedia.org/wiki/Amharic_language">More on the Amharic Language at Wikipedia.org</a><br/></p>
-<p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a><br/>
-<a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a></p>
+<p><a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Geʾez Script at Omniglot.com</a><br/>
+<a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Geʾez Script at Wikipedia.org</a></p>
 </div>
 </div>
 
@@ -181,40 +265,17 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 
 </div>
 
-<div id="VersionHistory">
-<h3>Version History</h3>
-<dl>
-  <dt>Version 2.2, 19 Jul 2021</dt>
-  <dd>Extensions for Unicode 14</dd>
-  <dd>Addition of the Abyssinica SIL (Connected)</dd>
-  <dt>Version 2.1, 11 Apr 2021</dt>
-  <dd>CSS Colored keys.</dd>
-  <dt>Version 2.0, 1 Dec 2020</dt>
-  <dd>Addition of new style touch keyboard.</dd>
-  <dt>Version 1.9, 22 Jan 2020</dt>
-  <dd>Package migration to Abyssinica SIL 2.000</dd>
-  <dt>Version 1.8, 9 Mar 2019</dt>
-  <dd>Fix to recognize apostrophe after Salis forms.</dd>
-  <dt>Version 1.7, 1 Dec 2018</dt>
-  <dd>The apostrophe composition stopper added between lone vowels. </dd>
-  <dt>Version 1.6, 6 Sep 2018</dt>
-  <dd>The apostrophe composition stopper added after Ka'ib and Salis forms to support some special case words.</dd>
-  <dt>Version 1.5, 16 May 2018</dt>
-  <dd>Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.</dd>
-  <dt>Version 1.4, 7 May 2015</dt>
-  <dd>Added letters ኸ Ke ኹ Ku ኺ Ki ኻ Ka ኼ Kie ኽ K ኾ Ko to the touch layouts.</dd>
-</dl>
 
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-This keyboard was created by the Ge'ez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
+This keyboard was created by the Geʾez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2018 Ge'ez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2023 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>

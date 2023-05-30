@@ -12,7 +12,7 @@
   table.inputSequences tfoot .links a{  display: inline-block;  background: #1C6EA4;  color: #FFFFFF;  padding: 2px 8px;  border-radius: 5px;}
   table.inputSequences tr td.glyph {font-size: 1.7rem;}
   table+table {margin-top: 3.0rem;}
-  .important {text-align: center;font-size: 1.2rem;background-color: #D0E4F5;padding-top:1.2rem;padding-bottom:1.2rem;max-width:850px;margin-left:auto;margin-right: auto; }
+  .important {font-size: 1.2rem;background-color: #D0E4F5;padding-top:1.2rem;padding-bottom:1.2rem;max-width:850px; }
   .centered {text-align: center; }
   p.centered+table {margin-top:2.0rem; }
   .glyph.yi {font-family:'Microsoft Yi Baiti', 'Noto Sans Yi', NSimSun-18030, SimSun-18030, 'SIL Yi', Code2000; }
@@ -28,7 +28,13 @@ END;
 
 
 
-
+<p>Yi keyboard layout using pinyin input for typing standard Nuosu Yi characters and basic full-width punctuation. 
+Text generated will be in utf-8 encoding, and can be viewed with a font such as Nuosu SIL. Type a Nuosu Yi syllable 
+in roman letters, then SPACE to convert to the syllabary character. Punctuation is full-width - note 
+the keystrokes at the bottom of the list for typing things like book title brackets and left and right Chinese 
+quotation marks. For instance, typing two left angle brackets in a row will produce a Chinese left double book title 
+bracket. Typing a backslash produces a Chinese dunhao. Typing two left single quotes in a row produces a full-width 
+left double quotation mark.</p>
 
 <h2>Typing Yi syllabes</h2>
 <p class="important">To type a Yi syllable, type the pinyin romanization for that
@@ -1862,6 +1868,16 @@ syllable, followed by a space.</p>
       <td>Ideographic full stop (juhao)</td>
     </tr>
     <tr>
+      <td>..</td>
+      <td class="glyph yi">&#x00B7;</td>
+      <td>Middle separator dot</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td class="glyph yi">&#x2026;</td>
+      <td>Horizontal ellipsis</td>
+    </tr>
+    <tr>
       <td>\</td>
       <td class="glyph yi">&#x3001;</td>
       <td>Ideographic comma (dunhao)</td>
@@ -1912,9 +1928,15 @@ syllable, followed by a space.</p>
       <td>Right double quotation mark</td>
     </tr>
     <tr>
-      <td>..</td>
-      <td class="glyph yi">&#x2026;</td>
-      <td>Horizontal ellipsis</td>
+      <td>--</td>
+      <td class="glyph yi">&#xFF0D;</td>
+      <td>joining dash</td>
+    </tr>
+    <tr>
+      <td>---</td>
+      <td class="glyph yi">&#x2014;</td>
+      <td>word breaking dash</td>
     </tr>
   </tbody>
 </table>
+

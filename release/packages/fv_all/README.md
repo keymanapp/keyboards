@@ -1,9 +1,7 @@
 FirstVoices Keyboard Package
 ==================================================
 
-(c) 2015-2022 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 12.4
+(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
 
 __DESCRIPTION__
 
