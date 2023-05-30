@@ -346,11 +346,11 @@ any(Ethiopic) + '.' > index(Ethiopic,1) '።'
   '.' + '.' > '..'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
 
-      + ',' > '፡' 
-  '፡' + ',' > '፥'
+      + ',' > '፣' 
+  '፣' + ',' > '፥'
   '፥' + ',' > ','
-  ',' + ',' > '፡'  c makes circular
-  '፡' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  ',' + ',' > '፣'  c makes circular
+  '፣' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
 
       + ';' > '፣'
   '፣' + ';' > '፤'
