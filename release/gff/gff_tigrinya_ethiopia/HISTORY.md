@@ -1,6 +1,8 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
-
+2.0 (2023-05-28)
+----------------
+* Revision for dynamic layers as applied in other GFF keyboards.
 
 1.3.14 (2023-05-17)
 -----------------------
