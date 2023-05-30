@@ -111,6 +111,9 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ማይ</th><th>[mM]</th><td>መ</td><td>ሙ</td><td>ሚ</td><td>ማ</td><td>ሜ</td><td>ም</td><td>ሞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሟ</td><td>&nbsp;</td><th>m</th>
   </tr>
   <tr>
+    <th>ሠውት</th><th>ss</th><td>ሠ</td><td>ሡ</td><td>ሢ</td><td>ሣ</td><td>ሤ</td><td>ሥ</td><td>ሦ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሧ</td><td>&nbsp;</td><th>s</th>
+  </tr>
+  <tr>
     <th>ርእስ</th><th>[rR]</th><td>ረ</td><td>ሩ</td><td>ሪ</td><td>ራ</td><td>ሬ</td><td>ር</td><td>ሮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሯ</td><td>&nbsp;</td><th>r</th>
   </tr>
   <tr>
@@ -120,7 +123,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ሻ-ሳት</th><th>[xX]</th><td>ሸ</td><td>ሹ</td><td>ሺ</td><td>ሻ</td><td>ሼ</td><td>ሽ</td><td>ሾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሿ</td><td>&nbsp;</td><th>ʃ</th>
   </tr>
   <tr>
-    <th>ቃፍ</th><th>q</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>ቍ</td><td>ቊ</td><td>ቋ</td><td>ቌ</td><th>kʼ</th>
+    <th>ቃፍ</th><th>[qQ]</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>ቍ</td><td>ቊ</td><td>ቋ</td><td>ቌ</td><th>kʼ</th>
   </tr>
   <tr>
     <th>ቓ-ቃፍ</th><th>Q</th><td>ቐ</td><td>ቑ</td><td>ቒ</td><td>ቓ</td><td>ቔ</td><td>ቕ</td><td>ቖ</td><td>ቘ</td><td>ቚ</td><td>ቊ</td><td>ቛ</td><td>ቜ</td><th>ʁ</th>
@@ -138,13 +141,16 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ቻ-ታው</th><th>c</th><td>ቸ</td><td>ቹ</td><td>ቺ</td><td>ቻ</td><td>ቼ</td><td>ች</td><td>ቾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ቿ</td><td>&nbsp;</td><th>ʧ</th>
   </tr>
   <tr>
+    <th>ኀርም</th><th>hh</th><td>ኀ</td><td>ኁ</td><td>ኂ</td><td>ኃ</td><td>ኄ</td><td>ኅ</td><td>ኆ</td><td>ኈ</td><td>ኍ</td><td>ኊ</td><td>ኋ</td><td>ኌ</td><th>h</th>
+  </tr>
+  <tr>
     <th>ነሐስ</th><th>n</th><td>ነ</td><td>ኑ</td><td>ኒ</td><td>ና</td><td>ኔ</td><td>ን</td><td>ኖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ኗ</td><td>&nbsp;</td><th>n</th>
   </tr>
   <tr>
     <th>ኘ-ነሐስ</th><th>N</th><td>ኘ</td><td>ኙ</td><td>ኚ</td><td>ኛ</td><td>ኜ</td><td>ኝ</td><td>ኞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ኟ</td><td>&nbsp;</td><th>ɲ</th>
   </tr>
   <tr>
-    <th>አልፍ</th><th>&nbsp;</th><td>አ<br/>aa</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>a</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
+    <th>አልፍ</th><th>&nbsp;</th><td>አ<br/>a</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>aaaa</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
   </tr>
   <tr>
     <th>ካፍ</th><th>k</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>ኵ</td><td>ኲ</td><td>ኳ</td><td>ኴ</td><th>k</th>
@@ -156,8 +162,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ወዌ</th><th>[wW]</th><td>ወ</td><td>ዉ</td><td>ዊ</td><td>ዋ</td><td>ዌ</td><td>ው</td><td>ዎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>w</th>
   </tr>
   <tr>
-    <!-- <th>ዐይን</th><th>A</th><td>ዐ</td><td>ዑ</td><td>ዒ</td><td>ዓ</td><td>ዔ</td><td>ዕ</td><td>ዖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʕ</th> -->
-    <th>ዐይን</th><th>&nbsp;</th><td>ዐ<br/>A</td><td>ዑ<br/>Au / <br/>U</td><td>ዒ<br/>Ai / <br/>I</td><td>ዓ<br/>Aa</td><td>ዔ<br/>Aie / <br/>IE</td><td>ዕ<br/>Ae / <br/>E</td><td>ዖ<br/>Ao / <br/>O</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʕ</th>
+    <th>ዐይን</th><th>&nbsp;</th><td>ዐ<br/>aaa</td><td>ዑ<br/>uu</td><td>ዒ<br/>ii</td><td>ዓ<br/>aa</td><td>ዔ<br/>iie</td><td>ዕ<br/>ee</td><td>ዖ<br/>oo</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʕ</th>
   </tr>
   <tr>
     <th>ዘይ</th><th>z</th><td>ዘ</td><td>ዙ</td><td>ዚ</td><td>ዛ</td><td>ዜ</td><td>ዝ</td><td>ዞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ዟ</td><td>&nbsp;</td><th>z</th>
@@ -175,7 +180,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ጀ-ድንት</th><th>[jJ]</th><td>ጀ</td><td>ጁ</td><td>ጂ</td><td>ጃ</td><td>ጄ</td><td>ጅ</td><td>ጆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጇ</td><td>&nbsp;</td><th>ʤ</th>
   </tr>
   <tr>
-    <th>ገምል</th><th>g</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>ጕ</td><td>ጒ</td><td>ጓ</td><td>ጔ</td><th>g</th>
+    <th>ገምል</th><th>[gG]</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>ጕ</td><td>ጒ</td><td>ጓ</td><td>ጔ</td><th>g</th>
   </tr>
   <tr>
     <th>ጘ-ገምል</th><th>G</th><td>ጘ</td><td>ጙ</td><td>ጚ</td><td>ጛ</td><td>ጜ</td><td>ጝ</td><td>ጞ</td><td>ⶓ</td><td>ⶖ</td><td>ⶔ</td><td>ጟ</td><td>ⶕ</td><th>ŋ</th>
@@ -191,6 +196,9 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
   </tr>
   <tr>
     <th>ጸደይ</th><th>S</th><td>ጸ</td><td>ጹ</td><td>ጺ</td><td>ጻ</td><td>ጼ</td><td>ጽ</td><td>ጾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጿ</td><td>&nbsp;</td><th>sʼ</th>
+  </tr>
+  <tr>
+    <th>ፀጳ</th><th>SS</th><td>ፀ</td><td>ፁ</td><td>ፂ</td><td>ፃ</td><td>ፄ</td><td>ፅ</td><td>ፆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>sʼ</th>
   </tr>
   <tr>
     <th>አፍ</th><th>[fF]</th><td>ፈ</td><td>ፉ</td><td>ፊ</td><td>ፋ</td><td>ፌ</td><td>ፍ</td><td>ፎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ፏ</td><td>&nbsp;</td><th>f</th>
@@ -212,13 +220,13 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 
 <table style="margin-top: 0;">
 <tr>
-  <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
+  <td>አባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፞ (“abaa”, “a” is stressed)</td>
 </tr>
 <tr>
-	<td>ኣባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፟ (“abba”, “b” is stressed)</td>
+	<td>አባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፟ (“abba”, “b” is stressed)</td>
 </tr>
 <tr>
-	<td>ኣባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+	<td>አባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፝ (“abbaa”, “b” and “a” are stressed)</td>
 </tr>
 </table>
 
@@ -299,7 +307,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
