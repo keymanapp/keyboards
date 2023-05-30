@@ -1,8 +1,11 @@
-﻿c english_shavian_igc generated from template at 2019-12-28 20:24:21
+﻿c Version 1.2
+c Updated font to Inter Alia and simplified Unicode references.
+c 
+c english_shavian_igc generated from template at 2019-12-28 20:24:21
 c with name "Shavian IGC"
 store(&VERSION) '10.0'
-store(&COPYRIGHT) '2020-2021 Shavian.info'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '2020-2023 Shavian.info'
+store(&KEYBOARDVERSION) '1.2'
 store(&VISUALKEYBOARD) 'english_shavian_igc.kvks'
 store(&LAYOUTFILE) 'english_shavian_igc.keyman-touch-layout'
 store(&TARGETS) 'any'
@@ -132,7 +135,7 @@ group(main) using keys
 + [NCAPS K_HYPHEN] > '-'
 + [NCAPS K_PERIOD] > '.'
 + [NCAPS K_COMMA] > ','
-+ [NCAPS SHIFT K_BKQUOTE] > U+2E30
++ [NCAPS SHIFT K_BKQUOTE] > U+2E30 U+2060
 + [NCAPS SHIFT K_6] > '6'
 + [NCAPS SHIFT K_8] > '8'
 + [NCAPS SHIFT K_7] > '7'
