@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Tai Tham MY keyboard</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-  </style>
-</head>
-<body>
+<?php 
+  $pagename = 'Tai Tham MY Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
+
 <h1>Start Using Tai Tham MY Keyboard</h1>
 	<p style="text-align: justify;">
 	The Tai Tham MY keyboard was developed for typing Tai Lue language in Tai Tham script. The keyboard is available for computers as well as mobile devices.</p>
@@ -76,6 +71,3 @@
 	<p>For the PDF version, click <a href="tai_tham_my_keyboard_map_en.pdf">here</a>.</p>
 
 	<p>© 2023 Tai Lue Literacy Committee</p>
-
-</body>
-</html>

@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© Wyn Owen
+© 2023 Tai Lue Literacy Committee
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
