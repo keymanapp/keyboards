@@ -4,7 +4,7 @@
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
-table.flat { border-spacing: 0; margin: 0.5em 0 }
+table.flat { border-spacing: 0; margin: 0.5em 0 }B
 table.flat td, table.kb th { border: thin solid #666; text-align: center ; padding: 0.3em }
 table.flat { border-bottom: hidden }
 table.flat { empty-cells: show }
@@ -66,10 +66,12 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Blin (ብሊን, ISO-639-2: byn) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
-The Blin keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
+This is an Awngi & Xamtanga/Khimtanga (አዊ &amp; ኽምጣጘ, ISO-639-3 awn & xan) language mnemonic input method and should also be suitable for the related Qimant (ahq) language.  
+It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
+The keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
-The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
+The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.   The keyboard is believed to be suitable for the related
+Qimant (ahg) language as well.
 </p>
 
 <p>A more complete typing manual is provided as a PDF file with this distribution.</p>
@@ -78,7 +80,7 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 <h2><a id="status" name="status"></a>Typing Letter</h2>
 
 <p style="text-align: justify;">
-Only the letters used in the Blin language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
+Only the letters used in the Awngi &amp; Xamtanga language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
 download a keyboard for the language needed or the <em>language-neutral</em> keyboard that supports composition of all Ethiopic symbols found in Unicode 4.1.
 </p>
 
