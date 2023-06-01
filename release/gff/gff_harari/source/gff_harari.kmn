@@ -74,6 +74,7 @@ c --------------------Maps for Labiovelars--------------------------------------
 
 c 'hhkqg'
   store(ካዕብ፡ልዩ)  'ሁኁኩኹቁቑጉጙሙቡፉፑሑ'
+  store(ሳድስ፡ልዩ)  'ህኅክኽቅቕግጝምብፍፕሕ'
   store(ዘመደ፡ግዕዝ) 'ኈኈኰዀቈቘጐⶓᎀᎄᎈᎌ𞟨'
   store(ዘመደ፡ካዕብ) 'ኍኍኵዅቍቝጕⶖᎃᎇᎋᎏ𞟫'
   store(ዘመደ፡ሣልስ) 'ኊኊኲዂቊቚጒⶔ𞟭𞟳𞟻𞟽𞟩'
@@ -155,6 +156,12 @@ store(ኰ_ቤተሰብ) 'ኰኵኲኳኴ'
 store(ዀ_ቤተሰብ) 'ዀዅዂዃዄ'
 store(ጐ_ቤተሰብ) 'ጐጕጒጓጔ'
 store(ⶓ_ቤተሰብ) 'ⶓⶖⶔጟⶕ'
+store(ᎀ_ቤተሰብ) 'ᎀᎃ𞟭ሟ𞟮'
+store(ᎄ_ቤተሰብ) 'ᎄᎇ𞟳ቧ𞟴'
+store(ᎈ_ቤተሰብ) 'ᎈᎋ𞟻ፏ𞟼'
+store(ᎌ_ቤተሰብ) 'ᎌᎏ𞟽ፗ𞟾'
+store(𞟨_ቤተሰብ) '𞟨𞟫𞟩ሗ𞟪'
+
 
 store(Gurage_ቈ_key) [U_1E7F0][U_1E7F1][U_1E7F2]  c '𞟲𞟰𞟱'
 store(Gurage_ኰ_key) [U_1E7F5][U_1E7F6][U_1E7F7]  c '𞟷𞟵𞟶'
@@ -223,6 +230,13 @@ c
   any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
   any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
+c this can happen on the tablet profile only:
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+
 c This is slight overkill, the mappings are needed only for ቑ and ጙ on respective "extra" layers.
 c Reduce this layer to only ቑ and ጙ if problems occur:
   any(ካዕብ፡ልዩ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
@@ -242,7 +256,7 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
   if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
-  if( &layer = "ቐ-extra" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
+  if( &layer = "ቐ-extra-labiovelar" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
   if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
   if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
   if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
@@ -260,10 +274,10 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
   if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
   if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
-  if( &layer = "ዸ-extra" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
+  if( &layer = "ዸ-extra-labiovelar" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
   if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
   if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
-  if( &layer = "ጘ-extra" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
+  if( &layer = "ጘ-extra-labiovelar" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
   if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2) 
   if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
@@ -271,15 +285,20 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
-  if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
+  if( &layer = "𞟠-extra-labiovelar" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
 
   if( &layer = "ቈ-layer" ) + any(touchVowelsLabiolvelar) > index(ቈ_ቤተሰብ,2)
-  if( &layer = "ቘ-extra" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
+  if( &layer = "ቘ-layer" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
   if( &layer = "ኈ-layer" ) + any(touchVowelsLabiolvelar) > index(ኈ_ቤተሰብ,2)
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabiolvelar) > index(ኰ_ቤተሰብ,2)
   if( &layer = "ዀ-layer" ) + any(touchVowelsLabiolvelar) > index(ዀ_ቤተሰብ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabiolvelar) > index(ጐ_ቤተሰብ,2)
-  if( &layer = "ⶓ-extra" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ⶓ-layer" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ᎀ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎀ_ቤተሰብ,2)
+  if( &layer = "ᎄ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎄ_ቤተሰብ,2)
+  if( &layer = "ᎈ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎈ_ቤተሰብ,2)
+  if( &layer = "ᎌ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎌ_ቤተሰብ,2)
+  if( &layer = "𞟨-layer" ) + any(touchVowelsLabiolvelar) > index(𞟨_ቤተሰብ,2)
 
 c Special New Gurage cases that coexist with classic Ge'ez
   if( &layer = "ቈ-layer" ) 'ቈ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
