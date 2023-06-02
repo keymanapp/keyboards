@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&Version) '15.0'
-store(&KEYBOARDVERSION) '1.5.2'
+store(&KEYBOARDVERSION) '1.5.3'
 store(&Name) 'ብሊን (Blin)'    
 store(&COPYRIGHT) '© 2009-2023 Geʾez Frontier Foundation'
 store(&Message) 'This is a Blin language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
@@ -207,6 +207,7 @@ c
   any(ካዕብ፡ልዩ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
   
+  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
@@ -225,8 +226,8 @@ c
   if( &layer = "ኀ-extra" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
   if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2) 
   if( &layer = "ኘ-extra" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
-  if( &layer = "default" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
-  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
+  if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
   if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
