@@ -248,12 +248,14 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
 
   if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+  if( &layer = "ሀ-layer" ) + 'h' > 'ህ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
   if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
   if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
   if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
   if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+  if( &layer = "ሰ-layer" ) + 's' > 'ስ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
   if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
   if( &layer = "ቐ-extra-labiovelar" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
@@ -282,6 +284,7 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
   if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  if( &layer = "ጸ-layer" ) + 'S' > 'ጽ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
