@@ -13,15 +13,15 @@
 
 <h3>Computer - Unshifted [Same as 'Default']</h3>
 	<p>There are 3 parts to the keyboard map: “Normal” part; “Shift” part and “Right Alt” part. The Normal part is shown below. To type the character you want, press the appropriate key.</[>
-	<p><a href="desktop_layout_default.png"><img class="keyboard" src="desktop_layout_default.png" alt="Default (unshifted) state" /></a></p>
+	<p><a href="desktop_layout_default.png"><img width="90%" class="keyboard" src="desktop_layout_default.png" alt="Default (unshifted) state" /></a></p>
 
 <h3>Computer - Shifted</h3>
 	<p>The Shift part is shown below. To type the character you want, press SHIFT + the appropriate key (at the same time).</p>
-	<p><a href="desktop_layout_shift.png"><img class="keyboard" src="desktop_layout_shift.png" alt="Shift state" /></a></p>
+	<p><a href="desktop_layout_shift.png"><img width="90%" class="keyboard" src="desktop_layout_shift.png" alt="Shift state" /></a></p>
 
 <h3>Computer - Right Alt</h3>
 	<p>The Right Alt part is shown below. To type the character you want, press RIGHT ALT + the appropriate key (at the same time).</p>
-	<p><a href="desktop_layout_altgr.png"><img class="keyboard" src="desktop_layout_altgr.png" alt="AltGr state" /></a></p>
+	<p><a href="desktop_layout_altgr.png"><img width="90%" class="keyboard" src="desktop_layout_altgr.png" alt="AltGr state" /></a></p>
 
 	<p lang="en-US" style="margin-bottom: 0in; line-height: 100%">The <font face="Arial"><span lang="hi-IN"><font face="A Tai Tham KH New V3">&#6752;</font>
 	</span></font>character (found in the Normal part) has a special
@@ -42,15 +42,15 @@
 
 <h3>Tablet - Default</h3>
 	<p>There are 3 parts to the keyboard map: “Normal” part; “Shift” part and “Right Alt” part. The Normal part is shown below. To type the character you want, press the appropriate key.</p>
-	<p><a href="tablet_layout_default.png"><img width="40%" class="keyboard" src="tablet_layout_default.png" alt="Default state" /></a></p>
+	<p><a href="tablet_layout_default.png"><img width="60%" class="keyboard" src="tablet_layout_default.png" alt="Default state" /></a></p>
 
 <h3>Tablet - Shift</h3>
 	<p>The Shift part is shown below. To type the character you want, press SHIFT + the appropriate key (at the same time).</p>
-	<p><a href="tablet_layout_shift.png"><img width="40%" class="keyboard" src="tablet_layout_shift.png" alt="Shift state" /></a></p>
+	<p><a href="tablet_layout_shift.png"><img width="60%" class="keyboard" src="tablet_layout_shift.png" alt="Shift state" /></a></p>
 
 <h3>Tablet - Right Alt</h3>
 	<p>The Right Alt part is shown below. To type the character you want, press RIGHT ALT + the appropriate key (at the same time).</p>
-	<p><a href="tablet_layout_altgr.png"><img width="40%" class="keyboard" src="tablet_layout_altgr.png" alt="AltGr state" /></a></p>
+	<p><a href="tablet_layout_altgr.png"><img width="60%" class="keyboard" src="tablet_layout_altgr.png" alt="AltGr state" /></a></p>
 
 	<p lang="en-US" style="margin-bottom: 0in; line-height: 100%">The <font face="Arial"><span lang="hi-IN"><font face="A Tai Tham KH New V3">&#6752;</font>
 	</span></font>character (found in the Normal part) has a special
