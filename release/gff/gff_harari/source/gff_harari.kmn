@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&NAME) 'ሐረሪ (Harari)'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&Message) "This is a Harari language mnemonic input method for Ethiopic script that requires Unicode 3.0 support."
@@ -304,7 +304,11 @@ c Special New Gurage cases that coexist with classic Ge'ez
   if( &layer = "ቈ-layer" ) 'ቈ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
   if( &layer = "ኰ-layer" ) 'ኰ' + any(Gurage_ኰ_key) > index(Gurage_ኰ,3) 
   if( &layer = "ጐ-layer" ) 'ጐ' + any(Gurage_ጐ_key) > index(Gurage_ጐ,3) 
-  
+
+c The following handles the case on tablets where the layer change was made from the modifier key popups on the primary layout
+  if( &layer = "ቈ-layer" ) 'ቅ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
+  if( &layer = "ኰ-layer" ) 'ክ' + any(Gurage_ኰ_key) > index(Gurage_ኰ,3) 
+  if( &layer = "ጐ-layer" ) 'ግ' + any(Gurage_ጐ_key) > index(Gurage_ጐ,3) 
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
 c
