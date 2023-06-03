@@ -6,7 +6,7 @@
 <head>
   <!-- meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/ -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <title>The Ge&rsquo;ez Frontier Foundation Keyboard for Ethiopian Tigrinya</title>
+  <title>The Geʾez Frontier Foundation Keyboard for Ethiopian Tigrinya</title>
 
 <style type="text/css" media="screen">
   img.indented { text-indent: 10%}
@@ -67,7 +67,7 @@ table.zaima { empty-cells: show }
 </head>
 <body>
 
-<h1>The Ge&rsquo;ez Frontier Foundation Keyboard for Ethiopian Tigrinya Language</h1>
+<h1>The Geʾez Frontier Foundation Keyboard for Ethiopian Tigrinya Language</h1>
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
@@ -308,7 +308,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

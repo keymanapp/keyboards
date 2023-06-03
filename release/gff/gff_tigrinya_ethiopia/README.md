@@ -1,7 +1,7 @@
 ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions)
 ==========================================================
 
-Copyright (C) 2009-2023 Ge'ez Frontier Foundation
+Copyright (C) 2009-2023 Geʾez Frontier Foundation
 
 Version 2.0
 
