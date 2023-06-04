@@ -1,6 +1,10 @@
 Himyarit Musnad Change History
 ====================
 
+1.2 (2023-06-03)
+----------------
+* 
+
 1.1 (2023-05-30)
 ----------------
 * Arabic letters added to key caps.
