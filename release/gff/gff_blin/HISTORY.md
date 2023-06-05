@@ -1,5 +1,9 @@
 # ብሊን (Blin) Change History
 
+## 2023-06-01 1.5.3
+* Fix on touch layers for regular labiovelars that were non-replacing.
+* More hints added.
+
 ## 2023-05-23 1.5.2
 * Layer switch fixes for 4 mobile keys, and 2 tablet keys.
 
