@@ -1,6 +1,6 @@
 <?php 
   $pagename = 'GFF Blin';
-  $pagetitle = 'The Ge&rsquo;ez Frontier Foundation Keyboard for Blin Language';
+  $pagetitle = 'The Geʾez Frontier Foundation Keyboard for Blin Language';
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -61,10 +61,16 @@ END;
 
 
 ?>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="kb.css"/>
+</head>
 
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
+<div id='Overview'>
 <p style="text-align: justify;">
 This is a Blin (ብሊን, ISO-639-2: byn) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
 The Blin keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
@@ -72,8 +78,8 @@ be intuitive and natural with respect to the sounds available in the English lan
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
-
+<p>A more complete typing manual is <a target="_blank" href='BlinTyping-English.pdf'>provided as a PDF</a> file with this distribution.</p>
+</div>
  
 <h2><a id="status" name="status"></a>Typing Letter</h2>
 
@@ -299,7 +305,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
