@@ -1,7 +1,7 @@
 ብሊን (Blin) Keyboard
 ====================
 
-Copyright (C) 2009-2023 Ge'ez Frontier Foundation
+Copyright © 2009-2023 Geʾez Frontier Foundation
 
 Version 1.5.3
 
