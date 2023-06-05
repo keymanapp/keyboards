@@ -1,6 +1,6 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c The Ge'ez Frontier Foundation's mnemonic input method for Awngi & Xamtganga orthographies on US-QWERTY
+c The Geʾez Frontier Foundation's mnemonic input method for Awngi & Xamtganga orthographies on US-QWERTY
 c keyboards for SIL Keyman, compliant with Unicode 14 and later.
 c 
 c Keyman        :  http://www.keyman.com/
@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&Version) '15.0'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&Name) 'አዊ & ኽምጣጘ (Awngi & Xamtanga)'    
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&MESSAGE) 'This is an Awngi & Xamtanga language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
@@ -43,8 +43,8 @@ c language specific mappings
   store(ሣልስ)  'ሂሊሒ𞟢ሚሢሪሲሺቂቒቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲዺጂጊጚጢጪጲጺፂፊፒ'
   store(ራብዕ)  'ሃላሓ𞟣ማሣራሳሻቃቓባቫታቻኃናኛካኻዋዓዛዣያዳዻጃጋጛጣጫጳጻፃፋፓ'
   store(ኃምስ)  'ሄሌሔ𞟤ሜሤሬሴሼቄቔቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴዼጄጌጜጤጬጴጼፄፌፔ'
-  store(ሳድስ)  'ህልሕ𞟦ምሥርስሽቅቕብቭትችኅንኝክኽውዐዝዥይድዽጅግጝጥጭጵጽፅፍፕ'
-  store(ሳብዕ)  'ሆሎሖ𞟥ሞሦሮሶሾቆቖቦቮቶቾኅኖኞኮኾዎዖዞዦዮዶዾጆጎጞጦጮጶጾፆፎፖ'
+  store(ሳድስ)  'ህልሕ𞟥ምሥርስሽቅቕብቭትችኅንኝክኽውዐዝዥይድዽጅግጝጥጭጵጽፅፍፕ'
+  store(ሳብዕ)  'ሆሎሖ𞟦ሞሦሮሶሾቆቖቦቮቶቾኅኖኞኮኾዎዖዞዦዮዶዾጆጎጞጦጮጶጾፆፎፖ'
 
 c QWERTY keymappings
   store(enKeys)  'hlHmrsxqQbvtcnNkKwzZydjgGTCPSfp'
@@ -64,9 +64,9 @@ c  store(loneVowelEthio)  'ኣዐኡኡኢኢእእኦኦ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
-  store(ሳድስ፡መደበኛ)     'ልሕምርስሽብቭትችንኝዝዥድዽጅጥጭጵጽፍፕ'
-  store(ካዕብ፡መደበኛ)     'ሉሑሙሩሱሹቡቩቱቹኑኙዙዡዱዹጁጡጩጱጹፉፑ'
-  store(ዘመደ፡ራብዕ፡መደበኛ) 'ሏሗሟሯሷሿቧቯቷቿኗኟዟዧዷዿጇጧጯጷጿፏፗ'
+  store(ሳድስ፡መደበኛ)     'ልሕምሥርስሽብቭትችንኝዝዥድዽጅጥጭጵጽፍፕ'
+  store(ካዕብ፡መደበኛ)     'ሉሑሙሡሩሱሹቡቩቱቹኑኙዙዡዱዹጁጡጩጱጹፉፑ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ሏሗሟሧሯሷሿቧቯቷቿኗኟዟዧዷዿጇጧጯጷጿፏፗ'
 
 c 'hhkqQgG'
   store(ካዕብ፡ልዩ)  'ሁኁኩኹቁቑጉጙ'
@@ -209,17 +209,19 @@ c
   
   if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+  if( &layer = "ሀ-layer" ) + 'h' > 'ህ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
   if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
   if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
   if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
   if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+  if( &layer = "ሰ-layer" ) + 's' > 'ስ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
   if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
   if( &layer = "ቐ-layer" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
   if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
-  if( &layer = "ቨ-extra" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
+  if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
   if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
   if( &layer = "ቸ-layer" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
   if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
@@ -242,6 +244,7 @@ c
   if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
   if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  if( &layer = "ጸ-layer" ) + 'S' > 'ጽ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
