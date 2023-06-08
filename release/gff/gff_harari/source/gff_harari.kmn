@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&NAME) 'ሐረሪ (Harari)'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&Message) "This is a Harari language mnemonic input method for Ethiopic script that requires Unicode 3.0 support."
@@ -74,6 +74,7 @@ c --------------------Maps for Labiovelars--------------------------------------
 
 c 'hhkqg'
   store(ካዕብ፡ልዩ)  'ሁኁኩኹቁቑጉጙሙቡፉፑሑ'
+  store(ሳድስ፡ልዩ)  'ህኅክኽቅቕግጝምብፍፕሕ'
   store(ዘመደ፡ግዕዝ) 'ኈኈኰዀቈቘጐⶓᎀᎄᎈᎌ𞟨'
   store(ዘመደ፡ካዕብ) 'ኍኍኵዅቍቝጕⶖᎃᎇᎋᎏ𞟫'
   store(ዘመደ፡ሣልስ) 'ኊኊኲዂቊቚጒⶔ𞟭𞟳𞟻𞟽𞟩'
@@ -155,6 +156,12 @@ store(ኰ_ቤተሰብ) 'ኰኵኲኳኴ'
 store(ዀ_ቤተሰብ) 'ዀዅዂዃዄ'
 store(ጐ_ቤተሰብ) 'ጐጕጒጓጔ'
 store(ⶓ_ቤተሰብ) 'ⶓⶖⶔጟⶕ'
+store(ᎀ_ቤተሰብ) 'ᎀᎃ𞟭ሟ𞟮'
+store(ᎄ_ቤተሰብ) 'ᎄᎇ𞟳ቧ𞟴'
+store(ᎈ_ቤተሰብ) 'ᎈᎋ𞟻ፏ𞟼'
+store(ᎌ_ቤተሰብ) 'ᎌᎏ𞟽ፗ𞟾'
+store(𞟨_ቤተሰብ) '𞟨𞟫𞟩ሗ𞟪'
+
 
 store(Gurage_ቈ_key) [U_1E7F0][U_1E7F1][U_1E7F2]  c '𞟲𞟰𞟱'
 store(Gurage_ኰ_key) [U_1E7F5][U_1E7F6][U_1E7F7]  c '𞟷𞟵𞟶'
@@ -223,6 +230,13 @@ c
   any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
   any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
+c this can happen on the tablet profile only:
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ሳድስ፡ልዩ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+
 c This is slight overkill, the mappings are needed only for ቑ and ጙ on respective "extra" layers.
 c Reduce this layer to only ቑ and ጙ if problems occur:
   any(ካዕብ፡ልዩ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
@@ -231,17 +245,21 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   any(ካዕብ፡ልዩ) +  [T_ኃምስ] > index(ዘመደ፡ኃምስ,1)
   any(ካዕብ፡ልዩ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
-  
+
+  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+  if( &layer = "ሀ-layer" ) + 'h' > 'ህ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
   if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
   if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
   if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
   if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+  if( &layer = "ሰ-layer" ) + 's' > 'ስ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
   if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
   if( &layer = "ቐ-extra" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
+  if( &layer = "ቐ-extra-labiovelar" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
   if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
   if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
   if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
@@ -249,8 +267,8 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
   if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2) 
   if( &layer = "ኘ-layer" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
-  if( &layer = "default" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
-  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
+  if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
   if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
@@ -260,31 +278,46 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
   if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
   if( &layer = "ዸ-extra" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
+  if( &layer = "ዸ-extra-labiovelar" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
   if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
-  if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
   if( &layer = "ጘ-extra" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
+  if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
+  if( &layer = "ጘ-extra-labiovelar" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
   if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2) 
   if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
   if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  if( &layer = "ጸ-layer" ) + 'S' > 'ጽ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
   if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
+  if( &layer = "𞟠-extra-labiovelar" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
 
   if( &layer = "ቈ-layer" ) + any(touchVowelsLabiolvelar) > index(ቈ_ቤተሰብ,2)
   if( &layer = "ቘ-layer" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
+  if( &layer = "ቘ-extra" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
   if( &layer = "ኈ-layer" ) + any(touchVowelsLabiolvelar) > index(ኈ_ቤተሰብ,2)
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabiolvelar) > index(ኰ_ቤተሰብ,2)
   if( &layer = "ዀ-layer" ) + any(touchVowelsLabiolvelar) > index(ዀ_ቤተሰብ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabiolvelar) > index(ጐ_ቤተሰብ,2)
   if( &layer = "ⶓ-layer" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ⶓ-extra" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ᎀ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎀ_ቤተሰብ,2)
+  if( &layer = "ᎄ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎄ_ቤተሰብ,2)
+  if( &layer = "ᎈ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎈ_ቤተሰብ,2)
+  if( &layer = "ᎌ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎌ_ቤተሰብ,2)
+  if( &layer = "𞟨-layer" ) + any(touchVowelsLabiolvelar) > index(𞟨_ቤተሰብ,2)
 
 c Special New Gurage cases that coexist with classic Ge'ez
   if( &layer = "ቈ-layer" ) 'ቈ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
   if( &layer = "ኰ-layer" ) 'ኰ' + any(Gurage_ኰ_key) > index(Gurage_ኰ,3) 
   if( &layer = "ጐ-layer" ) 'ጐ' + any(Gurage_ጐ_key) > index(Gurage_ጐ,3) 
-  
+
+c The following handles the case on tablets where the layer change was made from the modifier key popups on the primary layout
+  if( &layer = "ቈ-layer" ) 'ቅ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
+  if( &layer = "ኰ-layer" ) 'ክ' + any(Gurage_ኰ_key) > index(Gurage_ኰ,3) 
+  if( &layer = "ጐ-layer" ) 'ግ' + any(Gurage_ጐ_key) > index(Gurage_ጐ,3) 
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
 c

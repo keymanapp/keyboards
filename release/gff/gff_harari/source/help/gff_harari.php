@@ -205,8 +205,7 @@ We also use the &ldquo;number sign&rdquo; (&ldquo;#&rdquo; also know as the &ldq
 so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>. 
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='HarariTyping-English.pdf'>Typing in Harari (English)</a> or 
-<a target="_blank" href='HarariTyping-Harari.pdf'>Typing in Harari (Harari)</a> 
+See <a target="_blank" href='HarariTyping-English.pdf'>Typing in Harari (English)</a>
 for full details on how to type all Harari letters, numbers and punctuation.
 </p>
 </div>
