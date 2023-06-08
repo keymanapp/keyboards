@@ -7,7 +7,7 @@ Version 1.0
 
 This is an Awngi & Xamtanga/Khimtanga (አዊ & ኽምጣጘ, ISO-639-3 awn & xan) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard. The keyboard is believed to be suitable for the related
-Qimant (ahg) language as well. [Orthography notes](Notes.md) are provided that review the corpora utilized to inform 
+Qimant (ahg) language as well. [Orthography notes](NOTES.md) are provided that review the corpora utilized to inform 
 the touch keyboard layouts.
 
 Links

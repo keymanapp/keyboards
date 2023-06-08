@@ -1,6 +1,10 @@
 Himyarit Musnad Change History
 ====================
 
+1.2 (2023-06-03)
+----------------
+* Issues with Arabic characters not appearing on mobile platforms fixed.
+
 1.1 (2023-05-30)
 ----------------
 * Arabic letters added to key caps.
