@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "GFF Eritrean Tigrinya";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Eritrean Tigrinya";
+  $pagename = "GFF Tigre";
+  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Tigre";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -72,20 +72,20 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Tigrinya (ti-ER, ትግርኛ-ኤርትራ) language mnemonic input method that applies Eritrean writing conventions. 
+This is a Tigre (tig, ትግሬ, ትግረ) language mnemonic input method that applies Eritrean writing conventions. 
 It requires a font supporting Ethiopic script under the Unicode 3.0 standard. 
-The Tigrinya keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
+The Tigre keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p>A more complete typing manual is <a target="_blank" href="TigrinyaErTyping.pdf">provided as a PDF file</a> with this distribution.</p>
+<p>A more complete typing manual is <a target="_blank" href="TigreTyping.pdf">provided as a PDF file</a> with this distribution.</p>
 </div>
  
 <h2><a id="status" name="status"></a>Typing Letter</h2>
 
 <p style="text-align: justify;">
-Only the letters used in Eritrean Tigrinya may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
+Only the letters used in the Tigre language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
 download a keyboard for the language needed or the <em>language-neutral</em> keyboard that supports composition of all Ethiopic symbols found in Unicode 4.1.
 </p>
 
