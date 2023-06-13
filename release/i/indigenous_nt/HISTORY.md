@@ -1,6 +1,11 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.4 (13 Jun 2023)
+-----------------
+
+* Added Ȓ to R key as an alternative in Uummarmiutun.
+
 4.0.3 (24 Nov 2022)
 -----------------
 
