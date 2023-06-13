@@ -1,11 +1,11 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Indigenous NT'
-store(&KEYBOARDVERSION) '4.0.3'
+store(&KEYBOARDVERSION) '4.0.4'
 store(&TARGETS) 'any'
 store(&BITMAP) 'indigenous_nt.ico'
 store(&VISUALKEYBOARD) 'indigenous_nt.kvks'
 store(&LAYOUTFILE) 'indigenous_nt.keyman-touch-layout'
-store(&COPYRIGHT) '(c) 2021 Rajiv Rawat'
+store(&COPYRIGHT) '(c) 2021-2023 Rajiv Rawat'
 store(&KMW_EMBEDCSS) 'keyboard.css'
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
@@ -43,7 +43,9 @@ group(main) using keys
 + [SHIFT RALT K_H] > 'Ŋ'
 + [RALT K_H] > 'ŋ'
 + [RALT K_D] > 'ð'
++ [RALT K_R] > 'ȓ'
 + [RALT K_T] > 'þ'
++ [SHIFT RALT K_R] > 'Ȓ'
 + [SHIFT RALT K_T] > 'Þ'
 + [SHIFT RALT K_D] > 'Ð'
 + [RALT K_E] > 'ǝ'
