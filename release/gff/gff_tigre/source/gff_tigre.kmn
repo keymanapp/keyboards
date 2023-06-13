@@ -33,7 +33,7 @@ c The remainder of this document is formatted with a fixed width font.
 
 c Define the set of Ethiopic characters to support contest based input:
 c
-store(Ethiopic) 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
+store(Ethiopic) ' ' 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
 
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
@@ -342,11 +342,11 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   '፡' + '+' > '፠'
   '፡' + '#' > '፨'
   
-any(Ethiopic) + '.' > index(Ethiopic,1) '።'
-  '።' + '.' > '..'
-  '.' + '.' > '..'
+  '።' + '.' > '.'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
+  any(Ethiopic) + '.' > index(Ethiopic,1) '።'
 
+  any(arabNumbersWithZero) + ',' > index(arabNumbersWithZero,1) ','
       + ',' > '፡' 
   '፡' + ',' > '፥'
   '፥' + ',' > ','
