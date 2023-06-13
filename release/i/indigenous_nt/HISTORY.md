@@ -5,6 +5,7 @@ Indigenous NT Keyboard Change History
 -----------------
 
 * Added Ȓ to R key as an alternative in Uummarmiutun.
+* Added Š and Ž.
 
 4.0.3 (24 Nov 2022)
 -----------------
