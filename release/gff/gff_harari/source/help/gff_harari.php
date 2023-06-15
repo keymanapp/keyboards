@@ -3,11 +3,11 @@
   Copyright:        Keyboard ©2023 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
-  Create Date:      17 April 2023
+  Create Date:      13 June 2023
 
 */
-  $pagename = 'ሐረሪ (Harari) Keyboard Help';
-  $pagetitle = 'ሐረሪ (Harari) Keyboard Help';
+  $pagename = 'GFF ሐረሪ (Harari) Keyboard Help';
+  $pagetitle = 'GFF ሐረሪ (Harari) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}

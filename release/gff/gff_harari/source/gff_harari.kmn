@@ -4,8 +4,8 @@ c The Geʾez Frontier Foundation's mnemonic input method for Harari script on US
 c keyboards for SIL Keyman, compliant with Unicode 3.0 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_amharic/2.0/gff_amharic.php
-c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_amharic
+c Documentation :  https://help.keyman.com/keyboard/gff_harari/1.0.3/gff_harari.php
+c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_harari
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
@@ -13,8 +13,8 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
-store(&KEYBOARDVERSION) '1.0.2'
-store(&NAME) 'ሐረሪ (Harari)'
+store(&KEYBOARDVERSION) '1.0.3'
+store(&NAME) 'GFF ሐረሪ (Harari)'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&Message) "This is a Harari language mnemonic input method for Ethiopic script that requires Unicode 3.0 support."
 store(&CapsAlwaysOff) '1'
@@ -34,7 +34,7 @@ c The remainder of this document is formatted with a fixed width font.
 
 c Define the set of Ethiopic characters to support contest based input:
 c
-store(Ethiopic) 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
+store(Ethiopic) ' ' 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
 
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
@@ -384,11 +384,11 @@ $keymanonly: + [SHIFT ' '] > '፡'
   '።' + ':' > ':'
   ':' + ':' > '፡'  c makes circular
   
-any(Ethiopic) + '.' > index(Ethiopic,1) '።'
-  '።' + '.' > '..'
-  '.' + '.' > '..'
+  '።' + '.' > '.'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
+  any(Ethiopic) + '.' > index(Ethiopic,1) '።'
    
+  any(arabNumbersWithZero) + ',' > index(arabNumbersWithZero,1) ','
       + ',' > '፣'
   '፣' + ',' > '፥'
   '፥' + ',' > ','

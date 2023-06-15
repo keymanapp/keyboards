@@ -1,6 +1,10 @@
 gff_harari Change History
 ==========================
 
+1.0.3 (13 Jun 2023)
+-------------------
+* Smart-dot composition fix.
+
 1.0.2 (04 Jun 2023)
 -------------------
 * Fix for non-replacing labiovelar composition in touch layouts.
