@@ -79,7 +79,7 @@ be intuitive and natural with respect to the sounds available in the English lan
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p>A more complete typing manual is <a target="_blank" href="TigreTyping.pdf">provided as a PDF file</a> with this distribution.</p>
+<p>A more complete typing manual is <a target="_blank" href="TigreTyping-English.pdf">provided as a PDF file</a> with this distribution.</p>
 </div>
  
 <h2><a id="status" name="status"></a>Typing Letter</h2>
