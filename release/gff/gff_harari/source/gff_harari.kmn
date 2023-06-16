@@ -387,13 +387,17 @@ $keymanonly: + [SHIFT ' '] > '፡'
   '።' + '.' > '.'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
   any(Ethiopic) + '.' > index(Ethiopic,1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > index(arabNumbersWithZero,1) '።' ' ' 
+   
    
   any(arabNumbersWithZero) + ',' > index(arabNumbersWithZero,1) ','
       + ',' > '፣'
   '፣' + ',' > '፥'
   '፥' + ',' > ','
   ',' + ',' > '፣'  c makes circular
+  notany(arabNumbersWithZero) '፣' + any(arabNumbersWithZero) > context(1) '፣' index(arabNumbersWithZero,3)
   '፣' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > index(arabNumbersWithZero,1) '፣' ' ' 
 
 
       + ';' > '፤'
