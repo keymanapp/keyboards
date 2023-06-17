@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&Version) '15.0'
-store(&KEYBOARDVERSION) '1.5.3'
+store(&KEYBOARDVERSION) '1.5.4'
 store(&Name) 'ብሊን (Blin)'    
 store(&COPYRIGHT) '© 2009-2023 Geʾez Frontier Foundation'
 store(&Message) 'This is a Blin language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
@@ -332,16 +332,20 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   '፡' + '+' > '፠'
   '፡' + '#' > '፨'
   
-any(Ethiopic) + '.' > index(Ethiopic,1) '።'
-  '።' + '.' > '..'
-  '.' + '.' > '..'
+  '።' + '.' > '.'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
-
-      + ',' > '፡' 
+  any(Ethiopic) + '.' > index(Ethiopic,1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > index(arabNumbersWithZero,1) '።' ' '    
+  
+   
+  any(arabNumbersWithZero) + ',' > index(arabNumbersWithZero,1) ','
+      + ',' > '፡'
   '፡' + ',' > '፥'
   '፥' + ',' > ','
   ',' + ',' > '፡'  c makes circular
+  notany(arabNumbersWithZero) '፡' + any(arabNumbersWithZero) > context(1) '፡' index(arabNumbersWithZero,3)
   '፡' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > index(arabNumbersWithZero,1) '፡' ' ' 
 
       + ';' > '፤'
   '፤' + ';' > ';'

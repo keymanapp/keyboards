@@ -1,5 +1,8 @@
 # ብሊን (Blin) Change History
 
+## 2023-06-16 1.5.4
+* Fix for smart-dot and smart-comma composition.
+
 ## 2023-06-01 1.5.3
 * Fix on touch layers for regular labiovelars that were non-replacing.
 * More hints added.
