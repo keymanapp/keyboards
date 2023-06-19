@@ -195,6 +195,20 @@ store(ጐ_ቤተሰብ) 'ጐጕጒጓጔ'
 store(ⶓ_ቤተሰብ) 'ⶓⶖⶔጟⶕ'
 
 store(touchVowelsGGDB)  [T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ]
+
+
+c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
+  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘_'
+  store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘]'
+  store(ዜማ፡keys) '1234567890_'
+
+c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
+  store(anyKey) '`1234567890-=~!@#$%^&*()_+' \
+    'qwertyuiop[]\QWERTYUIOP{}|' \
+    "asdfghjkl;'" 'ASDFGHJKL:"' \
+    'zxcvbnm,./ZXCVBNM<>?'
+c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
+
 c =====================End Data Section=========================================================
 
 c =====================Begin Functional Section=================================================
@@ -203,6 +217,8 @@ c
   group(main) using keys
 
 c ---------------------Input of Special Symbols-------------------------------------------------
+  + '_' > outs(ዜማ፡menu)
+  outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
 
 $keymanonly: + [CTRL '.'] > U+135E
 $keymanonly: U+135E + [CTRL '.'] > U+135F
@@ -511,4 +527,11 @@ c ---------------------End Input of Numbers-------------------------------------
 + [T_THOUSAND] > '፲፻'
                                             
 + [T_BACK] > dk(1)
+
+
+c ---------------------Begin ዜማ Group--------------------------------------------------------
+group(ዜማ፡group) using keys
++ any(ዜማ፡keys) > index(ዜማ, 1)
+nomatch        > use(main)      
+c ---------------------End ዜማ Group----------------------------------------------------------
 c =====================End Functional Section===================================================
