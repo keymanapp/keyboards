@@ -34,7 +34,7 @@ code {
 	<link rel="stylesheet" href="kb.css"/>
 </head>
 
-<p style='margin:0px'>Keyboard &#169; 2023. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © 2023. Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -227,15 +227,11 @@ for full details on how to type all Harari letters, numbers and punctuation.
 <p>Keyboard Layouts for other Ethiopic languages:</p>
 <p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_harege_fidelat">Harege Fidelat (All Languages)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mdx_7">Dizi</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_ethiopic">Ethiopic (All Languages)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awngi_xamtanga">Awngi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Geʾez</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_gurage">Gurage</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mym_7">Meʾen</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_muz_7">Mursi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigre">Tigre</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_eritrea">Tigrigna (Eritrea)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_ethiopia">Tigrigna (Ethiopia)</a></p>
 
