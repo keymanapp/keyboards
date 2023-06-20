@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '2.0.1'
 store(&Name) 'ትግርኛ (Tigrinya)'
 store(&COPYRIGHT) '© 2009-2023 Ge' U+0027 'ez Frontier Foundation'
 store(&Message) 'This is a Tigrinya language mnemonic input method that applies Eritrean writing conventions.  It requires a font supporting Ethiopic script under the Unicode 3.0 standard.'
@@ -342,16 +342,20 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   '፡' + '+' > '፠'
   '፡' + '#' > '፨'
   
-any(Ethiopic) + '.' > index(Ethiopic,1) '።'
-  '።' + '.' > '..'
-  '.' + '.' > '..'
+  '።' + '.' > '.'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
-
-      + ',' > '፡' 
+  any(Ethiopic) + '.' > index(Ethiopic,1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > index(arabNumbersWithZero,1) '።' ' '    
+  
+   
+  any(arabNumbersWithZero) + ',' > index(arabNumbersWithZero,1) ','
+      + ',' > '፡'
   '፡' + ',' > '፥'
   '፥' + ',' > ','
   ',' + ',' > '፡'  c makes circular
+  notany(arabNumbersWithZero) '፡' + any(arabNumbersWithZero) > context(1) '፡' index(arabNumbersWithZero,3)
   '፡' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > index(arabNumbersWithZero,1) '፡' ' ' 
 
       + ';' > '፣'
   '፣' + ';' > '፤'

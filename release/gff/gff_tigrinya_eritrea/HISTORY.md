@@ -1,5 +1,9 @@
 # ትግርኛ-ኤርትራ (Tigrinya Keyboard for Eritrean Conventions) Change History
 
+2.0 (2023-06-20)
+----------------
+* Fix for smart-dot and smart-comma composition.
+
 2.0 (2023-06-03)
 ----------------
 * Revision for dynamic layers as applied in other GFF keyboards.
