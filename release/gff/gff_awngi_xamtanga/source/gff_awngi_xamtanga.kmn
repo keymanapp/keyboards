@@ -231,6 +231,8 @@ c
   if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
   if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
+  if( &layer = "ዐ-layer" ) 'ዕ' + any(touchVowels) > index(ዐ_ቤተሰብ,3)
+  if( &layer = "ዐ-layer" ) 'ዐ' + any(touchVowels) > context(2) index(ዐ_ቤተሰብ,3)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
   if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
   if( &layer = "ዘ-layer" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2) 
