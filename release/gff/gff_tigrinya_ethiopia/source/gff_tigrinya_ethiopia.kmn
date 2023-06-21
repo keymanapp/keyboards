@@ -102,7 +102,7 @@ $keymanweb:  store(ሳብዕ-key) 'oO'
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 store(touchVowels)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ][T_WWA]
-store(ሀ_ቤተሰብ) 'ሀሁሂሃሄሆ!'
+store(ሀ_ቤተሰብ) 'ሀሁሂሃሄሆኋ'
 store(ለ_ቤተሰብ) 'ለሉሊላሌሎሏ'
 store(ሐ_ቤተሰብ) 'ሐሑሒሓሔሖሗ'
 store(መ_ቤተሰብ) 'መሙሚማሜሞሟ'
@@ -260,11 +260,11 @@ c
 
   if( &layer = "ቈ-layer" ) + any(touchVowelsLabialvelar) > index(ቈ_ቤተሰብ,2)
   if( &layer = "ቘ-layer" ) + any(touchVowelsLabialvelar) > index(ቘ_ቤተሰብ,2)
-  if( &layer = "ኈ-layer" ) + any(touchVowelsLabialvelar) > index(ኈ_ቤተሰብ,2)
+  if( &layer = "ኈ-extra" ) + any(touchVowelsLabialvelar) > index(ኈ_ቤተሰብ,2)
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabialvelar) > index(ኰ_ቤተሰብ,2)
   if( &layer = "ዀ-layer" ) + any(touchVowelsLabialvelar) > index(ዀ_ቤተሰብ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabialvelar) > index(ጐ_ቤተሰብ,2)
-  if( &layer = "ⶓ-layer" ) + any(touchVowelsLabialvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ⶓ-extra" ) + any(touchVowelsLabialvelar) > index(ⶓ_ቤተሰብ,2)
 
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
