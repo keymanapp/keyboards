@@ -17,7 +17,7 @@ See the FONTLOG for information on this and previous releases.
 For further information about this font, including Unicode ranges
 supported, OpenType font features and how to use them, 
 and licensing, please see the documentation on the website 
-(http://software.sil.org/abyssinica/) or in the documentation 
+(https://software.sil.org/abyssinica/) or in the documentation 
 subfolder of this font package.
 
 TIPS
@@ -52,8 +52,18 @@ https://keyman.com/keyboards/sil_ethiopic
 https://keyman.com/keyboards/gff_blin
 https://keyman.com/keyboards/gff_geez
 https://keyman.com/keyboards/gff_amharic
+https://keyman.com/keyboards/gff_amharic_classic
 https://keyman.com/keyboards/gff_tigrinya_ethiopia
 https://keyman.com/keyboards/gff_tigrinya_eritrea
+https://keyman.com/keyboards/gff_harege_fidelat
+https://keyman.com/keyboards/gff_mesobe_fidelat
+https://keyman.com/keyboards/gff_tigre
+https://keyman.com/keyboards/gff_awngi_xamtanga
+https://keyman.com/keyboards/gff_harari
+https://keyman.com/keyboards/gff_gurage
+https://keyman.com/keyboards/gff_gurage_legacy
+https://keyman.com/keyboards/geezbrhan
+
 
 Another method of entering some symbols is provided by a few applications
 such as Adobe InDesign. They can display a glyph palette that shows all the
