@@ -68,6 +68,7 @@ c --------------------Maps for Labiovelars--------------------------------------
 
 c 'hhkqQgG'
   store(ካዕብ፡ልዩ)  'ሁኁኩኹቁቑጉጙ'
+  store(ራብዕ፡ልዩ)  'ሃኃካኻቃቓጋጛ'
   store(ዘመደ፡ግዕዝ) 'ኈኈኰዀቈቘጐⶓ'
   store(ዘመደ፡ካዕብ) 'ኍኍኵዅቍቝጕⶖ'
   store(ዘመደ፡ሣልስ) 'ኊኊኲዂቊቚጒⶔ'
@@ -141,7 +142,7 @@ store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፎፏ'
 store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፖፗ'
 store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟥𞟦!'
 
-store(touchVowelsLabialvelar) [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ]
+store(touchVowelsLabialvelar) [T_ዘመደ_ግዕዝ][T_ዘመደ_ካዕብ][T_ዘመደ_ሣልስ][T_ዘመደ_ራብዕ][T_ዘመደ_ኃምስ]
 store(ቈ_ቤተሰብ) 'ቈቍቊቋቌ'
 store(ቘ_ቤተሰብ) 'ቘቝቚቛቜ'
 store(ኈ_ቤተሰብ) 'ኈኍኊኋኌ'
@@ -199,11 +200,11 @@ c
   any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
   any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
   
-  any(ካዕብ፡ልዩ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
-  any(ካዕብ፡ልዩ) +  [T_ሣልስ] > index(ዘመደ፡ሣልስ,1)
-  any(ካዕብ፡ልዩ) +  [T_ራብዕ] > index(ዘመደ፡ራብዕ,1)
-  any(ካዕብ፡ልዩ) +  [T_ኃምስ] > index(ዘመደ፡ኃምስ,1)
-  any(ካዕብ፡ልዩ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+  any(ራብዕ፡ልዩ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ራብዕ፡ልዩ) +  [T_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ራብዕ፡ልዩ) +  [T_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ራብዕ፡ልዩ) +  [T_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ራብዕ፡ልዩ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
 
   if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)  
@@ -326,13 +327,15 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
+  any(ሳድስ)      + "'" > context(1) deadkey(1)
 c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
-  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
-  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
-  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             
-  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > context(1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)             
+  any(ሣልስ)      + "'" > context(1) deadkey(1)
 
+  any(arabNumbersWithZero) + ':' > context(1) ':'
+  any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
 
       + ':' > '፡'
   '፡' + ':' > '።'
@@ -343,18 +346,18 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   
   '።' + '.' > '.'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
-  any(Ethiopic) + '.' > index(Ethiopic,1) '።'
-  any(arabNumbersWithZero) '.' + ' ' > index(arabNumbersWithZero,1) '።' ' '    
+  any(Ethiopic) + '.' > context(1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' '    
   
    
-  any(arabNumbersWithZero) + ',' > index(arabNumbersWithZero,1) ','
+  any(arabNumbersWithZero) + ',' > context(1) ','
       + ',' > '፡'
   '፡' + ',' > '፥'
   '፥' + ',' > ','
   ',' + ',' > '፡'  c makes circular
   notany(arabNumbersWithZero) '፡' + any(arabNumbersWithZero) > context(1) '፡' index(arabNumbersWithZero,3)
   '፡' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
-  any(arabNumbersWithZero) ',' + ' ' > index(arabNumbersWithZero,1) '፡' ' ' 
+  any(arabNumbersWithZero) ',' + ' ' > context(1) '፡' ' ' 
 
 
       + ';' > '፣'
