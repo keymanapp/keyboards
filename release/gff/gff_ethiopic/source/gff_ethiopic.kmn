@@ -55,8 +55,9 @@ c Mappings for unused uppercase keys
   store(ሌሎች፡ሳድስ) 'ልምርሽብቭውይጅፍ'
 
 c Me’en, Mursi, Suri “open o” syllables
-store(መዕን፡ሳብዕ) 'ሆሎሞሮሶሾቆቦቶቾኆኖኞኦዎዞዮዶዾጆጎጦጮጶፆፖ'
-store(መዕን፡ሳድስ) 'ሇⶀⶁⶂⶃⶄቇⶅⶆⶇኇⶈⶉⶊዏⶋዯⶌⶍⶎጏⶏⶐⶑፇⶒ'
+store(መዕን፡ሳድስ) 'ህልምርስሽቅብትችኅንኝአክውዝይድዽጅግጥጭጵፅፕ'
+store(መዕን፡ሳብዕ) 'ሆሎሞሮሶሾቆቦቶቾኆኖኞኦኮዎዞዮዶዾጆጎጦጮጶፆፖ'
+store(መዕን፡ሳምን) 'ሇⶀⶁⶂⶃⶄቇⶅⶆⶇኇⶈⶉⶊኯዏⶋዯⶌⶍⶎጏⶏⶐⶑፇⶒ'
 
 c Gamo, Gofa, Dawro, and Basketo (for the ꬁ and ꬉ)
 store (GGDB፡ካዕብ) 'ꬁꬉꬑ' 
@@ -260,6 +261,7 @@ c
   any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1) 
   any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
   any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(መዕን፡ሳድስ) + [T_ሳምን] > index(መዕን፡ሳምን,1)
   
   any(ራብዕ፡ልዩ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
   any(ራብዕ፡ልዩ) +  [T_ሣልስ] > index(ዘመደ፡ሣልስ,1)
@@ -392,7 +394,7 @@ $keymanonly: any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
   any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
   any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 
-  any(መዕን፡ሳብዕ) + any(ሳብዕ-key) > index(መዕን፡ሳድስ,1)
+  any(መዕን፡ሳብዕ) + any(ሳብዕ-key) > index(መዕን፡ሳምን,1)
 
   any(GGDB፡ሳድስ) + any(ካዕብ-key) > index(GGDB፡ካዕብ,1)
   any(GGDB፡ሳድስ) + any(ሣልስ-key) > index(GGDB፡ሣልስ,1)
@@ -428,6 +430,9 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)             
   any(ሣልስ)      + "'" > context(1) deadkey(1)
 
+
+  any(arabNumbersWithZero) + ':' > context(1) ':'
+  any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
 
       + ':' > '፡'
   '፡' + ':' > '።'
