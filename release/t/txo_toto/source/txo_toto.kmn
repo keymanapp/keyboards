@@ -1,0 +1,72 @@
+﻿c Keyboard: Toto alphabet keying that matches Toto standard unicode codepoints
+c Author:   Toby Anderson
+c Date:     Feb 2023
+
+store(&VERSION) '9.0'
+store(&NAME) 'Toto'
+store(&BITMAP) 'txo_toto.ico'
+store(&COPYRIGHT) '© 2023 Toby Anderson'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&HOTKEY) [CTRL K_P]
+store(&VISUALKEYBOARD) 'txo_toto.kvks'
+store(&LAYOUTFILE) 'txo_toto.keyman-touch-layout'
+
+begin Unicode > use(Unicode)
+
+store(nul) "xvXV"
+
+group(Unicode) using keys
++ any(nul) > nul
+
++ [SHIFT K_Q] > '𞊕𞊭?'
++ [K_Q] > '𞊕𞊭?'
++ [SHIFT K_F] > '𞊐'
++ [K_F] > '𞊐'
++ [SHIFT K_P] > '𞊐'
++ [K_P] > '𞊐'
++ [SHIFT K_O] > '𞊨'
++ [K_O] > '𞊪'
++ [SHIFT K_I] > '𞊢'
++ [K_I] > '𞊡'
++ [SHIFT K_U] > '𞊣'
++ [K_U] > '𞊥'
++ [SHIFT K_Y] > '𞊛'
++ [K_Y] > '𞊛'
++ [SHIFT K_T] > '𞊒'
++ [K_T] > '𞊒'
++ [SHIFT K_R] > '𞊟'
++ [K_R] > '𞊟'
++ [SHIFT K_E] > '𞊧'
++ [K_E] > '𞊦'
++ [SHIFT K_W] > '𞊜'
++ [K_W] > '𞊜'
++ [SHIFT K_L] > '𞊠'
++ [K_L] > '𞊠'
++ [SHIFT K_K] > '𞊔'
++ [K_K] > '𞊔'
++ [SHIFT K_J] > '𞊝'
++ [K_J] > '𞊝'
++ [SHIFT K_H] > '𞊞'
++ [K_H] > '𞊞'
++ [SHIFT K_G] > '𞊕'
++ [K_G] > '𞊕'
++ [SHIFT K_D] > '𞊓'
++ [K_D] > '𞊓'
++ [SHIFT K_S] > '𞊙'
++ [K_S] > '𞊙'
++ [SHIFT K_A] > '𞊪𞊮'
++ [K_A] > '𞊭'
++ [SHIFT K_M] > '𞊖'
++ [K_M] > '𞊖'
++ [SHIFT K_N] > '𞊘'
++ [K_N] > '𞊗'
++ [SHIFT K_B] > '𞊑'
++ [K_B] > '𞊑'
++ [SHIFT K_C] > '𞊚'
++ [K_C] > '𞊚'
++ [SHIFT K_Z] > '𞊬'
++ [K_Z] > '𞊫'
++ [SHIFT K_6] > '𞊮'
+'𞊨' + [SHIFT K_PERIOD] > '𞊩'
+'𞊣' + [SHIFT K_PERIOD] > '𞊤'

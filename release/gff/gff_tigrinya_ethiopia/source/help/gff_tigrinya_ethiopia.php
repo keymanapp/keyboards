@@ -4,9 +4,10 @@
   require_once('header.php');
 ?>
 <head>
-  <!-- meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/ -->
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <title>The Ge&rsquo;ez Frontier Foundation Keyboard for Ethiopian Tigrinya</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="kb.css"/>
+  <title>The Geʾez Frontier Foundation Keyboard for Ethiopian Tigrinya</title>
 
 <style type="text/css" media="screen">
   img.indented { text-indent: 10%}
@@ -67,7 +68,7 @@ table.zaima { empty-cells: show }
 </head>
 <body>
 
-<h1>The Ge&rsquo;ez Frontier Foundation Keyboard for Ethiopian Tigrinya Language</h1>
+<h1>The Geʾez Frontier Foundation Keyboard for Ethiopian Tigrinya Language</h1>
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
@@ -79,7 +80,7 @@ be intuitive and natural with respect to the sounds available in the English lan
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+<p>A more complete typing manual is <a target="_blank" href="TigrinyaEtTyping-English.pdf">provided as a PDF file</a> with this distribution.</p>
 
  
 <h2><a id="status" name="status"></a>Typing Letters</h2>
@@ -216,6 +217,24 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 </table>
 </div>
 
+<h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
+
+<div style="margin-left: 1em;">
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using “CTRL + . ”. For example:</p>
+
+<table style="margin-top: 0;">
+<tr>
+  <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፟ (“abba”, “b” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+</tr>
+</table>
+
+
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
 
 <div style="margin-left: 1em;">
@@ -224,13 +243,20 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 <table class="punct" style="margin-top: 0;">
   <tr>
     <th style="background-color: #e0dacf; border: thin solid #666;">Keystrokes</th>
-    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th>
+    <th>:</th><th>::</th><th>,</th><th>,,</th><th>;</th><th>:-</th><th>:+</th><th>:#</th><th>&lt;</th><th>&gt;</th><th>&lt;&lt;</th><th>&gt;&gt;</th>
   </tr>
   <tr>
     <th>Punctuation</th>
-    <td>፡</td><td>።</td><td>፣</td><td>፥</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td>
+    <td>፡</td><td>።</td><td>፣</td><td>፥</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td><td>‹</td><td>›</td><td>«</td><td>»</td>
   </tr>
 </table>
+
+
+<p>Period, ‘.’ may also be used to enter ‘።’.  When a number follows ‘፣’ and ‘።’ they will change back to their Latin form automatically.  For example:</p>
+<dir>
+123፣456	⇒  123,456<br/>
+12።50	⇒  12.50
+</dir>
 
 <h3>Keyboard Punctuation</h3>
 <p>All regular punctuation on your keyboard remains available. Most punctuation can be typed
@@ -283,7 +309,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2020. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

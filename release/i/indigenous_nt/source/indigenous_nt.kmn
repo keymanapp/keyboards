@@ -1,13 +1,15 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Indigenous NT'
-store(&KEYBOARDVERSION) '4.0.2'
+store(&KEYBOARDVERSION) '4.0.4'
 store(&TARGETS) 'any'
 store(&BITMAP) 'indigenous_nt.ico'
 store(&VISUALKEYBOARD) 'indigenous_nt.kvks'
 store(&LAYOUTFILE) 'indigenous_nt.keyman-touch-layout'
-store(&COPYRIGHT) '(c) 2021 Rajiv Rawat'
+store(&COPYRIGHT) '(c) 2021-2023 Rajiv Rawat'
 store(&KMW_EMBEDCSS) 'keyboard.css'
 begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
 
 group(main) using keys
 + [RALT K_SPACE] > ' '
@@ -41,7 +43,9 @@ group(main) using keys
 + [SHIFT RALT K_H] > 'Ŋ'
 + [RALT K_H] > 'ŋ'
 + [RALT K_D] > 'ð'
++ [RALT K_R] > 'ȓ'
 + [RALT K_T] > 'þ'
++ [SHIFT RALT K_R] > 'Ȓ'
 + [SHIFT RALT K_T] > 'Þ'
 + [SHIFT RALT K_D] > 'Ð'
 + [RALT K_E] > 'ǝ'
@@ -54,6 +58,10 @@ group(main) using keys
 + [RALT K_BKSLASH] > '«'
 + [SHIFT RALT K_HYPHEN] > '—'
 + [RALT K_HYPHEN] > '–'
++ [SHIFT RALT K_S] > 'Š'
++ [RALT K_S] > 'š'
++ [SHIFT RALT K_Z] > 'Ž'
++ [RALT K_Z] > 'ž'
 
 + [T_0105_0300] > U+0105 U+0300
 + [T_0119_0300] > U+0119 U+0300
@@ -130,3 +138,20 @@ group(main) using keys
 + [SHIFT RALT T_018E_0301] > U+018E U+0301
 
 + [SHIFT RALT T_0052_0302] > U+0052 U+0302
+
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    
+    nomatch > layer('default')

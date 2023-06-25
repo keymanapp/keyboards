@@ -62,7 +62,7 @@ done
 
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 CI_CACHE="$KEYBOARDROOT/.cache"
-JQ="$KEYBOARDROOT/tools/jq-win64.exe"
+. "$KEYBOARDROOT/tools/jq.inc.sh"
 keyboards_to_push=0
 
 . "$KEYBOARDROOT/servervars.sh"

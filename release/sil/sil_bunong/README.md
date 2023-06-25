@@ -1,9 +1,9 @@
 Bunong ឞូន៝ង (SIL) Keyboard Data
 ------------------------------
 
-Copyright (C) 2021 - 2022 SIL International
+Copyright (C) 2021 - 2023 SIL International
 
-Version 1.4
+Version 1.5
 
 Description
 -----------

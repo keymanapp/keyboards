@@ -4,6 +4,7 @@
   Documentation:    
   Description:      
   Create Date:      23 Oct 2022
+  Last Update:      19 Nov 2022
 */
   $pagename = 'Harege Fidelat Keyboard Help';
   $pagetitle = 'Harege Fidelat Keyboard Help';
@@ -119,7 +120,7 @@ The Harege Fidelat tablet layout is identical to the mobile phone layout.
 
 <div id="Troubleshooting">
 <h2>Troubleshooting</h2>
-<p class='keymanweb'>It is expected some of the newer letters introduced for the Gurage language will not appear on screen when using
+<p class='keymanweb' style="text-align: justify;">It is expected some of the newer letters introduced for the Gurage language will not appear on screen when using
 Keyman with other apps, such as for text messaging.  This will be resolved in the near future when companies like Apple and Samsung update
 their products.</p>
 
@@ -132,7 +133,8 @@ their products.</p>
 <div id="Related">
 <h3>Related Keyboard Layouts</h3>
 <p>Keyboard Layouts for other Ethiopic languages:</p>
-<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
+<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
@@ -156,7 +158,8 @@ their products.</p>
 <div id="Technical">
 <h2>Technical Information</h2>
 <h3>System Requirements</h3>
-<p>Due to the keyboard's width it is ideally suited for tablet devices but is also suitable for larger mobile phones.
+<p style="text-align: justify;">
+Due to the keyboard's width it is ideally suited for tablet devices but is also suitable for larger mobile phones.
 </p>
 <h3>Unicode Version</h3>
 <p>This keyboard complies with Unicode 14</p>
@@ -165,20 +168,22 @@ their products.</p>
 <div id="VersionHistory">
 <h3>Version History</h3>
 <dl>
+  <dt>Version 1.01 19 Nov 2022</dt>
+  <dd>Various <code>nextlayer</code> attributes fixed.</dd>
   <dt>Version 1.0 12 Nov 2022</dt>
   <dd>Initial release.</dd>
 </dl>
 
 <div id="Author">
 <h3>Keyboard Authorship</h3>
-<p>
+<p style="text-align: justify;">
 This keyboard was created by the Geʾez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Mobile. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
-<p>
+<p style="text-align: justify;">
 The Harege Fidelat keyboard layout for Keyman Mobile is Copyright 2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>

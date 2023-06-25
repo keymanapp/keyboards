@@ -1,4 +1,4 @@
-<?php 
+<?php
   $pagename = "GFF Eritrean Tigrinya";
   $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Eritrean Tigrinya";
   $pagestyle = <<<END
@@ -61,21 +61,27 @@ END;
 
 
 ?>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="kb.css"/>
+</head>
 
 
+<div id='Overview'>
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Tigrinya (ti-ER, ትግርኛ-ኤርትራ) language mnemonic input method that applies Eritrean writing conventions. 
-It requires a font supporting Ethiopic script under the Unicode 3.0 standard. 
+This is a Tigrinya (ti-ER, ትግርኛ-ኤርትራ) language mnemonic input method that applies Eritrean writing conventions.
+It requires a font supporting Ethiopic script under the Unicode 3.0 standard.
 The Tigrinya keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+<p>A more complete typing manual is <a target="_blank" href="TigrinyaErTyping-English.pdf">provided as a PDF file</a> with this distribution.</p>
+</div>
 
- 
 <h2><a id="status" name="status"></a>Typing Letter</h2>
 
 <p style="text-align: justify;">

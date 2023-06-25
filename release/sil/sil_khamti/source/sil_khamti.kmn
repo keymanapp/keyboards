@@ -1,0 +1,183 @@
+﻿c Title:    Khamti (SIL) keyboard
+c Description:
+c           Khamti Shan keyboard based on Shan phonetic keyboard
+c MJPH  1.00    24-OCT-2003     Original
+c MJPH  1.01     7-NOV-2003     Add QqwJ
+c MJPH  1.1      8-AUG-2005     recode to new orthography
+c MJPH  1.1.2   12-AUG-2005     add 's' key
+c MJPH  0.1     20-JUN-2008     Convert to Unicode
+c MJPH  0.2     26-AUG-2008     Convert to next Unicode!
+c MJPH  0.3     04-FEB-2009     Add Pali chars to Unicode
+c MJPH  0.4     24-FEB-2009     Complete character set
+c MJPH  0.5     14-OCT-2014     Allow keying ldias before udia vowels.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Khamti (SIL)'
+store(&BITMAP) 'sil_khamti.ico'
+c BITMAPS burmkey burmkey0
+c BITMAP burmkey
+c store(&HOTKEY)  '^+P'
+store(&COPYRIGHT) 'SIL International 2019-2023, All rights reserved'
+store(&KEYBOARDVERSION) '1.1'
+store(&VISUALKEYBOARD) 'sil_khamti.kvks'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'sil_khamti.keyman-touch-layout'
+
+begin Unicode > use(Main)
+
+store(baseK)                                                            "o"           "["    "]"    "\" \
+                "Q"    "W"    "E"    "R"    "T"    "Y"    "U"           "O"    "P"    "{"    "}"    "|" \
+                                                                                      '"'     \
+                                            "g"                                               \
+                                            "B"           "M"           ">"    "?"      \
+                       "x"                                "m"           "."    "/"      \
+                       "0"    "1"    "2"    "3"    "4"    "5"    "6"    "7"    "8"    "9"    "-"    "=" \
+                "~"    ")"    "!"    "@"    "#"    "$"    "%"    "^"    "&"    "*"    "("    "_"    "+"
+store(base)                                                             U+101D        U+AA6D U+AA69 U+AA6A \
+                U+107C U+107B U+201C U+201D U+AA63 U+107F U+AA71        U+1085 U+AA72 "["     "]"   U+101B \
+                                                                                      U+1079  \
+                                            U+1083                                            \
+                                            U+AA74        U+AA6E        U+104A "?"         \
+                       U+1011                             U+1062        U+104B "/"         \
+                       U+1090 U+1091 U+1092 U+1093 U+1094 U+1095 U+1096 U+1097 U+1098 U+1099 "-"    "=" \
+                U+AA67 ")"    "!"    "@"    "#"    "$"    "%"    "^"    "&"    "*"    "("    U+AA68 "+"
+
+store(udiaK)    "d"    "D"    "H"    "f"
+store(udia)     U+102D U+102E U+1036 U+103A
+
+store(ldiaK)    "k"    "l"
+store(ldia)     U+102F U+1030
+
+store(preK)     "a"    "F"
+store(pre)      U+1031 U+1084
+
+store(medK)     "S"    "C"    "G"
+store(med)      U+103B U+103C U+103D
+
+store(redupK)   "A"
+store(redup)    U+AA70
+
+store(visargaK) ";"
+store(visarga)  U+1038
+
+store(toneK)    "n"    "h"    "'"    ":"    "J"    "b"
+store(tone)     U+1087 U+1088 U+1089 U+108A U+109A U+109B
+
+c U+1086  AA60
+store(takesVSK) "u"    "V"    "i"    "w"    "y"    "r"    ","    "v"    "t"    "c"    "z"    "X"    \
+                "<"    "p"    "T"    "I"    "N"    "`"    "e"    "q"    "Z"    "K"    "L"    "j"    \
+                "c"
+store(takesVS)  U+1000 U+101B U+1004 U+1010 U+1015 U+1019 U+101A U+101C U+1022 U+1075 U+1078 U+1080 \
+                U+AA60 U+AA61 U+AA63 U+AA64 U+AA65 U+AA66 U+AA6B U+AA6C U+AA6F U+AA75 U+AA76 U+1086 \
+                U+1075
+
+group(Main) using keys
+
+ + "s" > U+1082 U+103A
+U+1082 U+103A + [K_BKSP] > nul
+any(ldia) + any(udiaK) > index(udia,2) context
+ + any(udiaK) > index(udia, 1)
+ + any(ldiaK) > index(ldia, 1)
+ + any(baseK) > index(base, 1)
+ + any(takesVSK) > index(takesVS, 1) U+FE00
+ + any(preK) > U+200B index(pre, 1)
+ + any(medK) > index(med, 1)
+any(pre) + any(medK) > index(med, 2) index(pre, 1)
+U+200B any(pre) + any(baseK) > index(base, 3) index(pre, 2)
+U+200B any(pre) + any(takesVSK) > index(takesVS, 3) U+FE00 index(pre, 2)
+U+200B any(pre) + [K_BKSP] > nul
+any(base) any(pre) + [K_BKSP] > U+200B index(pre, 2)
+any(takesVS) U+FE00 + [K_BKSP] > nul
+any(takesVS) U+FE00 any(pre) + [K_BKSP] > U+200B index(pre, 3)
+any(redup) + any(visargaK) > index(visarga, 2) context
+ + any(visargaK) > index(visarga, 1)
+ + any(toneK) > index(tone, 1)
+ + any(redupK) > index(redup, 1)
+
+any(redup) + any(toneK) > index(tone, 2) context
+any(redup) + any(ldiaK) > index(ldia, 2) context
+any(redup) + any(udiaK) > index(udia, 2) context
+any(redup) + "j" > U+1086 U+FE00 context
+any(redup) + any(medK) > index(med, 2) context
+any(tone) + any(visargaK) > index(visarga, 2) context
+any(tone) + any(ldiaK) > index(ldia, 2) context
+any(tone) + any(udiaK) > index(udia, 2) context
+any(tone) + "j" > U+1086 U+FE00 context
+any(tone) + any(medK) > index(med, 2) context
+any(tone) any(redup) + any(visargaK) > index(visarga, 3) context
+any(tone) any(redup) + any(ldiaK) > index(ldia, 3) context
+any(tone) any(redup) + any(udiaK) > index(udia, 3) context
+any(tone) any(redup) + "j" > U+1086 U+FE00 context
+any(tone) any(redup) + any(medK) > index(med, 3) context
+any(visarga) + any(ldiaK) > index(ldia, 2) context
+any(visarga) + any(udiaK) > index(udia, 2) context
+any(visarga) + "j" > U+1086 U+FE00 context
+any(visarga) + any(medK) > index(med, 2) context
+any(visarga) any(redup) + any(ldiaK) > index(ldia, 3) context
+any(visarga) any(redup) + any(udiaK) > index(udia, 3) context
+any(visarga) any(redup) + "j" > U+1086 U+FE00 context
+any(visarga) any(redup) + any(medK) > index(med, 3) context
+any(visarga) any(tone) + any(ldiaK) > index(ldia, 3) context
+any(visarga) any(tone) + any(udiaK) > index(udia, 3) context
+any(visarga) any(tone) + "j" > U+1086 U+FE00 context
+any(visarga) any(tone) + any(medK) > index(med, 3) context
+any(visarga) any(tone) any(redup) + any(ldiaK) > index(ldia, 4) context
+any(visarga) any(tone) any(redup) + any(udiaK) > index(udia, 4) context
+any(visarga) any(tone) any(redup) + "j" > U+1086 U+FE00 context
+any(visarga) any(tone) any(redup) + any(medK) > index(med, 4) context
+any(ldia) + "j" > U+1086 U+FE00 context
+any(ldia) + any(medK) > index(med, 2) context
+any(ldia) any(redup) + any(udiaK) > index(udia, 3) context
+any(ldia) any(redup) + "j" > U+1086 U+FE00 context
+any(ldia) any(redup) + any(medK) > index(med, 3) context
+any(ldia) any(tone) + any(udiaK) > index(udia, 3) context
+any(ldia) any(tone) + "j" > U+1086 U+FE00 context
+any(ldia) any(tone) + any(medK) > index(med, 3) context
+any(ldia) any(tone) any(redup) + any(udiaK) > index(udia, 4) context
+any(ldia) any(tone) any(redup) + "j" > U+1086 U+FE00 context
+any(ldia) any(tone) any(redup) + any(medK) > index(med, 4) context
+any(ldia) any(visarga) + any(udiaK) > index(udia, 3) context
+any(ldia) any(visarga) + "j" > U+1086 U+FE00 context
+any(ldia) any(visarga) + any(medK) > index(med, 3) context
+any(ldia) any(visarga) any(redup) + any(udiaK) > index(udia, 4) context
+any(ldia) any(visarga) any(redup) + "j" > U+1086 U+FE00 context
+any(ldia) any(visarga) any(redup) + any(medK) > index(med, 4) context
+any(ldia) any(visarga) any(tone) + any(udiaK) > index(udia, 4) context
+any(ldia) any(visarga) any(tone) + "j" > U+1086 U+FE00 context
+any(ldia) any(visarga) any(tone) + any(medK) > index(med, 4) context
+any(ldia) any(visarga) any(tone) any(redup) + any(udiaK) > index(udia, 5) context
+any(ldia) any(visarga) any(tone) any(redup) + "j" > U+1086 U+FE00 context
+any(ldia) any(visarga) any(tone) any(redup) + any(medK) > index(med, 5) context
+any(udia) + any(medK) > index(med, 2) context
+any(udia) any(redup) + any(medK) > index(med, 3) context
+any(udia) any(tone) + any(medK) > index(med, 3) context
+any(udia) any(tone) any(redup) + any(medK) > index(med, 4) context
+any(udia) any(visarga) + any(medK) > index(med, 3) context
+any(udia) any(visarga) any(redup) + any(medK) > index(med, 4) context
+any(udia) any(visarga) any(tone) + any(medK) > index(med, 4) context
+any(udia) any(visarga) any(tone) any(redup) + any(medK) > index(med, 5) context
+any(udia) any(ldia) + any(medK) > index(med, 3) context
+any(udia) any(ldia) any(redup) + any(medK) > index(med, 4) context
+any(udia) any(ldia) any(tone) + any(medK) > index(med, 4) context
+any(udia) any(ldia) any(tone) any(redup) + any(medK) > index(med, 5) context
+any(udia) any(ldia) any(visarga) + any(medK) > index(med, 4) context
+any(udia) any(ldia) any(visarga) any(redup) + any(medK) > index(med, 5) context
+any(udia) any(ldia) any(visarga) any(tone) + any(medK) > index(med, 5) context
+any(udia) any(ldia) any(visarga) any(tone) any(redup) + any(medK) > index(med, 6) context
+U+1086 U+FE00 + any(medK) > index(med, 3) context
+U+1086 U+FE00 any(redup) + any(medK) > index(med, 4) context
+U+1086 U+FE00 any(tone) + any(medK) > index(med, 4) context
+U+1086 U+FE00 any(tone) any(redup) + any(medK) > index(med, 5) context
+U+1086 U+FE00 any(visarga) + any(medK) > index(med, 4) context
+U+1086 U+FE00 any(visarga) any(redup) + any(medK) > index(med, 5) context
+U+1086 U+FE00 any(visarga) any(tone) + any(medK) > index(med, 5) context
+U+1086 U+FE00 any(visarga) any(tone) any(redup) + any(medK) > index(med, 6) context
+U+1086 U+FE00 any(ldia) + any(medK) > index(med, 4) context
+U+1086 U+FE00 any(ldia) any(redup) + any(medK) > index(med, 5) context
+U+1086 U+FE00 any(ldia) any(tone) + any(medK) > index(med, 5) context
+U+1086 U+FE00 any(ldia) any(tone) any(redup) + any(medK) > index(med, 6) context
+U+1086 U+FE00 any(ldia) any(visarga) + any(medK) > index(med, 5) context
+U+1086 U+FE00 any(ldia) any(visarga) any(redup) + any(medK) > index(med, 6) context
+U+1086 U+FE00 any(ldia) any(visarga) any(tone) + any(medK) > index(med, 6) context
+U+1086 U+FE00 any(ldia) any(visarga) any(tone) any(redup) + any(medK) > index(med, 7) context
+any(med) any(pre) + [K_BKSP] > index(pre, 2)

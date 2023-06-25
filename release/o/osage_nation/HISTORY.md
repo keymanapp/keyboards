@@ -1,5 +1,9 @@
-Osage Keyboard Change History
+Osage (Classic) Keyboard Change History
 =======================
+
+1.2.3 (18 Jan 2023)
+-----------------
+* Rename keyboard to Osage (Classic)
 
 1.2.2 (5 Jun 2020)
 -----------------
