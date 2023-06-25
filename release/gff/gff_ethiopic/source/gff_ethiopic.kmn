@@ -206,9 +206,6 @@ store(ቈ_ቤተሰብ_ጉራጌ) '𞟲𞟰𞟱'
 store(ኰ_ቤተሰብ_ጉራጌ) '𞟷𞟵𞟶'
 store(ጐ_ቤተሰብ_ጉራጌ) '𞟺𞟸𞟹'
 
-c store(touchVowelsGGDB)  [T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳብዕ]
-
-
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘_'
   store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘]'
@@ -263,7 +260,6 @@ c ---------------------Begin Mobile Input --------------------------------------
 c
 c Mobile input is separated from Desktop in v3.1 for ease of maintenance
 c
-
   any(ሳድስ) + [T_ግዕዝ] > index(ግዕዝ,1)
   any(ሳድስ) + [T_ካዕብ] > index(ካዕብ,1)
   any(ሳድስ) + [T_ሣልስ] > index(ሣልስ,1)
@@ -271,7 +267,7 @@ c
   any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1) 
   any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
   any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
-  any(መዕን፡ሳድስ) + [T_ሳምን] > index(መዕን፡ሳምን,1)
+  any(መዕን፡ሳድስ)  + [T_ሳምን] > index(መዕን፡ሳምን,1)
 
   any(GGDB፡ሳድስ) + [T_ካዕብ] > index(GGDB፡ካዕብ,1)
   any(GGDB፡ሳድስ) + [T_ሣልስ] > index(GGDB፡ሣልስ,1)
@@ -288,8 +284,6 @@ c
   any(ራብዕ፡Gurage) + [T_ዘመደ_ካዕብ_ጉራጌ] > index(ዘመደ፡ካዕብ፡ModernGurage,1)
   any(ራብዕ፡Gurage) + [T_ዘመደ_ሣልስ_ጉራጌ] > index(ዘመደ፡ሣልስ፡ModernGurage,1)
   any(ራብዕ፡Gurage) + [T_ዘመደ_ኃምስ_ጉራጌ] > index(ዘመደ፡ኃምስ፡ModernGurage,1)
-
-  any(archaicYaBase) + 'Y' > index(archaicYaSyllables,1)
 
   
   if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
@@ -366,7 +360,6 @@ c
   if( &layer = "ቈ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ቈ_ቤተሰብ_ጉራጌ,2)
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ኰ_ቤተሰብ_ጉራጌ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ጐ_ቤተሰብ_ጉራጌ,2)
-
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
 c
@@ -388,6 +381,11 @@ c ---------------------Input of Double Strike Letters---------------------------
   'ሥ' + 's' > 'ꬅ' c Gamo-Gofa-Dawro, Basketo
   'ፅ' + 'S' > 'ꬭ' c Gumuz
   'ዽ' + 'D' > 'ꬍ' c Gamo-Gofa-Dawro, Basketo
+  
+  'ክ' + 'k' > 'ⷍ' c Legacy Gurage
+  'ኽ' + 'K' > 'ⷕ' c Legacy Gurage
+  'ቅ' + 'q' > 'ⷅ' c Legacy Gurage
+  'ግ' + 'g' > 'ⷝ' c Legacy Gurage
 
 c ---------------------End Input of Double Strike Letters---------------------------------------
 
@@ -418,8 +416,11 @@ $keymanonly: any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
   any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
   any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 
+  any(archaicYaBase) + 'Y' > index(archaicYaSyllables,1)
+
   any(መዕን፡ሳብዕ) + any(ሳብዕ-key) > index(መዕን፡ሳምን,1)
 
+  any(GGDB፡ሳድስ) + any(ግዕዝ-key) > context(1) beep
   any(GGDB፡ሳድስ) + any(ካዕብ-key) > index(GGDB፡ካዕብ,1)
   any(GGDB፡ሳድስ) + any(ሣልስ-key) > index(GGDB፡ሣልስ,1)
   any(GGDB፡ሳድስ) + any(ራብዕ-key) > index(GGDB፡ራብዕ,1)
@@ -433,7 +434,7 @@ $keymanonly: any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
-  any(ካዕብ፡መደበኛ)             + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ካዕብ፡መደበኛ) + any(ራብዕ-key) > index(ዘመደ፡ራብዕ፡መደበኛ,1)
   any(ካዕብ፡ልዩ) + any(ግዕዝ-key) > index(ዘመደ፡ግዕዝ,1)
   any(ካዕብ፡ልዩ) + any(ካዕብ-key) > index(ዘመደ፡ካዕብ,1)
   any(ካዕብ፡ልዩ) + any(ሣልስ-key) > index(ዘመደ፡ሣልስ,1)
@@ -450,7 +451,7 @@ c
   any(ሳድስ)      + "'" > context(1) deadkey(1)
 c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
-  any(ካዕብ፡ልዩ)   + "'" > context(1) deadkey(1)
+  any(ካዕብ፡ልዩ)    + "'" > context(1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)             
   any(ሣልስ)      + "'" > context(1) deadkey(1)
 
