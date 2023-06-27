@@ -12,11 +12,10 @@ c
 c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-  store(&Version) '10.0'
-store(&KEYBOARDVERSION) '0.9.1'
+  store(&Version) '15.0'
 store(&NAME) 'ጉራጌ (Gurage)'
 c store(&ETHNOLOGUECODE) 'sgw'
-store(&COPYRIGHT) '© 2019-2022 Ge’ez Frontier Foundation'
+store(&COPYRIGHT) '© 2019-2023 Ge’ez Frontier Foundation'
 store(&MESSAGE) 'This is a Gurage (ጉራጊና) language mnemonic input method.  It requires a font supporting the Ethiopic Extended-B block defined in the Unicode 14 standard.'
   store(&CapsAlwaysOff) '1'
   store(&HotKey) '[CTRL ALT K_G]'
@@ -24,6 +23,7 @@ store(&BITMAP) 'gff_gurage.ico'
 store(&VISUALKEYBOARD) 'gff_gurage.kvks'
 store(&LAYOUTFILE) 'gff_gurage.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'gff_gurage.css'
+$keymanonly:  store(&mnemonicLayout) "1"
 c 
 c =====================End Identity Section=====================================================
 
@@ -101,6 +101,7 @@ c =====================End Data Section=========================================
 c =====================Begin Functional Section=================================================
 c 
 store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.0'
   begin Unicode > use(main)
   group(main) using keys
 
@@ -108,8 +109,29 @@ c ---------------------Input of Special Symbols---------------------------------
 c 
 c The input section here is for rules that must precede other rules
 c 
-  + '_' > U+135F c gemination
-  U+135F + '_' > '_'
+
+$keymanonly: + [CTRL '.'] > U+135E
+$keymanonly: U+135E + [CTRL '.'] > U+135F
+$keymanonly: U+135F + [CTRL '.'] > U+135D
+$keymanonly: U+135D + [CTRL '.'] > U+135D beep
+c
+c Ethiopic combining marks for vowel and consonant stress.
+c
+c The following can happen from the touch keyboards፡
+c
+U+135E + [U_135E] > U+135F c 1 + 1 > 2
+U+135E + [U_135F] > U+135D c 1 + 2 > 3
+U+135F + [U_135E] > U+135D c 2 + 1 > 3
+c
+c warn but don't combine:
+c
+U+135E + [U_135D] > U+135E beep  c 1 + 3
+U+135F + [U_135F] > U+135F beep  c 2 + 2
+U+135F + [U_135D] > U+135F beep  c 2 + 3
+U+135D + [U_135E] > U+135D beep  c 3 + 1
+U+135D + [U_135F] > U+135D beep  c 3 + 2
+U+135D + [U_135D] > U+135D beep  c 3 + 3
+
 
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
   + any(keys)     > index(ሳድስ,1)
@@ -151,38 +173,51 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
-  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
-  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
-  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
-  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
-  deadkey(1)    + "'" > "'"
+  any(ሳድስ)      + "'" > context(1) deadkey(1)
+$keymanonly: any(ሳድስ) + [CTRL ' '] > context(1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
+  any(ራብዕ፡ልዩ)   + "'" > context(1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)             
+  any(ሣልስ)      + "'" > context(1) deadkey(1)
 
-
-  + [SHIFT K_SPACE] > '፡'
-      + ':' > '፡'
+  any(arabNumbersWithZero) + ':' > context(1) ':'
+  any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
+  
++ ':'     > '፡'
+$keymanonly: + [SHIFT ' '] > '፡'
   '፡' + ':' > '።'
+  '፡' + '-' > '፦'
+  '፡' + '+' > '፠'
+  '፡' + '#' > '፨'  
   '።' + ':' > ':'
   ':' + ':' > '፡'  c makes circular
-  '፡' + '+' > '፠'
-  '፡' + '#' > '፨'
-
+  
+  '።' + '.' > '.'
+  '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
+  any(Ethiopic) + '.' > context(1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' ' 
+   
+   
+  any(arabNumbersWithZero) + ',' > context(1) ','
       + ',' > '፣'
   '፣' + ',' > '፥'
   '፥' + ',' > ','
   ',' + ',' > '፣'  c makes circular
+  notany(arabNumbersWithZero) '፣' + any(arabNumbersWithZero) > context(1) '፣' index(arabNumbersWithZero,3)
+  '፣' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > context(1) '፣' ' ' 
+
 
       + ';' > '፤'
   '፤' + ';' > ';'
   ';' + ';' > '፤'  c makes circular
-
-  '፡' + '-' > '፦'
 
       + '<' > '‹'
       + '>' > '›'
   '‹' + '<' > '«'
   '›' + '>' > '»'
   '«' + '<' > '<'
+  '»' + '>' > '>'
 c ---------------------End Input of Punctuation-------------------------------------------------
 
 c ---------------------Input of European Characters---------------------------------------------
