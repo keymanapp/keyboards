@@ -2,6 +2,7 @@
 
 ## 2023-06-27 1.5.4
 * Fix for smart-dot and smart-comma composition.
+* Smart-colon added.
 * Documentation refinements.
 
 ## 2023-06-01 1.5.3
