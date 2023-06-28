@@ -131,7 +131,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ሻ-ሳት</th><th>[xX]</th><td>ሸ</td><td>ሹ</td><td>ሺ</td><td>ሻ</td><td>ሼ</td><td>ሽ</td><td>ሾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ሿ</td><td>&nbsp;</td><th>ʃ</th>
   </tr>
   <tr>
-    <th>ቃፍ</th><th>[qQ]</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>ቍ</td><td>ቊ</td><td>ቋ</td><td>ቌ</td><th>kʼ</th>
+    <th>ቃፍ</th><th>q</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>ቍ</td><td>ቊ</td><td>ቋ</td><td>ቌ</td><th>kʼ</th>
   </tr>
   <tr>
     <th>ቓ-ቃፍ</th><th>Q</th><td>ቐ</td><td>ቑ</td><td>ቒ</td><td>ቓ</td><td>ቔ</td><td>ቕ</td><td>ቖ</td><td>ቘ</td><td>ቚ</td><td>ቊ</td><td>ቛ</td><td>ቜ</td><th>ʁ</th>
@@ -188,7 +188,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ጀ-ድንት</th><th>[jJ]</th><td>ጀ</td><td>ጁ</td><td>ጂ</td><td>ጃ</td><td>ጄ</td><td>ጅ</td><td>ጆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ጇ</td><td>&nbsp;</td><th>ʤ</th>
   </tr>
   <tr>
-    <th>ገምል</th><th>[gG]</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>ጕ</td><td>ጒ</td><td>ጓ</td><td>ጔ</td><th>g</th>
+    <th>ገምል</th><th>G</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>ጕ</td><td>ጒ</td><td>ጓ</td><td>ጔ</td><th>g</th>
   </tr>
   <tr>
     <th>ጘ-ገምል</th><th>G</th><td>ጘ</td><td>ጙ</td><td>ጚ</td><td>ጛ</td><td>ጜ</td><td>ጝ</td><td>ጞ</td><td>ⶓ</td><td>ⶖ</td><td>ⶔ</td><td>ጟ</td><td>ⶕ</td><th>ŋ</th>
