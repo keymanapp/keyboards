@@ -1,9 +1,11 @@
 gff_harari Change History
 ==========================
 
-1.0.3 (13 Jun 2023)
+1.0.3 (27 Jun 2023)
 -------------------
 * Smart-dot and smart-comma composition fix.
+* Smart-colon added.
+* Documentation refinements.
 
 1.0.2 (04 Jun 2023)
 -------------------
