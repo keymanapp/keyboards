@@ -74,7 +74,7 @@ END;
 <p style="text-align: justify;">
 This is a Tigrinya (ti-ER, ትግርኛ-ኤርትራ) language mnemonic input method that applies Eritrean writing conventions.
 It requires a font supporting Ethiopic script under the Unicode 3.0 standard.
-The Tigrinya keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
+The Tigrinya keyboard is “mnemonic” and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
@@ -82,7 +82,7 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 <p>A more complete typing manual is <a target="_blank" href="TigrinyaErTyping-English.pdf">provided as a PDF file</a> with this distribution.</p>
 </div>
 
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in Eritrean Tigrinya may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
