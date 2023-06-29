@@ -56,6 +56,13 @@ table.zaima td, table.zaima th { border: thin solid #666; text-align: center }
 table.zaima th { text-align: center; background-color: #d7d0b9 }
 table.zaima { border-bottom: hidden }
 table.zaima { empty-cells: show }
+
+table.gurage th, table.gurage td { padding: 0.3em }
+table.gurage td, table.kb th { border: thin solid #666; text-align: center ; padding: 0.3em }
+table.gurage { border-bottom: hidden }
+table.gurage { empty-cells: show }
+table.gurage th { text-align: center; border: thin solid #666; background-color: #e0dacf }
+table.gurage caption { margin: 0.5em 0 0 0 }
 END;
   require_once('header.php');
 
@@ -79,10 +86,10 @@ is designed to be intuitive and natural with respect to the sounds available in 
 The keyboard also supports some mnemonic mappings from non-English letters found on European keyboards.
 </p>
 
-<p>A more complete typing manual is provided as a <a href="EthiopicTyping-English.pdf">PDF file</a> with this distribution.</p>
+<p>A more complete typing manual is provided as a <a target="_blank" href="EthiopicTyping-English.pdf">PDF file</a> with this distribution.</p>
 
  
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 The keyboard provides mappings to allow <em>all</em> Ethiopic letters, punctuation, numerals, and special marks defined in the <a href="https://unicode.org">Unicode</a> standard
