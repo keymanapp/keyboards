@@ -73,7 +73,7 @@ END;
 <div id='Overview'>
 <p style="text-align: justify;">
 This is a Blin (ብሊን, ISO-639-2: byn) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
-The Blin keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
+The Blin keyboard is “mnemonic” and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
@@ -81,7 +81,7 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 <p>A more complete typing manual is <a target="_blank" href='BlinTyping-English.pdf'>provided as a PDF</a> file with this distribution.</p>
 </div>
  
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in the Blin language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
