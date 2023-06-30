@@ -206,6 +206,12 @@ store(ቈ_ቤተሰብ_ጉራጌ) '𞟲𞟰𞟱'
 store(ኰ_ቤተሰብ_ጉራጌ) '𞟷𞟵𞟶'
 store(ጐ_ቤተሰብ_ጉራጌ) '𞟺𞟸𞟹'
 
+store(touchVowelsLabialvelarLegacyGurage) [T_ዘመደ_ሣልስ_ጉራጌ_ታሪካዊ][T_ዘመደ_ኃምስ_ጉራጌ_ታሪካዊ]
+store(ᎀ_ቤተሰብ_ጉራጌ_ታሪካዊ) 'ᎁᎂ'
+store(ቡ_ቤተሰብ_ጉራጌ_ታሪካዊ) 'ᎅᎆ'
+store(ᎈ_ቤተሰብ_ጉራጌ_ታሪካዊ) 'ᎉᎊ'
+store(ᎌ_ቤተሰብ_ጉራጌ_ታሪካዊ) 'ᎍᎎ'
+
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘_'
   store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘]'
@@ -291,6 +297,7 @@ c
   if( &layer = "ሀ-layer" ) + 'h' > 'ህ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
+  if( &layer = "ሐ-layer" ) + 'H' > 'ሕ'
   if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
   if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
   if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
@@ -298,14 +305,17 @@ c
   if( &layer = "ሰ-layer" ) + 's' > 'ስ'   c avoid double-strike composition from touch layouts.
   if( &layer = "legacy-ꬁ-extra" ) + any(touchVowels) > index(ꬁ_ቤተሰብ,2)
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
+  if( &layer = "ሸ-layer" ) + 'x' > 'ሽ'
   if( &layer = "legacy-ⶠ-extra" ) + any(touchVowels) > index(ⶠ_ቤተሰብ,2)
   if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
+  if( &layer = "ቀ-layer" ) + 'q' > 'ቅ'
   if( &layer = "ቐ-layer" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
   if( &layer = "legacy-ⷀ-extra" ) + any(touchVowels) > index(ⷀ_ቤተሰብ,2)
   if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
   if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
   if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
   if( &layer = "ቸ-layer" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
+  if( &layer = "ቸ-layer" ) + 'c' > 'ች'   c avoid double-strike composition from touch layouts.
   if( &layer = "legacy-ⶨ-extra" ) + any(touchVowels) > index(ⶨ_ቤተሰብ,2)
   if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
   if( &layer = "legacy-ኀ-extra" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
@@ -314,27 +324,34 @@ c
   if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
   if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2)
+  if( &layer = "ከ-layer" ) + 'k' > 'ክ'
   if( &layer = "legacy-ⷈ-extra" ) + any(touchVowels) > index(ⷈ_ቤተሰብ,2)
   if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
+  if( &layer = "ኸ-layer" ) + 'K' > 'ኽ'
   if( &layer = "legacy-ⷐ-extra" ) + any(touchVowels) > index(ⷐ_ቤተሰብ,2)
   if( &layer = "ዐ-layer" ) 'ዕ' + any(touchVowels) > index(ዐ_ቤተሰብ,3)
   if( &layer = "ዐ-layer" ) 'ዐ' + any(touchVowels) > context(2) index(ዐ_ቤተሰብ,3)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
   if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
   if( &layer = "ዘ-layer" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2)
+  if( &layer = "ዘ-layer" ) + 'z' > 'ዝ'
   if( &layer = "legacy-ꬑ-extra" ) + any(touchVowels) > index(ꬑ_ቤተሰብ,2)
   if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
+  if( &layer = "ዠ-layer" ) + 'Z' > 'ዥ'
   if( &layer = "legacy-ⶰ-extra" ) + any(touchVowels) > index(ⶰ_ቤተሰብ,2)
   if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
   if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
   if( &layer = "legacy-ዸ-extra" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
+  if( &layer = "legacy-ዸ-extra" ) + 'D' > 'ዽ'
   if( &layer = "legacy-ꬉ-extra" ) + any(touchVowels) > index(ꬉ_ቤተሰብ,2)
   if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
   if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
+  if( &layer = "ገ-layer" ) + 'g' > 'ግ'
   if( &layer = "ጘ-layer" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
   if( &layer = "legacy-ⷘ-extra" ) + any(touchVowels) > index(ⷘ_ቤተሰብ,2)
   if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2) 
   if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
+  if( &layer = "ጨ-layer" ) + 'C' > 'ጭ'
   if( &layer = "legacy-ⶸ-extra" ) + any(touchVowels) > index(ⶸ_ቤተሰብ,2)
   if( &layer = "legacy-ꬠ-extra" ) + any(touchVowels) > index(ꬠ_ቤተሰብ,2)
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
@@ -362,6 +379,11 @@ c
   if( &layer = "ቈ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ቈ_ቤተሰብ_ጉራጌ,2)
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ኰ_ቤተሰብ_ጉራጌ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ጐ_ቤተሰብ_ጉራጌ,2)
+
+  if( &layer = "ᎀ-layer" ) + any(touchVowelsLabialvelarLegacyGurage) > index(ᎀ_ቤተሰብ_ጉራጌ_ታሪካዊ,2)
+  if( &layer = "ᎄ-layer" ) + any(touchVowelsLabialvelarLegacyGurage) > index(ቡ_ቤተሰብ_ጉራጌ_ታሪካዊ,2)
+  if( &layer = "ᎈ-layer" ) + any(touchVowelsLabialvelarLegacyGurage) > index(ᎈ_ቤተሰብ_ጉራጌ_ታሪካዊ,2)
+  if( &layer = "ᎌ-layer" ) + any(touchVowelsLabialvelarLegacyGurage) > index(ᎌ_ቤተሰብ_ጉራጌ_ታሪካዊ,2)
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
 c
@@ -432,6 +454,11 @@ $keymanonly: any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
   any(ዘመደ፡ካዕብ፡LegacyGurage) + any(ካዕብ-key) > index(ዘመደ፡ካዕብ፡ModernGurage,1)
   any(ዘመደ፡ሣልስ፡LegacyGurage) + any(ሣልስ-key) > index(ዘመደ፡ሣልስ፡ModernGurage,1)
   any(ዘመደ፡ኃምስ፡LegacyGurage) + any(ግዕዝ-key) > index(ዘመደ፡ኃምስ፡ModernGurage,1)
+
+  any(ዘመደ፡ሣልስ፡ModernGurage) + any(ግዕዝ-key) > index(ዘመደ፡ኃምስ፡ModernGurage,1)
+
+  any(ዘመደ፡ሣልስ፡ModernGurage) + any(ሣልስ-key) > index(ዘመደ፡ሣልስ፡LegacyGurage,1) c Needed for composing ᎁ,ᎅ,ᎉ, and ᎍ. Redundant, but consistent, for ቊ, ኲ, and ጒ.
+  any(ዘመደ፡ኃምስ፡ModernGurage) + any(ግዕዝ-key) > index(ዘመደ፡ኃምስ፡LegacyGurage,1) c Needed for composing ᎂ, ᎆ, ᎊ, and ᎎ. Redundant, but consistent, for ቌ, ኴ, and ጔ.
 
 c ---------------------End Input of Basic Syllables---------------------------------------------
 

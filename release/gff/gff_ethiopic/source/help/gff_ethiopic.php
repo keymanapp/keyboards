@@ -242,7 +242,7 @@ of accidentally typing Basketto letters, for example, if your document language 
     <th>&nbsp;</th><td>ቤተሰብ</td><td>ካዕብ</td><td>ሣልስ</td><td>ግዕዝ</td><td>ራብዕ</td><td>ኃምስ</td><td>ሳድስ</td><td>ሳብዕ</td><td>ሳምን</td><td>ዘመደ፡ግዕዝ</td><td>ዘመደ፡ካዕብ</td><td>ዘመደ፡ሣልስ</td><td>ዘመደ፡ራብዕ</td><td>ዘመደ፡ኃምስ</td><td>ዘመደ፡ያ</td><th style="border-bottom-color: #ffffff;">&nbsp;</th>
   </tr>
   <tr>
-    <th>ቤተሰብ</th><th>Key</th><th>+[eE]</th><th>+[uU]</th><th>+[iI]</th><th>+[aA]</th><th>+[iI][eE]</th><th>&nbsp;</th><th>+[oO]</th><th>+[oO][oO]</th><th>+[uU][eE]</th><th>+[uU][iI]</th><th>+[uU][aA]</th><th>+[uU][iI][eE]</th><th>+[uU][uU]</th><th>+Y</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
+    <th>ቤተሰብ</th><th>Key</th><th>+[eE]</th><th>+[uU]</th><th>+[iI]</th><th>+[aA]</th><th>+[iI][eE]</th><th>&nbsp;</th><th>+[oO]</th><th>+[oO][oO]</th><th>+[uU][eE]</th><th>+[uU][iI][iI]</th><th>+[uU][aA]</th><th>+[uU][iI][iI][eE]</th><th>+[uU][uU]</th><th>+Y</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
   </tr>
   <tr>
     <th>ሆይ</th><th>h</th>
