@@ -93,17 +93,6 @@
 .phone div.kmw-key.kmw-key-special[id$='extra-T_MORE'] /* ▶ */
   { background:  #f3d6ce ; color: black ; }
 
-.phone div.kmw-key.kmw-key-default[id$='U_1390'], .tablet div.kmw-key.kmw-key-default[id$='U_1390'], /* ᎐ */ 
-.phone div.kmw-key.kmw-key-default[id$='U_1391'], .tablet div.kmw-key.kmw-key-default[id$='U_1391'], /* ᎑ */ 
-.phone div.kmw-key.kmw-key-default[id$='U_1391'], .tablet div.kmw-key.kmw-key-default[id$='U_1392'], /* ᎒ */ 
-.phone div.kmw-key.kmw-key-default[id$='U_1393'], .tablet div.kmw-key.kmw-key-default[id$='U_1393'], /* ᎓ */
-.phone div.kmw-key.kmw-key-default[id$='U_1394'], .tablet div.kmw-key.kmw-key-default[id$='U_1394'], /* ᎔ */
-.phone div.kmw-key.kmw-key-default[id$='U_1395'], .tablet div.kmw-key.kmw-key-default[id$='U_1395'], /* ᎕ */
-.phone div.kmw-key.kmw-key-default[id$='U_1396'], .tablet div.kmw-key.kmw-key-default[id$='U_1396'], /* ᎖ */
-.phone div.kmw-key.kmw-key-default[id$='U_1397'], .tablet div.kmw-key.kmw-key-default[id$='U_1397'], /* ᎗ */
-.phone div.kmw-key.kmw-key-default[id$='U_1398'], .tablet div.kmw-key.kmw-key-default[id$='U_1398'], /* ᎘ */
-.phone div.kmw-key.kmw-key-default[id$='U_1399'], .tablet div.kmw-key.kmw-key-default[id$='U_1399'] /* ᎙ */
-    { background:  #f8f2e0 ; color: black ; } 
 
 /* default layer ግዕዝ */
 .phone div.kmw-key.kmw-key-default[id$='T_ግዕዝ'], .tablet div.kmw-key.kmw-key-default[id$='T_ግዕዝ']
@@ -152,8 +141,7 @@
 
 /* ዘመደ-ሣልስ */
 .phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ'],
-.phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ_ጉራጌ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ_ጉራጌ'],
-.phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ_ጉራጌ_ታሪካዊ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ_ጉራጌ_ታሪካዊ']
+.phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ_ጉራጌ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ሣልስ_ጉራጌ']
   {
     background: #ffffff;  color: black ;
     background: linear-gradient(180deg, #ffffff 0%, #fea3aa 100%);
@@ -169,18 +157,19 @@
 
 /* ዘመደ-ኃምስ */
 .phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ'],
-.phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ_ጉራጌ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ_ጉራጌ'],
-.phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ_ጉራጌ_ታሪካዊ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ_ጉራጌ_ታሪካዊ']
+.phone div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ_ጉራጌ'], .tablet div.kmw-key.kmw-key-default[id$='T_ዘመደ_ኃምስ_ጉራጌ']
   {
     background: #ffffff;  color: black ;
     background: linear-gradient(180deg, #ffffff 0%, #e0d7ff 100%);
   }
 
-/* resets sadis letters that appear in popups of the default layers, this is needed for when the keys appear on the -extra layer */
+
+.tablet.ios .kmw-keyboard-gff_gurage #ethiopic-punctuation-U_1362, .tablet.ios .kmw-keyboard-gff_gurage #ethiopic-punctuation-U_1362,  
 .tablet.ios .kmw-keyboard-gff_gurage #punctuation-K_HYPHEN, .tablet.ios .kmw-keyboard-gff_gurage #punctuation-K_EQUAL,  
 .ios .kmw-keyboard-gff_gurage #punctuation-K_1\+shift, .phone.ios .kmw-keyboard-gff_gurage #punctuation-2-K_1\+shift
 {background: #fdfdfe ; color: black ; }
 
+.tablet.android .kmw-keyboard-gff_gurage #ethiopic-punctuation-U_1362, .tablet.android .kmw-keyboard-gff_gurage #ethiopic-punctuation-U_1362,  
 .tablet.android .kmw-keyboard-gff_gurage #punctuation-K_HYPHEN, .tablet.android .kmw-keyboard-gff_gurage #punctuation-K_EQUAL, 
 .android .kmw-keyboard-gff_gurage #punctuation-K_1\+shift, .phone.android .kmw-keyboard-gff_gurage #punctuation-2-K_1\+shift
 {background: #777 ; color: white ; }

@@ -273,6 +273,17 @@ c
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ኰ_ቤተሰብ_ጉራጌ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabialvelarModernGurage) > index(ጐ_ቤተሰብ_ጉራጌ,2)
 
+c Addition for tablet layout ("extras" are no longer "extra")
+  if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+  if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
+  if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
+  if( &layer = "ዐ-layer" ) 'ዕ' + any(touchVowels) > index(ዐ_ቤተሰብ,3)
+  if( &layer = "ዐ-layer" ) 'ዐ' + any(touchVowels) > context(2) index(ዐ_ቤተሰብ,3)
+  if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
+  if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
+  if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2)  
+  if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
 
@@ -459,5 +470,7 @@ c enhance this later, look for something that can copy a match over
 
 + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
+
++ [T_SPACER] > beep c this should be impossible, this line needed to to avoid "Warning: 2092" warnings for unknown key T_SPACER
                                             
 c =====================End Functional Section===================================================
