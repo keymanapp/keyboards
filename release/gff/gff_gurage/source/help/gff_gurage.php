@@ -1,6 +1,6 @@
 <?php 
   $pagename = "GFF Gurage";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for the Gurage Language";
+  $pagetitle = "The Geʾez Frontier Foundation Keyboard for the Gurage Language";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -117,7 +117,7 @@ SIL <a href="http://scripts.sil.org/OFL">Open Font License</a> (OFL):
 </dl>
 
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+<p>A more complete typing manual is provided as a <a target="_blank" href="GurageTyping-English.pdf">PDF file</a> with this distribution.</p>
 
  
 <h2><a id="status" name="status"></a>Typing Letter</h2>
@@ -144,9 +144,9 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>Key</th><th>+[eE]</th><th>+[uU]</th><th>+[iI]</th><th>+[aA]</th><th>+[iI][eE]</th><th>&nbsp;</th><th>+[oO]</th><th>+[uU][eE]</th><th>+[uU][iI]</th><th>+[uU][aA]</th><th>+[uU][iI][eE]</th><th>+[uU][uU]</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
   </tr>
   <tr>
-    <th>[hH]</th><td>ሐ</td><td>ሑ</td><td>ሒ</td><td>ሓ</td><td>ሔ</td><td>ሕ</td><td>ሖ</td><td>𞟨</td><td>𞟩</td><td>ሗ</td><td>𞟪</td><td>𞟫</td><th>h</th>
+    <th>h</th><td>ሐ</td><td>ሑ</td><td>ሒ</td><td>ሓ</td><td>ሔ</td><td>ሕ</td><td>ሖ</td><td>𞟨</td><td>𞟩</td><td>ሗ</td><td>𞟪</td><td>𞟫</td><th>h</th>
   <tr>
-    <th>[hH][yY]</th><td>𞟠</td><td>𞟡</td><td>𞟢</td><td>𞟣</td><td>𞟤</td><td>𞟥</td><td>𞟦</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>hʸ</th>
+    <th>H</th><td>𞟠</td><td>𞟡</td><td>𞟢</td><td>𞟣</td><td>𞟤</td><td>𞟥</td><td>𞟦</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>hʸ</th>
   </tr>
   <tr>
     <th>[lL]</th><td>ለ</td><td>ሉ</td><td>ሊ</td><td>ላ</td><td>ሌ</td><td>ል</td><td>ሎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>l</th>
@@ -158,16 +158,16 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[rR]</th><td>ረ</td><td>ሩ</td><td>ሪ</td><td>ራ</td><td>ሬ</td><td>ር</td><td>ሮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>r</th>
   </tr>
   <tr>
-    <th>s</th><td>ሰ</td><td>ሱ</td><td>ሲ</td><td>ሳ</td><td>ሴ</td><td>ስ</td><td>ሶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>s</th>
+    <th>[sS]</th><td>ሰ</td><td>ሱ</td><td>ሲ</td><td>ሳ</td><td>ሴ</td><td>ስ</td><td>ሶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>s</th>
   </tr>
   <tr>
     <th>[xX]</th><td>ሸ</td><td>ሹ</td><td>ሺ</td><td>ሻ</td><td>ሼ</td><td>ሽ</td><td>ሾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʃ</th>
   </tr>
   <tr>
-    <th>[qQ]</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>𞟰</td><td>ቋ</td><td>𞟱</td><td>𞟲</td><th>kʼ</th>
+    <th>q</th><td>ቀ</td><td>ቁ</td><td>ቂ</td><td>ቃ</td><td>ቄ</td><td>ቅ</td><td>ቆ</td><td>ቈ</td><td>𞟰</td><td>ቋ</td><td>𞟱</td><td>𞟲</td><th>kʼ</th>
   </tr>
   <tr>
-    <th>[qQ][yY]</th><td>ቐ</td><td>ቑ</td><td>ቒ</td><td>ቓ</td><td>ቔ</td><td>ቕ</td><td>ቖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>k'ʸ</th>
+    <th>Q</th><td>ቐ</td><td>ቑ</td><td>ቒ</td><td>ቓ</td><td>ቔ</td><td>ቕ</td><td>ቖ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>k'ʸ</th>
   </tr>
   <tr>
     <th>[bBvV]</th><td>በ</td><td>ቡ</td><td>ቢ</td><td>ባ</td><td>ቤ</td><td>ብ</td><td>ቦ</td><td>ᎄ</td><td>𞟳</td><td>ቧ</td><td>𞟱</td><td>ᎇ</td><th>b</th>
@@ -188,10 +188,10 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>e</th><td>አ<br/>ee</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>a</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
   </tr>
   <tr>
-    <th>[kK]</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>𞟵</td><td>ኳ</td><td>𞟶</td><td>𞟷</td><th>k</th>
+    <th>k</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>𞟵</td><td>ኳ</td><td>𞟶</td><td>𞟷</td><th>k</th>
   </tr>
   <tr>
-    <th>[kK][yY]</th><td>ኸ</td><td>ኹ</td><td>ኺ</td><td>ኻ</td><td>ኼ</td><td>ኽ</td><td>ኾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>kʸ</th>
+    <th>K</th><td>ኸ</td><td>ኹ</td><td>ኺ</td><td>ኻ</td><td>ኼ</td><td>ኽ</td><td>ኾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>kʸ</th>
   </tr>
   <tr>
     <th>[wW]</th><td>ወ</td><td>ዉ</td><td>ዊ</td><td>ዋ</td><td>ዌ</td><td>ው</td><td>ዎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>w</th>
@@ -215,10 +215,10 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[jJ]</th><td>ጀ</td><td>ጁ</td><td>ጂ</td><td>ጃ</td><td>ጄ</td><td>ጅ</td><td>ጆ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʤ</th>
   </tr>
   <tr>
-    <th>[gG]</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>𞟸</td><td>ጓ</td><td>𞟹</td><td>𞟺</td><th>g</th>
+    <th>g</th><td>ገ</td><td>ጉ</td><td>ጊ</td><td>ጋ</td><td>ጌ</td><td>ግ</td><td>ጎ</td><td>ጐ</td><td>𞟸</td><td>ጓ</td><td>𞟹</td><td>𞟺</td><th>g</th>
   </tr>
   <tr>
-    <th>[gG][yY]</th><td>ጘ</td><td>ጙ</td><td>ጚ</td><td>ጛ</td><td>ጜ</td><td>ጝ</td><td>ጞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>gʸ</th>
+    <th>G</th><td>ጘ</td><td>ጙ</td><td>ጚ</td><td>ጛ</td><td>ጜ</td><td>ጝ</td><td>ጞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>gʸ</th>
   </tr>
   <tr>
     <th>T</th><td>ጠ</td><td>ጡ</td><td>ጢ</td><td>ጣ</td><td>ጤ</td><td>ጥ</td><td>ጦ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>tʼ</th>
@@ -311,7 +311,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2019-2021. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2019-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
