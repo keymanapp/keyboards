@@ -16,7 +16,7 @@ store(&Version) '15.0'
 store(&KEYBOARDVERSION) '1.0.2'
 store(&Name) 'አዊ & ኽምጣጘ (Awngi & Xamtanga)'    
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
-store(&MESSAGE) 'This is an Awngi & Xamtanga language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&MESSAGE) 'This is an Awngi & Xamtanga language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_K]'
 store(&BITMAP) 'gff_awngi_xamtanga.ico'
@@ -278,8 +278,8 @@ c ---------------------Input of Lone Vowels-------------------------------------
 c 
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
-c  any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
 
+  'እ' + any(ግዕዝ-key) > 'ኧ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
   'አ' + any(ራብዕ-key) > 'ኣ'
 
