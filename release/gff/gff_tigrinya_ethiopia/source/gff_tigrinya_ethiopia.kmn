@@ -289,6 +289,7 @@ c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
 c  any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)  
 
+  'እ' + any(ግዕዝ-key) > 'ኧ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
   'ኣ' + any(ራብዕ-key) > 'አ'
 
@@ -302,13 +303,13 @@ c  any(loneVowelEthio) + "'" > index(loneVowelEthio,1) deadkey(1)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
-  any(ሳድስ) + any(ግዕዝ-key) > context(1)
-  any(ሳድስ) + any(ካዕብ-key) > context(1)
-  any(ሳድስ) + any(ሣልስ-key) > context(1)
-  any(ሳድስ) + any(ራብዕ-key) > context(1)
-$keymanonly: any(ሳድስ) + any(ኃምስ-key) > context(1)
-  any(ሣልስ) + any(ግዕዝ-key) > context(1)  
-  any(ሳድስ) + any(ሳብዕ-key) > context(1)
+  any(ሳድስ) + any(ግዕዝ-key) > index(ግዕዝ,1)
+  any(ሳድስ) + any(ካዕብ-key) > index(ካዕብ,1)
+  any(ሳድስ) + any(ሣልስ-key) > index(ሣልስ,1)
+  any(ሳድስ) + any(ራብዕ-key) > index(ራብዕ,1)
+$keymanonly: any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
+  any(ሣልስ) + any(ግዕዝ-key) > index(ኃምስ,1)  
+  any(ሳድስ) + any(ሳብዕ-key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
