@@ -70,57 +70,17 @@ END;
 
 <p style="text-align: justify;">
 This is a Gurage (ጉራጊና , ISO-639-2 swg) language mnemonic input method
-for the Gurage orthography devised by Dr. Fekede Menuta and adopted in Unicode 14.  It requires a font
-supporting the Ethiopic Extended-B block defined in the Unicode 14 standard.</p>
-
-<p style="text-align: justify;">
+for the Gurage orthography devised by Dr. Fekede Menuta and adopted in Unicode 14. It requires a font
+supporting the Ethiopic Extended-B block defined in the Unicode 14 standard.
 The Gurage keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p style="text-align: justify;">
-The following fonts are packaged with the keyboard and have all been derived from pre-existing fonts available under the
-SIL <a href="http://scripts.sil.org/OFL">Open Font License</a> (OFL):
-</p>
-
-<dl>
-  <dt><strong>Gurage Ethiopia Jiret</strong></dt>
-  <dd>The Gurage Ethiopic Fantuwua font is derived from the Ethiopic Fantuwua font
-  from the <a href="https://senamirmir.org/projects/typography/washra.html">WashRa 4.1</a> collection.
-  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageEthiopiaJiret.txt">FONTLOG</a>) for details.
-  </dd>
-
-  <dt><strong>Gurage Ethiopic Fantuwua</strong></dt>
-  <dd>The Gurage Ethiopic Fantuwua font is derived from the Ethiopic Fantuwua font
-  from the <a href="https://senamirmir.org/projects/typography/washra.html">WashRa 4.1</a> collection.
-  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageEthiopicFantuwua.txt">FONTLOG</a>) for details.
-  </dd>
-  
-  <dt><strong>Gurage Ethiopic Wookianos</strong></dt>
-  <dd>The Gurage Ethiopic Fantuwua font is derived from the Ethiopic Wookianos font
-  from the <a href="https://senamirmir.org/projects/typography/washra.html">WashRa 4.1</a> collection.
-  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageEthiopicWookianos.txt">FONTLOG</a>) for details.
-  </dd>
-
-  <dt><strong>Gurage Noto Sans Ethiopic</strong></dt>
-  <dd>The Gurage Noto Sans Ethiopic font is derived from the
-  <a href="https://github.com/googlefonts/noto-fonts">Noto Serif Ethiopic</a> font.
-  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageNotoSansEthiopic.txt">FONTLOG</a>) for details.
-  </dd>
-
-  <dt><strong>Gurage Noto Serif Ethiopic</strong></dt>
-  <dd>The Gurage Noto Serif Ethiopic font is derived from the
-  <a href="https://github.com/googlefonts/noto-fonts">Noto Serif Ethiopic</a> font.
-  See the <a href="https://github.com/raeytype/gurage-font-collection/blob/master/FONTLOG-GurageNotoSerifEthiopic.txt">FONTLOG</a>) for details.
-  </dd>
-</dl>
-
-
-<p>A more complete typing manual is provided as a <a target="_blank" href="GurageTyping-English.pdf">PDF file</a> with this distribution.</p>
+<p>A more complete typing manual is provided as a PDF file (<a target="_blank" href="GurageTyping-English.pdf">English</a>, <a target="_blank" href="GurageTyping-English.pdf">ጉራጊና</a>) with this distribution.</p>
 
  
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in Gurage may be typed with this keyboard. To type additional Ethiopic letters used by other languages,
@@ -158,7 +118,7 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>[rR]</th><td>ረ</td><td>ሩ</td><td>ሪ</td><td>ራ</td><td>ሬ</td><td>ር</td><td>ሮ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>r</th>
   </tr>
   <tr>
-    <th>[sS]</th><td>ሰ</td><td>ሱ</td><td>ሲ</td><td>ሳ</td><td>ሴ</td><td>ስ</td><td>ሶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>s</th>
+    <th>s</th><td>ሰ</td><td>ሱ</td><td>ሲ</td><td>ሳ</td><td>ሴ</td><td>ስ</td><td>ሶ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>s</th>
   </tr>
   <tr>
     <th>[xX]</th><td>ሸ</td><td>ሹ</td><td>ሺ</td><td>ሻ</td><td>ሼ</td><td>ሽ</td><td>ሾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʃ</th>
@@ -185,10 +145,10 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
     <th>N</th><td>ኘ</td><td>ኙ</td><td>ኚ</td><td>ኛ</td><td>ኜ</td><td>ኝ</td><td>ኞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ɲ</th>
   </tr>
   <tr>
-    <th>e</th><td>አ<br/>ee</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>a</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
+    <th>a</th><td>አ<br/>a</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>aa</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
   </tr>
   <tr>
-    <th>k</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>𞟵</td><td>ኳ</td><td>𞟶</td><td>𞟷</td><th>k</th>
+    <th>K</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>𞟵</td><td>ኳ</td><td>𞟶</td><td>𞟷</td><th>k</th>
   </tr>
   <tr>
     <th>K</th><td>ኸ</td><td>ኹ</td><td>ኺ</td><td>ኻ</td><td>ኼ</td><td>ኽ</td><td>ኾ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>kʸ</th>
@@ -196,8 +156,8 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
   <tr>
     <th>[wW]</th><td>ወ</td><td>ዉ</td><td>ዊ</td><td>ዋ</td><td>ዌ</td><td>ው</td><td>ዎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>w</th>
   </tr>
-  <tr>
-    <th>E</th><td>ዐ<br/>Ee<br/>&nbsp;</td><td>ዑ<br/>Eu /<br/>U</td><td>ዒ<br/>Ei /<br/>I</td><td>ዓ<br/>Ea /<br/>A</td><td>ዔ<br/>Eie /<br/>Ie</td><td>ዕ<br/>E<br/>&nbsp;</td><td>ዖ<br/>Eo /<br/>O</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʕ</th>
+   <tr valign="top">
+    <th valign="middle">A</th><td>ዐ<br/>A</td><td>ዑ<br/>Au / <br/>U</td><td>ዒ<br/>Ai / <br/>I</td><td>ዓ<br/>Aa</td><td>ዔ<br/>Aie / <br/>Ie</td><td>ዕ<br/>Ae / <br/>E</td><td>ዖ<br/>Ao / <br/>O</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th valign="middle">ʕ</th>
   </tr>
   <tr>
     <th>z</th><td>ዘ</td><td>ዙ</td><td>ዚ</td><td>ዛ</td><td>ዜ</td><td>ዝ</td><td>ዞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>z</th>
@@ -244,6 +204,25 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
 </table>
 </div>
 
+<h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
+
+<div style="margin-left: 1em;">
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using “CTRL + . ”. For example:</p>
+
+<table style="margin-top: 0;">
+<tr>
+  <td>አባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፞ (“abaa”, “a” is stressed)</td>
+</tr>
+<tr>
+	<td>አባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፟ (“abba”, “b” is stressed)</td>
+</tr>
+<tr>
+	<td>አባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+</tr>
+</table>
+</div>
+
+
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
 
 <div style="margin-left: 1em;">
@@ -260,12 +239,17 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
   </tr>
 </table>
 
+<p>Period, ‘.’ may also be used to enter ‘።’.  When a number follows ‘፡’, ‘፣’ and ‘።’ they will change back to their Latin form automatically.  For example:</p>
+<dir>
+123፣456	⇒  123,456<br/>
+12።50	⇒  12.50<br/>
+12፡50	⇒  12:50
+</dir>
+
 <h3>Keyboard Punctuation</h3>
 <p>All regular punctuation on your keyboard remains available. Most punctuation can be typed
 with a single keystroke as usual.  Those used to input Ethiopic symbols can be entered by
 hitting the punctuation key two or more times until it appears.</p>
-
-
 </div>
 
 <h2><a id="numerals" name="numerals"></a>Typing Numerals</h2>

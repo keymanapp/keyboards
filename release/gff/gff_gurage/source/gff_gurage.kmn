@@ -54,9 +54,11 @@ store(ሌሎች፡ሳድስ)  'ልምርሽብብብውይድጅስፍፕ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 c ---------------------Begin Maps of Sebatbeit Forms-----------------------------------------------
-store(potentialSebatbeit) 'ሕቅክግ'
-store(sebatbeit)  '𞟥ቕኽጝ'
-store(sebatbeitY) 'yY'
+c Deprecating experimentally.
+c
+c store(potentialSebatbeit) 'ሕቅክግ'
+c store(sebatbeit)  '𞟥ቕኽጝ'
+c store(sebatbeitY) 'yY'
 c ---------------------End Maps of Sebatbeit Forms-----------------------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
@@ -323,7 +325,6 @@ c
 c Alef-A Vowels as Vowels
   + any(loneVowelKeys) > index(loneVowelEthio,1)
 
-  'እ' + any(ግዕዝ-key) > 'ኧ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
   'ኣ' + any(ራብዕ-key) > 'አ'
 
@@ -347,7 +348,7 @@ $keymanonly: any(ሳድስ) + any(ኃምስ-key) > index(ኃምስ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
 
 c ---------------------Input of Sebatbeit Syllables-------------------------------------------------
-  any(potentialSebatbeit) + any(sebatbeitY) > index(sebatbeit,1)
+c  any(potentialSebatbeit) + any(sebatbeitY) > index(sebatbeit,1)
 c ---------------------End Input of Sebatbeit Syllables---------------------------------------------
 
 c ---------------------Input of Labiovelars-----------------------------------------------------
@@ -375,7 +376,7 @@ $keymanonly: any(ሳድስ) + [CTRL ' '] > context(1) deadkey(1)
   any(arabNumbersWithZero) + ':' > context(1) ':'
   any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
   
-+ ':'     > '፡'
++ ':'      > '፡'
 $keymanonly: + [SHIFT ' '] > '፡'
   '፡' + ':' > '።'
   '፡' + '-' > '፦'
