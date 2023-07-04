@@ -100,10 +100,10 @@ have been derived from <a href="https://software.sil.org/abyssinica/">Abyssinica
   </dd>
 </dl>
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+<p>A more complete typing manual is provided as a PDF file (<a target="_blank" href="GurageTyping-Legacy-English.pdf">English</a>,<a target="_blank" href="GurageTyping-Legacy-Gurage.pdf">ጉራጊና</a>) with this distribution.</p>
 
  
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in Gurage may be typed with this keyboard. To type additional Ethiopic letters used by other languages,
@@ -227,6 +227,26 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
 </table>
 </div>
 
+
+<h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
+
+<div style="margin-left: 1em;">
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using <nobr>“CTRL + <b>.</b>”.</nobr> For example:</p>
+
+<table style="margin-top: 0; white-space: nowrap;">
+<tr>
+  <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፟ (“abba”, “b” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+</tr>
+</table>
+</div>
+
+
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
 
 <div style="margin-left: 1em;">
@@ -243,12 +263,17 @@ please download a keyboard for the language needed (e.g. Amharic or Tigrinya).
   </tr>
 </table>
 
+<p>Period, ‘.’ may also be used to enter ‘።’.  When a number follows ‘፡’, ‘፣’ and ‘።’ they will change back to their Latin form automatically.  For example:</p>
+<dir>
+123፣456	⇒  123,456<br/>
+12።50	⇒  12.50<br/>
+12፡50	⇒  12:50
+</dir>
+
 <h3>Keyboard Punctuation</h3>
 <p>All regular punctuation on your keyboard remains available. Most punctuation can be typed
 with a single keystroke as usual.  Those used to input Ethiopic symbols can be entered by
 hitting the punctuation key two or more times until it appears.</p>
-
-
 </div>
 
 <h2><a id="numerals" name="numerals"></a>Typing Numerals</h2>
@@ -294,7 +319,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2008-2020. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2008-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

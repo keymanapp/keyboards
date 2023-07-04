@@ -1,15 +1,15 @@
 ጉራጊና (Gurage) Legacy Keyboard
 ============================
 
-Copyright (C) 2008-2020 Ge'ez Frontier Foundation
+Copyright (C) 2008-2023 Geʾez Frontier Foundation
 
-Version 0.11
+Version 0.5
 
 This is a Gurage (ጉራጊና , ISO-639-2 sgw-Ethi-XL) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard. This keyboard is the immediate
 successor to the GFF Sebatbeit keyboard (gff-sgw-7.kmn version 7.0).
 
-The keyboard is given the name "Legacy" because it is designed to work with the Gurage
+The keyboard is given the name “Legacy” because it is designed to work with the Gurage
 orthography introduced in the 1966 publication *Ethiopians Speak: Studies in Cultural
 Background, Volume 2. Chaha* and successor orthographies through the formal adoption by
 the Unicode 4.1 standard published in 2005. The following fonts are packaged with the
