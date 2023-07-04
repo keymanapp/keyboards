@@ -61,9 +61,12 @@ dt { font-weight: bold; text-decoration: underline; }
 dd { margin: 0.5em; padding: 0 0 0.5em 0; }
 END;
   require_once('header.php');
-
-
 ?>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="kb.css"/>
+</head>
 
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
