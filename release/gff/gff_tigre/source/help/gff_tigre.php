@@ -82,7 +82,7 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 <p>A more complete typing manual is <a target="_blank" href="TigreTyping-English.pdf">provided as a PDF file</a> with this distribution.</p>
 </div>
 
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in the Tigre language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
@@ -206,6 +206,25 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
   </tr>
 </table>
 </div>
+
+<h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
+
+<div style="margin-left: 1em;">
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using “CTRL + . ”. For example:</p>
+
+<table style="margin-top: 0;">
+<tr>
+  <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፟ (“abba”, “b” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+</tr>
+</table>
+</div>
+
 
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
 
