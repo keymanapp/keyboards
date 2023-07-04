@@ -210,9 +210,9 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 <h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
 
 <div style="margin-left: 1em;">
-<p>Dots can be added above letters to indicate a stressed vowel or consonant using “CTRL + . ”. For example:</p>
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using <nobr>“CTRL + <b>.</b>”.</nobr> For example:</p>
 
-<table style="margin-top: 0;">
+<table style="margin-top: 0; white-space: nowrap;">
 <tr>
   <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
 </tr>
