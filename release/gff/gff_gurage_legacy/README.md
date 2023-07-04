@@ -32,6 +32,11 @@ have been derived from [Abyssinica SIL](https://software.sil.org/abyssinica/).
                       [TypeTuner website](https://scripts.sil.org/ttw/fonts3go.cgi)
                       with the language selection "Sebat Bet Gurage".
 
+Note
+----
+This keyboard package provides a mobile layout that is no longer actively maintained. The mobile layout was introduced as an interim solution while mobile operating systems are being updated to support the Modern Gurage Orthography under the Unicode 14 standard. The mobile layout will be removed once this transition period is complete.
+
+
 
 Links
 -----

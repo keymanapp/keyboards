@@ -102,6 +102,10 @@ have been derived from <a href="https://software.sil.org/abyssinica/">Abyssinica
 
 <p>A more complete typing manual is provided as a PDF file (<a target="_blank" href="GurageTyping-Legacy-English.pdf">English</a>,<a target="_blank" href="GurageTyping-Legacy-Gurage.pdf">ጉራጊና</a>) with this distribution.</p>
 
+<h2>Note</h2>
+<p style="text-align: justify;">
+This keyboard package provides a mobile layout that is no longer actively maintained. The mobile layout was introduced as an interim solution while mobile operating systems are being updated to support the Modern Gurage Orthography under the Unicode 14 standard. The mobile layout will be removed once this transition period is complete.
+</p>
  
 <h2><a id="status" name="status"></a>Typing Letters</h2>
 
