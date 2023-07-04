@@ -511,10 +511,9 @@ c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   '፣' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
   any(arabNumbersWithZero) ',' + ' ' > index(arabNumbersWithZero,1) '፣' ' ' 
 
-      + ';' > '፣'
-  '፣' + ';' > '፤'
+      + ';' > '፤'
   '፤' + ';' > ';'
-  ';' + ';' > '፣'  c makes circular
+  ';' + ';' > '፤'  c makes circular
       
   '፡' + '-' > '፦' 
   
