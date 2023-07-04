@@ -396,10 +396,11 @@ of accidentally typing Basketto letters, for example, if your document language 
 </table>
 </div>
 
+
 <h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
 
 <div style="margin-left: 1em;">
-<p>Dots can be added above letters to indicate a stressed vowel or consonant using “CTRL + . ”. For example:</p>
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using <nobr>“CTRL + <b>.</b>”.</nobr> For example:</p>
 
 <table style="margin-top: 0;">
 <tr>
@@ -412,7 +413,6 @@ of accidentally typing Basketto letters, for example, if your document language 
 	<td>አባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፝ (“abbaa”, “b” and “a” are stressed)</td>
 </tr>
 </table>
-
 </div>
 
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
