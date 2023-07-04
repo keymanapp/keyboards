@@ -402,7 +402,7 @@ of accidentally typing Basketto letters, for example, if your document language 
 <div style="margin-left: 1em;">
 <p>Dots can be added above letters to indicate a stressed vowel or consonant using <nobr>“CTRL + <b>.</b>”.</nobr> For example:</p>
 
-<table style="margin-top: 0;">
+<table style="margin-top: 0; white-space: nowrap;">
 <tr>
   <td>አባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>አባ፞ (“abaa”, “a” is stressed)</td>
 </tr>
