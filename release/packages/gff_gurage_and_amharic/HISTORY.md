@@ -1,4 +1,7 @@
-# Amharic (አማርኛ) & Gurage (ጉራጌ) Keyboards
+# Amharic (አማርኛ) & Gurage (ጉራጊና) Keyboards
+
+## 0.9.1(05 Jul 2023)
+* Interim release that migrates to the Waldba fonts.
 
 ## 0.9 (19 Jul 2021)
 * Resync with Gurage 0.9 and Amharic 2.2 packages.
