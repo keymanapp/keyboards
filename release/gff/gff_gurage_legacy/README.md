@@ -29,7 +29,7 @@ have been derived from [Abyssinica SIL](https://software.sil.org/abyssinica/).
                       Gurage Bible and becoming the reference glyphs under Unicode 4.1.
                       The glpyhs have been in use from 1998 until a new orthography was
                       introduced in 2013. The glpyhs may also be generated from the
-                      [TypeTuner website](https://scripts.sil.org/ttw/fonts3go.cgi)
+                      [TypeTuner website](https://scripts.sil.org/ttw/fonts2go.cgi)
                       with the language selection "Sebat Bet Gurage".
 
 Note
