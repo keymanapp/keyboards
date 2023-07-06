@@ -1,5 +1,9 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+2.0.2 (2023-06-20)
+------------------
+* Fix for smart-dot and smart-comma composition.
+
 2.0.1 (2023-06-03)
 ------------------
 * Fix for labiovelar touch composition keys that were not replacing the 6th order letters.
