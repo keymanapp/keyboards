@@ -78,6 +78,7 @@
 .kmw-keyboard-gff_mesobe_fidelat #numerals-K_4\+shift,
 .kmw-keyboard-gff_mesobe_fidelat #numerals-K_PERIOD
   { background: #f4eee7 ; color: black ; }
+
 /*
 *  =========== DEFAULT LAYER ===========
 *
@@ -153,7 +154,7 @@
 .phone div.kmw-key.kmw-key-shift[id$='K_LOPT'], .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
 .phone div.kmw-key.kmw-key-shift[id$='K_BKSP'], .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
 .phone div.kmw-key.kmw-key-shift[id$='K_ENTER'], .tablet div.kmw-key.kmw-key-shift[id$='K_ENTER'],
-.phone div.kmw-key.kmw-key-special[id$='K_SHIFT'], .tablet div.kmw-key.kmw-key-special[id$='K_SHIFT'],
+.phone div.kmw-key.kmw-key-shift[id$='K_SHIFT'], .tablet div.kmw-key.kmw-key-shift[id$='K_SHIFT'],
 .phone div.kmw-key.kmw-key-deadkey[id$='T_EMPTY'], .tablet div.kmw-key.kmw-key-deadkey[id$='T_EMPTY'],
 .kmw-keyboard-gff_mesobe_fidelat #default-U_12CB
 /* { background: #f3d6ce  ; color: black; } */
@@ -569,3 +570,12 @@
     background: #ffffff;
     background: linear-gradient(180deg, #ffffff 0%, #e0d7ff 100%);
   }
+
+
+.phone.ios .kmw-keyboard-gff_mesobe_fidelat #popup-punctuation-U_2019 
+/* .phone.ios .kmw-key.kmw-key-default[id^='popup'][id$='U_2019] */
+  {background: #fdfdfe ; color: black ; }
+
+.android .kmw-keyboard-gff_mesobe_fidelat #punctuation-U_2019
+  {background: #777 ; color: white ; }
+  
