@@ -1,10 +1,10 @@
 ﻿<?php /*
   Name:             Keyboard_gff_harege_fidelat
-  Copyright:        Keyboard © 2022 The Geʾez Frontier Foundation 
+  Copyright:        Keyboard © 2022-2023 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      23 Oct 2022
-  Last Update:      19 Nov 2022
+  Last Update:      08 Jul 2023
 */
   $pagename = 'Harege Fidelat Keyboard Help';
   $pagetitle = 'Harege Fidelat Keyboard Help';
@@ -29,7 +29,7 @@ code {
 }
 </style>
 
-<p style='margin:0px'>Keyboard &#169; 2022. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © 2022-2023. Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -165,15 +165,6 @@ Due to the keyboard's width it is ideally suited for tablet devices but is also 
 <p>This keyboard complies with Unicode 14</p>
 </div>
 
-<div id="VersionHistory">
-<h3>Version History</h3>
-<dl>
-  <dt>Version 1.01 19 Nov 2022</dt>
-  <dd>Various <code>nextlayer</code> attributes fixed.</dd>
-  <dt>Version 1.0 12 Nov 2022</dt>
-  <dd>Initial release.</dd>
-</dl>
-
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p style="text-align: justify;">
@@ -184,6 +175,6 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL International 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p style="text-align: justify;">
-The Harege Fidelat keyboard layout for Keyman Mobile is Copyright 2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Harege Fidelat keyboard layout for Keyman Mobile is Copyright 2022-2023 Geʾez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>
