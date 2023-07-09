@@ -1,6 +1,6 @@
 # Mesobe Fidelat (መሶበ ፊደላት) Keyboard
 
-Copyright (C) 2022-2023 Geʾez Frontier Foundation
+Copyright © 2022-2023 Geʾez Frontier Foundation
 
 Version 1.1
 
