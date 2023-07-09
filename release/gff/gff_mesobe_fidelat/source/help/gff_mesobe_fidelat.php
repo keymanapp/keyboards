@@ -160,7 +160,7 @@ their products.</p>
 <div id="Related">
 <h3>Related Keyboard Layouts</h3>
 <p>Keyboard Layouts for other Ethiopic languages:</p>
-<p><p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_ethiopic">Ethiopic (Modern Ge</a><br/>
+<p><p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_ethiopic">Ethiopic (Modern Geʾez</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awngi_xamtanta">Awngi &amp; Khimtanga</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
