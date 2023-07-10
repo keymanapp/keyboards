@@ -12,8 +12,8 @@ c
 c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-store(&VERSION) '10.0'
-store(&COPYRIGHT) '© 2022 Geʾez Frontier Foundation'
+store(&VERSION) '15.0'
+store(&COPYRIGHT) '© 2022-2023 Geʾez Frontier Foundation'
 store(&Message) "This is a language neutral touch (only) keyboard for mobile devices. The keyboard provides all Ethiopic letters in active use on a single layer in circular, semi-clockwise orientation."
 store(&CapsAlwaysOff) '1'
 store(&LAYOUTFILE) 'gff_mesobe_fidelat.keyman-touch-layout'
@@ -110,7 +110,7 @@ c =====================End Data Section=========================================
 
 c =====================Begin Functional Section=================================================
 c 
-store(&KEYBOARDVERSION) '1.01'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'mobile tablet'
 store(&NAME) 'መሶበ ፊደላት'
 
@@ -194,6 +194,18 @@ c ---------------------End Input of Labiovelars---------------------------------
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
   if( &layer = "𞟠-layer" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
 c ---------------------End Input of Basic Syllables---------------------------------------------
+c
+c Ethiopic combining marks for vowel and consonant stress.
+c
+c The following can happen from the touch keyboards፡
+c
+U+135E + [U_135E] > U+135F c 1 + 1 > 2
+U+135F + [U_135E] > U+135D c 2 + 1 > 3
+c
+c warn but don't combine:
+c
+U+135D + [U_135E] > U+135D beep  c 3 + 1
+
 
   + [T_THOUSAND] > '፲፻'
   + [T_EMPTY] > beep
