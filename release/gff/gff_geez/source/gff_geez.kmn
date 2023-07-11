@@ -1,6 +1,6 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c The Ge'ez Frontier Foundation's mnemonic input method for Ge'ez script on US-QWERTY
+c The Geʾez Frontier Foundation's mnemonic input method for Ge'ez script on US-QWERTY
 c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
 c Keyman        :  http://www.keyman.com/
@@ -12,14 +12,13 @@ c
 c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-  store(&Version) '15.0'
+store(&Version) '15.0'
 store(&KEYBOARDVERSION) '2.0'
-  store(&Name) 'ግዕዝ (Geʾez)'    
-c  store(&EthnologueCode) 'gez'
-store(&COPYRIGHT) '© 2009-2022 Ge' U+0027 'ez Frontier Foundation'
-  store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
-  store(&CapsAlwaysOff) '1'
-  store(&HotKey) '[CTRL ALT K_G]'
+store(&Name) 'ግዕዝ (Geʾez)'    
+store(&COPYRIGHT) '© 2009-2022 Geʾez Frontier Foundation'
+store(&Message) 'This is a Geʾez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_G]'
 store(&BITMAP) 'gff_geez.ico'
 store(&VISUALKEYBOARD) 'gff_geez.kvks'
 $keymanonly:  store(&mnemonicLayout) "1"
@@ -29,6 +28,10 @@ c =====================End Identity Section=====================================
 c =====================Begin Data Section=======================================================
 
 c The remainder of this document is formatted with a fixed width font.
+
+c Define the set of Ethiopic characters to support contest based input:
+c
+store(Ethiopic) ' ' 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
 
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
@@ -42,11 +45,12 @@ c language specific mappings
   store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys) 'hlHm_rsqbtxnkw_zydgTPSDfp'
+  store(enKeys) 'hlHmrsqbtxnkwzydgTPSDfp'
+  store(ሳድስKeys) 'ህልሕምርስቅብትኅንክውዝይድግጥጵጽፅፍፕ'
 
 c the following is Ge'ez specific
-  store(ሌሎች፡keys) 'LMRXBvVcQNKWYDjJZGCF'
-  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
+  store(ሌሎች፡keys) 'LMRXBvVcQNKWYjJZGCF'
+  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይግግዝግጥፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
 
@@ -59,7 +63,7 @@ $keymanonly: store(አሌፍ፡ካዕብ፡key) 'uùúûü'
 $keymanweb:  store(አሌፍ፡ካዕብ፡key) 'u'
 $keymanonly: store(አሌፍ፡ሣልስ፡key) 'iìíîï'
 $keymanweb:  store(አሌፍ፡ሣልስ፡key) 'i'
- store(አሌፍ፡ኃምስ፡key) 'æ'
+$keymanonly: store(አሌፍ፡ኃምስ፡key) 'æ'
 $keymanonly: store(አሌፍ፡ሳድስ፡key) 'eäéèêë'
 $keymanweb:  store(አሌፍ፡ሳድስ፡key) 'e'
 $keymanonly: store(አሌፍ፡ሳብዕ፡key) 'oòóôõöø'
@@ -121,9 +125,9 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
-  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'
+  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘_'
   store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘]'
-  store(ዜማ፡keys) '1234567890'
+  store(ዜማ፡keys) '1234567890_'
 c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
 c ---------------------Fudge - needed for KMW bug work-around ---------------------------------
@@ -158,7 +162,7 @@ $keymanonly: U+135D + [CTRL '.'] > U+135D beep
 c  deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
 
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
-  + any(keys)     > index(ሳድስ,1)
+  + any(enKeys)   > index(ሳድስKeys,1)
 c ---------------------End Input of ልዩ Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -192,6 +196,7 @@ $keymanonly:  + any(ዓይን፡ኃምስ፡key) > 'ዔ'
   'ዐ' + any(ሣልስ፡key) > 'ዒ'
   'ዐ' + any(ራብዕ፡key) > 'ዓ'
   'ዐ' + any(ሳብዕ፡key) > 'ዖ'
+  'ዒ' + 'E' > 'ዔ'
 
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
@@ -228,12 +233,15 @@ c The only dead key for entry of ልዩ characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
   any(ሳድስ)      + "'" > context(1) deadkey(1)
-c $keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
   any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
   any(ካዕብ፡ልዩ)   + "'" > context(1) deadkey(1)
   any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)             
   any(ሣልስ)      + "'" > context(1) deadkey(1)
   
+
+  any(arabNumbersWithZero) + ':' > context(1) ':'
+  any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
+
 
   + ':'     > '፡'
 $keymanonly: + [SHIFT ' '] > '፡'
@@ -241,11 +249,23 @@ $keymanonly: + [SHIFT ' '] > '፡'
   '።' + ':' > '፨'
   '፨' + ':' > '፠'  c makes circular
   '፠' + ':' > ':'  c makes circular
+
   
+  '።' + '.' > '.'
+  '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
+  any(Ethiopic) + '.' > context(1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' ' 
+  
+  
+ any(arabNumbersWithZero) + ',' > context(1) ','
       + ',' > '፥'
   '፥' + ',' > '፣'
   '፣' + ',' > ','
   ',' + ',' > '፥'  c makes circular
+
+  notany(arabNumbersWithZero) '፥' + any(arabNumbersWithZero) > context(1) '፥' index(arabNumbersWithZero,3)
+  '፥' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > context(1) '፥' ' ' 
 
       + ';' > '፤'
   '፤' + ';' > ';'
@@ -278,10 +298,10 @@ $keymanonly:  + any(euro) > index(euroMap,1)
 $keymanonly:  'ጽ' + 'ß' > 'ፅ'
 $keymanonly:  + '¨' > U+135F
 
-$keymanonly:  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+c $keymanonly:  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
 c this mapping has an Amharic bias
-$keymanonly:  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
-$keymanonly:  + any(euroVowels) > index(euroVowelsMap,1)
+c $keymanonly:  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+c $keymanonly:  + any(euroVowels) > index(euroVowelsMap,1)
 c ---------------------End Input of European Characters-----------------------------------------
 
 c ---------------------Input of Numbers---------------------------------------------------------
