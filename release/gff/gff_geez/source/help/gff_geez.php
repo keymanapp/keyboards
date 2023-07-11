@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "GFF Ge&rsquo;ez";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Ge&rsquo;ez Language";
+  $pagename = "GFF Geʾez";
+  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Geʾez Language";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -58,27 +58,25 @@ table.zaima { border-bottom: hidden }
 table.zaima { empty-cells: show }
 END;
   require_once('header.php');
-
-
 ?>
 
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Ge&rsquo;ez (ግዕዝ, ISO-639-2: gez) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
+This is a Geʾez (ግዕዝ, ISO-639-2: gez) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
 The Ge&rsquo;ez keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+<p>A more complete typing manual is provided as a <a target="_blank" href="GeezTyping-English.pdf">PDF file</a> with this distribution.</p>
 
  
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
-Only the letters used in the Ge&rsquo;ez language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
+Only the letters used in the Geʾez language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
 download a keyboard for the language needed or the <em>language-neutral</em> keyboard that supports composition of all Ethiopic symbols found in Unicode 4.1
 </p>
 
@@ -88,8 +86,8 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
 </p>
 <ul>
   <li>Apostrophe, ' , is a terminator following a ሳድስ (6<th>th</th> form) letter. For example: <kbd>mel'ak</kbd> becomes መልአክ , <kbd>melak</kbd> becomes መላክ .</li>
-  <li>The keystroke of &lsquo;x&rsquo; is added for the &lsquo;ኀ&rsquo; family in agreement with classic Ge&rsquo;ez phonology and modern transliteration conventions.</li>
-  <li>The keystroke of &lsquo;D&rsquo; is added for the &lsquo;ፀ&rsquo; family in agreement with classic Ge&rsquo;ez phonology.</li>
+  <li>The keystroke of &lsquo;x&rsquo; is added for the &lsquo;ኀ&rsquo; family in agreement with classic Geʾez phonology and modern transliteration conventions.</li>
+  <li>The keystroke of &lsquo;D&rsquo; is added for the &lsquo;ፀ&rsquo; family in agreement with classic Geʾez phonology.</li>
 </ul>
 
 <div style="margin-left: 1em;">
@@ -293,7 +291,7 @@ Type the number that corresponds to the qirts that you want and it will appear a
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2022. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

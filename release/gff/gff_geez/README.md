@@ -1,11 +1,11 @@
-ግዕዝ (Ge'ez) Keyboard
+ግዕዝ (Geʾez) Keyboard
 ====================
 
-Copyright (C) 2009-2022 Ge'ez Frontier Foundation
+Copyright (C) 2009-2022 Geʾez Frontier Foundation
 
-Version 1.7
+Version 1.0
 
-This is a Ge'ez (ግዕዝ, ISO-639-2 gez) language mnemonic input method.  It requires a font
+This is a Geʾez (ግዕዝ, ISO-639-2 gez) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard.
 
 Links
@@ -22,6 +22,3 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * Mobile Web
- * iOS
- * Android
