@@ -1,6 +1,10 @@
 gff_harari Change History
 ==========================
 
+1.0.4 (11 Jul 2023)
+-------------------
+* Fix for a => አ, aa => ኣ
+
 1.0.3 (27 Jun 2023)
 -------------------
 * Smart-dot and smart-comma composition fix.
