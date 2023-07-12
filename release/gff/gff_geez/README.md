@@ -1,7 +1,7 @@
 ግዕዝ (Geʾez) Keyboard
 ====================
 
-Copyright (C) 2009-2023 Geʾez Frontier Foundation
+Copyright © 2009-2023 Geʾez Frontier Foundation
 
 Version 2.0
 
