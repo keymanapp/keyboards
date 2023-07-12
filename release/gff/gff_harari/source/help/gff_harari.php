@@ -228,6 +228,7 @@ for full details on how to type all Harari letters, numbers and punctuation.
 <p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_harege_fidelat">Harege Fidelat (All Languages)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_ethiopic">Ethiopic (All Languages)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awngi_xamtanga">Awngi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Geʾez</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_gurage">Gurage</a><br/>
