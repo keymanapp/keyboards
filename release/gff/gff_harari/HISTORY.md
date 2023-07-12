@@ -4,6 +4,7 @@ gff_harari Change History
 1.0.4 (11 Jul 2023)
 -------------------
 * Fix for a => አ, aa => ኣ
+* Update of 5 mobile screenshots.
 
 1.0.3 (27 Jun 2023)
 -------------------
