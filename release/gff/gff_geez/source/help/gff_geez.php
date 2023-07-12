@@ -96,7 +96,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>&nbsp;</th><td>ቤተሰብ</td><td>ካዕብ</td><td>ሣልስ</td><td>ግዕዝ</td><td>ራብዕ</td><td>ኃምስ</td><td>ሳድስ</td><td>ሳብዕ</td><td>ዘመደ፡ግዕዝ</td><td>ዘመደ፡ካዕብ</td><td>ዘመደ፡ሣልስ</td><td>ዘመደ፡ራብዕ</td><td>ዘመደ፡ኃምስ</td><th  style="border-bottom-color: #ffffff;">&nbsp;</th>
   </tr>
   <tr>
-    <th>ቤተሰብ</th><th>Key</th><th>+e</th><th>+u</th><th>+i</th><th>+a</th><th>+ie</th><th>&nbsp;</th><th>+o</th><th>+ueE</th><th>+uu</th><th>+ui</th><th>+uaA</th><th>+uie</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
+    <th>ቤተሰብ</th><th>Key</th><th>+e</th><th>+u</th><th>+i</th><th>+a</th><th>+ie</th><th>&nbsp;</th><th>+o</th><th>+ue</th><th>+uu</th><th>+ui</th><th>+ua</th><th>+uie</th><th style="background-color: #ffffff; border-right-color: #ffffff; border-top-color: #ffffff;">&nbsp;</th>
   </tr>
   <tr>
     <th>ሆይ</th><th>h</th><td>ሀ</td><td>ሁ</td><td>ሂ</td><td>ሃ</td><td>ሄ</td><td>ህ</td><td>ሆ</td><td>ኈ</td><td>ኍ</td><td>ኊ</td><td>ኋ</td><td>ኌ</td><th>h</th>
