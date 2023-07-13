@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
-store(&KEYBOARDVERSION) '1.0.3'
+store(&KEYBOARDVERSION) '1.0.4'
 store(&NAME) 'ሐረሪ (Harari)'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&Message) "This is a Harari language mnemonic input method for Ethiopic script that requires Unicode 3.0 support."
@@ -49,11 +49,6 @@ c language specific mappings
 
 c QWERTY keymappings
 c
-c These stores were introduced in v2.3 of the keyboard to avoid producing an
-c (ignorable) masking error that began appearing with KM15 where '_' was used
-c a place holder for keys in the ሳድስ list that were not directly typed. The
-c maps below are for for the initial keystrike only.
-c
   store(enKeys)  'hlHmrsxqbvtcnNkKwzZydjgTCPSfp'
   store(ሳድስKeys) 'ህልሕምርስሽቅብቭትችንኝክኽውዝዥይድጅግጥጭጵጽፍፕ'
 
@@ -64,8 +59,8 @@ c ---------------------End Maps of Syllabic Forms-------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(loneVowelKeys)  [T_ግዕዝ]'aAuUiIeEoO'[T_ኃምስ]
-  store(loneVowelEthio) 'እኣዐኡዑኢዒእዕኦዖኤ'
-  store(composableVowel) 'ኣኢዐዒ'
+  store(loneVowelEthio) 'እአዐኡዑኢዒእዕኦዖኤ'
+  store(composableVowel) 'አኢዐዒ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------

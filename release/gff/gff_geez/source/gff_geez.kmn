@@ -1,6 +1,6 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c The Ge'ez Frontier Foundation's mnemonic input method for Ge'ez script on US-QWERTY
+c The Geʾez Frontier Foundation's mnemonic input method for Ge'ez script on US-QWERTY
 c keyboards for SIL Keyman, compliant with Unicode 4.1 and later.
 c 
 c Keyman        :  http://www.keyman.com/
@@ -12,18 +12,15 @@ c
 c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
-  store(&Version) '10.0'
-store(&KEYBOARDVERSION) '1.7'
-  store(&Name) 'ግዕዝ (Ge' U+0027 'ez)'    
-c  store(&EthnologueCode) 'gez'
-store(&COPYRIGHT) '© 2009-2022 Ge' U+0027 'ez Frontier Foundation'
-  store(&Message) 'This is a Ge' U+0027 'ez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
-  store(&CapsAlwaysOff) '1'
-  store(&HotKey) '[CTRL ALT K_G]'
+store(&Version) '15.0'
+store(&KEYBOARDVERSION) '2.0'
+store(&Name) 'ግዕዝ (Geʾez)'    
+store(&COPYRIGHT) '© 2009-2023 Geʾez Frontier Foundation'
+store(&Message) 'This is a Geʾez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_G]'
 store(&BITMAP) 'gff_geez.ico'
 store(&VISUALKEYBOARD) 'gff_geez.kvks'
-store(&LAYOUTFILE) 'gff_geez.keyman-touch-layout'
-store(&KMW_EMBEDCSS) 'gff_geez.css'
 $keymanonly:  store(&mnemonicLayout) "1"
 c 
 c =====================End Identity Section=====================================================
@@ -31,6 +28,10 @@ c =====================End Identity Section=====================================
 c =====================Begin Data Section=======================================================
 
 c The remainder of this document is formatted with a fixed width font.
+
+c Define the set of Ethiopic characters to support contest based input:
+c
+store(Ethiopic) ' ' 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
 
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
@@ -40,21 +41,45 @@ c language specific mappings
   store(ሣልስ) 'ሂሊሒሚሢሪሲቂቢቲኂኒኪዊዒዚዪዲጊጢጲጺፂፊፒ'
   store(ራብዕ) 'ሃላሓማሣራሳቃባታኃናካዋዓዛያዳጋጣጳጻፃፋፓ'
   store(ኃምስ) 'ሄሌሔሜሤሬሴቄቤቴኄኔኬዌዔዜዬዴጌጤጴጼፄፌፔ'
-  store(ሳድስ) 'ህልሕምሥርስቅብትኅንክውዐዝይድግጥጵጽፅፍፕ'
+  store(ሳድስ) 'ህልሕምሥርስቅብትኅንክውዕዝይድግጥጵጽፅፍፕ'
   store(ሳብዕ) 'ሆሎሖሞሦሮሶቆቦቶኆኖኮዎዖዞዮዶጎጦጶጾፆፎፖ'
 
 c QWERTY keymappings
-  store(keys) 'hlHm_rsqbtxnkw_zydgTPSDfp'
+  store(enKeys) 'hlHmrsqbtxnkwzydgTPSDfp'
+  store(ሳድስKeys) 'ህልሕምርስቅብትኅንክውዝይድግጥጵጽፅፍፕ'
 
 c the following is Ge'ez specific
-  store(ሌሎች፡keys) 'LMRXBvVcQNKWYDjJZGCF'
-  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይፅግግዝግጥፍ'
+  store(ሌሎች፡keys) 'LMRXBvVcQNKWYjJZGCF'
+  store(ሌሎች፡ሳድስ)  'ልምርኅብብብትቅንክውይግግዝግጥፍ'
 c ---------------------End Maps of Syllabic Forms-----------------------------------------------
 
+
 c ---------------------Maps for Vowels----------------------------------------------------------
-  store(loneVowelKeys)  [T_GEEZ]'aAuUiIeEoO'[T_HAMIS]
-  store(loneVowelEthio)  'አአዐኡኡኢኢእእኦኦኤ'
-  store(composableVowel) 'አኡኢእኦዐዒዓዕ'
+  store(composableVowel) 'አኢዐዒ'
+
+$keymanonly: store(አሌፍ፡ግዕዝ፡key) 'aàáâãå'
+$keymanweb:  store(አሌፍ፡ግዕዝ፡key) 'a'
+$keymanonly: store(አሌፍ፡ካዕብ፡key) 'uùúûü'
+$keymanweb:  store(አሌፍ፡ካዕብ፡key) 'u'
+$keymanonly: store(አሌፍ፡ሣልስ፡key) 'iìíîï'
+$keymanweb:  store(አሌፍ፡ሣልስ፡key) 'i'
+$keymanonly: store(አሌፍ፡ኃምስ፡key) 'æ'
+$keymanonly: store(አሌፍ፡ሳድስ፡key) 'eäéèêë'
+$keymanweb:  store(አሌፍ፡ሳድስ፡key) 'e'
+$keymanonly: store(አሌፍ፡ሳብዕ፡key) 'oòóôõöø'
+$keymanweb:  store(አሌፍ፡ሳብዕ፡key) 'o'
+
+$keymanonly: store(ዓይን፡ግዕዝ፡key) 'AÀÁÂÃÅ'
+$keymanweb:  store(ዓይን፡ግዕዝ፡key) 'A'
+$keymanonly: store(ዓይን፡ካዕብ፡key) 'UÙÚÛÜ'
+$keymanweb:  store(ዓይን፡ካዕብ፡key) 'U'
+$keymanonly: store(ዓይን፡ሣልስ፡key) 'IÌÍÎÏ'
+$keymanweb:  store(ዓይን፡ሣልስ፡key) 'I'
+$keymanonly: store(ዓይን፡ሳድስ፡key) 'EÄÉÈÊË'
+$keymanonly: store(ዓይን፡ኃምስ፡key) 'Æ'
+$keymanweb:  store(ዓይን፡ሳድስ፡key) 'E'
+$keymanonly: store(ዓይን፡ሳብዕ፡key) 'OÒÓÔÕÖØ'
+$keymanweb:  store(ዓይን፡ሳብዕ፡key) 'O'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -84,24 +109,24 @@ c ---------------------Maps for Numbers-----------------------------------------
 c ---------------------End Numbers--------------------------------------------------------------
 
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
-$keymanonly: store(ግዕዝ፡key)  'eEäÄéÉèÈêÊëË'[T_GEEZ]
-$keymanweb:  store(ግዕዝ፡key)  'eE'[T_GEEZ]
-$keymanonly: store(ካዕብ፡key) 'uUùÙúÚûÛüÜ'
-$keymanweb:  store(ካዕብ፡key) 'uU'
-$keymanonly: store(ሣልስ፡key) 'iIìÌíÍîÎïÏ'
-$keymanweb:  store(ሣልስ፡key) 'iI'
-$keymanonly: store(ራብዕ፡key) 'aAàÀáÁâÂãÃåÅ'
-$keymanweb:  store(ራብዕ፡key) 'aA'
-$keymanonly: store(ኃምስ፡key) 'æÆ'[T_HAMIS]
-$keymanweb:  store(ኃምስ፡key) [T_HAMIS]
-$keymanonly: store(ሳብዕ፡key) 'oOòÒóÓôÔõÕöÖøØ'
-$keymanweb:  store(ሳብዕ፡key) 'oO'
+$keymanonly: store(ግዕዝ፡key) 'eäéèêë'
+$keymanweb:  store(ግዕዝ፡key) 'e'
+$keymanonly: store(ካዕብ፡key) 'uùúûü'
+$keymanweb:  store(ካዕብ፡key) 'u'
+$keymanonly: store(ሣልስ፡key) 'iìíîï'
+$keymanweb:  store(ሣልስ፡key) 'i'
+$keymanonly: store(ራብዕ፡key) 'aàáâãå'
+$keymanweb:  store(ራብዕ፡key) 'a'
+$keymanonly: store(ኃምስ፡key) 'æ'
+$keymanonly: store(ሳብዕ፡key) 'oòóôõöø'
+$keymanweb:  store(ሳብዕ፡key) 'o'
+
 c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
 
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
-  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'$ጥብቅ
-  store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘_፟]'
+  store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘_'
+  store(ዜማ፡menu) '[1᎐2᎓3᎒4᎙5᎑6᎔7᎖8᎕9᎗0᎘]'
   store(ዜማ፡keys) '1234567890_'
 c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
 
@@ -114,7 +139,7 @@ c =====================End Data Section=========================================
                   
 c =====================Begin Functional Section=================================================
 c 
-store(&TARGETS) 'any'
+store(&TARGETS) 'windows macosx linux web'
 
 begin Unicode > use(main)
    
@@ -125,14 +150,18 @@ c ---------------------Input of ልዩ Symbols----------------------------------
 c 
 c The input section here is for rules that must precede other rules
 c
+$keymanonly: + [CTRL '.'] > U+135E
+$keymanonly: U+135E + [CTRL '.'] > U+135F
+$keymanonly: U+135F + [CTRL '.'] > U+135D
+$keymanonly: U+135D + [CTRL '.'] > U+135D beep
+
   + '_' > outs(ዜማ፡menu)
   outs(ዜማ፡menu) + any(anyKey) > use(ዜማ፡group)
 
   deadkey(1) + "'" > "'"
-  deadkey(1) + any(loneVowelKeys) > index(loneVowelEthio,2)
 
   + any(ሌሎች፡keys) > index(ሌሎች፡ሳድስ,1)
-  + any(keys)     > index(ሳድስ,1)
+  + any(enKeys)   > index(ሳድስKeys,1)
 c ---------------------End Input of ልዩ Symbols---------------------------------------------
 
 c ---------------------Input of Double Strike Letters-------------------------------------------
@@ -143,42 +172,30 @@ c ---------------------End Input of Double Strike Letters-----------------------
 
 c ---------------------Input of Lone Vowels-----------------------------------------------------
 c 
-c Alef-A Vowels as Vowels
-  + any(loneVowelKeys) > index(loneVowelEthio,1)
-    any(loneVowelKeys) + "'" > index(loneVowelKeys,1) deadkey(1)  
+ + any(አሌፍ፡ግዕዝ፡key) > 'አ'
+ + any(አሌፍ፡ካዕብ፡key) > 'ኡ'
+ + any(አሌፍ፡ሣልስ፡key) > 'ኢ'
+$keymanonly:  + any(አሌፍ፡ኃምስ፡key) > 'ኤ'
+ + any(አሌፍ፡ሳድስ፡key) > 'እ'
+ + any(አሌፍ፡ሳብዕ፡key) > 'ኦ'
 
-c Alef-A Vowels as መደበኛ Syllables
-  'እ' + any(ካዕብ፡key) > 'ኡ'
-  'እ' + any(ሣልስ፡key) > 'ኢ'
-  'እ' + any(ራብዕ፡key) > 'ኣ'
   'ኢ' + any(ግዕዝ፡key) > 'ኤ'
-  'እ' + any(ሳብዕ፡key) > 'ኦ'
+  'አ' + any(ራብዕ፡key) > 'ኣ'
 
-c Aynu-A Vowels as መደበኛ Sylalbles
-  'እ' + any(ግዕዝ፡key) > 'ዕ'
-  'ዕ' + any(ግዕዝ፡key) > 'ዐ'
-  'ዕ' + any(ካዕብ፡key) > 'ዑ'
-  'ዕ' + any(ሣልስ፡key) > 'ዒ'
-  'ዕ' + any(ራብዕ፡key) > 'ዓ'
-  'ዒ' + any(ግዕዝ፡key) > 'ዔ'
-  'ዕ' + any(ሳብዕ፡key) > 'ዖ'
+ + any(ዓይን፡ግዕዝ፡key) > 'ዐ'
+ + any(ዓይን፡ካዕብ፡key) > 'ዑ'
+ + any(ዓይን፡ሣልስ፡key) > 'ዒ'
+$keymanonly:  + any(ዓይን፡ኃምስ፡key) > 'ዔ'
+ + any(ዓይን፡ሳድስ፡key) > 'ዕ'
+ + any(ዓይን፡ሳብዕ፡key) > 'ዖ'
 
-c Aynu-A Vowels as Vowels
-  'ኡ' + any(ካዕብ፡key) > 'ዑ'
-  'ኢ' + any(ሣልስ፡key) > 'ዒ'
-  'ኤ' + any(ግዕዝ፡key) > 'ዔ'
-  'ኦ' + any(ሳብዕ፡key) > 'ዖ'
 
-c Completing the Ge'ez "a" chain
-  'አ' + any(ራብዕ፡key) > 'ዓ'
-  'ዓ' + any(ራብዕ፡key) > 'ዐ'
-
-c Composable Aynu-A vowels as per ti-ER rules
   'ዐ' + any(ግዕዝ፡key) > 'ዕ'
   'ዐ' + any(ካዕብ፡key) > 'ዑ'
   'ዐ' + any(ሣልስ፡key) > 'ዒ'
   'ዐ' + any(ራብዕ፡key) > 'ዓ'
   'ዐ' + any(ሳብዕ፡key) > 'ዖ'
+  'ዒ' + 'E' > 'ዔ'
 
   any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
@@ -188,7 +205,7 @@ c ---------------------Input of Basic Syllables---------------------------------
   any(ሳድስ) + any(ካዕብ፡key) > index(ካዕብ,1)
   any(ሳድስ) + any(ሣልስ፡key) > index(ሣልስ,1)
   any(ሳድስ) + any(ራብዕ፡key) > index(ራብዕ,1)
-  any(ሳድስ) + any(ኃምስ፡key) > index(ኃምስ,1)
+$keymanonly:   any(ሳድስ) + any(ኃምስ፡key) > index(ኃምስ,1)
   any(ሣልስ) + any(ግዕዝ፡key) > index(ኃምስ,1)  
   any(ሳድስ) + any(ሳብዕ፡key) > index(ሳብዕ,1)
 c ---------------------End Input of Basic Syllables---------------------------------------------
@@ -214,13 +231,16 @@ c
 c The only dead key for entry of ልዩ characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
-$keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
-  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
-  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
-  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)
-  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
+  any(ሳድስ)      + "'" > context(1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
+  any(ካዕብ፡ልዩ)   + "'" > context(1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)             
+  any(ሣልስ)      + "'" > context(1) deadkey(1)
   
+
+  any(arabNumbersWithZero) + ':' > context(1) ':'
+  any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
+
 
   + ':'     > '፡'
 $keymanonly: + [SHIFT ' '] > '፡'
@@ -228,11 +248,23 @@ $keymanonly: + [SHIFT ' '] > '፡'
   '።' + ':' > '፨'
   '፨' + ':' > '፠'  c makes circular
   '፠' + ':' > ':'  c makes circular
+
   
+  '።' + '.' > '.'
+  '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
+  any(Ethiopic) + '.' > context(1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' ' 
+  
+  
+ any(arabNumbersWithZero) + ',' > context(1) ','
       + ',' > '፥'
   '፥' + ',' > '፣'
   '፣' + ',' > ','
   ',' + ',' > '፥'  c makes circular
+
+  notany(arabNumbersWithZero) '፥' + any(arabNumbersWithZero) > context(1) '፥' index(arabNumbersWithZero,3)
+  '፥' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > context(1) '፥' ' ' 
 
       + ';' > '፤'
   '፤' + ';' > ';'
@@ -265,10 +297,10 @@ $keymanonly:  + any(euro) > index(euroMap,1)
 $keymanonly:  'ጽ' + 'ß' > 'ፅ'
 $keymanonly:  + '¨' > U+135F
 
-$keymanonly:  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+c $keymanonly:  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
 c this mapping has an Amharic bias
-$keymanonly:  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
-$keymanonly:  + any(euroVowels) > index(euroVowelsMap,1)
+c $keymanonly:  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+c $keymanonly:  + any(euroVowels) > index(euroVowelsMap,1)
 c ---------------------End Input of European Characters-----------------------------------------
 
 c ---------------------Input of Numbers---------------------------------------------------------
@@ -318,7 +350,6 @@ c upto the order of 100 million
 c enhance this later, look for something that can copy a match over
   any(ethNumbers) + any(arabNumbers) > index(ethNumbers,1)  index(ethNumbers,2)
 
-  + [T_THOUSAND] > '፲፻'
 c ---------------------End Input of Numbers-----------------------------------------------------
 
 c ---------------------Begin of EMFUI Symbols-------------------------------------------------
