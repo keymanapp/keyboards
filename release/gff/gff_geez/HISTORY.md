@@ -1,4 +1,11 @@
-# ግዕዝ (Ge'ez) Change History
+# ግዕዝ (Geʾez) Change History
+
+## 2023-07-10 2.0
+* Vowel composition synched with other GFF keyboard revisions.
+* Smart punctuation composition added.
+* Mobile keyboard removed.
+* Abyssinica SIL Alternate 1 and 2 fonts are added.
+* Syllable composition uses lowercase-only vowels (experimental).
 
 ## 2022-10-17 1.7
 * Inclusion of the Abba Garima font.
