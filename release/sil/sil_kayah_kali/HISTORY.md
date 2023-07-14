@@ -1,6 +1,10 @@
 Kayah [Kayah Li] (SIL) Keyboard Change History
 =======================
 
+1.2.2 (14 July 2023)
+-----------------
+* Update Kay Pho Du to new version
+
 1.2.1 (6 Apr 2023)
 -----------------
 * Update font to Kay Pho Du
