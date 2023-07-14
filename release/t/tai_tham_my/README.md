@@ -3,7 +3,7 @@ Tai Tham MY keyboard
 
 © 2023 Tai Lue Literacy Committee
 
-Version 1.0
+Version 1.2
 
 Description
 -----------
@@ -12,6 +12,7 @@ The Tai Tham MY (SIL) keyboard was developed for typing Tai Lue language in Tai 
 
 Links
 -----
+https://keyman.com/keyboards/tai_tham_my
 
 Supported Platforms
 -------------------
