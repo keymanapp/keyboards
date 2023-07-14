@@ -5,9 +5,6 @@
   require_once('header.php');
 ?>
 
-<div id="tab-content2" class="content" style="font-family:'A Tai Tham KH New V3';">
-		
-	<h1>Start Using Tai Tham MY Keyboard</h1>
 		<p style="text-align: justify;">
 		The Tai Tham MY keyboard was developed for typing Tai Lue language in Tai Tham script. The keyboard is available for computers as well as mobile devices.</p>
 
@@ -54,5 +51,4 @@
 		
 		<p>For the PDF version, in English, click <a href="tai_tham_my_en.pdf">here</a> and, in Tai Tham, click <a href="tai_tham_my_en.pdf">here</a>.</p>
 
-		<p>© 2023 Tai Lue Literacy Committee</p>
-</div>
+		<p>© Tai Lue Literacy Committee</p>
