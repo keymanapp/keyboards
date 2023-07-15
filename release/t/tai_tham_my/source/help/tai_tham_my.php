@@ -49,6 +49,6 @@
 		<p>The Right Alt part is shown below. To type the character you want, press Right <kbd>Alt</kbd> + the appropriate key (at the same time). For example, RIGHT <kbd>Alt</kbd> + <kbd>1</kbd> gives ᪑.</p>
 		<p><a href="tablet_layout_altgr.png"><img width="60%" class="keyboard" src="tablet_layout_altgr.png" alt="AltGr state" /></a></p>
 		
-		<p>For the PDF version, in English, click <a href="tai_tham_my_en.pdf">here</a> and, in Tai Tham, click <a href="tai_tham_my_en.pdf">here</a>.</p>
+		<p>For the PDF version, in English, click <a href="tai_tham_my_en.pdf">here</a> and, in Tai Tham, click <a href="tai_tham_my_khb.pdf">here</a>.</p>
 
 		<p>© Tai Lue Literacy Committee</p>
