@@ -1,5 +1,8 @@
 Old Hungarian Change History
 ====================
+1.7.3 (2023-07-16)
+------------------
+* Added digital numbers, quotation marks and punctuation marks for mobile devices ralt+shift layer
 
 1.7.2 (2023-05-17)
 -----------------
