@@ -64,8 +64,8 @@ END;
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Geʾez (ግዕዝ, ISO-639-2: gez) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
-The Ge&rsquo;ez keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
+This is a Geʾez (ግዕዝ, ISO-639-2: gez) language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
+The Ge&rsquo;ez keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard. This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
@@ -76,8 +76,9 @@ The keyboard also supports mnemonic mappings from non-English letters found in E
 <h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
-Only the letters used in the Geʾez language may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
-download a keyboard for the language needed or the <em>language-neutral</em> keyboard that supports composition of all Ethiopic symbols found in Unicode 4.1
+<em>Only</em> the letters used in the Geʾez language may be typed with this keyboard (i.e. no extra letters for Amharic, Tigrinya, etc. are typeable). 
+To type additional Ethiopic letters used by other languages, please download a keyboard for the language needed or the <a href="https://keyman.com/keyboards/gff_ethiopic"><em>language-neutral</em></a> keyboard 
+that supports composition of all Ethiopic symbols found in Unicode 14.
 </p>
 
 
