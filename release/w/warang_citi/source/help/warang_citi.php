@@ -32,5 +32,5 @@ Type @ for Warang Citi letter OWANG <br>
 </div>
 
 
-<p>© 2019-2022 Mangu Purty</p>
+<p>© Mangu Purty</p>
 

@@ -1,5 +1,9 @@
 #Warang Citi Change History
 
+1.1.1 (2023-07-19)
+----------------
+* Removed source from .kps
+
 1.1 (2022-07-13)
 ----------------
 * Added .js to the keyboard package
