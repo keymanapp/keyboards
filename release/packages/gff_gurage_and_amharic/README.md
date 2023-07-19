@@ -1,9 +1,9 @@
 Amharic (አማርኛ) & Gurage (ጉራጊና) Keyboards
 ========================================
 
-Copyright (C) 2019-2023 Ge'ez Frontier Foundation
+Copyright (C) Ge'ez Frontier Foundation
 
-Version 1.0
+Version 1.1
 ===========
 
 This package aggregates the GFF Amharic and Gurage keyboards. Complete documentation on the keyboards
@@ -22,3 +22,4 @@ Supported Platforms
  * Windows
  * macOS
  * Linux 
+ * Mobile
