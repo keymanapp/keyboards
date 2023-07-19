@@ -1,13 +1,13 @@
-<?php 
+<?php
   $pagename = 'Kyrgyz Cyrillic Basic Keyboard Help';
   $pagetitle = 'Kyrgyz Cyrillic Basic Keyboard Help';
-  // Header we will tidy up later  
+  // Header we will tidy up later
   require_once('header.php');
 
 
 ?>
 <p>
-    Kyrgyz Cyrillic Basic 1.1 generated from template.
+    Kyrgyz Cyrillic Basic generated from template.
 </p>
 
 <h1>Keyboard Layout</h1>
@@ -21,4 +21,4 @@
 </div>
 
 
-<p>© 2009-2019 SIL International</p>
+<p>© SIL International</p>
