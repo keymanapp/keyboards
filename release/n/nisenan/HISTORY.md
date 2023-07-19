@@ -1,6 +1,10 @@
 Nisenan Change History
 ====================
 
+2.1.1 (2023-07-19)
+----------------
+* Remove source files from kps
+
 2.1 (2023-05-30)
 ----------------
 Revisions made to SSBMI Nisenan practical orthography on 2023-04-15. New keyboard layout developed to reflect the following changes:
