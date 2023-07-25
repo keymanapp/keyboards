@@ -8,7 +8,14 @@ store(&HOTKEY) '[CTRL SHIFT K_1]'
 store(&BITMAP) 'fv_southern_tutchone.ico'
 store(&VISUALKEYBOARD) 'fv_southern_tutchone.kvks'
  
-begin Unicode > use(main)                      
+begin Unicode > use(main) 
+
+c --- SHORT HANDS ---
+c Several shorthands are used for the diacritics instead of writing them fully each time they are
+c needed. Please reference this list as needed.
+c   Acute       acu     Diaeresis       dia     Macron      mac
+c   Caron       car     Double Acute    dac     Ogonek      ogo
+c   Circumflex  cir     Grave           gra
  
 store(before) "'"  
 store(original) [ALT K_QUOTE]   
@@ -19,11 +26,14 @@ store(alllet) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 store(MBaseVowels) 'AEIOUaeiou'
 store(MHasAcute) 'ÁÉÍÓÚáéíóú'
 store(MHasDiaeresis) 'ÄÜäü'
-store(MHasDiaeresisA) 'Ää'
-store(MHasDiaeresisU) 'Üü'
-store(MHasDiaeresisAcuteU) 'Ǘǘ'
-store(MHasDiaeresisGraveU) 'Ǜǜ'
-store(MHasDiaeresisMacron) 'ǞǕǟǖ'
+store(MHasDiaeresis_A) 'Ää'
+store(MHasDiaeresis_U) 'Üü'
+store(MHasOgonek_AU) 'ĄŲąų'
+store(MHasOgonek_A) 'Ąą'
+store(MHasOgonek_U) 'Ųų'
+store(MHasDiaAcu_U) 'Ǘǘ'
+store(MHasDiaGra_U) 'Ǜǜ'
+store(MHasDiaMac) 'ǞǕǟǖ'
 store(MHasGrave) 'ÀÈÌÒÙàèìòù'
 store(MHasMacron) 'ĀĒĪŌŪāēīōū'
 store(MHasOgonek) 'ĄĘĮǪŲąęįǫų'
@@ -31,6 +41,7 @@ store(AcuteMobile) [T_X] [SHIFT T_X]
 store(GraveMobile) [T_V] [SHIFT T_V]
 store(MacronMobile) [T_MAC] [SHIFT T_MAC]
 store(OgonekMobile) [T_F] [SHIFT T_F] 
+store(MBackspace) [K_BKSP] [SHIFT K_BKSP]
 
 group(main) using keys   
 
@@ -39,31 +50,102 @@ c --- START OF TOUCH LAYOUT RULES ---
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 c --- SINGLE DIACRITICS ---
-any(MBaseVowels) + any(AcuteMobile) > index(HasAcute,1)
-any(MBaseVowels) + any(GraveMobile) > index(HasGrave,1)
-any(MBaseVowels) + any(MacronMobile) > index(HasMacron,1)
-any(MBaseVowels) + any(OgonekMobile) > index(HasOgonek,1)
+any(MBaseVowels) + any(AcuteMobile) > index(MHasAcute,1)
+any(MBaseVowels) + any(GraveMobile) > index(MHasGrave,1)
+any(MBaseVowels) + any(MacronMobile) > index(MHasMacron,1)
+any(MBaseVowels) + any(OgonekMobile) > index(MHasOgonek,1)
 
 c --- OGONEK+1 ---
-any(MHasAcute) + any(OgonekMobile) > index(MHasAcute,1) U+0328
-any(MHasOgonek) + any(AcuteMobile) > index(MHasAcute,1) U+0328
-any(MHasDiaeresis) + any(OgonekMobile) > index(MHasDiaeresis,1) U+0328
-any(MHasGrave) + any(OgonekMobile) > index(MHasGrave,1) U+0328
-any(MHasOgonek) + any(GraveMobile) > index(MHasGrave,1) U+0328
-any(MHasMacron) + any(OgonekMobile) > index(MHasMacron,1) U+0328
-any(MHasOgonek) + any(MacronMobile) > index(MHasMacron,1) U+0328
+
+c Acute
+any(MHasAcute) + any(OgonekMobile) > index(MHasOgonek,1) U+0301
+any(MHasOgonek) + any(AcuteMobile) > index(MHasOgonek,1) U+0301
+
+c Diaeresis
+any(MHasDiaeresis) + any(OgonekMobile) > index(MHasOgonek_AU,1) U+0308
+
+c Grave
+any(MHasGrave) + any(OgonekMobile) > index(MHasOgonek,1) U+0300
+any(MHasOgonek) + any(GraveMobile) > index(MHasOgonek,1) U+0300
+
+c Macron
+any(MHasMacron) + any(OgonekMobile) > index(MHasOgonek,1) U+0304
+any(MHasOgonek) + any(MacronMobile) > index(MHasOgonek,1) U+0304
 
 c --- DIAERESIS+1 ---
-any(MHasDiaeresisU) + any(AcuteMobile) > index(MHasDiaeresisAcuteU,1)
-any(MHasDiaeresisA) + any(AcuteMobile) > index(MHasDiaeresisA,1) U+0301
-any(MHasDiaeresisA) + any(GraveMobile) > index(MHasDiaeresisA,1) U+0300
-any(MHasDiaeresisU) + any(GraveMobile) > index(MHasDiaeresisGraveU,1)
-any(MHasDiaeresis)  + any(MacronMobile) > index(MHasDiaeresisMacron,1)
+c Acute
+any(MHasDiaeresis_A) + any(AcuteMobile) > index(MHasDiaeresis_A,1) U+0301
+any(MHasDiaeresis_U) + any(AcuteMobile) > index(MHasDiaAcu_U,1)
+
+c Grave
+any(MHasDiaeresis_A) + any(GraveMobile) > index(MHasDiaeresis_A,1) U+0300
+any(MHasDiaeresis_U) + any(GraveMobile) > index(MHasDiaGra_U,1)
+
+c Macron
+any(MHasDiaeresis)  + any(MacronMobile) > index(MHasDiaMac,1)
 
 c --- DIAERESIS+2 ---
-any(MHasDiaeresisAcuteU) + any(OgonekMobile) > index(MHasDiaeresisAcuteU,1) U+0328
-any(MHasDiaeresisGraveU) + any(OgonekMobile) > index(MHasDiaeresisGraveU,1) U+0328
-any(MHasDiaeresisMacron) + any(OgonekMobile) > index(MHasDiaeresisMacron,1) U+0328
+c dia ogo + acute
+'ą̈' + any(AcuteMobile) > 'ą̈́'
+'ų̈' + any(AcuteMobile) > 'ų̈́'
+'Ą̈' + any(AcuteMobile) > 'Ą̈́'
+'Ų̈' + any(AcuteMobile) > 'Ų̈́'
+
+c dia ogo + grave
+'ą̈' + any(GraveMobile) > 'ą̈̀'
+'ų̈' + any(GraveMobile) > 'ų̈̀'
+'Ą̈' + any(GraveMobile) > 'Ą̈̀'
+'Ų̈' + any(GraveMobile) > 'Ų̈̀'
+
+c dia ogo + macron
+'ą̈' + any(MacronMobile) > 'ą̈̄'
+'ų̈' + any(MacronMobile) > 'ų̈̄'
+'Ą̈' + any(MacronMobile) > 'Ą̈̄'
+'Ų̈' + any(MacronMobile) > 'Ų̈̄'
+
+c dia acu + ogo
+any(MHasDiaAcu_U) + any(OgonekMobile) > index(MHasOgonek_U,1) U+0308 U+0301
+'ä́' + any(OgonekMobile) > 'ą̈́'
+'Ä́' + any(OgonekMobile) > 'Ą̈́'
+
+c dia gra + ogo
+any(MHasDiaGra_U) + any(OgonekMobile) > index(MHasOgonek_U,1) U+0308 U+0300
+'ä̀' + any(OgonekMobile) > 'ą̈̀'
+'Ä̀' + any(OgonekMobile) > 'Ą̈̀'
+
+c dia mac + ogo
+any(MHasDiaMac) + any(OgonekMobile) > index(MHasOgonek_AU,1) U+0308 U+0304
+
+c --- BACKSPACE ---
+c single diacritic
+any(MHasAcute) + any(MBackspace) > index(MBaseVowels,1)
+any(MHasGrave) + any(MBackspace) > index(MBaseVowels,1)
+any(MHasMacron) + any(MBackspace) > index(MBaseVowels,1)
+any(MHasOgonek) + any(MBackspace) > index(MBaseVowels,1)
+
+c two diacritics
+any(MHasDiaAcu_U) + any(MBackspace) > index(MHasDiaeresis_U,1)
+any(MHasDiaGra_U) + any(MBackspace) > index(MHasDiaeresis_U,1)
+any(MHasDiaMac) + any(MBackspace) > index(MHasDiaeresis,1)
+'ä́' + any(MBackspace) > 'ä'
+'ä̀' + any(MBackspace) > 'ä'
+'ą̈' + any(MBackspace) > 'ä'
+'ų̈' + any(MBackspace) > 'ü'
+'Ä́' + any(MBackspace) > 'Ä'
+'Ä̀' + any(MBackspace) > 'Ä'
+'Ą̈' + any(MBackspace) > 'Ä'
+'Ų̈' + any(MBackspace) > 'Ü'
+
+c three diacritics
+'ą̈́' + any(MBackspace) > 'ą̈'
+'ą̈̀' + any(MBackspace) > 'ą̈'
+'ų̈́' + any(MBackspace) > 'ų̈'
+'ų̈̀' + any(MBackspace) > 'ų̈'
+'Ą̈́' + any(MBackspace) > 'Ą̈'
+'Ą̈̀' + any(MBackspace) > 'Ą̈'
+'Ų̈́' + any(MBackspace) > 'Ų̈'
+'Ų̈̀' + any(MBackspace) > 'Ų̈'
+
 
 store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
 
@@ -83,26 +165,18 @@ store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
 + [SHIFT T_F_0] > 'F'
-'ä́' + [SHIFT T_F] > 'ą̈́' c dia acu ogo
-'ä̀' + [SHIFT T_F] > 'ą̈̀' c dia gra ogo
-'Ä́' + [SHIFT T_F] > 'Ą̈́' c dia acu ogo 
-'Ä̀' + [SHIFT T_F] > 'Ą̈̀' c dia gra ogo
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'J' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'Ł' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON_0] > '"' layer('default')
-+ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_COLON_0] > U+0022 layer('default')
++ [SHIFT T_COLON] > U+0027 layer('default')
 + [SHIFT T_Z] > 'Z' layer('default')
 + [SHIFT T_X_0] > 'X'
-'ą̈' + [SHIFT T_X] > 'ą̈́' c dia acu ogo
-'Ą̈' + [SHIFT T_X] > 'Ą̈́' c dia acu ogo
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_V_0] > 'V'
-'ą̈' + [SHIFT T_V] > 'ą̈̀' c dia gra ogo
-'Ą̈' + [SHIFT T_V] > 'Ą̈̀' c dia gra ogo
 + [SHIFT T_B] > 'B'
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
@@ -116,16 +190,12 @@ store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
 + [T_U] > 'u'
 + [T_I] > 'i'
 + [T_O] > 'o'
-+ [T_P_0] > 'u'
++ [T_P_0] > 'p'
 + [T_P] > 'ü'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
 + [T_F_0] > 'f'
-'ä́' + [T_F] > 'ą̈́' c dia acu ogo
-'ä̀' + [T_F] > 'ą̈̀' c dia gra ogo
-'Ä́' + [T_F] > 'Ą̈́' c dia acu ogo
-'Ä̀' + [T_F] > 'Ą̈̀' c dia gra ogo
 + [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'j'
@@ -136,12 +206,8 @@ store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
 + [T_COLON] > "'"
 + [T_Z] > 'z'
 + [T_X_0] > 'x'
-'ą̈' + [T_X] > 'ą̈́' c dia acu ogo
-'Ą̈' + [T_X] > 'Ą̈́' c dia acu ogo
 + [T_C] > 'c'
 + [T_V_0] > 'v'
-'ą̈' + [T_V] > 'ą̈̀' c dia gra ogo
-'Ą̈' + [T_V] > 'Ą̈̀' c dia gra ogo
 + [T_B] > 'b'
 + [T_N] > 'n'
 + [T_M] > 'm'
@@ -178,19 +244,20 @@ store(HasCircumflex) 'ÂÊÎÔÛŴŶâêîôûŵŷ'
 store(NeedsCirAcu1) 'AEOaeo'
 store(NeedsCirAcu2) 'INMUWYinmuwy'
 store(HasCirAcu) 'ẤẾỐấếố'
-store(NeedsCirGra1)'AEINMOUWYaeinmouwy'
-store(NeedsCirGra2) 'INMOUWYinmouwy'
+store(NeedsCirGra1)'AEOaeo'
+store(NeedsCirGra2) 'INMUWYinmuwy'
 store(HasCirGra) 'ẦỀỒầềồ'
 store(NeedsDiaeresis1)'AEIOUWYaeiouwy'
 store(NeedsDiaeresis2) 'NMnm'
 store(HasDiaeresis) 'ÄËÏÖÜẄŸäëïöüẅÿ'
 store(NeedsDiaAcu1)'IUiu'
-store(NeedsDiaAcu2) 'AENMOWYaenmowy'
+store(NeedsDiaAcu2) 'AEOWYaeowy'
+store(NeedsDiaAcu3) 'NMnm'
 store(HasDiaAcu) 'ḮǗḯǘ'
 store(NeedsDiaGra1)'Uu'
-store(NeedsDiaGra2) 'AEIOWYawiowy'
+store(NeedsDiaGra2) 'AEIOWYaeiowy'
 store(HasDiaGra1) 'Ǜǜ'
-store(HasDiaGra2) 'ÄËÏÖÜẄŸäëïöüẅÿ'
+store(HasDiaGra2) 'ÄËÏÖẄŸäëïöẅÿ'
 store(NeedsDiaMac1)'AOUaou'
 store(NeedsDiaMac2) 'EINMWYeinmwy'
 store(HasDiaMac) 'ǞȪǕǟȫǖ'
@@ -206,37 +273,31 @@ store(HasMacron) 'ĀĒĪŌŪȲāēīōūȳ'
 store(NeedsMacAcu1) 'EOeo'
 store(NeedsMacAcu2) 'AIUYaiuy'
 store(HasMacAcu1) 'ḖṒḗṓ'
-store(HasMacAcu2)'ĀĪŌŪȲāīūȳ'
+store(HasMacAcu2)'ĀĪŪȲāīūȳ'
 store(NeedsMacGra1)'EOeo'
-store(NeedsMacGra2) 'AINMUWYainmuwy'
-store(HasMacGra) 'ḔṐḕṑ'
+store(NeedsMacGra2) 'AIUYaiuy'
+store(NeedsMacGra3) 'NMWnmw'
+store(HasMacGra1) 'ḔṐḕṑ'
+store(HasMacGra2) 'ĀĪŪȲāīūȳ'
 store(NeedsOgonek1)'AEIOUaeiou'
 store(NeedsOgonek2) 'NMWYnmwy'
 store(HasOgonek) 'ĄĘĮǪŲąęįǫų'
+store(Backspace) [K_BKSP] [SHIFT K_BKSP]
 
 c **********
 c *** single diacritics ***
 c **********
- 
-'`' + any(let) > index(let,2) U+0300  c grave (gra) 
-'/' + any(let) > index(let,2) U+0301  c acute (acu)   
-'%' + any(let) > index(let,2) U+030C  c caron (car)
-'^' + any(let) > index(let,2) U+0302  c circumflex (cir)
-'&' + any(let) > index(let,2) U+030B  c double acute (dac)
-',' + any(let) > index(let,2) U+0328  c ogonek (ogo)
-';' + any(let) > index(let,2) U+0308  c diaeresis (dia)
-'=' + any(let) > index(let,2) U+0304  c macron (mac)
 
-'/' + any(NeedsAcute) > index(HasAcute,2)
-'%' + any(NeedsCaron1) > index(HasCaron,2)
+'/' + any(NeedsAcute) > index(HasAcute,2) c acute (acu)
+'%' + any(NeedsCaron1) > index(HasCaron,2) c caron (car)
 '%' + any(NeedsCaron2) > index(NeedsCaron2,2) U+030C 
-'^' + any(NeedsCircumflex1) > index(HasCircumflex,2)
+'^' + any(NeedsCircumflex1) > index(HasCircumflex,2) c cir (car)
 '^' + any(NeedsCircumflex2) > index(NeedsCircumflex2,2) U+0302
-';' + any(NeedsDiaeresis1) > index(HasDiaeresis,2)
+';' + any(NeedsDiaeresis1) > index(HasDiaeresis,2) c diaeresis (dia)
 ';' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,2) U+0308
-'&' + any(NeedsDoubleAcute1) > index(HasDoubleAcute,2)
+'&' + any(NeedsDoubleAcute1) > index(HasDoubleAcute,2) c double acute (dac)
 '&' + any(NeedsDoubleAcute2) > index(NeedsDoubleAcute2,2) U+030B
-'`' + any(NeedsGrave1) > index(HasGrave,2) 
+'`' + any(NeedsGrave1) > index(HasGrave,2) c grave (gra)
 '`' + any(NeedsGrave2) > index(NeedsGrave2,2) U+0300
 '=' + any(NeedsMacron1) > index(HasMacron,2) 
 '=' + any(NeedsMacron2) > index(NeedsMacron2,2) U+0304
@@ -287,6 +348,8 @@ c **********
 '/;' + any(NeedsDiaAcu1) > index(HasDiaAcu,3)
 ';/' + any(NeedsDiaAcu2) > index(HasDiaeresis,3) U+0301
 '/;' + any(NeedsDiaAcu2) > index(HasDiaeresis,3) U+0301
+';/' + any(NeedsDiaAcu3) > index(NeedsDiaAcu3,3) U+0308 U+0301
+'/;' + any(NeedsDiaAcu3) > index(NeedsDiaAcu3,3) U+0308 U+0301
 
 ';%' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+030C c dia car
 '%;' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+030C
@@ -400,17 +463,19 @@ c *********
 c *** Macron+1 ***
 c *********   
 
-'=`' + any(NeedsMacGra1) > index(HasMacGra,3) c mac gra
-'`=' + any(NeedsMacGra1) > index(HasMacGra,3)
-'=`' + any(NeedsMacGra2) > index(NeedsMacGra2,3) U+0300
-'`=' + any(NeedsMacGra2) > index(NeedsMacGra2,3) U+0300
+'=`' + any(NeedsMacGra1) > index(HasMacGra1,3) c mac gra
+'`=' + any(NeedsMacGra1) > index(HasMacGra1,3)
+'=`' + any(NeedsMacGra2) > index(HasMacGra2,3) U+0300
+'`=' + any(NeedsMacGra2) > index(HasMacGra2,3) U+0300
+'=`' + any(NeedsMacGra3) > index(NeedsMacGra3,3) U+0304 U+0300
+'`=' + any(NeedsMacGra3) > index(NeedsMacGra3,3) U+0304 U+0300
 
-'=/' + any(NeedsMacAcu1) > index(HasMacAcu,3) c mac acu
-'/=' + any(NeedsMacAcu1) > index(HasMacAcu,3)
+'=/' + any(NeedsMacAcu1) > index(HasMacAcu1,3) c mac acu
+'/=' + any(NeedsMacAcu1) > index(HasMacAcu1,3)
 '=/' + any(NeedsMacAcu2) > index(HasMacAcu2,3) U+0301
 '/=' + any(NeedsMacAcu2) > index(HasMacAcu2,3) U+0301
-'=/' + any(NeedsMacron2) > index(NeedsMacron2) U+0304 U+0301
-'/=' + any(NeedsMacron2) > index(NeedsMacron2) U+0304 U+0301
+'=/' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+0301
+'/=' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+0301
 
 '=%' + any(NeedsMacron1) > index(HasMacron,3) U+030c c mac car
 '%=' + any(NeedsMacron1) > index(HasMacron,3) U+030c
@@ -431,10 +496,12 @@ c *********
 c *** Macron+Ogonek+1 ***
 c *********
 
-'=,' + any(let) > index(let,3) U+0328 U+0304  c mac ogo
-',=' + any(let) > index(let,3) U+0328 U+0304
-'=,' + any(let) > index(let,3) U+0328 U+0304  c mac ogo
-',=' + any(let) > index(let,3) U+0328 U+0304
+'=,' + any(NeedsOgonek1) > index(HasOgonek,3) U+0304  c mac ogo
+',=' + any(NeedsOgonek1) > index(HasOgonek,3) U+0304
+'=,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0304
+',=' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0304
+
+
 
 '=`,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300  c mac gra ogo
 '`=,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300        
