@@ -1,18 +1,18 @@
 ﻿c Watch Rune Revival at:
 c https://www.youtube.com/channel/UCWLmY2EMdJxE_ch2BTvwl1g
-store(&VERSION) '9.0'
+store(&VERSION) '10.0'
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '© MMXXII ᚱᚢᚾ᛫ᛗᚫᚾ'
 store(&NAME) 'Runes'
 store(&MESSAGE) 'The Runeboard is designed for typing the English language in Anglo-Saxon Futhorc runes & Proto-Germanic in Elder Futhark runes. However, as it includes the entire Unicode Runic Block, it can also be used for typing a variety of Germanic languages in runes. Thanks for installing. Watch Rune Revival at: https://www.youtube.com/channel/UCWLmY2EMdJxE_ch2BTvwl1g'
-store(&KEYBOARDVERSION) '1.2'
+store(&KEYBOARDVERSION) '1.3'
 store(&BITMAP) 'runeboard.ico'
 store(&VISUALKEYBOARD) 'runeboard.kvks'
 store(&LAYOUTFILE) 'runeboard.keyman-touch-layout'
 begin Unicode > use(main)
 group(main) using keys
 + [K_oE2] > 'ᛇ'
-+ [K_Z] > '‍'
++ [K_Z] > '‍' c 200D
 + [CTRL ALT K_2] > '/'
 + [CTRL ALT K_1] > '\'
 + [CTRL ALT K_U] > '⁞'
@@ -67,11 +67,20 @@ group(main) using keys
 + [CTRL ALT K_COLON] > 'ᛌ'
 + [CTRL ALT K_L] > 'ᛀ'
 + [CTRL ALT K_QUOTE] > '?'
+
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_BKQUOTE] > '~'
 + [SHIFT K_COLON] > 'ᛊ'
 + [SHIFT K_RBRKT] > 'ᚶ'
 + [SHIFT K_SPACE] > ' '
 + [SHIFT K_PERIOD] > 'ᚧ'
 + [SHIFT K_COMMA] > 'ᚥ'
+
++ [SHIFT K_A] > nul
++ [SHIFT K_S] > nul
++ [SHIFT K_D] > nul
++ [SHIFT K_6] > nul
+
 + [SHIFT K_M] > 'ᛘ'
 + [SHIFT K_N] > 'ᛔ'
 + [SHIFT K_B] > 'ᛪ'
@@ -142,3 +151,18 @@ group(main) using keys
 + [K_1] > '1'
 + [K_BKQUOTE] > '`'
 + [K_HYPHEN] > '₿'
+
++ [CTRL ALT SHIFT K_RBRKT] > '}'
++ [CTRL ALT SHIFT K_LBRKT] > '{'
++ [CTRL ALT SHIFT K_1] > U+2160
++ [CTRL ALT SHIFT K_2] > U+2164
++ [CTRL ALT SHIFT K_3] > U+2169
++ [CTRL ALT SHIFT K_4] > U+216C
++ [CTRL ALT SHIFT K_5] > U+216D
++ [CTRL ALT SHIFT K_6] > U+216E
++ [CTRL ALT SHIFT K_7] > U+216F
++ [CTRL ALT SHIFT K_8] > U+2181
++ [CTRL ALT SHIFT K_9] > U+2182
++ [CTRL ALT SHIFT K_0] > U+2187
++ [CTRL ALT SHIFT K_HYPHEN] > U+2188
++ [CTRL ALT SHIFT K_EQUAL] > U+2183

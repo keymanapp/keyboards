@@ -1,6 +1,10 @@
 Tatar Basic Change History
 ====================
 
+1.1.1 (2023-07-19)
+------------------
+* Fix key cap for longpress LControl key
+
 1.1 (2019-07-09)
 ----------------
 * Import from Windows 10

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Start Using Tai Tham MY keyboard</title>
+  <style type="text/css" media="screen">
+	li.en { font: 10pt Tahoma; }
+	h1 { font: bold 16pt; color: #4444cc; margin-bottom: 2px }
+    h2 { font: bold 12pt; color: #4444cc; }
+	li.khb { font: 11pt A Tai Tham KH New V3; }
+    
+	.tabs{
+    // width: 100%;
+    // display: inline-blockblock;
+    margin: 40px auto;
+    position: relative;
+	}
+
+	.tabs .tab{
+    float: left;
+    display: block;
+	}
+
+	.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+	}
+
+	.tabs .tab>label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: #FFF;
+    background: #4A83FD;
+	}
+
+	.tabs .content {
+    z-index: 0;/* or display: none; */
+    overflow: hidden;
+    // width: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    // background: #303030;
+    // color: #DFDFDF;
+    border: solid black 1px;
+    opacity:0;
+    transition: opacity 400ms ease-out;
+	}
+
+	.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0;
+    background: #303030;
+    color: #F5F5F5;
+	}
+
+	.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;/* or display: block; */
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+	}
+	table {
+	border-collapse: collapse;
+	}
+
+	td, th {
+	border: 1px solid #999;
+	padding: 0.5rem;
+	text-align: left;
+	}
+
+	kbd
+	{
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    background-color:#f7f7f7;
+    border:1px solid #ccc;
+    border-radius:3px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    color:#333;
+    display:inline-block;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+    line-height:1.4;
+    margin:0 .2em;
+    padding:.2em .6em;
+    text-shadow:0 1px 0 #fff;
+	}
+  </style>
+</head>
+<body>
+
+<ul class="tabs">
+
+	<li class="tab khb">
+		<input type="radio" name="tabs" checked="checked" id="tab1" />
+		<label for="tab1">ᨴᩱ᩠ᨿᨵᨾ᩠ᨾ᩼</label>
+		<div id="tab-content1" class="content" style="font-family:'A Tai Tham KH New V3';">
+		
+			<h1>ᩅᩥᨳᩦᨩᩱᩢ ᨤᩦᨷ᩠ᩋᨯᨴᩱ᩠ᨿᨵᨾ᩠ᨾ᩼ᨾᩮᩨ᩠ᨦᨿ᩠ᩋᨦ</h1>
+				<p style="text-align: justify;">
+				ᨤᩦᨷ᩠ᩋᨯᨴᩱ᩠ᨿᨵᨾ᩠ᨾ᩼ᨾᩮᩨ᩠ᨦᨿ᩠ᩋᨦᨶᩦᩢ ᩌᩮᨯᨾᩣᨻᩮᩨ᩠᩵ᩋᨩᩱᩢᨽᩥ᩠ᨾ ᨣᩣᩴᨴᩱ᩠ᨿᩃᩨᩢ ᨯ᩠ᩅ᩠ᨿᩢ ᨲᩫ᩠ᩅᨴᩱ᩠ᨿᨵᨾ᩠ᨾ᩼᪫ ᨤᩦᨷ᩠ᩋᨯᨶᩦᩢᨩᩱᩢᨯᩱᨴᩨ᩠ᨦᨴᩦ᩵ᨶᩱ ᨤ᩠ᩋᨾ ᩓ ᨶᩱᨾᩨᨳᩨ᪫</p>
+
+			<h2>ᨸᩯ᩠ᨶᩢᨽᩦ᩠ᨾ ᨤᩦᨷ᩠ᩋᨯ</h2>
+			<h3>ᩅᩥᨳᩦᨩᩱᩢᨶᩱ ᨤ᩠ᩋᨾᨽᩥ᩠ᩅᨴᩮᩨᩢ᩠ᩋ</h3>
+				<p>ᨶᩱᨤ᩠ᩋᨾᨠᩣ᩠ᩁᨩᩱᩢᨾᩦ ᪃ ᩀ᩵ᩣ᩠ᨦ᪫ ᨠᩣ᩠ᩁᨽᩥ᩠ᨾᨵᨾ᩠ᨾ᩼ᨯᩣ᪪ ᨽᩥ᩠ᨾᨠᩢ᩠ᨷᨲᩫ᩠ᩅ <kbd>Shift</kbd> ᩓ ᨩᩱᩢᨽᩥ᩠ᨾᨠᩢ᩠ᨷᨲᩫ᩠ᩅ "Alt" ᨲᩦ᩵ᨾᩦᨻᩣ᩠ᨿᨠ᩠ᩅᩣ Right<kbd>Alt</kbd></p>
+				
+				<ol>
+					<li>ᨲᩫ᩠ᩅ <kbd>A</kbd> ᨸᩮ᩠ᨶ "ᨼ" ᪪ ᨲᩫ᩠ᩅ <kbd>B</kbd> ᨸᩮ᩠ᨶ "ᨠᩥ"</li>
+					<li>ᩮ ᩯ ᩱ ᩰ ᩕ ᨶᩦᩢᩉᩨᩢᨲᩯ᩠ᨾᩢᩉᩖᩢᨦᨻ᩠ᨿᨬ᩠ᨩᨶ ᩉᩮ᩠ᨾᩨᩁ ᨠ + ᩮ ᨸᩮ᩠ᨶ ᨠᩮ</li>
+					<li>ᨣᩢ᩠ᨶᨤᩱ᩵ᨲᩯ᩠ᨾᩢᨲᩫ᩠ᩅᨲᩱᩢᩉᩨᩢᨲᩯ᩠ᨾᩢᨲᩫ᩠ᩅᩉᩮ᩠ᨶᩨᩋᩋ᩠ᩋᩁᩓ᩠ᩅᩢᨧᩨ᩠᩵ᨦᨩᩱᩢᨲᩫ᩠ᩅᨪᩢ᩠ᩋᩁ " ᩠" ᩓ᩠ᩅᩢᨣᩢ ᨽᩥ᩠ᨾᨲᩫ᩠ᩅᨲᩱᩢ ᩉᩮ᩠ᨾᩨᩁ ᨴ + ᩱ + ᩠ + ᨿ ᨸᩮ᩠ᨶ ᨴᩱ᩠ᨿ ᪫</li>
+				</ol>
+				
+				<p><a href="desktop_layout_default.png"><img width="90%" class="keyboard" src="desktop_layout_default.png" alt="Default (unshifted) state" /></a></p>
+
+			<h3>ᩅᩥᨳᩦᨽᩥ᩠ᨾᨩ᩠ᩋᨾᨲᩫ᩠ᩅ "Shift“ (ᨤ᩠ᩋᨾ)</h3>
+				<p>ᨻ᩠ᨿᨬ᩠ᨩᨶᩋᩢ᩠ᨶᩉᩯ᩠ᨶᩅᩱᩢᨻᩣ᩠ᨿᨲᩱᩢᨶᩦᩢ ᨧᩢᨯᩱᩢᨩᩱᩢᨩ᩠ᩋᨾᨲᩫ᩠ᩅ  "Shift” ᪫ ᩉᩮ᩠ᨾᩨᩁ <kbd>Shift</kbd> + <kbd>A</kbd> ᨸᩮ᩠ᨶ ᩀ </p>
+				<p><a href="desktop_layout_shift.png"><img width="90%" class="keyboard" src="desktop_layout_shift.png" alt="Shift state" /></a></p>
+
+			<h3>ᩅᩥᨳᩦᨽᩥ᩠ᨾᨩ᩠ᩋᨾᨲᩫ᩠ᩅ "Right Alt” (ᨤ᩠ᩋᨾ)</h3>
+				<p>ᨻ᩠ᨿᨬ᩠ᨩᨶᩋᩢ᩠ᨶᩉᩯ᩠ᨶᩅᩱᩢᨻᩣ᩠ᨿᨲᩱᩢᨶᩦᩢ ᨧᩢᨯᩱᩢᨩᩱᩢᨩ᩠ᩋᨾᨲᩫ᩠ᩅ  "Right Alt” ᪫ ᩉᩮ᩠ᨾᩨᩁ Right <kbd>Alt</kbd> + <kbd>1</kbd> ᨸᩮ᩠ᨶ ᪑</p>
+				<p><a href="desktop_layout_altgr.png"><img width="90%" class="keyboard" src="desktop_layout_altgr.png" alt="AltGr state" /></a></p>
+
+			<h2>ᩅᩥᨳᩦᨩᩱᩢᨶᩱ ᨾᩨᨳᩨ</h2>
+				<p>ᨶᩱᨾᩨᨳᩨᨠᩣ᩠ᩁᨩᩱᩢᨾᩦ ᪃ ᩀ᩵ᩣ᩠ᨦ᪫ ᨠᩣ᩠ᩁᨽᩥ᩠ᨾᨵᨾ᩠ᨾ᩼ᨯᩣ᪪ ᨽᩥ᩠ᨾᨠᩢ᩠ᨷᨲᩫ᩠ᩅ <kbd>Shift</kbd> ᩓ ᨩᩱᩢᨽᩥ᩠ᨾᨠᩢ᩠ᨷᨲᩫ᩠ᩅ "Alt” ᨲᩦ᩵ᨾᩦᨻᩣ᩠ᨿᨠ᩠ᩅᩣ <kbd>RAlt</kbd>᪫</p>
+			<h3>ᩅᩥᨳᩦᨽᩥ᩠ᨾ ᨵᨾ᩠ᨾ᩼ᨯᩣ (ᨾᩨᨳᩨ)</h3>
+				<p>ᨠᩣ᩠ᩁᨩᩱᩢᨸᩯ᩠ᨶᩢᨽᩥ᩠ᨾᨵᨾ᩠ᨾ᩼ᨯᩣ ᩉᩯ᩠ᨶᩅᩱᩢᨻᩣ᩠ᨿᨲᩱᩢᨶᩦᩢ᪫ ᨲᩣ᩠ᨾᨯ᩠᩶ᨦᨶᩱᨸᩯ᩠ᨶᩢᨽᩥ᩠ᨾᨵᨾ᩠ᨾ᩼ᨯᩣᨶᩦᩢ ᨣᩢ᩠ᨶᨽᩥ᩠ᨾ ᨻ᩠ᨿᨬ᩠ᨩᨶᨲᩫ᩠ᩅ ᨯᩱᨣᩢᨧᩢᨸᩮ᩠ᨶᨲᩫ᩠ᩅᨶ᩠ᨶᩢᩢ᪫ ᩉᩮ᩠ᨾᩨᩁ</p>
+				<ol>
+					<li>ᨲᩫ᩠ᩅ <kbd>A</kbd> ᨸᩮ᩠ᨶ "ᨼ" ᪪ ᨲᩫ᩠ᩅ <kbd>B</kbd> ᨸᩮ᩠ᨶ "ᨠᩥ"</li>
+					<li> ᩮ ᩯ ᩱ ᩰ ᩕ ᨶᩦᩢᩉᩨᩢᨲᩯ᩠ᨾᩢᩉᩖᩢᨦᨻ᩠ᨿᨬ᩠ᨩᨶ ᩉᩮ᩠ᨾᩨᩁᨠ + ᩮ ᨸᩮ᩠ᨶ ᨠᩮ</li>
+					<li>ᨣᩢ᩠ᨶᨤᩱ᩵ᨲᩯ᩠ᨾᩢᨲᩫ᩠ᩅᨲᩱᩢᩉᩨᩢᨲᩯ᩠ᨾᩢᨲᩫ᩠ᩅᩉᩮ᩠ᨶᩨᩋᩋ᩠ᩋᩁᩓ᩠ᩅᩢᨧᩨ᩠᩵ᨦᨩᩱᩢᨲᩫ᩠ᩅᨪ᩠ᩋᩢᩁ " ᩠" ᩓ᩠ᩅᩢᨣᩢ ᨽᩥ᩠ᨾᨲᩫ᩠ᩅᨲᩱᩢ ᩉᩮ᩠ᨾᩨᩁ ᨴ + ᩱ + ᩠ + ᨿ ᨸᩮ᩠ᨶ ᨴᩱ᩠ᨿ ᪫</li>
+				</ol>
+				<p><a href="tablet_layout_default.png"><img width="60%" class="keyboard" src="tablet_layout_default.png" alt="Default state" /></a></p>
+
+			<h3>ᩅᩥᨳᩦᨽᩥ᩠ᨾᨩ᩠ᩋᨾᨲᩫ᩠ᩅ "Shift“ (ᨾᩨᨳᩨ)</h3>
+				<p>ᨻ᩠ᨿᨬ᩠ᨩᨶᩋᩢ᩠ᨶᩉᩯ᩠ᨶᩅᩱᩢᨻᩣ᩠ᨿᨲᩱᩢᨶᩦᩢ ᨧᩢᨯᩱᩢᨩᩱᩢᨩ᩠ᩋᨾᨲᩫ᩠ᩅ  "Shift” ᪫ ᩉᩮ᩠ᨾᩨᩁ <kbd>Shift</kbd> + <kbd>A</kbd> ᨸᩮ᩠ᨶ ᩀ </p>
+				<p><a href="tablet_layout_shift.png"><img width="60%" class="keyboard" src="tablet_layout_shift.png" alt="Shift state" /></a></p>
+
+			<h3>ᩅᩥᨳᩦᨽᩥ᩠ᨾᨩ᩠ᩋᨾᨲᩫ᩠ᩅ "Right Alt” (ᨾᩨᨳᩨ)</h3>
+				<p>ᨻ᩠ᨿᨬ᩠ᨩᨶᩋᩢ᩠ᨶᩉᩯ᩠ᨶᩅᩱᩢᨻᩣ᩠ᨿᨲᩱᩢᨶᩦᩢ ᨧᩢᨯᩱᩢᨩᩱᩢᨩ᩠ᩋᨾᨲᩫ᩠ᩅ  "Right Alt” ᪫ ᩉᩮ᩠ᨾᩨᩁ <kbd>RAlt</kbd> + <kbd>1</kbd> ᨸᩮ᩠ᨶ ᪑</p>
+				<p><a href="tablet_layout_altgr.png"><img width="60%" class="keyboard" src="tablet_layout_altgr.png" alt="AltGr state" /></a></p>
+				
+				<p>For the PDF version, click <a href="tai_tham_my_khb.pdf" download>here</a>.</p>
+
+				<p>© 2023 Tai Lue Literacy Committee</p>		
+		
+				</div>
+	</li>
+
+	<li class="tab en">
+		<input type="radio" name="tabs" id="tab2" />
+		<label for="tab2">English</label>
+		<div id="tab-content2" class="content" style="font-family:'A Tai Tham KH New V3';">
+		
+			<h1>Start Using Tai Tham MY Keyboard</h1>
+				<p style="text-align: justify;">
+				The Tai Tham MY keyboard was developed for typing Tai Lue language in Tai Tham script. The keyboard is available for computers as well as mobile devices.</p>
+
+			<h2>Keyboard Layouts for Computer</h2>
+				<p>There are 3 layouts in the keyboard map: “Default” layout; “Shift” layout and “Right Alt” layout.</p>
+			<h3>Computer - Default</h3>
+				<p>The Default layout is shown below.</p>
+				<ol>
+					<li>To type the character you want, press the appropriate key. For example, <kbd>A</kbd> gives “ᨼ”; <kbd>B</kbd> gives “ᩥ” etc.</li>
+					<li>The vowels ᩮ ᩯ ᩱ ᩰ and the medial consonant  ᩕ are typed after the desired consonant. For example, ᨠ + ᩱ gives ᨠᩱ </li>
+					<li>The ᩠ character has a special function: it allows you to create a subjoined character. Having typed the ᩠ character, just type the character you want to be subjoined. For example, ᨴ +ᩱ + ᩠ + ᨿ gives ᨴᩱ᩠ᨿ  </li>
+				</ol>
+				<p><a href="desktop_layout_default.png"><img width="90%" class="keyboard" src="desktop_layout_default.png" alt="Default (unshifted) state" /></a></p>
+
+			<h3>Computer - Shift</h3>
+				<p>The Shift part is shown below. To type the character you want, press <kbd>Shift</kbd> + the appropriate key (at the same time). For example, <kbd>Shift</kbd> + <kbd>A</kbd> gives ᩀ.</p>
+				<p><a href="desktop_layout_shift.png"><img width="90%" class="keyboard" src="desktop_layout_shift.png" alt="Shift state" /></a></p>
+
+			<h3>Computer - Right Alt</h3>
+				<p>The Right Alt part is shown below. To type the character you want, press Right <kbd>Alt</kbd> + the appropriate key (at the same time). For example, Right <kbd>Alt</kbd> + <kbd>1</kbd> gives ᪑.</p>
+				<p><a href="desktop_layout_altgr.png"><img width="90%" class="keyboard" src="desktop_layout_altgr.png" alt="AltGr state" /></a></p>
+
+
+			<h2>Keyboard Layouts for Mobile Devices</h2>
+				<p>There are 3 layouts in the keyboard map: “Default” layout; “Shift” layout and “Right Alt” layout.</p>
+			
+			<h3>Phone/Tablet - Default</h3>
+				<p>The Default layout is shown below.</p>
+				<ol>
+					<li>To type the character you want, press the appropriate key. For example, <kbd>A</kbd> gives “ᨼ”; <kbd>B</kbd> gives “ᩥ” etc.</li>
+					<li>The vowels ᩮ ᩯ ᩱ ᩰ and the medial consonant  ᩕ are typed after the desired consonant. For example, ᨠ + ᩱ gives ᨠᩱ </li>
+					<li>The ᩠ character has a special function: it allows you to create a subjoined character. Having typed the ᩠ character, just type the character you want to be subjoined. For example, ᨴ +ᩱ + ᩠ + ᨿ gives ᨴᩱ᩠ᨿ  </li>
+				</ol>
+			
+				<p><a href="tablet_layout_default.png"><img width="60%" class="keyboard" src="tablet_layout_default.png" alt="Default state" /></a></p>
+
+			<h3>Phone/Tablet - Shift</h3>
+				<p>The Shift part is shown below. To type the character you want, press <kbd>Shift</kbd> + the appropriate key (at the same time). For example, <kbd>Shift</kbd> + <kbd>A</kbd> gives ᩀ.</p>
+				<p><a href="tablet_layout_shift.png"><img width="60%" class="keyboard" src="tablet_layout_shift.png" alt="Shift state" /></a></p>
+
+			<h3>Tablet - Right Alt</h3>
+				<p>The Right Alt part is shown below. To type the character you want, press <kbd>RAlt</kbd> + the appropriate key (at the same time). For example, RIGHT <kbd>Alt</kbd> + <kbd>1</kbd> gives ᪑.</p>
+				<p><a href="tablet_layout_altgr.png"><img width="60%" class="keyboard" src="tablet_layout_altgr.png" alt="AltGr state" /></a></p>
+				
+				<p>For the PDF version, click <a href="tai_tham_my_en.pdf" download>here</a>.</p>
+
+				<p>© 2023 Tai Lue Literacy Committee</p>
+		</div>
+	</li>
+</ul>
+</body>
+</html>

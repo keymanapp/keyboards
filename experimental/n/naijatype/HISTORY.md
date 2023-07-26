@@ -1,6 +1,10 @@
 Naija Type Keyboard Change History
 =======================
 
+July 2023
+---------
+* v50 Fix key cap for longpress menu key
+
 October 2022
 ------------
 * v49 Removed deprecated language features. Added Alt alternative (Alt/backslash) for vertical line above letter. Re-ordered code.
