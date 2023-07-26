@@ -1,6 +1,10 @@
 Swanalekha Malayalam Keyboard Change History
 ============================================
 
+1.2.7 (19 July 2023)
+-----------------
+* Remove source files from the .kps
+
 1.2.6 (6 March 2022)
 -----------------
 * Add phone layout

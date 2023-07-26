@@ -24,6 +24,6 @@ The keyboard requires a font with the Musnad letters that is compatible with Uni
 <div id='osk-phone' data-states='default'>
 
 
-<p>© 2022 Riyadh Alfareh</p>
+<p>© 2022 - 2023 Riyadh Alfareh</p>
 
 </div>

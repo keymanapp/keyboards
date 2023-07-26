@@ -1,7 +1,7 @@
 Nisenan keyboard
 ==============
 
-© 2022 Shingle Springs Band of Miwok Indians
+© Shingle Springs Band of Miwok Indians
 
 Description
 -----------
@@ -12,6 +12,7 @@ Developed by Jonathan Geary (jgeary@ssband.org).
 Links
 -----
 * Shingle Springs Band of Miwok Indians website: https://www.shinglespringsrancheria.com/
+* Keyman home page: https://keyman.com/keyboards/nisenan
 
 Supported Platforms
 -------------------

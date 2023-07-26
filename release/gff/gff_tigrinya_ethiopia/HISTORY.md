@@ -1,5 +1,21 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+2.0.2 (2023-06-20)
+------------------
+* Fix for smart-dot and smart-comma composition.
+
+2.0.1 (2023-06-03)
+------------------
+* Fix for labiovelar touch composition keys that were not replacing the 6th order letters.
+
+2.0 (2023-05-28)
+----------------
+* Revision for dynamic layers as applied in other GFF keyboards.
+
+1.3.14 (2023-05-17)
+-----------------------
+* Fix for missing `.js` file in package definition.
+
 1.3.13 (2022-02-11)
 -----------------------
 * Fixed missing access to ዐ (<kbd>E</kbd><kbd>e</kbd>)

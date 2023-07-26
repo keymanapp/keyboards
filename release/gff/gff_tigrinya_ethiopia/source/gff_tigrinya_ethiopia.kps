@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -56,8 +56,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">GFF Tigrinya-Ethiopia Keyboard</Name>
-    <Copyright URL="">© 2009-2022 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Copyright URL="">© 2009-2023 Geʾez Frontier Foundation</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
   <Files>
@@ -86,6 +86,18 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Connected</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
       <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
       <Description>Font Brana Regular</Description>
       <CopyLocation>0</CopyLocation>
@@ -104,46 +116,10 @@
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
-      <Description>Font Ethiopic Fantuwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\geez\FreeSerif.otf</Name>
       <Description>Font FreeSerif</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\goffer.ttf</Name>
-      <Description>Font Ethiopic Yigezu Bisrat Goffer</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\hiwua.ttf</Name>
-      <Description>Font Ethiopic Hiwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiret.ttf</Name>
-      <Description>Font Ethiopia Jiret</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiretsl.ttf</Name>
-      <Description>Font Ethiopia Jiret Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\tint.ttf</Name>
-      <Description>Font Ethiopic Tint</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\washrab.ttf</Name>
@@ -166,18 +142,6 @@
     <File>
       <Name>..\..\..\shared\fonts\geez\washrasbsl.ttf</Name>
       <Description>Font Ethiopic WashRa SemiBold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\wookianos.ttf</Name>
-      <Description>Font Ethiopic Wookianos</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\yebse.ttf</Name>
-      <Description>Font Ethiopic Yebse</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -206,8 +170,62 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
+      <Name>..\build\gff_tigrinya_ethiopia.js</Name>
+      <Description>File gff_tigrinya_ethiopia.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaFantuwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ፋንትዋ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaHiwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ህዋእ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaJiret-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጅረት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaTint-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጥንት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaWookianos-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ውቂያኖስ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYebse-Regular.ttf</Name>
+      <Description>Font ዋልድባ - የብሰ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGoffer-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ብሥራት ጎፈር Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGothic-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ብሥራት ጎቲክ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaZelan-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ዘላን Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -216,7 +234,7 @@
     <Keyboard>
       <Name>ትግርኛ (Tigrinya)</Name>
       <ID>gff_tigrinya_ethiopia</ID>
-      <Version></Version>
+      <Version>2.0.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>

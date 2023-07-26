@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName>C:\Data\Keyman\balochi_scientific\source\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Balochi Scientific</Name>
-    <Copyright URL="">© 2017-2022 SIL International.</Copyright>
+    <Copyright URL="">© 2017-2023 SIL International.</Copyright>
   </Info>
   <Files>
     <File>
@@ -25,12 +26,6 @@
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>balochi_scientific.ico</Name>
-      <Description>File balochi_scientific.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
     </File>
     <File>
       <Name>..\build\balochi_scientific.kvk</Name>
@@ -62,12 +57,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\balochi_scientific.js</Name>
+      <Description>File balochi_scientific.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Balochi Scientific</Name>
       <ID>balochi_scientific</ID>
-      <Version>1.0.4</Version>
+      <Version>1.0.5</Version>
       <Languages>
         <Language ID="bal-Latn">Baluchi (Latin)</Language>
       </Languages>

@@ -1,12 +1,12 @@
 ﻿c Keyboard for typing Nisenan using the current alphabet adopted by the Shingle Springs Band of Miwok Indians (SSBMI) for use in Nisenan language materials.
 c 
-c Version 1.0-2.0 developed by Jonathan Geary (jgeary@ssband.org).
-c  
+c Version 1.0-2.1 developed by Jonathan Geary (jgeary@ssband.org).
+c 
 c Please contact the SSBMI Language Program at language@ssband.org.
 store(&VERSION) '10.0'
 store(&NAME) 'Nisenan'
 store(&COPYRIGHT) '© 2022 Shingle Springs Band of Miwok Indians'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '2.1.1'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'nisenan.kvks'
 store(&LAYOUTFILE) 'nisenan.keyman-touch-layout'
@@ -37,3 +37,28 @@ group(main) using keys
 + [T_0070_2019] > U+0070 U+2019
 + [SHIFT T_0054_2019] > U+0054 U+2019
 + [T_0074_2019] > U+0074 U+2019
+
++ [RALT K_QUOTE] > U+0301
++ [SHIFT RALT K_QUOTE] > U+0301
+
+'A' + [SHIFT RALT K_QUOTE] > U+00C1
+'a' + [SHIFT RALT K_QUOTE] > U+00E1
+'E' + [SHIFT RALT K_QUOTE] > U+00C9
+'e' + [SHIFT RALT K_QUOTE] > U+00E9
+'I' + [SHIFT RALT K_QUOTE] > U+00CD
+'i' + [SHIFT RALT K_QUOTE] > U+00ED
+'O' + [SHIFT RALT K_QUOTE] > U+00D3
+'o' + [SHIFT RALT K_QUOTE] > U+00F3
+'U' + [SHIFT RALT K_QUOTE] > U+00DA
+'u' + [SHIFT RALT K_QUOTE] > U+00FA
+
+'A' + [RALT K_QUOTE] > U+00C1
+'a' + [RALT K_QUOTE] > U+00E1
+'E' + [RALT K_QUOTE] > U+00C9
+'e' + [RALT K_QUOTE] > U+00E9
+'I' + [RALT K_QUOTE] > U+00CD
+'i' + [RALT K_QUOTE] > U+00ED
+'O' + [RALT K_QUOTE] > U+00D3
+'o' + [RALT K_QUOTE] > U+00F3
+'U' + [RALT K_QUOTE] > U+00DA
+'u' + [RALT K_QUOTE] > U+00FA

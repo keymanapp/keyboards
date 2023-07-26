@@ -1,9 +1,9 @@
 Greek Latin Basic keyboard
 ==============
 
-(c) 2009-2020 SIL International
+(c) SIL International
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------

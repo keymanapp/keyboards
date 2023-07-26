@@ -1,18 +1,18 @@
-﻿store(&VERSION) '10.0'
+﻿store(&VERSION) '15.0'
 store(&NAME) 'Colchis Latin'
 store(&VISUALKEYBOARD) 'colchis_latin.kvks'
 store(&BITMAP) 'colchis_latin.ico'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.2'
+store(&KEYBOARDVERSION) '1.3'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'colchis_latin.keyman-touch-layout'
 begin Unicode > use(main)
 
-store(GE_U)   U+0194          U+0263    U+01A7           U+01A8     U+A786          U+A787    U+2C6B          U+2C6C \
+store(GE_U)   U+0194          U+0263    U+01A7           U+01A8     U+01E6          U+01E7    U+015E          U+015F \
               U+01B7          U+0292    U+00C7           U+00E7     U+1E6A          U+1E6B
 store(GE_Key) [SHIFT K_LBRKT] [K_LBRKT] [SHIFT K_RBRKT]  [K_RBRKT]  [SHIFT K_COMMA] [K_COMMA] [SHIFT K_QUOTE] [K_QUOTE] \
               [SHIFT K_W]     [K_W]     [SHIFT K_PERIOD] [K_PERIOD] [SHIFT K_COLON] [K_COLON]
-
+ 
 store(V_K) "aeiouAEIOU"
 store(V_U) "âêîôûÂÊÎÔÛ"
 
@@ -38,7 +38,7 @@ c Georgian letters
 + [SHIFT K_3] > U+005e
 + [SHIFT K_2] > U+0027
 + [SHIFT K_1] > '!'
-+ [SHIFT K_BKQUOTE] > '̆'
++ [SHIFT K_BKQUOTE] > U+030C
 + [K_BKQUOTE] > '"'
 + [K_BKSLASH] > ','
 + [K_EQUAL] > '-'
@@ -48,7 +48,7 @@ c Georgian letters
 + [RALT K_A] > U+00E6
 + [SHIFT RALT K_A] > U+00C6
 + [RALT K_E] > U+20AC
-+ [RALT K_T] > U+20BA
++ [RALT K_R] > U+20BA
 + [RALT K_BKQUOTE] > "<"
 + [RALT K_1] > ">"
 + [RALT K_2] > "£"
@@ -65,25 +65,23 @@ c Georgian letters
 + [RALT K_RBRKT] > "~"
 + [RALT K_BKSLASH] > "`"
 
-+ [RALT K_W] > "w"
-+ [SHIFT RALT K_W] > "W"
-
-
-
++ [RALT K_V]       > "w"
++ [SHIFT RALT K_V] > "W"
 
 c ejective rules
-"t" + "t" > 't̆' 
-"T" + "T" > 'T̆'
-"ç" + [K_PERIOD] > 'ç̆'
-"Ç" + [SHIFT K_PERIOD] > 'Ç̆'
-"k" + "k" > 'k̆'
-"K" + "K" > 'K̆'
-"p" + "p" > 'p̆'
-"P" + "P" > 'P̆'
-"ʒ" + "w" > 'ʒ̆'
-"Ʒ" + "W" > 'Ʒ̆'
-"z" + "z" > 'z̆'
-"Z" + "Z" > 'Z̆'
+
++ [RALT K_C]       > U+00E7 U+030C c 'ç̆'
++ [SHIFT RALT K_C] > U+00C7 U+030C c 'Ç̆'
++ [RALT K_K]       > U+01E9 c 'k̆'
++ [SHIFT RALT K_K] > U+01E8 c 'K̆'
++ [RALT K_P]       > U+0070 U+030C c 'p̆'
++ [SHIFT RALT K_P] > U+0050 U+030C c 'P̆'
++ [RALT K_T]       > U+0165 c 't̆'
++ [SHIFT RALT K_T] > U+0164 c 'T̆'
++ [RALT K_W]       > U+0292 U+030C c 'ʒ̆'
++ [SHIFT RALT K_W] > U+01B7 U+030C c 'Ʒ̆'
++ [RALT K_Z]       > U+017E c 'z̆'
++ [SHIFT RALT K_Z] > U+017D c 'Z̆'
 
 
 

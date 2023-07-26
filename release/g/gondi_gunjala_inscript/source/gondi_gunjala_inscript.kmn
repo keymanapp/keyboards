@@ -1,0 +1,89 @@
+﻿store(&version) '10.0'
+store(&NAME) 'Gondi INSCRIPT (Gunjala)'
+store(&BITMAP) 'gondi_gunjala_inscript.ico'
+store(&COPYRIGHT) '© SIL International'
+store(&TARGETS) 'web desktop'
+store(&KEYBOARDVERSION) '1.1'
+store(&capsalwaysoff) '1'
+store(&VISUALKEYBOARD) 'gondi_gunjala_inscript.kvks'
+
+begin UNICODE > use(main)
+
+store(nul) 'JZzVBM>?]}|()*+&%$@!~'
+c Some rules needed removal since the characters didn't get encoded
+c '+' = U+11F0B vocalic r
+c 'Z' = U+11D66 short e
+c '~' = U+11D69 short o
+store (IndVowel)  'D'     'F'     'G'    \
+                  'E'     'R'     'T'     'S'     'W'    'A'      'Q'
+store (IndVowelU) U+11D60 U+11D62 U+11D64 \
+                  U+11D61 U+11D63 U+11D65 U+11D67 U+11D68 U+11D6A U+11D6B
+
+c 'J' '}' 'M' <
+store (consonant) 'k'      'i'     'U'     ';'    'j'     'p'      "'"     '['     'C'     'l'     'o'     'v'     'h'     'y'     'c'     '/'     'n'     'b'     'm'  \
+                  'K'      'I'             ':'            'P'      '"'     '{'             'L'     'O'             'H'     'Y'                     'N'                     'u'
+store (consonantU) U+11D71 U+11D76 U+11D84 U+11D7B U+11D88 U+11D80 U+11D7D U+11D82 U+11D84 U+11D73 U+11D78 U+11D7A U+11D85 U+11D6E U+11D70 U+11D6C U+11D75 U+11D6D U+11D89  \
+                   U+11D72 U+11D77         U+11D7C         U+11D81 U+11D7E U+11D83         U+11D74 U+11D79         U+11D86 U+11D6F                 U+11D7F                 U+11D87
+c Various signs
+store (diacriticalmod)  'X'     'x'     '_'
+store (diacriticalmodU) U+11D97 U+11D95 U+11D96
+
+store (number)  '0'     '1'     '2'     '3'     '4'     '5'     '6'     '7'     '8'     '9'
+store (Gunjala) U+11DA0 U+11DA1 U+11DA2 U+11DA3 U+11DA4 U+11DA5 U+11DA6 U+11DA7 U+11DA8 U+11DA9
+
+c store (different) 'F' 'f'
+
+group (main) using keys
++ any(nul)             > nul
+
++ any(IndVowel)       > index(IndVowelU,1)
++ any(consonant)      > index(consonantU,1)
++ any(diacriticalmod) > index(diacriticalmodU,1)
++ any(number)         > index(Gunjala,1)
+
+any (consonantU) + '#' > context U+11D97 U+11D88
+c + '%' > U+11D84 U+11D97 U+11F1E  c didn't get encoded
++ '^' > U+11D73 U+11D97 U+11D88
+c + '&' > U+11D71 U+11D97 U+11F37  c didn't get encoded
+c + '*' > U+11F36 U+11D97 U+11D88  c didn't get encoded
+
+c Dependent vowel signs
+store(DepBase) 'qwerasdfg'
++ any(DepBase) > nul
+any (consonantU) + 'e' > context U+11D8A
+any (consonantU) + 'f' > context U+11D8B
+any (consonantU) + 'r' > context U+11D8C
+any (consonantU) + 'g' > context U+11D8D
+any (consonantU) + 't' > context U+11D8E
+c any (consonantU) + '=' > context U+11F43 c didn't get encoded
+c any (consonantU) + '=' + ']' > context U+11F44 c didn't get encoded
+c any (consonantU) + 'z' > context U+11D8F  c didn't get encoded
+any (consonantU) + 's' > context U+11D90
+any (consonantU) + 'w' > context U+11D91
+c any (consonantU) + '`' > context U+11D92  c didn't get encoded
+any (consonantU) + 'a' > context U+11D93
+any (consonantU) + 'q' > context U+11D94
+
+any (consonantU) + any(diacriticalmod) > context index(diacriticalmodU,2)
+
+any (consonantU) + 'd'  > context U+11D97
+
+any (consonantU) 'e' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'f' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'r' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'g' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 't' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'z' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 's' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'w' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) '`' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'a' + any(diacriticalmod) > context index(diacriticalmodU,3)
+any (consonantU) 'q' + any(diacriticalmod) > context index(diacriticalmodU,3)
+
+c Punctuation marks
+"'" + "'" > U+201D    c Closing double quotes
+'"' + '"' > U+201C    c Opening double quotes
+"-" + "-" > U+005F U+005F               c Drawing line
+U+005F U+005F + '-' > context U+005F    c Drawing line
+
+c + [RALT K_X] > U+11D98 c om not adding since it's not in the font
