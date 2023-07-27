@@ -569,15 +569,6 @@ c *********
 ',&=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030B
 
 c ***********
-c *** Diaresis+Macron;Diaresis+Macron+Ogonek ***
-c ***********
-
-';=' + any (let) > index(let,3) U+0308 U+0304  c dia mac - added above with dia base
-'=;' + any (let) > index(let,3) U+0308 U+0304
-
-
-
-c ***********
 c *** misc ***
 c ***********
 
@@ -592,3 +583,26 @@ c ***********
 "+" + "?" > "ʔ"                                           
 "+" + "r" > "ρ" 
 "+" + "x" > "χ" 
+
+c ***********
+c *** backspace rules ***
+c ***********
+
+any(HasAcute) + any(Backspace) > index(NeedsAcute,1)
+any(HasCaron) + any(Backspace) > index(NeedsCaron1,1)
+any(HasCircumflex) + any(Backspace) > index(NeedsCircumflex1,1)
+any(HasCirAcu) + any(Backspace) > index(NeedsCirAcu1,1)
+any(HasCirGra) + any(Backspace) > index(NeedsCirGra1,1)
+any(HasDiaeresis) + any(Backspace) > index(NeedsDiaeresis1,1)
+any(HasDiaAcu) + any(Backspace) > index(NeedsDiaAcu1,1)
+any(HasDiaGra1) + any(Backspace) > index(NeedsDiaGra1,1)
+any(HasDiaGra2) + any(Backspace) > index(NeedsDiaGra2,1)
+any(HasDiaMac) + any(Backspace) > index(NeedsDiaMac1,1)
+any(HasDoubleAcute) + any(Backspace) > index(NeedsDoubleAcute1,1)
+any(HasGrave) + any(Backspace) > index(NeedsGrave1,1)
+any(HasMacron) + any(Backspace) > index(NeedsMacron1,1)
+any(HasMacAcu1) + any(Backspace) > index(NeedsMacAcu1,1)
+any(HasMacAcu2) + any(Backspace) > index(NeedsMacAcu2,1)
+any(HasMacGra1) + any(Backspace) > index(NeedsMacGra1,1)
+any(HasMacGra2) + any(Backspace) > index(NeedsMacGra2,1)
+any(HasOgonek) + any(Backspace) > index(NeedsOgonek1,1)
