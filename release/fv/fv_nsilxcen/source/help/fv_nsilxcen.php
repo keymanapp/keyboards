@@ -16,7 +16,7 @@ END;
 This keyboard is designed for the <b>Nsilxcən</b> language of the BC Interior region of Canada.
 </p>
 
-<img src="../welcome/nsilxcenU_.png" alt="" height="198" width="514" border="0" /></h2>
+<img src="nsilxcenU_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 						<li>The special characters of Nsilxcen have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyoards keep its original numbers</li>
 						<li>All accents are typed after the base character: á is typed a then Semicolon ;</li>
