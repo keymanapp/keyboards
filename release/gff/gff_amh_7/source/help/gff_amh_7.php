@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename = 'Amharic (GFF) Keyboard Help';
-  $pagetitle = 'Amharic Keyboard Help';
+  $pagename = 'Amharic (GFF) (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
