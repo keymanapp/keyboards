@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  $pagename = 'Inscript Bengali Keyboard Help';
-  $pagetitle = 'Inscript Bengali Keyboard Help';
+  $pagename = 'Inscript Bengali (deprecated) Keyboard Help';
+  $pagetitle = 'Inscript Bengali (deprecated) Keyboard Help';
   $style = 'lang2 {font-size:250%}';
   
   require_once('header.php');

@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Dvorak Right-handed Keyboard Help';
-  $pagetitle = 'Dvorak Right-handed Keyboard Help';
+  $pagename = 'Dvorak Right-handed (deprecated) Keyboard Help';
+  $pagetitle = 'Dvorak Right-handed (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

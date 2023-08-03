@@ -15,7 +15,7 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Full help
 */
-  $pagename = 'Mozhi Malayalam (deprecated) Keyboard Help';
+  $pagename = 'Mozhi Malayalam (deprecated) (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   $style = 'lang2 {font-size:250%}';
   

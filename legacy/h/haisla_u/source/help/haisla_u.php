@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Haisla Unicode Keyboard Help';
-  $pagetitle = 'Haisla Unicode Keyboard Help';
+  $pagename = 'Haisla Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Haisla Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

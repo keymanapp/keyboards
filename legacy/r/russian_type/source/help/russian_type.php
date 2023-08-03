@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Russian (Typewriter) Keyboard Help';
-  $pagetitle = 'Russian (Typewriter) Keyboard Help';
+  $pagename = 'Russian (Typewriter) (deprecated) Keyboard Help';
+  $pagetitle = 'Russian (Typewriter) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

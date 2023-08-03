@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Devanagri Inscript (Alternate) Keyboard Help';
-  $pagetitle = 'Devanagri Inscript (Alternate) Keyboard Help';
+  $pagename = 'Devanagri Inscript (Alternate) (deprecated) Keyboard Help';
+  $pagetitle = 'Devanagri Inscript (Alternate) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

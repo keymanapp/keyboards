@@ -16,8 +16,8 @@
   History:          02 Nov 2012 - tpbaehr - Create online help from package help.
 */
 
-  $pagename = 'Tibetan Unicode Direct Input Keyboard Help';
-  $pagetitle = 'Tibetan Unicode Direct Input Keyboard Help'; 
+  $pagename = 'Tibetan Unicode Direct Input (deprecated) Keyboard Help';
+  $pagetitle = 'Tibetan Unicode Direct Input (deprecated) Keyboard Help'; 
   $style = <<<END
 /* 
 ===========

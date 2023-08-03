@@ -15,8 +15,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish
 */
-  $pagename = 'Arabic (101) Keyboard Help';
-  $pagetitle = 'Arabic (101) Keyboard Help';
+  $pagename = 'Arabic (101) (deprecated) Keyboard Help';
+  $pagetitle = 'Arabic (101) (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

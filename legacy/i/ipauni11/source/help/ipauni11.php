@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'SIL IPA Unicode Keyboard Help';
-  $pagetitle = 'SIL IPA Unicode Keyboard Help';
+  $pagename = 'SIL IPA Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'SIL IPA Unicode (deprecated) Keyboard Help';
   $style = <<<END
  /* Font Definitions */
  @font-face
