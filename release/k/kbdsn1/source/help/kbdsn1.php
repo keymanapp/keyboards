@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Sinhala Keyboard Help';
-  $pagetitle = 'Sinhala Keyboard Help';
+  $pagename = 'Sinhala (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <p>This keyboard layout is designed for Sinhala.  It includes an on screen keyboard
