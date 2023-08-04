@@ -1,5 +1,5 @@
 <?php
-  $pagename = "Guide d'utilisation pour le clavier du Burkina / Clavier du Burkina Keyboard Help";
+  $pagename = "Clavier du Burkina Keyboard Help";
   $pagetitle = $pagename;
   $pagestyle = '
   .clavbur9 {

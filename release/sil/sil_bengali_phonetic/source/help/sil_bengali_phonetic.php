@@ -1,6 +1,6 @@
 <?php
-$pagename = 'Bengali-Assamese Phonetic (SIL) Keyboard';
-$pagetitle = 'Bengali-Assamese Phonetic (SIL) Keyboard';
+$pagename = 'Bengali-Assamese Phonetic (SIL) Keyboard Help';
+$pagetitle = $pagename;
 $pagestyle = <<<END
     html,body {font-family: sans-serif;font-size: 100%;}
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}

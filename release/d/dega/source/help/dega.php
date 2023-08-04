@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "Dega Keyboard";
-  $pagetitle = "Dega Keyboard Help";
+  $pagename = "Dega Keyboard Help";
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Tatar Basic Keyboard Help';
+  $pagename = 'Oriya Basic Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
@@ -23,4 +23,4 @@
 </div>
 
 
-<p>(c) 2009-2019 SIL International</p>
+<p>(c) SIL International</p>

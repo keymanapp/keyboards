@@ -1,6 +1,6 @@
 ﻿<?php
-  $pagename = 'Landuma Keyman Keyboard Help';
-  $pagetitle = 'Landuma Keyman Keyboard Help';
+  $pagename = 'Landuma Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
   <style type='text/css'>

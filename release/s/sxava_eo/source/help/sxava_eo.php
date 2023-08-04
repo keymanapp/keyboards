@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Ŝava Klavara Helpo';
+  $pagename = 'Ŝava Klavara Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
