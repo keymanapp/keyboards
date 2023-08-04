@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'IAST from  Phonetic (ITRANS) Help';
-  $pagetitle = 'IAST from  Phonetic (ITRANS) Help';
+  $pagename = 'Indic Romanization from ITRANS Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
     samp {font-family: Siddhanta; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
