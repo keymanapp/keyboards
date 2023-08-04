@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'The Rachitrali-Torwali Keyboard Help';
-  $pagetitle = 'The Rachitrali-Torwali Keyboard Help';
+  $pagename = 'Rachitrali-Torwali Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

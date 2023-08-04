@@ -4,7 +4,7 @@
   Description: This package includes a phonetic keyboard called <b>Multi Pak Phonetic</b> and the font <b>Pak Nastaleeq</b> optimised for use with <b>Urdu</b>.
   Authors:     Zeeshan Hyder
 */
-  $pagename = 'Urdu Phonetic Keyboard (deprecated) Keyboard Help';
+  $pagename = 'Urdu Phonetic (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>

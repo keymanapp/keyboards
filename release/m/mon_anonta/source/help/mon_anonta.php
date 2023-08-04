@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'လၟေၚ်တက် Mon Anonta Keyboard';
-  $pagetitle = 'လၟေၚ်တက် Mon Anonta Keyboard';
+  $pagename = 'လၟေၚ်တက် Mon Anonta Keyboard Help';
+  $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 

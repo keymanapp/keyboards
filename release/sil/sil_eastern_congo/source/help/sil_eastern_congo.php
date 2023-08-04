@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Eastern Congo Keyboard';
-  $pagetitle = 'Eastern Congo keyboard help';
+  $pagename = 'Eastern Congo Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

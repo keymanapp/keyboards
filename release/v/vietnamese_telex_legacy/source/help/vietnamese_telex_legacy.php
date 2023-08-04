@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Vietnamese Telex Keyboard (Legacy Mode) Help';
+  $pagename = 'Vietnamese Telex (Legacy Mode) (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   
   // Header
