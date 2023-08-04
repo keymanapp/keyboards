@@ -1,5 +1,5 @@
 <?php
-  $pagename = "Tchad keyboard Help";
+  $pagename = "Tchad Keyboard Help";
   $pagetitle = $pagename;
   $pagestyle = <<<END
   h1,h2,h3,p {font-family: Charis SIL;}
