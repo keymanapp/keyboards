@@ -11,8 +11,8 @@ For the official release of this SIL keyboard and fonts package, visit:
   http://scripts.sil.org/KeymanKeyboardLinks#e9f80714
   Authors:     SIL International
 */
-  $pagename = 'Greek (polytonic precomposed) Unicode Keyboard Help';
-  $pagetitle = 'Greek (polytonic precomposed) Unicode Keyboard Help';
+  $pagename = 'Greek (polytonic precomposed) Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Greek (polytonic precomposed) Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <h1>Greek (polytonic precomposed) Unicode 1.03</h1>

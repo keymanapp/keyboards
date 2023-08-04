@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Uwikala Unicode Keyboard Help';
-  $pagetitle = 'Uwikala Unicode Keyboard Help';
+  $pagename = 'Uwikala Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Uwikala Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

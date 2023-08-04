@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Halq´eméylem Unicode Keyboard Help';
-  $pagetitle = 'Halq´eméylem Unicode Keyboard Help';
+  $pagename = 'Halq´eméylem Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Halq´eméylem Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

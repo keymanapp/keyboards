@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Tigrigna (Ethiopia) Keyboard Help';
-  $pagetitle = 'Tigrigna (Ethiopia) Keyboard Help';
+  $pagename = 'Tigrigna (Ethiopia) (deprecated) Keyboard Help';
+  $pagetitle = 'Tigrigna (Ethiopia) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

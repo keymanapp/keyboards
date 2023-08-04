@@ -7,8 +7,8 @@
 //
 //  Authors:     Rehmat Aziz Khan Chitrali
 */
-  $pagename = 'Khowar Keyboard Help';
-  $pagetitle = 'Khowar Keyboard Help';
+  $pagename = 'Khowar (deprecated) Keyboard Help';
+  $pagetitle = 'Khowar (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

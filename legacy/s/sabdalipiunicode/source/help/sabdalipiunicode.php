@@ -17,8 +17,8 @@
 */
 ?>
 ﻿<?php	
-  $pagename = 'Assamese (Sabdalipi) Keyboard Help';
-  $pagetitle = 'Assamese (Sabdalipi) Keyboard Help';
+  $pagename = 'Assamese (Sabdalipi) (deprecated) Keyboard Help';
+  $pagetitle = 'Assamese (Sabdalipi) (deprecated) Keyboard Help';
   $style = '.lang2 {font-size:180%}';
   require_once('header.php');
 ?>

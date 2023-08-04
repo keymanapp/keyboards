@@ -6,8 +6,8 @@
 The keyboard includes an On screen keyboard and keyboard layout description.
   Authors:     SIL International
 */
-  $pagename = 'Tunisian Spoken Arabic Keyboard Help';
-  $pagetitle = 'The Tunisian Spoken Arabic Keyboard Help';
+  $pagename = 'Tunisian Spoken Arabic (deprecated) Keyboard Help';
+  $pagetitle = 'The Tunisian Spoken Arabic (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

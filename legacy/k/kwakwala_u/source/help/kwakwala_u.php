@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "Kwak'wala Unicode Keyboard Help";
-  $pagetitle = "Kwak'wala Unicode Keyboard Help";
+  $pagename = "Kwak'wala Unicode (deprecated) Keyboard Help";
+  $pagetitle = "Kwak'wala Unicode (deprecated) Keyboard Help";
   $pagestyle = <<<END
 <!--
  /* Font Definitions */
