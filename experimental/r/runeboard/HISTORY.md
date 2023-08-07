@@ -1,6 +1,13 @@
 Runeboard Change History
 ====================
 
+2.0 (2023-08-08)
+----------------
+* Layout redesign, although with few minimal to the default layer.
+* Mobile version updated to include 4 layers without the number row in the main layer.
+* Various longpress options added for ease of use by both users familiar with the desktop layout & mobile-only users.
+* Added zero-width spaces to various punctuation keys to improve the user's navigation experience.
+
 1.3 (2023-05-24)
 ----------------
 * Added characters on ctrl-alt shift layer
