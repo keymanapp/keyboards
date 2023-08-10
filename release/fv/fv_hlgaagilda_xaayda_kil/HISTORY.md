@@ -1,5 +1,11 @@
 X̱aayda-X̱aad Kil Change History
 ============================
+9.2.1 (9 Aug 2023)
+-----------------
+* Updated combined characters to single code points where possible
+* Added rules to prevent stacking and combining with non-letters
+* Centered mobile keyboard
+* Added backspace rule to erase only diacritics
 
 9.2 (24 Feb 2021)
 -----------------
