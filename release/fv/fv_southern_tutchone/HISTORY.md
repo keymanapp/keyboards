@@ -5,6 +5,7 @@ Southern Tutchone Change History
 * Combined characters now output single codepoints where possible
 * Updated help and user guide
 * Updated touch layout to reflect rules
+* Removed duplicate punctuation keys
 
 9.2.1 (23 Feb 2021)
 ----------------
