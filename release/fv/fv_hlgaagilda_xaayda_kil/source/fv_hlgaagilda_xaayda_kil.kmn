@@ -48,7 +48,7 @@ any(NeedsCombMacB) + any(CombMacB) > index(NeedsCombMacB,1) U+0331
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
 + [SHIFT T_G_0] > 'G̱' layer('default')
-+ [SHIFT T_G_1] > 'Ĝ' layer('default')
++ [SHIFT T_G_1] > 'Ĝ' layer('default')
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'J' layer('default')
@@ -91,7 +91,7 @@ any(NeedsCombMacB) + any(CombMacB) > index(NeedsCombMacB,1) U+0331
 + [T_S] > 's'
 + [T_D] > 'd'
 + [T_G_0] > 'g̱'
-+ [T_G_1] > 'ĝ'
++ [T_G_1] > 'ĝ'
 + [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'j'
@@ -133,13 +133,17 @@ any(NonLetters) + any(BelowKeys) > context beep
 c Single Output
 
 store(BaseVowels) 'aeiouAEIOU'
+store(BaseG) 'gG'
 store(HasAcute) 'áéíóúÁÉÍÓÚ'
 store(HasGrave) 'àèìòùÀÈÌÒÙ'
-store(Acute) "́"
-store(Grave) "̀"
+store(HasCircumflex) 'gG'
+store(Acute) "́" [K_BKQUOTE]
+store(Circumflex) '̂' [SHIFT K_6]
+store(Grave) "̀" [SHIFT K_BKQUOTE]
 
 any(BaseVowels) + any(Acute) > index(HasAcute,1)
 any(BaseVowels) + any(Grave) > index(HasGrave,1)
+any(BaseG) + any(Circumflex) > index(HasCircumflex,1)
 
 c Backspace rule
 
