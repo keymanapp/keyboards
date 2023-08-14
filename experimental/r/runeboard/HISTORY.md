@@ -1,6 +1,12 @@
 Runeboard Change History
 ====================
 
+2.0 (2023-08-09)
+----------------
+* Updated layout - minor changes to default layer but more major changes to other layers
+* Added 4th layer to mobile version
+* Updated font to Catrinity & removed all other previously included fonts
+
 1.3 (2023-05-24)
 ----------------
 * Added characters on ctrl-alt shift layer
