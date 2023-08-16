@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'hcesar Keyboard Help';
+  $pagename = 'Hcesar (portugal) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
@@ -12,8 +12,14 @@ chaves normalmente utilizadas no meio do layout.</p>
 commonly used keys in the middle of the layout. 
 </p>
 
-<h2>Keyboard Layout</h2>
-<p><a href="Hcesar_Layout.png"><img class="keyboard" src="Hcesar_Layout.png"  /></a></p>
+<h2>Desktop Keyboard layout</h2>
 
+<p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
+<p>´a will produce á (available on aAeEiIoOuUyY).</p>
+<p>`a will produce à (available on aAeEiIoOuU).</p>
+<p>¨a will produce ä (available on aAeEiIoOuUy).</p>
+<p>~a will produce ã (available on aAnNoO).</p>
+<p>^a will produce ä (available on aAeEiIoOuU).</p>
 
-<p>© SIL International</p>
+<div id='osk' data-states='default shift rightalt'>
+</div>
