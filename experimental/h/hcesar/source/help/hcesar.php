@@ -19,7 +19,7 @@ commonly used keys in the middle of the layout.
 <p>`a will produce à (available on aAeEiIoOuU).</p>
 <p>¨a will produce ä (available on aAeEiIoOuUy).</p>
 <p>~a will produce ã (available on aAnNoO).</p>
-<p>^a will produce ä (available on aAeEiIoOuU).</p>
+<p>^a will produce â (available on aAeEiIoOuU).</p>
 
 <div id='osk' data-states='default shift rightalt'>
 </div>
