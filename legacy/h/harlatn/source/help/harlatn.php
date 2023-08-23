@@ -4,8 +4,8 @@
   Description: This keyboard uses the revised Harari Latin orthography.
   Authors:     Vicnet, State Library of Victoria
 */
-  $pagename = 'Harari (Lâtîn harfi) Keyboard Help';
-  $pagetitle = 'Harari (Lâtîn harfi) Keyboard Help';
+  $pagename = 'Harari (Lâtîn harfi) (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <style type="text/css">

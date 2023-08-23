@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Shashishalhem Unicode Keyboard Help';
-  $pagetitle = 'Shashishalhem Unicode Keyboard Help';
+  $pagename = 'Shashishalhem Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Shashishalhem Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

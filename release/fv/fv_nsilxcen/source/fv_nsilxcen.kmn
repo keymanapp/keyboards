@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.3'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "oka"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Nsilxcən'
 store(&BITMAP) 'fv_nsilxcen.ico'
 store(&VISUALKEYBOARD) 'fv_nsilxcen.kvks'
@@ -23,6 +23,8 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E_0] > 'Ə́' layer('default')
++ [SHIFT T_E_1] > 'E' layer('default')
++ [SHIFT T_E_2] > 'É' layer('default')
 + [SHIFT T_E] > 'Ə' layer('default')
 + [SHIFT T_R_0] > 'R̓' layer('default')
 + [SHIFT T_R] > 'R' layer('default')
@@ -31,6 +33,8 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
 + [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_1] > 'O' layer('default')
++ [SHIFT T_U_2] > 'Ó' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
@@ -40,15 +44,10 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_S_0] > 'Š' layer('default')
 + [SHIFT T_D] > 'ʔ' layer('default')
 'ə' + [SHIFT T_F] > 'ə́'
-'I' + [SHIFT T_F] > 'Í'
-'A' + [SHIFT T_F] > 'Á'
-'u' + [SHIFT T_F] > 'ú'
 'Ə' + [SHIFT T_F] > 'Ə́'
-'i' + [SHIFT T_F] > 'í'
-'a' + [SHIFT T_F] > 'á'
-'U' + [SHIFT T_F] > 'Ú'
 + [SHIFT T_G_0] > 'Ɣ̓' layer('default')
 + [SHIFT T_G] > 'Ɣ' layer('default')
 + [SHIFT T_H_0] > 'Ḥ' layer('default')
@@ -58,38 +57,40 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON] > 'Ł' layer('default')
-+ [SHIFT T_Z_0] > 'X̣' layer('default')
-+ [SHIFT T_Z] > 'X̌' layer('default')
++ [SHIFT T_COLON] > 'Ɫ' layer('default')
+'x' + [SHIFT T_Z] > 'x̌'
+'X' + [SHIFT T_Z] > 'X̌'
++ [SHIFT T_X_0] > 'X̌' layer('default')
++ [SHIFT T_X_1] > 'X̣' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C_1] > 'Č' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-'p' + [SHIFT T_V] > 'p̓'
 'c' + [SHIFT T_V] > 'c̓'
-'q' + [SHIFT T_V] > 'q̓'
-'r' + [SHIFT T_V] > 'r̓'
-'W' + [SHIFT T_V] > 'W̓'
-'ʕ' + [SHIFT T_V] > 'ʕ̓'
-'K' + [SHIFT T_V] > 'K̓'
-'Y' + [SHIFT T_V] > 'Y̓'
-'t' + [SHIFT T_V] > 't̓'
-'L' + [SHIFT T_V] > 'L̓'
-'Ɣ' + [SHIFT T_V] > 'Ɣ̓'
-'M' + [SHIFT T_V] > 'M̓'
-'N' + [SHIFT T_V] > 'N̓'
-'w' + [SHIFT T_V] > 'w̓'
-'ɣ' + [SHIFT T_V] > 'ɣ̓'
 'k' + [SHIFT T_V] > 'k̓'
-'P' + [SHIFT T_V] > 'P̓'
-'y' + [SHIFT T_V] > 'y̓'
-'C' + [SHIFT T_V] > 'C̓'
-'Q' + [SHIFT T_V] > 'Q̓'
 'l' + [SHIFT T_V] > 'l̓'
 'm' + [SHIFT T_V] > 'm̓'
-'R' + [SHIFT T_V] > 'R̓'
-'ƛ̓' + [SHIFT T_V] > 'ƛ̓'
 'n' + [SHIFT T_V] > 'n̓'
+'p' + [SHIFT T_V] > 'p̓'
+'q' + [SHIFT T_V] > 'q̓'
+'r' + [SHIFT T_V] > 'r̓'
+'t' + [SHIFT T_V] > 't̓'
+'w' + [SHIFT T_V] > 'w̓'
+'y' + [SHIFT T_V] > 'y̓'
+'ɣ' + [SHIFT T_V] > 'ɣ̓'
+'C' + [SHIFT T_V] > 'C̓'
+'K' + [SHIFT T_V] > 'K̓'
+'L' + [SHIFT T_V] > 'L̓'
+'M' + [SHIFT T_V] > 'M̓'
+'N' + [SHIFT T_V] > 'N̓'
+'P' + [SHIFT T_V] > 'P̓'
+'Q' + [SHIFT T_V] > 'Q̓'
+'R' + [SHIFT T_V] > 'R̓'
 'T' + [SHIFT T_V] > 'T̓'
+'W' + [SHIFT T_V] > 'W̓'
+'Y' + [SHIFT T_V] > 'Y̓'
+'Ɣ' + [SHIFT T_V] > 'Ɣ̓'
+'ʕ' + [SHIFT T_V] > 'ʕ̓'
 + [SHIFT T_B_0] > 'ʕ̓' layer('default')
 + [SHIFT T_B] > 'ʕ' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
@@ -101,6 +102,8 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E_0] > 'ə́'
++ [T_E_1] > 'e'
++ [T_E_2] > 'é'
 + [T_E] > 'ə'
 + [T_R_0] > 'r̓'
 + [T_R] > 'r'
@@ -109,6 +112,8 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
 + [T_U_0] > 'ú'
++ [T_U_1] > 'o'
++ [T_U_2] > 'ó'
 + [T_U] > 'u'
 + [T_I_0] > 'í'
 + [T_I] > 'i'
@@ -118,15 +123,10 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [T_A_0] > 'á'
 + [T_A] > 'a'
 + [T_S] > 's'
++ [T_S_0] > 'š'
 + [T_D] > 'ʔ'
 'ə' + [T_F] > 'ə́'
-'I' + [T_F] > 'Í'
-'A' + [T_F] > 'Á'
-'u' + [T_F] > 'ú'
 'Ə' + [T_F] > 'Ə́'
-'i' + [T_F] > 'í'
-'a' + [T_F] > 'á'
-'U' + [T_F] > 'Ú'
 + [T_G_0] > 'ɣ̓'
 + [T_G] > 'ɣ'
 + [T_H_0] > 'ḥ'
@@ -136,44 +136,59 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [T_K] > 'k'
 + [T_L_0] > 'l̓'
 + [T_L] > 'l'
-+ [T_COLON] > 'ł'
-+ [T_Z_0] > 'x̣'
-+ [T_Z] > 'x̌'
++ [T_COLON] > 'ɬ'
+'x' + [T_Z] > 'x̌'
+'X' + [T_Z] > 'X̌'
++ [T_X_0] > 'x̌'
++ [T_X_1] > 'x̣'
 + [T_X] > 'x'
 + [T_C_0] > 'c̓'
++ [T_C_1] > 'č'
 + [T_C] > 'c'
-'p' + [T_V] > 'p̓'
 'c' + [T_V] > 'c̓'
-'q' + [T_V] > 'q̓'
-'r' + [T_V] > 'r̓'
-'W' + [T_V] > 'W̓'
-'ʕ' + [T_V] > 'ʕ̓'
-'K' + [T_V] > 'K̓'
-'Y' + [T_V] > 'Y̓'
-'t' + [T_V] > 't̓'
-'L' + [T_V] > 'L̓'
-'Ɣ' + [T_V] > 'Ɣ̓'
-'M' + [T_V] > 'M̓'
-'N' + [T_V] > 'N̓'
-'w' + [T_V] > 'w̓'
-'ɣ' + [T_V] > 'ɣ̓'
 'k' + [T_V] > 'k̓'
-'P' + [T_V] > 'P̓'
-'y' + [T_V] > 'y̓'
-'C' + [T_V] > 'C̓'
-'Q' + [T_V] > 'Q̓'
 'l' + [T_V] > 'l̓'
 'm' + [T_V] > 'm̓'
-'R' + [T_V] > 'R̓'
-'ƛ̓' + [T_V] > 'ƛ̓'
 'n' + [T_V] > 'n̓'
+'p' + [T_V] > 'p̓'
+'q' + [T_V] > 'q̓'
+'r' + [T_V] > 'r̓'
+'t' + [T_V] > 't̓'
+'w' + [T_V] > 'w̓'
+'y' + [T_V] > 'y̓'
+'ɣ' + [T_V] > 'ɣ̓'
+'C' + [T_V] > 'C̓'
+'K' + [T_V] > 'K̓'
+'L' + [T_V] > 'L̓'
+'M' + [T_V] > 'M̓'
+'N' + [T_V] > 'N̓'
+'P' + [T_V] > 'P̓'
+'Q' + [T_V] > 'Q̓'
+'R' + [T_V] > 'R̓'
 'T' + [T_V] > 'T̓'
+'W' + [T_V] > 'W̓'
+'Y' + [T_V] > 'Y̓'
+'Ɣ' + [T_V] > 'Ɣ̓'
+'ʕ' + [T_V] > 'ʕ̓'
 + [T_B_0] > 'ʕ̓'
 + [T_B] > 'ʕ'
 + [T_N_0] > 'n̓'
 + [T_N] > 'n'
 + [T_M_0] > 'm̓'
 + [T_M] > 'm'
+
+c Backspace Rules
+store(Backspace) [K_BKSP]
+any(HasAcute) + any(Backspace) > index(NeedsAcute,1)
+any(HasCaron) + any(Backspace) > index(NeedsCaron,1)
+
+c Acute Rules
+store(TouchAcuteKey) [T_F] [SHIFT T_F]
+any(NeedsAcute) + any(TouchAcuteKey) > index(HasAcute,1)
+
+c Caron rules
+store(TouchCaronKey) [T_Z] [SHIFT T_Z]
+any(NeedsCaron) + any(TouchCaronKey) > index(HasCaron,1)
 
 c --- END OF TOUCH LAYOUT RULES ---
                 
@@ -185,13 +200,33 @@ store(underaccentkey) "1"
 store(overaccent)  U+0313 U+0300 U+0301
 store(overaccentkey) [K_Quote] "`" ";"
 
+c Caron Rules
+store(NeedsCaron) 'csCS'
+store(HasCaron) 'čšČŠ'
+store(Caron) U+030C
+store(CaronKeys) [NCAPS K_7] [CAPS K_7] [NCAPS SHIFT K_7] [CAPS SHIFT K_7]
+any(HasCaron) + any(CaronKeys) > context beep
+any(Caron) + any(CaronKeys) > context beep
+any(NeedsCaron) + any(CaronKeys) > index(HasCaron,1)
+
+c Acute Rules
+store(NeedsAcute) 'aeiouAEIOU'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
+store(AcuteKey) [K_COLON]
+any(NeedsAcute) + any(AcuteKey) > index(HasAcute,1)
+
 any(underaccent) + any(underaccentkey) > context beep
 any(overaccent) + any(overaccentkey) > context beep  
 any(underaccent) any(overaccent) + any(underaccentkey) > context beep
 
+
 store(accentkey) "1" [K_Quote] "`" ";"
+store(CapsAccentKey) [NCAPS K_7] [CAPS K_7] [NCAPS SHIFT K_7] [CAPS SHIFT K_7]
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(accentkey) > context beep
+any(NumbersAndPunctuation) + any(CapsAccentKey) > context beep
+
+
 
 c Original Punctuation
 + [SHIFT RALT K_RBRKT] > '}'
@@ -223,10 +258,12 @@ c Original Punctuation
 + [NCAPS RALT K_2] > '2'
 + [RALT K_1] > '1'
 + [RALT K_QUOTE] > U+0027  
++ [SHIFT RALT K_BKSLASH] > '|'
++ [RALT K_BKSLASH] > '\'
 
 c Quotes
 
-+ [SHIFT K_RBRKT] > U+201D
++ [SHIFT K_RBRKT] > U+201D c right double quotation mark
 + [SHIFT K_LBRKT] > U+201C  
 + [K_QUOTE] > U+0313   c apostrophe accent
 + [K_RBRKT] > U+2019
@@ -239,24 +276,24 @@ c Language specific
 + "<" > "("
 + ">" > ")"
 
-+ [CAPS K_9] > ''
++ [CAPS K_9] > U+A7AD
 + [CAPS K_8] > '̓'
-+ [CAPS K_7] >'X̌'
++ [CAPS K_7] > U+030C c combining caron
 + [CAPS K_5] > 'Ɣ'
 + [CAPS K_3] > "Ə"
 + [CAPS K_2] > 'ᵂ' 
 
 + ")" > "¢"  
-+ [NCAPS SHIFT K_9] > ''
++ [NCAPS SHIFT K_9] > U+A7AD
 + [NCAPS SHIFT K_8] > '̓'
-+ [NCAPS SHIFT K_7] > 'X̌'
++ [NCAPS SHIFT K_7] > U+030C c combining caron
 + [NCAPS SHIFT K_5] > 'Ɣ'
 + [NCAPS SHIFT K_3] > "Ə"
 + [NCAPS SHIFT K_2] > 'ᵂ' 
 
 + [CAPS SHIFT K_9] > 'ɬ'
 + [CAPS SHIFT K_8] > 'ƛ̓'
-+ [CAPS SHIFT K_7] > "x̌"
++ [CAPS SHIFT K_7] > U+030C c combining caron
 + [CAPS SHIFT K_5] >  'ɣ'
 + [CAPS SHIFT K_3] > "ə"
 + [CAPS SHIFT K_2] > 'ʷ'
@@ -264,13 +301,15 @@ c Language specific
 + "0" > 'ʕ'
 + [NCAPS K_9] > 'ɬ'
 + [NCAPS K_8] > 'ƛ̓'
-+ [NCAPS K_7] > 'x̌'
++ [NCAPS K_7] > U+030C c combining caron
 + "6" > '·'
 + [NCAPS K_5] > 'ɣ'
 + "4" > "ʔ"
 + [NCAPS K_3] > "ə"
 + [NCAPS K_2] > 'ʷ'
-+ "1" > U+0323 c dot accent    
++ "1" > U+0323 c dot accent 
+
+
 
 
 match > use(normalize)

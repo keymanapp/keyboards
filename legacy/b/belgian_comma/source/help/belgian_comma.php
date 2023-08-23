@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'French (Belgian Comma) Keyboard Help';
-  $pagetitle = 'French (Belgian Comma) Keyboard Help';
+  $pagename = 'French (Belgian Comma) (deprecated) Keyboard Help';
+  $pagetitle = 'French (Belgian Comma) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

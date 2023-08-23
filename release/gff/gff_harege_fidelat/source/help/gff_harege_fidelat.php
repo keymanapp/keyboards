@@ -1,10 +1,10 @@
 ﻿<?php /*
   Name:             Keyboard_gff_harege_fidelat
-  Copyright:        Keyboard © 2022 The Geʾez Frontier Foundation 
+  Copyright:        Keyboard © 2022-2023 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      23 Oct 2022
-  Last Update:      19 Nov 2022
+  Last Update:      08 Jul 2023
 */
   $pagename = 'Harege Fidelat Keyboard Help';
   $pagetitle = 'Harege Fidelat Keyboard Help';
@@ -29,7 +29,7 @@ code {
 }
 </style>
 
-<p style='margin:0px'>Keyboard &#169; 2022. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © 2022-2023. Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -133,25 +133,22 @@ their products.</p>
 <div id="Related">
 <h3>Related Keyboard Layouts</h3>
 <p>Keyboard Layouts for other Ethiopic languages:</p>
-<p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
+<p><p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_ethiopic">Ethiopic (Modern &amp; Legacy Geʾez)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awngi_xamtanta">Awngi &amp; Khimtanga</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mdx_7">Dizi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Ge'ez</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_harari">Harari</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Geʾez</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_gurage">Gurage</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mym_7">Me'en</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_muz_7">Mursi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigre">Tigre</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_eritrea">Tigrigna (Eritrea)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_ethiopia">Tigrigna (Ethiopia)</a></p>
-</div>
 
+</div>
 <div>
 <h3>Other Internet Resources</h3>
-<p><a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Ge'ez Script at Wikipedia.org</a><br/>
-<a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Ge'ez Script at Omniglot.com</a></p>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Ge'ez_alphabet">More on the Geʾez Script at Wikipedia.org</a><br/>
+<a target="_blank" href="http://www.omniglot.com/writing/ethiopic.htm">More on the Geʾez Script at Omniglot.com</a></p>
 </div>
 </div>
 
@@ -165,15 +162,6 @@ Due to the keyboard's width it is ideally suited for tablet devices but is also 
 <p>This keyboard complies with Unicode 14</p>
 </div>
 
-<div id="VersionHistory">
-<h3>Version History</h3>
-<dl>
-  <dt>Version 1.01 19 Nov 2022</dt>
-  <dd>Various <code>nextlayer</code> attributes fixed.</dd>
-  <dt>Version 1.0 12 Nov 2022</dt>
-  <dd>Initial release.</dd>
-</dl>
-
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p style="text-align: justify;">
@@ -184,6 +172,6 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL International 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p style="text-align: justify;">
-The Harege Fidelat keyboard layout for Keyman Mobile is Copyright 2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Harege Fidelat keyboard layout for Keyman Mobile is Copyright 2022-2023 Geʾez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>

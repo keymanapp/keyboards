@@ -1,5 +1,16 @@
 Old Hungarian Change History
 ====================
+1.7.4 (2023-07-18)
+------------------
+* Ralt and Shift Ralt keys works as lock keys.
+
+1.7.3 (2023-07-16)
+------------------
+* Added digital numbers, quotation marks and punctuation marks for mobile devices ralt+shift layer
+
+1.7.2 (2023-05-17)
+-----------------
+* Adjust BKQUOTE, 1, 2, 3, 4, 5, 6, and RALT BKQUOTE, 1, 2, 3, 4, 5, 6, 7, 8, and 9 to follow caps lock
 
 1.7.1 (2023-05-06)
 -----------------

@@ -3,11 +3,11 @@
   Copyright:        Keyboard ©2023 The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
-  Create Date:      17 April 2023
+  Create Date:      13 June 2023
 
 */
-  $pagename = 'ሐረሪ (Harari) Keyboard Help';
-  $pagetitle = 'ሐረሪ (Harari) Keyboard Help';
+  $pagename = 'GFF ሐረሪ (Harari) Keyboard Help';
+  $pagetitle = 'GFF ሐረሪ (Harari) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $style = <<<EXTRA
   .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
@@ -34,7 +34,7 @@ code {
 	<link rel="stylesheet" href="kb.css"/>
 </head>
 
-<p style='margin:0px'>Keyboard &#169; 2023. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © 2023. Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -205,8 +205,7 @@ We also use the &ldquo;number sign&rdquo; (&ldquo;#&rdquo; also know as the &ldq
 so typing <span class='keys'>;</span> once makes <span class='highlightExample'>፤</span> and a second time gives English semicolon <span class='input'>;</span>. 
 </p>
 <p style='margin-top:10px'>
-See <a target="_blank" href='HarariTyping-English.pdf'>Typing in Harari (English)</a> or 
-<a target="_blank" href='HarariTyping-Harari.pdf'>Typing in Harari (Harari)</a> 
+See <a target="_blank" href='HarariTyping-English.pdf'>Typing in Harari (English)</a>
 for full details on how to type all Harari letters, numbers and punctuation.
 </p>
 </div>
@@ -228,15 +227,12 @@ for full details on how to type all Harari letters, numbers and punctuation.
 <p>Keyboard Layouts for other Ethiopic languages:</p>
 <p><a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_harege_fidelat">Harege Fidelat (All Languages)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mesobe_fidelat">Mesobe Fidelat (All Languages)</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awn_7">Awngi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_bcq_7">Bench</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_blin">Blin</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mdx_7">Dizi</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_ethiopic">Ethiopic (All Languages)</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_amharic">Amharic</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_awngi_xamtanga">Awngi</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_geez">Geʾez</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_gurage">Gurage</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_mym_7">Meʾen</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_muz_7">Mursi</a><br/>
-<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_suq_7">Suri</a><br/>
+<a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigre">Tigre</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_eritrea">Tigrigna (Eritrea)</a><br/>
 <a href="/go?language=ethiopic&amp;keyboard=Keyboard_gff_tigrinya_ethiopia">Tigrigna (Ethiopia)</a></p>
 

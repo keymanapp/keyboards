@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Macedonian (FYRO) Keyboard Help';
-  $pagetitle = 'Macedonian (FYRO) Keyboard Help';
+  $pagename = 'Macedonian (FYRO) (deprecated) Keyboard Help';
+  $pagetitle = 'Macedonian (FYRO) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

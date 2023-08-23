@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Danish Keyboard Help';
-  $pagetitle = 'Danish Keyboard Help';
+  $pagename = 'Danish (deprecated) Keyboard Help';
+  $pagetitle = 'Danish (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

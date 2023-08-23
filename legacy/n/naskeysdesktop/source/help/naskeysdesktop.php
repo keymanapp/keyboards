@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Naskapi Syllabics Unicode Keyboard Package Help';
+  $pagename = 'Naskapi Syllabics Unicode (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');

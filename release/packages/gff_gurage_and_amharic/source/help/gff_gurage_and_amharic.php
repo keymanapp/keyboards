@@ -1,5 +1,5 @@
 ﻿<?php
-  $pagename = 'ጉራጌ (Gurage) and አማርኛ (Amharic) Keyboard Package Help';
+  $pagename = 'ጉራጌ (Gurage) and አማርኛ (Amharic) Package Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>

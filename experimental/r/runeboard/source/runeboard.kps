@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName>C:\Users\Owner\Documents\Keyman Developer\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder>Runeboard - Runic Keyboard with Ogham</Folder>
+    <Folder>Runeboard</Folder>
     <Items>
       <Item>
         <Name>Runeboard - Welcome</Name>
@@ -33,43 +32,32 @@
   <Info>
     <Name URL="">Runeboard - Runic Keyboard</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© ⅯⅯⅩⅩⅠⅠ ᚱᚢᚾ᛫ᛗᚫᚾ</Copyright>
-    <WebSite URL="https://www.youtube.com/channel/UCWLmY2EMdJxE_ch2BTvwl1g">https://www.youtube.com/channel/UCWLmY2EMdJxE_ch2BTvwl1g</WebSite>
+    <Copyright URL="">© ⅯⅯⅩⅩⅠⅠⅠ ᚱᚢᚾ᛫ᛗᚫᚾ</Copyright>
+    <WebSite URL="https://www.youtube.com/@LearnRunens">https://www.youtube.com/@LearnRunens</WebSite>
+    <Author URL="">ᚱᚢᚾ᛫ᛗᚫᚾ</Author>
   </Info>
   <Files>
     <File>
-      <Name>fonts\BabelStoneRunicBeorhtnoth.ttf</Name>
-      <Description>Font BabelStone Runic Beorhtnoth</Description>
+      <Name>..\build\runeboard.js</Name>
+      <Description>File runeboard.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.js</FileType>
     </File>
     <File>
-      <Name>fonts\BabelStoneRunicBerhtwald.ttf</Name>
-      <Description>Font BabelStone Runic Berhtwald</Description>
+      <Name>..\build\runeboard.kvk</Name>
+      <Description>File runeboard.kvk</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>fonts\Junicode.ttf</Name>
-      <Description>Font Junicode</Description>
+      <Name>..\build\runeboard.kmx</Name>
+      <Description>Keyboard Runes</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>fonts\Quivira.ttf</Name>
-      <Description>Font Quivira</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
@@ -80,73 +68,23 @@
       <FileType>.ico</FileType>
     </File>
     <File>
-      <Name>layout-iphone-portrait.jpg</Name>
-      <Description>File layout-iphone-portrait.jpg</Description>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
+      <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>layout-runeboard.jpg</Name>
-      <Description>File layout-runeboard.jpg</Description>
+      <Name>fonts\Catrinity.otf</Name>
+      <Description>Font Catrinity</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
-      <Name>layout-tablet-landscape-2-shifted.jpg</Name>
-      <Description>File layout-tablet-landscape-2-shifted.jpg</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
-      <Name>layout-tablet-portrait.jpg</Name>
-      <Description>File layout-tablet-portrait.jpg</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
-      <Name>layout-tablet-landscape.jpg</Name>
-      <Description>File layout-tablet-landscape.jpg</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
-      <Name>layout-tablet-landscape-3-ctrl-alt.jpg</Name>
-      <Description>File layout-tablet-landscape-3-ctrl-alt.jpg</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
-      <Name>layout-tablet-landscape-4-ctrl-alt-shifted.jpg</Name>
-      <Description>File layout-tablet-landscape-4-ctrl-alt-shifted.jpg</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
-      <Name>runeboard.kmx</Name>
-      <Description>Keyboard Runes</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>runeboard.js</Name>
-      <Description>File runeboard.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>runeboard.kvk</Name>
-      <Description>File runeboard.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
+      <FileType>.otf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Runes</Name>
       <ID>runeboard</ID>
-      <Version>1.0</Version>
-      <OSKFont>fonts\Quivira.ttf</OSKFont>
-      <DisplayFont>fonts\BabelStoneRunicBeorhtnoth.ttf</DisplayFont>
+      <Version>2.0</Version>
       <Languages>
         <Language ID="en-Runr">English (Runic)</Language>
         <Language ID="no-Runr">Norwegian (Runic)</Language>
@@ -154,7 +92,7 @@
         <Language ID="ang-Runr">Old English (ca. 450-1100) (Runic)</Language>
         <Language ID="enm-Runr">Middle English (1100-1500) (Runic)</Language>
         <Language ID="de-Runr">German (Runic)</Language>
-        <Language ID="non">Old Norse</Language>
+        <Language ID="non">Old Norse (Runic)</Language>
         <Language ID="is-Runr">Icelandic (Runic)</Language>
         <Language ID="sv-Runr">Swedish (Runic)</Language>
         <Language ID="fo-Runr">Faroese (Runic)</Language>

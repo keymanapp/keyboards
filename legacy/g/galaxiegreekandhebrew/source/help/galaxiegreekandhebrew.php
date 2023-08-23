@@ -9,8 +9,8 @@
                Please visit <a href='http://www.galaxie.com/' target='_blank'>www.galaxie.com</a> for more details.</p>
   Authors:     Hampton Keathley
 */
-  $pagename = 'Galaxie BibleScript Phonetic Keyboards Help';
-  $pagetitle = 'Galaxie BibleScript Phonetic Keyboards Help';
+  $pagename = 'Galaxie BibleScript Phonetic (deprecated) Keyboard Help';
+  $pagetitle = 'Galaxie BibleScript Phonetic (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

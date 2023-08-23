@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Diitiidatx Unicode Keyboard Help';
-  $pagetitle = 'Diitiidatx Unicode Keyboard Help';
+  $pagename = 'Diitiidatx Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Diitiidatx Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

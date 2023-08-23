@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,17 +17,11 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Harari (Latin)</Name>
-    <Copyright URL="">© 2005-2019 State Library of Victoria</Copyright>
+    <Name URL="">Harari (Lâtîn harfi)</Name>
+    <Copyright URL="">© 2005-2023 Enabling Languages</Copyright>
     <Author URL="mailto:lang.support@gmail.com">Andrew Cunningham</Author>
   </Info>
   <Files>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
     <File>
       <Name>..\build\el_harari_latin.kvk</Name>
       <Description>File el_harari_latin.kvk</Description>
@@ -40,17 +35,97 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>keyboard_layout.png</Name>
-      <Description>File keyboard_layout.png</Description>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact_README.txt</Name>
+      <Description>File CharisSIL-Compact_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Bold.ttf</Name>
+      <Description>Font Charis SIL Compact Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-BoldItalic.ttf</Name>
+      <Description>Font Charis SIL Compact Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Italic.ttf</Name>
+      <Description>Font Charis SIL Compact Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</Name>
+      <Description>Font Charis SIL Compact</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\charis_compact\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name></Name>
-      <ID></ID>
-      <Version></Version>
+      <Name>Harari (Lâtîn harfi)</Name>
+      <ID>el_harari_latin</ID>
+      <Version>2.1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="har-Latn">Harari (Latin)</Language>
       </Languages>
