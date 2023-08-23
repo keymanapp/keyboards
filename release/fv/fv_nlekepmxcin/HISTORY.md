@@ -1,9 +1,5 @@
 Nłeʔkepmxcin Change History
 ============================
-9.2.4 (1 May 2023)
--------------------
-* Added separate acute accent key to mobile keyboard
-* Centered keyboard
 
 9.2.3 (6 Mar 2023)
 -------------------
