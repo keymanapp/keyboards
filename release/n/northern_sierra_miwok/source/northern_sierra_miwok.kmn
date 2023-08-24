@@ -1,0 +1,48 @@
+﻿c Keyboard for typing Northern Sierra Miwok using the current alphabet adopted by the Shingle Springs Band of Miwok Indians (SSBMI) for use in Northern Sierra Miwok language materials.
+c 
+c Version 1.0-1.1 developed by Jonathan Geary (jgeary@ssband.org).
+c 
+c Please contact the SSBMI Language Program at language@ssband.org.
+store(&NAME) 'Northern Sierra Miwok'
+store(&COPYRIGHT) '© 2023 Shingle Springs Band of Miwok Indians'
+store(&VERSION) '10.0'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'northern_sierra_miwok.kvks'
+store(&LAYOUTFILE) 'northern_sierra_miwok.keyman-touch-layout'
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT RALT K_I] > 'Ɨ'
++ [RALT K_I] > 'ɨ'
++ [SHIFT RALT K_BKSLASH] > '’'
++ [RALT K_BKSLASH] > '’'
++ [SHIFT RALT K_T] > 'Ṭ'
++ [RALT K_T] > 'ṭ'
++ [SHIFT RALT K_N] > 'Ŋ'
++ [RALT K_N] > 'ŋ'
+
++ [SHIFT RALT K_QUOTE] > U+0301
++ [RALT K_QUOTE] > U+0301
+
+'A' + [SHIFT RALT K_QUOTE] > U+00C1
+'a' + [SHIFT RALT K_QUOTE] > U+00E1
+'E' + [SHIFT RALT K_QUOTE] > U+00C9
+'e' + [SHIFT RALT K_QUOTE] > U+00E9
+'I' + [SHIFT RALT K_QUOTE] > U+00CD
+'i' + [SHIFT RALT K_QUOTE] > U+00ED
+'O' + [SHIFT RALT K_QUOTE] > U+00D3
+'o' + [SHIFT RALT K_QUOTE] > U+00F3
+'U' + [SHIFT RALT K_QUOTE] > U+00DA
+'u' + [SHIFT RALT K_QUOTE] > U+00FA
+
+'A' + [RALT K_QUOTE] > U+00C1
+'a' + [RALT K_QUOTE] > U+00E1
+'E' + [RALT K_QUOTE] > U+00C9
+'e' + [RALT K_QUOTE] > U+00E9
+'I' + [RALT K_QUOTE] > U+00CD
+'i' + [RALT K_QUOTE] > U+00ED
+'O' + [RALT K_QUOTE] > U+00D3
+'o' + [RALT K_QUOTE] > U+00F3
+'U' + [RALT K_QUOTE] > U+00DA
+'u' + [RALT K_QUOTE] > U+00FA

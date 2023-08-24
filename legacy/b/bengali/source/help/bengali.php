@@ -16,8 +16,8 @@
   History:          18 Sep 2009 - mcdurdin - Full help
 */
   require_once('servervars.php');
-  $pagename = 'Traditional Bengali Keyboard Help';
-  $pagetitle = 'Traditional Bengali Keyboard Help';
+  $pagename = 'Traditional Bengali (deprecated) Keyboard Help';
+  $pagetitle = 'Traditional Bengali (deprecated) Keyboard Help';
   $style = 'lang2 {font-size:250%}';
   
   require_once('header.php');

@@ -1,10 +1,6 @@
 SIL EL - Ethiopian Latin Keyboard
 =================================
 
-Copyright (C) 2017-2019 SIL Ethiopia
-
-Version 1.4.0
-
 Description
 -----------
 The "SIL EL - Ethiopian Latin" keyboard is intended to support keying many Ethiopian latin-based scripts.

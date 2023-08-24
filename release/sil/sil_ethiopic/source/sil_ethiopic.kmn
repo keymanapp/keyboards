@@ -1,13 +1,13 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'SIL Ethiopic'
-store(&TARGETS) 'windows macosx linux'
-store(&KEYBOARDVERSION) '2.0.3'
-store(&ETHNOLOGUECODE) 'amh bcq bst dwr gdl gez gmv gof guk kxc mdx suq tig zay'
-store(&BITMAP) 'sil_ethiopic.bmp'
-store(&COPYRIGHT) '© 2010-2020 SIL Ethiopia'
-store(&MESSAGE) 'The SIL Ethiopic Unicode keyboard enables typing in all Ethiopic Fidel based languages.'
+store(&TARGETS) 'web desktop'
+store(&KEYBOARDVERSION) '2.0.4'
+store(&BITMAP) 'sil_ethiopic.ico'
+store(&COPYRIGHT) '© SIL Ethiopia'
+store(&MESSAGE) 'The SIL Ethiopic Unicode keyboard enables typing in all Ethiopic Saba Fidel scripts.'
 c store(&LANGUAGE) 'x045E'
 c store(&WINDOWSLANGUAGES) 'x045E'
+c store(&LAYOUT) 'default'
 
 c *********************************************************************************
 
@@ -140,10 +140,10 @@ c Diphthong Groups
 c 'base' is 6th form for SIL Ethiopic, is 4th form diphthong for SIL Power-G
 c                 m       r       q       Q       b       L       k       K       g       G       f       p
 
-c SIL Ethiopic
+c SIL Ethiopic 'A'
 store(DGbase)     U+121d  U+122d  U+1245  U+1255  U+1265  U+1285  U+12ad  U+12bd  U+130d  U+131d  U+134d  U+1355
 
-c SIL Power-G
+c SIL Power-G 'W' or 'Wa'
 c store(DGbase)   U+121f  U+122f  U+124b  U+125b  U+1267  U+128b  U+12b3  U+12c3  U+1313  U+131f  U+134f  U+1357
 
 c 'U'

@@ -1,5 +1,7 @@
 # ጉራጊና (Gurage) Legacy Change History
 
+## 2023-07-04 0.5
+* Revisions of the desktop keyboard (only) to synch with updates made to the Modern Gurage keyboard.
 
 ## 2020-10-24 0.1
 * Initial release as a "legacy keyboard" for Gurage orthographies (gff\_gruage\_legacy).

@@ -1,5 +1,5 @@
 <?php
-$pagename = 'PhahTaigi POJ Help';
+$pagename = 'PhahTaigi POJ Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');

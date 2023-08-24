@@ -309,7 +309,7 @@ type any vowel letter, then press backspace to delete the Lao vowel character, l
   <b> + `</b><span class="wd"> &#8594; </span><b>¥</b>
   <b> + `</b><span class="wd"> &#8594; </span><b>$</b>
 </li></ul>
-<p>Copyright 2015-2022 <a href="http://laoscript.net/">Dr John M Durdin</a>, <a href="http://laoscript.net/">laoscript.net</a></p>
+<p>Copyright <a href="http://laoscript.net/">Dr John M Durdin</a>, <a href="http://laoscript.net/">laoscript.net</a></p>
 
 </body>
 </html>

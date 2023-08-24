@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.61.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,9 +18,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Lao Phonetic</Name>
-    <Copyright URL="">© 2015-2022 John Durdin</Copyright>
+    <Copyright URL="">© 2015-2023 John Durdin</Copyright>
     <Author URL="">John Durdin</Author>
     <WebSite URL="http://www.laoscript.net/">http://www.laoscript.net/</WebSite>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -83,12 +84,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\build\lao_phonetic.js</Name>
+      <Description>File lao_phonetic.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lao Phonetic</Name>
       <ID>lao_phonetic</ID>
-      <Version>1.1.1</Version>
+      <Version>1.1.3</Version>
+      <OSKFont>..\..\..\shared\fonts\laoo\saysettha\Saysettha OT.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\laoo\saysettha\Saysettha OT.ttf</DisplayFont>
       <Languages>
         <Language ID="lo">Lao</Language>
       </Languages>

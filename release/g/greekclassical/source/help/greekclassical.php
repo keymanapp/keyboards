@@ -15,8 +15,8 @@
   Notes:            
   History:          3 Nov 2009 - pbaehr - Wrote KMW help
 */
-  $pagename = 'Greek Classical Typing Chart';
-  $pagetitle = 'Greek Classical Typing Chart';
+  $pagename = 'Greek Classical Keyboard Help';
+  $pagetitle = $pagename;
   $style = <<<END
 .lang2 {font-family:"Palatino Linotype", Tahoma; font-weight: bold; font-size: 1.5em; color: #0000ff; line-height:2em}
 h4 {font-size:11pt;}

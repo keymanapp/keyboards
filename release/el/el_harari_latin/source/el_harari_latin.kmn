@@ -1,19 +1,10 @@
-﻿c Harari Latin 1.1
-c 
-c Keyboard layout designed for Harari (Latin orthography).
-c 
-c Andrew Cunningham    2006-04-28
-c andrewc AT vicnet.net.au
-c 
-
-store(&Version) "10.0"
+﻿store(&Version) "10.0"
 c store(&Bitmap) "har.bmp"
-store(&KEYBOARDVERSION) "1.1.1"
-store(&Copyright) "© 2005-2019 State Library of Victoria"
-store(&Message) "Harari Latin keyboard layout."
-store(&Name) "Harari (Latin)"
+store(&KEYBOARDVERSION) '2.1.1'
+store(&COPYRIGHT) '© Enabling Languages'
+store(&Name) "Harari (Lâtîn harfi)"
 store(&VISUALKEYBOARD) 'el_harari_latin.kvks'
-store(&TARGETS) 'windows'
+store(&TARGETS) 'web desktop'
 
 begin Unicode > use(main)  
 
@@ -26,6 +17,8 @@ store(non_consonant) "qwertyuiopfgjklxcvbnmQWERTYUIOPFGJKLXCVBNM,<.>/?;:'[{]}`~1
 store(dia_v) "[{"
 store(dia_c) "]}"
 store(stress) "\|" 
+store(extendedpunctK) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_EQUAL]
+store(extendedpunctU) U+2018     U+201C     U+2039     U+00AB     U+2026     U+00A9     U+00BB     U+203A     U+201D     U+2019     U+2013          U+2014
 
 group(main) using keys
 
@@ -35,14 +28,16 @@ any(nonvowel) + any(dia_v) > context
 any(consonant_in) + any(dia_c) > index(consonant_out,1) 
 any(non_consonant) + any(dia_c) > context  
 
+ + any(extendedpunctK) > index(extendedpunctU,1)
+
 + any(stress) > U+02BC
 
-+ [CTRL ALT K_LBRKT] > "["
-+ [SHIFT CTRL ALT K_LBRKT] > "{" 
-+ [CTRL ALT K_RBRKT] > "]"
-+ [SHIFT CTRL ALT K_RBRKT] > "}"  
-+ [CTRL ALT K_BKSLASH] > "\"
-+ [SHIFT CTRL ALT K_BKSLASH] > "|"
++ [RALT K_LBRKT] > "["
++ [SHIFT RALT K_LBRKT] > "{" 
++ [RALT K_RBRKT] > "]"
++ [SHIFT RALT K_RBRKT] > "}"  
++ [RALT K_BKSLASH] > "\"
++ [SHIFT RALT K_BKSLASH] > "|"
 
 any(lvowels) + [K_BKSP] > nul
 any(consonant_out) + [K_BKSP] > nul

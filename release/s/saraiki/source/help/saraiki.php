@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Saraiki (Arabic) Keyboard';
-  $pagetitle = 'Saraiki (Arabic) Keyboard';
+  $pagename = 'Saraiki (Arabic) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
@@ -19,4 +19,4 @@
   <p><img src="saraiki_ctrl_alt.png" alt="Saraiki Keyboard: ctrl-alt"></p>
 
 
-<p>&copy; 2020 Parvez Qadir </p>
+<p>&copy; Parvez Qadir </p>

@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Bengali Phonetic (ITRANS) Help';
-  $pagetitle = 'Bengali Phonetic (ITRANS) Help';
+  $pagename = 'Bengali Phonetic (ITRANS) Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
     samp {font-family: Siddhanta; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}

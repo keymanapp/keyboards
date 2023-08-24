@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'The Rachitrali-Kashmiri Keyboard Package';
-  $pagetitle = 'The Rachitrali-Kashmiri Keyboard Package';
+  $pagename = 'Rachitrali-Kashmiri Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <!--[if !mso]>

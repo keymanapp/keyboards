@@ -5,7 +5,7 @@
 ?>
 
     <p>A Limbu keyboard layout where the layout matches a typewriter layout.</p>
-<p> The <a href="https://software.sil.org/namdhinggo">Namdhinggo SIL</a> font supports the Limbu script.</p>
+<p> The <a href="https://software.sil.org/namdhinggo">Namdhinggo</a> font supports the Limbu script.</p>
 
 
     <h2>Keyboard layout</h2>

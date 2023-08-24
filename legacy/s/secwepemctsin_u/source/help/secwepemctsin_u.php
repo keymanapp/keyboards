@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Secwepemctsín Unicode Keyboard Help';
-  $pagetitle = 'Secwepemctsín Unicode Keyboard Help';
+  $pagename = 'Secwepemctsín Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Secwepemctsín Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */
