@@ -1,5 +1,5 @@
 ﻿store(&VERSION) "10.0"
-store(&TARGETS) 'any mobile desktop tablet'
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "xsl"
 store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Dene Zhatié'
@@ -12,18 +12,17 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-
 c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-c store(&LAYOUTFILE) "fv_dene_zhatie.keyman-touch-layout"
+store(&LAYOUTFILE) "fv_dene_zhatie.keyman-touch-layout"
 
 c --- TOUCH STORES---
-store(BaseVowels) 'aeouAEOU'
-store(HasAcute) 'áéóúÁÉÓÚ'
+store(BaseVowels) 'aeiouAEIOU'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
 store(MAcute) [T_Q] [SHIFT T_Q]
-store(HasOgonek) 'ąęǫųĄĘǪŲ'
+store(HasOgonek) 'ąęįǫųĄĘĮǪŲ'
 store(MOgonek) [T_F] [SHIFT T_F]
 store(MBackspace) [K_BKSP] [SHIFT K_BKSP]
 
@@ -34,7 +33,6 @@ any(BaseVowels) + any(MOgonek) > index(HasOgonek,1)
 any(HasOgonek) + any(MAcute) > index(HasOgonek,1) U+0301
 any(HasOgonek) + any(MBackspace) > index(BaseVowels,1)
 
-
 'ı' + [SHIFT T_Q] > 'í'
 'ı̨' + [SHIFT T_Q] > 'ı̨́'
 'I' + [SHIFT T_Q] > 'Í'
@@ -43,6 +41,7 @@ any(HasOgonek) + any(MBackspace) > index(BaseVowels,1)
 + [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E_1] > 'Ę' layer('default')
 + [SHIFT T_E_2] > 'Ę́' layer('default')
++ [SHIFT T_E_3] > 'E̲E̲' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > 'R' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
@@ -92,6 +91,7 @@ any(HasOgonek) + any(MBackspace) > index(BaseVowels,1)
 + [T_E_0] > 'é'
 + [T_E_1] > 'ę'
 + [T_E_2] > 'ę́'
++ [T_E_3] > 'e̲e̲'
 + [T_E] > 'e'
 + [T_R] > 'r'
 + [T_T] > 't'
@@ -139,115 +139,126 @@ c --- END OF TOUCH LAYOUT RULES ---
 c --- BEGIN DESKTOP LAYOUT ---
 
 c original punctuation
-+ [NCAPS RALT K_BKQUOTE] > '`'
-+ [CAPS RALT K_BKQUOTE] > '`'
-+ [NCAPS SHIFT RALT K_BKQUOTE] > '~'
-+ [CAPS SHIFT RALT K_BKQUOTE] > '~'
++ [RALT K_BKQUOTE] > '`'
++ [SHIFT RALT K_BKQUOTE] > '~'
 
-+ [NCAPS RALT K_EQUAL] > '='
-+ [CAPS RALT K_EQUAL] > '='
-+ [NCAPS SHIFT RALT K_EQUAL] > '+'
-+ [CAPS SHIFT RALT K_EQUAL] > '+'
++ [RALT K_EQUAL] > '='
++ [SHIFT RALT K_EQUAL] > '+'
 
-+ [NCAPS RALT K_COLON] > ';'
-+ [CAPS RALT K_COLON] > ';'
-+ [NCAPS SHIFT RALT K_COLON] > ':'
-+ [CAPS SHIFT RALT K_COLON] > ':'
++ [RALT K_COLON] > ';'
++ [SHIFT RALT K_COLON] > ':'
 
-+ [NCAPS RALT K_SLASH] > '/'
-+ [CAPS RALT K_SLASH] > '/'
-+ [NCAPS SHIFT RALT K_SLASH] > '?'
-+ [CAPS SHIFT RALT k_SLASH] > '?'
++ [RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '?'
 
-+ [CAPS RALT K_BKSLASH] > '\'
-+ [NCAPS RALT K_BKSLASH ] > '\'
-+ [NCAPS SHIFT RALT K_BKSLASH] > '|'
-+ [CAPS SHIFT RALT K_BKSLASH] > '|'
++ [RALT K_BKSLASH ] > '\'
++ [SHIFT RALT K_BKSLASH] > '|'
 
-+ [NCAPS RALT K_LBRKT] > '['
-+ [CAPS RALT K_LBRKT] > '['
-+ [NCAPS SHIFT RALT K_LBRKT] > '{'
-+ [CAPS SHIFT RALT K_LBRKT] > '{'
++ [RALT K_LBRKT] > '['
++ [SHIFT RALT K_LBRKT] > '{'
 
-+ [NCAPS RALT K_RBRKT] > ']'
-+ [CAPS RALT K_RBRKT] > ']'
-+ [NCAPS SHIFT RALT K_RBRKT] > '}'
-+ [CAPS SHIFT RALT K_RBRKT] > '}'
++ [RALT K_RBRKT] > ']'
++ [SHIFT RALT K_RBRKT] > '}'
+
 
 c Guillemets
-+ [NCAPS SHIFT RALT K_0] > '›'
-+ [CAPS SHIFT RALT K_0] > '›'
-+ [NCAPS SHIFT RALT K_9] > '‹'
-+ [CAPS SHIFT RALT K_9] > '‹'
-+ [NCAPS RALT K_0] > '»'
-+ [CAPS RALT K_0] > '»'
-+ [NCAPS RALT K_9] > '«'
-+ [CAPS RALT K_9] > '«'
++ [SHIFT RALT K_0] > '›'
++ [SHIFT RALT K_0] > '›'
++ [SHIFT RALT K_9] > '‹'
++ [SHIFT RALT K_9] > '‹'
++ [RALT K_0] > '»'
++ [RALT K_0] > '»'
++ [RALT K_9] > '«'
++ [RALT K_9] > '«'
 
 c Quotes
-+ [NCAPS SHIFT K_RBRKT] > "”"
-+ [NCAPS SHIFT K_LBRKT] > "“"
-+ [NCAPS SHIFT K_BKQUOTE] > "‘"
-+ [K_QUOTE] > "’"
++ [SHIFT K_RBRKT] > "”"
++ [SHIFT K_LBRKT] > "“"
++ [SHIFT K_BKQUOTE] > "'"
++ [K_QUOTE] > "'"
+
+c Numbers
++ [K_1] > '1'
++ [SHIFT K_1] > '!'
++ [K_2] > '2'
++ [SHIFT K_2] > '@'
++ [K_3] > '3'
++ [SHIFT K_3] > '#'
++ [K_4] > '4'
++ [SHIFT K_4] > '$'
++ [K_5] > '5'
++ [SHIFT K_5] > '%'
++ [K_6] > '6'
++ [SHIFT K_6] > '^'
++ [K_7] > '7'
++ [SHIFT K_7] > '&'
++ [K_8] > '8'
++ [SHIFT K_8] > '*'
++ [K_9] > '9'
++ [SHIFT K_9] > '('
++ [K_0] > '0'
++ [SHIFT K_0] > ')'
 
 c letter 'I'
-+ [NCAPS RALT K_I] > 'i'
-+ [CAPS RALT K_I] > 'I'
-+ [NCAPS SHIFT RALT K_I] > 'I'
-+ [CAPS SHIFT RALT K_I] > 'i'
++ [RALT K_I] > 'i'
++ [SHIFT RALT K_I] > 'I'
 
 c language
++ [K_BKQUOTE] > U+0301
 
-+ [NCAPS K_BKQUOTE] > U+0301
++ [K_EQUAL] > 'ṉ'
++ [SHIFT K_EQUAL] > 'Ṉ'
 
-+ [NCAPS K_EQUAL] > 'ṉ'
-+ [CAPS K_EQUAL] > 'Ṉ'
-+ [NCAPS SHIFT K_EQUAL] > 'Ṉ'
-+ [CAPS SHIFT K_EQUAL] > 'ṉ'
++ [K_COLON] > 'ł'
++ [SHIFT K_COLON] > 'Ł'  
 
-+ [NCAPS K_COLON] > 'ł'
-+ [CAPS K_COLON] > 'Ł'
-+ [NCAPS SHIFT K_COLON] > 'Ł'
-+ [CAPS SHIFT K_COLON] > 'ł'   
++ [K_SLASH] > 'ɂ'
++ [SHIFT K_SLASH] > 'ʔ'
 
-+ [NCAPS K_SLASH] > 'ɂ'
-+ [CAPS K_SLASH] > 'ʔ'
-+ [NCAPS SHIFT K_SLASH] > 'ʔ'
-+ [CAPS SHIFT K_SLASH] > 'ɂ'
++ [K_I] > 'ı'
++ [SHIFT K_I] > 'I'
 
-+ [NCAPS K_I] > 'ı'
-+ [CAPS K_I] > 'I'
-+ [NCAPS SHIFT K_I] > 'I'
-+ [CAPS SHIFT K_I] > 'ı'
++ [RALT K_E] > 'e̲e̲'
++ [SHIFT RALT K_E] > 'E̲E̲'
 
-+ [NCAPS K_LBRKT] > U+0328
++ [K_LBRKT] > U+0328
 
++ [K_RBRKT] > U+0328 U+0301
 
-+ [NCAPS K_RBRKT] > U+0328 U+0301
-
-
-+ [NCAPS SHIFT K_RBRKT] > U+201D
-
-
++ [SHIFT K_RBRKT] > U+201D
 
 c --- stores and rules ---
 
-store(Acute) [NCAPS K_BKQUOTE] [CAPS K_BKQUOTE]
-store(Ogonek) [NCAPS K_LBRKT] [CAPS K_LBRKT]
-store(AcuteOgonek) [NCAPS K_RBRKT] [CAPS K_RBRKT]
-store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
-store(Backspace) [K_BKSP]
-store(AccentKeys) [NCAPS K_BKQUOTE] [CAPS K_BKQUOTE] [NCAPS K_LBRKT] [CAPS K_LBRKT] [CAPS K_RBRKT] [NCAPS K_RBRKT]
-store(Accents) '́' '̨'
+c --- caps/ncaps rules for modified keys ---
 
+store(&CasedKeys) [K_A] [K_I] [K_E] [K_COLON] [K_SLASH] [K_EQUAL]
+
+store(Acute) [K_BKQUOTE] '́'
+store(Ogonek) [K_LBRKT] '̨'
+store(AcuteOgonek) [K_RBRKT]
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?''“”‹›«»' "'"  c preventing accents on non-letters
+store(Backspace) [K_BKSP]
+store(Accents) '́' '̨'
+store(AccentKeys) [K_BKQUOTE] [K_LBRKT] [K_RBRKT]
+
+c --- stacking prevention rules ---
 any(NonLetters) + any(AccentKeys) > context beep
 any(Accents) + any(AccentKeys) > context beep
+any(HasAcute) + any(Acute) > context beep
+any(Acute) + any(Acute) > context beep
+any(Ogonek) + any(Ogonek) > context beep
 
+c --- single codepoint output rules ---
 any(BaseVowels) + any(Acute) > index(HasAcute,1)
 any(BaseVowels) + any(Ogonek) > index(HasOgonek,1)
 any(HasAcute) + any(Ogonek) > index(HasOgonek,1) U+0301
 any(HasOgonek) + any(Acute) > index(HasOgonek,1) U+0301
 any(BaseVowels) + any(AcuteOgonek) > index(HasOgonek,1) U+0301
+
+c --- dotless i rules ---
+'ı' + any(Acute) > 'í'
+'ı' + any(Ogonek) > 'ı̨'
+'ı' + any(AcuteOgonek) > 'ı̨́'
 
 c --- backspace ---
 any(HasAcute) + any(Backspace) > index(BaseVowels,1)
