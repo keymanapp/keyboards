@@ -1,7 +1,7 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
 c This is a Geʾez (ግዕዝ, ISO-639-2 gez) language mnemonic input method. They keyboard is designed
-c to work with the [EMUFI](https://emufi.geez.org/) project’s Geʾez Manuscript font (v1.2) which in turn 
+c to work with the [EMUFI](https://emufi.geez.org/) project’s “Geʾez Manuscript Zemen” font (v1.2) which in turn 
 c provides numerous punctuation, numerals, and letter forms found in manuscripts but not yet available under 
 c the Unicode standard.
 c 
@@ -127,9 +127,8 @@ c ---------------------Maps of Keystrokes of Syllabic Forms---------------------
 c ---------------------Maps of Yared ዜማ Notation---------------------------------------------
   store(ጥብቅ) U+135F
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'
-c  store(ዜማ፡menu) '[᎐①|᎓②|᎒③|᎙④|᎑⑤|᎔⑥|᎖⑦|᎕⑧|᎗⑨|᎘⓪]'        c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋
+ c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋    c ₀₁₂₃₄₅₆₇₈₉
   store(ዜማ፡menu) '[᎐₁᎓₂᎒₃᎙₄᎑₅᎔₆᎖₇᎕₈᎗₉᎘₀]' 
-  c ₀₁₂₃₄₅₆₇₈₉
 
   store(AratNeteb፡menu) '[₁₂₃₄₅₆₇]'
   store(AratNeteb፡one፡menu) '[₁₂₃₄₅₆₇₈]'
@@ -140,14 +139,16 @@ c  store(ዜማ፡menu) '[᎐①|᎓②|᎒③|᎙④|᎑⑤|᎔⑥|᎖⑦|᎕�
   store(AratNeteb፡six፡menu) '[₁₂₃₄₅₆₇₈]'
   store(AratNeteb፡seven፡menu) '[₁₂]'
 
-  store(Miscellaneous፡menu) '[₁₂₃₄₅₆]'
+  store(Miscellaneous፡menu) '[₁₂₃₄₅₆₇]'
   store(Miscellaneous፡one፡menu) '[₁₂₃₄₅₆₇₈]'
-  store(Miscellaneous፡six፡menu) '[₁₂]'
+  store(Miscellaneous፡seven፡menu) '[₁₂]'
 
   store(Insertion፡menu) '[₁₂₃₄]'
   store(Insertion፡one፡menu) '[₁₂₃₄]'
   store(Spacers፡menu) '[₁₂₃  ₄]'
-  store(Extensible) ''
+  store(Extensible) ''
+  store(ExtensibleHidet1) '᎗'
+  store(ExtensibleHidet2) '᎘'
 
   store(HuletNeteb፡menu) '[₁₂₃₄₅₆]'
   store(Semicolon፡menu) '[₁₂₃₄]'
@@ -367,6 +368,9 @@ c ፼ Menus:
   store(tenthousandsRedBars፡menu) '[①|②|③]'
   store(tenthousandsRedBody፡menu) '[①|②|③|④]'
   store(tenthousandsSansSerifBars፡menu) '[①|②|③]'
+
+  store(tensEMUFI) '፲'
+  store(conjunctiveTens) ''
 
 c  Menus:
   store(conjtensBase፡menu) '[①|②|③|④|⑤|⑥]'
@@ -631,13 +635,13 @@ c
   outs(AratNeteb፡seven፡menu) + any(twoKeys) > use(AratNeteb፡seven፡group)
 
   '*' + [K_TAB] > outs(Miscellaneous፡menu)
-  outs(Miscellaneous፡menu) + any(sixKeys) > use(Miscellaneous፡group)
+  outs(Miscellaneous፡menu) + any(sevenKeys) > use(Miscellaneous፡group)
 
   '' + [K_TAB] > outs(Miscellaneous፡one፡menu)
   outs(Miscellaneous፡one፡menu) + any(eightKeys) > use(Miscellaneous፡one፡group)
 
-  '' + [K_TAB] > outs(Miscellaneous፡six፡menu)
-  outs(Miscellaneous፡six፡menu) + any(twoKeys) > use(Miscellaneous፡six፡group)
+  '' + [K_TAB] > outs(Miscellaneous፡seven፡menu)
+  outs(Miscellaneous፡seven፡menu) + any(twoKeys) > use(Miscellaneous፡seven፡group)
 
   '.' + [K_TAB] > outs(Hareg፡menu) 
   outs(Hareg፡menu) + any(nineKeys) > use(Hareg፡group)
@@ -675,7 +679,9 @@ c
   '' + [K_TAB] > outs(Semicolon፡four፡menu)
   outs(Semicolon፡four፡menu) + any(threeKeys) > use(Semicolon፡four፡group)
 
-  any(Extensible) + '-' > context(1) '' 
+  any(Extensible) + '-' > context(1) ''
+  any(ExtensibleHidet1) + '-' > context(1) ''
+  any(ExtensibleHidet2) + '-' > context(1) ''
 
 c ---------------------Begin of EMFUI Symbols-------------------------------------------------
 c
@@ -907,7 +913,7 @@ c
 '' + [K_TAB] > outs(difatDifat፡menu)
     outs(difatDifat፡menu) + any(sixKeys) > use(difatDifat፡group)
 '' + [K_TAB] > outs(difatDeret፡menu)
-    outs(difatDeret፡menu) + any(threeKeys) > use(difatDeret፡group)
+    outs(difatDeret፡menu) + any(fourKeys) > use(difatDeret፡group)
 '' + [K_TAB] > outs(difatDeretDifat፡menu)
     outs(difatDeretDifat፡menu) + any(threeKeys) > use(difatDeretDifat፡group)
 
@@ -922,7 +928,7 @@ c
 '᎕' + [K_TAB] > outs(qinat፡menu)
     outs(qinat፡menu) + any(oneKeys) > use(qinat፡group)
 '᎗' + [K_TAB] > outs(hidet፡menu)
-    outs(hidet፡menu) + any(oneKeys) > use(hidet፡group)
+    outs(hidet፡menu) + any(fourKeys) > use(hidet፡group)
 
 c ፩ Menus:
 '፩' + [K_TAB] > outs(onesBase፡menu)
@@ -1204,6 +1210,10 @@ c ፼ Menus:
 '' + [K_TAB] > outs(tenthousandsSansSerifBars፡menu)
   outs(tenthousandsSansSerifBars፡menu) + any(threeKeys) > use (tenthousandsSansSerifBars፡group)
 
+
+c  initial composition
+c '፲ወ' + [K_TAB] > 'ወ'
+any(tensEMUFI) 'ወ' + [K_TAB] > index(conjunctiveTens,1) 'ወ'
 c  Menus:
 '' + [K_TAB] > outs(conjtensBase፡menu)
   outs(conjtensBase፡menu) + any(sixKeys) > use (conjtensBase፡group)
@@ -1270,15 +1280,15 @@ group(Spacers፡group) using keys
   + [K_TAB] > '='
 
 group(Miscellaneous፡group) using keys
-  + any(sixKeys፡index) > index(Miscellaneous፡menu, 1)
+  + any(sevenKeys፡index) > index(Miscellaneous፡menu, 1)
   + [K_TAB] > '*'
 
 group(Miscellaneous፡one፡group) using keys
   + any(eightKeys፡index) > index(Miscellaneous፡one፡menu, 1)
   + [K_TAB] > '*'
 
-group(Miscellaneous፡six፡group) using keys
-  + any(twoKeys፡index) > index(Miscellaneous፡six፡menu, 1)
+group(Miscellaneous፡seven፡group) using keys
+  + any(twoKeys፡index) > index(Miscellaneous፡seven፡menu, 1)
   + [K_TAB] > ''
 
 group(HuletNeteb፡group) using keys
@@ -1321,45 +1331,59 @@ group(ዜማ፡group) using keys
 
 group(deret፡group) using keys
     + any(fiveKeys፡index) > index(deret፡menu,1)
+    + [K_TAB] > '᎑'
 
 group(deretDifat፡group) using keys
-    + any(fourKeys፡index) > index(deret፡menu,1)
+    + any(fourKeys፡index) > index(deretDifat፡menu,1)
+    + [K_TAB] > ''
 
 group(deretDifatDeret፡group) using keys
     + any(fourKeys፡index) > index(deretDifatDeret፡menu,1)
+    + [K_TAB] > ''  fix 
 
 group(deretDifatDifat፡group) using keys
     + any(twoKeys፡index) > index(deretDifatDifat፡menu,1)
+    + [K_TAB] > ''  fix
 
 group(difat፡group) using keys
     + any(eightKeys፡index) > index(difat፡menu,1)
+    + [K_TAB] > '᎔'
 
 group(difatDifat፡group) using keys
     + any(sixKeys፡index) > index(difatDifat፡menu,1)
+    + [K_TAB] > ''
 
 group(difatDeret፡group) using keys
-    + any(threeKeys፡index) > index(difatDeret፡menu,1)
+    + any(fourKeys፡index) > index(difatDeret፡menu,1)
+    + [K_TAB] > ''
 
 group(difatDeretDifat፡group) using keys
     + any(threeKeys፡index) > index(difatDeretDifat፡menu,1)
+    + [K_TAB] > '' 
 
 group(chiret፡group) using keys
     + any(nineKeys፡index) > Index(chiret፡menu,1)
+    + [K_TAB] > '᎖'
 
 group(yizet፡group) using keys
     + any(nineKeys፡index) > Index(yizet፡menu,1)
+    + [K_TAB] > '᎐'
 
 group(hasirRikrik፡group) using keys
     + any(sevenKeys፡index) > Index(hasirRikrik፡menu,1)
+    + [K_TAB] > '᎓'
 
 group(rikrik፡group) using keys
     + any(nineKeys፡index) > Index(rikrik፡menu,1)
+    + [K_TAB] > '᎒'
 
 group(qinat፡group) using keys
     + any(oneKeys፡index) > Index(qinat፡menu,1)
+    + [K_TAB] > '᎕'
 
 group(hidet፡group) using keys
-    + any(oneKeys፡index) > Index(hidet፡menu,1)
+    + any(fourKeys፡index) > Index(hidet፡menu,1)
+    + [K_TAB] > '᎗'
 
 c ---------------------End ዜማ Group----------------------------------------------------------
 c ---------------------Begin Number Group--------------------------------------------------

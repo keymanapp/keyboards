@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "GFF Geʾez";
-  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Geʾez Language";
+  $pagename = "GFF Geʾez Manuscripts";
+  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Geʾez Manuscripts";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -61,16 +61,25 @@ END;
 ?>
 
 
+<h1>The Geʾez Frontier Foundation Keyboard for Geʾez Manuscripts</h1>
+<img alt="EMUFI project logo" src="https://emufi.geez.org/images/emufi-logo.png" width="600"/>
+
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Geʾez (ግዕዝ, ISO-639-2: gez) language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.
-The Ge&rsquo;ez keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard. This means that the keyboard is designed to
-be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
-The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
+This is a Geʾez (ግዕዝ, ISO-639-2 gez) language mnemonic input method. They keyboard is designed
+to work with the <a href="https://emufi.geez.org/">EMUFI</a> project’s “Geʾez Manuscript Zemen” font (v1.2) which in turn 
+provides numerous punctuation, numerals, and letter forms found in manuscripts but not yet available under 
+the Unicode standard.
 </p>
 
-<p>A more complete typing manual is provided as a <a target="_blank" href="GeezTyping-English.pdf">PDF file</a> with this distribution.</p>
+<p style="text-align: justify;">
+In essence, this is the <a href="https://keyman.com/keyboards/gff_geez">GFF Geʾez Keyboard</a> with the added ability to type
+over 1,000 additional symbols found in Geʾez manuscripts. See the <a target="_blank" href="EMUFI-Typing-Manual.pdf">typing manual</a> 
+for a detailed review of how to type these additional symbols.
+</p>
+
+<p>The following section reviews typing of <em>basic</em> Geʾez which is also available in a <a target="_blank" href="GeezTyping-English.pdf">PDF file</a>.</p>
 
  
 <h2><a id="status" name="status"></a>Typing Letters</h2>
@@ -316,7 +325,7 @@ Type the number that corresponds to the qirts that you want and it will appear a
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2022-2023. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
