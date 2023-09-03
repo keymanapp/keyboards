@@ -130,80 +130,71 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
  c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋    c ₀₁₂₃₄₅₆₇₈₉
   store(ዜማ፡menu) '[᎐₁᎓₂᎒₃᎙₄᎑₅᎔₆᎖₇᎕₈᎗₉᎘₀]' 
 
-  store(AratNeteb፡menu) '[።︀₁።︍₂።󠄄₃።︇₄።󠄃₅።󠄍₆።󠄕₇]'
-  store(AratNeteb፡one፡menu) '[።︁₁።︃₂።󠄗₃።󠄘₄።︄₅።︅₆።︈₇።︂₈]'
-  store(AratNeteb፡two፡menu) '[።︎₁።️₂።󠄀₃።󠄂₄]'
-  store(AratNeteb፡three፡menu) '[።󠄅₁።󠄆₂።󠄇₃]'
-  store(AratNeteb፡four፡menu) '[።︆₁።︉₂።︊₃።︋₄።︌₅።󠄒₆።󠄓₇]'
-  store(AratNeteb፡five፡menu) '[።󠄐₁።󠄑₂።󠄋₃።󠄌₄]'
-  store(AratNeteb፡six፡menu) '[።󠄎₁።󠄙₂።󠄏₃።󠄊₄።󠄈₅።󠄉₆₇₈]'
-  store(AratNeteb፡seven፡menu) '[።󠄔₁።󠄖₂]'
+  store(AratNeteb፡menu) '[₁₂₃₄₅₆₇]'
+  store(AratNeteb፡one፡menu) '[₁₂₃₄₅₆₇₈]'
+  store(AratNeteb፡two፡menu) '[₁₂₃₄]'
+  store(AratNeteb፡three፡menu) '[₁₂₃]'
+  store(AratNeteb፡four፡menu) '[₁₂₃₄₅₆₇]'
+  store(AratNeteb፡five፡menu) '[₁₂₃₄]'
+  store(AratNeteb፡six፡menu) '[₁₂₃₄₅₆₇₈]'
+  store(AratNeteb፡seven፡menu) '[₁₂]'
 
-  store(Miscellaneous፡menu) '[₁₂₃₄₅₆₇₈]'
-  store(Miscellaneous፡one፡menu) '[︀₁︁₂︂₃︃₄︄₅︅₆︇₇︆₈]'
-  store(Miscellaneous፡eight፡menu) '[︀₁︁₂]'
+  store(Miscellaneous፡menu) '[₁₂₃₄₅₆₇]'
+  store(Miscellaneous፡one፡menu) '[₁₂₃₄₅₆₇₈]'
+  store(Miscellaneous፡seven፡menu) '[₁₂]'
 
   store(Insertion፡menu) '[₁₂₃₄]'
-  store(Insertion፡one፡menu) '[︀₁︁₂︂₃︃₄]'
-  store(Spacers፡menu) '[₁︀₂︁₃  ₄]'
-  store(Extensible) '።︇።︆።︉'
-  store(SectionMarks፡menu) '[፠︀₁፠︁₂]'
+  store(Insertion፡one፡menu) '[₁₂₃₄]'
+  store(Spacers፡menu) '[₁₂₃  ₄]'
+  store(Extensible) ''
   store(ExtensibleHidet1) '᎗'
   store(ExtensibleHidet2) '᎘'
 
-  store(HuletNeteb፡menu) '[፡︁₁፡︂₂፡︃₃፡︄₄፤󠄂₅፡︀₆]'
-  store(Semicolon፡menu) '[፤︁₁፤︄₂፤︈₃፤︂₄]'
-  store(Semicolon፡one፡menu) '[፤︀₁፤︎₂፤󠄂₃፤︋₄]' 
-  store(Semicolon፡two፡menu) '[፤︅₁፤︆₂፤󠄀₃]'
-  store(Semicolon፡three፡menu) '[፤︌₁፤︊₂፤︉₃]'
-  store(Semicolon፡four፡menu) '[፤︃₁፤󠄄₂፤󠄅₃]'
+  store(HuletNeteb፡menu) '[₁₂₃₄₅₆]'
+  store(Semicolon፡menu) '[₁₂₃₄]'
+  store(Semicolon፡one፡menu) '[₁₂]'  
+  store(Semicolon፡two፡menu) '[₁₂₃₄]'
+  store(Semicolon፡three፡menu) '[₁₂₃]'
+  store(Semicolon፡four፡menu) '[₁₂₃]'
   store(Hareg፡menu) '[₁₂₃₄₅₆₇₈₉]'
-  store(Mekfel፡menu) '[︀₁]'
-  store(Comma፡menu) '[፣︀₁]'
+  store(Mekfel፡menu) '[₁]'
+  store(Comma፡menu) '[₁]'
+
 
   store(oneKeys) '1'[K_TAB]
   store(oneKeys፡index) ' 1' 
-  store(oneKeys፡index፡vs) '  1' 
   store(twoKeys) '12'[K_TAB]
+  store(twoKeys፡index፡numbers) ' 1  2'
   store(twoKeys፡index) ' 1 2'
-  store(twoKeys፡index፡vs) '  1  2'
-  store(twoKeys፡index፡numbers) '  1   2'
   store(threeKeys) '123'[K_TAB]
+  store(threeKeys፡index፡numbers) ' 1  2  3'
   store(threeKeys፡index) ' 1 2 3'
-  store(threeKeys፡index፡vs) '  1  2  3'
-  store(threeKeys፡index፡numbers) '  1   2   3'
   store(fourKeys) '1234'[K_TAB]
+  store(fourKeys፡index፡numbers) ' 1  2  3  4'
+  store(fourKeys፡index፡spacers) ' 1 2 3  4 '
   store(fourKeys፡index) ' 1 2 3 4'
-  store(fourKeys፡index፡vs) '  1  2  3  4'
-c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
-  store(threeKeys፡index፡spacers) ' 1  2  3'
-  store(fourKeys፡index፡numbers) '  1   2   3   4'
   store(fiveKeys) '12345'[K_TAB]
+  store(fiveKeys፡index፡numbers) ' 1  2  3  4  5'
   store(fiveKeys፡index) ' 1 2 3 4 5'
-  store(fiveKeys፡index፡vs) '  1  2  3  4  5'
-  store(fiveKeys፡index፡numbers) '  1   2   3   4   5'
   store(sixKeys) '123456'[K_TAB]
+  store(sixKeys፡index፡numbers) ' 1  2  3  4  5  6'
   store(sixKeys፡index) ' 1 2 3 4 5 6'
-  store(sixKeys፡index፡vs) '  1  2  3  4  5  6'
-  store(sixKeys፡index፡numbers) '  1   2   3   4   5   6'
   store(sevenKeys) '1234567'[K_TAB]
+  store(sevenKeys፡index፡numbers) ' 1  2  3  4  5  6  7'
   store(sevenKeys፡index) ' 1 2 3 4 5 6 7'
-  store(sevenKeys፡index፡vs) '  1  2  3  4  5  6  7'
-  store(sevenKeys፡index፡numbers) '  1   2   3   4   5   6   7'
   store(eightKeys) '12345678'[K_TAB]
+  store(eightKeys፡index፡numbers) ' 1  2  3  4  5  6  7  8'
   store(eightKeys፡index) ' 1 2 3 4 5 6 7 8'
-  store(eightKeys፡index፡vs) '  1  2  3  4  5  6  7  8'
-  store(eightKeys፡index፡numbers) '  1   2   3   4   5   6   7   8'
   store(nineKeys) '123456789'[K_TAB]
-  store(nineKeys፡index፡numbers) '  1   2   3   4   5   6   7   8   9'  
+  store(nineKeys፡index፡numbers) ' 1  2  3  4  5  6  7  8  9'  
   store(nineKeys፡index) ' 1 2 3 4 5 6 7 8 9'
   store(tenKeys) '1234567890'[K_TAB]
-  store(tenKeys፡index፡numbers) '  1   2   3   4   5   6   7   8   9   0'
+  store(tenKeys፡index፡numbers) ' 1  2  3  4  5  6  7  8  9  0'
   store(tenKeys፡index) ' 1 2 3 4 5 6 7 8 9 0'
 
   store(deret፡menu) '[₁₂₃₄₅]'
   store(deretDifat፡menu) '[₁₂₃₄]'
-  store(deretDifatDeret፡menu) '[₁₂₃︀₄]'
+  store(deretDifatDeret፡menu) '[₁₂₃₄]'
   store(deretDifatDifat፡menu) '[₁₂]'
   
   store(difat፡menu) '[₁₂₃₄₅₆₇₈]'
@@ -212,182 +203,182 @@ c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(difatDeretDifat፡menu) '[₁₂₃]'
 
   store(chiret፡menu) '[₁₂₃₄₅₆₇₈₉]'
-  store(yizet፡menu) '[₁₂︀₃︀₄₅︀₆︀₇₈₉]'
-  store(hasirRikrik፡menu) '[᎓︀₁᎓︁₂₃₄₅₆₇]'
-  store(rikrik፡menu) '[᎒︀₁᎒︁₂₃₄₅₆₇₈₉]'
-  store(qinat፡menu) '[᎕︀₁]'
-  store(hidet፡menu) '[︀₁₂₃₄]'
+  store(yizet፡menu) '[₁₂₃₄₅₆₇₈₉]'
+  store(hasirRikrik፡menu) '[₁₂₃₄₅₆₇]'
+  store(rikrik፡menu) '[₁₂₃₄₅₆₇₈₉]'
+  store(qinat፡menu) '[₁]'
+  store(hidet፡menu) '[₁₂₃₄]'
 
 c ፩ Menus:
-  store(onesBase፡menu) '[፩︁①|፩︀②|፩︅③|፩︂④|፩︄⑤|፩󠄄⑥]'
-  store(onesSingleBlackBar፡menu) '[፩︃①|፩︇②|፩️③|፩󠄁④|፩󠄅⑤]'
-  store(onesSingleBarRedBody፡menu) '[፩︋①|፩󠄃②|፩︉③|፩︍④]'
-  store(onesRedBars፡menu) '[፩︆①|፩︎②|፩󠄀③]'
-  store(onesRedBody፡menu) '[፩︊①|፩󠄂②|፩︈③|፩︌④]'
-  store(onesSansSerifBars፡menu) '[፩󠄆①|፩󠄇②|፩󠄈③]'
+  store(onesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(onesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(onesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(onesRedBars፡menu) '[①|②|③]'
+  store(onesRedBody፡menu) '[①|②|③|④]'
+  store(onesSansSerifBars፡menu) '[①|②|③]'
 
 c ፪ Menus:
-  store(twosBase፡menu) '[፪︁①|፪︀②|፪︅③|፪︂④|፪︄⑤|፪󠄄⑥]'
-  store(twosSingleBlackBar፡menu) '[፪︃①|፪︇②|፪️③|፪󠄁④|፪󠄅⑤]'
-  store(twosSingleBarRedBody፡menu) '[፪︋①|፪󠄃②|፪︉③|፪︍④]'
-  store(twosRedBars፡menu) '[፪︆①|፪︎②|፪󠄀③]'
-  store(twosRedBody፡menu) '[፪︊①|፪󠄂②|፪︈③|፪︌④]'
-  store(twosSansSerifBars፡menu) '[፪󠄆①|፪󠄇②|፪󠄈③]'
+  store(twosBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(twosSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(twosSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(twosRedBars፡menu) '[①|②|③]'
+  store(twosRedBody፡menu) '[①|②|③|④]'
+  store(twosSansSerifBars፡menu) '[①|②|③]'
 
 c ፫ Menus:
-  store(threesBase፡menu) '[፫︁①|፫︀②|፫︅③|፫︂④|፫︄⑤|፫󠄄⑥]'
-  store(threesSingleBlackBar፡menu) '[፫︃①|፫︇②|፫️③|፫󠄁④|፫󠄅⑤]'
-  store(threesSingleBarRedBody፡menu) '[፫︋①|፫󠄃②|፫︉③|፫︍④]'
-  store(threesRedBars፡menu) '[፫︆①|፫︎②|፫󠄀③]'
-  store(threesRedBody፡menu) '[፫︊①|፫󠄂②|፫︈③|፫︌④]'
-  store(threesSansSerifBars፡menu) '[፫󠄆①|፫󠄇②|፫󠄈③]'
+  store(threesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(threesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(threesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(threesRedBars፡menu) '[①|②|③]'
+  store(threesRedBody፡menu) '[①|②|③|④]'
+  store(threesSansSerifBars፡menu) '[①|②|③]'
 
 c ፬ Menus:
-  store(foursBase፡menu) '[፬︁①|፬︀②|፬︅③|፬︂④|፬︄⑤|፬󠄄⑥]'
-  store(foursSingleBlackBar፡menu) '[፬︃①|፬︇②|፬️③|፬󠄁④|፬󠄅⑤]'
-  store(foursSingleBarRedBody፡menu) '[፬︋①|፬󠄃②|፬︉③|፬︍④]'
-  store(foursRedBars፡menu) '[፬︆①|፬︎②|፬󠄀③]'
-  store(foursRedBody፡menu) '[፬︊①|፬󠄂②|፬︈③|፬︌④]'
-  store(foursSansSerifBars፡menu) '[፬󠄆①|፬󠄇②|፬󠄈③]'
+  store(foursBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(foursSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(foursSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(foursRedBars፡menu) '[①|②|③]'
+  store(foursRedBody፡menu) '[①|②|③|④]'
+  store(foursSansSerifBars፡menu) '[①|②|③]'
 
 c ፭ Menus:
-  store(fivesBase፡menu) '[፭︁①|፭︀②|፭︅③|፭︂④|፭︄⑤|፭󠄄⑥]'
-  store(fivesSingleBlackBar፡menu) '[፭︃①|፭︇②|፭️③|፭󠄁④|፭󠄅⑤]'
-  store(fivesSingleBarRedBody፡menu) '[፭︋①|፭󠄃②|፭︉③|፭︍④]'
-  store(fivesRedBars፡menu) '[፭︆①|፭︎②|፭󠄀③]'
-  store(fivesRedBody፡menu) '[፭︊①|፭󠄂②|፭︈③|፭︌④]'
-  store(fivesSansSerifBars፡menu) '[፭󠄆①|፭󠄇②|፭󠄈③]'
+  store(fivesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(fivesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(fivesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(fivesRedBars፡menu) '[①|②|③]'
+  store(fivesRedBody፡menu) '[①|②|③|④]'
+  store(fivesSansSerifBars፡menu) '[①|②|③]'
 
 c ፮ Menus:
-  store(sixesBase፡menu) '[፮︁①|፮︀②|፮︅③|፮︂④|፮︄⑤|፮󠄄⑥]'
-  store(sixesSingleBlackBar፡menu) '[፮︃①|፮︇②|፮️③|፮󠄁④|፮󠄅⑤]'
-  store(sixesSingleBarRedBody፡menu) '[፮︋①|፮󠄃②|፮︉③|፮︍④]'
-  store(sixesRedBars፡menu) '[፮︆①|፮︎②|፮󠄀③]'
-  store(sixesRedBody፡menu) '[፮︊①|፮󠄂②|፮︈③|፮︌④]'
-  store(sixesSansSerifBars፡menu) '[፮󠄆①|፮󠄇②|፮󠄈③]'
+  store(sixesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(sixesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(sixesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(sixesRedBars፡menu) '[①|②|③]'
+  store(sixesRedBody፡menu) '[①|②|③|④]'
+  store(sixesSansSerifBars፡menu) '[①|②|③]'
 
 c ፯ Menus:
-  store(sevensBase፡menu) '[፯︁①|፯︀②|፯︅③|፯︂④|፯︄⑤|፯󠄄⑥]'
-  store(sevensSingleBlackBar፡menu) '[፯︃①|፯︇②|፯️③|፯󠄁④|፯󠄅⑤]'
-  store(sevensSingleBarRedBody፡menu) '[፯︋①|፯󠄃②|፯︉③|፯︍④]'
-  store(sevensRedBars፡menu) '[፯︆①|፯︎②|፯󠄀③]'
-  store(sevensRedBody፡menu) '[፯︊①|፯󠄂②|፯︈③|፯︌④]'
-  store(sevensSansSerifBars፡menu) '[፯󠄆①|፯󠄇②|፯󠄈③]'
+  store(sevensBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(sevensSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(sevensSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(sevensRedBars፡menu) '[①|②|③]'
+  store(sevensRedBody፡menu) '[①|②|③|④]'
+  store(sevensSansSerifBars፡menu) '[①|②|③]'
 
 c ፰ Menus:
-  store(eightsBase፡menu) '[፰︁①|፰︀②|፰︅③|፰︂④|፰︄⑤|፰󠄄⑥]'
-  store(eightsSingleBlackBar፡menu) '[፰︃①|፰︇②|፰️③|፰󠄁④|፰󠄅⑤]'
-  store(eightsSingleBarRedBody፡menu) '[፰︋①|፰󠄃②|፰︉③|፰︍④]'
-  store(eightsRedBars፡menu) '[፰︆①|፰︎②|፰󠄀③]'
-  store(eightsRedBody፡menu) '[፰︊①|፰󠄂②|፰︈③|፰︌④]'
-  store(eightsSansSerifBars፡menu) '[፰󠄆①|፰󠄇②|፰󠄈③]'
+  store(eightsBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(eightsSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(eightsSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(eightsRedBars፡menu) '[①|②|③]'
+  store(eightsRedBody፡menu) '[①|②|③|④]'
+  store(eightsSansSerifBars፡menu) '[①|②|③]'
 
 c ፱ Menus:
-  store(ninesBase፡menu) '[፱︁①|፱︀②|፱︅③|፱︂④|፱︄⑤|፱󠄄⑥]'
-  store(ninesSingleBlackBar፡menu) '[፱︃①|፱︇②|፱️③|፱󠄁④|፱󠄅⑤]'
-  store(ninesSingleBarRedBody፡menu) '[፱︋①|፱󠄃②|፱︉③|፱︍④]'
-  store(ninesRedBars፡menu) '[፱︆①|፱︎②|፱󠄀③]'
-  store(ninesRedBody፡menu) '[፱︊①|፱󠄂②|፱︈③|፱︌④]'
-  store(ninesSansSerifBars፡menu) '[፱󠄆①|፱󠄇②|፱󠄈③]'
+  store(ninesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(ninesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(ninesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(ninesRedBars፡menu) '[①|②|③]'
+  store(ninesRedBody፡menu) '[①|②|③|④]'
+  store(ninesSansSerifBars፡menu) '[①|②|③]'
 
 c ፲ Menus:
-  store(tensBase፡menu) '[፲︁①|፲︀②|፲︅③|፲︂④|፲︄⑤|፲󠄄⑥]'
-  store(tensSingleBlackBar፡menu) '[፲︃①|፲︇②|፲️③|፲󠄁④|፲󠄅⑤]'
-  store(tensSingleBarRedBody፡menu) '[፲︋①|፲󠄃②|፲︉③|፲︍④]'
-  store(tensRedBars፡menu) '[፲︆①|፲︎②|፲󠄀③]'
-  store(tensRedBody፡menu) '[፲︊①|፲󠄂②|፲︈③|፲︌④]'
-  store(tensSansSerifBars፡menu) '[፲󠄆①|፲󠄇②|፲󠄈③]'
+  store(tensBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(tensSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(tensSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(tensRedBars፡menu) '[①|②|③]'
+  store(tensRedBody፡menu) '[①|②|③|④]'
+  store(tensSansSerifBars፡menu) '[①|②|③]'
 
 c ፳ Menus:
-  store(twentiesBase፡menu) '[፳︁①|፳︀②|፳︅③|፳︂④|፳︄⑤|፳󠄄⑥]'
-  store(twentiesSingleBlackBar፡menu) '[፳︃①|፳︇②|፳️③|፳󠄁④|፳󠄅⑤]'
-  store(twentiesSingleBarRedBody፡menu) '[፳︋①|፳󠄃②|፳︉③|፳︍④]'
-  store(twentiesRedBars፡menu) '[፳︆①|፳︎②|፳󠄀③]'
-  store(twentiesRedBody፡menu) '[፳︊①|፳󠄂②|፳︈③|፳︌④]'
-  store(twentiesSansSerifBars፡menu) '[፳󠄆①|፳󠄇②|፳󠄈③]'
+  store(twentiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(twentiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(twentiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(twentiesRedBars፡menu) '[①|②|③]'
+  store(twentiesRedBody፡menu) '[①|②|③|④]'
+  store(twentiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፴ Menus:
-  store(thirtiesBase፡menu) '[፴︁①|፴︀②|፴︅③|፴︂④|፴︄⑤|፴󠄄⑥]'
-  store(thirtiesSingleBlackBar፡menu) '[፴︃①|፴︇②|፴️③|፴󠄁④|፴󠄅⑤]'
-  store(thirtiesSingleBarRedBody፡menu) '[፴︋①|፴󠄃②|፴︉③|፴︍④]'
-  store(thirtiesRedBars፡menu) '[፴︆①|፴︎②|፴󠄀③]'
-  store(thirtiesRedBody፡menu) '[፴︊①|፴󠄂②|፴︈③|፴︌④]'
-  store(thirtiesSansSerifBars፡menu) '[፴󠄆①|፴󠄇②|፴󠄈③]'
+  store(thirtiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(thirtiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(thirtiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(thirtiesRedBars፡menu) '[①|②|③]'
+  store(thirtiesRedBody፡menu) '[①|②|③|④]'
+  store(thirtiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፵ Menus:
-  store(fortiesBase፡menu) '[፵︁①|፵︀②|፵︅③|፵︂④|፵︄⑤|፵󠄄⑥]'
-  store(fortiesSingleBlackBar፡menu) '[፵︃①|፵︇②|፵️③|፵󠄁④|፵󠄅⑤]'
-  store(fortiesSingleBarRedBody፡menu) '[፵︋①|፵󠄃②|፵︉③|፵︍④]'
-  store(fortiesRedBars፡menu) '[፵︆①|፵︎②|፵󠄀③]'
-  store(fortiesRedBody፡menu) '[፵︊①|፵󠄂②|፵︈③|፵︌④]'
-  store(fortiesSansSerifBars፡menu) '[፵󠄆①|፵󠄇②|፵󠄈③]'
+  store(fortiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(fortiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(fortiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(fortiesRedBars፡menu) '[①|②|③]'
+  store(fortiesRedBody፡menu) '[①|②|③|④]'
+  store(fortiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፶ Menus:
-  store(fiftiesBase፡menu) '[፶︁①|፶︀②|፶︅③|፶︂④|፶︄⑤|፶󠄄⑥]'
-  store(fiftiesSingleBlackBar፡menu) '[፶︃①|፶︇②|፶️③|፶󠄁④|፶󠄅⑤]'
-  store(fiftiesSingleBarRedBody፡menu) '[፶︋①|፶󠄃②|፶︉③|፶︍④]'
-  store(fiftiesRedBars፡menu) '[፶︆①|፶︎②|፶󠄀③]'
-  store(fiftiesRedBody፡menu) '[፶︊①|፶󠄂②|፶︈③|፶︌④]'
-  store(fiftiesSansSerifBars፡menu) '[፶󠄆①|፶󠄇②|፶󠄈③]'
+  store(fiftiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(fiftiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(fiftiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(fiftiesRedBars፡menu) '[①|②|③]'
+  store(fiftiesRedBody፡menu) '[①|②|③|④]'
+  store(fiftiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፷ Menus:
-  store(sixtiesBase፡menu) '[፷︁①|፷︀②|፷︅③|፷︂④|፷︄⑤|፷󠄄⑥]'
-  store(sixtiesSingleBlackBar፡menu) '[፷︃①|፷︇②|፷️③|፷󠄁④|፷󠄅⑤]'
-  store(sixtiesSingleBarRedBody፡menu) '[፷︋①|፷󠄃②|፷︉③|፷︍④]'
-  store(sixtiesRedBars፡menu) '[፷︆①|፷︎②|፷󠄀③]'
-  store(sixtiesRedBody፡menu) '[፷︊①|፷󠄂②|፷︈③|፷︌④]'
-  store(sixtiesSansSerifBars፡menu) '[፷󠄆①|፷󠄇②|፷󠄈③]'
+  store(sixtiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(sixtiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(sixtiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(sixtiesRedBars፡menu) '[①|②|③]'
+  store(sixtiesRedBody፡menu) '[①|②|③|④]'
+  store(sixtiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፸ Menus:
-  store(seventiesBase፡menu) '[፸︁①|፸︀②|፸︅③|፸︂④|፸︄⑤|፸󠄄⑥]'
-  store(seventiesSingleBlackBar፡menu) '[፸︃①|፸︇②|፸️③|፸󠄁④|፸󠄅⑤]'
-  store(seventiesSingleBarRedBody፡menu) '[፸︋①|፸󠄃②|፸︉③|፸︍④]'
-  store(seventiesRedBars፡menu) '[፸︆①|፸︎②|፸󠄀③]'
-  store(seventiesRedBody፡menu) '[፸︊①|፸󠄂②|፸︈③|፸︌④]'
-  store(seventiesSansSerifBars፡menu) '[፸󠄆①|፸󠄇②|፸󠄈③]'
+  store(seventiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(seventiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(seventiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(seventiesRedBars፡menu) '[①|②|③]'
+  store(seventiesRedBody፡menu) '[①|②|③|④]'
+  store(seventiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፹ Menus:
-  store(eightiesBase፡menu) '[፹︁①|፹︀②|፹︅③|፹︂④|፹︄⑤|፹󠄄⑥]'
-  store(eightiesSingleBlackBar፡menu) '[፹︃①|፹︇②|፹️③|፹󠄁④|፹󠄅⑤]'
-  store(eightiesSingleBarRedBody፡menu) '[፹︋①|፹󠄃②|፹︉③|፹︍④]'
-  store(eightiesRedBars፡menu) '[፹︆①|፹︎②|፹󠄀③]'
-  store(eightiesRedBody፡menu) '[፹︊①|፹󠄂②|፹︈③|፹︌④]'
-  store(eightiesSansSerifBars፡menu) '[፹󠄆①|፹󠄇②|፹󠄈③]'
+  store(eightiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(eightiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(eightiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(eightiesRedBars፡menu) '[①|②|③]'
+  store(eightiesRedBody፡menu) '[①|②|③|④]'
+  store(eightiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፺ Menus:
-  store(ninetiesBase፡menu) '[፺︁①|፺︀②|፺︅③|፺︂④|፺︄⑤|፺󠄄⑥]'
-  store(ninetiesSingleBlackBar፡menu) '[፺︃①|፺︇②|፺️③|፺󠄁④|፺󠄅⑤]'
-  store(ninetiesSingleBarRedBody፡menu) '[፺︋①|፺󠄃②|፺︉③|፺︍④]'
-  store(ninetiesRedBars፡menu) '[፺︆①|፺︎②|፺󠄀③]'
-  store(ninetiesRedBody፡menu) '[፺︊①|፺󠄂②|፺︈③|፺︌④]'
-  store(ninetiesSansSerifBars፡menu) '[፺󠄆①|፺󠄇②|፺󠄈③]'
+  store(ninetiesBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(ninetiesSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(ninetiesSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(ninetiesRedBars፡menu) '[①|②|③]'
+  store(ninetiesRedBody፡menu) '[①|②|③|④]'
+  store(ninetiesSansSerifBars፡menu) '[①|②|③]'
 
 c ፻ Menus:
-  store(hundredsBase፡menu) '[፻︁①|፻︀②|፻︅③|፻︂④|፻︄⑤|፻󠄄⑥]'
-  store(hundredsSingleBlackBar፡menu) '[፻︃①|፻︇②|፻️③|፻󠄁④|፻󠄅⑤]'
-  store(hundredsSingleBarRedBody፡menu) '[፻︋①|፻󠄃②|፻︉③|፻︍④]'
-  store(hundredsRedBars፡menu) '[፻︆①|፻︎②|፻󠄀③]'
-  store(hundredsRedBody፡menu) '[፻︊①|፻󠄂②|፻︈③|፻︌④]'
-  store(hundredsSansSerifBars፡menu) '[፻󠄆①|፻󠄇②|፻󠄈③]'
+  store(hundredsBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(hundredsSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(hundredsSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(hundredsRedBars፡menu) '[①|②|③]'
+  store(hundredsRedBody፡menu) '[①|②|③|④]'
+  store(hundredsSansSerifBars፡menu) '[①|②|③]'
 
 c ፼ Menus:
-  store(tenthousandsBase፡menu) '[፼︁①|፼︀②|፼︅③|፼︂④|፼︄⑤|፼󠄄⑥]'
-  store(tenthousandsSingleBlackBar፡menu) '[፼︃①|፼︇②|፼️③|፼󠄁④|፼󠄅⑤]'
-  store(tenthousandsSingleBarRedBody፡menu) '[፼︋①|፼󠄃②|፼︉③|፼︍④]'
-  store(tenthousandsRedBars፡menu) '[፼︆①|፼︎②|፼󠄀③]'
-  store(tenthousandsRedBody፡menu) '[፼︊①|፼󠄂②|፼︈③|፼︌④]'
-  store(tenthousandsSansSerifBars፡menu) '[፼󠄆①|፼󠄇②|፼󠄈③]'
+  store(tenthousandsBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(tenthousandsSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(tenthousandsSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(tenthousandsRedBars፡menu) '[①|②|③]'
+  store(tenthousandsRedBody፡menu) '[①|②|③|④]'
+  store(tenthousandsSansSerifBars፡menu) '[①|②|③]'
 
-  store(tensEMUFI) '፲፲︀፲︁፲︂፲︃፲︄፲︅፲︆፲︇፲︈፲︉፲︊፲︋፲︌፲︍፲︎፲️፲󠄀፲󠄁፲󠄂፲󠄃፲󠄄፲󠄅፲󠄆፲󠄇፲󠄈'
-  store(conjunctiveTens) '︀︁︂︃︄︅︆︇︈︉︊︋︌︍︎️󠄀󠄁󠄂󠄃󠄄󠄅󠄆󠄇󠄈'
+  store(tensEMUFI) '፲'
+  store(conjunctiveTens) ''
 
 c  Menus:
-  store(conjtensBase፡menu) '[︁①|︀②|︅③|︂④|︄⑤|󠄄⑥]'
-  store(conjtensSingleBlackBar፡menu) '[︃①|︇②|️③|󠄁④|󠄅⑤]'
-  store(conjtensSingleBarRedBody፡menu) '[︋①|󠄃②|︉③|︍④]'
-  store(conjtensRedBars፡menu) '[︆①|︎②|󠄀③]'
-  store(conjtensRedBody፡menu) '[︊①|󠄂②|︈③|︌④]'
-  store(conjtensSansSerifBars፡menu) '[󠄆①|󠄇②|󠄈③]'
+  store(conjtensBase፡menu) '[①|②|③|④|⑤|⑥]'
+  store(conjtensSingleBlackBar፡menu) '[①|②|③|④|⑤]'
+  store(conjtensSingleBarRedBody፡menu) '[①|②|③|④]'
+  store(conjtensRedBars፡menu) '[①|②|③]'
+  store(conjtensRedBody፡menu) '[①|②|③|④]'
+  store(conjtensSansSerifBars፡menu) '[①|②|③]'
 
 c ₀₁₂₃₄₅₆₇₈₉
 c ---------------------End Maps of Yared ዜማ Notation----------------------------------------
@@ -548,7 +539,7 @@ c The following group is here for compatibility with proposed ISO transliteratio
   '‹' + '<' > '«'
   '›' + '>' > '»'
   '«' + '<' > '<'
-  '»' + '>' > '> '
+  '»' + '>' > '>'
 c ---------------------End Input of Punctuation-------------------------------------------------
 
 c ---------------------Input of European Characters---------------------------------------------
@@ -622,35 +613,35 @@ c
   '።' + [K_TAB] > outs(AratNeteb፡menu) 
   outs(AratNeteb፡menu) + any(sevenKeys) > use(AratNeteb፡group)
 
-  '።︀' + [K_TAB] > outs(AratNeteb፡one፡menu)
+  '' + [K_TAB] > outs(AratNeteb፡one፡menu)
   outs(AratNeteb፡one፡menu) + any(eightKeys) > use(AratNeteb፡one፡group)
   
-  '።︍' + [K_TAB] > outs(AratNeteb፡two፡menu)
+  '' + [K_TAB] > outs(AratNeteb፡two፡menu)
   outs(AratNeteb፡two፡menu) + any(fourKeys) > use(AratNeteb፡two፡group)
 
-  '።󠄄' + [K_TAB] > outs(AratNeteb፡three፡menu)
+  '' + [K_TAB] > outs(AratNeteb፡three፡menu)
   outs(AratNeteb፡three፡menu) + any(threeKeys) > use(AratNeteb፡three፡group)
 
-  '።︇' + [K_TAB] > outs(AratNeteb፡four፡menu)
+  '' + [K_TAB] > outs(AratNeteb፡four፡menu)
   outs(AratNeteb፡four፡menu) + any(sevenKeys) > use(AratNeteb፡four፡group)
 
-  '።󠄃' + [K_TAB] > outs(AratNeteb፡five፡menu)
+  '' + [K_TAB] > outs(AratNeteb፡five፡menu)
   outs(AratNeteb፡five፡menu) + any(fourKeys) > use(AratNeteb፡five፡group)
 
-  '።󠄍' + [K_TAB] > outs(AratNeteb፡six፡menu)
+  '' + [K_TAB] > outs(AratNeteb፡six፡menu)
   outs(AratNeteb፡six፡menu) + any(eightKeys) > use(AratNeteb፡six፡group)
 
-  '።󠄕' + [K_TAB] > outs(AratNeteb፡seven፡menu)
+  '' + [K_TAB] > outs(AratNeteb፡seven፡menu)
   outs(AratNeteb፡seven፡menu) + any(twoKeys) > use(AratNeteb፡seven፡group)
 
   '*' + [K_TAB] > outs(Miscellaneous፡menu)
-  outs(Miscellaneous፡menu) + any(eightKeys) > use(Miscellaneous፡group)
+  outs(Miscellaneous፡menu) + any(sevenKeys) > use(Miscellaneous፡group)
 
   '' + [K_TAB] > outs(Miscellaneous፡one፡menu)
   outs(Miscellaneous፡one፡menu) + any(eightKeys) > use(Miscellaneous፡one፡group)
 
-  '' + [K_TAB] > outs(Miscellaneous፡eight፡menu)
-  outs(Miscellaneous፡eight፡menu) + any(twoKeys) > use(Miscellaneous፡eight፡group)
+  '' + [K_TAB] > outs(Miscellaneous፡seven፡menu)
+  outs(Miscellaneous፡seven፡menu) + any(twoKeys) > use(Miscellaneous፡seven፡group)
 
   '.' + [K_TAB] > outs(Hareg፡menu) 
   outs(Hareg፡menu) + any(nineKeys) > use(Hareg፡group)
@@ -668,7 +659,7 @@ c
   outs(Mekfel፡menu) + any(oneKeys) > use(Mekfel፡group)
 
   '፡' + [K_TAB] > outs(HuletNeteb፡menu) 
-  outs(HuletNeteb፡menu) + any(sixKeys) > use(HuletNeteb፡group)
+  outs(HuletNeteb፡menu) + any(fourKeys) > use(HuletNeteb፡group)
 
   '፥' + [K_TAB] > outs(Comma፡menu)
   outs(Comma፡menu) + any(oneKeys) > use(Comma፡group)
@@ -676,20 +667,17 @@ c
   '፤' + [K_TAB] > outs(Semicolon፡menu) 
   outs(Semicolon፡menu) + any(fourKeys) > use(Semicolon፡group)
 
-  '፤︁' + [K_TAB] > outs(Semicolon፡one፡menu)
-  outs(Semicolon፡one፡menu) + any(fourKeys) > use(Semicolon፡one፡group)
+  '' + [K_TAB] > outs(Semicolon፡one፡menu)
+  outs(Semicolon፡one፡menu) + any(twoKeys) > use(Semicolon፡one፡group)
   
-  '፤︄' + [K_TAB] > outs(Semicolon፡two፡menu)
-  outs(Semicolon፡two፡menu) + any(threeKeys) > use(Semicolon፡two፡group)
+  '' + [K_TAB] > outs(Semicolon፡two፡menu)
+  outs(Semicolon፡two፡menu) + any(fourKeys) > use(Semicolon፡two፡group)
   
-  '፤︈' + [K_TAB] > outs(Semicolon፡three፡menu)
+  '' + [K_TAB] > outs(Semicolon፡three፡menu)
   outs(Semicolon፡three፡menu) + any(threeKeys) > use(Semicolon፡three፡group)
 
-  '፤︂' + [K_TAB] > outs(Semicolon፡four፡menu)
+  '' + [K_TAB] > outs(Semicolon፡four፡menu)
   outs(Semicolon፡four፡menu) + any(threeKeys) > use(Semicolon፡four፡group)
-  
-  '፠' + [K_TAB] > outs(SectionMarks፡menu)
-  outs(SectionMarks፡menu) + any(twoKeys) > use(SectionMarks፡group)
 
   any(Extensible) + '-' > context(1) ''
   any(ExtensibleHidet1) + '-' > context(1) ''
@@ -945,281 +933,281 @@ c
 c ፩ Menus:
 '፩' + [K_TAB] > outs(onesBase፡menu)
   outs(onesBase፡menu) + any(sixKeys) > use (onesBase፡group)
-'፩︀' + [K_TAB] > outs(onesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(onesSingleBlackBar፡menu)
   outs(onesSingleBlackBar፡menu) + any(fiveKeys) > use (onesSingleBlackBar፡group)
-'፩︅' + [K_TAB] > outs(onesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(onesSingleBarRedBody፡menu)
   outs(onesSingleBarRedBody፡menu) + any(fourKeys) > use (onesSingleBarRedBody፡group)
-'፩︂' + [K_TAB] > outs(onesRedBars፡menu)
+'' + [K_TAB] > outs(onesRedBars፡menu)
   outs(onesRedBars፡menu) + any(threeKeys) > use (onesRedBars፡group)
-'፩︄' + [K_TAB] > outs(onesRedBody፡menu)
+'' + [K_TAB] > outs(onesRedBody፡menu)
   outs(onesRedBody፡menu) + any(fourKeys) > use (onesRedBody፡group)
-'፩󠄄' + [K_TAB] > outs(onesSansSerifBars፡menu)
+'' + [K_TAB] > outs(onesSansSerifBars፡menu)
   outs(onesSansSerifBars፡menu) + any(threeKeys) > use (onesSansSerifBars፡group)
 
 c ፪ Menus:
 '፪' + [K_TAB] > outs(twosBase፡menu)
   outs(twosBase፡menu) + any(sixKeys) > use (twosBase፡group)
-'፪︀' + [K_TAB] > outs(twosSingleBlackBar፡menu)
+'' + [K_TAB] > outs(twosSingleBlackBar፡menu)
   outs(twosSingleBlackBar፡menu) + any(fiveKeys) > use (twosSingleBlackBar፡group)
-'፪︅' + [K_TAB] > outs(twosSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(twosSingleBarRedBody፡menu)
   outs(twosSingleBarRedBody፡menu) + any(fourKeys) > use (twosSingleBarRedBody፡group)
-'፪︂' + [K_TAB] > outs(twosRedBars፡menu)
+'' + [K_TAB] > outs(twosRedBars፡menu)
   outs(twosRedBars፡menu) + any(threeKeys) > use (twosRedBars፡group)
-'፪︄' + [K_TAB] > outs(twosRedBody፡menu)
+'' + [K_TAB] > outs(twosRedBody፡menu)
   outs(twosRedBody፡menu) + any(fourKeys) > use (twosRedBody፡group)
-'፪󠄄' + [K_TAB] > outs(twosSansSerifBars፡menu)
+'' + [K_TAB] > outs(twosSansSerifBars፡menu)
   outs(twosSansSerifBars፡menu) + any(threeKeys) > use (twosSansSerifBars፡group)
 
 c ፫ Menus:
 '፫' + [K_TAB] > outs(threesBase፡menu)
   outs(threesBase፡menu) + any(sixKeys) > use (threesBase፡group)
-'፫︀' + [K_TAB] > outs(threesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(threesSingleBlackBar፡menu)
   outs(threesSingleBlackBar፡menu) + any(fiveKeys) > use (threesSingleBlackBar፡group)
-'፫︅' + [K_TAB] > outs(threesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(threesSingleBarRedBody፡menu)
   outs(threesSingleBarRedBody፡menu) + any(fourKeys) > use (threesSingleBarRedBody፡group)
-'፫︂' + [K_TAB] > outs(threesRedBars፡menu)
+'' + [K_TAB] > outs(threesRedBars፡menu)
   outs(threesRedBars፡menu) + any(threeKeys) > use (threesRedBars፡group)
-'፫︄' + [K_TAB] > outs(threesRedBody፡menu)
+'' + [K_TAB] > outs(threesRedBody፡menu)
   outs(threesRedBody፡menu) + any(fourKeys) > use (threesRedBody፡group)
-'፫󠄄' + [K_TAB] > outs(threesSansSerifBars፡menu)
+'' + [K_TAB] > outs(threesSansSerifBars፡menu)
   outs(threesSansSerifBars፡menu) + any(threeKeys) > use (threesSansSerifBars፡group)
 
 c ፬ Menus:
 '፬' + [K_TAB] > outs(foursBase፡menu)
   outs(foursBase፡menu) + any(sixKeys) > use (foursBase፡group)
-'፬︀' + [K_TAB] > outs(foursSingleBlackBar፡menu)
+'' + [K_TAB] > outs(foursSingleBlackBar፡menu)
   outs(foursSingleBlackBar፡menu) + any(fiveKeys) > use (foursSingleBlackBar፡group)
-'፬︅' + [K_TAB] > outs(foursSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(foursSingleBarRedBody፡menu)
   outs(foursSingleBarRedBody፡menu) + any(fourKeys) > use (foursSingleBarRedBody፡group)
-'፬︂' + [K_TAB] > outs(foursRedBars፡menu)
+'' + [K_TAB] > outs(foursRedBars፡menu)
   outs(foursRedBars፡menu) + any(threeKeys) > use (foursRedBars፡group)
-'፬︄' + [K_TAB] > outs(foursRedBody፡menu)
+'' + [K_TAB] > outs(foursRedBody፡menu)
   outs(foursRedBody፡menu) + any(fourKeys) > use (foursRedBody፡group)
-'፬󠄄' + [K_TAB] > outs(foursSansSerifBars፡menu)
+'' + [K_TAB] > outs(foursSansSerifBars፡menu)
   outs(foursSansSerifBars፡menu) + any(threeKeys) > use (foursSansSerifBars፡group)
 
 c ፭ Menus:
 '፭' + [K_TAB] > outs(fivesBase፡menu)
   outs(fivesBase፡menu) + any(sixKeys) > use (fivesBase፡group)
-'፭︀' + [K_TAB] > outs(fivesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(fivesSingleBlackBar፡menu)
   outs(fivesSingleBlackBar፡menu) + any(fiveKeys) > use (fivesSingleBlackBar፡group)
-'፭︅' + [K_TAB] > outs(fivesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(fivesSingleBarRedBody፡menu)
   outs(fivesSingleBarRedBody፡menu) + any(fourKeys) > use (fivesSingleBarRedBody፡group)
-'፭︂' + [K_TAB] > outs(fivesRedBars፡menu)
+'' + [K_TAB] > outs(fivesRedBars፡menu)
   outs(fivesRedBars፡menu) + any(threeKeys) > use (fivesRedBars፡group)
-'፭︄' + [K_TAB] > outs(fivesRedBody፡menu)
+'' + [K_TAB] > outs(fivesRedBody፡menu)
   outs(fivesRedBody፡menu) + any(fourKeys) > use (fivesRedBody፡group)
-'፭󠄄' + [K_TAB] > outs(fivesSansSerifBars፡menu)
+'' + [K_TAB] > outs(fivesSansSerifBars፡menu)
   outs(fivesSansSerifBars፡menu) + any(threeKeys) > use (fivesSansSerifBars፡group)
 
 c ፮ Menus:
 '፮' + [K_TAB] > outs(sixesBase፡menu)
   outs(sixesBase፡menu) + any(sixKeys) > use (sixesBase፡group)
-'፮︀' + [K_TAB] > outs(sixesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(sixesSingleBlackBar፡menu)
   outs(sixesSingleBlackBar፡menu) + any(fiveKeys) > use (sixesSingleBlackBar፡group)
-'፮︅' + [K_TAB] > outs(sixesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(sixesSingleBarRedBody፡menu)
   outs(sixesSingleBarRedBody፡menu) + any(fourKeys) > use (sixesSingleBarRedBody፡group)
-'፮︂' + [K_TAB] > outs(sixesRedBars፡menu)
+'' + [K_TAB] > outs(sixesRedBars፡menu)
   outs(sixesRedBars፡menu) + any(threeKeys) > use (sixesRedBars፡group)
-'፮︄' + [K_TAB] > outs(sixesRedBody፡menu)
+'' + [K_TAB] > outs(sixesRedBody፡menu)
   outs(sixesRedBody፡menu) + any(fourKeys) > use (sixesRedBody፡group)
-'፮󠄄' + [K_TAB] > outs(sixesSansSerifBars፡menu)
+'' + [K_TAB] > outs(sixesSansSerifBars፡menu)
   outs(sixesSansSerifBars፡menu) + any(threeKeys) > use (sixesSansSerifBars፡group)
 
 c ፯ Menus:
 '፯' + [K_TAB] > outs(sevensBase፡menu)
   outs(sevensBase፡menu) + any(sixKeys) > use (sevensBase፡group)
-'፯︀' + [K_TAB] > outs(sevensSingleBlackBar፡menu)
+'' + [K_TAB] > outs(sevensSingleBlackBar፡menu)
   outs(sevensSingleBlackBar፡menu) + any(fiveKeys) > use (sevensSingleBlackBar፡group)
-'፯︅' + [K_TAB] > outs(sevensSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(sevensSingleBarRedBody፡menu)
   outs(sevensSingleBarRedBody፡menu) + any(fourKeys) > use (sevensSingleBarRedBody፡group)
-'፯︂' + [K_TAB] > outs(sevensRedBars፡menu)
+'' + [K_TAB] > outs(sevensRedBars፡menu)
   outs(sevensRedBars፡menu) + any(threeKeys) > use (sevensRedBars፡group)
-'፯︄' + [K_TAB] > outs(sevensRedBody፡menu)
+'' + [K_TAB] > outs(sevensRedBody፡menu)
   outs(sevensRedBody፡menu) + any(fourKeys) > use (sevensRedBody፡group)
-'፯󠄄' + [K_TAB] > outs(sevensSansSerifBars፡menu)
+'' + [K_TAB] > outs(sevensSansSerifBars፡menu)
   outs(sevensSansSerifBars፡menu) + any(threeKeys) > use (sevensSansSerifBars፡group)
 
 c ፰ Menus:
 '፰' + [K_TAB] > outs(eightsBase፡menu)
   outs(eightsBase፡menu) + any(sixKeys) > use (eightsBase፡group)
-'፰︀' + [K_TAB] > outs(eightsSingleBlackBar፡menu)
+'' + [K_TAB] > outs(eightsSingleBlackBar፡menu)
   outs(eightsSingleBlackBar፡menu) + any(fiveKeys) > use (eightsSingleBlackBar፡group)
-'፰︅' + [K_TAB] > outs(eightsSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(eightsSingleBarRedBody፡menu)
   outs(eightsSingleBarRedBody፡menu) + any(fourKeys) > use (eightsSingleBarRedBody፡group)
-'፰︂' + [K_TAB] > outs(eightsRedBars፡menu)
+'' + [K_TAB] > outs(eightsRedBars፡menu)
   outs(eightsRedBars፡menu) + any(threeKeys) > use (eightsRedBars፡group)
-'፰︄' + [K_TAB] > outs(eightsRedBody፡menu)
+'' + [K_TAB] > outs(eightsRedBody፡menu)
   outs(eightsRedBody፡menu) + any(fourKeys) > use (eightsRedBody፡group)
-'፰󠄄' + [K_TAB] > outs(eightsSansSerifBars፡menu)
+'' + [K_TAB] > outs(eightsSansSerifBars፡menu)
   outs(eightsSansSerifBars፡menu) + any(threeKeys) > use (eightsSansSerifBars፡group)
 
 c ፱ Menus:
 '፱' + [K_TAB] > outs(ninesBase፡menu)
   outs(ninesBase፡menu) + any(sixKeys) > use (ninesBase፡group)
-'፱︀' + [K_TAB] > outs(ninesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(ninesSingleBlackBar፡menu)
   outs(ninesSingleBlackBar፡menu) + any(fiveKeys) > use (ninesSingleBlackBar፡group)
-'፱︅' + [K_TAB] > outs(ninesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(ninesSingleBarRedBody፡menu)
   outs(ninesSingleBarRedBody፡menu) + any(fourKeys) > use (ninesSingleBarRedBody፡group)
-'፱︂' + [K_TAB] > outs(ninesRedBars፡menu)
+'' + [K_TAB] > outs(ninesRedBars፡menu)
   outs(ninesRedBars፡menu) + any(threeKeys) > use (ninesRedBars፡group)
-'፱︄' + [K_TAB] > outs(ninesRedBody፡menu)
+'' + [K_TAB] > outs(ninesRedBody፡menu)
   outs(ninesRedBody፡menu) + any(fourKeys) > use (ninesRedBody፡group)
-'፱󠄄' + [K_TAB] > outs(ninesSansSerifBars፡menu)
+'' + [K_TAB] > outs(ninesSansSerifBars፡menu)
   outs(ninesSansSerifBars፡menu) + any(threeKeys) > use (ninesSansSerifBars፡group)
 
 c ፲ Menus:
 '፲' + [K_TAB] > outs(tensBase፡menu)
   outs(tensBase፡menu) + any(sixKeys) > use (tensBase፡group)
-'፲︀' + [K_TAB] > outs(tensSingleBlackBar፡menu)
+'' + [K_TAB] > outs(tensSingleBlackBar፡menu)
   outs(tensSingleBlackBar፡menu) + any(fiveKeys) > use (tensSingleBlackBar፡group)
-'፲︅' + [K_TAB] > outs(tensSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(tensSingleBarRedBody፡menu)
   outs(tensSingleBarRedBody፡menu) + any(fourKeys) > use (tensSingleBarRedBody፡group)
-'፲︂' + [K_TAB] > outs(tensRedBars፡menu)
+'' + [K_TAB] > outs(tensRedBars፡menu)
   outs(tensRedBars፡menu) + any(threeKeys) > use (tensRedBars፡group)
-'፲︄' + [K_TAB] > outs(tensRedBody፡menu)
+'' + [K_TAB] > outs(tensRedBody፡menu)
   outs(tensRedBody፡menu) + any(fourKeys) > use (tensRedBody፡group)
-'፲󠄄' + [K_TAB] > outs(tensSansSerifBars፡menu)
+'' + [K_TAB] > outs(tensSansSerifBars፡menu)
   outs(tensSansSerifBars፡menu) + any(threeKeys) > use (tensSansSerifBars፡group)
 
 c ፳ Menus:
 '፳' + [K_TAB] > outs(twentiesBase፡menu)
   outs(twentiesBase፡menu) + any(sixKeys) > use (twentiesBase፡group)
-'፳︀' + [K_TAB] > outs(twentiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(twentiesSingleBlackBar፡menu)
   outs(twentiesSingleBlackBar፡menu) + any(fiveKeys) > use (twentiesSingleBlackBar፡group)
-'፳︅' + [K_TAB] > outs(twentiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(twentiesSingleBarRedBody፡menu)
   outs(twentiesSingleBarRedBody፡menu) + any(fourKeys) > use (twentiesSingleBarRedBody፡group)
-'፳︂' + [K_TAB] > outs(twentiesRedBars፡menu)
+'' + [K_TAB] > outs(twentiesRedBars፡menu)
   outs(twentiesRedBars፡menu) + any(threeKeys) > use (twentiesRedBars፡group)
-'፳︄' + [K_TAB] > outs(twentiesRedBody፡menu)
+'' + [K_TAB] > outs(twentiesRedBody፡menu)
   outs(twentiesRedBody፡menu) + any(fourKeys) > use (twentiesRedBody፡group)
-'፳󠄄' + [K_TAB] > outs(twentiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(twentiesSansSerifBars፡menu)
   outs(twentiesSansSerifBars፡menu) + any(threeKeys) > use (twentiesSansSerifBars፡group)
 
 c ፴ Menus:
 '፴' + [K_TAB] > outs(thirtiesBase፡menu)
   outs(thirtiesBase፡menu) + any(sixKeys) > use (thirtiesBase፡group)
-'፴︀' + [K_TAB] > outs(thirtiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(thirtiesSingleBlackBar፡menu)
   outs(thirtiesSingleBlackBar፡menu) + any(fiveKeys) > use (thirtiesSingleBlackBar፡group)
-'፴︅' + [K_TAB] > outs(thirtiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(thirtiesSingleBarRedBody፡menu)
   outs(thirtiesSingleBarRedBody፡menu) + any(fourKeys) > use (thirtiesSingleBarRedBody፡group)
-'፴︂' + [K_TAB] > outs(thirtiesRedBars፡menu)
+'' + [K_TAB] > outs(thirtiesRedBars፡menu)
   outs(thirtiesRedBars፡menu) + any(threeKeys) > use (thirtiesRedBars፡group)
-'፴︄' + [K_TAB] > outs(thirtiesRedBody፡menu)
+'' + [K_TAB] > outs(thirtiesRedBody፡menu)
   outs(thirtiesRedBody፡menu) + any(fourKeys) > use (thirtiesRedBody፡group)
-'፴󠄄' + [K_TAB] > outs(thirtiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(thirtiesSansSerifBars፡menu)
   outs(thirtiesSansSerifBars፡menu) + any(threeKeys) > use (thirtiesSansSerifBars፡group)
 
 c ፵ Menus:
 '፵' + [K_TAB] > outs(fortiesBase፡menu)
   outs(fortiesBase፡menu) + any(sixKeys) > use (fortiesBase፡group)
-'፵︀' + [K_TAB] > outs(fortiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(fortiesSingleBlackBar፡menu)
   outs(fortiesSingleBlackBar፡menu) + any(fiveKeys) > use (fortiesSingleBlackBar፡group)
-'፵︅' + [K_TAB] > outs(fortiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(fortiesSingleBarRedBody፡menu)
   outs(fortiesSingleBarRedBody፡menu) + any(fourKeys) > use (fortiesSingleBarRedBody፡group)
-'፵︂' + [K_TAB] > outs(fortiesRedBars፡menu)
+'' + [K_TAB] > outs(fortiesRedBars፡menu)
   outs(fortiesRedBars፡menu) + any(threeKeys) > use (fortiesRedBars፡group)
-'፵︄' + [K_TAB] > outs(fortiesRedBody፡menu)
+'' + [K_TAB] > outs(fortiesRedBody፡menu)
   outs(fortiesRedBody፡menu) + any(fourKeys) > use (fortiesRedBody፡group)
-'፵󠄄' + [K_TAB] > outs(fortiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(fortiesSansSerifBars፡menu)
   outs(fortiesSansSerifBars፡menu) + any(threeKeys) > use (fortiesSansSerifBars፡group)
 
 c ፶ Menus:
 '፶' + [K_TAB] > outs(fiftiesBase፡menu)
   outs(fiftiesBase፡menu) + any(sixKeys) > use (fiftiesBase፡group)
-'፶︀' + [K_TAB] > outs(fiftiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(fiftiesSingleBlackBar፡menu)
   outs(fiftiesSingleBlackBar፡menu) + any(fiveKeys) > use (fiftiesSingleBlackBar፡group)
-'፶︅' + [K_TAB] > outs(fiftiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(fiftiesSingleBarRedBody፡menu)
   outs(fiftiesSingleBarRedBody፡menu) + any(fourKeys) > use (fiftiesSingleBarRedBody፡group)
-'፶︂' + [K_TAB] > outs(fiftiesRedBars፡menu)
+'' + [K_TAB] > outs(fiftiesRedBars፡menu)
   outs(fiftiesRedBars፡menu) + any(threeKeys) > use (fiftiesRedBars፡group)
-'፶︄' + [K_TAB] > outs(fiftiesRedBody፡menu)
+'' + [K_TAB] > outs(fiftiesRedBody፡menu)
   outs(fiftiesRedBody፡menu) + any(fourKeys) > use (fiftiesRedBody፡group)
-'፶󠄄' + [K_TAB] > outs(fiftiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(fiftiesSansSerifBars፡menu)
   outs(fiftiesSansSerifBars፡menu) + any(threeKeys) > use (fiftiesSansSerifBars፡group)
 
 c ፷ Menus:
 '፷' + [K_TAB] > outs(sixtiesBase፡menu)
   outs(sixtiesBase፡menu) + any(sixKeys) > use (sixtiesBase፡group)
-'፷︀' + [K_TAB] > outs(sixtiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(sixtiesSingleBlackBar፡menu)
   outs(sixtiesSingleBlackBar፡menu) + any(fiveKeys) > use (sixtiesSingleBlackBar፡group)
-'፷︅' + [K_TAB] > outs(sixtiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(sixtiesSingleBarRedBody፡menu)
   outs(sixtiesSingleBarRedBody፡menu) + any(fourKeys) > use (sixtiesSingleBarRedBody፡group)
-'፷︂' + [K_TAB] > outs(sixtiesRedBars፡menu)
+'' + [K_TAB] > outs(sixtiesRedBars፡menu)
   outs(sixtiesRedBars፡menu) + any(threeKeys) > use (sixtiesRedBars፡group)
-'፷︄' + [K_TAB] > outs(sixtiesRedBody፡menu)
+'' + [K_TAB] > outs(sixtiesRedBody፡menu)
   outs(sixtiesRedBody፡menu) + any(fourKeys) > use (sixtiesRedBody፡group)
-'፷󠄄' + [K_TAB] > outs(sixtiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(sixtiesSansSerifBars፡menu)
   outs(sixtiesSansSerifBars፡menu) + any(threeKeys) > use (sixtiesSansSerifBars፡group)
 
 c ፸ Menus:
 '፸' + [K_TAB] > outs(seventiesBase፡menu)
   outs(seventiesBase፡menu) + any(sixKeys) > use (seventiesBase፡group)
-'፸︀' + [K_TAB] > outs(seventiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(seventiesSingleBlackBar፡menu)
   outs(seventiesSingleBlackBar፡menu) + any(fiveKeys) > use (seventiesSingleBlackBar፡group)
-'፸︅' + [K_TAB] > outs(seventiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(seventiesSingleBarRedBody፡menu)
   outs(seventiesSingleBarRedBody፡menu) + any(fourKeys) > use (seventiesSingleBarRedBody፡group)
-'፸︂' + [K_TAB] > outs(seventiesRedBars፡menu)
+'' + [K_TAB] > outs(seventiesRedBars፡menu)
   outs(seventiesRedBars፡menu) + any(threeKeys) > use (seventiesRedBars፡group)
-'፸︄' + [K_TAB] > outs(seventiesRedBody፡menu)
+'' + [K_TAB] > outs(seventiesRedBody፡menu)
   outs(seventiesRedBody፡menu) + any(fourKeys) > use (seventiesRedBody፡group)
-'፸󠄄' + [K_TAB] > outs(seventiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(seventiesSansSerifBars፡menu)
   outs(seventiesSansSerifBars፡menu) + any(threeKeys) > use (seventiesSansSerifBars፡group)
 
 c ፹ Menus:
 '፹' + [K_TAB] > outs(eightiesBase፡menu)
   outs(eightiesBase፡menu) + any(sixKeys) > use (eightiesBase፡group)
-'፹︀' + [K_TAB] > outs(eightiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(eightiesSingleBlackBar፡menu)
   outs(eightiesSingleBlackBar፡menu) + any(fiveKeys) > use (eightiesSingleBlackBar፡group)
-'፹︅' + [K_TAB] > outs(eightiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(eightiesSingleBarRedBody፡menu)
   outs(eightiesSingleBarRedBody፡menu) + any(fourKeys) > use (eightiesSingleBarRedBody፡group)
-'፹︂' + [K_TAB] > outs(eightiesRedBars፡menu)
+'' + [K_TAB] > outs(eightiesRedBars፡menu)
   outs(eightiesRedBars፡menu) + any(threeKeys) > use (eightiesRedBars፡group)
-'፹︄' + [K_TAB] > outs(eightiesRedBody፡menu)
+'' + [K_TAB] > outs(eightiesRedBody፡menu)
   outs(eightiesRedBody፡menu) + any(fourKeys) > use (eightiesRedBody፡group)
-'፹󠄄' + [K_TAB] > outs(eightiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(eightiesSansSerifBars፡menu)
   outs(eightiesSansSerifBars፡menu) + any(threeKeys) > use (eightiesSansSerifBars፡group)
 
 c ፺ Menus:
 '፺' + [K_TAB] > outs(ninetiesBase፡menu)
   outs(ninetiesBase፡menu) + any(sixKeys) > use (ninetiesBase፡group)
-'፺︀' + [K_TAB] > outs(ninetiesSingleBlackBar፡menu)
+'' + [K_TAB] > outs(ninetiesSingleBlackBar፡menu)
   outs(ninetiesSingleBlackBar፡menu) + any(fiveKeys) > use (ninetiesSingleBlackBar፡group)
-'፺︅' + [K_TAB] > outs(ninetiesSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(ninetiesSingleBarRedBody፡menu)
   outs(ninetiesSingleBarRedBody፡menu) + any(fourKeys) > use (ninetiesSingleBarRedBody፡group)
-'፺︂' + [K_TAB] > outs(ninetiesRedBars፡menu)
+'' + [K_TAB] > outs(ninetiesRedBars፡menu)
   outs(ninetiesRedBars፡menu) + any(threeKeys) > use (ninetiesRedBars፡group)
-'፺︄' + [K_TAB] > outs(ninetiesRedBody፡menu)
+'' + [K_TAB] > outs(ninetiesRedBody፡menu)
   outs(ninetiesRedBody፡menu) + any(fourKeys) > use (ninetiesRedBody፡group)
-'፺󠄄' + [K_TAB] > outs(ninetiesSansSerifBars፡menu)
+'' + [K_TAB] > outs(ninetiesSansSerifBars፡menu)
   outs(ninetiesSansSerifBars፡menu) + any(threeKeys) > use (ninetiesSansSerifBars፡group)
 
 c ፻ Menus:
 '፻' + [K_TAB] > outs(hundredsBase፡menu)
   outs(hundredsBase፡menu) + any(sixKeys) > use (hundredsBase፡group)
-'፻︀' + [K_TAB] > outs(hundredsSingleBlackBar፡menu)
+'' + [K_TAB] > outs(hundredsSingleBlackBar፡menu)
   outs(hundredsSingleBlackBar፡menu) + any(fiveKeys) > use (hundredsSingleBlackBar፡group)
-'፻︅' + [K_TAB] > outs(hundredsSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(hundredsSingleBarRedBody፡menu)
   outs(hundredsSingleBarRedBody፡menu) + any(fourKeys) > use (hundredsSingleBarRedBody፡group)
-'፻︂' + [K_TAB] > outs(hundredsRedBars፡menu)
+'' + [K_TAB] > outs(hundredsRedBars፡menu)
   outs(hundredsRedBars፡menu) + any(threeKeys) > use (hundredsRedBars፡group)
-'፻︄' + [K_TAB] > outs(hundredsRedBody፡menu)
+'' + [K_TAB] > outs(hundredsRedBody፡menu)
   outs(hundredsRedBody፡menu) + any(fourKeys) > use (hundredsRedBody፡group)
-'፻󠄄' + [K_TAB] > outs(hundredsSansSerifBars፡menu)
+'' + [K_TAB] > outs(hundredsSansSerifBars፡menu)
   outs(hundredsSansSerifBars፡menu) + any(threeKeys) > use (hundredsSansSerifBars፡group)
 
 c ፼ Menus:
 '፼' + [K_TAB] > outs(tenthousandsBase፡menu)
   outs(tenthousandsBase፡menu) + any(sixKeys) > use (tenthousandsBase፡group)
-'፼︀' + [K_TAB] > outs(tenthousandsSingleBlackBar፡menu)
+'' + [K_TAB] > outs(tenthousandsSingleBlackBar፡menu)
   outs(tenthousandsSingleBlackBar፡menu) + any(fiveKeys) > use (tenthousandsSingleBlackBar፡group)
-'፼︅' + [K_TAB] > outs(tenthousandsSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(tenthousandsSingleBarRedBody፡menu)
   outs(tenthousandsSingleBarRedBody፡menu) + any(fourKeys) > use (tenthousandsSingleBarRedBody፡group)
-'፼︂' + [K_TAB] > outs(tenthousandsRedBars፡menu)
+'' + [K_TAB] > outs(tenthousandsRedBars፡menu)
   outs(tenthousandsRedBars፡menu) + any(threeKeys) > use (tenthousandsRedBars፡group)
-'፼︄' + [K_TAB] > outs(tenthousandsRedBody፡menu)
+'' + [K_TAB] > outs(tenthousandsRedBody፡menu)
   outs(tenthousandsRedBody፡menu) + any(fourKeys) > use (tenthousandsRedBody፡group)
-'፼󠄄' + [K_TAB] > outs(tenthousandsSansSerifBars፡menu)
+'' + [K_TAB] > outs(tenthousandsSansSerifBars፡menu)
   outs(tenthousandsSansSerifBars፡menu) + any(threeKeys) > use (tenthousandsSansSerifBars፡group)
 
 
@@ -1229,51 +1217,51 @@ any(tensEMUFI) 'ወ' + [K_TAB] > index(conjunctiveTens,1) 'ወ'
 c  Menus:
 '' + [K_TAB] > outs(conjtensBase፡menu)
   outs(conjtensBase፡menu) + any(sixKeys) > use (conjtensBase፡group)
-'︀' + [K_TAB] > outs(conjtensSingleBlackBar፡menu)
+'' + [K_TAB] > outs(conjtensSingleBlackBar፡menu)
   outs(conjtensSingleBlackBar፡menu) + any(fiveKeys) > use (conjtensSingleBlackBar፡group)
-'︅' + [K_TAB] > outs(conjtensSingleBarRedBody፡menu)
+'' + [K_TAB] > outs(conjtensSingleBarRedBody፡menu)
   outs(conjtensSingleBarRedBody፡menu) + any(fourKeys) > use (conjtensSingleBarRedBody፡group)
-'︂' + [K_TAB] > outs(conjtensRedBars፡menu)
+'' + [K_TAB] > outs(conjtensRedBars፡menu)
   outs(conjtensRedBars፡menu) + any(threeKeys) > use (conjtensRedBars፡group)
-'︄' + [K_TAB] > outs(conjtensRedBody፡menu)
+'' + [K_TAB] > outs(conjtensRedBody፡menu)
   outs(conjtensRedBody፡menu) + any(fourKeys) > use (conjtensRedBody፡group)
-'󠄄' + [K_TAB] > outs(conjtensSansSerifBars፡menu)
+'' + [K_TAB] > outs(conjtensSansSerifBars፡menu)
   outs(conjtensSansSerifBars፡menu) + any(threeKeys) > use (conjtensSansSerifBars፡group)
 
 c
 c ---------------------End of EMUFI Symbols---------------------------------------------------
 
 group(AratNeteb፡group) using keys
-  + any(sevenKeys፡index፡vs) > '።' index(AratNeteb፡menu, 1)
+  + any(sevenKeys፡index) > index(AratNeteb፡menu, 1)
   + [K_TAB] > '።'
 
 group(AratNeteb፡one፡group) using keys
-  + any(eightKeys፡index፡vs) > '።' index(AratNeteb፡one፡menu, 1)
-  + [K_TAB] > '።︀'
+  + any(eightKeys፡index) > index(AratNeteb፡one፡menu, 1)
+  + [K_TAB] > ''
 
 group(AratNeteb፡two፡group) using keys
-   + any(fourKeys፡index፡vs) > '።' index(AratNeteb፡two፡menu, 1)
-   + [K_TAB] > '።︍'
+   + any(fourKeys፡index) > index(AratNeteb፡two፡menu, 1)
+   + [K_TAB] > ''
 
 group(AratNeteb፡three፡group) using keys
-  + any(threeKeys፡index፡vs) > '።' index(AratNeteb፡three፡menu, 1)
-  + [K_TAB] > '።󠄄'
+  + any(threeKeys፡index) > index(AratNeteb፡three፡menu, 1)
+  + [K_TAB] > ''
 
 group(AratNeteb፡four፡group) using keys
-  + any(sevenKeys፡index፡vs) > '።' index(AratNeteb፡four፡menu, 1)
-  + [K_TAB] > '።︇'
+  + any(sevenKeys፡index) > index(AratNeteb፡four፡menu, 1)
+  + [K_TAB] > ''
 
 group(AratNeteb፡five፡group) using keys
-  + any(fourKeys፡index፡vs) > '።' index(AratNeteb፡five፡menu, 1)
-  + [K_TAB] > '።󠄃'
+  + any(fourKeys፡index) > index(AratNeteb፡five፡menu, 1)
+  + [K_TAB] > ''
 
 group(AratNeteb፡six፡group) using keys
-  + any(eightKeys፡index፡vs) > '።' index(AratNeteb፡six፡menu, 1)
-  + [K_TAB] > '።󠄍'
+  + any(eightKeys፡index) > index(AratNeteb፡six፡menu, 1)
+  + [K_TAB] > ''
 
 group(AratNeteb፡seven፡group) using keys
-  + any(twoKeys፡index፡vs) > '።' index(AratNeteb፡seven፡menu, 1)
-  + [K_TAB] > '።󠄕'
+  + any(twoKeys፡index) > index(AratNeteb፡seven፡menu, 1)
+  + [K_TAB] > ''
 
 group(Hareg፡group) using keys
   + any(nineKeys፡index) > index(Hareg፡menu, 1)
@@ -1284,61 +1272,56 @@ group(Insertion፡group) using keys
   + [K_TAB] > '^'
 
 group(Insertion፡one፡group) using keys
-  + any(fourKeys፡index፡vs) > '' index(Insertion፡one፡menu, 1)
+  + any(fourKeys፡index) > index(Insertion፡one፡menu, 1)
   + [K_TAB] > ''
 
 group(Spacers፡group) using keys
-  + '4' > ' '
-  + any(threeKeys፡index፡spacers) > '' index(Spacers፡menu, 1)
+  + any(fourKeys፡index፡spacers) > index(Spacers፡menu, 1)
   + [K_TAB] > '='
 
 group(Miscellaneous፡group) using keys
-  + any(eightKeys፡index) > index(Miscellaneous፡menu, 1)
+  + any(sevenKeys፡index) > index(Miscellaneous፡menu, 1)
   + [K_TAB] > '*'
 
 group(Miscellaneous፡one፡group) using keys
-  + any(eightKeys፡index፡vs) > '' index(Miscellaneous፡one፡menu, 1)
-  + [K_TAB] > ''
+  + any(eightKeys፡index) > index(Miscellaneous፡one፡menu, 1)
+  + [K_TAB] > '*'
 
-group(Miscellaneous፡eight፡group) using keys
-  + any(twoKeys፡index፡vs) > '' index(Miscellaneous፡eight፡menu, 1)
+group(Miscellaneous፡seven፡group) using keys
+  + any(twoKeys፡index) > index(Miscellaneous፡seven፡menu, 1)
   + [K_TAB] > ''
 
-group(SectionMarks፡group) using keys
-  + any(twoKeys፡index፡vs) > '' index(SectionMarks፡menu, 1)
-  + [K_TAB] > '፠'
-
 group(HuletNeteb፡group) using keys
-  + any(sixKeys፡index፡vs) > '፡' index(HuletNeteb፡menu, 1)
+  + any(sixKeys፡index) > index(HuletNeteb፡menu, 1)
   + [K_TAB] > '፡'
 
 group(Comma፡group) using keys
-  + any(oneKeys፡index፡vs) > '፣' index(Comma፡menu, 1)
+  + any(oneKeys፡index) > index(Comma፡menu, 1)
   + [K_TAB] > '፥'
 
 group(Mekfel፡group) using keys
-  + any(oneKeys፡index፡vs) > '' index(Mekfel፡menu, 1)
+  + any(oneKeys፡index) > index(Mekfel፡menu, 1)
   + [K_TAB] > ''
 
 group(Semicolon፡group) using keys
-    + any(fourKeys፡index፡vs) > '፤' index(Semicolon፡menu, 1)
+    + any(fourKeys፡index) > index(Semicolon፡menu, 1)
     + [K_TAB] > '፤'
     
 group(Semicolon፡one፡group) using keys
-  + any(fourKeys፡index፡vs) > '፤' index(Semicolon፡one፡menu, 1)
-  + [K_TAB] > '፤︁'
+  + any(twoKeys፡index) > index(Semicolon፡one፡menu, 1)
+  + [K_TAB] > ''
     
 group(Semicolon፡two፡group) using keys
-  + any(threeKeys፡index፡vs) > '፤' index(Semicolon፡two፡menu, 1)
-  + [K_TAB] > '፤︄'
+  + any(fourKeys፡index) > index(Semicolon፡two፡menu, 1)
+  + [K_TAB] > ''
     
 group(Semicolon፡three፡group) using keys
-  + any(threeKeys፡index፡vs) > '፤' index(Semicolon፡three፡menu, 1)
-  + [K_TAB] > '፤︈'
+  + any(threeKeys፡index) > index(Semicolon፡three፡menu, 1)
+  + [K_TAB] > ''
       
 group(Semicolon፡four፡group) using keys
-  + any(threeKeys፡index፡vs) > '፤' index(Semicolon፡four፡menu, 1)
-  + [K_TAB] > '፤︂'
+  + any(threeKeys፡index) > index(Semicolon፡four፡menu, 1)
+  + [K_TAB] > ''
 
 c ---------------------Begin ዜማ Group--------------------------------------------------------
 
@@ -1407,243 +1390,243 @@ c ---------------------Begin Number Group---------------------------------------
 
 c ፩ Groups:
 group(onesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፩' index(onesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(onesBase፡menu,1)
   + [K_TAB] > '፩'
 group(onesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፩' index(onesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፩︀'
+  + any(fiveKeys፡index፡numbers) > index(onesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(onesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፩' index(onesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፩︅'
+  + any(fourKeys፡index፡numbers) > index(onesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(onesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፩' index(onesRedBars፡menu,1)
-  + [K_TAB] > '፩︂'
+  + any(threeKeys፡index፡numbers) > index(onesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(onesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፩' index(onesRedBody፡menu,1)
-  + [K_TAB] > '፩︄'
+  + any(fourKeys፡index፡numbers) > index(onesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(onesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፩' index(onesSansSerifBars፡menu,1)
-  + [K_TAB] > '፩󠄄'
+  + any(threeKeys፡index፡numbers) > index(onesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፪ Groups:
 group(twosBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፪' index(twosBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(twosBase፡menu,1)
   + [K_TAB] > '፪'
 group(twosSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፪' index(twosSingleBlackBar፡menu,1)
-  + [K_TAB] > '፪︀'
+  + any(fiveKeys፡index፡numbers) > index(twosSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(twosSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፪' index(twosSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፪︅'
+  + any(fourKeys፡index፡numbers) > index(twosSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(twosRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፪' index(twosRedBars፡menu,1)
-  + [K_TAB] > '፪︂'
+  + any(threeKeys፡index፡numbers) > index(twosRedBars፡menu,1)
+  + [K_TAB] > ''
 group(twosRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፪' index(twosRedBody፡menu,1)
-  + [K_TAB] > '፪︄'
+  + any(fourKeys፡index፡numbers) > index(twosRedBody፡menu,1)
+  + [K_TAB] > ''
 group(twosSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፪' index(twosSansSerifBars፡menu,1)
-  + [K_TAB] > '፪󠄄'
+  + any(threeKeys፡index፡numbers) > index(twosSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፫ Groups:
 group(threesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፫' index(threesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(threesBase፡menu,1)
   + [K_TAB] > '፫'
 group(threesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፫' index(threesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፫︀'
+  + any(fiveKeys፡index፡numbers) > index(threesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(threesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፫' index(threesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፫︅'
+  + any(fourKeys፡index፡numbers) > index(threesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(threesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፫' index(threesRedBars፡menu,1)
-  + [K_TAB] > '፫︂'
+  + any(threeKeys፡index፡numbers) > index(threesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(threesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፫' index(threesRedBody፡menu,1)
-  + [K_TAB] > '፫︄'
+  + any(fourKeys፡index፡numbers) > index(threesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(threesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፫' index(threesSansSerifBars፡menu,1)
-  + [K_TAB] > '፫󠄄'
+  + any(threeKeys፡index፡numbers) > index(threesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፬ Groups:
 group(foursBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፬' index(foursBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(foursBase፡menu,1)
   + [K_TAB] > '፬'
 group(foursSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፬' index(foursSingleBlackBar፡menu,1)
-  + [K_TAB] > '፬︀'
+  + any(fiveKeys፡index፡numbers) > index(foursSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(foursSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፬' index(foursSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፬︅'
+  + any(fourKeys፡index፡numbers) > index(foursSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(foursRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፬' index(foursRedBars፡menu,1)
-  + [K_TAB] > '፬︂'
+  + any(threeKeys፡index፡numbers) > index(foursRedBars፡menu,1)
+  + [K_TAB] > ''
 group(foursRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፬' index(foursRedBody፡menu,1)
-  + [K_TAB] > '፬︄'
+  + any(fourKeys፡index፡numbers) > index(foursRedBody፡menu,1)
+  + [K_TAB] > ''
 group(foursSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፬' index(foursSansSerifBars፡menu,1)
-  + [K_TAB] > '፬󠄄'
+  + any(threeKeys፡index፡numbers) > index(foursSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፭ Groups:
 group(fivesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፭' index(fivesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(fivesBase፡menu,1)
   + [K_TAB] > '፭'
 group(fivesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፭' index(fivesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፭︀'
+  + any(fiveKeys፡index፡numbers) > index(fivesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(fivesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፭' index(fivesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፭︅'
+  + any(fourKeys፡index፡numbers) > index(fivesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(fivesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፭' index(fivesRedBars፡menu,1)
-  + [K_TAB] > '፭︂'
+  + any(threeKeys፡index፡numbers) > index(fivesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(fivesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፭' index(fivesRedBody፡menu,1)
-  + [K_TAB] > '፭︄'
+  + any(fourKeys፡index፡numbers) > index(fivesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(fivesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፭' index(fivesSansSerifBars፡menu,1)
-  + [K_TAB] > '፭󠄄'
+  + any(threeKeys፡index፡numbers) > index(fivesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፮ Groups:
 group(sixesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፮' index(sixesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(sixesBase፡menu,1)
   + [K_TAB] > '፮'
 group(sixesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፮' index(sixesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፮︀'
+  + any(fiveKeys፡index፡numbers) > index(sixesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(sixesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፮' index(sixesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፮︅'
+  + any(fourKeys፡index፡numbers) > index(sixesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(sixesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፮' index(sixesRedBars፡menu,1)
-  + [K_TAB] > '፮︂'
+  + any(threeKeys፡index፡numbers) > index(sixesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(sixesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፮' index(sixesRedBody፡menu,1)
-  + [K_TAB] > '፮︄'
+  + any(fourKeys፡index፡numbers) > index(sixesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(sixesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፮' index(sixesSansSerifBars፡menu,1)
-  + [K_TAB] > '፮󠄄'
+  + any(threeKeys፡index፡numbers) > index(sixesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፯ Groups:
 group(sevensBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፯' index(sevensBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(sevensBase፡menu,1)
   + [K_TAB] > '፯'
 group(sevensSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፯' index(sevensSingleBlackBar፡menu,1)
-  + [K_TAB] > '፯︀'
+  + any(fiveKeys፡index፡numbers) > index(sevensSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(sevensSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፯' index(sevensSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፯︅'
+  + any(fourKeys፡index፡numbers) > index(sevensSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(sevensRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፯' index(sevensRedBars፡menu,1)
-  + [K_TAB] > '፯︂'
+  + any(threeKeys፡index፡numbers) > index(sevensRedBars፡menu,1)
+  + [K_TAB] > ''
 group(sevensRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፯' index(sevensRedBody፡menu,1)
-  + [K_TAB] > '፯︄'
+  + any(fourKeys፡index፡numbers) > index(sevensRedBody፡menu,1)
+  + [K_TAB] > ''
 group(sevensSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፯' index(sevensSansSerifBars፡menu,1)
-  + [K_TAB] > '፯󠄄'
+  + any(threeKeys፡index፡numbers) > index(sevensSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፰ Groups:
 group(eightsBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፰' index(eightsBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(eightsBase፡menu,1)
   + [K_TAB] > '፰'
 group(eightsSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፰' index(eightsSingleBlackBar፡menu,1)
-  + [K_TAB] > '፰︀'
+  + any(fiveKeys፡index፡numbers) > index(eightsSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(eightsSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፰' index(eightsSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፰︅'
+  + any(fourKeys፡index፡numbers) > index(eightsSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(eightsRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፰' index(eightsRedBars፡menu,1)
-  + [K_TAB] > '፰︂'
+  + any(threeKeys፡index፡numbers) > index(eightsRedBars፡menu,1)
+  + [K_TAB] > ''
 group(eightsRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፰' index(eightsRedBody፡menu,1)
-  + [K_TAB] > '፰︄'
+  + any(fourKeys፡index፡numbers) > index(eightsRedBody፡menu,1)
+  + [K_TAB] > ''
 group(eightsSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፰' index(eightsSansSerifBars፡menu,1)
-  + [K_TAB] > '፰󠄄'
+  + any(threeKeys፡index፡numbers) > index(eightsSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፱ Groups:
 group(ninesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፱' index(ninesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(ninesBase፡menu,1)
   + [K_TAB] > '፱'
 group(ninesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፱' index(ninesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፱︀'
+  + any(fiveKeys፡index፡numbers) > index(ninesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(ninesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፱' index(ninesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፱︅'
+  + any(fourKeys፡index፡numbers) > index(ninesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(ninesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፱' index(ninesRedBars፡menu,1)
-  + [K_TAB] > '፱︂'
+  + any(threeKeys፡index፡numbers) > index(ninesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(ninesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፱' index(ninesRedBody፡menu,1)
-  + [K_TAB] > '፱︄'
+  + any(fourKeys፡index፡numbers) > index(ninesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(ninesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፱' index(ninesSansSerifBars፡menu,1)
-  + [K_TAB] > '፱󠄄'
+  + any(threeKeys፡index፡numbers) > index(ninesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፲ Groups:
 group(tensBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፲' index(tensBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(tensBase፡menu,1)
   + [K_TAB] > '፲'
 group(tensSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፲' index(tensSingleBlackBar፡menu,1)
-  + [K_TAB] > '፲︀'
+  + any(fiveKeys፡index፡numbers) > index(tensSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(tensSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፲' index(tensSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፲︅'
+  + any(fourKeys፡index፡numbers) > index(tensSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(tensRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፲' index(tensRedBars፡menu,1)
-  + [K_TAB] > '፲︂'
+  + any(threeKeys፡index፡numbers) > index(tensRedBars፡menu,1)
+  + [K_TAB] > ''
 group(tensRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፲' index(tensRedBody፡menu,1)
-  + [K_TAB] > '፲︄'
+  + any(fourKeys፡index፡numbers) > index(tensRedBody፡menu,1)
+  + [K_TAB] > ''
 group(tensSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፲' index(tensSansSerifBars፡menu,1)
-  + [K_TAB] > '፲󠄄'
+  + any(threeKeys፡index፡numbers) > index(tensSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፳ Groups:
 group(twentiesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፳' index(twentiesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(twentiesBase፡menu,1)
   + [K_TAB] > '፳'
 group(twentiesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፳' index(twentiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፳︀'
+  + any(fiveKeys፡index፡numbers) > index(twentiesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(twentiesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፳' index(twentiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፳︅'
+  + any(fourKeys፡index፡numbers) > index(twentiesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(twentiesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፳' index(twentiesRedBars፡menu,1)
-  + [K_TAB] > '፳︂'
+  + any(threeKeys፡index፡numbers) > index(twentiesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(twentiesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፳' index(twentiesRedBody፡menu,1)
-  + [K_TAB] > '፳︄'
+  + any(fourKeys፡index፡numbers) > index(twentiesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(twentiesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፳' index(twentiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፳󠄄'
+  + any(threeKeys፡index፡numbers) > index(twentiesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፴ Groups:
 group(thirtiesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፴' index(thirtiesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(thirtiesBase፡menu,1)
   + [K_TAB] > '፴'
 group(thirtiesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፴' index(thirtiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፴︀'
+  + any(fiveKeys፡index፡numbers) > index(thirtiesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(thirtiesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፴' index(thirtiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፴︅'
+  + any(fourKeys፡index፡numbers) > index(thirtiesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(thirtiesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፴' index(thirtiesRedBars፡menu,1)
-  + [K_TAB] > '፴︂'
+  + any(threeKeys፡index፡numbers) > index(thirtiesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(thirtiesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፴' index(thirtiesRedBody፡menu,1)
-  + [K_TAB] > '፴︄'
+  + any(fourKeys፡index፡numbers) > index(thirtiesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(thirtiesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፴' index(thirtiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፴󠄄'
+  + any(threeKeys፡index፡numbers) > index(thirtiesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፵ Groups:
 group(fortiesBase፡group) using keys
@@ -1651,179 +1634,179 @@ group(fortiesBase፡group) using keys
   + [K_TAB] > '፵'
 group(fortiesSingleBlackBar፡group) using keys
   + any(fiveKeys፡index፡numbers) > index(fortiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፵︀'
+  + [K_TAB] > ''
 group(fortiesSingleBarRedBody፡group) using keys
   + any(fourKeys፡index፡numbers) > index(fortiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፵︅'
+  + [K_TAB] > ''
 group(fortiesRedBars፡group) using keys
   + any(threeKeys፡index፡numbers) > index(fortiesRedBars፡menu,1)
-  + [K_TAB] > '፵︂'
+  + [K_TAB] > ''
 group(fortiesRedBody፡group) using keys
   + any(fourKeys፡index፡numbers) > index(fortiesRedBody፡menu,1)
-  + [K_TAB] > '፵︄'
+  + [K_TAB] > ''
 group(fortiesSansSerifBars፡group) using keys
   + any(threeKeys፡index፡numbers) > index(fortiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፵󠄄'
+  + [K_TAB] > ''
 
 c ፶ Groups:
 group(fiftiesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፶' index(fiftiesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(fiftiesBase፡menu,1)
   + [K_TAB] > '፶'
 group(fiftiesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፶' index(fiftiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፶︀'
+  + any(fiveKeys፡index፡numbers) > index(fiftiesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(fiftiesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፶' index(fiftiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፶︅'
+  + any(fourKeys፡index፡numbers) > index(fiftiesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(fiftiesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፶' index(fiftiesRedBars፡menu,1)
-  + [K_TAB] > '፶︂'
+  + any(threeKeys፡index፡numbers) > index(fiftiesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(fiftiesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፶' index(fiftiesRedBody፡menu,1)
-  + [K_TAB] > '፶︄'
+  + any(fourKeys፡index፡numbers) > index(fiftiesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(fiftiesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፶' index(fiftiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፶󠄄'
+  + any(threeKeys፡index፡numbers) > index(fiftiesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፷ Groups:
 group(sixtiesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፷' index(sixtiesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(sixtiesBase፡menu,1)
   + [K_TAB] > '፷'
 group(sixtiesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፷' index(sixtiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፷︀'
+  + any(fiveKeys፡index፡numbers) > index(sixtiesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(sixtiesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፷' index(sixtiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፷︅'
+  + any(fourKeys፡index፡numbers) > index(sixtiesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(sixtiesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፷' index(sixtiesRedBars፡menu,1)
-  + [K_TAB] > '፷︂'
+  + any(threeKeys፡index፡numbers) > index(sixtiesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(sixtiesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፷' index(sixtiesRedBody፡menu,1)
-  + [K_TAB] > '፷︄'
+  + any(fourKeys፡index፡numbers) > index(sixtiesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(sixtiesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፷' index(sixtiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፷󠄄'
+  + any(threeKeys፡index፡numbers) > index(sixtiesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፸ Groups:
 group(seventiesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፸' index(seventiesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(seventiesBase፡menu,1)
   + [K_TAB] > '፸'
 group(seventiesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፸' index(seventiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፸︀'
+  + any(fiveKeys፡index፡numbers) > index(seventiesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(seventiesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፸' index(seventiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፸︅'
+  + any(fourKeys፡index፡numbers) > index(seventiesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(seventiesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፸' index(seventiesRedBars፡menu,1)
-  + [K_TAB] > '፸︂'
+  + any(threeKeys፡index፡numbers) > index(seventiesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(seventiesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፸' index(seventiesRedBody፡menu,1)
-  + [K_TAB] > '፸︄'
+  + any(fourKeys፡index፡numbers) > index(seventiesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(seventiesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፸' index(seventiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፸󠄄'
+  + any(threeKeys፡index፡numbers) > index(seventiesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፹ Groups:
 group(eightiesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፹' index(eightiesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(eightiesBase፡menu,1)
   + [K_TAB] > '፹'
 group(eightiesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፹' index(eightiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፹︀'
+  + any(fiveKeys፡index፡numbers) > index(eightiesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(eightiesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፹' index(eightiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፹︅'
+  + any(fourKeys፡index፡numbers) > index(eightiesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(eightiesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፹' index(eightiesRedBars፡menu,1)
-  + [K_TAB] > '፹︂'
+  + any(threeKeys፡index፡numbers) > index(eightiesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(eightiesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፹' index(eightiesRedBody፡menu,1)
-  + [K_TAB] > '፹︄'
+  + any(fourKeys፡index፡numbers) > index(eightiesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(eightiesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፹' index(eightiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፹󠄄'
+  + any(threeKeys፡index፡numbers) > index(eightiesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፺ Groups:
 group(ninetiesBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፺' index(ninetiesBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(ninetiesBase፡menu,1)
   + [K_TAB] > '፺'
 group(ninetiesSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፺' index(ninetiesSingleBlackBar፡menu,1)
-  + [K_TAB] > '፺︀'
+  + any(fiveKeys፡index፡numbers) > index(ninetiesSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(ninetiesSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፺' index(ninetiesSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፺︅'
+  + any(fourKeys፡index፡numbers) > index(ninetiesSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(ninetiesRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፺' index(ninetiesRedBars፡menu,1)
-  + [K_TAB] > '፺︂'
+  + any(threeKeys፡index፡numbers) > index(ninetiesRedBars፡menu,1)
+  + [K_TAB] > ''
 group(ninetiesRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፺' index(ninetiesRedBody፡menu,1)
-  + [K_TAB] > '፺︄'
+  + any(fourKeys፡index፡numbers) > index(ninetiesRedBody፡menu,1)
+  + [K_TAB] > ''
 group(ninetiesSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፺' index(ninetiesSansSerifBars፡menu,1)
-  + [K_TAB] > '፺󠄄'
+  + any(threeKeys፡index፡numbers) > index(ninetiesSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፻ Groups:
 group(hundredsBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፻' index(hundredsBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(hundredsBase፡menu,1)
   + [K_TAB] > '፻'
 group(hundredsSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፻' index(hundredsSingleBlackBar፡menu,1)
-  + [K_TAB] > '፻︀'
+  + any(fiveKeys፡index፡numbers) > index(hundredsSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(hundredsSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፻' index(hundredsSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፻︅'
+  + any(fourKeys፡index፡numbers) > index(hundredsSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(hundredsRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፻' index(hundredsRedBars፡menu,1)
-  + [K_TAB] > '፻︂'
+  + any(threeKeys፡index፡numbers) > index(hundredsRedBars፡menu,1)
+  + [K_TAB] > ''
 group(hundredsRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፻' index(hundredsRedBody፡menu,1)
-  + [K_TAB] > '፻︄'
+  + any(fourKeys፡index፡numbers) > index(hundredsRedBody፡menu,1)
+  + [K_TAB] > ''
 group(hundredsSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፻' index(hundredsSansSerifBars፡menu,1)
-  + [K_TAB] > '፻󠄄'
+  + any(threeKeys፡index፡numbers) > index(hundredsSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ፼ Groups:
 group(tenthousandsBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '፼' index(tenthousandsBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(tenthousandsBase፡menu,1)
   + [K_TAB] > '፼'
 group(tenthousandsSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '፼' index(tenthousandsSingleBlackBar፡menu,1)
-  + [K_TAB] > '፼︀'
+  + any(fiveKeys፡index፡numbers) > index(tenthousandsSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(tenthousandsSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፼' index(tenthousandsSingleBarRedBody፡menu,1)
-  + [K_TAB] > '፼︅'
+  + any(fourKeys፡index፡numbers) > index(tenthousandsSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(tenthousandsRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፼' index(tenthousandsRedBars፡menu,1)
-  + [K_TAB] > '፼︂'
+  + any(threeKeys፡index፡numbers) > index(tenthousandsRedBars፡menu,1)
+  + [K_TAB] > ''
 group(tenthousandsRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '፼' index(tenthousandsRedBody፡menu,1)
-  + [K_TAB] > '፼︄'
+  + any(fourKeys፡index፡numbers) > index(tenthousandsRedBody፡menu,1)
+  + [K_TAB] > ''
 group(tenthousandsSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '፼' index(tenthousandsSansSerifBars፡menu,1)
-  + [K_TAB] > '፼󠄄'
+  + any(threeKeys፡index፡numbers) > index(tenthousandsSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c  Groups:
 group(conjtensBase፡group) using keys
-  + any(sixKeys፡index፡numbers) > '' index(conjtensBase፡menu,1)
+  + any(sixKeys፡index፡numbers) > index(conjtensBase፡menu,1)
   + [K_TAB] > ''
 group(conjtensSingleBlackBar፡group) using keys
-  + any(fiveKeys፡index፡numbers) > '' index(conjtensSingleBlackBar፡menu,1)
-  + [K_TAB] > '︀'
+  + any(fiveKeys፡index፡numbers) > index(conjtensSingleBlackBar፡menu,1)
+  + [K_TAB] > ''
 group(conjtensSingleBarRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '' index(conjtensSingleBarRedBody፡menu,1)
-  + [K_TAB] > '︅'
+  + any(fourKeys፡index፡numbers) > index(conjtensSingleBarRedBody፡menu,1)
+  + [K_TAB] > ''
 group(conjtensRedBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '' index(conjtensRedBars፡menu,1)
-  + [K_TAB] > '︂'
+  + any(threeKeys፡index፡numbers) > index(conjtensRedBars፡menu,1)
+  + [K_TAB] > ''
 group(conjtensRedBody፡group) using keys
-  + any(fourKeys፡index፡numbers) > '' index(conjtensRedBody፡menu,1)
-  + [K_TAB] > '︄'
+  + any(fourKeys፡index፡numbers) > index(conjtensRedBody፡menu,1)
+  + [K_TAB] > ''
 group(conjtensSansSerifBars፡group) using keys
-  + any(threeKeys፡index፡numbers) > '' index(conjtensSansSerifBars፡menu,1)
-  + [K_TAB] > '󠄄'
+  + any(threeKeys፡index፡numbers) > index(conjtensSansSerifBars፡menu,1)
+  + [K_TAB] > ''
 
 c ---------------------End Number Group----------------------------------------------------
 
