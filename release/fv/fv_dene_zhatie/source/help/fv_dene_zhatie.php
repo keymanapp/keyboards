@@ -20,7 +20,7 @@ This keyboard is designed for the <b>Dene Zhatié</b> language of the Western S
 
 <h2> Keyboard Layout </h2>
 
-<img src="TBD.png" alt="" height="198" width="514" border="0" />
+<img src="fv_dene_zhatieU_.png" alt="" height="198" width="514" border="0" />
 
     <ul>
       <li> The special characters of Dene Zhatié have been assigned to a mix of both number and punctuation keys.</li>
@@ -30,7 +30,7 @@ This keyboard is designed for the <b>Dene Zhatié</b> language of the Western S
       <li> To type the acute and ogonek accent at the same time use the Right Bracket key ] — ǫ́ is typed o then Right Bracket ] </li>
       <li> To type the underlined n ṉ use the Plus key</li>
       <li> To type the underlined double e e̲e̲ use Right-Alt (Windows) / Option (Mac) + the e key</li>
-      <li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
+      <li> All changed numbers and punctuation can type their original value by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
 </ul>
 <h2>Unicode Fonts</h2>
 						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
