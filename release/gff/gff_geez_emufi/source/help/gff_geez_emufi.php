@@ -56,6 +56,13 @@ table.zaima td, table.zaima th { border: thin solid #666; text-align: center }
 table.zaima th { text-align: center; background-color: #d7d0b9 }
 table.zaima { border-bottom: hidden }
 table.zaima { empty-cells: show }
+
+code {
+    display: inline-block;
+    width: 50px;
+    border: 1px solid #000;
+    text-align: center;
+}
 END;
   require_once('header.php');
 ?>
@@ -76,12 +83,103 @@ the Unicode standard.
 <p style="text-align: justify;">
 In essence, this is the <a href="https://keyman.com/keyboards/gff_geez">GFF Geʾez Keyboard</a> with the added ability to type
 over 1,000 additional symbols found in Geʾez manuscripts. See the <a target="_blank" href="EMUFI-Typing-Manual.pdf">typing manual</a> 
-for a detailed review of how to type these additional symbols.
+for a detailed review of how to type these additional symbols. See the <a target="_blank" href="GeezTyping-English.pdf">basic manual</a>
+for instructions on typing basic Geʾez letters, punctuation and numbers.</p>
 </p>
 
-<p>The following section reviews typing of <em>basic</em> Geʾez which is also available in a <a target="_blank" href="GeezTyping-English.pdf">PDF file</a>.</p>
+<p style="text-align: justify;">
+The following section is a summary review of the advanced typing, the <a target="_blank" href="EMUFI-Typing-Manual.pdf">pdf manual</a> 
+covers typing in full detail.
+</p>
+
+<h2><a id="numeral-variations" name="numeral-variations"></a>Numeral Variations</h2>
+<p style="text-align: justify;">
+The specialized numerals can be entered by typing a regular number followed by the “Tab” key. Each number will have a selection “menu” available. Menus appear on screen in list within square brackets [ ] and an index number. Type the number that corresponds to the desired numeral form to select it.  For example:
+</p>
+
+<img src="images/Numeral-Input-List.png" width="600"/>
+
+<p style="text-align: justify;">
+The table below depicts the typing of available numeral forms using the regular numeral ፩ as an example:
+</p>
+
+<img src="images/Numeral-Input-Tree.png" width="1000"/>
+
+<p style="text-align: justify;">
+The complete set of available numeral forms appear in the following table:
+</p>
+
+<img src="images/Numeral-Styles-Compared.png" width="1000"/>
+
+<h2><a id="punctuation-marks" name="punctuation-marks"></a>Punctuation &amp; Marks</h2>
+
+<p style="text-align: justify;">
+In the same way that a <code>TAB</code> is used to reveal menus for the numbers, it can similarly be used with punctuation marks.  The index number will appear in a different style, for example:
+</p>
+
+<img src="images/Punctuation-Input-List.png" width="600"/>
+
+<p style="text-align: justify;">
+Available punctuation:
+</p>
+
+<img src="images/Punctuation-Input-Tree.png" height="800"/><br/>
+
+<p style="text-align: justify;">
+A number of the punctuation marks can be extended with a combining “stylus drag” mark by typing “-” (minus) following the punctuation mark:
+</p>
+<img src="images/Punctuation-Stylus-Drags.png" width="600"/>
+
+<p style="text-align: justify;">
+Rubricated full stop chaining is possible using the special joiner mark,  <img src="images/Punctuation-Chaining-Spacer.png" height="12pt"/> , which is available in the “=” symbols menu:
+</p>
+<img src="images/Punctuation-Arat-Neteb-Chaining.png" width="600"/>
+
+<h2><a id="ligatures" name="ligatures"></a>Ligatures</h2>
+<p style="text-align: justify;">
+Ligatures may be typed by entering the individual letters followed by a “@”.  For example, with the “Geʾez Manuscript Zemen” font selected:
+</p>
+<img src="images/Ligatures.png" width="800"/>
+
+<h2><a id="variants" name="variants"></a>Variants</h2>
+<p style="text-align: justify;">
+Variants can be typed in the same way as ligatures:
+</p>
+<img src="images/Variants.png" width="300"/>
+
+<h2><a id="bet-markers" name="bet-markers"></a>Anqetse Haleita Bēt Markers</h2>
+<p style="text-align: justify;">
+Similar to the ligatures, Bēt marks can be entered by typing the letter sequence followed by “=”.  For example:
+</p>
+<img src="images/Anqetse-Haleita.png" width="800"/>
+
+<h2><a id="marginal-markers" name="marginal-markers"></a>Marginal Markers</h2>
+<p style="text-align: justify;">
+Marginalia are entered identically as with Bēt:
+</p>
+<img src="images/Marginal-Markers.png" width="400"/>
+
+<h2><a id="zaima-qirts" name="zaima-qirts"></a>Zaima Qirts</h2>
+<p style="text-align: justify;">
+The extended qirts may be entered by typing one of the regular basic notes followed by the <code>TAB</code> key, then selection of the desired complex qirts from the “menu” that appears.  The “menu” based composition works just as it did for numbers and punctuation. Most marks will have for several menu levels.  For example:
+</p>
+<img src="images/Qirts-Input-List.png" width="600"/>
+
+<p style="text-align: justify;">
+Viewed another way, the selection process for typing <img src="images/Diret-Difat-Short-Rikrik.png" height="12pt"/> is depicted in this tabular view:
+</p>
+<img src="images/Qirts-Input-Tree.png" width="600"/>
+
+<h3><a id="extending-hidets" name="extending-hidets"></a>Extending Hidets</h3>
+<p style="text-align: justify;">
+Some hidets can be extended by typing a “-” (minus) sign following the mark, for example:
+</p>
+<img src="images/Qirts-Extending-Hidets.png" width="600"/>
+
 
  
+<hr/>
+
 <h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
