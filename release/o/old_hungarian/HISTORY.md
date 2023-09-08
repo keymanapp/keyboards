@@ -1,5 +1,9 @@
 Old Hungarian Change History
 ====================
+1.7.5 (2023-09-03)
+------------------
+* Added decimal comma
+
 1.7.4 (2023-07-18)
 ------------------
 * Ralt and Shift Ralt keys works as lock keys.
