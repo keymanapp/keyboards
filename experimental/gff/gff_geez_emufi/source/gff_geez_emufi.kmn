@@ -146,9 +146,9 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   store(Insertion፡menu) '[₁₂₃₄]'
   store(Insertion፡one፡menu) '[︀₁︁₂︂₃︃₄]'
   store(Spacers፡menu) '[₁︀₂︁₃  ₄]'
-  store(Extensible) '።︇።︆።︉'
+c  store(Extensible) '።︇።︆።︉'
   store(SectionMarks፡menu) '[፠︀₁፠︁₂]'
-  store(ExtensibleHidet1) '᎗'
+  store(ExtensibleHidet1) '᎗'
   store(ExtensibleHidet2) '᎘'
 
   store(HuletNeteb፡menu) '[፡︁₁፡︂₂፡︃₃፡︄₄፤󠄂₅፡︀₆]'
@@ -178,10 +178,12 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
 c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(threeKeys፡index፡spacers) ' 1  2  3'
   store(fourKeys፡index፡numbers) '  1   2   3   4'
+  store(fourKeys፡index፡hidet፡pua) '    2 3 4'
   store(fiveKeys) '12345'[K_TAB]
   store(fiveKeys፡index) ' 1 2 3 4 5'
   store(fiveKeys፡index፡vs) '  1  2  3  4  5'
   store(fiveKeys፡index፡numbers) '  1   2   3   4   5'
+  store(fiveKeys፡index፡yizet፡pua) ' 1 2       5'
   store(sixKeys) '123456'[K_TAB]
   store(sixKeys፡index) ' 1 2 3 4 5 6'
   store(sixKeys፡index፡vs) '  1  2  3  4  5  6'
@@ -189,6 +191,7 @@ c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(sevenKeys) '1234567'[K_TAB]
   store(sevenKeys፡index) ' 1 2 3 4 5 6 7'
   store(sevenKeys፡index፡vs) '  1  2  3  4  5  6  7'
+  store(sevenKeys፡index፡hasirRikrik፡pua) '       3 4 5 6 7'
   store(sevenKeys፡index፡numbers) '  1   2   3   4   5   6   7'
   store(eightKeys) '12345678'[K_TAB]
   store(eightKeys፡index) ' 1 2 3 4 5 6 7 8'
@@ -197,6 +200,7 @@ c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(nineKeys) '123456789'[K_TAB]
   store(nineKeys፡index፡numbers) '  1   2   3   4   5   6   7   8   9'  
   store(nineKeys፡index) ' 1 2 3 4 5 6 7 8 9'
+  store(nineKeys፡index፡rikrik፡pua) '       3 4 5 6 7 8 9'
   store(tenKeys) '1234567890'[K_TAB]
   store(tenKeys፡index፡numbers) '  1   2   3   4   5   6   7   8   9   0'
   store(tenKeys፡index) ' 1 2 3 4 5 6 7 8 9 0'
@@ -212,7 +216,10 @@ c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(difatDeretDifat፡menu) '[₁₂₃]'
 
   store(chiret፡menu) '[₁₂₃₄₅₆₇₈₉]'
-  store(yizet፡menu) '[₁₂︀₃︀₄₅︀₆︀₇₈₉]'
+  store(yizet፡menu) '[₁₂︀₃︀₄₅]'
+  store(yizetHidet፡menu) '[₁︀₂₃]'
+  store(hidetYizet፡menu) '[₁︀₂₃]'
+
   store(hasirRikrik፡menu) '[᎓︀₁᎓︁₂₃₄₅₆₇]'
   store(rikrik፡menu) '[᎒︀₁᎒︁₂₃₄₅₆₇₈₉]'
   store(qinat፡menu) '[᎕︀₁]'
@@ -691,7 +698,13 @@ c
   '፠' + [K_TAB] > outs(SectionMarks፡menu)
   outs(SectionMarks፡menu) + any(twoKeys) > use(SectionMarks፡group)
 
-  any(Extensible) + '-' > context(1) ''
+c  any(Extensible) + '-' > context(1) ''
+  '፡︁' + '-' > context(1)context(2) ''
+  '።︇' + '-' > context(1)context(2) ''
+  '።︆' + '-' > context(1)context(2) ''
+  '።︉' + '-' > context(1)context(2) ''
+  '' + '-' > context(1) ''
+
   any(ExtensibleHidet1) + '-' > context(1) ''
   any(ExtensibleHidet2) + '-' > context(1) ''
 
@@ -932,7 +945,7 @@ c
 '᎖' + [K_TAB] > outs(chiret፡menu)
     outs(chiret፡menu) + any(nineKeys) > use(chiret፡group)
 '᎐' + [K_TAB] > outs(yizet፡menu)
-    outs(yizet፡menu) + any(nineKeys) > use(yizet፡group)
+    outs(yizet፡menu) + any(fiveKeys) > use(yizet፡group)
 '᎓' + [K_TAB] > outs(hasirRikrik፡menu)
     outs(hasirRikrik፡menu) + any(sevenKeys) > use(hasirRikrik፡group)
 '᎒' + [K_TAB] > outs(rikrik፡menu)
@@ -941,6 +954,10 @@ c
     outs(qinat፡menu) + any(oneKeys) > use(qinat፡group)
 '᎗' + [K_TAB] > outs(hidet፡menu)
     outs(hidet፡menu) + any(fourKeys) > use(hidet፡group)
+'︀' + [K_TAB] > outs(yizetHidet፡menu)
+    outs(yizetHidet፡menu) + any(threeKeys) > use(yizetHidet፡group)
+'︀' + [K_TAB] > outs(hidetYizet፡menu)
+    outs(hidetYizet፡menu) + any(threeKeys) > use(hidetYizet፡group)
 
 c ፩ Menus:
 '፩' + [K_TAB] > outs(onesBase፡menu)
@@ -1383,23 +1400,42 @@ group(chiret፡group) using keys
     + [K_TAB] > '᎖'
 
 group(yizet፡group) using keys
-    + any(nineKeys፡index) > Index(yizet፡menu,1)
+    + any(fiveKeys፡index፡yizet፡pua) > Index(yizet፡menu,1)
+    + '3' > '︀'
+    + '4' > '︀'
     + [K_TAB] > '᎐'
 
+group(yizetHidet፡group) using keys    
+    + '1' > ''
+    + '2' > '︀'
+    + '3' > ''
+    + [K_TAB] > '︀'
+
+group(hidetYizet፡group) using keys    
+    + '1' > ''
+    + '2' > '︀'
+    + '3' > ''
+    + [K_TAB] > '︀'
+
 group(hasirRikrik፡group) using keys
-    + any(sevenKeys፡index) > Index(hasirRikrik፡menu,1)
+    + any(sevenKeys፡index፡hasirRikrik፡pua) > Index(hasirRikrik፡menu,1)
+    + '1' > '᎓︀'
+    + '2' > '᎓︁' 
     + [K_TAB] > '᎓'
 
 group(rikrik፡group) using keys
-    + any(nineKeys፡index) > Index(rikrik፡menu,1)
+    + any(nineKeys፡index፡rikrik፡pua) > Index(rikrik፡menu,1)
+    + '1' > '᎒︀'
+    + '2' > '᎒︁'
     + [K_TAB] > '᎒'
 
 group(qinat፡group) using keys
-    + any(oneKeys፡index) > Index(qinat፡menu,1)
+    + any(oneKeys፡index፡vs) > '᎕' Index(qinat፡menu,1)
     + [K_TAB] > '᎕'
 
 group(hidet፡group) using keys
-    + any(fourKeys፡index) > Index(hidet፡menu,1)
+    + any(fourKeys፡index፡hidet፡pua) > Index(hidet፡menu,1)
+    + '1' > '︀'
     + [K_TAB] > '᎗'
 
 c ---------------------End ዜማ Group----------------------------------------------------------
