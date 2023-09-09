@@ -130,7 +130,7 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
  c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋    c ₀₁₂₃₄₅₆₇₈₉
   store(ዜማ፡menu) '[᎐₁᎓₂᎒₃᎙₄᎑₅᎔₆᎖₇᎕₈᎗₉᎘₀]' 
 
-  store(AratNeteb፡menu) '[።︀₁።︍₂።󠄄₃።︇₄።󠄃₅።󠄍₆።󠄕₇]'
+  store(AratNeteb፡menu) '[።₁።︍₂።󠄄₃።︇₄።󠄃₅።󠄍₆።󠄕₇]'
   store(AratNeteb፡one፡menu) '[።︁₁።︃₂።󠄗₃።󠄘₄።︄₅።︅₆።︈₇።︂₈]'
   store(AratNeteb፡two፡menu) '[።︎₁።️₂።󠄀₃።󠄂₄]'
   store(AratNeteb፡three፡menu) '[።󠄅₁።󠄆₂።󠄇₃]'
@@ -152,7 +152,7 @@ c  store(Extensible) '።︇።︆።︉'
   store(ExtensibleHidet2) '᎘'
 
   store(HuletNeteb፡menu) '[፡︁₁፡︂₂፡︃₃፡︄₄፤󠄂₅፡︀₆]'
-  store(Semicolon፡menu) '[፤︁₁፤︄₂፤︈₃፤︂₄]'
+  store(Semicolon፡menu) '[፤₁፤︄₂፤︈₃፤︂₄]'
   store(Semicolon፡one፡menu) '[፤︀₁፤︎₂፤󠄂₃፤︋₄]' 
   store(Semicolon፡two፡menu) '[፤︅₁፤︆₂፤󠄀₃]'
   store(Semicolon፡three፡menu) '[፤︌₁፤︊₂፤︉₃]'
@@ -178,6 +178,7 @@ c  store(Extensible) '።︇።︆።︉'
 c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(threeKeys፡index፡spacers) ' 1  2  3'
   store(fourKeys፡index፡numbers) '  1   2   3   4'
+  store(fourKeys፡index፡semicolon) '    2  3  4'
   store(fourKeys፡index፡hidet፡pua) '    2 3 4'
   store(fiveKeys) '12345'[K_TAB]
   store(fiveKeys፡index) ' 1 2 3 4 5'
@@ -191,6 +192,7 @@ c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(sevenKeys) '1234567'[K_TAB]
   store(sevenKeys፡index) ' 1 2 3 4 5 6 7'
   store(sevenKeys፡index፡vs) '  1  2  3  4  5  6  7'
+  store(sevenKeys፡index፡AratNeteb) '    2  3  4  5  6  7'
   store(sevenKeys፡index፡hasirRikrik፡pua) '       3 4 5 6 7'
   store(sevenKeys፡index፡numbers) '  1   2   3   4   5   6   7'
   store(eightKeys) '12345678'[K_TAB]
@@ -513,16 +515,16 @@ c
 
   + ':'     > '፡'
 $keymanonly: + [SHIFT ' '] > '፡'
-  '፡' + ':' > '።'
+  '፡' + ':' > '።︀'
   '።' + ':' > '፨'
   '፨' + ':' > '፠'  c makes circular
   '፠' + ':' > ':'  c makes circular
 
   
-  '።' + '.' > '.'
-  '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
-  any(Ethiopic) + '.' > context(1) '።'
-  any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' ' 
+  '።︀' + '.' > '.'
+  '።︀' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,3)
+  any(Ethiopic) + '.' > context(1) '።︀'
+  any(arabNumbersWithZero) '.' + ' ' > context(1) '።︀' ' ' 
   
   
  any(arabNumbersWithZero) + ',' > context(1) ','
@@ -535,9 +537,9 @@ $keymanonly: + [SHIFT ' '] > '፡'
   '፥' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
   any(arabNumbersWithZero) ',' + ' ' > context(1) '፥' ' ' 
 
-      + ';' > '፤'
-  '፤' + ';' > ';'
-  ';' + ';' > '፤'  c makes circular
+      + ';' > '፤︁'
+  '፤︁' + ';' > ';'
+  ';' + ';' > '፤︁'  c makes circular
 
   '፡' + '-' > '፦'     
   
@@ -626,10 +628,10 @@ c
 c The input section here is for rules that must precede other rules
 c
 
-  '።' + [K_TAB] > outs(AratNeteb፡menu) 
+  '።︀' + [K_TAB] > outs(AratNeteb፡menu) 
   outs(AratNeteb፡menu) + any(sevenKeys) > use(AratNeteb፡group)
 
-  '።︀' + [K_TAB] > outs(AratNeteb፡one፡menu)
+  '።' + [K_TAB] > outs(AratNeteb፡one፡menu)
   outs(AratNeteb፡one፡menu) + any(eightKeys) > use(AratNeteb፡one፡group)
   
   '።︍' + [K_TAB] > outs(AratNeteb፡two፡menu)
@@ -680,10 +682,10 @@ c
   '፥' + [K_TAB] > outs(Comma፡menu)
   outs(Comma፡menu) + any(oneKeys) > use(Comma፡group)
 
-  '፤' + [K_TAB] > outs(Semicolon፡menu) 
+  '፤︁' + [K_TAB] > outs(Semicolon፡menu) 
   outs(Semicolon፡menu) + any(fourKeys) > use(Semicolon፡group)
 
-  '፤︁' + [K_TAB] > outs(Semicolon፡one፡menu)
+  '፤' + [K_TAB] > outs(Semicolon፡one፡menu)
   outs(Semicolon፡one፡menu) + any(fourKeys) > use(Semicolon፡one፡group)
   
   '፤︄' + [K_TAB] > outs(Semicolon፡two፡menu)
@@ -1261,12 +1263,13 @@ c
 c ---------------------End of EMUFI Symbols---------------------------------------------------
 
 group(AratNeteb፡group) using keys
-  + any(sevenKeys፡index፡vs) > '።' index(AratNeteb፡menu, 1)
-  + [K_TAB] > '።'
+  + '1' > '።'
+  + any(sevenKeys፡index፡AratNeteb) > '።' index(AratNeteb፡menu, 1)
+  + [K_TAB] > '።︀'
 
 group(AratNeteb፡one፡group) using keys
   + any(eightKeys፡index፡vs) > '።' index(AratNeteb፡one፡menu, 1)
-  + [K_TAB] > '።︀'
+  + [K_TAB] > '።'
 
 group(AratNeteb፡two፡group) using keys
    + any(fourKeys፡index፡vs) > '።' index(AratNeteb፡two፡menu, 1)
@@ -1338,12 +1341,13 @@ group(Mekfel፡group) using keys
   + [K_TAB] > ''
 
 group(Semicolon፡group) using keys
-    + any(fourKeys፡index፡vs) > '፤' index(Semicolon፡menu, 1)
-    + [K_TAB] > '፤'
+    + '1' > '፤'
+    + any(fourKeys፡index፡semicolon) > '፤' index(Semicolon፡menu, 1)
+    + [K_TAB] > '፤︁'
     
 group(Semicolon፡one፡group) using keys
   + any(fourKeys፡index፡vs) > '፤' index(Semicolon፡one፡menu, 1)
-  + [K_TAB] > '፤︁'
+  + [K_TAB] > '፤'
     
 group(Semicolon፡two፡group) using keys
   + any(threeKeys፡index፡vs) > '፤' index(Semicolon፡two፡menu, 1)
