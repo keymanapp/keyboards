@@ -1,5 +1,9 @@
 Gitsenimx̱ Change History
 ============================
+9.2 (9 Sep 2023)
+------------------
+* Swapped lowercase f key for lowercase g key on mobile layout
+* Centered mobile layout
 
 9.1.1 (24 Feb 2021)
 -------------------
