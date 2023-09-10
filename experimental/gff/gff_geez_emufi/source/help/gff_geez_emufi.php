@@ -100,7 +100,8 @@ The specialized numerals can be entered by typing a regular number followed by t
 <img src="images/Numeral-Input-List.png" width="600"/>
 
 <p style="text-align: justify;">
-The table below depicts the typing of available numeral forms using the regular numeral ፩ as an example:
+The table below depicts the typing of available numeral forms using the regular numeral ፩ as an example.
+The initial “menu” that appear (as seen in Step 1 above) is presented vertically as a simplification:
 </p>
 
 <img src="images/Numeral-Input-Tree.png" width="1000"/>
@@ -120,7 +121,8 @@ In the same way that a <code>TAB</code> is used to reveal menus for the numbers,
 <img src="images/Punctuation-Input-List.png" width="600"/>
 
 <p style="text-align: justify;">
-Available punctuation:
+<img src="images/Rubricated-AratNeteb.png" height="12pt"/> and <img src="images/Rubricated-Semicolon.png" height="12pt"/>
+are special cases where a rubricated style has become the default appearance (typed with ‘::’  and ‘;’ respectively). In these cases, the modern style (። and ፤) becomes the first option.  Available punctuation:
 </p>
 
 <img src="images/Punctuation-Input-Tree.png" height="800"/><br/>
