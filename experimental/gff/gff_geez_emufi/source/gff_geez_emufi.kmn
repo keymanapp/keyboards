@@ -151,7 +151,7 @@ c  store(Extensible) '።︇።︆።︉'
   store(ExtensibleHidet1) '᎗'
   store(ExtensibleHidet2) '᎘'
 
-  store(HuletNeteb፡menu) '[፡︁₁፡︂₂፡︃₃፡︄₄፤󠄂₅፡︀₆]'
+  store(HuletNeteb፡menu) '[፡︁₁፡︂₂፡︃₃፡︄₄፡︀₅]'
   store(Semicolon፡menu) '[፤₁፤︄₂፤︈₃፤︂₄]'
   store(Semicolon፡one፡menu) '[፤︀₁፤︎₂፤󠄂₃፤︋₄]' 
   store(Semicolon፡two፡menu) '[፤︅₁፤︆₂፤󠄀₃]'
@@ -677,7 +677,7 @@ c
   outs(Mekfel፡menu) + any(oneKeys) > use(Mekfel፡group)
 
   '፡' + [K_TAB] > outs(HuletNeteb፡menu) 
-  outs(HuletNeteb፡menu) + any(sixKeys) > use(HuletNeteb፡group)
+  outs(HuletNeteb፡menu) + any(fiveKeys) > use(HuletNeteb፡group)
 
   '፥' + [K_TAB] > outs(Comma፡menu)
   outs(Comma፡menu) + any(oneKeys) > use(Comma፡group)
@@ -1329,7 +1329,7 @@ group(SectionMarks፡group) using keys
   + [K_TAB] > '፠'
 
 group(HuletNeteb፡group) using keys
-  + any(sixKeys፡index፡vs) > '፡' index(HuletNeteb፡menu, 1)
+  + any(fiveKeys፡index፡vs) > '፡' index(HuletNeteb፡menu, 1)
   + [K_TAB] > '፡'
 
 group(Comma፡group) using keys
