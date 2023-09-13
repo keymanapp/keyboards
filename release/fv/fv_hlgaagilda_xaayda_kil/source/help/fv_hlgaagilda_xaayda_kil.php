@@ -15,6 +15,12 @@ END;
 <p style='margin: 16px 0 0 0'>
 This keyboard is designed for the <b>X̱aayda-X̱aad Kil</b> language of the BC Coast region of Canada.
 </p>
+<ul>
+<li>To type the underline accent <span class='out'>_</span> use the Semicolon key <span class='key'>;</span></li>
+<li>To type the acute accent <span class='out'>´</span> use the Grave key <span class='key'>`</span></li>
+<li>To type the grave accent <span class='out'>`</span> use the Shift+Grave key <span class='key'>~</span></li>
+<li>To type the circumflex accent <span class='out'>^</span> use the Shift+6 key <span class='key'>^</span></li>
+</ul>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>

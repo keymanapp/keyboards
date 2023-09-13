@@ -2,7 +2,7 @@
 store(&KEYBOARDVERSION) "9.2.1"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "hax"
-store(&COPYRIGHT) "(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'X̱aayda-X̱aad Kil'
 store(&BITMAP) 'fv_hlgaagilda_xaayda_kil.ico'
 store(&VISUALKEYBOARD) 'fv_hlgaagilda_xaayda_kil.kvks'
@@ -13,15 +13,15 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+c --- STORES AND RULES FOR TOUCH AND DESKTOP RULES ---
+store(NeedsCombMacB) 'gkxGKX'
+store(CombMacB) [T_F] [SHIFT T_F] [K_COLON]
+
+any(NeedsCombMacB) + any(CombMacB) > index(NeedsCombMacB,1) U+0331
 
 c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
-
-store(NeedsCombMacB) 'gkxGKX'
-store(CombMacB) [T_F] [SHIFT T_F]
-
-any(NeedsCombMacB) + any(CombMacB) > index(NeedsCombMacB,1) U+0331
 
 + [SHIFT T_Q_0] > '!' layer('default')
 + [SHIFT T_Q] > '?' layer('default')
@@ -114,19 +114,24 @@ c --- END OF TOUCH LAYOUT RULES ---
 
 c Stacking prevention rules
 
-store(AboveAccents) "́" "̀" "̂"
+store(AboveAccents) U+0301 U+0300 U+0302
 store(AboveKeys) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_6] [K_BKSLASH]
-store(BelowAccents) "̱"
+store(BelowAccents) U+0331
 store(BelowKeys) [K_COLON]
 store(NonLetters) '°1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
+
+c Stacing prevention
 
 any(AboveAccents) + any(AboveKeys) > context beep
 any(AboveAccents) + any(BelowKeys) > context beep
 any(BelowAccents) + any(AboveKeys) > context beep
+any(BelowAccents) + any(BelowKeys) > context beep
 any(HasAcute) + any(AboveKeys) > context beep
 any(HasAcute) + any(BelowKeys) > context beep
 any(HasGrave) + any(AboveKeys) > context beep
 any(HasGrave) + any(BelowKeys) > context beep
+any(HasCircumflex) + any(AboveKeys) > context beep
+any(HasCircumflex) + any(BelowKeys) > context beep
 any(NonLetters) + any(AboveKeys) > context beep
 any(NonLetters) + any(BelowKeys) > context beep 
 
@@ -136,10 +141,10 @@ store(BaseVowels) 'aeiouAEIOU'
 store(BaseG) 'gG'
 store(HasAcute) 'áéíóúÁÉÍÓÚ'
 store(HasGrave) 'àèìòùÀÈÌÒÙ'
-store(HasCircumflex) 'gG'
-store(Acute) "́" [K_BKQUOTE]
-store(Circumflex) '̂' [SHIFT K_6]
-store(Grave) "̀" [SHIFT K_BKQUOTE]
+store(HasCircumflex) 'ĝĜ'
+store(Acute) [K_BKQUOTE]
+store(Circumflex) [SHIFT K_6]
+store(Grave) [SHIFT K_BKQUOTE]
 
 any(BaseVowels) + any(Acute) > index(HasAcute,1)
 any(BaseVowels) + any(Grave) > index(HasGrave,1)
@@ -151,6 +156,7 @@ store(Backspace) [K_BKSP]
 
 any(HasAcute) + any(Backspace) > index(BaseVowels,1)
 any(HasGrave) + any(Backspace) > index(BaseVowels,1)
+any(HasCircumflex) + any(Backspace) > index(BaseG,1)
 
 
 c original punctuation
