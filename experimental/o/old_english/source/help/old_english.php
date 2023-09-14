@@ -23,6 +23,6 @@ It contains all the characters needed to type in Old English and Middle English,
 <p>Due to the size and number of keys, some characters are hidden in the long press. 
 	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<div id='osk-tablet' data-states='default shift ctrl-alt'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
