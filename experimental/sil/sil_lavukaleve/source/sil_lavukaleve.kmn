@@ -1,0 +1,25 @@
+﻿c sil_lavukaleve generated from template at 2023-09-08 01:51:19
+c with name "Lavukaleve"
+store(&VERSION) '10.0'
+store(&NAME) 'Lavukaleve'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sil_lavukaleve.ico'
+store(&VISUALKEYBOARD) 'sil_lavukaleve.kvks'
+store(&LAYOUTFILE) 'sil_lavukaleve.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+
+U+006E + [K_G] > U+014B c ng
+
+U+004E + [SHIFT K_G] > U+014A c NG
+U+004E + [K_G] > U+014A c NG
+ 
+U+014B + [K_BKSP] > "ng"
+U+014A + [K_BKSP] > "Ng"
+U+014A + [SHIFT K_BKSP] > "Ng"
