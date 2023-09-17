@@ -34,7 +34,7 @@ c The remainder of this document is formatted with a fixed width font.
 
 c Define the set of Ethiopic characters to support contest based input:
 c
-store(Ethiopic) ' ' 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
+store(Ethiopic) ' ' 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾' c add extensions
 store(VariationSelector) U+FE00 .. U+FE0F U+E0100 .. U+E01EF
 store(HasVariants) '፩' .. '፼' '።' '፤'
 
@@ -131,6 +131,9 @@ c ---------------------Maps of Yared ዜማ Notation----------------------------
   store(ዜማ) '᎐᎓᎒᎙᎑᎔᎖᎕᎗᎘'
  c ⓪①②③④⑤⑥⑦⑧⑨ c ⓵⓶⓷⓸⓹⓺⓻⓼⓽🄋    c ₀₁₂₃₄₅₆₇₈₉
   store(ዜማ፡menu) '[᎐₁᎓₂᎒₃᎙₄᎑₅᎔₆᎖₇᎕₈᎗₉᎘₀]' 
+
+  store(VariantPrimaries) 'ቆኆኲዱጵ'
+  store(VariantSecondaries) ''
 
   store(AratNeteb፡menu) '[።₁።︍₂።󠄄₃።︇₄።󠄃₅።󠄍₆።󠄕₇]'
   store(AratNeteb፡one፡menu) '[።︁₁።︃₂።󠄗₃።󠄘₄።︄₅።︅₆።︈₇።︂₈]'
@@ -760,11 +763,7 @@ c convenience and is also a trial to support the 500+ EMUFI symbols more fully.
 c
 c Variants
 c
-'ቆ' + '@' > ''
-'ኆ' + '@' > ''
-'ኲ' + '@' > ''
-'ዱ' + '@' > ''
-'ጵ' + '@' > ''
+any(VariantPrimaries) + '@' > index(VariantSecondaries,1)
 
 c
 c Anqetse Haleita Bet Markers
