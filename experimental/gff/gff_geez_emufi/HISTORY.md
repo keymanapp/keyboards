@@ -1,5 +1,11 @@
 # gff_geez_emufi Change History
 
+## 2023-09-17
+* Backspace rule added to delete the variation selector along with the base symbol.
+* Added missing variants mappings.
+* deadkey added after K_TAB output to avoid looping input.
+* '*', '^', and '=" menus appear immediately, in keeping with '_' behavior.
+
 ## 2023-09-11
 * Formal public release.
 
