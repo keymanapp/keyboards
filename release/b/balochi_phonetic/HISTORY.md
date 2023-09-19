@@ -1,6 +1,10 @@
 Balochi Phonetic Change History
 ===============================
 
+1.6 (2 Aug 2023)
+-----------------
+* New letters: 
+
 1.5 (31 Aug 2022)
 -----------------
 * Update keyboard to include new version of Lateef font.
