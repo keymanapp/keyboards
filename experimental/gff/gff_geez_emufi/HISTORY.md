@@ -3,6 +3,7 @@
 ## 2023-09-17
 * Backspace rule added to delete the variation selector along with the base symbol.
 * Added missing variants mappings.
+* Added missing difat compounds.
 * deadkey added after K_TAB output to avoid looping input.
 * '*', '^', and '=" menus appear immediately, in keeping with '_' behavior.
 
