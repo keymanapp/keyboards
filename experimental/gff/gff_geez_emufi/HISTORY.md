@@ -1,6 +1,6 @@
 # gff_geez_emufi Change History
 
-## 2023-09-17
+## 2023-09-19
 * Backspace rule added to delete the variation selector along with the base symbol.
 * Added missing variants mappings.
 * Added missing difat compounds.

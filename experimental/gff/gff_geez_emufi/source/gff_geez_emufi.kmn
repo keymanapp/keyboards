@@ -217,9 +217,11 @@ c  store(fourKeys፡index፡spacers) ' 1  2  3  4'
   store(deretDifatDeret፡menu) '[₁₂₃︀₄]'
   store(deretDifatDifat፡menu) '[₁₂]'
   
-  store(difat፡menu) '[₁₂₃₄₅₆₇₈₉]' 
-  store(difatDifat፡menu) '[₁₂₃₄₅₆₇₈]' 
-  store(difatDeret፡menu) '[₁₂₃₄₅₆]'
+  store(difat፡menu) '[₁₂₃₄₅₆₇₈]' 
+  store(difatDifat፡menu) '[₁₂₃₄]'
+  store(difatDifatDeret፡menu) '[₁₂]'
+  store(difatDeret፡menu) '[₁₂₃₄]'
+  store(difatDeretChiret፡menu) '[₁₂]'
   store(difatDeretDifat፡menu) '[₁₂₃]'
   store(difatDifatDifat፡menu) '[₁]'
 
@@ -954,13 +956,17 @@ c
     outs(deretDifatDifat፡menu) + any(twoKeys) > use(deretDifatDifat፡group)
 
 '᎔' + [K_TAB] > outs(difat፡menu)
-    outs(difat፡menu) + any(nineKeys) > use(difat፡group)
+    outs(difat፡menu) + any(eightKeys) > use(difat፡group)
 '' + [K_TAB] > outs(difatDifat፡menu)
-    outs(difatDifat፡menu) + any(eightKeys) > use(difatDifat፡group)
+    outs(difatDifat፡menu) + any(fourKeys) > use(difatDifat፡group)
 '' + [K_TAB] > outs(difatDeret፡menu)
-    outs(difatDeret፡menu) + any(sixKeys) > use(difatDeret፡group)
+    outs(difatDeret፡menu) + any(fourKeys) > use(difatDeret፡group)
 '' + [K_TAB] > outs(difatDeretDifat፡menu)
     outs(difatDeretDifat፡menu) + any(threeKeys) > use(difatDeretDifat፡group)
+'' + [K_TAB] > outs(difatDeretChiret፡menu)
+    outs(difatDeretChiret፡menu) + any(twoKeys) > use(difatDeretChiret፡group)
+'' + [K_TAB] > outs(difatDifatDeret፡menu)
+    outs(difatDifatDeret፡menu) + any(twoKeys) > use(difatDifatDeret፡group)
 '' + [K_TAB] > outs(difatDifatDifat፡menu)
     outs(difatDifatDifat፡menu) + any(oneKeys) > use(difatDifatDifat፡group)
 
@@ -1404,20 +1410,28 @@ group(deretDifatDifat፡group) using keys
     + [K_TAB] > '' deadkey(1)
 
 group(difat፡group) using keys
-    + any(nineKeys፡index) > index(difat፡menu,1)
+    + any(eightKeys፡index) > index(difat፡menu,1)
     + [K_TAB] > '᎔' deadkey(1)
 
 group(difatDifat፡group) using keys
-    + any(eightKeys፡index) > index(difatDifat፡menu,1)
+    + any(fourKeys፡index) > index(difatDifat፡menu,1)
     + [K_TAB] > '' deadkey(1)
+
+group(difatDifatDeret፡group) using keys
+    + any(twoKeys፡index) > index(difatDifatDeret፡menu,1)
+    + [K_TAB] > '' deadkey(1)
 
 group(difatDifatDifat፡group) using keys
     + any(oneKeys፡index) > index(difatDifatDifat፡menu,1)
     + [K_TAB] > '' deadkey(1)
 
 group(difatDeret፡group) using keys
-    + any(sixKeys፡index) > index(difatDeret፡menu,1)
+    + any(fourKeys፡index) > index(difatDeret፡menu,1)
     + [K_TAB] > '' deadkey(1)
+
+group(difatDeretChiret፡group) using keys
+    + any(twoKeys፡index) > index(difatDeretChiret፡menu,1)
+    + [K_TAB] > '' deadkey(1)
 
 group(difatDeretDifat፡group) using keys
     + any(threeKeys፡index) > index(difatDeretDifat፡menu,1)
