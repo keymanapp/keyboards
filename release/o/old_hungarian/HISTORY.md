@@ -1,5 +1,9 @@
 Old Hungarian Change History
 ====================
+1.7.6 (2023-09-19)
+------------------
+* Updated mobile layout
+
 1.7.5 (2023-09-03)
 ------------------
 * Added decimal comma
