@@ -4,7 +4,7 @@ The GFF Geʾez Manuscript (EMUFI) Keyboard
 
 Copyright (C) 2022-2023 Geʾez Frontier Foundation
 
-Version 1.0
+Version 1.0.1
 
 This is a Geʾez (ግዕዝ, ISO-639-2 gez) language mnemonic input method. They keyboard is designed
 to work with the [EMUFI](https://emufi.geez.org/) project’s “Geʾez Manuscript Zemen” font (v1.2) which in turn 
