@@ -1,5 +1,8 @@
 Nsilxcən Change History
 ============================
+9.3 (25 Sep 2023)
+-------------------
+* Added mid-dot key to mobile layout
 
 9.2 (25 Apr 2023)
 -------------------
