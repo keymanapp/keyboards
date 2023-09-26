@@ -1,0 +1,89 @@
+﻿c =====================Begin Identity Section===================================================
+c 
+c This is a Geʾez (ግዕዝ, ISO-639-2 gez) language mnemonic input method. They keyboard is designed
+c to work with the [EMUFI](https://emufi.geez.org/) project’s “Geʾez Manuscript Zemen” font (v1.2) which in turn 
+c provides numerous punctuation, numerals, and letter forms found in manuscripts but not yet available under 
+c the Unicode standard.
+c 
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.2/gff_geez.php
+c Source        :  https://github.com/keymanapp/keyboards/gff_geez
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
+c 
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
+c 
+store(&Version) '15.0'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&NAME) 'Sheikh Bakri Sapalo'
+c  store(&EthnologueCode) 'gez'
+store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
+store(&Message) 'This is a Geʾez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_S]'
+store(&BITMAP) 'gff_sbs.ico'
+store(&VISUALKEYBOARD) 'gff_sbs.kvks'
+$keymanonly:  store(&mnemonicLayout) "1"
+c 
+c =====================End Identity Section=====================================================
+store(Base) '*'
+store(ShortA) 'Aa'
+store(ShortU) 'Uu'
+store(ShortI) 'Ii'
+store(ShortE) 'Ee'
+store(ShortO) 'Oo'
+store(LongA) 'Aa'
+store(LongU) 'Uu'
+store(LongI) 'Ii'
+store(LongE) 'Ee'
+store(LongO) 'Oo'
+
+
+store(H_Modifier) 'Hh'
+store(H_DigraphBases) ''
+store(H_DigraphTargets) ''
+store(Y_Modifier) 'Yy'
+store(Y_DigraphBases) ''
+store(Y_DigraphTargets) ''
+store(S_Modifier) 'Ss'
+store(2_DigraphBases) ''
+store(2_DigraphTargets) ''
+
+
+store(QubeeKeys) 'bjdhwzxyklmnsfqrtgcpv'
+store(OrdersConsonantsRegular) ''
+store(OrdersConsonantsGeminated) ''
+store(OrdersBase) ''
+store(OrdersShortA) ''
+store(OrdersShortU) ''
+store(OrdersShortI) ''
+store(OrdersShortE) ''
+store(OrdersShortO) ''
+store(OrdersLongA) ''
+store(OrdersLongU) ''
+store(OrdersLongI) ''
+store(OrdersLongE) ''
+store(OrdersLongO) ''
+store(OrdersConsonant) ''
+
+begin Unicode > use(main)
+group(main) using keys
+
++ any(QubeeKeys)                   > index(OrdersConsonantsRegular,1)
+any(OrdersConsonantsRegular) + any(QubeeKeys) > index(OrdersConsonantsGeminated,1)
+any(OrdersConsonant) + '*'         > index(OrdersBase,1)
+any(OrdersConsonant) + any(ShortA) > index(OrdersShortA,1)
+any(OrdersConsonant) + any(ShortU) > index(OrdersShortU,1)
+any(OrdersConsonant) + any(ShortI) > index(OrdersShortI,1)
+any(OrdersConsonant) + any(ShortE) > index(OrdersShortE,1)
+any(OrdersConsonant) + any(ShortO) > index(OrdersShortO,1)
+any(OrdersShortA)    + any(LongA)  > index(OrdersLongA,1)
+any(OrdersShortU)    + any(LongU)  > index(OrdersLongU,1)
+any(OrdersShortI)    + any(LongI)  > index(OrdersLongI,1)
+any(OrdersShortE)    + any(LongE)  > index(OrdersLongE,1)
+any(OrdersShortO)    + any(LongO)  > index(OrdersLongO,1)
+
+any(H_DigraphBases) + any(H_Modifier)  > any(H_DigraphTargets)
+'' + any(S_Modifier)  > ''
+any(Y_DigraphBases) + any(Y_Modifier)  > any(Y_DigraphTargets)
