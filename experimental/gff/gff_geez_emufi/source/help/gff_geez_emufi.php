@@ -173,7 +173,7 @@ Viewed another way, the selection process for typing <img src="images/Diret-Difa
 <img src="images/Qirts-Input-Tree.png" width="600"/>
 
 <h3><a id="zaima-qirts-input-tree" name="zaima-qirts-input-tree"></a>The Complete Qirts Input Tree</h3>
-<img src="Qirts-Input-Tree-Full.png" width="600"/>
+<img src="images/Qirts-Input-Tree-Full.png" width="600"/>
 
 <h3><a id="extending-hidets" name="extending-hidets"></a>Extending Hidets</h3>
 <p style="text-align: justify;">
