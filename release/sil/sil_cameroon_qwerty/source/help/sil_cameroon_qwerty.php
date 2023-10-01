@@ -59,10 +59,10 @@ require_once('header.php');
 <p xml:lang="en">Computers bought in different countries tend to have different <strong>physical keyboard layouts</strong>. When using <strong>virtual keyboards</strong>, it is MUCH easier to learn the keyboard if the keys are <strong>in the same place</strong> as the letters you want to type.</p>
 <p xml:lang="en">The Cameroon <span class="qw">QWERTY</span> keyboard is designed for computers with the following physical keyboards:</p>
 <ul xml:lang="en" class="qw">
-<li>US English (QWERTY): <a href="qwerty-us-en.htm">See all combinations.</a></li>
-<li>UK Engish (QWERTY): <a href="qwerty-uk-en.htm">See all combinations.</a></li>
-<li>Swiss French (QWERTZ): <a href="qwerty-ch-en.htm">See all combinations.</a></li>
-<li>German (QWERTZ): <a href="qwerty-de-en.htm">See all combinations.</a></li>
+<li>US English (QWERTY): <a href="qwerty-us-en.php">See all combinations.</a></li>
+<li>UK Engish (QWERTY): <a href="qwerty-uk-en.php">See all combinations.</a></li>
+<li>Swiss French (QWERTZ): <a href="qwerty-ch-en.php">See all combinations.</a></li>
+<li>German (QWERTZ): <a href="qwerty-de-en.php">See all combinations.</a></li>
 </ul>
 <blockquote xml:lang="en">Note: If your computer has <span class="qw">an AZERTY</span> Keyboard or something similar, consider removing Cameroon <span class="qw">QWERTY</span> and try the Cameroon <span class="qw">AZERTY</span> Keyboard</blockquote>
 <!--Touch Keyboard-->
@@ -164,10 +164,10 @@ require_once('header.php');
 <p xml:lang="fr">Les ordinateurs achetés dans différents pays ont tendance à avoir des claviers physiques différents. Lorsque vous utilisez des claviers virtuels, il est BEAUCOUP plus facile d'apprendre le clavier si les touches sont à la même place que les lettres que vous voulez taper.</p>
 <p xml:lang="fr">Le clavier Cameroun <span class="qw">QWERTY</span> est conçu pour les ordinateurs équipés des claviers physiques suivants :</p>
 <ul xml:lang="fr" class="qw">
-<li>Anglais États-Unis (QWERTY) : <a href="qwerty-us-fr.htm">Voir toutes les combinaisons.</a></li>
-<li>Anglais Royaume-Uni (QWERTY) : <a href="qwerty-uk-fr.htm">Voir toutes les combinaisons.</a></li>
-<li>Allemand (QWERTZ) : <a href="qwerty-de-fr.htm">Voir toutes les combinaisons.</a></li>
-<li>Suisse (QWERTZ) : <a href="qwerty-ch-fr.htm">Voir toutes les combinaisons.</a></li>
+<li>Anglais États-Unis (QWERTY) : <a href="qwerty-us-fr.php">Voir toutes les combinaisons.</a></li>
+<li>Anglais Royaume-Uni (QWERTY) : <a href="qwerty-uk-fr.php">Voir toutes les combinaisons.</a></li>
+<li>Allemand (QWERTZ) : <a href="qwerty-de-fr.php">Voir toutes les combinaisons.</a></li>
+<li>Suisse (QWERTZ) : <a href="qwerty-ch-fr.php">Voir toutes les combinaisons.</a></li>
 </ul>
 <blockquote xml:lang="fr">Note: Si votre ordinateur a un clavier <span class="qw"> AZERTY</span> ou quelque chose de similaires, envisagez de retirer le clavier Cameroun <span class="qw">QWERTY</span> et installez le clavier Cameroon <span class="qw">AZERTY</span>.</blockquote>
     
