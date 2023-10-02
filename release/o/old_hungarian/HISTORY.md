@@ -1,5 +1,9 @@
 Old Hungarian Change History
 ====================
+1.7.8 (2023-10-01)
+------------------
+* Rebuilded mobile layouts with longpress keys for easy-to-use
+
 1.7.6 (2023-09-19)
 ------------------
 * Updated mobile layout
