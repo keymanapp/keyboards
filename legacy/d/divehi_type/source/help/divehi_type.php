@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Maldivian Standard Keyboard Help';
-  $pagetitle = 'Maldivian Standard Keyboard Help';
+  $pagename = 'Maldivian Standard (deprecated) Keyboard Help';
+  $pagetitle = 'Maldivian Standard (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

@@ -1,12 +1,11 @@
 <?php
-	$pagename = 'Postmodern English UK Natural Layout Help';
+	$pagename = 'Postmodern English UK Natural Keyboard Help';
 	$pagetitle = $pagename;
 	// Header
 	require_once('header.php');
 ?>
 
-<h1>Start Using the Postmodern English UK Natural Layout</h1>
- 
+
 <p>
     This is a Postmodern English keyboard with a typical United Kingdom key layout, 
 	and in the "Natural" Postmodern English style (as opposed to the DualStroke 

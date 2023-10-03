@@ -15,8 +15,8 @@
 
   Authors:     Albert Bickford (SIL)
 */
-  $pagename = 'Bickford Unicode Phonetic Keyboard Help';
-  $pagetitle = 'Bickford Unicode Phonetic Keyboard Help';
+  $pagename = 'BU Phonetic Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <h1>The BU Phonetic Keyboarding System</h1>

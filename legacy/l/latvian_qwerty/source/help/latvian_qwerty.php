@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Latvian (QWERTY) Keyboard Help';
-  $pagetitle = 'Latvian (QWERTY) Keyboard Help';
+  $pagename = 'Latvian (QWERTY) (deprecated) Keyboard Help';
+  $pagetitle = 'Latvian (QWERTY) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

@@ -1,5 +1,11 @@
 Change History
 =======================
+6.0.9 (2023-Sep)
+-----------------
+Add Caps Lock
+Minor style change.
+Update Docs.
+
 6.0.8
 -----------------
 * More diaeresis and style updates.

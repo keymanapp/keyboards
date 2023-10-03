@@ -16,8 +16,8 @@
   History:          18 Sep 2009 - mcdurdin - Additional help
 */
   require_once('servervars.php');
-  $pagename = 'Tamil Inscript Keyboard Help';
-  $pagetitle = 'Tamil Inscript Keyboard Help';
+  $pagename = 'Tamil Inscript (deprecated) Keyboard Help';
+  $pagetitle = 'Tamil Inscript (deprecated) Keyboard Help';
   $style = '.lang2 {font-size:130%}';
   $relatedSites = array("$keyman_com/tamil" => "Tamil Keyboards Home");
   require_once('header.php');

@@ -1,9 +1,9 @@
 Himyarit Musnad Keyboard / كيبورد الخط المسند
 ==============
 
-© 2022 Riyadh Alfareh
+© 2023 Riyadh Alfareh
 
-Version 1.0
+Version 1.2
 
 Description
 -----------

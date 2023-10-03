@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Greek (319) Latin Greek Keyboard Help';
-  $pagetitle = 'Greek (319) Latin Greek Keyboard Help';
+  $pagename = 'Greek (319) Latin Greek (deprecated) Keyboard Help';
+  $pagetitle = 'Greek (319) Latin Greek (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

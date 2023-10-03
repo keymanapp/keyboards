@@ -18,7 +18,7 @@ This keyboard is designed for the <b>Kʷak̓ʷala</b> language of the BC Coast r
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="SKwakwalaNum.png" alt="" height="198" width="514" border="0" /></h2>
+<img src="Kwakwala_LiqwalaU_.png" alt="" height="243" width="720" border="0" /></h2>
 					<ul>
 						<li>The special characters of Kwak̓wala have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyoards keep its original numbers</li>
 						<li>To type the apostrophe accent use the Apostrophe key ' — k̓ is typed k then Apostrophe '</li>

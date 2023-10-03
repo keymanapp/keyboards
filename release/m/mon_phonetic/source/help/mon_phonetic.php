@@ -1,6 +1,6 @@
 <?php 
-  $pagename = ' လၟေၚ်တက် Mon (Phonetic) Keyboard';
-  $pagetitle = 'လၟေၚ်တက် Mon (Phonetic) Keyboard';
+  $pagename = ' လၟေၚ်တက် Mon (Phonetic) Keyboard Help';
+  $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 

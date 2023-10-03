@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Marathi Inscript Keyboard Help';
-  $pagetitle = 'Marathi Inscript Keyboard Help';
+  $pagename = 'Marathi Inscript (deprecated) Keyboard Help';
+  $pagetitle = 'Marathi Inscript (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

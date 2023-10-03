@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -40,13 +40,6 @@
       <Item>
         <Name>Himyarit Musnad Typing Manual</Name>
         <FileName>HimyaritMusnadTyping-English.pdf</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-      <Item>
-        <Name>(new)</Name>
-        <FileName></FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
@@ -132,14 +125,21 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>AF_Najed.ttf</Name>
+      <Description>Font AF_Najed Normal Traditional</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Himyarit Musnad</Name>
       <ID>himyarit_musnad</ID>
-      <Version>1.0</Version>
-      <OSKFont>SultanMusnad-Normal.ttf</OSKFont>
-      <DisplayFont>SultanMusnad-Normal.ttf</DisplayFont>
+      <Version>1.2</Version>
+      <RTL>True</RTL>
+      <OSKFont>AF_Najed.ttf</OSKFont>
+      <DisplayFont>AF_Najed.ttf</DisplayFont>
       <Languages>
         <Language ID="xsa">Sabaean</Language>
       </Languages>

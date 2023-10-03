@@ -16,8 +16,8 @@
   History:          02 Nov 2012 - tpbaehr - Create online help from package help.
 */
 
-  $pagename = 'Tibetan Unicode EWTS Keyboard Help';
-  $pagetitle = 'Tibetan Unicode EWTS Keyboard Help'; 
+  $pagename = 'Tibetan Unicode EWTS (deprecated) Keyboard Help';
+  $pagetitle = 'Tibetan Unicode EWTS (deprecated) Keyboard Help'; 
   $style = <<<END
 /* 
 ===========

@@ -15,8 +15,8 @@
   Notes:            
   History:          01 Jun 2012 - pbaehr - Generate documentation from Keyman Desktop documentation
 */
-  $pagename = "Dzongkha Keyboard Help";
-  $pagetitle = "Dzongkha Keyboard Help";
+  $pagename = "Dzongkha (deprecated) Keyboard Help";
+  $pagetitle = "Dzongkha (deprecated) Keyboard Help";
   $style = <<<END
 /* 
 ===========

@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Amazigh Lat Keyboard Help';
-  $pagetitle = 'Amazigh Lat Keyboard Help';
+  $pagename = 'Amazigh Lat (deprecated) Keyboard Help';
+  $pagetitle = 'Amazigh Lat (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 

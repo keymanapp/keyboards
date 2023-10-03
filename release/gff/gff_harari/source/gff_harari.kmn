@@ -4,8 +4,8 @@ c The Geʾez Frontier Foundation's mnemonic input method for Harari script on US
 c keyboards for SIL Keyman, compliant with Unicode 3.0 and later.
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_amharic/2.0/gff_amharic.php
-c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_amharic
+c Documentation :  https://help.keyman.com/keyboard/gff_harari/1.0.3/gff_harari.php
+c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_harari
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
@@ -13,7 +13,7 @@ c Specification :  http://keyboards.ethiopic.org/specification/
 c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
 c 
 store(&VERSION) '15.0'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.4'
 store(&NAME) 'ሐረሪ (Harari)'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&Message) "This is a Harari language mnemonic input method for Ethiopic script that requires Unicode 3.0 support."
@@ -34,25 +34,20 @@ c The remainder of this document is formatted with a fixed width font.
 
 c Define the set of Ethiopic characters to support contest based input:
 c
-store(Ethiopic) 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
+store(Ethiopic) ' ' 'ሀ' .. '፼' .. 'ᎀ' .. '᎙ⶀ' .. 'ⷞꬁ' .. 'ꬮ𞟠' .. '𞟾'
 
 c ---------------------Maps of Syllabic Forms---------------------------------------------------
 c the following is universal (language neutral) these mappings can be overridden by
 c language specific mappings
-  store(ግዕዝ)  'ሀለሐ𞟠መሠረሰሸቀቐበቨተቸኀነኘከኸወዘዠየደዸጀገጘጠጨጰጸፀፈፐ'
-  store(ካዕብ)  'ሁሉሑ𞟡ሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩኹዉዙዡዩዱዹጁጉጙጡጩጱጹፁፉፑ'
-  store(ሣልስ)  'ሂሊሒ𞟢ሚሢሪሲሺቂቒቢቪቲቺኂኒኚኪኺዊዚዢዪዲዺጂጊጚጢጪጲጺፂፊፒ'
-  store(ራብዕ)  'ሃላሓ𞟣ማሣራሳሻቃቓባቫታቻኃናኛካኻዋዛዣያዳዻጃጋጛጣጫጳጻፃፋፓ'
-  store(ኃምስ)  'ሄሌሔ𞟤ሜሤሬሴሼቄቔቤቬቴቼኄኔኜኬኼዌዜዤዬዴዼጄጌጜጤጬጴጼፄፌፔ'
-  store(ሳድስ)  'ህልሕ𞟥ምሥርስሽቅቕብቭትችኅንኝክኽውዝዥይድዽጅግጝጥጭጵጽፅፍፕ'
-  store(ሳብዕ)  'ሆሎሖ𞟦ሞሦሮሶሾቆቖቦቮቶቾኆኖኞኮኾዎዞዦዮዶዾጆጎጞጦጮጶጾፆፎፖ'
+  store(ግዕዝ)  'ሀለሐ𞟠መሠረሰሸቀቐበቨተቸኀነኘከኸወዐዘዠየደዸጀገጘጠጨጰጸፀፈፐ'
+  store(ካዕብ)  'ሁሉሑ𞟡ሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱዹጁጉጙጡጩጱጹፁፉፑ'
+  store(ሣልስ)  'ሂሊሒ𞟢ሚሢሪሲሺቂቒቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲዺጂጊጚጢጪጲጺፂፊፒ'
+  store(ራብዕ)  'ሃላሓ𞟣ማሣራሳሻቃቓባቫታቻኃናኛካኻዋዓዛዣያዳዻጃጋጛጣጫጳጻፃፋፓ'
+  store(ኃምስ)  'ሄሌሔ𞟤ሜሤሬሴሼቄቔቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴዼጄጌጜጤጬጴጼፄፌፔ'
+  store(ሳድስ)  'ህልሕ𞟥ምሥርስሽቅቕብቭትችኅንኝክኽውዕዝዥይድዽጅግጝጥጭጵጽፅፍፕ'
+  store(ሳብዕ)  'ሆሎሖ𞟦ሞሦሮሶሾቆቖቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶዾጆጎጞጦጮጶጾፆፎፖ'
 
 c QWERTY keymappings
-c
-c These stores were introduced in v2.3 of the keyboard to avoid producing an
-c (ignorable) masking error that began appearing with KM15 where '_' was used
-c a place holder for keys in the ሳድስ list that were not directly typed. The
-c maps below are for for the initial keystrike only.
 c
   store(enKeys)  'hlHmrsxqbvtcnNkKwzZydjgTCPSfp'
   store(ሳድስKeys) 'ህልሕምርስሽቅብቭትችንኝክኽውዝዥይድጅግጥጭጵጽፍፕ'
@@ -64,7 +59,8 @@ c ---------------------End Maps of Syllabic Forms-------------------------------
 
 c ---------------------Maps for Vowels----------------------------------------------------------
   store(loneVowelKeys)  [T_ግዕዝ]'aAuUiIeEoO'[T_ኃምስ]
-  store(loneVowelEthio) 'አአዐኡዑኢዒእዕኦዖኤ'
+  store(loneVowelEthio) 'እአዐኡዑኢዒእዕኦዖኤ'
+  store(composableVowel) 'አኢዐዒ'
 c ---------------------End Vowel Maps-----------------------------------------------------------
 
 c --------------------Maps for Labiovelars------------------------------------------------------
@@ -72,13 +68,16 @@ c --------------------Maps for Labiovelars--------------------------------------
   store(ካዕብ፡መደበኛ)     'ሁሉሑሙሡሩሱሹቁቡቩቱቹኁኑኙኩዙዡዱጁጉጡጩጱጹፁፉፑ'
   store(ዘመደ፡ራብዕ፡መደበኛ) 'ኋሏሗሟሧሯሷሿቋቧቯቷቿኋኗኟኳዟዧዷጇጓጧጯጷጿጿፏፗ'
 
-c 'hhkqg'
-  store(ካዕብ፡ልዩ)  'ሁኁኩኹቁቑጉጙሙቡፉፑሑ'
-  store(ዘመደ፡ግዕዝ) 'ኈኈኰዀቈቘጐⶓᎀᎄᎈᎌ𞟨'
-  store(ዘመደ፡ካዕብ) 'ኍኍኵዅቍቝጕⶖᎃᎇᎋᎏ𞟫'
-  store(ዘመደ፡ሣልስ) 'ኊኊኲዂቊቚጒⶔ𞟭𞟳𞟻𞟽𞟩'
-  store(ዘመደ፡ራብዕ) 'ኋኋኳዃቋቛጓጟሟቧፏፗሗ'
-  store(ዘመደ፡ኃምስ) 'ኌኌኴዄቌቜጔⶕ𞟮𞟴𞟼𞟾𞟪'
+c 'hkqgQGmbfpHh'
+  store(ሳድስ፡ልዩ)  'ኅክኽቅግቕጝምብፍፕሕህ'
+  store(ራብዕ፡ልዩ)  'ኃካኻቃጋቓጛማባፋፓሓሃ'
+  store(ዘመደ፡ግዕዝ) 'ኈኰዀቈጐቘⶓᎀᎄᎈᎌ𞟨ኈ'
+  store(ዘመደ፡ካዕብ) 'ኍኵዅቍጕቝⶖᎃᎇᎋᎏ𞟫ኍ'
+  store(ዘመደ፡ሣልስ) 'ኊኲዂቊጒቚⶔ𞟭𞟳𞟻𞟽𞟩ኊ'
+  store(ዘመደ፡ራብዕ) 'ኋኳዃቋጓቛጟሟቧፏፗሗኋ'
+  store(ዘመደ፡ኃምስ) 'ኌኴዄቌጔቜⶕ𞟮𞟴𞟼𞟾𞟪ኌ'
+
+  store(ዘመደ፡ራብዕ፡ግዕዝኛ) 'ኋኳዃቋጓ'
 c ---------------------End Labiovelars----------------------------------------------------------
 
 c ---------------------Maps for Numbers---------------------------------------------------------
@@ -116,27 +115,27 @@ store(ሠ_ቤተሰብ) 'ሠሡሢሣሤሦሧ'
 store(ረ_ቤተሰብ) 'ረሩሪራሬሮሯ'
 store(ሰ_ቤተሰብ) 'ሰሱሲሳሴሶሷ'
 store(ሸ_ቤተሰብ) 'ሸሹሺሻሼሾሿ'
-store(ቀ_ቤተሰብ) 'ቀቁቂቃቄቆ!'
-store(ቐ_ቤተሰብ) 'ቐቑቒቓቔቖ!'
+store(ቀ_ቤተሰብ) 'ቀቁቂቃቄቆቋ'
+store(ቐ_ቤተሰብ) 'ቐቑቒቓቔቖቋ'
 store(በ_ቤተሰብ) 'በቡቢባቤቦቧ'
 store(ቨ_ቤተሰብ) 'ቨቩቪቫቬቮቯ'
 store(ተ_ቤተሰብ) 'ተቱቲታቴቶቷ'
 store(ቸ_ቤተሰብ) 'ቸቹቺቻቼቾቿ'
-store(ኀ_ቤተሰብ) 'ኀኁኂኃኄኆ!'
+store(ኀ_ቤተሰብ) 'ኀኁኂኃኄኆኋ'
 store(ነ_ቤተሰብ) 'ነኑኒናኔኖኗ'
 store(ኘ_ቤተሰብ) 'ኘኙኚኛኜኞኟ'
 store(አ_ቤተሰብ) 'አኡኢኣኤኦኧ'
-store(ከ_ቤተሰብ) 'ከኩኪካኬኮ!'
-store(ኸ_ቤተሰብ) 'ኸኹኺኻኼኾ!'
+store(ከ_ቤተሰብ) 'ከኩኪካኬኮኳ'
+store(ኸ_ቤተሰብ) 'ኸኹኺኻኼኾዃ'
 store(ወ_ቤተሰብ) 'ወዉዊዋዌዎ!'
 store(ዐ_ቤተሰብ) 'ዐዑዒዓዔዖ!'
 store(ዘ_ቤተሰብ) 'ዘዙዚዛዜዞዟ'
 store(ዠ_ቤተሰብ) 'ዠዡዢዣዤዦዧ'
 store(የ_ቤተሰብ) 'የዩዪያዬዮ!'
 store(ደ_ቤተሰብ) 'ደዱዲዳዴዶዷ'
-store(ዸ_ቤተሰብ) 'ዸዹዺዻዼዽዾዿ'
+store(ዸ_ቤተሰብ) 'ዸዹዺዻዼዾዿ'
 store(ጀ_ቤተሰብ) 'ጀጁጂጃጄጆጇ'
-store(ገ_ቤተሰብ) 'ገጉጊጋጌጎ!'
+store(ገ_ቤተሰብ) 'ገጉጊጋጌጎጓ'
 store(ጘ_ቤተሰብ) 'ጘጙጚጛጜጞ!'
 store(ጠ_ቤተሰብ) 'ጠጡጢጣጤጦጧ'
 store(ጨ_ቤተሰብ) 'ጨጩጪጫጬጮጯ'
@@ -155,6 +154,12 @@ store(ኰ_ቤተሰብ) 'ኰኵኲኳኴ'
 store(ዀ_ቤተሰብ) 'ዀዅዂዃዄ'
 store(ጐ_ቤተሰብ) 'ጐጕጒጓጔ'
 store(ⶓ_ቤተሰብ) 'ⶓⶖⶔጟⶕ'
+store(ᎀ_ቤተሰብ) 'ᎀᎃ𞟭ሟ𞟮'
+store(ᎄ_ቤተሰብ) 'ᎄᎇ𞟳ቧ𞟴'
+store(ᎈ_ቤተሰብ) 'ᎈᎋ𞟻ፏ𞟼'
+store(ᎌ_ቤተሰብ) 'ᎌᎏ𞟽ፗ𞟾'
+store(𞟨_ቤተሰብ) '𞟨𞟫𞟩ሗ𞟪'
+
 
 store(Gurage_ቈ_key) [U_1E7F0][U_1E7F1][U_1E7F2]  c '𞟲𞟰𞟱'
 store(Gurage_ኰ_key) [U_1E7F5][U_1E7F6][U_1E7F7]  c '𞟷𞟵𞟶'
@@ -202,7 +207,6 @@ c ---------------------Begin Mobile Input --------------------------------------
 c
 c Mobile input is separated from Desktop in v3.1 for ease of maintenance
 c
-
   any(ሳድስ) + [T_ግዕዝ] > index(ግዕዝ,1)
   any(ሳድስ) + [T_ካዕብ] > index(ካዕብ,1)
   any(ሳድስ) + [T_ሣልስ] > index(ሣልስ,1)
@@ -210,38 +214,49 @@ c
   any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1) 
   any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
   any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
-
-  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
-  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
-  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
-  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
-  any(ዘመደ፡ግዕዝ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
   
-  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
-  any(ዘመደ፡ራብዕ) +  [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+c Tablet only at this time:
+platform( 'tablet' ) any(ዘመደ፡ግዕዝ) + [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,2)
+platform( 'tablet' ) any(ዘመደ፡ግዕዝ) + [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,2)
+platform( 'tablet' ) any(ዘመደ፡ግዕዝ) + [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,2)
+platform( 'tablet' ) any(ዘመደ፡ግዕዝ) + [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,2)
+platform( 'tablet' ) any(ዘመደ፡ግዕዝ) + [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,2)
+  
+  any(ዘመደ፡ራብዕ፡ግዕዝኛ) + [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ዘመደ፡ራብዕ፡ግዕዝኛ) + [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ዘመደ፡ራብዕ፡ግዕዝኛ) + [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ዘመደ፡ራብዕ፡ግዕዝኛ) + [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ዘመደ፡ራብዕ፡ግዕዝኛ) + [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+
+c this can happen on the tablet profile only:
+  any(ሳድስ፡ልዩ) + [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ሳድስ፡ልዩ) + [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ሳድስ፡ልዩ) + [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ሳድስ፡ልዩ) + [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ሳድስ፡ልዩ) + [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
 c This is slight overkill, the mappings are needed only for ቑ and ጙ on respective "extra" layers.
 c Reduce this layer to only ቑ and ጙ if problems occur:
-  any(ካዕብ፡ልዩ) +  [T_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
-  any(ካዕብ፡ልዩ) +  [T_ሣልስ] > index(ዘመደ፡ሣልስ,1)
-  any(ካዕብ፡ልዩ) +  [T_ራብዕ] > index(ዘመደ፡ራብዕ,1)
-  any(ካዕብ፡ልዩ) +  [T_ኃምስ] > index(ዘመደ፡ኃምስ,1)
-  any(ካዕብ፡ልዩ) +  [T_ካዕብ] > index(ዘመደ፡ካዕብ,1)
+  any(ራብዕ፡ልዩ) + [T_ዘመደ_ግዕዝ] > index(ዘመደ፡ግዕዝ,1)
+  any(ራብዕ፡ልዩ) + [T_ዘመደ_ሣልስ] > index(ዘመደ፡ሣልስ,1)
+  any(ራብዕ፡ልዩ) + [T_ዘመደ_ራብዕ] > index(ዘመደ፡ራብዕ,1)
+  any(ራብዕ፡ልዩ) + [T_ዘመደ_ኃምስ] > index(ዘመደ፡ኃምስ,1)
+  any(ራብዕ፡ልዩ) + [T_ዘመደ_ካዕብ] > index(ዘመደ፡ካዕብ,1)
 
-  
+  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+  if( &layer = "ሀ-layer" ) + 'h' > 'ህ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
   if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
   if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
   if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
   if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
   if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+  if( &layer = "ሰ-layer" ) + 's' > 'ስ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
   if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
   if( &layer = "ቐ-extra" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
+  if( &layer = "ቐ-extra-labiovelar" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
   if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
   if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
   if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
@@ -249,10 +264,12 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
   if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2) 
   if( &layer = "ኘ-layer" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
-  if( &layer = "default" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
-  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  if( &layer = "አ-layer" ) 'እ' + any(touchVowels) > index(አ_ቤተሰብ,3)
+  if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
   if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
   if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
+  if( &layer = "ዐ-layer" ) 'ዕ' + any(touchVowels) > index(ዐ_ቤተሰብ,3)
+  if( &layer = "ዐ-layer" ) 'ዐ' + any(touchVowels) > context(2) index(ዐ_ቤተሰብ,3)
   if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
   if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
   if( &layer = "ዘ-layer" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2) 
@@ -260,30 +277,46 @@ c Reduce this layer to only ቑ and ጙ if problems occur:
   if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
   if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
   if( &layer = "ዸ-extra" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
+  if( &layer = "ዸ-extra-labiovelar" ) + any(touchVowels) > index(ዸ_ቤተሰብ,2)
   if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
-  if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
   if( &layer = "ጘ-extra" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
+  if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
+  if( &layer = "ጘ-extra-labiovelar" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
   if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2) 
   if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
   if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
   if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  if( &layer = "ጸ-layer" ) + 'S' > 'ጽ'   c avoid double-strike composition from touch layouts.
   if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
   if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
   if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
   if( &layer = "𞟠-extra" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
+  if( &layer = "𞟠-extra-labiovelar" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
 
   if( &layer = "ቈ-layer" ) + any(touchVowelsLabiolvelar) > index(ቈ_ቤተሰብ,2)
   if( &layer = "ቘ-layer" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
+  if( &layer = "ቘ-extra" ) + any(touchVowelsLabiolvelar) > index(ቘ_ቤተሰብ,2)
   if( &layer = "ኈ-layer" ) + any(touchVowelsLabiolvelar) > index(ኈ_ቤተሰብ,2)
   if( &layer = "ኰ-layer" ) + any(touchVowelsLabiolvelar) > index(ኰ_ቤተሰብ,2)
   if( &layer = "ዀ-layer" ) + any(touchVowelsLabiolvelar) > index(ዀ_ቤተሰብ,2)
   if( &layer = "ጐ-layer" ) + any(touchVowelsLabiolvelar) > index(ጐ_ቤተሰብ,2)
   if( &layer = "ⶓ-layer" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ⶓ-extra" ) + any(touchVowelsLabiolvelar) > index(ⶓ_ቤተሰብ,2)
+  if( &layer = "ᎀ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎀ_ቤተሰብ,2)
+  if( &layer = "ᎄ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎄ_ቤተሰብ,2)
+  if( &layer = "ᎈ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎈ_ቤተሰብ,2)
+  if( &layer = "ᎌ-layer" ) + any(touchVowelsLabiolvelar) > index(ᎌ_ቤተሰብ,2)
+  if( &layer = "𞟨-layer" ) + any(touchVowelsLabiolvelar) > index(𞟨_ቤተሰብ,2)
 
 c Special New Gurage cases that coexist with classic Ge'ez
   if( &layer = "ቈ-layer" ) 'ቈ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
   if( &layer = "ኰ-layer" ) 'ኰ' + any(Gurage_ኰ_key) > index(Gurage_ኰ,3) 
   if( &layer = "ጐ-layer" ) 'ጐ' + any(Gurage_ጐ_key) > index(Gurage_ጐ,3) 
+
+c The following handles the case on tablets where the layer change was made from the modifier key popups on the primary layout
+  if( &layer = "ቈ-layer" ) 'ቅ' + any(Gurage_ቈ_key) > index(Gurage_ቈ,3) 
+  if( &layer = "ኰ-layer" ) 'ክ' + any(Gurage_ኰ_key) > index(Gurage_ኰ,3) 
+  if( &layer = "ጐ-layer" ) 'ግ' + any(Gurage_ጐ_key) > index(Gurage_ጐ,3) 
   
 c
 c ---------------------End of Mobile Input ------------------------------------------------------
@@ -309,11 +342,13 @@ c Alef-A Vowels as Vowels
   'አ' + any(ራብዕ-key) > 'ኣ'
   'ኢ' + any(ግዕዝ-key) > 'ኤ'
 
-c Aynu-A Vowels as Regular Syllables
-
+  'ዐ' + any(ግዕዝ-key) > 'ዕ'
+  'ዐ' + any(ካዕብ-key) > 'ዑ'
+  'ዐ' + any(ሣልስ-key) > 'ዒ'
   'ዐ' + any(ራብዕ-key) > 'ዓ'
-  'ዒ' + any(ግዕዝ-key) > 'ዔ'
+  'ዐ' + any(ሳብዕ-key) > 'ዖ'
 
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(2)
 c ---------------------End Input of Lone Vowels-------------------------------------------------
 
 c ---------------------Input of Basic Syllables-------------------------------------------------
@@ -334,13 +369,15 @@ c
 c The only dead key for entry of special characters and
 c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
 c 
-  any(ሳድስ)      + "'" > index(ሳድስ,1) deadkey(1)
-$keymanonly: any(ሳድስ) + [CTRL ' '] > index(ሳድስ,1) deadkey(1)
-  any(ካዕብ፡መደበኛ) + "'" > index(ካዕብ፡መደበኛ,1) deadkey(1)
-  any(ካዕብ፡ልዩ)   + "'" > index(ካዕብ፡ልዩ,1) deadkey(1)
-  any(ዘመደ፡ሣልስ)  + "'" > index(ዘመደ፡ሣልስ,1) deadkey(1)             
-  any(ሣልስ)      + "'" > index(ሣልስ,1) deadkey(1)
+  any(ሳድስ)      + "'" > context(1) deadkey(1)
+$keymanonly: any(ሳድስ) + [CTRL ' '] > context(1) deadkey(1)
+  any(ካዕብ፡መደበኛ) + "'" > context(1) deadkey(1)
+  any(ራብዕ፡ልዩ)   + "'" > context(1) deadkey(1)
+  any(ዘመደ፡ሣልስ)  + "'" > context(1) deadkey(1)             
+  any(ሣልስ)      + "'" > context(1) deadkey(1)
 
+  any(arabNumbersWithZero) + ':' > context(1) ':'
+  any(arabNumbersWithZero) ':' + ' ' > context(1) '፡' ' ' 
 
 + ':'     > '፡'
 $keymanonly: + [SHIFT ' '] > '፡'
@@ -351,16 +388,20 @@ $keymanonly: + [SHIFT ' '] > '፡'
   '።' + ':' > ':'
   ':' + ':' > '፡'  c makes circular
   
-any(Ethiopic) + '.' > index(Ethiopic,1) '።'
-  '።' + '.' > '..'
-  '.' + '.' > '..'
+  '።' + '.' > '.'
   '።' + any(arabNumbersWithZero) > '.' index(arabNumbersWithZero,2)
+  any(Ethiopic) + '.' > context(1) '።'
+  any(arabNumbersWithZero) '.' + ' ' > context(1) '።' ' ' 
    
+   
+  any(arabNumbersWithZero) + ',' > context(1) ','
       + ',' > '፣'
   '፣' + ',' > '፥'
   '፥' + ',' > ','
   ',' + ',' > '፣'  c makes circular
+  notany(arabNumbersWithZero) '፣' + any(arabNumbersWithZero) > context(1) '፣' index(arabNumbersWithZero,3)
   '፣' + any(arabNumbersWithZero) > ',' index(arabNumbersWithZero,2)
+  any(arabNumbersWithZero) ',' + ' ' > context(1) '፣' ' ' 
 
 
       + ';' > '፤'
