@@ -7,7 +7,7 @@
 
 
 <p>
-    Rusyn keyboard is a rewrite of the earlier keboards for Rusyn language available at novta.blogspot.com.
+    Rusyn keyboard is a rewrite of the earlier keyboards for Rusyn language available at novta.blogspot.com.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
