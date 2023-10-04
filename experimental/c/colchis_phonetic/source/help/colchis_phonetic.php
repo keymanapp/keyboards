@@ -20,5 +20,5 @@
 <p>Due to the size and number of keys, some characters are hidden in the long press. 
 	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<div id='osk-phone' data-states='default numeric'>
+<div id='osk-phone' data-states='default shift numeric'>
 </div>
