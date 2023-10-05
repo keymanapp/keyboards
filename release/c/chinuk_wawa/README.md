@@ -1,9 +1,5 @@
 chinuk_wawa keyboard
-==============
-
-©2023 Carisa Chang
-
-Version 1.1
+=============
 
 Description
 -----------
