@@ -1,6 +1,11 @@
 Colchis Latin
 ===============================
 
+1.4.1 (4 Oct 2023)
+------------------
+* Add dotted T back in to the keyboard
+* Fix bugs in mobile layouts
+
 1.4 (20 Sept 2023)
 ------------------
 * Update to use revised orthography

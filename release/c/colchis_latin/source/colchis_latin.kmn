@@ -3,13 +3,13 @@ store(&NAME) 'Colchis Latin'
 store(&VISUALKEYBOARD) 'colchis_latin.kvks'
 store(&BITMAP) 'colchis_latin.ico'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.4'
+store(&KEYBOARDVERSION) '1.4.1'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'colchis_latin.keyman-touch-layout'
 begin Unicode > use(main)
 
 store(GE_U)   U+0194          U+0263    U+01A7           U+01A8     U+01E6          U+01E7    U+015E          U+015F \
-              U+00C7           U+00E7     U+0164          U+0165
+              U+00C7           U+00E7     U+1E6A          U+1E6B
 store(GE_Key) [SHIFT K_LBRKT] [K_LBRKT] [SHIFT K_RBRKT]  [K_RBRKT]  [SHIFT K_COMMA] [K_COMMA] [SHIFT K_QUOTE] [K_QUOTE] \
               [SHIFT K_PERIOD] [K_PERIOD] [SHIFT K_COLON] [K_COLON]
  
@@ -76,8 +76,8 @@ c ejective rules
 + [SHIFT RALT K_K] > U+01E8 c 'K̆'
 + [RALT K_P]       > U+0070 U+030C c 'p̆'
 + [SHIFT RALT K_P] > U+0050 U+030C c 'P̆'
-c + [RALT K_T]       > U+0165 c 't̆' put on main layers at colon
-c + [SHIFT RALT K_T] > U+0164 c 'T̆' put on main layers at shift colon
++ [RALT K_T]       > U+0165 c 't̆' 
++ [SHIFT RALT K_T] > U+0164 c 'T̆' 
 + [RALT K_W]       > U+0292 U+030C c 'ʒ̆'
 + [SHIFT RALT K_W] > U+01B7 U+030C c 'Ʒ̆'
 + [RALT K_Z]       > U+017E c 'z̆'
