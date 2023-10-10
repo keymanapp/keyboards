@@ -46,8 +46,8 @@ function collect_build_targets() {
 
   if [[ -f build_targets_temp.txt ]]; then
     # filter build_targets.txt to exclude externally built here
-    for target in $(cat build_targets_temp.txt); do
-      local keyboard_name=${target##*/}
+    while IFS= read -r target; do
+      local keyboard_name="${target##*/}"
       if [[ "$target" =~ ^legacy/ ]]; then
         echo "$target" >> build_legacy.txt
       elif [[ -f "$target/external_source" ]]; then
@@ -56,7 +56,7 @@ function collect_build_targets() {
         # only include targets with a source .kps
         echo "$target" >> build_targets.txt
       fi
-    done
+    done < build_targets_temp.txt
   fi
 
   if $fv_all; then

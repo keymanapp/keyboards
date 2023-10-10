@@ -57,20 +57,21 @@ function do_clean() {
 function do_clean_externals() {
   test -f build_external_targets.txt || return 0
   local keyboard=
-  for keyboard in $(cat build_external_targets.txt); do
+  build_external_targets.txt
+  while IFS= read -r keyboard; do
     pushd "$keyboard"
     clean_external_target_folder
     popd
-  done
+  done < build_external_targets.txt
 }
 
 function do_clean_targets() {
   test -f build_targets.txt || return 0
   local keyboard=
-  for keyboard in $(cat build_targets.txt); do
+  while IFS= read -r keyboard; do
     rm -rf "$keyboard/build/"
     rm -f "$keyboard/*.kpj.user"
-  done
+  done < build_targets.txt
 }
 
 #------------------------------------------------------------
@@ -91,7 +92,7 @@ function do_build() {
 function do_build_externals() {
   test -f build_external_targets.txt || return 0
   local keyboard=
-  for keyboard in $(cat build_external_targets.txt); do
+  while IFS= read -r keyboard; do
     local keyboard_basename=$(basename $keyboard)
     builder_echo "Downloading external keyboard $keyboard"
     pushd "$keyboard"
@@ -108,7 +109,7 @@ function do_build_externals() {
     fi
 
     popd
-  done
+  done < build_external_targets.txt
 }
 
 function do_build_targets() {
@@ -120,15 +121,17 @@ function do_build_legacy() {
   test -f build_legacy.txt || return 0
   while IFS= read -r path; do
     local keyboard="$(basename "$path")"
-    builder_echo "Building $path"
-    rm -rf "$path/build"
-    mkdir -p "$path/build"
-    cp "$path/$keyboard.keyboard_info" "$path/build/"
-    if [[ -f "$path/source/$keyboard.js" ]]; then
-      cp "$path/source/$keyboard.js" "$path/build/"
-    fi
-    if [[ -f "$path/source/$keyboard.kmp" ]]; then
-      cp "$path/source/$keyboard.kmp" "$path/build/"
+    if [[ -f $path/$keyboard.keyboard_info ]]; then
+      builder_echo "Building $path"
+      rm -rf "$path/build"
+      mkdir -p "$path/build"
+      cp "$path/$keyboard.keyboard_info" "$path/build/"
+      if [[ -f "$path/source/$keyboard.js" ]]; then
+        cp "$path/source/$keyboard.js" "$path/build/"
+      fi
+      if [[ -f "$path/source/$keyboard.kmp" ]]; then
+        cp "$path/source/$keyboard.kmp" "$path/build/"
+      fi
     fi
   done < build_legacy.txt
 }
