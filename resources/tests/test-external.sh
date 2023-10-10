@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-source ../external.sh
+source ../external.inc.sh
 
 die() { echo "$*" 1>&2 ; exit 1; }
 

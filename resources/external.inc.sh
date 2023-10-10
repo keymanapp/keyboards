@@ -41,8 +41,6 @@ retrieve_external_keyboard() {
     # file
     retrieve_external_binary_keyboard
   fi
-
-  rewrite_external_git_ignore
 }
 
 verify_external_target_folder_is_clean() {
@@ -63,17 +61,6 @@ clean_external_target_folder() {
   if [ ! -z "$files" ]; then
     rm -rf $files
   fi
-}
-
-rewrite_external_git_ignore() {
-  echo "
-# Only specific files may be added to repository for external references
-*
-.source_is_binary
-!external_source
-!README_EXTERNAL.md
-!.gitignore
-" > .gitignore
 }
 
 retrieve_external_source_keyboard() {
