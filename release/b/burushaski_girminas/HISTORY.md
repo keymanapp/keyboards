@@ -1,4 +1,11 @@
 Burushaski Girminas Change History
+
+2.0.24 (2023-10-10)
+----------------
+
+Improvements on previous version accomodated. 
+
+
 ====================
 
 2.0.23 (2022-02-27)
