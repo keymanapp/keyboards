@@ -1,32 +1,11 @@
 <?php 
-  $pagename = 'Brushaski Girminas - Roman/latin Keyboard Help';
+  $pagename = 'Burushaski Girminas - Roman/latin Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 ?>
 
-<!--
-.style3 {
-	color: #FF3300;
-	font-weight: bold;
-}
-.style9 {color: #FFFFFF}
-.style10 {
-	color: #FF0004
-}
-.style11 {font-family: Calibri}
-.style13 {color: #000000; font-family: Calibri; }
-.style18 {font-size: 14}
-body,td,th {
-    border: none;
-    font-family: Times New Roman, Times, serif;
-}
--->
-</style>
-    </HEAD>
-<BODY  LANG="en-US" DIR="LTR">
-<h1 class="style11">Overview</h1>
-<p><FONT FACE="Calibri, sans-serif"><FONT SIZE=5 STYLE="font-size: 18pt; color: #000000;">Buruśaaski Orthography and Keyboard</FONT></FONT></p>
+<h2>Buruśaaski Orthography and Keyboard</h2>
 <p>Buruśaaski orthography encompasses the spelling and punctuations of the Buruśaaski language. This particular orthography
   has been proposed and agreed upon by representatives of all three varieties of Buruśaaski of 
   Hunza, Yasin and Nagar. The unique characters of Buruśaaski, mostly retroflexes and diacritic vowels have been colored in this document. </p>
@@ -446,7 +425,7 @@ body,td,th {
       <p>&nbsp;Please download here:&nbsp; <a href="https://play.google.com/store/apps/details?id=Buruśaaski.girminas" title="Buruśaaski Girminas Android App" target="new">Buruśaaski Girminas</a></p>
       <p>For iPhones and iPads, install the Keyman App from App Store. Once installed, go to the keyboard settings of keyman and search for the Buruśaaski Girminas. From the list, add Buruśaaski Girminas. Remember, there is no seperate iOS App. <strong>Keyman</strong> engine already includes Buruśaaski Girminas. </p>
       <p>feedback and recommendations are welcomed. </p>
-      <p>Quwat K. Sunny © 2020 -2022</p></td>
+      <p>© Quwat K. Sunny</p></td>
   </tr>
 </table>
-</BODY>
+
