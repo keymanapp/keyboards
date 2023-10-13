@@ -11,6 +11,75 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+c Begin mobile layout
++ [SHIFT T_W] > 'W'
++ [SHIFT T_E_0] > 'Ę'
++ [SHIFT T_E] > 'E'
++ [SHIFT T_T_0] > 'T̲s̲'
++ [SHIFT T_T_1] > 'T̲S̲'
++ [SHIFT T_T] > 'T'
++ [SHIFT T_Y] > 'Y'
++ [SHIFT T_U] > 'U'
++ [SHIFT T_I] > 'I'
++ [SHIFT T_O_0] > 'Ǫ'
++ [SHIFT T_O] > 'O'
++ [SHIFT T_A_0] > 'Ą'
++ [SHIFT T_A] > 'A'
++ [SHIFT T_S_0] > 'S̲'
++ [SHIFT T_S] > 'S'
++ [SHIFT T_D_0] > 'D̲z̲'
++ [SHIFT T_D_1] > 'D̲Z̲'
++ [SHIFT T_D] > 'D'
++ [SHIFT T_G] > 'G'
++ [SHIFT T_H] > 'H'
++ [SHIFT T_J] > 'J'
++ [SHIFT T_K] > 'K'
++ [SHIFT T_L] > 'L'
++ [SHIFT T_APOS_0] > '"'
++ [SHIFT T_APOS_1] > '''
++ [SHIFT T_APOS] > '’'
++ [SHIFT T_Z_0] > 'Z̲'
++ [SHIFT T_Z] > 'Z'
++ [SHIFT T_C] > 'C'
++ [SHIFT T_GLOT] > 'ʔ'
++ [SHIFT T_B] > 'B'
++ [SHIFT T_N] > 'N'
++ [SHIFT T_M] > 'M'
++ [T_W] > 'w'
++ [T_E_0] > 'ę'
++ [T_E] > 'e'
++ [T_T_0] > 't̲s̲'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O_0] > 'ǫ'
++ [T_O] > 'o'
++ [T_A_0] > 'ą'
++ [T_A] > 'a'
++ [T_S_0] > 's̲'
++ [T_S] > 'a'
++ [T_D_0] > 'd̲z̲'
++ [T_D] > 'd'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_APOS_0] > '"'
++ [T_APOS_1] > '''
++ [T_APOS] > '’'
++ [T_Z_0] > 'z̲'
++ [T_Z] > 'z'
++ [T_C] > 'c'
++ [T_GLOT] > 'ʔ'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+
+c Desktop layout
+
 c special letter keys also behave correctly with capslock
 store(&CasedKeys) [K_F] [K_P] [K_Q] [K_R] [K_V] [K_X] [K_LBRKT] [T_DZ] [T_S] [T_TS] [T_Z]
 
@@ -53,6 +122,7 @@ c LINE 1
 
 c caron
 + [K_BKSLASH] > '̌'
+
 c circumflex
 + [SHIFT K_BKSLASH] > '̂'
 + [ALT K_BKSLASH] > '\'
