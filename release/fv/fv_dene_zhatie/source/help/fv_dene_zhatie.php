@@ -32,9 +32,6 @@ This keyboard is designed for the <b>Dene Zhatié</b> language of the Western S
       <li> To type the underlined double e e̲e̲ use Right-Alt (Windows) / Option (Mac) + the e key</li>
       <li> All changed numbers and punctuation can type their original value by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
 </ul>
-<h2>Unicode Fonts</h2>
-						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
-    <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
