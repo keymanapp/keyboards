@@ -1,5 +1,10 @@
 Dene Zhatié Change History
 ============================
+10.0.1 (17 Oct 2023)
+-----------------
+* Updated BCP 47 code
+* Updated keyboard name to better reflect language name
+
 10.0 (5 Sep 2023)
 -----------------
 * Added desktop layout, on-screen keyboard
