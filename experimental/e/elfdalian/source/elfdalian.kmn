@@ -1,0 +1,144 @@
+﻿c KeyMan keyboard generated from Google Input Tools format
+c Tue Nov 09 2021 20:22:53 GMT-0800 (Pacific Standard Time)
+c Source Keyboard File: 'ovd.js'
+c 
+c v1.0.5 2-Jan-2023: Fixed capital U output
+c v1.04 6-Apr-2022: Fix Capslock and long press
+c v1.03 4-Apr-2022: Add Capslock
+c v1.02 26-Mar-2022: Added CapLock and some long press
+c v1.01 29-Jan-2022: Some fixes to touch layout
+ 
+store(&VERSION) '10.0'
+store(&NAME) 'Övdalsk'
+store(&KEYBOARDVERSION) '1.0.5'
+store(&VISUALKEYBOARD) 'elfdalian.kvks'
+store(&LAYOUTFILE) 'elfdalian.keyman-touch-layout'
+store(&KMW_EMBEDJS) 'elfdalian-code.js'
+store(&COPYRIGHT) '©2021-2023 Craig Cornelius'
+store(&MESSAGE) 'Elfdalian keyboard'
+store(&TARGETS) 'any mobile'
+store(&BITMAP) 'elfdalian.ico'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [ALT K_Y] > 'y̨'
++ [SHIFT ALT K_Y] > '̨Y'
++ [K_LBRKT] > 'å'
++ [SHIFT ALT K_LBRKT] > 'Ą̊'
++ [ALT K_LBRKT] > 'ą̊'
++ [ALT K_U] > 'ų'
++ [SHIFT ALT K_U] > 'Ų'
++ [SHIFT ALT K_I] > 'Į'
++ [ALT K_I] > 'į'
++ [ALT K_E] > 'ę'
++ [SHIFT ALT K_E] > 'Ę'
++ [SHIFT ALT K_D] > 'Đ'
++ [SHIFT ALT K_A] > 'Ą'
++ [SHIFT K_U] > 'U'
++ [ALT K_A] > 'ą'
++ [ALT K_D] > 'ð'
+c Are alt options working?
++ [ALT K_O] > 'o' U+0328
++ [ALT SHIFT K_O] > 'O' U+0328
+
++ [K_BKQUOTE] > U+0328 
++ [K_1] > U+0031 
++ [K_2] > U+0032 
++ [K_3] > U+0033 
++ [K_4] > U+0034 
++ [K_5] > U+0035 
++ [K_6] > U+0036 
++ [K_7] > U+0037 
++ [K_8] > U+0038 
++ [K_9] > U+0039 
++ [K_0] > U+0030 
++ [K_HYPHEN] > U+002B 
++ [K_EQUAL] > U+00B4 
++ [K_Q] > U+0071 
++ [K_W] > U+0077 
++ [K_E] > U+0065 
++ [K_R] > U+0072 
++ [K_T] > U+0074 
++ [K_Y] > U+0079 
++ [K_U] > U+0075 
++ [K_I] > U+0069 
++ [K_O] > U+006F 
++ [K_P] > U+0070 
++ [K_A] > U+0061 
++ [K_S] > U+0073 
++ [K_D] > U+0064 
++ [K_F] > U+0066 
++ [K_G] > U+0067 
++ [K_H] > U+0068 
++ [K_J] > U+006A 
++ [K_K] > U+006B 
++ [K_L] > U+006C 
++ [K_BKSLASH] > 'ð' 
++ [K_Z] > U+007A 
++ [K_X] > U+0078 
++ [K_C] > U+0063 
++ [K_V] > U+0076 
++ [K_B] > U+0062 
++ [K_N] > U+006E 
++ [K_M] > U+006D 
++ [K_COMMA] > U+002C 
++ [K_PERIOD] > U+002E 
++ [K_SLASH] > U+002D
+
++ [SHIFT K_BKQUOTE] > '$'
++ [SHIFT K_1] > U+0021 
++ [SHIFT K_2] > U+0022 
++ [SHIFT K_3] > U+0023 
++ [SHIFT K_4] > U+20AC 
++ [SHIFT K_5] > U+0025 
++ [SHIFT K_6] > U+0026 
++ [SHIFT K_7] > U+002F 
++ [SHIFT K_8] > U+0028 
++ [SHIFT K_9] > U+0029 
++ [SHIFT K_0] > U+003D 
++ [SHIFT K_HYPHEN] > U+003F 
++ [SHIFT K_EQUAL] > U+0060 
++ [SHIFT K_Q] > U+0051 
++ [SHIFT K_W] > U+0057 
++ [SHIFT K_E] > U+0045 
++ [SHIFT K_R] > U+0052 
++ [SHIFT K_T] > U+0054 
++ [SHIFT K_Y] > U+0059 
++ [SHIFT K_I] > U+0049 
++ [SHIFT K_O] > U+004F 
++ [SHIFT K_P] > U+0050 
++ [SHIFT K_LBRKT] > U+00C5 
++ [SHIFT K_A] > U+0041 
++ [SHIFT K_S] > U+0053 
++ [SHIFT K_D] > U+0044 
++ [SHIFT K_F] > U+0046 
++ [SHIFT K_G] > U+0047 
++ [SHIFT K_H] > U+0048 
++ [SHIFT K_J] > U+004A 
++ [SHIFT K_K] > U+004B 
++ [SHIFT K_L] > U+004C 
++ [SHIFT K_BKSLASH] > 'Ð' 
++ [SHIFT K_Z] > U+005A 
++ [SHIFT K_X] > U+0058 
++ [SHIFT K_C] > U+0043 
++ [SHIFT K_V] > U+0056 
++ [SHIFT K_B] > U+0042 
++ [SHIFT K_N] > U+004E 
++ [SHIFT K_M] > U+004D 
++ [SHIFT K_COMMA] > U+003C 
++ [SHIFT K_PERIOD] > U+003E 
++ [SHIFT K_SLASH] > U+005F
+
+c Special combinations with ogonek
++ [T_lowery_hook] > 'y̨'
++ [T_Y_Hook] > 'Y̨'
++ [T_ADots_Hook] >'Ą̈'
++ [T_loweradots_hook] > 'ą̈'
++ [T_ARing_hook] > 'Ą̊'
++ [T_lower_ARing_hook] > 'ą̊'
+
+c Capitalize? Doesn't work.
+c + [K_PERIOD K_SPACE U+0061] > ' A'
+c s+ [K_PERIOD K_SPACE U+0062] > ' B'

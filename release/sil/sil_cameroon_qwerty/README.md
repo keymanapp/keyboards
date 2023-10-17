@@ -1,4 +1,4 @@
-Cameroon QWERTY keyboard
+﻿Cameroon QWERTY keyboard
 =====================
 
 Copyright (C) SIL Cameroon

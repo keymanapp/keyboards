@@ -13,9 +13,29 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Southern Tutchone</b> language of the Western Subarctic region of Canada.
+This keyboard is designed for the <b>Southern Tutchone</b> language of the Western Subarctic region of Canada, but may work for other languages in the region.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
+</p>
+<p> To type the diaeresis accent use the Semicolon key ;. ä is typed Semicolon then a.
+To type the acute accent use the / key. á is typed / then a.
+To type the double acute accent use the & key. a̋ is typed & then a.
+To type the grave accent use the ` key. à is typed ` then a.
+To type the caron accent use the % key. ǎ̀ is typed % then a.
+To type the circumflex accent use the ^ key. â is typed ^ then a.
+To type the macron accent use the = key. ā is typed = then a.
+To type the tilde accent use the ~ key. ã is typed ~ then a.
+To type the breve accent use the + and ( key. ă is typed + then ( then a.
+To type the ogonek accent use the , key. ą is typed , then a.
+To type the dot below accent use the . key. ạ is typed . then a.
+To type the ring below accent use the + and ) key. ḁ is typed + then ) then a.
+Type '+' plus "O" to get "Œ"
+Type '+' plus "o" to get "œ"
+Type '+' plus "9" to get "ǝ"
+Type '+' plus "3" to get "ɛ"
+Type '+' plus "?" to get "ʔ"
+Type '+' plus "r" to get "ρ"
+Type '+' plus "x" to get "χ" 
 </p>
 
 

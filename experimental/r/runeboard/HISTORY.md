@@ -1,6 +1,11 @@
 Runeboard Change History
 ====================
 
+2.1 (2023-09-20)
+----------------
+* Updated punctuation keys to include a zero width space after them to allow for tabbing between words
+* Adding missing keyboard layout files to package
+
 2.0 (2023-08-09)
 ----------------
 * Updated layout - minor changes to default layer but more major changes to other layers

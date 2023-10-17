@@ -8,7 +8,16 @@ store(&HOTKEY) '[CTRL SHIFT K_1]'
 store(&BITMAP) 'fv_southern_tutchone.ico'
 store(&VISUALKEYBOARD) 'fv_southern_tutchone.kvks'
  
-begin Unicode > use(main)                      
+begin Unicode > use(main) 
+
+c --- SHORT HANDS ---
+c Several shorthands are used for the diacritics instead of writing them fully each time they are
+c needed. Please reference this list as needed.
+c   Acute       acu     Diaeresis       dia     Macron      mac
+c   Caron       car     Double Acute    dac     Ogonek      ogo
+c   Circumflex  cir     Grave           gra
+
+c --- TOUCH STORES ---
  
 store(before) "'"  
 store(original) [ALT K_QUOTE]   
@@ -16,6 +25,25 @@ store(after)  "’"
 
 store(let) 'AEIMNOUWYaeimnouwy' 
 store(alllet) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+store(MBaseVowels) 'AEIOUaeiou'
+store(MHasAcute) 'ÁÉÍÓÚáéíóú'
+store(MHasDiaeresis) 'ÄÜäü'
+store(MHasDiaeresis_A) 'Ää'
+store(MHasDiaeresis_U) 'Üü'
+store(MHasOgonek_AU) 'ĄŲąų'
+store(MHasOgonek_A) 'Ąą'
+store(MHasOgonek_U) 'Ųų'
+store(MHasDiaAcu_U) 'Ǘǘ'
+store(MHasDiaGra_U) 'Ǜǜ'
+store(MHasDiaMac) 'ǞǕǟǖ'
+store(MHasGrave) 'ÀÈÌÒÙàèìòù'
+store(MHasMacron) 'ĀĒĪŌŪāēīōū'
+store(MHasOgonek) 'ĄĘĮǪŲąęįǫų'
+store(AcuteMobile) [T_X] [SHIFT T_X]
+store(GraveMobile) [T_V] [SHIFT T_V]
+store(MacronMobile) [T_MAC] [SHIFT T_MAC]
+store(OgonekMobile) [T_F] [SHIFT T_F] 
+store(MBackspace) [K_BKSP] [SHIFT K_BKSP]
 
 group(main) using keys   
 
@@ -23,9 +51,107 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
+c --- SINGLE DIACRITICS ---
+any(MBaseVowels) + any(AcuteMobile) > index(MHasAcute,1)
+any(MBaseVowels) + any(GraveMobile) > index(MHasGrave,1)
+any(MBaseVowels) + any(MacronMobile) > index(MHasMacron,1)
+any(MBaseVowels) + any(OgonekMobile) > index(MHasOgonek,1)
 
-+ [SHIFT T_Q] > 'Ä' layer('default')
+c --- OGONEK+1 ---
+
+c Acute
+any(MHasAcute) + any(OgonekMobile) > index(MHasOgonek,1) U+0301
+any(MHasOgonek) + any(AcuteMobile) > index(MHasOgonek,1) U+0301
+
+c Diaeresis
+any(MHasDiaeresis) + any(OgonekMobile) > index(MHasOgonek_AU,1) U+0308
+
+c Grave
+any(MHasGrave) + any(OgonekMobile) > index(MHasOgonek,1) U+0300
+any(MHasOgonek) + any(GraveMobile) > index(MHasOgonek,1) U+0300
+
+c Macron
+any(MHasMacron) + any(OgonekMobile) > index(MHasOgonek,1) U+0304
+any(MHasOgonek) + any(MacronMobile) > index(MHasOgonek,1) U+0304
+
+c --- DIAERESIS+1 ---
+c Acute
+any(MHasDiaeresis_A) + any(AcuteMobile) > index(MHasDiaeresis_A,1) U+0301
+any(MHasDiaeresis_U) + any(AcuteMobile) > index(MHasDiaAcu_U,1)
+
+c Grave
+any(MHasDiaeresis_A) + any(GraveMobile) > index(MHasDiaeresis_A,1) U+0300
+any(MHasDiaeresis_U) + any(GraveMobile) > index(MHasDiaGra_U,1)
+
+c Macron
+any(MHasDiaeresis)  + any(MacronMobile) > index(MHasDiaMac,1)
+
+c --- DIAERESIS+2 ---
+c dia ogo + acute
+'ą̈' + any(AcuteMobile) > 'ą̈́'
+'ų̈' + any(AcuteMobile) > 'ų̈́'
+'Ą̈' + any(AcuteMobile) > 'Ą̈́'
+'Ų̈' + any(AcuteMobile) > 'Ų̈́'
+
+c dia ogo + grave
+'ą̈' + any(GraveMobile) > 'ą̈̀'
+'ų̈' + any(GraveMobile) > 'ų̈̀'
+'Ą̈' + any(GraveMobile) > 'Ą̈̀'
+'Ų̈' + any(GraveMobile) > 'Ų̈̀'
+
+c dia ogo + macron
+'ą̈' + any(MacronMobile) > 'ą̈̄'
+'ų̈' + any(MacronMobile) > 'ų̈̄'
+'Ą̈' + any(MacronMobile) > 'Ą̈̄'
+'Ų̈' + any(MacronMobile) > 'Ų̈̄'
+
+c dia acu + ogo
+any(MHasDiaAcu_U) + any(OgonekMobile) > index(MHasOgonek_U,1) U+0308 U+0301
+'ä́' + any(OgonekMobile) > 'ą̈́'
+'Ä́' + any(OgonekMobile) > 'Ą̈́'
+
+c dia gra + ogo
+any(MHasDiaGra_U) + any(OgonekMobile) > index(MHasOgonek_U,1) U+0308 U+0300
+'ä̀' + any(OgonekMobile) > 'ą̈̀'
+'Ä̀' + any(OgonekMobile) > 'Ą̈̀'
+
+c dia mac + ogo
+any(MHasDiaMac) + any(OgonekMobile) > index(MHasOgonek_AU,1) U+0308 U+0304
+
+c --- BACKSPACE ---
+c single diacritic
+any(MHasAcute) + any(MBackspace) > index(MBaseVowels,1)
+any(MHasGrave) + any(MBackspace) > index(MBaseVowels,1)
+any(MHasMacron) + any(MBackspace) > index(MBaseVowels,1)
+any(MHasOgonek) + any(MBackspace) > index(MBaseVowels,1)
+
+c two diacritics
+any(MHasDiaAcu_U) + any(MBackspace) > index(MHasDiaeresis_U,1)
+any(MHasDiaGra_U) + any(MBackspace) > index(MHasDiaeresis_U,1)
+any(MHasDiaMac) + any(MBackspace) > index(MHasDiaeresis,1)
+'ä́' + any(MBackspace) > 'ä'
+'ä̀' + any(MBackspace) > 'ä'
+'ą̈' + any(MBackspace) > 'ä'
+'ų̈' + any(MBackspace) > 'ü'
+'Ä́' + any(MBackspace) > 'Ä'
+'Ä̀' + any(MBackspace) > 'Ä'
+'Ą̈' + any(MBackspace) > 'Ä'
+'Ų̈' + any(MBackspace) > 'Ü'
+
+c three diacritics
+'ą̈́' + any(MBackspace) > 'ą̈'
+'ą̈̀' + any(MBackspace) > 'ą̈'
+'ų̈́' + any(MBackspace) > 'ų̈'
+'ų̈̀' + any(MBackspace) > 'ų̈'
+'Ą̈́' + any(MBackspace) > 'Ą̈'
+'Ą̈̀' + any(MBackspace) > 'Ą̈'
+'Ų̈́' + any(MBackspace) > 'Ų̈'
+'Ų̈̀' + any(MBackspace) > 'Ų̈'
+
+
+store(&LAYOUTFILE) 'fv_southern_tutchone.keyman-touch-layout'
+
++ [SHIFT T_Q] > 'Ä' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > 'R' layer('default')
@@ -34,164 +160,24 @@ store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
-+ [SHIFT T_P] > 'Ü' layer('default')
++ [SHIFT T_P] > 'Ü' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
-'ä̀' + [SHIFT T_F] > 'ą̈̀'
-'Ú' + [SHIFT T_F] > 'Ų́'
-'ē' + [SHIFT T_F] > 'ę̄'
-'ǖ' + [SHIFT T_F] > 'ų̈̄'
-'ò' + [SHIFT T_F] > 'ǫ̀'
-'ä́' + [SHIFT T_F] > 'ą̈́'
-'U' + [SHIFT T_F] > 'Ų'
-'È' + [SHIFT T_F] > 'Ę̀'
-'ó' + [SHIFT T_F] > 'ǫ́'
-'ü' + [SHIFT T_F] > 'ų̈'
-'É' + [SHIFT T_F] > 'Ę́'
-'Ū' + [SHIFT T_F] > 'Ų̄'
-'ō' + [SHIFT T_F] > 'ǭ'
-'Ē' + [SHIFT T_F] > 'Ę̄'
-'Ò' + [SHIFT T_F] > 'Ǫ̀'
-'ǟ' + [SHIFT T_F] > 'ą̈̄'
-'Ü' + [SHIFT T_F] > 'Ų̈'
-'Ó' + [SHIFT T_F] > 'Ǫ́'
-'ì' + [SHIFT T_F] > 'į̀'
-'Ǜ' + [SHIFT T_F] > 'Ų̈̀'
-'a' + [SHIFT T_F] > 'ą'
-'í' + [SHIFT T_F] > 'į́'
-'à' + [SHIFT T_F] > 'ą̀'
-'Ǘ' + [SHIFT T_F] > 'Ų̈́'
-'Ō' + [SHIFT T_F] > 'Ǭ'
-'á' + [SHIFT T_F] > 'ą́'
-'e' + [SHIFT T_F] > 'ę'
-'ī' + [SHIFT T_F] > 'į̄'
-'i' + [SHIFT T_F] > 'į'
-'ā' + [SHIFT T_F] > 'ą̄'
-'Ì' + [SHIFT T_F] > 'Į̀'
-'Ä̀' + [SHIFT T_F] > 'Ą̈̀'
-'Í' + [SHIFT T_F] > 'Į́'
-'A' + [SHIFT T_F] > 'Ą'
-'À' + [SHIFT T_F] > 'Ą̀'
-'Ǖ' + [SHIFT T_F] > 'Ų̈̄'
-'Á' + [SHIFT T_F] > 'Ą́'
-'Ä́' + [SHIFT T_F] > 'Ą̈́'
-'o' + [SHIFT T_F] > 'ǫ'
-'E' + [SHIFT T_F] > 'Ę'
-'ä' + [SHIFT T_F] > 'ą̈'
-'Ī' + [SHIFT T_F] > 'Į̄'
-'ù' + [SHIFT T_F] > 'ų̀'
-'ǜ' + [SHIFT T_F] > 'ų̈̀'
-'Ā' + [SHIFT T_F] > 'Ą̄'
-'I' + [SHIFT T_F] > 'Į'
-'ú' + [SHIFT T_F] > 'ų́'
-'u' + [SHIFT T_F] > 'ų'
-'ǘ' + [SHIFT T_F] > 'ų̈́'
-'è' + [SHIFT T_F] > 'ę̀'
-'Ǟ' + [SHIFT T_F] > 'Ą̈̄'
-'é' + [SHIFT T_F] > 'ę́'
-'ū' + [SHIFT T_F] > 'ų̄'
-'O' + [SHIFT T_F] > 'Ǫ'
-'Ä' + [SHIFT T_F] > 'Ą̈'
-'Ù' + [SHIFT T_F] > 'Ų̀'
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'J' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'Ł' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON_0] > '"' layer('default')
-+ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_COLON_0] > U+0022 layer('default')
++ [SHIFT T_COLON] > U+0027 layer('default')
 + [SHIFT T_Z] > 'Z' layer('default')
-'ǫ' + [SHIFT T_X] > 'ǫ́'
-'Ǫ' + [SHIFT T_X] > 'Ǫ́'
-'ą̈' + [SHIFT T_X] > 'ą̈́'
-'U' + [SHIFT T_X] > 'Ú'
-'Ų' + [SHIFT T_X] > 'Ų́'
-'Ą̈' + [SHIFT T_X] > 'Ą̈́'
-'I' + [SHIFT T_X] > 'Í'
-'Ü' + [SHIFT T_X] > 'Ǘ'
-'e' + [SHIFT T_X] > 'é'
-'ą' + [SHIFT T_X] > 'ą́'
-'Ą' + [SHIFT T_X] > 'Ą́'
-'ä' + [SHIFT T_X] > 'ä́'
-'ü' + [SHIFT T_X] > 'ǘ'
-'Ų̈' + [SHIFT T_X] > 'Ų̈́'
-'Ä' + [SHIFT T_X] > 'Ä́'
-'u' + [SHIFT T_X] > 'ú'
-'ų̈' + [SHIFT T_X] > 'ų̈́'
-'ų' + [SHIFT T_X] > 'ų́'
-'i' + [SHIFT T_X] > 'í'
-'ę' + [SHIFT T_X] > 'ę́'
-'A' + [SHIFT T_X] > 'Á'
-'O' + [SHIFT T_X] > 'Ó'
-'Ę' + [SHIFT T_X] > 'Ę́'
-'E' + [SHIFT T_X] > 'É'
-'a' + [SHIFT T_X] > 'á'
-'į' + [SHIFT T_X] > 'į́'
-'o' + [SHIFT T_X] > 'ó'
-'Į' + [SHIFT T_X] > 'Į́'
 + [SHIFT T_C] > 'C' layer('default')
-'ǫ' + [SHIFT T_V] > 'ǫ̀'
-'Ǫ' + [SHIFT T_V] > 'Ǫ̀'
-'ą̈' + [SHIFT T_V] > 'ą̈̀'
-'U' + [SHIFT T_V] > 'Ù'
-'Ų' + [SHIFT T_V] > 'Ų̀'
-'Ą̈' + [SHIFT T_V] > 'Ą̈̀'
-'I' + [SHIFT T_V] > 'Ì'
-'Ü' + [SHIFT T_V] > 'Ǜ'
-'e' + [SHIFT T_V] > 'è'
-'ą' + [SHIFT T_V] > 'ą̀'
-'Ą' + [SHIFT T_V] > 'Ą̀'
-'ä' + [SHIFT T_V] > 'ä̀'
-'ü' + [SHIFT T_V] > 'ǜ'
-'Ų̈' + [SHIFT T_V] > 'Ų̈̀'
-'Ä' + [SHIFT T_V] > 'Ä̀'
-'u' + [SHIFT T_V] > 'ù'
-'ų̈' + [SHIFT T_V] > 'ų̈̀'
-'ų' + [SHIFT T_V] > 'ų̀'
-'i' + [SHIFT T_V] > 'ì'
-'ę' + [SHIFT T_V] > 'ę̀'
-'A' + [SHIFT T_V] > 'À'
-'O' + [SHIFT T_V] > 'Ò'
-'Ę' + [SHIFT T_V] > 'Ę̀'
-'E' + [SHIFT T_V] > 'È'
-'a' + [SHIFT T_V] > 'à'
-'į' + [SHIFT T_V] > 'į̀'
-'o' + [SHIFT T_V] > 'ò'
-'Į' + [SHIFT T_V] > 'Į̀'
-'ǫ' + [SHIFT T_B] > 'ǭ'
-'Ǫ' + [SHIFT T_B] > 'Ǭ'
-'ą̈' + [SHIFT T_B] > 'ą̈̄'
-'U' + [SHIFT T_B] > 'Ū'
-'Ų' + [SHIFT T_B] > 'Ų̄'
-'Ą̈' + [SHIFT T_B] > 'Ą̈̄'
-'I' + [SHIFT T_B] > 'Ī'
-'Ü' + [SHIFT T_B] > 'Ǖ'
-'e' + [SHIFT T_B] > 'ē'
-'ą' + [SHIFT T_B] > 'ą̄'
-'Ą' + [SHIFT T_B] > 'Ą̄'
-'ä' + [SHIFT T_B] > 'ǟ'
-'ü' + [SHIFT T_B] > 'ǖ'
-'Ų̈' + [SHIFT T_B] > 'Ų̈̄'
-'Ä' + [SHIFT T_B] > 'Ǟ'
-'u' + [SHIFT T_B] > 'ū'
-'ų̈' + [SHIFT T_B] > 'ų̈̄'
-'ų' + [SHIFT T_B] > 'ų̄'
-'i' + [SHIFT T_B] > 'ī'
-'ę' + [SHIFT T_B] > 'ę̄'
-'A' + [SHIFT T_B] > 'Ā'
-'O' + [SHIFT T_B] > 'Ō'
-'Ę' + [SHIFT T_B] > 'Ę̄'
-'E' + [SHIFT T_B] > 'Ē'
-'a' + [SHIFT T_B] > 'ā'
-'į' + [SHIFT T_B] > 'į̄'
-'o' + [SHIFT T_B] > 'ō'
-'Į' + [SHIFT T_B] > 'Į̄'
-+ [SHIFT T_N] > 'B' layer('default')
-+ [SHIFT T_M] > 'N' layer('default')
-+ [SHIFT T_COMMA] > 'M' layer('default')
-+ [T_Q] > 'ä'
++ [SHIFT T_B] > 'B'
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_Q] > 'ä'
 + [T_W] > 'w'
 + [T_E] > 'e'
 + [T_R] > 'r'
@@ -200,66 +186,10 @@ store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
 + [T_U] > 'u'
 + [T_I] > 'i'
 + [T_O] > 'o'
-+ [T_P] > 'ü'
++ [T_P] > 'ü'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
-'ä̀' + [T_F] > 'ą̈̀'
-'Ú' + [T_F] > 'Ų́'
-'ē' + [T_F] > 'ę̄'
-'ǖ' + [T_F] > 'ų̈̄'
-'ò' + [T_F] > 'ǫ̀'
-'ä́' + [T_F] > 'ą̈́'
-'U' + [T_F] > 'Ų'
-'È' + [T_F] > 'Ę̀'
-'ó' + [T_F] > 'ǫ́'
-'ü' + [T_F] > 'ų̈'
-'É' + [T_F] > 'Ę́'
-'Ū' + [T_F] > 'Ų̄'
-'ō' + [T_F] > 'ǭ'
-'Ē' + [T_F] > 'Ę̄'
-'Ò' + [T_F] > 'Ǫ̀'
-'ǟ' + [T_F] > 'ą̈̄'
-'Ü' + [T_F] > 'Ų̈'
-'Ó' + [T_F] > 'Ǫ́'
-'ì' + [T_F] > 'į̀'
-'Ǜ' + [T_F] > 'Ų̈̀'
-'a' + [T_F] > 'ą'
-'í' + [T_F] > 'į́'
-'à' + [T_F] > 'ą̀'
-'Ǘ' + [T_F] > 'Ų̈́'
-'Ō' + [T_F] > 'Ǭ'
-'á' + [T_F] > 'ą́'
-'e' + [T_F] > 'ę'
-'ī' + [T_F] > 'į̄'
-'i' + [T_F] > 'į'
-'ā' + [T_F] > 'ą̄'
-'Ì' + [T_F] > 'Į̀'
-'Ä̀' + [T_F] > 'Ą̈̀'
-'Í' + [T_F] > 'Į́'
-'A' + [T_F] > 'Ą'
-'À' + [T_F] > 'Ą̀'
-'Ǖ' + [T_F] > 'Ų̈̄'
-'Á' + [T_F] > 'Ą́'
-'Ä́' + [T_F] > 'Ą̈́'
-'o' + [T_F] > 'ǫ'
-'E' + [T_F] > 'Ę'
-'ä' + [T_F] > 'ą̈'
-'Ī' + [T_F] > 'Į̄'
-'ù' + [T_F] > 'ų̀'
-'ǜ' + [T_F] > 'ų̈̀'
-'Ā' + [T_F] > 'Ą̄'
-'I' + [T_F] > 'Į'
-'ú' + [T_F] > 'ų́'
-'u' + [T_F] > 'ų'
-'ǘ' + [T_F] > 'ų̈́'
-'è' + [T_F] > 'ę̀'
-'Ǟ' + [T_F] > 'Ą̈̄'
-'é' + [T_F] > 'ę́'
-'ū' + [T_F] > 'ų̄'
-'O' + [T_F] > 'Ǫ'
-'Ä' + [T_F] > 'Ą̈'
-'Ù' + [T_F] > 'Ų̀'
 + [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'j'
@@ -269,94 +199,11 @@ store(&LAYOUTFILE) 'fv_southern_tutchone.keyboard_info'
 + [T_COLON_0] > '"'
 + [T_COLON] > "'"
 + [T_Z] > 'z'
-'ǫ' + [T_X] > 'ǫ́'
-'Ǫ' + [T_X] > 'Ǫ́'
-'ą̈' + [T_X] > 'ą̈́'
-'U' + [T_X] > 'Ú'
-'Ų' + [T_X] > 'Ų́'
-'Ą̈' + [T_X] > 'Ą̈́'
-'I' + [T_X] > 'Í'
-'Ü' + [T_X] > 'Ǘ'
-'e' + [T_X] > 'é'
-'ą' + [T_X] > 'ą́'
-'Ą' + [T_X] > 'Ą́'
-'ä' + [T_X] > 'ä́'
-'ü' + [T_X] > 'ǘ'
-'Ų̈' + [T_X] > 'Ų̈́'
-'Ä' + [T_X] > 'Ä́'
-'u' + [T_X] > 'ú'
-'ų̈' + [T_X] > 'ų̈́'
-'ų' + [T_X] > 'ų́'
-'i' + [T_X] > 'í'
-'ę' + [T_X] > 'ę́'
-'A' + [T_X] > 'Á'
-'O' + [T_X] > 'Ó'
-'Ę' + [T_X] > 'Ę́'
-'E' + [T_X] > 'É'
-'a' + [T_X] > 'á'
-'į' + [T_X] > 'į́'
-'o' + [T_X] > 'ó'
-'Į' + [T_X] > 'Į́'
 + [T_C] > 'c'
-'ǫ' + [T_V] > 'ǫ̀'
-'Ǫ' + [T_V] > 'Ǫ̀'
-'ą̈' + [T_V] > 'ą̈̀'
-'U' + [T_V] > 'Ù'
-'Ų' + [T_V] > 'Ų̀'
-'Ą̈' + [T_V] > 'Ą̈̀'
-'I' + [T_V] > 'Ì'
-'Ü' + [T_V] > 'Ǜ'
-'e' + [T_V] > 'è'
-'ą' + [T_V] > 'ą̀'
-'Ą' + [T_V] > 'Ą̀'
-'ä' + [T_V] > 'ä̀'
-'ü' + [T_V] > 'ǜ'
-'Ų̈' + [T_V] > 'Ų̈̀'
-'Ä' + [T_V] > 'Ä̀'
-'u' + [T_V] > 'ù'
-'ų̈' + [T_V] > 'ų̈̀'
-'ų' + [T_V] > 'ų̀'
-'i' + [T_V] > 'ì'
-'ę' + [T_V] > 'ę̀'
-'A' + [T_V] > 'À'
-'O' + [T_V] > 'Ò'
-'Ę' + [T_V] > 'Ę̀'
-'E' + [T_V] > 'È'
-'a' + [T_V] > 'à'
-'į' + [T_V] > 'į̀'
-'o' + [T_V] > 'ò'
-'Į' + [T_V] > 'Į̀'
-'ǫ' + [T_B] > 'ǭ'
-'Ǫ' + [T_B] > 'Ǭ'
-'ą̈' + [T_B] > 'ą̈̄'
-'U' + [T_B] > 'Ū'
-'Ų' + [T_B] > 'Ų̄'
-'Ą̈' + [T_B] > 'Ą̈̄'
-'I' + [T_B] > 'Ī'
-'Ü' + [T_B] > 'Ǖ'
-'e' + [T_B] > 'ē'
-'ą' + [T_B] > 'ą̄'
-'Ą' + [T_B] > 'Ą̄'
-'ä' + [T_B] > 'ǟ'
-'ü' + [T_B] > 'ǖ'
-'Ų̈' + [T_B] > 'Ų̈̄'
-'Ä' + [T_B] > 'Ǟ'
-'u' + [T_B] > 'ū'
-'ų̈' + [T_B] > 'ų̈̄'
-'ų' + [T_B] > 'ų̄'
-'i' + [T_B] > 'ī'
-'ę' + [T_B] > 'ę̄'
-'A' + [T_B] > 'Ā'
-'O' + [T_B] > 'Ō'
-'Ę' + [T_B] > 'Ę̄'
-'E' + [T_B] > 'Ē'
-'a' + [T_B] > 'ā'
-'į' + [T_B] > 'į̄'
-'o' + [T_B] > 'ō'
-'Į' + [T_B] > 'Į̄'
-+ [T_N] > 'b'
-+ [T_M] > 'n'
-+ [T_COMMA] > 'm'
++ [T_V_0] > 'v'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
 
 c --- END OF TOUCH LAYOUT RULES ---
 + any(before) > index(after,1)
@@ -379,176 +226,341 @@ store(h) "Hh"
 '_/' + any(l1) > index(l2,3) U+0332
 any(ts) U+0332 + any(h) > index(ts,1) U+0332 index(h,3) U+0332
 
+store(NeedsAcute) 'AEINMOUWYaeinmouwy'
+store(HasAcute) 'ÁÉÍŃḾÓÚẂÝáéíńḿóúẃý'
+store(NeedsCaron1)'AEINOUaeinou'
+store(NeedsCaron2) 'MWYmwy'
+store(HasCaron) 'ǍĚǏŇǑǓǎěǐňǒǔ'
+store(NeedsCircumflex1)'AEIOUWYaeiouwy'
+store(NeedsCircumflex2) 'NMnm'
+store(HasCircumflex) 'ÂÊÎÔÛŴŶâêîôûŵŷ'
+store(NeedsCirAcu1) 'AEOaeo'
+store(NeedsCirAcu2) 'INMUWYinmuwy'
+store(HasCirAcu) 'ẤẾỐấếố'
+store(NeedsCirGra1)'AEOaeo'
+store(NeedsCirGra2) 'INMUWYinmuwy'
+store(HasCirGra) 'ẦỀỒầềồ'
+store(NeedsDiaeresis1)'AEIOUWYaeiouwy'
+store(NeedsDiaeresis2) 'NMnm'
+store(HasDiaeresis) 'ÄËÏÖÜẄŸäëïöüẅÿ'
+store(NeedsDiaAcu1)'IUiu'
+store(NeedsDiaAcu2) 'AEOWYaeowy'
+store(NeedsDiaAcu3) 'NMnm'
+store(HasDiaAcu1) 'ḮǗḯǘ'
+store(HasDiaAcu2) 'ÄËÖẄŸäëöẅÿ'
+store(NeedsDiaGra1)'Uu'
+store(NeedsDiaGra2) 'AEIOWYaeiowy'
+store(HasDiaGra1) 'Ǜǜ'
+store(HasDiaGra2) 'ÄËÏÖẄŸäëïöẅÿ'
+store(NeedsDiaMac1)'AOUaou'
+store(NeedsDiaMac2) 'EINMWYeinmwy'
+store(HasDiaMac) 'ǞȪǕǟȫǖ'
+store(NeedsDoubleAcute1)'OUou'
+store(NeedsDoubleAcute2) 'AEINMWYaeinmwy'
+store(HasDoubleAcute) 'ŐŰőű'
+store(NeedsGrave1)'AEINOUWYaeinouwy'
+store(NeedsGrave2) 'Mm'
+store(HasGrave) 'ÀÈÌǸÒÙẀỲàèìǹòùẁỳ'
+store(NeedsMacron1)'AEIOUYaeiouy'
+store(NeedsMacron2) 'NMWnmw'
+store(HasMacron) 'ĀĒĪŌŪȲāēīōūȳ'
+store(NeedsMacAcu1) 'EOeo'
+store(NeedsMacAcu2) 'AIUYaiuy'
+store(HasMacAcu1) 'ḖṒḗṓ'
+store(HasMacAcu2)'ĀĪŪȲāīūȳ'
+store(NeedsMacGra1)'EOeo'
+store(NeedsMacGra2) 'AIUYaiuy'
+store(NeedsMacGra3) 'NMWnmw'
+store(HasMacGra1) 'ḔṐḕṑ'
+store(HasMacGra2) 'ĀĪŪȲāīūȳ'
+store(NeedsOgonek1)'AEIOUaeiou'
+store(NeedsOgonek2) 'NMWYnmwy'
+store(HasOgonek) 'ĄĘĮǪŲąęįǫų'
+store(Backspace) [K_BKSP] [SHIFT K_BKSP]
+
 c **********
-c *** 1a ***
+c *** single diacritics ***
 c **********
- 
-'`' + any(let) > index(let,2) U+0300 c gra    
-'/' + any(let) > index(let,2) U+0301 c acu    
-'%' + any(let) > index(let,2) U+030C     c car
-'^' + any(let) > index(let,2) U+0302        c cir
-'&' + any(let) > index(let,2) U+030B     c dac
+
+'/' + any(NeedsAcute) > index(HasAcute,2) c acute (acu)
+'%' + any(NeedsCaron1) > index(HasCaron,2) c caron (car)
+'%' + any(NeedsCaron2) > index(NeedsCaron2,2) U+030C 
+'^' + any(NeedsCircumflex1) > index(HasCircumflex,2) c cir (car)
+'^' + any(NeedsCircumflex2) > index(NeedsCircumflex2,2) U+0302
+';' + any(NeedsDiaeresis1) > index(HasDiaeresis,2) c diaeresis (dia)
+';' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,2) U+0308
+'&' + any(NeedsDoubleAcute1) > index(HasDoubleAcute,2) c double acute (dac)
+'&' + any(NeedsDoubleAcute2) > index(NeedsDoubleAcute2,2) U+030B
+'`' + any(NeedsGrave1) > index(HasGrave,2) c grave (gra)
+'`' + any(NeedsGrave2) > index(NeedsGrave2,2) U+0300
+'=' + any(NeedsMacron1) > index(HasMacron,2) 
+'=' + any(NeedsMacron2) > index(NeedsMacron2,2) U+0304
+',' + any(NeedsOgonek1) > index(HasOgonek,2) 
+',' + any(NeedsOgonek2) > index(NeedsOgonek2,2) U+0328
 
 c *********
-c *** 1b ***
-c *********
-                    
-',' + any(let) > index(let,2) U+0328    c ogo
+c *** Ogonek+1 ***
+c *********     
 
-',`' + any(let) > index(let,3) U+0328 U+0300  c gra ogo
-'`,' + any(let) > index(let,3) U+0328 U+0300                
+',`' + any(NeedsOgonek1) > index(HasOgonek,3) U+0300 c ogo gra
+'`,' + any(NeedsOgonek1) > index(HasOgonek,3) U+0300
+',`' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0300
+'`,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0300 
 
-',/' + any(let) > index(let,3) U+0328 U+0301  c acu ogo
-'/,' + any(let) > index(let,3) U+0328 U+0301             
+',/' + any(NeedsOgonek1) > index(HasOgonek,3) U+0301 c ogo acu
+'/,' + any(NeedsOgonek1) > index(HasOgonek,3) U+0301 c
+',/' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0301
+'/,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0301
 
-',%' + any(let) > index(let,3) U+0328 U+030c  c car ogo
-'%,' + any(let) > index(let,3) U+0328 U+030c
+',%' + any(NeedsOgonek1) > index(HasOgonek,3) U+030C c ogo car
+'%,' + any(NeedsOgonek1) > index(HasOgonek,3) U+030C 
+',%' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+030C
+'%,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+030C
 
-',^' + any(let) > index(let,3) U+0328 U+0302 c cir ogo
-'^,' + any(let) > index(let,3) U+0328 U+0302
+',^' + any(NeedsOgonek1) > index(HasOgonek,3) U+0302 c ogo cir
+'^,' + any(NeedsOgonek1) > index(HasOgonek,3) U+0302
+',^' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0302
+'^,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0302
 
-',&' + any(let) > index(let,3) U+0328 U+030B c dac ogo
-'&,' + any(let) > index(let,3) U+0328 U+030B
+',&' + any(NeedsOgonek1) > index(HasOgonek,3) U+030B c ogo dac
+'&,' + any(NeedsOgonek1) > index(HasOgonek,3) U+030B
+',&' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+030B
+'&,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+030B
 
 c **********
-c *** 2a ***
-c **********
-                  
-';' + any(let) > index(let,2) U+0308    c dia
+c *** Diaresis+1 ***
+c **********    
 
-';`' + any(let) > index(let,3) U+0308 U+0300  c dia gra 
-'`;' + any(let) > index(let,3) U+0308 U+0300               
+';`' + any(NeedsDiaGra1) > index(HasDiaGra1,3) c dia gra
+'`;' + any(NeedsDiaGra1) > index(HasDiaGra1,3)
+';`' + any(NeedsDiaGra2) > index(HasDiaGra2,3) U+0300 
+'`;' + any(NeedsDiaGra2) > index(HasDiaGra2,3) U+0300
+';`' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+0300
+'`;' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+0300 
 
-';/' + any(let) > index(let,3) U+0308 U+0301  c dia acu 
-'/;' + any(let) > index(let,3) U+0308 U+0301             
+';/' + any(NeedsDiaAcu1) > index(HasDiaAcu1,3) c dia acu
+'/;' + any(NeedsDiaAcu1) > index(HasDiaAcu1,3)
+';/' + any(NeedsDiaAcu2) > index(HasDiaAcu2,3) U+0301
+'/;' + any(NeedsDiaAcu2) > index(HasDiaAcu2,3) U+0301
+';/' + any(NeedsDiaAcu3) > index(NeedsDiaAcu3,3) U+0308 U+0301
+'/;' + any(NeedsDiaAcu3) > index(NeedsDiaAcu3,3) U+0308 U+0301
 
-';%' + any(let) > index(let,3) U+0308 U+030c  c dia car
-'%;' + any(let) > index(let,3) U+0308 U+030c
+';%' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+030C c dia car
+'%;' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+030C
+';%' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+030C
+'%;' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+030C
 
-';^' + any(let) > index(let,3) U+0308 U+0302 c dia cir
-'^;' + any(let) > index(let,3) U+0308 U+0302
+';^' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+0302 c dia cir
+'^;' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+0302
+';^' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+0302
+'^;' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+0302
 
-';&' + any(let) > index(let,3) U+0308 U+030B c dia dac
-'&;' + any(let) > index(let,3) U+0308 U+030B
+';&' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+030B c dia dac
+'&;' + any(NeedsDiaeresis1) > index(HasDiaeresis,3) U+030B
+';&' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+030B
+'&;' + any(NeedsDiaeresis2) > index(NeedsDiaeresis2,3) U+0308 U+030B
+
+'=;' + any(NeedsDiaMac1) > index(HasDiaMac,3) c dia mac
+';=' + any(NeedsDiaMac1) > index(HasDiaMac,3)
+'=;' + any(NeedsDiaMac2) > index(NeedsDiaMac2,3) U+0308 U+0304
+';=' + any(NeedsDiaMac2) > index(NeedsDiaMac2,3) U+0308 U+0304
        
 c *********
-c *** 2b ***
+c *** Ogonek+Diaresis+1 ***
 c *********
 
-';,' + any(let) > index(let,3) U+0328 U+0308    c dia ogo
-',;' + any(let) > index(let,3) U+0328  U+0308
+';,' + any(NeedsOgonek1) > index(HasOgonek,3) U+0308 c ogo dia
+',;' + any(NeedsOgonek1) > index(HasOgonek,3) U+0308
+';,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0308
+',;' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0308
 
-';`,' + any(let) > index(let,4) U+0328  U+0308 U+0300  c dia gra ogo
-'`;,' + any(let) > index(let,4) U+0328  U+0308 U+0300        
-'`,;' + any(let) > index(let,4) U+0328  U+0308 U+0300   
-';,`' + any(let) > index(let,4) U+0328  U+0308 U+0300   
-',`;' + any(let) > index(let,4) U+0328  U+0308 U+0300   
-',;`' + any(let) > index(let,4) U+0328  U+0308 U+0300          
+';`,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0300  c ogo dia gra
+'`;,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0300
+'`,;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0300 
+';,`' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0300
+',`;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0300
+',;`' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0300
+';`,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0300  
+'`;,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0300     
+'`,;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0300    
+';,`' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0300   
+',`;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0300  
+',;`' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0300       
 
-';/,' + any(let) > index(let,4) U+0328  U+0308 U+0301  c dia acu ogo
-'/;,' + any(let) > index(let,4) U+0328  U+0308 U+0301             
-';,/' + any(let) > index(let,4) U+0328  U+0308 U+0301  
-'/,;' + any(let) > index(let,4) U+0328  U+0308 U+0301 
-',;/' + any(let) > index(let,4) U+0328  U+0308 U+0301  
-',/;' + any(let) > index(let,4) U+0328  U+0308 U+0301 
+';/,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0301  c ogo dia acu
+'/;,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0301
+';,/' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0301
+'/,;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0301
+',;/' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0301
+',/;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0301 
+';/,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0301  
+'/;,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0301           
+';,/' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0301
+'/,;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0301  
+',;/' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0301
+',/;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0301
 
-';%,' + any(let) > index(let,4) U+0328  U+0308 U+030c  c dia car ogo
-'%;,' + any(let) > index(let,4) U+0328  U+0308 U+030c
-';,%' + any(let) > index(let,4) U+0328  U+0308 U+030c 
-'%,;' + any(let) > index(let,4) U+0328  U+0308 U+030c
-',;%' + any(let) > index(let,4) U+0328  U+0308 U+030c 
-',%;' + any(let) > index(let,4) U+0328  U+0308 U+030c
+';%,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030c  c ogo dia car
+'%;,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030c
+';,%' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030c
+'%,;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030c
+',;%' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030c
+',%;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030c
+';%,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030c
+'%;,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030c 
+';,%' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030c
+'%,;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030c 
+',;%' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030c
+',%;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030c
 
-';^,' + any(let) > index(let,4) U+0328  U+0308 U+0302 c dia cir ogo
-'^;,' + any(let) > index(let,4)  U+0328 U+0308 U+0302
-';,^' + any(let) > index(let,4) U+0328  U+0308 U+0302 
-'^,;' + any(let) > index(let,4)  U+0328 U+0308 U+0302
-',;^' + any(let) > index(let,4) U+0328  U+0308 U+0302 
-',^;' + any(let) > index(let,4)  U+0328 U+0308 U+0302
+';^,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0302  c ogo dia cir
+'^;,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0302
+';,^' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0302
+'^,;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0302
+',;^' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0302
+',^;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0302
+';^,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0302
+'^;,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0302
+';,^' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0302
+'^,;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0302 
+',;^' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0302
+',^;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0302
 
-';&,' + any(let) > index(let,4) U+0328  U+0308 U+030B c dia dac ogo
-'&;,' + any(let) > index(let,4) U+0328  U+0308 U+030B
-';,&' + any(let) > index(let,4) U+0328  U+0308 U+030B 
-'&,;' + any(let) > index(let,4) U+0328  U+0308 U+030B
-',;&' + any(let) > index(let,4) U+0328  U+0308 U+030B 
-',&;' + any(let) > index(let,4) U+0328  U+0308 U+030B
+';&,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030B  c ogo dia dac
+'&;,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030B
+';,&' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030B
+'&,;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030B
+',;&' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030B
+',&;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+030B
+';&,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030B
+'&;,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030B 
+';,&' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030B
+'&,;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030B 
+',;&' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030B
+',&;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+030B
+
+';=,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0304 c ogo dia mac
+'=;,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0304
+';,=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0304
+'=,;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0304
+',;=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0304
+',=;' + any(NeedsOgonek1) > index(HasOgonek,4) U+0308 U+0304
+';=,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0304
+'=;,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0304
+';,=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0304
+'=,;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0304
+',;=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0304
+',=;' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0308 U+0304
+
 
 c *********
-c *** 3a ***
-c *********
- 
-'=' + any(let) > index(let,2) U+0304    c mac
+c *** Macron+1 ***
+c *********   
 
-'=`' + any(let) > index(let,3) U+0304 U+0300  c mac gra 
-'`=' + any(let) > index(let,3) U+0304 U+0300               
+'=`' + any(NeedsMacGra1) > index(HasMacGra1,3) c mac gra
+'`=' + any(NeedsMacGra1) > index(HasMacGra1,3)
+'=`' + any(NeedsMacGra2) > index(HasMacGra2,3) U+0300
+'`=' + any(NeedsMacGra2) > index(HasMacGra2,3) U+0300
+'=`' + any(NeedsMacGra3) > index(NeedsMacGra3,3) U+0304 U+0300
+'`=' + any(NeedsMacGra3) > index(NeedsMacGra3,3) U+0304 U+0300
 
-'=/' + any(let) > index(let,3) U+0304 U+0301  c mac acu 
-'/=' + any(let) > index(let,3) U+0304 U+0301             
+'=/' + any(NeedsMacAcu1) > index(HasMacAcu1,3) c mac acu
+'/=' + any(NeedsMacAcu1) > index(HasMacAcu1,3)
+'=/' + any(NeedsMacAcu2) > index(HasMacAcu2,3) U+0301
+'/=' + any(NeedsMacAcu2) > index(HasMacAcu2,3) U+0301
+'=/' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+0301
+'/=' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+0301
 
-'=%' + any(let) > index(let,3) U+0304 U+030c  c mac car
-'%=' + any(let) > index(let,3) U+0304 U+030c
+'=%' + any(NeedsMacron1) > index(HasMacron,3) U+030c c mac car
+'%=' + any(NeedsMacron1) > index(HasMacron,3) U+030c
+'=%' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+030c
+'%=' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+030c
 
-'=^' + any(let) > index(let,3) U+0304 U+0302 c mac cir
-'^=' + any(let) > index(let,3) U+0304 U+0302
+'=^' + any(NeedsMacron1) > index(HasMacron,3) U+0302  c mac cir
+'^=' + any(NeedsMacron1) > index(HasMacron,3) U+0302
+'=^' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+0302
+'^=' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+0302
 
-'=&' + any(let) > index(let,3) U+0304 U+030B c mac dac
-'&=' + any(let) > index(let,3) U+0304 U+030B
+'=&' + any(NeedsMacron1) > index(HasMacron,3) U+030B  c mac dac
+'&=' + any(NeedsMacron1) > index(HasMacron,3) U+030B
+'=&' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+030B
+'&=' + any(NeedsMacron2) > index(NeedsMacron2,3) U+0304 U+030B
   
 c *********
-c *** 3b ***
+c *** Macron+Ogonek+1 ***
 c *********
 
-'=,' + any(let) > index(let,3) U+0328 U+0304    c mac ogo
-',=' + any(let) > index(let,3) U+0328 U+0304
+'=,' + any(NeedsOgonek1) > index(HasOgonek,3) U+0304  c mac ogo
+',=' + any(NeedsOgonek1) > index(HasOgonek,3) U+0304
+'=,' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0304
+',=' + any(NeedsOgonek2) > index(NeedsOgonek2,3) U+0328 U+0304
 
-'=`,' + any(let) > index(let,4)  U+0328  U+0304 U+0300  c mac gra ogo
-'`=,' + any(let) > index(let,4)  U+0328  U+0304   U+0300        
-'`,=' + any(let) > index(let,4)  U+0328  U+0304   U+0300   
-'=,`' + any(let) > index(let,4)  U+0328  U+0304   U+0300   
-',`=' + any(let) > index(let,4)  U+0328  U+0304   U+0300   
-',=`' + any(let) > index(let,4)  U+0328  U+0304   U+0300          
 
-'=/,' + any(let) > index(let,4)  U+0328  U+0304 U+0301  c mac acu ogo
-'/=,' + any(let) > index(let,4)  U+0328  U+0304  U+0301             
-'=,/' + any(let) > index(let,4)  U+0328  U+0304 U+0301  
-'/,=' + any(let) > index(let,4)  U+0328  U+0304  U+0301 
-',=/' + any(let) > index(let,4)  U+0328  U+0304  U+0301  
-',/=' + any(let) > index(let,4)  U+0328  U+0304  U+0301 
 
-'=%,' + any(let) > index(let,4)  U+0328  U+0304 U+030c  c mac car ogo
-'%=,' + any(let) > index(let,4)  U+0328  U+0304  U+030c
-'=,%' + any(let) > index(let,4)  U+0328  U+0304  U+030c 
-'%,=' + any(let) > index(let,4)  U+0328  U+0304  U+030c
-',=%' + any(let) > index(let,4)  U+0328  U+0304  U+030c 
-',%=' + any(let) > index(let,4)  U+0328  U+0304  U+030c
+'=`,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300  c mac gra ogo
+'`=,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300        
+'`,=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300   
+'=,`' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300   
+',`=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300  
+',=`' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0300
+'=`,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0300
+'`=,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0300        
+'`,=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0300   
+'=,`' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0300   
+',`=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0300   
+',=`' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0300          
 
-'=^,' + any(let) > index(let,4)  U+0328  U+0304  U+0302 c mac cir ogo
-'^=,' + any(let) > index(let,4)   U+0328  U+0304  U+0302
-'=,^' + any(let) > index(let,4)  U+0328  U+0304  U+0302 
-'^,=' + any(let) > index(let,4)   U+0328  U+0304  U+0302
-',=^' + any(let) > index(let,4)  U+0328  U+0304  U+0302 
-',^=' + any(let) > index(let,4)   U+0328  U+0304  U+0302
+'=/,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0301  c mac acu ogo
+'/=,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0301             
+'=,/' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0301  
+'/,=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0301 
+',=/' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0301  
+',/=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0301
+'=/,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0301
+'/=,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0301             
+'=,/' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0301  
+'/,=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0301 
+',=/' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0301  
+',/=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0301 
 
-'=&,' + any(let) > index(let,4)  U+0328  U+0304  U+030B c mac dac ogo
-'&=,' + any(let) > index(let,4)  U+0328  U+0304  U+030B
-'=,&' + any(let) > index(let,4)  U+0328  U+0304  U+030B 
-'&,=' + any(let) > index(let,4)  U+0328  U+0304  U+030B
-',=&' + any(let) > index(let,4)  U+0328  U+0304  U+030B 
-',&=' + any(let) > index(let,4)  U+0328  U+0304  U+030B
+'=%,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030c  c mac car ogo
+'%=,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030c
+'=,%' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030c 
+'%,=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030c
+',=%' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030c 
+',%=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030c
+'=%,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030c  c mac car ogo
+'%=,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030c
+'=,%' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030c 
+'%,=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030c
+',=%' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030c 
+',%=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030c
 
-c ***********
-c *** 4a,b ***
-c ***********
+'=^,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0302  c mac cir ogo
+'^=,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0302
+'=,^' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0302 
+'^,=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0302
+',=^' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0302 
+',^=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+0302
+'=^,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0302  c mac cir ogo
+'^=,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0302
+'=,^' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0302 
+'^,=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0302
+',=^' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0302 
+',^=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+0302
 
-';=' + any (let) > index(let,3) U+0308 U+0304
-'=;' + any (let) > index(let,3) U+0308 U+0304
-
-';=,' + any (let) > index(let,4) U+0328 U+0308 U+0304
-'=;,' + any (let) > index(let,4) U+0328  U+0308 U+0304
-';,=' + any (let) > index(let,4) U+0328  U+0308 U+0304
-'=,;' + any (let) > index(let,4) U+0328  U+0308 U+0304
-',;=' + any (let) > index(let,4) U+0328  U+0308 U+0304
-',=;' + any (let) > index(let,4) U+0328  U+0308 U+0304    
+'=&,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030B  c mac dac ogo
+'&=,' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030B
+'=,&' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030B 
+'&,=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030B
+',=&' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030B 
+',&=' + any(NeedsOgonek1) > index(HasOgonek,4) U+0304 U+030B
+'=&,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030B
+'&=,' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030B
+'=,&' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030B 
+'&,=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030B
+',=&' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030B 
+',&=' + any(NeedsOgonek2) > index(NeedsOgonek2,4) U+0328 U+0304 U+030B
 
 c ***********
 c *** misc ***
@@ -565,3 +577,27 @@ c ***********
 "+" + "?" > "ʔ"                                           
 "+" + "r" > "ρ" 
 "+" + "x" > "χ" 
+
+c ***********
+c *** backspace rules ***
+c ***********
+
+any(HasAcute) + any(Backspace) > index(NeedsAcute,1)
+any(HasCaron) + any(Backspace) > index(NeedsCaron1,1)
+any(HasCircumflex) + any(Backspace) > index(NeedsCircumflex1,1)
+any(HasCirAcu) + any(Backspace) > index(NeedsCirAcu1,1)
+any(HasCirGra) + any(Backspace) > index(NeedsCirGra1,1)
+any(HasDiaeresis) + any(Backspace) > index(NeedsDiaeresis1,1)
+any(HasDiaAcu1) + any(Backspace) > index(NeedsDiaAcu1,1)
+any(HasDiaAcu2) + any(Backspace) > index(NeedsDiaAcu2,1)
+any(HasDiaGra1) + any(Backspace) > index(NeedsDiaGra1,1)
+any(HasDiaGra2) + any(Backspace) > index(NeedsDiaGra2,1)
+any(HasDiaMac) + any(Backspace) > index(NeedsDiaMac1,1)
+any(HasDoubleAcute) + any(Backspace) > index(NeedsDoubleAcute1,1)
+any(HasGrave) + any(Backspace) > index(NeedsGrave1,1)
+any(HasMacron) + any(Backspace) > index(NeedsMacron1,1)
+any(HasMacAcu1) + any(Backspace) > index(NeedsMacAcu1,1)
+any(HasMacAcu2) + any(Backspace) > index(NeedsMacAcu2,1)
+any(HasMacGra1) + any(Backspace) > index(NeedsMacGra1,1)
+any(HasMacGra2) + any(Backspace) > index(NeedsMacGra2,1)
+any(HasOgonek) + any(Backspace) > index(NeedsOgonek1,1)

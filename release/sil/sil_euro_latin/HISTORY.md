@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 2.0.4 (29 Sep 2023)
+* Fix longpress commas on touch layout
 ## 2.0.3 (30 Jan 2023)
 * Fix duplicated language codes (`ik`, `ff`, `gn`, `qu`)
 ## 2.0.2 (30 Jan 2023)

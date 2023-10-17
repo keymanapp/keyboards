@@ -1,6 +1,11 @@
 Limbu Typewriter (SIL) Change History
 ====================
 
+1.2 (2023-08-17)
+----------------
+* Changed OSK to use Namdhinggo
+* Added font to package
+
 1.1 (2019-05-20)
 ----------------
 * Moved from a MSKLC keyboard to Keyman

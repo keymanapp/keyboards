@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.2.3'
+store(&KEYBOARDVERSION) '9.2.4'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "kwk"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Kʷak̓ʷala'
 store(&BITMAP) 'fv_kwakwala_liqwala.ico'
 store(&VISUALKEYBOARD) 'fv_kwakwala_liqwala.kvks'
@@ -18,11 +18,16 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_kwakwala_liqwala.keyman-touch-layout'
 
+store(Apostrophe) [T_V] [SHIFT T_V]
+store(NeedsApostrophe) 'cklmnpqtwyCKLMNPQTWYƛ' U+0313
+
+any(NeedsApostrophe) + any(Apostrophe) > index(NeedsApostrophe,1) U+0313
+
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'Ē' layer('default')
++ [SHIFT T_E_0] > 'Ē' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > 'Ə' layer('default')
 + [SHIFT T_T_0] > 'T̓' layer('default')
@@ -39,7 +44,7 @@ store(&LAYOUTFILE) 'fv_kwakwala_liqwala.keyman-touch-layout'
 + [SHIFT T_D_0] > 'Dᶻ' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
 + [SHIFT T_F] > 'ʔ' layer('default')
-+ [SHIFT T_G_0] > 'Ǧ' layer('default')
++ [SHIFT T_G_0] > 'Ǧ' layer('default')
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'ᵂ' layer('default')
@@ -54,27 +59,6 @@ store(&LAYOUTFILE) 'fv_kwakwala_liqwala.keyman-touch-layout'
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-'p' + [SHIFT T_V] > 'p̓'
-'c' + [SHIFT T_V] > 'c̓'
-'q' + [SHIFT T_V] > 'q̓'
-'W' + [SHIFT T_V] > 'W̓'
-'K' + [SHIFT T_V] > 'K̓'
-'Y' + [SHIFT T_V] > 'Y̓'
-'t' + [SHIFT T_V] > 't̓'
-'L' + [SHIFT T_V] > 'L̓'
-'M' + [SHIFT T_V] > 'M̓'
-'w' + [SHIFT T_V] > 'w̓'
-'N' + [SHIFT T_V] > 'N̓'
-'k' + [SHIFT T_V] > 'k̓'
-'P' + [SHIFT T_V] > 'P̓'
-'y' + [SHIFT T_V] > 'y̓'
-'C' + [SHIFT T_V] > 'C̓'
-'Q' + [SHIFT T_V] > 'Q̓'
-'l' + [SHIFT T_V] > 'l̓'
-'m' + [SHIFT T_V] > 'm̓'
-'n' + [SHIFT T_V] > 'n̓'
-'ƛ' + [SHIFT T_V] > 'ƛ̓'
-'T' + [SHIFT T_V] > 'T̓'
 + [SHIFT T_B] > 'λ' layer('default')
 + [SHIFT T_N] > 'B' layer('default')
 + [SHIFT T_M_0] > 'N̓' layer('default')
@@ -85,7 +69,7 @@ store(&LAYOUTFILE) 'fv_kwakwala_liqwala.keyman-touch-layout'
 + [T_Q] > 'q'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
-+ [T_E_0] > 'ē'
++ [T_E_0] > 'ē'
 + [T_E] > 'e'
 + [T_R] > 'ə'
 + [T_T_0] > 't̓'
@@ -102,7 +86,7 @@ store(&LAYOUTFILE) 'fv_kwakwala_liqwala.keyman-touch-layout'
 + [T_D_0] > 'dᶻ'
 + [T_D] > 'd'
 + [T_F] > 'ʔ'
-+ [T_G_0] > 'ǧ'
++ [T_G_0] > 'ǧ'
 + [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'ʷ'
@@ -117,27 +101,6 @@ store(&LAYOUTFILE) 'fv_kwakwala_liqwala.keyman-touch-layout'
 + [T_X] > 'x'
 + [T_C_0] > 'c̓'
 + [T_C] > 'c'
-'p' + [T_V] > 'p̓'
-'c' + [T_V] > 'c̓'
-'q' + [T_V] > 'q̓'
-'W' + [T_V] > 'W̓'
-'K' + [T_V] > 'K̓'
-'Y' + [T_V] > 'Y̓'
-'t' + [T_V] > 't̓'
-'L' + [T_V] > 'L̓'
-'M' + [T_V] > 'M̓'
-'w' + [T_V] > 'w̓'
-'N' + [T_V] > 'N̓'
-'k' + [T_V] > 'k̓'
-'P' + [T_V] > 'P̓'
-'y' + [T_V] > 'y̓'
-'C' + [T_V] > 'C̓'
-'Q' + [T_V] > 'Q̓'
-'l' + [T_V] > 'l̓'
-'m' + [T_V] > 'm̓'
-'n' + [T_V] > 'n̓'
-'ƛ' + [T_V] > 'ƛ̓'
-'T' + [T_V] > 'T̓'
 + [T_B] > 'λ'
 + [T_N] > 'b'
 + [T_M_0] > 'n̓'
@@ -198,34 +161,34 @@ c original punc
 + "/" > "ʔ"    
 + [RALT K_SLASH] > "/" 
 
-+ [CAPS K_0] > 'Ē'
++ [CAPS K_0] > 'Ē'
 + [CAPS K_9] > 'Ɫ'
 + [CAPS K_8] > ''
 + [CAPS K_7] > U+F898
-+ [CAPS K_6] > U+F85E
-+ [CAPS K_5] > 'Ǧ'
++ [CAPS K_6] > "ᶻ"
++ [CAPS K_5] > 'Ǧ'
 + [CAPS K_4] > 'X̌'
 + [CAPS K_3] > 'Ə' 
 + [CAPS K_2] > 'ᵂ'    
 + [CAPS K_1] > '!'  
 
-+ [NCAPS SHIFT K_0] > 'Ē'
++ [NCAPS SHIFT K_0] > 'Ē'
 + [NCAPS SHIFT K_9] > 'Ɫ'   
 + [NCAPS SHIFT K_8] > ''
 + [NCAPS SHIFT K_7] > U+F898
-+ [NCAPS SHIFT K_6] > U+F85E
-+ [NCAPS SHIFT K_5] > 'Ǧ'
++ [NCAPS SHIFT K_6] > "ᶻ"
++ [NCAPS SHIFT K_5] > 'Ǧ'
 + [NCAPS SHIFT K_4] > 'X̌'
 + [NCAPS SHIFT K_3] > 'Ə' 
 + [NCAPS SHIFT K_2] > 'ᵂ'
 + [NCAPS SHIFT K_1] > '!' 
 
-+ [CAPS SHIFT K_0] > 'ē'
++ [CAPS SHIFT K_0] > 'ē'
 + [CAPS SHIFT K_9] > 'ɫ'
 + [CAPS SHIFT K_8] > 'ƛ'
 + [CAPS SHIFT K_7] > 'λ'
 + [CAPS SHIFT K_6] > "ᶻ"
-+ [CAPS SHIFT K_5] > 'ǧ'
++ [CAPS SHIFT K_5] > 'ǧ'
 + [CAPS SHIFT K_4] > 'x̌' 
 + [CAPS SHIFT K_3] > 'ə' 
 + [CAPS SHIFT K_2] > 'ʷ'
@@ -236,7 +199,7 @@ c original punc
 + [NCAPS K_8] > 'ƛ'
 + [NCAPS K_7] > 'λ'
 + [NCAPS K_6] > "ᶻ"
-+ [NCAPS K_5] > 'ǧ'
++ [NCAPS K_5] > 'ǧ'
 + [NCAPS K_4] > 'x̌' 
 + [NCAPS K_3] > 'ə' 
 + [NCAPS K_2] > 'ʷ'
