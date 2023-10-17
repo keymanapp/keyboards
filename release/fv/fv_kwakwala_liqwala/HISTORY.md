@@ -1,5 +1,9 @@
 Kʷak̓ʷala Change History
 ============================
+9.2.5 (17 Oct 2023)
+------------------
+* Updated keyboard name to better reflect the language name
+
 9.2.4 (5 Sep 2023)
 -------------------
 * Updated help to better match current layout
