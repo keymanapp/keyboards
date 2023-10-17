@@ -42,7 +42,7 @@ if [[ -z ${KMC+x} ]]; then
 fi
 
 # TODO: remove -W
-export KMC_BUILD_PARAMS="build $builder_debug -W"
+export KMC_BUILD_PARAMS="build $builder_debug -W --for-publishing"
 readonly KMC_BUILD_PARAMS
 
 #------------------------------------------------------------
@@ -78,6 +78,7 @@ function do_clean_targets() {
 
 function do_configure() {
   npm install --no-optional
+  builder_echo "kmc version: $($KMC --version)"
 }
 
 #------------------------------------------------------------
