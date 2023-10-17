@@ -1,4 +1,4 @@
-Dene Zhatié Change History
+Dene Zhatıé Change History
 ============================
 10.0 (5 Sep 2023)
 -----------------
@@ -6,6 +6,7 @@ Dene Zhatié Change History
 * Cleaned up touch layout rules
 * Updated help, welcome pages
 * Updated to single code point output where possible
+* Updated keyboard name to reflect correct spelling
 
 9.1 (26 Oct 2018)
 -----------------
