@@ -37,7 +37,7 @@ builder_parse "$@"
 #------------------------------------------------------------
 
 if [[ -z ${KMC+x} ]]; then
-  export KMC="./node_modules/.bin/kmc"
+  export KMC="${REPO_ROOT}/node_modules/.bin/kmc"
   readonly KMC
 fi
 
