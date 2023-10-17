@@ -1,5 +1,3 @@
-Made February 2022
-
 The MIT License (MIT)
 
 Copyright ©2022 Kamma Organization for Development Initiatives
