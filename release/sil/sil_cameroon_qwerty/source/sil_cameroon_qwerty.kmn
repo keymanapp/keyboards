@@ -1,9 +1,9 @@
-store(&NAME) 'Cameroon QWERTY'
-store(&COPYRIGHT) '(c) 2018-2022 SIL Cameroon'
+﻿store(&NAME) 'Cameroon QWERTY'
+store(&COPYRIGHT) '(c) 2018-2023 SIL Cameroon'
 store(&BITMAP) 'Cameroon.ico'
 store(&MESSAGE) 'Use ; or AltGr to access special characters.'
 store(&LAYOUTFILE) 'sil_cameroon_qwerty.keyman-touch-layout'
-store(&KEYBOARDVERSION) '6.0.8'
+store(&KEYBOARDVERSION) '6.0.9'
 store(&VISUALKEYBOARD) 'sil_cameroon_qwerty.kvks'
 store(&TARGETS) 'any'
 store(&KMW_EMBEDCSS) 'sil_cameroon_qwerty.css'
@@ -18,6 +18,8 @@ store(word) " aæɛbɓcdɗeəfgʼꞌhiɨjklmnŋoɔøœpqrstuʉvwẅxyƴzAÆƐBƁ
 store(letter) "aæɛbɓcdɗeəfgʼꞌhiɨjklmnŋoɔøœpqrstuʉvwẅxyƴzAÆƐBƁCDƊEƏFGꞋHIƗJKLMNŊOƆØŒPQRSTUɄVWẄXYƳZ◌"
 store(lc) "aæɛbɓcdɗeəfgʼꞌhiɨjklmnŋoɔøœpqrstuʉvwẅxyƴz◌"
 store(uc) "AÆƐBƁCDƊEƏFGʼꞋHIƗJKLMNŊOƆØŒPQRSTUɄVWẄXYƳZ◌"
+store(composed) "àèìǹòùẁỳÀÈÌǸÒÙẀỲὰᾺáćéǵíḱĺḿńóṕŕśúẃýźÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǽάǿǼΆǾâĉêĝĥîĵôŝûŵŷẑÂĈÊĜĤÎĴÔŜÛŴŶẐāēḡīōūȳĀĒḠĪŌŪȲǣᾱǢᾹäëḧïöẗüẍÿÄËḦÏÖÜẌŸạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒçḑȩģḩķļņŗşţÇḐȨĢḨĶĻŅŖŞŢḛḭṵḚḬṴãẽĩñõũṽỹÃẼĨÑÕŨṼỸḉḈậệộẬỆỘẫễỗẪỄỖṻṺḹṝḸṜﬀﬃﬄﬁﬂĲĳǇǈǉǊǋǌﬆﬅ"
+store(comp-dia) "aeinouwyAEINOUWYαΑacegiklmnoprsuwyzACEGIKLMNOPRSUWYZæαøÆΑØaceghijosuwyzACEGHIJOSUWYZaegiouyAEGIOUYæαÆΑaehiotuxyAEHIOUXYabdehiklmnorstuvwyzABDEHIKLMNORSTUVWYZcdeghklnrstCDEGHKLNRSTeiuEIUaeinouvyAEINOUVYçÇạẹọẠẸỌâêôÂÊÔūŪḷṛḶṚfﬀﬀffIiLLlNNnsf"
 store(nfpunct) ",:;"
 store(final) ".!?"
 store(num) "0123456789"
@@ -26,6 +28,8 @@ store(dia) U+0300 U+0304 U+0301 U+030C U+0302 U+0303 U+0308 U+0327 U+030D U+0330
 
 platform('touch') any(word) any(final) + [K_SPACE] > index(word,2) index(final,3) " " layer('shift')
 platform('touch') any(word) U+0020 + [K_SPACE] > index(word,2) U+002E " " layer('shift')
+any(composed) + [K_BKSP] > index(comp-dia,1)
+
 
 + [K_SPACE] > U+0020
 + [SHIFT K_SPACE] > U+0020

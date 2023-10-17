@@ -1,7 +1,7 @@
 <?php /*
   Name:        BU keyboard
-  Copyright:   2006
-  Description: The BU Keyboard (for Keyman 6.0 and higher) provides access to a wide range of characters for Latin-based scripts in Unicode 4.1.0, including:
+  Copyright:   2006-2023 Albert Bickford
+  Description: The BU Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode, including:
 
 <ul>
 <li>English, Spanish, French, German, and other major European languages</li>
@@ -22,7 +22,7 @@
 <h1>The BU Phonetic Keyboarding System</h1>
 <h2>Albert Bickford</h2>
 
-<p>The BU Phonetic Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode 4.1.0 (<a href='http://www.unicode.org/'>www.unicode.org</a>), including:</p>
+<p>The BU Phonetic Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode (<a href='http://www.unicode.org/'>www.unicode.org</a>), including:</p>
 <ul>
 <li>English, Spanish, French, German, and other major European languages</li>
 <li>nearly complete set of IPA and Americanist phonetic symbols, include obscure and obsolete symbols</li>

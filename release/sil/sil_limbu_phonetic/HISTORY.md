@@ -1,6 +1,11 @@
 Limbu Phonetic (SIL) Change History
 ====================
 
+1.3 (2023-08-17)
+----------------
+* Changed OSK to use Namdhinggo
+* Added font to package
+
 1.2 (2019-05-20)
 ----------------
 * Moved from a MSKLC keyboard to Keyman

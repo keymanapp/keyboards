@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Old Hungarian'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.7.4'
+store(&KEYBOARDVERSION) '1.7.8'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'old_hungarian.kvks'
 store(&KMW_RTL) '1'
@@ -76,8 +76,8 @@ c + [K_NP3]              > U+200E c LRM
 + [SHIFT K_BKQUOTE] > U+200F c JB RLM
 c + [K_NP1]           > U+200F c RLM
 
-+ [K_COMMA]        > U+2E41 c REVERSED COMMA
-+ [SHIFT K_COMMA]  > U+2E2E c REVERSED QUESTION MARK
++ [NCAPS K_COMMA]        > U+2E41 c REVERSED COMMA
++ [NCAPS SHIFT K_COMMA]  > U+2E2E c REVERSED QUESTION MARK
 
 + [K_PERIOD]       > "."
 + [SHIFT K_PERIOD] > ":"
@@ -112,8 +112,10 @@ c + [K_NP1]           > U+200F c RLM
 + [NCAPS RALT K_N]      > U+007D
 + [NCAPS RALT K_Q]      > U+005C
 + [NCAPS RALT K_COLON]  > U+0024
-+ [RALT K_COMMA]  > U+204F
-+ [RALT K_SLASH]  > U+002A
++ [NCAPS RALT K_COMMA]  > U+204F
++ [NCAPS SHIFT RALT K_COMMA] >U+002C
+
++ [RALT K_SLASH]  > U+002A 
 
 c angle marks
 + [NCAPS RALT K_M]      > U+003C

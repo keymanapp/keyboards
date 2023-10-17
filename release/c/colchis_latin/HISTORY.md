@@ -1,6 +1,16 @@
 Colchis Latin
 ===============================
 
+1.4.1 (4 Oct 2023)
+------------------
+* Add dotted T back in to the keyboard
+* Fix bugs in mobile layouts
+
+1.4 (20 Sept 2023)
+------------------
+* Update to use revised orthography
+* Include Charis SIL Colchis font (supports hachek on t rather than a comma form)
+
 1.3 (10 May 2023)
 ------------------
 * Update to use revised orthography

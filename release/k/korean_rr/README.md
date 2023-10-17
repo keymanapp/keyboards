@@ -1,9 +1,7 @@
 Korean RR Keyboard
 ============================
 
-(c) 2010-2020 SIL International
-
-Version 1.2
+(c) International
 
 __DESCRIPTION__
 This keyboard is designed for entering the Korean language, supporting both the 
@@ -20,9 +18,9 @@ Home: https://keyman.com/keyboards/korean_rr
 
 Supported Platforms
 -------------------
- * Windows
  * Web
 
 To Do
 -----
  * The .keyman-touch-layout is left in the repo for use in the future.
+ * welcome.htm uses 'php' elements that disappear when rendered as HTML. If support for Windows is restored, this will need to be addressed.

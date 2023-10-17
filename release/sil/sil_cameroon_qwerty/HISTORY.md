@@ -1,6 +1,12 @@
 Change History
 =======================
+6.0.9 (2023-Sep)
+-----------------
+* Yellow Vowels
+* Added Caps Lock
+-----------------
 6.0.8 (2021-Oct)
+-----------------
 * Minor CSS Tweaks
 * Removing NoCaps
 

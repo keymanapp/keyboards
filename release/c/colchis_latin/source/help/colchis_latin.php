@@ -8,7 +8,7 @@
 <h1>Start Using Colchis Latin</h1>
 
 <p>
-    This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages as used in Georgia.
+    This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages.
 </p>
 
 <h1>Keyboard Layout</h1>

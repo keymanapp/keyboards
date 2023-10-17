@@ -1,9 +1,7 @@
 Limbu Phonetic (SIL) keyboard
 ==============
 
-© 2010-2019 SIL International
-
-Version 1.2
+© SIL International
 
 Description
 -----------
