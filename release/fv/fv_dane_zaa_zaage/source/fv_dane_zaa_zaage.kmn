@@ -35,8 +35,9 @@ c Begin mobile layout
 + [SHIFT T_J] > 'J'
 + [SHIFT T_K] > 'K'
 + [SHIFT T_L] > 'L'
-+ [SHIFT T_APOS_0] > '"'
-+ [SHIFT T_APOS_1] > '''
++ [SHIFT T_APOS_0] > U+0022
++ [SHIFT T_APOS_1] > U+0027
++ [SHIFT T_APOS_2] > '-'
 + [SHIFT T_APOS] > '’'
 + [SHIFT T_Z_0] > 'Z̲'
 + [SHIFT T_Z] > 'Z'
@@ -58,7 +59,7 @@ c Begin mobile layout
 + [T_A_0] > 'ą'
 + [T_A] > 'a'
 + [T_S_0] > 's̲'
-+ [T_S] > 'a'
++ [T_S] > 's'
 + [T_D_0] > 'd̲z̲'
 + [T_D] > 'd'
 + [T_G] > 'g'
@@ -66,8 +67,9 @@ c Begin mobile layout
 + [T_J] > 'j'
 + [T_K] > 'k'
 + [T_L] > 'l'
-+ [T_APOS_0] > '"'
-+ [T_APOS_1] > '''
++ [T_APOS_0] > U+0022
++ [T_APOS_1] > U+0027
++ [T_APOS_2] > '-'
 + [T_APOS] > '’'
 + [T_Z_0] > 'z̲'
 + [T_Z] > 'z'
@@ -76,6 +78,78 @@ c Begin mobile layout
 + [T_B] > 'b'
 + [T_N] > 'n'
 + [T_M] > 'm'
+
+store(SZ) 'szSZ'
+
+any(SZ) + any(LowLineKeys) > index(SZ,1) U+0332
+
+C Rules Across Both Layouts
+
+c key stores
+store(AcuteKeys) [K_SLASH] [T_ACUTE] [SHIFT T_ACUTE]
+store(CaronKeys) [K_BKSLASH] [T_CARON] [SHIFT T_CARON]
+store(CircKeys) [SHIFT K_BKSLASH] [T_CIRC] [SHIFT T_CIRC]
+store(LowLineKeys) [SHIFT K_BKQUOTE] [T_LOWL] [SHIFT T_LOWL]
+store(OgoKeys) [K_BKQUOTE] [T_OGO] [SHIFT T_OGO]
+
+c vowel character collections
+store(BaseVowels) "aeiouAEIOU"
+store(Accents) U+0301 U+030C U+0302
+store(AcuteVowels) 'áéíóúÁÉÍÓÚ'
+store(CaronVowels) 'ǎěǐǒǔǍĚǏǑǓ'
+store(CircumflexVowels) 'âêîôûÂÊÎÔÛ'
+store(OgonekVowels) 'ąęįǫųĄĘĮǪŲ'
+
+c accents should join with vowels
+c basevowel + accent = combined
+any(BaseVowels) + any(AcuteKeys) > index(AcuteVowels,1)
+any(BaseVowels) + any(CaronKeys) > index(CaronVowels,1)
+any(BaseVowels) + any(CircKeys) > index(CircumflexVowels,1)
+
+c ogonek should join with vowels, and should never double
+c basevowel plus ogonek = combined vowelogonek
+any(BaseVowels) + any(OgoKeys) > index(OgonekVowels,1)
+
+c vowelogonek plus another ogonek = single vowelogonek (no stacking)
+any(Ogonekvowels) + any(OgoKeys) > index(OgonekVowels,1)
+
+c if an accent is present and another is added, it should replace not stack
+c already-accented vowel + accent = fresh accented vowel
+any(AcuteVowels) + any(AcuteKeys) > index(AcuteVowels,1)
+any(CaronVowels) + any(AcuteKeys) > index(AcuteVowels,1)
+any(CircumflexVowels) + any(AcuteKeys) > index(AcuteVowels,1)
+any(AcuteVowels) + any(CaronKeys) > index(CaronVowels,1)
+any(CaronVowels) + any(CaronKeys) > index(CaronVowels,1)
+any(CircumflexVowels) + any(CaronKeys) > index(CaronVowels,1)
+any(AcuteVowels) + any(CircKeys) > index(CircumflexVowels,1)
+any(CaronVowels) + any(CircKeys) > index(CircumflexVowels,1)
+any(CircumflexVowels) + any(CircKeys) > index(CircumflexVowels,1)
+c accent + new accent = single new accent
+any(accents) + any(AcuteKeys) > U+0301
+any(accents) + any(CaronKeys) > U+030C
+any(accents) + any(CircKeys) > U+0302
+any(accents) + any(OgoKeys) > context beep
+
+c to add both ogonek and accent on a vowel, ensure the ogonek always joins, and accent is a diacritic
+c vowelaccent plus ogonek = vowelogonek plus accent
+any(AcuteVowels) + any(OgoKeys) > index(OgonekVowels,1) U+0301
+any(CaronVowels) + any(OgoKeys) > index(OgonekVowels,1) U+030C
+any(CircumflexVowels) + any(OgoKeys) > index(OgonekVowels,1) U+0302
+any(OgonekVowels) + any(AcuteKeys) > index (OgonekVowels,1) U+0301
+any(OgonekVowels) + any(CaronKeys) > index(OgonekVowels,1) U+030C
+any(OgonekVowels) + any(CircKeys) > index(OgonekVowels,1) U+0302
+
+c if low line combined with t/d, shortcut to underlined ts/dz
+'d' + any(LowLineKeys) > 'd̲z̲'
+'D' + any(LowLineKeys) > 'D̲z̲'
+'t' + any(LowLineKeys) > 't̲s̲'
+'T' + any(LowLineKeys) > 'T̲s̲'
+
+c Backspacing rules
+any(AcuteVowels) + [K_BKSP] > index(BaseVowels,1)
+any(CaronVowels) + [K_BKSP] > index(BaseVowels,1)
+any(CircumflexVowels) + [K_BKSP] > index(BaseVowels,1)
+any(OgonekVowels) + [K_BKSP] > index(BaseVowels,1)
 
 
 c Desktop layout
@@ -87,6 +161,7 @@ c LINE 0
 
 c combining ogonek
 + [K_BKQUOTE] > U+0328
+
 c combining lowline
 + [SHIFT K_BKQUOTE] > U+0332
 + [ALT K_BKQUOTE] > '`'
@@ -166,67 +241,7 @@ c acute
 + [ALT K_SLASH] > '/'
 
 
-c TOUCH COMBINED KEYS
-+ [T_S] > 's̲'
-+ [SHIFT T_S] > 'S̲'
-+ [T_Z] > 'z̲'
-+ [SHIFT T_Z] > 'Z̲'
-+ [T_DZ] > 'd̲z̲'
-+ [SHIFT T_DZ] > 'D̲Z̲'
-+ [T_DZ_MIDSHIFT] > 'D̲z̲'
-+ [T_TS] > 't̲s̲'
-+ [SHIFT T_TS] > 'T̲S̲'
-+ [T_TS_MIDSHIFT] > 'T̲s̲'
-
-
-c vowel character collections
-store(basevowels) "aeiouAEIOU"
-store(accents) U+0301 U+030C U+0302
-store(acutevowels) U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D3 U+00DA
-store(caronvowels) U+01CE U+011B U+01D0 U+01D2 U+01D4 U+01CD U+011A U+01CF U+01D1 U+01D3
-store(circumflexvowels) U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB
-store(ogonekvowels) U+0105 U+0119 U+012F U+01EB U+0173 U+0104 U+0118 U+012E U+01EA U+0172
-
-c accents should join with vowels
-c basevowel + accent = combined
-any(basevowels) + [K_SLASH] > index(acutevowels,1)
-any(basevowels) + [K_BKSLASH]> index(caronvowels,1)
-any(basevowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-
-c ogonek should join with vowels, and should never double
-c basevowel plus ogonek = combined vowelogonek
-any(basevowels) + [K_BKQUOTE] > index(ogonekvowels,1)
-c vowelogonek plus another ogonek = single vowelogonek (no stacking)
-any(ogonekvowels) + [K_BKQUOTE] > index(ogonekvowels,1)
-
-c if an accent is present and another is added, it should replace not stack
-c already-accented vowel + accent = fresh accented vowel
-any(acutevowels) + [K_SLASH] > index(acutevowels,1)
-any(caronvowels) + [K_SLASH] > index(acutevowels,1)
-any(circumflexvowels) + [K_SLASH] > index(acutevowels,1)
-any(acutevowels) + [K_BKSLASH] > index(caronvowels,1)
-any(caronvowels) + [K_BKSLASH] > index(caronvowels,1)
-any(circumflexvowels) + [K_BKSLASH] > index(caronvowels,1)
-any(acutevowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-any(caronvowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-any(circumflexvowels) + [SHIFT K_BKSLASH] > index(circumflexvowels,1)
-c accent + new accent = single new accent
-any(accents) + [K_SLASH] > U+0301
-any(accents) + [K_BKSLASH] > U+030C
-any(accents) + [SHIFT K_BKSLASH] > U+0302
-
-c to add both ogonek and accent on a vowel, ensure the ogonek always joins, and accent is a diacritic
-c vowelaccent plus ogonek = vowelogonek plus accent
-any(acutevowels) + [K_BKQUOTE] > index(ogonekvowels,1) U+0301
-any(caronvowels) + [K_BKQUOTE] > index(ogonekvowels,1) U+030C
-any(circumflexvowels) + [K_BKQUOTE] > index(ogonekvowels,1) U+0302
 
 c don't double other diacritics like ogonek, low line
 U+0328 + [K_BKQUOTE] > U+0328
 U+0332 + [SHIFT K_BKQUOTE] > U+0332
-
-c if low line combined with t/d, shortcut to underlined ts/dz
-'d' + [SHIFT K_BKQUOTE] > 'd̲z̲'
-'D' + [SHIFT K_BKQUOTE] > 'D̲z̲'
-'t' + [SHIFT K_BKQUOTE] > 't̲s̲'
-'T' + [SHIFT K_BKQUOTE] > 'T̲s̲'
