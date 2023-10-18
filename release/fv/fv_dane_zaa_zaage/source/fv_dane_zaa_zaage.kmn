@@ -124,11 +124,15 @@ any(CircumflexVowels) + any(CaronKeys) > index(CaronVowels,1)
 any(AcuteVowels) + any(CircKeys) > index(CircumflexVowels,1)
 any(CaronVowels) + any(CircKeys) > index(CircumflexVowels,1)
 any(CircumflexVowels) + any(CircKeys) > index(CircumflexVowels,1)
+
+c prevent lowline and ogonek from stacking
+any(OgonekVowels) + any(LowLineKeys) > index(OgonekVowels,1)
+U+0332 + any(OgoKeys) > U+0332
+
 c accent + new accent = single new accent
 any(accents) + any(AcuteKeys) > U+0301
 any(accents) + any(CaronKeys) > U+030C
 any(accents) + any(CircKeys) > U+0302
-any(accents) + any(OgoKeys) > context beep
 
 c to add both ogonek and accent on a vowel, ensure the ogonek always joins, and accent is a diacritic
 c vowelaccent plus ogonek = vowelogonek plus accent
