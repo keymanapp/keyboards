@@ -201,7 +201,13 @@ function commit_and_push {
   git config user.name "Keyman Build Server"
   git config user.email "keyman-server@users.noreply.github.com"
 
-  local uuid=$(uuidgen)
+  local uuid=
+  if [[ -z ${BUILD_NUMBER+x} ]]; then
+    uuid=$(uuidgen)
+  else
+    uuid=TC-$BUILD_NUMBER
+  fi
+
   local branch=auto/keyboards/upload/$uuid
 
   echo "ensuring master is up to date"
