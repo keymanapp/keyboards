@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # Prevents 'clear' on exit of mingw64 bash shell
@@ -200,6 +200,12 @@ function commit_and_push {
   pushd $HELP_KEYMAN_COM
   git config user.name "Keyman Build Server"
   git config user.email "keyman-server@users.noreply.github.com"
+
+  local uuid=$(uuidgen)
+  local branch=auto/keyboards/upload/$uuid
+
+  echo "ensuring master is up to date"
+  git pull origin master || return 1
   git add keyboard || return 1
   git diff --cached --no-ext-diff --quiet --exit-code && {
     # if no changes then don't do anything.
@@ -207,14 +213,22 @@ function commit_and_push {
     popd
     return 0
   }
-
   echo "changes added to cache...>>>"
-  git commit -m "Keyboard help deployment (automatic)" || return 1
-  git pull origin master || return 1
-  git push origin master || return 1
-  popd
 
+  echo "creating new branch '$branch'"
+  git switch -c $branch
+  echo "committed help to '$branch'"
+  git commit -m "auto: Keyboard help deployment" || return 1
+  git push origin $branch || return 1
   echo "Push to help.keyman.com complete"
+
+  hub pull-request -f --no-edit -l auto || return 1
+  echo "PR created"
+
+  git switch master || return 1
+  echo "switched back to master"
+
+  popd
 
   return 0
 }
