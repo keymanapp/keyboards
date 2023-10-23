@@ -48,7 +48,7 @@ macOS:
 
 `./build.sh` can be used to build all the keyboards from the command line.
 
-* `kmc`, the Keyman Developer compiler, is installed as a Node.js modul, and so
+* `kmc`, the Keyman Developer compiler, is installed as a Node.js module, and so
   Keyman Developer is not required for builds.
 
 #### Common `build.sh` parameters
