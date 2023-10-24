@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2012-2022 Dinesharatna Prabhakara Siddhartha
+Copyright © 2012-2022 Dinesharatna Prabhakara Siddhartha
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

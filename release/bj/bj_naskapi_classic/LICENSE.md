@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2001-2020 Bill Jancewicz
+Copyright © 2001-2020 Bill Jancewicz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
