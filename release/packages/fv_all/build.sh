@@ -144,7 +144,7 @@ function do_build() {
   kps="${kps//@FILES/$FILE_LINES}"
   echo "${kps//@KEYBOARDS/$KEYBOARD_LINES}" > source/fv_all.kps
 
-  # Build fv_all.kmp, using kmcomp as per normal build script
+  # Build fv_all.kmp, using kmc as per normal build script
 
   mkdir -p build || die "Failed to create build folder for fv_all"
 
