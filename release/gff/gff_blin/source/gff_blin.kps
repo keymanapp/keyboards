@@ -204,10 +204,18 @@ script languages.</Description>
       <Version>1.5.4</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="byn-Ethi">Bilin</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="byn-Ethi" Keys="b l i n a" Text="ብሊና" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-byn-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_byn_7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

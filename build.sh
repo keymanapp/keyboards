@@ -50,6 +50,7 @@ readonly KMC_BUILD_PARAMS
 #------------------------------------------------------------
 
 function do_clean() {
+  rm -f build_targets.txt build_targets_temp.txt build_external_targets.txt build_fv_all.txt build_legacy.txt
   do_clean_externals
   do_clean_targets
 }

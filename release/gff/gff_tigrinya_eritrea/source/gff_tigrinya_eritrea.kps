@@ -247,10 +247,20 @@ script languages.</Description>
       <Version>2.0.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="ti-ER">Tigrinya (Eritrea)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ti-ER" Keys="t g r N a" Text="ትግርኛ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-tir-er-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_tir_er_7" Relationship="deprecates" />
+    <RelatedPackage ID="tir_er_uni_ez" Relationship="deprecates" />
+    <RelatedPackage ID="tir-er-uni" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

@@ -106,10 +106,18 @@ use with a normal QWERTY (English) keyboard.</Description>
       <Name>சுரதா-பாமுனி | Suratha Bamini</Name>
       <ID>thamizha_bamini</ID>
       <Version>2.1</Version>
+      <WebDisplayFonts><Font Filename="aava1.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ta" Keys="j k p o ;" Text="தமிழ்" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="ekwbamuni" Relationship="deprecates" />
+    <RelatedPackage ID="thamizha bamini" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

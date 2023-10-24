@@ -204,12 +204,22 @@ convention for Ethiopic script languages.</Description>
       <Version>1.0.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="awn">Awngi</Language>
         <Language ID="xan">Xamtanga</Language>
         <Language ID="ahg">Qimant</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ahg" Keys="a K G u e" Text="አኽⶓ" Note="A very frequent Awngi word" />
+        <Example ID="awn" Keys="a K G u e" Text="አኽⶓ" Note="" />
+        <Example ID="xan" Keys="K m T a G e" Text="ኽምጣጘ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff_awn_7" Relationship="deprecates" />
+    <RelatedPackage ID="gff-awn-powerpack-7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

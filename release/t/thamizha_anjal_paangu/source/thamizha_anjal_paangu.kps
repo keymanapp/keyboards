@@ -190,10 +190,18 @@ normal QWERTY (English) keyboard.</Description>
       <Name>அஞ்சல் பாங்கு | Anjal Paangu</Name>
       <ID>thamizha_anjal_paangu</ID>
       <Version>2.1</Version>
+      <WebDisplayFonts><Font Filename="aava1.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ta" Keys="t h a m i z" Text="தமிழ்" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="ekwunitamil" Relationship="deprecates" />
+    <RelatedPackage ID="thamizha anjal" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

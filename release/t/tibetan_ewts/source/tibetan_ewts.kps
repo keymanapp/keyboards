@@ -111,6 +111,7 @@ menus for Tibetan symbols.</Description>
       <Name>Tibetan EWTS</Name>
       <ID>tibetan_ewts</ID>
       <Version>2.4</Version>
+      <WebDisplayFonts><Font Filename="DDC_Uchen.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="adi-Tibt">Adi (Tibetan)</Language>
         <Language ID="bft-Tibt">Balti (Tibetan)</Language>
@@ -146,7 +147,15 @@ menus for Tibetan symbols.</Description>
         <Language ID="zau-Tibt">Zangskari (Tibetan)</Language>
         <Language ID="ola-Tibt">Walungge (Tibetan)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="bo-Tibt" Keys="b o d space s a space space plus k space d a space" Text="བོད་སྐད" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="tibetan_ewts_to_unicode" Relationship="deprecates" />
+    <RelatedPackage ID="tibetan_unicode_ewts" Relationship="deprecates" />
+    <RelatedPackage ID="tibetan unicode ewts" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>
