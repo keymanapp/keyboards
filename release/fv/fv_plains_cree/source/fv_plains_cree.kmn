@@ -18,6 +18,9 @@ store(VowelKeys) [K_E] [K_I] [K_O] [K_A]
 store(WShortVowels) 'ᐍᐏᐓᐘ' c we wi wo wa
 store(WLongVowels) 'ᐍᐑᐕᐚ' c we wii woo waa
 
+store(KShortVowels) 'ᑫᑭᑯᑲ' c ke ki ko ka
+store(KLongVowels) 'ᑫᑮᑰᑳ' c ke kii koo kaa
+
 + 'e' > 'ᐁ'
 + 'i' > 'ᐃ'
 'ᐃ' + [K_I] > 'ᐄ' 
@@ -33,6 +36,20 @@ any(LongVowelsOnly) + [K_BKSP] > index(ShortVowelsOnly,1)
 any(WShortVowels) + any(VowelKeys) > index(WLongVowels,1)
 any(WShortVowels) + [K_BKSP] > 'ᐤ'
 any(WLongVowels) + [K_BKSP] > index(WShortVowels,1)
+
++ 'h' > 'ᐦ'
+'ᐦ' + [K_K] > 'ᐦᑫ'
+'ᐦᑫ' + any(VowelKeys) > 'ᐦ'index(KShortVowels,3)
+any(KShortVowels) + any(VowelKeys) > index(KLongVowels,1)
+any(KLongVowels) + [K_BKSP] > 'ᐦ'index(KShortVowels,1)
+'ᐦ' + [K_H] > 'ᐦ'
+
+c + 'hke' > 'ᐦᑫ' + 'hki' > 'ᐦᑭ'
+c 'ᐦᑭ' + [K_I] > 'ᐦᑮ' c hkii
+c + 'hko' > 'ᐦᑯ'
+c 'ᐦᑯ' + [K_O] > 'ᐦᑰ' c hkoo
+c + 'hka' > 'ᐦᑲ'
+c 'ᐦᑲ' + [K_A] > 'ᐦᑳ' c hkaa
 
 
 
