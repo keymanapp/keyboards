@@ -2,7 +2,8 @@ Dene Zhatıé Change History
 ============================
 10.0.2 (24 Oct 2023)
 -----------------
-*Updated touch layout file to unscramble display on help page
+* Updated touch layout file to unscramble display on help page
+* Updated name where it was missed in 10.0.1
 
 10.0.1 (17 Oct 2023)
 -----------------
