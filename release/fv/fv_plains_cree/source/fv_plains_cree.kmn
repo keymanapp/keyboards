@@ -1,13 +1,198 @@
 ﻿store(&VERSION) "10.0"
-store(&TARGETS) "mobile tablet"
-store(&COPYRIGHT) '(c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&TARGETS) 'any mobile tablet'
+store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᓀᐦᐃᔭᐍᐏᐣ'
-store(&KEYBOARDVERSION) '10.0.2'
+store(&KEYBOARDVERSION) '11.0'
 store(&LAYOUTFILE) 'fv_plains_cree.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'fv_plains_cree.kvks'
 
 begin Unicode > use(main)
 
 group(main) using keys
+
+c --- START OF DESKTOP RULES ---
++ 'e' > 'ᐁ'
++ 'i' > 'ᐃ'
+'ᐃ' + [K_I] > 'ᐄ' c ii
++ 'o' > 'ᐅ'
+'ᐅ' + [K_O] > 'ᐆ' c oo
++ 'a' > 'ᐊ'
+'ᐊ' + [K_A] > 'ᐋ' c aa
+
++ 'we' > 'ᐍ'
++ 'wi' > 'ᐏ'
+'ᐏ' + [K_I] > 'ᐑ' c wii
++ 'wo' > 'ᐓ'
+'ᐓ' + [K_O] > 'ᐕ' c woo
++ 'wa' > 'ᐘ'
+'ᐘ' + [K_A] > 'ᐚ' c waa
+
++ 't' > 'ᐟ'
++ 'k' > 'ᐠ'
++ 's' > 'ᐢ'
++ 'n' > 'ᐣ'
++ 'w' > 'ᐤ'
++ 'h' > 'ᐦ'
+
++ 'hke' > 'ᐦᑫ'
++ 'hki' > 'ᐦᑭ'
+'ᐦᑭ' + [K_I] > 'ᐦᑮ' c hkii
++ 'hko' > 'ᐦᑯ'
+'ᐦᑯ' + [K_O] > 'ᐦᑰ' c hkoo
++ 'hka' > 'ᐦᑲ'
+'ᐦᑲ' + [K_A] > 'ᐦᑳ' c hkaa
+
++ 'hkwe' > 'ᐦᑵ'
++ 'hkwi' > 'ᐦᑷ'
+'ᐦᑷ' + [K_I] > 'ᐦᑹ' c hkwii
++ 'hkwo' > 'ᐦᑻ'
+'ᐦᑻ' + [K_O] > 'ᐦᑽ' c hkwoo
++ 'hkwa' > 'ᐦᑿ'
+'ᐦᑿ' + [K_A] > 'ᐦᒁ' c hkwaa
+
++ 'x' > 'ᕽ'
++ 'c' > 'ᐨ'
++ 'y' > 'ᐩ'
+
++ 'pe' > 'ᐯ'
++ 'pi' > 'ᐱ'
+'ᐱ' + [K_I] > 'ᐲ' c pii
++ 'po' > 'ᐳ'
+'ᐳ' + [K_O] > 'ᐴ' c poo
++ 'pa' > 'ᐸ'
+'ᐸ' + [K_A] > 'ᐹ' c paa
+
++ 'pwe' > 'ᐻ'
++ 'pwi' > 'ᐽ'
+'ᐽ' + [K_I] > 'ᐿ' c pwii
++ 'pwo' > 'ᑁ'
+'ᑁ' + [K_O] > 'ᑃ' c pwoo
++ 'pwa' > 'ᑅ'
+'ᑅ' + [K_A] > 'ᑇ' c pwaa
+
++ 'p' > 'ᑊ'
+
++ 'te' > 'ᑌ'
++ 'ti' > 'ᑎ'
+'ᑎ' + [T_I] > 'ᑏ' c tii
++ 'to' > 'ᑐ'
+'ᑐ' + [T_O] > 'ᑑ' c too
++ 'ta' > 'ᑕ'
+'ᑕ' + [T_A] > 'ᑖ' c taa
+
++ 'twe' > 'ᑘ'
++ 'twi' > 'ᑚ'
+'ᑚ' + [T_I] > 'ᑜ' c twii
++ 'two' > 'ᑞ'
+'ᑞ' + [T_O] > 'ᑠ' c twoo
++ 'twa' > 'ᑢ' 
+'ᑢ' + [T_A] > 'ᑤ' c twaa
+
++ 'ke' > 'ᑫ'
++ 'ki' > 'ᑭ'
+'ᑭ' + '[K_I] > 'ᑮ' c kii
++ 'ko' > 'ᑯ'
+'ᑯ' + [K_O] > 'ᑰ' c koo
++ 'ka' > 'ᑲ'
+'ᑲ' + [K_A] > 'ᑳ' c kaa
+
++ 'kwe' > 'ᑵ'
++ 'kwi' > 'ᑷ'
+'ᑷ' + [K_I] > 'ᑹ' c kwii
++ 'kwo' > 'ᑻ'
+'ᑻ' + [K_O] > 'ᑽ' c kwoo
++ 'kwa' > 'ᑿ'
+'ᑿ' + [K_A] > 'ᒁ' c kwaa
+
++ 'ce' > 'ᒉ'
++ 'ci' > 'ᒋ'
+'ᒋ' + [T_I] > 'ᒌ' c cii
++ 'co' > 'ᒍ'
+'ᒍ' + [T_O] > 'ᒎ' c coo
++ 'ca' > 'ᒐ'
+'ᒐ' + [T_A] > 'ᒑ' c caa
+
++ 'cwe' > 'ᒓ'
++ 'cwi' > 'ᒕ'
+'ᒕ' + [T_I]' > 'ᒗ' c cwii
++ 'cwo' > 'ᒙ'
+'ᒙ' + [T_O] > 'ᒛ' c cwoo
++ 'cwa' > 'ᒝ'
+'ᒝ' + [T_A] > 'ᒟ' c cwaa
+
++ 'me' > 'ᒣ'
++ 'mi' > 'ᒥ'
+'ᒥ' + [K_I] > 'ᒦ' c mii
++ 'mo' > 'ᒧ'
+'ᒧ' + [K_O] > 'ᒨ' c moo
++ 'ma' > 'ᒪ'
+'ᒪ' + [K_A] > 'ᒫ' c maa
+
++ 'mwe' > 'ᒭ'
++ 'mwi' > 'ᒯ'
+'ᒯ' + [K_I] > 'ᒱ' c mwii
++ 'mwo' > 'ᒳ'
+'ᒳ' + [K_O] > 'ᒵ' c mwoo
++ 'mwa' > 'ᒷ'
+'ᒷ' + [K_A] > 'ᒹ' c mwaa
+
+'m' > 'ᒼ'
+
++ 'ne' > 'ᓀ'
++ 'ni' > 'ᓂ'
+'ᓂ' + [K_I] > 'ᓃ' c nii
++ 'no' > 'ᓄ'
+'ᓄ' + [K_O] > 'ᓅ' c noo
++ 'na' > 'ᓇ'
+'ᓇ' + [K_A] > 'ᒌ' c naa
+
++ 'nwe' > 'ᓊ'
++ 'nwi' > 'ᣇ'
+'ᣇ' + [K_I] > 'ᣉ' c nwii
++ 'nwo' > 'ᣋ'
+'ᣋ' + [K_O] > 'ᣍ' c nwoo
++ 'nwa' > 'ᓌ'
+'ᓌ' + [K_A] > 'ᓎ' c nwaa
+
+'l' > 'ᓯ'
+
++ 'se' > 'ᓭ'
++ 'si' > 'ᓯ'
+'ᓯ' + [K_I] > 'ᓰ' c sii
++ 'so' > 'ᓱ' 
+'ᓱ' + [K_O] > 'ᓲ' c soo
++ 'sa' > 'ᓴ' 
+'ᓴ' + [K_A] > 'ᓵ' c saa
+
++ 'swe' > 'ᓷ' 
++ 'swi' > 'ᓹ' 
+'ᓹ' + [K_I] > 'ᓻ' c swii
++ 'swo' > 'ᓽ'
+'ᓽ' + [K_O] > 'ᓿ' c swoo
++ 'swa' > 'ᔁ'
+'ᔁ' + [K_A] > 'ᔃ' c swaa
+
++ 'ye' > 'ᔦ'
++ 'yi' > 'ᔨ'
+'ᔨ' + [K_I] > 'ᔩ' c yii
++ 'yo' > 'ᔪ'
+'ᔪ' + [K_O] > 'ᔫ' c yoo
++ 'ya' > 'ᔭ'
+'ᔭ' + [K_A] > 'ᔮ' c yaa
+
++ 'ywe' > 'ᔰ'
++ 'ywi' > 'ᔲ'
+'ᔲ' + [K_I] > 'ᔴ' c ywii
++ 'ywo' > 'ᔶ'
+'ᔶ' + [K_O] > 'ᔸ' c ywoo
++ 'ywa' > 'ᔺ'
+'ᔺ' + [K_A] > 'ᔼ' c ywaa
+
+'r' > 'ᕒ'
+
+'.' > '᙮'
+
+[SHIFT K_SPACE] > U+202F
 
 
 c --- START OF TOUCH LAYOUT RULES ---
