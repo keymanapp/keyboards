@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,12 @@
     <Version URL=""></Version>
     <Name URL="">Clavier du Mali (Qwertz)</Name>
     <Copyright URL="">© 2004-2022 SIL Mali</Copyright>
+    <Description>Unicode keyboard to type all special characters needed for the languages
+of Mali on a QWERTZ (German) keyboard. CAUTION: This keyboard is not
+designed to use with a French keyboard! Clavier Unicode pour taper sur
+un clavier QWERTZ (Deutsch) tous les caractères speciaux utilisés dans
+les langues du Mali. ATTENTION : Ce clavier n'est pas conçu pour écrire
+correctement sur le clavier d'un ordinateur français !</Description>
   </Info>
   <Files>
     <File>
@@ -105,6 +112,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -149,4 +162,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="malideutsch" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

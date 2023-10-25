@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,17 @@
     <Copyright URL="">© 2006-2020 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>The Korean Morse (SIL) keyboard creates Korean hangeul from jamo each
+time you press Spacebar. The Korean Morse (SIL) keyboard is built to
+type Korean using the Morse transliteration system, also called SKATS
+(Standard Korean Alphabet Transliteration System). The Morse system is
+designed to make Latin-Korean transliteration 100% unambiguous. The
+Morse system is not based on the pronunciation of Korean, but is an
+historical system created by pairing each Korean jamo with the Latin
+letter that uses the same Morse code value. The system is used among
+government and military organisations for whom data accuracy is
+essential. For an alternative accurate transliteration system, based on
+Korean pronunciation, use the Korean KORDA keyboards.</Description>
   </Info>
   <Files>
     <File>
@@ -64,6 +76,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -76,4 +94,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="korean_morse" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

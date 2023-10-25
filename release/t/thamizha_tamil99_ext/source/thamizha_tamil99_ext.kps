@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,13 @@
     <Version URL=""></Version>
     <Name URL="">த99-விரிவு | ta99 Extended</Name>
     <Copyright URL="">© 2008-2020 thamizha.com and SIL International</Copyright>
+    <Description>This keyboard is designed for the Tamil language, and is an extension of
+the Tamil 99 standard which has been officially approved by the regional
+government of Tamil Nadu. It includes more characters on the keyboard
+than the standard Tamil99 keyboard. Typing follows a consonant-vowel
+pattern, and the Tamil characters are arranged to make typing simple and
+fast for users who are familiar with the script. It is designed for use
+with a normal QWERTY (English) keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -171,16 +179,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.gif</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>த99-விரிவு | ta99 Extended</Name>
       <ID>thamizha_tamil99_ext</ID>
       <Version>2.1</Version>
+      <WebDisplayFonts><Font Filename="aava1.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="ekwtamil99uniext" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

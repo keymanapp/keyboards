@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,7 @@
     <Copyright URL="">© 2015-2018 Enabling Languages</Copyright>
     <Author URL=""></Author>
     <WebSite URL="https://enabling-languages.github.io/dinka">https://enabling-languages.github.io/dinka</WebSite>
+    <Description>Keyboard layout for typing the Dinka language.</Description>
   </Info>
   <Files>
     <File>
@@ -77,12 +79,19 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Thuɔŋjäŋ</Name>
       <ID>el_dinka</ID>
       <Version></Version>
+      <WebDisplayFonts><Font Filename="DejaVuSans.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="din-Latn">Dinka (Latin)</Language>
         <Language ID="dip-Latn">Northeastern Dinka (Latin)</Language>
@@ -91,7 +100,19 @@
         <Language ID="dks-Latn">Southeastern Dinka (Latin)</Language>
         <Language ID="dik-Latn">Southwestern Dinka (Latin)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="din-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="dip-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="diw-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="dib-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="dks-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+        <Example ID="dik-Latn" Keys="T h u x q j a ; q" Text="Thuɔŋjäŋ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="dinkaweb11" Relationship="deprecates" />
+    <RelatedPackage ID="dlia25bas" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

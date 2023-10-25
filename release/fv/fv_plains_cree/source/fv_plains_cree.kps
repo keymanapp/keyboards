@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Copyright URL="">(c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
     <Version URL=""></Version>
+    <Description>This keyboard is designed for the ᓀᐦᐃᔭᐍᐏᐣ language of the Prairies
+region of Canada. This is part of a set of keyboards from FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -40,6 +43,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -54,4 +63,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_plains_cree_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

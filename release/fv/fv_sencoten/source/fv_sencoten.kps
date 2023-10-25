@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,9 @@
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description>This keyboard is designed for the SENĆOŦEN language of the BC Coast
+region of Canada. To type in SENĆOŦEN on Mac or PC, turn CAPS LOCK on.
+This is part of a set of keyboards from FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -131,6 +135,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -143,4 +153,9 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="sencoten_u" Relationship="deprecates" />
+    <RelatedPackage ID="salish" Relationship="deprecates" />
+    <RelatedPackage ID="fv_sencoten_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

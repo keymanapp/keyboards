@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,11 @@
     <Version URL=""></Version>
     <Name URL="">Galaxie Greek (Mnemonic)</Name>
     <Copyright URL="">© 2004-2021 Galaxie Software and SIL International</Copyright>
+    <Description>This Keyman keyboard is designed for Koine Greek, a trade language of
+the ancient Mediterranean and the language of the Septuagint and New
+Testament Scriptures. It is a mnemonic keyboard. This means that the
+arrangement of the letters in the Keyman keyboard will depend on the
+order of the keys on your hardware layout.</Description>
   </Info>
   <Files>
     <File>
@@ -57,6 +63,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -70,4 +82,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiebiblescriptmnemonic" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

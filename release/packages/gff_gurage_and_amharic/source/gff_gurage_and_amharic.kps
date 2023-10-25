@@ -10,6 +10,7 @@
     <GraphicFile>..\..\..\gff\gff_gurage\source\sideimage-gurage.bmp</GraphicFile>
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>ጉራጌ (Gurage)</Folder>
@@ -65,6 +66,7 @@
     <Copyright URL="">© 2019-2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
+    <Description>This package provides both the GFF Gurage and Amharic keyboards.</Description>
   </Info>
   <Files>
     <File>
@@ -211,6 +213,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -222,7 +230,10 @@
       <Languages>
         <Language ID="sgw">Sebat Bet Gurage</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;" />
+      </Examples>
+  </Keyboard>
     <Keyboard>
       <Name>አማርኛ (Amharic)</Name>
       <ID>gff_amharic</ID>

@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Amharic Keyboard</Folder>
@@ -58,6 +59,9 @@
     <Name URL="">GFF Amharic Keyboard</Name>
     <Copyright URL="">Creative Commons Attribution 3.0</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Description>This is an Amharic (amh, አማርኛ) language mnemonic input method. It
+requires a font supporting Ethiopic script under the Unicode 4.1
+standard.</Description>
   </Info>
   <Files>
     <File>
@@ -198,16 +202,29 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Amharic</Name>
       <ID>gff_amh_7</ID>
       <Version>1.5.1</Version>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="am">Amharic</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-amh-7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

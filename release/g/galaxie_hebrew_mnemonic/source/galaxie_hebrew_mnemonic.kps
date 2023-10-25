@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,6 +19,11 @@
   <Info>
     <Name URL="">Galaxie Hebrew (Mnemonic)</Name>
     <Copyright URL="">© 2004-2021 Galaxie Software and SIL International</Copyright>
+    <Description>This keyboard is designed for Biblical Hebrew, a Semitic language of the
+ancient Near East and the language of the Hebrew Bible. It is a mnemonic
+Keyman keyboard. This means that the arrangement of the letters in the
+Keyman keyboard will depend on the order of the keys on your hardware
+layout.</Description>
   </Info>
   <Files>
     <File>
@@ -50,6 +56,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -63,4 +75,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiebiblescriptmnemonic" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

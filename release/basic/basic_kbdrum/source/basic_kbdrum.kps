@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Copyright URL="">© 2019-2021 SIL International</Copyright>
     <Author URL="">Makara SOK</Author>
     <Version URL=""></Version>
+    <Description>Russian - Mnemonic Basic based on Microsoft\'s Russian - Mnemonic
+keyboard</Description>
   </Info>
   <Files>
     <File>
@@ -82,6 +85,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -91,7 +100,10 @@
       <Languages>
         <Language ID="ru">Russian</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ru" Keys="r u s s k i j space space q z y k" Text="русский язык" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

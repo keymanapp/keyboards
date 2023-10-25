@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,11 @@
     <Copyright URL="">© Cibu C. J.</Copyright>
     <Author URL="mailto:cibucj@gmail.com">Cibu C. J.</Author>
     <WebSite URL="https://sites.google.com/site/cibu/mozhi2">https://sites.google.com/site/cibu/mozhi2</WebSite>
+    <Description>Mozhi Malayalam Keyboard based on the Mozhi Spec 2.0. Transliteration
+scheme was originally developed for Varamozhi Application. It uses a
+unique English character sequence for each Malayalam letter. Please
+visit [Mozhi Spec](https://sites.google.com/site/cibu/mozhi2) for more
+information.</Description>
   </Info>
   <Files>
     <File>
@@ -77,6 +83,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -86,7 +98,16 @@
       <Languages>
         <Language ID="ml">Malayalam</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ml" Keys="m a l a y a a L a m" Text="മലയാളം" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="mozhi" Relationship="deprecates" />
+    <RelatedPackage ID="mozhi_1_1_0" Relationship="deprecates" />
+    <RelatedPackage ID="mozhi_5_1" Relationship="deprecates" />
+    <RelatedPackage ID="mozhi51" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

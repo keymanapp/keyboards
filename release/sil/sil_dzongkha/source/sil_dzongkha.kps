@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,10 @@
     <Version URL=""></Version>
     <Name URL="">Dzongkha (SIL)</Name>
     <Copyright URL="">© 2012-2018 SIL International</Copyright>
+    <Description>This keyboard is designed for the Dzongkha language of Bhutan. The
+keyboard follows the current (October 2009) official Dzongkha layout
+approved by the Department of Information Technology and Dzongkha
+Development Authority of the Government of Bhutan.</Description>
   </Info>
   <Files>
     <File>
@@ -51,6 +56,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -65,4 +76,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="dzongkha" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

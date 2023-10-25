@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,9 @@
     <Version URL="">2.2</Version>
     <Name URL="">Galaxie Greek (Phonetic)</Name>
     <Copyright URL="">Copyright 2004-2018 Galaxie Software and SIL International</Copyright>
+    <Description>This keyboard layout is designed for Koine Greek, a trade language of
+the ancient Mediterranean and the language of the New Testament and
+Septuagint Scriptures.</Description>
   </Info>
   <Files>
     <File>
@@ -63,17 +67,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Galaxie Greek (Phonetic)</Name>
       <ID>galaxie_greek_positional</ID>
       <Version>1.0</Version>
+      <WebDisplayFonts><Font Filename="GentiumPlus-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
         <Language ID="el">Modern Greek (1453-)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="grc-Grek" Keys="e ] d a v k r u s e n space o [ space I ] h s o u ~ s space" Text="ἐδάκρυσεν ὁ Ἰησοῦς " Note="&quot;Jesus wept&quot;, John 11:35; note final sigma entered using s then spacebar" />
+        <Example ID="el" Keys="e d a k r u s e n space o space I h s o u s space" Text="εδακρυσεν ο Ιησους " Note="&quot;Jesus wept&quot;, John 11:35; note final sigma entered using s then spacebar" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiegreekandhebrew" Relationship="deprecates" />
+    <RelatedPackage ID="galaxiegreekkm6" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

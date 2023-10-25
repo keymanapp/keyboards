@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Polish (214) Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Polish (214) Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -69,6 +71,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -78,7 +86,15 @@
       <Languages>
         <Language ID="pl">Polish</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="pl" Keys="k o ] c i \\ ;" Text="kościół" Note="&quot;Church&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="polish" Relationship="deprecates" />
+    <RelatedPackage ID="polish_214" Relationship="deprecates" />
+    <RelatedPackage ID="kbdpl" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

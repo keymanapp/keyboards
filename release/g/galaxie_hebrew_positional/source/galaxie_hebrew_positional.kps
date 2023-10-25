@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,6 +19,8 @@
   <Info>
     <Name URL="">Galaxie Hebrew (Positional)</Name>
     <Copyright URL="">2004-2018 Galaxie Software and SIL International</Copyright>
+    <Description>This keyboard is designed for Biblical Hebrew, a Semitic language of the
+ancient Near East and the language of the Hebrew Bible</Description>
   </Info>
   <Files>
     <File>
@@ -50,6 +53,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -60,7 +69,14 @@
         <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
         <Language ID="he">Hebrew</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="hbo-Hebr" Keys="b \\ = r @ a v ! y t" Text="בְּרֵאשִׁית" Note="&quot;In the beginning&quot; or &quot;Genesis&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiegreekandhebrew" Relationship="deprecates" />
+    <RelatedPackage ID="galaxiehebrewkm6" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

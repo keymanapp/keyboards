@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Wakhi</Folder>
@@ -30,6 +31,11 @@
     <Name URL="">Rachitrali-Wakhi</Name>
     <Copyright URL="">© 2018 Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan</Author>
+    <Description>This keyboard was developed for keyboarding the Wakhi language in the
+Arabic Script. You can use this keyboard with any extended Arabic script
+Unicode font. If you have problems using the RAChitrali-Wakhi Keyman
+keyboard, please contact: Rehmat Aziz Chitrali E-mail:
+rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -122,6 +128,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -133,7 +145,10 @@
       <Languages>
         <Language ID="wbl-Arab">Wakhi (Arabic)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="wbl-Arab" Keys="w K i space" Text="وخی" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

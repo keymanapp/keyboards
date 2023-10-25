@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Version URL=""></Version>
     <Name URL="">Rawang</Name>
     <Copyright URL="">© 2007-2021 R.James</Copyright>
+    <Description>This keyboard is intended for the Rawang language of Myanmar and India.
+The keyboard is designed to be used with a standard (QWERTY) keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -69,6 +72,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -81,4 +90,8 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="rawangu" Relationship="deprecates" />
+    <RelatedPackage ID="rawangu7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

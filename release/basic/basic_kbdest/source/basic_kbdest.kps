@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,10 @@
     <Name URL="">Estonian Basic</Name>
     <Copyright URL="">(c) 2009-2020 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>This keyboard layout is designed for Estonian. It includes an on screen
+keyboard which can be viewed by clicking on the Keyman icon and
+selecting the On Screen Keyboard menu item. The keyboard layout follows
+the Windows 10 Estonian layout.</Description>
   </Info>
   <Files>
     <File>
@@ -75,6 +80,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -84,7 +95,14 @@
       <Languages>
         <Language ID="et">Estonian</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="et" Keys="T a e v a n i space t ] u s t e s space [ l e s" Text="Taevani tõustes üles" Note="&quot;Rising up to the heavens&quot;, a line from Estonian poetry" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="estonian" Relationship="deprecates" />
+    <RelatedPackage ID="kbdest" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

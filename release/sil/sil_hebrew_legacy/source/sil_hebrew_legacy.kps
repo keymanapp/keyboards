@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,9 @@
     <Version URL=""></Version>
     <Name URL="">Hebrew Legacy (SIL)</Name>
     <Copyright URL="">Copyright © 2003-2021 SIL International</Copyright>
+    <Description>This keyboard is designed for Biblical Hebrew. It reverts the input
+behavior for holam and holam haser to an earlier version of the official
+Hebrew (SIL) keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -111,6 +115,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -126,4 +136,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="sil_hebrew" />
+  </RelatedPackages>
 </Package>

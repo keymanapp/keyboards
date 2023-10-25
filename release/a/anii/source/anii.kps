@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,16 @@
     <Copyright URL="">© 2015-2020 Martin Zaske</Copyright>
     <Author URL="">Martin Zaske</Author>
     <Version URL=""></Version>
+    <Description>Welcome This keyboard is purpose made for writing the Anii language
+(code BLO) as it is spoken in Benin and Togo, namely at Afem,
+Agéréndébou, Balanka, Bassila, Bayakʊ, Bodi, Dengou, Frignion,
+Guiguisso, Kodowari, Kouloumi, Mboroko, Melan, Nagayilé, Nandjoubi,
+Pénessoulou, Pénélan, Saramanga, Yari This keyboard works best, when
+used on a French keyboard (hardware) as its layout follows the French
+layout for most characters. This keyboard also works great as an
+on-screen keyboard for clicking (for example on websites) and not least
+as a touch-keyboard on Android and iOS devices (tablets and smartphones,
+landscape and portraid mode).</Description>
   </Info>
   <Files>
     <File>
@@ -106,6 +117,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -118,4 +135,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="anii_2015_fr_pack2" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

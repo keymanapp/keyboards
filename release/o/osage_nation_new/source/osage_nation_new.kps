@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,11 @@
     <Version URL=""></Version>
     <Copyright URL="">© 2018-2023 Osage Nation</Copyright>
     <Author URL=""></Author>
+    <Description>This is a keyboard for typing the Osage language in the Osage script.
+This keyboard layout was developed on behalf of the Osage Nation
+Language Department with the intention of replacing previous layouts
+(partially for reasons pertaining to orthography reforms that have been
+carried since the last Osage keyboard was developed.)</Description>
   </Info>
   <Files>
     <File>
@@ -70,6 +76,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -84,4 +96,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="osage_nation" />
+  </RelatedPackages>
 </Package>

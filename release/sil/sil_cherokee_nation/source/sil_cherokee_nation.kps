@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Name URL="">Cherokee Nation (SIL)</Name>
     <Copyright URL="">© 2012-2020 SIL International</Copyright>
     <WebSite URL="https://keyman.com/keyboards/sil_cherokee_nation">https://keyman.com/keyboards/sil_cherokee_nation</WebSite>
+    <Description>A Cherokee Unicode keyboard following the official Cherokee Nation
+layout.</Description>
   </Info>
   <Files>
     <File>
@@ -88,6 +91,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -102,4 +111,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="cherokee_nation" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

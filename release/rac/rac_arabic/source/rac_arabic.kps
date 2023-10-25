@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Arabic</Folder>
@@ -31,6 +32,12 @@
     <Version URL=""></Version>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <WebSite URL="help.keyman.com/keyboard/rac_arabic">help.keyman.com/keyboard/rac_arabic</WebSite>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Pakistan for keyboarding the Arabic
+Language in the Arabic Script. You can use this keyboard with any
+extended Arabic script Unicode font. If you have problems using the
+RAChitrali-Arabic Keyman Keyboard, please contact: Rehmat Aziz Chitrali
+E-mail: rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -123,6 +130,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -135,7 +148,10 @@
       <Languages>
         <Language ID="arb-Arab">Standard Arabic (Arabic)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="arb-Arab" Keys="e r b i" Text="عربی" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

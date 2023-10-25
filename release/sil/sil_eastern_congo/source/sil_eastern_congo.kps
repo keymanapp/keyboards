@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Version URL=""></Version>
     <Name URL="">Eastern Congo</Name>
     <Copyright URL="">© 2005-2021 SIL International</Copyright>
+    <Description>Eastern Congo keyboard for languages of the Democratic Republic of the
+Congo.</Description>
   </Info>
   <Files>
     <File>
@@ -110,6 +113,12 @@
       <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -225,4 +234,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="ecgunicode" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

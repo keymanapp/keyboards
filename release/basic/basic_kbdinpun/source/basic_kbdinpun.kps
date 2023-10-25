@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Name URL="">Punjabi Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Punjabi Basic generated from template. This keyboard matches the
+Inscript layout.</Description>
   </Info>
   <Files>
     <File>
@@ -81,6 +84,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -90,7 +99,15 @@
       <Languages>
         <Language ID="pa">Panjabi</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="pa" Keys="h x p e y r" Text="ਪੰਜਾਬੀ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="punjabi_kab" Relationship="deprecates" />
+    <RelatedPackage ID="punjabi" Relationship="deprecates" />
+    <RelatedPackage ID="kbdinpun" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

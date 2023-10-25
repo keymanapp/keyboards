@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,12 @@
     <Version URL=""></Version>
     <Name URL="">அஞ்சல் பாங்கு | Anjal Paangu</Name>
     <Copyright URL="">© 2008-2020 thamizha.com and SIL International</Copyright>
+    <Description>This keyboard is designed for the Tamil language. It is a phonetic
+keyboard, which means the Tamil characters are arranged according to the
+letters of the English keyboard. This makes it easy to use for people
+learning Tamil, as well as Tamil speakers. Typing follows a
+consonant-vowel pattern, and the keyboard is designed for use with a
+normal QWERTY (English) keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -171,16 +178,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.gif</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>அஞ்சல் பாங்கு | Anjal Paangu</Name>
       <ID>thamizha_anjal_paangu</ID>
       <Version>2.1</Version>
+      <WebDisplayFonts><Font Filename="aava1.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ta" Keys="t h a m i z" Text="தமிழ்" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="ekwunitamil" Relationship="deprecates" />
+    <RelatedPackage ID="thamizha anjal" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

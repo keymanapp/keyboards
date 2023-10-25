@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,13 @@
     <Name URL="">Pan Africa Mnemonic (SIL)</Name>
     <Copyright URL="">© 2003-2018 SIL International.</Copyright>
     <WebSite URL="https://keyman.com/keyboards/sil_pan_africa_mnemonic">https://keyman.com/keyboards/sil_pan_africa_mnemonic</WebSite>
+    <Description>This is the mnemonic version of the Pan Africa (SIL) keyboard. It
+features a layout that adjusts to the arrangement of keys on your
+hardware keyboard. This keyboard was developed to type the Latin-script
+languages of Africa. An attempt was made to cover the orthographic needs
+for SIL in many of the countries of Africa, but this cannot be
+considered a complete list, nor should it be considered an endorsement
+for this particular layout.</Description>
   </Info>
   <Files>
     <File>
@@ -57,6 +65,12 @@
       <Description>Keyboard Pan Africa Mnemonic (SIL)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -98,4 +112,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="africadeadkey" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Version URL=""></Version>
     <Name URL="">Dari (CLRA)</Name>
     <Copyright URL="">© Enabling Languages</Copyright>
+    <Description>This keyboard is designed for use with the Dari language of Afghanistan
+and other regions in South Asia.</Description>
   </Info>
   <Files>
     <File>
@@ -63,6 +66,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -74,7 +83,15 @@
         <Language ID="pes">Iranian Persian</Language>
         <Language ID="fa">Persian</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="prs" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;" />
+        <Example ID="pes" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;" />
+        <Example ID="fa" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="dari_clra" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

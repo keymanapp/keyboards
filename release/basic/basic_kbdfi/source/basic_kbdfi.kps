@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,10 @@
     <Name URL="">Finnish Basic</Name>
     <Copyright URL="">(c) 2009-2020 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>This keyboard layout is designed for Finnish. It includes an on screen
+keyboard which can be viewed by clicking on the Keyman icon and
+selecting the On Screen Keyboard menu item. The keyboard layout follows
+the Windows 10 Finnish layout.</Description>
   </Info>
   <Files>
     <File>
@@ -69,6 +74,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -78,7 +89,14 @@
       <Languages>
         <Language ID="fi">Finnish</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="fi" Keys="H y v ' ' space y ; t '" Text="Hyvää yötä" Note="&quot;Good night&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="finnish" Relationship="deprecates" />
+    <RelatedPackage ID="kbdfi" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

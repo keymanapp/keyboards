@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Version URL=""></Version>
     <Name URL="">Lao 2008 Rapid</Name>
     <Copyright URL="">© 2008-2021 John Durdin</Copyright>
+    <Description>This keyboard uses the official Lao standard layout. The keyboard also
+automatically inserts (hidden) break characters at syllable boundaries.</Description>
   </Info>
   <Files>
     <File>
@@ -87,6 +90,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -101,4 +110,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="lao 2008" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Tibetan Unicode EWTS</Folder>
@@ -36,6 +37,12 @@
     <Version URL="">2.4</Version>
     <Copyright URL="">© 2003-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Tibetan Unicode EWTS is based on the Extended Wylie Transliteration
+Scheme (EWTS), an approach to typing Tibetan which avoids most Shift,
+Alt, and Alt+Shift combinations. Tibetan characters are created from
+EWTS -transliteration each time you type a vowel or a Space (tsheg).
+Special rules apply for long-stacks. This keyboard also features special
+menus for Tibetan symbols.</Description>
   </Info>
   <Files>
     <File>
@@ -92,12 +99,19 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tibetan EWTS</Name>
       <ID>tibetan_ewts</ID>
       <Version>2.4</Version>
+      <WebDisplayFonts><Font Filename="DDC_Uchen.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="adi-Tibt">Adi (Tibetan)</Language>
         <Language ID="bft-Tibt">Balti (Tibetan)</Language>
@@ -133,7 +147,15 @@
         <Language ID="zau-Tibt">Zangskari (Tibetan)</Language>
         <Language ID="ola-Tibt">Walungge (Tibetan)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="bo-Tibt" Keys="b o d space s a space space plus k space d a space" Text="བོད་སྐད" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="tibetan_ewts_to_unicode" Relationship="deprecates" />
+    <RelatedPackage ID="tibetan_unicode_ewts" Relationship="deprecates" />
+    <RelatedPackage ID="tibetan unicode ewts" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

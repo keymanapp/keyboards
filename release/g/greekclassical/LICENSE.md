@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-(c) 2003-2020 Manuel A. Lopez and SIL International
+Copyright © 2003-2020 Manuel A. Lopez and SIL International
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

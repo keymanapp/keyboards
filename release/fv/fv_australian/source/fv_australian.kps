@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,9 @@
     <Name URL="">Australian</Name>
     <Version URL=""></Version>
     <Copyright URL="">© 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Description>Keyboard layout for typing Australian Aboriginal languages which use the
+diaeresis, combining underline, and eng. This is part of a set of
+keyboards from FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -32,6 +36,12 @@
       <Description>File fv_australian.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -48,4 +58,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_australian_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

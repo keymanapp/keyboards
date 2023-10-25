@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,10 @@
     <Version URL=""></Version>
     <Name URL="">Tamil Modular (Visual Media)</Name>
     <Copyright URL="">© 2008-2020 Visual Media and SIL International</Copyright>
+    <Description>This keyboard is designed for the Tamil language and is similar in
+concept to the Tamil typewriter layout. The keyboard is designed for
+users who are familiar with both this layout and the Tamil script, and
+is intended for use with a normal QWERTY (English) keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -69,16 +74,29 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tamil Modular (Visual Media)</Name>
       <ID>vm_tamil_modular</ID>
       <Version>1.1</Version>
+      <WebDisplayFonts><Font Filename="aava1.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ta" Keys="y e h x f" Text="தமிழ்" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="visual_media_tamil_modular" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

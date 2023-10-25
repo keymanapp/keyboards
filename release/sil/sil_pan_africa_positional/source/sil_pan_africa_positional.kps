@@ -9,6 +9,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,6 +19,18 @@
     <Name URL="">Pan Africa Positional (SIL)</Name>
     <Version URL=""></Version>
     <Copyright URL="">© 2003-2019 SIL International</Copyright>
+    <Description>This is the positional version of the Pan Africa (SIL) keyboard. This is
+the positional version of the Pan Africa (SIL) keyboard. The keyboard
+layout was designed to work with a QWERTY US English keyboard. For a
+keyboard that is not dependent on a particular hardware keyboard, use
+\'Pan Africa Mnemonic (SIL).\' This keyboard was developed to type the
+Latin-script languages of Africa. An attempt was made to cover the
+orthographic needs for SIL in many of the countries of Africa, but this
+cannot be considered a complete list, nor should it be considered an
+endorsement for this particular layout. Known Issues: A few of the
+virtual keys in this keyboard, such as \'RALT O\' may be used by other
+applications, and you may not be able to use that keystroke. In those
+cases, use the alternate keystroke (in this case \'\[O\' ).</Description>
   </Info>
   <Files>
     <File>
@@ -55,6 +68,12 @@
       <Description>Keyboard Pan Africa Positional (SIL)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -96,4 +115,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="africaus" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

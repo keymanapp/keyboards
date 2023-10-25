@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Version URL=""></Version>
     <Name URL="">Yorùbá with Bar</Name>
     <Copyright URL="">© 2012-2020 SIL International</Copyright>
+    <Description>Yorùbá with Bar is a simple Unicode keyboard for the Yorùbá language,
+using the traditional bar under the letters e̩, o̩, and s̩.</Description>
   </Info>
   <Files>
     <File>
@@ -75,6 +78,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -84,7 +93,13 @@
       <Languages>
         <Language ID="yo-Latn">Yoruba (Latin)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="yo-Latn" Keys="space X j x ] space I [ z v ] g u n . space Q x | q x | ." Text="O̩jó̩ Ìs̩é̩gun. GBō̩gbō̩" Note="&quot;Tuesday. All.&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="yorubabar" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

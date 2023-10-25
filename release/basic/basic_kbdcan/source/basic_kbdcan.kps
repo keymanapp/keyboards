@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,7 @@
     <Copyright URL="">© 2014-2022 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>This keyboard layout is based on the keyboard layout from Windows 10.</Description>
   </Info>
   <Files>
     <File>
@@ -82,6 +84,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -92,7 +100,14 @@
         <Language ID="fr-CA">French (Canada)</Language>
         <Language ID="fr">French</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="fr" Keys="Q u / b e c" Text="Québec" Note="Province of Canada" />
+        <Example ID="fr-ca" Keys="Q u / b e c" Text="Québec" Note="Province of Canada" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="canadian_ms" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

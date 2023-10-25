@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Burushaski</Folder>
@@ -20,6 +21,9 @@
     <Name URL="">Rachitrali-Burushaski</Name>
     <Copyright URL="">© 2017-2020 Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Pakistan for keyboarding the
+Burushaski language in the Arabic Script.</Description>
   </Info>
   <Files>
     <File>
@@ -94,6 +98,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -104,7 +114,10 @@
       <Languages>
         <Language ID="bsk-Arab">Burushaski</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="bsk-Arab" Keys="b r w x s k i" Text="بروشسکی" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

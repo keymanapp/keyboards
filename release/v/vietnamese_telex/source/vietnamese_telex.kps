@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -31,6 +32,13 @@
     <Author URL="mailto:info@miketvo.com">Mike Vo</Author>
     <Version URL=""></Version>
     <WebSite URL="https://miketvo.com">https://miketvo.com</WebSite>
+    <Description>Telex or TELEX (Vietnamese: Quốc ngữ điện tín, lit. \'national language
+telex\'), is a convention for encoding Vietnamese text in plain ASCII
+characters. Originally used for transmitting Vietnamese text over telex
+systems, it is one of the most used input method on phones and
+touchscreens and also computers. Vietnamese Morse code uses the TELEX
+system. In 1993, the use of Telex as an input method was standardized in
+Vietnam as part of TCVN 5712.</Description>
   </Info>
   <Files>
     <File>
@@ -129,6 +137,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -143,4 +157,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="vietnamese_telex_legacy" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

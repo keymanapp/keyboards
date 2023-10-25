@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,11 @@
     <Copyright URL="">2019-2022 © Ramesh Kunnappully [MIT License]</Copyright>
     <Author URL="mailto:ramesh1@protonmail.com">Ramesh Kunnappully</Author>
     <Version URL=""></Version>
+    <Description>**Malar Malayalam Inscript** Keyboard is a customized version of the
+Malayalam Inscript keyboard. This keyboard supports all Malayalam
+characters encoded as per the Unicode Standard, Version 14.0.
+
+-   [Keyboard Demo](https://malarproject.gitlab.io/ml-inscript/)</Description>
   </Info>
   <Files>
     <File>
@@ -101,6 +107,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -110,7 +122,13 @@
       <Languages>
         <Language ID="ml">Malayalam</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ml" Keys="c n / e N x" Text="മലയാളം" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="malayalam_kab" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

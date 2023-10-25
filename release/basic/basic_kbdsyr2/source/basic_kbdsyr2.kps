@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Syriac Phonetic Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Syriac Phonetic Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -69,6 +71,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -78,7 +86,14 @@
       <Languages>
         <Language ID="cld-Syrc-IQ">Chaldean Neo-Aramaic</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="syc-Syrc" Keys="l v n a space s w r y y a" Text="ܠܫܢܐ ܣܘܪܝܝܐ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="syriac_phon" Relationship="deprecates" />
+    <RelatedPackage ID="kbdsyr2" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

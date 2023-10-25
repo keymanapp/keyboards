@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-©2020 Pingelap Bible Translation Organization
+Copyright ©2020 Pingelap Bible Translation Organization
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

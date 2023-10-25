@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,7 @@
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://keyman.com/keyboards/sil_busa">https://keyman.com/keyboards/sil_busa</WebSite>
+    <Description>A keyboard designed for Busa, Bokobaru and Boko languages in Africa.</Description>
   </Info>
   <Files>
     <File>
@@ -125,6 +127,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -142,4 +150,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="busau" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

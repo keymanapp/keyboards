@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2017-2022 Bill Jancewicz
+Copyright © 2017-2022 Bill Jancewicz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

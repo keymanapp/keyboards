@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,7 @@
     <Copyright URL="">© 2015-2018 Enabling Languages</Copyright>
     <Author URL=""></Author>
     <WebSite URL="https://enabling-languages.github.io/nuer">https://enabling-languages.github.io/nuer</WebSite>
+    <Description>This keyboard provides input mapping for typing Nuer.</Description>
   </Info>
   <Files>
     <File>
@@ -77,6 +79,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -89,4 +97,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="nuer13" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

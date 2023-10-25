@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Tibetan Unicode Direct Input</Folder>
@@ -36,6 +37,10 @@
     <Version URL=""></Version>
     <Copyright URL="">© 2003-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Tibetan Direct Input is designed to type all Tibetan characters and
+stacks directly, without any Alt or transliteration+Space combinations.
+The keyboard types in a phonetic style based on the English (QWERTY)
+layout.</Description>
   </Info>
   <Files>
     <File>
@@ -92,12 +97,19 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tibetan Direct Input</Name>
       <ID>tibetan_direct_input</ID>
       <Version>1.0</Version>
+      <WebDisplayFonts><Font Filename="DDC_Uchen.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="dz">Dzongkha</Language>
         <Language ID="bo-Tibt">Tibetan (Tibetan)</Language>
@@ -131,7 +143,16 @@
         <Language ID="ola-Tibt">Walungge (Tibetan)</Language>
         <Language ID="zau-Tibt">Zangskari (Tibetan)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="dz" Keys="r J * o , space [" Text="རྫོང་ཁ" Note="Name of language" />
+        <Example ID="bo-Tibt" Keys="b o d space s a space space plus k space d a space" Text="བོད་སྐད" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="tibetan_unicode_direct_input" Relationship="deprecates" />
+    <RelatedPackage ID="tibetan_direct_unicode" Relationship="deprecates" />
+    <RelatedPackage ID="tibetan unicode direct input" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

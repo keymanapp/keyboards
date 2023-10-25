@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Amharic Keyboard</Folder>
@@ -66,6 +67,8 @@
     <Version URL=""></Version>
     <Copyright URL="">© 1997-2020 Ge'ez Frontier Foundation, SIL International</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Description>This is an Amharic (amh, አማርኛ) language mnemonic input method for mobile
+platforms based on a US-QWERTY layout.</Description>
   </Info>
   <Files>
     <File>
@@ -206,6 +209,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -214,10 +223,17 @@
       <Version>2.0</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="am">Amharic</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff_amharic" />
+  </RelatedPackages>
 </Package>

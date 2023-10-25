@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Thai Pattachote Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Thai Pattachote Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -63,6 +65,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -72,7 +80,14 @@
       <Languages>
         <Language ID="th">Thai</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="th" Keys="V j T j ; s e" Text="ภาษาไทย" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="thai_pattachote" Relationship="deprecates" />
+    <RelatedPackage ID="kbdth1" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

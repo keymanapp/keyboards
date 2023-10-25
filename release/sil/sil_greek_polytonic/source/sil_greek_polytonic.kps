@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Version URL=""></Version>
     <Name URL="">Polytonic Greek (SIL)</Name>
     <Copyright URL="">(c) 2002-2019 SIL International</Copyright>
+    <Description>Greek keyboard layout supporting Polytonic Greek, using precomposed
+characters.</Description>
   </Info>
   <Files>
     <File>
@@ -63,12 +66,19 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Polytonic Greek (SIL)</Name>
       <ID>sil_greek_polytonic</ID>
       <Version>1.5</Version>
+      <WebDisplayFonts><Font Filename="GentiumPlus-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
         <Language ID="el">Modern Greek (1453-)</Language>
@@ -76,4 +86,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="grkpolycompv103" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

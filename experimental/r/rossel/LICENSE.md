@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2004 - 2022 Jim Henderson
+Copyright © 2004 - 2022 Jim Henderson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

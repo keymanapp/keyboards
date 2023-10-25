@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,19 @@
     <Version URL=""></Version>
     <Name URL="">EuroLatin (SIL)</Name>
     <Copyright URL="">Copyright (c) SIL International</Copyright>
+    <Description>The EuroLatin keyboard enables you to type in all European languages
+which use Latin-script, and most Latin-script languages from the rest of
+the world. If you need a simple solution for typing multiple
+Latin-script languages from the same keyboard, this keyboard was
+designed for you.\
+\
+The EuroLatin keyboard is ideal for:
+
+-   Home-users who occasionally type or web browse in several languages
+-   Professional translators
+-   Scholars and agencies working with multiple European languages
+-   Libraries running multilingual databases
+-   Anyone who frequently types in more than one Latin-script language</Description>
   </Info>
   <Files>
     <File>
@@ -140,6 +154,12 @@
       <Description>File LICENSE.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -518,4 +538,8 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="european" Relationship="deprecates" />
+    <RelatedPackage ID="european2" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

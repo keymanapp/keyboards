@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,9 @@
     <Version URL=""></Version>
     <Name URL="">Multi Pak Phonetic</Name>
     <Copyright URL="">(c) 2007-2019 Zeeshan Hyder</Copyright>
+    <Description>This package includes a phonetic keyboard called Multi Pak Phonetic and
+the font Pak Nastaleeq designed for the following languages: Balochi,
+Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu.</Description>
   </Info>
   <Files>
     <File>
@@ -99,6 +103,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -119,4 +129,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="multi pak" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,6 +23,7 @@
     <Author URL="mailto:tisarukhan@gmail.com">Tigran Sarukhanyan</Author>
     <Version URL=""></Version>
     <WebSite URL="https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md">https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md</WebSite>
+    <Description>Russian Mnemonic R keyboard layout</Description>
   </Info>
   <Files>
     <File>
@@ -126,6 +128,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -135,7 +143,10 @@
       <Languages>
         <Language ID="ru">Russian</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ru" Keys="R u s s k i j space space q z y k" Text="Русский язык" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

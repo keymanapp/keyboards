@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Keyboard Indonesia\Jawa</Folder>
@@ -45,6 +46,11 @@
     <Copyright URL="">© 2019-2021 Benny Lin</Copyright>
     <Author URL="">Benny Lin</Author>
     <WebSite URL="https://bennylin.github.io/">https://bennylin.github.io/</WebSite>
+    <Description>This keyboard is designed to type all Javanese characters and stacks
+directly. You get a Javanese character every time you press a Latin key,
+without having to use the Alt key or memorizing arbitrary key locations
+in QWERTY keyboard. This keyboard is based on Benny Lin\'s Nulisa Aksara
+Jawa web transliterator program - http://is.gd/nulisa.</Description>
   </Info>
   <Files>
     <File>
@@ -95,6 +101,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -113,7 +125,17 @@
         <Language ID="osi-Java">Osing (Aksara Jawa)</Language>
         <Language ID="tes-Java">Tengger (Aksara Jawa)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="id-Java" Keys="b a h a s a I n d o n e s i a" Text="ꦧꦲꦱ‌ꦆꦤ꧀ꦢꦺꦴꦤꦺꦱꦶꦪꦴ" Note="Name of the language" />
+        <Example ID="jv-Java" Keys="a k s a r a j a w a" Text="ꦲꦏ꧀ꦱꦫꦗꦮ" Note="Name of writing script" />
+        <Example ID="kaw-Java" Keys="k a w i" Text="ꦏꦮꦶ" Note="Name of the language" />
+        <Example ID="mad-Java" Keys="m a d u r a" Text="ꦩꦢꦸꦫ" Note="Name of the language" />
+        <Example ID="sas-Java" Keys="s a s a k" Text="ꦱꦱꦏ꧀" Note="Name of the language" />
+        <Example ID="su-Java" Keys="s u n d a" Text="ꦱꦸꦤ꧀ꦢ" Note="Name of the language" />
+        <Example ID="osi-Java" Keys="o s i n g" Text="ꦲꦺꦴꦱꦶꦁ" Note="Name of the language" />
+        <Example ID="tes-Java" Keys="t e n g g e r" Text="ꦠꦺꦁꦒꦺꦂ" Note="Name of the language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>
