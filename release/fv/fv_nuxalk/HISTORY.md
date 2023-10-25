@@ -2,7 +2,7 @@ Nuxalk Change History
 ============================
 9.1.1 (25 Oct 2023)
 -----------------
-* Unscrambled mobile layout
+* Changed order of mobile layers to unscramble display on help page
 
 9.1 (26 Oct 2018)
 -----------------
