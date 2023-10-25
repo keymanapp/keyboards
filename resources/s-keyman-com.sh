@@ -154,7 +154,7 @@ function commit_and_push {
   echo "committed keyboards and fonts to '$branch'"
   git commit -m "auto: Keyboard and font deployment" || return 1
   git push origin $branch || return 1
-  echo "Push to help.keyman.com complete"
+  echo "Push to s.keyman.com complete"
 
   hub pull-request -f --no-edit -l auto || return 1
   echo "PR created"
