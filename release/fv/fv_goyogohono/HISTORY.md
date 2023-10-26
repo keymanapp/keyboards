@@ -1,5 +1,8 @@
 Goyogo̱hó:nǫ' Change History
 ============================
+9.2.1 (26 Oct 2023)
+----------------
+* Changed order of mobile layers to unscramble display on help page
 
 9.2 (9 May 2019)
 ----------------
