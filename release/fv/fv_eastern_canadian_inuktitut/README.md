@@ -1,7 +1,7 @@
 ᐃᓄᒃᑎᑐᑦ keyboard
 ======================
 
-Version 9.1
+Version 9.2.1
 
 ᐃᓄᒃᑎᑐᑦ keyboard layout for Unicode
 
