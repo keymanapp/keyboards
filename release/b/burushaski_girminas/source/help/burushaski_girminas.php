@@ -1,10 +1,10 @@
 <?php 
-  $pagename = 'Burushaski Girminas - Roman/latin Keyboard Help';  $pagetitle = $pagename;  // Header we will tidy up later    require_once('header.php');
-
-
-   <p><font face="Calibri, sans-serif"><font style="font-size: 18pt; color: #000000;"
-
-          size="5">Burushaski&nbsp; Orthography and Keyboard</font></font></p>
+  $pagename = 'Burushaski Girminas - Roman/latin Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
+   <p>Burushaski Orthography and Keyboard</p>
     <p>Burushaski&nbsp; orthography encompasses the spelling and punctuation of
       the Burushaski&nbsp; language. This particular orthography has been
       proposed and agreed upon by representatives of all three varieties of
