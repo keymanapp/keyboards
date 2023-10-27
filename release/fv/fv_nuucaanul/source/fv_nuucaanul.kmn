@@ -1,9 +1,9 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.3'
+store(&KEYBOARDVERSION) '9.1.4'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "noo"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
-store(&NAME) 'Nuučaan̓uł'
+store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&NAME) 'nuučaan̓uł'
 store(&BITMAP) 'fv_nuucaanul.ico'
 store(&VISUALKEYBOARD) 'fv_nuucaanul.kvks'
 store(&KMW_HELPFILE) 'fv_nuucaanul_kmw_help.htm'
@@ -19,32 +19,17 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_nuucaanul.keyman-touch-layout'
 
+store(NeedsCombAComma) 'cčkmnpqtwyƛCČKMNPQTWY'
+store(CombAComma) [T_R] [SHIFT T_R] [K_QUOTE]
+
+any(NeedsCombAComma) + any(CombAComma) > index(NeedsCombAComma,1) U+0313
+
+
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-'p' + [SHIFT T_R] > 'p̓'
-'c' + [SHIFT T_R] > 'c̓'
-'q' + [SHIFT T_R] > 'q̓'
-'W' + [SHIFT T_R] > 'W̓'
-'K' + [SHIFT T_R] > 'K̓'
-'Y' + [SHIFT T_R] > 'Y̓'
-'t' + [SHIFT T_R] > 't̓'
-'M' + [SHIFT T_R] > 'M̓'
-'č' + [SHIFT T_R] > 'č̓'
-'w' + [SHIFT T_R] > 'w̓'
-'N' + [SHIFT T_R] > 'N̓'
-'Č' + [SHIFT T_R] > 'Č̓'
-'k' + [SHIFT T_R] > 'k̓'
-'P' + [SHIFT T_R] > 'P̓'
-'y' + [SHIFT T_R] > 'y̓'
-'C' + [SHIFT T_R] > 'C̓'
-'Q' + [SHIFT T_R] > 'Q̓'
-'m' + [SHIFT T_R] > 'm̓'
-'n' + [SHIFT T_R] > 'n̓'
-'ƛ' + [SHIFT T_R] > 'ƛ̓'
-'T' + [SHIFT T_R] > 'T̓'
 + [SHIFT T_T_0] > 'T̓' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
@@ -56,7 +41,7 @@ store(&LAYOUTFILE) 'fv_nuucaanul.keyman-touch-layout'
 + [SHIFT T_P] > 'P' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
-+ [SHIFT T_D] > 'Š' layer('default')
++ [SHIFT T_D] > 'Š' layer('default')
 + [SHIFT T_F] > 'ʔ' layer('default')
 + [SHIFT T_G] > 'ʕ' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
@@ -64,13 +49,13 @@ store(&LAYOUTFILE) 'fv_nuucaanul.keyman-touch-layout'
 + [SHIFT T_K_0] > 'K̓' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L] > 'Ł' layer('default')
-+ [SHIFT T_COLON] > 'Ḥ' layer('default')
++ [SHIFT T_COLON] > 'Ḥ' layer('default')
 + [SHIFT T_Z] > 'X̣' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-+ [SHIFT T_V_0] > 'Č̓' layer('default')
-+ [SHIFT T_V] > 'Č' layer('default')
++ [SHIFT T_V_0] > 'Č̓' layer('default')
++ [SHIFT T_V] > 'Č' layer('default')
 + [SHIFT T_B_0] > 'ƛ̓' layer('default')
 + [SHIFT T_B] > 'ƛ' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
@@ -83,27 +68,6 @@ store(&LAYOUTFILE) 'fv_nuucaanul.keyman-touch-layout'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E] > 'e'
-'p' + [T_R] > 'p̓'
-'c' + [T_R] > 'c̓'
-'q' + [T_R] > 'q̓'
-'W' + [T_R] > 'W̓'
-'K' + [T_R] > 'K̓'
-'Y' + [T_R] > 'Y̓'
-'t' + [T_R] > 't̓'
-'M' + [T_R] > 'M̓'
-'č' + [T_R] > 'č̓'
-'w' + [T_R] > 'w̓'
-'N' + [T_R] > 'N̓'
-'Č' + [T_R] > 'Č̓'
-'k' + [T_R] > 'k̓'
-'P' + [T_R] > 'P̓'
-'y' + [T_R] > 'y̓'
-'C' + [T_R] > 'C̓'
-'Q' + [T_R] > 'Q̓'
-'m' + [T_R] > 'm̓'
-'n' + [T_R] > 'n̓'
-'ƛ' + [T_R] > 'ƛ̓'
-'T' + [T_R] > 'T̓'
 + [T_T_0] > 't̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
@@ -115,7 +79,7 @@ store(&LAYOUTFILE) 'fv_nuucaanul.keyman-touch-layout'
 + [T_P] > 'p'
 + [T_A] > 'a'
 + [T_S] > 's'
-+ [T_D] > 'š'
++ [T_D] > 'š'
 + [T_F] > 'ʔ'
 + [T_G] > 'ʕ'
 + [T_H] > 'h'
@@ -123,13 +87,13 @@ store(&LAYOUTFILE) 'fv_nuucaanul.keyman-touch-layout'
 + [T_K_0] > 'k̓'
 + [T_K] > 'k'
 + [T_L] > 'ł'
-+ [T_COLON] > 'ḥ'
++ [T_COLON] > 'ḥ'
 + [T_Z] > 'x̣'
 + [T_X] > 'x'
 + [T_C_0] > 'c̓'
 + [T_C] > 'c'
-+ [T_V_0] > 'č̓'
-+ [T_V] > 'č'
++ [T_V_0] > 'č̓'
++ [T_V] > 'č'
 + [T_B_0] > 'ƛ̓'
 + [T_B] > 'ƛ'
 + [T_N_0] > 'n̓'
@@ -155,6 +119,15 @@ any(underaccent) any(overaccent) + any(underaccentkey) > context beep
 store(accentkey) [K_QUOTE] [K_1] 
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(accentkey) > context beep
+
+store(HNeedsUnderdot) 'hH'
+store(HUnderdot) 'ḥḤ'
+store(Underdot) [K_1]
+
+any(HNeedsUnderdot) + any(Underdot) > index(HUnderdot,1)
+any(HUnderdot) + any(overaccentkey) > context beep
+any(HUnderdot) + any(underaccentkey) > context beep
+
 
 c original punctuation
 
@@ -220,40 +193,40 @@ c Diacritics
 c Special Characters
 
 + [CAPS K_8] > 'Ł'
-+ [CAPS K_7] > 'Ḥ'
++ [CAPS K_7] > 'Ḥ'
 + [CAPS K_6] > 'X̣'
-+ [CAPS K_5] > ''
-+ [CAPS K_4] > 'C' U+030C
-+ [CAPS K_3] > 'S' U+030C
++ [CAPS K_5] > '' c provisional Unicode assignment to U+A7DC. Codepoint should be changed once it's in Unicode and fonts support it
++ [CAPS K_4] > 'Č'
++ [CAPS K_3] > 'Š'
 + [CAPS K_2] > 'ᵂ' 
 
 + [NCAPS SHIFT K_8] > 'Ł'
-+ [NCAPS SHIFT K_7] > 'Ḥ'
++ [NCAPS SHIFT K_7] > 'Ḥ'
 + [NCAPS SHIFT K_6] > 'X̣'
-+ [NCAPS SHIFT K_5] > ''
-+ [NCAPS SHIFT K_4] > 'C' U+030C
-+ [NCAPS SHIFT K_3] > 'S' U+030C
++ [NCAPS SHIFT K_5] > '' c provisional Unicode assignment to U+A7DC. Codepoint should be changed once it's in Unicode and fonts support it
++ [NCAPS SHIFT K_4] > 'Č'
++ [NCAPS SHIFT K_3] > 'Š'
 + [NCAPS SHIFT K_2] > 'ᵂ' 
 
 + [CAPS K_0] > 'ʕ'
 + [CAPS K_9] > 'ʔ'
 + [CAPS SHIFT K_8] > 'ł'
-+ [CAPS SHIFT K_7] > 'ḥ'
++ [CAPS SHIFT K_7] > 'ḥ'
 + [CAPS SHIFT K_6] > 'x̣'
 + [CAPS SHIFT K_5] > 'ƛ'
-+ [CAPS SHIFT K_4] > 'c' U+030C
-+ [CAPS SHIFT K_3] > 's' U+030C
++ [CAPS SHIFT K_4] > 'č'
++ [CAPS SHIFT K_3] > 'š'
 + [CAPS SHIFT K_2] > 'ʷ'
 
 
 + [NCAPS K_0] > 'ʕ'
 + [NCAPS K_9] > 'ʔ'
 + [NCAPS K_8] > 'ł'
-+ [NCAPS K_7] > 'ḥ'
++ [NCAPS K_7] > 'ḥ'
 + [NCAPS K_6] > 'x̣'
 + [NCAPS K_5] > 'ƛ'
-+ [NCAPS K_4] > 'c' U+030C
-+ [NCAPS K_3] > 's' U+030C
++ [NCAPS K_4] > 'č'
++ [NCAPS K_3] > 'š'
 + [NCAPS K_2] > 'ʷ'
 
                                   
@@ -267,4 +240,3 @@ any(overaccent) any(underaccent) > context(2) context(1)
 
 
 group(x) using keys
-

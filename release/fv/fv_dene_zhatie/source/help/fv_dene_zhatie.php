@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Dene Zhatié Keyboard Help';
-  $pagetitle = 'Dene Zhatié Keyboard Help';
+  $pagename = 'Dene Zhatıé Keyboard Help';
+  $pagetitle = 'Dene Zhatıé Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Dene Zhatié</b> language of the Western Subarctic region of Canada.
+This keyboard is designed for the <b>Dene Zhatıé</b> language of the Western Subarctic region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
@@ -23,7 +23,7 @@ This keyboard is designed for the <b>Dene Zhatié</b> language of the Western S
 <img src="fv_dene_zhatieU_.png" alt="" height="198" width="514" border="0" />
 
     <ul>
-      <li> The special characters of Dene Zhatié have been assigned to a mix of both number and punctuation keys.</li>
+      <li> The special characters of Dene Zhatıé have been assigned to a mix of both number and punctuation keys.</li>
       <li> All accents are typed after the base character: ų is typed u then Left Bracket [ </li>
       <li> To type the acute accent use the Backquote key ` — á is typed a then backquote ` </li>
       <li> To type the ogonek accent use the the Left Bracket key [ — ų is typed u then Left Bracket [ </li>

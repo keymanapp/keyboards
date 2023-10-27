@@ -1,7 +1,7 @@
-Nuučaan̓uł keyboard
+nuučaan̓uł keyboard
 ======================
 
-Nuučaan̓uł keyboard layout for Unicode
+nuučaan̓uł keyboard layout for Unicode
 
 Links
 -----
