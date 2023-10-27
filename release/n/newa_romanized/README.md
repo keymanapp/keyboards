@@ -1,7 +1,7 @@
 Newa Romanized  keyboard
 ==============
 
-© Ananda K Maharjan
+Copyright © Ananda K Maharjan
 
 
 Description
