@@ -1,36 +1,8 @@
 <?php 
-  $pagename = 'Burushaski Girminas - Roman/latin Keyboard Help';
-  $pagetitle = $pagename;
-  // Header we will tidy up later  
-  require_once('header.php');
-?>
+  $pagename = 'Burushaski Girminas - Roman/latin Keyboard Help';  $pagetitle = $pagename;  // Header we will tidy up later    require_once('header.php');
 
-<html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Burushaski Girminas</title>
-    <style type="text/css">
-<!--
-.style3 {
-	color: #FF3300;
-	font-weight: bold;
-}
-.style9 {color: #000}
-.style10 {
-	color: #000
-}
-.style11 {font-family: Calibri}
-.style13 {color: #000; font-family: Calibri; }
-.style18 {font-size: 14}
-body,td,th {
-    border: none;
-    font-family: Times New Roman, Times, serif;
-}
--->
-</style> </head>
-  <body dir="LTR" lang="en-US">
-    <h1 class="style11">Overview</h1>
-    <p><font face="Calibri, sans-serif"><font style="font-size: 18pt; color: #000000;"
+
+   <p><font face="Calibri, sans-serif"><font style="font-size: 18pt; color: #000000;"
 
           size="5">Burushaski&nbsp; Orthography and Keyboard</font></font></p>
     <p>Burushaski&nbsp; orthography encompasses the spelling and punctuation of
@@ -41,10 +13,6 @@ body,td,th {
       in this document. </p>
     <p>Burushaski&nbsp; Girminas is latin/Roman based keyboard developed for
       Burusho Maʰraka , and it is available for free.</p>
-    <p class="style18"><a href="#YSB">Burushaski&nbsp; Orthography</a><br>
-      <a href="#desktop">How to use the keyboard (Desktop)</a><br>
-      <a href="#touch">How to use the keyboard on touch devices (tablets,
-        phones)</a></p>
     <hr> &nbsp;
     <table width="100%" cellpadding="10" border="0">
       <tbody>
@@ -61,9 +29,9 @@ body,td,th {
                 your desktop or laptop and follow the following chart to learn
                 the Burushaski Keyboard and the key combination. <br>
               </span></p>
-            <img src="image_keyboard_guide2.png" alt="Burushaski Girminas Keyboard Layout"
+            <img src="image_keyboard_guide2.png" alt="Burushaski Girminas Writing Guide"
 
-              title="Burushaski Girminas Keyboard Layout" style="width: 733px; height: 238px;">
+              title="Burushaski Girminas Writing Guide"><br>
             <p>For diacritic vowels with&nbsp;<strong>tilde</strong>, there is
               only one rule -- on your keyboard press tilde (~)&nbsp; followed
               by your desired vowel.&nbsp; The <strong>tilde</strong> is used
@@ -115,8 +83,8 @@ body,td,th {
                 </tr>
               </tbody>
             </table>
-            <p>For diacritic vowels with&nbsp;<strong>accute</strong> (◌́) just
-              press Comma (,) followed by required vowels. </p>
+            <p>For diacritic vowels with&nbsp;<strong>accute</strong> (◌́)
+              just press Comma (,) followed by required vowels. </p>
             <br>
             <table border-bottom="1px" solid="" cellspacing="4" cellpadding="6">
               <colgroup><col width="64" span="13"> </colgroup>
@@ -226,7 +194,7 @@ body,td,th {
                     <div class="style9" align="center">Ḍ</div>
                   </td>
                   <td width="75" bgcolor="#FFCCCC">
-                    <div class="style9" align="center">Ġ</div>
+                    <div class="style9" align="center">�&nbsp;</div>
                   </td>
                   <td width="64" bgcolor="#FFCCCC">
                     <div class="style9" align="center">ʰ</div>
@@ -882,5 +850,4 @@ body,td,th {
         </tr>
       </tbody>
     </table>
-  </body>
-</html>
+
