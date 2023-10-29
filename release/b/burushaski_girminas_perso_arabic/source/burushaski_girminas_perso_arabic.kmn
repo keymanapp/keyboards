@@ -1,0 +1,157 @@
+﻿c Please read the Read Me file for a guide as to how to write in Burushaski
+store(&VERSION) '15.0'
+store(&COPYRIGHT) 'Copy Rights (c) 2023 Quwat K. Sunny'
+store(&KEYBOARDVERSION) '1.25'
+store(&BITMAP) 'burushaski_girminas_perso_arabic.ico'
+c store(&WINDOWSLANGUAGES) 'x0420 x0820'
+c store(&ETHNOLOGUECODE) 'urd'
+store(&KMW_RTL) '1'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'burushaski_girminas_perso_arabic.kvks'
+store(&NAME) 'Burushaski Girminas (بروشسکی)'
+store(&LAYOUTFILE) 'burushaski_girminas_perso_arabic.keyman-touch-layout'
+store(&MESSAGE) 'یہ بروشسکی کی بورڈ بروشسکی کے عربی /فارسی رسم الخط میں لکھنے کے لیے بنائی گئ ہے۔ '
+store(&KMW_HELPTEXT) 'څنژ، ژمےࣷ، ݜمن، ݜپیک'
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [CTRL K_BKSLASH] > U+0614
++ [SHIFT CTRL K_BKSLASH] > U+060E
++ [SHIFT ALT K_V] > 'ۗ'
++ [SHIFT ALT K_A] > 'آ'
++ [ALT K_B] > 'ٮ'
++ [CTRL K_SLASH] > '٪'
++ [SHIFT K_BKQUOTE] > 'ً'
++ [K_BKQUOTE] > 'ٍ'
++ [CTRL K_I] > 'ئ'
++ [ALT K_U] > 'ٔ'
++ [CTRL K_U] > 'ٕ'
++ [SHIFT ALT K_QUOTE] > U+201D
++ [SHIFT CTRL K_QUOTE] > U+201C
++ [CTRL K_QUOTE] > U+2018
++ [ALT K_QUOTE] > U+2019
++ [CTRL K_P] > 'ٌ'
++ [SHIFT K_COMMA] > 'ِ'
++ [SHIFT K_PERIOD] > 'َ'
++ [SHIFT K_SLASH] > U+061F
++ [K_PERIOD] > '۔'
++ [K_COMMA] > U+060C
++ [K_BKSLASH] > '\'
++ [K_SLASH] > '/'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_COLON] > ':'
++ [K_COLON] > U+061B
++ [K_QUOTE] > U+0027
++ [SHIFT K_LBRKT] > '}'
++ [SHIFT K_RBRKT] > '{'
++ [K_RBRKT] > '['
++ [K_LBRKT] > ']'
++ [SHIFT K_9] > ')'
++ [SHIFT K_0] > '('
++ [ALT K_HYPHEN] > 'ّ'
++ [SHIFT CTRL K_HYPHEN] > 'ّ'
++ [SHIFT K_U] > U+0654
+
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'
++ [SHIFT K_P] > 'ُ'
++ [K_P] > 'پ'
++ [SHIFT K_O] > 'ۃ'
++ [K_O] > 'ہ'
++ [K_I] > 'ی'
++ [SHIFT K_I] > 'ٰ'
++ [K_U] > 'ئ'
++ [K_Y] > 'ے'
++ [SHIFT K_Y] > nul
++ [K_T] > 'ت'
++ [SHIFT K_T] > 'ٹ'
++ [SHIFT K_R] > 'ڑ'
++ [K_R] > 'ر'
++ [K_E] > 'ع'
++ [SHIFT K_E] > U+0611
++ [SHIFT K_W] > 'ﷺ'
++ [K_W] > 'و'
++ [SHIFT K_Q] > 'ْ'
++ [K_Q] > 'ق'
++ [SHIFT K_L] > U+0612
++ [K_L] > 'ل'
++ [SHIFT K_K] > 'خ'
++ [K_K] > 'ک'
++ [K_J] > 'ج'
++ [SHIFT K_J] > U+0636
++ [K_H] > 'ھ'
++ [SHIFT K_H] > 'ح' 
++ [K_G] > 'گ'
++ [SHIFT K_G] > 'غ'
++ [SHIFT K_F] > 'ٖ'
++ [K_F] > 'ف'
++ [K_M] > 'م'
++ [SHIFT K_M] > nul
++ [SHIFT K_N] > 'ں'
++ [K_N] > 'ن'
++ [SHIFT K_B] > U+0613
++ [K_B] > 'ب'
++ [SHIFT K_V] > 'ظ'
++ [K_V] > 'ط'
++ [K_C] > 'چ'
++ [K_X] > 'ش'
++ [SHIFT K_Z] > 'ذ'
++ [K_Z] > 'ز'
++ [SHIFT K_D] > 'ڈ'
++ [K_D] > 'د'
++ [SHIFT K_S] > 'ص'
++ [K_S] > 'س'
++ [SHIFT K_A] > 'ٓ'
++ [K_A] > U+0627 
++ [SHIFT K_C] > 'ث'
++ [SHIFT K_X] > 'ݜ'
+
+
+c Extra Burushaski 
+
+U+060C  + 'c'  > 'ڎ'
+'۔' +  "c"  > 'څ'
++ [CTRL K_C] > 'څ' c For on screen display. 
+'۔' + 'z' > 'ژ'
++ [CTRL K_Z] > 'ژ' c For on screen display. 
+
+
+c preceded by comma for ۡ
+U+060C  + 'y' > 'ےࣷ'  c comma 
++ [SHIFT K_Y] >  U+06D2 U+08F7 c On screen keyboard
+U+060C  + 'w' > U+0648 U+08F7   
+U+060C  + 'i' > U+06CC U+08F7  
+U+060C  + 'a' > U+0627 U+08F7  c for short alif
+
+
+'۔' +'a' > U+0622 
+'۔' +"l" > U+06B5
+'۔' + 'n' > 'ݩ'
+'۔' + 'i' > 'ێ'
+'۔' + "y" > U+06D2 U+065A   
+'۔' + 'd' > 'ذ' 
+'۔' + 'v' > 'ظ'  c for 
+'۔' + 'e' > 'غ'
+'۔'  + 'r'  > 'ز'
+'۔'  + 's'  > U+075C
+'۔' + 'j' > 'ض'
+'۔' + 't' > 'ٹ'
+'۔' + 'h' > U+0652
+
+U+0631 +  'r' > U+0631 U+0652
+
+
++ [SHIFT CTRL K_C] > U+0685
++ [SHIFT CTRL K_Z] > 'ژ'
++ [SHIFT CTRL K_R] > 'رْ'
++ [SHIFT CTRL K_A] > 'اࣷ'
++ [SHIFT CTRL K_N] > 'ݩ'
