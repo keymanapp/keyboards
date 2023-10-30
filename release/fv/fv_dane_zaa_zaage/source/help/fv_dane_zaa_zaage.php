@@ -44,4 +44,4 @@ END;
   <li>z > z̲ (Z̲)</li>
 </ul>
 
-<p>© 2015 FirstVoices, First Peoples' Cultural Foundation, SIL International</p>
+<p>© 2015-2023 FirstVoices, First Peoples' Cultural Foundation, SIL International</p>

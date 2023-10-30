@@ -1,8 +1,16 @@
 Dane-Z̲aa Z̲áágéʔ Change History
 ====================
+9.3 (30 Oct 2023)
+-----------------
+* Fleshed out mobile keyboard, including building own rules
+* Added return to default layer after typing on shift layer to mobile
+* Fixed key size on mobile
+* Changed combining keys to deadkeys
+* Centered mobile keyboard
+
 
 9.2 (14 Dec 2021)
-----------------
+-----------------
 * Designed and added desktop keyboard, based on Doig River font
 * Updated touch layout (ogonek characters on long press)
 * Added rules for correct ordering of ogonek (U+0328) and diacritics
