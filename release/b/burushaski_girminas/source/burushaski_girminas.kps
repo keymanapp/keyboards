@@ -1,22 +1,23 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.142.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram/>
+    <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <MSIFileName/>
-    <MSIOptions/>
+    <GraphicFile>keyboard_package_screen_img.png</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder/>
+    <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL=""/>
+    <Version URL=""></Version>
     <Name URL="">Burushaski Girminas</Name>
     <Copyright URL="">2020 Quwat K. Sunny</Copyright>
     <WebSite URL="https://keyman.com/keyboards/burushaski_girminas">https://keyman.com/keyboards/burushaski_girminas</WebSite>
@@ -52,14 +53,40 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</Name>
+      <Description>Font DejaVu Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\dejavu\DejaVuSerif.ttf</Name>
+      <Description>Font DejaVu Serif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>keyboard_package_screen_img.png</Name>
+      <Description>File keyboard_package_screen_img.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\image_keyboard_guide2.png</Name>
+      <Description>File image_keyboard_guide2.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Burushaski Girminas</Name>
       <ID>burushaski_girminas</ID>
-      <Version>2.0.24</Version>
+      <Version>2.0.25</Version>
+      <OSKFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\dejavu\DejaVuSerif.ttf</DisplayFont>
       <Languages>
-        <Language ID="bsk-Latn">bsk (Latin)</Language>
+        <Language ID="bsk-Latn">Burushaski (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
