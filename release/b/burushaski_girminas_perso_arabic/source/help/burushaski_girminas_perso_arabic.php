@@ -1,15 +1,12 @@
 <?php 
-  $pagename = 'Burushaski Girminas - Roman/latin Keyboard Help';
+  $pagename = 'Burushaski Perso Arabic Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 ?>
-<style>
-<?php include 'stylesheet.css';
-// This is just to embed css code, without this Burushaski Fonts would not rendere properly. 
-?>
-
-</style>
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
 
   <body dir="rtl" style="color: #504949;" lang="bsk">
     <h1 align="right"><span lang="hi-IN">بروشسکی

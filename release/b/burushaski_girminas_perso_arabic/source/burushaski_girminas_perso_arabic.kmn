@@ -12,6 +12,7 @@ store(&NAME) 'Burushaski Girminas (بروشسکی)'
 store(&LAYOUTFILE) 'burushaski_girminas_perso_arabic.keyman-touch-layout'
 store(&MESSAGE) 'یہ بروشسکی کی بورڈ بروشسکی کے عربی /فارسی رسم الخط میں لکھنے کے لیے بنائی گئ ہے۔ '
 store(&KMW_HELPTEXT) 'څنژ، ژمےࣷ، ݜمن، ݜپیک'
+store(&KMW_EMBEDCSS) 'burushaski_girminas_perso_arabic.css'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -120,14 +121,11 @@ c Extra Burushaski
 
 U+060C  + 'c'  > 'ڎ'
 '۔' +  "c"  > 'څ'
-+ [CTRL K_C] > 'څ' c For on screen display. 
 '۔' + 'z' > 'ژ'
-+ [CTRL K_Z] > 'ژ' c For on screen display. 
 
 
 c preceded by comma for ۡ
 U+060C  + 'y' > 'ےࣷ'  c comma 
-+ [SHIFT K_Y] >  U+06D2 U+08F7 c On screen keyboard
 U+060C  + 'w' > U+0648 U+08F7   
 U+060C  + 'i' > U+06CC U+08F7  
 U+060C  + 'a' > U+0627 U+08F7  c for short alif
