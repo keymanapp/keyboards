@@ -1,6 +1,6 @@
 ﻿c dega generated from template at 2021-05-11 09:46:54
 c with name "Dega"
-store(&VERSION) '10.0'
+store(&VERSION) '15.0'
 store(&NAME) 'Dega'
 store(&COPYRIGHT) '© 2021-2023 MSFJ'
 store(&TARGETS) 'any'
@@ -12,8 +12,59 @@ store(&MESSAGE) 'Dega Keyboard is created for indigenous people in the Central H
 store(&KEYBOARDVERSION) '2.0'
 
 begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Okay, let's stay on the numeric layer if we are there already
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Don't swap off the caps lock layer automatically
+    if(&layer = 'caps') > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+
+    c Some common end-of-sentence punctuation
+    store(sentencePunctuation) '.?!'
+
+    c If we are at the start of a text field, we're at the 'start of a
+    c sentence', so we'll move to the Shift layer
+    nul > layer('shift')
+
+    c Otherwise, we'll move to the Shift layer only if we see end of a
+    c sentence followed by one or two spaces.
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+
+    c And because we haven't see any of these situations above, we'll
+    c move to the default layer. Note that this effectively drops us
+    c back to the default layer after every keystroke that isn't blocked
+    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
+    nomatch > layer('default')
 
 group(main) using keys
++ any(key)  > index(out, 1)
+
 + [SHIFT K_RBRKT] > '}'
 + [SHIFT K_LBRKT] > '{'
 + [K_RBRKT] > ']'
@@ -22,35 +73,9 @@ group(main) using keys
 + [SHIFT K_SLASH] > '?'
 + [SHIFT K_PERIOD] > '>'
 + [SHIFT K_COMMA] > '<'
-+ [SHIFT K_M] > 'M'
-+ [SHIFT K_N] > 'N'
-+ [SHIFT K_B] > 'B'
-+ [SHIFT K_V] > 'V'
-+ [SHIFT K_C] > 'C'
-+ [SHIFT K_X] > 'X'
-+ [SHIFT K_Z] > 'Z'
 + [SHIFT K_QUOTE] > '"'
 + [SHIFT K_COLON] > ':'
-+ [SHIFT K_L] > 'L'
-+ [SHIFT K_K] > 'K'
-+ [SHIFT K_J] > 'J'
-+ [SHIFT K_H] > 'H'
-+ [SHIFT K_G] > 'G'
-+ [SHIFT K_F] > 'F'
-+ [SHIFT K_D] > 'D'
-+ [SHIFT K_S] > 'S'
-+ [SHIFT K_A] > 'A'
 + [SHIFT K_BKSLASH] > '|'
-+ [SHIFT K_P] > 'P'
-+ [SHIFT K_O] > 'O'
-+ [SHIFT K_I] > 'I'
-+ [SHIFT K_U] > 'U'
-+ [SHIFT K_Y] > 'Y'
-+ [SHIFT K_T] > 'T'
-+ [SHIFT K_R] > 'R'
-+ [SHIFT K_E] > 'E'
-+ [SHIFT K_W] > 'W'
-+ [SHIFT K_Q] > 'Q'
 + [SHIFT K_EQUAL] > '+'
 + [SHIFT K_HYPHEN] > '_'
 + [SHIFT K_0] > ')'
@@ -67,24 +92,8 @@ group(main) using keys
 + [K_SLASH] > '/'
 + [K_PERIOD] > '.'
 + [K_COMMA] > ','
-+ [K_M] > 'm'
-+ [K_N] > 'n'
-+ [K_B] > 'b'
-+ [K_V] > 'v'
-+ [K_C] > 'c'
-+ [K_X] > 'x'
-+ [K_Z] > 'z'
 + [K_QUOTE] > U+0027
 + [K_COLON] > ';'
-+ [K_L] > 'l'
-+ [K_K] > 'k'
-+ [K_J] > 'j'
-+ [K_H] > 'h'
-+ [K_G] > 'g'
-+ [K_F] > 'f'
-+ [K_D] > 'd'
-+ [K_S] > 's'
-+ [K_A] > 'a'
 + [K_EQUAL] > '='
 + [K_HYPHEN] > '-'
 + [K_0] > '0'
@@ -99,16 +108,6 @@ group(main) using keys
 + [K_1] > '1'
 + [K_BKQUOTE] > '`'
 + [K_BKSLASH] > '\'
-+ [K_P] > 'p'
-+ [K_O] > 'o'
-+ [K_I] > 'i'
-+ [K_U] > 'u'
-+ [K_Y] > 'y'
-+ [K_T] > 't'
-+ [K_R] > 'r'
-+ [K_E] > 'e'
-+ [K_W] > 'w'
-+ [K_Q] > 'q'
 
 c transform
 'a' + [K_A]     > 'â'
