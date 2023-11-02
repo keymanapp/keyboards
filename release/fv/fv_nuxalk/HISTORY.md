@@ -1,5 +1,9 @@
 Nuxalk Change History
 ============================
+10.0 (30 Oct 2023)
+-----------------
+* Added missing l key
+* Updated key sizes
 
 9.1 (26 Oct 2018)
 -----------------
