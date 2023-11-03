@@ -1,10 +1,19 @@
 Yorùbá Ìrọ̀rùn Change History
 ====================
 
+1.0.2 (2023-11-03)
+----------------
+* fixed supported platforms
+* fixed conflicted rules
+* fixed shift key behaviour in touch layout
+* fixed top row keys in top layout
+
 1.0.1 (2023-11-02)
+----------------
 * initial stable release
 
 1.0.0.9 (2023-11-01)
+----------------
 * fixed several bugs
 * added welcome and readme pages
 

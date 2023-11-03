@@ -1,4 +1,5 @@
-﻿c c Version 1.0.1 - initial stable release
+﻿c c Version 1.0.2 - fixed supported platforms, fixed conflicted rules, fixed shift key behaviour in touch layout, fixed top row keys in top layout
+c c Version 1.0.1 - initial stable release
 c c Version 1.0.0.9 - fixed several bugs, added welcome and readme pages
 c c Version 1.0.0.8 - renamed keyboard from Yorùbá to Yorùbá Ìrọ̀rùn
 c c Version 1.0.0.7 - added support for LALT and RALT plus key to type accentuated vowels
@@ -12,8 +13,8 @@ c c Version 1.0.0.0 - created Yorùbá Ìrọ̀rùn from template
 store(&VERSION) '10.0'
 store(&NAME) 'Yorùbá ìrọ̀rùn'
 store(&COPYRIGHT) '© W3Techy Enterprise'
-store(&KEYBOARDVERSION) '1.0.1'
-store(&TARGETS) 'any windows macosx linux'
+store(&KEYBOARDVERSION) '1.0.2'
+store(&TARGETS) 'windows macosx linux web desktop'
 store(&BITMAP) 'yo.ico'
 store(&VISUALKEYBOARD) 'yo.kvks'
 store(&LAYOUTFILE) 'yo.keyman-touch-layout'
@@ -21,6 +22,19 @@ store(&LAYOUTFILE) 'yo.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'
++ [K_BKQUOTE] > '`'
 + [LALT K_Q] > 'q'
 + [LALT K_C] > 'c'
 + [SHIFT RALT K_S] > 'SH'
@@ -73,13 +87,6 @@ group(main) using keys
 + [SHIFT LALT K_I] > 'Ì'
 + [SHIFT LALT K_U] > 'Ù'
 + [SHIFT LALT K_E] > 'È'
-+ [LALT K_U] > 'ú'
-+ [LALT K_O] > 'ó'
-+ [LALT K_I] > 'í'
-+ [LALT K_V] > 'ẹ́'
-+ [LALT K_X] > 'ọ́'
-+ [LALT K_E] > 'é'
-+ [LALT K_A] > 'á'
 + [SHIFT LALT K_Z] > 'Z'
 + [SHIFT LALT K_S] > 'SH'
 + [K_C] > 'ɛ'
@@ -151,6 +158,5 @@ group(main) using keys
 + [K_Q] > 'gb'
 + [K_V] > 'ẹ'
 + [K_X] > 'ọ'
-+ [LALT K_S] > 'ṣ'
 + [SHIFT K_Z] > 'Ṣ'
 + [K_Z] > 'ṣ'
