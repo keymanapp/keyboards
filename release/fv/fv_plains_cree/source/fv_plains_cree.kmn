@@ -20,6 +20,46 @@ store(WLongVowels) 'ᐍᐑᐕᐚ' c we wii woo waa
 
 store(KShortVowels) 'ᑫᑭᑯᑲ' c ke ki ko ka
 store(KLongVowels) 'ᑫᑮᑰᑳ' c ke kii koo kaa
+store(KWShortVowels) 'ᑵᑷᑻᑿ' c kwe kwi kwo kwa
+store(KWLongVowels)'ᑵᑹᑽᒁ' c kwe kwii kwoo kwaa
+
+store(PShortVowels) 'ᐯᐱᐳᐸ' c pe pi po pa
+store(PLongVowels) 'ᐯᐲᐴᐹ' c pe pii poo paa
+store(PWShortVowels) 'ᐻᐽᑁᑅ' c pwe pwi pwo pwa
+store(PWLongVowels) 'ᐻᐿᑃᑇ' c pwe pwii pwoo pwaa
+
+store(TShortVowels) 'ᑌᑎᑐᑕ' c te ti to ta
+store(TLongVowels) 'ᑌᑏᑑᑖ' c te tii too taa
+store(TWShortVowels) 'ᑘᑚᑞᑢ' c twe twi two twa
+store(TWLongVowels) 'ᑘᑜᑠᑤ' c twe twii twoo twaa
+
+store(CShortVowels) 'ᒉᒋᒍᒐ' c ce ci co ca
+store(CLongVowels) 'ᒉᒌᒎᒑ' c ce cii coo caa
+store(CWShortVowels) 'ᒓᒕᒙᒝ' c cwe cwi cwo cwa
+store(CWLongVowels) 'ᒓᒗᒛᒟ' c cwe cwii cwoo cwaa
+
+store(MShortVowels) 'ᒣᒥᒧᒪ' c me mi mo ma
+store(MLongVowels) 'ᒣᒦᒨᒫ' c me mii moo maa
+store(MWShortVowels) 'ᒭᒯᒳᒷ' c mwe mwi mwo mwa
+store(MWLongVowels) 'ᒭᒱᒵᒹ' c mwe mwii mwoo mwaa
+
+store(NShortVowels) 'ᓀᓂᓄᓇ' c ne ni no na
+store(NLongVowels) 'ᓀᓃᓅᓈ' c ne nii noo naa
+store(NWShortVowels) 'ᓊᣇᣋᓌ' c nwe nwi nwo nwa
+store(NWLongVowels) 'ᓊᣉᣍᓎ' c new nwii nwoo nwaa
+
+store(SShortVowels) 'ᓭᓯᓱᓴ' c se si so sa
+store(SLongVowels) 'ᓭᓰᓲᓵ' c se sii soo saa
+store(SWShortVowels) 'ᓷᓹᓽᔁ' c swe swi swo swa
+store(SWLongVowels) 'ᓷᓻᓿᔃ' c swe swii swoo swaa
+
+store(YShortVowels) 'ᔦᔨᔪᔭ' c ye yi yo ya
+store(YLongVowels) 'ᔦᔩᔫᔮ' c ye yii yoo yaa
+store(YWShortVowels)'ᔰᔲᔶᔺ' c ywe ywi ywo ywa
+store(YWLongVowels) 'ᔰᔴᔸᔼ' c ywe ywii ywoo ywaa
+
++ ';' > deadkey(Deadkey)
+deadkey(Deadkey) + 'i' > 'ᐃ'
 
 + 'e' > 'ᐁ'
 + 'i' > 'ᐃ'
@@ -30,6 +70,14 @@ store(KLongVowels) 'ᑫᑮᑰᑳ' c ke kii koo kaa
 'ᐊ' + [K_A] > 'ᐋ'
 
 any(LongVowelsOnly) + [K_BKSP] > index(ShortVowelsOnly,1)
+any(ShortVowelsOnly) + [K_BKSP] > nul
+
++ 'l' > 'ᓬ'
++ 'x' > 'ᕽ'
++ 'r' > 'ᕒ'
++ '.' > '᙮'
++ [SHIFT K_SPACE] > U+202F
+
 
 +'w' > 'ᐤ'
 'ᐤ' + any(VowelKeys) > index(WShortVowels,2)
@@ -38,20 +86,78 @@ any(WShortVowels) + [K_BKSP] > 'ᐤ'
 any(WLongVowels) + [K_BKSP] > index(WShortVowels,1)
 
 + 'h' > 'ᐦ'
-'ᐦ' + [K_K] > 'ᐦᑫ'
-'ᐦᑫ' + any(VowelKeys) > 'ᐦ'index(KShortVowels,3)
+
++ 'k' > 'ᐠ'
+'ᐠ' + any(VowelKeys) > index(KShortVowels,2)
 any(KShortVowels) + any(VowelKeys) > index(KLongVowels,1)
-any(KLongVowels) + [K_BKSP] > 'ᐦ'index(KShortVowels,1)
-'ᐦ' + [K_H] > 'ᐦ'
+any(KLongVowels) + [K_BKSP] > index(KShortVowels,1)
+'ᐠ' + [K_W] > 'ᑵ'
+'ᑵ' + any(VowelKeys) > index(KWShortVowels,2)
+any(KWShortVowels) + any(VowelKeys) > index(KWLongVowels,1)
+any(KWLongVowels) + [K_BKSP] > index(KWShortVowels,1)
 
-c + 'hke' > 'ᐦᑫ' + 'hki' > 'ᐦᑭ'
-c 'ᐦᑭ' + [K_I] > 'ᐦᑮ' c hkii
-c + 'hko' > 'ᐦᑯ'
-c 'ᐦᑯ' + [K_O] > 'ᐦᑰ' c hkoo
-c + 'hka' > 'ᐦᑲ'
-c 'ᐦᑲ' + [K_A] > 'ᐦᑳ' c hkaa
++ 'p' > 'ᑊ'
+'ᑊ' + any(VowelKeys) > index(PShortVowels,2)
+any(PShortVowels) + any(VowelKeys) > index(PLongVowels,1)
+any(PLongVowels) + [K_BKSP] > index(PShortVowels,1)
+'ᑊ' + [K_W] > 'ᐻ'
+'ᐻ' + any(VowelKeys) > index(PWShortVowels,2)
+any(PWShortVowels) + any(VowelKeys) > index(PWLongVowels,1)
+any(PWLongVowels) + [K_BKSP] > index(PWShortVowels,1)
 
++ 't' > 'ᐟ'
+'ᐟ' + any(VowelKeys) > index(TShortVowels,2)
+any(TShortVowels) + any(VowelKeys) > index(TLongVowels,1)
+any(TLongVowels) + [K_BKSP] > index(TShortVowels,1)
+'ᐟ' + [K_W] > 'ᑘ'
+'ᑘ' + any(VowelKeys) > index(TWShortVowels,2)
+any(TWShortVowels) + any(VowelKeys) > index(TWLongVowels,1)
+any(TWLongVowels) + [K_BKSP] > index(TWShortVowels,1)
 
++ 'c' > 'ᐨ'
+'ᐨ' + any(VowelKeys) > index(CShortVowels,2)
+any(CShortVowels) + any(VowelKeys) > index(CLongVowels,1)
+any(CLongVowels) + [K_BKSP] > index(CShortVowels,1)
+'ᐨ' + [K_W] > 'ᒓ'
+'ᒓ' + any(VowelKeys) > index(CWShortVowels,2)
+any(CWShortVowels) + any(VowelKeys) > index(CWLongVowels,1)
+any(CWLongVowels) + [K_BKSP] > index(CWShortVowels,1)
+
++ 'm' > 'ᒼ'
+'ᒼ' + any(VowelKeys) > index(MShortVowels,2)
+any(MShortVowels) + any(VowelKeys) > index(MLongVowels,1)
+any(MLongVowels) + [K_BKSP] > index(MShortVowels,1)
+'ᒼ' + [K_W] > 'ᒭ'
+'ᒭ' + any(VowelKeys) > index(MWShortVowels,2)
+any(MWShortVowels) + any(VowelKeys) > index(MWLongVowels,1)
+any(MWLongVowels) + [K_BKSP] > index(MWShortVowels,1)
+
++ 'n' > 'ᐣ'
+'ᐣ' + any(VowelKeys) > index(NShortVowels,2)
+any(NShortVowels) + any(VowelKeys) > index(NLongVowels,1)
+any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
+'ᐣ' + [K_W] > 'ᓊ'
+'ᓊ' + any(VowelKeys) > index(NWShortVowels,2)
+any(NWShortVowels) + any(VowelKeys) > index(NWLongVowels,1)
+any(NWLongVowels) + [K_BKSP] > index(NWShortVowels,1)
+
++ 's' > 'ᐢ'
+'ᐢ' + any(VowelKeys) > index(SShortVowels,2)
+any(SShortVowels) + any(VowelKeys) > index(SLongVowels,1)
+any(SLongVowels) + [K_BKSP] > index(SShortVowels,1)
+'ᐢ' + [K_W] > 'ᓷ'
+'ᓷ' + any(VowelKeys) > index(SWShortVowels,2)
+any(SWShortVowels) + any(VowelKeys) > index(SWLongVowels,1)
+any(SWLongVowels) + [K_BKSP] > index(SWShortVowels,1)
+
++ 'y' > 'ᐩ'
+'ᐩ' + any(VowelKeys) > index(YShortVowels,2)
+any(YShortVowels) + any(VowelKeys) > index(YLongVowels,1)
+any(YLongVowels) + [K_BKSP] > index(YShortVowels,1)
+'ᐩ' + [K_W] > 'ᔰ'
+'ᔰ' + any(VowelKeys) > index(YWShortVowels,2)
+any(YWShortVowels) + any(VowelKeys) > index(YWLongVowels,1)
+any(YWLongVowels) + [K_BKSP] > index(YWShortVowels,1)
 
 
 
