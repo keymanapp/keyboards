@@ -1,11 +1,13 @@
 ﻿store(&VERSION) '10.0'
-store(&NAME) 'fv_kwadacha_tsekene'
+store(&NAME) 'Kwadacha Tsek’ene'
 store(&COPYRIGHT) '© 2023 FirstVoices, First Peoples' U+0027 ' Cultural Council'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
 store(&BITMAP) 'fv_kwadacha_tsekene.ico'
 store(&VISUALKEYBOARD) 'fv_kwadacha_tsekene.kvks'
 store(&LAYOUTFILE) 'fv_kwadacha_tsekene.keyman-touch-layout'
+
+
 
 begin Unicode > use(main)
 
@@ -130,24 +132,40 @@ any(HasOgonek) + any(GraveKeys) > index(HasOgonek,1) U+0300
 
 c shortcuts for accented double vowels
 'oo' + any(AcuteKeys) > 'óó'
+'óó' + any(OgonekKeys) > 'ǫ́ǫ́'
 'oo' + any(GraveKeys) > 'òò'
+'òò' + any(OgonekKeys) > 'ǫ̀ǫ̀'
 'oo' + any(OgonekKeys) > 'ǫǫ'
+'ǫǫ' + any(AcuteKeys) > 'ǫ́ǫ́'
+'ǫǫ' + any(GraveKeys) > 'ǫ̀ǫ̀'
 'oo' + any(OgoAcuKeys) > 'ǫ́ǫ́'
 'oo' + any(OgoGraKeys) > 'ǫ̀ǫ̀'
 'OO' + any(AcuteKeys) > 'ÓÓ'
+'ÓÓ' + any(OgonekKeys) > 'Ǫ́Ǫ́'
 'OO' + any(GraveKeys) > 'ÒÒ'
+'ÒÒ' + any(OgonekKeys) > 'Ǫ̀Ǫ̀'
 'OO' + any(OgonekKeys) > 'ǪǪ'
+'ǪǪ' + any(AcuteKeys) > 'Ǫ́Ǫ́'
+'ǪǪ' + any(GraveKeys) > 'Ǫ̀Ǫ̀'
 'OO' + any(OgoAcuKeys) > 'Ǫ́Ǫ́'
 'OO' + any(OgoGraKeys) > 'Ǫ̀Ǫ̀'
 
 'ii' + any(AcuteKeys) > 'íí'
+'íí' + any(OgonekKeys) > 'į́į́'
 'ii' + any(GraveKeys) > 'ìì'
+'ìì' + any(OgonekKeys) > 'į̀į̀'
 'ii' + any(OgonekKeys) > 'įį'
+'įį' + any(AcuteKeys) > 'į́į́'
+'įį' + any(GraveKeys) > 'į̀į̀'
 'ii' + any(OgoAcuKeys) > 'į́į́'
 'ii' + any(OgoGraKeys) > 'į̀į̀'
 'II' + any(AcuteKeys) > 'ÍÍ'
+'ÍÍ' + any(OgonekKeys) > 'Į́Į́'
 'II' + any(GraveKeys) > 'ÌÌ'
+'ÌÌ' + any(OgonekKeys) > 'Į̀Į̀'
 'II' + any(OgonekKeys) > 'ĮĮ'
+'ĮĮ' + any(AcuteKeys) > 'Į́Į́'
+'ĮĮ' + any(GraveKeys) > 'Į̀Į̀'
 'II' + any(OgoAcuKeys) > 'Į́Į́'
 'II' + any(OgoGraKeys) > 'Į̀Į̀'
 
@@ -184,3 +202,10 @@ any(HasOgonek) + [K_RBRKT] > index(HasOgonek,1) U+0300
 any(HasOgonek) + [K_BKSLASH] > index(HasOgonek,1) U+0301
 any(HasOgonek) + [K_LBRKT] > index(HasOgonek,1)
 
+c need to have an override rule for vowels + combining accents, ogo vowels + combining accents. Would take a lot of lines, stores don't work because of combined nature? Can take a stab at it though
+any(HasOgonek) U+0300 + [K_RBRKT] > context beep
+any(HasOgonek) U+0300 + [K_BKSLASH] > index(HasOgonek,1) U+0301
+any(HasOgonek) U+0300 + [K_LBRKT] > context beep
+any(HasOgonek) U+0301 + [K_RBRKT] > index(HasOgonek,1) U+0300
+any(HasOgonek) U+0301 + [K_BKSLASH] > context beep
+any(HasOgonek) U+0301 + [K_LBRKT] > context beep
