@@ -1,0 +1,48 @@
+@font-face {
+    font-family:"burushaski";
+    src: url('fonts/Burusho_Quwatz_Nastaliq.woff2') format('woff2'),
+         url('fonts/Burusho_Quwatz_Nastaliq.woff') format('woff'),
+         url('fonts/Burusho_Quwatz_Nastaliq.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,body,p{
+    height: auto;
+    padding-top: 1em;
+    margin: auto;
+    max-width: 98%;
+    font-family: "burushaski";
+    color:#504949;
+    line-height: 1.5em;
+    font-size: 1.4vw;
+}
+h1,h2 {
+    color: black;
+    font-family: "burushaski";
+    margin: auto;
+    }
+h1,h2,h3,h4 {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+h1 {
+    font-size:2vw;
+padding-bottom: 1em;}
+h2{
+    font-size:2vw;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    body,p{
+    font-size:2.5vw;
+    }
+}
