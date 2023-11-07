@@ -58,9 +58,6 @@ store(YLongVowels) 'ᔦᔩᔫᔮ' c ye yii yoo yaa
 store(YWShortVowels)'ᔰᔲᔶᔺ' c ywe ywi ywo ywa
 store(YWLongVowels) 'ᔰᔴᔸᔼ' c ywe ywii ywoo ywaa
 
-+ ';' > deadkey(Deadkey)
-deadkey(Deadkey) + 'i' > 'ᐃ'
-
 + 'e' > 'ᐁ'
 + 'i' > 'ᐃ'
 'ᐃ' + [K_I] > 'ᐄ' 
@@ -70,7 +67,6 @@ deadkey(Deadkey) + 'i' > 'ᐃ'
 'ᐊ' + [K_A] > 'ᐋ'
 
 any(LongVowelsOnly) + [K_BKSP] > index(ShortVowelsOnly,1)
-any(ShortVowelsOnly) + [K_BKSP] > nul
 
 + 'l' > 'ᓬ'
 + 'x' > 'ᕽ'
@@ -159,6 +155,15 @@ any(YLongVowels) + [K_BKSP] > index(YShortVowels,1)
 any(YWShortVowels) + any(VowelKeys) > index(YWLongVowels,1)
 any(YWLongVowels) + [K_BKSP] > index(YWShortVowels,1)
 
+c --- modified punctuation ---
++ [K_LBRKT] > deadkey(Deadkey) 
++ [K_COLON] > '«'
++ [K_QUOTE] > '»'
+
+c --- original punctuation ---
++ [RALT K_LBRKT] > '['
++ [RALT K_COLON] > ';'
++ [RALT K_QUOTE] > U+0027
 
 
 c --- START OF TOUCH LAYOUT RULES ---
