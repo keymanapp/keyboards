@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.206.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Naskapi (Classic)</Name>
-    <Copyright URL="">© 2001-2020 Bill Jancewicz</Copyright>
+    <Copyright URL="">© 2001-2023 Bill Jancewicz</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
     <Version URL=""></Version>
   </Info>
@@ -58,16 +58,22 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\cree\bjcrusb.ttf</Name>
+      <Description>Font BJCree UNI Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Naskapi (Classic)</Name>
       <ID>bj_naskapi_classic</ID>
-      <Version></Version>
+      <Version>2.1.1</Version>
       <OSKFont>..\..\..\shared\fonts\cree\bjcrus.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\cree\bjcrus.ttf</DisplayFont>
       <Languages>
-        <Language ID="nsk-Cans">Naskapi</Language>
+        <Language ID="nsk">Naskapi</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
