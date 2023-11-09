@@ -74,7 +74,7 @@
         یا رسم الخط کو دیکھتے ہیں۔</span></p>
     <p align="right"><img src="orthography.png" name="Burushaski Orthography" alt="Burushaski Orthography"
 
-        align="bottom" height="497" width="456" border="0">
+        align="bottom"  border="0">
     </p>
     <p align="right"><span lang="hi-IN"><span lang="hi-IN">اس گائید
           کا مقصد ربروشسکی رسم الخط سکھانا نہیں
@@ -105,7 +105,7 @@
         الفاظ کی تفصیل کچھ یو ں ہے۔</span></p>
     <p align="right"><img src="burushaski_additional_characters.png" name="Burushaski Additional Characters"
 
-        alt="Burushaski Additional Characters" align="bottom" height="572" width="447"
+        alt="Burushaski Additional Characters" align="bottom"
 
         border="0">
     </p>
@@ -134,9 +134,9 @@
     </p>
     <p align="right"><img src="bsk_perso_arabic_keyboard_keystrokes.png" name="Burushaski Keyboard Character layout"
 
-        alt="Burushaski Keyboard Character layout" align="bottom" hspace="9" height="257"
+        alt="Burushaski Keyboard Character layout" align="bottom" hspace="9" 
 
-        width="1032" vspace="9" border="0">
+         vspace="9" border="0">
     </p>
     <p align="right"><span lang="hi-IN">ا س کی بورڈ میں یہ
         دیکھایا گیا ہے کہ کونسا انگریزی حرف
@@ -148,9 +148,9 @@
     </p>
     <p align="right"><img src="key_combination_chart_equation.png" name="Burushaski Keyboard Key Strokes Combination"
 
-        alt="Burushaski Keyboard Key Strokes Combination" align="bottom" height="82"
+        alt="Burushaski Keyboard Key Strokes Combination" align="bottom" 
 
-        width="201" border="0">
+         border="0">
       <span lang="hi-IN"><br clear="left">
         <br clear="left">
       </span><span lang="hi-IN"><span lang="hi-IN">اگر
@@ -174,14 +174,14 @@
         بورڈ سے لکھی گئی ہے۔</span></p>
     <p align="right"><img src="yasin_text.png" name="Yasin Burushaski Text" alt="Yasin Burushaski Text"
 
-        align="bottom" height="501" width="462" border="0">
+        align="bottom"  border="0">
     </p>
     <p align="right"><span lang="hi-IN">اگر آپ موبائیل پر
         لکھنا چاہتے ہیں تو پھر بروشسکی کی بورڈ
         اپیپ ڈاون لوڈ کر لیجئے۔</span></p>
     <p align="right"><img src="hunza_nagar_text.png" name="Hunza Burushaski Text"
 
-        alt="Hunza Burushaski Text" align="bottom" height="362" width="463" border="0">
+        alt="Hunza Burushaski Text" align="bottom" border="0">
     </p>
     <p align="right"><br>
       <br>
