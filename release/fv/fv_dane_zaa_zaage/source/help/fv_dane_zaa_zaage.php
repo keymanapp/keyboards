@@ -27,7 +27,13 @@ END;
 <p>By holding the ALT key, you can return to the standard US English keyboard value of any modified key (such as <strong>p, r, q, v, x</strong>, and various punctuation). Shift-Alt will give you the standard English shifted value of the modified key (such as <strong>P, R, Q, V, Z</strong>, etc).</p>
 
 <h2>Mobile/Tablet Touch Layout</h2>
-<div id='osk-tablet' data-states='default shift numeric'>
+
+<div id='wikitext'>
+<div class='vspace'></div>
+<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>´</td><td  align='center'>w</td><td  align='center'>e ę</td><th  align='center'>ˇ</th><td  align='center'>t t̲s̲</td><td  align='center'>y</td><td  align='center'>u</td><td  align='center'>i</td><td  align='center'>o ǫ</td><td  align='center'>ˆ</td></tr>
+<tr ><td  align='center'>a ą</td><td  align='center'>s s̲</td><td  align='center'>d d̲z̲</td><td  align='center'>˛</td><td  align='center'>g</td><td  align='center'>h</td><td  align='center'>j</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>’</td></tr>
+<tr ><td >&nbsp;</td><td  align='center'>z z̲</td><td  align='center'>_</td><td  align='center'>c</td><td  align='center'>ʔ</td><td  align='center'>b</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
+</table>
 
 <p>Accent marks are located in the top row.</p>
 
