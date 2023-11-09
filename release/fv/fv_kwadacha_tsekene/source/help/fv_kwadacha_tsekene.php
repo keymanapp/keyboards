@@ -41,7 +41,17 @@ This keyboard is designed for the <b>Kwadacha Tsek’ene/b> language of the BC I
 
 <br/>
 
+<h2>Notes on touch layout</h2>
+<div id='wikitext'>
+<div class='vspace'></div>
+<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>`</td><td  align='center'>w</td><td  align='center'>e è ę é ę̀ ę́</td><th  align='center'>´</th><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u ù ų ú ų̀ ų́</td><td  align='center'>i ì į í į̀ į́</td><td  align='center'>ò ǫ ó ǫ̀ ǫ́</td><td  align='center'>p</td></tr>
+<tr ><td  align='center'>a à ą á ą̀ ą́</td><td  align='center'>s</td><td  align='center'>d</td><td  align='center'>g</td><td  align='center'>h</td><td  align='center'>j</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>’</td>
+<tr ><td >&nbsp;</td><td  align='center'>z</td><td  align='center'>˛</td><td  align='center'>c</td><td  align='center'>˛̀</td><td  align='center'>˛́</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
+</table>
+<div class='vspace'></div><ul><li>keys with a red background are combining accents.
+</li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
+</li>
+
 <h2>Keyboard Layout</h2>
 <div id='osk'>
 </div>
-<div id='osk-tablet' data-states='default shift numeric'></div>
