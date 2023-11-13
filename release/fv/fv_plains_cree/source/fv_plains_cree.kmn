@@ -11,12 +11,12 @@ begin Unicode > use(main)
 group(main) using keys
 
 c --- START OF DESKTOP RULES ---
-store(ShortVowelsOnly) 'ᐁᐃᐅᐊ' c e i o a
-store(LongVowelsOnly) 'ᐁᐄᐆᐋ' c e ii oo aa
-store(VowelKeys) [K_E] [K_I] [K_O] [K_A]
+store(ShortVowelsOnly) 'ᐃᐅᐊ' c i o a
+store(LongVowelsOnly) 'ᐄᐆᐋ' c ii oo aa
+store(VowelKeys) [K_I] [K_O] [K_A]
 
-store(WShortVowels) 'ᐍᐏᐓᐘ' c we wi wo wa
-store(WLongVowels) 'ᐍᐑᐕᐚ' c we wii woo waa
+store(WShortVowels) 'ᐏᐓᐘ' c wi wo wa
+store(WLongVowels) 'ᐑᐕᐚ' c wii woo waa
 
 store(KShortVowels) 'ᑫᑭᑯᑲ' c ke ki ko ka
 store(KLongVowels) 'ᑫᑮᑰᑳ' c ke kii koo kaa
@@ -76,6 +76,7 @@ any(LongVowelsOnly) + [K_BKSP] > index(ShortVowelsOnly,1)
 
 
 +'w' > 'ᐤ'
+'ᐤ' + [K_E] > 'ᐍ'
 'ᐤ' + any(VowelKeys) > index(WShortVowels,2)
 any(WShortVowels) + any(VowelKeys) > index(WLongVowels,1)
 any(WShortVowels) + [K_BKSP] > 'ᐤ'
@@ -154,6 +155,10 @@ any(YLongVowels) + [K_BKSP] > index(YShortVowels,1)
 'ᔰ' + any(VowelKeys) > index(YWShortVowels,2)
 any(YWShortVowels) + any(VowelKeys) > index(YWLongVowels,1)
 any(YWLongVowels) + [K_BKSP] > index(YWShortVowels,1)
+
+c added backspace rule for syllables including 'e' as they do not backspace otherwise
+c store(HasE) 'ᐁᑫᑵᐯᐻᑌᑘᒉᒓᒣᒭᓀᓊᓭᓷᔦᔰ' c e ke kwe pe pwe te twe ce cwe me mwe ne nwe se swe ye ywe
+c any(HasE) + [K_BKSP] > 
 
 c --- modified punctuation ---
 + [K_LBRKT] > deadkey(Deadkey) 
