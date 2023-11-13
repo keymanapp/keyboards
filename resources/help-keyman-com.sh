@@ -210,8 +210,6 @@ function commit_and_push {
 
   local branch=auto/keyboards/upload/$uuid
 
-  echo "ensuring master is up to date"
-  git pull origin master || return 1
   git add keyboard || return 1
   git diff --cached --no-ext-diff --quiet --exit-code && {
     # if no changes then don't do anything.
@@ -239,9 +237,19 @@ function commit_and_push {
   return 0
 }
 
+function update_help_repo() {
+  pushd $HELP_KEYMAN_COM
+  echo "ensuring master is up to date"
+  git pull origin master || return 1
+  popd
+
+  return 0
+}
+
 #
 # Main
 #
 
+update_help_repo || exit 1
 upload_keyboard_helps_by_target || exit 1
 commit_and_push || exit 1
