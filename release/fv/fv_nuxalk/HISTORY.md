@@ -1,9 +1,5 @@
 Nuxalk Change History
 ============================
-10.0.1 (13 Nov 2023)
------------------
-* Changed order of mobile layers to unscramble display on help page
-
 10.0 (30 Oct 2023)
 -----------------
 * Added missing l key
