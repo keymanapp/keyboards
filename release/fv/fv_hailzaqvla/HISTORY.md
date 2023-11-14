@@ -1,5 +1,8 @@
 Haiɫzaqvla Change History
 ============================
+9.4.1 (25 Oct 2023)
+----------------
+* Changed order of mobile layers to unscramble display on help page
 
 9.4 (18 Jan 2022)
 ----------------
