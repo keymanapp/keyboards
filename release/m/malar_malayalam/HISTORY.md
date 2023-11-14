@@ -1,6 +1,10 @@
 Malar Malayalam Keyboard Change History
 ====================
 
+1.7 (2023-10-22)
+----------------
+* Allow space after ZWJ (200D) to type words ending with legacy encoding chillu characters.
+
 1.6 (2023-03-17)
 ----------------
 * Fix `ntha` keystroke to get conjunct `n̪t̪a` `<0D28, 0D4D, 0D24>`.
