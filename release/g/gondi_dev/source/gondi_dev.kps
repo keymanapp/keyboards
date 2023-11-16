@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.163.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.206.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Gondi (Devanagari)</Name>
-    <Copyright URL="">© 2018-2021 SIL International</Copyright>
+    <Copyright URL="">© 2018-2023 SIL International</Copyright>
     <Author URL="mailto:mark_penny@sil.org">Mark Penny</Author>
     <WebSite URL="http:\\gondwana.in">http:\\gondwana.in</WebSite>
   </Info>
@@ -40,12 +40,6 @@
       <Description>File gondi_dev.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\fonts\AnnapurnaSIL-Regular.ttf</Name>
-      <Description>Font Annapurna SIL</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>welcome\welcome.htm</Name>
@@ -125,14 +119,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.php</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil\AnnapurnaSIL-Bold.ttf</Name>
+      <Description>Font Annapurna SIL Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil\AnnapurnaSIL-Regular.ttf</Name>
+      <Description>Font Annapurna SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Gondi (Devanagari)</Name>
       <ID>gondi_dev</ID>
-      <Version>1.1.1</Version>
-      <OSKFont>..\fonts\AnnapurnaSIL-Regular.ttf</OSKFont>
-      <DisplayFont>..\fonts\AnnapurnaSIL-Regular.ttf</DisplayFont>
+      <Version>1.1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\annapurna_sil\AnnapurnaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\annapurna_sil\AnnapurnaSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="esg-Deva">Aheri Gondi (Devanagari)</Language>
         <Language ID="wsg-Deva">Adilabad Gondi (Devanagari)</Language>
