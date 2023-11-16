@@ -1,6 +1,6 @@
 <?php 
-  $pagename = '\'Uwik̓ala Keyboard Help';
-  $pagetitle = '\'Uwik̓ala Keyboard Help';
+  $pagename = '\’Wuìk̓ala Keyboard Help';
+  $pagetitle = '\’Wuìk̓ala Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>'Uwik̓ala</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>’Wuìk̓ala</b> language of the BC Coast region of Canada.
 </p>
 
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.

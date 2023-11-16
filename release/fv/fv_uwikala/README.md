@@ -1,7 +1,7 @@
-'Uwik̓ala keyboard
+’Wuìk̓ala keyboard
 ======================
 
-'Uwik̓ala keyboard layout for Unicode
+’Wuìk̓ala keyboard layout for Unicode
 
 Links
 -----
