@@ -1,6 +1,10 @@
 ﻿Change History
 =======================
 
+1.5.2 (18 Nov 2023)
+-------------------
+* Reorder punctuation on longpress of period key
+
 1.5.1 (1 Jul 2021)
 --------------------
 * Add new version of Andika font (with new weights) to the package 
