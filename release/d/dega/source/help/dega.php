@@ -44,7 +44,6 @@
 
 <ul>
 <li><kbd> A </kbd> + <kbd> A </kbd> = Â </li>
-<li><kbd> A </kbd> + <kbd> W </kbd> = Ă </li>
 <li><kbd> A </kbd> + <kbd> X </kbd> = Ă </li>
 <li><kbd> A </kbd> + <kbd> A </kbd> + <kbd> X </kbd> = Â̆ </li>
 </ul>
@@ -108,11 +107,7 @@
    <div id='osk' data-states='default shift'></div>
 
   <h2>Phone</h2>
-   <div id='osk-phone' data-states='default shift numeric'></div>
-
-   <h3>Longpress</h3>
-	<p>Keys with a little dot on the top right can be pressed and held for more keys.</p>
-	<p><a href="touch_longpress.png"><img class="keyboard" src="touch_longpress.png" alt="Longpress state" /></a></p>
+   <div id='osk-phone' data-states='default shift numeric more'></div>
 	
   <h2>Tablet</h2>
    <div id='osk-tablet' data-states='default shift'></div>
