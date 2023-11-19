@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright ©2022-3 Carisa Chang
+Copyright © 2022-2023 Carisa Chang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

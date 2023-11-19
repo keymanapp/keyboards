@@ -29,7 +29,7 @@ See the FONTLOG for information on this and previous releases.
 For further information about this font, including Unicode ranges
 supported, Graphite font features and how to use them, 
 and licensing, please see the documentation on the website 
-(http://software.sil.org/awami) or in the documentation 
+(https://software.sil.org/awami) or in the documentation 
 subfolder of this font package.
 
 TIPS
@@ -42,7 +42,7 @@ situations. In particular, it has been tested and shown to work on
 Windows 10. Graphite capabilities have been tested on Graphite-supported platforms.
 
 If you do find a problem, please do report it through the website: 
-http://software.sil.org/awami/support.
+https://software.sil.org/awami/support.
 We can't guarantee any direct response, but will try to fix reported bugs in
 future versions. 
 
@@ -69,11 +69,11 @@ cannot use the built-in keyboards of the operating system, you will
 need to install the appropriate keyboard and input method for the 
 characters of the language you wish to use. If you want to enter 
 characters that are not supported by any system keyboard, the Keyman 
-program (www.keyman.com) can be helpful on Windows, macOS, Linux, 
+program (https://keyman.com) can be helpful on Windows, macOS, Linux, 
 Android and iOS systems. Also available for Windows is MSKLC 
-(http://www.microsoft.com/globaldev/tools/msklc.mspx). 
-For other platforms, XKB (http://www.x.org/wiki/XKB) or Ukelele 
-(http://scripts.sil.org/ukelele) can be helpful.
+(https://www.microsoft.com/globaldev/tools/msklc.mspx). 
+For other platforms, XKB (https://www.x.org/wiki/XKB) or Ukelele 
+(https://software.sil.org/ukelele) can be helpful.
 
 If you want to enter characters that are not supported by any system
 keyboard, and to access the full Unicode range, we suggest you use 
@@ -83,11 +83,11 @@ Adobe InDesign. They can display a glyph palette that shows all the
 glyphs (symbols) in a font and allow you to enter them by clicking 
 on the glyph you want.
 
-Other suggestions are listed here: http://scriptsource.org/entry/ytr8g8n6sw
+Other suggestions are listed here: https://scriptsource.org/entry/ytr8g8n6sw
 
 CONTACT
 ========
 For more information please visit the Awami Nastaliq page on SIL International's
-Computers and Writing systems website: http://software.sil.org/awami
+Computers and Writing systems website: https://software.sil.org/awami
 
-Support through the website: http://software.sil.org/awami/support
+Support through the website: https://software.sil.org/awami/support

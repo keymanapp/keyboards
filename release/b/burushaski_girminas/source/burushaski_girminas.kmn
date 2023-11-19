@@ -1,37 +1,43 @@
-c Burushaski Girminas is latin/Roman based keyboard developed by Quwat K. Sunny using the orthography approved by Buruśo Mahraka, a representative body of all three varieties of Buruśaski from Hunza Nagar and Yasin.
+c Burushaski Girminas is latin/Roman based keyboard developed by Quwat K. Sunny using the orthography approved by Burusho Maʰraka, a representative body of all three varieties of Burushaski from Hunza Nagar and Yasin.
 store(&VERSION) '10.0'
-store(&NAME) 'Burushãski Girminas'
-store(&COPYRIGHT) '2020 Quwat K. Sunny'
-store(&KEYBOARDVERSION) '2.0.23'
+store(&COPYRIGHT) 'Quwat K. Sunny'
+store(&KEYBOARDVERSION) '2.0.24'
 store(&TARGETS) 'any'
 store(&BITMAP) 'burushaski_girminas.ico'
-store(&KMW_HELPTEXT) 'śau, ćapan, c̣uk, chapuk, chell, ḍaḍaṅ'
-store(&MESSAGE) 'Developed for Burusho Mahraka/Maraka'
+store(&KMW_HELPTEXT) 'śau, ćapan, c̣uk, chapuk, chell, ḍaḍaṅ, ćhaq'
+store(&MESSAGE) 'Developed for Buruśo Maʰraka'
 store(&LAYOUTFILE) 'burushaski_girminas.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'burushaski_girminas.kvks'
+store(&NAME) 'Burushaski Girminas'
+
 
 begin Unicode > use(main)
 group(main) using keys
 
 
-store( plainvowels )  'a'    'e'    'i'    'o'    'u'      'A'    'E'    'I'    'O'    'U'
-store( acutevowels )  U+00E1 U+00E9 U+00ED U+00F3 U+00FA   U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+store( plainvowels )  'a'        'e'         'i'          'o'        'u'         'A'         'E'     'I'        'O'   
+store( acutevowels )  U+00E1 U+00E9 U+00ED U+00F3 U+00FA   U+00C1 U+00C9 U+00CD U+00D3 U+00DA   
 store (tildediacritic) U+00E3 U+1EBD U+0129 U+00F5 U+0169  U+00C3 U+1EBC U+0128 U+00D5 U+0168
 store( longvowels )  U+0101  U+0113 U+012B  U+014D U+016B U+0100 U+0112 U+012A U+014C U+016A
 
+store(consonants) 'c'  's'                                       'C'         'S'
+store(acuteconsonant)  U+0107  U+015B             U+0106     U+015A
 
-"," + "e" > U+00E9 c extra acute e for causative
-"," + "E" > U+00C9 c capitalization of the same rule  
+c for accute and long vowels 
 
-"'" + any( plainvowels ) > index( acutevowels, 2 )
+"," + any( plainvowels ) > index( acutevowels, 2 )
 '~' + any( plainvowels ) > index(tildediacritic, 2)
-';' + any( plainvowels ) > index (longvowels,2)    
+'.' + any( plainvowels ) > index (longvowels, 2)
+',' + any (consonants) > index(acuteconsonant, 2)
 
 
 "." + "c" >  U+0063 U+0323  c for IPA ʈʂ as in c̣arara 
 "." + "C" >  U+0043 U+0323  c Capitalization of the same rule
 
-"c" + "c" > U+0107   c for IPA tʃ as in China
-"C" + "C" > U+0106   c capitalization of the same rule. Ć
+
+"c" + "c" >  U+0063 U+0323  c for IPA ʈʂ as in c̣arara (for touch screen)
+"C" + "C" >  U+0043 U+0323  c Capitalization of the same rule (for touch screen)
+
 
 "." + "g" > U+0121   c for IPA ɣ as in ġaśu
 "." + "G" > U+0120   c capitalization of the same rule
@@ -39,15 +45,13 @@ store( longvowels )  U+0101  U+0113 U+012B  U+014D U+016B U+0100 U+0112 U+012A U
 "." + "d" >  U+1E0D  c for IPA ɖ as in ḍaḍaṅ
 "." + "D" >  U+1E0C  c for capitalization of the same rule. 
 
-"s" + "h" > U+015B   c  for IPA ʃ as in Peśawar
-"S" + "S" > U+015A   c  capitalization of the same rule. 
-
-U+015B + "h" > "sh"
-U+015A + "h" > "Sh"
-
 
 "." + "n" >  U+1E45  c for IPA ŋ  as in ġaýiṅ
 "." + "N" >  U+1E44  c capitalization of the same rule. 
+
+"," + "n" >  U+1E47  c for IPA ŋ  as in ġaýiṅ
+"," + "N" >  U+1E46  c capitalization of the same rule.
+
 
 "." + "s" > U+1E63   c  for IPA ʂ as in ṣapik 
 "." + "S" > U+1E62   c  capitalization of the same rule. 
@@ -58,7 +62,7 @@ U+015A + "h" > "Sh"
 "." + "T" > U+1E6C   c capitalization of the same rule. 
 
 "." + "y" >  U+1E8F  c
-"." + "Y" >  U+1E8Ec
+"." + "Y" >  U+1E8E  c
 
 "." + "z" >  U+1E93  C for IPA ʐ as in ẓakun (donkey)
 "." + "Z" >  U+1E92  C Capitalization of the same rule 
