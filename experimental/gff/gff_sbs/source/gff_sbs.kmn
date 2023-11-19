@@ -21,9 +21,10 @@ c  store(&EthnologueCode) 'gez'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
 store(&Message) 'This is a Geʾez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
 store(&CapsAlwaysOff) '1'
-store(&HotKey) '[CTRL ALT K_S]'
-store(&BITMAP) 'gff_sbs.ico'
+store(&HotKey) '[CTRL ALT K_B]'
 store(&VISUALKEYBOARD) 'gff_sbs.kvks'
+store(&TARGETS) 'windows macosx linux'
+store(&BITMAP) 'gff_sheik-bakri-sapalo-qubee.ico'
 $keymanonly:  store(&mnemonicLayout) "1"
 c 
 c =====================End Identity Section=====================================================
@@ -66,7 +67,6 @@ store(OrdersLongI) '
 store(OrdersLongE) ''
 store(OrdersLongO) ''
 store(OrdersConsonant) ''
-store(&TARGETS) 'windows macosx linux'
 
 begin Unicode > use(main)
 group(main) using keys
