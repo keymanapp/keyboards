@@ -1,0 +1,332 @@
+﻿store(&COPYRIGHT) '(c) 2018-2023 SIL International'
+store(&BITMAP) 'sil_akebu.ico'
+store(&MESSAGE) 'Use ! or AltGr to access special characters.'
+store(&LAYOUTFILE) 'sil_akebu.keyman-touch-layout'
+store(&KEYBOARDVERSION) '6.0.9'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'sil_akebu.kvks'
+store(&KMW_EMBEDCSS) 'sil_akebu.css'
+store(&KMW_HELPTEXT) 'Use the ! key to access special characters.'
+store(&CasedKeys) [K_A]..[K_Z] [K_0]..[K_9] [K_HYPHEN] [K_EQUAL] [K_LBRKT] [K_RBRKT] [K_BKSLASH] [K_QUOTE] [K_COMMA] [K_PERIOD] [K_COLON]
+c Technically, [K_SLASH] should be in the above list, but I'm choosing not to add it to avoid confusion.  
+store(&NAME) 'Akebu'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(word) " aɛbɓcdɖeǝfghiɩjklmnŋoɔprstuʊvwyzqxAƐBCDƉEƎFGHIƖJKLMNŊOƆPRSTUƱVWYZ◌-'QX" U+0300 U+0301 U+030C U+0302
+store(letter) "aɛbɓcdɖeǝfghiɩjklmnŋoɔprstuʊvwyzqxAƐBCDƉEƎFGHIƖJKLMNŊOƆPRSTUƱVWYZ◌QX"
+store(lc) "aɛbɓcdɖeǝfghiɩjklmnŋoɔprstuʊvwyzqx◌"
+store(uc) "AƐBCDƉEƎFGHIƖJKLMNŊOƆPRSTUƱVWYZ◌QX"
+store(composed) "àèìǹòùẁỳÀÈÌǸÒÙẀỲᾺáćéǵíḱĺḿńóṕŕśúẃýźÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹΆâĉêĝĥîĵôŝûŵŷẑÂĈÊĜĤÎĴÔŜÛŴŶẐāēḡīōūȳĀĒḠĪŌŪȲᾹäëḧïöẗüẍÿÄËḦÏÖÜẌŸạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒçḑȩģḩķļņŗşţÇḐȨĢḨĶĻŅŖŞŢḛḭṵḚḬṴãẽĩñõũṽỹÃẼĨÑÕŨṼỸḉḈậệộẬỆỘẫễỗẪỄỖṻṺḹṝḸṜﬀﬃﬄﬁﬂĲĳǇǈǉǊǋǌﬆﬅ"
+store(comp-dia) "aeinouwyAEINOUWYΑacegiklmnoprsuwyzACEGIKLMNOPRSUWYZΑaceghijosuwyzACEGHIJOSUWYZaegiouyAEGIOUYΑaehiotuxyAEHIOUXYabdehiklmnorstuvwyzABDEHIKLMNORSTUVWYZcdeghklnrstCDEGHKLNRSTeiuEIUaeinouvyAEINOUVYçÇạẹọẠẸỌâêôÂÊÔūŪḷṛḶṚfﬀﬀffIiLLlNNnsf"
+store(nfpunct) "',:;"
+store(final) "!?."
+store(num) "0123456789"
+store(diablock) " 0123456789?!;:'-_=<©®>.,[]{}\\/@°#$%^&*()«»‹›‘“’”€¥£µ…†ʼꞌꞋ" U+0022 U+007C
+store(dia) U+0300 U+0301 U+030C U+0302
+
+platform('touch') any(word) any(final) + [K_SPACE] > index(word,2) index(final,3) " " layer('shift')
+platform('touch') any(word) U+0020 + [K_SPACE] > index(word,2) U+002E " " layer('shift')
+any(composed) + [K_BKSP] > index(comp-dia,1)
+
+
++ [LCTRL K_SPACE] > U+00A0
++ [K_SPACE] > U+0020
++ [SHIFT K_SPACE] > U+0020
++ [RCTRL K_SPACE] > U+00A0
+
++ [K_0] > U+00E0
++ [RALT K_0] > U+0040
++ [SHIFT K_0] > U+0030
++ [SHIFT RALT K_0] > BEEP
++ [T_0030] > U+0030
+
++ [K_1] > U+0026
++ [RALT K_1] > U+00B9
++ [SHIFT K_1] > U+0031
++ [SHIFT RALT K_1] > U+2018
++ [T_0031] > U+0031
+
++ [K_2] > U+00E9
++ [RALT K_2] > U+007E
+c ??
++ [SHIFT K_2] > U+0032
++ [SHIFT RALT K_2] > U+2019
++ [T_0032] > U+0032
+
++ [K_3] > U+0022
++ [RALT K_3] > U+0025
++ [SHIFT K_3] > U+0033
++ [SHIFT RALT K_3] > U+00AB
++ [T_0033] > U+0033
+
++ [K_4] > U+0027
++ [RALT K_4] > U+007B
++ [SHIFT K_4] > U+0034
++ [SHIFT RALT K_4] > U+00BB
++ [T_0034] > U+0034
+
++ [K_5] > U+0028
++ [RALT K_5] > U+005B
++ [SHIFT K_5] > U+0035
++ [SHIFT RALT K_5] > U+0023
++ [T_0035] > U+0035
+
++ [K_6] > U+002D
++ [RALT K_6] > U+007C
++ [SHIFT K_6] > U+0036
++ [SHIFT RALT K_6] > BEEP
++ [T_0036] > U+0036
+
++ [K_7] > U+00E8
++ [RALT K_7] > U+0060
++ [SHIFT K_7] > U+0037
++ [SHIFT RALT K_7] > BEEP
++ [T_0037] > U+0037
+
++ [K_8] > U+005F
++ [RALT K_8] > U+005C
++ [SHIFT K_8] > U+0038
++ [SHIFT RALT K_8] > BEEP
++ [T_0038] > U+0038
+
++ [K_9] > U+00E7
++ [RALT K_9] > U+005E
++ [SHIFT K_9] > U+0039
++ [SHIFT RALT K_9] > BEEP
++ [T_0039] > U+0039
+
++ [K_Q] > U+0061
++ [RALT K_Q] > U+025b
++ [SHIFT K_Q] > U+0041
++ [SHIFT RALT K_Q] > U+0190
+
++ [K_B] > U+0062
++ [SHIFT K_B] > U+0042
++ [RALT K_B] > BEEP
++ [SHIFT RALT K_B] > BEEP
+
++ [K_C] > U+0063
++ [RALT K_C] > BEEP
++ [SHIFT K_C] > U+0043
++ [SHIFT RALT K_C] > U+00A9
+
++ [K_D] > U+0064
++ [SHIFT K_D] > U+0044
++ [RALT K_D] > U+0256
++ [SHIFT RALT K_D] > U+0189
+
++ [K_E] > U+0065
++ [SHIFT K_E] > U+0045
++ [RALT K_E] > U+01DD
++ [SHIFT RALT K_E] > U+018E
+
++ [K_F] > U+0066
++ [SHIFT K_F] > U+0046
++ [SHIFT RALT K_F] > BEEP
++ [RALT K_F] > BEEP
+
++ [K_G] > U+0067
++ [SHIFT K_G] > U+0047
++ [RALT K_G] > BEEP
++ [SHIFT RALT K_G] > BEEP
+
++ [K_H] > U+0068
++ [SHIFT K_H] > U+0048
++ [RALT K_H] > BEEP
++ [SHIFT RALT K_H] > BEEP
+
++ [K_I] > U+0069
++ [SHIFT K_I] > U+0049
++ [SHIFT RALT K_I] > U+0196
++ [RALT K_I] > U+0269
+
++ [K_J] > U+006a
++ [SHIFT K_J] > U+004a
++ [SHIFT RALT K_J] > U+2122
++ [RALT K_J] > BEEP 
+
++ [K_K] > U+006b
++ [SHIFT K_K] > U+004b
++ [SHIFT RALT K_K] > BEEP 
++ [RALT K_K] > BEEP 
+
++ [K_L] > U+006c
++ [SHIFT K_L] > U+004c
++ [SHIFT RALT K_L] > U+00A3
++ [RALT K_L] >  BEEP
+
++ [SHIFT K_COLON] > U+004d
++ [K_COLON] > U+006d
++ [RALT SHIFT K_COLON] > U+00B5
++ [RALT K_COLON] > U+00F9
+
++ [K_N] > U+006e
++ [SHIFT K_N] > U+004e
++ [RALT K_N] > U+014b
++ [SHIFT RALT K_N] > U+014a
+
++ [K_O] > U+006f
++ [SHIFT K_O] > U+004f
++ [RALT K_O] > U+0254
++ [SHIFT RALT K_O] > U+0186
+
++ [K_P] > U+0070
++ [SHIFT K_P] > U+0050
++ [SHIFT RALT K_P] > BEEP
++ [RALT K_P] > BEEP
+
++ [K_A] > U+0071
++ [SHIFT K_A] > U+0051
++ [RALT K_A] > U+2014
++ [SHIFT RALT K_A] > U+2013
+
++ [K_R] > U+0072
++ [SHIFT K_R] > U+0052
++ [SHIFT RALT K_R] > U+00ae
++ [RALT K_R] > U+25cc
+
++ [K_S] > U+0073
++ [SHIFT K_S] > U+0053
++ [RALT K_S] > U+201C
++ [SHIFT RALT K_S] > U+201D
+
++ [K_T] > U+0074
++ [SHIFT K_T] > U+0054
++ [RALT K_T] > BEEP
++ [SHIFT RALT K_T] > BEEP
+
++ [K_U] > U+0075
++ [SHIFT K_U] > U+0055
++ [RALT K_U] > U+028A
++ [SHIFT RALT K_U] > U+01B1
+
++ [K_V] > U+0076
++ [SHIFT K_V] > U+0056
++ [RALT K_V] > BEEP
++ [SHIFT RALT K_V] > BEEP
+
++ [K_Z] > U+0077
++ [SHIFT K_Z] > U+0057
++ [RALT K_Z] > BEEP
++ [SHIFT RALT K_Z] > BEEP
+
++ [K_X] > U+0078
++ [SHIFT K_X] > U+0058
++ [SHIFT RALT K_X] > U+203A
++ [RALT K_X] > U+2039
+
++ [K_Y] > U+0079
++ [SHIFT K_Y] > U+0059
++ [RALT K_Y] > BEEP
++ [SHIFT RALT K_Y] > BEEP
+
++ [K_W] > U+007a
++ [SHIFT K_W] > U+005a
++ [RALT K_W] > U+2026
++ [SHIFT RALT K_W] > U+2020
+
++ [K_M] > U+002c
++ [RALT K_M] > beep
++ [SHIFT K_M] > U+003F
++ [SHIFT RALT K_M] > BEEP
++ [T_002C] > U+002C
++ [T_003F] > U+003F
+
++ [K_EQUAL] > U+003D
++ [RALT K_EQUAL] > U+007D
++ [SHIFT K_EQUAL] > U+002B
++ [SHIFT RALT K_EQUAL] > U+00B1
+
++ [K_COMMA] > U+003b
++ [RALT K_COMMA] > U+00B4
++ [SHIFT K_COMMA] > U+002E
++ [SHIFT RALT K_COMMA] > U+0060
++ [T_002E] > U+002E
++ [T_003B] > U+003B
+
++ [K_HYPHEN] > U+0029
++ [SHIFT K_HYPHEN] > U+00B0
++ [RALT K_HYPHEN] > U+005D
++ [SHIFT RALT K_HYPHEN] > beep
+
++ [K_PERIOD] > U+003A
++ [RALT K_PERIOD] > BEEP
++ [SHIFT K_PERIOD] > U+002F
++ [SHIFT RALT K_PERIOD] > BEEP
++ [T_003A] > U+003A
+
++ [NCAPS K_SLASH] > dk(0021)
++ [CAPS K_SLASH] > dk(0021)
++ [CAPS SHIFT K_SLASH] > U+00A7
++ [NCAPS SHIFT K_SLASH] > U+00A7
++ [T_0021] > U+0021
++ [NCAPS RALT K_SLASH] > U+0021
++ [NCAPS SHIFT RALT K_SLASH] > beep
+
++ [SHIFT K_BKQUOTE] > U+20AC
++ [K_BKQUOTE] > U+0024
++ [RALT K_BKQUOTE] > U+00B2
++ [SHIFT RALT K_BKQUOTE] > U+00B3
+
++ [K_LBRKT] > U+0301
++ [RALT K_LBRKT] > u+005E
++ [SHIFT K_LBRKT] > U+030C
++ [SHIFT RALT K_LBRKT] > U+00A8
+any(diablock) + [K_LBRKT] > context
+any(diablock) + [SHIFT K_LBRKT] > context
+
++ [K_BKSLASH] > U+002A
++ [RALT K_BKSLASH] > BEEP
++ [SHIFT K_BKSLASH] > U+00A4
++ [SHIFT RALT K_BKSLASH] > BEEP
+
++ [K_RBRKT] > U+0024
++ [RALT K_RBRKT] > BEEP
++ [SHIFT K_RBRKT] > U+00A3
++ [SHIFT RALT K_RBRKT] > BEEP
+
++ [K_QUOTE] > U+0300
++ [RALT K_QUOTE] > BEEP
++ [SHIFT K_QUOTE] > U+0302
++ [SHIFT RALT K_QUOTE] > BEEP
+any(diablock) + [K_QUOTE] > context 
+any(diablock) + [SHIFT K_QUOTE] > context
+
++ [K_OE2] > U+003C
++ [SHIFT K_OE2] > U+003E
++ [RALT K_OE2] > U+00AB
++ [SHIFT RALT K_OE2] > U+00BB
+
++ [T_CAM] > nul
++ [T_FCFA] > 'FCFA'
+c + [T_UPPER] > layer('default')
+
+c Handle Touch Diacritics (ignoring on non-letters)
+any(diablock) + [T_0300] > context
++ [T_0300] > U+0300
+any(diablock) + [T_0301] > context
++ [T_0301] > U+0301
+any(diablock) + [T_0302] > context
++ [T_0302] > U+0302
+any(diablock) + [T_0303] > context
++ [T_0303] > U+0303
+any(diablock) + [T_030C] > context
++ [T_030C] > U+030C
+
+
+match > use(deadkeys)
+
+group(deadkeys)
+
+dk(0021) dk(0021) > U+0021
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+store(dkf0021)	U+0020	U+0024	U+0026	U+0027	U+0028	U+0029	U+002B	U+002D 	U+0031  U+0032  U+0035 	U+003C	U+003D	U+003E	U+003F	U+0041	U+0043	U+0044	U+0045	U+0049	U+004A	U+004C	U+004D	U+004E	U+004F	U+0051	U+0052	U+0053	U+0058	U+005A	U+0061 	U+0064	U+0065	U+0069	U+006D	U+006E	U+006F	U+0071	U+0072	U+0073	U+0078	U+007A  U+00E0	U+0301	U+20AC	U+0033	U+0034  U+0022  U+005F  U+002C U+003D U+002F U+006A  U+006b  U+004b U+006C U+0075 U+0055
+store(dkt0021)	U+0021	U+00B2	U+00B9	U+007B	U+005B	U+005D	U+00B1  U+007C	U+2018  U+2019  U+0023  U+00AB	U+007D	U+00BB	beep    U+0190  U+00A9	U+0189	U+018E	U+0196	U+2122	U+00A3	U+00B5	U+014A	U+0186	U+2013	U+00AE	U+201D	U+203A	U+2020	U+025B	U+0256	U+01DD	U+0269	U+00F9	U+014B	U+0254	U+2014	U+25CC	U+201C	U+2039	U+2026	U+0040	U+005E	U+00B3	U+00AB	U+00BB  U+0025  U+005C  beep   U+007D   beep    beep    beep     beep    beep   U+028A U+01B1
+dk(0021) any(dkf0021) > index(dkt0021, 2)
+
+c CAM U not listed as possibility.
+          
+c is 0308 the right diaeresis?
