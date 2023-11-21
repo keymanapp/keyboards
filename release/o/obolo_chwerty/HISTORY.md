@@ -1,6 +1,10 @@
 Obolo Chwerty Keyboard Change History
 ====================
 
+1.2.2 (2023-11-21)
+----------------
+* Update font to use shared Noto Sans
+
 1.2.1 (2022-06-19)
 ----------------
 * Updated kb to use caps and capslock

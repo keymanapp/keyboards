@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.206.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -39,12 +39,6 @@
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>NotoSans-Regular.ttf</Name>
-      <Description>Font Noto Sans</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\indigenous_nt.js</Name>
@@ -99,15 +93,39 @@
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>  
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Bold.ttf</Name>
+      <Description>Font Noto Sans Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-BoldItalic.ttf</Name>
+      <Description>Font Noto Sans Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Italic.ttf</Name>
+      <Description>Font Noto Sans Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</Name>
+      <Description>Font Noto Sans Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Indigenous NT</Name>
       <ID>indigenous_nt</ID>
-      <Version>4.0.4</Version>
-      <OSKFont>NotoSans-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSans-Regular.ttf</DisplayFont>
+      <Version>4.0.5</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="en">English</Language>
         <Language ID="fr">Français</Language>
