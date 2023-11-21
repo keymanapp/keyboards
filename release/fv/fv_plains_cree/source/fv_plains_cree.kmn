@@ -59,6 +59,8 @@ store(YLongVowels) 'ᔩᔫᔮ' c yii yoo yaa
 store(YWShortVowels)'ᔲᔶᔺ' c ywi ywo ywa
 store(YWLongVowels) 'ᔴᔸᔼ' c ywii ywoo ywaa
 
+store(LShortVowels)
+
 any(LongVowelsOnly) + [K_BKSP] > index(ShortVowelsOnly,1)
 
 c standalone vowels
@@ -69,6 +71,8 @@ c standalone vowels
 'ᐅ' + [K_O] > 'ᐆ'
 + 'a' > 'ᐊ'
 'ᐊ' + [K_A] > 'ᐋ'
+any(ShortVowelsOnly) + [K_W] > index(WShortVowels,1)
+any(LongVowelsOnly) + [K_W] > index(WLongVowels,1)
 
 c standalone consonants
 + 'l' > 'ᓬ'
