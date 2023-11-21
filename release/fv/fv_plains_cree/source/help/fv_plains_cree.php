@@ -29,7 +29,7 @@ This keyboard is for writing <b>ᓀᐦᐃᔭᐍᐏᐣ</b> (Plains Cree syllabics
 </p>
 
 <ul>
-	<li>The syllabics used to write ᓀᐦᐃᔭᐍᐏᐣ (Plains Cree) are typed by entering their Standard Roman Orthography Equivalents.
+	<li>The syllabics used to write ᓀᐦᐃᔭᐍᐏᐣ (Plains Cree) are typed by entering their Long Vowel Equivalents.
     <ul>
       <li><b>ᓀᐦᐃᔭᐍᐏᐣ</b> would be typed as 'nehiyawewin'</li>
     </ul>
