@@ -189,7 +189,8 @@ any(H_DigraphTargets) + any(H_Modifier) > index(H_DigraphTargetsGeminated,1)
 any(X_DigraphTargets) + any(X_Modifier) > index(X_DigraphTargetsGeminated,1)
 any(Y_DigraphTargets) + any(Y_Modifier) > index(Y_DigraphTargetsGeminated,1)
 
-any(OrdersConsonant) + "'" > context(1) deadkey(1)
+c any(OrdersConsonant) + "'" > context(1) deadkey(1)
++ "'" > deadkey(1)
  deadkey(1) + "'" > "'"
 
 
@@ -198,8 +199,10 @@ c Vowels
 + '*' > ''
 '' + '*' > ''
 '' + 'x' > '' 
-'' + '?' > ''
-'' + '?' > ''
+c '' + '?' > ''
+c '' + '?' > ''
+'' + "'" > ''
+'' + "'" > ''
 
 + any(VowelKeys) > index(GlottalShortVowels,1)
 '' + 'a' > ''
@@ -234,8 +237,9 @@ c  any(GeminatedPharyngealShortVowels) + any(VowelKeysUppercase) > index(Geminat
 
 '' + '*' > ''
 '' + '*' > ''
-'' + '?' > ''
-'' + '?' > ''
+'' + "'"  > ''
+'' + "'" > ''
+
 
 '' + '.' > '.'
 '' + any(AsciiNumbers) > '.' index(AsciiNumbers,2)
