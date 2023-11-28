@@ -3,7 +3,7 @@ Dogra Inscript Change History
 
 1.0.2 (2023-11-23)
 ----------------
-* Used font from shared folder rather than local
+* Use font from shared folder rather than local
 
 1.0.1 (2022-09-30)
 ----------------
