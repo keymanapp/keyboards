@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,18 +17,12 @@
   </StartMenu>
   <Info>
     <Name URL="">Buhid</Name>
-    <Copyright URL="">© 2021 Ilham Nurwansah</Copyright>
+    <Copyright URL="">© 2021-2023 Ilham Nurwansah</Copyright>
     <Author URL="mailto:ilhamnurwansah@gmail.com">Ilham Nurwansah</Author>
     <Version URL=""></Version>
     <WebSite URL="https://inurwansah.my.id/keyboards/">https://inurwansah.my.id/keyboards/</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>NotoSansBuhid-Regular.ttf</Name>
-      <Description>Font Noto Sans Buhid Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
     <File>
       <Name>..\build\buhid.js</Name>
       <Description>File buhid.js</Description>
@@ -82,14 +77,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Buhd\NotoSansBuhid-Regular.ttf</Name>
+      <Description>Font Noto Sans Buhid Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Buhid</Name>
       <ID>buhid</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSansBuhid-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansBuhid-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Buhd\NotoSansBuhid-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Buhd\NotoSansBuhid-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="tl-Buhd">Tagalog (Buhid)</Language>
       </Languages>

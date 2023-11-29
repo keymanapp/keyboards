@@ -1,7 +1,5 @@
-siddham_inscript keyboard
+Siddham Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Sanskrit language, using the Siddham script wi
 
 Links
 -----
+https://keyman.com/keyboards/siddham_inscript
 
 Copyright
 ---------

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.269.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -53,18 +53,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>brahmi_inscript.ico</Name>
-      <Description>File brahmi_inscript.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>NotoSansBrahmi-Regular.ttf</Name>
-      <Description>Font Noto Sans Brahmi Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>brahmi_desktopdefault.png</Name>
       <Description>File brahmi_desktopdefault.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -106,14 +94,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Brah\NotoSansBrahmi-Regular.ttf</Name>
+      <Description>Font Noto Sans Brahmi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Brahmi Inscript</Name>
       <ID>brahmi_inscript</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSansBrahmi-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansBrahmi-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Brah\NotoSansBrahmi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Brah\NotoSansBrahmi-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="sa-Brah">Sanskrit (Brahmi)</Language>
       </Languages>

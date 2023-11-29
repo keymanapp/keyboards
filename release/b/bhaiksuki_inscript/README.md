@@ -1,7 +1,5 @@
-bhaiksuki_inscript keyboard
+Bhaiksuki Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Sanskrit language, using the Bhaiksuki script 
 
 Links
 -----
+https://keyman.com/keyboards/bhaiksuki_inscript
 
 Copyright
 ---------
