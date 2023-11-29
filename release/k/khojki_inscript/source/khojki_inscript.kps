@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -59,12 +59,6 @@
       <FileType>.ico</FileType>
     </File>
     <File>
-      <Name>NotoSansKhojki-Regular.ttf</Name>
-      <Description>Font Noto Sans Khojki Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>khojki_desktopdefault.png</Name>
       <Description>File khojki_desktopdefault.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -94,14 +88,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Khoj\NotoSansKhojki-Regular.ttf</Name>
+      <Description>Font Noto Sans Khojki Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Khoj\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Khojki Inscript</Name>
       <ID>khojki_inscript</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>NotoSansKhojki-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansKhojki-Regular.ttf</DisplayFont>
+      <Version>1.0.3</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Khoj\NotoSansKhojki-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Khoj\NotoSansKhojki-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="sd-Khoj">Sindhi (Khojki)</Language>
       </Languages>
