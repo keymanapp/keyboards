@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -22,18 +22,6 @@
     <Author URL="">Joshua Wong</Author>
   </Info>
   <Files>
-    <File>
-      <Name>dogra_inscript.ico</Name>
-      <Description>File dogra_inscript.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>NotoSerifDogra-Regular.ttf</Name>
-      <Description>Font Noto Serif Dogra Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -88,14 +76,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Dogr\NotoSerifDogra-Regular.ttf</Name>
+      <Description>Font Noto Serif Dogra Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dogra Inscript</Name>
       <ID>dogra_inscript</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSerifDogra-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSerifDogra-Regular.ttf</DisplayFont>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Dogr\NotoSerifDogra-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Dogr\NotoSerifDogra-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="doi-Dogr">Dogri (macrolanguage) (Dogra)</Language>
       </Languages>
