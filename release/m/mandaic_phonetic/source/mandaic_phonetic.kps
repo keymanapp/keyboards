@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.280.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Mandaic Phonetic</Name>
-    <Copyright URL="">© 2020-2021 SIL International</Copyright>
+    <Copyright URL="">© 2020-2023 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
   </Info>
@@ -65,32 +65,26 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\assets\LICENSE_OFL.txt</Name>
-      <Description>File LICENSE_OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\assets\NotoSansMandaic-Regular.ttf</Name>
-      <Description>Font Noto Sans Mandaic Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\build\mandaic_phonetic.js</Name>
       <Description>File mandaic_phonetic.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Mand\NotoSansMandaic-Regular.ttf</Name>
+      <Description>Font Noto Sans Mandaic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Mandaic Phonetic</Name>
       <ID>mandaic_phonetic</ID>
-      <Version>1.1</Version>
+      <Version>1.1.1</Version>
       <RTL>True</RTL>
-      <OSKFont>..\assets\NotoSansMandaic-Regular.ttf</OSKFont>
-      <DisplayFont>..\assets\NotoSansMandaic-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\noto\Mand\NotoSansMandaic-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Mand\NotoSansMandaic-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="mid-Mand">Mandaic (Mandaic)</Language>
       </Languages>

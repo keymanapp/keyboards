@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -15,7 +16,7 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">hanunoo</Name>
+    <Name URL="">Hanunoo</Name>
     <Copyright URL="">© 2022-2023 Ilham Nurwansah</Copyright>
     <Author URL="mailto:info@kairaga.com">Ilham Nurwansah</Author>
     <Version URL=""></Version>
@@ -41,12 +42,6 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>NotoSansHanunoo-Regular.ttf</Name>
-      <Description>Font Noto Sans Hanunoo Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\source\welcome\hano_kbd1.png</Name>
       <Description>File hano_kbd1.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -64,14 +59,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Hano\NotoSansHanunoo-Regular.ttf</Name>
+      <Description>Font Noto Sans Hanunoo Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Hano\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>hanunoo</Name>
+      <Name>Hanunoo</Name>
       <ID>hanunoo</ID>
-      <Version>1.1</Version>
-      <OSKFont>NotoSansHanunoo-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansHanunoo-Regular.ttf</DisplayFont>
+      <Version>1.1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Hano\NotoSansHanunoo-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Hano\NotoSansHanunoo-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="hnn-Hano">Hanunoo</Language>
         <Language ID="tl-Hano">Tagalog (Hanunoo)</Language>

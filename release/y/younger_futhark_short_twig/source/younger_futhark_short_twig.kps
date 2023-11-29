@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -53,12 +53,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>NotoSansRunic-Regular.ttf</Name>
-      <Description>Font Noto Sans Runic Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>short_twig_desktopdefault.png</Name>
       <Description>File short_twig_desktopdefault.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -76,14 +70,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Runr\NotoSansRunic-Regular.ttf</Name>
+      <Description>Font Noto Sans Runic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Runr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Younger Futhark Short-twig</Name>
       <ID>younger_futhark_short_twig</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSansRunic-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansRunic-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Runr\NotoSansRunic-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Runr\NotoSansRunic-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="sv-Runr">Swedish (Runic)</Language>
       </Languages>

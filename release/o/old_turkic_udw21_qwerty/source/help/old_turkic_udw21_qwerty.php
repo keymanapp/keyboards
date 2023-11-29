@@ -35,4 +35,4 @@
 <div id='osk-tablet' data-states='default'>
 </div>
 
-<p>© 2022 Mehmet Oguz Derin and Takahiro Harada</p>
+<p>© Mehmet Oguz Derin and Takahiro Harada</p>

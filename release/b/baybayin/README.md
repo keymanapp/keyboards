@@ -1,9 +1,6 @@
 Baybayin
 =====================
-Copyright (c) 2021-2022 Ilham Nurwansah
-
-Version 1.1
-
+Copyright (c) Ilham Nurwansah
 
 Keyboard for Tagalog with Baybayin script.
 

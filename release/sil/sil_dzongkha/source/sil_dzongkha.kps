@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1108.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,15 +18,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Dzongkha (SIL)</Name>
-    <Copyright URL="">© 2012-2018 SIL International</Copyright>
+    <Copyright URL="">© 2012-2023 SIL International</Copyright>
   </Info>
   <Files>
-    <File>
-      <Name>..\assets\DDC_Uchen.ttf</Name>
-      <Description>Font DDC_Uchen</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -51,14 +45,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</Name>
+      <Description>Font DDC_Uchen</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\tibt\ddc_uchen\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dzongkha (SIL)</Name>
       <ID>sil_dzongkha</ID>
-      <Version></Version>
-      <OSKFont>..\assets\DDC_Uchen.ttf</OSKFont>
-      <DisplayFont>..\assets\DDC_Uchen.ttf</DisplayFont>
+      <Version>1.1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</DisplayFont>
       <Languages>
         <Language ID="dz-BT">Dzongkha (Bhutan)</Language>
       </Languages>
