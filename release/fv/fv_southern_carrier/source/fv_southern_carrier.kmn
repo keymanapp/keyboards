@@ -89,7 +89,9 @@ store(&LAYOUTFILE) 'fv_southern_carrier.keyman-touch-layout'
 
 store(WithoutLine) 'ᙐᘦᑔᙑᘧᑕᗐᗑᗒᗓᗔᙒᗕᙓᙔᙕᙖᙗᙘᘮᙙᘯᘰᘱᘲᘳᘎᘏᘐᘑᘒᘓᙀᙁᙂᗄᙃᗯᗅᙄᗰᗆᙅᗱᗇᗲᗈᗳᑌᗉᗴᑎᑐᘢᘣᙎᘤᙏᘥᑓ'
 store(WithLine) 'ᙣᘬᗠᙤᘭᗡᗖᗗᗘᗙᗚᙥᗛᙦᙛᙜᙝᙞᙟᘴᙠᘵᘶᘷᘸᘹᘔᘖᘗᘘᘙᘛᙈᙉᙊᗊᙋᗵᗋᙌᗶᗌᙍᗷᗍᗸᗎᗹᗜᗏᗺᗝᗞᘨᘩᙡᘪᙢᘫᗟ'
+store(Line) [T_Q]
 c [T_Q] is the key that adds the line
+any(WithoutLine) + any(Line) > index(WithLine,1)
 
 + [T_W] > '˙'
 + [T_E] > 'ᐊ'
@@ -109,10 +111,12 @@ c [T_Q] is the key that adds the line
 store(WithoutMidLine) 'ᘪᘐᘞᗌᙣᐳᘄᙖᗷᗪᑐᘼᙊᗞᘰᗒᘤᘗᙩᘊᗆᗽᙝᙂᙐᐅᗱᗤᘶᗘ'
 store(WithMidLine) 'ᘫᘑᘟᗍᙤᐶᘅᙗᗸᗫᑓᘽᙋᗟᘱᗓᘥᘘᙪᘋᗇᗾᙞᙃᙑᐈᗲᗥᘷᗙ'
 c [T_P] is the key that inserts the midline
+any(WithoutMidLine) + [T_P] > index(WithMidline,1)
 
 store(WithoutBracket) 'ᘏᑌᗴᘐᑎᘑᘒᘮᘓᑐᘯᘰᘱᑓᘲᑔᙎᘳᑕᗯᙏᗰᙐᗱᙑᗲᙒᘎᗳᙓ'
 store(WithBracket) 'ᘝᗢᘀᘞᗣᘟᘠᘺᘡᗤᘻᘼᘽᗥᘾᗦᙧᘿᗧᗻᙨᗼᙩᗽᙪᗾᙫᘜᗿᙬ'
 c [T_A] is the key that adds the < shape bracket
+any(WithoutBracket) + [T_A] > index(WithBracket,1)
 
 + [T_S] > 'ᐣ'
 + [T_D] > 'ᐅ'
@@ -133,6 +137,7 @@ c [T_A] is the key that adds the < shape bracket
 store(WithoutDot)'ᘪᘐᘞᗌᙣᐳᘄᙖᗷᗪᑐᘼᙊᗞᘰᗒᘤᘗᙩᘊᗆᗽᙝᙂᙐᐅᗱᗤᘶᗘ'
 store(WithDot) 'ᘬᘒᘠᗎᙥᐷᘆᙘᗹᗬᑔᘾᙌᗠᘲᗔᘦᘙᙫᘌᗈᗿᙟᙄᙒᐉᗳᗦᘸᗚ'
 c [T_COLON] is the key that adds the mid character dot
+any(WithoutDot) + [T_COLON] > index(WithDot,1)
 
 
 + [T_Z] > 'ᐪ'
@@ -154,6 +159,7 @@ c [T_COLON] is the key that adds the mid character dot
 store(BeforeRotate) 'ᘏᗋᐱᘝᙢᘃᑎᗶᙕᗩᘻᙉᗝᘯᗑᘣᘖᙨᘉᗅᗼᙜᐃᙁᙏᗰᗣᘵᗗᘩ'
 store(AfterRotate) 'ᘎᗊᐯᘜᙡᘂᑌᗵᙔᗨᘺᙈᗜᘮᗐᘢᘔᙧᘈᗄᗻᙛᐁᙀᙎᗯᗢᘴᗖᘨ'
 c [T_PERIOD] is the rotate key
+any(BeforeRotate) + [T_PERIOD] > index(AfterRotate,1)
 
 + [T_x69_0] > 'ᙇ'
 + [T_x69] > 'ᙆ'
