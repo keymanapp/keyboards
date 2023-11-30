@@ -126,7 +126,6 @@ END;
 </head>
 
 <body>
-<h1>Mozhi Malayalam Keyman Keyboard</h1>
 	<p>This is a Keyman implementation of the Mozhi Layout for Malayalam. Mozhi has been popular among both ametures and enthusiasts alike for about a couple of decades.</p>
 
 	<h2>Keyboard Mapping in Keyman</h2>

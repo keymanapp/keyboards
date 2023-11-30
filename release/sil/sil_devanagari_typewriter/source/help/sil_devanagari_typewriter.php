@@ -9,7 +9,6 @@ END;
 require_once('header.php');
 ?>
 The Devanagari Typewriter (SIL) keyboard is designed for those users who are using traditional Nepali keyboard layout. The keyboard layout can be viewed by clicking on the Keyman icon and selecting the On-Screen Keyboard menu item, or by opening the Help documentation. This layout nearly matches the “Nepali Traditional” Windows keyboard layout with only few changes.
-<h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
@@ -129,4 +128,4 @@ Here.
 <h2>Phone Keyboard Layout</h2>
 <div id='osk-phone' data-states='default shift rightalt rightalt-shift'>
 </div>
-<p>©2015-2022 SIL International</p>
+<p>© SIL International</p>

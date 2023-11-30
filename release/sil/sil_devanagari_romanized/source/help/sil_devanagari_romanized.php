@@ -9,7 +9,7 @@ END;
 require_once('header.php');
 ?>
 <p>The Devanagari Romanized (SIL) keyboard maps the Devanagari characters to their respective keys on the US English keyboard. The keyboard layout can be viewed by clicking on the Keyman icon and selecting the On-Screen Keyboard menu item, or by opening the Help documentation. This layout matches the “Devanagari Romanized (SAG)” Windows keyboard layout.</p>
-<h1>Keyboard Layout</h1>
+
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

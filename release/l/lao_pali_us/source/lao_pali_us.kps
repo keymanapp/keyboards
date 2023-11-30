@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.279.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Lao Pali US</Name>
-    <Copyright URL="">© 2021  Dr Khampha Sidavong, John Durdin</Copyright>
+    <Copyright URL="">© 2021-2023  Dr Khampha Sidavong, John Durdin</Copyright>
     <Author URL="">Dr Khampha Sidavong, Dr John Durdin</Author>
     <Version URL=""></Version>
   </Info>
@@ -53,18 +53,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\assets\laopali_osk.ttf</Name>
-      <Description>Font LaoPaliOSK Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\sengbuhan.ttf</Name>
-      <Description>Font SengBuhan Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>welcome\lao_pali_us_S.png</Name>
       <Description>File lao_pali_us_S.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -76,14 +64,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\laoo\lao_pali_osk\laopali_osk.ttf</Name>
+      <Description>Font LaoPaliOSK Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\laoo\lao_pali_osk\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\laoo\seng_buhan\sengbuhan.ttf</Name>
+      <Description>Font SengBuhan Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lao Pali US</Name>
       <ID>lao_pali_us</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\assets\laopali_osk.ttf</OSKFont>
-      <DisplayFont>..\assets\sengbuhan.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\laoo\lao_pali_osk\laopali_osk.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\laoo\seng_buhan\sengbuhan.ttf</DisplayFont>
       <Languages>
         <Language ID="lo">Lao</Language>
       </Languages>

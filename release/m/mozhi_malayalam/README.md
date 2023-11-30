@@ -1,12 +1,8 @@
 Mozhi Malayalam Keyboard
 =====================
-Copyright © 2021-2022 Cibu C. J.
-
-Version 3.2
+Copyright © 2021-2023 Cibu C. J.
 
 Copyright © 2017-2020 Junaid P. V. for an older version
-
-Version 2.1
 
 Copyright © 2006-2018 Raj Nair for an older version
 

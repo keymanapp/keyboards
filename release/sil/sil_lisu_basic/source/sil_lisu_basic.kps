@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1086.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Lisu Basic (SIL)</Name>
-    <Copyright URL="">2018 SIL International</Copyright>
+    <Copyright URL="">© 2018-2023 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -38,36 +38,6 @@
       <Description>Keyboard Lisu Basic (SIL)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\assets\lisutzimu.ttf</Name>
-      <Description>Font LisuTzimu</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\lisutzimu-bold.ttf</Name>
-      <Description>Font LisuTzimu Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\lisutzimu-bolditalic.ttf</Name>
-      <Description>Font LisuTzimu Bold Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\lisutzimu-italic.ttf</Name>
-      <Description>Font LisuTzimu Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\ofl.txt</Name>
-      <Description>File ofl.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -93,16 +63,46 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu.ttf</Name>
+      <Description>Font LisuTzimu</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu-bold.ttf</Name>
+      <Description>Font LisuTzimu Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu-bolditalic.ttf</Name>
+      <Description>Font LisuTzimu Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu-italic.ttf</Name>
+      <Description>Font LisuTzimu Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lisu\lisutzimu\ofl.txt</Name>
+      <Description>File ofl.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lisu Basic (SIL)</Name>
       <ID>sil_lisu_basic</ID>
-      <Version></Version>
-      <OSKFont>..\assets\lisutzimu.ttf</OSKFont>
-      <DisplayFont>..\assets\lisutzimu.ttf</DisplayFont>
+      <Version>1.0.0</Version>
+      <OSKFont>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu.ttf</DisplayFont>
       <Languages>
-        <Language ID="lis-Lisu">Lisu (Fraser)</Language>
+        <Language ID="lis">Lisu</Language>
         <Language ID="atb-Lisu">Zaiwa (Fraser)</Language>
         <Language ID="lbc-Lisu">Lakkia (Fraser)</Language>
         <Language ID="lpo-Lisu">Lipo (Fraser)</Language>

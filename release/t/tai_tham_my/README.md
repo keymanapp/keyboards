@@ -1,9 +1,7 @@
 Tai Tham MY keyboard
 ==============
 
-© 2023 Tai Lue Literacy Committee
-
-Version 1.2
+© Tai Lue Literacy Committee
 
 Description
 -----------
