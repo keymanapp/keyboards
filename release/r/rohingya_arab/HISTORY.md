@@ -1,6 +1,10 @@
 Rohingya Arabic Keyboard Change History
 =======================
 
+1.1.1 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 1.1 (14 Dec 2020)
 -------------------
 * Add right-alt layers 

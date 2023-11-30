@@ -2,10 +2,9 @@ Rohingya Arabic Keyboard
 =====================
 
 * Name:           Rohingya Arabic
-* Copyright:      (C) 2012-2020 SIL International
-* Version:        1.1
+* Copyright:      (C) SIL International
 * BCP-47 codes:   rhg-Arab, rhg-Arab-x-fonna
-
+* Author:         Lorna Evans
 
 __DESCRIPTION__
 This keyboard was developed for keyboarding the Rohingya language using the Arabic script. 

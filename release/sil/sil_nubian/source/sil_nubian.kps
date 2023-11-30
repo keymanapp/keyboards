@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>welcome\welcome.htm</ReadMeFile>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -25,7 +25,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Nubian (SIL) Keyman Keyboard</Name>
-    <Copyright URL="">© 2008-2020 SIL International</Copyright>
+    <Copyright URL="">© 2008-2023 SIL International</Copyright>
     <Version URL=""></Version>
     <Author URL="">Lorna Priest Evans</Author>
     <WebSite URL="https://software.sil.org/SophiaNubian">https://software.sil.org/SophiaNubian</WebSite>
@@ -56,67 +56,67 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>FONTLOG.txt</Name>
+      <Name>..\build\sil_nubian.js</Name>
+      <Description>File sil_nubian.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\FONTLOG.txt</Name>
       <Description>File FONTLOG.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>OFL-FAQ.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\OFL-FAQ.txt</Name>
       <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>SophiaNubian_Readme.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\SophiaNubian_Readme.txt</Name>
       <Description>File SophiaNubian_Readme.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>SophiaNubian-B.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\SophiaNubian-B.ttf</Name>
       <Description>Font Sophia Nubian Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>SophiaNubian-BI.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\SophiaNubian-BI.ttf</Name>
       <Description>Font Sophia Nubian Bold Italic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>SophiaNubian-I.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\SophiaNubian-I.ttf</Name>
       <Description>Font Sophia Nubian Italic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>SophiaNubian-R.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\sophia_nubian\SophiaNubian-R.ttf</Name>
       <Description>Font Sophia Nubian</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\build\sil_nubian.js</Name>
-      <Description>File sil_nubian.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nubian (SIL)</Name>
       <ID>sil_nubian</ID>
-      <Version></Version>
-      <OSKFont>SophiaNubian-R.ttf</OSKFont>
-      <DisplayFont>SophiaNubian-R.ttf</DisplayFont>
+      <Version>1.2.5</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\sophia_nubian\SophiaNubian-R.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\sophia_nubian\SophiaNubian-B.ttf</DisplayFont>
       <Languages>
         <Language ID="fia-Copt">Nobiin</Language>
         <Language ID="dgl-Copt">Andaandi</Language>
