@@ -1,4 +1,4 @@
-Indígenas Bolivianos Change History
+IndÃ­genas Bolivianos Change History
 ====================
 
 1.0 (2022-May-6)

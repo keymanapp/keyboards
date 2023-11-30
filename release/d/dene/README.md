@@ -7,7 +7,7 @@ Version 2.1
 
 Description
 -----------
-This keyboard layout is designed for the Dene, Tlicho, North Slavy, south Slavy, and Gwich’in
+This keyboard layout is designed for the Dene, Tlicho, North Slavy, south Slavy, and Gwichâ€™in
 languages of Canada.
 
 Links
