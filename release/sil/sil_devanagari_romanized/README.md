@@ -1,9 +1,7 @@
 Devanagari Romanized (SIL)
 =================================
 
-Copyright © 2015-2022 SIL International
-
-Version 1.7
+Copyright © SIL International
 
 __DESCRIPTION__
 

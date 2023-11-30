@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.163.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -19,7 +19,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Gondi Telugu</Name>
-    <Copyright URL="">© 2018 SIL International</Copyright>
+    <Copyright URL="">© 2018-2023 SIL International</Copyright>
     <Author URL="mailto:mark_penny@sil.org">Mark Penny</Author>
     <WebSite URL="http:\\gondwana.in">http:\\gondwana.in</WebSite>
   </Info>
@@ -41,12 +41,6 @@
       <Description>File gondi_tel.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\fonts\Suranna UI.ttf</Name>
-      <Description>Font Suranna UI</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>gondi_tel_welcome_image_v2.png</Name>
@@ -132,14 +126,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\telu\suranna_ui\GNU.txt</Name>
+      <Description>File GNU.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\telu\suranna_ui\Suranna UI.ttf</Name>
+      <Description>Font Suranna UI</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Gondi (Telugu)</Name>
       <ID>gondi_tel</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>..\fonts\Suranna UI.ttf</OSKFont>
-      <DisplayFont>..\fonts\Suranna UI.ttf</DisplayFont>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\telu\suranna_ui\Suranna UI.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\telu\suranna_ui\Suranna UI.ttf</DisplayFont>
       <Languages>
         <Language ID="wsg-Telu">Adilabad Gondi (Telugu)</Language>
       </Languages>

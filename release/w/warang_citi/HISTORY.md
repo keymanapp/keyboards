@@ -1,5 +1,9 @@
 #Warang Citi Change History
 
+1.1.3 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 1.1.2 (2023-10-30)
 ----------------
 * Rearranged order of mobile layers for better help display

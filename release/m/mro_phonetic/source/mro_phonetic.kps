@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.102.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Mro Phonetic</Name>
-    <Copyright URL="">© 2020 SIL International</Copyright>
+    <Copyright URL="">© 2020-2023 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
     <WebSite URL="https://keyman.com/keyboards/mro_phonetic">https://keyman.com/keyboards/mro_phonetic</WebSite>
@@ -72,13 +72,13 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\assets\MroUnicode-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\mroo\mro_unicode\MroUnicode-Regular.ttf</Name>
       <Description>Font Mro Unicode</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\assets\OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\mroo\mro_unicode\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
@@ -88,9 +88,11 @@
     <Keyboard>
       <Name>Mro Phonetic</Name>
       <ID>mro_phonetic</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\mroo\mro_unicode\MroUnicode-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\mroo\mro_unicode\MroUnicode-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="mro-Mroo">Mru</Language>
+        <Language ID="mro">Mru</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

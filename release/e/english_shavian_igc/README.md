@@ -1,8 +1,6 @@
 Shaw Imperial keyboard
 ==============
 
-Version 1.2
-
 Description
 -----------
 
