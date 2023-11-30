@@ -1,8 +1,6 @@
-Baybayin
+Hanunoo
 =====================
-Copyright (c) 2022 Ilham Nurwansah
-
-Version 1.0
+Copyright (c) Ilham Nurwansah
 
 
 Keyboard for Hanunoo & Tagalog languages with Hanunoo script.

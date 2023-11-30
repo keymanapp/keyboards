@@ -14,15 +14,11 @@ require_once('header.php');
 	POP Directional Formatting key (U+202C) to reverse the right-to-left writing.
 </p>
 
-<h1>Keyboard Layout</h1>
+<p>The <b>Akatab</b> font is recommended for this keyboard.
+<b><a href="https://software.sil.org/akatab/" title="Download the latest version of the Akatab font" target="_blank" rel="noopener noreferrer">Download the latest version of the Akatab font</a></b>.
+</p>
 
-<!-- Insert Keyboard Layout Images or HTML here -->
-<p><b>Unshifted</b></p>
-<img src='tuareg_tifinaghU_.png' alt='Unshifted Keyboard Layout'>
-<p><b>Shifted</b></p>
-<img src='tuareg_tifinaghU_S.png' alt='Shifted Keyboard Layout'>
-<p><b>RightAlt (AltGr)</b></p>
-<img src='tuareg_tifinaghU_RA.png' alt='RightAlt Keyboard Layout'>
+<h2>Desktop Keyboard Layout</h2>
 
 <p>
    <b>Some tips for obscure keys</b><br>
@@ -31,12 +27,6 @@ require_once('header.php');
    Use RightAlt+f for POP DIRECTIONAL FORMATTING<br>
    Use RightAlt+g for LEFT-TO-RIGHT OVERRIDE (rappelez-vous <b>g</b>auche à droit)
 </p>
-
-<p>The <b>Akatab</b> font is recommended for this keyboard.
-<b><a href="https://software.sil.org/akatab/" title="Download the latest version of the Akatab font" target="_blank" rel="noopener noreferrer">Download the latest version of the Akatab font</a></b>.
-</p>
-
-<h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>
 

@@ -1,6 +1,6 @@
 ﻿<?php
-  $pagename = 'Aksara Bali Unicode Keyboard Help';
-  $pagetitle = 'Aksara Bali Unicode Keyboard Help';
+  $pagename = 'Aksara Bali Keyboard Help';
+  $pagetitle = 'Aksara Bali Keyboard Help';
   $style = <<<EXTRA
   span.bali {font-family: "Vimala","Noto Sans Balinese"; font-size: 12pt }
 EXTRA;

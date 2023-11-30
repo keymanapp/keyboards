@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,8 +17,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Dzongkha Basic</Name>
-    <Copyright URL="">© 2019 SIL International</Copyright>
+    <Copyright URL="">© 2019-2023 SIL International</Copyright>
     <Author URL=""></Author>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -166,18 +167,25 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>welcome\DDC_Uchen.ttf</Name>
+      <Name>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</Name>
       <Description>Font DDC_Uchen</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\tibt\ddc_uchen\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dzongkha Basic</Name>
       <ID>basic_kbddzo</ID>
-      <Version>1.0</Version>
-      <OSKFont>welcome\DDC_Uchen.ttf</OSKFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\tibt\ddc_uchen\DDC_Uchen.ttf</DisplayFont>
       <Languages>
         <Language ID="dz">Dzongkha</Language>
       </Languages>

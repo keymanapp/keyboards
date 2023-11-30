@@ -1,9 +1,7 @@
 SYL Keyboard
 ==============
 
-Copyright © 2019-2021 Sylheti Translation And Research
-
-Version 1.1
+Copyright Â© Sylheti Translation And Research
 
 Description
 -----------

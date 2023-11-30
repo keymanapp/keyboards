@@ -1,13 +1,11 @@
 Dzongkha Basic keyboard
 ==============
 
-© 2019 SIL International
-
-Version 1.0
+© SIL International
 
 Description
 -----------
-Dzongkha generated from template
+Dzongkha Basic keyboard was imported with permission from the Windows 10 keyboard.
 
 Links
 -----

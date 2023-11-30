@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.272.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -42,12 +42,6 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>NotoSansRejang-Regular.ttf</Name>
-      <Description>Font Noto Sans Rejang Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
@@ -71,14 +65,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Rjng\NotoSansRejang-Regular.ttf</Name>
+      <Description>Font Noto Sans Rejang Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Rjng\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Rejang</Name>
       <ID>rejang</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSansRejang-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansRejang-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Rjng\NotoSansRejang-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Rjng\NotoSansRejang-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="rej-Rjng">Rejang</Language>
       </Languages>

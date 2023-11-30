@@ -7,9 +7,8 @@
 
 ?>
 
-
 <p style='margin: 16px 0 0 0'>
-Dzongkha Basic keyboard 1.0 is generated from template.
+Dzongkha Basic keyboard was imported with permission from the Windows 10 keyboard.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
