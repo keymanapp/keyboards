@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,17 +18,11 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tai Nua</Name>
-    <Copyright URL="">© 2016-2020 Sai Ai Wong</Copyright>
+    <Copyright URL="">© 2016-2023 Sai Ai Wong</Copyright>
     <Author URL="mailto:admin@surehope.net">Sai Ai Wong</Author>
     <WebSite URL="www.surehope.net">www.surehope.net</WebSite>
   </Info>
   <Files>
-    <File>
-      <Name>TaiNuaAUnicode.ttf</Name>
-      <Description>Font TaiNua Font</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
     <File>
       <Name>..\build\tainua.kmx</Name>
       <Description>Keyboard Tai Nua</Description>
@@ -70,16 +65,34 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Tale\NotoSansTaiLe-Regular.ttf</Name>
+      <Description>Font Noto Sans Tai Le Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Tale\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tai Nua</Name>
       <ID>tainua</ID>
-      <Version></Version>
-      <OSKFont>TaiNuaAUnicode.ttf</OSKFont>
-      <DisplayFont>TaiNuaAUnicode.ttf</DisplayFont>
+      <Version>1.0.5</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Tale\NotoSansTaiLe-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Tale\NotoSansTaiLe-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="tdd-Tale">Tai Nüa</Language>
+        <Language ID="tdd">Tai Nüa</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
