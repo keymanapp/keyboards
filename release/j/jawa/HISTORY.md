@@ -1,6 +1,12 @@
 Nulisa Aksara Jawa Keyboard Change History
 =======================
 
+
+-----------------
+1 December 2023 - 2.0.1
+-----------------
+* Update to use newest version of fonts
+
 -----------------
 6 April 2021 - 2.0
 -----------------
