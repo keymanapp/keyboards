@@ -1,6 +1,10 @@
 Cipher Music (SIL) Change History
 =================================
 
+1.1.2 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 1.1.1 (2020-06-10)
 ----------------
 * Updated htm files for readability on Linux

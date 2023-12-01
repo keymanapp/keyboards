@@ -1,14 +1,14 @@
 ﻿c You need to use CharisSIL for this to work,
 store(&VERSION) '10.0'
 store(&NAME) 'Lahu'
-store(&COPYRIGHT) '© 2010-2020 Bob Prouty'
+store(&COPYRIGHT) '© Bob Prouty'
 store(&MESSAGE) 'This will allow you to type Lahu on any computer with CharisSIL'
 store(&BITMAP) 'lahu.ico'
 store(&VISUALKEYBOARD) 'lahu.kvks'
 c store(&KMW_HELPTEXT) 'This is the Help Text'  
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'lahu.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.1.1'
+store(&KEYBOARDVERSION) '1.1.2'
 begin Unicode > use(main)
 group(main) using keys
 + [ALT K_QUOTE] > '|'
