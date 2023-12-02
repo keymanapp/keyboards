@@ -1,30 +1,26 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c This is a Geʾez (ግዕዝ, ISO-639-2 gez) language mnemonic input method. They keyboard is designed
-c to work with the [EMUFI](https://emufi.geez.org/) project’s “Geʾez Manuscript Zemen” font (v1.2) which in turn 
-c provides numerous punctuation, numerals, and letter forms found in manuscripts but not yet available under 
-c the Unicode standard.
+c This is a Sheek Bakrii Saphalo script Qubee based input method. They keyboard is designed
+c to work with the [Athinkra Sheek Bakrii Saphalo](https://github.com/raeytype/sheek-bakrii-saphaloo) font (v1.x) which in turn 
+c encodes the script under Unicode's Private Use Area (PUA).
 c 
 c Keyman        :  http://www.keyman.com/
-c Documentation :  https://help.keyman.com/keyboard/gff_geez/1.2/gff_geez.php
-c Source        :  https://github.com/keymanapp/keyboards/gff_geez
+c Documentation :  https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php
+c Source        :  https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
-c Specification :  http://keyboards.ethiopic.org/specification/
-c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
-c 
 store(&Version) '15.0'
 store(&KEYBOARDVERSION) '1.0.0'
-store(&NAME) 'Sheikh Bakri Sapalo'
+store(&NAME) 'Sheek Bakrii Saphaloo'
 store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
-store(&Message) 'This is a Geʾez language mnemonic input method. It requires a font supporting Ethiopic script under the Unicode 4.1 standard.'
+store(&Message) 'This is a Sheek Bakrii Saphalo script Qubee based input method. It requires the included Athrinka Sheek Bakrii Saphaloo font.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_B]'
 store(&VISUALKEYBOARD) 'gff_sbs.kvks'
 store(&TARGETS) 'windows macosx linux'
 store(&BITMAP) 'gff_sheik-bakri-sapalo-qubee.ico'
-$keymanonly:  store(&mnemonicLayout) "1"
+c $keymanonly:  store(&mnemonicLayout) "1"
 c 
 c =====================End Identity Section=====================================================
 
@@ -63,18 +59,6 @@ store(QubeeKeys) 'bjdhwzxyklmnsfqrtgcpv'
 store(QubeeKeysUpper) 'BJDHWZXYKLMNSFQRTGCPV'
 store(OrdersConsonantsRegular) ''
 store(OrdersConsonantsGeminated) ''
-c store(OrdersBase) ''
-c store(OrdersShortA) ''
-c store(OrdersShortU) ''
-c store(OrdersShortI) ''
-c store(OrdersShortE) ''
-c store(OrdersShortO) ''
-c store(OrdersLongA) ''
-c store(OrdersLongU) ''
-c store(OrdersLongI) ''
-c store(OrdersLongE) ''
-c store(OrdersLongO) ''
-c store(OrdersConsonant) ''
 
 store(OrdersBase) ''
 store(OrdersShortA) ''
@@ -251,4 +235,3 @@ c  '' + ':' > ''
 
 '#' + any(AsciiNumbers) >  index(AsciiNumbers,2)
 + any(AsciiNumbers) > index(BakriSapaloNumbers,1)
-

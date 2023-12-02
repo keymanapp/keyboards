@@ -1,4 +1,4 @@
-The GFFSheik Bakri Sapalo Keyboard
+The GFF Sheek Bakrii Saphaloo Keyboard
 =========================================
 
 Copyright (C) 2023 Geʾez Frontier Foundation
