@@ -1,9 +1,7 @@
 Hawaiian (SIL) keyboard
 ==============
 
-© 2008-2020 SIL International
-
-Version 2.0
+© SIL International
 
 Description
 -----------
@@ -21,5 +19,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
+ * Web
 
 

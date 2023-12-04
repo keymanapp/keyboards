@@ -1,16 +1,23 @@
 Change History
 =======================
+6.1.0 (2023-Dec)
+-----------------
+Restyling KB CSS.
+Add Readme to KPS.
+Update Doc CSS.
+
 6.0.9 (2023-Sep)
 -----------------
 * Yellow Vowels
 * Added Caps Lock
------------------
+
 6.0.8 (2021-Oct)
 -----------------
 * Minor CSS Tweaks
 * Removing NoCaps
 
 6.0.6 (2021-May)
+-----------------
 * Updated to use font from shared folders
 
 6.0.5 (2020-Nov)
