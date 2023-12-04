@@ -2,193 +2,283 @@
    Cameroon QWERTY CSS
    Copyright 2023 SIL International
 ***/
+
+:root {
+  --active-bg: #88f;
+  --cam-color: #0F0;
+  --font-color: white;
+  --special-bg: #555;
+  --special-color: white;
+  --contrast: black;
+  --active-dark-color: #220868;
+
+  /* Default Values for Fallthrough */
+  --bg: #777777;
+  --dia-fade: #598059;
+  --vowel-fade: #dfce6f;
+  --fuzz-grad: linear-gradient(rgba(127, 127, 127, 0.33), rgba(59, 4, 110, 0.33));  /* #7f7f7f55, #3b046e55);*/
+  --key-fade: radial-gradient(transparent, rgba(255, 255, 255, 0.06)); /*#00000010);*/
+  --cam-border: 2px solid white;
+  --cam-bg: radial-gradient(transparent, rgba(0, 0, 0, 0.16)), linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);
  
-/*Fix Baseline Height https://github.com/keymanapp/keyboards/issues/1399*/
-.kmw-keyboard-sil_cameroon_qwerty .kmw-key span  { line-height: 1;}
-
- /*CamKey*/
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_CAM'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_CAM'],
-.web .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON,
-.osk .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON, 
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON {background: #8c4646; color:#0F0;background:linear-gradient(to right, darkgreen 33%, darkred 33% , darkred 66%, #aaaa00 66%);border:2px solid #FFFFFF; font-weight: bold;} 
-
-/* Active Keys */
-.phone.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-special-on,
-.tablet.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-special-on, 
-.phone.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-shift-on, 
-.tablet.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-shift-on {color: #ffffff;background-color:#88f; font-weight: bold;}
-.phone.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-special-on,
-.tablet.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-special-on, 
-.phone.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-shift-on, 
-.tablet.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-shift-on {color: #220868;background-color:#88f; font-weight: bold;}
-
-/* Green Diacritics on iOS, Default and light. */
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0300'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0304'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0301'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_030C'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0302'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0303'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0308'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0327'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC5'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC6'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC7'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC4'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_030D'],
-.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0330'] { background: #598059; background: linear-gradient(#ffffff, #598059); }
-
-
- /* Yellow Vowels iOS Light */
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_A'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_E'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_I'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_U'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_O'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_P'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_T'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_F'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_H'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_P'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_T'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_F'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_H'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_P'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_T'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_F'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_H'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id='popup-default-U_0254'] { background: #beac40; background: linear-gradient(#ffffff, #fff09c); }
-
-@media (prefers-color-scheme: dark) {
- /* Green Diacitics iOS Dark */
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0300'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0304'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0301'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_030C'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0302'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0303'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0308'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0327'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC5'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC6'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC7'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC4'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_030D'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0330'] { background: #598059; background: linear-gradient(#3d3d3e, #598059); }
-
-  /* Yellow Vowels iOS Dark */
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_A'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_E'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_I'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_U'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_O'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_P'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_T'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_F'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_H'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_P'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_T'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_F'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_H'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_P'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_T'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_F'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_H'],
-  .ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id='popup-default-U_0254'] { background: #978833; background: linear-gradient(#3d3d3e, #beab40a2); }
-
-    /* Active Keys iOS Dark */
-  .phone.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-special-on,
-  .tablet.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-special-on, 
-  .phone.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-shift-on, 
-  .tablet.ios .kmw-keyboard-sil_cameroon_qwerty .kmw-key.kmw-key-shift-on {color: #220868;background-color:#88f; font-weight: bold;}
+  --tch-dark: var(--dark-shad), linear-gradient(rgba(127, 127, 127, 0.33), rgba(68, 68, 119, 0.33)); /*#7f7f7f55, #44447755);*/
+  --fuzz-img: url(data:image/png;base64,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) 
 }
 
-/* Green Diacritics on Android (Preferred selector) */
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0300'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0304'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0301'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_030C'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0302'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0303'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0308'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0327'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC5'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC6'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC7'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_1DC4'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_030D'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id*='T_0330'] { background: #598059; background: linear-gradient(#7f7f7f, #598059); }
+/* iOS is Light mode*/ 
+.ios {
+  --bg: #ffffff; /* white */
+  --font-color: black;
+  --special-bg: #b2b9c5;
+  --special-color: white;
+  --active-bg: #88f;
+  --dia-fade: #598059;
+  --vowel-fade: #dfce6f;
+  --key-fade: radial-gradient(transparent, rgba(0, 0, 0, 0.10)); /* #00000030*/
+  --vowel-grad: var(--key-fade), linear-gradient(var(--bg), var(--vowel-fade));
+  --dia-grad: var(--key-fade), linear-gradient(var(--bg), var(--dia-fade));
+  --fuzz-grad: linear-gradient(rgba(61, 61, 61, 0.33), rgba(27, 2, 51, 0.73));  /*#3d3d3d55, #1b0233b9);*/
+}
 
-/* Yellow Vowels  Android */
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_A'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_E'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_I'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_U'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='K_O'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_P'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_T'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_F'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-K_H'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_P'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_T'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_F'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-caps-K_H'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_P'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_T'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_F'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id$='rightalt-shift-K_H'],
-.android .kmw-keyboard-sil_cameroon_qwerty .kmw-key[id='popup-default-U_0254'] { background: #978833; background: linear-gradient(#7f7f7f, #beab40); }
+/* Android is Mid*/ 
+.android {
+  --bg:  #777777;
+  --font-color: white;
+  --special-bg: #555;
+  --special-color: white;
+  --active-bg: #88f;
+  --dia-fade: #598059;
+  --vowel-fade: rgba(190, 172, 64, 0.87); /* was #beac40dd */
+  --key-fade: radial-gradient(transparent, rgba(0, 0, 0, 0.10)); /* #00000025*/
+  --vowel-grad: var(--key-fade), linear-gradient(var(--bg), var(--vowel-fade));
+  --fuzz-grad: linear-gradient(rgba(127, 127, 127, 0.33), rgba(59, 4, 110, 0.33));  /*#7f7f7f55, #3b046e55);*/
+  --dia-grad: var(--key-fade), linear-gradient(var(--bg), var(--dia-fade)); /* #7f7f7f */
+}
 
-/* Green Diacritics on web */
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_QUOTE,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_LBRKT,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_RBRKT,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_BKSLASH,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_QUOTE,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_RBRKT,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_LBRKT,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_BKQUOTE,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_C,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_K,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_L,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_J,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_J,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_K,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_L { background: #598059; background: linear-gradient(#ffffff, #598059); }
+/* iOS Dark is Dark mode*/ 
+@media (prefers-color-scheme: dark) {
+  .ios {
+    --bg: #3d3d3d; 
+    --font-color: white;
+    --special-bg: #595c62;
+    --special-color: white;
+    --active-bg: #88f;
+    --dia-fade: #598059;
+    --vowel-fade: #beab40a2;
+    --key-fade: radial-gradient(transparent, rgba(255, 255, 255, 0.06)); /* #FFFFFF10*/
+    --vowel-grad: var(--key-fade), linear-gradient(var(--bg), var(--vowel-fade));
+    --fuzz-grad: linear-gradient(rgba(83, 83, 83, 0.33), rgba(27, 2, 51, 0.73)); /*#53535355, #1b0233b9 */
+    --dia-grad: var(--key-fade), linear-gradient(var(--bg), var(--dia-fade));
+  }
+}
 
-/* Yellow Vowels on Web */
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_A,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_E,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_I,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_U,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_O,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_P,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_A,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_E,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_I,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_U,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #shift-K_O,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_T,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_F,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_H,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_I,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_U,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_O,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_A,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-K_E,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-caps-K_P,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-caps-K_T,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-caps-K_F,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-caps-K_H,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_P,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_T,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_F,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_H,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_A,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_U,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_I,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_O,
-.desktop .kmw-keyboard-sil_cameroon_qwerty #rightalt-shift-K_E { background: #beac40; background: linear-gradient(#ffffff, #beac40); } 
+/* Normal Keys */
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop)  .kmw-key-default:not(.kmw-key-touched),
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop) ~ #kmw-popup-keys:not(.kmw-key-touched) {
+  color: var(--font-color);
+  background: var(--bg);
+  background-image: var(--key-fade);
+  box-shadow: 1px 1.5px 3px #000000; 
+  border: none; 
+}
 
+/* Cam Key */
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop) .kmw-key[id*='T_CAM'],
+.web .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON,
+.osk .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON, 
+.desktop .kmw-keyboard-sil_cameroon_qwerty #default-K_COLON {
+    color: var(--cam-color);
+    background: var(--cam-bg);
+    border: var(--cam-border);
+    box-shadow: 1px 1.5px 3px #000000; 
+}
+
+/* Special Keys */
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop)  .kmw-key-shift:not(.kmw-key-touched) {
+  border-bottom: none; 
+  background-image: var(--key-fade);
+  box-shadow: 1px 1.5px 3px #000000; 
+} 
+
+ /* Enabled Special Keys */
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop)  .kmw-key.kmw-key-special-on,
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop) .kmw-key.kmw-key-shift-on {
+  color: var(--active-dark-color); /* var(--font-color); */
+  background-color: var(--active-bg); 
+  box-shadow: 1px 1.5px 3px #000000; 
+}
+
+ /* Touched Keys */
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop)  .kmw-key.kmw-key-touched,
+:not(.desktop) .kmw-key.kmw-key-touched {
+  color: white !important;
+  background-image: var(--tch-dark) !important;
+  box-shadow: 1px 1.5px 3px #000000; 
+}
+
+/* Background Fill */
+.kmw-keyboard-sil_cameroon_qwerty .kmw-key-layer-group { 
+  background-image: var(--fuzz-img), 
+  var(--fuzz-grad);
+}
+
+/* Colored diacritics on touch. */
+ /* Technically, :-webkit-any() is deprecated in favor of :is() of 2021, but it's been well-supported since 2011) */
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop) .kmw-key:-webkit-any(
+    [id*='T_0300'], 
+    [id*='T_0301'], 
+    [id*='T_0302'], 
+    [id*='T_0303'], 
+    [id*='T_0304'], 
+    [id*='T_030C'], 
+    [id*='T_030D'], 
+    [id*='T_0308'], 
+    [id*='T_0327'], 
+    [id*='T_0330'], 
+    [id*='T_1DC4'], 
+    [id*='T_1DC5'], 
+    [id*='T_1DC6'], 
+    [id*='T_1DC7']
+):not(.kmw-key-touched) {
+    background: var(--dia-fade);
+    background-image: var(--dia-grad);
+}
+
+/* Colored vowels on touch */
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop) .kmw-key:-webkit-any(
+    [id$='K_A'],
+    [id$='K_E'],
+    [id$='K_I'],
+    [id$='K_U'],
+    [id$='K_O'],
+    [id$='rightalt-K_P'],
+    [id$='rightalt-K_T'],
+    [id$='rightalt-K_F'],
+    [id$='rightalt-K_H'],
+    [id$='rightalt-caps-K_P'],
+    [id$='rightalt-caps-K_T'],
+    [id$='rightalt-caps-K_F'],
+    [id$='rightalt-caps-K_H'],
+    [id$='rightalt-shift-K_P'],
+    [id$='rightalt-shift-K_T'],
+    [id$='rightalt-shift-K_F'],
+    [id$='rightalt-shift-K_H']
+):not(.kmw-key-touched),
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop) ~ #kmw-popup-keys .kmw-key:-webkit-any( /* Working for now: https://github.com/keymanapp/keyman/issues/9864 */
+    [id*='U_025B'], 
+    [id*='U_0259'],
+    [id*='U_0258'],
+    [id*='U_0153'],
+    [id*='U_0289'],
+    [id*='U_0268'],
+    [id*='U_0254'],
+    [id*='U_00F8'],
+    [id*='U_03B1'],
+    [id*='U_00E6'],
+    [id*='U_018F'],
+    [id*='U_0152'],
+    [id*='U_0244'],
+    [id*='U_0197'],
+    [id*='U_0186'],
+    [id*='U_00D8'],
+    [id*='U_0190'],
+    [id*='U_00C6'],
+    [id*='U_2C6D']
+):not(.kmw-key-touched),
+.kmw-keyboard-sil_cameroon_qwerty:not(.desktop) #kmw-popup-keys .kmw-key:-webkit-any( /* Future: https://github.com/keymanapp/keyman/issues/9864*/
+    [id*='U_025B'], 
+    [id*='U_0259'],
+    [id*='U_0258'],
+    [id*='U_0153'],
+    [id*='U_0289'],
+    [id*='U_0268'],
+    [id*='U_0254'],
+    [id*='U_00F8'],
+    [id*='U_03B1'],
+    [id*='U_00E6'],
+    [id*='U_018F'],
+    [id*='U_0152'],
+    [id*='U_0244'],
+    [id*='U_0197'],
+    [id*='U_0186'],
+    [id*='U_00D8'],
+    [id*='U_0190'],
+    [id*='U_00C6'],
+    [id*='U_2C6D']
+):not(.kmw-key-touched) {
+    background: var(--vowel-fade); 
+    background-image: var(--vowel-grad); 
+}
+
+.desktop.kmw-keyboard-sil_cameroon_qwerty .kmw-key-default:not(.kmw-key-touched) {
+  box-shadow: 1px 1.5px 3px #000000; 
+  border: none; 
+}
+
+.desktop.kmw-keyboard-sil_cameroon_qwerty .kmw-key-shift:not(.kmw-key-touched) {
+  box-shadow: 1px 1.5px 3px #000000; 
+  border: none; 
+}
+
+/* Colored Diacritics on Web */
+.desktop.kmw-keyboard-sil_cameroon_qwerty :-webkit-any(
+    #default-K_QUOTE,
+    #default-K_LBRKT,
+    #default-K_RBRKT,
+    #default-K_BKQUOTE,
+    #shift-K_QUOTE,
+    #shift-K_RBRKT,
+    #shift-K_LBRKT,
+    #shift-K_BKQUOTE,
+    #rightalt-K_C,
+    #rightalt-K_K,
+    #rightalt-K_L,
+    #rightalt-K_J,
+    #rightalt-shift-K_J,
+    #rightalt-shift-K_K,
+    #rightalt-shift-K_L,
+    #rightalt-K_HYPHEN
+) {
+    background: var(--dia-fade); 
+    background-image: var(--dia-grad);
+}
+
+/* Colored Vowels on Web */
+.desktop.kmw-keyboard-sil_cameroon_qwerty :-webkit-any(
+    #default-K_A,
+    #default-K_E,
+    #default-K_I,
+    #default-K_U,
+    #default-K_O,
+    #rightalt-K_P,
+    #shift-K_A,
+    #shift-K_E,
+    #shift-K_I,
+    #shift-K_U,
+    #shift-K_O,
+    #rightalt-K_T,
+    #rightalt-K_F,
+    #rightalt-K_H,
+    #rightalt-K_I,
+    #rightalt-K_U,
+    #rightalt-K_O,
+    #rightalt-K_A,
+    #rightalt-K_E,
+    #rightalt-caps-K_P,
+    #rightalt-caps-K_T,
+    #rightalt-caps-K_F,
+    #rightalt-caps-K_H,
+    #rightalt-shift-K_P,
+    #rightalt-shift-K_T,
+    #rightalt-shift-K_F,
+    #rightalt-shift-K_H,
+    #rightalt-shift-K_A,
+    #rightalt-shift-K_U,
+    #rightalt-shift-K_I,
+    #rightalt-shift-K_O,
+    #rightalt-shift-K_E
+) { 
+    background: var(--vowel-fade);
+    background-image: var(--vowel-grad);
+}
 
