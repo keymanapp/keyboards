@@ -1,5 +1,10 @@
 Baybayin Keyboard Changelog
 
+1.2 (2023-12-04)
+----------------
+* Fixed a character:
+170D ᜍ TAGALOG LETTER RA
+
 1.1.1 (2023-11-29)
 ----------------
 * Used shared font instead of local
