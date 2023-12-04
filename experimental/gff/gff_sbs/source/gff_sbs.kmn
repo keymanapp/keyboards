@@ -1,0 +1,223 @@
+﻿c =====================Begin Identity Section===================================================
+c 
+c This is a Sheek Bakrii Saphalo script Qubee based input method. They keyboard is designed
+c to work with the [Athinkra: Sheek Bakrii Saphalo](https://github.com/raeytype/sheek-bakrii-saphaloo) font (v1.x) which in turn 
+c encodes the script under Unicode's Private Use Area (PUA).
+c 
+c Keyman        :  http://www.keyman.com/
+c Documentation :  https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php
+c Source        :  https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
+c 
+store(&Version) '15.0'
+store(&KEYBOARDVERSION) '1.0.0'
+store(&NAME) 'Sheek Bakrii Saphaloo Qubee Keyboard'
+store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
+store(&Message) 'This is a Sheek Bakrii Saphalo script Qubee based input method. It requires the included Athrinka Sheek Bakrii Saphaloo font.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_B]'
+store(&VISUALKEYBOARD) 'gff_sbs.kvks'
+store(&TARGETS) 'windows macosx linux'
+store(&BITMAP) 'gff_sheik-bakri-sapalo-qubee.ico'
+c 
+c =====================End Identity Section=====================================================
+
+store(BakriSapalo) ' ' U+E000 .. U+E317
+
+store(Base) '*'
+store(ShortA) 'Aa'
+store(ShortU) 'Uu'
+store(ShortI) 'Ii'
+store(ShortE) 'Ee'
+store(ShortO) 'Oo'
+store(LongA) 'Aa'
+store(LongU) 'Uu'
+store(LongI) 'Ii'
+store(LongE) 'Ee'
+store(LongO) 'Oo'
+
+
+store(H_Modifier) 'Hh'
+store(H_DigraphBases) ''
+store(H_DigraphTargets) ''
+store(H_DigraphTargetsGeminated) ''
+store(Y_Modifier) 'Yy'
+store(Y_DigraphBases) ''
+store(Y_DigraphTargets) ''
+store(Y_DigraphTargetsGeminated) ''
+store(X_Modifier) 'Xx'
+store(X_DigraphBases) ''
+store(X_DigraphTargets) ''
+store(X_DigraphTargetsGeminated) ''
+
+store(S_Modifier) 'Ss'
+
+
+store(QubeeKeys) 'bjdhwzxyklmnsfqrtgcpv'
+store(QubeeKeysUpper) 'BJDHWZXYKLMNSFQRTGCPV'
+store(OrdersConsonantsRegular) ''
+store(OrdersConsonantsGeminated) ''
+
+store(OrdersBase) ''
+store(OrdersShortA) ''
+store(OrdersShortU) ''
+store(OrdersShortI) ''
+store(OrdersShortE) ''
+store(OrdersShortO) ''
+store(OrdersLongA) ''
+store(OrdersLongU) ''
+store(OrdersLongI) ''
+store(OrdersLongE) ''
+store(OrdersLongO) ''
+store(OrdersConsonant) ''
+
+
+store(VowelKeys) 'auieo'
+store(GlottalShortVowels)'' 
+store(GlottalLongVowels) ''
+store(GeminatedGlottalShortVowels) '' 
+store(GeminatedGlottalLongVowels) ''
+
+store(VowelKeysUppercase) 'AUIEO'
+store(PharyngealShortVowels) ''
+store(PharyngealLongVowels) ''
+store(GeminatedPharyngealShortVowels) ''
+store(GeminatedPharyngealLongVowels) ''
+
+store(AsciiNumbers) '0123456789'
+store(BakriSapaloNumbers) '' 
+
+
+begin Unicode > use(main)
+group(main) using keys
+
++ any(QubeeKeys)                   > index(OrdersConsonantsRegular,1)
++ any(QubeeKeysUpper)              > index(OrdersConsonantsRegular,1)
+any(OrdersConsonant) + '*'         > index(OrdersBase,1)
+any(OrdersConsonant) + any(ShortA) > index(OrdersShortA,1)
+any(OrdersConsonant) + any(ShortU) > index(OrdersShortU,1)
+any(OrdersConsonant) + any(ShortI) > index(OrdersShortI,1)
+any(OrdersConsonant) + any(ShortE) > index(OrdersShortE,1)
+any(OrdersConsonant) + any(ShortO) > index(OrdersShortO,1)
+any(OrdersShortA)    + any(LongA)  > index(OrdersLongA,1)
+any(OrdersShortU)    + any(LongU)  > index(OrdersLongU,1)
+any(OrdersShortI)    + any(LongI)  > index(OrdersLongI,1)
+any(OrdersShortE)    + any(LongE)  > index(OrdersLongE,1)
+any(OrdersShortO)    + any(LongO)  > index(OrdersLongO,1)
+
+c Gemination
+'' + 'b' > ''
+'' + 'B' > ''
+'' + 'j' > ''
+'' + 'J' > ''
+'' + 'd' > ''
+'' + 'D' > ''
+'' + 'h' > ''
+'' + 'H' > ''
+'' + 'w' > ''
+'' + 'W' > ''
+'' + 'z' > ''
+'' + 'Z' > ''
+'' + 'x' > ''
+'' + 'X' > ''
+'' + 'y' > ''
+'' + 'Y' > ''
+'' + 'k' > ''
+'' + 'K' > ''
+'' + 'l' > ''
+'' + 'L' > ''
+'' + 'm' > ''
+'' + 'M' > ''
+'' + 'n' > ''
+'' + 'N' > ''
+'' + 's' > ''
+'' + 'S' > ''
+'' + 'f' > ''
+'' + 'F' > ''
+'' + 'q' > ''
+'' + 'Q' > ''
+'' + 'r' > ''
+'' + 'R' > ''
+'' + 't' > ''
+'' + 'T' > ''
+'' + 'g' > ''
+'' + 'G' > ''
+'' + 'c' > ''
+'' + 'C' > ''
+'' + 'p' > ''
+'' + 'P' > ''
+'' + 'v' > ''
+'' + 'V' > ''
+
+
+c
+c Qubee Dachaa
+c
+any(H_DigraphBases) + any(H_Modifier)  > index(H_DigraphTargets,1)
+'' + any(S_Modifier)  > ''
+any(X_DigraphBases) + any(X_Modifier)  > index(X_DigraphTargets,1)
+any(Y_DigraphBases) + any(Y_Modifier)  > index(Y_DigraphTargets,1)
+
+c
+c Geminated Qubee Dachaa (repeat the modifier letter)
+c
+any(H_DigraphTargets) + any(H_Modifier) > index(H_DigraphTargetsGeminated,1)
+'' + any(S_Modifier)  > ''
+any(X_DigraphTargets) + any(X_Modifier) > index(X_DigraphTargetsGeminated,1)
+any(Y_DigraphTargets) + any(Y_Modifier) > index(Y_DigraphTargetsGeminated,1)
+
++ "'" > deadkey(1)
+ deadkey(1) + "'" > "'"
+
+
+
+c Vowels
++ '*' > ''
+'' + '*' > ''
+'' + 'x' > '' 
+'' + "'" > ''
+'' + "'" > ''
+
++ any(VowelKeys) > index(GlottalShortVowels,1)
+'' + 'a' > ''
+'' + 'u' > ''
+'' + 'i' > ''
+'' + 'e' > ''
+'' + 'o' > ''
+
+'' + 'a' > ''
+'' + 'u' > ''
+'' + 'i' > ''
+'' + 'e' > ''
+'' + 'o' > ''
+
+any(GlottalShortVowels) + any(X_Modifier) > index(GeminatedGlottalShortVowels,1)
+any(GlottalLongVowels) + any(X_Modifier) > index(GeminatedGlottalLongVowels,1)
+
++ any(VowelKeysUppercase) > index(PharyngealShortVowels,1)
+
+'' + 'A' > ''
+'' + 'U' > ''
+'' + 'I' > ''
+'' + 'E' > ''
+'' + 'O' > ''
+
+any(PharyngealShortVowels) + any(X_Modifier) > index(GeminatedPharyngealShortVowels,1)
+any(PharyngealLongVowels) + any(X_Modifier) > index(GeminatedPharyngealLongVowels,1)
+
+'' + '*' > ''
+'' + '*' > ''
+'' + "'"  > ''
+'' + "'" > ''
+
+
+'' + '.' > '.'
+'' + any(AsciiNumbers) > '.' index(AsciiNumbers,2)
+any(BakriSapalo) + '.' > context(1) ''
+any(AsciiNumbers) '.' + ' ' > context(1) '' ' '
+
++ ':'     > ''
+
+'#' + any(AsciiNumbers) >  index(AsciiNumbers,2)
++ any(AsciiNumbers) > index(BakriSapaloNumbers,1)
