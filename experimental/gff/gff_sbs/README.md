@@ -14,7 +14,7 @@ manual for full details of the typing rules.
 Caveats
 -------
 This is an *exerimental* keyboard that will not be compatible with a future standard for the Sheek Bakrii Saphaloo
-script. The font that the keyboard relies on, the  _Athinkra Sheek Bakri Saphaloo_  font, uses a temporary encoding
+script. The font that the keyboard relies on, the  _Athinkra: Sheek Bakri Saphaloo_  font, uses a temporary encoding
 space that would change under a final standard for the script. The implication is that documents composed with
 this typeface will be incompatible with the anticipated international standard and will either need to be
 recomposed on converted into the standard encoding.
@@ -22,11 +22,11 @@ recomposed on converted into the standard encoding.
 Links
 -----
 
-* Documentation :  [https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php]()
-* Source        :  [https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs]()
-* License       :  [https://opensource.org/licenses/MIT]()
-* Bugs          :  [https://github.com/keymanapp/keyboards/issues]()
-* Font          :  ]https://github.com/raeytype/sheek-bakrii-saphaloo]()
+* Documentation :  [https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php](https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php)
+* Source        :  [https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs](https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs)
+* License       :  [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
+* Bugs          :  [https://github.com/keymanapp/keyboards/issues](https://github.com/keymanapp/keyboards/issues)
+* Font          :  [https://github.com/raeytype/sheek-bakrii-saphaloo](https://github.com/raeytype/sheek-bakrii-saphaloo)
 
 Supported Platforms
 -------------------
