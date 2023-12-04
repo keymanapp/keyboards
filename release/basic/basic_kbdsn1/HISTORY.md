@@ -1,6 +1,10 @@
 Sinhala Basic Change History
 ====================
 
+1.2.1 (2023-12-1)
+----------------
+* Add Noto Serif Sinhala font to package
+
 1.2 (2021-06-14)
 ----------------
 * Added tablet layout

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.272.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">N’Ko Basic</Name>
-    <Copyright URL="">(c) 2018-2021 SIL International</Copyright>
+    <Copyright URL="">(c) 2018-2023 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
   </Info>
@@ -65,18 +65,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\nkoo\LICENSE_OFL.txt</Name>
-      <Description>File LICENSE_OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\nkoo\NotoSansNKo-Regular.ttf</Name>
-      <Description>Font Noto Sans NKo Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>welcome\tablet_default.png</Name>
       <Description>File tablet_default.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -88,15 +76,27 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Nkoo\NotoSansNKo-Regular.ttf</Name>
+      <Description>Font Noto Sans NKo Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Nkoo\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>N’Ko Basic</Name>
       <ID>basic_kbdnko</ID>
-      <Version>1.1</Version>
+      <Version>1.1.1</Version>
       <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\nkoo\NotoSansNKo-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\nkoo\NotoSansNKo-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\noto\Nkoo\NotoSansNKo-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Nkoo\NotoSansNKo-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bm-Nkoo">Bambara (N’Ko)</Language>
         <Language ID="dyu-Nkoo">Dyula (N’Ko)</Language>

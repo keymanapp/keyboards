@@ -1,6 +1,10 @@
 தமிழ்99 | Tamil99 Change History
 ============================
 
+2.0.5 (2023-12-1)
+----------------
+* Update to font to one with a clear license (Noto)
+
 2.0.4 (20 Jan 2023)
 --------------------
 * Corrected links in help file
