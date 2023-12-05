@@ -82,7 +82,7 @@ manual for full details of the typing rules.
 
 
 <p style="text-align: justify;">
-The <a target="_blank" href="SBS-Typing-Manual.pdf">pdf manual</a> reviews typing in full detail.
+The <a target="_blank" href="SBS-Typing-English.pdf">pdf manual</a> reviews typing in full detail.
 </p>
 
 <h3>Caveats</h3>
