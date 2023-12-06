@@ -1,7 +1,7 @@
-Gitsenimx̱ keyboard
+Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ keyboard
 ======================
 
-Gitsenimx̱ keyboard layout for Unicode
+Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ keyboard layout for Unicode
 
 Links
 -----
