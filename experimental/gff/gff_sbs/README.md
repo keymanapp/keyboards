@@ -1,9 +1,7 @@
 The GFF Sheek Bakrii Saphaloo Keyboard
 ======================================
 
-Copyright (C) 2023 Geʾez Frontier Foundation
-
-Version 1.0.0
+Copyright (C) Geʾez Frontier Foundation
 
 This is a keyboard for typing the Sheek Bakrii Saphaloo script in a style very similar to typing
 in Qubee.  Qubee rules for typing Oromo language sounds are followed to the maximum extent possible,
