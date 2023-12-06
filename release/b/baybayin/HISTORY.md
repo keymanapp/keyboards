@@ -4,6 +4,7 @@ Baybayin Keyboard Changelog
 ----------------
 * Fixed a character:
 170D ᜍ TAGALOG LETTER RA
+* Regenerated and Updated the keyboard layout
 
 1.1.1 (2023-11-29)
 ----------------
