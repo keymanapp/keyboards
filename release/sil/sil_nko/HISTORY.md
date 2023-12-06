@@ -1,6 +1,10 @@
 N'Ko (SIL) Change History
 ====================
 
+1.1.1 (2023-12-1)
+----------------
+* Update to newer font in noto folder
+
 1.1 (2021-03-29)
 ----------------
 * Change OSK and touch layout font to Noto Sans N'ko
