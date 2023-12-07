@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.225.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -52,9 +52,9 @@
     </Items>
   </StartMenu>
   <Info>
-    <Version URL="">1.2.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Hindi Devanagari Phonetic (ITRANS)</Name>
-    <Copyright URL="">©2019 sanskritdocuments.org</Copyright>
+    <Copyright URL="">© 2019-2023 sanskritdocuments.org</Copyright>
     <Author URL="">Shree Devi Kumar</Author>
     <WebSite URL="https://sanskritdocuments.org/hindi/">https://sanskritdocuments.org/hindi/</WebSite>
   </Info>
@@ -84,29 +84,55 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>welcome\itrans_devanagari_hindiU_.png</Name>
-      <Description>File itrans_devanagari_hindiU_.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\itrans_devanagari_hindiU_S.png</Name>
-      <Description>File itrans_devanagari_hindiU_S.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\deva\siddhanta\CC.txt</Name>
+      <Description>File CC.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\deva\siddhanta\siddhanta.ttf</Name>
+      <Description>Font Siddhanta</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_SRA.png</Name>
+      <Description>File LayoutU_SRA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hindi Devanagari Phonetic (ITRANS)</Name>
       <ID>itrans_devanagari_hindi</ID>
-      <Version>1.2.0</Version>
+      <Version>1.2.1</Version>
+      <OSKFont>..\..\..\shared\fonts\deva\siddhanta\siddhanta.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\deva\siddhanta\siddhanta.ttf</DisplayFont>
       <Languages>
         <Language ID="hi">Hindi</Language>
         <Language ID="mr">Marathi</Language>
@@ -127,7 +153,9 @@
         <Language ID="bho-Deva">Bhojpuri (Devanagari)</Language>
         <Language ID="npi-Deva">Nepali (individual language) (Devanagari)</Language>
       </Languages>
+      <Examples/>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages/>
   <Strings/>
 </Package>
