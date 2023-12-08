@@ -1,7 +1,7 @@
-Dënesųłıné keyboard
+Dɛnɛsųłiné keyboard
 ======================
 
-Dënesųłıné keyboard layout for Unicode
+Dɛnɛsųłiné keyboard layout for Unicode
 
 Links
 -----

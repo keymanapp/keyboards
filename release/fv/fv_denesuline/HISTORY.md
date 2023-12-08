@@ -1,5 +1,10 @@
-Dɛnɛsųłiné Change History
+Dënesųłıné Change History
 ============================
+10.0 (8 Dec 2023)
+-----------------
+* Swapped mobile keyboard between fv_denesuline_epsilon and fv_denesuline so they are in correct files
+* Updated name and documentation to reflect correction
+
 9.1.1 (26 Oct 2023)
 -----------------
 * Changed order of mobile layers to unscramble display on help page
