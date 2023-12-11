@@ -1,6 +1,6 @@
 <?php
   $pagename = 'Osage Keyboard Help';
-  $pagetitle = 'Osage Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <p>This keyboard layout was developed on behalf of the Osage Nation Language Department 
@@ -9,7 +9,7 @@ to orthography reforms that have been carried since the last Osage keyboard was 
 </p>
 <h2>Font</h2>
 <p>
-The keyboard comes with the Pawhuska font. This and other Osage fonts are available from <a href="http://osagelanguagetools.appspot.com/downloads/" target=_blank>here</a>. 
+The keyboard is designed to work any Osage script font. It comes with the Noto Sans Osage font. Other Osage fonts, such as Pawhuska, are available from <a href="http://osagelanguagetools.appspot.com/downloads/" target=_blank>Osage Nation</a>.
 </p>
 
 <h1>Keyboard Layout</h1>

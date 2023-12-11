@@ -1,6 +1,10 @@
 Osage Keyboard Change History
 =======================
 
+1.0.2 (11 Dec 2023)
+-----------------
+* Update keyboard to use Noto Sans Osage font
+
 1.0.1 (22 Feb 2023)
 -----------------
 * Fixes to the touch layout

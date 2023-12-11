@@ -1,6 +1,10 @@
 Osage (Classic) Keyboard Change History
 =======================
 
+1.2.4 (11 Dec 2023)
+-----------------
+* Update keyboard to use Noto Sans Osage font
+
 1.2.3 (18 Jan 2023)
 -----------------
 * Rename keyboard to Osage (Classic)
