@@ -1,5 +1,10 @@
 Runeboard Change History
 ====================
+2.3 (2023-12-05)
+----------------
+* Changed Alt+Ctrl to RAlt
+* Fixed AltGr layer on mobile. Output is now correct instead of default layer text.
+
 2.2 (2023-11-04)
 ----------------
 * Swapped ᛝ and ᛥ on the main/unshifted layer.
