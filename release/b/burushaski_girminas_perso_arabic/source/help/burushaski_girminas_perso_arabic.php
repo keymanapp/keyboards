@@ -1,14 +1,12 @@
 <?php 
   $pagename = 'Burushaski Perso Arabic Keyboard Help';
   $pagetitle = $pagename;
-  // Header we will tidy up later  
+  $style = <<<EXTRA
+  p,h1,h2 {font-family: "Burusho Quwatz Nastaliq";}
+EXTRA;
   require_once('header.php');
 ?>
-<head>
-<link rel="stylesheet" href="stylesheet.css">
-</head>
 
-  <body dir="rtl" style="color: #504949;" lang="bsk">
     <h1 align="right"><span lang="hi-IN">بروشسکی
         ارتھو گرافی ، کی بورڈ اور فونٹ</span></h1>
     <p align="right"><span lang="hi-IN"><span lang="hi-IN">بروشسکی
