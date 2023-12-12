@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Experimental keyboard for Tangsa language using Tangsa Lakhum script which will be encoded in Unicode 14.0
+    Experimental keyboard for Tangsa language using Tangsa Lakhum script.
 </p>
 
 <p>This layout uses a deadkey on the left bracket "[" position to generate additional Lakhum characters.</p>
