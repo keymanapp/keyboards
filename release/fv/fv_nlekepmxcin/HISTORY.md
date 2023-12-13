@@ -1,5 +1,11 @@
-Nłeʔkepmxcin Change History
+Nɬeʔkepmxcín Change History
 ============================
+9.3 (13 Dec 2023)
+-------------------
+* Changed barred l for belted l
+* Changed to single codepoints where possible
+* Added combining acute key
+* Corrected spelling of keyboard name
 
 9.2.3 (6 Mar 2023)
 -------------------

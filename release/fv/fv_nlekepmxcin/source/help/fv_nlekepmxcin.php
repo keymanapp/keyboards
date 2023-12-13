@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Nłeʔkepmxcin Keyboard Help';
-  $pagetitle = 'Nłeʔkepmxcin Keyboard Help';
+  $pagename = 'Nɬeʔkepmxcín Keyboard Help';
+  $pagetitle = 'Nɬeʔkepmxcín Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,14 +13,14 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Nłeʔkepmxcin</b> language of the BC Interior region of Canada.
+This keyboard is designed for the <b>Nɬeʔkepmxcín</b> language of the BC Interior region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
 <img src="Nlekepmxcin.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
-						<li>The special characters of Nłeʔkepmxcín have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyoards keep its original numbers</li>
+						<li>The special characters of Nɬeʔkepmxcín have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyoards keep its original numbers</li>
 						<li>All accents are typed after the base character: á is typed a then Semicolon ;</li>
 						<li>To type the acute accent use the Semicolon key ; — é is typed e then Semicolon ;</li>
 						<li>To type the apostrophe accent use the apostrophe key ' — k̓ is typed k then Apostrophe '<br />
@@ -48,8 +48,8 @@ This keyboard is designed for the <b>Nłeʔkepmxcin</b> language of the BC Inter
 <div id='wikitext'>
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>q q̓</td><td  align='center'>w w̓</td><td  align='center'>e é</td><th  align='center'>’</th><td  align='center'>t t̓</td><td  align='center'>y y̓</td><td  align='center'>u ú</td><td  align='center'>i í ị ị́</td><td  align='center'>o ó</td><td  align='center'>p p̓</td></tr>
-<tr ><td  align='center'>a á</td><td  align='center'>s ṣ</td><td  align='center'>ʔ</td><td  align='center'>ƛ̓</td><td  align='center'>ɣ ɣ̓</td><td  align='center'>h</td><td  align='center'>ʷ</td><td  align='center'>k k̓</td><td  align='center'>l l̓</td><td  align='center'>ł</td></tr>
-<tr ><td >&nbsp;</td><td  align='center'>z z̓</td><td  align='center'>x x̣</td><td  align='center'>c c̓ c̣</td><th  align='center'>.</th><td  align='center'>ʕ ʕ̓</td><td  align='center'>n n̓</td><td  align='center'>m m̓</td><td  align='center'>ə ə́ ə̣ ə̣́</td><td >&nbsp;</td></tr>
+<tr ><td  align='center'>a á</td><td  align='center'>s ṣ</td><td  align='center'>ʔ</td><td  align='center'>ƛ̓</td><td  align='center'>ɣ ɣ̓</td><td  align='center'>h</td><td  align='center'>ʷ</td><td  align='center'>k k̓</td><td  align='center'>l l̓</td><td  align='center'>ɬ</td></tr>
+<tr ><td >&nbsp;</td><td  align='center'>z z̓ θ θ̓</td><td  align='center'>x x̣</td><td  align='center'>c c̓ c̣</td><th  align='center'>.</th><td  align='center'>ʕ ʕ̓</td><td  align='center'>n n̓</td><td  align='center'>m m̓</td><td  align='center'>ə ə́ ə̣ ə̣́</td><td >&nbsp;</td></tr>
 </table>
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
