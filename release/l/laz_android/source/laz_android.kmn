@@ -1,0 +1,176 @@
+﻿c laz_android generated from template at 2023-11-18 13:19:09
+c with name "Laz Android"
+store(&VERSION) '15.0'
+store(&NAME) 'Laz Android'
+store(&COPYRIGHT) '© Okan Dale'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'iphone androidphone mobile'
+store(&BITMAP) 'laz_android.ico'
+store(&VISUALKEYBOARD) 'laz_android.kvks'
+store(&LAYOUTFILE) 'laz_android.keyman-touch-layout'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(sentencePunctuation) '.?!'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nul > layer('shift')
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(PostKeystroke) readonly
+    if(&layer = 'caps') > context
+    if(&layer = 'numeric') > context
+    if(&layer = 'rightalt-shift') > context
+    if(&layer = 'emoji') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+
+group(main) using keys
++ [T_new_539] > 'Shift'
++ [K_Q] > 'q'
++ [K_W] > 'w'
++ [K_E] > 'e'
++ [K_R] > 'r'
++ [K_T] > 't'
++ [K_Y] > 'y'
++ [K_U] > 'u'
++ [T_new_796] > 'ı'  c Custom key for 'ı'
++ [K_O] > 'o'
++ [K_P] > 'p'
++ [T_new_723] > 'ğ'  c Custom key for 'ğ'
++ [T_new_759] > 'ü'  c Custom key for 'ü'
++ [K_A] > 'a'
++ [K_S] > 's'
++ [K_D] > 'd'
++ [K_F] > 'f'
++ [K_G] > 'g'
++ [K_H] > 'h'
++ [K_J] > 'j'
++ [K_K] > 'k'
++ [K_L] > 'l'
++ [T_new_871] > 'ş'  c Custom key for 'ş'
++ [K_I] > 'i'
++ [K_Z] > 'z'
++ [K_X] > 'x'
++ [K_C] > 'c'
++ [K_V] > 'v'
++ [K_B] > 'b'
++ [K_N] > 'n'
++ [K_M] > 'm'
++ [T_new_910] > 'ö'  c Custom key for 'ö'
++ [T_new_950] > 'ç'  c Custom key for 'ç'
++ [T_new_001] > ','
++ [K_SPACE] > ' '
+' ' + [K_SPACE] > U+002E U+0020
++ [K_PERIOD] > '.'
+
++ [T_new_991] > 'ʒ'
++ [T_new_2227] > 'ʒ̆'
++ [T_new_993] > 't‌̌'
++ [T_new_994] > 'p̌'
++ [T_new_995] > 'ǩ'
++ [T_new_996] > 'ž'
++ [T_new_997] > 'ç̌'
++ [T_new_2606] > ','
++ [T_new_1116] > 'output_character_for_T_new_1116'
++ [T_new_1117] > 'output_character_for_T_new_1117'
++ [T_new_1118] > 'output_character_for_T_new_1118'
++ [T_new_1119] > 'output_character_for_T_new_1119'
++ [T_new_1120] > 'output_character_for_T_new_1120'
++ [T_new_1156] > 'output_character_for_T_new_1156'
++ [T_new_1270] > 'output_character_for_T_new_1270'
++ [T_new_1231] > 'output_character_for_T_new_1231'
++ [T_new_1193] > 'output_character_for_T_new_1193'
++ [T_new_1115] > 'output_character_for_T_new_1115'
++ [T_new_1279] > 'output_character_for_T_new_1279'
++ [T_new_1358] > 'output_character_for_T_new_1358'
++ [T_new_2806] > 'output_character_for_T_new_2806'
++ [T_new_1651] > 'output_character_for_T_new_1651'
++ [T_new_1718] > 'output_character_for_T_new_1718'
++ [T_new_1721] > 'output_character_for_T_new_1721'
++ [T_new_533] > 'output_character_for_T_new_533'
++ [T_new_526] > 'output_character_for_T_new_526'
++ [T_new_530] > 'output_character_for_T_new_530'
++ [T_new_1038] > 'output_character_for_T_new_1038'
++ [T_new_481] > 'output_character_for_T_new_481'
++ [T_new_461] > nul c have the emoji trigger key not output an emoji itself.
+
+
+group(shift) using keys
+
++ [T_new_539] > 'caps'
++ [SHIFT U_0051] > 'Q'
++ [SHIFT U_0057] > 'W'
++ [SHIFT U_0045] > 'E'
++ [SHIFT U_0052] > 'R'
++ [SHIFT U_0054] > 'T'
++ [SHIFT U_0059] > 'Y'
++ [SHIFT U_0055] > 'U'
++ [SHIFT T_new_796] > 'İ'  c Uppercase of 'ı'
++ [SHIFT U_004F] > 'O'
++ [SHIFT U_0050] > 'P'
++ [SHIFT T_new_723] > 'Ğ'  c Uppercase of 'ğ'
++ [SHIFT T_new_759] > 'Ü'  c Uppercase of 'ü'
++ [SHIFT U_0041] > 'A'
++ [SHIFT U_0053] > 'S'
++ [SHIFT U_0044] > 'D'
++ [SHIFT U_0046] > 'F'
++ [SHIFT U_0047] > 'G'
++ [SHIFT U_0048] > 'H'
++ [SHIFT U_004A] > 'J'
++ [SHIFT U_004B] > 'K'
++ [SHIFT U_004C] > 'L'
++ [SHIFT T_new_871] > 'Ş'  c Uppercase of 'ş'
++ [SHIFT U_0049] > 'I'
++ [SHIFT U_005A] > 'Z'
++ [SHIFT U_0058] > 'X'
++ [SHIFT U_0043] > 'C'
++ [SHIFT U_0056] > 'V'
++ [SHIFT U_0042] > 'B'
++ [SHIFT U_004E] > 'N'
++ [SHIFT U_004D] > 'M'
++ [SHIFT T_new_910] > 'Ö'  c Uppercase of 'ö'
++ [SHIFT T_new_950] > 'Ç'  c Uppercase of 'ç'
++ [SHIFT T_new_2272] > 'Ʒ'
++ [SHIFT T_new_992] > 'Ǯ'
++ [SHIFT T_00C7_0306] > U+00C7 U+0306
++ [SHIFT U_004B_0306] > U+004B U+0306
+
+group(caps) using keys
+    + [K_Q] > 'Q'
+    + [K_W] > 'W'
+    + [K_E] > 'E'
+    + [K_R] > 'R'
+    + [K_T] > 'T'
+    + [K_Y] > 'Y'
+    + [K_U] > 'U'
+    + [K_I] > 'I'
+    + [K_O] > 'O'
+    + [K_P] > 'P'
+    + [K_A] > 'A'
+    + [K_S] > 'S'
+    + [K_D] > 'D'
+    + [K_F] > 'F'
+    + [K_G] > 'G'
+    + [K_H] > 'H'
+    + [K_J] > 'J'
+    + [K_K] > 'K'
+    + [K_L] > 'L'
+    + [K_Z] > 'Z'
+    + [K_X] > 'X'
+    + [K_C] > 'C'
+    + [K_V] > 'V'
+    + [K_B] > 'B'
+    + [K_N] > 'N'
+    + [K_M] > 'M'
+
