@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.1'
 store(&TARGETS) "mobile tablet"
 c store(&ETHNOLOGUECODE) "cre"
 store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Cree - Roman Orthography'
+store(&KEYBOARDVERSION) '10.0'
+store(&VISUALKEYBOARD) 'fv_cree_latin.kvks'
+store(&KMW_HELPFILE) 'fv_cree_latin-help.htm'
 
 begin Unicode > use(main)
 
@@ -137,5 +139,27 @@ store(&LAYOUTFILE) "fv_cree_latin.keyman-touch-layout"
 + [T_N] > 'n'
 + [T_M] > 'm'
 
-c --- END OF TOUCH LAYOUT RULES ---
+c --- BEGIN DESKTOP LAYOUT RULES ---
 
+c --- character stores ---
+
+store(Vowels) 'aeioAEI)'
+store(AcuteKeys) [T_G] [SHIFT T_G]
+store(CircKeys) [T_F] [SHIFT T_F]
+store(MacKeys) [T_J] [SHIFT T_J]
+store(HasAcute) 'áéíóÁÉÍÓ'
+store(HasCirc) 'âêîôÂÊÎÔ'
+store(HasMacron) 'āēīōĀĒĪŌ'
+
+any(Vowels) + any(AcuteKeys) > index(HasAcute,1)
+any(Vowels) + any(CircKeys) > index(HasCirc,1)
+any(Vowels) + any(MacKeys) > index(HasMacron,1)
+
+any(HasAcute) + [K_BKSP] > index(Vowels,1)
+any(HasCirc) + [K_BKSP] > index(Vowels,1)
+any(HasMacron) + [K_BKSP] > index(Vowels,1)
+
+c --- language keys ----
+
+store(LanguageKeys) [K_LBRKT] [K_RBRKT] [K_BKSLASH] [K_1]
+store(LanguageOutputs) U+0301 
