@@ -1,6 +1,6 @@
 Southern Tutchone Change History
 ============================
-9.2.2 (25 Jul 2023)
+9.2.2 (15 Dec 2023)
 ---------------
 * Combined characters now output single codepoints where possible
 * Updated help and user guide
