@@ -1,0 +1,279 @@
+﻿c laz_android generated from template at 2023-11-18 13:19:09
+c with name "Laz"
+store(&VERSION) '15.0'
+store(&NAME) 'Laz'
+store(&COPYRIGHT) '© Okan Dale'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'laz.ico'
+store(&VISUALKEYBOARD) 'laz.kvks'
+store(&LAYOUTFILE) 'laz.keyman-touch-layout'
+
+
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(sentencePunctuation) '.?!'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nul > layer('shift')
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(PostKeystroke) readonly
+    if(&layer = 'caps') > context
+    if(&layer = 'numeric') > context
+    if(&layer = 'rightalt-shift') > context
+    if(&layer = 'emoji') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(main) using keys
++ [NCAPS K_EQUAL] > '-'
++ [NCAPS K_HYPHEN] > '*'
++ [NCAPS K_0] > '0'
++ [NCAPS K_9] > '9'
++ [NCAPS K_8] > '8'
++ [NCAPS K_7] > '7'
++ [NCAPS K_6] > '6'
++ [NCAPS K_5] > '5'
++ [NCAPS K_4] > '4'
++ [NCAPS K_3] > '3'
++ [NCAPS K_2] > '2'
++ [NCAPS K_1] > '1'
++ [NCAPS K_BKQUOTE] > '"'
++ [NCAPS K_SLASH] > '.'
++ [NCAPS K_PERIOD] > 'ç'
++ [NCAPS K_COMMA] > dk(comma)
+dk(comma) + [NCAPS K_K] > "k̆"
+dk(comma) + [NCAPS K_Z] > "ž"
+dk(comma) + [NCAPS K_P] > "p̌"
+dk(comma) + [NCAPS K_RBRKT] > "ʒ̆"
+dk(comma) + [NCAPS K_PERIOD] > "ç̌"
+dk(comma) + [NCAPS K_T] > "t̆"
++ [NCAPS K_M] > 'm'
++ [NCAPS K_N] > 'n'
++ [NCAPS K_B] > 'b'
++ [NCAPS K_V] > 'v'
++ [NCAPS K_C] > 'c'
++ [NCAPS K_X] > 'x'
++ [NCAPS K_Z] > 'z'
++ [NCAPS K_oE2] > '<'
++ [NCAPS K_BKSLASH] > ','
++ [NCAPS K_QUOTE] > 'i'
++ [NCAPS K_COLON] > 'ş'
++ [NCAPS K_L] > 'l'
++ [NCAPS K_K] > 'k'
++ [NCAPS K_J] > 'j'
++ [NCAPS K_H] > 'h'
++ [NCAPS K_G] > 'g'
++ [NCAPS K_F] > 'f'
++ [NCAPS K_D] > 'd'
++ [NCAPS K_S] > 's'
++ [NCAPS K_A] > 'a'
++ [NCAPS K_RBRKT] > 'ʒ'
++ [NCAPS K_LBRKT] > 'ğ'
++ [NCAPS K_P] > 'p'
++ [NCAPS K_O] > 'o'
++ [NCAPS K_I] > 'ı'
++ [NCAPS K_U] > 'u'
++ [NCAPS K_Y] > 'y'
++ [NCAPS K_T] > 't'
++ [NCAPS K_R] > 'r'
++ [NCAPS K_E] > 'e'
++ [NCAPS K_W] > 'w'
++ [NCAPS K_Q] > 'q'
+
++ [NCAPS ALT K_COMMA] > 'ö'
++ [NCAPS ALT K_RBRKT] > 'ü'
++ [NCAPS ALT K_Q] > '@'
++ [NCAPS ALT K_T] > '₺'
++ [NCAPS ALT K_E] > '€'
++ [NCAPS ALT K_EQUAL] > '_'
++ [NCAPS ALT K_HYPHEN] > '\'
++ [NCAPS ALT K_0] > '}'
++ [NCAPS ALT K_9] > ']'
++ [NCAPS ALT K_8] > '['
++ [NCAPS ALT K_7] > '{'
++ [NCAPS ALT K_5] > '½'
++ [NCAPS ALT K_4] > '$'
++ [NCAPS ALT K_3] > '#'
++ [NCAPS ALT K_2] > '£'
++ [CAPS SHIFT K_EQUAL] > '-'
++ [CAPS SHIFT K_HYPHEN] > '*'
++ [CAPS SHIFT K_0] > '0'
++ [CAPS SHIFT K_9] > '9'
++ [CAPS SHIFT K_8] > '8'
++ [CAPS SHIFT K_7] > '7'
++ [CAPS SHIFT K_6] > '6'
++ [CAPS SHIFT K_5] > '5'
++ [CAPS SHIFT K_4] > '4'
++ [CAPS SHIFT K_3] > '3'
++ [CAPS SHIFT K_2] > '2'
++ [CAPS SHIFT K_1] > '1'
++ [CAPS SHIFT K_BKQUOTE] > '"'
++ [CAPS SHIFT K_SLASH] > '.'
++ [CAPS SHIFT K_PERIOD] > 'ç'
++ [CAPS SHIFT K_COMMA] > dk(comma)
+dk(comma) + [CAPS SHIFT K_K] > "k̆"
+dk(comma) + [CAPS SHIFT K_Z] > "ž"
+dk(comma) + [CAPS SHIFT K_P] > "p̌"
+dk(comma) + [CAPS SHIFT K_RBRKT] > "ʒ̆"
+dk(comma) + [CAPS SHIFT K_PERIOD] > "ç̌"
+dk(comma) + [CAPS SHIFT K_T] > "t̆"
++ [CAPS SHIFT K_M] > 'm'
++ [CAPS SHIFT K_N] > 'n'
++ [CAPS SHIFT K_B] > 'b'
++ [CAPS SHIFT K_V] > 'v'
++ [CAPS SHIFT K_C] > 'c'
++ [CAPS SHIFT K_X] > 'x'
++ [CAPS SHIFT K_Z] > 'z'
++ [CAPS SHIFT K_oE2] > '<'
++ [CAPS SHIFT K_BKSLASH] > ','
++ [CAPS SHIFT K_QUOTE] > 'i'
++ [CAPS SHIFT K_COLON] > 'ş'
++ [CAPS SHIFT K_L] > 'l'
++ [CAPS SHIFT K_K] > 'k'
++ [CAPS SHIFT K_J] > 'j'
++ [CAPS SHIFT K_H] > 'h'
++ [CAPS SHIFT K_G] > 'g'
++ [CAPS SHIFT K_F] > 'f'
++ [CAPS SHIFT K_D] > 'd'
++ [CAPS SHIFT K_S] > 's'
++ [CAPS SHIFT K_A] > 'a'
++ [CAPS SHIFT K_RBRKT] > 'ʒ'
++ [CAPS SHIFT K_LBRKT] > 'ğ'
++ [CAPS SHIFT K_P] > 'p'
++ [CAPS SHIFT K_O] > 'o'
++ [CAPS SHIFT K_I] > 'ı'
++ [CAPS SHIFT K_U] > 'u'
++ [CAPS SHIFT K_Y] > 'y'
++ [CAPS SHIFT K_T] > 't'
++ [CAPS SHIFT K_R] > 'r'
++ [CAPS SHIFT K_E] > 'e'
++ [CAPS SHIFT K_W] > 'w'
++ [CAPS SHIFT K_Q] > 'q'
++ [NCAPS SHIFT K_EQUAL] > '-'
++ [NCAPS SHIFT K_HYPHEN] > '?'
++ [NCAPS SHIFT K_0] > '='
++ [NCAPS SHIFT K_9] > ')'
++ [NCAPS SHIFT K_8] > '('
++ [NCAPS SHIFT K_7] > '/'
++ [NCAPS SHIFT K_6] > '&'
++ [NCAPS SHIFT K_5] > '%'
++ [NCAPS SHIFT K_4] > '+'
++ [NCAPS SHIFT K_3] > '^'
++ [NCAPS SHIFT K_2] > '‘'
++ [NCAPS SHIFT K_1] > '!'
++ [NCAPS SHIFT K_BKQUOTE] > '"'
++ [NCAPS SHIFT K_SLASH] > ':'
++ [NCAPS SHIFT K_PERIOD] > 'Ç'
++ [NCAPS SHIFT K_COMMA] > dk(comma)
+dk(comma) + [NCAPS SHIFT K_K] > "K̆"
+dk(comma) + [NCAPS SHIFT K_Z] > "Z̆"
+dk(comma) + [NCAPS SHIFT K_P] > "P̆"
+dk(comma) + [NCAPS SHIFT K_RBRKT] > "Ǯ"
+dk(comma) + [NCAPS SHIFT K_PERIOD] > "Ç̆"
+dk(comma) + [NCAPS SHIFT K_T] > "T̆"
++ [NCAPS SHIFT K_M] > 'M'
++ [NCAPS SHIFT K_N] > 'N'
++ [NCAPS SHIFT K_B] > 'B'
++ [NCAPS SHIFT K_V] > 'V'
++ [NCAPS SHIFT K_C] > 'C'
++ [NCAPS SHIFT K_X] > 'X'
++ [NCAPS SHIFT K_Z] > 'Z'
++ [NCAPS SHIFT K_oE2] > '>'
++ [NCAPS SHIFT K_BKSLASH] > ';'
++ [NCAPS SHIFT K_QUOTE] > 'İ'
++ [NCAPS SHIFT K_COLON] > 'Ş'
++ [NCAPS SHIFT K_L] > 'L'
++ [NCAPS SHIFT K_K] > 'K'
++ [NCAPS SHIFT K_J] > 'J'
++ [NCAPS SHIFT K_H] > 'H'
++ [NCAPS SHIFT K_G] > 'G'
++ [NCAPS SHIFT K_F] > 'F'
++ [NCAPS SHIFT K_D] > 'D'
++ [NCAPS SHIFT K_S] > 'S'
++ [NCAPS SHIFT K_A] > 'A'
++ [NCAPS SHIFT K_RBRKT] > 'Ʒ'
++ [NCAPS SHIFT K_LBRKT] > 'Ğ'
++ [NCAPS SHIFT K_P] > 'P'
++ [NCAPS SHIFT K_O] > 'O'
++ [NCAPS SHIFT K_I] > 'I'
++ [NCAPS SHIFT K_U] > 'U'
++ [NCAPS SHIFT K_Y] > 'Y'
++ [NCAPS SHIFT K_T] > 'T'
++ [NCAPS SHIFT K_R] > 'R'
++ [NCAPS SHIFT K_E] > 'E'
++ [NCAPS SHIFT K_W] > 'W'
++ [NCAPS SHIFT K_Q] > 'Q'
++ [NCAPS SHIFT ALT K_COMMA] > 'Ö'
++ [NCAPS SHIFT ALT K_RBRKT] > 'Ü'
++ [CAPS K_EQUAL] > '-'
++ [CAPS K_HYPHEN] > '?'
++ [CAPS K_0] > '='
++ [CAPS K_9] > '('
++ [CAPS K_8] > ')'
++ [CAPS K_7] > '/'
++ [CAPS K_6] > '&'
++ [CAPS K_5] > '%'
++ [CAPS K_4] > '+'
++ [CAPS K_3] > '^'
++ [CAPS K_2] > '‘'
++ [CAPS K_1] > '!'
++ [CAPS K_BKQUOTE] > '"'
++ [CAPS K_SLASH] > ':'
++ [CAPS K_PERIOD] > 'Ç'
++ [CAPS K_COMMA] > dk(comma)
+dk(comma) + [CAPS K_K] > "K̆"
+dk(comma) + [CAPS K_Z] > "Z̆"
+dk(comma) + [CAPS K_P] > "P̆"
+dk(comma) + [CAPS K_RBRKT] > "Ǯ"
+dk(comma) + [CAPS K_PERIOD] > "Ç̆"
+dk(comma) + [CAPS K_T] > "T̆"
++ [CAPS K_M] > 'M'
++ [CAPS K_N] > 'N'
++ [CAPS K_B] > 'B'
++ [CAPS K_V] > 'V'
++ [CAPS K_C] > 'C'
++ [CAPS K_X] > 'X'
++ [CAPS K_Z] > 'Z'
++ [CAPS K_oE2] > '>'
++ [CAPS K_BKSLASH] > ';'
++ [CAPS K_QUOTE] > 'İ'
++ [CAPS K_COLON] > 'Ş'
++ [CAPS K_L] > 'L'
++ [CAPS K_K] > 'K'
++ [CAPS K_J] > 'J'
++ [CAPS K_H] > 'H'
++ [CAPS K_G] > 'G'
++ [CAPS K_F] > 'F'
++ [CAPS K_D] > 'D'
++ [CAPS K_S] > 'S'
++ [CAPS K_A] > 'A'
++ [CAPS K_RBRKT] > 'Ʒ'
++ [CAPS K_LBRKT] > 'Ğ'
++ [CAPS K_P] > 'P'
++ [CAPS K_O] > 'O'
++ [CAPS K_I] > 'I'
++ [CAPS K_U] > 'U'
++ [CAPS K_Y] > 'Y'
++ [CAPS K_T] > 'T'
++ [CAPS K_R] > 'R'
++ [CAPS K_E] > 'E'
++ [CAPS K_W] > 'W'
++ [CAPS K_Q] > 'Q'
++ [CAPS ALT K_COMMA] > 'Ö'
++ [CAPS ALT K_RBRKT] > 'Ü'
+
+
+
+
