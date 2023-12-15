@@ -47,7 +47,7 @@ This keyboard is designed for the <b>Nsilxcən</b> language of the BC Interior r
 <table class="keyboard-layer">
   <tr><td align='center'>q q̓</td><td>w w̓</td><td>ə ə́ e é</td><td>r r̓</td><td>t t̓</td><td>y y̓</td><td>u ú o ó</td><td>i í</td><td>ƛ̓</td><td>p p̓</td></tr>
   <tr><td>a á</td><td>s š</td><td>ʔ</td><td class="keyboard-layer_special">´</td><td>ɣ ɣ̓</td><td>h ḥ</td><td>ʷ</td><td>k k̓</td><td>l l̓</td><td>ɬ</td></tr>
-  <tr><td>⇧</td><td class="keyboard-layer_special">ˇ</td><td>x x̌ x̣</td><td>c c̓ č</td><td class="keyboard-layer_special">’</td><td>ʕ ʕ̓</td><td>n n̓</td><td>m m̓</td><td>⌫</td></tr>
+  <tr><td>⇧</td><td class="keyboard-layer_special">ˇ</td><td>x x̌ x̣</td><td>c c̓ č č̓</td><td class="keyboard-layer_special">’</td><td>ʕ ʕ̓</td><td>n n̓</td><td>m m̓</td><td>⌫</td></tr>
   <tr><td>123</td><td>🌐</td><td>·</td><td colspan="4">space</td><td class="keyboard-layer__special">. , ! ? ; : ' " ` ~</td><td>⏎</td></tr>
 </table>
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
