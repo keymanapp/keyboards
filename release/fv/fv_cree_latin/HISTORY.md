@@ -1,5 +1,9 @@
 Cree - Roman Orthography Change History
 ============================
+10.0 (15 Dec 2023)
+-----------------
+* Added desktop layout
+
 9.1.1 (25 Oct 2023)
 -----------------
 * Changed order of mobile layers to unscramble display on help page
