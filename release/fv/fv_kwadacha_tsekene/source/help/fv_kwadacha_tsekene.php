@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Kwadacha Tsek’ene/b> language of the BC Interior region of Canada.
+This keyboard is designed for the <b>Kwadacha Tsek’ene</b> language of the BC Interior region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
