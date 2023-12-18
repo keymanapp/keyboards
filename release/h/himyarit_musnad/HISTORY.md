@@ -1,6 +1,10 @@
 Himyarit Musnad Change History
 ====================
 
+1.2.1 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 1.2 (2023-06-03)
 ----------------
 * Issues with Arabic characters not appearing on mobile platforms fixed.

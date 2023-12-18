@@ -1,9 +1,7 @@
 N’Ko Basic keyboard
 ==============
 
-(c) 2018-2021 SIL International
-
-Version 1.1
+(c) SIL International
 
 Description
 -----------
