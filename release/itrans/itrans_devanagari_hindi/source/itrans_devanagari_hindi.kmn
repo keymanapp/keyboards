@@ -26,10 +26,10 @@ c
 store(&VERSION) "10.0" 
 store(&NAME) 'Hindi Devanagari Phonetic (ITRANS)'
 store(&TARGETS) 'web desktop'
-store(&COPYRIGHT) '© 2019 sanskritdocuments.org'
+store(&COPYRIGHT) '© sanskritdocuments.org'
 store(&MESSAGE) 'A Phonetic Devanagari (ITRANS) keyboard for Hindi.'
 store(&KMW_HELPTEXT) 'Uses Unshifted, Shifted layouts.'
-store(&KEYBOARDVERSION) '1.2.0'
+store(&KEYBOARDVERSION) '1.2.1'
 store(&BITMAP) 'itrans_devanagari_hindi.ico'
 store(&VISUALKEYBOARD) 'itrans_devanagari_hindi.kvks'
 
@@ -58,6 +58,17 @@ c	Special Symbols
 c	Punctuation
 store(Punctuation) "!" "'" "(" ")" "-" "/" ":" ";" "" "?" '"' "," "." "=" "<" ">" "|"
 + any(Punctuation)	>	index(Punctuation,1)
+
+store(RALT_punctK) [RALT K_LBRKT]   [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] \
+                   [RALT K_BKSLASH] [RALT K_3]     [RALT K_4]           [RALT K_5] \
+                   [RALT K_6]       [RALT K_7]     [RALT K_8]           [RALT K_HYPHEN] \
+                   [RALT K_EQUAL]   [SHIFT RALT K_EQUAL]
+store(RALT_punctU) U+005B           U+005D           U+007B               U+007D \
+                   U+005C           U+0023           U+0024               U+0025 \
+                   U+005E           U+0026           U+002A               U+005F \
+                   U+003D           U+002B
+
++ any(RALT_punctK) > index(RALT_punctU,1)
 
 + "~"	>	"~" c Breaks Hindi mode rules if included in punctuation
 + "@"	>	"@" 
@@ -198,19 +209,24 @@ c duplicate mappings for ease of typing consonants
 
 
 c Nukta with preceding dot
-"." + "k"	>	"क़्" c .k
-"क़्" + "h"	>	"ख़्" c .kh
-"." + "g"	>	"ग़्" c .g
-"." + "j"	>	"ज़्" c .j
-"ज़्" + "h"	>	"झ़्" c .jh
-"." + "D"	>	"ड़्" c .D
-"ड़्" + "h"	>	"ढ़्" c .Dh
-"." + "f"	>	"फ़्" c .f
-"." + "n"	>	"ऩ्" c .n
-"." + "r"	>	"ऱ्" c .r
-"." + "L"	>	"ऴ्" c .L
-"." + "y"	>	"य़्" c .y
-"." + "c"	>	"च़्" c .c - ca plus nukta for Konkani
+"."           + "n"	>	U+0929 U+094D c "ऩ्"  c .n
+"."           + "r"	>	U+0931 U+094D c "ऱ्"  c .r
+"."           + "L"	>	U+0934 U+094D c "ऴ्" c .L 
+"."           + "k"	>	U+0958 U+094D c "क़्" c .k
+U+0958 U+094D + "h"	>	U+0959 U+094D c "ख़्"  c .kh
+"."           + "g"	>	U+095A U+094D c "ग़्"  c .g
+"."           + "j"	>	U+095B U+094D c "ज़्" use(NFC)  c .j
+U+095B U+094D + "h"	>	"झ़्"           c .jh
+"."           + "D"	>	U+095C U+094D c "ड़्" use(NFC)  c .D
+U+095C U+094D + "h"	>	U+095D U+094D c "ढ़्" use(NFC)  c .Dh
+"."           + "f"	>	U+095E U+094D c "फ़्"  c .f
+"."           + "y"	>	U+095F U+094D c "य़्" c .y
+"."           + "c"	>	"च़्"           c .c - ca plus nukta for Konkani ??
+
+store(other_nuktaU) U+091B U+091F U+0924 U+0926 U+0935 c छटतदथव
+store(other_nuktaK) "CTtdw"
+"." + any(other_nuktaK) > index(other_nuktaU,2) U+093C U+094D 
+U+0924 U+093C U+094D + "h" > U+0925 U+093C U+094D
 
 c alternate mapping with ~
 "~" + "n"	>	"ञ्" c ~n
@@ -245,7 +261,10 @@ $keymanonly: if(opt1 = '0') "न्" + "j"	>	"ञ्ज्"
 c Rules for Consonants + Vowel Signs
 
 store(Vyanjana) 'कक्षखगघङचछजज्ञझञटठडढणतथदधनपफबभमयरलळवश्रषसह'
-store(NuktaVyanjana) 'कखगजझडढफनरळयच'
+store(NuktaVyanjana) 'कखगजझडढफनरळयच' 'छटतथदव' c added last set
+
+c Since we changed to NFC this store is needed to fire the NuktaVyanjana rules
+store(NuktaVyanjana2) U+0929 U+0931 U+0934 U+0958 U+0959 U+095A U+095B U+095C U+095D U+095E U+095F
 store(ViramaMaatraa) 'eiouAEIORU[]LW{}qQzZ\'
 store(ViramaMaatraaU) "े" "ि" "ो" "ु" "ा" "ॅ" "ी" "ॉ" "ृ" "ू" "ॆ" "ॊ" "ॢ" "ॆ" 'ꣿ' 'ॏ' 'ऺ' 'ऻ'  'ॖ' 'ॗ' "ॅ"
 store(aPlusMaatraa) 'aeiuw'
@@ -282,4 +301,18 @@ any(NuktaVyanjana)"़""े" + "i"	>	index(NuktaVyanjana,1)"़""ै"	 c ei
 any(NuktaVyanjana)"़""ो" + "o"	>	 index(NuktaVyanjana,1)"़""ू"	 c oo
 any(NuktaVyanjana)"़""ो" + "u"	>	index(NuktaVyanjana,1)"़""ौ"	 c ou
 
-c EOF
+c need to see if nukta needs changing because of above changes
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana2) "्" + any(opt1endings)	>	index(NuktaVyanjana2,2) index(opt1endings,4)
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana2)  "्" + "`"	>	index(NuktaVyanjana,2) "ʼ"
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana2) "्" + "^"	>	index(NuktaVyanjana,2) "्" U+200C
+$keymanonly: if(opt1 = 'hindi') any(NuktaVyanjana2) + "^"	>	index(NuktaVyanjana,2) "्" U+200C
+any(NuktaVyanjana2)"्" + "a"	>	index(NuktaVyanjana2,1)
+any(NuktaVyanjana2) + any(aPlusMaatraa) 	>	context index(aPlusMaatraaU,2) 
+any(NuktaVyanjana2)"्" + any(ViramaMaatraa) 	>	index(NuktaVyanjana2,1) index(ViramaMaatraaU,3) 
+any(NuktaVyanjana2)"ि" + "i"	>	 index(NuktaVyanjana2,1)"ी"	 c ii
+any(NuktaVyanjana2)"ु" + "u"	>	 index(NuktaVyanjana2,1)"ू"	 c uu
+any(NuktaVyanjana2)"े" + "e"	>	 index(NuktaVyanjana2,1)"ी"	 c ee
+any(NuktaVyanjana2)"े" + "i"	>	index(NuktaVyanjana2,1)"ै"	 c ei
+any(NuktaVyanjana2)"ो" + "o"	>	 index(NuktaVyanjana2,1)"ू"	 c oo
+any(NuktaVyanjana2)"ो" + "u"	>	index(NuktaVyanjana2,1)"ौ"	 c ou
+

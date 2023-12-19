@@ -5,11 +5,11 @@ c Source Keyboard File: 'nstUnicode.js'
 
 store(&VERSION) '10.0'
 store(&NAME) 'Tangsa Lakhum'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.1.1'
 store(&VISUALKEYBOARD) 'tangsa_lakhum.kvks'
 store(&BITMAP) 'tangsa_lakhum.ico'
 store(&TARGETS) 'web desktop'
-store(&COPYRIGHT) '© (2021) Craig Cornelius'
+store(&COPYRIGHT) '© Craig Cornelius'
 store(&MESSAGE) 'Freely available for use'
 store(&KMW_HELPTEXT) 'Tangsa Lakhum Unicode'
 
@@ -54,8 +54,8 @@ c + [K_LBRKT] > '⇓'
 + [K_L] > '𖪮'
 + [K_COLON] > ';'
 + [K_QUOTE] > U+0027
-+ [K_COLON] > ';'
-+ [K_QUOTE] > U+0027
+c + [K_COLON] > ';' c duplicate
+c + [K_QUOTE] > U+0027 c duplicate
 + [K_Z] > '𖪘'
 + [K_X] > '𖪶'
 + [K_C] > '𖪵'
