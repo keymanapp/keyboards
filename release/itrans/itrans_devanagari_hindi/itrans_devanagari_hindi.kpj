@@ -3,7 +3,6 @@
   <Options>
     <BuildPath>$PROJECTPATH\build</BuildPath>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
-    <WarnDeprecatedCode>True</WarnDeprecatedCode>
     <CheckFilenameConventions>True</CheckFilenameConventions>
   </Options>
   <Files>
@@ -11,25 +10,32 @@
       <ID>id_fcceef995e542552ece88fb81b7de5ba</ID>
       <Filename>itrans_devanagari_hindi.kps</Filename>
       <Filepath>source\itrans_devanagari_hindi.kps</Filepath>
-      <FileVersion>1.2.0</FileVersion>
+      <FileVersion></FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Hindi Devanagari Phonetic (ITRANS)</Name>
-        <Copyright>©2019 sanskritdocuments.org</Copyright>
-        <Version>1.2.0</Version>
+        <Copyright>© 2019-2023 sanskritdocuments.org</Copyright>
       </Details>
     </File>
     <File>
       <ID>id_99016260b0270492f2e85b5e23d4e7cb</ID>
       <Filename>itrans_devanagari_hindi.kmn</Filename>
       <Filepath>source\itrans_devanagari_hindi.kmn</Filepath>
-      <FileVersion>1.2.0</FileVersion>
+      <FileVersion>1.2.1</FileVersion>
       <FileType>.kmn</FileType>
       <Details>
         <Name>Hindi Devanagari Phonetic (ITRANS)</Name>
-        <Copyright>©2019 sanskritdocuments.org</Copyright>
+        <Copyright>© sanskritdocuments.org</Copyright>
         <Message>A Phonetic Devanagari (ITRANS) keyboard for Hindi.</Message>
       </Details>
+    </File>
+    <File>
+      <ID>id_6e7b74ca0df23c47c777a65b02535aaf</ID>
+      <Filename>itrans_devanagari_hindi.ico</Filename>
+      <Filepath>source\itrans_devanagari_hindi.ico</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ico</FileType>
+      <ParentFileID>id_99016260b0270492f2e85b5e23d4e7cb</ParentFileID>
     </File>
     <File>
       <ID>id_64adcf1bffd7408f69f1d0e4012eed12</ID>
@@ -64,22 +70,6 @@
       <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
     </File>
     <File>
-      <ID>id_05d132e4688a9c09e4ee3b7ae27fbd3e</ID>
-      <Filename>itrans_devanagari_hindiU_.png</Filename>
-      <Filepath>source\welcome\itrans_devanagari_hindiU_.png</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.png</FileType>
-      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
-    </File>
-    <File>
-      <ID>id_b5a00066b1d1c92df22dd0b58e1275ef</ID>
-      <Filename>itrans_devanagari_hindiU_S.png</Filename>
-      <Filepath>source\welcome\itrans_devanagari_hindiU_S.png</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.png</FileType>
-      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
-    </File>
-    <File>
       <ID>id_724e5b4c63f10bc0abf7077f7c3172fc</ID>
       <Filename>welcome.htm</Filename>
       <Filepath>source\welcome\welcome.htm</Filepath>
@@ -88,12 +78,52 @@
       <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
     </File>
     <File>
-      <ID>id_6e7b74ca0df23c47c777a65b02535aaf</ID>
-      <Filename>itrans_devanagari_hindi.ico</Filename>
-      <Filepath>source\itrans_devanagari_hindi.ico</Filepath>
+      <ID>id_775966bbb7f63a6a4f893903aedc3c57</ID>
+      <Filename>CC.txt</Filename>
+      <Filepath>source\..\..\..\shared\fonts\deva\siddhanta\CC.txt</Filepath>
       <FileVersion></FileVersion>
-      <FileType>.ico</FileType>
-      <ParentFileID>id_99016260b0270492f2e85b5e23d4e7cb</ParentFileID>
+      <FileType>.txt</FileType>
+      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
+    </File>
+    <File>
+      <ID>id_820fbd7035e5bc433f311d48f77cde91</ID>
+      <Filename>siddhanta.ttf</Filename>
+      <Filepath>source\..\..\..\shared\fonts\deva\siddhanta\siddhanta.ttf</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ttf</FileType>
+      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
+    </File>
+    <File>
+      <ID>id_78ac6cf938777002a2f3309a49e410df</ID>
+      <Filename>LayoutU_.png</Filename>
+      <Filepath>source\welcome\LayoutU_.png</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.png</FileType>
+      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
+    </File>
+    <File>
+      <ID>id_5b8d871dc27f823f9b18bf23f0a05898</ID>
+      <Filename>LayoutU_RA.png</Filename>
+      <Filepath>source\welcome\LayoutU_RA.png</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.png</FileType>
+      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
+    </File>
+    <File>
+      <ID>id_e58372ce333f6fd1591720ba6a2f528a</ID>
+      <Filename>LayoutU_S.png</Filename>
+      <Filepath>source\welcome\LayoutU_S.png</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.png</FileType>
+      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
+    </File>
+    <File>
+      <ID>id_7a29d11a1cfbd527d458c03e7b320450</ID>
+      <Filename>LayoutU_SRA.png</Filename>
+      <Filepath>source\welcome\LayoutU_SRA.png</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.png</FileType>
+      <ParentFileID>id_fcceef995e542552ece88fb81b7de5ba</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>
