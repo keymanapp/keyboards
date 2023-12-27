@@ -4,6 +4,10 @@ Dënesųłıné Change History
 -----------------
 * Swapped mobile keyboard between fv_denesuline_epsilon and fv_denesuline so they are in correct files
 * Updated name and documentation to reflect correction
+* Updated to single codepoints where possible
+* Cleaned up rules
+* Changed canonical ordering
+* Centered mobile layout, modified key sizes
 
 9.1.1 (26 Oct 2023)
 -----------------
