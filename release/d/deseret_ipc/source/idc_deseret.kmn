@@ -1,0 +1,163 @@
+﻿c Available under the MIT License.
+c 
+c 𐐊𐑂𐐩𐑊𐐲𐐺𐐲𐑊 𐐲𐑌𐐼𐐲𐑉 𐑄 MIT 𐐢𐐴𐑅𐐲𐑌𐑅.
+store(&NAME) 'IDC Deseret'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) 'Copyright (C) N. E. Davis for Illinois Deseret Consortium'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'idc_deseret.ico'
+begin Unicode > use(main)
+
+group(main) using keys
+
+c 𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈𐐉𐐊𐐋𐐌𐐍𐐎𐐏𐐐𐐑𐐒𐐓𐐔𐐕𐐖𐐗𐐘𐐙𐐚𐐛𐐜𐐝𐐞𐐟𐐠𐐡𐐢𐐣𐐤𐐥𐐦𐐧
+c 𐐨𐐩𐐪𐐫𐐬𐐭𐐮𐐯𐐰𐐱𐐲𐐳𐐴𐐵𐐶𐐷𐐸𐐹𐐺𐐻𐐼𐐽𐐾𐐿𐑀𐑁𐑂𐑃𐑄𐑅𐑆𐑇𐑈𐑉𐑊𐑋𐑌𐑍𐑎𐑏
+
+c top row, no modifier
+c 𐐎𐐑𐐓𐐕𐐗𐐙𐐛𐐢𐐤𐐝𐐞
++ "`" > "𐐶"
++ "1" > "𐐹"
++ "2" > "𐐻"
++ "3" > "𐐽"
++ "4" > "𐐿"
++ "5" > "𐑁"
++ "6" > "𐑃"
++ "7" > "𐑊"
++ "8" > "𐑌"
++ "9" > "𐑅"
++ "0" > "𐑇"
+
+c second row, no modifier
+c 𐐒𐐔𐐖𐐘𐐚𐐜𐐡𐐥𐐟𐐠
++ "q" > "𐐺"
++ "w" > "𐐼"
++ "e" > "𐐾"
++ "r" > "𐑀"
++ "t" > "𐑂"
++ "y" > "𐑄"
++ "u" > "𐑉"
++ "i" > "𐑍"
++ "o" > "𐑆"
++ "p" > "𐑈"
+
+c third row, no modifier
+c 𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈
++ "a" > "𐐨"
++ "s" > "𐐩"
++ "d" > "𐐪"
++ "f" > "𐐫"
++ "g" > "𐐬"
++ "h" > "𐐭"
++ "j" > "𐐮"
++ "k" > "𐐯"
++ "l" > "𐐰"
+
+c bottom row, no modifier
+c 𐐉𐐊𐐋𐐌𐐍𐐐𐐣𐐏
++ "z" > "𐐱"
++ "x" > "𐐲"
++ "c" > "𐐳"
++ "v" > "𐐴"
++ "b" > "𐐵"
++ "n" > "𐐸"
++ "m" > "𐑋"
++ "/" > "𐐷"
+
+c TOP ROW, SHIFT MODIFIER
+c 𐐎𐐑𐐓𐐕𐐗𐐙𐐛𐐢𐐤𐐝𐐟
++ [SHIFT K_BKQUOTE] > "𐐎"
++ [SHIFT K_1] > "𐐑"
++ [SHIFT K_2] > "𐐓"
++ [SHIFT K_3] > "𐐕"
++ [SHIFT K_4] > "𐐗"
++ [SHIFT K_5] > "𐐙"
++ [SHIFT K_6] > "𐐛"
++ [SHIFT K_7] > "𐐢"
++ [SHIFT K_8] > "𐐤"
++ [SHIFT K_9] > "𐐝"
++ [SHIFT K_0] > "𐐟"
+
+c SECOND ROW, SHIFT MODIFIER
+c 𐐒𐐔𐐖𐐘𐐚𐐜𐐡𐐥𐐞𐐠
++ "Q" > "𐐒"
++ "W" > "𐐔"
++ "E" > "𐐖"
++ "R" > "𐐘"
++ "T" > "𐐚"
++ "Y" > "𐐜"
++ "U" > "𐐡"
++ "I" > "𐐥"
++ "O" > "𐐞"
++ "P" > "𐐠"
+
+c THIRD ROW, SHIFT MODIFIER
+c 𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈
++ "A" > "𐐀"
++ "S" > "𐐁"
++ "D" > "𐐂"
++ "F" > "𐐃"
++ "G" > "𐐄"
++ "H" > "𐐅"
++ "J" > "𐐆"
++ "K" > "𐐇"
++ "L" > "𐐈"
+
+c BOTTOM ROW, SHIFT MODIFIER
+c 𐐉𐐊𐐋𐐌𐐍𐐐𐐣𐐏
++ "Z" > "𐐉"
++ "X" > "𐐊"
++ "C" > "𐐋"
++ "V" > "𐐌"
++ "B" > "𐐍"
++ "N" > "𐐐"
++ "M" > "𐐣"
++ "?" > "𐐏"
+
+c irregular symbols
++ [RALT K_SLASH] > "/"
++ [RALT SHIFT K_SLASH] > "?"
++ [RALT K_BKQUOTE] > "`"
++ [RALT SHIFT K_BKQUOTE] > "~"
+c dotless i for schwa (following Marion J. Shelton)
++ [RALT K_j] > "ı"
++ [RALT SHIFT K_J] > "I"
+
+c ligatures
+"𐐱" + "j" > "𐑎"
+"𐐉" + "j" > "𐐦"
+"𐐉" + "J" > "𐐦"
+c + [K_z K_j] > "𐑎"
+c + [SHIFT K_Z K_j] > "𐐦"
+c C + [SHIFT K_Z K_J] > "𐐦"
+"𐐭" + "j" > "𐑏"
+"𐐅" + "j" > "𐐧"
+"𐐅" + "J" > "𐐧"
+c + [K_h K_j] > "𐑏"
+c + [SHIFT K_H K_j] > "𐐧"
+c C + [K_H K_J] > "𐐧"
+
+c top row, alt modifier
+c 1 2 3 4 5 6 7 8 9 0
++ [RALT K_1] > "𐐑"
++ [RALT K_2] > "𐐓"
++ [RALT K_3] > "𐐕"
++ [RALT K_4] > "𐐗"
++ [RALT K_5] > "𐐙"
++ [RALT K_6] > "𐐛"
++ [RALT K_7] > "𐐢"
++ [RALT K_8] > "𐐤"
++ [RALT K_9] > "𐐝"
++ [RALT K_0] > "𐐞"
+
+c top row, alt modifier
+c 1 2 3 4 5 6 7 8 9 0
++ [SHIFT RALT K_1] > "𐐑"
++ [SHIFT RALT K_2] > "𐐓"
++ [SHIFT RALT K_3] > "𐐕"
++ [SHIFT RALT K_4] > "𐐗"
++ [SHIFT RALT K_5] > "𐐙"
++ [SHIFT RALT K_6] > "𐐛"
++ [SHIFT RALT K_7] > "𐐢"
++ [SHIFT RALT K_8] > "𐐤"
++ [SHIFT RALT K_9] > "𐐝"
++ [SHIFT RALT K_0] > "𐐞"
