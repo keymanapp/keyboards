@@ -19,7 +19,3 @@ Supported Platforms
  * Web
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)
