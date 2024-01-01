@@ -1,0 +1,379 @@
+﻿c Extended Esperanto Keyboard for Keyman 15.0
+c 
+c This keyboard program uses a set of keys for typing Esperanto special characters
+c and resolves keys sequences into entire words or phrases.
+c 
+c @author: Andrea Vaccari
+
+store(&VERSION) '15.0'
+store(&NAME) 'Esperanto Plus'
+store(&COPYRIGHT) '© 2023 Andrea Vaccari'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'eo_plus.ico'
+store(&LAYOUTFILE) 'eo_plus.keyman-touch-layout'
+store(&TARGETS) 'any'
+store(&MNEMONICLAYOUT) "1"
+
+store(i_xchars) "cghjsuCGHJSU"
+store(o_xchars) "ĉĝĥĵŝŭĈĜĤĴŜŬ"
+store(x_stroke) "xX"
+
+store(slash)  '\'
+store(vtbar)  '|'
+
+store(oa) 'oa'
+store(ae) 'aeAE'
+
+store(vowels) 'aeiou'
+
+store(letters_lower) 'a' .. 'z'
+store(letters_upper) 'A' .. 'Z'
+
+store(letters) outs(letters_lower) outs(letters_upper) outs(o_xchars)
+
+c -----------------------------------------------------------------------------------------
+c Program start
+c -----------------------------------------------------------------------------------------
+begin Unicode > use(main)
+
+c -----------------------------------------------------------------------------------------
+c The main group
+c -----------------------------------------------------------------------------------------
+group(main) using keys
+
+c -----------------------------------------------------------------------------------------
+c The '<', '>' chars, whose key is not recognized in the desktop keyboards (Desktop) 
+c -----------------------------------------------------------------------------------------
+$keymanonly: + ['<'] > '<'
+$keymanonly: + [SHIFT '<'] > '>'
+
+c -----------------------------------------------------------------------------------------
+c Special Characters (Desktop + Mobile)
+c -----------------------------------------------------------------------------------------
+any(i_xchars) + any(x_stroke) > index(o_xchars, 1)
+any(o_xchars) + any(x_stroke) > index(i_xchars, 1) index(x_stroke, 2)
+
+c -----------------------------------------------------------------------------------------
+c Press 'u' after 'a' or 'e', to write 'ŭ'. Press 'u' again, to write 'u' instead.
+c -----------------------------------------------------------------------------------------
+any(ae) + 'u' > index(ae, 1) 'ŭ'
+any(ae) 'ŭ'  + 'u' > index(ae, 1) 'u'
+
+c -----------------------------------------------------------------------------------------
+c Special sequences
+c -----------------------------------------------------------------------------------------
+'ee' + 'o' > 'Esperanto'
+'ee' + 'a' > 'Esperanta'
+'zm' + 'f' > 'Zamenhof'
+
+c -----------------------------------------------------------------------------------------
+c Hodiaŭ, hieraŭ, morgaŭ
+c -----------------------------------------------------------------------------------------
+any(letters) 'h'  + 'd' > context 'd'
+any(letters) 'h'  + 'r' > context 'r'
+any(letters) 'm'  + 'g' > context 'g'
+
+'. h'  + 'd' > '. Hodiaŭ'
+' h'  + 'd' > ' hodiaŭ'
+'h'  + 'd' > 'Hodiaŭ'
+
+'. h'  + 'r' > '. Hieraŭ'
+' h'  + 'r' > ' hieraŭ'
+'h'  + 'r' > 'Hieraŭ'
+
+'. m'  + 'g' > '. Morgaŭ'
+' m'  + 'g' > ' morgaŭ'
+'m'  + 'g' > 'Morgaŭ'
+
+c -----------------------------------------------------------------------------------------
+c Dankon, ne dankinde, saluton...
+c -----------------------------------------------------------------------------------------
+
+any(letters) 'dn' + 'k' > context 'k'
+
+'. dn' + 'k' > '. Dankon'
+' dn' + 'k' > ' dankon'
+'dn' + 'k' > 'Dankon'
+
+any(letters) 'nd' + 'k' > context 'k'
+
+'. nd' + 'k' > '. Ne dankinde'
+' nd' + 'k' > ' ne dankinde'
+'nd' + 'k' > 'Ne dankinde'
+
+any(letters) 'sl' + 't' > context 't'
+
+'. sl' + 't' > '. Saluton'
+' sl' + 't' > ' saluton'
+'sl' + 't' > 'Saluton'
+
+any(letters) 'sl' + 'c' > context 'c'
+
+'. sl' + 'c' > '. Saluton al ĉiuj'
+' sl' + 'c' > ' saluton al ĉiuj'
+'sl' + 'c' > 'Saluton al ĉiuj'
+
+any(letters) 'kd' + 'n' > context 'n'
+
+'. kd' + 'n' > '. Koran dankon'
+' kd' + 'n' > ' koran dankon'
+'kd' + 'n' > 'Koran dankon'
+
+any(letters) 'ks' + 'l' > context 'l'
+
+'. ks' + 'l' > '. Korajn salutojn'
+' ks' + 'l' > ' korajn salutojn'
+'ks' + 'l' > 'Korajn salutojn'
+
+any(letters) 'bm' + 't' > context 't'
+
+'. bm' + 't' > '. Bonan matenon'
+' bm' + 't' > ' bonan matenon'
+'bm' + 't' > 'Bonan matenon'
+
+any(letters) 'bt' + 'g' > context 'g'
+
+'. bt' + 'g' > '. Bonan tagon'
+' bt' + 'g' > ' bonan tagon'
+'bt' + 'g' > 'Bonan tagon'
+
+any(letters) 'bv' + 's' > context 's'
+
+'. bv' + 's' > '. Bonan vesperon'
+' bv' + 's' > ' bonan vesperon'
+'bv' + 's' > 'Bonan vesperon'
+
+any(letters) 'bk' + 'n' > context 'n'
+
+'. bk' + 'n' > '. Bonan Kristnaskon'
+' bk' + 'n' > ' bonan Kristnaskon'
+'bk' + 'n' > 'Bonan Kristnaskon'
+
+any(letters) 'bp' + 's' > context 's'
+
+'. bp' + 's' > '. Bonan Paskvon'
+' bp' + 's' > ' bonan Paskvon'
+'bp' + 's' > 'Bonan Paskvon'
+
+any(letters) 'fk' + 'n' > context 'n'
+
+'. fk' + 'n' > '. Feliĉan Kristnaskon'
+' fk' + 'n' > ' feliĉan Kristnaskon'
+'fk' + 'n' > 'Feliĉan Kristnaskon'
+
+any(letters) 'kv' + 'f' > context 'f'
+
+'. kv' + 'f' > '. Kiel vi fartas?'
+' kv' + 'f' > ' kiel vi fartas?'
+'kv' + 'f' > 'Kiel vi fartas?'
+
+any(letters) 'mf' + 'b' > context 'b'
+
+'. mf' + 'b' > '. Mi fartas bone'
+' mf' + 'b' > ' mi fartas bone'
+'mf' + 'b' > 'Mi fartas bone'
+
+any(letters) 'mf' + 'd' > context 'd'
+
+'. mf' + 'd' > '. Mi fartas bone, dankon'
+' mf' + 'd' > ' mi fartas bone, dankon'
+'mf' + 'd' > 'Mi fartas bone, dankon'
+
+any(letters) 'bd' + 'n' > context 'n'
+
+'. bd' + 'n' > '. Bone, dankon'
+' bd' + 'n' > ' bone, dankon'
+'bd' + 'n' > 'Bone, dankon'
+
+any(letters) 'bv' + 'l' > context 'l'
+
+'. bv' + 'l' > '. Bonvolu'
+' bv' + 'l' > ' bonvolu'
+'bv' + 'l' > 'Bonvolu'
+
+c -----------------------------------------------------------------------------------------
+c Kompreni, konsenti
+c -----------------------------------------------------------------------------------------
+
+any(letters) 'km' + 'p' > context 'p'
+
+'. km' + 'p' > '. Kompreni'
+' km' + 'p' > ' kompreni'
+'km' + 'p' > 'Kompreni'
+
+any(letters) 'kn' + 's' > context 's'
+
+'. kn' + 's' > '. Konsenti'
+' kn' + 's' > ' konsenti'
+'kn' + 's' > 'Konsenti'
+
+c -----------------------------------------------------------------------------------------
+c Mi komprenas, mi konsentas, vi pravas
+c -----------------------------------------------------------------------------------------
+
+any(letters) 'mk' + 'p' > context 'p'
+
+'. mk' + 'p' > '. Mi komprenas'
+' mk' + 'p' > ' mi komprenas'
+'mk' + 'p' > 'Mi komprenas'
+
+any(letters) 'mk' + 's' > context 's'
+
+'. mk' + 's' > '. Mi konsentas'
+' mk' + 's' > ' mi konsentas'
+'mk' + 's' > 'Mi konsentas'
+
+any(letters) 'vp' + 'r' > context 'r'
+
+'. vp' + 'r' > '. Vi pravas'
+' vp' + 'r' > ' vi pravas'
+'vp' + 'r' > 'Vi pravas'
+
+c -----------------------------------------------------------------------------------------
+c Loop rules (Desktop)
+c -----------------------------------------------------------------------------------------
+$keymanonly: + $slash > use(loop_one)
+$keymanonly: + $vtbar > use(loop_two)
+
+c -----------------------------------------------------------------------------------------
+c Loop rules (Mobile)
+c -----------------------------------------------------------------------------------------
+$keymanweb: + [T_LOOP_1] > use(loop_one)
+$keymanweb: + [T_LOOP_2] > use(loop_two)
+
+c -----------------------------------------------------------------------------------------
+c Loop rules 1
+c -----------------------------------------------------------------------------------------
+group(loop_one)
+
+"'" > '\'
+
+any(oa) ' '   > index(oa, 1) 'n '
+any(oa) 'n '  > index(oa, 1) 'j '
+any(oa) 'j '  > index(oa, 1) 'jn '
+any(oa) 'jn ' > index(oa, 1) ' '
+
+any(oa)       > index(oa, 1) 'n '
+any(oa) 'n'   > index(oa, 1) 'j '
+any(oa) 'j'   > index(oa, 1) 'jn '
+any(oa) 'jn'  > index(oa, 1) ' '
+
+'i '  > 'as '
+'as ' > 'is '
+'is ' > 'os '
+'os ' > 'us '
+'us ' > 'u '
+'u '  > 'i '
+
+'i'  > 'as '
+'as' > 'is '
+'is' > 'os '
+'os' > 'us '
+'us' > 'u '
+'u'  > 'i '
+
+any(vowels) ' ' > 'as'
+' ' > 'as '
+
+any(letters) > index(letters, 1) 'as '
+
+$keymanonly: nomatch > '\'
+
+c -----------------------------------------------------------------------------------------
+c Loop rules 2
+c -----------------------------------------------------------------------------------------
+group(loop_two)
+
+"'" > '|'
+
+'i '      > 'anta '
+'anta '   > 'ante '
+'antan '  > 'ante '
+'antaj '  > 'ante '
+'antajn ' > 'ante '
+'ante '   > 'inta '
+'inta '   > 'inte '
+'intan '  > 'inte '
+'intaj '  > 'inte '
+'intajn ' > 'inte '
+'inte '   > 'ata '
+'ata '    > 'ita '
+'atan '   > 'itan '
+'ataj '   > 'itaj '
+'atajn '  > 'itajn '
+'ita '    > 'ite '
+'itan '   > 'ite '
+'itaj '   > 'ite '
+'itajn '  > 'ite '
+'ite '    > 'i '
+
+'ant '  > 'anta '
+'int '  > 'inta '
+'at '   > 'ata '
+'it '   > 'ita '
+
+'i'      > 'anta '
+'anta'   > 'ante '
+'antan'  > 'ante '
+'antaj'  > 'ante '
+'antajn' > 'ante '
+'ante'   > 'inta '
+'inta'   > 'inte '
+'intan'  > 'inte '
+'intaj'  > 'inte '
+'intajn' > 'inte '
+'inte'   > 'ata '
+'ata'    > 'ita '
+'atan'   > 'itan '
+'ataj'   > 'itaj '
+'atajn'  > 'itajn '
+'ita'    > 'ite '
+'itan'   > 'ite '
+'itaj'   > 'ite '
+'itajn'  > 'ite '
+'ite'    > 'i '
+
+'ant'  > 'anta '
+'int'  > 'inta '
+'at'   > 'ata '
+'it'   > 'ita '
+
+'as ' > 'anta '
+'is ' > 'anta '
+'os ' > 'anta '
+'us ' > 'anta '
+'u '  > 'anta '
+
+'as' > 'anta '
+'is' > 'anta '
+'os' > 'anta '
+'us' > 'anta '
+'u'  > 'anta '
+
+'o '   > 'anta'
+'on '  > 'antan'
+'oj '  > 'antaj'
+'ojn ' > 'antajn'
+
+'o'   > 'anta'
+'on'  > 'antan'
+'oj'  > 'antaj'
+'ojn' > 'antajn'
+
+'a '   > 'anta'
+'an '  > 'antan'
+'aj '  > 'antaj'
+'ajn ' > 'antajn'
+
+'a'   > 'anta'
+'an'  > 'antan'
+'aj'  > 'antaj'
+'ajn' > 'antajn'
+
+any(vowels) ' ' > 'anta '
+' ' > 'anta '
+
+any(vowels) > 'anta '
+any(letters) > index(letters, 1) 'anta '
+
+$keymanonly: nomatch > '|'
