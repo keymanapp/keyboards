@@ -5,23 +5,11 @@
         <meta charset="utf-8"/>
         <meta name="author" content="Andrea Vaccari"/>
         <title>Esperanto Plus</title>
-        <link rel="stylesheet" type="text/css" href="help.css">
+        <link rel="stylesheet" type="text/css" href="eo_plus.css">
     </head>
 
     <body>
         <div id="divWrap">
-            <!-- L'intestazione -->
-            <header id="divHeader">
-                <div id="divHeaderTitle"">
-                   <a href="https://esperatempo.altervista.org" target="_blank">
-                       <span class="macro">E</span>spera
-                       <span class="macro">T</span>empo
-                    </a>
-                </div>
-                <div id="divFlag">
-                    <img id="imgFlag" src="flag.png" alt="flago">
-                </div>
-            </header>
 
             <!-- I contenuti -->
             <div id="divContent">
@@ -213,11 +201,6 @@
                 </div>
 
             </div>
-        
-            <!-- Il piè di pagina -->
-            <footer id="divFooter">
-                © 2023 Andrea Vaccari
-            </footer>
         </div>
     </body>
 </html>
