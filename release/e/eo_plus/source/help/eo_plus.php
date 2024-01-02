@@ -47,7 +47,7 @@
                     In the touch version of the keyboard are additional special keys, to type the letters "ĉ, ĝ, ĥ, ĵ, ŝ, ŭ".
                 </p>
 
-                <div id='osk' data-states='default shift'></div>
+                <div id='osk-tablet' data-states='default shift'></div>
 
                 <h2>Endings</h2>
                 
