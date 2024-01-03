@@ -2,10 +2,11 @@
 c 
 c 𐐊𐑂𐐩𐑊𐐲𐐺𐐲𐑊 𐐲𐑌𐐼𐐲𐑉 𐑄 MIT 𐐢𐐴𐑅𐐲𐑌𐑅.
 store(&NAME) 'IDC Deseret'
-store(&TARGETS) 'any'
+store(&TARGETS) 'desktop web'
 store(&COPYRIGHT) 'Copyright (C) N. E. Davis for Illinois Deseret Consortium'
 store(&KEYBOARDVERSION) '1.0'
 store(&BITMAP) 'idc_deseret.ico'
+store(&VISUALKEYBOARD) 'idc_deseret.kvks'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -138,26 +139,26 @@ c C + [K_H K_J] > "𐐧"
 
 c top row, alt modifier
 c 1 2 3 4 5 6 7 8 9 0
-+ [RALT K_1] > "𐐑"
-+ [RALT K_2] > "𐐓"
-+ [RALT K_3] > "𐐕"
-+ [RALT K_4] > "𐐗"
-+ [RALT K_5] > "𐐙"
-+ [RALT K_6] > "𐐛"
-+ [RALT K_7] > "𐐢"
-+ [RALT K_8] > "𐐤"
-+ [RALT K_9] > "𐐝"
-+ [RALT K_0] > "𐐞"
++ [RALT K_1] > "1"
++ [RALT K_2] > "2"
++ [RALT K_3] > "3"
++ [RALT K_4] > "4"
++ [RALT K_5] > "5"
++ [RALT K_6] > "6"
++ [RALT K_7] > "7"
++ [RALT K_8] > "8"
++ [RALT K_9] > "9"
++ [RALT K_0] > "0"
 
-c top row, alt modifier
-c 1 2 3 4 5 6 7 8 9 0
-+ [SHIFT RALT K_1] > "𐐑"
-+ [SHIFT RALT K_2] > "𐐓"
-+ [SHIFT RALT K_3] > "𐐕"
-+ [SHIFT RALT K_4] > "𐐗"
-+ [SHIFT RALT K_5] > "𐐙"
-+ [SHIFT RALT K_6] > "𐐛"
-+ [SHIFT RALT K_7] > "𐐢"
-+ [SHIFT RALT K_8] > "𐐤"
-+ [SHIFT RALT K_9] > "𐐝"
-+ [SHIFT RALT K_0] > "𐐞"
+c top row, alt modifier w/ shift
+c ! @ # $ % ^ & * ( )
++ [SHIFT RALT K_1] > "!"
++ [SHIFT RALT K_2] > "@"
++ [SHIFT RALT K_3] > "#"
++ [SHIFT RALT K_4] > "$"
++ [SHIFT RALT K_5] > "%"
++ [SHIFT RALT K_6] > "^"
++ [SHIFT RALT K_7] > "&"
++ [SHIFT RALT K_8] > "*"
++ [SHIFT RALT K_9] > "("
++ [SHIFT RALT K_0] > ")"
