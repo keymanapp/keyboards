@@ -1,9 +1,5 @@
-Esperanto Plus Readme
-=====================
-
-© 2023 Andrea Vaccari
-
-Version 1.0
+Esperanto Plus
+==============
 
 Description
 -----------
