@@ -13,7 +13,7 @@ store(&Targets) "web desktop"
 store(&VISUALKEYBOARD) 'sil_limbu_typewriter.kvks'
 store(&BITMAP) 'sil_limbu_typewriter.ico'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.2'
+store(&KEYBOARDVERSION) '1.2/1'
 
 begin Unicode > use(main)
 
@@ -150,6 +150,7 @@ group(main) using keys
 
 + [K_PERIOD] > U+0965
 + [SHIFT K_PERIOD] > U+005d
++ [RALT K_PERIOD] > U+0964
 
 + [K_SLASH] > U+002f
 + [SHIFT K_SLASH] > U+003f
