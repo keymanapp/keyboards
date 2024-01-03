@@ -227,8 +227,8 @@ any(letters) 'vp' + 'r' > context 'r'
 c -----------------------------------------------------------------------------------------
 c Loop rules (Desktop)
 c -----------------------------------------------------------------------------------------
-$keymanonly: + $slash > use(loop_one)
-$keymanonly: + $vtbar > use(loop_two)
++ $slash > use(loop_one)
++ $vtbar > use(loop_two)
 
 c -----------------------------------------------------------------------------------------
 c Loop rules (Mobile)
@@ -243,15 +243,15 @@ group(loop_one)
 
 "'" > '\'
 
-any(oa) ' '   > index(oa, 1) 'n '
-any(oa) 'n '  > index(oa, 1) 'j '
-any(oa) 'j '  > index(oa, 1) 'jn '
-any(oa) 'jn ' > index(oa, 1) ' '
+any(oa) ' '   > context(1) 'n '
+any(oa) 'n '  > context(1) 'j '
+any(oa) 'j '  > context(1) 'jn '
+any(oa) 'jn ' > context(1) ' '
 
-any(oa)       > index(oa, 1) 'n '
-any(oa) 'n'   > index(oa, 1) 'j '
-any(oa) 'j'   > index(oa, 1) 'jn '
-any(oa) 'jn'  > index(oa, 1) ' '
+any(oa)       > context(1) 'n '
+any(oa) 'n'   > context(1) 'j '
+any(oa) 'j'   > context(1) 'jn '
+any(oa) 'jn'  > context(1) ' '
 
 'i '  > 'as '
 'as ' > 'is '
@@ -272,7 +272,7 @@ any(vowels) ' ' > 'as'
 
 any(letters) > index(letters, 1) 'as '
 
-$keymanonly: nomatch > '\'
+nomatch > '\'
 
 c -----------------------------------------------------------------------------------------
 c Loop rules 2
@@ -371,4 +371,4 @@ any(vowels) ' ' > 'anta '
 any(vowels) > 'anta '
 any(letters) > index(letters, 1) 'anta '
 
-$keymanonly: nomatch > '|'
+nomatch > '|'
