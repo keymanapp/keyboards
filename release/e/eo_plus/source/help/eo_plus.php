@@ -8,7 +8,7 @@ require_once('header.php');
     <meta charset="utf-8"/>
     <meta name="author" content="Andrea Vaccari"/>
     <title>Esperanto Plus Keyboard Help</title>
-    <link rel="stylesheet" type="text/css" href="welcome.css">
+    <link rel="stylesheet" type="text/css" href="eo_plus.css">
 </head>
 <body>
     <div id="divWrap">
