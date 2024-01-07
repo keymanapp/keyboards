@@ -1,7 +1,12 @@
 Esperanto Plus Change History
 =============================
 
-1.0 (2023-12-23)
+1.1 (2024-01-06)
 ----------------
-* Created by Andrea Vaccari
+- Optimized the help file
+- Added touch layout for phones
+
+1.0 (2024-01-04)
+----------------
+- First version
 

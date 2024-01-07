@@ -8,11 +8,12 @@ c @author: Andrea Vaccari
 store(&VERSION) '15.0'
 store(&NAME) 'Esperanto Plus'
 store(&COPYRIGHT) '© 2023 Andrea Vaccari'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&BITMAP) 'eo_plus.ico'
 store(&LAYOUTFILE) 'eo_plus.keyman-touch-layout'
 store(&TARGETS) 'any'
 store(&MNEMONICLAYOUT) "1"
+store(&VISUALKEYBOARD) 'eo_plus.kvks'
 
 store(i_xchars) "cghjsuCGHJSU"
 store(o_xchars) "ĉĝĥĵŝŭĈĜĤĴŜŬ"
@@ -32,15 +33,16 @@ store(letters_upper) 'A' .. 'Z'
 store(letters) outs(letters_lower) outs(letters_upper) outs(o_xchars)
 
 c -----------------------------------------------------------------------------------------
-c Program start
+c Group Unicode
 c -----------------------------------------------------------------------------------------
-store(&VISUALKEYBOARD) 'eo_plus.kvks'
 begin Unicode > use(main)
 
 c -----------------------------------------------------------------------------------------
 c The main group
 c -----------------------------------------------------------------------------------------
 group(main) using keys
+
+'.' + ' ' > context ' ' layer('shift')
 
 c -----------------------------------------------------------------------------------------
 c The '<', '>' chars, whose key is not recognized in the desktop keyboards (Desktop) 
