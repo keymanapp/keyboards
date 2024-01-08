@@ -42,6 +42,7 @@ require_once('header.php');
     </p>
 
     <div id='osk-tablet' data-states='default shift'></div>
+    <div id='osk-phone'  data-states='default shift caps symbols'></div>
 
     <h2>Endings</h2>
     
@@ -49,7 +50,7 @@ require_once('header.php');
         On physical keyboards, type "\" and "|", to alternate between the following endings.
         As an example, the first rule means that, by pressing the "\" key after one of the sequences "o, on, oj, ojn"
         (with or without a trailing space), the next sequence will be written instead (eg "on " + "\" = "oj ").
-        In the touch version press the <img src="key_on.png" class="key"> and <img src="key_anta.png" class="key"> keys,
+        In the touch version press the <img src="key_f1.png" class="key"> and <img src="key_f2.png" class="key"> keys,
         to get the same result.
     </p>
             
