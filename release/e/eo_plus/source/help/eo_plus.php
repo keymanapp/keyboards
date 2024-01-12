@@ -13,14 +13,14 @@ require_once('header.php');
 
 <body>
     <p>
-        This keyboard is designed to simplify the input  of the Esperanto special characters
-        and shorten the writing of the most common words and phrases.
+        This keyboard is designed to simplify the input of the Esperanto special characters,
+        add the main suffixes and facilitate the writing of the most common words and phrases.
     </p>
 
     <h2>Special letters</h2>
     
     <p>
-        Type "x" after "c, g, h, j, s, u", to write the letters "ch, g, ch, j, sh, w".
+        On physical keyboards, type "x" after "c, g, h, j, s, u", to write the letters "ch, g, ch, j, sh, w".
         Type "x" again, to write the original letter followed by an "x".
         The same applies to the capital letters "C, G, H, J, S, U".
         You can also type "X" instead of "x".
@@ -38,35 +38,29 @@ require_once('header.php');
     </div>
 
     <p>
-        In the touch version of the keyboard are additional special keys, to type the letters "ĉ, ĝ, ĥ, ĵ, ŝ, ŭ".
+        On touch keyboards are additional special keys, to type the letters "ĉ, ĝ, ĥ, ĵ, ŝ, ŭ".
     </p>
 
-    <div id='osk-tablet' data-states='default shift'></div>
-    <div id='osk-phone'  data-states='default shift caps symbols'></div>
+    <div id='osk-tablet' data-states='default shift symbols'></div>
 
-    <h2>Endings</h2>
+    <h2>Suffixes</h2>
     
     <p>
-        On physical keyboards, type "\" and "|", to alternate between the following endings.
-        As an example, the first rule means that, by pressing the "\" key after one of the sequences "o, on, oj, ojn"
-        (with or without a trailing space), the next sequence will be written instead (eg "on " + "\" = "oj ").
-        In the touch version press the <img src="key_f1.png" class="key"> and <img src="key_f2.png" class="key"> keys,
-        to get the same result.
+        On touch keyboards, press the function keys (-n, -o, -i, -nt, -t, -ig, -et),
+        to alternate between the most used suffixes and endings. As an example, the first rule means that, by pressing the
+        "-n" key, the -n ending is set or unset to a word.
     </p>
             
     <div class="rules">
-        <div class="box box-5">
-            <div>o</div><div>+</div><div>\</div><div>=</div><div><span class="special-char">o, on, oj, ojn</span></div>
-            <div>a</div><div>+</div><div>\</div><div>=</div><div><span class="special-char">a, an, aj, ajn</span></div>
-            <div> </div><div> </div><div>\</div><div>=</div><div><span class="special-char">i, as, is, os, us, u</span></div>
-            <div> </div><div> </div><div>|</div><div>=</div><div><span class="special-char">anta, ante, inta, inte, ata, ita, ite</span></div>
+        <div class="box box-3">
+            <div>-n </div><div>=</div><div><span class="special-char">-n</span></div>
+            <div>-o </div><div>=</div><div><span class="special-char">-o, -a, -e</span></div>
+            <div>-i </div><div>=</div><div><span class="special-char">-i, -as, -is, -os, -us, -u</span></div>
+            <div>-nt</div><div>=</div><div><span class="special-char">-ant, -int, -ont</span></div>
+            <div>-t </div><div>=</div><div><span class="special-char">-at, -it, -ot</span></div>
+            <div>-ig</div><div>=</div><div><span class="special-char">-ig, -iĝ</span></div>
+            <div>-et</div><div>=</div><div><span class="special-char">-et, -eg</span></div>
         </div>
-
-        <div class="box box-5">
-            <div>'</div><div>+</div><div>\</div><div>=</div><div><span class="special-char">\</span></div>
-            <div>'</div><div>+</div><div>|</div><div>=</div><div><span class="special-char">|</span></div>
-        </div>
-
     </div>
 
     <h2>Frequent words and phrases</h2>
@@ -78,9 +72,9 @@ require_once('header.php');
 
     <div class="rules">
         <div class="box box-3">
-            <div>dnk</div><div>=</div><div><span class="special-char">Dankon</span></div>
+            <div>dk </div><div>=</div><div><span class="special-char">Dankon</span></div>
             <div>ndk</div><div>=</div><div><span class="special-char">Ne dankinde</span></div>
-            <div>bdn</div><div>=</div><div><span class="special-char">Bone, dankon</span></div>
+            <div>bdk</div><div>=</div><div><span class="special-char">Bone, dankon</span></div>
             <div>bvl</div><div>=</div><div><span class="special-char">Bonvolu</span></div>
             <div>slt</div><div>=</div><div><span class="special-char">Saluton</span></div>
             <div>slc</div><div>=</div><div><span class="special-char">Saluton al ĉiuj</span></div>

@@ -34,15 +34,9 @@ a {
     text-decoration: none;
 }
 
-td {
-    padding: 0 2px;
-    text-align: left;
-    white-space: nowrap;
-}
-
 #divWrap {
-display: grid;
-grid-template-rows: auto 1fr auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     min-height: 100%;
 }
 
@@ -87,7 +81,6 @@ grid-template-rows: auto 1fr auto;
 
 #divKeyboards {
     display: inline-grid;
-    grid-template-columns: repeat(2, auto);
     grid-gap: 18px 20px;
 }
 
@@ -108,12 +101,28 @@ grid-template-rows: auto 1fr auto;
     color: #fcf1e0;
 }
 
+.boxes {
+    display: grid;
+    grid-row-gap: 18px;
+}
+
 .box {
-    padding: 14px 20px 14px 19px;
+    display: grid;
+    grid-column-gap: 8px;
+    justify-content: start;
+    padding: 11px 20px 12px 19px;
     background-color: #FDFDDF;
     border-radius: 5px;
-    border: 2px solid #CFBAA4;
+    border: 1px solid #CFBAA4;
     box-shadow: 3px 3px 3px #aaa;
+}
+
+.box-3 {
+    grid-template-columns: repeat(3, auto);
+}
+
+.box-5 {
+    grid-template-columns: repeat(5, auto);
 }
 
 .special-char {

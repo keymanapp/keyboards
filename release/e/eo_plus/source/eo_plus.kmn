@@ -1,13 +1,12 @@
-﻿c Extended Esperanto Keyboard for Keyman 15.0
+﻿c Extended Esperanto Keyboard
 c 
-c This keyboard program uses a set of keys for typing Esperanto special characters
-c and resolves keys sequences into entire words or phrases.
+c This keyboard is designed to simplify the input of the Esperanto special characters, add the main suffixes and facilitate the writing of the most common words and phrases.
 c 
 c @author: Andrea Vaccari
 
 store(&VERSION) '15.0'
 store(&NAME) 'Esperanto Plus'
-store(&COPYRIGHT) '© 2024 Andrea Vaccari'
+store(&COPYRIGHT) '© Andrea Vaccari'
 store(&KEYBOARDVERSION) '2.0'
 store(&BITMAP) 'eo_plus.ico'
 store(&LAYOUTFILE) 'eo_plus.keyman-touch-layout'
@@ -15,362 +14,607 @@ store(&TARGETS) 'any'
 store(&MNEMONICLAYOUT) "1"
 store(&VISUALKEYBOARD) 'eo_plus.kvks'
 
-store(i_xchars) "cghjsuCGHJSU"
-store(o_xchars) "ĉĝĥĵŝŭĈĜĤĴŜŬ"
-store(x_stroke) "xX"
-
-store(slash)  '\'
-store(vtbar)  '|'
-
-store(oa) 'oa'
-store(ae) 'aeAE'
-
-store(vowels) 'aeiou'
-
-store(letters_lower) 'a' .. 'z'
-store(letters_upper) 'A' .. 'Z'
-
-store(letters) outs(letters_lower) outs(letters_upper) outs(o_xchars)
-
-c -----------------------------------------------------------------------------------------
-c Group Unicode
-c -----------------------------------------------------------------------------------------
+c =========================================================================================
+c Begin
+c =========================================================================================
 begin Unicode > use(main)
 
-c -----------------------------------------------------------------------------------------
-c The main group
-c -----------------------------------------------------------------------------------------
+c =========================================================================================
+c Main
+c =========================================================================================
 group(main) using keys
 
-'.' + ' ' > context ' ' layer('shift')
+c -----------------------------------------------------------------------------------------
+c Special Characters
+c -----------------------------------------------------------------------------------------
+$keymanonly: store(x_chars) 'xX'
+$keymanonly: store(i_chars) 'cghjsuCGHJSU'
+$keymanonly: store(o_chars) 'ĉĝĥĵŝŭĈĜĤĴŜŬ'
+
+$keymanonly: any(i_chars) + any(x_chars) > index(o_chars, 1)
+$keymanonly: any(o_chars) + any(x_chars) > index(i_chars, 1) index(x_chars, 2)
 
 c -----------------------------------------------------------------------------------------
-c The '<', '>' chars, whose key is not recognized in the desktop keyboards (Desktop) 
+c Shift layer
+c -----------------------------------------------------------------------------------------
+c '.' + ' ' > context ' ' layer('shift')
+
+c -----------------------------------------------------------------------------------------
+c Suffixes
+c -----------------------------------------------------------------------------------------
+store(key) ''
+
+$keymanweb: + [T_N]   > set(key = 'n')   use(Suffix_Prepare)
+$keymanweb: + [T_O]   > set(key = 'o')   use(Suffix_Prepare)
+$keymanweb: + [T_I]   > set(key = 'i')   use(Suffix_Prepare)
+$keymanweb: + [T_NT]  > set(key = 'nt')  use(Suffix_Prepare)
+$keymanweb: + [T_T]   > set(key = 't')   use(Suffix_Prepare)
+$keymanweb: + [T_IG]  > set(key = 'ig')  use(Suffix_Prepare)
+$keymanweb: + [T_ET]  > set(key = 'et')  use(Suffix_Prepare)
+
+c -----------------------------------------------------------------------------------------
+c The '<', '>' chars
 c -----------------------------------------------------------------------------------------
 $keymanonly: + ['<'] > '<'
 $keymanonly: + [SHIFT '<'] > '>'
 
 c -----------------------------------------------------------------------------------------
-c Special Characters (Desktop + Mobile)
+c Extensions
 c -----------------------------------------------------------------------------------------
-any(i_xchars) + any(x_stroke) > index(o_xchars, 1)
-any(o_xchars) + any(x_stroke) > index(i_xchars, 1) index(x_stroke, 2)
+store(to_extend) 'abcdfgklnoprst'
++ any(to_extend) > index(to_extend, 1) use(Extend)
 
-c -----------------------------------------------------------------------------------------
-c Special sequences
-c -----------------------------------------------------------------------------------------
-'ee' + 'o' > 'Esperanto'
-'ee' + 'a' > 'Esperanta'
-'zm' + 'f' > 'Zamenhof'
+c =========================================================================================
+c Suffix_Prepare
+c =========================================================================================
+group(Suffix_Prepare)
 
 c -----------------------------------------------------------------------------------------
-c Hodiaŭ, hieraŭ, morgaŭ
+c Remove spaces after the previous word, execute Suffix_Execute and add a space.
 c -----------------------------------------------------------------------------------------
-any(letters) 'h'  + 'd' > context 'd'
-any(letters) 'h'  + 'r' > context 'r'
-any(letters) 'm'  + 'g' > context 'g'
+' ' > nul use(Suffix_Prepare)
+nomatch > use(Suffix_Execute) ' '
 
-'. h'  + 'd' > '. Hodiaŭ'
-' h'  + 'd' > ' hodiaŭ'
-'h'  + 'd' > 'Hodiaŭ'
-
-'. h'  + 'r' > '. Hieraŭ'
-' h'  + 'r' > ' hieraŭ'
-'h'  + 'r' > 'Hieraŭ'
-
-'. m'  + 'g' > '. Morgaŭ'
-' m'  + 'g' > ' morgaŭ'
-'m'  + 'g' > 'Morgaŭ'
-
-c -----------------------------------------------------------------------------------------
-c Dankon, ne dankinde, saluton...
-c -----------------------------------------------------------------------------------------
-
-any(letters) 'dn' + 'k' > context 'k'
-
-'. dn' + 'k' > '. Dankon'
-' dn' + 'k' > ' dankon'
-'dn' + 'k' > 'Dankon'
-
-any(letters) 'nd' + 'k' > context 'k'
-
-'. nd' + 'k' > '. Ne dankinde'
-' nd' + 'k' > ' ne dankinde'
-'nd' + 'k' > 'Ne dankinde'
-
-any(letters) 'sl' + 't' > context 't'
-
-'. sl' + 't' > '. Saluton'
-' sl' + 't' > ' saluton'
-'sl' + 't' > 'Saluton'
-
-any(letters) 'sl' + 'c' > context 'c'
-
-'. sl' + 'c' > '. Saluton al ĉiuj'
-' sl' + 'c' > ' saluton al ĉiuj'
-'sl' + 'c' > 'Saluton al ĉiuj'
-
-any(letters) 'kd' + 'n' > context 'n'
-
-'. kd' + 'n' > '. Koran dankon'
-' kd' + 'n' > ' koran dankon'
-'kd' + 'n' > 'Koran dankon'
-
-any(letters) 'ks' + 'l' > context 'l'
-
-'. ks' + 'l' > '. Korajn salutojn'
-' ks' + 'l' > ' korajn salutojn'
-'ks' + 'l' > 'Korajn salutojn'
-
-any(letters) 'bm' + 't' > context 't'
-
-'. bm' + 't' > '. Bonan matenon'
-' bm' + 't' > ' bonan matenon'
-'bm' + 't' > 'Bonan matenon'
-
-any(letters) 'bt' + 'g' > context 'g'
-
-'. bt' + 'g' > '. Bonan tagon'
-' bt' + 'g' > ' bonan tagon'
-'bt' + 'g' > 'Bonan tagon'
-
-any(letters) 'bv' + 's' > context 's'
-
-'. bv' + 's' > '. Bonan vesperon'
-' bv' + 's' > ' bonan vesperon'
-'bv' + 's' > 'Bonan vesperon'
-
-any(letters) 'bk' + 'n' > context 'n'
-
-'. bk' + 'n' > '. Bonan Kristnaskon'
-' bk' + 'n' > ' bonan Kristnaskon'
-'bk' + 'n' > 'Bonan Kristnaskon'
-
-any(letters) 'bp' + 's' > context 's'
-
-'. bp' + 's' > '. Bonan Paskvon'
-' bp' + 's' > ' bonan Paskvon'
-'bp' + 's' > 'Bonan Paskvon'
-
-any(letters) 'fk' + 'n' > context 'n'
-
-'. fk' + 'n' > '. Feliĉan Kristnaskon'
-' fk' + 'n' > ' feliĉan Kristnaskon'
-'fk' + 'n' > 'Feliĉan Kristnaskon'
-
-any(letters) 'kv' + 'f' > context 'f'
-
-'. kv' + 'f' > '. Kiel vi fartas?'
-' kv' + 'f' > ' kiel vi fartas?'
-'kv' + 'f' > 'Kiel vi fartas?'
-
-any(letters) 'mf' + 'b' > context 'b'
-
-'. mf' + 'b' > '. Mi fartas bone'
-' mf' + 'b' > ' mi fartas bone'
-'mf' + 'b' > 'Mi fartas bone'
-
-any(letters) 'mf' + 'd' > context 'd'
-
-'. mf' + 'd' > '. Mi fartas bone, dankon'
-' mf' + 'd' > ' mi fartas bone, dankon'
-'mf' + 'd' > 'Mi fartas bone, dankon'
-
-any(letters) 'bd' + 'n' > context 'n'
-
-'. bd' + 'n' > '. Bone, dankon'
-' bd' + 'n' > ' bone, dankon'
-'bd' + 'n' > 'Bone, dankon'
-
-any(letters) 'bv' + 'l' > context 'l'
-
-'. bv' + 'l' > '. Bonvolu'
-' bv' + 'l' > ' bonvolu'
-'bv' + 'l' > 'Bonvolu'
+c =========================================================================================
+c Suffix_Execute
+c =========================================================================================
+group(Suffix_Execute)
+        
+if(key = 'n')   >                                                     use(N_Exec)
+if(key = 'o')   > use(S1_Prep)                                        use(O_Exec)                                          use(S1_Exec)
+if(key = 'i')   > use(S1_Prep)                                        use(I_Exec)                                          use(S1_Exec)
+if(key = 'et')  > use(S1_Prep) use(S2_Prep)                           use(ET_Exec)                            use(S2_Exec) use(S1_Exec)
+if(key = 'nt')  > use(S1_Prep) use(S2_Prep) use(S3_Prep)              use(NT_Exec)               use(S3_Exec) use(S2_Exec) use(S1_Exec)
+if(key = 't')   > use(S1_Prep) use(S2_Prep) use(S3_Prep)              use(T_Exec)                use(S3_Exec) use(S2_Exec) use(S1_Exec)
+if(key = 'ig')  > use(S1_Prep) use(S2_Prep) use(S3_Prep) use(S4_Prep) use(IG_Exec)  use(S4_Exec) use(S3_Exec) use(S2_Exec) use(S1_Exec)
 
 c -----------------------------------------------------------------------------------------
-c Kompreni, konsenti
+c The suffixes (position from end)
 c -----------------------------------------------------------------------------------------
+store(S1) '' c 1 
+store(S2) '' c 2 
+store(S3) '' c 3 
+store(S4) '' c 4 
+store(S5) '' c 5 
 
-any(letters) 'km' + 'p' > context 'p'
+c =========================================================================================
+c *** KEY EXECUTE ***
+c =========================================================================================
 
-'. km' + 'p' > '. Kompreni'
-' km' + 'p' > ' kompreni'
-'km' + 'p' > 'Kompreni'
+c =========================================================================================
+c N_Exec (Level 1)
+c =========================================================================================
+group(N_Exec) 
 
-any(letters) 'kn' + 's' > context 's'
+'o'   > 'on'
+'on'  > 'oj'
+'oj'  > 'ojn'
+'ojn' > 'o'
 
-'. kn' + 's' > '. Konsenti'
-' kn' + 's' > ' konsenti'
-'kn' + 's' > 'Konsenti'
+'a'   > 'an'
+'an'  > 'aj'
+'aj'  > 'ajn'
+'ajn' > 'a'
 
-c -----------------------------------------------------------------------------------------
-c Mi komprenas, mi konsentas, vi pravas
-c -----------------------------------------------------------------------------------------
-
-any(letters) 'mk' + 'p' > context 'p'
-
-'. mk' + 'p' > '. Mi komprenas'
-' mk' + 'p' > ' mi komprenas'
-'mk' + 'p' > 'Mi komprenas'
-
-any(letters) 'mk' + 's' > context 's'
-
-'. mk' + 's' > '. Mi konsentas'
-' mk' + 's' > ' mi konsentas'
-'mk' + 's' > 'Mi konsentas'
-
-any(letters) 'vp' + 'r' > context 'r'
-
-'. vp' + 'r' > '. Vi pravas'
-' vp' + 'r' > ' vi pravas'
-'vp' + 'r' > 'Vi pravas'
+'e'   > 'en'
+'en'  > 'e'
 
 c -----------------------------------------------------------------------------------------
-c Function rules (Desktop)
+c Turn 2nd level i-suffixes to 'on'
 c -----------------------------------------------------------------------------------------
-$keymanonly: + $slash > use(F1)
-$keymanonly: + $vtbar > use(F2)
 
-c -----------------------------------------------------------------------------------------
-c Function rules (Mobile)
-c -----------------------------------------------------------------------------------------
-$keymanweb: + [T_F1] > use(F1)
-$keymanweb: + [T_F2] > use(F2)
+'i'   > 'on'
+'as'  > 'on'
+'is'  > 'on'
+'os'  > 'on'
+'us'  > 'on'
+'u'   > 'on'
 
-c -----------------------------------------------------------------------------------------
-c Function rules 1
-c -----------------------------------------------------------------------------------------
-group(F1)
+nomatch > 'on'
 
-"'" > '\'
+c =========================================================================================
+c O_Exec (Level 2)
+c =========================================================================================
+group(O_Exec) 
 
-any(oa) ' '   > context(1) 'n '
-any(oa) 'n '  > context(1) 'j '
-any(oa) 'j '  > context(1) 'jn '
-any(oa) 'jn ' > context(1) ' '
-
-any(oa)       > context(1) 'n '
-any(oa) 'n'   > context(1) 'j '
-any(oa) 'j'   > context(1) 'jn '
-any(oa) 'jn'  > context(1) ' '
-
-'i '  > 'as '
-'as ' > 'is '
-'is ' > 'os '
-'os ' > 'us '
-'us ' > 'u '
-'u '  > 'i '
-
-'i'  > 'as '
-'as' > 'is '
-'is' > 'os '
-'os' > 'us '
-'us' > 'u '
-'u'  > 'i '
-
-any(vowels) ' ' > 'as'
-' ' > 'as '
-
-any(letters) > index(letters, 1) 'as '
-
-nomatch > '\'
+'o'  > 'a'
+'a'  > 'e'
+'e'  > 'o'
 
 c -----------------------------------------------------------------------------------------
-c Function rules 2
+c Turn same level suffixes to 'o'
 c -----------------------------------------------------------------------------------------
-group(F2)
 
-"'" > '|'
+'i'  > 'o'
+'as' > 'o'
+'is' > 'o'
+'os' > 'o'
+'us' > 'o'
+'u'  > 'o'
 
-'i '      > 'anta '
-'anta '   > 'ante '
-'antan '  > 'ante '
-'antaj '  > 'ante '
-'antajn ' > 'ante '
-'ante '   > 'inta '
-'inta '   > 'inte '
-'intan '  > 'inte '
-'intaj '  > 'inte '
-'intajn ' > 'inte '
-'inte '   > 'ata '
-'ata '    > 'ita '
-'atan '   > 'itan '
-'ataj '   > 'itaj '
-'atajn '  > 'itajn '
-'ita '    > 'ite '
-'itan '   > 'ite '
-'itaj '   > 'ite '
-'itajn '  > 'ite '
-'ite '    > 'i '
+nomatch > 'o'
 
-'ant '  > 'anta '
-'int '  > 'inta '
-'at '   > 'ata '
-'it '   > 'ita '
+c =========================================================================================
+c I_Exec (Level 2)
+c =========================================================================================
+group(I_Exec) 
 
-'i'      > 'anta '
-'anta'   > 'ante '
-'antan'  > 'ante '
-'antaj'  > 'ante '
-'antajn' > 'ante '
-'ante'   > 'inta '
-'inta'   > 'inte '
-'intan'  > 'inte '
-'intaj'  > 'inte '
-'intajn' > 'inte '
-'inte'   > 'ata '
-'ata'    > 'ita '
-'atan'   > 'itan '
-'ataj'   > 'itaj '
-'atajn'  > 'itajn '
-'ita'    > 'ite '
-'itan'   > 'ite '
-'itaj'   > 'ite '
-'itajn'  > 'ite '
-'ite'    > 'i '
+'antus' > 'antas' c 'anti' not common
+'intus' > 'intas' c 'inti' not common
+'ontus' > 'ontas' c 'onti' not common
 
-'ant'  > 'anta '
-'int'  > 'inta '
-'at'   > 'ata '
-'it'   > 'ita '
+'atus'  > 'atas'  c 'ati' not common
+'itus'  > 'itas'  c 'iti' not common
+'otus'  > 'otas'  c 'oti' not common
 
-'as ' > 'anta '
-'is ' > 'anta '
-'os ' > 'anta '
-'us ' > 'anta '
-'u '  > 'anta '
+'anta'  > 'antas' c 'anti' not common
+'inta'  > 'intas' c 'inti' not common
+'onta'  > 'ontas' c 'onti' not common
 
-'as' > 'anta '
-'is' > 'anta '
-'os' > 'anta '
-'us' > 'anta '
-'u'  > 'anta '
+'ata'   > 'atas'  c 'ati' not common
+'ita'   > 'itas'  c 'iti' not common
+'ota'   > 'otas'  c 'oti' not common
 
-'o '   > 'anta'
-'on '  > 'antan'
-'oj '  > 'antaj'
-'ojn ' > 'antajn'
+'i'  > 'as'
+'as' > 'is'
+'is' > 'os'
+'os' > 'us'
+'us' > 'u'
+'u'  > 'i'
 
-'o'   > 'anta'
-'on'  > 'antan'
-'oj'  > 'antaj'
-'ojn' > 'antajn'
+c -----------------------------------------------------------------------------------------
+c Turn same level suffixes to 'i'
+c -----------------------------------------------------------------------------------------
+'o' > 'i'
+'a' > 'i'
+'e' > 'i'
 
-'a '   > 'anta'
-'an '  > 'antan'
-'aj '  > 'antaj'
-'ajn ' > 'antajn'
+nomatch > 'i'
 
-'a'   > 'anta'
-'an'  > 'antan'
-'aj'  > 'antaj'
-'ajn' > 'antajn'
+c =========================================================================================
+c ET_Exec (Level 3)
+c =========================================================================================
+group(ET_Exec) 
 
-any(vowels) ' ' > 'anta '
-' ' > 'anta '
+'et' > 'eg'
+'eg' > nul 
 
-any(vowels) > 'anta '
-any(letters) > index(letters, 1) 'anta '
+nomatch > 'et'
 
-nomatch > '|'
+c =========================================================================================
+c NT_Exec (Level 4)
+c =========================================================================================
+group(NT_Exec) 
+
+'ant' > 'int'
+'int' > 'ont'
+'ont' > nul
+
+c -----------------------------------------------------------------------------------------
+c Turn same level suffixes to 'ant'
+c -----------------------------------------------------------------------------------------
+'at' > 'ant'
+'it' > 'ant'
+'ot' > 'ant'
+
+nomatch > 'ant'
+
+c =========================================================================================
+c T_Exec (Level 4)
+c =========================================================================================
+group(T_Exec) 
+
+'at' > 'it'
+'it' > 'ot'
+'ot' > nul
+
+c -----------------------------------------------------------------------------------------
+c Turn same level suffixes to 'at'
+c -----------------------------------------------------------------------------------------
+'ant' > 'at'
+'int' > 'at'
+'ont' > 'at'
+
+nomatch > 'at'
+
+c =========================================================================================
+c IG_Exec (Level 5)
+c =========================================================================================
+group(IG_Exec) 
+
+'ig' > 'iĝ'
+'iĝ' > nul
+
+nomatch > 'ig'
+
+c =========================================================================================
+c *** SUFFIX PREPARE ***
+c =========================================================================================
+
+c =========================================================================================
+c S1_Prep
+c =========================================================================================
+group(S1_Prep) 
+
+if(key = 'o') 'ajn' > 'a' set(S1 = 'n') c 'ejn' not possible
+if(key = 'o') 'aj'  > 'a' set(S1 = '')  c 'ej' not possible
+if(key = 'i') 'jn'  >     set(S1 = '')  c 'asjn', 'isjn',... not possible
+if(key = 'i') 'j'   >     set(S1 = '')  c 'asj', 'isj',... not possible
+if(key = 'i') 'n'   >     set(S1 = '')  c 'asn', 'isn',... not possible
+
+'jn' > set(S1 = 'jn')
+'n'  > set(S1 = 'n')
+'j'  > set(S1 = 'j')
+
+nomatch > set(S1 = '')
+
+c =========================================================================================
+c S2_Prep
+c =========================================================================================
+group(S2_Prep) 
+
+if(key = 'nt') 'i' > set(S2 = 'a') c 'anti' not usual
+if(key = 'nt') 'u' > set(S2 = 'a') c 'antu' not usual
+if(key = 't')  'i' > set(S2 = 'a') c 'ati' not usual
+if(key = 't')  'u' > set(S2 = 'a') c 'atu' not usual
+
+'o'  > set(S2 = 'o')
+'a'  > set(S2 = 'a')
+'e'  > set(S2 = 'e')
+
+'i'  > set(S2 = 'i')
+'as' > set(S2 = 'as')
+'is' > set(S2 = 'is')
+'os' > set(S2 = 'os')
+'us' > set(S2 = 'us')
+'u'  > set(S2 = 'u')
+
+c -----------------------------------------------------------------------------------------
+c When pressing for example the 'nt' key after the word 'viv', it'd become 'vivant', if no
+c default value for the S2 suffix has been set. So set it to 'a', for outputting 'vivanta'.
+c -----------------------------------------------------------------------------------------
+nomatch > set(S2 = 'a')
+
+c =========================================================================================
+c S3_Prep
+c =========================================================================================
+group(S3_Prep) 
+
+'et' > set(S3 = 'et')
+'eg' > set(S3 = 'eg')
+
+nomatch > set(S3 = '')
+
+c =========================================================================================
+c S4_Prep
+c =========================================================================================
+group(S4_Prep) 
+
+'ant' > set(S4 = 'ant')
+'int' > set(S4 = 'int')
+'ont' > set(S4 = 'ont')
+
+'at'  > set(S4 = 'at')
+'it'  > set(S4 = 'it')
+'ot'  > set(S4 = 'ot')
+
+nomatch > set(S4 = '')
+
+c =========================================================================================
+c S5_Prep
+c =========================================================================================
+group(S5_Prep) 
+
+'ig' > set(S5 = 'ig')
+'iĝ' > set(S5 = 'iĝ')
+
+nomatch > set(S5 = '')
+
+c =========================================================================================
+c *** SUFFIX EXECUTE ***
+c =========================================================================================
+
+c =========================================================================================
+c S1_Exec
+c =========================================================================================
+group(S1_Exec) 
+
+if(S1 = 'n')  > 'n'
+if(S1 = 'j')  > 'j'
+if(S1 = 'jn') > 'jn'
+
+c =========================================================================================
+c S2_Exec
+c =========================================================================================
+group(S2_Exec) 
+
+if(S2 = 'o')  > 'o'   
+if(S2 = 'a')  > 'a'   
+if(S2 = 'e')  > 'e'   
+
+if(S2 = 'i')  > 'i'
+if(S2 = 'as') > 'as'
+if(S2 = 'is') > 'is'
+if(S2 = 'os') > 'os'
+if(S2 = 'us') > 'us'
+if(S2 = 'u')  > 'u'
+
+c =========================================================================================
+c S3_Exec
+c =========================================================================================
+group(S3_Exec) 
+
+if(S3 = 'et') > 'et'
+if(S3 = 'eg') > 'eg'
+
+c =========================================================================================
+c S4_Exec
+c =========================================================================================
+group(S4_Exec) 
+
+if(S4 = 'ant') > 'ant'
+if(S4 = 'int') > 'int'
+if(S4 = 'ont') > 'ont'
+
+if(S4 = 'at')  > 'at'
+if(S4 = 'it')  > 'it'
+if(S4 = 'ot')  > 'ot'
+
+c =========================================================================================
+c S5_Exec
+c =========================================================================================
+group(S5_Exec) 
+
+if(S5 = 'ig')  > 'ig'
+if(S5 = 'iĝ')  > 'iĝ'
+
+c =========================================================================================
+c *** SEQUENCE EXTEND ***
+c =========================================================================================
+
+c =========================================================================================
+c Extend
+c =========================================================================================
+group(Extend)
+
+store(letters) 'a' .. 'z' 'A' .. 'Z' 'ĉĝĥĵŝŭĈĜĤĴŜŬ'
+store(periods) '.!?'
+
+'a' > 'a' use(Extend_A)
+'b' > 'b' use(Extend_B)
+'c' > 'c' use(Extend_C)
+'d' > 'd' use(Extend_D)
+'f' > 'f' use(Extend_F)
+'g' > 'g' use(Extend_G)
+'k' > 'k' use(Extend_K)
+'l' > 'l' use(Extend_L)
+'n' > 'n' use(Extend_N)
+'o' > 'o' use(Extend_O)
+'p' > 'p' use(Extend_P)
+'r' > 'r' use(Extend_R)
+'s' > 's' use(Extend_S)
+'t' > 't' use(Extend_T)
+
+c =========================================================================================
+c Extend_A
+c =========================================================================================
+group(Extend_A)
+
+any(letters) 'eea' > context
+'eea' > 'Esperanta'
+
+c =========================================================================================
+c Extend_B
+c =========================================================================================
+group(Extend_B)
+
+any(letters) 'mfb' > context
+any(periods) ' mfb' > index(periods, 1) ' Mi fartas bone'
+' mfb' > ' mi fartas bone'
+'mfb' > 'Mi fartas bone'
+
+c =========================================================================================
+c Extend_C
+c =========================================================================================
+group(Extend_C)
+
+any(letters) 'slc' > context
+any(periods) ' slc' > index(periods, 1) ' Saluton al ĉiuj'
+' slc' > ' saluton al ĉiuj'
+'slc' > 'Saluton al ĉiuj'
+
+c =========================================================================================
+c Extend_D
+c =========================================================================================
+group(Extend_D)
+
+any(letters) 'hd' > context
+any(periods) ' hd' > index(periods, 1) ' Hodiaŭ'
+' hd' > ' hodiaŭ'
+'hd' > 'Hodiaŭ'
+
+any(letters) 'mfd' > context
+any(periods) ' mfd' > index(periods, 1) ' Mi fartas bone, dankon'
+' mfd' > ' mi fartas bone, dankon'
+'mfd' > 'Mi fartas bone, dankon'
+
+c =========================================================================================
+c Extend_F
+c =========================================================================================
+group(Extend_F)
+
+any(letters) 'zmf' > context
+'zmf' > 'Zamenhof'
+
+any(letters) 'kvf' > context
+any(periods) ' kvf' > index(periods, 1) ' Kiel vi fartas?'
+' kvf' > ' kiel vi fartas?'
+'kvf' > 'Kiel vi fartas?'
+
+c =========================================================================================
+c Extend_G
+c =========================================================================================
+group(Extend_G)
+
+any(letters) 'mg' > context
+any(periods) ' mg' > index(periods, 1) ' Morgaŭ'
+' mg' > ' morgaŭ'
+'mg' > 'Morgaŭ'
+
+any(letters) 'btg' > context
+any(periods) ' btg' > index(periods, 1) ' Bonan tagon'
+' btg' > ' bonan tagon'
+'btg' > 'Bonan tagon'
+
+c =========================================================================================
+c Extend_K
+c =========================================================================================
+group(Extend_K)
+
+any(letters) 'dk' > context
+any(periods) ' dk' > index(periods, 1) ' Dankon'
+' dk' > ' dankon'
+'dk' > 'Dankon'
+
+any(letters) 'ndk' > context
+any(periods) ' ndk' > index(periods, 1) ' Ne dankinde'
+' ndk' > ' ne dankinde'
+'ndk' > 'Ne dankinde'
+
+any(letters) 'bdk' > context
+any(periods) ' bdk' > index(periods, 1) ' Bone, dankon'
+' bdk' > ' bone, dankon'
+'bdk' > 'Bone, dankon'
+
+c =========================================================================================
+c Extend_L
+c =========================================================================================
+group(Extend_L)
+
+any(letters) 'bvl' > context
+any(periods) ' bvl' > index(periods, 1) ' Bonvolu'
+' bvl' > ' bonvolu'
+'bvl' > 'Bonvolu'
+
+any(letters) 'ksl' > context
+any(periods) ' ksl' > index(periods, 1) ' Korajn salutojn'
+' ksl' > ' korajn salutojn'
+'ksl' > 'Korajn salutojn'
+
+c =========================================================================================
+c Extend_N
+c =========================================================================================
+group(Extend_N)
+
+any(letters) 'kdn' > context
+any(periods) ' kdn' > index(periods, 1) ' Koran dankon'
+' kdn' > ' koran dankon'
+'kdn' > 'Koran dankon'
+
+any(letters) 'bkn' > context
+any(periods) ' bkn' > index(periods, 1) ' Bonan Kristnaskon'
+' bkn' > ' bonan Kristnaskon'
+'bkn' > 'Bonan Kristnaskon'
+
+any(letters) 'fkn' > context
+any(periods) ' fkn' > index(periods, 1) ' Feliĉan Kristnaskon'
+' fkn' > ' feliĉan Kristnaskon'
+'fkn' > 'Feliĉan Kristnaskon'
+
+c =========================================================================================
+c Extend_O
+c =========================================================================================
+group(Extend_O)
+
+any(letters) 'eeo' > context
+'eeo' > 'Esperanto'
+
+c =========================================================================================
+c Extend_P
+c =========================================================================================
+group(Extend_P)
+
+any(letters) 'kmp' > context
+any(periods) ' kmp' > index(periods, 1) ' Kompreni'
+' kmp' > ' kompreni'
+'kmp' > 'Kompreni'
+
+any(letters) 'mkp' > context
+any(periods) ' mkp' > index(periods, 1) ' Mi komprenas'
+' mkp' > ' mi komprenas'
+'mkp' > 'Mi komprenas'
+
+c =========================================================================================
+c Extend_R
+c =========================================================================================
+group(Extend_R)
+
+any(letters) 'hr' > context
+any(periods) ' hr' > index(periods, 1) ' Hieraŭ'
+' hr' > ' hieraŭ'
+'hr' > 'Hieraŭ'
+
+any(letters) 'vpr' > context
+any(periods) ' vpr' > index(periods, 1) ' Vi pravas'
+' vpr' > ' vi pravas'
+'vpr' > 'Vi pravas'
+
+c =========================================================================================
+c Extend_S
+c =========================================================================================
+group(Extend_S)
+
+any(letters) 'bvs' > context
+any(periods) ' bvs' > index(periods, 1) ' Bonan vesperon'
+' bvs' > ' bonan vesperon'
+'bvs' > 'Bonan vesperon'
+
+any(letters) 'bps' > context
+any(periods) ' bps' > index(periods, 1) ' Bonan Paskvon'
+' bps' > ' bonan Paskvon'
+'bps' > 'Bonan Paskvon'
+
+any(letters) 'kns' > context
+any(periods) ' kns' > index(periods, 1) ' Konsenti'
+' kns' > ' konsenti'
+'kns' > 'Konsenti'
+
+any(letters) 'mks' > context
+any(periods) ' mks' > index(periods, 1) ' Mi konsentas'
+' mks' > ' mi konsentas'
+'mks' > 'Mi konsentas'
+
+c =========================================================================================
+c Extend_T
+c =========================================================================================
+group(Extend_T)
+
+any(letters) 'bmt' > context
+any(periods) ' bmt' > index(periods, 1) ' Bonan matenon'
+' bmt' > ' bonan matenon'
+'bmt' > 'Bonan matenon'
+
+any(letters) 'slt' > context
+any(periods) ' slt' > index(periods, 1) ' Saluton'
+' slt' > ' saluton'
+'slt' > 'Saluton'
