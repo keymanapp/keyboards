@@ -1,5 +1,10 @@
 Anishinaabemowin Change History
 ============================
+10.0.1 (12 Jan 2024)
+-----------------
+* Changed script tag
+* Added Welcome files
+
 10.0 (19 Dec 2023)
 -----------------
 * Built desktop layout
