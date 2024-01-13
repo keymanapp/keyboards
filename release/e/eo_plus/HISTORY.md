@@ -1,11 +1,12 @@
 Esperanto Plus Change History
 =============================
 
-2.0 (2024-01-06)
+2.0 (2024-01-12)
 ----------------
 - Modified the help file
 - Modified the welcome file
 - Added touch layout for phones
+- Unified the touch layout of tablets with that of phones
 
 1.0 (2024-01-04)
 ----------------

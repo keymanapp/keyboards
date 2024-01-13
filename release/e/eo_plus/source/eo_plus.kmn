@@ -14,6 +14,14 @@ store(&TARGETS) 'any'
 store(&MNEMONICLAYOUT) "1"
 store(&VISUALKEYBOARD) 'eo_plus.kvks'
 
+c -----------------------------------------------------------------------------------------
+c General variables
+c -----------------------------------------------------------------------------------------
+store(letters_lower) 'abcĉdefgĝhĥijĵklmnopqrsŝtuŭvwxyz'
+store(letters_upper) 'ABCĈDEFGĜHĤIJĴKLMNOPQRSŜTUŬVWXYZ'
+store(letters) outs(letters_lower) outs(letters_upper)
+store(stofsen) '.!?' c Start of sentence
+
 c =========================================================================================
 c Begin
 c =========================================================================================
@@ -33,11 +41,6 @@ $keymanonly: store(o_chars) 'ĉĝĥĵŝŭĈĜĤĴŜŬ'
 
 $keymanonly: any(i_chars) + any(x_chars) > index(o_chars, 1)
 $keymanonly: any(o_chars) + any(x_chars) > index(i_chars, 1) index(x_chars, 2)
-
-c -----------------------------------------------------------------------------------------
-c Shift layer
-c -----------------------------------------------------------------------------------------
-c '.' + ' ' > context ' ' layer('shift')
 
 c -----------------------------------------------------------------------------------------
 c Suffixes
@@ -397,9 +400,6 @@ c Extend
 c =========================================================================================
 group(Extend)
 
-store(letters) 'a' .. 'z' 'A' .. 'Z' 'ĉĝĥĵŝŭĈĜĤĴŜŬ'
-store(periods) '.!?'
-
 'a' > 'a' use(Extend_A)
 'b' > 'b' use(Extend_B)
 'c' > 'c' use(Extend_C)
@@ -429,7 +429,7 @@ c ==============================================================================
 group(Extend_B)
 
 any(letters) 'mfb' > context
-any(periods) ' mfb' > index(periods, 1) ' Mi fartas bone'
+any(stofsen) ' mfb' > index(stofsen, 1) ' Mi fartas bone'
 ' mfb' > ' mi fartas bone'
 'mfb' > 'Mi fartas bone'
 
@@ -439,7 +439,7 @@ c ==============================================================================
 group(Extend_C)
 
 any(letters) 'slc' > context
-any(periods) ' slc' > index(periods, 1) ' Saluton al ĉiuj'
+any(stofsen) ' slc' > index(stofsen, 1) ' Saluton al ĉiuj'
 ' slc' > ' saluton al ĉiuj'
 'slc' > 'Saluton al ĉiuj'
 
@@ -449,12 +449,12 @@ c ==============================================================================
 group(Extend_D)
 
 any(letters) 'hd' > context
-any(periods) ' hd' > index(periods, 1) ' Hodiaŭ'
+any(stofsen) ' hd' > index(stofsen, 1) ' Hodiaŭ'
 ' hd' > ' hodiaŭ'
 'hd' > 'Hodiaŭ'
 
 any(letters) 'mfd' > context
-any(periods) ' mfd' > index(periods, 1) ' Mi fartas bone, dankon'
+any(stofsen) ' mfd' > index(stofsen, 1) ' Mi fartas bone, dankon'
 ' mfd' > ' mi fartas bone, dankon'
 'mfd' > 'Mi fartas bone, dankon'
 
@@ -467,7 +467,7 @@ any(letters) 'zmf' > context
 'zmf' > 'Zamenhof'
 
 any(letters) 'kvf' > context
-any(periods) ' kvf' > index(periods, 1) ' Kiel vi fartas?'
+any(stofsen) ' kvf' > index(stofsen, 1) ' Kiel vi fartas?'
 ' kvf' > ' kiel vi fartas?'
 'kvf' > 'Kiel vi fartas?'
 
@@ -477,12 +477,12 @@ c ==============================================================================
 group(Extend_G)
 
 any(letters) 'mg' > context
-any(periods) ' mg' > index(periods, 1) ' Morgaŭ'
+any(stofsen) ' mg' > index(stofsen, 1) ' Morgaŭ'
 ' mg' > ' morgaŭ'
 'mg' > 'Morgaŭ'
 
 any(letters) 'btg' > context
-any(periods) ' btg' > index(periods, 1) ' Bonan tagon'
+any(stofsen) ' btg' > index(stofsen, 1) ' Bonan tagon'
 ' btg' > ' bonan tagon'
 'btg' > 'Bonan tagon'
 
@@ -492,17 +492,17 @@ c ==============================================================================
 group(Extend_K)
 
 any(letters) 'dk' > context
-any(periods) ' dk' > index(periods, 1) ' Dankon'
+any(stofsen) ' dk' > index(stofsen, 1) ' Dankon'
 ' dk' > ' dankon'
 'dk' > 'Dankon'
 
 any(letters) 'ndk' > context
-any(periods) ' ndk' > index(periods, 1) ' Ne dankinde'
+any(stofsen) ' ndk' > index(stofsen, 1) ' Ne dankinde'
 ' ndk' > ' ne dankinde'
 'ndk' > 'Ne dankinde'
 
 any(letters) 'bdk' > context
-any(periods) ' bdk' > index(periods, 1) ' Bone, dankon'
+any(stofsen) ' bdk' > index(stofsen, 1) ' Bone, dankon'
 ' bdk' > ' bone, dankon'
 'bdk' > 'Bone, dankon'
 
@@ -512,12 +512,12 @@ c ==============================================================================
 group(Extend_L)
 
 any(letters) 'bvl' > context
-any(periods) ' bvl' > index(periods, 1) ' Bonvolu'
+any(stofsen) ' bvl' > index(stofsen, 1) ' Bonvolu'
 ' bvl' > ' bonvolu'
 'bvl' > 'Bonvolu'
 
 any(letters) 'ksl' > context
-any(periods) ' ksl' > index(periods, 1) ' Korajn salutojn'
+any(stofsen) ' ksl' > index(stofsen, 1) ' Korajn salutojn'
 ' ksl' > ' korajn salutojn'
 'ksl' > 'Korajn salutojn'
 
@@ -527,17 +527,17 @@ c ==============================================================================
 group(Extend_N)
 
 any(letters) 'kdn' > context
-any(periods) ' kdn' > index(periods, 1) ' Koran dankon'
+any(stofsen) ' kdn' > index(stofsen, 1) ' Koran dankon'
 ' kdn' > ' koran dankon'
 'kdn' > 'Koran dankon'
 
 any(letters) 'bkn' > context
-any(periods) ' bkn' > index(periods, 1) ' Bonan Kristnaskon'
+any(stofsen) ' bkn' > index(stofsen, 1) ' Bonan Kristnaskon'
 ' bkn' > ' bonan Kristnaskon'
 'bkn' > 'Bonan Kristnaskon'
 
 any(letters) 'fkn' > context
-any(periods) ' fkn' > index(periods, 1) ' Feliĉan Kristnaskon'
+any(stofsen) ' fkn' > index(stofsen, 1) ' Feliĉan Kristnaskon'
 ' fkn' > ' feliĉan Kristnaskon'
 'fkn' > 'Feliĉan Kristnaskon'
 
@@ -555,12 +555,12 @@ c ==============================================================================
 group(Extend_P)
 
 any(letters) 'kmp' > context
-any(periods) ' kmp' > index(periods, 1) ' Kompreni'
+any(stofsen) ' kmp' > index(stofsen, 1) ' Kompreni'
 ' kmp' > ' kompreni'
 'kmp' > 'Kompreni'
 
 any(letters) 'mkp' > context
-any(periods) ' mkp' > index(periods, 1) ' Mi komprenas'
+any(stofsen) ' mkp' > index(stofsen, 1) ' Mi komprenas'
 ' mkp' > ' mi komprenas'
 'mkp' > 'Mi komprenas'
 
@@ -570,12 +570,12 @@ c ==============================================================================
 group(Extend_R)
 
 any(letters) 'hr' > context
-any(periods) ' hr' > index(periods, 1) ' Hieraŭ'
+any(stofsen) ' hr' > index(stofsen, 1) ' Hieraŭ'
 ' hr' > ' hieraŭ'
 'hr' > 'Hieraŭ'
 
 any(letters) 'vpr' > context
-any(periods) ' vpr' > index(periods, 1) ' Vi pravas'
+any(stofsen) ' vpr' > index(stofsen, 1) ' Vi pravas'
 ' vpr' > ' vi pravas'
 'vpr' > 'Vi pravas'
 
@@ -585,22 +585,22 @@ c ==============================================================================
 group(Extend_S)
 
 any(letters) 'bvs' > context
-any(periods) ' bvs' > index(periods, 1) ' Bonan vesperon'
+any(stofsen) ' bvs' > index(stofsen, 1) ' Bonan vesperon'
 ' bvs' > ' bonan vesperon'
 'bvs' > 'Bonan vesperon'
 
 any(letters) 'bps' > context
-any(periods) ' bps' > index(periods, 1) ' Bonan Paskvon'
+any(stofsen) ' bps' > index(stofsen, 1) ' Bonan Paskvon'
 ' bps' > ' bonan Paskvon'
 'bps' > 'Bonan Paskvon'
 
 any(letters) 'kns' > context
-any(periods) ' kns' > index(periods, 1) ' Konsenti'
+any(stofsen) ' kns' > index(stofsen, 1) ' Konsenti'
 ' kns' > ' konsenti'
 'kns' > 'Konsenti'
 
 any(letters) 'mks' > context
-any(periods) ' mks' > index(periods, 1) ' Mi konsentas'
+any(stofsen) ' mks' > index(stofsen, 1) ' Mi konsentas'
 ' mks' > ' mi konsentas'
 'mks' > 'Mi konsentas'
 
@@ -610,11 +610,11 @@ c ==============================================================================
 group(Extend_T)
 
 any(letters) 'bmt' > context
-any(periods) ' bmt' > index(periods, 1) ' Bonan matenon'
+any(stofsen) ' bmt' > index(stofsen, 1) ' Bonan matenon'
 ' bmt' > ' bonan matenon'
 'bmt' > 'Bonan matenon'
 
 any(letters) 'slt' > context
-any(periods) ' slt' > index(periods, 1) ' Saluton'
+any(stofsen) ' slt' > index(stofsen, 1) ' Saluton'
 ' slt' > ' saluton'
 'slt' > 'Saluton'
