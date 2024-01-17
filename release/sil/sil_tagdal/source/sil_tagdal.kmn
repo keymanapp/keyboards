@@ -1,0 +1,38 @@
+﻿store(&VERSION) '15.0'
+store(&NAME) 'Tagdal (SIL)'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© 2024 SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&VISUALKEYBOARD) 'sil_tagdal.kvks'
+store(&LAYOUTFILE) 'sil_tagdal.keyman-touch-layout'
+store(&BITMAP) 'sil_tagdal.ico'
+begin Unicode > use(main)
+
+store (vowel) "aeiuouǝAEIOUƎ"
+store(cons) "bcdfghjklmnŋqrstɣxyzBCDFGHJKLMNŊQRSTƔXYZ"
+
+group(main) using keys
++ [RALT K_I] > 'ɨ'
++ [RALT K_O] > 'ɔ'
++ [RALT K_6] > '^'
++ [K_P] > 'ǝ'
++ [K_LBRKT] > 'ŋ'
++ [K_V] > 'ɣ'
++ [SHIFT K_P] > 'Ǝ'
++ [SHIFT K_3] > '«'
++ [SHIFT K_6] > '»'
++ [SHIFT K_LBRKT] > 'Ŋ'
++ [SHIFT K_RBRKT] > '̌'
++ [SHIFT K_V] > 'Ɣ'
++ [RALT K_3] > '#'
++ [RALT K_S] > 'ʃ'
++ [RALT K_H] > 'ħ'
++ [RALT K_J] > 'ʒ'
++ [RALT K_COMMA] > '́'
++ [RALT K_PERIOD] > '̃'
++ [RALT K_SLASH] > 'ʕ'
+
+c Combining dot below
+c + [K_RBRKT] > '̣'
+any(vowel) + "]" > context beep
+any(cons) + "]" > context U+0323
