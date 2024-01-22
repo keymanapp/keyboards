@@ -13,160 +13,124 @@ group(main) using keys
 
 c --- START OF TOUCH LAYOUT RULES ---
 
-c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
-
 store(&LAYOUTFILE) 'fv_southern_carrier.keyman-touch-layout'
 
-+ [SHIFT T_Q] > 'ᒡ' layer('default')
-+ [SHIFT T_W_0] > 'ᙚ' layer('default')
-+ [SHIFT T_W] > 'ᣵ' layer('default')
-+ [SHIFT T_E_0] > 'ᗺ' layer('default')
-+ [SHIFT T_E_1] > 'ᘀ' layer('default')
-+ [SHIFT T_E] > 'ᗴ' layer('default')
-+ [SHIFT T_R_0] > 'ᘹ' layer('default')
-+ [SHIFT T_R_1] > 'ᘿ' layer('default')
-+ [SHIFT T_R] > 'ᘳ' layer('default')
-+ [SHIFT T_T_0] > 'ᘭ' layer('default')
-+ [SHIFT T_T] > 'ᘧ' layer('default')
-+ [SHIFT T_Y_0] > 'ᗛ' layer('default')
-+ [SHIFT T_Y] > 'ᗕ' layer('default')
-+ [SHIFT T_U] > 'ᗭ' layer('default')
-+ [SHIFT T_I_0] > 'ᙠ' layer('default')
-+ [SHIFT T_I] > 'ᙙ' layer('default')
-+ [SHIFT T_O] > 'ᘍ' layer('default')
-+ [SHIFT T_P_0] > 'ᗏ' layer('default')
-+ [SHIFT T_P] > 'ᗉ' layer('default')
-+ [SHIFT T_A] > 'ᑊ' layer('default')
-+ [SHIFT T_S_0] > 'ᐦ' layer('default')
-+ [SHIFT T_S] > 'ᐥ' layer('default')
-+ [SHIFT T_D_0] > 'ᗷ' layer('default')
-+ [SHIFT T_D_1] > 'ᗽ' layer('default')
-+ [SHIFT T_D] > 'ᗱ' layer('default')
-+ [SHIFT T_F_0] > 'ᘶ' layer('default')
-+ [SHIFT T_F_1] > 'ᘼ' layer('default')
-+ [SHIFT T_F] > 'ᘰ' layer('default')
-+ [SHIFT T_G_0] > 'ᘪ' layer('default')
-+ [SHIFT T_G] > 'ᘤ' layer('default')
-+ [SHIFT T_H_0] > 'ᗘ' layer('default')
-+ [SHIFT T_H] > 'ᗒ' layer('default')
-+ [SHIFT T_J] > 'ᗪ' layer('default')
-+ [SHIFT T_K_0] > 'ᙝ' layer('default')
-+ [SHIFT T_K] > 'ᙖ' layer('default')
-+ [SHIFT T_L] > 'ᘊ' layer('default')
-+ [SHIFT T_COLON_0] > 'ᗌ' layer('default')
-+ [SHIFT T_COLON] > 'ᗆ' layer('default')
-+ [SHIFT T_Z_0] > 'ᓑ' layer('default')
-+ [SHIFT T_Z] > 'ᒼ' layer('default')
-+ [SHIFT T_X_0] > 'ᗶ' layer('default')
-+ [SHIFT T_X_1] > 'ᗼ' layer('default')
-+ [SHIFT T_X] > 'ᗰ' layer('default')
-+ [SHIFT T_C_0] > 'ᘵ' layer('default')
-+ [SHIFT T_C_1] > 'ᘻ' layer('default')
-+ [SHIFT T_C] > 'ᘯ' layer('default')
-+ [SHIFT T_V_0] > 'ᘩ' layer('default')
-+ [SHIFT T_V] > 'ᘣ' layer('default')
-+ [SHIFT T_B_0] > 'ᗗ' layer('default')
-+ [SHIFT T_B] > 'ᗑ' layer('default')
-+ [SHIFT T_N] > 'ᗩ' layer('default')
-+ [SHIFT T_M_0] > 'ᙜ' layer('default')
-+ [SHIFT T_M] > 'ᙕ' layer('default')
-+ [SHIFT T_COMMA] > 'ᘉ' layer('default')
-+ [SHIFT T_PERIOD_0] > 'ᗋ' layer('default')
-+ [SHIFT T_PERIOD] > 'ᗅ' layer('default')
-+ [SHIFT T_x30_0] > 'ᐟᗕ' layer('default')
-+ [SHIFT T_x30_1] > 'ᐟᗒ' layer('default')
-+ [SHIFT T_x30_2] > 'ᐟᗑ' layer('default')
-+ [SHIFT T_x30] > 'ᐟ' layer('default')
-+ [SHIFT T_x31_0] > 'ᐠᗕ' layer('default')
-+ [SHIFT T_x31_1] > 'ᐠᗒ' layer('default')
-+ [SHIFT T_x31_2] > 'ᐠᗑ' layer('default')
-+ [SHIFT T_x31] > 'ᐠ' layer('default')
-+ [SHIFT T_x32_0] > 'ᘁᗕ' layer('default')
-+ [SHIFT T_x32_1] > 'ᘁᗒ' layer('default')
-+ [SHIFT T_x32_2] > 'ᘁᗑ' layer('default')
-+ [SHIFT T_x32] > 'ᘁ' layer('default')
-+ [SHIFT T_x34] > 'ᗮ' layer('default')
+c NOTE: Key names that have a consonant or two consonants + 'p' are used to representive plosive sounds as apostrophe cannot be used
 
-store(WithoutLine) 'ᙐᘦᑔᙑᘧᑕᗐᗑᗒᗓᗔᙒᗕᙓᙔᙕᙖᙗᙘᘮᙙᘯᘰᘱᘲᘳᘎᘏᘐᘑᘒᘓᙀᙁᙂᗄᙃᗯᗅᙄᗰᗆᙅᗱᗇᗲᗈᗳᑌᗉᗴᑎᑐᘢᘣᙎᘤᙏᘥᑓ'
-store(WithLine) 'ᙣᘬᗠᙤᘭᗡᗖᗗᗘᗙᗚᙥᗛᙦᙛᙜᙝᙞᙟᘴᙠᘵᘶᘷᘸᘹᘔᘖᘗᘘᘙᘛᙈᙉᙊᗊᙋᗵᗋᙌᗶᗌᙍᗷᗍᗸᗎᗹᗜᗏᗺᗝᗞᘨᘩᙡᘪᙢᘫᗟ'
-store(Line) [T_Q]
-c [T_Q] is the key that adds the line
-any(WithoutLine) + any(Line) > index(WithLine,1)
+c --- letter stores ----
 
-+ [T_W] > '˙'
-+ [T_E] > 'ᐊ'
-+ [T_R] > 'ᘇ'
-+ [T_T_0] > 'ᗡ'
-+ [T_T_1] > 'ᗧ'
-+ [T_T] > 'ᑕ'
-+ [T_Y_0] > 'ᙦ'
-+ [T_Y_1] > 'ᙬ'
-+ [T_Y] > 'ᙓ'
-+ [T_U_0] > 'ᘛ'
-+ [T_U_1] > 'ᘡ'
-+ [T_U] > 'ᘓ'
-+ [T_I_0] > 'ᙍ'
-+ [T_I] > 'ᙅ'
-+ [T_O] > 'ᐸ'
-store(WithoutMidLine) 'ᘪᘐᘞᗌᙣᐳᘄᙖᗷᗪᑐᘼᙊᗞᘰᗒᘤᘗᙩᘊᗆᗽᙝᙂᙐᐅᗱᗤᘶᗘ'
-store(WithMidLine) 'ᘫᘑᘟᗍᙤᐶᘅᙗᗸᗫᑓᘽᙋᗟᘱᗓᘥᘘᙪᘋᗇᗾᙞᙃᙑᐈᗲᗥᘷᗙ'
-c [T_P] is the key that inserts the midline
-any(WithoutMidLine) + [T_P] > index(WithMidline,1)
+store(VOW_NoA) 'ᐅᐈᐉᐃᐁ' c u e i o oo
+store(H_NoA) 'ᐳᐶᐷᐱᐯ' c hu he hi ho hoo
+store(GH_NoA) 'ᗆᗇᗈᗅᗄ' c ghu ghe ghi gho ghoo
+store(R_NoA) 'ᗌᗍᗎᗋᗊ' c ra ru re ri ro roo. NOTE: not an English r - this is represented on the shift layer
+store(W_NoA) 'ᗒᗓᗔᗑᗐ' c wu we wi wo woo
+store(WH_NoA) 'ᗛᗘᗙᗚᗗᗖ' c whu whe whi who whoo
+store(D_NoA) 'ᑐᑓᑔᑎᑌ' c du de di do doo
+store(T_NoA) 'ᗞᗟᗠᗝᗜ' c tu te ti to too
+store(TP_NoA) 'ᗤᗥᗦᗣᗢ' c t'u t'e t'i t'o t'oo
+store(B_NoA) 'ᗪᗫᗬᗩᗨ' c bu be bi bo boo
+store(G_NoA) 'ᗱᗲᗳᗰᗯ' c gu ge gi go goo
+store(K_NoA) 'ᗷᗸᗹᗶᗵ' c ku ke ki ko koo
+store(KP_NoA) 'ᗽᗾᗿᗼᗻ' c k'u k'e k'i k'o k'oo
+store(N_NoA) 'ᘄᘅᘆᘃᘂ' c nu ne ni no noo
+store(M_NoA) 'ᘊᘋᘌᘉᘈ' c mu me mi mo moo
+store(Y_NoA) 'ᘐᘑᘒᘏᘎ' c yu ye yi yo yoo
+store(J_NoA) 'ᘗᘘᘙᘖᘔ' c ju je ji jo joo
+store(CHP_NoA) 'ᘞᘟᘠᘝᘜ' c ch'u ch'e ch'i ch'o ch'oo
+store(L_NoA) 'ᘤᘥᘦᘣᘢ' c lu le li lo loo
+store(DL_NoA) 'ᘪᘫᘬᘩᘨ' c dlu dle dli dlo dloo
+store(LH_NoA) 'ᘰᘱᘲᘯᘮ' c lhu lhe lhi lho lhoo
+store(TL_NoA) 'ᘶᘷᘸᘵᘴ' c tlu tle tli tlo tloo
+store(TLP_NoA) 'ᘼᘽᘾᘻᘺ' c tl'u tl'e tl'i tl'o tl'oo
+store(Z_NoA) 'ᙂᙃᙄᙁᙀ' c zu ze zi zo zoo
+store(DZ_NoA) 'ᙊᙋᙌᙉᙈ' c dzu dze dzi dzo dzoo
+store(S_NoA) 'ᙐᙑᙒᙏᙎ' c su se si so soo
+store(SH_NoA) 'ᙖᙗᙘᙕᙔ'c shu she shi sho shoo
+store(CH_NoA) 'ᙝᙞᙟᙜᙛ' c chu che chi cho choo
+store(TS_NoA) 'ᙣᙤᙥᙢᙡ' c tsu tse tsi tso tsoo
+store(TSP_NoA) 'ᙩᙪᙫᙨᙧ' c ts'u ts'e ts'i ts'o ts'oo
 
-store(WithoutBracket) 'ᘏᑌᗴᘐᑎᘑᘒᘮᘓᑐᘯᘰᘱᑓᘲᑔᙎᘳᑕᗯᙏᗰᙐᗱᙑᗲᙒᘎᗳᙓ'
-store(WithBracket) 'ᘝᗢᘀᘞᗣᘟᘠᘺᘡᗤᘻᘼᘽᗥᘾᗦᙧᘿᗧᗻᙨᗼᙩᗽᙪᗾᙫᘜᗿᙬ'
-c [T_A] is the key that adds the < shape bracket
-any(WithoutBracket) + [T_A] > index(WithBracket,1)
+c --- key stores ---
 
-+ [T_S] > 'ᐣ'
-+ [T_D] > 'ᐅ'
-+ [T_F] > 'ᘄ'
-+ [T_G_0] > 'ᗞ'
-+ [T_G_1] > 'ᗤ'
-+ [T_G] > 'ᑐ'
-+ [T_H_0] > 'ᙣ'
-+ [T_H_1] > 'ᙩ'
-+ [T_H] > 'ᙐ'
-+ [T_J_0] > 'ᘗ'
-+ [T_J_1] > 'ᘞ'
-+ [T_J] > 'ᘐ'
-+ [T_K_0] > 'ᙊ'
-+ [T_K] > 'ᙂ'
-+ [T_L] > 'ᐳ'
+store(VOW_NoAKeys) [T_U] [T_E] [T_I] [T_O] [T_OO]
+store(H_NoAKeys) [T_HU] [T_HE] [T_HI] [T_HO] [T_HOO]
+store(GH_NoAKeys) [T_GHU] [T_GHE] [T_GHI] [T_GHO] [T_GHOO]
+store(R_NoAKeys) [T_RrU] [T_RrE] [T_RrI] [T_RrO] [T_RrOO]
+store(W_NoAKeys) [T_WU] [T_WE] [T_WI] [T_WO] [T_WOO]
+store(WH_NoAKeys) [T_WHU] [T_WHE] [T_WHI] [T_WHO] [T_WHOO]
+store(D_NoAKeys) [T_DU] [T_DE] [T_DI] [T_DO] [T_DOO]
+store(T_NoAKeys) [T_TU] [T_TE] [T_TI] [T_TO] [T_TOO]
+store(TP_NoAKeys) [T_TPU] [T_TPE] [T_TPI] [T_TPO] [T_TPOO]
+store(B_NoAKeys) [T_BU] [T_BE] [T_BI] [T_BO] [T_BOO]
+store(G_NoAKeys) [T_GU] [T_GE] [T_GI] [T_GO] [T_GOO]
+store(K_NoAKeys) [T_KU] [T_KE] [T_KI] [T_KO] [T_KOO]
+store(KP_NoAKeys) [T_KPU] [T_KPE] [T_KPI] [T_KPO] [T_KPOO]
+store(N_NoAKeys) [T_NU] [T_NE] [T_NI] [T_NO] [T_NOO]
+store(M_NoAKeys) [T_MU] [T_ME] [T_MI] [T_MO] [T_MOO]
+store(Y_NoAKeys) [T_YU] [T_YE] [T_YI] [T_YO] [T_YOO]
+store(J_NoAKeys) [T_JU] [T_JE] [T_JI] [T_JO] [T_JOO]
+store(CHP_NoAKeys) [T_CHPU] [T_CHPE] [T_CHPI] [T_CHPO] [T_CHPOO]
+store(L_NoAKeys) [T_LU] [T_LE] [T_LI] [T_LO] [T_LOO]
+store(DL_NoAKeys) [T_DLU] [T_DLE] [T_DLI] [T_DLO] [T_DLOO]
+store(LH_NoAKeys) [T_LHU] [T_LHE] [T_LHI] [T_LHO] [T_LHOO]
+store(TL_NoAKeys) [T_TLU] [T_TLE] [T_TLI] [T_TLO] [T_TLOO]
+store(TLP_NoAKeys) [T_TLPU] [T_TLPE] [T_TLPI] [T_TLPO] [T_TLPOO]
+store(Z_NoAKeys) [T_ZU] [T_ZE] [T_ZI] [T_ZO] [T_ZOO]
+store(DZ_NoAKeys) [T_DZU] [T_DZE] [T_DZI] [T_DZO] [T_DZOO]
+store(S_NoAKeys) [T_SU] [T_SE] [T_SI] [T_SO] [T_SOO]
+store(SH_NoAKeys) [T_SHU] [T_SHE] [T_SHI] [T_SHO] [T_SHOO]
+store(CH_NoAKeys) [T_CHU] [T_CHE] [T_CHI] [T_CHO] [T_CHOO]
+store(TS_NoAKeys) [T_TSU] [T_TSE] [T_TSI] [T_TSO] [T_TSOO]
+store(TSP_NoAKeys) [T_TSPU] [T_TSPE] [T_TSPI] [T_TSPO] [T_TSPOO]
 
-store(WithoutDot)'ᘪᘐᘞᗌᙣᐳᘄᙖᗷᗪᑐᘼᙊᗞᘰᗒᘤᘗᙩᘊᗆᗽᙝᙂᙐᐅᗱᗤᘶᗘ'
-store(WithDot) 'ᘬᘒᘠᗎᙥᐷᘆᙘᗹᗬᑔᘾᙌᗠᘲᗔᘦᘙᙫᘌᗈᗿᙟᙄᙒᐉᗳᗦᘸᗚ'
-c [T_COLON] is the key that adds the mid character dot
-any(WithoutDot) + [T_COLON] > index(WithDot,1)
++ [T_VOW] > 'ᐊ'
+'ᐊ' + any(VOW_NoAKeys) > index(VOW_NoA,2)
+'ᐊ' + [T_A] > 'ᐊ'
++ any(VOW_NoAKeys) > index(VOW_NoA,1) 
+
++ [T_H] > 'ᐸ'
+'ᐸ' + any(H_NoAKeys) > index(H_NoA,2)
 
 
-+ [T_Z] > 'ᐪ'
-+ [T_X] > 'ᐃ'
-+ [T_C] > 'ᘃ'
-+ [T_V_0] > 'ᗝ'
-+ [T_V_1] > 'ᗣ'
-+ [T_V] > 'ᑎ'
-+ [T_B_0] > 'ᙢ'
-+ [T_B_1] > 'ᙨ'
-+ [T_B] > 'ᙏ'
-+ [T_N_0] > 'ᘖ'
-+ [T_N_1] > 'ᘝ'
-+ [T_N] > 'ᘏ'
-+ [T_M_0] > 'ᙉ'
-+ [T_M] > 'ᙁ'
-+ [T_COMMA] > 'ᐱ'
 
-store(BeforeRotate) 'ᘏᗋᐱᘝᙢᘃᑎᗶᙕᗩᘻᙉᗝᘯᗑᘣᘖᙨᘉᗅᗼᙜᐃᙁᙏᗰᗣᘵᗗᘩ'
-store(AfterRotate) 'ᘎᗊᐯᘜᙡᘂᑌᗵᙔᗨᘺᙈᗜᘮᗐᘢᘔᙧᘈᗄᗻᙛᐁᙀᙎᗯᗢᘴᗖᘨ'
-c [T_PERIOD] is the rotate key
-any(BeforeRotate) + [T_PERIOD] > index(AfterRotate,1)
+store(GHVowels) 'ᗉᗆᗇᗈᗅᗄ'
+store(GHVowelKeys) [T_GHA] [T_GHU] [T_GHE] [T_GHI] [T_GHO] [T_GHOO]
 
-+ [T_x69_0] > 'ᙇ'
-+ [T_x69] > 'ᙆ'
-+ [T_x71] > 'ᔆ'
-+ [T_x72] > 'ᑋ'
++ [T_GH] > 'ᗉ'
+'ᗉ' + any(GH_NoAKeys) > index(GH_NoA,2)
+any(GHVowels) + [T_GH] > index(GHVowels,1) nul
++ any(GHVowelKeys) > index(GHVowels,1) 
 
-c --- END OF TOUCH LAYOUT RULES ---
 
-c EXPERIMENTAL PLACEHOLDER BELOW
-+ [T_PUNC] > '.'
+
++ [T_WA] > 'WA'
++ [T_WHA] > 'WHA'
+
+
++ [T_F] > 'ᶣ'
++ [T_R] > 'r'
++ [T_RFIN] > '+'
++ [T_PPFIN] > 'ᗮᗮ'
++ [T_VFIN] > 'ᘁᗮ'
++ [T_ZH] > 'ᙇᙚ'
++ [T_HFIN] > 'ᑋ'
++ [T_RrFIN] > 'ᐥ'
++ [T_TFIN] > 'ᐪ'
++ [T_BFIN] > 'ᗮ'
++ [T_GFIN] > 'ᐟ'
++ [T_KFIN_0] > 'ᐥ'
++ [T_KFIN] > 'ᐠ'
++ [T_KPFIN] > 'ᘁ'
++ [T_NFIN_0] > 'ᓑ'
++ [T_NFIN] > 'ᐣ'
++ [T_MFIN] > 'ᒼ'
++ [T_LFIN] > 'ᑊ'
++ [T_LHFIN] > 'ᒡ'
++ [T_ZFIN_0] > 'ᒡ'
++ [T_ZFIN] > 'ᙆ'
++ [T_DZFIN] > 'ᐪz'
++ [T_SFIN_0] > 'ᣵ'
++ [T_SFIN] > 'ᔆ'
++ [T_SHFIN] > 'ᙚ'
++ [T_TSFIN] > 'ᐪs'
++ [T_T] > 'T'
