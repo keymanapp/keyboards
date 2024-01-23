@@ -40,6 +40,9 @@ END;
   <li>ƛ: type the ] key. (Capital is not available.)</li>
   <li>ɫ: type the \ key.</li>
   <li>ʔ: hold ALT and type the / key.</li>
+    <ul>
+      <li><b>NOTE</b>: When using Google Docs with Google Chrome, ALT or OPTION + / is already used as a shortcut. ʔ can instead be typed ALT/OPTION + SHIFT + /</li>
+    </ul>
   <li>ǧ x̌:
     <ul>
       <li>Type g/x, then hold SHIFT and press 6 to add the extra ˇ mark.</li>
