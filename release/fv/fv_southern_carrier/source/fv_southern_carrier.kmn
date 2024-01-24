@@ -22,9 +22,9 @@ c --- letter stores ----
 store(VOW_NoA) 'ᐅᐈᐉᐃᐁ' c u e i o oo
 store(H_NoA) 'ᐳᐶᐷᐱᐯ' c hu he hi ho hoo
 store(GH_NoA) 'ᗆᗇᗈᗅᗄ' c ghu ghe ghi gho ghoo
-store(R_NoA) 'ᗌᗍᗎᗋᗊ' c ra ru re ri ro roo. NOTE: not an English r - this is represented on the shift layer
+store(Rr_NoA) 'ᗌᗍᗎᗋᗊ' c ra ru re ri ro roo. NOTE: not an English r - this is represented on the shift layer
 store(W_NoA) 'ᗒᗓᗔᗑᗐ' c wu we wi wo woo
-store(WH_NoA) 'ᗛᗘᗙᗚᗗᗖ' c whu whe whi who whoo
+store(WH_NoA) 'ᗘᗙᗚᗗᗖ' c whu whe whi who whoo
 store(D_NoA) 'ᑐᑓᑔᑎᑌ' c du de di do doo
 store(T_NoA) 'ᗞᗟᗠᗝᗜ' c tu te ti to too
 store(TP_NoA) 'ᗤᗥᗦᗣᗢ' c t'u t'e t'i t'o t'oo
@@ -55,7 +55,7 @@ c --- key stores ---
 store(VOW_NoAKeys) [T_U] [T_E] [T_I] [T_O] [T_OO]
 store(H_NoAKeys) [T_HU] [T_HE] [T_HI] [T_HO] [T_HOO]
 store(GH_NoAKeys) [T_GHU] [T_GHE] [T_GHI] [T_GHO] [T_GHOO]
-store(R_NoAKeys) [T_RrU] [T_RrE] [T_RrI] [T_RrO] [T_RrOO]
+store(Rr_NoAKeys) [T_RrU] [T_RrE] [T_RrI] [T_RrO] [T_RrOO]
 store(W_NoAKeys) [T_WU] [T_WE] [T_WI] [T_WO] [T_WOO]
 store(WH_NoAKeys) [T_WHU] [T_WHE] [T_WHI] [T_WHO] [T_WHOO]
 store(D_NoAKeys) [T_DU] [T_DE] [T_DI] [T_DO] [T_DOO]
@@ -83,29 +83,160 @@ store(CH_NoAKeys) [T_CHU] [T_CHE] [T_CHI] [T_CHO] [T_CHOO]
 store(TS_NoAKeys) [T_TSU] [T_TSE] [T_TSI] [T_TSO] [T_TSOO]
 store(TSP_NoAKeys) [T_TSPU] [T_TSPE] [T_TSPI] [T_TSPO] [T_TSPOO]
 
+
+store(Letters) 'ᐊᐅᐈᐉᐃᐁᐸᐳᐶᐷᐱᐯᗉᗆᗇᗈᗅᗄᗏᗌᗍᗎᗋᗊᗕᗒᗓᗔᗑᗐᗛᗘᗙᗚᗗᗖᑕᑐᑓᑔᑎᑌᗡᗞᗟᗠᗝᗜᗧᗤᗥᗦᗣᗢᗭᗪᗫᗬᗩᗨᗴᗱᗲᗳᗰᗯᗺᗷᗸᗹᗶᗵᘀᗽᗾᗿᗼᗻᘇᘄᘅᘆᘃᘂᘍᘊᘋᘌᘉᘈᘓᘐᘑᘒᘏᘎᘛᘗᘘᘙᘖᘔᘡᘞᘟᘠᘝᘜᘧᘤᘥᘦᘣᘢᘭᘪᘫᘬᘩᘨᘳᘰᘱᘲᘯᘮᘹᘶᘷᘸᘵᘴᘿᘼᘽᘾᘻᘺᙅᙂᙃᙄᙁᙀᙍᙊᙋᙌᙉᙈᙓᙐᙑᙒᙏᙎᙙᙖᙗᙘᙕᙔᙠᙝᙞᙟᙜᙛᙦᙣᙤᙥᙢᙡᙬᙩᙪᙫᙨᙧ'
+store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B] [T_G] [T_K] [T_KP] [T_N] [T_M] [T_Y] [T_J] [T_CHP] [T_L] [T_DL] [T_LH] [T_TL] [T_TLP] [T_Z] [T_DZ] [T_S] [T_SH] [T_CH] [T_TS] [T_TSP]
+
 + [T_VOW] > 'ᐊ'
++ [T_A] > 'ᐊ'
 'ᐊ' + any(VOW_NoAKeys) > index(VOW_NoA,2)
-'ᐊ' + [T_A] > 'ᐊ'
 + any(VOW_NoAKeys) > index(VOW_NoA,1) 
 
+
 + [T_H] > 'ᐸ'
++ [T_HA] > 'ᐸ'
 'ᐸ' + any(H_NoAKeys) > index(H_NoA,2)
-
-
-
-store(GHVowels) 'ᗉᗆᗇᗈᗅᗄ'
-store(GHVowelKeys) [T_GHA] [T_GHU] [T_GHE] [T_GHI] [T_GHO] [T_GHOO]
++ any(H_NoAKeys) > index(H_NoA,1)
 
 + [T_GH] > 'ᗉ'
++ [T_GHA] > 'ᗉ'
 'ᗉ' + any(GH_NoAKeys) > index(GH_NoA,2)
-any(GHVowels) + [T_GH] > index(GHVowels,1) nul
-+ any(GHVowelKeys) > index(GHVowels,1) 
++ any(GH_NoAKeys) > index(GH_NoA,1) 
 
++ [T_Rr] > 'ᗏ'
++ [T_Rra] > 'ᗏ'
+'ᗏ' + any(Rr_NoAKeys) > index(Rr_NoA,2)
++ any(Rr_NoAKeys) > index(Rr_NoA,1)
 
++ [T_W] > 'ᗕ'
++ [T_WA] > 'ᗕ'
+'ᗕ' + any(W_NoAKeys) > index(W_NoA,2)
++ any(W_NoAKeys) > index(W_NoA,1)
 
-+ [T_WA] > 'WA'
-+ [T_WHA] > 'WHA'
++ [T_WH] > 'ᗛ'
++ [T_WHA] > 'ᗛ'
+'ᗛ' + any(WH_NoAKeys) > index(WH_NoA,2)
++ any(WH_NoAKeys) > index(WH_NoA,1)
 
++ [T_D] > 'ᑕ'
++ [T_DA] > 'ᑕ'
+'ᑕ' + any(D_NoAKeys) > index(D_NoA,2)
++ any(D_NoAKeys) > index(D_NoA,1)
+
++ [T_T] > 'ᗡ'
++ [T_TA] > 'ᗡ'
+'ᗡ' + any(T_NoAKeys) > index(T_NoA,2) 
++ any(T_NoAKeys) > index(T_NoA,1)
+
++ [T_TP] > 'ᗧ'
++ [T_TPA] > 'ᗧ'
+'ᗧ' + any(TP_NoAKeys) > index(TP_NoA,2)
++ any(TP_NoAKeys) > index(TP_NoA,1)
+
++ [T_B] > 'ᗭ'
++ [T_BA] > 'ᗭ'
+'ᗭ' + any(B_NoAKeys) > index(B_NoA,2)
++ any(B_NoAKeys) > index(B_NoA,1)
+
++ [T_G] > 'ᗴ'
++ [T_GA] > 'ᗴ'
+'ᗴ' + any(G_NoAKeys) > index(G_NoA,2)
++ any(G_NoAKeys) > index(G_NoA,1)
+
++ [T_K] > 'ᗺ'
++ [T_KA] > 'ᗺ'
+'ᗺ' + any(K_NoAKeys) > index(K_NoA,2)
++ any(K_NoAKeys) > index(K_NoA,1)
+
++ [T_KP] > 'ᘀ'
++ [T_KPA] > 'ᘀ'
+'ᘀ' + any(KP_NoAKeys) > index(KP_NoA,2)
++ any(KP_NoAKeys) > index(KP_NoA,1)
+
++ [T_N] > 'ᘇ'
++ [T_NA] > 'ᘇ'
+'ᘇ' + any(N_NoAKeys) > index(N_NoA,2)
++ any(N_NoAKeys) > index(N_NoA,1)
+
++ [T_M] > 'ᘍ'
++ [T_MA] > 'ᘍ'
+'ᘍ' + any(M_NoAKeys) > index(M_NoA,2)
++ any(M_NoAKeys) > index(M_NoA,1)
+
++ [T_Y] > 'ᘓ'
++ [T_YA] > 'ᘓ'
+'ᘓ' + any(Y_NoAKeys) > index(Y_NoA,2)
++ any(Y_NoAKeys) > index(Y_NoA,1)
+
++ [T_J] > 'ᘛ'
++ [T_JA] > 'ᘛ'
+'ᘛ' + any(J_NoAKeys) > index(J_NoA,2)
++ any(J_NoAKeys) > index(J_NoA,1)
+
++ [T_CHP] > 'ᘡ'
++ [T_CHPA] > 'ᘡ'
+'ᘡ' + any(CHP_NoAKeys) > index(CHP_NoA,2)
++ any(CHP_NoAKeys) > index(CHP_NoA,1)
+
++ [T_L] > 'ᘧ'
++ [T_LA] > 'ᘧ'
+'ᘧ' + any(L_NoAKeys) > index(L_NoA,2)
++ any(L_NoAKeys) > index(L_NoA,1)
+
++ [T_DL] > 'ᘭ'
++ [T_DLA] > 'ᘭ'
+'ᘭ' + any(DL_NoAKeys) > index(DL_NoA,2)
++ any(DL_NoAKeys) > index(DL_NoA,1)
+
++ [T_LH] > 'ᘳ'
++ [T_LHA] > 'ᘳ'
+'ᘳ' + any(LH_NoAKeys) > index(LH_NoA,2)
++ any(LH_NoAKeys) > index(LH_NoA,1)
+
++ [T_TL] > 'ᘹ'
++ [T_TLA] > 'ᘹ'
+'ᘹ' + any(TL_NoAKeys) > index(TL_NoA,2)
++ any(TL_NoAKeys) > index(TL_NoA,1)
+
++ [T_TLP] > 'ᘿ' 
++ [T_TLPA] > 'ᘿ'
+'ᘿ' + any(TLP_NoAKeys) > index(TLP_NoA,2)
++ any(TLP_NoAKeys) > index(TLP_NoA,1)
+
++ [T_Z] > 'ᙅ'
++ [T_ZA] > 'ᙅ'
+'ᙅ' + any(Z_NoAKeys) > index(Z_NoA,2)
++ any(Z_NoAKeys) > index(Z_NoA,1)
+
++ [T_DZ] > 'ᙍ'
++ [T_DZA] > 'ᙍ'
+'ᙍ' + any(DZ_NoAKeys) > index(DZ_NoA,2)
++ any(DZ_NoAKeys) > index(DZ_NoA,1)
+
++ [T_S] > 'ᙓ'
++ [T_SA] > 'ᙓ'
+'ᙓ' + any(S_NoAKeys) > index(S_NoA,2)
++ any(S_NoAKeys) > index(S_NoA,1)
+
++ [T_SH] > 'ᙙ'
++ [T_SHA] > 'ᙙ'
+'ᙙ' + any(SH_NoAKeys) > index(SH_NoA,2)
++ any(SH_NoAKeys) > index(SH_NoA,1)
+
++ [T_CH] > 'ᙠ'
++ [T_CHA] > 'ᙠ'
+'ᙠ' + any(CH_NoAKeys) > index(CH_NoA,2)
++ any(CH_NoAKeys) > index(CH_NoA,1)
+
++ [T_TS] > 'ᙦ'
++ [T_TSA] > 'ᙦ'
+'ᙦ' + any(TS_NoAKeys) > index(TS_NoA,2)
++ any(TS_NoAKeys) > index(TS_NoA,1)
+
++ [T_TSP] > 'ᙬ'
++ [T_TSPA] > 'ᙬ'
+'ᙬ' + any(TSP_NoAKeys) > index(TSP_NoA,2)
++ any(TSP_NoAKeys) > index(TSP_NoA,1)
 
 + [T_F] > 'ᶣ'
 + [T_R] > 'r'
@@ -133,4 +264,6 @@ any(GHVowels) + [T_GH] > index(GHVowels,1) nul
 + [T_SFIN] > 'ᔆ'
 + [T_SHFIN] > 'ᙚ'
 + [T_TSFIN] > 'ᐪs'
-+ [T_T] > 'T'
+
+c Preventing navigation keys from outputting when swapping between syllable sets while typing
+any(Letters) + any(NavKeys) > index(Letters,1) nul
