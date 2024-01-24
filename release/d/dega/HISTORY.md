@@ -1,6 +1,11 @@
 Dega Keyboard Change History
 ====================
 
+3.0 (2023-12-19)
+----------------
+* remove = and replace with ! from Numeric and More layouts on Phone platform 
+* update Numeric and More images in Welcome page
+
 2.0 (2023-10-27)
 ----------------
 * remove `'a' + [K_W]     > 'ă'` and `'A' + [SHIFT K_W]     > 'Ă'` to avoid conflict

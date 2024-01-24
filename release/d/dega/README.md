@@ -1,10 +1,6 @@
 Dega keyboard
 ==============
 
-© 2021 MSFJ
-
-Version 2.0
-
 Description
 -----------
 Dega keyboard mkra kơ jih jang mnuih pô lăn dôk hdĭp ti Lăn dap kngư ala čar Viêtnam, čăng dưi djă poih boh hră, Dega dưi yua kơ klei Êđê, Jơrai, Kơ’Ho, Mơnông, Bahnar leh anăn lu djuê hriê̆t mkăn.
