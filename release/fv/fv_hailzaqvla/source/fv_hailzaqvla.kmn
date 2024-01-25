@@ -188,6 +188,10 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_M] > 'm'
 + [T_GLOT] > U+0294
 
+store(NeedsComApos) 'acehiklḷmṃnṇpqtuwyƛACEHIKLḶMṂNṆPQTUWYƛ'
+store(ComApos) [T_COMMA]
+any(NeedsComApos) + any(ComApos) > index(NeedsComApos,1) U+0313
+
 c --- END OF TOUCH LAYOUT RULES ---
 
 c --- DIACRITIC MANAGEMENT RULES ---
