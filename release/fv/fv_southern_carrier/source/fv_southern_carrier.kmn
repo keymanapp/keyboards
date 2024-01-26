@@ -1,7 +1,7 @@
 ﻿store(&VERSION) "10.0"
 store(&TARGETS) "mobile tablet"
 c store(&ETHNOLOGUECODE) "caf"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᑐᑊᘁᗕᑋᗸ'
 store(&VISUALKEYBOARD) 'fv_southern_carrier.kvks'
 store(&KEYBOARDVERSION) '10.0'
@@ -238,32 +238,10 @@ store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B]
 'ᙬ' + any(TSP_NoAKeys) > index(TSP_NoA,2)
 + any(TSP_NoAKeys) > index(TSP_NoA,1)
 
-+ [T_F] > 'ᶣ'
-+ [T_R] > 'r'
-+ [T_RFIN] > '+'
-+ [T_PPFIN] > 'ᗮᗮ'
-+ [T_VFIN] > 'ᘁᗮ'
-+ [T_ZH] > 'ᙇᙚ'
-+ [T_HFIN] > 'ᑋ'
-+ [T_RrFIN] > 'ᐥ'
-+ [T_TFIN] > 'ᐪ'
-+ [T_BFIN] > 'ᗮ'
-+ [T_GFIN] > 'ᐟ'
-+ [T_KFIN_0] > 'ᐥ'
-+ [T_KFIN] > 'ᐠ'
-+ [T_KPFIN] > 'ᘁ'
-+ [T_NFIN_0] > 'ᓑ'
-+ [T_NFIN] > 'ᐣ'
-+ [T_MFIN] > 'ᒼ'
-+ [T_LFIN] > 'ᑊ'
-+ [T_LHFIN] > 'ᒡ'
-+ [T_ZFIN_0] > 'ᒡ'
-+ [T_ZFIN] > 'ᙆ'
-+ [T_DZFIN] > 'ᐪz'
-+ [T_SFIN_0] > 'ᣵ'
-+ [T_SFIN] > 'ᔆ'
-+ [T_SHFIN] > 'ᙚ'
-+ [T_TSFIN] > 'ᐪs'
-
 c Preventing navigation keys from outputting when swapping between syllable sets while typing
 any(Letters) + any(NavKeys) > index(Letters,1) nul
+
+c Individual Finals
++ [T_ZH] > 'ᙇᙚ'
++ [T_PP] > 'ᗮᗮ'
++ [T_VFIN] > 'ᘁᗮ'

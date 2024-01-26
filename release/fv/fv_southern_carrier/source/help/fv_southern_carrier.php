@@ -23,36 +23,34 @@ This keyboard is designed for the <b>ᑐᑊᘁᗕᑋᗸ</b> language of the BC I
 <div id='wikitext'>
 <div class='vspace'></div><div class='dakelh' >
 <div class='vspace'></div><h3>Unshifted</h3>
-<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><th  align='center'>|</th><td  align='center'>ᣟ</td><td  align='center'>ᐊ</td><td  align='center'>ᘇ</td><td  align='center'>ᑕ ᗡ ᗧ</td><td  align='center'>ᙓ ᙦ ᙬ</td><td  align='center'>ᘓ ᘛ ᘡ</td><td  align='center'>ᙅ ᙍ</td><td  align='center'>ᐸ</td><th  align='center'>'</th></tr>
-<tr ><th  align='center'>〈</th><td  align='center'>ᐣ</td><td  align='center'>ᐅ</td><td  align='center'>ᘄ</td><td  align='center'>ᑐ ᗞ ᗤ</td><td  align='center'>ᙐ ᙣ ᙩ</td><td  align='center'>ᘐ ᘗ ᘞ</td><td  align='center'>ᙂ ᙊ</td><td  align='center'>ᐳ</td><th  align='center'>ᐧ</th></tr>
-<tr ><td  align='center'>⇧</td><td  align='center'>ᐪ</td><td  align='center'>ᐃ</td><td  align='center'>ᘃ</td><td  align='center'>ᑎ ᗝ ᗣ</td><td  align='center'>ᙏ ᙢ ᙨ</td><td  align='center'>ᘏ ᘖ ᘝ</td><td  align='center'>ᙁ ᙉ</td><td  align='center'>ᐱ</td><th  align='center'>↻</th></tr>
-<tr ><td  align='center'>#</td><td  align='center'>lang</td><td  align='center'>ᙆ ᙇ</td><td  align='center' colspan='4'>space</td><td  align='center'>ᔆ</td><td  align='center'>ᑋ</td><td  align='center'>⌫</td></tr>
+<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>ᐊ</td><td  align='center'>ᐸ</td><td  align='center'>ᗉ</td><td  align='center'>ᗕ</td><td  align='center'>ᑕ</td><td  align='center'>ᗭ</td><td  align='center'>ᗴ</td><td  align='center'>ᘇ</td><td  align='center'>ᘍ</td><td  align='center'>ᘓ</th></td>
+<tr ><td  align='center'>ᘧ</td><td  align='center'>ᘭ</td><td  align='center'>ᘳ</td><td  align='center'>ᘹ</td><td  align='center'>ᘿ</td><td  align='center'>ᙅ</td><td  align='center'>ᙍ</td><td  align='center'>ᙓ</td><td  align='center'>ᙦ</td><td  align='center'></td></tr>
+<tr ><td  align='center'>⇧</td><th  align='center'>|</th><td  align='center'></td><td  align='center'></td><td  align='center'></td><td  align='center'></td><td  align='center'></td><td  align='center'></td><th  align='center'>〈</th><td align='center'>⌫</td></tr>
+<tr ><td  align='center'>#</td><td  align='center'>lang</td><td  align='center' colspan='6'>space</td><td align='center'>. ᐧ ᕯ</td><td  align='center'>⏎</td></tr>
 </table>
 <div class='vspace'></div><h3>Shifted</h3>
-<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>ᒡ</td><td  align='center'>ᣵ ᙚ</td><td  align='center'>ᗴ ᗺ ᘀ</td><td  align='center'>ᘳ ᘹ ᘿ</td><td  align='center'>ᘧ ᘭ</td><td  align='center'>ᗕ ᗛ</td><td  align='center'>ᗭ</td><td  align='center'>ᙙ ᙠ</td><td  align='center'>ᘍ</td><td  align='center'>ᗉ ᗏ</td></tr>
-<tr ><td  align='center'>ᑊ</td><td  align='center'>ᐥ ᐦ</td><td  align='center'>ᗱ ᗷ ᗽ</td><td  align='center'>ᘰ ᘶ ᘼ</td><td  align='center'>ᘤ ᘪ</td><td  align='center'>ᗒ ᗘ</td><td  align='center'>ᗪ</td><td  align='center'>ᙖ ᙝ</td><td  align='center'>ᘊ</td><td  align='center'>ᗆ ᗌ</td></tr>
-<tr ><td  align='center'>⇧</td><td  align='center'>ᒼ ᓑ</td><td  align='center'>ᗰ ᗶ ᗼ</td><td  align='center'>ᘯ ᘵ ᘻ</td><td  align='center'>ᘣ ᘩ</td><td  align='center'>ᗑ ᗗ</td><td  align='center'>ᗩ</td><td  align='center'>ᙕ ᙜ</td><td  align='center'>ᘉ</td><td  align='center'>ᗅ ᗋ</td></tr>
-<tr ><td  align='center'>ᐟ <span style='font-size:69%'>ᐟᗕ ᐟᗒ ᐟᗑ</span></td><td  align='center'>ᐠ <span style='font-size:69%'>ᐠᗕ ᐠᗒ ᐠᗑ</span></td><td  align='center'>ᘁ <span style='font-size:69%'>ᘁᗕ ᘁᗒ ᘁᗑ</span></td><td  align='center' colspan='4'>space</td><td  align='center'>ᗮ</td><td  align='center'>return</td><td  align='center'>⌫</td></tr>
+<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>ᑋ</td><td  align='center'>ᐥ</td><td  align='center'>ᐪ</td><td  align='center'>ᗮ</td><td  align='center'>ᐟ</td><td  align='center'>ᐠ</td><td  align='center'>ᘁ</td><td  align='center'>ᐣ</td><td  align='center'>ᓑ</td><td  align='center'>ᒼ</td></tr>
+<tr ><td  align='center'></td><td  align='center'>ᑊ</td><td  align='center'>ᒡ</td><td  align='center'>ᐦ</td><td  align='center'>ᙆ</td><td  align='center'>ᔆ</td><td  align='center'>ᙚ</td><td  align='center'>r</td><td  align='center'>+</td><td  align='center'></td></tr>
+<tr ><td  align='center'>⇧</td><td  align='center'></td><td  align='center'></td><td  align='center'>ᶣ</td><td  align='center'>ᗮᗮ</td><td  align='center'>ᘁᗮ</td><td  align='center'>ᙇᙚ</td><td  align='center'></td><td  align='center'></td><td  align='center'>⌫</td></tr>
+<tr ><td  align='center'>#</td><td  align='center'>lang</td><td  align='center' colspan='6'>space</td><td align='center'>. ᐧ ᕯ</td><td  align='center'>⏎</td></tr>
 </table>
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-</li><li>The | and 〈 keys modify a syllabic character into a related form:
-<ul><li>ᑐ + | = ᗞ
-</li><li>ᗅ + | = ᗋ
-</li><li>ᑐ + 〈 = ᗤ
-</li><li>ᘳ + 〈 = ᘿ
-</li></ul></li><li>The ' ᐧ and ↻ keys change the vowel of a syllabic character:
-<ul><li>ᙂ + ' = ᙃ
-</li><li>ᙂ + ᐧ = ᙄ
-</li><li>ᙁ + ↻ = ᙀ
-</li></ul></li><li>The syllabic equivalent of “s̲” may not be present in your device’s font, if so ᣵ might appear as an empty box.
+</li><li> The keys present on the unshifted layer show many of the syllables in their 'a' orientation. Selecting the key will bring up the other forms:
+<div class='vspace'></div><h3>Vowels</h3>
+<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><th  align='center'>ᐊ</th><td  align='center'>ᐸ</td><td  align='center'>ᗉ</td><td  align='center'>ᗕ</td><td  align='center'>ᑕ</td><td  align='center'>ᗭ</td><td  align='center'>ᗴ</td><td  align='center'>ᘇ</td><td  align='center'>ᘍ</td><td  align='center'>ᘓ</th></td>
+<tr ><td  align='center'>ᘧ</td><td  align='center'>ᘭ</td><td  align='center'>ᘳ</td><td  align='center'>ᘹ</td><td  align='center'>ᘿ</td><td  align='center'>ᙅ</td><td  align='center'>ᙍ</td><td  align='center'>ᙓ</td><td  align='center'>ᙦ</td><td  align='center'></td></tr>
+<tr ><td  align='center'>⇧</td><th  align='center'>|</th><th  align='center'>ᐊ</h><th  align='center'>ᐅ</th><th  align='center'>ᐈ</th><th  align='center'>ᐉ</th><th  align='center'>ᐃ</th><th  align='center'>ᐁ</th><th  align='center'>〈</th><td align='center'>⌫</td></tr>
+<tr ><td  align='center'>#</td><td  align='center'>lang</td><td  align='center' colspan='6'>space</td><td align='center'>. ᐧ ᕯ</td><td  align='center'>⏎</td></tr>
+</table>  
+</li><li>The | and 〈 keys modify the keys shown on the default keyboard to their related forms:
+<ul><li>ᑕ + | = ᗡ
+</li><li>ᗉ + | = ᗏ
+</li><li>ᑕ + 〈 = ᗧ
+</li><li>ᙦ + 〈 = ᙬ
 </li><li>Your device’s font may not differentiate fully between syllabic “s” ᔆ and “sh” ᙚ
 </li></ul></div>
 <div class='vspace'></div>
 </div>
 
 <br/>
-
-<h2>Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift numeric'>
-</div>
