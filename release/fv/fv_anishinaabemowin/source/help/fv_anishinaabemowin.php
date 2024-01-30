@@ -23,7 +23,8 @@ This keyboard is designed for the <b>Anishinaabemowin - Anihšināpēmowin</b> l
 					<ul>
 						<li>Accents are typed after the base letter — ā is typed a then Left-Bracket [</li>
 						<li>To type the macron accent use the Left-Bracket key [ —  ō is typed o then Left-Bracket [</li>
-						<li>To type the circumflex accent use the Backslash key \ — š is typed a then Backslash</li>
+						<li>To type the circumflex accent use the Right-Bracket key ] - ê is typed e then Right-Bracket ]</li>
+						<li>To type the caron accent use the Backslash key \ — š is typed a then Backslash</li>
 						<li>You can type the original English punctuation by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
 						<ul>
 								</ul>
