@@ -46,9 +46,11 @@ require_once('header.php');
     <h2>Suffixes</h2>
     
     <p>
-        On touch keyboards, press the function keys (-n, -o, -i, -nt, -t, -ig, -et),
+        On touch keyboards, press the function keys (-n, -o, -i, -nt-, -t-, -ig-),
         to alternate between the most used suffixes and endings. As an example, the first rule means that, by pressing the
         "-n" key, the -n ending is set or unset to a word.
+        If the root already contains a sequence of letters equal to some suffix (-ant-, -int-, -ont-, -at-, -it-, -ot-, -ig-, -iľ-),
+        to add that suffix, press the "radiko" key first.
     </p>
             
     <div class="rules">
@@ -56,10 +58,9 @@ require_once('header.php');
             <div>-n </div><div>=</div><div><span class="special-char">-n</span></div>
             <div>-o </div><div>=</div><div><span class="special-char">-o, -a, -e</span></div>
             <div>-i </div><div>=</div><div><span class="special-char">-i, -as, -is, -os, -us, -u</span></div>
-            <div>-nt</div><div>=</div><div><span class="special-char">-ant, -int, -ont</span></div>
-            <div>-t </div><div>=</div><div><span class="special-char">-at, -it, -ot</span></div>
-            <div>-ig</div><div>=</div><div><span class="special-char">-ig, -iĝ</span></div>
-            <div>-et</div><div>=</div><div><span class="special-char">-et, -eg</span></div>
+            <div>-nt</div><div>=</div><div><span class="special-char">-ant-, -int-, -ont-</span></div>
+            <div>-t </div><div>=</div><div><span class="special-char">-at-, -it-, -ot-</span></div>
+            <div>-ig</div><div>=</div><div><span class="special-char">-ig-, -iĝ-</span></div>
         </div>
     </div>
 
@@ -101,6 +102,7 @@ require_once('header.php');
             <div class="box box-3">
                 <div>mkp</div><div>=</div><div><span class="special-char">Mi komprenas</span></div>
                 <div>mks</div><div>=</div><div><span class="special-char">Mi konsentas</span></div>
+                <div>mns</div><div>=</div><div><span class="special-char">Mi ne scias</span></div>
                 <div>vpr</div><div>=</div><div><span class="special-char">Vi pravas</span></div>
             </div>
         </div>
@@ -124,4 +126,16 @@ require_once('header.php');
             </div>
         </div>     
     </div>
+
+    <h2>Dictionary</h2>
+
+    <p>
+        Speciala Esperanta <a href="https://esperatempo.altervista.org/basic/web/files/documents/av.eo.esperanto.model.kmp">vortaro</a>
+        estis kreita por la klavaro <a href="https://keyman.com/keyboards/eo_plus" target="_blank">Esperanto Plus</a>, por uzo kun tuŝaparatoj,
+        kiu montras sugestojn de la plej oftaj vortoj respondaj al la liteorj enigitaj per la klavaro.
+        
+        A special Esperanto <a href="https://esperatempo.altervista.org/basic/web/files/documents/av.eo.esperanto.model.kmp">dictionary</a> has been
+        created for the <a href="https://keyman.com/keyboards/eo_plus" target="_blank">Esperanto Plus</a> keyboard, for use with touch devices, which
+        shows suggestions of the most common words corresponding to the letters entered by the keyboard.        
+    </p>
 </body>
