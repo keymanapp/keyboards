@@ -4,7 +4,7 @@ Esperanto Plus Change History
 3.0 (2024.01.30)
 ----------------
 - Removed the '-et-' key from the touch layout
-- Added the 'radiko' to the touch layout
+- Added the 'radiko' key to the touch layout
 - Updated layout code to handle the 'radiko' key
 - Fixed letters not uppercase when caps lock
 - Updated welcome and help files
