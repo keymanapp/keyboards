@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2019-2020 The PanLex Project of The Long Now Foundation
+Copyright (c) 2019-2023 The PanLex Project of The Long Now Foundation
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

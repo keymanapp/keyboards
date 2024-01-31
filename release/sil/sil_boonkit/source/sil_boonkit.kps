@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1091.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName>E:\Downloads\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -16,34 +17,10 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">Boonkit Unicode</Name>
-    <Copyright URL="">© SIL International 2018</Copyright>
+    <Name URL="">Boonkit (SIL)</Name>
+    <Copyright URL="">© 2018-2023 SIL International</Copyright>
   </Info>
   <Files>
-    <File>
-      <Name>boonkitofl.ttf</Name>
-      <Description>Font Boonkit Unicode</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>boonkitofl.txt</Name>
-      <Description>File boonkitofl.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>Cr-Udom.ttf</Name>
-      <Description>Font Cr-Udom</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>Cr-Udomofl.txt</Name>
-      <Description>File Cr-Udomofl.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
     <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
@@ -74,16 +51,46 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lana\boonkit_unicode\boonkitofl.ttf</Name>
+      <Description>Font Boonkit Unicode</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lana\boonkit_unicode\boonkitofl.txt</Name>
+      <Description>File boonkitofl.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lana\cr_udom\Cr-Udom.ttf</Name>
+      <Description>Font Cr-Udom</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\lana\cr_udom\Cr-Udomofl.txt</Name>
+      <Description>File Cr-Udomofl.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Boonkit Unicode</Name>
+      <Name>Boonkit (SIL)</Name>
       <ID>sil_boonkit</ID>
-      <Version></Version>
-      <OSKFont>boonkitofl.ttf</OSKFont>
-      <DisplayFont>boonkitofl.ttf</DisplayFont>
+      <Version>0.6.6</Version>
+      <OSKFont>..\..\..\shared\fonts\lana\boonkit_unicode\boonkitofl.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\lana\boonkit_unicode\boonkitofl.ttf</DisplayFont>
       <Languages>
-        <Language ID="nod-Lana">Northern Thai (Lanna)</Language>
+        <Language ID="nod">Northern Thai (Lanna)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

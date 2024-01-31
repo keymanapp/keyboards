@@ -1,6 +1,11 @@
 Limbu Phonetic (SIL) Change History
 ====================
 
+1.3.1 (2024-01-03)
+----------------
+* Add keystroke for danda
+* Updated font
+
 1.3 (2023-08-17)
 ----------------
 * Changed OSK to use Namdhinggo

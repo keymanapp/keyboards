@@ -1,6 +1,10 @@
 Lahu Change History
 ====================
 
+1.1.2 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 1.1.1 (2020-10-27)
 -----------------
 * Increment version number to force recompile of touch layout.

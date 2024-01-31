@@ -1,9 +1,7 @@
 Devanagari Typewriter (SIL) keyboard
 =======================
 
-Copyright © 2015-2022 SIL International
-
-Version 1.1
+Copyright © SIL International
 
 Description
 --------------

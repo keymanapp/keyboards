@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2008-2019 John Durdin
+Copyright (c) 2008-2023 John Durdin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

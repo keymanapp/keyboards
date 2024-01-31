@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Old Turkic UDW21 (QWERTY)</Name>
-    <Copyright URL="">© 2022 Mehmet Oguz Derin and Takahiro Harada</Copyright>
+    <Copyright URL="">© 2022-2023 Mehmet Oguz Derin and Takahiro Harada</Copyright>
     <Author URL="">Mehmet Oguz Derin and Takahiro Harada</Author>
     <Version URL=""></Version>
   </Info>
@@ -41,12 +41,6 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>old_turkic_udw21_qwerty.ico</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -65,13 +59,13 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\assets\NotoSansOldTurkic-Regular.ttf</Name>
-      <Description>File NotoSansOldTurkic-Regular.ttf</Description>
+      <Name>..\..\..\shared\fonts\noto\Orkh\NotoSansOldTurkic-Regular.ttf</Name>
+      <Description>Font Noto Sans Old Turkic Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\assets\OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\noto\Orkh\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
@@ -81,9 +75,10 @@
     <Keyboard>
       <Name>Old Turkic UDW21 (QWERTY)</Name>
       <ID>old_turkic_udw21_qwerty</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\assets\NotoSansOldTurkic-Regular.ttf</OSKFont>
-      <DisplayFont>..\assets\NotoSansOldTurkic-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\noto\Orkh\NotoSansOldTurkic-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Orkh\NotoSansOldTurkic-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="otk-Orkh">Old Turkish</Language>
       </Languages>

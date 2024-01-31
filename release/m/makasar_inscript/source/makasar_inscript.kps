@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -53,12 +53,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>NotoSerifMakasar-Regular.ttf</Name>
-      <Description>Font Noto Serif Makasar Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>makasar_inscript.ico</Name>
       <Description>File makasar_inscript.ico</Description>
       <CopyLocation>0</CopyLocation>
@@ -82,14 +76,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Maka\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Maka\NotoSerifMakasar-Regular.ttf</Name>
+      <Description>Font Noto Serif Makasar Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Makasar Inscript</Name>
       <ID>makasar_inscript</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSerifMakasar-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSerifMakasar-Regular.ttf</DisplayFont>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Maka\NotoSerifMakasar-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Maka\NotoSerifMakasar-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="mak-Maka">Makasar (Makasar)</Language>
       </Languages>
