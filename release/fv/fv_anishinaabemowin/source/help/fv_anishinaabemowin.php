@@ -22,12 +22,13 @@ This keyboard is designed for the <b>Anishinaabemowin - Anihšināpēmowin</b> l
 <img src="anishinaabemowinU_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 						<li>Accents are typed after the base letter — ā is typed a then Left-Bracket [</li>
-						<li>To type the macron accent use the Left-Bracket key [ —  ō is typed o then Left-Bracket [</li>
-						<li>To type the circumflex accent use the Right-Bracket key ] - ê is typed e then Right-Bracket ]</li>
-						<li>To type the caron accent use the Backslash key \ — š is typed a then Backslash</li>
+              				<ul>
+						    	<li>To type the macron accent use the Left-Bracket key [ —  ō is typed o then Left-Bracket [</li>
+						    	<li>To type the circumflex accent use the Right-Bracket key ] - ê is typed e then Right-Bracket ]</li>
+						    	<li>To type the caron accent use the Backslash key \ — š is typed a then Backslash</li>
+              				</ul>
 						<li>You can type the original English punctuation by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
-						<ul>
-								</ul>
+					</ul>	
 
 
 <h2>Notes on touch layout</h2>
