@@ -1,0 +1,136 @@
+﻿store(&Version) '15.0'
+store(&KEYBOARDVERSION) '0.9'
+store(&NAME) 'Mwangwego'
+store(&COPYRIGHT) '© 2024 Geʾez Frontier Foundation'
+store(&Message) 'This is an experimental Mwangwego keyboard that requires the included Mwangwego12 font.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_M]'
+store(&VISUALKEYBOARD) 'gff_mwangwego.kvks'
+store(&TARGETS) 'windows macosx linux'
+store(&BITMAP) 'gff_mwangwego.ico'
+
+store(ShortA) 'Aa'
+store(ShortE) 'Ee'
+store(ShortI) 'Ii'
+store(ShortO) 'Oo'
+store(ShortU) 'Uu'
+store(VowelKeys) 'AaEeIiOoUu'
+store(H_Modifier) 'Hh'
+store(H_DigraphBases) ''
+store(H_DigraphTargets) ''
+store(L_Modifier) 'Ll'
+store(L_DigraphBases) ''
+store(L_DigraphTargets) ''
+store(S_Modifier) 'Ss'
+store(S_DigraphBases) ''
+store(S_DigraphTargets) ''
+store(Y_Modifier) 'Yy'
+store(Y_DigraphBases) ''
+store(Y_DigraphTargets) ''
+store(Z_Modifier) 'Zz'
+store(Z_DigraphBases) ''
+store(Z_DigraphTargets) ''
+store(QubeeKeys) 'bcdfghjklmnprstvwyzxq'
+store(OrdersConsonantsRegular) ''
+store(OrdersShortA) ''
+store(OrdersShortE) ''
+store(OrdersShortI) ''
+store(OrdersShortO) ''
+store(OrdersShortU) ''
+store(OrdersConsonant) ''
+store(Vowels) ''
+
+begin Unicode > use(main)
+group(main) using keys
+
++ any(QubeeKeys)                   > index(OrdersConsonantsRegular,1)
+any(OrdersConsonant) + any(ShortA) > index(OrdersShortA,1)
+any(OrdersConsonant) + any(ShortU) > index(OrdersShortU,1)
+any(OrdersConsonant) + any(ShortI) > index(OrdersShortI,1)
+any(OrdersConsonant) + any(ShortE) > index(OrdersShortE,1)
+any(OrdersConsonant) + any(ShortO) > index(OrdersShortO,1)
++ any(VowelKeys) > index(Vowels,1)
+
+c
+c  The Basic Mikuyo
+c
+
+c MITUYO WAYA
++ [ALT K_HYPHEN] > ''
+
+c MITUYO HI
++ [SHIFT ALT K_COLON] > ''
+
+c MITUYO NI
++ [SHIFT ALT K_QUOTE] > ''
+
+c MITUYO  MI
+'' + [SHIFT ALT K_COMMA] > ''
+
+c MITUYO MYU
++ [SHIFT ALT K_COMMA] > ''
+
+c MITUYO SISA
++ [SHIFT ALT K_PERIOD] > ''
+
+c MITUYO  MURA
+'' + [ALT K_BKQUOTE] > ''
+
+c MITUYO MULA
++ [ALT K_BKQUOTE] > ''
+
+c MITUYO PEWA
++ [SHIFT ALT K_6] > ''
+ 
+c MITUYO TUMBA
++ [ALT K_QUOTE] > ''
+
+c MITUYO KWANTHU
++ [ALT K_SLASH] > ''
+
+
+c
+c  The Compound Mikuyo
+c
+
+c MITUYO NI-WAYA
+'' + [ALT K_HYPHEN] > ''
+
+c MITUYO MYU-WAYA
+'' + [ALT K_HYPHEN] > ''
+
+c MITUYO MYU-HI
+'' + [SHIFT ALT K_COLON] > ''
+
+c MITUYO MYU-NI
+'' + [SHIFT ALT K_QUOTE] > ''
+
+c MITUYO MYU-NI-HI
+'' + [SHIFT ALT K_COLON] > ''
+
+c MITUYO MYU-NI-HI-WAYA
+'' + [ALT K_HYPHEN] > ''
+
+c MITUYO MI-WAYA
+''+ [ALT K_HYPHEN] > ''
+
+c MITUYO MI-HI
+'' + [SHIFT ALT K_COLON] > ''
+
+c MITUYO HI-WAYA
+''  + [ALT K_HYPHEN] > ''
+
+c MITUYO TUMBU-WAYA
+'' + [ALT K_HYPHEN] > ''
+
+c MITUYO SISA-NI
+'' + [SHIFT ALT K_QUOTE] > ''
+
+c MITUYO SISA-NI-HI
+'' + [SHIFT ALT K_COLON] > ''
+
+c MITUYO NI-HI
+'' + [SHIFT ALT K_COLON] > '' 
+
+c NI-HI-WAYA
+'' + [SHIFT ALT K_COLON]   > ''
