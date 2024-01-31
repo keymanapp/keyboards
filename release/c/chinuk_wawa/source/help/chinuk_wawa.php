@@ -62,4 +62,4 @@ To type the following chinuk wawa characters, use the SHIFT key on desktop or lo
 </div>
 
 
-<p>©2022 Carisa Chang</p>
+<p>©Carisa Chang</p>
