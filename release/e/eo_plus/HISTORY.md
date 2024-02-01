@@ -1,7 +1,7 @@
 Esperanto Plus Change History
 =============================
 
-3.01 (2024.02.01)
+3.0.1 (2024.02.01)
 ----------------
 - Corrected "bps" shorthand in keyboard layout, in the welcome and help files.
 
