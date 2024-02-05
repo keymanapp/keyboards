@@ -5,7 +5,7 @@ Háiɫzaqvḷa Change History
 * Corrected language and keyboard name
 * Added info on typing glottal stop when using Google Docs in Google Chrome
 * Centered mobile keyboard layout
-* Updated combining apostrophe on desktop to true deadkey
+* Updated combining apostrophe on mobile to true deadkey
 
 9.4.1 (25 Oct 2023)
 ----------------
