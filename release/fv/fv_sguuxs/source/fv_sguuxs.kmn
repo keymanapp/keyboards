@@ -1,5 +1,5 @@
 ﻿store(&VERSION) '10.0'
-store(&NAME) 'Sgüüx̣s'
+store(&NAME) 'Sgüüx̱s'
 store(&COPYRIGHT) '© 2024 First Peoples' U+0027 ' Cultural Foundation'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
@@ -40,6 +40,8 @@ c --- BEGIN TOUCH LAYOUT ---
 + [SHIFT T_L] > 'L' layer('default')
 + [SHIFT T_BL] > 'Ł' layer('default')
 + [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X_0] > 'X̱' layer('default')
++ [SHIFT T_X_1] > '̣X' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_B] > 'B' layer('default')
@@ -71,6 +73,8 @@ c --- BEGIN TOUCH LAYOUT ---
 + [T_L] > 'l'
 + [T_BL] > 'ł'
 + [T_Z] > 'z'
++ [T_X_0] > 'x̱'
++ [T_X_1] > 'x̣'
 + [T_X] > 'x'
 + [T_C] > 'c'
 + [T_B] > 'b'
@@ -126,6 +130,7 @@ c --- Language keys ---
 + [SHIFT K_COLON] > 'Ł'
 + [K_HYPHEN] > U+0331 c lowline
 + [K_LBRKT] > U+0308 c diaeresis
++ [K_BKQUOTE] > '̣' 
 
 c --- original punctuation ---
 
@@ -133,4 +138,5 @@ c --- original punctuation ---
 + [RALT SHIFT K_COLON] > ':'
 + [RALT K_HYPHEN] > '-'
 + [RALT K_LBRKT] > '['
++ [RALT K_BKQUOTE] > '`'
 

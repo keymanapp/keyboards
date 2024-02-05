@@ -1,7 +1,7 @@
-Sgüüx̣s keyboard
+Sgüüx̱s keyboard
 ==============
 
-Sgüüx̣s keyboard layout for unicode
+Sgüüx̱s keyboard layout for unicode
 
 Links
 -----
