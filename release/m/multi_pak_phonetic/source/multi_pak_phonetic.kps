@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.225.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Multi Pak Phonetic</Name>
-    <Copyright URL="">(c) 2007-2019 Zeeshan Hyder</Copyright>
+    <Copyright URL="">© 2007-2023 Zeeshan Hyder</Copyright>
   </Info>
   <Files>
     <File>
@@ -94,17 +94,44 @@
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\arab\PakNastaleeq-Regular.ttf</Name>
-      <Description>Font Pak Nastaleeq</Description>
+      <Name>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Bold.ttf</Name>
+      <Description>Font Noto Nastaliq Urdu Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Medium.ttf</Name>
+      <Description>Font Noto Nastaliq Urdu Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Regular.ttf</Name>
+      <Description>Font Noto Nastaliq Urdu Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-SemiBold.ttf</Name>
+      <Description>Font Noto Nastaliq Urdu SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Multi Pak Phonetic</Name>
       <ID>multi_pak_phonetic</ID>
-      <Version>1.1</Version>
+      <Version>1.1.1</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bgp-Arab">Eastern Balochi (Arabic)</Language>
         <Language ID="ks-Arab">Kashmiri (Arabic)</Language>

@@ -1,5 +1,10 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+2.0.3 (24 Oct 2023)
+-------------------
+* Removed "EthiopicUnicodeNormal.ttf" and "EthiopicUnicodeItalic.ttf" 
+  fonts which have an unknown license.
+  
 2.0.2 (2023-06-20)
 ------------------
 * Fix for smart-dot and smart-comma composition.

@@ -1,6 +1,10 @@
 Naskapi (Classic) Change History
 ====================
 
+2.1.2 (30 Oct 2023)
+-------------------
+* Updated font to better support the Cans script
+
 2.1.1 (2020-12-11)
 ----------------
 * Remove .js file from package as this indicates there is mobile support (there is not)

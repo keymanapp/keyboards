@@ -1,13 +1,41 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1"
-store(&TARGETS) "mobile tablet"
-c store(&ETHNOLOGUECODE) "xsl"
-store(&COPYRIGHT) "(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
-store(&NAME) 'Dene Zhatié'
+store(&TARGETS) 'any'
+c store(&ETHNOLOGUECODE) "den"
+store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&NAME) 'Dene Zhatıé'
+store(&KEYBOARDVERSION) '10.0.2'
+store(&BITMAP) 'fv_dene_zhatie.ico'
+store(&VISUALKEYBOARD) 'fv_dene_zhatie.kvks'
+store(&KMW_HELPFILE) 'fv_dene_zhatie-help.htm'
 
 begin Unicode > use(main)
 
 group(main) using keys
+
+c --- STORES AND RULES ACROSS MOBILE AND DESKTOP LAYOUTS ---
+store(BaseVowels) 'aeiouAEIOU'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
+store(Acute) [T_Q][SHIFT T_Q][K_BKQUOTE]
+store(HasOgonek) 'ąęįǫųĄĘĮǪŲ'
+store(Ogonek) [T_F] [SHIFT T_F] [K_LBRKT]
+store(AcuteOgonek) [K_RBRKT]
+store(Backspace) [K_BKSP] [SHIFT K_BKSP]
+
+
+any(BaseVowels) + any(Acute) > index(HasAcute,1)
+any(HasAcute) + any(Ogonek) > index(HasOgonek,1) U+0301
+any(BaseVowels) + any(Ogonek) > index(HasOgonek,1)
+any(HasOgonek) + any(Acute) > index(HasOgonek,1) U+0301
+any(BaseVowels) + any(AcuteOgonek) > index(HasOgonek,1) U+0301
+
+any(HasAcute) + any(Backspace) > index(BaseVowels,1) c backspaces only accent
+any(HasOgonek) + any(Backspace) > index(BaseVowels,1)
+
+'ı' + any(Acute) > 'í'
+'ı̨' + any(Acute) > 'ı̨́'
+'ı' + any(Ogonek) > 'ı̨'
+'í' + any(Ogonek) > 'ı̨́'
+'ı' + any(AcuteOgonek) > 'ı̨́'
 
 
 c --- START OF TOUCH LAYOUT RULES ---
@@ -16,73 +44,35 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) "fv_dene_zhatie.keyman-touch-layout"
 
-'ų' + [SHIFT T_Q] > 'ų́'
-'Ǫ' + [SHIFT T_Q] > 'Ǫ́'
-'U' + [SHIFT T_Q] > 'Ú'
-'Ų' + [SHIFT T_Q] > 'Ų́'
-'ı' + [SHIFT T_Q] > 'ı́'
-'I' + [SHIFT T_Q] > 'Í'
-'ą' + [SHIFT T_Q] > 'ą́'
-'e' + [SHIFT T_Q] > 'é'
-'ı̨' + [SHIFT T_Q] > 'ı̨́'
-'Ą' + [SHIFT T_Q] > 'Ą́'
-'u' + [SHIFT T_Q] > 'ú'
-'ę' + [SHIFT T_Q] > 'ę́'
-'A' + [SHIFT T_Q] > 'Á'
-'O' + [SHIFT T_Q] > 'Ó'
-'Ę' + [SHIFT T_Q] > 'Ę́'
-'E' + [SHIFT T_Q] > 'É'
-'a' + [SHIFT T_Q] > 'á'
-'o' + [SHIFT T_Q] > 'ó'
-'ǫ' + [SHIFT T_Q] > 'ǫ́'
-'Į' + [SHIFT T_Q] > 'Į́'
+c --- TOUCH STORES---
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'É' layer('default')
-+ [SHIFT T_E_1] > 'Ę' layer('default')
-+ [SHIFT T_E_2] > 'Ę́' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_1] > 'Ę' layer('default')
++ [SHIFT T_E_2] > 'Ę́' layer('default')
++ [SHIFT T_E_3] > 'E̲E̲' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > 'R' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ú' layer('default')
-+ [SHIFT T_U_1] > 'Ų' layer('default')
-+ [SHIFT T_U_2] > 'Ų́' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_1] > 'Ų' layer('default')
++ [SHIFT T_U_2] > 'Ų́' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Í' layer('default')
-+ [SHIFT T_I_1] > 'Į' layer('default')
-+ [SHIFT T_I_2] > 'Į́' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_1] > 'Į' layer('default')
++ [SHIFT T_I_2] > 'Į́' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O_0] > 'Ó' layer('default')
-+ [SHIFT T_O_1] > 'Ǫ' layer('default')
-+ [SHIFT T_O_2] > 'Ǫ́' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_1] > 'Ǫ' layer('default')
++ [SHIFT T_O_2] > 'Ǫ́' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
 + [SHIFT T_P] > 'Ł' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
-+ [SHIFT T_A_1] > 'Ą' layer('default')
-+ [SHIFT T_A_2] > 'Ą́' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_1] > 'Ą' layer('default')
++ [SHIFT T_A_2] > 'Ą́' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
-'U' + [SHIFT T_F] > 'Ų'
-'ı' + [SHIFT T_F] > 'ı̨'
-'I' + [SHIFT T_F] > 'Į'
-'e' + [SHIFT T_F] > 'ę'
-'Í' + [SHIFT T_F] > 'Į́'
-'ú' + [SHIFT T_F] > 'ų́'
-'ó' + [SHIFT T_F] > 'ǫ́'
-'Ó' + [SHIFT T_F] > 'Ǫ́'
-'Ú' + [SHIFT T_F] > 'Ų́'
-'u' + [SHIFT T_F] > 'ų'
-'á' + [SHIFT T_F] > 'ą́'
-'ı́' + [SHIFT T_F] > 'ı̨́'
-'Á' + [SHIFT T_F] > 'Ą́'
-'A' + [SHIFT T_F] > 'Ą'
-'O' + [SHIFT T_F] > 'Ǫ'
-'é' + [SHIFT T_F] > 'ę́'
-'É' + [SHIFT T_F] > 'Ę́'
-'E' + [SHIFT T_F] > 'Ę'
-'a' + [SHIFT T_F] > 'ą'
-'o' + [SHIFT T_F] > 'ǫ'
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'J' layer('default')
@@ -95,75 +85,37 @@ store(&LAYOUTFILE) "fv_dene_zhatie.keyman-touch-layout"
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_V] > 'Ɂ' layer('default')
 + [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N_0] > 'Ṉ' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
-'ų' + [T_Q] > 'ų́'
-'Ǫ' + [T_Q] > 'Ǫ́'
-'U' + [T_Q] > 'Ú'
-'Ų' + [T_Q] > 'Ų́'
-'ı' + [T_Q] > 'ı́'
-'I' + [T_Q] > 'Í'
-'ą' + [T_Q] > 'ą́'
-'e' + [T_Q] > 'é'
-'ı̨' + [T_Q] > 'ı̨́'
-'Ą' + [T_Q] > 'Ą́'
-'u' + [T_Q] > 'ú'
-'ę' + [T_Q] > 'ę́'
-'A' + [T_Q] > 'Á'
-'O' + [T_Q] > 'Ó'
-'Ę' + [T_Q] > 'Ę́'
-'E' + [T_Q] > 'É'
-'a' + [T_Q] > 'á'
-'o' + [T_Q] > 'ó'
-'ǫ' + [T_Q] > 'ǫ́'
-'Į' + [T_Q] > 'Į́'
 + [T_W] > 'w'
-+ [T_E_0] > 'é'
-+ [T_E_1] > 'ę'
-+ [T_E_2] > 'ę́'
++ [T_E_0] > 'é'
++ [T_E_1] > 'ę'
++ [T_E_2] > 'ę́'
++ [T_E_3] > 'e̲e̲'
 + [T_E] > 'e'
 + [T_R] > 'r'
 + [T_T] > 't'
 + [T_Y] > 'y'
-+ [T_U_0] > 'ú'
-+ [T_U_1] > 'ų'
-+ [T_U_2] > 'ų́'
++ [T_U_0] > 'ú'
++ [T_U_1] > 'ų'
++ [T_U_2] > 'ų́'
 + [T_U] > 'u'
-+ [T_I_0] > 'ı́'
++ [T_I_0] > 'í'
 + [T_I_1] > 'ı̨'
-+ [T_I_2] > 'ı̨́'
++ [T_I_2] > 'ı̨́'
 + [T_I] > 'ı'
-+ [T_O_0] > 'ó'
-+ [T_O_1] > 'ǫ'
-+ [T_O_2] > 'ǫ́'
++ [T_O_0] > 'ó'
++ [T_O_1] > 'ǫ'
++ [T_O_2] > 'ǫ́'
 + [T_O] > 'o'
 + [T_P] > 'ł'
-+ [T_A_0] > 'á'
-+ [T_A_1] > 'ą'
-+ [T_A_2] > 'ą́'
++ [T_A_0] > 'á'
++ [T_A_1] > 'ą'
++ [T_A_2] > 'ą́'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
-'U' + [T_F] > 'Ų'
-'ı' + [T_F] > 'ı̨'
-'I' + [T_F] > 'Į'
-'e' + [T_F] > 'ę'
-'Í' + [T_F] > 'Į́'
-'ú' + [T_F] > 'ų́'
-'ó' + [T_F] > 'ǫ́'
-'Ó' + [T_F] > 'Ǫ́'
-'Ú' + [T_F] > 'Ų́'
-'u' + [T_F] > 'ų'
-'á' + [T_F] > 'ą́'
-'ı́' + [T_F] > 'ı̨́'
-'Á' + [T_F] > 'Ą́'
-'A' + [T_F] > 'Ą'
-'O' + [T_F] > 'Ǫ'
-'é' + [T_F] > 'ę́'
-'É' + [T_F] > 'Ę́'
-'E' + [T_F] > 'Ę'
-'a' + [T_F] > 'ą'
-'o' + [T_F] > 'ǫ'
 + [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'j'
@@ -176,8 +128,113 @@ store(&LAYOUTFILE) "fv_dene_zhatie.keyman-touch-layout"
 + [T_C] > 'c'
 + [T_V] > 'ɂ'
 + [T_B] > 'b'
++ [T_N_0] > 'ṉ'
 + [T_N] > 'n'
 + [T_M] > 'm'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
+c --- BEGIN DESKTOP LAYOUT ---
+
+c original punctuation
++ [RALT K_BKQUOTE] > '`'
++ [SHIFT RALT K_BKQUOTE] > '~'
+
++ [RALT K_EQUAL] > '='
++ [SHIFT RALT K_EQUAL] > '+'
+
++ [RALT K_COLON] > ';'
++ [SHIFT RALT K_COLON] > ':'
+
++ [RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '?'
+
++ [RALT K_BKSLASH ] > '\'
++ [SHIFT RALT K_BKSLASH] > '|'
+
++ [RALT K_LBRKT] > '['
++ [SHIFT RALT K_LBRKT] > '{'
+
++ [RALT K_RBRKT] > ']'
++ [SHIFT RALT K_RBRKT] > '}'
+
+
+c Guillemets
++ [SHIFT RALT K_0] > '›'
++ [SHIFT RALT K_9] > '‹'
++ [RALT K_0] > '»'
++ [RALT K_9] > '«'
+
+c Quotes
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_BKQUOTE] > '~'
++ [K_QUOTE] > "'"
+
+c Numbers
++ [K_1] > '1'
++ [SHIFT K_1] > '!'
++ [K_2] > '2'
++ [SHIFT K_2] > '@'
++ [K_3] > '3'
++ [SHIFT K_3] > '#'
++ [K_4] > '4'
++ [SHIFT K_4] > '$'
++ [K_5] > '5'
++ [SHIFT K_5] > '%'
++ [K_6] > '6'
++ [SHIFT K_6] > '^'
++ [K_7] > '7'
++ [SHIFT K_7] > '&'
++ [K_8] > '8'
++ [SHIFT K_8] > '*'
++ [K_9] > '9'
++ [SHIFT K_9] > '('
++ [K_0] > '0'
++ [SHIFT K_0] > ')'
+
+c letter 'I'
++ [RALT K_I] > 'i'
++ [SHIFT RALT K_I] > 'I'
+
+c language
++ [K_BKQUOTE] > U+0301
+
++ [K_EQUAL] > 'ṉ'
++ [SHIFT K_EQUAL] > 'Ṉ'
+
++ [K_COLON] > 'ł'
++ [SHIFT K_COLON] > 'Ł'  
+
++ [K_SLASH] > 'ɂ'
++ [SHIFT K_SLASH] > 'ʔ'
+
++ [K_I] > 'ı'
++ [SHIFT K_I] > 'I'
+
++ [RALT K_E] > 'e̲e̲'
++ [SHIFT RALT K_E] > 'E̲E̲'
+
++ [K_LBRKT] > U+0328
+
++ [K_RBRKT] > U+0328 U+0301
+
+c --- stores and rules ---
+store(&CasedKeys) [K_A] [K_I] [K_E] [K_COLON] [K_SLASH] [K_EQUAL]
+store(AboveAccents) [K_BKQUOTE]
+store(BelowAccents) [K_LBRKT]
+store(HasAcuOgo) 'ą́ę́ı̨́ǫ́ų́Ą́Ę́Į́Ǫ́Ų́'
+store(AllAccents) [K_BKQUOTE] [K_LBRKT] [K_RBRKT]
+store(NonLetters) '1234567890-=[];,./`~!@#$%^&*()+{}|:"<>?''“”‹›«»' "'"  c preventing accents on non-letters
+
+c --- stacking prevention ---
+any(HasAcute) + any(AboveAccents) > context beep
+any(HasAcute) + any(AcuteOgonek) > context beep
+U+0301 + any(AboveAccents) > context beep
+U+0301 + any(AcuteOgonek) > context beep
+any(HasOgonek) + any(BelowAccents) > context beep
+any(HasOgonek) + any(AcuteOgonek) > context beep
+U+0328 + any(BelowAccents) > context beep
+U+0328 + any(AcuteOgonek) > context beep
+any(NonLetters) + any(AllAccents) > context beep
+any(HasAcuOgo) + any(AllAccents) > context beep
