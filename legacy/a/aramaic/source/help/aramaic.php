@@ -12,8 +12,8 @@ href='http://www.BethMardutho.org/'>Beth Mardutho: The Syriac Institute</a>.</p>
 
   Authors:     Tavultesoft Pty Ltd
 */
-  $pagename = 'Syriac/Aramaic Keyboard Help';
-  $pagetitle = 'Syriac/Aramaic Keyboard Help';
+  $pagename = 'Syriac/Aramaic (deprecated) Keyboard Help';
+  $pagetitle = 'Syriac/Aramaic (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <style type="text/css">

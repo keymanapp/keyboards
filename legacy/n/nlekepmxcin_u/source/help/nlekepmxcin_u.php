@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "Nle'kepmxcin Unicode Keyboard Help";
-  $pagetitle = "Nle'kepmxcin Unicode Keyboard Help";
+  $pagename = "Nle'kepmxcin Unicode (deprecated) Keyboard Help";
+  $pagetitle = "Nle'kepmxcin Unicode (deprecated) Keyboard Help";
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

@@ -6,11 +6,11 @@
 SHLVL=0
 
 #
-# In this script we update the git repo and copy the keyboards over, 
+# In this script we update the git repo and copy the keyboards over,
 # for all keyboards in .cache/upload. So this should be run after ci.sh.
 #
 # The only command line parameter is -f. This should only be used if you
-# want to update all the keyboards in the s.keyman.com repo, even if they 
+# want to update all the keyboards in the s.keyman.com repo, even if they
 # already exist. This could possibly be needed if a severe compiler bug is
 # found, but rarely otherwise. Note that this would only update the file on
 # s.keyman.com, and user devices would not receive the updated file if they
@@ -69,7 +69,7 @@ function upload_keyboard {
     if [[ "$base_version" == '*' ]]; then
       return 0
     fi
-    
+
     local srcpath="$CI_CACHE/upload/$keyboard/$base_version/"
     local srcfile="$srcpath/$keyboard.js"
     local dstpath="$S_KEYMAN_COM/keyboard/$keyboard/$base_version/"
@@ -83,7 +83,7 @@ function upload_keyboard {
       fi
     fi
   done
-  
+
   return 0
 }
 
@@ -94,10 +94,29 @@ function upload_keyboards {
     if [[ "$base_keyboardname" == '*' ]]; then
       return 0
     fi
-      
+
     upload_keyboard $base_keyboardname || return 1
   done
-  
+
+  return 0
+}
+
+#
+# Upload fonts
+#
+
+function upload_fonts {
+  local fontname
+  for fontname in "$KEYBOARDROOT/release/shared/fonts/"*/* ; do
+    local base_fontname=$(basename "$fontname")
+    if [[ "$base_fontname" == '*' ]]; then
+      return 0
+    fi
+
+    echo "Uploading $base_fontname"
+    cp -f "$fontname" "$S_KEYMAN_COM/font/deploy/$base_fontname"
+  done
+
   return 0
 }
 
@@ -106,18 +125,45 @@ function upload_keyboards {
 #
 
 function commit_and_push {
-  echo "Committing and pushing updated keyboards (if any)"
-  
+  echo "Committing and pushing updated keyboards and fonts (if any)"
+
   pushd $S_KEYMAN_COM
   git config user.name "Keyman Build Server"
   git config user.email "keyman-server@users.noreply.github.com"
-  git add keyboard || return 1
-  git commit -m "Keyboard deployment (automatic)" || return 1
-  git push origin master || return 1
-  popd
-  
+
+  local uuid=
+  if [[ -z ${BUILD_NUMBER+x} ]]; then
+    uuid=$(uuidgen)
+  else
+    uuid=TC-$BUILD_NUMBER
+  fi
+
+  local branch=auto/keyboards/upload/$uuid
+
+  git add keyboard font/deploy || return 1
+  git diff --cached --no-ext-diff --quiet --exit-code && {
+    # if no changes then don't do anything.
+    echo "No changes to commit"
+    popd
+    return 0
+  }
+  echo "changes added to cache...>>>"
+
+  echo "creating new branch '$branch'"
+  git switch -c $branch
+  echo "committed keyboards and fonts to '$branch'"
+  git commit -m "auto: Keyboard and font deployment" || return 1
+  git push origin $branch || return 1
   echo "Push to s.keyman.com complete"
-  
+
+  hub pull-request -f --no-edit -l auto || return 1
+  echo "PR created"
+
+  git switch master || return 1
+  echo "switched back to master"
+
+  popd
+
   return 0
 }
 
@@ -132,8 +178,6 @@ git pull origin master || return 1
 popd
 
 upload_keyboards || exit 1
-if [ $keyboards_to_push == 1 ]; then
-  commit_and_push || exit 1
-else
-  echo No changes to commit
-fi
+upload_fonts || exit 1
+commit_and_push || exit 1
+

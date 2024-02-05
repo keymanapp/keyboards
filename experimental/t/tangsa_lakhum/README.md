@@ -1,12 +1,10 @@
 Tangsa Lukhum keyboard
 ==============
 
-Version 1.1
-
 Description
 -----------
 
-Tangsa Lukhum generated from template
+Experimental keyboard for Tangsa language using Tangsa Lakhum script.
 
 Links
 -----

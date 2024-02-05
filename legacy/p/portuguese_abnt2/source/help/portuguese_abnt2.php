@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Brazilian Portuguese (ABNT2) Keyboard Help';
-  $pagetitle = 'Brazilian Portuguese (ABNT2) Keyboard Help';
+  $pagename = 'Brazilian Portuguese (ABNT2) (deprecated) Keyboard Help';
+  $pagetitle = 'Brazilian Portuguese (ABNT2) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

@@ -5,8 +5,6 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using N'Ko (SIL)</h1>
-
 <p>
     Keyboard for all languages using the N'Ko script using a standardized layout.
 </p>

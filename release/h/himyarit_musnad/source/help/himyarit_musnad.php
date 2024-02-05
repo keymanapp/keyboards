@@ -11,8 +11,6 @@ or “Himyarit” script by different communities.
 The keyboard requires a font with the Musnad letters that is compatible with Unicode 5.2 encoding of Musnad.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
@@ -22,8 +20,8 @@ The keyboard requires a font with the Musnad letters that is compatible with Uni
 <p>The mobile keyboard is identical to the desktop keyboard and all letters are available without the need for shifting.</p>
 
 <div id='osk-phone' data-states='default'>
-
-
-<p>© 2022 - 2023 Riyadh Alfareh</p>
-
 </div>
+
+<p>© Riyadh Alfareh</p>
+
+

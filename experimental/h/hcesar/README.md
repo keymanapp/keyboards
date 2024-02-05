@@ -1,9 +1,7 @@
-hcesar keyboard
+Hcesar (portugal) keyboard
 ==============
 
-© 2022 SIL International
-
-Version 1.0
+© 2022-2023 SIL International
 
 Description
 -----------
@@ -15,7 +13,7 @@ commonly used keys in the middle of the layout.
 
 Links
 -----
-Contact: <steve_white@sil.org>
+https://keyman.com/keyboards/hcesar
 
 Supported Platforms
 -------------------

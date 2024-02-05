@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Vietnamese Keyboard Help';
-  $pagetitle = 'Vietnamese Keyboard Help';
+  $pagename = 'Vietnamese (deprecated) Keyboard Help';
+  $pagetitle = 'Vietnamese (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 
