@@ -189,6 +189,11 @@ c --- original punctuation ---
 + [RALT K_QUOTE] > U+0027
 + [RALT SHIFT K_QUOTE] > U+0022
 
+c --- preventing latin characters from being typed ---
+
+store(nul) "qudfgjzvbQWERTYUIOPASDFGHJKLZXCVBNM"
++ any(nul) > nul
+
 
 c --- START OF TOUCH LAYOUT RULES ---
 
