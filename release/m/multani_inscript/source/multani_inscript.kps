@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,16 +18,10 @@
   <Info>
     <Name URL="">Multani Inscript</Name>
     <Version URL=""></Version>
-    <Copyright URL="">©2022 Joshua Wong</Copyright>
+    <Copyright URL="">© 2022-2023 Joshua Wong</Copyright>
     <Author URL="">Joshua Wong</Author>
   </Info>
   <Files>
-    <File>
-      <Name>multani_inscript.ico</Name>
-      <Description>File multani_inscript.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
     <File>
       <Name>..\build\multani_inscript.js</Name>
       <Description>File multani_inscript.js</Description>
@@ -45,12 +39,6 @@
       <Description>Keyboard Multani Inscript</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>NotoSansMultani-Regular.ttf</Name>
-      <Description>Font Noto Sans Multani Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>multani_desktopdefault.png</Name>
@@ -88,14 +76,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Mult\NotoSansMultani-Regular.ttf</Name>
+      <Description>Font Noto Sans Multani Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Mult\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Multani Inscript</Name>
       <ID>multani_inscript</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>NotoSansMultani-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansMultani-Regular.ttf</DisplayFont>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Mult\NotoSansMultani-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Mult\NotoSansMultani-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="skr-Mult">Saraiki (Multani)</Language>
       </Languages>

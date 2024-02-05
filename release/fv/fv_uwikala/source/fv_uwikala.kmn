@@ -1,9 +1,9 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.2.2'
+store(&KEYBOARDVERSION) '9.3'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "hei"
 store(&COPYRIGHT) '© 2008-2023 FirstVoices, SIL International. Portions © 2006 Chris Harvey'
-store(&NAME) "'Uwik̓ala"
+store(&NAME) "’Wuìk̓ala"
 store(&BITMAP) 'fv_uwikala.ico'
 store(&VISUALKEYBOARD) 'fv_uwikala.kvks'
 store(&KMW_HELPFILE) 'fv_uwikala_help.htm'
@@ -17,6 +17,18 @@ group(main) using keys
 c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+any(needsgrave) + [T_O] > index(hasgrave,1)
+any(needsgrave) + [SHIFT T_O] > index(hasgrave,1)
+
+store(NeedsComApos) 'acəhiklmnpqtuwyACƏHIKLMNPQTUWXY'
+store(ComAposKey) [T_R] [SHIFT T_R]
+any(NeedsComApos) + any(ComAposKey) > index(NeedsComApos,1) U+0313
+
+'ə' + [T_O] > 'ə̀'
+'Ə' + [T_O] > 'Ə̀'
+'ə' + [SHIFT T_O] > 'ə̀'
+'Ə' + [SHIFT T_O] > 'Ə̀'
 
 + [SHIFT T_Q_0] > '’Q' layer('default')
 + [SHIFT T_Q_1] > 'Q̓' layer('default')
@@ -132,43 +144,8 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_SCHWA] > 'Ə' layer('default')
 + [SHIFT T_SCHWA_0] > 'Ə̀' layer('default')
 
-'p' + [T_R] > 'p̓'
-'U' + [T_R] > 'U̓'
-'c' + [T_R] > 'c̓'
-'H' + [T_R] > 'H̓'
-'q' + [T_R] > 'q̓'
-'I' + [T_R] > 'I̓'
-'W' + [T_R] > 'W̓'
-'K' + [T_R] > 'K̓'
-'Y' + [T_R] > 'Y̓'
-'t' + [T_R] > 't̓'
-'L' + [T_R] > 'L̓'
-'u' + [T_R] > 'u̓'
-'h' + [T_R] > 'h̓'
-'M' + [T_R] > 'M̓'
-'i' + [T_R] > 'i̓'
-'N' + [T_R] > 'N̓'
-'w' + [T_R] > 'w̓'
-'A' + [T_R] > 'A̓'
-'k' + [T_R] > 'k̓'
-'P' + [T_R] > 'P̓'
-'y' + [T_R] > 'y̓'
-'C' + [T_R] > 'C̓'
-'Q' + [T_R] > 'Q̓'
-'l' + [T_R] > 'l̓'
-'m' + [T_R] > 'm̓'
-'n' + [T_R] > 'n̓'
-'a' + [T_R] > 'a̓'
-'T' + [T_R] > 'T̓'
 
-'U' + [T_O] > 'Ù'
-'I' + [T_O] > 'Ì'
-'u' + [T_O] > 'ù'
-'i' + [T_O] > 'ì'
-'A' + [T_O] > 'À'
-'a' + [T_O] > 'à'
-'ə' + [T_O] > 'ə̀'
-'Ə' + [T_O] > 'Ə̀'
+
 c --- END OF TOUCH LAYOUT RULES ---
 
 
@@ -227,10 +204,12 @@ c accents that can combine to form a single character should do so
 store(needscaron) "gGaA"
 store(hascaron) "ǧǦǎǍ"
 any(needscaron) + ";" > index(hascaron,1)
+any(hascaron) + [K_BKSP] > index(needscaron,1) c backspace only accent
 
 store(needsgrave) "AEIOUaeiou"
 store(hasgrave) "ÀÈÌÒÙàèìòù"
 any(needsgrave) + "[" > index(hasgrave,1)
+any(hasgrave) + [K_BKSP] > index(needsgrave,1) c backspace only accent
 
 c add accents on any simple alphabetic char with no existing accent, not on numbers/punctuation
 store(alphletters) "qwertyuiopəasdfghjklzxcvbnmQWERTYUIOPƏASDFGHJKLZXCVBNM"
@@ -254,4 +233,3 @@ group(normalize)
 
 
 group(x) using keys
-

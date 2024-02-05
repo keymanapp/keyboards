@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.277.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.206.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -9,15 +9,16 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.1</Version>
+    <Version URL=""></Version>
     <Name URL="">Obolo Qwerty</Name>
-    <Copyright URL="">© 2020 - 2021 Rogers Katelem Edeh</Copyright>
+    <Copyright URL="">© 2020 - 2023 Rogers Katelem Edeh</Copyright>
     <Author URL="">Rogers Katelem Edeh</Author>
   </Info>
   <Files>
@@ -38,12 +39,6 @@
       <Description>File obolo_qwerty.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>notosans_regular.ttf</Name>
-      <Description>Font Noto Sans Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -111,13 +106,38 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Bold.ttf</Name>
+      <Description>Font Noto Sans Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-BoldItalic.ttf</Name>
+      <Description>Font Noto Sans Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Italic.ttf</Name>
+      <Description>Font Noto Sans Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</Name>
+      <Description>Font Noto Sans Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Obolo Qwerty</Name>
       <ID>obolo_qwerty</ID>
-      <Version>1.1</Version>
-      <OSKFont>notosans_regular.ttf</OSKFont>
+      <Version>1.1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ann-Latn">Obolo (Andoni)</Language>
       </Languages>
