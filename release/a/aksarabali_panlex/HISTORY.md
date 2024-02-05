@@ -1,5 +1,9 @@
-Aksara Bali Unicode Keyboard Change History
+Aksara Bali Keyboard Change History
 ===========================================
+
+1.1.2 (30 Nov 2023)
+--------------------
+* Use shared font instead of local
 
 1.1.1 (30 July 2020)
 --------------------

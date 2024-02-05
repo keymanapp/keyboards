@@ -14,8 +14,8 @@ require_once('header.php');
 
 <body>
 <div xml-lang="en">
-<h1>Combinations for Cameroon QWERTY based on physical en-uk keyboard</h1>
-<h2>Close Punctuation</h2>
+<h1 class="color">Combinations for Cameroon QWERTY based on physical en-uk keyboard</h1>
+<h2 class="color">Close Punctuation</h2>
 <table>
 <tr>
 <td>
@@ -88,7 +88,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Connector Punctuation</h2>
+<h2 class="color">Connector Punctuation</h2>
 <table>
 <tr>
 <td>
@@ -105,7 +105,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Currency Symbol</h2>
+<h2 class="color">Currency Symbol</h2>
 <table>
 <tr>
 <td>
@@ -150,7 +150,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Dash Punctuation</h2>
+<h2 class="color">Dash Punctuation</h2>
 <table>
 <tr>
 <td>
@@ -223,7 +223,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Deadkey</h2>
+<h2 class="color">Deadkey</h2>
 <table>
 <tr>
 <td>
@@ -248,7 +248,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Decimal Number</h2>
+<h2 class="color">Decimal Number</h2>
 <table>
 <tr>
 <td>
@@ -391,7 +391,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Diacritic</h2>
+<h2 class="color">Diacritic</h2>
 <table>
 <tr>
 <td>
@@ -730,7 +730,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Final Punctuation</h2>
+<h2 class="color">Final Punctuation</h2>
 <table>
 <tr>
 <td>
@@ -845,7 +845,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Initial Punctuation</h2>
+<h2 class="color">Initial Punctuation</h2>
 <table>
 <tr>
 <td>
@@ -960,7 +960,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Lowercase Letter</h2>
+<h2 class="color">Lowercase Letter</h2>
 <table>
 <tr>
 <td>
@@ -1747,7 +1747,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Math Symbol</h2>
+<h2 class="color">Math Symbol</h2>
 <table>
 <tr>
 <td>
@@ -2002,7 +2002,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Modifier Letter</h2>
+<h2 class="color">Modifier Letter</h2>
 <table>
 <tr>
 <td>
@@ -2117,7 +2117,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Modifier Symbol</h2>
+<h2 class="color">Modifier Symbol</h2>
 <table>
 <tr>
 <td>
@@ -2176,7 +2176,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Open Punctuation</h2>
+<h2 class="color">Open Punctuation</h2>
 <table>
 <tr>
 <td>
@@ -2249,7 +2249,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Other Number</h2>
+<h2 class="color">Other Number</h2>
 <table>
 <tr>
 <td>
@@ -2336,7 +2336,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Other Punctuation</h2>
+<h2 class="color">Other Punctuation</h2>
 <table>
 <tr>
 <td>
@@ -2703,7 +2703,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Other Symbol</h2>
+<h2 class="color">Other Symbol</h2>
 <table>
 <tr>
 <td>
@@ -2818,7 +2818,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Space Separator</h2>
+<h2 class="color">Space Separator</h2>
 <table>
 <tr>
 <td>
@@ -2877,7 +2877,7 @@ require_once('header.php');
 </td>
 </tr>
 </table>
-<h2>Uppercase Letter</h2>
+<h2 class="color">Uppercase Letter</h2>
 <table>
 <tr>
 <td>
