@@ -100,6 +100,7 @@ store(LanguageKeys) [K_RBRKT] [K_LBRKT] [K_BKSLASH]
 store(LanguageOutputs) U+0302 U+0304 U+030C c circumflex macron caron
 store(NeedsCaron) 'csCS'
 store(Vowels) 'aeioAEIO'
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
 
 any(Vowels) + any(CircKeys) > index(HasCirc,1)
 any(Vowels) + any(MacKeys) > index(HasMacron,1)
@@ -108,6 +109,7 @@ any(HasCaron) + any(LanguageKeys) > context beep
 any(HasCirc) + any(LanguageKeys) > context beep
 any(HasMacron) + any(LanguageKeys) > context beep
 any(LanguageOutputs) + any(LanguageKeys) > context beep
+any(NonLetters) + any(LanguageKeys) > context beep
 
 any(HasCirc) + [K_BKSP] > index(Vowels,1)
 any(HasMacron) + [K_BKSP] > index(Vowels,1)
