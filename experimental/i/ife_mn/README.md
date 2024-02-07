@@ -1,11 +1,11 @@
-tbb6u1-ife keyboard
+ife_mn keyboard
 ==============
 
 Version 1.0
 
 Description
 -----------
-tbb6u1-ife upgraded to modern Keyman (10+).
+ife_mn upgraded to modern Keyman (10+).
 
 
 
