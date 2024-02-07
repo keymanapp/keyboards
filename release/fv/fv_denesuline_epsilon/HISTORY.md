@@ -1,5 +1,9 @@
 Dɛnɛsųłiné Change History
 ============================
+10.0.1 (7 Feb 2024)
+------------------
+* Changed BCP 47 code
+
 10.0 (7 Dec 2023)
 -------------------
 * Swapped mobile keyboard between fv_denesuline_epsilon and fv_denesuline so they are in correct files

@@ -1,5 +1,10 @@
 Dënesųłıné Change History
 ============================
+10.01 (7 Feb 2024)
+-----------------
+* Corrected error in normalisation
+* Changed BCP 47 code
+
 10.0 (8 Dec 2023)
 -----------------
 * Swapped mobile keyboard between fv_denesuline_epsilon and fv_denesuline so they are in correct files

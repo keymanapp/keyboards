@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '10.0'
+store(&KEYBOARDVERSION) '10.0.1'
 store(&TARGETS) "mobile tablet"
 c store(&ETHNOLOGUECODE) "chp"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Dënesųłıné'
 
 begin Unicode > use(main)
@@ -22,8 +22,6 @@ store(&LAYOUTFILE) "fv_denesuline.keyman-touch-layout"
 'ı̨' + [SHIFT T_Q] > 'ı̨́'
 'Ë' + [SHIFT T_Q] > 'Ë́'
 'Ę̈' + [SHIFT T_Q] > 'Ę̈́'
-'I' + [SHIFT T_Q] > 'Í'
-'Į' + [SHIFT T_Q] > 'Į́'
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E_1] > 'Ę' layer('default')
@@ -57,8 +55,6 @@ store(&LAYOUTFILE) "fv_denesuline.keyman-touch-layout"
 'ı́' + [SHIFT T_F] > 'ı̨́'
 'Ë' + [SHIFT T_F] > 'Ę̈́'
 'Ë́' + [SHIFT T_F] > 'Ę̈́'
-'I' + [SHIFT T_F] > 'Į'
-'Í' + [SHIFT T_F] > 'Į́'
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'J' layer('default')
@@ -83,8 +79,6 @@ store(&LAYOUTFILE) "fv_denesuline.keyman-touch-layout"
 'ı̨' + [T_Q] > 'ı̨́'
 'Ę̈' + [T_Q] > 'Ę̈́'
 'Ë' + [T_Q] > 'Ë́'
-'I' + [T_Q] > 'Í'
-'Į' + [T_Q] > 'Į́'
 + [T_W] > 'w'
 + [T_E_0] > 'é'
 + [T_E_1] > 'ę'
@@ -97,7 +91,7 @@ store(&LAYOUTFILE) "fv_denesuline.keyman-touch-layout"
 + [T_U_1] > 'ų'
 + [T_U_2] > 'ų́'
 + [T_U] > 'u'
-+ [T_I_0] > 'í'
++ [T_I_0] > 'ı́'
 + [T_I_1] > 'ı̨'
 + [T_I_2] > 'ı̨́'
 + [T_I] > 'ı'
@@ -118,8 +112,6 @@ store(&LAYOUTFILE) "fv_denesuline.keyman-touch-layout"
 'ı́' + [T_F] > 'ı̨́'
 'Ë' + [T_F] > 'Ę̈'
 'Ë́' + [T_F] > 'Ę̈́'
-'I' + [T_F] > 'Į'
-'Í' + [T_F] > 'Į́'
 + [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'j'
@@ -139,25 +131,20 @@ store(&LAYOUTFILE) "fv_denesuline.keyman-touch-layout"
 + [T_M] > 'n'
 + [T_COMMA] > 'm'
 
-store(Vowels) 'aeouAEOU'
-store(DotlessI) 'ıI'
-store(DotlessIAcu) 'íÍ'
+store(Vowels) 'aeouAEOUI'
 store(DiarE) 'ëË'
 store(Acute) [T_Q] [SHIFT T_Q]
 store(Ogonek) [T_F] [SHIFT T_F]
-store(HasAcute) 'áéóúÁÉÓÚ'
-store(HasOgonek) 'ąęǫųĄĘǪŲ'
+store(HasAcute) 'áéóúÁÉÓÚÍ'
+store(HasOgonek) 'ąęǫųĄĘǪŲĮ'
 store(HasOgonekE) 'ęĘ'
 
 any(Vowels) + any(Acute) > index(HasAcute,1)
-any(DotlessI) + any(Acute) > index(DotlessIAcu,1)
 any(DiarE) + any(Acute) > index(DiarE,1) U+0301
 any(HasOgonek) + any(Acute) > index(HasOgonek,1) U+0301
 
 any(Vowels) + any(Ogonek) > index(HasOgonek,1)
-any(DotlessI) + any(Ogonek) > index(DotlessI,1) U+0328
 any(DiarE) + any(Ogonek) > index(HasOgonekE,1) U+0308
 any(HasAcute) + any(Ogonek) > index(HasOgonek,1) U+0301
-any(DotlessIAcu) + any(Ogonek) > index(DotlessI,1) U+0328 U+0301
 
 c --- END OF TOUCH LAYOUT RULES ---
