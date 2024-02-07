@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.4.1'
+store(&KEYBOARDVERSION) '9.5'
 c store(&ETHNOLOGUECODE) "hei"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
-store(&NAME) 'Haiɫzaqvla'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&NAME) 'Háiɫzaqvḷa'
 store(&TARGETS) 'any'
 
 store(&LAYOUTFILE) 'fv_hailzaqvla.keyman-touch-layout'
@@ -187,6 +187,10 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_M_3] > U+1E43 U+0313
 + [T_M] > 'm'
 + [T_GLOT] > U+0294
+
+store(NeedsComApos) 'acehiklḷmṃnṇpqtuwyƛACEHIKLḶMṂNṆPQTUWYƛ'
+store(ComApos) [T_COMMA]
+any(NeedsComApos) + any(ComApos) > index(NeedsComApos,1) U+0313
 
 c --- END OF TOUCH LAYOUT RULES ---
 
