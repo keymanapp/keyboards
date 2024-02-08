@@ -46,7 +46,8 @@ This keyboard is designed for the <b>Nsilxcən</b> language of the BC Interior r
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>q q̓</td><td  align='center'>w w̓</td><td  align='center'>ə ə́ e é</td><td  align='center'>r r̓</td><td  align='center'>t t̓</td><td  align='center'>y y̓</td><td  align='center'>u ú o ó</td><td  align='center'>i í</td><td  align='center'>ƛ̓</td><td  align='center'>p p̓</td></tr>
 <tr ><td  align='center'>a á</td><td  align='center'>s š</td><td  align='center'>ʔ</td><th  align='center'>´</th><td  align='center'>ɣ ɣ̓</td><td  align='center'>h ḥ</td><td  align='center'>ʷ</td><td  align='center'>k k̓</td><td  align='center'>l l̓</td><td  align='center'>ɬ</td></tr>
-<tr ><td >&nbsp;</td><td  align='center'>ˇ</td><td  align='center'>x x̌ x̣</td><td  align='center'>c c̓ č</td><th  align='center'>’</th><td  align='center'>ʕ ʕ̓</td><td  align='center'>n n̓</td><td  align='center'>m m̓</td><td  colspan='2'>&nbsp;</td></tr>
+<tr ><td >&nbsp;</td><td  align='center'>ˇ</td><td  align='center'>x x̌ x̣</td><td  align='center'>c c̓ č č̓</td><th  align='center'>’</th><td  align='center'>ʕ ʕ̓</td><td  align='center'>n n̓</td><td  align='center'>m m̓</td><td  colspan='2'>&nbsp;</td></tr>
+<tr><td>123</td><td>🌐</td><td class="keyboard-layer__special">·</td><td colspan="4">space</td><td class="keyboard-layer__special">. ! ? ; : ' " ` ~</td><td>⏎</td></tr>
 </table>
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
