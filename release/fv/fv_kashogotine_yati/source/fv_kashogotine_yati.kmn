@@ -153,18 +153,20 @@ c --- BEGIN DESKTOP LAYOUT ---
 
 c --- language keys ---
 
-+ [K_SLASH] > U+0301 c combining acute
-+ [K_LBRKT] > U+0328 c combining ogonek
-+ [K_RBRKT] > U+0328 U+0301 c combining ogonek + combining acute
++ [K_LBRKT] > U+0301 c combining acute
++ [K_RBRKT] > U+0328 c combining ogonek
++ [K_BKSLASH] > U+0328 U+0301 c combining ogonek + combining acute
 + [K_COLON] > 'ł'
 + [SHIFT K_COLON] > 'Ł'
 + [K_3] > 'ə'
 + [SHIFT K_3] > 'Ǝ'
 + [K_I] > 'ı'
++ [K_SLASH] > 'ɂ'
++ [SHIFT K_SLASH] > 'Ɂ'
 
 c --- original punctuation ---
 
-+ [RALT K_SLASH] > '/'
++ [RALT K_BKSLASH] > '\'
 + [RALT K_LBRKT] > '['
 + [RALT K_RBRKT] > ']'
 + [RALT K_COLON] > ';'
@@ -172,6 +174,8 @@ c --- original punctuation ---
 + [RALT K_3] > '3'
 + [RALT SHIFT K_3] > '#'
 + [RALT K_I] > 'i'
++ [RALT K_SLASH] > '/'
++ [RALT SHIFT K_SLASH] > '?'
 
 c --- ordering rules for non-standard vowels ---
 
@@ -186,6 +190,7 @@ c --- ordering rules for non-standard vowels ---
 'ı̨' + [K_RBRKT] > 'ı̨́'
 'ı̨' + [K_SLASH] > 'ı̨́'
 'ı̨́' + [K_RBRKT] > 'ı̨́'
+
 c --- stacking prevention ---
 
 store(AboveAccent) U+0301
