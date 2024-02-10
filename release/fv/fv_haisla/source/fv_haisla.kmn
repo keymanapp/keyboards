@@ -1,12 +1,12 @@
-c This keyboard is for the Haisla language and has been developed by FirstVoices and updated to suit their orthographic changes.
+﻿c This keyboard is for the Haisla language and has been developed by FirstVoices and updated to suit their orthographic changes.
 store(&VERSION) '10.0'
 store(&NAME) 'Haisla'
-store(&COPYRIGHT) '© FirstVoices 2020'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© FirstVoices 2020-2024'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'fv_haisla.kvks'
 store(&LAYOUTFILE) 'fv_haisla.keyman-touch-layout'
 store(&BITMAP) 'fv_haisla.ico'
+store(&KEYBOARDVERSION) '2.0'
 
 begin Unicode > use(main)
 store(basevowel) "aeiuAEIU"
@@ -14,7 +14,7 @@ store(ejective) "cklmnpqtwyCKLMNPQTWY"
 store(basekeysecond) "gxGX"
 
 group(main) using keys
-";" + any(ejective) > index(ejective,2) U+0343
+";" + any(ejective) > index(ejective,2) U+0313
 ";" + any(basevowel) > index(basevowel,2) U+0301
 "=" + any(basekeysecond) > index(basekeysecond,2) U+0304
 "=" + "l" > "ɫ"
@@ -22,7 +22,7 @@ group(main) using keys
 + [CTRL K_L] > "λ"
 "λ" + "-" > "ƛ"
 "ƛ" + "-" > "ƛ̓"
-"w" + "w" > "ʷ"
++ [ALT K_W] > "ʷ"
 + [K_QUOTE] > "’"
 
 + [T_gbar] > "ḡ"
