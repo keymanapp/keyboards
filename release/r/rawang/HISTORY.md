@@ -1,6 +1,12 @@
 Rawang Change History
 ====================
 
+1.7 (2024-02-17)
+----------------
+* Optimize touch layout. 
+* Add longpress keys
+* Add numeric layer
+
 1.6 (2021-03-10)
 ----------------
 * Added tablet layout
