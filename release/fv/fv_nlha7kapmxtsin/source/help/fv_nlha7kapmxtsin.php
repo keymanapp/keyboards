@@ -18,6 +18,18 @@ This keyboard is designed for the <b>Nlha7kapmxtsin</b> language of the BC Inter
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
+<h2><img src="fv_nlha7kapmxtsin_U_.png" alt="" height="198" width="514" border="0" /></h2>
+					<ul>
+						<li>The special characters of Nlha7kapmxtsin have been assigned to punctuation keys.</li>
+						<li>All accents are typed after the base character: á is typed a then Slash /</li>
+							<ul>
+								<li>To type the acute accent use the Slash Key — é is typed e then Slash / </li>
+								<li>To type the apostrophe accent use the Left Bracket Key [ — z̓ is typed z then Left Bracket [ </li>
+								<li>To type the low line accent use the Right Bracket Key ] — g̱ is typed g then Right Bracket ]</li>
+							</ul>
+						<li>The original values of the punctuation keys can be typed by holding down the Right-Alt or Option key. The Slash / is typed Right-Alt+Slash (Windows) Option+Slash (Mac).</li>
+					</ul>
+  </tr>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
@@ -34,5 +46,5 @@ This keyboard is designed for the <b>Nlha7kapmxtsin</b> language of the BC Inter
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift numeric'>
+<div id='osk' data-states='default shift'>
 </div>
