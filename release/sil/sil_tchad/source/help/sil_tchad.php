@@ -1,6 +1,6 @@
 <?php
-  $pagename = "Tchad keyboard";
-  $pagetitle = "Tchad keyboard layout";
+  $pagename = "Tchad Keyboard Help";
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   h1,h2,h3,p {font-family: Charis SIL;}
   p.footnote {font-family: Charis SIL;font-size: small;}

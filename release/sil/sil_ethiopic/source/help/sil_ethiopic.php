@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'SIL Ethiopic Help';
+  $pagename = 'SIL Ethiopic Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
     table { border-collapse:collapse; border-spacing:0; empty-cells:show }

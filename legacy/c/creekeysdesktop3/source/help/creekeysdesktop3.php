@@ -4,8 +4,8 @@
   Description: Cree Syllabic Unicode keyboard package for Eastern Cree.  Two layouts included, an easy to use 'Roman' keyboard with mnemonic key sequences for each syllabic character, and a 'Typewriter' keyboard using Alt and Shift key combinations.  Full documentation and two fonts included (different syllable shapes allow for dialect preference).
   Authors:     Bill Jancewicz
 */
-  $pagename = 'CreeKeysDesktop3 Keyboard Help';
-  $pagetitle = 'Cree Syllabics Unicode Keyboard Help';
+  $pagename = 'CreeKeysDesktop3 (deprecated) Keyboard Help';
+  $pagetitle = 'Cree Syllabics Unicode (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <style type="text/css">

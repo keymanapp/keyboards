@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.198.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Name URL="">Deseret</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 2008-2022 Samuel R Boylan Jr</Copyright>
+    <Copyright URL="">© 2008-2023 Samuel R Boylan Jr</Copyright>
   </Info>
   <Files>
     <File>
@@ -38,12 +38,6 @@
       <Description>Keyboard Deseret</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>NotoSansDeseret-Regular.ttf</Name>
-      <Description>Font Noto Sans Deseret Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>welcome\deseret_chart1.png</Name>
@@ -81,14 +75,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Dsrt\NotoSansDeseret-Regular.ttf</Name>
+      <Description>Font Noto Sans Deseret Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Dsrt\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Deseret</Name>
       <ID>deseret</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSansDeseret-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansDeseret-Regular.ttf</DisplayFont>
+      <Version>1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Dsrt\NotoSansDeseret-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Dsrt\NotoSansDeseret-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="en-Dsrt">English (Deseret)</Language>
         <Language ID="hop-Dsrt">Hopi (Deseret)</Language>
