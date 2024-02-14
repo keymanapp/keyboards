@@ -1,0 +1,176 @@
+﻿C sxava_esperanto generated from template at 2022-07-19 23:14:08
+C with name "Ŝava Esperanto"
+
+C Ĉi tiu klavarfasono estis kreita de Tomás Briones por faciligi
+C la skribado de esperantaj tekstoj per la ŝava alfabeto.
+
+store(&VERSION) '15.0'
+store(&NAME) 'Starlingŝava (Telefona)'
+store(&COPYRIGHT) '© Tomás Briones'
+store(&KEYBOARDVERSION) '1.0'
+store(&VISUALKEYBOARD) 'starling_sxava_eo_tel.kvks'
+store(&LAYOUTFILE) 'starling_sxava_eo_tel.keyman-touch-layout'
+store(&MNEMONICLAYOUT) '0' C mnemonic off
+store(&TARGETS) 'web mobile tablet'
+store(&MESSAGE) 'Saĝtelefona klavarfasono por skribi Esperanton starling-ŝave (inkludas pronopaĵojn de Pokrovskij, latinan kaj grekan alfabeton).'
+
+begin Unicode > use(main)
+group(main) using keys
+
++ [K_SPACE] > ' '
+
+C ŝavliteroj
+	+ [K_A] > '𐑨'
+	+ [K_B] > '𐑚'
+	+ [K_C] > '𐑔' 
+	+ [K_X] > '𐑗' C ĉo
+	+ [K_D] > '𐑛'
+	+ [K_E] > '𐑧'
+	+ [K_F] > '𐑓'
+	+ [K_G] > '𐑜'
+	+ [K_W] > '𐑡' C ĝo
+	+ [K_H] > '𐑣'
+	+ [K_I] > '𐑦'
+	+ [K_J] > '𐑢'
+	+ [K_K] > '𐑒'
+	+ [K_L] > '𐑤'
+	+ [K_M] > '𐑫'
+	+ [K_N] > '𐑵'
+	+ [K_O] > '𐑩'
+	+ [K_P] > '𐑐'
+	+ [K_R] > '𐑮'
+	+ [K_S] > '𐑕'
+	+ [K_Q] > '𐑖' C ŝo
+	+ [K_T] > '𐑑'
+	+ [K_U] > '𐑪'
+	+ [K_Y] > '𐑘' C ŭo
+	+ [K_V] > '𐑝'
+	+ [K_Z] > '𐑟'
+	+ [K_oE2] > '𐑙'
+
+	+ [CTRL K_A] > '𐑲' C aŭ
+	+ [CTRL K_E] > '𐑱' C eŭ
+	+ [CTRL K_I] > '𐑰' C j
+	+ [CTRL K_O] > '𐑳' C on
+	+ [CTRL K_H] > '𐑙' C ĥo
+	+ [CTRL K_J] > '𐑠' C ĵo
+
+C esperantlatinaj minuskloj
+	+ [SHIFT K_A] > 'a'
+	+ [SHIFT K_B] > 'b'
+	+ [SHIFT K_C] > 'c' 
+	+ [SHIFT K_X] > 'ĉ'
+	+ [SHIFT K_D] > 'd'
+	+ [SHIFT K_E] > 'e'
+	+ [SHIFT K_F] > 'f'
+	+ [SHIFT K_G] > 'g'
+	+ [SHIFT K_W] > 'ĝ'
+	+ [SHIFT K_H] > 'h'
+	+ [SHIFT K_I] > 'i'
+	+ [SHIFT K_J] > 'j'
+	+ [SHIFT K_K] > 'k'
+	+ [SHIFT K_L] > 'l'
+	+ [SHIFT K_M] > 'm'
+	+ [SHIFT K_N] > 'n'
+	+ [SHIFT K_O] > 'o'
+	+ [SHIFT K_P] > 'p'
+	+ [SHIFT K_R] > 'r'
+	+ [SHIFT K_S] > 's'
+	+ [SHIFT K_Q] > 'ŝ'
+	+ [SHIFT K_T] > 't'
+	+ [SHIFT K_U] > 'u'
+	+ [SHIFT K_Y] > 'ŭ'
+	+ [SHIFT K_V] > 'v'
+	+ [SHIFT K_Z] > 'z'
+	+ [SHIFT K_oE2] > 'ĥ'
+
+	+ [SHIFT CTRL K_H] > 'ĥ'
+	+ [SHIFT CTRL K_J] > 'ĵ'
+	+ [SHIFT CTRL K_Q] > 'q'
+	+ [SHIFT CTRL K_W] > 'w'
+	+ [SHIFT CTRL K_Y] > 'y'
+	+ [SHIFT CTRL K_X] > 'x'
+	+ [SHIFT CTRL K_C] > 'c'
+
+C esperantlatinaj majuskloj
+	+ [ALT K_A] > 'A'
+	+ [ALT K_B] > 'B'
+	+ [ALT K_C] > 'C' 
+	+ [ALT K_X] > 'Ĉ'
+	+ [ALT K_D] > 'D'
+	+ [ALT K_E] > 'E'
+	+ [ALT K_F] > 'F'
+	+ [ALT K_G] > 'G'
+	+ [ALT K_W] > 'Ĝ'
+	+ [ALT K_H] > 'H'
+	+ [ALT K_I] > 'I'
+	+ [ALT K_J] > 'J'
+	+ [ALT K_K] > 'K'
+	+ [ALT K_L] > 'L'
+	+ [ALT K_M] > 'M'
+	+ [ALT K_N] > 'N'
+	+ [ALT K_O] > 'O'
+	+ [ALT K_P] > 'P'
+	+ [ALT K_R] > 'R'
+	+ [ALT K_S] > 'S'
+	+ [ALT K_Q] > 'Ŝ'
+	+ [ALT K_T] > 'T'
+	+ [ALT K_U] > 'U'
+	+ [ALT K_Y] > 'Ŭ'
+	+ [ALT K_V] > 'V'
+	+ [ALT K_Z] > 'Z'
+	+ [ALT K_oE2] > 'Ĥ'
+
+	+ [ALT CTRL K_H] > 'Ĥ'
+	+ [ALT CTRL K_J] > 'Ĵ'
+	+ [ALT CTRL K_Q] > 'Q'
+	+ [ALT CTRL K_W] > 'W'
+	+ [ALT CTRL K_Y] > 'Y'
+	+ [ALT CTRL K_X] > 'X'
+	+ [ALT CTRL K_C] > 'C'
+
+c Simboloj
+	+ [K_0] > '0'
+	+ [K_9] > '9'
+	+ [K_8] > '8'
+	+ [K_7] > '7'
+	+ [K_6] > '6'
+	+ [K_5] > '5'
+	+ [K_4] > '4'
+	+ [K_3] > '3'
+	+ [K_2] > '2'
+	+ [K_1] > '1'
+	+ [SHIFT K_0] > ')'
+	+ [SHIFT K_9] > '('
+	+ [SHIFT K_8] > '*'
+	+ [SHIFT K_7] > '&'
+	+ [SHIFT K_6] > '^'
+	+ [SHIFT K_5] > '%'
+	+ [SHIFT K_4] > '$'
+	+ [SHIFT K_3] > '#'
+	+ [SHIFT K_2] > '@'
+	+ [SHIFT K_1] > '!'
+
+	+ [K_EQUAL] > '='
+	+ [K_HYPHEN] > '-' 
+	+ [K_BKQUOTE] > '`'	
+	+ [K_LBRKT] > '['
+	+ [K_RBRKT] > ']'
+	+ [K_COLON] > ';'
+	+ [K_PERIOD] > '.'
+	+ [K_COMMA] > ','
+	+ [K_BKSLASH] > U+005C
+	+ [K_QUOTE] > U+0027
+	+ [K_SLASH] > '·'
+
+	+ [SHIFT K_EQUAL] > '+'
+	+ [SHIFT K_HYPHEN] > '—'
+	+ [SHIFT K_BKQUOTE] > '~'
+	+ [SHIFT K_LBRKT] > '{'
+	+ [SHIFT K_RBRKT] > '}'
+	+ [SHIFT K_COLON] > ':'
+	+ [SHIFT K_PERIOD] > '>'
+	+ [SHIFT K_COMMA] > '<'
+	+ [SHIFT K_BKSLASH] > '|'
+	+ [SHIFT K_QUOTE] > U+0022
+	+ [SHIFT K_SLASH] > '?'

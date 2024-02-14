@@ -1,0 +1,91 @@
+Sub Malmontri()
+
+    Call Montri_Cxion
+    
+    Range("C:C,D:G").Select
+    Selection.EntireColumn.Hidden = True
+        
+    ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort.SortFields.Add _
+    Key:=Range("Tabla1[[#All],[N° sxava]]"), SortOn:=xlSortOnValues, _
+    Order:=xlAscending, _
+    DataOption:=xlSortNormal
+     
+    With ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+
+    End With
+End Sub
+
+
+Sub Montri()
+
+    Columns("A:I").Select
+    Selection.EntireColumn.Hidden = False
+
+End Sub
+
+
+Sub Starlingsxava()
+
+    Call Montri
+    
+    Range("B:B,D:G").Select
+    Selection.EntireColumn.Hidden = True
+    
+    Worksheets("Hoja1").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Range.AutoFilter _
+        Field:=9, _
+        Criteria1:="<>", _
+        Operator:=xlOr, _
+        Criteria2:="<>" & ""
+
+    ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort.SortFields.Add _
+    Key:=Range("Tabla1[[#All],[N° starlinga]]"), SortOn:=xlSortOnValues, _
+    Order:=xlAscending, _
+    DataOption:=xlSortNormal
+     
+    With ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+End Sub
+
+
+Sub Montri_Cxion()
+
+    Call Montri
+    
+    Dim ws As Worksheet
+    Dim sTable As String
+    Dim loTable As ListObject
+    sTable = "Tabla1"
+    Set ws = ActiveSheet
+    Set loTable = ws.ListObjects(sTable)
+    loTable.AutoFilter.ShowAllData
+
+    ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort.SortFields.Clear
+    ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort.SortFields.Add _
+        Key:=Range("Tabla1[[#All],[N° sxava]]"), _
+        SortOn:=xlSortOnValues, _
+        Order:=xlAscending, _
+        DataOption:=xlSortNormal
+        
+    With ActiveWorkbook.Worksheets("Hoja1").ListObjects("Tabla1").Sort
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+
+End Sub

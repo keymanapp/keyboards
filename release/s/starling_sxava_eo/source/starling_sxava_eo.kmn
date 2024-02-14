@@ -1,0 +1,301 @@
+﻿c sxava_esperanto generated from template at 2022-07-19 23:14:08
+c with name "Starling-sxava Esperanto"
+
+store(&VERSION) '15.0'
+store(&COPYRIGHT) '© Tomás Briones'
+store(&KEYBOARDVERSION) '1.0'
+store(&MNEMONICLAYOUT) '1' C mnemonic on
+store(&MESSAGE) 'Adaptebla komputila klavarfasono por skribi Esperanton starling-ŝave (inkludas pronopaĵojn de Pokrovskij, latinan kaj grekan alfabeton).'
+store(&BITMAP) 'starling_sxava_eo.ico'
+store(&NAME) 'Starlingŝava Esperanto'
+store(&TARGETS) 'windows macosx linux'
+store(&VISUALKEYBOARD) 'starling_sxava_eo.kvks'
+
+begin Unicode > use(main)
+group(main) using keys
+
+C opcioj
+	C store(diak) 'JES' defaŭlta valoro.
+	store(cxe) 'RALT' C posicio de "@" sur la fizika klavaro
+	store(trema_fz) 'tremane' C funkcio de "¨"
+	store(dkorn_fz) 'msupren' C funkcio de "`"
+	store(mdkorn_fz) 'supren' C funkcio de "´"
+	store(kcxapel_fz) 'jes' C funkcio de kontraŭĉapeloj
+	store(luneto_fz) 'jes' C funkcio de kontraŭĉapeloj
+	store(greka_fz) 'jes'
+
+C ŝavliteroj
+	+ [NCAPS 'A'] > '𐑨'
+	+ [NCAPS 'B'] > '𐑚'
+	+ [NCAPS 'C'] > '𐑔' 
+	+ [NCAPS 'X'] > '𐑗' C ĉo
+	+ [NCAPS 'D'] > '𐑛'
+	+ [NCAPS 'E'] > '𐑧'
+	+ [NCAPS 'F'] > '𐑓'
+	+ [NCAPS 'G'] > '𐑜'
+	+ [NCAPS 'W'] > '𐑡' C ĝo
+	+ [NCAPS 'H'] > '𐑣'
+	+ [NCAPS 'I'] > '𐑦'
+	+ [NCAPS 'J'] > '𐑢'
+	+ [NCAPS 'K'] > '𐑒'
+	+ [NCAPS 'L'] > '𐑤'
+	+ [NCAPS 'M'] > '𐑫'
+	+ [NCAPS 'N'] > '𐑵'
+	+ [NCAPS 'O'] > '𐑩'
+	+ [NCAPS 'P'] > '𐑐'
+	+ [NCAPS 'R'] > '𐑮'
+	+ [NCAPS 'S'] > '𐑕'
+	+ [NCAPS 'Q'] > '𐑖' C ŝo
+	+ [NCAPS 'T'] > '𐑑'
+	+ [NCAPS 'U'] > '𐑪'
+	+ [NCAPS 'Y'] > '𐑘' C ŭo
+	+ [NCAPS 'V'] > '𐑝'
+	+ [NCAPS 'Z'] > '𐑟'
+
+C esperantlatinaj minuskloj
+	+ [CAPS 'A'] > 'a'
+	+ [CAPS 'B'] > 'b'
+	+ [CAPS 'C'] > 'c' 
+	+ [CAPS 'X'] > 'ĉ'
+	+ [CAPS 'D'] > 'd'
+	+ [CAPS 'E'] > 'e'
+	+ [CAPS 'F'] > 'f'
+	+ [CAPS 'G'] > 'g'
+	+ [CAPS 'W'] > 'ĝ'
+	+ [CAPS 'H'] > 'h'
+	+ [CAPS 'I'] > 'i'
+	+ [CAPS 'J'] > 'j'
+	+ [CAPS 'K'] > 'k'
+	+ [CAPS 'L'] > 'l'
+	+ [CAPS 'M'] > 'm'
+	+ [CAPS 'N'] > 'n'
+	+ [CAPS 'O'] > 'o'
+	+ [CAPS 'P'] > 'p'
+	+ [CAPS 'R'] > 'r'
+	+ [CAPS 'S'] > 's'
+	+ [CAPS 'Q'] > 'ŝ'
+	+ [CAPS 'T'] > 't'
+	+ [CAPS 'U'] > 'u'
+	+ [CAPS 'Y'] > 'ŭ'
+	+ [CAPS 'V'] > 'v'
+	+ [CAPS 'Z'] > 'z'
+
+C esperantlatinaj majuskloj
+	+ [SHIFT 'A'] > 'A'
+	+ [SHIFT 'B'] > 'B'
+	+ [SHIFT 'C'] > 'C' 
+	+ [SHIFT 'X'] > 'Ĉ'
+	+ [SHIFT 'D'] > 'D'
+	+ [SHIFT 'E'] > 'E'
+	+ [SHIFT 'F'] > 'F'
+	+ [SHIFT 'G'] > 'G'
+	+ [SHIFT 'W'] > 'Ĝ'
+	+ [SHIFT 'H'] > 'H'
+	+ [SHIFT 'I'] > 'I'
+	+ [SHIFT 'J'] > 'J'
+	+ [SHIFT 'K'] > 'K'
+	+ [SHIFT 'L'] > 'L'
+	+ [SHIFT 'M'] > 'M'
+	+ [SHIFT 'N'] > 'N'
+	+ [SHIFT 'O'] > 'O'
+	+ [SHIFT 'P'] > 'P'
+	+ [SHIFT 'R'] > 'R'
+	+ [SHIFT 'S'] > 'S'
+	+ [SHIFT 'Q'] > 'Ŝ'
+	+ [SHIFT 'T'] > 'T'
+	+ [SHIFT 'U'] > 'U'
+	+ [SHIFT 'Y'] > 'Ŭ'
+	+ [SHIFT 'V'] > 'V'
+	+ [SHIFT 'Z'] > 'Z'
+
+C ĥ kaj ĵ (la angla klavarfasono ne havas sufiĉe da klavoj),
+	C grafemoj proponitaj de Pokrovskij kaj Q, W, X kaj Y.
+	C uzu AltGr aŭ Ctrl+Alt
+
+	+ [RALT NCAPS '.'] > '·' C por komunsubstantivoj ŝave.
+	+ [RALT NCAPS 'A'] > '𐑲' C ligaĵo aŭ, de Pokrovskij
+	+ [RALT NCAPS 'E'] > '𐑱' C ligaĵo eŭ, de Pokrovskij
+	+ [RALT NCAPS 'I'] > '𐑰' C grafemo de "j" kaj "𐑘", de Pokrovskij
+	+ [RALT NCAPS 'Z'] > '𐑞' C grafemo de "dz", de Pokrovskij
+	+ [RALT NCAPS 'O'] > '𐑳' C ligaĵo "on"
+	+ [RALT NCAPS 'H'] > '𐑙' C ĥo
+	+ [RALT NCAPS 'J'] > '𐑠' C ĵo
+
+	+ [RALT CAPS 'H'] > 'ĥ'
+	+ [RALT CAPS 'J'] > 'ĵ'
+	+ [RALT CAPS 'Q'] > 'q'
+	+ [RALT CAPS 'W'] > 'w'
+	+ [RALT CAPS 'X'] > 'x'
+	+ [RALT CAPS 'Y'] > 'y'
+
+	+ [RALT CAPS SHIFT 'H'] > 'Ĥ'
+	+ [RALT CAPS SHIFT 'J'] > 'Ĵ'
+	+ [RALT CAPS SHIFT 'Q'] > 'Q'
+	+ [RALT CAPS SHIFT 'W'] > 'W'
+	+ [RALT CAPS SHIFT 'X'] > 'X' 
+	+ [RALT CAPS SHIFT 'Y'] > 'Y'
+
+C aliaj literoj
+	+ [RALT CAPS 'A'] > 'æ'
+	+ [RALT CAPS 'E'] > 'ɛ'
+	+ [RALT CAPS 'I'] > 'ı'
+	+ [RALT CAPS 'O'] > 'œ'
+	+ [RALT CAPS 'U'] > 'ə' C schwa
+	+ [RALT CAPS 'D'] > 'ð'
+	C + [RALT CAPS 'D'] > 'ɗ'
+	C + [RALT CAPS 'G'] > 'ɣ'
+	+ [RALT CAPS 'L'] > 'ł'
+	+ [RALT CAPS 'N'] > 'ñ'
+	+ [RALT CAPS 'S'] > 'ß'
+	+ [RALT CAPS 'T'] > 'þ'
+
+	+ [RALT CAPS SHIFT 'A'] > 'Æ'
+	+ [RALT CAPS SHIFT 'E'] > 'Ɛ'
+	+ [RALT CAPS SHIFT 'I'] > 'İ'
+	+ [RALT CAPS SHIFT 'O'] > 'Œ'
+	+ [RALT CAPS SHIFT 'U'] > 'Ə' C schwa
+	C [RALT CAPS SHIFT 'D'] > 'Ð'
+	C [RALT CAPS SHIFT 'D'] > 'Ɗ'
+	+ [RALT CAPS SHIFT 'L'] > 'Ł'
+	+ [RALT CAPS SHIFT 'N'] > 'Ñ'
+	+ [RALT CAPS SHIFT 'S'] > 'ẞ'
+	+ [RALT CAPS SHIFT 'T'] > 'Þ'
+
+	C Ǝ ǝ
+	C Ø ø
+
+C diakritaĵoj kaj reguloj
+	C aroj
+		store(vokalo)		[CAPS 'A']  [CAPS 'E']  [CAPS 'I']  [CAPS 'O']  [CAPS 'U']  [SHIFT 'A'] [SHIFT 'E'] [SHIFT 'I'] [SHIFT 'O'] [SHIFT 'U']
+		store(mdkorn_vO)	U+00E0		U+00E8		U+00EC		U+00F2		U+00F9		U+00C0		U+00C8		U+00CC		U+00D2		U+00D9
+		store(dkorn_vO)		U+00E1		U+00E9		U+00ED		U+00F3		U+00FA		U+00C1		U+00C9		U+00CD		U+00D3		U+00DA
+		store(cxapel_vO)	U+00E2		U+00EA		U+00EE		U+00F4		U+00FB		U+00C2		U+00CA		U+00CE		U+00D4		U+00DB
+		store(kcxapel_vO)	U+01CE		U+011B		U+01D0		U+01D2		U+01D4		U+01CD		U+011A		U+01CF		U+01D1		U+01D3
+		store(luneto_vO)	U+0103		U+0115		U+012D		U+014F		U+016D		U+0102		U+0114		U+012C		U+014E		U+016C
+		store(tild_vO)		U+00E3		U+1EBD		U+0129		U+00F5		U+0169		U+00C3		U+1EBC		U+0128		U+00D5		U+0168
+		store(trema_vO)		U+00E4		U+00EB		U+00EF		U+00F6		U+00FC		U+00C4		U+00CB		U+00CF		U+00D6		U+00DC
+		store(dsubhok_vO)	U+0105		U+0119		U+012F		U+01EB		U+0173		U+0104		U+0118		U+012E		U+01EA		U+0172
+		store(makrono_vO)	U+0101		U+0113		U+012B		U+014D		U+016B		U+0100		U+0112		U+012A		U+014C		U+016A
+		store(subpunkt_vO)	U+1EA1		U+1EB9		U+1ECA		U+1ECD		U+1EE5		U+1EA0		U+1EB8		U+1ECA		U+1ECC		U+1EE4		
+		store(kontrcxap_vO) U+01CE      U+011B      U+01D0      U+01D2      U+01D4      U+01CD      U+011A      U+01CF      U+01D2      U+01D3
+		store(greka_vO)		U+03B1		U+03B5		U+03B9		U+03BF		U+03B8		U+0391		U+0395		U+0399		U+039F		U+0398
+
+		store(dkorn_kI)		[RALT CAPS 'A']	[CAPS 'C']	[CAPS 'G']	[CAPS 'K']	[CAPS 'L']	[CAPS 'M']	[CAPS 'N']	[CAPS 'P']	[CAPS 'R']	[CAPS 'S']	[CAPS 'W']	[CAPS 'Y']	[CAPS 'Z']	[RALT SHIFT CAPS 'A']	[SHIFT 'C']	[SHIFT 'G']	[SHIFT'L']	[SHIFT 'K']	[SHIFT 'M']	[SHIFT 'N']	[SHIFT 'P']	[SHIFT 'R']	[SHIFT 'S']	[SHIFT 'W']	[SHIFT 'Y']	[SHIFT 'Z']
+		store(dkorn_kO)		U+01FD			U+0107		U+01F5		U+1E31		U+013A		U+1E3F		U+0144		U+1E55		U+0155		U+015B		U+1E83		U+00FD		U+017A		U+01FC					U+0106		U+01F4		U+0139		U+1E30		U+1E3E		U+0143		U+1E54		U+0154		U+015A		U+1E82		U+00DD		U+0179
+		store(mdkorn_kI)	[CAPS 'N']	[CAPS 'W']	[CAPS 'Y']  [SHIFT 'N'] [SHIFT 'W'] [SHIFT 'Y']
+		store(mdkorn_kO)	U+01F9		U+1E81		U+1EF3		U+01F8		U+1E80		U+1EF2
+		store(cxapel_kI)	[CAPS 'C']	[CAPS 'G']	[CAPS 'H']	[CAPS 'J']	[CAPS 'S']	[CAPS 'W']	[CAPS 'Y']	[CAPS 'Z']	[SHIFT 'C']	[SHIFT 'G']	[SHIFT 'H']	[SHIFT 'J']	[SHIFT 'S']	[SHIFT 'W']	[SHIFT 'Y']	[SHIFT 'Z']
+		store(cxapel_kO)	U+0109		U+011D		U+0125		U+0135		U+015D		U+0175		U+0177		U+1E91		U+0108		U+011C		U+0124		U+0134		U+015C		U+0174		U+0176		U+1E90
+		store(kcxapel_kI)	[CAPS 'C']	[CAPS 'D']	[CAPS 'G']	[CAPS 'H']	[CAPS 'J']	[CAPS 'K']	[CAPS 'L']	[CAPS 'N']	[CAPS 'R']	[CAPS 'S']	[CAPS 'T']	[CAPS 'Z']	[SHIFT 'C']	[SHIFT 'D']	[SHIFT 'G']	[SHIFT 'H']	[SHIFT 'K'] [SHIFT 'L']	[SHIFT 'N']	[SHIFT 'R']	[SHIFT 'S']	[SHIFT 'T']	[SHIFT 'Z']
+		store(kcxapel_kO)	U+010D		U+010F		U+01E7		U+021F		U+01F0		U+01E9		U+013E		U+0148		U+0159		U+0161		U+0165		U+017E		U+010C		U+010E		U+01E6		U+021E		U+01E8		U+013D		U+0147		U+0158		U+0160		U+0164		U+017D
+		store(luneto_kI)	[CAPS 'G']	[CAPS 'H']	[CAPS 'L']	[SHIFT 'G']	[SHIFT 'H']	[SHIFT 'L']
+		store(luneto_kO)	U+011F		U+1E2B		U+026B		U+011E		U+1E2A		U+2C62
+		store(tild_kI)		[CAPS 'N']	[CAPS 'V']	[SHIFT 'N']	[SHIFT 'V']
+		store(tild_kO)		U+00F1		 U+1E7D		U+00D1		U+1E7C
+		store(trema_kI)		[CAPS 'H']	[CAPS 'T']	[CAPS 'W']	[CAPS 'X']	[CAPS 'Y']	[SHIFT 'H']	[SHIFT 'W']	[SHIFT 'X']	[SHIFT 'Y']
+		store(trema_kO)		U+1E27		U+1E97		U+1E85		U+1E8D		U+00FF		U+1E26		U+1E84		U+1E8C		U+0178
+		store(subpunkt_kI)	[CAPS 'B']	[CAPS 'D']	[CAPS 'H']	[CAPS 'K']	[CAPS 'L']	[CAPS 'M']	[CAPS 'N']	[CAPS 'R']	[CAPS 'S']	[CAPS 'T']	[CAPS 'V']	[CAPS 'W']	[CAPS 'Y']	[CAPS 'Z']	[SHIFT 'B']	[SHIFT 'D']	[SHIFT 'H']	[SHIFT 'K']	[SHIFT 'L']	[SHIFT 'M']	[SHIFT 'N']	[SHIFT 'R']	[SHIFT 'S']	[SHIFT 'T']	[SHIFT 'V']	[SHIFT 'W']	[SHIFT 'Y']	[SHIFT 'Z']
+		store(subpunkt_kO)	U+1E05		U+1E0C		U+1E25		U+1E33		U+1E37		U+1E43		U+1E47		U+1E5B		U+1E63		U+1E6D		U+1E7F		U+1E88		U+1EF5		U+1E93		U+1E04		U+1E0C		U+1E24		U+1E32		U+1E36		U+1E42		U+1E46		U+1E5A		U+1E62		U+1E6C		U+1E7E		U+1E88		U+1EF4		U+1E92
+		
+		store(ring_I)		[CAPS 'A']	[CAPS 'U']	[CAPS 'W']	[CAPS 'Y']	[SHIFT 'A']	[SHIFT 'U']
+		store(ring_O)		U+00E5		U+016F		U+1E98		U+1E99		U+00C5		U+016E
+		store(mdsubhok_I)	[CAPS 'C']	[CAPS 'D']	[CAPS 'E']	[CAPS 'G']	[CAPS 'H']	[CAPS 'K']	[CAPS 'L']	[CAPS 'N']	[CAPS 'R']	[CAPS 'S']	[CAPS 'T']	[SHIFT 'C']	[SHIFT 'D']	[SHIFT 'E']	[SHIFT 'G']	[SHIFT 'H']	[SHIFT 'K']	[SHIFT 'L']	[SHIFT 'N']	[SHIFT 'R']	[SHIFT 'S']	[SHIFT 'T']
+		store(mdsubhok_O)	U+00E7		U+1E11		U+0229		U+0123		U+1E29		U+0137		U+013C		U+0146		U+0157		U+015F		U+0163		U+00C7		U+1E10		U+0228		U+0122		U+1E28		U+0136		U+013B		U+0145		U+0156		U+015E		U+0162
+		store(suppunkt_I)	[CAPS 'A']	[CAPS 'B']	[CAPS 'C']	[CAPS 'D']	[CAPS 'E']	[CAPS 'F']	[CAPS 'G']	[CAPS 'H']	[CAPS 'I']	[CAPS 'L']	[CAPS 'M']	[CAPS 'N']	[CAPS 'O']	[CAPS 'P']	[CAPS 'R']	[CAPS 'S']	[CAPS 'T']	[CAPS 'W']	[CAPS 'X']	[CAPS 'Y']	[CAPS 'Z']	[SHIFT 'A']	[SHIFT 'B']	[SHIFT 'C']	[SHIFT 'D']	[SHIFT 'E']	[SHIFT 'F']	[SHIFT 'G']	[SHIFT 'H']	[SHIFT 'I']	[SHIFT 'L']	[SHIFT 'M']	[SHIFT 'N']	[SHIFT 'O']	[SHIFT 'P']	[SHIFT 'R']	[SHIFT 'S']	[SHIFT 'T']	[SHIFT 'W']	[SHIFT 'X']	[SHIFT 'Y']	[SHIFT 'Z']
+		store(suppunkt_O)	U+0227		U+1E03		U+010B		U+1E0B		U+0117		U+1E1F		U+0120		U+1E23		U+0069		U+0140		U+1E41		U+1E45		U+022F		U+1E57		U+1E59		U+1E61		U+1E6B		U+1E87		U+1E8B		U+1E8F		U+017C		U+0226		U+1E02		U+010A		U+1E0A		U+0116		U+1E1E		U+0120		U+1E22		U+0130		U+013F		U+1E40		U+1E44		U+022E		U+1E56		U+1E58		U+1E60		U+1E6A		U+1E86		U+1E8A		U+1E8E		U+017B
+		
+		store(greka_kI)		[CAPS 'B']	[CAPS 'C']	[CAPS 'D']	[CAPS 'F']	[CAPS 'G']	[CAPS 'H']	[CAPS 'J']	[CAPS 'K']	[CAPS 'L']	[CAPS 'M']	[CAPS 'N']	[CAPS 'P']	[CAPS 'Q']	[CAPS 'R']	[CAPS 'S']	[CAPS 'T']	[CAPS 'V']	[CAPS 'W']	[CAPS 'X']	[CAPS 'Y']	[CAPS 'Z']	[SHIFT 'B']	[SHIFT 'C']	[SHIFT 'D']	[SHIFT 'F']	[SHIFT 'G']	[SHIFT 'H']	[SHIFT 'J']	[SHIFT 'K']	[SHIFT 'L']	[SHIFT 'M']	[SHIFT 'N']	[SHIFT 'P']	[SHIFT 'Q']	[SHIFT 'R']	[SHIFT 'S']	[SHIFT 'T']	[SHIFT 'V']	[SHIFT 'W']	[SHIFT 'X']	[SHIFT 'Y']	[SHIFT 'Z']
+		store(greka_kO)		U+03B2		U+03C8		U+03B4		U+03C6		U+03B3		U+03B7		U+03BE		U+03BA		U+03BB		U+03BC		U+03BD		U+03C0		U+0387		U+03C1		U+03C3		U+03C4		U+03C9		U+03C2		U+03C7		U+03C5		U+03B6		U+0392		U+03A8		U+0394		U+03A6		U+0393		U+0397		U+039E		U+039A		U+039B		U+039C		U+039D		U+03A0		U+0387		U+03A1		U+03A3		U+03A4		U+03A4		U+03C2		U+03A7		U+03A5		U+0396
+
+	C senpaŝaj klavoj kaj reguloj
+		C ĉeo
+			+ '@' > nul
+			if(cxe = 'SHIFT') + [SHIFT '2'] > '@'
+			if(cxe = 'RALT') + [RALT '2'] > '@'
+			if(cxe = 'franca') + [RALT '0'] > '@'
+			if(cxe = 'germana') + [RALT 'Ä'] > '@'
+
+		C "<" + "<" > U+00AB
+		C ">" + ">" > U+00BB
+
+		C dekstra korno '´'
+			if(dkorn_fz = 'msupren') + "/" > dk(dkorn)
+				if(dkorn_fz = 'msupren') dk(dkorn) + "/" > '/'
+			if(dkorn_fz != 'msupren') + "´" > dk(dkorn)
+				if(dkorn_fz != 'msupren') dk(dkorn) + "´" > '´'
+			dk(dkorn) + any(vokalo) > index(dkorn_vO,2)
+			dk(dkorn) + any(dkorn_kI) > index(dkorn_kO,2) 
+
+		C maldekstra korno '`'
+			if(mdkorn_fz = 'supren') + U+005C > dk(mdkorn)
+				if(mdkorn_fz = 'supren') dk(mdkorn) + U+005C > U+005C
+			if(mdkorn_fz != 'supren') + "`" > dk(mdkorn)
+				if(mdkorn_fz != 'supren') dk(mdkorn) + "`" > '`'
+			dk(mdkorn) + any(vokalo) > index(mdkorn_vO,2)
+			dk(mdkorn) + any(mdkorn_kI) > index(mdkorn_kO,2) 
+
+		C ĉapelo
+			+ "^" > dk(cxapel)
+			dk(cxapel) + "^" > '^'
+			dk(cxapel) + any(vokalo) > index(cxapel_vO,2)
+			dk(cxapel) + any(cxapel_kI) > index(cxapel_kO,2)
+		
+		C kontraŭĉapelo
+			if(kcxapel_fz = 'jes') + [RALT CAPS SHIFT 'V'] > dk(kcxapel)
+				if(kcxapel_fz = 'jes') dk(kcxapel) + [RALT CAPS SHIFT 'V'] > "V"
+			dk(kcxapel) + any(vokalo) > index(kcxapel_vO,2)
+			dk(kcxapel) + any(kcxapel_kI) > index(kcxapel_kO,2)
+
+		C luneto
+			if(luneto_fz = 'jes') + [RALT CAPS SHIFT 'U'] > dk(luneto)
+				if(luneto_fz = 'jes') dk(luneto) + [RALT CAPS SHIFT 'U'] > 'U'
+			dk(luneto) + any(vokalo) > index(luneto_vO,2)
+			dk(luneto) + any(luneto_kI) > index(luneto_kO,2)
+
+		C tildo
+			+ "~" > dk(tild)
+			dk(tild) + "~" > '~'
+			dk(tild) + any(vokalo) > index(tild_vO,2)
+			dk(tild) + any(tild_kI) > index(tild_kO,2)
+
+		C tremao
+			if(trema_fz = 'tremajes') + "¨" > dk(trema)
+				if(trema_fz = 'tremajes') dk(trema) + "¨" > '¨'
+			if(trema_fz != 'tremajes') + ":" > dk(trema)
+				if(trema_fz != 'tremajes') dk(trema) + ":" > ':'
+			dk(trema) + any(vokalo) > index(trema_vO,2)
+			dk(trema) + any(trema_kI) > index(trema_kO,2)
+			
+		C ringo
+			+ "°" > dk(ring)
+			dk(ring) + "°" > '°'
+			dk(ring) + any(ring_I) > index(ring_O,2)
+
+		+ [RALT CAPS ','] > dk(mdsubhok)
+		dk(mdsubhok) + [RALT CAPS ','] > ','
+		dk(mdsubhok) + any(mdsubhok_I) > index(mdsubhok_O,2)
+
+		+ [RALT CAPS SHIFT ','] > dk(dsubhok) C ogonek
+		dk(dsubhok) + [RALT CAPS SHIFT ','] > ','
+		dk(dsubhok) + any(vokalo) > index(dsubhok_vO,2)
+
+		+ "-" > dk(makron)
+		dk(makron) + "-" > '-'
+		dk(makron) + any(vokalo) > index(makrono_vO,2)
+
+		+ [RALT CAPS '.'] > dk(suppunkt)
+		dk(suppunkt) + [RALT CAPS '.'] > '.'
+		dk(suppunkt) + any(suppunkt_I) > index(suppunkt_O,2)
+
+		+ [RALT CAPS SHIFT '.'] > dk(subpunkt)
+		dk(subpunkt) + [RALT CAPS SHIFT '.'] > '.'
+		dk(subpunkt) + any(vokalo) > index(subpunkt_vO,2)
+		dk(subpunkt) + any(subpunkt_kI) > index(subpunkt_kO,2)
+
+		if(greka_fz = 'jes') + [RALT CAPS SHIFT 'G'] > dk(greka)
+			if(greka_fz = 'jes') dk(greka) + [RALT CAPS SHIFT 'G'] > 'G'
+		dk(greka) + any(vokalo) > index(greka_vO,2)
+		dk(greka) + any(greka_kI) > index(greka_kO,2)
+
+		
+C finaĵo de la klavaro.

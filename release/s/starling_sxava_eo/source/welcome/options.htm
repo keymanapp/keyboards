@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eo">
+	<head>
+		<meta charset="UTF-8">
+		<title>Agordoj</title>
+		<link type="image/x-icon" href="_123.ico" rel="icon">
+		<link type="text/css" href="styles.css" rel="stylesheet">
+		<style type="text/css">
+			.demando {
+				font-weight: bold;
+			}
+			
+			#grandeco p {
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 9.5pt;
+			}
+
+			#grandeco ol {
+				font-size: 9.5pt;
+			}
+
+			#demandoj {
+				margin-left:-9%;
+				margin-right:-3%;
+			}
+			
+		</style>
+		<!--<script type="text/javascript">
+			// window.resizeBy (600, 300);
+			/* document.documentElement.clientWidth == 547;
+			document.documentElement.clientHeight == 302; */
+		</script>-->
+	</head>
+	<body onload="montri_demandojn()">
+		<div id="grandeco">
+			<header class="header">
+				<ul class="horizontala">
+					<li><img class="flago" id="espflagohead" src="flago.png" alt="Esperanta flago"></li>
+					<li><h1 style="margin-bottom: 4px;">Agordoj de la starlingŝava klavaro <br><span class="ŝava_h1">(𐑨𐑜𐑩𐑮𐑛𐑩𐑢 𐑛𐑧 𐑤𐑨 𐑕𐑑𐑨𐑮𐑤𐑦𐑵𐑜𐑖𐑨𐑝𐑨 𐑒𐑤𐑨𐑝𐑨𐑮𐑩)</span></h1></li>
+				</ul>
+				<div class="noto flava" id="afisxo_1">
+					<ul class="horizontala">
+						<li><img src="alert.png" alt="noto" height="30px" weight="auto"/></li>
+						<li>
+							<p>
+								<i>Dum la kreado de ĉi tiu agorda paĝo, tiu ĉi nur funkcias kun Keymano ĉe <span class="klav windows">Vindozo <img src="win11_logo.png" height="10px" weight="auto"/></span> aŭ <span class="klav linux">Linukso <img src="linux_logo.png" height="10px" weight="auto"/></span>. Tio ĉi eble ŝanĝiĝos estontece; aktuale, ĉi tiaj agordoj de la Keymanaj klavaroj funkcias ĉe <a href="https://help.keyman.com/developer/language/reference/if#toc-platforms">tiuj ĉi platformoj</a>.
+									<!--Se vi uzantas na <span class="klav apple">macOS <img src="apple_logo.png" height="10px" weight="auto"/></span>, <a href="macOs.htm">alkliku ĉi tie</a> por pli da informoj. Konsideru ankaŭ, ke sur klavaroj de komputiloj, kiuj uzas tiun operaciumon, la klavo <span class="klav"><span class="RALT">ALT</span></span> povus esti <span class="klav"><span class="RALT">Option ⌥</span></span>-->.
+									<br/>
+								</i>
+							</p>
+						</li>
+						<div class="malferm_div">
+							<p><img src="cancel.png" class="malferm_img" style="cursor:pointer;" onclick="malmontri_afisxo_1()"/></p>
+						</div>
+					</ul>
+				</div>
+			</header>
+			<main>
+				<form id="form" name="form" method="get" action="keyman:ok">
+					<p style="margin-top:6px; margin-bottom:10px;">Bonvolu, respondi ĉi tiujn demandojn por certigi, ke ĉiuj skribsignoj kaj la latinaj diakritaĵoj de la Keymana klavaro funkcios ĝuste. Memoru, ke klavkombinaĵoj ne estos modifitaj sur via regula klavarfasono, do la klavkombinaĵoj, kiujn vi agordu ĉi tie, nur funkcios dum via uzo de la starlingŝava klavarfasono.</p>
+					<p style="margin-top:6px; margin-bottom:10px;">Memoru, ke dum via uzo de ĉi tiu klavarfasono, <abbr title="Ĉiam kiam vi volos tajpi latinajn literojn uzu na CAPS lock ŝaltita. CAPS lock ŝaltita + SHIFT faras majusklojn.">por la skribo de latinaj literoj, majuskloj devos esti ebligitaj per <span class="klav">⇪ CAPS Lock</span>.<span class="info_icon">i</span></abbr> Latinaj majuskloj estos skribitaj per <span class="klav shift">⇧ SHIFT</span>. Diakritaĵoj nur funkcias kun latinaj literoj.</p>
+					<p style="margin-top:6px; margin-bottom:10px;">Kelkaj kutimaj senpaŝklavoj nur funkcios ĝuste se vi havas la opcion "Trakti aparatajn senpaŝklavojn kiel simplajn klavojn" <i>(Treat hardware deadkeys as plain keys,</i> angle<i>) ŝaltita</i>. Bonvolu aktivigi ĉi tiun opcion el la sekcio "altnivela" en la opcioj de Keyman.</p>
+					<ol class="listo" start="1">
+						<!--<div id="div_diakritoj">
+							<li>
+								<p class="demando"><span class="ekdem:">Diakritaĵoj</span> Ĉu vi volas ebli plilongigitajn diakritaĵojn?</p><br/>
+									<input type="radio" value="JES" name="diak" id="JES"  onclick="montri_demandojn();"/><label for="JES">Jes, mi volas ebli la uzon de plilongigitaj diakritaĵoj.<span class="defaŭlte">(defaŭlte)</span></label><br/>
+									<input type="radio" value="NE" name="diak" id="NE"  onclick="montri_demandojn();"/><label for="NE">Ne, mi volas malebli plilongigitajn diakritaĵojn</label><br/><br class="brcomplete"/>
+								</p>
+							</li>
+						</div>-->
+						<div id="demandoj">
+							<div id="div_cxe">
+								<li><p class="demando"><span class="ekdem">Ĉe:</span> Per via fizika klavaro, kiel vi tajpas la simbolon <span class="simbolo klav">@</span>?</p></li>
+								<p class="respondoj">
+									<input id="cxe_shift" name="cxe" type="radio" value="SHIFT" required onclick="montri_cxe()"><label for="cxe_shift">Mi skribas <span class="simbolo klav">@</span> per la klavkombinaĵo <span class="klav"><span class="shift">⇧ SHIFT</span><span class="plus"> + </span>2</span>.<i> (Por la usona angla klavarfasono)</i></label><br>
+									<input id="cxe_franca" name="cxe" type="radio" value="franca" required onclick="montri_cxe()"><label for="cxe_franca">Mi skribas <span class="simbolo klav">@</span> per la klavkombinaĵo <abbr title="Alt Gr aperas sur kelkaj eŭropaj klavaroj. Ĝia 	ekvivalento estas la klavkombinaĵo Ctrl + Alt."><span class="klav"><span class="RALT">⇮ ALTGr</span> <span class="plus">+</span> 0</span><span class="info_icon">i</span></abbr>.<i> (Por kelkaj francaj klavaroj)</i></label><br>
+									<input id="cxe_ralt" name="cxe" type="radio" value="RALT" required onclick="montri_cxe()"><label for="cxe_ralt">Mi skribas <span class="simbolo klav">@</span> per la klavkombinaĵo <abbr title="Alt Gr aperas sur kelkaj eŭropaj klavaroj. Ĝia 	ekvivalento estas la klavkombinaĵo Ctrl + Alt."><span class="klav"><span class="RALT">⇮ ALTGr</span> <span class="plus">+</span> Q</span><span class="info_icon">i</span></abbr>.<i> (Por kelkaj eŭropaj klavarfasonoj) </i><span class="defaŭlte">(defaŭlte)</span></label><br>
+									<input id="cxe_germana" name="cxe" type="radio" value="germana" required onclick="montri_cxe()"><label for="cxe_germana">Mi skribas <span class="simbolo klav">@</span> per la klavkombinaĵo <abbr title="Alt Gr aperas sur kelkaj eŭropaj klavaroj. Ĝia 	ekvivalento estas la klavkombinaĵo Ctrl + Alt."><span class="klav"><span class="RALT">⇮ ALTGr</span> <span class="plus">+</span> Q</span><span class="info_icon">i</span></abbr>, per la germana klavarfasono.<i></i></label>
+								</p><br>
+								<div class="noto blua" id="cxe_respondo" style="display:none;">
+									<ul class="horizontala">
+										<li><img class="info_png" src="info.png" alt="info_logo"></li>
+										<li>
+											<p id="cxe_shift_text"><b>La klavkombinaĵo daŭre estos la sama. </b>Do, se vi volas skribi <span class="simbolo klav">@</span>, bonvolu tajpu <span class="klav"><span class="shift">⇧ SHIFT</span><span class="plus"> + </span>2</span>.</p>
+											<p id="cxe_franca_text"><b>La klavkombinaĵo daŭre estos la sama. </b>Do, se vi volas skribi <span class="simbolo klav">@</span>, uzu <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>0</span>.</p>
+											<p id="cxe_ralt_text">Nun, uzante ĉi tiun klavarfasonon, <b>vi povos skribi la skribsignon <span class="simbolo klav">@</span> per la klavkombinaĵo <abbr title="Alt Gr aperas sur kelkaj eŭropaj klavaroj. Ĝia ekvivalento estas la 	klavkombinaĵo Ctrl + Alt"><span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>2</span><span class="info_icon">i</span></abbr>.</b></p>
+											<p id="cxe_germana_text">Nun, uzante ĉi tiun klavarfasonon, vi povos skribi la skribsignon <span class="simbolo klav">@</span> per la klavkombinaĵo <abbr title="Alt Gr aperas sur kelkaj eŭropaj klavaroj. Ĝia ekvivalento estas la 	klavkombinaĵo Ctrl + Alt"><span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>Ä</span><span class="info_icon">i</span></abbr></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<br class="brcomplete" id="br1" style="display:none;">
+							<div id="div_trema">
+								<li>
+									<p class="demando"><span class="ekdem">Tremaoj:</span> Per via fizika klavaro, ĉu vi povas skribi umlaŭtojn aŭ literojn kun tremaoj per la <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝa klavo <i>(deadkey)</i><span class="info_icon">i</span> </abbr><span class="simbolo klav">¨</span>?<br>
+										<i><span class="nebold"> (Tiaj literoj estas tiel: <span class="simbolo klav">Ä</span> aŭ <span class="simbolo klav">ä</span>, ktp)</span>.</i>
+									</p>
+								</li>
+								<p class="respondoj">
+									<input id="tremao_jes" name="trema_fz" type="radio" value="tremajes" required onclick="montri_trema()"><label for="tremao_jes">Jes, mi povas skribi ilin per tiu <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝa klavo<span class="info_icon">i</span></abbr>; kiel <span class="klav"><span class="simbolo">¨</span><span class="plus"> > </span>A</span>, <span class="klav"><span class="simbolo">¨</span><span class="plus"> > </span>O</span>, ktp.</label><br>
+									<input id="umlaŭto" name="trema_fz" type="radio" value="umlaŭto" required onclick="montri_trema()"><label for="umlaŭto">Mi povas skribi umlaŭtojn per specifaj klavoj por ĉiu skribsigno. Do, mi havas klavojn kiel <span class="simbolo klav">Ä</span> aŭ <span class="simbolo klav">Ö</span>.<i> (Por la germana klavarfasono)</i></label><br>
+									<input id="tremao_ne" name="trema_fz" type="radio" value="tremane" required onclick="montri_trema()"><label for="tremao_ne">Ne, mi ne povas tajpi tiajn skribsignojn.<span class="defaŭlte">(defaŭlte)</span></label>
+								</p><br>
+								<div class="noto blua" id="trema_respondo" style="display:none;">
+									<ul class="horizontala">
+										<li><img class="info_png" src="info.png" alt="info_logo"></li>
+										<li>
+											<p id="trema_jes_text"><b>Sammaniere, per la <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝa klavo<span class="info_icon">i</span></abbr> <span class="klav"><span class="simbolo">¨</span></span>, vi povos skribi umlaŭtojn kaj literojn kun tremaoj.</b> Se vi nur povis skribi tremaajn vokalojn, nun vi povos skribi pliajn skribsignojn kun tremao, kiel <span class="simbolo klav">Ḧ</span>. Ĝi estos utila por la skribo de kelkaj lingvoj. Se vi volas skribi la simbolon <span class="klav simbolo">¨</span>, vi devos tajpi ĝin dufoje; alivorte, <span class="klav">¨<span class="plus"> > </span>¨</span>.</p>
+											<p id="trema_umlaŭto_text">La umlaŭtaj literoj, kiujn vi havas sur via fizika klavaro ankoraŭ funkcios dum via uzo de ĉi tiu Keymana klavarfasono. Tamen, se vi volas skribi aliajn tremaajn literojn, <b>vi devos uzi la novan <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavon<span class="info_icon">i</span></abbr> </b><span class="klav">:</span> antaŭ tajpi la literon, kiun vi volas modifi. Se vi volas tajpi la simbolon <span class="klav simbolo">:</span>, vi devos tajpi ĝin dufoje; alivorte, <span class="klav">:<span class="plus"> > </span>:</span>.<br></p>
+											<p id="trema_ne_text">Nun, uzante ĉi tiun Keymanan klavarfasonon, <b>vi povos skribi tremaajn literojn</b>. Ĉi tiuj skribsignoj ne estas nur vokaloj, sed ankaŭ kelkaj latinaj literoj kiel <span class="simbolo klav">Ḧ</span>. Eble, tio ĉi estos utila se vi volas skribi fremdajn vortojn.
+												<br><br class="brcomplete">Por tio, <b>vi devos uzi la novan <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavon<span class="info_icon">i</span></abbr> </b><span class="klav">:</span> antaŭ tajpi la latinan literon, kiun vi volas modifi. Se vi volas tajpi la simbolon <span class="klav simbolo">:</span>, vi devos tajpi ĝin dufoje; alivorte, <span class="klav">:<span class="plus"> > </span>:</span>.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<br class="brcomplete" id="br2" style="display:none;">
+							<div id="div_dkorn">
+								<li>
+									<p class="demando"><span class="ekdem">Dekstraj kornoj:</span> Ĉu vi povas skribi literojn kun dekstrakornoj per via fizika klavaro?<br>
+										<i><span class="nebold"> (Tiaj literoj estas tiel: <span class="simbolo klav">É</span> aŭ <span class="simbolo klav">é</span>, ktp)</span>.</i>
+									</p>
+								</li>
+								<p class="respondoj">
+									<input id="dekstra_korno_dk" name="dkorn_fz" type="radio" value="dk" required onclick="montri_dkorn()"><label for="dekstra_korno_dk">Jes, mi povas skribi tiajn literojn per la <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">´</span>, kiel: <span class="klav"><span class="simbolo">´</span><span class="plus"> > </span>E</span>, ktp.</label><br>
+									<input id="dekstra_korno_nedk" name="dkorn_fz" type="radio" value="nedk" required onclick="montri_dkorn()"><label for="dekstra_korno_nedk">Mi havas la klavon <span class="klav simbolo">´</span> sed kiam mi tajpas ĝin, ĝi nur montras la skribsignon kaj ne modifas literojn.</label><br>
+									<input id="malsuprenstreko" name="dkorn_fz" type="radio" value="msupren" required onclick="montri_dkorn()"><label for="malsuprenstreko">Ne, mi povas skribi tiajn skribsignojn<span class="defaŭlte">(defaŭlte)</span></label>
+								</p><br>
+								<div class="noto blua" id="dkorn_respondo" style="display:none;">
+									<ul class="horizontala">
+										<li><img class="info_png" src="info.png" alt="info_logo"></li>
+										<li>
+											<p id="dekstra_korno_dk_text">Nun vi povos skribi pli da literojn kun dekstraj kornoj per la sama <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpsaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">´</span>. Eble, tio ĉi estos utila se vi volas skribi fremdajn vortojn. Se vi volas skribi la simbolon <span class="klav simbolo">´</span>, bonvolu tajpi ĝin dufoje; alivorte, <span class="klav">´<span class="plus"> > </span>´</span>.</p>
+											<p id="dekstra_korno_nedk_text">Nun vi povos skribi literojn kun dekstraj kornoj per la <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpsaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">´</span>. Eble, tio ĉi estos utila se vi volas skribi fremdajn vortojn. Se vi volas tajpi la simbolon <span class="klav simbolo">´</span>, vi devos tajpi ĝin dufoje; alivorte, <span class="klav">´<span class="plus"> > </span>´</span>.</p>
+											<p id="malsuprenstreko_text">Nun vi povos skribi literojn kun dekstraj kornoj per la <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpsaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">/</span>. Eble, tio ĉi estos utila se vi volas skribi fremdajn vortojn. Se vi volas tajpi la simbolon <span class="klav simbolo">/</span>, vi devos tajpi ĝin dufoje; alivorte, <span class="klav">/<span class="plus"> > </span>/</span>.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<br class="brcomplete" id="br3" style="display:none;">
+							<div id="div_mdkorn">
+								<li>
+									<p class="demando"><span class="ekdem">Maldekstraj kornoj:</span> Ĉu vi povas skribi literojn kun maldekstrakornoj per via fizika klavaro?<br>
+										<i><span class="nebold"> (Tiaj literoj estas tiel: <span class="simbolo klav">È</span> aŭ <span class="simbolo klav">è</span>, ktp)</span>.</i>
+									</p>
+								</li>
+								<p class="respondoj">
+									<input id="maldekstra_korno_dk" name="mdkorn_fz" type="radio" value="dk" required onclick="montri_mdkorn()"><label for="maldekstra_korno_dk">Jes, mi povas skribi tiajn literojn per la <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">`</span>, kiel: <span class="klav"><span class="simbolo">`</span><span class="plus"> > </span>E</span>, ktp.</label><br>
+									<input id="maldekstra_korno_nedk" name="mdkorn_fz" type="radio" value="nedk" required onclick="montri_mdkorn()"><label for="maldekstra_korno_nedk">Mi havas la klavon <span class="klav simbolo">`</span> sed kiam mi tajpas ĝin, ĝi nur montras la skribsignon kaj ne modifas literojn.</label><br>
+									<input id="suprenstreko" name="mdkorn_fz" type="radio" value="supren" required onclick="montri_mdkorn()"><label for="suprenstreko">Ne, mi povas skribi tiajn skribsignojn<span class="defaŭlte">(defaŭlte)</span></label>
+								</p><br>
+								<div class="noto blua" id="mdkorn_respondo" style="display:none;">
+									<ul class="horizontala">
+										<li><img class="info_png" src="info.png" alt="info_logo"></li>
+										<li>
+											<p id="maldekstra_korno_dk_text">Nun vi povos skribi pli da literojn kun maldekstraj kornoj per la sama <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpsaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">`</span>. Eble, tio ĉi estos utila se vi volas skribi fremdajn vortojn. Se vi volas skribi la simbolon <span class="klav simbolo">`</span>, bonvolu tajpi ĝin dufoje; alivorte, <span class="klav">`<span class="plus"> > </span>`</span>.</p>
+											<p id="maldekstra_korno_nedk_text">Nun vi povos skribi literojn kun maldekstraj kornoj per la nova <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpsaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">`</span>. Eble, tio ĉi estos utila se vi volas skribi fremdajn vortojn. Se vi volas tajpi la simbolon <span class="klav simbolo">`</span>, vi devos tajpi tiun klavon dufoje; alivorte, <span class="klav">`<span class="plus"> > </span>`</span>.</p>
+											<p id="suprenstreko_text">Nun vi povos skribi literojn kun maldekstraj kornoj per la nova <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpsaŝklavo<span class="info_icon">i</span></abbr> <span class="klav simbolo">\</span>. Eble, tio ĉi estos utila se vi volas skribi fremdajn vortojn. Se vi volas skribi la simbolon <span class="klav simbolo">\</span>, vi devos tajpi tiun klavon dufoje; alivorte, <span class="klav">\<span class="plus"> > </span>\</span>.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<br class="brcomplete" id="br4" style="display:none;">
+							<div id="div_kcxapelo">
+								<li>
+									<p class="demando"><span class="ekdem">Kontraŭĉapeloj:</span> ĉu ebligi skribon de kontraŭĉapelaĵoj?<br>
+										<i><span class="nebold"> (Tiaj literoj estas tiel: <span class="simbolo klav">Ž</span> aŭ <span class="simbolo klav">ž</span>, ktp)</span>.</i>
+									</p>
+								</li>
+								<p class="respondoj">
+									<input id="kcxapelo_jes" name="kcxapelo_fz" type="radio" value="jes" required onclick="montri_kcxapelo()"><label for="kcxapelo_jes">Jes, mi volas skribi tiajn skribsignojn per <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr>.<span class="defaŭlte">(defaŭlte)</span></label><br>
+									<input id="kcxapelo_ne" name="kcxapelo_fz" type="radio" value="ne" required onclick="montri_kcxapelo()"><label for="kcxapelo_ne">Ne, mi ne volas skribi tiajn skribsignojn per ĉi tiu klavarfasono.</label>
+								</p><br>
+								<div class="noto blua" id="kcxapelo_respondo" style="display:none;">
+									<ul class="horizontala">
+										<li><img class="info_png" src="info.png" alt="info_logo"></li>
+										<li>
+											<p id="kcxapelo_jes_text">Vi povos skribi kelkajn literojn kun kontraŭĉapeloj per la nova <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr> <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="shift">⇧ Shift</span><span class="plus"> + </span>V</span>. Tio estos utila por la skribo de fremdaj vortoj. Tamen, ĉi tiu klavkombinaĵo eble estos nekongrua en kelkaj aplikoj.</p>
+											<p id="kcxapelo_ne_text">Konsentite, vi ne povos skribi kontraŭĉapelaĵojn dum via uzado de ĉi tiu starlingŝava klavarfasono.</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<br class="brcomplete" id="br5" style="display:none;">
+							<div id="div_luneto">
+								<li>
+									<p class="demando"><span class="ekdem">Lunetoj:</span> ĉu ebligi skribon de litero kun lunetoj?<br>
+										<i><span class="nebold"> (Tiaj literoj estas tiel: <span class="simbolo klav">Ă</span> aŭ <span class="simbolo klav">ă</span>, ktp)</span>.</i><br>
+										<i><span class="nebold">(Ĉiuokaze, vi povos skribi <span class="klav simbolo">Ŭ</span> per la klavo <span class="klav">Y</span>).</span></i>
+									</p>
+								</li>
+								<p class="respondoj">
+									<input id="lunet_jes" name="lunet_fz" type="radio" value="jes" required onclick="montri_luneto()"><label for="lunet_jes">Jes, mi volas skribi tiajn skribsignojn per <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr>.<span class="defaŭlte">(defaŭlte)</span></label><br>
+									<input id="lunet_ne" name="lunet_fz" type="radio" value="ne" required onclick="montri_luneto()"><label for="lunet_ne">Ne, mi ne volas skribi tiajn skribsignojn per ĉi tiu klavarfasono.</label><br>
+								</p><br>
+								<div class="noto blua" id="lunet_respondo" style="display:none;">
+									<ul class="horizontala">
+										<li><img class="info_png" src="info.png" alt="info_logo"></li>
+										<li>
+											<p id="lunet_jes_text">Vi povos skribi kelkajn literojn kun lunetoj per la nova <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr> <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="shift">⇧ Shift</span><span class="plus"> + </span>U</span>. Tio estos utila por la skribo de fremdaj vortoj. Tamen, ĉi tiu klavkombinaĵo eble estos nekongrua en kelkaj aplikoj.<br><br class="brcomplete">
+											La esperanta litero <span class="klav simbolo">Ŭ</span> defaŭlte anstataŭigas la klavon <span class="klav">Y</span>. Do, se vi volas skribi la literon <span class="klav simbolo">Y</span> dum via uzado de ĉi tiu klavarfasono, uzu la klavkombinaĵo <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>Y</span> (por minusklo) aŭ <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="shift">⇧ Shift</span><span class="plus"> + </span>Y</span> (por fari la majusklon), ambaŭ <abbr title="Ĉiam kiam vi volos tajpi latinajn literojn uzu na CAPS lock ŝaltita. CAPS lock ŝaltita + SHIFT faras majusklojn.">kun la klavo <span class="klav">⇪ CAPS Lock</span> ŝaltita.<span class="info_icon">i</span></abbr>
+											</p>
+											<p id="lunet_ne_text">Konsentite, vi ne povos skribi literojn kun lunetoj dum via uzado de ĉi tiu starlingŝava klavarfasono.<br><br class="brcomplete">
+											Tio ne influas la esperantan literon <span class="klav simbolo">Ŭ</span>, ĉar ĉi tiu litero defaŭlte anstataŭigas la klavon <span class="klav">Y</span>. Se vi volas skribi la literon <span class="klav simbolo">Y</span> dum via uzado de ĉi tiu klavarfasono, bonvolu uzi la klavkombinaĵo <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>Y</span> (por minusklo) aŭ <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="shift">⇧ Shift</span><span class="plus"> + </span>Y</span> (por fari la majusklon), ambaŭ <abbr title="Ĉiam kiam vi volos tajpi latinajn literojn uzu na CAPS lock ŝaltita. CAPS lock ŝaltita + SHIFT faras majusklojn.">kun la klavo <span class="klav">⇪ CAPS Lock</span> ŝaltita.<span class="info_icon">i</span></abbr></p>
+										</li>
+									</ul>
+								</div>
+								<br class="brcomplete" id="br6" style="display:none;">
+								<div id="div_greka">
+									<li>
+										<p class="demando"><span class="ekdem">Grekliteroj:</span> ĉu ebligi skribon de grekaj literoj?<br></p>
+									</li>
+									<p class="respondoj">
+										<input id="greka_jes" name="greka_fz" type="radio" value="jes" required onclick="montri_greka()"><label for="greka_jes">Jes, mi volas ebligi la skribo de tiu alfabeto per <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr>.<span class="defaŭlte">(defaŭlte)</span></label><br>
+										<input id="greka_ne" name="greka_fz" type="radio" value="ne" required onclick="montri_greka()"><label for="greka_ne">Ne, mi ne volas skribi tiun alfabeton per ĉi tiu klavarfasono.</label><br>
+									</p><br>
+									<div class="noto blua" id="greka_respondo" style="display:none;">
+										<ul class="horizontala">
+											<li><img class="info_png" src="info.png" alt="info_logo"></li>
+											<li>
+												<p id="greka_jes_text">Nun vi povos skribi literojn de la greka alfabeto per la nova <abbr title="Senpaŝklavoj estas klavoj, kies premo ne montras specifan skribsignon. Post ilia premo, oni devas tajpi alian klavon por montri certan modifitan skribsignon.">senpaŝklavo<span class="info_icon">i</span></abbr> <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="shift">⇧ Shift</span><span class="plus"> + </span>G</span>. Tio estos utila por skribi memstarajn literojn por, ekzemple, skribi matematikajn ekvaciojn. Ĝi ne estos komforte tajpi tutajn vortojn aŭ frazojn tiel, ĉar vi devos uzi la senpaŝklavon antaŭ ĉiu litero.</p>
+												<p id="greka_ne_text">Konsentite, vi ne povos skribi grekajn literojn dum via uzado de ĉi tiu starlingŝava klavarfasono.<br></p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<p id="butonoj">
+								<input id="ok_butono" type="submit" value="OK">
+								<input id="res_butono" type="button" value="Resumo" onclick="resumo()">
+								<input id="nul_butono" type="reset" onclick="nuligi(); /*location.href='keyman:cancel'; return false;*/" value="Nuligi">
+							</p>
+						</div>
+					</ol>
+				</form>
+			</main>
+			<div class="modal" id="modal">
+				<div class="modal-content">
+					<div id="modal_resumo_content" style="display:none;">
+						<span class="close" onclick="document.getElementById('modal').style.display =''">&times;</span>
+						<p id="res1"></p>
+						<ol style="text-align: left; ">
+							<li id="cxe_fino1" style="display:none;"><b class="ekdem">Ĉe: </b><span id="cxe_fino2"></span></li>
+							<li id="trema_fino1" style="display:none;"><b class="ekdem">Tremaoj: </b><span id="trema_fino2"></span></li>
+							<li id="dkorn_fino1" style="display:none;"><b class="ekdem">Dekstraj kornoj: </b><span id="dkorn_fino2"></span></li>
+							<li id="mdkorn_fino1" style="display:none;"><b class="ekdem">Maldekstraj kornoj: </b><span id="mdkorn_fino2"></span></li>
+							<li id="kcxapelo_fino1" style="display:none;"><b class="ekdem">Kontraŭĉapeloj: </b><span id="kcxapelo_fino2"></span></li>
+							<li id="lunet_fino1" style="display:none;"><b class="ekdem">Lunetoj: </b><span id="lunet_fino2"></span></li>
+							<li id="greka_fino1" style="display:none;"><b class="ekdem">Grekaj literoj: </b><span id="greka_fino2"></span></li>
+						</ol>
+					</div>
+					<div id="modal_nuligi_content" style="display:none">
+						<p>Konsentite. Viaj agordoj ne estis ŝanĝitaj.</p>
+						<p id="countdown"></p>
+					</div>
+				 </div>
+			</div>
+			<script type="text/javascript">
+				
+				function malmontri_afisxo_1() {
+					document.getElementById('afisxo_1').style.display = 'none';
+				}
+
+				/*function montri_demandojn() {
+					var diak_valoro = document.form.elements.diak.value;
+					var demandoj = document.getElementById('demandoj');
+						
+					let cxe_req = document.getElementsByName('cxe');
+					let trema_req = document.getElementsByName('trema_fz');
+					let mdkorn_req = document.getElementsByName('mdkorn_fz');
+					let dkorn_req = document.getElementsByName('dkorn_fz');
+
+					if(diak_valoro != 'JES') {
+						demandoj.style.display = 'none';
+						cxe_req.forEach((cxe) => cxe.removeAttribute('required'));
+						trema_req.forEach((trema_fz) => trema_fz.removeAttribute('required'));
+						dkorn_req.forEach((dkorn_fz) => dkorn_fz.removeAttribute('required'));
+						mdkorn_req.forEach((mdkorn_fz) => mdkorn_fz.removeAttribute('required'));
+
+					} else {
+						demandoj.style.display = '';
+						cxe_req.forEach((cxe) => cxe.setAttribute('required', ''));
+						trema_req.forEach((trema_fz) => trema_fz.setAttribute('required', ''));
+						dkorn_req.forEach((dkorn_fz) => dkorn_fz.setAttribute('required', ''));
+						mdkorn_req.forEach((mdkorn_fz) => mdkorn_fz.setAttribute('required', ''));
+					}
+				}*/
+
+				function montri_cxe() {
+					var cxe_valoro = document.form.elements.cxe.value;
+					var cxe_div = document.getElementById('cxe_respondo');
+					var cxe_shift = document.getElementById('cxe_shift_text');
+					var cxe_franca = document.getElementById('cxe_franca_text');
+					var cxe_ralt = document.getElementById('cxe_ralt_text');
+					var cxe_germana = document.getElementById('cxe_germana_text');
+					
+					cxe_shift.style.display = 'none';
+					cxe_franca.style.display = 'none';
+					cxe_ralt.style.display = 'none';
+					cxe_germana.style.display = 'none';
+
+					if (cxe_valoro != '') {
+						cxe_div.style.display = '';
+						document.getElementById('br1').style.display = '';
+
+						if (cxe_valoro == 'SHIFT') {
+							cxe_shift.style.display = '';
+
+						} else if (cxe_valoro == 'franca') {
+							cxe_franca.style.display = '';
+
+						} else  if (cxe_valoro == 'germana') {
+							cxe_germana.style.display = '';
+
+						} else {
+							cxe_ralt.style.display = '';
+						}
+
+					} else {
+						cxe_div.style.display = 'none';
+						document.getElementById('br1').style.display = 'none';
+					}
+
+					return cxe_valoro;
+				}
+
+				function montri_trema() {
+					var trema_valoro = document.form.elements.trema_fz.value;
+					var trema_div = document.getElementById('trema_respondo');
+					var trema_jes = document.getElementById('trema_jes_text');
+					var trema_umlauto = document.getElementById('trema_umlaŭto_text');
+					var trema_ne = document.getElementById('trema_ne_text');
+
+					trema_jes.style.display = 'none';
+					trema_umlauto.style.display ='none';
+					trema_ne.style.display = 'none';
+
+					if (trema_valoro != '') {
+						trema_div.style.display = '';
+						document.getElementById('br2').style.display = '';
+
+						if (trema_valoro == 'tremajes') {
+							trema_jes.style.display = '';
+
+						} else if (trema_valoro == 'umlaŭto') {
+							trema_umlauto.style.display ='';
+
+						} else {
+							trema_ne.style.display = '';
+						}
+
+					} else {
+						trema_div.style.display = 'none';
+						document.getElementById('br2').style.display = 'none';
+					}
+
+					return trema_valoro;
+				}
+
+				function montri_dkorn() {
+					var dkorn_valoro = document.form.elements.dkorn_fz.value;
+					var dkorn_div = document.getElementById('dkorn_respondo');
+					var dkorn_dk = document.getElementById('dekstra_korno_dk_text');
+					var dkorn_nedk = document.getElementById('dekstra_korno_nedk_text');
+					var dkorn_msupren = document.getElementById('malsuprenstreko_text');
+
+					dkorn_dk.style.display = 'none';
+					dkorn_nedk.style.display = 'none';
+					dkorn_msupren.style.display = 'none';
+
+					if (dkorn_valoro != '') {
+						dkorn_div.style.display = '';
+						document.getElementById('br3').style.display = '';
+
+						if (dkorn_valoro == 'dk') {
+							dkorn_dk.style.display = '';
+
+						} else if (dkorn_valoro == 'nedk') {
+							dkorn_nedk.style.display = '';
+
+						} else {
+							dkorn_msupren.style.display = '';
+						}
+					} else {
+						dkorn_div.style.display = 'none';
+						document.getElementById('br3').style.display = 'none';
+					}
+
+					return dkorn_valoro;
+				}
+
+				function montri_mdkorn() {
+					var mdkorn_valoro = document.form.elements.mdkorn_fz.value;
+					var mdkorn_div = document.getElementById('mdkorn_respondo');
+					var mdkorn_dk = document.getElementById('maldekstra_korno_dk_text');
+					var mdkorn_nedk = document.getElementById('maldekstra_korno_nedk_text');
+					var mdkorn_supren = document.getElementById('suprenstreko_text');
+
+					if (mdkorn_valoro != '') {
+						mdkorn_div.style.display = '';
+						document.getElementById('br4').style.display = '';
+						
+						mdkorn_dk.style.display = 'none';
+						mdkorn_nedk.style.display = 'none';
+						mdkorn_supren.style.display = 'none';
+
+						if (mdkorn_valoro == 'dk') {
+							mdkorn_dk.style.display = '';
+
+						} else if (mdkorn_valoro == 'nedk') {
+							mdkorn_nedk.style.display = '';
+
+						} else {
+							mdkorn_supren.style.display = '';
+						}
+
+					} else {
+						mdkorn_div.style.display = 'none';
+						document.getElementById('br4').style.display = 'none';
+					}
+
+					return mdkorn_valoro;
+				}
+
+				function montri_kcxapelo() {
+					var kcxapelo_valoro = document.form.elements.kcxapelo_fz.value;
+					var kcxapelo_div = document.getElementById('kcxapelo_respondo');
+					var kcxapelo_jes = document.getElementById('kcxapelo_jes_text');
+					var kcxapelo_ne = document.getElementById('kcxapelo_ne_text');
+
+					kcxapelo_jes.style.display = 'none';
+					kcxapelo_ne.style.display = 'none';
+
+					if (kcxapelo_valoro != '') {
+						kcxapelo_div.style.display = '';
+						document.getElementById('br5').style.display = '';
+						
+						if (kcxapelo_valoro == 'jes') {
+							kcxapelo_jes.style.display = '';
+
+						} else {
+							kcxapelo_ne.style.display = '';
+						}
+
+					} else {
+						kcxapelo_div.style.display = 'none';
+						document.getElementById('br5').style.display = 'none';
+					}
+
+					return kcxapelo_valoro;
+				}
+
+				function montri_luneto() {
+					var lunet_valoro = document.form.elements.lunet_fz.value;
+					var lunet_div = document.getElementById('lunet_respondo');
+					var lunet_jes = document.getElementById('lunet_jes_text');
+					var lunet_ne = document.getElementById('lunet_ne_text');
+
+					lunet_jes.style.display = 'none';
+					lunet_ne.style.display = 'none';
+
+					if (lunet_valoro != '') {
+						lunet_div.style.display = '';
+						document.getElementById('br6').style.display = '';
+						
+						if (lunet_valoro == 'jes') {
+							lunet_jes.style.display = '';
+
+						} else {
+							lunet_ne.style.display = '';
+						}
+
+					} else {
+						lunet_div.style.display = 'none';
+						document.getElementById('br6').style.display = 'none';
+					}
+
+					return lunet_valoro;
+				}
+
+				function montri_greka() {
+					var greka_valoro = document.form.elements.greka_fz.value;
+					var greka_div = document.getElementById('greka_respondo');
+					var greka_jes = document.getElementById('greka_jes_text');
+					var greka_ne = document.getElementById('greka_ne_text');
+
+					greka_jes.style.display = 'none';
+					greka_ne.style.display = 'none';
+
+					if (greka_valoro != '') {
+						greka_div.style.display = '';
+						//document.getElementById('br7').style.display = '';
+						
+						if (greka_valoro == 'jes') {
+							greka_jes.style.display = '';
+
+						} else {
+							greka_ne.style.display = '';
+						}
+
+					} else {
+						greka_div.style.display = 'none';
+						//document.getElementById('br7').style.display = 'none';
+					}
+
+					return greka_valoro;
+				}
+
+
+				var modal = document.getElementById("modal");
+				var modal_resumo = document.getElementById('modal_resumo_content');
+				window.onclick = function(fermi_modal) {
+					if (modal_resumo.style.display == 'block' && fermi_modal.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+
+				function resumo() {
+					modal.style.display = 'block';
+					modal_resumo.style.display = 'block';					
+
+					var res1 = document.getElementById('res1');
+					var cxe_fino1 = document.getElementById('cxe_fino1');
+					var cxe_fino2 = document.getElementById('cxe_fino2');
+					var trema_fino1 = document.getElementById('trema_fino1');
+					var trema_fino2 = document.getElementById('trema_fino2');
+					var dkorn_fino1 = document.getElementById('dkorn_fino1');
+					var dkorn_fino2 = document.getElementById('dkorn_fino2');
+					var mdkorn_fino1 = document.getElementById('mdkorn_fino1');
+					var mdkorn_fino2 = document.getElementById('mdkorn_fino2');
+					var lunet_fino1 = document.getElementById('lunet_fino1');
+					var lunet_fino2 = document.getElementById('lunet_fino2');
+					var greka_fino1 = document.getElementById('greka_fino1');
+					var greka_fino2 = document.getElementById('greka_fino2');
+
+					if (document.form.elements.cxe.value == '' && document.form.elements.trema_fz.value == '' && document.form.elements.dkorn_fz.value == '' && document.form.elements.mdkorn_fz.value == '' && document.form.elements.kcxapelo_fz.value == '' && document.form.elements.lunet_fz.value == '' && document.form.elements.greka_fz.value == '') {
+						res1.innerText = 'Vi ankoraŭ ne estis elektinta iujn ajn agordojn.';
+
+					} else {
+
+						res1.innerHTML = 'Jen la rezultaj klavkombinaĵoj, laŭ viaj agordoj: <br/><br class="complete"> \
+						<i>(LatL = Latina Litero)</i>';
+
+						if (montri_cxe() != '') {
+						cxe_fino1.style.display = '';
+							if (montri_cxe() == 'SHIFT') {
+								cxe_fino2.innerHTML = '<span class="klav"><span class="shift">⇧ SHIFT</span><span class="plus"> + </span>2<span class="plus"> ⇒ </span><span class="simbolo">@</span></span><br/><br class="brcomplete"/>';
+							} else if (montri_cxe() == 'franca') {
+								cxe_fino2.innerHTML = '<span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>0<span class="plus"> ⇒ </span><span class="simbolo">@</span></span><br/><br class="brcomplete"/>';
+							} else if (montri_cxe() == 'germana') {
+								cxe_fino2.innerHTML = '<span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>Ä<span class="plus"> ⇒ </span><span class="simbolo">@</span></span><br/><br class="brcomplete"/>';
+							} else {
+								cxe_fino2.innerHTML = '<span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span>2<span class="plus"> ⇒ </span><span class="simbolo">@</span></span><br/><br class="brcomplete"/>';
+							}
+						} else {
+							cxe_fino1.style.display = 'none';
+						}
+
+						if(montri_trema() != '') {
+							trema_fino1.style.display = '';
+							if (montri_trema() == 'tremajes') {
+								trema_fino2.innerHTML = '<span class="klav">¨<span class="plus"> &gt; </span>LatL<span class="plus"> ⇒ </span><span class="simbolo">tremaaĵo</span></span><br/>\
+								Ekzemple: <span class="klav">¨<span class="plus"> &gt; </span>A<span class="plus"> ⇒ </span><span class="simbolo">ä</span></span> | <span class="klav">¨<span class="plus"> &gt; </span>¨<span class="plus"> ⇒ </span><span class="simbolo">¨</span></span><br/><br class="brcomplete"/>';
+							} else {
+								trema_fino2.innerHTML = '<span class="klav">:<span class="plus"> &gt; </span>LatL<span class="plus"> ⇒ </span><span class="simbolo">tremaaĵo</span></span><br/>Ekzemple: <span class="klav">:<span class="plus"> &gt; </span>A<span class="plus"> ⇒ </span><span class="simbolo">ä</span></span> | <span class="klav">:<span class="plus"> &gt; </span>:<span class="plus"> ⇒ </span><span class="simbolo">:</span></span><br/><br class="brcomplete"/>';
+								}
+						} else {
+							trema_fino1.style.display = 'none';
+						}
+
+						if (montri_dkorn() != '') {
+							dkorn_fino1.style.display = '';
+							if (montri_dkorn() == 'dk') {
+								dkorn_fino2.innerHTML = '<span class="klav">´<span class="plus"> &gt; </span>LatL<span class="plus"> ⇒ </span><span class="simbolo">dekstrkornaĵo </span></span><br/> \
+								Ekzemple: <span class="klav">´<span class="plus"> &gt; </span>E<span class="plus"> ⇒ </span><span class="simbolo">é</span></span> | <span class="klav">´<span class="plus"> &gt; </span>´<span class="plus"> ⇒ </span><span class="simbolo">´</span></span><br/><br class="brcomplete"/>';
+							} else {
+								dkorn_fino2.innerHTML = '<span class="klav">&#47;<span class="plus"> + </span>LatL<span class="plus"> ⇒ </span><span class="simbolo">dekstrkornaĵo LatL</span></span><br/> \
+								Ekzemple: <span class="klav">&#47;<span class="plus"> &gt; </span>E<span class="plus"> ⇒ </span><span class="simbolo">é</span></span> | <span class="klav">&#47;<span class="plus"> &gt; </span>&#47;<span class="plus"> ⇒ </span><span class="simbolo">&#47;</span></span><br/><br class="brcomplete"/>';
+							}
+						} else {
+							dkorn_fino1.style.display = 'none';
+						}
+
+						if (montri_mdkorn() != '') {
+							mdkorn_fino1.style.display = '';
+							if (montri_mdkorn() == 'dk') {
+								mdkorn_fino2.innerHTML = '<span class="klav">`<span class="plus"> &gt; </span>LatL<span class="plus"> ⇒ </span><span class="simbolo">maldekstrkornaĵo</span></span><br/> \
+								Ekzemple: <span class="klav">`<span class="plus"> &gt; </span>E<span class="plus"> ⇒ </span><span class="simbolo">è</span></span> | <span class="klav">`<span class="plus"> &gt; </span>`<span class="plus"> ⇒ </span><span class="simbolo">`</span></span><br/><br class="brcomplete"/>';
+							} else {
+								mdkorn_fino2.innerHTML = '<span class="klav">&#92;<span class="plus"> &gt; </span>LatL<span class="plus"> ⇒ </span><span class="simbolo">maldekstrkornaĵo</span></span><br/> \
+								Ekzemple: <span class="klav">&#92;<span class="plus"> &gt; </span>E<span class="plus"> ⇒ </span><span class="simbolo">è</span></span> | <span class="klav">&#92;<span class="plus"> &gt; </span>&#92;<span class="plus"> ⇒ </span><span class="simbolo">&#92;</span></span><br/><br class="brcomplete"/>';
+							}
+						} else {
+							mdkorn_fino1.style.display = 'none';
+						}
+
+						if (montri_kcxapelo() != '') {
+							kcxapelo_fino1.style.display = '';
+							if (montri_kcxapelo() == 'jes') {
+								kcxapelo_fino2.innerHTML = '<span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="⇧ shift">⇧ SHIFT</span><span class="plus"> + </span>V<span class="plus"> &gt;</span> LatL<span class="plus"> ⇒ </span><span class="simbolo">kontraŭĉapelaĵo</span></span><br/> \
+								Ekzemple: <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="⇧ shift">⇧ SHIFT</span><span class="plus"> + </span>V<span class="plus"> &gt;</span> Z<span class="plus"> ⇒ </span><span class="simbolo">ž</span></span><br/><br class="brcomplete"/>';
+							} else {
+								kcxapelo_fino2.innerHTML = '<span style="color:red">Ne ekzistas</span><br/><br class="brcomplete"/>';
+							}
+						} else {
+							kcxapelo_fino1.style.display = 'none';
+						}
+
+						if (montri_luneto() != '') {
+							lunet_fino1.style.display = '';
+							if (montri_luneto() == 'jes') {
+								lunet_fino2.innerHTML = '<span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="⇧ shift">⇧ SHIFT</span><span class="plus"> + </span>U<span class="plus"> &gt;</span> LatL<span class="plus"> ⇒ </span><span class="simbolo">lunetaĵo</span></span><br/> \
+								Ekzemple: <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="⇧ shift">⇧ SHIFT</span><span class="plus"> + </span>U<span class="plus"> &gt;</span> A<span class="plus"> ⇒ </span><span class="simbolo">ă</span></span><br/><br class="brcomplete"/>';
+							} else {
+								lunet_fino2.innerHTML = '<span style="color:red">Ne ekzistas</span><br/><br class="brcomplete"/>';
+							}
+						} else {
+							lunet_fino1.style.display = 'none';
+						}
+
+						if (montri_greka() != '') {
+							greka_fino1.style.display = '';
+							if (montri_greka() == 'jes') {
+								greka_fino2.innerHTML = '<span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="⇧ shift">⇧ SHIFT</span><span class="plus"> + </span>G<span class="plus"> &gt;</span> LatL<span class="plus"> ⇒ </span><span class="simbolo">greka litero</span></span><br/> \
+								Ekzemple: <span class="klav"><span class="RALT">⇮ ALTGr</span><span class="plus"> + </span><span class="⇧ shift">⇧ SHIFT</span><span class="plus"> + </span>G<span class="plus"> &gt;</span> P<span class="plus"> ⇒ </span><span class="simbolo">π</span></span><br/><br class="brcomplete"/>';
+							} else {
+								greka_fino2.innerHTML = '<span style="color:red">Ne ekzistas</span><br/>';
+							}
+						} else {
+							greka_fino1.style.display = 'none';
+						}
+
+					}
+				}
+
+				// Ĉi tiu parto eblas nuligi la agordoj.
+				const A = 'La fenestro fermiĝos post <b>';
+				const B = ' </b>sekundoj.';
+				var countdown = document.getElementById('countdown');
+				var totalTime = 3;
+				
+				function updateClock() {
+					countdown.innerHTML = A + totalTime + B;
+					if (totalTime == 0) {
+						location.href="keyman:cancel";
+						return false;
+
+					} else{
+						totalTime -= 1;
+						setTimeout('updateClock()',1000);
+					}
+				}
+
+				function nuligi() {
+					document.getElementById('modal').style.display = 'block';
+					document.getElementById('modal_resumo_content').style.display = 'none';
+					document.getElementById('modal_nuligi_content').style.display = 'block';
+					updateClock();
+				}
+
+			</script>
+			<!-- Jen la skripto, kiu komunikas kun Keymano-->
+			<script type="text/javascript">
+				(function() { 
+					var loc = window.location.search.substr(1).split('&');
+					for(var i = 0; i < loc.length; i++)
+					{
+						var param = loc[i].split('=');
+						var key = decodeURIComponent(param[0]);
+						var val = decodeURIComponent(param[1]);
+						var elem = document.forms[0].elements[key];
+						if(elem)
+						{
+							if(typeof elem !== 'object' || typeof elem.length !== 'number') elem = [elem];
+								
+							for(var j = 0; j < elem.length; j++)
+								if(elem[j].type == 'checkbox' || elem[j].type == 'radio')
+									elem[j].checked = elem[j].value == val;
+								else
+									elem[j].value = val;
+						}
+					}
+				})();
+			</script>
+		</div>
+	</body>
+</html>
