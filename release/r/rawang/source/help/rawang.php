@@ -58,15 +58,15 @@ EXTRA;
 <p style='margin-left:40px'>For <span class='highlightExample'>></span>, type <span class='keys'>[RALT .]</span>.</p>
 
 </div>
-</div>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
-	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<p>High, low, and middle tones are available on long presses for keys: (a, e, i, o, u, v, ø)
+  Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<div id='osk-tablet' data-states='default shift'>
+<div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
+</div>
