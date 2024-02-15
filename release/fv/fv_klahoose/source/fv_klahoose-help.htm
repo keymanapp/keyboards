@@ -1,25 +1,38 @@
-<?php 
-  $pagename = 'Éy7á7juuthem Keyboard Help';
-  $pagetitle = 'Éy7á7juuthem Keyboard Help';
-  $pagestyle = <<<END
-  
-#wikitext table { margin: 12px; }
-#wikitext table td { border: solid 1px #888888 !important }
-#wikitext table th { border: solid 1px #888888 !important; background: #ffcccc }
-.lang2 {font-family:"Aboriginal Sans"}  
-END;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Éy7á7juuthem Keyman Web Help</title>
 
-  require_once('header.php');
-?>
+<style type="text/css"> <!--
+li {font-size: medium; margin-bottom: 5px; font-family: "Aboriginal Sans"; }
+p {font-family: "Aboriginal Sans"; }
+h2 {font-family: "Aboriginal Sans"; }
+.legalese { font-size: x-small; }
+h3 {font-family: "Aboriginal Sans";}
+a:link {color: #0000ee; text-decoration:none;}
+a:visited {	color: rgb(0,150,0); text-decoration:none;} 
+a:active {	color: rgb(102,117,184); text-decoration:none;}
+ --> </style>
 
+</head>
+
+<body>
 <p style='margin: 16px 0 0 0'>
 This keyboard is designed for the <b>Éy7á7juuthem</b> language of the BC Coast region of Canada.
 </p>
+
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
+
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'></div>
+
+<h3>Default</h3>
+<img src="help/fv_klahoose_layout_U_.png">
+
+<h3>Shifted</h3>
+<img src="help/fv_klahoose_layout_U_S.png">
 
 <ul>
 	<li>To type a combining symbol, first type the base alphabet character (such as <strong>a</strong>), and then type the symbol key (such as <strong>SEMICOLON ;</strong>).</li>
@@ -43,27 +56,18 @@ This keyboard is designed for the <b>Éy7á7juuthem</b> language of the BC Coast
 		<li>single ‹ Right-Alt+Shift+9 — › Right-Alt+Shift+0</li>
 		<li>double « Right-Alt+9 — » Right-Alt+0</li>
 	</ul>
-	<li>Some addtional characters are also available:</li>
-	<ul>
-		<li>Underdot (◌̣): type <strong>Backslash \</strong> (Example: n + Backslash = ṇ)</li>
-		<li>Diaeresis (◌̈): type <strong>Shift+Left-Bracket }</strong> (Example: c + Slash = c̈)</li>
-		<li>Tie-bar (◌͡◌) is typed between two letters using <strong>Shift+Backslash |</strong> (Example: n + Slash + n = n͡n)</li>
-	</ul>
 </ul> 
 
 <p>The following Unicode fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
 
 <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
-
-
+    
 <h2>Mobile Touch Layout</h2>
-
-<div id='osk-tablet' data-states='default shift'></div>
 
 <p>Long-press options are available. The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</p>
 
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
-<tr >
+	<tr >
 <td  align='center'>q q̓</td>
 <td  align='center'>w w̓ w̥</td>
 <td  align='center'>ɛ e</td>
@@ -99,11 +103,10 @@ This keyboard is designed for the <b>Éy7á7juuthem</b> language of the BC Coast
 <td  colspan='2'>&nbsp;</td></tr>
 </table>
 
-
 <div class='vspace'></div><h3>Alternate Names</h3>
 <ul>
 <li>ʔayʔaǰuθəm</li>
-</li>Comox</li>
+<li>Comox</li>
 <li> Comox-Sliammon</li>
 <li>Homalco-Klahoose-Sliammon</li>
 <li>Saɬuɬtxʷ</li>
@@ -111,4 +114,5 @@ This keyboard is designed for the <b>Éy7á7juuthem</b> language of the BC Coast
 </ul>
 
 
-
+</body>
+</html>
