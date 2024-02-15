@@ -89,7 +89,7 @@ require_once('header.php');
         <div class="boxes">
             <div class="box box-3">
                 <div>bkn</div><div>=</div><div><span class="special-char">Bonan Kristnaskon</span></div>
-                <div>bps</div><div>=</div><div><span class="special-char">Bonan Paskvon</span></div>
+                <div>bps</div><div>=</div><div><span class="special-char">Bonan Paskon</span></div>
                 <div>fkn</div><div>=</div><div><span class="special-char">Feliĉan Kristnaskon</span></div>
             </div>
 
