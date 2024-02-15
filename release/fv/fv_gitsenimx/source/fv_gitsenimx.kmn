@@ -1,12 +1,12 @@
-﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.1"
+﻿store(&VERSION) "10.0.1"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "git"
-store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
-store(&NAME) 'Gitsenimx̱'
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&NAME) 'Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱'
 store(&BITMAP) 'fv_gitsenimx.ico'
 store(&VISUALKEYBOARD) 'fv_gitsenimx.kvks'
 store(&KMW_HELPFILE) 'fv_gitsenimx_kmw_help.htm'
+store(&KEYBOARDVERSION) '10.0.1'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -37,14 +37,12 @@ store(&LAYOUTFILE) "fv_gitsenimx.keyman-touch-layout"
 + [SHIFT T_J] > 'J' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON_0] > '"' layer('default')
-+ [SHIFT T_COLON] > "'" layer('default')
 + [SHIFT T_Z] > 'X̱' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > '!' layer('default')
 + [SHIFT T_C] > '?' layer('default')
-+ [SHIFT T_V_0] > ',' layer('default')
-+ [SHIFT T_V] > '.' layer('default')
++ [SHIFT T_V_0] > U+0022 layer('default')
++ [SHIFT T_V] > U+0027 layer('default')
 + [SHIFT T_B] > 'B' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
@@ -61,20 +59,18 @@ store(&LAYOUTFILE) "fv_gitsenimx.keyman-touch-layout"
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
-+ [T_F] > 'f'
-+ [T_G] > 'g̱'
++ [T_F] > 'g̱'
++ [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'j'
 + [T_K] > 'k'
 + [T_L] > 'l'
-+ [T_COLON_0] > '"'
-+ [T_COLON] > "'"
 + [T_Z] > 'x̱'
 + [T_X] > 'x'
 + [T_C_0] > '!'
 + [T_C] > '?'
-+ [T_V_0] > ','
-+ [T_V] > '.'
++ [T_V_0] > U+0022
++ [T_V] > U+0027
 + [T_B] > 'b'
 + [T_N] > 'n'
 + [T_M] > 'm'

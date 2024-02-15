@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0" 
-store(&KEYBOARDVERSION) '1.1.1'
+store(&KEYBOARDVERSION) '1.2.0'
 store(&NAME) 'Indic Romanization from ITRANS'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '©2019 sanskritdocuments.org'
+store(&COPYRIGHT) '© sanskritdocuments.org'
 store(&MESSAGE) 'Indic Roman Transliteration (IAST, ISO, NLK, etc.) from ITRANS'
 store(&KMW_HELPTEXT) 'Provides Unicode output in ISO_15919, IAST, NLK transliteration schemes for Indic languages. Also has support for IPA vowels output.'
 store(&BITMAP) 'itrans_roman.ico'
@@ -41,6 +41,7 @@ c Exceptions - avagraha and double dot
 "̤" + "."> "."
 + "'" > U+02BC
 U+02BC + "'" > "'"
+"'" + "'" > U+2019
 
 c Double for original character
 "," + "," > ","
@@ -50,6 +51,7 @@ c Double for original character
 "_" + "_" > "_"
 "~" + "~" > "~"
 "'" + "'" > "'"
+c any(apos) + any(apos) > context(1)
 ":" + ":" > ":"
 "`" + "`" > "`"
 '"' + '"' > '"'

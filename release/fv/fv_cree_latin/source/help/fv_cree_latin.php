@@ -18,6 +18,14 @@ This keyboard is designed for the <b>Cree - Roman Orthography</b> language of th
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
+<img src="fv_cree_latinU_.png" alt="" height="198" width="514" border="0" /></h2>
+					<ul>
+          <li>To type the acute accent use the Left-Bracket key [ — á is typed a then Left Bracket [</li>
+						<li>To type the circumflex accent use the Right-Bracket key ] — ê is typed a then Right-Bracket ]</li>
+						<li>To type the macron accent use the Backslash Key \ — ō is typed o then Backslash \ </li>
+            <li>To type the caron/hachek accent use the 1 key — š is typed s then 1</li>
+						<li>You can type the original English punctuation by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
+</ul>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>

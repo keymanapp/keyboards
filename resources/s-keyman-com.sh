@@ -106,12 +106,17 @@ function upload_keyboards {
 #
 
 function upload_fonts {
-  local fontname
-  for fontname in "$KEYBOARDROOT/release/shared/fonts/"*/* ; do
+  local fontname=
+
+  # search for .ttf, .otf, .woff, .woff2; handles whitespace in filenames
+
+  find "$KEYBOARDROOT/release/shared/fonts/" -type f \
+    -regex '.+\.woff' -print0 -or \
+    -regex '.+\.woff2' -print0 -or \
+    -regex '.+\.ttf' -print0 -or \
+    -regex '.+\.otf' -print0 |
+  while IFS= read -r -d '' fontname; do
     local base_fontname=$(basename "$fontname")
-    if [[ "$base_fontname" == '*' ]]; then
-      return 0
-    fi
 
     echo "Uploading $base_fontname"
     cp -f "$fontname" "$S_KEYMAN_COM/font/deploy/$base_fontname"
