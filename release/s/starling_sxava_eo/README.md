@@ -1,4 +1,4 @@
-Starlingŝava Esperanto keyboard
+starling_sxava_eo keyboard
 ==============
 
 Version 1.0
