@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.2"
+store(&KEYBOARDVERSION) "9.3"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "hax"
-store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'X̱aayda-X̱aad Kil'
 store(&BITMAP) 'fv_hlgaagilda_xaayda_kil.ico'
 store(&VISUALKEYBOARD) 'fv_hlgaagilda_xaayda_kil.kvks'
@@ -13,6 +13,11 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+c --- STORES AND RULES FOR TOUCH AND DESKTOP RULES ---
+store(NeedsCombMacB) 'gkxGKX'
+store(CombMacB) [T_F] [SHIFT T_F] [K_COLON]
+
+any(NeedsCombMacB) + any(CombMacB) > index(NeedsCombMacB,1) U+0331
 
 c --- START OF TOUCH LAYOUT RULES ---
 
@@ -42,14 +47,8 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
-'k' + [SHIFT T_F] > 'ḵ'
-'g' + [SHIFT T_F] > 'g̱'
-'x' + [SHIFT T_F] > 'x̱'
-'K' + [SHIFT T_F] > 'Ḵ'
-'G' + [SHIFT T_F] > 'G̱'
-'X' + [SHIFT T_F] > 'X̱'
 + [SHIFT T_G_0] > 'G̱' layer('default')
-+ [SHIFT T_G_1] > 'Ĝ' layer('default')
++ [SHIFT T_G_1] > 'Ĝ' layer('default')
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'J' layer('default')
@@ -91,14 +90,8 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
-'k' + [T_F] > 'ḵ'
-'g' + [T_F] > 'g̱'
-'x' + [T_F] > 'x̱'
-'K' + [T_F] > 'Ḵ'
-'G' + [T_F] > 'G̱'
-'X' + [T_F] > 'X̱'
 + [T_G_0] > 'g̱'
-+ [T_G_1] > 'ĝ'
++ [T_G_1] > 'ĝ'
 + [T_G] > 'g'
 + [T_H] > 'h'
 + [T_J] > 'j'
@@ -118,6 +111,53 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_M] > 'm'
 
 c --- END OF TOUCH LAYOUT RULES ---
+
+c Stacking prevention rules
+
+store(AboveAccents) U+0301 U+0300 U+0302
+store(AboveKeys) [K_BKQUOTE] [SHIFT K_BKQUOTE] [SHIFT K_6] [K_BKSLASH]
+store(BelowAccents) U+0331
+store(BelowKeys) [K_COLON]
+store(NonLetters) '°1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
+
+c Stacking prevention
+
+any(AboveAccents) + any(AboveKeys) > context beep
+any(AboveAccents) + any(BelowKeys) > context beep
+any(BelowAccents) + any(AboveKeys) > context beep
+any(BelowAccents) + any(BelowKeys) > context beep
+any(HasAcute) + any(AboveKeys) > context beep
+any(HasAcute) + any(BelowKeys) > context beep
+any(HasGrave) + any(AboveKeys) > context beep
+any(HasGrave) + any(BelowKeys) > context beep
+any(HasCircumflex) + any(AboveKeys) > context beep
+any(HasCircumflex) + any(BelowKeys) > context beep
+any(NonLetters) + any(AboveKeys) > context beep
+any(NonLetters) + any(BelowKeys) > context beep 
+
+c Single Output
+
+store(BaseVowels) 'aeiouAEIOU'
+store(BaseG) 'gG'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
+store(HasGrave) 'àèìòùÀÈÌÒÙ'
+store(HasCircumflex) 'ĝĜ'
+store(Acute) [K_BKQUOTE]
+store(Circumflex) [SHIFT K_6]
+store(Grave) [SHIFT K_BKQUOTE]
+
+any(BaseVowels) + any(Acute) > index(HasAcute,1)
+any(BaseVowels) + any(Grave) > index(HasGrave,1)
+any(BaseG) + any(Circumflex) > index(HasCircumflex,1)
+
+c Backspace rule
+
+store(Backspace) [K_BKSP]
+
+any(HasAcute) + any(Backspace) > index(BaseVowels,1)
+any(HasGrave) + any(Backspace) > index(BaseVowels,1)
+any(HasCircumflex) + any(Backspace) > index(BaseG,1)
+
 
 c original punctuation
 + [RALT K_PERIOD] > '>'
