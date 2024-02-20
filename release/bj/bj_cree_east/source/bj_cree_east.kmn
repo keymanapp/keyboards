@@ -36,10 +36,10 @@ c updated stores for developer version 9.0
 store(&VERSION) '10.0'
 store(&NAME) "BJCreeUNI (east)"
 store(&BITMAP) 'bj_cree_east.ico'
-store(&COPYRIGHT) 'Copyright (c) Bill Jancewicz NDC/SIL'
+store(&COPYRIGHT) 'Copyright (c) Bill Jancewicz'
 c store(&ETHNOLOGUECODE) 'crl'
 store(&VISUALKEYBOARD) 'bj_cree_east.kvks'
-store(&KEYBOARDVERSION) '9.1.1'
+store(&KEYBOARDVERSION) '9.2.0'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'bj_cree_east.keyman-touch-layout'
 
@@ -218,8 +218,8 @@ c Convert consonant followed by vowels into syllable:
     any(CC) U+1404 > index(Cii,1)
     any(CC) U+1405 > index(Cu,1)
     any(CC) U+1406 > index(Cuu,1)
-c    any(CC) U+1405 > index(Co,1) c duplicate of line 221 (Co and Cu have same contents)
-c    any(CC) U+1406 > index(Coo,1) c duplicate of line 222 (Coo and Cuu have same contents)
+c    any(CC) U+1405 > index(Co,1) c duplicate of line 219 (Co and Cu have same contents)
+c    any(CC) U+1406 > index(Coo,1) c duplicate of line 220 (Coo and Cuu have same contents)
     any(CC) U+140A > index(Ca,1)
     any(CC) U+140B > index(Caa,1)
 
@@ -254,16 +254,24 @@ c Special rule for Christ (remember, ch is already c)
 c ch   ri   s    t   > christ symbol
     U+14A1 U+1546 U+1505 U+1466 > U+166D
 
+c This was all new!!!
+c ----
 c short vowels
 if(option_key = '') U+1427 any(C_ef) > index(C_efc,3)
 
 c long vowels
-if(option_key = '') any(C_ef_long_a) U+140A > index(C_efc_long_a,2)
 if(option_key = '') U+1427 U+1559 U+140A > U+155B c fwaa
 if(option_key = '') U+1427 U+1566 U+140A > U+1568 c thwaa
 
+if(option_key = '') any(C_ef_long_a) U+140A > index(C_efc_long_a,2)
 if(option_key = '') any(C_ef_long_i) U+1403 > index(C_efc_long_i,2)
 if(option_key = '') any(C_ef_long_u) U+1405 > index(C_efc_long_u,2)
+
+if(option_key = '') any(C_efc_long_a) U+1405 > index(C_efc_long_a,2) U+1424 c this fixes the issue for waau, twaau, chwaau, swaau outputting wrong NFC
+if(option_key = '') any(C_efc_long_i) U+1405 > index(C_efc_long_i,2) U+1424 c wiiu twiiu chwiiu swiiu 
+if(option_key = '') any(C_efc_long_u) U+1405 > index(C_efc_long_u,2) U+1424 c wuuu twuuu chwuuu swuuu 
+
+c ----
 
 c If we did anything, then go back through again
     match > use(MakeSyllables)
