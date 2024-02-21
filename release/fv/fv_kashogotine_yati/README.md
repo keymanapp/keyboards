@@ -19,3 +19,6 @@ Supported Platforms
  * Web
  * Mobile
 
+TODO
+-------------------
+* Consult with community on if they prefer IPA Schwa (U+018F) or Latin small letter turned E (U+01DD).

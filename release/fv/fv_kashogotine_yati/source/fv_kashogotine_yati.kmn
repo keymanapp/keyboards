@@ -18,8 +18,12 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) "fv_kashogotine_yati.keyman-touch-layout"
 
+'ǝ' + [SHIFT T_ACU] > 'ǝ́'
+'ǝ̨' + [SHIFT T_ACU] > 'ǝ̨́'
 'ı' + [SHIFT T_ACU] > 'ı́'
 'ı̨' + [SHIFT T_ACU] > 'ı̨́'
+'Ǝ' + [SHIFT T_ACU] > 'Ǝ̨'
+'Ǝ̨' + [SHIFT T_ACU] > 'Ǝ̨́'
 'I' + [SHIFT T_ACU] > 'Í'
 'Į' + [SHIFT T_ACU] > 'Į́'
 + [SHIFT T_W] > 'W' layer('default')
@@ -64,16 +68,24 @@ store(&LAYOUTFILE) "fv_kashogotine_yati.keyman-touch-layout"
 + [SHIFT T_Z] > 'Z' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
+'ǝ' + [SHIFT T_OGO] > 'ǝ̨'
+'ǝ́' + [SHIFT T_OGO] > 'ǝ̨́'
 'ı' + [SHIFT T_OGO] > 'ı̨'
 'ı́' + [SHIFT T_OGO] > 'ı̨́'
+'Ǝ' + [SHIFT T_OGO] > 'Ǝ̨'
+'Ǝ́' + [SHIFT T_OGO] > 'Ǝ̨́'
 'I' + [SHIFT T_OGO] > 'Į'
 'Í' + [SHIFT T_OGO] > 'Į́'
 + [SHIFT T_GLOT] > 'Ɂ' layer('default')
 + [SHIFT T_B] > 'B' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
+'ǝ' + [T_ACU] > 'ǝ́'
+'ǝ̨' + [T_ACU] > 'ǝ̨́'
 'ı' + [T_ACU] > 'ı́'
 'ı̨' + [T_ACU] > 'ı̨́'
+'Ǝ' + [T_ACU] > 'Ǝ̨'
+'Ǝ̨' + [T_ACU] > 'Ǝ̨́'
 'I' + [T_ACU] > 'Í'
 'Į' + [T_ACU] > 'Į́'
 + [T_W] > 'w'
@@ -118,10 +130,16 @@ store(&LAYOUTFILE) "fv_kashogotine_yati.keyman-touch-layout"
 + [T_Z] > 'z'
 + [T_X] > 'x'
 + [T_C] > 'c'
+'ǝ' + [T_OGO] > 'ǝ̨'
+'ǝ́' + [T_OGO] > 'ǝ̨́'
 'ı' + [T_OGO] > 'ı̨'
 'ı́' + [T_OGO] > 'ı̨́'
+'Ǝ' + [T_OGO] > 'Ǝ̨'
+'Ǝ́' + [T_OGO] > 'Ǝ̨́'
 'I' + [T_OGO] > 'Į'
 'Í' + [T_OGO] > 'Į́'
+
+
 + [T_GLOT] > 'ɂ'
 + [T_B] > 'b'
 + [T_N] > 'n'
@@ -134,10 +152,10 @@ c --- DESKTOP AND MOBILE STORES ---
 store(StanVowels) 'aeouAEOU' c stan short for standard
 store(HasAcute) 'áéóúÁÉÓÚ'
 store(HasOgonek) 'ąęǫųĄĘǪŲ'
-store(Schwa) 'əƎ'
-store(AcuteKeys) [T_ACU] [SHIFT T_ACU] [K_SLASH]
-store(OgonekKeys) [T_OGO] [SHIFT T_OGO] [K_LBRKT]
-store(AcuOgoKey) [K_RBRKT]
+store(Schwa) 'ǝƎ'
+store(AcuteKeys) [T_ACU] [SHIFT T_ACU] [K_LBRKT]
+store(OgonekKeys) [T_OGO] [SHIFT T_OGO] [K_RBRKT]
+store(AcuOgoKey) [K_BKSLASH]
 
 any(StanVowels) + any(AcuteKeys) > index(HasAcute,1)
 any(Schwa) + any(AcuteKeys) > index(Schwa,1) U+0301
@@ -158,7 +176,7 @@ c --- language keys ---
 + [K_BKSLASH] > U+0328 U+0301 c combining ogonek + combining acute
 + [K_COLON] > 'ł'
 + [SHIFT K_COLON] > 'Ł'
-+ [K_3] > 'ə'
++ [K_3] > 'ǝ'
 + [SHIFT K_3] > 'Ǝ'
 + [K_I] > 'ı'
 + [K_SLASH] > 'ɂ'
@@ -179,11 +197,15 @@ c --- original punctuation ---
 
 c --- ordering rules for non-standard vowels ---
 
-'ə́' + [K_LBRKT] > 'ə̨́'
-'ə́' + [K_RBRKT] > 'ə̨́'
-'ə̨̨̨̨' + [K_RBRKT] > 'ə̨́'
-'ə̨̨̨̨' + [K_SLASH] > 'ə̨́'
-'ə̨́' + [K_RBRKT] > 'ə̨́'
+'ǝ́' + [K_LBRKT] > 'ǝ̨́'
+'ǝ́' + [K_RBRKT] > 'ǝ̨́'
+'ǝ̨' + [K_RBRKT] > 'ǝ̨́'
+'ǝ̨' + [K_SLASH] > 'ǝ̨́'
+'ǝ̨́' + [K_RBRKT] > 'ǝ̨́'
+'Ǝ́' + [K_LBRKT] > 'Ǝ̨́'
+'Ǝ́' + [K_RBRKT] > 'Ǝ̨́'
+'Ǝ̨' + [K_RBRKT] > 'Ǝ̨́'
+'Ǝ̨' + [K_SLASH] > 'Ǝ̨́'
 
 'ı́' + [K_LBRKT] > 'ı̨́'
 'ı́' + [K_RBRKT] > 'ı̨́'
