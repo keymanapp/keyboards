@@ -16,8 +16,8 @@
   History:          18 Sep 2009 - mcdurdin - Full help
 */
   require_once('servervars.php');
-  $pagename = 'Tamil Anjal Paangu Keyboard Help';
-  $pagetitle = 'Tamil Anjal Paangu Keyboard Help';
+  $pagename = 'Tamil Anjal Paangu (deprecated) Keyboard Help';
+  $pagetitle = 'Tamil Anjal Paangu (deprecated) Keyboard Help';
   $style = '.lang2 {font-size:130%}';
   $relatedSites = array("http://$site_tavultesoft/tamil" => "Tamil Keyboards Home");
 

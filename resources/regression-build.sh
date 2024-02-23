@@ -68,6 +68,7 @@ function regression_build {
   if $USE_LEGACY_COMPILER; then
     $KMCOMP_LAUNCHER "$KMCOMP" | grep -- '-use-legacy-compiler' && USE_LEGACY_COMPILER_FLAG=-use-legacy-compiler
   fi
+  set -o pipefail
 
   if [ ! -z "$BUILDPATH" ]; then
     if $SHOULD_CLEAN; then

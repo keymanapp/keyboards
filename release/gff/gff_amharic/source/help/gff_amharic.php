@@ -5,7 +5,7 @@
   Description:      
   Create Date:      18 Sep 2009
 
-  Modified Date:    12 Nov 2022
+  Modified Date:    06 April 2023
   Authors:          dyacob, mcdurdin, pbaehr
   Related Files:    
   Dependencies:     
@@ -265,35 +265,6 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 
 </div>
 
-<div id="VersionHistory">
-<h3>Version History</h3>
-<dl>
-  <dt>Version 3.1, 12 Nov 2022</dt>
-  <dd>Lighter CSS with wildcard selectors.</dd>
-  <dt>Version 3.0, 22 Oct 2022</dt>
-  <dd>Dynamic modifier key updates.</dd>
-  <dt>Version 2.3, 22 Oct 2022</dt>
-  <dd>Fixes to several problems with vowel input for touch platform.</dd>
-  <dt>Version 2.2, 19 Jul 2021</dt>
-  <dd>Extensions for Unicode 14</dd>
-  <dd>Addition of the Abyssinica SIL (Connected)</dd>
-  <dt>Version 2.1, 11 Apr 2021</dt>
-  <dd>CSS Colored keys.</dd>
-  <dt>Version 2.0, 1 Dec 2020</dt>
-  <dd>Addition of new style touch keyboard.</dd>
-  <dt>Version 1.9, 22 Jan 2020</dt>
-  <dd>Package migration to Abyssinica SIL 2.000</dd>
-  <dt>Version 1.8, 9 Mar 2019</dt>
-  <dd>Fix to recognize apostrophe after Salis forms.</dd>
-  <dt>Version 1.7, 1 Dec 2018</dt>
-  <dd>The apostrophe composition stopper added between lone vowels. </dd>
-  <dt>Version 1.6, 6 Sep 2018</dt>
-  <dd>The apostrophe composition stopper added after Ka'ib and Salis forms to support some special case words.</dd>
-  <dt>Version 1.5, 16 May 2018</dt>
-  <dd>Hashmark (#) replaces apostrophe for Ethiopic numeral composition to avoid "smart quotes" issues.</dd>
-  <dt>Version 1.4, 7 May 2015</dt>
-  <dd>Added letters ኸ Ke ኹ Ku ኺ Ki ኻ Ka ኼ Kie ኽ K ኾ Ko to the touch layouts.</dd>
-</dl>
 
 <div id="Author">
 <h3>Keyboard Authorship</h3>
@@ -304,7 +275,7 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL International 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2022 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2023 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>

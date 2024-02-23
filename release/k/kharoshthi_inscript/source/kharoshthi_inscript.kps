@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Kharoshthi Inscript</Name>
-    <Copyright URL="">©Joshua Wong</Copyright>
+    <Copyright URL="">© Joshua Wong</Copyright>
     <Author URL="">Joshua Wong</Author>
     <Version URL=""></Version>
   </Info>
@@ -33,12 +33,6 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>NotoSansKharoshthi-Regular.ttf</Name>
-      <Description>Font Noto Sans Kharoshthi Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>kharoshthi_desktopshifted.png</Name>
@@ -94,14 +88,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Khar\NotoSansKharoshthi-Regular.ttf</Name>
+      <Description>Font Noto Sans Kharoshthi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Kharoshthi Inscript</Name>
       <ID>kharoshthi_inscript</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>NotoSansKharoshthi-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansKharoshthi-Regular.ttf</DisplayFont>
+      <Version>1.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Khar\NotoSansKharoshthi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Khar\NotoSansKharoshthi-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="sa-Khar">Sanskrit (Kharoshthi)</Language>
       </Languages>

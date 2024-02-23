@@ -5,8 +5,8 @@
 
   Authors:     John Durdin
 */
-  $pagename = 'Kmhmu 2008 Keyboard Help';
-  $pagetitle = 'Kmhmu 2008 Keyboard Help';
+  $pagename = 'Kmhmu 2008 (deprecated) Keyboard Help';
+  $pagetitle = 'Kmhmu 2008  (deprecated) Keyboard Help';
   require_once('header.php');
 ?>
 <link rel="stylesheet" media="screen" href="keydocs.css" type="text/css" />

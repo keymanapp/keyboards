@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Kmhmu 2008 Keyboard Help';
-  $pagetitle = 'Kmhmu 2008  Keyboard Help';
+  $pagename = 'Kmhmu 2008 (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   $style = <<<EXTRA
   p { font: 10pt Tahoma }
   h1 { font: bold 16pt Tahoma; color: #4444cc;margin-bottom: 2px; }

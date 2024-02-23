@@ -5,7 +5,7 @@ Colchis Latin Keyboard
 
 Description
 -----------
-This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages as used in Georgia.
+This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages.
 
 Links
 -----

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -59,12 +59,6 @@
       <FileType>.ico</FileType>
     </File>
     <File>
-      <Name>NotoSansHatran-Regular.ttf</Name>
-      <Description>Font Noto Sans Hatran Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>hatran_desktopdefault.png</Name>
       <Description>File hatran_desktopdefault.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -76,14 +70,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Hatr\NotoSansHatran-Regular.ttf</Name>
+      <Description>Font Noto Sans Hatran Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Hatr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hatran Inscript</Name>
       <ID>hatran_inscript</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSansHatran-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansHatran-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Hatr\NotoSansHatran-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Hatr\NotoSansHatran-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="arc-Hatr">Official Aramaic (700-300 BCE) (Hatran)</Language>
       </Languages>

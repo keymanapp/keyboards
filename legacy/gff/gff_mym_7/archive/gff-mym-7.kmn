@@ -1,0 +1,209 @@
+﻿c =====================Begin Identity Section=================================================== c
+c
+c Mnemonic input method for Me'en, Mursi, Suri & Dizi script on US-QWERTY
+c keyboards for Keyman version 7.1, compliant with Unicode 4.1 and later.
+c
+c License       :  http://creativecommons.org/licenses/by/3.0/
+c Info          :  http://keyboards.ethiopic.org/
+c Keyman        :  http://www.tavultesoft.com/
+c Bugs          :  keyboards@ethiopic.org
+c
+c Specification : http://keyboards.ethiopic.org/specification/
+c
+c Updates       :  ftp://ftp.ethiopic.org/pub/keyboards/Keyman/7.0/
+c Last Update   :  2008-11-10
+c
+
+store(&Version) "7.0"
+store(&Name) "Me'en"
+store(&Bitmap) "../Bitmaps/MaiMe.bmp"
+store(&MnemonicLayout) "1"
+store(&CapsAlwaysOff) "1"
+store(&Copyright) "Creative Commons Attribution 3.0"
+store(&Message) "This is a Me'en, Mursi, Suri & Dizi language mnemonic input method for Ethiopic script that requires Unicode 4.1 support."
+store(&EthnologueCode) "mym muz suq mdx"
+store(&VisualKeyboard) 'gff-mym-7.kvk'
+HOTKEY "^%M"
+c
+c =====================End Identity Section=====================================================
+
+c =====================Begin Data Section=======================================================
+
+c ---------------------Maps of Syllabic Forms---------------------------------------------------
+c the following is universal (language neutral) these mappings can be overridden by
+c language specific mappings
+store(gIz)  'ሀለመረሰሸቀበተቸኀነኘአከወዘየደዸጀገጠጨጰፀፐ'
+store(kaIb) 'ሁሉሙሩሱሹቁቡቱቹኁኑኙኡኩዉዙዩዱዹጁጉጡጩጱፁፑ'
+store(sals) 'ሂሊሚሪሲሺቂቢቲቺኂኒኚኢኪዊዚዪዲዺጂጊጢጪጲፂፒ'
+store(rabI) 'ሃላማራሳሻቃባታቻኃናኛኣካዋዛያዳዻጃጋጣጫጳፃፓ'
+store(hams) 'ሄሌሜሬሴሼቄቤቴቼኄኔኜኤኬዌዜዬዴዼጄጌጤጬጴፄፔ'
+store(sads) 'ህልምርስሽቅብትችኅንኝእክውዝይድዽጅግጥጭጵፅፕ'
+store(sabI) 'ሆሎሞሮሶሾቆቦቶቾኆኖኞኦኮዎዞዮዶዾጆጎጦጮጶፆፖ'
+c
+c ኅ is mapped to the F key for convenience -this should not pose a problem
+c since the ፈ family does not  occur in these languages. F is adjacent to the G
+c key which also correpsonds nicely with the phonetic proximity of g to ŋ.
+c
+store(keys) 'hlmrsxqbtcfnNekwzydDjgTCPSp'
+c the following is Me'en specific
+store(extraKeys) 'LHMRXBVvQWKYJZGF'
+store(extraSads) 'ልህምርሽብብብቅውክይጅዝግኅ'
+c ---------------------End Maps of Syllabic Forms-----------------------------------------------
+
+c ---------------------Begin Maps of Me'en Forms------------------------------------------------
+c letters that map to Me'en/Mursi/Suri/Dizi
+store(sabIMeen) 'ሆሎሞሮሶሾቆቦቶቾኆኖኞኦኮዎዞዮዶዾጆጎጦጮጶፆፖ'
+store(samen)    'ሇⶀⶁⶂⶃⶄቇⶅⶆⶇኇⶈⶉⶊኯዏⶋዯⶌⶍⶎጏⶏⶐⶑፇⶒ'
+c ---------------------End Maps of Me'en Forms--------------------------------------------------
+
+c ---------------------Maps for Vowels----------------------------------------------------------
+store(loneVowelKeys)  'aAuUiIeEoO'
+store(loneVowelEthio) 'አአኡኡኢኢእእኦኦ'
+store(composableVowel) 'አኡኢእኦ'
+c ---------------------End Vowel Maps-----------------------------------------------------------
+
+c --------------------Maps for Labiovelars------------------------------------------------------
+c
+c Bench does not make use of the labiovelars
+c
+c ---------------------End Labiovelars----------------------------------------------------------
+
+c ---------------------Maps for Numbers---------------------------------------------------------
+store(arabNumbers) '123456789'
+store(arabNumbersWithZero) '0123456789'
+store(ColonOrComma) ':,'
+store(ethWordspaceOrComma) '፡፣'
+c ---------------------End Numbers--------------------------------------------------------------
+
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+store(gIz-key)  'eEäÄéÉèÈêÊëË'
+store(kaIb-key) 'uUùÙúÚûÛüÜ'
+store(sals-key) 'iIìÌíÍîÎïÏ'
+store(rabI-key) 'aAàÀáÁâÂãÃåÅ'
+store(hams-key) 'æÆ'
+store(sabI-key) 'oOòÒóÓôÔõÕöÖøØ'
+c ---------------------Maps of Keystrokes of Syllabic Forms-------------------------------------
+
+c =====================End Data Section=========================================================
+
+c =====================Begin Functional Section=================================================
+c
+begin Unicode > use(main)
+group(main) using keys
+
+c ---------------------Input of Special Symbols-------------------------------------------------
+c
+c The input section here is for rules that must precede other rules
+c
+  + '_' > U+135F c gemination
+  U+135F + '_' > '_'
+
+  + any(extraKeys) > index(extraSads,1)
+  + any(keys)      > index(sads,1)
+c ---------------------End Input of Special Symbols---------------------------------------------
+
+c ---------------------Input of Double Strike Letters-------------------------------------------
+c
+c maintained for consistancy with other keyboards:
+  'ህ' + 'h' > 'ኅ'
+  'ህ' + 'H' > 'ኅ'
+c ---------------------End Input of Double Strike Letters---------------------------------------
+
+c ---------------------Input of Lone Vowels-----------------------------------------------------
+c
+c Alef-A Vowels as Vowels
+  + any(loneVowelKeys) > index(loneVowelEthio,1)
+
+c Alef-A Vowels as Regular Syllables
+  'አ' + any(gIz-key)  > 'እ'
+  'አ' + any(kaIb-key) > 'ኡ'
+  'አ' + any(sals-key) > 'ኢ'
+  'አ' + any(rabI-key) > 'ኣ'
+  'ኢ' + any(gIz-key)  > 'ኤ'
+  'አ' + any(sabI-key) > 'ኦ'
+
+c Aynu-A Vowels as Regular Sylalbles
+c
+c Me'en/Mursi/Suri/Dizi only use the 6th form of ዐ
+c
+  'እ' + any(gIz-key)  > 'ዕ'
+
+  any(composableVowel) + "'" > index(composableVowel,1) deadkey(1)
+c
+c ---------------------End Input of Lone Vowels-------------------------------------------------
+
+c ---------------------Input of Basic Syllables-------------------------------------------------
+  any(sads) + any(gIz-key)  > index(gIz,1)
+  any(sads) + any(kaIb-key) > index(kaIb,1)
+  any(sads) + any(sals-key) > index(sals,1)
+  any(sads) + any(rabI-key) > index(rabI,1)
+  any(sads) + any(hams-key) > index(hams,1)
+  any(sals) + any(gIz-key)  > index(hams,1)
+  any(sads) + any(sabI-key) > index(sabI,1)
+c ---------------------End Input of Basic Syllables---------------------------------------------
+
+c ---------------------Begin Input of Me'en Syllables-------------------------------------------
+  any(sabIMeen) + any(rabI-key) > index(samen,1)
+c ---------------------End Input of Me'en Syllables---------------------------------------------
+
+c ---------------------Input of Labiovelars-----------------------------------------------------
+c
+c Me'en/Mursi/Suri/Dizi do not make use of the labiovelars
+c
+c ---------------------End Input of Labiovelars-------------------------------------------------
+
+c ---------------------Input of Punctuation-----------------------------------------------------
+c
+c The only dead key for entry of special characters and
+c to handle the ge'ez + lone vowel problem:  ግእዝ and not ገዝ
+c
+  any(sads)  + "'" > index(sads,1) deadkey(1)
+  deadkey(1) + "'" > "'"
+
+  + ':'     > '፡'
+  + [SHIFT ' '] > '፡'
+  '፡' + ':' > '።'
+  '።' + ':' > ':'
+  ':' + ':' > '፡'  c makes circular
+
+c The ecclesiastical comma is the default in Me'en
+      + ',' > '፥'
+  '፥' + ',' > '፣'
+  '፣' + ',' > ','
+  ',' + ',' > '፥'  c makes circular
+
+      + ';' > '፤'
+  '፤' + ';' > ';'
+  ';' + ';' > '፤'  c makes circular
+
+  '፡' + '-' > '፦'
+
+      + '<' > '‹'
+      + '>' > '›'
+  '‹' + '<' > '«'
+  '›' + '>' > '»'
+  '«' + '<' > '<'
+  '»' + '>' > '>'
+c ---------------------End Input of Punctuation-------------------------------------------------
+
+c ---------------------Input of European Characters---------------------------------------------
+  store(euro) 'ÇçÐðÝýÿßÑñ'
+  store(euroMap) 'ጭችድድይይይፅኝኝ'
+  + any(euro) > index(euroMap,1)
+
+  + '¨' > U+135F
+
+  store(euroVowels) 'àÀáÁâÂãÃåÅùÙúÚûÛüÜìÌíÍîÎïÏæÆéÉèÈêÊëËòÒóÓôÔõÕöÖøØ'
+c this mapping has an Amharic bias
+  store(euroVowelsMap) 'አአአአአአአአአአኡኡኡኡኡኡኡኡኢኢኢኢኢኢኢኢኤኤእእእእእእእእኦኦኦኦኦኦኦኦኦኦኦኦ'
+  + any(euroVowels) > index(euroVowelsMap,1)
+c ---------------------End Input of European Characters-----------------------------------------
+
+c ---------------------Input of Numbers---------------------------------------------------------
+  any(arabNumbersWithZero) any(ethWordspaceOrComma) + any(arabNumbers) > index(arabNumbersWithZero,1) index(ColonOrComma,2) index(arabNumbers,3)
+c
+c Me'en/Mursi/Suri/Dizi do not use the Ethiopic Numerals
+c
+c ---------------------End Input of Numbers-----------------------------------------------------
+
+c =====================End Functional Section===================================================

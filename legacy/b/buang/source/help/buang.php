@@ -4,8 +4,8 @@
   Description: Keyboard layout for Buang language of Papua New Guinea.  Works with Doulos SIL or Charis SIL fonts.
   Authors:     Bruce Hooley
 */
-  $pagename = 'Buang Keyboard Help';
-  $pagetitle = 'Buang Keyboard Help';
+  $pagename = 'Buang (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <style type='text/css'>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">modi_inscript</Name>
-    <Copyright URL="">© 2022 Joshua Wong</Copyright>
+    <Copyright URL="">© 2022-2023 Joshua Wong</Copyright>
     <Author URL="">Joshua Wong</Author>
     <Version URL=""></Version>
   </Info>
@@ -53,12 +53,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>NotoSansModi-Regular.ttf</Name>
-      <Description>Font Noto Sans Modi Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>modi_desktopdefault.png</Name>
       <Description>File modi_desktopdefault.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -88,14 +82,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</Name>
+      <Description>Font Noto Sans Modi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Modi\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Modi Inscript</Name>
       <ID>modi_inscript</ID>
-      <Version>1.0</Version>
-      <OSKFont>NotoSansModi-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansModi-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Modi\NotoSansModi-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="mr-Modi">Marathi (Modi)</Language>
       </Languages>
