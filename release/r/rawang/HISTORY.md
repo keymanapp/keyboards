@@ -1,11 +1,12 @@
 Rawang Change History
 ====================
 
-1.7 (2024-02-22)
+1.7 (2024-02-29)
 ----------------
 * Optimize touch layout. 
-* Add longpress keys to a,e,i,o,ø,u,v
-* Add numeric layer
+  * Add longpress keys to a,e,i,o,ø,u,v
+  * Add numerals to longpressees on top row
+  * Add numeric layer
 
 1.6 (2021-03-10)
 ----------------

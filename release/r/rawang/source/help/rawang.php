@@ -65,6 +65,8 @@ EXTRA;
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <p>High, low, and middle tones are available on long presses for keys: (a, e, i, o, u, v, ø)
   Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<p>Numerals are available as longpresses on the top row of keys</p>
+<p>More punctuation are available as longpresses on the period key</p>
 
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
