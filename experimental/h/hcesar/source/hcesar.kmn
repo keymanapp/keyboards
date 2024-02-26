@@ -1,9 +1,9 @@
 ﻿store(&VERSION) '10.0'
-store(&NAME) 'Hcesar (portugal)'
+store(&NAME) 'Hcesar (Portugal)'
 store(&VISUALKEYBOARD) 'hcesar.kvks'
 store(&BITMAP) 'hcesar.ico'
-store(&COPYRIGHT) '(c) 2022-2023 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '(c) 2022-2024 SIL International'
+store(&KEYBOARDVERSION) '1.1.1'
 store(&TARGETS) 'web desktop'
 
 begin Unicode > use(main)
@@ -188,8 +188,8 @@ group(main) using keys
 + [K_LBRKT] > U+002b
 + [SHIFT K_LBRKT] > U+002a
 
-+ [K_SLASH] > U+002c
-+ [SHIFT K_SLASH] > U+003b
++ [K_SLASH] > U+002e
++ [SHIFT K_SLASH] > U+003a
 
 + [K_BKSLASH] > dk(007e)
 + [SHIFT K_BKSLASH] > dk(005e)
@@ -208,16 +208,16 @@ group(main) using keys
 + [K_EQUAL] > U+00ab
 + [SHIFT K_EQUAL] > U+00bb
 
-+ [K_QUOTE] > U+002e
-+ [SHIFT K_QUOTE] > U+003a
++ [K_QUOTE] > U+002c
++ [SHIFT K_QUOTE] > U+003b
 
 + [K_oE2] > U+003c
 + [SHIFT K_oE2] > U+003e
 
 + [NCAPS K_COMMA] > U+006b
-+ [CAPS K_COMMA] > U+004B
++ [CAPS K_COMMA] > U+004b
 + [NCAPS SHIFT K_COMMA] > U+004b
-+ [CAPS SHIFT K_COMMA] > U+006B
++ [CAPS SHIFT K_COMMA] > U+006b
 
 + [NCAPS K_PERIOD] > U+0077
 + [NCAPS SHIFT K_PERIOD] > U+0057
