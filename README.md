@@ -1,4 +1,4 @@
-Knyaw Keyboard keyboard
+Knyaw Keyboard
 ==============
 
 Version 1.0
