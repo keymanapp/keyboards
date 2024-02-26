@@ -1,0 +1,94 @@
+﻿c fv_nlakapamuxcheen generated from template at 2024-02-24 03:19:38
+c with name "fv_nlakapamuxcheen"
+store(&VERSION) '10.0'
+store(&NAME) 'fv_nlakapamuxcheen'
+store(&COPYRIGHT) '© 2024 First Peoples' U+0027 ' Cultural Foundation, FirstVoices'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'fv_nlakapamuxcheen.ico'
+store(&VISUALKEYBOARD) 'fv_nlakapamuxcheen.kvks'
+store(&LAYOUTFILE) 'fv_nlakapamuxcheen.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [SHIFT T_Q] > 'Q'
++ [SHIFT T_W_0] > 'W̱U̱H̱'
++ [SHIFT T_W] > 'W'
++ [SHIFT T_E] > 'E'
++ [SHIFT T_R] > 'R'
++ [SHIFT T_Y] > 'Y'
++ [SHIFT T_U] > 'U'
++ [SHIFT T_I] > 'I'
++ [SHIFT T_O] > 'O'
++ [SHIFT T_P] > 'P'
++ [SHIFT T_A] > 'A'
++ [SHIFT T_S] > 'S'
++ [SHIFT T_D] > 'D'
++ [SHIFT T_F] > 'F'
++ [SHIFT T_G_0] > 'G̱'
++ [SHIFT T_G] > 'G'
++ [SHIFT T_H_0] > 'H̱H̱'
++ [SHIFT T_H] > 'H'
++ [SHIFT T_J] > 'J'
++ [SHIFT T_K_0] > 'Ḵ'
++ [SHIFT T_K_1] > 'Ḵw'
++ [SHIFT T_K] > 'K'
++ [SHIFT T_L] > 'L'
++ [SHIFT T_Z] > 'Z'
++ [SHIFT T_X] > 'X'
++ [SHIFT T_C] > 'C'
++ [SHIFT T_V] > 'V'
++ [SHIFT T_B] > 'B'
++ [SHIFT T_N] > 'N'
++ [SHIFT T_M] > 'M'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̱u̱ẖ'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_R] > 'r'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_F] > 'f'
++ [T_G_0] > 'g̱'
++ [T_G] > 'g'
++ [T_H_0] > 'ẖẖ'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_K_0] > 'ḵ'
++ [T_K_1] > 'ḵw'
++ [T_K] > 'k'
++ [T_L] > 'L'
++ [T_Z] > 'z'
++ [T_X] > 'x'
++ [T_C] > 'c'
++ [T_V] > 'v'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+c --- CROSS PLATFORM STORES ---
+
+store(ComBMac) U+0331
+store(ComBMacKeys) [K_COLON] [SHIFT T_BMAC] [T_BMAC]
+
+'h' + any(ComBMacKeys) > 'ẖẖ'
+'k' + any(ComBMacKeys) > 'ḵ'
+'kw' + any(ComBMacKeys) > 'ḵw'
+'g' + any(ComBMacKeys) > 'g̱'
+'w' + any(ComBMacKeys) > 'w̱u̱ẖ'
+
+c --- stacking and non-letter combination prevention ---
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'" 
+
+any(ComBMac) + any(ComBMacKeys) > context beep
+any(NonLetters) + any(ComBMacKeys) > context beep   
+
