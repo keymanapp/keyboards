@@ -20,7 +20,7 @@ This keyboard is designed for the <b>Dakelh</b> language of the BC Interior regi
 
 <img src="DakelhLatin.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
-						<li>The underlined letters s̲, z̲, t̲s̲, and d̲z̲ each have their own key. To type the underline accent separately, use the Backquote key `.</li>
+						<li>The underlined letters s̲, z̲, t̲s̲, and d̲z̲ each have their own key. To type the underline accent separately, use the Backquote key ` (left of the 1 key).</li>
 						<li>To type the acute accent use the Slash key / — á is typed a then Slash /</li>
 						<li>You can type the original English punctuation by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
 						<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.</li>

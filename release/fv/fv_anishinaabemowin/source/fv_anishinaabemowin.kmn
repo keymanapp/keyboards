@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.1'
-store(&TARGETS) "mobile tablet"
+store(&KEYBOARDVERSION) '10.0.1'
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "oji"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Anishinaabemowin'
+store(&VISUALKEYBOARD) 'fv_anishinaabemowin.kvks'
+store(&KMW_HELPFILE) 'fv_anishinaabemowin-help.htm'
 
 begin Unicode > use(main)
 
@@ -19,12 +21,20 @@ store(&LAYOUTFILE) "fv_anishinaabemowin.keyman-touch-layout"
 + [SHIFT T_Q_0] > '!' layer('default')
 + [SHIFT T_Q] > '?' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'Ē' layer('default')
++ [SHIFT T_E_1] > 'Ê' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > 'T' layer('default')
 + [SHIFT T_T] > 'Y' layer('default')
++ [SHIFT T_Y_0] > 'Ī' layer('default')
++ [SHIFT T_Y_1] > 'Î' layer('default')
 + [SHIFT T_Y] > 'I' layer('default')
++ [SHIFT T_U_0] > 'Ō' layer('default')
++ [SHIFT T_U_1] > 'Ô' layer('default')
 + [SHIFT T_U] > 'O' layer('default')
 + [SHIFT T_I] > 'P' layer('default')
++ [SHIFT T_A_0] > 'Ā' layer('default')
++ [SHIFT T_A_1] > 'Â' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
@@ -38,19 +48,27 @@ store(&LAYOUTFILE) "fv_anishinaabemowin.keyman-touch-layout"
 + [SHIFT T_Z] > 'Z' layer('default')
 + [SHIFT T_X] > ',' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-+ [SHIFT T_V] > '.' layer('default')
++ [SHIFT T_V] > 'Š' layer('default')
 + [SHIFT T_B] > 'B' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
 + [T_Q_0] > '!'
 + [T_Q] > '?'
 + [T_W] > 'w'
++ [T_E_0] > 'ē'
++ [T_E_1] > 'ê'
 + [T_E] > 'e'
 + [T_R] > 't'
 + [T_T] > 'y'
++ [T_Y_0] > 'ī'
++ [T_Y_1] > 'î'
 + [T_Y] > 'i'
++ [T_U_0] > 'ō'
++ [T_U_1] > 'ô'
 + [T_U] > 'o'
 + [T_I] > 'p'
++ [T_A_0] > 'ā'
++ [T_A_1] > 'â'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
@@ -64,10 +82,50 @@ store(&LAYOUTFILE) "fv_anishinaabemowin.keyman-touch-layout"
 + [T_Z] > 'z'
 + [T_X] > ','
 + [T_C] > 'c'
-+ [T_V] > '.'
++ [T_V] > 'š'
 + [T_B] > 'b'
 + [T_N] > 'n'
 + [T_M] > 'm'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
+c --- character stores ---
+
+store(CircKeys) [T_CIRC] [SHIFT T_CIRC] [K_RBRKT]
+store(MacKeys) [T_MAC] [SHIFT T_MAC] [K_LBRKT]
+store(HasCaron) 'čšČŠ'
+store(HasCirc) 'âêîôÂÊÎÔ'
+store(HasMacron) 'āēīōĀĒĪŌ'
+store(LanguageKeys) [K_RBRKT] [K_LBRKT] [K_BKSLASH] 
+store(LanguageOutputs) U+0302 U+0304 U+030C c circumflex macron caron
+store(NeedsCaron) 'csCS'
+store(Vowels) 'aeioAEIO'
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
+
+any(Vowels) + any(CircKeys) > index(HasCirc,1)
+any(Vowels) + any(MacKeys) > index(HasMacron,1)
+
+any(HasCaron) + any(LanguageKeys) > context beep
+any(HasCirc) + any(LanguageKeys) > context beep
+any(HasMacron) + any(LanguageKeys) > context beep
+any(LanguageOutputs) + any(LanguageKeys) > context beep
+any(NonLetters) + any(LanguageKeys) > context beep
+
+any(HasCirc) + [K_BKSP] > index(Vowels,1)
+any(HasMacron) + [K_BKSP] > index(Vowels,1)
+
+
+
+c --- language keys ----
+
+any(NeedsCaron) + [K_BKSLASH] > index(HasCaron,1)
+
++ [K_RBRKT] > U+0302
++ [K_LBRKT] > U+0304
++ [K_BKSLASH] > U+030C
+
+c --- original keys ---
+
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
++ [RALT K_BKSLASH] > '\'
