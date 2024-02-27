@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Hǝn̓q̓ǝmin̓ǝm Keyboard Help';
-  $pagetitle = 'Hǝn̓q̓ǝmin̓ǝm Keyboard Help';
+  $pagename = 'hǝn̓q̓ǝmin̓ǝm̓ Keyboard Help';
+  $pagetitle = 'hǝn̓q̓ǝmin̓ǝm̓ Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Hǝn̓q̓ǝmin̓ǝm</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>hǝn̓q̓ǝmin̓ǝm̓</b> language of the BC Coast region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
@@ -21,7 +21,7 @@ This keyboard is designed for the <b>Hǝn̓q̓ǝmin̓ǝm</b> language of the BC 
 <img src="Henqeminem.png" alt="" height="198" width="514" border="0" /></h2>
 					 
 							<ul>
-								<li>The special characters of Hən̓q̓əmin̓əm have been assigned to the number keys. To type numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyboards keeps its original numbers.</li>
+								<li>The special characters of hən̓q̓əmin̓əm̓ have been assigned to the number keys. To type numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyboards keeps its original numbers.</li>
 								<li>All accents are typed after the base character: t̓ is typed t then Apostrophe '</li>
 								<li>To type the glottalized accent use the Apostrophe key ' — k̓ is typed k then Apostrophe '</li>
 								<li>To type the acute accent use the Semicolon key ; — á is typed a then Semicolon ;</li>
@@ -50,8 +50,8 @@ This keyboard is designed for the <b>Hǝn̓q̓ǝmin̓ǝm</b> language of the BC 
 <div id='wikitext'>
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>q q̓</td><td  align='center'>w w̓</td><td  align='center'>e é</td><td  align='center'>ə ə́</td><td  align='center'>t t̓</td><td  align='center'>y y̓</td><td  align='center'>u ú</td><td  align='center'>i í</td><td  align='center'>ƛ̓</td><td  align='center'>p p̓</td></tr>
-<tr ><td  align='center'>a á</td><td  align='center'>s</td><td  align='center'>ʔ</td><th  align='center'>’</th><td  align='center'>θ t̓ᶿ</td><td  align='center'>h</td><td  align='center'>ʷ</td><td  align='center'>k k̓</td><td  align='center'>l l̓</td><td  align='center'>ł</td></tr>
-<tr ><td >&nbsp;</td><td  align='center'>x̌</td><td  align='center'>x</td><td  align='center'>c c̓</td><td  align='center'>č</td><td  align='center'>š</td><td  align='center'>n n̓</td><td  align='center'>m m̓</td><td  colspan='2'>&nbsp;</td></tr>
+<tr ><td  align='center'>a á</td><td  align='center'>s</td><td  align='center'>ʔ</td><th  align='center'>’</th><td  align='center'>θ t̓ᶿ</td><td  align='center'>h</td><td  align='center'>ʷ</td><td  align='center'>k k̓</td><td  align='center'>l l̓</td><td  align='center'>ɬ</td></tr>
+<tr ><td >&nbsp;</td><td  align='center'>χ</td><td  align='center'>x x̌</td><td  align='center'>c c̓</td><td  align='center'>č</td><td  align='center'>š</td><td  align='center'>n n̓</td><td  align='center'>m m̓</td><td  colspan='2'>&nbsp;</td></tr>
 </table>
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
@@ -64,6 +64,6 @@ This keyboard is designed for the <b>Hǝn̓q̓ǝmin̓ǝm</b> language of the BC 
 <div id='osk'>
 </div>
 
-<h2>Tablet Keyboard Layout</h2>
-<div id='osk-tablet'>
+<h2>Mobile Keyboard Layout</h2>
+<div id=‘osk-tablet’ data-states=‘default shift numeric’>
 </div>
