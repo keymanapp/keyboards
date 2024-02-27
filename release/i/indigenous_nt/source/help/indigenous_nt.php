@@ -4,9 +4,6 @@
   require_once('header.php');
 ?>
 
-<?php
-?>
-
 <style>
   body {
    font-family: Cambria, Georgia, serif;  

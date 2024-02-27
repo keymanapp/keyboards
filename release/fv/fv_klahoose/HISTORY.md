@@ -1,5 +1,12 @@
-Homalco-Klahoose-Sliammon Change History
+Éy7á7juuthem Change History
 ============================
+
+10.0 (9 Feb 2024)
+----------------
+* Changed name of language
+* Added desktop layout
+* Updated help documentation
+* Updated codepoints for mobile layout
 
 9.2 (9 May 2019)
 ----------------

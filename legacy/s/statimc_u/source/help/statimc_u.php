@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "St'at'imcets Unicode Keyboard Help";
-  $pagetitle = "St'at'imcets Unicode Keyboard Help";
+  $pagename = "St'at'imcets Unicode (deprecated) Keyboard Help";
+  $pagetitle = "St'at'imcets Unicode (deprecated) Keyboard Help";
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

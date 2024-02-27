@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Yupik Cyrillic (Russian based) keyboard from SIL International';
-  $pagetitle = 'Yupik Cyrillic (Russian based) keyboard from SIL International';
+  $pagename = 'SIL Yupik Cyrillic RU Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
@@ -20,6 +20,6 @@
 
 <h2><a href="sil_yupik_cyrillic_ru_english.php">Proceed with English</a></h2>
 
-<p>© 2009-2019 SIL International</p>
+<p>© SIL International</p>
 
 </body>

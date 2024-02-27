@@ -1,7 +1,7 @@
-Dene Zhatié keyboard
+Dene Zhatıé keyboard
 ======================
 
-Dene Zhatié keyboard layout for Unicode
+Dene Zhatıé keyboard layout for Unicode
 
 Links
 -----
@@ -13,9 +13,8 @@ Links
 Supported Platforms
 -------------------
 
+ * Windows
+ * macOS
+ * Linux
+ * Web
  * Mobile
-
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)

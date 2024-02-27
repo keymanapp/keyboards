@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Empezar a usar el teclado Chalchiteko';
+  $pagename = 'Chalchiteko Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');

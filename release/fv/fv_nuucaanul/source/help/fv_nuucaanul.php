@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Nuučaan̓uł Keyboard Help';
-  $pagetitle = 'Nuučaan̓uł Keyboard Help';
+  $pagename = 'nuučaan̓uł Keyboard Help';
+  $pagetitle = 'nuučaan̓uł Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Nuučaan̓uł</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>nuučaan̓uł</b> language of the BC Coast region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
@@ -21,7 +21,7 @@ This keyboard is designed for the <b>Nuučaan̓uł</b> language of the BC Coast
 <img src="Nuucaanul.png" alt="Nuucanul" width="514" height="198" /></h2>
 					 
 <ul>
-								<li>The special characters of Nuučaan̓uł have been assigned to the number keys. To type numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyboards keeps its original numbers.</li>
+								<li>The special characters of nuučaan̓uł have been assigned to the number keys. To type numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyboards keeps its original numbers.</li>
 								<li>All accents are typed after the base character: t̓ is typed t then Apostrophe '</li>
 								<li>To type the glottalized accent use the Apostrophe key ' — k̓ is typed k then Apostrophe '</li>
 								<li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. The Left-Bracket [ is typed Right-Alt+Left-Bracket (Windows) Option+Left-Bracket (Mac).</li>

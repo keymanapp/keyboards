@@ -285,7 +285,7 @@
 			
 			<div id=container">
 
-				<h1>Nasa Yuwe Keyboard</h1>
+				<h2>Nasa Yuwe Keyboard</h2>
 
 				<h2>Deadkeys</h2>
 

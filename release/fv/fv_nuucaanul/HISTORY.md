@@ -1,5 +1,10 @@
-Nuučaan̓uł Change History
+nuučaan̓uł Change History
 ============================
+9.1.4 (18 Oct 2023)
+------------------
+* Update to single code point output where possible
+* Centered mobile keyboard
+* Updated name to better reflect language name
 
 9.1.3 (6 Mar 2023)
 -------------------

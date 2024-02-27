@@ -1,11 +1,9 @@
 <?php
-	$pagename = 'Postmodern English US Natural Layout Help';
+	$pagename = 'Postmodern English US Natural Keyboard Help';
 	$pagetitle = $pagename;
 	// Header
 	require_once('header.php');
 ?>
-
-<h1>Start Using the Postmodern English US Natural Layout</h1>
 
 <p>
     This is a Postmodern English keyboard with a typical United States key layout, 
