@@ -3,6 +3,7 @@ Háiɫzaqvḷa Change History
 10.0 (8 Feb 2024)
 ----------------
 * Updated to new code points for lambda, lambda with stroke, and capital labmda
+* Packaged with Noto Heiltsuk Font
 
 9.5 (22 Jan 2024)
 ----------------
