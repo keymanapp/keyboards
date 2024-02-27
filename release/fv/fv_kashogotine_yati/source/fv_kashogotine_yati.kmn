@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.1'
-store(&TARGETS) "mobile tablet"
+store(&KEYBOARDVERSION) '10.0'
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "scs"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) "K'áshogot'ı̨nę́ Yatı̨́"
+store(&VISUALKEYBOARD) 'fv_kashogotine_yati.kvks'
+store(&KMW_HELPFILE) 'fv_kashogotine_yati-help.htm'
 
 begin Unicode > use(main)
 
@@ -16,58 +18,42 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) "fv_kashogotine_yati.keyman-touch-layout"
 
-'ų' + [SHIFT T_Q] > 'ų́'
-'Ǫ' + [SHIFT T_Q] > 'Ǫ́'
-'U' + [SHIFT T_Q] > 'Ú'
-'Ų' + [SHIFT T_Q] > 'Ų́'
-'Ǝ' + [SHIFT T_Q] > 'Ǝ́'
-'ı' + [SHIFT T_Q] > 'ı́'
-'I' + [SHIFT T_Q] > 'Í'
-'ą' + [SHIFT T_Q] > 'ą́'
-'e' + [SHIFT T_Q] > 'é'
-'ı̨' + [SHIFT T_Q] > 'ı̨́'
-'Ą' + [SHIFT T_Q] > 'Ą́'
-'Ǝ̨' + [SHIFT T_Q] > 'Ǝ̨́'
-'ǝ̨' + [SHIFT T_Q] > 'ǝ̨́'
-'u' + [SHIFT T_Q] > 'ú'
-'ę' + [SHIFT T_Q] > 'ę́'
-'A' + [SHIFT T_Q] > 'Á'
-'O' + [SHIFT T_Q] > 'Ó'
-'Ę' + [SHIFT T_Q] > 'Ę́'
-'ǝ' + [SHIFT T_Q] > 'ǝ́'
-'E' + [SHIFT T_Q] > 'É'
-'a' + [SHIFT T_Q] > 'á'
-'o' + [SHIFT T_Q] > 'ó'
-'ǫ' + [SHIFT T_Q] > 'ǫ́'
-'Į' + [SHIFT T_Q] > 'Į́'
+'ǝ' + [SHIFT T_ACU] > 'ǝ́'
+'ǝ̨' + [SHIFT T_ACU] > 'ǝ̨́'
+'ı' + [SHIFT T_ACU] > 'ı́'
+'ı̨' + [SHIFT T_ACU] > 'ı̨́'
+'Ǝ' + [SHIFT T_ACU] > 'Ǝ́'
+'Ǝ̨' + [SHIFT T_ACU] > 'Ǝ̨́'
+'I' + [SHIFT T_ACU] > 'Í'
+'Į' + [SHIFT T_ACU] > 'Į́'
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E_0] > 'Ǝ' layer('default')
-+ [SHIFT T_E_1] > 'É' layer('default')
-+ [SHIFT T_E_2] > 'Ę' layer('default')
-+ [SHIFT T_E_3] > 'Ę́' layer('default')
++ [SHIFT T_E_1] > 'É' layer('default')
++ [SHIFT T_E_2] > 'Ę' layer('default')
++ [SHIFT T_E_3] > 'Ę́' layer('default')
 + [SHIFT T_E_4] > 'Ǝ́' layer('default')
 + [SHIFT T_E_5] > 'Ǝ̨' layer('default')
-+ [SHIFT T_E_6] > 'Ǝ̨́' layer('default')
++ [SHIFT T_E_6] > 'Ǝ̨́' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > 'R' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ú' layer('default')
-+ [SHIFT T_U_1] > 'Ų' layer('default')
-+ [SHIFT T_U_2] > 'Ų́' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_1] > 'Ų' layer('default')
++ [SHIFT T_U_2] > 'Ų́' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Í' layer('default')
-+ [SHIFT T_I_1] > 'Į' layer('default')
-+ [SHIFT T_I_2] > 'Į́' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_1] > 'Į' layer('default')
++ [SHIFT T_I_2] > 'Į́' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O_0] > 'Ó' layer('default')
-+ [SHIFT T_O_1] > 'Ǫ' layer('default')
-+ [SHIFT T_O_2] > 'Ǫ́' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_1] > 'Ǫ' layer('default')
++ [SHIFT T_O_2] > 'Ǫ́' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
-+ [SHIFT T_P] > 'Ł' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
-+ [SHIFT T_A_1] > 'Ą' layer('default')
-+ [SHIFT T_A_2] > 'Ą́' layer('default')
++ [SHIFT T_BL] > 'Ł' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_1] > 'Ą' layer('default')
++ [SHIFT T_A_2] > 'Ą́' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
@@ -77,91 +63,59 @@ store(&LAYOUTFILE) "fv_kashogotine_yati.keyman-touch-layout"
 + [SHIFT T_J] > 'J' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON_0] > '"' layer('default')
-+ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_APOS_0] > '"' layer('default')
++ [SHIFT T_APOS] > "'" layer('default')
 + [SHIFT T_Z] > 'Z' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-'U' + [SHIFT T_V] > 'Ų'
-'ı' + [SHIFT T_V] > 'ı̨'
-'I' + [SHIFT T_V] > 'Į'
-'ǝ́' + [SHIFT T_V] > 'ǝ̨́'
-'e' + [SHIFT T_V] > 'ę'
-'Í' + [SHIFT T_V] > 'Į́'
-'ú' + [SHIFT T_V] > 'ų́'
-'ó' + [SHIFT T_V] > 'ǫ́'
-'Ó' + [SHIFT T_V] > 'Ǫ́'
-'Ú' + [SHIFT T_V] > 'Ų́'
-'Ǝ́' + [SHIFT T_V] > 'Ǝ̨́'
-'u' + [SHIFT T_V] > 'ų'
-'á' + [SHIFT T_V] > 'ą́'
-'ı́' + [SHIFT T_V] > 'ı̨́'
-'Á' + [SHIFT T_V] > 'Ą́'
-'A' + [SHIFT T_V] > 'Ą'
-'O' + [SHIFT T_V] > 'Ǫ'
-'ǝ' + [SHIFT T_V] > 'ǝ̨'
-'é' + [SHIFT T_V] > 'ę́'
-'É' + [SHIFT T_V] > 'Ę́'
-'E' + [SHIFT T_V] > 'Ę'
-'a' + [SHIFT T_V] > 'ą'
-'o' + [SHIFT T_V] > 'ǫ'
-'Ǝ' + [SHIFT T_V] > 'Ǝ̨'
-+ [SHIFT T_B] > 'Ɂ' layer('default')
-+ [SHIFT T_N] > 'B' layer('default')
-+ [SHIFT T_M] > 'N' layer('default')
-+ [SHIFT T_COMMA] > 'M' layer('default')
-'ų' + [T_Q] > 'ų́'
-'Ǫ' + [T_Q] > 'Ǫ́'
-'U' + [T_Q] > 'Ú'
-'Ų' + [T_Q] > 'Ų́'
-'Ǝ' + [T_Q] > 'Ǝ́'
-'ı' + [T_Q] > 'ı́'
-'I' + [T_Q] > 'Í'
-'ą' + [T_Q] > 'ą́'
-'e' + [T_Q] > 'é'
-'ı̨' + [T_Q] > 'ı̨́'
-'Ą' + [T_Q] > 'Ą́'
-'Ǝ̨' + [T_Q] > 'Ǝ̨́'
-'ǝ̨' + [T_Q] > 'ǝ̨́'
-'u' + [T_Q] > 'ú'
-'ę' + [T_Q] > 'ę́'
-'A' + [T_Q] > 'Á'
-'O' + [T_Q] > 'Ó'
-'Ę' + [T_Q] > 'Ę́'
-'ǝ' + [T_Q] > 'ǝ́'
-'E' + [T_Q] > 'É'
-'a' + [T_Q] > 'á'
-'o' + [T_Q] > 'ó'
-'ǫ' + [T_Q] > 'ǫ́'
-'Į' + [T_Q] > 'Į́'
+'ǝ' + [SHIFT T_OGO] > 'ǝ̨'
+'ǝ́' + [SHIFT T_OGO] > 'ǝ̨́'
+'ı' + [SHIFT T_OGO] > 'ı̨'
+'ı́' + [SHIFT T_OGO] > 'ı̨́'
+'Ǝ' + [SHIFT T_OGO] > 'Ǝ̨'
+'Ǝ́' + [SHIFT T_OGO] > 'Ǝ̨́'
+'I' + [SHIFT T_OGO] > 'Į'
+'Í' + [SHIFT T_OGO] > 'Į́'
++ [SHIFT T_GLOT] > 'Ɂ' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
+'ǝ' + [T_ACU] > 'ǝ́'
+'ǝ̨' + [T_ACU] > 'ǝ̨́'
+'ı' + [T_ACU] > 'ı́'
+'ı̨' + [T_ACU] > 'ı̨́'
+'Ǝ' + [T_ACU] > 'Ǝ̨'
+'Ǝ̨' + [T_ACU] > 'Ǝ̨́'
+'I' + [T_ACU] > 'Í'
+'Į' + [T_ACU] > 'Į́'
 + [T_W] > 'w'
 + [T_E_0] > 'ǝ'
-+ [T_E_1] > 'é'
-+ [T_E_2] > 'ę'
-+ [T_E_3] > 'ę́'
++ [T_E_1] > 'é'
++ [T_E_2] > 'ę'
++ [T_E_3] > 'ę́'
 + [T_E_4] > 'ǝ́'
 + [T_E_5] > 'ǝ̨'
-+ [T_E_6] > 'ǝ̨́'
++ [T_E_6] > 'ǝ̨́'
 + [T_E] > 'e'
 + [T_R] > 'r'
 + [T_T] > 't'
 + [T_Y] > 'y'
-+ [T_U_0] > 'ú'
-+ [T_U_1] > 'ų'
-+ [T_U_2] > 'ų́'
++ [T_U_0] > 'ú'
++ [T_U_1] > 'ų'
++ [T_U_2] > 'ų́'
 + [T_U] > 'u'
 + [T_I_0] > 'ı́'
 + [T_I_1] > 'ı̨'
-+ [T_I_2] > 'ı̨́'
++ [T_I_2] > 'ı̨́'
 + [T_I] > 'ı'
-+ [T_O_0] > 'ó'
-+ [T_O_1] > 'ǫ'
-+ [T_O_2] > 'ǫ́'
++ [T_O_0] > 'ó'
++ [T_O_1] > 'ǫ'
++ [T_O_2] > 'ǫ́'
 + [T_O] > 'o'
-+ [T_P] > 'ł'
-+ [T_A_0] > 'á'
-+ [T_A_1] > 'ą'
-+ [T_A_2] > 'ą́'
++ [T_BL] > 'ł'
++ [T_A_0] > 'á'
++ [T_A_1] > 'ą'
++ [T_A_2] > 'ą́'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
@@ -171,39 +125,109 @@ store(&LAYOUTFILE) "fv_kashogotine_yati.keyman-touch-layout"
 + [T_J] > 'j'
 + [T_K] > 'k'
 + [T_L] > 'l'
-+ [T_COLON_0] > '"'
-+ [T_COLON] > "'"
++ [T_APOS_0] > '"'
++ [T_APOS] > "'"
 + [T_Z] > 'z'
 + [T_X] > 'x'
 + [T_C] > 'c'
-'U' + [T_V] > 'Ų'
-'ı' + [T_V] > 'ı̨'
-'I' + [T_V] > 'Į'
-'ǝ́' + [T_V] > 'ǝ̨́'
-'e' + [T_V] > 'ę'
-'Í' + [T_V] > 'Į́'
-'ú' + [T_V] > 'ų́'
-'ó' + [T_V] > 'ǫ́'
-'Ó' + [T_V] > 'Ǫ́'
-'Ú' + [T_V] > 'Ų́'
-'Ǝ́' + [T_V] > 'Ǝ̨́'
-'u' + [T_V] > 'ų'
-'á' + [T_V] > 'ą́'
-'ı́' + [T_V] > 'ı̨́'
-'Á' + [T_V] > 'Ą́'
-'A' + [T_V] > 'Ą'
-'O' + [T_V] > 'Ǫ'
-'ǝ' + [T_V] > 'ǝ̨'
-'é' + [T_V] > 'ę́'
-'É' + [T_V] > 'Ę́'
-'E' + [T_V] > 'Ę'
-'a' + [T_V] > 'ą'
-'o' + [T_V] > 'ǫ'
-'Ǝ' + [T_V] > 'Ǝ̨'
-+ [T_B] > 'ɂ'
-+ [T_N] > 'b'
-+ [T_M] > 'n'
-+ [T_COMMA] > 'm'
+'ǝ' + [T_OGO] > 'ǝ̨'
+'ǝ́' + [T_OGO] > 'ǝ̨́'
+'ı' + [T_OGO] > 'ı̨'
+'ı́' + [T_OGO] > 'ı̨́'
+'Ǝ' + [T_OGO] > 'Ǝ̨'
+'Ǝ́' + [T_OGO] > 'Ǝ̨́'
+'I' + [T_OGO] > 'Į'
+'Í' + [T_OGO] > 'Į́'
+
+
++ [T_GLOT] > 'ɂ'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
+c --- DESKTOP AND MOBILE STORES ---
+
+store(StanVowels) 'aeouAEOU' c stan short for standard
+store(HasAcute) 'áéóúÁÉÓÚ'
+store(HasOgonek) 'ąęǫųĄĘǪŲ'
+store(Schwa) 'ǝƎ'
+store(AcuteKeys) [T_ACU] [SHIFT T_ACU] [K_LBRKT]
+store(OgonekKeys) [T_OGO] [SHIFT T_OGO] [K_RBRKT]
+store(AcuOgoKey) [K_BKSLASH]
+
+any(StanVowels) + any(AcuteKeys) > index(HasAcute,1)
+any(Schwa) + any(AcuteKeys) > index(Schwa,1) U+0301
+any(HasOgonek) + any(AcuteKeys) > index(HasOgonek,1) U+0301
+
+any(StanVowels) + any(OgonekKeys) > index(HasOgonek,1)
+any(Schwa) + any(OgonekKeys) > index(Schwa,1) U+0328
+any(HasAcute) + any(OgonekKeys) > index(HasOgonek,1) U+0301
+
+any(StanVowels) + any(AcuOgoKey) > index(HasOgonek,1) U+0301
+
+c --- BEGIN DESKTOP LAYOUT ---
+
+c --- language keys ---
+
++ [K_LBRKT] > U+0301 c combining acute
++ [K_RBRKT] > U+0328 c combining ogonek
++ [K_BKSLASH] > U+0328 U+0301 c combining ogonek + combining acute
++ [K_COLON] > 'ł'
++ [SHIFT K_COLON] > 'Ł'
++ [K_3] > 'ǝ'
++ [SHIFT K_3] > 'Ǝ'
++ [K_I] > 'ı'
++ [K_SLASH] > 'ɂ'
++ [SHIFT K_SLASH] > 'Ɂ'
+
+c --- original punctuation ---
+
++ [RALT K_BKSLASH] > '\'
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
++ [RALT K_COLON] > ';'
++ [RALT SHIFT K_COLON] > ':'
++ [RALT K_3] > '3'
++ [RALT SHIFT K_3] > '#'
++ [RALT K_I] > 'i'
++ [RALT K_SLASH] > '/'
++ [RALT SHIFT K_SLASH] > '?'
+
+c --- ordering rules for non-standard vowels ---
+
+'ǝ́' + [K_LBRKT] > 'ǝ̨́'
+'ǝ́' + [K_RBRKT] > 'ǝ̨́'
+'ǝ̨' + [K_RBRKT] > 'ǝ̨́'
+'ǝ̨' + [K_SLASH] > 'ǝ̨́'
+'ǝ̨́' + [K_RBRKT] > 'ǝ̨́'
+'Ǝ́' + [K_LBRKT] > 'Ǝ̨́'
+'Ǝ́' + [K_RBRKT] > 'Ǝ̨́'
+'Ǝ̨' + [K_RBRKT] > 'Ǝ̨́'
+'Ǝ̨' + [K_SLASH] > 'Ǝ̨́'
+
+'ı́' + [K_LBRKT] > 'ı̨́'
+'ı́' + [K_RBRKT] > 'ı̨́'
+'ı̨' + [K_RBRKT] > 'ı̨́'
+'ı̨' + [K_SLASH] > 'ı̨́'
+'ı̨́' + [K_RBRKT] > 'ı̨́'
+
+c --- stacking prevention ---
+
+store(AboveAccent) U+0301
+store(BelowAccent) U+0328
+store(AccentKeys) [K_LBRKT] [K_RBRKT] [K_SLASH]
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
+
+any(HasAcute) + any(AcuteKeys) > context beep
+any(HasOgonek) + any(OgonekKeys) > context beep
+any(AboveAccent) + any(AcuteKeys) > context beep
+any(BelowAccent) + any(OgonekKeys) > context beep
+
+
+any(HasAcute) + any(AcuOgoKey) > index(HasOgonek,1) U+0301
+any(HasOgonek) + any(AcuOgoKey) > index(HasOgonek,1) U+0301
+any(AboveAccent) + any(AcuOgoKey) > context beep
+
+any(NonLetters) + any(AccentKeys) > context beep
