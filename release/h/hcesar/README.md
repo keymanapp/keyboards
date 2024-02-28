@@ -1,7 +1,7 @@
 Hcesar (Portugal) keyboard
 ==============
 
-© 2022-2024 SIL International
+© SIL International
 
 Description
 -----------

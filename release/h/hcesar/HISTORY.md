@@ -1,6 +1,11 @@
 Hcesar (Portugal) Change History
 ====================
 
+1.2 (2024-02-28)
+----------------
+* Moved from experimental to release
+* Small tweak to graphics
+
 1.1.1 (2024-02-13)
 ----------------
 * Fixed comma and period keys
