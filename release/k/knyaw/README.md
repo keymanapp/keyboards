@@ -1,14 +1,13 @@
 knyaw keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
-knyaw generated from template
+Keyboard for Karen Language.
 
 Links
 -----
+https://keyman.com/keyboards/knyaw
 
 Copyright
 ---------
