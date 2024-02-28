@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.1'
-store(&TARGETS) "mobile tablet"
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "kkz"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Dene Dzage'
+store(&KEYBOARDVERSION) '10.0'
+store(&VISUALKEYBOARD) 'fv_dene_dzage.kvks'
+store(&KMW_HELPFILE) 'fv_dene_dzage-help.htm'
 
 begin Unicode > use(main)
 
@@ -384,4 +386,41 @@ store(&LAYOUTFILE) "fv_dene_dzage.keyman-touch-layout"
 + [T_COMMA] > 'm'
 
 c --- END OF TOUCH LAYOUT RULES ---
+
+c --- BEGIN CROSS PLATFORM RULES AND STORES ---
+
+store(Vowels) 'aeiouAEIOU'
+store(HasAcu) 'áéíóúÁÉÍÓÚ'
+store(HasCar) 'ǎěǐǒǔǍĚǏǑǓ'
+store(HasCirc) 'âêîôûÂÊÎÔÛ'
+store(HasMac) 'āēīōūĀĒĪŌŪ'
+store(HasOgo) 'ąęįǫųĄĘĮǪŲ'
+
+store(AcuKeys) [T_ACU] [SHIFT T_ACU]
+store(CarKeys) [T_CAR] [SHIFT T_CAR]
+store(CircKeys) [T_CIRC] [SHIFT T_CIRC]
+store(MacKeys) [T_MAC] [SHIFT T_MAC]
+store(OgoKeys) [T_OGO] [SHIFT T_OGO]
+store(MacAcuKeys) [T_MACACU] [SHIFT T_MACACU]
+
+any(Vowels) + any(AcuKeys) > index(HasAcu,1)
+any(Vowels) + any(CarKeys) > index(HasCar,1)
+any(Vowels) + any(CircKeys) > index(HasCirc,1)
+any(Vowels) + any(MacKeys) > index(HasMac,1)
+any(Vowels) + any(OgoKeys) > index(HasOgo,1)
+
+c acu + mac, mac + acu
+any(Vowels) + any(MacAcuKeys) > index(HasMac,1) U+0301 c mac ogo
+any(HasAcu) + any(MacKeys) > index(HasMac,1) U+0301 c mac ogo
+any(HasMac) + any(AcuKeys) > index(HasMac,1) U+0301 c mac ogo
+
+c ogo + 1
+any(HasAcu) + any(OgoKeys) > index(HasOgo,1) U+0301 c ogo acu
+any(HasCar) + any(OgoKeys) > index(HasOgo,1) U+030C c ogo mac
+any(HasCirc) + any(OgoKeys) > index(HasOgo,1) U+0302 c ogo circ
+any(HasMac) + any(OgoKeys) > index(HasOgo,1) U+0304 c ogo mac
+
+c acu mac ogo
+any(HasMac) U+0301 + any(OgoKeys) > index(HasOgo,1) U+0304 U+0301
+
 
