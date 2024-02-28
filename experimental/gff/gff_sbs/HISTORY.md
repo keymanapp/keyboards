@@ -2,7 +2,7 @@
 
 ## 2024-02-27 version 1.0.6
 * Revisions to the input terminator symbol, ' (apostrophe).
-* Update to the Qubee-Sheek-Bakrii-Saphaloo.ttf .
+* Update to the Qubee-Sheek-Bakrii-Saphaloo.ttf font.
 
 ## 2023-12-06 version 1.0.5
 * Revisions to 3 characters in the Athinka: Sheek Bakrii Saphaloo font.
