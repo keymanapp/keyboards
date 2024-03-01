@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'IAST from  Phonetic (ITRANS) Help';
-  $pagetitle = 'IAST from  Phonetic (ITRANS) Help';
+  $pagename = 'Indic Romanization from ITRANS Keyboard Help';
+  $pagetitle = $pagename;
   $pagestyle = <<<END
     samp {font-family: Siddhanta; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
@@ -87,7 +87,8 @@ e.g. <kbd>,,</kbd> for <samp>,</samp> and  <kbd>;;</kbd> for <samp>;</samp>
 <tr><td>ं</td><td>.mm</td> <td><samp>ṃ</samp></td><td>ISO - Gurmukhi Tippi</td></tr>
 <tr><td>ं</td><td>.mm</td> <td><samp>ṃ</samp></td><td>IAST</td></tr>
 <tr><td></td><td></td> <td><samp></samp></td><td></tr>
-<tr><td>ऽ</td><td>'</td> <td><samp>ʼ</samp></td><td>IAST/ISO</td></tr>
+<tr><td>ऽ</td><td>'</td> <td><samp>ʼ</samp></td><td>IAST</td></tr>
+<tr><td>ऽ</td><td>''</td> <td><samp>’</samp></td><td>ISO</td></tr>
 <tr><td></td><td></td> <td><samp></samp></td><td></tr>
 </tbody>
 </table>

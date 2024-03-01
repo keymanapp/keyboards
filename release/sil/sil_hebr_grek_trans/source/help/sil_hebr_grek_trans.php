@@ -1,6 +1,6 @@
 <?php
-  $pagename = "Hebrew and Greek Transliteration (SIL) keyboard";
-  $pagetitle = "Hebrew and Greek Transliteration (SIL) keyboard layout";
+  $pagename = "Hebrew and Greek Transliteration (SIL) keyboard Help";
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   h1,h2,h3,p {font-family: Charis SIL;}
   p.footnote {font-family: Charis SIL;font-size: small;}

@@ -51,7 +51,7 @@
 					<td>MODIFIER LETTER LOW MACRON</td>
 				</tr>
 				<tr>
-					<td><font face="Charis SIL">/ ˆ / </font></td>
+					<td><font face="Charis SIL">/ Ë† / </font></td>
 					<td>high checked</td>
 					<td>U+02C6 </td>
 					<td>MODIFIER LETTER CIRCUMFLEX ACCENT</td>

@@ -6,7 +6,7 @@
   .example {margin-left:40px}
   section {clear:both;}
   article{clear:left; margin-bottom:60px;}
-  samp{font-family: Gardiner, Aegyptus; color:blue;}
+  samp{font-family: Aegyptus; color:blue;}
   kbd {color:black;}
   .break {clear:both !important; page-break-before:always !important;}
   aside {background-color:#eee;border:2px solid #ddd;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;margin:10px 0px; padding:0px 10px 5px;font-size:10pt;}
@@ -20,7 +20,7 @@
   .grid tr {text-align:center; font-weight:normal; height:80px;}
   .grid thead tr,.grid .headrow{height:30px;}
   .grid .headrow {font-weight:bold; color:#AD4A28; background-color:#eee;}
-  .gardiner {font-family:Gardiner, Aegyptus; font-size:24pt;line-height:20px;vertical-align:-2px;}
+  .gardiner {font-family:Aegyptus; font-size:24pt;line-height:20px;vertical-align:-2px;}
   col.trans {width:60px;}
   col.keys  {width:50px;}
   col.signs {width:85px;}
@@ -37,7 +37,7 @@
   .colright {padding-left:40px;}
   p samp {font-size:22pt; line-height:.8em;}
   p kbd {color:black; font:9pt Arial; border:solid 1px grey; background:#ccc; margin:0px 1px; padding:0px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
-  samp.hiero {font-size:44pt; line-height:43px; font-family:Gardiner, Aegyptus;}
+  samp.hiero {font-size:44pt; line-height:43px; font-family:Aegyptus;}
   samp .cyc {font-size:30pt; color:#2D2C2C;}
   .key { float: left;display: block; position: relative;overflow: hidden;height: 35px;margin: 2px 0px 0px 2px;border: solid 1px grey;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;     }
   .plain {background-repeat: no-repeat;width: 34px;}
@@ -84,7 +84,7 @@ END;
 	<h4>On Screen Keyboard</h4>
 	<p>This keyboard includes an On Screen Keyboard view of the MdC transliteration standard for easy reference. The On Screen Keyboard works best when associated with a QWERTY US layout.</p>
 	<h4>Fonts</h4>
-	<p>This is a Unicode keyboard and works with any Unicode font which has support for Ancient Egyptian transliteration and hieroglyphs. Fonts which work with this keyboard include Aegyptus and Gardiner, which install with the keyboard. To see if other fonts on your computer support the keyboard, use the Keyman Desktop Font Helper.</p>
+	<p>This is a Unicode keyboard and works with any Unicode font which has support for Ancient Egyptian transliteration and hieroglyphs. Fonts which work with this keyboard include Aegyptus and Gardiner. Aegyptus installs with the keyboard. To see if other fonts on your computer support the keyboard, use the Keyman Desktop Font Helper.</p>
 
   </section>
 

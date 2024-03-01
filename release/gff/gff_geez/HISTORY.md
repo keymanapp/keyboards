@@ -1,5 +1,8 @@
 # ግዕዝ (Geʾez) Change History
 
+## 2023-07-18 2.0.1
+* Removing gff_geez.js from package to avoid mobile platform listings.
+
 ## 2023-07-10 2.0
 * Vowel composition synched with other GFF keyboard revisions.
 * Smart punctuation composition added.

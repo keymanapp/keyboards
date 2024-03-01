@@ -1,5 +1,8 @@
 # Amharic (አማርኛ) & Gurage (ጉራጊና) Keyboards
 
+## 1.1(19 Jul 2023)
+* Add .js files to kps
+
 ## 1.0(05 Jul 2023)
 * Resync with Gurage 1.0 and Amharic 3.3 packages.
 

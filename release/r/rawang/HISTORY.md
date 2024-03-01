@@ -19,7 +19,7 @@ Rawang Change History
 
 1.2 (2008-07-11)
 ----------------
-* Fixed v,ø,V,Ø tone marks swapped. 
+* Fixed v,Ã¸,V,Ã˜ tone marks swapped. 
 * Added on screen keyboard, usage screen.
 
 1.1 (2007-11-28)
