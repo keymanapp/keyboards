@@ -1,9 +1,7 @@
 Portuguese (Brazilian) Dvorak keyboard
 ==============
 
-(c) 2009-2024 SIL International
-
-Version 1.0
+(c) SIL International
 
 Description
 -----------
