@@ -13,6 +13,12 @@ store(&BITMAP) 'balochi_phonetic.ico'
 begin Unicode > use(main)
 
 group(main) using keys
++ [CTRL K_V] > 'ؤ'
++ [CTRL K_Q] > 'ࢨ'
++ [CTRL K_T] > 'ئے'
++ [CTRL K_G] > 'ئی'
++ [CTRL K_E] > 'ئو'
++ [SHIFT K_BKSLASH] > '‍'
 + [CTRL B08] > '‎'
 + [CTRL B09] > '‏'
 + [CTRL B10] > '–'
@@ -129,3 +135,7 @@ group(main) using keys
 + [T_ye_ham_vav] > 'ئو'
 + [T_ye_ham_ye] > 'ئی'
 + [T_ye_ham_barree] > 'ئے'
+
+U+0626 U+0648 + [K_BKSP] > nul
+U+0626 U+06CC + [K_BKSP] > nul
+U+0626 U+06D2 + [SHIFT K_BKSP] > nul
