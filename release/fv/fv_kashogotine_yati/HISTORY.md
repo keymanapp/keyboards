@@ -1,5 +1,10 @@
 K'áshogot'ı̨nę́ Yatı̨́ Change History
 ============================
+10.0 (8 Feb 2024)
+-----------------
+* Added desktop keyboard
+* Built documentation
+
 9.1.1 (26 Oct 2023)
 -----------------
 * Changed order of mobile layers to unscramble display on help page

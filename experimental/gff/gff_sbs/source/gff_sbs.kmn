@@ -1,7 +1,7 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
 c This is a Sheek Bakrii Saphalo script Qubee based input method. They keyboard is designed
-c to work with the [Athinkra: Sheek Bakrii Saphalo](https://github.com/raeytype/sheek-bakrii-saphaloo) font (v1.x) which in turn 
+c to work with the [Athinkra: Sheek Bakrii Saphalo](https://github.com/athinkra/sheek-bakrii-saphaloo) font (v1.x) which in turn 
 c encodes the script under Unicode's Private Use Area (PUA).
 c 
 c Keyman        :  http://www.keyman.com/
@@ -11,9 +11,9 @@ c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
 c 
 store(&Version) '15.0'
-store(&KEYBOARDVERSION) '1.0.5'
+store(&KEYBOARDVERSION) '1.0.6'
 store(&NAME) 'Sheek Bakrii Saphaloo Qubee'
-store(&COPYRIGHT) '© 2023 Geʾez Frontier Foundation'
+store(&COPYRIGHT) '© 2023-2024 Geʾez Frontier Foundation'
 store(&Message) 'This is a Sheek Bakrii Saphalo script Qubee based input method. It requires the included Athinkra: Sheek Bakrii Saphaloo font.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_B]'
@@ -24,6 +24,7 @@ c
 c =====================End Identity Section=====================================================
 
 store(BakriSapalo) ' ' U+E000 .. U+E317
+store(BakriSapaloLetters) U+E000 .. U+E317
 
 store(Base) '*'
 store(ShortA) 'Aa'
@@ -167,17 +168,28 @@ any(H_DigraphTargets) + any(H_Modifier) > index(H_DigraphTargetsGeminated,1)
 any(X_DigraphTargets) + any(X_Modifier) > index(X_DigraphTargetsGeminated,1)
 any(Y_DigraphTargets) + any(Y_Modifier) > index(Y_DigraphTargetsGeminated,1)
 
-+ "'" > deadkey(1)
- deadkey(1) + "'" > "'"
 
 
-
-c Vowels
+c Vowels and Slash Rules
 + '*' > ''
 '' + '*' > ''
 '' + 'x' > '' 
-'' + "'" > ''
-'' + "'" > ''
+'' + "'" > '' deadkey(2)
+'' + "'" > '' deadkey(2)
+'' deadkey(2) + "'" > '' "'"
+'' deadkey(2) + "'" > '' "'"
+
+'' + '*' > ''  c A*
+'' + '*' > ''  c Ax*
+'' + "'" > '' deadkey(2)
+'' + "'" > '' deadkey(2)
+
+'' deadkey(2) + "'" > '' "'"
+'' deadkey(2) + "'" > '' "'"
+
+deadkey(1) + "'" > "'"
+any(BakriSapaloLetters) + "'" > context(1) deadkey(1)
+
 
 + any(VowelKeys) > index(GlottalShortVowels,1)
 '' + 'a' > ''
@@ -205,11 +217,6 @@ any(GlottalLongVowels) + any(X_Modifier) > index(GeminatedGlottalLongVowels,1)
 
 any(PharyngealShortVowels) + any(X_Modifier) > index(GeminatedPharyngealShortVowels,1)
 any(PharyngealLongVowels) + any(X_Modifier) > index(GeminatedPharyngealLongVowels,1)
-
-'' + '*' > ''
-'' + '*' > ''
-'' + "'"  > ''
-'' + "'" > ''
 
 
 '' + '.' > '.'

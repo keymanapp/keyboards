@@ -13,9 +13,12 @@ Links
 Supported Platforms
 -------------------
 
+ * Windows
+ * macOS
+ * Linux
+ * Web
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)
+TODO
+-------------------
+* Consult with community on if they prefer IPA Schwa (U+018F) or Latin small letter turned E (U+01DD).
