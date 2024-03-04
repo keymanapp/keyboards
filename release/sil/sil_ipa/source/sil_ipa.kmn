@@ -61,7 +61,7 @@ store(&MESSAGE) 'The IPA (SIL) Keyman keyboard is distributed under The MIT Lice
 c store(&author) "M. Hosken, D. Bevan"
 c store(&language) ""
 c store(&WINDOWSLANGUAGES) 'x040F'
-store(&KEYBOARDVERSION) '1.8.6'
+store(&KEYBOARDVERSION) '1.8.7'
 store(&LAYOUTFILE) 'sil_ipa.keyman-touch-layout'
 store(&TARGETS) 'any'
 
@@ -142,6 +142,11 @@ c store(hatK)  "?gjnwlh" "0123456789-" "m" "n=" "n>"
                 U+1D43 U+1D44 U+1D45 U+1D9B U+1D46 U+1D49 U+1D4A U+1D4B U+1D9F \
                 U+2071 U+1DA4 U+1DA6 U+1D52 U+A7F9 U+1DB1 U+1D53 \
                 U+1D58 U+1DB6 U+02B8 U+1D5A U+1DBA U+1DB7
+
+   c subscript numerals get incorporated in the "_" rota
+   store(subhatD)  "0123456789"
+
+   store(subhatU)  U+2080 U+2081 U+2082 U+2083 U+2084 U+2085 U+2086 U+2087 U+2088 U+2089
 
 c Stores added for option key
    store(EqSupK)         "?"    "b"    "d"    "g"    "h"    "j"    "L"    "n" \
@@ -327,6 +332,8 @@ U+031D + "+" > U+0318
 U+0318 + "+" > U+0339
 U+0339 + "+" > U+031F
 
+any(subhatD) + "_" > index(subhatU,1) c subscript numeral
+any(subhatU) + "_" > index(subhatD,1) U+0320
 U+0320 + "_" > U+031E
 U+031E + "_" > U+0319
 U+0319 + "_" > U+031C                      
