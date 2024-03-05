@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-     
-<title>IPA (SIL) keyboard for Keyman Desktop</title>
-<style type='text/css'>
-    a {text-decoration: none; color: blue} 
-    h1 { font: bold 16pt Tahoma; color: #4444cc }
-    h2 { font: bold 14pt Tahoma; color: #4444cc }
-    h3 { font: bold 12pt Tahoma; color: #4444cc }
-    span.key { font: bold 10pt Verdana; padding: 0 4px; border: solid 1px #aaaaaa; margin: 0 4px; }
-</style>
-</head>
-<body>
-<h1>IPA (SIL) keyboard for Keyman Desktop</h1>
+<?php
+  $pagename = 'IPA (SIL) Keyboard Help';
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
+    #section2 td p a {
+      text-decoration: none; color: blue
+    }
+    #section2 td h1 { font: bold 16pt Tahoma; color: #4444cc }
+    #section2 td h2 { font: bold 14pt Tahoma; color: #4444cc }
+    #section2 td h3 { font: bold 12pt Tahoma; color: #4444cc }
+    #section2 td span.key { font: bold 10pt Verdana; padding: 0 4px; border: solid 1px #aaaaaa; margin: 0 4px; }
+END;
+  require_once('header.php');
+?>
 
 <h2 style='margin-top:0in'>Keyboard Layout</h2>
 
@@ -3782,6 +3780,7 @@ areas denote articulations judged impossible.</span></p>
 
 
 <h3 id="diacritics">Diacritics &amp; Suprasegmentals</h3>
+
 
 <p>In this section the keystrokes are the same whether you turned on <b>Before</b> or not.</p>
 
@@ -17095,8 +17094,4 @@ color:black'>.</span></p>
 
 </div>
 
-</div>
 
-</body>
-
-</html>
