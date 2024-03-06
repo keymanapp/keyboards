@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.145.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
@@ -15,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Henqeminem</Name>
-    <Copyright URL="">(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
@@ -82,12 +84,6 @@
       <FileType>.gif</FileType>
     </File>
     <File>
-      <Name>welcome\Henqeminem.png</Name>
-      <Description>File Henqeminem.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\keyman.png</Name>
       <Description>File keyman.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -123,14 +119,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>welcome\Henqeminem_U_.png</Name>
+      <Description>File Henqeminem_U_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\Henqeminem_U_RA.png</Name>
+      <Description>File Henqeminem_U_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>hǝn̓q̓ǝmin̓ǝm̓</Name>
       <ID>fv_henqeminem</ID>
-      <Version>9.1.2</Version>
+      <Version>10.0</Version>
       <Languages>
-        <Language ID="hur-Latn">Halkomelem (Latin)</Language>
+        <Language ID="hur">Halkomelem</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

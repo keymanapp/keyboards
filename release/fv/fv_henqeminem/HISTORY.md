@@ -1,6 +1,6 @@
 hǝn̓q̓ǝmin̓ǝm̓ Change History
 ============================
-9.2 (17 Oct 2023)
+10.0 (17 Oct 2023)
 -------------------
 * Added middle dot and chi on mobile layout
 * Replaced barred l with belted l
