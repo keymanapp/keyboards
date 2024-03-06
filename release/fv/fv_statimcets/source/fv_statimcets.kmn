@@ -53,7 +53,7 @@ store(&LAYOUTFILE) 'fv_statimcets.keyman-touch-layout'
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
 + [SHIFT T_L_1] > 'L̲' layer('default')
-+ [SHIFT T_L_2] > 'L̲̓' layer('default')
++ [SHIFT T_L_2] > 'L̲̓' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
 + [SHIFT T_COLON_0] > '!' layer('default')
 + [SHIFT T_COLON] > '?' layer('default')
@@ -105,7 +105,7 @@ store(&LAYOUTFILE) 'fv_statimcets.keyman-touch-layout'
 + [T_K] > 'k'
 + [T_L_0] > 'l̓'
 + [T_L_1] > 'l̲'
-+ [T_L_2] > 'l̲̓'
++ [T_L_2] > 'l̲̓'
 + [T_L] > 'l'
 + [T_COLON_0] > '!'
 + [T_COLON] > '?'
@@ -135,6 +135,9 @@ store(AcuteKeys) [T_J] [SHIFT T_J] ';'
 any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
 any(NeedsAcute) + any(AcuteKeys) > index(HasAcute,1)
 
+'l̲' + any(ComAposKeys) > 'l̲̓'
+'L̲' + any(ComAposKeys) > 'L̲̓'
+
 c non-caps modified keys
   
 store(Mod0) "`~_+;'<>/"
@@ -156,10 +159,12 @@ any(NumbersAndPunctuation) + any(overaccentkey) > context beep
 c original values
 store(orig0)  [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_hyphen] [RALT K_equal] [NCAPS RALT K_LBRKT] [NCAPS RALT K_RBRKT] [RALT K_QUOTE] [RALT K_COLON] [RALT K_COMMA] [RALT K_PERIOD]
 store(orig1) "‘’«»_+[]';<>"            
-store(punc0) [NCAPS SHIFT RALT K_LBRKT] [NCAPS SHIFT RALT K_RBRKT] [SHIFT RALT K_9] [SHIFT RALT K_0] [NCAPS RALT K_BKSLASH] [NCAPS SHIFT RALT K_BKSLASH]
-store(punc1) "{}‹›\|"
+store(punc0) [NCAPS SHIFT RALT K_LBRKT] [NCAPS SHIFT RALT K_RBRKT] [SHIFT RALT K_9] [SHIFT RALT K_0] [NCAPS RALT K_BKSLASH] [NCAPS SHIFT RALT K_BKSLASH] [RALT K_SLASH]
+store(punc1) "{}‹›\|/"
 + any(orig0) > index(orig1,1)
 + any(punc0) > index(punc1,1) 
+
++ [SHIFT RALT K_SLASH] > '/'
 
 c other characters
 store(s0) [CAPS SHIFT K_LBRKT] [CAPS K_LBRKT] [ncaps SHIFT K_LBRKT]  [ncaps K_LBRKT] 
