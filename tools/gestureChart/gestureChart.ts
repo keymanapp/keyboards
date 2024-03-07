@@ -81,8 +81,8 @@ function processKeyboard(dir: string) {
     l => l.row.some(r => r.key.some(k =>
       k.sk || k.flick || k.multitap)));
   if (filteredKeys && filteredKeys.length > 0) {
-    let gestureTable = `## ${name} Gesture Table\n`;
-    gestureTable += generateTable(formFactor, filteredKeys);
+    let gestureTable = `${newTitle(name)}${newPreamble(formFactor)}`;
+    gestureTable += generateTable(filteredKeys);
 
     // Write Gesture Table to file
     if (gestureTable) {
@@ -97,12 +97,11 @@ function processKeyboard(dir: string) {
 
 /**
  * Create Markdown table
- * @param formFactor phone or tablet
  * @param filteredKeys Filtered touch layout object containing all the gestures
  * @returns Markdown table as string
  */
-function generateTable(formFactor: formFactorType, filteredKeys) : string {
-  let table = `### ${formFactor} Layout\n`;
+function generateTable(filteredKeys) : string {
+  let table = '';
   for (let l in filteredKeys) {
     let layer = filteredKeys[l];
     let layerID = layer.id;
@@ -152,6 +151,16 @@ function generateTable(formFactor: formFactorType, filteredKeys) : string {
   }
 
   return table;
+}
+
+function newTitle(name: string): string {
+  return `---\n` +
+         `title: ${name} Gesture Table\n` +
+         `---\n\n`;
+}
+
+function newPreamble(formFactor: formFactorType) : string {
+  return `Gestures for the ${formFactor} Keyboard layers are described in the tables below:\n\n`;
 }
 
 function newTableHeader(): string {
