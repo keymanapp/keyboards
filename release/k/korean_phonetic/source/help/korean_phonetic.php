@@ -96,43 +96,43 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_Q">
     <div class="keycap">q</div>
-    <div class="keytext"></div>
+    <div class="keytext">ᄋ</div>
     </div>
     <div class="key plain" id="K_W">
     <div class="keycap">w</div>
-    <div class="keytext">ᄇ</div>
+    <div class="keytext">ᅭ</div>
     </div>
     <div class="key plain" id="K_E">
     <div class="keycap">e</div>
-    <div class="keytext">ᅡ</div>
+    <div class="keytext">ㅔ</div>
     </div>
     <div class="key plain" id="K_R">
     <div class="keycap">r</div>
-    <div class="keytext">ᅲ</div>
+    <div class="keytext">ᄅ</div>
     </div>
     <div class="key plain" id="K_T">
     <div class="keycap">t</div>
-    <div class="keytext">ᅥ</div>
+    <div class="keytext">ᄐ</div>
     </div>
     <div class="key plain" id="K_Y">
     <div class="keycap">y</div>
-    <div class="keytext"></div>
+    <div class="keytext">ᅳ</div>
     </div>
     <div class="key plain" id="K_U">
     <div class="keycap">u</div>
-    <div class="keytext">ᅵ</div>
+    <div class="keytext">ᅮ</div>
     </div>
     <div class="key plain" id="K_I">
     <div class="keycap">i</div>
-    <div class="keytext">ᅣ</div>
+    <div class="keytext">ᅵ</div>
     </div>
     <div class="key plain" id="K_O">
     <div class="keycap">o</div>
-    <div class="keytext">ᄑ</div>
+    <div class="keytext">ㅗ</div>
     </div>
     <div class="key plain" id="K_P">
     <div class="keycap">p</div>
-    <div class="keytext">ᄌ</div>
+    <div class="keytext">ᄑ</div>
     </div>
     <div class="key plain" id="K_LBRKT">
     <div class="keycap">[</div>
@@ -152,39 +152,39 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_A">
     <div class="keycap">a</div>
-    <div class="keytext">ᅩ</div>
+    <div class="keytext">ㅏ</div>
     </div>
     <div class="key plain" id="K_S">
     <div class="keycap">s</div>
-    <div class="keytext">ᅧ</div>
+    <div class="keytext">ᄉ</div>
     </div>
     <div class="key plain" id="K_D">
     <div class="keycap">d</div>
-    <div class="keytext">ᅳ</div>
+    <div class="keytext">ᄃ</div>
     </div>
     <div class="key plain" id="K_F">
     <div class="keycap">f</div>
-    <div class="keytext">ᄂ</div>
+    <div class="keytext">ㅐ</div>
     </div>
     <div class="key plain" id="K_G">
     <div class="keycap">g</div>
-    <div class="keytext">ᄉ</div>
+    <div class="keytext">ᄀ</div>
     </div>
     <div class="key plain" id="K_H">
     <div class="keycap">h</div>
-    <div class="keytext">ᅮ</div>
+    <div class="keytext">ᄒ</div>
     </div>
     <div class="key plain" id="K_J">
     <div class="keycap">j</div>
-    <div class="keytext">ᄒ</div>
+    <div class="keytext">ᄌ</div>
     </div>
     <div class="key plain" id="K_K">
     <div class="keycap">k</div>
-    <div class="keytext">ᄋ</div>
+    <div class="keytext">ᄏ</div>
     </div>
     <div class="key plain" id="K_L">
     <div class="keycap">l</div>
-    <div class="keytext">ᄀ</div>
+    <div class="keytext">ᅣ</div>
     </div>
     <div class="key plain" id="K_COLON">
     <div class="keycap">;</div>
@@ -206,11 +206,11 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_Z">
     <div class="keycap">z</div>
-    <div class="keytext">ᄐ</div>
+    <div class="keytext">ᅧ</div>
     </div>
     <div class="key plain" id="K_X">
     <div class="keycap">x</div>
-    <div class="keytext">ᄏ</div>
+    <div class="keytext">ᅲ</div>
     </div>
     <div class="key plain" id="K_C">
     <div class="keycap">c</div>
@@ -218,15 +218,15 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_V">
     <div class="keycap">v</div>
-    <div class="keytext">ᄅ</div>
+    <div class="keytext">ᅥ</div>
     </div>
     <div class="key plain" id="K_B">
     <div class="keycap">b</div>
-    <div class="keytext">ᄃ</div>
+    <div class="keytext">ᄇ</div>
     </div>
     <div class="key plain" id="K_N">
     <div class="keycap">n</div>
-    <div class="keytext">ᅭ</div>
+    <div class="keytext">ᄂ</div>
     </div>
     <div class="key plain" id="K_M">
     <div class="keycap">m</div>
