@@ -1,5 +1,7 @@
 # EuroLatin (SIL) Keyboard Change History
 
+## 3.0.1 (12 Mar 2024)
+** Fixed key-caps for right-parentheses subkeys
 ## 3.0.0 (4 Mar 2024)
 * Added support for flick-down gestures on touch devices with Keyman 17.0
 * Rearranged the numeric/symbol layer on touch devices to make it consistent with the flick-down layout and moved less-used letters to longpress and/or flick gestures.
