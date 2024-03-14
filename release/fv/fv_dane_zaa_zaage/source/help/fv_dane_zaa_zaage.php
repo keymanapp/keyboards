@@ -15,7 +15,7 @@ END;
 <p>This keyboard is designed for the <b>Dane-Z̲aa Z̲áágéʔ</b> language of the Western Subarctic region of Canada.</p>
 
 <h2>Desktop Layout</h2>
-<div id='osk' data-states='default shift rightalt rightalt-shift'>
+<div id='osk' data-states='default shift rightalt rightalt-shift'></div>
 
 <p>Combining accents are located on the standard <strong>/ and \</strong> keys. Type an accent after a vowel to add it on the vowel. If you've typed the wrong accent, just type the correct accent to replace it.</p>
 <ul>
