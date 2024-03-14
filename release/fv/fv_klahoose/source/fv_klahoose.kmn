@@ -18,6 +18,8 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
 
+C mobile shift layer
+
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
@@ -66,6 +68,9 @@ store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
+
+C mobile default layer
+
 + [T_Q_0] > 'q̓'
 + [T_Q] > 'q'
 + [T_W_0] > 'w̓'
@@ -114,6 +119,65 @@ store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
 + [T_N] > 'n'
 + [T_M_0] > 'm̓'
 + [T_M] > 'm'
+
+
+C vowels with acute accent (deadkey)
+'a' + [SHIFT T_ACUTE] > 'á'
+'a' + [T_ACUTE] > 'á'
+'A' + [SHIFT T_ACUTE] > 'Á'
+'A' + [T_ACUTE] > 'Á'
+
+'æ' + [SHIFT T_ACUTE] > 'ǽ'
+'æ' + [T_ACUTE] > 'ǽ'
+'Æ' + [SHIFT T_ACUTE] > 'Ǽ'
+'Æ' + [T_ACUTE] > 'Ǽ'
+
+'ɛ' + [SHIFT T_ACUTE] > 'ɛ́'
+'ɛ' + [T_ACUTE] > 'ɛ́'
+'Ɛ' + [SHIFT T_ACUTE] > 'Ɛ́'
+'Ɛ' + [T_ACUTE] > 'Ɛ́'
+
+'e' + [SHIFT T_ACUTE] > 'é'
+'e' + [T_ACUTE] > 'é'
+'E' + [SHIFT T_ACUTE] > 'É'
+'E' + [T_ACUTE] > 'É'
+
+'ə' + [SHIFT T_ACUTE] > 'ə́'
+'ə' + [T_ACUTE] > 'ə́'
+'Ə' + [SHIFT T_ACUTE] > 'Ə́'
+'Ə' + [T_ACUTE] > 'Ə́'
+
+'i' + [SHIFT T_ACUTE] > 'í'
+'i' + [T_ACUTE] > 'í'
+'I' + [SHIFT T_ACUTE] > 'Í'
+'I' + [T_ACUTE] > 'Í'
+
+'ɩ' + [SHIFT T_ACUTE] > 'ɩ́'
+'ɩ' + [T_ACUTE] > 'ɩ́'
+'Ɩ' + [SHIFT T_ACUTE] > 'Ɩ́'
+'Ɩ' + [T_ACUTE] > 'Ɩ́'
+
+'o' + [SHIFT T_ACUTE] > 'ó'
+'o' + [T_ACUTE] > 'ó'
+'O' + [SHIFT T_ACUTE] > 'Ó'
+'O' + [T_ACUTE] > 'Ó'
+
+'ɔ' + [SHIFT T_ACUTE] > 'ɔ́'
+'ɔ' + [T_ACUTE] > 'ɔ́'
+'Ɔ' + [SHIFT T_ACUTE] > 'Ɔ́'
+'Ɔ' + [T_ACUTE] > 'Ɔ́'
+
+'ʊ' + [SHIFT T_ACUTE] > 'ʊ́'
+'ʊ' + [T_ACUTE] > 'ʊ́'
+'Ʊ' + [SHIFT T_ACUTE] > 'Ʊ́'
+'Ʊ' + [T_ACUTE] > 'Ʊ́'
+
+'u' + [SHIFT T_ACUTE] > 'ú'
+'u' + [T_ACUTE] > 'ú'
+'U' + [SHIFT T_ACUTE] > 'Ú'
+'U' + [T_ACUTE] > 'Ú'
+
+
 
 c --- END OF TOUCH LAYOUT RULES ---
 
@@ -181,8 +245,8 @@ C special characters (12) - A æ, E ɛ ə, I ɩ, L ɬ, [ ƛ, O ɔ, T θ, U ʊ, v
 + [SHIFT K_U] > 'ʊ'
 + [RALT K_U] > 'U'
 
-+ [SHIFT K_U] > 'ɩ'
-+ [RALT K_U] > 'I'
++ [SHIFT K_I] > 'ɩ'
++ [RALT K_I] > 'I'
 
 + [SHIFT K_O] > 'ɔ'
 + [RALT K_O] > 'O'
