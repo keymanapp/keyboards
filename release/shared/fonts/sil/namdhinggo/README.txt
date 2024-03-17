@@ -9,7 +9,7 @@ To download the fonts visit the [Namdhinggo downloads page](https://software.sil
 
 For more information on using and developing the fonts see the full project documentation. This is available in two forms:
 
-- *local HTML* - Download the release or source package and open the file `documentation/index.html` in a browser
+- *local HTML* - Download the release package and open the file `documentation/index.html` in a browser
 - *local PDF* - Download the release or source package and open the file `documentation/pdf/index.pdf`
 
 For a complete list of changes in this version, or information on making contributions, see the [FONTLOG.txt](FONTLOG.txt).
