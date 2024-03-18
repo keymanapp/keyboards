@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'SGUUXS Keyboard Help';
-  $pagetitle = 'SGUUXS Keyboard Help';
+  $pagename = 'Sgüüx̱s Keyboard Help';
+  $pagetitle = 'Sgüüx̱s Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,15 +13,15 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>SGUUXS</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>Sgüüx̱s</b> language of the BC Coast region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="Nuucaanul.png" alt="Nuucanul" width="514" height="198" /></h2>
+<img src="fv_sguuxsU_.png" alt="Sguuxs" width="514" height="198" /></h2>
 					 
 <ul>
-				<li>The special characters of SGUUXS have been assigned to punctuation keys.</li>
+				<li>The special characters of Sgüüx̱s have been assigned to punctuation keys.</li>
                   <li>All accents are typed after the base character: a̱ is typed a then Hyphen - </li>
                   <li>To type the low line use the Hyphen Key — ḵ is typed k then Hyphen - </li>
                   <li>To type the diaeresis accent use the Left-Bracket Key [ - ü is typed u then Left-Bracket [ </li>
@@ -43,7 +43,7 @@ This keyboard is designed for the <b>SGUUXS</b> language of the BC Coast region 
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
 </li></ul><div class='vspace'></div><h3>Alternate Name</h3>
-<ul><li>SGUUXS
+<ul><li>Sgüüx̣s
 </li></ul>
 </div>
 
