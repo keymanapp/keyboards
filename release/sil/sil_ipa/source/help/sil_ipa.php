@@ -3427,7 +3427,8 @@ areas denote articulations judged impossible.</span></p>
 
 <h3>Subscripts</h3>
 
-<p>In this section the keystrokes are the same whether you turned on <b>Before</b> or not.</p>
+<p>In this section, if you turned on <b>Before</b> in <b>Keyboard options</b>, you will type the opposite sequence to what is in the below table. For example, this sequence "_3" would produce "₃"</p>
+<p>Use the "_" rota after the numeral to continue with <a href="#diacritics">Diacritics &amp; Suprasegmentals</a></p>
 
 <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
  style='width:334.1pt;margin-left:3.0pt;border-collapse:collapse;border:none'>
@@ -3448,25 +3449,6 @@ areas denote articulations judged impossible.</span></p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
   color:blue'>subscript number</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=121 style='width:91.1pt;border-top:none;border-left:solid windowtext 1.5pt;
-  border-bottom:solid windowtext 1.5pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
-  color:blue'>3̠</span></p>
-  </td>
-  <td width=192 style='width:2.0in;border:none;border-bottom:solid windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=table><span style='font-size:9.0pt;font-family:"Courier New";
-  color:blue'>3__ (0-9)</span></p>
-  </td>
-  <td width=132 style='width:99.0pt;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
-  color:blue'>under-bar number</span></p>
   </td>
  </tr>
 </table>
@@ -3797,7 +3779,8 @@ areas denote articulations judged impossible.</span></p>
 </table>
 
 
-<h3>Diacritics &amp; Suprasegmentals</h3>
+<h3 id="diacritics">Diacritics &amp; Suprasegmentals</h3>
+
 
 <p>In this section the keystrokes are the same whether you turned on <b>Before</b> or not.</p>
 
