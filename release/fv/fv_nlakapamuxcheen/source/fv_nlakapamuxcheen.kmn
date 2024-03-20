@@ -14,7 +14,7 @@ begin Unicode > use(main)
 group(main) using keys
 
 + [SHIFT T_Q] > 'Q'
-+ [SHIFT T_W_0] > 'W̱U̱H̱'
++ [SHIFT T_W_0] > 'W̲U̲H̲'
 + [SHIFT T_W] > 'W'
 + [SHIFT T_E] > 'E'
 + [SHIFT T_R] > 'R'
@@ -27,13 +27,13 @@ group(main) using keys
 + [SHIFT T_S] > 'S'
 + [SHIFT T_D] > 'D'
 + [SHIFT T_F] > 'F'
-+ [SHIFT T_G_0] > 'G̱'
++ [SHIFT T_G_0] > 'G̲'
 + [SHIFT T_G] > 'G'
-+ [SHIFT T_H_0] > 'H̱H̱'
++ [SHIFT T_H_0] > 'H̲H̲'
 + [SHIFT T_H] > 'H'
 + [SHIFT T_J] > 'J'
-+ [SHIFT T_K_0] > 'Ḵ'
-+ [SHIFT T_K_1] > 'Ḵw'
++ [SHIFT T_K_0] > 'K̲'
++ [SHIFT T_K_1] > 'K̲w'
 + [SHIFT T_K] > 'K'
 + [SHIFT T_L] > 'L'
 + [SHIFT T_Z] > 'Z'
@@ -44,10 +44,10 @@ group(main) using keys
 + [SHIFT T_N] > 'N'
 + [SHIFT T_M] > 'M'
 + [T_Q] > 'q'
-+ [T_W_0] > 'w̱u̱ẖ'
++ [T_W_0] > 'w̲u̲h̲'
 + [T_W] > 'w'
 + [T_E] > 'e'
-+ [T_R] > 'ẖẖ'
++ [T_R] > 'h̲h̲'
 + [T_T] > 't'
 + [T_Y] > 'y'
 + [T_U] > 'u'
@@ -58,13 +58,13 @@ group(main) using keys
 + [T_S] > 's'
 + [T_D] > 'd'
 + [T_F] > 'f'
-+ [T_G_0] > 'g̱'
++ [T_G_0] > 'g̲'
 + [T_G] > 'g'
-+ [T_H_0] > 'ẖẖ'
++ [T_H_0] > 'h̲h̲'
 + [T_H] > 'h'
 + [T_J] > 'j'
-+ [T_K_0] > 'ḵ'
-+ [T_K_1] > 'ḵw'
++ [T_K_0] > 'k̲'
++ [T_K_1] > 'k̲w'
 + [T_K] > 'k'
 + [T_L] > 'L'
 + [T_Z] > 'z'
@@ -74,17 +74,19 @@ group(main) using keys
 + [T_B] > 'b'
 + [T_N] > 'n'
 + [T_M] > 'm'
++ [T_KW] > 'kw'
++ [T_LH] > 'lh'
 
 c --- CROSS PLATFORM STORES ---
 
 store(ComBMac) U+0331
 store(ComBMacKeys) [K_COLON] [SHIFT T_BMAC] [T_BMAC]
 
-'h' + any(ComBMacKeys) > 'ẖẖ'
-'k' + any(ComBMacKeys) > 'ḵ'
-'kw' + any(ComBMacKeys) > 'ḵw'
-'g' + any(ComBMacKeys) > 'g̱'
-'w' + any(ComBMacKeys) > 'w̱u̱ẖ'
+'h' + any(ComBMacKeys) > 'h̲h̲'
+'k' + any(ComBMacKeys) > 'k̲'
+'kw' + any(ComBMacKeys) > 'k̲w'
+'g' + any(ComBMacKeys) > 'g̲'
+'w' + any(ComBMacKeys) > 'w̲u̲h̲'
 
 c --- stacking and non-letter combination prevention ---
 store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'" 
