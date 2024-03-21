@@ -1,5 +1,11 @@
-Sḵwx̱wúmesh sníchim Change History
+Sḵwx̱wú7mesh sníchim Change History
 ============================
+
+9.3 (18 Mar 2024)
+----------------
+* Added 7 to the spelling of the name
+* Centered mobile layout
+
 
 9.2 (9 May 2019)
 ----------------
