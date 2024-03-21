@@ -9,7 +9,7 @@
 P&eacute;n&eacute;lan, Saramanga, Yari</p>
 <p>&#160;</p>
 <p>This keyboard works best, when used on a French keyboard (hardware) as its layout follows the French layout for most characters. This keyboard also works great as an on-screen keyboard for clicking (for example
-on websites) and not least as a touch-keyboard on Android and iOS devices (tablets and smartphones, landscape and portraid mode).</p>
+on websites) and not least as a touch-keyboard on Android and iOS devices (tablets and smartphones, landscape and portrait mode).</p>
 
 <h1>Keyboard Layout</h1>
 
