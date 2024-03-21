@@ -5,6 +5,7 @@ Sḵwx̱wú7mesh sníchim Change History
 ----------------
 * Added 7 to the spelling of the name
 * Centered mobile layout
+* Added the combined unicode characters for vowels with acute accent
 
 
 9.2 (9 May 2019)
