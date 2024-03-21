@@ -32,7 +32,7 @@ This keyboard is designed for the <b>Secwepemctsín</b> language of the BC Inte
 						<li>
 							double: “ Shift+Left-Bracket — ” Shift+Right-Bracket</li>
 						<li>
-							single ‹ Right-Alt+Shift+9 — › Right-Alt+Shift+0<</li>
+							single ‹ Right-Alt+Shift+9 — › Right-Alt+Shift+0</li>
 						<li>
 							double « Right-Alt+9 — » Right-Alt+0</li>
 						</ul> </ul> 
