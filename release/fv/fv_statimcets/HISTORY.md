@@ -1,5 +1,10 @@
 St̓át̓imcets Change History
 ============================
+9.1.4 (23 Feb 2024)
+------------------
+* Added crossplatform rules and stores
+* Normalised code points
+* Centered mobile keyboard
 
 9.1.3 (6 Mar 2023)
 -------------------
