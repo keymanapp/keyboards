@@ -1,4 +1,4 @@
-store(&VERSION) "10.0"
+﻿store(&VERSION) "10.0"
 store(&KEYBOARDVERSION) '10.0'
 store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "sqa"
@@ -23,16 +23,6 @@ C mobile shift layer
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-'M' + [SHIFT T_R] > 'M̓'
-'l' + [SHIFT T_R] > 'l̓'
-'N' + [SHIFT T_R] > 'N̓'
-'W' + [SHIFT T_R] > 'W̓'
-'m' + [SHIFT T_R] > 'm̓'
-'y' + [SHIFT T_R] > 'y̓'
-'n' + [SHIFT T_R] > 'n̓'
-'w' + [SHIFT T_R] > 'w̓'
-'L' + [SHIFT T_R] > 'L̓'
-'Y' + [SHIFT T_R] > 'Y̓'
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
@@ -45,16 +35,6 @@ C mobile shift layer
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > '7' layer('default')
-'o' + [SHIFT T_F] > 'ó'
-'I' + [SHIFT T_F] > 'Í'
-'E' + [SHIFT T_F] > 'É'
-'A' + [SHIFT T_F] > 'Á'
-'u' + [SHIFT T_F] > 'ú'
-'O' + [SHIFT T_F] > 'Ó'
-'e' + [SHIFT T_F] > 'é'
-'a' + [SHIFT T_F] > 'á'
-'i' + [SHIFT T_F] > 'í'
-'U' + [SHIFT T_F] > 'Ú'
 + [SHIFT T_G] > '-' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'Ḵ' layer('default')
@@ -73,13 +53,17 @@ C mobile shift layer
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
 
-C mobile unshifted layer
-+ [T_Q_0] > '!'
-+ [T_Q] > '?'
-+ [T_W_0] > 'w̓'
-+ [T_W] > 'w'
-+ [T_E_0] > 'é'
-+ [T_E] > 'e'
+C mobile deadkey glottal combining apostrophe
+'M' + [SHIFT T_R] > 'M̓'
+'l' + [SHIFT T_R] > 'l̓'
+'N' + [SHIFT T_R] > 'N̓'
+'W' + [SHIFT T_R] > 'W̓'
+'m' + [SHIFT T_R] > 'm̓'
+'y' + [SHIFT T_R] > 'y̓'
+'n' + [SHIFT T_R] > 'n̓'
+'w' + [SHIFT T_R] > 'w̓'
+'L' + [SHIFT T_R] > 'L̓'
+'Y' + [SHIFT T_R] > 'Y̓'
 'M' + [T_R] > 'M̓'
 'l' + [T_R] > 'l̓'
 'N' + [T_R] > 'N̓'
@@ -90,6 +74,36 @@ C mobile unshifted layer
 'w' + [T_R] > 'w̓'
 'L' + [T_R] > 'L̓'
 'Y' + [T_R] > 'Y̓'
+
+C mobile shift layer - deadkey acute accent
+'o' + [SHIFT T_F] > 'ó'
+'I' + [SHIFT T_F] > 'Í'
+'E' + [SHIFT T_F] > 'É'
+'A' + [SHIFT T_F] > 'Á'
+'u' + [SHIFT T_F] > 'ú'
+'O' + [SHIFT T_F] > 'Ó'
+'e' + [SHIFT T_F] > 'é'
+'a' + [SHIFT T_F] > 'á'
+'i' + [SHIFT T_F] > 'í'
+'U' + [SHIFT T_F] > 'Ú'
+'o' + [T_F] > 'ó'
+'I' + [T_F] > 'Í'
+'E' + [T_F] > 'É'
+'A' + [T_F] > 'Á'
+'u' + [T_F] > 'ú'
+'O' + [T_F] > 'Ó'
+'e' + [T_F] > 'é'
+'a' + [T_F] > 'á'
+'i' + [T_F] > 'í'
+'U' + [T_F] > 'Ú'
+
+C mobile unshifted layer
++ [T_Q_0] > '!'
++ [T_Q] > '?'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E_0] > 'é'
++ [T_E] > 'e'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
@@ -102,16 +116,6 @@ C mobile unshifted layer
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > '7'
-'o' + [T_F] > 'ó'
-'I' + [T_F] > 'Í'
-'E' + [T_F] > 'É'
-'A' + [T_F] > 'Á'
-'u' + [T_F] > 'ú'
-'O' + [T_F] > 'Ó'
-'e' + [T_F] > 'é'
-'a' + [T_F] > 'á'
-'i' + [T_F] > 'í'
-'U' + [T_F] > 'Ú'
 + [T_G] > '-'
 + [T_H] > 'h'
 + [T_J] > 'ḵ'
