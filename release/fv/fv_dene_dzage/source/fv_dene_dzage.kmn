@@ -125,5 +125,9 @@ store(LStroke) 'łŁ'
 ']]' + any(Vowels) > index(HasOgo,3) U+0302
 '=' + any(Vowels) > index(HasMac,2) U+0301
 '==' + any(Vowels) > index(HasOgo,3) U+0304 U+0301
+',' + any(Vowels) > index(HasOgo,2)
 
 ';' + any(L) > index(LStroke,2)
+
++ [K_QUOTE] > U+2019 c curly apostrophe
++ [RALT K_QUOTE] > U+0027 c straight apostrophe
