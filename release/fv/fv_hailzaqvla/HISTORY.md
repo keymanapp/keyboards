@@ -1,5 +1,9 @@
 Háiɫzaqvḷa Change History
 ============================
+9.5.1 (4 Mar 2024)
+---------------
+* Added left/right distinction to alt keys, updated on-screen keyboard layout, so on-screen keyboard words correctly on Mac
+
 9.5 (22 Jan 2024)
 ----------------
 * Corrected language and keyboard name
