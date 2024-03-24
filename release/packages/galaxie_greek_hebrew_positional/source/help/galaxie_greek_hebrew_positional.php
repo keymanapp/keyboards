@@ -1,6 +1,6 @@
 ﻿<?php
-  $pagename = 'Galaxie Greek/Hebrew (Positional) Keyboard Package Help';
-  $pagetitle = 'Galaxie Greek/Hebrew (Positional) Keyboard Package Help';
+  $pagename = 'Galaxie Greek/Hebrew (Positional) Package Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

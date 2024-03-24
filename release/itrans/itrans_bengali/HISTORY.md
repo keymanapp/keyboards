@@ -1,6 +1,12 @@
 Bengali Phonetic (ITRANS) Version History
 ===========================
 
+1.0.2 (2024-02-08)
+------------------
+* Update a character key according to the keyboard document:
+    key 'v' from ব্ to ৎ 09CE
+* Update the unshift layout of the keyboard
+
 1.0.1 (2022-05-13)
 ------------------
 * Remove duplicate ©RIGHT store

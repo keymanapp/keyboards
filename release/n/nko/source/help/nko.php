@@ -537,13 +537,3 @@ END;
 	</table>
    </section>	
    
-  <section id='history'>
-	<h2>Version History</h2>
-
-  <dl>
-    <dt>Version 1.0, 2012</dt>
-    <dd>2012, Initial version</dd>
-    
-    <dt>Version 1.1, 28 Apr 2015</dt>
-    <dd>Updated with web font for Android support</dd>
-  </dl>

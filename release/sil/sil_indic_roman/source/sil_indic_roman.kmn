@@ -1,169 +1,76 @@
-c Keyboard created by KMDECOMP
-c
-c Meta details: Registered=1; Version=0
-c               Flags=0; HotKey=0
-c
-
-c store(&21) "Created with Tavultesoft Keyman Developer version 6.2.183.0" 
-c store(&22) "0" 
-c store(&23) "Tavultesoft Keyman" 
-store(&VERSION) "9.0" 
-store(&MNEMONICLAYOUT) "1" 
-store(store6) "aeiouAEIOUsnt" 
-store(store7) "áéíóúÁÉÍÓÚś" 
-store(store8) "àèìòùÀÈÌÒÙ" 
-store(store9) "âêîôûÂÊÎÔÛ" 
-store(store10) "ãẽĩõũÃẼĨÕŨšñ" 
-store(store11) "äëïöüÄËÏÖÜ" 
-store(store12) "āēīōūĀĒĪŌŪşṉṯ" 
-store(store13) "tdnrsmhl" 
-store(store14) "ṭḍṇṛṣṃḥḷ" 
-store(store15) "nmy" 
-store(store16) "ṅṁẏ" 
-store(store17) "̐̐" 
-store(store18) "lr" 
-store(store19) "̥̥" 
-store(store20) "̄" 
-store(store21) "̃" 
+﻿store(&VERSION) "9.0" 
 store(&NAME) "Indic Roman Transliteration (SIL)" 
 store(&BITMAP) 'sil_indic_roman.ico'
-c store(&20) "6.2.183.0" 
-store(&TARGETS) 'windows macosx linux web'
-store(&COPYRIGHT) '© 2007-2021 SIL International'
-store(&KEYBOARDVERSION) '1.3.1'
+store(&TARGETS) 'desktop web'
+store(&COPYRIGHT) '© 2007-2023 SIL International'
+store(&KEYBOARDVERSION) '1.3.2'
 store(&VISUALKEYBOARD) 'sil_indic_roman.kvks'
+store(&MNEMONICLAYOUT) "1" 
+
+store(Kacute) "aeiounsAEIOUNS" 
+store(Uacute) "áéíóúńśÁÉÍÓÚŃŚ" 
+store(Kgrave) "aeiounAEIOUN" 
+store(Ugrave) "àèìòùǹÀÈÌÒÙǸ" 
+store(Kcirc) "aeiousAEIOUS" 
+store(Ucirc) "âêîôûŝÂÊÎÔÛŜ" 
+store(Ktilde) "aeiounAEIOUNsS" 
+store(Utilde) "ãẽĩõũñÃẼĨÕŨÑšŠ" 
+store(Kdiar) "aeiouAEIOU" 
+store(Udiar) "äëïöüÄËÏÖÜ" 
+store(Kmacron) "aeiouAEIOUSsnNtT" 
+store(Umacron) "āēīōūĀĒĪŌŪŞşṉṈṯṮ" 
+store(Kdotbelow) "dhlmnrstDHLMNRST" 
+store(Udotbelow) "ḍḥḷṃṇṛṣṭḌḤḶṂṆṚṢṬ" 
+store(Kdotabove) "mnyMNY" 
+store(Udotabove) "ṁṅẏṀṄẎ" 
+
+store(Uanusvara) U+0310 U+0310
+store(Kanusvara) "mn" 
 
 begin Unicode > use(main)
 
 group(main) using keys
-   + "'" > deadkey(1)  c line(0)
-   + "`" > deadkey(2)  c line(0)
-   + "^" > deadkey(3)  c line(0)
-   + "~" > deadkey(4)  c line(0)
-   + '"' > deadkey(5)  c line(0)
-   + "-" > deadkey(6)  c line(0)
-   + "." > deadkey(7)  c line(0)
-   + ">" > deadkey(8)  c line(0)
+   + "'" > deadkey(acute)
+   + "`" > deadkey(grave)
+   + "^" > deadkey(circ)
+   + "~" > deadkey(tilde)
+   + '"' > deadkey(diar)
+   + "-" > deadkey(macron)
+   + "." > deadkey(dotbelow)
+   + ">" > deadkey(dotabove)
 
-   + "M" > deadkey(9)  c line(0)
-   + "0" > deadkey(10)  c line(0)
-   + "=" > deadkey(11)  c line(0)
-   + "#" > deadkey(12)  c line(0)
+   + "M" > deadkey(anusvara)  c line(0)
+   + "0" > deadkey(circle)  c circle below
+   + "=" > deadkey(equal)  c macron above
+   + "#" > deadkey(tildeA)  c tilde above
 
 c access dk
-  deadkey(1)  + "'" > "'"  c line(0)
-  deadkey(2)  + "`" > "`"  c line(0)
-  deadkey(3)  + "^" > "^"  c line(0)
-  deadkey(4)  + "~" > "~"  c line(0)
-  deadkey(5)  + '"' > '"'  c line(0)
-  deadkey(6)  + "-" > "-"  c line(0)
-  deadkey(7)  + "." > "."  c line(0)
-  deadkey(8)  + ">" > ">"  c line(0)
+  deadkey(acute) + "'" > "'"  
+  deadkey(grave) + "`" > "`"  
+  deadkey(circ)  + "^" > "^"  
+  deadkey(tilde) + "~" > "~"  
+  deadkey(diar)  + '"' > '"'  
+  deadkey(macron)  + "-" > "-"
+  deadkey(dotbelow)  + "." > "."
+  deadkey(dotabove)  + ">" > ">"
+  deadkey(anusvara)  + "M" > "M"  c line(0)
+  deadkey(circle)  + "0" > "0"  c circle below
+  deadkey(equal)  + "=" > "="  c macron above
+  deadkey(tildeA)  + "#" > "#"  c tilde above
 
-  deadkey(9)  + "M" > "M"  c line(0)
-  deadkey(10)  + "0" > "0"  c line(0)
-  deadkey(11)  + "=" > "="  c line(0)
-  deadkey(12)  + "#" > "#"  c line(0)
-
-  deadkey(1)  + "A" > "Á"  c line(0)
-  deadkey(2)  + "A" > "À"  c line(0)
-  deadkey(3)  + "A" > "Â"  c line(0)
-  deadkey(4)  + "A" > "Ã"  c line(0)
-  deadkey(5)  + "A" > "Ä"  c line(0)
-  deadkey(6)  + "A" > "Ā"  c line(0)
-  deadkey(1)  + "E" > "É"  c line(0)
-  deadkey(2)  + "E" > "È"  c line(0)
-  deadkey(3)  + "E" > "Ê"  c line(0)
-  deadkey(4)  + "E" > "Ẽ"  c line(0)
-  deadkey(5)  + "E" > "Ë"  c line(0)
-  deadkey(6)  + "E" > "Ē"  c line(0)
-  deadkey(1)  + "I" > "Í"  c line(0)
-  deadkey(2)  + "I" > "Ì"  c line(0)
-  deadkey(3)  + "I" > "Î"  c line(0)
-  deadkey(4)  + "I" > "Ĩ"  c line(0)
-  deadkey(5)  + "I" > "Ï"  c line(0)
-  deadkey(6)  + "I" > "Ī"  c line(0)
-  deadkey(1)  + "O" > "Ó"  c line(0)
-  deadkey(2)  + "O" > "Ò"  c line(0)
-  deadkey(3)  + "O" > "Ô"  c line(0)
-  deadkey(4)  + "O" > "Õ"  c line(0)
-  deadkey(5)  + "O" > "Ö"  c line(0)
-  deadkey(6)  + "O" > "Ō"  c line(0)
-  deadkey(1)  + "U" > "Ú"  c line(0)
-  deadkey(2)  + "U" > "Ù"  c line(0)
-  deadkey(3)  + "U" > "Û"  c line(0)
-  deadkey(4)  + "U" > "Ũ"  c line(0)
-  deadkey(5)  + "U" > "Ü"  c line(0)
-  deadkey(6)  + "U" > "Ū"  c line(0)
-  deadkey(1)  + "a" > "á"  c line(0)
-  deadkey(2)  + "a" > "à"  c line(0)
-  deadkey(3)  + "a" > "â"  c line(0)
-  deadkey(4)  + "a" > "ã"  c line(0)
-  deadkey(5)  + "a" > "ä"  c line(0)
-  deadkey(6)  + "a" > "ā"  c line(0)
-  deadkey(1)  + "e" > "é"  c line(0)
-  deadkey(2)  + "e" > "è"  c line(0)
-  deadkey(3)  + "e" > "ê"  c line(0)
-  deadkey(4)  + "e" > "ẽ"  c line(0)
-  deadkey(5)  + "e" > "ë"  c line(0)
-  deadkey(6)  + "e" > "ē"  c line(0)
-  deadkey(1)  + "i" > "í"  c line(0)
-  deadkey(2)  + "i" > "ì"  c line(0)
-  deadkey(3)  + "i" > "î"  c line(0)
-  deadkey(4)  + "i" > "ĩ"  c line(0)
-  deadkey(5)  + "i" > "ï"  c line(0)
-  deadkey(6)  + "i" > "ī"  c line(0)
-  deadkey(1)  + "o" > "ó"  c line(0)
-  deadkey(2)  + "o" > "ò"  c line(0)
-  deadkey(3)  + "o" > "ô"  c line(0)
-  deadkey(4)  + "o" > "õ"  c line(0)
-  deadkey(5)  + "o" > "ö"  c line(0)
-  deadkey(6)  + "o" > "ō"  c line(0)
-  deadkey(1)  + "u" > "ú"  c line(0)
-  deadkey(2)  + "u" > "ù"  c line(0)
-  deadkey(3)  + "u" > "û"  c line(0)
-  deadkey(4)  + "u" > "ũ"  c line(0)
-  deadkey(5)  + "u" > "ü"  c line(0)
-  deadkey(6)  + "u" > "ū"  c line(0)
-
-  deadkey(7)  + "d" > "ḍ"  c line(0)
-  deadkey(7)  + "h" > "ḥ"  c line(0)
-  deadkey(7)  + "l" > "ḷ"  c line(0)
-  deadkey(10)  + "l" > "̥"  c line(0)
-  deadkey(11)  + "l" > "̄"  c line(0)
-  deadkey(12)  + "l" > "̃"  c line(0)
-  deadkey(7)  + "m" > "ṃ"  c line(0)
-  deadkey(8)  + "m" > "ṁ"  c line(0)
-  deadkey(9)  + "m" > "̐"  c line(0)
-c  deadkey(1)  + "n" >  c line(0)
-c  deadkey(2)  + "n" >  c line(0)
-c  deadkey(3)  + "n" >  c line(0)
-  deadkey(4)  + "n" > "ñ"  c line(0)
-c  deadkey(5)  + "n" >  c line(0)
-  deadkey(6)  + "n" > "ṉ"  c line(0)
-  deadkey(7)  + "n" > "ṇ"  c line(0)
-  deadkey(8)  + "n" > "ṅ"  c line(0)
-  deadkey(9)  + "n" > "̐"  c line(0)
-  deadkey(7)  + "r" > "ṛ"  c line(0)
-  deadkey(10)  + "r" > "̥"  c line(0)
-c  deadkey(11)  + "r" >  c line(0)
-c  deadkey(12)  + "r" >  c line(0)
-  deadkey(1)  + "s" > "ś"  c line(0)
-c  deadkey(2)  + "s" >  c line(0)
-c  deadkey(3)  + "s" >  c line(0)
-  deadkey(4)  + "s" > "š"  c line(0)
-c  deadkey(5)  + "s" >  c line(0)
-  deadkey(6)  + "s" > "ş"  c line(0)
-  deadkey(7)  + "s" > "ṣ"  c line(0)
-c  deadkey(1)  + "t" >  c line(0)
-c  deadkey(2)  + "t" >  c line(0)
-c  deadkey(3)  + "t" >  c line(0)
-c  deadkey(4)  + "t" >  c line(0)
-c  deadkey(5)  + "t" >  c line(0)
-  deadkey(6)  + "t" > "ṯ"  c line(0)
-  deadkey(7)  + "t" > "ṭ"  c line(0)
-  deadkey(8)  + "y" > "ẏ"  c line(0)
-c  deadkey(9)  + "y" >  c line(0)
+deadkey(acute)    + any(Kacute)    > index(Uacute,2)
+deadkey(grave)    + any(Kgrave)    > index(Ugrave,2)
+deadkey(circ)     + any(Kcirc)     > index(Ucirc,2)
+deadkey(tilde)    + any(Ktilde)    > index(Utilde,2)
+deadkey(diar)     + any(Kdiar)     > index(Udiar,2)
+deadkey(macron)   + any(Kmacron)   > index(Umacron,2)
+deadkey(dotbelow) + any(Kdotbelow) > index(Udotbelow,2)
+deadkey(dotabove) + any(Kdotabove) > index(Udotabove,2)
+deadkey(anusvara) + any(Kanusvara) > index(Uanusvara,2)
+deadkey(circle)   + "l"            > "̥"  c circle below
+deadkey(circle)   + "r"            > "̥"  c circle below
+deadkey(equal)    + "l"            > "̄"  c macron above
+deadkey(tildeA)   + "l"            > "̃"  c tilde above
 
 c EOF
 

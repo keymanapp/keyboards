@@ -1,6 +1,6 @@
 ﻿<?php
-  $pagename = 'Syriac/Aramaic Keyboard Package Help';
-  $pagetitle = 'Syriac/Aramaic Keyboard Package Help';
+  $pagename = 'Syriac/Aramaic Package Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <body>

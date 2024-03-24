@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'French (Canadian Legacy) Keyboard Help';
-  $pagetitle = 'French (Canadian Legacy) Keyboard Help';
+  $pagename = 'French (Canadian Legacy) (deprecated) Keyboard Help';
+  $pagetitle = 'French (Canadian Legacy) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 
