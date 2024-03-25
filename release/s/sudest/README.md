@@ -1,11 +1,9 @@
-sudest keyboard
+Sudest keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
-sudest generated from template
+This is a keyboard for typing the Sudest language of Papua New Guinea.
 
 Links
 -----
