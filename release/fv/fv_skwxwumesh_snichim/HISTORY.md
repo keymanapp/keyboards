@@ -7,7 +7,6 @@ Sḵwx̱wú7mesh sníchim Change History
 * Centered mobile layout
 * Added the combined unicode characters for vowels with acute accent
 
-
 9.2 (9 May 2019)
 ----------------
 * Added .kps file
