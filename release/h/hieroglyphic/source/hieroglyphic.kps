@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Hieroglyphic</Name>
-    <Copyright URL="">© 2010-2022 Christian Casey</Copyright>
+    <Copyright URL="">© 2010-2023 Christian Casey</Copyright>
   </Info>
   <Files>
     <File>
@@ -32,30 +32,6 @@
       <Description>Keyboard Hieroglyphic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\assets\Aegyptus.pdf</Name>
-      <Description>File Aegyptus.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\Aegyptus.ttf</Name>
-      <Description>Font Aegyptus</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\Gardiner.ttf</Name>
-      <Description>Font Gardiner</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\assets\SignList.pdf</Name>
-      <Description>File SignList.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
     </File>
     <File>
       <Name>welcome\style.css</Name>
@@ -81,16 +57,40 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</Name>
+      <Description>Font Aegyptus</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\Aegyptus.pdf</Name>
+      <Description>File Aegyptus.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\AegyptusBold.otf</Name>
+      <Description>Font Aegyptus Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\license.txt</Name>
+      <Description>File license.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hieroglyphic</Name>
       <ID>hieroglyphic</ID>
-      <Version>1.4</Version>
-      <OSKFont>..\assets\Gardiner.ttf</OSKFont>
-      <DisplayFont>..\assets\Gardiner.ttf</DisplayFont>
+      <Version>1.4.1</Version>
+      <OSKFont>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</DisplayFont>
       <Languages>
-        <Language ID="egy-Egyp">Egyptian (Ancient) (Egyptian hieroglyphs)</Language>
+        <Language ID="egy">Egyptian (Ancient)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

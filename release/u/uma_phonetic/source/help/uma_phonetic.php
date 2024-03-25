@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Uma Phonetic Keyboard Keyboard Help';
-  $pagetitle = 'Uma Phonetic Keyboard Keyboard Help';
+  $pagename = 'Uma Phonetic Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

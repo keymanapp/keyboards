@@ -78,6 +78,7 @@
 .kmw-keyboard-gff_harege_fidelat #numerals-K_4\+shift,
 .kmw-keyboard-gff_harege_fidelat #numerals-K_PERIOD
   { background: #f4eee7; color: black ; }
+
 /*
 *  =========== DEFAULT LAYER ===========
 *
@@ -96,7 +97,6 @@
     opacity: 0;
   }
 }
-
 
 /* inner ring */
 .phone div.kmw-key.kmw-key-default[id$='K_H'], .tablet div.kmw-key.kmw-key-default[id$='K_H'],
@@ -153,9 +153,16 @@
 /* { background: #ece1d5 ; color: black ; } */
   { background: #f3d6ce ; color: black ; }
 
+/* override for U+2019 background color in a popup context */
+.phone.ios div.kmw-key.kmw-key-default[id='popup-punctuation-U_2019'], .tablet.ios div.kmw-key.kmw-key-default[id='popup-punctuation-U_2019']
+  {background: #fdfdfe ; color: black ; }
+
+.phone.android div.kmw-key.kmw-key-default[id='popup-punctuation-U_2019'], .tablet.android div.kmw-key.kmw-key-default[id='popup-punctuation-U_2019']
+  {background: #777 ; color: white ; }
+
 /* 5th ring - modifier keys */
 .kmw-keyboard-gff_amharic #default-K_TWAA,
-.phone div.kmw-key.kmw-key-special[id$='K_SHIFT'], .tablet div.kmw-key.kmw-key-special[id$='K_SHIFT'],
+.phone div.kmw-key.kmw-key-shift[id$='K_SHIFT'], .tablet div.kmw-key.kmw-key-shift[id$='K_SHIFT'],
 .phone div.kmw-key.kmw-key-shift[id$='K_LOPT'], .tablet div.kmw-key.kmw-key-shift[id$='K_LOPT'],
 .phone div.kmw-key.kmw-key-shift[id$='K_BKSP'], .tablet div.kmw-key.kmw-key-shift[id$='K_BKSP'],
 .phone div.kmw-key.kmw-key-shift[id$=K_ENTER], .tablet div.kmw-key.kmw-key-shift[id$=K_ENTER]

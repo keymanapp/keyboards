@@ -1,13 +1,198 @@
 ﻿store(&VERSION) "10.0"
-store(&TARGETS) "mobile tablet"
-store(&COPYRIGHT) '(c) 2015-2020 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᓀᐦᐃᔭᐍᐏᐣ'
-store(&KEYBOARDVERSION) '10.0.2'
+store(&KEYBOARDVERSION) '11.0'
 store(&LAYOUTFILE) 'fv_plains_cree.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'fv_plains_cree.kvks'
 
 begin Unicode > use(main)
 
 group(main) using keys
+
+c --- START OF DESKTOP RULES ---
+c syllabic stores
+store(ShortVowelsOnly) 'ᐃᐅᐊ' c i o a
+store(LongVowelsOnly) 'ᐄᐆᐋ' c ii oo aa
+store(VowelKeys) [K_I] [K_O] [K_A]
+
+store(WShortVowels) 'ᐏᐓᐘ' c wi wo wa
+store(WLongVowels) 'ᐑᐕᐚ' c wii woo waa
+
+store(KShortVowels) 'ᑭᑯᑲ' c ki ko ka
+store(KLongVowels) 'ᑮᑰᑳ' c kii koo kaa
+store(KWShortVowels) 'ᑷᑻᑿ' c kwi kwo kwa
+store(KWLongVowels)'ᑹᑽᒁ' c kwii kwoo kwaa
+
+store(PShortVowels) 'ᐱᐳᐸ' c pi po pa
+store(PLongVowels) 'ᐲᐴᐹ' c pii poo paa
+store(PWShortVowels) 'ᐽᑁᑅ' c pwi pwo pwa
+store(PWLongVowels) 'ᐿᑃᑇ' c pwii pwoo pwaa
+
+store(TShortVowels) 'ᑎᑐᑕ' c ti to ta
+store(TLongVowels) 'ᑏᑑᑖ' c tii too taa
+store(TWShortVowels) 'ᑚᑞᑢ' c twi two twa
+store(TWLongVowels) 'ᑜᑠᑤ' c twii twoo twaa
+
+store(CShortVowels) 'ᒋᒍᒐ' c ci co ca
+store(CLongVowels) 'ᒌᒎᒑ' c cii coo caa
+store(CWShortVowels) 'ᒕᒙᒝ' c cwe cwi cwo cwa
+store(CWLongVowels) 'ᒗᒛᒟ' c cwe cwii cwoo cwaa
+
+store(MShortVowels) 'ᒥᒧᒪ' c mi mo ma
+store(MLongVowels) 'ᒦᒨᒫ' c mii moo maa
+store(MWShortVowels) 'ᒯᒳᒷ' c mwi mwo mwa
+store(MWLongVowels) 'ᒱᒵᒹ' c mwii mwoo mwaa
+
+store(NShortVowels) 'ᓂᓄᓇ' c ni no na
+store(NLongVowels) 'ᓃᓅᓈ' c nii noo naa
+store(NWShortVowels) 'ᣇᣋᓌ' c nwi nwo nwa
+store(NWLongVowels) 'ᣉᣍᓎ' c nwii nwoo nwaa
+
+store(SShortVowels) 'ᓯᓱᓴ' c si so sa
+store(SLongVowels) 'ᓰᓲᓵ' c sii soo saa
+store(SWShortVowels) 'ᓹᓽᔁ' c swi swo swa
+store(SWLongVowels) 'ᓻᓿᔃ' c swii swoo swaa
+
+store(YShortVowels) 'ᔨᔪᔭ' c yi yo ya
+store(YLongVowels) 'ᔩᔫᔮ' c yii yoo yaa
+store(YWShortVowels)'ᔲᔶᔺ' c ywi ywo ywa
+store(YWLongVowels) 'ᔴᔸᔼ' c ywii ywoo ywaa
+
+store(LShortVowels)
+
+any(LongVowelsOnly) + [K_BKSP] > index(ShortVowelsOnly,1)
+
+c standalone vowels
++ 'e' > 'ᐁ'
++ 'i' > 'ᐃ'
+'ᐃ' + [K_I] > 'ᐄ' 
++ 'o' > 'ᐅ'
+'ᐅ' + [K_O] > 'ᐆ'
++ 'a' > 'ᐊ'
+'ᐊ' + [K_A] > 'ᐋ'
+any(ShortVowelsOnly) + [K_W] > index(WShortVowels,1)
+any(LongVowelsOnly) + [K_W] > index(WLongVowels,1)
+
+c standalone consonants
++ 'l' > 'ᓬ'
++ 'x' > 'ᕽ'
++ 'r' > 'ᕒ'
++ 'h' > 'ᐦ'
++ '.' > '᙮'
+
+c syllable building
++'w' > 'ᐤ'
+'ᐤ' + [K_E] > 'ᐍ'
+'ᐤ' + any(VowelKeys) > index(WShortVowels,2)
+any(WShortVowels) + any(VowelKeys) > index(WLongVowels,1)
+any(WShortVowels) + [K_BKSP] > 'ᐤ'
+any(WLongVowels) + [K_BKSP] > index(WShortVowels,1)
+
++ 'k' > 'ᐠ'
+'ᐠ' + [K_E] > 'ᑫ'
+'ᐠ' + any(VowelKeys) > index(KShortVowels,2)
+any(KShortVowels) + any(VowelKeys) > index(KLongVowels,1)
+any(KLongVowels) + [K_BKSP] > index(KShortVowels,1)
+'ᐠ' + [K_W] > 'ᑵ'
+'ᑵ' + [K_E] > 'ᑵ'
+'ᑵ' + any(VowelKeys) > index(KWShortVowels,2)
+any(KWShortVowels) + any(VowelKeys) > index(KWLongVowels,1)
+any(KWLongVowels) + [K_BKSP] > index(KWShortVowels,1)
+
++ 'p' > 'ᑊ'
+'ᑊ' + [K_E] > 'ᐯ'
+'ᑊ' + any(VowelKeys) > index(PShortVowels,2)
+any(PShortVowels) + any(VowelKeys) > index(PLongVowels,1)
+any(PLongVowels) + [K_BKSP] > index(PShortVowels,1)
+'ᑊ' + [K_W] > 'ᐻ'
+'ᐻ' + [K_E] > 'ᐻ'
+'ᐻ' + any(VowelKeys) > index(PWShortVowels,2)
+any(PWShortVowels) + any(VowelKeys) > index(PWLongVowels,1)
+any(PWLongVowels) + [K_BKSP] > index(PWShortVowels,1)
+
++ 't' > 'ᐟ'
+'ᐟ' + [K_E] > 'ᑌ'
+'ᐟ' + any(VowelKeys) > index(TShortVowels,2)
+any(TShortVowels) + any(VowelKeys) > index(TLongVowels,1)
+any(TLongVowels) + [K_BKSP] > index(TShortVowels,1)
+'ᐟ' + [K_W] > 'ᑘ'
+'ᑘ' + [K_E] > 'ᑘ'
+'ᑘ' + any(VowelKeys) > index(TWShortVowels,2)
+any(TWShortVowels) + any(VowelKeys) > index(TWLongVowels,1)
+any(TWLongVowels) + [K_BKSP] > index(TWShortVowels,1)
+
++ 'c' > 'ᐨ'
+'ᐨ' + [K_E] > 'ᒉ'
+'ᐨ' + any(VowelKeys) > index(CShortVowels,2)
+any(CShortVowels) + any(VowelKeys) > index(CLongVowels,1)
+any(CLongVowels) + [K_BKSP] > index(CShortVowels,1)
+'ᐨ' + [K_W] > 'ᒓ'
+'ᒓ' + [K_e] > 'ᒓ'
+'ᒓ' + any(VowelKeys) > index(CWShortVowels,2)
+any(CWShortVowels) + any(VowelKeys) > index(CWLongVowels,1)
+any(CWLongVowels) + [K_BKSP] > index(CWShortVowels,1)
+
++ 'm' > 'ᒼ'
+'ᒼ' + [K_E] > 'ᒣ'
+'ᒼ' + any(VowelKeys) > index(MShortVowels,2)
+any(MShortVowels) + any(VowelKeys) > index(MLongVowels,1)
+any(MLongVowels) + [K_BKSP] > index(MShortVowels,1)
+'ᒼ' + [K_W] > 'ᒭ'
+'ᒭ' + [K_E] > 'ᒭ'
+'ᒭ' + any(VowelKeys) > index(MWShortVowels,2)
+any(MWShortVowels) + any(VowelKeys) > index(MWLongVowels,1)
+any(MWLongVowels) + [K_BKSP] > index(MWShortVowels,1)
+
++ 'n' > 'ᐣ'
+'ᐣ' + [K_E] > 'ᓀ'
+'ᐣ' + any(VowelKeys) > index(NShortVowels,2)
+any(NShortVowels) + any(VowelKeys) > index(NLongVowels,1)
+any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
+'ᐣ' + [K_W] > 'ᓊ'
+'ᓊ' + [K_E] > 'ᓊ'
+'ᓊ' + any(VowelKeys) > index(NWShortVowels,2)
+any(NWShortVowels) + any(VowelKeys) > index(NWLongVowels,1)
+any(NWLongVowels) + [K_BKSP] > index(NWShortVowels,1)
+
++ 's' > 'ᐢ'
+'ᐢ' + [K_E] > 'ᓭ'
+'ᐢ' + any(VowelKeys) > index(SShortVowels,2)
+any(SShortVowels) + any(VowelKeys) > index(SLongVowels,1)
+any(SLongVowels) + [K_BKSP] > index(SShortVowels,1)
+'ᐢ' + [K_W] > 'ᓷ'
+'ᓷ' + [K_E] > 'ᓷ'
+'ᓷ' + any(VowelKeys) > index(SWShortVowels,2)
+any(SWShortVowels) + any(VowelKeys) > index(SWLongVowels,1)
+any(SWLongVowels) + [K_BKSP] > index(SWShortVowels,1)
+
++ 'y' > 'ᐩ'
+'ᐩ' + [K_E] > 'ᔦ'
+'ᐩ' + any(VowelKeys) > index(YShortVowels,2)
+any(YShortVowels) + any(VowelKeys) > index(YLongVowels,1)
+any(YLongVowels) + [K_BKSP] > index(YShortVowels,1)
+'ᐩ' + [K_W] > 'ᔰ'
+'ᔰ' + [K_E] > 'ᔰ'
+'ᔰ' + any(VowelKeys) > index(YWShortVowels,2)
+any(YWShortVowels) + any(VowelKeys) > index(YWLongVowels,1)
+any(YWLongVowels) + [K_BKSP] > index(YWShortVowels,1)
+
+c --- modified punctuation ---
++ [K_LBRKT] > deadkey(Deadkey) 
++ [K_COLON] > '«'
++ [K_QUOTE] > '»'
++ [SHIFT K_SPACE] > U+202F
+
+c --- original punctuation ---
++ [RALT K_LBRKT] > '['
++ [RALT K_COLON] > ';'
++ [RALT K_QUOTE] > U+0027
++ [RALT SHIFT K_QUOTE] > U+0022
+
+c --- preventing latin characters from being typed ---
+
+store(nul) "qudfgjzvbQWERTYUIOPASDFGHJKLZXCVBNM"
++ any(nul) > nul
 
 
 c --- START OF TOUCH LAYOUT RULES ---

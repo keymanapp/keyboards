@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Shaw Imperial</Name>
-    <Copyright URL="">2020-2021 Shavian.info</Copyright>
+    <Copyright URL="">© 2020-2023 Shavian.info</Copyright>
     <Author URL="mailto:contact@shavian.info">Ed Greville</Author>
     <WebSite URL="www.shavian.info">www.shavian.info</WebSite>
     <Version URL=""></Version>
@@ -47,12 +47,6 @@
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>HenryHigginsSans-Regular.ttf</Name>
-      <Description>Font Henry Higgins Sans Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>welcome\shavian_alphabet_reading_key.png</Name>
@@ -102,14 +96,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</Name>
+      <Description>Font Inter Alia Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\shaw\inter_alia\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Shaw Imperial</Name>
       <ID>english_shavian_igc</ID>
-      <Version>1.1</Version>
-      <OSKFont>HenryHigginsSans-Regular.ttf</OSKFont>
-      <DisplayFont>HenryHigginsSans-Regular.ttf</DisplayFont>
+      <Version>1.2.1</Version>
+      <OSKFont>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\shaw\inter_alia\InterAlia-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="en-Shaw">English (Shavian)</Language>
       </Languages>

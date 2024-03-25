@@ -2,8 +2,10 @@
 c with name "Common Devanagari"
 store(&VERSION) '10.0'
 store(&NAME) 'Common Devanagari'
-store(&KEYBOARDVERSION) '1.1'
-store(&COPYRIGHT) '© 2021 WIn Publishing Trust'
+
+store(&COPYRIGHT) '©WIn Publishing Trust 2021'
+store(&KEYBOARDVERSION) '1.2'
+
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'common_devanagari.kvks'
 store(&LAYOUTFILE) 'common_devanagari.keyman-touch-layout'
@@ -211,7 +213,8 @@ U+0928 + '`' >  U+0928 U+094D
 U+0928 + 'x' > U+0928 U+094D U+200D
 
 any(ConsonG) + 'X' >  index(ConsonG,1) U+094D U+200C
-any(ConsonG) + 'x' >  index(ConsonG,1) U+094D 
+any(ConsonG) + 'x' >  index(ConsonG,1) U+094D
+any(ConsonG) + '`' >  index(ConsonG,1) U+094D U+200D 
 
 
 

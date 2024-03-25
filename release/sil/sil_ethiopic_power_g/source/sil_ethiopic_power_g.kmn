@@ -1,12 +1,13 @@
 ﻿store(&VERSION) '9.0'
 store(&NAME) 'SIL Ethiopic Power-G'
-store(&TARGETS) 'windows macosx linux web'
-store(&KEYBOARDVERSION) '1.2.2'
+store(&TARGETS) 'web desktop'
+store(&KEYBOARDVERSION) '1.2.3'
 store(&BITMAP) 'sil_ethiopic_power_g.ico'
 store(&COPYRIGHT) '© 2017-2020 SIL Ethiopia'
-store(&MESSAGE) 'The SIL Ethiopic Power-G keyboard was developed to input Ethiopic Saba Fidel scripts using the keyboarding sequences found in the Power Geez (Phonetic) keyboard from Concepts Data Systems.'
+store(&MESSAGE) 'The SIL Ethiopic Power-G keyboard enables typing in all Ethiopic Saba Fidel scripts using the keyboarding sequences found in the Power Geez (Phonetic) keyboard from Concepts Data Systems.'
 c store(&LANGUAGE) 'x045E'
 c store(&WINDOWSLANGUAGES) 'x045E'
+c store(&LAYOUT) 'default'
 
 c *********************************************************************************
 
@@ -219,11 +220,11 @@ U+12d8 + '=' > U+ab15 c z= ꬕ
 U+1328 + '=' > U+ab20 c C= ꬠ
 U+1330 + '=' > U+ab28 c P= ꬨ
 
-c U+12a5          + '='  > U+e06d c vowel with line above
-c U+1295          + '='  > U+e295 c n     with line above     (Gumuz variant of 129d)
-c U+12ad          + '='  > U+e2ad c k     with line above     (Gumuz, but not used)
-c U+130d          + '='  > U+e31d c g     with line above combined (disconnected variant of 131d)
-c U+12f5          + '='  > U+e385 c d     with line inside    (archaic Oromo variant of 12fd)
+c U+12a5 + '='  > U+e06d c vowel with line above
+c U+1295 + '='  > U+e295 c n     with line above     (Gumuz variant of 129d)
+c U+12ad + '='  > U+e2ad c k     with line above     (Gumuz, but not used)
+c U+130d + '='  > U+e31d c g     with line above combined (disconnected variant of 131d)
+c U+12f5 + '='  > U+e385 c d     with line inside    (archaic Oromo variant of 12fd)
 
 c **********************************************************************************
 c Additional forms:

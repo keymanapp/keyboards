@@ -1,9 +1,7 @@
 Lao Pali US keyboard
 ==============
 
-© 2021  Dr Khampha Sidavong, John Durdin
-
-Version 1.0
+© Dr Khampha Sidavong, John Durdin
 
 Description
 -----------
@@ -11,6 +9,7 @@ This Lao Pali keyboard layout is intended for users unfamiliar with the Lao stan
 
 Links
 -----
+https://keyman.com/keyboards/lao_pali_us
 
 Supported Platforms
 -------------------

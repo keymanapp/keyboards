@@ -1,6 +1,10 @@
 lao_phonetic Change History
 ====================
 
+1.1.3 (2023-07-19)
+------------------
+* Add js file for package to support mobile
+
 1.1.2 (2022-09-12)
 ------------------
 * Add support for touch devices

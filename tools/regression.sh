@@ -44,6 +44,7 @@ function display_usage {
 }
 
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+. "$KEYBOARDROOT/tools/jq.inc.sh"
 
 cd "$KEYBOARDROOT"
 
@@ -189,7 +190,6 @@ echo "Parameters:
 #
 function get_developer_remote_version {
   local TIER="$1"
-  local JQ="$KEYBOARDROOT/tools/jq-win64.exe"
 
   local DOWNLOADS_VERSION_API=https://downloads.keyman.com/api/version/developer
   local REMOTE_DEVELOPER_VERSIONS=`curl -s $DOWNLOADS_VERSION_API`

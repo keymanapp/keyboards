@@ -25,15 +25,16 @@ simplified style is often preferred for clarity, especially in non-Arabic
 languages, but may be considered unattractive in more traditional and 
 literate communities.
 
-Two fonts from this typeface family are included in this release:
-
+Four weights for this typeface family are included:
      * Scheherazade New Regular
+     * Scheherazade New Medium
+     * Scheherazade New SemiBold
      * Scheherazade New Bold
 
-This release supports virtually all of the Unicode 13.0 Arabic character 
+This release supports virtually all of the Unicode 15.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use). Font smarts are implemented using OpenType 
-and Graphite technologies.
+recommended for normal use). Font smarts are implemented using the OpenType 
+smart font technology.
 
 For detailed documentation see the contents of the 'documentation' folder.
 
@@ -63,17 +64,50 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-2021-11-22 (SIL WSTech team) Scheherazade New Version 3.300 (official release)
+### 2023-04-14 (SIL WSTech team) Scheherazade New version 4.000
+
+#### New
+- Added Medium and SemiBold weights
+- Added Arabic-style (rounded) versions of chevron quotes
+- Added Bold calligraphic honorifics (previous ones were the same weight as Regular)
+- Added:
+  - U+201B SINGLE HIGH-REVERSED-9 QUOTATION MARK
+  - U+201F DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+  - U+10EFD ARABIC SMALL LOW WORD SAKTA
+  - U+10EFE ARABIC SMALL LOW WORD QASR
+  - U+10EFF ARABIC SMALL LOW WORD MADDA
+
+#### Improved
+- Changed Kurdish language to support a U+06BE Heh Doachashmee alternate rather than U+0647 Heh alternate
+- Redesigned
+  - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH (see https://www.unicode.org/versions/Unicode15.0.0/erratafixed.html)
+  - Slight adjustments to:
+    - gaf-like characters (such as U+06AF ARABIC LETTER GAF)
+    - U+0601 ARABIC SIGN SANAH
+    - U+0605 ARABIC NUMBER MARK ABOVE
+- Small improvements to kerning
+
+#### Removed
+- Removed support for Sindhi-style comma when Sindhi language is selected
+- Removed Graphite support
+
+#### Known issues
+- Shaping for the newly added characters may not yet occur in applications
+- Medial and final high hamza characters may have collisions (these likely do not occur)
+- Lam + high hamza alef ligature does not form as it likely does not occur
+
+
+### 2021-11-22 (SIL WSTech team) Scheherazade New Version 3.300 (official release)
 - Added U+0870..U+088E, U+0890..U+0891, U+0898..U+089F, U+08B5, U+08C8..U+08D2
 - Added bold version of glyph for U+08AD ARABIC LETTER LOW ALEF
 - Added decimal separator feature (cv85)
 - Added a longer kashida for cases where diacritics are above or below U+0640 ARABIC TATWEEL
 - Revised rules for forming Allah ligature
 
-2021-07-15 (SIL WSTech team) Scheherazade New Version 3.200 (official release)
+### 2021-07-15 (SIL WSTech team) Scheherazade New Version 3.200 (official release)
 - Double-encoded honorifics to use both PUA codepoints and official Unicode 14.0 codepoints
 
-2021-03-26 (SIL WSTech team) Scheherazade New Version 3.100 (official release)
+### 2021-03-26 (SIL WSTech team) Scheherazade New Version 3.100 (official release)
 - Fixed Graphite bug related to spacing of U+2E41
 - Fixed OpenType bug with diacritic position (in the context of a shadda) on lam-alef
 - Fixed OpenType bug in context of kashida insertion (affected diacritics and spacing)
@@ -85,7 +119,7 @@ ChangeLog
 - Created calligraphic forms of honorific ligatures
 - Added feature cv81, Honorific ligatures, to support turning on simple forms of honorific ligatures
 
-2020-11-5 (SIL WSTech team) Scheherazade New Version 3.000 (official release)
+### 2020-11-5 (SIL WSTech team) Scheherazade New Version 3.000 (official release)
 - Renamed font to Scheherazade New
 - Resized glyphs to better fit standard Arabic script fonts
 - Adjusted line-spacing to reflect larger characters
@@ -124,11 +158,11 @@ ChangeLog
 - Added Wolof language support in Graphite and OpenType
 - Added support for Comma downward when Sindhi language is selected
 
-2015-08-19 (SIL NRSI team) Scheherazade Version 2.100 (official release)
+### 2015-08-19 (SIL NRSI team) Scheherazade Version 2.100 (official release)
 - Renamed postscript name of Scheherazade Regular from "Scheherazade" 
   to "Scheherazade-Regular"
 
-2015-07-17 (SIL NRSI team) Scheherazade Version 2.092 (test release)
+### 2015-07-17 (SIL NRSI team) Scheherazade Version 2.092 (test release)
 - Added Scheherazade Bold font
 - Slight improvements in design of the Regular face:
    060C ARABIC COMMA
@@ -157,18 +191,18 @@ ChangeLog
     08BC ARABIC LETTER AFRICAN QAF
     08BD ARABIC LETTER AFRICAN NOON
 
-2014-02-12 (SIL NRSI team) Scheherazade Version 2.020 (maintenance release)
+### 2014-02-12 (SIL NRSI team) Scheherazade Version 2.020 (maintenance release)
 - Fix language-specific OpenType rendering for Sindhi, Urdu, Kurdish
 
-2013-09-11 (SIL NRSI team) Scheherazade Version 2.010 (maintenance release)
+### 2013-09-11 (SIL NRSI team) Scheherazade Version 2.010 (maintenance release)
 - Fix rendering of mixtures of upper and lower combining marks
 - Fix Graphite shaping for U+08AC ARABIC LETTER ROHINGYA YEH
 - Reduce font size by taking advantage of composite TT glyphs
 
-2013-08-01 (SIL NRSI team) Scheherazade Version 2.000 (official release)
+### 2013-08-01 (SIL NRSI team) Scheherazade Version 2.000 (official release)
 - Removed white on black glyph for full stop
 
-2013-07-15 (SIL NRSI team) Scheherazade Version 1.940 (test release)
+### 2013-07-15 (SIL NRSI team) Scheherazade Version 1.940 (test release)
 - Kerning added for reh-like and waw-like characters 
 - Added five characters that are not officially in Unicode. They
   are in the "pipeline." 
@@ -181,17 +215,17 @@ ChangeLog
 - fixed lam+alef collisions with combining marks below 
 - upper vowel changed to render below maddah (except for 065E)
     
-2013-04-18 (SIL NRSI team) Scheherazade Version 1.930 (test release)
+### 2013-04-18 (SIL NRSI team) Scheherazade Version 1.930 (test release)
 - Typetuner now adjusts Graphite features as well as OpenType 
 
-2013-03-05 (SIL NRSI team) Scheherazade Version 1.920 (test release)
+### 2013-03-05 (SIL NRSI team) Scheherazade Version 1.920 (test release)
 - Added Rohingya language
 - Shaping for Subtending marks fixed
 - Added line spacing feature for TypeTuner only
 - Moved U+065E ARABIC FATHA WITH TWO DOTS to proper position between 
   maddah and alef
 
-2013-01-08 (SIL NRSI team) Scheherazade Version 1.910 (test release)
+### 2013-01-08 (SIL NRSI team) Scheherazade Version 1.910 (test release)
 - Improved positioning and size of dagger-alef (U+0670)
 - Added feature to access variant glyphs for Superscript Alef (default is small)
 - Added Rohingya-style variant to Eastern digits feature
@@ -202,7 +236,7 @@ ChangeLog
 - Fixed position of hamza with U+06B8 + U+0625 are in isolate form
 - Made U+06BA Arabic Letter Noon Ghunna dotless in all forms
 
-2012-09-18 (SIL NRSI team) Scheherazade Version 1.900 (test release)
+### 2012-09-18 (SIL NRSI team) Scheherazade Version 1.900 (test release)
 - Improved positioning of combining marks
 - Improved positioning and size of dagger-alef (U+0670)
 - Added support for Unicode 5.1, 6.0 and 6.1 Arabic additions
@@ -233,27 +267,26 @@ ChangeLog
     Old Shina hack	  
 - Removed AAT support
 
-2011-02-07 (SIL NRSI team) Scheherazade Version 1.005
+### 2011-02-07 (SIL NRSI team) Scheherazade Version 1.005
 - Added TypeTuner feature to access jeh alternate
 - Added developer release
 
-2009-09-01 (SIL NRSI team) Scheherazade Version 1.004
+### 2009-09-01 (SIL NRSI team) Scheherazade Version 1.004
 - Added TypeTuner feature to access language alternates
 
-2009-02-04 (SIL NRSI team) Scheherazade Version 1.003
+### 2009-02-04 (SIL NRSI team) Scheherazade Version 1.003
 - Added TypeTuner feature to control shadda+kasra rendering
 
-2008-10-25 (SIL NRSI team) Scheherazade Version 1.002
+### 2008-10-25 (SIL NRSI team) Scheherazade Version 1.002
 - Added TypeTuner table with Shina hacks
 
-2007-06-21 (SIL NRSI team) Scheherazade Version 1.001
+### 2007-06-21 (SIL NRSI team) Scheherazade Version 1.001
 - Re-released under OFL
 - no other changes from 1.0
 
-2005-06-03 (SIL NRSI team) Scheherazade Version 1.0
+### 2005-06-03 (SIL NRSI team) Scheherazade Version 1.0
 - First public version
 - Released under the SIL Freeware License
-
 
 Information for Contributors
 ----------------------------
@@ -281,32 +314,32 @@ be sure to add your name (N), email (E), web-address (W) and description
 
 N: Sharon Correll
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Contributing Designer, Graphite, OpenType, and TypeTuner code, and build support
 
 N: Bob Hallissy
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Graphite, OpenType, and TypeTuner code, and build support
 
 N: Becca Hirsbrunner Spalinger
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Contributing Designer
 
 N: Jonathan Kew
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Original Designer
 
 N: Peter Martin
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Contributing Designer
 
 N: Iska Routamaa
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Contributing Designer
 
 The Scheherazade project is maintained by SIL International.

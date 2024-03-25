@@ -1,5 +1,8 @@
 ᐊᓂᔑᓇᐯᒧᐎᓐ Change History
 ============================
+9.3.1 (25 Oct 2023)
+-----------------
+* Changed order of mobile layers to unscramble display on help page
 
 9.3 (16 Jul 2020)
 -----------------
