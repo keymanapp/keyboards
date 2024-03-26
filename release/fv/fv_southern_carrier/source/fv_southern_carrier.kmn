@@ -1,15 +1,222 @@
 ﻿store(&VERSION) "10.0"
-store(&TARGETS) "mobile tablet"
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "caf"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᑐᑊᘁᗕᑋᗸ'
 store(&VISUALKEYBOARD) 'fv_southern_carrier.kvks'
 store(&KEYBOARDVERSION) '10.0'
+store(&KMW_HELPFILE) 'fv_southern_carrier-help.htm'
 
 begin Unicode > use(main)
 
 group(main) using keys
 
+c --- START OF DESKTOP LAYOUT RULES ---
+
+c --- letter stores ---
+store(Vowels) 'ᐊᐅᐈᐉᐃ' c a u e i o
+store(VowelKeys) [K_A] [K_U] [K_E] [K_I] [K_O]
+store(BPVKeys) [K_B] [K_P] [K_V]
+store(Plosive) [K_QUOTE]
+
+store(BVowels) 'ᗭᗪᗫᗬᗩ' c ba bu be bi bo
+store(ChVowels) 'ᙠᙝᙞᙟᙜ' c cha chu che chi cho
+store(Ch_Vowels) 'ᘡᘞᘟᘠᘝ' c ch'a ch'u ch'e ch'i ch'o
+store(DVowels) 'ᑕᑐᑓᑔᑎ' c da du de di do
+store(DlVowels) 'ᘭᘪᘫᘬᘩ' c dla dlu dle dli dlo
+store(DzVowels) 'ᙍᙊᙋᙌᙉ' c dza dzu dze dzi dzo
+store(GVowels) 'ᗴᗱᗲᗳᗰ' c ga gu ge gi go
+store(GhVowels) 'ᗉᗆᗇᗈᗅ' c gha ghu ghe ghi gho
+store(HVowels) 'ᐸᐳᐶᐷᐱ' c ha hu he hi ho
+store(JVowels) 'ᘛᘗᘘᘙᘖ' c ja ju je ji jo
+store(KVowels) 'ᗺᗷᗸᗹᗶ' c ka ku ke ki ko
+store(K_Vowels) 'ᘀᗽᗾᗿᗼ' c k'a k'u k'e k'i k'o
+store(LVowels) 'ᘧᘤᘥᘦᘣ' c la lu le li lo
+store(LhVowels) 'ᘳᘰᘱᘲᘯ' c lha lhu lhe lhi lho
+store(MVowels) 'ᘍᘊᘋᘌᘉ' c ma mu me mi mo
+store(NVowels) 'ᘇᘄᘅᘆᘃ' c na nu ne ni no
+store(rVowels) 'ᗏᗌᗍᗎᗋ' c ra ru re ri ro
+store(SVowels) 'ᙓᙐᙑᙒᙏ' c sa su se si so
+store(ShVowels) 'ᙙᙖᙗᙘᙕ' c sha shu she shi sho
+store(TVowels) 'ᗡᗞᗟᗠᗝ' c ta tu te ti to
+store(T_Vowels) 'ᗧᗤᗥᗦᗣ' c t'a t'u t'e t'i t'o
+store(TlVowels) 'ᘹᘶᘷᘸᘵ' c tla tlu tle tli tlo
+store(Tl_Vowels) 'ᘿᘼᘽᘾᘻ' c tl'a tl'u tl'e tl'i tl'o
+store(TsVowels) 'ᙦᙣᙤᙥᙢ' c tsa tsu tse tsi tso
+store(Ts_Vowels) 'ᙬᙩᙪᙫᙨ' c ts'a ts'u ts'e ts'i ts'o
+store(WVowels) 'ᗕᗒᗓᗔᗑ' c wa wu we wi wo
+store(WhVowels) 'ᗛᗘᗙᗚᗗ' c wha whu whe whi who
+store(YVowels) 'ᘓᘐᘑᘒᘏ' c ya yu ye yi yo
+store(ZVowels) 'ᙅᙂᙃᙄᙁ' c za zu ze zi zo
+
+c --- rules and constraints ---
++ any(VowelKeys) > index(Vowels,1)
+'ᐃ' + [K_O] > 'ᐁ'
+'ᐁ' + [K_BKSP] > 'ᐃ'
+
++ any(BPVKeys) > 'ᗮ'
+'ᗮ' + any(VowelKeys) > index(BVowels,2)
+'ᗩ' + [K_O] > 'ᗨ'
+'ᗨ' + [K_BKSP] > 'ᗩ'
+
++ [K_C] > 'ᙠ'
+'ᙠ' + any(VowelKeys) > index(ChVowels,2)
+'ᙜ' + [K_O] > 'ᙛ'
+'ᙛ' + [K_BKSP] > 'ᙜ'
+
+'ᙠ' + [K_QUOTE] > 'ᘡ'
+'ᘡ' + any(VowelKeys) > index(Ch_Vowels,2)
+'ᘝ' + [K_O] > 'ᘜ'
+'ᘜ' + [K_BKSP] > 'ᘝ'
+
+'d' + any(VowelKeys) > index(DVowels,2)
+'ᑎ' + [K_O] > 'ᑌ'
+'ᑌ' + [K_BKSP] > 'ᑎ'
+
+'d' + [K_L] > 'ᘭ'
+'d' + [K_LBRKT] > 'ᐪ'
+'ᘭ' + any(VowelKeys) > index(DlVowels,2)
+'ᘩ' + [K_O] > 'ᘨ'
+'ᘨ' + [K_BKSP] > 'ᘩ'
+
+'d' + [K_Z] > 'ᙍ'
+'ᙍ' + any(VowelKeys) > index(DzVowels,2)
+'ᙉ' + [K_O] > 'ᙈ'
+'ᙈ' + [K_BKSP] > 'ᙉ'
+
++ [K_G] > 'ᐟ'
+'ᐟ' + any(VowelKeys) > index(GVowels,2)
+'ᗰ' + [K_O] > 'ᗯ'
+'ᗯ' + [K_BKSP] > 'ᗰ'
+
+'ᐟ' + [K_H] > 'ᐦ'
+'ᐦ'+ any(VowelKeys) > index(GhVowels,2)
+'ᗅ' + [K_O] > 'ᗄ'
+'ᗄ' + [K_BKSP] > 'ᗅ'
+
++ [K_H] > 'ᑋ'
+'ᑋ' + any(VowelKeys) > index(HVowels,2)
+'ᐱ' + [K_O] > 'ᐯ'
+'ᐯ' + [K_BKSP] > 'ᐱ'
+
+'j' + any(VowelKeys) > index(JVowels,2)
+'ᘖ' + [K_O] > 'ᘔ'
+'ᘔ' + [K_BKSP] > 'ᘖ'
+
++ [K_K] > 'ᐠ' 
+'ᐠ' + [K_H] > 'ᐥ'
+'ᐠ' + any(VowelKeys) > index(KVowels,2)
+'ᗶ' + [K_O] > 'ᗵ'
+'ᗵ' + [K_BKSP] > 'ᗶ'
+
+'ᐠ' + [K_QUOTE] > 'ᘁ'
+'ᘁ' + any(VowelKeys) > index(K_Vowels,2)
+'ᗼ' + [K_O] > 'ᗻ'
+'ᗻ' + [K_BKSP] > 'ᗼ'
+
++ [K_L] > 'ᑊ'
+'ᑊ' + any(VowelKeys) > index(LVowels,2)
+'ᘣ' + [K_O] > 'ᘢ'
+'ᘢ' + [K_BKSP] > 'ᘣ'
+
+'ᑊ' + [K_H] > 'ᒡ'
+'ᒡ' + any(VowelKeys) > index(LhVowels,2)
+'ᘯ' + [K_O] > 'ᘮ'
+'ᘮ' + [K_BKSP] > 'ᘯ'
+
++ [K_M] > 'ᒼ'
+'ᒼ' + any(VowelKeys) > index(MVowels,2)
+'ᘉ' + [K_O] > 'ᘈ'
+'ᘈ' + [K_BKSP] > 'ᘉ'
+
++ [K_N] > 'ᐣ'
+'ᐣ' + [K_G] > 'ᓑ'
+'ᐣ' + any(VowelKeys) > index(NVowels,2)
+'ᘃ' + [K_O] > 'ᘂ'
+'ᘂ' + [K_BKSP] > 'ᘃ'
+
++ [K_R] > 'ᐥ'
+'ᐥ' + any(VowelKeys) > index(rVowels,2)
+'ᗋ' + [K_O] > 'ᗊ'
+'ᗊ' + [K_BKSP] > 'ᗋ'
+
++ [SHIFT K_R] > '+'
+'+' + any(VowelKeys) > 'r'index(Vowels,2)
+
++ [K_S] > 'ᔆ'
+'ᔆ' + any(VowelKeys) > index(SVowels,2)
+'ᙏ' + [K_O] > 'ᙎ'
+'ᙎ' + [K_BKSP] > 'ᙏ'
+
+'ᔆ' + [K_H] > 'ᙚ'
+'ᙚ' + any(VowelKeys) > index(ShVowels,2)
+'ᙕ' + [K_O] > 'ᙔ'
+'ᙔ' + [K_BKSP] > 'ᙕ'
+
++ [K_T] > 'ᐪ'
+'ᐪ' + any(VowelKeys) > index(TVowels,2)
+'ᗝ' + [K_O] > 'ᗜ'
+'ᗜ' + [K_BKSP] > 'ᗝ'
+
+'ᐪ' + [K_QUOTE] > 'ᗧ'
+'ᗧ' + any(VowelKeys) > index(T_Vowels,2)
+'ᗣ' + [K_O] > 'ᗢ'
+'ᗢ' + [K_BKSP] > 'ᗣ'
+
+'ᐪ' + [K_L] > 'ᘹ'
+'ᘹ' + any(VowelKeys) > index(TlVowels,2)
+'ᘵ' + [K_O] > 'ᘴ'
+'ᘴ' + [K_BKSP] > 'ᘵ'
+
+'ᘹ' + [K_QUOTE] > 'ᘿ'
+'ᘿ' + any(VowelKeys) > index(Tl_Vowels,2)
+'ᘻ' + [K_O] > 'ᘺ'
+'ᘺ' + [K_BKSP] > 'ᘻ'
+
+'ᐪ' + [K_S] > 'ᙦ'
+'ᙦ' + any(VowelKeys) > index(TsVowels,2)
+'ᙢ' + [K_O] > 'ᙡ'
+'ᙡ' + [K_BKSP] > 'ᙢ'
+
+'ᙦ' + [K_QUOTE] > 'ᙬ'
+'ᙬ' + any(VowelKeys) > index(Ts_Vowels,2)
+'ᙨ' + [K_O] > 'ᙧ'
+'ᙧ' + [K_BKSP] > 'ᙨ'
+
++ [K_W] > 'w'
+'w' + any(VowelKeys) > index(WVowels,2)
+'ᗑ' + [K_O] > 'ᗐ'
+'ᗐ' + [K_BKSP] > 'ᗑ'
+
+'w' + [K_H] > 'ᗛ'
+'ᗛ' + any(VowelKeys) > index(WhVowels,2)
+'ᗗ' + [K_O] > 'ᗖ'
+'ᗖ' + [K_BKSP] > 'ᗗ'
+
+'y' + any(VowelKeys) > index(YVowels,2)
+'ᘏ' + [K_O] > 'ᘎ'
+'ᘎ' + [K_BKSP] > 'ᘏ'
+
++ [K_Z] > 'ᙆ'
++ [SHIFT K_Z] > 'ᙇ'
+'ᙆ' + [K_H] > 'ᙇᙚ'
+'ᙆ' + any(VowelKeys) > index(ZVowels,2)
+'ᙁ' + [K_O] > 'ᙀ'
+'ᙀ' + [K_BKSP] > 'ᙁ'
+
+'ᗮ' + [K_QUOTE] > 'ᗮᗮ'
+'ᗮᗮ' + any(Plosive) > 'ᗮ' index(BVowels,3) 
+
+c --- deadkey and punctuation ---
++ [K_LBRKT] > deadkey(Deadkey) 
++ [K_COLON] > 'ᐧ'
++ [SHIFT K_8] > 'ᕯ'
++ [K_F] > 'ᶣ'
+
+c --- original punctuation ---
++ [RALT K_COLON] > ';'
++ [RALT K_LBRKT] > '['
++ [RALT SHIFT K_8] > '*'
 
 c --- START OF TOUCH LAYOUT RULES ---
 

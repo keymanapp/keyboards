@@ -4,6 +4,7 @@
 -----------------
 * Updated mobile layout
 * Updated help to match new layout
+* Built desktop keyboard
 
 9.2.1 (25 Oct 2023)
 -----------------
