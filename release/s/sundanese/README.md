@@ -1,9 +1,6 @@
 Sunda Baku Keyboard 
 =====================
-Copyright (c) 2020-2021 Ilham Nurwansah
-
-Version 1.0.5
-
+Copyright (c) Ilham Nurwansah
 
 Keyboard for official Sundanese script (aksara Sunda baku) , supported with Unicode table.
 

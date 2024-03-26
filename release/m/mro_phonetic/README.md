@@ -1,9 +1,7 @@
 Mro Phonetic keyboard
 ==============
 
-© 2020 SIL International
-
-Version 1.0
+© SIL International
 
 Description
 -----------

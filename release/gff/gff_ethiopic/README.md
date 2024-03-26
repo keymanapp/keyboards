@@ -3,8 +3,6 @@ Ethiopic (Modern Geʾez) Keyboard
 
 Copyright © 2023 Geʾez Frontier Foundation
 
-Version 1.0
-
 This is a language-neutral keyboard for the “Ethiopic” script that applies mnemonic approach ty typing all 523 letters, punctuation and numerals specified in the Unicode Standard.  It requires a font supporting Ethiopic script under the Unicode 14 standard. The OpenSoure [Abyssinica SIL](https://software.sil.org/abyssinica/) font is provided with this package and supports all 523 standard symbols, plus an addition 59 “alternative” letter shapes that are important to manuscript studies.
 
 The [PDF Manual](source/EthiopicTyping-English.pdf) included with the keyboard package reviews how to access all symbols via typing and font selection.

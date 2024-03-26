@@ -1,6 +1,11 @@
 Limbu Typewriter (SIL) Change History
 ====================
 
+1.2.1 (2024-01-03)
+----------------
+* Add keystroke for danda
+* Updated font
+
 1.2 (2023-08-17)
 ----------------
 * Changed OSK to use Namdhinggo

@@ -1,7 +1,7 @@
 Hindi Devanagari Phonetic (ITRANS) 
 ============================
 
-©2019 sanskritdocuments.org
+© sanskritdocuments.org
 
 Description
 -----------

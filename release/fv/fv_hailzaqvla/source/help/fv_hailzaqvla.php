@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-  This keyboard is designed for the <b>Haiɫzaqvla</b> language of the BC Coast region of Canada.
+  This keyboard is designed for the <b>Háiɫzaqvḷa</b> language of the BC Coast region of Canada.
 </p>
 <p>
   If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
@@ -39,28 +39,31 @@ END;
   <li>λ: type the [ key. (Capital is not available in all fonts.)</li>
   <li>ƛ: type the ] key. (Capital is not available.)</li>
   <li>ɫ: type the \ key.</li>
-  <li>ʔ: hold ALT and type the / key.</li>
+  <li>ʔ: hold RIGHT ALT and type the / key.</li>
+    <ul>
+      <li><b>NOTE</b>: When using Google Docs with Google Chrome, RIGHT ALT or OPTION + / is already used as a shortcut. ʔ can instead be typed RIGHT ALT/OPTION + SHIFT + /</li>
+    </ul>
   <li>ǧ x̌:
     <ul>
       <li>Type g/x, then hold SHIFT and press 6 to add the extra ˇ mark.</li>
-      <li>OR hold ALT and type g/x.</li>
+      <li>OR hold RIGHT ALT and type g/x.</li>
     </ul>
   </li>
   <li>ḷ ṃ ṇ:
     <ul>
       <li>Type l/m/n, then hold SHIFT and press . (period) to add the extra dot.</li>
-      <li>OR hold ALT and type l/m/n. 
-      <br><em>Note: ALT+SHIFT+M is used in Keyman by default to open the Keyman menu, so this method cannot be used to type Ṃ. You must either use the first method, or go to Configuration < Hotkeys in the Keyman menu to remove that default.</em></li>
+      <li>OR hold RIGHT ALT and type l/m/n. 
+      <br><em>Note: RIGHT ALT+SHIFT+M is used in Keyman by default to open the Keyman menu, so this method cannot be used to type Ṃ. You must either use the first method, or go to Configuration < Hotkeys in the Keyman menu to remove that default.</em></li>
     </ul>
   </li>
   <li>p̓ t̓ a̓, etc: Type the letter you want, then hold SHIFT and press , (comma) to add the glottal.</li>
   <li>á ú, à ù, etc:
     <ul>
       <li>Type the letter you want, then hold SHIFT and press - (hyphen) to add the ´ accent.</li>
-      <li>Type the letter you want, then hold ALT and press ` (next to the number 1) to add the ` accent.</li>
+      <li>Type the letter you want, then hold RIGHT ALT and press ` (next to the number 1) to add the ` accent.</li>
     </ul>
   </li>
-  <li>For punctuation keys that were replaced with some other letter or accent, you can get the original symbol by pressing ALT. (Example: hold ALT and press \ to type \.)</li>
+  <li>For punctuation keys that were replaced with some other letter or accent, you can get the original symbol by pressing RIGHT ALT. (Example: hold RIGHT ALT and press \ to type \.)</li>
 </ul>
 
 <div class='vspace'></div>
@@ -114,7 +117,7 @@ END;
   <ul>
     <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
     <li>The combining apostrophe key (ʼ) is to the left of the spacebar. You can use this instead of the hold-select menu.</li>
-    <li>Capital forms for ƛ and ʔ are unavailable.</li>
+    <li>Capital forms for ƛ and λ are unavailable.</li>
   </ul>
 
 </div>
