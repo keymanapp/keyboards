@@ -8,11 +8,11 @@ Version 1.0
 Description
 -----------
 
-Lydian generated from template
+Lycian generated from template
 
 Links
 -----
-https://keyman.com/keyboards/lydian
+https://keyman.com/keyboards/lycian
 
 Supported Platforms
 -------------------
