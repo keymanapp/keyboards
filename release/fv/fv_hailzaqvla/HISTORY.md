@@ -1,5 +1,16 @@
-Haiɫzaqvla Change History
+Háiɫzaqvḷa Change History
 ============================
+9.5.1 (4 Mar 2024)
+---------------
+* Added left/right distinction to alt keys, updated on-screen keyboard layout, so on-screen keyboard words correctly on Mac
+
+9.5 (22 Jan 2024)
+----------------
+* Corrected language and keyboard name
+* Added info on typing glottal stop when using Google Docs in Google Chrome
+* Centered mobile keyboard layout
+* Updated combining apostrophe on mobile to true deadkey
+
 9.4.1 (25 Oct 2023)
 ----------------
 * Changed order of mobile layers to unscramble display on help page

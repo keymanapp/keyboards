@@ -1,5 +1,11 @@
 # fv_all Keyboard Package
 
+## 12.7 (18 Mar 2024)
+* Fix keyboard versions
+
+## 12.6 (16 Dec 2023)
+* Added fv_hulquminum_combine
+
 ## 12.5 (26 Mar 2023)
 * Fix keyboard versions
 

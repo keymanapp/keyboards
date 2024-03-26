@@ -7,8 +7,8 @@ Eastern Congo Keyboard Change History
 
 1.5.2 (23 April 2021)
 ------------------
-* Fixed bug where ''e should produce 'e. Instead it produced 'é. This also occurred 
-  when typing ``e which produced `è instead of `e. This bug was introduced between
+* Fixed bug where ''e should produce 'e. Instead it produced 'Ã©. This also occurred 
+  when typing ``e which produced `Ã¨ instead of `e. This bug was introduced between
   versions 1.5 and 1.5.1 when extra high and extra low tone were introduced and
   subsequently removed.
 

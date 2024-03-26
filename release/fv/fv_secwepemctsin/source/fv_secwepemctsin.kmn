@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.2'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "shs"
-store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Secwepemctsín'
 store(&BITMAP) 'fv_secwepemctsin.ico'
 store(&VISUALKEYBOARD) 'fv_secwepemctsin.kvks'
@@ -19,11 +19,12 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_secwepemctsin.keyman-touch-layout'
 
+C mobile shift layer
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R_0] > 'R̓' layer('default')
 + [SHIFT T_R] > 'R' layer('default')
@@ -31,15 +32,15 @@ store(&LAYOUTFILE) 'fv_secwepemctsin.keyman-touch-layout'
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
 + [SHIFT T_P_0] > 'P̓' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S_0] > 'S̓' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
@@ -48,20 +49,44 @@ store(&LAYOUTFILE) 'fv_secwepemctsin.keyman-touch-layout'
 + [SHIFT T_G_0] > 'G̓' layer('default')
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
-'o' + [SHIFT T_J] > 'ó'
-'I' + [SHIFT T_J] > 'Í'
-'E' + [SHIFT T_J] > 'É'
-'A' + [SHIFT T_J] > 'Á'
-'u' + [SHIFT T_J] > 'ú'
-'O' + [SHIFT T_J] > 'Ó'
-'e' + [SHIFT T_J] > 'é'
-'a' + [SHIFT T_J] > 'á'
-'i' + [SHIFT T_J] > 'í'
-'U' + [SHIFT T_J] > 'Ú'
 + [SHIFT T_K_0] > 'K̓' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_Z_0] > '!' layer('default')
++ [SHIFT T_Z] > '?' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V] > ',' layer('default')
++ [SHIFT T_B] > '.' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
+
+C acute accent deadkey combinations (updated to use combined unicode codepoints)
+'o' + [SHIFT T_J] > 'ó'
+'I' + [SHIFT T_J] > 'Í'
+'E' + [SHIFT T_J] > 'É'
+'A' + [SHIFT T_J] > 'Á'
+'u' + [SHIFT T_J] > 'ú'
+'O' + [SHIFT T_J] > 'Ó'
+'e' + [SHIFT T_J] > 'é'
+'a' + [SHIFT T_J] > 'á'
+'i' + [SHIFT T_J] > 'í'
+'U' + [SHIFT T_J] > 'Ú'
+'o' + [T_J] > 'ó'
+'I' + [T_J] > 'Í'
+'E' + [T_J] > 'É'
+'A' + [T_J] > 'Á'
+'u' + [T_J] > 'ú'
+'O' + [T_J] > 'Ó'
+'e' + [T_J] > 'é'
+'a' + [T_J] > 'á'
+'i' + [T_J] > 'í'
+'U' + [T_J] > 'Ú'
+
+C glottal apostrophe deadkey combinations
 'p' + [SHIFT T_COLON] > 'p̓'
 'G' + [SHIFT T_COLON] > 'G̓'
 'q' + [SHIFT T_COLON] > 'q̓'
@@ -86,59 +111,6 @@ store(&LAYOUTFILE) 'fv_secwepemctsin.keyman-touch-layout'
 'n' + [SHIFT T_COLON] > 'n̓'
 'S' + [SHIFT T_COLON] > 'S̓'
 'T' + [SHIFT T_COLON] > 'T̓'
-+ [SHIFT T_Z_0] > '!' layer('default')
-+ [SHIFT T_Z] > '?' layer('default')
-+ [SHIFT T_X] > 'X' layer('default')
-+ [SHIFT T_C] > 'C' layer('default')
-+ [SHIFT T_V] > ',' layer('default')
-+ [SHIFT T_B] > '.' layer('default')
-+ [SHIFT T_N_0] > 'N̓' layer('default')
-+ [SHIFT T_N] > 'N' layer('default')
-+ [SHIFT T_M_0] > 'M̓' layer('default')
-+ [SHIFT T_M] > 'M' layer('default')
-+ [T_Q_0] > 'q̓'
-+ [T_Q] > 'q'
-+ [T_W_0] > 'w̓'
-+ [T_W] > 'w'
-+ [T_E_0] > 'é'
-+ [T_E] > 'e'
-+ [T_R_0] > 'r̓'
-+ [T_R] > 'r'
-+ [T_T_0] > 't̓'
-+ [T_T] > 't'
-+ [T_Y_0] > 'y̓'
-+ [T_Y] > 'y'
-+ [T_U_0] > 'ú'
-+ [T_U] > 'u'
-+ [T_I_0] > 'í'
-+ [T_I] > 'i'
-+ [T_O_0] > 'ó'
-+ [T_O] > 'o'
-+ [T_P_0] > 'p̓'
-+ [T_P] > 'p'
-+ [T_A_0] > 'á'
-+ [T_A] > 'a'
-+ [T_S_0] > 's̓'
-+ [T_S] > 's'
-+ [T_D] > '7'
-+ [T_F] > '-'
-+ [T_G_0] > 'g̓'
-+ [T_G] > 'g'
-+ [T_H] > 'h'
-'o' + [T_J] > 'ó'
-'I' + [T_J] > 'Í'
-'E' + [T_J] > 'É'
-'A' + [T_J] > 'Á'
-'u' + [T_J] > 'ú'
-'O' + [T_J] > 'Ó'
-'e' + [T_J] > 'é'
-'a' + [T_J] > 'á'
-'i' + [T_J] > 'í'
-'U' + [T_J] > 'Ú'
-+ [T_K_0] > 'k̓'
-+ [T_K] > 'k'
-+ [T_L_0] > 'l̓'
-+ [T_L] > 'l'
 'p' + [T_COLON] > 'p̓'
 'G' + [T_COLON] > 'G̓'
 'q' + [T_COLON] > 'q̓'
@@ -163,6 +135,41 @@ store(&LAYOUTFILE) 'fv_secwepemctsin.keyman-touch-layout'
 'n' + [T_COLON] > 'n̓'
 'S' + [T_COLON] > 'S̓'
 'T' + [T_COLON] > 'T̓'
+
+C mobile default layer
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E_0] > 'é'
++ [T_E] > 'e'
++ [T_R_0] > 'r̓'
++ [T_R] > 'r'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U_0] > 'ú'
++ [T_U] > 'u'
++ [T_I_0] > 'í'
++ [T_I] > 'i'
++ [T_O_0] > 'ó'
++ [T_O] > 'o'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A_0] > 'á'
++ [T_A] > 'a'
++ [T_S_0] > 's̓'
++ [T_S] > 's'
++ [T_D] > '7'
++ [T_F] > '-'
++ [T_G_0] > 'g̓'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_K_0] > 'k̓'
++ [T_K] > 'k'
++ [T_L_0] > 'l̓'
++ [T_L] > 'l'
 + [T_Z_0] > '!'
 + [T_Z] > '?'
 + [T_X] > 'x'
@@ -184,7 +191,12 @@ store(overaccentkey)  "`" ";" [k_quote]
 any(overaccent) + any(overaccentkey) > context beep           
 
 store(NumbersAndPunctuation) '°1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
-any(NumbersAndPunctuation) + any(overaccentkey) > context beep                         
+any(NumbersAndPunctuation) + any(overaccentkey) > context beep   
+
+c backspace will delete just the acute accent on a vowel with acute accent
+store(plainvowels) "aeiouAEIOU"
+store(acutevowels) "áéíóúÁÉÍÓÚ"
+any(acutevowels) + [K_BKSP] > index(plainvowels,1)
 
 c original punctuation
 + [RALT K_PERIOD] > '>'
@@ -193,7 +205,6 @@ c original punctuation
 + [RALT K_BKQUOTE] > '`'
 + [SHIFT RALT K_COLON] > ':'
 + [RALT K_COLON] > ';'
-+ [RALT K_SLASH] > '/'
 + [RALT K_QUOTE] > U+0027
 + [RALT K_BKSLASH] > '\'
 + [SHIFT RALT K_BKSLASH] > '|'
@@ -221,7 +232,6 @@ c Language
 + "~" > "·"
 + ";" > U+0301
 + [k_quote] > U+0313 
-+ "/" > "7"
 
 
 match > use(normalize)

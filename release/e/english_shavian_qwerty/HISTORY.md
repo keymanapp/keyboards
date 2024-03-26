@@ -1,5 +1,10 @@
 Shaw QWERTY Change History
 ====================
+
+1.1.1 (2023-11-30)
+----------------
+* Use shared font instead of local
+
 1.1 (2023-05-29)
 ----------------
 * Changed font to Inter Alia.

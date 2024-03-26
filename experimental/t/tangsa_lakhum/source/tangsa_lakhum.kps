@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.118.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.225.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Tangsa Lakhum</Name>
-    <Copyright URL="">© 2021 Craig Cornelius</Copyright>
+    <Copyright URL="">© 2021-2023 Craig Cornelius</Copyright>
     <Author URL="mailto:cwcornelius@gmail.com">Craig Cornelius</Author>
     <Version URL=""></Version>
     <WebSite URL="http://languagetools-153419.appspot.com/">http://languagetools-153419.appspot.com/</WebSite>
@@ -42,24 +42,67 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>TangsaLakhumUnicode.ttf</Name>
-      <Description>Font Tangsa Lakhum Unicode</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\build\tangsa_lakhum.kmx</Name>
       <Description>Keyboard Tangsa Lakhum</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\assets\NotoSansTangsa-Bold.ttf</Name>
+      <Description>Font Noto Sans Tangsa Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\NotoSansTangsa-Medium.ttf</Name>
+      <Description>Font Noto Sans Tangsa Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\NotoSansTangsa-Regular.ttf</Name>
+      <Description>Font Noto Sans Tangsa Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\NotoSansTangsa-SemiBold.ttf</Name>
+      <Description>Font Noto Sans Tangsa SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\assets\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>LayoutU_C.png</Name>
+      <Description>File LayoutU_C.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tangsa Lakhum</Name>
       <ID>tangsa_lakhum</ID>
-      <Version></Version>
-      <OSKFont>TangsaLakhumUnicode.ttf</OSKFont>
+      <Version>1.1.1</Version>
+      <OSKFont>..\assets\NotoSansTangsa-Regular.ttf</OSKFont>
+      <DisplayFont>..\assets\NotoSansTangsa-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="nst-Tnsa">Tase Naga (Tnsa)</Language>
       </Languages>

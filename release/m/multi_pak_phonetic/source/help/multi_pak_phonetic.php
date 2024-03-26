@@ -9,7 +9,7 @@
 
 
 <p>
-This package includes a phonetic keyboard called <b>Multi Pak Phonetic</b> and the font <b>Pak Nastaleeq</b> designed for the following languages: <b>Balochi, Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu.
+This package includes a phonetic keyboard called <b>Multi Pak Phonetic</b> designed for the following languages: <b>Balochi, Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu.
 </p>
 
 
