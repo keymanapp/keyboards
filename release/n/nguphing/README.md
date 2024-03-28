@@ -1,11 +1,9 @@
-nguphing1 keyboard
+Nguphing keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
-nguphing1 generated from template
+Nguphing for ngū-ngèi (Goetian) piāu-ciùn-ngū-ngèi.
 
 Links
 -----
