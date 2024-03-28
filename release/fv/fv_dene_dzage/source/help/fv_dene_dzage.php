@@ -18,6 +18,10 @@ This keyboard is designed for the <b>Dene Dzage</b> language of the Western Suba
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
+<h2>Desktop layout</h2>
+<p>
+The Dene Dzage keyboard uses the English keyboard as a base, with added key combinations in order to create special characters. See <a href="file:fv_dene_dzage_combinations.pdf">this document</a> for all the special key combinations.</p>
+
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
