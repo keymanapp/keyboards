@@ -1,16 +1,13 @@
 ife_mn keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
-ife_mn upgraded to modern Keyman (10+).
-
-
+Keyboard for the Ifè language of Togo.
 
 Links
 -----
+https://keyman.com/keyboards/ife_mn
 
 Copyright
 ---------
