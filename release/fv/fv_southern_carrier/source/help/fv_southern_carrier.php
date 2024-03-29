@@ -20,7 +20,7 @@ This keyboard is designed for the <b>ᑐᑊᘁᗕᑋᗸ</b> language of the BC I
 
 <h2> Desktop Layout</h2>
 <ul>
-	<li>The ᑐᑊᘁᗕᑋᗸ (Dakelh / Dulk'wah ke) keyboard is a "build-a-syllable" keyboard. The syllabics are typed by entering their Latin equivalents. The syllabics are typed by entering their Latin equivalents. See <a href="file:fv_SouthernCarrierGuide.pdf">this document</a> for all the special key combinations.</li>
+	<li>The ᑐᑊᘁᗕᑋᗸ (Dakelh / Dulk'wah ke) keyboard is a "build-a-syllable" keyboard. The syllabics are typed by entering their Latin equivalents. The syllabics are typed by entering their Latin equivalents. See <a href="fv_SouthernCarrierGuide.pdf">this document</a> for all the special key combinations.</li>
     <ul>
         <li><b>ᑐᘅᘓᙆ</b> is typed as "duneyaz"</li>
         <li><b>ᗘᑔᒡᘀᐉᑋ</b> is typed as "whudilhk'aih"</li>
