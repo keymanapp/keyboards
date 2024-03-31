@@ -12,7 +12,24 @@ def main():
     del columns[ 'Letter' ]
     del columns[ 'IPA' ]
 
+    """
+    Mutuyo_Key_Map = {
+        '': '1',
+        '': '2',
+        '': '3',
+        '': '4',
+        '': '5',
+        '': '6',
+        '': '7',
+        '': '8',
+        '': '9',
+        '': '0',
+        '': '-',
+        '': '='
+    }
+    """
 
+    # Create stores() for Invalid Mutuyo combinations with Masisi
     for row in df.index:
         masisi = df['Letter'][row]
         invalid = ""
@@ -23,6 +40,7 @@ def main():
                     invalid = invalid + str(mutuyo)
         print( "store(" + masisi + "_InvalidMituyo) '" + invalid + "'" )
 
+    # Create stores() for Invalid Mituyo Stack combinations with Masiri
     Mituyo = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=' }
     masisi_mutuyo = dict()
     for row in df.index:
@@ -42,12 +60,15 @@ def main():
     for key in masisi_mutuyo:
         InvalidMituyo = sorted( Mituyo - masisi_mutuyo[key] )
         invalid = "".join(map(str,InvalidMituyo))
+        mutuyo = key.split("_")[1] # split key to get the mutuyo after "_"
         print( "store(" + key + "_InvalidMituyo) '" + invalid + "'" )
     
+    # Create rules to block invalid 1 level mituyo stacks
     for row in df.index:
         masisi = df['Letter'][row]
         print( "'" + masisi + "' + any(" + masisi + "_InvalidMituyo) > beep" )
 
+    # Create rules to block invalid 2, 3 & 4 level mituyo stacks
     mutuyo_map = {
         '': '\uE0A9', # waya below
         '': '\uE0AB', # mura
