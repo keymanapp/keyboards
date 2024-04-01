@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.293.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -19,6 +19,7 @@
     <Name URL="">Lydian</Name>
     <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -52,31 +53,34 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\touch_layout_default.png</Name>
-      <Description>File touch_layout_default.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\touch_layout_shift.png</Name>
-      <Description>File touch_layout_shift.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Lydi\NotoSansLydian-Regular.ttf</Name>
+      <Description>Font Noto Sans Lydian Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Lydi\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lydian</Name>
-      <ID>Lydian</ID>
+      <ID>lydian</ID>
       <Version>1.0</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\noto\Lydi\NotoSansLydian-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Lydi\NotoSansLydian-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="xld">Anatolian languages</Language>
+        <Language ID="xld">Lydian</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

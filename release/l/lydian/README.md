@@ -3,12 +3,10 @@ Lydian keyboard
 
 © SIL International
 
-Version 1.0
-
 Description
 -----------
 
-Lydian generated from template
+Keyboard for the Lydian language using the Lydian script.
 
 Links
 -----

@@ -5,6 +5,7 @@
   require_once('header.php');
 ?>
 
+<p>Keyboard for the Lydian language using the Lydian script.</p>
 
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 
