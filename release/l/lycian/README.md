@@ -3,12 +3,9 @@ Lycian keyboard
 
 © SIL International
 
-Version 1.0
-
 Description
 -----------
-
-Lycian generated from template
+Keyboard for typing the Lycian and Milyan languages using the Lycian script.
 
 Links
 -----
