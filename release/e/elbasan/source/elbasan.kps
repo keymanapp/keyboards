@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.293.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,8 +17,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Elbasan</Name>
-    <Copyright URL="">© SIL International</Copyright>
+    <Copyright URL="">© 2024 SIL International</Copyright>
     <Author URL=""></Author>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -69,14 +70,28 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Elba\NotoSansElbasan-Regular.ttf</Name>
+      <Description>Font Noto Sans Elbasan Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Elba\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Elbasan</Name>
       <ID>elbasan</ID>
       <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Elba\NotoSansElbasan-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Elba\NotoSansElbasan-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="sq">Elbasan</Language>
+        <Language ID="sq-Elba">Elbasan</Language>
         <Language ID="als-Elba"> Albanian (Elbasan)</Language>
       </Languages>
     </Keyboard>

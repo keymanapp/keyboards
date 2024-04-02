@@ -18,7 +18,11 @@ store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
+store(nul) "ABEHIMOPQVWY" [SHIFT K_COLON] [SHIFT K_QUOTE]
+
 group(main) using keys
+
++ any(nul) > nul
 
 + [K_SPACE] > U+0020
 
@@ -110,7 +114,7 @@ group(main) using keys
 
 + [K_V] > U+10520
 
-+ [NCAPS K_W] > U+10508
++ [K_W] > U+10508
 
 + [K_X] > U+10521
 + [SHIFT K_X] > U+10527
@@ -120,8 +124,7 @@ group(main) using keys
 + [K_Z] > U+10523
 + [SHIFT K_Z] > U+10524
 
-+ [CAPS K_COLON] > U+00cb
-+ [NCAPS RALT K_COLON] > U+0024
++ [K_COLON] > U+003b
 
 + [K_EQUAL] > U+003d
 + [SHIFT K_EQUAL] > U+002b
@@ -144,8 +147,9 @@ group(main) using keys
 + [SHIFT K_BKQUOTE] > U+007c
 
 
-+ [CAPS K_LBRKT] > U+00c7
-+ [NCAPS RALT K_LBRKT] > U+00f7
++ [K_LBRKT] > U+005b
++ [SHIFT K_LBRKT] > U+007b
++ [RALT K_LBRKT] > U+00f7
 
 + [K_BKSLASH] > U+005d
 + [SHIFT K_BKSLASH] > U+007d
@@ -156,7 +160,6 @@ group(main) using keys
 + [RALT K_RBRKT] > U+00d7
 
 + [K_QUOTE] > U+0027
-+ [SHIFT K_QUOTE] > U+007b
 + [RALT K_QUOTE] > U+00df
 
 + [K_oE2] > U+003c

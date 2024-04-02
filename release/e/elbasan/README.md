@@ -3,12 +3,10 @@ Elbasan keyboard
 
 © SIL International
 
-Version 1.0
-
 Description
 -----------
 
-Elbasan generated from template
+This keyboard layout is designed for Albanian using the Elbasan script.
 
 Links
 -----
