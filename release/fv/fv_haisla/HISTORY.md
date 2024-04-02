@@ -1,5 +1,9 @@
 Haisla Change History
 ====================
+2.0.1 (28 Mar 2024)
+----------------
+* Updated welcome
+
 2.0 (9 Feb 2024)
 ----------------
 * Updated to correct combining apostrophe
