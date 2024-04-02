@@ -1,11 +1,9 @@
-Taigi_telex2 keyboard
+Taigi telex keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
-Taigi_telex2 generated from template
+Taigi Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī. 
 
 Links
 -----
