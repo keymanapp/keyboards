@@ -5,8 +5,9 @@ Version 1.1
 
 Description
 -----------
-Type every PETSCII, ZX80, ZX81, and ZX Spectrum character.
-Type many block element and box drawing characters easily.
+This keyboard is designed for typing symbols. It is based on the PETSCII character set
+and keyboard from the Commodore PET and its descendants. SuperPET allows you to type
+the equivalent Unicode characters using a similar mapping.
 
 Links
 -----
