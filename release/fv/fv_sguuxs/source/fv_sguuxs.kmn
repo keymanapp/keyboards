@@ -98,7 +98,7 @@ store(HasLowline) 'ḵḴ'
 
 any(NeedsDiaeresis) + any(DiaeresisKeys) > index(HasDiaeresis,1)
 'uu' + any(DiaeresisKeys) > 'üü'
-'UU' + any(Diaeresis) > 'ÜÜ'
+'UU' + any(DiaeresisKeys) > 'ÜÜ'
 
 any(NeedsLowline) + any(LowlineKeys) > index(NeedsLowline,1) U+0331
 any(K) + any(LowlineKeys) > index(HasLowline,1)
