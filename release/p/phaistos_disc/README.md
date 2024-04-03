@@ -3,12 +3,10 @@ Phaistos Disc keyboard
 
 © SIL International
 
-Version 1.0
-
 Description
 -----------
 
-Phaistos Disc generated from template
+This keyboard is designed for the Phaistos Disc symbols.
 
 Links
 -----

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.293.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Phaistos Disc</Name>
-    <Copyright URL="">© SIL International</Copyright>
+    <Copyright URL="">© 2024 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
   </Info>
@@ -64,13 +64,28 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\zsym\phaistos\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\zsym\phaistos\Phaistos.otf</Name>
+      <Description>Font Phaistos</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Phaistos Disc</Name>
       <ID>phaistos_disc</ID>
       <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\zsym\phaistos\Phaistos.otf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\zsym\phaistos\Phaistos.otf</DisplayFont>
       <Languages>
+        <Language ID="zxx-Zsym">No linguistic content (Symbols)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
