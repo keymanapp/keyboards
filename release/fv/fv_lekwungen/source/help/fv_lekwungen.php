@@ -42,20 +42,28 @@ This keyboard is designed for the <b>Lekwungen</b> language of the BC Coast regi
 		<th  align='center'>ʷ</th>
 		<td  align='center'>ʔ</td>
 		<td  align='center'>h</td>
-		<td  align='center'>ʼ</td>
+		<th  align='center'>ʼ</th>
 		<td  align='center'>kʷ k̓ʷ</td>
 		<td  align='center'>l l̓</td>
 		<td  align='center'>ɬ</td></tr>
 	<tr >
-		<td >&nbsp;</td>
+		<td >⇧</td>
 		<td  align='center'>x̣ x̣ʷ</td>
 		<td  align='center'>xʷ</td>
 		<td  align='center'>c c̓</td>
 		<td  align='center'>č č̓</td>
-		<td  align='center'>ŋ</td>
+		<td  align='center'>ŋ ŋ̓</td>
 		<td  align='center'>n n̓</td>
 		<td  align='center'>m m̓</td>
-		<td  colspan='2'>&nbsp;</td>
+		<td  colspan='2'>⌫</td>
+	</tr>
+		<tr >
+		<td >123</td>
+		<td  align='center'>🌐</td>
+		<th  align='center'>´</th>
+		<td  colspan='2' align='center'>space</td>
+		<td  align='center'>.</td>
+		<td  align='center'>⏎</td>
 	</tr>
 </table>
 
