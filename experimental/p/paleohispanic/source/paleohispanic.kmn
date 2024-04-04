@@ -6,11 +6,16 @@ store(&BITMAP) 'paleohispanic.ico'
 store(&VISUALKEYBOARD) 'paleohispanic.kvks'
 store(&LAYOUTFILE) 'paleohispanic.keyman-touch-layout'
 store(&NAME) 'Paleohispanic'
+store(&COPYRIGHT) '© SIL International'
+store(&KMW_RTL) '1'
 
 begin Unicode > use(main)
+
+store(nul) "PRSFHB>"
+
 group(main) using keys
 
-
++ any(nul) > nul
 + [K_1] > U+10233
 + [K_2] > U+10233 U+10233
 + [K_3] > U+10233 U+10233 U+10233
