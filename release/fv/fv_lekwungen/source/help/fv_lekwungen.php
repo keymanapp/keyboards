@@ -24,7 +24,7 @@ This keyboard is designed for the <b>Lekwungen</b> language of the BC Coast regi
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
 	<tr >
-		<td  align='center'>q q̓</td>
+		<td  align='center'>q q̓ q̓ʷ</td>
 		<td  align='center'>w w̓</td>
 		<td  align='center'>e é</td>
 		<td  align='center'>ə ə́</td>
