@@ -31,7 +31,11 @@ This keyboard is designed for the <b>Sgüüx̱s</b> language of the BC Coast reg
                   <li>To type the underdot use the Backquote Key ` - x̣ is typed x then Backquote `</li>
                   <li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. The Left-Bracket [ is typed Right-Alt+Left-Bracket (Windows) Option+Left-Bracket (Mac).</li>
 								</ul>
-							 </ul>
+</ul>
+
+<p>The following Unicode fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
+
+<h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
     
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
