@@ -13,8 +13,6 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-+ [SHIFT T_QU_0] > 'Q̲U̲'
-+ [SHIFT T_QU] > 'QU'
 + [SHIFT T_E] > 'E'
 + [SHIFT T_T] > 'TL'
 + [SHIFT T_O] > 'O'
@@ -31,11 +29,12 @@ group(main) using keys
 + [SHIFT T_K] > 'K'
 + [SHIFT T_KW_0] > 'K̲w'
 + [SHIFT T_KW] > 'Kw'
++ [SHIFT T_X] > 'X'
 + [SHIFT T_N] > 'N'
 + [SHIFT T_M] > 'M'
 + [SHIFT T_HYP] > '-'
-+ [T_QU_0] > 'q̲u̲'
-+ [T_QU] > 'qu'
++ [T_WUH_0] > 'w̲u̲h̲'
++ [T_WUH] > 'wuh'
 + [T_W] > 'w'
 + [T_E] > 'e'
 + [T_T] > 't'
@@ -44,7 +43,7 @@ group(main) using keys
 + [T_I] > 'i'
 + [T_OO] > 'oo'
 + [T_P] > 'p'
-+ [T_LTH] > 'lth'
++ [T_LH] > 'lh'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_EE] > 'ee'
@@ -58,33 +57,33 @@ group(main) using keys
 + [T_KW] > 'kw'
 + [T_L] > 'l'
 + [T_Z] > 'z'
++ [T_X] > 'x'
 + [T_CH] > 'ch'
 + [T_U] > 'u'
 + [T_SH] > 'sh'
 + [T_N] > 'n'
 + [T_M] > 'm'
-+ [T_WUH_0] > 'w̲u̲h̲'
-+ [T_WUH] > 'wuh'
 + [T_HYP] > '-'
 
 c --- CROSS PLATFORM STORES ---
 
-store(ComBMac) U+0331
-store(ComBMacKeys) [K_COLON] [SHIFT T_BMAC] [T_UL] [SHIFT T_UL]
+store(ComLowLine) U+0331
+store(ComLowLineKeys) [K_COLON] [T_LL] [SHIFT T_LL]
 
-'hh' + any(ComBMacKeys) > 'h̲h̲'
-'k' + any(ComBMacKeys) > 'k̲'
-'kw' + any(ComBMacKeys) > 'k̲w'
-'g' + any(ComBMacKeys) > 'g̲'
-'wuh' + any(ComBMacKeys) > 'w̲u̲h̲'
-'qu' + any(ComBMacKeys) > 'q̲u̲'
-'QU' + any(ComBMacKeys) > 'Q̲U̲'
-'K' + any(ComBMacKeys) > 'K̲'
-'Kw' + any(ComBMacKeys) > 'K̲w'
+'hh' + any(ComLowLineKeys) > 'h̲h̲'
+'k' + any(ComLowLineKeys) > 'k̲'
+'kw' + any(ComLowLineKeys) > 'k̲w'
+'g' + any(ComLowLineKeys) > 'g̲'
+'wuh' + any(ComLowLineKeys) > 'w̲u̲h̲'
+'HH' + any(ComLowLineKeys) > 'H̲H̲'
+'K' + any(ComLowLineKeys) > 'K̲'
+'Kw' + any(ComLowLineKeys) > 'K̲w'
+'G' + any(ComLowLineKeys) > 'G̲'
+'WUH' + any(ComLowLineKeys) > 'W̲U̲H̲'
 
 c --- stacking and non-letter combination prevention ---
 store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'" 
 
-any(ComBMac) + any(ComBMacKeys) > context beep
-any(NonLetters) + any(ComBMacKeys) > context beep   
+any(ComLowLine) + any(ComLowLineKeys) > context beep
+any(NonLetters) + any(ComLowLineKeys) > context beep   
 

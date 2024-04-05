@@ -1,11 +1,7 @@
 fv_nlakapamuxcheen keyboard
 ==============
 
-Version 1.0
-
-Description
------------
-fv_nlakapamuxcheen generated from template
+nlakapamuxcheen keyboard layout for unicode.
 
 Links
 -----
@@ -20,11 +16,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
-
+ * Mobile

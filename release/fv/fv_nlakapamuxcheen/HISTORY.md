@@ -1,6 +1,7 @@
 fv_nlakapamuxcheen Change History
 ====================
 
-1.0 (2024-02-24)
+1.0 (5 APR 2024)
 ----------------
-* Created by 
+* New mobile and desktop layout
+* Built documentation
