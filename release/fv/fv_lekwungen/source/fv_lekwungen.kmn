@@ -64,7 +64,7 @@ C mobile default layer
 
 C mobile shift layer
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
-+ [SHIFT T_Q_1] > 'Q̓ᵂ' layer('default')
++ [SHIFT T_Q_1] > 'Q̓ʷ' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
@@ -90,14 +90,15 @@ C mobile shift layer
 + [SHIFT T_F] > 'ᵂ' layer('default')
 + [SHIFT T_G] > 'ʔ' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
-+ [SHIFT T_K_0] > 'K̓ᵂ' layer('default')
-+ [SHIFT T_K] > 'Kᵂ' layer('default')
+c + [SHIFT T_K_1] > 'K̓ʷ' layer('default')
++ [SHIFT T_K_0] > 'K̓ʷ' layer('default')
++ [SHIFT T_K] > 'Kʷ' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
 + [SHIFT T_COLON] > 'ɬ' layer('default')
 + [SHIFT T_Z] > 'X̣' layer('default')
-+ [SHIFT T_Z_0] > 'X̣ᵂ' layer('default')
-+ [SHIFT T_X] > 'Xᵂ' layer('default')
++ [SHIFT T_Z_0] > 'X̣ʷ' layer('default')
++ [SHIFT T_X] > 'Xʷ' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_V] > 'Č' layer('default')
@@ -109,103 +110,52 @@ C mobile shift layer
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
 
-C mobile glottal deadkey
-'p' + [SHIFT T_J] > 'p̓'
-'c' + [SHIFT T_J] > 'c̓'
-'q' + [SHIFT T_J] > 'q̓'
-'W' + [SHIFT T_J] > 'W̓'
-'K' + [SHIFT T_J] > 'K̓'
-'Y' + [SHIFT T_J] > 'Y̓'
-'t' + [SHIFT T_J] > 't̓'
-'Ŋ' + [SHIFT T_J] > 'Ŋ̓'
-'L' + [SHIFT T_J] > 'L̓'
-'M' + [SHIFT T_J] > 'M̓'
-'č' + [SHIFT T_J] > 'č̓'
-'N' + [SHIFT T_J] > 'N̓'
-'Č' + [SHIFT T_J] > 'Č̓'
-'w' + [SHIFT T_J] > 'w̓'
-'k' + [SHIFT T_J] > 'k̓'
-'P' + [SHIFT T_J] > 'P̓'
-'y' + [SHIFT T_J] > 'y̓'
-'C' + [SHIFT T_J] > 'C̓'
-'Q' + [SHIFT T_J] > 'Q̓'
-'l' + [SHIFT T_J] > 'l̓'
-'m' + [SHIFT T_J] > 'm̓'
-'ƛ̓' + [SHIFT T_J] > 'ƛ̓'
-'n' + [SHIFT T_J] > 'n̓'
-'T' + [SHIFT T_J] > 'T̓'
-'ŋ' + [SHIFT T_J] > 'ŋ̓'
-'p' + [T_J] > 'p̓'
-'c' + [T_J] > 'c̓'
-'q' + [T_J] > 'q̓'
-'W' + [T_J] > 'W̓'
-'K' + [T_J] > 'K̓'
-'Y' + [T_J] > 'Y̓'
-'t' + [T_J] > 't̓'
-'Ŋ' + [T_J] > 'Ŋ̓'
-'L' + [T_J] > 'L̓'
-'M' + [T_J] > 'M̓'
-'č' + [T_J] > 'č̓'
-'N' + [T_J] > 'N̓'
-'Č' + [T_J] > 'Č̓'
-'w' + [T_J] > 'w̓'
-'k' + [T_J] > 'k̓'
-'P' + [T_J] > 'P̓'
-'y' + [T_J] > 'y̓'
-'C' + [T_J] > 'C̓'
-'Q' + [T_J] > 'Q̓'
-'l' + [T_J] > 'l̓'
-'m' + [T_J] > 'm̓'
-'ƛ̓' + [T_J] > 'ƛ̓'
-'n' + [T_J] > 'n̓'
-'T' + [T_J] > 'T̓'
-'ŋ' + [T_J] > 'ŋ̓'
+c mobile glottal apostrophe deadkey
+'kʷ' + [T_J] > 'k̓ʷ'
+'kʷ' + [SHIFT T_J] > 'k̓ʷ'
+'Kʷ' + [T_J] > 'K̓ʷ'
+'Kʷ' + [SHIFT T_J] > 'K̓ʷ'
 
-C mobile acute deadkey
-'a' + [T_acute] > 'á'
-'e' + [T_acute] > 'é'
+
+C mobile acute deadkey - SCHWA
 'ə' + [T_acute] > 'ə́'
-'i' + [T_acute] > 'í'
-'u' + [T_acute] > 'ú'
-'A' + [T_acute] > 'Á'
-'E' + [T_acute] > 'É'
 'Ə' + [T_acute] > 'Ə́'
-'I' + [T_acute] > 'Í'
-'U' + [T_acute] > 'Ú'
-'a' + [SHIFT T_acute] > 'á'
-'e' + [SHIFT T_acute] > 'é'
 'ə' + [SHIFT T_acute] > 'ə́'
-'i' + [SHIFT T_acute] > 'í'
-'u' + [SHIFT T_acute] > 'ú'
-'A' + [SHIFT T_acute] > 'Á'
-'E' + [SHIFT T_acute] > 'É'
 'Ə' + [SHIFT T_acute] > 'Ə́'
-'I' + [SHIFT T_acute] > 'Í'
-'U' + [SHIFT T_acute] > 'Ú'
 
 
 c --- END OF TOUCH LAYOUT RULES ---
 
 
-c *************
-c constraints
-c *************
-                  
-c store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  c preventing accents on non-letters
-c any(NumbersAndPunctuation) + any(accentkey) > context beep                   
-c any(NumbersAndPunctuation) + any(ejekey) > context beep
+c **********************
+c Constraints and Rules
+c **********************
+
+c preventing accents on non-letters
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep                   
+any(NumbersAndPunctuation) + any(glottalKeys) > context beep
                   
 
-c backspace will delete just the acute accent on a vowel with acute accent
-store(plainvowels) "aeiouAEIOU"
-store(acutevowels) "áéíóúÁÉÍÓÚ"
-any(acutevowels) + [K_BKSP] > index(plainvowels,1)
+c Acute accent rules
+store(plainVowels) "aeiouAEIOU" c
+store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
+store(acuteKeys) [T_acute] [SHIFT T_acute]
 
-c backspace will delete just the caron on letters with caron
-store(nocaron) "csCS"
-store(withcaron) "čšČŠ"
-any(withcaron) + [K_BKSP] > index(nocaron,1)
-                  
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+
+c Caron diacritic - backspace will delete just the caron on letters with caron
+store(noCaron) "csCS"
+store(withCaron) "čšČŠ"
+any(withCaron) + [K_BKSP] > index(noCaron,1)
+
+c Glottal apostrophe deadkey combining rules
+store(noGlottal) 'cčwkpqtƛlmnŋyCČWKPQTLMNY'
+store(glottalKeys) [T_J] [SHIFT T_J]
+any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
+
+
 c ****************
 c Main
 c **************
