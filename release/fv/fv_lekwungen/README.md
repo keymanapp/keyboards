@@ -1,7 +1,7 @@
-Lekwungen keyboard
+Lekwungen (lək̓ʷəŋən) keyboard
 ======================
 
-Lekwungen keyboard layout for Unicode
+Lekwungen (lək̓ʷəŋən) keyboard layout for Unicode
 
 Links
 -----

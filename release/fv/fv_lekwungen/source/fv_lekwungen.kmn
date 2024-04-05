@@ -2,7 +2,7 @@
 store(&KEYBOARDVERSION) '1.0'
 c store(&ETHNOLOGUECODE) "str"
 store(&COPYRIGHT) '(c) 2024 FirstVoices, SIL International.'
-store(&NAME) 'Lekwungen'
+store(&NAME) 'Lekwungen (lək̓ʷəŋən)'
 store(&LAYOUTFILE) 'fv_lekwungen.keyman-touch-layout'
 store(&VISUALKEYBOARD) 'fv_lekwungen.kvks'
 store(&TARGETS) 'mobile'
@@ -12,7 +12,6 @@ group(main) using keys
 
 
 c --- START OF TOUCH LAYOUT RULES ---
-
 
 
 C mobile default layer
@@ -103,19 +102,18 @@ c + [SHIFT T_K_1] > 'K̓ʷ' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_V] > 'Č' layer('default')
 + [SHIFT T_V_0] > 'Č̓' layer('default')
-+ [SHIFT T_B] > 'Ŋ' layer('default')
-+ [SHIFT T_B_0] > 'Ŋ̓' layer('default')
++ [SHIFT T_B] > 'ŋ' layer('default')
++ [SHIFT T_B_0] > 'ŋ̓' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
 
-c mobile glottal apostrophe deadkey
+c mobile glottal apostrophe deadkey - kʷ
 'kʷ' + [T_J] > 'k̓ʷ'
 'kʷ' + [SHIFT T_J] > 'k̓ʷ'
 'Kʷ' + [T_J] > 'K̓ʷ'
 'Kʷ' + [SHIFT T_J] > 'K̓ʷ'
-
 
 C mobile acute deadkey - SCHWA
 'ə' + [T_acute] > 'ə́'
@@ -138,7 +136,7 @@ any(NumbersAndPunctuation) + any(glottalKeys) > context beep
                   
 
 c Acute accent rules
-store(plainVowels) "aeiouAEIOU" c
+store(plainVowels) "aeiouAEIOU"
 store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
 store(acuteKeys) [T_acute] [SHIFT T_acute]
 
