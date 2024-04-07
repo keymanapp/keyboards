@@ -1,9 +1,10 @@
-﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.3'
+﻿
+store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '10.0.1'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "hur"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
-store(&NAME) 'Hǝn̓q̓ǝmin̓ǝm'
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&NAME) 'hǝn̓q̓ǝmin̓ǝm̓'
 store(&BITMAP) 'fv_henqeminem.ico'
 store(&VISUALKEYBOARD) 'fv_henqeminem.kvks'
 store(&KMW_HELPFILE) 'fv_henqeminem_kmw_help.htm'
@@ -18,11 +19,12 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_henqeminem.keyman-touch-layout'
 
-+ [SHIFT T_Q_0] > 'Q̓' layer('default')
+C capital letters (mobile shifted layer)
 + [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R_0] > 'Ə́' layer('default')
 + [SHIFT T_R] > 'Ə' layer('default')
@@ -30,18 +32,42 @@ store(&LAYOUTFILE) 'fv_henqeminem.keyman-touch-layout'
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
 + [SHIFT T_COLON] > 'ƛ̓' layer('default')
 + [SHIFT T_P_0] > 'P̓' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
-+ [SHIFT T_D] > 'ʔ' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_middot] > '·' layer('default')
++ [SHIFT T_G_0] > 'T̓ᶿ' layer('default')
++ [SHIFT T_G] > 'Θ' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'ᵂ' layer('default')
++ [SHIFT T_K_0] > 'K̓' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L_0] > 'L̓' layer('default')
++ [SHIFT T_L_1] > 'Ɬ' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_Z] > 'χ' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_X_0] > 'X̌' layer('default')
++ [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V] > 'Č' layer('default')    c single codepoint
++ [SHIFT T_B] > 'Š' layer('default')    c single codepoint
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
+
+C combining glottal (with SHIFT layer deadkey)
 'p' + [SHIFT T_F] > 'p̓'
 'c' + [SHIFT T_F] > 'c̓'
 'q' + [SHIFT T_F] > 'q̓'
@@ -51,9 +77,11 @@ store(&LAYOUTFILE) 'fv_henqeminem.keyman-touch-layout'
 't' + [SHIFT T_F] > 't̓'
 'L' + [SHIFT T_F] > 'L̓'
 'M' + [SHIFT T_F] > 'M̓'
-'č' + [SHIFT T_F] > 'č̓'
+'č' + [SHIFT T_F] > 'č̓'
+'č' + [SHIFT T_F] > 'č̓'    c additional rule for combined unicode codepoint
 'N' + [SHIFT T_F] > 'N̓'
-'Č' + [SHIFT T_F] > 'Č̓'
+'Č' + [SHIFT T_F] > 'Č̓'
+'Č' + [SHIFT T_F] > 'Č̓'   c additional rule for combined unicode codepoint
 'w' + [SHIFT T_F] > 'w̓'
 'k' + [SHIFT T_F] > 'k̓'
 'P' + [SHIFT T_F] > 'P̓'
@@ -65,30 +93,13 @@ store(&LAYOUTFILE) 'fv_henqeminem.keyman-touch-layout'
 'ƛ̓' + [SHIFT T_F] > 'ƛ̓'
 'n' + [SHIFT T_F] > 'n̓'
 'T' + [SHIFT T_F] > 'T̓'
-+ [SHIFT T_G_0] > 'T̓ᶿ' layer('default')
-+ [SHIFT T_G] > 'Θ' layer('default')
-+ [SHIFT T_H] > 'H' layer('default')
-+ [SHIFT T_J] > 'ᵂ' layer('default')
-+ [SHIFT T_K_0] > 'K̓' layer('default')
-+ [SHIFT T_K] > 'K' layer('default')
-+ [SHIFT T_L_0] > 'L̓' layer('default')
-+ [SHIFT T_L_1] > 'Ł' layer('default')
-+ [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_Z] > 'X̌' layer('default')
-+ [SHIFT T_X] > 'X' layer('default')
-+ [SHIFT T_C_0] > 'C̓' layer('default')
-+ [SHIFT T_C] > 'C' layer('default')
-+ [SHIFT T_V] > 'Č' layer('default')
-+ [SHIFT T_B] > 'Š' layer('default')
-+ [SHIFT T_N_0] > 'N̓' layer('default')
-+ [SHIFT T_N] > 'N' layer('default')
-+ [SHIFT T_M_0] > 'M̓' layer('default')
-+ [SHIFT T_M] > 'M' layer('default')
+
+C lowercase letters (mobile unshifted layer)
 + [T_Q_0] > 'q̓'
 + [T_Q] > 'q'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
-+ [T_E_0] > 'é'
++ [T_E_0] > 'é'
 + [T_E] > 'e'
 + [T_R_0] > 'ə́'
 + [T_R] > 'ə'
@@ -96,18 +107,42 @@ store(&LAYOUTFILE) 'fv_henqeminem.keyman-touch-layout'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
-+ [T_U_0] > 'ú'
++ [T_U_0] > 'ú'
 + [T_U] > 'u'
-+ [T_I_0] > 'í'
++ [T_I_0] > 'í'
 + [T_I] > 'i'
 + [T_O] > 'o'
++ [T_O_0] > 'ó'
 + [T_COLON] > 'ƛ̓'
 + [T_P_0] > 'p̓'
 + [T_P] > 'p'
-+ [T_A_0] > 'á'
++ [T_A_0] > 'á'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'ʔ'
++ [T_G_0] > 't̓ᶿ'
++ [T_G] > 'θ'
++ [T_H] > 'h'
++ [T_J] > 'ʷ'
++ [T_K_0] > 'k̓'
++ [T_K] > 'k'
++ [T_L_0] > 'l̓'
++ [T_L_1] > 'ɬ'
++ [T_L] > 'l'
++ [T_Z] > 'χ'
++ [T_X] > 'x'
++ [T_X_0] > 'x̌'
++ [T_C_0] > 'c̓'
++ [T_C] > 'c'
++ [T_V] > 'č'   c single codepoint
++ [T_B] > 'š'   c single codepoint
++ [T_N_0] > 'n̓'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
++[T_middot] > '·'
+
+C combining glottal (with UNSHIFTED layer deadkey)
 'p' + [T_F] > 'p̓'
 'c' + [T_F] > 'c̓'
 'q' + [T_F] > 'q̓'
@@ -117,9 +152,10 @@ store(&LAYOUTFILE) 'fv_henqeminem.keyman-touch-layout'
 't' + [T_F] > 't̓'
 'L' + [T_F] > 'L̓'
 'M' + [T_F] > 'M̓'
-'č' + [T_F] > 'č̓'
+'č' + [T_F] > 'č̓'
+'č' + [T_F] > 'č̓'  c additional rule for single codepoints
 'N' + [T_F] > 'N̓'
-'Č' + [T_F] > 'Č̓'
+'Č' + [T_F] > 'Č̓'  c single codepoint for c with hacek
 'w' + [T_F] > 'w̓'
 'k' + [T_F] > 'k̓'
 'P' + [T_F] > 'P̓'
@@ -131,31 +167,13 @@ store(&LAYOUTFILE) 'fv_henqeminem.keyman-touch-layout'
 'ƛ̓' + [T_F] > 'ƛ̓'
 'n' + [T_F] > 'n̓'
 'T' + [T_F] > 'T̓'
-+ [T_G_0] > 't̓ᶿ'
-+ [T_G] > 'θ'
-+ [T_H] > 'h'
-+ [T_J] > 'ʷ'
-+ [T_K_0] > 'k̓'
-+ [T_K] > 'k'
-+ [T_L_0] > 'l̓'
-+ [T_L_1] > 'ł'
-+ [T_L] > 'l'
-+ [T_Z] > 'x̌'
-+ [T_X] > 'x'
-+ [T_C_0] > 'c̓'
-+ [T_C] > 'c'
-+ [T_V] > 'č'
-+ [T_B] > 'š'
-+ [T_N_0] > 'n̓'
-+ [T_N] > 'n'
-+ [T_M_0] > 'm̓'
-+ [T_M] > 'm'
+
 
 c --- END OF TOUCH LAYOUT RULES ---
 
 
 c *************
-c constraints
+c CONSTRAINTS
 c *************
 
 store(accent)  U+0300 U+0301 U+030C
@@ -163,31 +181,56 @@ store(accentkey) "`;~"
 
 any(accent) + any(accentkey) > context beep
 
-store(toneaccent) U+0300 U+0301
+store(toneaccent) U+0300 U+0301 c combining grave, combining acute
 store(eje)   U+0313
 store(ejekey) "'"
 
+
+
+store(vowels_acute) 'áéíóúÁÉÍÓÚ'
+store(vowels_grave) 'àèìòùÀÈÌÒÙ'
+
 any(eje) + any(ejekey) > context beep
 any(eje) + any(accentkey) > context beep
-any(toneaccent) + any(ejekey) > context beep    
+any(toneaccent) + any(ejekey) > context beep
 
 'ᶿ' + any(ejekey) > context beep                                
-'ᶿ' + any(ejekey) > context beep
+'ᶿ' + any(accentkey) > context beep
                   
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(accentkey) > context beep                   
 any(NumbersAndPunctuation) + any(ejekey) > context beep
+
+c rules for backspacing letters with hacek (to replace with plain letter)
+store(withhacek) 'čČšŠ'
+store(nohacek) 'cCsS'
+store(backspace) [K_BKSP]
+
+any(withhacek) + any(backspace) > index(nohacek,1)
+
                   
-                  
-c ****************
+c ******
 c Main
-c **************
+c ******
 
 + "`" > "̀"   c cdmgra
 + "~" > "̌"   c cdmcar
 + ";" > "́"    c cdmacu               
 + "'" > "̓"    c cdmeje
 
+C single codepoints for vowels with accents and c, s with hacek
+
+store(vowels) 'aeiouAEIOU'
+store(acute) ';'
+store(grave) '`'
+store(hacek) '~'
+
+any(vowels) + any(acute) > index(vowels_acute,1)
+any(vowels) + any(grave) > index(vowels_grave,1)
+any(nohacek) + any(hacek) > index(withhacek,1)
+
+any(vowels_acute) + any(acute) > context beep
+any(vowels_grave) + any(grave) > context beep
 
 c Original Punctuation and Numbers
 
@@ -204,7 +247,7 @@ c Original Punctuation and Numbers
 + [NCAPS SHIFT RALT K_8] > '*'
 + [NCAPS SHIFT RALT K_7] > '&'
 + [NCAPS SHIFT RALT K_6] > '^'
-+ [NCAPS SHIFT RALT K_5] > '%'
++ [NCAPS SHIFT RALT K_5] > '%'  c conflicts with Google docs shortcut
 + [NCAPS SHIFT RALT K_4] > '$'
 + [NCAPS SHIFT RALT K_3] > '#'
 + [NCAPS SHIFT RALT K_2] > '@'
@@ -219,69 +262,62 @@ c Original Punctuation and Numbers
 + [NCAPS RALT K_3] > '3'
 + [NCAPS RALT K_2] > '2'
 + [NCAPS RALT K_1] > '1'
-+ [RALT K_QUOTE] > U+0027  
++ [RALT K_QUOTE] > U+0027  c single straight quote
++ [SHIFT RALT K_QUOTE]> U+2019  c single right quote
       
 c Language
 
 + [SHIFT RALT K_T] > 'ᶿ'  
-+ [RALT K_T] > 'ᶿ'   
++ [RALT K_T] > 'ᶿ'   c  conflicts with Google docs shortcut
  
-+ [CAPS SHIFT RALT K_L] > 'ɬ'  
-+ [NCAPS RALT K_L] > 'ɬ'  
++ [CAPS SHIFT RALT K_L] > 'ł'  
++ [NCAPS RALT K_L] > 'ł'  
 
 + [CAPS SHIFT RALT K_X] > 'χ'  
 + [NCAPS RALT K_X] > 'χ'   
 
-c + "`" > "̀"   c cdmgra
-c + "~" > "̌"   c cdmcar
-c + ";" > "́"    c cdmacu
-c + "'" > "̓"    c cdmeje
++ [RALT K_Period] > "·" c middle dot
+
+C + [CAPS SHIFT RALT K_COLON] > ";"
++ [RALT K_COLON] > ";"
 
 c quotes
 
-+ [SHIFT K_RBRKT] > U+201D
-+ [SHIFT K_LBRKT] > U+201C  
-+ [K_RBRKT] > U+2019
-+ [K_LBRKT] > U+2018   
++ [SHIFT K_RBRKT] > U+201D c right double quote
++ [SHIFT K_LBRKT] > U+201C  c left double quote
++ [K_RBRKT] > U+2019    c right single quote
++ [K_LBRKT] > U+2018   c left single quote
 
 c numbers remapped
 
-+ [CAPS K_0] > 'T̓ᶿ'
-+ [CAPS K_9] > 'Ł'
-+ [CAPS K_8] > '̓'
-+ [CAPS K_7] > 'X̌'
-+ [CAPS K_6] > 'Š'
-+ [CAPS K_5] > 'Č'
-+ [CAPS K_3] > "Ə"
-+ [CAPS K_2] > 'ᵂ' 
-+ [CAPS K_1] > "Θ"
++ [NCAPS SHIFT K_0] > ')'
++ [NCAPS SHIFT K_9] > '('
++ [NCAPS SHIFT K_8] > '*'
++ [NCAPS SHIFT K_7] > '&'
++ [NCAPS SHIFT K_6] > '^'
++ [NCAPS SHIFT K_5] > '%'
++ [NCAPS SHIFT K_4] > '$'
++ [NCAPS SHIFT K_3] > "#"
++ [NCAPS SHIFT K_2] > '@' 
++ [NCAPS SHIFT K_1] > "!"
 
-+ [NCAPS SHIFT K_0] > 'T̓ᶿ'
-+ [NCAPS SHIFT K_9] > 'Ł'
-+ [NCAPS SHIFT K_8] > '̓'
-+ [NCAPS SHIFT K_7] > 'X̌'
-+ [NCAPS SHIFT K_6] > 'Š'
-+ [NCAPS SHIFT K_5] > 'Č'
-+ [NCAPS SHIFT K_3] > "Ə"
-+ [NCAPS SHIFT K_2] > 'ᵂ' 
-+ [NCAPS SHIFT K_1] > "Θ"
-
-+ [CAPS SHIFT K_0] > 't̓ᶿ'
-+ [CAPS SHIFT K_9] > 'ł'
-+ [CAPS SHIFT K_8] > 'ƛ̓'
-+ [CAPS SHIFT K_7] > 'x̌'
-+ [CAPS SHIFT K_6] > "š"
-+ [CAPS SHIFT K_5] > 'č'
-+ [CAPS SHIFT K_3] > "ə"
-+ [CAPS SHIFT K_2] > 'ʷ'
-+ [CAPS SHIFT K_1] > 'θ'  
++ [CAPS SHIFT K_0] > ')'
++ [CAPS SHIFT K_9] > '('
++ [CAPS SHIFT K_8] > '*'
++ [CAPS SHIFT K_7] > '&amp;'
++ [CAPS SHIFT K_6] > "^"
++ [CAPS SHIFT K_5] > '%'
++ [CAPS SHIFT K_4] > '$'
++ [CAPS SHIFT K_3] > "#"
++ [CAPS SHIFT K_2] > '@'
++ [CAPS SHIFT K_1] > '!'  
 
 + [NCAPS K_0] > 't̓ᶿ'
-+ [NCAPS K_9] > 'ł'
++ [NCAPS K_9] > 'ɬ'
 + [NCAPS K_8] > 'ƛ̓'
 + [NCAPS K_7] > 'x̌'
-+ [NCAPS K_6] > "š"
-+ [NCAPS K_5] > 'č'
++ [NCAPS K_6] > "š" c single codepoint
++ [NCAPS K_5] > 'č' c single codepoint
 + [NCAPS K_4] > 'ʔ'
 + [NCAPS K_3] > "ə"
 + [NCAPS K_2] > 'ʷ'

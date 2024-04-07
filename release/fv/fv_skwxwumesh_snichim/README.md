@@ -1,7 +1,7 @@
-Sḵwx̱wúmesh sníchim keyboard
+Sḵwx̱wú7mesh sníchim keyboard
 ======================
 
-Sḵwx̱wúmesh sníchim keyboard layout for Unicode
+Sḵwx̱wú7mesh sníchim keyboard layout for Unicode
 
 Links
 -----
@@ -13,4 +13,4 @@ Links
 Supported Platforms
 -------------------
 
- * Mobile
+* Mobile

@@ -2,12 +2,12 @@
 
 store(&VERSION)     '10.0'             c Will not work with earlier versions of Keyman.
 store(&NAME)        'BU Phonetic'
-store(&COPYRIGHT) '(c) 2006-2021 Albert Bickford'
+store(&COPYRIGHT) '(c) 2006-2023 Albert Bickford'
 store(&BITMAP) 'bu_phonetic.ico'
 store(&HOTKEY)      [CTRL ALT K_U]
 store(&MnemonicLayout) "1"
 store(&TARGETS) 'desktop'
-store(&KEYBOARDVERSION) '2.0.1'
+store(&KEYBOARDVERSION) '2.1'
 
 
 
@@ -25,6 +25,8 @@ c     be made in corresponding ANSI stores and the ANSI group, and that both key
 
 c 3) If you want to modify anything that has to do with saltillo (dotless exclamation) or acute accent,
 c    study the code carefully first, as these two are tricky.  Two issues are involved:  
+c    a'') As of 2023-10-09, saltillo is output using the codepoint U+A78C LATIN SMALL LETTER SALTILLO, introduced in Unicode 
+c       Version 5.1 in April 2008, and not as described below. Notes below are kept for legacy purposes. 
 c    a') As of 2006-05-16, saltillo is output using the PUA character, not as described below.
 c    a) Currently, this keyboard outputs a fudge for saltillo in Unicode (U+02C8) as well as in ANSI ('), since 
 c       the proposal to have this character added to Unicode has not yet been accepted.  There is a PUA character for it 
@@ -388,7 +390,8 @@ c Special handling for dotless exclamation ("saltillo") and acute accent
 c PATCH AREA acute and saltillo
 c See also discussion above in the warnings about how to modify the keyboard, and code below for 2nd keypress on acute accent.
 c Codepoints to use to represent dotless exclamation (enlarged straight apostrophe, "saltillo")
-store(saltillo)    U+F21D   c Unicode: Use U+F21D from the private use area in SIL Doulos and SIL Charis
+store(saltillo)    U+A78C   c Unicode: Use U+A78C LATIN SMALL LETTER SALTILLO, added in Unicode Version 5.1, April 2008  
+c store(saltillo)    U+F21D   c Unicode: Use U+F21D from the private use area in SIL Doulos and SIL Charis; legacy code from before the saltillo had a Unicode codepoint
 c store(saltillo)    U+02C8   c Unicode: Use U+02C8 MODIFIER LETTER VERTICAL LINE as a fudge until dotless exclamation gets added
 store(saltillo-A)  "'"      c ANSI: Use straight apostrophe; alternately could use the SIL-Mexico "standard" custom codepoint xDF (normally 'ß')
     

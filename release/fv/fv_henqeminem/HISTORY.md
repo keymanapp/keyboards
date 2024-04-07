@@ -1,5 +1,17 @@
-Hǝn̓q̓ǝmin̓ǝm Change History
+hǝn̓q̓ǝmin̓ǝm̓ Change History
 ============================
+
+10.0.1 (1 Apr 2024)
+-------------------
+* Updated keymap images
+
+10.0 (17 Oct 2023)
+-------------------
+* Added middle dot and chi on mobile layout
+* Replaced barred l with belted l
+* Fixed name of language on mobile layout
+* Fixed name of language in documentation
+* Updated keymap images
 
 9.1.3 (6 Mar 2023)
 -------------------
