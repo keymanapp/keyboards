@@ -18,8 +18,11 @@ store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
+store(nul) "CBM"
+
 group(main) using keys
 
++ any(nul) > nul
 + [K_SPACE] > U+0020
 
 + [K_0] > U+0030
