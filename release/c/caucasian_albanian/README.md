@@ -1,14 +1,11 @@
 Caucasian Albanian keyboard
 ==============
 
-© 2024 SIL International
-
-Version 1.0
+© SIL International
 
 Description
 -----------
-
-Caucasian Albanian generated from template
+This keyboard layout is designed for Albanian using the Caucasian Albanian script.
 
 Links
 -----
