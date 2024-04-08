@@ -7,7 +7,7 @@
 
 
 <p>
-    Caucasian Albanian 1.0 generated from template.
+    This keyboard layout is designed for Albanian using the Caucasian Albanian script.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 
