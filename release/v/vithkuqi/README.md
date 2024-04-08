@@ -1,14 +1,12 @@
 Vithkuqi keyboard
 ==============
 
-© 2024 SIL International
-
-Version 1.0
+© SIL International
 
 Description
 -----------
 
-Vithkuqi generated from template
+This keyboard layout is designed for Albanian using the Vithkuqi script.
 
 Links
 -----
