@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Indonesia Dvorak 1.0 generated from template.
+    Indonesia Dvorak layout.
 </p>
 
 <h1>Keyboard Layout</h1>
