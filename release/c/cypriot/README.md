@@ -1,14 +1,12 @@
 Cypriot Syllabary keyboard
 ==============
 
-© 2024 SIL International
-
-Version 1.0
+© SIL International
 
 Description
 -----------
 
-Cypriot Syllabary generated from template
+This keyboard is designed for the Cypriot Syllabary.
 
 Links
 -----
