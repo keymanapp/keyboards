@@ -7,7 +7,7 @@
 
 
 <p>
-    Vithkuqi 1.0 generated from template.
+    This keyboard layout is designed for Albanian using the Vithkuqi script.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 
