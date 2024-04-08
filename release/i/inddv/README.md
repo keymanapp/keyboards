@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-Indonesia Dvorak generated from template
+Indonesia Dvorak layout
 
 Links
 -----
