@@ -1,7 +1,7 @@
 Obolo Chwerty Keyboard Change History
 ====================
 
-1.5 (2023-08-18)
+1.5 (2024-04-08)
 ----------------
 * Added numeric layer
 * Updated layer switching on layer alt
