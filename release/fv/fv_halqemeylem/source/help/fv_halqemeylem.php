@@ -80,6 +80,7 @@ This keyboard is designed for the <b>Halq'eméylem</b> language of the BC Coast 
 </li></ul><div class='vspace'></div><h3>Alternate Name</h3>
 <ul>
 	<li>Stó:lō</li>
+	<li>Upriver Halkomelem</li>
 </ul>
 </div>
 
