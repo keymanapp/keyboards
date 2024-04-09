@@ -1,5 +1,9 @@
 Nɬeʔkepmxcín Change History
 ============================
+9.4 (9 Apr 2024)
+-------------------
+* Added x̌ to keyboard on request
+
 9.3 (24 Feb 2024)
 -------------------
 * Changed barred l for belted l

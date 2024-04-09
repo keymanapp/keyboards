@@ -30,6 +30,7 @@ This keyboard is designed for the <b>Nɬeʔkepmxcín</b> language of the BC Inte
 						</li>
 						<li>To type the grave accent use the backquote key ` — à is typed a then Backquote `<br />
 							This accent is occasionally used for linguistic purposes. </li>
+						<li>To type x̌ type <b>x</b> then <b>Equal =</b></li>
 						<li>The original values of the punctuation keys can be typed by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
 						 
 							 
