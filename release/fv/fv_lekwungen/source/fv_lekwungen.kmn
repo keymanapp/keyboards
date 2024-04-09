@@ -2,7 +2,7 @@
 store(&KEYBOARDVERSION) '1.0'
 c store(&ETHNOLOGUECODE) "str"
 store(&COPYRIGHT) '(c) 2024 FirstVoices, SIL International.'
-store(&NAME) 'Lekwungen (lək̓ʷəŋən)'
+store(&NAME) 'Lekwungen (Lək̓ʷəŋən)'
 store(&LAYOUTFILE) 'fv_lekwungen.keyman-touch-layout'
 store(&VISUALKEYBOARD) 'fv_lekwungen.kvks'
 store(&TARGETS) 'mobile'
@@ -39,7 +39,7 @@ C mobile default layer
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'š'
-+ [T_F] > 'ᵂ'
++ [T_F] > 'ʷ'
 + [T_G] > 'ʔ'
 + [T_H] > 'h'
 + [T_K_0] > 'k̓ʷ'
@@ -69,8 +69,8 @@ C mobile shift layer
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-+ [SHIFT T_R_0] > 'Ə́' layer('default')
-+ [SHIFT T_R] > 'Ə' layer('default')
++ [SHIFT T_R_0] > 'ə́' layer('default')
++ [SHIFT T_R] > 'ə' layer('default')
 + [SHIFT T_T_0] > 'T̓' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
@@ -86,7 +86,7 @@ C mobile shift layer
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'Š' layer('default')
-+ [SHIFT T_F] > 'ᵂ' layer('default')
++ [SHIFT T_F] > 'ʷ' layer('default')
 + [SHIFT T_G] > 'ʔ' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 c + [SHIFT T_K_1] > 'K̓ʷ' layer('default')
@@ -109,11 +109,15 @@ c + [SHIFT T_K_1] > 'K̓ʷ' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
 
-c mobile glottal apostrophe deadkey - kʷ
+c mobile glottal apostrophe deadkey - kʷ, qʷ
 'kʷ' + [T_J] > 'k̓ʷ'
 'kʷ' + [SHIFT T_J] > 'k̓ʷ'
 'Kʷ' + [T_J] > 'K̓ʷ'
 'Kʷ' + [SHIFT T_J] > 'K̓ʷ'
+'qʷ' + [T_J] > 'q̓ʷ'
+'qʷ' + [SHIFT T_J] > 'q̓ʷ'
+'Qʷ' + [T_J] > 'Q̓ʷ'
+'Qʷ' + [SHIFT T_J] > 'Q̓ʷ'
 
 C mobile acute deadkey - SCHWA
 'ə' + [T_acute] > 'ə́'

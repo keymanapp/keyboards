@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Lekwungen (lək̓ʷəŋən) Keyboard Help';
-  $pagetitle = 'Lekwungen (lək̓ʷəŋən) Keyboard Help';
+  $pagename = 'Lekwungen (Lək̓ʷəŋən) Keyboard Help';
+  $pagetitle = 'Lekwungen (Lək̓ʷəŋən) Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Lekwungen (lək̓ʷəŋən)</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>Lekwungen (Lək̓ʷəŋən)</b> language of the BC Coast region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
