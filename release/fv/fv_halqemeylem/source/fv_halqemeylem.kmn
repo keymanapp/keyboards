@@ -61,60 +61,6 @@ C mobile shift layout
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
 
-C acute deadkey
-c 'o' + [SHIFT T_D] > 'ó'
-c 'I' + [SHIFT T_D] > 'Í'
-c 'A' + [SHIFT T_D] > 'Á'
-c 'a' + [SHIFT T_D] > 'á'
-c 'i' + [SHIFT T_D] > 'í'
-c 'ō' + [SHIFT T_D] > 'ṓ'
-c 'Ō' + [SHIFT T_D] > 'Ṓ'
-c 'E' + [SHIFT T_D] > 'É'
-c 'U' + [SHIFT T_D] > 'Ú'
-c 'e' + [SHIFT T_D] > 'é'
-c 'u' + [SHIFT T_D] > 'ú'
-c 'O' + [SHIFT T_D] > 'Ó'
-c 'o' + [T_D] > 'ó'
-c 'I' + [T_D] > 'Í'
-c 'A' + [T_D] > 'Á'
-c 'a' + [T_D] > 'á'
-c 'i' + [T_D] > 'í'
-c 'ō' + [T_D] > 'ṓ'
-c 'Ō' + [T_D] > 'Ṓ'
-c 'E' + [T_D] > 'É'
-c 'U' + [T_D] > 'Ú'
-c 'e' + [T_D] > 'é'
-c 'u' + [T_D] > 'ú'
-c 'O' + [T_D] > 'Ó'
-
-
-C grave deadkey
-c 'o' + [SHIFT T_F] > 'ò'
-c 'I' + [SHIFT T_F] > 'Ì'
-c 'A' + [SHIFT T_F] > 'À'
-c 'a' + [SHIFT T_F] > 'à'
-c 'i' + [SHIFT T_F] > 'ì'
-c 'ō' + [SHIFT T_F] > 'ṑ'
-c 'Ō' + [SHIFT T_F] > 'Ṑ'
-c 'E' + [SHIFT T_F] > 'È'
-c 'U' + [SHIFT T_F] > 'Ù'
-c 'e' + [SHIFT T_F] > 'è'
-c 'u' + [SHIFT T_F] > 'ù'
-c 'O' + [SHIFT T_F] > 'Ò'
-c 'o' + [T_F] > 'ò'
-c 'I' + [T_F] > 'Ì'
-c 'A' + [T_F] > 'À'
-c 'a' + [T_F] > 'à'
-c 'i' + [T_F] > 'ì'
-c 'ō' + [T_F] > 'ṑ'
-c 'Ō' + [T_F] > 'Ṑ'
-c 'E' + [T_F] > 'È'
-c 'U' + [T_F] > 'Ù'
-c 'e' + [T_F] > 'è'
-c 'u' + [T_F] > 'ù'
-c 'O' + [T_F] > 'Ò'
-
-
 
 C mobile regular layer
 + [T_Q] > 'q'
@@ -181,8 +127,10 @@ store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“
 any(NumbersAndPunctuation) + any(acuteKeys) > context beep
 any(NumbersAndPunctuation) + any(graveKeys) > context beep
 
-any(acuteVowels) + any(graveKeys) > context beep c prevent grave accent on an acute vowel and vice versa
+any(acuteVowels) + any(graveKeys) > context beep c prevent multiple accents
 any(graveVowels) + any(acuteKeys) > context beep
+any(acuteVowels) + any(acuteKeys) > context beep
+any(graveVowels) + any(graveKeys) > context beep
 
 C old desktop rules
 c store(overaccent) U+0301 U+0300
@@ -229,10 +177,10 @@ c lang
 + "/" > U+0301 c acute
 + "`" > U+0300 c grave
                                       
-+ [caps shift K_LBRKT] > 'ō'   
-+ [ncaps shift K_LBRKT] > 'Ō'
-+ [caps K_LBRKT] > 'Ō'
-+ [ncaps K_LBRKT] > 'ō'
++ [caps shift K_LBRKT] > 'ō'   
++ [ncaps shift K_LBRKT] > 'Ō'
++ [caps K_LBRKT] > 'Ō'
++ [ncaps K_LBRKT] > 'ō'
 
 + [caps shift K_RBRKT] > 'x̱'   
 + [ncaps shift K_RBRKT] > 'X̱'
