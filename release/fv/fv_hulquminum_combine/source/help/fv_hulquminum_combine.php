@@ -49,7 +49,7 @@ This keyboard is designed for the <b>Hul̓q̓umin̓um̓</b> language of the BC C
 	<tr >
 		<td >&nbsp;</td>
 		<td  align='center'>x̌</td>
-		<td  align='center'>x x̌</td>
+		<td  align='center'>x</td>
 		<td  align='center'>c c̓</td>
 		<td  align='center'>?</td>
 		<td  align='center'>!</td>
