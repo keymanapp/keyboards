@@ -13,26 +13,26 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-+ [SHIFT T_E] > 'E'
-+ [SHIFT T_T] > 'TL'
-+ [SHIFT T_O] > 'O'
-+ [SHIFT T_I] > 'I'
-+ [SHIFT T_OO] > 'OO'
-+ [SHIFT T_P] > 'P'
-+ [SHIFT T_A] > 'A'
-+ [SHIFT T_S] > 'TS'
-+ [SHIFT T_EE] > 'EE'
-+ [SHIFT T_G] > 'G'
-+ [SHIFT T_H] > 'H'
-+ [SHIFT T_J] > 'J'
-+ [SHIFT T_K_0] > 'K̲'
-+ [SHIFT T_K] > 'K'
-+ [SHIFT T_KW_0] > 'K̲w'
-+ [SHIFT T_KW] > 'Kw'
-+ [SHIFT T_X] > 'X'
-+ [SHIFT T_N] > 'N'
-+ [SHIFT T_M] > 'M'
-+ [SHIFT T_HYP] > '-'
++ [SHIFT T_E] > 'E'  layer('default')
++ [SHIFT T_T] > 'TL'  layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_OO] > 'OO' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'TS' layer('default')
++ [SHIFT T_EE] > 'EE' layer('default')
++ [SHIFT T_G] > 'G̲' layer('default')
++ [SHIFT T_H] > 'H' layer('default') 
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K_0] > 'K̲' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_KW_0] > 'K̲w' layer('default')
++ [SHIFT T_KW] > 'Kw' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [SHIFT T_HYP] > '-' layer('default')
 + [T_WUH_0] > 'w̲u̲h̲'
 + [T_WUH] > 'wuh'
 + [T_W] > 'w'
@@ -70,15 +70,15 @@ c --- CROSS PLATFORM STORES ---
 store(ComLowLine) U+0331
 store(ComLowLineKeys) [K_COLON] [T_LL] [SHIFT T_LL]
 
+'g' + any(ComLowLineKeys) > 'g̲'
 'hh' + any(ComLowLineKeys) > 'h̲h̲'
 'k' + any(ComLowLineKeys) > 'k̲'
 'kw' + any(ComLowLineKeys) > 'k̲w'
-'g' + any(ComLowLineKeys) > 'g̲'
 'wuh' + any(ComLowLineKeys) > 'w̲u̲h̲'
+'G' + any(ComLowLineKeys) > 'G̲'
 'HH' + any(ComLowLineKeys) > 'H̲H̲'
 'K' + any(ComLowLineKeys) > 'K̲'
 'Kw' + any(ComLowLineKeys) > 'K̲w'
-'G' + any(ComLowLineKeys) > 'G̲'
 'WUH' + any(ComLowLineKeys) > 'W̲U̲H̲'
 
 c --- stacking and non-letter combination prevention ---
