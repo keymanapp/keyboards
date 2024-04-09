@@ -18,7 +18,7 @@ This keyboard is designed for the <b>nlakapamuxcheen</b> language of the BC Inte
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="Nlekepmxcin.png" alt="" height="198" width="514" border="0" /></h2>
+<img src="fv_nlakapamuxcheenU_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 					<li>The lowline has been assigned to the <b>colon key ;</b>. To type the regular colon, hold down the Right-Alt or Option key then press the colon key.</li>
 						<li>To type <b>g̲</b>, type <b>g + ; </b></li>
