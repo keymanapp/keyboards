@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 12.8 (Apr 10 2024)
+* Add fv_sguuxs
+
 ## 12.7 (18 Mar 2024)
 * Fix keyboard versions
 
