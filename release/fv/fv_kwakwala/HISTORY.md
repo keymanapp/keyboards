@@ -1,5 +1,8 @@
 Kwak̕wala Change History
 ============================
+9.1.3 (10 Apr 2024)
+------------------
+* Added rule to mobile to change U+0313 to U+0315 in the necessary contexts
 
 9.1.2 (6 Mar 2023)
 -------------------
