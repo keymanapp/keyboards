@@ -73,6 +73,7 @@ store(&VISUALKEYBOARD) 'sil_hebrew.kvks'
 c store(&ETHNOLOGUECODE) 'hbo'
 store(&KEYBOARDVERSION) '1.9'
 store(&LAYOUTFILE) 'sil_hebrew.keyman-touch-layout'
+store(&DISPLAYMAP) '../../../shared/fonts/Kbd/KbdHebr.json'
 store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 begin UNICODE > use(Main)
@@ -331,7 +332,7 @@ c ---- Rules for touch layout ----
 + [T_05D5_05B9] > U+05D5 U+05B9
 + [T_05D5_05BA] > U+05D5 U+05BA
 + [T_05D5_05BC_05BA]  > U+05D5 U+05BC U+05BA
-+ [T_05D5_05D5_05B9]  > U+05D5 U+05D5 U+05B9 
++ [T_05D5_05D5_05B9]  > U+05D5 U+05D5 U+05B9
 + [T_05D5_05BC_05D5_05B9] > U+05D5 U+05BC U+05D5 U+05B9
 + [T_05E0_0307] > U+05E0 U+0307
 + [T_05C6_0307] > U+05C6 U+0307
