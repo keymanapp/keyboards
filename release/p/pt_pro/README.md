@@ -1,14 +1,12 @@
 Portuguese (Programmers) keyboard
 ==============
 
-(c) 2024 SIL International
-
-Version 1.0
+(c) SIL International
 
 Description
 -----------
 
-Portuguese (Programmers) generated from template
+Portuguese (Programmers) is a keyboard layout designed for Portuguese programmers.
 
 Links
 -----
