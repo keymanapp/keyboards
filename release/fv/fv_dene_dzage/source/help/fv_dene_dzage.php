@@ -19,9 +19,13 @@ This keyboard is designed for the <b>Dene Dzage</b> language of the Western Suba
 </p>
 
 <h2>Desktop layout</h2>
-<p>
-The Dene Dzage keyboard uses the English keyboard as a base, with added key combinations in order to create special characters. See <a href="file:fv_dene_dzage_combinations.pdf">this document</a> for all the special key combinations.</p>
+<p>The Dene Dzage keyboard uses the English keyboard as a base, with added key combinations in order to create special characters. See <a href="file:fv_dene_dzage_combinations.pdf">this document</a> for all the special key combinations.</p>
 
+<h2>Unicode Fonts</h2>
+						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
+    <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
+    <hr></td>
+  </tr>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
