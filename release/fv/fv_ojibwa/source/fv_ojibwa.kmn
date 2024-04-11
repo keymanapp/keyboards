@@ -1,9 +1,10 @@
 ﻿store(&VERSION) "10.0"
 store(&KEYBOARDVERSION) '10.0'
-store(&TARGETS) "mobile tablet"
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "ojb"
 store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᐊᓂᔑᓇᐯᒧᐎᓐ'
+store(&VISUALKEYBOARD) 'fv_ojibwa.kvks'
 
 begin Unicode > use(main)
 
@@ -138,6 +139,8 @@ c --- END OF TOUCH LAYOUT RULES ---
 c --- START OF DESKTOP RULES ---
 c syllabic stores
 store(VowelKeys) [K_I] [K_O] [K_A]
+store(ShortVowels) 'ᐃᐅᐊ'
+store(LongVowels) 'ᐄᐆᐋ'
 
 store(LWShortVowels) 'ᐎᐒᐗ'
 store(LWLongVowels) 'ᐐᐔᐙ'
@@ -196,7 +199,7 @@ store(LSHZHWLongVowels) 'ᔛᔟᔣ'
 store(RSHZHWShortVowels) 'ᔚᔞᔢ'
 store(RSHZHWLongVowels) 'ᔜᔠ ᔤ'
 
-store(YShortVowels) 'ᔨᔪᔭ
+store(YShortVowels) 'ᔨᔪᔭ'
 store(YLongVowels) 'ᔩᔫᔮ'
 store(LYWShortVowels) 'ᔱᔵᔹ'
 store(LYWLongVowels) 'ᔳᔷᔻ'
@@ -210,11 +213,11 @@ c Standalone Vowels
 + 'i' > 'ᐃ'
 'ᐃ' + [K_I] > 'ᐄ'
 + 'o' > 'ᐅ'
-'' + [K_O] > 'ᐆ'
+'ᐅ' + [K_O] > 'ᐆ'
 + 'a' > 'ᐊ'
 'ᐊ' + [K_A] > 'ᐋ'
-any(ShortVowels) + [K_W] > index(WShortVowels,1)
-any(LongVowels) + [K_W] > index(WLongVowels,1)
+any(ShortVowels) + [K_W] > index(LWShortVowels,1)
+any(LongVowels) + [K_W] > index(LWLongVowels,1)
 
 c Standalone Consonants
 
@@ -227,64 +230,65 @@ c Syllable Building
 + [K_B] > 'ᑉ'
 + [K_P] > 'ᑉ'
 'ᑉ' + [K_E] > 'ᐯ'
-'ᑉ' + any(VowelKeys) > index(BPShortVowels,1)
+'ᑉ' + any(VowelKeys) > index(BPShortVowels,2)
 any(BPShortVowels) + any(VowelKeys) > index(BPLongVowels,1)
 any(BPLongVowels) + [K_BKSP] > index(BPShortVowels,1)
 'ᑉ' + [K_W] > 'ᐺ'
 'ᐺ' + [K_E] > 'ᐺ' c R dot ᐻ
-'ᐺ' + any(VowelKeys) > index(LBPWShortVowels,1)
+'ᐺ' + any(VowelKeys) > index(LBPWShortVowels,2)
 any(LBPWShortVowels) + any(VowelKeys) > index(LBPWLongVowels,1)
 any(LBPWLongVowels) + [K_BKSP] > index(LBPWShortVowels,1)
 
 + [K_D] > 'ᑦ'
 + [K_T] > 'ᑦ'
-'ᑦ' + [K_E] > 
-'ᑦ' + any(VowelKeys) + any(VowelKeys) > index(DTLongVowels,1)
+'ᑦ' + [K_E] > 'ᑌ'
+'ᑦ' + any(VowelKeys) > index(DTShortVowels,2)
+any(DTShortVowels) + any(VowelKeys) > index(DTLongVowels,1)
 any(DTLongVowels) + [K_BKSP] > index(DTShortVowels,1)
 'ᑦ' + [K_W] > 'ᑗ' c right variant ᑘ
 'ᑗ' + [K_E] > 'ᑗ'
-'' + any(VowelKeys) > index(LDTWShortVowels,1)
+'ᑗ' + any(VowelKeys) > index(LDTWShortVowels,2)
 any(LDTWShortVowels) + any(VowelKeys) > index(LDTWLongVowels,1)
 any(LDTWLongVowels) + [K_BKSP] > index(LDTWShortVowels,1)
 
 + [K_G] > 'ᒃ'
 + [K_K] > 'ᒃ'
 'ᒃ' + [K_E] > 'ᑫ'
-'ᒃ' + any(VowelKeys) > index(GKShortVowels,1)
-any(GKShortVowels) + any(VowelKeys) > index(GKShortVowels,1)
-any(GKShortVowels) + [K_BKSP] > index(GKShortVowels,1)
+'ᒃ' + any(VowelKeys) > index(GKShortVowels,2)
+any(GKShortVowels) + any(VowelKeys) > index(GKLongVowels,1)
+any(GKLongVowels) + [K_BKSP] > index(GKShortVowels,1)
 'ᒃ' + [K_W] > 'ᑴ' c right variant ᑵ
 'ᑴ' + [K_E] > 'ᑴ'
-'ᑴ' + any(VowelKeys) > index(LGKWShortVowels,1)
+'ᑴ' + any(VowelKeys) > index(LGKWShortVowels,2)
 any(LGKWShortVowels) + any(VowelKeys) > index(LGKWLongVowels,1)
 any(LGKWLongVowels) + [K_BKSP] > index(LGKWShortVowels,1)
 
 + [K_J] > 'ᒡ'
 'c' + [K_H] > 'ᒡ'
 'ᒡ' + [K_E] > 'ᒉ'
-'ᒡ' + any(VowelKeys) > index(JCHShortVowels,1)
+'ᒡ' + any(VowelKeys) > index(JCHShortVowels,2)
 any(JCHShortVowels) + any(VowelKeys) > index(JCHLongVowels,1)
 any(JCHLongVowels) + [K_BKSP] > index(JCHShortVowels,1)
-'' + [K_W] > 'ᒒ' c right variant ᒓ
+'ᒡ' + [K_W] > 'ᒒ' c right variant ᒓ
 'ᒒ' + [K_E] > 'ᒒ'
-'ᒓ' + any(VowelKeys) > index(LJCHWShortVowels,1)
+'ᒒ' + any(VowelKeys) > index(LJCHWShortVowels,2)
 any(LJCHWShortVowels) + any(VowelKeys) > index(LJCHWLongVowels,1)
 any(LJCHWLongVowels) + [K_BKSP] > index(LJCHWShortVowels,1)
 
 + [K_M] > 'ᒻ'
 'ᒻ' + [K_E] > 'ᒣ'
-'ᒻ' + any(VowelKeys) > index(MShortVowels,1)
+'ᒻ' + any(VowelKeys) > index(MShortVowels,2)
 any(MShortVowels) + any(VowelKeys) > index(MLongVowels,1)
 any(MLongVowels) + [K_BKSP] > index(MShortVowels,1)
 'ᒻ' + [K_W] > 'ᒬ' c right variant ᒭ
 'ᒬ' + [K_E] > 'ᒬ'
-'' + any(VowelKeys) > index(LMWShortVowels,1)
+'ᒬ' + any(VowelKeys) > index(LMWShortVowels,2)
 any(LMWShortVowels) + any(VowelKeys) > index(LMWLongVowels,1)
 any(LMWLongVowels) + [K_BKSP] > index(LMWShortVowels,1)
 
 + [K_N] > 'ᓐ'
 'ᓐ' + [K_E] > 'ᓀ'
-'ᓐ' + any(VowelKeys) > index(NShortVowels,1)
+'ᓐ' + any(VowelKeys) > index(NShortVowels,2)
 any(NShortVowels) + any(VowelKeys) > index(NLongVowels,1)
 any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
 'ᓐ' + [K_W] > 'ᓉ' c right variant ᓊ
@@ -294,51 +298,67 @@ any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
 'ᓎ' + [K_BKSP] > 'ᓋ'
 
 + [K_L] > 'ᓫ'
-'' + any(VowelKeys) > index(NShortVowels,1)ᓫ
-c any(NShortVowels)ᓫ + any(VowelKeys) > index(NLongVowels,1)ᓫ
-c line by line each variant + vowel keys > N long vowel + ᓫ
+'ᓫ' + [K_E] > 'ᓀᓫ'
+'ᓫ' + any(VowelKeys) > index(NShortVowels,2)'ᓫ'
+'ᓂᓫ' + [K_I] > 'ᓃᓫ'
+'ᓄᓫ' + [K_O] > 'ᓅᓫ'
+'ᓇᓫ' + [K_A] > 'ᓈᓫ'
+'ᓃᓫ' + [K_BKSP] > 'ᓂᓫ'
+'ᓅᓫ' + [K_BKSP] > 'ᓄᓫ'
+'ᓈᓫ' + [K_BKSP] > 'ᓇᓫ'
 
 + [K_R] > 'ᕑ'
-'ᕑ' + any(VowelKeys) > index(NShortVowels,1)ᕑ
-c see above, test when keyboard is better filled
+'ᕑ' + [K_E] > 'ᓀᕑ'
+'ᕑ' + any(VowelKeys) > index(NShortVowels,2)'ᕑ'
+'ᓂᕑ' + [K_I] > 'ᓃᕑ'
+'ᓄᕑ' + [K_O] > 'ᓅᕑ'
+'ᓇᕑ' + [K_A] > 'ᓈᕑ'
+'ᓃᕑ' + [K_BKSP] > 'ᓂᕑ'
+'ᓅᕑ' + [K_BKSP] > 'ᓄᕑ'
+'ᓈᕑ' + [K_BKSP] > 'ᓇᕑ'
 
 + [K_S] > 'ᔅ'
 + [K_Z] > 'ᔅ'
 'ᔅ' + [K_E] > 'ᓭ'
-'ᔅ' + any(VowelKeys) > index(SZShortVowels,1)
+'ᔅ' + any(VowelKeys) > index(SZShortVowels,2)
 any(SZShortVowels) + any(VowelKeys) > index(SZLongVowels,1)
 any(SZLongVowels) + [K_BKSP] > index(SZShortVowels,1)
 'ᔅ' + [K_W] > 'ᓶ' c right variant ᓷ
 'ᓶ' + [K_E] > 'ᓶ'
-'ᓶ' + any(VowelKeys) > index(LSZWShortVowels,1)
+'ᓶ' + any(VowelKeys) > index(LSZWShortVowels,2)
 any(LSZWShortVowels) + any(VowelKeys) > index(LSZWLongVowels,1)
 any(LSZWLongVowels) + [K_BKSP] > index(LSZWShortVowels,1)
 
 'ᔅ' + [K_H] > 'ᔥ'
 'ᔥ' + [K_E] > 'ᔐ'
-'ᔥ' + any(VowelKeys) > index(SHZHShortVowels,1)
+'ᔥ' + any(VowelKeys) > index(SHZHShortVowels,2)
 any(SHZHShortVowels) + any(VowelKeys) > index(SHZHLongVowels,1)
 any(SHZHLongVowels) + [K_BKSP] > index(SHZHShortVowels,1)
 'ᔥ' + [K_W] > 'ᔗ' c ᔘ right variant
 'ᔗ' + [K_E] > 'ᔗ'
-'ᔗ' + any(VowelKeys) > index(LSHZHWShortVowels,1)
+'ᔗ' + any(VowelKeys) > index(LSHZHWShortVowels,2)
 any(LSHZHWShortVowels) + any(VowelKeys) > index(LSHZHWLongVowels,1)
 any(LSHZHWLongVowels) + [K_BKSP] > index(LSHZHWShortVowels,1)
 
 + [K_Y] > 'ᔾ'
 'ᔾ' + [K_E] > 'ᔦ'
-'ᔾ' + any(VowelKeys) > index(YShortVowels,1)
+'ᔾ' + any(VowelKeys) > index(YShortVowels,2)
 any(YShortVowels) + any(VowelKeys) > index(YLongVowels,1)
 any(YLongVowels) + [K_BKSP] > index(YShortVowels,1)
 'ᔾ' + [K_W] > 'ᔯ' c right variant ᔰ
 'ᔯ' + [K_E] > 'ᔯ'
-'ᔯ' + any(VowelKeys) > index(LYWShortVowels,1)
+'ᔯ' + any(VowelKeys) > index(LYWShortVowels,2)
 any(LYWShortVowels) + any(VowelKeys) > index(LYWLongVowels,1)
 any(LYWLongVowels) + [K_BKSP] > index(LYWShortVowels,1)
 
 + [K_W] > 'ᐤ'
 + [SHIFT K_W] > 'ᣜ' c right variant ᣝ
-'ᐤ' + any(VowelKeys) > index(WShortVowels,1)
-any(WShortVowels) + any(VowelKeys) > index(WLongVowels,1)
-any(WLongVowels) + [K_BKSP] > index(WShortVowels,1)
+'ᐤ' + [K_E] > 'ᐌ' c right variant ᐍ
+'ᐤ' + any(VowelKeys) > index(LWShortVowels,2)
+any(LWShortVowels) + any(VowelKeys) > index(LWLongVowels,1)
+any(LWLongVowels) + [K_BKSP] > index(LWShortVowels,1)
+
+c punctuation
++ '.' > '᙮'
++ [K_LBRKT] > deadkey(Deadkey) 
 
