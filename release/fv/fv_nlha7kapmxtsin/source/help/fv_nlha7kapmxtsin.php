@@ -28,6 +28,9 @@ This keyboard is designed for the <b>Nlha7kapmxtsin</b> language of the BC Inter
 								<li>To type the low line accent use the Right Bracket Key ] — g̱ is typed g then Right Bracket ]</li>
 							</ul>
 						<li>The original values of the punctuation keys can be typed by holding down the Right-Alt or Option key. The Slash / is typed Right-Alt+Slash (Windows) Option+Slash (Mac).</li>
+							<ul>
+                  				<li><b>NOTE</b>: To type / while using Google Drive, use <strong>shift</strong>, <strong>Right-Alt</strong>, then <strong>Slash /</strong></li>
+              				</ul>
 					</ul>
 					<h2>Unicode Fonts</h2>
 						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
