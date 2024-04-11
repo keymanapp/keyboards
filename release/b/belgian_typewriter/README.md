@@ -5,8 +5,7 @@ Belgian (Typewriter) keyboard
 
 Description
 -----------
-
-Belgian Typewriter layout
+Belgian (Typewriter) keyboard layout.
 
 Links
 -----
