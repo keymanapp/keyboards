@@ -1,14 +1,13 @@
-Taigi_telex2 keyboard
+Taigi SDWXV keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
-Taigi_telex2 generated from template
+Taigi SDWXV for Tâi-gí (Taiwanese) pe̍h-ōe-jī.
 
 Links
 -----
+https://keyman.com/keyboards/taigi_sdwxv
 
 Copyright
 ---------

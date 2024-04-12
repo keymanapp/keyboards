@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Taigi SDWXV</title>
-  <style type="text/css">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-  </style>
-</head>
-<body>
-
-<h1>Start Using nguphing</h1>
+<?php 
+  $pagename = 'Taigi SDWXV Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
+?>
 
 <p>
     Taigi SDWXV for Tâi-gí (Taiwanese) pe̍h-ōe-jī.
@@ -38,18 +30,13 @@
 <h1>Keyboard Layout</h1>
 
 <p><b>Unshifted</b></p>
-<img src='taigitelexU_.png' alt='Keyboard Layout'>
+<img src='taigi_sdwxvU_.png' alt='Keyboard Layout'>
 <p><b>Shifted</b></p>
-<img src='taigitelexU_S.png' alt='Keyboard Layout'>
+<img src='taigi_sdwxvU_S.png' alt='Keyboard Layout'>
 <p><b>Phone Default</b></p>
-<img src='taigitelex_.png' alt='Keyboard Layout'>
+<img src='taigi_sdwxv_.png' alt='Keyboard Layout'>
 <p><b>Phone Shifted</b></p>
-<img src='taigitelex_S.png' alt='Keyboard Layout'>
+<img src='taigi_sdwxv_S.png' alt='Keyboard Layout'>
 <p><b>Phone Numeric</b></p>
-<img src='taigitelex_N.png' alt='Keyboard Layout'>
+<img src='taigi_sdwxv_N.png' alt='Keyboard Layout'>
 
-
-<p>© 2024 cathaylab</p>
-
-</body>
-</html>
