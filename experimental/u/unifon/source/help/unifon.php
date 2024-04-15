@@ -9,7 +9,7 @@
 
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the Unifon aphabet.
+This keyboard is designed for the Unifon aphabet. It is using a custom encoding.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

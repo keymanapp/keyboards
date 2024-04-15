@@ -6,7 +6,7 @@ Unifon keyboard
 Description
 -----------
 
-This keyboard is designed for the Unifon alphabet.
+This keyboard is designed for the Unifon alphabet. It is using a custom encoding.
 
 Links
 -----
