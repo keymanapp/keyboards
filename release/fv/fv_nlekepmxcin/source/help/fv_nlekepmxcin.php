@@ -18,7 +18,7 @@ This keyboard is designed for the <b>Nɬeʔkepmxcín</b> language of the BC Inte
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="Nlekepmxcin.png" alt="" height="198" width="514" border="0" /></h2>
+<img src="fv_nlekepmxcin_U_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 						<li>The special characters of Nɬeʔkepmxcín have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyoards keep its original numbers</li>
 						<li>All accents are typed after the base character: á is typed a then Semicolon ;</li>
