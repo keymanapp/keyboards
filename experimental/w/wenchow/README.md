@@ -1,14 +1,13 @@
-wenchow keyboard
+Wenchow keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
-wenchow generated from template
+Wenchow for üe-tsiu-ó.
 
 Links
 -----
+https://keyman.com/keyboards/wenchow
 
 Copyright
 ---------
