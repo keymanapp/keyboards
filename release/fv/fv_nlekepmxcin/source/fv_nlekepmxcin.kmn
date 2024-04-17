@@ -151,7 +151,7 @@ store(&LAYOUTFILE) 'fv_nlekepmxcin.keyman-touch-layout'
 'Ị' + [T_ACU] > U+1ECA U+0301 layer('default') c 'Ị́'
 
 store(CACommaKey) [T_R] [SHIFT T_R]
-store(NeedsCAComma) 'cklmnpqtwyzɣCKLMNPQTWYZƔʕ' 
+store(NeedsCAComma) 'cklmnpqtwyzɣθCKLMNPQTWYZƔΘʕ' 
 any(NeedsCAComma) + any(CACommaKey) > index(NeedsCAComma,1) U+0313
 
 store(BelowDotKey) [T_V] [SHIFT T_V]
@@ -176,6 +176,7 @@ store(topaccent)  U+0300 U+0301 U+0313
 store(topaccentkey) "`;'"          
 
 any(topaccent) + any(topaccentkey) > context beep
+any(HasAcute) + any(topaccentkey) > context beep
 
 store(lowaccent) U+0323 
 any(lowaccent) + "1" > context beep
