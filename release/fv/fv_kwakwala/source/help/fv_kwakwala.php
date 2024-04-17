@@ -27,7 +27,7 @@ This keyboard is designed for the <b>Kwak̕wala</b> language of the BC Coast reg
 								<strong>k̓</strong> is typed <strong>k</strong> then <strong>/</strong></li>
 						<li>To type the glottalized accent when it appears between two letters use the <strong>right bracket key ]</strong><br /> <strong>k̕w</strong> is typed <strong>k</strong> then <strong>]</strong> then <strong>w</strong></li>
 						<li>To type the underline accent use the <strong>semicolon key ;</strong><br /> <strong>ḵ</strong> is typed <strong>k</strong> then <strong>;</strong></li>
-						<li>To type the slash-ł use the <strong>left bracket key ]</strong></li>
+						<li>To type the slash-ł use the <strong>left bracket key [</strong></li>
 						<li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. To get the original value of the left-bracket [ type Right-Alt+Left-Bracket (Windows) Option+Left-Bracket (Mac).</li>
             <ul>
                   <li><b>NOTE</b>: To type / while using Google Drive, use <strong>shift</strong>, <strong>Right-Alt</strong>, then <strong>Slash /</strong></li>
