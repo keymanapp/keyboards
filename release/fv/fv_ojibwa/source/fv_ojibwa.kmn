@@ -2,7 +2,7 @@
 store(&KEYBOARDVERSION) '10.0'
 store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "ojb"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᐊᓂᔑᓇᐯᒧᐎᓐ'
 store(&VISUALKEYBOARD) 'fv_ojibwa.kvks'
 
@@ -42,6 +42,7 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [SHIFT T_C] > 'ᐤ' layer('default')
 + [SHIFT T_V] > 'ᐦ' layer('default')
 + [SHIFT T_B] > 'ᐞ' layer('default')
++ [SHIFT T_N] > 'ᣜ'
 + [T_Q] > 'ᐃ'
 + [T_W] > 'ᐱ'
 + [T_E] > 'ᑎ'
@@ -184,6 +185,7 @@ c Standalone Vowels
 'ᐅ' + [K_O] > 'ᐆ'
 + 'a' > 'ᐊ'
 'ᐊ' + [K_A] > 'ᐋ'
+'ᐁ' + [K_W] > 'ᐌ'
 any(ShortVowels) + [K_W] > index(LWShortVowels,1)
 any(LongVowels) + [K_W] > index(LWLongVowels,1)
 
@@ -328,5 +330,7 @@ any(LWLongVowels) + [K_BKSP] > index(LWShortVowels,1)
 
 c punctuation
 + '.' > '᙮'
++ [RALT K_PERIOD] > '.'
 + [K_LBRKT] > deadkey(Deadkey) 
++ [RALT K_LBRKT] > '['
 
