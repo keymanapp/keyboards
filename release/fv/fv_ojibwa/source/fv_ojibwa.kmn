@@ -175,7 +175,6 @@ store(LYWLongVowels) 'ᔳᔷᔻ'
 store(RYWShortVowels) 'ᔲᔶᔺ'
 store(RYWLongVowels) 'ᔴᔸᔼ'
 
-
 c Standalone Vowels
 
 + 'e' > 'ᐁ'
@@ -192,9 +191,10 @@ any(LongVowels) + [K_W] > index(LWLongVowels,1)
 c Standalone Consonants
 
 + 'h' > 'ᐦ'
++ [K_L] > 'ᓫ'
 + [SHIFT K_L] > 'ᓬ'
++ [K_R] > 'ᕑ'
 + [SHIFT K_R] > 'ᕒ'
-
 
 c Syllable Building
 + [K_B] > 'ᑉ'
@@ -267,26 +267,6 @@ any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
 'ᓋ' + [K_A] > 'ᓍ' c right variant ᓎ
 'ᓎ' + [K_BKSP] > 'ᓋ'
 
-+ [K_L] > 'ᓫ'
-'ᓫ' + [K_E] > 'ᓀᓫ'
-'ᓫ' + any(VowelKeys) > index(NShortVowels,2)'ᓫ'
-'ᓂᓫ' + [K_I] > 'ᓃᓫ'
-'ᓄᓫ' + [K_O] > 'ᓅᓫ'
-'ᓇᓫ' + [K_A] > 'ᓈᓫ'
-'ᓃᓫ' + [K_BKSP] > 'ᓂᓫ'
-'ᓅᓫ' + [K_BKSP] > 'ᓄᓫ'
-'ᓈᓫ' + [K_BKSP] > 'ᓇᓫ'
-
-+ [K_R] > 'ᕑ'
-'ᕑ' + [K_E] > 'ᓀᕑ'
-'ᕑ' + any(VowelKeys) > index(NShortVowels,2)'ᕑ'
-'ᓂᕑ' + [K_I] > 'ᓃᕑ'
-'ᓄᕑ' + [K_O] > 'ᓅᕑ'
-'ᓇᕑ' + [K_A] > 'ᓈᕑ'
-'ᓃᕑ' + [K_BKSP] > 'ᓂᕑ'
-'ᓅᕑ' + [K_BKSP] > 'ᓄᕑ'
-'ᓈᕑ' + [K_BKSP] > 'ᓇᕑ'
-
 + [K_S] > 'ᔅ'
 + [K_Z] > 'ᔅ'
 'ᔅ' + [K_E] > 'ᓭ'
@@ -334,3 +314,5 @@ c punctuation
 + [K_LBRKT] > deadkey(Deadkey) 
 + [RALT K_LBRKT] > '['
 
+store(nul) 'qudfxvQUDFXV'
++ any(nul) > nul
