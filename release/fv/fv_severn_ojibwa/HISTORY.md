@@ -1,5 +1,10 @@
 ᐊᓂᔑᓂᓂᒧᐎᐣ Change History
 ============================
+10.0 (18 Apr 2024)
+-----------------
+* Added desktop layout
+* Added w final variant to mobile layout
+
 9.3.1 (25 Oct 2023)
 -----------------
 * Changed order of mobile layers to unscramble display on help page
