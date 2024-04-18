@@ -1,6 +1,11 @@
 Naija Type Keyboard Change History
 =======================
 
+April 2024
+----------
+* v52-56 Added Cicipu slash o.
+
+
 October 2022
 ------------
 * v49 Removed deprecated language features. Added Alt alternative (Alt/backslash) for vertical line above letter. Re-ordered code.
