@@ -1,6 +1,16 @@
 BJ-OjiCree (Kingfisher) Change History
 =======================
 
+9.2.0 (21 Feb 2024)
+-------------------
+* Fixed a bug related to NFC and long vowels
+* Added behavior for backspace on a long vowel to produce 
+  the short vowel and not delete the whole character.
+
+9.1.1 (30 Oct 2023)
+-------------------
+* Updated font to better support the Cans script
+
 9.1 (2 Aug 2022)
 -------------------
 * Convert keyboard to produce composed characters with decomposed available through options

@@ -1,5 +1,5 @@
 ﻿<?php 
-  $pagename = 'Anii_2015_fr Keyboard Help';
+  $pagename = 'Anii_2015_fr (deprecated) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');

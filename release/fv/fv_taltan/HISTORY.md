@@ -1,5 +1,14 @@
 Tāłtān Change History
 ============================
+9.1.5 (8 Sep 2023)
+-------------------
+* Changed to single code point output where possible
+* Updated and simplified rules
+* Centered mobile keyboard
+
+9.1.4 (6 Mar 2023)
+-------------------
+* Fix FirstVoices website links
 
 9.1.3 (13 May 2022)
 -------------------

@@ -1,9 +1,7 @@
 N'Ko Phonetic keyboard
 ==============
 
-(c) 2012-2020 Michael Everson and SIL International
-
-Version 1.3
+(c) Michael Everson and SIL International
 
 Description
 -----------

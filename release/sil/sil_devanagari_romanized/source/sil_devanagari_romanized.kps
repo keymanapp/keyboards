@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.286.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Devanagari Romanized (SIL)</Name>
-    <Copyright URL="">© 2015-2022 SIL International</Copyright>
+    <Copyright URL="">© 2015-2023 SIL International</Copyright>
     <Author URL="">SIL</Author>
     <Version URL=""></Version>
     <WebSite URL="https://nepal.sil.org/">https://nepal.sil.org/</WebSite>
@@ -35,18 +35,6 @@
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>fonts\AnnapurnaSIL-Nepal-Bold.ttf</Name>
-      <Description>Font Annapurna SIL Nepal Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>fonts\AnnapurnaSIL-Nepal-Regular.ttf</Name>
-      <Description>Font Annapurna SIL Nepal</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\sil_devanagari_romanized.js</Name>
@@ -96,14 +84,50 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Bold.ttf</Name>
+      <Description>Font Annapurna SIL Nepal Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Regular.ttf</Name>
+      <Description>Font Annapurna SIL Nepal</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Devanagari Romanized (SIL)</Name>
       <ID>sil_devanagari_romanized</ID>
-      <Version>1.7</Version>
-      <OSKFont>fonts\AnnapurnaSIL-Nepal-Regular.ttf</OSKFont>
-      <DisplayFont>fonts\AnnapurnaSIL-Nepal-Bold.ttf</DisplayFont>
+      <Version>1.7.1</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Bold.ttf</DisplayFont>
       <Languages>
         <Language ID="ne">Nepali (macrolanguage)</Language>
         <Language ID="aph">Athpariya</Language>

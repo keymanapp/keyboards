@@ -11,6 +11,12 @@ function regression_build {
   local SHOULD_BUILD_PACKAGES="$1"
   local SHOULD_DECOMP="$2"
   local SHOULD_ZIP="$3"
+  local SHOULD_CLEAN="$4"
+  local USE_LEGACY_COMPILER="$5"
+  local OUTPUT_PATH=
+  if [[ $# -gt 5 ]]; then
+    OUTPUT_PATH="$6"
+  fi
   local BUILDPATH=
   local BUILDTARGET="-T kmn"
   local DEBUGBUILD=
@@ -43,6 +49,10 @@ function regression_build {
   #
 
   local OUTPUT="$KEYBOARDROOT/output/$KMCOMP_VERSION"
+  if [[ ! -z "$OUTPUT_PATH" ]]; then
+    OUTPUT="$OUTPUT_PATH"
+  fi
+
   rm -rf "$OUTPUT"
   mkdir -p "$OUTPUT"
 
@@ -54,14 +64,24 @@ function regression_build {
   local NO_COMPILER_VERSION=
   $KMCOMP_LAUNCHER "$KMCOMP" | grep -- '-no-compiler-version' && NO_COMPILER_VERSION=-no-compiler-version
 
+  local USE_LEGACY_COMPILER_FLAG=
+  if $USE_LEGACY_COMPILER; then
+    $KMCOMP_LAUNCHER "$KMCOMP" | grep -- '-use-legacy-compiler' && USE_LEGACY_COMPILER_FLAG=-use-legacy-compiler
+  fi
+  set -o pipefail
+
   if [ ! -z "$BUILDPATH" ]; then
-    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+    if $SHOULD_CLEAN; then
+      "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c $BUILDPATH 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+    fi
     "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET $BUILDPATH 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
   else
-    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c release 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
-    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler -c experimental 2>&1 | tee -a "$OUTPUT/clean.log" || die "Unable to clean keyboards"
-    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET release 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
-    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION -no-update-compiler $DEBUGBUILD $BUILDTARGET experimental 2>&1 | tee -a "$OUTPUT/build.log" || die "Unable to build keyboards"
+    if $SHOULD_CLEAN; then
+      "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION $USE_LEGACY_COMPILER_FLAG -no-update-compiler -c release 2>&1 | tee "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+      "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION $USE_LEGACY_COMPILER_FLAG -no-update-compiler -c experimental 2>&1 | tee -a "$OUTPUT/clean.log" || die "Unable to clean keyboards"
+    fi
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION $USE_LEGACY_COMPILER_FLAG -no-update-compiler $DEBUGBUILD $BUILDTARGET release 2>&1 | tee "$OUTPUT/build.log" || die "Unable to build keyboards"
+    "$KEYBOARDROOT/build.sh" -no-color $NO_COMPILER_VERSION $USE_LEGACY_COMPILER_FLAG -no-update-compiler $DEBUGBUILD $BUILDTARGET experimental 2>&1 | tee -a "$OUTPUT/build.log" || die "Unable to build keyboards"
   fi
 
   #

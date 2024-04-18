@@ -21,9 +21,7 @@ technologies to support the need to position arbitrary combinations of
 *Ethiopic* base glyphs and combining marks optimally. It also supports
 almost 200 kerning pairs. This version of the font also supports Character 
 Variants (OpenType) or Features (Graphite) which make glyph alternates 
-available for a number of Ethiopic and punctuation characters. See the 
-AbyssinicaSILFontFeatures.pdf, for details on applications which support 
-Character Variants and how to access them.
+available for a number of Ethiopic and punctuation characters. 
 
 One font from this typeface family is included in this release:
 
@@ -56,14 +54,22 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-9 June 2021 (WSTech Team) Abyssinica SIL version 2.100
+### 23 June 2023 (WSTech Team) Abyssinica SIL version 2.201
+- Fixed bug in TypeTuner support for cv46 tswa alternate
+
+### 16 November 2022 (WSTech Team) Abyssinica SIL version 2.200
+- Adjusted width of U+2008 PUNCTUATION SPACE to match full stop
+- Adjusted design of U+1395 ETHIOPIC TONAL MARK KENAT
+- Fixed inconsistency between Graphite and OpenType support for cv46 tswa alternate
+
+### 9 June 2021 (WSTech Team) Abyssinica SIL version 2.100
 - Added U+1E7E0..U+1E7E6, U+1E7E8..U+1E7EB, U+1E7ED..U+1E7EE, U+1E7F0..U+1E7FE
 - Modified a few kerning pairs and added kerning pairs for some of the new characters
 - Changed Latin digits (for use in Ethiopic) to use a serif style
 - Modified Ethiopic digits to have a more consistent size
 - Added cv02 to support digits with connecting above and below lines
 
-11 September 2019 (Sharon Correll) Abyssinica SIL version 2.000
+### 11 September 2019 (Sharon Correll) Abyssinica SIL version 2.000
 - Added U+02D0, U+034F, U+2423, U+25CA
 - Improved design of U+1256 so the top flag touches
 - Improved design of U+1368 to fit the design of the font better
@@ -74,7 +80,7 @@ ChangeLog
 - Slight change to line spacing to make it consistent across applications
 - Unencoded most PUA characters as they are supported through Character Variants
 
-13 December 2013 (Lorna Priest Evans) Abyssinica SIL version 1.500
+### 13 December 2013 (Lorna Priest Evans) Abyssinica SIL version 1.500
 - Improved design of U+1396 and U+1399 (metrics changed for these characters)
 - Added character variants
 - Added variant glyphs for U+2D93..U+2D96 (for Blin)
@@ -82,15 +88,15 @@ ChangeLog
 - Changed Graphite feature identifiers from integers to 4-character 
   alphanumeric tags
 
-13 December 2010 (Lorna Priest) Abyssinica SIL version 1.200
+### 13 December 2010 (Lorna Priest) Abyssinica SIL version 1.200
 - Updated for Unicode 6.0 (U+AB00..U+AB2F)
 - Added Stylistic Sets and Graphite Features
 - Removed AAT support
 
-1 June 2006 (Jonathan Kew)
+### 1 June 2006 (Jonathan Kew)
 - AAT source added
 
-25 May 2006 (SIL NRSI team)  Abyssinica SIL version 1.0
+### 25 May 2006 (SIL NRSI team)  Abyssinica SIL version 1.0
 - First version released under the SIL Open Font License
 
 
@@ -111,6 +117,27 @@ your contribution. To read more about this requirement and find out how to
 submit the required form, please visit the CLA information page
 (https://software.sil.org/fontcla).
 
+There are a few unencoded glyphs that remain in the font. These have been left in
+case they are ever required. However, here are the comments from Daniel Yacob:
+U+E070..U+E072 - They did show up in a fax from the Agew administrative
+         region in 1998 when we were researching unencoded letters at the time. They appeared
+         in a table with no explanation. They also appeared in Dr Alamiraw Gebrehiwot's work.
+         According to Dr Alimiraw these letters would be used for
+         “the voice of the bird”, and E071 would be in ejaculation when someone is surprised.
+         E071 is not a variant of U+12CF. Seems like these letters might be most useful for
+         children’s stories. We decided we would have to wait to see them gain wider spread and
+         firmly established use before encoding.
+U+E493 - I’ve seen this in a few references for Amharic (such as the LoC 
+         reference which predates Me’en orthography) as YWAA but the only 
+         word examples are a bit contrived.
+U+E494 - Like roman numerals, Ethiopic can have a bar above and below spanning the
+         length of the number sequence. So ፲ and ፻ together as what appears to be a single unit is
+         somewhat arbitrary, its only interesting since it presents a missing order of “10” in the
+         Ethiopic number symbols. Every grouping of two numbers would appear as a single
+         character, like wise for 3, 4, etc. Its not part of cannon, I wish it was along with an
+         Ethiopic zero. (still encoded in PUA)
+U+E496 - It still hasn’t caught on to far. Perhaps once Ethiopia enters the WTO and
+         society really starts to implement new IP laws. (still encoded in PUA)
 
 Acknowledgements
 ----------------
@@ -120,32 +147,32 @@ be sure to add your name (N), email (E), web-address (W) and description
 
 N: Walt Agee
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Designer
 
 N: Sharon Correll
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: OpenType and Graphite support
 
 N: Lorna Evans
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Contributed some extended Ethiopic glyphs and OpenType and Graphite work
 
 N: Victor Gaultney
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Designer
 
 N: Annie Olsen
 E: fonts@sil.org
-W: http://scripts.sil.org/
+W: https://software.sil.org/wstech/
 D: Designer
 
 N: Daniel Yacob
 E: yacob@geez.org
-W: http://www.geez.org/, https://github.com/geezorg
+W: https://www.geez.org/, https://github.com/geezorg
 D: Font designer, contributed significant input on the design of extended Ethiopic
 
 N: Kjell Magne Yri
@@ -155,6 +182,6 @@ The Abyssinica SIL project is maintained by SIL International.
 
 For more information please visit the Abyssinica SIL page on SIL International's
 Computers and Writing systems website:
-http://software.sil.org/abyssinica
+https://software.sil.org/abyssinica
 
 Or send an email to <fonts AT sil DOT org>

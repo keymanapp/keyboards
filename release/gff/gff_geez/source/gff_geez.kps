@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.277.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -13,18 +13,18 @@
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder>GFF Ge'ez Keyboard</Folder>
+    <Folder>GFF Geʾez Keyboard</Folder>
     <AddUninstallEntry/>
     <Items>
       <Item>
-        <Name>Ge'ez Keyboard</Name>
+        <Name>Geʾez Keyboard</Name>
         <FileName>(Start Product)</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
-        <Name>Ge'ez Keyboard Manual</Name>
+        <Name>Geʾez Keyboard Manual</Name>
         <FileName>GeezTyping-English.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
@@ -48,9 +48,9 @@
   </StartMenu>
   <Info>
     <Version URL=""></Version>
-    <Name URL="">GFF Ge'ez Keyboard</Name>
-    <Copyright URL="">© 2009-2021 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Name URL="">GFF Geʾez Keyboard</Name>
+    <Copyright URL="">© 2009-2023 Geʾez Frontier Foundation</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
   </Info>
   <Files>
@@ -68,7 +68,7 @@
     </File>
     <File>
       <Name>..\build\gff_geez.kmx</Name>
-      <Description>Keyboard Ge'ez</Description>
+      <Description>Keyboard Geʾez</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
@@ -77,12 +77,6 @@
       <Description>File GeezTyping-English.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
-      <Description>Font Brana Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\OFL.txt</Name>
@@ -103,6 +97,18 @@
       <FileType>.htm</FileType>
     </File>
     <File>
+      <Name>AbbaGarima-Regular.ttf</Name>
+      <Description>Font Abba Garima Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
+      <Description>Font Brana Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>    
+    <File>
       <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
       <Description>Font Abyssinica SIL</Description>
       <CopyLocation>0</CopyLocation>
@@ -115,19 +121,25 @@
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\build\gff_geez.js</Name>
-      <Description>File gff_geez.js</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternate1-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate 1</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternate2-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate 2</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>ግዕዝ (Ge'ez)</Name>
+      <Name>ግዕዝ (Geʾez)</Name>
       <ID>gff_geez</ID>
-      <Version>1.6</Version>
+      <Version>2.0</Version>
       <Languages>
-        <Language ID="gez-Ethi">Geez</Language>
+        <Language ID="gez">Geez</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

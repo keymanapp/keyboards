@@ -1,10 +1,7 @@
-Dënesųłıné keyboard
+Dɛnɛsųłiné keyboard
 ======================
 
-Copyright (c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
-
-
-Dënesųłıné keyboard layout for Unicode
+Dɛnɛsųłiné keyboard layout for Unicode
 
 Links
 -----
@@ -22,7 +19,3 @@ Supported Platforms
  * Web
  * Mobile
 
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)

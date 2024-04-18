@@ -1,0 +1,48 @@
+﻿c A keyboard for phonemic (broad) transcription of Australian accented English using the Harrington/Cox/Evans (HCE) system.
+store(&VERSION) '9.0'
+store(&NAME) 'ausephon'
+store(&COPYRIGHT) '© Kym Barron & Ben Hinton'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'ausephon.kvks'
+store(&LAYOUTFILE) 'ausephon.keyman-touch-layout'
+store(&KEYBOARDVERSION) '10.1'
+store(&BITMAP) 'ausephon.ico'
+store(nooutput) 'QWRUPFGHJKLXCVBM' c Supress these capital letters. Expert advice from DavidLRowe suggests this reserves them so we can add more IPA characters later.
+begin Unicode > use(main)
+group(main) using keys
++ any(nooutput) > nul
+'`' + [K_R] > 'ɹ' U+0329 c syllabic consonant marker understroke or diacritic for 'ɹ'
+'`' + [K_L] > 'l' U+0329 c syllabic consonant marker understroke or diacritic for 'l'
+'`' + [K_M] > 'm' U+0329 c syllabic consonant marker understroke or diacritic for 'm'
+'`' + [K_N] > 'n' U+0329 c syllabic consonant marker understroke or diacritic for 'n'
++ [K_HYPHEN] > 'ˈ' c stressed syllable marker
++ [SHIFT K_HYPHEN] > 'ˌ' c unstressed syllable marker
++ [K_Q] > 'ɜ'
++ [SHIFT K_E] > 'ə'
++ [K_R] > 'ɹ'
++ [SHIFT K_T] > U+0074 U+0361 U+0283 c 't͡ʃ'
++ [K_Y] > 'θ'
++ [SHIFT K_Y] > 'ð'
++ [K_U] > 'ɐ'
++ [SHIFT K_I] > 'i'
++ [K_I] > 'ɪ'
++ [K_O] > 'ɔ'
++ [SHIFT K_O] > 'o'
++ [K_A] > 'æ'
++ [SHIFT K_A] > 'ɑ'
++ [SHIFT K_S] > 'ʃ'
++ [SHIFT K_D] > U+0064 U+0361 U+0292 c 'd͡ʒ'
++ [K_G] > 'ɡ'
++ [K_COLON] > U+02D0 c length sign or triangular colon U+02D0
++ [K_QUOTE] > U+0294 c glottal plosive or stop U+0294
++ [SHIFT K_Z] > 'ʒ'
++ [K_X] > 'ʊ'
++ [K_C] > 'ʉ'
++ [SHIFT K_N] > 'ŋ'
++ [K_COMMA] > '<'
++ [K_PERIOD] > '>'
++ [K_BKSLASH] > '.'
++ [K_BKQUOTE] > '̩' c @K...pardon my ignorance... but what does this do?
+c Added for touch screen
++ [T_TESH] > 't͡ʃ' c U+0074 U+0361 U+0283 c U_0074_0361_0283
++ [T_DEZH] > 'd͡ʒ' c U+0064 U+0361 U+0292 c U_0064_0361_0292

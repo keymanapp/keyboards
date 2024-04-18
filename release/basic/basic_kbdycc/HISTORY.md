@@ -1,6 +1,10 @@
 Serbian (Cyrillic) Basic Change History
 =======================================
 
+1.2.2 (2022-12-05)
+----------------
+* Update dk documentation
+
 1.2.1 (2020-10-28)
 ----------------
 * Increment version number to force recompile of touch layout.

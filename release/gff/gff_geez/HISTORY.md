@@ -1,4 +1,20 @@
-# ግዕዝ (Ge'ez) Change History
+# ግዕዝ (Geʾez) Change History
+
+## 2023-07-18 2.0.1
+* Removing gff_geez.js from package to avoid mobile platform listings.
+
+## 2023-07-10 2.0
+* Vowel composition synched with other GFF keyboard revisions.
+* Smart punctuation composition added.
+* Mobile keyboard removed.
+* Abyssinica SIL Alternate 1 and 2 fonts are added.
+* Syllable composition uses lowercase-only vowels (experimental).
+
+## 2022-10-17 1.7
+* Inclusion of the Abba Garima font.
+* Sequences to support typing EMUFI elements used by the Abba Garima font.
+* Removed spurious ኧ from a longpress.
+* Fixed Tebek insertion after Zaima Qirtse (started in Keyman v14).
 
 ## 2021-07-21 1.6
 * Addition of mobile and layouts.

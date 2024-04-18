@@ -1,5 +1,5 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.1"
+store(&KEYBOARDVERSION) '9.1.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "ncg"
 store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
@@ -16,7 +16,7 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-store(&LAYOUTFILE) "fv_nisgaa.keyman-touch-layout"
+store(&LAYOUTFILE) 'fv_nisgaa.keyman-touch-layout'
 
 + [SHIFT T_Q] > 'Ḵ' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
@@ -147,5 +147,3 @@ nomatch > use(x)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)

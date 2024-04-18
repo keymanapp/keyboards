@@ -1,9 +1,9 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1.3"
+store(&KEYBOARDVERSION) '9.1.5'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "tht"
-store(&COPYRIGHT) "© 2008-2022 FirstVoices, SIL International. Portions © 2006 Chris Harvey"
-store(&NAME) 'Tāłtān'
+store(&COPYRIGHT) "© 2008-2023 FirstVoices, SIL International. Portions © 2006 Chris Harvey"
+store(&NAME) 'Tāłtān'
 store(&VISUALKEYBOARD) 'fv_taltan.kvks'
 store(&BITMAP) 'fv_taltan.ico'
 store(&KMW_HELPFILE) 'fv_taltan_help.htm'
@@ -12,37 +12,41 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+c --- TOUCH AND DESKTOP STORES ---
+store(NeedsMacron) 'aeiouAEIOU'
+store(HasMacron) 'āēīōūĀĒĪŌŪ'
+store(Macron) [T_R] [SHIFT T_R] [K_SLASH]
+store(NeedsMacronB) 'szSZ'
+store(MacronB) [T_X] [SHIFT T_X] [K_LBRKT]
+store(Backspace) [K_BKSP]
+
+any(NeedsMacron) + any(Macron) > index(HasMacron,1)
+any(NeedsMacronB) + any(MacronB) > index(NeedsMacronB,1) U+0331
+any(HasMacron) + any(Backspace) > index(NeedsMacron,1)
+
 c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_taltan.keyman-touch-layout'
 
+c --- Mobile Stores and Rules ---
+
 + [SHIFT T_Q_0] > '!' layer('default')
 + [SHIFT T_Q] > '?' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'Ē' layer('default')
++ [SHIFT T_E_0] > 'Ē' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-'o' + [SHIFT T_R] > 'ō'
-'I' + [SHIFT T_R] > 'Ī'
-'E' + [SHIFT T_R] > 'Ē'
-'A' + [SHIFT T_R] > 'Ā'
-'u' + [SHIFT T_R] > 'ū'
-'O' + [SHIFT T_R] > 'Ō'
-'e' + [SHIFT T_R] > 'ē'
-'a' + [SHIFT T_R] > 'ā'
-'i' + [SHIFT T_R] > 'ī'
-'U' + [SHIFT T_R] > 'Ū'
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ū' layer('default')
++ [SHIFT T_U_0] > 'Ū' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Ī' layer('default')
++ [SHIFT T_I_0] > 'Ī' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O_0] > 'Ō' layer('default')
++ [SHIFT T_O_0] > 'Ō' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
-+ [SHIFT T_A_0] > 'Ā' layer('default')
++ [SHIFT T_A_0] > 'Ā' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S_0] > 'S̱' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
@@ -53,15 +57,10 @@ store(&LAYOUTFILE) 'fv_taltan.keyman-touch-layout'
 + [SHIFT T_J] > 'J' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON_0] > ':' layer('default')
-+ [SHIFT T_COLON_1] > '"' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
 + [SHIFT T_COLON] > "'" layer('default')
-+ [SHIFT T_Z_0] > 'Ẕ' layer('default')
++ [SHIFT T_Z_0] > 'Ẕ' layer('default')
 + [SHIFT T_Z] > 'Z' layer('default')
-'Z' + [SHIFT T_X] > 'Ẕ'
-'S' + [SHIFT T_X] > 'S̱'
-'z' + [SHIFT T_X] > 'ẕ'
-'s' + [SHIFT T_X] > 's̱'
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_V_0] > ',' layer('default')
 + [SHIFT T_V] > '.' layer('default')
@@ -71,28 +70,18 @@ store(&LAYOUTFILE) 'fv_taltan.keyman-touch-layout'
 + [T_Q_0] > '!'
 + [T_Q] > '?'
 + [T_W] > 'w'
-+ [T_E_0] > 'ē'
++ [T_E_0] > 'ē'
 + [T_E] > 'e'
-'o' + [T_R] > 'ō'
-'I' + [T_R] > 'Ī'
-'E' + [T_R] > 'Ē'
-'A' + [T_R] > 'Ā'
-'u' + [T_R] > 'ū'
-'O' + [T_R] > 'Ō'
-'e' + [T_R] > 'ē'
-'a' + [T_R] > 'ā'
-'i' + [T_R] > 'ī'
-'U' + [T_R] > 'Ū'
 + [T_T] > 't'
 + [T_Y] > 'y'
-+ [T_U_0] > 'ū'
++ [T_U_0] > 'ū'
 + [T_U] > 'u'
-+ [T_I_0] > 'ī'
++ [T_I_0] > 'ī'
 + [T_I] > 'i'
-+ [T_O_0] > 'ō'
++ [T_O_0] > 'ō'
 + [T_O] > 'o'
 + [T_P] > 'p'
-+ [T_A_0] > 'ā'
++ [T_A_0] > 'ā'
 + [T_A] > 'a'
 + [T_S_0] > 's̱'
 + [T_S] > 's'
@@ -105,12 +94,8 @@ store(&LAYOUTFILE) 'fv_taltan.keyman-touch-layout'
 + [T_L] > 'l'
 + [T_COLON_0] > '"'
 + [T_COLON] > "'"
-+ [T_Z_0] > 'ẕ'
++ [T_Z_0] > 'ẕ'
 + [T_Z] > 'z'
-'Z' + [T_X] > 'Ẕ'
-'S' + [T_X] > 'S̱'
-'z' + [T_X] > 'ẕ'
-'s' + [T_X] > 's̱'
 + [T_C] > 'c'
 + [T_V_0] > ','
 + [T_V] > '.'
@@ -121,22 +106,17 @@ store(&LAYOUTFILE) 'fv_taltan.keyman-touch-layout'
 c --- END OF TOUCH LAYOUT RULES ---
 
 c constraints
-
-store(underaccent) U+0331 c combining macron below
- store(underaccentkey) [K_LBRKT]
-
-store(overaccent)  U+0304   c  macron
-store(overaccentkey)   [k_slash]
-
-any(underaccent) + any(underaccentkey) > context beep
-any(overaccent) + any(overaccentkey) > context beep
-any(underaccent) + any(overaccentkey) > context beep
-any(overaccent) + any(underaccentkey) > context beep
+any(HasMacron) + any(Macron) > context beep
+any(HasMacron) + any(MacronB) > context beep
+U+0304 + any(Macron) > context beep
+U+0304 + any(MacronB) > context beep
+U+0331 + any(Macron) > context beep
+U+0331 + any(MacronB) > context beep
 
 c store(accentkey) [K_equal] [K_Bkquote]  [K_RBRKT]
 store(NumbersAndPunctuation) '°1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
-any(NumbersAndPunctuation) + any(overaccentkey) > context beep
-any(NumbersAndPunctuation) + any(underaccentkey) > context beep
+any(NumbersAndPunctuation) + any(Macron) > context beep
+any(NumbersAndPunctuation) + any(MacronB) > context beep
 
 c original punctuation
 + [RALT K_PERIOD] > '>'
@@ -178,11 +158,9 @@ c language
 + [shift caps k_colon] > "ł"
 + [ncaps K_colon] > "ł"
 + [caps k_colon] > "Ł"
-
-+ [K_slash] >  U+0304   c  macron
-+ [K_LBRKT] > U+0331 c combining macron below
-
++ [K_LBRKT] > U+0331
 + [k_rbrkt] > "·"
+
 match > use(normalize)
 nomatch > use(x)
 
@@ -192,6 +170,3 @@ c any(overaccent) any(underaccent) > context(2) context(1)
 
 
 group(x) using keys
-
-
-

@@ -1,10 +1,7 @@
-Nuučaan̓uł keyboard
+nuučaan̓uł keyboard
 ======================
 
-Copyright (c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
-
-
-Nuučaan̓uł keyboard layout for Unicode
+nuučaan̓uł keyboard layout for Unicode
 
 Links
 -----

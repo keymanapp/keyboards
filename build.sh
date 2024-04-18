@@ -18,6 +18,7 @@ function display_usage {
   echo
   echo "  -no-update-compiler     Don't check kmcomp version or update it before building, unless kmcomp.exe is missing"
   echo "  -force-update-compiler  Redownload and install kmcomp, even if correct version appears already present"
+  echo "  -use-legacy-compiler    Pass -use-legacy-compiler flag to kmcomp"
   echo "  -color, -no-color       Force color or no-color for log messages, if omitted detects from console mode"
   exit 1
 }
@@ -70,6 +71,7 @@ function parse_args {
   START_BASE=
   START_KEYBOARD=
   DO_UPDATE_COMPILER=true
+  USE_LEGACY_COMPILER=
   FORCE_UPDATE_COMPILER=false
 
   local lastkey=
@@ -84,6 +86,9 @@ function parse_args {
           ;;
         -no-update-compiler)
           DO_UPDATE_COMPILER=false
+          ;;
+        -use-legacy-compiler)
+          USE_LEGACY_COMPILER=-use-legacy-compiler
           ;;
         -force-update-compiler)
           FORCE_UPDATE_COMPILER=true

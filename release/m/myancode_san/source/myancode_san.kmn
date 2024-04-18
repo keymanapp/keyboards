@@ -2,9 +2,9 @@
 store(&VERSION) '10.0'
 store(&NAME) 'MyanCode-San'
 store(&COPYRIGHT) '© 2020 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&BITMAP) 'myancode_san.ico'
-store(&TARGETS) 'windows macosx linux web'
+store(&TARGETS) 'web desktop'
 store(&VISUALKEYBOARD) 'myancode_san.kvks'
 c store(&LAYOUTFILE) 'myancode_san.keyman-touch-layout'
 
@@ -12,7 +12,7 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-+ [K_SPACE] > U+0020
+c + [K_SPACE] > U+0020
 
 c numpad
 c numpad key mapping

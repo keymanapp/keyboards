@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'EuroLatin2 Keyboard Help';
-  $pagetitle = 'EuroLatin2 Keyboard Help';
+  $pagename = 'EuroLatin2 (deprecated) Keyboard Help';
+  $pagetitle = 'EuroLatin2 (deprecated) Keyboard Help';
   $keymanpromourl = 'http://eurolatin.keymankeyboards.com';
   $style = <<<MORESTYLES
   

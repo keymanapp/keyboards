@@ -1,14 +1,13 @@
 younger_futhark_short_twig keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
 This keyboard is designed for the Swedish language, using the Runic script (Younger Futhark Short-twig) with an Inscript layout.
 
 Links
 -----
+https://keyman.com/keyboards/younger_futhark_short_twig
 
 Copyright
 ---------

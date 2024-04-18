@@ -1,6 +1,10 @@
 Tchad Keyboard Change History
 =======================
 
+4.3 (3 Jan 2023)
+------------------
+* Added tildes over some vowels in touch layout
+
 4.2.1 (17 Feb 2022)
 ------------------
 * Updated to use font from shared fonts

@@ -1,21 +1,26 @@
 {
   "name": "Amharic",
+  "description": "This is an Amharic (amh, አማርኛ) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.",
   "license": "mit",
-	"description": "This is an Amharic (amh, አማርኛ) language mnemonic input method.  It requires a font supporting Ethiopic script under the Unicode 4.1 standard.",
   "languages": {
     "am": {
       "font": {
         "family": "GeezWeb",
         "source": [
-          "wookianos.woff",
-          "wookianos.ttf",
-          "wookianos.mobileconfig",
-          "ETHIOPI0.eot"
+          "NotoSerifEthiopic-Regular.woff2",
+          "NotoSerifEthiopic-Regular.ttf"
+        ]
+      },
+      "oskFont": {
+        "family": "GeezWebOsk",
+        "source": [
+          "NotoSansEthiopic-Regular.woff2",
+          "NotoSansEthiopic-Regular.ttf"
         ]
       },
       "example": {
         "keys": "Tiena ysTlN",
-        "text": "\u1324\u1293 \u12ED\u1235\u1325\u120D\u129D",
+        "text": "ጤና ይስጥልኝ",
         "note": "\"Hello\""
       }
     }

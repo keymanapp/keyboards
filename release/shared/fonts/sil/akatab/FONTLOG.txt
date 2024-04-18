@@ -17,13 +17,41 @@ of ligatures are handled by the font, provided you are running an application
 that provides an adequate level of support for one of these smart font 
 technologies.
 
+Six weights for this typeface family are included:
+
+     * Akatab Regular
+     * Akatab Medium
+     * Akatab SemiBold
+     * Akatab Bold
+     * Akatab ExtraBold
+	 * Akatab Black
+
 The Latin glyphs are based on the OFL-licensed Source Sans Pro fonts
 (https://github.com/adobe-fonts/source-sans-pro). 
 
+For detailed documentation see the contents of the 'documentation' folder.
 
 ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
+
+09 Feb 2023 (SIL WSTech team) Akatab version 3.000
+- Added 4 weights: Medium, SemiBold, ExtraBold, and Black
+- Added new features: 
+    - Character Variants: cv08-cv15, cv19, cv20, cv41-cv48 
+	- Required Contextual Alternates: rclt 
+	- Required Ligatures: rlig 
+	- Stylistic Sets: ss08-15, ss19, ss20
+- Added UI name strings for Character Variants and Stylistic Sets features
+- Added characters: 
+    - U+2D33 TIFINAGH LETTER YAG
+	- U+2D58 TIFINAGH LETTER AYER YAGH (Adrar yaj, Tuareg staggered five-points)
+	- U+2D64 TIFINAGH LETTER TAWELLEMET YAZ (harpoon yaz)
+- Added 8 variant characters and one right-to-left counterpart
+- Added 9 bi-consonant ligatures, 21 ligature variants and 18 right-to-left counterparts
+- Added glyphs for SIL vowels
+- Fixed advance width of enspace, emspace, threeperemspace, fourperemspace and sixperemspace glyphs
+- Removed Graphite support
 
 15 Feb 2021 (SIL WSTech team) Akatab version 2.000
 - Added Akatab Bold
@@ -92,4 +120,4 @@ E: https://scripts.sil.org/support
 W: https://scripts.sil.org/
 D: Font design, Graphite, OpenType, and TypeTuner code, and build support
 
-The Andika fonts are maintained by SIL International.
+The Akatab fonts are maintained by SIL International.

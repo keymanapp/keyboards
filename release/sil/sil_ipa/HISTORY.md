@@ -1,6 +1,10 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+1.8.7 (2024-03-05)
+------------------
+* Add subscript numerals to underscore rota
+
 1.8.6 (2021-07-01)
 ----------------
 * Updated to use new version of Charis SIL

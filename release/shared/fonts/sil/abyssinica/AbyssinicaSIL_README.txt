@@ -1,5 +1,5 @@
 ﻿README 
-Abyssinica SIL 2.100
+Abyssinica SIL
 ====================
 
 Thank you for your interest in the Abyssinica SIL font.
@@ -13,10 +13,12 @@ Abyssinica SIL is a trademark of SIL International.
 	
 See the OFL and OFL-FAQ for details of the SIL Open Font License.
 See the FONTLOG for information on this and previous releases.
-See the AbyssinicaSILFontFeatures.pdf, or the Abyssinica SIL FAQ 
-(http://software.sil.org/abyssinica/support/faq/) 
-for frequently asked questions and their answers.
 
+For further information about this font, including Unicode ranges
+supported, OpenType font features and how to use them, 
+and licensing, please see the documentation on the website 
+(https://software.sil.org/abyssinica/) or in the documentation 
+subfolder of this font package.
 
 TIPS
 ====
@@ -50,8 +52,18 @@ https://keyman.com/keyboards/sil_ethiopic
 https://keyman.com/keyboards/gff_blin
 https://keyman.com/keyboards/gff_geez
 https://keyman.com/keyboards/gff_amharic
+https://keyman.com/keyboards/gff_amharic_classic
 https://keyman.com/keyboards/gff_tigrinya_ethiopia
 https://keyman.com/keyboards/gff_tigrinya_eritrea
+https://keyman.com/keyboards/gff_harege_fidelat
+https://keyman.com/keyboards/gff_mesobe_fidelat
+https://keyman.com/keyboards/gff_tigre
+https://keyman.com/keyboards/gff_awngi_xamtanga
+https://keyman.com/keyboards/gff_harari
+https://keyman.com/keyboards/gff_gurage
+https://keyman.com/keyboards/gff_gurage_legacy
+https://keyman.com/keyboards/geezbrhan
+
 
 Another method of entering some symbols is provided by a few applications
 such as Adobe InDesign. They can display a glyph palette that shows all the
@@ -62,17 +74,7 @@ Rendering:
 This font is designed to work with either of two advanced font technologies, 
 Graphite or OpenType. To take advantage of the advanced typographic 
 capabilities of this font, you must be using applications that provide an
-adequate level of support for Graphite or OpenType. See "Applications
-that provide an adequate level of support for SIL Latin, Cyrillic, and Greek fonts
-(https://software.sil.org/lcgfonts/support/application-support/).
-
-INSTALLATION AND CONFIGURATION
-==============================
-
-If you are not sure how to install the fonts, please see:
-https://software.sil.org/lcgfonts/resources/installing-and-using-fonts/ for 
-instructions on font installations on various operating systems.
-
+adequate level of support for Graphite or OpenType. 
 
 CONTACT
 ========

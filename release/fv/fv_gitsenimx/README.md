@@ -1,11 +1,7 @@
-Gitsenimx̱ keyboard
+Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ keyboard
 ======================
 
-Copyright (c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey
-
-Version 9.1.1
-
-Gitsenimx̱ keyboard layout for Unicode
+Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ keyboard layout for Unicode
 
 Links
 -----
