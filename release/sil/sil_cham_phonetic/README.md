@@ -1,4 +1,4 @@
-Cham (SIL) keyboard
+Cham Phonetic (SIL) keyboard
 ==============
 
 Description

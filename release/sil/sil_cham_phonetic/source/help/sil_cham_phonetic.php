@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Cham (SIL) Keyboard Help';
+  $pagename = 'Cham Phonetic (SIL) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
