@@ -1,0 +1,138 @@
+﻿c sil_cham generated from template at 2024-04-19 15:40:53
+c with name "Cham (SIL)"
+store(&VERSION) '10.0'
+store(&NAME) 'Cham Phonetic (SIL)'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'sil_cham_phonetic.ico'
+store(&VISUALKEYBOARD) 'sil_cham_phonetic.kvks'
+store(&TARGETS) 'web desktop'
+
+begin Unicode > use(main)
+
+store(IndVowK) 'aiueo'
+store(IndVowU) U+AA00 .. U+AA03 U+AA05
+store(digitK) '0123456789'
+store(digitU) U+AA50 .. U+AA59
+
+group(main) using keys
+
++ any(digitK)  > index(digitU,1)
++ any(IndVowK) > index(IndVowU,1)
+
+
++ [SHIFT K_A] > U+AA29  c vowel sign AA
+
++ [K_B]       > U+AA1D  c ba
++ [SHIFT K_B] > U+AA1D  c bha
++ [RALT K_B]  > U+AA21  c bba
+
++ [K_C]       > U+AA0C c cha
++ [SHIFT K_C] > U+AA0D c chha
+
++ [K_D]       > U+AA15 c da
++ [SHIFT K_D] > U+AA16 c dha
++ [RALT K_D]  > U+AA19 c dda
+
++ [SHIFT K_E] > U+AA2C  c vowel sign EI
+
++ [K_F]       > U+AA46 c letter final n
++ [SHIFT K_F] > U+AA42 c letter final ng
++ [RALT K_F]  > U+AA43 c consonant sign final ng
+
++ [K_G]       > U+AA08 c ga
++ [SHIFT K_G] > U+AA09 c gha
+
++ [K_H]       > U+AA28 c ha
++ [SHIFT K_H] > U+AA47 c letter final p
++ [RALT K_H]  > U+AA4D c consonant sign final H
+
++ [SHIFT K_I] > U+AA2A  c vowel sign I
++ [RALT K_I]  > U+AA2B  c vowel sign II
+
++ [K_J]       > U+AA0E c ja
++ [SHIFT K_J] > U+AA0F c jha
+
++ [K_K]       > U+AA06 c ka
++ [SHIFT K_K] > U+AA07 c kha
+
++ [K_L]       > U+AA24 c la
++ [SHIFT K_L] > U+AA35 c consonant sign la
++ [RALT K_L]  > U+AA4A c letter final l
+
++ [K_M]       > U+AA20 c ma
++ [SHIFT K_M] > U+AA1F c mue
++ [RALT K_M]  > U+AA4C c consonant sign final M
+
++ [K_N]       > U+AA18 c na
++ [SHIFT K_N] > U+AA11 c nha
++ [RALT K_N]  > U+AA0B c nga
+
++ [SHIFT K_O] > U+AA2F  c vowel sign O
++ [RALT K_O]  > U+AA2E  c vowel sign OE
+
++ [K_P]       > U+AA1A c pa
++ [SHIFT K_P] > U+AA1C c pha
++ [RALT K_P]  > U+AA1B c ppa
+
++ [K_Q]       > U+AA17 c nue ???
++ [SHIFT K_Q] > U+AA10 c nhue ???
++ [RALT K_Q]  > U+AA12 c nhja ???
++ [SHIFT RALT K_Q] > U+AA0A c ngue ???
+
++ [K_R]       > U+AA23 c ra
++ [SHIFT K_R] > U+AA34 c consonant sign ra
++ [RALT K_R]  > U+AA49 c letter final r
+
++ [K_S]       > U+AA27 c sa
++ [SHIFT K_S] > U+AA27 c ssa
++ [RALT K_S]  > U+AA4B c letter final ss
+
++ [K_T]       > U+AA13 c ta
++ [SHIFT K_T] > U+AA14 c tha
+
++ [SHIFT K_U] > U+AA2D  c vowel sign U
++ [RALT K_U]  > U+AA32  c vowel sign UE
+
++ [K_V]       > U+AA25 c va
++ [SHIFT K_V] > U+AA31 c vowel sign AU
+
++ [K_W]       > U+AA04 c ai
++ [SHIFT K_W] > U+AA36 c consonants sign wa
++ [RALT K_W]  > U+AA30 c vowel sign AI
+
++ [K_X]       > U+AA44 c letter final ch
++ [SHIFT K_X] > U+AA45 c letter final t
+
++ [K_Y]       > U+AA22 c ya
++ [SHIFT K_Y] > U+AA33 c consonant sign ya
++ [RALT K_Y]  > U+AA48 c letter final y
+
++ [K_Z]       > U+AA40 c letter final k
++ [SHIFT K_Z] > U+AA41 c letter final g
+
+c + [K_Z] > U+AA1D c
+
+c Punctuation
++ [K_PERIOD] > U+AA5D
++ [SHIFT K_PERIOD] > U+AA5E
++ [RALT K_PERIOD] > U+AA5F
++ [K_SLASH] > U+002F
++ [SHIFT K_SLASH] > U+003F
++ [K_HYPHEN] > U+002D
++ [K_EQUAL] > U+003D
++ [K_COLON] > U+003A
++ [K_COMMA] > U+002C
++ [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
++ [K_BKQUOTE] > U+0060
++ [K_LBRKT] > U+005B
++ [SHIFT K_LBRKT] > U+007B
++ [K_RBRKT] > U+005D
++ [SHIFT K_RBRKT] > U+007D
++ [K_BKSLASH] > U+005C
++ [SHIFT K_BKSLASH] > U+007C
++ [SHIFT K_8] > U+AA5C c spiral
++ [RALT K_8]  > U+002A c asterisk
+
+
