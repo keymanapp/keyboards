@@ -1,6 +1,14 @@
 Khmer (SIL) Keyboard Change History
 =======================
 
+2.0 (22 Apr 2024)
+------------------
+* Replaced J key with Khmer Sign Avakrahasanya "ៜ" (U+17DC).
+* Applied the remaining symbols to the rules (store(extra)).
+* Reorganized the rules using ',' with independent vowels and the remaining symbols.
+* Added the remaining diacritics to use and into the existing rules.
+* Updated the document to be compatible with touch devices.
+
 1.5 (9 May 2019)
 ------------------
 * Move keyboard to Github
