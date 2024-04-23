@@ -1,0 +1,43 @@
+﻿c manichaean generated from template at 2024-04-22 15:38:02
+c with name "Manichaean"
+store(&VERSION) '10.0'
+store(&NAME) 'Manichaean'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'web desktop'
+store(&BITMAP) 'manichaean.ico'
+store(&VISUALKEYBOARD) 'manichaean.kvks'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(nul) "oi`3467-[]\;',./~+_)(*WERYUIOP{}|AFL:L?><MN" '"'
+store(LtrsK) [K_A] [K_B] [SHIFT K_B] [K_G] [SHIFT K_G] [K_D] [K_H] [K_W] [K_U] [K_Z] [SHIFT K_Z] [K_J] [SHIFT K_J] [SHIFT K_H] \
+             [K_T] [K_Y] [K_K] [K_X] [SHIFT K_K] [K_L] [SHIFT K_D] [SHIFT K_T] [K_M] [K_N] [K_S] [K_V] [SHIFT K_V] [K_P] [K_F] \
+             [SHIFT K_S] [K_Q] [SHIFT K_X] [SHIFT K_Q] [K_R] [K_C] [SHIFT K_C] [K_E]
+store(LtrsU) U+10AC0 .. U+10AE4
+
+store(PunctK) [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] 
+store(PunctU) U+10Af0 .. U+10Af6
+
+group(main) using keys
+
++ any(nul) > nul
++ any(LtrsK) > index(LtrsU,1)
+
++ [K_1] > U+10AEB c 1
++ [K_5] > U+10AEC c 5
+U+10AEB + [K_0] > U+10AED c 10
+U+10AED + [K_0] > U+10AEF c 100
++ [K_2] > U+10AEE c 20
+
++ any(PunctK) > index(PunctU,1)
+
++ [K_8] > U+10AE5
++ [K_9] > U+10AE6
+
+U+10AC5 + [K_EQUAL] > U+10AC5 U+FE00
+U+10AC6 + [K_EQUAL] > U+10AC6 U+FE00
+U+10AD6 + [K_EQUAL] > U+10AD6 U+FE00
+U+10AD7 + [K_EQUAL] > U+10AD7 U+FE00
+U+10AE1 + [K_EQUAL] > U+10AE1 U+FE00
