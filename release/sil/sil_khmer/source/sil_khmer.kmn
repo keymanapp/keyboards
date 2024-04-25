@@ -14,12 +14,12 @@ c adding : (U+00A3) and making a rotation for that key and some deletions of red
 store(&VERSION) '10.0'
 store(&NAME) 'Khmer (SIL)'
 store(&BITMAP) 'sil_khmer.ico'
-store(&COPYRIGHT) '(c) 2002 - 2019 SIL International'
+store(&COPYRIGHT) '(c) 2002 - 2024 SIL International'
 store(&MESSAGE) "Created by D. Kanjahn for Unicode. Input method close to former ABC fonts."
 c store(&HOTKEY) "^+U"
-store(&TARGETS) 'web desktop'
-store(&KEYBOARDVERSION) '1.5'
+store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_khmer.kvks'
+store(&KEYBOARDVERSION) '2.0'
 
 begin Unicode> use(main)
                
@@ -31,7 +31,7 @@ c Keys to be pressed
 store(cons) "kxKXgcqCQjdzDZNtfTFnbpBPmyrlvSVshLG"
 c consonant output
 store (cons0) U+1780 U+1781 U+1782 U+1783 U+1784 U+1785 U+1786 U+1787 U+1788 U+1789 U+178A U+178B U+178C U+178D U+178E U+178F U+1790 U+1791 U+1792 U+1793 U+1794 U+1795 U+1796 U+1797 U+1798 U+1799 U+179A U+179B U+179C U+179D U+179E U+179F U+17A0 U+17A1 U+17A2
-c leftovers U+17A3 U+17A4
+c leftovers U+17A3 U+17A4 (added)
 
 c ------
 c vowels 17b6-17c7 apart from C3 C4
@@ -54,16 +54,20 @@ c Independent vowels 17a5-17b3
 store(ind) "}{|\"
 store(ind0) U+17A5 U+17AA U+17AC U+17AE 
 store(ind1) U+17AF U+17B1 U+17AB U+17AD
-store(ind2) U+17B3 U+17B2 U+17A9 U+17B0
+store(ind2) U+17A7 U+17B3 U+17A9 U+17B0 
 
 c -----------------------------
 c diacritics 17c8-17dc except 17d2
 store(dia) '"' "'`_+&.>@$< "
 store(dia0) U+17C9 U+17CA U+17CB U+17CD U+17CE U+17D0 U+0020 U+17D4 U+17D7 U+17DB U+17DD U+200B
-store(dia1) U+17D0 U+17CD U+17DD U+17D5 U+200B U+17D4 U+17CE U+002D U+17DA U+17DB
-store(dia2) U+17CC U+17CF U+17D1 U+17DA U+200C U+17D5 U+002B U+005F U+17D4 U+0024
-C leftovers: U+17D3 U+17D8 U+17DC
-C in MS compatiblity: U+17D9 
+store(dia1) U+17D0 U+17CD U+17DD U+17D5 U+200B U+17D4 U+17CE U+002D U+17DA U+17DB U+17D8 U+007E
+store(dia2) U+17CC U+17CF U+17D1 U+17DA U+200C U+17D5 U+002B U+005F U+17D8 U+0024 U+17D4 U+17D3 
+C leftovers: U+17D3 U+17D8 U+17DC (added)
+
+C in MS compatiblity: U+17D9 (added)
+store(extra1) U+002A U+17DC
+store(extra2) U+17D9 U+17A8 
+store(extra3) U+007C U+17A4
 
 c -----------------------------
 c misc ()*%$!?.,<><<>>"[]\|}{-_=+~ quotation marks
@@ -108,7 +112,9 @@ c other spaces
 
 c H
 + 'H' > U+17D6    
-+ [SHIFT K_J] > nul
+
+c SHIFT J
++ [SHIFT K_J] > U+17DC
 
 c Primary characters                                             
 + any(cons) > index(cons0,1)
@@ -143,6 +149,11 @@ any(ind1) + ',' > index(ind2,1)
 any(ind2) + ',' > index(ind0,1)
 U+17A7 + "'" > U+17A8
 
+c extra
+any(extra1) + ',' > index(extra2, 1)
+any(extra2) + ',' > index(extra3, 1)
+any(extra3) + ',' > index(extra1, 1)
+
 c : stuff - secondary transformations
 U+17C7 + ',' > U+17C8
 U+17C8 + ',' > U+17D6
@@ -153,7 +164,7 @@ c Some compounds
 + ']' > U+1781 U+17D2 U+1789 U+17BB U+17C6
 + '[' > U+17B2 U+17D2 U+1799
 U+1781 U+17D2 U+1789 U+17BB U+17C6 + ',' > U+17A6
-U+17B2 U+17D2 U+1799 + ',' > U+17A7
+U+17B2 U+17D2 U+1799 + ',' > U+17B2
 
 c Moon dates                               
 U+17E0 U+17E8 U+17D4 + '>' > U+19E0
