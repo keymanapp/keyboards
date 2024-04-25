@@ -3,8 +3,8 @@ store(&NAME) 'Balochi Urdu'
 store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 store(&LAYOUTFILE) 'balochi_urdu.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.5'
-store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.6'
+store(&COPYRIGHT) '© 2019-2024 SIL International'
 store(&MESSAGE) 'The Balochi Urdu keyboard is distributed under The MIT License (MIT).'
 store(&KMW_HELPTEXT) 'This is a Balochi keyboard based on the standard Windows Urdu keyboard.'
 store(&VISUALKEYBOARD) 'balochi_urdu.kvks'
@@ -14,6 +14,10 @@ store(&BITMAP) 'balochi_urdu.ico'
 begin Unicode > use(main)
 
 group(main) using keys
++ [CTRL K_L] > 'ئی'
++ [CTRL K_C] > 'ئے'
++ [CTRL K_S] > 'ئو'
++ [CTRL K_N] > 'ࢨ'
 + [CTRL B08] > '‎'
 + [CTRL B09] > '‏'
 + [CTRL B10] > '–'
@@ -131,3 +135,11 @@ group(main) using keys
 + [K_D] > 'ر'
 + [K_S] > 'و'
 + [K_A] > 'م'
+
++ [T_ye_ham_vav] > 'ئو'
++ [T_ye_ham_ye] > 'ئی'
++ [T_ye_ham_barree] > 'ئے'
+
+U+0626 U+0648 + [K_BKSP] > nul
+U+0626 U+06CC + [K_BKSP] > nul
+U+0626 U+06D2 + [K_BKSP] > nul
