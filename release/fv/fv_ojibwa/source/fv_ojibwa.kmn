@@ -18,9 +18,13 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 
 + [SHIFT T_Q] > 'ᐁ' layer('default')
++ [SHIFT T_W_0] > 'ᕓ' layer('default')
 + [SHIFT T_W] > 'ᐯ' layer('default')
++ [SHIFT T_E_0] > 'ᕞ' layer('default')
 + [SHIFT T_E] > 'ᑌ' layer('default')
 + [SHIFT T_R] > 'ᑫ' layer('default')
++ [SHIFT T_T_0] > 'ᓓ' layer('default')
++ [SHIFT T_T_1] > 'ᕃ' layer('default')
 + [SHIFT T_T] > 'ᒉ' layer('default')
 + [SHIFT T_Y] > 'ᒣ' layer('default')
 + [SHIFT T_U] > 'ᓀ' layer('default')
@@ -28,25 +32,45 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [SHIFT T_O] > 'ᔐ' layer('default')
 + [SHIFT T_P] > 'ᔦ' layer('default')
 + [SHIFT T_A] > 'ᐅ' layer('default')
++ [SHIFT T_S_0] > 'ᕗ' layer('default')
 + [SHIFT T_S] > 'ᐳ' layer('default')
++ [SHIFT T_D_0] > 'ᕤ' layer('default')
 + [SHIFT T_D] > 'ᑐ' layer('default')
 + [SHIFT T_F] > 'ᑯ' layer('default')
++ [SHIFT T_G_0] > 'ᓗ' layer('default')
++ [SHIFT T_G_1] > 'ᕈ' layer('default')
 + [SHIFT T_G] > 'ᒍ' layer('default')
 + [SHIFT T_H] > 'ᒧ' layer('default')
 + [SHIFT T_J] > 'ᓄ' layer('default')
 + [SHIFT T_K] > 'ᓱ' layer('default')
 + [SHIFT T_L] > 'ᔓ' layer('default')
 + [SHIFT T_COLON] > 'ᔪ' layer('default')
++ [SHIFT T_Z_0] > 'ᓫ' layer('default')
 + [SHIFT T_Z] > 'ᓬ' layer('default')
++ [SHIFT T_X_0] > 'ᕑ' layer('default')
 + [SHIFT T_X] > 'ᕒ' layer('default')
 + [SHIFT T_C] > 'ᐤ' layer('default')
 + [SHIFT T_V] > 'ᐦ' layer('default')
 + [SHIFT T_B] > 'ᐞ' layer('default')
-+ [SHIFT T_N] > 'ᣜ'
++ [SHIFT T_N] > 'ᣜ' layer('default')
++ [SHIFT T_M_0] > 'ᕆ' layer('default')
++ [SHIFT T_M_1] > 'ᕊ' layer('default')
++ [SHIFT T_M_2] > 'ᕍ' layer('default')
++ [SHIFT T_M_3] > 'ᔆ' layer('default')
++ [SHIFT T_M] > 'ᕃ' layer('default')
++ [SHIFT T_COMMA_0] > 'ᖋ' layer('default')
++ [SHIFT T_COMMA_1] > 'ᖌ' layer('default')
++ [SHIFT T_COMMA_2] > 'ᖍ' layer('default')
++ [SHIFT T_COMMA_3] > 'ᙆ' layer('default')
++ [SHIFT T_COMMA] > 'ᖊ' layer('default')
 + [T_Q] > 'ᐃ'
++ [T_W_0] > 'ᕕ'
 + [T_W] > 'ᐱ'
++ [T_E_0] > 'ᕠ'
 + [T_E] > 'ᑎ'
 + [T_R] > 'ᑭ'
++ [T_T_0] > 'ᓕ'
++ [T_T_1] > 'ᕆ'
 + [T_T] > 'ᒋ'
 + [T_Y] > 'ᒥ'
 + [T_U] > 'ᓂ'
@@ -54,18 +78,26 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [T_O] > 'ᔑ'
 + [T_P] > 'ᔨ'
 + [T_A] > 'ᐊ'
++ [T_S_0] > 'ᕙ'
 + [T_S] > 'ᐸ'
++ [T_D_0] > 'ᕦ'
 + [T_D] > 'ᑕ'
 + [T_F] > 'ᑲ'
++ [T_G_0] > 'ᓚ'
++ [T_G_1] > 'ᕋ'
 + [T_G] > 'ᒐ'
 + [T_H] > 'ᒪ'
 + [T_J] > 'ᓇ'
 + [T_K] > 'ᓴ'
 + [T_L] > 'ᔕ'
 + [T_COLON] > 'ᔭ'
++ [T_Z_0] > 'ᕝ'
 + [T_Z] > 'ᑉ'
++ [T_X_0] > 'ᕪ'
 + [T_X] > 'ᑦ'
 + [T_C] > 'ᒃ'
++ [T_V_0] > 'ᓪ'
++ [T_V_1] > 'ᕐ'
 + [T_V] > 'ᒡ'
 + [T_B] > 'ᒻ'
 + [T_N] > 'ᓐ'
@@ -74,33 +106,43 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [T_PERIOD] > 'ᔾ'
 + [T_x66] > 'ᐧ'
 
-store(NoDotE) 'ᐁᐯᑌᑫᒉᒣᓀᓭᔐᔦ'
-store(LDotE) 'ᐌᐺᑗᑴᒒᒬᓉᓶᔗᔯ'
-store(RDotE)'ᐍᐻᑘᑵᒓᒭᓊᓷᔘᔰ'
-store(EKeys) [SHIFT T_Q] [SHIFT T_W] [SHIFT T_E] [SHIFT T_R] [SHIFT T_T] [SHIFT T_Y] [SHIFT T_U] [SHIFT T_I] [SHIFT T_O] [SHIFT T_P]
-'ᐧ' + any(EKeys) > index(LDotE,2)
+store(NoDotE) 'ᐁᐯᑌᑫᒉᒣᓀᓭᔐᔦᓓ'
+store(LDotE) 'ᐌᐺᑗᑴᒒᒬᓉᓶᔗᔯᓜ'
+store(RDotE)'ᐍᐻᑘᑵᒓᒭᓊᓷᔘᔰᓝ'
+store(EKeys) [SHIFT T_Q] [SHIFT T_W] [SHIFT T_E] [SHIFT T_R] [SHIFT T_T] [SHIFT T_Y] [SHIFT T_U] [SHIFT T_I] [SHIFT T_O] [SHIFT T_P] [SHIFT T_T_0]
+'ᐧ' + any(EKeys) > index(LDotE,2) layer('default')
 
 store(NoDotN) 'ᓂᓄᓇ'
 store(LongN) 'ᓃᓅᓈ'
-any(NoDotN) + any(LongKey) > index(LongN,2)
+any(NoDotN) + any(LongKey) > index(LongN,1) layer('default')
 'ᐧ' + [T_J] > 'ᓋ' c right variant ᓌ
 'ᓋ' + any(LongKey) > 'ᓍ' c right variant ᓎ
 c [T_U] [SHIFT T_J] [T_J]
 
-store(SNoDot) 'ᐃᐅᐊᐱᐳᐸᑎᑐᑕᑭᑯᑲᒋᒍᒐᒥᒧᒪᓯᓱᓴᔑᔓᔕᔨᔪᔭ'
-store(LNoDot) 'ᐄᐆᐋᐲᐴᐹᑏᑑᑖᑮᑰᑳᒌᒎᒑᒦᒨᒫᓰᓲᓵᔒᔔᔖᔩᔫᔮ'
-store(SLDot)  'ᐎᐒᐗᐼᑀᑄᑙᑝᑡᑶᑺᑾᒔᒘᒜᒮᒲᒶᓸᓼᔀᔙᔝᔡᔱᔵᔹ'
-store(SRDot) 'ᐏᐓᐘᐽᑁᑅᑚᑞᑢᑷᑻᑿᒕᒙᒝᒯᒳᒷᓹᓽᔁᔚᔞᔢᔲᔶᔺ'
-store(LRDot) 'ᐑᐕᐚᐿᑃᑇᑜᑠᑤᑹᑽᒁᒗᒛᒟᒱᒵᒹᓻᓿᔃᔜᔠᔤᔴᔸᔼ'
-store(LLDot)  'ᐐᐔᐙᐾᑂᑆᑛᑟᑣᑸᑼᒀᒖᒚᒞᒰᒴᒸᓺᓾᔂᔛᔟᔣᔳᔷᔻ'
-store(NoDotKey) [T_Q] [SHIFT T_A] [T_A] [T_W] [SHIFT T_S] [T_S] [T_E] [SHIFT T_D] [T_D] [T_R] [SHIFT T_F] [T_F] [T_T] [SHIFT T_G] [T_G] [T_Y] [SHIFT T_H] [T_H] [T_I] [SHIFT T_K] [T_K] [T_O] [SHIFT T_L] [T_L] [T_P] [SHIFT T_COLON] [T_COLON]  
+
+c n-modified ᕄᕆᕊᕍ
+store(NoDotR) 'ᕆᕈᕋ'
+store(LongR) 'ᕇᕉᕌ' c ᕎ 
+any(NoDotR) + any(LongKey) > index(LongR,1)
+'ᐧᕋ' + [T_x68] > 'ᕎ'c r variant ᕏ
+
+'ᐧᕙ' + [T_x68] > 'ᕛ' c r variant ᕜ
+
+store(SNoDot) 'ᐃᐅᐊᐱᐳᐸᑎᑐᑕᑭᑯᑲᒋᒍᒐᒥᒧᒪᓯᓱᓴᔑᔓᔕᔨᔪᔭᓕᓗᓚ'
+store(LNoDot) 'ᐄᐆᐋᐲᐴᐹᑏᑑᑖᑮᑰᑳᒌᒎᒑᒦᒨᒫᓰᓲᓵᔒᔔᔖᔩᔫᔮᓖᓢᓛ'
+store(SLDot)  'ᐎᐒᐗᐼᑀᑄᑙᑝᑡᑶᑺᑾᒔᒘᒜᒮᒲᒶᓸᓼᔀᔙᔝᔡᔱᔵᔹᓞᓢᓦ'
+store(SRDot) 'ᐏᐓᐘᐽᑁᑅᑚᑞᑢᑷᑻᑿᒕᒙᒝᒯᒳᒷᓹᓽᔁᔚᔞᔢᔲᔶᔺᓟᓣᓧ'
+store(LRDot) 'ᐑᐕᐚᐿᑃᑇᑜᑠᑤᑹᑽᒁᒗᒛᒟᒱᒵᒹᓻᓿᔃᔜᔠᔤᔴᔸᔼᓡᓥᓩ'
+store(LLDot)  'ᐐᐔᐙᐾᑂᑆᑛᑟᑣᑸᑼᒀᒖᒚᒞᒰᒴᒸᓺᓾᔂᔛᔟᔣᔳᔷᔻᓠᓤᓨ'
+store(NoDotKey) [T_Q] [SHIFT T_A] [T_A] [T_W] [SHIFT T_S] [T_S] [T_E] [SHIFT T_D] [T_D] [T_R] [SHIFT T_F] [T_F] [T_T] [SHIFT T_G] [T_G] [T_Y] [SHIFT T_H] [T_H] [T_I] [SHIFT T_K] [T_K] [T_O] [SHIFT T_L] [T_L] [T_P] [SHIFT T_COLON] [T_COLON] [T_T_0] [SHIFT T_G_0] [T_G_0]
 store(LongKey) [T_x68]
 store(DotKey) [T_x66]
 
-any(SNoDot) + [T_x68] > index(LNoDot,1)
-'ᐧ' + any(NoDotKey) > index(SLDot,2)
-any(SLDot) + any(LongKey) > index(LLDot,1)
+any(SNoDot) + [T_x68] > index(LNoDot,1) layer('default')
+'ᐧ' + any(NoDotKey) > index(SLDot,2) layer('default')
+any(SLDot) + any(LongKey) > index(LLDot,1) layer('default')
 'ᐧ' + [SHIFT T_B] > 'ᣜ' c right variant ᣝ
+
 
 c --- END OF TOUCH LAYOUT RULES ---
 
@@ -108,72 +150,98 @@ c --- END OF TOUCH LAYOUT RULES ---
 c --- START OF DESKTOP RULES ---
 c syllabic stores
 store(VowelKeys) [K_I] [K_O] [K_A]
-store(ShortVowels) 'ᐃᐅᐊ'
-store(LongVowels) 'ᐄᐆᐋ'
+store(ShortVowels) 'ᐃᐅᐊ' c i o a 
+store(LongVowels) 'ᐄᐆᐋ' c ii oo aa
 
-store(LWShortVowels) 'ᐎᐒᐗ'
-store(LWLongVowels) 'ᐐᐔᐙ'
-store(RWShortVowels) 'ᐏᐓᐘ'
-store(RWLongVowels) 'ᐑᐕᐚ'
+store(LWShortVowels) 'ᐎᐒᐗ' c wi wo wa
+store(LWLongVowels) 'ᐐᐔᐙ' c wii woo waa
+store(RWShortVowels) 'ᐏᐓᐘ' c wi wo wa
+store(RWLongVowels) 'ᐑᐕᐚ' c wii woo waa
 
-store(BPShortVowels) 'ᐱᐳᐸ'
-store(BPLongVowels) 'ᐲᐴᐹ'
-store(LBPWShortVowels) 'ᐼᑀᑄ'
-store(LBPWLongVowels) 'ᐾᑂᑆ'
-store(RBPWShortVowels) 'ᐽᑁᑅ'
-store(RBPWLongVowels) 'ᐿᑃᑇ'
+store(BPShortVowels) 'ᐱᐳᐸ' c bi bo ba / pi po pa
+store(BPLongVowels) 'ᐲᐴᐹ' c bii boo baa / pii poo paa
+store(LBPWShortVowels) 'ᐼᑀᑄ' c bwi bwo bwa / pwi pwo pwa
+store(LBPWLongVowels) 'ᐾᑂᑆ' c bwii bwoo bwaa / pwii pwoo pwaa
+store(RBPWShortVowels) 'ᐽᑁᑅ' c bwi bwo bwa / pwi pwo pwa
+store(RBPWLongVowels) 'ᐿᑃᑇ' c bwii bwoo bwaa / pwii pwoo pwaa
 
-store(DTShortVowels) 'ᑎᑐᑕ'
-store(DTLongVowels) 'ᑏᑑᑖ'
-store(LDTWShortVowels) 'ᑙᑝᑡ'
-store(LDTWLongVowels) 'ᑛᑟᑣ'
-store(RDTWShortVowels) 'ᑚᑞᑢ'
-store(RDTWLongVowels) 'ᑜᑠᑤ'
+store(DTShortVowels) 'ᑎᑐᑕ' c di do da / ti to ta
+store(DTLongVowels) 'ᑏᑑᑖ' c dii doo daa / tii too taa
+store(LDTWShortVowels) 'ᑙᑝᑡ' c dwi dwo dwa / twi two twa
+store(LDTWLongVowels) 'ᑛᑟᑣ' c dwii dwoo dwaa / twii twoo twaa
+store(RDTWShortVowels) 'ᑚᑞᑢ' c dwi dwo dwa / twi two twa
+store(RDTWLongVowels) 'ᑜᑠᑤ' c dwii dwoo dwaa / twii twoo twaa
 
-store(GKShortVowels) 'ᑭᑯᑲ'
-store(GKLongVowels) 'ᑮᑰᑳ'
-store(LGKWShortVowels) 'ᑶᑺᑾ'
-store(LGKWLongVowels) 'ᑸᑼᒀ'
-store(RGKSHortVowels) 'ᑷᑻᑿ'
-store(RGKWLongVowels) 'ᑹᑽᒁ'
+store(GKShortVowels) 'ᑭᑯᑲ' c gi go ga / ki ko ka
+store(GKLongVowels) 'ᑮᑰᑳ' c gii goo gaa / kii koo kaa
+store(LGKWShortVowels) 'ᑶᑺᑾ' c gwi gwo gwa / kwi kwo kwa
+store(LGKWLongVowels) 'ᑸᑼᒀ' c gwii gwoo gwaa / kwii kwoo kwaa
+store(RGKSHortVowels) 'ᑷᑻᑿ' c gwi gwo gwa / kwi kwo kwa
+store(RGKWLongVowels) 'ᑹᑽᒁ' c gwii gwoo gwaa / kwii kwoo kwaa
 
-store(JCHShortVowels) 'ᒋᒍᒐ'
-store(JCHLongVowels) 'ᒌᒎᒑ'
-store(LJCHWShortVowels) 'ᒔᒘᒜ'
-store(LJCHWLongVowels) 'ᒖᒚᒞ'
-store(RLJCHWShortVowels) 'ᒕᒙᒝ'
-store(RJCHWLongVowels) 'ᒗᒛᒟ'
+store(JCHShortVowels) 'ᒋᒍᒐ' c ji jo ja / chi cho cha
+store(JCHLongVowels) 'ᒌᒎᒑ' c jii joo jaa / chii choo chaa
+store(LJCHWShortVowels) 'ᒔᒘᒜ' c jwi jwo jwa / chwi chwo chwa
+store(LJCHWLongVowels) 'ᒖᒚᒞ' c jwii jwoo jwaa / chwii chwoo chwaa
+store(RLJCHWShortVowels) 'ᒕᒙᒝ' c jwi jwo jwa / chwi chwo chwa
+store(RJCHWLongVowels) 'ᒗᒛᒟ' c jwii jwoo jwaa / chwii chwoo chwaa
 
-store(MShortVowels) 'ᒥᒧᒪ'
-store(MLongVowels) 'ᒦᒨᒫ'
-store(LMWShortVowels) 'ᒮᒲᒶ'
-store(LMWLongVowels) 'ᒰᒴᒸ'
-store(RMWShortVowels) 'ᒯᒳᒷ'
-store(RMWLongVowels) 'ᒱᒵᒹ'
+store(MShortVowels) 'ᒥᒧᒪ' c mi mo ma
+store(MLongVowels) 'ᒦᒨᒫ' c mii moo maa
+store(LMWShortVowels) 'ᒮᒲᒶ' c mwi mwo mwa
+store(LMWLongVowels) 'ᒰᒴᒸ' c mwii mwoo mwaa
+store(RMWShortVowels) 'ᒯᒳᒷ' c mwi mwo mwa
+store(RMWLongVowels) 'ᒱᒵᒹ' c mwii mwoo mwaa
 
-store(NShortVowels) 'ᓂᓄᓇ'
-store(NLongVowels) 'ᓃᓅᓈ'
+store(NShortVowels) 'ᓂᓄᓇ' c ni no na
+store(NLongVowels) 'ᓃᓅᓈ' c nii noo naa
 
-store(SZShortVowels) 'ᓯᓱᓴ'
-store(SZLongVowels) 'ᓰᓲᓵ'
-store(LSZWShortVowels) 'ᓸᓼᔀ'
-store(LSZWLongVowels) 'ᓺᓾᔂ'
-store(RSZWShortVowels) 'ᓹᓽᔁ'
-store(RSZWLongVowels) 'ᓻᓿᔃ'
+store(SZShortVowels) 'ᓯᓱᓴ' c si so sa / zi zo za
+store(SZLongVowels) 'ᓰᓲᓵ' c sii soo saa / zii zoo zaa
+store(LSZWShortVowels) 'ᓸᓼᔀ' c swi swo swa / zwi zwo zwa
+store(LSZWLongVowels) 'ᓺᓾᔂ' c swii swoo swaa / zwii zwoo zwaa
+store(RSZWShortVowels) 'ᓹᓽᔁ' c swi swo swa / zwi zwo zwa
+store(RSZWLongVowels) 'ᓻᓿᔃ' c swii swoo swaa / zwii zwoo zwaa
 
-store(SHZHShortVowels) 'ᔑᔓᔕ'
-store(SHZHLongVowels) 'ᔒᔔᔖ'
-store(LSHZHWShortVowels) 'ᔙᔝᔡ'
-store(LSHZHWLongVowels) 'ᔛᔟᔣ'
-store(RSHZHWShortVowels) 'ᔚᔞᔢ'
-store(RSHZHWLongVowels) 'ᔜᔠ ᔤ'
+store(SHZHShortVowels) 'ᔑᔓᔕ' c shi sho sha / zhi zho zha
+store(SHZHLongVowels) 'ᔒᔔᔖ' c shii shoo shaa / zhii zhoo zhaa
+store(LSHZHWShortVowels) 'ᔙᔝᔡ' c shwi shwo shwa / zhwi zhwo zhwa
+store(LSHZHWLongVowels) 'ᔛᔟᔣ' c shwii shwoo shwaa / zhwii zhwoo zhwaa
+store(RSHZHWShortVowels) 'ᔚᔞᔢ' c shwi shwo shwa / zhwi zwho zhwa
+store(RSHZHWLongVowels) 'ᔜᔠ ᔤ' c shwii shwoo shwaa / zhwii zhwoo zhwaa
 
-store(YShortVowels) 'ᔨᔪᔭ'
-store(YLongVowels) 'ᔩᔫᔮ'
-store(LYWShortVowels) 'ᔱᔵᔹ'
-store(LYWLongVowels) 'ᔳᔷᔻ'
-store(RYWShortVowels) 'ᔲᔶᔺ'
-store(RYWLongVowels) 'ᔴᔸᔼ'
+store(YShortVowels) 'ᔨᔪᔭ' c yi yo ya
+store(YLongVowels) 'ᔩᔫᔮ' c yii yoo yaa
+store(LYWShortVowels) 'ᔱᔵᔹ' c ywi ywo ywa
+store(LYWLongVowels) 'ᔳᔷᔻ' c ywii ywoo ywaa
+store(RYWShortVowels) 'ᔲᔶᔺ' c ywi ywo ywa
+store(RYWLongVowels) 'ᔴᔸᔼ' c ywii ywoo ywaa
+
+store(FShortVowels) 'ᕕᕗᕙ' c fi fo fa
+store(FLongVowels) 'ᕖᕘᕚ' c fii foo faa
+c fwaa left ᕛ right ᕜ
+
+store(THShortVowels) 'ᕠᕤᕦ'
+store(THLongVowels) 'ᕢᕥᕧ'
+c thwaa ᕨ right variant ᕩ
+
+c modified n-variant 
+store(LShortVowels) 'ᓕᓗᓚ' c li lo la
+store(LLongVowels) 'ᓖᓘᓛ' c lii loo laa
+store(LLWShortVowels) 'ᓞᓢᓦ' c lwi lwo lwa
+store(LLWLongVowels) 'ᓠᓤᓨ' c lwii lwoo lwaa
+store(RLWShortVowels) 'ᓟᓣᓧ' c lwi lwo lwa
+store(RLWLongVowels) 'ᓡᓥᓩ' c lwii lwoo lwaa
+c LW left dot ᓜ right dot ᓝ
+
+store(RShortVowels) 'ᕆᕈᕋ' c ri ro ra 
+store(RLongVowels) 'ᕇᕉᕌ' c rii roo raa
+c re ᕃ rwaa left dot ᕎ rwaa right dot ᕏ
+
+c roman catholic variant
+store(L2ShortVowels) 'ᕆᕊᕍ' c li lo la
+
+store(R2ShortVowels) 'ᖋᖌᖍ' c ri ro ra
 
 c Standalone Vowels
 
@@ -234,7 +302,7 @@ any(LGKWShortVowels) + any(VowelKeys) > index(LGKWLongVowels,1)
 any(LGKWLongVowels) + [K_BKSP] > index(LGKWShortVowels,1)
 
 + [K_J] > 'ᒡ'
-'c' + [K_H] > 'ᒡ'
++ [SHIFT K_C] > 'ᒡ'
 'ᒡ' + [K_E] > 'ᒉ'
 'ᒡ' + any(VowelKeys) > index(JCHShortVowels,2)
 any(JCHShortVowels) + any(VowelKeys) > index(JCHLongVowels,1)
@@ -265,7 +333,7 @@ any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
 'ᓉ' + [K_E] > 'ᓉ'
 'ᓉ' + [K_A] > 'ᓋ' c right variant ᓌ
 'ᓋ' + [K_A] > 'ᓍ' c right variant ᓎ
-'ᓎ' + [K_BKSP] > 'ᓋ'
+'ᓍ' + [K_BKSP] > 'ᓋ'
 
 + [K_S] > 'ᔅ'
 + [K_Z] > 'ᔅ'
@@ -279,7 +347,8 @@ any(SZLongVowels) + [K_BKSP] > index(SZShortVowels,1)
 any(LSZWShortVowels) + any(VowelKeys) > index(LSZWLongVowels,1)
 any(LSZWLongVowels) + [K_BKSP] > index(LSZWShortVowels,1)
 
-'ᔅ' + [K_H] > 'ᔥ'
++ [SHIFT K_S] > 'ᔥ'
++ [SHIFT K_Z] > 'ᔥ'
 'ᔥ' + [K_E] > 'ᔐ'
 'ᔥ' + any(VowelKeys) > index(SHZHShortVowels,2)
 any(SHZHShortVowels) + any(VowelKeys) > index(SHZHLongVowels,1)
@@ -308,11 +377,62 @@ any(LYWLongVowels) + [K_BKSP] > index(LYWShortVowels,1)
 any(LWShortVowels) + any(VowelKeys) > index(LWLongVowels,1)
 any(LWLongVowels) + [K_BKSP] > index(LWShortVowels,1)
 
++ [K_F] > 'ᕝ'
+'ᕝ' + [K_E] > 'ᕓ'
+'ᕝ' + any(VowelKeys) > index(FShortVowels,2)
+any(FShortVowels) + any(VowelKeys) > index(FLongVowels,1)
+any(FLongVowels) + [K_BKSP] > index(FShortVowels,1)
+'ᕝ' + [K_W] > 'ᕛ' c right variant ᕜ
+
++ [SHIFT K_T] > 'ᕪ'
+'ᕪ' + [K_E] > 'ᕞ'
+'ᕪ' + any(VowelKeys) > index(THShortVowels,2)
+any(THShortVowels) + any(VowelKeys) > index(THLongVowels,1)
+'ᕪ' + [K_W] > 'ᕨ' c right variant ᕩ
+
++ [K_HYPHEN] > 'ᓪ'
+'ᓪ' + [K_E] > 'ᓓ' 
+'ᓪ' + any(VowelKeys) > index(LShortVowels,2)
+any(LShortVowels) + any(VowelKeys) > index(LLongVowels,1)
+any(LLongVowels) + [K_BKSP] > index(LShortVowels,1)
+'ᓪ' + [K_W] > 'ᓜ' c right variant ᓝ
+'ᓜ' + any(VowelKeys) > index(LLWShortVowels,2)
+any(LLWShortVowels) + any(VowelKeys) > index(LLWLongVowels,1)
+any(LLWLongVowels) + [K_BKSP] > index(LLWShortVowels,1)
+
++ [K_EQUAL] > 'ᕐ'
+'ᕐ' + [K_E] > 'ᕃ'
+'ᕐ' + any(VowelKeys) > index(RShortVowels,2)
+any(RShortVowels) + any(VowelKeys) > index(RLongVowels,1)
+any(RLongVowels) + [K_BKSP] > index(RShortVowels,1)
+'ᕐ' + [K_W] > 'ᕎ' c right variation ᕏ
+
++ [K_BKSLASH] > 'ᔆ'
+'ᔆ' + [K_E] > 'ᕃ'
+'ᔆ' + any(VowelKeys) > index(L2ShortVowels,2)
+
++ [K_RBRKT] > 'ᙆ'
+'ᙆ' + [K_E] > 'ᖊ'
+'ᙆ' + any(VowelKeys) > index(R2ShortVowels,2)
+
+c standalone dots
++ [K_Q] > 'ᐧ' c w-dot
++ [K_BKQUOTE] > '̇' c combining dot above
+
 c punctuation
 + '.' > '᙮'
 + [RALT K_PERIOD] > '.'
 + [K_LBRKT] > deadkey(Deadkey) 
 + [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
++ [RALT K_HYPHEN] > '-'
++ [RALT K_EQUAL] > '='
++ [SHIFT RALT K_EQUAL] > '+'
++ [RALT K_COLON] > '‹'
++ [RALT K_QUOTE] > '›'
++ [SHIFT RALT K_COLON] > '«'
++ [SHIFT RALT K_QUOTE] > '»'
++ [RALT K_BKQUOTE] > '`' 
 
-store(nul) 'qudfxvQUDFXV'
+store(nul) 'udxcvQEYUIOPASDFGHJKZXVBNM'
 + any(nul) > nul
