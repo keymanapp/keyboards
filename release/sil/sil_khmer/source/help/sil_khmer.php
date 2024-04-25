@@ -127,32 +127,6 @@
   </ul>
   <p>Experiment using commas with other keys to see what we haven't covered yet.</p>
 
-  <p>The layouts below output all the characters in this keyboard. However, there are alternate methods to access the same keys with other keystrokes. Some of these are described below.</p>
-    <ul>
-      <li><p>All "feet" are accessible through first typing ";" and then the letter for which the foot is desired.</p></li>
-      <li><p>Typing "b" followed by "a" or "A" automatically produces the "បា" and "បៅ" respectively.</p></li>
-	    <li><p>The symbols of the moon calendar (with 2 symbols on top of each other) can also be typed</p>
-         <li><p>For computers: typing the numbers with ">" two times. For example:</p>
-            <li><p>Typing <kbd>0</kbd> + <kbd>8</kbd> + <kbd>></kbd> and <kbd>></kbd> will give the same symbol as Ctrl-Alt-Shift-`.</p></li>
-            <li><p>Typing <kbd>1</kbd> + <kbd>0</kbd> + <kbd>></kbd> and <kbd>></kbd> will give the same symbol as Ctrl-Alt-Shift-0.</p></li>
-        </li>
-      </li>
-    </ul>
-  <p>Many of the alternate characters and a few vowels can be accessed by typing one or more commas after the initial keystroke.</p>
-	<ul>
-    <li><p>To get arabic numbers type first the Khmer number, then a comma. A further comma will result in a lesser used type of number in Khmer, a third comma will revert the symbol to the Khmer number.</p></li>
-    <li><p>Many of the symbols, vowels, independent vowels, and diacritics work this way. For example:</p>
-    <li><p>Start with <kbd>\</kbd> produces "ឮ", "\," produces "ឭ", and "\,," produces "ឰ". </p></li>
-    <p>Typing "{" followed by one or more commas will output "ឪ ឱ ឲ".</p>
-    <p>Typing "}" followed by one or more commas will output "ឥ ឯ ឳ".</p>
-    <p>Typing "|" followed by one or more commas will output "ឬ ឫ ឩ".</p>
-    <p>Typing "(" or ")" followed by one or more commas will give different kinds of braces "(​[​{​<​".</p>
-    <p>Typing "/" followed by one or more commas will give different kinds of punctuation "\​.​,​".</p>  
-    <p>Typing single quote (') followed by one or more commas will output "◌ ៊ “ «", and typing double quote (") followed by one or more commas will output "◌៊ “ «".</p>
-    <p>Typing ">" followed by one or more commas will output "។ ​៕ ​៚".</p>
-    </li>
-  </ul>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift alt ctrl shift-ctrl ctrl-alt shift-ctrl-alt'>
 </div>
