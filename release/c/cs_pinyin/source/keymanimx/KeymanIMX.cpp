@@ -19,7 +19,7 @@ void dbgLog(void)
 {
 	FILE *fp;
 
-	if((fp=fopen("c:\\KeymanIMX.log", "at")))
+	if((fp=fopen("c:\\Windows\\Temp\\KeymanIMX.log", "at")))
 	{
 		fprintf(fp, "%s\n",tdbg);
 		fclose(fp);
@@ -1265,6 +1265,33 @@ BOOL RepaintWindow()
 	return TRUE;
 }
 
+BOOL CALLBACK EnumWindowsProc(HWND hWnd, LPARAM lParam)
+{
+	static const char* IMXClassName = "KM_IMX";
+	static const int IMXClassNameLength = strlen(IMXClassName);
+  static const int CN_BUF = 255;
+	char ClassName[CN_BUF];
+	DWORD ClassNameLength;
+	BOOL* IsVisible = reinterpret_cast<BOOL*>(lParam);
+	if (!hWnd)
+	{
+		return true; 
+	}
+
+	ClassNameLength = GetClassName(hWnd, ClassName, CN_BUF);
+	// more efficient than string cmp also accounts for return zero (error case)
+	if (ClassNameLength != IMXClassNameLength) {
+		return true;
+	}
+
+	if ((strcmp("KM_IMX", IMXClassName) == 0) && IsWindowVisible(hWnd)) {
+		*IsVisible = TRUE;
+		return false; // we only need to know one is visible
+	}
+
+	return true;
+}
+
 /*
 
   The input string, consisting of the context buffer plus the current character, is 
@@ -1287,21 +1314,25 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 	BOOL SkipSelectionTesting=FALSE, DropCharacter=TRUE, AutoSelect=FALSE, ExtendMode,
 		Refresh=FALSE;
 	WCHAR *pCB;
-	HWND hIMX;
 	POINT Caret={0};
 	int lBuf,nSelect=0,sMode,tMode,outMode;
 	char FirstChar;
+	BOOL IsVisible = FALSE;
 
 	if(!PrepIM(TRUE) || !CurKbd) returnErr(FALSE);
 
 	// Zero the context unless IMX already displayed (necessary switching applications)
-	hIMX = FindWindow("KM_IMX",NULL);
-	if(!IsWindowVisible(hIMX)) *ContextBuf = 0;
+	// There could be many "KM_IMX" class windows but at most one will be visible
+	EnumWindows(EnumWindowsProc, reinterpret_cast<LPARAM>(&IsVisible));
+
+	if (!IsVisible) {
+		*ContextBuf = 0;
+	}
 
 	// Check for a valid keyboard
 	if(CurKbd->h.nrules == 0) 
 	{
-		if(IsWindowVisible(hIMX)) 
+		if(IsVisible) 
 			(*KMHideIM)(); 
 		else 
 			(*KMDisplayIM)(hwnd,TRUE);
