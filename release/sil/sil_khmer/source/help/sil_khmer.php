@@ -28,14 +28,14 @@
     <br>To get arabic numbers type first the Khmer number, then a comma. A further comma will result in a lesser used type of number in Khmer, a third comma will revert the symbol to the Khmer number.
     Many of the symbols, vowels, independent vowels, and diacritics work this way. For example:</p>
     <ul>
-    <li><p>Start with <kbd>\</kbd> , or type <kbd>ឮ</kbd> for mobile, produces "ឮ":
+    <li><p>Start with <kbd>\</kbd> , or type <kbd>ឮ</kbd> on mobile, produces "ឮ":
       <ul>
         <li><p><kbd>ឮ</kbd> + <kbd>,</kbd> produces "ឭ" </p></li>
         <li><p><kbd>ឭ</kbd> + <kbd>,</kbd> produces "ឰ". </p></li>
         <li><p><kbd>ឰ</kbd> + <kbd>,</kbd> produces "ឮ". </p></li>
       </ul>
     </li>
-    <li><p>Typing <kbd>{</kbd> , type <kbd>ឪ</kbd> for mobile, produces "ឪ":</p>
+    <li><p>Typing <kbd>{</kbd> , on mobile type <kbd>ឪ</kbd>, produces "ឪ":</p>
       <ul>
         <li><p><kbd>ឪ</kbd> + <kbd>,</kbd> produces "ឱ" </p></li>
         <li><p><kbd>ឱ</kbd> + <kbd>,</kbd> produces "ឳ". </p></li>
@@ -87,7 +87,7 @@
         </ul>
       </li>
     <li>
-      <p>The same logic applies some vowels such as: ា ​េាះ  ៃ</p>
+      <p>The same logic applies some vowels such as: ា ​េា  ៃ</p>
       <ul>
         <li><p><kbd>ា</kbd> + <kbd>,</kbd> produces "ោ" (not the same as <kbd>េ</kbd> + <kbd>ា</kbd>)</p></li>
         <li><p><kbd>ោ</kbd> + <kbd>,</kbd> produces <i>U+17B5</i> "◌឵". </p></li>
