@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.2"
-store(&TARGETS) "mobile tablet"
+store(&KEYBOARDVERSION) '10.1'
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "coo"
-store(&COPYRIGHT) "(c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
-store(&NAME) 'Homalco-Klahoose-Sliammon'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&NAME) 'Éy7á7juuthem'
+store(&VISUALKEYBOARD) 'fv_klahoose.kvks'
+store(&KMW_HELPFILE) 'fv_klahoose-help.htm'
 
 begin Unicode > use(main)
 
@@ -15,6 +17,8 @@ c --- START OF TOUCH LAYOUT RULES ---
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
+
+C mobile shift layer
 
 + [SHIFT T_Q_0] > 'Q̓' layer('default')
 + [SHIFT T_Q] > 'Q' layer('default')
@@ -52,11 +56,11 @@ store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
 + [SHIFT T_L_0] > 'L̓' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
 + [SHIFT T_COLON] > 'ɬ' layer('default')
-+ [SHIFT T_Z] > 'Š' layer('default')
++ [SHIFT T_Z] > 'Š' layer('default')
 + [SHIFT T_X_0] > 'X' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
-+ [SHIFT T_C_0] > 'Č̓' layer('default')
-+ [SHIFT T_C] > 'Č' layer('default')
++ [SHIFT T_C_0] > 'Č̓' layer('default')
++ [SHIFT T_C] > 'Č' layer('default')
 + [SHIFT T_V_0] > 'ƛ̓' layer('default')
 + [SHIFT T_V] > 'ƛ' layer('default')
 + [SHIFT T_B] > 'ᵂ' layer('default')
@@ -64,6 +68,9 @@ store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
+
+C mobile default layer
+
 + [T_Q_0] > 'q̓'
 + [T_Q] > 'q'
 + [T_W_0] > 'w̓'
@@ -94,17 +101,17 @@ store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
 + [T_F] > 'θ'
 + [T_G] > 'g'
 + [T_H] > 'h'
-+ [T_J] > 'ǰ'
++ [T_J] > 'ǰ'
 + [T_K_0] > 'k̓'
 + [T_K] > 'k'
 + [T_L_0] > 'l̓'
 + [T_L] > 'l'
 + [T_COLON] > 'ɬ'
-+ [T_Z] > 'š'
++ [T_Z] > 'š'
 + [T_X_0] > 'x'
 + [T_X] > 'χ'
-+ [T_C_0] > 'č̓'
-+ [T_C] > 'č'
++ [T_C_0] > 'č̓'
++ [T_C] > 'č'
 + [T_V_0] > 'ƛ̓'
 + [T_V] > 'ƛ'
 + [T_B] > 'ʷ'
@@ -113,5 +120,181 @@ store(&LAYOUTFILE) "fv_klahoose.keyman-touch-layout"
 + [T_M_0] > 'm̓'
 + [T_M] > 'm'
 
+
+C vowels with acute accent (deadkey)
+'a' + [SHIFT T_ACUTE] > 'á'
+'a' + [T_ACUTE] > 'á'
+'A' + [SHIFT T_ACUTE] > 'Á'
+'A' + [T_ACUTE] > 'Á'
+
+'æ' + [SHIFT T_ACUTE] > 'ǽ'
+'æ' + [T_ACUTE] > 'ǽ'
+'Æ' + [SHIFT T_ACUTE] > 'Ǽ'
+'Æ' + [T_ACUTE] > 'Ǽ'
+
+'ɛ' + [SHIFT T_ACUTE] > 'ɛ́'
+'ɛ' + [T_ACUTE] > 'ɛ́'
+'Ɛ' + [SHIFT T_ACUTE] > 'Ɛ́'
+'Ɛ' + [T_ACUTE] > 'Ɛ́'
+
+'e' + [SHIFT T_ACUTE] > 'é'
+'e' + [T_ACUTE] > 'é'
+'E' + [SHIFT T_ACUTE] > 'É'
+'E' + [T_ACUTE] > 'É'
+
+'ə' + [SHIFT T_ACUTE] > 'ə́'
+'ə' + [T_ACUTE] > 'ə́'
+'Ə' + [SHIFT T_ACUTE] > 'Ə́'
+'Ə' + [T_ACUTE] > 'Ə́'
+
+'i' + [SHIFT T_ACUTE] > 'í'
+'i' + [T_ACUTE] > 'í'
+'I' + [SHIFT T_ACUTE] > 'Í'
+'I' + [T_ACUTE] > 'Í'
+
+'ɩ' + [SHIFT T_ACUTE] > 'ɩ́'
+'ɩ' + [T_ACUTE] > 'ɩ́'
+'Ɩ' + [SHIFT T_ACUTE] > 'Ɩ́'
+'Ɩ' + [T_ACUTE] > 'Ɩ́'
+
+'o' + [SHIFT T_ACUTE] > 'ó'
+'o' + [T_ACUTE] > 'ó'
+'O' + [SHIFT T_ACUTE] > 'Ó'
+'O' + [T_ACUTE] > 'Ó'
+
+'ɔ' + [SHIFT T_ACUTE] > 'ɔ́'
+'ɔ' + [T_ACUTE] > 'ɔ́'
+'Ɔ' + [SHIFT T_ACUTE] > 'Ɔ́'
+'Ɔ' + [T_ACUTE] > 'Ɔ́'
+
+'ʊ' + [SHIFT T_ACUTE] > 'ʊ́'
+'ʊ' + [T_ACUTE] > 'ʊ́'
+'Ʊ' + [SHIFT T_ACUTE] > 'Ʊ́'
+'Ʊ' + [T_ACUTE] > 'Ʊ́'
+
+'u' + [SHIFT T_ACUTE] > 'ú'
+'u' + [T_ACUTE] > 'ú'
+'U' + [SHIFT T_ACUTE] > 'Ú'
+'U' + [T_ACUTE] > 'Ú'
+
+
+
 c --- END OF TOUCH LAYOUT RULES ---
 
+c desktop keyboard
+
+c *************
+c constraints
+c *************
+
+C raised letters (3) - w, t(heta), y + ^
+store(notRaised) 'wtθy'
+store(raised) 'ʷᶿᶿʸ'
+store(caret) '^'
+any(notRaised) + any(caret) > index(raised,1)
+
+C single codepoints for letters with caron (3) - s, c, j
+store(nohacek) 'scjSC'
+store(with_hacek) 'ščǰŠČ' C there's no capital J with caron
+store(caronkey) "\"
+any(nohacek) + any(caronkey) > index(with_hacek,1)
+
+C diacritics/accents (3) comma above 0313, acute 0301, hacek/caron 030C
+store(caron) U+030C
+store(acute) U+0301
+store(acutekey) "`"
+store(eje)   U+0313 c combining comma above
+store(ejekey) "'"
+
+any(caron) + any(caronkey) > context beep
+any(with_hacek) + any(caronkey) > context beep
+any(eje) + any(ejekey) > context beep
+any(acute) + any(acutekey) > context beep
+
+any(caron) + any(acutekey) > context beep
+any(eje) + any(acutekey) > context beep
+any(acute) + any(caronkey) > context beep
+any(acute) + any(ejekey) > context beep
+                  
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(acutekey) > context beep
+any(NumbersAndPunctuation) + any(caronkey) > context beep                 
+any(NumbersAndPunctuation) + any(ejekey) > context beep
+
+C combinations of raised letter + glottalized letter (4)
+
+C single codepoints for vowels with accents (5)
+store(vowels) 'aeiouAEIOU'
+store(vowels_acute) 'áéíóúÁÉÍÓÚ'
+C store(acutekey) '`'
+any(vowels) + any(acutekey) > index(vowels_acute,1)
+
+C accents (2) - accute, glottal comma above
++ "\" > "̌"   c cdmcar caron = backslash
++ "`" > "́"    c cdmacu acute = backtick         
++ "'" > "̓"    c cdmeje combining comma above= apostrophe
+
+C provide a way to type 'ɑ' (TODO: is this needed?)
+C "æ" + "A" > 'ɑ' C user holds SHIFT and types "a" twice
+
+C special characters (12) - A æ, E ɛ ə, I ɩ, L ɬ, [ ƛ, O ɔ, T θ, U ʊ, v w̥, X χ, ? ʔ
+
++ [SHIFT K_E] > 'ɛ'
++ [RALT K_E] > 'E'
+
++ [SHIFT K_U] > 'ʊ'
++ [RALT K_U] > 'U'
+
++ [SHIFT K_I] > 'ɩ'
++ [RALT K_I] > 'I'
+
++ [SHIFT K_O] > 'ɔ'
++ [RALT K_O] > 'O'
+
++ [K_LBRKT] > 'ƛ'
++ [RALT K_LBRKT] > '['
+
++ [K_RBRKT] > 'θ'
++ [RALT K_RBRKT] > ']'
+
++ [SHIFT K_A] > 'æ'
++ [RALT K_A] > 'A'
+
++ [SHIFT K_L] > 'ɬ'
++ [RALT K_L] > 'L'
+
++ [K_COLON] > 'ə'
++ [RALT K_COLON] > ';'
+
++ [SHIFT K_X] > 'χ'
++ [RALT K_X] > 'X'
+
++ [SHIFT K_V] > 'w̥'
++ [RALT K_V] > 'V'
+
++ [K_SLASH] > 'ʔ'
++ [RALT K_SLASH] > '/'
+
+c quotes
+C + [SHIFT RALT K_0] > '›'
+C + [RALT K_0] > '»'
+
+C + [SHIFT RALT K_9] > '‹'
+C + [RALT K_9] > '«'
+
+C + [SHIFT K_equal] > "”"
+C + [RALT K_equal] > '+'
+
+C + [SHIFT K_hyphen] > "“"
+C + [RALT K_hyphen] > '_'
+
+C + [SHIFT K_BKQUOTE] > "‘"
+C + [RALT K_QUOTE] > "'"
+
+C + [SHIFT K_COMMA] > "’"
+C + [RALT K_COMMA] > "<"
+
+C original values of accent keys
++ [RALT K_BKQUOTE] > '`'
++ [RALT K_BKSLASH] > '\'
++ [RALT K_6] > '^'

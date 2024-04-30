@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.221.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.206.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -19,7 +19,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Obolo Chwerty</Name>
-    <Copyright URL="">© 2019-2022 Rogers Katelem Edeh</Copyright>
+    <Copyright URL="">© 2019-2023 Rogers Katelem Edeh</Copyright>
     <Author URL="">Rogers Katelem Edeh</Author>
     <Description>Obolo Chwerty Keyboard: A keyboard layout for the Obolo language of
 Nigeria. It covers the need of every dialect in that language.</Description>
@@ -110,7 +110,25 @@ Nigeria. It covers the need of every dialect in that language.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>notosans_regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Bold.ttf</Name>
+      <Description>Font Noto Sans Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-BoldItalic.ttf</Name>
+      <Description>Font Noto Sans Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Italic.ttf</Name>
+      <Description>Font Noto Sans Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</Name>
       <Description>Font Noto Sans Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
@@ -126,8 +144,9 @@ Nigeria. It covers the need of every dialect in that language.</Description>
     <Keyboard>
       <Name>Obolo Chwerty</Name>
       <ID>obolo_chwerty</ID>
-      <Version>1.2.1</Version>
-      <OSKFont>notosans_regular.ttf</OSKFont>
+      <Version>1.2.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ann-Latn">Obolo (Andoni)</Language>
       </Languages>

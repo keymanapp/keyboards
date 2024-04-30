@@ -1,5 +1,9 @@
 ᓀᐦᐃᔭᐍᐏᐣ Change History
 ============================
+11.0 (8 Nov 2023)
+--------------------
+* Created desktop keyboard
+* Created and updated documentation
 
 10.0.2 (16 Jul 2020)
 --------------------

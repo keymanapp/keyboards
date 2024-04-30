@@ -1,9 +1,8 @@
 Newa Romanized  keyboard
 ==============
 
-© 2020 Ananda K Maharjan
+Copyright © Ananda K Maharjan
 
-Version 1.0
 
 Description
 -----------

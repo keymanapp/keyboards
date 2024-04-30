@@ -24,6 +24,9 @@ This keyboard is designed for the <b>St̓át̓imcets</b> language of the BC Int
 						<li>To type the acute accent use the Semicolon key ; — á is typed a then Semicolon ;</li>
 						<li>To type the apostrophe accent use the Apostrophe key ' — k̓ is typed k then Apostrophe '</li>
 						<li>You can type the original English punctuation marks by holding down the Right-Alt or Option key. The Slash / is typed Right-Alt+Slash (Windows) Option+Slash (Mac).</li>
+							<ul>
+								<li>NOTE: When using Google Docs, / is typed Shift+Right-Alt+/</li>
+							</ul>
 						<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.
 							<ul>
 								<li>single: ‘ Right-Alt+7 — ’ Right-Alt+8</li>

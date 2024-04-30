@@ -3,7 +3,7 @@ Malar Malayalam Keyboard
 
 2019-2023 © [Ramesh Kunnappully](mailto:ramesh1@protonmail.com)
 
-Version 1.6
+Version 1.7
 
 Description
 -----------

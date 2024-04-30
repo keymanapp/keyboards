@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.4'
+store(&KEYBOARDVERSION) '9.1.5'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "caf"
-store(&COPYRIGHT) '(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Dakelh'
 store(&BITMAP) 'fv_dakelh.ico'
 store(&VISUALKEYBOARD) 'fv_dakelh.kvks'
@@ -19,14 +19,10 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_dakelh.keyman-touch-layout'
 
-'D' + [SHIFT T_Q] > 'D̲z̲'
-'Z' + [SHIFT T_Q] > 'Z̲'
-'t' + [SHIFT T_Q] > 't̲s̲'
 'd' + [SHIFT T_Q] > 'd̲z̲'
-'S' + [SHIFT T_Q] > 'S̲'
-'z' + [SHIFT T_Q] > 'z̲'
+'t' + [SHIFT T_Q] > 't̲s̲'
+'D' + [SHIFT T_Q] > 'D̲z̲'
 'T' + [SHIFT T_Q] > 'T̲s̲'
-'s' + [SHIFT T_Q] > 's̲'
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
@@ -36,14 +32,14 @@ store(&LAYOUTFILE) 'fv_dakelh.keyman-touch-layout'
 + [SHIFT T_T_2] > 'T̲' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S_0] > 'S̲' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
@@ -62,45 +58,31 @@ store(&LAYOUTFILE) 'fv_dakelh.keyman-touch-layout'
 + [SHIFT T_COLON] > "'" layer('default')
 + [SHIFT T_Z_0] > 'Z̲' layer('default')
 + [SHIFT T_Z] > 'Z' layer('default')
-'o' + [SHIFT T_X] > 'ó'
-'I' + [SHIFT T_X] > 'Í'
-'E' + [SHIFT T_X] > 'É'
-'A' + [SHIFT T_X] > 'Á'
-'u' + [SHIFT T_X] > 'ú'
-'O' + [SHIFT T_X] > 'Ó'
-'e' + [SHIFT T_X] > 'é'
-'a' + [SHIFT T_X] > 'á'
-'i' + [SHIFT T_X] > 'í'
-'U' + [SHIFT T_X] > 'Ú'
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_V] > 'V' layer('default')
 + [SHIFT T_B] > 'B' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
-'D' + [T_Q] > 'D̲z̲'
-'Z' + [T_Q] > 'Z̲'
-'t' + [T_Q] > 't̲s̲'
 'd' + [T_Q] > 'd̲z̲'
-'S' + [T_Q] > 'S̲'
-'z' + [T_Q] > 'z̲'
+'t' + [T_Q] > 't̲s̲'
+'D' + [T_Q] > 'D̲z̲'
 'T' + [T_Q] > 'T̲s̲'
-'s' + [T_Q] > 's̲'
 + [T_W] > 'w'
-+ [T_E_0] > 'é'
++ [T_E_0] > 'é'
 + [T_E] > 'e'
 + [T_R] > 'r'
 + [T_T_0] > 't̲s̲'
 + [T_T_1] > 't̲'
 + [T_T] > 't'
 + [T_Y] > 'y'
-+ [T_U_0] > 'ú'
++ [T_U_0] > 'ú'
 + [T_U] > 'u'
-+ [T_I_0] > 'í'
++ [T_I_0] > 'í'
 + [T_I] > 'i'
-+ [T_O_0] > 'ó'
++ [T_O_0] > 'ó'
 + [T_O] > 'o'
 + [T_P] > 'p'
-+ [T_A_0] > 'á'
++ [T_A_0] > 'á'
 + [T_A] > 'a'
 + [T_S_0] > 's̲'
 + [T_S] > 's'
@@ -118,21 +100,17 @@ store(&LAYOUTFILE) 'fv_dakelh.keyman-touch-layout'
 + [T_COLON] > "'"
 + [T_Z_0] > 'z̲'
 + [T_Z] > 'z'
-'o' + [T_X] > 'ó'
-'I' + [T_X] > 'Í'
-'E' + [T_X] > 'É'
-'A' + [T_X] > 'Á'
-'u' + [T_X] > 'ú'
-'O' + [T_X] > 'Ó'
-'e' + [T_X] > 'é'
-'a' + [T_X] > 'á'
-'i' + [T_X] > 'í'
-'U' + [T_X] > 'Ú'
 + [T_C] > 'c'
 + [T_V] > 'v'
 + [T_B] > 'b'
 + [T_N] > 'n'
 + [T_M] > 'm'
+
+
+store(NeedsLowline) 'szSZ'
+store(LowlineKey) [T_Q] [SHIFT T_Q]
+any(NeedsLowline) + any(LowlineKey) > index(NeedsLowline,1) U+0332
+
 
 c --- END OF TOUCH LAYOUT RULES ---
                                  
@@ -152,7 +130,14 @@ any(underaccent) any(overaccent) + any(underaccentkey) > context beep
 
 store(accentkey) [K_Slash] [K_Bkquote]                
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
-any(NumbersAndPunctuation) + any(accentkey) > context beep                   
+any(NumbersAndPunctuation) + any(accentkey) > context beep      
+
+c normalisation
+store(AcuteKeys) [K_SLASH] [T_X] [SHIFT T_X]
+store(NeedsAcute) 'aeiouAEIOU'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
+
+any(NeedsAcute) + any(AcuteKeys) > index(HasAcute,1)
                                                                                                                   
 c Original Punctuation
 

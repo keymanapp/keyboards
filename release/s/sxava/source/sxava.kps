@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.111.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>welcome\welcome.htm</ReadMeFile>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,7 +18,7 @@
   </StartMenu>
   <Info>
     <Name URL="">sxava</Name>
-    <Copyright URL="">© 2020 Fetrigon</Copyright>
+    <Copyright URL="">© 2020-2023 Fetrigon</Copyright>
     <Author URL="">Jonathan Keku</Author>
     <Version URL=""></Version>
     <Description>Shavian alphabet for Esperanto</Description>
@@ -49,12 +49,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\extras\NotoSansShavian-Regular.ttf</Name>
-      <Description>Font Noto Sans Shavian Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>welcome\sxava_ekzerco_1.png</Name>
       <Description>File sxava_ekzerco_1.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -73,34 +67,34 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\extras\CafeMajestic-Inline.otf</Name>
+      <Name>..\..\..\shared\fonts\noto\Shaw\NotoSansShavian-Regular.ttf</Name>
+      <Description>Font Noto Sans Shavian Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\shaw\CafeMajestic-Inline.otf</Name>
       <Description>Font Cafe Majestic Inline</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>..\extras\CafeMajestic-Regular.otf</Name>
+      <Name>..\..\..\shared\fonts\shaw\CafeMajestic-Regular.otf</Name>
       <Description>Font Cafe Majestic Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>..\extras\Ormin-Regular.otf</Name>
+      <Name>..\..\..\shared\fonts\shaw\Ormin-Regular.otf</Name>
       <Description>Font Ormin Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>..\extras\ShawBritannia-Bold.otf</Name>
-      <Description>Font Shaw Britannia Bold</Description>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\extras\ShawCurly-Regular.otf</Name>
-      <Description>Font ShawCurly Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
+      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>..\LICENSE.md</Name>
@@ -113,9 +107,9 @@
     <Keyboard>
       <Name>sxava</Name>
       <ID>sxava</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\extras\NotoSansShavian-Regular.ttf</OSKFont>
-      <DisplayFont>..\extras\NotoSansShavian-Regular.ttf</DisplayFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Shaw\NotoSansShavian-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Shaw\NotoSansShavian-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="eo-Shaw">Esperanto (Shavian)</Language>
       </Languages>

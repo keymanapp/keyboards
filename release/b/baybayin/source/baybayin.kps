@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.270.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>baybayin.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
@@ -19,7 +20,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Baybayin</Name>
-    <Copyright URL="">© 2021-2022 Ilham Nurwansah</Copyright>
+    <Copyright URL="">© 2021-2023 Ilham Nurwansah</Copyright>
     <WebSite URL="https://inurwansah.my.id/keyboards">https://inurwansah.my.id/keyboards</WebSite>
     <Description>This keyboard supports the Tagalog language using the Baybayin script.</Description>
   </Info>
@@ -29,12 +30,6 @@
       <Description>Keyboard baybayin</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>NotoSansTagalog-Regular.ttf</Name>
-      <Description>Font Noto Sans Tagalog</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>baybayin.bmp</Name>
@@ -79,19 +74,25 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Name>..\..\..\shared\fonts\noto\Tglg\NotoSansTagalog-Regular.ttf</Name>
+      <Description>Font Noto Sans Tagalog</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Baybayin</Name>
       <ID>baybayin</ID>
-      <Version>1.1</Version>
-      <OSKFont>NotoSansTagalog-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansTagalog-Regular.ttf</DisplayFont>
+      <Version>1.1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Tglg\NotoSansTagalog-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Tglg\NotoSansTagalog-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="tl-Tglg">Tagalog (Tagalog)</Language>
         <Language ID="tbw-Tglg">Tagbanwa (Tagalog)</Language>

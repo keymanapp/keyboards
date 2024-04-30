@@ -1,6 +1,11 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.5 (2023-11-21)
+----------------
+
+* Update font to use shared Noto Sans
+
 4.0.4 (13 Jun 2023)
 -----------------
 
