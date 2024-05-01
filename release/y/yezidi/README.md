@@ -5,6 +5,10 @@ Description
 -----------
 Keyboard for the Yezidi script.
 
+Authors
+-------
+mailto:hajisabri74@gmail.com, mailto:adilaezdeen1@gmail.com, mailto:ezidilangu@gmail.com
+
 Links
 -----
 https://keyman.com/keyboards/yezidi
