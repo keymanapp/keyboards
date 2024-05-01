@@ -5,6 +5,10 @@ Khmer Angkor Change History
 ----------------
 * add spacing glyphs to touch layout spacebar
 
+1.3.1 (29 Apr 2024)
+----------------------
+* fix identical subscript
+
 1.3 (19 Jul 2022)
 ----------------------
 * update OSK in the documentation and bump version number
