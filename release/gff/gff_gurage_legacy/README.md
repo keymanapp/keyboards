@@ -1,9 +1,9 @@
 ጉራጊና (Gurage) Legacy Keyboard
 ============================
 
-Copyright (C) 2008-2023 Geʾez Frontier Foundation
+Copyright (C) 2008-2024 Geʾez Frontier Foundation
 
-Version 0.5
+Version 0.51
 
 This is a Gurage (ጉራጊና , ISO-639-2 sgw-Ethi-XL) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard. This keyboard is the immediate
