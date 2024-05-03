@@ -18,6 +18,23 @@ This keyboard is designed for the <b>Nlha7kapmxtsin</b> language of the BC Inter
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
+<h2><img src="fv_nlha7kapmxtsin_U_.png" alt="" height="198" width="514" border="0" /></h2>
+					<ul>
+						<li>The special characters of Nlha7kapmxtsin have been assigned to punctuation keys.</li>
+						<li>All accents are typed after the base character: á is typed a then Slash /</li>
+							<ul>
+								<li>To type the acute accent use the Slash Key — é is typed e then Slash / </li>
+								<li>To type the apostrophe accent use the Left Bracket Key [ — z̓ is typed z then Left Bracket [ </li>
+								<li>To type the low line accent use the Right Bracket Key ] — g̱ is typed g then Right Bracket ]</li>
+							</ul>
+						<li>The original values of the punctuation keys can be typed by holding down the Right-Alt or Option key. The Slash / is typed Right-Alt+Slash (Windows) Option+Slash (Mac).</li>
+							<ul>
+                  				<li><b>NOTE</b>: To type / while using Google Drive, use <strong>shift</strong>, <strong>Right-Alt</strong>, then <strong>Slash /</strong></li>
+              				</ul>
+					</ul>
+					<h2>Unicode Fonts</h2>
+						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
+    <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
@@ -34,5 +51,5 @@ This keyboard is designed for the <b>Nlha7kapmxtsin</b> language of the BC Inter
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift numeric'>
+<div id='osk' data-states='default shift'>
 </div>

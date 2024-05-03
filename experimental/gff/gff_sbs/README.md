@@ -20,7 +20,7 @@ recomposed on converted into the standard encoding.
 Links
 -----
 
-* Documentation :  [https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php](https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php)
+* Documentation :  [https://help.keyman.com/keyboard/gff_sbs/1.0.6/gff_sbs.php](https://help.keyman.com/keyboard/gff_sbs/1.0.6/gff_sbs.php)
 * Source        :  [https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs](https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs)
 * License       :  [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 * Bugs          :  [https://github.com/keymanapp/keyboards/issues](https://github.com/keymanapp/keyboards/issues)

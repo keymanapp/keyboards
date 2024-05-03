@@ -2,8 +2,8 @@
 store(&VERSION) '15.0'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'afghan_turkmen.kvks'
-store(&COPYRIGHT) '© 2021-2023 Samar'
-store(&KEYBOARDVERSION) '1.9'
+store(&COPYRIGHT) '© 2021-2024 Samar'
+store(&KEYBOARDVERSION) '2.0'
 store(&KMW_RTL) '1'
 store(&NAME) 'Afghan Turkmen'
 store(&LAYOUTFILE) 'afghan_turkmen.keyman-touch-layout'
@@ -11,11 +11,6 @@ store(&LAYOUTFILE) 'afghan_turkmen.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
-+ [SHIFT K_T] > 'ٛ'
-+ [SHIFT K_W] > 'وْ'
-+ [SHIFT K_J] > 'ݩ'
-+ [SHIFT K_M] > 'ۉ'
-+ [SHIFT K_R] > 'ۆ'
 
 + [K_SPACE] > U+0020
 + [SHIFT K_SPACE] > U+200c
@@ -25,19 +20,19 @@ group(main) using keys
 
 + [K_1] > U+06f1
 + [SHIFT K_1] > U+0021
-+ [SHIFT CTRL K_1] > U+200d
++ [SHIFT RCTRL K_1] > U+200d
 
 + [K_2] > U+06f2
 + [SHIFT K_2] > U+066c
-+ [SHIFT CTRL K_2] > U+200c
++ [SHIFT RCTRL K_2] > U+200c
 
 + [K_3] > U+06f3
 + [SHIFT K_3] > U+066b
-+ [SHIFT CTRL K_3] > U+200e
++ [SHIFT RCTRL K_3] > U+200e
 
 + [K_4] > U+06f4
 + [SHIFT K_4] > U+0631 U+06cc U+0627 U+0644
-+ [SHIFT CTRL K_4] > U+200f
++ [SHIFT RCTRL K_4] > U+200f
 
 + [K_5] > U+06f5
 + [SHIFT K_5] > U+066a
@@ -67,7 +62,8 @@ group(main) using keys
 + [SHIFT K_D] > U+064a
 
 + [K_E] > U+062b
-+ [SHIFT K_E] > U+064d
++ [SHIFT K_E] > U+065a
+U+0648 + [SHIFT K_E] > U+06c6
 
 + [K_F] > U+0628
 + [SHIFT K_F] > U+0625
@@ -82,6 +78,7 @@ group(main) using keys
 + [SHIFT K_I] > U+0651
 
 + [K_J] > U+062a
++ [SHIFT K_J] > U+0769
 
 + [K_K] > U+0646
 + [SHIFT K_K] > U+00bb
@@ -90,6 +87,7 @@ group(main) using keys
 + [SHIFT K_L] > U+00ab
 
 + [K_M] > U+067e
++ [SHIFT K_M] > U+06C9
 
 + [K_N] > U+062f
 + [SHIFT K_N] > U+0654
@@ -104,11 +102,13 @@ group(main) using keys
 + [SHIFT K_Q] > U+0652
 
 + [K_R] > U+0642
++ [SHIFT K_R] > U+06C6
 
 + [K_S] > U+0633
 + [SHIFT K_S] > U+0626
 
 + [K_T] > U+0641
++ [SHIFT K_T] > U+065B
 
 + [K_U] > U+0639
 + [SHIFT K_U] > U+064e
@@ -117,9 +117,10 @@ group(main) using keys
 + [SHIFT K_V] > U+0670
 
 + [K_W] > U+0635
++ [SHIFT K_W] > U+0648 U+0652
 
 + [K_X] > U+0637
-+ [SHIFT K_X] > 'ې'
++ [SHIFT K_X] > U+06D0
 
 + [K_Y] > U+063a
 + [SHIFT K_Y] > U+0650

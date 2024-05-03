@@ -1,0 +1,142 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Sgüüx̱s'
+store(&COPYRIGHT) '© 2024 First Peoples' U+0027 ' Cultural Foundation'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'fv_sguuxs.ico'
+store(&VISUALKEYBOARD) 'fv_sguuxs.kvks'
+store(&LAYOUTFILE) 'fv_sguuxs.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c --- BEGIN TOUCH LAYOUT ---
+
++ [SHIFT T_QE_0] > '!' layer('default')
++ [SHIFT T_QE] > '?' layer('default')
++ [SHIFT T_W_0] > 'Ẅ' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ü' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A_0] > 'A̱' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_APOS_0] > U+0022 layer('default') c straight quotation marks
++ [SHIFT T_APOS] > U+0027 layer('default') c straight apostrophe
++ [SHIFT T_G_0] > 'G̱' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K_0] > 'Ḵ' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_BL] > 'Ł' layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X_0] > 'X̱' layer('default')
++ [SHIFT T_X_1] > '̣X' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_QE_0] > '!'
++ [T_QE] > '?'
++ [T_W_0] > 'ẅ'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U_0] > 'ü'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P] > 'p'
++ [T_A_0] > 'a̱'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_APOS_0] > U+0022 c straight quotation marks
++ [T_APOS] > U+0027 c straight apostrophe
++ [T_G_0] > 'g̱'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_K_0] > 'ḵ'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_BL] > 'ł'
++ [T_Z] > 'z'
++ [T_X_0] > 'x̱'
++ [T_X_1] > 'x̣'
++ [T_X] > 'x'
++ [T_C] > 'c'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+c --- DESKTOP AND MOBILE RULES AND STORES ---
+
+store(LowlineKeys) [T_LOWL] [SHIFT T_LOWL] [K_HYPHEN]
+store(DiaeresisKeys) [T_DIA] [SHIFT T_DIA] [K_LBRKT]
+
+store(Diaeresis) U+0308
+store(Lowline) U+0331
+
+store(NeedsDiaeresis) 'uwUW'
+store(HasDiaeresis) 'üẅÜẄ'
+
+store(NeedsLowline) 'agAG'
+store(K) 'kK'
+store(HasLowline) 'ḵḴ'
+
+any(NeedsDiaeresis) + any(DiaeresisKeys) > index(HasDiaeresis,1)
+'uu' + any(DiaeresisKeys) > 'üü'
+'UU' + any(DiaeresisKeys) > 'ÜÜ'
+
+any(NeedsLowline) + any(LowlineKeys) > index(NeedsLowline,1) U+0331
+any(K) + any(LowlineKeys) > index(HasLowline,1)
+
+c --- BEGIN DESKTOP RULES ---
+
+c --- Constraints ---
+store(underaccent) "̲"
+store(underaccentkey) [K_HYPHEN]
+
+store(overaccent) "̈"
+store(overaccentkey) [K_LBRKT]
+
+any(underaccent) + any(underaccentkey) > context beep
+U+0331 + any(underaccentkey) > context beep
+any(HasLowline) + any(underaccentkey) > context beep
+any(overaccent) + any(overaccentkey) > context beep  
+U+0308 + any(overaccentkey) > context beep
+any(HasDiaeresis) + any(overaccentkey) > context beep
+any(underaccent) any(overaccent) + any(underaccentkey) > context beep
+
+store(AccentKeys) [K_HYPHEN] [K_LBRKT]
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(AccentKeys) > context beep
+
+c --- Language keys ---
+
++ [K_COLON] > 'ł'
++ [SHIFT K_COLON] > 'Ł'
++ [K_HYPHEN] > U+0331 c lowline
++ [K_LBRKT] > U+0308 c diaeresis
++ [K_BKQUOTE] > '̣' 
+
+c --- original punctuation ---
+
++ [RALT K_COLON] > ';'
++ [RALT SHIFT K_COLON] > ':'
++ [RALT K_HYPHEN] > '-'
++ [RALT K_LBRKT] > '['
++ [RALT K_BKQUOTE] > '`'
+
