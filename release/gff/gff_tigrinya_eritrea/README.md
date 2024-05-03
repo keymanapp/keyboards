@@ -3,7 +3,7 @@
 
 Copyright © 2009-2023 Geʾez Frontier Foundation
 
-Version 2.0.1
+Version 2.0.2
 
 This is a Tigrinya (ti-ER, ትግርኛ-ኤርትራ) language mnemonic input method that applies Eritrean writing conventions.
 It requires a font supporting Ethiopic script under the Unicode 3.0 standard. 
