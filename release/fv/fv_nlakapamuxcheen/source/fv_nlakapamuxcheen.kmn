@@ -68,7 +68,7 @@ group(main) using keys
 c --- CROSS PLATFORM STORES ---
 
 store(ComLowLine) U+0331
-store(ComLowLineKeys) [K_COLON] [T_LL] [SHIFT T_LL]
+store(ComLowLineKeys) [SHIFT K_HYPHEN] [T_LL] [SHIFT T_LL]
 
 'g' + any(ComLowLineKeys) > 'g̲'
 'hh' + any(ComLowLineKeys) > 'h̲h̲'
@@ -86,4 +86,7 @@ store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«
 
 any(ComLowLine) + any(ComLowLineKeys) > context beep
 any(NonLetters) + any(ComLowLineKeys) > context beep   
+
+c --- ORIGINAL PUNCTUATION ---
++ [RALT SHIFT K_HYPHEN] > '_'
 

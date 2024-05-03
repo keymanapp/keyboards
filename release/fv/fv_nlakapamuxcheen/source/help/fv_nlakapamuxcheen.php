@@ -20,12 +20,12 @@ This keyboard is designed for the <b>nlakapamuxcheen</b> language of the BC Inte
 
 <img src="fv_nlakapamuxcheenU_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
-					<li>The lowline has been assigned to the <b>semicolon key ;</b>. To type the regular semicolon, hold down the Right-Alt or Option key then press the colon key.</li>
-						<li>To type <b>g̲</b>, type <b>g + ; </b></li>
-						<li>For any double or triple letters that have the lowline, type all the letters followed by the colon key.</li>
+					<li>The lowline has been assigned to the <b>underscore key _</b> (shift+hyphen key -). To type the regular underscore, hold down the Right-Alt or Option key then press the shift + the hyphen key.</li>
+						<li>To type <b>g̲</b>, type <b>g + _ </b></li>
+						<li>For any double or triple letters that have the lowline, type all the letters followed by the underscore key.</li>
               				<ul>
-                				<li>To type <b>h̲h̲</b>, type <b>hh + ;</b></li>
-                				<li>To type <b>w̲u̲h̲</b>, type <b>wuh + ;</b></li>
+                				<li>To type <b>h̲h̲</b>, type <b>hh + _</b></li>
+                				<li>To type <b>w̲u̲h̲</b>, type <b>wuh + _</b></li>
               				</ul>
 					</ul>
 
