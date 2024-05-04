@@ -1,7 +1,7 @@
-Dene Zhatié keyboard
+Dene Zhatıé keyboard
 ======================
 
-Dene Zhatié keyboard layout for Unicode
+Dene Zhatıé keyboard layout for Unicode
 
 Links
 -----
