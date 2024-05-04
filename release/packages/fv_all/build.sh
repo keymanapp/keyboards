@@ -28,6 +28,21 @@ builder_describe_outputs \
 
 builder_parse "$@"
 
+#------------------------------------------------------------
+# Definitions
+#------------------------------------------------------------
+
+if [[ -z ${KMC+x} ]]; then
+  export KMC="${REPO_ROOT}/node_modules/.bin/kmc"
+  readonly KMC
+fi
+
+# TODO: remove -W
+if [[ -z ${KMC_BUILD_PARAMS+x} ]]; then
+  export KMC_BUILD_PARAMS="build $builder_debug -W --for-publishing"
+  readonly KMC_BUILD_PARAMS
+fi
+
 function do_clean() {
   rm -f ./source/fv_all.kps
   rm -rf ./build/
