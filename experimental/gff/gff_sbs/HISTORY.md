@@ -1,5 +1,8 @@
 # gff_sbs Change History
 
+## 2024-05-05 vesion 1.0.7
+* Change to font name for LibreOffice compatibility.
+
 ## 2024-02-27 version 1.0.6
 * Revisions to the input terminator symbol, ' (apostrophe).
 * Update to the Qubee-Sheek-Bakrii-Saphaloo.ttf font.
