@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Sḵwx̱wú8mesh sníchim Keyboard Help';
+  $pagename = 'Sḵwx̱wú7mesh sníchim Keyboard Help';
   $pagetitle = 'Sḵwx̱wú7mesh sníchim Keyboard Help';
   $pagestyle = <<<END
   
