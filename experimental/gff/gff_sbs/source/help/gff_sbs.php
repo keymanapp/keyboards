@@ -88,7 +88,7 @@ The <a target="_blank" href="SBS-Typing-English.pdf">pdf manual</a> reviews typi
 <h3>Caveats</h3>
 <p style="text-align: justify;">
 This is an *exerimental* keyboard that will not be compatible with a future standard for the Sheek Bakrii Saphaloo
-script. The font that the keyboard relies on, the  _Athinkra: Sheek Bakri Saphaloo_  font, uses a temporary encoding
+script. The font that the keyboard relies on, the  _Athinkra Sheek Bakri Saphaloo_  font, uses a temporary encoding
 space that would change under a final standard for the script. The implication is that documents composed with
 this typeface will be incompatible with the anticipated international standard and will either need to be
 recomposed on converted into the standard encoding.
