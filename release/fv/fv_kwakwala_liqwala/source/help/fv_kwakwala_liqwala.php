@@ -20,7 +20,7 @@ This keyboard is designed for the <b>Kʷak̓ʷala</b> language of the BC Coast r
 
 <img src="Kwakwala_LiqwalaU_.png" alt="" height="243" width="720" border="0" /></h2>
 					<ul>
-						<li>The special characters of Kwak̓wala have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyoards keep its original numbers</li>
+						<li>The special characters of Kʷak̓ʷala have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyoards keep its original numbers</li>
 						<li>To type the apostrophe accent use the Apostrophe key ' — k̓ is typed k then Apostrophe '</li>
 						<li>The original values of the punctuation keys can be typed by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
 						<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.</li>

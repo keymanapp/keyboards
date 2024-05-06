@@ -1,5 +1,9 @@
 #Warang Citi Change History
 
+1.1.2 (2023-10-30)
+----------------
+* Rearranged order of mobile layers for better help display
+
 1.1.1 (2023-07-19)
 ----------------
 * Removed source from .kps

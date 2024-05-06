@@ -1,5 +1,9 @@
 Runeboard Change History
 ====================
+2.2 (2023-11-04)
+----------------
+* Swapped ᛝ and ᛥ on the main/unshifted layer.
+* Swapped ᛜ and ᚶ on the shift layer.
 
 2.1 (2023-09-20)
 ----------------
