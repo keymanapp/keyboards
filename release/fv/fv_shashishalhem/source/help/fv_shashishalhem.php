@@ -20,16 +20,10 @@ This keyboard is designed for the <b>Shashishalhem</b> language of the BC Coast 
 
 <img src="Shashishalhem.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
-						<li>All accents are typed after the base character: á is typed a then Semicolon ;</li>
-						<li>To type the acute accent use the Semicolon key ; — é is typed e then Semicolon ;</li>
+						<li>All accents are typed after the base character: á is typed a then Backquote ` (next to the 1 key)</li>
+						<li>To type the acute accent use the Semicolon key ; — é is typed e then Backquote `</li>
 						<li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
-						<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.</li>
-						<ul>
-									<li>single: ‘ Backquote — ’ Apostrophe</li>
-									<li>double: “ Shift+Hyphen — ” Shift+Equals</li>
-									<li>single ‹ Right-Alt+Shift+9 — › Right-Alt+Shift+0</li>
-									<li>double « Right-Alt+9 — » Right-Alt+0</li>
-								</ul>
+						
 						<h2>Unicode Fonts</h2>
 						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
     <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
@@ -37,9 +31,10 @@ This keyboard is designed for the <b>Shashishalhem</b> language of the BC Coast 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
 <div class='vspace'></div>
-<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>? !</td><td  align='center'>w</td><td  align='center'>e</td><td  align='center'>-</td><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u</td><td  align='center'>i</td><td >&nbsp;</td><td  align='center'>p</td></tr>
-<tr ><td  align='center'>a</td><td  align='center'>s</td><td  align='center'>ʔ</td><td >&nbsp;</td><td >&nbsp;</td><td  align='center'>h</td><td  align='center'>ḵ</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>' "</td></tr>
-<tr ><td >&nbsp;</td><td  align='center'>x̱</td><td  align='center'>x</td><td  align='center'>c</td><td  align='center'>,</td><td  align='center'>.</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
+<table border='1' style='border-collapse:collapse' cellpadding='5' >
+	<tr ><td  align='center'>? !</td><td  align='center'>w</td><td  align='center'>e</td><td  align='center'>-</td><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u</td><td  align='center'>i</td><td >&nbsp;</td><td  align='center'>p</td></tr>
+	<tr ><td  align='center'>a</td><td  align='center'>s</td><td  align='center'>ʔ</td><td >&nbsp;</td><td >&nbsp;</td><td  align='center'>h</td><td  align='center'>ḵ</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>' "</td></tr>
+	<tr ><td >&nbsp;</td><td  align='center'>x̱</td><td  align='center'>x</td><td  align='center'>c</td><td  align='center'>,</td><td  align='center'>.</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
 </table>
 <div class='vspace'></div><ul><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
 </li></ul><div class='vspace'></div><h3>Alternate Name</h3>

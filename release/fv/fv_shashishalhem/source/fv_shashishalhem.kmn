@@ -21,13 +21,17 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [SHIFT T_Q_0] > '!' layer('default')
 + [SHIFT T_Q] > '?' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > '-' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O] > 'P' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'ʔ' layer('default')
@@ -47,13 +51,17 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [T_Q_0] > '!'
 + [T_Q] > '?'
 + [T_W] > 'w'
++ [T_E_0] > 'é'
 + [T_E] > 'e'
 + [T_R] > '-'
 + [T_T] > 't'
 + [T_Y] > 'y'
++ [T_U_0] > 'ú'
 + [T_U] > 'u'
++ [T_I_0] > 'í'
 + [T_I] > 'i'
 + [T_O] > 'p'
++ [T_A_0] > 'á'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'ʔ'
@@ -75,13 +83,18 @@ c --- END OF TOUCH LAYOUT RULES ---
 
 c constraints
 
-store(overaccent)  U+0301 
-store(overaccentkey) ";"
+store(plainVowels) "aeiouAEIOU"
+store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
+store(acuteKeys) [T_acute] [SHIFT T_acute] [K_BKQUOTE]
 
-any(overaccent) + any(overaccentkey) > context beep
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+
+store(overaccent)  U+0301 c acute
+any(overaccent) + any(acuteKeys) > context beep
 
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
-any(NumbersAndPunctuation) + any(overaccentkey) > context beep
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep
 
 c original punctuation
 + [RALT K_PERIOD] > '>'
@@ -92,14 +105,12 @@ c original punctuation
 + [RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
 + [RALT K_QUOTE] > U+0027
-+ [RALT K_BKSLASH] > '\'
-+ [SHIFT RALT K_BKSLASH] > '|'
 + [NCAPS SHIFT RALT K_RBRKT] > '}'
 + [NCAPS SHIFT RALT K_LBRKT] > '{'
 + [NCAPS RALT K_RBRKT] > ']'
 + [NCAPS RALT K_LBRKT] > '['
-+ [RALT K_EQUAL] > '+'
-+ [RALT K_HYPHEN] > '_' 
+C + [RALT K_EQUAL] > '+'
+C + [RALT K_HYPHEN] > '_' 
 
 c Guillemets
 + [SHIFT RALT K_0] > '›'
@@ -107,15 +118,9 @@ c Guillemets
 + [RALT K_0] > '»'
 + [RALT K_9] > '«'
 
-c Quotes
-+ [SHIFT K_EQUAL] > "”"
-+ [SHIFT K_HYPHEN] > "“"
-+ [K_BKQUOTE] > "‘"
-+ [K_QUOTE] > "’"    
-
 c language
 
-+ ";" > U+0301   c acute
++ [K_BKQUOTE] > U+0301 c acute
                                              
 + [CAPS SHIFT K_LBRKT] > 'ḵ'   
 + [NCAPS SHIFT K_LBRKT] > 'Ḵ'
