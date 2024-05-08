@@ -137,9 +137,24 @@ C mobile unshifted layer
 
 c --- END OF TOUCH LAYOUT RULES ---
 
-c backspace will delete just the acute accent on a vowel with acute accent
+C DESKTOP LAYOUT
 
-store(plainvowels) "aeiouAEIOU"
-store(acutevowels) "áéíóúÁÉÍÓÚ"
-any(acutevowels) + [K_BKSP] > index(plainvowels,1)
+
+
+C CONSTRAINTS AND RULES
+
+c backspace will delete just the acute accent on a vowel with acute accent
+store(plainVowels) "aeiouAEIOU"
+store(acuteVowels) "áéíóúÁÉÍÓÚ"
+any(acuteVowels) + [K_BKSP] > index(plainvowels,1)
+
+c combining deadkey for acute accent on vowels
+store(acuteKeys) [T_F] [SHIFT T_F]
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1)
+
+c combining deadkey for glottal apostrophe diacritic on resonants
+store(plainResonants) "mlnwyMLNWY"
+store(glottalKeys) [T_R] [SHIFT T_R]
+any(plainResonants) + any(glottalKeys) > index(plainResonants,1) U+0313
+
 
