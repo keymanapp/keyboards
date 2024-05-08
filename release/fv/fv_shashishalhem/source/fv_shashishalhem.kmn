@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.3'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "sec"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Shashishalhem'
 store(&BITMAP) 'fv_shashishalhem.ico'
 store(&VISUALKEYBOARD) 'fv_shashishalhem.kvks'
@@ -108,8 +108,8 @@ c Guillemets
 + [RALT K_9] > '«'
 
 c Quotes
-+ [SHIFT k_equal] > "”"
-+ [SHIFT K_hyphen] > "“"
++ [SHIFT K_EQUAL] > "”"
++ [SHIFT K_HYPHEN] > "“"
 + [K_BKQUOTE] > "‘"
 + [K_QUOTE] > "’"    
 
@@ -117,15 +117,15 @@ c language
 
 + ";" > U+0301   c acute
                                              
-+ [caps shift K_LBRKT] > 'ḵ'   
-+ [ncaps shift K_LBRKT] > 'Ḵ'
-+ [caps K_LBRKT] > 'Ḵ'
-+ [ncaps K_LBRKT] > 'ḵ'
++ [CAPS SHIFT K_LBRKT] > 'ḵ'   
++ [NCAPS SHIFT K_LBRKT] > 'Ḵ'
++ [CAPS K_LBRKT] > 'Ḵ'
++ [NCAPS K_LBRKT] > 'ḵ'
 
-+ [caps shift K_RBRKT] > 'x̱'   
-+ [ncaps shift K_RBRKT] > 'X̱'
-+ [caps K_RBRKT] > 'X̱'
-+ [ncaps K_RBRKT] > 'x̱'
++ [CAPS SHIFT K_RBRKT] > 'x̱'   
++ [NCAPS SHIFT K_RBRKT] > 'X̱'
++ [CAPS K_RBRKT] > 'X̱'
++ [NCAPS K_RBRKT] > 'x̱'
 
 + "/" > "ʔ"
 
