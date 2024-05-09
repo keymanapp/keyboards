@@ -32,9 +32,5 @@ EXTRA;
 
 
 
-  <hr/>
-  <p>&copy; 2008-2018 John Durdin</p>
-
-
 </body>
 </html>

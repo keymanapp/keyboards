@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.4.1'
+store(&KEYBOARDVERSION) '9.5.1'
 c store(&ETHNOLOGUECODE) "hei"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
-store(&NAME) 'Haiɫzaqvla'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&NAME) 'Háiɫzaqvḷa'
 store(&TARGETS) 'any'
 
 store(&LAYOUTFILE) 'fv_hailzaqvla.keyman-touch-layout'
@@ -29,36 +29,36 @@ store(&CasedKeys) [K_BKQUOTE] [K_BKSLASH] [K_RBRKT] [K_LBRKT]
 + [SHIFT K_6] > U+030C
 + [SHIFT K_HYPHEN] > U+0301
 
-+ [ALT K_SLASH] > 'ʔ'
-+ [ALT K_G] > 'ǧ'
-+ [ALT K_X] > 'x̌'
-+ [ALT K_N] > 'ṇ'
-+ [ALT K_L] > 'ḷ'
-+ [ALT K_M] > 'ṃ'
-+ [ALT K_BKQUOTE] > U+0300
++ [RALT K_SLASH] > 'ʔ'
++ [RALT K_G] > 'ǧ'
++ [RALT K_X] > 'x̌'
++ [RALT K_N] > 'ṇ'
++ [RALT K_L] > 'ḷ'
++ [RALT K_M] > 'ṃ'
++ [RALT K_BKQUOTE] > U+0300
 
-+ [ALT K_6] > '^'
-+ [ALT K_BKSLASH] > '\'
-+ [ALT K_PERIOD] > '>'
-+ [ALT K_COMMA] > '<'
-+ [ALT K_RBRKT] > ']'
-+ [ALT K_LBRKT] > '['
++ [RALT K_6] > '^'
++ [RALT K_BKSLASH] > '\'
++ [RALT K_PERIOD] > '>'
++ [RALT K_COMMA] > '<'
++ [RALT K_RBRKT] > ']'
++ [RALT K_LBRKT] > '['
 
-+ [SHIFT ALT K_X] > 'X̌'
-+ [SHIFT ALT K_G] > 'Ǧ'
-+ [SHIFT ALT K_N] > 'Ṇ'
-+ [SHIFT ALT K_M] > 'Ṃ'
-+ [SHIFT ALT K_L] > 'Ḷ'
-+ [SHIFT ALT K_SLASH] > 'ʔ'
++ [SHIFT RALT K_X] > 'X̌'
++ [SHIFT RALT K_G] > 'Ǧ'
++ [SHIFT RALT K_N] > 'Ṇ'
++ [SHIFT RALT K_M] > 'Ṃ'
++ [SHIFT RALT K_L] > 'Ḷ'
++ [SHIFT RALT K_SLASH] > 'ʔ'
 
-+ [SHIFT ALT K_EQUAL] > '`'
-+ [SHIFT ALT K_BKSLASH] > '|'
-+ [SHIFT ALT K_HYPHEN] > '_'
-+ [SHIFT ALT K_PERIOD] > '>'
-+ [SHIFT ALT K_COMMA] > '<'
-+ [SHIFT ALT K_RBRKT] > '}'
-+ [SHIFT ALT K_LBRKT] > '{'
-+ [SHIFT ALT K_BKQUOTE] > '~'
++ [SHIFT RALT K_EQUAL] > '`'
++ [SHIFT RALT K_BKSLASH] > '|'
++ [SHIFT RALT K_HYPHEN] > '_'
++ [SHIFT RALT K_PERIOD] > '>'
++ [SHIFT RALT K_COMMA] > '<'
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_LBRKT] > '{'
++ [SHIFT RALT K_BKQUOTE] > '~'
 
 
 c --- START OF TOUCH LAYOUT RULES ---
@@ -188,6 +188,10 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_M] > 'm'
 + [T_GLOT] > U+0294
 
+store(NeedsComApos) 'acehiklḷmṃnṇpqtuwyƛACEHIKLḶMṂNṆPQTUWYƛ'
+store(ComApos) [T_COMMA]
+any(NeedsComApos) + any(ComApos) > index(NeedsComApos,1) U+0313
+
 c --- END OF TOUCH LAYOUT RULES ---
 
 c --- DIACRITIC MANAGEMENT RULES ---
@@ -196,7 +200,7 @@ c diacritics
 c combining apostr [SHIFT K_COMMA] U+0313
 c combining caron [SHIFT K_6] U+030C
 c combining acute [SHIFT K_HYPHEN] U+0301
-c combining grave [ALT K_BKQUOTE] U+0300
+c combining grave [RALT K_BKQUOTE] U+0300
 
 c Accents on vowels should create single character version
 store(vowels) 'aeiouAEIOU'
@@ -204,7 +208,7 @@ store(acutevowels) U+00E1 U+00E9 U+00ED U+00F3 U+00FA U+00C1 U+00C9 U+00CD U+00D
 store(gravevowels) U+00E0 U+00E8 U+00EC U+00F2 U+00F9 U+00C0 U+00C8 U+00CC U+00D2 U+00D9
 store(caronvowels) U+01CE U+011B U+01D0 U+01D2 U+01D4 U+01CD U+011A U+01CF U+01D1 U+01D3
 any(vowels) + [SHIFT K_HYPHEN] > index(acutevowels,1)
-any(vowels) + [ALT K_BKQUOTE] > index(gravevowels,1)
+any(vowels) + [RALT K_BKQUOTE] > index(gravevowels,1)
 any(vowels) + [SHIFT K_6] > index(caronvowels,1)
 c caron + g should create single character version
 store(plaing) 'gG'
@@ -215,7 +219,7 @@ store(diacritics) U+0313 U+0301 U+0300 U+030C
 any(diacritics) + [SHIFT K_COMMA] > U+0313
 any(diacritics) + [SHIFT K_6] > U+030C
 any(diacritics) + [SHIFT K_HYPHEN] > U+0301
-any(diacritics) + [ALT K_BKQUOTE] > U+0300
+any(diacritics) + [RALT K_BKQUOTE] > U+0300
 c if a diacritic added to a combined character, replace with the right new diacritic instead of stacking
 c adding acute
 any(acutevowels) + [SHIFT K_HYPHEN] > index(acutevowels,1)
@@ -224,11 +228,11 @@ any(caronvowels) + [SHIFT K_HYPHEN] > index(acutevowels,1)
 any(vowels) any(diacritics) + [SHIFT K_HYPHEN] > index(acutevowels,1)
 any(carong) + [SHIFT K_HYPHEN] > index(plaing,1) U+0301
 c adding grave
-any(acutevowels) + [ALT K_BKQUOTE] > index(gravevowels,1)
-any(gravevowels) + [ALT K_BKQUOTE] > index(gravevowels,1)
-any(caronvowels) + [ALT K_BKQUOTE] > index(gravevowels,1)
-any(vowels) any(diacritics) + [ALT K_BKQUOTE] > index(gravevowels,1)
-any(carong) + [ALT K_BKQUOTE] > index(plaing,1) U+0300
+any(acutevowels) + [RALT K_BKQUOTE] > index(gravevowels,1)
+any(gravevowels) + [RALT K_BKQUOTE] > index(gravevowels,1)
+any(caronvowels) + [RALT K_BKQUOTE] > index(gravevowels,1)
+any(vowels) any(diacritics) + [RALT K_BKQUOTE] > index(gravevowels,1)
+any(carong) + [RALT K_BKQUOTE] > index(plaing,1) U+0300
 c adding caron
 any(acutevowels) + [SHIFT K_6] > index(caronvowels,1)
 any(gravevowels) + [SHIFT K_6] > index(caronvowels,1)

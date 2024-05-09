@@ -1,5 +1,11 @@
 Nlha7kapmxtsin Change History
 ============================
+10.0 (13 Feb 2024)
+-----------------
+* Built desktop layout
+* Centered mobile layout
+* Updated documentation
+
 9.1.1 (25 Oct 2023)
 -----------------
 * Changed order of mobile layers to unscramble display on help page

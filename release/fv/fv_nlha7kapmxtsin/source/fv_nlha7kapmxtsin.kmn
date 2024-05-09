@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.1'
-store(&TARGETS) "mobile tablet"
+store(&KEYBOARDVERSION) '10.0'
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "thp"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Nlha7kapmxtsin'
+store(&VISUALKEYBOARD) 'fv_nlha7kapmxtsin.kvks'
+store(&KMW_HELPFILE) 'fv_nlha7kapmxtsin-help.htm'
 
 begin Unicode > use(main)
 
@@ -16,51 +18,25 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) "fv_nlha7kapmxtsin.keyman-touch-layout"
 
-'o' + [SHIFT T_Q] > 'ó'
-'I' + [SHIFT T_Q] > 'Í'
-'E' + [SHIFT T_Q] > 'É'
-'A' + [SHIFT T_Q] > 'Á'
-'u' + [SHIFT T_Q] > 'ú'
-'O' + [SHIFT T_Q] > 'Ó'
-'e' + [SHIFT T_Q] > 'é'
-'a' + [SHIFT T_Q] > 'á'
-'i' + [SHIFT T_Q] > 'í'
-'U' + [SHIFT T_Q] > 'Ú'
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-'w' + [SHIFT T_R] > 'w̓'
-'g̱' + [SHIFT T_R] > 'g̱̓'
-'Y' + [SHIFT T_R] > 'Y̓'
-'Z' + [SHIFT T_R] > 'Z̓'
-'G̱' + [SHIFT T_R] > 'G̱̓'
-'y' + [SHIFT T_R] > 'y̓'
-'L' + [SHIFT T_R] > 'L̓'
-'z' + [SHIFT T_R] > 'z̓'
-'M' + [SHIFT T_R] > 'M̓'
-'l' + [SHIFT T_R] > 'l̓'
-'N' + [SHIFT T_R] > 'N̓'
-'m' + [SHIFT T_R] > 'm̓'
-'G' + [SHIFT T_R] > 'G̓'
-'W' + [SHIFT T_R] > 'W̓'
-'n' + [SHIFT T_R] > 'n̓'
-'g' + [SHIFT T_R] > 'g̓'
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > '7' layer('default')
-+ [SHIFT T_F_0] > 'G̱̓' layer('default')
++ [SHIFT T_F_0] > 'G̱̓' layer('default')
 + [SHIFT T_F] > 'G̱' layer('default')
 + [SHIFT T_G_0] > 'G̓' layer('default')
 + [SHIFT T_G] > 'G' layer('default')
@@ -83,51 +59,25 @@ store(&LAYOUTFILE) "fv_nlha7kapmxtsin.keyman-touch-layout"
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
-'o' + [T_Q] > 'ó'
-'I' + [T_Q] > 'Í'
-'E' + [T_Q] > 'É'
-'A' + [T_Q] > 'Á'
-'u' + [T_Q] > 'ú'
-'O' + [T_Q] > 'Ó'
-'e' + [T_Q] > 'é'
-'a' + [T_Q] > 'á'
-'i' + [T_Q] > 'í'
-'U' + [T_Q] > 'Ú'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
-+ [T_E_0] > 'é'
++ [T_E_0] > 'é'
 + [T_E] > 'e'
-'w' + [T_R] > 'w̓'
-'g̱' + [T_R] > 'g̱̓'
-'Y' + [T_R] > 'Y̓'
-'Z' + [T_R] > 'Z̓'
-'G̱' + [T_R] > 'G̱̓'
-'y' + [T_R] > 'y̓'
-'L' + [T_R] > 'L̓'
-'z' + [T_R] > 'z̓'
-'M' + [T_R] > 'M̓'
-'l' + [T_R] > 'l̓'
-'N' + [T_R] > 'N̓'
-'m' + [T_R] > 'm̓'
-'G' + [T_R] > 'G̓'
-'W' + [T_R] > 'W̓'
-'n' + [T_R] > 'n̓'
-'g' + [T_R] > 'g̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
-+ [T_U_0] > 'ú'
++ [T_U_0] > 'ú'
 + [T_U] > 'u'
-+ [T_I_0] > 'í'
++ [T_I_0] > 'í'
 + [T_I] > 'i'
-+ [T_O_0] > 'ó'
++ [T_O_0] > 'ó'
 + [T_O] > 'o'
 + [T_P] > 'p'
-+ [T_A_0] > 'á'
++ [T_A_0] > 'á'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > '7'
-+ [T_F_0] > 'g̱̓'
++ [T_F_0] > 'g̱̓'
 + [T_F] > 'g̱'
 + [T_G_0] > 'g̓'
 + [T_G] > 'g'
@@ -153,3 +103,53 @@ store(&LAYOUTFILE) "fv_nlha7kapmxtsin.keyman-touch-layout"
 
 c --- END OF TOUCH LAYOUT RULES ---
 
+c --- RULES SHARED ACROSS PLATFORMS ---
+
+store(NeedsAcute) 'aeiouAEIOU'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
+store(AcuteKeys) [K_SLASH] [T_ACU] [SHIFT T_ACU]
+
+any(NeedsAcute) + any (AcuteKeys) > index(HasAcute,1)
+
+
+store(NeedsComApos) 'glmnwyzGLNMWYZ'
+store(ComAposKeys) [K_LBRKT] [T_COMAPOS] [SHIFT T_COMAPOS]
+
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
+'g̱' + any(ComAposKeys) > 'g̱̓'
+'G̱' + any(ComAposKeys) > 'G̱̓'
+
+c --- BEGIN DESKTOP RULES ---
+store(NeedsLowLine) 'kgxKGX'
+store(LowLineKey) [K_RBRKT]
+
+any(NeedsLowLine) + any(LowLineKey) > index(NeedsLowLine,1) U+0331
+'g̓' + any(LowLineKey) > 'g̱̓'
+'G̓' + any(LowLineKey) > 'G̱̓'
+
+c --- language keys ----
++ [K_SLASH] > '́' c combining acute
++ [K_LBRKT] > '̓' c combining above comma
++ [K_RBRKT] > '̱' c combining macron below
+
+c --- original punctuation ---
++ [RALT K_SLASH] > '/'
++ [RALT SHIFT K_SLASH] > '/' c added so that slash can be typed while using Google Drive
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
+
+c --- stacking prevention ---
+store(AccentKeys) [K_SLASH] [K_LBRKT] [K_RBRKT]
+store(AboveAccents) U+0301 U+0313 c combining acute, combining above comma
+store(AboveAccentKeys)[K_SLASH] [K_LBRKT]
+store(BelowAccent) U+0331 c combining below macron
+store(BelowAccentKeys) [K_RBRKT]
+
+any(HasAcute) + any(AboveAccentKeys) > context beep
+any(AboveAccents) + any(AboveAccentKeys) > context beep
+any(BelowAccent) + any(BelowAccentKeys) > context beep
+'g̱̓' + any(AccentKeys) > context beep
+'G̱̓' + any(AccentKeys) > context beep
+
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
+any(NonLetters) + any(AccentKeys) > context beep
