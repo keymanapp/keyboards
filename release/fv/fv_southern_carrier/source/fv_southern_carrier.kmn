@@ -1,319 +1,453 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.2.1'
-store(&TARGETS) "mobile tablet"
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "caf"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᑐᑊᘁᗕᑋᗸ'
+store(&VISUALKEYBOARD) 'fv_southern_carrier.kvks'
+store(&KEYBOARDVERSION) '10.0.1'
 
 begin Unicode > use(main)
-
+ 
 group(main) using keys
 
+c --- START OF DESKTOP LAYOUT RULES ---
+
+c --- letter stores ---
+store(Vowels) 'ᐊᐅᐈᐉᐃ' c a u e i o
+store(VowelKeys) [K_A] [K_U] [K_E] [K_I] [K_O]
+store(BPVKeys) [K_B] [K_P] [K_V]
+store(Plosive) [K_QUOTE]
+
+store(BVowels) 'ᗭᗪᗫᗬᗩ' c ba bu be bi bo
+store(ChVowels) 'ᙠᙝᙞᙟᙜ' c cha chu che chi cho
+store(Ch_Vowels) 'ᘡᘞᘟᘠᘝ' c ch'a ch'u ch'e ch'i ch'o
+store(DVowels) 'ᑕᑐᑓᑔᑎ' c da du de di do
+store(DlVowels) 'ᘭᘪᘫᘬᘩ' c dla dlu dle dli dlo
+store(DzVowels) 'ᙍᙊᙋᙌᙉ' c dza dzu dze dzi dzo
+store(GVowels) 'ᗴᗱᗲᗳᗰ' c ga gu ge gi go
+store(GhVowels) 'ᗉᗆᗇᗈᗅ' c gha ghu ghe ghi gho
+store(HVowels) 'ᐸᐳᐶᐷᐱ' c ha hu he hi ho
+store(JVowels) 'ᘛᘗᘘᘙᘖ' c ja ju je ji jo
+store(KVowels) 'ᗺᗷᗸᗹᗶ' c ka ku ke ki ko
+store(K_Vowels) 'ᘀᗽᗾᗿᗼ' c k'a k'u k'e k'i k'o
+store(LVowels) 'ᘧᘤᘥᘦᘣ' c la lu le li lo
+store(LhVowels) 'ᘳᘰᘱᘲᘯ' c lha lhu lhe lhi lho
+store(MVowels) 'ᘍᘊᘋᘌᘉ' c ma mu me mi mo
+store(NVowels) 'ᘇᘄᘅᘆᘃ' c na nu ne ni no
+store(rVowels) 'ᗏᗌᗍᗎᗋ' c ra ru re ri ro
+store(SVowels) 'ᙓᙐᙑᙒᙏ' c sa su se si so
+store(ShVowels) 'ᙙᙖᙗᙘᙕ' c sha shu she shi sho
+store(TVowels) 'ᗡᗞᗟᗠᗝ' c ta tu te ti to
+store(T_Vowels) 'ᗧᗤᗥᗦᗣ' c t'a t'u t'e t'i t'o
+store(TlVowels) 'ᘹᘶᘷᘸᘵ' c tla tlu tle tli tlo
+store(Tl_Vowels) 'ᘿᘼᘽᘾᘻ' c tl'a tl'u tl'e tl'i tl'o
+store(TsVowels) 'ᙦᙣᙤᙥᙢ' c tsa tsu tse tsi tso
+store(Ts_Vowels) 'ᙬᙩᙪᙫᙨ' c ts'a ts'u ts'e ts'i ts'o
+store(WVowels) 'ᗕᗒᗓᗔᗑ' c wa wu we wi wo
+store(WhVowels) 'ᗛᗘᗙᗚᗗ' c wha whu whe whi who
+store(YVowels) 'ᘓᘐᘑᘒᘏ' c ya yu ye yi yo
+store(ZVowels) 'ᙅᙂᙃᙄᙁ' c za zu ze zi zo
+
+c --- rules and constraints ---
++ any(VowelKeys) > index(Vowels,1)
+'ᐃ' + [K_O] > 'ᐁ'
+'ᐁ' + [K_BKSP] > 'ᐃ'
+
++ any(BPVKeys) > 'ᗮ'
+'ᗮ' + any(VowelKeys) > index(BVowels,2)
+'ᗩ' + [K_O] > 'ᗨ'
+'ᗨ' + [K_BKSP] > 'ᗩ'
+
++ [K_C] > 'ᙠ'
+'ᙠ' + any(VowelKeys) > index(ChVowels,2)
+'ᙜ' + [K_O] > 'ᙛ'
+'ᙛ' + [K_BKSP] > 'ᙜ'
+
+'ᙠ' + [K_QUOTE] > 'ᘡ'
+'ᘡ' + any(VowelKeys) > index(Ch_Vowels,2)
+'ᘝ' + [K_O] > 'ᘜ'
+'ᘜ' + [K_BKSP] > 'ᘝ'
+
+'d' + any(VowelKeys) > index(DVowels,2)
+'ᑎ' + [K_O] > 'ᑌ'
+'ᑌ' + [K_BKSP] > 'ᑎ'
+
+'d' + [K_L] > 'ᘭ'
+'d' + [K_LBRKT] > 'ᐪ'
+'ᘭ' + any(VowelKeys) > index(DlVowels,2)
+'ᘩ' + [K_O] > 'ᘨ'
+'ᘨ' + [K_BKSP] > 'ᘩ'
+
+'d' + [K_Z] > 'ᙍ'
+'ᙍ' + any(VowelKeys) > index(DzVowels,2)
+'ᙉ' + [K_O] > 'ᙈ'
+'ᙈ' + [K_BKSP] > 'ᙉ'
+
++ [K_G] > 'ᐟ'
+'ᐟ' + any(VowelKeys) > index(GVowels,2)
+'ᗰ' + [K_O] > 'ᗯ'
+'ᗯ' + [K_BKSP] > 'ᗰ'
+
+'ᐟ' + [K_H] > 'ᐦ'
+'ᐦ'+ any(VowelKeys) > index(GhVowels,2)
+'ᗅ' + [K_O] > 'ᗄ'
+'ᗄ' + [K_BKSP] > 'ᗅ'
+
++ [K_H] > 'ᑋ'
+'ᑋ' + any(VowelKeys) > index(HVowels,2)
+'ᐱ' + [K_O] > 'ᐯ'
+'ᐯ' + [K_BKSP] > 'ᐱ'
+
+'j' + any(VowelKeys) > index(JVowels,2)
+'ᘖ' + [K_O] > 'ᘔ'
+'ᘔ' + [K_BKSP] > 'ᘖ'
+
++ [K_K] > 'ᐠ' 
+'ᐠ' + [K_H] > 'ᐥ'
+'ᐠ' + any(VowelKeys) > index(KVowels,2)
+'ᗶ' + [K_O] > 'ᗵ'
+'ᗵ' + [K_BKSP] > 'ᗶ'
+
+'ᐠ' + [K_QUOTE] > 'ᘁ'
+'ᘁ' + any(VowelKeys) > index(K_Vowels,2)
+'ᗼ' + [K_O] > 'ᗻ'
+'ᗻ' + [K_BKSP] > 'ᗼ'
+
++ [K_L] > 'ᑊ'
+'ᑊ' + any(VowelKeys) > index(LVowels,2)
+'ᘣ' + [K_O] > 'ᘢ'
+'ᘢ' + [K_BKSP] > 'ᘣ'
+
+'ᑊ' + [K_H] > 'ᒡ'
+'ᒡ' + any(VowelKeys) > index(LhVowels,2)
+'ᘯ' + [K_O] > 'ᘮ'
+'ᘮ' + [K_BKSP] > 'ᘯ'
+
++ [K_M] > 'ᒼ'
+'ᒼ' + any(VowelKeys) > index(MVowels,2)
+'ᘉ' + [K_O] > 'ᘈ'
+'ᘈ' + [K_BKSP] > 'ᘉ'
+
++ [K_N] > 'ᐣ'
+'ᐣ' + [K_G] > 'ᓑ'
+'ᐣ' + any(VowelKeys) > index(NVowels,2)
+'ᘃ' + [K_O] > 'ᘂ'
+'ᘂ' + [K_BKSP] > 'ᘃ'
+
++ [K_R] > 'ᐥ'
+'ᐥ' + any(VowelKeys) > index(rVowels,2)
+'ᗋ' + [K_O] > 'ᗊ'
+'ᗊ' + [K_BKSP] > 'ᗋ'
+
++ [SHIFT K_R] > '+'
+'+' + any(VowelKeys) > 'r'index(Vowels,2)
+
++ [K_S] > 'ᔆ'
+'ᔆ' + any(VowelKeys) > index(SVowels,2)
+'ᙏ' + [K_O] > 'ᙎ'
+'ᙎ' + [K_BKSP] > 'ᙏ'
+
+'ᔆ' + [K_H] > 'ᙚ'
+'ᙚ' + any(VowelKeys) > index(ShVowels,2)
+'ᙕ' + [K_O] > 'ᙔ'
+'ᙔ' + [K_BKSP] > 'ᙕ'
+
++ [K_T] > 'ᐪ'
+'ᐪ' + any(VowelKeys) > index(TVowels,2)
+'ᗝ' + [K_O] > 'ᗜ'
+'ᗜ' + [K_BKSP] > 'ᗝ'
+
+'ᐪ' + [K_QUOTE] > 'ᗧ'
+'ᗧ' + any(VowelKeys) > index(T_Vowels,2)
+'ᗣ' + [K_O] > 'ᗢ'
+'ᗢ' + [K_BKSP] > 'ᗣ'
+
+'ᐪ' + [K_L] > 'ᘹ'
+'ᘹ' + any(VowelKeys) > index(TlVowels,2)
+'ᘵ' + [K_O] > 'ᘴ'
+'ᘴ' + [K_BKSP] > 'ᘵ'
+
+'ᘹ' + [K_QUOTE] > 'ᘿ'
+'ᘿ' + any(VowelKeys) > index(Tl_Vowels,2)
+'ᘻ' + [K_O] > 'ᘺ'
+'ᘺ' + [K_BKSP] > 'ᘻ'
+
+'ᐪ' + [K_S] > 'ᙦ'
+'ᙦ' + any(VowelKeys) > index(TsVowels,2)
+'ᙢ' + [K_O] > 'ᙡ'
+'ᙡ' + [K_BKSP] > 'ᙢ'
+
+'ᙦ' + [K_QUOTE] > 'ᙬ'
+'ᙬ' + any(VowelKeys) > index(Ts_Vowels,2)
+'ᙨ' + [K_O] > 'ᙧ'
+'ᙧ' + [K_BKSP] > 'ᙨ'
+
++ [K_W] > 'w'
+'w' + any(VowelKeys) > index(WVowels,2)
+'ᗑ' + [K_O] > 'ᗐ'
+'ᗐ' + [K_BKSP] > 'ᗑ'
+
+'w' + [K_H] > 'ᗛ'
+'ᗛ' + any(VowelKeys) > index(WhVowels,2)
+'ᗗ' + [K_O] > 'ᗖ'
+'ᗖ' + [K_BKSP] > 'ᗗ'
+
+'y' + any(VowelKeys) > index(YVowels,2)
+'ᘏ' + [K_O] > 'ᘎ'
+'ᘎ' + [K_BKSP] > 'ᘏ'
+
++ [K_Z] > 'ᙆ'
++ [SHIFT K_Z] > 'ᙇ'
+'ᙆ' + [K_H] > 'ᙇᙚ'
+'ᙆ' + any(VowelKeys) > index(ZVowels,2)
+'ᙁ' + [K_O] > 'ᙀ'
+'ᙀ' + [K_BKSP] > 'ᙁ'
+
+'ᗮ' + [K_QUOTE] > 'ᗮᗮ'
+'ᗮᗮ' + any(Plosive) > 'ᗮ' index(BVowels,3) 
+
+c --- deadkey and punctuation ---
++ [K_LBRKT] > deadkey(Deadkey) 
++ [K_COLON] > 'ᐧ'
++ [SHIFT K_8] > 'ᕯ'
++ [K_F] > 'ᶣ'
+
+c --- original punctuation ---
++ [RALT K_COLON] > ';'
++ [RALT K_LBRKT] > '['
++ [RALT SHIFT K_8] > '*'
 
 c --- START OF TOUCH LAYOUT RULES ---
 
-c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
-
 store(&LAYOUTFILE) 'fv_southern_carrier.keyman-touch-layout'
 
-+ [SHIFT T_Q] > 'ᒡ' layer('default')
-+ [SHIFT T_W_0] > 'ᙚ' layer('default')
-+ [SHIFT T_W] > 'ᣵ' layer('default')
-+ [SHIFT T_E_0] > 'ᗺ' layer('default')
-+ [SHIFT T_E_1] > 'ᘀ' layer('default')
-+ [SHIFT T_E] > 'ᗴ' layer('default')
-+ [SHIFT T_R_0] > 'ᘹ' layer('default')
-+ [SHIFT T_R_1] > 'ᘿ' layer('default')
-+ [SHIFT T_R] > 'ᘳ' layer('default')
-+ [SHIFT T_T_0] > 'ᘭ' layer('default')
-+ [SHIFT T_T] > 'ᘧ' layer('default')
-+ [SHIFT T_Y_0] > 'ᗛ' layer('default')
-+ [SHIFT T_Y] > 'ᗕ' layer('default')
-+ [SHIFT T_U] > 'ᗭ' layer('default')
-+ [SHIFT T_I_0] > 'ᙠ' layer('default')
-+ [SHIFT T_I] > 'ᙙ' layer('default')
-+ [SHIFT T_O] > 'ᘍ' layer('default')
-+ [SHIFT T_P_0] > 'ᗏ' layer('default')
-+ [SHIFT T_P] > 'ᗉ' layer('default')
-+ [SHIFT T_A] > 'ᑊ' layer('default')
-+ [SHIFT T_S_0] > 'ᐦ' layer('default')
-+ [SHIFT T_S] > 'ᐥ' layer('default')
-+ [SHIFT T_D_0] > 'ᗷ' layer('default')
-+ [SHIFT T_D_1] > 'ᗽ' layer('default')
-+ [SHIFT T_D] > 'ᗱ' layer('default')
-+ [SHIFT T_F_0] > 'ᘶ' layer('default')
-+ [SHIFT T_F_1] > 'ᘼ' layer('default')
-+ [SHIFT T_F] > 'ᘰ' layer('default')
-+ [SHIFT T_G_0] > 'ᘪ' layer('default')
-+ [SHIFT T_G] > 'ᘤ' layer('default')
-+ [SHIFT T_H_0] > 'ᗘ' layer('default')
-+ [SHIFT T_H] > 'ᗒ' layer('default')
-+ [SHIFT T_J] > 'ᗪ' layer('default')
-+ [SHIFT T_K_0] > 'ᙝ' layer('default')
-+ [SHIFT T_K] > 'ᙖ' layer('default')
-+ [SHIFT T_L] > 'ᘊ' layer('default')
-+ [SHIFT T_COLON_0] > 'ᗌ' layer('default')
-+ [SHIFT T_COLON] > 'ᗆ' layer('default')
-+ [SHIFT T_Z_0] > 'ᓑ' layer('default')
-+ [SHIFT T_Z] > 'ᒼ' layer('default')
-+ [SHIFT T_X_0] > 'ᗶ' layer('default')
-+ [SHIFT T_X_1] > 'ᗼ' layer('default')
-+ [SHIFT T_X] > 'ᗰ' layer('default')
-+ [SHIFT T_C_0] > 'ᘵ' layer('default')
-+ [SHIFT T_C_1] > 'ᘻ' layer('default')
-+ [SHIFT T_C] > 'ᘯ' layer('default')
-+ [SHIFT T_V_0] > 'ᘩ' layer('default')
-+ [SHIFT T_V] > 'ᘣ' layer('default')
-+ [SHIFT T_B_0] > 'ᗗ' layer('default')
-+ [SHIFT T_B] > 'ᗑ' layer('default')
-+ [SHIFT T_N] > 'ᗩ' layer('default')
-+ [SHIFT T_M_0] > 'ᙜ' layer('default')
-+ [SHIFT T_M] > 'ᙕ' layer('default')
-+ [SHIFT T_COMMA] > 'ᘉ' layer('default')
-+ [SHIFT T_PERIOD_0] > 'ᗋ' layer('default')
-+ [SHIFT T_PERIOD] > 'ᗅ' layer('default')
-+ [SHIFT T_x30_0] > 'ᐟᗕ' layer('default')
-+ [SHIFT T_x30_1] > 'ᐟᗒ' layer('default')
-+ [SHIFT T_x30_2] > 'ᐟᗑ' layer('default')
-+ [SHIFT T_x30] > 'ᐟ' layer('default')
-+ [SHIFT T_x31_0] > 'ᐠᗕ' layer('default')
-+ [SHIFT T_x31_1] > 'ᐠᗒ' layer('default')
-+ [SHIFT T_x31_2] > 'ᐠᗑ' layer('default')
-+ [SHIFT T_x31] > 'ᐠ' layer('default')
-+ [SHIFT T_x32_0] > 'ᘁᗕ' layer('default')
-+ [SHIFT T_x32_1] > 'ᘁᗒ' layer('default')
-+ [SHIFT T_x32_2] > 'ᘁᗑ' layer('default')
-+ [SHIFT T_x32] > 'ᘁ' layer('default')
-+ [SHIFT T_x34] > 'ᗮ' layer('default')
-'ᙐ' + [T_Q] > 'ᙣ'
-'ᘦ' + [T_Q] > 'ᘬ'
-'ᑔ' + [T_Q] > 'ᗠ'
-'ᙑ' + [T_Q] > 'ᙤ'
-'ᘧ' + [T_Q] > 'ᘭ'
-'ᑕ' + [T_Q] > 'ᗡ'
-'ᗐ' + [T_Q] > 'ᗖ'
-'ᗑ' + [T_Q] > 'ᗗ'
-'ᗒ' + [T_Q] > 'ᗘ'
-'ᗓ' + [T_Q] > 'ᗙ'
-'ᗔ' + [T_Q] > 'ᗚ'
-'ᙒ' + [T_Q] > 'ᙥ'
-'ᗕ' + [T_Q] > 'ᗛ'
-'ᙓ' + [T_Q] > 'ᙦ'
-'ᙔ' + [T_Q] > 'ᙛ'
-'ᙕ' + [T_Q] > 'ᙜ'
-'ᙖ' + [T_Q] > 'ᙝ'
-'ᙗ' + [T_Q] > 'ᙞ'
-'ᙘ' + [T_Q] > 'ᙟ'
-'ᘮ' + [T_Q] > 'ᘴ'
-'ᙙ' + [T_Q] > 'ᙠ'
-'ᘯ' + [T_Q] > 'ᘵ'
-'ᘰ' + [T_Q] > 'ᘶ'
-'ᘱ' + [T_Q] > 'ᘷ'
-'ᘲ' + [T_Q] > 'ᘸ'
-'ᘳ' + [T_Q] > 'ᘹ'
-'ᘎ' + [T_Q] > 'ᘔ'
-'ᘏ' + [T_Q] > 'ᘖ'
-'ᘐ' + [T_Q] > 'ᘗ'
-'ᘑ' + [T_Q] > 'ᘘ'
-'ᘒ' + [T_Q] > 'ᘙ'
-'ᘓ' + [T_Q] > 'ᘛ'
-'ᙀ' + [T_Q] > 'ᙈ'
-'ᙁ' + [T_Q] > 'ᙉ'
-'ᙂ' + [T_Q] > 'ᙊ'
-'ᗄ' + [T_Q] > 'ᗊ'
-'ᙃ' + [T_Q] > 'ᙋ'
-'ᗯ' + [T_Q] > 'ᗵ'
-'ᗅ' + [T_Q] > 'ᗋ'
-'ᙄ' + [T_Q] > 'ᙌ'
-'ᗰ' + [T_Q] > 'ᗶ'
-'ᗆ' + [T_Q] > 'ᗌ'
-'ᙅ' + [T_Q] > 'ᙍ'
-'ᗱ' + [T_Q] > 'ᗷ'
-'ᗇ' + [T_Q] > 'ᗍ'
-'ᗲ' + [T_Q] > 'ᗸ'
-'ᗈ' + [T_Q] > 'ᗎ'
-'ᗳ' + [T_Q] > 'ᗹ'
-'ᑌ' + [T_Q] > 'ᗜ'
-'ᗉ' + [T_Q] > 'ᗏ'
-'ᗴ' + [T_Q] > 'ᗺ'
-'ᑎ' + [T_Q] > 'ᗝ'
-'ᑐ' + [T_Q] > 'ᗞ'
-'ᘢ' + [T_Q] > 'ᘨ'
-'ᘣ' + [T_Q] > 'ᘩ'
-'ᙎ' + [T_Q] > 'ᙡ'
-'ᘤ' + [T_Q] > 'ᘪ'
-'ᙏ' + [T_Q] > 'ᙢ'
-'ᘥ' + [T_Q] > 'ᘫ'
-'ᑓ' + [T_Q] > 'ᗟ'
-+ [T_W] > '˙'
-+ [T_E] > 'ᐊ'
-+ [T_R] > 'ᘇ'
-+ [T_T_0] > 'ᗡ'
-+ [T_T_1] > 'ᗧ'
-+ [T_T] > 'ᑕ'
-+ [T_Y_0] > 'ᙦ'
-+ [T_Y_1] > 'ᙬ'
-+ [T_Y] > 'ᙓ'
-+ [T_U_0] > 'ᘛ'
-+ [T_U_1] > 'ᘡ'
-+ [T_U] > 'ᘓ'
-+ [T_I_0] > 'ᙍ'
-+ [T_I] > 'ᙅ'
-+ [T_O] > 'ᐸ'
-'ᘪ' + [T_P] > 'ᘫ'
-'ᘐ' + [T_P] > 'ᘑ'
-'ᘞ' + [T_P] > 'ᘟ'
-'ᗌ' + [T_P] > 'ᗍ'
-'ᙣ' + [T_P] > 'ᙤ'
-'ᐳ' + [T_P] > 'ᐶ'
-'ᘄ' + [T_P] > 'ᘅ'
-'ᙖ' + [T_P] > 'ᙗ'
-'ᗷ' + [T_P] > 'ᗸ'
-'ᗪ' + [T_P] > 'ᗫ'
-'ᑐ' + [T_P] > 'ᑓ'
-'ᘼ' + [T_P] > 'ᘽ'
-'ᙊ' + [T_P] > 'ᙋ'
-'ᗞ' + [T_P] > 'ᗟ'
-'ᘰ' + [T_P] > 'ᘱ'
-'ᗒ' + [T_P] > 'ᗓ'
-'ᘤ' + [T_P] > 'ᘥ'
-'ᘗ' + [T_P] > 'ᘘ'
-'ᙩ' + [T_P] > 'ᙪ'
-'ᘊ' + [T_P] > 'ᘋ'
-'ᗆ' + [T_P] > 'ᗇ'
-'ᗽ' + [T_P] > 'ᗾ'
-'ᙝ' + [T_P] > 'ᙞ'
-'ᙂ' + [T_P] > 'ᙃ'
-'ᙐ' + [T_P] > 'ᙑ'
-'ᐅ' + [T_P] > 'ᐈ'
-'ᗱ' + [T_P] > 'ᗲ'
-'ᗤ' + [T_P] > 'ᗥ'
-'ᘶ' + [T_P] > 'ᘷ'
-'ᗘ' + [T_P] > 'ᗙ'
-'ᘏ' + [T_A] > 'ᘝ'
-'ᑌ' + [T_A] > 'ᗢ'
-'ᗴ' + [T_A] > 'ᘀ'
-'ᘐ' + [T_A] > 'ᘞ'
-'ᑎ' + [T_A] > 'ᗣ'
-'ᘑ' + [T_A] > 'ᘟ'
-'ᘒ' + [T_A] > 'ᘠ'
-'ᘮ' + [T_A] > 'ᘺ'
-'ᘓ' + [T_A] > 'ᘡ'
-'ᑐ' + [T_A] > 'ᗤ'
-'ᘯ' + [T_A] > 'ᘻ'
-'ᘰ' + [T_A] > 'ᘼ'
-'ᘱ' + [T_A] > 'ᘽ'
-'ᑓ' + [T_A] > 'ᗥ'
-'ᘲ' + [T_A] > 'ᘾ'
-'ᑔ' + [T_A] > 'ᗦ'
-'ᙎ' + [T_A] > 'ᙧ'
-'ᘳ' + [T_A] > 'ᘿ'
-'ᑕ' + [T_A] > 'ᗧ'
-'ᗯ' + [T_A] > 'ᗻ'
-'ᙏ' + [T_A] > 'ᙨ'
-'ᗰ' + [T_A] > 'ᗼ'
-'ᙐ' + [T_A] > 'ᙩ'
-'ᗱ' + [T_A] > 'ᗽ'
-'ᙑ' + [T_A] > 'ᙪ'
-'ᗲ' + [T_A] > 'ᗾ'
-'ᙒ' + [T_A] > 'ᙫ'
-'ᘎ' + [T_A] > 'ᘜ'
-'ᗳ' + [T_A] > 'ᗿ'
-'ᙓ' + [T_A] > 'ᙬ'
-+ [T_S] > 'ᐣ'
-+ [T_D] > 'ᐅ'
-+ [T_F] > 'ᘄ'
-+ [T_G_0] > 'ᗞ'
-+ [T_G_1] > 'ᗤ'
-+ [T_G] > 'ᑐ'
-+ [T_H_0] > 'ᙣ'
-+ [T_H_1] > 'ᙩ'
-+ [T_H] > 'ᙐ'
-+ [T_J_0] > 'ᘗ'
-+ [T_J_1] > 'ᘞ'
-+ [T_J] > 'ᘐ'
-+ [T_K_0] > 'ᙊ'
-+ [T_K] > 'ᙂ'
-+ [T_L] > 'ᐳ'
-'ᘪ' + [T_COLON] > 'ᘬ'
-'ᘐ' + [T_COLON] > 'ᘒ'
-'ᘞ' + [T_COLON] > 'ᘠ'
-'ᗌ' + [T_COLON] > 'ᗎ'
-'ᙣ' + [T_COLON] > 'ᙥ'
-'ᐳ' + [T_COLON] > 'ᐷ'
-'ᘄ' + [T_COLON] > 'ᘆ'
-'ᙖ' + [T_COLON] > 'ᙘ'
-'ᗷ' + [T_COLON] > 'ᗹ'
-'ᗪ' + [T_COLON] > 'ᗬ'
-'ᑐ' + [T_COLON] > 'ᑔ'
-'ᘼ' + [T_COLON] > 'ᘾ'
-'ᙊ' + [T_COLON] > 'ᙌ'
-'ᗞ' + [T_COLON] > 'ᗠ'
-'ᘰ' + [T_COLON] > 'ᘲ'
-'ᗒ' + [T_COLON] > 'ᗔ'
-'ᘤ' + [T_COLON] > 'ᘦ'
-'ᘗ' + [T_COLON] > 'ᘙ'
-'ᙩ' + [T_COLON] > 'ᙫ'
-'ᘊ' + [T_COLON] > 'ᘌ'
-'ᗆ' + [T_COLON] > 'ᗈ'
-'ᗽ' + [T_COLON] > 'ᗿ'
-'ᙝ' + [T_COLON] > 'ᙟ'
-'ᙂ' + [T_COLON] > 'ᙄ'
-'ᙐ' + [T_COLON] > 'ᙒ'
-'ᐅ' + [T_COLON] > 'ᐉ'
-'ᗱ' + [T_COLON] > 'ᗳ'
-'ᗤ' + [T_COLON] > 'ᗦ'
-'ᘶ' + [T_COLON] > 'ᘸ'
-'ᗘ' + [T_COLON] > 'ᗚ'
-+ [T_Z] > 'ᐪ'
-+ [T_X] > 'ᐃ'
-+ [T_C] > 'ᘃ'
-+ [T_V_0] > 'ᗝ'
-+ [T_V_1] > 'ᗣ'
-+ [T_V] > 'ᑎ'
-+ [T_B_0] > 'ᙢ'
-+ [T_B_1] > 'ᙨ'
-+ [T_B] > 'ᙏ'
-+ [T_N_0] > 'ᘖ'
-+ [T_N_1] > 'ᘝ'
-+ [T_N] > 'ᘏ'
-+ [T_M_0] > 'ᙉ'
-+ [T_M] > 'ᙁ'
-+ [T_COMMA] > 'ᐱ'
-'ᘏ' + [T_PERIOD] > 'ᘎ'
-'ᗋ' + [T_PERIOD] > 'ᗊ'
-'ᐱ' + [T_PERIOD] > 'ᐯ'
-'ᘝ' + [T_PERIOD] > 'ᘜ'
-'ᙢ' + [T_PERIOD] > 'ᙡ'
-'ᘃ' + [T_PERIOD] > 'ᘂ'
-'ᑎ' + [T_PERIOD] > 'ᑌ'
-'ᗶ' + [T_PERIOD] > 'ᗵ'
-'ᙕ' + [T_PERIOD] > 'ᙔ'
-'ᗩ' + [T_PERIOD] > 'ᗨ'
-'ᘻ' + [T_PERIOD] > 'ᘺ'
-'ᙉ' + [T_PERIOD] > 'ᙈ'
-'ᗝ' + [T_PERIOD] > 'ᗜ'
-'ᘯ' + [T_PERIOD] > 'ᘮ'
-'ᗑ' + [T_PERIOD] > 'ᗐ'
-'ᘣ' + [T_PERIOD] > 'ᘢ'
-'ᘖ' + [T_PERIOD] > 'ᘔ'
-'ᙨ' + [T_PERIOD] > 'ᙧ'
-'ᘉ' + [T_PERIOD] > 'ᘈ'
-'ᗅ' + [T_PERIOD] > 'ᗄ'
-'ᗼ' + [T_PERIOD] > 'ᗻ'
-'ᙜ' + [T_PERIOD] > 'ᙛ'
-'ᐃ' + [T_PERIOD] > 'ᐁ'
-'ᙁ' + [T_PERIOD] > 'ᙀ'
-'ᙏ' + [T_PERIOD] > 'ᙎ'
-'ᗰ' + [T_PERIOD] > 'ᗯ'
-'ᗣ' + [T_PERIOD] > 'ᗢ'
-'ᘵ' + [T_PERIOD] > 'ᘴ'
-'ᗗ' + [T_PERIOD] > 'ᗖ'
-'ᘩ' + [T_PERIOD] > 'ᘨ'
-+ [T_x69_0] > 'ᙇ'
-+ [T_x69] > 'ᙆ'
-+ [T_x71] > 'ᔆ'
-+ [T_x72] > 'ᑋ'
+c NOTE: Key names that have a consonant or two consonants + 'p' are used to representive plosive sounds as apostrophe cannot be used
 
-c --- END OF TOUCH LAYOUT RULES ---
+c --- letter stores ----
 
+store(VOW_NoA) 'ᐅᐈᐉᐃᐁ' c u e i o oo
+store(H_NoA) 'ᐳᐶᐷᐱᐯ' c hu he hi ho hoo
+store(GH_NoA) 'ᗆᗇᗈᗅᗄ' c ghu ghe ghi gho ghoo
+store(Rr_NoA) 'ᗌᗍᗎᗋᗊ' c ra ru re ri ro roo. NOTE: not an English r - this is represented on the shift layer
+store(W_NoA) 'ᗒᗓᗔᗑᗐ' c wu we wi wo woo
+store(WH_NoA) 'ᗘᗙᗚᗗᗖ' c whu whe whi who whoo
+store(D_NoA) 'ᑐᑓᑔᑎᑌ' c du de di do doo
+store(T_NoA) 'ᗞᗟᗠᗝᗜ' c tu te ti to too
+store(TP_NoA) 'ᗤᗥᗦᗣᗢ' c t'u t'e t'i t'o t'oo
+store(B_NoA) 'ᗪᗫᗬᗩᗨ' c bu be bi bo boo
+store(G_NoA) 'ᗱᗲᗳᗰᗯ' c gu ge gi go goo
+store(K_NoA) 'ᗷᗸᗹᗶᗵ' c ku ke ki ko koo
+store(KP_NoA) 'ᗽᗾᗿᗼᗻ' c k'u k'e k'i k'o k'oo
+store(N_NoA) 'ᘄᘅᘆᘃᘂ' c nu ne ni no noo
+store(M_NoA) 'ᘊᘋᘌᘉᘈ' c mu me mi mo moo
+store(Y_NoA) 'ᘐᘑᘒᘏᘎ' c yu ye yi yo yoo
+store(J_NoA) 'ᘗᘘᘙᘖᘔ' c ju je ji jo joo
+store(CHP_NoA) 'ᘞᘟᘠᘝᘜ' c ch'u ch'e ch'i ch'o ch'oo
+store(L_NoA) 'ᘤᘥᘦᘣᘢ' c lu le li lo loo
+store(DL_NoA) 'ᘪᘫᘬᘩᘨ' c dlu dle dli dlo dloo
+store(LH_NoA) 'ᘰᘱᘲᘯᘮ' c lhu lhe lhi lho lhoo
+store(TL_NoA) 'ᘶᘷᘸᘵᘴ' c tlu tle tli tlo tloo
+store(TLP_NoA) 'ᘼᘽᘾᘻᘺ' c tl'u tl'e tl'i tl'o tl'oo
+store(Z_NoA) 'ᙂᙃᙄᙁᙀ' c zu ze zi zo zoo
+store(DZ_NoA) 'ᙊᙋᙌᙉᙈ' c dzu dze dzi dzo dzoo
+store(S_NoA) 'ᙐᙑᙒᙏᙎ' c su se si so soo
+store(SH_NoA) 'ᙖᙗᙘᙕᙔ'c shu she shi sho shoo
+store(CH_NoA) 'ᙝᙞᙟᙜᙛ' c chu che chi cho choo
+store(TS_NoA) 'ᙣᙤᙥᙢᙡ' c tsu tse tsi tso tsoo
+store(TSP_NoA) 'ᙩᙪᙫᙨᙧ' c ts'u ts'e ts'i ts'o ts'oo
+
+c --- key stores ---
+
+store(VOW_NoAKeys) [T_U] [T_E] [T_I] [T_O] [T_OO]
+store(H_NoAKeys) [T_HU] [T_HE] [T_HI] [T_HO] [T_HOO]
+store(GH_NoAKeys) [T_GHU] [T_GHE] [T_GHI] [T_GHO] [T_GHOO]
+store(Rr_NoAKeys) [T_RrU] [T_RrE] [T_RrI] [T_RrO] [T_RrOO]
+store(W_NoAKeys) [T_WU] [T_WE] [T_WI] [T_WO] [T_WOO]
+store(WH_NoAKeys) [T_WHU] [T_WHE] [T_WHI] [T_WHO] [T_WHOO]
+store(D_NoAKeys) [T_DU] [T_DE] [T_DI] [T_DO] [T_DOO]
+store(T_NoAKeys) [T_TU] [T_TE] [T_TI] [T_TO] [T_TOO]
+store(TP_NoAKeys) [T_TPU] [T_TPE] [T_TPI] [T_TPO] [T_TPOO]
+store(B_NoAKeys) [T_BU] [T_BE] [T_BI] [T_BO] [T_BOO]
+store(G_NoAKeys) [T_GU] [T_GE] [T_GI] [T_GO] [T_GOO]
+store(K_NoAKeys) [T_KU] [T_KE] [T_KI] [T_KO] [T_KOO]
+store(KP_NoAKeys) [T_KPU] [T_KPE] [T_KPI] [T_KPO] [T_KPOO]
+store(N_NoAKeys) [T_NU] [T_NE] [T_NI] [T_NO] [T_NOO]
+store(M_NoAKeys) [T_MU] [T_ME] [T_MI] [T_MO] [T_MOO]
+store(Y_NoAKeys) [T_YU] [T_YE] [T_YI] [T_YO] [T_YOO]
+store(J_NoAKeys) [T_JU] [T_JE] [T_JI] [T_JO] [T_JOO]
+store(CHP_NoAKeys) [T_CHPU] [T_CHPE] [T_CHPI] [T_CHPO] [T_CHPOO]
+store(L_NoAKeys) [T_LU] [T_LE] [T_LI] [T_LO] [T_LOO]
+store(DL_NoAKeys) [T_DLU] [T_DLE] [T_DLI] [T_DLO] [T_DLOO]
+store(LH_NoAKeys) [T_LHU] [T_LHE] [T_LHI] [T_LHO] [T_LHOO]
+store(TL_NoAKeys) [T_TLU] [T_TLE] [T_TLI] [T_TLO] [T_TLOO]
+store(TLP_NoAKeys) [T_TLPU] [T_TLPE] [T_TLPI] [T_TLPO] [T_TLPOO]
+store(Z_NoAKeys) [T_ZU] [T_ZE] [T_ZI] [T_ZO] [T_ZOO]
+store(DZ_NoAKeys) [T_DZU] [T_DZE] [T_DZI] [T_DZO] [T_DZOO]
+store(S_NoAKeys) [T_SU] [T_SE] [T_SI] [T_SO] [T_SOO]
+store(SH_NoAKeys) [T_SHU] [T_SHE] [T_SHI] [T_SHO] [T_SHOO]
+store(CH_NoAKeys) [T_CHU] [T_CHE] [T_CHI] [T_CHO] [T_CHOO]
+store(TS_NoAKeys) [T_TSU] [T_TSE] [T_TSI] [T_TSO] [T_TSOO]
+store(TSP_NoAKeys) [T_TSPU] [T_TSPE] [T_TSPI] [T_TSPO] [T_TSPOO]
+
+
+store(Letters) 'ᐊᐅᐈᐉᐃᐁᐸᐳᐶᐷᐱᐯᗉᗆᗇᗈᗅᗄᗏᗌᗍᗎᗋᗊᗕᗒᗓᗔᗑᗐᗛᗘᗙᗚᗗᗖᑕᑐᑓᑔᑎᑌᗡᗞᗟᗠᗝᗜᗧᗤᗥᗦᗣᗢᗭᗪᗫᗬᗩᗨᗴᗱᗲᗳᗰᗯᗺᗷᗸᗹᗶᗵᘀᗽᗾᗿᗼᗻᘇᘄᘅᘆᘃᘂᘍᘊᘋᘌᘉᘈᘓᘐᘑᘒᘏᘎᘛᘗᘘᘙᘖᘔᘡᘞᘟᘠᘝᘜᘧᘤᘥᘦᘣᘢᘭᘪᘫᘬᘩᘨᘳᘰᘱᘲᘯᘮᘹᘶᘷᘸᘵᘴᘿᘼᘽᘾᘻᘺᙅᙂᙃᙄᙁᙀᙍᙊᙋᙌᙉᙈᙓᙐᙑᙒᙏᙎᙙᙖᙗᙘᙕᙔᙠᙝᙞᙟᙜᙛᙦᙣᙤᙥᙢᙡᙬᙩᙪᙫᙨᙧ'
+store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B] [T_G] [T_K] [T_KP] [T_N] [T_M] [T_Y] [T_J] [T_CHP] [T_L] [T_DL] [T_LH] [T_TL] [T_TLP] [T_Z] [T_DZ] [T_S] [T_SH] [T_CH] [T_TS] [T_TSP]
+
++ [T_VOW] > 'ᐊ'
++ [T_A] > 'ᐊ'
+'ᐊ' + any(VOW_NoAKeys) > index(VOW_NoA,2)
++ any(VOW_NoAKeys) > index(VOW_NoA,1) 
+
+
++ [T_H] > 'ᐸ'
++ [T_HA] > 'ᐸ'
+'ᐸ' + any(H_NoAKeys) > index(H_NoA,2)
++ any(H_NoAKeys) > index(H_NoA,1)
+
++ [T_GH] > 'ᗉ'
++ [T_GHA] > 'ᗉ'
+'ᗉ' + any(GH_NoAKeys) > index(GH_NoA,2)
++ any(GH_NoAKeys) > index(GH_NoA,1) 
+
++ [T_Rr] > 'ᗏ'
++ [T_Rra] > 'ᗏ'
+'ᗏ' + any(Rr_NoAKeys) > index(Rr_NoA,2)
++ any(Rr_NoAKeys) > index(Rr_NoA,1)
+
++ [T_W] > 'ᗕ'
++ [T_WA] > 'ᗕ'
+'ᗕ' + any(W_NoAKeys) > index(W_NoA,2)
++ any(W_NoAKeys) > index(W_NoA,1)
+
++ [T_WH] > 'ᗛ'
++ [T_WHA] > 'ᗛ'
+'ᗛ' + any(WH_NoAKeys) > index(WH_NoA,2)
++ any(WH_NoAKeys) > index(WH_NoA,1)
+
++ [T_D] > 'ᑕ'
++ [T_DA] > 'ᑕ'
+'ᑕ' + any(D_NoAKeys) > index(D_NoA,2)
++ any(D_NoAKeys) > index(D_NoA,1)
+
++ [T_T] > 'ᗡ'
++ [T_TA] > 'ᗡ'
+'ᗡ' + any(T_NoAKeys) > index(T_NoA,2) 
++ any(T_NoAKeys) > index(T_NoA,1)
+
++ [T_TP] > 'ᗧ'
++ [T_TPA] > 'ᗧ'
+'ᗧ' + any(TP_NoAKeys) > index(TP_NoA,2)
++ any(TP_NoAKeys) > index(TP_NoA,1)
+
++ [T_B] > 'ᗭ'
++ [T_BA] > 'ᗭ'
+'ᗭ' + any(B_NoAKeys) > index(B_NoA,2)
++ any(B_NoAKeys) > index(B_NoA,1)
+
++ [T_G] > 'ᗴ'
++ [T_GA] > 'ᗴ'
+'ᗴ' + any(G_NoAKeys) > index(G_NoA,2)
++ any(G_NoAKeys) > index(G_NoA,1)
+
++ [T_K] > 'ᗺ'
++ [T_KA] > 'ᗺ'
+'ᗺ' + any(K_NoAKeys) > index(K_NoA,2)
++ any(K_NoAKeys) > index(K_NoA,1)
+
++ [T_KP] > 'ᘀ'
++ [T_KPA] > 'ᘀ'
+'ᘀ' + any(KP_NoAKeys) > index(KP_NoA,2)
++ any(KP_NoAKeys) > index(KP_NoA,1)
+
++ [T_N] > 'ᘇ'
++ [T_NA] > 'ᘇ'
+'ᘇ' + any(N_NoAKeys) > index(N_NoA,2)
++ any(N_NoAKeys) > index(N_NoA,1)
+
++ [T_M] > 'ᘍ'
++ [T_MA] > 'ᘍ'
+'ᘍ' + any(M_NoAKeys) > index(M_NoA,2)
++ any(M_NoAKeys) > index(M_NoA,1)
+
++ [T_Y] > 'ᘓ'
++ [T_YA] > 'ᘓ'
+'ᘓ' + any(Y_NoAKeys) > index(Y_NoA,2)
++ any(Y_NoAKeys) > index(Y_NoA,1)
+
++ [T_J] > 'ᘛ'
++ [T_JA] > 'ᘛ'
+'ᘛ' + any(J_NoAKeys) > index(J_NoA,2)
++ any(J_NoAKeys) > index(J_NoA,1)
+
++ [T_CHP] > 'ᘡ'
++ [T_CHPA] > 'ᘡ'
+'ᘡ' + any(CHP_NoAKeys) > index(CHP_NoA,2)
++ any(CHP_NoAKeys) > index(CHP_NoA,1)
+
++ [T_L] > 'ᘧ'
++ [T_LA] > 'ᘧ'
+'ᘧ' + any(L_NoAKeys) > index(L_NoA,2)
++ any(L_NoAKeys) > index(L_NoA,1)
+
++ [T_DL] > 'ᘭ'
++ [T_DLA] > 'ᘭ'
+'ᘭ' + any(DL_NoAKeys) > index(DL_NoA,2)
++ any(DL_NoAKeys) > index(DL_NoA,1)
+
++ [T_LH] > 'ᘳ'
++ [T_LHA] > 'ᘳ'
+'ᘳ' + any(LH_NoAKeys) > index(LH_NoA,2)
++ any(LH_NoAKeys) > index(LH_NoA,1)
+
++ [T_TL] > 'ᘹ'
++ [T_TLA] > 'ᘹ'
+'ᘹ' + any(TL_NoAKeys) > index(TL_NoA,2)
++ any(TL_NoAKeys) > index(TL_NoA,1)
+
++ [T_TLP] > 'ᘿ' 
++ [T_TLPA] > 'ᘿ'
+'ᘿ' + any(TLP_NoAKeys) > index(TLP_NoA,2)
++ any(TLP_NoAKeys) > index(TLP_NoA,1)
+
++ [T_Z] > 'ᙅ'
++ [T_ZA] > 'ᙅ'
+'ᙅ' + any(Z_NoAKeys) > index(Z_NoA,2)
++ any(Z_NoAKeys) > index(Z_NoA,1)
+
++ [T_DZ] > 'ᙍ'
++ [T_DZA] > 'ᙍ'
+'ᙍ' + any(DZ_NoAKeys) > index(DZ_NoA,2)
++ any(DZ_NoAKeys) > index(DZ_NoA,1)
+
++ [T_S] > 'ᙓ'
++ [T_SA] > 'ᙓ'
+'ᙓ' + any(S_NoAKeys) > index(S_NoA,2)
++ any(S_NoAKeys) > index(S_NoA,1)
+
++ [T_SH] > 'ᙙ'
++ [T_SHA] > 'ᙙ'
+'ᙙ' + any(SH_NoAKeys) > index(SH_NoA,2)
++ any(SH_NoAKeys) > index(SH_NoA,1)
+
++ [T_CH] > 'ᙠ'
++ [T_CHA] > 'ᙠ'
+'ᙠ' + any(CH_NoAKeys) > index(CH_NoA,2)
++ any(CH_NoAKeys) > index(CH_NoA,1)
+
++ [T_TS] > 'ᙦ'
++ [T_TSA] > 'ᙦ'
+'ᙦ' + any(TS_NoAKeys) > index(TS_NoA,2)
++ any(TS_NoAKeys) > index(TS_NoA,1)
+
++ [T_TSP] > 'ᙬ'
++ [T_TSPA] > 'ᙬ'
+'ᙬ' + any(TSP_NoAKeys) > index(TSP_NoA,2)
++ any(TSP_NoAKeys) > index(TSP_NoA,1)
+
+c Preventing navigation keys from outputting when swapping between syllable sets while typing
+any(Letters) + any(NavKeys) > index(Letters,1) nul
+
+c Individual Finals
++ [T_ZH] > 'ᙇᙚ'
++ [T_PP] > 'ᗮᗮ'
++ [T_VFIN] > 'ᘁᗮ'

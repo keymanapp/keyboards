@@ -1,10 +1,10 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) "Khmer Angkor"
-store(&COPYRIGHT) '© 2015-2022 SIL International'
+store(&COPYRIGHT) '© 2015-2024 SIL International'
 store(&MESSAGE) "More than just a Khmer Unicode keyboard."
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'khmer_angkor.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.3.1'
 store(&BITMAP) 'khmer_angkor.ico'
 store(&VISUALKEYBOARD) 'khmer_angkor.kvks'
 
@@ -144,7 +144,7 @@ store(input_subcons) \
 
 store(subcons) \
                        U+1780 U+1781 U+1782 U+1783 U+1784 U+1785 U+1786 U+1787 \
-                       U+1788 U+1789 U+178A U+178B U+178C U+178D U+178E U+178F \
+                       U+1788 U+1789 U+178F U+178B U+178C U+178D U+178E U+178F \
                        U+1790 U+1791 U+1792 U+1793 U+1794 U+1795 U+1796 U+1797 \
                        U+1798 U+1799 U+179A U+179B U+179C U+179D U+179E U+179F \
                        U+17A0 U+17A1 U+17A2                         
@@ -213,6 +213,11 @@ any(v_pseudo) + [K_QUOTE]           > context beep c no Bantoc after any pseudo 
 any(c_shifter) + [K_QUOTE]          > context beep c no Bantoc after Triisap/Muusikatoan 
 U+17D2 any(c_out) + [K_QUOTE]       > context beep c no Bantoc on a subscript 
 any(c_shifter) + any(c_shifter_key) > context beep c no two Triisap/Muusikatoan
+
+c Unify identical subscripts - use U+18D2 U+178F always - see page 35 of https://www.unicode.org/L2/L2022/22290-khmer-encoding.pdf
+ 
+U+17D2 + [K_D] > context(1) U+178F   
+
 
 c Rotation
 
@@ -583,11 +588,6 @@ U+1798 U+17D2 any(c_2nd_combo_MO) U+17CA U+17C1 U+17B8 > context(1) context(2) c
 c place Robat after a base before any vowel
 
 any(c_out) any(v_gen) U+17CC    > context(1) context(3) context(2)
-
-c Use appropriate identical subscript in two separate contexts. (Case #8)
-
-U+178E U+17D2 U+178F > context(1) context(2) U+178A 
-U+1793 U+17D2 U+178A > context(1) context(2) U+178F   
 
 c BONUSES​(note that these combinations are invalid and they can't be found in the CN dictionary 1967 nor RH 1997, but users think they are)
 

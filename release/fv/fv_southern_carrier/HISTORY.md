@@ -1,5 +1,15 @@
 ᑐᑊᘁᗕᑋᗸ Change History
 ============================
+10.0.1 (28 Mar 2024)
+------------------
+* Updated welcome
+
+10.0 (26 Jan 2024)
+-----------------
+* Updated mobile layout
+* Updated help to match new layout
+* Built desktop keyboard
+
 9.2.1 (25 Oct 2023)
 -----------------
 * Changed order of mobile layers to unscramble display on help page
