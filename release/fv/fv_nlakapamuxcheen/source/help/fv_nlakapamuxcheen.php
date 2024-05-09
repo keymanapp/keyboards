@@ -18,7 +18,7 @@ This keyboard is designed for the <b>nlakapamuxcheen</b> language of the BC Inte
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="fv_nlakapamuxcheenU_.png" alt="" height="198" width="514" border="0" /></h2>
+<img src="fv_nlakapamuxcheen_U_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 					<li>The lowline has been assigned to the <b>underscore key _</b> (shift+hyphen key -). To type the regular underscore, hold down the Right-Alt or Option key then press the shift + the hyphen key.</li>
 						<li>To type <b>g̲</b>, type <b>g + _ </b></li>
