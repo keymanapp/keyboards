@@ -32,8 +32,8 @@ This keyboard is designed for the <b>Shashishalhem</b> language of the BC Coast 
 <div id='wikitext'>
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
-	<tr ><td  align='center'>? !</td><td  align='center'>w</td><td  align='center'>e</td><td  align='center'>-</td><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u</td><td  align='center'>i</td><td >&nbsp;</td><td  align='center'>p</td></tr>
-	<tr ><td  align='center'>a</td><td  align='center'>s</td><td  align='center'>ʔ</td><td >&nbsp;</td><td >&nbsp;</td><td  align='center'>h</td><td  align='center'>ḵ</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>' "</td></tr>
+	<tr ><td  align='center'>? !</td><td  align='center'>w</td><td  align='center'>e é</td><td  align='center'>-</td><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u ú</td><td  align='center'>i í</td><td >&nbsp;</td><td  align='center'>p</td></tr>
+	<tr ><td  align='center'>a á</td><td  align='center'>s</td><td  align='center'>ʔ</td><td >´</td><td >&nbsp;</td><td  align='center'>h</td><td  align='center'>ḵ</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>' "</td></tr>
 	<tr ><td >&nbsp;</td><td  align='center'>x̱</td><td  align='center'>x</td><td  align='center'>c</td><td  align='center'>,</td><td  align='center'>.</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
 </table>
 <div class='vspace'></div><ul><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
