@@ -23,9 +23,32 @@ END;
   require_once('header.php');
 ?>
 
+<img src="plains_creeU_.png" />
 <p>
 This keyboard is for writing <b>ᓀᐦᐃᔭᐍᐏᐣ</b> (Plains Cree syllabics).
 </p>
+
+<ul>
+	<li>The syllabics used to write ᓀᐦᐃᔭᐍᐏᐣ (Plains Cree) are typed by entering their Long Vowel Equivalents.
+    <ul>
+      <li><b>ᓀᐦᐃᔭᐍᐏᐣ</b> would be typed as 'nehiyawewin'</li>
+    </ul>
+  </li>
+	<li>In the case of syllables with multiple syllable finals, type the <b>left bracket key [ </b> to keep the syllables separate
+    <ul>
+			<li><b>ᐸᐦᐠᐍᓯᑲᐣ</b> would be typed 'pahk[wesikan'</li>
+      <li>The regular left bracket is typed <b>Right-Alt+Left-Bracket</b></li>
+    </ul>
+  </li>  
+	<li>The narrow no-break space is typed <b>Shift+Space</b></li>
+	<li>Quotation marks
+    <ul>
+			<li>double guillemets: « Semicolon — » Quote </li>
+			<li>single quotation mark: ' Right-Alt+Quote — " Shift+Quote</li>
+    </ul>
+  </li> 
+</ul>
+
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 

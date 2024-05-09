@@ -5,8 +5,8 @@ store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'balochi_persian.kvks'
 store(&BITMAP) 'balochi_persian.ico'
 store(&LAYOUTFILE) 'balochi_persian.keyman-touch-layout'
-store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.5'
+store(&COPYRIGHT) '© 2019-2024 SIL International'
+store(&KEYBOARDVERSION) '1.6'
 store(&KMW_HELPTEXT) 'This is a Balochi keyboard based on the standard Windows Persian keyboard.'
 store(&KMW_RTL) '1'
 store(&MESSAGE) 'The Balochi Persian keyboard is distributed under The MIT License (MIT).'
@@ -14,6 +14,10 @@ store(&MESSAGE) 'The Balochi Persian keyboard is distributed under The MIT Licen
 begin Unicode > use(main)
 
 group(main) using keys
++ [CTRL K_D] > 'ئی'
++ [CTRL K_O] > 'ئے'
++ [CTRL K_P] > 'ئو'
++ [CTRL K_W] > 'ࢨ'
 + [CTRL K_B] > 'ذ'
 + [CTRL B08] > '‎'
 + [CTRL B09] > '‏'
@@ -186,4 +190,10 @@ group(main) using keys
 + [K_oE2] > U+005c
 + [SHIFT K_oE2] > U+007c
 
++ [T_ye_ham_vav] > 'ئو'
++ [T_ye_ham_ye] > 'ئی'
++ [T_ye_ham_barree] > 'ئے'
 
+U+0626 U+0648 + [K_BKSP] > nul
+U+0626 U+06CC + [K_BKSP] > nul
+U+0626 U+06D2 + [K_BKSP] > nul

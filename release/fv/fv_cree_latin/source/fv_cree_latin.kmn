@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.1'
-store(&TARGETS) "mobile tablet"
 c store(&ETHNOLOGUECODE) "cre"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Cree - Roman Orthography'
+store(&KEYBOARDVERSION) '10.0.1'
+store(&VISUALKEYBOARD) 'fv_cree_latin.kvks'
+store(&KMW_HELPFILE) 'fv_cree_latin-help.htm'
+store(&TARGETS) 'any'
 
 begin Unicode > use(main)
 
@@ -40,31 +42,7 @@ store(&LAYOUTFILE) "fv_cree_latin.keyman-touch-layout"
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'Š' layer('default')
-'I' + [SHIFT T_F] > 'Ī'
-'E' + [SHIFT T_F] > 'Ē'
-'A' + [SHIFT T_F] > 'Ā'
-'O' + [SHIFT T_F] > 'Ō'
-'e' + [SHIFT T_F] > 'ē'
-'a' + [SHIFT T_F] > 'ā'
-'i' + [SHIFT T_F] > 'ī'
-'o' + [SHIFT T_F] > 'ō'
-'I' + [SHIFT T_G] > 'Í'
-'E' + [SHIFT T_G] > 'É'
-'A' + [SHIFT T_G] > 'Á'
-'O' + [SHIFT T_G] > 'Ó'
-'e' + [SHIFT T_G] > 'é'
-'a' + [SHIFT T_G] > 'á'
-'i' + [SHIFT T_G] > 'í'
-'o' + [SHIFT T_G] > 'ó'
 + [SHIFT T_H] > 'H' layer('default')
-'I' + [SHIFT T_J] > 'Î'
-'E' + [SHIFT T_J] > 'Ê'
-'A' + [SHIFT T_J] > 'Â'
-'O' + [SHIFT T_J] > 'Ô'
-'e' + [SHIFT T_J] > 'ê'
-'a' + [SHIFT T_J] > 'â'
-'i' + [SHIFT T_J] > 'î'
-'o' + [SHIFT T_J] > 'ô'
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
 + [SHIFT T_COLON_0] > '"' layer('default')
@@ -100,22 +78,6 @@ store(&LAYOUTFILE) "fv_cree_latin.keyman-touch-layout"
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'š'
-'I' + [T_F] > 'Ī'
-'E' + [T_F] > 'Ē'
-'A' + [T_F] > 'Ā'
-'O' + [T_F] > 'Ō'
-'e' + [T_F] > 'ē'
-'a' + [T_F] > 'ā'
-'i' + [T_F] > 'ī'
-'o' + [T_F] > 'ō'
-'I' + [T_G] > 'Í'
-'E' + [T_G] > 'É'
-'A' + [T_G] > 'Á'
-'O' + [T_G] > 'Ó'
-'e' + [T_G] > 'é'
-'a' + [T_G] > 'á'
-'i' + [T_G] > 'í'
-'o' + [T_G] > 'ó'
 + [T_H] > 'h'
 'I' + [T_J] > 'Î'
 'E' + [T_J] > 'Ê'
@@ -137,5 +99,38 @@ store(&LAYOUTFILE) "fv_cree_latin.keyman-touch-layout"
 + [T_N] > 'n'
 + [T_M] > 'm'
 
-c --- END OF TOUCH LAYOUT RULES ---
+c --- BEGIN DESKTOP LAYOUT RULES ---
 
+c --- character stores ---
+
+store(Vowels) 'aeioAEIO'
+store(AcuteKeys) [T_G] [SHIFT T_G] [K_LBRKT] 
+store(CircKeys) [T_J] [SHIFT T_J] [K_RBRKT]
+store(MacKeys) [T_F] [SHIFT T_F] [K_BKSLASH]
+store(HasAcute) 'áéíóÁÉÍÓ'
+store(HasCirc) 'âêîôÂÊÎÔ'
+store(HasMacron) 'āēīōĀĒĪŌ'
+
+any(Vowels) + any(AcuteKeys) > index(HasAcute,1)
+any(Vowels) + any(CircKeys) > index(HasCirc,1)
+any(Vowels) + any(MacKeys) > index(HasMacron,1)
+
+any(HasAcute) + [K_BKSP] > index(Vowels,1)
+any(HasCirc) + [K_BKSP] > index(Vowels,1)
+any(HasMacron) + [K_BKSP] > index(Vowels,1)
+
+c --- language keys ----
+
+store(LanguageKeys) [K_LBRKT] [K_RBRKT] [K_BKSLASH] [K_1]
+store(LanguageOutputs) U+0301 U+0302 U+0304 U+030C c acute circumflex macron caron
+store(NeedsCaron) 'csCS'
+store(HasCaron) 'čšČŠ'
+
+any(NeedsCaron) + [K_1] > index(HasCaron,1)
+
+c --- original keys ---
+
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
++ [RALT K_BKSLASH] > '\'
++ [RALT K_1] > '1'

@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2022 Mehmet Oguz Derin and Takahiro Harada
+© 2022-2023 Mehmet Oguz Derin and Takahiro Harada
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

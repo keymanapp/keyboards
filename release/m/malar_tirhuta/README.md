@@ -1,9 +1,7 @@
 Malar Tirhuta keyboard
 ==============
 
-2022 © [Ramesh Kunnappully](mailto:ramesh1@protonmail.com)
-
-Version 1.0
+© [Ramesh Kunnappully](mailto:ramesh1@protonmail.com)
 
 Description
 -----------

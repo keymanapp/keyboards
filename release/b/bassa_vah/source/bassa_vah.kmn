@@ -1,0 +1,44 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Bassa Vah'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'bassa_vah.ico'
+store(&VISUALKEYBOARD) 'bassa_vah.kvks'
+store(&LAYOUTFILE) 'bassa_vah.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(vowelsK) [K_A]   [K_E]   [K_I]   [K_O]   [K_U]   [K_X]    [K_LBRKT]
+store(vowelsU) U+16AE7 U+16AEB U+16AED U+16AE9 U+16AEA U+16AE8  U+16AEC
+
+store(consK) [K_N] [K_K] [K_S] [K_F] [K_M] [K_Y] [K_G] [K_D] [K_Q] [K_J] [K_R] [K_W] [K_Z] \
+             [K_COLON] [K_L] [K_C] [K_RBRKT] [K_T] [K_B] [K_V] [K_H] [K_P] [K_QUOTE]
+store(consU) U+16AD0 .. U+16AE6
+
+store(diacK) [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K]
+store(diacU) U+16AF0 .. U+16AF4
+
+store(digitsK) [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] 
+store(digitsU) U+0030 .. U+0039
+
+
+
+store(nul) [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P] \
+           [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_L] \
+           [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M] 
+
+group(main) using keys
+
++ any(nul) > nul
++ any(vowelsK) > index(vowelsU,1)
++ any(consK) > index(consU,1)
++ any(digitsK) > index(digitsU,1)
+
++ [K_COMMA]  > U+002C
++ [K_PERIOD] > U+16AF5
++ [SHIFT K_PERIOD]  > U+002E
++ [SHIFT K_COMMA] > U+0027
+
+
++ any(diacK)   > index(diacU,1)

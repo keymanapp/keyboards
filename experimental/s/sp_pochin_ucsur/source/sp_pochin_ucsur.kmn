@@ -1,0 +1,298 @@
+﻿c Based on Toki Pona Keyboard by Timeo Pochin.
+c Created for Keyman by jan Lepeka in 2024.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Sitelen Pona (Pochin, UCSUR)'
+store(&COPYRIGHT) '© jan Lepeka, based on Toki Pona Keyboard by Timeo Pochin'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sp_pochin_ucsur.ico'
+store(&VISUALKEYBOARD) 'sp_pochin_ucsur.kvks'
+store(&LAYOUTFILE) 'sp_pochin_ucsur.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c punctuation and format controls
+store(zero_width_joiner)     U+200D
+store(ideographic_space)     U+3000
+store(ideographic_comma)     U+3001 U+FE01
+store(ideographic_full_stop) U+3002 U+FE01
+store(left_corner_bracket)   U+300C
+store(right_corner_bracket)  U+300D
+store(start_of_cartouche)    U+F1990
+store(end_of_cartouche)      U+F1991
+store(start_of_long_pi)      U+F194D U+F1997
+store(end_of_long_pi)        U+F1998
+store(stacking_joiner)       U+F1995
+store(scaling_joiner)        U+F1996
+store(start_of_extension)    U+F1997
+store(end_of_extension)      U+F1998
+store(start_of_reverse_ext)  U+F199A
+store(end_of_reverse_ext)    U+F199B
+
+c letter keys
+store(LK_A) [K_4]
+store(LK_E) [K_5]
+store(LK_I) [K_6]
+store(LK_J) [K_R]
+store(LK_K) [K_T]
+store(LK_L) [K_Y]
+store(LK_M) [K_D]
+store(LK_N) [K_F]
+store(LK_O) [K_G]
+store(LK_P) [K_H]
+store(LK_S) [K_C]
+store(LK_T) [K_V]
+store(LK_U) [K_B]
+store(LK_W) [K_N]
+
+c backspacing over the comma or the full stop should delete both the
+c punctuation and the variation selector, not just the variation selector
+outs(ideographic_comma)     + [K_BKSP] > nul
+outs(ideographic_full_stop) + [K_BKSP] > nul
+
++ [SHIFT K_BKQUOTE] > '~'
++ [SHIFT K_1] > '!'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '#'
++ [SHIFT K_4] > '$'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > '^'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '('
++ [SHIFT K_0] > ')'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_Q] > 'Q'
++ [SHIFT K_W] > 'W'
++ [SHIFT K_E] > 'E'
++ [SHIFT K_R] > 'R'
++ [SHIFT K_T] > 'T'
++ [SHIFT K_Y] > 'Y'
++ [SHIFT K_U] > 'U'
++ [SHIFT K_I] > 'I'
++ [SHIFT K_O] > 'O'
++ [SHIFT K_P] > 'P'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_A] > 'A'
++ [SHIFT K_S] > 'S'
++ [SHIFT K_D] > 'D'
++ [SHIFT K_F] > 'F'
++ [SHIFT K_G] > 'G'
++ [SHIFT K_H] > 'H'
++ [SHIFT K_J] > 'J'
++ [SHIFT K_K] > 'K'
++ [SHIFT K_L] > 'L'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_Z] > 'Z'
++ [SHIFT K_X] > 'X'
++ [SHIFT K_C] > 'C'
++ [SHIFT K_V] > 'V'
++ [SHIFT K_B] > 'B'
++ [SHIFT K_N] > 'N'
++ [SHIFT K_M] > 'M'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_SPACE] > ' '
+
++ [K_BKQUOTE] > '`'
++ [K_1] > '󱤧'
++ [K_2] > '󱤴'
++ [K_3] > outs(start_of_cartouche)
++ [K_4] > dk(a)
++ [K_5] > dk(e)
++ [K_6] > dk(i)
++ [K_7] > outs(end_of_cartouche)
++ [K_8] > '󱦜'
++ [K_9] > outs(start_of_extension)
++ [K_0] > outs(end_of_extension)
++ [K_HYPHEN] > '-'
++ [K_EQUAL] > '='
++ [K_Q] > '󱤉'
++ [K_W] > '󱥬'
++ [K_E] > outs(left_corner_bracket)
++ [K_R] > dk(j)
++ [K_T] > dk(k)
++ [K_Y] > dk(l)
++ [K_U] > outs(right_corner_bracket)
++ [K_I] > '󱦝'
++ [K_O] > outs(start_of_reverse_ext)
++ [K_P] > outs(end_of_reverse_ext)
++ [K_LBRKT] > '['
++ [K_RBRKT] > ']'
++ [K_BKSLASH] > '\'
++ [K_A] > '󱥁'
++ [K_S] > '󱥔'
++ [K_D] > dk(m)
++ [K_F] > dk(n)
++ [K_G] > dk(o)
++ [K_H] > dk(p)
++ [K_J] > outs(zero_width_joiner)
++ [K_K] > outs(stacking_joiner)
++ [K_L] > outs(scaling_joiner)
++ [K_COLON] > ';'
++ [K_QUOTE] > U+0027
++ [K_Z] > '󱤀'
++ [K_X] > '󱤂'
++ [K_C] > dk(s)
++ [K_V] > dk(t)
++ [K_B] > dk(u)
++ [K_N] > dk(w)
++ [K_M] > outs(ideographic_space)
++ [K_COMMA] > ','
++ [K_PERIOD] > '.'
++ [K_SLASH] > '/'
++ [K_SPACE] > ' '
+
++ [T_3001] > outs(ideographic_comma)
++ [T_3002] > outs(ideographic_full_stop)
+
+dk(a) + any(LK_A) > '󱤄' c ali
+dk(a) + any(LK_E) > '󱤄' c ale
+dk(a) + any(LK_K) > '󱤁' c akesi
+dk(a) + any(LK_L) > '󱤃' c alasa
+dk(a) + any(LK_N) > '󱤅' c anpa
+dk(a) + any(LK_P) > '󱦡' c apeja
+dk(a) + any(LK_T) > '󱤆' c ante
+dk(a) + any(LK_U) > '󱤇' c anu
+dk(a) + any(LK_W) > '󱤈' c awen
+dk(e) + any(LK_E) > '󱤊' c en
+dk(e) + any(LK_P) > '󱦃' c epiku (addition)
+dk(e) + any(LK_S) > '󱤋' c esun
+dk(i) + any(LK_I) > '󱤍' c ike
+dk(i) + any(LK_J) > '󱤌' c ijo
+dk(i) + any(LK_L) > '󱤎' c ilo
+dk(i) + any(LK_N) > '󱤏' c insa
+dk(j) + any(LK_A) > '󱤐' c jaki
+dk(j) + any(LK_E) > '󱤒' c jelo
+dk(j) + any(LK_J) > '󱤑' c jan
+dk(j) + any(LK_O) > '󱤓' c jo
+dk(j) + any(LK_S) > '󱥿' c jasima (addition)
+dk(k) + any(LK_A) > '󱤔' c kala
+dk(k) + any(LK_E) > '󱤘' c ken
+dk(k) + any(LK_I) > dk(ki)
+dk(k) + any(LK_J) > '󱦀' c kijetesantakalu
+dk(k) + any(LK_K) > '󱤖' c kama
+dk(k) + any(LK_L) > '󱤟' c kulupu
+dk(k) + any(LK_M) > '󱤕' c kalama
+dk(k) + any(LK_N) > '󱤝' c kon
+dk(k) + any(LK_O) > '󱤜' c ko
+dk(k) + any(LK_P) > '󱤙' c kepeken
+dk(k) + any(LK_S) > '󱤗' c kasi
+dk(k) + any(LK_T) > '󱤠' c kute
+dk(k) + any(LK_U) > '󱤞' c kule
+dk(k) + any(LK_W) > '󱤛' c kiwen
+dk(ki) + any(LK_A) > '󱦄' c kokosila (addition)
+dk(ki) + any(LK_I) > '󱤚' c kili
+dk(ki) + any(LK_N) > '󱥹' c kin
+dk(ki) + any(LK_P) > '󱥻' c kipisi
+dk(ki) + any(LK_U) > '󱦈' c ku (addition)
+dk(l) + any(LK_A) > '󱤢' c lape
+dk(l) + any(LK_E) > dk(le)
+dk(l) + any(LK_I) > dk(li)
+dk(l) + any(LK_J) > '󱤫' c loje
+dk(l) + any(LK_K) > '󱤭' c luka
+dk(l) + any(LK_L) > '󱤡' c la
+dk(l) + any(LK_N) > '󱤮' c lukin
+dk(l) + any(LK_O) > '󱤬' c lon
+dk(l) + any(LK_P) > '󱤯' c lupa
+dk(l) + any(LK_S) > '󱤣' c laso
+dk(l) + any(LK_T) > '󱤦' c lete
+dk(l) + any(LK_U) > '󱤪' c lipu
+dk(l) + any(LK_W) > '󱤤' c lawa
+dk(le) + any(LK_E) > '󱤥' c len
+dk(le) + any(LK_K) > '󱥼' c leko
+dk(li) + any(LK_I) > '󱤨' c lili
+dk(li) + any(LK_N) > '󱤩' c linja
+dk(li) + any(LK_P) > '󱦅' c lanpan (addition)
+dk(m) + any(LK_A) > '󱤱' c mama
+dk(m) + any(LK_E) > '󱤳' c meli
+dk(m) + any(LK_I) > '󱤲' c mani
+dk(m) + any(LK_J) > '󱤵' c mije
+dk(m) + any(LK_K) > '󱤶' c moku
+dk(m) + any(LK_L) > '󱤷' c moli
+dk(m) + any(LK_M) > '󱤰' c ma
+dk(m) + any(LK_N) > '󱤺' c mun
+dk(m) + any(LK_O) > dk(mo)
+dk(m) + any(LK_S) > '󱤻' c musi
+dk(m) + any(LK_T) > '󱤼' c mute
+dk(m) + any(LK_U) > '󱤹' c mu
+dk(mo) + any(LK_J) > '󱦢' c majuna (addition)
+dk(mo) + any(LK_K) > '󱦇' c misikeke (addition)
+dk(mo) + any(LK_N) > '󱥽' c monsuta
+dk(mo) + any(LK_O) > '󱤸' c monsi
+dk(mo) + any(LK_S) > '󱦂' c meso (addition)
+dk(n) + any(LK_A) > '󱤽' c nanpa
+dk(n) + any(LK_E) > '󱥀' c nena
+dk(n) + any(LK_I) > '󱤿' c nasin
+dk(n) + any(LK_M) > '󱥸' c namako
+dk(n) + any(LK_N) > '󱥂' c nimi
+dk(n) + any(LK_O) > '󱥃' c noka
+dk(n) + any(LK_S) > '󱤾' c nasa
+dk(n) + any(LK_W) > '󱦆' c n (addition)
+dk(o) + any(LK_K) > '󱥺' c oko
+dk(o) + any(LK_L) > '󱥅' c olin
+dk(o) + any(LK_N) > '󱥆' c ona
+dk(o) + any(LK_O) > '󱥄' c o
+dk(o) + any(LK_P) > '󱥇' c open
+dk(p) + any(LK_A) > '󱥋' c pan
+dk(p) + any(LK_E) > '󱦠' c pake
+dk(p) + any(LK_I) > dk(pi)
+dk(p) + any(LK_K) > '󱥈' c pakala
+dk(p) + any(LK_L) > '󱥉' c pali
+dk(p) + any(LK_M) > '󱥏' c pimeja
+dk(p) + any(LK_N) > '󱥌' c pana
+dk(p) + any(LK_O) > dk(po)
+dk(p) + any(LK_P) > '󱥍' c pi
+dk(p) + any(LK_S) > '󱥊' c palisa
+dk(p) + any(LK_U) > '󱥕' c pu
+dk(pi) + any(LK_I) > '󱥐' c pini
+dk(pi) + any(LK_L) > '󱥎' c pilin
+dk(pi) + any(LK_P) > '󱥑' c pipi
+dk(po) + any(LK_K) > '󱥓' c poki
+dk(po) + any(LK_O) > '󱥒' c poka
+dk(po) + any(LK_W) > '󱦣' c powe (addition)
+dk(s) + any(LK_A) > '󱥖' c sama
+dk(s) + any(LK_E) > dk(se)
+dk(s) + any(LK_I) > '󱥝' c sin
+dk(s) + any(LK_J) > '󱥛' c sijelo
+dk(s) + any(LK_K) > '󱥜' c sike
+dk(s) + any(LK_L) > '󱥣' c suli
+dk(s) + any(LK_M) > '󱥙' c seme
+dk(s) + any(LK_N) > '󱥡' c sona
+dk(s) + any(LK_O) > '󱥤' c suno
+dk(s) + any(LK_P) > '󱥟' c sinpin
+dk(s) + any(LK_S) > '󱥞' c sina
+dk(s) + any(LK_T) > '󱥠' c sitelen
+dk(s) + any(LK_U) > dk(su)
+dk(s) + any(LK_W) > '󱥢' c soweli
+dk(se) + any(LK_E) > '󱥚' c sewi
+dk(se) + any(LK_I) > '󱥗' c seli
+dk(se) + any(LK_O) > '󱥘' c selo
+dk(su) + any(LK_K) > '󱦁' c soko (addition)
+dk(su) + any(LK_P) > '󱥥' c supa
+dk(su) + any(LK_U) > '󱥦' c suwi
+dk(t) + any(LK_A) > '󱥧' c tan
+dk(t) + any(LK_E) > '󱥪' c telo
+dk(t) + any(LK_I) > '󱥾' c tonsi
+dk(t) + any(LK_N) > '󱥫' c tenpo
+dk(t) + any(LK_O) > '󱥭' c tomo
+dk(t) + any(LK_S) > '󱥨' c taso
+dk(t) + any(LK_T) > '󱥩' c tawa
+dk(t) + any(LK_U) > '󱥮' c tu
+dk(u) + any(LK_N) > '󱥯' c unpa
+dk(u) + any(LK_T) > '󱥰' c uta
+dk(u) + any(LK_U) > '󱥱' c utala
+dk(w) + any(LK_A) > '󱥵' c wawa
+dk(w) + any(LK_E) > '󱥶' c weka
+dk(w) + any(LK_L) > '󱥲' c walo
+dk(w) + any(LK_N) > '󱥳' c wan
+dk(w) + any(LK_S) > '󱥴' c waso
+dk(w) + any(LK_W) > '󱥷' c wile

@@ -1,5 +1,8 @@
 Nsilxcən Change History
 ============================
+9.3 (6 Febr 2024)
+------------------
+* Added mid dot and č̓ to mobile layout
 
 9.2 (25 Apr 2023)
 -------------------

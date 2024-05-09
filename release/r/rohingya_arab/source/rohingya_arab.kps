@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.115.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Rohingya Arabic</Name>
-    <Copyright URL="">© 2012-2020 SIL International</Copyright>
+    <Copyright URL="">© 2012-2023 SIL International</Copyright>
   </Info>
   <Files>
     <File>
@@ -28,46 +28,10 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>ScheherazadeNew_README.txt</Name>
-      <Description>File ScheherazadeNew_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>ScheherazadeNew-Rohingya-Bold.ttf</Name>
-      <Description>Font ScheherazadeNew Rohingya Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>ScheherazadeNew-Rohingya-Regular.ttf</Name>
-      <Description>Font ScheherazadeNew Rohingya</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\rohingya_arab.js</Name>
@@ -111,15 +75,69 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingya-Bold.ttf</Name>
+      <Description>Font Scheherazade New Rohingya Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingyaFONTLOG.txt</Name>
+      <Description>File ScheherazadeNewRohingyaFONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingya-Medium.ttf</Name>
+      <Description>Font Scheherazade New Rohingya Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingyaREADME.txt</Name>
+      <Description>File ScheherazadeNewRohingyaREADME.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingya-Regular.ttf</Name>
+      <Description>Font Scheherazade New Rohingya</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingya-SemiBold.ttf</Name>
+      <Description>Font Scheherazade New Rohingya SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-SemiBold.ttf</Name>
+      <Description>Font Scheherazade New SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Rohingya Arabic</Name>
       <ID>rohingya_arab</ID>
-      <Version>1.1</Version>
+      <Version>1.1.1</Version>
       <RTL>True</RTL>
-      <OSKFont>ScheherazadeNew-Rohingya-Regular.ttf</OSKFont>
-      <DisplayFont>ScheherazadeNew-Rohingya-Regular.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingya-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNewRohingya-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="rhg-Arab">Rohingya (Arabic)</Language>
       </Languages>
