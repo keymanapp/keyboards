@@ -1,11 +1,15 @@
 Obolo Chwerty Keyboard Change History
 ====================
 
-1.5 (2023-08-18)
+1.5 (2024-05-09)
 ----------------
 * Added numeric layer
-* Updated layer switching on layer alt
-* Kb can now be minimised from layer alt
+* Updated layer switching on layer alt. Kb can now be minimised from layer alt
+* Added longpress hint feature
+
+1.2.2 [1.4.1] (2023-11-21)
+----------------
+* Update font to use shared Noto Sans
 
 1.2.1 [1.4] (2022-06-19)
 ----------------
@@ -28,19 +32,18 @@ Obolo Chwerty Keyboard Change History
 * Added long press on touchscreen for frequently used accented letters.
 * Added the Naira sign (₦) and Ñ (an alternative where software cannot render N̄ well, though Ñ is not part of the Obolo orthography.)
 
-1.1.1 (2023-11-21)
+1.1.1 (2020-10-27)
 ----------------
-* Update font to use shared Noto Sans
+* Increment version number to force recompile of touch layout
 
-1.1 (2021-07-23)
+1.1 (2020-07-07)
 ----------------
-* Replaced combining underdot button (◌̣) with o with dot below (ọ) on touch layout.
-* Replaced combining macron button (¯) with n with combining macron (n̄) on touch layout.
-* Added Naira sign (₦) and Ññ (to be used in special cases such as in presentations where the software doesn't support N̄n̄, though Ññ is not part of the Obolo orthography)
-* Changed backspace behaviour for n with macron (n̄).
-* Added longpress for a,e,i,o,ọ,u,m,n,n̄ on mobile touch layout.
-* Added documentation
+* Moved the high tone (which is not required, except in primers) to long press on low tone button (for touchscreen).
+* Changed backspace behavior for ch, sh, n̄.
+* Added long press for Q, H, X and C keys on touchscreen.
+* Added hyphen-dash (a frequently used mark) to default and shift layers for touchscreen.
+* Fixed typo and omissions in documentation.
 
-1.0 (2020-05-09)
+1.0 (2019-07-20)
 ----------------
 * Created by Rogers Katelem Edeh

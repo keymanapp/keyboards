@@ -1,7 +1,7 @@
 Obolo Chwerty keyboard
 ==============
 
-© Rogers Katelem Edeh
+Rogers Katelem Edeh
 
 Description
 -----------
