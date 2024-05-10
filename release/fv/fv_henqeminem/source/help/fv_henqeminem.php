@@ -59,6 +59,8 @@ This keyboard is designed for the <b>hǝn̓q̓ǝmin̓ǝm̓</b> language of the B
 
 <p>Long-press options are available. The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</p>
 
+<div id='wikitext'>
+
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
 	<tr >
 		<td  align='center'>q q̓</td>
@@ -96,3 +98,5 @@ This keyboard is designed for the <b>hǝn̓q̓ǝmin̓ǝm̓</b> language of the B
 		<td  colspan='2'>&nbsp;</td>
 	</tr>
 </table>
+
+</div>

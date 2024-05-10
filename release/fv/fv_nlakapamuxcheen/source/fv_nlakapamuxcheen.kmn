@@ -1,0 +1,92 @@
+﻿c fv_nlakapamuxcheen generated from template at 2024-02-24 03:19:38
+c with name "fv_nlakapamuxcheen"
+store(&VERSION) '10.0'
+store(&NAME) 'nlakapamuxcheen'
+store(&COPYRIGHT) '© 2024 First Peoples' U+0027 ' Cultural Foundation, FirstVoices'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'fv_nlakapamuxcheen.ico'
+store(&VISUALKEYBOARD) 'fv_nlakapamuxcheen.kvks'
+store(&LAYOUTFILE) 'fv_nlakapamuxcheen.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [SHIFT T_E] > 'E'  layer('default')
++ [SHIFT T_T] > 'TL'  layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_OO] > 'OO' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'TS' layer('default')
++ [SHIFT T_EE] > 'EE' layer('default')
++ [SHIFT T_G] > 'G̲' layer('default')
++ [SHIFT T_H] > 'H' layer('default') 
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K_0] > 'K̲' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_KW_0] > 'K̲w' layer('default')
++ [SHIFT T_KW] > 'Kw' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [SHIFT T_HYP] > '-' layer('default')
++ [T_WUH_0] > 'w̲u̲h̲'
++ [T_WUH] > 'wuh'
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_O] > 'o'
++ [T_I] > 'i'
++ [T_OO] > 'oo'
++ [T_P] > 'p'
++ [T_LH] > 'lh'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_EE] > 'ee'
++ [T_G] > 'g̲'
++ [T_H] > 'h'
++ [T_HH_0] > 'h̲h̲'
++ [T_HH] > 'hh'
++ [T_K_0] > 'k̲'
++ [T_K] > 'k'
++ [T_KW_0] > 'k̲w'
++ [T_KW] > 'kw'
++ [T_L] > 'l'
++ [T_Z] > 'z'
++ [T_X] > 'x'
++ [T_CH] > 'ch'
++ [T_U] > 'u'
++ [T_SH] > 'sh'
++ [T_N] > 'n'
++ [T_M] > 'm'
++ [T_HYP] > '-'
+
+c --- CROSS PLATFORM STORES ---
+
+store(ComLowLine) U+0331
+store(ComLowLineKeys) [SHIFT K_HYPHEN] [T_LL] [SHIFT T_LL]
+
+'g' + any(ComLowLineKeys) > 'g̲'
+'hh' + any(ComLowLineKeys) > 'h̲h̲'
+'k' + any(ComLowLineKeys) > 'k̲'
+'kw' + any(ComLowLineKeys) > 'k̲w'
+'wuh' + any(ComLowLineKeys) > 'w̲u̲h̲'
+'G' + any(ComLowLineKeys) > 'G̲'
+'HH' + any(ComLowLineKeys) > 'H̲H̲'
+'K' + any(ComLowLineKeys) > 'K̲'
+'Kw' + any(ComLowLineKeys) > 'K̲w'
+'WUH' + any(ComLowLineKeys) > 'W̲U̲H̲'
+
+c --- stacking and non-letter combination prevention ---
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'" 
+
+any(ComLowLine) + any(ComLowLineKeys) > context beep
+any(NonLetters) + any(ComLowLineKeys) > context beep   
+
+c --- ORIGINAL PUNCTUATION ---
++ [RALT SHIFT K_HYPHEN] > '_'
+
