@@ -1,5 +1,9 @@
 hǝn̓q̓ǝmin̓ǝm̓ Change History
 ============================
+10.1 (10 May 2024)
+-------------------
+* Added a rule for backspacing vowels with acute accent
+* Added colon to the mobile layout, moved middle dot to longpress
 
 10.0.1 (1 Apr 2024)
 -------------------
