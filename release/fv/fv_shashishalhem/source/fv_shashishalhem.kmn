@@ -39,8 +39,9 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [SHIFT T_G] > 'Ḵ' layer('default')
 + [SHIFT T_H] > 'K' layer('default')
 + [SHIFT T_J] > 'L' layer('default')
-+ [SHIFT T_K_0] > '"' layer('default')
-+ [SHIFT T_K] > "'" layer('default')
++ [SHIFT T_K_1] > '"' layer('default')
++ [SHIFT T_K_0] > "'" layer('default')
++ [SHIFT T_K] > "’" layer('default')
 + [SHIFT T_Z] > 'X̱' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
@@ -69,8 +70,9 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [T_G] > 'ḵ'
 + [T_H] > 'k'
 + [T_J] > 'l'
-+ [T_K_0] > '"'
-+ [T_K] > "'"
++ [T_K_1] > '"'
++ [T_K_0] > "'"
++ [T_K] > "’"
 + [T_Z] > 'x̱'
 + [T_X] > 'x'
 + [T_C] > 'c'
@@ -104,7 +106,7 @@ c original punctuation
 + [SHIFT RALT K_COLON] > ':'
 + [RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
-+ [RALT K_QUOTE] > U+0027
++ [RALT K_QUOTE] > "'"
 + [NCAPS SHIFT RALT K_RBRKT] > '}'
 + [NCAPS SHIFT RALT K_LBRKT] > '{'
 + [NCAPS RALT K_RBRKT] > ']'
@@ -121,6 +123,7 @@ c Guillemets
 c language
 
 + [K_BKQUOTE] > U+0301 c acute
++ [K_QUOTE] > "’" c right single curly apostrophe
                                              
 + [CAPS SHIFT K_LBRKT] > 'ḵ'   
 + [NCAPS SHIFT K_LBRKT] > 'Ḵ'

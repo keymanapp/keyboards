@@ -3,7 +3,7 @@ Shashishalhem Change History
 9.2 (2 May 2024)
 -------------------
 * Centered mobile layout
-* Added acute accent to mobile layout
+* Added acute accent and single curly apostrophe to mobile layout
 * Added rules for combined Unicode for vowels with acute accent
 * Changed acute accent key from semicolon to backquote on desktop layout
 
