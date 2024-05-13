@@ -1,5 +1,9 @@
 Cree - Roman Orthography Change History
 ============================
+10.0.1 (27 Mar 2024)
+-----------------
+* Updated README
+
 10.0 (15 Dec 2023)
 -----------------
 * Added desktop layout

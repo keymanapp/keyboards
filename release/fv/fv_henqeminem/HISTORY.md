@@ -1,5 +1,10 @@
 hǝn̓q̓ǝmin̓ǝm̓ Change History
 ============================
+
+10.0.1 (1 Apr 2024)
+-------------------
+* Updated keymap images
+
 10.0 (17 Oct 2023)
 -------------------
 * Added middle dot and chi on mobile layout
