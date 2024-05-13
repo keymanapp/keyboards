@@ -1,7 +1,7 @@
-Nłeʔkepmxcin keyboard
+Nɬeʔkepmxcín keyboard
 ======================
 
-Nłeʔkepmxcin keyboard layout for Unicode
+Nɬeʔkepmxcín keyboard layout for Unicode
 
 Links
 -----

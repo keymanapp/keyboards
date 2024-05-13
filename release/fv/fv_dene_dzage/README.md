@@ -13,9 +13,8 @@ Links
 Supported Platforms
 -------------------
 
+ * Windows
+ * macOS
+ * Linux
+ * Web
  * Mobile
-
-Todo
-----
-
- * This keyboard needs canonical ordering to be changed and normalized (U+0328)

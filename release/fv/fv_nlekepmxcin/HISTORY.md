@@ -1,5 +1,16 @@
-Nłeʔkepmxcin Change History
+Nɬeʔkepmxcín Change History
 ============================
+9.4 (9 Apr 2024)
+-------------------
+* Added x̌ to keyboard on request
+
+9.3 (24 Feb 2024)
+-------------------
+* Changed barred l for belted l
+* Changed to single codepoints where possible
+* Added combining acute key to mobile layout
+* Corrected spelling of keyboard name
+* Updated script code
 
 9.2.3 (6 Mar 2023)
 -------------------
