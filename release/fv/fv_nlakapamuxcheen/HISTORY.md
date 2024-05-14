@@ -1,5 +1,9 @@
 fv_nlakapamuxcheen Change History
 ====================
+1.0.2 (14 May 2024)
+----------------
+* Correcting keyboard name on Keyman page
+
 1.0.1 (13 May 2024)
 ----------------
 * Corrected name in .kps
