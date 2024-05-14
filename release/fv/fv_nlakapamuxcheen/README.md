@@ -1,4 +1,4 @@
-fv_nlakapamuxcheen keyboard
+nlakapamuxcheen keyboard
 ==============
 
 nlakapamuxcheen keyboard layout for unicode.
