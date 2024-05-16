@@ -19,7 +19,7 @@ This keyboard is designed for the <b>Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱</b> lan
 </p>
 
 <h2>Desktop Layout</h2>
-<img src="fv_gitxsenimx_U_.png" alt="" height="198" width="514" border="0" /></h2>
+<img src="fv_gitsenimx_U_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 						<li>All accents are typed after the base character: x̱ is typed a then Semicolon ;</li>
 						<li>To type the underline accent use the Semicolon key ; — ḵ is typed k then Semicolon ;</li>
