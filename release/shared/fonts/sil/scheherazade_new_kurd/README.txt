@@ -26,7 +26,7 @@ and licensing, please see the documentation on the website
 subfolder of this font package.
 
 TYPETUNER
-2023-06-23
+2023-11-20
 =========
 
 This package contains a TypeTuned version of the Scheherazade New fonts.

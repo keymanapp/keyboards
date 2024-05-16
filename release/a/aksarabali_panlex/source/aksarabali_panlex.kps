@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -17,9 +17,9 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Aksara Bali</Name>
-    <Copyright URL="">(c) 2019-2020 The PanLex Project of The Long Now Foundation</Copyright>
+    <Copyright URL="">(c) 2019-2023 The PanLex Project of The Long Now Foundation</Copyright>
     <Author URL="mailto:info@panlex.org">David Kamholz</Author>
     <WebSite URL="panlex.org">panlex.org</WebSite>
     <Description>This keyboard lets you type Aksara Bali (Balinese script) in Unicode. It
@@ -64,8 +64,14 @@ standard keyboard in Bali for typing in Balinese script).</Description>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>fonts\Vimala.ttf</Name>
-      <Description>File Vimala.ttf</Description>
+      <Name>..\..\..\shared\fonts\longnow\bali\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\longnow\bali\Vimala.ttf</Name>
+      <Description>Font Vimala</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -78,11 +84,11 @@ standard keyboard in Bali for typing in Balinese script).</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Aksara Bali Unicode</Name>
+      <Name>Aksara Bali</Name>
       <ID>aksarabali_panlex</ID>
-      <Version>1.0</Version>
-      <OSKFont>fonts\Vimala.ttf</OSKFont>
-      <DisplayFont>fonts\Vimala.ttf</DisplayFont>
+      <Version>1.1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\longnow\bali\Vimala.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\longnow\bali\Vimala.ttf</DisplayFont>
       <Languages>
         <Language ID="ban-Bali">Balinese (Balinese)</Language>
         <Language ID="kaw-Bali">Kawi (Balinese)</Language>
