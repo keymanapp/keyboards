@@ -25,16 +25,16 @@ END;
 
 <img src="plains_creeU_.png" />
 <p>
-This keyboard is for writing <b>ᓀᐦᐃᔭᐍᐏᐣ</b> (Plains Cree syllabics).
+This keyboard is for writing <b>ᓀᐦᐃᔭᐍᐏᐣ</b> (Plains Cree Spirit Markers / syllabics).
 </p>
 
 <ul>
-	<li>The syllabics used to write ᓀᐦᐃᔭᐍᐏᐣ (Plains Cree) are typed by entering their Long Vowel Equivalents.
+	<li>The Spirit Markers / syllabics used to write ᓀᐦᐃᔭᐍᐏᐣ (Plains Cree) are typed by entering their Long Vowel Equivalents.
     <ul>
       <li><b>ᓀᐦᐃᔭᐍᐏᐣ</b> would be typed as 'nehiyawewin'</li>
     </ul>
   </li>
-	<li>In the case of syllables with multiple syllable finals, type the <b>left bracket key [ </b> to keep the syllables separate
+	<li>In the case of Spirit Markers / syllables with multiple finals, type the <b>left bracket key [ </b> to keep the Spirit Markers / syllables separate
     <ul>
 			<li><b>ᐸᐦᐠᐍᓯᑲᐣ</b> would be typed 'pahk[wesikan'</li>
       <li>The regular left bracket is typed <b>Right-Alt+Left-Bracket</b></li>
