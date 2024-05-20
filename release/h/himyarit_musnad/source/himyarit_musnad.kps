@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.144.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -111,12 +111,6 @@ the direction of text.</Description>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>AF_Najed.ttf</Name>
-      <Description>Font AF_Najed Normal Traditional</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\sarb\qataban\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
@@ -147,6 +141,12 @@ the direction of text.</Description>
       <FileType>.txt</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\noto\Arab\naskh\NotoNaskhArabic-Regular.ttf</Name>
+      <Description>Font Noto Naskh Arabic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -157,10 +157,11 @@ the direction of text.</Description>
     <Keyboard>
       <Name>Himyarit Musnad</Name>
       <ID>himyarit_musnad</ID>
-      <Version>1.2.1</Version>
+      <Version>1.3</Version>
       <RTL>True</RTL>
-      <OSKFont>AF_Najed.ttf</OSKFont>
-      <DisplayFont>AF_Najed.ttf</DisplayFont>
+      <OSKFont>NotoNaskhArabic-Regular.ttf</OSKFont>
+      <DisplayFont>NotoNaskhArabic-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="SultanMusnad-Normal.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="xsa">Sabaean</Language>
       </Languages>

@@ -1,6 +1,10 @@
 Himyarit Musnad Change History
 ====================
 
+1.3 (2023-12-31)
+----------------
+* Change of AF_Najed font to Noto Naskh Arabic.
+
 1.2.1 (2023-11-30)
 ----------------
 * Use shared font instead of local
