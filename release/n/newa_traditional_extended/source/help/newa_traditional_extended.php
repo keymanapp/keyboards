@@ -29,7 +29,7 @@ While most of the layout remains the same as in desktop version, numerals have b
     <ul>
       <li><key>𑐟𑑂𑐬</key> is in <key>𑐟</key></li>
       <li><key>𑐅</key> is in <key>𑐄</key></li>
-      <li><key>𑐋</key> is in <key>𑐊</key></li>
+      <li><key>𑐋</key><key>𑐾</key><key>𑐿</key> are in <key>𑐊</key></li>
       <li><key>𑐺</key> is in <key>𑑂</key></li>
       <li><key>𑑅</key> is in <key>𑐵</key></li>
       <li><key>𑐤</key> is in <key>𑐣</key></li>
