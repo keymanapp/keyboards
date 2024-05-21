@@ -3,8 +3,6 @@ Camoes (Portugal) keyboard
 
 (c) SIL International
 
-Version 1.0
-
 Description
 -----------
 
