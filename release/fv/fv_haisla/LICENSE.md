@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © FirstVoices 2020
+Copyright © 2020-2024 FirstVoices
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
