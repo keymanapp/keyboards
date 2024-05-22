@@ -93,10 +93,15 @@ function do_build() {
 
     version=$(cat $keyboardInfo | $JQ -r '.version')
 
-    # Override sil_euro_latin keyboard to English language
+  # Override sil_euro_latin keyboard to English language
     if [[ $id = 'sil_euro_latin' ]]; then
+    name="English"
       bcp47="en"
       langname="English"
+  elif [[ $id = 'basic_kbdcan' ]]; then
+    name="Français"
+    bcp47="fr-CA"
+    langname="French (Canada)"
     fi
 
     # Build a file entry
