@@ -1,61 +1,134 @@
-c This keyboard is for the Haisla language and has been developed by FirstVoices and updated to suit their orthographic changes.
+﻿c This keyboard is for the Haisla language and has been developed by FirstVoices and updated to suit their orthographic changes.
 store(&VERSION) '10.0'
 store(&NAME) 'Haisla'
-store(&COPYRIGHT) '© FirstVoices 2020'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© FirstVoices 2020-2024'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'fv_haisla.kvks'
 store(&LAYOUTFILE) 'fv_haisla.keyman-touch-layout'
 store(&BITMAP) 'fv_haisla.ico'
-
-begin Unicode > use(main)
-store(basevowel) "aeiuAEIU"
-store(ejective) "cklmnpqtwyCKLMNPQTWY"
-store(basekeysecond) "gxGX"
+store(&KEYBOARDVERSION) '2.0.1'
 
 group(main) using keys
-";" + any(ejective) > index(ejective,2) U+0343
-";" + any(basevowel) > index(basevowel,2) U+0301
-"=" + any(basekeysecond) > index(basekeysecond,2) U+0304
+
+
+begin Unicode > use(main)
+
+c --- BEGIN MOBILE LAYOUT ---
+
++ [SHIFT T_ACCENTQU] > "Q̓" layer('default')
++ [SHIFT T_Q] > "Q" layer('default')
++ [SHIFT T_ACCENTWU] > "W̓" layer('default')
++ [SHIFT T_SUPERW] > 'ʷ' layer('default')
++ [SHIFT T_W] > "W" layer('default')
++ [SHIFT T_E] > "E" layer('default')
++ [SHIFT T_R] > "R" layer('default')
++ [SHIFT T_ACCENTTU] > "T̓" layer('default')
++ [SHIFT T_T] > "T" layer('default')
++ [SHIFT T_ACCENTYU] > "Y̓" layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_ACCENTPU] > "P̓" layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_F] > 'F' layer('default')
++ [SHIFT T_GBARU] > "Ḡ" layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_ACCENTKU] > "K̓" layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_DARKLU] > "Ɫ" layer('default')
++ [SHIFT T_ACCENTLU] > "L̓" layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_CURLYQUOTE] > '’' layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_XBARU] > "X̄" layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_ACCENTCU] > "C̓" layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V] > 'V' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_ACCENTNU] > "N̓" layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_ACCENTMU] > "M̓" layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_accentq] > "q̓"
++ [T_Q] > 'q'
++ [T_accentw] > "w̓"
++ [T_superw] > "ʷ"
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_R] > 'r'
++ [T_accentt] > "t̓"
++ [T_T] > 't'
++ [T_accenty] > "y̓"
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_accentp] > "p̓"
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_F] > 'f'
++ [T_gbar] > "ḡ"
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_accentk] > "k̓"
++ [T_K] > 'k'
++ [T_accentl] > "l̓"
++ [T_darkl] > "ɫ"
++ [T_lambda] > "λ"
++ [T_lambdax] > "ƛ"
++ [T_lambdaxaccent] > "ƛ̓"
++ [T_L] > 'l'
++ [T_curlyquote] > "’"
++ [T_Z] > 'z'
++ [T_xbar] > "x̄"
++ [T_X] > 'x'
++ [T_accentc] > "c̓"
++ [T_C] > 'c'
++ [T_V] > 'v'
++ [T_B] > 'b'
++ [T_accentn] > "n̓"
++ [T_N] > 'n'
++ [T_accentm] > "m̓"
++ [T_M] > 'm'
+
+c --- BEGIN DESKTOP LAYOUT ---
+store(Vowels) "aeiuAEIU"
+store(ejective) "cklmnpqtwyCKLMNPQTWY"
+store(G) 'gG'
+store(X) 'xX'
+store(HasMacron) 'ḡḠ'
+store(HasAcute) 'áéíúÁÉÍÚ'
+
+
+";" + any(ejective) > index(ejective,2) U+0313
+";" + any(Vowels) > index(HasAcute,2)
+"=" + any(X) > index(X,2) U+0304
+"=" + any(G) > index(HasMacron,2)
 "=" + "l" > "ɫ"
 "=" + "L" > "Ɫ"
 + [CTRL K_L] > "λ"
 "λ" + "-" > "ƛ"
 "ƛ" + "-" > "ƛ̓"
-"w" + "w" > "ʷ"
++ [ALT K_W] > "ʷ"
 + [K_QUOTE] > "’"
 
-+ [T_gbar] > "ḡ"
-+ [T_xbar] > "x̄"
 
-+ [T_accentc] > "c̓"
-+ [T_accentk] > "k̓"
-+ [T_accentl] > "l̓"
-+ [T_accentm] > "m̓"
-+ [T_accentn] > "n̓"
-+ [T_accentp] > "p̓"
-+ [T_accentq] > "q̓"
-+ [T_accentt] > "t̓"
-+ [T_accentw] > "w̓"
-+ [T_accenty] > "y̓"
-+ [T_darkl] > "ɫ"
-+ [T_lambda] > "λ"
-+ [T_lambdax] > "ƛ"
-+ [T_lambdaxaccent] > "ƛ̓"
-+ [T_superw] > "ʷ"
-+ [T_curlyquote] > "’"
 
-+ [T_GBARU] > "Ḡ"
-+ [T_XBARU] > "X̄"
 
-+ [T_ACCENTCU] > "C̓"
-+ [T_ACCENTKU] > "K̓"
-+ [T_ACCENTLU] > "L̓"
-+ [T_ACCENTMU] > "M̓"
-+ [T_ACCENTNU] > "N̓"
-+ [T_ACCENTPU] > "P̓"
-+ [T_ACCENTQU] > "Q̓"
-+ [T_ACCENTTU] > "T̓"
-+ [T_ACCENTWU] > "W̓"
-+ [T_ACCENTYU] > "Y̓"
-+ [T_DARKLU] > "Ɫ"
+
+
+
+
+
+
+
