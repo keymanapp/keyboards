@@ -1,8 +1,8 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.3'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "hur"
-store(&COPYRIGHT) "(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) "(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
 store(&NAME) "Halq'eméylem"
 store(&BITMAP) 'fv_halqemeylem.ico'
 store(&VISUALKEYBOARD) 'fv_halqemeylem.kvks'
@@ -19,57 +19,34 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_halqemeylem.keyman-touch-layout'
 
+C mobile shift layout
 + [SHIFT T_Q] > 'Q' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'É' layer('default')
-+ [SHIFT T_E_1] > 'È' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_1] > 'È' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > ':' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
-+ [SHIFT T_U_0] > 'Ú' layer('default')
-+ [SHIFT T_U_1] > 'Ù' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U_1] > 'Ù' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
-+ [SHIFT T_I_0] > 'Í' layer('default')
-+ [SHIFT T_I_1] > 'Ì' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I_1] > 'Ì' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O_0] > 'Ó' layer('default')
-+ [SHIFT T_O_1] > 'Ò' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O_1] > 'Ò' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
-+ [SHIFT T_A_1] > 'À' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_1] > 'À' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
-'o' + [SHIFT T_D] > 'ó'
-'I' + [SHIFT T_D] > 'Í'
-'A' + [SHIFT T_D] > 'Á'
-'a' + [SHIFT T_D] > 'á'
-'i' + [SHIFT T_D] > 'í'
-'ō' + [SHIFT T_D] > 'ṓ'
-'Ō' + [SHIFT T_D] > 'Ṓ'
-'E' + [SHIFT T_D] > 'É'
-'U' + [SHIFT T_D] > 'Ú'
-'e' + [SHIFT T_D] > 'é'
-'u' + [SHIFT T_D] > 'ú'
-'O' + [SHIFT T_D] > 'Ó'
-'o' + [SHIFT T_F] > 'ò'
-'I' + [SHIFT T_F] > 'Ì'
-'A' + [SHIFT T_F] > 'À'
-'a' + [SHIFT T_F] > 'à'
-'i' + [SHIFT T_F] > 'ì'
-'ō' + [SHIFT T_F] > 'ṑ'
-'Ō' + [SHIFT T_F] > 'Ṑ'
-'E' + [SHIFT T_F] > 'È'
-'U' + [SHIFT T_F] > 'Ù'
-'e' + [SHIFT T_F] > 'è'
-'u' + [SHIFT T_F] > 'ù'
-'O' + [SHIFT T_F] > 'Ò'
 + [SHIFT T_G] > '-' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
-+ [SHIFT T_J_0] > 'Ṓ' layer('default')
-+ [SHIFT T_J_1] > 'Ṑ' layer('default')
-+ [SHIFT T_J] > 'Ō' layer('default')
++ [SHIFT T_J_0] > 'Ṓ' layer('default') c capital O with macron and acute (single codepoint)
++ [SHIFT T_J_1] > 'Ṑ' layer('default') c capital O with macron and grave (single codepoint)
++ [SHIFT T_J] > 'Ō' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
 + [SHIFT T_COLON_0] > '"' layer('default')
@@ -83,57 +60,36 @@ store(&LAYOUTFILE) 'fv_halqemeylem.keyman-touch-layout'
 + [SHIFT T_B] > '.' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
+
+
+C mobile regular layer
 + [T_Q] > 'q'
 + [T_W] > 'w'
-+ [T_E_0] > 'é'
-+ [T_E_1] > 'è'
++ [T_E_0] > 'é'
++ [T_E_1] > 'è'
 + [T_E] > 'e'
 + [T_R] > ':'
 + [T_T] > 't'
 + [T_Y] > 'y'
-+ [T_U_0] > 'ú'
-+ [T_U_1] > 'ù'
++ [T_U_0] > 'ú'
++ [T_U_1] > 'ù'
 + [T_U] > 'u'
-+ [T_I_0] > 'í'
-+ [T_I_1] > 'ì'
++ [T_I_0] > 'í'
++ [T_I_1] > 'ì'
 + [T_I] > 'i'
-+ [T_O_0] > 'ó'
-+ [T_O_1] > 'ò'
++ [T_O_0] > 'ó'
++ [T_O_1] > 'ò'
 + [T_O] > 'o'
 + [T_P] > 'p'
-+ [T_A_0] > 'á'
-+ [T_A_1] > 'à'
++ [T_A_0] > 'á'
++ [T_A_1] > 'à'
 + [T_A] > 'a'
 + [T_S] > 's'
-'o' + [T_D] > 'ó'
-'I' + [T_D] > 'Í'
-'A' + [T_D] > 'Á'
-'a' + [T_D] > 'á'
-'i' + [T_D] > 'í'
-'ō' + [T_D] > 'ṓ'
-'Ō' + [T_D] > 'Ṓ'
-'E' + [T_D] > 'É'
-'U' + [T_D] > 'Ú'
-'e' + [T_D] > 'é'
-'u' + [T_D] > 'ú'
-'O' + [T_D] > 'Ó'
-'o' + [T_F] > 'ò'
-'I' + [T_F] > 'Ì'
-'A' + [T_F] > 'À'
-'a' + [T_F] > 'à'
-'i' + [T_F] > 'ì'
-'ō' + [T_F] > 'ṑ'
-'Ō' + [T_F] > 'Ṑ'
-'E' + [T_F] > 'È'
-'U' + [T_F] > 'Ù'
-'e' + [T_F] > 'è'
-'u' + [T_F] > 'ù'
-'O' + [T_F] > 'Ò'
 + [T_G] > '-'
 + [T_H] > 'h'
-+ [T_J_0] > 'ṓ'
-+ [T_J_1] > 'ṑ'
-+ [T_J] > 'ō'
++ [T_J_0] > 'ṓ'   c small letter o with macron and acute (1E53)
++ [T_J_1] > 'ṑ' c small letter o with macron and grave (1E51)
++ [T_J] > 'ō'
 + [T_K] > 'k'
 + [T_L] > 'l'
 + [T_COLON_0] > '"'
@@ -150,12 +106,39 @@ store(&LAYOUTFILE) 'fv_halqemeylem.keyman-touch-layout'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
-c Constraints
+c Constraints and rules
 
-store(overaccent) U+0301 U+0300
-store(overaccentkey) "/" "`"
 
-any(overaccent) + any(overaccentkey) > context beep
+C Rules - vowels with accents
+store(plainVowels) "aeioōuAEIOŌU"
+store(acuteVowels) "áéíóṓúÁÉÍÓṒÚ" c combined unicode characters
+store(acuteKeys) [T_D] [SHIFT T_D] "/" 
+store(graveVowels) "àèìòṑùÀÈÌÒṐÙ" c combined unicode characters
+store(graveKeys) [T_F] [SHIFT T_F] "`"
+
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
+any(plainVowels) + any(graveKeys) > index(graveVowels,1) c combining acute deadkey
+
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+any(graveVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+
+c Rules - prevent accents from combining improperly
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep
+any(NumbersAndPunctuation) + any(graveKeys) > context beep
+
+any(acuteVowels) + any(graveKeys) > context beep c prevent multiple accents
+any(graveVowels) + any(acuteKeys) > context beep
+any(acuteVowels) + any(acuteKeys) > context beep
+any(graveVowels) + any(graveKeys) > context beep
+
+C old desktop rules
+c store(overaccent) U+0301 U+0300
+c store(overaccentkey) "/" "`"
+c any(overaccent) + any(overaccentkey) > context beep
+
+c any(NumbersAndPunctuation) + any(overaccentkey) > context beep
+
 
 c original punctuation
 + [RALT K_PERIOD] > '>'
@@ -191,14 +174,13 @@ c lang
 
 + [k_colon] > ':'   
 + [shift k_colon] > ':' 
-+ "/" > U+0301 
-+ "`" > U+0300 
-
-                                             
-+ [caps shift K_LBRKT] > 'ō'   
-+ [ncaps shift K_LBRKT] > 'Ō'
-+ [caps K_LBRKT] > 'Ō'
-+ [ncaps K_LBRKT] > 'ō'
++ "/" > U+0301 c acute
++ "`" > U+0300 c grave
+                                      
++ [caps shift K_LBRKT] > 'ō'   
++ [ncaps shift K_LBRKT] > 'Ō'
++ [caps K_LBRKT] > 'Ō'
++ [ncaps K_LBRKT] > 'ō'
 
 + [caps shift K_RBRKT] > 'x̱'   
 + [ncaps shift K_RBRKT] > 'X̱'
