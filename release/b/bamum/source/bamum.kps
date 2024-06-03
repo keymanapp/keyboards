@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Copyright URL="">Copyright © SIL International</Copyright>
     <Author URL="">Lorna Evans</Author>
     <Version URL=""></Version>
+    <Description>This keyboard is for the Bamum language using the Bamum script. 
+The layout is based on a design by Zakari Nkepu.</Description>
   </Info>
   <Files>
     <File>
@@ -94,6 +97,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -102,6 +111,7 @@
       <Version>1.0</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Bamu\NotoSansBamum-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Bamu\NotoSansBamum-Bold.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSansBamum-Regular.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="bax">Bamun</Language>
       </Languages>

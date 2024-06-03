@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Copyright URL="">© 2008-2020 Visual Media and SIL International</Copyright>
     <Author URL="">Murali M.S.</Author>
     <Version URL="">1.3.1</Version>
+    <Description>This package includes two keyboard layouts: Typewriter and Modular
+layout input for Tamil Unicode.</Description>
   </Info>
   <Files>
     <File>
@@ -99,6 +102,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -119,4 +128,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="tamil - visual media" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

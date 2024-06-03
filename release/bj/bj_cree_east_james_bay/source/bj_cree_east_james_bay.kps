@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,9 @@
     <Copyright URL="">© 2001-2022 Bill Jancewicz</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
     <Version URL=""></Version>
+    <Description>This Cree keyboard is based on the Cree School Board Old Macintosh
+keyboard layout. It a \"typewriter-style\" layout (type one key for one
+character). It uses Unified Canadian Aboriginal Syllabics.</Description>
   </Info>
   <Files>
     <File>
@@ -58,6 +62,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -71,4 +81,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="creekeysdesktop3" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

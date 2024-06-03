@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,7 @@
     <Copyright URL="">© 2021-2023 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>Keyboard for Old Hungarian</Description>
   </Info>
   <Files>
     <File>
@@ -88,6 +90,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType></FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -97,6 +105,7 @@
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\hung\kende\Kende.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\hung\kende\Kende.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="Kende.woff2" /></WebDisplayFonts>
       <Languages>
         <Language ID="ohu-Hung">Old Hungarian</Language>
       </Languages>
