@@ -37,8 +37,7 @@ else
 fi
 
 . "$KEYBOARDROOT/servervars.sh"
-. "$KEYBOARDROOT/resources/util.sh"
-. "$KEYBOARDROOT/resources/codesign.sh"
+. "$KEYBOARDROOT/resources/util.inc.sh"
 . "$KEYBOARDROOT/resources/rsync-tools.sh"
 
 function parse_args {
