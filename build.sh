@@ -78,7 +78,7 @@ function do_clean_targets() {
 #------------------------------------------------------------
 
 function do_configure() {
-  npm install --no-optional
+  npm ci --omit=optional
   builder_echo "kmc version: $($KMC --version)"
 }
 
