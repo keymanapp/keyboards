@@ -2,14 +2,14 @@
 c with name "Dega"
 store(&VERSION) '15.0'
 store(&NAME) 'Dega'
-store(&COPYRIGHT) '© 2021-2023 MSFJ'
+store(&COPYRIGHT) '© MSFJ'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'dega.kvks'
 store(&LAYOUTFILE) 'dega.keyman-touch-layout'
 store(&BITMAP) 'dega.ico'
 store(&CasedKeys)   [K_A] .. [K_Z]
 store(&MESSAGE) 'Dega Keyboard is created for indigenous people in the Central Highlands of Vietnam, to preserve their writing, this Dega Keyboard can be used by Êđê, Jơrai, Kơ’Ho, Mơnông, Bahnar and many other indigenous ethnic groups.'
-store(&KEYBOARDVERSION) '3.0'
+store(&KEYBOARDVERSION) '3.1'
 
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
@@ -136,6 +136,24 @@ c transform
 'Z' + [SHIFT K_Z]     > '̂'
 'X' + [SHIFT K_X]     > '̆'
 
+c Added Apr 23, 2024
+
+store(aeouK) "aeiouyAEIOUY"
+store(aeouGrave) "àèìòùỳÀÈÌÒÙỲ"
+
+store(Circ) "âêôÂÊÔ"
+store(Grave) "àèòÀÈÒ"
+store(CircGrave) "ầềồẦỀỒ"
+store(ou_GraveHorn) "ờừỜỪ"
+store(ou_Grave) "òùÒÙ"
+
+any(aeouK) + [K_BKQUOTE] > index(aeouGrave,1)
+any(Grave) "z" + [K_Z] > index(CircGrave,1)
+any(Circ) + [K_BKQUOTE] > index(CircGrave,1)
+any(ou_wx) + [K_BKQUOTE] > index(ou_GraveHorn,1)
+any(ou_Grave) + [K_W] > index(ou_GraveHorn,1)
+any(ou_Grave) + [SHIFT K_W] > index(ou_GraveHorn,1)
+
 c Added per request on Oct 30, 2023
 'A' + [K_A]     > 'Â'
 'B' + [K_B]     > 'Ƀ'
@@ -157,7 +175,6 @@ store(vx)   'EUIYOAeuiyoa'
 any(vx) + [K_X]         > index(vx,1) U+0306
 any(vx) + [SHIFT K_X]   > index(vx,1) U+0306
 
-
 store(vvx)  'ÊƯÔÂêưôâ'
 
 any(vvx) + [K_X]        > index(vvx,1) U+0306 
@@ -167,6 +184,7 @@ store(ou_wx)  'ơưƠƯ'
 
 any(ou_wx) + [K_X]           > index(ou_wx,1) U+0306 
 any(ou_wx) + [SHIFT K_X]     > index(ou_wx,1) U+0306 
+
 
 
 

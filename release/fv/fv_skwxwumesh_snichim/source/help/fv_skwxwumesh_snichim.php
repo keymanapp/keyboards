@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Sḵwx̱wúmesh sníchim Keyboard Help';
-  $pagetitle = 'Sḵwx̱wúmesh sníchim Keyboard Help';
+  $pagename = 'Sḵwx̱wú7mesh sníchim Keyboard Help';
+  $pagetitle = 'Sḵwx̱wú7mesh sníchim Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Sḵwx̱wúmesh sníchim</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of the BC Coast region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>

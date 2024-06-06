@@ -1,0 +1,122 @@
+﻿store(&Version) '10.0'
+store(&NAME) 'Korean Phonetic'
+store(&VISUALKEYBOARD) 'korean_phonetic.kvks'
+store(&BITMAP) 'korean_phonetic.ico'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&mnemoniclayout) '1'
+
+store(&TARGETS) 'windows'
+
+begin Unicode > use(main)
+                              
+c Choseong (Sylable-initial consonants)
+store(choseongSK) 'gndrmbsqjcktph'			 c keys
+store(choseongS)  'ᄀᄂᄃᄅᄆᄇᄉᄋᄌᄎᄏᄐᄑᄒ'	 c output jamo
+store(choseong)   'ᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄋᄌᄍᄎᄏᄐᄑᄒ' U+1113 U+1114 U+1115 U+1116 U+1117 U+1118 U+1119 U+111A U+111B \
+                  U+111C U+111D U+111E U+111F U+1120 U+1121 U+1122 U+1123 U+1124 U+1125 U+1126 U+1127 U+1128 \ 
+                  U+1129 U+112A U+112B U+112C U+112D U+112E U+112F U+1130 U+1131 U+1132 U+1133 U+1134 U+1135 \
+                  U+1136 U+1137 U+1138 U+1139 U+113A U+113B U+113C U+113D U+113E U+113F U+1140 U+1141 U+1142 \
+                  U+1143 U+1144 U+1145 U+1146 U+1147 U+1148 U+1149 U+114A U+114B U+114C U+114D U+114E U+114F \
+                  U+1150 U+1151 U+1152 U+1153 U+1154 U+1155 U+1156 U+1157 U+1158 U+1159
+                              
+c Jungseong (Vowels)
+store(jungseongSK) 'alvzowuxyife'			 c keys
+store(jungseongS)  'ᅡᅣᅥᅧᅩᅭᅮᅲᅳᅵᅢᅦ'	 c output jamo
+store(jungseongPu)  'ᅡᅣᅥᅧᅪᅩᅯᅮᅳ'
+store(jungseongPuO) 'ᅤᅨᅫᅬᅰᅱᅴᅢᅦ'
+store(jungseong)   U+1160 U+1161 U+1162 U+1163 U+1164 U+1165 U+1166 U+1167 U+1168 U+1169 U+116A U+116B U+116C U+116D U+116E U+116F \
+                   U+1170 U+1171 U+1172 U+1173 U+1174 U+1175 U+1176 U+1177 U+1178 U+1179 U+117A U+117B U+117C U+117D U+117E U+117F \
+                   U+1180 U+1181 U+1182 U+1183 U+1184 U+1185 U+1186 U+1187 U+1188 U+1189 U+118A U+118B U+118C U+118D U+118E U+118F \
+                   U+1190 U+1191 U+1192 U+1193 U+1194 U+1195 U+1196 U+1197 U+1198 U+1199 U+119A U+119B U+119C U+119D U+119E U+119F \
+                   U+11A0 U+11A1 U+11A2
+
+c Jongseong (Sylable-final consonants)
+store(jongseongSK) 'gndrmbsqjcktph'			 c keys
+store(jongseongS)  'ᆨᆫᆮᆯᆷᆸᆺᆼᆽᆾᆿᇀᇁᇂ'	 c output jamo
+store(jongseong)   U+11A8 U+11A9 U+11AA U+11AB U+11AC U+11AD U+11AE U+11AF \
+                   U+11B0 U+11B1 U+11B2 U+11B3 U+11B4 U+11B5 U+11B6 U+11B7 U+11B8 U+11B9 U+11BA U+11BB U+11BC U+11BD U+11BE U+11BF \
+                   U+11C0 U+11C1 U+11C2 U+11C3 U+11C4 U+11C5 U+11C6 U+11C7 U+11C8 U+11C9 U+11CA U+11CB U+11CC U+11CD U+11CE U+11CF \
+                   U+11D0 U+11D1 U+11D2 U+11D3 U+11D4 U+11D5 U+11D6 U+11D7 U+11D8 U+11D9 U+11DA U+11DB U+11DC U+11DD U+11DE U+11DF \
+                   U+11E0 U+11E1 U+11E2 U+11E3 U+11E4 U+11E5 U+11C6 U+11E7 U+11E8 U+11E9 U+11EA U+11EB U+11EC U+11ED U+11EE U+11EF \
+                   U+11F0 U+11F1 U+11F2 U+11F3
+                             
+group(main) using keys
+
+c Choseong - Sylable-initial consonants
++ any(choseongSK) > use(g_choseong)
+any(choseong) + any(choseongSK) > context use(g_choseong)
+
+c Jungseong - Vowels
+any(choseong) + any(jungseongSK) > context use(g_jungseong)
+any(choseong) any(jungseong) + any(jungseongSK) > context use(g_jungseong)
+
+c Jongseong - Sylable-final consonants
+any(choseong) any(jungseong) + any(jongseongSK) > context use(g_jongseong)
+any(choseong) any(jungseong) any(jongseong) + any(jongseongSK) > context use(g_jongseong)
+
+c Invalid sequences - prevent
+any(jongseong) + any(jungseongSK) > context beep
+any(jongseong) + any(choseongSK) > context beep
+any(choseong) any(choseong) + any(choseongSK) > context beep
+
+c Combining jamo
+store(jamo_combine) 'jamo_combine.dll:jamo_combine'
++ ' ' > call(jamo_combine) dk(space)
+dk(space)+' '>' '
+
+c Other characters
+store(punct_or_number) '1234567890!@#$%^&*()-=_+`~[]{}\|;:",./<>?' "'"
++ any(punct_or_number) > index(punct_or_number, 1)
+
+nomatch > beep
+
+c ==Choseong==
+group(g_choseong) using keys
+
+c Start a syllable
++ any(choseongSK) > index(choseongS, 1)
+dk(space) + any(choseongSK) > index(choseongS, 2)
+
+c second half of initial consonant - standard alphabet
+'ᄀ' + 'g' > 'ᄁ'
+'ᄃ' + 'd' > 'ᄄ'
+'ᄇ' + 'b' > 'ᄈ'
+'ᄉ' + 's' > 'ᄊ'
+'ᄌ' + 'j' > 'ᄍ'
+
+nomatch > beep
+
+c ==Jungseong==
+group(g_jungseong) using keys
+         
+any(choseong) + any(jungseongSK) > context index(jungseongS, 2)
+any(jungseongPu) + 'i' > index(jungseongPuO, 1)
+'ᅩ' + 'a' > 'ᅪ'
+'ᅮ' + 'v' > 'ᅯ'
+
+nomatch > beep
+
+c ==Jongseong==
+group(g_jongseong) using keys
+
+any(jungseong) + any(jongseongSK) > context index(jongseongS, 2)
+
+c combinations
+
+'ᆨ' + 'g' > 'ᆩ'
+'ᆺ' + 's' > 'ᆻ'
+
+'ᆫ' + 'j' > 'ᆬ'
+'ᆫ' + 'h' > 'ᆭ'
+'ᆯ' + 'g' > 'ᆰ'
+'ᆯ' + 'm' > 'ᆱ'
+'ᆯ' + 'b' > 'ᆲ'
+'ᆯ' + 's' > 'ᆳ'
+'ᆯ' + 't' > 'ᆴ'
+'ᆯ' + 'p' > 'ᆵ'
+'ᆯ' + 'h' > 'ᆶ'
+'ᆸ' + 's' > 'ᆹ'
+
+nomatch > beep
+

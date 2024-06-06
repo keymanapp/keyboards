@@ -1,0 +1,408 @@
+﻿c Kreative SuperPET keyboard layout
+c by Rebecca Bettencourt
+c http://www.kreativekorp.com
+
+store(&VERSION) '10.0'
+store(&NAME) 'Kreative SuperPET'
+store(&COPYRIGHT) '© 2019-2024 Kreative Software'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'kreative_superpet.ico'
+store(&VISUALKEYBOARD) 'kreative_superpet.kvks'
+store(&LAYOUTFILE) 'kreative_superpet.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [CAPS SHIFT RALT K_BKQUOTE] > 'π'
++ [CAPS SHIFT RALT K_1] > '▛'
++ [CAPS SHIFT RALT K_2] > '▜'
++ [CAPS SHIFT RALT K_3] > '▙'
++ [CAPS SHIFT RALT K_4] > '▟'
++ [CAPS SHIFT RALT K_5] > U+1FB91
++ [CAPS SHIFT RALT K_6] > U+1FB94
++ [CAPS SHIFT RALT K_7] > U+1FBB1
++ [CAPS SHIFT RALT K_8] > '▀'
++ [CAPS SHIFT RALT K_9] > U+1FB90
++ [CAPS SHIFT RALT K_0] > U+1FB96
++ [CAPS SHIFT RALT K_HYPHEN] > U+1FB8C
++ [CAPS SHIFT RALT K_EQUAL] > '▒'
++ [CAPS SHIFT RALT K_Q] > '├'
++ [CAPS SHIFT RALT K_W] > '┤'
++ [CAPS SHIFT RALT K_E] > '┴'
++ [CAPS SHIFT RALT K_R] > '┬'
++ [CAPS SHIFT RALT K_T] > '▔'
++ [CAPS SHIFT RALT K_Y] > U+1FB82
++ [CAPS SHIFT RALT K_U] > U+1FB83
++ [CAPS SHIFT RALT K_I] > '▄'
++ [CAPS SHIFT RALT K_O] > '▃'
++ [CAPS SHIFT RALT K_P] > '▂'
++ [CAPS SHIFT RALT K_LBRKT] > '▁'
++ [CAPS SHIFT RALT K_RBRKT] > '◥'
++ [CAPS SHIFT RALT K_BKSLASH] > U+1FB8F
++ [CAPS SHIFT RALT K_A] > '┌'
++ [CAPS SHIFT RALT K_S] > '┐'
++ [CAPS SHIFT RALT K_D] > '▗'
++ [CAPS SHIFT RALT K_F] > '▖'
++ [CAPS SHIFT RALT K_G] > '▏'
++ [CAPS SHIFT RALT K_H] > '▎'
++ [CAPS SHIFT RALT K_J] > '▍'
++ [CAPS SHIFT RALT K_K] > '▌'
++ [CAPS SHIFT RALT K_L] > U+1FB88
++ [CAPS SHIFT RALT K_COLON] > U+1FB87
++ [CAPS SHIFT RALT K_QUOTE] > '▕'
++ [CAPS SHIFT RALT K_oE2] > U+1FB8F
++ [CAPS SHIFT RALT K_Z] > '└'
++ [CAPS SHIFT RALT K_X] > '┘'
++ [CAPS SHIFT RALT K_C] > '▝'
++ [CAPS SHIFT RALT K_V] > '▘'
++ [CAPS SHIFT RALT K_B] > '▚'
++ [CAPS SHIFT RALT K_N] > U+1FB87
++ [CAPS SHIFT RALT K_M] > '▕'
++ [CAPS SHIFT RALT K_COMMA] > '▐'
++ [CAPS SHIFT RALT K_PERIOD] > '▞'
++ [CAPS SHIFT RALT K_SLASH] > '◣'
++ [CAPS SHIFT RALT K_SPACE] > U+00A0
++ [NCAPS SHIFT RALT K_BKQUOTE] > 'π'
++ [NCAPS SHIFT RALT K_1] > '▛'
++ [NCAPS SHIFT RALT K_2] > '▜'
++ [NCAPS SHIFT RALT K_3] > '▙'
++ [NCAPS SHIFT RALT K_4] > '▟'
++ [NCAPS SHIFT RALT K_5] > U+1FB91
++ [NCAPS SHIFT RALT K_6] > U+1FB94
++ [NCAPS SHIFT RALT K_7] > U+1FBB1
++ [NCAPS SHIFT RALT K_8] > '▀'
++ [NCAPS SHIFT RALT K_9] > U+1FB90
++ [NCAPS SHIFT RALT K_0] > U+1FB96
++ [NCAPS SHIFT RALT K_HYPHEN] > U+1FB8C
++ [NCAPS SHIFT RALT K_EQUAL] > '▒'
++ [NCAPS SHIFT RALT K_Q] > '├'
++ [NCAPS SHIFT RALT K_W] > '┤'
++ [NCAPS SHIFT RALT K_E] > '┴'
++ [NCAPS SHIFT RALT K_R] > '┬'
++ [NCAPS SHIFT RALT K_T] > '▔'
++ [NCAPS SHIFT RALT K_Y] > U+1FB82
++ [NCAPS SHIFT RALT K_U] > U+1FB83
++ [NCAPS SHIFT RALT K_I] > '▄'
++ [NCAPS SHIFT RALT K_O] > '▃'
++ [NCAPS SHIFT RALT K_P] > '▂'
++ [NCAPS SHIFT RALT K_LBRKT] > '▁'
++ [NCAPS SHIFT RALT K_RBRKT] > '◥'
++ [NCAPS SHIFT RALT K_BKSLASH] > U+1FB8F
++ [NCAPS SHIFT RALT K_A] > '┌'
++ [NCAPS SHIFT RALT K_S] > '┐'
++ [NCAPS SHIFT RALT K_D] > '▗'
++ [NCAPS SHIFT RALT K_F] > '▖'
++ [NCAPS SHIFT RALT K_G] > '▏'
++ [NCAPS SHIFT RALT K_H] > '▎'
++ [NCAPS SHIFT RALT K_J] > '▍'
++ [NCAPS SHIFT RALT K_K] > '▌'
++ [NCAPS SHIFT RALT K_L] > U+1FB88
++ [NCAPS SHIFT RALT K_COLON] > U+1FB87
++ [NCAPS SHIFT RALT K_QUOTE] > '▕'
++ [NCAPS SHIFT RALT K_oE2] > U+1FB8F
++ [NCAPS SHIFT RALT K_Z] > '└'
++ [NCAPS SHIFT RALT K_X] > '┘'
++ [NCAPS SHIFT RALT K_C] > '▝'
++ [NCAPS SHIFT RALT K_V] > '▘'
++ [NCAPS SHIFT RALT K_B] > '▚'
++ [NCAPS SHIFT RALT K_N] > U+1FB87
++ [NCAPS SHIFT RALT K_M] > '▕'
++ [NCAPS SHIFT RALT K_COMMA] > '▐'
++ [NCAPS SHIFT RALT K_PERIOD] > '▞'
++ [NCAPS SHIFT RALT K_SLASH] > '◣'
++ [NCAPS SHIFT RALT K_SPACE] > U+00A0
++ [CAPS RALT K_BKQUOTE] > '←'
++ [CAPS RALT K_1] > '◘'
++ [CAPS RALT K_2] > '◙'
++ [CAPS RALT K_3] > '£'
++ [CAPS RALT K_4] > U+F821
++ [CAPS RALT K_5] > '€'
++ [CAPS RALT K_6] > '↑'
++ [CAPS RALT K_7] > '✓'
++ [CAPS RALT K_8] > U+1FB98
++ [CAPS RALT K_9] > U+1FB99
++ [CAPS RALT K_0] > U+1FB95
++ [CAPS RALT K_HYPHEN] > '│'
++ [CAPS RALT K_EQUAL] > '┼'
++ [CAPS RALT K_Q] > '•'
++ [CAPS RALT K_W] > '○'
++ [CAPS RALT K_E] > U+1FB76
++ [CAPS RALT K_R] > U+1FB7B
++ [CAPS RALT K_T] > U+1FB70
++ [CAPS RALT K_Y] > U+1FB75
++ [CAPS RALT K_U] > '╭'
++ [CAPS RALT K_I] > '╮'
++ [CAPS RALT K_O] > U+1FB7D
++ [CAPS RALT K_P] > U+1FB7E
++ [CAPS RALT K_LBRKT] > U+1FB7F
++ [CAPS RALT K_RBRKT] > '─'
++ [CAPS RALT K_BKSLASH] > '◤'
++ [CAPS RALT K_A] > '♠'
++ [CAPS RALT K_S] > '♥'
++ [CAPS RALT K_D] > U+1FB77
++ [CAPS RALT K_F] > U+1FB7A
++ [CAPS RALT K_G] > U+1FB71
++ [CAPS RALT K_H] > U+1FB74
++ [CAPS RALT K_J] > '╰'
++ [CAPS RALT K_K] > '╯'
++ [CAPS RALT K_L] > U+1FB7C
++ [CAPS RALT K_COLON] > U+1FB7F
++ [CAPS RALT K_QUOTE] > '█'
++ [CAPS RALT K_oE2] > '◤'
++ [CAPS RALT K_Z] > '♦'
++ [CAPS RALT K_X] > '♣'
++ [CAPS RALT K_C] > U+1FB78
++ [CAPS RALT K_V] > U+1FB79
++ [CAPS RALT K_B] > U+1FB72
++ [CAPS RALT K_N] > U+1FB73
++ [CAPS RALT K_M] > '╲'
++ [CAPS RALT K_COMMA] > '╱'
++ [CAPS RALT K_PERIOD] > '╳'
++ [CAPS RALT K_SLASH] > '◢'
++ [CAPS RALT K_SPACE] > U+00A0
++ [NCAPS RALT K_BKQUOTE] > '←'
++ [NCAPS RALT K_1] > '◘'
++ [NCAPS RALT K_2] > '◙'
++ [NCAPS RALT K_3] > '£'
++ [NCAPS RALT K_4] > U+F821
++ [NCAPS RALT K_5] > '€'
++ [NCAPS RALT K_6] > '↑'
++ [NCAPS RALT K_7] > '✓'
++ [NCAPS RALT K_8] > U+1FB98
++ [NCAPS RALT K_9] > U+1FB99
++ [NCAPS RALT K_0] > U+1FB95
++ [NCAPS RALT K_HYPHEN] > '│'
++ [NCAPS RALT K_EQUAL] > '┼'
++ [NCAPS RALT K_Q] > '•'
++ [NCAPS RALT K_W] > '○'
++ [NCAPS RALT K_E] > U+1FB76
++ [NCAPS RALT K_R] > U+1FB7B
++ [NCAPS RALT K_T] > U+1FB70
++ [NCAPS RALT K_Y] > U+1FB75
++ [NCAPS RALT K_U] > '╭'
++ [NCAPS RALT K_I] > '╮'
++ [NCAPS RALT K_O] > U+1FB7D
++ [NCAPS RALT K_P] > U+1FB7E
++ [NCAPS RALT K_LBRKT] > U+1FB7F
++ [NCAPS RALT K_RBRKT] > '─'
++ [NCAPS RALT K_BKSLASH] > '◤'
++ [NCAPS RALT K_A] > '♠'
++ [NCAPS RALT K_S] > '♥'
++ [NCAPS RALT K_D] > U+1FB77
++ [NCAPS RALT K_F] > U+1FB7A
++ [NCAPS RALT K_G] > U+1FB71
++ [NCAPS RALT K_H] > U+1FB74
++ [NCAPS RALT K_J] > '╰'
++ [NCAPS RALT K_K] > '╯'
++ [NCAPS RALT K_L] > U+1FB7C
++ [NCAPS RALT K_COLON] > U+1FB7F
++ [NCAPS RALT K_QUOTE] > '█'
++ [NCAPS RALT K_oE2] > '◤'
++ [NCAPS RALT K_Z] > '♦'
++ [NCAPS RALT K_X] > '♣'
++ [NCAPS RALT K_C] > U+1FB78
++ [NCAPS RALT K_V] > U+1FB79
++ [NCAPS RALT K_B] > U+1FB72
++ [NCAPS RALT K_N] > U+1FB73
++ [NCAPS RALT K_M] > '╲'
++ [NCAPS RALT K_COMMA] > '╱'
++ [NCAPS RALT K_PERIOD] > '╳'
++ [NCAPS RALT K_SLASH] > '◢'
++ [NCAPS RALT K_SPACE] > U+00A0
++ [CAPS SHIFT K_BKQUOTE] > '~'
++ [CAPS SHIFT K_1] > '!'
++ [CAPS SHIFT K_2] > '@'
++ [CAPS SHIFT K_3] > '#'
++ [CAPS SHIFT K_4] > '$'
++ [CAPS SHIFT K_5] > '%'
++ [CAPS SHIFT K_6] > '^'
++ [CAPS SHIFT K_7] > '&'
++ [CAPS SHIFT K_8] > '*'
++ [CAPS SHIFT K_9] > '('
++ [CAPS SHIFT K_0] > ')'
++ [CAPS SHIFT K_HYPHEN] > '_'
++ [CAPS SHIFT K_EQUAL] > '+'
++ [CAPS SHIFT K_Q] > 'Q'
++ [CAPS SHIFT K_W] > 'W'
++ [CAPS SHIFT K_E] > 'E'
++ [CAPS SHIFT K_R] > 'R'
++ [CAPS SHIFT K_T] > 'T'
++ [CAPS SHIFT K_Y] > 'Y'
++ [CAPS SHIFT K_U] > 'U'
++ [CAPS SHIFT K_I] > 'I'
++ [CAPS SHIFT K_O] > 'O'
++ [CAPS SHIFT K_P] > 'P'
++ [CAPS SHIFT K_LBRKT] > '{'
++ [CAPS SHIFT K_RBRKT] > '}'
++ [CAPS SHIFT K_BKSLASH] > '|'
++ [CAPS SHIFT K_A] > 'A'
++ [CAPS SHIFT K_S] > 'S'
++ [CAPS SHIFT K_D] > 'D'
++ [CAPS SHIFT K_F] > 'F'
++ [CAPS SHIFT K_G] > 'G'
++ [CAPS SHIFT K_H] > 'H'
++ [CAPS SHIFT K_J] > 'J'
++ [CAPS SHIFT K_K] > 'K'
++ [CAPS SHIFT K_L] > 'L'
++ [CAPS SHIFT K_COLON] > ':'
++ [CAPS SHIFT K_QUOTE] > '"'
++ [CAPS SHIFT K_oE2] > '|'
++ [CAPS SHIFT K_Z] > 'Z'
++ [CAPS SHIFT K_X] > 'X'
++ [CAPS SHIFT K_C] > 'C'
++ [CAPS SHIFT K_V] > 'V'
++ [CAPS SHIFT K_B] > 'B'
++ [CAPS SHIFT K_N] > 'N'
++ [CAPS SHIFT K_M] > 'M'
++ [CAPS SHIFT K_COMMA] > '<'
++ [CAPS SHIFT K_PERIOD] > '>'
++ [CAPS SHIFT K_SLASH] > '?'
++ [CAPS SHIFT K_SPACE] > U+0020
++ [NCAPS SHIFT K_BKQUOTE] > '~'
++ [NCAPS SHIFT K_1] > '!'
++ [NCAPS SHIFT K_2] > '@'
++ [NCAPS SHIFT K_3] > '#'
++ [NCAPS SHIFT K_4] > '$'
++ [NCAPS SHIFT K_5] > '%'
++ [NCAPS SHIFT K_6] > '^'
++ [NCAPS SHIFT K_7] > '&'
++ [NCAPS SHIFT K_8] > '*'
++ [NCAPS SHIFT K_9] > '('
++ [NCAPS SHIFT K_0] > ')'
++ [NCAPS SHIFT K_HYPHEN] > '_'
++ [NCAPS SHIFT K_EQUAL] > '+'
++ [NCAPS SHIFT K_Q] > 'Q'
++ [NCAPS SHIFT K_W] > 'W'
++ [NCAPS SHIFT K_E] > 'E'
++ [NCAPS SHIFT K_R] > 'R'
++ [NCAPS SHIFT K_T] > 'T'
++ [NCAPS SHIFT K_Y] > 'Y'
++ [NCAPS SHIFT K_U] > 'U'
++ [NCAPS SHIFT K_I] > 'I'
++ [NCAPS SHIFT K_O] > 'O'
++ [NCAPS SHIFT K_P] > 'P'
++ [NCAPS SHIFT K_LBRKT] > '{'
++ [NCAPS SHIFT K_RBRKT] > '}'
++ [NCAPS SHIFT K_BKSLASH] > '|'
++ [NCAPS SHIFT K_A] > 'A'
++ [NCAPS SHIFT K_S] > 'S'
++ [NCAPS SHIFT K_D] > 'D'
++ [NCAPS SHIFT K_F] > 'F'
++ [NCAPS SHIFT K_G] > 'G'
++ [NCAPS SHIFT K_H] > 'H'
++ [NCAPS SHIFT K_J] > 'J'
++ [NCAPS SHIFT K_K] > 'K'
++ [NCAPS SHIFT K_L] > 'L'
++ [NCAPS SHIFT K_COLON] > ':'
++ [NCAPS SHIFT K_QUOTE] > '"'
++ [NCAPS SHIFT K_oE2] > '|'
++ [NCAPS SHIFT K_Z] > 'Z'
++ [NCAPS SHIFT K_X] > 'X'
++ [NCAPS SHIFT K_C] > 'C'
++ [NCAPS SHIFT K_V] > 'V'
++ [NCAPS SHIFT K_B] > 'B'
++ [NCAPS SHIFT K_N] > 'N'
++ [NCAPS SHIFT K_M] > 'M'
++ [NCAPS SHIFT K_COMMA] > '<'
++ [NCAPS SHIFT K_PERIOD] > '>'
++ [NCAPS SHIFT K_SLASH] > '?'
++ [NCAPS SHIFT K_SPACE] > U+0020
++ [CAPS K_BKQUOTE] > '`'
++ [CAPS K_1] > '1'
++ [CAPS K_2] > '2'
++ [CAPS K_3] > '3'
++ [CAPS K_4] > '4'
++ [CAPS K_5] > '5'
++ [CAPS K_6] > '6'
++ [CAPS K_7] > '7'
++ [CAPS K_8] > '8'
++ [CAPS K_9] > '9'
++ [CAPS K_0] > '0'
++ [CAPS K_HYPHEN] > '-'
++ [CAPS K_EQUAL] > '='
++ [CAPS K_Q] > 'Q'
++ [CAPS K_W] > 'W'
++ [CAPS K_E] > 'E'
++ [CAPS K_R] > 'R'
++ [CAPS K_T] > 'T'
++ [CAPS K_Y] > 'Y'
++ [CAPS K_U] > 'U'
++ [CAPS K_I] > 'I'
++ [CAPS K_O] > 'O'
++ [CAPS K_P] > 'P'
++ [CAPS K_LBRKT] > '['
++ [CAPS K_RBRKT] > ']'
++ [CAPS K_BKSLASH] > '\'
++ [CAPS K_A] > 'A'
++ [CAPS K_S] > 'S'
++ [CAPS K_D] > 'D'
++ [CAPS K_F] > 'F'
++ [CAPS K_G] > 'G'
++ [CAPS K_H] > 'H'
++ [CAPS K_J] > 'J'
++ [CAPS K_K] > 'K'
++ [CAPS K_L] > 'L'
++ [CAPS K_COLON] > ';'
++ [CAPS K_QUOTE] > "'"
++ [CAPS K_oE2] > '\'
++ [CAPS K_Z] > 'Z'
++ [CAPS K_X] > 'X'
++ [CAPS K_C] > 'C'
++ [CAPS K_V] > 'V'
++ [CAPS K_B] > 'B'
++ [CAPS K_N] > 'N'
++ [CAPS K_M] > 'M'
++ [CAPS K_COMMA] > ','
++ [CAPS K_PERIOD] > '.'
++ [CAPS K_SLASH] > '/'
++ [CAPS K_SPACE] > U+0020
++ [NCAPS K_BKQUOTE] > '`'
++ [NCAPS K_1] > '1'
++ [NCAPS K_2] > '2'
++ [NCAPS K_3] > '3'
++ [NCAPS K_4] > '4'
++ [NCAPS K_5] > '5'
++ [NCAPS K_6] > '6'
++ [NCAPS K_7] > '7'
++ [NCAPS K_8] > '8'
++ [NCAPS K_9] > '9'
++ [NCAPS K_0] > '0'
++ [NCAPS K_HYPHEN] > '-'
++ [NCAPS K_EQUAL] > '='
++ [NCAPS K_Q] > 'q'
++ [NCAPS K_W] > 'w'
++ [NCAPS K_E] > 'e'
++ [NCAPS K_R] > 'r'
++ [NCAPS K_T] > 't'
++ [NCAPS K_Y] > 'y'
++ [NCAPS K_U] > 'u'
++ [NCAPS K_I] > 'i'
++ [NCAPS K_O] > 'o'
++ [NCAPS K_P] > 'p'
++ [NCAPS K_LBRKT] > '['
++ [NCAPS K_RBRKT] > ']'
++ [NCAPS K_BKSLASH] > '\'
++ [NCAPS K_A] > 'a'
++ [NCAPS K_S] > 's'
++ [NCAPS K_D] > 'd'
++ [NCAPS K_F] > 'f'
++ [NCAPS K_G] > 'g'
++ [NCAPS K_H] > 'h'
++ [NCAPS K_J] > 'j'
++ [NCAPS K_K] > 'k'
++ [NCAPS K_L] > 'l'
++ [NCAPS K_COLON] > ';'
++ [NCAPS K_QUOTE] > "'"
++ [NCAPS K_oE2] > '\'
++ [NCAPS K_Z] > 'z'
++ [NCAPS K_X] > 'x'
++ [NCAPS K_C] > 'c'
++ [NCAPS K_V] > 'v'
++ [NCAPS K_B] > 'b'
++ [NCAPS K_N] > 'n'
++ [NCAPS K_M] > 'm'
++ [NCAPS K_COMMA] > ','
++ [NCAPS K_PERIOD] > '.'
++ [NCAPS K_SLASH] > '/'
++ [NCAPS K_SPACE] > U+0020

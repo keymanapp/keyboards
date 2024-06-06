@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Name URL="">Vai (Athinkra)</Name>
     <Copyright URL="">© 2008-2020 Athinkra, LLC</Copyright>
     <Author URL="">Jason Glavy</Author>
+    <Description>A Keyman keyboard for the Vai language of Liberia, developed by the team
+at Athinkra, LLC.</Description>
   </Info>
   <Files>
     <File>
@@ -106,6 +109,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -118,4 +127,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="vai1.1" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>
