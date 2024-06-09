@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,6 +23,8 @@
     <Copyright URL="">© 2018-2023 SIL Cameroon</Copyright>
     <Author URL="mailto:keyboards_cameroon@sil.org">Matthew Lee</Author>
     <WebSite URL="LangTechCameroon.info">LangTechCameroon.info</WebSite>
+    <Description>This keyboard supports the Standardized Alphabet for Cameroonian
+Languages for a QWERTY (US Keyboard)</Description>
   </Info>
   <Files>
     <File>
@@ -161,6 +164,12 @@
       <Description>File OFL-FAQ.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -453,4 +462,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="cameroonqwertyunicode50" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

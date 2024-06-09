@@ -11,9 +11,10 @@
     <MSIFileName>C:\Users\Samuel\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
-    <Folder></Folder>
+    <Folder/>
     <Items/>
   </StartMenu>
   <Info>
@@ -22,6 +23,12 @@
     <Author URL="mailto:lang-tech_nepal@sil.org">SIL Nepal IT Department</Author>
     <Version URL=""></Version>
     <WebSite URL="https://nepal.sil.org/">https://nepal.sil.org/</WebSite>
+    <Description>The SIL Devanagari Typewriter keyboard is designed for those users who
+are using traditional Nepali keyboard layout. The keyboard layout can be
+viewed by clicking on the Keyman icon and selecting the On-Screen
+Keyboard menu item, or by opening the Help documentation. This layout
+nearly matches the "Nepali Traditional" Windows keyboard layout with
+only few changes.</Description>
   </Info>
   <Files>
     <File>
@@ -120,14 +127,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Devanagari Typewriter (SIL)</Name>
       <ID>sil_devanagari_typewriter</ID>
       <Version>1.1.1</Version>
-      <OSKFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Bold.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Bold.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ne">Nepali (macrolanguage)</Language>
         <Language ID="aph">Athpariya</Language>

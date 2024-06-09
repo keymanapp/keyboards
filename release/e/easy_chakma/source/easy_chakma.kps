@@ -10,6 +10,7 @@
     <MSIFileName>C:\Users\Keyman\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Easy Chakma</Folder>
@@ -21,6 +22,8 @@
     <Copyright URL="">© 2015-2022 Bivuti Chakma</Copyright>
     <Author URL="mailto:bsereye@hotmail.com">Bivuti Chakma</Author>
     <WebSite URL=""></WebSite>
+    <Description>The first Unicode Keyboard for Chakma community. It is easy to use and
+to input any Chakma complex words even any Chakma spell-bound.</Description>
   </Info>
   <Files>
     <File>
@@ -65,6 +68,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -79,4 +88,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="easy chakma new" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>
