@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Macedonian (FYROM) - Standard Basic</Name>
     <Copyright URL="">© 2009-2020 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Macedonian (FYROM) - Standard Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -69,6 +71,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -78,7 +86,14 @@
       <Languages>
         <Language ID="mk">Macedonian</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="mk" Keys="m a k e d o n s k i space j a z i k" Text="македонски јазик" Note="Name of Language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="macedonian_fyro" Relationship="deprecates" />
+    <RelatedPackage ID="kbdmacst" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

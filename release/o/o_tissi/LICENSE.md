@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2020-2021 Indigenous Language Network
+Copyright © 2020-2021 Indigenous Language Network
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

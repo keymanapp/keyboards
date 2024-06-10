@@ -1,23 +1,22 @@
 #!/usr/bin/env bash
 
-
-source ../external.sh
+source ../external.inc.sh
 
 die() { echo "$*" 1>&2 ; exit 1; }
 
 test_is_external_source_keyboard() {
   echo "Test $1 is a source"
-  if ! is_external_source_keyboard "$1"; then die "$1 should be a valid source"; fi
+  if ! _is_external_source_keyboard "$1"; then die "$1 should be a valid source"; fi
 }
 
 test_is_not_external_source_keyboard() {
   echo "Test $1 is not a source"
-  if is_external_source_keyboard "$1"; then die "$1 should not be a valid source"; fi
+  if _is_external_source_keyboard "$1"; then die "$1 should not be a valid source"; fi
 }
 
 test_urldecode() {
   echo "Test urldecode $1 matches $2"
-  local output=`urldecode $1`
+  local output=`_urldecode $1`
   [[ $output == $2 ]] || die "No match"
 }
 
@@ -36,7 +35,7 @@ echo "All tests passed"
 test_retrieve_external_source_keyboard() {
   local t=`mktemp -d`
   pushd "$t"
-  retrieve_external_source_keyboard "$1" "$2" "$3" "${4:-}"
+  _retrieve_external_source_keyboard "$1" "$2" "$3" "${4:-}"
   [ -f ./README.md ] || die "expected README.md to exist"
   [ -f ./LICENSE.md ] || die "expected LICENSE.md to exist"
   [ -f ./HISTORY.md ] || die "expected HISTORY.md to exist"
@@ -47,3 +46,5 @@ test_retrieve_external_source_keyboard() {
 
 test_retrieve_external_source_keyboard "mcdurdin" "external_experiment_1" "0619c3a12a0d48b3ead3d02e9a5b15b325213fcd"
 test_retrieve_external_source_keyboard "mcdurdin" "external_experiment_2" "ade06704300fe7a1fdd40e101c415f23dabc6839" "/e/external_experiment_2"
+
+echo "---ALL TESTS PASSED---"

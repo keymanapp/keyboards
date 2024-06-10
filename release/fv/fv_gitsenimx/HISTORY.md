@@ -1,5 +1,9 @@
 Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ Change History
 ============================
+10.1.0 (15 May 2024)
+-----------------
+* Swapped out curled apostrophe for straight apostrophe
+
 10.0.1 (13 Feb 2024)
 -----------------
 * Removed uneeded info from documentation

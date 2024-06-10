@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2014-2024 Kreative Software
+Copyright © 2014-2024 Kreative Software
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

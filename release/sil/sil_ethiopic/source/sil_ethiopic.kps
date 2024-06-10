@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,6 +23,8 @@
     <Copyright URL="">© 2010-2023 SIL Ethiopia</Copyright>
     <Author URL="mailto:computer_ethiopia@sil.org">SIL Ethiopia</Author>
     <WebSite URL="http://www.silethiopia.org">http://www.silethiopia.org</WebSite>
+    <Description>The SIL Ethiopic keyboard enables typing in all Ethiopic Saba Fidel
+scripts.</Description>
   </Info>
   <Files>
     <File>
@@ -60,6 +63,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -83,4 +92,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="silethiopicv1.3k7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

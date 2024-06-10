@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Keyboard Indonesia\Indonesia Basic</Folder>
@@ -36,6 +37,9 @@
     <Copyright URL="">© 2020 Benny Lin</Copyright>
     <Author URL="mailto:bennylin.idwiki@hotmail.com">Benny Lin</Author>
     <WebSite URL="github.com/bennylin">github.com/bennylin</WebSite>
+    <Description>(en) To type in Indonesian language. This is a basic keyboard with no
+special letters. (id) Untuk mengetik bahasa Indonesia. Ini adalah papan
+ketik dasar tanpa huruf khusus.</Description>
   </Info>
   <Files>
     <File>
@@ -74,6 +78,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -83,7 +93,10 @@
       <Languages>
         <Language ID="id">Bahasa Indonesia</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="id" Keys="I n i space i b u space B u d i" Text="Ini ibu Budi" Note="&quot;Ini ibu Budi&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>
