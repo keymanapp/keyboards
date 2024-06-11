@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Copyright URL="">(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
     <Version URL=""></Version>
+    <Description>This keyboard is designed for the ᓀᐦᐃᔭᐍᐏᐣ language of the Prairies 
+region of Canada. This is part of a set of keyboards from FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -88,6 +91,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -96,10 +105,14 @@
       <Version>11.0.1</Version>
       <OSKFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="AboriginalSerifREGULAR.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="crk">ᓀᐦᐃᔭᐍᐏᐣ (Cree Spirit Markers / syllabics)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_plains_cree_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

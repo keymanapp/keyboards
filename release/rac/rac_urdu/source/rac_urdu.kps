@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Urdu Keyman Keyboard</Folder>
@@ -30,6 +31,12 @@
     <Copyright URL="">© 2018-2020 Rehmat Aziz  Chitrali Linguist and Researcher at Khowar Academy Chitral  Khyber Pakhtunkhwa Pakistan</Copyright>
     <Version URL=""></Version>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Pakistan for keyboarding the Urdu
+language in the Arabic Script. You can use this keyboard with any
+extended Arabic script Unicode font. If you have problems using the
+RAChitrali-Urdu Keyman keyboard, please contact: Rehmat Aziz Chitrali
+E-mail: rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -110,6 +117,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -121,7 +134,10 @@
       <Languages>
         <Language ID="ur">Urdu</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ur" Keys="a r d w space" Text="اردو" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,12 @@
     <Name URL="">Gandhari</Name>
     <Copyright URL="">© 2004-2020 Andrew Glass</Copyright>
     <Author URL="">Andrew Glass</Author>
+    <Description>Gandhari Sanskrit keyboard developed for Latin transliteration of
+Gāndhārī language written in the Kharoṣṭhī script. Gandhari font
+recommended (see link below).
+
+-   [Gandhari
+font](https://github.com/gandhariunicode/gandhari_unicode_font)</Description>
   </Info>
   <Files>
     <File>
@@ -52,6 +59,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -65,4 +78,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gandhari-keyboard-2.7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

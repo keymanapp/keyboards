@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-(c) 2008-2020 Athinkra, LLC
+Copyright © 2008-2020 Athinkra, LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

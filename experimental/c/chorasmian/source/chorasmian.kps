@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Copyright URL="">© M. R. Astle</Copyright>
     <Author URL="">M. R. Astle</Author>
     <Version URL=""></Version>
+    <Description>The Chorasmian keyboard is designed for typing the East Iranian Chorasmian (Khwarezmian) 
+language in its native script. (This language ought not to be confused with Khwārazm Turkish.)</Description>
   </Info>
   <Files>
     <File>
@@ -70,6 +73,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -78,6 +87,7 @@
       <Version>1.0</Version>
       <OSKFont>fonts\Noto_Sans_Chorasmian\NotoSansChorasmian-Regular.ttf</OSKFont>
       <DisplayFont>fonts\Noto_Sans_Chorasmian\NotoSansChorasmian-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSansChorasmian-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="xco">Chorasmian</Language>
       </Languages>
