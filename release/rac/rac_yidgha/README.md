@@ -1,9 +1,7 @@
 Rachitrali Yidgha Keyboard Data
 -------------
 
-Copyright (C) 2018 Rehmat Aziz Chitrali
-
-Version 1.1
+Copyright (C) Rehmat Aziz Chitrali
 
 Description
 -----------
