@@ -1,9 +1,13 @@
 Devanagari Typewriter (SIL) Change History
 ====================
 
+1.1.2 (2024-06-10)
+----------------
+* Swap the OSKFont and DisplayFont entries which were reversed in the previous update.
+
 1.1.1 (2023-11-30)
 ----------------
-* Use shared font instead of local
+* Use shared font instead of local.
 
 1.1 (2022-10-20)
 ---------------------
