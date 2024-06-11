@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.280.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.325.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,11 +19,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Uma Graphic</Name>
-    <Copyright URL="">©Houma Language Project</Copyright>
+    <Copyright URL="">© Houma Language Project</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
     <WebSite URL="https://www.houmalanguageproject.org/">https://www.houmalanguageproject.org/</WebSite>
-    <Description>Uma Graphic Keyboard created for typing in the Uma alphabet by the Houma
+    <Description URL="">Uma Graphic Keyboard created for typing in the Uma alphabet by the Houma
 Language Project.</Description>
   </Info>
   <Files>
@@ -67,11 +68,14 @@ Language Project.</Description>
     <Keyboard>
       <Name>Uma Graphic</Name>
       <ID>uma_graphic</ID>
-      <Version>1</Version>
+      <Version>1.0.1</Version>
       <Languages>
         <Language ID="und">Uma</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="uma_phonetic" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
