@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.325.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>help\RAC.jpg</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Yidgha</Folder>
-    <AddUninstallEntry/>
-    <Items>
-      <Item>
-        <Name>Rachitrali-Yidgha Keyboard</Name>
-        <FileName>rac_yidgha.kvks</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-    </Items>
+    <Items/>
   </StartMenu>
   <Info>
     <Version URL=""></Version>
     <Name URL="">Rachitrali-Yidgha</Name>
-    <Copyright URL="">© 2018 Rehmat Aziz  Chitrali</Copyright>
+    <Copyright URL="">© Rehmat Aziz  Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
-    <Description>This keyboard was developed for keyboarding the Yidgha language in the
+    <Description URL="">This keyboard was developed for keyboarding the Yidgha language in the
 Arabic Script. You can use this keyboard with any extended Arabic script
 Unicode font. If you have problems using the RAChitrali-Yidgha Keyman
 keyboard, please contact: Rehmat Aziz Chitrali E-mail:
@@ -131,12 +123,12 @@ rachitrali\@yahoo.com</Description>
       <OSKFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade\Scheherazade-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="ydg-Arab">Yidgha (Arabic)</Language>
+        <Language ID="ydg">Yidgha</Language>
       </Languages>
       <Examples>
-        <Example ID="ydg-Arab" Keys="i d G a space" Text="یدغا" Note="Name of language" />
+        <Example ID="ydg" Keys="i d G a space" Text="یدغا" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

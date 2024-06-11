@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.325.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,18 +20,12 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Aleph With Beth</Name>
-    <Copyright URL="">© 2023 Cameron Briggs</Copyright>
+    <Copyright URL="">© Cameron Briggs</Copyright>
     <Author URL="">Cameron Briggs</Author>
     <WebSite URL="https://freehebrew.online">https://freehebrew.online</WebSite>
-    <Description>alephwithbeth keyboard</Description>
+    <Description URL="">alephwithbeth keyboard</Description>
   </Info>
   <Files>
-    <File>
-      <Name>alephwithbeth.kps</Name>
-      <Description>File alephwithbeth.kps</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kps</FileType>
-    </File>
     <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
@@ -42,12 +37,6 @@
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>help\alephwithbeth.php</Name>
-      <Description>File alephwithbeth.php</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.php</FileType>
     </File>
     <File>
       <Name>..\build\alephwithbeth.js</Name>
@@ -97,7 +86,6 @@
       <Name>Aleph With Beth</Name>
       <ID>alephwithbeth</ID>
       <Version>1.0.4</Version>
-      <RTL>True</RTL>
       <Languages>
         <Language ID="he">Hebrew</Language>
       </Languages>
