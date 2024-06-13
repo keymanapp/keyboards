@@ -63,6 +63,7 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [SHIFT T_COMMA_2] > 'ᖍ'
 + [SHIFT T_COMMA_3] > 'ᙆ'
 + [SHIFT T_COMMA] > 'ᖊ'
++ [SHIFT T_x66] > 'ᐧ'
 + [T_Q] > 'ᐃ'
 + [T_W_0] > 'ᕕ'
 + [T_W] > 'ᐱ'
@@ -110,11 +111,11 @@ store(NoDotE) 'ᐁᐯᑌᑫᒉᒣᓀᓭᔐᔦᓓ'
 store(LDotE) 'ᐌᐺᑗᑴᒒᒬᓉᓶᔗᔯᓜ'
 store(RDotE)'ᐍᐻᑘᑵᒓᒭᓊᓷᔘᔰᓝ'
 store(EKeys) [SHIFT T_Q] [SHIFT T_W] [SHIFT T_E] [SHIFT T_R] [SHIFT T_T] [SHIFT T_Y] [SHIFT T_U] [SHIFT T_I] [SHIFT T_O] [SHIFT T_P] [SHIFT T_T_0]
-'ᐧ' + any(EKeys) > index(LDotE,2) layer('default')
+'ᐧ' + any(EKeys) > index(LDotE,2)
 
 store(NoDotN) 'ᓂᓄᓇ'
 store(LongN) 'ᓃᓅᓈ'
-any(NoDotN) + any(LongKey) > index(LongN,1) layer('default')
+any(NoDotN) + any(LongKey) > index(LongN,1)
 'ᐧ' + [T_J] > 'ᓋ'
 'ᓋ' + any(LongKey) > 'ᓍ'
 
@@ -139,9 +140,9 @@ store(NoDotKey) [T_Q] [SHIFT T_A] [T_A] [T_W] [SHIFT T_S] [T_S] [T_E] [SHIFT T_D
 store(LongKey) [T_x68]
 store(DotKey) [T_x66]
 
-any(SNoDot) + [T_x68] > index(LNoDot,1) layer('default')
-'ᐧ' + any(NoDotKey) > index(SDot,2) layer('default')
-any(SDot) + any(LongKey) > index(LDot,1) layer('default')
+any(SNoDot) + [T_x68] > index(LNoDot,1)
+'ᐧ' + any(NoDotKey) > index(SDot,2)
+any(SDot) + any(LongKey) > index(LDot,1)
 'ᐧ' + [SHIFT T_B] > 'ᣜ'
 
 
@@ -318,6 +319,7 @@ any(MWLongVowels) + [K_BKSP] > index(MWShortVowels,1)
 'ᓐ' + [K_E] > 'ᓀ'
 'ᓐ' + any(VowelKeys) > index(NShortVowels,2)
 any(NShortVowels) + any(VowelKeys) > index(NLongVowels,1)
+any(NShortVowels) + [K_BKQUOTE] > index(NLongVowels,1)
 any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
 'ᐧ' + [K_N] > 'ᓉ'
 'ᓐ' + [K_W] > 'ᓉ'
@@ -378,8 +380,10 @@ any(WLongVowels) + [K_BKSP] > index(WShortVowels,1)
 'ᕝ' + [K_E] > 'ᕓ'
 'ᕝ' + any(VowelKeys) > index(FShortVowels,2)
 any(FShortVowels) + any(VowelKeys) > index(FLongVowels,1)
+any(FShortVowels) + [K_BKQUOTE] > index(FLongVowels,1)
 any(FLongVowels) + [K_BKSP] > index(FShortVowels,1)
 'ᕝ' + [K_W] > 'ᐧᕓ'
+'ᐧᕓ' + [K_E] > 'ᐧᕓ'
 'ᐧᕙ' + [K_A] > 'ᕛ'
 'ᐧᕙ' + [K_BKQUOTE] > 'ᕛ'
 'ᐧ' + [K_F] > 'ᐧᕓ'
@@ -388,8 +392,10 @@ any(FLongVowels) + [K_BKSP] > index(FShortVowels,1)
 'ᕪ' + [K_E] > 'ᕞ'
 'ᕪ' + any(VowelKeys) > index(THShortVowels,2)
 any(THShortVowels) + any(VowelKeys) > index(THLongVowels,1)
+any(THShortVowels) + [K_BKQUOTE] > index(THLongVowels,1)
 'ᐧ' + [SHIFT K_T] > 'ᐧᕞ'
 'ᕪ' + [K_W] > 'ᐧᕞ'
+'ᐧᕞ' + [K_E] > 'ᐧᕞ'
 'ᐧᕞ' + [K_I] > 'ᐧᕠ'
 'ᐧᕠ' + [K_BKQUOTE] > 'ᐧᕢ'
 'ᐧᕞ' + [K_O] > 'ᐧᕤ'
@@ -405,9 +411,11 @@ any(THShortVowels) + any(VowelKeys) > index(THLongVowels,1)
 any(LShortVowels) + any(VowelKeys) > index(LLongVowels,1)
 any(LLongVowels) + [K_BKSP] > index(LShortVowels,1)
 'ᐧ' + [K_HYPHEN] > 'ᓜ'
+'ᓜ' + [K_E] > 'ᓜ'
 'ᓪ' + [K_W] > 'ᓜ'
 'ᓜ' + any(VowelKeys) > index(LWShortVowels,2)
 any(LWShortVowels) + any(VowelKeys) > index(LWLongVowels,1)
+any(LWShortVowels) + [K_BKQUOTE] > index(LWLongVowels,1)
 any(LWLongVowels) + [K_BKSP] > index(LWShortVowels,1)
 
 + [K_EQUAL] > 'ᕐ'
@@ -417,6 +425,7 @@ any(RShortVowels) + [K_BKQUOTE] > index(RLongVowels,1)
 any(RShortVowels) + any(VowelKeys) > index(RLongVowels,1)
 any(RLongVowels) + [K_BKSP] > index(RShortVowels,1)
 'ᕐ' + [K_W] > 'ᐧᕃ'
+'ᐧᕃ' + [K_E] > 'ᐧᕃ'
 'ᐧᕃ' + [K_A] > 'ᐧᕋ'
 'ᐧᕋ' + [K_A] > 'ᕎ'
 'ᐧᕋ' + [K_BKQUOTE] > 'ᕎ'
