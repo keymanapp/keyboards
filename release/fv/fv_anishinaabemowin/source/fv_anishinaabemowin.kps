@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,8 @@
     <Name URL="">Anishinaabemowin</Name>
     <Copyright URL="">(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description>This keyboard is designed for the Anishinaabemowin - Anihšināpēmowin language of the Great 
+Lakes - St. Lawrence region of Canada. This is part of a set of keyboards from FirstVoices.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -76,6 +79,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -88,4 +97,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_anishinaabemowin_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

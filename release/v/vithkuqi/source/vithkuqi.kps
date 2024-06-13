@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -99,6 +100,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -107,10 +114,15 @@
       <Version>1.0</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Vith\NotoSerifVithkuqi-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Vith\NotoSerifVithkuqi-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifVithkuqi-Regular.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="sq-Vith">Albanian</Language>
         <Language ID="als-Vith">Tosk Albanian</Language>
       </Languages>
+      <Examples>
+        <Example ID="sq-Vith" Keys="V i t h [ ;" Text="𐖑𐖥𐖵𐖣''𐖟" Note="Name of script" />
+        <Example ID="als-Vith" Keys="V i t h [ ;" Text="𐖑𐖥𐖵𐖣''𐖟" Note="Name of script" />
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>
