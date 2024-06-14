@@ -4,20 +4,23 @@
 
 Keyboards are grouped into three folders:
 
-  * `release` - keyboards with full source that pass our stringent quality checks, Unicode only
-  * `legacy` - binary distributions of keyboards, migrated from Tavultesoft servers, Unicode and
-    non-Unicode
-  * `experimental` - keyboards that have not yet passed the quality check, available from the
-    'experimental' category in Keyman apps with Keyman 10 and later. Unicode only.
+  * `release` - keyboards with full source that pass our stringent quality
+    checks, Unicode only, generally no PUA
+  * `legacy` - binary distributions of keyboards, migrated from Tavultesoft
+    servers, Unicode and non-Unicode
+  * `experimental` - keyboards that have not yet passed the quality check,
+    available from the 'experimental' category in Keyman apps with Keyman 10 and
+    later. Unicode only, but PUA is acceptable.
 
-Within each of the folders, keyboards are further grouped by first letter or by prefix, where
-multiple keyboards share the same prefix indicating provenance, for example `sil` or `gff`.
+Within each of the folders, keyboards are further grouped by first letter or by
+prefix, where multiple keyboards share the same prefix indicating provenance,
+for example `sil` or `gff`.
 
 ## Contributing
 
 First, read the guide! <https://help.keyman.com/developer/keyboards/>
 
-Keyman Developer 12.0 is recommended to edit these files. <https://keyman.com/developer>
+Keyman Developer 17.0+ is recommended to edit these files. <https://keyman.com/developer>
 
 ## Building Keyboards
 
@@ -25,42 +28,70 @@ Keyman Developer 12.0 is recommended to edit these files. <https://keyman.com/de
 
 Windows:
   * Git for Windows (or MinGW)
-  * You will need to use **Git Bash** or equivalent to build (not tested with Cygwin), not
-    Windows Command Prompt or PowerShell.
-  * You can also **WSL** (Bash on Ubuntu on Windows) if you place the repo in a
-    Windows-accessible path (such as `/mnt/c/...`), so the Keyman Developer Compiler
-    can run (requires Windows 10 Anniversary Update or later). Beware of line-ending changes
-    if mixing Windows and WSL usage!
+  * You will need to use **Git Bash** or equivalent to build (not tested with
+    Cygwin), not Windows Command Prompt or PowerShell.
+  * You can also use **WSL2** (Bash on Ubuntu on Windows). Beware of line-ending
+    changes if mixing Windows and WSL usage.
+  * Node.js 18.0
 
-Linux, macOS:
-  * **WINE** is required in order to run the Keyman Developer
-    compiler which is currently a Windows-only executable.
- * See <https://help.keyman.com/knowledge-base/95> for Mac configuration information.
+Linux:
+  * Node.js 18.0
+  * bash 5.0 (standard now on most distributions)
+
+macOS:
+  * bash 5.0 (`brew install bash`)
+  * coreutils (`brew install coreutils`)
+  * Node.js 18.0 (`brew install node`)
+  * Ensure coreutils is on the PATH: `export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"`
 
 ### Build instructions
 
-`build.sh` can be used to build all the keyboards from the command line.
+`./build.sh` can be used to build all the keyboards from the command line.
 
-* The Keyman Developer compiler is included in the `tools/` folder and so Keyman Developer
-  is not required for builds.
+* `kmc`, the Keyman Developer compiler, is installed as a Node.js module, and so
+  Keyman Developer is not required for builds.
 
 #### Common `build.sh` parameters
 
-This lists only the common parameters; some other parameters are listed with
-the command's `--help` parameter.
+```
+Summary:
+  Build Keyman keyboards
 
-| Parameter             | Detail                                             |
-|-----------------------|----------------------------------------------------|
-| `--help`              | List build.cmd parameters
-| `-s`                  | Quieter build
-| `-c`                  | Clean instead of build
-| `-d`                  | Include debug information
-| `-w`                  | Treat warnings as errors
-| `-start [k/keyboard]` | Restart building all keyboards, but skip those before `k/keyboard`
-| `[target]`            | Specific folder to build, e.g. `release`, `release/k`, or `release/k/khmer_ankgor`
+Script Identifier:
+  /c/Projects/keyman/keyboards
+
+Usage:
+  build.sh [options...] [action][:target]...
+
+Actions:
+  clean                      remove build/ folder and build artifacts
+  configure                  install dependencies, e.g. npm
+  build                      build target(s)
+  test                       run automated tests
+
+Targets:
+  :project                   this project
+
+Options:
+  --silent, -s               Suppress unnecessary messages
+  --keyboard, -k KEYBOARD    Build specific targets only, e.g. release/ or release/a/ or release/a/anii/, comma separated
+  --verbose, -v              Verbose logging
+  --debug, -d                Debug build
+  --color                    Force colorized output
+  --no-color                 Never use colorized output
+  --help, -h                 Show this help
+
+Dependencies:
+  This module has no dependencies
+
+* Specify action:target to run a specific action against a specific :target.
+* If action is specified without a target suffix, it will be applied to all :targets.
+* If :target is specified without an action prefix, build:target will be inferred.
+* If no action, :target, or action:target entries are specified, build will run on all :targets.
+```
 
 * Each keyboard also includes a project file which can be used to build the project - either from the command line
-  kmcomp compiler, or from the Keyman Developer IDE.
+  kmc compiler, or from the Keyman Developer IDE.
 
 ## Deprecated keyboards
 
@@ -69,9 +100,8 @@ new keyboard name.
 
 ## Common links
 
-   * <https://help.keyman.com/developer/keyboards/>: Guide to working with this repository
-   * <https://keyman.com/developer/keymanweb/keyboards.php>: Published documentation for each keyboard
-   * <https://r.keymanweb.com/api/4.0/keyboards/>: JSON API for compiled keyboards available from Keyman Cloud
-   * <https://help.keyman.com/developer/cloud/keyboard_info/>: Documentation on the .keyboard_info file format used in this repository
+* <https://help.keyman.com/developer/keyboards/>: Guide to working with this repository
+* <https://help.keyman.com/keyboards/>: Published documentation for each keyboard
+* <https://r.keymanweb.com/api/4.0/keyboards/>: JSON API for compiled keyboards available from Keyman Cloud
 
 

@@ -61,8 +61,9 @@ This keyboard is designed for the <b>SENĆOŦEN</b> language of the BC Coast reg
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
 </li></ul><div class='vspace'></div><h3>Alternate Name</h3>
-<ul><li>Saanich
-</li></ul>
+<ul>
+<li>Saanich</li>
+</ul>
 </div>
 
 <div id='osk-tablet' data-states='default shift'>

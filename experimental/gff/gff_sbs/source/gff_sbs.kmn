@@ -1,7 +1,7 @@
 ﻿c =====================Begin Identity Section===================================================
 c 
-c This is a Sheek Bakrii Saphalo script Qubee based input method. They keyboard is designed
-c to work with the [Athinkra: Sheek Bakrii Saphalo](https://github.com/athinkra/sheek-bakrii-saphaloo) font (v1.x) which in turn 
+c This is a Sheek Bakrii Saphalo script Qubee Latin based input method. They keyboard is designed
+c to work with the [Sheek Bakrii Saphalo](https://github.com/athinkra/sheek-bakrii-saphaloo) font (v1.x) which in turn
 c encodes the script under Unicode's Private Use Area (PUA).
 c 
 c Keyman        :  http://www.keyman.com/
@@ -9,12 +9,12 @@ c Documentation :  https://help.keyman.com/keyboard/gff_sbs/1.0/gff_sbs.php
 c Source        :  https://github.com/keymanapp/keyboards/experimenta/gff/gff_sbs
 c License       :  https://opensource.org/licenses/MIT
 c Bugs          :  https://github.com/keymanapp/keyboards/issues
-c 
+c
 store(&Version) '15.0'
-store(&KEYBOARDVERSION) '1.0.6'
-store(&NAME) 'Sheek Bakrii Saphaloo Qubee'
+store(&KEYBOARDVERSION) '1.0.7'
+store(&NAME) 'Sheek Bakrii Saphaloo'
 store(&COPYRIGHT) '© 2023-2024 Geʾez Frontier Foundation'
-store(&Message) 'This is a Sheek Bakrii Saphalo script Qubee based input method. It requires the included Athinkra: Sheek Bakrii Saphaloo font.'
+store(&Message) 'This is a Sheek Bakrii Saphalo script keyboard that applies Latin Qubee rules of typing. It requires the included Sheek Bakrii Saphaloo font.'
 store(&CapsAlwaysOff) '1'
 store(&HotKey) '[CTRL ALT K_B]'
 store(&VISUALKEYBOARD) 'gff_sbs.kvks'
@@ -225,6 +225,6 @@ any(BakriSapalo) + '.' > context(1) ''
 any(AsciiNumbers) '.' + ' ' > context(1) '' ' '
 
 + ':'     > ''
-
+'' + ':' > ''
 '#' + any(AsciiNumbers) >  index(AsciiNumbers,2)
 + any(AsciiNumbers) > index(BakriSapaloNumbers,1)

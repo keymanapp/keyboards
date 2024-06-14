@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">United States-Dvorak for left hand Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>United States-Dvorak for left hand Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -63,6 +65,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -72,7 +80,14 @@
       <Languages>
         <Language ID="en">English</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="en" Keys="G h j space w t m d s space e y i b n space 5 i x" Text="The quick brown fox" Note="&quot;The quick brown fox&quot;" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="us_dvorak_lh" Relationship="deprecates" />
+    <RelatedPackage ID="kbdusl" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

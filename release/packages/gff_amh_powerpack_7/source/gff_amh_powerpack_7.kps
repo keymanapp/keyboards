@@ -10,6 +10,7 @@
     <GraphicFile>sideimage.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\..\..\gff\gff_amh_7\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Amharic Keyboard</Folder>
@@ -58,6 +59,16 @@
     <Name URL="">GFF Amharic Keyboard</Name>
     <Copyright URL="">Creative Commons Attribution 3.0</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Description>An intuitive, easy to use, keyboard for entering Amharic with standard
+English keyboards according to the GFF convention for Ethiopic script
+languages.
+
+[Compare different Ethiopic keyboards
+online](http://ethiopic.keymankeyboards.com/) now with KeymanWeb (no
+download required).
+
+-   [Principles and Specification for Mnemonic Ethiopic
+Keyboards](http://keyboards.ethiopic.org/specification/)</Description>
   </Info>
   <Files>
     <File>
@@ -210,6 +221,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\gff\gff_amh_7\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -228,4 +245,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-amh-powerpack-7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

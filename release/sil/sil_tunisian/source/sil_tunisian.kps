@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,9 @@
     <Version URL=""></Version>
     <Name URL="">Tunisian Spoken Arabic (SIL)</Name>
     <Copyright URL="">© 2016-2018 SIL International</Copyright>
+    <Description>Arabic script keyboard for the Tunisian Spoken Arabic \[aeb\] language.
+The keyboard includes an On screen keyboard and keyboard layout
+description.</Description>
   </Info>
   <Files>
     <File>
@@ -69,6 +73,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -81,4 +91,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="tunisianspokenarabic" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

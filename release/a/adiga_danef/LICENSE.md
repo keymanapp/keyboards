@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2022 Haroon Showgan
+Copyright © 2022 Haroon Showgan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
