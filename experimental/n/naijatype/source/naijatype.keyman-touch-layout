@@ -619,6 +619,14 @@
                     "sp": 1,
                     "nextlayer": "capslock"
                   }
+                ],
+                "multitap": [
+                  {
+                    "text": "*Caps*",
+                    "id": "K_CAPS",
+                    "sp": "1",
+                    "nextlayer": "capslock"
+                  }
                 ]
               },
               {
@@ -913,7 +921,14 @@
                     "text": "_",
                     "id": "U_005F"
                   }
+                },
+                "multitap": [
+                  {
+                    "text": ". ",
+                    "id": "T_end_sentence",
+                    "nextlayer": "shift"
                 }
+                ]
               },
               {
                 "id": "K_PERIOD",
@@ -923,6 +938,10 @@
                   {
                     "text": "\"",
                     "id": "U_0022"
+                  },
+                  {
+                    "text": "'",
+                    "id": "U_0027"
                   },
                   {
                     "text": "/",
@@ -941,17 +960,10 @@
                     "id": "U_003B"
                   },
                   {
-                    "text": "'",
-                    "id": "U_0027"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C"
-                  },
-                  {
                     "text": "?",
                     "id": "U_003F",
-                    "nextlayer": "shift"
+                    "nextlayer": "shift",
+                    "default": true
                   },
                   {
                     "text": "!",
@@ -968,13 +980,17 @@
                   }
                 ],
                 "flick": {
-                  "s": {
-                    "text": "̣",
-                    "id": "U_0323"
-              },
                   "n": {
                     "text": "!",
                     "id": "U_0021"
+                  },
+                  "w": {
+                    "text": "̣",
+                    "id": "U_0323"
+                  },
+                  "e": {
+                    "text": "̱",
+                    "id": "U_0331"
                   }
                 }
               },
@@ -984,9 +1000,16 @@
                 "pad": 10,
                 "width": 115,
                 "sp": 1,
-                "nextlayer": "shift"
+                "nextlayer": "shift",
+                "multitap": [
+                  {
+                    "text": "ɴʟ",
+                    "id": "K_ENTER",
+                    "layer": "shift"
               }
             ]
+          }
+        ]
           }
         ]
       },
@@ -2002,6 +2025,11 @@
                     "layer": "default"
                   },
                   {
+                    "text": "'",
+                    "id": "U_0027",
+                    "layer": "default"
+                  },
+                  {
                     "text": "/",
                     "id": "K_SLASH",
                     "layer": "default"
@@ -2022,20 +2050,11 @@
                     "layer": "default"
                   },
                   {
-                    "text": "'",
-                    "id": "U_0027",
-                    "layer": "default"
-                  },
-                  {
-                    "text": ",",
-                    "id": "U_002C",
-                    "layer": "default"
-                  },
-                  {
                     "text": "?",
                     "id": "U_003F",
                     "nextlayer": "shift",
-                    "layer": "default"
+                    "layer": "default",
+                    "default": true
                   },
                   {
                     "text": "!",
@@ -2052,7 +2071,21 @@
                     "id": "U_2026",
                     "layer": "default"
                   }
-                ]
+                ],
+                "flick": {
+                  "w": {
+                    "text": "̣",
+                    "id": "U_0323"
+                  },
+                  "e": {
+                    "text": "̱",
+                    "id": "U_0331"
+                  },
+                  "n": {
+                    "text": "!",
+                    "id": "U_0021"
+                  }
+                }
               },
               {
                 "id": "K_ENTER",
@@ -2325,7 +2358,8 @@
                 "sk": [
                   {
                     "text": "*Menu*",
-                    "id": "K_LOPT"
+                    "id": "K_LOPT",
+                    "sp": 1
                   },
                   {
                     "text": "😁",
@@ -2679,7 +2713,8 @@
                 "sk": [
                   {
                     "text": "*Menu*",
-                    "id": "K_LOPT"
+                    "id": "K_LOPT",
+                    "sp": 1
                   },
                   {
                     "text": "😁",
@@ -2815,6 +2850,10 @@
                     "id": "U_0022"
                   },
                   {
+                    "text": "'",
+                    "id": "U_0027"
+                  },
+                  {
                     "text": "\\",
                     "id": "U_005C"
                   },
@@ -2827,17 +2866,14 @@
                     "id": "U_003B"
                   },
                   {
-                    "text": "'",
-                    "id": "U_0027"
-                  },
-                  {
                     "text": ",",
                     "id": "U_002C"
                   },
                   {
                     "text": "?",
                     "id": "U_003F",
-                    "nextlayer": "shift"
+                    "nextlayer": "shift",
+                    "default": true
                   },
                   {
                     "text": "!",
@@ -3052,7 +3088,8 @@
                 "sk": [
                   {
                     "text": "Ɔ",
-                    "id": "U_0186"
+                    "id": "U_0186",
+                    "nextlayer": "capslock"
                   },
                   {
                     "text": "O̱",
@@ -3360,7 +3397,8 @@
                 "sk": [
                   {
                     "text": "*Menu*",
-                    "id": "K_LOPT"
+                    "id": "K_LOPT",
+                    "sp": 1
                   },
                   {
                     "text": "😁",
@@ -3507,6 +3545,10 @@
                     "id": "U_0022"
                   },
                   {
+                    "text": "'",
+                    "id": "U_0027"
+                  },
+                  {
                     "text": "\\",
                     "id": "U_005C"
                   },
@@ -3519,17 +3561,14 @@
                     "id": "U_003B"
                   },
                   {
-                    "text": "'",
-                    "id": "U_0027"
-                  },
-                  {
                     "text": ",",
                     "id": "U_002C"
                   },
                   {
                     "text": "?",
                     "id": "U_003F",
-                    "nextlayer": "shift"
+                    "nextlayer": "shift",
+                    "default": true
                   },
                   {
                     "text": "!",
@@ -3784,6 +3823,10 @@
                     "id": "U_0022"
                   },
                   {
+                    "text": "'",
+                    "id": "U_0027"
+                  },
+                  {
                     "text": ":",
                     "id": "U_003A"
                   },
@@ -3792,17 +3835,14 @@
                     "id": "U_003B"
                   },
                   {
-                    "text": "'",
-                    "id": "U_0027"
-                  },
-                  {
                     "text": ",",
                     "id": "U_002C"
                   },
                   {
                     "text": "?",
                     "id": "U_003F",
-                    "nextlayer": "shift"
+                    "nextlayer": "shift",
+                    "default": true
                   },
                   {
                     "text": "!",
