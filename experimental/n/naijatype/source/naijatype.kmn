@@ -38,7 +38,7 @@ c v51 Touch: Added ⱱ (small and capital) with hook, used in Tugbiri and a few 
 c v52-56 Added o with stroke (Cicipu) to the desktop keybaord. Bumped version number to match Android version.
 c v57 Added 00; > empty set especially for discourse work. Fixed defects in the Touch Keyboard text output (wrong layer selected) which stopped some combinations working in the shift layer. Added number down-flicks on top row.
 c v58 Added diagonal flicks for accents and all numbers on top row.
-
+c v59 Added some missing diagonal and up flicks.
 
 
 
@@ -141,7 +141,7 @@ store(TonesAll)                outs(ToneSubset) U+030B U+030F U+1DC4 U+1DC5 U+1D
 store(WhiteSpace) [K_ENTER] " " [K_TAB]
 store(CurlyQuoteOpenBefore) "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopsdfghjklzxcvbnm"
 store(CurlyQuoteCloseAfter) ".,!?"
-store(&KEYBOARDVERSION) '58'
+store(&KEYBOARDVERSION) '59'
 c store(&mnemoniclayout) '1' c Experimental - will it keep working on UK keyboards?
 c To be mnemonic we need to remove all K_ key codes and replace with the output letter,
 c eg instead of K_A we would use 'a'.
