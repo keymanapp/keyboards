@@ -3,6 +3,8 @@ Naija Type Keyboard Change History
 
 June 2024
 ---------
+* v59 Missing flicks and defaults added. Now every popup key should have a sensible default (underdot on i e o) and also an upflick shape variant. Diagonal accent flicks had been missing from shift keys.
+
 * v58 Added a load of (Requires Keyman 17) diagonal flicks for accents and down-flicks for all numbers on top row, side flicks on space bar and full stop (underdot), up-flicks for common alternate shapes. This should make use of the keyboard faster for power users. Added varying hopefully helpful defaults for the longpress menus. Updated the green hints. Updated documentation substantially.
 
 May 2024
