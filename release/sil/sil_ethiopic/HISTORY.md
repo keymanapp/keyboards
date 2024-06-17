@@ -4,7 +4,7 @@ SIL Ethiopic Change History
 2.0.5 (2024-06-16)
 -------------------
 * On-Screen keyboard added.
-* AbyssinicalSIL-Regular.ttf added to package.
+* AbyssinicaSIL-Regular.ttf added to package.
 * Upgrade project to Keyman Developer 17.0 format.
 
 2.0.4 (2023-04-19)
