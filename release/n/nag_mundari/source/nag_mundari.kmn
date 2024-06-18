@@ -1,0 +1,30 @@
+﻿c Keyboard based on layout design by https://muthunedumaran.com/2023/03/16/nag-mundari/
+
+store(&VERSION) '10.0'
+store(&NAME) 'Nag Mundari'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'nag_mundari.ico'
+store(&VISUALKEYBOARD) 'nag_mundari.kvks'
+store(&LAYOUTFILE) 'nag_mundari.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(nul) "fqABCEFIKMOPQRSUVWXYZ"
+store(NagmK) "oplyGajbJHisdthuczkreNgmnTL"
+store(NagmU) U+1E4D0 .. U+1E4EA
+
+store(NagmDigitsK) U+0030 .. U+0039
+store(NagmDigitsU) U+1E4F0 .. U+1E4F9
+
+group(main) using keys
+
++ any(nul) > nul
++ any(NagmK) > index(NagmU,1)
++ any(NagmDigitsK) > index(NagmDigitsU,1)
++ [SHIFT K_D] > U+1E4EB
++ [K_V] > U+1E4EC
++ [K_X] > U+1E4ED
++ [K_W] > U+1E4EE
++ [K_BKQUOTE] > U+1E4EF

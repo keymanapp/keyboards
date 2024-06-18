@@ -7,6 +7,7 @@ Taigi Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī.
 
 Links
 -----
+https://keyman.com/keyboards/taigi_telex
 
 Copyright
 ---------

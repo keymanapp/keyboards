@@ -7,7 +7,7 @@ store(&LAYOUTFILE) 'obolo_chwerty.keyman-touch-layout'
 store(&BITMAP) 'obolo_chwerty.ico'
 store(&MESSAGE) 'A keyboard layout (chwerty) for the Obolo language of Nigeria. The keyboard covers the need of every dialect in that language.'
 store(&KMW_HELPTEXT) 'A simple keyboard layout (chwerty) to help you type very easily in Obolo language.'
-store(&KEYBOARDVERSION) '1.2.2'
+store(&KEYBOARDVERSION) '1.5'
 store(&KMW_EMBEDCSS) 'obolo_chwerty.css'
 
 begin Unicode > use(main)
@@ -21,17 +21,18 @@ group(NewContext) readonly
 group(PostKeystroke) readonly
     if(&layer = 'caps') > context
     if(&layer = 'alt') > context
-    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'num') > context
+    if(&newLayer = "") if(&layer = 'num') any(digit) > context
     if(&newLayer = "") > use(detectStartOfSentence)
 
 group(detectStartOfSentence) readonly
-    dk(2) > context
-    store(sentencePunctuation) '.?!‽'
+c    dk(2) > context
+    store(sentencePunctuation) '.?!‽⁈'
     store(nl) d10 d13
+    store(enclose) U+0029 U+0027 U+0022
     nul > layer('shift')
     any(sentencePunctuation) ' ' > layer('shift')
-    any(sentencePunctuation) '  ' > layer('shift')
-    any(sentencePunctuation) '" ' > layer('shift')
+    any(sentencePunctuation) any(enclose) ' ' > layer('shift')
     any(nl) > layer('shift')
     nomatch > layer('default')
 
@@ -55,9 +56,16 @@ store(caronkeys) [NCAPS T_CRN] [SHIFT NCAPS T_CRN] [CAPS T_CRN] [SHIFT K_BKSLASH
 
 group(main) using keys
 
-+ [NCAPS T_ENG] > dk(1)
-+ [SHIFT NCAPS T_ENG] > dk(2)
-+ [CAPS T_ENG] > dk(3)
+c + [NCAPS T_ENG] > dk(1)
+c + [SHIFT NCAPS T_ENG] > dk(1)
+c + [CAPS T_ENG] > dk(1)
+
+c Shift key in alternate layer
+nul + [ALT T_SHIFT] > layer("shift")
+
+any(sentencePunctuation) ' ' + [ALT T_SHIFT] > context layer("shift")
+any(nl) + [ALT T_SHIFT] > context layer("shift")
++ [ALT T_SHIFT] > layer("default")
 
 c caps
 + [CAPS K_A] > 'A'
@@ -104,23 +112,24 @@ c caps
 + [SHIFT NCAPS K_C] > 'N̄'
 
 + [SHIFT K_6] > '₦'
++ [T_SPACE] > U+0020
 
 c (for touch layout)
-+ [NCAPS T_Q] > 'ch'
-+ [NCAPS SHIFT T_Q] > 'Ch'
-+ [CAPS T_Q] > 'CH'
+c + [NCAPS T_Q] > 'ch'
+c + [NCAPS SHIFT T_Q] > 'Ch'
+c + [CAPS T_Q] > 'CH'
 
-+ [NCAPS T_H] > 'sh'
-+ [NCAPS SHIFT T_H] > 'Sh'
-+ [CAPS T_H] > 'SH'
+c + [NCAPS T_H] > 'sh'
+c + [NCAPS SHIFT T_H] > 'Sh'
+c + [CAPS T_H] > 'SH'
 
-+ [NCAPS T_X] > 'ọ'
-+ [NCAPS SHIFT T_X] > 'Ọ'
-+ [CAPS T_X] > 'Ọ'
+c + [NCAPS T_X] > 'ọ'
+c + [NCAPS SHIFT T_X] > 'Ọ'
+c + [CAPS T_X] > 'Ọ'
 
-+ [NCAPS T_C] > 'n̄'
-+ [NCAPS SHIFT T_C] > 'N̄'
-+ [CAPS T_C] > 'N̄'
+c + [NCAPS T_C] > 'n̄'
+c + [NCAPS SHIFT T_C] > 'N̄'
+c + [CAPS T_C] > 'N̄'
 
 c English equivalent (for desktop)
 ']' + [CAPS K_C] > 'C'
@@ -157,47 +166,60 @@ c space modifier accents
 ']' + [SHIFT CAPS K_HYPHEN] > "¯"
 ']' + [SHIFT NCAPS K_HYPHEN] > "¯"
 
+c special symbols on desktop
+'-' + [K_BKQUOTE] > "–"
+'–' + [K_BKQUOTE] > "—"
+'-' + [K_BKSLASH] > "→"
+'x' + [K_BKSLASH] > "×"
+'/' + [K_BKSLASH] > "÷"
+'0' + [K_BKQUOTE] > "°"
+'+' + [K_BKQUOTE] > "†"
+'%' + [K_BKQUOTE] > "‰"
+'‰' + [K_BKQUOTE] > "‱"
+'?' + [K_BKQUOTE] > "‽"
+'‽' + [K_BKQUOTE] > "⁈"
+
 c English equivalent (for touch layout)
-dk(1) + [NCAPS T_Q] > 'q'
-dk(2) + [NCAPS SHIFT T_Q] > 'Q'
-dk(3) + [CAPS T_Q] > 'Q'
+c dk(1) + [NCAPS T_Q] > 'q'
+c dk(1) + [NCAPS SHIFT T_Q] > 'Q'
+c dk(1) + [CAPS T_Q] > 'Q'
 
-dk(1) + [NCAPS T_H] > 'h'
-dk(2) + [SHIFT NCAPS T_H] > 'H'
-dk(3) + [CAPS T_H] > 'H'
+c dk(1) + [NCAPS T_H] > 'h'
+c dk(1) + [SHIFT NCAPS T_H] > 'H'
+c dk(1) + [CAPS T_H] > 'H'
 
-dk(1) + [NCAPS T_X] > 'x'
-dk(2) + [SHIFT NCAPS T_X] > 'X'
-dk(3) + [CAPS T_X] > 'X'
+c dk(1) + [NCAPS T_X] > 'x'
+c dk(1) + [SHIFT NCAPS T_X] > 'X'
+c dk(1) + [CAPS T_X] > 'X'
 
-dk(1) + [NCAPS T_C] > 'c'
-dk(2) + [SHIFT NCAPS T_C] > 'C'
-dk(3) + [CAPS T_C] > 'C'
+c dk(1) + [NCAPS T_C] > 'c'
+c dk(1) + [SHIFT NCAPS T_C] > 'C'
+c dk(1) + [CAPS T_C] > 'C'
 
-dk(1) + [NCAPS K_S] > 'ṣ'
-dk(2) + [SHIFT NCAPS K_S] > 'Ṣ'
-dk(3) + [CAPS K_S] > 'Ṣ'
+c dk(1) + [NCAPS K_S] > 'ṣ'
+c dk(1) + [SHIFT NCAPS K_S] > 'Ṣ'
+c dk(1) + [CAPS K_S] > 'Ṣ'
 
 c deadkey for tones (touch layout only)
-dk(1) + [NCAPS T_GRV] > "`"
-dk(2) + [SHIFT NCAPS T_GRV] > "`"
-dk(3) + [CAPS T_GRV] > "`"
+c dk(1) + [NCAPS T_GRV] > "`"
+c dk(1) + [SHIFT NCAPS T_GRV] > "`"
+c dk(1) + [CAPS T_GRV] > "`"
 
-dk(1) + [NCAPS T_ACU] > "´"
-dk(2) + [SHIFT NCAPS T_ACU] > "´"
-dk(3) + [CAPS T_ACU] > "´"
+c dk(1) + [NCAPS T_ACU] > "´"
+c dk(1) + [SHIFT NCAPS T_ACU] > "´"
+c dk(1) + [CAPS T_ACU] > "´"
 
-dk(1) + [NCAPS T_CCM] > "ˆ"
-dk(2) + [SHIFT NCAPS T_CCM] > "ˆ"
-dk(3) + [CAPS T_CCM] > "ˆ"
+c dk(1) + [NCAPS T_CCM] > "ˆ"
+c dk(1) + [SHIFT NCAPS T_CCM] > "ˆ"
+c dk(1) + [CAPS T_CCM] > "ˆ"
 
-dk(1) + [NCAPS T_CRN] > "ˇ"
-dk(2) + [SHIFT NCAPS T_CRN] > "ˇ"
-dk(3) + [CAPS T_CRN] > "ˇ"
+c dk(1) + [NCAPS T_CRN] > "ˇ"
+c dk(1) + [SHIFT NCAPS T_CRN] > "ˇ"
+c dk(1) + [CAPS T_CRN] > "ˇ"
 
-dk(1) + [NCAPS K_HYPHEN] > "¯"
-dk(2) + [SHIFT NCAPS K_HYPHEN] > "¯"
-dk(3) + [CAPS K_HYPHEN] > "¯"
+c dk(1) + [NCAPS K_HYPHEN] > "¯"
+c dk(1) + [SHIFT NCAPS K_HYPHEN] > "¯"
+c dk(1) + [CAPS K_HYPHEN] > "¯"
 
 c make up for
 'm' + any(gravekeys) > 'm̀'
@@ -223,6 +245,19 @@ c make up for
 
 's' + [K_BKSLASH] > 'ṣ'
 'S' + [K_BKSLASH] > 'Ṣ'
+
+c Handle decomposed
+'ọ' + any(gravekeys) > 'ọ̀'
+'Ọ' + any(gravekeys) > 'Ọ̀'
+
+'ọ' + any(acutekeys) > 'ọ́'
+'Ọ' + any(acutekeys) > 'Ọ́'
+
+'ọ' + any(circumflexkeys) > 'ộ'
+'Ọ' + any(circumflexkeys) > 'Ộ'
+
+'ọ' + any(caronkeys) > 'ọ̌'
+'Ọ' + any(caronkeys) > 'Ọ̌'
 
 c any and index
 any(vow) + any(gravekeys) > index(grave,1)
