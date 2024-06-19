@@ -1,6 +1,12 @@
 SIL Ethiopic Power-G Change History
 ===================================
 
+1.2.4 (2024-06-17)
+-------------------
+* On-Screen keyboard added.
+* AbyssinicaSIL-Regular.ttf added to package.
+* Upgrade project to Keyman Developer 17.0 format.
+
 1.2.3 (2023-04-19)
 ------------------
 * cleanup
