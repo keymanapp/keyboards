@@ -5,18 +5,21 @@
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram></ExecuteProgram>
-    <MSIFileName></MSIFileName>
-    <MSIOptions></MSIOptions>
+    <ExecuteProgram/>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <MSIFileName/>
+    <MSIOptions/>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
+    <Folder/>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.0</Version>
+    <Version URL=""/>
     <Name URL="">sgaw_karen</Name>
-    <Copyright URL="">The MIT License (MIT) © 2024 Jcturner12</Copyright>
+    <Copyright URL="">© 2024 Jcturner12</Copyright>
   </Info>
   <Files>
     <File>
@@ -44,10 +47,16 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\sgaw_karen.js</Name>
-      <Description>File sgaw_karen.js</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>welcome\sgaw_karen_onscreen_keyboard.jpg</Name>
+      <Description>File sgaw_karen_onscreen_keyboard.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -56,9 +65,10 @@
       <ID>sgaw_karen</ID>
       <Version>1.0</Version>
       <Languages>
-        <Language ID="ksw-Kali-MM">S'gaw Karen (Kayah Li, Myanmar)</Language>
+        <Language ID="ksw">S'gaw Karen</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>
+
