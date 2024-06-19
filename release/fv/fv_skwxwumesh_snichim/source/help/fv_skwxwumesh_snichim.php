@@ -19,6 +19,10 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 </p>
 
 
+<h2>Keyboard Layout</h2>
+<div id='osk-tablet'>
+</div>
+
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
 <div class='vspace'></div>
@@ -36,6 +40,4 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 
 <br/>
 
-<h2>Keyboard Layout</h2>
-<div id='osk-tablet'>
-</div>
+
