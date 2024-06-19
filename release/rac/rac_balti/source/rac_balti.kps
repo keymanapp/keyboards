@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,11 @@
     <Copyright URL="">© 2018 Rehmat Aziz Chitrali</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <Version URL=""></Version>
+    <Description>This keyboard was developed by Pakistani Linguist Mr.Rehmat Aziz
+Chitrali for keyboarding the Balti language in the Arabic Script. You
+can use this keyboard with any extended Arabic script Unicode font. If
+you have problems using the Rachitrali-Balti Keyman keyboard, please
+contact: Rehmat Aziz Chitrali E-mail: rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -82,6 +88,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -93,7 +105,10 @@
       <Languages>
         <Language ID="bft-Arab-PK">Balti (Arabic, Pakistan)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="bft-Arab-PK" Keys="b l t i" Text="بلتی" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

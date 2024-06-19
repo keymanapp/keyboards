@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.142.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.325.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -20,6 +22,8 @@
     <Copyright URL="">(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
     <Version URL=""></Version>
+    <Description URL="">This keyboard is designed for the ᓀᐦᐃᔭᐍᐏᐣ language of the Prairies 
+region of Canada. This is part of a set of keyboards from FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -39,18 +43,6 @@
       <Description>File AboriginalSerifREGULAR.ttf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>fv_plains_cree.kps</Name>
-      <Description>File fv_plains_cree.kps</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kps</FileType>
-    </File>
-    <File>
-      <Name>fv_plains_cree.kvks</Name>
-      <Description>File fv_plains_cree.kvks</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvks</FileType>
     </File>
     <File>
       <Name>..\build\fv_plains_cree.kvk</Name>
@@ -88,18 +80,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ᓀᐦᐃᔭᐍᐏᐣ</Name>
       <ID>fv_plains_cree</ID>
-      <Version>11.0.1</Version>
+      <Version>11.0</Version>
       <OSKFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</DisplayFont>
       <Languages>
         <Language ID="crk">ᓀᐦᐃᔭᐍᐏᐣ (Cree Spirit Markers / syllabics)</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_plains_cree_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
