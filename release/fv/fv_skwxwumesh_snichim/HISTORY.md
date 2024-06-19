@@ -1,6 +1,13 @@
 Sḵwx̱wú7mesh sníchim Change History
 ============================
 
+10.0 (13 June 2024)
+-----------------
+* Added combining macron deadkey to mobile layout
+* Removed extra spacer keys on mobile layout
+* Moved hyphen key to longpress on mobile layout
+* Moved the acute accent and combining glottal apostrophe deadkeys to edge of mobile layout
+
 9.3 (18 Mar 2024)
 -----------------
 * Added 7 to the spelling of the name

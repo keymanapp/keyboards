@@ -1,11 +1,11 @@
 ﻿store(&VERSION) "10.0"
 store(&KEYBOARDVERSION) '10.0'
 c store(&ETHNOLOGUECODE) "sqa"
-store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Sḵwx̱wú7mesh sníchim'
-store(&TARGETS) 'any'
 
 store(&VISUALKEYBOARD) 'fv_skwxwumesh_snichim.kvks'
+store(&TARGETS) 'mobile'
 
 begin Unicode > use(main)
 
@@ -19,12 +19,13 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 store(&LAYOUTFILE) "fv_skwxwumesh_snichim.keyman-touch-layout"
 
 C mobile shift layer
-+ [SHIFT T_Q_0] > '!' layer('default')
-+ [SHIFT T_Q] > '?' layer('default')
+c + [SHIFT T_Q_0] > '!' layer('default')
+c + [SHIFT T_Q] > '?' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_R] > '7' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
@@ -33,10 +34,11 @@ C mobile shift layer
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O] > 'P' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
-+ [SHIFT T_A] > 'A' layer('default')
-+ [SHIFT T_S] > 'S' layer('default')
-+ [SHIFT T_D] > '7' layer('default')
+c + [SHIFT T_A_0] > 'Á' layer('default')
+c + [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S_0] > 'Á' layer('default')
++ [SHIFT T_S] > 'A' layer('default')
++ [SHIFT T_D] > 'S' layer('default')
 + [SHIFT T_G] > '-' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J] > 'Ḵ' layer('default')
@@ -48,7 +50,7 @@ C mobile shift layer
 + [SHIFT T_Z] > 'X̱' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-+ [SHIFT T_V] > ',' layer('default')
+c + [SHIFT T_V] > ',' layer('default')
 + [SHIFT T_B] > '.' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
@@ -56,56 +58,63 @@ C mobile shift layer
 + [SHIFT T_M] > 'M' layer('default')
 
 C mobile deadkey glottal combining apostrophe
-'M' + [SHIFT T_R] > 'M̓'
-'l' + [SHIFT T_R] > 'l̓'
-'N' + [SHIFT T_R] > 'N̓'
-'W' + [SHIFT T_R] > 'W̓'
-'m' + [SHIFT T_R] > 'm̓'
-'y' + [SHIFT T_R] > 'y̓'
-'n' + [SHIFT T_R] > 'n̓'
-'w' + [SHIFT T_R] > 'w̓'
-'L' + [SHIFT T_R] > 'L̓'
-'Y' + [SHIFT T_R] > 'Y̓'
-'M' + [T_R] > 'M̓'
-'l' + [T_R] > 'l̓'
-'N' + [T_R] > 'N̓'
-'W' + [T_R] > 'W̓'
-'m' + [T_R] > 'm̓'
-'y' + [T_R] > 'y̓'
-'n' + [T_R] > 'n̓'
-'w' + [T_R] > 'w̓'
-'L' + [T_R] > 'L̓'
-'Y' + [T_R] > 'Y̓'
+c 'M' + [SHIFT T_R] > 'M̓'
+c 'l' + [SHIFT T_R] > 'l̓'
+c 'N' + [SHIFT T_R] > 'N̓'
+c 'W' + [SHIFT T_R] > 'W̓'
+c 'm' + [SHIFT T_R] > 'm̓'
+c 'y' + [SHIFT T_R] > 'y̓'
+c 'n' + [SHIFT T_R] > 'n̓'
+c 'w' + [SHIFT T_R] > 'w̓'
+c 'L' + [SHIFT T_R] > 'L̓'
+c 'Y' + [SHIFT T_R] > 'Y̓'
+c 'M' + [T_R] > 'M̓'
+c 'l' + [T_R] > 'l̓'
+c 'N' + [T_R] > 'N̓'
+c 'W' + [T_R] > 'W̓'
+c 'm' + [T_R] > 'm̓'
+c 'y' + [T_R] > 'y̓'
+c 'n' + [T_R] > 'n̓'
+c 'w' + [T_R] > 'w̓'
+c 'L' + [T_R] > 'L̓'
+c 'Y' + [T_R] > 'Y̓'
 
 C mobile shift layer - deadkey acute accent
-'o' + [SHIFT T_F] > 'ó'
-'I' + [SHIFT T_F] > 'Í'
-'E' + [SHIFT T_F] > 'É'
-'A' + [SHIFT T_F] > 'Á'
-'u' + [SHIFT T_F] > 'ú'
-'O' + [SHIFT T_F] > 'Ó'
-'e' + [SHIFT T_F] > 'é'
-'a' + [SHIFT T_F] > 'á'
-'i' + [SHIFT T_F] > 'í'
-'U' + [SHIFT T_F] > 'Ú'
-'o' + [T_F] > 'ó'
-'I' + [T_F] > 'Í'
-'E' + [T_F] > 'É'
-'A' + [T_F] > 'Á'
-'u' + [T_F] > 'ú'
-'O' + [T_F] > 'Ó'
-'e' + [T_F] > 'é'
-'a' + [T_F] > 'á'
-'i' + [T_F] > 'í'
-'U' + [T_F] > 'Ú'
+c 'o' + [SHIFT T_F] > 'ó'
+c 'I' + [SHIFT T_F] > 'Í'
+c 'E' + [SHIFT T_F] > 'É'
+c 'A' + [SHIFT T_F] > 'Á'
+c 'u' + [SHIFT T_F] > 'ú'
+c 'O' + [SHIFT T_F] > 'Ó'
+c 'e' + [SHIFT T_F] > 'é'
+c 'a' + [SHIFT T_F] > 'á'
+c 'i' + [SHIFT T_F] > 'í'
+c 'U' + [SHIFT T_F] > 'Ú'
+c 'o' + [T_F] > 'ó'
+c 'I' + [T_F] > 'Í'
+c 'E' + [T_F] > 'É'
+c 'A' + [T_F] > 'Á'
+c 'u' + [T_F] > 'ú'
+c 'O' + [T_F] > 'Ó'
+c 'e' + [T_F] > 'é'
+c 'a' + [T_F] > 'á'
+c 'i' + [T_F] > 'í'
+c 'U' + [T_F] > 'Ú'
+
+c mobile macron deadkey
+c 'k' + [T_V] > '̱ḵ'
+c 'K' + [T_V] > 'Ḵ'
+c 'x' + [T_V] > 'x̱'
+c 'X' + [T_V] > '̱X̱'
 
 C mobile unshifted layer
-+ [T_Q_0] > '!'
-+ [T_Q] > '?'
+c + [T_Q_0] > '!'
+c + [T_Q] > '?'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E_0] > 'é'
 + [T_E] > 'e'
++ [T_R] > '7'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
@@ -114,10 +123,11 @@ C mobile unshifted layer
 + [T_I_0] > 'í'
 + [T_I] > 'i'
 + [T_O] > 'p'
-+ [T_A_0] > 'á'
-+ [T_A] > 'a'
-+ [T_S] > 's'
-+ [T_D] > '7'
+c + [T_A_0] > 'á'
+c + [T_A] > 'a'
++ [T_S_0] > 'á'
++ [T_S] > 'a'
++ [T_D] > 's'
 + [T_G] > '-'
 + [T_H] > 'h'
 + [T_J] > 'ḵ'
@@ -129,7 +139,7 @@ C mobile unshifted layer
 + [T_Z] > 'x̱'
 + [T_X] > 'x'
 + [T_C] > 'c'
-+ [T_V] > ','
+c + [T_V] > ','
 + [T_B] > '.'
 + [T_N_0] > 'n̓'
 + [T_N] > 'n'
@@ -138,39 +148,24 @@ C mobile unshifted layer
 
 c --- END OF TOUCH LAYOUT RULES ---
 
-C DESKTOP LAYOUT
-
-
 
 C CONSTRAINTS AND RULES
 
-c backspace will delete just the acute accent on a vowel with acute accent
-store(plainVowels) "aeiouAEIOU"
-store(acuteVowels) "áéíóúÁÉÍÓÚ"
-any(acuteVowels) + [K_BKSP] > index(plainvowels,1)
-
-c combining deadkey for acute accent on vowels
-store(acuteKeys) [T_F] [SHIFT T_F]
-any(plainVowels) + any(acuteKeys) > index(acuteVowels,1)
-
 c combining deadkey for glottal apostrophe diacritic on resonants
 store(plainResonants) "mlnwyMLNWY"
-store(glottalKeys) [T_R] [SHIFT T_R]
+store(glottalKeys) [T_Q] [SHIFT T_Q] C TODO ADD DESKTOP
 any(plainResonants) + any(glottalKeys) > index(plainResonants,1) U+0313
-=======
+
 c Rules - vowels with acute accent
 store(plainvowels) "aeiouAEIOU"
 store(acutevowels) "áéíóúÁÉÍÓÚ"
-store(acuteKeys) [T_F] [SHIFT T_F]
+store(acuteKeys) [T_A] [SHIFT T_A] C TODO ADD DESKTOP
 any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
 any(acutevowels) + [K_BKSP] > index(plainvowels,1) c backspace on acute vowel will leave a plain vowel behind
 
-c Rules - combining glottal (combining comma above)
-store(noGlottal) 'lmnwyLMNWY'
-store(glottalKeys) [T_J] [SHIFT T_J]
-any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
+c rules - k, x with macron below
+store(plain_kx) "kKxX"
+store(macronKeys) [T_V] [SHIFT T_V]
+any(plain_kx) + any(macronKeys) > index(plain_kx,1) U+0331
 
-c --- DESKTOP ---
-
-
-
+C DESKTOP LAYOUT
