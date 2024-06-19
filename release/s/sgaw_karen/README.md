@@ -1,9 +1,7 @@
 S'gaw Karen Keyboard
 =====================
 
-Copyright © 2024 Jcturner12
-
-Version 1.1
+Copyright © Jcturner12
 
 A Unicode keyboard for the S'gaw Karen language. 
 
