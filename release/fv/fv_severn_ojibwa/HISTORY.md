@@ -4,6 +4,7 @@
 -----------------
 * Added desktop layout
 * Added w final variant to mobile layout
+* Normalised mobile outputs
 
 9.3.1 (25 Oct 2023)
 -----------------
