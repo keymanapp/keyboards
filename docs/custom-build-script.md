@@ -1,12 +1,12 @@
 
-The following example shows how to create a minimal build script for a keyboard.
+The following example shows how to create a minimal build script for a keyboard. 
 If you don't need a custom build step, don't include a build script in the keyboard.
 
 ````bash
 #!/bin/bash
 echo A custom build.sh script for a release/ keyboard
 
-. ../../../resources/util.inc.sh
+. ../../../resources/util.sh
 
 parse_args $@
 

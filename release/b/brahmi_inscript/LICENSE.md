@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2022-2023 Joshua Wong
+© 2022-2023 Joshua Wong
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

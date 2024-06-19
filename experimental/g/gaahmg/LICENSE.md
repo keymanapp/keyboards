@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2023 Development and Literacy Partners International
+© 2023 Development and Literacy Partners International
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

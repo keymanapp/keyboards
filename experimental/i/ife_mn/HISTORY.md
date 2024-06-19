@@ -12,8 +12,6 @@ ife_mn Change History
 23 Dec 2005: 
     added ;j for barred-i (not in Tbb fonts)
 30 Mar 2007: 
-    modified from tbb6u1.kmn for IfÃ¨ typing system
-23 Jan 2024 (v1.0): 
+    modified from tbb6u1.kmn for Ifè typing system
+23 Jan 2024: 
     Upgraded for modern Keyman. Added color icon.
-28 Mar 2024 (v1.0.1): 
-    Updated metadata and added help file.
