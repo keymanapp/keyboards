@@ -18,9 +18,23 @@ for example `sil` or `gff`.
 
 ## Contributing
 
-First, read the guide! <https://help.keyman.com/developer/keyboards/>
+Standard keyboard follows a structure of user-friendly design, keyboard structures, and typing experience.
 
-Keyman Developer 17.0+ is recommended to edit these files. <https://keyman.com/developer>
+### Tool
+
+Get the latest version of Keyman Developer to start the journey of keyboard development: <https://keyman.com/developer>
+
+### Keyboard Design Principles
+
+A good way to start creating a keyboard is to plan out the requirements of the keyboard ahead and decide on the keyboard's language, target users, usability, structure, and many more steps that can be carried out further along the process. To ensure that the keyboard is up to standard, start by implementing the D.I.S.C.U.S. method. Read more! <https://help.keyman.com/developer/keyboards/standard/>
+
+When a keyboard is ready to publish, please confirm that the folders and files are consistent to the repository. For more clarification: <https://help.keyman.com/developer/keyboards/github/step-0>
+
+Learn how to update existing keyboards <https://community.software.sil.org/t/unfamiliar-with-git-best-way-to-update-my-keyboard/8652/2>
+
+### Keyboard Help Documentation
+
+If the guides are not enough to provide you a completed keyboard, don't be afriad to explore the main keyboard help page! <https://help.keyman.com/developer/keyboards/>
 
 ## Building Keyboards
 
@@ -104,4 +118,6 @@ new keyboard name.
 * <https://help.keyman.com/keyboards/>: Published documentation for each keyboard
 * <https://r.keymanweb.com/api/4.0/keyboards/>: JSON API for compiled keyboards available from Keyman Cloud
 
+## Community
 
+We appreciate the effort of reaching out about any issue or suggestion to help us improve the experience and keyboards. Share with us on our community site: <https://community.software.sil.org/new-message?groupname=keyman>
