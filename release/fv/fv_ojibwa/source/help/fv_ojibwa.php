@@ -44,7 +44,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 				</ul>
 			<li>To add the w-dot, type the w after the first consonant</li>
 				<ul>
-					<li><b>ᐃᒃᐧᐁ</b> is typed <be>ikwe</b> or <b>igwe</b></li>
+					<li><b>ᐃᒃᐧᐁ</b> is typed <be>ik[we</b> or <b>ig[we</b></li>
 				</ul>
 			<li>The syllabics sets for sh- / zh- (ᔐᔑᔓᔕᔥ), ch- (ᒉᒋᒍᒐᒡ), and th- (ᕞᕠᕤᕦᕪ) are typed by SHIFT + the first letter of each sound (s, z, and t)</li>
 				<ul>
@@ -56,8 +56,8 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 	</li>
 	<li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the <b>left bracket key [ </b> to keep the syllables separate
 		<ul>
-			<li><b>ᐊᒸᑲᓂᐎᑦ ᐊᐊ</b> (pointed) is typed <b>amwaakanit a[a</b></li>
-			<li><b>ᐊᒶᑲᓂᐎᑦ ᐊᐊ</b> (unpointed) is typed <b>amwakanit a[a</b></li>
+			<li><b>ᐊᒸᑲᓂᐎᑦ ᐊᐊ</b> (pointed) is typed <b>amwaakaniwit a[a</b></li>
+			<li><b>ᐊᒶᑲᓂᐎᑦ ᐊᐊ</b> (unpointed) is typed <b>amwakaniwit a[a</b></li>
 			<li><b>ᐋᓃᔥ ᐁᔥᓂᑳᔅᔾᐃᓐ</b> (pointed) is typed <b>aaniiZ eZnikaazy[in</b> or <b>aaniiS eSnigaasy[in</b></li>
 			<li><b>ᐊᓂᔥ ᐁᔥᓂᑲᔅᔾᐃᓐ</b> (unpointed) is typed <b>aniZ eZnikazy[in</b> or <b>aniS eSnigasy[in</b></li>
 		</ul>
@@ -95,9 +95,9 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 	<td  align='center'>ᐱ ᕕ</td>
 	<td  align='center'>ᑎ ᕠ</td>
 	<td  align='center'>ᑭ</td>
-	<td  align='center'>ᒋ ᓕ ᕆ</td>
+	<td  align='center'>ᒋ</td>
 	<td  align='center'>ᒥ</td>
-	<td  align='center'>ᓂ</td>
+	<td  align='center'>ᓂ ᓕ ᕆ</td>
 	<td  align='center'>ᓯ</td>
 	<td  align='center'>ᔑ</td>
 	<td  align='center'>ᔨ</td>
@@ -107,9 +107,9 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 	<td  align='center'>ᐸ ᕙ</td>
 	<td  align='center'>ᑕ ᕦ</td>
 	<td  align='center'>ᑲ</td>
-	<td  align='center'>ᒐ ᓚ ᕋ</td>
+	<td  align='center'>ᒐ</td>
 	<td  align='center'>ᒪ</td>
-	<td  align='center'>ᓇ</td>
+	<td  align='center'>ᓇ ᓚ ᕋ</td>
 	<td  align='center'>ᓴ</td>
 	<td  align='center'>ᔕ</td>
 	<td  align='center'>ᔭ</td>
@@ -119,9 +119,9 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 	<td  align='center'>ᑉ ᕝ</td>
 	<td  align='center'>ᑦ ᕪ</td>
 	<td  align='center'>ᒃ</td>
-	<td  align='center'>ᒡ ᓪ ᕐ</td>
+	<td  align='center'>ᒡ</td>
 	<td  align='center'>ᒻ</td>
-	<td  align='center'>ᓐ</td>
+	<td  align='center'>ᓐ ᓪ ᕐ</td>
 	<td  align='center'>ᔅ</td>
 	<td  align='center'>ᔥ</td>
 	<td  align='center'>ᔾ</td>
@@ -143,9 +143,9 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 	<td  align='center'>ᐯ ᕓ</td>
 	<td  align='center'>ᑌ ᕞ</td>
 	<td  align='center'>ᑫ</td>
-	<td  align='center'>ᒉ ᓓ ᕃ</td>
+	<td  align='center'>ᒉ</td>
 	<td  align='center'>ᒣ</td>
-	<td  align='center'>ᓀ</td>
+	<td  align='center'>ᓀ ᓓ ᕃ</td>
 	<td  align='center'>ᓭ</td>
 	<td  align='center'>ᔐ</td>
 	<td  align='center'>ᔦ</td>
@@ -177,7 +177,9 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 <tr >
 	<td  align='center'>123</td>
 	<td  align='center'>🌐/td>
-	<td  align='center' colspan='6'>space</td>
+	<td  align='center'>ᐧ</td>
+	<td  align='center' colspan='4'>space</td>
+	<td  align='center'>᙮ . , ! ? ; : ' " ` ~</td>
 	<td  align='center'>⏎</td>
 	<td  align='center'>⌫</td>
 </tr>
@@ -188,10 +190,6 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 	<li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
 </ul>
 <div class='vspace'></div></div>
-<h3>Alternate Name</h3>
-<ul>
-	<li>Ojibwe</li>
-</ul>
 <div class='vspace'></div>
 
 </div>
@@ -199,4 +197,4 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet'></div>
+<div id='osk'></div>

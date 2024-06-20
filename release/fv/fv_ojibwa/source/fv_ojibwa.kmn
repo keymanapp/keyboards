@@ -5,6 +5,7 @@ c store(&ETHNOLOGUECODE) "ojb"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᐊᓂᔑᓇᐯᒧᐎᓐ'
 store(&VISUALKEYBOARD) 'fv_ojibwa.kvks'
+store(&KMW_HELPFILE) 'fv_ojibwa-help.htm'
 
 begin Unicode > use(main)
 
@@ -23,10 +24,10 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [SHIFT T_E_0] > 'ᕞ'
 + [SHIFT T_E] > 'ᑌ'
 + [SHIFT T_R] > 'ᑫ'
-+ [SHIFT T_T_0] > 'ᓓ'
-+ [SHIFT T_T_1] > 'ᕃ'
 + [SHIFT T_T] > 'ᒉ'
 + [SHIFT T_Y] > 'ᒣ'
++ [SHIFT T_U_0] > 'ᓓ'
++ [SHIFT T_U_1] > 'ᕃ'
 + [SHIFT T_U] > 'ᓀ'
 + [SHIFT T_I] > 'ᓭ'
 + [SHIFT T_O] > 'ᔐ'
@@ -37,10 +38,10 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [SHIFT T_D_0] > 'ᕤ'
 + [SHIFT T_D] > 'ᑐ'
 + [SHIFT T_F] > 'ᑯ'
-+ [SHIFT T_G_0] > 'ᓗ'
-+ [SHIFT T_G_1] > 'ᕈ'
 + [SHIFT T_G] > 'ᒍ'
 + [SHIFT T_H] > 'ᒧ'
++ [SHIFT T_J_0] > 'ᓗ'
++ [SHIFT T_J_1] > 'ᕈ'
 + [SHIFT T_J] > 'ᓄ'
 + [SHIFT T_K] > 'ᓱ'
 + [SHIFT T_L] > 'ᔓ'
@@ -70,10 +71,10 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [T_E_0] > 'ᕠ'
 + [T_E] > 'ᑎ'
 + [T_R] > 'ᑭ'
-+ [T_T_0] > 'ᓕ'
-+ [T_T_1] > 'ᕆ'
 + [T_T] > 'ᒋ'
 + [T_Y] > 'ᒥ'
++ [T_U_0] > 'ᓕ'
++ [T_U_1] > 'ᕆ'
 + [T_U] > 'ᓂ'
 + [T_I] > 'ᓯ'
 + [T_O] > 'ᔑ'
@@ -84,10 +85,10 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [T_D_0] > 'ᕦ'
 + [T_D] > 'ᑕ'
 + [T_F] > 'ᑲ'
-+ [T_G_0] > 'ᓚ'
-+ [T_G_1] > 'ᕋ'
 + [T_G] > 'ᒐ'
 + [T_H] > 'ᒪ'
++ [T_J_0] > 'ᓚ'
++ [T_J_1] > 'ᕋ'
 + [T_J] > 'ᓇ'
 + [T_K] > 'ᓴ'
 + [T_L] > 'ᔕ'
@@ -97,10 +98,10 @@ store(&LAYOUTFILE) 'fv_ojibwa.keyman-touch-layout'
 + [T_X_0] > 'ᕪ'
 + [T_X] > 'ᑦ'
 + [T_C] > 'ᒃ'
-+ [T_V_0] > 'ᓪ'
-+ [T_V_1] > 'ᕐ'
 + [T_V] > 'ᒡ'
 + [T_B] > 'ᒻ'
++ [T_N_0] > 'ᓪ'
++ [T_N_1] > 'ᕐ'
 + [T_N] > 'ᓐ'
 + [T_M] > 'ᔅ'
 + [T_COMMA] > 'ᔥ'
@@ -126,11 +127,11 @@ any(THShortVowels) + any(LongKey) > index(THLongVowels,1)
 
 c n-modified ᕄᕆᕊᕍ
 store(NoDotR) 'ᕆᕈᕋ'
-store(LongR) 'ᕇᕉᕌ' c ᕎ 
+store(LongR) 'ᕇᕉᕌ' 
 any(NoDotR) + any(LongKey) > index(LongR,1)
-'ᐧᕋ' + [T_x68] > 'ᕎ'
+'ᐧᕋ' + any(LongKey) > 'ᕎ'
 
-'ᐧᕙ' + [T_x68] > 'ᕛ'
+'ᐧᕙ' + any(LongKey) > 'ᕛ'
 
 store(SNoDot) 'ᐃᐅᐊᐱᐳᐸᑎᑐᑕᑭᑯᑲᒋᒍᒐᒥᒧᒪᓯᓱᓴᔑᔓᔕᔨᔪᔭᓕᓗᓚ'
 store(LNoDot) 'ᐄᐆᐋᐲᐴᐹᑏᑑᑖᑮᑰᑳᒌᒎᒑᒦᒨᒫᓰᓲᓵᔒᔔᔖᔩᔫᔮᓖᓘᓛ'
@@ -138,12 +139,14 @@ store(SDot)  'ᐎᐒᐗᐼᑀᑄᑙᑝᑡᑶᑺᑾᒔᒘᒜᒮᒲᒶᓸᓼᔀᔙ
 store(LDot)  'ᐐᐔᐙᐾᑂᑆᑛᑟᑣᑸᑼᒀᒖᒚᒞᒰᒴᒸᓺᓾᔂᔛᔟᔣᔳᔷᔻᓠᓤᓨ'
 store(NoDotKey) [T_Q] [SHIFT T_A] [T_A] [T_W] [SHIFT T_S] [T_S] [T_E] [SHIFT T_D] [T_D] [T_R] [SHIFT T_F] [T_F] [T_T] [SHIFT T_G] [T_G] [T_Y] [SHIFT T_H] [T_H] [T_I] [SHIFT T_K] [T_K] [T_O] [SHIFT T_L] [T_L] [T_P] [SHIFT T_COLON] [T_COLON] [T_T_0] [SHIFT T_G_0] [T_G_0]
 store(LongKey) [T_x68]
-store(DotKey) [T_x66]
+store(DotKey) [T_x66] [SHIFT T_x66]
 
-any(SNoDot) + [T_x68] > index(LNoDot,1)
+any(SNoDot) + any(LongKey) > index(LNoDot,1)
 'ᐧ' + any(NoDotKey) > index(SDot,2)
 any(SDot) + any(LongKey) > index(LDot,1)
 'ᐧ' + [SHIFT T_B] > 'ᣜ'
+
+'ᕌ' + any(DotKey) > 'ᕏ'
 
 
 c --- END OF TOUCH LAYOUT RULES ---
@@ -235,6 +238,7 @@ c Standalone Vowels
 'ᐁ' + [K_W] > 'ᐌ'
 any(ShortVowels) + [K_W] > index(WShortVowels,1)
 any(LongVowels) + [K_W] > index(WLongVowels,1)
+any(LongVowels) + [K_BKSP] > index(ShortVowels,1)
 'ᐧ' + any(VowelKeys) > index(WShortVowels,2)
 'ᐧ' + [K_E] > 'ᐌ'
 
@@ -396,10 +400,6 @@ any(THShortVowels) + [K_BKQUOTE] > index(THLongVowels,1)
 'ᐧ' + [SHIFT K_T] > 'ᐧᕞ'
 'ᕪ' + [K_W] > 'ᐧᕞ'
 'ᐧᕞ' + [K_E] > 'ᐧᕞ'
-'ᐧᕞ' + [K_I] > 'ᐧᕠ'
-'ᐧᕠ' + [K_BKQUOTE] > 'ᐧᕢ'
-'ᐧᕞ' + [K_O] > 'ᐧᕤ'
-'ᐧᕤ' + [K_BKQUOTE] > 'ᐧᕥ'
 'ᐧᕞ' + [K_A] > 'ᐧᕦ'
 'ᐧᕦ' + [K_A] > 'ᕨ'
 'ᐧᕦ' + [K_BKQUOTE] > 'ᕨ'
@@ -477,6 +477,12 @@ c FW-
 'ᐧᕓ' + [K_O] > 'ᐧᕗ'
 'ᐧᕗ' + [K_BKQUOTE] > 'ᐧᕘ'
 'ᐧᕓ' + [K_A] > 'ᐧᕙ'
+
+c TH-
+'ᐧᕞ' + [K_I] > 'ᐧᕠ'
+'ᐧᕠ' + [K_BKQUOTE] > 'ᐧᕢ'
+'ᐧᕞ' + [K_O] > 'ᐧᕤ'
+'ᐧᕤ' + [K_BKQUOTE] > 'ᐧᕥ'
 
 c NW-
 'ᓉ' + [K_I] > 'ᐧᓂ'
