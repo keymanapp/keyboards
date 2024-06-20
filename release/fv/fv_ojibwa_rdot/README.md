@@ -3,7 +3,7 @@
 
 Description
 -----------
-ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa) keyboard layout for unicode.
+ᐊᓂᔑᓇᐯᒧᐏᓐ (Ojibwa) keyboard layout for unicode.
 
 Links
 -----
