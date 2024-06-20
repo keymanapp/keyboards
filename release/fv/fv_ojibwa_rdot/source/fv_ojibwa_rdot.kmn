@@ -8,6 +8,7 @@ store(&BITMAP) 'fv_ojibwa_rdot.ico'
 store(&VISUALKEYBOARD) 'fv_ojibwa_rdot.kvks'
 store(&LAYOUTFILE) 'fv_ojibwa_rdot.keyman-touch-layout'
 store(&NAME) 'ᐁᓂᔑᓇᐯᒧᐏᓐ (Ojibwa, right w-dot)'
+store(&KMW_HELPFILE) 'fv_ojibwa_rdot-help.htm'
 
 begin Unicode > use(main)
 
@@ -237,6 +238,7 @@ any(ShortVowels) + [K_W] > index(WShortVowels,1)
 any(LongVowels) + [K_W] > index(WLongVowels,1)
 any(ShortVowels) + [K_Q] > index(WShortVowels,1)
 any(LongVowels) + [K_Q] > index(WLongVowels,1)
+any(LongVowels) + [K_BKSP] > index(ShortVowels,1)
 'ᐁ' + [K_Q] > 'ᐍ'
 
 c Standalone Consonants
