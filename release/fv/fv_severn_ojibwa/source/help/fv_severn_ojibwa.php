@@ -177,7 +177,9 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐎᐣ</b> language of th
 <tr >
 	<td  align='center'>123</td>
 	<td  align='center'>🌐</td>
-	<td  align='center' colspan='6'>space</td>
+	<td  align='center'>ᐧ</td>
+	<td  align='center' colspan='4'>space</td>
+	<td  align='center'>᙮ . , ! ? ; : ' " ` ~</td>
 	<td  align='center'>⏎</td>
 	<td  align='center'>⌫</td>
 </tr>
