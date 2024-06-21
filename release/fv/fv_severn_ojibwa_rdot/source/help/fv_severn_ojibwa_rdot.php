@@ -29,10 +29,10 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="ojibwa_U_.png" alt="ᐊᓂᔑᓇᐯᒧᐎᓐ" width="514" height="198" /></h2>
+<img src="fv_severn_ojibwa_rdot.png" alt="ᐊᓂᔑᓇᐯᒧᐎᓐ" width="514" height="198" /></h2>
 <ul>
 	<li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and long form (vowels).</li>
-	<li>The syllabics used to write ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=Ojibwa.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
+	<li>The syllabics used to write ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=severn_ojibwa_rdot.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
 		<ul>
 			<li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will appear on screen. Following the consonant with a vowel will change the syllable final into its full form in the orientation corresponding with the vowel typed.</li>
 				<ul>
@@ -44,11 +44,11 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 				</ul>
 			<li>To add the w-dot, type the w after the first consonant</li>
 				<ul>
-					<li><b>ᐃᒃᐧᐁ</b> is typed <be>ik[we</b> or <b>ig[we</b></li>
+					<li><b>ᐃᒃᐍ</b> is typed <be>ik[we</b> or <b>ig[we</b></li>
 				</ul>
 			<li>The syllabics sets for sh- / zh- (ᔐᔑᔓᔕᔥ), ch- (ᒉᒋᒍᒐᒡ), and th- (ᕞᕠᕤᕦᕪ) are typed by SHIFT + the first letter of each sound (s, z, and t)</li>
 				<ul>
-					<li><b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> is typed <b>aniSinabemowin</b> or <b>aniSinapemowin</b></li>
+					<li><b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> is typed <b>aniSininimowin</b></li>
 					<li><b>ᒌᒫᓐ</b> (pointed) is typed <b>Ciimaan</b> or <b>jiimaan</b></li>
 					<li><b>ᒋᒪᓐ</b> (unpointed) is typed <b>Ciman</b> or <b>jiman</b></li>
 				</ul>
@@ -77,7 +77,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 			<ul>
 				<li><b>.</b> is typed Right-Alt / Option + Period key . </li>
 				<li><b>-</b> is typed Right-Alt / Option + Hyphen key -</li>
-				<li><b>+</b> is typed Shift+Right-Alt / Option + Equal key =</li>
+				<li><b>{</b> is typed Shift+Right-Alt / Option + Left-Bracket [ key</li>
 			</ul>
 		<li>All English letters can be typed by pressing <b>Right-Alt / Option </b> followed by the letter(s) you wish to type</li>
 		<li>All uppercase English letters can be typed by pressing <b>Right-Alt / Option</b> followed by the letter(s) you wish ty type</li>

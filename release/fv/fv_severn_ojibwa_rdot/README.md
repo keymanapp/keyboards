@@ -3,7 +3,7 @@
 
 Description
 -----------
-TBD
+ᐊᓂᔑᓂᓂᒧᐏᐣ (Severn Ojibwa, right w-dot) keyboard layout for Inicode
 
 Links
 -----
