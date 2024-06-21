@@ -34,7 +34,7 @@ Learn how to update existing keyboards <https://community.software.sil.org/t/unf
 
 ### Keyboard Help Documentation
 
-If the guides are not enough to provide you a completed keyboard, don't be afriad to explore the main keyboard help page! <https://help.keyman.com/developer/keyboards/>
+If the guides are not enough to provide you a completed keyboard, don't be afraid to explore the main keyboard help page! <https://help.keyman.com/developer/keyboards/>
 
 ## Building Keyboards
 
