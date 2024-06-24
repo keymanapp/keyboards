@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'ᐊᓂᔑᓂᓂᒧᐎᐣ Keyboard Help';
-  $pagetitle = 'ᐊᓂᔑᓂᓂᒧᐎᐣ Keyboard Help';
+  $pagename = 'ᐊᓂᔑᓂᓂᒧᐎᐣ (Severn Ojibwa, left w-dot) Keyboard Help';
+  $pagetitle = 'ᐊᓂᔑᓂᓂᒧᐎᐣ (Severn Ojibwa, left w-dot) Keyboard Help';
   $pagestyle = <<<END
  
 table.keyboard-layer {
@@ -80,7 +80,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐎᐣ</b> language of th
 				<li><b>+</b> is typed Shift+Right-Alt / Option + Equal key =</li>
 			</ul>
 		<li>All English letters can be typed by pressing <b>Right-Alt / Option </b> followed by the letter(s) you wish to type</li>
-		<li>All uppercase English letters can be typed by pressing <b>Right-Alt / Option</b> followed by the letter(s) you wish ty type</li>
+		<li>All uppercase English letters can be typed by pressing <b>Right-Alt / Option</b> followed by the letter(s) you wish to type</li>
 
 <h2>Unicode Fonts</h2>
 						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
