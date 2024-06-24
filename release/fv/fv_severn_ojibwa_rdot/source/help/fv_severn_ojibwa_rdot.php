@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'ᐊᓂᔑᓇᐯᒧᐎᓐ Keyboard Help';
-  $pagetitle = 'ᐊᓂᔑᓇᐯᒧᐎᓐ Keyboard Help';
+  $pagename = 'ᐊᓂᔑᓂᓂᒧᐏᐣ (Severn Ojibwa, right w-dot) Keyboard Help';
+  $pagetitle = 'ᐊᓂᔑᓂᓂᒧᐏᐣ (Severn Ojibwa, right w-dot) Keyboard Help';
   $pagestyle = <<<END
  
 table.keyboard-layer {
@@ -24,15 +24,15 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of the Eastern Subarctic region of Canada.
+This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of the Eastern Subarctic region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="fv_severn_ojibwa_rdot.png" alt="ᐊᓂᔑᓇᐯᒧᐎᓐ" width="514" height="198" /></h2>
+<img src="fv_severn_ojibwa_rdot.png" alt="ᐊᓂᔑᓂᓂᒧᐏᐣ" width="514" height="198" /></h2>
 <ul>
 	<li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and long form (vowels).</li>
-	<li>The syllabics used to write ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=severn_ojibwa_rdot.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
+	<li>The syllabics used to write ᐊᓂᔑᓂᓂᒧᐏᐣ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=severn_ojibwa_rdot.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
 		<ul>
 			<li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will appear on screen. Following the consonant with a vowel will change the syllable final into its full form in the orientation corresponding with the vowel typed.</li>
 				<ul>
@@ -48,7 +48,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 				</ul>
 			<li>The syllabics sets for sh- / zh- (ᔐᔑᔓᔕᔥ), ch- (ᒉᒋᒍᒐᒡ), and th- (ᕞᕠᕤᕦᕪ) are typed by SHIFT + the first letter of each sound (s, z, and t)</li>
 				<ul>
-					<li><b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> is typed <b>aniSininimowin</b></li>
+					<li><b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> is typed <b>aniSininimowin</b></li>
 					<li><b>ᒌᒫᓐ</b> (pointed) is typed <b>Ciimaan</b> or <b>jiimaan</b></li>
 					<li><b>ᒋᒪᓐ</b> (unpointed) is typed <b>Ciman</b> or <b>jiman</b></li>
 				</ul>
@@ -68,7 +68,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 		<li>A standalone above dot indicating vowel length can be typed with the Backquote key `</li>
 		<li>A standalone w-dot can be typed with the q key.</li>
 			<ul>
-				<li><b>NOTE:</b> the dot indicating a long vowel and the w-dot do not need to be typed for the majority of syllables on the keyboard. They are provided as an option for syllables that do not have a single character that contains the syllable and one or both dots, ie; ᐧᕙ</li>
+				<li><b>NOTE:</b> the dot indicating a long vowel and the w-dot do not need to be typed for the majority of syllables on the keyboard. They are provided as an option for syllables that do not have a single character that contains the syllable and one or both dots, ie; ᕙᐧ</li>
 			</ul>
 		<li><b>᙮</b> is typed with the period key .</li>
 		<li>single guillement: ‹ Right-Alt+Semicolon key ; — › Right-Alt+Quote '</li>
@@ -80,7 +80,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐎᓐ</b> language of th
 				<li><b>{</b> is typed Shift+Right-Alt / Option + Left-Bracket [ key</li>
 			</ul>
 		<li>All English letters can be typed by pressing <b>Right-Alt / Option </b> followed by the letter(s) you wish to type</li>
-		<li>All uppercase English letters can be typed by pressing <b>Right-Alt / Option</b> followed by the letter(s) you wish ty type</li>
+		<li>All uppercase English letters can be typed by pressing <b>Right-Alt / Option</b> followed by the letter(s) you wish to type</li>
 
 <h2>Unicode Fonts</h2>
 						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
