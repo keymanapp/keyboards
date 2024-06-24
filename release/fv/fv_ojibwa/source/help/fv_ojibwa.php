@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'ᐊᓂᔑᓇᐯᒧᐎᓐ Keyboard Help';
-  $pagetitle = 'ᐊᓂᔑᓇᐯᒧᐎᓐ Keyboard Help';
+  $pagename = 'ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa, a-finals, left w-dot) Keyboard Help';
+  $pagetitle = 'ᐊᓂᔑᓇᐯᒧᐎᓐ (Ojibwa, a-finals, left w-dot) Keyboard Help';
   $pagestyle = <<<END
  
 table.keyboard-layer {
