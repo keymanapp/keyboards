@@ -26,7 +26,9 @@ Get the latest version of Keyman Developer to start the journey of keyboard deve
 ### Keyboard Design Principles
 
 A good way to start creating a keyboard is to plan out the requirements of the keyboard ahead and decide on the keyboard's language, target users, usability, structure, and many more steps that can be carried out further along the process. To ensure that the keyboard is up to standard, start by implementing the D.I.S.C.U.S. method. Read more! <https://help.keyman.com/developer/keyboards/standard/>
+
 Please make sure the keyboard and the package compile successfully before making a keyboard submission. If there are warning messages, try to address all of them; if there are errors, those must be corrected before submission. Help on this: <https://help.keyman.com/developer/current-version/reference/messages/>
+
 When a keyboard is ready to publish, please confirm that the folders and files are consistent to the repository. For more clarification: 
 - <https://help.keyman.com/developer/current-version/reference/file-layout>
 - <https://help.keyman.com/developer/current-version/reference/file-types/>
