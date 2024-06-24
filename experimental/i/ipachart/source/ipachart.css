@@ -1,0 +1,182 @@
+h1 {
+font-size: 250%;
+color: rgb(200,10,10);
+    }
+
+body {
+    /* background-color: #eec; */
+    /* background-image: linear-gradient(80deg, #ffc , #bbf); */
+    /* url("ipachart-bg.jpg"); */
+    font-family: "Andika","Charis SIL","DejaVu Sans","AndikaAfr","Andika Afr","Andika New Basic Compact";
+}
+.kmw-key-layer {
+    /* transition: 1s; /*
+    /* background-image: linear-gradient(80deg, #ffc , #bbf); */
+    background-image: linear-gradient(85deg, rgba(238,238,204,1) 0%, rgba(238,238,204,1) 45%, rgba(34,34,34,1) 50%, rgba(204,204,255,1) 55%, rgba(221,221,255,1) 100%);
+}
+.kmw-key-layer:has(#vowels-K_I) {
+background-image: linear-gradient(85deg, rgba(238,238,204,1) 0%, rgba(238,238,204,1) 55%, rgba(34,34,34,1) 60%, rgba(204,204,255,1) 65%, rgba(221,221,255,1) 100%);
+}
+
+.kmw-key-row:nth-child(5)  {
+    background-image: linear-gradient(90deg, rgba(120,120,120,1) 0%, rgba(120,120,120,1) 48%, rgba(34,34,34,1) 51%, rgba(204,204,255,1) 54%, rgba(221,221,255,1) 100%);
+/* transition: 1s ease-out; */
+}
+.kmw-key-row:nth-child(5):has(#vowels-K_SPACE)  {
+    background-image: linear-gradient(90deg, rgba(120,120,120,1) 0%, rgba(120,120,120,1) 56%, rgba(34,34,34,1) 61%, rgba(204,204,255,1) 66%, rgba(221,221,255,1) 100%);
+}
+.key-layer-group { padding: 0px 0px; }
+
+.kmw-key[id*="default-U_25"] {
+    border: black solid 4px;
+}
+
+/* easier selecting from below *//*
+.phone .kmw-key-square-ex  {
+   margin: 0 0 -30px 5px;
+}
+.phone .kmw-key-square-ex .kmw-key-default {
+   margin: 0 0 30px 5px;
+}*/
+
+.tablet.android .kmw-key-square .kmw-key.kmw-key-default, .phone.android .kmw-key-square .kmw-key.kmw-key-default, .phone.ios .kmw-key-square .kmw-key.kmw-key-default, .tablet.ios .kmw-key-square .kmw-key.kmw-key-default {
+color: black;
+font-size: 1.2em;
+background: transparent;
+}
+
+.android .kmw-key-layer-group, .ios .kmw-key-layer-group {
+    /*background: #eee url("ipachart-bg.jpg"); transition: 1s ease-out; */
+}
+.android .kmw-key.kmw-key-shift, .android .kmw-key.kmw-key-special, .ios .kmw-key.kmw-key-shift, .ios .kmw-key.kmw-key-special {
+    color: #333;
+    background: #ccc;
+}
+.tablet.android .kmw-key.kmw-key-default.kmw-spacebar, .android .kmw-key.kmw-key-default.kmw-spacebar, .ios .kmw-key.kmw-key-default.kmw-spacebar {
+    border: 1pt solid white;
+    border-bottom: none;
+}
+
+.android .kmw-key-popup-icon, .tablet.android .kmw-key-popup-icon, .ios .kmw-key-popup-icon {
+    font-size: 70%;
+    top: -10px;
+    right: 0px;
+    left: initial;
+    color: red;
+}
+
+.android #kmw-popup-keys {
+   border-radius: 10px;
+}
+
+.android .kmw-banner-bar, .ios .kmw-banner-bar {
+    background: #cdc;
+    color: #131;
+    display: none;
+}
+
+.android .kmw-suggestion-text, .ios .kmw-suggestion-text {
+    color: #131;
+}
+
+.kmw-banner-bar .kmw-suggest-option {
+/* height: auto; */
+font-size: 85%;
+    display: none;
+}
+
+.android #kmw-popup-keys, .ios #kmw-popup-keys {
+    background: #fff;
+}
+
+.android #kmw-popup-keys .kmw-key.kmw-key-default, #kmw-popup-keys .kmw-key.kmw-key-default {
+background: #eee;
+}
+
+.android #kmw-popup-keys .kmw-key.kmw-key-default.kmw-key-touched, #kmw-popup-keys .kmw-key.kmw-key-default.kmw-key-touched {
+background-color: #9e9;
+}
+
+.android .kmw-key-touched,  .kmw-key-touched {
+background-color: #9e9;
+}
+
+.android #kmw-popup-keys .kmw-key-square-ex .kmw-key,  #kmw-popup-keys .kmw-key-square-ex .kmw-key {
+margin-bottom: 30px;
+background: #eee;
+color: black;
+}
+.android .kmw-keytip,  .kmw-keytip {
+margin-bottom: 15px;
+}
+#kmw-popup-keys { background-color: #eee; color: black; /* transition: 0.5s ease-out; */ }
+
+
+#default-U_02E5, #default-U_02E6, #default-U_02E7, #default-U_02E8, #default-U_02E9,
+#vowels-U_02E5, #vowels-U_02E6, #vowels-U_02E7, #vowels-U_02E8, #vowels-U_02E9 {
+    background-color: #333;
+    color: white;
+}
+
+
+/* rounded */
+#default-K_Y, #vowels-K_Y, #default-U_028F, #vowels-U_028F, #default-U_00F8, #vowels-U_00F8, #default-U_0153, #vowels-U_0153, #default-U_0276, #vowels-U_0276, #default-U_0289, #vowels-U_0289, #default-U_0275, #vowels-U_0275, #default-U_025E, #vowels-U_025E, #default-K_U, #vowels-K_U, #default-U_028A, #vowels-U_028A, #default-K_O, #vowels-K_O, #default-U_0254, #vowels-U_0254, #default-U_0252, #vowels-U_0252 {
+    border-radius: 20px;
+    background-color: #ff3;
+}
+/* unrounded */
+#default-K_I, #vowels-K_I, #default-U_026A, #vowels-U_026A, #default-K_E, #vowels-K_E, #default-U_025B, #vowels-U_025B, #default-U_00E6, #vowels-U_00E6, #default-K_A, #vowels-K_A, #default-U_0268, #vowels-U_0268, #default-U_0258, #vowels-U_0258, #default-U_025C, #vowels-U_025C, #default-U_026F, #vowels-U_026F, #default-U_0264, #vowels-U_0264, #default-U_028C, #vowels-U_028C, #default-U_0251, #vowels-U_0251
+{
+    border-radius: 1px; background-color: #ee7; 
+    border-top-style: solid; border-width: 1px; border-image: linear-gradient(to right,#ee7,black); 
+    border-right: 1px solid gray;
+}
+
+@media (prefers-color-scheme: dark) {
+  /*div.ios div.kmw-keytip, div.android div.kmw-keytip {
+    background-color:#cdc;
+    color: #333;
+  }*/
+
+  /* Style for callout used on phones */
+  #kmw-popup-callout {
+    background-color: #eff3f9;
+  }
+
+  	  /* rounded */
+    #default-K_Y, #vowels-K_Y, #default-U_028F, #vowels-U_028F, #default-U_00F8, #vowels-U_00F8, #default-U_0153, #vowels-U_0153, #default-U_0276, #vowels-U_0276, #default-U_0289, #vowels-U_0289, #default-U_0275, #vowels-U_0275, #default-U_025E, #vowels-U_025E, #default-K_U, #vowels-K_U, #default-U_028A, #vowels-U_028A, #default-K_O, #vowels-K_O, #default-U_0254, #vowels-U_0254, #default-U_0252, #vowels-U_0252
+	{
+		background-color: #880;
+        color: #ffd;
+        
+	}
+	/* unrounded */
+    #default-K_I, #vowels-K_I, #default-U_026A, #vowels-U_026A, #default-K_E, #vowels-K_E, #default-U_025B, #vowels-U_025B, #default-U_00E6, #vowels-U_00E6, #default-K_A, #vowels-K_A, #default-U_0268, #vowels-U_0268, #default-U_0258, #vowels-U_0258, #default-U_025C, #vowels-U_025C, #default-U_026F, #vowels-U_026F, #default-U_0264, #vowels-U_0264, #default-U_028C, #vowels-U_028C, #default-U_0251, #vowels-U_0251
+	{
+		background-color: #660;
+		border-right: 1px solid gray;
+        color: #eec;
+	}
+
+    .tablet.ios .kmw-key-square .kmw-key.kmw-key-default, .tablet.android .kmw-key-square .kmw-key.kmw-key-default, .phone.android .kmw-key-square .kmw-key.kmw-key-default, .phone.ios .kmw-key-square .kmw-key.kmw-key-default {
+        background-color: transparent;
+        color: #dde;
+    }
+
+    .kmw-key-layer {
+        /* transition: 1s; /*
+        /* background-image: linear-gradient(80deg, #ffc , #bbf); */
+        background-image: linear-gradient(85deg, #770 0%, #770 45%, black 50%, #119 55%, #119 100%);
+    }
+    .kmw-key-layer:has(#vowels-K_I) {
+    background-image: linear-gradient(85deg, #770 0%, #770  55%, black 60%, #119 65%, #119 100%);
+    }
+    .kmw-key-row:nth-child(5)  {
+    background-image: linear-gradient(90deg, #770 0%, #770 48%, black 51%, #119 54%, #119 100%);
+/* transition: 1s ease-out; */
+}
+.kmw-key-row:nth-child(5):has(#vowels-K_SPACE)  {
+    background-image: linear-gradient(90deg, #770 0%, #770 56%, black 61%, #119 66%, #119 100%);
+}
+
+}
