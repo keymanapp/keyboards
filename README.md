@@ -18,7 +18,6 @@ for example `sil` or `gff`.
 
 ## Contributing
 
-Standard keyboard follows a structure of user-friendly design, keyboard structures, and typing experience.
 
 ### Tool
 
@@ -27,14 +26,21 @@ Get the latest version of Keyman Developer to start the journey of keyboard deve
 ### Keyboard Design Principles
 
 A good way to start creating a keyboard is to plan out the requirements of the keyboard ahead and decide on the keyboard's language, target users, usability, structure, and many more steps that can be carried out further along the process. To ensure that the keyboard is up to standard, start by implementing the D.I.S.C.U.S. method. Read more! <https://help.keyman.com/developer/keyboards/standard/>
+Please make sure the keyboard and the package compile successfully before making a keyboard submission. If there are warning messages, try to address all of them; if there are errors, those must be corrected before submission. Help on this: <https://help.keyman.com/developer/current-version/reference/messages/>
+When a keyboard is ready to publish, please confirm that the folders and files are consistent to the repository. For more clarification: 
+- <https://help.keyman.com/developer/current-version/reference/file-layout>
+- <https://help.keyman.com/developer/current-version/reference/file-types/>
+- <https://help.keyman.com/developer/keyboards/github/step-0>
 
-When a keyboard is ready to publish, please confirm that the folders and files are consistent to the repository. For more clarification: <https://help.keyman.com/developer/keyboards/github/step-0>
 
 Learn how to update existing keyboards <https://community.software.sil.org/t/unfamiliar-with-git-best-way-to-update-my-keyboard/8652/2>
 
 ### Keyboard Help Documentation
 
-If the guides are not enough to provide you a completed keyboard, don't be afraid to explore the main keyboard help page! <https://help.keyman.com/developer/keyboards/>
+If the guides are not enough to provide you with a completed keyboard, don't be afraid to explore the main keyboard and keyman developer help pages! 
+- <https://help.keyman.com/developer/keyboards/>
+- <https://help.keyman.com/developer/current-version/reference/>
+
 
 ## Building Keyboards
 
@@ -120,4 +126,4 @@ new keyboard name.
 
 ## Community
 
-We appreciate the effort of reaching out about any issue or suggestion to help us improve the experience and keyboards. Share with us on our community site: <https://community.software.sil.org/new-message?groupname=keyman>
+We appreciate the effort of reaching out about any issue or suggestion that is beneficial for the community. Share with us on our community site: <https://community.software.sil.org/new-message?groupname=keyman>
