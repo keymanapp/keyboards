@@ -19,14 +19,11 @@
     .tg .tg-2nhx{background-color:lightgray;text-align:center;vertical-align:top}
   END;
 ?>
-
-    <h1><img src='way.ico' alt='Wayana Keyboard Icon'> Start Using Wayana</h1>
-
+    <h2>Wayana Keyboard Help Reference</h2>
     <p>
-      QWERTY-based keyboard for the Wayana language in Suriname and Brazil.
+      This QWERTY-based keyboard was designed for users of the Wayana language in Suriname and Brazil, with simple substitutions for the <code>f</code> and <code>y</code> keys.
     </p>
-
-    <h1>Keyboard Layout</h1>
+    
     <h2><b>Desktop Modifier Keys</b></h2>
     <p>
       The <code>f</code> and <code>y</code> keys on the QWERTY keyboard layout are automatically converted into <code>ï</code> and <code>ë</code> characters, respectively.
