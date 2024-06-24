@@ -3,7 +3,9 @@
   <header>
     <version>10.0</version>
     <kbdname>fv_ojibwa</kbdname>
-    <flags/>
+    <flags>
+      <usealtgr/>
+    </flags>
   </header>
   <encoding name="unicode" fontname="Arial" fontsize="-12">
     <layer shift="">
@@ -80,14 +82,21 @@
       <key vkey="K_Z">ᔥ ᔐ</key>
       <key vkey="K_C">ᒡ ᒉ</key>
     </layer>
-    <layer shift="A">
+    <layer shift="LA">
       <key vkey="K_LBRKT">[</key>
-      <key vkey="K_PERIOD">.</key>
       <key vkey="K_RBRKT">}</key>
       <key vkey="K_HYPHEN">-</key>
       <key vkey="K_EQUAL">=</key>
+    </layer>
+    <layer shift="RA">
+      <key vkey="K_HYPHEN">-</key>
+      <key vkey="K_EQUAL">=</key>
+      <key vkey="K_LBRKT">[</key>
+      <key vkey="K_RBRKT">]</key>
+      <key vkey="K_BKSLASH">\</key>
       <key vkey="K_COLON">‹</key>
       <key vkey="K_QUOTE">›</key>
+      <key vkey="K_PERIOD">.</key>
       <key vkey="K_Q">q</key>
       <key vkey="K_W">w</key>
       <key vkey="K_E">e</key>
@@ -115,9 +124,9 @@
       <key vkey="K_N">n</key>
       <key vkey="K_M">m</key>
     </layer>
-    <layer shift="SA">
-      <key vkey="K_QUOTE">»</key>
+    <layer shift="SRA">
       <key vkey="K_COLON">«</key>
+      <key vkey="K_QUOTE">»</key>
       <key vkey="K_Q">Q</key>
       <key vkey="K_W">W</key>
       <key vkey="K_E">E</key>
