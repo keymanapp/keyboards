@@ -1,4 +1,4 @@
-ᐊᓂᔑᓇᐯᒧᐎᣙ (Ojibwa i-finals, left w-dot) keyboard
+ᐊᓂᔑᓇᐯᒧᐎᣙ (Ojibwa, i-finals, left w-dot) keyboard
 ==============
 
 Description
