@@ -18,14 +18,15 @@ for example `sil` or `gff`.
 
 ## Contributing
 
-
 ### Tool
 
 Get the latest version of Keyman Developer to start the journey of keyboard development: <https://keyman.com/developer>
 
-### Keyboard Design Principles
+### Standard Keyboard Design
 
 A good way to start creating a keyboard is to plan out the requirements of the keyboard ahead and decide on the keyboard's language, target users, usability, structure, and many more steps that can be carried out further along the process. To ensure that the keyboard is up to standard, start by implementing the D.I.S.C.U.S. method. Read more! <https://help.keyman.com/developer/keyboards/standard/>
+
+### Keyboard submission guidelines
 
 Please make sure the keyboard and the package compile successfully before making a keyboard submission. If there are warning messages, try to address all of them; if there are errors, those must be corrected before submission. Help on this: <https://help.keyman.com/developer/current-version/reference/messages/>
 
@@ -34,6 +35,7 @@ When a keyboard is ready to publish, please confirm that the folders and files a
 - <https://help.keyman.com/developer/current-version/reference/file-types/>
 - <https://help.keyman.com/developer/keyboards/github/step-0>
 
+### Modify a keyboard
 
 Learn how to update existing keyboards <https://community.software.sil.org/t/unfamiliar-with-git-best-way-to-update-my-keyboard/8652/2>
 
