@@ -1,5 +1,10 @@
 Diidiitidq Change History
 ============================
+9.2 (24 Jun 2024)
+------------------
+* Normalised outputs where possible
+* Tidied rules
+* Straightened out mobile layout
 
 9.1.3 (6 Mar 2023)
 -------------------
