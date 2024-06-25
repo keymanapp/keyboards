@@ -57,10 +57,10 @@ This keyboard is designed for the <b>ᓂᔑᓇᐯᒧᐎᣙ</b> language of the E
 	</li>
 	<li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the <b>left bracket key [ </b> to keep the syllables separate
 		<ul>
-			<li><b>ᐊᒸᑲᓂᐎᣕ ᐊᐊ</b> (pointed) is typed <b>amwaakaniwit a[a</b></li>
-			<li><b>ᐊᒶᑲᓂᐎᣕ ᐊᐊ</b> (unpointed) is typed <b>amwakaniwit a[a</b></li>
-			<li><b>ᐋᓃᣛ ᐁᣛᓂᑳᣚᐞᐃᣙ</b> (pointed) is typed <b>aaniiZ eZnikaazy[in</b> or <b>aaniiS eSnigaasy[in</b></li>
-			<li><b>ᐊᓂᣛ ᐁᣛᓂᑲᣚᐞᐃᣙ</b> (unpointed) is typed <b>aniZ eZnikazy[in</b> or <b>aniS eSnigasy[in</b></li>
+			<li><b>ᐋ</b>is typed <b>aa</b></li>
+			<li><b>ᐊᐊ</b>is typed <b>a[a</b></li>
+			<li><b>ᐃᑴ</b> (pointed) is typed <b>ikwe</b> or <b>igwe</b></li>
+			<li><b>ᐃᣖᐌ</b> (pointed) is typed <b>ik[we</b> or <b>ig[we</b></li>
 		</ul>
 	</li>
 	<p></p>
