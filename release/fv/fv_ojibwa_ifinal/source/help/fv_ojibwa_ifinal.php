@@ -29,7 +29,7 @@ This keyboard is designed for the <b>ᓂᔑᓇᐯᒧᐎᣙ</b> language of the E
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="fv_ojibwa_ifinalU_.png" alt="ᓂᔑᓇᐯᒧᐎᣙ" width="514" height="198" /></h2>
+<img src="fv_ojibwa_ifinal_U_.png" alt="ᓂᔑᓇᐯᒧᐎᣙ" width="514" height="198" /></h2>
 
 <ul>
 	<li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and long form (vowels).</li>
