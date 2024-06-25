@@ -1,0 +1,165 @@
+﻿ store(&VERSION) '10.0'
+store(&NAME) 'Mende Kikakui (SIL)'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sil_mende_kikakui.ico'
+store(&VISUALKEYBOARD) 'sil_mende_kikakui.kvks'
+store(&LAYOUTFILE) 'sil_mende_kikakui.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+store(nul) "0BCDFGHJKLOPRSTUVWXYZ"
+
+store(digitsK) "123456789"
+store(digitsU) U+1E8C7 .. U+1E8CF
+
+store(NumK_RALT) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7]
+store(NumU_RALT) U+1E8D0 .. U+1E8D6 
+
+store(VowK) [K_I] [K_A] [K_U] [K_E] [K_Q] [K_O] [K_Z]
+store(VowU) U+1E822 .. U+1E828
+
+store(UVowK) [SHIFT K_I] [SHIFT K_A] [SHIFT K_Q]
+store(UVowU) U+1E82A     U+1E82C     U+1E82D
+
+store(k) U+1E800 .. U+1E806 c i a u ee e oo o
+store(w) U+1E808 .. U+1E80E c i a u ee e oo o
+store(b) U+1E81B .. U+1E821 c i a u ee e oo o
+store(s) U+1E82E .. U+1E834 c i a u ee e oo o
+store(l) U+1E836 .. U+1E83C c i a u ee e oo o
+store(t) U+1E844 .. U+1E84A c i a u ee e oo o
+store(j) U+1E84B .. U+1E851 c i a u ee e oo o
+store(y) U+1E853 .. U+1E859 c i a u ee e oo o
+store(f) U+1E85A .. U+1E860 c i a u ee e oo o
+store(h) U+1E868 .. U+1E86E c i a u ee e oo o
+store(p) U+1E88C .. U+1E892 c i a u ee e oo o
+store(v) U+1E8B9 .. U+1E8BF c i a u ee e oo o
+store(mb)  U+1E893 .. U+1E896 U+1E898 .. U+1E89A c i a u ee e oo o
+store(kp)  U+1E89F .. U+1E8A5 c i a u ee e oo o
+store(gb)  U+1E8A6 .. U+1E8AC c i a u ee e oo o
+store(nd)  U+1E8AE .. U+1E8B4 c i a u ee e oo o
+store(ngg) U+1E877 .. U+1E87D c i a u ee e oo o
+
+store(MNVowK) [K_I] [K_A] [K_U] [K_Q] [K_Z]
+store(M) U+1E814 .. U+1E818 c i a u e o / iauqz
+store(N) U+1E863 .. U+1E867 c i a u e o / iauqz
+
+store(hnyVowK) [SHIFT K_I] [SHIFT K_A] [SHIFT K_U] [SHIFT K_Q] [SHIFT K_Z]
+store(h_nasal) U+1E871 .. U+1E875 c i a u e o / iauqz
+store(ny)     U+1E8C0 .. U+1E8C4 c i a u ee oo
+
+store(dVowK) [K_I] [K_A] [K_U] [K_E] [K_O] [K_Z]
+store(d) U+1E83E .. U+1E843 c i a u ee oo o
+
+store(gVowK) [K_I] [K_A] [K_U] [K_E]
+store(g) U+1E883 .. U+1E886 c i a u e
+
+store(njVowK) [K_A] [K_U] [K_E] [K_O]
+store(nj) U+1E8B5 .. U+1E8B8 c a u ee oo
+
+
+group(main) using keys
+
++ any(nul) > nul
+
++ [K_X] > U+014B
+c + [SHIFT K_X] > U+014A
+
+c Digits
++ any(digitsK) > index(digitsU,1)
++ any(NumK_RALT) > index(NumU_RALT,1)
+
+c Vowels
++ any(VowK) > index(VowU,1)
++ any(UVowK) > index(UVowU,1)
+U+1E826 + [K_I] > U+1E829 c ei / qi
+U+1E82A + [SHIFT K_N] > U+1E82B c in / IN
+
+c Syllables
+U+006B + any(VowK) > index(k,2)
+U+0077 + any(VowK) > index(w,2)
+U+0062 + any(VowK) > index(b,2)
+U+0073 + any(VowK) > index(s,2)
+U+006C + any(VowK) > index(l,2)
+U+0074 + any(VowK) > index(t,2)
+U+006A + any(VowK) > index(j,2)
+U+0079 + any(VowK) > index(y,2)
+U+0066 + any(VowK) > index(f,2)
+U+0068 + any(VowK) > index(h,2)
+U+0070 + any(VowK) > index(p,2)
+U+0076 + any(VowK) > index(v,2)
+U+0064 + any(dVowK) > index(d,2)
+U+004D + any(MNVowK) > index(M,2)
+U+004E + any(MNVowK) > index(N,2)
+U+0067 + any(gVowK) > index(g,2)
+
+U+0068 + any(hnyVowK) > index(h_nasal,2)
+
+U+006D U+0062 + any(VowK) > index(mb,3)
+U+006B U+0070 + any(VowK) > index(kp,3)
+U+0067 U+0062 + any(VowK) > index(gb,3)
+U+006E U+0064 + any(VowK) > index(nd,3)
+U+014B + any(VowK) > index(ngg,2)
+
+c further rules
+
+U+0072 + [K_A] > U+1E8AD c ra  / ra
+
+U+0066 + [SHIFT K_A] > U+1E862 c fan / fA
+
+U+1E878 + [K_A] > U+1E87E c nggaa / xaa
+U+1E879 + [K_A] > U+1E87F c nggua / xua
+
+
+c long syllables
+
+U+1E83A + [K_HYPHEN] > U+1E83D c long le / lq-
+
+U+1E851 + [K_HYPHEN] > U+1E852 c long jo / jz-
+
+U+1E87B + [K_HYPHEN] > U+1E880 c long ngge / xq-
+U+1E87C + [K_HYPHEN] > U+1E881 c long nggoo / xo-
+U+1E87D + [K_HYPHEN] > U+1E882 c long nggo / xz-
+U+1E898 + [K_HYPHEN] > U+1E89C c long mbe / mbq-
+U+1E899 + [K_HYPHEN] > U+1E89D c long mboo / mbo-
+U+1E89A + [K_HYPHEN] > U+1E89E c long mbo / mbz-
+
+
+c dipthongs
+U+1E802 + [K_A] > U+1E807 c kua  / kua
+U+1E80A + [K_I] > U+1E80F c wui  / wui
+U+1E80C + [K_I] > U+1E810 c wei  / wqi
+U+1E816 + [K_A] > U+1E819 c muan / Mua
+U+1E816 + [K_Q] > U+1E81A c muen / Muq
+
+
+U+1E82E + [K_A] > U+1E835 c sia / sia
+U+1E85C + [K_A] > U+1E861 c fua / fua
+U+1E86A + [SHIFT K_A] > U+1E876 c huan / huA
+U+1E86B + [K_I] > U+1E86F c heei / hei
+U+1E86D + [K_U] > U+1E870 c hoou / hou
+
+U+1E885 + [K_Q] > U+1E887 c guei / guq
+U+1E885 + [SHIFT K_A] > U+1E888 c guan / guA
+
+U+1E896 + [SHIFT K_E] > U+1E897 c M188 mbee / mbeE
+U+1E895 + [SHIFT K_U] > U+1E89B c mbuu / mbuU
+
+
+c digraphs
+
+U+0077 U+0076 + [K_I] > U+1E811 c wvi / wvi
+U+0077 U+0076 + [K_A] > U+1E812 c wva / wva
+U+0077 U+0076 + [K_Q] > U+1E813 c wve / wvq
+U+006E U+0067 + [SHIFT K_E] > U+1E889 c ngen / ngE
+U+006E U+0067 + [SHIFT K_Z] > U+1E88A c ngon / ngZ
+U+006E U+0067 + [SHIFT K_U] > U+1E88B c nguan / ngU
+
+
+U+006E U+006A  + any(njVowK) > index(nj,3) c a u ee oo / nja nju nje njo
+U+006E U+0079  + any(hnyVowK) > index(ny,3) c i a u e o / nyI nyA nyU nyQ nyZ
+
++ [K_SLASH] > dk(end) c ends a syllable
+dk(end) + [K_SLASH] > "/"
