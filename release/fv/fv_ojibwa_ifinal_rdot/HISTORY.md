@@ -1,4 +1,4 @@
-fv_ojibwa_ifinal_rdot Change History
+ᐊᓂᔑᓇᐯᒧᐏᣙ (Ojibwa, i-finals, right w-dot) Change History
 ====================
 
 1.0 (24 JUN 2024)

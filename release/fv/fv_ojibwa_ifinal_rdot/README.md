@@ -1,9 +1,9 @@
-fv_ojibwa_ifinal_rdot keyboard
+ᐊᓂᔑᓇᐯᒧᐏᣙ (Ojibwa, i-finals, right w-dot) keyboard
 ==============
 
 Description
 -----------
-(Ojibwa, i-finals, right w-dot) keyboard layout for Unicode.
+ᐊᓂᔑᓇᐯᒧᐏᣙ (Ojibwa, i-finals, right w-dot) keyboard layout for Unicode.
 
 Links
 -----
