@@ -18,7 +18,7 @@ This keyboard is designed for the <b>Diidiitidq</b> language of the BC Coast reg
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="Diitiidatx.png" alt="Nuucanul" width="514" height="198" /></h2>
+<img src="Diitiidatx.png" alt="Diidiitidq" width="514" height="198" /></h2>
 
 Keyboard Layout </h2>
     
@@ -80,9 +80,11 @@ Keyboard Layout </h2>
     <td  align='center' colspan='2'>⌫</td>
   </tr>
 </table>
-<div class='vspace'></div><ul><li>keys with a red background are combining accents.
-</li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-</li></ul><div class='vspace'></div>
+<div class='vspace'></div><ul><li>keys with a red background are combining accents. On your phone, they will appear with green text.</li>
+<li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
+</ul>
+<div class='vspace'></div>
 </div>
 
 <br/>
