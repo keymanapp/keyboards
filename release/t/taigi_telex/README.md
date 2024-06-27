@@ -1,13 +1,14 @@
-Taigi telex keyboard
+Taigi Telex keyboard
 ==============
+
+Version 2.0
 
 Description
 -----------
-Taigi Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī. 
+Taigi Telex generated from template
 
 Links
 -----
-https://keyman.com/keyboards/taigi_telex
 
 Copyright
 ---------

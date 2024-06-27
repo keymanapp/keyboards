@@ -1,10 +1,6 @@
-Taigi telex Change History
+Taigi Telex Change History
 ====================
 
-1.0.1 (2024-05-18)
-----------------
-* Added rules to support typing uppercase vowels
-
-1.0 (2024-03-24)
+2.0 (2024-06-16)
 ----------------
 * Created by cathaylab
