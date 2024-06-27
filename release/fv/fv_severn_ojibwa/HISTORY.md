@@ -1,5 +1,9 @@
 ᐊᓂᔑᓂᓂᒧᐎᐣ Change History
 ============================
+10.0.1 (27 Jun 2024)
+-----------------
+* Corrected documentation
+
 10.0 (18 Apr 2024)
 -----------------
 * Added desktop layout
