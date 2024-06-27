@@ -10,6 +10,7 @@
     <MSIFileName>E:\Documents\Work\KeyMan Desktop MSI Installer\keymandesktop100.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,7 @@
     <Name URL="">SIL Kmhmu</Name>
     <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Lao-script Kmhmu language keyboard</Description>
   </Info>
   <Files>
     <File>
@@ -106,6 +108,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -120,4 +128,8 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="kmhmu" Relationship="deprecates" />
+    <RelatedPackage ID="kmhmu_2008" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

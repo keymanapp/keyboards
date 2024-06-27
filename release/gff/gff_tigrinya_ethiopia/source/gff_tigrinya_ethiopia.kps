@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Tigrinya-Ethiopia Keyboard</Folder>
@@ -59,6 +60,9 @@
     <Copyright URL="">© 2009-2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
+    <Description>An intuitive, easy to use, keyboard for entering Ethiopian Tigrinya with
+standard English keyboards according to the GFF convention for Ethiopic
+script languages.</Description>
   </Info>
   <Files>
     <File>
@@ -217,6 +221,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -225,10 +235,20 @@
       <Version>2.0.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="ti-ET">Tigrinya (Ethiopia)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ti-ET" Keys="t g r N a" Text="ትግርኛ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-tir-et-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_tir_et_7" Relationship="deprecates" />
+    <RelatedPackage ID="tir_et_uni_ez" Relationship="deprecates" />
+    <RelatedPackage ID="tir-et-uni" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

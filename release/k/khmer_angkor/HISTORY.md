@@ -1,6 +1,10 @@
 Khmer Angkor Change History
 =======================
 
+1.4 (5 Mar 2024)
+----------------
+* add spacing glyphs to touch layout spacebar
+
 1.3.1 (29 Apr 2024)
 ----------------------
 * fix identical subscript

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,8 @@
     <Author URL="mailto:degree-silken.04@icloud.com">Kym Barron &amp; Ben Hinton</Author>
     <Version URL=""></Version>
     <WebSite URL="https://sway.office.com/ZW2iPBbX0yHWcIsJ">https://sway.office.com/ZW2iPBbX0yHWcIsJ</WebSite>
+    <Description>A keyboard for phonemic (broad) transcription of Australian accented
+English using the Harrington/Cox/Evans (HCE) system.</Description>
   </Info>
   <Files>
     <File>
@@ -95,12 +98,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ausephon</Name>
       <ID>ausephon</ID>
       <Version>10.1</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="en-AU">English</Language>
       </Languages>

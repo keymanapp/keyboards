@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 12.10 (May 18 2024)
+* Add keyboards.csv file
+
 ## 12.9 (May 10 2024)
 * Add fv_nlakapamuxcheen
 * Add desktop keyboard for fv_nlha7kapmxtsin

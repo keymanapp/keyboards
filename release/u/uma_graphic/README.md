@@ -1,9 +1,7 @@
 Uma Graphic keyboard
 ==============
 
-©Houma Language Project
-
-Version 1.0
+© Houma Language Project
 
 Description
 -----------
@@ -12,6 +10,7 @@ Uma Graphic Keyboard created for typing in the Uma alphabet by the Houma Languag
 
 Links
 -----
+https://keyman.com/keyboards/uma_graphic
 
 Supported Platforms
 -------------------

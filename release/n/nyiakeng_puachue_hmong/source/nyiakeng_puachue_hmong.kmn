@@ -1,0 +1,49 @@
+﻿c nyiakeng_puachue_hmong generated from template at 2024-05-16 10:37:47
+c with name "Nyiakeng Puachue Hmong"
+store(&VERSION) '10.0'
+store(&NAME) 'Nyiakeng Puachue Hmong'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'nyiakeng_puachue_hmong.ico'
+store(&VISUALKEYBOARD) 'nyiakeng_puachue_hmong.kvks'
+store(&LAYOUTFILE) 'nyiakeng_puachue_hmong.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(HmnpConsK) [K_M] [K_J] [SHIFT K_T] [K_T] [K_H] [K_N] [K_X] [SHIFT K_K] [K_C] [K_L] [K_S] \
+                 [K_Z] [SHIFT K_C] [SHIFT K_N] [K_K] [K_D] [SHIFT K_Y] [SHIFT K_R] [K_V] [SHIFT K_F] \
+                 [SHIFT K_W] [K_F] [K_R] [K_Q] [K_Y] [SHIFT K_Q] [K_P] [SHIFT K_X] [K_B] [SHIFT K_Z] \
+                 [SHIFT K_U] [SHIFT K_H] [SHIFT K_L] [SHIFT K_P] [K_G] [SHIFT K_R] 
+store(HmnpConsU) U+1E100 .. U+1E123
+
+store(HmnpVowelsK) [K_A] [SHIFT K_A] [K_I] [K_U] [K_O] [SHIFT K_O] [K_E] [SHIFT K_E] [K_W]
+store(HmnpVowelsU) U+1E124 .. U+1E12C
+
+store(HmnpToneK) [SHIFT K_B] [SHIFT K_M] [SHIFT K_J] [SHIFT K_V] [SHIFT K_S] [SHIFT K_G] [SHIFT K_D]
+store(HmnpToneU) U+1E130 .. U+1E136
+
+store(HmnpDeterminativesK) [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] 
+store(HmnpDeterminativesU) U+1E137 .. U+1E13B
+
+store(HmnpDigitsK) [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9]
+store(HmnpDigitsU) U+1E140 .. U+1E149
+
+store(altDigK) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] 
+store(altDigU) U+0021 U+0040 U+0023 U+0024 U+0025 U+005E U+0026 U+2018 U+2019 U+201C U+201D
+group(main) using keys
+
++ any(HmnpConsK) > index(HmnpConsU,1)
++ any(HmnpVowelsK) > index(HmnpVowelsU,1)
++ any(HmnpDeterminativesK) > index(HmnpDeterminativesU,1)
++ any(HmnpToneK)  > index(HmnpToneU,1)
++ any(HmnpDigitsK) > index(HmnpDigitsU,1)
++ any(altDigK) > index(altDigU,1)
+
++ [K_BKQUOTE] > U+1E13C
++ [SHIFT K_BKQUOTE] > U+1E13D
++ [SHIFT K_6] > U+1E14E
++ [SHIFT K_7] > U+1E14F
++ [SHIFT K_I] > nul
+
+
