@@ -192,10 +192,20 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 <div class='vspace'></div></div>
 <div class='vspace'></div>
 
+<h2>Keyboard Layouts</h2>
+<div id='osk-container'>
+  <h3>Desktop Keyboard Layout</h3>
+  <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
+</div>
+
+<!-- TODO: Resolve longpress keys with 'Notes on touch layout' above
+<div id='osk-mobi-container'>
+  <h3>Mobile Keyboard Layout</h3>
+  <div id='osk-phone' data-states='default shift numeric'></div>
+</div>
+-->
+
 </div>
 
 <br/>
-
-<h2>Keyboard Layout</h2>
-<div id='osk'></div>
 
