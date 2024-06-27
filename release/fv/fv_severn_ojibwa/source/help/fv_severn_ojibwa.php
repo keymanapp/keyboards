@@ -29,10 +29,10 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐎᐣ</b> language of th
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="severn_ojibwaU_.png" alt="ᐊᓂᔑᓂᓂᒧᐎᐣ" width="514" height="198" /></h2>
+<img src="severn_ojibwa_U_.png" alt="ᐊᓂᔑᓂᓂᒧᐎᐣ" width="514" height="198" /></h2>
 <ul>
 	<li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and long form (vowels).</li>
-	<li>The syllabics used to write ᐊᓂᔑᓂᓂᒧᐎᐣ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=severn_ojibwa_rdot.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
+	<li>The syllabics used to write ᐊᓂᔑᓂᓂᒧᐎᐣ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=Severn_Ojibwa.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
 		<ul>
 			<li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will appear on screen. Following the consonant with a vowel will change the syllable final into its full form in the orientation corresponding with the vowel typed.</li>
 				<ul>
@@ -192,9 +192,19 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐎᐣ</b> language of th
 <div class='vspace'></div></div>
 <div class='vspace'></div>
 
+<h2>Keyboard Layouts</h2>
+<div id='osk-container'>
+  <h3>Desktop Keyboard Layout</h3>
+  <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
+</div>
+
+<!-- TODO: Resolve longpress keys with 'Notes on touch layout' above
+<div id='osk-mobi-container'>
+  <h3>Mobile Keyboard Layout</h3>
+  <div id='osk-phone' data-states='default shift numeric'></div>
+</div>
+-->
+
 </div>
 
 <br/>
-
-<h2>Keyboard Layout</h2>
-<div id='osk'></div>
