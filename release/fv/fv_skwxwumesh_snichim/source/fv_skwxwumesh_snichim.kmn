@@ -26,30 +26,45 @@ c + [SHIFT T_Q] > '?' layer('default')
 + [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > '7' layer('default')
++ [SHIFT T_T_1] > 'TL’' layer('default')
++ [SHIFT T_T_0] > 'T’' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_TS_0] > 'TS’' layer('default')
++ [SHIFT T_TS] > 'TS' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
 + [SHIFT T_U_0] > 'Ú' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O_0] > 'P’' layer('default')
 + [SHIFT T_O] > 'P' layer('default')
 c + [SHIFT T_A_0] > 'Á' layer('default')
 c + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S_0] > 'Á' layer('default')
 + [SHIFT T_S] > 'A' layer('default')
++ [SHIFT T_D_0] > 'SH' layer('default')
 + [SHIFT T_D] > 'S' layer('default')
-+ [SHIFT T_G] > '-' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J_0] > 'Ḵ’' layer('default')
 + [SHIFT T_J] > 'Ḵ' layer('default')
++ [SHIFT T_KK_0] > 'ḴW’' layer('default')
++ [SHIFT T_KK] > 'ḴW' layer('default')
++ [SHIFT T_K_0] > 'K’' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_KW_0] > 'KW’' layer('default')
++ [SHIFT T_KW] > 'KW' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON_0] > '"' layer('default')
-+ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_LH] > 'LH' layer('default')
+C + [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "’" layer('default')
 + [SHIFT T_Z] > 'X̱' layer('default')
++ [SHIFT T_XX] > 'X̱W' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
-+ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_XW] > 'XW' layer('default')
++ [SHIFT T_C_0] > 'CH’' layer('default')
++ [SHIFT T_C] > 'CH' layer('default')
 c + [SHIFT T_V] > ',' layer('default')
 + [SHIFT T_B] > '.' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
@@ -115,30 +130,45 @@ c + [T_Q] > '?'
 + [T_E_0] > 'é'
 + [T_E] > 'e'
 + [T_R] > '7'
++ [T_T_1] > 'tl’'
++ [T_T_0] > 't’'
 + [T_T] > 't'
++ [T_TS_0] > 'ts’'
++ [T_TS] > 'ts'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
 + [T_U_0] > 'ú'
 + [T_U] > 'u'
 + [T_I_0] > 'í'
 + [T_I] > 'i'
++ [T_O_0] > 'p’'
 + [T_O] > 'p'
 c + [T_A_0] > 'á'
 c + [T_A] > 'a'
 + [T_S_0] > 'á'
 + [T_S] > 'a'
++ [T_D_0] > 'sh'
 + [T_D] > 's'
-+ [T_G] > '-'
 + [T_H] > 'h'
++ [T_J_0] > 'ḵ’'
 + [T_J] > 'ḵ'
++ [T_KK_0] > 'ḵw’'
++ [T_KK] > 'ḵw'
++ [T_K_0] > 'k’'
 + [T_K] > 'k'
++ [T_KW_0] > 'kw’'
++ [T_KW] > 'kw'
 + [T_L_0] > 'l̓'
 + [T_L] > 'l'
-+ [T_COLON_0] > '"' c double quote
-+ [T_COLON] > "'"   c single quote
++ [T_LH] > 'lh'
+C + [T_COLON_0] > '"' c double quote
++ [T_COLON] > "’"   c single quote
 + [T_Z] > 'x̱'
++ [T_XX] > 'x̱w'
 + [T_X] > 'x'
-+ [T_C] > 'c'
++ [T_XW] > 'xw'
++ [T_C_0] > 'ch’'
++ [T_C] > 'ch'
 c + [T_V] > ','
 + [T_B] > '.'
 + [T_N_0] > 'n̓'
@@ -157,11 +187,11 @@ store(glottalKeys) [T_Q] [SHIFT T_Q] C TODO ADD DESKTOP
 any(plainResonants) + any(glottalKeys) > index(plainResonants,1) U+0313
 
 c Rules - vowels with acute accent
-store(plainvowels) "aeiouAEIOU"
-store(acutevowels) "áéíóúÁÉÍÓÚ"
-store(acuteKeys) [T_A] [SHIFT T_A] C TODO ADD DESKTOP
+store(plainVowels) "aeiouAEIOU"
+store(acuteVowels) "áéíóúÁÉÍÓÚ"
+store(acuteKeys) [T_ACUTE] [SHIFT T_ACUTE] C TODO ADD DESKTOP
 any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
-any(acutevowels) + [K_BKSP] > index(plainvowels,1) c backspace on acute vowel will leave a plain vowel behind
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
 
 c rules - k, x with macron below
 store(plain_kx) "kKxX"
