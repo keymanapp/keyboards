@@ -32,21 +32,21 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 <img src="fv_severn_ojibwa_rdot_U_.png" alt="ᐊᓂᔑᓂᓂᒧᐏᐣ" width="514" height="198" /></h2>
 <ul>
 	<li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and long form (vowels).</li>
-	<li>The syllabics used to write ᐊᓂᔑᓂᓂᒧᐏᐣ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=severn_ojibwa_rdot.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
+	<li>The syllabics used to write ᐊᓂᔑᓂᓂᒧᐏᐣ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=severn_ojibwa_rdot.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.</li>
 		<ul>
 			<li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will appear on screen. Following the consonant with a vowel will change the syllable final into its full form in the orientation corresponding with the vowel typed.</li>
 				<ul>
-					<li>Typing the k or g key outputs <b>ᒃ</b>. If the a key is typed after, it will change to ᑲ.</li>
+					<li>Typing the k or g key outputs <b>ᒃ</b>. If the a key is typed after, it will change to <b>ᑲ</b>.</li>
 				</ul>
 			<li>To type a long vowel / add the top dot, type the vowel twice.</li>
 				<ul>
 					<li><b>ᑳ</b> is typed <b>kaa</b> or <b>gaa</b></li>
 				</ul>
-			<li>To add the w-dot, type the w after the first consonant</li>
+			<li>To add the w-dot, type the w after the first consonant.</li>
 				<ul>
-					<li><b>ᐃᒃᐍ</b> is typed <be>ik[we</b> or <b>ig[we</b></li>
+					<li><b>ᐃᒃᐍ</b> is typed <b>ik[we</b> or <b>ig[we</b></li>
 				</ul>
-			<li>The syllabics sets for sh- / zh- (ᔐᔑᔓᔕᔥ), ch- (ᒉᒋᒍᒐᒡ), and th- (ᕞᕠᕤᕦᕪ) are typed by SHIFT + the first letter of each sound (s, z, and t)</li>
+			<li>The syllabics sets for sh- / zh- (ᔐᔑᔓᔕᔥ), ch- (ᒉᒋᒍᒐᒡ), and th- (ᕞᕠᕤᕦᕪ) are typed by SHIFT + the first letter of each sound (s, z, and t).</li>
 				<ul>
 					<li><b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> is typed <b>aniSininimowin</b></li>
 					<li><b>ᒌᒫᓐ</b> (pointed) is typed <b>Ciimaan</b> or <b>jiimaan</b></li>
@@ -54,10 +54,10 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 				</ul>
 		</ul>
 	</li>
-	<li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the <b>left bracket key [ </b> to keep the syllables separate
+	<li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the <b>left bracket key [ </b> to keep the syllables separate.</li>
 		<ul>
-			<li><b>ᐋ</b>is typed <b>aa</b></li>
-			<li><b>ᐊᐊ</b>is typed <b>a[a</b></li>
+			<li><b>ᐋ</b> is typed <b>aa</b></li>
+			<li><b>ᐊᐊ</b> is typed <b>a[a</b></li>
 			<li><b>ᐃᑵ</b> (pointed) is typed <b>ikwe</b> or <b>igwe</b></li>
 			<li><b>ᐃᐠᐍ</b> (pointed) is typed <b>ik[we</b> or <b>ig[we</b></li>
 		</ul>
@@ -65,22 +65,23 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 	<p></p>
 
 <h2>Punctuation</h2>
+	<ul>
 		<li>A standalone above dot indicating vowel length can be typed with the Backquote key `</li>
 		<li>A standalone w-dot can be typed with the q key.</li>
 			<ul>
-				<li><b>NOTE:</b> the dot indicating a long vowel and the w-dot do not need to be typed for the majority of syllables on the keyboard. They are provided as an option for syllables that do not have a single character that contains the syllable and one or both dots, ie; ᕙᐧ</li>
+				<li><b>NOTE:</b> the dot indicating a long vowel and the w-dot do not need to be typed for the majority of syllables on the keyboard. They are provided as an option for syllables that do not have a single character that contains the syllable and one or both dots, ie; ᕙᐧ.</li>
 			</ul>
 		<li><b>᙮</b> is typed with the period key .</li>
 		<li>single guillement: ‹ Right-Alt+Semicolon key ; — › Right-Alt+Quote '</li>
 		<li>double guillemets: « Shift+Right-Alt+Semicolon key ; — » Shift+Right-Alt+Quote '</li>
-		<li>Any modified punctuation can be typed using <b>Right-Alt</b>(Windows) or <b>Option</b>(Mac) + the original key</li>
+		<li>Any modified punctuation can be typed using <b>Right-Alt</b>(Windows) or <b>Option</b>(Mac) + the original key.</li>
 			<ul>
 				<li><b>.</b> is typed Right-Alt / Option + Period key . </li>
 				<li><b>-</b> is typed Right-Alt / Option + Hyphen key -</li>
-				<li><b>{</b> is typed Shift+Right-Alt / Option + Left-Bracket [ key</li>
+				<li><b>+</b> is typed Shift+Right-Alt / Option + Equal key =</li>
 			</ul>
-		<li>All English letters can be typed by pressing <b>Right-Alt / Option </b> followed by the letter(s) you wish to type</li>
-		<li>All uppercase English letters can be typed by pressing <b>Right-Alt / Option</b> followed by the letter(s) you wish to type</li>
+		<li>All English letters can be typed by pressing <b>Right-Alt / Option </b> followed by the letter(s) you wish to type.</li>
+		<li>All uppercase English letters can be typed by pressing <b>Shift+Right-Alt / Option</b> followed by the letter(s) you wish to type.</li>
 
 <h2>Unicode Fonts</h2>
 						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
@@ -128,9 +129,9 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 </tr>
 <tr >
 	<td  align='center'>123</td>
-	<td  align='center'>🌐/td>
+	<td  align='center'>🌐</td>
 	<td  align='center'>ᐧ</td>
-	<td  align='center' colspan='6'>space</td>
+	<td  align='center' colspan='5'>space</td>
 	<th  align='center'>˙</th>
 	<td  align='center'>⌫</td>
 </tr>
@@ -176,7 +177,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 </tr>
 <tr >
 	<td  align='center'>123</td>
-	<td  align='center'>🌐/td>
+	<td  align='center'>🌐</td>
 	<td  align='center'>ᐧ</td>
 	<td  align='center' colspan='4'>space</td>
 	<td  align='center'>᙮ . , ! ? ; : ' " ` ~</td>
