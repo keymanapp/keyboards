@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Ormuri</Folder>
@@ -30,6 +31,12 @@
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <Version URL=""></Version>
     <WebSite URL="https://keyman.com/keyboards/rac_ormuri">https://keyman.com/keyboards/rac_ormuri</WebSite>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Pakistan for keyboarding the Ormuri
+language in the Arabic Script. You can use this keyboard with any
+extended Arabic script Unicode font. If you have problems using the
+RAChitrali-Ormuri Keyman keyboard, please contact: Rehmat Aziz Chitrali
+E-mail: rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -122,6 +129,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -133,7 +146,10 @@
       <Languages>
         <Language ID="oru-Arab">Ormuri (Arabic)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="oru-Arab" Keys="a r m R i space" Text="ارمڑی" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

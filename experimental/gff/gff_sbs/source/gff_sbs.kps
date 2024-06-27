@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.143.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\..\release\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>sideimage-sheikh-bakrai-sapalo.png</GraphicFile>
-    <MSIFileName>C:\Users\Daniel Yacob\Downloads\KM-Installer-16.0.143\keymandesktop.msi</MSIFileName>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
@@ -47,8 +49,10 @@
     </Items>
   </StartMenu>
   <Info>
+    <Description URL="">This is an Oromo language input method designed for the Sheek Bakrii Saphaloo script that follows Qubee style typing rules.  
+It requires the included “Athinkra: Sheek Bakrii Saphaloo” font which in turn encodes the script in the Unicode Private Use Area.</Description>
     <Version URL=""></Version>
-    <Name URL="">GFF Sheek Bakrii Saphaloo Qubee Keyboard</Name>
+    <Name URL="">GFF Sheek Bakrii Saphaloo Keyboard</Name>
     <Copyright URL="">© 2023-2024 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
@@ -97,17 +101,25 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>Athinkra-Sheek-Bakrii-Saphaloo.ttf</Name>
-      <Description>Font Athinkra Sheek Bakrii Saphaloo</Description>
+      <Name>Sheek-Bakrii-Saphaloo.ttf</Name>
+      <Description>Font Sheek Bakrii Saphaloo</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Sheek Bakrii Saphaloo Qubee</Name>
+      <Name>Sheek Bakrii Saphaloo</Name>
       <ID>gff_sbs</ID>
-      <Version>1.0.6</Version>
+      <Version>1.0.7</Version>
+      <OSKFont>Sheek-Bakrii-Saphaloo.ttf</OSKFont>
+      <DisplayFont>Sheek-Bakrii-Saphaloo.ttf</DisplayFont>
       <Languages>
         <Language ID="om">Oromo</Language>
       </Languages>

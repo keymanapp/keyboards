@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.325.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>doc\readme.htm</ReadMeFile>
-    <GraphicFile>icons_pictures\naijatype_400.jpg</GraphicFile>
-    <MSIFileName>\\vmware-host\Shared Folders\Downloads 2\keymandesktop.msi</MSIFileName>
+    <GraphicFile>icons_pictures\naijatype24_140x250.jpg</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName>keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
@@ -19,9 +21,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Naija Type</Name>
-    <Copyright URL="">© David Rowbory 2022</Copyright>
+    <Copyright URL="">© 2024 David Rowbory</Copyright>
     <Author URL="mailto:keyboards@m.rowbory.co.uk">David Rowbory</Author>
     <WebSite URL="http://www.rowbory.co.uk">http://www.rowbory.co.uk</WebSite>
+    <Description URL="">This keyboard helps you to type any letters used in Nigerian orthographies. Package for keyboard. Lexical models need to be packaged separately.</Description>
   </Info>
   <Files>
     <File>
@@ -35,12 +38,6 @@
       <Description>File naijatype.ico</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>AndikaAfr-R.ttf</Name>
-      <Description>Font Andika Afr</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>icons_pictures\naijatype_400.jpg</Name>
@@ -61,67 +58,103 @@
       <FileType>.js</FileType>
     </File>
     <File>
+      <Name>welcome\comma_punc.png</Name>
+      <Description>File comma_punc.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\popup_a.png</Name>
+      <Description>File popup_a.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\popup_currency.png</Name>
+      <Description>File popup_currency.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\popup_e.png</Name>
+      <Description>File popup_e.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\popup_punc.png</Name>
+      <Description>File popup_punc.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
       <Name>..\build\naijatype.kmx</Name>
       <Description>Keyboard Naija Type</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>welcome\welcome_htm_1b25dce56d8d67ee.jpg</Name>
-      <Description>File welcome_htm_1b25dce56d8d67ee.jpg</Description>
+      <Name>Andika-Regular.ttf</Name>
+      <Description>Font Andika</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>icons_pictures\naijatype24_140x250.jpg</Name>
+      <Description>File naijatype24_140x250.jpg</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>welcome\welcome_htm_6c78ae9d5deefd70.png</Name>
-      <Description>File welcome_htm_6c78ae9d5deefd70.png</Description>
+      <Name>welcome\default.jpg</Name>
+      <Description>File default.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>welcome\touch_ios_install.jpg</Name>
+      <Description>File touch_ios_install.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>welcome\shift_layer.png</Name>
+      <Description>File shift_layer.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\welcome_htm_40a42a7c7957dc8a.png</Name>
-      <Description>File welcome_htm_40a42a7c7957dc8a.png</Description>
+      <Name>welcome\default.png</Name>
+      <Description>File default.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\welcome_htm_41e1c192be6891d3.png</Name>
-      <Description>File welcome_htm_41e1c192be6891d3.png</Description>
+      <Name>welcome\numbers_key.png</Name>
+      <Description>File numbers_key.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\welcome_htm_173b460b456a07d2.png</Name>
-      <Description>File welcome_htm_173b460b456a07d2.png</Description>
+      <Name>welcome\shift_key.png</Name>
+      <Description>File shift_key.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\welcome_htm_410b4107e0ddd3f4.png</Name>
-      <Description>File welcome_htm_410b4107e0ddd3f4.png</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\welcome_htm_d3cc5f241a627df4.png</Name>
-      <Description>File welcome_htm_d3cc5f241a627df4.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>welcome\welcome_htm_e972d2eb335edd69.png</Name>
-      <Description>File welcome_htm_e972d2eb335edd69.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Naija Type</Name>
       <ID>naijatype</ID>
-      <Version>38</Version>
-      <OSKFont>AndikaAfr-R.ttf</OSKFont>
-      <DisplayFont>AndikaAfr-R.ttf</DisplayFont>
+      <Version>58</Version>
+      <OSKFont>Andika-Regular.ttf</OSKFont>
+      <DisplayFont>Andika-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ha">Hausa</Language>
         <Language ID="en">English</Language>
@@ -146,9 +179,54 @@
         <Language ID="yo">Yoruba</Language>
         <Language ID="ig">Igbo</Language>
         <Language ID="cdr">Kamuku</Language>
-        <Language ID="dud">Dukawa</Language>
         <Language ID="uss">es-Saare</Language>
+        <Language ID="en-GB">English (United Kingdom)</Language>
+        <Language ID="en-NG">English (Nigeria)</Language>
+        <Language ID="grh">Tugbiri</Language>
+        <Language ID="igl">Igala</Language>
+        <Language ID="kks">Giiwo</Language>
+        <Language ID="krh">Kurama</Language>
+        <Language ID="yba">Yala</Language>
+        <Language ID="bec">Iceve-Maci</Language>
+        <Language ID="tiv">Tiv</Language>
+        <Language ID="bky">Bokyi</Language>
+        <Language ID="dbd">Dadiya</Language>
+        <Language ID="hig">Kamwe</Language>
+        <Language ID="sur">Mwaghavul</Language>
+        <Language ID="jen">Dza</Language>
+        <Language ID="hbb">Huba</Language>
+        <Language ID="agc">Agatu</Language>
+        <Language ID="bwr">Bura-Pabir</Language>
+        <Language ID="hia">Lamang</Language>
+        <Language ID="idu">Idoma</Language>
+        <Language ID="kby">Manga Kanuri</Language>
+        <Language ID="kez">Kukele</Language>
+        <Language ID="mbu">Mbula-Bwazza</Language>
+        <Language ID="tan">Tangale</Language>
+        <Language ID="ank">Goemai</Language>
+        <Language ID="bys">Burak</Language>
+        <Language ID="kad">Adara</Language>
+        <Language ID="kaj">Jju</Language>
+        <Language ID="kcg">Tyap</Language>
+        <Language ID="kdl">Tsikimba</Language>
+        <Language ID="lnu">Longuda</Language>
+        <Language ID="anc">Ngas</Language>
+        <Language ID="atg">Ivbie North-Okpela-Arhe</Language>
+        <Language ID="bzw">Basa (Nigeria)</Language>
+        <Language ID="enn">Engenni</Language>
+        <Language ID="gkn">Gokana</Language>
+        <Language ID="igb">Ebira</Language>
+        <Language ID="ige">Igede</Language>
+        <Language ID="ikw">Ikwere</Language>
+        <Language ID="jbu">Jukun Takum</Language>
+        <Language ID="yaz">Lokaa</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="Andika-Regular.ttf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="Andika-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

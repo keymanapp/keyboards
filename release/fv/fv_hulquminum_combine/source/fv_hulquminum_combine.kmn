@@ -1,9 +1,9 @@
 ﻿store(&VERSION) "10.0"
 store(&TARGETS) "mobile tablet"
 c store(&ETHNOLOGUECODE) "hur"
-store(&COPYRIGHT) '(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Hul̓q̓umin̓um̓'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 
 begin Unicode > use(main)
 
@@ -23,20 +23,20 @@ c   shift layer
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-+ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_R] > 'T' layer('default')
 + [SHIFT T_R_0] > 'T̓' layer('default')
 + [SHIFT T_T] > 'Y' layer('default')
 + [SHIFT T_T_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'U' layer('default')
 + [SHIFT T_U] > 'I' layer('default')
-+ [SHIFT T_U_0] > 'Í' layer('default')
++ [SHIFT T_U_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'OO' layer('default')
-+ [SHIFT T_I_0] > 'ÓO' layer('default')
++ [SHIFT T_I_0] > 'ÓO' layer('default')
 + [SHIFT T_O] > 'P' layer('default')
 + [SHIFT T_O_0] > 'P̓' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
-+ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > ':' layer('default')
 + [SHIFT T_F] > 'H' layer('default')
@@ -67,20 +67,20 @@ c default layer
 + [T_W] > 'w'
 + [T_W_0] > 'w̓'
 + [T_E] > 'e'
-+ [T_E_0] > 'é'
++ [T_E_0] > 'é'
 + [T_R] > 't'
 + [T_R_0] > 't̓'
 + [T_T] > 'y'
 + [T_T_0] > 'y̓'
 + [T_Y] > 'u'
 + [T_U] > 'i'
-+ [T_U_0] > 'í'
++ [T_U_0] > 'í'
 + [T_I] > 'oo'
-+ [T_I_0] > 'óo'
++ [T_I_0] > 'óo'
 + [T_O] > 'p'
 + [T_O_0] > 'p̓'
 + [T_A] > 'a'
-+ [T_A_0] > 'á'
++ [T_A_0] > 'á'
 + [T_S] > 's'
 + [T_D] > ':'
 + [T_F] > 'h'
@@ -103,57 +103,21 @@ c default layer
 + [U_003F] > '?' layer('default')
 + [U_0021] > '!' layer('default')
 
-c deadkey glottalized consonants
-
-'p' + [T_combine] > 'p̓'
-'t' + [T_combine] > 't̓'
-'k' + [T_combine] > 'k̓'
-'q' + [T_combine] > 'q̓'
-'c' + [T_combine] > 'c̓'
-
-'P' + [T_combine] > 'P̓'
-'T' + [T_combine] > 'T̓'
-'K' + [T_combine] > 'K̓'
-'Q' + [T_combine] > 'Q̓'
-'C' + [T_combine] > 'C̓'
-
-'l' + [T_combine] > 'l̓'
-'m' + [T_combine] > 'm̓'
-'n' + [T_combine] > 'n̓'
-'w' + [T_combine] > 'w̓'
-'y' + [T_combine] > 'y̓'
-
-'L' + [T_combine] > 'L̓'
-'M' + [T_combine] > 'M̓'
-'N' + [T_combine] > 'N̓'
-'W' + [T_combine] > 'W̓'
-'Y' + [T_combine] > 'Y̓'
-
-'P' + [SHIFT T_combine] > 'P̓'
-'T' + [SHIFT T_combine] > 'T̓'
-'K' + [SHIFT T_combine] > 'K̓'
-'Q' + [SHIFT T_combine] > 'Q̓'
-'C' + [SHIFT T_combine] > 'C̓'
-'L' + [SHIFT T_combine] > 'L̓'
-'M' + [SHIFT T_combine] > 'M̓'
-'N' + [SHIFT T_combine] > 'N̓'
-'W' + [SHIFT T_combine] > 'W̓'
-'Y' + [SHIFT T_combine] > 'Y̓'
-
-c deadkey acute accent on vowels
-'a' + [T_ACUTE] > 'á'
-'e' + [T_ACUTE] > 'é'
-'i' + [T_ACUTE] > 'í'
-'oo' + [T_ACUTE] > 'óo'
-
-'A' + [T_ACUTE] > 'Á'
-'E' + [T_ACUTE] > 'É'
-'I' + [T_ACUTE] > 'Í'
-'OO' + [T_ACUTE] > 'ÓO'
-
-'A' + [SHIFT T_ACUTE] > 'Á'
-'E' + [SHIFT T_ACUTE] > 'É'
-'I' + [SHIFT T_ACUTE] > 'Í'
-'OO' + [SHIFT T_ACUTE] > 'ÓO'
 
 c --- END OF TOUCH LAYOUT RULES ---
+
+C Rules and constraints
+
+C Vowels with acute acccent
+store(plainVowels) "aeiouAEIOU"
+store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
+store(acuteKeys) [T_acute] [SHIFT T_acute]
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+
+c Glottal apostrophe deadkey combining rules
+store(noGlottal) 'ptkqclmnwyPTKQCLMNWY'
+store(glottalKeys) [T_combine] [SHIFT T_combine]
+any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
+
+

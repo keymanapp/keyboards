@@ -38,15 +38,50 @@ This keyboard is designed for the <b>Halq'eméylem</b> language of the BC Coast 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
 <div class='vspace'></div>
-<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>q</td><td  align='center'>w</td><td  align='center'>e é è</td><td  align='center'>:</td><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u ú ù</td><td  align='center'>i í ì</td><td  align='center'>o ó ò</td><td  align='center'>p</td></tr>
-<tr ><td  align='center'>a á à</td><td  align='center'>s</td><th  align='center'>´</th><th  align='center'>`</th><td  align='center'>-</td><td  align='center'>h</td><td  align='center'>ō ṓ ṑ</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>'</td></tr>
-<tr ><td >&nbsp;</td><td  align='center'>x̱</td><td  align='center'>x</td><td  align='center'>c</td><td  align='center'>? !</td><td  align='center'>. ,</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
+<table border='1' style='border-collapse:collapse' cellpadding='5' >
+	<tr >
+		<td  align='center'>q</td>
+		<td  align='center'>w</td>
+		<td  align='center'>e é è</td>
+		<td  align='center'>:</td>
+		<td  align='center'>t</td>
+		<td  align='center'>y</td>
+		<td  align='center'>u ú ù</td>
+		<td  align='center'>i í ì</td>
+		<td  align='center'>o ó ò</td>
+		<td  align='center'>p</td>
+	</tr>
+	<tr >
+		<td  align='center'>a á à</td>
+		<td  align='center'>s</td>
+		<th  align='center'>´</th>
+		<th  align='center'>`</th>
+		<td  align='center'>-</td>
+		<td  align='center'>h</td>
+		<td  align='center'>ō ṓ ṑ</td>
+		<td  align='center'>k</td>
+		<td  align='center'>l</td>
+		<td  align='center'>'</td>
+	</tr>
+	<tr >
+		<td >&nbsp;</td>
+		<td  align='center'>x̱</td>
+		<td  align='center'>x</td>
+		<td  align='center'>c</td>
+		<td  align='center'>? !</td>
+		<td  align='center'>. ,</td>
+		<td  align='center'>n</td>
+		<td  align='center'>m</td>
+		<td  colspan='2'>&nbsp;</td>
+	</tr>
 </table>
 <div class='vspace'></div><ul><li>keys with a red background are combining accents.
 </li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
 </li></ul><div class='vspace'></div><h3>Alternate Name</h3>
-<ul><li>Stó:lō
-</li></ul>
+<ul>
+	<li>Stó:lō</li>
+	<li>Upriver Halkomelem</li>
+</ul>
 </div>
 
 <br/>

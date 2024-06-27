@@ -1,6 +1,19 @@
 ᓀᐦᐃᔭᐍᐏᐣ Change History
 ============================
 
+11.0.2 (2024-06-11)
+------------------
+* Remove source files from package
+
+11.0.1 (17 May 2024)
+--------------------
+* Updated documentation to include Syllable Markers
+
+11.0 (8 Nov 2023)
+--------------------
+* Created desktop keyboard
+* Created and updated documentation
+
 10.0.2 (16 Jul 2020)
 --------------------
 * Use AboriginalSerifREGULAR.ttf font for touch layout

@@ -11,6 +11,7 @@
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Gurage Keyboard</Folder>
@@ -59,6 +60,10 @@
     <Copyright URL="">© 2019-2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
+    <Description>This is a Gurage (ጉራጊና , ISO-639-2 swg) language mnemonic input method.
+It requires a font supporting the Ethiopic Extended-B block defined in
+the Unicode 14 standard. A collection of five fonts with names beginning
+with \"Gurage\" are included with this package.</Description>
   </Info>
   <Files>
     <File>
@@ -157,6 +162,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -165,10 +176,15 @@
       <Version>1.0</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="sgw">Sebat Bet Gurage</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff_gurage_legacy" />
+    <RelatedPackage ID="gff_sgw_7" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

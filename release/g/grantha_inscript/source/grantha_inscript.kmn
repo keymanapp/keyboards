@@ -1,0 +1,169 @@
+﻿
+store(&Version) "10.0"
+store(&Name) "Grantha - INSCRIPT"
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'grantha_inscript.kvks'
+store(&BITMAP) 'grantha_inscript.ico'
+store(&LAYOUTFILE) 'grantha_inscript.keyman-touch-layout'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+
+begin Unicode > use(main)
+
+store(LdigitsK) [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] 
+store(LdigitsU) U+0030 .. U+0039
+
+store(TdigitsK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] 
+store(TdigitsU) U+0BE6 .. U+0BEF
+store(GdigitsK) [SHIFT RALT K_0] [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] [SHIFT RALT K_5] [SHIFT RALT K_6]
+store(GdigitsU) U+11366 .. U+1136C
+
+group(main) using keys
+
++ any(LdigitsK) > index(LdigitsU,1) c Latin digits on default
++ any(TdigitsK) > index(TdigitsU,1) c Tamil digits on RALT
++ any(GdigitsK) > index(GdigitsU,1) c Grantha cantillation digits on SHIFT RALT
+
+
+
++ [SHIFT K_0] > U+0029
++ [SHIFT K_1] > U+0021
++ [SHIFT K_2] > U+200d c ZWJ
++ [SHIFT K_3] > U+200c c ZWNJ
++ [SHIFT K_4] > U+20b9
++ [SHIFT K_5] > U+1131c U+1134d U+1131e
++ [SHIFT K_6] > U+11324 U+1134d U+11330
++ [SHIFT K_7] > U+11315 U+1134d U+11337
++ [SHIFT K_8] > U+11336 U+1134d U+11330
++ [SHIFT K_9] > U+0028
+
++ [K_A] > U+1134b
++ [SHIFT K_A] > U+11313
+
++ [K_B] > U+11335
++ [SHIFT K_B] > U+0bb4
++ [RALT K_B] > U+11373
+
++ [K_C] > U+1132e
++ [SHIFT K_C] > U+11323
++ [RALT K_C] > U+0954
+
++ [K_D] > U+1134d
++ [SHIFT K_D] > U+11305
++ [RALT K_D] > U+11370
+
++ [K_E] > U+1133e
++ [SHIFT K_E] > U+11306
++ [SHIFT RALT K_E] > U+0951
+
++ [K_F] > U+1133f
++ [SHIFT K_F] > U+11307
++ [RALT K_F] > U+11362
++ [SHIFT RALT K_F] > U+1130c
+
++ [K_G] > U+11341
++ [SHIFT K_G] > U+11309
+
++ [K_H] > U+1132a
++ [SHIFT K_H] > U+1132b
++ [RALT K_H] > U+11374
+
++ [K_I] > U+11317
++ [SHIFT K_I] > U+11318
+
++ [K_J] > U+11330
++ [SHIFT K_J] > U+0bb1
+
++ [K_K] > U+11315
++ [SHIFT K_K] > U+11316
++ [RALT K_K] > U+11371
+
++ [K_L] > U+11324
++ [SHIFT K_L] > U+11325
+
++ [K_M] > U+11338
++ [SHIFT K_M] > U+11336
+
++ [K_N] > U+11332
++ [SHIFT K_N] > U+11333
+
++ [K_O] > U+11326
++ [SHIFT K_O] > U+11327
+
++ [K_P] > U+1131c
++ [SHIFT K_P] > U+1131d
+
++ [K_Q] > U+1134c
++ [SHIFT K_Q] > U+11314
+
++ [K_R] > U+11340
++ [SHIFT K_R] > U+11308
++ [RALT K_R] > U+11363
++ [SHIFT RALT K_R] > U+11361
+
++ [K_S] > U+11347
++ [SHIFT K_S] > U+1130f
+
++ [K_T] > U+11342
++ [SHIFT K_T] > U+1130a
+
++ [K_U] > U+11339
++ [SHIFT K_U] > U+11319
+
++ [K_V] > U+11328
++ [SHIFT K_V] > U+0ba9
++ [RALT K_V] > U+11372
+
++ [K_W] > U+11348
++ [SHIFT K_W] > U+11310
+
++ [K_X] > U+11302
++ [SHIFT K_X] > U+11301
++ [RALT K_X] > U+11300
++ [SHIFT RALT K_X] > U+11350
+
++ [K_Y] > U+1132c
++ [SHIFT K_Y] > U+1132d
+
++ [K_Z] > nul
++ [SHIFT K_Z] > nul
+
++ [RALT K_Z] > U+1135e
++ [SHIFT RALT K_Z] > U+1135f
+
++ [K_COLON] > U+1131a
++ [SHIFT K_COLON] > U+1131b
++ [RALT K_COLON] > U+0952
+
++ [K_EQUAL] > U+11343
++ [SHIFT K_EQUAL] > U+1130b
++ [RALT K_EQUAL] > U+11344
++ [SHIFT RALT K_EQUAL] > U+11360
+
++ [K_COMMA] > U+002c
++ [SHIFT K_COMMA] > U+11337
+
++ [K_HYPHEN] > U+002d
++ [SHIFT K_HYPHEN] > U+11303
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > U+0964
++ [RALT K_PERIOD] > U+0965
++ [SHIFT RALT K_PERIOD] > U+1133d
+
++ [K_SLASH] > U+1132f
++ [SHIFT K_SLASH] > U+003f
+
++ [K_LBRKT] > U+11321
++ [SHIFT K_LBRKT] > U+11322
+
+
++ [K_RBRKT] > U+1133c
++ [SHIFT K_RBRKT] > U+1131e
+
++ [K_QUOTE] > U+1131f
++ [SHIFT K_QUOTE] > U+11320
++ [SHIFT RALT K_QUOTE] > U+1135d
+
+
+
