@@ -129,7 +129,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 </tr>
 <tr >
 	<td  align='center'>123</td>
-	<td  align='center'>🌐/td>
+	<td  align='center'>🌐</td>
 	<td  align='center'>ᐧ</td>
 	<td  align='center' colspan='5'>space</td>
 	<th  align='center'>˙</th>
@@ -177,7 +177,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓂᓂᒧᐏᐣ</b> language of th
 </tr>
 <tr >
 	<td  align='center'>123</td>
-	<td  align='center'>🌐/td>
+	<td  align='center'>🌐</td>
 	<td  align='center'>ᐧ</td>
 	<td  align='center' colspan='4'>space</td>
 	<td  align='center'>᙮ . , ! ? ; : ' " ` ~</td>
