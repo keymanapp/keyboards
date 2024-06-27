@@ -21,7 +21,7 @@ This keyboard is designed for the <b>Shashishalhem</b> language of the BC Coast 
 <img src="Shashishalhem.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 						<li>All accents are typed after the base character: á is typed a then Backquote ` (next to the 1 key)</li>
-						<li>To type the acute accent use the Backquote ` — é is typed e then Backquote `</li>
+						<ul><li>To type the acute accent use the Backquote ` — é is typed e then Backquote `</li></ul>
 						<li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. The Backquote ` is typed Right-Alt+Backquote (Windows) Option+Backquote (Mac).</li>
 						
 						<h2>Unicode Fonts</h2>
@@ -32,9 +32,10 @@ This keyboard is designed for the <b>Shashishalhem</b> language of the BC Coast 
 <div id='wikitext'>
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
-	<tr ><td  align='center'>? !</td><td  align='center'>w</td><td  align='center'>e é</td><td  align='center'>-</td><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u ú</td><td  align='center'>i í</td><td >&nbsp;</td><td  align='center'>p</td></tr>
-	<tr ><td  align='center'>a á</td><td  align='center'>s</td><td  align='center'>ʔ</td><td >´</td><td >&nbsp;</td><td  align='center'>h</td><td  align='center'>ḵ</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>ʼ ' "</td></tr>
-	<tr ><td >&nbsp;</td><td  align='center'>x̱</td><td  align='center'>x</td><td  align='center'>c</td><td  align='center'>,</td><td  align='center'>.</td><td  align='center'>n</td><td  align='center'>m</td><td  colspan='2'>&nbsp;</td></tr>
+	<tr align='center'><td>? !</td><td>w</td><td>e é</td><td>-</td><td>t</td><td>y</td><td>u ú</td><td>i í</td><td >&nbsp;</td><td>p</td></tr>
+	<tr align='center'><td>a á</td><td>s</td><td>ʔ</td><td >´</td><td >&nbsp;</td><td>h</td><td>ḵ</td><td>k</td><td>l</td><td>ʼ ' "</td></tr>
+	<tr align='center'><td >⇧</td><td>x̱</td><td>x</td><td>c</td><td>,</td><td>.</td><td>n</td><td>m</td><td  colspan='2'>⌫</td></tr>
+	<tr align="center"><td>123</td><td>🌐</td><td colspan="5">space</td><td>.</td><td colspan="2">⏎</td></tr>
 </table>
 <div class='vspace'></div><ul><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
 </li></ul><div class='vspace'></div><h3>Alternate Name</h3>
