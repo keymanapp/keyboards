@@ -171,6 +171,15 @@ function do_build() {
   $KMC $KMC_BUILD_PARAMS .
 
   rm source/fv_all.kps
+
+  do_build_region
+}
+
+function do_build_region() {
+  # Merge kmp.json info with region info from keyboards.csv
+  echo "TODO: Merge region from from keyboards.csv into kmp.json"
+
+
 }
 
 function do_test() {
@@ -180,6 +189,6 @@ function do_test() {
 
 builder_run_action clean      do_clean
 builder_run_action configure  do_configure
-builder_run_action build      do_build
+builder_run_action build      do_build_region # do not commit this part to production do_build
 builder_run_action test       do_test
 
