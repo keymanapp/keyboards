@@ -5,6 +5,7 @@ Diidiitidq Change History
 * Normalised outputs where possible
 * Tidied rules
 * Straightened out mobile layout
+* Tidied code
 
 9.1.3 (6 Mar 2023)
 -------------------

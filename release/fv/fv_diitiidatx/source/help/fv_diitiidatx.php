@@ -20,21 +20,20 @@ This keyboard is designed for the <b>Diidiitidq</b> language of the BC Coast reg
 
 <img src="Diitiidatx.png" alt="Diidiitidq" width="514" height="198" /></h2>
 
-<h2>Keyboard Layout </h2>
-    
+<h2>Keyboard Layout</h2>
     <ul>
       <li>The special Characters of Diidiitidq have been assigned to the number keys. To type the numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric Keypad on the right side of many keyboards can also be used to type numerals.</li>
       <li>All accents are typed after the base character — t̓ is typed t then Apostrophe.</li>
-      <li>
-      To type the glottal accent ’ use the Apostrophe key ’ — k̓ is typed k then Apostrophe. </li>
-      <li>The original English punctuation keys can be typed by holding down the Right-Alt or Option key. The Left- Bracket [ is typed Right-Alt+Left-Bracket (Windows) Option+Left-Bracket (Mac).</li><li>
-      Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys. </li>
+      <li>To type the glottal accent ’ use the Apostrophe key ’ — k̓ is typed k then Apostrophe. </li>
+      <li>The original English punctuation keys can be typed by holding down the Right-Alt or Option key — the Left- Bracket [ is typed Right-Alt+Left-Bracket (Windows) Option+Left-Bracket (Mac).</li>
+      <li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.
         <ul>
           <li>single: ‘ Left-Bracket — ’ Right-Bracket</li>
           <li>double: “ Shift+Left-Bracket — ” Shift+Right-Bracket</li>
           <li>single ‹ Right-Alt+Shift+9 — › Right-Alt+Shift+0 </li>
           <li>double « Right-Alt+9 — » Right-Alt+0</li>
         </ul>
+        </li>
       </ul>
 <h2>Unicode Fonts</h2>
 <p>The following fonts have been installed on your computer: Aboriginal Sans, Aboriginal Serif. Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
@@ -80,15 +79,15 @@ This keyboard is designed for the <b>Diidiitidq</b> language of the BC Coast reg
     <td  align='center' colspan='2'>⌫</td>
   </tr>
 </table>
-<div class='vspace'></div><ul><li>keys with a red background are combining accents. On your phone, they will appear with green text.</li>
-<li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
-<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
-</ul>
 <div class='vspace'></div>
-</div>
+  <ul>
+    <li>keys with a red background are combining accents. On your mobile device, they will have green text.</li>
+    <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+    <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
+  </ul>
+<div class='vspace'></div>
 
 <br/>
 
 <h2>Keyboard Layout</h2>
 <div id='osk'>
-</div>

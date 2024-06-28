@@ -19,7 +19,3 @@ Supported Platforms
  * Web
  * Mobile
 
-TO-DO
--------------------
-* Contact community about updating capital barred lambda to U+A7DC LATIN CAPITAL LETTER LAMBDA WITH STROKE
-
