@@ -3,7 +3,7 @@ c with name "Cipher Music (SIL)"
 store(&VERSION) '10.0'
 store(&NAME) 'Cipher Music (SIL)'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.1.2'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'web desktop'
 store(&VISUALKEYBOARD) 'sil_cipher_music.kvks'
 store(&BITMAP) 'sil_cipher_music.ico'
@@ -101,7 +101,8 @@ $keymanonly: if(option_key = 'jianpu') "-" + "-" > U+0332 c combining low line
 $keymanonly: if(option_key = 'jianpu') "=" + "=" > U+0333 c combining double low line
 
 + [SHIFT K_EQUAL] > '+'
-+ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_HYPHEN] > U+2012
++ [RALT K_BKSLASH] > U+005F
 + [SHIFT K_0] > ')'
 + [SHIFT K_9] > '('
 + [SHIFT K_8] > '*'

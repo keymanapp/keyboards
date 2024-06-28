@@ -1,7 +1,11 @@
 ᐊᓂᔑᓇᐯᒧᐎᓐ Change History
 ============================
+10.0.1 (27 Jun 2024)
+-----------------
+* Corrected documentation
+
 10.0 (25 Apr 2024)
-----------------
+-----------------
 * Normalised where possible
 * Added missing characters to mobile layout
 * Adjusted mobile layout to make enter and backspace keys easier to type
