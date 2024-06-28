@@ -1,13 +1,14 @@
-Taigi telex keyboard
+foochow keyboard
 ==============
+
+Version 1.0
 
 Description
 -----------
-Taigi Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī. 
+foochow generated from template
 
 Links
 -----
-https://keyman.com/keyboards/taigi_telex
 
 Copyright
 ---------
