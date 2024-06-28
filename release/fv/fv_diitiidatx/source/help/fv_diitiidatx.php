@@ -81,8 +81,8 @@ This keyboard is designed for the <b>Diidiitidq</b> language of the BC Coast reg
 </table>
 <div class='vspace'></div>
   <ul>
-    <li>keys with a red background are combining accents. On your mobile device, they will have green text.</li>
-    <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+    <li>Keys with a red background are combining accents. On your mobile device, they will have green text.</li>
+    <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
     <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
   </ul>
 <div class='vspace'></div>
