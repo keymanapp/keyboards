@@ -126,7 +126,17 @@ store(LanguageOutputs) U+0301 U+0302 U+0304 U+030C c acute circumflex macron car
 store(NeedsCaron) 'csCS'
 store(HasCaron) 'čšČŠ'
 
++ any(LanguageKeys) > index(LanguageOutputs,1)
 any(NeedsCaron) + [K_1] > index(HasCaron,1)
+
+c --- stacking prevention ----
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
+
+any(NonLetters) + any(LanguageKeys) > index(NonLetters,1)
+any(HasAcute) + any(LanguageKeys) > index(HasAcute,1)
+any(HasCirc) + any(LanguageKeys) > index(HasCirc,1)
+any(HasMacron) + any(LanguageKeys) > index(HasMacron,1)
+any(LanguageOutputs) + any(LanguageKeys) > context beep
 
 c --- original keys ---
 
