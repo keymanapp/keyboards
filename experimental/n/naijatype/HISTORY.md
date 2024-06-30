@@ -3,7 +3,7 @@ Naija Type Keyboard Change History
 
 June 2024
 ---------
-* v61 m̃ easier on touch, ḅ underdot and line on desktop and touch, ɦ on touch. 100 languages known covered.
+* v61 m̃ easier on touch, ḅ underdot and line on desktop and touch, ɦ on touch. 105 languages known covered.
 
 * v60 Doc updates, including assessment of more languages covered.
 
