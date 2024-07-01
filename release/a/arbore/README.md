@@ -3,7 +3,7 @@ Arbore keyboard
 
 Description
 -----------
-A modified version of the "SIL EL - Ethiopian Latin" keyboard (version 1.4.1), tailored to suit the Arbore language.
+A QWERTY-based keyboard for the Arbore language of Southwestern Ethiopia.
 
 Links
 -----
