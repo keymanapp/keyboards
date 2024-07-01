@@ -47,6 +47,7 @@ c v61 Fuller coverage of Nigerian alphabets added to documentation and language 
 
 
 store(&NAME) 'Naija Type'
+store(&KEYBOARDVERSION) '61'
 c store(&ETHNOLOGUECODE) 'abn kad agc yay ala cch awo bcy bcn bsj bzw bkv bom bus bwr bys nat cky asg dri dbd dgh cfa ldb jen igb bin eka enn ich utr eza fuv gby ank gkn gde jgk hau jab cen iby idu ibo ige ikk ikw iqw etx atg izr izz jib kaj cdr hig kau kai ckl okr kez kub hia yaz lnu mda mzk mfo mfn mbu mzm sur anc nin nup hbb ann odu ogc png pip pcm pym res iri cla tal tan yer ttr tiv kdl tsw tvd tul kcg uth gel wja wji yba yor'
 c store(&WINDOWSLANGUAGES) 'x0468 x0470 x046A x0809 x0409'
 c store(&LANGUAGE) 'x0809'
@@ -142,7 +143,6 @@ store(TonesAll)                outs(ToneSubset) U+030B U+030F U+1DC4 U+1DC5 U+1D
 store(WhiteSpace) [K_ENTER] " " [K_TAB]
 store(CurlyQuoteOpenBefore) "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopsdfghjklzxcvbnm"
 store(CurlyQuoteCloseAfter) ".,!?"
-store(&KEYBOARDVERSION) '61'
 c store(&mnemoniclayout) '1' c Experimental - will it keep working on UK keyboards?
 c To be mnemonic we need to remove all K_ key codes and replace with the output letter,
 c eg instead of K_A we would use 'a'.
@@ -223,10 +223,11 @@ c 3: Curlify quotes
 + [ALT K_QUOTE] > U+0027
 U+0022 + U+0020 > U+201D " " c Close double after space
 any(CurlyQuoteCloseAfter) + U+0022 > context U+201D
-U+0022 + any(CurlyQuoteOpenBefore) > U+201C index(CurlyQuoteOpenBefore,2)
+c only curlify after space otherwise in the middle of words and all sorts of places we got the wrong one
+U+0020 U+0022 + any(CurlyQuoteOpenBefore) > U+0020 U+201C index(CurlyQuoteOpenBefore,3)
 U+0027 + U+0020 > U+2019 " " c Close single after space
 any(CurlyQuoteCloseAfter) + U+0027 > context U+2019 c Close after other things
-U+0027 + any(CurlyQuoteOpenBefore) > U+2018 index(CurlyQuoteOpenBefore,2) c Open single before
+U+0020 U+0027 + any(CurlyQuoteOpenBefore) > U+0020 U+2018 index(CurlyQuoteOpenBefore,3) c Open single before
 
 c 4: Reset changeshape state when backspacing
 c Bugfix July 2021 otherwise wrong changes are made
