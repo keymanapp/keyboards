@@ -3,7 +3,7 @@
 ## Table of Contents
 - [File Layout](#file-layout)
 - [Contributing](#contributing)
-  - [Tools](#tools)
+  - [Tool](#tool)
   - [Standard keyboard design](#standard-keyboard-design)
   - [Keyboard submission guidelines](#keyboard-submission-guidelines)
   - [Publish your keyboard](#publish-your-keyboard)
@@ -13,7 +13,7 @@
   - [Prerequisites](#prerequisites)
   - [Build instructions](#build-instructions)
   - [Common `build.sh` parameters](#common-buildsh-parameters)
-- [Deprecated Keyboards](#license)
+- [Deprecated Keyboards](#deprecated-keyboards)
 - [Common Links](#common-links)
 - [Community](#community)
 
