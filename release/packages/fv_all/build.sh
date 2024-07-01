@@ -58,10 +58,15 @@ function do_configure() {
 # Convert Bash array to JSONArray
 function convertToJSONArray() {
   local mergedKeyboards=("$@")
+  local length=${#mergedKeyboards[@]}
   echo "["
-  for k in "${mergedKeyboards[@]}";
+  for key in "${!mergedKeyboards[@]}";
   do
-    echo "$k,"
+    separator=","
+    if [[ $key -eq $length-1 ]]; then
+      separator=""
+    fi
+    echo "${mergedKeyboards[$key]}${separator}"
   done
   echo "]"
 }
@@ -219,20 +224,6 @@ function do_build_region() {
 
   # Convert to JSONArray and write to keyboards.json file
   convertToJSONArray "${mergedKeyboards[@]}" > "build/keyboards.json"
-
-  #mkmp=$(writeMergedKeyboards "${mergedKeyboards[@]}")
-  #$JQ -r --args "${mkmp}" '.keyboards[] = "${mkmp}"' build/kmp.json
-
-  # $JQ -r '.' <<< ${mergedKeyboards[@]}
-  #echo "[ $($JQ -r '.' <<< ${mergedKeyboards[@]}) ]" > "build/keyboards.json" # this works (spit comma though)
-
-  #mkmp="[ $(printf '%s\n' ${mergedKeyboards[@]}) ]" # this works
-  #echo "[ $(printf '%s\n' ${mergedKeyboards[@]}) ]" > "build/keyboards.json"
-  #cat build/keyboards.json | $JQ -r
-  #mkmp=$(echo '[${mergedKeyboards[@]}]')
-
-  #echo "${mkmp}"
-  #exit
  
   # Add keyboards.json to kmp.json
   if [[ ! -f "build/keyboards.json" ]]; then
