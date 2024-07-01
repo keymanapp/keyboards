@@ -14,6 +14,7 @@ THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
 cd "$THIS_SCRIPT_PATH"
 
 . "$REPO_ROOT/resources/util.inc.sh"
+. "$REPO_ROOT/tools/7z.inc.sh"
 . "$REPO_ROOT/tools/jq.inc.sh"
 
 builder_describe \
@@ -54,7 +55,18 @@ function do_configure() {
   popd
 }
 
-function do_build() {
+# Convert Bash array to JSONArray
+function convertToJSONArray() {
+  local mergedKeyboards=("$@")
+  echo "["
+  for k in "${mergedKeyboards[@]}";
+  do
+    echo "$k,"
+  done
+  echo "]"
+}
+
+function do_build_kmp() {
   # For each keyboard in the following release folders:
   # fv/*, inuktitut_*, sil_euro_latin, and basic_kbdcan
   # If a .kmx or .js exists, add it to the package source file, reading the requisite keyboard name and version from the .kps file
@@ -93,15 +105,15 @@ function do_build() {
 
     version=$(cat $keyboardInfo | $JQ -r '.version')
 
-  # Override sil_euro_latin keyboard to English language
+    # Override sil_euro_latin keyboard to English language
     if [[ $id = 'sil_euro_latin' ]]; then
-    name="English"
-      bcp47="en"
+      name="English"
+      bcp47="en"  
       langname="English"
-  elif [[ $id = 'basic_kbdcan' ]]; then
-    name="Français"
-    bcp47="fr-CA"
-    langname="French (Canada)"
+    elif [[ $id = 'basic_kbdcan' ]]; then
+      name="Français"
+      bcp47="fr-CA"
+      langname="French (Canada)"
     fi
 
     # Build a file entry
@@ -166,20 +178,72 @@ function do_build() {
 
   # Build fv_all.kmp, using kmc as per normal build script
 
-  mkdir -p build || die "Failed to create build folder for fv_all"
+  mkdir -p build || builder_die "Failed to create build folder for fv_all"
 
   $KMC $KMC_BUILD_PARAMS .
 
   rm source/fv_all.kps
-
-  do_build_region
 }
 
+# Create keyboards.json by merging keyboards from kmp.json with regions.json
+# Then add keyboards.json to fv_all.kmp
 function do_build_region() {
-  # Merge kmp.json info with region info from keyboards.csv
-  echo "TODO: Merge region from from keyboards.csv into kmp.json"
+  if [[ ! -f "build/fv_all.kmp" ]]; then
+    builder_die "build/fv_all.kmp doesn't exist"
+  fi
 
+  # Extract kmp.json (overwrite) from build/fv_all.kmp
+  "$APP7Z" x build/fv_all.kmp -aoa -obuild kmp.json 
+  [ -f "build/kmp.json" ] || builder_die "fv_all: Failed to extract kmp.json"
 
+  kmpKeyboards=$("$JQ" -r '.keyboards' build/kmp.json)
+
+  count=$("$JQ" length <<< "$kmpKeyboards")
+  declare -a regions=()
+  declare -a mergedKeyboards=()
+
+  # For each keyboard entry in kmp.json, determine the corresponding region and add property
+  for (( i=0; i < count; i++))
+  do
+    kmpKeyboard=$($JQ -r ".[$i]" <<< "$kmpKeyboards")
+    id=$($JQ -r ".id" <<< "$kmpKeyboard")
+    region=$($JQ -r ".$id" source/regions.json)
+    if [[ "${region}" == "null" ]]; then
+      builder_die "Region for $id not found in regions.json"
+    fi
+
+    # Add corresponding region info
+    keyboard=$($JQ ". += { region: \"${region}\" }" <<< "$kmpKeyboard")
+    mergedKeyboards+=( "$keyboard" )
+  done
+
+  # Convert to JSONArray and write to keyboards.json file
+  convertToJSONArray "${mergedKeyboards[@]}" > "build/keyboards.json"
+
+  #mkmp=$(writeMergedKeyboards "${mergedKeyboards[@]}")
+  #$JQ -r --args "${mkmp}" '.keyboards[] = "${mkmp}"' build/kmp.json
+
+  # $JQ -r '.' <<< ${mergedKeyboards[@]}
+  #echo "[ $($JQ -r '.' <<< ${mergedKeyboards[@]}) ]" > "build/keyboards.json" # this works (spit comma though)
+
+  #mkmp="[ $(printf '%s\n' ${mergedKeyboards[@]}) ]" # this works
+  #echo "[ $(printf '%s\n' ${mergedKeyboards[@]}) ]" > "build/keyboards.json"
+  #cat build/keyboards.json | $JQ -r
+  #mkmp=$(echo '[${mergedKeyboards[@]}]')
+
+  #echo "${mkmp}"
+  #exit
+ 
+  # Add keyboards.json to kmp.json
+  if [[ ! -f "build/keyboards.json" ]]; then
+    builder_die "Failed to generate build/keyboards.json"
+  fi
+  "$APP7Z" a build/fv_all.kmp ./build/keyboards.json
+}
+
+function do_build() {
+  do_build_kmp
+  do_build_region
 }
 
 function do_test() {
@@ -189,6 +253,6 @@ function do_test() {
 
 builder_run_action clean      do_clean
 builder_run_action configure  do_configure
-builder_run_action build      do_build_region # do not commit this part to production do_build
+builder_run_action build      do_build
 builder_run_action test       do_test
 
