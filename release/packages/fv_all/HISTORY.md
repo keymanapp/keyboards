@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 12.12 (1 Jul 2024)
+* Replace keyboards.csv with keyboards.json
+
 ## 12.11 (28 Jun 2024)
 * Add fv_ojibwa_rdot and fv_severn_ojibwa_rdot
 
