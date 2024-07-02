@@ -25,11 +25,10 @@ c SILGREEK.KMN 3.0  D I Bevan - 14-Mar-1997
 c See REVISION.TXT
 c ----------------------------------------------------------------------------
 
-store(&version) "9.0"
 store(&name) "Polytonic Greek (SIL)"
 store(&BITMAP) 'sil_greek_polytonic.ico'
 c HOTKEY "^+G"
-store(&COPYRIGHT) '(c) 2002-2019 SIL International'
+store(&COPYRIGHT) '(c) SIL International'
 store(&message) "The Greek (polytonic precomposed) keyboard is distributed under the MIT license."
 
 c LANGUAGE x208, x22
@@ -40,7 +39,7 @@ store(&ETHNOLOGUECODE) 'grc ell'
 store(&LANGUAGE) 'x0408'
 store(&WINDOWSLANGUAGES) 'x0408'
 store(&VISUALKEYBOARD) 'sil_greek_polytonic.kvks'
-store(&KEYBOARDVERSION) '1.6'
+store(&KEYBOARDVERSION) '1.7'
 
 begin Unicode > use(MainU)
 
@@ -84,6 +83,10 @@ c keys for lowercase
 store(K_low)        "a"    "b"    "g"    "d"    "e"    "z"    "j"    "q"    "i" \
                     "k"    "l"    "m"    "n"    "x"    "o"  \
                     "p"    xff    "r"    "s"    "t"    "u"    "f"    "c"    "y"    "w"    xff
+c keys for lowercase
+store(K_low_nobr) [RALT K_A] xff  xff    xff [RALT K_E] xff [RALT K_J] xff  [RALT K_I] \
+                    xff    xff    xff    xff    xff [RALT K_O]  \
+                    xff    xff    xff    xff    xff [RALT K_U] xff   xff    xff [RALT K_W] xff
 c lowercase letters
 store(low)          U+03B1 U+03B2 U+03B3 U+03B4 U+03B5 U+03B6 U+03B7 U+03B8 U+03B9 \
                     U+03BA U+03BB U+03BC U+03BD U+03BE U+03BF \
@@ -233,7 +236,7 @@ store(SD_Di)        U+03CA U+1FD3 U+03CB U+1FE2 U+1FE3
 c i>     i>>    u>     u'<    u>>
 store(SD_Sm)        U+1F30 U+1F34 U+1F50 U+1F52 U+1F54
 
-c 
+c
 store(IU_in)        U+0308
 store(IU_IDi)       U+03CA
 store(IU_UDi)       U+03CB
@@ -776,6 +779,10 @@ any(sFin) any(br)         + any(K_low) > outs(sMed) \
 any(sFin) any(br) any(br) + any(K_low) > outs(sMed) \
                           index(br,2) index(br,3) index(low,4)  c v[[ + a  s[[a
 
+c Forced medial sigma
+
++ [RALT K_S]                   > outs(sMed)
+
 c Initial vowel and rho
 
 
@@ -814,8 +821,6 @@ any(wi)                   + any(K_upVSm)  > context  \
 any(wi)                   + any(K_upU)    > context  \
                                             index(upU,2) outs(Sm)   c _   + U  >U
 any(wi) any(lbr)          + any(K_upVSm)  > context \
-                                            index(upVSm_Sm,3)      c _[  + A  >A
-any(wi) any(lbr)          + any(K_upVSm)  > context  \
                                             index(upVSm_Sm,3)      c _[  + A  >A
 any(wi) any(lbr) any(lbr) + any(K_upVSm)  > context  \
                                             index(upVSm_Sm,4)      c _[[ + A  >A
@@ -972,8 +977,9 @@ any(wi) any(lbr) any(lbr) any(upR) any(up) + [K_BKSP] > \
 any(wi) any(lbr) any(lbr) any(upR) any(up) + [SHIFT K_BKSP] > \
     index(wi,1) index(lbr,2) index(lbr,3) outs(upRRo)
 
-                    + any(K_low)   > index(low,1)
-                    + any(K_up)    > index(up,1)
+                    + any(K_low)      > index(low,1)
+                    + any(K_up)       > index(up,1)
+                    + any(K_low_nobr) > index(low,1)
 
 
 any(all)    + [K_BKSP]          > nul
