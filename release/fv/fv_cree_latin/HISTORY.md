@@ -1,5 +1,12 @@
 Cree - Roman Orthography Change History
 ============================
+10.2 (29 Jun 2024)
+-----------------
+* Tidied documentation
+* Added fonts to package
+* Added stacking prevention
+* Added correct outputs to modified keys
+
 10.0.1 (27 Mar 2024)
 -----------------
 * Updated README
