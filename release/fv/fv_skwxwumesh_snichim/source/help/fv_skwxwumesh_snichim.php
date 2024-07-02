@@ -27,10 +27,49 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 <div id='wikitext'>
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
-<tr ><th  align='center'>’</th><td  align='center'>w w̓</td><td  align='center'>e é</td><td  align='center'>7</td><td  align='center'>t t’ tl’</td><td  align='center'>ts ts’</td><td  align='center'>y y̓</td><td  align='center'>u ú</td><td  align='center'>i í</td><td  align='center'>p p’</td></tr>
-<tr ><td  align='center'>a á</td><td  align='center'>s sh</td><td  align='center'>h</td><td  align='center'>ḵ ḵ’</td><td  align='center'>ḵw ḵw’</td><td  align='center'>k k’</td><td  align='center'>kw kw’</td><td  align='center'>l l̓</td><td  align='center'>lh</td><td  align='center'>’</td></tr>
-<tr align ="center"><td >⇧</td><td  align='center'>x̱</td><td  align='center'>x̱w</td><td  align='center'>x</td><td  align='center'>xw</td><td  align='center'>ch ch’</td><td  align='center'>n n̓</td><td  align='center'>m m̓</td><td  colspan='2'>⌫</td></tr>
-<tr align="center"><td>123</td><td>🌐</td><th>´</th><td colspan="4">space</td><td>.</td><td colspan="2">⏎</td></tr>
+	<tr >
+		<th  align='center'>’</th>
+		<td  align='center'>w w̓</td>
+		<td  align='center'>e é</td>
+		<td  align='center'>7</td>
+		<td  align='center'>t t’ tl’</td>
+		<td  align='center'>ts ts’</td>
+		<td  align='center'>y y̓</td>
+		<td  align='center'>u ú</td>
+		<td  align='center'>i í</td>
+		<td  align='center'>p p’</td>
+	</tr>
+	<tr >
+		<td  align='center'>a á</td>
+		<td  align='center'>s sh</td>
+		<td  align='center'>h</td>
+		<td  align='center'>ḵ ḵ’</td>
+		<td  align='center'>ḵw ḵw’</td>
+		<td  align='center'>k k’</td>
+		<td  align='center'>kw kw’</td>
+		<td  align='center'>l l̓</td>
+		<td  align='center'>lh</td>
+		<td  align='center'>’</td>
+	</tr>
+	<tr align ="center">
+		<td >⇧</td>
+		<td  align='center'>x̱</td>
+		<td  align='center'>x̱w</td>
+		<td  align='center'>x</td>
+		<td  align='center'>xw</td>
+		<td  align='center'>ch ch’</td>
+		<td  align='center'>n n̓</td>
+		<td  align='center'>m m̓</td>
+		<td  colspan='2'>⌫</td>
+	</tr>
+	<tr align="center">
+		<td>123</td>
+		<td>🌐</td>
+		<th>´</th>
+		<td colspan="4">space</td>
+		<td>.</td>
+		<td colspan="2">⏎</td>
+	</tr>
 </table>
 <div class='vspace'></div>
 <ul>
