@@ -71,11 +71,12 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 		<td colspan="2">⏎</td>
 	</tr>
 </table>
+
 <div class='vspace'></div>
 <ul>
-	<li>Keys with a red background are combining accents.</li>
+	<li>Keys with a red background are combining accents. On your mobile device, they will have green text.</li>
 	<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
-	<li>Common punctuation marks can be found by pressing and holding the period key to the right of the space bar.</li>
+	<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
 </ul>
 <div class='vspace'></div>
 <h3>Alternate Name</h3>

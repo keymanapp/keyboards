@@ -72,55 +72,6 @@ c + [SHIFT T_V] > ',' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
 + [SHIFT T_M] > 'M' layer('default')
 
-C mobile deadkey glottal combining apostrophe
-c 'M' + [SHIFT T_R] > 'M̓'
-c 'l' + [SHIFT T_R] > 'l̓'
-c 'N' + [SHIFT T_R] > 'N̓'
-c 'W' + [SHIFT T_R] > 'W̓'
-c 'm' + [SHIFT T_R] > 'm̓'
-c 'y' + [SHIFT T_R] > 'y̓'
-c 'n' + [SHIFT T_R] > 'n̓'
-c 'w' + [SHIFT T_R] > 'w̓'
-c 'L' + [SHIFT T_R] > 'L̓'
-c 'Y' + [SHIFT T_R] > 'Y̓'
-c 'M' + [T_R] > 'M̓'
-c 'l' + [T_R] > 'l̓'
-c 'N' + [T_R] > 'N̓'
-c 'W' + [T_R] > 'W̓'
-c 'm' + [T_R] > 'm̓'
-c 'y' + [T_R] > 'y̓'
-c 'n' + [T_R] > 'n̓'
-c 'w' + [T_R] > 'w̓'
-c 'L' + [T_R] > 'L̓'
-c 'Y' + [T_R] > 'Y̓'
-
-C mobile shift layer - deadkey acute accent
-c 'o' + [SHIFT T_F] > 'ó'
-c 'I' + [SHIFT T_F] > 'Í'
-c 'E' + [SHIFT T_F] > 'É'
-c 'A' + [SHIFT T_F] > 'Á'
-c 'u' + [SHIFT T_F] > 'ú'
-c 'O' + [SHIFT T_F] > 'Ó'
-c 'e' + [SHIFT T_F] > 'é'
-c 'a' + [SHIFT T_F] > 'á'
-c 'i' + [SHIFT T_F] > 'í'
-c 'U' + [SHIFT T_F] > 'Ú'
-c 'o' + [T_F] > 'ó'
-c 'I' + [T_F] > 'Í'
-c 'E' + [T_F] > 'É'
-c 'A' + [T_F] > 'Á'
-c 'u' + [T_F] > 'ú'
-c 'O' + [T_F] > 'Ó'
-c 'e' + [T_F] > 'é'
-c 'a' + [T_F] > 'á'
-c 'i' + [T_F] > 'í'
-c 'U' + [T_F] > 'Ú'
-
-c mobile macron deadkey
-c 'k' + [T_V] > '̱ḵ'
-c 'K' + [T_V] > 'Ḵ'
-c 'x' + [T_V] > 'x̱'
-c 'X' + [T_V] > '̱X̱'
 
 C mobile unshifted layer
 c + [T_Q_0] > '!'
@@ -198,4 +149,13 @@ store(plain_kx) "kKxX"
 store(macronKeys) [T_V] [SHIFT T_V]
 any(plain_kx) + any(macronKeys) > index(plain_kx,1) U+0331
 
+c rules - stacking prevention
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(glottalKeys) > context beep                   
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep
+any(NumbersAndPunctuation) + any(macronKeys) > context beep
+
+
 C DESKTOP LAYOUT
+
+
