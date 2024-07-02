@@ -90,4 +90,4 @@ This keyboard is designed for the <b>Diidiitidq</b> language of the BC Coast reg
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk'>
+<div id='osk'></div>
