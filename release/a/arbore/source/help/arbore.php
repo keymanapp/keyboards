@@ -4,11 +4,6 @@
   require_once('header.php');
 
   $pagestyle = <<<END
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-    h3 { font: bold 11pt Tahoma; color: #4444cc; }
-
     .coldiv { display: flex; flex-direction: row; gap: 5%;}
     table, tr, th, td { font: 10pt Arial; border-collapse: collapse; border: solid 1px; padding: 5px 5px; text-align: center;}
     th { font-weight: bold;}
