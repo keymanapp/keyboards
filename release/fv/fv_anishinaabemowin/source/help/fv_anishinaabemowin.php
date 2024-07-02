@@ -78,6 +78,7 @@ This keyboard is designed for the <b>Anishinaabemowin - Anihšināpēmowin</b> l
 	<ul>
 		<li>Keys with a red background are combining accents. These keys will have green text on your mobile device.</li>
 		<li>The first character in a cell is the "one-tap" key. Any further characters are "hold-select" keys.</li>
+		<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
 </ul>
 <div class='vspace'></div>
 
