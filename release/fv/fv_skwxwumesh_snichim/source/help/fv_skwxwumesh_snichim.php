@@ -20,7 +20,7 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 
 
 <h2>Keyboard Layout</h2>
-<div id='osk-tablet'>
+<div id='osk'>
 </div>
 
 <h2>Notes on touch layout</h2>
