@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.281.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Hebrew (SIL)</Name>
-    <Copyright URL="">Copyright © 2003-2021 SIL International</Copyright>
-    <Description>This keyboard is designed for Biblical Hebrew and represents the
+    <Copyright URL="">Copyright © SIL International</Copyright>
+    <Description URL="">This keyboard is designed for Biblical Hebrew and represents the
 official Biblical Hebrew keyboard from SIL.</Description>
   </Info>
   <Files>
@@ -103,6 +104,18 @@ official Biblical Hebrew keyboard from SIL.</Description>
       <FileType>.js</FileType>
     </File>
     <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
       <Name>..\..\..\shared\fonts\hebr\sbl\SBL_Hbrw.ttf</Name>
       <Description>Font SBL Hebrew</Description>
       <CopyLocation>0</CopyLocation>
@@ -114,28 +127,25 @@ official Biblical Hebrew keyboard from SIL.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
-    <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hebrew (SIL)</Name>
       <ID>sil_hebrew</ID>
-      <Version>1.9</Version>
+      <Version>2.0</Version>
       <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</DisplayFont>
       <Languages>
-        <Language ID="hbo-Hebr">Ancient Hebrew</Language>
+        <Language ID="hbo">Ancient Hebrew</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf"/>
+      </WebOSKFonts>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="ezrasil251" Relationship="deprecates" />
+    <RelatedPackage ID="ezrasil251" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
