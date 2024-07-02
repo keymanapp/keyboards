@@ -78,7 +78,7 @@ This keyboard is designed for the <b>Sm'algya̱x</b> language of the BC Coast re
 		<td >&nbsp;</td>
 	</tr>
 </table>
-<div class='vspace'></div><ul><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+<div class='vspace'></div><ul><li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
 <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar</li>
 <li>Southern Tsimshian/Sgüüx̱s can also use this keyboard</li>
 </ul>
