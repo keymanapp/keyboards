@@ -137,9 +137,6 @@
       </tr>
     </tbody>
   </table>
-
-</div>
-
 </div>
 
 <h3>Non-Latin Characters</h3>
