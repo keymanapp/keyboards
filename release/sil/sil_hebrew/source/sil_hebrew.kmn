@@ -61,7 +61,7 @@ c 2/23/07
 c Modified by Lorna Priest per Christopher Samuel
 c Modified by Lorna Priest to add "patch" store and rule to work in FieldWorks
 
-store(&version) "10.0"
+store(&version) "15.0"
 store(&NAME) 'Hebrew (SIL)'
 store(&BITMAP) 'sil_hebrew.ico'
 c HOTKEY "^+M"
@@ -71,8 +71,9 @@ store(&COPYRIGHT) 'Copyright © SIL International'
 c store( &Message ) "http://scripts.sil.org/"
 store(&VISUALKEYBOARD) 'sil_hebrew.kvks'
 c store(&ETHNOLOGUECODE) 'hbo'
-store(&KEYBOARDVERSION) '1.9'
+store(&KEYBOARDVERSION) '2.0'
 store(&LAYOUTFILE) 'sil_hebrew.keyman-touch-layout'
+store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdhebr/KbdHebr.json'
 store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 begin UNICODE > use(Main)
@@ -234,7 +235,7 @@ c The next 5 rules handle characters that can delimit the end of a word.
 c Changed rules related to smart qutes, replacing with ASCII straightquotes.
 c Correct handling of quotation marks left to applicaton rather than input. AC  4/30/18
     + [K_QUOTE] > U+0027
-    + [K_QUOTE] > U+0022
+    + [SHIFT K_QUOTE] > U+0022
 c + [K_QUOTE]		       >  U+2019 	c opening (right) single quote 2/11/97 12/12/01
 c + [SHIFT K_QUOTE]	>  U+201D 	c opening (right) double quote 2/11/97 12/12/01
 c Note: Closing quotation marks are attained by typing a quotation mark
@@ -321,20 +322,6 @@ c Rules added by SBL
 + [RALT SHIFT K_H] > U+030A
 
 
-c ---- Rules for touch layout ----
-+ [T_shin] > U+05E9 U+05C1
-+ [T_sin] > U+05E9 U+05C2
-+ [LCTRL T_shin] > U+05E9 U+05C1
-+ [LCTRL T_sin] > U+05E9 U+05C2
-+ [SHIFT LCTRL T_shin] > U+05E9 U+05C1
-+ [SHIFT LCTRL T_sin] > U+05E9 U+05C2
-+ [T_05D5_05B9] > U+05D5 U+05B9
-+ [T_05D5_05BA] > U+05D5 U+05BA
-+ [T_05D5_05BC_05BA]  > U+05D5 U+05BC U+05BA
-+ [T_05D5_05D5_05B9]  > U+05D5 U+05D5 U+05B9 
-+ [T_05D5_05BC_05D5_05B9] > U+05D5 U+05BC U+05D5 U+05B9
-+ [T_05E0_0307] > U+05E0 U+0307
-+ [T_05C6_0307] > U+05C6 U+0307
 
 c ----- Word-ending Chars -----
 c Changed rules related to smart qutes, replacing with ASCII straightquotes.

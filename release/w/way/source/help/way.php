@@ -76,5 +76,7 @@
       To type an <code>f</code> or <code>y</code> using the Wayana keyboard, long press its corresponding key until the alternate character appears.
     </p>
     <br>
-    <p><b>Keyboard Layout</b></p>
-    <div id='osk' data-states='default shift'></div>
+    <div id='osk-mobi-container'>
+      <h3>Keyboard Layout</h3>
+      <div id='osk-phone' data-states='default shift numeric'></div>
+    </div>
