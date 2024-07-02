@@ -73,7 +73,7 @@ To update a keyboard in this repository, follow these steps:
   - Copy the URL
   - Go to: <https://download-directory.github.io/>
   - Paste the URL into the field and press Enter
-  - The files for the keyboard are zipped up and offers for download as: `keymanapp keyboards master release-a_ausephon.zip`
+  - The files for the keyboard are zipped up and offered for download as: `keymanapp keyboards master release-a_ausephon.zip`
   - Rename the file to `ausephon.zip` and save (Or save first, then rename).
   - Unzip `ausephon.zip` to get the keyboard project folder ausephon with all of its files and subfolders.
 
@@ -95,7 +95,7 @@ To update a keyboard in this repository, follow these steps:
 
 ### Include font files
 
-If the fonts are used in multiple keyboards, the font files must be placed under the `shared folder`. Follow through this [documentation](https://help.keyman.com/developer/keyboards/github/step-2#toc-including-fonts-in-your-keyboard-package). However, if you are editing the keyboard package within the folders of the forked repository (skip step 2 above) only specifying the exisiting shared-font location in the package is neccesarily.
+If the fonts are used on multiple keyboards, the font files must be placed under the `shared folder`. Follow through this [documentation](https://help.keyman.com/developer/keyboards/github/step-2#toc-including-fonts-in-your-keyboard-package). However, if you are editing the keyboard package within the folders of the forked repository (skip step 2 above) only specifying the existing shared-font location in the package is necessary.
   
 ### Documentation
 
