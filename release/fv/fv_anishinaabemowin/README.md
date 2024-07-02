@@ -1,7 +1,7 @@
-Anishinaabemowin keyboard
+Anishinaabemowin - Anihšināpēmowin keyboard
 ======================
 
-Anishinaabemowin keyboard layout for Unicode
+Anishinaabemowin - Anihšināpēmowin keyboard layout for Unicode
 
 Links
 -----
@@ -14,7 +14,7 @@ Supported Platforms
 -------------------
 
 * Windows
- * macOS
- * Linux
- * Web
- * Mobile
+* macOS
+* Linux
+* Web
+* Mobile
