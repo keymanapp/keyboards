@@ -25,7 +25,7 @@ This keyboard is designed for the <b>Cree - Roman Orthography</b> language of th
 						<li>To type the macron accent use the Backslash Key \ — ō is typed o then Backslash \ </li>
             <li>To type the caron/hachek accent use the 1 key — š is typed s then 1</li>
 						<li>You can type the original English punctuation by holding down the Right-Alt or Option key — the Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
-</ul>
+          </ul>
 
 <h2>Unicode Fonts</h2>
 	<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
@@ -78,6 +78,7 @@ This keyboard is designed for the <b>Cree - Roman Orthography</b> language of th
   <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
   <li>This is the SRO and can accommodate all dialects.</li>
   <li>Depending on the writer, there are three different diacritics to choose from to indicate a long vowel. Each option is included in this keyboard layout.</li>
+  <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
 </ul>
 
 
