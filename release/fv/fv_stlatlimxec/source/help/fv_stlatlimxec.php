@@ -81,6 +81,13 @@ This keyboard is designed for the <b>Sƛ̓aƛ̓imxəc</b> language of the BC Int
 		<td  align='center'>m m̓</td>
 		<td  colspan='2'>&nbsp;</td>
 	</tr>
+	<tr>
+		<td  align='center'>123</td>
+		<td  align='center'>🌐</td>
+		<td  align='center'colspan="5">space</td>
+		<td  align='center'>.</td>
+		<td  align='center'colspan="2">⏎</td>
+	</tr>
 </table>
 <div class='vspace'></div>
 	<ul>
