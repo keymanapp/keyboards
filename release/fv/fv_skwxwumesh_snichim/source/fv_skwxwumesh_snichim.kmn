@@ -134,19 +134,19 @@ C CONSTRAINTS AND RULES
 
 c combining deadkey for glottal apostrophe diacritic on resonants
 store(plainResonants) "mlnwyMLNWY"
-store(glottalKeys) [T_Q] [SHIFT T_Q] C TODO ADD DESKTOP
+store(glottalKeys) [T_Q] [SHIFT T_Q] [K_BKQUOTE]
 any(plainResonants) + any(glottalKeys) > index(plainResonants,1) U+0313
 
 c Rules - vowels with acute accent
 store(plainVowels) "aeiouAEIOU"
 store(acuteVowels) "áéíóúÁÉÍÓÚ"
-store(acuteKeys) [T_ACUTE] [SHIFT T_ACUTE] C TODO ADD DESKTOP
+store(acuteKeys) [T_ACUTE] [SHIFT T_ACUTE] [K_COLON]
 any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
 any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
 
 c rules - k, x with macron below
 store(plain_kx) "kKxX"
-store(macronKeys) [T_V] [SHIFT T_V]
+store(macronKeys) [T_V] [SHIFT T_V] [K_HYPHEN]
 any(plain_kx) + any(macronKeys) > index(plain_kx,1) U+0331
 
 c rules - stacking prevention
@@ -154,8 +154,30 @@ store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  c 
 any(NumbersAndPunctuation) + any(glottalKeys) > context beep                   
 any(NumbersAndPunctuation) + any(acuteKeys) > context beep
 any(NumbersAndPunctuation) + any(macronKeys) > context beep
+U+0313 + any(glottalKeys) > context beep
 
 
 C DESKTOP LAYOUT
 
+C combining keys
++ [K_BKQUOTE] > U+0313 c glottal comma above
++ [K_COLON] > U+0301 c acute accent
++ [K_HYPHEN] > U+0331 c macron below
 
+C other special keys
++ [K_QUOTE] > "’"
++ [K_LBRKT] > "ḵ"
++ [K_RBRKT] > "x̱"
++ [SHIFT K_LBRKT] > "Ḵ"
++ [SHIFT K_RBRKT] > "X̱"
+
+C original keys with right-alt
++ [RALT K_BKQUOTE] > "`"
++ [RALT K_COLON] > ";"
++ [RALT K_HYPHEN] > "-"
+
++ [RALT K_QUOTE] > "'"
++ [RALT K_LBRKT] > "["
++ [RALT K_RBRKT] > "]"
++ [RALT SHIFT K_LBRKT] > "{"
++ [RALT SHIFT K_RBRKT] > "}"
