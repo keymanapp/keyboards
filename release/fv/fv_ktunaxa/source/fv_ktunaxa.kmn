@@ -2,7 +2,7 @@
 store(&KEYBOARDVERSION) '9.1.3'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "kut"
-store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Ktunaxa'
 store(&BITMAP) 'fv_ktunaxa.ico'
 store(&VISUALKEYBOARD) 'fv_ktunaxa.kvks'
@@ -31,24 +31,6 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 + [SHIFT T_Y] > 'Y' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-'Ȼ' + [SHIFT T_O] > 'Ȼ̓'
-'w' + [SHIFT T_O] > 'w̓'
-'Q' + [SHIFT T_O] > 'Q̓'
-'Y' + [SHIFT T_O] > 'Y̓'
-'p' + [SHIFT T_O] > 'p̓'
-'ȼ' + [SHIFT T_O] > 'ȼ̓'
-'q' + [SHIFT T_O] > 'q̓'
-'K' + [SHIFT T_O] > 'K̓'
-'y' + [SHIFT T_O] > 'y̓'
-'k' + [SHIFT T_O] > 'k̓'
-'T' + [SHIFT T_O] > 'T̓'
-'M' + [SHIFT T_O] > 'M̓'
-'t' + [SHIFT T_O] > 't̓'
-'N' + [SHIFT T_O] > 'N̓'
-'m' + [SHIFT T_O] > 'm̓'
-'W' + [SHIFT T_O] > 'W̓'
-'n' + [SHIFT T_O] > 'n̓'
-'P' + [SHIFT T_O] > 'P̓'
 + [SHIFT T_P_0] > 'P̓' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
@@ -83,24 +65,6 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 + [T_Y] > 'y'
 + [T_U] > 'u'
 + [T_I] > 'i'
-'Ȼ' + [T_O] > 'Ȼ̓'
-'w' + [T_O] > 'w̓'
-'Q' + [T_O] > 'Q̓'
-'Y' + [T_O] > 'Y̓'
-'p' + [T_O] > 'p̓'
-'ȼ' + [T_O] > 'ȼ̓'
-'q' + [T_O] > 'q̓'
-'K' + [T_O] > 'K̓'
-'y' + [T_O] > 'y̓'
-'k' + [T_O] > 'k̓'
-'T' + [T_O] > 'T̓'
-'M' + [T_O] > 'M̓'
-'t' + [T_O] > 't̓'
-'N' + [T_O] > 'N̓'
-'m' + [T_O] > 'm̓'
-'W' + [T_O] > 'W̓'
-'n' + [T_O] > 'n̓'
-'P' + [T_O] > 'P̓'
 + [T_P_0] > 'p̓'
 + [T_P] > 'p'
 + [T_A] > 'a'
@@ -126,6 +90,10 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
+c --- CROSS PLATFORM RULES AND STORES ---
+
+store(NeedsComApos) 'ȼkmnpqtwyȻ̓KMNPQTWY'
+store(ComAposKeys) [K_O] [SHIFT K_O] [K_QUOTE]
 
 c constraints
 
@@ -142,7 +110,7 @@ any(NumbersAndPunctuation) + any(accentkey) > context beep
 
 
 
-
+c original punctuation
 + [SHIFT RALT K_RBRKT] > '}'
 + [SHIFT RALT K_LBRKT] > '{'
 + [RALT K_COLON] > ';'
@@ -167,6 +135,7 @@ any(NumbersAndPunctuation) + any(accentkey) > context beep
 + [RALT K_HYPHEN] >   U+00AB 
 + [RALT K_EQUAL] > U+00BB  
 
+c language keys
 + [SHIFT K_0] > '0'
 + [SHIFT K_9] > '9'
 + [SHIFT K_8] > '8'
