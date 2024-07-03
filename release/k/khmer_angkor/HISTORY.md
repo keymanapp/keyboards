@@ -1,7 +1,7 @@
 Khmer Angkor Change History
 =======================
 
-1.5 (2 Jul 2024)
+1.5 (3 Jul 2024)
 ----------------
 * Update keyboard to support OSK font for better display
 
