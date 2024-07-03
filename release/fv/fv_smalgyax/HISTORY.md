@@ -1,5 +1,10 @@
 Sm'algya̱x Change History
 ============================
+9.2 (25 Jun 2024)
+------------------
+* Normalised where possible
+* Straightned mobile layout
+* Added alternate slash option for use in Google Suite
 
 9.1.3 (6 Mar 2023)
 -------------------
