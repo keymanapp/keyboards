@@ -81,8 +81,6 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 + [T_X] > 'x'
 + [T_C_0] > 'ȼ̓'
 + [T_C] > 'ȼ'
-+ [T_V] > ','
-+ [T_B] > '.'
 + [T_N_0] > 'n̓'
 + [T_N] > 'n'
 + [T_M_0] > 'm̓'
@@ -95,7 +93,10 @@ c --- CROSS PLATFORM RULES AND STORES ---
 store(NeedsComApos) 'ȼkmnpqtwyȻ̓KMNPQTWY'
 store(ComAposKeys) [K_O] [SHIFT K_O] [K_QUOTE]
 
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
+
 c constraints
+store(Accents) U+030C U+0313
 
 store(glottalAccent) U+0313 
 any(glottalAccent) + [K_QUOTE] > context beep  
@@ -104,9 +105,11 @@ any(glottalAccent) + [K_6] > context beep
 store(hacek) U+030C U+010C U+010D U+0160 U+0161 
 any(hacek) + [K_6] > context beep 
 
+
 store(accentkey) [K_QUOTE] [K_6] 
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(accentkey) > context beep
+any(Accents) + any(accentkey) > context beep
 
 
 
