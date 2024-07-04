@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.928.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">2.1</Version>
+    <Version URL=""></Version>
     <Name URL="">Yolngu</Name>
-    <Copyright URL="">2003 Vicnet, State Library of Victoria</Copyright>
+    <Copyright URL="">2003-2019 Vicnet, State Library of Victoria</Copyright>
     <Author URL="mailto:lang.support@gmail.com">Andrew Cunningham</Author>
+    <Description>Type Yolngu and other Australian aboriginal languages using standard
+Unicode fonts. Other layouts are also available from the author\'s
+website.</Description>
   </Info>
   <Files>
     <File>
@@ -68,6 +49,36 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>el_yolngu</Name>
+      <ID>el_yolngu</ID>
+      <Version></Version>
+      <Languages>
+        <Language ID="dax-Latn">Dayi (Latin)</Language>
+        <Language ID="dhg-Latn">Dhangu-Djangu (Latin)</Language>
+        <Language ID="dwy-Latn">Dhuwaya (Latin)</Language>
+        <Language ID="dwu-Latn">Dhuwal (Latin)</Language>
+        <Language ID="djr-Latn">Djambarrpuyngu (Latin)</Language>
+        <Language ID="dji-Latn">Djinang (Latin)</Language>
+        <Language ID="djb-Latn">Djinba (Latin)</Language>
+        <Language ID="gnn-Latn">Gumatj (Latin)</Language>
+        <Language ID="guf-Latn">Gupapuyngu (Latin)</Language>
+        <Language ID="jay-Latn">Yan-nhangu (Latin)</Language>
+        <Language ID="rit-Latn">Ritarungo (Latin)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="yolngu20" Relationship="deprecates" />
+    <RelatedPackage ID="yolngu21" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

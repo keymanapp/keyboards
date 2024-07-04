@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Croatian/Slovenian Basic</Name>
+    <Copyright URL="">© 2009-2019 SIL International</Copyright>
+    <Author URL=""></Author>
+    <Description>Croatian/Slovenian Basic generated from template. This keyboard matches
+the following Windows 10 input methods: Croatian and Slovenian.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\basic_kbdcr.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\basic_kbdcr.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\basic_kbdcr.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_RA.png</Name>
+      <Description>File LayoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Croatian/Slovenian Basic</Name>
+      <ID>basic_kbdcr</ID>
+      <Version>1.1</Version>
+      <Languages>
+        <Language ID="sl">Slovenian</Language>
+        <Language ID="hr">Croatian</Language>
+        <Language ID="bs">Bosnian</Language>
+      </Languages>
+      <Examples>
+        <Example ID="hr" Keys="O ; e space n a [" Text="Oče naš" Note="&quot;Our Father&quot;" />
+      </Examples>
+  </Keyboard>
+  </Keyboards>
+  <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="slovenian" Relationship="deprecates" />
+    <RelatedPackage ID="croatian" Relationship="deprecates" />
+    <RelatedPackage ID="bosnian" Relationship="deprecates" />
+    <RelatedPackage ID="kbdcr" Relationship="deprecates" />
+  </RelatedPackages>
+</Package>

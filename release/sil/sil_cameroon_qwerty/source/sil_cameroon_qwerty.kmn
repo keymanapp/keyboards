@@ -1,0 +1,361 @@
+﻿store(&NAME) 'Cameroon QWERTY'
+store(&COPYRIGHT) '(c) 2018-2023 SIL Cameroon'
+store(&BITMAP) 'Cameroon.ico'
+store(&MESSAGE) 'Use ; or AltGr to access special characters.'
+store(&LAYOUTFILE) 'sil_cameroon_qwerty.keyman-touch-layout'
+store(&KEYBOARDVERSION) '6.1.0'
+store(&VISUALKEYBOARD) 'sil_cameroon_qwerty.kvks'
+store(&TARGETS) 'any'
+store(&KMW_EMBEDCSS) 'sil_cameroon_qwerty.css'
+store(&CasedKeys) [K_A]..[K_Z]
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+store(word) " aæαɛbɓcdɗeəfgʼꞌhiɨjklmnŋoɔøœpqrstuʉvwẅxyƴzAÆⱭƐBƁCDƊEƏFGꞋHIƗJKLMNŊOƆØŒPQRSTUɄVWẄXYƳZ◌-'" U+0300 U+0304 U+0301 U+030C U+0302 U+0303 U+0308 U+0327 U+030D U+0330
+store(letter) "aæαɛbɓcdɗeəfgʼꞌhiɨjklmnŋoɔøœpqrstuʉvwẅxyƴzAÆⱭƐBƁCDƊEƏFGꞋHIƗJKLMNŊOƆØŒPQRSTUɄVWẄXYƳZ◌"
+store(lc) "aæαɛbɓcdɗeəfgʼꞌhiɨjklmnŋoɔøœpqrstuʉvwẅxyƴz◌"
+store(uc) "AÆⱭƐBƁCDƊEƏFGʼꞋHIƗJKLMNŊOƆØŒPQRSTUɄVWẄXYƳZ◌"
+store(composed) "àèìǹòùẁỳÀÈÌǸÒÙẀỲὰᾺáćéǵíḱĺḿńóṕŕśúẃýźÁĆÉǴÍḰĹḾŃÓṔŔŚÚẂÝŹǽάǿǼΆǾâĉêĝĥîĵôŝûŵŷẑÂĈÊĜĤÎĴÔŜÛŴŶẐāēḡīōūȳĀĒḠĪŌŪȲǣᾱǢᾹäëḧïöẗüẍÿÄËḦÏÖÜẌŸạḅḍẹḥịḳḷṃṇọṛṣṭụṿẉỵẓẠḄḌẸḤỊḲḶṂṆỌṚṢṬỤṾẈỴẒçḑȩģḩķļņŗşţÇḐȨĢḨĶĻŅŖŞŢḛḭṵḚḬṴãẽĩñõũṽỹÃẼĨÑÕŨṼỸḉḈậệộẬỆỘẫễỗẪỄỖṻṺḹṝḸṜﬀﬃﬄﬁﬂĲĳǇǈǉǊǋǌﬆﬅ"
+store(comp-dia) "aeinouwyAEINOUWYαΑacegiklmnoprsuwyzACEGIKLMNOPRSUWYZæαøÆΑØaceghijosuwyzACEGHIJOSUWYZaegiouyAEGIOUYæαÆΑaehiotuxyAEHIOUXYabdehiklmnorstuvwyzABDEHIKLMNORSTUVWYZcdeghklnrstCDEGHKLNRSTeiuEIUaeinouvyAEINOUVYçÇạẹọẠẸỌâêôÂÊÔūŪḷṛḶṚfﬀﬀffIiLLlNNnsf"
+store(nfpunct) ",:;"
+store(final) ".!?"
+store(num) "0123456789"
+store(diablock) " 0123456789?!;:'-_=<©®>.,[]{}\|/@°#$%^&*()«»‹›‘“’”€¥£…†ʼꞌꞋ" U+0022
+store(dia) U+0300 U+0304 U+0301 U+030C U+0302 U+0303 U+0308 U+0327 U+030D U+0330 
+
+platform('touch') any(word) any(final) + [K_SPACE] > index(word,2) index(final,3) " " layer('shift')
+platform('touch') any(word) U+0020 + [K_SPACE] > index(word,2) U+002E " " layer('shift')
+any(composed) + [K_BKSP] > index(comp-dia,1)
+
+
++ [K_SPACE] > U+0020
++ [SHIFT K_SPACE] > U+0020
++ [LCTRL K_SPACE] > U+00A0
++ [RCTRL K_SPACE] > U+00A0
+
++ [K_0] > U+0030
++ [RALT K_0] > U+2019
++ [SHIFT K_0] > U+0029
++ [SHIFT RALT K_0] > U+201d
+
++ [K_1] > U+0031
++ [RALT K_1] > U+00bc
++ [SHIFT K_1] > U+0021
++ [SHIFT RALT K_1] > BEEP
+
++ [K_2] > U+0032
++ [RALT K_2] > U+00bd
++ [SHIFT K_2] > U+0040
++ [SHIFT RALT K_2] > BEEP
+
++ [K_3] > U+0033
++ [RALT K_3] > U+00be
++ [SHIFT K_3] > U+0023
++ [SHIFT RALT K_3] > BEEP
+
++ [K_4] > U+0034
++ [RALT K_4] > BEEP
++ [SHIFT K_4] > U+0024
++ [SHIFT RALT K_4] > U+20ac
+
++ [K_5] > U+0035
++ [RALT K_5] > BEEP
++ [SHIFT K_5] > U+0025
++ [SHIFT RALT K_5] > BEEP
+
++ [K_6] > U+0036
++ [RALT K_6] > BEEP
++ [SHIFT K_6] > U+005e
++ [SHIFT RALT K_6] > BEEP
+
++ [K_7] > U+0037
++ [RALT K_7] > BEEP
++ [SHIFT K_7] > U+0026
++ [SHIFT RALT K_7] > BEEP
+
++ [K_8] > U+0038
++ [RALT K_8] > BEEP
++ [SHIFT K_8] > U+002a
++ [SHIFT RALT K_8] > U+00d7
+
++ [K_9] > U+0039
++ [RALT K_9] > U+2018
++ [SHIFT K_9] > U+0028
++ [SHIFT RALT K_9] > U+201c
+
++ [K_A] > U+0061
++ [RALT K_A] > U+025b
++ [SHIFT K_A] > U+0041
++ [SHIFT RALT K_A] > U+0190
+
++ [K_B] > U+0062
++ [RALT K_B] > U+0253
++ [SHIFT K_B] > U+0042
++ [SHIFT RALT K_B] > U+0181
+
++ [K_C] > U+0063
++ [RALT K_C] > U+0327
++ [SHIFT K_C] > U+0043
++ [SHIFT RALT K_C] > U+00a9  
+any(diablock) + [RALT K_C] > context
+
++ [K_D] > U+0064
++ [RALT K_D] > U+0257
++ [SHIFT K_D] > U+0044
++ [SHIFT RALT K_D] > U+018a
+
++ [K_E] > U+0065
++ [RALT K_E] > U+0259
++ [SHIFT K_E] > U+0045
++ [SHIFT RALT K_E] > U+018f
+
++ [K_F] > U+0066
++ [RALT K_F] > U+00e6
++ [SHIFT K_F] > U+0046
++ [SHIFT RALT K_F] > U+00c6
+
++ [K_G] > U+0067
++ [RALT K_G] > U+02bc
++ [SHIFT K_G] > U+0047
++ [SHIFT RALT K_G] > U+a78b
+
++ [K_H] > U+0068
++ [RALT K_H] > U+03b1
++ [SHIFT K_H] > U+0048
++ [SHIFT RALT K_H] > U+2c6d
+
++ [K_I] > U+0069
++ [RALT K_I] > U+0268
++ [SHIFT K_I] > U+0049
++ [SHIFT RALT K_I] > U+0197
+
++ [K_J] > U+006a
++ [RALT K_J] > U+0330
++ [SHIFT K_J] > U+004a
++ [SHIFT RALT K_J] > U+0323
+any(diablock) + [RALT K_J] > context
+any(diablock) + [SHIFT RALT K_J] > context
+
++ [K_K] > U+006b
++ [RALT K_K] > U+1dc5     
++ [SHIFT K_K] > U+004b
++ [SHIFT RALT K_K] > U+1dc7
+any(diablock) + [RALT K_K] > context
+any(diablock) + [SHIFT RALT K_K] > context
+
++ [K_L] > U+006c
++ [RALT K_L] > U+1dc6
++ [SHIFT K_L] > U+004c
++ [SHIFT RALT K_L] > U+1dc4
+any(diablock) + [RALT K_L] > context
+any(diablock) + [SHIFT RALT K_L] > context
+
++ [K_M] > U+006d
++ [RALT K_M] > BEEP
++ [RALT SHIFT K_M] > U+2122
++ [SHIFT K_M] > U+004d
+
++ [K_N] > U+006e
++ [RALT K_N] > U+014b
++ [SHIFT K_N] > U+004e
++ [SHIFT RALT K_N] > U+014a
+
++ [K_O] > U+006f
++ [RALT K_O] > U+0254
++ [SHIFT K_O] > U+004f
++ [SHIFT RALT K_O] > U+0186
+
++ [K_P] > U+0070
++ [RALT K_P] > U+00f8
++ [SHIFT K_P] > U+0050
++ [SHIFT RALT K_P] > U+00d8
+
++ [K_Q] > U+0071
++ [RALT K_Q] > U+2014
++ [SHIFT K_Q] > U+0051
++ [SHIFT RALT K_Q] > U+2013
+
++ [K_R] > U+0072
++ [RALT K_R] > U+25cc
++ [SHIFT K_R] > U+0052
++ [SHIFT RALT K_R] > U+00ae
+
++ [K_S] > U+0073
++ [SHIFT K_S] > U+0053
++ [RALT K_S] > BEEP
++ [RALT SHIFT K_S] > BEEP
+
++ [K_T] > U+0074
++ [RALT K_T] > U+0153
++ [SHIFT K_T] > U+0054
++ [SHIFT RALT K_T] > U+0152
+
++ [K_U] > U+0075
++ [RALT K_U] > U+0289
++ [SHIFT K_U] > U+0055
++ [SHIFT RALT K_U] > U+0244
+
++ [K_V] > U+0076
++ [RALT K_V] > U+a78c
++ [SHIFT K_V] > U+0056
++ [SHIFT RALT K_V] > U+a78b
+
++ [K_W] > U+0077
++ [RALT K_W] > U+1e85
++ [SHIFT K_W] > U+0057
++ [SHIFT RALT K_W] > U+1e84
+
++ [K_X] > U+0078
++ [SHIFT K_X] > U+0058
++ [RALT K_X] > BEEP
++ [RALT SHIFT K_X] > BEEP
+
++ [K_Y] > U+0079
++ [RALT K_Y] > U+01b4
++ [SHIFT K_Y] > U+0059
++ [SHIFT RALT K_Y] > U+01b3
+
++ [K_Z] > U+007a
++ [RALT K_Z] > U+2026
++ [SHIFT K_Z] > U+005a
++ [SHIFT RALT K_Z] > U+2020
+
++ [K_COLON] >  dk(003b)
++ [SHIFT K_COLON] > U+003a   
++ [RALT K_COLON] > U+003b
++ [SHIFT RALT K_COLON] > U+003a
+
++ [K_EQUAL] > dk(003d)
++ [RALT K_EQUAL] > BEEP
++ [SHIFT K_EQUAL] > U+002b
++ [SHIFT RALT K_EQUAL] > U+00b1
+
++ [K_COMMA] > U+002c
++ [SHIFT K_COMMA] > U+003c
++ [RALT K_COMMA] > U+2039
++ [SHIFT RALT K_COMMA] > U+00ab
+
++ [K_HYPHEN] > U+002d
++ [RALT K_HYPHEN] > U+0304
++ [SHIFT K_HYPHEN] > U+005f
++ [RALT SHIFT K_HYPHEN] > BEEP
+any(diablock) + [RALT K_HYPHEN] > context
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > U+003e
++ [RALT K_PERIOD] > U+203a
++ [SHIFT RALT K_PERIOD] > U+00bb
+
++ [K_SLASH] > U+002f
++ [RALT SHIFT K_SLASH] > BEEP
++ [SHIFT K_SLASH] > U+003f
++ [RALT K_SLASH] > U+00f7
+
++ [K_BKQUOTE] > U+030d
++ [RALT K_BKQUOTE] > U+0060
++ [SHIFT K_BKQUOTE] > U+0303
++ [SHIFT RALT K_BKQUOTE] > U+007e
+any(diablock) + [K_BKQUOTE] > context  
+any(diablock) + [SHIFT K_BKQUOTE] > context 
+
++ [K_LBRKT] > U+0301
++ [RALT K_LBRKT] > U+005b
++ [SHIFT K_LBRKT] > U+030c 
++ [SHIFT RALT K_LBRKT] > U+007b
+any(diablock) + [K_LBRKT] > context
+any(diablock) + [SHIFT K_LBRKT] > context
+
++ [K_BKSLASH] > U+005c
++ [SHIFT K_BKSLASH] > U+007c
++ [RALT K_BKSLASH] > BEEP
++ [RALT SHIFT K_BKSLASH] > BEEP
+
++ [K_RBRKT] > U+0327
++ [RALT K_RBRKT] > U+005d
++ [SHIFT K_RBRKT] > U+0308
++ [SHIFT RALT K_RBRKT] > U+007d
+any(diablock) + [K_RBRKT] > context
+any(diablock) + [SHIFT K_RBRKT] > context
+
++ [K_QUOTE] > U+0300
++ [RALT K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0302
++ [SHIFT RALT K_QUOTE] > U+0022
+any(diablock) + [K_QUOTE] > context
+any(diablock) + [SHIFT K_QUOTE] > context
+
++ [K_oE2] > U+005c
++ [SHIFT K_oE2] > U+007c
++ [RALT K_oE2] > U+005c
++ [SHIFT RALT K_oE2] > U+007c
+
++ [T_FCFA] > 'FCFA'
++ [T_CAM] > nul
++ [T_003F] > U+003F
++ [T_003B] > U+003B
++ [T_003A] > U+003A
++ [T_002E] > U+002E
++ [T_002C] > U+002C
++ [T_0021] > U+0021
+
+
+c Handle Touch Diacritics (ignoring on non-letters)
+any(diablock) + [T_0300] > context
++ [T_0300] > U+0300
+any(diablock) + [T_0301] > context
++ [T_0301] > U+0301
+any(diablock) + [T_0302] > context
++ [T_0302] > U+0302
+any(diablock) + [T_0303] > context
++ [T_0303] > U+0303
+any(diablock) + [T_0304] > context
++ [T_0304] > U+0304
+any(diablock) + [T_0308] > context
++ [T_0308] > U+0308
+any(diablock) + [T_030C] > context
++ [T_030C] > U+030C
+any(diablock) + [T_030D] > context
+any(diablock) + [SHIFT T_030D] > context
++ [T_030D] > U+030D
++ [SHIFT T_030D] > U+030D
+any(diablock) + [T_0327] > context
++ [T_0327] > U+0327
+any(diablock) + [T_0330] > context
+any(diablock) + [SHIFT T_0330] > context
++ [T_0330] > U+0330
++ [SHIFT T_0330] > U+0330
+any(diablock) + [T_1DC4] > context
+any(diablock) + [SHIFT T_1DC4] > context
++ [T_1DC4] > U+1DC4
++ [SHIFT T_1DC4] > U+1DC4
+any(diablock) + [T_1DC5] > context
+any(diablock) + [SHIFT T_1DC5] > context
++ [T_1DC5] > U+1DC5
++ [SHIFT T_1DC5] > U+1DC5
+any(diablock) + [T_1DC6] > context
+any(diablock) + [SHIFT T_1DC6] > context
++ [T_1DC6] > U+1DC6
++ [SHIFT T_1DC6] > U+1DC6
+any(diablock) + [T_1DC7] > context
+any(diablock) + [SHIFT T_1DC7] > context
++ [T_1DC7] > U+1DC7
++ [SHIFT T_1DC7] > U+1DC7
+
+match > use(deadkeys)
+
+group(deadkeys)
+
+store(dkf003b) U+0020 U+0030 U+0029 U+0031 U+0032 U+0033 U+0024 U+002A U+0039 U+0028 U+0061 U+0041 U+0062 U+0042 U+0063 U+0043 U+0064 U+0044 U+0065 U+0045 U+0066 U+0046 U+0067 U+0047 U+0068 U+0048 U+0069 U+0049 U+006A U+004A U+006B U+004B U+006C U+004C U+004D U+006E U+004E U+006F U+004F U+0070 U+0050 U+0071 U+0051 U+0072 U+0052 U+0074 U+0054 U+0075 U+0055 U+0076 U+0056 U+0077 U+0057 U+0079 U+0059 U+007A U+005A U+002B U+002D U+002E U+002F U+002C U+003C U+003E U+030D U+0303 U+0301 U+030C U+0327 U+0308 U+0300 U+0302 U+0078 U+0058 U+006D U+005C U+0073 U+0053 U+0034 U+0035 U+0036 U+0037 U+0038    
+store(dkt003b) U+003B U+2019 U+201D U+00BC U+00BD U+00BE U+20AC U+00D7 U+2018 U+201C U+025B U+0190 U+0253 U+0181 U+0327 U+00A9 U+0257 U+018A U+0259 U+018F U+00E6 U+00C6 U+02BC U+A78B U+03B1 U+2C6D U+0268 U+0197 U+0330 U+0323 U+1DC5 U+1DC7 U+1DC6 U+1DC4 U+2122 U+014B U+014A U+0254 U+0186 U+00F8 U+00D8 U+2014 U+2013 U+25CC U+00AE U+0153 U+0152 U+0289 U+0244 U+A78C U+A78B U+1E85 U+1E84 U+01B4 U+01B3 U+2026 U+2020 U+00B1 U+0304 U+203A U+00F7 U+2039 U+00AB U+00BB U+0060 U+007E U+005B U+007B U+005D U+007D U+0027 U+0022 nul    nul    nul    nul    nul    nul    nul    nul    nul    nul    nul  
+dk(003b) any(dkf003b) > index(dkt003b, 2)
+
+dk(003b) dk(003d) > U+003D
+platform('hardware') dk(003b) dk(003b) > U+003b
+
+dk(003d) dk(003d) > U+003D 
+store(dkf003d) U+0020 U+0304 U+030d U+0303 U+0301 U+030c U+0327 U+0300 U+0302
+store(dkt003d) U+003d U+02c9 U+02c8 U+007e U+02ca U+02c7 U+00b8 U+02cb U+02c6
+dk(003d) any(dkf003d) > index(dkt003d, 2)  

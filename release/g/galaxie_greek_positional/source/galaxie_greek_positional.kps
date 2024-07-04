@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>10.0.1201.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL="">2.2</Version>
+    <Name URL="">Galaxie Greek (Phonetic)</Name>
+    <Copyright URL="">Copyright 2004-2018 Galaxie Software and SIL International</Copyright>
+    <Description>This keyboard layout is designed for Koine Greek, a trade language of
+the ancient Mediterranean and the language of the New Testament and
+Septuagint Scriptures.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\galaxie_greek_positional.js</Name>
+      <Description>File galaxie_greek_positional.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\galaxie_greek_positional.kvk</Name>
+      <Description>File galaxie_greek_positional.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\galaxie_greek_positional.kmx</Name>
+      <Description>Keyboard Galaxie Greek (Phonetic)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>welcome\keyboardchart.htm</Name>
+      <Description>File keyboardchart.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf</Name>
+      <Description>Font GentiumPlus Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Galaxie Greek (Phonetic)</Name>
+      <ID>galaxie_greek_positional</ID>
+      <Version>1.0</Version>
+      <WebDisplayFonts><Font Filename="GentiumPlus-Regular.ttf" /></WebDisplayFonts>
+      <Languages>
+        <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
+        <Language ID="el">Modern Greek (1453-)</Language>
+      </Languages>
+      <Examples>
+        <Example ID="grc-Grek" Keys="e ] d a v k r u s e n space o [ space I ] h s o u ~ s space" Text="ἐδάκρυσεν ὁ Ἰησοῦς " Note="&quot;Jesus wept&quot;, John 11:35; note final sigma entered using s then spacebar" />
+        <Example ID="el" Keys="e d a k r u s e n space o space I h s o u s space" Text="εδακρυσεν ο Ιησους " Note="&quot;Jesus wept&quot;, John 11:35; note final sigma entered using s then spacebar" />
+      </Examples>
+  </Keyboard>
+  </Keyboards>
+  <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiegreekandhebrew" Relationship="deprecates" />
+    <RelatedPackage ID="galaxiegreekkm6" Relationship="deprecates" />
+  </RelatedPackages>
+</Package>

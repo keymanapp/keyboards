@@ -1,22 +1,22 @@
-Nłeʔkepmxcin keyboard
+Nɬeʔkepmxcín keyboard
 ======================
 
-Copyright (C) 2015 First Peoples' Cultural Foundation
-
-Version 9.0
-
-Nłeʔkepmxcin keyboard layout for Unicode
+Nɬeʔkepmxcín keyboard layout for Unicode
 
 Links
 -----
 
- * Home:     <http://www.fpcf.ca/>
- * Deployed: <http://s.keyman.com/keyboard/fv_nlekepmxcin>
+ * Home:     <https://www.firstvoices.com>
+ * Deployed: <https://keyman.com/keyboards/fv_nlekepmxcin>
  * Help:     <http://help.keyman.com/keyboard/fv_nlekepmxcin>
  
 Supported Platforms
 -------------------
 
  * Windows
+ * macOS
+ * Linux
  * Web
  * Mobile
+
+

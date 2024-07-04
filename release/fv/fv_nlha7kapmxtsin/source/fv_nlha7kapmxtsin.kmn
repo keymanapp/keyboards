@@ -1,0 +1,155 @@
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '10.0'
+store(&TARGETS) 'any'
+c store(&ETHNOLOGUECODE) "thp"
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&NAME) 'Nlha7kapmxtsin'
+store(&VISUALKEYBOARD) 'fv_nlha7kapmxtsin.kvks'
+store(&KMW_HELPFILE) 'fv_nlha7kapmxtsin-help.htm'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_nlha7kapmxtsin.keyman-touch-layout"
+
++ [SHIFT T_W_0] > 'W̓' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O_0] > 'Ó' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > '7' layer('default')
++ [SHIFT T_F_0] > 'G̱̓' layer('default')
++ [SHIFT T_F] > 'G̱' layer('default')
++ [SHIFT T_G_0] > 'G̓' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'Ḵ' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L_0] > 'L̓' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z_0] > 'Z̓' layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C] > 'X̱' layer('default')
++ [SHIFT T_V_0] > '!' layer('default')
++ [SHIFT T_V] > '?' layer('default')
++ [SHIFT T_B_0] > ',' layer('default')
++ [SHIFT T_B] > '.' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E_0] > 'é'
++ [T_E] > 'e'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U_0] > 'ú'
++ [T_U] > 'u'
++ [T_I_0] > 'í'
++ [T_I] > 'i'
++ [T_O_0] > 'ó'
++ [T_O] > 'o'
++ [T_P] > 'p'
++ [T_A_0] > 'á'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > '7'
++ [T_F_0] > 'g̱̓'
++ [T_F] > 'g̱'
++ [T_G_0] > 'g̓'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'ḵ'
++ [T_K] > 'k'
++ [T_L_0] > 'l̓'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z_0] > 'z̓'
++ [T_Z] > 'z'
++ [T_X] > 'x'
++ [T_C] > 'x̱'
++ [T_V_0] > '!'
++ [T_V] > '?'
++ [T_B_0] > ','
++ [T_B] > '.'
++ [T_N_0] > 'n̓'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
+
+c --- RULES SHARED ACROSS PLATFORMS ---
+
+store(NeedsAcute) 'aeiouAEIOU'
+store(HasAcute) 'áéíóúÁÉÍÓÚ'
+store(AcuteKeys) [K_SLASH] [T_ACU] [SHIFT T_ACU]
+
+any(NeedsAcute) + any (AcuteKeys) > index(HasAcute,1)
+
+
+store(NeedsComApos) 'glmnwyzGLNMWYZ'
+store(ComAposKeys) [K_LBRKT] [T_COMAPOS] [SHIFT T_COMAPOS]
+
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
+'g̱' + any(ComAposKeys) > 'g̱̓'
+'G̱' + any(ComAposKeys) > 'G̱̓'
+
+c --- BEGIN DESKTOP RULES ---
+store(NeedsLowLine) 'kgxKGX'
+store(LowLineKey) [K_RBRKT]
+
+any(NeedsLowLine) + any(LowLineKey) > index(NeedsLowLine,1) U+0331
+'g̓' + any(LowLineKey) > 'g̱̓'
+'G̓' + any(LowLineKey) > 'G̱̓'
+
+c --- language keys ----
++ [K_SLASH] > '́' c combining acute
++ [K_LBRKT] > '̓' c combining above comma
++ [K_RBRKT] > '̱' c combining macron below
+
+c --- original punctuation ---
++ [RALT K_SLASH] > '/'
++ [RALT SHIFT K_SLASH] > '/' c added so that slash can be typed while using Google Drive
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
+
+c --- stacking prevention ---
+store(AccentKeys) [K_SLASH] [K_LBRKT] [K_RBRKT]
+store(AboveAccents) U+0301 U+0313 c combining acute, combining above comma
+store(AboveAccentKeys)[K_SLASH] [K_LBRKT]
+store(BelowAccent) U+0331 c combining below macron
+store(BelowAccentKeys) [K_RBRKT]
+
+any(HasAcute) + any(AboveAccentKeys) > context beep
+any(AboveAccents) + any(AboveAccentKeys) > context beep
+any(BelowAccent) + any(BelowAccentKeys) > context beep
+'g̱̓' + any(AccentKeys) > context beep
+'G̱̓' + any(AccentKeys) > context beep
+
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
+any(NonLetters) + any(AccentKeys) > context beep

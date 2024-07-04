@@ -1,0 +1,139 @@
+c This keyboard is designed for the Pashto language of Afghanistan and Pakistan, in its standard Perso-Arabic script, as used in the Pashto speaking areas of Afghanistan and Pakistan. It is based on phonetic keyboard for Pashto Language developed by Mr.Rehmat Aziz Chitrali for Khowar Academy(literary Association working on the language and culture documentation in Northern Pakistan) and used in Windows 8, Mac OSX and Linux Ubuntu as Pashto Keyboard.
+c This is the first Pashto Phonetic keyboard created by Rehmat Aziz Chitrali, Pakistani linguistic, Software Engineer, Computer Scientist and researcher. This is keyboard for Pashto Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Pashto language.
+c rac_pashto.kmn
+c Author:   Rehmat Aziz Chitrali
+c Date:     10-NOV 2018
+c Original Creation Date:     7-APR-2016
+store(&VERSION) '9.0'
+store(&NAME) 'Rachitrali-Pashto'
+store(&COPYRIGHT) '© 2019-2020 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com'
+c store(&ETHNOLOGUECODE) 'pus'
+store(&BITMAP) 'rac_pashto.ico'
+store(&VISUALKEYBOARD) 'rac_pashto.kvks'
+store(&TARGETS) 'any'
+store(&KMW_RTL) '1'
+store(&LAYOUTFILE) 'rac_pashto.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.0.2'
+store(&MESSAGE) 'Read Pashto, Write Pashto and Speak Pashto -- Message from  Rehmat Aziz Chitrali'
+store(&KMW_HELPTEXT) 'help.keyman.com/keyboard/rac_pashto/1.0/rac_pashto.php'
+c store(&LANGUAGE) 'x0463'
+c store(&WINDOWSLANGUAGES) 'x0463'
+begin Unicode > use(main)
+
+
+group(main) using keys
++ [CTRL ALT K_PERIOD] > '\'
++ [CTRL ALT K_QUOTE] > '}'
++ [CTRL ALT K_COLON] > '{'
++ [CTRL ALT K_SLASH] > '/'
++ [CTRL ALT K_BKSLASH] > '؏'
++ [CTRL ALT K_RBRKT] > ']'
++ [CTRL ALT K_LBRKT] > '['
++ [CTRL ALT K_0] > ')'
++ [CTRL ALT K_9] > '('
++ [CTRL ALT K_8] > '*'
++ [CTRL ALT K_7] > '&'
++ [CTRL ALT K_6] > '^'
++ [CTRL ALT K_5] > '%'
++ [CTRL ALT K_4] > '$'
++ [CTRL ALT K_3] > '#'
++ [CTRL ALT K_1] > '!'
++ [SHIFT K_W] > '@'
++ [SHIFT K_Q] > 'ْ'
++ [K_SLASH] > 'ړ'
++ [SHIFT K_M] > 'ّ'
++ [SHIFT K_BKSLASH] > 'ۍ'
++ [SHIFT K_I] > 'ِ'
++ [SHIFT K_E] > 'ٰ'
++ [SHIFT K_BKQUOTE] > 'ٔ'
++ [SHIFT K_COLON] > ':'
++ [K_BKSLASH] > 'ډ'
++ [K_BKQUOTE] > 'ټ'
++ [K_PERIOD] > U+06D4
++ [K_COMMA] > U+060C
++ [K_M] > U+0645
++ [K_N] > U+0646
++ [K_B] > U+0628
++ [K_V] > U+0637
++ [K_C] > U+0686
++ [K_X] > U+0634
++ [K_Z] > U+0632
++ [K_QUOTE] > 'ګ'
++ [K_COLON] > U+061B
++ [K_L] > U+0644
++ [K_K] > U+06A9
++ [K_J] > U+062C
++ [K_H] > U+062D
++ [K_G] > U+06AF
++ [K_F] > U+0641
++ [K_D] > U+062F
++ [K_S] > U+0633
++ [K_A] > U+0627
++ [K_RBRKT] > 'ځ'
++ [K_LBRKT] > 'څ'
++ [K_P] > U+067E
++ [K_O] > U+06C1
++ [K_I] > U+06CC
++ [K_U] > 'ء'
++ [K_Y] > U+06D2
++ [K_T] > U+062A
++ [K_R] > U+0631
++ [K_E] > U+0639
++ [K_W] > U+0648
++ [K_Q] > U+0642
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_0] > U+06F0
++ [K_9] > U+06F9
++ [K_8] > U+06F8
++ [K_7] > U+06F7
++ [K_6] > U+06F6
++ [K_5] > U+06F5
++ [K_4] > U+06F4
++ [K_3] > U+06F3
++ [K_2] > U+06F2
++ [K_1] > U+06F1
+
+c Shift keys
++ [SHIFT K_PERIOD] > 'ږ'
++ [SHIFT K_SLASH] > U+061F
++ [SHIFT K_G] > U+063A
++ [SHIFT K_COMMA] > 'ڼ'
++ [SHIFT K_N] > 'ں'
++ [SHIFT K_B] > 'ً'
++ [SHIFT K_V] > U+0638
++ [SHIFT K_C] > U+062B
++ [SHIFT K_X] > U+0698
++ [SHIFT K_Z] > U+0630
++ [SHIFT K_QUOTE] > U+0022
++ [SHIFT K_L] > 'ۂ'
++ [SHIFT K_K] > U+062E
++ [SHIFT K_J] > U+0636
++ [SHIFT K_H] > U+06BE
++ [SHIFT K_F] > 'ې'
++ [SHIFT K_D] > U+0688
++ [SHIFT K_S] > U+0635
++ [SHIFT K_A] > U+0622
++ [SHIFT K_RBRKT] > 'ي'
++ [SHIFT K_LBRKT] > 'ښ'
++ [SHIFT K_P] > 'ُ'
++ [SHIFT K_O] > 'ۃ'
++ [SHIFT K_U] > 'ئ'
++ [SHIFT K_Y] > 'َ'
++ [SHIFT K_T] > U+0679
++ [SHIFT K_R] > U+0691
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_0] > U+0030
++ [SHIFT K_9] > U+0039
++ [SHIFT K_8] > U+0038
++ [SHIFT K_7] > U+0037
++ [SHIFT K_6] > U+0036
++ [SHIFT K_5] > U+0035
++ [SHIFT K_4] > U+0034
++ [SHIFT K_3] > U+0033
++ [SHIFT K_2] > U+0032
++ [SHIFT K_1] > U+0031
+
+c Ctrl+Alt keys
++ [CTRL ALT K_oE2] > U+060F

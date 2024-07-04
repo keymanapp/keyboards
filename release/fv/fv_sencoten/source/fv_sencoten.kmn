@@ -1,41 +1,142 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "str"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '9.2.2'
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "str"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'SENĆOŦEN'
-store(&BITMAP) 'fv_sencoten.bmp'
+store(&BITMAP) 'fv_sencoten.ico'
 store(&HOTKEY) '[CTRL SHIFT K_6]'
-store(&VISUALKEYBOARD) 'fv_sencoten.kvk'
+store(&VISUALKEYBOARD) 'fv_sencoten.kvks'
+store(&KMW_HELPFILE) 'fv_sencoten_kmw_help.htm'
  
 begin Unicode > use(main)                      
 group(main) using keys  
 
-store(quote0) "[{]}" [RALT K_9] [RALT K_0] [SHIFT RALT K_9] [SHIFT RALT K_0] [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT]  
-store(quote1) "‘“’”«»‹›[]{}"
-+ any(quote0) > index(quote1,1) 
+c --- START OF TOUCH LAYOUT RULES ---
 
-store(acu0) 'ACIKSaciks'
-store(acu1) 'ÁĆÍḰŚáćíḱś'   
-store(sla0) 'ACTact' 
-store(sla1) "ȺȻȾⱥȼⱦ"
-store(bar0) 'KTLtl'
-store(bar1) '₭ŦȽŧƚ' 
-store(mau0) 'KNTknt'
-store(mau1) 'ḴṈṮḵṉṯ'
-store(mau2) 'WXwx'  
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
-any(sla0) + '/' > index(sla1,1)
-any(acu0) + "'" > index(acu1,1)
-any(bar0) + "-" > index(bar1,1)       
-'k' + '-' > 'k' U+0335  
-any(mau0) + "=" > index(mau1,1)
-any(mau2) + "=" > index(mau2,1) U+0331  
+store(&LAYOUTFILE) 'fv_sencoten.keyman-touch-layout'
 
-store(punc2) "/'-=" 
-store(punc1) [RALT K_SLASH] [RALT K_QUOTE] [RALT K_HYPHEN] [RALT K_EQUAL]
-+ any(punc1) > index(punc2,1)  
++ [T_Q] > 'Q'
++ [T_W_0] > 'W̱'
++ [T_W] > 'W'
++ [T_E] > 'E'
+'N' + [T_R] > 'Ṉ'
+'W' + [T_R] > 'W̱'
+'K' + [T_R] > 'Ḵ'
+'T' + [T_R] > 'Ṯ'
+'X' + [T_R] > 'X̱'
++ [T_T_0] > 'Ṯ'
++ [T_T_1] > 'Ⱦ'
++ [T_T_2] > 'Ŧ'
++ [T_T] > 'T'
++ [T_Y] > 'Y'
++ [T_U] > 'U'
++ [T_I_0] > 'Í'
++ [T_I] > 'I'
++ [T_O] > 'O'
++ [T_P] > 'P'
++ [T_A_0] > 'Á'
++ [T_A_1] > 'Ⱥ'
++ [T_A] > 'A'
++ [T_S_0] > 'Ś'
++ [T_S] > 'S'
++ [T_D] > 'D'
+'A' + [T_F] > 'Ⱥ'
+'T' + [T_F] > 'Ⱦ'
+'C' + [T_F] > 'Ȼ'
+'K' + [T_G] > '₭'
+'T' + [T_G] > 'Ŧ'
+'L' + [T_G] > 'Ƚ'
++ [T_H] > 'H'
++ [T_J] > 'J'
++ [T_K_0] > 'Ḵ'
++ [T_K_1] > 'Ḱ'
++ [T_K_2] > '₭'
++ [T_K] > 'K'
++ [T_L_0] > 'Ƚ'
++ [T_L] > 'L'
++ [T_COLON] > U+00B8
++ [T_Z] > 's'
++ [T_X] > 'Z'
++ [T_C_0] > 'X̱'
++ [T_C] > 'X'
++ [T_V_0] > 'Ć'
++ [T_V_1] > 'Ȼ'
++ [T_V] > 'C'
+'I' + [T_B] > 'Í'
+'A' + [T_B] > 'Á'
+'S' + [T_B] > 'Ś'
+'K' + [T_B] > 'Ḱ'
+'C' + [T_B] > 'Ć'
++ [T_N] > 'B'
++ [T_M_0] > 'Ṉ'
++ [T_M] > 'N'
++ [T_COMMA] > 'M'
 
+c --- END OF TOUCH LAYOUT RULES ---
+
+c in capslock, s should un-caps into lowercase, comma swaps with cedilla
+store(&CasedKeys) 's' [K_COMMA]
+
++ 's' > 's'
++ 'S' > 'S'
++ [K_COMMA] > ','
++ [SHIFT K_COMMA] > '¸' c cedilla
+
+c period key produces period no matter what shift state, to keep brackets parallel
+
++ [SHIFT NCAPS K_PERIOD] > '.'
++ [SHIFT CAPS K_PERIOD] > '.'
+
+c regardless of caps state, /'-;_ keys add a diacritic to valid uppercase chars; otherwise produce normal key
+
+store(acu0) 'ACIKS'
+store(acu1) 'ÁĆÍḰŚ'   
+store(sla0) 'ACT' 
+store(sla1) "ȺȻȾ"
+store(bar0) 'KTL'
+store(bar1) '₭ŦȽ' 
+store(mau0) 'KNT'
+store(mau1) 'ḴṈṮ'
+store(mau2) 'WX'  
+
+store(slashkey) [NCAPS K_SLASH] [CAPS K_SLASH]
+store(acutekey) [NCAPS K_QUOTE] [CAPS K_QUOTE]
+store(strokekey) [NCAPS K_HYPHEN] [CAPS K_HYPHEN]
+store(underkey) [NCAPS K_COLON] [CAPS K_COLON]
+store(underkey2) [NCAPS SHIFT K_HYPHEN] [CAPS SHIFT K_HYPHEN]
+
+any(sla0) + any(slashkey) > index(sla1,1)
+any(acu0) + any(acutekey) > index(acu1,1)
+any(bar0) + any(strokekey) > index(bar1,1) 
+any(mau0) + any(underkey) > index(mau1,1)
+any(mau0) + any(underkey2) > index(mau1,1)
+any(mau2) + any(underkey) > index(mau2,1) U+0331
+any(mau2) + any(underkey2) > index(mau2,1) U+0331
+
++ any(slashkey) > '/'
++ any(acutekey) > "'"
++ any(strokekey) > '-'
++ any(underkey) > ';' 
++ any(underkey2) > '_' 
+
+c regardless of caps state, replace brackets with angle quotes
+
+store(quote0ncaps)  [NCAPS K_LBRKT] [NCAPS K_RBRKT] [SHIFT NCAPS K_LBRKT] [SHIFT NCAPS K_RBRKT]
+store(quote0caps)  [CAPS K_LBRKT] [CAPS K_RBRKT] [SHIFT CAPS K_LBRKT] [SHIFT CAPS K_RBRKT]
+store(quote1) "«»‹›"
++ any(quote0ncaps) > index(quote1,1) 
++ any(quote0caps) > index(quote1,1) 
+
+c regardless of caps state, store original key values on right alt layer
+
+store(original0ncaps) [RALT NCAPS K_SLASH] [RALT NCAPS K_QUOTE] [RALT NCAPS K_HYPHEN] [RALT NCAPS K_COLON] [RALT NCAPS K_COMMA] [SHIFT NCAPS RALT K_COMMA] [SHIFT NCAPS RALT K_PERIOD] [RALT NCAPS K_LBRKT] [RALT NCAPS K_RBRKT] [SHIFT NCAPS RALT K_LBRKT] [SHIFT NCAPS RALT K_RBRKT] [NCAPS SHIFT RALT K_HYPHEN]
+store(original0caps) [RALT CAPS K_SLASH] [RALT CAPS K_QUOTE] [RALT CAPS K_HYPHEN] [RALT CAPS K_COLON] [RALT CAPS K_COMMA] [SHIFT CAPS RALT K_COMMA] [SHIFT CAPS RALT K_PERIOD] [RALT CAPS K_LBRKT] [RALT CAPS K_RBRKT] [SHIFT CAPS RALT K_LBRKT] [SHIFT CAPS RALT K_RBRKT] [CAPS SHIFT RALT K_HYPHEN]
+store(original1) "/'-;,<>[]{}_" 
++ any(original0ncaps) > index(original1,1)  
++ any(original0caps) > index(original1,1)  
 
 
 match > use(normalize)
@@ -43,10 +144,4 @@ nomatch > use(x)
 
 group(normalize)
 
-c any(overaccent) any(underaccent) > context(2) context(1)
-
-
 group(x) using keys
-
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)

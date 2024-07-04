@@ -1,35 +1,24 @@
-Keyboard Data
--------------
+Torwali (SIL) Keyboard 
+=====================
 
-* Name:           Torwali
-* Copyright:      (C) SIL International
-* Version:        0.6
-* Keyman Version: 9.0
-* BCP-47 codes:   trw-Arab
+Copyright (C) 2016-2020 SIL International
 
-Description
------------
+Version 1.0.2
+
+__DESCRIPTION__
 
 This keyboard layout is designed for Torwali. It includes 
 an on screen keyboard which can be viewed by clicking on the Keyman icon 
 and selecting the On Screen Keyboard menu item.   
 
-Links
------
 
- * Home:     <http://keymankeyboards.com/>
- * Contact:  <support@keyman.com>
- 
 Supported Platforms
 -------------------
 
  * Windows
  * Macosx
+ * Linux
  * Web
  * iOS
  * Android
 
-Todo
-----
-
-* Change "home" url when there is a release on keyman site

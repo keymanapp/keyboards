@@ -1,7 +1,14 @@
-Template Change History
+Sinhala Change History
 =======================
 
-1.0 (1 Jan 2015)
------------------
+1.0.2 (1 Dec 2023)
+--------------------
+* Remove font from package
 
-* Created by you
+1.0.1 (18 June 2018)
+--------------------
+* Touch keyboard added to package
+
+1.0 (2008)
+-----------------
+* Created by Tavultesoft

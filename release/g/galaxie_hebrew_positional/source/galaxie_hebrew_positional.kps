@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Galaxie Hebrew (Positional)</Name>
+    <Copyright URL="">2004-2018 Galaxie Software and SIL International</Copyright>
+    <Description>This keyboard is designed for Biblical Hebrew, a Semitic language of the
+ancient Near East and the language of the Hebrew Bible</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\galaxie_hebrew_positional.kvk</Name>
+      <Description>File galaxie_hebrew_positional.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\galaxie_hebrew_positional.kmx</Name>
+      <Description>Keyboard Galaxie Hebrew (Positional)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Galaxie Hebrew (Positional)</Name>
+      <ID>galaxie_hebrew_positional</ID>
+      <Version>2.2</Version>
+      <Languages>
+        <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
+        <Language ID="he">Hebrew</Language>
+      </Languages>
+      <Examples>
+        <Example ID="hbo-Hebr" Keys="b \\ = r @ a v ! y t" Text="בְּרֵאשִׁית" Note="&quot;In the beginning&quot; or &quot;Genesis&quot;" />
+      </Examples>
+  </Keyboard>
+  </Keyboards>
+  <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiegreekandhebrew" Relationship="deprecates" />
+    <RelatedPackage ID="galaxiehebrewkm6" Relationship="deprecates" />
+  </RelatedPackages>
+</Package>

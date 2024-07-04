@@ -1,22 +1,21 @@
-'Uwik̓ala keyboard
+’Wuìk̓ala keyboard
 ======================
 
-Copyright (C) 2015 First Peoples' Cultural Foundation
-
-Version 9.0
-
-'Uwik̓ala keyboard layout for Unicode
+’Wuìk̓ala keyboard layout for Unicode
 
 Links
 -----
 
- * Home:     <http://www.fpcf.ca/>
- * Deployed: <http://s.keyman.com/keyboard/fv_uwikala>
+ * Home:     <https://www.firstvoices.com>
+ * Deployed: <https://keyman.com/keyboards/fv_uwikala>
  * Help:     <http://help.keyman.com/keyboard/fv_uwikala>
  
 Supported Platforms
 -------------------
 
  * Windows
+ * macOS
+ * Linux
  * Web
  * Mobile
+

@@ -1,22 +1,20 @@
-Nuučaan̓uł keyboard
+nuučaan̓uł keyboard
 ======================
 
-Copyright (C) 2015 First Peoples' Cultural Foundation
-
-Version 9.0
-
-Nuučaan̓uł keyboard layout for Unicode
+nuučaan̓uł keyboard layout for Unicode
 
 Links
 -----
 
- * Home:     <http://www.fpcf.ca/>
- * Deployed: <http://s.keyman.com/keyboard/fv_nuucaanul>
+ * Home:     <https://www.firstvoices.com>
+ * Deployed: <https://keyman.com/keyboards/fv_nuucaanul>
  * Help:     <http://help.keyman.com/keyboard/fv_nuucaanul>
  
 Supported Platforms
 -------------------
 
  * Windows
+ * macOS
+ * Linux
  * Web
  * Mobile

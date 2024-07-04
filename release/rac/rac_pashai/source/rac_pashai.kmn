@@ -1,0 +1,145 @@
+c This keyboard is designed for the Pashai language of Afghanistan, in its standard Perso-Arabic script, as used in the Pashai speaking areas of Afghanistan.  It is based on phonetic keyboard for Pashai Language developed by Mr.Rehmat Aziz Chitrali for Khowar Academy(literary Association working on the language and culture documentation in Northern Pakistan) and used in Windows 8, Mac OSX and Linux Ubuntu as Pashai Keyboard.
+c This is the first Pashai Phonetic keyboard created by Rehmat Aziz Chitrali, Pakistani linguistic, Software Engineer, Computer Scientist and researcher. This is keyboard for Pashai Language based on the keyboard layout as developed by Mr.Rehmat Aziz Chitrali and approved by Khowar Academy of Pakistan as standard keyboard for Pashai language.
+c rac_pashai.kmn
+c Author:   Rehmat Aziz Chitrali
+c Date:     10-NOV 2018
+c Original Creation Date:     7-APR-2016
+store(&VERSION) '10.0'
+store(&NAME) 'Rachitrali-Pashai'
+store(&COPYRIGHT) '© 2018-2020 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Chitral Pakistan Email: rachitrali@yahoo.com'
+c store(&ETHNOLOGUECODE) 'psi'
+store(&BITMAP) 'rac_pashai.ico'
+store(&VISUALKEYBOARD) 'rac_pashai.kvks'
+store(&TARGETS) 'any'
+store(&KMW_RTL) '1'
+store(&LAYOUTFILE) 'rac_pashai.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&MESSAGE) 'Read Pashai,  Write Pashai and Speak Pashai -- Message from  Rehmat Aziz Chitrali'
+store(&KMW_HELPTEXT) 'help.keyman.com/keyboard/rac_pashai/1.0/rac_pashai.php'
+begin Unicode > use(main)
+
+
+group(main) using keys
++ [RALT K_J] > 'ٖ'
++ [RALT K_N] > 'ٔ'
++ [SHIFT K_Q] > 'ڰ'
++ [K_SLASH] > 'ړ'
++ [SHIFT K_M] > 'ّ'
++ [SHIFT K_BKSLASH] > 'ۍ'
++ [SHIFT K_I] > 'ِ'
++ [SHIFT K_W] > 'ڵ'
++ [SHIFT K_E] > 'ٰ'
++ [SHIFT K_BKQUOTE] > 'أ'
++ [SHIFT K_COLON] > ':'
++ [K_BKSLASH] > 'ډ'
++ [K_BKQUOTE] > 'ټ'
++ [K_PERIOD] > U+06D4
++ [K_COMMA] > U+060C
++ [K_M] > U+0645
++ [K_N] > U+0646
++ [K_B] > U+0628
++ [K_V] > U+0637
++ [K_C] > U+0686
++ [K_X] > U+0634
++ [K_Z] > U+0632
++ [K_QUOTE] > 'ك'
++ [K_COLON] > U+061B
++ [K_L] > U+0644
++ [K_K] > U+06A9
++ [K_J] > U+062C
++ [K_H] > U+062D
++ [K_G] > U+06AF
++ [K_F] > U+0641
++ [K_D] > U+062F
++ [K_S] > U+0633
++ [K_A] > U+0627
++ [K_RBRKT] > 'ځ'
++ [K_LBRKT] > 'څ'
++ [K_P] > U+067E
++ [K_O] > U+06C1
++ [K_I] > U+06CC
++ [K_U] > 'ء'
++ [K_Y] > U+06D2
++ [K_T] > U+062A
++ [K_R] > U+0631
++ [K_E] > U+0639
++ [K_W] > U+0648
++ [K_Q] > U+0642
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_0] > U+06F0
++ [K_9] > U+06F9
++ [K_8] > U+06F8
++ [K_7] > U+06F7
++ [K_6] > U+06F6
++ [K_5] > U+06F5
++ [K_4] > U+06F4
++ [K_3] > U+06F3
++ [K_2] > U+06F2
++ [K_1] > U+06F1
+
+c Shift keys
++ [SHIFT K_PERIOD] > 'ږ'
++ [SHIFT K_SLASH] > U+061F
++ [SHIFT K_G] > U+063A
++ [SHIFT K_COMMA] > 'ڼ'
++ [SHIFT K_N] > 'ں'
++ [SHIFT K_B] > 'ً'
++ [SHIFT K_V] > U+0638
++ [SHIFT K_C] > U+062B
++ [SHIFT K_X] > U+0698
++ [SHIFT K_Z] > U+0630
++ [SHIFT K_QUOTE] > U+0022
++ [SHIFT K_L] > 'ۂ'
++ [SHIFT K_K] > U+062E
++ [SHIFT K_J] > U+0636
++ [SHIFT K_H] > U+06BE
++ [SHIFT K_F] > 'ې'
++ [SHIFT K_D] > U+0688
++ [SHIFT K_S] > U+0635
++ [SHIFT K_A] > U+0622
++ [SHIFT K_RBRKT] > 'ي'
++ [SHIFT K_LBRKT] > 'ښ'
++ [SHIFT K_P] > 'ُ'
++ [SHIFT K_O] > 'ۃ'
++ [SHIFT K_U] > 'ئ'
++ [SHIFT K_Y] > 'َ'
++ [SHIFT K_T] > U+0679
++ [SHIFT K_R] > U+0691
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_0] > U+0030
++ [SHIFT K_9] > U+0039
++ [SHIFT K_8] > U+0038
++ [SHIFT K_7] > U+0037
++ [SHIFT K_6] > U+0036
++ [SHIFT K_5] > U+0035
++ [SHIFT K_4] > U+0034
++ [SHIFT K_3] > U+0033
++ [SHIFT K_2] > U+0032
++ [SHIFT K_1] > U+0031
+
+c RAlt keys
++ [RALT K_PERIOD] > '>'
++ [RALT K_COMMA] > '<'
++ [RALT K_QUOTE] > '}'
++ [RALT K_COLON] > '{'
++ [RALT K_6] > '^'
++ [RALT K_BKSLASH] > '\'
++ [RALT K_LBRKT] > '['
++ [RALT K_SLASH] > '/'
++ [RALT K_4] > '$'
++ [RALT K_5] > '%'
++ [RALT K_0] > ')'
++ [RALT K_9] > '('
++ [RALT K_8] > '*'
++ [RALT K_7] > '&'
++ [RALT K_3] > '#'
++ [RALT K_2] > '@'
++ [RALT K_1] > '!'
++ [RALT K_RBRKT] > ']'
++ [RALT K_L] > '؏'
++ [RALT K_P] > '|'
++ [RALT K_EQUAL] > '۽'
++ [RALT K_HYPHEN] > 'ٌ'
++ [RALT K_BKQUOTE] > '`'

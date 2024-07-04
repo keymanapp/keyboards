@@ -1,0 +1,48 @@
+﻿store(&Version) "10.0"
+c store(&Bitmap) "har.bmp"
+store(&KEYBOARDVERSION) '2.1.1'
+store(&COPYRIGHT) '© Enabling Languages'
+store(&Name) "Harari (Lâtîn harfi)"
+store(&VISUALKEYBOARD) 'el_harari_latin.kvks'
+store(&TARGETS) 'web desktop'
+
+begin Unicode > use(main)  
+
+store(vowels) "aeiouAEIOU"  
+store(lvowels) U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB 
+store(nonvowel) " qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM,./<>?;':[]{}`~1234567890-=\!@#$%^&*()_+|" '"' U+02B9 U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB U+0227 U+1E0B U+1E23 U+1E61 U+017C U+0226 U+1E0A U+1E22 U+1E60 U+017B U+02BC 
+store(consonant_in) "adhstzADHSTZ"
+store(consonant_out) U+0227 U+1E0B U+1E23 U+1E61 U+1E6B U+017C U+0226 U+1E0A U+1E22 U+1E60 U+1E6A U+017B
+store(non_consonant) "qwertyuiopfgjklxcvbnmQWERTYUIOPFGJKLXCVBNM,<.>/?;:'[{]}`~1234567890-=\!@#$%^&*()_+|" '"' U+02B9 U+00E2 U+00EA U+00EE U+00F4 U+00FB U+00C2 U+00CA U+00CE U+00D4 U+00DB U+0227 U+1E0B U+1E23 U+1E61 U+017C U+0226 U+1E0A U+1E22 U+1E60 U+017B U+02BC
+store(dia_v) "[{"
+store(dia_c) "]}"
+store(stress) "\|" 
+store(extendedpunctK) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_EQUAL]
+store(extendedpunctU) U+2018     U+201C     U+2039     U+00AB     U+2026     U+00A9     U+00BB     U+203A     U+201D     U+2019     U+2013          U+2014
+
+group(main) using keys
+
+any(vowels) + any(dia_v) > index(lvowels,1)
+any(nonvowel) + any(dia_v) > context
+
+any(consonant_in) + any(dia_c) > index(consonant_out,1) 
+any(non_consonant) + any(dia_c) > context  
+
+ + any(extendedpunctK) > index(extendedpunctU,1)
+
++ any(stress) > U+02BC
+
++ [RALT K_LBRKT] > "["
++ [SHIFT RALT K_LBRKT] > "{" 
++ [RALT K_RBRKT] > "]"
++ [SHIFT RALT K_RBRKT] > "}"  
++ [RALT K_BKSLASH] > "\"
++ [SHIFT RALT K_BKSLASH] > "|"
+
+any(lvowels) + [K_BKSP] > nul
+any(consonant_out) + [K_BKSP] > nul
+
+any(lvowels) + [SHIFT K_BKSP] > index(vowels,1)
+any(consonant_out) + [SHIFT K_BKSP] > index(consonant_in,1) 
+
+c EOF

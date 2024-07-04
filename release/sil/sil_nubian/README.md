@@ -1,11 +1,9 @@
-Keyboard Data
+Nubian (SIL) Keyboard Data
 -------------
 
-* Name:           Nubian
 * Copyright:      (C) SIL International
-* Version:        1.2
-* Keyman Version: 9.0
 * BCP-47 codes:   dgl-Copt, fia-Copt, xnz-Copt
+* Author:         Lorna Evans
 
 Description
 -----------
@@ -17,19 +15,15 @@ and selecting the On Screen Keyboard menu item.
 Links
 -----
 
- * Home:     <http://keymankeyboards.com/>
- * Contact:  <support@keyman.com>
+ * Home:     https://keyman.com/keyboards/sil_nubian
+ * Contact:  https://community.software.sil.org/c/keyman
  
 Supported Platforms
 -------------------
 
  * Windows
  * Macosx
+ * Linux
  * Web
  * iOS
  * Android
-
-Todo
-----
-
-* Change "home" url when there is a release on keyman site

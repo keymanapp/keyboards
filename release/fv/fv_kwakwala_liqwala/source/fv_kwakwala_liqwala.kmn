@@ -1,15 +1,115 @@
-﻿store(&VERSION) "9.0"
-store(&KEYBOARDVERSION) "9.0"
-store(&TARGETS) "windows macosx"
-store(&ETHNOLOGUECODE) "kwk"
-store(&COPYRIGHT) "© 2016 FirstVoices, Tavultesoft. Portions © 2006 Chris Harvey."
+﻿store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '9.2.5'
+store(&TARGETS) "any"
+c store(&ETHNOLOGUECODE) "kwk"
+store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Kʷak̓ʷala'
-store(&BITMAP) 'fv_kwakwala_liqwala.bmp'
-store(&VISUALKEYBOARD) 'fv_kwakwala_liqwala.kvk'
+store(&BITMAP) 'fv_kwakwala_liqwala.ico'
+store(&VISUALKEYBOARD) 'fv_kwakwala_liqwala.kvks'
+store(&KMW_HELPFILE) 'fv_kwakwala_liqwala_kmw_help.htm'
 begin Unicode > use(main)
                                  
 group(main) using keys
-                
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) 'fv_kwakwala_liqwala.keyman-touch-layout'
+
+store(Apostrophe) [T_V] [SHIFT T_V]
+store(NeedsApostrophe) 'cklmnpqtwyCKLMNPQTWYƛ' U+0313
+
+any(NeedsApostrophe) + any(Apostrophe) > index(NeedsApostrophe,1) U+0313
+
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W_0] > 'W̓' layer('default')
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'Ē' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_R] > 'Ə' layer('default')
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D_0] > 'Dᶻ' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_F] > 'ʔ' layer('default')
++ [SHIFT T_G_0] > 'Ǧ' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'ᵂ' layer('default')
++ [SHIFT T_K_0] > 'K̓' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L_0] > 'L̓' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON] > 'Ł' layer('default')
++ [SHIFT T_Z_0] > 'ƛ̓' layer('default')
++ [SHIFT T_Z] > 'ƛ' layer('default')
++ [SHIFT T_X_0] > 'X̌' layer('default')
++ [SHIFT T_X] > 'X' layer('default')
++ [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_B] > 'λ' layer('default')
++ [SHIFT T_N] > 'B' layer('default')
++ [SHIFT T_M_0] > 'N̓' layer('default')
++ [SHIFT T_M] > 'N' layer('default')
++ [SHIFT T_COMMA_0] > 'M̓' layer('default')
++ [SHIFT T_COMMA] > 'M' layer('default')
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'w̓'
++ [T_W] > 'w'
++ [T_E_0] > 'ē'
++ [T_E] > 'e'
++ [T_R] > 'ə'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D_0] > 'dᶻ'
++ [T_D] > 'd'
++ [T_F] > 'ʔ'
++ [T_G_0] > 'ǧ'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'ʷ'
++ [T_K_0] > 'k̓'
++ [T_K] > 'k'
++ [T_L_0] > 'l̓'
++ [T_L] > 'l'
++ [T_COLON] > 'ł'
++ [T_Z_0] > 'ƛ̓'
++ [T_Z] > 'ƛ'
++ [T_X_0] > 'x̌'
++ [T_X] > 'x'
++ [T_C_0] > 'c̓'
++ [T_C] > 'c'
++ [T_B] > 'λ'
++ [T_N] > 'b'
++ [T_M_0] > 'n̓'
++ [T_M] > 'n'
++ [T_COMMA_0] > 'm̓'
++ [T_COMMA] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
+
 c constraints
 
 store(overaccent)  U+0313  
@@ -30,26 +130,26 @@ c original punc
 + [SHIFT RALT K_HYPHEN] > '‹'
 + [RALT K_EQUAL] > '»'
 + [RALT K_HYPHEN] > '«'
-+ [SHIFT RALT K_0] > ')'
-+ [SHIFT RALT K_9] > '('
-+ [SHIFT RALT K_8] > '*'
-+ [SHIFT RALT K_7] > '&'
-+ [SHIFT RALT K_6] > '^'
-+ [SHIFT RALT K_5] > '%'
-+ [SHIFT RALT K_4] > '$'
-+ [SHIFT RALT K_3] > '#'
-+ [SHIFT RALT K_2] > '@'
-+ [SHIFT RALT K_1] > '!'
-+ [RALT K_0] > '0'
-+ [RALT K_9] > '9'
-+ [RALT K_8] > '8'
-+ [RALT K_7] > '7'
-+ [RALT K_6] > '6'
-+ [RALT K_5] > '5'
-+ [RALT K_4] > '4'
-+ [RALT K_3] > '3'
-+ [RALT K_2] > '2'
-+ [RALT K_1] > '1'
++ [NCAPS SHIFT RALT K_0] > ')'
++ [NCAPS SHIFT RALT K_9] > '('
++ [NCAPS SHIFT RALT K_8] > '*'
++ [NCAPS SHIFT RALT K_7] > '&'
++ [NCAPS SHIFT RALT K_6] > '^'
++ [NCAPS SHIFT RALT K_5] > '%'
++ [NCAPS SHIFT RALT K_4] > '$'
++ [NCAPS SHIFT RALT K_3] > '#'
++ [NCAPS SHIFT RALT K_2] > '@'
++ [NCAPS SHIFT RALT K_1] > '!'
++ [NCAPS RALT K_0] > '0'
++ [NCAPS RALT K_9] > '9'
++ [NCAPS RALT K_8] > '8'
++ [NCAPS RALT K_7] > '7'
++ [NCAPS RALT K_6] > '6'
++ [NCAPS RALT K_5] > '5'
++ [NCAPS RALT K_4] > '4'
++ [NCAPS RALT K_3] > '3'
++ [NCAPS RALT K_2] > '2'
++ [NCAPS RALT K_1] > '1'
 + [RALT K_QUOTE] > U+0027  
   
 
@@ -61,51 +161,51 @@ c original punc
 + "/" > "ʔ"    
 + [RALT K_SLASH] > "/" 
 
-+ [CAPS K_0] > 'Ē'
++ [CAPS K_0] > 'Ē'
 + [CAPS K_9] > 'Ɫ'
 + [CAPS K_8] > ''
 + [CAPS K_7] > U+F898
-+ [CAPS K_6] > U+F85E
-+ [CAPS K_5] > 'Ǧ'
++ [CAPS K_6] > "ᶻ"
++ [CAPS K_5] > 'Ǧ'
 + [CAPS K_4] > 'X̌'
 + [CAPS K_3] > 'Ə' 
 + [CAPS K_2] > 'ᵂ'    
-+ "1" > '!'  
++ [CAPS K_1] > '!'  
 
-+ [NCAPS SHIFT K_0] > 'Ē'
++ [NCAPS SHIFT K_0] > 'Ē'
 + [NCAPS SHIFT K_9] > 'Ɫ'   
 + [NCAPS SHIFT K_8] > ''
 + [NCAPS SHIFT K_7] > U+F898
-+ [NCAPS SHIFT K_6] > U+F85E
-+ [NCAPS SHIFT K_5] > 'Ǧ'
++ [NCAPS SHIFT K_6] > "ᶻ"
++ [NCAPS SHIFT K_5] > 'Ǧ'
 + [NCAPS SHIFT K_4] > 'X̌'
 + [NCAPS SHIFT K_3] > 'Ə' 
-+ [NCAPS SHIFT K_2] > 'ᵂ'    
-+ "!" > '!' 
++ [NCAPS SHIFT K_2] > 'ᵂ'
++ [NCAPS SHIFT K_1] > '!' 
 
-+ [CAPS SHIFT K_0] > 'ē'
++ [CAPS SHIFT K_0] > 'ē'
 + [CAPS SHIFT K_9] > 'ɫ'
 + [CAPS SHIFT K_8] > 'ƛ'
 + [CAPS SHIFT K_7] > 'λ'
 + [CAPS SHIFT K_6] > "ᶻ"
-+ [CAPS SHIFT K_5] > 'ǧ'
++ [CAPS SHIFT K_5] > 'ǧ'
 + [CAPS SHIFT K_4] > 'x̌' 
 + [CAPS SHIFT K_3] > 'ə' 
 + [CAPS SHIFT K_2] > 'ʷ'
++ [CAPS SHIFT K_1] > '!'
 
 + [NCAPS K_0] > 'ē'
 + [NCAPS K_9] > 'ɫ'
 + [NCAPS K_8] > 'ƛ'
 + [NCAPS K_7] > 'λ'
 + [NCAPS K_6] > "ᶻ"
-+ [NCAPS K_5] > 'ǧ'
++ [NCAPS K_5] > 'ǧ'
 + [NCAPS K_4] > 'x̌' 
 + [NCAPS K_3] > 'ə' 
-+ [NCAPS K_2] > 'ʷ'     
++ [NCAPS K_2] > 'ʷ'
++ [NCAPS K_1] > '!'
  
 nomatch > use(x)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)

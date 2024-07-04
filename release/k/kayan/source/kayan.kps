@@ -1,46 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.836.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.2</Version>
+    <Version URL=""></Version>
     <Name URL="">kayan</Name>
-    <Copyright URL="">©2017 SIL International</Copyright>
+    <Copyright URL="">© 2017-2021 SIL International</Copyright>
+    <Description>For typing the Latin-based script of the Kayǎn people of Myanmar.</Description>
   </Info>
   <Files>
     <File>
@@ -67,6 +47,114 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\build\kayan.js</Name>
+      <Description>File kayan.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome\mobile_default.png</Name>
+      <Description>File mobile_default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\mobile_numeric.png</Name>
+      <Description>File mobile_numeric.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\mobile_shift.png</Name>
+      <Description>File mobile_shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika_README.txt</Name>
+      <Description>File Andika_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-Regular.ttf</Name>
+      <Description>Font Andika</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>welcome\desktop_layoutU_.png</Name>
+      <Description>File desktop_layoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\desktop_layoutU_RA.png</Name>
+      <Description>File desktop_layoutU_RA.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\desktop_layoutU_S.png</Name>
+      <Description>File desktop_layoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-Bold.ttf</Name>
+      <Description>Font Andika Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-BoldItalic.ttf</Name>
+      <Description>Font Andika Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\andika\Andika-Italic.ttf</Name>
+      <Description>Font Andika Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Kayǎn</Name>
+      <ID>kayan</ID>
+      <Version>1.5</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\andika\Andika-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\andika\Andika-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="pdu-Latn">Kayan</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>

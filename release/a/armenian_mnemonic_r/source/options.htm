@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <title>«Armenian Mnemonic R» ստեղնաշարի կարգավորումները</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <style type='text/css'>
+    html, body { font-family: Sylfaen,Tahoma,helvetica,serif; padding: 0; margin: 0; overflow: hidden }
+    #size { padding: 12px; border: solid 1px black; background: #ffffff }
+    p, label { font-size: 12pt }
+    h3 { font: bold 14pt; margin-top: 4px; }
+    #ok_button, #cancel_button { width: 100px }
+    #buttons { text-align: right; }
+    #formopt { padding: 2px 24px }
+  </style>
+</head>
+<body>
+<div id='size'>
+  <h3>«Armenian Mnemonic R» ստեղնաշարի կարգավորումները</h3>
+  <form method='get' action='keyman:ok'>
+    <div id='formopt'>
+	<fieldset>
+	<label>Ընտրեք կցագրերի օգտագործումը.</label>
+      <p>
+		<input type='checkbox' value='1' name='option_ligature_ew' id='option_ligature_ew' />
+		<label for='option_ligature_ew'> Օգտագործել կցագիր <b>ե ւ</b> կից տառերի համար</label> <br />
+		<input type='checkbox' value='1' name='option_ligature_mv' id='option_ligature_mv' />
+		<label for='option_ligature_mv'> Օգտագործել կցագրեր <b>մ ն, մ ե, մ ի, վ ն, մ խ</b> կից տառերի համար</label> <br />
+	  </p>
+	</fieldset>
+
+    </div>
+    <p id='buttons'><input id='ok_button' type='submit' value='OK' /> <input id='cancel_button' type='reset' onclick='location.href="keyman:cancel"; return false;' value='Cancel' /></p>
+  </form>
+
+</div>
+
+  <script type='text/javascript'>
+  //<![CDATA[
+    (function() {
+      var loc = window.location.search.substr(1).split('&');
+      for(var i = 0; i < loc.length; i++)
+      {
+        var param = loc[i].split('=');
+        var key = decodeURIComponent(param[0]);
+        var val = decodeURIComponent(param[1]);
+        var elem = document.forms[0].elements[key];
+        if(elem)
+        {
+          if(typeof elem !== 'object' || typeof elem.length !== 'number') elem = [elem];
+
+          for(var j = 0; j < elem.length; j++)
+            if(elem[j].type == 'checkbox' || elem[j].type == 'radio')
+              elem[j].checked = elem[j].value == val;
+            else
+              elem[j].value = val;
+        }
+      }
+    })();
+  //]]>
+  </script>
+
+</body>
+</html>

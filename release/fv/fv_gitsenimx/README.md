@@ -1,22 +1,20 @@
-Gitsenimx̱ keyboard
+Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ keyboard
 ======================
 
-Copyright (C) 2015 First Peoples' Cultural Foundation
-
-Version 9.0
-
-Gitsenimx̱ keyboard layout for Unicode
+Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ keyboard layout for Unicode
 
 Links
 -----
 
- * Home:     <http://www.fpcf.ca/>
- * Deployed: <http://s.keyman.com/keyboard/fv_gitsenimx>
+ * Home:     <https://www.firstvoices.com>
+ * Deployed: <https://keyman.com/keyboards/fv_gitsenimx>
  * Help:     <http://help.keyman.com/keyboard/fv_gitsenimx>
  
 Supported Platforms
 -------------------
 
  * Windows
+ * macOS
+ * Linux
  * Web
  * Mobile

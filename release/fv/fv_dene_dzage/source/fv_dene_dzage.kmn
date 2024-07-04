@@ -1,0 +1,133 @@
+﻿store(&VERSION) "10.0"
+store(&TARGETS) 'any'
+c store(&ETHNOLOGUECODE) "kkz"
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&NAME) 'Dene Dzage'
+store(&KEYBOARDVERSION) '10.0'
+store(&VISUALKEYBOARD) 'fv_dene_dzage.kvks'
+store(&KMW_HELPFILE) 'fv_dene_dzage-help.htm'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
+
+store(&LAYOUTFILE) "fv_dene_dzage.keyman-touch-layout"
+
++ [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E] > 'E' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'O' layer('default')
++ [SHIFT T_P] > 'Ł' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'D' layer('default')
++ [SHIFT T_G] > 'G' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_J] > 'J' layer('default')
++ [SHIFT T_K] > 'K' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON_0] > '"' layer('default')
++ [SHIFT T_COLON] > "'" layer('default')
++ [SHIFT T_Z] > 'Z' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_B] > 'B' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
++ [T_W] > 'w'
++ [T_E] > 'e'
++ [T_T] > 't'
++ [T_Y] > 'y'
++ [T_U] > 'u'
++ [T_I] > 'i'
++ [T_O] > 'o'
++ [T_P] > 'ł'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'd'
++ [T_G] > 'g'
++ [T_H] > 'h'
++ [T_J] > 'j'
++ [T_K] > 'k'
++ [T_L] > 'l'
++ [T_COLON_0] > '"'
++ [T_COLON] > "'"
++ [T_Z] > 'z'
++ [T_C] > 'c'
++ [T_B] > 'b'
++ [T_N] > 'n'
++ [T_M] > 'm'
+
+c --- END OF TOUCH LAYOUT RULES ---
+
+c --- BEGIN CROSS PLATFORM RULES AND STORES ---
+
+store(Vowels) 'aeiouAEIOU'
+store(HasAcu) 'áéíóúÁÉÍÓÚ'
+store(HasCar) 'ǎěǐǒǔǍĚǏǑǓ'
+store(HasCirc) 'âêîôûÂÊÎÔÛ'
+store(HasMac) 'āēīōūĀĒĪŌŪ'
+store(HasOgo) 'ąęįǫųĄĘĮǪŲ'
+
+store(AcuKeys) [T_ACU] [SHIFT T_ACU]
+store(CarKeys) [T_CAR] [SHIFT T_CAR]
+store(CircKeys) [T_CIRC] [SHIFT T_CIRC]
+store(MacKeys) [T_MAC] [SHIFT T_MAC]
+store(OgoKeys) [T_OGO] [SHIFT T_OGO]
+store(MacAcuKeys) [T_MACACU] [SHIFT T_MACACU]
+
+any(Vowels) + any(AcuKeys) > index(HasAcu,1)
+any(Vowels) + any(CarKeys) > index(HasCar,1)
+any(Vowels) + any(CircKeys) > index(HasCirc,1)
+any(Vowels) + any(MacKeys) > index(HasMac,1)
+any(Vowels) + any(OgoKeys) > index(HasOgo,1)
+
+c acu + mac, mac + acu
+any(Vowels) + any(MacAcuKeys) > index(HasMac,1) U+0301 c mac acu
+any(HasAcu) + any(MacKeys) > index(HasMac,1) U+0301 c mac acu
+any(HasMac) + any(AcuKeys) > index(HasMac,1) U+0301 c mac acu
+
+c ogo + 1
+any(HasAcu) + any(OgoKeys) > index(HasOgo,1) U+0301 c ogo acu
+any(HasCar) + any(OgoKeys) > index(HasOgo,1) U+030C c ogo car
+any(HasCirc) + any(OgoKeys) > index(HasOgo,1) U+0302 c ogo circ
+any(HasMac) + any(OgoKeys) > index(HasOgo,1) U+0304 c ogo mac
+any(HasOgo) + any(AcuKeys) > index(HasOgo,1) U+0301 c ogo acu
+any(HasOgo) + any(CarKeys) > index(HasOgo,1) U+030C c ogo car
+any(HasOgo) + any(CircKeys) > index(HasOgo,1) U+0302 c ogo circ
+any(HasOgo) + any(MacKeys) > index(HasOgo,1) U+0304 c ogo mac
+
+c acu mac ogo
+any(HasMac) U+0301 + any(OgoKeys) > index(HasOgo,1) U+0304 U+0301
+any(HasOgo) U+0301 + any(MacKeys) > index(HasOgo,1) U+0304 U+0301
+any(HasOgo) U+0304 + any(AcuKeys) > index(HasOgo,1) U+0304 U+0301
+any(HasOgo) + any(MacAcuKeys) > index(HasOgo,1) U+0304 U+0301
+
+c --- DESKTOP LAYOUT ---
+
+store(L) 'lL'
+store(LStroke) 'łŁ'
+
+'`' + any(Vowels) > index(HasAcu,2)
+'``' + any(Vowels) > index(HasOgo,3) U+0301
+';' + any(Vowels) > index(HasMac,2)
+';;' + any(Vowels) > index(HasOgo,3) U+0304
+'[' + any(Vowels) > index(HasCar,2) 
+'[[' + any(Vowels) > index(HasOgo,3) U+030C
+']' + any(Vowels) > index(HasCirc,2)
+']]' + any(Vowels) > index(HasOgo,3) U+0302
+'=' + any(Vowels) > index(HasMac,2) U+0301
+'==' + any(Vowels) > index(HasOgo,3) U+0304 U+0301
+',' + any(Vowels) > index(HasOgo,2)
+
+';' + any(L) > index(LStroke,2)
+
++ [K_QUOTE] > U+2019 c curly apostrophe
++ [RALT K_QUOTE] > U+0027 c straight apostrophe

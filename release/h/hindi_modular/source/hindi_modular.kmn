@@ -1,0 +1,321 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Hindi Modular'
+store(&COPYRIGHT) '© 2006-2020 Arun Sarkar'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'hindi_modular.kvks'
+store(&LAYOUTFILE) 'hindi_modular.keyman-touch-layout'
+store(&BITMAP) 'hindi_modular.ico'
+store(&MESSAGE) 'This is a Unicode Devnagari Keyboard Layout based on Modular Keyboard Layout. This is one of the most popular keyboard layout for professional DTP work.'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
++ [SHIFT K_Q] > 'ो'
++ [SHIFT RALT K_Z] > U+094D U+200D 
++ [RALT K_Z] > U+0904
++ [RALT K_HYPHEN] > U+090C
++ [RALT K_EQUAL] >  U+2014 
++ [RALT K_BKSLASH] > U+090E
++ [RALT K_RBRKT] > U+0910
++ [RALT K_LBRKT] > U+0914
++ [RALT K_QUOTE] > U+0913
++ [RALT K_SLASH] > U+0912
++ [RALT K_PERIOD] > U+0911
++ [RALT K_COMMA] > 'ऩ'
++ [RALT K_M] > 'ऴ'
++ [RALT K_N] > 'ऱ'
++ [RALT K_B] > '़'
++ [RALT K_V] > 'ा'
++ [RALT K_COLON] > 'ू'
++ [RALT K_L] > 'ु'
++ [RALT K_K] > 'ृ'
++ [RALT K_I] > 'ॄ'
++ [RALT K_J] > 'ॅ'
++ [RALT K_U] > 'ॆ'
++ [RALT K_H] > 'ॊ'
++ [RALT K_G] > 'ॉ'
++ [RALT K_Y] > 'ै'
++ [RALT K_T] > 'े'
++ [RALT K_R] > '॔'
++ [RALT K_E] > '॓'
++ [RALT K_F] > '॒'
++ [RALT K_D] > 'फ़'
++ [RALT K_W] > 'ौ'
++ [RALT K_Q] > 'ो'
++ [RALT K_S] > 'क़'
++ [RALT K_A] > 'ख़'
++ [RALT K_X] > 'ग़'
++ [RALT K_C] > 'ज़'
++ [RALT K_O] > 'ड़'
++ [RALT K_P] > 'ढ़'
++ [RALT K_0] > 'फ़'
++ [RALT K_9] > 'य़'
++ [RALT K_8] > 'ॡ'
++ [RALT K_7] > 'ॣ'
++ [RALT K_6] > 'ॢ'
++ [RALT K_5] > '॥'
++ [RALT K_4] > '॰'
++ [RALT K_3] > 'ॻ'
++ [RALT K_2] > 'ॼ'
++ [RALT K_1] > 'ॾ'
++ [RALT K_BKQUOTE] > 'ॿ'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_PERIOD] > 'य'
++ [SHIFT K_S] > U+0916
++ [SHIFT K_H] > U+0908
++ [SHIFT K_COMMA] > U+090F
++ [SHIFT K_M] > 'ळ'
++ [SHIFT K_N] > U+090A
++ [SHIFT K_B] > U+0909
++ [SHIFT K_V] > U+091B
++ [SHIFT K_C] > U+091D
++ [SHIFT K_X] > U+0918
++ [SHIFT K_Z] > U+0919
+c + '\' > U+094D U+200D
++ [K_BKSLASH] > U+200D   
++ [K_COLON] > ';'
++ [SHIFT K_QUOTE] > 'ॅ'
++ [SHIFT K_L] > 'ष'
++ [SHIFT K_K] > 'श'
++ [SHIFT K_J] > 'ण'
++ [SHIFT K_G] > 'त्र'
++ [SHIFT K_F] > 'थ'
++ [SHIFT K_D] >  U+200C U+094D 
++ [SHIFT K_4] >  U+0902 
++ [SHIFT K_A] > U+091C '्' U+091E
++ [SHIFT K_RBRKT] > 'ऽ'
++ [SHIFT K_LBRKT] > 'ृ'
++ [SHIFT K_P] > 'ढ'
++ [SHIFT K_O] > 'ड'
++ [SHIFT K_I] > 'ठ'
++ [SHIFT K_U] > U+091F
++ [SHIFT K_Y] > 'त्त'
++ [SHIFT K_T] > U+0907
++ [SHIFT K_R] > U+0927
++ [SHIFT K_HYPHEN] > 'ौ'
++ [SHIFT K_7] > 'ॊ'
++ [SHIFT K_E] > 'श्र'
++ [SHIFT K_W] > 'फ'
++ [SHIFT K_EQUAL] >  U+002B 
++ [SHIFT K_0] > ')'
++ [SHIFT K_9] > '('
++ [SHIFT K_8] > '*'
++ [SHIFT K_6] > U+090B
++ [SHIFT K_5] > U+0901
++ [SHIFT K_3] > U+0027
++ [SHIFT K_2] > U+0027
++ [SHIFT K_1] > '!'
++ [SHIFT K_BKQUOTE] > U+0903
++ [SHIFT K_BKSLASH] > U+091E
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_SLASH] > '/'
++ [K_PERIOD] > '.'
++ [K_COMMA] > ','
++ [K_M] > 'ल'
++ [K_N] > 'ू'
++ [K_B] > 'ु'
++ [K_V] > U+091A
++ [K_C] > U+091C
++ [K_X] > U+0917
++ [K_Z] > 'भ'
++ [K_QUOTE] > U+0930 U+094D 
++ [SHIFT K_COLON] > U+0903
++ [K_L] > 'े'
++ [K_K] > 'ा'
++ [K_J] > 'र'
++ [K_H] > 'ी'  
++ [K_G] > U+093F
++ [K_F] > 'त'
++ [K_D] > '्'
++ [K_S] > U+0915
++ [K_A] > 'म'
++ [K_RBRKT] > '्र'
++ [K_I] > U+0906
++ [K_LBRKT] > U+0905
++ [K_P] > 'ै'
++ [K_O] > 'ह'
++ [K_U] > 'य'
++ [K_Y] > 'व'
++ [K_T] > 'स'
++ [K_R] > 'द'
++ [K_E] > 'न'
++ [K_W] > 'प'
++ [K_Q] > 'ब'
++ [K_BKQUOTE] > '।'
++ [K_0] > '०'
++ [K_9] > '९'
++ [K_8] > '८'
++ [K_7] > '७'
++ [K_6] > '६'
++ [K_5] > '५'
++ [K_4] > '४'
++ [K_3] > '३'
++ [K_2] > '२'
++ [K_1] > '१'  
+
+
+ 'ा' + [K_L] > U+200C U+094B        c ok on yaker
+ 'ा'  + [K_P] > U+200C U+094C      c ok on yokar
+
+
+c ok c half issue
+ store(cl) U+0915 U+0916 U+0917 U+0918 U+0919 U+091A U+091B U+091C U+091D U+091E U+091F \
+           U+0920 U+0921 U+0922 U+0923 U+0924 U+0925 U+0926 U+0927 U+0928 U+0929 U+092A U+092B U+092C U+092D U+092E U+092F \
+           U+0930 U+0931 U+0932 U+0933 U+0934 U+0935 U+0936 U+0937 U+0938 U+0939
+           
+
+ any(cl) + '\' > context U+094D U+200D
+
+ any(cl) U+094D U+200D + [K_BKSP] > context
+
+ + 'G' > dk(linked) U+0924 U+094D U+0930
+ dk(linked) U+0924 U+094D U+0930 + [K_BKSP] > nul             
+
+ any(cl) + 'd' > context dk(lk)       c half issue
+ 
+
+c These next 4 rules do not fire
+any(cl) + "'" > U+0930 U+094D context           c Ref Issue with banjenborno
+any(cl) U+094D any(cl) + "'" >   U+200C U+0930 U+094D context
+
+any(cl) U+093F + "'" > U+0930 U+094D context
+any(cl) U+094D any(cl) U+093F + "'" >   U+200C U+0930 U+094D context
+
+c ref issue with conjunct
+
+
+U+093F + [K_S] > U+0915 U+093F
+
+U+093F + [SHIFT RALT K_Z] > U+094D U+200D U+093F
+U+093F + [RALT K_Z] > U+0904 U+093F
+U+093F + [RALT K_HYPHEN] > U+090C U+093F
+U+093F + [RALT K_EQUAL] >  U+2014 U+093F
+U+093F + [RALT K_BKSLASH] > U+090E U+093F
+U+093F + [RALT K_RBRKT] > U+0910 U+093F
+U+093F + [RALT K_LBRKT] > U+0914 U+093F
+U+093F + [RALT K_QUOTE] > U+0913 U+093F
+U+093F + [RALT K_SLASH] > U+0912 U+093F
+U+093F + [RALT K_PERIOD] > U+0911 U+093F
+U+093F + [RALT K_COMMA] > 'ऩ' U+093F
+U+093F + [RALT K_M] > 'ऴ' U+093F
+U+093F + [RALT K_N] > 'ऱ' U+093F
+U+093F + [RALT K_D] > 'फ़' U+093F
+U+093F + [RALT K_S] > 'क़' U+093F
+U+093F + [RALT K_A] > 'ख़' U+093F
+U+093F + [RALT K_X] > 'ग़' U+093F
+U+093F + [RALT K_C] > 'ज़' U+093F
+U+093F + [RALT K_O] > 'ड़' U+093F
+U+093F + [RALT K_P] > 'ढ़' U+093F
+U+093F + [RALT K_0] > 'फ़' U+093F
+U+093F + [RALT K_9] > 'य़' U+093F
+U+093F + [RALT K_8] > 'ॡ' U+093F
+U+093F + [RALT K_7] > 'ॣ' U+093F
+U+093F + [RALT K_6] > 'ॢ' U+093F
+U+093F + [RALT K_5] > '॥' U+093F
+U+093F + [RALT K_4] > '॰' U+093F
+U+093F + [RALT K_3] > 'ॻ' U+093F
+U+093F + [RALT K_2] > 'ॼ' U+093F
+U+093F + [RALT K_1] > 'ॾ' U+093F
+U+093F + [RALT K_BKQUOTE] > 'ॿ' U+093F
+U+093F + [SHIFT K_SLASH] > 'ॽ' U+093F
+U+093F + [SHIFT K_PERIOD] > 'य' U+093F
+U+093F + [SHIFT K_S] > U+0916 U+093F
+U+093F + [SHIFT K_H] > U+0908 U+093F
+U+093F + [SHIFT K_COMMA] > U+090F U+093F
+U+093F + [SHIFT K_M] > 'ळ' U+093F
+U+093F + [SHIFT K_N] > U+090A U+093F
+U+093F + [SHIFT K_B] > U+0909 U+093F
+U+093F + [SHIFT K_V] > U+091B U+093F
+U+093F + [SHIFT K_C] > U+091D U+093F
+U+093F + [SHIFT K_X] > U+0918 U+093F
+U+093F + [SHIFT K_Z] > U+0919 U+093F
+U+093F + [K_BKSLASH] > U+200D U+093F   c
+U+093F + [SHIFT K_L] > 'ष' U+093F
+U+093F + [SHIFT K_K] > 'श' U+093F
+U+093F + [SHIFT K_J] > 'ण' U+093F
+U+093F + [SHIFT K_G] > 'त्र' U+093F
+U+093F + [SHIFT K_F] > 'थ' U+093F 
+U+093F + [SHIFT K_A] > U+091C '्' U+091E U+093F
+U+093F + [SHIFT K_RBRKT] > 'ऽ' U+093F
+U+093F + [SHIFT K_LBRKT] > 'ृ' U+093F
+U+093F + [SHIFT K_P] > 'ढ' U+093F
+U+093F + [SHIFT K_O] > 'ड' U+093F
+U+093F + [SHIFT K_I] > 'ठ' U+093F 
+U+093F + [SHIFT K_U] > U+091F U+093F
+U+093F + [SHIFT K_Y] > 'त्त' U+093F
+U+093F + [SHIFT K_T] > U+0907 U+093F
+U+093F + [SHIFT K_R] > U+0927 U+093F
+U+093F + [SHIFT K_HYPHEN] > 'ौ' U+093F
+U+093F + [SHIFT K_7] > 'ॊ' U+093F
+U+093F + [SHIFT K_E] > 'श्र' U+093F
+U+093F + [SHIFT K_W] > 'फ' U+093F
+U+093F + [SHIFT K_EQUAL] >  U+002B  U+093F
+U+093F + [SHIFT K_6] > U+090B U+093F
+U+093F + [SHIFT K_5] > U+0901 U+093F
+U+093F + [SHIFT K_3] > U+0027 U+093F
+U+093F + [SHIFT K_2] > U+0027 U+093F
+U+093F + [SHIFT K_1] > '!' U+093F
+U+093F + [SHIFT K_BKQUOTE] > U+0903 U+093F
+U+093F + [SHIFT K_BKSLASH] > U+091E U+093F
+U+093F + [K_EQUAL] > '=' U+093F
+U+093F + [K_HYPHEN] > '-' U+093F
+U+093F + [K_M] > 'ल' U+093F
+U+093F + [K_V] > U+091A U+093F
+U+093F + [K_C] > U+091C U+093F
+U+093F + [K_X] > U+0917 U+093F
+U+093F + [K_Z] > 'भ' U+093F
+U+093F + [K_QUOTE] > U+0930 U+094D U+093F 
+U+093F + [SHIFT K_COLON] > U+0903 U+093F
+U+093F + [K_L] > 'े' U+093F
+U+093F + [K_K] > 'ा' U+093F
+U+093F + [K_J] > 'र' U+093F
+U+093F + [K_G] > U+093F U+093F
+U+093F + [K_F] > 'त' U+093F
+U+093F + [K_D] > '्' U+093F
+U+093F + [K_S] > U+0915 U+093F
+U+093F + [K_A] > 'म' U+093F
+U+093F + [K_O] > 'ह' U+093F
+U+093F + [K_U] > 'य' U+093F
+U+093F + [K_Y] > 'व' U+093F
+U+093F + [K_T] > 'स' U+093F
+U+093F + [K_R] > 'द' U+093F
+U+093F + [K_E] > 'न' U+093F
+U+093F + [K_W] > 'प' U+093F
+U+093F + [K_Q] > 'ब' U+093F   c i vowel + character
+
+'म' U+093F + '\' > 'म्‍ि'
+U+0916 U+093F + '\' > 'ख्‍ि‍'
+U+0915 U+093F + '\' > 'क्‍ि'
+U+0917 U+093F + '\' > 'ग्‍ि'           
+U+0918 U+093F + '\' > 'घ्‍ि'
+U+091A U+093F + '\' > 'च्‍ि'
+U+091B U+093F + '\' > 'छ्‍ि'
+U+091C U+093F + '\' > 'ज्‍ि'
+U+091D U+093F + '\' > 'झ्‍ि'
+U+091E U+093F + '\' > 'ञ्‍ि'
+U+091F U+093F + '\' > 'ट्‍ि'
+U+0923 U+093F + '\' > 'ण्‍ि'
+U+0924 U+093F + '\' > 'त्‍ि'
+U+0925 U+093F + '\' > 'थ्‍ि'
+U+0926 U+093F + '\' > 'द्‍ि'
+U+0927 U+093F + '\' > 'ध्‍ि'
+U+0928 U+093F + '\' > 'न्‍ि'
+U+0929 U+093F + '\' >  'ऩ्‍ि' 
+U+092A U+093F + '\' > 'प्‍ि'
+U+092B U+093F + '\' > 'फ्‍ि'
+U+092C U+093F + '\' > 'ब्‍ि'
+U+092D U+093F + '\' > 'भ्‍ि'
+U+092E U+093F + '\' > 'म्‍ि'
+U+092F U+093F + '\' > 'य्‍ि'
+U+0932 U+093F + '\' > 'ल्‍ि'
+U+0933 U+093F + '\' > 'ळ्‍ि'
+U+0934 U+093F + '\' > 'ऴ्‍ि'
+U+0935 U+093F + '\' > 'व्‍ि'
+U+0936 U+093F + '\' > 'श्‍ि'
+U+0937 U+093F + '\' > 'ष्‍ि'
+U+0938 U+093F + '\' > 'स्‍ि'
+U+0939 U+093F + '\' > 'ह्‍ि'
+

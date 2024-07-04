@@ -1,0 +1,181 @@
+﻿store(&VERSION) '9.0' c this is the minimum Keyman version
+store(&NAME) 'Pukapuka'
+store(&COPYRIGHT) '© 2018 SIL International'
+store(&MESSAGE) 'Keyboard for the Pukapuka language of the Cook Islands.'
+store(&KEYBOARDVERSION) '1.3'
+store(&BITMAP) 'pukapuka.ico'
+store(&VISUALKEYBOARD) 'pukapuka.kvks'
+store(&LAYOUTFILE) 'pukapuka.keyman-touch-layout'
+store(&TARGETS) 'any'
+
+c Revision History:
+c 8-Nov-2018: 1.0 First test version - prior to feedback from language community
+c 22-Nov-2018: 1.1 Include grave and circumflex vowels and re-assign keys for macron, acute, etc.
+c 29-Nov-2018: 1.2 Improve documentation in order to submit the keyboard to the Keyman repository
+c 03-Dec-2019: 1.3 Removed highlighting of vowel keys on the touch layout (issue with Android display)
+
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+group(main) using keys
+
+begin Unicode > use(main)
+
+store(plainvowels)  'a'      'e'     'i'      'o'     'u'        'A'     'E'     'I'      'O'     'U'
+store(acutevowels)  U+00E1 U+00E9 U+00ED U+00F3 U+00FA   U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+store(macronvowels) U+0101 U+0113 U+012B U+014D U+016B   U+0100 U+0112 U+012A U+014C U+016A 
+store(gravevowels)  U+00E0 U+00E8 U+00EC U+00F2 U+00F9   U+00C0 U+00C8 U+00CC U+00D2 U+00D9
+store(circumvowels) U+00E2 U+00EA U+00EE U+00F4 U+00FB   U+00C2 U+00CA U+00CE U+00D4 U+00DB
+c store(diaeresisvowels) U+00E4 U+00EB U+00EF U+00F6 U+00FC   U+00C4 U+00CB U+00CF U+00D6 U+00DC      c Not needed for Pukapuka
+
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+c We don't want this any more - but I'm wondering what to do about composed and decomposed characters
+c Why would we want to use these composed forms if everything else is semi-decomposed?
+c store(eovowel)              'e'            'o'                     'E'            'O'
+c store(eodoublehat)          U+1E17       U+1E53                 U+1E16        U+1E52
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+any(plainvowels) + [SHIFT K_COLON]  > index(acutevowels,1)           c colon :
+any(plainvowels) + [K_COLON]        > index(macronvowels,1)          c semi-colon ;
+any(plainvowels) + [K_BKQUOTE]      > index(gravevowels,1)           c back-tick `
+any(plainvowels) + [SHIFT K_6]      > index(circumvowels,1)          c caret ^
+c any(plainvowels) + '"'  > index(diaeresisvowels,1)    c Not needed for Pukapuka
+
+c We need to allow both the macron and the acute accent on a vowel
+c and to be typed in any order (but still leave them in a consistent order)
+any(macronvowels) + [SHIFT K_COLON] > context(1) U+0301             c colon :
+any(acutevowels)  + [K_COLON]       > index(macronvowels,1) U+0301  c semi-colon ;
+
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+c The behaviour below was rejected by the community/translator:
+
+c This deadkey behaviour allows us to BLOCK a macron or acute character from appearing on 
+c a vowel in situations where we really want a hypen/dash or a single ' quote mark instead.
+c + [K_BKQUOTE] > dk(backtick)
+c But if we really need the backtick character, then you need to press it twice to get it.
+c dk(backtick) + [K_BKQUOTE] > "`"
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                   
+c We need a way of removing vowel diacritics if the user double-taps the modifier keys and put them back in for triple tap!
+c Acutes
+any(acutevowels) +  [SHIFT K_COLON]   > index(plainvowels,1)  U+003A   c colon  
+any(plainvowels) ":" + [SHIFT K_COLON] > index(acutevowels,1)  U+003A   c colon
+c Macrons
+any(macronvowels) + [K_COLON]         > index(plainvowels,1)  U+003B   c semi-colon
+any(plainvowels) ";" + [K_COLON]       > index(macronvowels,1) U+003B   c semi-colon
+c Graves
+any(gravevowels) +  [K_BKQUOTE]       > index(plainvowels,1)  U+0060    c grave 
+any(plainvowels) "`" + [K_BKQUOTE]     > index(gravevowels,1)  U+0060    c grave
+c Circumflexes
+any(circumvowels) +  [SHIFT K_6]      > index(plainvowels,1)  U+005E     c caret
+any(plainvowels) "^" + [SHIFT K_6]     > index(circumvowels,1) U+005E     c caret
+                                                                                              
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+c Everything below this point is specific to the TOUCH interface (not the physical keyboard)
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ [T_A_acute]  > U+00E1 
++ [T_A_macron] > U+0101 
++ [T_A_macron_acute]   >    U+0101 U+0301
++ [T_A_grave]  >  U+00E0 
++ [T_A_circum] >  U+00E2 
++ [SHIFT T_A_acute]  > U+00C1 
++ [SHIFT T_A_macron] > U+0100 
++ [SHIFT T_A_macron_acute]   >    U+0100 U+0301
+
++ [T_E_acute]  > U+00E9
++ [T_E_macron] > U+0113
++ [T_E_macron_acute]   >    U+0113 U+0301
++ [T_E_grave]  >  U+00E8 
++ [T_E_circum] >  U+00EA 
++ [SHIFT T_E_acute]  > U+00C9
++ [SHIFT T_E_macron] > U+0112
++ [SHIFT T_E_macron_acute]   >    U+0112 U+0301
+
++ [T_I_acute]  > U+00ED 
++ [T_I_macron] > U+012B 
++ [T_I_macron_acute]   >    U+012B U+0301
++ [T_I_grave]  >  U+00EC 
++ [T_I_circum] >  U+00EE 
++ [SHIFT T_I_acute]  > U+00CD 
++ [SHIFT T_I_macron] > U+012A 
++ [SHIFT T_I_macron_acute]   >    U+012A U+0301
+
++ [T_O_acute]  > U+00F3
++ [T_O_macron] > U+014D
++ [T_O_macron_acute]   >    U+014D U+0301
++ [T_O_grave]  >   U+00F2 
++ [T_O_circum] >   U+00F4 
++ [SHIFT T_O_acute]  > U+00D3
++ [SHIFT T_O_macron] > U+014C
++ [SHIFT T_O_macron_acute]   >    U+014C U+0301
+
++ [T_U_acute]  > U+00FA
++ [T_U_macron] > U+016B
++ [T_U_macron_acute]   >    U+016B U+0301
++ [T_U_grave]  >  U+00F9 
++ [T_U_circum] >  U+00FB 
++ [SHIFT T_U_acute]  > U+00DA
++ [SHIFT T_U_macron] > U+016A
++ [SHIFT T_U_macron_acute]   >    U+016A U+0301
+
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+c Handle the most common glides in the Pukapuka with long-press options (without a trailing space)
++ [T_AI]  >  "ai"
++ [T_AU]  >  "au"
++ [T_EA]  >  "ea"
++ [T_EI]  >  "ei"
++ [T_IA]  >  "ia"
+c + [T_IĀ]  >  "iā"
++ [T_OA]  >  "oa"
++ [T_OE]  >  "oe"
++ [T_OU]  >  "ou"
++ [T_UA]  >  "ua"
++ [T_AO]  >  "ao"
+
+c Commonly used short words (which include a trailing space)
++ [T_TOE]			>	"toe "
++ [T_TO_macron]	    >	"tō "
++ [T_TE]			>	"te "
++ [SHIFT T_TE]		>	"Te "
+
++ [T_KA]			>	"ka "
++ [T_KE_macron]	    >	"kē "
++ [T_KO]			>	"ko "
++ [T_KI]			>	"ki "
++ [SHIFT T_KA]		>	"Ka "
++ [SHIFT T_KE_macron] >	"Kē "
++ [SHIFT T_KO]		>	"Ko " 
+
++ [T_MEA]			>	"mea "
++ [T_MAI]			>	"mai "
++ [T_MA]			>	"ma "
++ [T_MA_macron]		>	"mā "
++ [SHIFT T_MA]		>	"Ma "
+
++ [T_NO_macron]		>	"nō "
++ [T_NA]			>	"na "
++ [T_NA_macron]		>	"nā "
++ [SHIFT T_NO_macron] >	"Nō "
++ [SHIFT T_NA]		>	"Na "
+
++ [T_WAI]			>	"wai "
++ [T_WUA]			>	"wua "
++ [T_WI_macron]		>	"wī "
+
++ [T_LOA]			>	"loa "
++ [T_LA_macron]		>	"lā "
+
+c --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+c Having some fun with longpress $ for currency symbols
++ [T_FRA]   	   	>  U+20A3      c French Franc
++ [T_EUR]   	   	>  U+20AC      c Euro
++ [T_GBP]   	   	>  U+00A3      c British Pound
++ [T_YEN]   	   	>  U+00A5      c Yen
++ [T_INR]   	   	>  U+20B9      c Indian Rupee
++ [T_BTC]   	   	>  U+20BF      c Bitcoin!
+
+c And some other fun bits too!
++ [T_AT_GMAIL]  	>   "@gmail.com " 
++ [T_Pukapuka]  	>  	"Pukapuka "      
+

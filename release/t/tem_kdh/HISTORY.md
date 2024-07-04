@@ -1,5 +1,9 @@
 Tem (kdh) Keyboard Change History
 =======================
+1.2.1 (2018-06-18)
+------------------
+* add touch keyboard to package
+
 1.2 (2017-07-04)
 -----------------
 * fixed keyboard layouts in phone and tablet

@@ -1,0 +1,107 @@
+﻿store(&version) '10.0'
+store(&NAME) 'Tai Dam Typewriter (SIL)'
+store(&BITMAP) 'sil_tai_dam_typewriter.ico'
+store(&COPYRIGHT) 'Copyright © 2009-2022 SIL International'
+c store(&ETHNOLOGUECODE) 'blt'    
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'web desktop'
+store(&MESSAGE) 'The SIL Tai Dam Typewriter keyboard is distributed under The MIT License (MIT).'
+store(&VISUALKEYBOARD) 'sil_tai_dam_typewriter.kvks'
+      
+c This keyboard has been designed for typing the Tai Dam language with the Tai Viet 
+c script. The layout is based on two Tai Dam typewriters created by the Tai Dam 
+c community in the U.S. in the late 1970's. It does not include the Tai Dón aspirated
+c consonants, and so is not suitable for the Tai Dón language.
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [K_RBRKT] > U+aadc
++ [SHIFT K_RBRKT] > ']'
++ [K_LBRKT] > U+aab0
++ [SHIFT K_LBRKT] > '['
++ [SHIFT K_7] > '"'
++ [SHIFT K_6] > U+0027        
++ [SHIFT K_5] > U+20AB  	c Dong sign
+U+20AB + [SHIFT K_5] > '%'
++ [SHIFT K_BKQUOTE] > u+003a    
++ [K_BKQUOTE] > U+003b   
+
++ [SHIFT K_Q] > U+aa93
++ [SHIFT K_W] > U+aa9b
++ [SHIFT K_E] > U+aab3
++ [SHIFT K_R] > U+aaba
++ [SHIFT K_T] > u+aab8
++ [SHIFT K_Y] > U+aab7
++ [SHIFT K_U] > U+aa96
++ [SHIFT K_I] > u+aa8a
+U+aa8a + [SHIFT K_I] > u+aa8c
++ [SHIFT K_O] > u+aaa8
++ [SHIFT K_P] > u+aa91
+
++ [K_Q] > U+aab6
++ [K_W] > u+aabc
++ [K_E] > U+aabe
++ [K_R] > U+aa9d
+U+aa9d + [K_R] > U+aa9f
++ [K_T] > u+aab2
++ [K_Y] > u+aab4
++ [K_U] > u+aa84
++ [K_I] > u+aaa9
++ [K_O] > u+aa99
++ [K_P] > U+aa94
+
++ [SHIFT K_A] > U+aa9f
++ [SHIFT K_S] > u+aaad
++ [SHIFT K_D] > u+aaa1
++ [SHIFT K_F] > U+aa88
+U+aa88 + [SHIFT K_F] > U+aa86
++ [SHIFT K_G] > U+aa81
+U+aa81 + [SHIFT K_G] > U+aa83
++ [SHIFT K_H] > u+aabf
+U+aabf + [SHIFT K_H] > u+aaa6
++ [SHIFT K_J] > u+aa8b
+U+aa8b + [SHIFT K_J] > u+aa8d
++ [SHIFT K_K] > u+aa98
++ [SHIFT K_L] > u+aaa4
++ [SHIFT K_COLON] > u+aaa0
++ [SHIFT K_QUOTE] > u+aa97 
+
++ [K_A] > u+aabd
++ [K_S] > u+aaac
++ [K_D] > u+aa80      
+u+aa80 + [K_D] > u+AA82
++ [K_F] > u+aa92
++ [K_G] > U+aab9
++ [K_H] > U+aac1  
+U+aac1 + [K_H] > U+aaa7 
++ [K_J] > u+aab1
++ [K_K] > u+aa8e
++ [K_L] > u+aaab
++ [K_COLON] > u+aa9a
++ [K_QUOTE] > u+aa89
+U+aa89 + [K_QUOTE] > u+aa87
+
++ [SHIFT K_Z] > u+aadd
++ [SHIFT K_X] > u+aaaa
++ [SHIFT K_C] > u+aa90
++ [SHIFT K_V] > u+aaaf
++ [SHIFT K_B] > u+aa85
++ [SHIFT K_N] > u+aaa2
++ [SHIFT K_COMMA] > u+002c
++ [SHIFT K_PERIOD] > U+002e
+
++ [K_Z] > u+aadb
++ [K_X] > u+aa9c
+u+aa9c + [K_X] > u+aa9e
++ [K_C] > u+aab5
++ [K_V] > u+aaae
++ [K_B] > u+aa95
++ [K_N] > u+aaa3
++ [K_M] > u+aabb
++ [K_COMMA] > u+aa8f
++ [K_PERIOD] > u+aaa5
++ [SHIFT K_BKSLASH] > U+aade
++ [SHIFT K_M] > U+aadf
+
+c EOF

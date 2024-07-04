@@ -1,0 +1,69 @@
+﻿c choctaw_modern generated from template at 2022-06-20 11:19:34
+c with name "Choctaw Modern"
+store(&VERSION) '10.0'
+store(&NAME) 'Choctaw Modern'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'choctaw_modern.kvks'
+store(&LAYOUTFILE) 'choctaw_modern.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(base) "abcdefghijklmnopqrstuvwxyz" "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+store(digits) "0123456789"
+
+store(punctK) [SHIFT K_1]    [SHIFT K_2]     [SHIFT K_3]      [SHIFT K_4]      [SHIFT K_5]     [SHIFT K_6] [SHIFT K_7] [SHIFT K_8]     [SHIFT K_9]     [SHIFT K_0] \
+              [K_HYPHEN]     [K_EQUAL]       [SHIFT K_HYPHEN] [SHIFT K_EQUAL]  [K_LBRKT]       [K_RBRKT]   [K_BKSLASH] [SHIFT K_LBRKT] [SHIFT K_RBRKT] [SHIFT K_QUOTE] [K_QUOTE] [SHIFT K_BKSLASH] \
+              [K_COMMA]      [K_PERIOD]      [SHIFT K_COMMA]  [SHIFT K_PERIOD] [SHIFT K_SLASH] [RALT K_COLON] \
+              [RALT K_LBRKT] [RALT K_RBRKT] [SHIFT K_COLON]   [RALT K_SLASH]
+store(punctU) U+0021         U+0040          U+0023           U+0024           U+0025           U+005E      U+0026      U+002A          U+0028          U+0029 \
+              U+002D         U+003D          U+005F           U+002B           U+005B           U+005D      U+005C      U+201C          U+201D          U+2018         U+2019          U+007C \
+              U+002C         U+002E          U+003C           U+003E           U+003F           U+003B \
+              U+007B         U+007D          U+003A           U+002F
+
+store(specialsK) [RALT K_C] [SHIFT RALT K_C] [RALT K_L] [SHIFT RALT K_L] [RALT K_S] [SHIFT RALT K_S] [RALT K_U] [SHIFT RALT K_U]  [RALT K_V] [SHIFT RALT K_V] 
+store(specialsU) U+010D     U+010C           U+0142     U+0141           U+0161     U+0160           U+028A     U+01B1            U+028B     U+01B2
+
+store(combK)  [K_SLASH] [K_BKQUOTE]   [K_COLON]
+store(combU)  U+0331    U+0328        U+0301
+
+store(vowels) "aeiouAEIOU" U+028A U+01B1 U+028B U+01B2
+
+group(main) using keys
+
++ [SHIFT K_BKQUOTE] > U+007E
++ [RALT K_BKQUOTE] > U+0060
+
++ any(base) > index(base,1)
++ any(digits) > index(digits,1)
++ any(punctK) > index(punctU,1)
+
++ any(combK)     > index(combU,1)
++ any(specialsK) > index(specialsU,1)
+any(vowels) + [K_SLASH] > index(vowels,1) U+0331
+any(vowels) + [K_COLON] > index(vowels,1) U+0301 use(NFC)
+any(vowels) + [K_BKQUOTE] > index(vowels,1) U+0328 use(NFC)
+
++ [T_0061_0331] > U+0061 U+0331
++ [T_0065_0331] > U+0065 U+0331
++ [T_0069_0331] > U+0069 U+0331
++ [T_006F_0331] > U+006F U+0331
++ [T_0075_0331] > U+0075 U+0331
+
++ [SHIFT T_0041_0331] > U+0041 U+0331
++ [SHIFT T_0045_0331] > U+0045 U+0331
++ [SHIFT T_0049_0331] > U+0049 U+0331
++ [SHIFT T_004F_0331] > U+004F U+0331
++ [SHIFT T_0055_0331] > U+0055 U+0331
+
+group(NFC)
+
+store(vowelsNFD) U+0061 U+0041 U+0065 U+0045 U+0069 U+0049 U+006F U+004F U+0075 U+0055
+store(AcuteNFC)  U+00E1 U+00C1 U+00E9 U+00C9 U+00ED U+00CD U+00F3 U+00D3 U+00FA U+00DA
+store(OgonekNFC) U+0105 U+0104 U+0229 U+0228 U+012F U+012E U+01EB U+01EA U+0173 U+0172
+
+any(vowelsNFD) U+0301 > index(AcuteNFC,1)
+any(vowelsNFD) U+0328 > index(OgonekNFC,1)
+
+

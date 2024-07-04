@@ -1,0 +1,111 @@
+﻿c pan-Sahelian (v. 3.2)
+c 
+c An attempt to adapt the pan-Sahelian keyboard to NFD output.
+c 
+c Certain assumptions have been made when designing this layout:
+c 1) Underlying keyboard needs to be accessible, ie type in West African languages and English.
+c i.e. minimise need for changing keyboard layout
+c 2) Minimize number of keystrokes required to enter additional characters.
+c 3) Keyboard layout should faciliate creation of web pages,
+c therefore characters such as &, #, ', ", <, >, @, (, ), {, }, / should be easily typed.
+c 4) Use number keys to type combining diacritics rather than ascii-transcription/mnenomic key assignmnets.
+c Use virtual keys, this allows the number pad to be used to type numbers.
+c 5) A limited degree of diacritic ordering is available. It is assumed that a maximum of
+c one diacritic below and two diacritics above are required on a base character.
+c 
+c To do:
+c * determine if additional base characters need to be added to "control_char"
+c allowing sequence checking on them
+c * determine if additional stacking required,
+c i.e. if more than one diacritic below and two diacritics above
+c a base character are required.
+c * build in CTRL ALT/AltGr key sequences to add extended Latin characters in addition to
+c existing mechanisms in keyboard layout.
+c 
+c Andrew Cunningham [andrewc@vicnet.net.au] Created: 24/2/03
+c Last updated: 26/2/03
+c http://www.openroad.net.au/languages/files/ps32.zip
+
+store(&VERSION) '10.0'
+store(&Copyright) "2003-2023 Enabling Languages"
+store(&Name) "pan-Sahelian"
+store(&VISUALKEYBOARD) 'el_pan_sahelian.kvks'
+store(&TARGETS) 'web desktop'
+store(&KEYBOARDVERSION) '3.2.1'
+
+begin Unicode > use(main)
+
+c keys used with modifier to enter extended latin characters
+store(char_in) "weryioszWEYIOSZdDfFgGhkK'xXvVbB./nNmMjJ1234567890"
+
+c keys that used with modifier key produces a "nul", ie key sequences not used.
+store(char_non) 'qQRtTuUpP[{]}|aAHlL;:cC<>,?"`-=~!@#$%^&*()_+'
+
+c required extended latin characters
+store(char_out) U+01dd U+025b U+027e U+01b4 U+0269 U+0254 U+0283 U+0292 U+018e U+0190 U+01b3 U+0196 U+0186 U+01a9 U+01b7 \
+                U+0257 U+018a U+0192 U+0191 U+0260 U+0193 U+0266 U+0199 U+0198 U+02bc U+0263 U+0194 U+028b U+01b2 U+0253 U+0181 \
+                U+0295 U+0294 U+0272 U+019d U+014b U+014a U+0256 U+0189 "1234567890"
+
+c base characters that will have accent ordering preformed on diacritics placed on the character
+store(control_char) "aeiouAEIOU" U+025b U+0190 U+0254 U+0186
+
+c diacritics placed above the base character
+store(dia_above) U+0300 U+0301 U+0308 U+0303 U+0306 U+030C U+0307
+
+c diacritics placed below the base character
+store(dia_below) U+0323 U+0329
+
+group(main) using keys
+
+
++ "\" > dk(0)  c "\" key used in composition of extended Latin characters
+c e.g   \w = U+01DD
+
++ [K_1] > U+0300  c combining grave accent
++ [K_2] > U+0301  c combining acute accent
++ [K_3] > U+0308  c combining diaeresis
++ [K_4] > U+0303  c combining tilde
++ [K_5] > U+0306  c combining breve
++ [K_6] > U+030C  c combining caron
++ [K_7] > U+0307  c combining dot above
++ [K_8] > U+0323  c combining dot below
++ [K_9] > U+0329  c combining vertical line below
+
+dk(0) + any(char_in) > index(char_out,2)
+dk(0) + any(char_non) > nul
+dk(0) + "\" > "\"
+
+c sequence checking: one base character, two diacritics above and one diacritic below
+
+any(control_char) any(dia_above) any(dia_above) + [K_8] > context(1) U+0323 context(2) context(3)
+any(control_char) any(dia_above) any(dia_above) + [K_9] > context(1) U+0329 context(2) context(3)
+
+any(control_char) any(dia_above) any(dia_below) + [K_1] > context(1) context(3) context(2) U+0300
+any(control_char) any(dia_above) any(dia_below) + [K_2] > context(1) context(3) context(2) U+0301
+any(control_char) any(dia_above) any(dia_below) + [K_3] > context(1) context(3) context(2) U+0308
+any(control_char) any(dia_above) any(dia_below) + [K_4] > context(1) context(3) context(2) U+0303
+any(control_char) any(dia_above) any(dia_below) + [K_5] > context(1) context(3) context(2) U+0306
+any(control_char) any(dia_above) any(dia_below) + [K_6] > context(1) context(3) context(2) U+030C
+any(control_char) any(dia_above) any(dia_below) + [K_7] > context(1) context(3) context(2) U+0307
+
+any(control_char) any(dia_below) any(dia_above) + [K_1] > context(1) context(2) context(3) U+0300
+any(control_char) any(dia_below) any(dia_above) + [K_2] > context(1) context(2) context(3) U+0301
+any(control_char) any(dia_below) any(dia_above) + [K_3] > context(1) context(2) context(3) U+0308
+any(control_char) any(dia_below) any(dia_above) + [K_4] > context(1) context(2) context(3) U+0303
+any(control_char) any(dia_below) any(dia_above) + [K_5] > context(1) context(2) context(3) U+0306
+any(control_char) any(dia_below) any(dia_above) + [K_6] > context(1) context(2) context(3) U+030C
+any(control_char) any(dia_below) any(dia_above) + [K_7] > context(1) context(2) context(3) U+0307
+
+c sequence checking: one base character, one diacritic above and one diacritic below
+
+any(control_char) any(dia_above) + [K_8] > context(1) U+0323 context(2)
+any(control_char) any(dia_above) + [K_9] > context(1) U+0329 context(2)
+any(control_char) any(dia_below) + [K_1] > context U+0300 
+any(control_char) any(dia_below) + [K_2] > context U+0300
+any(control_char) any(dia_below) + [K_3] > context U+0300
+any(control_char) any(dia_below) + [K_4] > context U+0300
+any(control_char) any(dia_below) + [K_5] > context U+0300
+any(control_char) any(dia_below) + [K_6] > context U+0300
+any(control_char) any(dia_below) + [K_7] > context U+0300      
+
+c EOF

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Aksara Bali</Name>
+    <Copyright URL="">(c) 2019-2023 The PanLex Project of The Long Now Foundation</Copyright>
+    <Author URL="mailto:info@panlex.org">David Kamholz</Author>
+    <WebSite URL="panlex.org">panlex.org</WebSite>
+    <Description>This keyboard lets you type Aksara Bali (Balinese script) in Unicode. It
+is a Unicode reimplementation of the Bali Simbar keyboard (the de-facto
+standard keyboard in Bali for typing in Balinese script).</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\aksarabali_panlex.kmx</Name>
+      <Description>Keyboard Aksara Bali Unicode</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\aksarabali_panlex.kvk</Name>
+      <Description>File aksarabali_panlex.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\bali_simbar_panduan.pdf</Name>
+      <Description>File bali_simbar_panduan.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\build\aksarabali_panlex.js</Name>
+      <Description>File aksarabali_panlex.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\longnow\bali\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\longnow\bali\Vimala.ttf</Name>
+      <Description>Font Vimala</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Aksara Bali</Name>
+      <ID>aksarabali_panlex</ID>
+      <Version>1.1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\longnow\bali\Vimala.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\longnow\bali\Vimala.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ban-Bali">Balinese (Balinese)</Language>
+        <Language ID="kaw-Bali">Kawi (Balinese)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

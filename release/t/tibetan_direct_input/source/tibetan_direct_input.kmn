@@ -1,0 +1,259 @@
+c A phonetic style Unicode keyboard designed for typing Tibetan characters and stacks directly.
+
+c ========== c
+c Pre-Stores c
+c ========== c
+c System Stores
+store(&VERSION) "10.0"
+
+store(&NAME) 'Tibetan Direct Input'
+
+store(&COPYRIGHT) '© 2003-2019 SIL International'
+c store(&WINDOWSLANGUAGES) 'x0451'
+c store(&LANGUAGE) 'x0451'
+c store(&ETHNOLOGUECODE) 'adi adx bft bfu bod clk cna dre dzo ght jya kbg khg khk kjz lae lbf lbj lep loy muk ola otb prx sbu sip taj tdg tsj xct xkf xsr zau'
+
+store(&VISUALKEYBOARD) 'tibetan_direct_input.kvks'
+store(&BITMAP) 'tibetan_direct_input.ico'
+
+store(&CAPSALWAYSOFF) "1" 
+   
+c Menu Stores
+store(menu)     "[1 LOGO  2 ASTR  3 HALF  4 CANT  5 SYMB ]"
+store(menu.num) "12345"
+ 
+store(logo)     "[1༕ 2༖]"        c 7 symbols
+store(logo.num) "12" 
+store(logo.sym) "༕༖" 
+
+store(astr)     "[1༗ 2༘ 3༙ 4༾ 5༿ 6࿏]"      c 19 symbols
+store(astr.num) "123456" 
+store(astr.sym) "༗༘༙༾༿࿏" 
+
+store(half)     "[1༪ 2༫ 3༬ 4༭ 5༮ 6༯ 7༰ 8༱ 9༲ 0༳]" c 31 symbols
+store(half.num) "1234567890" 
+store(half.sym) "༪༫༬༭༮༯༰༱༲༳" 
+
+store(cant)     "[1࿀ 2࿁ 3࿂ 4࿃]"         c 13 symbols
+store(cant.num) "1234" 
+store(cant.sym) "࿀࿁࿂࿃" 
+
+store(symb)     "[1࿄ 2࿅ 3࿆ 4࿇ 5࿈ 6࿉ 7࿊ 8࿋ 9࿌]"    c 28 symbols
+store(symb.num) "123456789" 
+store(symb.sym) "࿄࿅࿆࿇࿈࿉࿊࿋࿌" 
+
+store(num) "1234567890" 
+store(not.num) "`-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:" '"' "ZXCVBNM<>?"
+
+store(abc.lc)   "abcdefghijklmnopqrstuvwxyz" 
+store(abc.uc)   "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+store(abc)      outs(abc.lc) outs(abc.uc) 
+store(abc.caps) outs(abc.uc) outs(abc.uc) 
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'tibetan_direct_input.keyman-touch-layout'
+store(&KEYBOARDVERSION) '1.4'
+
+begin Unicode > use(main)
+
+group(main) using keys
+c Menu Rules
+  dk(3) + [K_BKSP] > dk(3) use(menu_delete)
+
+c General Rules
+    + ' ' > use(normal)
+  nomatch > use(menu)
+    
+        
+group(menu) using keys
+                                         
+    "\" + any(abc) > context index(abc.caps, 2)
+    "\" any(abc.uc) + any(abc) > context index(abc.caps, 3)
+    "\" any(abc.uc) any(abc.uc) + any(abc) > context index(abc.caps, 4)
+
+    "\MEN"  + "u" > outs(menu) dk(3)
+    "\LOG"  + "o" > outs(logo) dk(3)
+    "\AST"  + "r" > outs(astr) dk(3)
+    "\HAL"  + "f" > outs(half) dk(3)
+    "\CAN"  + "t" > outs(cant) dk(3)
+    "\SYM"  + "b" > outs(symb) dk(3)
+    
+    "\MEN"  + "U" > outs(menu) dk(3)
+    "\LOG"  + "O" > outs(logo) dk(3)
+    "\AST"  + "R" > outs(astr) dk(3)
+    "\HAL"  + "F" > outs(half) dk(3)
+    "\CAN"  + "T" > outs(cant) dk(3)
+    "\SYM"  + "B" > outs(symb) dk(3)
+    
+    dk(3) + any(num) > dk(3) use(menu_choice)
+    dk(3) + any(not.num) > dk(3) beep
+    
+    nomatch > use(normal)
+    
+group(menu_choice) using keys
+
+    outs(menu) dk(3) + '1' > outs(logo) dk(3)
+    outs(menu) dk(3) + '2' > outs(astr) dk(3)
+    outs(menu) dk(3) + '3' > outs(half) dk(3)
+    outs(menu) dk(3) + '4' > outs(cant) dk(3)
+    outs(menu) dk(3) + '5' > outs(symb) dk(3)
+    
+    outs(logo) dk(3) + any(logo.num) > index(logo.sym, 9)
+    outs(astr) dk(3) + any(astr.num) > index(astr.sym, 21)
+    outs(half) dk(3) + any(half.num) > index(half.sym, 33)
+    outs(cant) dk(3) + any(cant.num) > index(cant.sym, 15)
+    outs(symb) dk(3) + any(symb.num) > index(symb.sym, 30)
+    
+group(menu_delete)
+
+    outs(menu) dk(3) > nul
+    outs(logo) dk(3) > nul
+    outs(astr) dk(3) > nul
+    outs(half) dk(3) > nul
+    outs(cant) dk(3) > nul
+    outs(symb) dk(3) > nul
+
+group(normal) using keys
+   + "!" > "༈" 
+   + '"' > "ཱ" 
+   + "#" > "༅" 
+  "༆"  + "$" > "༄༅ སྐྱེ་འགྲོ་ཐམས་ཅད་དགེ་བར་བྱེད་པར་གྱུར་ཅིག ༎" 
+   + "$" > "༆" 
+   + "%" > "༇" 
+   + "&" > "྅" 
+   + "'" > "འ" 
+   + "(" > "༼" 
+   + ")" > "༽" 
+  "ཨ"  + "*" > "༁" 
+  "༁"  + "*" > "༁ྃ" 
+  "ཏ"  + "*" > "ཊ" 
+  "ཐ"  + "*" > "ཋ" 
+  "ད"  + "*" > "ཌ" 
+  "ན"  + "*" > "ཎ" 
+  "ཅ"  + "*" > "ཙ" 
+  "ཆ"  + "*" > "ཚ" 
+  "ཇ"  + "*" > "ཛ" 
+  "ར"  + "*" > "ཪ" 
+  "ཤ"  + "*" > "ཥ" 
+  "ྟ"  + "*" > "ྚ" 
+  "ྠ"  + "*" > "ྛ" 
+  "ྡ"  + "*" > "ྜ" 
+  "ྣ"  + "*" > "ྞ" 
+  "ྕ"  + "*" > "ྩ" 
+  "ྖ"  + "*" > "ྪ" 
+  "ྗ"  + "*" > "ྫ" 
+  "ྭ"  + "*" > "ྺ" 
+  "ཱ"  + "*" > "ྰ" 
+  "ྱ"  + "*" > U+0FB1 U+0F28 
+  "ྲ"  + "*" > "ྼ" 
+  "ྴ"  + "*" > "ྵ" 
+  "ཾ"  + "*" > "ྃ" 
+  "ྃ"  + "*" > "ྂ" 
+  "ༀ"  + "*" > "ཨོྃ" 
+  "༠"  + "*" > "༳" 
+  "༡"  + "*" > "༪" 
+  "༢"  + "*" > "༫" 
+  "༣"  + "*" > "༬" 
+  "༤"  + "*" > "༭" 
+  "༥"  + "*" > "༮" 
+  "༦"  + "*" > "༯" 
+  "༧"  + "*" > "༰" 
+  "༨"  + "*" > "༱" 
+  "༩"  + "*" > "༲" 
+  "།"  + "*" > "༏" 
+  "༏"  + "*" > "༐" 
+  "༐"  + "*" > "༑" 
+  "༺"  + "*" > "༻" 
+  "༼"  + "*" > "༿" 
+  "༽"  + "*" > "༾" 
+   + "*" > "༓" 
+   + "+" > "༒" 
+   + "," > "ང" 
+   + "-" > "༌" 
+   + "." > "ཉ" 
+  "།"  + "/" > "༎" 
+   + "/" > "།" 
+   + "0" > "༠" 
+   + "1" > "༡" 
+   + "2" > "༢" 
+   + "3" > "༣" 
+   + "4" > "༤" 
+   + "5" > "༥" 
+   + "6" > "༦" 
+   + "7" > "༧" 
+   + "8" > "༨" 
+   + "9" > "༩" 
+   + ":" > "ཿ" 
+   + ";" > "༔" 
+   + "<" > "ྔ" 
+   + "=" > "༴" 
+   + ">" > "ྙ" 
+   + "?" > "༑" 
+   + "@" > "༄" 
+   + "A" > "ྸ" 
+   + "B" > "ྦ" 
+   + "C" > "ྕ" 
+   + "D" > "ྡ" 
+   + "E" > "ཻ" 
+   + "F" > "ྥ" 
+   + "G" > "ྒ" 
+   + "H" > "ྷ" 
+   + "I" > "ྀ" 
+   + "J" > "ྗ" 
+   + "K" > "ྐ" 
+   + "L" > "ླ" 
+   + "M" > "ྨ" 
+   + "N" > "ྣ" 
+   + "O" > "ཽ" 
+   + "P" > "ྤ" 
+   + "Q" > "ྴ" 
+   + "R" > "ྲ" 
+   + "S" > "ྶ" 
+   + "T" > "ྟ" 
+   + "U" > "༁ྃ" 
+   + "V" > "ྭ" 
+   + "W" > "ྮ" 
+   + "X" > "ྖ" 
+   + "Y" > "ྱ" 
+   + "Z" > "ྯ" 
+   + "[" > "ཁ" 
+   + "]" > "ཐ" 
+   + "^" > "༺" 
+   + "_" > " " 
+   + "`" > "྄" 
+   + "a" > "ཨ" 
+   + "b" > "བ" 
+   + "c" > "ཅ" 
+   + "d" > "ད" 
+   + "e" > "ེ" 
+   + "f" > "ཕ" 
+   + "g" > "ག" 
+   + "h" > "ཧ" 
+   + "i" > "ི" 
+   + "j" > "ཇ" 
+   + "k" > "ཀ" 
+   + "l" > "ལ" 
+   + "m" > "མ" 
+   + "n" > "ན" 
+   + "o" > "ོ" 
+   + "p" > "པ" 
+   + "q" > "ཤ" 
+   + "r" > "ར" 
+   + "s" > "ས" 
+   + "t" > "ཏ" 
+   + "u" > "ུ" 
+   + "v" > "ཝ" 
+   + "w" > "ཞ" 
+   + "x" > "ཆ" 
+   + "y" > "ཡ" 
+   + "z" > "ཟ" 
+   + "{" > "ྑ" 
+   + "}" > "ྠ" 
+  "ཨོ"  + "~" > "ༀ" 
+   + "~" > "ཾ" 
+   + [K_BKQUOTE] > "`" 
+   + [SHIFT K_BKQUOTE] > "~" 
+   + [K_QUOTE] > "'" 
+
+   + ' ' > U+0F0B
+   U+0F0B + ' ' > nul
+c EOF

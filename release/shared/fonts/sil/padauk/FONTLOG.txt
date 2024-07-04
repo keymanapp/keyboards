@@ -1,0 +1,109 @@
+FONTLOG 
+Padauk
+=================
+
+This file provides detailed information on the Padauk font software. 
+This information should be distributed along with the Padauk fonts 
+and any derivative works.
+
+Basic Font Information
+----------------------
+Padauk is a pan-Burma font designed to support all Myanmar script-based 
+languages. It covers all of the Unicode Myanmar script blocks and works 
+on all OpenType and Graphite based systems.
+
+Features:
+* Special support for: ksw, kht, kyu, shn, aio, phk, csh, tjl
+* Variation Selector support for kht, aio, phk
+
+Issues:
+* Does not work in Word 2007
+
+For detailed documentation see the contents of the 'documentation' folder.
+
+Padauk is released under the SIL Open Font License.
+
+For copyright and licensing information - including any Reserved Font
+Names - see OFL.txt.
+
+For practical information about using, modifying and redistributing this
+font see OFL-FAQ.txt.
+
+
+ChangeLog
+---------
+(This should list both major and minor changes, most recent first.)
+
+08 June 2022 (SIL WSTech team) Version 5.001
+- Added Character Variant feature (cv09) for U+AA6C variant selection in OpenType and Graphite
+- Added Stylistic Set feature (ss09) for U+AA6C variant selection in OpenType
+- Added support for tall U/UU (U+102F/U+1030) following a sequence of U+101A and U+103E
+
+18 June 2021 (SIL WSTech team) Version 5.0
+- Added Thai Mon variant glyphs and language support
+- Added Aiton and Phake variant glyphs and language support
+- Added Sgaw variant glyphs
+- Added Character Variant features (cv01-07) for variant selection in 
+  OpenType and Graphite
+- Added Stylistic Set features (ss01-06) for variant selection in OpenType
+- Added glyphs to Variation Selector VS1 for Khamti and Aiton
+- Added support for Mon sequence of U+102B (tall AA) followed by U+1032 (AI)
+- Fixed various bugs
+- Added kerning to some glyph pairs
+
+6 September 2019 (SIL WSTech team) Version 4.0
+- Modified OpenType code to reduce GPOS table size and speed up processing
+- Added font packages Namkio (Khamti) and Deemawso (Kayah Li)
+- Fixed a few bugs
+
+31 May 2019 (SIL WSTech team) Padauk beta Version 3.950 (test release)
+ - Add glyphs to support minority languages 
+ - Improved support for rendering minority languages, especially Khamti, 
+   Sgaw Karen, Tai Liang, and Asho Chin
+ - Added glyphs for typesetting and web font support
+
+10 March 2017 Version 3.003
+- Run ttfautohint 1.6 which has support for Myanmar
+
+22 November 2016. Version 3.002
+- Run ttx optimisation during the build to reduce file size
+- Change font file names to more conventional file naming practice
+
+15th September 2016. Version 3.001
+- Change lower ascii characters from being marks to spacing
+
+7th June 2016. Version 3.0
+- Add mym2 OpenType support
+- Support minority languages in OpenType
+- Support 4 faces, book and regular in bold and regular
+
+
+Acknowledgements
+-----------------
+(Here is where contributors can be acknowledged. If you make modifications
+be sure to add your name (N), email (E), web-address (W) and description (D).
+This list is sorted by last name in alphabetical order.)
+
+
+N: Jon Coblentz
+D: Font engineer
+
+N: Bobby deVos
+D: Font engineer
+
+N: Debbi Hosken
+D: Glyph design
+
+N: Martin Hosken
+D: Chief Engineer
+
+N: Iska Routamaa
+D: Glyph design, book & bold interpolations
+
+N: Becca Spalinger
+D: Glyph design
+
+N: Keith Stribley
+D: OpenType engineering
+
+The Padauk fonts are maintained by SIL International.

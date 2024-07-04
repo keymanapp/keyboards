@@ -1,0 +1,521 @@
+c Version 2009.11.3.1 - PBaehr - Added capital digamma. Corrected two dialityka oversights.
+store(&VERSION) '10.0'
+store(&BITMAP) 'greekclassical.ico'
+store(&NAME) 'Greek Classical'
+store(&COPYRIGHT) '© 2003-2020 Manuel A. Lopez and SIL International'
+store(&VISUALKEYBOARD) 'greekclassical.kvks'
+c store(&WINDOWSLANGUAGES) 'x0408'
+c store(&LANGUAGE) 'x0408'
+c store(&ETHNOLOGUECODE) 'grc ell cpg pnt tsd yej'
+store(&KEYBOARDVERSION) '1.2'
+store(&TARGETS) 'windows macosx linux web'
+
+c $KeymanOnly: store(&MNEMONICLAYOUT) "1"
+store(latin) "abgdezhqiklmncjoprstufxywvABGDEZHQIKLMNCJOPRSTUFXYWV" 
+store(greek) "αβγδεζηθικλμνξξοπρστυφχψωνΑΒΓΔΕΖΗΘΙΚΛΜΝΞΞΟΠΡΣΤΥΦΧΨΩΝ" 
+store(latin2) "~!@#$%^&*()_-+={}[]|\:;<>,.'?/" '"' " " 
+store(greek2) "~!@#$%^&*()_-+={}[]|\:;<>,.'?/" '"' " " 
+store(base-vowels)               "αεηιουωΑΕΗΙΟΥΩ" 
+store(varia)                     "ὰὲὴὶὸὺὼᾺῈῊῚῸῪῺ" 
+store(oxia)                      "άέήίόύώΆΈΉΊΌΎΏ" 
+store(psili)                     "ἀἐἠἰὀὐὠἈἘἨἸὈΥὨ" 
+store(dasia)                     "ἁἑἡἱὁὑὡἉἙἩἹὉὙὩ" 
+store(psili-varia)               "ἂἒἢἲὂὒὢἊἚἪἺὊῪὪ" 
+store(dasia-varia)               "ἃἓἣἳὃὓὣἋἛἫἻὋὛὫ" 
+store(psili-oxia)                "ἄἔἤἴὄὔὤἌἜἬἼὌΎὬ" 
+store(dasia-oxia)                "ἅἕἥἵὅὕὥἍἝἭἽὍὝὭ" 
+store(perispomeni)               "ᾶεῆῖοῦῶΑΕΗΙΟΥΩ" 
+store(psili-perispomeni)         "ἆἐἦἶὀὖὦἎἘἮἾὈΥὮ" 
+store(dasia-perispomeni)         "ἇἑἧἷὁὗὧἏἙἯἿὉὟὯ" 
+store(iotasub)                   "ᾳεῃιουῳᾼΕῌΙΟΥῼ" 
+store(varia-iotasub)             "ᾲὲῂὶὸὺῲᾼΕῌΙΟΥῼ" 
+store(oxia-iotasub)              "ᾴέῄίόύῴᾼΕῌΙΟΥῼ" 
+store(psili-iotasub)             "ᾀἐᾐἰὀὐᾠᾈἘᾘἸὈΥᾨ" 
+store(dasia-iotasub)             "ᾁἑᾑἱὁὑᾡᾉἙᾙἹὉὙᾩ" 
+store(psili-varia-iotasub)       "ᾂἒᾒἲὂὒᾢᾊἚᾚἺὊῪᾪ" 
+store(dasia-varia-iotasub)       "ᾃἓᾓἳὃὓᾣᾋἛᾛἻὋὛᾫ" 
+store(psili-oxia-iotasub)        "ᾄἔᾔἴὄὔᾤᾌἜᾜἼὌΎᾬ" 
+store(dasia-oxia-iotasub)        "ᾅἕᾕἵὅὕᾥᾍἝᾝἽὍὝᾭ" 
+store(perispomeni-iotasub)       "ᾷεῇῖοῦῷᾼΕῌΙΟΥῼ" 
+store(psili-perispomeni-iotasub) "ᾆἐᾖἶὀὖᾦᾎἘᾞἾὈΥᾮ" 
+store(dasia-perispomeni-iotasub) "ᾇἑᾗἷὁὗᾧᾏἙᾟἿὉὟᾯ" 
+store(dialytika)                 "αεηϊοϋωΑΕΗΪΟΫΩ" 
+store(dialytika-varia)           "ὰὲὴῒὸῢὼᾺῈῊῚῸῪῺ" 
+store(dialytika-oxia)            "άέήΐόΰώΆΈΉΊΌΎΏ" 
+store(dialytika-perispomeni)     "ᾶεῆῗοῧῶΑΕΗΙΟΥΩ" 
+store(vrachy)                    "ᾰεηῐοῠωᾸΕΗῘΟῨΩ" 
+store(macron)                    "ᾱεηῑοῡωᾹΕΗῙΟῩΩ" 
+
+begin Unicode > use(main)
+
+group(main) using keys                        
+   + "`" > deadkey(1) 
+  deadkey(1)  + "`" > "`"   
+       
+     
+  deadkey(1)  + "a" > "a" 
+   + "a" > "α" 
+  deadkey(1)  + "b" > "b" 
+   + "b" > "β" 
+  deadkey(1)  + "c" > "c" 
+   + "c" > "ξ" 
+  deadkey(1)  + "d" > "d" 
+   + "d" > "δ" 
+  deadkey(1)  + "e" > "e" 
+   + "e" > "ε" 
+  deadkey(1)  + "f" > "f" 
+   + "f" > "φ" 
+  deadkey(1)  + "g" > "g" 
+   + "g" > "γ" 
+  deadkey(1)  + "h" > "h" 
+   + "h" > "η" 
+  deadkey(1)  + "i" > "i" 
+   + "i" > "ι" 
+  deadkey(1)  + "j" > "j" 
+   + "j" > "ξ" 
+  deadkey(1)  + "k" > "k" 
+   + "k" > "κ" 
+  deadkey(1)  + "l" > "l" 
+   + "l" > "λ" 
+  deadkey(1)  + "m" > "m" 
+   + "m" > "μ" 
+  deadkey(1)  + "n" > "n" 
+   + "n" > "ν" 
+  deadkey(1)  + "o" > "o" 
+   + "o" > "ο" 
+  deadkey(1)  + "p" > "p" 
+   + "p" > "π" 
+  deadkey(1)  + "q" > "q" 
+   + "q" > "θ" 
+  deadkey(1)  + "r" > "r" 
+   + "r" > "ρ" 
+  deadkey(1)  + "s" > "s" 
+   + "s" > "σ" 
+  deadkey(1)  + "t" > "t" 
+   + "t" > "τ" 
+  deadkey(1)  + "u" > "u" 
+   + "u" > "υ" 
+  deadkey(1)  + "v" > "v" 
+   + "v" > "ν" 
+  deadkey(1)  + "w" > "w" 
+   + "w" > "ω" 
+  deadkey(1)  + "x" > "x" 
+   + "x" > "χ" 
+  deadkey(1)  + "y" > "y" 
+   + "y" > "ψ" 
+  deadkey(1)  + "z" > "z" 
+   + "z" > "ζ" 
+ 
+  deadkey(1)  + "A" > "A" 
+   + "A" > "Α" 
+  deadkey(1)  + "B" > "B" 
+   + "B" > "Β" 
+  deadkey(1)  + "C" > "C" 
+   + "C" > "Ξ" 
+  deadkey(1)  + "D" > "D" 
+   + "D" > "Δ" 
+  deadkey(1)  + "E" > "E" 
+   + "E" > "Ε" 
+  deadkey(1)  + "F" > "F" 
+   + "F" > "Φ" 
+  deadkey(1)  + "G" > "G" 
+   + "G" > "Γ" 
+  deadkey(1)  + "H" > "H" 
+   + "H" > "Η" 
+  deadkey(1)  + "I" > "I" 
+   + "I" > "Ι" 
+  deadkey(1)  + "J" > "J" 
+   + "J" > "Ξ" 
+  deadkey(1)  + "K" > "K" 
+   + "K" > "Κ" 
+  deadkey(1)  + "L" > "L" 
+   + "L" > "Λ" 
+  deadkey(1)  + "M" > "M" 
+   + "M" > "Μ" 
+  deadkey(1)  + "N" > "N" 
+   + "N" > "Ν" 
+  deadkey(1)  + "O" > "O" 
+   + "O" > "Ο" 
+  deadkey(1)  + "P" > "P" 
+   + "P" > "Π" 
+  deadkey(1)  + "Q" > "Q" 
+   + "Q" > "Θ" 
+  deadkey(1)  + "R" > "R" 
+   + "R" > "Ρ" 
+  deadkey(1)  + "S" > "S" 
+   + "S" > "Σ" 
+  deadkey(1)  + "T" > "T" 
+   + "T" > "Τ" 
+  deadkey(1)  + "U" > "U" 
+   + "U" > "Υ" 
+  deadkey(1)  + "V" > "V" 
+   + "V" > "Ν"    
+  deadkey(1)  + "W" > "W" 
+   + "W" > "Ω" 
+  deadkey(1)  + "X" > "X" 
+   + "X" > "Χ" 
+  deadkey(1)  + "Y" > "Y" 
+   + "Y" > "Ψ" 
+  deadkey(1)  + "Z" > "Z" 
+   + "Z" > "Ζ" 
+
+   
+   + [RALT K_3] > "͵"
+   + [RALT K_8] > "ϗ"
+   + [RALT K_9] > "ͼ"
+   + [RALT K_0] > "ͽ"   
+   + [RALT K_Q] > "ϑ"
+   + [RALT K_W] > "ͷ"   
+   + [RALT K_E] > "ϵ"
+   + [RALT K_R] > "ϱ"
+   + [RALT K_T] > "ϛ"
+   + [RALT K_Y] > "ϳ" 
+   + [RALT K_I] > "ι"
+   + [RALT K_P] > "ϖ"
+   + [RALT K_S] > "ϲ"
+   + [RALT K_D] > "ͻ"
+   + [RALT K_F] > "ϕ"
+   + [RALT K_G] > "ϙ"
+   + [RALT K_H] > "ͱ"
+   + [RALT K_J] > "ϸ"
+   + [RALT K_K] > "ϰ"
+   + [RALT K_Z] > "ϡ"
+   + [RALT K_X] > "ͳ"
+   + [RALT K_C] > "ϟ"
+   + [RALT K_V] > "ϝ"
+   + [RALT K_B] > "ϐ"
+   + [RALT K_M] > "ϻ" 
+   
+   + [SHIFT RALT K_3] > "ʹ"
+   + [SHIFT RALT K_7] > "Ϗ"
+   + [SHIFT RALT K_9] > "Ͼ"
+   + [SHIFT RALT K_0] > "Ͽ"
+   + [SHIFT RALT K_Q] > "ϴ"
+   + [SHIFT RALT K_W] > "Ͷ"
+   + [SHIFT RALT K_E] > "϶"
+   + [SHIFT RALT K_R] > "ϼ"
+   + [SHIFT RALT K_T] > "Ϛ"
+   + [SHIFT RALT K_U] > "ϒ"
+   + [SHIFT RALT K_S] > "Ϲ"
+   + [SHIFT RALT K_D] > "Ͻ"
+   + [SHIFT RALT K_G] > "Ϙ"
+   + [SHIFT RALT K_H] > "Ͱ"
+   + [SHIFT RALT K_J] > "Ϸ"
+   + [SHIFT RALT K_Z] > "Ϡ"
+   + [SHIFT RALT K_X] > "Ͳ"
+   + [SHIFT RALT K_C] > "Ϟ"
+   + [SHIFT RALT K_V] > "Ϝ"
+   + [SHIFT RALT K_M] > "Ϻ" 
+ 
+   + ":" > "·" 
+   + [RALT K_HYPHEN]  > "˘"
+   + [RALT K_EQUAL]   > "῀"
+   + [RALT K_LBRKT]   > "῾"
+   + [RALT K_RBRKT]   > "᾿"
+   + [RALT K_BKSLASH] > "`"
+   + [RALT K_SLASH]   > "´"
+
+   + [SHIFT RALT K_HYPHEN] > "¯"
+   + [SHIFT RALT K_EQUAL] > "¨"
+   + [SHIFT RALT K_SLASH] > "ͺ" 
+ 
+  "σ" deadkey(1)  + "-" > "ς-" 
+  deadkey(1)  + "-" > "-" 
+  "σ" deadkey(1)  + "=" > "ς=" 
+  deadkey(1)  + "=" > "="      
+  "σ"  + "=" > "ς="  
+  
+  "σ" deadkey(1)  + "[" > "ς[" 
+  deadkey(1)  + "[" > "[" 
+  "σ"  + "[" > "ς["
+  "σ" deadkey(1)  + "]" > "ς]" 
+  deadkey(1)  + "]" > "]"
+  "σ"  + "]" > "ς]"    
+  "σ" deadkey(1)  + "\" > "ς\" 
+  deadkey(1)  + "\" > "\"              
+  "σ"  + "\" > "ς\" 
+
+  "σ" deadkey(1)  + ";" > "ς;" 
+  deadkey(1)  + ";" > ";" 
+  "σ"  + ";" > "ς;"
+  "σ" deadkey(1)  + "'" > "ς'" 
+  deadkey(1)  + "'" > "'" 
+  "σ"  + "'" > "ς'"  
+                     
+  "σ" deadkey(1)  + " " > "ς " 
+  deadkey(1)  + " " > " " 
+  "σ"  + " " > "ς " 
+  "σ" deadkey(1)  + "," > "ς," 
+  deadkey(1)  + "," > "," 
+  "σ"  + "," > "ς," 
+  "σ" deadkey(1)  + "." > "ς." 
+  deadkey(1)  + "." > "." 
+  "σ"  + "." > "ς." 
+  "σ" deadkey(1)  + "/" > "ς/" 
+  deadkey(1)  + "/" > "/" 
+  "σ"  + "/" > "ς/"   
+  
+  
+  "σ" deadkey(1)  + "~" > "ς~" 
+  deadkey(1)  + "~" > "~" 
+  "σ"  + "~" > "ς~" 
+  "σ" deadkey(1)  + "!" > "ς!" 
+  deadkey(1)  + "!" > "!" 
+  "σ"  + "!" > "ς!"
+  "σ" deadkey(1)  + "@" > "ς@" 
+  deadkey(1)  + "@" > "@" 
+  "σ"  + "@" > "ς@"
+  "σ" deadkey(1)  + "#" > "ς#" 
+  deadkey(1)  + "#" > "#" 
+  "σ"  + "#" > "ς#"
+  "σ" deadkey(1)  + "$" > "ς$" 
+  deadkey(1)  + "$" > "$" 
+  "σ"  + "$" > "ς$"
+  "σ" deadkey(1)  + "%" > "ς%" 
+  deadkey(1)  + "%" > "%" 
+  "σ"  + "%" > "ς%" 
+  "σ" deadkey(1)  + "^" > "ς^" 
+  deadkey(1)  + "^" > "^" 
+  "σ"  + "^" > "ς^"
+  "σ" deadkey(1)  + "&" > "ς&" 
+  deadkey(1)  + "&" > "&" 
+  "σ"  + "&" > "ς&"
+  "σ" deadkey(1)  + "*" > "ς*" 
+  deadkey(1)  + "*" > "*" 
+  "σ"  + "*" > "ς*"
+  "σ" deadkey(1)  + "(" > "ς(" 
+  deadkey(1)  + "(" > "(" 
+  "σ"  + "(" > "ς(" 
+  "σ" deadkey(1)  + ")" > "ς)" 
+  deadkey(1)  + ")" > ")" 
+  "σ"  + ")" > "ς)"   
+  "σ" deadkey(1)  + "_" > "ς_" 
+  deadkey(1)  + "_" > "_" 
+  "σ"  + "_" > "ς_"                     
+  "σ" deadkey(1)  + "+" > "ς+" 
+  deadkey(1)  + "+" > "+"
+  "σ"  + "+" > "ς+"     
+  
+  "σ" deadkey(1)  + "{" > "ς{" 
+  deadkey(1)  + "{" > "{" 
+  "σ"  + "{" > "ς{"
+  "σ" deadkey(1)  + "}" > "ς}" 
+  deadkey(1)  + "}" > "}" 
+  "σ"  + "}" > "ς}"  
+  "σ" deadkey(1)  + "|" > "ς|" 
+  deadkey(1)  + "|" > "|"   
+  "σ"  + "|" > "ς|" 
+               
+  "σ" deadkey(1)  + ":" > "ς:" 
+  deadkey(1)  + ":" > ":" 
+  "σ"  + ":" > "ς·"  
+  "σ" deadkey(1)  + '"' > "ς" '"' 
+  deadkey(1)  + '"' > '"' 
+  "σ"  + '"' > "ς" '"' 
+  
+  "σ" deadkey(1)  + "<" > "ς<" 
+  deadkey(1)  + "<" > "<" 
+  "σ"  + "<" > "ς<" 
+  "σ" deadkey(1)  + ">" > "ς>" 
+  deadkey(1)  + ">" > ">" 
+  "σ"  + ">" > "ς>" 
+  "σ" deadkey(1)  + "?" > "ς?" 
+  deadkey(1)  + "?" > "?" 
+  "σ"  + "?" > "ς?"  
+
+                   
+  
+  any(base-vowels)  + "-" > index(vrachy, 1) 
+  any(vrachy)  + "-" > index(base-vowels, 1) 
+  any(macron)  + "-" > index(vrachy, 1) 
+  
+  any(base-vowels)  + "=" > index(perispomeni, 1) 
+  any(iotasub)  + "=" > index(perispomeni-iotasub, 1) 
+  any(varia-iotasub)  + "=" > index(perispomeni-iotasub, 1) 
+  any(oxia-iotasub)  + "=" > index(perispomeni-iotasub, 1) 
+  any(perispomeni-iotasub)  + "=" > index(iotasub, 1) 
+  any(psili-iotasub)  + "=" > index(psili-perispomeni-iotasub, 1) 
+  any(dasia-iotasub)  + "=" > index(dasia-perispomeni-iotasub, 1) 
+  any(dialytika)  + "=" > index(dialytika-perispomeni, 1) 
+  any(dialytika-perispomeni)  + "=" > index(dialytika, 1) 
+  any(dialytika-oxia)  + "=" > index(dialytika-perispomeni, 1) 
+  any(dialytika-varia)  + "=" > index(dialytika-perispomeni, 1) 
+  any(psili)  + "=" > index(psili-perispomeni, 1) 
+  any(dasia)  + "=" > index(dasia-perispomeni, 1) 
+  any(varia)  + "=" > index(perispomeni, 1) 
+  any(oxia)  + "=" > index(perispomeni, 1) 
+  any(perispomeni)  + "=" > index(base-vowels, 1) 
+  any(psili-varia)  + "=" > index(psili-perispomeni, 1) 
+  any(dasia-varia)  + "=" > index(dasia-perispomeni, 1) 
+  any(psili-oxia)  + "=" > index(psili-perispomeni, 1) 
+  any(dasia-oxia)  + "=" > index(dasia-perispomeni, 1) 
+  any(psili-perispomeni)  + "=" > index(psili, 1) 
+  any(dasia-perispomeni)  + "=" > index(dasia, 1) 
+  any(psili-varia-iotasub)  + "=" > index(psili-perispomeni-iotasub, 1) 
+  any(dasia-varia-iotasub)  + "=" > index(dasia-perispomeni-iotasub, 1) 
+  any(psili-oxia-iotasub)  + "=" > index(psili-perispomeni-iotasub, 1) 
+  any(dasia-oxia-iotasub)  + "=" > index(dasia-perispomeni-iotasub, 1) 
+  any(psili-perispomeni-iotasub)  + "=" > index(psili-iotasub, 1) 
+  any(dasia-perispomeni-iotasub)  + "=" > index(dasia-iotasub, 1) 
+ 
+  any(base-vowels)  + "_" > index(macron, 1) 
+  any(vrachy)  + "_" > index(macron, 1) 
+  any(macron)  + "_" > index(base-vowels, 1)  
+   
+  any(base-vowels)  + "+" > index(dialytika, 1) 
+  any(dialytika)  + "+" > index(base-vowels, 1) 
+  any(varia)  + "+" > index(dialytika-varia, 1) 
+  any(dialytika-varia)  + "+" > index(varia, 1) 
+  any(oxia)  + "+" > index(dialytika-oxia, 1) 
+  any(dialytika-oxia)  + "+" > index(oxia, 1) 
+  any(perispomeni)  + "+" > index(dialytika-perispomeni, 1)
+  any(dialytika-perispomeni)  + "+" > index(perispomeni, 1)
+  "ϒ" + "+" > "ϔ"
+  "ϔ" + "+" > "ϒ" 
+
+  any(base-vowels)  + "[" > index(dasia, 1) 
+  any(iotasub)  + "[" > index(dasia-iotasub, 1) 
+  any(varia-iotasub)  + "[" > index(dasia-varia-iotasub, 1) 
+  any(oxia-iotasub)  + "[" > index(dasia-oxia-iotasub, 1) 
+  any(perispomeni-iotasub)  + "[" > index(dasia-perispomeni-iotasub, 1) 
+  any(psili-iotasub)  + "[" > index(dasia-iotasub, 1) 
+  any(dasia-iotasub)  + "[" > index(iotasub, 1) 
+  any(psili)  + "[" > index(dasia, 1) 
+  any(dasia)  + "[" > index(base-vowels, 1) 
+  any(varia)  + "[" > index(dasia-varia, 1) 
+  any(oxia)  + "[" > index(dasia-oxia, 1) 
+  any(perispomeni)  + "[" > index(dasia-perispomeni, 1) 
+  any(psili-varia)  + "[" > index(dasia-varia, 1) 
+  any(dasia-varia)  + "[" > index(varia, 1) 
+  any(psili-oxia)  + "[" > index(dasia-oxia, 1) 
+  any(dasia-oxia)  + "[" > index(oxia, 1) 
+  any(psili-perispomeni)  + "[" > index(dasia-perispomeni, 1) 
+  any(dasia-perispomeni)  + "[" > index(perispomeni, 1) 
+  any(psili-varia-iotasub)  + "[" > index(dasia-varia-iotasub, 1) 
+  any(dasia-varia-iotasub)  + "[" > index(varia-iotasub, 1) 
+  any(psili-oxia-iotasub)  + "[" > index(dasia-oxia-iotasub, 1) 
+  any(dasia-oxia-iotasub)  + "[" > index(oxia-iotasub, 1) 
+  any(psili-perispomeni-iotasub)  + "[" > index(dasia-perispomeni-iotasub, 1) 
+  any(dasia-perispomeni-iotasub)  + "[" > index(perispomeni-iotasub, 1) 
+  "ῤ"  + "[" > "ῥ" 
+  "ρ"  + "[" > "ῥ" 
+  "ῥ"  + "[" > "ρ" 
+  "Ρ"  + "[" > "Ῥ" 
+  "Ῥ"  + "[" > "Ρ" 
+  
+  any(base-vowels)  + "]" > index(psili, 1) 
+  any(iotasub)  + "]" > index(psili-iotasub, 1) 
+  any(varia-iotasub)  + "]" > index(psili-varia-iotasub, 1) 
+  any(oxia-iotasub)  + "]" > index(psili-oxia-iotasub, 1) 
+  any(perispomeni-iotasub)  + "]" > index(psili-perispomeni-iotasub, 1) 
+  any(psili-iotasub)  + "]" > index(iotasub, 1) 
+  any(dasia-iotasub)  + "]" > index(psili-iotasub, 1) 
+  any(psili)  + "]" > index(base-vowels, 1) 
+  any(dasia)  + "]" > index(psili, 1) 
+  any(varia)  + "]" > index(psili-varia, 1) 
+  any(oxia)  + "]" > index(psili-oxia, 1) 
+  any(perispomeni)  + "]" > index(psili-perispomeni, 1) 
+  any(psili-varia)  + "]" > index(varia, 1) 
+  any(dasia-varia)  + "]" > index(psili-varia, 1) 
+  any(psili-oxia)  + "]" > index(oxia, 1) 
+  any(dasia-oxia)  + "]" > index(psili-oxia, 1) 
+  any(psili-perispomeni)  + "]" > index(perispomeni, 1) 
+  any(dasia-perispomeni)  + "]" > index(psili-perispomeni, 1) 
+  any(psili-varia-iotasub)  + "]" > index(varia-iotasub, 1) 
+  any(dasia-varia-iotasub)  + "]" > index(psili-varia-iotasub, 1) 
+  any(psili-oxia-iotasub)  + "]" > index(oxia-iotasub, 1) 
+  any(dasia-oxia-iotasub)  + "]" > index(psili-oxia-iotasub, 1) 
+  any(psili-perispomeni-iotasub)  + "]" > index(perispomeni-iotasub, 1) 
+  any(dasia-perispomeni-iotasub)  + "]" > index(psili-perispomeni-iotasub, 1) 
+  "ρ"  + "]" > "ῤ" 
+  "ῤ"  + "]" > "ρ" 
+  "ῥ"  + "]" > "ῤ" 
+  "Ῥ"  + "]" > "Ρ" 
+
+  any(base-vowels)  + "\" > index(varia, 1) 
+  any(iotasub)  + "\" > index(varia-iotasub, 1) 
+  any(varia-iotasub)  + "\" > index(iotasub, 1) 
+  any(oxia-iotasub)  + "\" > index(varia-iotasub, 1) 
+  any(perispomeni-iotasub)  + "\" > index(varia-iotasub, 1) 
+  any(psili-iotasub)  + "\" > index(psili-varia-iotasub, 1) 
+  any(dasia-iotasub)  + "\" > index(dasia-varia-iotasub, 1) 
+  any(dialytika)  + "\" > index(dialytika-varia, 1) 
+  any(dialytika-varia)  + "\" > index(dialytika, 1) 
+  any(dialytika-oxia)  + "\" > index(dialytika-varia, 1) 
+  any(dialytika-perispomeni)  + "\" > index(dialytika-varia, 1) 
+  any(psili)  + "\" > index(psili-varia, 1) 
+  any(dasia)  + "\" > index(dasia-varia, 1) 
+  any(varia)  + "\" > index(base-vowels, 1) 
+  any(oxia)  + "\" > index(varia, 1) 
+  any(perispomeni)  + "\" > index(varia, 1) 
+  any(psili-varia)  + "\" > index(psili, 1) 
+  any(dasia-varia)  + "\" > index(dasia, 1) 
+  any(psili-oxia)  + "\" > index(psili-varia, 1) 
+  any(dasia-oxia)  + "\" > index(dasia-varia, 1) 
+  any(psili-perispomeni)  + "\" > index(psili-varia, 1) 
+  any(dasia-perispomeni)  + "\" > index(dasia-varia, 1) 
+  any(psili-varia-iotasub)  + "\" > index(psili-iotasub, 1) 
+  any(dasia-varia-iotasub)  + "\" > index(dasia-iotasub, 1) 
+  any(psili-oxia-iotasub)  + "\" > index(psili-varia-iotasub, 1) 
+  any(dasia-oxia-iotasub)  + "\" > index(dasia-varia-iotasub, 1) 
+  any(psili-perispomeni-iotasub)  + "\" > index(psili-varia-iotasub, 1) 
+  any(dasia-perispomeni-iotasub)  + "\" > index(dasia-varia-iotasub, 1) 
+
+  any(base-vowels)  + "|" > index(iotasub, 1) 
+  any(iotasub)  + "|" > index(base-vowels, 1) 
+  any(varia-iotasub)  + "|" > index(varia, 1) 
+  any(oxia-iotasub)  + "|" > index(oxia, 1) 
+  any(perispomeni-iotasub)  + "|" > index(perispomeni, 1) 
+  any(psili-iotasub)  + "|" > index(psili, 1) 
+  any(dasia-iotasub)  + "|" > index(dasia, 1) 
+  any(psili)  + "|" > index(psili-iotasub, 1) 
+  any(dasia)  + "|" > index(dasia-iotasub, 1) 
+  any(varia)  + "|" > index(varia-iotasub, 1) 
+  any(oxia)  + "|" > index(oxia-iotasub, 1) 
+  any(perispomeni)  + "|" > index(perispomeni-iotasub, 1) 
+  any(psili-varia)  + "|" > index(psili-varia-iotasub, 1) 
+  any(dasia-varia)  + "|" > index(dasia-varia-iotasub, 1) 
+  any(psili-oxia)  + "|" > index(psili-oxia-iotasub, 1) 
+  any(dasia-oxia)  + "|" > index(dasia-oxia-iotasub, 1) 
+  any(psili-perispomeni)  + "|" > index(psili-perispomeni-iotasub, 1) 
+  any(dasia-perispomeni)  + "|" > index(dasia-perispomeni-iotasub, 1) 
+  any(psili-varia-iotasub)  + "|" > index(psili-varia, 1) 
+  any(dasia-varia-iotasub)  + "|" > index(dasia-varia, 1) 
+  any(psili-oxia-iotasub)  + "|" > index(psili-oxia, 1) 
+  any(dasia-oxia-iotasub)  + "|" > index(dasia-oxia, 1) 
+  any(psili-perispomeni-iotasub)  + "|" > index(psili-perispomeni, 1) 
+  any(dasia-perispomeni-iotasub)  + "|" > index(dasia-perispomeni, 1)
+   
+  any(base-vowels)  + "/" > index(oxia, 1) 
+  any(iotasub)  + "/" > index(oxia-iotasub, 1) 
+  any(varia-iotasub)  + "/" > index(oxia-iotasub, 1) 
+  any(oxia-iotasub)  + "/" > index(iotasub, 1) 
+  any(perispomeni-iotasub)  + "/" > index(oxia-iotasub, 1) 
+  any(psili-iotasub)  + "/" > index(psili-oxia-iotasub, 1) 
+  any(dasia-iotasub)  + "/" > index(dasia-oxia-iotasub, 1) 
+  any(dialytika)  + "/" > index(dialytika-oxia, 1) 
+  any(dialytika-oxia)  + "/" > index(dialytika, 1) 
+  any(dialytika-varia)  + "/" > index(dialytika-oxia, 1) 
+  any(dialytika-perispomeni)  + "/" > index(dialytika-oxia, 1) 
+  any(psili)  + "/" > index(psili-oxia, 1) 
+  any(dasia)  + "/" > index(dasia-oxia, 1) 
+  any(varia)  + "/" > index(oxia, 1) 
+  any(oxia)  + "/" > index(base-vowels, 1) 
+  any(perispomeni)  + "/" > index(oxia, 1) 
+  any(psili-varia)  + "/" > index(psili-oxia, 1) 
+  any(dasia-varia)  + "/" > index(dasia-oxia, 1) 
+  any(psili-oxia)  + "/" > index(psili, 1) 
+  any(dasia-oxia)  + "/" > index(dasia, 1) 
+  any(psili-perispomeni)  + "/" > index(psili-oxia, 1) 
+  any(dasia-perispomeni)  + "/" > index(dasia-oxia, 1) 
+  any(psili-varia-iotasub)  + "/" > index(psili-oxia-iotasub, 1) 
+  any(dasia-varia-iotasub)  + "/" > index(dasia-oxia-iotasub, 1) 
+  any(psili-oxia-iotasub)  + "/" > index(psili-iotasub, 1) 
+  any(dasia-oxia-iotasub)  + "/" > index(dasia-iotasub, 1) 
+  any(psili-perispomeni-iotasub)  + "/" > index(psili-oxia-iotasub, 1) 
+  any(dasia-perispomeni-iotasub)  + "/" > index(dasia-oxia-iotasub, 1) 
+  "ϒ" + "/" > "ϓ"
+  "ϓ" + "/" > "ϒ"  
+
+c EOF
+

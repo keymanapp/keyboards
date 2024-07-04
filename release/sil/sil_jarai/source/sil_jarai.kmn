@@ -1,0 +1,161 @@
+﻿c sil_jarai generated from template at 2022-06-13 10:12:07
+c with name "Jarai ចារាយ (SIL)"
+store(&VERSION) '10.0'
+store(&NAME) 'Jarai ចារាយ (SIL)'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'sil_jarai.kvks'
+store(&LAYOUTFILE) 'sil_jarai.keyman-touch-layout'
+store(&BITMAP) 'sil_jarai.ico'
+
+
+begin Unicode > use(main)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+store(ShiftOutSingle) '!ៗ"៛«៍៝ៈ»៖ឈឺែឝទួូីៅភឿៃឌធអះញគឡ៉ឍឃជពឞណំ'
+store(vCombo1)  'ាំ'
+store(vCombo2)  'ោះ'
+store(vCombo3)  'េះ'
+store(vCombo4)  'ុះ'
+store(ShiftOutAll)  outs(ShiftOutSingle) outs(vCombo1) outs(vCombo2) outs(vCombo3) outs(vCombo4)
+
+group(PostKeystroke) readonly
+c We get here after every keystroke and model action is processed
+
+c Don't swap off the caps lock layer automatically (behave as ShiftLocked)
+if(&layer = 'caps') > context
+
+c Do swap off the shift layer automatically
+if(&newLayer = "") if(&layer = 'shift') any(ShiftOutSingle) > context layer('default')
+
+
+group(main) using keys
++ [SHIFT K_V] > 'េះ'
++ [SHIFT K_O] > 'ៅ'
++ [SHIFT K_COMMA] > 'ុះ'
++ [SHIFT K_COLON] > 'ោះ'
++ [SHIFT K_A] > 'ាំ'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_0] > '០'
++ [K_9] > '៩'
++ [K_8] > '៨'
++ [K_7] > '៧'
++ [K_6] > '៦'
++ [K_5] > '៥'
++ [K_4] > '៤'
++ [K_3] > '៣'
++ [K_2] > '២'
++ [K_1] > '១'
++ [SHIFT K_0] > ')'
++ [SHIFT K_9] > '('
++ [SHIFT K_5] > '%'
++ [SHIFT K_3] > '"'
++ [SHIFT K_2] > 'ៗ'
++ [K_BKQUOTE] > '«'
++ [SHIFT K_BKQUOTE] > '»'
++ [RALT K_L] > ':'
++ [RALT K_COMMA] > ','
++ [RALT K_PERIOD] > '.'
++ [RALT K_SLASH] > '/'
++ [RALT K_BKSLASH] > '\'
++ [RALT K_RBRKT] > ']'
++ [RALT K_LBRKT] > '['
++ [RALT K_0] > '}'
++ [RALT K_9] > '{'
++ [RALT K_4] > '$'
++ [SHIFT K_4] > '៛'
++ [RALT K_COLON] > '៖'
++ [SHIFT K_1] > '!'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_LBRKT] > 'ឿ'
++ [RALT K_K] > 'ឝ'
++ [RALT K_B] > 'ឞ'
++ [K_E] > 'េ'
++ [SHIFT K_S] > 'ៃ'
++ [K_A] > 'ា'
++ [K_PERIOD] > '។'
++ [K_SLASH] > '៊'
++ [SHIFT K_QUOTE] > '៉'
++ [SHIFT K_M] > 'ំ'
++ [K_O] > 'ោ'
++ [K_QUOTE] > '់'
++ [RALT K_QUOTE] > 'ៈ'
++ [SHIFT K_E] > 'ែ'
++ [K_COLON] > 'ើ'
++ [SHIFT K_Y] > 'ួ'
++ [SHIFT K_U] > 'ូ'
++ [K_U] > 'ុ'
++ [SHIFT K_H] > 'ះ'
++ [SHIFT K_W] > 'ឺ'
++ [K_W] > 'ឹ'
++ [K_LBRKT] > 'ៀ'
++ [SHIFT K_I] > 'ី'
++ [K_I] > 'ិ'
++ [K_J] > '្'
++ [SHIFT K_D] > 'ឌ'
++ [K_D] > 'ដ'
++ [K_S] > 'ស'
++ [SHIFT K_Q] > 'ឈ'
++ [K_Q] > 'ឆ'
++ [K_H] > 'ហ'
++ [K_V] > 'វ'
++ [SHIFT K_L] > 'ឡ'
++ [K_L] > 'ល'
++ [SHIFT K_G] > 'អ'
++ [K_R] > 'រ'
++ [K_Y] > 'យ'
++ [K_M] > 'ម'
++ [K_P] > 'ផ'
++ [SHIFT K_P] > 'ភ'
++ [SHIFT K_B] > 'ព'
++ [K_B] > 'ប'
++ [SHIFT K_N] > 'ណ'
++ [K_N] > 'ន'
++ [SHIFT K_F] > 'ធ'
++ [K_F] > 'ថ'
++ [K_T] > 'ត'
++ [SHIFT K_T] > 'ទ'
++ [SHIFT K_Z] > 'ឍ'
++ [K_Z] > 'ឋ'
++ [SHIFT K_J] > 'ញ'
++ [SHIFT K_C] > 'ជ'
++ [K_C] > 'ច'
++ [K_G] > 'ង'
++ [SHIFT K_X] > 'ឃ'
++ [SHIFT K_K] > 'គ'
++ [K_X] > 'ខ'
++ [K_K] > 'ក'
++ [K_COMMA] > 'ុំ'
++ [RALT K_W] > '៝'
++ [SHIFT K_6] > '៍'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
+
+c nul keys
+store(nulShiftKeys)  [SHIFT K_R] [SHIFT K_RBRKT] [SHIFT K_BKSLASH] [SHIFT K_PERIOD]
+store(nulDefaultKeys)   [K_RBRKT] [K_BKSLASH] 
+store(nulAltGrKeys) [RALT K_BKQUOTE] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] \
+                    [RALT K_HYPHEN] [RALT K_EQUAL] [RALT K_Q] [RALT K_E] [RALT K_R] [RALT K_T] [RALT K_Y] [RALT K_U] \
+                    [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H]\
+                    [RALT K_H] [RALT K_J] [RALT K_Z] [RALT K_X] [RALT K_C] [RALT K_V] [RALT K_N] [RALT K_M]
+store(nulAllKeys)   outs(nulShiftKeys) outs(nulDefaultKeys) outs(nulAltGrKeys)
+
++ any(nulAllKeys)   > nul
+
+c reordering rules, consonant shifter + subscript > subscript + consonant shifter
+
+match > use(normalise)
+
+group(normalise)
+
+store(allConsonants)    'កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវសហឡអឞឝ' 
+store(allShifters)  '៉៊'
+
+any(allShifters) U+17D2 any(allConsonants) > context(2) context(3) context(1)
+
+c EoF

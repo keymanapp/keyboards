@@ -1,19 +1,19 @@
 ____________ keyboard
 =====================
 
-Copyright (C) YYYY _____________________
+Copyright (C) Tavultesoft
 
-Version A.B
+DESCRIPTION
+-----------
 
-__DESCRIPTION__
+This keyboard layout is designed for Sinhala. It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. 
 
 Links
 -----
 
- * Home:     <___URL___>
- * Deployed: <___URL___>
- * Help:     <___URL___>
- * Contact:  <___EMAIL___>
+ * Home:     https://keyman.com/keyboards/kbdsn1
+ * Help:     https://help.keyman.com/keyboard/kbdsn1
+ * Contact:  https://community.software.sil.org/c/keyman
 
 Supported Platforms
 -------------------
@@ -22,6 +22,3 @@ Supported Platforms
  * Mobile Web
  * iOS
  * Android
-
-Todo
-----

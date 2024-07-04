@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL=""></Version>
+    <Name URL="">Malayalam Mozhi</Name>
+    <Copyright URL="">© 2021-2023 Cibu C. J.</Copyright>
+    <Author URL="mailto:cibucj@gmail.com">Cibu C. J.</Author>
+    <WebSite URL="https://sites.google.com/site/cibu/mozhi2">https://sites.google.com/site/cibu/mozhi2</WebSite>
+    <Description>Mozhi Malayalam Keyboard based on the Mozhi Spec 2.0. Transliteration
+scheme was originally developed for Varamozhi Application. It uses a
+unique English character sequence for each Malayalam letter. Please
+visit [Mozhi Spec](https://sites.google.com/site/cibu/mozhi2) for more
+information.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\mozhi_malayalam.kmx</Name>
+      <Description>Keyboard Malayalam Mozhi</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\mozhi_malayalam.js</Name>
+      <Description>File mozhi_malayalam.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\mozhi_malayalam.kvk</Name>
+      <Description>File mozhi_malayalam.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\mozhi_malayalam.png</Name>
+      <Description>File mozhi_malayalam.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\mozhi_layout.png</Name>
+      <Description>File mozhi_layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular.ttf</Name>
+      <Description>Font AnjaliOldLipi Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular_LICENSE.txt</Name>
+      <Description>File AnjaliOldLipi-Regular_LICENSE.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Malayalam Mozhi</Name>
+      <ID>mozhi_malayalam</ID>
+      <Version>3.2.4</Version>
+      <OSKFont>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\mlym\anjali_old_lipi\AnjaliOldLipi-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ml">Malayalam</Language>
+      </Languages>
+      <Examples>
+        <Example ID="ml" Keys="m a l a y a a L a m" Text="മലയാളം" Note="Name of language" />
+      </Examples>
+  </Keyboard>
+  </Keyboards>
+  <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="mozhi" Relationship="deprecates" />
+    <RelatedPackage ID="mozhi_1_1_0" Relationship="deprecates" />
+    <RelatedPackage ID="mozhi_5_1" Relationship="deprecates" />
+    <RelatedPackage ID="mozhi51" Relationship="deprecates" />
+  </RelatedPackages>
+</Package>

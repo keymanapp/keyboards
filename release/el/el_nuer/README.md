@@ -1,19 +1,20 @@
-Nuer Keyboard
-=====================
+# Thok Nath Keyboard
 
-Copyright (C) 2004-2017 Andrew Cunningham
+Copyright (C) 2015-2018 Enabling Languages
 
-Version 1.4
+Version 1.6
 
 Keyboard layout (formerly nuer13.kmn) designed for Nuer
 
-Links
------
+## Links
 
- * Contact:  lang.support@gmail.com
+* Home: http:enabling-languages.github.io/nuer/
 
-Supported Platforms
--------------------
+## Supported Platforms
 
- * Windows
- 
+* Windows
+* macOS
+* Web
+* Mobile Web
+* iOS
+* Android
