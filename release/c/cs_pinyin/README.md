@@ -5,15 +5,22 @@ Copyright (C) 2017 SIL International
 
 Version 1.4
 
-__DESCRIPTION__
+Description
+-----------
 
-This input method extension for Keyman Desktop provides input mapping for more than 100,000 Han characters, multi-character words, proper names, and place name abbreviations. Supported input conventions include Pinyin, RAD-RSC and 4-corner index (4CI).
+This input method extension for Keyman Desktop provides input mapping for more
+than 100,000 Han characters, multi-character words, proper names, and place name
+abbreviations. Supported input conventions include Pinyin, RAD-RSC and 4-corner
+index (4CI).
 
 Notes
 -----
 
-The build.cmd for this keyboard has been modified from the template/build.cmd in order to support building
-the DLLs when Visual Studio is present on the computer.
+The source/build.bat for this keyboard builds the Windows executables and DLLs
+required to make this keyboard work, and places the binaries in the source
+folder. The binaries must be checked in.
+
+build.bat requires VC++2019.
 
 Links
 -----
@@ -27,4 +34,3 @@ Supported Platforms
 Todo
 ----
 
- 
