@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <FollowKeyboardVersion/>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -16,12 +19,22 @@
   </StartMenu>
   <Info>
     <Name URL="">Ktunaxa</Name>
-    <Copyright URL="">(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>This keyboard is designed for the Ktunaxa language of the BC Interior
-region of Canada. This is part of a set of keyboards from FirstVoices.</Description>
+    <Description URL="">This keyboard is designed for the Ktunaxa language of the BC Interior
+region of Canada. This is part of a set of keyboards from FirstVoices.
+
+Alternate names:
+
+Kutenai
+
+Kootenay
+
+Kootenai
+
+Ksanka</Description>
   </Info>
   <Files>
     <File>
@@ -137,16 +150,16 @@ region of Canada. This is part of a set of keyboards from FirstVoices.</Descript
     <Keyboard>
       <Name>Ktunaxa</Name>
       <ID>fv_ktunaxa</ID>
-      <Version></Version>
+      <Version>10.0</Version>
       <Languages>
         <Language ID="kut-Latn">Kutenai (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="ktunaxa" Relationship="deprecates" />
-    <RelatedPackage ID="kutenai" Relationship="deprecates" />
-    <RelatedPackage ID="fv_ktunaxa_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="ktunaxa" Relationship="deprecates"/>
+    <RelatedPackage ID="kutenai" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_ktunaxa_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

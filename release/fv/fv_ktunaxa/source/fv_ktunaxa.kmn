@@ -24,7 +24,6 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > '·' layer('default')
-+ [SHIFT T_R] > '-' layer('default')
 + [SHIFT T_T_0] > 'T̓' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
@@ -36,19 +35,16 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'ʔ' layer('default')
-+ [SHIFT T_F] > 'ʾ' layer('default')
 + [SHIFT T_G] > 'H' layer('default')
 + [SHIFT T_H_0] > 'K̓' layer('default')
 + [SHIFT T_H] > 'K' layer('default')
 + [SHIFT T_J_0] > 'L' layer('default')
 + [SHIFT T_J] > 'Ⱡ' layer('default')
-+ [SHIFT T_Z_0] > '!' layer('default')
-+ [SHIFT T_Z] > '?' layer('default')
++ [SHIFT T_F] > 'ʾ' layer('default')
++ [SHIFT T_R] > '-' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'Ȼ̓' layer('default')
 + [SHIFT T_C] > 'Ȼ' layer('default')
-+ [SHIFT T_V] > ',' layer('default')
-+ [SHIFT T_B] > '.' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
 + [SHIFT T_M_0] > 'M̓' layer('default')
@@ -58,7 +54,6 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E] > '·'
-+ [T_R] > '-'
 + [T_T_0] > 't̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
@@ -70,14 +65,13 @@ store(&LAYOUTFILE) 'fv_ktunaxa.keyman-touch-layout'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'ʔ'
-+ [T_F] > 'ʾ'
 + [T_G] > 'h'
 + [T_H_0] > 'k̓'
 + [T_H] > 'k'
 + [T_J_0] > 'l'
 + [T_J] > 'ⱡ'
-+ [T_Z_0] > '!'
-+ [T_Z] > '?'
++ [T_F] > 'ʾ'
++ [T_R] > '-'
 + [T_X] > 'x'
 + [T_C_0] > 'ȼ̓'
 + [T_C] > 'ȼ'
@@ -90,8 +84,8 @@ c --- END OF TOUCH LAYOUT RULES ---
 
 c --- CROSS PLATFORM RULES AND STORES ---
 
-store(NeedsComApos) 'ȼkmnpqtwyȻ̓KMNPQTWY'
-store(ComAposKeys) [K_O] [SHIFT K_O] [K_QUOTE]
+store(NeedsComApos) 'ȼkmnpqtwyȻKMNPQTWY'
+store(ComAposKeys) [T_O] [SHIFT T_O] [K_QUOTE]
 
 any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
 
