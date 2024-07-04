@@ -1,5 +1,16 @@
 Diidiitidq Change History
 ============================
+9.2.1 (2 Jul 2024)
+------------------
+* Added better spacing for alternate names
+* Closed missed div
+
+9.2 (24 Jun 2024)
+------------------
+* Normalised outputs where possible
+* Tidied rules
+* Straightened out mobile layout
+* Tidied code
 
 9.1.3 (6 Mar 2023)
 -------------------

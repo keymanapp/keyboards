@@ -3,7 +3,7 @@ Naija Type Keyboard for Touch and Physical Keyboards
 
 © 2021-2024 David Rowbory
 
-Version 59
+Version 61
 
 Description
 -----------

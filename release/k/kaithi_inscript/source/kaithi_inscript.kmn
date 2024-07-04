@@ -1,0 +1,67 @@
+﻿c kaithi_inscript generated from template at 2024-06-20 11:54:21
+c with name "Kaithi Inscript"
+store(&VERSION) '10.0'
+store(&NAME) 'Kaithi Inscript'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'kaithi_inscript.ico'
+store(&VISUALKEYBOARD) 'kaithi_inscript.kvks'
+store(&LAYOUTFILE) 'kaithi_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+c Inscript keys
+
+c             candrabindu anusvara visarga          nukta     abbrev         enumeration???       number???       numberAbv???
+store(SignsK) [SHIFT K_X] [K_X]    [SHIFT K_HYPHEN] [K_RBRKT] [RALT K_COMMA] [SHIFT RALT K_COMMA] [RALT K_HYPHEN] [SHIFT RALT K_HYPHEN]
+store(Signs)  U+11080 .. U+11082 U+110BA .. U+110BD U+110CD
+
+c               a          aa          i           ii          u           uu          e           ai          o            au
+store(IndVowK) [SHIFT K_D] [SHIFT K_E] [SHIFT K_F] [SHIFT K_R] [SHIFT K_G] [SHIFT K_T] [SHIFT K_S] [SHIFT K_W] [SHIFT K_A] [SHIFT K_Q]
+store(IndVow)  U+11083 .. U+1108C
+
+c               aa    i     ii    u     uu    e     ai    o     au
+store(DepVowK) [K_E] [K_F] [K_R] [K_G] [K_T] [K_S] [K_W] [K_A] [K_Q]
+store(DepVow)  U+110B0 .. U+110B8 U+110C2
+
+c            ka     kha        ga    gha         nga          ca        cha             ja    jha         nya             tta       ttha            dda       dddha          ddha            rha                  nna         ta    tha         da    dha         na    pa    pha         ba    bha         ma    ya        ra    la    va    sha         ssa             sa     ha
+store(ConsK) [K_K] [SHIFT K_K] [K_I] [SHIFT K_I] [SHIFT K_U] [K_COLON] [SHIFT K_COLON] [K_P] [SHIFT K_P] [SHIFT K_RBRKT] [K_QUOTE] [SHIFT K_QUOTE] [K_LBRKT] [RALT K_LBRKT] [SHIFT K_RBRKT] [SHIFT RALT K_LBRKT] [SHIFT K_C] [K_L] [SHIFT K_L] [K_O] [SHIFT K_O] [K_V] [K_H] [SHIFT K_H] [K_Y] [SHIFT K_Y] [K_C] [K_SLASH] [K_J] [K_N] [K_B] [SHIFT K_M] [SHIFT K_COMMA] [K_M] [K_U]
+store(Cons)  U+1108D .. U+110AF
+
+
+c             sectionmark      dblsectionmark  danda     doubledanda
+store(PunctK) [SHIFT K_PERIOD] [SHIFT K_SLASH] [K_COMMA] [K_PERIOD]
+store(Punct)  U+110BE .. U+110C1
+
+c Uses Devanagari digits
+store(DigitsK) "0123456789"
+store(Digits)  U+0966 .. U+096F
+
+store(LDigitsK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] 
+store(LDigits)  U+0030 .. U+0039
+
+
+store(nul) "zZJVBN{"
+group(main) using keys
+
++ any(DepVowK)  > index(DepVow,1)
++ any(IndVowK)  > index(IndVow,1)
++ any(SignsK)   > index(Signs,1)
++ any(ConsK)    > index(Cons,1)
++ any(PunctK)   > index(Punct,1)
++ any(DigitsK)  > index(Digits,1)
++ any(LDigitsK) > index(LDigits,1)
+
++ [K_D] > U+110B9 c virama
++ [SHIFT K_EQUAL] > U+110A9 U+110B2 c vocalic r
+
++ [SHIFT RALT K_1] > U+200d c ZWJ
++ [SHIFT RALT K_2] > U+200c c ZWNJ
+
+
+ + [K_HYPHEN] > U+002D c hyphen-minus
+ + [K_EQUAL] > U+2010 c hyphen
+ + [RALT K_EQUAL] > U+002B
+ + [RALT K_PERIOD] > U+2E31
+ + any(nul) > nul
