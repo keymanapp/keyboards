@@ -110,8 +110,11 @@ END;
     <p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong>
         Please use these fonts when typing in your language as they have been specially built to represent your language
         as accurately as possible. </p>
-    <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and
-            Aboriginal Serif</a></h3>
+    <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Serif</a>
+    </h3>
+    <h3><a
+            href="https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans">Download
+            the latest version of BC Sans</a></h3>
 
     <h2>Notes on touch layout</h2>
     <div class='cree'>
@@ -213,9 +216,12 @@ END;
         </table>
         <div class='vspace'></div>
         <ul>
-            <li>keys with a red background are combining accents. On your mobile device, they will have green text.</li>
-            <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
-            <li>Common punctuation can be found by pressing and holding the full stop (᙮) key on the right side of the
+            <li>keys with a red background are combining accents. On your mobile device, they will have green
+                text.</li>
+            <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select"
+                keys.</li>
+            <li>Common punctuation can be found by pressing and holding the full stop (᙮) key on the right side
+                of the
                 space bar. </li>
         </ul>
         <div class='vspace'></div>
