@@ -5,7 +5,7 @@ c
 c Source Keyboard File: KBDUS.DLL
 c Source KeyboardID: 00000409
 c
-c 
+c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Formosa'
@@ -15,12 +15,13 @@ store(&LAYOUTFILE) 'formosa.keyman-touch-layout'
 store(&COPYRIGHT) '© SIL International'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
-store(nul) "WRYUIOPASDHZCVB"
-+ any(nul) > nul
 
 begin Unicode > use(main)
 
 group(main) using keys
+
+store(nul) "WRYUIOPASDHZCVB"
++ any(nul) > nul
 
 + [K_SPACE] > U+0020
 
