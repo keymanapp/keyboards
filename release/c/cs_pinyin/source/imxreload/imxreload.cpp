@@ -147,7 +147,7 @@ int ParseCFG(KBHEADER *kbi, char *cfgfile, int *psize, FILE *ftemp)
 	tmpfile_s(&ft0);
 
 	// Set defaults
-	strncpy_s(kbi->Flag,sizeof kbi->Flag, "KCFX",4);
+	strncpy_s(kbi->Flag, 5, "KCFX", 4);
 	kbi->dwCfxVersion = CFXVERSION;
 	kbi->nrules = 0;
 	kbi->gridx = CELL_X;
@@ -502,11 +502,11 @@ BOOL RebuildAll(HWND hwnd,KBHEADER *kbi)
             rp->olen = (BYTE)wcslen(tmprule.output);
             rp->tlen = (BYTE)wcslen(tmprule.tag);
             rp->input = (DWORD)(pw-pw0);
-            wcscpy_s(pw0+rp->input, (sizeof (RULE)/sizeof (wchar_t))-rp->input, tmprule.input); pw += rp->ilen;
+            wcscpy_s(pw0+rp->input, rp->ilen + 1, tmprule.input); pw += rp->ilen;
             rp->output = (DWORD)(pw-pw0);
-            wcscpy_s(pw0+rp->output, (sizeof (RULE)/sizeof (wchar_t))-rp->output, tmprule.output); pw += rp->olen;
+            wcscpy_s(pw0+rp->output, rp->olen + 1, tmprule.output); pw += rp->olen;
             rp->tag = (DWORD)(pw-pw0);
-            wcscpy_s(pw0+rp->tag, (sizeof (RULE)/sizeof (wchar_t))-rp->tag, tmprule.tag); pw += rp->tlen;
+            wcscpy_s(pw0+rp->tag, rp->tlen + 1, tmprule.tag); pw += rp->tlen;
             if(!*tmprule.tag) rp->tag = rp->input;
           }
 

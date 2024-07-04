@@ -1,40 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.961.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>docs\CS-Pinyin ReadMe.html</ReadMeFile>
     <GraphicFile>images\CS-Pinyin Install.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>docs\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
-  <Buttons>
-    <Button>
-      <ButtonType>install</ButtonType>
-      <Caption>&amp;Install</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>cancel</ButtonType>
-      <Caption>Cancel</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-    <Button>
-      <ButtonType>about</ButtonType>
-      <Caption>&amp;About...</Caption>
-      <URL></URL>
-      <Left>0</Left>
-      <Top>0</Top>
-    </Button>
-  </Buttons>
-  <Registry/>
   <StartMenu>
     <Folder>Simplified Chinese</Folder>
     <AddUninstallEntry/>
@@ -63,7 +41,7 @@
     </Items>
   </StartMenu>
   <Info>
-    <name URL="">Simplified Chinese</name>
+    <Name URL="">Simplified Chinese</Name>
     <Version URL="">1.4</Version>
     <Copyright URL="">© 2017 SIL International</Copyright>
     <Author URL="mailto:support@keyman.com">SIL International</Author>
@@ -113,23 +91,39 @@
       <FileType>.cfx</FileType>
     </File>
     <File>
-      <Name>..\build\KeymnIMX.dll</Name>
-      <Description>File KeymnIMX.dll</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.dll</FileType>
-    </File>
-    <File>
-      <Name>..\build\KeymnIMX.x64.dll</Name>
+      <Name>..\source\KeymnIMX.x64.dll</Name>
       <Description>File KeymnIMX.x64.dll</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.dll</FileType>
     </File>
     <File>
-      <Name>..\build\imxconfig.exe</Name>
+      <Name>..\source\imxconfig.exe</Name>
       <Description>File imxconfig.exe</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.exe</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\source\KeymnIMX.dll</Name>
+      <Description>File KeymnIMX.dll</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.dll</FileType>
+    </File>
   </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Simplified Chinese</Name>
+      <ID>cs_pinyin</ID>
+      <Version>1.4</Version>
+      <Languages>
+        <Language ID="zh">Chinese</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
