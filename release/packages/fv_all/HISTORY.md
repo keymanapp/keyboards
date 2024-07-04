@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 12.11 (28 Jun 2024)
+* Add fv_ojibwa_rdot and fv_severn_ojibwa_rdot
+
 ## 12.10 (May 18 2024)
 * Add keyboards.csv file
 
