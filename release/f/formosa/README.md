@@ -3,7 +3,7 @@ Formosa keyboard
 
 © SIL International
 
-Version 1.0
+
 
 Description
 -----------
