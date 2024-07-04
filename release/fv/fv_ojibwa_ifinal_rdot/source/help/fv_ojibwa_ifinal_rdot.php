@@ -103,12 +103,14 @@ END;
     letter(s) you wish to type.</li>
 
 <h2>Unicode Fonts</h2>
-<p>The following fonts have been installed on your computer: <strong>Aboriginal Serif.</strong> Please use this
+<p>The following fonts have been installed on your computer: <strong>Aboriginal Serif, BC Sans.</strong> Please use this
     font when typing in your language as it has been specially built to represent your language as accurately as
     possible. </p>
 <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal
-        Serif</a>
-</h3>
+        Serif</a></h3>
+<h3><a
+        href="https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans">Download
+        the latest version of BC Sans</a></h3>
 
 <h2>Notes on touch layout</h2>
 <div class='cree'>
