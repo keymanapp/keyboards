@@ -1,5 +1,12 @@
 Dane-Z̲aa Z̲áágéʔ Change History
 ====================
+9.4 (4 Jul 2024)
+-----------------
+* Added fonts to package
+* Added additional information to documentation
+* Added alternate way to type / in Google Workspace
+* Tidied table
+
 9.3 (30 Oct 2023)
 -----------------
 * Fleshed out mobile keyboard, including building own rules
