@@ -3,12 +3,9 @@ Phoenician keyboard
 
 © SIL International
 
-
-
 Description
 -----------
-
-Phoenician generated from template
+This keyboard is designed for the Phoenician alphabet. 
 
 Links
 -----
