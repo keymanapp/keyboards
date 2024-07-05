@@ -1,0 +1,43 @@
+﻿c Unsupported characters 
+c U+16B31 U+16B33 U+16B34 U+16B3C..U+16B3F U+16B45 and most of the Logographs
+
+store(&VERSION) '10.0'
+store(&NAME) 'Pahawh Hmong (Basic)'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'pahawh_hmong_basic.ico'
+store(&VISUALKEYBOARD) 'pahawh_hmong_basic.kvks'
+store(&LAYOUTFILE) 'pahawh_hmong_basic.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(digitsK) "0123456789"
+store(digitsU) U+16B50 .. U+16B59
+
+store(VowelRimesK) "cVtyWzvbqAXNGESBrFaexCJuRQ" [K_BKQUOTE] [SHIFT K_BKQUOTE]
+store(VowelRimesU) U+16B00 .. U+16B1B
+
+store(ConsonantOnsetsK) "DgdnOHLUoMKkIwhTiPpm"
+store(ConsonantOnsetsU) U+16B1C .. U+16B2F
+
+store(CombK) "flsj"
+store(CombU) U+16B30 U+16B32 U+16B35 U+16B36
+
+store(PuncK) [SHIFT K_SLASH] [K_EQUAL] [K_COMMA] [SHIFT K_7] [SHIFT K_5] [SHIFT K_6]
+store(PuncU) U+16B37 .. U+16B3B U+16B44
+
+store(ModK) [SHIFT K_Z] [SHIFT K_Y] [K_COLON] [K_QUOTE]
+store(ModU) U+16B40 .. U+16B43
+
+group(main) using keys
+
++ any(digitsK) > index(digitsU,1)
++ any(VowelRimesK) > index(VowelRimesU,1)
++ any(ConsonantOnsetsK) > index(ConsonantOnsetsU,1)
++ any(CombK) > index(CombU,1)
++ any(PuncK) > index(PuncU,1)
++ any(ModK) > index(ModU,1)
+
++ [SHIFT K_8] > U+16B54 c year sign
+

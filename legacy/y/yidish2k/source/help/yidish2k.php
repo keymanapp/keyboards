@@ -15,8 +15,8 @@
   Notes:            
   History:          22 Dec 2009 - mcdurdin - Wrote KMW help
 */
-  $pagename = 'Yiddish Pasekh Keyboard Help';
-  $pagetitle = 'Yiddish Pasekh Keyboard Help';
+  $pagename = 'Yiddish Pasekh (deprecated) Keyboard Help';
+  $pagetitle = 'Yiddish Pasekh (deprecated) Keyboard Help';
   $style = <<<END
 .lang2 {font-family:"Times New Roman", Arial, Tahoma, Verdana; font-weight: bold; font-size: 1.2em; color: #0000ff}
 h4 {font-size:11pt;}

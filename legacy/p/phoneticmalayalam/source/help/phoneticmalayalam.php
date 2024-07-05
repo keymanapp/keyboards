@@ -15,8 +15,8 @@
   Notes:            
   History:          01 Jun 2012 - pbaehr - Generate documentation from Keyman Desktop documentation
 */
-  $pagename = "PhoneticMalayalam Keyboard Help";
-  $pagetitle = "PhoneticMalayalam Keyboard Help";
+  $pagename = "Phonetic Malayalam Keyboard Help";
+  $pagetitle = $pagename;
   $style = <<<END
 body {
 	margin: 30px; 

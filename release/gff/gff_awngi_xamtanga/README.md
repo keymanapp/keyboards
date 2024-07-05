@@ -3,7 +3,7 @@
 
 Copyright © 2023 Geʾez Frontier Foundation
 
-Version 1.0
+Version 1.0.2
 
 This is an Awngi & Xamtanga/Khimtanga (አዊ & ኽምጣጘ, ISO-639-3 awn & xan) language mnemonic input method.  It requires a font
 supporting Ethiopic script under the Unicode 4.1 standard. The keyboard is believed to be suitable for the related

@@ -13,12 +13,13 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Gitsenimx̱</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱</b> language of the BC Coast region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="Gitksan.png" alt="" height="198" width="514" border="0" /></h2>
+<h2>Desktop Layout</h2>
+<img src="fv_gitsenimx_U_.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
 						<li>All accents are typed after the base character: x̱ is typed a then Semicolon ;</li>
 						<li>To type the underline accent use the Semicolon key ; — ḵ is typed k then Semicolon ;</li>

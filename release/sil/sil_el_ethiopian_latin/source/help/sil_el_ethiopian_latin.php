@@ -1,6 +1,6 @@
 <?php 
-  $pagename = "SIL EL - Ethiopian Latin Keyboard Map";
-  $pagetitle = "SIL EL - Ethiopian Latin Keyboard Map";
+  $pagename = "SIL EL - Ethiopian Latin Keyboard Help";
+  $pagetitle = $pagename;
   $pagestyle = <<<END
     @page {  }
     table { border-collapse:collapse; border-spacing:0; empty-cells:show }

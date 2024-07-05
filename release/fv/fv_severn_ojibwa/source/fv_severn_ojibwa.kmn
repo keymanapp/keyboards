@@ -1,9 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.3"
-store(&TARGETS) "mobile tablet"
+store(&KEYBOARDVERSION) '10.0.1'
 c store(&ETHNOLOGUECODE) "ojs"
-store(&COPYRIGHT) "(c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation"
-store(&NAME) 'ᐊᓂᔑᓂᓂᒧᐎᐣ'
+store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
+store(&NAME) 'ᐊᓂᔑᓂᓂᒧᐎᐣ (Severn Ojibwa, left w-dot)'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'fv_severn_ojibwa.kvks'
+store(&KMW_HELPFILE) 'fv_severn_ojibwa-help.htm'
 
 begin Unicode > use(main)
 
@@ -16,120 +18,489 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_severn_ojibwa.keyman-touch-layout'
 
-+ [SHIFT T_Q] > 'ᐁ' layer('default')
-+ [SHIFT T_W] > 'ᐯ' layer('default')
-+ [SHIFT T_E] > 'ᑌ' layer('default')
-+ [SHIFT T_R] > 'ᑫ' layer('default')
-+ [SHIFT T_T] > 'ᒉ' layer('default')
-+ [SHIFT T_Y] > 'ᒣ' layer('default')
-+ [SHIFT T_U] > 'ᓀ' layer('default')
-+ [SHIFT T_I] > 'ᓭ' layer('default')
-+ [SHIFT T_O] > 'ᔐ' layer('default')
-+ [SHIFT T_P] > 'ᔦ' layer('default')
-+ [SHIFT T_A] > 'ᐅ' layer('default')
-+ [SHIFT T_S] > 'ᐳ' layer('default')
-+ [SHIFT T_D] > 'ᑐ' layer('default')
-+ [SHIFT T_F] > 'ᑯ' layer('default')
-+ [SHIFT T_G] > 'ᒍ' layer('default')
-+ [SHIFT T_H] > 'ᒧ' layer('default')
-+ [SHIFT T_J] > 'ᓄ' layer('default')
-+ [SHIFT T_K] > 'ᓱ' layer('default')
-+ [SHIFT T_L] > 'ᔓ' layer('default')
-+ [SHIFT T_COLON] > 'ᔪ' layer('default')
-+ [SHIFT T_Z] > 'ᓬ' layer('default')
-+ [SHIFT T_X] > 'ᕒ' layer('default')
-+ [SHIFT T_C] > 'ᐤ' layer('default')
-+ [SHIFT T_V] > 'ᐦ' layer('default')
-'ᔨ' + [SHIFT T_B] > 'ᔩ'
-'ᑕ' + [SHIFT T_B] > 'ᑖ'
-'ᒪ' + [SHIFT T_B] > 'ᒫ'
-'ᔪ' + [SHIFT T_B] > 'ᔫ'
-'ᔀ' + [SHIFT T_B] > 'ᔂ'
-'ᐃ' + [SHIFT T_B] > 'ᐄ'
-'ᑙ' + [SHIFT T_B] > 'ᑛ'
-'ᒮ' + [SHIFT T_B] > 'ᒰ'
-'ᐅ' + [SHIFT T_B] > 'ᐆ'
-'ᔭ' + [SHIFT T_B] > 'ᔮ'
-'ᐱ' + [SHIFT T_B] > 'ᐲ'
-'ᑝ' + [SHIFT T_B] > 'ᑟ'
-'ᐳ' + [SHIFT T_B] > 'ᐴ'
-'ᒲ' + [SHIFT T_B] > 'ᒴ'
-'ᔱ' + [SHIFT T_B] > 'ᔳ'
-'ᐊ' + [SHIFT T_B] > 'ᐋ'
-'ᒋ' + [SHIFT T_B] > 'ᒌ'
-'ᑡ' + [SHIFT T_B] > 'ᑣ'
-'ᒶ' + [SHIFT T_B] > 'ᒸ'
-'ᔵ' + [SHIFT T_B] > 'ᔷ'
-'ᐸ' + [SHIFT T_B] > 'ᐹ'
-'ᒍ' + [SHIFT T_B] > 'ᒎ'
-'ᐎ' + [SHIFT T_B] > 'ᐐ'
-'ᔹ' + [SHIFT T_B] > 'ᔻ'
-'ᒐ' + [SHIFT T_B] > 'ᒑ'
-'ᐼ' + [SHIFT T_B] > 'ᐾ'
-'ᐒ' + [SHIFT T_B] > 'ᐔ'
-'ᔑ' + [SHIFT T_B] > 'ᔒ'
-'ᒔ' + [SHIFT T_B] > 'ᒖ'
-'ᔓ' + [SHIFT T_B] > 'ᔔ'
-'ᑀ' + [SHIFT T_B] > 'ᑂ'
-'ᐗ' + [SHIFT T_B] > 'ᐙ'
-'ᔕ' + [SHIFT T_B] > 'ᔖ'
-'ᑭ' + [SHIFT T_B] > 'ᑮ'
-'ᓂ' + [SHIFT T_B] > 'ᓃ'
-'ᒘ' + [SHIFT T_B] > 'ᒚ'
-'ᑄ' + [SHIFT T_B] > 'ᑆ'
-'ᑯ' + [SHIFT T_B] > 'ᑰ'
-'ᓄ' + [SHIFT T_B] > 'ᓅ'
-'ᔙ' + [SHIFT T_B] > 'ᔛ'
-'ᓯ' + [SHIFT T_B] > 'ᓰ'
-'ᒜ' + [SHIFT T_B] > 'ᒞ'
-'ᑲ' + [SHIFT T_B] > 'ᑳ'
-'ᓱ' + [SHIFT T_B] > 'ᓲ'
-'ᓇ' + [SHIFT T_B] > 'ᓈ'
-'ᔝ' + [SHIFT T_B] > 'ᔟ'
-'ᓴ' + [SHIFT T_B] > 'ᓵ'
-'ᑶ' + [SHIFT T_B] > 'ᑸ'
-'ᓋ' + [SHIFT T_B] > 'ᓍ'
-'ᔡ' + [SHIFT T_B] > 'ᔣ'
-'ᑎ' + [SHIFT T_B] > 'ᑏ'
-'ᓸ' + [SHIFT T_B] > 'ᓺ'
-'ᣆ' + [SHIFT T_B] > 'ᣈ'
-'ᑺ' + [SHIFT T_B] > 'ᑼ'
-'ᑐ' + [SHIFT T_B] > 'ᑑ'
-'ᒥ' + [SHIFT T_B] > 'ᒦ'
-'ᒧ' + [SHIFT T_B] > 'ᒨ'
-'ᓼ' + [SHIFT T_B] > 'ᓾ'
-'ᣊ' + [SHIFT T_B] > 'ᣌ'
-'ᑾ' + [SHIFT T_B] > 'ᒀ'
++ [SHIFT T_Q] > 'ᐁ'
++ [SHIFT T_W_0] > 'ᕓ'
++ [SHIFT T_W] > 'ᐯ'
++ [SHIFT T_E_0] > 'ᕞ'
++ [SHIFT T_E] > 'ᑌ'
++ [SHIFT T_R] > 'ᑫ'
++ [SHIFT T_T] > 'ᒉ'
++ [SHIFT T_Y] > 'ᒣ'
++ [SHIFT T_U_0] > 'ᓓ'
++ [SHIFT T_U_1] > 'ᕃ'
++ [SHIFT T_U] > 'ᓀ'
++ [SHIFT T_I] > 'ᓭ'
++ [SHIFT T_O] > 'ᔐ'
++ [SHIFT T_P] > 'ᔦ'
++ [SHIFT T_A] > 'ᐅ'
++ [SHIFT T_S_0] > 'ᕗ'
++ [SHIFT T_S] > 'ᐳ'
++ [SHIFT T_D_0] > 'ᕤ'
++ [SHIFT T_D] > 'ᑐ'
++ [SHIFT T_F] > 'ᑯ'
++ [SHIFT T_G] > 'ᒍ'
++ [SHIFT T_H] > 'ᒧ'
++ [SHIFT T_J_0] > 'ᓗ'
++ [SHIFT T_J_1] > 'ᕈ'
++ [SHIFT T_J] > 'ᓄ'
++ [SHIFT T_K] > 'ᓱ'
++ [SHIFT T_L] > 'ᔓ'
++ [SHIFT T_COLON] > 'ᔪ'
++ [SHIFT T_Z_0] > 'ᓫ'
++ [SHIFT T_Z] > 'ᓬ'
++ [SHIFT T_X_0] > 'ᕑ'
++ [SHIFT T_X] > 'ᕒ'
++ [SHIFT T_C] > 'ᐤ'
++ [SHIFT T_V] > 'ᐦ'
++ [SHIFT T_B] > 'ᐞ'
++ [SHIFT T_N] > 'ᣜ'
++ [SHIFT T_M_0] > 'ᕆ'
++ [SHIFT T_M_1] > 'ᕊ'
++ [SHIFT T_M_2] > 'ᕍ'
++ [SHIFT T_M_3] > 'ᔆ'
++ [SHIFT T_M] > 'ᕃ'
++ [SHIFT T_COMMA_0] > 'ᖋ'
++ [SHIFT T_COMMA_1] > 'ᖌ'
++ [SHIFT T_COMMA_2] > 'ᖍ'
++ [SHIFT T_COMMA_3] > 'ᙆ'
++ [SHIFT T_COMMA] > 'ᖊ'
++ [SHIFT T_x66] > 'ᐧ'
 + [T_Q] > 'ᐃ'
++ [T_W_0] > 'ᕕ'
 + [T_W] > 'ᐱ'
++ [T_E_0] > 'ᕠ'
 + [T_E] > 'ᑎ'
 + [T_R] > 'ᑭ'
 + [T_T] > 'ᒋ'
 + [T_Y] > 'ᒥ'
++ [T_U_0] > 'ᓕ'
++ [T_U_1] > 'ᕆ'
 + [T_U] > 'ᓂ'
 + [T_I] > 'ᓯ'
 + [T_O] > 'ᔑ'
 + [T_P] > 'ᔨ'
 + [T_A] > 'ᐊ'
++ [T_S_0] > 'ᕙ'
 + [T_S] > 'ᐸ'
++ [T_D_0] > 'ᕦ'
 + [T_D] > 'ᑕ'
 + [T_F] > 'ᑲ'
 + [T_G] > 'ᒐ'
 + [T_H] > 'ᒪ'
++ [T_J_0] > 'ᓚ'
++ [T_J_1] > 'ᕋ'
 + [T_J] > 'ᓇ'
 + [T_K] > 'ᓴ'
 + [T_L] > 'ᔕ'
 + [T_COLON] > 'ᔭ'
++ [T_Z_0] > 'ᕝ'
 + [T_Z] > 'ᑊ'
++ [T_X_0] > 'ᕪ'
 + [T_X] > 'ᐟ'
 + [T_C] > 'ᐠ'
 + [T_V] > 'ᐨ'
 + [T_B] > 'ᒼ'
++ [T_N_0] > 'ᓪ'
++ [T_N_1] > 'ᕐ'
 + [T_N] > 'ᐣ'
 + [T_M] > 'ᐢ'
 + [T_COMMA] > 'ᐡ'
-+ [T_PERIOD] > 'ᔾ'
++ [T_PERIOD] > 'ᣞ'
 + [T_x66] > 'ᐧ'
+
+store(NoDotE) 'ᐁᐯᑌᑫᒉᒣᓀᓭᔐᔦᓓ'
+store(LDotE) 'ᐌᐺᑗᑴᒒᒬᓉᓶᔗᔯᓜ'
+store(RDotE)'ᐍᐻᑘᑵᒓᒭᓊᓷᔘᔰᓝ'
+store(EKeys) [SHIFT T_Q] [SHIFT T_W] [SHIFT T_E] [SHIFT T_R] [SHIFT T_T] [SHIFT T_Y] [SHIFT T_U] [SHIFT T_I] [SHIFT T_O] [SHIFT T_P] [SHIFT T_T_0]
+'ᐧ' + any(EKeys) > index(LDotE,2)
+
+store(NoDotN) 'ᓂᓄᓇ'
+store(LongN) 'ᓃᓅᓈ'
+any(NoDotN) + any(LongKey) > index(LongN,1)
+'ᐧ' + [T_J] > 'ᓋ'
+'ᓋ' + any(LongKey) > 'ᓍ'
+
+c irregular rules
+any(FShortVowels) + any(LongKey) > index(FLongVowels,1)
+any(THShortVowels) + any(LongKey) > index(THLongVowels,1)
+'ᐧᕦ' + any(LongKey) > 'ᕨ'
+
+c n-modified ᕄᕆᕊᕍ
+store(NoDotR) 'ᕆᕈᕋ'
+store(LongR) 'ᕇᕉᕌ' c ᕎ 
+any(NoDotR) + any(LongKey) > index(LongR,1)
+'ᐧᕋ' + any(LongKey) > 'ᕎ'
+
+'ᐧᕙ' + any(LongKey) > 'ᕛ'
+
+store(SNoDot) 'ᐃᐅᐊᐱᐳᐸᑎᑐᑕᑭᑯᑲᒋᒍᒐᒥᒧᒪᓯᓱᓴᔑᔓᔕᔨᔪᔭᓕᓗᓚ'
+store(LNoDot) 'ᐄᐆᐋᐲᐴᐹᑏᑑᑖᑮᑰᑳᒌᒎᒑᒦᒨᒫᓰᓲᓵᔒᔔᔖᔩᔫᔮᓖᓘᓛ'
+store(SDot)  'ᐎᐒᐗᐼᑀᑄᑙᑝᑡᑶᑺᑾᒔᒘᒜᒮᒲᒶᓸᓼᔀᔙᔝᔡᔱᔵᔹᓞᓢᓦ'
+store(LDot)  'ᐐᐔᐙᐾᑂᑆᑛᑟᑣᑸᑼᒀᒖᒚᒞᒰᒴᒸᓺᓾᔂᔛᔟᔣᔳᔷᔻᓠᓤᓨ'
+store(NoDotKey) [T_Q] [SHIFT T_A] [T_A] [T_W] [SHIFT T_S] [T_S] [T_E] [SHIFT T_D] [T_D] [T_R] [SHIFT T_F] [T_F] [T_T] [SHIFT T_G] [T_G] [T_Y] [SHIFT T_H] [T_H] [T_I] [SHIFT T_K] [T_K] [T_O] [SHIFT T_L] [T_L] [T_P] [SHIFT T_COLON] [T_COLON] [T_T_0] [SHIFT T_G_0] [T_G_0]
+store(LongKey) [T_x68]
+store(DotKey) [T_x66]
+
+any(SNoDot) + any(LongKey) > index(LNoDot,1)
+'ᐧ' + any(NoDotKey) > index(SDot,2)
+any(SDot) + any(LongKey) > index(LDot,1)
+'ᐧ' + [SHIFT T_B] > 'ᣜ'
+
 
 c --- END OF TOUCH LAYOUT RULES ---
 
+
+c --- START OF DESKTOP RULES ---
+c syllabic stores
+store(VowelKeys) [K_I] [K_O] [K_A]
+store(ShortVowels) 'ᐃᐅᐊ' c i o a 
+store(LongVowels) 'ᐄᐆᐋ' c ii oo aa
+
+store(WShortVowels) 'ᐎᐒᐗ' c wi wo wa
+store(WLongVowels) 'ᐐᐔᐙ' c wii woo waa
+
+store(BPShortVowels) 'ᐱᐳᐸ' c bi bo ba / pi po pa
+store(BPLongVowels) 'ᐲᐴᐹ' c bii boo baa / pii poo paa
+store(BPWShortVowels) 'ᐼᑀᑄ' c bwi bwo bwa / pwi pwo pwa
+store(BPWLongVowels) 'ᐾᑂᑆ' c bwii bwoo bwaa / pwii pwoo pwaa
+
+store(DTShortVowels) 'ᑎᑐᑕ' c di do da / ti to ta
+store(DTLongVowels) 'ᑏᑑᑖ' c dii doo daa / tii too taa
+store(DTWShortVowels) 'ᑙᑝᑡ' c dwi dwo dwa / twi two twa
+store(DTWLongVowels) 'ᑛᑟᑣ' c dwii dwoo dwaa / twii twoo twaa
+
+store(GKShortVowels) 'ᑭᑯᑲ' c gi go ga / ki ko ka
+store(GKLongVowels) 'ᑮᑰᑳ' c gii goo gaa / kii koo kaa
+store(GKWShortVowels) 'ᑶᑺᑾ' c gwi gwo gwa / kwi kwo kwa
+store(GKWLongVowels) 'ᑸᑼᒀ' c gwii gwoo gwaa / kwii kwoo kwaa
+
+store(JCHShortVowels) 'ᒋᒍᒐ' c ji jo ja / chi cho cha
+store(JCHLongVowels) 'ᒌᒎᒑ' c jii joo jaa / chii choo chaa
+store(JCHWShortVowels) 'ᒔᒘᒜ' c jwi jwo jwa / chwi chwo chwa
+store(JCHWLongVowels) 'ᒖᒚᒞ' c jwii jwoo jwaa / chwii chwoo chwaa
+
+store(MShortVowels) 'ᒥᒧᒪ' c mi mo ma
+store(MLongVowels) 'ᒦᒨᒫ' c mii moo maa
+store(MWShortVowels) 'ᒮᒲᒶ' c mwi mwo mwa
+store(MWLongVowels) 'ᒰᒴᒸ' c mwii mwoo mwaa
+
+store(NShortVowels) 'ᓂᓄᓇ' c ni no na
+store(NLongVowels) 'ᓃᓅᓈ' c nii noo naa
+
+store(SZShortVowels) 'ᓯᓱᓴ' c si so sa / zi zo za
+store(SZLongVowels) 'ᓰᓲᓵ' c sii soo saa / zii zoo zaa
+store(SZWShortVowels) 'ᓸᓼᔀ' c swi swo swa / zwi zwo zwa
+store(SZWLongVowels) 'ᓺᓾᔂ' c swii swoo swaa / zwii zwoo zwaa
+
+store(SHZHShortVowels) 'ᔑᔓᔕ' c shi sho sha / zhi zho zha
+store(SHZHLongVowels) 'ᔒᔔᔖ' c shii shoo shaa / zhii zhoo zhaa
+store(SHZHWShortVowels) 'ᔙᔝᔡ' c shwi shwo shwa / zhwi zhwo zhwa
+store(SHZHWLongVowels) 'ᔛᔟᔣ' c shwii shwoo shwaa / zhwii zhwoo zhwaa
+
+store(YShortVowels) 'ᔨᔪᔭ' c yi yo ya
+store(YLongVowels) 'ᔩᔫᔮ' c yii yoo yaa
+store(YWShortVowels) 'ᔱᔵᔹ' c ywi ywo ywa
+store(YWLongVowels) 'ᔳᔷᔻ' c ywii ywoo ywaa
+
+store(FShortVowels) 'ᕕᕗᕙ' c fi fo fa
+store(FLongVowels) 'ᕖᕘᕚ' c fii foo faa
+
+store(THShortVowels) 'ᕠᕤᕦ'
+store(THLongVowels) 'ᕢᕥᕧ'
+
+c modified n-variant 
+store(LShortVowels) 'ᓕᓗᓚ' c li lo la
+store(LLongVowels) 'ᓖᓘᓛ' c lii loo laa
+store(LWShortVowels) 'ᓞᓢᓦ' c lwi lwo lwa
+store(LWLongVowels) 'ᓠᓤᓨ' c lwii lwoo lwaa
+store(RWShortVowels) 'ᓟᓣᓧ' c lwi lwo lwa
+store(RWLongVowels) 'ᓡᓥᓩ' c lwii lwoo lwaa
+
+store(RShortVowels) 'ᕆᕈᕋ' c ri ro ra 
+store(RLongVowels) 'ᕇᕉᕌ' c rii roo raa
+
+c roman catholic variant
+store(L2ShortVowels) 'ᕆᕊᕍ' c li lo la
+
+store(R2ShortVowels) 'ᖋᖌᖍ' c ri ro ra
+
+c Standalone Vowels
+
++ 'e' > 'ᐁ'
++ 'i' > 'ᐃ'
+'ᐃ' + [K_I] > 'ᐄ'
++ 'o' > 'ᐅ'
+'ᐅ' + [K_O] > 'ᐆ'
++ 'a' > 'ᐊ'
+'ᐊ' + [K_A] > 'ᐋ'
+'ᐁ' + [K_W] > 'ᐌ'
+any(ShortVowels) + [K_W] > index(WShortVowels,1)
+any(LongVowels) + [K_W] > index(WLongVowels,1)
+any(LongVowels) + [K_BKSP] > index(ShortVowels,1)
+'ᐧ' + any(VowelKeys) > index(WShortVowels,2)
+'ᐧ' + [K_E] > 'ᐌ'
+
+c Standalone Consonants
+
++ 'h' > 'ᐦ'
++ [K_L] > 'ᓬ'
++ [SHIFT K_L] > 'ᓫ'
++ [K_R] > 'ᕒ'
++ [SHIFT K_R] > 'ᕑ'
+
+c Syllable Building
++ [K_B] > 'ᑊ'
++ [K_P] > 'ᑊ'
+'ᑊ' + [K_E] > 'ᐯ'
+'ᑊ' + any(VowelKeys) > index(BPShortVowels,2)
+any(BPShortVowels) + any(VowelKeys) > index(BPLongVowels,1)
+any(BPLongVowels) + [K_BKSP] > index(BPShortVowels,1)
+'ᐧ' + [K_B] > 'ᐺ'
+'ᐧ' + [K_P] > 'ᐺ'
+'ᑊ' + [K_W] > 'ᐺ'
+'ᐺ' + [K_E] > 'ᐺ'
+'ᐺ' + any(VowelKeys) > index(BPWShortVowels,2)
+any(BPWShortVowels) + any(VowelKeys) > index(BPWLongVowels,1)
+any(BPWLongVowels) + [K_BKSP] > index(BPWShortVowels,1)
+
++ [K_D] > 'ᐟ'
++ [K_T] > 'ᐟ'
+'ᐟ' + [K_E] > 'ᑌ'
+'ᐟ' + any(VowelKeys) > index(DTShortVowels,2)
+any(DTShortVowels) + any(VowelKeys) > index(DTLongVowels,1)
+any(DTLongVowels) + [K_BKSP] > index(DTShortVowels,1)
+'ᐧ' + [K_D] > 'ᑗ'
+'ᐧ' + [K_T] > 'ᑗ'
+'ᐟ' + [K_W] > 'ᑗ'
+'ᑗ' + [K_E] > 'ᑗ'
+'ᑗ' + any(VowelKeys) > index(DTWShortVowels,2)
+any(DTWShortVowels) + any(VowelKeys) > index(DTWLongVowels,1)
+any(DTWLongVowels) + [K_BKSP] > index(DTWShortVowels,1)
+
++ [K_G] > 'ᐠ'
++ [K_K] > 'ᐠ'
+'ᐠ' + [K_E] > 'ᑫ'
+'ᐠ' + any(VowelKeys) > index(GKShortVowels,2)
+any(GKShortVowels) + any(VowelKeys) > index(GKLongVowels,1)
+any(GKLongVowels) + [K_BKSP] > index(GKShortVowels,1)
+'ᐧ' + [K_G] > 'ᑴ'
+'ᐧ' + [K_K] > 'ᑴ'
+'ᐠ' + [K_W] > 'ᑴ'
+'ᑴ' + [K_E] > 'ᑴ'
+'ᑴ' + any(VowelKeys) > index(GKWShortVowels,2)
+any(GKWShortVowels) + any(VowelKeys) > index(GKWLongVowels,1)
+any(GKWLongVowels) + [K_BKSP] > index(GKWShortVowels,1)
+
++ [K_J] > 'ᐨ'
++ [SHIFT K_C] > 'ᐨ'
+'ᐨ' + [K_E] > 'ᒉ'
+'ᐨ' + any(VowelKeys) > index(JCHShortVowels,2)
+any(JCHShortVowels) + any(VowelKeys) > index(JCHLongVowels,1)
+any(JCHLongVowels) + [K_BKSP] > index(JCHShortVowels,1)
+'ᐧ' + [K_J] > 'ᒒ'
+'ᐧ' + [SHIFT K_C] > 'ᒒ'
+'ᐨ' + [K_W] > 'ᒒ'
+'ᒒ' + [K_E] > 'ᒒ'
+'ᒒ' + any(VowelKeys) > index(JCHWShortVowels,2)
+any(JCHWShortVowels) + any(VowelKeys) > index(JCHWLongVowels,1)
+any(JCHWLongVowels) + [K_BKSP] > index(JCHWShortVowels,1)
+
++ [K_M] > 'ᒼ'
+'ᒼ' + [K_E] > 'ᒣ'
+'ᒼ' + any(VowelKeys) > index(MShortVowels,2)
+any(MShortVowels) + any(VowelKeys) > index(MLongVowels,1)
+any(MLongVowels) + [K_BKSP] > index(MShortVowels,1)
+'ᐧ' + [K_M] > 'ᒬ'
+'ᒼ' + [K_W] > 'ᒬ'
+'ᒬ' + [K_E] > 'ᒬ'
+'ᒬ' + any(VowelKeys) > index(MWShortVowels,2)
+any(MWShortVowels) + any(VowelKeys) > index(MWLongVowels,1)
+any(MWLongVowels) + [K_BKSP] > index(MWShortVowels,1)
+
++ [K_N] > 'ᐣ'
+'ᐣ' + [K_E] > 'ᓀ'
+'ᐣ' + any(VowelKeys) > index(NShortVowels,2)
+any(NShortVowels) + any(VowelKeys) > index(NLongVowels,1)
+any(NShortVowels) + [K_BKQUOTE] > index(NLongVowels,1)
+any(NLongVowels) + [K_BKSP] > index(NShortVowels,1)
+'ᐧ' + [K_N] > 'ᓉ'
+'ᐣ' + [K_W] > 'ᓉ'
+'ᓉ' + [K_E] > 'ᓉ'
+'ᓉ' + [K_A] > 'ᓋ'
+'ᓋ' + [K_A] > 'ᓍ'
+'ᓋ' + [K_BKQUOTE] > 'ᓍ'
+'ᓍ' + [K_BKSP] > 'ᓋ'
+
++ [K_S] > 'ᐢ'
++ [K_Z] > 'ᐢ'
+'ᐢ' + [K_E] > 'ᓭ'
+'ᐢ' + any(VowelKeys) > index(SZShortVowels,2)
+any(SZShortVowels) + any(VowelKeys) > index(SZLongVowels,1)
+any(SZLongVowels) + [K_BKSP] > index(SZShortVowels,1)
+'ᐧ' + [K_S] > 'ᓶ'
+'ᐧ' + [K_Z] > 'ᓶ'
+'ᐢ' + [K_W] > 'ᓶ'
+'ᓶ' + [K_E] > 'ᓶ'
+'ᓶ' + any(VowelKeys) > index(SZWShortVowels,2)
+any(SZWShortVowels) + any(VowelKeys) > index(SZWLongVowels,1)
+any(SZWLongVowels) + [K_BKSP] > index(SZWShortVowels,1)
+
++ [SHIFT K_S] > 'ᐡ'
++ [SHIFT K_Z] > 'ᐡ'
+'ᐡ' + [K_E] > 'ᔐ'
+'ᐡ' + any(VowelKeys) > index(SHZHShortVowels,2)
+any(SHZHShortVowels) + any(VowelKeys) > index(SHZHLongVowels,1)
+any(SHZHLongVowels) + [K_BKSP] > index(SHZHShortVowels,1)
+'ᐧ' + [SHIFT K_S] > 'ᔗ'
+'ᐧ' + [SHIFT K_Z] > 'ᔗ'
+'ᐡ' + [K_W] > 'ᔗ'
+'ᔗ' + [K_E] > 'ᔗ'
+'ᔗ' + any(VowelKeys) > index(SHZHWShortVowels,2)
+any(SHZHWShortVowels) + any(VowelKeys) > index(SHZHWLongVowels,1)
+any(SHZHWLongVowels) + [K_BKSP] > index(SHZHWShortVowels,1)
+
++ [K_Y] > 'ᣞ'
+'ᣞ' + [K_E] > 'ᔦ'
+'ᣞ' + any(VowelKeys) > index(YShortVowels,2)
+any(YShortVowels) + any(VowelKeys) > index(YLongVowels,1)
+any(YLongVowels) + [K_BKSP] > index(YShortVowels,1)
+'ᐧ' + [K_Y] > 'ᔯ'
+'ᣞ' + [K_W] > 'ᔯ'
+'ᔯ' + [K_E] > 'ᔯ'
+'ᔯ' + any(VowelKeys) > index(YWShortVowels,2)
+any(YWShortVowels) + any(VowelKeys) > index(YWLongVowels,1)
+any(YWLongVowels) + [K_BKSP] > index(YWShortVowels,1)
+
++ [K_W] > 'ᐤ'
++ [SHIFT K_W] > 'ᣜ'
+'ᐤ' + [K_E] > 'ᐌ'
+'ᐤ' + any(VowelKeys) > index(WShortVowels,2)
+any(WShortVowels) + any(VowelKeys) > index(WLongVowels,1)
+any(WLongVowels) + [K_BKSP] > index(WShortVowels,1)
+
++ [K_F] > 'ᕝ'
+'ᕝ' + [K_E] > 'ᕓ'
+'ᕝ' + any(VowelKeys) > index(FShortVowels,2)
+any(FShortVowels) + any(VowelKeys) > index(FLongVowels,1)
+any(FShortVowels) + [K_BKQUOTE] > index(FLongVowels,1)
+any(FLongVowels) + [K_BKSP] > index(FShortVowels,1)
+'ᕝ' + [K_W] > 'ᐧᕓ'
+'ᐧᕓ' + [K_E] > 'ᐧᕓ'
+'ᐧᕙ' + [K_A] > 'ᕛ'
+'ᐧᕙ' + [K_BKQUOTE] > 'ᕛ'
+'ᐧ' + [K_F] > 'ᐧᕓ'
+
++ [SHIFT K_T] > 'ᕪ'
+'ᕪ' + [K_E] > 'ᕞ'
+'ᕪ' + any(VowelKeys) > index(THShortVowels,2)
+any(THShortVowels) + any(VowelKeys) > index(THLongVowels,1)
+any(THShortVowels) + [K_BKQUOTE] > index(THLongVowels,1)
+'ᐧ' + [SHIFT K_T] > 'ᐧᕞ'
+'ᕪ' + [K_W] > 'ᐧᕞ'
+'ᐧᕞ' + [K_E] > 'ᐧᕞ'
+'ᐧᕞ' + [K_I] > 'ᐧᕠ'
+'ᐧᕠ' + [K_BKQUOTE] > 'ᐧᕢ'
+'ᐧᕞ' + [K_O] > 'ᐧᕤ'
+'ᐧᕤ' + [K_BKQUOTE] > 'ᐧᕥ'
+'ᐧᕞ' + [K_A] > 'ᐧᕦ'
+'ᐧᕦ' + [K_A] > 'ᕨ'
+'ᐧᕦ' + [K_BKQUOTE] > 'ᕨ'
+'ᐧᕧ' + [K_BKQUOTE] > 'ᕨ'
+
++ [K_HYPHEN] > 'ᓪ'
+'ᓪ' + [K_E] > 'ᓓ' 
+'ᓪ' + any(VowelKeys) > index(LShortVowels,2)
+any(LShortVowels) + any(VowelKeys) > index(LLongVowels,1)
+any(LLongVowels) + [K_BKSP] > index(LShortVowels,1)
+'ᐧ' + [K_HYPHEN] > 'ᓜ'
+'ᓜ' + [K_E] > 'ᓜ'
+'ᓪ' + [K_W] > 'ᓜ'
+'ᓜ' + any(VowelKeys) > index(LWShortVowels,2)
+any(LWShortVowels) + any(VowelKeys) > index(LWLongVowels,1)
+any(LWShortVowels) + [K_BKQUOTE] > index(LWLongVowels,1)
+any(LWLongVowels) + [K_BKSP] > index(LWShortVowels,1)
+
++ [K_EQUAL] > 'ᕐ'
+'ᕐ' + [K_E] > 'ᕃ'
+'ᕐ' + any(VowelKeys) > index(RShortVowels,2)
+any(RShortVowels) + [K_BKQUOTE] > index(RLongVowels,1)
+any(RShortVowels) + any(VowelKeys) > index(RLongVowels,1)
+any(RLongVowels) + [K_BKSP] > index(RShortVowels,1)
+'ᕐ' + [K_W] > 'ᐧᕃ'
+'ᐧᕃ' + [K_E] > 'ᐧᕃ'
+'ᐧᕃ' + [K_A] > 'ᐧᕋ'
+'ᐧᕋ' + [K_A] > 'ᕎ'
+'ᐧᕋ' + [K_BKQUOTE] > 'ᕎ'
+
++ [K_BKSLASH] > 'ᔆ'
+'ᔆ' + [K_E] > 'ᕃ'
+'ᔆ' + any(VowelKeys) > index(L2ShortVowels,2)
+
++ [K_RBRKT] > 'ᙆ'
+'ᙆ' + [K_E] > 'ᖊ'
+'ᙆ' + any(VowelKeys) > index(R2ShortVowels,2)
+
+c standalone dots
++ [K_Q] > 'ᐧ' c w-dot
++ [K_BKQUOTE] > '̇' c combining dot above
+
+any(SNoDot) + [K_BKQUOTE] > index(LNoDot,1)
+any(SDot) + [K_BKQUOTE] > index(LDot,1)
+
+c punctuation
++ '.' > '᙮'
++ [RALT K_PERIOD] > '.'
++ [K_LBRKT] > deadkey(Deadkey) 
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
++ [RALT K_HYPHEN] > '-'
++ [RALT K_EQUAL] > '='
++ [SHIFT RALT K_EQUAL] > '+'
++ [RALT K_COLON] > '‹'
++ [RALT K_QUOTE] > '›'
++ [SHIFT RALT K_COLON] > '«'
++ [SHIFT RALT K_QUOTE] > '»'
++ [RALT K_BKQUOTE] > '`' 
+
+c stacking prevention
+any(LNoDot) + [K_BKQUOTE] > index(LNoDot,1)
+any(LDot) + [K_BKQUOTE] > index(LDot,1)
+'ᓍ' + [K_BKQUOTE] > 'ᓍ'
+'ᕛ' + [K_BKQUOTE] > 'ᕛ'
+'̇' + [K_BKQUOTE] > nul
+
+c allow building of non-standardised characters
+c these rules were added in case these syllables are used within community, but do not currently have a single code point.
+c it was decided to have them typed in a different way so that they remain separate from the normalised characters that are all seen on syllabics charts
+
+c FW-
+'ᐧᕓ' + [K_I] > 'ᐧᕕ'
+'ᐧᕕ' + [K_BKQUOTE] > 'ᐧᕖ'
+'ᐧᕓ' + [K_O] > 'ᐧᕗ'
+'ᐧᕗ' + [K_BKQUOTE] > 'ᐧᕘ'
+'ᐧᕓ' + [K_A] > 'ᐧᕙ'
+
+c NW-
+'ᓉ' + [K_I] > 'ᐧᓂ'
+'ᐧᓂ' + [K_BKQUOTE] > 'ᐧᓃ'
+'ᓉ' + [K_O] > 'ᐧᓄ'
+'ᐧᓄ' + [K_BKQUOTE] > 'ᐧᓅ'
+
+c Modified N-shape R
+'ᐧᕃ' + [K_I] > 'ᐧᕆ'
+'ᐧᕆ' + [K_BKQUOTE] > 'ᐧᕇ'
+'ᐧᕃ' + [K_O] > 'ᐧᕈ'
+'ᐧᕈ' + [K_BKQUOTE] > 'ᐧᕉ'
+
+c Allow English letters to be typed on alt layer
+
+store(EnglishKeys) [RALT K_Q] [RALT K_W] [RALT K_E] [RALT K_R] [RALT K_T] [RALT K_Y] [RALT K_U] [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H] [RALT K_J] [RALT K_K] [RALT K_L] [RALT K_Z] [RALT K_X] [RALT K_C] [RALT K_V] [RALT K_B] [RALT K_N] [RALT K_M]
+store(ShiftedEnglishKeys) [SHIFT RALT K_Q] [SHIFT RALT K_W] [SHIFT RALT K_E] [SHIFT RALT K_R] [SHIFT RALT K_T] [SHIFT RALT K_Y] [SHIFT RALT K_U] [SHIFT RALT K_I] [SHIFT RALT K_O] [SHIFT RALT K_P] [SHIFT RALT K_A] [SHIFT RALT K_S] [SHIFT RALT K_D] [SHIFT RALT K_F] [SHIFT RALT K_G] [SHIFT RALT K_H] [SHIFT RALT K_J] [SHIFT RALT K_K] [SHIFT RALT K_L] [SHIFT RALT K_Z] [SHIFT RALT K_X] [SHIFT RALT K_C] [SHIFT RALT K_V] [SHIFT RALT K_B] [SHIFT RALT K_N] [SHIFT RALT K_M]
+store(EnglishLetters) 'qwertyuiopasdfghjklzxcvbnm'
+store(ShiftedEnglishLetters) 'QWERTYUIOPASDFGHJKLZXCVBNM'
+
++ any(EnglishKeys) > index(EnglishLetters,1)
++ any(ShiftedEnglishKeys) > index(ShiftedEnglishLetters,1)
+
+store(nul) 'udxcvQEYUIOPASDFGHJKZXVBNM'
++ any(nul) > nul

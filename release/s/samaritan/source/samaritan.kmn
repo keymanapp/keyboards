@@ -1,0 +1,50 @@
+﻿c samaritan generated from template at 2024-06-13 11:07:26
+c with name "Samaritan"
+store(&VERSION) '10.0'
+store(&NAME) 'Samaritan'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'samaritan.ico'
+store(&VISUALKEYBOARD) 'samaritan.kvks'
+store(&LAYOUTFILE) 'samaritan.keyman-touch-layout'
+store(&KMW_RTL) '1'
+
+begin Unicode > use(main)
+
+c store(LettersK) "abgdivzITyklmnsjfSqrct"
+c store(LettersK) "tcdsvuzjyhlknbxgpmera" [K_COMMA]
+store(LettersK) [K_A] [K_B] [K_G] [K_D] [K_Y] [K_V] [K_Z] [K_I] [K_T] [K_U] [K_K] [K_L] [K_M] \
+                [K_N] [K_S] [K_J] [K_F] [K_X] [K_Q] [K_R] [K_C] [K_P]
+store(LettersU) U+0800 .. U+0815
+
+store(ModK) "~QWERT"
+store(ModU) U+0816 .. U+081B
+
+store(VowelsK) "YUIOP{}|ASDFGHJKL"
+store(VowelsU) U+081C .. U+082C
+
+store(PunctK) [K_COLON] [K_QUOTE] "ZXCVBNM<>?" [K_SLASH] [K_PERIOD] [SHIFT K_QUOTE]
+store(PunctU) U+0830 .. U+083E
+
+store(nul) "weoh:"
+
+store(StdPunctK) [RALT K_4] [RALT K_HYPHEN] [RALT K_EQUAL] \
+                 [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_BKSLASH] [RALT K_COMMA] [RALT K_PERIOD] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] \
+                 [RALT K_SLASH] [SHIFT RALT K_SLASH] [RALT K_COLON] [SHIFT RALT K_COLON] [RALT K_QUOTE] [SHIFT RALT K_QUOTE]
+store(StdPunctU) "$-={}|,.<>/?;:'" '"'
+
+group(main) using keys
++ any(nul) > nul
++ any(LettersK) > index(LettersU,1)
++ any(VowelsK) > index(VowelsU,1)
++ any(ModK) > index(ModU,1)
++ any(PunctK) > index(PunctU,1)
++ any(StdPunctK) > index(StdPunctU,1)
+
++ [SHIFT K_SPACE] > U+2E31 c word separator U+2E31 WORD SEPARATOR MIDDLE DOT
++ [K_BKQUOTE] > U+082D c Variant reading sign
+
++ [K_HYPHEN] > U+202D c LRO
++ [K_EQUAL] > U+202E c RLO
++ [SHIFT K_4] > U+20AA c NEW SHEQEL SIGN

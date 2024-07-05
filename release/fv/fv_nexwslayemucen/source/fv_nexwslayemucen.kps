@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,8 +18,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Nəxʷsƛ̓ay̓əmúcən</Name>
-    <Version URL="">9.2</Version>
-    <Copyright URL="">© 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Version URL="">9.2.1</Version>
+    <Copyright URL="">© 2015-2023 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Description>This keyboard is designed for the Nəxʷsƛ̓ay̓əmúcən language of the BC
+Coast region of Canada. This is part of a set of keyboards from
+FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -33,16 +37,25 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nəxʷsƛ̓ay̓əmúcən</Name>
       <ID>fv_nexwslayemucen</ID>
-      <Version>9.2</Version>
+      <Version>9.2.1</Version>
       <Languages>
         <Language ID="clm-Latn">Clallam (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_nexwslayemucen_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

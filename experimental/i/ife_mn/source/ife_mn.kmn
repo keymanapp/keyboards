@@ -1,0 +1,159 @@
+﻿store(&BITMAP) 'ife_mn.ico'
+store(&Copyright) "2024 SIL International"
+store(&Message) "Ifè keyboard 23 Jan 2024"
+store(&NAME) 'Ifè Mnemonic'
+store(&KEYBOARDVERSION) '1.0.1'
+store(&mnemoniclayout) '1'
+
+c 25 Feb 2004: Conversion from tbbw.kmn (a Keyman 3 table); Unicode support added.
+c 30 Mar 2004: Corrected switched Unicode entries for ;Z and ;z
+c 16 Jun 2004: Split into tbb6a with ANSI table and tbb6u with Unicode table
+c 18 Aug 2004: added the "store(&mnemoniclayout) '1' " statement
+c              so that the keyboard will work with French keyboard layouts.
+c              Icon changed to "TBU" to clarify that it produces Unicode.
+c              Added revision date to end of &Message.
+c 23 Dec 2005: added ;j for barred-i (not in Tbb fonts)
+c 30 Mar 2007: modified from tbb6u1.kmn for Ifè typing system
+c 23 Jan 2023: Upgraded for modern Keyman.
+
+c NB: When changing this table, please add a comment above
+c     AND CHANGE THE DATE at the end of the &Message store above.
+store(&ETHNOLOGUECODE) 'ife'
+store(&TARGETS) 'web desktop'
+store(&VISUALKEYBOARD) 'ife_mn.kvks'
+
+begin Unicode > use(MainU)
+
+c 'context' + 'key' > output for Unicode font c text description of glyph
+
+group(MainU) using keys
+
+'`' + 'A' > U+0041 U+0300 c A grave
+'`' + 'a' > U+0061 U+0300 c a grave
+"'" + 'A' > U+0041 U+0301 c A acute
+"'" + 'a' > U+0061 U+0301 c a acute
+'^' + 'A' > U+0041 U+0302 c A circumflex
+'^' + 'a' > U+0061 U+0302 c a circumflex
+':' + 'A' > U+0041 U+0308 c A trema
+':' + 'a' > U+0061 U+0308 c a trema
+';' + 'A' > U+0041 U+0303 c A tilde
+';' + 'a' > U+0061 U+0303 c a tilde
+'~' + 'a' > U+0061 U+0303 U+0300 c a tilde grave
+'"' + 'a' > U+0061 U+0303 U+0301 c a tilde acute
+'%' + 'A' > U+00C5 c A angstrom
+'%' + 'a' > U+00E5 c a angstrom
+';+A' + 'E' > U+00C6 c Ash uc
+';+a' + 'e' > U+00E6 c ash
+"," + 'C' > U+00C7 c C cedilla
+"," + 'c' > U+00E7 c c cedilla
+';' + 'D' > U+0189 c aveo-palatal D
+';' + 'd' > U+0256 c aveo-palatal d
+'`' + 'E' > U+0045 U+0300 c E grave
+'`' + 'e' > U+0065 U+0300 c e grave
+"'" + 'E' > U+0045 U+0301 c E acute
+"'" + 'e' > U+0065 U+0301 c e acute
+'^' + 'E' > U+0045 U+0302 c E circumflex
+'^' + 'e' > U+0065 U+0302 c e circumflex
+':' + 'E' > U+0045 U+0308 c E trema
+':' + 'e' > U+0065 U+0308 c e trema
+';' + 'E' > U+0045 U+0303 c E tilde
+';' + 'e' > U+0065 U+0303 c e tilde
+'~' + 'e' > U+0065 U+0303 U+0300 c e tilde grave
+'=~' + 'e' > U+0065 U+0303 U+0304 c e tilde mid
+'"' + 'e' > U+0065 U+0303 U+0301 c e tilde acute
+'^~' + 'e' > U+0065 U+0303 U+0302 c e tilde circumflex
+'&~' + 'e' > U+0065 U+0303 U+030C c e tilde wedge
++ '{' > U+0190 c epsilon uc
++ '[' > U+025B c epsilon
+'`' + '{' > U+0190 U+0300 c epsilon uc grave
+'`' + '[' > U+025B U+0300 c epsilon grave
+"'" + '{' > U+0190 U+0301 c epsilon uc acute
+"'" + '[' > U+025B U+0301 c epsilon acute
+';' + '{' > U+0190 U+0303 c epsilon uc tilde
+';' + '[' > U+025B U+0303 c epsilon tilde
+'~' + '[' > U+025B U+0303 U+0300 c epsilon tilde grave
+'"' + '[' > U+025B U+0303 U+0301 c epsilon tilde acute
+';' + 'F' > U+0191 c tail F
+';' + 'f' > U+0192 c tail f or guilders
+':' + 'G' > U+0047 U+0308 c G trema
+':' + 'g' > U+0067 U+0308 c g trema
+';' + 'G' > U+0194 c gamma uc
+';' + 'g' > U+0263 c gamma
+'`' + 'I' > U+0049 U+0300 c I grave
+'`' + 'i' > U+0069 U+0300 c i grave
+"'" + 'I' > U+0049 U+0301 c I acute
+"'" + 'i' > U+0069 U+0301 c i acute
+'^' + 'I' > U+0049 U+0302 c I circumflex
+'^' + 'i' > U+0069 U+0302 c i circumflex
+':' + 'I' > U+0049 U+0308 c I trema
+':' + 'i' > U+0069 U+0308 c i trema
+';' + 'I' > U+0049 U+0303 c I tilde
+';' + 'i' > U+0069 U+0303 c i tilde
+'~' + 'i' > U+0069 U+0303 U+0300 c i tilde grave
+'"' + 'i' > U+0069 U+0303 U+0301 c i tilde acute
+'`' + 'M' > U+004D U+0300 c M grave
+'`' + 'm' > U+006D U+0300 c m grave
+"'" + 'M' > U+004D U+0301 c M acute
+"'" + 'm' > U+006D U+0301 c m acute
+'`' + 'N' > U+004E U+0300 c N grave
+'`' + 'n' > U+006E U+0300 c n grave
+"'" + 'N' > U+004E U+0301 c N acute
+"'" + 'n' > U+006E U+0301 c n acute
+';' + 'N' > U+014A c velar n uc
+';' + 'n' > U+014B c velar n
+'`;' + 'N' > U+014A U+0300 c velar n uc grave
+'`;' + 'n' > U+014B U+0300 c velar n grave
+"';" + 'N' > U+014A U+0301 c velar n uc acute
+"';" + 'n' > U+014B U+0301 c velar n acute
+'`' + 'O' > U+004F U+0300 c O grave
+'`' + 'o' > U+006F U+0300 c o grave
+"'" + 'O' > U+004F U+0301 c O acute
+"'" + 'o' > U+006F U+0301 c o acute
+'^' + 'O' > U+004F U+0302 c O circumflex
+'^' + 'o' > U+006F U+0302 c o circumflex
+':' + 'O' > U+004F U+0308 c O trema
+':' + 'o' > U+006F U+0308 c o trema
+';' + 'O' > U+004F U+0303 c O tilde
+';' + 'o' > U+006F U+0303 c o tilde
+'~' + 'o' > U+006F U+0303 U+0300 c o tilde grave
+'"' + 'o' > U+006F U+0303 U+0301 c o tilde acute
++ '}' > U+0186 c open o uc
++ ']' > U+0254 c open o
+'`' + '}' > U+0186 U+0300 c open o uc grave
+'`' + ']' > U+0254 U+0300 c open o grave
+"'" + '}' > U+0186 U+0301 c open o uc acute
+"'" + ']' > U+0254 U+0301 c open o acute
+';' + '}' > U+0186 U+0303 c open o uc tilde
+';' + ']' > U+0254 U+0303 c open o tilde
+'~' + ']' > U+0254 U+0303 U+0300 c open o tilde grave
+'"' + ']' > U+0254 U+0303 U+0301 c open o tilde acute
+';+O' + 'E' > U+0152 c oe diagraph uc
+';+o' + 'e' > U+0153 c oe diagraph
+';/' + 'O' > U+00D8 c slash O uc
+';/' + 'o' > U+00F8 c slash o
+'`' + 'U' > U+0055 U+0300 c U grave
+'`' + 'u' > U+0075 U+0300 c u grave
+"'" + 'U' > U+0055 U+0301 c U acute
+"'" + 'u' > U+0075 U+0301 c u acute
+'^' + 'U' > U+0055 U+0302 c U circumflex
+'^' + 'u' > U+0075 U+0302 c u circumflex
+':' + 'U' > U+0055 U+0308 c U trema
+':' + 'u' > U+0075 U+0308 c u trema
+';' + 'U' > U+0055 U+0303 c U tilde
+';' + 'u' > U+0075 U+0303 c u tilde
+'~' + 'u' > U+0075 U+0303 U+0300 c u tilde grave
+'"' + 'u' > U+0075 U+0303 U+0301 c u tilde acute
+':' + 'Y' > U+0059 U+0308 c Y trema
+':' + 'y' > U+0079 U+0308 c y trema
+"'" + ')' > U+2019 c single quote, close
+"'" + '(' > U+2018 c single quote, open
+'"' + ')' > U+201D c double quote, close
+'"' + '(' > U+201C c double quote, open
+'<' + '<' > U+00AB c chevrons, open
+'>' + '>' > U+00BB c chevrons, close
+';' + '<' > U+2039 c open single chevron
+';' + '>' > U+203A c close single chevron
+';' + '-' > U+2013 c en dash
+';' + '_' > U+2014 c em dash
+';' + '?' > U+00BF c inverted question mark
+

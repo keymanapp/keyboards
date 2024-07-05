@@ -18,14 +18,10 @@ store(&KMW_EMBEDJS) 'korean_ime.js'
 
 c store(HelpFile) 'welcome.htm'
 store(&KMW_HELPTEXT) '<div><a href="http://help.keymanweb.com/go?keyboard=Keyboard_korean_rr" target="KeymanWebHelp">Help on this keyboard</a></div><div id=' U+0027 'Keyboard_Korean_IME' U+0027 '></div>'
-store(&COPYRIGHT)    '© 2010-2020 SIL International'
-c store(&WINDOWSLANGUAGES) 'x0412'
-c store(&LANGUAGE) 'x0412'
-c store(&ETHNOLOGUECODE) 'kor'
-c store(&TARGETS) 'any'
+store(&COPYRIGHT)    '© 2010-2023 SIL International'
 c store(&LAYOUTFILE) 'korean_rr.keyman-touch-layout'
-store(&KEYBOARDVERSION) '1.2'
-store(&TARGETS) 'windows web'
+store(&KEYBOARDVERSION) '1.3'
+store(&TARGETS) 'web'
 
 begin Unicode > use(combineJamo)                                           
 

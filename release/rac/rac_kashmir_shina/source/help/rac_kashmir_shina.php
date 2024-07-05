@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Rachitrali-Kashmir-Shina Keyman Keyboard Help';
+  $pagename = 'Rachitrali-Kashmir-Shina Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>

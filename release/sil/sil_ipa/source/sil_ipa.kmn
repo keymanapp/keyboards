@@ -61,7 +61,7 @@ store(&MESSAGE) 'The IPA (SIL) Keyman keyboard is distributed under The MIT Lice
 c store(&author) "M. Hosken, D. Bevan"
 c store(&language) ""
 c store(&WINDOWSLANGUAGES) 'x040F'
-store(&KEYBOARDVERSION) '1.8.6'
+store(&KEYBOARDVERSION) '1.8.7'
 store(&LAYOUTFILE) 'sil_ipa.keyman-touch-layout'
 store(&TARGETS) 'any'
 
@@ -142,6 +142,11 @@ c store(hatK)  "?gjnwlh" "0123456789-" "m" "n=" "n>"
                 U+1D43 U+1D44 U+1D45 U+1D9B U+1D46 U+1D49 U+1D4A U+1D4B U+1D9F \
                 U+2071 U+1DA4 U+1DA6 U+1D52 U+A7F9 U+1DB1 U+1D53 \
                 U+1D58 U+1DB6 U+02B8 U+1D5A U+1DBA U+1DB7
+
+   c subscript numerals get incorporated in the "_" rota
+   store(subscriptD)  "0123456789"
+
+   store(subscriptU)  U+2080 U+2081 U+2082 U+2083 U+2084 U+2085 U+2086 U+2087 U+2088 U+2089
 
 c Stores added for option key
    store(EqSupK)         "?"    "b"    "d"    "g"    "h"    "j"    "L"    "n" \
@@ -349,14 +354,16 @@ c German keyboard has } on RALT+0 == RALT+= so use RALT SHIFT = instead for rese
 $keymanonly: if(&baselayout = 'de-de') + [RALT SHIFT "="]	>	reset(option_key)  c 
 $keymanonly: if(&baselayout != 'de-de') + [RALT "="]	>	reset(option_key)  c 
 
-store(controls)  "=><^|"
-$keymanonly: store(controls-before) ["="][SHIFT ">"] [SHIFT "<"] [SHIFT '^'] [SHIFT "|"]
+store(controls)  "=><^| U+0320"
+$keymanonly: store(controls-before) ["="][SHIFT ">"] [SHIFT "<"] [SHIFT '^'] [SHIFT "|"] U+0320
 
 $keymanonly: if(option_key = 'before') "=" + any(equalD)  > index(equalU,3)
 $keymanonly: if(option_key = 'before') ">" + any(greatD)  > index(greatU,3)
 $keymanonly: if(option_key = 'before') "<" + any(lessD)   > index(lessU,3)
 $keymanonly: if(option_key = 'before') "^" + any(hatD)    > index(hatU,3)
 $keymanonly: if(option_key = 'before') "|" + any(pipeD)   > index(pipeU,3) c this was added for Chinese IPA
+$keymanonly: if(option_key = 'before') U+0320 + any(subscriptD) > index(subscriptU,3)         c subscript numeral
+c $keymanonly: if(option_key = 'before') U+0320 + any(subscriptU) > index(subscriptD,3) U+0320  c back to "_" rota
 
 $keymanonly: if(option_key = 'before') "=" + "!"  > U+01C2 c added this rule since ! is already U+01C3 so above rules don't work
 $keymanonly: if(option_key = 'before') ">" + "!"  > U+01C1 c added this rule since ! is already U+01C3 so above rules don't work
@@ -380,6 +387,8 @@ if(option_key = '') any(greatD) + ">"  > index(greatU,2)
 if(option_key = '') any(lessD)  + "<"  > index(lessU,2)
 if(option_key = '') any(hatD)   + "^"  > index(hatU,2)
 if(option_key = '') any(pipeD)  + "|"  > index(pipeU,2) c this was added for Chinese IPA
+if(option_key = '') any(subscriptD) + "_" > index(subscriptU,2)        c subscript numeral
+if(option_key = '') any(subscriptU) + "_" > index(subscriptD,2) U+0320 c back to "_" rota
 
 c lower diacritic
 any(segmentU) + any(ldiaK) > context beep

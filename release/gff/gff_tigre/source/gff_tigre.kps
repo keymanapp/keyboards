@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Tigre Keyboard</Folder>
@@ -31,7 +32,7 @@
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
-        <Name>Tigrinya Keyboard Manual</Name>
+        <Name>Tigre Keyboard Manual</Name>
         <FileName>TigreTyping-English.pdf</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
@@ -59,6 +60,9 @@
     <Copyright URL="">2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
+    <Description>An intuitive, easy to use, keyboard for typing in Tigre with standard
+English keyboards according to the GFF conventions for Ethiopic script
+languages.</Description>
   </Info>
   <Files>
     <File>
@@ -94,18 +98,6 @@
     <File>
       <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
       <Description>Font Brana Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\EthiopicUnicodeItalic.ttf</Name>
-      <Description>Font Ethiopic Unicode Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\EthiopicUnicodeNormal.ttf</Name>
-      <Description>Font Ethiopic Unicode Normal</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -229,18 +221,28 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ትግሬ (Tigre)</Name>
       <ID>gff_tigre</ID>
-      <Version>1.0</Version>
+      <Version>1.0.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="tig">Tigre</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="tig" Keys="t g r i e" Text="ትግሬ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>
