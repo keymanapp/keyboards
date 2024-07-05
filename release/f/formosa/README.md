@@ -8,7 +8,7 @@ Formosa keyboard
 Description
 -----------
 
-Formosa generated from template
+This keyboard is a bopomofo keyboard for the bopomofo script. It is based on a US Qwerty keyboard using a phonetic layout. 
 
 Links
 -----
