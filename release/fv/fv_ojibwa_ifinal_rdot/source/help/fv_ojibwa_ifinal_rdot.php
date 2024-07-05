@@ -224,5 +224,5 @@ END;
 
 <br />
 
-<h2>Keyboard Layout</h2>
-<div id='osk'></div>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'></div>
