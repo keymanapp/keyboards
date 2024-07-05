@@ -25,7 +25,12 @@ END;
         use the Backquote key <kbd>`</kbd> (left of the 1 key).</li>
     <li>To type the acute accent use the Slash key <kbd>/</kbd> — á is typed <kbd>a</kbd>+<kbd>/</kbd></li>
     <li>You can type the original English punctuation by holding down the Right-Alt or Option key. The Semicolon ; is
-        typed <kbd>Right-Alt</kbd>+<kbd>;</kbd> (Windows) <kbd>⌥ Option</kbd>+<kbd>;</kbd> (Mac).</li>
+        typed <kbd>Right-Alt</kbd>+<kbd>;</kbd> (Windows) <kbd>⌥ Option</kbd>+<kbd>;</kbd> (Mac).
+        <ul>
+            <li>NOTE: When using Google Docs, Slash / is typed <kbd>Right-Alt</kbd>+<kbd>SHIFT</kbd>+<kbd>/</kbd>
+                (Windows) or <kbd>⌥ Option</kbd>+<kbd>SHIFT</kbd>+<kbd>/</kbd> (Mac)</li>
+        </ul>
+    </li>
     <li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.
         <ul>
             <li>single: ‘ <kbd>SHIFT</kbd>+<kbd>`</kbd> — ’ Apostrophe</li>
@@ -43,7 +48,7 @@ END;
 <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and
         Aboriginal Serif</a></h3>
 
-		<h2>Notes on touch layout</h2>
+<h2>Notes on touch layout</h2>
 <div id='wikitext'>
     <div class='vspace'></div>
     <table border='1' style='border-collapse:collapse' cellpadding='5'>
@@ -80,12 +85,12 @@ END;
             <td align='center'>b</td>
             <td align='center'>n</td>
             <td align='center'>m</td>
-            <td align='center'colspan='2'>⌫</td>
+            <td align='center' colspan='2'>⌫</td>
         </tr>
         <tr>
             <td align='center'>123</td>
             <td align='center'>🌐</td>
-			<td align='center'>' ’: "</td>
+            <td align='center'>' ’: "</td>
             <td align='center' colspan='4'>space</td>
             <td align='center'>.</td>
             <td align='center' colspan='3'>⏎</td>
