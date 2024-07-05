@@ -12,7 +12,7 @@ KMHideIMProc KMHideIM = NULL;
 KMGetActiveKeyboardProc KMGetActiveKeyboard = NULL;
 KMGetKeyboardPathProc KMGetKeyboardPath = NULL;
 
-BOOL FMoveWindow=FALSE, FSizeWindow=FALSE;
+thread_local BOOL FMoveWindow=FALSE, FSizeWindow=FALSE;
 
 extern BOOL Vertical;
 
@@ -106,9 +106,9 @@ void Log(char *p, int n);
 
 BOOL IMDefWindowProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam, LRESULT *lResult)
 {
-	static POINT FLastPoint;
-	static RECT sizerect;
-	static HCURSOR FHitTestCursor;
+	thread_local static POINT FLastPoint;
+	thread_local static RECT sizerect;
+	thread_local static HCURSOR FHitTestCursor;
 
 	RECT rect;
 	POINTS pt;

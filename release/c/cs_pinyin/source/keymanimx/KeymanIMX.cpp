@@ -78,34 +78,34 @@ void Log(PWCHAR s, PWCHAR t){}
 void Log(char *p, PWCHAR s, int n){}
 #endif
 
-UINT Error=ERR_UNKNOWN;
-HWND hwnd=0, hwndChild=0;
+thread_local UINT Error=ERR_UNKNOWN;
+thread_local HWND hwnd=0, hwndChild=0;
 HINSTANCE hDllInst=0;
-UINT wm_keymanim_close = 0, wm_keymanim_contextchanged;
-HBITMAP hbmp[MAXBMP]={0};
-BOOL EnableTracking=TRUE, Tracking=TRUE;
-UINT DisplayMode=DM_LIMITED;
-int CellStart[MAXACTIVERULES+1]={0};
-BOOL UserResize=TRUE, Vertical=FALSE, NumericMode=FALSE;
+thread_local UINT wm_keymanim_close = 0, wm_keymanim_contextchanged;
+thread_local HBITMAP hbmp[MAXBMP]={0};
+thread_local BOOL EnableTracking=TRUE, Tracking=TRUE;
+thread_local UINT DisplayMode=DM_LIMITED;
+thread_local int CellStart[MAXACTIVERULES+1]={0};
+thread_local BOOL UserResize=TRUE, Vertical=FALSE, NumericMode=FALSE;
 
-POINTS IMPos={0,0}, IMSize={IM_WIDTH,IM_HEIGHT}, CellSize={CELL_X,CELL_Y};
-int IMBorders=IMBORDERS, CWBorders=CWBORDERS, InputSize=INPUTWIDTH, IMWidth=0;
+thread_local POINTS IMPos={0,0}, IMSize={IM_WIDTH,IM_HEIGHT}, CellSize={CELL_X,CELL_Y};
+thread_local int IMBorders=IMBORDERS, CWBorders=CWBORDERS, InputSize=INPUTWIDTH, IMWidth=0;
 
 enum tagRect {RECT_UP=0,RECT_DOWN,RECT_TRACK,RECT_ORIENT,RECT_CONFIG,RECT_LOGO};
 
 enum tagBmp {BMP_LOGO=0,BMP_VERT,BMP_HORIZ,BMP_CANT_TRACK,BMP_DONT_TRACK,BMP_TRACK,
 	BMP_LEFT0,BMP_LEFT1,BMP_RIGHT0,BMP_RIGHT1,BMP_UP0,BMP_UP1,BMP_DOWN0,BMP_DOWN1,BMP_CONFIG};
 
-PSTR rnBmp[MAXBMP] = {"LOGO","VERTICAL","HORIZONTAL","T_GRAY","T_RED","T_GREEN",
+const PSTR rnBmp[MAXBMP] = {"LOGO","VERTICAL","HORIZONTAL","T_GRAY","T_RED","T_GREEN",
 	"LEFT0","LEFT1","RIGHT0","RIGHT1","UP0","UP1","DOWN0","DOWN1","CONFIG"};
 
-int ScrollPos=0, MaxScrollBoxes=0, nCells, MaxCells=9;
-RULE *ActiveRule[MAXACTIVERULES] = {NULL};
-KEYBOARD *Keyboards = NULL, *CurKbd = NULL;
-WCHAR ContextBuf[16]={0};
-PSTR IndexString = INDEXSTRING;
-BOOL MouseSelection=TRUE,CountAll=FALSE,ExtendMatch=FALSE;
-int nKeyboards;
+thread_local int ScrollPos=0, MaxScrollBoxes=0, nCells, MaxCells=9;
+thread_local RULE *ActiveRule[MAXACTIVERULES] = {NULL};
+thread_local KEYBOARD *Keyboards = NULL, *CurKbd = NULL;
+thread_local WCHAR ContextBuf[16]={0};
+thread_local PSTR IndexString = INDEXSTRING;
+thread_local BOOL MouseSelection=TRUE,CountAll=FALSE,ExtendMatch=FALSE;
+thread_local int nKeyboards;
 
 LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
 LRESULT CALLBACK IMXChildWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
@@ -129,7 +129,7 @@ BOOL IsRegistered(UINT keyID);
 DWORD GetCRC32(LPVOID pv,UINT cb);
 
 /************************************************************************************************************
- * DLL entry functions          
+ * DLL entry functions
  ************************************************************************************************************/
 
 BOOL WINAPI DllMain(HINSTANCE hInst, DWORD fdwReason, LPVOID lpvReserved)
@@ -153,13 +153,13 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMDestroy(PSTR KeyboardName)
 
 	for(n=0; n<MAXBMP; n++)
 	{
-		if(hbmp[n]) 
+		if(hbmp[n])
 		{
 			DeleteObject(hbmp[n]); hbmp[n] = 0;
 		}
 	}
-	
-	if(hwnd) 
+
+	if(hwnd)
 	{
 		DestroyWindow(hwnd); hwnd = 0;
 	}
@@ -190,14 +190,14 @@ int KeyboardIndex(PSTR KeyboardName)
 	return n;
 }
 
-// Load the mapped memory with the configuration rules and create the IMX windows 
+// Load the mapped memory with the configuration rules and create the IMX windows
 extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMInit(PSTR KeyboardName)
 {
 	WNDCLASS wc;
 	char bmpPath[_MAX_PATH], *p;
 	int n;
 
-	if(hbmp[BMP_LOGO]) 
+	if(hbmp[BMP_LOGO])
 	{
 		DeleteObject(hbmp[BMP_LOGO]); hbmp[BMP_LOGO] = 0;
 	}
@@ -231,7 +231,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMInit(PSTR KeyboardName)
 		wc.lpszMenuName = NULL;
 		wc.lpszClassName = "KM_IMX";
 		if(!RegisterClass(&wc)) returnErr(FALSE);
-		
+
 		wc.lpfnWndProc = (WNDPROC) IMXChildWndProc;
 		wc.lpszClassName = "KM_IMXChild";
 		if(!RegisterClass(&wc)) returnErr(FALSE);
@@ -243,9 +243,9 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMInit(PSTR KeyboardName)
 	// Since this is called for each keyboard, must only create the window once
 	//   The height and width are normally redefined, but are set to allow an error message to be
 	//   displayed if the configuration file is missing or invalid
-	if(hwnd == NULL) 
+	if(hwnd == NULL)
 	{
-		hwnd = CreateWindowEx(WS_EX_TOOLWINDOW | WS_EX_TOPMOST,"KM_IMX","Keyman IMX", 
+		hwnd = CreateWindowEx(WS_EX_TOOLWINDOW | WS_EX_TOPMOST,"KM_IMX","Keyman IMX",
 			WS_THICKFRAME | WS_POPUP | WS_BORDER,0,0,400,56,NULL,NULL,hDllInst,NULL);
 		if(hwnd == NULL) returnErr(FALSE);
 	}
@@ -259,7 +259,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMReloadConfig(PSTR KeyboardN
 	char mutex[256];
 
 	CurKbd = NULL;
-	
+
 	Log("Entering KeymanIMReloadConfig");
 	Log(KeyboardName);
 
@@ -268,7 +268,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMReloadConfig(PSTR KeyboardN
 
 	wsprintf(mutex,"keyman_imx_load_%s",KeyboardName);
 	hMutex = CreateMutex(NULL,FALSE,mutex);
-		
+
 	if(WaitForSingleObject(hMutex,10000) != WAIT_OBJECT_0)
 	{
 	  Log("KeymanIMReloadConfig: failed to capture mutex");
@@ -286,7 +286,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMReloadConfig(PSTR KeyboardN
 }
 
 /************************************************************************************************************
- * IM Events                     
+ * IM Events
  ************************************************************************************************************/
 
 extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMActivate(PSTR KeyboardName)
@@ -304,7 +304,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMActivate(PSTR KeyboardName)
 	ScrollPos = 0; *ContextBuf = 0;
 
 	// Display IM window (with error message) keyboard is invalid
-	if(CurKbd->h.nrules == 0 && hwnd) (*KMDisplayIM)(hwnd,TRUE);	
+	if(CurKbd->h.nrules == 0 && hwnd) (*KMDisplayIM)(hwnd,TRUE);
 
 	return(TRUE);
 }
@@ -327,8 +327,8 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMDeactivate(PSTR KeyboardNam
  ************************************************************************************************************/
 
 // Calculate the cell and window dimensions for the IM window
-//   For the horizontal window, each cell wifth can change, 
-//   but for the vertical window, only the window width varies 
+//   For the horizontal window, each cell wifth can change,
+//   but for the vertical window, only the window width varies
 BOOL GetIMDimensions(int nCells,PWCHAR pin)
 {
 	HDC hDC;
@@ -349,7 +349,7 @@ BOOL GetIMDimensions(int nCells,PWCHAR pin)
 
 	IMWidth = INPUTWIDTH; // default only
 
-	// Can only replace defaults (or old values) if KEYBOARD and windows defined  
+	// Can only replace defaults (or old values) if KEYBOARD and windows defined
 	if(CurKbd && hwnd && hwndChild && pin)
 	{
 		hDC = GetDC(hwnd);
@@ -379,7 +379,7 @@ BOOL GetIMDimensions(int nCells,PWCHAR pin)
 			GetTextExtentPoint(hDC,Index,i<9?1:2,&Size);
 			CellWidth[i] += Size.cx;
 
-			pw = CurKbd->pst+ActiveRule[i]->tag; 
+			pw = CurKbd->pst+ActiveRule[i]->tag;
 			pwlen = ActiveRule[i]->tlen ? ActiveRule[i]->tlen : ActiveRule[i]->ilen;
 			if(pwlen >= MAXTAGLEN)
 			{
@@ -441,14 +441,14 @@ void UpdateIMXWindow(void)
 	}
 	else
 	{
-		dx = InputSize + IMBorders + CWBorders; 
+		dx = InputSize + IMBorders + CWBorders;
 		dy = CellSize.y + IMBorders + CWBorders;
 	}
 
 	Tracking = FALSE;
 
-	// Don't attempt to track for a vertical selection window 
-	if(EnableTracking && !Vertical)	
+	// Don't attempt to track for a vertical selection window
+	if(EnableTracking && !Vertical)
 	{
 		GetCaretPos(&Caret);
 		hFocus = GetFocus();
@@ -465,12 +465,12 @@ void UpdateIMXWindow(void)
 			if(y + RectIM.bottom - RectIM.top > RectApp.bottom) y = RectApp.top + Caret.y - (RectIM.bottom-RectIM.top);
 		}
 	}
-	else 
+	else
 	{
 		x = IMPos.x; y = IMPos.y;
 	}
 
-	UserResize = FALSE;		
+	UserResize = FALSE;
 	InvalidateRect(hwnd,NULL,TRUE);
 	SetWindowPos(hwnd,0,x,y,dx,dy,SWP_NOZORDER+SWP_NOACTIVATE);
 	UserResize = TRUE;
@@ -486,13 +486,12 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	HDC hDC, hSrcDC;
 	HFONT hfInput, hfOld;
 	LPMINMAXINFO pMMI;
-
-	static RECT rp[6]={{0}};
+	thread_local static RECT rp[6] = { {0} };
 
 	int i, x, y, x1, y1, x2, y2, dx, dy, n1, n2, PossibleCells;
 
 	// Use default processing if no keyboard loaded
-	if(!PrepIM(FALSE) || !CurKbd) 
+	if(!PrepIM(FALSE) || !CurKbd)
 	{
 		switch(msg)
 		{
@@ -509,11 +508,11 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	case WM_LBUTTONDBLCLK:
 	case WM_LBUTTONDOWN:
 		pts.x = LOWORD(lParam); pts.y = HIWORD(lParam);
-		GetWindowRect(hwnd,&rect); 
+		GetWindowRect(hwnd,&rect);
 		x=rect.left; y = rect.top;
 
 		// Process all button clicks on hotspots
-		if(ScrollPos > 0 && PtInRect(&rp[RECT_UP],pts)) 
+		if(ScrollPos > 0 && PtInRect(&rp[RECT_UP],pts))
 		{
 			SendKey(VK_PRIOR);
 		}
@@ -568,13 +567,13 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	{
 	case WM_CREATE:
 
-		// Read saved IM window settings 
+		// Read saved IM window settings
 		ReadConfiguration(TRUE);
 
 		// Centre the window if an error message is being displayed
 		if(Error != ERR_NONE)
 		{
-			IMPos.x = GetSystemMetrics(SM_CXSCREEN)/2 - 200; 
+			IMPos.x = GetSystemMetrics(SM_CXSCREEN)/2 - 200;
 			IMPos.y = GetSystemMetrics(SM_CYSCREEN)/2 - 28;
 		}
 
@@ -587,8 +586,8 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 		// Note that the actual child window dimensions will be set when the window is first displayed,
 		// except when no valid configuration is loaded
-		hwndChild = CreateWindowEx(WS_EX_CLIENTEDGE, "KM_IMXChild", "", 
-			WS_BORDER | WS_CHILD | WS_VISIBLE, InputSize, 0, 
+		hwndChild = CreateWindowEx(WS_EX_CLIENTEDGE, "KM_IMXChild", "",
+			WS_BORDER | WS_CHILD | WS_VISIBLE, InputSize, 0,
 			rect.right-rect.left-InputSize,rect.bottom, hwnd, 0, hDllInst, NULL);
 
 		GetWindowRect(hwndChild,&rectOuter); GetClientRect(hwndChild, &rect);	//default is probably OK
@@ -618,12 +617,12 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			pMMI->ptMinTrackSize.y = CellSize.y + 3*(IMBorders + CWBorders)/2;
 			pMMI->ptMaxTrackSize.y = pMMI->ptMinTrackSize.y + CellSize.y*MAXACTIVERULES;
 		}
-		else 
+		else
 		{
 			pMMI->ptMaxTrackSize.x = InputSize;
 			for(i=1; i<=MAXACTIVERULES; i++)
 			{
-				if(CellStart[i]) 
+				if(CellStart[i])
 					pMMI->ptMaxTrackSize.x = InputSize + CellStart[i];
 				else
 					pMMI->ptMaxTrackSize.x += CellSize.x;
@@ -632,7 +631,7 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			pMMI->ptMinTrackSize.x = InputSize + IMBorders + CWBorders;
 			pMMI->ptMinTrackSize.y = pMMI->ptMaxTrackSize.y = CellSize.y + IMBorders + CWBorders;
 		}
-		
+
 		return 0;
 
 	case WM_SHOWWINDOW:
@@ -652,11 +651,11 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		return 0;
 
 	case WM_SIZE:
-		if(UserResize) 
+		if(UserResize)
 		{
 
 			GetWindowRect(hwnd, &rect);
-			IMSize.x = (short)(rect.right - rect.left); 
+			IMSize.x = (short)(rect.right - rect.left);
 			IMSize.y = (short)(rect.bottom - rect.top);
 
 			if(Vertical)
@@ -667,12 +666,12 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			{
 				PossibleCells = (IMSize.x - InputSize + CellSize.x)/CellSize.x;
 			}
-			
+
 			// Since SetWindowPos also sends a WM_SIZE, must only reset if non-zero
-			if(PossibleCells >= 2) 
-			{ 
+			if(PossibleCells >= 2)
+			{
 				MaxCells = ((CurKbd->h.dwOptions & SELECTIONBITS)==SM_FKEYS ? 12 : 9);
-				MaxCells = min(MaxCells,PossibleCells); 
+				MaxCells = min(MaxCells,PossibleCells);
 				WriteRegSetting("IMX cells", MaxCells);
 				ScrollPos = 0;		// always reset scrolling when resizing
 
@@ -693,7 +692,7 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 	case WM_PAINT:
 		hDC = BeginPaint(hwnd, &ps);
-			
+
 		hfInput = CreateFontIndirect(&CurKbd->h.lfInput);
 		hfOld = (HFONT)SelectObject(hDC,hfInput);
 
@@ -704,16 +703,16 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		if(Vertical)		// scroll up/down hotspots
 		{
 			x1 = rect.right-14; y1 = CellSize.y+(IMBorders+CWBorders)/2-17;
-			x2 = x1; y2 = y1+8; 
-			dx = 13; dy = 8;	 
+			x2 = x1; y2 = y1+8;
+			dx = 13; dy = 8;
 			n1 = ScrollPos>0 ? BMP_UP1 : BMP_UP0;
 			n2 = ScrollPos+MaxCells<nCells ? BMP_DOWN1 : BMP_DOWN0;
 		}
-		else				// scroll left/right hotspots 
+		else				// scroll left/right hotspots
 		{
 			x1 = InputSize-17; y1 = rect.bottom-16;
-			x2 = x1+8; y2 = y1; 
-			dx = 8; dy = 13;	
+			x2 = x1+8; y2 = y1;
+			dx = 8; dy = 13;
 			n1 = ScrollPos>0 ? BMP_LEFT1 : BMP_LEFT0;
 			n2 = ScrollPos+MaxCells<nCells ? BMP_RIGHT1 : BMP_RIGHT0;
 		}
@@ -721,13 +720,13 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		hSrcDC = CreateCompatibleDC(0);
 		hOldBmp = (HBITMAP)SelectObject(hSrcDC,hbmp[n1]);
 		BitBlt(hDC,x1,y1,dx,dy,hSrcDC,0,0,SRCAND);
-		SetRect(&rp[RECT_UP],x1,y1,x1+dx,y1+dy);	
+		SetRect(&rp[RECT_UP],x1,y1,x1+dx,y1+dy);
 
 		SelectObject(hSrcDC,hbmp[n2]);
-		BitBlt(hDC,x2,y2,dx,dy,hSrcDC,0,0,SRCAND);		
-		SetRect(&rp[RECT_DOWN],x2,y2,x2+dx,y2+dy);	
+		BitBlt(hDC,x2,y2,dx,dy,hSrcDC,0,0,SRCAND);
+		SetRect(&rp[RECT_DOWN],x2,y2,x2+dx,y2+dy);
 
-		// show input buffer 
+		// show input buffer
         TextOutW(hDC, 2, 0, ContextBuf, (int)wcslen(ContextBuf));
 
 		// display hotspot icons, and create corresponding regions
@@ -747,12 +746,12 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 		// display logo
 		SelectObject(hSrcDC, hbmp[BMP_LOGO]);
-		y = CellSize.y + CWBorders - 16; 
+		y = CellSize.y + CWBorders - 16;
 		BitBlt(hDC, 0, y, 24, 16, hSrcDC, 0, 0, SRCAND);
 		SetRect(&rp[RECT_LOGO],0,y,24,y+16);	// logo hotspot
 		SelectObject(hSrcDC, hOldBmp);
 		DeleteDC(hSrcDC);
-		
+
 		SelectObject(hDC,hfOld);
 		DeleteObject(hfInput);
 
@@ -777,14 +776,14 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 	int i, x1, y1, x2, y2, x3, y3, pwlen, KeyStroke;
 	char Index[6]={0};
 
-	static WORD CellLimit[MAXACTIVERULES+1]={0};
+	thread_local static WORD CellLimit[MAXACTIVERULES+1]={0};
 
 	if(!PrepIM(FALSE) || !CurKbd) return DefWindowProc(hwndChild,msg,wParam,lParam);
 
 	switch(msg)
 	{
 	// Completing a RULE here does not work reliably, so simulate the keystroke instead
-	case WM_LBUTTONDOWN:			
+	case WM_LBUTTONDOWN:
 		for(i=0; i<nCells; i++)
 		{
 			if(!ActiveRule[i])break;
@@ -804,7 +803,7 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 
 				// Flag simulated keystroke as result of mouse and send keystroke
 				MouseSelection = TRUE;
-				SendKey(KeyStroke); 
+				SendKey(KeyStroke);
 				break;
 			}
 		}
@@ -818,10 +817,10 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 
 	case WM_MOUSEACTIVATE:
 		return MA_NOACTIVATE;
-		
+
 	case WM_SIZE:
 	case WM_REDRAW:		// This is a user message, not a standard message
-		InvalidateRect(hwndChild, NULL, TRUE);	
+		InvalidateRect(hwndChild, NULL, TRUE);
 		return 0;
 
 	case WM_PAINT:
@@ -830,14 +829,14 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 		hfMain = CreateFontIndirect(&CurKbd->h.lfMain);
 		GetClientRect(hwndChild, &rect);
 		if(CurKbd->h.nrules>0)
-		{		
+		{
 			hfOld = (HFONT) SelectObject(hDC, hfTag);
 
 			for(i=0; i<MaxCells; i++)
 			{
 
 				if(!ActiveRule[i]) break;
-		
+
 				SelectObject(hDC, hfTag);
 				SetTextColor(hDC,RGB(0,0,255));
 
@@ -847,29 +846,29 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 				if(Vertical)
 				{
 					x1 = 2;							// index
-					y1 = i*CellSize.y - 1; 
+					y1 = i*CellSize.y - 1;
 					x2 = rect.right/2 + 2;			// tag
-					y2 = (i+1)*CellSize.y - Size.cy;					
+					y2 = (i+1)*CellSize.y - Size.cy;
 					x3 = rect.right/2 + 2;	// characters
 					y3 = i*CellSize.y + Size.cy - 4;
 				}
 				else
 				{
-					x1 = CellStart[i] + 2; 
+					x1 = CellStart[i] + 2;
 					y1 = -2;
-					x2 = (CellStart[i]+CellStart[i+1])/2 + 2; 
-					y2 = rect.bottom - Size.cy;					
-					x3 = (CellStart[i]+CellStart[i+1])/2 + 2; 
+					x2 = (CellStart[i]+CellStart[i+1])/2 + 2;
+					y2 = rect.bottom - Size.cy;
+					x3 = (CellStart[i]+CellStart[i+1])/2 + 2;
 					y3 = Size.cy - 5;
 				}
 
-				pw = CurKbd->pst+ActiveRule[i]->tag; 
+				pw = CurKbd->pst+ActiveRule[i]->tag;
 				pwlen = ActiveRule[i]->tlen ? ActiveRule[i]->tlen : ActiveRule[i]->ilen;
 
 				// Use an ellipsis if tag is too long
 				if(pwlen >= MAXTAGLEN)
 				{
-					wcsncpy_s(tag, MAXTAGLEN, pw, MAXTAGLEN-1); 
+					wcsncpy_s(tag, MAXTAGLEN, pw, MAXTAGLEN-1);
 					tag[MAXTAGLEN-1] = ELLIPSIS;
 					pw = tag; pwlen = MAXTAGLEN;
 				}
@@ -880,14 +879,14 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 				SetTextAlign(hDC,TA_CENTER);
 				TextOutW(hDC, x2, y2, pw, pwlen);
 
-				SelectObject(hDC, hfMain);				
+				SelectObject(hDC, hfMain);
 				SetTextAlign(hDC,TA_CENTER); SetTextColor(hDC,0);
 
-				pw = CurKbd->pst+ActiveRule[i]->output; 
+				pw = CurKbd->pst+ActiveRule[i]->output;
 				pwlen = ActiveRule[i]->olen;
 				TextOutW(hDC, x3, y3, pw, pwlen);
 			}
-		
+
 			// Draw cell boundaries last, to write over text borders
 			SetTextColor(hDC,0);
 			for(i=0; i<MaxCells; i++)
@@ -900,7 +899,7 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 					x2 = rect.right; y2 = (i+1)*CellSize.y;
 					CellLimit[i] = y1;
 				}
-				else 
+				else
 				{
 					x1 = CellStart[i+1]; y1 = 0;
 					x2 = CellStart[i+1]; y2 = rect.bottom;
@@ -914,10 +913,10 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 			SelectObject(hDC, hfOld);
 		}
 
-		else 
+		else
 		{
 			HFONT hfDflt;
-			
+
 			hfDflt = CreateFont(16,0,0,0,FW_BOLD,0,0,0,ANSI_CHARSET,
 				OUT_DEFAULT_PRECIS,CLIP_DEFAULT_PRECIS,DEFAULT_QUALITY,
 				DEFAULT_PITCH | FF_SWISS,"Arial");
@@ -933,14 +932,14 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 					COLORREF bgColor, white=RGB(255,255,255);
 					char eMsg[256];
 					HBRUSH hBrush, hOldBrush;
-				
+
 					if(Error == ERR_UNREGISTERED)
 					{
-						bgColor = RGB(0,0,208); p1 = p1b; p2 = p2b; 
+						bgColor = RGB(0,0,208); p1 = p1b; p2 = p2b;
 					}
 					else
 					{
-						bgColor = RGB(208,0,0); p1 = p1a; p2 = p2a; 
+						bgColor = RGB(208,0,0); p1 = p1a; p2 = p2a;
 					}
 
 					if((hBrush=CreateSolidBrush(bgColor)))
@@ -950,7 +949,7 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 							Rectangle(hDC, -1, -1, rect.right + 1, rect.bottom + 1);
 							SetTextColor(hDC,white); SetBkColor(hDC,bgColor);
 							wsprintf(eMsg,p1,CurKbd->h.name);
-							TextOut(hDC,10,2,eMsg,(int)strlen(eMsg)); 
+							TextOut(hDC,10,2,eMsg,(int)strlen(eMsg));
 							TextOut(hDC,10,22,p2,(int)strlen(p2));
 							SelectObject(hDC,hOldBrush);
 						}
@@ -970,14 +969,14 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 }
 
 /************************************************************************************************************
- * IM Configuration            
+ * IM Configuration
  ************************************************************************************************************/
 
 extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMConfigure(PSTR KeyboardName, HWND hwndParent)
 {
 
 	char *p, buf1[MAX_PATH];
-	
+
 	Log("KeymanIMConfigure - ENTER");
 	Log(KeyboardName);
 
@@ -989,7 +988,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI KeymanIMConfigure(PSTR KeyboardName
 	}
 	Log(buf1);
 
-  
+
 	if((p=strrchr(buf1,'\\')) != NULL)
 	{
 		rsize_t bufLimit=(sizeof buf1) - (p+1-buf1);
@@ -1020,7 +1019,7 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 	register PWCHAR pw2=pInput;
 
 	if(!prule) return MM_NOMATCH;
-	
+
 	pw1 = CurKbd->pst+prule->input;
 	pw1max = pw1+prule->ilen;
 
@@ -1037,7 +1036,7 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 			{
 				if(strchr(CurKbd->h.ToneChar,*pw1)) lastTone = pw1;
 
-				if(*pw2 == *pw1 || ((*pw2 == '?') && ((CurKbd->h.dwWild&WC_QUERY) != 0))) 
+				if(*pw2 == *pw1 || ((*pw2 == '?') && ((CurKbd->h.dwWild&WC_QUERY) != 0)))
 				{
 					pw1++; pw2++; continue;
 				}
@@ -1045,13 +1044,13 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 				{
 					pw1++; pw2++; continue;
 				}
-				else if((*pw1!=L'|') && strchr(CurKbd->h.ToneChar,*pw1)) 
+				else if((*pw1!=L'|') && strchr(CurKbd->h.ToneChar,*pw1))
 				{
 					pw1++; continue;
 				}
 				else break;
 			}
-				
+
 			if(*pw2 == 0)
 			{
 				if(matchMode == MM_NOMATCH) matchMode = MM_START;
@@ -1062,11 +1061,11 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 				{
 					// Test if only trailing character is a tone character
 					if(strchr(CurKbd->h.ToneChar,*pw1) && (*(pw1+1) == L'|')
-						&& (matchMode < MM_EXCEPTTONE)) matchMode = MM_EXCEPTTONE;	
+						&& (matchMode < MM_EXCEPTTONE)) matchMode = MM_EXCEPTTONE;
 
 					// Test if first syllable matches, and the input matches the start of the rest
-					if(lastTone && (pw1 > lastTone) 
-						&& (matchMode < MM_MORETHANONE)) matchMode = MM_MORETHANONE;	
+					if(lastTone && (pw1 > lastTone)
+						&& (matchMode < MM_MORETHANONE)) matchMode = MM_MORETHANONE;
 				}
 			}
 			if(matchMode == MM_PERFECT) break;
@@ -1086,7 +1085,7 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 	{
 		if(strchr(CurKbd->h.ToneChar,*pw1)) lastTone = pw1;
 
-		if(*pw2 == *pw1 || ((*pw2 == '?') && ((CurKbd->h.dwWild&WC_QUERY) != 0))) 
+		if(*pw2 == *pw1 || ((*pw2 == '?') && ((CurKbd->h.dwWild&WC_QUERY) != 0)))
 		{
 			pw1++; pw2++; continue;
 		}
@@ -1094,11 +1093,11 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 		{
 			pw1++; pw2++; continue;
 		}
-		else if(!NumericMode && (pw1<pw1max) && strchr(CurKbd->h.ToneChar,*pw1)) 
+		else if(!NumericMode && (pw1<pw1max) && strchr(CurKbd->h.ToneChar,*pw1))
 		{
 			pw1++; continue;
 		}
-		else 
+		else
 		{
 			return MM_NOMATCH;				// no match
 		}
@@ -1110,7 +1109,7 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 	if(!NumericMode && (*CurKbd->h.ToneChar != 0))
 	{
 		// Test if only trailing character is a tone character
-		if(strchr(CurKbd->h.ToneChar,*pw1) && (pw1+1==pw1max)) return MM_EXCEPTTONE;	
+		if(strchr(CurKbd->h.ToneChar,*pw1) && (pw1+1==pw1max)) return MM_EXCEPTTONE;
 
 		// Test if first syllable matches, and the input matches the start of the rest
 		if(lastTone && (pw1 > lastTone)) return MM_MORETHANONE;
@@ -1119,7 +1118,7 @@ int cmpspecial(RULE *prule,PWCHAR pInput)
 	return MM_START;						// matches start of rule input string
 }
 
-// Select those rules that match the input string.  Stop searching when the 
+// Select those rules that match the input string.  Stop searching when the
 // required number of rules has been filled, unless CountAll set (for End key)
 int FillActiveRules(WCHAR KeyChar)
 {
@@ -1160,7 +1159,7 @@ int FillActiveRules(WCHAR KeyChar)
 
 	for(i=0; i<MAXACTIVERULES; i++) ActiveRule[i] = NULL;
 
-	if((*buf2 == 0) && (KeyChar == 0)) return (-1);	
+	if((*buf2 == 0) && (KeyChar == 0)) return (-1);
 
 	// Look up first character in index (assumes ANSI)
 	q = strchr(IndexString,*(char *)&buf2[0]);
@@ -1173,21 +1172,21 @@ int FillActiveRules(WCHAR KeyChar)
 	else
 	{
 		n = (int)strlen(IndexString);
-		n0 = *(CurKbd->index+n); 
+		n0 = *(CurKbd->index+n);
 		n1 = CurKbd->h.nrules;
 	}
 
 	for(i=n0,n=0, prule=CurKbd->rules+n0; i<n1; i++, prule++)
 	{
-		// Display only those rules that match	
+		// Display only those rules that match
 		Match = cmpspecial(prule,buf2);
 		if(Match)
 		{
 			Matched = TRUE;
 			if((Match > MM_START) || (DisplayMode == DM_FULL) || ExtendMatch )
 			{
-				if(n >= ScrollPos) 
-				{						
+				if(n >= ScrollPos)
+				{
 					if(n-ScrollPos < MaxCells) ActiveRule[n-ScrollPos] = prule;
 					else if((n-ScrollPos > MaxCells) && !SearchToEnd) break;
 				}
@@ -1196,7 +1195,7 @@ int FillActiveRules(WCHAR KeyChar)
 		}
 	}
 
-	// Return the number of possible ActiveRules 
+	// Return the number of possible ActiveRules
 	return Matched ? n : (-1);
 }
 
@@ -1204,7 +1203,7 @@ BOOL InsertChar(WCHAR ch)
 {
 	WCHAR buf[2]={0};
 
-	buf[0] = ch; 
+	buf[0] = ch;
 	(*KMSetOutput)(buf, 0);
 	return TRUE;
 }
@@ -1218,14 +1217,14 @@ BOOL CompleteRule(RULE *r,int Mode)
 
 	if(Mode & OM_TAG)
 	{
-		n = r->tlen ? r->tlen : r->ilen; 
+		n = r->tlen ? r->tlen : r->ilen;
 		wcsncpy_s(tOut, _countof(tOut), CurKbd->pst+r->tag, min(n,MAXOUTLEN-1));
 		wcscat_s(tOut, _countof(tOut), L" ");
 	}
 	else if(Mode & OM_BOTH)
 	{
 		wcsncpy_s(tOut, _countof(tOut), CurKbd->pst+r->output, min(r->olen,MAXOUTLEN-1));
-		n = r->tlen ? r->tlen : r->ilen; 
+		n = r->tlen ? r->tlen : r->ilen;
 		if(r->olen+n+4 < MAXOUTLEN)
 		{
 			wcscat_s(tOut, _countof(tOut), L" (");
@@ -1235,7 +1234,7 @@ BOOL CompleteRule(RULE *r,int Mode)
 	}
 	else
 	{
-		if(((CurKbd->h.dwWild & WC_DASH) != 0) && ((p=wcsrchr(ContextBuf,L'-')) != NULL) 
+		if(((CurKbd->h.dwWild & WC_DASH) != 0) && ((p=wcsrchr(ContextBuf,L'-')) != NULL)
 			&& (r->olen > 1) && (*(p+1) == 0))
 		{
 			p = wcschr(ContextBuf,L'-') + 1;
@@ -1253,7 +1252,7 @@ BOOL CompleteRule(RULE *r,int Mode)
 	for(i=0; i<MAXACTIVERULES; i++) ActiveRule[i] = NULL;
 
 	SaveIMXPosition(); ExtendMatch = FALSE;
-	*ContextBuf = 0; 
+	*ContextBuf = 0;
 	(*KMHideIM)();	// hide the IM window on completion
 
 	return TRUE;
@@ -1269,13 +1268,14 @@ BOOL CALLBACK EnumWindowsProc(HWND hWnd, LPARAM lParam)
 {
 	static const char* IMXClassName = "KM_IMX";
 	static const int IMXClassNameLength = strlen(IMXClassName);
-  static const int CN_BUF = 255;
+    static const int CN_BUF = 255;
+	
 	char ClassName[CN_BUF];
 	DWORD ClassNameLength;
-	BOOL* IsVisible = reinterpret_cast<BOOL*>(lParam);
+	HWND* hIMX = reinterpret_cast<HWND*>(lParam);
 	if (!hWnd)
 	{
-		return true; 
+		return true;
 	}
 
 	ClassNameLength = GetClassName(hWnd, ClassName, CN_BUF);
@@ -1284,9 +1284,9 @@ BOOL CALLBACK EnumWindowsProc(HWND hWnd, LPARAM lParam)
 		return true;
 	}
 
-	if ((strcmp("KM_IMX", IMXClassName) == 0) && IsWindowVisible(hWnd)) {
-		*IsVisible = TRUE;
-		return false; // we only need to know one is visible
+	if (strcmp(ClassName, IMXClassName) == 0) {
+		*hIMX = hWnd;
+		return false;
 	}
 
 	return true;
@@ -1294,17 +1294,17 @@ BOOL CALLBACK EnumWindowsProc(HWND hWnd, LPARAM lParam)
 
 /*
 
-  The input string, consisting of the context buffer plus the current character, is 
+  The input string, consisting of the context buffer plus the current character, is
   matched against all rules in order.  The user-selected display mode determines which
   rules for which outputs are displayed for selection:
   (a) all rules for which the input string matches the start of the rule input string, or
-  (b) all single-syllable rules for which the input string matches the entire rule input, or 
-  all except the final tone character, and all binome or polynome rules for which at least 
+  (b) all single-syllable rules for which the input string matches the entire rule input, or
+  all except the final tone character, and all binome or polynome rules for which at least
   one character of the second syllable has been entered.
 
-  In the second (limited display) mode, entering an asterisk switches matching into the 
+  In the second (limited display) mode, entering an asterisk switches matching into the
   full display mode, until the next character is typed.  A question mark in the input string
-  will be interpreted as a single-character wildcard.  Either or both asterisk and question 
+  will be interpreted as a single-character wildcard.  Either or both asterisk and question
   mark must be enabled in the configuration header (WildCard=?*) to allow these options.
 
 */
@@ -1314,6 +1314,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 	BOOL SkipSelectionTesting=FALSE, DropCharacter=TRUE, AutoSelect=FALSE, ExtendMode,
 		Refresh=FALSE;
 	WCHAR *pCB;
+	HWND hIMX = 0;
 	POINT Caret={0};
 	int lBuf,nSelect=0,sMode,tMode,outMode;
 	char FirstChar;
@@ -1323,18 +1324,20 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 
 	// Zero the context unless IMX already displayed (necessary switching applications)
 	// There could be many "KM_IMX" class windows but at most one will be visible
-	EnumWindows(EnumWindowsProc, reinterpret_cast<LPARAM>(&IsVisible));
+	EnumThreadWindows(GetCurrentThreadId(), EnumWindowsProc, reinterpret_cast<LPARAM>(&hIMX));
+	if(hIMX == 0) returnErr(FALSE);
 
+	IsVisible = IsWindowVisible(hIMX);
 	if (!IsVisible) {
 		*ContextBuf = 0;
 	}
 
 	// Check for a valid keyboard
-	if(CurKbd->h.nrules == 0) 
+	if(CurKbd->h.nrules == 0)
 	{
-		if(IsVisible) 
-			(*KMHideIM)(); 
-		else 
+		if(IsVisible)
+			(*KMHideIM)();
+		else
 			(*KMDisplayIM)(hwnd,TRUE);
 
 		return(FALSE);
@@ -1345,9 +1348,9 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 	lBuf = (int)wcslen(ContextBuf);
 	sMode = (CurKbd->h.dwOptions & SELECTIONBITS);
 	tMode = (CurKbd->h.dwOptions & TONEBITS)>>2;
-	AutoSelect = (CurKbd->h.dwOptions & SELECTIFUNIQUE); 
+	AutoSelect = (CurKbd->h.dwOptions & SELECTIFUNIQUE);
 
-	// Save current wild card matching 
+	// Save current wild card matching
 	ExtendMode = ExtendMatch;
 
 	// Test if a simulated keystroke, and save special mode flags
@@ -1358,7 +1361,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 	NumericMode = (strchr("0123456789#$!@%&*",FirstChar) != NULL);
 
 	// Test first for configuration hotkey (or VK_F24 sent by click on hotspot)
-	if((KeyStroke == VK_F24) ||	((KeyStroke == LOWORD(CurKbd->h.cfgKey)) && 
+	if((KeyStroke == VK_F24) ||	((KeyStroke == LOWORD(CurKbd->h.cfgKey)) &&
 		((shiftFlags & HK_MODIFIERS) == (unsigned)(HIWORD(CurKbd->h.cfgKey) & HK_MODIFIERS))))
 	{
 		SaveIMXPosition();
@@ -1386,7 +1389,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 	if(lBuf > 0 && !SkipSelectionTesting)
 	{
 		// Test selection by space first, then according to configured selection mode
-		if(KeyChar == VK_SPACE || KeyStroke == VK_RETURN) 
+		if(KeyChar == VK_SPACE || KeyStroke == VK_RETURN)
 		{
 			// Check first if input string is U+xxxxx (direct Unicode, incl. surrogate pairs)
 			if(OutputUnicode(ContextBuf,lBuf)) return TRUE;
@@ -1394,7 +1397,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 			// Otherwise space or return is same as selecting left most (or top) cell
 			nSelect = 1;
 		}
-		else 
+		else
 		{
 			switch(sMode)
 			{
@@ -1423,7 +1426,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 			nCells = FillActiveRules(0);	// otherwise, re-fill the matching rules
 			if(nSelect <= nCells)			// selection from menu by Fn key
 			{
-				if(ActiveRule[nSelect-1])		// use selected character 
+				if(ActiveRule[nSelect-1])		// use selected character
 				{
 					CompleteRule(ActiveRule[nSelect-1],outMode);
 					return TRUE;
@@ -1458,9 +1461,9 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 
 	// then process non-printing characters when buffer non-empty
 	else if(!isprint(KeyChar) && lBuf > 0)
-	{	
-		// drop buffer and close IMX window 
-		if(KeyStroke == VK_ESCAPE || ((KeyStroke == VK_BACK) && (lBuf == 1)))	
+	{
+		// drop buffer and close IMX window
+		if(KeyStroke == VK_ESCAPE || ((KeyStroke == VK_BACK) && (lBuf == 1)))
 		{
 			SaveIMXPosition();
 			*ContextBuf = 0;
@@ -1474,7 +1477,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 		case VK_MULTIPLY:
 			KeyChar = '*'; break;
 
-		case VK_ADD:            
+		case VK_ADD:
 			KeyChar = '+'; break;
 
 		case VK_SUBTRACT:
@@ -1496,17 +1499,17 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 			if(pCB > ContextBuf) *(pCB-1) = 0;
 			break;
 
-		case VK_HOME:				//scroll to first match 
+		case VK_HOME:				//scroll to first match
 			if(ActiveRule[0])
 			{
 				ScrollPos = 0; Refresh = TRUE;
 			}
 			break;
 
-		case VK_END:				//scroll to last match 
+		case VK_END:				//scroll to last match
 			if(ActiveRule[0])
 			{
-				Refresh = TRUE; ScrollPos = 0; CountAll = TRUE; 
+				Refresh = TRUE; ScrollPos = 0; CountAll = TRUE;
 				nCells = FillActiveRules(0);
 				ScrollPos = max(0,nCells-MaxCells);
 			}
@@ -1529,7 +1532,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 				if(ScrollPos+1 < nCells) ScrollPos += 1;
 			}
 			break;
-	
+
 		case VK_NEXT:			//scroll forward through menu (Page Down)
 			if(ActiveRule[MaxCells-1])
 			{
@@ -1537,7 +1540,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 				if(ScrollPos+MaxCells < nCells) ScrollPos += MaxCells;
 			}
 			break;
-	
+
 		case VK_PRIOR:			//scroll backward through the menu (Page Up)
 			if(ActiveRule[0])
 			{
@@ -1553,7 +1556,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 		}
 	}
 
-	// Check for wild card matching 
+	// Check for wild card matching
 	if((CurKbd->h.dwWild & WC_STAR) && (KeyChar == '*') && (lBuf > 0))
 	{
 		ExtendMatch = TRUE;
@@ -1561,15 +1564,15 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 		DropCharacter = FALSE;
 	}
 	// Match the entered character plus the context with allowed sequences
-	else if(isprint(KeyChar) && (lBuf<(sizeof ContextBuf)/sizeof(WCHAR))) 
+	else if(isprint(KeyChar) && (lBuf<(sizeof ContextBuf)/sizeof(WCHAR)))
 	{
 		if(IsHexString(ContextBuf,lBuf, KeyChar))
 		{
 			pCB = wcschr(ContextBuf,0); *pCB++ = KeyChar; *pCB = 0;
-			DropCharacter = FALSE; 
+			DropCharacter = FALSE;
 		}
 
-		else if(NumericMode || !(tMode == TM_NEVER && *CurKbd->h.ToneChar	// always drop if no tone characters 
+		else if(NumericMode || !(tMode == TM_NEVER && *CurKbd->h.ToneChar	// always drop if no tone characters
 			&& (strchr(CurKbd->h.ToneChar,(char)KeyChar)>0)))
 		{
 			ScrollPos = 0; ExtendMatch = FALSE;
@@ -1589,9 +1592,9 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 				}
 				break;
 
-			case 0:							// no exact match, but starts a match 
+			case 0:							// no exact match, but starts a match
 				pCB = wcschr(ContextBuf,0); *pCB++ = KeyChar; *pCB = 0;
-				DropCharacter = FALSE; 
+				DropCharacter = FALSE;
 				break;
 
 			case 1:				// check if this is a unique and complete match
@@ -1600,7 +1603,7 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 					BOOL TrulyUnique=TRUE;
 
 					if(!ExtendMatch && (DisplayMode!=DM_FULL))
-					{	
+					{
 						RULE *TempRule[MAXACTIVERULES];
 						ExtendMatch = TRUE;
 						memcpy(TempRule,ActiveRule,MAXACTIVERULES*sizeof(RULE *));
@@ -1612,33 +1615,33 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 					if(TrulyUnique)
 					{
 						pCB = wcschr(ContextBuf,0); *pCB++ = KeyChar; *pCB = 0;
-						if(cmpspecial(ActiveRule[0],ContextBuf) > 1) 
+						if(cmpspecial(ActiveRule[0],ContextBuf) > 1)
 						{
 							CompleteRule(ActiveRule[0],outMode);	// send the result to the app, and hide IM window
 							return TRUE;
 						}
-						DropCharacter = FALSE; 
+						DropCharacter = FALSE;
 						break;
 					}
-				}		// else fall through and add to context 
+				}		// else fall through and add to context
 
 			default:						// multiple matches possible, so just extend the context
 				pCB = wcschr(ContextBuf,0); *pCB++ = KeyChar; *pCB = 0;
-				DropCharacter = FALSE; 
+				DropCharacter = FALSE;
 			}
 		}
 	}
 
 	// Drop the character and beep if the IMX window is already open and it cannot be matched
-	if(DropCharacter)	
+	if(DropCharacter)
 	{
 		ExtendMatch = ExtendMode;	// restore wild card match
 		(*KMQueueAction)(QIT_BELL, 0);
-		return TRUE;	
+		return TRUE;
 	}
 
 	// Show the IM window, then update its position and size
-	(*KMDisplayIM)(hwnd, TRUE); 
+	(*KMDisplayIM)(hwnd, TRUE);
 	UpdateIMXWindow();
 
 	return TRUE;
@@ -1654,15 +1657,15 @@ void UnloadRules(PSTR KeyboardName)
 	if((kbi=&Keyboards[nkbi]) == NULL) return;
 
 	// Unmap shared memory from the process's address space
-	if(kbi->BaseAddress) UnmapViewOfFile(kbi->BaseAddress);	
+	if(kbi->BaseAddress) UnmapViewOfFile(kbi->BaseAddress);
 
 	// Close the process's handle to the file-mapping object and backing file
-	if(kbi->hMapObject) CloseHandle(kbi->hMapObject); 
+	if(kbi->hMapObject) CloseHandle(kbi->hMapObject);
 	if(kbi->hFile) CloseHandle(kbi->hFile);
 
 	// Zero pointers and handles
 	kbi->h.nrules = 0; kbi->BaseAddress = NULL;
-	kbi->hFile = 0; kbi->hMapObject = 0; 	
+	kbi->hFile = 0; kbi->hMapObject = 0;
 }
 
 // Decrypt the string table
@@ -1673,7 +1676,7 @@ void DecryptStrings(KBHEADER *pk)
 
 	p0 = (BYTE *)pk + pk->dwStrings;
 	p1 = p0 + pk->cbStrings;
-	
+
 	for(p=p0,n=0; p<p1; p++,n++) *p -= n;
 }
 
@@ -1693,7 +1696,7 @@ BOOL LoadRules(PSTR KeyboardName)
 	kbi = &Keyboards[nkbi];
 
 	// Mark keyboard as invalid until fully initialized
-	kbi->h.nrules = 0;	
+	kbi->h.nrules = 0;
 
 	// Test first if the saved memory-mapped file image exists
 	wsprintf(mapfile, "keyman_imx_%s", KeyboardName);
@@ -1705,14 +1708,14 @@ BOOL LoadRules(PSTR KeyboardName)
 		// Get a pointer to file-mapped shared memory
 		if((pbmm=(PBYTE)MapViewOfFile(hMapObject,FILE_MAP_WRITE,0,0,0)) == NULL )
 		{
-			Error = ERR_SHARING; 
+			Error = ERR_SHARING;
 			CloseHandle(hMapObject); return FALSE;
 		}
 		pkbh = (KBHEADER *)pbmm;
 	}
 
 	// Otherwise, create the file-mapping object from the backing file (*.CFX)
-	else 
+	else
 	{
 		if(!(*KMGetKeyboardPath)(KeyboardName, buf1, MAX_PATH)) return FALSE;
 		_splitpath_s(buf1, drive, sizeof drive, dir, sizeof dir, NULL, 0, NULL, 0);
@@ -1721,16 +1724,16 @@ BOOL LoadRules(PSTR KeyboardName)
 		hFile = CreateFile(buf1,GENERIC_READ,0,NULL,OPEN_EXISTING,FILE_ATTRIBUTE_NORMAL,0);
 
 		// Return FALSE if the CFX is not found
-		if(hFile == INVALID_HANDLE_VALUE) 
+		if(hFile == INVALID_HANDLE_VALUE)
 		{
 			Error = ERR_CFGMISSING; return FALSE;
 		}
 
-		Error = ERR_CFGINVALID; 
+		Error = ERR_CFGINVALID;
 		dwFileSize[0] = GetFileSize(hFile,&dwFileSize[1]);
 
-		// Create the named file-mapping object from the backing file 
-		if((hMapObject=CreateFileMapping(INVALID_HANDLE_VALUE,NULL,PAGE_READWRITE,dwFileSize[1],dwFileSize[0],mapfile)) == NULL ) 
+		// Create the named file-mapping object from the backing file
+		if((hMapObject=CreateFileMapping(INVALID_HANDLE_VALUE,NULL,PAGE_READWRITE,dwFileSize[1],dwFileSize[0],mapfile)) == NULL )
 		{
 			CloseHandle(hFile); return FALSE;
 		}
@@ -1745,15 +1748,15 @@ BOOL LoadRules(PSTR KeyboardName)
 			CloseHandle(hMapObject); CloseHandle(hFile); return FALSE;
 		}
 
-		// Read the keyboard header	and check the file type flag and version 
+		// Read the keyboard header	and check the file type flag and version
 		ReadFile(hFile,pkbh,sizeof(KBHEADER),&nRead,NULL);
-		if(nRead < sizeof(KBHEADER) || memcmp(pkbh->Flag,"KCFX",4) != 0 
+		if(nRead < sizeof(KBHEADER) || memcmp(pkbh->Flag,"KCFX",4) != 0
 			|| pkbh->dwCfxVersion != CFXVERSION)
 		{
 			UnmapViewOfFile(pbmm);
 			CloseHandle(hMapObject); CloseHandle(hFile); return FALSE;
 		}
-		
+
 		// Check the file size
 		totalsize = pkbh->dwStrings + pkbh->cbStrings;
 		if(dwFileSize[0] < totalsize+4)
@@ -1764,8 +1767,8 @@ BOOL LoadRules(PSTR KeyboardName)
 
 /*
     // If more than rule limit, test if Keyman is registered
-		if((pkbh->nrules > MAXRULESFREE) && 
-			!(IsRegistered(KEY_KEYMAN) || IsRegistered(KEY_KEYMANDEVELOPER))) 
+		if((pkbh->nrules > MAXRULESFREE) &&
+			!(IsRegistered(KEY_KEYMAN) || IsRegistered(KEY_KEYMANDEVELOPER)))
 		{
 			Error = ERR_UNREGISTERED; UnmapViewOfFile(pbmm);
 			CloseHandle(hMapObject); CloseHandle(hFile); return FALSE;
@@ -1786,9 +1789,9 @@ BOOL LoadRules(PSTR KeyboardName)
 		}
 
 		if(Error == ERR_CFGINVALID)
-		{			
+		{
 			UnmapViewOfFile(pbmm); CloseHandle(hMapObject); return FALSE;
-		}		
+		}
 
 		// Decrypt the string table
 		DecryptStrings(pkbh);
@@ -1866,7 +1869,7 @@ void WriteRegSetting(PSTR text, int value)
 int ReadRegSetting(PSTR text, int dflt)
 {
 	HKEY hkey;
-	if(RegOpenKeyEx(HKEY_CURRENT_USER, "Software\\Tavultesoft\\KeymanIMX\\7.0", 
+	if(RegOpenKeyEx(HKEY_CURRENT_USER, "Software\\Tavultesoft\\KeymanIMX\\7.0",
 		0, KEY_ALL_ACCESS | KEY_WOW64_32KEY, &hkey) == ERROR_SUCCESS)
 	{
 		unsigned long value, sz = 4, tp = REG_DWORD;
@@ -1901,10 +1904,10 @@ BOOL ReadConfiguration(BOOL All)
 	if(All)
 	{
 		// Read position for non-tracking window (use by default when creating window)
-		IMPos.x = ReadRegSetting("IMX x",0); 
-		IMPos.y = ReadRegSetting("IMX y",0); 
+		IMPos.x = ReadRegSetting("IMX x",0);
+		IMPos.y = ReadRegSetting("IMX y",0);
 
-		xmax = GetSystemMetrics(SM_CXSCREEN); 
+		xmax = GetSystemMetrics(SM_CXSCREEN);
 		ymax = GetSystemMetrics(SM_CYSCREEN);
 
 		if(Vertical)
@@ -1917,8 +1920,8 @@ BOOL ReadConfiguration(BOOL All)
 			if(IMPos.x > xmax - 40) IMPos.x = 0;
 			if(IMPos.y == 0 || IMPos.y > ymax - 8) IMPos.y = ymax - 80;
 		}
-	
-		MaxCells = ReadRegSetting("IMX cells",dfltCells); 
+
+		MaxCells = ReadRegSetting("IMX cells",dfltCells);
 		MaxCells = min(max(MaxCells,2),dfltCells);
 	}
 
@@ -1930,13 +1933,13 @@ BOOL SaveIMXPosition(void)
 	RECT rect;
 	if(hwnd && !Tracking)
 	{
-		GetWindowRect(hwnd,&rect); 
+		GetWindowRect(hwnd,&rect);
 		WriteRegSetting("IMX x",rect.left); WriteRegSetting("IMX y",rect.top);
 	}
 	return TRUE;
 }
 
-// Simulate a (virtual) key. Note that modified keys cannot be handled this way. 
+// Simulate a (virtual) key. Note that modified keys cannot be handled this way.
 void SendKey(int vk)
 {
 	keybd_event(vk,0,0,0); keybd_event(vk,0,KEYEVENTF_KEYUP,0);
@@ -1972,7 +1975,7 @@ void SendKey(int vk)
 			&& (tp == REG_BINARY)) Exists = TRUE;
 		RegCloseKey(hkey);
 	}
-	
+
 	if(!Exists && regKeyID == KEY_KEYMAN)
 	{
 	  if(RegOpenKeyEx(HKEY_LOCAL_MACHINE,"SOFTWARE\\Tavultesoft\\Keyman Engine\\7.0",0,KEY_READ,&hkey) == ERROR_SUCCESS)
@@ -1986,7 +1989,7 @@ void SendKey(int vk)
 	    RegCloseKey(hkey);
 	  }
   }
-  
+
 	return Exists;
 }*/
 
@@ -2031,7 +2034,7 @@ BOOL OutputUnicode(PWSTR pContext,UINT lBuf)
 	for(i=0; i<MAXACTIVERULES; i++) ActiveRule[i] = NULL;
 
 	SaveIMXPosition(); ExtendMatch = FALSE;
-	*ContextBuf = 0; 
+	*ContextBuf = 0;
 	(*KMHideIM)();	// hide the IM window on completion
 	return TRUE;
 }
