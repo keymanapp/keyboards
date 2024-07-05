@@ -176,14 +176,14 @@ c single diacritics
 '%' + any(Vowels) > index(HasCar,2)
 '^' + any(Vowels) > index(HasCir,2)
 '`' + any(Vowels) > index(HasGra,2)
-'-' + any(Vowels) > index(HasMac,2)
+'=' + any(Vowels) > index(HasMac,2)
 ',' + any(Vowels) > index(HasOgo,2)
 ';' + 'y' > 'ÿ'
 ';' + 'Y' > 'Ÿ'
 
 c double diacritics
-'-`' + any(Vowels) > index(HasMac,3) U+0300 c MacGra
-'`-' + any(Vowels) > index(HasMac,3) U+0300 c MacGra
+'=`' + any(Vowels) > index(HasMac,3) U+0300 c MacGra
+'`=' + any(Vowels) > index(HasMac,3) U+0300 c MacGra
 
 '%,' + any(Vowels) > index(HasOgo,3) U+030c c OgoCar
 ',%' + any(Vowels) > index(HasOgo,3) U+030c c OgoCar
@@ -191,16 +191,16 @@ c double diacritics
 ',^' + any(Vowels) > index(HasOgo,3) U+0302 c OgoCir
 '`,' + any(Vowels) > index(HasOgo,3) U+0300 c OgoGra
 ',`' + any(Vowels) > index(HasOgo,3) U+0300 c OgoGra
-'-,' + any(Vowels) > index(HasOgo,3) U+0304 c OgoMac
-',-' + any(Vowels) > index(HasOgo,3) U+0304 c OgoMac
+'=,' + any(Vowels) > index(HasOgo,3) U+0304 c OgoMac
+',=' + any(Vowels) > index(HasOgo,3) U+0304 c OgoMac
 
 c triple diacritics
-'`-,' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
-'-`,' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
-'-,`' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
-'`,-' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
-',`-' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
-',-`' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
+'`=,' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
+'=`,' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
+'=,`' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
+'`,=' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
+',`=' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
+',=`' + any(Vowels) > index(HasOgo,4) U+0304 U+0300 c OgoMacGra
 
 c --- misc ---
 
