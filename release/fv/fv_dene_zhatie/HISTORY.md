@@ -1,5 +1,9 @@
 Dene Zhatıé Change History
 ============================
+10.0.4 (5 Jul 2024)
+-----------------
+* Tidied documentation
+
 10.0.3 (22 May 2024)
 -----------------
 * Corrected typo in documentation

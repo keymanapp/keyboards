@@ -3,10 +3,9 @@ store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "den"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Dene Zhatıé'
-store(&KEYBOARDVERSION) '10.0.3'
+store(&KEYBOARDVERSION) '10.0.4'
 store(&BITMAP) 'fv_dene_zhatie.ico'
 store(&VISUALKEYBOARD) 'fv_dene_zhatie.kvks'
-store(&KMW_HELPFILE) 'fv_dene_zhatie-help.htm'
 
 begin Unicode > use(main)
 
@@ -31,10 +30,10 @@ any(BaseVowels) + any(AcuteOgonek) > index(HasOgonek,1) U+0301
 any(HasAcute) + any(Backspace) > index(BaseVowels,1) c backspaces only accent
 any(HasOgonek) + any(Backspace) > index(BaseVowels,1)
 
-'ı' + any(Acute) > 'í'
+'ı' + any(Acute) > 'ı́'
 'ı̨' + any(Acute) > 'ı̨́'
 'ı' + any(Ogonek) > 'ı̨'
-'í' + any(Ogonek) > 'ı̨́'
+'ı́' + any(Ogonek) > 'ı̨́'
 'ı' + any(AcuteOgonek) > 'ı̨́'
 
 
@@ -101,7 +100,7 @@ c --- TOUCH STORES---
 + [T_U_1] > 'ų'
 + [T_U_2] > 'ų́'
 + [T_U] > 'u'
-+ [T_I_0] > 'í'
++ [T_I_0] > 'ı́'
 + [T_I_1] > 'ı̨'
 + [T_I_2] > 'ı̨́'
 + [T_I] > 'ı'
