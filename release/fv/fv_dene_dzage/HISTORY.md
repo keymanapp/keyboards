@@ -1,5 +1,12 @@
 Dene Dzage Change History
 ============================
+10.0.1 (5 Jul 2024)
+-----------------
+* Added alternate names
+* Tidied table
+* Removed OSK in favour of Web Help
+* Tidied documentation
+
 10.0 (27 Mar 2024)
 -----------------
 * Built desktop keyboard

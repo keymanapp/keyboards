@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.147.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,9 +22,15 @@
     <Copyright URL="">(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
     <Version URL=""></Version>
-    <Description>This keyboard is designed for the Dene Dzage language of the Western 
+    <Description URL="">This keyboard is designed for the Dene Dzage language of the Western 
 Subarctic region of Canada. This is part of a set of keyboards from 
-FirstVoices.</Description>
+FirstVoices.
+
+Alternate Names:
+
+Kaska
+
+Denek’éh</Description>
   </Info>
   <Files>
     <File>
@@ -139,8 +146,8 @@ FirstVoices.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="fv_dene_dzage_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="fv_dene_dzage_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
