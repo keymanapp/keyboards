@@ -1,49 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Package>
   <System>
     <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram></ExecuteProgram>
+    <ExecuteProgram/>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <MSIFileName></MSIFileName>
-    <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName/>
+    <MSIOptions/>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
+    <Folder/>
     <Items/>
   </StartMenu>
   <Info>
     <Name URL="">Phoenician</Name>
     <Copyright URL="">© SIL International</Copyright>
-    <Author URL=""></Author>
-    <Version URL=""></Version>
+    <Author URL=""/>
+    <Version URL=""/>
     <Description URL="">This keyboard is designed for the Phoenician alphabet.</Description>
   </Info>
   <Files>
     <File>
       <Name>..\build\phoenician.kmx</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>..\build\phoenician.js</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\phoenician.kvk</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
@@ -71,14 +73,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Phnx\NotoSansPhoenician-Regular.ttf</Name>
+      <Description>Font Noto Sans Phoenician Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Phnx\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Phoenician</Name>
       <ID>phoenician</ID>
       <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Phnx\NotoSansPhoenician-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Phnx\NotoSansPhoenician-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="phn">Phoenician</Language>
+        <Language ID="obm">Moabite</Language>
+        <Language ID="xpu">Punic</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
