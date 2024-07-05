@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,10 +18,20 @@
   </StartMenu>
   <Info>
     <Name URL="">Sƛ̓áƛ̓imxec</Name>
-    <Copyright URL="">© 2008-2022 FirstVoices, SIL International. Portions © 2006 Chris Harvey</Copyright>
+    <Copyright URL="">© 2008-2024 FirstVoices, SIL International. Portions © 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description>This keyboard is designed for the Sƛ̓aƛ̓imxəc language of the BC Interior
+region of Canada. This is part of a set of keyboards from FirstVoices.
+
+Alternate names:
+
+Stl’atl’imx
+
+Stlatlimxec
+
+Lillooet</Description>
   </Info>
   <Files>
     <File>
@@ -125,6 +136,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -137,4 +154,8 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="stlatlimxec" Relationship="deprecates" />
+    <RelatedPackage ID="fv_stlatlimxec_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

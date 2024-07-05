@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Kashmiri</Folder>
@@ -30,6 +31,12 @@
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy Pakistan</Author>
     <WebSite URL=""></WebSite>
     <Version URL=""></Version>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Khyber Pakhtunkhwa Pakistan for
+keyboarding the Kashmiri language in the Arabic Script. You can use this
+keyboard with any extended Arabic script Unicode font. If you have
+problems using the RAChitrali-Kashmiri Keyman keyboard, please contact:
+Rehmat Aziz Chitrali E-mail: rachitrali\@yahoo.com</Description>
   </Info>
   <Files>
     <File>
@@ -80,6 +87,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -90,7 +103,10 @@
       <Languages>
         <Language ID="ks-Arab">Kashmiri (Arabic)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ks-Arab" Keys="k x m i r i" Text="کشمیری" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

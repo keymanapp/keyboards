@@ -5,7 +5,7 @@ c
 c Source Keyboard File: KBDUS.DLL
 c Source KeyboardID: 00000409
 c
-c 
+c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Formosa'
@@ -15,8 +15,6 @@ store(&LAYOUTFILE) 'formosa.keyman-touch-layout'
 store(&COPYRIGHT) '© SIL International'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'any'
-store(nul) "WRYUIOPASDHZCVB"
-+ any(nul) > nul
 
 begin Unicode > use(main)
 
@@ -55,23 +53,23 @@ group(main) using keys
 + [SHIFT K_9] > U+02CB
 
 + [NCAPS K_A] > U+311A
-+ [CAPS K_A] > U+0041
-+ [NCAPS SHIFT K_A] > U+0041
++ [CAPS K_A] > nul
++ [NCAPS SHIFT K_A] > nul
 + [CAPS SHIFT K_A] > U+311A
 
 + [NCAPS K_B] > U+3105
-+ [CAPS K_B] > U+0042
-+ [NCAPS SHIFT K_B] > U+0042
++ [CAPS K_B] > nul
++ [NCAPS SHIFT K_B] > nul
 + [CAPS SHIFT K_B] > U+3105
 
 + [NCAPS K_C] > U+3118
-+ [CAPS K_C] > U+0043
-+ [NCAPS SHIFT K_C] > U+0043
++ [CAPS K_C] > nul
++ [NCAPS SHIFT K_C] > nul
 + [CAPS SHIFT K_C] > U+3118
 
 + [NCAPS K_D] > U+3109
-+ [CAPS K_D] > U+0044
-+ [NCAPS SHIFT K_D] > U+0044
++ [CAPS K_D] > nul
++ [NCAPS SHIFT K_D] > nul
 + [CAPS SHIFT K_D] > U+3109
 
 + [NCAPS K_E] > U+311C
@@ -80,8 +78,8 @@ group(main) using keys
 + [CAPS SHIFT K_E] > U+311C
 
 + [NCAPS K_F] > U+3108
-+ [CAPS K_F] > U+0046
-+ [NCAPS SHIFT K_F] > U+0046
++ [CAPS K_F] > nul
++ [NCAPS SHIFT K_F] > nul
 + [CAPS SHIFT K_F] > U+3108
 
 + [NCAPS K_G] > U+310D
@@ -90,13 +88,13 @@ group(main) using keys
 + [CAPS SHIFT K_G] > U+310D
 
 + [NCAPS K_H] > U+310F
-+ [CAPS K_H] > U+0048
-+ [NCAPS SHIFT K_H] > U+0048
++ [CAPS K_H] > nul
++ [NCAPS SHIFT K_H] > nul
 + [CAPS SHIFT K_H] > U+310F
 
 + [NCAPS K_I] > U+3127
-+ [CAPS K_I] > U+0049
-+ [NCAPS SHIFT K_I] > U+0049
++ [CAPS K_I] > nul
++ [NCAPS SHIFT K_I] > nul
 + [CAPS SHIFT K_I] > U+3127
 
 + [NCAPS K_J] > U+3113
@@ -125,13 +123,13 @@ group(main) using keys
 + [CAPS SHIFT K_N] > U+310B
 
 + [NCAPS K_O] > U+311B
-+ [CAPS K_O] > U+004f
-+ [NCAPS SHIFT K_O] > U+004f
++ [CAPS K_O] > nul
++ [NCAPS SHIFT K_O] > nul
 + [CAPS SHIFT K_O] > U+311B
 
 + [NCAPS K_P] > U+3106
-+ [CAPS K_P] > U+0050
-+ [NCAPS SHIFT K_P] > U+0050
++ [CAPS K_P] > nul
++ [NCAPS SHIFT K_P] > nul
 + [CAPS SHIFT K_P] > U+3106
 
 + [NCAPS K_Q] > U+3114
@@ -140,13 +138,13 @@ group(main) using keys
 + [CAPS SHIFT K_Q] > U+3114
 
 + [NCAPS K_R] > U+3116
-+ [CAPS K_R] > U+0052
-+ [NCAPS SHIFT K_R] > U+0052
++ [CAPS K_R] > nul
++ [NCAPS SHIFT K_R] > nul
 + [CAPS SHIFT K_R] > U+3116
 
 + [NCAPS K_S] > U+3119
-+ [CAPS K_S] > U+0053
-+ [NCAPS SHIFT K_S] > U+0053
++ [CAPS K_S] > nul
++ [NCAPS SHIFT K_S] > nul
 + [CAPS SHIFT K_S] > U+3119
 
 + [NCAPS K_T] > U+310A
@@ -155,18 +153,18 @@ group(main) using keys
 + [CAPS SHIFT K_T] > U+310A
 
 + [NCAPS K_U] > U+3128
-+ [CAPS K_U] > U+0055
-+ [NCAPS SHIFT K_U] > U+0055
++ [CAPS K_U] > nul
++ [NCAPS SHIFT K_U] > nul
 + [CAPS SHIFT K_U] > U+3128
 
 + [NCAPS K_V] > U+3129
-+ [CAPS K_V] > U+0056
-+ [NCAPS SHIFT K_V] > U+0056
++ [CAPS K_V] > nul
++ [NCAPS SHIFT K_V] > nul
 + [CAPS SHIFT K_V] > U+3129
 
 + [NCAPS K_W] > U+3121
-+ [CAPS K_W] > U+0057
-+ [NCAPS SHIFT K_W] > U+0057
++ [CAPS K_W] > nul
++ [NCAPS SHIFT K_W] > nul
 + [CAPS SHIFT K_W] > U+3121
 
 + [NCAPS K_X] > U+3115
@@ -175,13 +173,13 @@ group(main) using keys
 + [CAPS SHIFT K_X] > U+3115
 
 + [NCAPS K_Y] > U+311E
-+ [CAPS K_Y] > U+0059
-+ [NCAPS SHIFT K_Y] > U+0059
++ [CAPS K_Y] > nul
++ [NCAPS SHIFT K_Y] > nul
 + [CAPS SHIFT K_Y] > U+311E
 
 + [NCAPS K_Z] > U+3117
-+ [CAPS K_Z] > U+005a
-+ [NCAPS SHIFT K_Z] > U+005a
++ [CAPS K_Z] > nul
++ [NCAPS SHIFT K_Z] > nul
 + [CAPS SHIFT K_Z] > U+3117
 
 + [K_COLON] > U+003b

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,10 +18,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Sḵwx̱wúmesh sníchim</Name>
-
     <Version URL=""></Version>
     <Copyright URL="">© 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
-
+    <Description>This keyboard is designed for the Sḵwx̱wú7mesh sníchim language of the BC 
+Coast region of Canada. This is part of a set of keyboards from 
+FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -35,18 +37,25 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Sḵwx̱wú7mesh sníchim</Name>
       <ID>fv_skwxwumesh_snichim</ID>
-
       <Version>10.0</Version>
-
       <Languages>
         <Language ID="squ">Squamish</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_skwxwumesh_snichim_kmw" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

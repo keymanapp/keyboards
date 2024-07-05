@@ -1,6 +1,10 @@
 Hebrew (SIL) Keyboard Change History
 =======================
 
+2.0 (2 Jul 2024)
+-----------------
+* Update keyboard to support OSK font for better display
+
 1.9 (21 Sep 2021)
 -----------------
 * Updated documentation to clarify typing holam and holam haser

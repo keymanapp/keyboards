@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Nampyeon\Documents\KeyboardLayouts\FirstVoices\firstvoices-7.0.2.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,10 +19,18 @@
   </StartMenu>
   <Info>
     <Name URL="">Sm’algya̱x</Name>
-    <Copyright URL="">(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description URL="">This keyboard is designed for the Sm'algya̱x language of the BC Coast
+region of Canada. This is part of a set of keyboards from FirstVoices.
+
+Alternate names:
+
+Tsimshian
+
+Coast Tsimshian</Description>
   </Info>
   <Files>
     <File>
@@ -125,16 +135,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Sm'algya̱x</Name>
       <ID>fv_smalgyax</ID>
-      <Version>9.1.2</Version>
+      <Version>9.1.3</Version>
       <Languages>
         <Language ID="tsi-Latn">Tsimshian (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="smalgyax_u" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_smalgyax_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
