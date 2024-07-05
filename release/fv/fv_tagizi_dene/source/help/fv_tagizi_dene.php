@@ -19,6 +19,54 @@ END;
     please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
+<ul>
+    <li>The special characters used to write Tāgizi Dene are typed using a combination of punctuation followed by a
+        vowel.</li>
+    <li>Single Accents
+        <ul>
+            <li>To type the diaeresis accent use the Semicolon key <kbd>;</kbd> — ÿ is typed <kbd>;</kbd> then
+                <kbd>y</kbd></li>
+            <li>To type the grave accent use the Backquote key <kbd>`</kbd> — à is typed <kbd>`</kbd> then <kbd>a</kbd>
+            </li>
+            <li>To type the caron accent use the Percent sign <kbd>%</kbd> — ǎ is typed <kbd>%</kbd> then <kbd>a</kbd>
+            </li>
+            <li>To type the circumflex accent use the Caret sign <kbd>^</kbd> — â is typed <kbd>^</kbd> then
+                <kbd>a</kbd></li>
+            <li>To type the macron accent use the Equal sign <kbd>=</kbd> — ā is typed <kbd>=</kbd> then <kbd>a</kbd>
+            </li>
+            <li>To type the ogonek accent use the Comma key <kbd>,</kbd> — ą is typed <kbd>,</kbd> then <kbd>a</kbd>
+            </li>
+        </ul>
+    </li>
+    <li>Double Accents
+        <br>Double accents are typed by using both corresponding punctuation marks of the accents you wish to combine
+        followed by a vowel.</br>
+        <ul>
+            <li>To type the macron and grave accents use the Equal sign and Backquote key — ā̀ is typed
+                <kbd>=</kbd><kbd>`</kbd> or <kbd>`</kbd><kbd>=</kbd> then <kbd>a</kbd></li>
+            <li>To type the circumflex and ogonek accents use the Caret sign and Comma key — ą̂ is typed
+                <kbd>,</kbd><kbd>^</kbd> or <kbd>^</kbd><kbd>,</kbd> then <kbd>a</kbd></li>
+        </ul>
+    </li>
+    <li>Triple Acccents
+        <br>Triple accents are typed by using the three correspinding punctuation marks of the accents you wish to
+        combine followed by a vowel.</br>
+        <ul>
+            <li>To type the grave, macron, and ogonek accents use the Comma key, Backquote key, and Equal key in any
+                order — ą̄̀ is typed <kbd>,</kbd><kbd>`</kbd><kbd>=</kbd> then <kbd>a</kbd></li>
+        </ul>
+    </li>
+    <li>The Quote key ' has been modified to type the curled apostrophe ʼ.
+        <br>To type the regular Quote ', type Right <kbd>Alt</kbd>+<kbd>'</kbd> (Windows) or
+        <kbd>Option</kbd>+<kbd>'</kbd> (Mac)</br>
+    </li>
+</ul>
+<h2>Unicode Fonts</h2>
+<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please
+    use these fonts when typing in your language as they have been specially built to represent your language as
+    accurately as possible. </p>
+<h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and
+        Aboriginal Serif</a></h3>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
@@ -73,8 +121,4 @@ END;
 
 <h2>Keyboard Layout</h2>
 <div id='osk'>
-</div>
-
-<h2>Keyboard Layout</h2>
-<div id='osk-tablet'>
 </div>
