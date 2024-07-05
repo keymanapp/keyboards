@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Dene Dzage Keyboard Help';
-  $pagetitle = 'Dene Dzage Keyboard Help';
+  $pagename = 'Danezāgéʼ Keyboard Help';
+  $pagetitle = 'Danezāgéʼ Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,14 +13,14 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-    This keyboard is designed for the <b>Dene Dzage</b> language of the Western Subarctic region of Canada.
+    This keyboard is designed for the <b>Danezāgéʼ</b> language of the Western Subarctic region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below),
     please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
 <h2>Desktop layout</h2>
-<p>The Dene Dzage keyboard uses the English keyboard as a base, with added key combinations in order to create special
+<p>The Danezāgéʼ keyboard uses the English keyboard as a base, with added key combinations in order to create special
     characters. See <a href="file:fv_dene_dzage_combinations.pdf">this document</a> for all the special key
     combinations.</p>
 </p>
