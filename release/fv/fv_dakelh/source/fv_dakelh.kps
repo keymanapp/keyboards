@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,8 +23,12 @@
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>This keyboard is designed for the Dakelh language of the BC Interior
-region of Canada. This is part of a set of keyboards from FirstVoices.</Description>
+    <Description URL="">This keyboard is designed for the Dakelh language of the BC Interior
+region of Canada. This is part of a set of keyboards from FirstVoices.
+
+Alternate names:
+
+Southern Carrier</Description>
   </Info>
   <Files>
     <File>
@@ -129,12 +134,6 @@ region of Canada. This is part of a set of keyboards from FirstVoices.</Descript
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>fv_dakelh_kmw_help.htm</Name>
-      <Description>File fv_dakelh_kmw_help.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -145,17 +144,18 @@ region of Canada. This is part of a set of keyboards from FirstVoices.</Descript
     <Keyboard>
       <Name>Dakelh</Name>
       <ID>fv_dakelh</ID>
-      <Version>9.1.5</Version>
+      <Version>9.1.6</Version>
       <Languages>
         <Language ID="caf-Latn">Southern Carrier (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="dakelh" Relationship="deprecates" />
-    <RelatedPackage ID="dakelh1_u" Relationship="deprecates" />
-    <RelatedPackage ID="dakelh2_u" Relationship="deprecates" />
-    <RelatedPackage ID="fv_dakelh_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="dakelh" Relationship="deprecates"/>
+    <RelatedPackage ID="dakelh1_u" Relationship="deprecates"/>
+    <RelatedPackage ID="dakelh2_u" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_dakelh_kmw" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_southern_carrier"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
