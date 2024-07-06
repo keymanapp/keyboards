@@ -67,6 +67,7 @@ END;
             <td align='center'>ʼ ' "</td>
             <td align='center'>k k̓</td>
             <td align='center'>l l̓</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td align='center'>⇧</td>
