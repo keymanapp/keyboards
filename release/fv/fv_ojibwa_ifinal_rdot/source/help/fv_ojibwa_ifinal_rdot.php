@@ -35,7 +35,7 @@ END;
     <li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and
         long form (vowels).</li>
     <li>The syllabics used to write ᐊᓂᔑᓇᐯᒧᐏᣙ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with
-        a few exceptions. See <a href=Ojibwa__ifinal_rdot.pdf>this document</a> for a full list of how to type each
+        a few exceptions. See <a href=Ojibwa_ifinal_rdot.pdf>this document</a> for a full list of how to type each
         syllable with this keyboard, and all of the special key combinations.
         <ul>
             <li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will
