@@ -1,14 +1,13 @@
 teochew keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
-teochew generated from template
+teochew for Teochow language, Tiê-chiu Pe̍h-ūe-jī.
 
 Links
 -----
+https://keyman.com/keyboards/teochew
 
 Copyright
 ---------
