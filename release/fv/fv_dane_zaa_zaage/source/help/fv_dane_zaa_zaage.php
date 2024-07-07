@@ -20,9 +20,9 @@ END;
 <p>Combining accents are located on the standard <strong>/ and \</strong> keys. Type an accent after a vowel to add it
     on the vowel. If you've typed the wrong accent, just type the correct accent to replace it.</p>
 <ul>
-    <li>á = a then /</li>
-    <li>ǎ = a then \</li>
-    <li>â = a then Shift-\</li>
+    <li>á = <kbd>a</kbd> then <kbd>/<kbd></li>
+    <li>ǎ = <kbd>a</kbd> then <kbd>\</kbd></li>
+    <li>â = <kbd>a</kbd> then <kbd>Shift</kbd><kbd>\</kbd></li>
 </ul>
 
 <p>By holding the ALT key, you can return to the standard US English keyboard value of any modified key (such as
@@ -63,7 +63,7 @@ END;
             <td align='center'>j</td>
             <td align='center'>k</td>
             <td align='center'>l</td>
-            <td align='center'>’</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td align='center'>⇧</td>
@@ -79,6 +79,7 @@ END;
         <tr>
             <td align='center'>123</td>
             <td align='center'>🌐</td>
+            <td align='center'>’</td>
             <td align='center' colspan='4'>space</td>
             <td align='center'>.</td>
             <td align='center' colspan='2'>⏎</td>
@@ -102,4 +103,4 @@ END;
         <li>z > z̲ (Z̲)</li>
     </ul>
 
-    <p>© 2015-2023 FirstVoices, First Peoples' Cultural Foundation, SIL International</p>
+    <p>© 2015-2024 FirstVoices, First Peoples' Cultural Foundation, SIL International</p>
