@@ -27,7 +27,10 @@ END;
 
 <p>By holding the ALT key, you can return to the standard US English keyboard value of any modified key (such as
     <strong>p, r, q, v, x</strong>, and various punctuation). Shift-Alt will give you the standard English shifted value
-    of the modified key (such as <strong>P, R, Q, V, Z</strong>, etc).</p>
+    of the modified key (such as <strong>P, R, Q, V, Z</strong>, etc).
+</p>
+<p>NOTE: When using Google Docs, Slash / is typed <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> (Windows) or <kbd>⌥
+        Option</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd>.</p>
 
 <h2>Unicode Fonts</h2>
 <p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please
@@ -74,7 +77,7 @@ END;
             <td align='center'>b</td>
             <td align='center'>n</td>
             <td align='center'>m</td>
-            <td align='center'colspan='2'>⌫</td>
+            <td align='center' colspan='2'>⌫</td>
         </tr>
         <tr>
             <td align='center'>123</td>
