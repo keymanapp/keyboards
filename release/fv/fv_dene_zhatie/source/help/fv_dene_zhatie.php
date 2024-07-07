@@ -27,18 +27,26 @@ END;
     <li> The special characters of Dene Zhatıé have been assigned to a mix of both number and punctuation keys.</li>
     <li> All accents are typed after the base character — ų is typed u then Left Bracket [
         <ul>
-            <li> To type the acute accent use the Backquote key ` — á is typed a then backquote ` </li>
-            <li> To type the ogonek accent use the the Left Bracket key [ — ų is typed u then Left Bracket [ </li>
-            <li> To type the acute and ogonek accent at the same time use the Right Bracket key ] — ǫ́ is typed o then
-                Right
-                Bracket ] </li>
-            <li> To type the underlined n ṉ use the Equal key. To type the capital underlined N Ṉ use the Plus key</li>
-            <li> To type the underlined double e e̲e̲ use Right-Alt (Windows) / Option (Mac) + the e key</li>
-            <li> All changed numbers and punctuation can type their original value by holding down the Right-Alt or
-                Option key.
-                The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
+            <li> To type the acute accent use the Backquote key ` — á is typed <kbd>a</kbd> then <kbd>`</kbd></li>
+            <li> To type the ogonek accent use the the Left Bracket key [ — ų is typed <kbd>u</kbd> then <kbd>[</kbd>
+            </li>
+            <li> To type the acute and ogonek accent at the same time use the Right Bracket key ] — ǫ́ is typed
+                <kbd>o</kbd> then
+                <kbd>]</kbd>
+            </li>
+            <li> To type the underlined n ṉ use the Equal key <kbd>=</kbd>. To type the capital underlined N Ṉ use the
+                Plus key <kbd>Shift</kbd>+<kbd>=</kbd></li>
         </ul>
+    <li> To type the underlined double e e̲e̲ use <kbd>Right-Alt</kbd> (Windows) / <kbd>⌥ Option</kbd> (Mac) + the e key
+        <kbd>e</kbd></li>
+    <li> All changed numbers and punctuation can type their original value by holding down the Right-Alt or
+        Option key.
+        The Semicolon ; is typed <kbd>Right-Alt</kbd>+<kbd>;</kbd> (Windows) <kbd>⌥ Option</kbd>+<kbd>;</kbd> (Mac).
     </li>
+    <li> NOTE: When using Google Docs, Slash / is typed <kbd>Right-Alt</kbd>+<kbd>'</kbd> (Windows) / <kbd>⌥
+            Option</kbd>+<kbd>'</kbd> (Mac).</li>
+</ul>
+</li>
 </ul>
 
 <h2>Unicode Fonts</h2>
@@ -74,7 +82,7 @@ END;
             <td align='center'>j</td>
             <td align='center'>k</td>
             <td align='center'>l</td>
-            <td align='center'>' "</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td align='center'>⇧</td>
@@ -85,12 +93,13 @@ END;
             <td align='center'>b</td>
             <td align='center'>n ṉ</td>
             <td align='center'>m</td>
-            <td align='center'colspan='2'>⌫</td>
+            <td align='center' colspan='2'>⌫</td>
         </tr>
         <tr>
             <td align='center'>123</td>
             <td align='center'>🌐</td>
-            <td align='center' colspan='5'>space</td>
+            <td align='center'>' "</td>
+            <td align='center' colspan='4'>space</td>
             <td align='center'>.</td>
             <td align='center' colspan='2'>⏎</td>
         </tr>
@@ -101,12 +110,12 @@ END;
         </li>
         <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
         </li>
-        <li>Common punctuation marks can be found by pressing and holding on the period key on the right side of the space bar.</li>
+        <li>Common punctuation marks can be found by pressing and holding on the period key on the right side of the
+            space bar.</li>
     </ul>
 </div>
 
 <br />
 
-<h2>Desktop Keyboard Layout</h2>
-<div id='osk'>
-</div>
+<h2>Keyboard Layout</h2>
+     <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
