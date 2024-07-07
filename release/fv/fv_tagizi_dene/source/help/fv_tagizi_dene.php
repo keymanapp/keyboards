@@ -25,13 +25,15 @@ END;
     <li>Single Accents
         <ul>
             <li>To type the diaeresis accent use the Semicolon key <kbd>;</kbd> — ÿ is typed <kbd>;</kbd> then
-                <kbd>y</kbd></li>
+                <kbd>y</kbd>
+            </li>
             <li>To type the grave accent use the Backquote key <kbd>`</kbd> — à is typed <kbd>`</kbd> then <kbd>a</kbd>
             </li>
             <li>To type the caron accent use the Percent sign <kbd>%</kbd> — ǎ is typed <kbd>%</kbd> then <kbd>a</kbd>
             </li>
             <li>To type the circumflex accent use the Caret sign <kbd>^</kbd> — â is typed <kbd>^</kbd> then
-                <kbd>a</kbd></li>
+                <kbd>a</kbd>
+            </li>
             <li>To type the macron accent use the Equal sign <kbd>=</kbd> — ā is typed <kbd>=</kbd> then <kbd>a</kbd>
             </li>
             <li>To type the ogonek accent use the Comma key <kbd>,</kbd> — ą is typed <kbd>,</kbd> then <kbd>a</kbd>
@@ -43,9 +45,11 @@ END;
         followed by a vowel.</br>
         <ul>
             <li>To type the macron and grave accents use the Equal sign and Backquote key — ā̀ is typed
-                <kbd>=</kbd><kbd>`</kbd> or <kbd>`</kbd><kbd>=</kbd> then <kbd>a</kbd></li>
+                <kbd>=</kbd><kbd>`</kbd> or <kbd>`</kbd><kbd>=</kbd> then <kbd>a</kbd>
+            </li>
             <li>To type the circumflex and ogonek accents use the Caret sign and Comma key — ą̂ is typed
-                <kbd>,</kbd><kbd>^</kbd> or <kbd>^</kbd><kbd>,</kbd> then <kbd>a</kbd></li>
+                <kbd>,</kbd><kbd>^</kbd> or <kbd>^</kbd><kbd>,</kbd> then <kbd>a</kbd>
+            </li>
         </ul>
     </li>
     <li>Triple Acccents
@@ -57,7 +61,7 @@ END;
         </ul>
     </li>
     <li>The Quote key ' has been modified to type the curled apostrophe ʼ.
-        <br>To type the regular Quote ', type Right <kbd>Alt</kbd>+<kbd>'</kbd> (Windows) or
+        <br>To type the regular Quote ', type <kbd>Right-Alt</kbd>+<kbd>'</kbd> (Windows) or
         <kbd>Option</kbd>+<kbd>'</kbd> (Mac)</br>
     </li>
 </ul>
@@ -94,10 +98,10 @@ END;
             <td align='center'>j</td>
             <td align='center'>k</td>
             <td align='center'>l</td>
-            <td align='center'>' "</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td align="center">⇧</td>
             <td align='center'>z</td>
             <th align='center'>¯</th>
             <td align='center'>c</td>
@@ -105,7 +109,15 @@ END;
             <th align='center'>^</th>
             <td align='center'>n</td>
             <td align='center'>m</td>
-            <td colspan='2'>&nbsp;</td>
+            <td align='center' colspan='2'>⌫</td>
+        </tr>
+        <tr>
+            <td align='center'>123</td>
+            <td align='center'>🌐</td>
+            <td align='center'>' "</td>
+            <td align='center' colspan='4'>space</td>
+            <td align='center'>.</td>
+            <td align='center' colspan="2">⏎</td>
         </tr>
     </table>
     <div class='vspace'></div>

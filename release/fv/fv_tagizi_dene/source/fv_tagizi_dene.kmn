@@ -16,13 +16,17 @@ c --- START OF TOUCH LAYOUT RULES ---
 
 c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
+c key to shorthands used throughout rules and stores
+c Car ->  caron      Cir  ->  circumflex        Gra  ->  grave
+c Mac ->  macron     Ogo  ->  ogonek 
+
 store(&LAYOUTFILE) 'fv_tagizi_dene.keyman-touch-layout'
 
 
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
-+ [SHIFT T_Y_0] > 'Ÿ' layer('default')
++ [SHIFT T_Y_0] > 'Ÿ' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
@@ -46,7 +50,7 @@ store(&LAYOUTFILE) 'fv_tagizi_dene.keyman-touch-layout'
 + [T_W] > 'w'
 + [T_E] > 'e'
 + [T_T] > 't'
-+ [T_Y_0] > 'ÿ'
++ [T_Y_0] > 'ÿ'
 + [T_Y] > 'y'
 + [T_U] > 'u'
 + [T_I] > 'i'
@@ -104,57 +108,53 @@ c mac gra + ogo / mac gra + ogo
 'ā̀' + any(MOgoKeys) > 'ą̄̀'
 'ḕ' + any(MOgoKeys) > 'ę̄̀'
 'ī̀' + any(MOgoKeys) > 'į̄̀'
-'ṑ' + any(MOgoKeys) > 'ǭ̀'
+'ṑ' + any(MOgoKeys) > 'ǭ̀'
 'ū̀' + any(MOgoKeys) > 'ų̄̀'
 'Ā̀' + any(MOgoKeys) > 'Ą̄̀'
 'Ḕ' + any(MOgoKeys) > 'Ę̄̀'
 'Ī̀' + any(MOgoKeys) > 'Į̄̀'
-'Ṑ' + any(MOgoKeys) > 'Ǭ̀'
+'Ṑ' + any(MOgoKeys) > 'Ǭ̀'
 'Ū̀' + any(MOgoKeys) > 'Ų̄̀'
 
 c ogo gra + mac
 'ą̀' + any(MMacKeys) > 'ą̄̀'
 'ę̀' + any(MMacKeys) > 'ę̄̀'
 'į̀' + any(MMacKeys) > 'į̄̀'
-'ǫ̀' + any(MMacKeys) > 'ǭ̀'
+'ǫ̀' + any(MMacKeys) > 'ǭ̀'
 'ų̀' + any(MMacKeys) > 'ų̄̀'
 'Ą̀' + any(MMacKeys) > 'Ą̄̀'
 'Ę̀' + any(MMacKeys) > 'Ę̄̀'
 'Į̀' + any(MMacKeys) > 'Į̄̀'
-'Ǫ̀' + any(MMacKeys) > 'Ǭ̀'
+'Ǫ̀' + any(MMacKeys) > 'Ǭ̀'
 'Ų̀' + any(MMacKeys) > 'Ų̄̀'
 
 c ogo mac + gra
 'ą̄' + any(MGraKeys) > 'ą̄̀'
 'ę̄' + any(MGraKeys) > 'ę̄̀'
 'į̄' + any(MGraKeys) > 'į̄̀'
-'ǭ' + any(MGraKeys) > 'ǭ̀'
+'ǭ' + any(MGraKeys) > 'ǭ̀'
 'ų̄' + any(MGraKeys) > 'ų̄̀'
 'Ą̄' + any(MGraKeys) > 'Ą̄̀'
 'Ę̄' + any(MGraKeys) > 'Ę̄̀'
 'Į̄' + any(MGraKeys) > 'Į̄̀'
-'Ǭ' + any(MGraKeys) > 'Ǭ̀'
+'Ǭ' + any(MGraKeys) > 'Ǭ̀'
 'Ų̄' + any(MGraKeys) > 'Ų̄̀'
 
 c ogo + MacGra
 'ą' + any(MMacGraKeys) > 'ą̄̀'
 'ę' + any(MMacGraKeys) > 'ę̄̀'
 'į' + any(MMacGraKeys) > 'į̄̀'
-'ǫ' + any(MMacGraKeys) > 'ǭ̀'
+'ǫ' + any(MMacGraKeys) > 'ǭ̀'
 'ų' + any(MMacGraKeys) > 'ų̄̀'
 'Ą' + any(MMacGraKeys) > 'Ą̄̀'
 'Ę' + any(MMacGraKeys) > 'Ę̄̀'
 'Į' + any(MMacGraKeys) > 'Į̄̀'
-'Ǫ' + any(MMacGraKeys) > 'Ǭ̀'
+'Ǫ' + any(MMacGraKeys) > 'Ǭ̀'
 'Ų' + any(MMacGraKeys) > 'Ų̄̀'
 
 c --- END OF TOUCH LAYOUT RULES ---
 
-c --- CROSS PLATFORM STORES AND RULES --- 
-
-c key to shorthands used throughout rules and stores
-c Car ->  caron      Cir  ->  circumflex        Gra  ->  grave
-c Mac ->  macron     Ogo  ->  ogonek            
+c --- CROSS PLATFORM STORES AND RULES ---            
 
 store(Vowels) 'aeiouAEIOU'
 store(HasCar) 'ǎěǐǒǔǍĚǏǑǓ'
