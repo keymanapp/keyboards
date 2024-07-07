@@ -5,7 +5,6 @@ Dene Zhatıé Change History
 * Tidied documentation
 * Tweaked mobile layout
 * Added alternate way to type slash / when using Google Workspace
-* Tweaked mobile layout
 * Added Aborignal Sans and Serif to package
 
 10.0.3 (22 May 2024)
