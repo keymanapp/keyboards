@@ -1,14 +1,13 @@
 hainam keyboard
 ==============
 
-Version 1.0
-
 Description
 -----------
-hainam generated from template
+hainam for hainam language, south-hokkienese, Bǽh-oe-tu.
 
 Links
 -----
+https://keyman.com/keyboards/hainam
 
 Copyright
 ---------
