@@ -1,9 +1,10 @@
 ﻿store(&VERSION) "10.0"
-store(&TARGETS) "mobile tablet"
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "hur"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Hul̓q̓umin̓um̓'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '2.0'
+store(&VISUALKEYBOARD) 'fv_hulquminum_combine.kvks'
 
 begin Unicode > use(main)
 
@@ -106,18 +107,37 @@ c default layer
 
 c --- END OF TOUCH LAYOUT RULES ---
 
-C Rules and constraints
+c --- Cross Platform Rules and Stores ---
 
 C Vowels with acute acccent
 store(plainVowels) "aeiouAEIOU"
 store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
-store(acuteKeys) [T_acute] [SHIFT T_acute]
+store(acuteKeys) [T_acute] [SHIFT T_acute] [K_LBRKT]
 any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
 any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
 
 c Glottal apostrophe deadkey combining rules
 store(noGlottal) 'ptkqclmnwyPTKQCLMNWY'
-store(glottalKeys) [T_combine] [SHIFT T_combine]
+store(glottalKeys) [T_combine] [SHIFT T_combine] [K_QUOTE]
 any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
 
+c --- BEGIN DESKTOP RULES ---
 
+c --- language keys ---
++ [K_QUOTE] > U+0313 c Combining above comma
++ [K_LBRKT] > U+0301 c Combining acute
++ [K_RBRKT] > U+030C c Combining caron
+
+c --- original punctuation ---
++ [RALT K_QUOTE] > U+0027
++ [RALT K_LBRKT] > '['
++ [RALT K_RBRKT] > ']'
+
+c --- stacking prevention ---
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
+store(LanguageAccents) U+0313 U+0301 U+030C
+store(LanguageKeys) [K_QUOTE] [K_LBRKT] [K_RBRKT]
+
+any(AcuteVowels) + any(LanguageKeys) > context beep
+any(LanguageAccents) + any(LanguageKeys) > context beep
+any(NonLetters) + any(LanguageKeys) > context beep
