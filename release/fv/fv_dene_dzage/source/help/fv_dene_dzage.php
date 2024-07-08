@@ -44,7 +44,7 @@ END;
     </li>
     <li><b>Right Bracket ]</b> plus a vowel becomes a vowel with falling tone
         <ul>
-            <li><b>[o</b> becomes <b>ô</b></li>
+            <li><b>]o</b> becomes <b>ô</b></li>
         </ul>
     </li>
     <li><b>Comma ,</b> plus a vowel becomes a vowel with nasal hook
