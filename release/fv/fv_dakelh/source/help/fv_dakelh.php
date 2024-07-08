@@ -35,7 +35,7 @@ END;
         <ul>
             <li>single: ‘ <kbd>SHIFT</kbd>+<kbd>`</kbd> — ’ Apostrophe</li>
             <li>double: “ <kbd>SHIFT</kbd>+<kbd>-</kbd> — ” <kbd>SHIFT</kbd>+<kbd>=</kbd></li>
-            <li>single ‹ <kbd>Right-Alt</kbd>+<kbd>SHIFT</kbd>+<kbd>9</kbd> — › Right-Alt+<kbd>SHIFT</kbd>+<kbd>0</kbd>
+            <li>single ‹ <kbd>Right-Alt</kbd>+<kbd>SHIFT</kbd>+<kbd>9</kbd> — › <kbd>Right-Alt</kbd>+<kbd>SHIFT</kbd>+<kbd>0</kbd>
             </li>
             <li>double « <kbd>Right-Alt</kbd>+<kbd>9</kbd> — » <kbd>Right-Alt</kbd>+<kbd>0</kbd></li>
         </ul>
