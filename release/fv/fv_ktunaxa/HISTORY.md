@@ -5,6 +5,7 @@ Ktunaxa Change History
 * Updated mobile layout
 * Tidied rules and stores
 * Tidied documentation
+* Added BC Sans to package
 
 9.1.3 (25 Oct 2023)
 -------------------

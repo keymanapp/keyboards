@@ -24,25 +24,33 @@ END;
     <li>The special characters of Ktunaxa have been assigned to the unshifted number keys. To type the numerals, hold
         down the shift key then press the appropriate number key. The Numeric keypad on the right side of many keyboards
         keep its original numbers.</li>
-    <li>To type the Glottal Accent, use the Apostrophe key ' — p̓ is typed p then apostrophe</li>
+    <li>To type the Glottal Accent, use the Apostrophe key <kbd>'</kbd> — p̓ is typed <kbd>p</kbd> then <kbd>'</kbd>
+    </li>
     <li>You can type the English value of the punctuation keys by holding down the Right-Alt or Option key — the
-        Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac). The punctuation on the number keys
-        (such as @ # $...) is accessed with the Right-Alt or Option key.</li>
+        Semicolon ; is typed <kbd>Right-Alt</kbd>+<kbd>;</kbd> (Windows) <kbd>⌥ Option</kbd>+<kbd>;</kbd> (Mac). The
+        punctuation on the number keys
+        (such as @ # $...) is accessed with the <kbd>Right-Alt</kbd> or <kbd>⌥ Option</kbd> key.</li>
     <li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.
         <ul>
-            <li>single: ‘ Backquote — ’ Zero</li>
-            <li>double: “ Shift+Left-Bracket — ” Shift+Right-Bracket</li>
-            <li>single ‹ Right-Alt+Shift+Hyphen — › Right-Alt+Shift+Equals</li>
-            <li>double « Right-Alt+Hyphen — » Right-Alt+Equals</li>
+            <li>single: ‘ Backquote <kbd>`</kbd> — ’ <kbd>0</kbd></li>
+            <li>double: “ <kbd>Shift</kbd>+<kbd>[</kbd> — ” <kbd>Shift</kbd>+<kbd>]</kbd></li>
+            <li>single ‹ <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>-</kbd> — ›
+                <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>=</kbd>
+            </li>
+            <li>double « <kbd>Right-Alt</kbd>+<kbd>-</kbd> — » <kbd>Right-Alt</kbd>+<kbd>=</kbd></li>
         </ul>
     </li>
 </ul>
 <h2>Unicode Fonts</h2>
-<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please
+<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif, BC
+        Sans.</strong> Please
     use these fonts when typing in your language as they have been specially built to represent your language as
     accurately as possible. </p>
 <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and
         Aboriginal Serif</a></h3>
+<h3><a
+        href="https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans">Download
+        the latest version of BC Sans </a></h3>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
@@ -88,9 +96,9 @@ END;
     </table>
     <div class='vspace'></div>
     <ul>
-        <li>keys with a red background are combining accents. On your mobile device, these keys will have green text.
+        <li>Keys with a red background are combining accents. On your mobile device, these keys will have green text.
         </li>
-        <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
         <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
             bar.</li>
     </ul>
@@ -100,5 +108,4 @@ END;
 <br />
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk'>
-</div>
+<div id='osk' data-states='default shift rightalt rightalt-shift'></div>
