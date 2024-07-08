@@ -20,7 +20,7 @@ END;
 <p>Combining accents are located on the standard <strong>/ and \</strong> keys. Type an accent after a vowel to add it
     on the vowel. If you've typed the wrong accent, just type the correct accent to replace it.</p>
 <ul>
-    <li>á = <kbd>a</kbd> then <kbd>/<kbd></li>
+    <li>á = <kbd>a</kbd> then <kbd>/</kbd></li>
     <li>ǎ = <kbd>a</kbd> then <kbd>\</kbd></li>
     <li>â = <kbd>a</kbd> then <kbd>Shift</kbd><kbd>\</kbd></li>
 </ul>
