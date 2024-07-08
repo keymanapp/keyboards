@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,13 +19,17 @@
   </StartMenu>
   <Info>
     <Name URL="">Tagizi Dene</Name>
-    <Copyright URL="">(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>This keyboard is designed for the Tāgizi Dene language of the Western
+    <Description URL="">This keyboard is designed for the Tāgizi Dene language of the Western
 Subarctic region of Canada. This is part of a set of keyboards from
-FirstVoices.</Description>
+FirstVoices.
+
+Alternate names:
+
+Tagish</Description>
   </Info>
   <Files>
     <File>
@@ -112,12 +117,6 @@ FirstVoices.</Description>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\fv_tagizi_dene.kvk</Name>
-      <Description>File fv_tagizi_dene.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
       <Name>..\build\fv_tagizi_dene.kmx</Name>
       <Description>Keyboard Tāgizi Dene</Description>
       <CopyLocation>0</CopyLocation>
@@ -129,19 +128,37 @@ FirstVoices.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>welcome\FVLogo.gif</Name>
+      <Description>File FVLogo.gif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.gif</FileType>
+    </File>
+    <File>
+      <Name>welcome\keyman.png</Name>
+      <Description>File keyman.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\lgBlue162x31.png</Name>
+      <Description>File lgBlue162x31.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tāgizi Dene</Name>
       <ID>fv_tagizi_dene</ID>
-      <Version></Version>
+      <Version>9.3</Version>
       <Languages>
-        <Language ID="tgx-Latn">Tagish (Latin)</Language>
+        <Language ID="tgx">Tagish</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="fv_tagizi_dene_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="fv_tagizi_dene_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

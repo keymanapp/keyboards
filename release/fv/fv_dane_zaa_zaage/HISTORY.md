@@ -1,5 +1,13 @@
 Dane-Z̲aa Z̲áágéʔ Change History
 ====================
+9.4 (4 Jul 2024)
+-----------------
+* Added fonts to package
+* Added additional information to documentation
+* Added alternate way to type Slash / in Google Workspace
+* Tidied table
+* Tweaked mobile layout
+
 9.3 (30 Oct 2023)
 -----------------
 * Fleshed out mobile keyboard, including building own rules
