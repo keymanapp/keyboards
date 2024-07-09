@@ -25,7 +25,7 @@ END;
 
 <ul>
     <li> The special characters of Dene Zhatıé have been assigned to a mix of both number and punctuation keys.</li>
-    <li> All accents are typed after the base character — ų is typed u then Left Bracket [
+    <li> All accents are typed after the base character — ų is typed u then Left Bracket <kbd>[</kbd>
         <ul>
             <li> To type the acute accent use the Backquote key ` — á is typed <kbd>a</kbd> then <kbd>`</kbd></li>
             <li> To type the ogonek accent use the the Left Bracket key [ — ų is typed <kbd>u</kbd> then <kbd>[</kbd>
