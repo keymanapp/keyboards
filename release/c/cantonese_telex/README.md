@@ -5,7 +5,7 @@ Version 1.0
 
 Description
 -----------
-cantonese telex generated from template
+cantonese telex for Yụt Yũ (Cantonese). Cantonese Telex粵語電報式羅馬字輸入法
 
 Links
 -----
