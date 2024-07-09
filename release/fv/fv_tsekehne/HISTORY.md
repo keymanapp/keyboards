@@ -9,6 +9,7 @@ Tsek'ehne Change History
 * Added alternate names
 * Removed web help
 * Tidied documentation
+* Added alternate way to type Slash in Google Workspace
 
 9.1.2 (6 Mar 2023)
 -------------------
