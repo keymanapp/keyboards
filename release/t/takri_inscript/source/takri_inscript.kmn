@@ -1,0 +1,38 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Takri - Inscript'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'takri_inscript.ico'
+store(&VISUALKEYBOARD) 'takri_inscript.kvks'
+store(&LAYOUTFILE) 'takri_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(digitsK) [K_0] [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] 
+store(digitsU) U+116C0 .. U+116C9
+
+store(IndVowK) [SHIFT K_D] [SHIFT K_E] [SHIFT K_F] [SHIFT K_R] [SHIFT K_G] [SHIFT K_T] [SHIFT K_S] [SHIFT K_W] [SHIFT K_A] [SHIFT K_Q]
+store(IndVowU) U+11680 .. U+11689
+
+store(ConsK) [K_K] [SHIFT K_K] [K_I] [SHIFT K_I] [SHIFT K_U] [K_COLON] [SHIFT K_COLON] [K_P] [SHIFT K_P] [SHIFT K_RBRKT] [K_QUOTE] [SHIFT K_QUOTE] \
+             [K_LBRKT] [SHIFT K_LBRKT] [SHIFT K_C] [K_L][SHIFT K_L] [K_O] [SHIFT K_O] [K_V] [K_H] [SHIFT K_H] [K_Y] [SHIFT K_Y] [K_C] [K_SLASH] \
+             [K_J] [K_N] [K_B] [SHIFT K_M] [K_M] [K_U] [SHIFT K_J] [K_Z]
+store(ConsU) U+1168A .. U+116AA U+116B8
+
+store(SignsK) [K_X] [SHIFT K_HYPHEN] [K_D] [K_RBRKT] [K_BKQUOTE] [K_PERIOD] [SHIFT K_PERIOD]
+store(SignsU) U+116AB .. U+116AC     U+116B6 U+116B7 U+116B9 U+0964 U+0965
+
+store(DepVowK) [K_E] [K_F] [K_R] [K_G] [K_T] [K_S] [K_W] [K_A] [K_Q]
+store(DepVowU) U+116AD .. U+116B5
+
+store(nul) "ZXVBN<"
+
+group(main) using keys
+
++ any(nul) > nul
++ any(digitsK) > index(digitsU,1)
++ any(IndVowK) > index(IndVowU,1)
++ any(DepVowK) > index(DepVowU,1)
++ any(ConsK)   > index(ConsU,1)
++ any(SignsK) > index(SignsU,1)

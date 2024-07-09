@@ -1,12 +1,11 @@
-﻿store(&VERSION) "10.0.1"
+﻿store(&VERSION) "10.0"
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "git"
 store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱'
 store(&BITMAP) 'fv_gitsenimx.ico'
 store(&VISUALKEYBOARD) 'fv_gitsenimx.kvks'
-store(&KMW_HELPFILE) 'fv_gitsenimx_kmw_help.htm'
-store(&KEYBOARDVERSION) '10.0.1'
+store(&KEYBOARDVERSION) '10.1.2'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -91,9 +90,8 @@ c Language
 
 + [SHIFT RALT K_BKQUOTE] > '~'
 + [RALT K_BKQUOTE] > '`'
-+ [K_QUOTE] > U+2019
-+ [K_COLON] > '̱'           c combining mau
-+ [RALT K_QUOTE] > U+0027
++ [K_QUOTE] > U+0027
++ [K_COLON] > '̱'           c combining macron
 + [RALT K_COLON] > ';'
 + [RALT K_RBRKT] > '}'
 + [RALT K_LBRKT] > '{'

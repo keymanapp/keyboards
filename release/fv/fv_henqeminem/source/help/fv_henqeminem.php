@@ -28,7 +28,7 @@ This keyboard is designed for the <b>hǝn̓q̓ǝmin̓ǝm̓</b> language of the B
 					<li>To type the háček accent use the Shift+Backquote key — č is typed c then Shift+Backquote<br />
 									The letters č, š, x̌ also have their own keys: 5, 6, 7.</li>
 					<li>To type the grave accent use the Backquote key ` — à is typed a then Backquote `</li>
-					<li>To type the belted-ɬ press the 9 key.</li>
+					<li>To type the <strong>belted-ɬ</strong> press the 9 key.</li>
 				</ul>
 				<li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
 	</ul>				 
@@ -59,40 +59,49 @@ This keyboard is designed for the <b>hǝn̓q̓ǝmin̓ǝm̓</b> language of the B
 
 <p>Long-press options are available. The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</p>
 
+<div id='wikitext'>
+
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
-	<tr >
-		<td  align='center'>q q̓</td>
-		<td  align='center'>w w̓</td>
-		<td  align='center'>e é</td>
-		<td  align='center'>ə ə́</td>
-		<td  align='center'>t t̓</td>
-		<td  align='center'>y y̓</td>
-		<td  align='center'>u ú</td>
-		<td  align='center'>i í</td>
-		<td  align='center'>o</td>
-		<td  align='center'>p p̓</td>
+	<tr align="center">
+		<td>q q̓</td>
+		<td>w w̓</td>
+		<td>e é</td>
+		<td>ə ə́</td>
+		<td>t t̓</td>
+		<td>y y̓</td>
+		<td>u ú</td>
+		<td>i í</td>
+		<td>o</td>
+		<td>p p̓</td>
 	</tr>
-	<tr >
-		<td  align='center'>a á</td>
-		<td  align='center'>s</td>
-		<td  align='center'>ʔ</td>
-		<th  align='center'>’</th>
-		<td  align='center'>θ t̓ᶿ</td>
-		<td  align='center'>h</td>
-		<td  align='center'>ʷ</td>
-		<td  align='center'>k k̓</td>
-		<td  align='center'>l l̓ ɬ</td>
-		<td  align='center'>ƛ̓</td>
+	<tr  align="center">
+		<td>a á</td>
+		<td>s</td>
+		<td>ʔ</td>
+		<th>’</th>
+		<td>θ t̓ᶿ</td>
+		<td>h</td>
+		<td>ʷ</td>
+		<td>k k̓</td>
+		<td>l l̓ ɬ</td>
+		<td>ƛ̓</td>
 	</tr>
-	<tr >
-		<td >&nbsp;</td>
-		<td  align='center'>χ</td>
-		<td  align='center'>x x̌</td>
-		<td  align='center'>c c̓</td>
-		<td  align='center'>č</td>
-		<td  align='center'>š</td>
-		<td  align='center'>n n̓</td>
-		<td  align='center'>m m̓</td>
-		<td  colspan='2'>&nbsp;</td>
+	<tr  align="center">
+		<td >⇧</td>
+		<td>χ</td>
+		<td>x x̌</td>
+		<td>c c̓</td>
+		<td>č</td>
+		<td>š</td>
+		<td>n n̓</td>
+		<td>m m̓</td>
+		<td  colspan='2'>⌫</td>
+	</tr>
+	<tr align="center">
+		<td>123</td><td>🌐</td><td>:</td><td colspan="4">space</td><td>.</td><td colspan="2">⏎</td>
+	</tr>
+	
 	</tr>
 </table>
+
+</div>

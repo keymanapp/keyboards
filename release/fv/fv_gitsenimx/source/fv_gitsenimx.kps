@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
@@ -20,6 +23,16 @@
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description URL="">This keyboard is designed for the Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ language of the BC Coast
+region of Canada. This is part of a set of keyboards from FirstVoices.
+
+Alternate names:
+
+Gitxsan
+
+Gitxsen
+
+Gitksan</Description>
   </Info>
   <Files>
     <File>
@@ -83,12 +96,6 @@
       <FileType>.gif</FileType>
     </File>
     <File>
-      <Name>welcome\Gitksan.png</Name>
-      <Description>File Gitksan.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>welcome\keyman.png</Name>
       <Description>File keyman.png</Description>
       <CopyLocation>0</CopyLocation>
@@ -124,16 +131,33 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>welcome\fv_gitsenimx_U_.png</Name>
+      <Description>File fv_gitsenimx_U_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱</Name>
       <ID>fv_gitsenimx</ID>
-      <Version></Version>
+      <Version>10.1.0</Version>
       <Languages>
-        <Language ID="git">Gitxsan (Latin)</Language>
+        <Language ID="git">Gitxsan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="gitsenimx_u" Relationship="deprecates"/>
+    <RelatedPackage ID="gitxsan" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_gitsenimx_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

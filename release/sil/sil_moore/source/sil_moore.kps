@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,15 @@
     <Copyright URL="">© 2006-2021 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>Gʋndg kãngã naana moor gʋls-biis la gom-biis yĩnga. B yag-a-la fãrendã
+gʋndg zugu. Moorã gʋndg mamseg lagma teed a taab n be kaane. Rẽ, bɩ-y
+pak mamsegã n bãng gʋls-biisã zĩisi.\
+\
+Ce clavier est destine´ à la saisie et à l'affichage de textes/documents
+en langue moore´. Il est construit à partir du clavier AZERTY français.\
+\
+This keyboard is designed for input of the Mooré language. It is based
+on the French keyboard as used in Burkina Faso.</Description>
   </Info>
   <Files>
     <File>
@@ -106,6 +116,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -120,4 +136,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="moore" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

@@ -1,5 +1,24 @@
 # fv_all Keyboard Package
 
+## 12.14 (7 Jul 2024)
+* Add BC Sans Regular font
+
+## 12.13 (6 Jul 2024)
+* Replace keyboards.csv with keyboards.json
+
+## 12.12 (6 Jul 2024)
+* Add fv_ojibwa_ifinal and fv_ojibwa_ifinal_rdot
+
+## 12.11 (28 Jun 2024)
+* Add fv_ojibwa_rdot and fv_severn_ojibwa_rdot
+
+## 12.10 (May 18 2024)
+* Add keyboards.csv file
+
+## 12.9 (May 10 2024)
+* Add fv_nlakapamuxcheen
+* Add desktop keyboard for fv_nlha7kapmxtsin
+
 ## 12.8 (Apr 10 2024)
 * Add fv_sguuxs
 
