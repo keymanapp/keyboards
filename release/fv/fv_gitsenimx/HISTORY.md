@@ -1,5 +1,10 @@
 Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ Change History
 ============================
+10.1.1 (8 Jul 2024)
+-----------------
+* Tidied documentation and mobile table
+* Removed web help
+
 10.1.0 (15 May 2024)
 -----------------
 * Swapped out curled apostrophe for straight apostrophe
