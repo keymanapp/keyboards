@@ -24,7 +24,7 @@ END;
 <ul>
     <li>All accents are typed after the base character — x̱ is typed <kbd>x</kbd> then Semicolon <kbd>;</kbd>
         <ul>
-            <li>To type the underline accent use the Semicolon key ; — ḵ is typed <kbd>k</kbd> then <kbd>;</kbd></li>
+            <li>To type the underline accent use the Semicolon key <kbd>;</kbd> — ḵ is typed <kbd>k</kbd> then <kbd>;</kbd></li>
         </ul>
     </li>
     <li>All changed punctuation can type their original value by holding down the Right-Alt or Option key — the
@@ -32,7 +32,7 @@ END;
         ; is typed <kbd>Right-Alt</kbd>+<kbd>;</kbd> (Windows) / <kbd>⌥ Option</kbd>+<kbd>;</kbd> (Mac).</li>
     <li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.</li>
     <ul>
-        <li>single: ‘ <kbd>Shift</kbd>+<kbd>`</kbd> — ’ Apostrophe</li>
+        <li>single: ‘ <kbd>Shift</kbd>+<kbd>`</kbd> — ’ <kbd>'</kbd></li>
         <li>double: “ <kbd>Shift</kbd>+<kbd>[</kbd> — ” <kbd>Shift</kbd>+<kbd>]</kbd></li>
         <li>single ‹ <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd> — ›
             <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>
