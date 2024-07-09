@@ -1,5 +1,9 @@
 Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ Change History
 ============================
+10.1.2 (9 Jul 2024)
+-----------------
+* Corrected error in documentation
+
 10.1.1 (8 Jul 2024)
 -----------------
 * Tidied documentation and mobile table

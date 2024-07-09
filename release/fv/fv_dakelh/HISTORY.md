@@ -1,5 +1,9 @@
 Dakelh Change History
 ============================
+9.2.1 (9 Jul 2024)
+-------------------
+* Corrected error in documentation
+
 9.2 (4 Jul 2024)
 -------------------
 * Simplified missed e with acute in mobile layout
