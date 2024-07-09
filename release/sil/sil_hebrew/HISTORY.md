@@ -1,6 +1,10 @@
 Hebrew (SIL) Keyboard Change History
 =======================
 
+2.0.1 (8 Jul 2024)
+-----------------
+* Changed display font for .kvks
+
 2.0 (2 Jul 2024)
 -----------------
 * Update keyboard to support OSK font for better display
