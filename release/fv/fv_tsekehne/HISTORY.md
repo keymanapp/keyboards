@@ -8,6 +8,7 @@ Tsek'ehne Change History
 * Small change to mobile layout
 * Added alternate names
 * Removed web help
+* Tidied documentation
 
 9.1.2 (6 Mar 2023)
 -------------------
