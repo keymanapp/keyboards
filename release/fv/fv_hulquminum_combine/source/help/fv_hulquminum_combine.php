@@ -22,15 +22,19 @@ END;
 
 <h2><img src="fv_hulquminum_combine_U_.png" alt="" height="198" width="514" border="0" /></h2>
 <ul>
-    <li>All accents are typed after the base character — x̌ is typed x then Right-Bracket ]
+    <li>All accents are typed after the base character — x̌ is typed <kbd>x</kbd> then Right-Bracket <kbd>]</kbd>
         <ul>
-            <li>To type the combining comma use the Quote Key ' — m̓ is typed m then Quote</li>
-            <li>To type the acute accent use the Left-Bracket Key [ — í is typed i then Left-Bracket [</li>
-            <li>To type the hachek or caron use the the Right-Bracket Key — x̌ is typed x then Right-Bracket ]</li>
+            <li>To type the combining comma use the Quote Key <kbd>'</kbd> — m̓ is typed <kbd>m</kbd> then <kbd>'</kbd>
+            </li>
+            <li>To type the acute accent use the Left-Bracket Key <kbd>[</kbd> — í is typed <kbd>i</kbd> then
+                <kbd>[</kbd></li>
+            <li>To type the hachek or caron use the the Right-Bracket Key — x̌ is typed <kbd>x</kbd> then <kbd>]</kbd>
+            </li>
         </ul>
     </li>
     <li>All changed punctuation can type their original value by holding down the Right-Alt or Option key — the
-        Left-Bracket [ is typed Right-Alt+Left-Bracket (Windows) Option+Left-Bracket (Mac).</li>
+        Left-Bracket [ is typed <kbd>Right-Alt</kbd>+<kbd>[</kbd> (Windows) / <kbd>⌥ Option</kbd>+<kbd>[</kbd> (Mac).
+    </li>
 </ul>
 
 
