@@ -135,6 +135,3 @@ END;
         <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
             bar.</li>
     </ul>
-
-    <h3>Keyboard map</h3>
-    <div id='osk-tablet' data-states='default shift'></div>
