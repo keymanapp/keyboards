@@ -1,5 +1,10 @@
 Hul̓q̓umin̓um̓ Change History
 ============================
+2.0.1 (9 Jul 2024)
+-----------------
+* Tidied documentation
+* Added alternate names
+
 2.0 (3 Jul 2024)
 -----------------
 * New desktop layout

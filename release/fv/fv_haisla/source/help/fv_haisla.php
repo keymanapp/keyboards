@@ -31,8 +31,11 @@ END;
 </div>
 
 <h2>Unicode Fonts</h2>
-						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
-    <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
+<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please
+    use these fonts when typing in your language as they have been specially built to represent your language as
+    accurately as possible. </p>
+<h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and
+        Aboriginal Serif</a></h3>
 
 <h3>Notes on touch layout</h3>
 <div id='wikitext'>
@@ -71,7 +74,7 @@ END;
             <td align='center'>b</td>
             <td align='center'>n n̓</td>
             <td align='center'>m m̓</td>
-            <td align='center'colspan='2'>⌫</td>
+            <td align='center' colspan='2'>⌫</td>
         </tr>
         <tr>
             <td align='center'>123</td>
@@ -88,4 +91,6 @@ END;
     <ul>
         <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
         <li>Capital forms for λ, ƛ and ƛ̓ are unavailable.</li>
+        <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
+            bar.</li>
     </ul>

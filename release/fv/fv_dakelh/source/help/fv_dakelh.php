@@ -33,7 +33,7 @@ END;
     </li>
     <li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.
         <ul>
-            <li>single: ‘ <kbd>SHIFT</kbd>+<kbd>`</kbd> — ’ Apostrophe</li>
+            <li>single: ‘ <kbd>SHIFT</kbd>+<kbd>`</kbd> — ’ <kbd>'</kbd></li>
             <li>double: “ <kbd>SHIFT</kbd>+<kbd>-</kbd> — ” <kbd>SHIFT</kbd>+<kbd>=</kbd></li>
             <li>single ‹ <kbd>Right-Alt</kbd>+<kbd>SHIFT</kbd>+<kbd>9</kbd> — › <kbd>Right-Alt</kbd>+<kbd>SHIFT</kbd>+<kbd>0</kbd>
             </li>
