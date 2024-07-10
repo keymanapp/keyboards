@@ -157,14 +157,14 @@ any(NumbersAndPunctuation) + any(macronKeys) > context beep
 
 any(acuteVowels) + any(acuteKeys) > context beep c no stacking acute accent on already accented V
 
-U+0313 + any(glottalKeys) > context beep c no double stacking glottals
+U+0313 + any(glottalKeys) > context beep c no double stacking diacritics
 U+0301 + any(acuteKeys) > context beep
 U+0331 + any(macronKeys) > context beep
 
-U+0313 + any(acuteKeys) > context beep c no acute on glottal
+U+0313 + any(acuteKeys) > context beep c no stacking on glottal
 U+0313 + any(macronKeys) > context beep
 
-U+0301 + any(macronKeys) > context beep c no macron on acute
+U+0301 + any(macronKeys) > context beep c no stacking on acute
 U+0301 + any(glottalKeys) > context beep
 
 any(acuteVowels) + any(glottalKeys) > context beep c no glottal on acute vowels

@@ -35,9 +35,9 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 			</li>
 			<li>The letter ḵ can be typed with the Left Bracket <kbd>[</kbd> key.</li>
 			<li>The letter x̱ can be typed with the Right Bracket <kbd>]</kbd> key.</li>
-			<li>The weak glottal ’ is typed with the Apostrophe key <kbd>'<<kbd>kbd>.</li>
+			<li>The weak glottal ’ is typed with the Apostrophe key <kbd>'</kbd>.</li>
 			<li>All changed punctuation can type their original value by holding down the <kbd>Right-Alt</kbd> key (Windows) or <kbd>Option</kbd> key (Mac). <br />
-					The Semicolon ; is typed <kbd>RightAlt</kbd>+<kbd>Semicolon</kbd> (Windows) or <kbd>Option</kbd>+<kbd>Semicolon</kbd> (Mac).</li>
+					The Semicolon ; is typed <kbd>RightAlt</kbd>+<kbd>;</kbd> (Windows) or <kbd>Option</kbd>+<kbd>;</kbd> (Mac).</li>
 		</ul>
 
 <h2>Notes on touch layout</h2>
