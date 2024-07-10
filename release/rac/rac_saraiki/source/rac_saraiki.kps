@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Rachitrali-Saraiki</Folder>
@@ -30,6 +31,9 @@
     <Copyright URL="">© 2018 Rehmat Aziz Chitrali Linguist and Researcher at Khowar Academy, Khot Valley, Torkhow, District Chitral, Khyber Pakhtunkhwa Pakistan</Copyright>
     <Author URL="mailto:rachitrali@yahoo.com">Rehmat Aziz Chitrali</Author>
     <Version URL="">1.0</Version>
+    <Description>This keyboard was developed by Rehmat Aziz Chitrali Linguist and
+Researcher at Khowar Academy Chitral Pakistan for keyboarding the
+Saraiki language in the Arabic Script.</Description>
   </Info>
   <Files>
     <File>
@@ -116,6 +120,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -127,7 +137,10 @@
       <Languages>
         <Language ID="skr-Arab">Saraiki (Arabic)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="skr-Arab" Keys="s r a [ i k i" Text="سرائیکی" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

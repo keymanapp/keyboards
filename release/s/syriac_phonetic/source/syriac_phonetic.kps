@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,6 +19,12 @@
   <Info>
     <Name URL="">Syriac (Phonetic layout)</Name>
     <Copyright URL="">© 2007-2018 SIL International</Copyright>
+    <Description>Syriac (Phonetic layout) is designed for use with Aramaic, Syriac and
+related languages. The Syriac (Phonetic layout) keyboards is based on
+standard Syriac keyboards.
+
+The fonts included with these keyboards have been provided by [Beth
+Mardutho: The Syriac Institute](http://www.BethMardutho.org/).</Description>
   </Info>
   <Files>
     <File>
@@ -278,6 +285,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -308,4 +321,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="aramaic" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

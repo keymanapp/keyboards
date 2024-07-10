@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,8 @@
     <Copyright URL="">© 2023 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>This keyboard is designed for typing Kurdish Sorani Behdini in the
+Arabic script. It is based on a phonetic layout.</Description>
   </Info>
   <Files>
     <File>
@@ -130,6 +133,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -139,6 +148,7 @@
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new_kurd\ScheherazadeNewKurd-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new_kurd\ScheherazadeNewKurd-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="ScheherazadeNewKurd-Regular.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="ku-Arab">Kurdish</Language>
         <Language ID="kmr-Arab">Northern Kurdish (Arabic)</Language>

@@ -1,7 +1,7 @@
-Dene Dzage keyboard
+Danezāgéʼ keyboard
 ======================
 
-Dene Dzage keyboard layout for Unicode
+Danezāgéʼ keyboard layout for Unicode
 
 Links
 -----

@@ -1,7 +1,7 @@
-Háiɫzaqvḷa keyboard
+Haíɫzaqvḷa keyboard
 ======================
 
-Háiɫzaqvḷa Unicode keyboard layout
+Haíɫzaqvḷa Unicode keyboard layout
 
 Links
 -----

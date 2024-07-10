@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2021 National Research Council Canada
+Copyright © 2021 National Research Council Canada
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
