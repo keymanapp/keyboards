@@ -23,6 +23,23 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 <div id='osk'>
 </div>
 
+		<ul>
+			<li>All accents are typed after the base character — w̓ is typed <kbd>w</kbd> then Backquote <kbd>`</kbd>
+				<ul>
+						<li>To type the acute accent use the Semicolon key <kbd>;</kbd> — á is typed <kbd>a</kbd> then Semicolon <kbd>;</kbd></li>
+						<li>To type the combining glottalized accent use the Backquote key <kbd>`</kbd> (next to the 1 key) — m̓ is typed <kbd>m</kbd> then Backquote <kbd>`</kbd><br />
+								The weak glottal is typed by using the Apostrophe key <kbd>'</kbd></li>
+						<li>To type the underline accent (below macron) use the Hyphen key — ḵ is typed <kbd>k</kbd> then Hyphen <kbd>-</kbd> <br />
+								The letters ḵ, x̱ also have their own keys: left bracket <kbd>[</kbd>, right bracket <kbd>]</kbd></li>
+					</ul>
+			</li>
+			<li>The letter ḵ can be typed with the Left Bracket <kbd>[</kbd> key.</li>
+			<li>The letter x̱ can be typed with the Right Bracket <kbd>]</kbd> key.</li>
+			<li>The weak glottal ’ is typed with the Apostrophe key <kbd>'<<kbd>kbd>.</li>
+			<li>All changed punctuation can type their original value by holding down the <kbd>Right-Alt</kbd> key (Windows) or <kbd>Option</kbd> key (Mac). <br />
+					The Semicolon ; is typed <kbd>RightAlt</kbd>+<kbd>Semicolon</kbd> (Windows) or <kbd>Option</kbd>+<kbd>Semicolon</kbd> (Mac).</li>
+		</ul>
+
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
 <div class='vspace'></div>
@@ -79,11 +96,6 @@ This keyboard is designed for the <b>Sḵwx̱wú7mesh sníchim</b> language of
 	<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
 </ul>
 <div class='vspace'></div>
-<h3>Alternate Name</h3>
-<ul>
-<li>Squamish</li>
-</ul>
-</div>
-<br/>
+
 
 
