@@ -81,7 +81,7 @@ c + [T_Q] > '?'
 + [T_E_0] > 'é'
 + [T_E] > 'e'
 + [T_R] > '7'
-+ [T_T_1] > 'tl’'
++ [T_T_1] > "tl’"
 + [T_T_0] > 't’'
 + [T_T] > 't'
 + [T_TS_0] > 'ts’'
@@ -166,6 +166,13 @@ U+0313 + any(macronKeys) > context beep
 
 U+0301 + any(macronKeys) > context beep c no macron on acute
 U+0301 + any(glottalKeys) > context beep
+
+any(acuteVowels) + any(glottalKeys) > context beep c no glottal on acute vowels
+
+any(plainResonants) + any(acuteKeys) > context beep c no acute on resonants
+
+U+2019 + any(acuteKeys) > context beep c no acute accent on the curly apostrophe
+
 
 C DESKTOP LAYOUT
 
