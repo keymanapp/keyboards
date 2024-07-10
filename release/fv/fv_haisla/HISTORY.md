@@ -1,5 +1,9 @@
 Haisla Change History
 ====================
+2.1.1 (10 Jul 2024)
+----------------
+* Updated link
+
 2.1 (9 Jul 2024)
 ----------------
 * Tidied up documentation
