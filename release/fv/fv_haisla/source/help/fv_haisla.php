@@ -17,7 +17,7 @@ END;
 <p>
 <p>
     More information about the Haisla archive on FirstVoices can be found here:
-    <h3><a href="https://www.firstvoices.com/explore/FV/sections/Data/Haisla/Haisla/Haisla">Haisla</a></h3>
+    <h3><a href="https://www.firstvoices.com/haisla/">Haisla</a></h3>
 </p>
 
 <h1>Keyboard Layout</h1>
