@@ -7,6 +7,7 @@ Nisg̱a'a Change History
 * Tidied documentation
 * Added alternate way to type Slash in Google Workspace
 * Removed web help in favour of OSK
+* Added alternate names
 
 9.1.2 (6 Mar 2023)
 -------------------
