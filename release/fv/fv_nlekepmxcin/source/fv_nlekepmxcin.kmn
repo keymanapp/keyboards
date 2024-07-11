@@ -32,7 +32,7 @@ store(&LAYOUTFILE) 'fv_nlekepmxcin.keyman-touch-layout'
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I_1] > 'Ị' layer('default')
-+ [SHIFT T_I_2] > U+0049 U+0323 U+0301 layer('default')
++ [SHIFT T_I_2] > U+1ECA U+0301 layer('default') c 'Ị́'
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O_0] > 'Ó' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
@@ -43,7 +43,7 @@ store(&LAYOUTFILE) 'fv_nlekepmxcin.keyman-touch-layout'
 + [SHIFT T_S_0] > 'Ṣ' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'ʔ' layer('default')
-+ [SHIFT T_F] > 'ƛ̓' layer('default')
++ [SHIFT T_F] > 'ƛ̓' layer('default') c see TODO
 + [SHIFT T_G_0] > 'Ɣ̓' layer('default')
 + [SHIFT T_G] > 'Ɣ' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
@@ -177,6 +177,7 @@ store(topaccentkey) "`;'"
 
 any(topaccent) + any(topaccentkey) > context beep
 any(HasAcute) + any(topaccentkey) > context beep
+any(HasGrave) + any(topaccentkey) > context beep
 
 store(lowaccent) U+0323 
 any(lowaccent) + "1" > context beep
@@ -203,7 +204,7 @@ c glottaled
 store(MiniGlot0) [CAPS SHIFT K_8] [NCAPS K_8]  
 store(MiniGlot1)  "ƛƛ"
 store(MajGlot0)  [NCAPS SHIFT K_8] [CAPS K_8] 
-store(MajGlot1) U+F899 U+F899
+store(MajGlot1) U+A7DC U+A7DC c see TODO
 + any(MiniGlot0) > index(MiniGlot1,1) "̓"
 + any(MajGlot0) > index(MajGlot1,1) "̓"           
 
