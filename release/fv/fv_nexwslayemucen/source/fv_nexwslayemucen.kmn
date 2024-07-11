@@ -138,5 +138,9 @@ store(needsGlottal) "čcmlnŋwyptkqČCMLNŊWYPTKQ"
 store(glottalKeys) [T_F] [SHIFT T_F] c add desktop
 any(needsGlottal) + any(glottalKeys) > index(needsGlottal,1) U+0315
 
-
+c combining glottal on rounded sounds
+'kʷ' + any(glottalKeys) > 'k̕ʷ'
+'Kʷ' + any(glottalKeys) > 'Kʷ'
+'qʷ' + any(glottalKeys) > '̕qʷ'
+'Qʷ' + any(glottalKeys) > '̕Qʷ'
 
