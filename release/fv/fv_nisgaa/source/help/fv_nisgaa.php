@@ -26,10 +26,12 @@ END;
             <li>To type the underline accent use the Semicolon key <kbd>;</kbd> — g̱ is typed <kbd>g</kbd> then
                 <kbd>;</kbd><br />
                 Always use this key to type the underline accent, never use your word processor’s underline formatting
-                function.</li>
+                function.
+            </li>
             <li>To type the apostrophe accent use the Slash key <kbd>/</kbd> — w̓ is typed <kbd>w</kbd> then
                 <kbd>/</kbd><br />
-                This accent is not the same as the spacing apostrophe, as in p’.</li>
+                This accent is not the same as the spacing apostrophe, as in p’.
+            </li>
         </ul>
     </li>
     <li>You can type the English value of the punctuation keys by holding down the Right-Alt or Option key — the
@@ -44,7 +46,8 @@ END;
             <li>single: ‘ <kbd>Shift</kbd>+<kbd>`</kbd> — ’ <kbd>'</kbd></li>
             <li>double: “ <kbd>Shift</kbd>+<kbd>[</kbd> — ” <kbd>Shift</kbd>+<kbd>]</kbd></li>
             <li>single ‹ <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd> — ›
-                <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd></li>
+                <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>
+            </li>
             <li>double « <kbd>Right-Alt</kbd>+<kbd>9</kbd> — » <kbd>Right-Alt</kbd>+<kbd>0</kbd></li>
         </ul>
     </li>
@@ -57,7 +60,7 @@ END;
 <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and
         Aboriginal Serif</a></h3>
 
-		<h2>Notes on touch layout</h2>
+<h2>Notes on touch layout</h2>
 <div id='wikitext'>
     <div class='vspace'></div>
     <table border='1' style='border-collapse:collapse' cellpadding='5'>
@@ -83,7 +86,7 @@ END;
             <td align='center'>j</td>
             <td align='center'>k</td>
             <td align='center'>l l̓</td>
-			<td>&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td align='center'>⇧</td>
@@ -94,23 +97,24 @@ END;
             <td align='center'>b</td>
             <td align='center'>n n̓</td>
             <td align='center'>m m̓</td>
-            <td align='center'colspan='2'>⌫</td>
+            <td align='center' colspan='2'>⌫</td>
         </tr>
-		<tr>
+        <tr>
             <td align='center'>123</td>
             <td align='center'>🌐</td>
-			<td align='center'>' "</td>
+            <td align='center'>' "</td>
             <td align='center' colspan='4'>space</td>
             <td align='center'>.</td>
-            <td align='center'colspan='2'>⏎</td>
+            <td align='center' colspan='2'>⏎</td>
         </tr>
     </table>
     <div class='vspace'></div>
     <ul>
-        <li>keys with a red background are combining accents.
+        <li>Keys with a red background are combining accents. On your mobile device, these keys will have green text.
         </li>
-        <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-        </li>
+        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
+        </li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
+        bar.</li>
     </ul>
     <div class='vspace'></div>
 </div>
