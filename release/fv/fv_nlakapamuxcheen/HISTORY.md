@@ -4,6 +4,7 @@ fv_nlakapamuxcheen Change History
 ----------------
 * Tidied documentation
 * Tweaked mobile layout
+* Removed OSK in favour of web help
 
 1.0.2 (14 May 2024)
 ----------------
