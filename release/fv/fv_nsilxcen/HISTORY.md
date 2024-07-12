@@ -1,5 +1,11 @@
 Nsilxcən Change History
 ============================
+9.4 (11 Jul 2024)
+------------------
+* Tidied documentation
+* Added TODO to README
+* 
+
 9.3 (6 Feb 2024)
 ------------------
 * Added mid dot and č̓ to mobile layout
