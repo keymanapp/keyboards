@@ -1,6 +1,6 @@
 Nsilxcən Change History
 ============================
-9.3 (6 Febr 2024)
+9.3 (6 Feb 2024)
 ------------------
 * Added mid dot and č̓ to mobile layout
 
