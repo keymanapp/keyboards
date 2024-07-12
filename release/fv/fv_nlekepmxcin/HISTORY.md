@@ -6,7 +6,8 @@ Nɬeʔkepmxcín Change History
 * Tweaked mobile layout
 * Added TODO to README
 * Updated to new capital barred lamda on desktop layout
-
+* Removed web help in favour of OSK
+* Added ` and ~ to original punctuation rules
 
 9.4 (9 Apr 2024)
 -------------------
