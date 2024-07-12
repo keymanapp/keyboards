@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.3'
+store(&KEYBOARDVERSION) '10.0'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "oka"
 store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
-store(&NAME) 'Nsilxcən'
+store(&NAME) 'Nsyilxcən'
 store(&BITMAP) 'fv_nsilxcen.ico'
 store(&VISUALKEYBOARD) 'fv_nsilxcen.kvks'
-store(&KMW_HELPFILE) 'fv_nsilxcen_kmw_help.htm'
 begin Unicode > use(main)
                                  
 group(main) using keys
@@ -38,7 +37,7 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
-+ [SHIFT T_O] > 'ƛ̓' layer('default')
++ [SHIFT T_O] > 'ƛ̓' layer('default') c see TODO
 + [SHIFT T_P_0] > 'P̓' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
 + [SHIFT T_A_0] > 'Á' layer('default')
@@ -67,33 +66,6 @@ store(&LAYOUTFILE) 'fv_nsilxcen.keyman-touch-layout'
 + [SHIFT T_C_1] > 'Č' layer('default')
 + [SHIFT T_C_2] > 'Č̓' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-'c' + [SHIFT T_V] > 'c̓'
-'č' + [SHIFT T_V] > 'č̓'
-'k' + [SHIFT T_V] > 'k̓'
-'l' + [SHIFT T_V] > 'l̓'
-'m' + [SHIFT T_V] > 'm̓'
-'n' + [SHIFT T_V] > 'n̓'
-'p' + [SHIFT T_V] > 'p̓'
-'q' + [SHIFT T_V] > 'q̓'
-'r' + [SHIFT T_V] > 'r̓'
-'t' + [SHIFT T_V] > 't̓'
-'w' + [SHIFT T_V] > 'w̓'
-'y' + [SHIFT T_V] > 'y̓'
-'ɣ' + [SHIFT T_V] > 'ɣ̓'
-'C' + [SHIFT T_V] > 'C̓'
-'Č' + [SHIFT T_V] > 'Č̓'
-'K' + [SHIFT T_V] > 'K̓'
-'L' + [SHIFT T_V] > 'L̓'
-'M' + [SHIFT T_V] > 'M̓'
-'N' + [SHIFT T_V] > 'N̓'
-'P' + [SHIFT T_V] > 'P̓'
-'Q' + [SHIFT T_V] > 'Q̓'
-'R' + [SHIFT T_V] > 'R̓'
-'T' + [SHIFT T_V] > 'T̓'
-'W' + [SHIFT T_V] > 'W̓'
-'Y' + [SHIFT T_V] > 'Y̓'
-'Ɣ' + [SHIFT T_V] > 'Ɣ̓'
-'ʕ' + [SHIFT T_V] > 'ʕ̓'
 + [SHIFT T_PHAR_0] > 'ʕ̓' layer('default')
 + [SHIFT T_PHAR] > 'ʕ' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
@@ -173,25 +145,32 @@ store(NeedsCaron) 'csCS'
 store(HasCaron) 'čšČŠ'
 store(Caron) U+030C
 store(CaronKeys) [NCAPS K_7] [CAPS K_7] [NCAPS SHIFT K_7] [CAPS SHIFT K_7] [T_CAR]
-any(HasCaron) + any(CaronKeys) > context beep
-any(Caron) + any(CaronKeys) > context beep
 any(NeedsCaron) + any(CaronKeys) > index(HasCaron,1)
 
 c Acute Rules
-store(NeedsAcute) 'aeiouAEIOU'
+store(Vowels) 'aeiouAEIOU'
 store(HasAcute) 'áéíóúÁÉÍÓÚ'
-store(AcuteKey) [K_COLON] [T_ACU]
-any(NeedsAcute) + any(AcuteKey) > index(HasAcute,1)
+store(AcuteKey) [K_COLON] [T_ACU] [SHIFT T_ACU]
+any(Vowels) + any(AcuteKey) > index(HasAcute,1)
+
+c Grave Rules
+store(HasGrave)'àèìòùÀÈÌÒÙ'
+store(GraveKey) [K_BKQUOTE]
+any(Vowels) + any(GraveKey) > index(HasGrave,1)
 
 c Combining Apostrophe rules
 store(NeedsCApos) 'cčklmnpqrtwyɣCČKLMNPQRTYƔʕ'
 store(CAposKeys) [T_CAPO] [SHIFT T_CAPO]
 any(NeedsCApos) + any(CAposKeys) > index(NeedsCApos,1) U+0313
 
+c Stacking Prevention
 any(underaccent) + any(underaccentkey) > context beep
 any(overaccent) + any(overaccentkey) > context beep  
 any(underaccent) any(overaccent) + any(underaccentkey) > context beep
-
+any(HasCaron) + any(CaronKeys) > context beep
+any(Caron) + any(CaronKeys) > context beep
+any(HasAcute) + any(overaccentkey) > context beep
+any(HasGrave) + any(overaccentkey) > context beep
 
 store(accentkey) "1" [K_Quote] "`" ";"
 store(CapsAccentKey) [NCAPS K_7] [CAPS K_7] [NCAPS SHIFT K_7] [CAPS SHIFT K_7]
@@ -201,7 +180,7 @@ any(NumbersAndPunctuation) + any(CapsAccentKey) > context beep
 
 c Backspace Rules
 store(Backspace) [K_BKSP]
-any(HasAcute) + any(Backspace) > index(NeedsAcute,1)
+any(HasAcute) + any(Backspace) > index(Vowels,1)
 any(HasCaron) + any(Backspace) > index(NeedsCaron,1)
 
 c Original Punctuation
@@ -233,6 +212,7 @@ c Original Punctuation
 + [NCAPS RALT K_3] > '3'
 + [NCAPS RALT K_2] > '2'
 + [RALT K_1] > '1'
++ [RALT K_BKQUOTE] > '`'
 + [RALT K_QUOTE] > U+0027  
 + [SHIFT RALT K_BKSLASH] > '|'
 + [RALT K_BKSLASH] > '\'
@@ -253,7 +233,7 @@ c Language specific
 + ">" > ")"
 
 + [CAPS K_9] > U+A7AD
-+ [CAPS K_8] > '̓'
++ [CAPS K_8] > U+A7DC U+0313 c see TODO
 + [CAPS K_7] > U+030C c combining caron
 + [CAPS K_5] > 'Ɣ'
 + [CAPS K_3] > "Ə"
@@ -261,7 +241,7 @@ c Language specific
 
 + ")" > "¢"  
 + [NCAPS SHIFT K_9] > U+A7AD
-+ [NCAPS SHIFT K_8] > '̓'
++ [NCAPS SHIFT K_8] > U+A7DC U+0313 c see TODO
 + [NCAPS SHIFT K_7] > U+030C c combining caron
 + [NCAPS SHIFT K_5] > 'Ɣ'
 + [NCAPS SHIFT K_3] > "Ə"
