@@ -34,7 +34,7 @@ C MOBILE - shift layer
 + [SHIFT T_U] > 'Y' layer('default')
 + [SHIFT T_I_0] > 'Ú' layer('default')
 + [SHIFT T_I] > 'U' layer('default')
-+ [SHIFT T_O_0] > 'I' layer('default')
++ [SHIFT T_O_0] > 'Í' layer('default')
 + [SHIFT T_O] > 'I' layer('default')
 + [SHIFT T_P_0] > 'P̕' layer('default')
 + [SHIFT T_P] > 'P' layer('default')
@@ -127,6 +127,8 @@ store(acuteVowels) "áéíóúÁÉÍÓÚ"
 store(acuteKeys) [T_ACUTE] [SHIFT T_ACUTE] c add desktop
 any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
 any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+store(schwa) "əƏ"
+any(schwa) + any(acuteKeys) > index(schwa,1) U+0301
 
 c letters with hacek - backspace rule
 store(noHacek) "csCS"
