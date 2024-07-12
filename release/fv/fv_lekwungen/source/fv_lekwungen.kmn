@@ -5,7 +5,7 @@ store(&COPYRIGHT) '(c) 2024 FirstVoices, SIL International.'
 store(&NAME) 'Lekwungen (Lək̓ʷəŋən)'
 store(&LAYOUTFILE) 'fv_lekwungen.keyman-touch-layout'
 store(&VISUALKEYBOARD) 'fv_lekwungen.kvks'
-store(&TARGETS) 'mobile'
+store(&TARGETS) 'any'
 begin Unicode > use(main)
                                                                                      
 group(main) using keys
@@ -161,6 +161,8 @@ any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
 c ****************
 c Main
 c **************
+
+
 
                               
 nomatch > use(x)                            
