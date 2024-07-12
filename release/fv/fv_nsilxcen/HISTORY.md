@@ -1,10 +1,14 @@
-Nsilxcən Change History
+Nsyilxcən Change History
 ============================
-9.4 (11 Jul 2024)
+10.0 (11 Jul 2024)
 ------------------
+* Changed keyboard name
 * Tidied documentation
 * Added TODO to README
-* 
+* Updated capital barred lamda to code releasing fall 2024
+* Normalized further
+* Improved on stacking prevention
+* Removed web help in favour of OSK
 
 9.3 (6 Feb 2024)
 ------------------
