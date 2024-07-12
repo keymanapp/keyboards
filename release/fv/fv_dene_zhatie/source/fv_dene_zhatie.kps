@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Dene Zhatıe</Name>
-    <Copyright URL="">(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Name URL="">Dene Zhatıé</Name>
+    <Copyright URL="">(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
     <Version URL=""></Version>
-    <Description>This keyboard is designed for the Dene Zhatié language of the Western
+    <Description URL="">This keyboard is designed for the Dene Zhatıé language of the Western
 Subarctic region of Canada. This is part of a set of keyboards from
-FirstVoices.</Description>
+FirstVoices. 
+
+Alternate names: 
+
+Dene K'e
+
+Dene K'eh
+
+Dene Zhatie
+
+South Slavey</Description>
   </Info>
   <Files>
     <File>
@@ -80,19 +91,67 @@ FirstVoices.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansBOLD.ttf</Name>
+      <Description>Font Aboriginal Sans Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansBOLDITALIC.ttf</Name>
+      <Description>Font Aboriginal Sans Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansITALIC.ttf</Name>
+      <Description>Font Aboriginal Sans Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansREGULAR.ttf</Name>
+      <Description>Font Aboriginal Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifBOLD.ttf</Name>
+      <Description>Font Aboriginal Serif Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifBOLDITALIC.ttf</Name>
+      <Description>Font Aboriginal Serif Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifITALIC.ttf</Name>
+      <Description>Font Aboriginal Serif Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</Name>
+      <Description>Font Aboriginal Serif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dene Zhatıé</Name>
       <ID>fv_dene_zhatie</ID>
-      <Version>10.0</Version>
+      <Version>10.0.2</Version>
       <Languages>
         <Language ID="den">Dene Zhatıé</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="fv_dene_zhatie_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="fv_dene_zhatie_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

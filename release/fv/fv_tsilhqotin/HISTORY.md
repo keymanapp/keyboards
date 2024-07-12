@@ -1,5 +1,15 @@
 Tŝilhqot'in Change History
 ============================
+9.2 (10 Jul 2024)
+-------------------
+* Normalized outputs
+* Tidied rules and stores
+* Added more stacking prevention
+* Added U+2019 to mobile layout
+* Tweaked mobile layout
+* Tidied documentation
+* Added alternate names
+* Removed web help in favour of OSK
 
 9.1.3 (6 Mar 2023)
 -------------------

@@ -20,16 +20,21 @@ This keyboard is designed for the <b>Sm'algya̱x</b> language of the BC Coast re
 
 <img src="Tsimshian.png" alt="" height="198" width="514" border="0" /></h2>
 					<ul>
-						<li>All accents are typed after the base character: a̱ is typed a then Semicolon ;</li>
+						<li>All accents are typed after the base character — a̱ is typed a then Semicolon ;</li>
 						<li>To type the underline accent use the Semicolon key ; — ḵ is typed k then Semicolon ;</li>
-						<li>All changed punctuation can type their original value by holding down the Right-Alt or Option key. The Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).</li>
-						<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.</li>
-						<ul>
-									<li>single: ‘ Backquote — ’ Apostrophe</li>
-									<li>double: “ Shift+Hyphen — ” Shift+Equals</li>
-									<li>single ‹ Right-Alt+Shift+9 — › Right-Alt+Shift+0</li>
-									<li>double « Right-Alt+9 — » Right-Alt+0</li>
-								</ul>
+						<li>All changed punctuation can type their original value by holding down the Right-Alt or Option key — the Semicolon ; is typed Right-Alt+Semicolon (Windows) Option+Semicolon (Mac).
+							<ul>
+                  				<li>NOTE: When using Google Docs, / is typed Shift+Right-alt+Slash / (Windows) or Shift+Option+Slash / (Mac)</li>
+              				</ul>
+						</li>
+						<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.
+							<ul>
+								<li>single: ‘ Backquote — ’ Apostrophe</li>
+								<li>double: “ Shift+Hyphen — ” Shift+Equals</li>
+								<li>single ‹ Right-Alt+Shift+9 — › Right-Alt+Shift+0</li>
+								<li>double « Right-Alt+9 — » Right-Alt+0</li>
+							</li>
+						</ul>
 						<h2>Unicode Fonts</h2>
 						<p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please use these fonts when typing in your language as they have been specially built to represent your language as accurately as possible. </p>
     <h3><a href="http://www.languagegeek.com/font/fontdownload.html">Download the latest version of Aboriginal Sans and Aboriginal Serif</a></h3>
@@ -37,19 +42,59 @@ This keyboard is designed for the <b>Sm'algya̱x</b> language of the BC Coast re
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
 <div class='vspace'></div>
-<table border='1' style='border-collapse:collapse' cellpadding='5' ><tr ><td  align='center'>ḵ</td><td  align='center'>w</td><td  align='center'>e</td><td  align='center'>ł</td><td  align='center'>t</td><td  align='center'>y</td><td  align='center'>u</td><td  align='center'>i</td><td  align='center'>o</td><td  align='center'>p</td></tr>
-<tr ><td  align='center'>a</td><td  align='center'>s</td><td  align='center'>d</td><td  align='center'>g̱</td><td  align='center'>g</td><td  align='center'>h</td><td  align='center'>j</td><td  align='center'>k</td><td  align='center'>l</td><td  align='center'>' "</td></tr>
-<tr ><td >&nbsp;</td><td  align='center'>a̱</td><td  align='center'>z</td><td  align='center'>x x̲</td><td  align='center'>ẅ</td><td  align='center'>ü</td><td  align='center'>b</td><td  align='center'>n</td><td  align='center'>m</td><td >&nbsp;</td></tr>
+<table border='1' style='border-collapse:collapse' cellpadding='5' >
+	<tr >
+		<td  align='center'>ḵ</td>
+		<td  align='center'>w</td>
+		<td  align='center'>e</td>
+		<td  align='center'>ł</td>
+		<td  align='center'>t</td>
+		<td  align='center'>y</td>
+		<td  align='center'>u</td>
+		<td  align='center'>i</td>
+		<td  align='center'>o</td>
+		<td  align='center'>p</td>
+	</tr>
+	<tr >
+		<td  align='center'>a</td>
+		<td  align='center'>s</td>
+		<td  align='center'>d</td>
+		<td  align='center'>g̱</td>
+		<td  align='center'>g</td>
+		<td  align='center'>h</td>
+		<td  align='center'>j</td>
+		<td  align='center'>k</td>
+		<td  align='center'>l</td>
+		<td  align='center'>' "</td>
+	</tr>
+	<tr>
+		<td  align='center'>⇧</td>
+		<td  align='center'>a̱</td>
+		<td  align='center'>z</td>
+		<td  align='center'>x x̲</td>
+		<td  align='center'>ẅ</td>
+		<td  align='center'>ü</td>
+		<td  align='center'>b</td>
+		<td  align='center'>n</td>
+		<td  align='center'>m</td>
+		<td  align='center'>⌫</td>
+	</tr>
+	<tr>
+		<td  align='center'>123</td>
+		<td  align='center'>🌐</td>
+		<td  align='center'colspan="5" >space</td>
+		<td  align='center'>.</td>
+		<td  align='center'colspan="2" >⏎</td>
+	</tr>
 </table>
-<div class='vspace'></div><ul><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-</li><li>Southern Tsimshian/Sgüüxs can also use this keyboard
-</li></ul><div class='vspace'></div><h3>Alternate Name</h3>
-<ul><li>Tsimshian
-</li></ul>
-</div>
+<div class='vspace'></div>
+<ul>
+	<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+	<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
+	<li>Southern Tsimshian/Sgüüx̱s can also use this keyboard</li>
+</ul>
 
 <br/>
 
 <h2>Keyboard Layout</h2>
-<div id='osk'>
-</div>
+<div id='osk'></div>

@@ -1,5 +1,16 @@
 Haisla Change History
 ====================
+2.1.1 (10 Jul 2024)
+----------------
+* Updated link
+
+2.1 (9 Jul 2024)
+----------------
+* Tidied up documentation
+* Updated mobile layout
+* Added Aboriginal Sans and Serif to package
+* Removed OSK in favour of web help
+
 2.0.1 (28 Mar 2024)
 ----------------
 * Updated welcome

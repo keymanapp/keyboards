@@ -1,5 +1,17 @@
-Dene Dzage Change History
+Danezāgéʼ Change History
 ============================
+11.0.1 (8 Jul 2024)
+-----------------
+* Corrected typo
+
+11.0 (5 Jul 2024)
+-----------------
+* Added alternate names
+* Tidied table
+* Removed OSK in favour of Web Help
+* Tidied documentation
+* Updated name from Dene Dzage to Danezāgéʼ
+
 10.0 (27 Mar 2024)
 -----------------
 * Built desktop keyboard

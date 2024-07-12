@@ -1,5 +1,8 @@
 Balochi Phonetic Change History
 ===============================
+1.6.2 (12 Jun 2024)
+------------------
+* Added backslash 
 
 1.5 (31 Aug 2022)
 -----------------
