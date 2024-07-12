@@ -1,48 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">US Basic</Name>
-    <Copyright URL="">© 2008-2020 SIL International</Copyright>
+    <Name URL="">Mitterhofer</Name>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>This keyboard is designed for the English language. It will also be
-useful for other languages that do not require special characters. This
-keyboard matches the following Windows 10 input methods: Chinese
-(Traditional) - US, US, Chinese (Simplified) - US, Chinese (Traditional,
-Hong Kong S.A.R.) - US, Chinese (Simplified, Singapore) - US, Chinese
-(Traditional, Macao S.A.R.) - US, Bulgarian (Latin).</Description>
+    <Description URL="">This keyboard is based on Mitterhofer typewriter layout.</Description>
   </Info>
   <Files>
     <File>
-      <Name>..\build\basic_kbdus.kmx</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\build\basic_kbdus.js</Name>
+      <Name>..\build\mitterhofer.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\basic_kbdus.kvk</Name>
+      <Name>..\build\mitterhofer.kvk</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
@@ -80,40 +69,16 @@ Hong Kong S.A.R.) - US, Chinese (Simplified, Singapore) - US, Chinese
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>US Basic</Name>
-      <ID>basic_kbdus</ID>
-      <Version>1.2</Version>
+      <Name>Mitterhofer</Name>
+      <ID>mitterhofer</ID>
+      <Version>1.0</Version>
       <Languages>
         <Language ID="en">English</Language>
-        <Language ID="bg-Latn">Bulgarian (Latin)</Language>
-        <Language ID="id">Indonesian</Language>
-        <Language ID="io-Latn">Ido (Latin)</Language>
-        <Language ID="ia-Latn">Interlingua (International Auxiliary Language (Latin)</Language>
-        <Language ID="zlm-Latn">Malay (individual language) (Latin)</Language>
-        <Language ID="ms">Malay (macrolanguage)</Language>
-        <Language ID="bi-Latn">Bislama (Latin)</Language>
-        <Language ID="gil-Latn">Gilbertese (Latin)</Language>
-        <Language ID="ht">Haitian</Language>
-        <Language ID="mwl-Latn">Mirandese (Latin)</Language>
-        <Language ID="blc-Latn">Bella Coola (Latin)</Language>
-        <Language ID="roo-Latn">Rotokas (Latin)</Language>
-        <Language ID="so">Somali</Language>
-        <Language ID="sw">Swahili (macrolanguage)</Language>
-        <Language ID="tl">Tagalog</Language>
-        <Language ID="ty-Latn">Tahitian (Latin)</Language>
-        <Language ID="to">Tonga (Tonga Islands)</Language>
-        <Language ID="uli-Latn">Ulithian (Latin)</Language>
-        <Language ID="uz-Latn">Uzbek (Latin)</Language>
-        <Language ID="yap-Latn">Yapese (Latin)</Language>
       </Languages>
       <Examples>
-        <Example ID="en" Keys="T h e space q u i c k space b r o w n space f o x" Text="The quick brown fox" Note="&quot;The quick brown fox&quot;" />
+        <Example ID="en" Keys="T h e space q u i c k space b r o w n space f o x" Text="The quick brown fox" Note="&quot;The quick brown fox&quot;"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
   <Strings/>
-  <RelatedPackages>
-    <RelatedPackage ID="kbdus" Relationship="deprecates" />
-    <RelatedPackage ID="us" Relationship="deprecates" />
-  </RelatedPackages>
 </Package>
