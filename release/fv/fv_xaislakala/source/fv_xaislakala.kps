@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">X̄a'’islak̓ala</Name>
-    <Copyright URL="">© 2008-2021 FirstVoices, SIL International. Portions © 2006 Chris Harvey</Copyright>
+    <Name URL="">X̄aʼislak̓ala</Name>
+    <Copyright URL="">© 2008-2024 FirstVoices, SIL International. Portions © 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>X̄a\'ʼislak̓ala (Haisla) keyboard layout for Unicode. This is part of a
-set of keyboards from FirstVoices.</Description>
+    <Description URL="">X̄aʼislak̓ala (Haisla) keyboard layout for Unicode. This is part of a
+set of keyboards from FirstVoices.
+
+Alternate names:
+
+Haisla</Description>
   </Info>
   <Files>
     <File>
@@ -137,17 +142,18 @@ set of keyboards from FirstVoices.</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>X̄a'ʼislak̓ala</Name>
+      <Name>X̄aʼislak̓ala</Name>
       <ID>fv_xaislakala</ID>
-      <Version></Version>
+      <Version>10.0</Version>
       <Languages>
-        <Language ID="has-Latn">Haisla (Latin)</Language>
+        <Language ID="has">Haisla</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="haisla_u" Relationship="deprecates" />
-    <RelatedPackage ID="fv_xaislakala_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="haisla_u" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_xaislakala_kmw" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_haisla"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
