@@ -1,5 +1,11 @@
 Nlha7kapmxtsin Change History
 ============================
+10.1 (11 Jul 2024)
+-----------------
+* Tweaked mobile layout
+* Tidied documentation
+* Removed web help in favour of OSK
+
 10.0 (13 Feb 2024)
 -----------------
 * Built desktop layout
