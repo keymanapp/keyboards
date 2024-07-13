@@ -33,78 +33,63 @@ END;
 <img src="fv_ojibwa_ifinal_U_.png" alt="ᓂᔑᓇᐯᒧᐎᣙ" width="514" height="198" /></h2>
 
 <ul>
-    <li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and
-        long form (vowels).</li>
-    <li>The syllabics used to write ᐊᓂᔑᓇᐯᒧᐎᣙ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with
-        a few exceptions. See <a href=ojibwa_ifinals.pdf>this document</a> for a full list of how to type each syllable
-        with this keyboard, and all of the special key combinations.
-        <ul>
-            <li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will
-                appear on screen. Following the consonant with a vowel will change the syllable final into its full form
-                in the orientation corresponding with the vowel typed.
-                <ul>
-                    <li>Typing the k or g key outputs <b>ᣖ</b>. If the a key is typed after, it will change to <b>ᑲ</b>.
-                    </li>
-                </ul>
-            </li>
-            <li>To type a long vowel / add the top dot, type the vowel twice.
-                <ul>
-                    <li><b>ᑳ</b> is typed <b>kaa</b> or <b>gaa</b></li>
-                </ul>
-            </li>
-            <li>To add the w-dot, type the w after the first consonant.
-                <ul>
-                    <li><b>ᐃᣖᐧᐁ</b> is typed <b>ik[we</b> or <b>ig[we</b></li>
-                </ul>
-            </li>
-            <li>The syllabics sets for sh- / zh- (ᔐᔑᔓᔕᔥ), ch- (ᒉᒋᒍᒐᒡ), and th- (ᕞᕠᕤᕦᕪ) are typed by SHIFT + the first
-                letter of each sound (s, z, and t).
-                <ul>
-                    <li><b>ᐊᓂᔑᓇᐯᒧᐎᣙ</b> is typed <b>aniSinabemowin</b> or <b>aniSinapemowin</b></li>
-                    <li><b>ᒌᒫᣙ</b> (pointed) is typed <b>Ciimaan</b> or <b>jiimaan</b></li>
-                    <li><b>ᒋᒪᣙ</b> (unpointed) is typed <b>Ciman</b> or <b>jiman</b></li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the
-        <b>left bracket key [ </b> to keep the syllables separate.
-        <ul>
-            <li><b>ᐋ</b> is typed <b>aa</b></li>
-            <li><b>ᐊᐊ</b> is typed <b>a[a</b></li>
-            <li><b>ᐃᑴ</b> (pointed) is typed <b>ikwe</b> or <b>igwe</b></li>
-            <li><b>ᐃᣖᐌ</b> (pointed) is typed <b>ik[we</b> or <b>ig[we</b></li>
-        </ul>
-    </li>
-    <p></p>
+	<li>The on-screen keyboard shows each syllable in their final form and in their e-orientation, or in their short and long form (vowels).</li>
+	<li>The syllabics used to write ᐊᓂᔑᓇᐯᒧᐎᣙ (Ojibwa) are typed primarily by writing their long-vowel equivalents, with a few exceptions. See <a href=ojibwa_ifinals.pdf>this document</a> for a full list of how to type each syllable with this keyboard, and all of the special key combinations.
+		<ul>
+			<li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will appear on screen. Following the consonant with a vowel will change the syllable final into its full form in the orientation corresponding with the vowel typed.
+				<ul>
+					<li>Typing the k or g key outputs <b>ᣖ</b>. If the a key is typed after, it will change to <b>ᑲ</b>.</li>
+				</ul>
+			</li>
+			<li>To type a long vowel / add the top dot, type the vowel twice.
+				<ul>
+					<li><b>ᑳ</b> is typed <b>kaa</b> or <b>gaa</b></li>
+				</ul>
+			</li>
+			<li>To add the w-dot, type the w after the first consonant.
+				<ul>
+					<li><b>ᐃᣖᐧᐁ</b> is typed <b>ik[we</b> or <b>ig[we</b></li>
+				</ul>
+			</li>
+			<li>The syllabics sets for sh- / zh- (ᔐᔑᔓᔕᔥ), ch- (ᒉᒋᒍᒐᒡ), and th- (ᕞᕠᕤᕦᕪ) are typed by <kbd>Shift</kbd> + the first letter of each sound (s, z, and t).
+				<ul>
+					<li><b>ᐊᓂᔑᓇᐯᒧᐎᣙ</b> is typed <b>aniSinabemowin</b> or <b>aniSinapemowin</b></li>
+					<li><b>ᒌᒫᣙ</b> (pointed) is typed <b>Ciimaan</b> or <b>jiimaan</b></li>
+					<li><b>ᒋᒪᣙ</b> (unpointed) is typed <b>Ciman</b> or <b>jiman</b></li>
+				</ul>
+			</li>
+		</ul>
+	<li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the <b>left bracket key</b> <kbd>[</kbd> to keep the syllables separate.
+		<ul>
+			<li><b>ᐋ</b> is typed <b>aa</b></li>
+			<li><b>ᐊᐊ</b> is typed <b>a[a</b></li>
+			<li><b>ᐃᑴ</b> (pointed) is typed <b>ikwe</b> or <b>igwe</b></li>
+			<li><b>ᐃᣖᐌ</b> (pointed) is typed <b>ik[we</b> or <b>ig[we</b></li>
+		</ul>
+	</li>
+	<p></p>
 
-    <h2>Punctuation</h2>
-    <ul>
-        <li>A standalone above dot indicating vowel length can be typed with the Backquote key `</li>
-        <li>A standalone w-dot can be typed with the q key.
-            <ul>
-                <li><b>NOTE:</b> the dot indicating a long vowel and the w-dot do not need to be typed for the majority
-                    of
-                    syllables on the keyboard. They are provided as an option for syllables that do not have a single
-                    character that contains the syllable and one or both dots, ie; ᐧᕙ.</li>
-            </ul>
-        </li>
-        <li><b>᙮</b> is typed with the period key .</li>
-        <li>single guillement: ‹ Right-Alt+Semicolon key ; — › Right-Alt+Quote '</li>
-        <li>double guillemets: « Shift+Right-Alt+Semicolon key ; — » Shift+Right-Alt+Quote '</li>
-        <li>Any modified punctuation can be typed using <b>Right-Alt</b>(Windows) or <b>Option</b>(Mac) + the original
-            key.
-            <ul>
-                <li><b>.</b> is typed Right-Alt / Option + Period key . </li>
-                <li><b>-</b> is typed Right-Alt / Option + Hyphen key -</li>
-                <li><b>+</b> is typed Shift+Right-Alt / Option + Equal key =</li>
-            </ul>
-        </li>
-        <li>All English letters can be typed by pressing <b>Right-Alt / Option </b> followed by the letter(s) you wish
-            to type.</li>
-        <li>All uppercase English letters can be typed by pressing <b>Right-Alt / Option</b> followed by the letter(s)
-            you wish to type.</li>
-    </ul>
+<h2>Punctuation</h2>
+	<ul>
+		<li>A standalone above dot indicating vowel length can be typed with the Backquote key <kbd>`</kbd></li>
+		<li>A standalone w-dot can be typed with the q key <kbd>q</kbd>.
+			<ul>
+				<li><b>NOTE:</b> the dot indicating a long vowel and the w-dot do not need to be typed for the majority of syllables on the keyboard. They are provided as an option for syllables that do not have a single character that contains the syllable and one or both dots, ie; ᐧᕙ.</li>
+			</ul>
+		</li>
+		<li><b>᙮</b> is typed with the period key <kbd>.</kbd></li>
+		<li>single guillement: ‹ <kbd>Right-Alt</kbd>+<kbd>;</kbd> — › <kbd>Right-Alt</kbd>+<kbd>'</kbd></li>
+		<li>double guillemets: « <kbd>Shift</kbd>+<kbd>Right-Alt</kbd>+<kbd>;</kbd> — » <kbd>Shift</kbd>+<kbd>Right-Alt</kbd>+<kbd>'</kbd></li>
+		<li>Any modified punctuation can be typed using <b>Right-Alt</b> (Windows) or <b>Option</b> (Mac) + the original key.
+			<ul>
+				<li><b>.</b> is typed <kbd>Right-Alt</kbd>+<kbd>.</kbd> / <kbd>⌥ Option</kbd>+<kbd>.</kbd></li>
+				<li><b>-</b> is typed <kbd>Right-Alt</kbd>+<kbd>-</kbd> / <kbd>⌥ Option</kbd>+<kbd>-</kbd></li>
+				<li><b>+</b> is typed <kbd>Shift</kbd>+<kbd>Right-Alt</kbd>+<kbd>=</kbd> / <kbd>Shift</kbd>+<kbd>⌥ Option</kbd>+<kbd>=</kbd></li>
+			</ul>
+		</li>
+		<li>All English letters can be typed by pressing <kbd>Right-Alt</kbd> (Windows) / <kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
+		<li>All uppercase English letters can be typed by pressing <kbd>Right-Alt</kbd> (Windows) / <kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
+	</ul>
 
     <h2>Unicode Fonts</h2>
     <p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong>
