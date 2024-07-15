@@ -36,7 +36,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐏᓐ</b> language of th
 		<ul>
 			<li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will appear on screen. Following the consonant with a vowel will change the syllable final into its full form in the orientation corresponding with the vowel typed.
 				<ul>
-					<li>Typing the k or g key outputs <b>ᒃ</b>. If the a key is typed after, it will change to <b>ᑲ</b>.</li>
+					<li>Typing the <kbd>k</kbd> or <kbd>g</kbd> key outputs <b>ᒃ</b>. If the <kbd>a</kbd> key is typed after, it will change to <b>ᑲ</b>.</li>
 				</ul>
 			</li>
 			<li>To type a long vowel / add the top dot, type the vowel twice.
@@ -58,7 +58,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐏᓐ</b> language of th
 			</li>
 		</ul>
 	</li>
-	<li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the <b>left bracket key [ </b> to keep the syllables separate.
+	<li>In the case of a vowel immediately after a syllable final or two vowels that need to be side by side, use the <b>left bracket key</b> <kbd>[</kbd> to keep the syllables separate.
 		<ul>
 			<li><b>ᐋ</b> is typed <b>aa</b></li>
 			<li><b>ᐊᐊ</b> is typed <b>a[a</b></li>
