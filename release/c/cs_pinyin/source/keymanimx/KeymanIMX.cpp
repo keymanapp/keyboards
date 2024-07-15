@@ -2,6 +2,7 @@
 
 #include <windows.h>
 #include <stdio.h>
+#include <windowsx.h>
 #include "imxlib.h"
 #include "keymanimx.h"
 
@@ -459,15 +460,27 @@ void UpdateIMXWindow(void)
 			Tracking = EnableTracking;
 			x = Caret.x+RectApp.left;
 			y = Caret.y+RectApp.top+24;
-			if(x + RectIM.right - RectIM.left > RectApp.right) x = RectApp.right - RectIM.right + RectIM.left;
-			if(x < 0) x = 0;
+			if(x + RectIM.right - RectIM.left > RectApp.right) x = RectApp.right - (RectIM.right - RectIM.left);
 
 			if(y + RectIM.bottom - RectIM.top > RectApp.bottom) y = RectApp.top + Caret.y - (RectIM.bottom-RectIM.top);
+
 		}
 	}
 	else
-	{
-		x = IMPos.x; y = IMPos.y;
+	{ // need to make sure the relative values are correct for the current monitor
+		hFocus = GetFocus();
+		HMONITOR hMonitor = MonitorFromWindow(hFocus, MONITOR_DEFAULTTONEAREST);
+		if (hMonitor != NULL) {
+			MONITORINFO monitor_info;
+			monitor_info.cbSize = sizeof(monitor_info);
+			GetMonitorInfo(hMonitor, &monitor_info); // No error checking
+			x = monitor_info.rcMonitor.left + IMPos.x;
+			y = monitor_info.rcMonitor.top + IMPos.y;
+		}
+		else { // Default as if there is one monitor
+			x = IMPos.x; y = IMPos.y;
+			Log("UpdateIMXWindow monitor lookup fail ");
+		}
 	}
 
 	UserResize = FALSE;
@@ -507,7 +520,7 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	{
 	case WM_LBUTTONDBLCLK:
 	case WM_LBUTTONDOWN:
-		pts.x = LOWORD(lParam); pts.y = HIWORD(lParam);
+		pts.x = GET_X_LPARAM(lParam); pts.y = GET_Y_LPARAM(lParam);
 		GetWindowRect(hwnd,&rect);
 		x=rect.left; y = rect.top;
 
@@ -547,11 +560,13 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 		if(!Tracking) 	// Allow dragging except when tracking the insertion point
 		{
-			pts.x = LOWORD(lParam); pts.y = HIWORD(lParam);
+			pts.x = GET_X_LPARAM(lParam); pts.y = GET_Y_LPARAM(lParam);
 			ScreenToClient(hwnd, &pts);
 			GetClientRect(hwnd, &rect);
 			rect.right = rect.left + InputSize;
-			if(PtInRect(&rect, pts)) return HTCAPTION;
+			if (PtInRect(&rect, pts)) {
+				return HTCAPTION;
+			}
 			// Alternate code: drag only with logo
 //			if(PtInRect(&rp[RECT_LOGO], pts)) return HTCAPTION;
 		}
@@ -642,10 +657,29 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		return 0;
 
 	case WM_MOVE:
-		if(!Tracking)
+	if(!Tracking)
 		{
-			GetWindowRect(hwnd, &rect);
-			IMPos.x = (short)rect.left; IMPos.y = (short)rect.top;
+      RECT IMrect;
+      if (!GetWindowRect(hwnd, &IMrect)) {
+			  return 0;
+		  }
+			// Get Absolute X and Y, as if top corner is (0, 0)
+			HMONITOR hMonitor = MonitorFromWindow(hwnd, MONITOR_DEFAULTTONEAREST);
+			if (hMonitor == NULL) {
+				return 0;
+			}
+
+			MONITORINFO monitor_info;
+			monitor_info.cbSize = sizeof(monitor_info);
+			if (!GetMonitorInfo(hMonitor, &monitor_info)) {
+				return 0;
+			}
+		
+		  long absoluteX = IMrect.left - monitor_info.rcMonitor.left;
+		  long absoluteY = IMrect.top - monitor_info.rcMonitor.top;
+      
+			IMPos.x = (short)absoluteX; IMPos.y = (short)absoluteY;
+      
 			SaveIMXPosition();
 		}
 		return 0;
@@ -679,15 +713,14 @@ LRESULT CALLBACK IMXWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		}
 
 		if(Vertical && (CurKbd->h.nrules > 0))
-			MoveWindow(hwndChild,0,CellSize.y+(IMBorders+CWBorders)/2,IMWidth,HIWORD(lParam)-CellSize.y,TRUE);
+			MoveWindow(hwndChild,0,CellSize.y+(IMBorders+CWBorders)/2,IMWidth, GET_Y_LPARAM(lParam)-CellSize.y,TRUE);
 		else
-			MoveWindow(hwndChild,InputSize,0,LOWORD(lParam)-InputSize,HIWORD(lParam),TRUE);
+			MoveWindow(hwndChild,InputSize,0, GET_X_LPARAM(lParam)-InputSize, GET_Y_LPARAM(lParam),TRUE);
 
 		// Refill cells if width changed
 		if(UserResize) FillActiveRules(0);
 
 		GetIMDimensions(MaxCells,ContextBuf);
-
 		return 0;
 
 	case WM_PAINT:
@@ -787,8 +820,8 @@ LRESULT CALLBACK IMXChildWndProc(HWND hwndChild, UINT msg, WPARAM wParam, LPARAM
 		for(i=0; i<nCells; i++)
 		{
 			if(!ActiveRule[i])break;
-			if((Vertical && (HIWORD(lParam)<CellLimit[i])) ||
-				(!Vertical && (LOWORD(lParam)<CellLimit[i])))
+			if((Vertical && (GET_Y_LPARAM(lParam)<CellLimit[i])) ||
+				(!Vertical && (GET_X_LPARAM(lParam)<CellLimit[i])))
 			{
 				switch(CurKbd->h.dwOptions & SELECTIONBITS)
 				{
@@ -1264,34 +1297,6 @@ BOOL RepaintWindow()
 	return TRUE;
 }
 
-BOOL CALLBACK EnumWindowsProc(HWND hWnd, LPARAM lParam)
-{
-	static const char* IMXClassName = "KM_IMX";
-	static const int IMXClassNameLength = strlen(IMXClassName);
-    static const int CN_BUF = 255;
-	
-	char ClassName[CN_BUF];
-	DWORD ClassNameLength;
-	HWND* hIMX = reinterpret_cast<HWND*>(lParam);
-	if (!hWnd)
-	{
-		return true;
-	}
-
-	ClassNameLength = GetClassName(hWnd, ClassName, CN_BUF);
-	// more efficient than string cmp also accounts for return zero (error case)
-	if (ClassNameLength != IMXClassNameLength) {
-		return true;
-	}
-
-	if (strcmp(ClassName, IMXClassName) == 0) {
-		*hIMX = hWnd;
-		return false;
-	}
-
-	return true;
-}
-
 /*
 
   The input string, consisting of the context buffer plus the current character, is
@@ -1314,7 +1319,6 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 	BOOL SkipSelectionTesting=FALSE, DropCharacter=TRUE, AutoSelect=FALSE, ExtendMode,
 		Refresh=FALSE;
 	WCHAR *pCB;
-	HWND hIMX = 0;
 	POINT Caret={0};
 	int lBuf,nSelect=0,sMode,tMode,outMode;
 	char FirstChar;
@@ -1322,12 +1326,11 @@ extern "C" BOOL __declspec(dllexport) WINAPI FindGlyph(HWND hwndFocus, WORD KeyS
 
 	if(!PrepIM(TRUE) || !CurKbd) returnErr(FALSE);
 
-	// Zero the context unless IMX already displayed (necessary switching applications)
-	// There could be many "KM_IMX" class windows but at most one will be visible
-	EnumThreadWindows(GetCurrentThreadId(), EnumWindowsProc, reinterpret_cast<LPARAM>(&hIMX));
-	if(hIMX == 0) returnErr(FALSE);
+	// Zero the context unless IMX already displayed (necessary when switching applications)
+	
+	if(hwnd == 0) returnErr(FALSE);
 
-	IsVisible = IsWindowVisible(hIMX);
+	IsVisible = IsWindowVisible(hwnd);
 	if (!IsVisible) {
 		*ContextBuf = 0;
 	}
@@ -1930,11 +1933,29 @@ BOOL ReadConfiguration(BOOL All)
 
 BOOL SaveIMXPosition(void)
 {
-	RECT rect;
+	RECT IMrect;
 	if(hwnd && !Tracking)
 	{
-		GetWindowRect(hwnd,&rect);
-		WriteRegSetting("IMX x",rect.left); WriteRegSetting("IMX y",rect.top);
+		if (!GetWindowRect(hwnd, &IMrect)) {
+			return FALSE;
+		}
+		// Adjust for a mulitple monitor display
+
+		HMONITOR hMonitor = MonitorFromWindow(hwnd, MONITOR_DEFAULTTONEAREST);
+		if (hMonitor == NULL) {
+			return FALSE;
+		}
+
+		MONITORINFO monitor_info;
+		monitor_info.cbSize = sizeof(monitor_info);
+		if (!GetMonitorInfo(hMonitor, &monitor_info)) {
+			return FALSE;
+		}
+		
+		long absoluteX = IMrect.left - monitor_info.rcMonitor.left;
+		long absoluteY = IMrect.top - monitor_info.rcMonitor.top;
+		WriteRegSetting("IMX x", absoluteX); WriteRegSetting("IMX y", absoluteY);
+
 	}
 	return TRUE;
 }
