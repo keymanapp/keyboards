@@ -38,7 +38,7 @@ END;
 		<ul>
 			<li>By typing a single consonant or a key that's assigned to a consonant, the syllable final form will appear on screen. Following the consonant with a vowel will change the syllable final into its full form in the orientation corresponding with the vowel typed.
 				<ul>
-					<li>Typing the k or g key outputs <b>ᣖ</b>. If the a key is typed after, it will change to <b>ᑲ</b>.</li>
+					<li>Typing the <kbd>k</kbd> or <kbd>g</kbd> key outputs <b>ᣖ</b>. If the <kbd>a</kbd> key is typed after, it will change to <b>ᑲ</b>.</li>
 				</ul>
 			</li>
 			<li>To type a long vowel / add the top dot, type the vowel twice.
@@ -210,7 +210,6 @@ END;
                 space bar. </li>
         </ul>
         <div class='vspace'></div>
-    </div>
     <div class='vspace'></div>
 
     <br />
