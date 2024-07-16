@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2007 Chris Harvey
+Copyright © 2007-2024 Chris Harvey
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
