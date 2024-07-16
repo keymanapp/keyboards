@@ -3,12 +3,10 @@ Mitterhofer keyboard
 
 © SIL International
 
-
-
 Description
 -----------
 
-Mitterhofer generated from template
+This keyboard is based on Mitterhofer typewriter layout.
 
 Links
 -----
