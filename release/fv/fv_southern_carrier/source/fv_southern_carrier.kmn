@@ -4,7 +4,7 @@ c store(&ETHNOLOGUECODE) "caf"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᑐᑊᘁᗕᑋᗸ'
 store(&VISUALKEYBOARD) 'fv_southern_carrier.kvks'
-store(&KEYBOARDVERSION) '10.0.1'
+store(&KEYBOARDVERSION) '10.1'
 
 begin Unicode > use(main)
  
@@ -98,7 +98,8 @@ c --- rules and constraints ---
 'ᐱ' + [K_O] > 'ᐯ'
 'ᐯ' + [K_BKSP] > 'ᐱ'
 
-'j' + any(VowelKeys) > index(JVowels,2)
++ [K_J] >'ᘛ'
+'ᘛ' + any(VowelKeys) > index(JVowels,2)
 'ᘖ' + [K_O] > 'ᘔ'
 'ᘔ' + [K_BKSP] > 'ᘖ'
 
@@ -182,17 +183,18 @@ c --- rules and constraints ---
 'ᙨ' + [K_O] > 'ᙧ'
 'ᙧ' + [K_BKSP] > 'ᙨ'
 
-+ [K_W] > 'w'
-'w' + any(VowelKeys) > index(WVowels,2)
++ [K_W] > 'ᗕ'
+'ᗕ' + any(VowelKeys) > index(WVowels,2)
 'ᗑ' + [K_O] > 'ᗐ'
 'ᗐ' + [K_BKSP] > 'ᗑ'
 
-'w' + [K_H] > 'ᗛ'
+'ᗕ' + [K_H] > 'ᗛ'
 'ᗛ' + any(VowelKeys) > index(WhVowels,2)
 'ᗗ' + [K_O] > 'ᗖ'
 'ᗖ' + [K_BKSP] > 'ᗗ'
 
-'y' + any(VowelKeys) > index(YVowels,2)
++ [K_Y] > 'ᘓ'
+'ᘓ' + any(VowelKeys) > index(YVowels,2)
 'ᘏ' + [K_O] > 'ᘎ'
 'ᘎ' + [K_BKSP] > 'ᘏ'
 
@@ -216,6 +218,12 @@ c --- original punctuation ---
 + [RALT K_COLON] > ';'
 + [RALT K_LBRKT] > '['
 + [RALT SHIFT K_8] > '*'
+
+c --- prevention of typing original outputs ---
+
+store(EngLetters) 'qxQWETYUIOPASDFGHJKLXCVBNM'
++ any(EngLetters) > nul
+
 
 c --- START OF TOUCH LAYOUT RULES ---
 
