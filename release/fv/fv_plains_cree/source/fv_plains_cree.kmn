@@ -179,10 +179,10 @@ any(YWLongVowels) + [K_BKSP] > index(YWShortVowels,1)
 
 c --- modified punctuation ---
 + [K_LBRKT] > deadkey(Deadkey) 
-+ [K_COLON] > '«'
-+ [SHIFT K_COLON] > '‹'
-+ [K_QUOTE] > '»'
-+ [SHIFT K_QUOTE] > '›'
++ [K_COLON] > '‹'
++ [SHIFT K_COLON] > '«'
++ [K_QUOTE] > '›' 
++ [SHIFT K_QUOTE] > '»'
 + [SHIFT K_SPACE] > U+202F
 
 c --- original punctuation ---
