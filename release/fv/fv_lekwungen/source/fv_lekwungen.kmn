@@ -135,34 +135,66 @@ c **********************
 c Constraints and Rules
 c **********************
 
-c preventing accents on non-letters
-store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  
-any(NumbersAndPunctuation) + any(acuteKeys) > context beep                   
-any(NumbersAndPunctuation) + any(glottalKeys) > context beep
-                  
 
-c Acute accent rules
+c Acute and grave accent rules
 store(plainVowels) "aeiouAEIOU"
 store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
+store(graveVowels) "àèìòùÀÈÌÒÙ" c combined unicode characters
+
 store(acuteKeys) [T_acute] [SHIFT T_acute] [K_COLON]
-any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1)
+
+store(graveKeys) [K_QUOTE]
+any(plainVowels) + any(graveKeys) > index(graveVowels,1)
+
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on accented vowel will leave the plain vowel behind
+any(graveVowels) + [K_BKSP] > index(plainVowels,1) 
 
 store(schwa) "əƏ"
 any(schwa) + any(acuteKeys) > index(schwa,1) U+0301 c acute on schwa
-
-any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave the plain vowel behind
+any(schwa) + any(graveKeys) > index(schwa,1) U+0300 c grave on schwa
 
 c Caron diacritic - backspace will delete just the caron on letters with caron
 store(noCaron) "csCS"
 store(withCaron) "čšČŠ"
 any(withCaron) + [K_BKSP] > index(noCaron,1)
 
-c Glottal apostrophe deadkey combining rules
+c Glottal apostrophe combining rules
 store(noGlottal) 'cčwkpqtƛlmnŋyCČWKPQTLMNY'
-store(glottalKeys) [T_J] [SHIFT T_J] [K_QUOTE]
+store(glottalKeys) [T_J] [SHIFT T_J] [K_BKSLASH]
 any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
 
-'ʷ' + any(glottalKeys) > U+0315 'ʷ' c combining glottal on rounded sounds
+
+c Stacking prevention rules
+
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(glottalKeys) > context beep                   
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep
+any(NumbersAndPunctuation) + any(graveKeys) > context beep
+
+
+any(acuteVowels) + any(acuteKeys) > context beep c no double stacking accent on already accented V
+any(acuteVowels) + any(graveKeys) > context beep
+
+any(graveVowels) + any(graveKeys) > context beep
+any(graveVowels) + any(acuteKeys) > context beep
+
+U+0313 + any(glottalKeys) > context beep c no double stacking diacritics
+U+0301 + any(acuteKeys) > context beep
+U+0300 + any(graveKeys) > context beep
+
+U+0313 + any(acuteKeys) > context beep c no stacking on combining glottal
+U+0313 + any(graveKeys) > context beep
+
+U+0301 + any(graveKeys) > context beep c no stacking on acute
+U+0301 + any(glottalKeys) > context beep
+
+U+0300 + any(acuteKeys) > context beep c no stacking on curly apostrophe
+U+0300 + any(glottalKeys) > context beep
+
+any(acuteVowels) + any(glottalKeys) > context beep c no glottal on accented vowels
+any(graveVowels) + any(glottalKeys) > context beep
+
 
 c ****************
 c Main
@@ -170,8 +202,8 @@ c **************
 
 c combining keys for accents
 + [K_COLON] > U+0301 c acute
-+ [K_QUOTE] > U+0301 c comma above
-+ [K_BKSLASH] > U+0331 c grave
++ [K_QUOTE] > U+0300 c grave
++ [K_BKSLASH] > U+0313 c comma above
 
 c lekwungen characters
 + [K_2] > 'ʷ'
