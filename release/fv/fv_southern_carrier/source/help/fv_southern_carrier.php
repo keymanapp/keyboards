@@ -317,8 +317,9 @@ This keyboard is designed for the <b>ᑐᑊᘁᗕᑋᗸ</b> language of the BC I
 </ul>
 
 
-    </li><li>Your device’s font may not differentiate fully between syllabic “s” ᔆ and “sh” ᙚ
-    </li></ul></div>
+<li>Your device’s font may not differentiate fully between syllabic “s” ᔆ and “sh” ᙚ</li>
+</ul>
+</div>
     <div class='vspace'></div>
     </div>
     
