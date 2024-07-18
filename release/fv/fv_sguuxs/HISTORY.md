@@ -1,5 +1,10 @@
 fv_sguuxs Change History
 ====================
+1.1 (18 Jul 2024)
+------------------
+* Corrected mistakes in OSK
+* Tweaked keyboard layout
+* Tidied documentation
 
 1.0.1 (2024-06-11)
 ------------------
