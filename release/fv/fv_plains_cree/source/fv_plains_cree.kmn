@@ -2,7 +2,7 @@
 store(&TARGETS) 'any'
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'ᓀᐦᐃᔭᐍᐏᐣ'
-store(&KEYBOARDVERSION) '11.0.2'
+store(&KEYBOARDVERSION) '11.1'
 store(&LAYOUTFILE) 'fv_plains_cree.keyman-touch-layout'
 store(&VISUALKEYBOARD) 'fv_plains_cree.kvks'
 
@@ -179,15 +179,29 @@ any(YWLongVowels) + [K_BKSP] > index(YWShortVowels,1)
 
 c --- modified punctuation ---
 + [K_LBRKT] > deadkey(Deadkey) 
-+ [K_COLON] > '«'
-+ [K_QUOTE] > '»'
++ [K_COLON] > '‹'
++ [SHIFT K_COLON] > '«'
++ [K_QUOTE] > '›' 
++ [SHIFT K_QUOTE] > '»'
 + [SHIFT K_SPACE] > U+202F
 
 c --- original punctuation ---
++ [RALT K_PERIOD] > '.'
 + [RALT K_LBRKT] > '['
 + [RALT K_COLON] > ';'
++ [RALT SHIFT K_COLON] > ':'
 + [RALT K_QUOTE] > U+0027
 + [RALT SHIFT K_QUOTE] > U+0022
+
+c Allow English letters to be typed on alt layer
+
+store(EnglishKeys) [RALT K_Q] [RALT K_W] [RALT K_E] [RALT K_R] [RALT K_T] [RALT K_Y] [RALT K_U] [RALT K_I] [RALT K_O] [RALT K_P] [RALT K_A] [RALT K_S] [RALT K_D] [RALT K_F] [RALT K_G] [RALT K_H] [RALT K_J] [RALT K_K] [RALT K_L] [RALT K_Z] [RALT K_X] [RALT K_C] [RALT K_V] [RALT K_B] [RALT K_N] [RALT K_M]
+store(ShiftedEnglishKeys) [SHIFT RALT K_Q] [SHIFT RALT K_W] [SHIFT RALT K_E] [SHIFT RALT K_R] [SHIFT RALT K_T] [SHIFT RALT K_Y] [SHIFT RALT K_U] [SHIFT RALT K_I] [SHIFT RALT K_O] [SHIFT RALT K_P] [SHIFT RALT K_A] [SHIFT RALT K_S] [SHIFT RALT K_D] [SHIFT RALT K_F] [SHIFT RALT K_G] [SHIFT RALT K_H] [SHIFT RALT K_J] [SHIFT RALT K_K] [SHIFT RALT K_L] [SHIFT RALT K_Z] [SHIFT RALT K_X] [SHIFT RALT K_C] [SHIFT RALT K_V] [SHIFT RALT K_B] [SHIFT RALT K_N] [SHIFT RALT K_M]
+store(EnglishLetters) 'qwertyuiopasdfghjklzxcvbnm'
+store(ShiftedEnglishLetters) 'QWERTYUIOPASDFGHJKLZXCVBNM'
+
++ any(EnglishKeys) > index(EnglishLetters,1)
++ any(ShiftedEnglishKeys) > index(ShiftedEnglishLetters,1)
 
 c --- preventing latin characters from being typed ---
 
