@@ -18,8 +18,28 @@ This keyboard is designed for the <b>Lekwungen (Lək̓ʷəŋən)</b> language of
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-    
-<h2>Notes on touch layout</h2>
+<h2>Keyboard Layout</h2>
+<div id='osk'>
+</div>
+
+<ul>
+					<li>The above keymap shows the special characters that have been assigned to the number keys. To type numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyboards keeps its original numbers.</li>
+					<li>All accents are typed after the base character: t̓ is typed <kbd>t</kbd> then Apostrophe <kbd>'</kbd></li>
+					<ul>
+						<li>To type the glottalized accent use the Apostrophe key <kbd>'</kbd> — k̓ is typed <kbd>k</kbd> then Apostrophe <kbd>'</kbd></li>
+						<li>To type the acute accent use the Semicolon key <kbd>;</kbd> — á is typed <kbd>a</kbd> then Semicolon <kbd>;</kbd></li>
+						<li>To type the grave accent use the Backslash key — à is typed <kbd>a</kbd> then <kbd>\</kbd></li>
+					</ul>
+					<li>All changed punctuation and number keys can type their original value by holding down the <kbd>Right-Alt</kbd> or <kbd>Option</kbd> key.
+						<ul>
+							<li>The Semicolon ; is typed <kbd>RightAlt</kbd>+<kbd>Semicolon</kbd> (Windows) or <kbd>Option</kbd>+<kbd>Semicolon</kbd> (Mac)</li>
+							<li>The number 1 is typed <kbd>RightAlt</kbd>+<kbd>1</kbd> (Windows) or <kbd>Option</kbd>+<kbd>1</kbd> (Mac)</li>
+						</ul>
+					</li>
+				</ul>
+   
+   
+<h2>Mobile Touch Layout</h2>
 <div id='wikitext'>
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
@@ -67,8 +87,13 @@ This keyboard is designed for the <b>Lekwungen (Lək̓ʷəŋən)</b> language of
 	</tr>
 </table>
 
-<div class='vspace'></div><ul><li>keys with a red background are combining accents.
-</li><li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-</li></ul><div class='vspace'></div>
+<div class='vspace'></div>
+<ul>
+	<li>Keys with a red background are combining accents. On your mobile device, they will have green text.</li>
+	<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+	<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
+</ul>
+
+<div class='vspace'></div>
 </div>
 
