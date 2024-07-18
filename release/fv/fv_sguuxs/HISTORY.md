@@ -5,6 +5,7 @@ fv_sguuxs Change History
 * Corrected mistakes in OSK
 * Tweaked keyboard layout
 * Tidied documentation
+* Added full set of Aboriginal Sans and Serif to package
 
 1.0.1 (2024-06-11)
 ------------------
