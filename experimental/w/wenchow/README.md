@@ -1,13 +1,14 @@
-Wenchow keyboard
+wenchow keyboard
 ==============
+
+Version 1.1
 
 Description
 -----------
-Wenchow for üe-tsiu-ó.
+wenchow keyboard for üe-tsiu-‘ó romanized wenchownese.溫州話羅馬字輸入法
 
 Links
 -----
-https://keyman.com/keyboards/wenchow
 
 Copyright
 ---------
