@@ -1,0 +1,23 @@
+﻿c bukawa2024 generated from template at 2024-07-18 21:14:13
+c with name "Bukawa2024"
+store(&VERSION) '10.0'
+store(&NAME) 'Bukawa2024'
+store(&COPYRIGHT) 'Copyright © LBTA'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'any windows macosx linux web iphone ipad androidphone androidtablet mobile desktop tablet'
+store(&BITMAP) 'bukawa2024.ico'
+store(&VISUALKEYBOARD) 'bukawa2024.kvks'
+store(&LAYOUTFILE) 'bukawa2024.keyman-touch-layout'
+
+group(main) using keys
+
+begin Unicode > use(main)
+
+store(basekey) "eoqEOQjnJNhl["
+store(output_char) "êôöÊÔÖŋŋŊŊ́̀["
+
+c left square bracket becomes deadkey
++ "[" > dk(leftbrkt)
+
+c handle left square bracket
+dk(leftbrkt) + any(basekey) > index(output_char, 2)
