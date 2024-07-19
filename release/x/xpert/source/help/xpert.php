@@ -20,9 +20,3 @@ This keyboard is designed for the English language. It will also be useful for o
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
-<h2>Phone Keyboard Layout</h2>
-<p>Due to the size and number of keys, some characters are hidden in the long press. 
-	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
-<div id='osk-phone' data-states='default shift numeric symbol currency'>
-</div>
-
