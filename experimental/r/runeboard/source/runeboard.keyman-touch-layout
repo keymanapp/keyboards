@@ -10,7 +10,8 @@
             "key": [
               {
                 "id": "K_Q",
-                "text": "ᚫ"
+                "text": "ᚫ",
+                "pad": 75
               },
               {
                 "id": "K_W",
@@ -40,7 +41,13 @@
               },
               {
                 "id": "K_U",
-                "text": "ᚸ"
+                "text": "ᚸ",
+                "sk": [
+                  {
+                    "text": "ᛤ",
+                    "id": "U_16E4"
+                  }
+                ]
               },
               {
                 "id": "K_I",
@@ -65,12 +72,17 @@
             "key": [
               {
                 "id": "K_A",
-                "text": "ᚪ",
-                "pad": 75
+                "text": "ᚪ"
               },
               {
                 "id": "K_S",
-                "text": "ᚩ"
+                "text": "ᚩ",
+                "sk": [
+                  {
+                    "text": "ᚩ‍ᚢ",
+                    "id": "U_16A9_200D_16A2"
+                  }
+                ]
               },
               {
                 "id": "K_D",
@@ -105,6 +117,10 @@
                 "text": "ᛋ",
                 "sk": [
                   {
+                    "text": "ᛥ",
+                    "id": "U_16E5"
+                  },
+                  {
                     "text": "ᛌ",
                     "id": "U_16CC"
                   }
@@ -122,13 +138,27 @@
               {
                 "id": "K_SHIFT",
                 "text": "*Shift*",
-                "width": 100,
+                "width": 160,
                 "sp": 1,
-                "nextlayer": "shift"
+                "nextlayer": "shift",
+                "sk": [
+                  {
+                    "text": "*123*",
+                    "id": "T_new_13139",
+                    "sp": 1,
+                    "nextlayer": "number"
+                  },
+                  {
+                    "text": "*AltGr*",
+                    "id": "T_new_13151",
+                    "sp": 1,
+                    "nextlayer": "rightalt"
+                  }
+                ]
               },
               {
                 "id": "K_Z",
-                "text": "ZWJ"
+                "text": "ᛇ"
               },
               {
                 "id": "K_X",
@@ -140,13 +170,7 @@
               },
               {
                 "id": "K_V",
-                "text": "ᛣ",
-                "sk": [
-                  {
-                    "text": "ᛤ",
-                    "id": "U_16E4"
-                  }
-                ]
+                "text": "ᛣ"
               },
               {
                 "id": "K_B",
@@ -180,71 +204,70 @@
               {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "width": 130,
+                "width": 135,
                 "sp": 1
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
-                "width": 130,
+                "width": 135,
                 "sp": 1
               },
               {
-                "id": "K_oE2",
-                "text": "ᛇ"
+                "id": "U_200D",
+                "text": "*ZWJ*",
+                "sp": 8
               },
               {
-                "id": "K_BKQUOTE",
-                "text": "⁝​",
+                "id": "U_16EB",
+                "text": "᛫",
+                "width": 515,
                 "sk": [
                   {
-                    "text": "᛭​",
-                    "id": "U_16ED_200B"
+                    "text": "᛬",
+                    "id": "U_16EC"
                   },
                   {
-                    "text": "!​",
-                    "id": "U_0021_200B"
-                  },
-                  {
-                    "text": "†​",
-                    "id": "U_2020_200B"
-                  },
-                  {
-                    "text": "?​",
-                    "id": "U_003F_200B"
-                  }
-                ]
-              },
-              {
-                "id": "K_SPACE",
-                "text": "᛫​",
-                "width": 300,
-                "sk": [
-                  {
-                    "text": "᛬​",
-                    "id": "U_16EC_200B"
+                    "text": "᛭",
+                    "id": "U_16ED"
                   }
                 ]
               },
               {
                 "id": "K_HYPHEN",
-                "text": "​[",
+                "text": "[​",
                 "sk": [
                   {
-                    "text": "​(",
-                    "id": "U_200B_0028"
+                    "text": "⟨",
+                    "id": "U_27E8"
                   },
                   {
-                    "text": "​{",
-                    "id": "U_200B_007B"
+                    "text": "⟪",
+                    "id": "U_27EA"
                   },
                   {
-                    "text": "​⟨",
-                    "id": "U_200B_27E8"
+                    "text": "«",
+                    "id": "U_00AB"
                   },
                   {
-                    "text": "​⟪",
-                    "id": "U_200B_27EA"
+                    "text": "‹",
+                    "id": "U_2039"
+                  },
+                  {
+                    "text": "(",
+                    "id": "U_0028"
+                  },
+                  {
+                    "text": "{",
+                    "id": "U_007B"
+                  },
+                  {
+                    "text": "/",
+                    "id": "U_002F"
+                  },
+                  {
+                    "text": "†",
+                    "id": "U_2020"
                   }
                 ]
               },
@@ -253,31 +276,272 @@
                 "text": "]​",
                 "sk": [
                   {
-                    "text": ")​",
-                    "id": "U_0029_200B"
+                    "text": "⟩",
+                    "id": "U_27E9"
                   },
                   {
-                    "text": "}​",
-                    "id": "U_007D_200B"
+                    "text": "⟫",
+                    "id": "U_27EB"
                   },
                   {
-                    "text": "⟩​",
-                    "id": "U_27E9_200B"
+                    "text": "»",
+                    "id": "U_00BB"
                   },
                   {
-                    "text": "⟫​",
-                    "id": "U_27EB_200B"
+                    "text": "›",
+                    "id": "U_203A"
+                  },
+                  {
+                    "text": ")",
+                    "id": "U_0029"
+                  },
+                  {
+                    "text": "}",
+                    "id": "U_007D"
+                  },
+                  {
+                    "text": "\\",
+                    "id": "U_005C"
+                  },
+                  {
+                    "text": "?",
+                    "id": "U_003F"
                   }
                 ]
               },
               {
-                "id": "K_RBRKT",
-                "text": "ᛥ"
+                "id": "K_ENTER",
+                "text": "*Enter*",
+                "width": 135,
+                "sp": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rightalt",
+        "row": [
+          {
+            "id": 1,
+            "key": [
+              {
+                "id": "K_Q",
+                "text": "⟪​",
+                "pad": 75
+              },
+              {
+                "id": "K_W",
+                "text": "⟫​"
+              },
+              {
+                "id": "K_E",
+                "text": "⁞​"
+              },
+              {
+                "id": "K_R",
+                "text": "ᛷ"
+              },
+              {
+                "id": "K_T",
+                "text": "ᛸ"
+              },
+              {
+                "id": "K_Y",
+                "sp": 9
+              },
+              {
+                "id": "K_U",
+                "sp": 9
+              },
+              {
+                "id": "K_I",
+                "text": "ᛍ"
+              },
+              {
+                "id": "K_O",
+                "text": "ᛧ"
+              },
+              {
+                "id": "K_P",
+                "text": "ᛲ"
+              },
+              {
+                "id": "K_LBRKT",
+                "text": "«​",
+                "sk": [
+                  {
+                    "text": "»",
+                    "id": "U_00BB"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "key": [
+              {
+                "id": "K_A",
+                "text": "Å"
+              },
+              {
+                "id": "K_S",
+                "text": "ᚯ"
+              },
+              {
+                "id": "K_D",
+                "text": "ᛶ"
+              },
+              {
+                "id": "K_F",
+                "text": "ᛳ"
+              },
+              {
+                "id": "K_G",
+                "text": "ᛵ"
+              },
+              {
+                "id": "K_H",
+                "text": "ᚼ"
+              },
+              {
+                "id": "K_J",
+                "text": "ᚽ"
+              },
+              {
+                "id": "K_K",
+                "sp": 9
+              },
+              {
+                "id": "K_L",
+                "text": "ᛀ"
+              },
+              {
+                "id": "K_COLON",
+                "text": "ᛊ"
+              },
+              {
+                "id": "K_QUOTE",
+                "text": "/"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "key": [
+              {
+                "id": "K_SHIFT",
+                "text": "*123*",
+                "width": 160,
+                "sp": 1,
+                "nextlayer": "number",
+                "sk": [
+                  {
+                    "text": "*Shift*",
+                    "id": "T_new_14271",
+                    "sp": 1,
+                    "nextlayer": "shift"
+                  },
+                  {
+                    "text": "Main",
+                    "id": "T_new_14272",
+                    "sp": 1,
+                    "nextlayer": "default"
+                  }
+                ]
+              },
+              {
+                "id": "K_Z",
+                "text": "ᛆ"
+              },
+              {
+                "id": "K_X",
+                "text": "ᚭ"
+              },
+              {
+                "id": "K_C",
+                "text": "ᛴ"
+              },
+              {
+                "id": "K_V",
+                "text": "ᚴ"
+              },
+              {
+                "id": "K_B",
+                "text": "ᛱ"
+              },
+              {
+                "id": "K_N",
+                "text": "ᛓ"
+              },
+              {
+                "id": "K_M",
+                "text": "ᛙ"
+              },
+              {
+                "id": "K_COMMA",
+                "text": "ᛩ"
+              },
+              {
+                "id": "K_PERIOD",
+                "text": "<"
+              },
+              {
+                "id": "K_SLASH",
+                "text": ">"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "key": [
+              {
+                "id": "K_BKSP",
+                "text": "*BkSp*",
+                "width": 135,
+                "sp": 1
+              },
+              {
+                "id": "K_LOPT",
+                "text": "*Menu*",
+                "width": 140,
+                "sp": 1
+              },
+              {
+                "id": "K_oE2",
+                "text": "\\"
+              },
+              {
+                "id": "K_SPACE",
+                "text": " ",
+                "width": 515,
+                "nextlayer": "shift"
+              },
+              {
+                "id": "K_HYPHEN",
+                "text": "-",
+                "sk": [
+                  {
+                    "text": "_",
+                    "id": "U_005F"
+                  }
+                ]
+              },
+              {
+                "id": "K_EQUAL",
+                "text": "=",
+                "sk": [
+                  {
+                    "text": "+",
+                    "id": "U_002B"
+                  }
+                ]
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
-                "width": 130,
+                "width": 145,
                 "sp": 1
               }
             ]
@@ -292,18 +556,22 @@
             "key": [
               {
                 "id": "K_Q",
-                "text": "​⟨",
-                "nextlayer": "default"
+                "text": "⟨​",
+                "pad": 75
               },
               {
                 "id": "K_W",
-                "text": "⟩​",
-                "nextlayer": "default"
+                "text": "⟩​"
               },
               {
                 "id": "K_E",
                 "text": "᛬​",
-                "nextlayer": "default"
+                "sk": [
+                  {
+                    "text": "⁞",
+                    "id": "U_205E"
+                  }
+                ]
               },
               {
                 "id": "K_R",
@@ -335,7 +603,13 @@
               },
               {
                 "id": "K_LBRKT",
-                "text": "ᛜ"
+                "text": "ᛜ",
+                "sk": [
+                  {
+                    "text": "ᚶ",
+                    "id": "U_16B6"
+                  }
+                ]
               }
             ]
           },
@@ -345,7 +619,7 @@
               {
                 "id": "K_A",
                 "text": "ᚨ",
-                "pad": 75
+                "pad": 0
               },
               {
                 "id": "K_S",
@@ -381,13 +655,17 @@
               },
               {
                 "id": "K_COLON",
-                "text": "ᛌ",
-                "nextlayer": "default"
+                "text": "ᛌ"
               },
               {
                 "id": "K_QUOTE",
-                "text": "?​",
-                "nextlayer": "default"
+                "text": "―",
+                "sk": [
+                  {
+                    "text": "‑",
+                    "id": "U_2011"
+                  }
+                ]
               }
             ]
           },
@@ -397,9 +675,23 @@
               {
                 "id": "K_SHIFT",
                 "text": "*AltGr*",
-                "width": 100,
+                "width": 160,
                 "sp": 1,
-                "nextlayer": "rightalt"
+                "nextlayer": "rightalt",
+                "sk": [
+                  {
+                    "text": "Main",
+                    "id": "T_new_14226",
+                    "sp": 1,
+                    "nextlayer": "default"
+                  },
+                  {
+                    "text": "*123*",
+                    "id": "T_new_14227",
+                    "sp": 1,
+                    "nextlayer": "number"
+                  }
+                ]
               },
               {
                 "id": "K_Z",
@@ -450,47 +742,30 @@
               {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "width": 130,
+                "width": 140,
                 "sp": 1
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
-                "width": 130,
+                "width": 140,
                 "sp": 1
               },
               {
-                "id": "K_BKSLASH",
-                "text": "|"
-              },
-              {
-                "id": "K_BKQUOTE",
-                "text": "⁞​"
-              },
-              {
-                "id": "K_SPACE",
-                "text": "",
-                "width": 300,
-                "nextlayer": "default"
-              },
-              {
-                "id": "K_HYPHEN",
-                "text": "​(",
-                "nextlayer": "default"
-              },
-              {
-                "id": "K_EQUAL",
-                "text": ")​",
-                "nextlayer": "default"
-              },
-              {
-                "id": "K_RBRKT",
-                "text": "ᚶ"
+                "id": "U_205D",
+                "text": "⁝",
+                "width": 845,
+                "sk": [
+                  {
+                    "text": "⸽",
+                    "id": "U_2E3D"
+                  }
+                ]
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
-                "width": 130,
+                "width": 140,
                 "sp": 1
               }
             ]
@@ -498,261 +773,29 @@
         ]
       },
       {
-        "id": "rightalt",
-        "row": [
-          {
-            "id": 1,
-            "key": [
-              {
-                "id": "K_Q",
-                "text": "​⟪",
-                "nextlayer": "default",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_W",
-                "text": "⟫​",
-                "nextlayer": "default",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_E",
-                "text": "Å",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_R",
-                "text": "ᛷ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_T",
-                "text": "ᛸ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_Y",
-                "text": "",
-                "sp": 9,
-                "nextlayer": "shift"
-              },
-              {
-                "id": "K_U",
-                "text": "",
-                "sp": 9,
-                "nextlayer": "shift"
-              },
-              {
-                "id": "K_I",
-                "text": "ᛍ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_O",
-                "text": "ᛧ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_P",
-                "text": "ᛲ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_LBRKT",
-                "text": "~",
-                "layer": "rightalt"
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "key": [
-              {
-                "id": "K_A",
-                "text": "ᛅ",
-                "pad": 75,
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_S",
-                "text": "ᚯ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_D",
-                "text": "ᛶ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_F",
-                "text": "ᛳ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_G",
-                "text": "ᛵ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_H",
-                "text": "ᚼ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_J",
-                "text": "ᚽ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_K",
-                "text": "",
-                "sp": 9,
-                "nextlayer": "shift"
-              },
-              {
-                "id": "K_L",
-                "text": "ᛀ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_COLON",
-                "text": "ᛊ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_QUOTE",
-                "text": "/",
-                "layer": "rightalt"
-              }
-            ]
-          },
-          {
-            "id": 3,
-            "key": [
-              {
-                "id": "K_SHIFT",
-                "text": "*123*",
-                "width": 100,
-                "sp": 1,
-                "nextlayer": "123"
-              },
-              {
-                "id": "K_Z",
-                "text": "ᛆ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_X",
-                "text": "ᚭ"
-              },
-              {
-                "id": "K_C",
-                "text": "ᛴ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_V",
-                "text": "ᚴ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_B",
-                "text": "ᛱ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_N",
-                "text": "ᛓ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_M",
-                "text": "ᛙ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_COMMA",
-                "text": "ᛩ",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_PERIOD",
-                "text": "<",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_SLASH",
-                "text": ">",
-                "layer": "rightalt"
-              }
-            ]
-          },
-          {
-            "id": 4,
-            "key": [
-              {
-                "id": "K_BKSP",
-                "text": "*BkSp*",
-                "width": 130,
-                "sp": 1
-              },
-              {
-                "id": "K_LOPT",
-                "text": "*Menu*",
-                "width": 130,
-                "sp": 1
-              },
-              {
-                "id": "K_oE2",
-                "text": "\\",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_BKQUOTE",
-                "text": "°",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_SPACE",
-                "text": "*Shift*",
-                "width": 300,
-                "sp": 1,
-                "nextlayer": "shift"
-              },
-              {
-                "id": "K_HYPHEN",
-                "text": "-",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_EQUAL",
-                "text": "=",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_RBRKT",
-                "text": "`",
-                "layer": "rightalt"
-              },
-              {
-                "id": "K_ENTER",
-                "text": "*Enter*",
-                "width": 130,
-                "sp": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "123",
+        "id": "number",
         "row": [
           {
             "id": 1,
             "key": [
               {
                 "id": "U_0031",
-                "text": "1"
+                "text": "1",
+                "pad": 75,
+                "sk": [
+                  {
+                    "text": "`",
+                    "id": "U_0060"
+                  },
+                  {
+                    "text": "~",
+                    "id": "U_007E"
+                  },
+                  {
+                    "text": "!",
+                    "id": "U_0021"
+                  }
+                ]
               },
               {
                 "id": "U_0032",
@@ -787,12 +830,8 @@
                 "text": "9"
               },
               {
-                "id": "U_0021",
-                "text": "!"
-              },
-              {
-                "id": "U_00B0",
-                "text": "°"
+                "id": "U_0030",
+                "text": "0"
               }
             ]
           },
@@ -801,8 +840,7 @@
             "key": [
               {
                 "id": "U_2160",
-                "text": "Ⅰ",
-                "pad": 75
+                "text": "Ⅰ"
               },
               {
                 "id": "U_2164",
@@ -864,11 +902,13 @@
               },
               {
                 "id": "U_16F0",
-                "text": "ᛰ"
-              },
-              {
-                "id": "U_0025",
-                "text": "%"
+                "text": "ᛰ",
+                "sk": [
+                  {
+                    "text": "|",
+                    "id": "U_007C"
+                  }
+                ]
               }
             ]
           },
@@ -878,13 +918,31 @@
               {
                 "id": "K_SHIFT",
                 "text": "Main",
-                "width": 100,
+                "width": 160,
                 "sp": 1,
-                "nextlayer": "default"
+                "nextlayer": "default",
+                "sk": [
+                  {
+                    "text": "*AltGr*",
+                    "id": "T_new_14442",
+                    "sp": 1,
+                    "nextlayer": "rightalt"
+                  },
+                  {
+                    "text": "*123*",
+                    "id": "T_new_14443",
+                    "sp": 1,
+                    "nextlayer": "number"
+                  }
+                ]
               },
               {
-                "id": "U_007B",
-                "text": "{"
+                "id": "U_0040",
+                "text": "@"
+              },
+              {
+                "id": "U_0023",
+                "text": "#"
               },
               {
                 "id": "U_20BF",
@@ -913,14 +971,6 @@
               {
                 "id": "U_2122",
                 "text": "™"
-              },
-              {
-                "id": "U_0026",
-                "text": "&"
-              },
-              {
-                "id": "U_007D",
-                "text": "}"
               }
             ]
           },
@@ -930,46 +980,50 @@
               {
                 "id": "K_BKSP",
                 "text": "*BkSp*",
-                "width": 130,
+                "width": 135,
                 "sp": 1
               },
               {
                 "id": "K_LOPT",
                 "text": "*Menu*",
-                "width": 130,
+                "width": 135,
                 "sp": 1
               },
               {
-                "id": "U_0040",
-                "text": "@"
-              },
-              {
-                "id": "U_0023",
-                "text": "#"
+                "id": "U_0025",
+                "text": "%",
+                "sk": [
+                  {
+                    "text": "°",
+                    "id": "U_00B0"
+                  }
+                ]
               },
               {
                 "id": "K_SPACE",
-                "text": "*AltGr*",
-                "width": 300,
+                "text": "",
+                "width": 515,
                 "sp": 1,
                 "nextlayer": "rightalt"
               },
               {
-                "id": "U_005F",
-                "text": "_"
-              },
-              {
-                "id": "U_002B",
-                "text": "+"
-              },
-              {
                 "id": "U_002A",
-                "text": "*"
+                "text": "*",
+                "sk": [
+                  {
+                    "text": "^",
+                    "id": "U_005E"
+                  },
+                  {
+                    "text": "&",
+                    "id": "U_0026"
+                  }
+                ]
               },
               {
                 "id": "K_ENTER",
                 "text": "*Enter*",
-                "width": 130,
+                "width": 135,
                 "sp": 1
               }
             ]
