@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Breton chwerty 1.0 generated from template.
+   The Breton "Chwerty" keyboard layout is specifically designed for typing in the Breton language.
 </p>
 
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>

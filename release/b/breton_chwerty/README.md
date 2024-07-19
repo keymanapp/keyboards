@@ -3,12 +3,11 @@ Breton chwerty keyboard
 
 (c) SIL International
 
-Version 1.0
 
 Description
 -----------
 
-Breton chwerty generated from template
+The Breton "Chwerty" keyboard layout is specifically designed for typing in the Breton language.
 
 Links
 -----
