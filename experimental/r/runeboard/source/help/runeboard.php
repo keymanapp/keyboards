@@ -16,8 +16,8 @@
 
 <h3>Desktop Keyboard Layout</h3>
 
-<p>The K_Z key is the Zero Width Joiner [ZWJ]. In fonts which support bindrunes/ligatures, type it after one rune and before another to create a supported bindrune.</p>
-<p>The space key outputs U+16EB RUNIC SINGLE PUNCTUATION. A regular space can be accessed throught the SHIFT+SPACE key. </p>
+<p>The SHIFT+SPACE key is the Zero Width Joiner [ZWJ]. In fonts which support bindrunes/ligatures, type it after one rune and before another to create a supported bindrune.</p>
+<p>The space key outputs U+16EB RUNIC SINGLE PUNCTUATION. A regular space can be accessed throught the K_BACKSLASH key. </p>
 
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>
@@ -25,6 +25,7 @@
 <h3>Tablet Layout</h3>
 <p>Due to the size and number of keys, some characters are hidden in the long press. 
 	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<p>Long press the SHIFT key to choose from all the other available layers.</p>
 
 <div id='osk-tablet' data-states='default shift rightalt'>
 </div>
