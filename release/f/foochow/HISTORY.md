@@ -1,6 +1,6 @@
 foochow Change History
 ====================
 
-1.0 (2024-05-30)
+1.0.1 (2024-07-10)
 ----------------
 * Created by cathaylab
