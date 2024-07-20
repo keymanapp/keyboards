@@ -1,6 +1,6 @@
 # Description
 A phonetically accurate Farsi (Persian) keyboard that includes the Farsi numbers, basic symbols, letters, diacritics and harakat (vowels), along with honorifics and ligature completion for all 25 Islamic prophets and the name of Allah.
-# Instruction Guide
+# Character Map
 
 | Input | Character Output | Character Name             | Unicode | Unicode Name                        |
 | ----- | ---------------- | -------------------------- | ------- | ----------------------------------- |
@@ -52,30 +52,37 @@ A phonetically accurate Farsi (Persian) keyboard that includes the Farsi numbers
 | C     | ٬                | Arabic Decimal Separator   | 066B    | ARABIC_DECIMAL_SEPARATOR            |
 | D     | ض                | Dad                        | 0636    | ARABIC_LETTER_DAD                   |
 | E     | ـ                | Kashida/Tatweel            | 0640    | ARABIC_TATWEEL                      |
-| F     | null             | null                       | null    | null                                |
 | G     | غ                | Ghain                      | 063A    | ARABIC_LETTER_GHAIN                 |
 | H     | ح                | Hah                        | 062D    | ARABIC_LETTER_HAH                   |
 | H'    | خ                | Kha                        | 062E    | ARABIC_LETTER_KHAH                  |
-| I     | null             | null                       | null    | null                                |
 | J     | ة                | Teh Marbutah               | 0629    | ARABIC_LETTER_TEH_MARBUTA           |
 | K     | خ                | Kha                        | 062E    | ARABIC_LETTER_KHAH                  |
-| L     | null             | null                       | null    | null                                |
-| M     | null             | null                       | null    | null                                |
+| M     | ى                | Alef Maksura               | 0649    | ARABIC_LETTER_ALEF_MAKSURA          |
 | N     | ڪ                | Swish Kaf                  | 06AA    | ARABIC_LETTER_SWASH_KAF             |
 | O     | أ                | Alef Hamza Top             | 0623    | ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE |
 | P     | إ                | Alef Hamza Bottom          | 0625    | ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW |
 | Q     | ء                | Hamza                      | 0621    | ARABIC_LETTER_HAMZA                 |
-| R     | null             | null                       | null    | null                                |
 | S     | ص                | Sad                        | 0635    | ARABIC_LETTER_SAD                   |
 | S'    | ض                | Dad                        | 0636    | ARABIC_LETTER_DAD                   |
 | T     | ط                | Tah                        | 0637    | ARABIC_LETTER_TAH                   |
 | T'    | ظ                | Zah                        | 0638    | ARABIC_LETTER_ZAH                   |
-| U     | null             | null                       | null    | null                                |
 | V     | آ                | Alef Madda                 | 0622    | ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE |
 | W     | ٱ                | Alef Wasla                 | 0671    | ARABIC_LETTER_ALEF_WASLA            |
 | X     | ٬                | Arabic Thousands Separator | 066C    | ARABIC_THOUSANDS_SEPARATOR          |
 | Y     | ي                | Arabic Ya                  | 064A    | ARABIC_LETTER_YEH                   |
 | Z     | ظ                | Zah                        | 0638    | ARABIC_LETTER_ZAH                   |
+| 0     | ۰                | Zero                       | 06F0    | EXTENDED_ARABIC-INDIC_DIGIT_ZERO    |
+| 1     | ۱                | Arabic-Indic One           | 06F1    | EXTENDED_ARABIC-INDIC_DIGIT_ONE     |
+| 2     | ۲                | Arabic-Indic Two           | 06F2    | EXTENDED_ARABIC-INDIC_DIGIT_TWO     |
+| 3     | ۳                | Arabic-Indic Three         | 06F3    | EXTENDED_ARABIC-INDIC_DIGIT_THREE   |
+| 4     | ۴                | Arabic-Indic Four          | 06F4    | EXTENDED_ARABIC-INDIC_DIGIT_FOUR    |
+| 5     | ۵                | Arabic-Indic Five          | 06F5    | EXTENDED_ARABIC-INDIC_DIGIT_FIVE    |
+| 6     | ۶                | Arabic-Indic Six           | 06F6    | EXTENDED_ARABIC-INDIC_DIGIT_SIX     |
+| 7     | ۷                | Arabic-Indic Seven         | 06F7    | EXTENDED_ARABIC-INDIC_DIGIT_SEVEN   |
+| 8     | ۸                | Arabic-Indic Eight         | 06F8    | EXTENDED_ARABIC-INDIC_DIGIT_EIGHT   |
+| 9     | ۹                | Arabic-Indic Nine          | 06F9    | EXTENDED_ARABIC-INDIC_DIGIT_NINE    |
+| ?     | ؟                | Arabic Question Mark       | 061F    | ARABIC_QUESTION_MARK                |
+| %     | ٪                | Arabic percentage          | 066A    | ARABIC_PERCENT_SIGN                 |
 
 # Letters with Diacritic Support
 To add diacritic, press the apostrophe key (').
@@ -132,6 +139,23 @@ To create an honorific, simply type the corresponding letter combination and pre
 | رال         | رَحِمَهُ ٱللَّٰهُ                    | May God have mercy upon him.                                                | Used for companions of the prophet or other widely recognized scholars. Can be for any believer who has passed away. | ﵀      | FD40    | ARABIC_LIGATURE_RAHIMAHU_ALLAAH                       |
 | رض          | رَضِيَ اللَّهُ عَنْهُ                | May God be pleased with him.                                                | Used for companions of the prophet.                                                                                  | ﵁      | FD41    | ARABIC_LIGATURE_RADI_ALLAAHU_ANH                      |
 | رضا         | رَضِيَ اللَّهُ عَنْهَا               | May God be pleased with her.                                                | Used for companions of the prophet, and in some regions for others such as Mary or Jesus’ apostles.                  | ﵂      | FD42    | ARABIC_LIGATURE_RADI_ALLAAHU_ANHAA                    |
+
+# Special Characters
+
+
+| Key Input                  | Character Output | Character Name             | Unicode | Unicode Name                               |
+| -------------------------- | ---------------- | -------------------------- | ------- | ------------------------------------------ |
+| Shift Ctrl + ` (backquote) | ‏                | Right to left mark         | 200F    | RIGHT-TO-LEFT_MARK                         |
+| Shift + Comma              | «                | Guillemet left             | 00AB    | LEFT-POINTING_DOUBLE_ANGLE_QUOTATION_MARK  |
+| Shift + Period             | »                | Guillemet right            | 00BB    | RIGHT-POINTING_DOUBLE_ANGLE_QUOTATION_MARK |
+| Colon                      | ؛                | Arabic semi-colon          | 061B    | ARABIC_SEMICOLON                           |
+| Comma                      | ،                | Arabic comma               | 060C    | ARABIC_COMMA                               |
+| Shift + Space              | ‌                | Zero-width non-joiner      | 200C    | ZERO_WIDTH_NON-JOINER                      |
+| Shift + 5                  | ٪                | Arabic percentage          | 066A    | ARABIC_PERCENT_SIGN                        |
+| Shift + E                  | ـ                | Kashida/Tatwil             | 0640    | ARABIC_TATWEEL                             |
+| Shift + X                  | ٫                | Arabic Decimal Separator   | 066B    | ARABIC_DECIMAL_SEPARATOR                   |
+| Shift + C                  | ٬                | Arabic Thousands Separator | 066C    | ARABIC_THOUSANDS_SEPARATOR                 |
+| Shift + /                  | ؟                | Arabic Question Mark       | 061F    | ARABIC_QUESTION_MARK                       |
 
 # Settings/Toggles
 There are 3 settings for the keyboard that can be toggled ON and OFF.
