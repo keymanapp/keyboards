@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.147.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,8 +23,16 @@
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>This keyboard is designed for the Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ language of the BC Coast
-region of Canada. This is part of a set of keyboards from FirstVoices.</Description>
+    <Description URL="">This keyboard is designed for the Gitxsanimx̱-Gitsenimx̱-Gyaanimx̱ language of the BC Coast
+region of Canada. This is part of a set of keyboards from FirstVoices.
+
+Alternate names:
+
+Gitxsan
+
+Gitxsen
+
+Gitksan</Description>
   </Info>
   <Files>
     <File>
@@ -145,10 +154,10 @@ region of Canada. This is part of a set of keyboards from FirstVoices.</Descript
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gitsenimx_u" Relationship="deprecates" />
-    <RelatedPackage ID="gitxsan" Relationship="deprecates" />
-    <RelatedPackage ID="fv_gitsenimx_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="gitsenimx_u" Relationship="deprecates"/>
+    <RelatedPackage ID="gitxsan" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_gitsenimx_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

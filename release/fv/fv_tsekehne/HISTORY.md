@@ -1,5 +1,15 @@
 Tsek'ehne Change History
 ============================
+9.2 (9 Jul 2024)
+-------------------
+* Normalized outputs where possible
+* Added better stacking prevention
+* Changed U+0332 on desktop to correct U+0331
+* Small change to mobile layout
+* Added alternate names
+* Removed web help
+* Tidied documentation
+* Added alternate way to type Slash in Google Workspace
 
 9.1.2 (6 Mar 2023)
 -------------------

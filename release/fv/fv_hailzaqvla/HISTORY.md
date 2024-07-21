@@ -1,5 +1,9 @@
-Háiɫzaqvḷa Change History
+Haíɫzaqvḷa Change History
 ============================
+9.5.2 (22 May 2024)
+--------------
+* Corrected typo in language name
+
 9.5.1 (4 Mar 2024)
 ---------------
 * Added left/right distinction to alt keys, updated on-screen keyboard layout, so on-screen keyboard words correctly on Mac

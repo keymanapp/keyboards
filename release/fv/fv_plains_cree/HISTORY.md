@@ -1,5 +1,16 @@
 ᓀᐦᐃᔭᐍᐏᐣ Change History
 ============================
+11.1 (13 Jul 2024)
+--------------------
+* Revamped documentation
+* Added ability to type English letters using Right-Alt and Shift+Right-Alt
+* Updated OSK
+* Added missing original and modified punctuation
+
+11.0.2 (2024-06-11)
+------------------
+* Remove source files from package
+
 11.0.1 (17 May 2024)
 --------------------
 * Updated documentation to include Syllable Markers

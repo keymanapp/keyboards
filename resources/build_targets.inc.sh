@@ -26,19 +26,19 @@ function collect_build_targets() {
 
     if [[ "$target" == */*/* ]]; then
       # echo "$target" >> build_targets.txt
-      find "$target" -maxdepth 1 -type d -wholename "$target" | grep -vP '^(release/packages/fv_all)' >> build_targets_temp.txt
+      (find "$target" -maxdepth 1 -type d -wholename "$target" | grep -vP '^(release/packages/fv_all)' || true) >> build_targets_temp.txt
       if [[ "$target" == "release/packages/fv_all" ]]; then
         fv_all=true
       fi
     elif [[ "$target" == */* ]]; then
-      find "$target" -maxdepth 1 -type d -wholename "$target"'/*' | grep -vP '^(release/packages/fv_all)' >> build_targets_temp.txt
+      (find "$target" -maxdepth 1 -type d -wholename "$target"'/*' | grep -vP '^(release/packages/fv_all)' || true) >> build_targets_temp.txt
       if [[ "$target" == "release/packages" ]]; then
         fv_all=true
       fi
     else
-      find "$target" -maxdepth 2 -type d -wholename "$target"'/*/*' | grep -vP '^(release/packages|release/shared|release/template)' >> build_targets_temp.txt
+      (find "$target" -maxdepth 2 -type d -wholename "$target"'/*/*' | grep -vP '^(release/packages|release/shared|release/template)' || true) >> build_targets_temp.txt
       if [[ "$target" == release ]]; then
-        find "$target" -maxdepth 2 -type d -wholename 'release/packages/*' | grep -vP '^(release/packages/fv_all)' >> build_targets_temp.txt
+        (find "$target" -maxdepth 2 -type d -wholename 'release/packages/*' | grep -vP '^(release/packages/fv_all)' || true) >> build_targets_temp.txt
         fv_all=true
       fi
     fi
