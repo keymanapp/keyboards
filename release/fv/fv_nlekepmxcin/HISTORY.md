@@ -1,5 +1,9 @@
 Nɬeʔkepmxcín Change History
 ============================
+9.5.1 (22 Jul 2024)
+-------------------
+* Corrected typo in linked keyboard name
+
 9.5 (11 Jul 2024)
 -------------------
 * Normalized missed codepoint
