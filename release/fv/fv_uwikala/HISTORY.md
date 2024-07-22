@@ -4,6 +4,7 @@
 -------------------
 * Removed web help in favour of OSK
 * Tweaked mobile layout
+* Tidied documentation
 
 9.3 (7 Nov 2023)
 -------------------
