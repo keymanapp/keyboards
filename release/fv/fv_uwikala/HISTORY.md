@@ -5,6 +5,7 @@
 * Removed web help in favour of OSK
 * Tweaked mobile layout
 * Tidied documentation
+* Added alternate way to type Slash for Google Workspace
 
 9.3 (7 Nov 2023)
 -------------------
