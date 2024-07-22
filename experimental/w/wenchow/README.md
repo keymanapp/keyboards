@@ -7,6 +7,7 @@ wenchow keyboard for üe-tsiu-‘ó romanized wenchownese.溫州話羅馬字輸�
 
 Links
 -----
+https://keyman.com/keyboards/wenchow
 
 Copyright
 ---------
