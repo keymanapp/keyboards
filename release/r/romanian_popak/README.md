@@ -1,9 +1,7 @@
-Romanian (Popak) Basic keyboard
+Romanian (Popak) keyboard
 ==============
 
 (c) SIL International
-
-Version 1.0
 
 Description
 -----------
