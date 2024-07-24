@@ -28,7 +28,7 @@ This keyboard is designed for the <b>Lekwungen (Lək̓ʷəŋən)</b> language of
 					<ul>
 						<li>To type the glottalized accent use the Apostrophe key <kbd>'</kbd> — k̓ is typed <kbd>k</kbd> then Apostrophe <kbd>'</kbd></li>
 						<li>To type the acute accent use the Semicolon key <kbd>;</kbd> — á is typed <kbd>a</kbd> then Semicolon <kbd>;</kbd></li>
-						<li>To type the grave accent use the Backslash key — à is typed <kbd>a</kbd> then <kbd>\</kbd></li>
+						<li>To type the grave accent use the Backslash key <kbd>\</kbd> — à is typed <kbd>a</kbd> then <kbd>\</kbd></li>
 					</ul>
 					<li>All changed punctuation and number keys can type their original value by holding down the <kbd>Right-Alt</kbd> or <kbd>Option</kbd> key.
 						<ul>
