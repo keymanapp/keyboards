@@ -14,3 +14,4 @@ Supported Platforms
 -------------------
 
  * Mobile
+ * Desktop
