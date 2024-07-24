@@ -144,7 +144,7 @@ store(graveVowels) "àèìòùÀÈÌÒÙ" c combined unicode characters
 store(acuteKeys) [T_acute] [SHIFT T_acute] [K_COLON]
 any(plainVowels) + any(acuteKeys) > index(acuteVowels,1)
 
-store(graveKeys) [K_QUOTE]
+store(graveKeys) [K_BKSLASH]
 any(plainVowels) + any(graveKeys) > index(graveVowels,1)
 
 any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on accented vowel will leave the plain vowel behind
@@ -161,7 +161,7 @@ any(withCaron) + [K_BKSP] > index(noCaron,1)
 
 c Glottal apostrophe combining rules
 store(noGlottal) 'cčwkpqtƛlmnŋyCČWKPQTLMNY'
-store(glottalKeys) [T_J] [SHIFT T_J] [K_BKSLASH]
+store(glottalKeys) [T_J] [SHIFT T_J] [K_QUOTE]
 any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
 
 
