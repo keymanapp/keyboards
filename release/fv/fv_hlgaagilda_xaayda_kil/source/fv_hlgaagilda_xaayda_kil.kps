@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.239.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Xaayda-Xaad Kil</Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Xaayda-Xaad Kil</Name>
+    <Name URL="">X̱aayda-X̱aad Kil</Name>
     <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>This keyboard is designed for the X̱aayda-X̱aad Kil language of the BC 
+    <Description URL="">This keyboard is designed for the X̱aayda-X̱aad Kil language of the BC 
 Coast region of Canada. This is part of a set of keyboards from 
-FirstVoices.</Description>
+FirstVoices.
+
+Alternate name:
+
+Haida</Description>
   </Info>
   <Files>
     <File>
@@ -38,7 +43,7 @@ FirstVoices.</Description>
       <Description>Font Aboriginal Sans Bold Italic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
-    </File>This keyboard is designed for the X̱aayda-X̱aad Kil language of the BC Coast region of Canada. This is part of a set of keyboards from FirstVoices.
+    </File>
     <File>
       <Name>..\..\..\shared\fonts\canadian_aboriginal\Aboriginal Sans ITALIC 9435.ttf</Name>
       <Description>Font Aboriginal Sans Italic</Description>
@@ -116,7 +121,7 @@ FirstVoices.</Description>
       <Description>File fv_hlgaagilda_xaayda_kil.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
-    </File>This keyboard is designed for the X̱aayda-X̱aad Kil language of the BC Coast region of Canada. This is part of a set of keyboards from FirstVoices.
+    </File>
     <File>
       <Name>..\build\fv_hlgaagilda_xaayda_kil.kvk</Name>
       <Description>File fv_hlgaagilda_xaayda_kil.kvk</Description>
@@ -140,16 +145,16 @@ FirstVoices.</Description>
     <Keyboard>
       <Name>X̱aayda-X̱aad Kil</Name>
       <ID>fv_hlgaagilda_xaayda_kil</ID>
-      <Version>9.3</Version>
+      <Version>9.4</Version>
       <Languages>
         <Language ID="hax">Southern Haida</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="haida" Relationship="deprecates" />
-    <RelatedPackage ID="xaadkil" Relationship="deprecates" />
-    <RelatedPackage ID="fv_hlgaagilda_xaayda_kil_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="haida" Relationship="deprecates"/>
+    <RelatedPackage ID="xaadkil" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_hlgaagilda_xaayda_kil_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
