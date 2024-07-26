@@ -41,14 +41,15 @@ c v58 Added diagonal flicks for accents and all numbers on top row.
 c v59 Added some missing diagonal and up flicks.
 c v60 Added underdots and underlines to b d g k y to support Atsam, Kirike etc
 c v61 Fuller coverage of Nigerian alphabets added to documentation and language listing.
+c v62 Adjust the space+? space+! behaviour to let the shape-changing rota stil work.
 
 
 
 
 
 store(&NAME) 'Naija Type'
-store(&KEYBOARDVERSION) '61'
-c store(&ETHNOLOGUECODE) 'abn kad agc yay ala cch awo bcy bcn bsj bzw bkv bom bus bwr bys nat cky asg dri dbd dgh cfa ldb jen igb bin eka enn ich utr eza fuv gby ank gkn gde jgk hau jab cen iby idu ibo ige ikk ikw iqw etx atg izr izz jib kaj cdr hig kau kai ckl okr kez kub hia yaz lnu mda mzk mfo mfn mbu mzm sur anc nin nup hbb ann odu ogc png pip pcm pym res iri cla tal tan yer ttr tiv kdl tsw tvd tul kcg uth gel wja wji yba yor'
+store(&KEYBOARDVERSION) '62'
+c store(&ETHNOLOGUECODE) 'abn kad agc yay ala ahs cch awo bcy bcn bsj bzw bkv bom bus bwr bys nat cky asg dri dbd dgh cfa ldb jen igb bin eka enn ich utr eza fuv gby ank gkn gde jgk ha jab cen iby idu ig ige ikk ikw iqw etx atg izr izz jib kaj cdr hig kr kai ckl okr kez kub hia yaz lnu mda mzk mfo mfn mbu mzm sur anc nin nup hbb ann odu ogc png pip pcm pym res iri cla tal tan yer ttr tiv kdl tsw tvd tul kcg uth gel wja wji yba yo'
 c store(&WINDOWSLANGUAGES) 'x0468 x0470 x046A x0809 x0409'
 c store(&LANGUAGE) 'x0809'
 store(&LAYOUTFILE) 'naijatype.keyman-touch-layout'
@@ -236,18 +237,12 @@ outs(Underdot) + [K_BKSP] > nul set(changeshape='1')
 any(LtrsSET1) + [K_BKSP] > nul set(changeshape='1')
 
 c 5: Produce small caps if the mode is turned on (see below)
-c if(smallCapsOn='1') '^' + any(SmallCapsRef) > index(SmallCaps,3) '^'
 if(smallCapsOn='1') + any(SmallCapsRef) > index(SmallCaps,2)
 c Turn off small caps mode on double = or after a space or hyphen
-c Test whether this is more useful or not. Probably not.
-c if(smallCapsOn='1') '^' + '-' > '-' set(smallCapsOn='0')
-c if(smallCapsOn='1') '^' + ' ' > ' ' set(smallCapsOn='0')
-c if(smallCapsOn='1') '^=' + '=' > nul set(smallCapsOn='0')
-c if(smallCapsOn='1') + '-' > '-' set(smallCapsOn='0')
-c if(smallCapsOn='1') + ' ' > ' ' set(smallCapsOn='0')
 if(smallCapsOn='1') '=' + '=' > nul set(smallCapsOn='0')
 c Turn on small caps mode (works on Windows Keyman 15.0.269+)
 if(smallCapsOn!='1') '=' + '=' > nul set(smallCapsOn='1')
+
 c Use alt+semicolon to get a real semicolon
 + [ALT K_COLON] > ';'
 
@@ -399,12 +394,12 @@ c Because auto suggestions will end with a space and we want punctuation to work
 U+0020 + ',' > ', '
 c Also auto-shift layer when we type an end of sentence
 '. ' + U+0020 > '   ' c Turn 3 or more spaces into 3 spaces because we clearly really want that.
-U+0020 + U+0020 > '. ' layer("shift")
-U+0020 + '.' > '. ' layer("shift")
-c U+0020 + U+003f > '? ' layer("shift")     c Probably can delete these two as they duplicate the below lines
-c U+0020 + U+0021 > '! ' layer("shift")
-U+0020 + '?' > '? ' layer("shift")
-U+0020 + '!' > '! ' layer("shift")
+U+0020 + U+0020 > '. ' layer("shift")   c Double space is end of sentence.
+U+0020 + '.' > '. ' layer("shift")      c Full stop after space should be switched.
+U+0020 + '?' > '? ' layer("shift")      c Same with question mark
+'? ' + any(LtrsKey) > ' ¿' layer("shift")	c But undoing the above to enable rotas with ?
+U+0020 + '!' > '! ' layer("shift")      c Switch space before exclamation to be space after it.
+'! ' + any(LtrsKey) > ' ¡' layer("shift")	c Undo the above to enable rotas with !
 '.' + U+0020 > '. ' layer("shift") c For touch, so we can avoid switching to shift during URLs
 c Why did we ever use the below line?
 c It stops newline/enter working at the end of a line with a full stop.
