@@ -18,7 +18,7 @@ char drive[_MAX_DRIVE],dir[_MAX_DIR];
 void WriteRegSetting(PSTR text, int value)
 {
 	HKEY hkey;
-	if(RegCreateKeyEx(HKEY_CURRENT_USER, "Software\\Keyman\\KeymanIMX\\10.0", 0, NULL, NULL, KEY_ALL_ACCESS, NULL, &hkey, NULL) == ERROR_SUCCESS)
+	if(RegCreateKeyEx(HKEY_CURRENT_USER, REGSZ_KeymanIMX, 0, NULL, NULL, KEY_ALL_ACCESS, NULL, &hkey, NULL) == ERROR_SUCCESS)
 	{
 		RegSetValueEx(hkey, text, 0, REG_DWORD, (PBYTE) &value, 4);
 		RegCloseKey(hkey);
@@ -30,7 +30,7 @@ int ReadRegSetting(PSTR text, int dflt)
 	HKEY hkey;
 	DWORD value, sz=4, tp=REG_DWORD;
 
-	if(RegOpenKeyEx(HKEY_CURRENT_USER, "Software\\Keyman\\KeymanIMX\\10.0", 
+	if(RegOpenKeyEx(HKEY_CURRENT_USER, REGSZ_KeymanIMX, 
 		0, KEY_ALL_ACCESS | KEY_WOW64_32KEY, &hkey) == ERROR_SUCCESS)
 	{
 		if(RegQueryValueEx(hkey, text, 0, &tp, (PBYTE) &value, &sz) == ERROR_SUCCESS)

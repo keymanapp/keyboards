@@ -38,6 +38,9 @@
 // First character of a string that can be indexed (count must be < MAXINDEX)
 #define INDEXSTRING "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*"
 
+// Location for Registry settings
+#define REGSZ_KeymanIMX "Software\\Keyman\\KeymanIMX\\10.0"
+
 struct RULE
 {
 	DWORD input,tag,output;
