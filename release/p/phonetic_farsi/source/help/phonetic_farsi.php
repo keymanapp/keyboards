@@ -1,258 +1,101 @@
 <?php
-echo "<!DOCTYPE html>";
-echo "<html lang=\"en\">";
-echo "<head>";
-echo "<meta charset=\"UTF-8\">";
-echo "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">";
-echo "<title>Phonetic Farsi Keyboard - Readme</title>";
-echo "<style>";
-echo "body {";
-echo "font-family: Arial, sans-serif;";
-echo "line-height: 1.6;";
-echo "color: #333;";
-echo "max-width: 1200px;";
-echo "margin: 0 auto;";
-echo "padding: 20px;";
-echo "}";
-echo "h1, h2, h3 {";
-echo "color: #2c3e50;";
-echo "}";
-echo "table {";
-echo "border-collapse: collapse;";
-echo "width: 100%;";
-echo "margin-bottom: 20px;";
-echo "}";
-echo "th, td {";
-echo "border: 1px solid #ddd;";
-echo "padding: 8px;";
-echo "text-align: left;";
-echo "}";
-echo "th {";
-echo "background-color: #f2f2f2;";
-echo "}";
-echo ".section {";
-echo "margin-bottom: 30px;";
-echo "}";
-echo ".feature {";
-echo "background-color: #f7f9fa;";
-echo "border-left: 4px solid #3498db;";
-echo "padding: 10px;";
-echo "margin-bottom: 10px;";
-echo "}";
-echo "</style>";
-echo "</head>";
-echo "<body>";
-echo "<h1>Phonetic Farsi Keyboard</h1>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Description</h2>";
-echo "<p>A phonetically accurate Farsi (Persian) keyboard that includes the Farsi numbers, basic symbols, letters, diacritics and harakat (vowels), along with honorifics and ligature completion for all 25 Islamic prophets and the name of Allah.</p>";
-echo "</div>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Instruction Guide</h2>";
-echo "<h3>Character Map</h3>";
-echo "<table>";
-echo "<tr><th>Input</th><th>Character Output</th><th>Character Name</th><th>Unicode</th><th>Unicode Name</th><th></th></tr>";
-echo "<tr><td>a</td><td>ا</td><td>Alef</td><td>0627</td><td>ARABIC_LETTER_ALEF</td><td></td></tr>";
-echo "<tr><td>a'</td><td>أ</td><td>Alef Hamza Top</td><td>0623</td><td>ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE</td><td></td></tr>";
-echo "<tr><td>b</td><td>ب</td><td>Ba</td><td>0628</td><td>ARABIC_LETTER_BEH</td><td></td></tr>";
-echo "<tr><td>b'</td><td>پ</td><td>Pe</td><td>067E</td><td>ARABIC_LETTER_PEH</td><td></td></tr>";
-echo "<tr><td>c</td><td>چ</td><td>Che</td><td>0686</td><td>ARABIC_LETTER_TCHEH</td><td></td></tr>";
-echo "<tr><td>d</td><td>د</td><td>Dal</td><td>062F</td><td>ARABIC_LETTER_DAL</td><td></td></tr>";
-echo "<tr><td>d'</td><td>ذ</td><td>Thal</td><td>0630</td><td>ARABIC_LETTER_THAL</td><td></td></tr>";
-echo "<tr><td>e</td><td>ه</td><td>Ha</td><td>0647</td><td>ARABIC_LETTER_HEH</td><td></td></tr>";
-echo "<tr><td>e'</td><td>ة</td><td>Teh Marbutah</td><td>0629</td><td>ARABIC_LETTER_TEH_MARBUTA</td><td></td></tr>";
-echo "<tr><td>f</td><td>ف</td><td>Fa</td><td>0641</td><td>ARABIC_LETTER_FEH</td><td></td></tr>";
-echo "<tr><td>f'</td><td>ق</td><td>Qaf</td><td>0642</td><td>ARABIC_LETTER_QAF</td><td></td></tr>";
-echo "<tr><td>g</td><td>گ</td><td>Gaf</td><td>06AF</td><td>ARABIC_LETTER_GAF</td><td></td></tr>";
-echo "<tr><td>h</td><td>ه</td><td>Ha</td><td>0647</td><td>ARABIC_LETTER_HEH</td><td></td></tr>";
-echo "<tr><td>h'</td><td>ة</td><td>Teh Marbutah</td><td>0629</td><td>ARABIC_LETTER_TEH_MARBUTA</td><td></td></tr>";
-echo "<tr><td>i</td><td>ی</td><td>Ya</td><td>06CC</td><td>ARABIC_LETTER_FARSI_YEH</td><td></td></tr>";
-echo "<tr><td>i'</td><td>ي</td><td>Arabic Ya</td><td>064A</td><td>ARABIC_LETTER_YEH</td><td></td></tr>";
-echo "<tr><td>j</td><td>ج</td><td>Jeem</td><td>062C</td><td>ARABIC_LETTER_JEEM</td><td></td></tr>";
-echo "<tr><td>j'</td><td>چ</td><td>Che</td><td>0686</td><td>ARABIC_LETTER_TCHEH</td><td></td></tr>";
-echo "<tr><td>k</td><td>ک</td><td>Keheh</td><td>06A9</td><td>ARABIC_LETTER_KEHEH</td><td></td></tr>";
-echo "<tr><td>k'</td><td>گ</td><td>Gaf</td><td>06AF</td><td>ARABIC_LETTER_GAF</td><td></td></tr>";
-echo "<tr><td>l</td><td>ل</td><td>Lam</td><td>0644</td><td>ARABIC_LETTER_LAM</td><td></td></tr>";
-echo "<tr><td>m</td><td>م</td><td>Mim</td><td>0645</td><td>ARABIC_LETTER_MEEM</td><td></td></tr>";
-echo "<tr><td>n</td><td>ن</td><td>Nun</td><td>0646</td><td>ARABIC_LETTER_NOON</td><td></td></tr>";
-echo "<tr><td>o</td><td>و</td><td>Waw</td><td>0648</td><td>ARABIC_LETTER_WAW</td><td></td></tr>";
-echo "<tr><td>p</td><td>پ</td><td>Pe</td><td>067E</td><td>ARABIC_LETTER_PEH</td><td></td></tr>";
-echo "<tr><td>q</td><td>ق</td><td>Qaf</td><td>0642</td><td>ARABIC_LETTER_QAF</td><td></td></tr>";
-echo "<tr><td>r</td><td>ر</td><td>Ra</td><td>0631</td><td>ARABIC_LETTER_REH</td><td></td></tr>";
-echo "<tr><td>r'</td><td>ز</td><td>Zain</td><td>0632</td><td>ARABIC_LETTER_ZAIN</td><td></td></tr>";
-echo "<tr><td>r''</td><td>ژ</td><td>Zhe</td><td>0698</td><td>ARABIC_LETTER_JEH</td><td></td></tr>";
-echo "<tr><td>s</td><td>س</td><td>Seen</td><td>0633</td><td>ARABIC_LETTER_SEEN</td><td></td></tr>";
-echo "<tr><td>s'</td><td>ش</td><td>Sheen</td><td>0634</td><td>ARABIC_LETTER_SHEEN</td><td></td></tr>";
-echo "<tr><td>t</td><td>ت</td><td>Ta</td><td>062A</td><td>ARABIC_LETTER_TEH</td><td></td></tr>";
-echo "<tr><td>t'</td><td>ث</td><td>Tha</td><td>062B</td><td>ARABIC_LETTER_THEH</td><td></td></tr>";
-echo "<tr><td>u</td><td>و</td><td>Waw</td><td>0648</td><td>ARABIC_LETTER_WAW</td><td></td></tr>";
-echo "<tr><td>v</td><td>و</td><td>Waw</td><td>0648</td><td>ARABIC_LETTER_WAW</td><td></td></tr>";
-echo "<tr><td>w</td><td>و</td><td>Waw</td><td>0648</td><td>ARABIC_LETTER_WAW</td><td></td></tr>";
-echo "<tr><td>x</td><td>خ</td><td>Kha</td><td>062E</td><td>ARABIC_LETTER_KHAH</td><td></td></tr>";
-echo "<tr><td>y</td><td>ی</td><td>Ya</td><td>06CC</td><td>ARABIC_LETTER_FARSI_YEH</td><td></td></tr>";
-echo "<tr><td>y'</td><td>ي</td><td>Arabic Ya</td><td>064A</td><td>ARABIC_LETTER_YEH</td><td></td></tr>";
-echo "<tr><td>z</td><td>ز</td><td>Zain</td><td>0632</td><td>ARABIC_LETTER_ZAIN</td><td></td></tr>";
-echo "<tr><td>z'</td><td>ژ</td><td>Zhe</td><td>0698</td><td>ARABIC_LETTER_JEH</td><td></td></tr>";
-echo "<tr><td>A</td><td>ع</td><td>'Ain</td><td>0639</td><td>ARABIC_LETTER_AIN</td><td></td></tr>";
-echo "<tr><td>A'</td><td>غ</td><td>Ghain</td><td>063A</td><td>ARABIC_LETTER_GHAIN</td><td></td></tr>";
-echo "<tr><td>B</td><td>ك</td><td>Kaf</td><td>0643</td><td>ARABIC_LETTER_KAF</td><td></td></tr>";
-echo "<tr><td>B'</td><td>گ</td><td>Gaf</td><td>06AF</td><td>ARABIC_LETTER_GAF</td><td></td></tr>";
-echo "<tr><td>C</td><td>٬</td><td>Arabic Decimal Separator</td><td>066B</td><td>ARABIC_DECIMAL_SEPARATOR</td><td></td></tr>";
-echo "<tr><td>D</td><td>ض</td><td>Dad</td><td>0636</td><td>ARABIC_LETTER_DAD</td><td></td></tr>";
-echo "<tr><td>E</td><td>ـ</td><td>Kashida/Tatweel</td><td>0640</td><td>ARABIC_TATWEEL</td><td></td></tr>";
-echo "<tr><td>G</td><td>غ</td><td>Ghain</td><td>063A</td><td>ARABIC_LETTER_GHAIN</td><td></td></tr>";
-echo "<tr><td>H</td><td>ح</td><td>Hah</td><td>062D</td><td>ARABIC_LETTER_HAH</td><td></td></tr>";
-echo "<tr><td>H'</td><td>خ</td><td>Kha</td><td>062E</td><td>ARABIC_LETTER_KHAH</td><td></td></tr>";
-echo "<tr><td>J</td><td>ة</td><td>Teh Marbutah</td><td>0629</td><td>ARABIC_LETTER_TEH_MARBUTA</td><td></td></tr>";
-echo "<tr><td>K</td><td>خ</td><td>Kha</td><td>062E</td><td>ARABIC_LETTER_KHAH</td><td></td></tr>";
-echo "<tr><td>M</td><td>ى</td><td>Alef Maksura</td><td>0649</td><td>ARABIC_LETTER_ALEF_MAKSURA</td><td></td></tr>";
-echo "<tr><td>N</td><td>ڪ</td><td>Swish Kaf</td><td>06AA</td><td>ARABIC_LETTER_SWASH_KAF</td><td></td></tr>";
-echo "<tr><td>O</td><td>أ</td><td>Alef Hamza Top</td><td>0623</td><td>ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE</td><td></td></tr>";
-echo "<tr><td>P</td><td>إ</td><td>Alef Hamza Bottom</td><td>0625</td><td>ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW</td><td></td></tr>";
-echo "<tr><td>Q</td><td>ء</td><td>Hamza</td><td>0621</td><td>ARABIC_LETTER_HAMZA</td><td></td></tr>";
-echo "<tr><td>S</td><td>ص</td><td>Sad</td><td>0635</td><td>ARABIC_LETTER_SAD</td><td></td></tr>";
-echo "<tr><td>S'</td><td>ض</td><td>Dad</td><td>0636</td><td>ARABIC_LETTER_DAD</td><td></td></tr>";
-echo "<tr><td>T</td><td>ط</td><td>Tah</td><td>0637</td><td>ARABIC_LETTER_TAH</td><td></td></tr>";
-echo "<tr><td>T'</td><td>ظ</td><td>Zah</td><td>0638</td><td>ARABIC_LETTER_ZAH</td><td></td></tr>";
-echo "<tr><td>V</td><td>آ</td><td>Alef Madda</td><td>0622</td><td>ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE</td><td></td></tr>";
-echo "<tr><td>W</td><td>ٱ</td><td>Alef Wasla</td><td>0671</td><td>ARABIC_LETTER_ALEF_WASLA</td><td></td></tr>";
-echo "<tr><td>X</td><td>٬</td><td>Arabic Thousands Separator</td><td>066C</td><td>ARABIC_THOUSANDS_SEPARATOR</td><td></td></tr>";
-echo "<tr><td>Y</td><td>ي</td><td>Arabic Ya</td><td>064A</td><td>ARABIC_LETTER_YEH</td><td></td></tr>";
-echo "<tr><td>Z</td><td>ظ</td><td>Zah</td><td>0638</td><td>ARABIC_LETTER_ZAH</td><td></td></tr>";
-echo "<tr><td>0</td><td>۰</td><td>Zero</td><td>06F0</td><td>EXTENDED_ARABIC-INDIC_DIGIT_ZERO</td><td></td></tr>";
-echo "<tr><td>1</td><td>۱</td><td>Arabic-Indic One</td><td>06F1</td><td>EXTENDED_ARABIC-INDIC_DIGIT_ONE</td><td></td></tr>";
-echo "<tr><td>2</td><td>۲</td><td>Arabic-Indic Two</td><td>06F2</td><td>EXTENDED_ARABIC-INDIC_DIGIT_TWO</td><td></td></tr>";
-echo "<tr><td>3</td><td>۳</td><td>Arabic-Indic Three</td><td>06F3</td><td>EXTENDED_ARABIC-INDIC_DIGIT_THREE</td><td></td></tr>";
-echo "<tr><td>4</td><td>۴</td><td>Arabic-Indic Four</td><td>06F4</td><td>EXTENDED_ARABIC-INDIC_DIGIT_FOUR</td><td></td></tr>";
-echo "<tr><td>5</td><td>۵</td><td>Arabic-Indic Five</td><td>06F5</td><td>EXTENDED_ARABIC-INDIC_DIGIT_FIVE</td><td></td></tr>";
-echo "<tr><td>6</td><td>۶</td><td>Arabic-Indic Six</td><td>06F6</td><td>EXTENDED_ARABIC-INDIC_DIGIT_SIX</td><td></td></tr>";
-echo "<tr><td>7</td><td>۷</td><td>Arabic-Indic Seven</td><td>06F7</td><td>EXTENDED_ARABIC-INDIC_DIGIT_SEVEN</td><td></td></tr>";
-echo "<tr><td>8</td><td>۸</td><td>Arabic-Indic Eight</td><td>06F8</td><td>EXTENDED_ARABIC-INDIC_DIGIT_EIGHT</td><td></td></tr>";
-echo "<tr><td>9</td><td>۹</td><td>Arabic-Indic Nine</td><td>06F9</td><td>EXTENDED_ARABIC-INDIC_DIGIT_NINE</td><td></td></tr>";
-echo "<tr><td>?</td><td>؟</td><td>Arabic Question Mark</td><td>061F</td><td>ARABIC_QUESTION_MARK</td><td></td></tr>";
-echo "<tr><td>%</td><td>٪</td><td>Arabic percentage</td><td>066A</td><td>ARABIC_PERCENT_SIGN</td><td></td></tr>";
-echo "</table>";
-echo "<h3>Letters with Diacritic Support</h3>";
-echo "<p>To add diacritic, press the apostrophe key (').</p>";
-echo "<table>";
-echo "<tr><th>Input</th><th>Diacritic Letter</th><th>Input Character Name</th><th>Output</th><th>Output Character Name</th><th></th></tr>";
-echo "<tr><td>ر</td><td>'</td><td>Ra</td><td>ز</td><td>Za</td><td></td></tr>";
-echo "<tr><td>ز</td><td>'</td><td>Za</td><td>ژ</td><td>Zha</td><td></td></tr>";
-echo "<tr><td>ب</td><td>'</td><td>Ba</td><td>پ</td><td>Pe</td><td></td></tr>";
-echo "<tr><td>ع</td><td>'</td><td>Ain</td><td>غ</td><td>Ghain</td><td></td></tr>";
-echo "<tr><td>ت</td><td>'</td><td>Te</td><td>ث</td><td>Theh (pronounced as \"s\")</td><td></td></tr>";
-echo "<tr><td>د</td><td>'</td><td>Dal</td><td>ذ</td><td>Thal</td><td></td></tr>";
-echo "<tr><td>ج</td><td>'</td><td>Jeem</td><td>چ</td><td>Che</td><td></td></tr>";
-echo "<tr><td>ح</td><td>'</td><td>Hah</td><td>خ</td><td>Khah</td><td></td></tr>";
-echo "<tr><td>ه</td><td>'</td><td>Heh</td><td>ة</td><td>Teh Marbutah</td><td></td></tr>";
-echo "<tr><td>ی</td><td>'</td><td>Ya</td><td>ي</td><td>Arabic Ya</td><td></td></tr>";
-echo "<tr><td>ف</td><td>'</td><td>Feh</td><td>ق</td><td>Qaf</td><td></td></tr>";
-echo "<tr><td>ک</td><td>'</td><td>Keheh</td><td>گ</td><td>Gaf</td><td></td></tr>";
-echo "<tr><td>ك</td><td>'</td><td>Kaf</td><td>ک</td><td>Gaf</td><td></td></tr>";
-echo "<tr><td>ط</td><td>'</td><td>Tah</td><td>ظ</td><td>Zah</td><td></td></tr>";
-echo "<tr><td>ا</td><td>a</td><td>Alef</td><td>آ</td><td>Alef Madda</td><td></td></tr>";
-echo "<tr><td>ا</td><td>'</td><td>Alef</td><td>أ</td><td>Alef Hamza Top</td><td></td></tr>";
-echo "</table>";
-echo "";
-echo "<h3>Vowels</h3>";
-echo "<table>";
-echo "<tr><th>Input</th><th>Character Output</th><th>Character Name</th><th>Unicode</th><th>Unicode Name</th><th></th></tr>";
-echo "<tr><td>Alt + a</td><td>َ</td><td>Fatha</td><td>0618</td><td>ARABIC_SMALL_FATHA</td><td></td></tr>";
-echo "<tr><td>Alt + e</td><td>ِ</td><td>Kasra</td><td>061A</td><td>ARABIC_SMALL_KASRA</td><td></td></tr>";
-echo "<tr><td>Alt + i</td><td>ِ</td><td>Kasra</td><td>061A</td><td>ARABIC_SMALL_KASRA</td><td></td></tr>";
-echo "<tr><td>Alt + o</td><td>ُ</td><td>Damma</td><td>0619</td><td>ARABIC_SMALL_DAMMA</td><td></td></tr>";
-echo "<tr><td>Alt + u</td><td>ُ</td><td>Damma</td><td>0619</td><td>ARABIC_SMALL_DAMMA</td><td></td></tr>";
-echo "<tr><td>Alt + a, Alt + a</td><td>ً</td><td>Fathatan</td><td>064B</td><td>ARABIC_FATHATAN</td><td></td></tr>";
-echo "<tr><td>Alt + e, Alt + e</td><td>ٍ</td><td>Kasratan</td><td>064D</td><td>ARABIC_KASRATAN</td><td></td></tr>";
-echo "<tr><td>Alt + i, Alt + i</td><td>ٍ</td><td>Kasratan</td><td>064D</td><td>ARABIC_KASRATAN</td><td></td></tr>";
-echo "<tr><td>Alt + o, Alt + o</td><td>ٌ</td><td>Dammatan</td><td>064C</td><td>ARABIC_DAMMATAN</td><td></td></tr>";
-echo "<tr><td>Alt + u, Alt + u</td><td>ٌ</td><td>Dammatan</td><td>064C</td><td>ARABIC_DAMMATAN</td><td></td></tr>";
-echo "<tr><td>Alt + m</td><td>ّ</td><td>Shadda</td><td>0651</td><td>ARABIC_SHADDA</td><td></td></tr>";
-echo "<tr><td>Alt + n</td><td>ْ</td><td>Sukun</td><td>0652</td><td>ARABIC_SUKUN</td><td></td></tr>";
-echo "<tr><td>Alt + r</td><td>ٰ</td><td>Alef superscript</td><td>0670</td><td>ARABIC_LETTER_SUPERSCRIPT_ALEF</td><td></td></tr>";
-echo "<tr><td>Alt + f</td><td>ٖ</td><td>Alef subscript</td><td>0656</td><td>ARABIC_SUBSCRIPT_ALEF</td><td></td></tr>";
-echo "<tr><td>Alt + q</td><td>ٓ</td><td>Madda</td><td>0653</td><td>ARABIC_MADDAH_ABOVE</td><td></td></tr>";
-echo "</table>";
-echo "</div>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Honorifics/Ligature</h2>";
-echo "<p>To create an honorific, simply type the corresponding letter combination and press Shift + Backquote (Tilde) Key</p>";
-echo "<table>";
-echo "<tr><th>Combination</th><th>Honorific</th><th>Meaning</th><th>Usage</th><th>Output</th><th>Unicode</th><th>Unicode Name</th><th></th></tr>";
-echo "<tr><td>صت</td><td>سُبْحَانَهُ وَتَعَالَى<br></td><td>The Glorious, the Most High</td><td>Used after the name of Allah</td><td>﷾</td><td>FDFE</td><td>ARABIC_LIGATURE_SUBHAANAHU_WA_TAAALAA</td><td></td></tr>";
-echo "<tr><td>ازوج</td><td>أَللّٰه عَزَّ وَ جَلَّ</td><td>Mighty and Majestic</td><td>Used after the name of Allah</td><td>﷿</td><td>FDFF</td><td>ARABIC_LIGATURE_AZZA_WA_JALL</td><td></td></tr>";
-echo "<tr><td>بسم</td><td>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</td><td>With the name of Allah, the Infinitely Merciful, the Extremely Merciful</td><td>Recited before reading the Holy Qur'an and performing any daily activity</td><td>﷽</td><td>FDFD</td><td>ARABIC_LIGATURE_BISMILLAH_AR-RAHMAN_AR-RAHEEM</td><td></td></tr>";
-echo "<tr><td>سا</td><td>صلى الله عليه وآله</td><td>The blessings of God be upon him and the people of his household.</td><td>Used after the name of the Prophet Muhammad</td><td>﵆</td><td>FD46</td><td>ARABIC_LIGATURE_SALLALLAAHU_ALAYHI_WA-AALIH</td><td></td></tr>";
-echo "<tr><td>سو</td><td>صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ</td><td>The blessings and peace of God be upon him.</td><td>Used after the name of a major prophet, particularly Prophet Muhammad</td><td>ﷺ</td><td>FDFA</td><td>ARABIC_LIGATURE_SALLALLAHOU_ALAYHE_WASALLAM</td><td></td></tr>";
-echo "<tr><td>ساو</td><td>صلى الله عليه وآله وسلم</td><td>The blessings of God and peace be upon him and the people of his household.</td><td>Used after the name of the Prophet Muhamad</td><td>﵌</td><td>FD4C</td><td>ARABIC_LIGATURE_SALLALLAHU_ALAYHI_WAAALIHEE_WA-SALLAM</td><td></td></tr>";
-echo "<tr><td>اس</td><td>عَلَيْهِ ٱلسَّلَامُ</td><td>Peace be upon him.</td><td>Used after a prophet’s or an Archangel’s name.</td><td>﵇</td><td>FD47</td><td>ARABIC_LIGATURE_ALAYHI_AS-SALAAM</td><td></td></tr>";
-echo "<tr><td>رال</td><td>رَحِمَهُ ٱللَّٰهُ</td><td>May God have mercy upon him.</td><td>Used for companions of the prophet or other widely recognized scholars. Can be for any believer who has passed away.</td><td>﵀</td><td>FD40</td><td>ARABIC_LIGATURE_RAHIMAHU_ALLAAH</td><td></td></tr>";
-echo "<tr><td>رض</td><td>رَضِيَ اللَّهُ عَنْهُ</td><td>May God be pleased with him.</td><td>Used for companions of the prophet.</td><td>﵁</td><td>FD41</td><td>ARABIC_LIGATURE_RADI_ALLAAHU_ANH</td><td></td><td></td></tr>";
-echo "<tr><td>رضا</td><td>رَضِيَ اللَّهُ عَنْهَا</td><td>May God be pleased with her.</td><td>Used for companions of the prophet, and in some regions for others such as Mary or Jesus’ apostles.</td><td>﵂</td><td>FD42</td><td>ARABIC_LIGATURE_RADI_ALLAAHU_ANHAA</td><td></td></tr>";
-echo "<tr></tr>";
-echo "</table>";
-echo "</div>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Special Characters</h2>";
-echo "<table>";
-echo "<tr><th>Key Input</th><th>Character Output</th><th>Character Name</th><th>Unicode</th><th>Unicode Name</th><th></th></tr>";
-echo "<tr><td>Shift Ctrl + ` (backquote)</td><td>‏</td><td>Right to left mark</td><td>200F</td><td>RIGHT-TO-LEFT_MARK</td><td></td></tr>";
-echo "<tr><td>Shift + Comma</td><td>«</td><td>Guillemet left</td><td>00AB</td><td>LEFT-POINTING_DOUBLE_ANGLE_QUOTATION_MARK</td><td></td></tr>";
-echo "<tr><td>Shift + Period</td><td>»</td><td>Guillemet right</td><td>00BB</td><td>RIGHT-POINTING_DOUBLE_ANGLE_QUOTATION_MARK</td><td></td></tr>";
-echo "<tr><td>Colon</td><td>؛</td><td>Arabic semi-colon</td><td>061B</td><td>ARABIC_SEMICOLON</td><td></td></tr>";
-echo "<tr><td>Comma</td><td>،</td><td>Arabic comma</td><td>060C</td><td>ARABIC_COMMA</td><td></td></tr>";
-echo "<tr><td>Shift + Space</td><td>‌</td><td>Zero-width non-joiner</td><td>200C</td><td>ZERO_WIDTH_NON-JOINER</td><td></td></tr>";
-echo "<tr><td>Shift + 5</td><td>٪</td><td>Arabic percentage</td><td>066A</td><td>ARABIC_PERCENT_SIGN</td><td></td></tr>";
-echo "<tr><td>Shift + E</td><td>ـ</td><td>Kashida/Tatwil</td><td>0640</td><td>ARABIC_TATWEEL</td><td></td></tr>";
-echo "<tr><td>Shift + X</td><td>٫</td><td>Arabic Decimal Separator</td><td>066B</td><td>ARABIC_DECIMAL_SEPARATOR</td><td></td></tr>";
-echo "<tr><td>Shift + C</td><td>٬</td><td>Arabic Thousands Separator</td><td>066C</td><td>ARABIC_THOUSANDS_SEPARATOR</td><td></td></tr>";
-echo "<tr><td>Shift + /</td><td>؟</td><td>Arabic Question Mark</td><td>061F</td><td>ARABIC_QUESTION_MARK</td></tr>";
-echo "</table>";
-echo "</div>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Settings/Toggles</h2>";
-echo "<p>There are 3 settings for the keyboard that can be toggled ON and OFF.</p>";
-echo "<h3>Ligature Completion and Honorifics</h3>";
-echo "<ul>";
-echo "<li>CTRL SHIFT ALT + 1 to enable</li>";
-echo "<li>CTRL SHIFT ALT + 2 to disable</li>";
-echo "</ul>";
-echo "<h3>Honorific Brackets</h3>";
-echo "<ul>";
-echo "<li>CTRL SHIFT ALT + 3 to enable</li>";
-echo "<li>CTRL SHIFT ALT + 4 to disable</li>";
-echo "</ul>";
-echo "<h3>Diacritic Addition</h3>";
-echo "<ul>";
-echo "<li>CTRL SHIFT ALT + 5 to enable</li>";
-echo "<li>CTRL SHIFT ALT + 6 to disable</li>";
-echo "</ul>";
-echo "</div>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Links</h2>";
-echo "<p>Keyboard Homepage: <a href=\"https://keyman.com/keyboards/phonetic_farsi\">https://keyman.com/keyboards/phonetic_farsi</a></p>";
-echo "</div>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Copyright</h2>";
-echo "<p>See <a href=\"LICENSE.md\">LICENSE.md</a></p>";
-echo "</div>";
-echo "";
-echo "<div class=\"section\">";
-echo "<h2>Supported Platforms</h2>";
-echo "<ul>";
-echo "<li>Windows</li>";
-echo "<li>macOS</li>";
-echo "<li>Linux</li>";
-echo "<li>Desktop devices</li>";
-echo "</ul>";
-echo "</div>";
-echo "</body>";
-echo "</html>";
+  $pagename = 'Phonetic Farsi Help';
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        .feature {
+            background-color: #f7f9fa;
+            border-left: 4px solid #3498db;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+END;
 ?>
+<?php
+  $pagename = 'Phonetic Farsi Help';
+  $pagetitle = $pagename;
+?>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Phonetic Farsi Keyboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        .feature {
+            background-color: #f7f9fa;
+            border-left: 4px solid #3498db;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Phonetic Farsi Keyboard</h1>
+    
+    <p>Thank you for choosing the Phonetic Farsi keyboard! This keyboard layout is designed to provide a phonetically accurate typing experience for Farsi (Persian) language users.</p>
+    
+    <h2>Key Features</h2>
+    
+    <div class="feature">
+        <h3>Phonetic Accuracy</h3>
+        <p>Our keyboard layout is designed to closely match the phonetic structure of Farsi, making it intuitive for users familiar with the language.</p>
+    </div>
+    
+    <div class="feature">
+        <h3>Diacritics and Vowels</h3>
+        <p>Easily add diacritics to letters by typing an apostrophe (') after the letter. For vowels, hold the Alt key and type the corresponding letter (a, e, i, o, u).</p>
+        <p>Other diacritics such as Tanwin, Shadda, Madda, etc, also supported.</p>
+    </div>
+    
+    <div class="feature">
+        <h3>Ligature Support</h3>
+        <p>Automatic ligature completion for the 25 Prophets, and 14 Shia Infallibles</p>
+        <p>Keybinds for honorific symbols (Radiallahu Anh, Alahyi Salam, etc)</p>
+    </div>
+    
+    <div class="feature">
+        <h3>Special Characters</h3>
+        <p>Support for Farsi numbers, basic symbols, and special characters like Tatwil and zero-width non-joiner.</p>
+    </div>
+
+    <div class="feature">
+        <h3>Feature Toggles</h3>
+        <p>Ability to enable and disable diacritics being addded with the apostrophe key.</p>
+        <p>Ability to enable and disable the automatic ligature completion.</p>
+        <p>Ability to enable and disable the brackets around honorifics</p>
+    </div>
+    
+    <h2>Getting Started</h2>
+    <p>To begin using the Phonetic Farsi keyboard, simply install it and select it as your input method. Refer to the readme file for detailed usage instructions and a full list of features.</p>
+    
+    <h2>Support</h2>
+    <p>If you encounter any issues or have questions, please don't hesitate to contact us at <a href="mailto:amir.ghareebdost@gmail.com">amir.ghareebdost@gmail.com</a>.</p>
+    
+    <p>We hope you enjoy using the Phonetic Farsi keyboard!</p>
