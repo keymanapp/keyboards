@@ -131,11 +131,15 @@ c basic stores
 store(plainVowels) "aeiuAEIU" c no letter "o"
 store(acuteVowels) "áéíúÁÉÍÚ"
 store(graveVowels) "àèìùÀÈÌÙ"
-store(needsGlottal) "cmlnwyptkqCMLNWYPTKQ"
+store(needsGlottal) "čcmlnŋwyptkqČCMLNŊWYPTKQ"
 
 c desktop deadkeys
 store(desktopAcuteKey) ";"
 store(desktopGraveKey) "]"
+
+c combining glottal above right
+store(glottalKeys) [T_F] [SHIFT T_F] [K_D]
+any(needsGlottal) + any(glottalKeys) > index(needsGlottal,1) U+0315
 
 c acute accent - MOBILE
 store(acuteKeys) [T_ACUTE] [SHIFT T_ACUTE]
@@ -158,15 +162,6 @@ any(desktopAcuteKey) + [K_EQUAL] > '≠' c from Montler's KlalamU layout
 c grave accent - DESKTOP
 any(desktopGraveKey) + any(plainVowels) > index(graveVowels,2)
 any(desktopGraveKey) + [K_F] > 'ə' U+0300
-
-c combining glottal above right - MOBILE
-store(glottalKeys) [T_F] [SHIFT T_F] [K_D]
-any(needsGlottal) + any(glottalKeys) > index(needsGlottal,1) U+0315
-
-c combining glottal above right - DESKTOP
-c any(desktopGlottalKey) + any(needsGlottal) > index(needsGlottal,2) U+0315
-"d" + [K_B] > 'č'  U+0315
-"d" + [K_G] > 'ŋ'  U+0315
 
 c letters with hacek - backspace rule
 store(noHacek) "csCS"
@@ -207,11 +202,9 @@ C language specific keys
 + [K_V] > "š"
 + [K_Z] > "x̣"
 "u" + "i" > "ƛ̕" c "ui" is glottalized barred lambda
-c 'ʷ' + [K_D] > U+0315 'ʷ'
-c 'ʷ' + [SHIFT K_D] > U+0313 'ʷ'
 
 c other
-c these are taken from Montler's KlallamU layout
+c from Montler's KlallamU layout
 c see also: the "rules" section of this *.kmn has additional combinations
 "." + "." > "…" c ellipsis
 
