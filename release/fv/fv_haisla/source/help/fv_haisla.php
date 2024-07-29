@@ -23,8 +23,23 @@ END;
 <h1>Keyboard Layout</h1>
 
 <p>
-    The Haisla keyboard uses the English keyboard as a base, with added key combinations in order to create special
-    characters. See <a href="fv_haisla_keycombos.pdf">this document</a> for all the special key combinations.</p>
+  The Haisla keyboard uses the English keyboard as a base, with added key combinations in order to create special characters.</p>
+  <li>Most special characters are typed by typing a punctuation mark followed by a letter <strong>without</strong> a space between them.
+    <ul>
+      <li>To type the Acute accent ´ use the Semicolon key <kbd>;</kbd> followed by a vowel  —  é is typed <kbd>;</kbd> then <kbd>e</kbd></li>
+      <li>To type the Combining Apostrophe ’ use the Semicolon key <kbd>;</kbd> followed by a consonant  —  m̓ is typed <kbd>;</kbd> then <kbd>m</kbd></li>
+      <li>To type the Macron accent ¯ use the Equals key <kbd>=</kbd>  —  x̄ is typed <kbd>=</kbd> then <kbd>x</kbd></li>
+      <li>To type the l with tilde <b>ɫ</b> use the Equals key <kbd>=</kbd> followed by the l key <kbd>l</kbd></li>
+    </ul>
+  </li>
+  <li>The Lambda, Barred Lambda, and Barred Lambda with Apostrophe are typed by using combinations of the CTRL, l, and hyphen keys.
+    <ul>
+      <li><b>λ</b> is typed <kbd>CTRL</kbd>+<kbd>l</kbd></li>
+      <li><b>ƛ</b> is typed <kbd>CTRL</kbd>+<kbd>l</kbd>+<kbd>-</kbd></li>
+      <li><b>ƛ̓</b> is typed <kbd>CTRL</kbd>+<kbd>l</kbd>+<kbd>-</kbd>+<kbd>-</kbd></li>
+    </ul>
+  </li>
+  <li>The raised w <b>ʷ</b> is typed <kbd>Right-Alt</kbd>+<kbd>w</kbd> (Windows) or <kbd>⌥ Option</kbd>+<kbd>w</kbd> (Mac)</li>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
