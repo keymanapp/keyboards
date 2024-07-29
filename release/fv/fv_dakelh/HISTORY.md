@@ -1,5 +1,21 @@
 Dakelh Change History
 ============================
+9.2.1 (9 Jul 2024)
+-------------------
+* Corrected error in documentation
+
+9.2 (4 Jul 2024)
+-------------------
+* Simplified missed e with acute in mobile layout
+* Added alternate way to type / in Google Workspace
+* Tidied documentation
+* Change to mobile layout
+
+9.1.5 (12 Feb 2024)
+-------------------
+* Simplified to single code points were possible
+* Cleaned up rules
+* Centered mobile keyboard
 
 9.1.4 (6 Mar 2023)
 -------------------

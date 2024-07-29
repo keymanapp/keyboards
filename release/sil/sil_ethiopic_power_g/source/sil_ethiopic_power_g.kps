@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>sil_ethiopic_power_g_sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -19,9 +21,12 @@
   <Info>
     <Name URL="">SIL Ethiopic Power-G</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 2017-2023 SIL Ethiopia</Copyright>
+    <Copyright URL="">© 2017-2024 SIL Ethiopia</Copyright>
     <Author URL="mailto:computer_ethiopia@sil.org">SIL Ethiopia</Author>
     <WebSite URL="http://www.silethiopia.org">http://www.silethiopia.org</WebSite>
+    <Description URL="">The SIL Ethiopic Power-G keyboard enables typing in all Ethiopic Saba
+Fidel scripts using the keyboarding sequences found in the \"Power
+Ge\'ez (Phonetic)\" keyboard from Concepts Data Systems.</Description>
   </Info>
   <Files>
     <File>
@@ -60,12 +65,32 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_ethiopic_power_g.kvk</Name>
+      <Description>File sil_ethiopic_power_g.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>SIL Ethiopic Power-G</Name>
       <ID>sil_ethiopic_power_g</ID>
-      <Version>1.2.3</Version>
+      <Version>1.2.4</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="am">Amharic</Language>
         <Language ID="bst-Ethi">Basketo (Ethiopic)</Language>

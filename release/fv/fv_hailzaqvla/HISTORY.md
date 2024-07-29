@@ -1,4 +1,4 @@
-Háiɫzaqvḷa Change History
+Haíɫzaqvḷa Change History
 ============================
 10.0 (8 Feb 2024)
 ----------------

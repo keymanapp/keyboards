@@ -1,7 +1,7 @@
 FirstVoices Keyboard Package
 ==================================================
 
-(c) 2015-2023 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
+(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
 
 __DESCRIPTION__
 
@@ -13,8 +13,7 @@ of the FirstVoices keyboards standalone on Windows.
 
 ### Note for keyboard maintainers:
 * The fv_all keyboard package version is maintained in /source/fv_all.kps.in
-* When adding new keyboards to fv_all, the [keyboards.csv](https://github.com/keymanapp/keyman/blob/master/oem/firstvoices/keyboards.csv) 
-file in the Keyman repo also needs to get updated for the FirstVoices mobile apps to know what Region and Language ID to associate with the keyboard.
+* When adding new keyboards to fv_all, the [regions.json](./source/regions.json) file also needs to get updated for the FirstVoices mobile apps to know what Region and to associate with the keyboard.
 
 
 Supported Platforms

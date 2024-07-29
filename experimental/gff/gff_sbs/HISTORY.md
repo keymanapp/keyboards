@@ -1,5 +1,14 @@
 # gff_sbs Change History
 
+## 2024-05-05 vesion 1.0.7
+* Change to font name for LibreOffice compatibility.
+* Change to font name to avoid name length problems.
+* Fullstop can be typed Ethiopic style with "::".
+
+## 2024-02-27 version 1.0.6
+* Revisions to the input terminator symbol, ' (apostrophe).
+* Update to the Qubee-Sheek-Bakrii-Saphaloo.ttf font.
+
 ## 2023-12-06 version 1.0.5
 * Revisions to 3 characters in the Athinka: Sheek Bakrii Saphaloo font.
 * Edits and corrections to the typing manual.

@@ -1,6 +1,10 @@
 Rachitrali-Yidgha Change History
 =======================
 
+1.1.1 (2024-06-11)
+------------------
+* Remove source files from package
+
 1.1 (25 Oct 2018)
 -----------------
 
