@@ -1,5 +1,9 @@
 Haisla Change History
 ====================
+2.1.3 (28 Jul 2024)
+----------------
+* Moved keyboard instructions from PDF to welcome.htm and fv_haisla.php
+
 2.1.2 (12 Jul 2024)
 ----------------
 * linked to fv_xaislakala

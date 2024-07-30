@@ -1,9 +1,9 @@
-Wenchow keyboard
+wenchow keyboard
 ==============
 
 Description
 -----------
-Wenchow for üe-tsiu-ó.
+wenchow keyboard for üe-tsiu-‘ó romanized wenchownese.溫州話羅馬字輸入法
 
 Links
 -----

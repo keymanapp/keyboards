@@ -1,5 +1,10 @@
 Nedut’en-Witsuwit'en Change History
 ============================
+9.2 (29 Jul 2024)
+-------------------
+* Small modification to touch layout
+* Updated documentation
+* Normalized vowel + combining acute outputs
 
 9.1.3 (6 Mar 2023)
 -------------------
