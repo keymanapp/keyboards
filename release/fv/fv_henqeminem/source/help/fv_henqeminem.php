@@ -20,34 +20,40 @@ This keyboard is designed for the <b>hǝn̓q̓ǝmin̓ǝm̓</b> language of the B
 
 <img src="Henqeminem_U_.png" alt="" height="198" width="514" border="0" /></h2>
 	<ul>
-			<li>The above keymap shows the special characters that have been assigned to the number keys. To type numerals, hold down the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many keyboards keeps its original numbers.</li>
-			<li>All accents are typed after the base character: t̓ is typed t then Apostrophe '
+			<li>The keymap above shows the special characters that have been assigned to the number keys. To type the original numbers, hold down the <kbd>Right-Alt</kbd> key (Windows) or <kbd>Option</kbd> key (Mac) then press the appropriate number key.
 				<ul>
-					<li>To type the glottalized accent use the Apostrophe key <kbd>'</kbd> — k̓ is typed <kbd>k</kbd> then Apostrophe <kbd>'</kbd></li>
-					<li>To type the acute accent use the Semicolon key <kbd>;</kbd> — á is typed <kbd>a</kbd> then Semicolon <kbd>;</kbd></li>
-					<li>To type the háček accent use the Shift+Backquote key — č is typed c then Shift+Backquote<br />
-								The letters č, š, x̌ also have their own keys: <kbd>5</kbd>, <kbd>6</kbd>, <kbd>7</kbd>.</li>
-					<li>To type the grave accent use the Backquote key <kbd>`</kbd> — à is typed <kbd>a</kbd> then Backquote <kbd>`</kbd></li>
 					<li>To type the <strong>belted-ɬ</strong> press the <kbd>9</kbd> key.</li>
+					<li>To type the number 9 press <kbd>Right-Alt</kbd>+<kbd>9</kbd> (Win) or <kbd>Option</kbd>+<kbd>9</kbd> (Mac).</li>
+				</ul>
+			</li>
+			<li>All accents are typed after the base character: t̓ is typed <kbd>t</kbd> then Apostrophe <kbd>'</kbd>
+				<ul>
+					<li>To type the <strong>glottalized accent</strong> use the Apostrophe key <kbd>'</kbd> — k̓ is typed <kbd>k</kbd> then Apostrophe <kbd>'</kbd></li>
+					<li>To type the <strong>acute accent</strong> use the Semicolon key <kbd>;</kbd> — á is typed <kbd>a</kbd> then Semicolon <kbd>;</kbd></li>
+					<li>To type the <strong>caron accent</strong> use the <kbd>Shift</kbd>+<kbd>`</kbd> Backquote key (next to the 1) — č is typed <kbd>c</kbd> then <kbd>Shift</kbd>+<kbd>`</kbd> Backquote<br />
+								The letters č, š, x̌ also have their own keys: <kbd>5</kbd>, <kbd>6</kbd>, <kbd>7</kbd>.</li>
+					<li>To type the <strong>grave accent</strong> use the Backquote key <kbd>`</kbd> (next to the 1 key) — à is typed <kbd>a</kbd> then Backquote <kbd>`</kbd></li>
+					
 				</ul></li>
-				<li>All changed punctuation can type their original value by holding down the <kbd>Right-Alt</kbd> key (Win) or <kbd>Option</kbd> key (Mac). <br />
+				<li>All changed punctuation and numbers can type their original value by holding down the <kbd>Right-Alt</kbd> key (Win) or <kbd>Option</kbd> key (Mac). <br />
 							The Semicolon <kbd>;</kbd> is typed <kbd>Right-Alt</kbd>+<kbd>;</kbd> (Win) or <kbd>Option</kbd>+<kbd>;</kbd> (Mac).</li>
-	</ul>				 
+	</ul>	
+<img src="Henqeminem_U_RA.png" alt="" height="198" width="514" border="0" /></h2>	
 	<ul>
-				<li>There are several additional characters which can be typed holding down the Right-Alt or Option key.</li>
+				<li>There are several characters which can be typed holding down the <kbd>Right-Alt</kbd> key (Windows) or <kbd>Option</kbd> key (Mac).
 					<ul>
-						<li>The <strong>chi-χ</strong> is typed <kbd>Right-Alt</kbd>+<kbd>x</kbd> (Windows) or <kbd>Option</kbd>+<kbd>x</kbd> (Mac).</li>
+						<li>The <strong>chi-χ</strong> is typed <kbd>Right-Alt</kbd>+<kbd>x</kbd> (Win) or <kbd>Option</kbd>+<kbd>x</kbd> (Mac).</li>
 						<li>The <strong>barred-ł</strong> is typed <kbd>Right-Alt</kbd>+<kbd>l</kbd> (Win) or <kbd>Option</kbd>+<kbd>l</kbd> (Mac).</li>
 						<li> The <strong>middle dot ·</strong> is typed <kbd>Right-Alt</kbd>+<kbd>.</kbd> (Win) or <kbd>Option</kbd>+<kbd>.</kbd> (Mac). </li>
 						<li> The <strong>raised theta ᶿ</strong> is typed <kbd>Right-Alt</kbd>+<kbd>t</kbd> (Win) or <kbd>Option</kbd>+<kbd>t</kbd> (Mac). </li>
-					</ul>
-				<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.</li>
+					</ul></li>
+				<li>Opening and closing quotes. For Mac users, Right-Alt is either of the Option Keys.
 					<ul>
 						<li>single: ‘ Left-Bracket <kbd>[</kbd> — ’ Right-Bracket <kbd>]</kbd></li>
 						<li>double: “ <kbd>Shift</kbd>+<kbd>[</kbd> — ” <kbd>Shift</kbd>+<kbd>]</kbd></li>
 						<li>single ‹ <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd> — › <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd></li>
 						<li>double « <kbd>Right-Alt</kbd>+<kbd>9</kbd> — » <kbd>Right-Alt</kbd>+<kbd>0</kbd></li>
-					</ul>
+					</ul></li>
 	</ul>
 	
 <h2>Unicode Fonts</h2>
@@ -58,7 +64,6 @@ This keyboard is designed for the <b>hǝn̓q̓ǝmin̓ǝm̓</b> language of the B
 <h2>Mobile Keyboard Layout</h2>
 <div id=‘osk-tablet’ data-states=‘default shift’></div>
 
-<p>Long-press options are available. The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</p>
 
 <div id='wikitext'>
 
