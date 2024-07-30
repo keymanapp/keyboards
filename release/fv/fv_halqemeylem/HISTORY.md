@@ -1,5 +1,8 @@
 Halq'eméylem Change History
 ============================
+9.2.1 (30 July 2024)
+-------------------
+* Upgraded to v17 of Keyman Developer
 
 9.2 (8 April 2024)
 -------------------
