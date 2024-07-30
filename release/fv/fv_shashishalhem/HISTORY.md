@@ -1,5 +1,10 @@
 Shashishalhem Change History
 ============================
+9.2.1 (30 July 2024)
+-------------------
+* Updated help documentation
+* Updated Keyman Developer version
+
 9.2 (2 May 2024)
 -------------------
 * Centered mobile layout

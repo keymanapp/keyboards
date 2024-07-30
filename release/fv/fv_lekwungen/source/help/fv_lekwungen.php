@@ -19,7 +19,7 @@ This keyboard is designed for the <b>Lekwungen (Lək̓ʷəŋən)</b> language of
 </p>
 
 <h2>Keyboard Layout</h2>
-<div id='osk'>
+<div id='osk' data-states='default'>
 </div>
 
 <ul>
@@ -81,7 +81,7 @@ This keyboard is designed for the <b>Lekwungen (Lək̓ʷəŋən)</b> language of
 		<td >123</td>
 		<td  align='center'>🌐</td>
 		<th  align='center'>´</th>
-		<td  colspan='2' align='center'>space</td>
+		<td  colspan='4' align='center'>space</td>
 		<td  align='center'>.</td>
 		<td  align='center'>⏎</td>
 	</tr>
