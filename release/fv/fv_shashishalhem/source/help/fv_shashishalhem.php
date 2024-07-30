@@ -55,13 +55,6 @@ This keyboard is designed for the <b>Shashishalhem</b> language of the BC Coast 
 </ul>
 <div class='vspace'></div>
 
-<div class='vspace'></div>
-<h3>Alternate Name</h3>
-<ul>
-	<li>Sechelt</li>
-</ul>
-</div>
-
 <br/>
 
 <h2>Keyboard Layout</h2>
