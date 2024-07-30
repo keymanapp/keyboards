@@ -3,7 +3,6 @@
 store(&VERSION) '10.0'
 store(&COPYRIGHT) 'Copyright © Amir Reza Ghareebdost'
 store(&KEYBOARDVERSION) '1.0'
-store(&TARGETS) 'windows macosx linux'
 store(&BITMAP) 'phonetic_farsi.ico'
 store(&NAME) 'phonetic_farsi'
 
@@ -196,6 +195,7 @@ c // Other
     store(FatimaMasuma) "فاطمة المعصومة"
 
 c ------------------ Base Keyboard Layout -----------------------
+store(&TARGETS) 'desktop'
 
     begin Unicode > use(main)
 

@@ -24,41 +24,6 @@
         }
 END;
 ?>
-<?php
-  $pagename = 'Phonetic Farsi Help';
-  $pagetitle = $pagename;
-?>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Phonetic Farsi Keyboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        h2 {
-            color: #34495e;
-        }
-        .feature {
-            background-color: #f7f9fa;
-            border-left: 4px solid #3498db;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to Phonetic Farsi Keyboard</h1>
-    
     <p>Thank you for choosing the Phonetic Farsi keyboard! This keyboard layout is designed to provide a phonetically accurate typing experience for Farsi (Persian) language users.</p>
     
     <h2>Key Features</h2>
