@@ -24,7 +24,7 @@ This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən (Klallam)</b> lan
 <p>This desktop keyboard is based on the original KlallamU keyboard by Tim Montler.</p>
 
 <ul>
-	<li>The image above showed the Nəxʷsƛ̓ay̓əmúcən that have been assigned to individual keys. The original English value of the keys can still be typed by holding the <kbd>Right-Alt</kbd> key (Win) or <kbd>Option</kbd> key (Mac)
+	<li>The image above shows the letters of Nəxʷsƛ̓ay̓əmúcən that have been assigned to individual keys. The original English value of the keys can still be typed by holding the <kbd>Right-Alt</kbd> key (Win) or <kbd>Option</kbd> key (Mac)
 		<ul>
 			<li>ŋ is typed with the <kbd>g</kbd> key</li>
 			<li>g is typed with the <kbd>Right-Alt</kbd>+<kbd>g</kbd> (Win) or <kbd>Option</kbd>+<kbd>g</kbd> (Mac)</li>
@@ -52,7 +52,7 @@ This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən (Klallam)</b> lan
 		</ul>
 	</li>
 	<li>The glottalized barred lambda ƛ̕  is typed <kbd>u</kbr> <kbd>i</kbd></li>
-	<li>Some additional symbos are listed here.
+	<li>Some additional symbols are listed here.
 		<ul>
 			<li><kbd>.</kbd> <kbd>.</kbd> types … (ellipsis)</li>
 			<li><kbd>;</kbd> <kbd>\</kbd> types √</li>
