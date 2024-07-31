@@ -89,7 +89,6 @@ require_once ('header.php');
     </ul>
   <li>To type multiple accents, type the punctuation associated with the accents in any order followed by the letter you
     wish to write the accents on
-  <li>
     <ul>
       <li><b>ḗ</b> is typed <kbd>=</kbd> then <kbd>/</kbd> then <kbd>e</kbd></li>
       <li><b>ą̄́</b> is typed <kbd>,</kbd> then <kbd>=</kbd> then <kbd>/</kbd> then <kbd>a</kbd></li>
