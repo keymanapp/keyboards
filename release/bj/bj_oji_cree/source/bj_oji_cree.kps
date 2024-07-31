@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.268.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.145.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +19,14 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">BJ-OjiCree (Kingfisher)</Name>
-    <Copyright URL="">Copyright © 2016-2022 Bill Jancewicz NDC/SIL</Copyright>
+    <Copyright URL="">Copyright © 2016-2024 Bill Jancewicz</Copyright>
     <Author URL="mailto:bill_jancewicz@sil.org">Bill Jancewicz</Author>
     <WebSite URL="https://help.keyman.com/keyboard/bj_oji_cree">https://help.keyman.com/keyboard/bj_oji_cree</WebSite>
+    <Description>This phonetic keyboard is designed for the Oji-Cree syllabic script used 
+in Northwestern Ontario, Canada. The keyboard has been developed to make 
+it easy to type all of the symbols necessary for Oji-Cree using Unified 
+Canadian Aboriginal Syllabics. This keyboard includes a newer version 
+of the BJCree UNI font. Please uninstall any older versions before installing this package.</Description>
   </Info>
   <Files>
     <File>
@@ -77,6 +83,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -85,6 +97,7 @@
       <Version>9.1</Version>
       <OSKFont>..\..\..\shared\fonts\cree\bjcrus.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\cree\bjcrus.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="bjcrus.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="ojs">Severn Ojibwa</Language>
       </Languages>

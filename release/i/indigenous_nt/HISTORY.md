@@ -1,6 +1,17 @@
 Indigenous NT Keyboard Change History
 =======================
 
+4.0.5 (2023-11-21)
+----------------
+
+* Update font to use shared Noto Sans
+
+4.0.4 (13 Jun 2023)
+-----------------
+
+* Added Ȓ to R key as an alternative in Uummarmiutun.
+* Added Š and Ž.
+
 4.0.3 (24 Nov 2022)
 -----------------
 

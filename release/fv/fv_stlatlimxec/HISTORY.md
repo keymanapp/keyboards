@@ -1,5 +1,13 @@
 Sƛ̓aƛ̓imxəc Change History
 ============================
+9.3 (1 Jul 2024)
+-------------------
+* Normalised outputs
+* Tidied rules and stores
+* Updated to new capital barred lambda character
+* Added additional stacking prevention
+* Straightened mobile layout
+* Tidied documentation
 
 9.2.3 (6 Mar 2023)
 -------------------

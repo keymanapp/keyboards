@@ -1,11 +1,9 @@
 <?php 
-  $pagename = 'N&rsquo;Ko (SIL) Keyboard Help';
+  $pagename = 'NʾKo (SIL) Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
 ?>
-
-<h1>Start Using N'Ko (SIL)</h1>
 
 <p>
     Keyboard for all languages using the N'Ko script using a standardized layout.

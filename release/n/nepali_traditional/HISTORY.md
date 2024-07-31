@@ -12,3 +12,7 @@ Nepali Traditional Change History
 1.2 (2021-07-24)
 ----------------
 * add ऱ in all layouts and use ऱ् for ‍eyelash half ra (र्‍) in touch layouts
+
+1.3 (2023-06-07)
+----------------
+* add ऱ् instead of ऱ in desktop layout

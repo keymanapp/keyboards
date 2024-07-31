@@ -1,7 +1,7 @@
-Nuučaan̓uł keyboard
+nuučaan̓uł keyboard
 ======================
 
-Nuučaan̓uł keyboard layout for Unicode
+nuučaan̓uł keyboard layout for Unicode
 
 Links
 -----
@@ -18,3 +18,11 @@ Supported Platforms
  * Linux
  * Web
  * Mobile
+
+<!-- TODO
+-------------------
+* New character codes are being released with Unicode 16.0, fall 2024:
+* NEW: U+A7DC LATIN CAPITAL LETTER LAMDA WITH STROKE
+* U+A7DC was added to desktop keyboard as the current character used doesn't work, left lowercase option on Mobile Layout
+* This info should be relayed to speaker communities and decide if existing char should be updated
+-->

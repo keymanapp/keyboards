@@ -1,5 +1,18 @@
 Nəxʷsƛ̓ay̓əmúcən Change History
 ============================
+10.0 (11 July 2024)
+----------------
+* Changed combining glottal diacritic to the "above right" version
+* Added keys for rounded sounds k, x, q
+* Moved rare sounds e, k, l to longpress keys
+* Changed to combined unicode codepoints for letters with acute accent and caron
+* Centered mobile layout
+* Updated help docs
+
+
+9.2.1 (26 Oct 2023)
+----------------
+* Changed order of mobile layers to unscramble display on help page
 
 9.2 (9 May 2019)
 ----------------

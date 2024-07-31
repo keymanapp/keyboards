@@ -1,12 +1,15 @@
 Australian Change History
 ============================
+9.3.1 (26 Oct 2023)
+-----------------
+* Changed order of mobile layers to unscramble display on help page
 
 9.3 (21 June 2019)
-----------------
+-----------------
 * Updated languages supported
 
 9.2 (9 May 2019)
-----------------
+-----------------
 * Added .kps file
 
 9.1 (26 Oct 2018)

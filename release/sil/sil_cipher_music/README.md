@@ -1,7 +1,10 @@
 Cipher Music (SIL) keyboard
 ===========================
 
-© 2009-2020 SIL International
+Original author: Jonathan Coombs
+Keyboard updates by: Lorna Evans
+
+© SIL International
 
 Description
 -----------

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -17,9 +19,23 @@
   </StartMenu>
   <Info>
     <Name URL="">Dane-Z̲aa Z̲áágéʔ</Name>
-    <Copyright URL="">© 2015 FirstVoices, First Peoples' Cultural Foundation, SIL International</Copyright>
+    <Copyright URL="">© 2015-2024 FirstVoices, First Peoples' Cultural Foundation, SIL International</Copyright>
     <Author URL="">Clarissa Forbes</Author>
     <Version URL=""></Version>
+    <Description URL="">This keyboard is designed for the Dane-Z̲aa Z̲áágéʔ language of the
+Western Subarctic region of Canada. This is part of a set of keyboards
+from FirstVoices.
+
+Alternate Names:
+
+Dunne-za
+
+Dane-Zaa Zaage
+
+Dane-Zaa
+
+Beaver</Description>
+    <WebSite URL="www.firstvoices.com">www.firstvoices.com</WebSite>
   </Info>
   <Files>
     <File>
@@ -64,16 +80,73 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansBOLD.ttf</Name>
+      <Description>Font Aboriginal Sans Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansBOLDITALIC.ttf</Name>
+      <Description>Font Aboriginal Sans Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansITALIC.ttf</Name>
+      <Description>Font Aboriginal Sans Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSansREGULAR.ttf</Name>
+      <Description>Font Aboriginal Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifBOLD.ttf</Name>
+      <Description>Font Aboriginal Serif Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifBOLDITALIC.ttf</Name>
+      <Description>Font Aboriginal Serif Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifITALIC.ttf</Name>
+      <Description>Font Aboriginal Serif Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\canadian_aboriginal\AboriginalSerifREGULAR.ttf</Name>
+      <Description>Font Aboriginal Serif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dane-Z̲aa Z̲áágéʔ</Name>
       <ID>fv_dane_zaa_zaage</ID>
-      <Version>9.2</Version>
+      <Version>9.3</Version>
       <Languages>
         <Language ID="bea">Beaver</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_dane_zaa_zaage_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

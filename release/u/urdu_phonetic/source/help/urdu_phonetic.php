@@ -1,11 +1,11 @@
 <?php 
-  $pagename = 'Urdu Phonetic Keyboard Keyboard Help';
-  $pagetitle = 'Urdu Phonetic Keyboard Keyboard Help';
+  $pagename = 'Urdu Phonetic Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
 <p>
-This package includes a phonetic keyboard called <b>Urdu Phonetic</b> and the font <b>Pak Nastaleeq</b> designed for the URdu languages.
+This package includes a phonetic keyboard called <b>Urdu Phonetic</b> designed for the Urdu language.
 </p>
 
 

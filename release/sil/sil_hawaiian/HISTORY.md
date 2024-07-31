@@ -1,6 +1,12 @@
 Hawaiian (SIL) Change History
 ====================
 
+2.2 (2023-12-01)
+----------------
+* Change font from HI fonts to Charis SIL because there is no clear license agreement on distribution of the HI fonts
+* Added Web target
+* Change langtag from "haw-Latn" to minimal tag "haw"
+
 2.0 (2020-09-07)
 ----------------
 * Moved to \release from \legacy

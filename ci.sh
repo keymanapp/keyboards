@@ -26,7 +26,7 @@ SHLVL=0
 # Define paths; note Windows hosted bash assumptions for now
 #
 KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-JQ="$KEYBOARDROOT/tools/jq-win64.exe"
+. "$KEYBOARDROOT/tools/jq.inc.sh"
 RSYNC="$KEYBOARDROOT/tools/rsync.exe"
 CI_CACHE="$KEYBOARDROOT/.cache"
 
@@ -37,8 +37,7 @@ else
 fi
 
 . "$KEYBOARDROOT/servervars.sh"
-. "$KEYBOARDROOT/resources/util.sh"
-. "$KEYBOARDROOT/resources/codesign.sh"
+. "$KEYBOARDROOT/resources/util.inc.sh"
 . "$KEYBOARDROOT/resources/rsync-tools.sh"
 
 function parse_args {

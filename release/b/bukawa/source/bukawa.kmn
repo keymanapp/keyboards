@@ -1,0 +1,44 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Bukawa'
+store(&COPYRIGHT) '© William Eckermann'
+store(&KEYBOARDVERSION) '3.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'bukawa.ico'
+store(&VISUALKEYBOARD) 'bukawa.kvks'
+store(&LAYOUTFILE) 'bukawa.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c deadkey defined
++ "["   >   dk(bkt)
+
+c double type dk to produce square bracket
+dk(bkt) + "["   >   "["
+
+c Define eng (dk with either "j" or "n")
+
+dk(bkt) + "N"   >   U+014A
+dk(bkt) + "J"   >   U+014A
+dk(bkt) + "n"   >   U+014B
+dk(bkt) + "j"   >   U+014B
+
+c define special vowels
+
+dk(bkt) + "E"   >   U+00CA
+dk(bkt) + "e"   >   U+00EA
+dk(bkt) + "O"   >   U+00D4
+dk(bkt) + "o"   >   U+00F4
+dk(bkt) + "Q"   >   U+00D6
+dk(bkt) + "q"   >   U+00F6
+
+c define combining Acute accent (2 alternatives)
+
+dk(bkt) + "/"   >   U+0301
+dk(bkt) + "h"   >   U+0301
+
+c define combining Grave accent (2 alternatives)
+
+dk(bkt) + "\"   >   U+0300
+dk(bkt) + "l"   >   U+0300

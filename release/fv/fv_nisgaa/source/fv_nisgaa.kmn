@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.2'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "ncg"
-store(&COPYRIGHT) "(c) 2008-2021 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) "Nisg̱a'a"
 store(&BITMAP) 'fv_nisgaa.ico'
 store(&VISUALKEYBOARD) 'fv_nisgaa.kvks'
-store(&KMW_HELPFILE) 'fv_nisgaa_kmw_help.htm'
 begin Unicode > use(main)
 
  group(main) using keys
@@ -22,16 +21,6 @@ store(&LAYOUTFILE) 'fv_nisgaa.keyman-touch-layout'
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-'M' + [SHIFT T_R] > 'M̓'
-'l' + [SHIFT T_R] > 'l̓'
-'N' + [SHIFT T_R] > 'N̓'
-'W' + [SHIFT T_R] > 'W̓'
-'m' + [SHIFT T_R] > 'm̓'
-'y' + [SHIFT T_R] > 'y̓'
-'n' + [SHIFT T_R] > 'n̓'
-'w' + [SHIFT T_R] > 'w̓'
-'L' + [SHIFT T_R] > 'L̓'
-'Y' + [SHIFT T_R] > 'Y̓'
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
@@ -66,16 +55,6 @@ store(&LAYOUTFILE) 'fv_nisgaa.keyman-touch-layout'
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E] > 'e'
-'M' + [T_R] > 'M̓'
-'l' + [T_R] > 'l̓'
-'N' + [T_R] > 'N̓'
-'W' + [T_R] > 'W̓'
-'m' + [T_R] > 'm̓'
-'y' + [T_R] > 'y̓'
-'n' + [T_R] > 'n̓'
-'w' + [T_R] > 'w̓'
-'L' + [T_R] > 'L̓'
-'Y' + [T_R] > 'Y̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
 + [T_Y] > 'y'
@@ -107,6 +86,9 @@ store(&LAYOUTFILE) 'fv_nisgaa.keyman-touch-layout'
 + [T_M_0] > 'm̓'
 + [T_M] > 'm'
 
+store(NeedsComApos) 'lmnwyLMNWY'
+store(ComAposKeys) [T_R] [SHIFT T_R]
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
 c --- END OF TOUCH LAYOUT RULES ---
 
 
@@ -120,10 +102,8 @@ any(accent) + any(accentkey) > context beep
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
 any(NumbersAndPunctuation) + any(accentkey) > context beep
 
-
-
-
 + [RALT K_SLASH] > '/'
++ [RALT SHIFT K_SLASH] > '/'
 + [SHIFT RALT K_BKQUOTE] > '~'
 + [RALT K_BKQUOTE] > '`'
 + [K_QUOTE] > U+2019
@@ -147,5 +127,3 @@ nomatch > use(x)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)

@@ -12,3 +12,5 @@ Lao-script Kmhmu language keyboard
 Supported Platforms
 -------------------
  * Windows
+ * Linux
+ * macosx

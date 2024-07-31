@@ -1,6 +1,6 @@
 <?php
-  $pagename = 'Lisu Standard (SIL) Keyboard';
-  $pagetitle = 'Lisu Standard (SIL) Keyboard';
+  $pagename = 'Lisu Standard (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 

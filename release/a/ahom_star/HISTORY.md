@@ -1,6 +1,10 @@
 Ahom Star Change History
 ====================
 
+1.0.2 (2023-07-06)
+----------------
+* Remove broken start menu items
+
 1.0.1 (2022-09-07)
 ----------------
 * Change to used "shared" .ttf
