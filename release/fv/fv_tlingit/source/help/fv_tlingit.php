@@ -56,9 +56,9 @@ END;
         <strong>Nasal + accent/tone</strong> can be typed by combining these two steps, or as a shortcut by pressing
         SHIFT when adding the accent/tone mark.
         <ul>
-            <li>Ą́ = <kbd>A</kbd> then <kbd>SHIFT<kbd> + <kbd>:</kbd> (colon)</li>
-            <li>Ą̀ = <kbd>A</kbd> then <kbd>SHIFT<kbd> + <kbd>~</kbd> (tilde)</li>
-            <li>Ą̂ = <kbd>A</kbd> then <kbd>SHIFT<kbd> + <kbd>{</kbd> (left curly bracket)</li>
+            <li>Ą́ = <kbd>A</kbd> then <kbd>SHIFT</kbd> + <kbd>:</kbd> (colon)</li>
+            <li>Ą̀ = <kbd>A</kbd> then <kbd>SHIFT</kbd> + <kbd>~</kbd> (tilde)</li>
+            <li>Ą̂ = <kbd>A</kbd> then <kbd>SHIFT</kbd> + <kbd>{</kbd> (left curly bracket)</li>
         </ul>
     </li>
     <li>
