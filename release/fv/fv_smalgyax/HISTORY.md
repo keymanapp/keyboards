@@ -1,5 +1,11 @@
 Sm'algya̱x Change History
 ============================
+9.3 (30 Jul 2024)
+------------------
+* Tidied documentation
+* Removed web help in favour of OSK
+* Corrected keyboard name
+
 9.2 (25 Jun 2024)
 ------------------
 * Normalised where possible
