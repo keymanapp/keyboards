@@ -54,7 +54,7 @@ This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən (Klallam)</b> lan
 	<li>The glottalized barred lambda ƛ̕  is typed <kbd>u</kbr> <kbd>i</kbd></li>
 	<li>Some additional symbos are listed here.
 		<ul>
-			<li><kbd>;</kbd> <kbd>.</kbd> types ˑ (the middle dot)</li>
+			<li><kbd>.</kbd> <kbd>.</kbd> types … (ellipsis)</li>
 			<li><kbd>;</kbd> <kbd>\</kbd> types √</li>
 			<li><kbd>;</kbd> <kbd>=</kbd> types ≠</li>
 		</ul>
