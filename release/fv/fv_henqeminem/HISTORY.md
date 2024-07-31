@@ -1,8 +1,12 @@
 hǝn̓q̓ǝmin̓ǝm̓ Change History
 ============================
+10.2.1 (30 July 2024)
+-------------------
+* Typo in the *.kps file.
+
 10.2 (30 July 2024)
 -------------------
-* Replaced capital phonetic theta and schwa with lowercase versions.
+* Replaced capital theta and schwa with lowercase versions.
 
 10.1 (10 May 2024)
 -------------------
@@ -40,5 +44,4 @@ hǝn̓q̓ǝmin̓ǝm̓ Change History
 
 9.0 (15 Dec 2015)
 -----------------
-
 * Added to tavultesoft keyboards github repository
