@@ -1,5 +1,12 @@
 Runeboard Change History
 ====================
+3.0 (2024-07-11)
+----------------
+* Removed duplicate character ᛅ.
+* Moved ZWJ to shift+space & repositioned various keys.
+* Added non-breaking hyphen, horizontal bar, guillemets (double & single), six vertical dots, & both trade mark symbols.
+* On Touch Layout, added 0 on number layer & repositioned various keys.
+
 2.3 (2023-12-05)
 ----------------
 * Changed Alt+Ctrl to RAlt

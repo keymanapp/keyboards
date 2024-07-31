@@ -1,5 +1,5 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.4'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "lil"
 store(&COPYRIGHT) "(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
@@ -55,7 +55,6 @@ store(&LAYOUTFILE) 'fv_statimcets.keyman-touch-layout'
 + [SHIFT T_L_1] > 'L̲' layer('default')
 + [SHIFT T_L_2] > 'L̲̓' layer('default')
 + [SHIFT T_L] > 'L' layer('default')
-+ [SHIFT T_COLON_0] > '!' layer('default')
 + [SHIFT T_COLON] > '?' layer('default')
 + [SHIFT T_Z_0] > 'Z̓' layer('default')
 + [SHIFT T_Z] > 'Z' layer('default')
@@ -107,7 +106,6 @@ store(&LAYOUTFILE) 'fv_statimcets.keyman-touch-layout'
 + [T_L_1] > 'l̲'
 + [T_L_2] > 'l̲̓'
 + [T_L] > 'l'
-+ [T_COLON_0] > '!'
 + [T_COLON] > '?'
 + [T_Z_0] > 'z̓'
 + [T_Z] > 'z'
@@ -163,8 +161,7 @@ store(punc0) [NCAPS SHIFT RALT K_LBRKT] [NCAPS SHIFT RALT K_RBRKT] [SHIFT RALT K
 store(punc1) "{}‹›\|/"
 + any(orig0) > index(orig1,1)
 + any(punc0) > index(punc1,1) 
-
-+ [SHIFT RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '/' c alternate way to type Slash for Google Workspace
 
 c other characters
 store(s0) [CAPS SHIFT K_LBRKT] [CAPS K_LBRKT] [ncaps SHIFT K_LBRKT]  [ncaps K_LBRKT] 

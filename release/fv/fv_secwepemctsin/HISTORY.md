@@ -1,5 +1,10 @@
 Secwepemctsín Change History
 ============================
+9.3 (29 Jul 2024)
+-------------------
+* Tidied documentation
+* Added alternate names
+* Removed web help in favour of OSK
 
 9.2 (10 Mar 2024)
 -------------------

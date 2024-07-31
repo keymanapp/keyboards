@@ -1,5 +1,18 @@
 Nɬeʔkepmxcín Change History
 ============================
+9.5.1 (22 Jul 2024)
+-------------------
+* Corrected typo in linked keyboard name
+
+9.5 (11 Jul 2024)
+-------------------
+* Normalized missed codepoint
+* Tweaked mobile layout
+* Added TODO to README
+* Updated to new capital barred lamda on desktop layout
+* Removed web help in favour of OSK
+* Added ` and ~ to original punctuation rules
+
 9.4 (9 Apr 2024)
 -------------------
 * Added x̌ to keyboard on request

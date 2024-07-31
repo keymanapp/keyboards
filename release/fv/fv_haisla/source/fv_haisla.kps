@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -49,12 +49,6 @@ FirstVoices and updated to suit their orthographic changes.</Description>
       <Description>Keyboard Haisla</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>fv_haisla_keycombos.pdf</Name>
-      <Description>File fv_haisla_keycombos.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
     </File>
     <File>
       <Name>..\LICENSE.md</Name>
@@ -115,11 +109,14 @@ FirstVoices and updated to suit their orthographic changes.</Description>
     <Keyboard>
       <Name>Haisla</Name>
       <ID>fv_haisla</ID>
-      <Version>2.1</Version>
+      <Version>2.1.3</Version>
       <Languages>
         <Language ID="has">Haisla</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_xaislakala"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
