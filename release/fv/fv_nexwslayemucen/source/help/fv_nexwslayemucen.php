@@ -13,11 +13,56 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən</b> language of the BC Coast region of Canada.
+This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən (Klallam)</b> language of the BC Coast region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
+<h2>Desktop layout</h2>
+<img src="klallam_U_.png" alt="" height="198" width="514" border="0" /></h2>
+
+<p>This desktop keyboard is based on the original KlallamU keyboard by Tim Montler.</p>
+
+<ul>
+	<li>The image above showed the Nəxʷsƛ̓ay̓əmúcən that have been assigned to individual keys. The original English value of the keys can still be typed by holding the <kbd>Right-Alt</kbd> key (Win) or <kbd>Option</kbd> key (Mac)
+		<ul>
+			<li>ŋ is typed with the <kbd>g</kbd> key</li>
+			<li>g is typed with the <kbd>Right-Alt</kbd>+<kbd>g</kbd> (Win) or <kbd>Option</kbd>+<kbd>g</kbd> (Mac)</li>
+		</ul>
+	</li>
+	<li>To type the glottal accent, type the base character first, followed by the <kbd>d</kbd> key.
+		<ul>
+			<li>q̕ is typed <kbd>q</kbd> then <kbd>d</kbd></li>
+		</ul>
+	</li>	
+	<li>To type acccented vowels, type the Semicolon key <kbd>;</kbd> first, followed by the base vowel.
+		<ul>
+			<li><kbd>;</kbd> <kbd>a</kbd> types á</li>
+			<li><kbd>;</kbd> <kbd>e</kbd> types é</li>
+			<li><kbd>;</kbd> <kbd>f</kbd> types ə́</li>
+			<li><kbd>;</kbd> <kbd>i</kbd> types í</li>
+			<li><kbd>;</kbd> <kbd>u</kbd> types ú</li>
+		</ul>
+	</li>
+	<li>The following letters are typed by typing the Semicolon key <kbd>;</kbd> first, followed by another key.
+		<ul>
+			<li><kbd>;</kbd> <kbd>l</kbd> types l</li>
+			<li><kbd>;</kbd> <kbd>q</kbd> types qʷ</li>
+			<li><kbd>;</kbd> <kbd>z</kbd> or <kbd>;</kbd>+<kbd>x</kbd> types x̣ʷ</li>
+		</ul>
+	</li>
+	<li>The glottalized barred lambda ƛ̕  is typed <kbd>u</kbr> <kbd>i</kbd></li>
+	<li>Some additional symbos are listed here.
+		<ul>
+			<li><kbd>;</kbd> <kbd>.</kbd> types ˑ (the middle dot)</li>
+			<li><kbd>;</kbd> <kbd>\</kbd> types √</li>
+			<li><kbd>;</kbd> <kbd>=</kbd> types ≠</li>
+		</ul>
+	</li>		
+</ul>
+
+<h2>Unicode Fonts</h2>
+<p>The following font has been installed on your computer: <strong>BC Sans</strong>.</p>
 
 <h2>Notes on touch layout</h2>
 <div id='wikitext'>
@@ -64,17 +109,12 @@ This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən</b> language of t
 </table>
 <div class='vspace'></div>
 	<ul>
-		<li>keys with a red background are combining accents.</li>
-		<li>the first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+		<li>Keys with a red background are combining accents. On your mobile device, they will have green text.</li>
+		<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+		<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
 	</ul>
-<div class='vspace'></div>
-<h2>Alternate Name</h2>
-<ul>
-	<li>Clallam, Klallam</li>
-</ul>
-
+	
 <div class='vspace'></div>
 </div>
-
 <br/>
 
