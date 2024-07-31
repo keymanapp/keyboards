@@ -1,10 +1,6 @@
 CS-Pinyin keyboard
 ==================
 
-Copyright (C) 2017 SIL International
-
-Version 1.4
-
 Description
 -----------
 
@@ -30,7 +26,3 @@ Links
 Supported Platforms
 -------------------
  * Windows
-
-Todo
-----
-
