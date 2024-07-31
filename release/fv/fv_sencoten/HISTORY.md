@@ -1,5 +1,8 @@
 SENĆOŦEN Change History
 ============================
+9.2.3 (30 July 2024)
+-------------------
+* Updated help doc formatting
 
 9.2.2 (12 May 2024)
 -------------------
