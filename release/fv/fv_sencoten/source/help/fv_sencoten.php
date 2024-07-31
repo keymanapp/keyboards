@@ -47,7 +47,7 @@ END;
 </ul>
 
 <h3>Layout</h3>
-<div id='osk' data-states='default shift'>
+<div id='osk' data-states='default'></div>
 
 <h3>Unicode Fonts</h3>
 
@@ -104,8 +104,7 @@ END;
 	</tr>
 </table>
 
-<div class='vspace'>
-</div>
+<div class='vspace'></div>
 <ul>
 	<li>Keys with a red background are combining accents. On your mobile device, they will have green text.</li>
 	<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
@@ -119,4 +118,3 @@ END;
 </ul>
 </div>
 
-</div>
