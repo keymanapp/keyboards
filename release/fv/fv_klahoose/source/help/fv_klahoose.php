@@ -76,58 +76,63 @@ This keyboard is designed for the <b>Éy7á7juuthem</b> language of the BC Coast
 
 
 <h2>Mobile Touch Layout</h2>
-
-<div id='osk-tablet' data-states='default shift'></div>
-
-<p>Long-press options are available. The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</p>
+<div id='wikitext'>
+<div class='vspace'></div>
 
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
-<tr >
-<td  align='center'>q q̓</td>
-<td  align='center'>w w̓ w̥</td>
-<td  align='center'>ɛ e</td>
-<td  align='center'>ə</td>
-<td  align='center'>t t̓</td>
-<td  align='right'>y y̓ ʸ</td>
-<td  align='center'>ʊ u</td>
-<td  align='center'>i ɩ</td>
-<td  align='right'>o ɔ</td>
-<td  align='center'>p p̓</td>
-</tr>
-<tr >
-<td  align='center'>a æ</td>
-<td  align='center'>s</td>
-<td  align='center'>ʔ</td>
-<td  align='center'>θ tᶿ t̓ᶿ</td>
-<td  align='center'>g</td>
-<td  align='center'>h</td>
-<td  align='center'>ǰ</td>
-<td  align='center'>k k̓</td>
-<td  align='center'>l l̓</td>
-<td  align='center'>ɬ</td>
-</tr>
-<tr >
-<td >&nbsp;</td>
-<td  align='center'>š</td>
-<td  align='center'>χ x</td>
-<td  align='center'>č č̓</td>
-<td  align='center'>ƛ ƛ̓</td>
-<td  align='center'>ʷ</td>
-<td  align='center'>n n̓</td>
-<td  align='center'>m m̓</td>
-<td  colspan='2'>&nbsp;</td></tr>
+	<tr >
+		<td  align='center'>q q̓</td>
+		<td  align='center'>w w̓ w̥</td>
+		<td  align='center'>ɛ e</td>
+		<td  align='center'>ə</td>
+		<td  align='center'>t t̓</td>
+		<td  align='right'>y y̓ ʸ</td>
+		<td  align='center'>ʊ u</td>
+		<td  align='center'>i ɩ</td>
+		<td  align='right'>o ɔ</td>
+		<td  align='center'>p p̓</td>
+	</tr>
+	<tr >
+		<td  align='center'>a æ</td>
+		<td  align='center'>s</td>
+		<td  align='center'>ʔ</td>
+		<td  align='center'>θ tᶿ t̓ᶿ</td>
+		<td  align='center'>g</td>
+		<td  align='center'>h</td>
+		<td  align='center'>ǰ</td>
+		<td  align='center'>k k̓</td>
+		<td  align='center'>l l̓</td>
+		<td  align='center'>ɬ</td>
+	</tr>
+	<tr >
+		<td >&nbsp;</td>
+		<td  align='center'>š</td>
+		<td  align='center'>χ x</td>
+		<td  align='center'>č č̓</td>
+		<td  align='center'>ƛ ƛ̓</td>
+		<td  align='center'>ʷ</td>
+		<td  align='center'>n n̓</td>
+		<td  align='center'>m m̓</td>
+		<td  colspan='2'>&nbsp;</td>
+	</tr>
+	</tr>
+	<tr >
+		<td >123</td>
+		<td  align='center'>🌐</td>
+		<th  align='center'>´</th>
+		<td  colspan='4' align='center'>space</td>
+		<td  align='center'>.</td>
+		<td  align='center' colspan='2'>⏎</td>
+	</tr>
 </table>
 
-
-<div class='vspace'></div><h3>Alternate Names</h3>
+<div class='vspace'></div>
 <ul>
-<li>ʔayʔaǰuθəm</li>
-</li>Comox</li>
-<li> Comox-Sliammon</li>
-<li>Homalco-Klahoose-Sliammon</li>
-<li>Saɬuɬtxʷ</li>
-<li>Sliammon</li>
+	<li>Keys with a red background are combining accents. On your mobile device, they will have green text.</li>
+	<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+	<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space bar.</li>
 </ul>
 
-
+<div class='vspace'></div>
+</div>
 
