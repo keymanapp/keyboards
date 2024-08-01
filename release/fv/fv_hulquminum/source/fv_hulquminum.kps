@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,11 +18,14 @@
   </StartMenu>
   <Info>
     <Name URL="">Hul’q’umi’num’</Name>
-    <Copyright URL="">(c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
+    <Copyright URL="">(c) 2015-2014 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>This keyboard is designed for the Hul'q'umi'num' language of the BC
+    <Description URL="">This keyboard is designed for the Hul'q'umi'num' language of the BC
 Coast region of Canada. This is part of a set of keyboards from
-FirstVoices.</Description>
+FirstVoices.
+
+Alternate names: Island Halkomelem</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -43,6 +46,12 @@ FirstVoices.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>help\fv_hulquminum.php</Name>
+      <Description>File fv_hulquminum.php</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.php</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -54,8 +63,8 @@ FirstVoices.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="fv_hulquminum_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="fv_hulquminum_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
