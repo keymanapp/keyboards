@@ -1,11 +1,10 @@
 Polytonic Greek (SIL) Keyboard
 =====================
 
-Copyright (C) 2002-2019 SIL International
+Copyright (C) SIL International
 
-Version 1.5
-
-__DESCRIPTION__
+Description
+-----------
 Greek keyboard layout supporting Polytonic Greek, using precomposed characters.
 
 Supported Platforms

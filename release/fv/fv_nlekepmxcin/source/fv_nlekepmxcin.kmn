@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.4'
+store(&KEYBOARDVERSION) '9.5.1'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "thp"
 store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Nɬeʔkepmxcín'
 store(&BITMAP) 'fv_nlekepmxcin.ico'
 store(&VISUALKEYBOARD) 'fv_nlekepmxcin.kvks'
-store(&KMW_HELPFILE) 'fv_nlekepmxcin_kmw_help.htm'
  
 begin Unicode > use(main)                      
 group(main) using keys
@@ -32,7 +31,7 @@ store(&LAYOUTFILE) 'fv_nlekepmxcin.keyman-touch-layout'
 + [SHIFT T_U] > 'U' layer('default')
 + [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I_1] > 'Ị' layer('default')
-+ [SHIFT T_I_2] > U+0049 U+0323 U+0301 layer('default')
++ [SHIFT T_I_2] > U+1ECA U+0301 layer('default') c 'Ị́'
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O_0] > 'Ó' layer('default')
 + [SHIFT T_O] > 'O' layer('default')
@@ -43,7 +42,7 @@ store(&LAYOUTFILE) 'fv_nlekepmxcin.keyman-touch-layout'
 + [SHIFT T_S_0] > 'Ṣ' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'ʔ' layer('default')
-+ [SHIFT T_F] > 'ƛ̓' layer('default')
++ [SHIFT T_F] > 'ƛ̓' layer('default') c see TODO
 + [SHIFT T_G_0] > 'Ɣ̓' layer('default')
 + [SHIFT T_G] > 'Ɣ' layer('default')
 + [SHIFT T_H] > 'H' layer('default')
@@ -177,6 +176,7 @@ store(topaccentkey) "`;'"
 
 any(topaccent) + any(topaccentkey) > context beep
 any(HasAcute) + any(topaccentkey) > context beep
+any(HasGrave) + any(topaccentkey) > context beep
 
 store(lowaccent) U+0323 
 any(lowaccent) + "1" > context beep
@@ -186,10 +186,10 @@ any(NumbersAndPunctuation) + any(topaccentkey) > context beep
 any(NumbersAndPunctuation) + "1" > context beep
 
 c original values
-store(orig0) [RALT K_1] [NCAPS RALT K_2] [NCAPS RALT K_3] [RALT K_4] [NCAPS RALT K_5] [NCAPS RALT K_6] [NCAPS RALT K_7] [NCAPS RALT K_8] [NCAPS RALT K_9] [RALT K_0] [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_QUOTE] [RALT K_COLON] [RALT K_COMMA] [RALT K_PERIOD]
-store(orig1) "1234567890[]';<>"            
-store(punc0) [SHIFT RALT K_1] [NCAPS SHIFT RALT K_2] [NCAPS SHIFT RALT K_3] [SHIFT RALT K_4] [NCAPS SHIFT RALT K_5] [NCAPS SHIFT RALT K_6] [NCAPS SHIFT RALT K_7] [NCAPS SHIFT RALT K_8] [NCAPS SHIFT RALT K_9] [SHIFT RALT K_0] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] 
-store(punc1) "!@#$%^&*(){}"
+store(orig0) [RALT K_BKQUOTE] [RALT K_1] [NCAPS RALT K_2] [NCAPS RALT K_3] [RALT K_4] [NCAPS RALT K_5] [NCAPS RALT K_6] [NCAPS RALT K_7] [NCAPS RALT K_8] [NCAPS RALT K_9] [RALT K_0] [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_QUOTE] [RALT K_COLON] [RALT K_COMMA] [RALT K_PERIOD] 
+store(orig1) "`1234567890[]';<>"            
+store(punc0) [SHIFT RALT K_BKQUOTE] [SHIFT RALT K_1] [NCAPS SHIFT RALT K_2] [NCAPS SHIFT RALT K_3] [SHIFT RALT K_4] [NCAPS SHIFT RALT K_5] [NCAPS SHIFT RALT K_6] [NCAPS SHIFT RALT K_7] [NCAPS SHIFT RALT K_8] [NCAPS SHIFT RALT K_9] [SHIFT RALT K_0] [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] 
+store(punc1) "~!@#$%^&*(){}"
 + any(orig0) > index(orig1,1)
 + any(punc0) > index(punc1,1)
 
@@ -203,7 +203,7 @@ c glottaled
 store(MiniGlot0) [CAPS SHIFT K_8] [NCAPS K_8]  
 store(MiniGlot1)  "ƛƛ"
 store(MajGlot0)  [NCAPS SHIFT K_8] [CAPS K_8] 
-store(MajGlot1) U+F899 U+F899
+store(MajGlot1) U+A7DC U+A7DC c see TODO
 + any(MiniGlot0) > index(MiniGlot1,1) "̓"
 + any(MajGlot0) > index(MajGlot1,1) "̓"           
 

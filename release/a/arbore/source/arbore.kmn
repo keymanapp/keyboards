@@ -1,0 +1,85 @@
+﻿c Heavily simplified keyboard to remove many of the Ethiopian Latin functions
+store(&VERSION) '15.0'
+store(&NAME) 'Arbore'
+store(&COPYRIGHT) '© 2024 SIL International'
+store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'arbore.ico'
+store(&VISUALKEYBOARD) 'arbore.kvks'
+store(&LAYOUTFILE) 'arbore.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c ------------------------------------------------------------------------------
+c punctuation / special "word forming" characters
+c ------------------------------------------------------------------------------
+
+c Toggle between ‹ and › by continuing to input '
++ "'" > U+2039 c ‹
+U+2039 + "'" > U+203A c ›
+U+203A + "'" > U+2039 c ‹
+
+c Toggle between « and » by continuing to input "
++ '"' > U+00AB c «
+U+00AB + '"' > U+00BB c »
+U+00BB + '"' > U+00AB c «
+
+c Revert to default ' and " characters
+";"    + "'" > "'"
+";"    + '"' > '"'
+
+c Use angle brackets to type characters
+"<"    + "'" > U+2039 c ‹
+">"    + "'" > U+203A c ›
+"<"    + "<" > U+00AB c «
+">"    + ">" > U+00BB c »
+
+c ------------------------------------------------------------------------------
+c special consonants (no diacritics)
+c ------------------------------------------------------------------------------
+
+";" + "n" > U+014B c ŋ
+";" + "N" > U+014A c Ŋ
+
+c EDIT: Toggle between ŋ and ɲ using TAB
+U+014B + [K_TAB] > U+0272 c ɲ
+U+0272 + [K_TAB] > U+014B c ŋ
+U+014A + [K_TAB] > U+019D c Ɲ
+U+019D + [K_TAB] > U+014A c Ŋ
+
+":" + "n" > U+0272 c ɲ
+":" + "N" > U+019D c Ɲ
+
+c ------------------------------------------------------------------------------
+c combining comma characters: composed else + U+02BC
+c ------------------------------------------------------------------------------
+
+"b" + "'" > U+0062 U+02BC c bʼ
+"B" + "'" > U+0042 U+02BC c Bʼ
+
+"c" + "'" > U+0063 U+02BC c cʼ
+"C" + "'" > U+0043 U+02BC c Cʼ
+
+"d" + "'" > U+010F c ď
+"D" + "'" > U+0044 U+02BC c Dʼ
+
+"k" + "'" > U+006B U+02BC c kʼ
+"K" + "'" > U+004B U+02BC c Kʼ
+
+"s" + "6" > U+0073 U+02BC c sʼ
+"S" + "6" > U+0053 U+02BC c Sʼ
+
+"s" + "'" > U+0161 c š
+"S" + "'" > U+0160 c Š
+
+c Toggle between s̕ and š using TAB
+U+0161 + [K_TAB] > U+0073 U+02BC c sʼ
+U+0073 U+02BC + [K_TAB] > U+0161 c š
+
+U+0160 + [K_TAB] > U+0053 U+02BC c Sʼ
+U+0053 U+02BC + [K_TAB] > U+0160 c Š
+
+"t" + "'" > U+0165 c ť
+"T" + "'" > U+0054 U+02BC c Tʼ
