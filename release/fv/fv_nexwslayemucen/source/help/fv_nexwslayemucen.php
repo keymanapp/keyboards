@@ -36,12 +36,12 @@ This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən (Klallam)</b> lan
 			<li>To type "fruit", type <kbd>Right-Alt</kbd>+<kbd>f</kbd> <kbd>Right-Alt</kbd>+<kbd>r</kbd> <kbd>u</kbd> <kbd>Right-Alt</kbd>+<kbd>i</kbd> <kbd>t</kbd> </li>
 		</ul>
 	</li>
-	<li>To type the glottal accent, type the base character first, followed by the <kbd>d</kbd> key (with no space in between).
+	<li>To type the glottal accent, type the base character first, followed by the <kbd>d</kbd> key (no space in between).
 		<ul>
 			<li>q̕ is typed <kbd>q</kbd> then <kbd>d</kbd></li>
 		</ul>
 	</li>	
-	<li>To type acccented vowels, type the Semicolon key <kbd>;</kbd> first, followed by the base vowel (with no space in between).
+	<li>To type acccented vowels, type the Semicolon key <kbd>;</kbd> first, followed by the base vowel (no space in between).
 		<ul>
 			<li><kbd>;</kbd> <kbd>a</kbd> types á</li>
 			<li><kbd>;</kbd> <kbd>e</kbd> types é</li>
@@ -64,7 +64,7 @@ This keyboard is designed for the <b>Nəxʷsƛ̓ay̓əmúcən (Klallam)</b> lan
 			<li><kbd>;</kbd> <kbd>\</kbd> types √</li>
 			<li><kbd>;</kbd> <kbd>=</kbd> types ≠</li>
 		</ul>
-	</li>		
+	</li>
 </ul>
 
 <h2>Unicode Fonts</h2>
