@@ -1,5 +1,9 @@
 Nəxʷsƛ̓ay̓əmúcən Change History
 ============================
+11.0 (30 July 2024)
+----------------
+* Added desktop layout based on the original KlallamU layout by Tim Montler.
+
 10.0 (11 July 2024)
 ----------------
 * Changed combining glottal diacritic to the "above right" version
