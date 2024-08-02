@@ -43,7 +43,7 @@ This keyboard is designed for the <b>Shashishalhem</b> language of the BC Coast 
 <div class='vspace'></div>
 <table border='1' style='border-collapse:collapse' cellpadding='5' >
 	<tr align='center'><td>? !</td><td>w</td><td>e é</td><td>-</td><td>t</td><td>y</td><td>u ú</td><td>i í</td><td >&nbsp;</td><td>p</td></tr>
-	<tr align='center'><td>a á</td><td>s</td><td>ʔ</td><td >´</td><td >&nbsp;</td><td>h</td><td>ḵ</td><td>k</td><td>l</td><td>ʼ ' "</td></tr>
+	<tr align='center'><td>a á</td><td>s</td><td>ʔ</td><th >´</th><td >&nbsp;</td><td>h</td><td>ḵ</td><td>k</td><td>l</td><td>ʼ ' "</td></tr>
 	<tr align='center'><td >⇧</td><td>x̱</td><td>x</td><td>c</td><td>,</td><td>.</td><td>n</td><td>m</td><td  colspan='2'>⌫</td></tr>
 	<tr align="center"><td>123</td><td>🌐</td><td colspan="5">space</td><td>.</td><td colspan="2">⏎</td></tr>
 </table>
