@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.3'
+store(&KEYBOARDVERSION) '9.4'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "hei"
-store(&COPYRIGHT) '© 2008-2023 FirstVoices, SIL International. Portions © 2006 Chris Harvey'
+store(&COPYRIGHT) '© 2008-2024 FirstVoices, SIL International. Portions © 2006 Chris Harvey'
 store(&NAME) "’Wuìk̓ala"
 store(&BITMAP) 'fv_uwikala.ico'
 store(&VISUALKEYBOARD) 'fv_uwikala.kvks'
-store(&KMW_HELPFILE) 'fv_uwikala_help.htm'
 store(&LAYOUTFILE) 'fv_uwikala.keyman-touch-layout'
 
 begin Unicode > use(main)
@@ -158,6 +157,7 @@ c original punctuation available if you press right-alt
 + [SHIFT RALT K_COLON] > ':'
 + [RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '/' c alternate way to type Slash in Google Workspace
 + [RALT K_QUOTE] > U+0027
 + [RALT K_BKSLASH] > '\'
 + [SHIFT RALT K_BKSLASH] > '|'

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,6 +20,7 @@
     <Name URL="">Hindi Traditional Basic</Name>
     <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Hindi Traditional Basic generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -81,6 +83,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -90,7 +98,15 @@
       <Languages>
         <Language ID="hi">Hindi</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="hi" Keys="u f v d o r" Text="हिन्दी" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="hindi_traditional_kab" Relationship="deprecates" />
+    <RelatedPackage ID="hindi_trad" Relationship="deprecates" />
+    <RelatedPackage ID="kbdinhin" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

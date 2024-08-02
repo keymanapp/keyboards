@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.147.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -20,6 +22,9 @@
     <Copyright URL="">(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
     <Version URL=""></Version>
+    <Description URL="">This keyboard is designed for the Nlha7kapmxtsin language of the BC 
+Interior region of Canada. This is part of a set of keyboards from 
+FirstVoices.</Description>
   </Info>
   <Files>
     <File>
@@ -61,12 +66,6 @@
     <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>fv_nlha7kapmxtsin-help.htm</Name>
-      <Description>File fv_nlha7kapmxtsin-help.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
@@ -124,16 +123,27 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nlha7kapmxtsin</Name>
       <ID>fv_nlha7kapmxtsin</ID>
-      <Version>10.0</Version>
+      <Version>10.1.1</Version>
       <Languages>
-        <Language ID="thp">Thompson (Latin)</Language>
+        <Language ID="thp">Thompson</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="fv_nlekepmxcin"/>
+    <RelatedPackage ID="fv_nlakapamuxcheen"/>
+    <RelatedPackage ID="fv_nlha7kapmxtsin_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

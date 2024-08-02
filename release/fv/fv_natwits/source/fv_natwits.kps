@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
@@ -14,11 +18,26 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Nat’ooten-Witsuwit’en</Name>
-    <Copyright URL="">(c) 2008-2022 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Name URL="">Nedut’en-Witsuwit'en</Name>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
+    <Description URL="">This keyboard is designed for the Nedut'en-Witsuwit\'en language of the
+BC Interior region of Canada. This is part of a set of keyboards from
+FirstVoices.
+
+Alternate names:
+
+Nat’ooten-Witsuwit’en
+
+Babine-Witsuwit'en
+
+Nadot'en-Wet'suwet'en
+
+Northern Carrier
+
+Western Carrier</Description>
   </Info>
   <Files>
     <File>
@@ -123,17 +142,27 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nedut’en-Witsuwit'en</Name>
       <ID>fv_natwits</ID>
-      <Version>9.1.2</Version>
+      <Version>9.2</Version>
       <Languages>
         <Language ID="bcr-Latn">Babine (Latin)</Language>
         <Language ID="caf-Latn">Southern Carrier (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="natooten" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_natwits_kmw" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

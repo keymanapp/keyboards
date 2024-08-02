@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2024 FirstVoices, First Peoples' Cultural Foundation
+Copyright © 2024 FirstVoices, First Peoples' Cultural Foundation
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

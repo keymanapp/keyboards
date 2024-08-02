@@ -2,10 +2,10 @@
 c https://www.youtube.com/@LearnRunes
 store(&VERSION) '15.0'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© MMXXIII ᚱᚢᚾ᛫ᛗᚫᚾ'
+store(&COPYRIGHT) '© MMXXIV ᚱᚢᚾ᛫ᛗᚫᚾ'
 store(&NAME) 'Runes'
 store(&MESSAGE) 'The Runeboard is designed for typing the English language in Anglo-Saxon Futhorc runes & Proto-Germanic in Elder Futhark runes. However, as it includes the entire Unicode Runic Block, it can also be used for typing a variety of Germanic languages in runes. Thanks for installing. Watch Rune Revival at: https://www.youtube.com/@LearnRunes'
-store(&KEYBOARDVERSION) '2.3'
+store(&KEYBOARDVERSION) '3.0'
 store(&BITMAP) 'runeboard.ico'
 store(&VISUALKEYBOARD) 'runeboard.kvks'
 store(&LAYOUTFILE) 'runeboard.keyman-touch-layout'
@@ -13,9 +13,11 @@ begin Unicode > use(main)
 group(main) using keys
 
 + [K_SPACE] > '᛫' U+200B c punctuation followed by zero width space for breaking
-+ [SHIFT K_SPACE] > ' '
++ [SHIFT K_SPACE] > U+200D c ZWJ for bindrunes
++ [RALT K_SPACE] > '⁝' U+200B
++ [RALT SHIFT K_SPACE] > ' '
 
-+ [K_BKQUOTE] > '⁝' U+200B
++ [K_BKQUOTE] > '`'
 + [K_1] > '1'
 + [K_2] > '2'
 + [K_3] > '3'
@@ -41,7 +43,7 @@ group(main) using keys
 + [K_P] > 'ᛚ'
 + [K_LBRKT] > 'ᛝ'
 + [K_RBRKT] > 'ᛥ'
-+ [K_BKSLASH] > 'ᛇ'
++ [K_BKSLASH] > ' '
 
 + [K_A] > 'ᚪ'
 + [K_S] > 'ᚩ'
@@ -55,8 +57,8 @@ group(main) using keys
 + [K_COLON] > 'ᛋ'
 + [K_QUOTE] > 'ᛡ'
 
-+ [K_oE2] > 'ᛇ'
-+ [K_Z] > U+200D c ZWJ for bindrunes
++ [K_oE2] > ' '
++ [K_Z] > 'ᛇ'
 + [K_X] > 'ᛢ'
 + [K_C] > 'ᚷ'
 + [K_V] > 'ᛣ'
@@ -67,7 +69,7 @@ group(main) using keys
 + [K_PERIOD] > 'ᚦ'
 + [K_SLASH] > 'ᛉ'
 
-+ [SHIFT K_BKQUOTE] > '⁞' U+200B
++ [SHIFT K_BKQUOTE] > '~'
 + [SHIFT K_1] > '᛭' U+200B
 + [SHIFT K_2] > '@'
 + [SHIFT K_3] > '£'
@@ -93,7 +95,7 @@ group(main) using keys
 + [SHIFT K_P] > 'ᛛ'
 + [SHIFT K_LBRKT] > 'ᛜ'
 + [SHIFT K_RBRKT] > 'ᚶ'
-+ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_BKSLASH] > U+2011 c non-breaking hyphen
 
 + [SHIFT K_A] > 'ᚨ'
 + [SHIFT K_S] > 'ᚮ'
@@ -105,9 +107,9 @@ group(main) using keys
 + [SHIFT K_K] > 'ᛐ'
 + [SHIFT K_L] > 'ᚿ'
 + [SHIFT K_COLON] > 'ᛌ'
-+ [SHIFT K_QUOTE] > '?' U+200B
++ [SHIFT K_QUOTE] > U+2015 c horizontal bar
 
-+ [SHIFT K_oE2] > '|'
++ [SHIFT K_oE2] > U+2011 c non-breaking hyphen
 + [SHIFT K_Z] > 'ᛅ'
 + [SHIFT K_X] > 'ᚬ'
 + [SHIFT K_C] > 'ᛃ'
@@ -128,13 +130,13 @@ group(main) using keys
 + [RALT K_6] > 'ᛮ'
 + [RALT K_7] > 'ᛯ'
 + [RALT K_8] > 'ᛰ'
-+ [RALT K_9] > '_'
-+ [RALT K_0] > '+'
++ [RALT K_9] > 'ↈ'
++ [RALT K_0] > 'Ↄ'
 + [RALT K_HYPHEN] > '-'
 + [RALT K_EQUAL] > '='
 + [RALT K_Q] > '⟪' U+200B
 + [RALT K_W] > '⟫' U+200B
-+ [RALT K_E] > 'Å'
++ [RALT K_E] > '⁞' U+200B
 + [RALT K_R] > 'ᛷ'
 + [RALT K_T] > 'ᛸ'
 + [RALT K_Y] > nul
@@ -142,11 +144,11 @@ group(main) using keys
 + [RALT K_I] > 'ᛍ'
 + [RALT K_O] > 'ᛧ'
 + [RALT K_P] > 'ᛲ'
-+ [RALT K_LBRKT] > '~'
-+ [RALT K_RBRKT] > '`'
++ [RALT K_LBRKT] > '«' U+200B
++ [RALT K_RBRKT] > '»' U+200B
 + [RALT K_BKSLASH] > '\'
 
-+ [RALT K_A] > 'ᛅ'
++ [RALT K_A] > 'Å'
 + [RALT K_S] > 'ᚯ'
 + [RALT K_D] > 'ᛶ'
 + [RALT K_F] > 'ᛳ'
@@ -180,5 +182,16 @@ group(main) using keys
 + [RALT SHIFT K_8] > 'ↁ'
 + [RALT SHIFT K_9] > 'ↂ'
 + [RALT SHIFT K_0] > 'ↇ'
-+ [RALT SHIFT K_HYPHEN] > 'ↈ'
-+ [RALT SHIFT K_EQUAL] > 'Ↄ'
++ [RALT SHIFT K_HYPHEN] > '_'
++ [RALT SHIFT K_EQUAL] > '+'
+
++ [RALT SHIFT K_O] > '®'
++ [RALT SHIFT K_LBRKT] > '‹' U+200B
++ [RALT SHIFT K_RBRKT] > '›' U+200B
++ [RALT SHIFT K_BKSLASH] > '|'
+
++ [RALT SHIFT K_K] > '™'
++ [RALT SHIFT K_QUOTE] > '?' U+200B
+
++ [RALT SHIFT K_oE2] > '|'
++ [RALT SHIFT K_SLASH] > '⸽' U+200B

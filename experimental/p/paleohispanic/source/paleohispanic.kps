@@ -7,9 +7,10 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <MSIFileName>C:\Users\Owner\Documents\Keyman Developer\keymandesktop90.msi</MSIFileName>
+    <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,15 @@
     <Copyright URL="">(c) 2024 SIL International</Copyright>
     <Author URL=""/>
     <Version URL=""/>
+    <Description>This keyboard is designed for typing the Iberian language, using the Northern Paleohispanic script. 
+Iberian was a pre-roman language spoken in the Iberian Peninsula region of Spain and Portugal from before the 
+7th to 1rd century BC. Please note that this keyboard (and associated font) is using codepoints that are not officially 
+accepted into The Unicode Standard. The Northern Paleohispanic script has not yet been accepted for encoding into the standard. 
+It is currently on the Unicode roadmap, but these codepoints can, and probably will, change. 
+Once the script is accepted into Unicode the encoding assignments may change. 
+Because this script is not encoded in Unicode, mobile devices will not include fonts supporting this keyboard. 
+Additionally, on mobile devices the keyboard will only display the correct characters within the Keyman application. 
+For help or to report bugs, please visit the Keyman community forums at: https://community.software.sil.org/</Description>
   </Info>
   <Files>
     <File>
@@ -64,6 +74,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -72,6 +88,7 @@
       <Version>1.0</Version>
       <OSKFont>PHN-Basiarebe.ttf</OSKFont>
       <DisplayFont>PHN-Basiarebe.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="PHN-Basiarebe.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="xib">Iberian</Language>
       </Languages>

@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.4'
+store(&KEYBOARDVERSION) '9.2'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "noo"
-store(&COPYRIGHT) '(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'nuučaan̓uł'
 store(&BITMAP) 'fv_nuucaanul.ico'
 store(&VISUALKEYBOARD) 'fv_nuucaanul.kvks'
-store(&KMW_HELPFILE) 'fv_nuucaanul_kmw_help.htm'
 
 begin Unicode > use(main)
 
@@ -56,7 +55,7 @@ any(NeedsCombAComma) + any(CombAComma) > index(NeedsCombAComma,1) U+0313
 + [SHIFT T_C] > 'C' layer('default')
 + [SHIFT T_V_0] > 'Č̓' layer('default')
 + [SHIFT T_V] > 'Č' layer('default')
-+ [SHIFT T_B_0] > 'ƛ̓' layer('default')
++ [SHIFT T_B_0] > 'ƛ̓' layer('default') c see TODO
 + [SHIFT T_B] > 'ƛ' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
 + [SHIFT T_N_1] > 'Ŋ' layer('default')
@@ -195,7 +194,7 @@ c Special Characters
 + [CAPS K_8] > 'Ł'
 + [CAPS K_7] > 'Ḥ'
 + [CAPS K_6] > 'X̣'
-+ [CAPS K_5] > '' c provisional Unicode assignment to U+A7DC. Codepoint should be changed once it's in Unicode and fonts support it
++ [CAPS K_5] > U+A7DC c see TODO
 + [CAPS K_4] > 'Č'
 + [CAPS K_3] > 'Š'
 + [CAPS K_2] > 'ᵂ' 
@@ -203,7 +202,7 @@ c Special Characters
 + [NCAPS SHIFT K_8] > 'Ł'
 + [NCAPS SHIFT K_7] > 'Ḥ'
 + [NCAPS SHIFT K_6] > 'X̣'
-+ [NCAPS SHIFT K_5] > '' c provisional Unicode assignment to U+A7DC. Codepoint should be changed once it's in Unicode and fonts support it
++ [NCAPS SHIFT K_5] > U+A7DC c see TODO
 + [NCAPS SHIFT K_4] > 'Č'
 + [NCAPS SHIFT K_3] > 'Š'
 + [NCAPS SHIFT K_2] > 'ᵂ' 

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,7 @@
     <Copyright URL="">© 2024 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
+    <Description>This keyboard is designed for the Linear B Syllabary.</Description>
   </Info>
   <Files>
     <File>
@@ -76,6 +78,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -84,10 +92,15 @@
       <Version>1.0</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Linb\NotoSansLinearB-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSansLinearB-Regular.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="grc-Linb">Ancient Greek (to 1453) (Linear B)</Language>
         <Language ID="gmy">Mycenaean Greek</Language>
       </Languages>
+      <Examples>
+        <Example ID="grc-Linb" Keys="T h e space q u i c k space b r o w n space f o x" Text="𐀞𐀂 𐀀𐀸𐀹𐀯𐀠 𐀱𐀃𐀺𐀁𐀏 𐀵𐀺𐀮" Note="The quick brown fox" />
+        <Example ID="gmy" Keys="T h e space q u i c k space b r o w n space f o x" Text="𐀞𐀂 𐀀𐀸𐀹𐀯𐀠 𐀱𐀃𐀺𐀁𐀏 𐀵𐀺𐀮" Note="The quick brown fox" />
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

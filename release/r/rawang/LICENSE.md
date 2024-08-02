@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-(c) 2007-2021 R.James
+Copyright © 2007-2021 R.James
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
