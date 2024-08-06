@@ -1,5 +1,11 @@
-Tŝilhqot'in Change History
+Tŝilhqot’in Change History
 ============================
+9.3 (30 Jul 2024)
+-------------------
+* Swapped straight apostrophe for curled in language / keyboard name
+* Properly closed a bracket in .php file
+* Added another alternate name
+
 9.2 (10 Jul 2024)
 -------------------
 * Normalized outputs

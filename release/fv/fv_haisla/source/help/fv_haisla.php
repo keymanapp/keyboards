@@ -94,7 +94,7 @@ END;
         <tr>
             <td align='center'>123</td>
             <td align='center'>🌐</td>
-            <td align='center'>’</td>
+            <th align='center'>’</th>
             <td align='center' colspan='4'>space</td>
             <td align='center'>.</td>
             <td align='center' colspan='2'>⏎</td>

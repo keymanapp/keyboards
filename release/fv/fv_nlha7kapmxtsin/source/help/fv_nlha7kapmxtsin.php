@@ -1,7 +1,7 @@
-<?php 
-  $pagename = 'Nlha7kapmxtsin Keyboard Help';
-  $pagetitle = 'Nlha7kapmxtsin Keyboard Help';
-  $pagestyle = <<<END
+<?php
+$pagename = 'Nlha7kapmxtsin Keyboard Help';
+$pagetitle = 'Nlha7kapmxtsin Keyboard Help';
+$pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
 #wikitext table td { border: solid 1px #888888 !important }
@@ -9,7 +9,7 @@
 .lang2 {font-family:"Aboriginal Sans"}  
 END;
 
-  require_once('header.php');
+require_once ('header.php');
 ?>
 
 <p style='margin: 16px 0 0 0'>
@@ -35,11 +35,13 @@ END;
         </ul>
     </li>
     <li>The original values of the punctuation keys can be typed by holding down the Right-Alt or Option key. The Slash
-        / is typed <kbd>Right-Alt</kbd>+<kbd>/</kbd>(Windows) / <kbd>⌥ Option</kbd>+<kbd>/</kbd> (Mac).</li>
-    <ul>
-        <li>NOTE: To type / while using Google Drive, use <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> (Windows)
-            or <kbd>⌥ Option</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> (Mac)</li>
-    </ul>
+        / is typed <kbd>Right-Alt</kbd>+<kbd>/</kbd>(Windows) / <kbd>⌥ Option</kbd>+<kbd>/</kbd> (Mac).
+        <ul>
+            <li>NOTE: To type / while using Google Drive, use <kbd>Right-Alt</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd>
+                (Windows)
+                or <kbd>⌥ Option</kbd>+<kbd>Shift</kbd>+<kbd>/</kbd> (Mac)</li>
+        </ul>
+    </li>
 </ul>
 <h2>Unicode Fonts</h2>
 <p>The following fonts have been installed on your computer: <strong>Aboriginal Sans, Aboriginal Serif.</strong> Please
@@ -74,7 +76,7 @@ END;
             <td align='center'>ḵ</td>
             <td align='center'>k</td>
             <td align='center'>l l̓</td>
-
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td align='center'>⇧</td>
@@ -100,8 +102,8 @@ END;
     <ul>
         <li>Keys with a red background are combining accents. On your mobile device, these keys will have green text.
         </li>
-        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-        </li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
+        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+        <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
         bar.</li>
     </ul>
 </div>

@@ -1,5 +1,10 @@
 ᐁᓂᔑᓇᐯᒧᐏᓐ (Ojibwa, a-finals, right w-dot) Change History
 ====================
+1.0.3 (31 Jul 2024)
+----------------
+* Fixed error in description
+* Added red background to combining key in .php
+
 1.0.2
 ----------------
 * Tidied documentation

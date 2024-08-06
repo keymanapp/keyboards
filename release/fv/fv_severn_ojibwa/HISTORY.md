@@ -1,5 +1,10 @@
 ᐊᓂᔑᓂᓂᒧᐎᐣ Change History
 ============================
+10.1.1 (31 Jul 2024)
+-----------------
+* Corrected error in instructions
+* Added red background to combining key in .php
+
 10.1 (13 Jul 2024)
 -----------------
 * Tidied documentation
