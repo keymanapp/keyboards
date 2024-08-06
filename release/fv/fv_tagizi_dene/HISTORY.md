@@ -1,5 +1,13 @@
 Tāgizi Dene Change History
 ============================
+9.3 (4 Jul 2024)
+-----------------
+* Normalized and canonically ordered outputs
+* Tidied existing rules
+* Added missing rules
+* Built missing documentation
+* Small change to mobile layout
+
 9.2.1 (26 Oct 2023)
 -----------------
 * Changed order of mobile layers to unscramble display on help page

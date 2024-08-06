@@ -1,11 +1,10 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '10.0'
+store(&KEYBOARDVERSION) '10.1'
 store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "scs"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) "K'áshogot'ı̨nę́ Yatı̨́"
 store(&VISUALKEYBOARD) 'fv_kashogotine_yati.kvks'
-store(&KMW_HELPFILE) 'fv_kashogotine_yati-help.htm'
 
 begin Unicode > use(main)
 
@@ -167,6 +166,8 @@ any(HasAcute) + any(OgonekKeys) > index(HasOgonek,1) U+0301
 
 any(StanVowels) + any(AcuOgoKey) > index(HasOgonek,1) U+0301
 
+
+
 c --- BEGIN DESKTOP LAYOUT ---
 
 c --- language keys ---
@@ -193,31 +194,41 @@ c --- original punctuation ---
 + [RALT SHIFT K_3] > '#'
 + [RALT K_I] > 'i'
 + [RALT K_SLASH] > '/'
++ [RALT SHIFT K_QUOTE] > '/' c alternate way to type slash for Google Workspace
 + [RALT SHIFT K_SLASH] > '?'
 
 c --- ordering rules for non-standard vowels ---
 
 'ǝ́' + [K_LBRKT] > 'ǝ̨́'
 'ǝ́' + [K_RBRKT] > 'ǝ̨́'
+'ǝ́' + [K_BKSLASH] > 'ǝ̨́'
 'ǝ̨' + [K_RBRKT] > 'ǝ̨́'
 'ǝ̨' + [K_SLASH] > 'ǝ̨́'
+'ǝ̨' + [K_BKSLASH] > 'ǝ̨́'
 'ǝ̨́' + [K_RBRKT] > 'ǝ̨́'
 'Ǝ́' + [K_LBRKT] > 'Ǝ̨́'
 'Ǝ́' + [K_RBRKT] > 'Ǝ̨́'
+'Ǝ́' + [K_BKSLASH] > 'Ǝ̨́'
 'Ǝ̨' + [K_RBRKT] > 'Ǝ̨́'
 'Ǝ̨' + [K_SLASH] > 'Ǝ̨́'
+'Ǝ̨' + [K_BKSLASH] > 'Ǝ̨́'
+'Ǝ̨́' + [K_RBRKT] > 'Ǝ̨́'
+'Ǝ̨́' + [K_BKSLASH] > 'Ǝ̨́'
 
 'ı́' + [K_LBRKT] > 'ı̨́'
 'ı́' + [K_RBRKT] > 'ı̨́'
+'ı́' + [K_BKSLASH] > 'ı̨́'
 'ı̨' + [K_RBRKT] > 'ı̨́'
 'ı̨' + [K_SLASH] > 'ı̨́'
+'ı̨' + [K_BKSLASH] > 'ı̨́'
 'ı̨́' + [K_RBRKT] > 'ı̨́'
+'ı̨́' + [K_BKSLASH] > 'ı̨́'
 
 c --- stacking prevention ---
 
 store(AboveAccent) U+0301
 store(BelowAccent) U+0328
-store(AccentKeys) [K_LBRKT] [K_RBRKT] [K_SLASH]
+store(AccentKeys) [K_LBRKT] [K_RBRKT] [K_BKSLASH]
 store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
 
 any(HasAcute) + any(AcuteKeys) > context beep
@@ -229,5 +240,7 @@ any(BelowAccent) + any(OgonekKeys) > context beep
 any(HasAcute) + any(AcuOgoKey) > index(HasOgonek,1) U+0301
 any(HasOgonek) + any(AcuOgoKey) > index(HasOgonek,1) U+0301
 any(AboveAccent) + any(AcuOgoKey) > context beep
+any(HasOgonek) U+0301 + any(AcuOgoKey) > context beep
+any(HasOgonek) U+0301 + any(OgonekKeys) > context beep
 
 any(NonLetters) + any(AccentKeys) > context beep

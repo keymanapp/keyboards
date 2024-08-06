@@ -1,5 +1,24 @@
 Haisla Change History
 ====================
+2.1.3 (28 Jul 2024)
+----------------
+* Moved keyboard instructions from PDF to welcome.htm and fv_haisla.php
+
+2.1.2 (12 Jul 2024)
+----------------
+* linked to fv_xaislakala
+
+2.1.1 (10 Jul 2024)
+----------------
+* Updated link
+
+2.1 (9 Jul 2024)
+----------------
+* Tidied up documentation
+* Updated mobile layout
+* Added Aboriginal Sans and Serif to package
+* Removed OSK in favour of web help
+
 2.0.1 (28 Mar 2024)
 ----------------
 * Updated welcome
