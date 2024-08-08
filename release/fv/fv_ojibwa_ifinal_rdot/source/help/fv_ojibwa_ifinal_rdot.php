@@ -88,7 +88,7 @@ END;
 			</ul>
 		</li>
 		<li>All English letters can be typed by pressing <kbd>Right-Alt</kbd> (Windows) / <kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
-		<li>All uppercase English letters can be typed by pressing <kbd>Right-Alt</kbd> (Windows) / <kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
+		<li>All uppercase English letters can be typed by pressing <kbd>Shift</kbd>+<kbd>Right-Alt</kbd> (Windows) / <kbd>Shift</kbd>+<kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
 	</ul>
 
 <h2>Unicode Fonts</h2>
@@ -146,7 +146,7 @@ END;
             <td align='center'>🌐</td>
             <td align='center'>ᐧ</td>
             <td align='center' colspan='5'>space</td>
-            <th align='center'>˙</th>
+            <td class="keyboard-layer__special">˙</td>
             <td align='center'>⌫</td>
         </tr>
 

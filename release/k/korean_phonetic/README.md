@@ -3,7 +3,7 @@ Korean Phonetic keyboard
 
 © SIL International
 
-Version 1.0
+Version 2.0
 
 Description
 -----------
@@ -17,7 +17,6 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
 Supported Platforms
 -------------------
  * Windows
- * macOS
- * Linux
+
 
 

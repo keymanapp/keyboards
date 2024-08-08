@@ -83,7 +83,7 @@ require_once ('header.php');
 			<th align='center'>´</th>
 			<td align='center'>k k̓</td>
 			<td align='center'>l l̓ l̲ ĺ̲</td>
-
+			<td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td align='center'>⇧</td>
@@ -108,8 +108,8 @@ require_once ('header.php');
 	<ul>
 		<li>Keys with a red background are combining accents. On your mobile device, these keys will have green text.
 		</li>
-		<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-		</li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
+		<li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+		<li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
 		bar.</li>
 	</ul>
 	<div class='vspace'></div>

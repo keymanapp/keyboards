@@ -1,5 +1,10 @@
 Nisg̱a'a Change History
 ============================
+9.2.1 (31 Jul 2024)
+-------------------
+* Corrected package name
+* Closed bracket that was missed
+
 9.2 (11 Jul 2024)
 -------------------
 * Tidied rules and stores

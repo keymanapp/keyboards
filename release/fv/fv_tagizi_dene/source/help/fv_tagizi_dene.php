@@ -133,6 +133,4 @@ END;
 
 <br />
 
-<h2>Keyboard Layout</h2>
-<div id='osk'>
 </div>
