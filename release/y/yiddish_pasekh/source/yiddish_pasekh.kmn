@@ -1,7 +1,7 @@
-c Keyboard created by KMDECOMP
+﻿c Keyboard created by KMDECOMP
 c 
 c Meta details: Registered=1; Version=0
-c Flags=0; HotKey=0
+c Flags=0; HotKey=0ּ
 c 
 
 store(&VERSION) "10.0"
@@ -22,7 +22,7 @@ store(finals) "ץםןך"
 store(nonfinals) "צמנכ" 
 c store(store10) "iju" 
 c store(store11) "יײו" 
-store(store12) "אבגדהוזחטיךכלםמןנסעףפץצקרשתװױײ׳״ְֱֲֳִֵֶַָֹֻּֽֿׁׂ" 
+store(store12) "אבגדהוזחטיךכלםמןנסעףפץצקרשתװױײ׳״ְֱֲֳִֵֶַָֹֻּֽֿׁׂ"
 store(store13) "!" '"' "#$%&')*+,-./0123456789:;<=>?@]\^_`}|~“־׃" 
 
 
@@ -131,6 +131,10 @@ group(group1) using keys
   any(store12)  + "Q" > context "“"
   any(store13)  + "Q" > context "“"
    + "Q" > "”"
+   
+   any(store12) + "R" > context "ּ"
+   + "R" > "U+05BC"
+
   "\אַ"  + "S" > "אַת"
   "\אָ"  + "S" > "אָת"
   "\ע"  + "S" > "עת"
@@ -304,6 +308,7 @@ group(group1) using keys
   any(finals)  + "r" > index(nonfinals, 1) "ר"
   "ף"  + "r" > "פֿר"
    + "r" > "ר"
+
   "\אַ"  + "s" > "אַס"
   "\אָ"  + "s" > "אָס"
   "\ע"  + "s" > "עס"
