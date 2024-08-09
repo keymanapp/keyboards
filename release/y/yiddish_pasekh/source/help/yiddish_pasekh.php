@@ -16,9 +16,9 @@ including Times New Roman and Arial.  Use the Font Helper in Keyman Desktop to f
 <div id='osk-container'>
   <h2>Desktop Keyboard Layout</h2>
   <div id='osk' data-states='default shift'></div>
+  <h2>Mobile Keyboard Layout</h2>
+  <div id='osk-tablet' data-states='default shift'></div>
 </div>
-
-
 
 <div id='Quickstart'>
 <h2>Quickstart</h2>
@@ -83,6 +83,8 @@ combinations:</P>
 <tr><td><span class='keys'>S</span></td><td><span class='lang2'>ת</span></td><td class='note'>sof</td></tr>
 <tr><td><span class='keys'>T</span></td><td><span class='lang2'>תּ</span></td><td class='note'>tof</td></tr>
 <tr><td><span class='keys'>W</span></td><td><span class='lang2'>שׂ</span></td><td class='note'>sin</td></tr>
+<tr><td><span class='keys'>rR</span></td><td><span class='lang2'>רּ</span></td><td class='note'>melupm vov</td></tr>
+<tr><td><span class='keys'>kR</span></td><td><span class='lang2'>קּ</span></td><td class='note'></td></tr>
 </table>
 
 <p><EM>Geresh</EM> is typed with <span class='keys'>[SHIFT]+[G]</span> and <EM>curly 

@@ -1,6 +1,11 @@
 Yiddish Pasekh Keyboard Change History
 =======================
 
+2.0.0 (08 Aug 2024)
+-----------------
+* Added <kbd> ּ<kbd> (HEBREW POINT DAGESH OR MAPIQ) to type melupm vov
+* Updated documentation
+
 1.9 (4 Mar 2021)
 -----------------
 * Added keystroke to access yod+hiriq
