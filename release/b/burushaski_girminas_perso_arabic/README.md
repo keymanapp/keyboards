@@ -1,7 +1,6 @@
 Burushaski Girminas (بروشسکی) keyboard
 ==============
 
-Version 1.25
 
 Description
 -----------
@@ -13,7 +12,7 @@ This particular orthography was developed and approved by Burusho Maʰraka, a re
 Links
 -----
 
-Copyright (c) 2023 Quwat K. Sunny
+Copyright (c) Quwat K. Sunny
 ---------
 See [LICENSE.md](LICENSE.md)
 
