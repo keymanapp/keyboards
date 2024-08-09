@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Tŝilhqot\'in Keyboard Help';
-  $pagetitle = 'Tŝilhqot\'in Keyboard Help';
+  $pagename = 'Tŝilhqot’in Keyboard Help';
+  $pagetitle = 'Tŝilhqot’in Keyboard Help';
   $pagestyle = <<<END
   
 #wikitext table { margin: 12px; }
@@ -13,7 +13,7 @@ END;
 ?>
 
 <p style='margin: 16px 0 0 0'>
-    This keyboard is designed for the <b>Tŝilhqot'in</b> language of the BC Interior region of Canada.
+    This keyboard is designed for the <b>Tŝilhqot’in</b> language of the BC Interior region of Canada.
 </p>
 <p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below),
     please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
@@ -109,8 +109,8 @@ END;
     <ul>
         <li>Keys with a red background are combining accents. On your mobile device, these keys will have green text.
         </li>
-        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-        </li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
+        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.</li>
+        <li>Common punctuation marks can be found by pressing and holding the period key on the right side of the space
         bar.</li>
     </ul>
 </div>

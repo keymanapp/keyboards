@@ -100,7 +100,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_W">
     <div class="keycap">w</div>
-    <div class="keytext">ᅭ</div>
+    <div class="keytext">ᅳ</div>
     </div>
     <div class="key plain" id="K_E">
     <div class="keycap">e</div>
@@ -116,7 +116,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_Y">
     <div class="keycap">y</div>
-    <div class="keytext">ᅳ</div>
+    <div class="keytext">ㅐ</div>
     </div>
     <div class="key plain" id="K_U">
     <div class="keycap">u</div>
@@ -164,7 +164,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_F">
     <div class="keycap">f</div>
-    <div class="keytext">ㅐ</div>
+    <div class="keytext">ᅣ</div>
     </div>
     <div class="key plain" id="K_G">
     <div class="keycap">g</div>
@@ -184,7 +184,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
     </div>
     <div class="key plain" id="K_L">
     <div class="keycap">l</div>
-    <div class="keytext">ᅣ</div>
+    <div class="keytext">ᅭ</div>
     </div>
     <div class="key plain" id="K_COLON">
     <div class="keycap">;</div>
@@ -356,7 +356,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
                 <td class='lang2' style='font-size:24pt'>ᅡ</td><td><span class='keys'>a</span></td>
             </tr>
             <tr style='text-align:center'>
-                <td class='lang2' style='font-size:24pt'>ᅣ</td><td><span class='keys'>l</span></td>
+                <td class='lang2' style='font-size:24pt'>ᅣ</td><td><span class='keys'>f</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅥ</td><td><span class='keys'>v</span></td>
@@ -368,7 +368,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
                 <td class='lang2' style='font-size:24pt'>ᅩ</td><td><span class='keys'>o</span></td>
             </tr>
             <tr style='text-align:center'>
-                <td class='lang2' style='font-size:24pt'>ᅭ</td><td><span class='keys'>w</span></td>
+                <td class='lang2' style='font-size:24pt'>ᅭ</td><td><span class='keys'>l</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅮ</td><td><span class='keys'>u</span></td>
@@ -377,16 +377,16 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
                 <td class='lang2' style='font-size:24pt'>ᅲ</td><td><span class='keys'>x</span></td>
             </tr>
             <tr style='text-align:center'>
-                <td class='lang2' style='font-size:24pt'>ᅳ</td><td><span class='keys'>y</span></td>
+                <td class='lang2' style='font-size:24pt'>ᅳ</td><td><span class='keys'>w</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅵ</td><td><span class='keys'>i</span></td>
             </tr>
             <tr style='text-align:center'>
-                <td class='lang2' style='font-size:24pt'>ᅢ</td><td><span class='keys'>f</span></td>
+                <td class='lang2' style='font-size:24pt'>ᅢ</td><td><span class='keys'>y</span></td>
             </tr>
             <tr style='text-align:center'>
-                <td class='lang2' style='font-size:24pt'>ᅤ</td><td><span class='keys'>F</span></td>
+                <td class='lang2' style='font-size:24pt'>ᅤ</td><td><span class='keys'>Y</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅦ</td><td><span class='keys'>e</span></td>
@@ -398,7 +398,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
                 <td class='lang2' style='font-size:24pt'>ᅪ</td><td><span class='keys'>o</span>+<span class='keys'>a</span></td>
             </tr>
             <tr style='text-align:center'>
-                <td class='lang2' style='font-size:24pt'>ᅫ</td><td><span class='keys'>o</span>+<span class='keys'>e</span></td>
+                <td class='lang2' style='font-size:24pt'>ᅫ</td><td><span class='keys'>o</span>+<span class='keys'>y</span></td>
             </tr>
             <tr style='text-align:center'>
                 <td class='lang2' style='font-size:24pt'>ᅬ</td><td><span class='keys'>o</span>+<span class='keys'>i</span></td>
@@ -413,7 +413,7 @@ This mnemonic keyboard is based on the pronunciation of Korean. For an alternati
                 <td class='lang2' style='font-size:24pt'>ᅱ</td><td><span class='keys'>u</span>+<span class='keys'>i</span></td>
             </tr>
             <tr style='text-align:center'>
-                <td class='lang2' style='font-size:24pt'>ᅴ</td><td><span class='keys'>y</span>+<span class='keys'>i</span></td>
+                <td class='lang2' style='font-size:24pt'>ᅴ</td><td><span class='keys'>w</span>+<span class='keys'>i</span></td>
             </tr>
         </table>
     </div>

@@ -1,5 +1,10 @@
 Sƛ̓aƛ̓imxəc Change History
 ============================
+9.4 (30 Jul 2024)
+-------------------
+* Further tidied documentation
+* Removed web help in favour of OSK
+
 9.3 (1 Jul 2024)
 -------------------
 * Normalised outputs

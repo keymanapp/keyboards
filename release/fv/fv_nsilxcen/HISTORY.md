@@ -1,5 +1,10 @@
 Nsyilxcən Change History
 ============================
+10.0.1 (31 Jul 2024)
+------------------
+* Updated name in description to match rest of documentation
+* Closed missed bracket in .php
+
 10.0 (11 Jul 2024)
 ------------------
 * Changed keyboard name

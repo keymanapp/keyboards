@@ -1,5 +1,9 @@
 Dane-Z̲aa Z̲áágéʔ Change History
 ====================
+9.4.1 (31 Jul 2024)
+-----------------
+* Further tidied documentation
+
 9.4 (4 Jul 2024)
 -----------------
 * Added fonts to package

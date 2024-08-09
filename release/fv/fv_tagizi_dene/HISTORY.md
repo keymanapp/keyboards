@@ -1,5 +1,11 @@
 Tāgizi Dene Change History
 ============================
+9.4 (30 Jul 2024)
+-----------------
+* Corrected package name
+* Added searchable version of name to description
+* Removed unnecessary header from .php
+
 9.3 (4 Jul 2024)
 -----------------
 * Normalized and canonically ordered outputs
