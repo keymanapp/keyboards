@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Taigi Viet Telex</title>
-  <style type="text/css">
-    p { font: 12pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-  </style>
-</head>
-<body>
-
-<h1>Start Using Taigi Viet Telex</h1>
+<?php 
+  $pagename = 'Taigi Viet Telex Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
 
 <p>
     Taigi Viet Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī. 台語越式telex 會當拍台語白話字
 </p>
 <p>
-  Taigi Viet Telex version, is using "sfrjw" keys for generating tone marks 
+Taigi Viet Telex version, is using "sfrjw" keys for generating tone marks 
 </p>
 <p>
     台語越式telex版本，佇咧元音字母後爿抑是佇咧每一個音節後爿添字母‘s’ ‘f’ ‘r’ ‘j’佮‘w’ 去生成音調 
@@ -36,17 +27,15 @@
 
 </p>
 
-<!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
 
-<h1>Keyboard Layout</h1>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<p><b>Unshifted</b></p>
-<img src='taigitelexU_.png' alt='Keyboard Layout'>
-<p><b>Shifted</b></p>
-<img src='taigitelexU_S.png' alt='Keyboard Layout'>
-
+<div id='osk-tablet' data-states='default shift numeric'>
+</div>
 
 <p>© 2024 cathaylab</p>
-
-</body>
-</html>
