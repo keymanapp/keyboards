@@ -1,0 +1,492 @@
+﻿store(&Version) '15.0'
+store(&KEYBOARDVERSION) '0.9'
+store(&NAME) 'Mwangwego X'
+store(&COPYRIGHT) '© 2024 Geʾez Frontier Foundation'
+store(&Message) 'This is an experimental Mwangwego keyboard that requires the included Mwangwego16 font.'
+store(&CapsAlwaysOff) '1'
+store(&HotKey) '[CTRL ALT K_M]'
+store(&VISUALKEYBOARD) 'gff_mwangwego.kvks'
+store(&TARGETS) 'windows macosx linux'
+store(&BITMAP) 'gff_mwangwego.ico'
+
+store(ShortA) 'Aa'
+store(ShortE) 'Ee'
+store(ShortI) 'Ii'
+store(ShortO) 'Oo'
+store(ShortU) 'Uu'
+c
+c Chichewa Digraphs
+c
+c store(H_Modifier) 'Hh'
+c store(H_DigraphBases) '󰀂󰀅󰀙󰀑󰀃󰀓'
+c store(H_DigraphTargets) '󰀂󰀆󰀉󰀒󰀛󰀟'
+c store(L_Modifier) 'Ll'
+c store(L_DigraphBases) '󰀛󰀇'
+c store(L_DigraphTargets) '󰀛󰀜'
+c store(S_Modifier) 'Ss'
+c store(S_DigraphBases) '󰀏󰀓'
+c store(S_DigraphTargets) '󰀕󰀔'
+c store(Y_Modifier) 'Yy'
+c store(Y_DigraphBases) '󰀍'
+c store(Y_DigraphTargets) '󰀎'
+c store(Z_Modifier) 'Zz'
+c store(Z_DigraphBases) '󰀃'
+c store(Z_DigraphTargets) '󰀚'
+
+c
+c the below is the set of non-diagraphs when the digraph based approach is used.
+c
+c store(OrdersConsonantsRegular) '󰀁󰀂󰀃󰀄󰀅󰀇󰀈󰀊󰀋󰀌󰀍󰀏󰀐󰀑󰀓󰀖󰀗󰀘󰀙󰀝󰀞'
+store(OrdersShortA) '󰀀󰀁󰀂󰀃󰀄󰀅󰀆󰀇󰀈󰀉󰀊󰀋󰀌󰀍󰀎󰀏󰀐󰀑󰀒󰀓󰀔󰀕󰀖󰀗󰀘󰀙󰀚󰀛󰀜󰀝󰀞󰀟'
+store(OrdersConsonants) '󰀀󰀁󰀂󰀃󰀄󰀅󰀆󰀇󰀈󰀉󰀊󰀋󰀌󰀍󰀎󰀏󰀐󰀑󰀒󰀓󰀔󰀕󰀖󰀗󰀘󰀙󰀚󰀛󰀜󰀝󰀞󰀟'
+store(MwangwegoSyllables) U+F0000 .. U+F001F 
+
+store(VowelKeys) 'AaEeIiOoUu'
+store(Vowels) '󰀀󰀀' 
+store(Masiri) '󰀠󰀠󰀡󰀡󰀢󰀢󰀣󰀣'
+store(MasiriKeys) 'EeIiOoUu'
+store(FirstOrderKeys) 'Aa'
+
+store(MwangwegoLowercaseKeys) 'abcdfghjklmnprstvwyzxq'
+store(MwangwegoLowercaseConsonants) '󰀀󰀁󰀂󰀃󰀄󰀅󰀇󰀈󰀊󰀋󰀌󰀍󰀏󰀐󰀑󰀓󰀖󰀗󰀘󰀙󰀝󰀞'
+
+store(MwangwegoUppercaseKeys) 'ABCDFGHJKLMNPRSTVWYZXQ'
+store(MwangwegoUppercaseConsonants) '󰀀󰀁󰀂󰀛󰀄󰀆󰀜󰀉󰀊󰀋󰀌󰀎󰀕󰀐󰀒󰀟󰀖󰀗󰀘󰀚󰀝󰀞'
+
+store(Mutuyo) '󰀤󰀥󰀦󰀧󰀨󰀩󰀪󰀫󰀬󰀭󰀮󰀯'
+store(MutuyoRegular) '󰀤󰀥󰀦󰀧󰀨󰀪󰀮'
+store(MutuyoCombining) '󰀩󰀫󰀬󰀭󰀯'
+store(Mituyo) '󰀰󰀱󰀲󰀳󰀴󰀴󰀶󰀷󰀸󰀹󰀺󰀻󰀼󰀽󰀾󰀿'
+
+store(Prefixable) outs(OrdersConsonants) outs(Masiri)
+
+c  󰀤  = 1  / MYU
+c  󰀥  = 2  / MI
+c  󰀦  = 3  / NI
+c  󰀧  = 4  / HI
+c  󰀨  = 5  / WAYA
+c  󰀩  = 6  / WAYA Below (combining)
+c  󰀪  = 7  / SISA
+c  󰀫  = 8  / MURA  (combining)
+c  󰀬  = 9  / MULA (combining)
+c  󰀭  = 0  / PEWA (combining)
+c  󰀮  = -  / TUMBA
+c  󰀯  = =  / KWANTHU (combining)
+
+store(MutuyoRegularNumberKeys) '123457-'
+store(MutuyoCombiningNumberKeys) '6890='
+store(MutuyoKeys) '1234567890-='
+
+store(󰀀_InvalidMituyo) '12467890-'
+store(󰀁_InvalidMituyo) '347-='
+store(󰀂_InvalidMituyo) '2890-'
+store(󰀃_InvalidMituyo) '2470-='
+store(󰀄_InvalidMituyo) '12470-'
+store(󰀅_InvalidMituyo) '247890-'
+store(󰀆_InvalidMituyo) '12347890='
+store(󰀇_InvalidMituyo) '2347890'
+store(󰀈_InvalidMituyo) '2467890-'
+store(󰀉_InvalidMituyo) '12467890-='
+store(󰀊_InvalidMituyo) '2890-'
+store(󰀋_InvalidMituyo) '2347890-'
+store(󰀌_InvalidMituyo) '234890-='
+store(󰀍_InvalidMituyo) '234890'
+store(󰀎_InvalidMituyo) '2346890='
+store(󰀏_InvalidMituyo) '30-'
+store(󰀐_InvalidMituyo) '2347890-'
+store(󰀑_InvalidMituyo) '247890-'
+store(󰀒_InvalidMituyo) '2347890-='
+store(󰀓_InvalidMituyo) '20-'
+store(󰀔_InvalidMituyo) '237890-='
+store(󰀕_InvalidMituyo) '2347890-='
+store(󰀖_InvalidMituyo) '124789-='
+store(󰀗_InvalidMituyo) '1234567890='
+store(󰀘_InvalidMituyo) '234567890='
+store(󰀙_InvalidMituyo) '2478-='
+store(󰀚_InvalidMituyo) '2467890-='
+store(󰀛_InvalidMituyo) '24567890-='
+store(󰀜_InvalidMituyo) '12467890-='
+store(󰀝_InvalidMituyo) '124567890-='
+store(󰀞_InvalidMituyo) '24567890-='
+store(󰀟_InvalidMituyo) '124567890-='
+store(󰀀_󰀦_InvalidMituyo) '12347890-='
+store(󰀀_󰀮_InvalidMituyo) '123457890-='
+store(󰀁_󰀤_InvalidMituyo) '12347890-='
+store(󰀁_󰀥_InvalidMituyo) '12347890-='
+store(󰀁__InvalidMituyo) '12347890-='
+store(󰀂_󰀤_InvalidMituyo) '1237890-='
+store(󰀂_󰀦_InvalidMituyo) '12357890-='
+store(󰀂_󰀧_InvalidMituyo) '123457890-='
+store(󰀂_󰀮_InvalidMituyo) '123457890-='
+store(󰀂__InvalidMituyo) '124567890-='
+store(󰀂_󰀳_InvalidMituyo) '123467890-='
+store(󰀂_󰀺_InvalidMituyo) '12347890-='
+store(󰀃_󰀤_InvalidMituyo) '1247890-='
+store(󰀃_󰀦_InvalidMituyo) '123467890-='
+store(󰀃_󰀪_InvalidMituyo) '124567890-='
+store(󰀃_󰀮_InvalidMituyo) '123457890-='
+store(󰀃__InvalidMituyo) '124567890-='
+store(󰀄_󰀤_InvalidMituyo) '123457890-='
+store(󰀄_󰀦_InvalidMituyo) '12347890-='
+store(󰀄__InvalidMituyo) '123467890-='
+store(󰀅_󰀤_InvalidMituyo) '12347890-='
+store(󰀅_󰀦_InvalidMituyo) '12347890-='
+store(󰀅_󰀪_InvalidMituyo) '124567890-='
+store(󰀅_󰀮_InvalidMituyo) '123457890-='
+store(󰀅__InvalidMituyo) '124567890-='
+store(󰀆_󰀮_InvalidMituyo) '123467890-='
+store(󰀇_󰀤_InvalidMituyo) '123457890-='
+store(󰀇_󰀮_InvalidMituyo) '12347890-='
+store(󰀈_󰀤_InvalidMituyo) '123457890-='
+store(󰀈_󰀦_InvalidMituyo) '123457890-='
+store(󰀈_󰀮_InvalidMituyo) '123457890-='
+store(󰀈__InvalidMituyo) '124567890-='
+store(󰀉_󰀤_InvalidMituyo) '123457890-='
+store(󰀉_󰀦_InvalidMituyo) '12347890-='
+store(󰀊_󰀤_InvalidMituyo) '127890-='
+store(󰀊_󰀦_InvalidMituyo) '1237890-='
+store(󰀊_󰀧_InvalidMituyo) '12347890-='
+store(󰀊_󰀪_InvalidMituyo) '124567890-='
+store(󰀊_󰀮_InvalidMituyo) '123457890-='
+store(󰀊__InvalidMituyo) '124567890-='
+store(󰀊_󰀰_InvalidMituyo) '123567890-='
+store(󰀊_󰀳_InvalidMituyo) '123467890-='
+store(󰀊_󰀺_InvalidMituyo) '12347890-='
+store(󰀊_󰀾_InvalidMituyo) '123567890-='
+store(󰀊_󰀱_InvalidMituyo) '123457890-='
+store(󰀋_󰀤_InvalidMituyo) '123457890-='
+store(󰀌_󰀤_InvalidMituyo) '12347890-='
+store(󰀌_󰀮_InvalidMituyo) '123457890-='
+store(󰀍_󰀤_InvalidMituyo) '12347890-='
+store(󰀍_󰀮_InvalidMituyo) '12347890-='
+store(󰀎_󰀤_InvalidMituyo) '12347890-='
+store(󰀎_󰀮_InvalidMituyo) '12347890-='
+store(󰀏_󰀤_InvalidMituyo) '12347890-='
+store(󰀏_󰀥_InvalidMituyo) '1237890-='
+store(󰀏_󰀧_InvalidMituyo) '12347890-='
+store(󰀏_󰀸_InvalidMituyo) '123467890-='
+store(󰀏_󰀷_InvalidMituyo) '123457890-='
+store(󰀐_󰀤_InvalidMituyo) '12347890-='
+store(󰀑_󰀤_InvalidMituyo) '1247890-='
+store(󰀑_󰀦_InvalidMituyo) '12347890-='
+store(󰀑_󰀮_InvalidMituyo) '123457890-='
+store(󰀑__InvalidMituyo) '124567890-='
+store(󰀒_󰀤_InvalidMituyo) '12347890-='
+store(󰀒_󰀦_InvalidMituyo) '123457890-='
+store(󰀒_󰀮_InvalidMituyo) '123457890-='
+store(󰀓_󰀤_InvalidMituyo) '1237890-='
+store(󰀓_󰀦_InvalidMituyo) '1237890-='
+store(󰀓_󰀧_InvalidMituyo) '12347890-='
+store(󰀓_󰀮_InvalidMituyo) '123457890-='
+store(󰀓__InvalidMituyo) '124567890-='
+store(󰀓_󰀰_InvalidMituyo) '123567890-='
+store(󰀓_󰀺_InvalidMituyo) '12347890-='
+store(󰀓_󰀾_InvalidMituyo) '123567890-='
+store(󰀓_󰀱_InvalidMituyo) '123457890-='
+store(󰀔_󰀤_InvalidMituyo) '12347890-='
+store(󰀔_󰀦_InvalidMituyo) '12357890-='
+store(󰀔_󰀧_InvalidMituyo) '123457890-='
+store(󰀔__InvalidMituyo) '124567890-='
+store(󰀔_󰀺_InvalidMituyo) '123457890-='
+store(󰀕_󰀤_InvalidMituyo) '123467890-='
+store(󰀖_󰀤_InvalidMituyo) '123457890-='
+store(󰀖_󰀦_InvalidMituyo) '12347890-='
+store(󰀖__InvalidMituyo) '12467890-='
+store(󰀖_󰀮_InvalidMituyo) '123457890-='
+store(󰀖__InvalidMituyo) '124567890-='
+store(󰀘_󰀮_InvalidMituyo) '123457890-='
+store(󰀙_󰀤_InvalidMituyo) '1247890-='
+store(󰀙_󰀦_InvalidMituyo) '12347890-='
+store(󰀙_󰀪_InvalidMituyo) '124567890-='
+store(󰀙__InvalidMituyo) '12347890-='
+store(󰀙_󰀮_InvalidMituyo) '123457890-='
+store(󰀙__InvalidMituyo) '124567890-='
+store(󰀚_󰀤_InvalidMituyo) '12467890-='
+store(󰀚_󰀦_InvalidMituyo) '123467890-='
+store(󰀚__InvalidMituyo) '124567890-='
+store(󰀛_󰀤_InvalidMituyo) '123457890-='
+store(󰀛_󰀦_InvalidMituyo) '12347890-='
+store(󰀛__InvalidMituyo) '124567890-='
+store(󰀜_󰀤_InvalidMituyo) '1247890-='
+store(󰀜_󰀦_InvalidMituyo) '12347890-='
+store(󰀝_󰀤_InvalidMituyo) '12467890-='
+store(󰀝_󰀦_InvalidMituyo) '123467890-='
+store(󰀝__InvalidMituyo) '124567890-='
+store(󰀞_󰀤_InvalidMituyo) '123457890-='
+store(󰀞_󰀦_InvalidMituyo) '123467890-='
+store(󰀞__InvalidMituyo) '124567890-='
+store(󰀟_󰀦_InvalidMituyo) '123467890-='
+store(󰀟__InvalidMituyo) '12467890-='
+
+begin Unicode > use(main)
+group(main) using keys
+
+c
+c Chichewa Digraphs
+c
+c any(H_DigraphBases) + any(H_Modifier)  > index(H_DigraphTargets,1)
+c any(L_DigraphBases) + any(L_Modifier)  > index(L_DigraphTargets,1)
+c any(S_DigraphBases) + any(S_Modifier)  > index(S_DigraphTargets,1)
+c any(Y_DigraphBases) + any(Y_Modifier)  > index(Y_DigraphTargets,1)
+
+'󰀓' + 't' > '󰀔'
+
++ any(MwangwegoLowercaseKeys) > index(MwangwegoLowercaseConsonants,1)
++ any(MwangwegoUppercaseKeys) > index(MwangwegoUppercaseConsonants,1)
+
+c
+c Masiri can only follow the first order ("A") or a Mutuyo
+c
+c uncomment this when using the diacritics:
+c
+any(OrdersConsonants) + any(FirstOrderKeys) > context
+any(OrdersConsonants) + any(MasiriKeys)     > context index(Masiri,2)
+
+any(Masiri) + any(MasiriKeys) > context beep
+
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c Block Composition of Invalid Mituyo Stack
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c
+
+'󰀀' + any(󰀀_InvalidMituyo) > context beep
+'󰀁' + any(󰀁_InvalidMituyo) > context beep
+'󰀂' + any(󰀂_InvalidMituyo) > context beep
+'󰀃' + any(󰀃_InvalidMituyo) > context beep
+'󰀄' + any(󰀄_InvalidMituyo) > context beep
+'󰀅' + any(󰀅_InvalidMituyo) > context beep
+'󰀆' + any(󰀆_InvalidMituyo) > context beep
+'󰀇' + any(󰀇_InvalidMituyo) > context beep
+'󰀈' + any(󰀈_InvalidMituyo) > context beep
+'󰀉' + any(󰀉_InvalidMituyo) > context beep
+'󰀊' + any(󰀊_InvalidMituyo) > context beep
+'󰀋' + any(󰀋_InvalidMituyo) > context beep
+'󰀌' + any(󰀌_InvalidMituyo) > context beep
+'󰀍' + any(󰀍_InvalidMituyo) > context beep
+'󰀎' + any(󰀎_InvalidMituyo) > context beep
+'󰀏' + any(󰀏_InvalidMituyo) > context beep
+'󰀐' + any(󰀐_InvalidMituyo) > context beep
+'󰀑' + any(󰀑_InvalidMituyo) > context beep
+'󰀒' + any(󰀒_InvalidMituyo) > context beep
+'󰀓' + any(󰀓_InvalidMituyo) > context beep
+'󰀔' + any(󰀔_InvalidMituyo) > context beep
+'󰀕' + any(󰀕_InvalidMituyo) > context beep
+'󰀖' + any(󰀖_InvalidMituyo) > context beep
+'󰀗' + any(󰀗_InvalidMituyo) > context beep
+'󰀘' + any(󰀘_InvalidMituyo) > context beep
+'󰀙' + any(󰀙_InvalidMituyo) > context beep
+'󰀚' + any(󰀚_InvalidMituyo) > context beep
+'󰀛' + any(󰀛_InvalidMituyo) > context beep
+'󰀜' + any(󰀜_InvalidMituyo) > context beep
+'󰀝' + any(󰀝_InvalidMituyo) > context beep
+'󰀞' + any(󰀞_InvalidMituyo) > context beep
+'󰀟' + any(󰀟_InvalidMituyo) > context beep
+'󰀦󰀀' + any(󰀀_󰀦_InvalidMituyo) > context beep
+'󰀮󰀀' + any(󰀀_󰀮_InvalidMituyo) > context beep
+'󰀤󰀁' + any(󰀁_󰀤_InvalidMituyo) > context beep
+'󰀥󰀁' + any(󰀁_󰀥_InvalidMituyo) > context beep
+'󰀁󰀭' + any(󰀁__InvalidMituyo) > context beep
+'󰀤󰀂' + any(󰀂_󰀤_InvalidMituyo) > context beep
+'󰀦󰀂' + any(󰀂_󰀦_InvalidMituyo) > context beep
+'󰀧󰀂' + any(󰀂_󰀧_InvalidMituyo) > context beep
+'󰀮󰀂' + any(󰀂_󰀮_InvalidMituyo) > context beep
+'󰀂󰀯' + any(󰀂__InvalidMituyo) > context beep
+'󰀳󰀂' + any(󰀂_󰀳_InvalidMituyo) > context beep
+'󰀺󰀂' + any(󰀂_󰀺_InvalidMituyo) > context beep
+'󰀤󰀃' + any(󰀃_󰀤_InvalidMituyo) > context beep
+'󰀦󰀃' + any(󰀃_󰀦_InvalidMituyo) > context beep
+'󰀪󰀃' + any(󰀃_󰀪_InvalidMituyo) > context beep
+'󰀮󰀃' + any(󰀃_󰀮_InvalidMituyo) > context beep
+'󰀃󰀯' + any(󰀃__InvalidMituyo) > context beep
+'󰀤󰀄' + any(󰀄_󰀤_InvalidMituyo) > context beep
+'󰀦󰀄' + any(󰀄_󰀦_InvalidMituyo) > context beep
+'󰀄󰀭' + any(󰀄__InvalidMituyo) > context beep
+'󰀤󰀅' + any(󰀅_󰀤_InvalidMituyo) > context beep
+'󰀦󰀅' + any(󰀅_󰀦_InvalidMituyo) > context beep
+'󰀪󰀅' + any(󰀅_󰀪_InvalidMituyo) > context beep
+'󰀮󰀅' + any(󰀅_󰀮_InvalidMituyo) > context beep
+'󰀅󰀯' + any(󰀅__InvalidMituyo) > context beep
+'󰀮󰀆' + any(󰀆_󰀮_InvalidMituyo) > context beep
+'󰀤󰀇' + any(󰀇_󰀤_InvalidMituyo) > context beep
+'󰀮󰀇' + any(󰀇_󰀮_InvalidMituyo) > context beep
+'󰀤󰀈' + any(󰀈_󰀤_InvalidMituyo) > context beep
+'󰀦󰀈' + any(󰀈_󰀦_InvalidMituyo) > context beep
+'󰀮󰀈' + any(󰀈_󰀮_InvalidMituyo) > context beep
+'󰀈󰀯' + any(󰀈__InvalidMituyo) > context beep
+'󰀤󰀉' + any(󰀉_󰀤_InvalidMituyo) > context beep
+'󰀦󰀉' + any(󰀉_󰀦_InvalidMituyo) > context beep
+'󰀤󰀊' + any(󰀊_󰀤_InvalidMituyo) > context beep
+'󰀦󰀊' + any(󰀊_󰀦_InvalidMituyo) > context beep
+'󰀧󰀊' + any(󰀊_󰀧_InvalidMituyo) > context beep
+'󰀪󰀊' + any(󰀊_󰀪_InvalidMituyo) > context beep
+'󰀮󰀊' + any(󰀊_󰀮_InvalidMituyo) > context beep
+'󰀊󰀯' + any(󰀊__InvalidMituyo) > context beep
+'󰀰󰀊' + any(󰀊_󰀰_InvalidMituyo) > context beep
+'󰀳󰀊' + any(󰀊_󰀳_InvalidMituyo) > context beep
+'󰀺󰀊' + any(󰀊_󰀺_InvalidMituyo) > context beep
+'󰀾󰀊' + any(󰀊_󰀾_InvalidMituyo) > context beep
+'󰀱󰀊' + any(󰀊_󰀱_InvalidMituyo) > context beep
+'󰀤󰀋' + any(󰀋_󰀤_InvalidMituyo) > context beep
+'󰀤󰀌' + any(󰀌_󰀤_InvalidMituyo) > context beep
+'󰀮󰀌' + any(󰀌_󰀮_InvalidMituyo) > context beep
+'󰀤󰀍' + any(󰀍_󰀤_InvalidMituyo) > context beep
+'󰀮󰀍' + any(󰀍_󰀮_InvalidMituyo) > context beep
+'󰀤󰀎' + any(󰀎_󰀤_InvalidMituyo) > context beep
+'󰀮󰀎' + any(󰀎_󰀮_InvalidMituyo) > context beep
+'󰀤󰀏' + any(󰀏_󰀤_InvalidMituyo) > context beep
+'󰀥󰀏' + any(󰀏_󰀥_InvalidMituyo) > context beep
+'󰀧󰀏' + any(󰀏_󰀧_InvalidMituyo) > context beep
+'󰀸󰀏' + any(󰀏_󰀸_InvalidMituyo) > context beep
+'󰀷󰀏' + any(󰀏_󰀷_InvalidMituyo) > context beep
+'󰀤󰀐' + any(󰀐_󰀤_InvalidMituyo) > context beep
+'󰀤󰀑' + any(󰀑_󰀤_InvalidMituyo) > context beep
+'󰀦󰀑' + any(󰀑_󰀦_InvalidMituyo) > context beep
+'󰀮󰀑' + any(󰀑_󰀮_InvalidMituyo) > context beep
+'󰀑󰀯' + any(󰀑__InvalidMituyo) > context beep
+'󰀤󰀒' + any(󰀒_󰀤_InvalidMituyo) > context beep
+'󰀦󰀒' + any(󰀒_󰀦_InvalidMituyo) > context beep
+'󰀮󰀒' + any(󰀒_󰀮_InvalidMituyo) > context beep
+'󰀤󰀓' + any(󰀓_󰀤_InvalidMituyo) > context beep
+'󰀦󰀓' + any(󰀓_󰀦_InvalidMituyo) > context beep
+'󰀧󰀓' + any(󰀓_󰀧_InvalidMituyo) > context beep
+'󰀮󰀓' + any(󰀓_󰀮_InvalidMituyo) > context beep
+'󰀓󰀯' + any(󰀓__InvalidMituyo) > context beep
+'󰀰󰀓' + any(󰀓_󰀰_InvalidMituyo) > context beep
+'󰀺󰀓' + any(󰀓_󰀺_InvalidMituyo) > context beep
+'󰀾󰀓' + any(󰀓_󰀾_InvalidMituyo) > context beep
+'󰀱󰀓' + any(󰀓_󰀱_InvalidMituyo) > context beep
+'󰀤󰀔' + any(󰀔_󰀤_InvalidMituyo) > context beep
+'󰀦󰀔' + any(󰀔_󰀦_InvalidMituyo) > context beep
+'󰀧󰀔' + any(󰀔_󰀧_InvalidMituyo) > context beep
+'󰀔󰀯' + any(󰀔__InvalidMituyo) > context beep
+'󰀺󰀔' + any(󰀔_󰀺_InvalidMituyo) > context beep
+'󰀤󰀕' + any(󰀕_󰀤_InvalidMituyo) > context beep
+'󰀤󰀖' + any(󰀖_󰀤_InvalidMituyo) > context beep
+'󰀦󰀖' + any(󰀖_󰀦_InvalidMituyo) > context beep
+'󰀖󰀭' + any(󰀖__InvalidMituyo) > context beep
+'󰀮󰀖' + any(󰀖_󰀮_InvalidMituyo) > context beep
+'󰀖󰀯' + any(󰀖__InvalidMituyo) > context beep
+'󰀮󰀘' + any(󰀘_󰀮_InvalidMituyo) > context beep
+'󰀤󰀙' + any(󰀙_󰀤_InvalidMituyo) > context beep
+'󰀦󰀙' + any(󰀙_󰀦_InvalidMituyo) > context beep
+'󰀪󰀙' + any(󰀙_󰀪_InvalidMituyo) > context beep
+'󰀙󰀭' + any(󰀙__InvalidMituyo) > context beep
+'󰀮󰀙' + any(󰀙_󰀮_InvalidMituyo) > context beep
+'󰀙󰀯' + any(󰀙__InvalidMituyo) > context beep
+'󰀤󰀚' + any(󰀚_󰀤_InvalidMituyo) > context beep
+'󰀦󰀚' + any(󰀚_󰀦_InvalidMituyo) > context beep
+'󰀚󰀯' + any(󰀚__InvalidMituyo) > context beep
+'󰀤󰀛' + any(󰀛_󰀤_InvalidMituyo) > context beep
+'󰀦󰀛' + any(󰀛_󰀦_InvalidMituyo) > context beep
+'󰀛󰀯' + any(󰀛__InvalidMituyo) > context beep
+'󰀤󰀜' + any(󰀜_󰀤_InvalidMituyo) > context beep
+'󰀦󰀜' + any(󰀜_󰀦_InvalidMituyo) > context beep
+'󰀤󰀝' + any(󰀝_󰀤_InvalidMituyo) > context beep
+'󰀦󰀝' + any(󰀝_󰀦_InvalidMituyo) > context beep
+'󰀝󰀯' + any(󰀝__InvalidMituyo) > context beep
+'󰀤󰀞' + any(󰀞_󰀤_InvalidMituyo) > context beep
+'󰀦󰀞' + any(󰀞_󰀦_InvalidMituyo) > context beep
+'󰀞󰀯' + any(󰀞__InvalidMituyo) > context beep
+'󰀦󰀟' + any(󰀟_󰀦_InvalidMituyo) > context beep
+'󰀟󰀭' + any(󰀟__InvalidMituyo) > context beep
+
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c  Lone Vowels:
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c
++ any(ShortE) > '󰀀󰀠'
++ any(ShortI) > '󰀀󰀡'
++ any(ShortO) > '󰀀󰀢'
++ any(ShortU) > '󰀀󰀣'
+
+
+c
+c  These next two rules will change when the fonts are updated to present the visual order:
+c
+any(OrdersConsonants) + any(MutuyoRegularNumberKeys)   >  index(MutuyoRegular,2) context
+any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2) 
+
+c any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,2) context(1) context(2)
+c any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context(1) context(2) index(MutuyoCombining,2)
+
+any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,3) context
+any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,3)
+
+c any(MwangwegoSyllables) + any(MutuyoRegularNumberKeys)     >  index(MutuyoRegular,2) context
+c any(MwangwegoSyllables) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2) 
+
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c Mituyo Composition Rules
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c
+c Mituyo in Myu 
+'󰀤' any(MwangwegoSyllables) + '3' > '󰀰' context(2)
+'󰀰' any(MwangwegoSyllables) + '4' > '󰀱' context(2)
+'󰀱' any(MwangwegoSyllables) + '5' > '󰀲' context(2)
+'󰀤' any(MwangwegoSyllables) + '4' > '󰀳' context(2)
+'󰀳' any(MwangwegoSyllables) + '5' > '󰀴' context(2)
+'󰀤' any(MwangwegoSyllables) + '5' > '󰀵' context(2)
+
+c Mituyo in Mi
+'󰀥' any(MwangwegoSyllables) + '4' > '󰀷' context(2)
+'󰀷' any(MwangwegoSyllables) + '5' > '󰀸' context(2)
+'󰀥' any(MwangwegoSyllables) + '5' > '󰀹' context(2)
+
+c Mituyo in Ni
+'󰀦' any(MwangwegoSyllables) + '4' > '󰀺' context(2)
+'󰀺' any(MwangwegoSyllables) + '5' > '󰀻' context(2)
+'󰀦' any(MwangwegoSyllables) + '5' > '󰀼' context(2)
+
+c Mituyo in Hi
+'󰀧' any(MwangwegoSyllables) + '5' > '󰀽' context(2)
+
+c Mituyo in Sisa
+'󰀪' any(MwangwegoSyllables) + '3' > '󰀾' context(2) 
+'󰀾' any(MwangwegoSyllables) + '4' > '󰀿' context(2) 
+
+c Mituyo in Tumba
+'󰀮' any(MwangwegoSyllables) + '5' > '' context(2)
+
+c Mituyo in Pewa
+any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
+
+c
+any(Mutuyo) + any(MutuyoKeys) > context  index(Mutuyo,1)
+
+
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c Mituyo Backspace Rules
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c
+
+any(Mituyo) any(OrdersConsonants) any(Masiri) + [K_BKSP] > nul
+any(Mituyo) any(OrdersConsonants) any(MutuyoCombining) any(Masiri) + [K_BKSP] > nul
+any(Mituyo) any(OrdersConsonants) any(MutuyoCombining) + [K_BKSP] > nul
+any(Mituyo) any(OrdersConsonants) + [K_BKSP] > nul
+c
+any(MutuyoRegular) any(OrdersConsonants) any(Masiri) + [K_BKSP] > nul
+any(MutuyoRegular) any(OrdersConsonants) any(MutuyoCombining) any(Masiri) + [K_BKSP] > nul
+any(MutuyoRegular) any(OrdersConsonants) any(MutuyoCombining) + [K_BKSP] > nul
+any(MutuyoRegular) any(OrdersConsonants) + [K_BKSP] > nul
+c
+any(OrdersConsonants) any(MutuyoCombining)  any(Masiri) + [K_BKSP] > nul
+any(OrdersConsonants) any(MutuyoCombining) + [K_BKSP] > nul
+any(OrdersConsonants) any(Masiri) + [K_BKSP] > nul
+
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c Literal Numeral Input
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c
+
++ [RALT K_1] > '1'
++ [RALT K_2] > '2'
++ [RALT K_3] > '3'
++ [RALT K_4] > '4'
++ [RALT K_5] > '5'
++ [RALT K_6] > '6'
++ [RALT K_7] > '7'
++ [RALT K_8] > '8'
++ [RALT K_9] > '9'
++ [RALT K_0] > '0'
++ [RALT K_HYPHEN] > '-'
++ [RALT K_EQUALS] > '='
