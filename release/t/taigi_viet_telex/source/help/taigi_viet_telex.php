@@ -8,18 +8,18 @@
     Taigi Viet Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī. 台語越式telex 會當拍台語白話字
 </p>
 <p>
-Taigi Viet Telex version, is using "sfjxv" keys for generating tone marks 
+  Taigi Viet Telex version, is using "sfrjw" keys for generating tone marks 
 </p>
 <p>
-    台語越式telex版本，佇咧元音字母後爿抑是佇咧每一個音節後爿添字母‘s’ ‘f’ ‘w’ ‘j’佮‘v’ 去生成音調 
+    台語越式telex版本，佇咧元音字母後爿抑是佇咧每一個音節後爿添字母‘s’ ‘f’ ‘r’ ‘j’佮‘w’ 去生成音調 
 </p>
 <p>
    佮數字音調表示方法ê相應規則 rules: </p>
-    <p> 2=s, 3=f, 5=w, 7=x, 8=x, 9=v</p>
+    <p> 2=s, 3=f, 5=r, 7=j, 8=j, 9=w</p>
   <p> 例 examples: </p>
-    <p> as > á, af= > à, aj > ā, aw > â, ahj > a̍h, av > ă</p>
+    <p> as > á, af= > à, ar > â, aj > ā, ahj > a̍h, aw > ă</p>
   <p>  shortcut: </p>
-    <p> aa > â, ee > ê, uu > û, ii > î, x > chh</p>
+    <p> aa > â, ee > ê, uu > û, ii > î, x > chh, x > ⁿ</p>
    <p> 特別ê字母specific letters: </p>
     <p> nn > ⁿ , oo > o͘</p>
   <p>  拍兩次字母，取消音調，產生原本ê字母 doubletaping leads to generate original letters: </p>
@@ -38,4 +38,4 @@ Taigi Viet Telex version, is using "sfjxv" keys for generating tone marks
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
-<p>© 2024 cathaylab</p>
+<p>© cathaylab</p>
