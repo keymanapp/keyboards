@@ -1,8 +1,8 @@
-﻿c taichow keyboard for romanized goetian T'e-ciu-'wa Ng-Yüih-Nyü
+﻿c taichow keyboard for romanized goetian Ng-Yüih-Nyü
 store(&VERSION) '10.0'
 store(&NAME) 'taichow'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'taichow.ico'
 store(&VISUALKEYBOARD) 'taichow.kvks'
@@ -23,7 +23,7 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 
 
 
-    c Single-vowel nuclei accent rules - Upper and Lowercase
+    c Single-vowel nuclei accent qules - Upper and Lowercase
     any(vowels) + 'q' > index(vowels_sac, 1)
     any(vowels) + 'Q' > index(vowels_sac, 1)
     any(vowels) + 'x' > index(vowels_huyen, 1)
@@ -63,6 +63,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'o' + 'n' > 'ön'
 'z' + 'q' > 'ź'
 'z' + 'x' > 'z̀'
+'y' + 'q' > 'ý'
+'y' + 'x' > 'ỳ'
 'ng' + 'q' > 'nǵ'
 'ng' + 'x' > 'ng̀'
 'n' + 'q' > 'ń'
@@ -92,6 +94,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'O' + 'N' > 'ÖN'
 'Z' + 'Q' > 'Ź'
 'Z' + 'X' > 'Z̀'
+'Y' + 'Q' > 'Ý'
+'Y' + 'X' > 'Ỳ'
 'NG' + 'Q' > 'NǴ'
 'NG' + 'X' > 'NG̀'
 'N' + 'Q' > 'Ń'
@@ -120,6 +124,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'O' + 'n' > 'Ön'
 'Z' + 'q' > 'Ź'
 'Z' + 'x' > 'Z̀'
+'Y' + 'q' > 'Ý'
+'Y' + 'x' > 'Ỳ'
 'NG' + 'q' > 'NǴ'
 'NG' + 'x' > 'NG̀'
 'N' + 'q' > 'Ń'
@@ -149,6 +155,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'ô' + 'o' > 'oo'
 'ź' + 'q' > 'zq'
 'z̀' + 'x' > 'zx'
+'ý' + 'q' > 'yq'
+'ỳ' + 'x' > 'yx'
 'nǵ' + 'q' > 'ngq'
 'ng̀' + 'x' > 'ngx'
 'ń' + 'q' > 'nq'
@@ -169,6 +177,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ô' + 'O' > 'OO'
 'Ź' + 'Q' > 'ZQ'
 'Z̀' + 'X' > 'ZX'
+'Ý' + 'Q' > 'YQ'
+'Ỳ' + 'X' > 'YX'
 'NǴ' + 'Q' > 'NGQ'
 'NG̀' + 'X' > 'NGX'
 'Ń' + 'Q' > 'NQ'
@@ -189,6 +199,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ô' + 'o' > 'Oo'
 'Ź' + 'q' > 'Zq'
 'Z̀' + 'x' > 'Zx'
+'Ý' + 'q' > 'Yq'
+'Ỳ' + 'x' > 'Yx'
 'NǴ' + 'q' > 'NGq'
 'NG̀' + 'x' > 'NGx'
 'Ń' + 'q' > 'Nq'
@@ -284,8 +296,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "T" + "t" > "Tʽ"
 "K" + "k" > "Kʽ"
 "Ts" + "s" > "Tsʽ"
-"Kw" + "w" > "kwʽ"
-"Ky" + "y" > "kyʽ"
+"Kw" + "w" > "Kwʽ"
+"Ky" + "y" > "Kyʽ"
 "C" + "c" > "Cʽ"
 
 "pʽ" + "p" > "pp"
@@ -315,7 +327,6 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 
 
 "ui" + "h" > "üih"
-"u" + "o" > "üo"
 "uin" + "g" > "üing"
 "uön" + "g" > "üong"
 "wön" + "g" > "wông"
@@ -326,7 +337,6 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "uh" + "u" > "üh"
 
 "UI" + "H" > "ÜIH"
-"U" + "O" > "ÜO"
 "UIN" + "G" > "ÜING"
 "UÖN" + "G" > "ÜONG"
 "WÖN" + "G" > "WÔNG"
@@ -337,7 +347,6 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "UH" + "U" > "ÜH"
 
 "Ui" + "h" > "Üih"
-"U" + "o" > "Üo"
 "Uin" + "g" > "Üing"
 "Uön" + "g" > "Üong"
 "Wön" + "g" > "Wông"
@@ -438,42 +447,73 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "Ŭ" + "w" > "Uw"
 
 
-'m' + 'm' > 'm̌'
-'n' + 'n' > 'ň'
-'ng' + 'g' > 'ňg'
+'m' + 'm' > 'm̆'
+'n' + 'n' > 'n̆'
+'ng' + 'g' > 'n̆g'
 'l' + 'l' > 'l̆'
 'w' + 'w' > 'w̆'
 
 'M' + 'M' > 'M̌'
-'N' + 'N' > 'Ň'
-'NG' + 'G' > 'ŇG'
+'N' + 'N' > 'N̆'
+'NG' + 'G' > 'N̆G'
 'L' + 'L' > 'L̆'
 'W' + 'W' > 'W̆'
 
 'M' + 'm' > 'M̌'
-'N' + 'n' > 'Ň'
-'NG' + 'g' > 'ŇG'
+'N' + 'n' > 'N̆'
+'NG' + 'g' > 'N̆G'
 'L' + 'l' > 'L̆'
 'W' + 'w' > 'W̆'
 
 
 'm̌' + 'm' > 'mm'
-'ň' + 'n' > 'nn'
-'ňg' + 'g' > 'ngg'
+'n̆' + 'n' > 'nn'
+'n̆g' + 'g' > 'ngg'
 'l̆' + 'l' > 'll'
 'w̆' + 'w' > 'ww'
 
 'M̌' + 'M' > 'MM'
 'Ň' + 'N' > 'NN'
-'ŇG' + 'G' > 'NGG'
+'N̆G' + 'G' > 'NGG'
 'L̆' + 'L' > 'LL'
 'W̆' + 'W' > 'WW'
 
 'M̌' + 'm' > 'Mm'
-'Ň' + 'n' > 'Nn'
-'ŇG' + 'g' > 'NGg'
+'N̆' + 'n' > 'Nn'
+'N̆G' + 'g' > 'NGg'
 'L̆' + 'l' > 'Ll'
 'W̆' + 'w' > 'Ww'
+
+'m' + 'h' > 'm̆'
+'n' + 'h' > 'n̆'
+'ng' + 'h' > 'n̆g'
+'l' + 'h' > 'l̆'
+
+'M' + 'H' > 'M̆'
+'N' + 'H' > 'N̆'
+'NG' + 'H' > 'N̆G'
+'L' + 'H' > 'L̆'
+
+'M' + 'h' > 'M̆'
+'N' + 'h' > 'N̆'
+'NG' + 'h' > 'N̆G'
+'L' + 'h' > 'L̆'
+
+'m̆' + 'h' > 'mh'
+'n̆' + 'h' > 'nh'
+'n̆g' + 'h' > 'ngh'
+'l̆' + 'h' > 'lh'
+
+'M̆' + 'H' > 'MH'
+'N̆' + 'H' > 'NH'
+'N̆G' + 'H' > 'NGH'
+'L̆' + 'H' > 'LH'
+
+'M̆' + 'h' > 'Mh'
+'N̆' + 'h' > 'Nh'
+'N̆G' + 'h' > 'NGh'
+'L̆' + 'h' > 'Lh'
+
 
 "ah" + "e" > "æh"
 "AH" + "E" > "ÆH"
@@ -498,7 +538,9 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'ố' + 'x' > 'ồ'
 'ồ' + 'q' > 'ố'
 'ź' + 'x' > 'z̀'
-'z̀' + 'q' > 'z̀'
+'z̀' + 'q' > 'ź'
+'ý' + 'x' > 'ỳ'
+'ỳ' + 'q' > 'ý'
 'ń' + 'x' > 'ǹ'
 'ǹ' + 'q' > 'ń'
 'ḿ' + 'x' > 'm̀'
@@ -513,7 +555,9 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ố' + 'X' > 'Ồ'
 'Ồ' + 'Q' > 'Ố'
 'Ź' + 'X' > 'Z̀'
-'Z̀' + 'Q' > 'Z̀'
+'Z̀' + 'Q' > 'Ź'
+'Ý' + 'X' > 'Ỳ'
+'Ỳ' + 'Q' > 'Ý'
 'Ń' + 'X' > 'Ǹ'
 'Ǹ' + 'Q' > 'Ń'
 'Ḿ' + 'X' > 'M̀'
@@ -529,6 +573,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ồ' + 'q' > 'Ố'
 'Ź' + 'x' > 'Z̀'
 'Z̀' + 'q' > 'Z̀'
+'Ý' + 'x' > 'Ỳ'
+'Ỳ' + 'q' > 'Ý'
 'Ń' + 'x' > 'Ǹ'
 'Ǹ' + 'q' > 'Ń'
 'Ḿ' + 'x' > 'M̀'
@@ -567,7 +613,6 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'j' + 'u' > 'jü'
 'dj' + 'u' > 'djü'
 'ny' + 'u' > 'nyü'
-'yu' + 'n' > 'yün'
 'ky' + 'u' > 'kyü'
 'kyʽ' + 'u' > 'kyʽü'
 'gy' + 'u' > 'gyü'
@@ -579,7 +624,6 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'jü' + 'u' > 'ju'
 'djü' + 'u' > 'dju'
 'nyü' + 'u' > 'nyu'
-'yün' + 'n' > 'yun'
 'kyü' + 'u' > 'kyu'
 'kyʽü' + 'u' > 'kyʽu'
 'gyü' + 'u' > 'gyu'
@@ -591,7 +635,6 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'J' + 'u' > 'Jü'
 'Dj' + 'u' > 'Djü'
 'Ny' + 'u' > 'Nyü'
-'Yu' + 'n' > 'Yün'
 'Ky' + 'u' > 'Kyü'
 'Kyʽ' + 'u' > 'Kyʽü'
 'Gy' + 'u' > 'Gyü'
@@ -603,11 +646,40 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Jü' + 'u' > 'Ju'
 'Djü' + 'u' > 'Dju'
 'Nyü' + 'u' > 'Nyu'
-'Yün' + 'n' > 'Yun'
 'Kyü' + 'u' > 'Kyu'
 'Kyʽü' + 'u' > 'Kyʽu'
 'Gyü' + 'u' > 'Gyu'
 'Hyü' + 'u' > 'Hyu'
+
+'y' + 'u' > 'yü'
+'Y' + 'u' > 'Yü'
+'yü' + 'u' > 'yu'
+'Yü' + 'u' > 'Yu'
+
+'u' + 'a' > 'w̆a'
+'u' + 'e' > 'w̆e'
+'uo' + 'o' > 'w̆ô'
+'U' + 'a' > 'W̆a'
+'U' + 'e' > 'W̆e'
+'Uo' + 'o' > 'W̆ô'
+'U' + 'A' > 'W̆A'
+'U' + 'E' > 'W̆E'
+'UO' + 'O' > 'W̆Ô'
+'w̆a' + 'a' > 'ua'
+'w̆e' + 'e' > 'ue'
+'w̆ô' + 'o' > 'uoo'
+'W̆a' + 'a' > 'Ua'
+'W̆e' + 'e' > 'Ue'
+'W̆ô' + 'o' > 'Uoo'
+'W̆A' + 'A' > 'UA'
+'W̆E' + 'E' > 'UE'
+'W̆Ô' + 'O' > 'UOO'
+
+'ao' + 'n' > 'ông'
+'Ao' + 'n' > 'Ông'
+'ông' + 'n' > 'aon'
+'Ông' + 'n' > 'Aon'
+
 
 + [K_QUOTE] > '‘'
 + [SHIFT K_QUOTE] > '“'
@@ -747,6 +819,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "l̆" + [K_QUOTE] > "l̆’"
 "ź" + [K_QUOTE] > "ź’"
 "z̀" + [K_QUOTE] > "z̀’"
+"ý" + [K_QUOTE] > "ý’"
+"ỳ" + [K_QUOTE] > "ỳ’"
 
 "Æ" + [K_QUOTE] > "Æ’"
 "Ǽ" + [K_QUOTE] > "Ǽ’"
@@ -772,6 +846,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "L̆" + [K_QUOTE] > "L̆’"
 "Ź" + [K_QUOTE] > "Ź’"
 "Z̀" + [K_QUOTE] > "Z̀’"
+"Ý" + [K_QUOTE] > "Ý’"
+"Ỳ" + [K_QUOTE] > "Ỳ’"
 
 "æ" + [SHIFT K_QUOTE] > "æ”"
 "ǽ" + [SHIFT K_QUOTE] > "ǽ”"
@@ -797,6 +873,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "l̆" + [SHIFT K_QUOTE] > "l̆”"
 "ź" + [SHIFT K_QUOTE] > "ź”"
 "z̀" + [SHIFT K_QUOTE] > "z̀”"
+"ý" + [SHIFT K_QUOTE] > "ý”"
+"ỳ" + [SHIFT K_QUOTE] > "ỳ”"
 
 "Æ" + [SHIFT K_QUOTE] > "Æ”"
 "Ǽ" + [SHIFT K_QUOTE] > "Ǽ”"
@@ -822,6 +900,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "L̆" + [SHIFT K_QUOTE] > "L̆”"
 "Ź" + [SHIFT K_QUOTE] > "Ź”"
 "Z̀" + [SHIFT K_QUOTE] > "Z̀”"
+"Ý" + [SHIFT K_QUOTE] > "Ý”"
+"Ỳ" + [SHIFT K_QUOTE] > "Ỳ”"
 
 "á" + [K_QUOTE] > "á’"
 "à" + [K_QUOTE] > "à’"
@@ -919,3 +999,34 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "Ố" + [SHIFT K_QUOTE] > "Ố”"
 "Ồ" + [SHIFT K_QUOTE] > "Ồ”"
 "W̆" + [SHIFT K_QUOTE] > "W̆”"
+
+'n' + 'i' > 'nyi'
+'N' + 'i' > 'Nyi'
+'nyi' + 'i' > 'ni'
+'Nyi' + 'i' > 'Ni'
+
+'k' + 'i' > 'kyi'
+'K' + 'i' > 'Kyi'
+'kyi' + 'i' > 'ki'
+'Kyi' + 'i' > 'Ki'
+
+'g' + 'i' > 'gyi'
+'G' + 'i' > 'Gyi'
+'gyi' + 'i' > 'gi'
+'Gyi' + 'i' > 'Gi'
+
+'kʽ' + 'i' > 'kyʽi'
+'Kʽ' + 'i' > 'Kyʽi'
+
+'h' + 'i' > 'hyi'
+'H' + 'i' > 'Hyi'
+'hyi' + 'i' > 'hi'
+'Hyi' + 'i' > 'Hi'
+
+'y' + 'a' > 'yia'
+'Y' + 'a' > 'Yia'
+'yia' + 'a' > 'ya'
+'Yia' + 'a' > 'Ya'
+
+'ön' + 'e' > 'one'
+'Ön' + 'e' > 'One'

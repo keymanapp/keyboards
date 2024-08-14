@@ -3,7 +3,7 @@ taichow keyboard
 
 Description
 -----------
-taichow keyboard for romanized goetian T'e-ciu-'wa
+taichow keyboard for romanized goetian Ng-Yüih-Nyü 台州寧波蘇州吳越語羅馬字輸入法
 
 Links
 -----
