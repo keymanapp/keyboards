@@ -15,18 +15,16 @@
 
 <p>Di tablet/smartphone: huruf ö dan ŵ telah tersedia di keyboard.</p>
 
-<h2>Links</h2>
-
-<p>Download: <a href="https://keyman.com/keyboards/nias">keyman.com/keyboards/nias</a></p>
-
-<p>Source code: <a href="https://github.com/sslaia/keyboards">https://github.com/sslaia/keyboards</a> (under release/n/nias)</p>
-
-<p>© 2021 Sirus Laia</p>
-
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift numeric symbol'>
+<div id='osk' data-states='default shift rightctrl rightctrl-shift'>
 </div>
 
-<h2>Mobile/Tablet Keyboard Layout</h2>
+<h2>Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift numeric symbol'>
 </div>
+
+<h2>Phone Keyboard Layout</h2>
+<div id='osk-phone' data-states='default shift numeric symbol'>
+</div>
+
+<p>© Sirus Laia</p>
