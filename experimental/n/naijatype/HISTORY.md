@@ -1,7 +1,7 @@
 Naija Type Keyboard Change History
 =======================
 
-62 (2023-Aug-13)
+62 (2024-Aug-13)
 ---------
 * Corrected the New line indent for Description element
 
