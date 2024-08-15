@@ -249,39 +249,7 @@ c Block Composition of Invalid Mituyo Stack
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c
 
-'󰀀' + any(󰀀_InvalidMituyo) > context beep
-'󰀁' + any(󰀁_InvalidMituyo) > context beep
-'󰀂' + any(󰀂_InvalidMituyo) > context beep
-'󰀃' + any(󰀃_InvalidMituyo) > context beep
-'󰀄' + any(󰀄_InvalidMituyo) > context beep
-'󰀅' + any(󰀅_InvalidMituyo) > context beep
-'󰀆' + any(󰀆_InvalidMituyo) > context beep
-'󰀇' + any(󰀇_InvalidMituyo) > context beep
-'󰀈' + any(󰀈_InvalidMituyo) > context beep
-'󰀉' + any(󰀉_InvalidMituyo) > context beep
-'󰀊' + any(󰀊_InvalidMituyo) > context beep
-'󰀋' + any(󰀋_InvalidMituyo) > context beep
-'󰀌' + any(󰀌_InvalidMituyo) > context beep
-'󰀍' + any(󰀍_InvalidMituyo) > context beep
-'󰀎' + any(󰀎_InvalidMituyo) > context beep
-'󰀏' + any(󰀏_InvalidMituyo) > context beep
-'󰀐' + any(󰀐_InvalidMituyo) > context beep
-'󰀑' + any(󰀑_InvalidMituyo) > context beep
-'󰀒' + any(󰀒_InvalidMituyo) > context beep
-'󰀓' + any(󰀓_InvalidMituyo) > context beep
-'󰀔' + any(󰀔_InvalidMituyo) > context beep
-'󰀕' + any(󰀕_InvalidMituyo) > context beep
-'󰀖' + any(󰀖_InvalidMituyo) > context beep
-'󰀗' + any(󰀗_InvalidMituyo) > context beep
-'󰀘' + any(󰀘_InvalidMituyo) > context beep
-'󰀙' + any(󰀙_InvalidMituyo) > context beep
-'󰀚' + any(󰀚_InvalidMituyo) > context beep
-'󰀛' + any(󰀛_InvalidMituyo) > context beep
-'󰀜' + any(󰀜_InvalidMituyo) > context beep
-'󰀝' + any(󰀝_InvalidMituyo) > context beep
-'󰀞' + any(󰀞_InvalidMituyo) > context beep
-'󰀟' + any(󰀟_InvalidMituyo) > context beep
-'󰀦󰀀' + any(󰀀_󰀦_InvalidMituyo) > context beep
+'󰀦󰀀' + any(󰀀_󰀦_InvalidMituyo) > context "Z" beep
 '󰀮󰀀' + any(󰀀_󰀮_InvalidMituyo) > context beep
 '󰀤󰀁' + any(󰀁_󰀤_InvalidMituyo) > context beep
 '󰀥󰀁' + any(󰀁_󰀥_InvalidMituyo) > context beep
@@ -389,6 +357,38 @@ c
 '󰀞󰀯' + any(󰀞__InvalidMituyo) > context beep
 '󰀦󰀟' + any(󰀟_󰀦_InvalidMituyo) > context beep
 '󰀟󰀭' + any(󰀟__InvalidMituyo) > context beep
+'󰀀' + any(󰀀_InvalidMituyo) > context beep
+'󰀁' + any(󰀁_InvalidMituyo) > context beep
+'󰀂' + any(󰀂_InvalidMituyo) > context beep
+'󰀃' + any(󰀃_InvalidMituyo) > context beep
+'󰀄' + any(󰀄_InvalidMituyo) > context beep
+'󰀅' + any(󰀅_InvalidMituyo) > context beep
+'󰀆' + any(󰀆_InvalidMituyo) > context beep
+'󰀇' + any(󰀇_InvalidMituyo) > context beep
+'󰀈' + any(󰀈_InvalidMituyo) > context beep
+'󰀉' + any(󰀉_InvalidMituyo) > context beep
+'󰀊' + any(󰀊_InvalidMituyo) > context beep
+'󰀋' + any(󰀋_InvalidMituyo) > context beep
+'󰀌' + any(󰀌_InvalidMituyo) > context beep
+'󰀍' + any(󰀍_InvalidMituyo) > context beep
+'󰀎' + any(󰀎_InvalidMituyo) > context beep
+'󰀏' + any(󰀏_InvalidMituyo) > context beep
+'󰀐' + any(󰀐_InvalidMituyo) > context beep
+'󰀑' + any(󰀑_InvalidMituyo) > context beep
+'󰀒' + any(󰀒_InvalidMituyo) > context beep
+'󰀓' + any(󰀓_InvalidMituyo) > context beep
+'󰀔' + any(󰀔_InvalidMituyo) > context beep
+'󰀕' + any(󰀕_InvalidMituyo) > context beep
+'󰀖' + any(󰀖_InvalidMituyo) > context beep
+'󰀗' + any(󰀗_InvalidMituyo) > context beep
+'󰀘' + any(󰀘_InvalidMituyo) > context beep
+'󰀙' + any(󰀙_InvalidMituyo) > context beep
+'󰀚' + any(󰀚_InvalidMituyo) > context beep
+'󰀛' + any(󰀛_InvalidMituyo) > context beep
+'󰀜' + any(󰀜_InvalidMituyo) > context beep
+'󰀝' + any(󰀝_InvalidMituyo) > context beep
+'󰀞' + any(󰀞_InvalidMituyo) > context beep
+'󰀟' + any(󰀟_InvalidMituyo) > context beep
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c  Lone Vowels:
@@ -404,13 +404,13 @@ c
 c  These next two rules will change when the fonts are updated to present the visual order:
 c
 any(OrdersConsonants) + any(MutuyoRegularNumberKeys)   >  index(MutuyoRegular,2) context
-any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2) 
-
+any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2)  "B"
+'󰀦󰀀'  + '6' > "yes"
 c any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,2) context(1) context(2)
 c any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context(1) context(2) index(MutuyoCombining,2)
 
-any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,3) context
-any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,3)
+any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,3) context "C"
+any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,3) "D"
 
 c any(MwangwegoSyllables) + any(MutuyoRegularNumberKeys)     >  index(MutuyoRegular,2) context
 c any(MwangwegoSyllables) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2) 
