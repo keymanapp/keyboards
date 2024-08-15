@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using wenchow</title>
-  <style type="text/css">
-    p { font: 16pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 16pt Tahoma; color: #4444cc; }
-  </style>
-</head>
-<body>
+<?php 
+  $pagename = 'taichow Keyboard Help';
+  $pagetitle = $pagename;
+  // Header we will tidy up later  
+  require_once('header.php');
 
-<h1>Start Using taichow開始使用台州蘇州寧波吳越語羅馬字輸入法</h1>
+
+?>
 
 <p>
-    taichow keyboard for romanized goetian Ng-Yüih-Nyü
-</p>
-<p>
-    台州蘇州寧波吳越語羅馬字輸入法
+    taichow keyboard for romanized goetian Ng-Yüih-Nyü.台州蘇州寧波吳越語羅馬字輸入法
 </p>
 <p> typing specific letters by doubletapping and combination 雙擊咾字母組合輸入特殊字母</p>
 <p> examples: oo > ô, oe > ö, uu > ü, ae > æ, aw > ă, aa > ă, uw > ŭ </p>
@@ -65,5 +56,3 @@
 
 <p>© 2024 cathaylab</p>
 
-</body>
-</html>

@@ -8,11 +8,14 @@
 ?>
 
 <p>
-    foochow for east-hokkienese hók-ciŭ-uâ.
+    foochow for east-hokkienese hók-ciŭ-uâ.福州話閩東語羅馬字輸入法
 </p>
-specific letters: aa = a̤, oo = o̤, uu = ṳ,ee = e̤, euu = e̤ṳ, enge= e̤ng,ungu = ṳng, eungu = e̤ṳng
 <p>
-tones: as = á, af = à, aw = ă, ar = ā, aj = â
+    foochow keyboard is using "sfwrj" keys for generating tones
+</p>
+specific letters: aa > a̤, oo > o̤, uu > ṳ, ee > e̤, euu > e̤ṳ, enge > e̤ng,ungu > ṳng, eungu > e̤ṳng
+<p>
+tones: as > á, af > à, aw > ă, ar > ā, aj > â, ahj > ăh
 </P>
 <!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
 
