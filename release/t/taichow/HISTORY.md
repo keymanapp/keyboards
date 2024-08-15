@@ -1,5 +1,9 @@
 taichow Change History
 ====================
+1.0.2 (2024-08-15)
+----------------
+* Updated by cathaylab
+* removed ya > yia rule
 
 1.0.1 (2024-08-10)
 ----------------
