@@ -1,8 +1,6 @@
 Burushaski Girminas (بروشسکی) keyboard
 ==============
 
-Version 1.26
-
 Description
 -----------
 Burushaski Girminas (بروشسکی) Perso/Arabic Keyboard
