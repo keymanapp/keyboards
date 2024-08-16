@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -14,46 +14,38 @@
     <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder></Folder>
-    <Items/>
+    <Folder>Cham (Latin)</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Documentation</Name>
+        <FileName>Cham-Latin-documentation.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Source Files</Name>
+        <FileName>Cham-LatinSourceFiles.zip</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
   </StartMenu>
   <Info>
+    <Name URL="">Cham (Latin)</Name>
+    <Copyright URL="">© SIL International</Copyright>
     <Version URL=""></Version>
-    <Name URL="">Sharada Inscript</Name>
-    <Copyright URL="">Copyright © SIL International</Copyright>
-    <Author URL="">Lorna Evans</Author>
-    <Description>This keyboard is for the Kashmiri and Sanskrit languages which sometimes use the Sharada script. It is based on an Inscript layout.</Description>
+    <Author URL="">Jim Brase</Author>
+    <WebSite URL=""></WebSite>
   </Info>
   <Files>
     <File>
-      <Name>..\build\sharada_inscript.js</Name>
-      <Description>File sharada_inscript.js</Description>
+      <Name>welcome\Cham-Latin-Layout.png</Name>
+      <Description>File Cham-Latin-Layout.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\build\sharada_inscript.kvk</Name>
-      <Description>File sharada_inscript.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>..\build\sharada_inscript.kmx</Name>
-      <Description>Keyboard Sharada Inscript</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\noto\Shrd\NotoSansSharada-Regular.ttf</Name>
-      <Description>Font Noto Sans Sharada Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\noto\Shrd\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
+      <FileType>.png</FileType>
     </File>
     <File>
       <Name>welcome\LayoutU_.png</Name>
@@ -92,6 +84,18 @@
       <FileType>.htm</FileType>
     </File>
     <File>
+      <Name>..\build\cham_latin.kvk</Name>
+      <Description>File cham_latin.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\cham_latin.kmx</Name>
+      <Description>Keyboard Cham (Latin)</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
       <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
@@ -100,16 +104,16 @@
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Sharada Inscript</Name>
-      <ID>sharada_inscript</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\..\..\shared\fonts\noto\Shrd\NotoSansSharada-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\noto\Shrd\NotoSansSharada-Regular.ttf</DisplayFont>
+      <Name>Cham (Latin)</Name>
+      <ID>cham_latin</ID>
+      <Version>1.1</Version>
       <Languages>
-        <Language ID="ks-Shrd">Kashmiri (Sharada)</Language>
-        <Language ID="sa-Shrd">Sanskrit (Sharada)</Language>
+        <Language ID="cjm-Latn">Eastern Cham (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="eastern_cham"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
