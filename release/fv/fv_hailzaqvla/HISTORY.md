@@ -1,14 +1,10 @@
 Haíɫzaqvḷa Change History
 ============================
-10.1 (29 Jul 2024)
-----------------
-* Set mobile and OSK font to November Heiltsuk
-* Swapped Noto Heiltsuk for November Heiltsuk in package as requested
-
-10.0 (8 Feb 2024)
+10.0 (29 Jul 2024)
 ----------------
 * Updated to new code points for lambda, lambda with stroke, and capital labmda
-* Packaged with Noto Heiltsuk Font
+* Packaged with Noto Heiltsuk Sans Font
+* Added warning about characters not working correctly prior to new characters being officially released
 
 9.5 (22 Jan 2024)
 ----------------

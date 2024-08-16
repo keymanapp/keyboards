@@ -71,6 +71,13 @@ require_once ('header.php');
     (Windows) / <kbd>⌥ Option</kbd>+<kbd>\</kbd> (Mac).</li>
 </ul>
 
+<h2>Unicode Fonts</h2>
+<p>The following font has been installed on your computer: <strong>Noto Sans Heiltsuk</strong> Please
+    use these fonts when typing in your language as they have been specially built to represent your language as
+    accurately as possible. </p>
+<p><b>NOTE:</b> This version of the keyboard contains Unicode characters that have not yet been released and some characters may not work as intended in emails, social media, or texts until the new characters gain wider support.</p>
+<p>Using Noto Sans Heiltsuk in your word processor will allow you to type the new characters as intended.</p>
+
 <div class='vspace'></div>
 
 <h2>Keyboard Layout (Mobile/Touch)</h2>

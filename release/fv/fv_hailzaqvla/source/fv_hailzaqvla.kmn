@@ -1,5 +1,5 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '10.1'
+store(&KEYBOARDVERSION) '10'
 c store(&ETHNOLOGUECODE) "hei"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Haíɫzaqvḷa'
@@ -92,14 +92,14 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
-+ [SHIFT T_F] > U+A7DA layer('default')
++ [SHIFT T_F] > U+A7DA layer('default') c latin capital lambda
 + [SHIFT T_G_0] > U+01E6 layer('default')
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H_0] > 'H̓' layer('default')
 + [SHIFT T_H_1] > U+0126 layer('default')
 + [SHIFT T_H] > 'H' layer('default')
 + [SHIFT T_J_0] > U+A7DC U+0313 layer('default')
-+ [SHIFT T_J] > U+A7DC layer('default')
++ [SHIFT T_J] > U+A7DC layer('default') c latin capital lambda with stroke
 + [SHIFT T_K_0] > 'K̓' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
@@ -191,7 +191,7 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 store(NeedsComApos) 'acehiklḷmṃnṇpqtuwyƛACEHIKLḶMṂNṆPQTUWYƛ'
 store(ComApos) [T_COMMA]
 any(NeedsComApos) + any(ComApos) > index(NeedsComApos,1) U+0313
-
+U+A7DC + [T_COMMA] > U+A7DC U+0313
 c --- END OF TOUCH LAYOUT RULES ---
 
 c --- DIACRITIC MANAGEMENT RULES ---
