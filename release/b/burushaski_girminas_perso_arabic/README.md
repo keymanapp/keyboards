@@ -14,8 +14,8 @@ The Burushaski Girminas (بروشسکی) Perso/Arabic keyboard is designed for w
 Links
 -----
 
-Copyright (c) 2024 Quwat K. Sunny
----------
+Copyright (c) Quwat K. Sunny
+--------- 
 See [LICENSE.md](LICENSE.md)
 
 Supported Platforms
