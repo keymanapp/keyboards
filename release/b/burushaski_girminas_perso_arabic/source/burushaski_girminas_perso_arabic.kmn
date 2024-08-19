@@ -1,7 +1,7 @@
 ﻿c Please read the Read Me file for a guide as to how to write in Burushaski
 store(&VERSION) '15.0'
-store(&COPYRIGHT) 'Copy Rights (c) 2023 Quwat K. Sunny'
-store(&KEYBOARDVERSION) '1.25'
+store(&COPYRIGHT) 'Copyright (c) Quwat K. Sunny'
+store(&KEYBOARDVERSION) '1.26'
 store(&BITMAP) 'burushaski_girminas_perso_arabic.ico'
 c store(&WINDOWSLANGUAGES) 'x0420 x0820'
 c store(&ETHNOLOGUECODE) 'urd'
@@ -12,14 +12,11 @@ store(&NAME) 'Burushaski Girminas (بروشسکی)'
 store(&LAYOUTFILE) 'burushaski_girminas_perso_arabic.keyman-touch-layout'
 store(&MESSAGE) 'یہ بروشسکی کی بورڈ بروشسکی کے عربی /فارسی رسم الخط میں لکھنے کے لیے بنائی گئ ہے۔ '
 store(&KMW_HELPTEXT) 'څنژ، ژمےࣷ، ݜمن، ݜپیک'
-store(&KMW_EMBEDCSS) 'burushaski_girminas_perso_arabic.css'
 begin Unicode > use(main)
+
 
 group(main) using keys
 
-+ [CTRL K_BKSLASH] > U+0614
-+ [SHIFT CTRL K_BKSLASH] > U+060E
-+ [SHIFT ALT K_V] > 'ۗ'
 + [SHIFT ALT K_A] > 'آ'
 + [ALT K_B] > 'ٮ'
 + [CTRL K_SLASH] > '٪'
@@ -27,7 +24,6 @@ group(main) using keys
 + [K_BKQUOTE] > 'ٍ'
 + [CTRL K_I] > 'ئ'
 + [ALT K_U] > 'ٔ'
-+ [CTRL K_U] > 'ٕ'
 + [SHIFT ALT K_QUOTE] > U+201D
 + [SHIFT CTRL K_QUOTE] > U+201C
 + [CTRL K_QUOTE] > U+2018
@@ -51,8 +47,13 @@ group(main) using keys
 + [SHIFT K_9] > ')'
 + [SHIFT K_0] > '('
 + [ALT K_HYPHEN] > 'ّ'
-+ [SHIFT CTRL K_HYPHEN] > 'ّ'
-+ [SHIFT K_U] > U+0654
++ [SHIFT CTRL K_S] > 'ّ' C arabic shadda
++ [SHIFT K_U] > U+0654 c hamza diacritic
++ [SHIFT CTRL K_U] > U+0621 c hamza regular
++ [SHIFT CTRL K_BKSLASH] > U+0614 C arabic sign takhalus
++ [SHIFT CTRL K_V] > U+065A C small v above
++ [SHIFT CTRL K_E] > U+08F7 C Left Arrow head 
+
 
 + [K_0] > '0'
 + [K_9] > '9'
@@ -116,40 +117,43 @@ group(main) using keys
 + [SHIFT K_C] > 'ث'
 + [SHIFT K_X] > 'ݜ'
 
-
-c Extra Burushaski 
+c Extra Burushaski -----------------------------------
 
 U+060C  + 'c'  > 'ڎ'
 '۔' +  "c"  > 'څ'
 '۔' + 'z' > 'ژ'
 
+c ----------------------------------------------------
+c vowels preceded by comma for short vowelsۡ
+U+060C  + 'y' > U+06D2 U+08F7  c  ےࣷ  
+U+060C  + 'w' > U+0648 U+08F7  c  وࣷ
+U+060C  + 'i' > U+06CC U+08F7  c  یࣷ   
+U+060C  + 'a' > U+0627 U+08F7  c   اࣷ   
 
-c preceded by comma for ۡ
-U+060C  + 'y' > 'ےࣷ'  c comma 
-U+060C  + 'w' > U+0648 U+08F7   
-U+060C  + 'i' > U+06CC U+08F7  
-U+060C  + 'a' > U+0627 U+08F7  c for short alif
+c ------------------------------------------------------
+C small v above letters, some of them are only for Hunza/Nagar
+'۔' + 'i' > U+06CC U+065A  c یٚ
+'۔' + "y" > U+06D2 U+065A  c ےٚ
+'۔' + 'n' > U+0646 U+065A  c نٚ
+'۔' + "l" > U+0644 U+065A  c ڵ
+c -----------------------------------------------------
 
+'۔' +'a' > U+0622 c آ
+c superscript alif ٰٰٰU+0670
 
-'۔' +'a' > U+0622 
-'۔' +"l" > U+06B5
-'۔' + 'n' > 'ݩ'
-'۔' + 'i' > 'ێ'
-'۔' + "y" > U+06D2 U+065A   
 '۔' + 'd' > 'ذ' 
 '۔' + 'v' > 'ظ'  c for 
 '۔' + 'e' > 'غ'
-'۔'  + 'r'  > 'ز'
-'۔'  + 's'  > U+075C
+'۔' + 'r'  > 'ز'
+'۔' + 's'  > U+075C
 '۔' + 'j' > 'ض'
 '۔' + 't' > 'ٹ'
 '۔' + 'h' > U+0652
 
 U+0631 +  'r' > U+0631 U+0652
 
-
 + [SHIFT CTRL K_C] > U+0685
 + [SHIFT CTRL K_Z] > 'ژ'
 + [SHIFT CTRL K_R] > 'رْ'
 + [SHIFT CTRL K_A] > 'اࣷ'
-+ [SHIFT CTRL K_N] > 'ݩ'
++ [SHIFT CTRL K_N] > 'ݩ' 
