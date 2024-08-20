@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'Xyz Keyboard Help';
+  $pagename = 'Aleph with Beth Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
     .center { display: block; margin-left: auto; margin-right: auto; width: 75%; }

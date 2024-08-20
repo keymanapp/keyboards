@@ -1,0 +1,242 @@
+﻿c This keyboard is designed for the Lekwungen (Lək̓ʷəŋən) language of the BC Coast region of Canada.
+c 
+c Alternate names: Songish, lək̓ʷəŋiʔnəŋ
+store(&VERSION) "10.0"
+store(&KEYBOARDVERSION) '1.0.1'
+c store(&ETHNOLOGUECODE) "str"
+store(&COPYRIGHT) '(c) 2024 FirstVoices, SIL International.'
+store(&NAME) 'Lekwungen (Lək̓ʷəŋən)'
+store(&LAYOUTFILE) 'fv_lekwungen.keyman-touch-layout'
+store(&VISUALKEYBOARD) 'fv_lekwungen.kvks'
+store(&TARGETS) 'any'
+begin Unicode > use(main)
+                                                                                     
+group(main) using keys
+
+
+c --- START OF TOUCH LAYOUT RULES ---
+
+
+C mobile default layer
++ [T_Q_0] > 'q̓'
++ [T_Q] > 'q'
++ [T_W_0] > 'q̓ʷ'
++ [T_W] > 'qʷ'
++ [T_E_1] > 'ʷ'
++ [T_E_0] > 'w̓'
++ [T_E] > 'w'
++ [T_R_0] > 'ə́'
++ [T_R] > 'ə'
++ [T_T_0] > 't̓'
++ [T_T] > 't'
++ [T_Y_0] > 'y̓'
++ [T_Y] > 'y'
++ [T_U_0] > 'ú'
++ [T_U] > 'u'
++ [T_I_0] > 'í'
++ [T_I] > 'i'
++ [T_O] > 'ƛ̓'
++ [T_P_0] > 'p̓'
++ [T_P] > 'p'
+
++ [T_A_0] > 'á'
++ [T_A] > 'a'
++ [T_S] > 's'
++ [T_D] > 'š'
++ [T_F_0] > 'é'
++ [T_F] > 'e'
++ [T_G] > 'ʔ'
++ [T_H] > 'h'
++ [T_K_1] > 'k'
++ [T_K_0] > 'k̓ʷ'
++ [T_K] > 'kʷ'
++ [T_L] > 'l'
++ [T_COLON] > 'ɬ'
+
++ [T_Z] > 'x̣'
++ [T_Z_0] > 'x̣ʷ'
++ [T_X] > 'xʷ'
++ [T_C_0] > 'c̓'
++ [T_C] > 'c'
++ [T_V] > 'č'
++ [T_V_0] > 'č̓'
++ [T_B] > 'ŋ'
++ [T_B_0] > 'ŋ̓'
++ [T_N_0] > 'n̓'
++ [T_N] > 'n'
++ [T_M_0] > 'm̓'
++ [T_M] > 'm'
+
+C mobile shift layer
++ [SHIFT T_Q_0] > 'Q̓' layer('default')
++ [SHIFT T_Q] > 'Q' layer('default')
++ [SHIFT T_W_0] > 'Q̓ʷ' layer('default')
++ [SHIFT T_W] > 'Qʷ' layer('default')
++ [SHIFT T_E_1] > 'ʷ' layer('default')
++ [SHIFT T_E_0] > 'W̓' layer('default')
++ [SHIFT T_E] > 'W' layer('default')
++ [SHIFT T_R_0] > 'Ə́' layer('default')
++ [SHIFT T_R] > 'Ə' layer('default')
++ [SHIFT T_T_0] > 'T̓' layer('default')
++ [SHIFT T_T] > 'T' layer('default')
++ [SHIFT T_Y_0] > 'Y̓' layer('default')
++ [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
++ [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
++ [SHIFT T_I] > 'I' layer('default')
++ [SHIFT T_O] > 'ƛ̓' layer('default')
++ [SHIFT T_P_0] > 'P̓' layer('default')
++ [SHIFT T_P] > 'P' layer('default')
+
++ [SHIFT T_A_0] > 'Á' layer('default')
++ [SHIFT T_A] > 'A' layer('default')
++ [SHIFT T_S] > 'S' layer('default')
++ [SHIFT T_D] > 'Š' layer('default')
++ [SHIFT T_F_0] > 'É' layer('default')
++ [SHIFT T_F] > 'E' layer('default')
++ [SHIFT T_G] > 'ʔ' layer('default')
++ [SHIFT T_H] > 'H' layer('default')
++ [SHIFT T_K_1] > 'K' layer('default')
++ [SHIFT T_K_0] > 'K̓ʷ' layer('default')
++ [SHIFT T_K] > 'Kʷ' layer('default')
++ [SHIFT T_L] > 'L' layer('default')
++ [SHIFT T_COLON] > 'ɬ' layer('default')
+
++ [SHIFT T_Z_0] > 'X̣ʷ' layer('default')
++ [SHIFT T_Z] > 'X̣' layer('default')
++ [SHIFT T_X] > 'Xʷ' layer('default')
++ [SHIFT T_C_0] > 'C̓' layer('default')
++ [SHIFT T_C] > 'C' layer('default')
++ [SHIFT T_V_0] > 'Č̓' layer('default')
++ [SHIFT T_V] > 'Č' layer('default')
++ [SHIFT T_B] > 'ŋ' layer('default')
++ [SHIFT T_B_0] > 'ŋ̓' layer('default')
++ [SHIFT T_N_0] > 'N̓' layer('default')
++ [SHIFT T_N] > 'N' layer('default')
++ [SHIFT T_M_0] > 'M̓' layer('default')
++ [SHIFT T_M] > 'M' layer('default')
+
+c mobile glottal apostrophe deadkey for rounded sounds kʷ, qʷ
+'kʷ' + [T_J] > 'k̓ʷ'
+'kʷ' + [SHIFT T_J] > 'k̓ʷ'
+'Kʷ' + [T_J] > 'K̓ʷ'
+'Kʷ' + [SHIFT T_J] > 'K̓ʷ'
+'qʷ' + [T_J] > 'q̓ʷ'
+'qʷ' + [SHIFT T_J] > 'q̓ʷ'
+'Qʷ' + [T_J] > 'Q̓ʷ'
+'Qʷ' + [SHIFT T_J] > 'Q̓ʷ'
+
+
+c --- END OF TOUCH LAYOUT RULES ---
+
+
+c **********************
+c Constraints and Rules
+c **********************
+
+
+c Acute and grave accent rules
+store(plainVowels) "aeiouAEIOU"
+store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
+store(graveVowels) "àèìòùÀÈÌÒÙ" c combined unicode characters
+
+store(acuteKeys) [T_acute] [SHIFT T_acute] [K_COLON]
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1)
+
+store(graveKeys) [K_BKSLASH]
+any(plainVowels) + any(graveKeys) > index(graveVowels,1)
+
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on accented vowel will leave the plain vowel behind
+any(graveVowels) + [K_BKSP] > index(plainVowels,1) 
+
+store(schwa) "əƏ"
+any(schwa) + any(acuteKeys) > index(schwa,1) U+0301 c acute on schwa
+any(schwa) + any(graveKeys) > index(schwa,1) U+0300 c grave on schwa
+
+c Caron diacritic - backspace will delete just the caron on letters with caron
+store(noCaron) "csCS"
+store(withCaron) "čšČŠ"
+any(withCaron) + [K_BKSP] > index(noCaron,1)
+
+c Glottal apostrophe combining rules
+store(noGlottal) 'cčwkpqtƛlmnŋyCČWKPQTLMNY'
+store(glottalKeys) [T_J] [SHIFT T_J] [K_QUOTE]
+any(noGlottal) + any(glottalKeys) > index(noGlottal,1) U+0313
+
+
+c Stacking prevention rules
+
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  c preventing accents on non-letters
+any(NumbersAndPunctuation) + any(glottalKeys) > context beep                   
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep
+any(NumbersAndPunctuation) + any(graveKeys) > context beep
+
+
+any(acuteVowels) + any(acuteKeys) > context beep c no double stacking accent on already accented V
+any(acuteVowels) + any(graveKeys) > context beep
+
+any(graveVowels) + any(graveKeys) > context beep
+any(graveVowels) + any(acuteKeys) > context beep
+
+U+0313 + any(glottalKeys) > context beep c no double stacking diacritics
+U+0301 + any(acuteKeys) > context beep
+U+0300 + any(graveKeys) > context beep
+
+U+0313 + any(acuteKeys) > context beep c no stacking on combining glottal
+U+0313 + any(graveKeys) > context beep
+
+U+0301 + any(graveKeys) > context beep c no stacking on acute
+U+0301 + any(glottalKeys) > context beep
+
+U+0300 + any(acuteKeys) > context beep c no stacking on curly apostrophe
+U+0300 + any(glottalKeys) > context beep
+
+any(acuteVowels) + any(glottalKeys) > context beep c no glottal on accented vowels
+any(graveVowels) + any(glottalKeys) > context beep
+
+
+c ****************
+c Main
+c **************
+
+c combining keys for accents
++ [K_COLON] > U+0301 c acute
++ [K_QUOTE] >  U+0313 c comma above
++ [K_BKSLASH] > U+0300 c grave
+
+c lekwungen characters
++ [K_2] > 'ʷ'
++ [K_3] > 'ə'
++ [K_4] > 'ʔ'
++ [K_5] > 'č'
++ [K_6] > 'š'
++ [K_7] > 'x̣'
++ [K_8] > 'ƛ̓'
++ [K_9] > 'ɬ'
++ [K_0] > 'ŋ'
+
+c letters not in lekwungen but added here to be consistant with LG layout
++ [K_BKQUOTE] > 'θ'
++ [K_1] > 'tᶿ'
+
+c original keys with right-alt
++ [RALT K_COLON] > ";"
++ [RALT K_QUOTE] > "'"
++ [RALT K_BKSLASH] > "\"
+
++ [RALT K_BKQUOTE] > '`'
++ [RALT K_1] > '1'
++ [RALT K_2] > '2'
++ [RALT K_3] > '3'
++ [RALT K_4] > '4'
++ [RALT K_5] > '5'
++ [RALT K_6] > '6'
++ [RALT K_7] > '7'
++ [RALT K_8] > '8'
++ [RALT K_9] > '9'
++ [RALT K_0] > '0'
+
+                              
+nomatch > use(x)                            
+group(x) using keys

@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,10 @@
     <Name URL="">Coptic (Greek)</Name>
     <Copyright URL="">© 2010-2019 Michael Everson, evertype.com.</Copyright>
     <Author URL="">Michael Everson</Author>
+    <Description>This keyboard layout is designed for typing the Coptic script. This
+keyboard is based on Apple\'s Greek keyboard layout. It is useful for
+people who type a lot of Greek and a little Coptic. The related keyboard
+supports a touch layout.</Description>
   </Info>
   <Files>
     <File>
@@ -82,6 +87,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -94,4 +105,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="coptic_qwerty" />
+  </RelatedPackages>
 </Package>

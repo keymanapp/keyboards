@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,11 @@
     <Name URL="">Bunong ឞូន៝ង (SIL)</Name>
     <Copyright URL="">© 2021 - 2023 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>កាដារនទើ​ល៝ត់អ្យា ញជេងគៃមាញចីសរាឆ៝តានាវងើយឞូន៝ង អីទ៝ង់រាឆ៝ទ្រោន។\
+ក្ដារចុចនេះត្រូវបានបង្កើតឡើងសម្រាប់វាយអត្ថបទភាសាព្នង
+ដោយប្រើតួអក្សរខ្មែរ។\
+Bunong ឞូន៝ង (SIL) keyboard is designed for typing Bunong language using
+Khmer characters.</Description>
   </Info>
   <Files>
     <File>
@@ -136,6 +142,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -147,7 +159,10 @@
       <Languages>
         <Language ID="cmo-Khmr">Central Mnong (Khmer)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="cmo-Khmr" Keys="F U n , g" Text="ឞូន៝ង" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

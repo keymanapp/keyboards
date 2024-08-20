@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1.5'
+store(&KEYBOARDVERSION) '9.2.1'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "caf"
 store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Dakelh'
 store(&BITMAP) 'fv_dakelh.ico'
 store(&VISUALKEYBOARD) 'fv_dakelh.kvks'
-store(&KMW_HELPFILE) 'fv_dakelh_kmw_help.htm'
 begin Unicode > use(main)
 
 
@@ -19,12 +18,12 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 
 store(&LAYOUTFILE) 'fv_dakelh.keyman-touch-layout'
 
-'d' + [SHIFT T_Q] > 'd̲z̲'
-'t' + [SHIFT T_Q] > 't̲s̲'
-'D' + [SHIFT T_Q] > 'D̲z̲'
-'T' + [SHIFT T_Q] > 'T̲s̲'
+'d' + [SHIFT T_Q] > 'd̲z̲' layer('default')
+'t' + [SHIFT T_Q] > 't̲s̲' layer('default')
+'D' + [SHIFT T_Q] > 'D̲z̲' layer('default')
+'T' + [SHIFT T_Q] > 'T̲s̲' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
-+ [SHIFT T_E_0] > 'É' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > 'R' layer('default')
 + [SHIFT T_T_0] > 'T̲s̲' layer('default')
@@ -106,7 +105,6 @@ store(&LAYOUTFILE) 'fv_dakelh.keyman-touch-layout'
 + [T_N] > 'n'
 + [T_M] > 'm'
 
-
 store(NeedsLowline) 'szSZ'
 store(LowlineKey) [T_Q] [SHIFT T_Q]
 any(NeedsLowline) + any(LowlineKey) > index(NeedsLowline,1) U+0332
@@ -148,6 +146,7 @@ c Original Punctuation
 + [NCAPS SHIFT RALT K_COLON] > ':'
 + [NCAPS RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
++ [RALT SHIFT K_SLASH] > '/'
 + [RALT K_QUOTE] > U+0027
 + [NCAPS RALT K_BKSLASH] > '\'
 + [NCAPS SHIFT RALT K_BKSLASH] > '|'

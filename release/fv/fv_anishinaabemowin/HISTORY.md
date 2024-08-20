@@ -1,5 +1,16 @@
-Anishinaabemowin Change History
+Anishinaabemowin - Anihšināpēmowin Change History
 ============================
+10.2 (30 Jul 2024)
+-----------------
+* Further tidied documentation
+* Removed web help in favour of OSK
+
+10.1 (29 Jun 2024)
+-----------------
+* Updated keyboard name
+* Tidied documentation
+* Corrected mobile layout table
+
 10.0.1 (12 Jan 2024)
 -----------------
 * Changed script tag

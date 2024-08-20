@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,6 +22,8 @@
     <Version URL=""></Version>
     <Author URL="">Marc Durdin and Tamara Duff</Author>
     <WebSite URL="https://keyman.com/keyboards/sil_arabic_phonetic">https://keyman.com/keyboards/sil_arabic_phonetic</WebSite>
+    <Description>This keyboard was developed for entering Arabic script phonetically
+using a standard English keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -65,6 +68,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -99,4 +108,7 @@
     </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="phoneticarabic" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

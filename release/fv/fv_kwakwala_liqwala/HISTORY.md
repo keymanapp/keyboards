@@ -1,5 +1,13 @@
 Kʷak̓ʷala Change History
 ============================
+9.3 (10 Jul 2023)
+------------------
+* Improved stacking prevention
+* Tweaked mobile layout
+* Tidied documentation
+* Added alternate way to type Slash in Google Workspace
+* Removed web help in favour of OSK
+
 9.2.5 (17 Oct 2023)
 ------------------
 * Updated keyboard name to better reflect the language name 

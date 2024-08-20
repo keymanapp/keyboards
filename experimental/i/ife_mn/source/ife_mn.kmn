@@ -1,24 +1,10 @@
 ﻿store(&BITMAP) 'ife_mn.ico'
-store(&Copyright) "2024 SIL International"
-store(&Message) "Ifè keyboard 23 Jan 2024"
+store(&Copyright) "(c) SIL International"
+store(&Message) "Ifè keyboard"
 store(&NAME) 'Ifè Mnemonic'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.1'
 store(&mnemoniclayout) '1'
 
-c 25 Feb 2004: Conversion from tbbw.kmn (a Keyman 3 table); Unicode support added.
-c 30 Mar 2004: Corrected switched Unicode entries for ;Z and ;z
-c 16 Jun 2004: Split into tbb6a with ANSI table and tbb6u with Unicode table
-c 18 Aug 2004: added the "store(&mnemoniclayout) '1' " statement
-c              so that the keyboard will work with French keyboard layouts.
-c              Icon changed to "TBU" to clarify that it produces Unicode.
-c              Added revision date to end of &Message.
-c 23 Dec 2005: added ;j for barred-i (not in Tbb fonts)
-c 30 Mar 2007: modified from tbb6u1.kmn for Ifè typing system
-c 23 Jan 2023: Upgraded for modern Keyman.
-
-c NB: When changing this table, please add a comment above
-c     AND CHANGE THE DATE at the end of the &Message store above.
-store(&ETHNOLOGUECODE) 'ife'
 store(&TARGETS) 'web desktop'
 store(&VISUALKEYBOARD) 'ife_mn.kvks'
 
@@ -38,7 +24,9 @@ group(MainU) using keys
 ':' + 'a' > U+0061 U+0308 c a trema
 ';' + 'A' > U+0041 U+0303 c A tilde
 ';' + 'a' > U+0061 U+0303 c a tilde
+'~' + 'A' > U+0041 U+0303 U+0300 c A tilde grave
 '~' + 'a' > U+0061 U+0303 U+0300 c a tilde grave
+'"' + 'A' > U+0041 U+0303 U+0301 c A tilde acute
 '"' + 'a' > U+0061 U+0303 U+0301 c a tilde acute
 '%' + 'A' > U+00C5 c A angstrom
 '%' + 'a' > U+00E5 c a angstrom
@@ -71,7 +59,9 @@ group(MainU) using keys
 "'" + '[' > U+025B U+0301 c epsilon acute
 ';' + '{' > U+0190 U+0303 c epsilon uc tilde
 ';' + '[' > U+025B U+0303 c epsilon tilde
+'~' + '{' > U+0190 U+0303 U+0300 c epsilon uc tilde grave
 '~' + '[' > U+025B U+0303 U+0300 c epsilon tilde grave
+'"' + '{' > U+0190 U+0303 U+0301 c epsilon uc tilde acute
 '"' + '[' > U+025B U+0303 U+0301 c epsilon tilde acute
 ';' + 'F' > U+0191 c tail F
 ';' + 'f' > U+0192 c tail f or guilders
@@ -89,7 +79,9 @@ group(MainU) using keys
 ':' + 'i' > U+0069 U+0308 c i trema
 ';' + 'I' > U+0049 U+0303 c I tilde
 ';' + 'i' > U+0069 U+0303 c i tilde
+'~' + 'I' > U+0049 U+0303 U+0300 c I tilde grave
 '~' + 'i' > U+0069 U+0303 U+0300 c i tilde grave
+'"' + 'I' > U+0049 U+0303 U+0301 c I tilde acute
 '"' + 'i' > U+0069 U+0303 U+0301 c i tilde acute
 '`' + 'M' > U+004D U+0300 c M grave
 '`' + 'm' > U+006D U+0300 c m grave
@@ -125,7 +117,9 @@ group(MainU) using keys
 "'" + ']' > U+0254 U+0301 c open o acute
 ';' + '}' > U+0186 U+0303 c open o uc tilde
 ';' + ']' > U+0254 U+0303 c open o tilde
+'~' + '}' > U+0186 U+0303 U+0300 c open o uc tilde grave
 '~' + ']' > U+0254 U+0303 U+0300 c open o tilde grave
+'"' + '}' > U+0186 U+0303 U+0301 c open o uc tilde acute 
 '"' + ']' > U+0254 U+0303 U+0301 c open o tilde acute
 ';+O' + 'E' > U+0152 c oe diagraph uc
 ';+o' + 'e' > U+0153 c oe diagraph
@@ -141,7 +135,9 @@ group(MainU) using keys
 ':' + 'u' > U+0075 U+0308 c u trema
 ';' + 'U' > U+0055 U+0303 c U tilde
 ';' + 'u' > U+0075 U+0303 c u tilde
+'~' + 'U' > U+0055 U+0303 U+0300 c U tilde grave
 '~' + 'u' > U+0075 U+0303 U+0300 c u tilde grave
+'"' + 'U' > U+0055 U+0303 U+0301 c U tilde acute
 '"' + 'u' > U+0075 U+0303 U+0301 c u tilde acute
 ':' + 'Y' > U+0059 U+0308 c Y trema
 ':' + 'y' > U+0079 U+0308 c y trema

@@ -1,8 +1,8 @@
 ﻿store(&VERSION) '10.0'
-store(&KEYBOARDVERSION) '9.3'
+store(&KEYBOARDVERSION) '9.4.1'
 store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "bea"
-store(&COPYRIGHT) '© 2015-2023 FirstVoices, First Peoples' U+0027 ' Cultural Foundation, SIL International'
+store(&COPYRIGHT) '© 2015-2024 FirstVoices, First Peoples' U+0027 ' Cultural Foundation, SIL International'
 store(&NAME) 'Dane-Z̲aa Z̲áágéʔ'
 store(&VISUALKEYBOARD) 'fv_dane_zaa_zaage.kvks'
 store(&LAYOUTFILE) 'fv_dane_zaa_zaage.keyman-touch-layout'
@@ -243,9 +243,15 @@ c LINE 3
 c acute
 + [K_SLASH] > '́'
 + [ALT K_SLASH] > '/'
++ [SHIFT ALT K_SLASH] > '/'
 
 
 
 c don't double other diacritics like ogonek, low line
 U+0328 + [K_BKQUOTE] > U+0328
 U+0332 + [SHIFT K_BKQUOTE] > U+0332
+
+c don't allow diacritics to stack on non-letters
+store(NonLetters) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"
+store(AccentKeys) [K_SLASH] [K_BKSLASH] [SHIFT K_BKSLASH] [K_BKQUOTE]
+any(NonLetters) + any(AccentKeys) > context beep
