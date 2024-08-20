@@ -1,7 +1,13 @@
 Old Hungarian Change History
 ====================
+-----------------
+1.7.9 (2024-08-20)
+* Optimized mobile layouts. Deleted Ralt-shift layer.
+* The historial symbols associated
+*   for a longpress symbol key to default, shift and caps level
+
 1.7.8 (2023-10-01)
-------------------
+-----------------
 * Rebuilded mobile layouts with longpress keys for easy-to-use
 
 1.7.6 (2023-09-19)
