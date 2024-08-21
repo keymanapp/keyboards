@@ -2,7 +2,7 @@
 store(&VERSION) '10.0'
 store(&NAME) 'wenchow'
 store(&COPYRIGHT) '© cathaylab'
-store(&KEYBOARDVERSION) '1.1.1'
+store(&KEYBOARDVERSION) '1.1.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'uchau.ico'
 store(&VISUALKEYBOARD) 'wenchow.kvks'
@@ -44,27 +44,27 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'i' + 'i' > 'ï'
 'u' + 'u' > 'û'
 'o' + 'o' > 'ö'
-'z' + 'q' > 'ź'
+'z' + 'q' > 'ź'
 'z' + 'x' > 'z̀'
 'u' + 'w' > 'ü'
-'ng' + 'q' > 'nǵ'
+'ng' + 'q' > 'nǵ'
 'ng' + 'x' > 'ng̀'
-'n' + 'q' > 'ń'
-'n' + 'x' > 'ǹ'
-'m' + 'q' > 'ḿ'
+'n' + 'q' > 'ń'
+'n' + 'x' > 'ǹ'
+'m' + 'q' > 'ḿ'
 'm' + 'x' > 'm̀'
-'m' + 'm' > 'm̌'
-'n' + 'n' > 'ň'
-'ng' + 'g' > 'ňg'
+'m' + 'm' > 'm̆'
+'n' + 'n' > 'n̆'
+'ng' + 'g' > 'n̆g'
 'l' + 'l' > 'l̆'
-'ü' + 'q' > 'ǘ'
-'ü' + 'x' > 'ǜ'
+'ü' + 'q' > 'ǘ'
+'ü' + 'x' > 'ǜ'
 'ö' + 'q' > 'ö́'
 'ö' + 'x' > 'ö̀'
 'ï' + 'q' > 'ḯ'
 'ï' + 'x' > 'ï̀'
 'a' + 'e' > 'æ'
-'æ' + 'q' > 'ǽ'
+'æ' + 'q' > 'ǽ'
 'æ' + 'x' > 'æ̀'
 'û' + 'q' > 'û́'
 'û' + 'x' > 'û̀'
@@ -72,55 +72,58 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'I' + 'I' > 'Ï'
 'U' + 'U' > 'Û'
 'O' + 'O' > 'Ö'
-'Z' + 'Q' > 'Ź'
+'Z' + 'Q' > 'Ź'
 'Z' + 'X' > 'Z̀'
 'U' + 'W' > 'Ü'
-'NG' + 'Q' > 'NǴ'
+'NG' + 'Q' > 'NǴ'
 'NG' + 'X' > 'NG̀'
-'N' + 'Q' > 'Ń'
-'N' + 'X' > 'Ǹ'
-'M' + 'Q' > 'Ḿ'
+'N' + 'Q' > 'Ń'
+'N' + 'X' > 'Ǹ'  
+'M' + 'Q' > 'Ḿ'
 'M' + 'X' > 'M̀'
-'M' + 'M' > 'M̌'
-'N' + 'N' > 'Ň'
-'NG' + 'G' > 'ŇG'
+'M' + 'M' > 'M̌' 
+'N' + 'N' > 'N̆'
+'NG' + 'G' > 'N̆G'
 'L' + 'L' > 'L̆'
-'Ü' + 'Q' > 'Ǘ'
-'Ü' + 'X' > 'Ǜ'
+'Ü' + 'Q' > 'Ǘ'
+'Ü' + 'X' > 'Ǜ'     
 'Ö' + 'Q' > 'Ö́'
 'Ö' + 'X' > 'Ö̀'
 'Ï' + 'Q' > 'Ḯ'
 'Ï' + 'X' > 'Ï̀'
 'A' + 'E' > 'Æ'
-'Æ' + 'Q' > 'Ǽ'
-'Æ' + 'X' > 'Æ̀'
+'Æ' + 'Q' > 'Ǽ'
+'Æ' + 'X' > 'Æ̀' 
 'Û' + 'Q' > 'Û́'
 'Û' + 'X' > 'Û̀'
 
 'I' + 'i' > 'Ï'
 'U' + 'u' > 'Û'
 'O' + 'o' > 'Ö'
-'Z' + 'q' > 'Ź'
+'Z' + 'q' > 'Ź'
 'Z' + 'x' > 'Z̀'
 'U' + 'w' > 'Ü'
-'NG' + 'q' > 'NǴ'
+'NG' + 'q' > 'NǴ'
 'NG' + 'x' > 'NG̀'
-'N' + 'q' > 'Ń'
-'N' + 'x' > 'Ǹ'
-'M' + 'q' > 'Ḿ'
+'Ng' + 'q' > 'Nǵ'
+'Ng' + 'x' > 'Ng̀'
+'N' + 'q' > 'Ń'
+'N' + 'x' > 'Ǹ'
+'M' + 'q' > 'Ḿ'
 'M' + 'x' > 'M̀'
 'M' + 'm' > 'M̌'
-'N' + 'n' > 'Ň'
-'NG' + 'g' > 'ŇG'
+'N' + 'n' > 'N̆'
+'NG' + 'g' > 'N̆G'
+'Ng' + 'g' > 'N̆g'
 'L' + 'l' > 'L̆'
-'Ü' + 'q' > 'Ǘ'
-'Ü' + 'x' > 'Ǜ'
+'Ü' + 'q' > 'Ǘ'
+'Ü' + 'x' > 'Ǜ'
 'Ö' + 'q' > 'Ö́'
 'Ö' + 'x' > 'Ö̀'
 'Ï' + 'q' > 'Ḯ'
 'Ï' + 'x' > 'Ï̀'
 'A' + 'e' > 'Æ'
-'Æ' + 'q' > 'Ǽ'
+'Æ' + 'q' > 'Ǽ'
 'Æ' + 'x' > 'Æ̀'
 'Û' + 'q' > 'Û́'
 'Û' + 'x' > 'Û̀'
@@ -128,27 +131,27 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'ï' + 'i' > 'ii'
 'û' + 'u' > 'uu'
 'ö' + 'o' > 'oo'
-'ź' + 'q' > 'zq'
+'ź' + 'q' > 'zq'
 'z̀' + 'x' > 'zx'
 'ü' + 'w' > 'uw'
-'nǵ' + 'q' > 'ngq'
+'nǵ' + 'q' > 'ngq'
 'ng̀' + 'x' > 'ngx'
-'ń' + 'q' > 'nq'
-'ǹ' + 'x' > 'nx'
-'ḿ' + 'q' > 'mq'
+'ń' + 'q' > 'nq'
+'ǹ' + 'x' > 'nx'
+'ḿ' + 'q' > 'mq'
 'm̀' + 'x' > 'mx'
-'m̌' + 'm' > 'mm'
-'ň' + 'n' > 'nn'
-'ňg' + 'g' > 'ngg'
+'m̆' + 'm' > 'mm'
+'n̆' + 'n' > 'nn'
+'n̆g' + 'g' > 'ngg'
 'l̆' + 'l' > 'll'
-'ǘ' + 'q' > 'üq'
-'ǜ' + 'x' > 'üx'
+'ǘ' + 'q' > 'üq'
+'ǜ' + 'x' > 'üx'
 'ö́' + 'q' > 'öq'
 'ö̀' + 'x' > 'öx'
 'ḯ' + 'q' > 'ïq'
 'ï̀' + 'x' > 'ïx'
 'æ' + 'e' > 'ae'
-'ǽ' + 'q' > 'æq'
+'ǽ' + 'q' > 'æq'
 'æ̀' + 'x' > 'æx'
 'û́' + 'q' > 'ûq'
 'û̀' + 'x' > 'ûx'
@@ -156,27 +159,27 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ï' + 'I' > 'II'
 'Û' + 'U' > 'UU'
 'Ö' + 'O' > 'OO'
-'Ź' + 'Q' > 'ZQ'
+'Ź' + 'Q' > 'ZQ'
 'Z̀' + 'X' > 'ZX'
 'Ü' + 'W' > 'UW'
-'NǴ' + 'Q' > 'NGQ'
+'NǴ' + 'Q' > 'NGQ'
 'NG̀' + 'X' > 'NGX'
-'Ń' + 'Q' > 'NQ'
-'Ǹ' + 'X' > 'NX'
-'Ḿ' + 'Q' > 'MQ'
+'Ń' + 'Q' > 'NQ'
+'Ǹ' + 'X' > 'NX'
+'Ḿ' + 'Q' > 'MQ'
 'M̀' + 'X' > 'MX'
 'M̌' + 'M' > 'MM'
-'Ň' + 'N' > 'NN'
-'ŇG' + 'G' > 'NGG'
+'N̆' + 'N' > 'NN'
+'N̆G' + 'G' > 'NGG'
 'L̆' + 'L' > 'LL'
-'Ǘ' + 'Q' > 'ÜQ'
-'Ǜ' + 'X' > 'ÜX'
+'Ǘ' + 'Q' > 'ÜQ'
+'Ǜ' + 'X' > 'ÜX'
 'Ö́' + 'Q' > 'ÖQ'
 'Ö̀' + 'X' > 'ÖX'
 'Ḯ' + 'Q' > 'ÏQ'
 'Ï̀' + 'X' > 'ÏX'
 'Æ' + 'E' > 'AE'
-'Ǽ' + 'Q' > 'ÆQ'
+'Ǽ' + 'Q' > 'ÆQ'
 'Æ̀' + 'X' > 'ÆX'
 'Û́' + 'Q' > 'ÛQ'
 'Û̀' + 'X' > 'ÛX'
@@ -184,21 +187,24 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ï' + 'i' > 'Ii'
 'Û' + 'u' > 'Uu'
 'Ö' + 'o' > 'Oo'
-'Ź' + 'q' > 'Zq'
+'Ź' + 'q' > 'Zq'
 'Z̀' + 'x' > 'Zx'
 'Ü' + 'w' > 'Uw'
-'NǴ' + 'q' > 'NGq'
+'NǴ' + 'q' > 'NGq'
 'NG̀' + 'x' > 'NGx'
-'Ń' + 'q' > 'Nq'
-'Ǹ' + 'x' > 'Nx'
-'Ḿ' + 'q' > 'Mq'
+'Nǵ' + 'q' > 'Ngq'
+'Ng̀' + 'x' > 'Ngx'
+'Ń' + 'q' > 'Nq'
+'Ǹ' + 'x' > 'Nx'
+'Ḿ' + 'q' > 'Mq'
 'M̀' + 'x' > 'Mx'
 'M̌' + 'm' > 'Mm'
-'Ň' + 'n' > 'Nn'
-'ŇG' + 'g' > 'NGg'
+'N̆' + 'n' > 'Nn'
+'N̆G' + 'g' > 'NGg'
+'N̆g' + 'g' > 'Ngg'
 'L̆' + 'l' > 'Ll'
-'Ǘ' + 'q' > 'Üq'
-'Ǜ' + 'x' > 'Üx'
+'Ǘ' + 'q' > 'Üq'
+'Ǜ' + 'x' > 'Üx'
 'Ö́' + 'q' > 'Öq'
 'Ö̀' + 'x' > 'Öx'
 'Ḯ' + 'q' > 'Ïq'
@@ -308,62 +314,162 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 
 
 
-'ǽ' + 'x' > 'æ̀'
-'æ̀' + 'q' > 'ǽ'
+'ǽ' + 'x' > 'æ̀'
+'æ̀' + 'q' > 'ǽ'
 'û́' + 'x' > 'û̀'
 'û̀' + 'q' > 'û́'
-'ǘ' + 'x' > 'ǜ'
-'ǜ' + 'q' > 'ǘ'
+'ǘ' + 'x' > 'ǜ'
+'ǜ' + 'q' > 'ǘ'
 'ḯ' + 'x' > 'ï̀'
 'ï̀' + 'q' > 'ḯ'
 'ö́' + 'x' > 'ö̀'
 'ö̀' + 'q' > 'ö́'
-'ź' + 'x' > 'z̀'
-'z̀' + 'q' > 'z̀'
-'ń' + 'x' > 'ǹ'
-'ǹ' + 'q' > 'ń'
-'ḿ' + 'x' > 'm̀'
-'m̀' + 'q' > 'ḿ'
+'ź' + 'x' > 'z̀'
+'z̀' + 'q' > 'ź'
+'ń' + 'x' > 'ǹ'
+'ǹ' + 'q' > 'ń'
+'ḿ' + 'x' > 'm̀'
+'m̀' + 'q' > 'ḿ'
 
-'Ǽ' + 'X' > 'Æ̀'
-'Æ̀' + 'Q' > 'Ǽ'
+'Ǽ' + 'X' > 'Æ̀'
+'Æ̀' + 'Q' > 'Ǽ'
 'Û́' + 'X' > 'Û̀'
 'Û̀' + 'Q' > 'Û́'
-'Ǘ' + 'X' > 'Ǜ'
-'Ǜ' + 'Q' > 'Ǘ'
+'Ǘ' + 'X' > 'Ǜ'
+'Ǜ' + 'Q' > 'Ǘ'
 'Ḯ' + 'X' > 'Ï̀'
 'Ï̀' + 'Q' > 'Ḯ'
 'Ö́' + 'X' > 'Ö̀'
 'Ö̀' + 'Q' > 'Ö́'
-'Ź' + 'X' > 'Z̀'
-'Z̀' + 'Q' > 'Z̀'
-'Ń' + 'X' > 'Ǹ'
-'Ǹ' + 'Q' > 'Ń'
-'Ḿ' + 'X' > 'M̀'
-'M̀' + 'Q' > 'Ḿ'
+'Ź' + 'X' > 'Z̀'
+'Z̀' + 'Q' > 'Ź'
+'Ń' + 'X' > 'Ǹ'
+'Ǹ' + 'Q' > 'Ń'
+'Ḿ' + 'X' > 'M̀'
+'M̀' + 'Q' > 'Ḿ'
 
-'Ǽ' + 'x' > 'Æ̀'
-'Æ̀' + 'q' > 'Ǽ'
+'Ǽ' + 'x' > 'Æ̀'
+'Æ̀' + 'q' > 'Ǽ'
 'Û́' + 'x' > 'Û̀'
 'Û̀' + 'q' > 'Û́'
-'Ǘ' + 'x' > 'Ǜ'
-'Ǜ' + 'q' > 'Ǘ'
+'Ǘ' + 'x' > 'Ǜ'
+'Ǜ' + 'q' > 'Ǘ'
 'Ḯ' + 'x' > 'Ï̀'
 'Ï̀' + 'q' > 'Ḯ'
 'Ö́' + 'x' > 'Ö̀'
 'Ö̀' + 'q' > 'Ö́'
-'Ź' + 'x' > 'Z̀'
-'Z̀' + 'q' > 'Z̀'
-'Ń' + 'x' > 'Ǹ'
-'Ǹ' + 'q' > 'Ń'
-'Ḿ' + 'x' > 'M̀'
-'M̀' + 'q' > 'Ḿ'
+'Ź' + 'x' > 'Z̀'
+'Z̀' + 'q' > 'Ź'
+'Ń' + 'x' > 'Ǹ'
+'Ǹ' + 'q' > 'Ń'
+'Ḿ' + 'x' > 'M̀'
+'M̀' + 'q' > 'Ḿ'
 
 'O' + 'e' > 'Öe'
 'U' + 'e' > 'Üe'
 
 'Öe' + 'e' > 'Oe'
 'Üe' + 'e' > 'Ue'
+
+'ung' + 'q' > 'úng'
+'ing' + 'q' > 'íng'
+'ang' + 'q' > 'áng'
+'ong' + 'q' > 'óng'
+
+'ung' + 'x' > 'ùng'
+'ing' + 'x' > 'ìng'
+'ang' + 'x' > 'àng'
+'ong' + 'x' > 'òng'
+
+'UNG' + 'Q' > 'ÚNG'
+'ING' + 'Q' > 'ÍNG'
+'ANG' + 'Q' > 'ÁNG'
+'ONG' + 'Q' > 'ÓNG'
+
+'UNG' + 'X' > 'ÙNG'
+'ING' + 'X' > 'ÌNG'
+'ANG' + 'X' > 'ÀNG'
+'ONG' + 'X' > 'ÒNG'
+
+'Ung' + 'q' > 'Úng'
+'Ing' + 'q' > 'Íng'
+'Ang' + 'q' > 'Áng'
+'Ong' + 'q' > 'Óng'
+
+'Ung' + 'x' > 'Ùng'
+'Ing' + 'x' > 'Ìng'
+'Ang' + 'x' > 'Àng'
+'Ong' + 'x' > 'Òng'
+
+
+'úng' + 'q' > 'ungq'
+'íng' + 'q' > 'ingq'
+'áng' + 'q' > 'angq'
+'óng' + 'q' > 'ongq'
+
+'ùng' + 'x' > 'ungx'
+'ìng' + 'x' > 'ingx'
+'àng' + 'x' > 'angx'
+'òng' + 'x' > 'ongx'
+
+'ÚNG' + 'Q' > 'UNGQ'
+'ÍNG' + 'Q' > 'INGQ'
+'ÁNG' + 'Q' > 'ANGQ'
+'ÓNG' + 'Q' > 'ONGQ'
+
+'ÙNG' + 'X' > 'UNGX'
+'ÌNG' + 'X' > 'INGX'
+'ÀNG' + 'X' > 'ANGX'
+'ÒNG' + 'X' > 'ONGX'
+
+'Úng' + 'q' > 'Ungq'
+'Íng' + 'q' > 'Ingq'
+'Áng' + 'q' > 'Angq'
+'Óng' + 'q' > 'Ongq'
+
+'Ùng' + 'x' > 'Ungx'
+'Ìng' + 'x' > 'Ingx'
+'Àng' + 'x' > 'Angx'
+'Òng' + 'x' > 'Ongx'
+
+'ǵ' + 'x' > 'g̀'
+'g̀' + 'q' > 'ǵ'
+'áng' + 'x' > 'àng'
+'àng' + 'q' > 'áng'
+'íng' + 'x' > 'ìng'
+'ìng' + 'q' > 'íng'
+'óng' + 'x' > 'òng'
+'òng' + 'q' > 'óng'
+'úng' + 'x' > 'ùng'
+'ùng' + 'q' > 'úng'
+'Ǵ' + 'X' > 'G̀'
+'G̀' + 'Q' > 'Ǵ'
+'ÁNG' + 'X' > 'ÀNG'
+'ÀNG' + 'Q' > 'ÁNG'
+'ÍNG' + 'X' > 'ÌNG'
+'ÌNG' + 'Q' > 'ÍNG'
+'ÓNG' + 'X' > 'ÒNG'
+'ÒNG' + 'Q' > 'ÓNG'
+'ÚNG' + 'X' > 'ÙNG'
+'ÙNG' + 'Q' > 'ÚNG'
+'Ǵ' + 'x' > 'G̀'
+'G̀' + 'q' > 'Ǵ'
+'ÁNG' + 'x' > 'ÀNG'
+'ÀNG' + 'q' > 'ÁNG'
+'ÍNG' + 'x' > 'ÌNG'
+'ÌNG' + 'q' > 'ÍNG'
+'ÓNG' + 'x' > 'ÒNG'
+'ÒNG' + 'q' > 'ÓNG'
+'ÚNG' + 'x' > 'ÙNG'
+'ÙNG' + 'q' > 'ÚNG'
+'Áng' + 'x' > 'Àng'
+'Àng' + 'q' > 'Áng'
+'Íng' + 'x' > 'Ìng'
+'Ìng' + 'q' > 'Íng'
+'Óng' + 'x' > 'Òng'
+'Òng' + 'q' > 'Óng'
+'Úng' + 'x' > 'Ùng'
+'Ùng' + 'q' > 'Úng'
 
 + [K_QUOTE] > '‘'
 + [SHIFT K_QUOTE] > '“'
@@ -481,6 +587,7 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 
 "æ" + [K_QUOTE] > "æ’"
 "ǽ" + [K_QUOTE] > "ǽ’"
+"ǽ" + [K_QUOTE] > "ǽ’"
 "æ̀" + [K_QUOTE] > "æ̀’"
 "ï" + [K_QUOTE] > "ï’"
 "ḯ" + [K_QUOTE] > "ḯ’"
@@ -488,24 +595,26 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "û" + [K_QUOTE] > "û’"
 "û́" + [K_QUOTE] > "û́’"
 "û̀" + [K_QUOTE] > "û̀’"
-"ü" + [K_QUOTE] > "ü’"
-"ǘ" + [K_QUOTE] > "ǘ’"
-"ǜ" + [K_QUOTE] > "ǜ’"
+"ǘ" + [K_QUOTE] > "ǘ’"
+"ǜ" + [K_QUOTE] > "ǜ’"
 "ö" + [K_QUOTE] > "ö’"
 "ö́" + [K_QUOTE] > "ö́’"
 "ö̀" + [K_QUOTE] > "ö̀’"
-"ḿ" + [K_QUOTE] > "ḿ’"
+"ḿ" + [K_QUOTE] > "ḿ’"
 "m̀" + [K_QUOTE] > "m̀’"
 "m̌" + [K_QUOTE] > "m̌’"
-"ń" + [K_QUOTE] > "ń’"
-"ǹ" + [K_QUOTE] > "ǹ’"
+"ń" + [K_QUOTE] > "ń’"
+"ǹ" + [K_QUOTE] > "ǹ’"
 "ň" + [K_QUOTE] > "ň’"
 "l̆" + [K_QUOTE] > "l̆’"
-"ź" + [K_QUOTE] > "ź’"
+"ź" + [K_QUOTE] > "ź’"
 "z̀" + [K_QUOTE] > "z̀’"
+"ǵ" + [K_QUOTE] > "ǵ’"
+"g̀" + [K_QUOTE] > "g̀’"
 
 "Æ" + [K_QUOTE] > "Æ’"
 "Ǽ" + [K_QUOTE] > "Ǽ’"
+"Ǽ" + [K_QUOTE] > "Ǽ’"
 "Æ̀" + [K_QUOTE] > "Æ̀’"
 "Ï" + [K_QUOTE] > "Ï’"
 "Ḯ" + [K_QUOTE] > "Ḯ’"
@@ -513,24 +622,26 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "Û" + [K_QUOTE] > "Û’"
 "Û́" + [K_QUOTE] > "Û́’"
 "Û̀" + [K_QUOTE] > "Û̀’"
-"Ü" + [K_QUOTE] > "Ü’"
-"Ǘ" + [K_QUOTE] > "Ǘ’"
-"Ǜ" + [K_QUOTE] > "Ǜ’"
+"Ǘ" + [K_QUOTE] > "Ǘ’"
+"Ǜ" + [K_QUOTE] > "Ǜ’"
 "Ö" + [K_QUOTE] > "Ö’"
 "Ö́" + [K_QUOTE] > "Ö́’"
 "Ö̀" + [K_QUOTE] > "Ö̀’"
-"Ḿ" + [K_QUOTE] > "Ḿ’"
+"Ḿ" + [K_QUOTE] > "Ḿ’"
 "M̀" + [K_QUOTE] > "M̀’"
 "M̌" + [K_QUOTE] > "M̌’"
-"Ń" + [K_QUOTE] > "Ń’"
-"Ǹ" + [K_QUOTE] > "Ǹ’"
+"Ń" + [K_QUOTE] > "Ń’"
+"Ǹ" + [K_QUOTE] > "Ǹ’"
 "Ň" + [K_QUOTE] > "Ň’"
 "L̆" + [K_QUOTE] > "L̆’"
-"Ź" + [K_QUOTE] > "Ź’"
+"Ź" + [K_QUOTE] > "Ź’"
 "Z̀" + [K_QUOTE] > "Z̀’"
+"Ǵ" + [K_QUOTE] > "Ǵ’"
+"G̀" + [K_QUOTE] > "G̀’"
 
 "æ" + [SHIFT K_QUOTE] > "æ”"
 "ǽ" + [SHIFT K_QUOTE] > "ǽ”"
+"ǽ" + [SHIFT K_QUOTE] > "ǽ”"
 "æ̀" + [SHIFT K_QUOTE] > "æ̀”"
 "ï" + [SHIFT K_QUOTE] > "ï”"
 "ḯ" + [SHIFT K_QUOTE] > "ḯ”"
@@ -538,24 +649,26 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "û" + [SHIFT K_QUOTE] > "û”"
 "û́" + [SHIFT K_QUOTE] > "û́”"
 "û̀" + [SHIFT K_QUOTE] > "û̀”"
-"ü" + [SHIFT K_QUOTE] > "ü”"
-"ǘ" + [SHIFT K_QUOTE] > "ǘ”"
-"ǜ" + [SHIFT K_QUOTE] > "ǜ”"
+"ǘ" + [SHIFT K_QUOTE] > "ǘ”"
+"ǜ" + [SHIFT K_QUOTE] > "ǜ”"
 "ö" + [SHIFT K_QUOTE] > "ö”"
 "ö́" + [SHIFT K_QUOTE] > "ö́”"
 "ö̀" + [SHIFT K_QUOTE] > "ö̀”"
-"ḿ" + [SHIFT K_QUOTE] > "ḿ”"
+"ḿ" + [SHIFT K_QUOTE] > "ḿ”"
 "m̀" + [SHIFT K_QUOTE] > "m̀”"
 "m̌" + [SHIFT K_QUOTE] > "m̌”"
-"ń" + [SHIFT K_QUOTE] > "ń”"
-"ǹ" + [SHIFT K_QUOTE] > "ǹ”"
+"ń" + [SHIFT K_QUOTE] > "ń”"
+"ǹ" + [SHIFT K_QUOTE] > "ǹ”"
 "ň" + [SHIFT K_QUOTE] > "ň”"
 "l̆" + [SHIFT K_QUOTE] > "l̆”"
-"ź" + [SHIFT K_QUOTE] > "ź”"
+"ź" + [SHIFT K_QUOTE] > "ź”"
 "z̀" + [SHIFT K_QUOTE] > "z̀”"
+"ǵ" + [SHIFT K_QUOTE] > "ǵ”"
+"g̀" + [SHIFT K_QUOTE] > "g̀”"
 
 "Æ" + [SHIFT K_QUOTE] > "Æ”"
 "Ǽ" + [SHIFT K_QUOTE] > "Ǽ”"
+"Ǽ" + [SHIFT K_QUOTE] > "Ǽ”"
 "Æ̀" + [SHIFT K_QUOTE] > "Æ̀”"
 "Ï" + [SHIFT K_QUOTE] > "Ï”"
 "Ḯ" + [SHIFT K_QUOTE] > "Ḯ”"
@@ -563,21 +676,22 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "Û" + [SHIFT K_QUOTE] > "Û”"
 "Û́" + [SHIFT K_QUOTE] > "Û́”"
 "Û̀" + [SHIFT K_QUOTE] > "Û̀”"
-"Ü" + [SHIFT K_QUOTE] > "Ü”"
-"Ǘ" + [SHIFT K_QUOTE] > "Ǘ”"
-"Ǜ" + [SHIFT K_QUOTE] > "Ǜ”"
+"Ǘ" + [SHIFT K_QUOTE] > "Ǘ”"
+"Ǜ" + [SHIFT K_QUOTE] > "Ǜ”"
 "Ö" + [SHIFT K_QUOTE] > "Ö”"
 "Ö́" + [SHIFT K_QUOTE] > "Ö́”"
 "Ö̀" + [SHIFT K_QUOTE] > "Ö̀”"
-"Ḿ" + [SHIFT K_QUOTE] > "Ḿ”"
+"Ḿ" + [SHIFT K_QUOTE] > "Ḿ”"
 "M̀" + [SHIFT K_QUOTE] > "M̀”"
 "M̌" + [SHIFT K_QUOTE] > "M̌”"
-"Ń" + [SHIFT K_QUOTE] > "Ń”"
-"Ǹ" + [SHIFT K_QUOTE] > "Ǹ”"
+"Ń" + [SHIFT K_QUOTE] > "Ń”"
+"Ǹ" + [SHIFT K_QUOTE] > "Ǹ”"
 "Ň" + [SHIFT K_QUOTE] > "Ň”"
 "L̆" + [SHIFT K_QUOTE] > "L̆”"
-"Ź" + [SHIFT K_QUOTE] > "Ź”"
+"Ź" + [SHIFT K_QUOTE] > "Ź”"
 "Z̀" + [SHIFT K_QUOTE] > "Z̀”"
+"Ǵ" + [SHIFT K_QUOTE] > "Ǵ”"
+"G̀" + [SHIFT K_QUOTE] > "G̀”"
 
 "á" + [K_QUOTE] > "á’"
 "à" + [K_QUOTE] > "à’"
@@ -651,3 +765,47 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 "." + [SHIFT K_QUOTE] > ".”"
 "?" + [SHIFT K_QUOTE] > "?”"
 "!" + [SHIFT K_QUOTE] > "!”"
+
+'A' + 'a' > 'Æ'
+'a' + 'a' > 'æ'
+'A' + 'A' > 'Æ'
+'Æ' + 'a' > 'Aa'
+'æ' + 'a' > 'aa'
+'Æ' + 'A' > 'AA'
+
+'á' + 'e' > 'ǽ'
+'à' + 'e' > 'æ̀'
+'á' + 'a' > 'ǽ'
+'à' + 'a' > 'æ̀'
+'ú' + 'u' > 'û́'
+'ù' + 'u' > 'û̀'
+'ú' + 'w' > 'ǘ'
+'ù' + 'w' > 'ǜ'
+'ó' + 'o' > 'ö́'
+'ò' + 'o' > 'ö̀'
+'í' + 'i' > 'ḯ'
+'ì' + 'i' > 'ï̀'
+'Á' + 'E' > 'Ǽ'
+'À' + 'E' > 'Æ̀'
+'Á' + 'A' > 'Ǽ'
+'À' + 'A' > 'Æ̀'
+'Ú' + 'U' > 'Û́'
+'Ù' + 'U' > 'Û̀'
+'Ú' + 'W' > 'Ǘ'
+'Ù' + 'W' > 'Ǜ'
+'Ó' + 'O' > 'Ö́'
+'Ò' + 'O' > 'Ö̀'
+'Í' + 'I' > 'Ḯ'
+'Ì' + 'I' > 'Ï̀'
+'Á' + 'e' > 'Ǽ'
+'À' + 'e' > 'Æ̀'
+'Á' + 'a' > 'Ǽ'
+'À' + 'a' > 'Æ̀'
+'Ú' + 'u' > 'Û́'
+'Ù' + 'u' > 'Û̀'
+'Ú' + 'w' > 'Ǘ'
+'Ù' + 'w' > 'Ǜ'
+'Ó' + 'o' > 'Ö́'
+'Ò' + 'o' > 'Ö̀'
+'Í' + 'i' > 'Ḯ'
+'Ì' + 'i' > 'Ï̀'
