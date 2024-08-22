@@ -1,6 +1,10 @@
 Naija Type Keyboard Change History
 =======================
 
+63 (2024-Aug-20)
+---------
+* Update osk help file and related css to improve website behavior
+
 62 (2024-Aug-13)
 ---------
 * Corrected the New line indent for Description element
