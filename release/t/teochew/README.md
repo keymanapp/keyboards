@@ -1,13 +1,14 @@
 teochew keyboard
 ==============
 
+Version 1.1
+
 Description
 -----------
-teochew for Teochow language, Tiê-chiu Pe̍h-ūe-jī.
+teochew keyboard for Teochewnese Tiê-chiu Pe̍h-ūe-jī
 
 Links
 -----
-https://keyman.com/keyboards/teochew
 
 Copyright
 ---------
