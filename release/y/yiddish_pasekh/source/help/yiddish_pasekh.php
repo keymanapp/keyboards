@@ -13,7 +13,7 @@ END;
 <p>This keyboard layout is designed to type Yiddish by transliteration.</p>
 
 <p>This keyboard layout works best with a QWERTY (English) keyboard. It uses standard Unicode fonts. Many common Windows fonts support Yiddish, including Times New Roman and Arial. Use the Font Helper in Keyman Desktop to find more fonts that work with Yiddish.</p>
-<p>This keyboard complies with Unicode 5.1</p>.1</p>
+<p>This keyboard complies with Unicode 5.1</p>
 
 
 <div id='osk-container'>
