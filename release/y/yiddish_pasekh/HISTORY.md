@@ -1,6 +1,14 @@
 Yiddish Pasekh Keyboard Change History
 =======================
 
+2.0 (23 Aug 2024)
+-----------------
+* Added keystroke to access pe
+* Added keystroke to access vav+dagesh/mapiq
+* Updated language tags to use canonical tags
+* Updated documentation
+* Tidied code to remove rules which were not fired because of prior rules
+
 1.9 (4 Mar 2021)
 -----------------
 * Added keystroke to access yod+hiriq
