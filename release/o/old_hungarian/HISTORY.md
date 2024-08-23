@@ -1,5 +1,8 @@
 Old Hungarian Change History
 ====================
+1.8 (2024-08-23)
+-------------------
+*Prepared a problem in mobile layout caps level: appeared "eK" symbol instead of "aK" symbol before-
 
 1.7.9 (2024-08-20)
 ------------------
