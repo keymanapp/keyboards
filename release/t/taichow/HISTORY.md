@@ -1,7 +1,7 @@
 taichow Change History
 ====================
 
-1.0.2 (2024-08-25)
+1.0.3 (2024-08-25)
 ----------------
 * Updated by cathaylab
 * fixed bug “shi” to “shyi”
@@ -9,6 +9,11 @@ taichow Change History
 * added the rule to generate chʽ
 * added new rules to prevent unexpected consonants transformation
 * replaced the letter ǘ, ǜ, ź, ń, ǹ, ḿ and ǽ with single code
+
+1.0.2 (2024-08-15)
+----------------
+* Updated by cathaylab
+* removed ya > yia rule
 
 1.0.1 (2024-08-10)
 ----------------
