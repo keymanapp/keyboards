@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.225.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Hindi Devanagari Phonetic (ITRANS)</Folder>
@@ -55,10 +56,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Hindi Devanagari Phonetic (ITRANS)</Name>
-    <Copyright URL="">© 2019-2023 sanskritdocuments.org</Copyright>
+    <Copyright URL="">© sanskritdocuments.org</Copyright>
     <Author URL="">Shree Devi Kumar</Author>
     <WebSite URL="https://sanskritdocuments.org/hindi/">https://sanskritdocuments.org/hindi/</WebSite>
-    <Description>A Phonetic (ITRANS) keyboard layout for Hindi, Sanskrit, Marathi and
+    <Description URL="">A Phonetic (ITRANS) keyboard layout for Hindi, Sanskrit, Marathi and
 other languages written in Devanagari script.</Description>
   </Info>
   <Files>
@@ -139,29 +140,47 @@ other languages written in Devanagari script.</Description>
     <Keyboard>
       <Name>Hindi Devanagari Phonetic (ITRANS)</Name>
       <ID>itrans_devanagari_hindi</ID>
-      <Version>1.2.1</Version>
+      <Version>1.4.0</Version>
       <OSKFont>..\..\..\shared\fonts\deva\siddhanta\siddhanta.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\deva\siddhanta\siddhanta.ttf</DisplayFont>
       <Languages>
         <Language ID="hi">Hindi</Language>
         <Language ID="mr">Marathi</Language>
-        <Language ID="sa-Deva">Sanskrit (Devanagari)</Language>
-        <Language ID="bh-Deva">Bihari languages (Devanagari)</Language>
-        <Language ID="mai-Deva">Maithili (Devanagari)</Language>
-        <Language ID="awa-Deva">Awadhi (Devanagari)</Language>
-        <Language ID="bra-Deva">Braj (Devanagari)</Language>
-        <Language ID="mag-Deva">Magahi (Devanagari)</Language>
-        <Language ID="raj-Deva">Rajasthani (Devanagari)</Language>
-        <Language ID="kok-Deva">Konkani (macrolanguage) (Devanagari)</Language>
-        <Language ID="gom-Deva">Goan Konkani (Devanagari)</Language>
+        <Language ID="sa">Sanskrit</Language>
+        <Language ID="bho">Bhojpuri</Language>
+        <Language ID="mai">Maithili</Language>
+        <Language ID="awa">Awadhi</Language>
+        <Language ID="bra">Braj</Language>
+        <Language ID="mag">Magahi</Language>
+        <Language ID="raj">Rajasthani</Language>
+        <Language ID="kok">Konkani (macrolanguage)</Language>
+        <Language ID="gom">Goan Konkani</Language>
         <Language ID="knn-Deva">Konkani (individual language) (Devanagari)</Language>
-        <Language ID="hne-Deva">Chhattisgarhi (Devanagari)</Language>
-        <Language ID="bgc-Deva">Haryanvi (Devanagari)</Language>
-        <Language ID="sck-Deva">Sadri (Devanagari)</Language>
+        <Language ID="hne">Chhattisgarhi</Language>
+        <Language ID="bgc">Haryanvi</Language>
+        <Language ID="sck">Sadri</Language>
         <Language ID="sdr-Deva">Oraon Sadri (Devanagari)</Language>
-        <Language ID="bho-Deva">Bhojpuri (Devanagari)</Language>
-        <Language ID="npi-Deva">Nepali (individual language) (Devanagari)</Language>
+        <Language ID="ne">Nepali (macrolanguage)</Language>
       </Languages>
+      <Examples>
+        <Example ID="hi" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="mr" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="sa" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="bho" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="mai" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="awa" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="bra" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="mag" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="raj" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="kok" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="gom" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="knn-Deva" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="hne" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="bgc" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="sck" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="sdr-Deva" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+        <Example ID="ne" Keys="saMskRRta" Text="संस्कृत" Note=""/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

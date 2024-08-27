@@ -1,6 +1,10 @@
 Bengali Phonetic (ITRANS) Version History
 ===========================
 
+1.1.0 (2024-08-27)
+------------------
+* Add Mobile layout
+
 1.0.2 (2024-02-08)
 ------------------
 * Update a character key according to the keyboard document:
