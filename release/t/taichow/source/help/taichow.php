@@ -25,7 +25,7 @@
 <p> automatically generate ông and w̆ by typing in Wu association romanization 使用吳語協會拼音輸入方式，自動產生ông咾w̆ </p>
 <p> examples: aon > ông, ua > w̆a. </p>
 <p> automatically predict “yi” combinatiön 自動預知“yi”搭配 </p>
-<p> examples: ki > kyi, ni > nyi. </p>
+<p> examples: ki > kyi, ni > nyi, ya > yia. </p>
 <p> cancelling letter tranformation and tone marks by typing the tranformation key again</p>
 <p> 再撳一記轉化鍵，取消字母轉化咾音調符號 </p>
 <p> examples: aqq > aq, axx > ax, ooo > oo. </p>
