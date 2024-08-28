@@ -1,10 +1,11 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Gurmukhi WinScript (NLCI)'
 store(&COPYRIGHT) '© NLCI, Bangalore'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '2.1'
 store(&BITMAP) 'nlci_gurmukhi_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_gurmukhi_winscript.kvks'
-store(&TARGETS) 'web desktop'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'nlci_gurmukhi_winscript.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -97,7 +98,6 @@ c Adjust the behavior of O
 c Adjust the behavior of X
 any(consonants) + 'X' > context '੍' U+200C
 any(consonants) '੍' + 'X' > context U+200C
-U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]}-/;\~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
@@ -146,7 +146,6 @@ any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + virama
 any (consonants) + 'x' > context '੍'          
-any(vowels) + 'x' > context '੍'   
 
 c vowels + virama
 any(vowels) + 'x' > context '੍' 

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">IPA (NLCI)</Name>
-    <Copyright URL="">© 2002-2022 NLCI, Bangalore</Copyright>
+    <Copyright URL="">© NLCI, Bangalore</Copyright>
     <Author URL="mailto:support@nlife.in">Binila Sanki SG, NLCI</Author>
-    <Description>This Keyboard mimic IPA WinScript Keyboard Layout designed by NLCI in
+    <Description URL="">This Keyboard mimic IPA WinScript Keyboard Layout designed by NLCI in
 1988. Several linguists and members of translation community are still
 using this keyboard layout for keyboarding the text. This is a phonetic
 based keyboarding system designed with the objective of keyboarding text
@@ -59,19 +60,25 @@ of occurance, yet tried to follow a phonetic based keyboarding system.</Descript
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\nlci_ipa.js</Name>
+      <Description>File nlci_ipa.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>NLCI IPA</Name>
+      <Name>IPA (NLCI)</Name>
       <ID>nlci_ipa</ID>
-      <Version>2.0</Version>
+      <Version>2.1</Version>
       <Languages>
         <Language ID="und-Latn">und-Latn</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="sil_ipa" />
+    <RelatedPackage ID="sil_ipa"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
