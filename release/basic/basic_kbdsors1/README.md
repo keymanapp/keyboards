@@ -1,9 +1,7 @@
 Sorbian Standard Basic keyboard
 ==============
 
-© 2009-2020 SIL International
-
-Version 1.1
+© SIL International
 
 Description
 -----------
@@ -22,3 +20,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
