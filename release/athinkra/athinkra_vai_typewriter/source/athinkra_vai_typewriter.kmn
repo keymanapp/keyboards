@@ -1,4 +1,4 @@
-c
+﻿c
 c
 c
 c Keyboard for Robertsport font 
@@ -8,10 +8,11 @@ c
 store(&VERSION) "10.0"
 store(&NAME) "Vai Typewriter (Athinkra)"
 store(&BITMAP) 'athinkra_vai_typewriter.ico'
-store(&TARGETS) 'web desktop'
-store(&COPYRIGHT) '© 2008-2020 Athinkra, LLC'
-store(&KEYBOARDVERSION) '1.2.1'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© Athinkra, LLC'
+store(&KEYBOARDVERSION) '1.3'
 store(&VISUALKEYBOARD) 'athinkra_vai_typewriter.kvks'
+store(&LAYOUTFILE) 'athinkra_vai_typewriter.keyman-touch-layout'
 
 begin Unicode > use(Umain)
 store(blank) "`1234567890-=wtp[]\sfghkl;'zcnm,./~!@#$%^&*()_+{}|:<>?" '"'
@@ -207,7 +208,7 @@ U+0257 + "a" > U+A560
 U+0257 + "o" > U+A585
 U+0257 + "u" > U+A5AA
 U+0257 + "y" > U+A5D1 
-"d" + "q" > U+A5F9
+U+0257 + "q" > U+A5F9
 
 + "D" > "n" U+0257
 "n" U+0257 + "e" > U+A515
@@ -378,7 +379,7 @@ c Punctuation and extraneous keys
 + [SHIFT RALT K_RBRKT] > U+2019
 + [RALT K_G] > U+00A9
 + [RALT K_W] > U+00A4
-+ [RALT K_D] > U+00AE
++ [SHIFT RALT K_D] > U+00AE
 + [RALT K_Y] > U+00A5 
 + [RALT K_O] > U+00B0
 + [RALT K_1] > U+A60C

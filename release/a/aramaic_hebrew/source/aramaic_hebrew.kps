@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Aramaic (Hebrew layout)</Name>
-    <Copyright URL="">© 2007-2018 SIL International</Copyright>
-    <Description>Aramaic (Hebrew layout) is designed for use with Aramaic, Syriac and
+    <Copyright URL="">© SIL International</Copyright>
+    <Description URL="">Aramaic (Hebrew layout) is designed for use with Aramaic, Syriac and
 related languages. The Aramaic (Hebrew layout) keyboard was originally
 created by Illan Gonen and is based on the Hebrew standard keyboard
 layout.
@@ -299,16 +300,17 @@ Mardutho: The Syriac Institute](http://www.BethMardutho.org/).</Description>
       <Name>Aramaic (Hebrew layout)</Name>
       <ID>aramaic_hebrew</ID>
       <Version>1.2</Version>
+      <RTL>True</RTL>
       <Languages>
-        <Language ID="syr-Syrc">Syriac (Syriac)</Language>
-        <Language ID="aii-Syrc">Assyrian Neo-Aramaic (Syriac)</Language>
+        <Language ID="syr">Syriac</Language>
+        <Language ID="aii">Assyrian Neo-Aramaic</Language>
         <Language ID="amw-Syrj">Western Neo-Aramaic (Syriac (Western variant))</Language>
         <Language ID="arc-Syrc">Official Aramaic (700-300 BCE) (Syriac)</Language>
-        <Language ID="bhn-Syrc">Bohtan Neo-Aramaic (Syriac)</Language>
-        <Language ID="bjf-Syrc">Barzani Jewish Neo-Aramaic (Syriac)</Language>
-        <Language ID="cld-Syrc">Chaldean Neo-Aramaic (Syriac)</Language>
-        <Language ID="hrt-Syrc">Hértevin (Syriac)</Language>
-        <Language ID="kqd-Syrc">Koy Sanjaq Surat (Syriac)</Language>
+        <Language ID="bhn">Bohtan Neo-Aramaic</Language>
+        <Language ID="bjf">Barzani Jewish Neo-Aramaic</Language>
+        <Language ID="cld">Chaldean Neo-Aramaic</Language>
+        <Language ID="hrt">Hértevin</Language>
+        <Language ID="kqd">Koy Sanjaq Surat</Language>
         <Language ID="lhs-Syrc">Mlahsö (Syriac)</Language>
         <Language ID="oar-Syrc">Old Aramaic (up to 700 BCE) (Syriac)</Language>
         <Language ID="sam-Syrc">Samaritan Aramaic (Syriac)</Language>
@@ -319,8 +321,8 @@ Mardutho: The Syriac Institute](http://www.BethMardutho.org/).</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="aramaic" Relationship="deprecates" />
+    <RelatedPackage ID="aramaic" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
