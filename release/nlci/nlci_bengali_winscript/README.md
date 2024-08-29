@@ -1,4 +1,5 @@
 # Bengali WinScript (NLCI) Keyboard
+====================
 
 Copyright (c) NLCI, Bangalore
 
@@ -11,4 +12,6 @@ This Keyboard mimic Bengali WinScript Keyboard Layout designed by NLCI in 1988. 
  * macOS
  * Web
  * Linux
+ * Mobile
+ 
  
