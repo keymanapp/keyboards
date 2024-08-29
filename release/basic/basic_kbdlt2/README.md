@@ -1,9 +1,7 @@
 Lithuanian Standard Basic keyboard
 ==============
 
-(c) 2009-2020 SIL International
-
-Version 1.1
+(c) SIL International
 
 Description
 -----------
@@ -22,4 +20,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 
