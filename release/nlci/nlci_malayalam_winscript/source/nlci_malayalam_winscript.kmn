@@ -1,10 +1,11 @@
 ﻿store (&VERSION) '10.0'
-store(&NAME) 'Malayalam WinScript(NLCI)'
-store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
-store(&KEYBOARDVERSION) '2.0'
+store(&NAME) 'Malayalam WinScript (NLCI)'
+store(&COPYRIGHT) '© NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.1'
 store(&BITMAP) 'nlci_malayalam_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_malayalam_winscript.kvks'
-store(&TARGETS) 'web desktop'
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'nlci_malayalam_winscript.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -85,7 +86,6 @@ c Adjust the behavior of f
 c Adjust the behavior of X
 any(consonants) + 'X' > context '്' U+200C
 any(consonants) '്' + 'X' > context U+200C
-U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
 
@@ -158,7 +158,6 @@ any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + chandrakala
 any (consonants) + 'x' > context '്'      
-any(vowels) + 'x' > context '്'   
 
 c vowels + chandrakala
 any(vowels) + 'x' > context '്' 
