@@ -1,7 +1,7 @@
 Dari (CLRA) Change History
 ====================
 
-2.2 (2024-08-30)
+1.1 (2024-08-30)
 ----------------
 * Added tablet layout
 
