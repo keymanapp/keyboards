@@ -3,9 +3,7 @@
   <Options>
     <BuildPath>$PROJECTPATH\build</BuildPath>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
-    <WarnDeprecatedCode>True</WarnDeprecatedCode>
     <CheckFilenameConventions>True</CheckFilenameConventions>
-    <ProjectType>keyboard</ProjectType>
   </Options>
   <Files>
     <File>
@@ -14,7 +12,10 @@
       <Filepath>source\korean_phonetic.kmn</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.kmn</FileType>
-      <Details/>
+      <Details>
+        <Name>Korean Phonetic</Name>
+        <Copyright>© SIL International</Copyright>
+      </Details>
     </File>
     <File>
       <ID>id_e980c3db4edf824efaafdc2583a38e9e</ID>
@@ -64,9 +65,9 @@
       <ParentFileID>id_f709179428235d9da4a6699b0afd7e01</ParentFileID>
     </File>
     <File>
-      <ID>id_e07bfe9f3008b23a8b62125b5807aa28</ID>
+      <ID>id_7aad4fceb9e4a265d44451b0a9db7dbd</ID>
       <Filename>korean_phonetic.kmx</Filename>
-      <Filepath>build\korean_phonetic.kmx</Filepath>
+      <Filepath>source\..\build\korean_phonetic.kmx</Filepath>
       <FileVersion></FileVersion>
       <FileType>.kmx</FileType>
       <ParentFileID>id_e980c3db4edf824efaafdc2583a38e9e</ParentFileID>
@@ -112,11 +113,19 @@
       <ParentFileID>id_e980c3db4edf824efaafdc2583a38e9e</ParentFileID>
     </File>
     <File>
-      <ID>id_5e5b15035d171995901be47044d6de23</ID>
+      <ID>id_4bb3623573ca11f805a54a5347193be3</ID>
       <Filename>korean_phonetic.kvk</Filename>
-      <Filepath>build\korean_phonetic.kvk</Filepath>
+      <Filepath>source\..\build\korean_phonetic.kvk</Filepath>
       <FileVersion></FileVersion>
       <FileType>.kvk</FileType>
+      <ParentFileID>id_e980c3db4edf824efaafdc2583a38e9e</ParentFileID>
+    </File>
+    <File>
+      <ID>id_c296b5df3dc126e219e0173fcbc1baec</ID>
+      <Filename>LICENSE.md</Filename>
+      <Filepath>source\..\LICENSE.md</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.md</FileType>
       <ParentFileID>id_e980c3db4edf824efaafdc2583a38e9e</ParentFileID>
     </File>
   </Files>
