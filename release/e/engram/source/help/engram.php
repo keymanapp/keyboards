@@ -5,8 +5,6 @@
   require_once('header.php');
 ?>
 
-<h1>Arno's Engram key layout</h1>
-
 <p>The Engram layout (<a href="https://engram.dev">website</a> and <a href="https://github.com/binarybottle/engram-layout">GitHub repo</a>) 
 is a keyboard layout optimized for comfortable and efficient touch typing in English created by <a href="https://binarybottle.com">Arno Klein</a>, 
 with open source code to create other optimized key layouts.
@@ -23,10 +21,8 @@ and logic symbols (accessed by the Shift Key):</p>
 &nbsp;&nbsp;&nbsp;&nbsp; gG &nbsp;&nbsp; xX &nbsp;&nbsp; jJ &nbsp;&nbsp; kK &nbsp;&nbsp; -_ &nbsp;&nbsp; ?! &nbsp;&nbsp; rR &nbsp;&nbsp; mM &nbsp;&nbsp; fF &nbsp;&nbsp; pP                 
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>
 
-<p>© 2021 Arno Klein</p>
+<p>© Arno Klein</p>
