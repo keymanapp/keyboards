@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.109.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Greek Classical</Folder>
@@ -33,11 +34,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Greek Classical</Name>
-    <Copyright URL="">© 2003-2020 Manuel A. Lopez and SIL International</Copyright>
+    <Copyright URL="">© Manuel A. Lopez and SIL International</Copyright>
     <Version URL=""></Version>
     <Author URL="mailto:lopez.post@gmail.com">Manuel Lopez</Author>
     <WebSite URL=""></WebSite>
-    <Description>Classical Greek keyboard with full visual feedback on accentuation.
+    <Description URL="">Classical Greek keyboard with full visual feedback on accentuation.
 Automatically changes sigma at word end to final sigma. Compatible with
 the widely-used, friendly \"BetaCode\" accent system. Includes all
 accents and marks, including diareses, iota subscripts, macrons and
@@ -158,21 +159,27 @@ breves, for both capital and small letters.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\greekclassical.js</Name>
+      <Description>File greekclassical.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Greek Classical</Name>
       <ID>greekclassical</ID>
-      <Version>1.2</Version>
+      <Version>1.3</Version>
       <OSKFont>..\..\..\shared\fonts\sil\galatia\GalSILR.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\galatia\GalSILB.ttf</DisplayFont>
       <Languages>
-        <Language ID="cpg-Grek">Cappadocian Greek (Greek)</Language>
+        <Language ID="cpg">Cappadocian Greek</Language>
         <Language ID="el">Modern Greek (1453-)</Language>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
-        <Language ID="pnt-Grek">Pontic (Greek)</Language>
-        <Language ID="tsd-Grek">Tsakonian (Greek)</Language>
-        <Language ID="yej-Grek">Yevanic (Greek)</Language>
+        <Language ID="pnt">Pontic</Language>
+        <Language ID="tsd">Tsakonian</Language>
+        <Language ID="yej">Yevanic</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

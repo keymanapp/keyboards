@@ -14,6 +14,6 @@ This keyboard is designed for use with the <a href="https://en.wikipedia.org/wik
 <br/>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift ctrl-alt shift-ctrl-alt'>
+<div id='osk' data-states='default shift ctrl-alt'>
 </div>
 

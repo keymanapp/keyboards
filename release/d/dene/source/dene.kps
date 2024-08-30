@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.106.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Dene</Name>
-    <Copyright URL="">(c) 2013-2020 Jim Stauffer</Copyright>
-    <Description>This keyboard layout is designed for the Dene, Tlicho, North Slavy,
+    <Copyright URL="">(c) Jim Stauffer</Copyright>
+    <Description URL="">This keyboard layout is designed for the Dene, Tlicho, North Slavy,
 south Slavy, and Gwich\'in languages of Canada.</Description>
   </Info>
   <Files>
@@ -72,23 +73,29 @@ south Slavy, and Gwich\'in languages of Canada.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\dene.js</Name>
+      <Description>File dene.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dene</Name>
       <ID>dene</ID>
-      <Version>2.1</Version>
+      <Version>2.2</Version>
       <Languages>
-        <Language ID="dgr-Latn">Dogrib (Latin)</Language>
-        <Language ID="chp-Latn">Chipewyan (Latin)</Language>
-        <Language ID="scs-Latn">North Slavey (Latin)</Language>
-        <Language ID="xsl-Latn">South Slavey (Latin)</Language>
-        <Language ID="gwi-Latn">Gwichʼin (Latin)</Language>
+        <Language ID="dgr">Dogrib</Language>
+        <Language ID="chp">Chipewyan</Language>
+        <Language ID="scs">North Slavey</Language>
+        <Language ID="xsl">South Slavey</Language>
+        <Language ID="gwi">Gwichʼin</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="deneunicode" Relationship="deprecates" />
+    <RelatedPackage ID="deneunicode" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
