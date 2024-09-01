@@ -77,38 +77,38 @@ store(MutuyoRegularNumberKeys) '123457-'
 store(MutuyoCombiningNumberKeys) '6890='
 store(MutuyoKeys) '1234567890-='
 
-store(󰀀_InvalidMituyo) '12467890-'
-store(󰀁_InvalidMituyo) '347-='
-store(󰀂_InvalidMituyo) '2890-'
-store(󰀃_InvalidMituyo) '2470-='
-store(󰀄_InvalidMituyo) '12470-'
-store(󰀅_InvalidMituyo) '247890-'
+store(󰀀_InvalidMituyo) '12467890'  c '12467890-'
+store(󰀁_InvalidMituyo) '347='
+store(󰀂_InvalidMituyo) '2890'        c '2890-'
+store(󰀃_InvalidMituyo) '240='       c '2470-='
+store(󰀄_InvalidMituyo) '2470-'      c '12470-'
+store(󰀅_InvalidMituyo) '24890'     c '247890-'
 store(󰀆_InvalidMituyo) '12347890='
 store(󰀇_InvalidMituyo) '2347890'
-store(󰀈_InvalidMituyo) '2467890-'
-store(󰀉_InvalidMituyo) '12467890-='
-store(󰀊_InvalidMituyo) '2890-'
+store(󰀈_InvalidMituyo) '2467890'     c '2467890-'
+store(󰀉_InvalidMituyo) '2467890-='  c '12467890-='
+store(󰀊_InvalidMituyo) '2890'           c '2890-'
 store(󰀋_InvalidMituyo) '2347890-'
-store(󰀌_InvalidMituyo) '234890-='
+store(󰀌_InvalidMituyo) '234890='     c '234890-='
 store(󰀍_InvalidMituyo) '234890'
 store(󰀎_InvalidMituyo) '2346890='
 store(󰀏_InvalidMituyo) '30-'
 store(󰀐_InvalidMituyo) '2347890-'
-store(󰀑_InvalidMituyo) '247890-'
-store(󰀒_InvalidMituyo) '2347890-='
-store(󰀓_InvalidMituyo) '20-'
-store(󰀔_InvalidMituyo) '237890-='
+store(󰀑_InvalidMituyo) '247890'        c '247890-'
+store(󰀒_InvalidMituyo) '247890-='    c '2347890-='
+store(󰀓_InvalidMituyo) '20'                c '20-'
+store(󰀔_InvalidMituyo) '27890-='      c '237890-='
 store(󰀕_InvalidMituyo) '2347890-='
-store(󰀖_InvalidMituyo) '124789-='
+store(󰀖_InvalidMituyo) '24789='      c '124789-='
 store(󰀗_InvalidMituyo) '1234567890='
 store(󰀘_InvalidMituyo) '234567890='
-store(󰀙_InvalidMituyo) '2478-='
+store(󰀙_InvalidMituyo) '2478='          c '2478-='
 store(󰀚_InvalidMituyo) '2467890-='
 store(󰀛_InvalidMituyo) '24567890-='
-store(󰀜_InvalidMituyo) '12467890-='
-store(󰀝_InvalidMituyo) '124567890-='
+store(󰀜_InvalidMituyo) '2467890-='  c '12467890-='  
+store(󰀝_InvalidMituyo) '24567890-='  c '124567890-='
 store(󰀞_InvalidMituyo) '24567890-='
-store(󰀟_InvalidMituyo) '124567890-='
+store(󰀟_InvalidMituyo) '1246789-='
 store(󰀀_󰀦_InvalidMituyo) '12347890-='
 store(󰀀_󰀮_InvalidMituyo) '123457890-='
 store(󰀁_󰀤_InvalidMituyo) '12347890-='
@@ -122,7 +122,7 @@ store(󰀂__InvalidMituyo) '124567890-='
 store(󰀂_󰀳_InvalidMituyo) '123467890-='
 store(󰀂_󰀺_InvalidMituyo) '12347890-='
 store(󰀃_󰀤_InvalidMituyo) '1247890-='
-store(󰀃_󰀦_InvalidMituyo) '123467890-='
+store(󰀃_󰀦_InvalidMituyo) '123467890-'
 store(󰀃_󰀪_InvalidMituyo) '124567890-='
 store(󰀃_󰀮_InvalidMituyo) '123457890-='
 store(󰀃__InvalidMituyo) '124567890-='
@@ -216,7 +216,12 @@ store(󰀞_󰀤_InvalidMituyo) '123457890-='
 store(󰀞_󰀦_InvalidMituyo) '123467890-='
 store(󰀞__InvalidMituyo) '124567890-='
 store(󰀟_󰀦_InvalidMituyo) '123467890-='
-store(󰀟__InvalidMituyo) '12467890-='
+c store(󰀟__InvalidMituyo) '12467890-='
+
+store(MyuMituyo:menu) '[󰀰₃󰀵₅󰀤₆]'
+store(MyuMituyoKeys:index) ' 3 5  6'
+store(NiMituyo:menu) '[󰀹₄󰀦₆󰀦₌]'
+store(NiMituyoKeys:index) ' 4  6  ='
 
 begin Unicode > use(main)
 group(main) using keys
@@ -250,7 +255,7 @@ c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c
 
 '󰀦󰀀' + any(󰀀_󰀦_InvalidMituyo) > context "Z" beep
-'󰀮󰀀' + any(󰀀_󰀮_InvalidMituyo) > context beep
+'󰀮󰀀' + any(󰀀_󰀮_InvalidMituyo) > context "Y" beep
 '󰀤󰀁' + any(󰀁_󰀤_InvalidMituyo) > context beep
 '󰀥󰀁' + any(󰀁_󰀥_InvalidMituyo) > context beep
 '󰀁󰀭' + any(󰀁__InvalidMituyo) > context beep
@@ -356,7 +361,7 @@ c
 '󰀦󰀞' + any(󰀞_󰀦_InvalidMituyo) > context beep
 '󰀞󰀯' + any(󰀞__InvalidMituyo) > context beep
 '󰀦󰀟' + any(󰀟_󰀦_InvalidMituyo) > context beep
-'󰀟󰀭' + any(󰀟__InvalidMituyo) > context beep
+c '󰀟󰀭' + any(󰀟__InvalidMituyo) > context beep
 '󰀀' + any(󰀀_InvalidMituyo) > context beep
 '󰀁' + any(󰀁_InvalidMituyo) > context beep
 '󰀂' + any(󰀂_InvalidMituyo) > context beep
@@ -390,6 +395,85 @@ c
 '󰀞' + any(󰀞_InvalidMituyo) > context beep
 '󰀟' + any(󰀟_InvalidMituyo) > context beep
 
+c cccccccccccccccccccccccccccccccccccccccccccccccc
+c Special case compositions:
+c cccccccccccccccccccccccccccccccccccccccccccccccc
+c
+c TUMBA WAYA BELOW
+c
+'󰀀' + '-' > '󰀮󰀀󰀩'
+'󰀂' + '-' > '󰀮󰀂󰀩'
+'󰀃' + '-' > '󰀮󰀃󰀩'
+'󰀅' + '-' > '󰀮󰀅󰀩'
+'󰀈' + '-' > '󰀮󰀈󰀩'
+'󰀊' + '-' > '󰀮󰀊󰀩'
+'󰀌' + '-' > '󰀮󰀌󰀩'
+'󰀑' + '-' > '󰀮󰀑󰀩'
+'󰀓' + '-' > '󰀮󰀓󰀩'
+'󰀖' + '-' > '󰀮󰀖󰀩'
+'󰀘' + '-' > '󰀮󰀘󰀩'
+'󰀙' + '-' > '󰀮󰀙󰀩'
+'󰀀' any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀂'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀃'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀅'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀈'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀊'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀌'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀑'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀓'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀖'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀘'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀙'  any(Masiri) + '-' > '󰀮' context '󰀩'
+c
+c  SISA NI
+c
+'󰀃' + '7' > '󰀽󰀃'
+'󰀃' any(Masiri) + '7' > '󰀽' context
+'󰀅' + '7' > '󰀽󰀅'
+'󰀅' any(Masiri) + '7' > '󰀽' context
+
+c
+c NI WAYA BELOW
+c
+'󰀒' + '3' > '󰀤' context  '󰀦󰀒󰀩' 
+'󰀒' any(Masiri) + '3' > '󰀤' context  '󰀦󰀒󰀩' 
+
+
+c
+c
+c
+'󰀟' + '5' > '󰀨󰀟󰀭' 
+
+
+c
+c MYU WAYA BELOW
+c
+'󰀄' + '1' > '󰀤' context  '󰀩'     c Additionally,   '󰀄󰀩' + '6' >  '󰀤󰀄󰀩'  can be added, although it breaks the left-right/top-down mituyo composition logic
+'󰀄' any(Masiri) +  '1' > '󰀤' context  '󰀩'   
+
+'󰀉' + '1' > '󰀤' context  '󰀩'   
+'󰀉' any(Masiri) +  '1' > '󰀤' context  '󰀩'  
+
+'󰀎' + '1' > '󰀤' context  '󰀩'   
+'󰀎' any(Masiri) +  '1' > '󰀤' context  '󰀩'  
+
+'󰀖' + '1' > '󰀤' context  '󰀩'   
+'󰀖' any(Masiri) +  '1' > '󰀤' context  '󰀩'  
+
+'󰀜' + '1'  > context outs(MyuMituyo:menu)
+'󰀜' any(Masiri) + '1'  > context outs(MyuMituyo:menu)
+'󰀝' + '1'  > context outs(MyuMituyo:menu)
+'󰀝' any(Masiri) + '1'  > context outs(MyuMituyo:menu)
+outs(MyuMituyo:menu) + any(MyuMituyoKeys:index) > use (MyuMituyo:group)
+
+'󰀔' + '3' > context outs(NiMituyo:menu)
+'󰀔' any(Masiri) + '3' >  context outs(NiMituyo:menu)
+outs(NiMituyo:menu) + any(NiMituyoKeys:index) > use (NiMituyo:group)
+
+
+c '󰀝' outs(MyuMituyo:menu) + any(MyuMituyoKeys:index) > use (MyuMituyo:group)
+
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c  Lone Vowels:
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
@@ -403,14 +487,14 @@ c
 c
 c  These next two rules will change when the fonts are updated to present the visual order:
 c
-any(OrdersConsonants) + any(MutuyoRegularNumberKeys)   >  index(MutuyoRegular,2) context
-any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2)  "B"
-'󰀦󰀀'  + '6' > "yes"
+any(OrdersConsonants) + any(MutuyoRegularNumberKeys)     >  index(MutuyoRegular,2) context
+any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2)
+
 c any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,2) context(1) context(2)
 c any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context(1) context(2) index(MutuyoCombining,2)
 
-any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,3) context "C"
-any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,3) "D"
+any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)     > index(MutuyoRegular,3) context
+any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,3)
 
 c any(MwangwegoSyllables) + any(MutuyoRegularNumberKeys)     >  index(MutuyoRegular,2) context
 c any(MwangwegoSyllables) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2) 
@@ -428,24 +512,24 @@ c Mituyo in Myu
 '󰀤' any(MwangwegoSyllables) + '5' > '󰀵' context(2)
 
 c Mituyo in Mi
-'󰀥' any(MwangwegoSyllables) + '4' > '󰀷' context(2)
-'󰀷' any(MwangwegoSyllables) + '5' > '󰀸' context(2)
-'󰀥' any(MwangwegoSyllables) + '5' > '󰀹' context(2)
+'󰀥' any(MwangwegoSyllables) + '4' > '󰀶' context(2)
+'󰀶' any(MwangwegoSyllables) + '5' > '󰀷' context(2)
+'󰀥' any(MwangwegoSyllables) + '5' > '󰀸' context(2)
 
 c Mituyo in Ni
-'󰀦' any(MwangwegoSyllables) + '4' > '󰀺' context(2)
-'󰀺' any(MwangwegoSyllables) + '5' > '󰀻' context(2)
-'󰀦' any(MwangwegoSyllables) + '5' > '󰀼' context(2)
+'󰀦' any(MwangwegoSyllables) + '4' > '󰀹' context(2)
+'󰀹' any(MwangwegoSyllables) + '5' > '󰀺' context(2)
+'󰀦' any(MwangwegoSyllables) + '5' > '󰀻' context(2)
 
 c Mituyo in Hi
-'󰀧' any(MwangwegoSyllables) + '5' > '󰀽' context(2)
+'󰀧' any(MwangwegoSyllables) + '5' > '󰀼' context(2)
 
 c Mituyo in Sisa
-'󰀪' any(MwangwegoSyllables) + '3' > '󰀾' context(2) 
-'󰀾' any(MwangwegoSyllables) + '4' > '󰀿' context(2) 
+'󰀪' any(MwangwegoSyllables) + '3' > '󰀽' context(2) 
+'󰀽' any(MwangwegoSyllables) + '4' > '󰀾' context(2) 
 
 c Mituyo in Tumba
-'󰀮' any(MwangwegoSyllables) + '5' > '' context(2)
+'󰀮' any(MwangwegoSyllables) + '5' > '󰀿' context(2)
 
 c Mituyo in Pewa
 any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
@@ -490,3 +574,28 @@ c
 + [RALT K_0] > '0'
 + [RALT K_HYPHEN] > '-'
 + [RALT K_EQUALS] > '='
+
+group(MyuMituyo:group) using keys
+  '󰀜' + '3' > '󰀰' context  
+  '󰀝' + '3' > '󰀰' context
+  '󰀜' any(Masiri) + '3' > '󰀰' context
+  '󰀝' any(Masiri) + '3' > '󰀰' context
+  '󰀜' + '5' > '󰀵' context  
+  '󰀝' + '5' > '󰀵' context
+  '󰀜' any(Masiri) + '5' > '󰀵' context
+  '󰀝' any(Masiri) + '5' > '󰀵' context
+  '󰀜' + '6' > '󰀤' context '󰀩'
+  '󰀝' + '6' > '󰀤' context '󰀩'
+  '󰀜' any(Masiri) + '6' >  '󰀤' context '󰀩'
+  '󰀝' any(Masiri) + '6' >  '󰀤' context '󰀩'
+  '󰀜' + [K_TAB] > context 
+  '󰀝' + [K_TAB] > context 
+
+group(NiMituyo:group) using keys
+  '󰀔' + '4' > '󰀹' context 
+  '󰀔' any(Masiri)  + '4' > '󰀹' context
+  '󰀔' + '6' > '󰀦' context '󰀩'
+  '󰀔' any(Masiri)  + '6' > '󰀦' context '󰀩'
+  '󰀔' + '=' > '󰀦' context '󰀯'
+  '󰀔' any(Masiri)  + '=' > '󰀦' context '󰀯'
+  '󰀔' + [K_TAB] >   context 
