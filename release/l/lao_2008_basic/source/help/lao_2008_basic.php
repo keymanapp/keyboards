@@ -29,6 +29,3 @@ EXTRA;
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
   <p><img alt="Lao 2008 Basic keyboard layout: AltGr state" src="lao_2008_basicU_RA.png"/></p>
 
-
-</body>
-</html>
