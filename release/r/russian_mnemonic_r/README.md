@@ -3,7 +3,7 @@ Russian Mnemonic R keyboard
 
 Description
 -----------
-Russian Mnemonic R is a rewrite of the [Russian - Mnemonic Basic](https://help.keyman.com/keyboard/basic_kbdrum/) keyboard with improved dead-keys processing, and enhanced with special and math symbols.
+Russian Mnemonic R is a rewrite of the [Russian - Mnemonic Basic](https://help.keyman.com/keyboard/basic_kbdrum/) keyboard with improved dead-keys processing, and enriched with special and math symbols.
 
 Links
 -----
