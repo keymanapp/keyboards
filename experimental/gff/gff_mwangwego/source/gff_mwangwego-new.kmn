@@ -47,6 +47,7 @@ store(Masiri) '󰀠󰀠󰀡󰀡󰀢󰀢󰀣󰀣'
 store(MasiriKeys) 'EeIiOoUu'
 store(FirstOrderKeys) 'Aa'
 
+
 store(MwangwegoLowercaseKeys) 'abcdfghjklmnprstvwyzxq'
 store(MwangwegoLowercaseConsonants) '󰀀󰀁󰀂󰀃󰀄󰀅󰀇󰀈󰀊󰀋󰀌󰀍󰀏󰀐󰀑󰀓󰀖󰀗󰀘󰀙󰀝󰀞'
 
@@ -66,12 +67,15 @@ c  󰀦  = 3  / NI
 c  󰀧  = 4  / HI
 c  󰀨  = 5  / WAYA
 c  󰀩  = 6  / WAYA Below (combining)
+store(WayaBelow) U+F0029
 c  󰀪  = 7  / SISA
 c  󰀫  = 8  / MURA  (combining)
 c  󰀬  = 9  / MULA (combining)
 c  󰀭  = 0  / PEWA (combining)
+store(Pewa) U+F002D
 c  󰀮  = -  / TUMBA
 c  󰀯  = =  / KWANTHU (combining)
+store(Kwanthu) U+F002F
 
 store(MutuyoRegularNumberKeys) '123457-'
 store(MutuyoCombiningNumberKeys) '6890='
@@ -237,9 +241,9 @@ store(󰀔󰀡_󰀦_menu) '[󰀹󰀔󰀡₄󰀦󰀔󰀡󰀩₆󰀦󰀔󰀡󰀯�
 store(󰀔󰀢_󰀦_menu) '[󰀹󰀔󰀢₄󰀦󰀔󰀢󰀩₆󰀦󰀔󰀢󰀯₌]'
 store(󰀔󰀣_󰀦_menu) '[󰀹󰀔󰀣₄󰀦󰀔󰀣󰀩₆󰀦󰀔󰀣󰀯₌]'
 
-store(MyuMituyoKeys:index) '356'
+store(MyuMituyoKeys_index) '356'
 store(MyuMituyoKeys:index:beep) '1247890-='
-store(NiMituyoKeys:index) '46='
+store(NiMituyoKeys_index) '46='
 store(NiMituyoKeys:index:beep) '12357890-'
 
 begin Unicode > use(main)
@@ -432,18 +436,18 @@ c
 '󰀖' + '-' > '󰀮󰀖󰀩'
 '󰀘' + '-' > '󰀮󰀘󰀩'
 '󰀙' + '-' > '󰀮󰀙󰀩'
-'󰀀' any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀂'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀃'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀅'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀈'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀊'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀌'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀑'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀓'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀖'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀘'  any(Masiri) + '-' > '󰀮' context '󰀩'
-'󰀙'  any(Masiri) + '-' > '󰀮' context '󰀩'
+'󰀀' any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀂'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀃'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀅'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀈'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀊'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀌'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀑'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀓'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀖'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀘'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀙'  any(Masiri) + '-' > '󰀮' context $WayaBelow
 c
 c  SISA NI
 c
@@ -453,7 +457,6 @@ c
 '󰀅' any(Masiri) + '7' > '󰀽' context
 '󰀙' + '7' > '󰀽󰀙'
 '󰀙' any(Masiri) + '7' > '󰀽' context
-
 c
 c NI WAYA BELOW
 c
@@ -467,22 +470,20 @@ c
 c
 c
 '󰀟' + '5' > '󰀨󰀟󰀭' 
-
-
 c
 c MYU WAYA BELOW
 c
-'󰀄' + '1' > '󰀤' context  '󰀩'     c Additionally,   '󰀄󰀩' + '6' >  '󰀤󰀄󰀩'  can be added, although it breaks the left-right/top-down mituyo composition logic
-'󰀄' any(Masiri) +  '1' > '󰀤' context  '󰀩'   
+'󰀄' + '1' > '󰀤' context  $WayaBelow     c Additionally,   '󰀄󰀩' + '6' >  '󰀤󰀄󰀩'  can be added, although it breaks the left-right/top-down mituyo composition logic
+'󰀄' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
-'󰀉' + '1' > '󰀤' context  '󰀩'   
-'󰀉' any(Masiri) +  '1' > '󰀤' context  '󰀩'  
+'󰀉' + '1' > '󰀤' context  $WayaBelow
+'󰀉' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
-'󰀎' + '1' > '󰀤' context  '󰀩'   
-'󰀎' any(Masiri) +  '1' > '󰀤' context  '󰀩'  
+'󰀎' + '1' > '󰀤' context  $WayaBelow
+'󰀎' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
-'󰀖' + '1' > '󰀤' context  '󰀩'   
-'󰀖' any(Masiri) +  '1' > '󰀤' context  '󰀩'  
+'󰀖' + '1' > '󰀤' context  $WayaBelow
+'󰀖' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
 '󰀜' + '1'  > outs(󰀜_󰀤_menu) 
 '󰀜󰀠' + '1'  > outs(󰀜󰀠_󰀤_menu)
@@ -579,7 +580,8 @@ c Mituyo in Tumba
 '󰀮' any(MwangwegoSyllables) + '5' > '󰀿' context(2)
 
 c Mituyo in Pewa
-any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
+c any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
+any(MwangwegoSyllables) $Pewa + '6' > context $WayaBelow
 
 c
 any(Mutuyo) + any(MutuyoKeys) > context  index(Mutuyo,1)
@@ -626,7 +628,7 @@ c
   deadkey(1) + '3' > '󰀰󰀜󰀠' 
   deadkey(2) + '3' > '󰀰󰀜󰀡' 
   deadkey(3) + '3' >  '󰀰󰀜󰀢' 
-  deadkey(4)  + '3' > '󰀰󰀜󰀣' 
+  deadkey(4) + '3' > '󰀰󰀜󰀣' 
   deadkey(1) + '5' > '󰀵󰀜󰀠'
   deadkey(2) + '5' > '󰀵󰀜󰀡'
   deadkey(3) + '5' > '󰀵󰀜󰀢'
@@ -638,6 +640,11 @@ c
   + '3' > '󰀰󰀜'
   + '5' > '󰀵󰀜'   
   + '6' > '󰀤󰀜󰀩'
+  c 
+  c  when the reported compilation issue is resolved, change these to:
+  c
+  c  + notany(MyuMituyoKeys:index) > outs(󰀜_󰀤_menu) beep
+  c
   + any(MyuMituyoKeys:index:beep) > outs(󰀜_󰀤_menu) beep
   + [K_TAB] > '󰀜'
 
@@ -658,7 +665,7 @@ c
   + '5' > '󰀵󰀝'   
   + '6' > '󰀤󰀝󰀩'
   + any(MyuMituyoKeys:index:beep) > outs(󰀝_󰀤_menu) beep
- + [K_TAB] > '󰀝'
+  + [K_TAB] > '󰀝'
   
 group(󰀔_󰀦_group) using keys
   deadkey(1) + '4' > '󰀰󰀔󰀠' 
@@ -676,5 +683,5 @@ group(󰀔_󰀦_group) using keys
   + '4' > '󰀹󰀔' 
   + '6' > '󰀦󰀔󰀩'
   + '=' > '󰀦󰀔󰀯'
- + any(NiMituyoKeys:index:beep) > outs(󰀔_󰀦_menu) beep
+  + any(NiMituyoKeys:index:beep) > outs(󰀔_󰀦_menu) beep
   + [K_TAB] >  '󰀔'
