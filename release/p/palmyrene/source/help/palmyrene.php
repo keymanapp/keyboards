@@ -9,7 +9,6 @@
 </p>
 
 <h2>Desktop Keyboard layout</h2>
-<h3>Default (unshifted)</h3>
 <div id='osk' data-states='default shift rightalt'>
 </div>
 
