@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.102.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,10 +19,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Sundanese Latin</Name>
-    <Copyright URL="">© 2020 Ilham Nurwansah</Copyright>
+    <Copyright URL="">© Ilham Nurwansah</Copyright>
     <Author URL="mailto:ilhamnurwansah@gmail.com">Ilham Nurwansah</Author>
     <WebSite URL="https://kairaga.com/keyboard/sunda-latin">https://kairaga.com/keyboard/sunda-latin</WebSite>
-    <Description>This keyboard supports the Sundanese language using the Latin script.</Description>
+    <Description URL="">This keyboard supports the Sundanese language using the Latin script.</Description>
   </Info>
   <Files>
     <File>
@@ -55,14 +55,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sundanese_latin.js</Name>
+      <Description>File sundanese_latin.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Sundanese Latin</Name>
       <ID>sundanese_latin</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
       <Languages>
-        <Language ID="su-Latn">Sundanese (Latin)</Language>
+        <Language ID="su">Sundanese</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

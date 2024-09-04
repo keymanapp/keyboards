@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.52.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +18,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Syriac/Aramaic</Name>
-    <Copyright URL="">© 2007-2018 SIL International</Copyright>
-    <Version URL="">1.2</Version>
-    <Description>This package includes 3 Syriac/Aramaic keyboards called: **Aramaic
+    <Copyright URL="">© SIL International</Copyright>
+    <Version URL="">1.4</Version>
+    <Description URL="">This package includes 3 Syriac/Aramaic keyboards called: **Aramaic
 (Hebrew layout)**, **Syriac (Phonetic layout)**, and **Syriac (Arabic
 layout)** designed for use with **Aramaic** and **Syriac** and related
 languages.
@@ -357,12 +357,12 @@ Mardutho: The Syriac Institute](http://www.BethMardutho.org/).</Description>
     <Keyboard>
       <Name>Aramaic (Hebrew layout)</Name>
       <ID>aramaic_hebrew</ID>
-      <Version>1.2</Version>
+      <Version>1.3</Version>
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\meltho\SyrCOMEdessa.otf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\meltho\SyrCOMEdessa.otf</DisplayFont>
       <Languages>
-        <Language ID="syr-Syrc">Syriac (Syriac)</Language>
+        <Language ID="syr">Syriac</Language>
         <Language ID="aii-Syrc">Assyrian Neo-Aramaic (Syriac)</Language>
         <Language ID="amw-Syrj">Western Neo-Aramaic (Syriac (Western variant))</Language>
         <Language ID="arc-Syrc">Official Aramaic (700-300 BCE) (Syriac)</Language>
@@ -383,12 +383,12 @@ Mardutho: The Syriac Institute](http://www.BethMardutho.org/).</Description>
     <Keyboard>
       <Name>Syriac (Arabic layout)</Name>
       <ID>syriac_arabic</ID>
-      <Version>1.2</Version>
+      <Version>1.3</Version>
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\meltho\SyrCOMEdessa.otf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\meltho\SyrCOMEdessa.otf</DisplayFont>
       <Languages>
-        <Language ID="syr-Syrc">Syriac (Syriac)</Language>
+        <Language ID="syr">Syriac</Language>
         <Language ID="aii-Syrc">Assyrian Neo-Aramaic (Syriac)</Language>
         <Language ID="amw-Syrj">Western Neo-Aramaic (Syriac (Western variant))</Language>
         <Language ID="arc-Syrc">Official Aramaic (700-300 BCE) (Syriac)</Language>
@@ -409,12 +409,12 @@ Mardutho: The Syriac Institute](http://www.BethMardutho.org/).</Description>
     <Keyboard>
       <Name>Syriac (Phonetic layout)</Name>
       <ID>syriac_phonetic</ID>
-      <Version>1.2</Version>
+      <Version>1.3</Version>
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\meltho\SyrCOMEdessa.otf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\meltho\SyrCOMEdessa.otf</DisplayFont>
       <Languages>
-        <Language ID="syr-Syrc">Syriac (Syriac)</Language>
+        <Language ID="syr">Syriac</Language>
         <Language ID="aii-Syrc">Assyrian Neo-Aramaic (Syriac)</Language>
         <Language ID="amw-Syrj">Western Neo-Aramaic (Syriac (Western variant))</Language>
         <Language ID="arc-Syrc">Official Aramaic (700-300 BCE) (Syriac)</Language>
@@ -433,8 +433,8 @@ Mardutho: The Syriac Institute](http://www.BethMardutho.org/).</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="aramaic" Relationship="deprecates" />
+    <RelatedPackage ID="aramaic" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

@@ -1,6 +1,10 @@
 அஞ்சல் பாங்கு | Anjal Paangu Change History
 ====================
 
+1.2 (2024-09-04)
+----------------
+* Add tablet layout
+
 2.1 (2020-05-04)
 ----------------
 * Move source from internal repo to release
