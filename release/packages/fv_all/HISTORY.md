@@ -1,5 +1,8 @@
 # fv_all Keyboard Package
 
+## 13.0 (3 Sep 2024)
+* New desktop layout for fv_nexwslayemucen based on KlallamU
+
 ## 12.15 (26 Jul 2024)
 * Add fv_lekwungen
 
