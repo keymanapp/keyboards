@@ -1,7 +1,7 @@
 சுரதா-பாமுனி | Suratha Bamini Change History
 ====================
 
-1.2 (2024-09-04)
+2.2 (2024-09-04)
 ----------------
 * Add tablet layout
 
