@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.69.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,11 +19,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Saraiki</Name>
-    <Copyright URL="">© 2020 Parvez Qadir</Copyright>
+    <Copyright URL="">© Parvez Qadir</Copyright>
     <Author URL="mailto:mpqadir@yahoo.com">Parvez Qadir</Author>
     <WebSite URL="https://saraiki.jimdofree.com/">https://saraiki.jimdofree.com</WebSite>
     <Version URL=""></Version>
-    <Description>Keyboard for typing Saraiki with Arabic script.</Description>
+    <Description URL="">Keyboard for typing Saraiki with Arabic script.</Description>
   </Info>
   <Files>
     <File>
@@ -73,14 +74,21 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\saraiki.js</Name>
+      <Description>File saraiki.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Saraiki</Name>
       <ID>saraiki</ID>
-      <Version>1.0</Version>
+      <Version>1.2</Version>
+      <RTL>True</RTL>
       <Languages>
-        <Language ID="skr-Arab">Saraiki (Arabic)</Language>
+        <Language ID="skr">Saraiki</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

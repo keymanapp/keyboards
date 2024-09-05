@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.108.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,10 +17,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Tamil (Visual Media)</Name>
-    <Copyright URL="">© 2008-2020 Visual Media and SIL International</Copyright>
+    <Copyright URL="">© Visual Media and SIL International</Copyright>
     <Author URL="">Murali M.S.</Author>
-    <Version URL="">1.3.1</Version>
-    <Description>This package includes two keyboard layouts: Typewriter and Modular
+    <Version URL="">1.4</Version>
+    <Description URL="">This package includes two keyboard layouts: Typewriter and Modular
 layout input for Tamil Unicode.</Description>
   </Info>
   <Files>
@@ -108,12 +108,24 @@ layout input for Tamil Unicode.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\vm_tamil_modular.js</Name>
+      <Description>File vm_tamil_modular.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\vm_tamil_typewriter.js</Name>
+      <Description>File vm_tamil_typewriter.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tamil Modular (Visual Media)</Name>
       <ID>vm_tamil_modular</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
@@ -121,14 +133,14 @@ layout input for Tamil Unicode.</Description>
     <Keyboard>
       <Name>Tamil Typewriter (Visual Media)</Name>
       <ID>vm_tamil_typewriter</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="tamil - visual media" Relationship="deprecates" />
+    <RelatedPackage ID="tamil - visual media" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

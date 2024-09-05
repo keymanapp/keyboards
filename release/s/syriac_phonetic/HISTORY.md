@@ -1,6 +1,10 @@
 Syriac (Phonetic layout) Keyboard Change History
 =======================
 
+1.3 (2024-09-04)
+----------------
+* Add tablet layout
+
 1.2 (1 August 2018)
 -----------------
 * Migrated to GitHub
