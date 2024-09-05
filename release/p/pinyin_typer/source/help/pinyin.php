@@ -21,7 +21,7 @@
 
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <p><b>Unshifted</b></p>
 <img src='taigitelexU_.png' alt='Keyboard Layout'>
