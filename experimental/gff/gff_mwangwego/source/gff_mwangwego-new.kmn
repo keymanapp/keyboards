@@ -92,7 +92,7 @@ store(󰀆_InvalidMituyo) '12347890='
 store(󰀇_InvalidMituyo) '2347890'
 store(󰀈_InvalidMituyo) '2467890'     c '2467890-'
 store(󰀉_InvalidMituyo) '2467890-='  c '12467890-='
-store(󰀊_InvalidMituyo) '2890'           c '2890-'
+store(󰀊_InvalidMituyo) '290'           c '2890-'
 store(󰀋_InvalidMituyo) '2347890-'
 store(󰀌_InvalidMituyo) '234890='     c '234890-='
 store(󰀍_InvalidMituyo) '234890'
@@ -158,7 +158,7 @@ store(󰀊_󰀰_InvalidMituyo) '123567890-='
 store(󰀊_󰀳_InvalidMituyo) '123467890-='
 store(󰀊_󰀺_InvalidMituyo) '12347890-='
 store(󰀊_󰀾_InvalidMituyo) '123567890-='
-store(󰀊_󰀱_InvalidMituyo) '123457890-='
+store(󰀊_󰀱_InvalidMituyo) '123467890-='
 store(󰀋_󰀤_InvalidMituyo) '123457890-='
 store(󰀌_󰀤_InvalidMituyo) '12347890-='
 store(󰀌_󰀮_InvalidMituyo) '123457890-='
@@ -242,9 +242,9 @@ store(󰀔󰀢_󰀦_menu) '[󰀹󰀔󰀢₄󰀦󰀔󰀢󰀩₆󰀦󰀔󰀢󰀯�
 store(󰀔󰀣_󰀦_menu) '[󰀹󰀔󰀣₄󰀦󰀔󰀣󰀩₆󰀦󰀔󰀣󰀯₌]'
 
 store(MyuMituyoKeys_index) '356'
-store(MyuMituyoKeys:index:beep) '1247890-='
+c store(MyuMituyoKeys:index:beep) '1247890-='
 store(NiMituyoKeys_index) '46='
-store(NiMituyoKeys:index:beep) '12357890-'
+c store(NiMituyoKeys:index:beep) '12357890-'
 
 begin Unicode > use(main)
 group(main) using keys
@@ -430,7 +430,7 @@ c
 '󰀅' + '-' > '󰀮󰀅󰀩'
 '󰀈' + '-' > '󰀮󰀈󰀩'
 '󰀊' + '-' > '󰀮󰀊󰀩'
-'󰀌' + '-' > '󰀮󰀌󰀩'
+c '󰀌' + '-' > '󰀮󰀌󰀩'
 '󰀑' + '-' > '󰀮󰀑󰀩'
 '󰀓' + '-' > '󰀮󰀓󰀩'
 '󰀖' + '-' > '󰀮󰀖󰀩'
@@ -559,29 +559,51 @@ c Mituyo in Myu
 '󰀳' any(MwangwegoSyllables) + '5' > '󰀴' context(2)
 '󰀤' any(MwangwegoSyllables) + '5' > '󰀵' context(2)
 
+'󰀤' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀰' context(2) context(3)
+'󰀰' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀱' context(2) context(3)
+'󰀱' any(MwangwegoSyllables) any(Masiri)  + '5' > '󰀲' context(2) context(3)
+'󰀤' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀳' context(2) context(3)
+'󰀳' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀴' context(2) context(3)
+'󰀤' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀵' context(2) context(3)
+
+
 c Mituyo in Mi
 '󰀥' any(MwangwegoSyllables) + '4' > '󰀶' context(2)
 '󰀶' any(MwangwegoSyllables) + '5' > '󰀷' context(2)
 '󰀥' any(MwangwegoSyllables) + '5' > '󰀸' context(2)
+
+'󰀥' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀶' context(2)
+'󰀶' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀷' context(2)
+'󰀥' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀸' context(2)
 
 c Mituyo in Ni
 '󰀦' any(MwangwegoSyllables) + '4' > '󰀹' context(2)
 '󰀹' any(MwangwegoSyllables) + '5' > '󰀺' context(2)
 '󰀦' any(MwangwegoSyllables) + '5' > '󰀻' context(2)
 
+'󰀦' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀹' context(2)
+'󰀹' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀺' context(2)
+'󰀦' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀻' context(2)
+
 c Mituyo in Hi
 '󰀧' any(MwangwegoSyllables) + '5' > '󰀼' context(2)
+'󰀧' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀼' context(2)
 
 c Mituyo in Sisa
 '󰀪' any(MwangwegoSyllables) + '3' > '󰀽' context(2) 
-'󰀽' any(MwangwegoSyllables) + '4' > '󰀾' context(2) 
+'󰀽' any(MwangwegoSyllables) + '4' > '󰀾' context(2)
+
+'󰀪' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀽' context(2) 
+'󰀽' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀾' context(2) 
 
 c Mituyo in Tumba
 '󰀮' any(MwangwegoSyllables) + '5' > '󰀿' context(2)
+'󰀮' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀿' context(2)
 
 c Mituyo in Pewa
 c any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
 any(MwangwegoSyllables) $Pewa + '6' > context $WayaBelow
+any(MwangwegoSyllables) any(Masiri) $Pewa + '6' > context $WayaBelow
 
 c
 any(Mutuyo) + any(MutuyoKeys) > context  index(Mutuyo,1)
@@ -640,13 +662,9 @@ c
   + '3' > '󰀰󰀜'
   + '5' > '󰀵󰀜'   
   + '6' > '󰀤󰀜󰀩'
-  c 
-  c  when the reported compilation issue is resolved, change these to:
-  c
-  c  + notany(MyuMituyoKeys:index) > outs(󰀜_󰀤_menu) beep
-  c
-  + any(MyuMituyoKeys:index:beep) > outs(󰀜_󰀤_menu) beep
+ c + any(MyuMituyoKeys:index:beep) > outs(󰀜_󰀤_menu) beep
   + [K_TAB] > '󰀜'
+  nomatch >   outs(󰀜_󰀤_menu) beep
 
   group(󰀝_󰀤_group) using keys
   deadkey(1) + '3' > '󰀰󰀝󰀠' 
@@ -664,8 +682,9 @@ c
   + '3' > '󰀰󰀝'  
   + '5' > '󰀵󰀝'   
   + '6' > '󰀤󰀝󰀩'
-  + any(MyuMituyoKeys:index:beep) > outs(󰀝_󰀤_menu) beep
+  c + any(MyuMituyoKeys:index:beep) > outs(󰀝_󰀤_menu) beep
   + [K_TAB] > '󰀝'
+  nomatch >  outs(󰀝_󰀤_menu) beep
   
 group(󰀔_󰀦_group) using keys
   deadkey(1) + '4' > '󰀰󰀔󰀠' 
@@ -683,5 +702,6 @@ group(󰀔_󰀦_group) using keys
   + '4' > '󰀹󰀔' 
   + '6' > '󰀦󰀔󰀩'
   + '=' > '󰀦󰀔󰀯'
-  + any(NiMituyoKeys:index:beep) > outs(󰀔_󰀦_menu) beep
+c  + any(NiMituyoKeys:index:beep) > outs(󰀔_󰀦_menu) beep
   + [K_TAB] >  '󰀔'
+  nomatch > outs(󰀔_󰀦_menu) beep
