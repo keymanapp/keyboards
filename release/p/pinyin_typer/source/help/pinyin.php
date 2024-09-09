@@ -24,9 +24,9 @@
 <h2>Keyboard Layout</h2>
 
 <p><b>Unshifted</b></p>
-<img src='taigitelexU_.png' alt='Keyboard Layout'>
+<img src='layoutU_.png' alt='Keyboard Layout'>
 <p><b>Shifted</b></p>
-<img src='taigitelexU_S.png' alt='Keyboard Layout'>
+<img src='layoutU_S.png' alt='Keyboard Layout'>
 
 
 
