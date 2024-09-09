@@ -1,6 +1,10 @@
 Colchis Latin
 ===============================
 
+1.5 (9 Sept 2024)
+------------------
+* Changed language tag for lzz to lzz-GE
+
 1.4.1 (4 Oct 2023)
 ------------------
 * Add dotted T back in to the keyboard
