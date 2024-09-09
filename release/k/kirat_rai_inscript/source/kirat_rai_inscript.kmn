@@ -4,7 +4,8 @@ store(&TARGETS) 'web desktop'
 store(&VISUALKEYBOARD) 'kirat_rai_inscript.kvks'
 store(&BITMAP) 'kirat_rai_inscript.ico'
 store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
+store(&LAYOUTFILE) 'kirat_rai_inscript.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -30,7 +31,7 @@ group(main) using keys
 + any(digits)   > index(digitsKR,1)
 + any(letters1) > index(letters1KR,1)
 + any(letters2) > index(letters2KR,1)
-+ any(vowels)   > index(vowelsKR,1)
++ any(vowels)   > index(vowelsKR,1) use(compose)
 + any(nul)      > nul
 
 + [K_B] > U+16D5F c va
@@ -47,7 +48,7 @@ group(main) using keys
 + [SHIFT K_HYPHEN] > U+16D42 c visarga
 + [K_D]     > U+16D6B c virama
 + [K_EQUAL] > U+16D6C c saat
-+ [K_RBRKT] > U+16D6D c yupi
++ [K_RBRKT] > U+16D6D use(compose) c yupi
 + [K_PERIOD]       > U+16D6E
 + [SHIFT K_PERIOD] > U+16D6F
 
@@ -80,3 +81,13 @@ group(main) using keys
 + [SHIFT RALT K_RBRKT] > U+007D
 + [RALT K_COMMA] > U+003C
 + [RALT K_PERIOD] > U+003E
+
+group(compose)
+
+U+16D67 U+16D67 > U+16D68
+U+16D63 U+16D67 > U+16D69
+U+16D69 U+16D67 > U+16D6A
+U+16D63 U+16D68 > U+16D6A
+
+c This rule isn't technically a composition, but people type this way and they shouldn't
+U+16D65 U+16D6D > U+16D66

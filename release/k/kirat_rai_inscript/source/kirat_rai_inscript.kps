@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.293.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,7 +22,7 @@
     <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>This is a keyboard for the Kirat Rai script using an Inscript-based layout.</Description>
+    <Description URL="">This is a keyboard for the Kirat Rai script using an Inscript-based layout.</Description>
   </Info>
   <Files>
     <File>
@@ -73,38 +74,55 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\assets\Kanchenjunga-Bold.ttf</Name>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\kirat_rai_inscript.js</Name>
+      <Description>File kirat_rai_inscript.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\kanchenjunga\Kanchenjunga-Bold.ttf</Name>
       <Description>Font Kanchenjunga Bold</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\assets\Kanchenjunga-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\kanchenjunga\Kanchenjunga-Medium.ttf</Name>
+      <Description>Font Kanchenjunga Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\kanchenjunga\Kanchenjunga-Regular.ttf</Name>
       <Description>Font Kanchenjunga</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\assets\OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\sil\kanchenjunga\Kanchenjunga-SemiBold.ttf</Name>
+      <Description>Font Kanchenjunga SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\kanchenjunga\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Kirat Rai - INSCRIPT</Name>
       <ID>kirat_rai_inscript</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\assets\Kanchenjunga-Regular.ttf</OSKFont>
-      <DisplayFont>..\assets\Kanchenjunga-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="Kanchenjunga-Regular.ttf"/></WebDisplayFonts>
+      <Version>1.1</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\kanchenjunga\Kanchenjunga-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\kanchenjunga\Kanchenjunga-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="bap-Krai">Bantawa</Language>
       </Languages>
