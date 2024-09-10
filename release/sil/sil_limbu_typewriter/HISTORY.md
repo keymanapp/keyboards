@@ -1,6 +1,10 @@
 Limbu Typewriter (SIL) Change History
 ====================
 
+1.3 (2024-09-09)
+----------------
+* Add tablet layout
+
 1.2.1 (2024-01-03)
 ----------------
 * Add keystroke for danda
