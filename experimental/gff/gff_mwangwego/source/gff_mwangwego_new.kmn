@@ -1,6 +1,6 @@
 ﻿store(&Version) '15.0'
 store(&KEYBOARDVERSION) '0.9'
-store(&NAME) 'Mwangwego X'
+store(&NAME) 'Mwangwego'
 store(&COPYRIGHT) '© 2024 Geʾez Frontier Foundation'
 store(&Message) 'This is an experimental Mwangwego keyboard that requires the included Mwangwego16 font.'
 store(&CapsAlwaysOff) '1'
@@ -57,8 +57,8 @@ store(MwangwegoUppercaseConsonants) '󰀀󰀁󰀂󰀛󰀄󰀆󰀜󰀉󰀊󰀋�
 store(Mutuyo) '󰀤󰀥󰀦󰀧󰀨󰀩󰀪󰀫󰀬󰀭󰀮󰀯'
 store(MutuyoRegular) '󰀤󰀥󰀦󰀧󰀨󰀪󰀮'
 store(MutuyoCombining) '󰀩󰀫󰀬󰀭󰀯'
-store(Mituyo) '󰀰󰀱󰀲󰀳󰀴󰀴󰀶󰀷󰀸󰀹󰀺󰀻󰀼󰀽󰀾󰀿'
-
+store(Mituyo) '󰀰󰀱󰀲󰀳󰀴󰀵󰀶󰀷󰀸󰀹󰀺󰀻󰀼󰀽󰀾󰀿'
+store(MituyoFinals) '󰀱󰀾󰀲󰀴󰀷󰀺󰀾'
 store(Prefixable) outs(OrdersConsonants) outs(Masiri)
 
 c  󰀤  = 1  / MYU
@@ -70,7 +70,9 @@ c  󰀩  = 6  / WAYA Below (combining)
 store(WayaBelow) U+F0029
 c  󰀪  = 7  / SISA
 c  󰀫  = 8  / MURA  (combining)
+store(Mura) U+F002B
 c  󰀬  = 9  / MULA (combining)
+store(Mula) U+F002C
 c  󰀭  = 0  / PEWA (combining)
 store(Pewa) U+F002D
 c  󰀮  = -  / TUMBA
@@ -120,12 +122,12 @@ store(󰀁_󰀤_InvalidMituyo) '12347890-='
 store(󰀁_󰀥_InvalidMituyo) '12347890-='
 store(󰀁__InvalidMituyo) '12347890-='
 store(󰀂_󰀤_InvalidMituyo) '1237890-='
-store(󰀂_󰀦_InvalidMituyo) '12357890-='
+store(󰀂_󰀦_InvalidMituyo) '12357890-'
 store(󰀂_󰀧_InvalidMituyo) '123457890-='
 store(󰀂_󰀮_InvalidMituyo) '123457890-='
 store(󰀂__InvalidMituyo) '124567890-='
 store(󰀂_󰀳_InvalidMituyo) '123467890-='
-store(󰀂_󰀺_InvalidMituyo) '12347890-='
+store(󰀂_󰀹_InvalidMituyo) '12347890-='
 store(󰀃_󰀤_InvalidMituyo) '1247890-='
 store(󰀃_󰀦_InvalidMituyo) '123467890-'
 store(󰀃_󰀪_InvalidMituyo) '124567890-='
@@ -156,7 +158,7 @@ store(󰀊_󰀮_InvalidMituyo) '123457890-='
 store(󰀊__InvalidMituyo) '124567890-='
 store(󰀊_󰀰_InvalidMituyo) '123567890-='
 store(󰀊_󰀳_InvalidMituyo) '123467890-='
-store(󰀊_󰀺_InvalidMituyo) '12347890-='
+store(󰀊_󰀹_InvalidMituyo) '12347890-='
 store(󰀊_󰀾_InvalidMituyo) '123567890-='
 store(󰀊_󰀱_InvalidMituyo) '123467890-='
 store(󰀋_󰀤_InvalidMituyo) '123457890-='
@@ -179,20 +181,21 @@ store(󰀑__InvalidMituyo) '124567890-='
 store(󰀒_󰀤_InvalidMituyo) '12347890-='
 store(󰀒_󰀦_InvalidMituyo) '123457890-='
 store(󰀒_󰀮_InvalidMituyo) '123457890-='
-store(󰀓_󰀤_InvalidMituyo) '1237890-='
+store(󰀓_󰀤_InvalidMituyo) '127890-='
 store(󰀓_󰀦_InvalidMituyo) '1237890-='
 store(󰀓_󰀧_InvalidMituyo) '12347890-='
+store(󰀓_󰀪_InvalidMituyo) '124567890-='
 store(󰀓_󰀮_InvalidMituyo) '123457890-='
 store(󰀓__InvalidMituyo) '124567890-='
 store(󰀓_󰀰_InvalidMituyo) '123567890-='
-store(󰀓_󰀺_InvalidMituyo) '12347890-='
+store(󰀓_󰀹_InvalidMituyo) '12347890-=' 
 store(󰀓_󰀾_InvalidMituyo) '123567890-='
 store(󰀓_󰀱_InvalidMituyo) '123457890-='
 store(󰀔_󰀤_InvalidMituyo) '12347890-='
 store(󰀔_󰀦_InvalidMituyo) '12357890-='
 store(󰀔_󰀧_InvalidMituyo) '123457890-='
 store(󰀔__InvalidMituyo) '124567890-='
-store(󰀔_󰀺_InvalidMituyo) '123457890-='
+store(󰀔_󰀹_InvalidMituyo) '123457890-='
 store(󰀕_󰀤_InvalidMituyo) '123467890-='
 store(󰀖_󰀤_InvalidMituyo) '123457890-='
 store(󰀖_󰀦_InvalidMituyo) '12347890-='
@@ -271,6 +274,11 @@ any(OrdersConsonants) + any(FirstOrderKeys) > context
 any(OrdersConsonants) + any(MasiriKeys)     > context index(Masiri,2)
 
 any(Masiri) + any(MasiriKeys) > context beep
+'󰀱󰀊' + '5' > '󰀲󰀊'
+'󰀱󰀓' + '5' > '󰀲󰀓'
+'󰀱󰀊' any(Masiri) + '5' > '󰀲󰀊' context(2)
+'󰀱󰀓' any(Masiri) + '5' > '󰀲󰀓' context(2)
+any(MituyoFinals) any(Prefixable) + any(MutuyoKeys) > context beep
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c Block Composition of Invalid Mituyo Stack
@@ -288,7 +296,7 @@ c
 '󰀮󰀂' + any(󰀂_󰀮_InvalidMituyo) > context beep
 '󰀂󰀯' + any(󰀂__InvalidMituyo) > context beep
 '󰀳󰀂' + any(󰀂_󰀳_InvalidMituyo) > context beep
-'󰀺󰀂' + any(󰀂_󰀺_InvalidMituyo) > context beep
+'󰀹󰀂' + any(󰀂_󰀹_InvalidMituyo) > context beep
 '󰀤󰀃' + any(󰀃_󰀤_InvalidMituyo) > context beep
 '󰀦󰀃' + any(󰀃_󰀦_InvalidMituyo) > context beep
 '󰀪󰀃' + any(󰀃_󰀪_InvalidMituyo) > context beep
@@ -319,7 +327,7 @@ c
 '󰀊󰀯' + any(󰀊__InvalidMituyo) > context beep
 '󰀰󰀊' + any(󰀊_󰀰_InvalidMituyo) > context beep
 '󰀳󰀊' + any(󰀊_󰀳_InvalidMituyo) > context beep
-'󰀺󰀊' + any(󰀊_󰀺_InvalidMituyo) > context beep
+'󰀹󰀊' + any(󰀊_󰀹_InvalidMituyo) > context beep
 '󰀾󰀊' + any(󰀊_󰀾_InvalidMituyo) > context beep
 '󰀱󰀊' + any(󰀊_󰀱_InvalidMituyo) > context beep
 '󰀤󰀋' + any(󰀋_󰀤_InvalidMituyo) > context beep
@@ -328,6 +336,7 @@ c
 '󰀤󰀍' + any(󰀍_󰀤_InvalidMituyo) > context beep
 '󰀮󰀍' + any(󰀍_󰀮_InvalidMituyo) > context beep
 '󰀤󰀎' + any(󰀎_󰀤_InvalidMituyo) > context beep
+'󰀤󰀎' + '6' > context $WayaBelow  c an exception here since the lone'󰀎' rule will later block composition with Waya Below
 '󰀮󰀎' + any(󰀎_󰀮_InvalidMituyo) > context beep
 '󰀤󰀏' + any(󰀏_󰀤_InvalidMituyo) > context beep
 '󰀥󰀏' + any(󰀏_󰀥_InvalidMituyo) > context beep
@@ -345,17 +354,18 @@ c
 '󰀤󰀓' + any(󰀓_󰀤_InvalidMituyo) > context beep
 '󰀦󰀓' + any(󰀓_󰀦_InvalidMituyo) > context beep
 '󰀧󰀓' + any(󰀓_󰀧_InvalidMituyo) > context beep
+'󰀪󰀓' + any(󰀓_󰀪_InvalidMituyo) > context beep
 '󰀮󰀓' + any(󰀓_󰀮_InvalidMituyo) > context beep
 '󰀓󰀯' + any(󰀓__InvalidMituyo) > context beep
 '󰀰󰀓' + any(󰀓_󰀰_InvalidMituyo) > context beep
-'󰀺󰀓' + any(󰀓_󰀺_InvalidMituyo) > context beep
+'󰀹󰀓' + any(󰀓_󰀹_InvalidMituyo) > context beep
 '󰀾󰀓' + any(󰀓_󰀾_InvalidMituyo) > context beep
-'󰀱󰀓' + any(󰀓_󰀱_InvalidMituyo) > context beep
+c '󰀱󰀓' + any(󰀓_󰀱_InvalidMituyo) > context beep
 '󰀤󰀔' + any(󰀔_󰀤_InvalidMituyo) > context beep
 '󰀦󰀔' + any(󰀔_󰀦_InvalidMituyo) > context beep
 '󰀧󰀔' + any(󰀔_󰀧_InvalidMituyo) > context beep
 '󰀔󰀯' + any(󰀔__InvalidMituyo) > context beep
-'󰀺󰀔' + any(󰀔_󰀺_InvalidMituyo) > context beep
+'󰀹󰀔' + any(󰀔_󰀹_InvalidMituyo) > context beep
 '󰀤󰀕' + any(󰀕_󰀤_InvalidMituyo) > context beep
 '󰀤󰀖' + any(󰀖_󰀤_InvalidMituyo) > context beep
 '󰀦󰀖' + any(󰀖_󰀦_InvalidMituyo) > context beep
@@ -479,8 +489,8 @@ c
 '󰀉' + '1' > '󰀤' context  $WayaBelow
 '󰀉' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
-'󰀎' + '1' > '󰀤' context  $WayaBelow
-'󰀎' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
+c '󰀎' + '1' > '󰀤' context  $WayaBelow
+c '󰀎' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
 '󰀖' + '1' > '󰀤' context  $WayaBelow
 '󰀖' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
@@ -606,7 +616,8 @@ any(MwangwegoSyllables) $Pewa + '6' > context $WayaBelow
 any(MwangwegoSyllables) any(Masiri) $Pewa + '6' > context $WayaBelow
 
 c
-any(Mutuyo) + any(MutuyoKeys) > context  index(Mutuyo,1)
+any(MwangwegoSyllables) any(MutuyoCombining) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,3) context 
+any(MwangwegoSyllables) any(Masiri) any(MutuyoCombining) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,4) context 
 
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
