@@ -57,7 +57,7 @@ store(MwangwegoUppercaseConsonants) '󰀀󰀁󰀂󰀛󰀄󰀆󰀜󰀉󰀊󰀋�
 store(Mutuyo) '󰀤󰀥󰀦󰀧󰀨󰀩󰀪󰀫󰀬󰀭󰀮󰀯'
 store(MutuyoRegular) '󰀤󰀥󰀦󰀧󰀨󰀪󰀮'
 store(MutuyoCombining) '󰀩󰀫󰀬󰀭󰀯'
-store(Mituyo) '󰀰󰀱󰀲󰀳󰀴󰀵󰀶󰀷󰀸󰀹󰀺󰀻󰀼󰀽󰀾󰀿'
+store(Mituyo) '󰀰󰀱󰀲󰀳󰀴󰀵󰀶󰀷󰀸󰀹󰀺󰀻󰀼󰀽󰀾󰀿'
 store(MituyoFinals) '󰀱󰀾󰀲󰀴󰀷󰀺󰀾'
 store(Prefixable) outs(OrdersConsonants) outs(Masiri)
 
@@ -79,6 +79,8 @@ c  󰀮  = -  / TUMBA
 c  󰀯  = =  / KWANTHU (combining)
 store(Kwanthu) U+F002F
 
+store(WayaMutuyo) '󰀨󰀴󰀵󰀷󰀸󰀺󰀻󰀼󰀿' $WayaBelow
+
 store(MutuyoRegularNumberKeys) '123457-'
 store(MutuyoCombiningNumberKeys) '6890='
 store(MutuyoKeys) '1234567890-='
@@ -87,7 +89,7 @@ store(MutuyoKeyMenu) outs(MutuyoKeys) [K_TAB]
 store(󰀀_InvalidMituyo) '12467890'  c '12467890-'
 store(󰀁_InvalidMituyo) '347='
 store(󰀂_InvalidMituyo) '2890'        c '2890-'
-store(󰀃_InvalidMituyo) '240='       c '2470-='
+store(󰀃_InvalidMituyo) '240'       c '2470-='
 store(󰀄_InvalidMituyo) '247-'      c '12470-'
 store(󰀅_InvalidMituyo) '24890'     c '247890-'
 store(󰀆_InvalidMituyo) '12347890='
@@ -102,7 +104,7 @@ store(󰀎_InvalidMituyo) '2346890='
 store(󰀏_InvalidMituyo) '30-'
 store(󰀐_InvalidMituyo) '2347890-'
 store(󰀑_InvalidMituyo) '247890'        c '247890-'
-store(󰀒_InvalidMituyo) '248790='    c '2347890-='
+store(󰀒_InvalidMituyo) '248790'    c '2347890-='
 store(󰀓_InvalidMituyo) '20'                c '20-'
 store(󰀔_InvalidMituyo) '27890-'      c '237890-='
 store(󰀕_InvalidMituyo) '2347890-='
@@ -129,7 +131,7 @@ store(󰀂__InvalidMituyo) '124567890-='
 store(󰀂_󰀳_InvalidMituyo) '123467890-='
 store(󰀂_󰀹_InvalidMituyo) '12347890-='
 store(󰀃_󰀤_InvalidMituyo) '1247890-='
-store(󰀃_󰀦_InvalidMituyo) '123467890-'
+store(󰀃_󰀦_InvalidMituyo) '12467890-='
 store(󰀃_󰀪_InvalidMituyo) '124567890-='
 store(󰀃__InvalidMituyo) '124567890-='
 store(󰀃_󰀮_InvalidMituyo) '123457890-='
@@ -295,7 +297,15 @@ c
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c
 
+c
+c Universally prevent Waya Below from following Waya
+c
+any(WayaMutuyo) any(Prefixable) + '6' > context beep
+any(WayaMutuyo) any(MwangwegoSyllables) + '6' > context beep
+
+
 '󰀦󰀀' + any(󰀀_󰀦_InvalidMituyo) > context beep
+'󰀦󰀀' + '6' > context $WayaBelow deadkey(0)
 '󰀮󰀀' + any(󰀀_󰀮_InvalidMituyo) > context beep
 '󰀤󰀁' + any(󰀁_󰀤_InvalidMituyo) > context beep
 '󰀥󰀁' + any(󰀁_󰀥_InvalidMituyo) > context beep
@@ -323,11 +333,14 @@ c
 '󰀤󰀇' + any(󰀇_󰀤_InvalidMituyo) > context beep
 '󰀮󰀇' + any(󰀇_󰀮_InvalidMituyo) > context beep
 '󰀤󰀈' + any(󰀈_󰀤_InvalidMituyo) > context beep
+'󰀤󰀈' + '6' > context $WayaBelow  deadkey(0)
 '󰀦󰀈' + any(󰀈_󰀦_InvalidMituyo) > context beep
+'󰀦󰀈' + '6' > context $WayaBelow  deadkey(0)
 '󰀮󰀈' + any(󰀈_󰀮_InvalidMituyo) > context beep
 '󰀈󰀯' + any(󰀈__InvalidMituyo) > context beep
 '󰀤󰀉' + any(󰀉_󰀤_InvalidMituyo) > context beep
 '󰀦󰀉' + any(󰀉_󰀦_InvalidMituyo) > context beep
+'󰀦󰀉' + '6' > context $WayaBelow  deadkey(0)
 '󰀤󰀊' + any(󰀊_󰀤_InvalidMituyo) > context beep
 '󰀦󰀊' + any(󰀊_󰀦_InvalidMituyo) > context beep
 '󰀧󰀊' + any(󰀊_󰀧_InvalidMituyo) > context beep
@@ -347,6 +360,7 @@ c
 '󰀤󰀎' + any(󰀎_󰀤_InvalidMituyo) > context beep
 '󰀤󰀎' + '6' > context $WayaBelow  deadkey(0)  c an exception here since the lone'󰀎' rule will later block composition with Waya Below
 '󰀮󰀎' + any(󰀎_󰀮_InvalidMituyo) > context beep
+'󰀮󰀎' + '6' > context $WayaBelow  deadkey(0)
 '󰀤󰀏' + any(󰀏_󰀤_InvalidMituyo) > context beep
 '󰀥󰀏' + any(󰀏_󰀥_InvalidMituyo) > context beep
 '󰀧󰀏' + any(󰀏_󰀧_InvalidMituyo) > context beep
@@ -369,7 +383,6 @@ c
 '󰀰󰀓' + any(󰀓_󰀰_InvalidMituyo) > context beep
 '󰀹󰀓' + any(󰀓_󰀹_InvalidMituyo) > context beep
 '󰀾󰀓' + any(󰀓_󰀾_InvalidMituyo) > context beep
-c '󰀱󰀓' + any(󰀓_󰀱_InvalidMituyo) > context beep
 '󰀤󰀔' + any(󰀔_󰀤_InvalidMituyo) > context beep
 '󰀦󰀔' + any(󰀔_󰀦_InvalidMituyo) > context beep
 '󰀧󰀔' + any(󰀔_󰀧_InvalidMituyo) > context beep
@@ -382,6 +395,7 @@ c '󰀱󰀓' + any(󰀓_󰀱_InvalidMituyo) > context beep
 '󰀮󰀖' + any(󰀖_󰀮_InvalidMituyo) > context beep
 '󰀖󰀯' + any(󰀖__InvalidMituyo) > context beep
 '󰀮󰀘' + any(󰀘_󰀮_InvalidMituyo) > context beep
+'󰀮󰀘' + '6' > context $WayaBelow  deadkey(0)
 '󰀤󰀙' + any(󰀙_󰀤_InvalidMituyo) > context beep
 '󰀦󰀙' + any(󰀙_󰀦_InvalidMituyo) > context beep
 '󰀪󰀙' + any(󰀙_󰀪_InvalidMituyo) > context beep
@@ -408,6 +422,7 @@ c '󰀱󰀓' + any(󰀓_󰀱_InvalidMituyo) > context beep
 '󰀞󰀯' + any(󰀞__InvalidMituyo) > context beep
 '󰀦󰀟' + any(󰀟_󰀦_InvalidMituyo) > context beep
 '󰀟󰀭' + any(󰀟__InvalidMituyo) > context beep
+
 
 c
 c Misisi without Mutuyo present
@@ -453,32 +468,35 @@ c cccccccccccccccccccccccccccccccccccccccccccccccc
 c
 c TUMBA WAYA BELOW
 c
-'󰀀' + '-' > '󰀮󰀀󰀩'
-'󰀂' + '-' > '󰀮󰀂󰀩'
-'󰀃' + '-' > '󰀮󰀃󰀩'
-'󰀅' + '-' > '󰀮󰀅󰀩'
-'󰀈' + '-' > '󰀮󰀈󰀩'
-'󰀊' + '-' > '󰀮󰀊󰀩'
-c '󰀌' + '-' > '󰀮󰀌󰀩'
-'󰀑' + '-' > '󰀮󰀑󰀩'
-'󰀓' + '-' > '󰀮󰀓󰀩'
-'󰀖' + '-' > '󰀮󰀖󰀩'
-'󰀘' + '-' > '󰀮󰀘󰀩'
-'󰀙' + '-' > '󰀮󰀙󰀩'
-'󰀒' + '-' > '󰀮󰀒󰀩'
-'󰀀' any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀂'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀃'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀅'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀈'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀊'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀌'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀑'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀓'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀖'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀘'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀙'  any(Masiri) + '-' > '󰀮' context $WayaBelow
-'󰀒'  any(Masiri) + '-' > '󰀮' context $WayaBelow
+'󰀀' + '-' > '󰀮󰀀󰀩' deadkey(0)
+'󰀂' + '-' > '󰀮󰀂󰀩' deadkey(0)
+'󰀃' + '-' > '󰀮󰀃󰀩' deadkey(0)
+'󰀅' + '-' > '󰀮󰀅󰀩' deadkey(0)
+'󰀈' + '-' > '󰀮󰀈󰀩' deadkey(0)
+'󰀊' + '-' > '󰀮󰀊󰀩' deadkey(0)
+'󰀑' + '-' > '󰀮󰀑󰀩' deadkey(0)
+'󰀓' + '-' > '󰀮󰀓󰀩' deadkey(0)
+'󰀖' + '-' > '󰀮󰀖󰀩' deadkey(0)
+'󰀙' + '-' > '󰀮󰀙󰀩' deadkey(0)
+'󰀒' + '-' > '󰀮󰀒󰀩' deadkey(0)
+'󰀀' any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀂'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀃'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀅'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀈'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀊'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀑'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀓'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀖'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀙'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+'󰀒'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
+
+c
+c WAYA BELOW
+c
+any(Prefixable) + '6' > context $WayaBelow deadkey(0)
+any(MwangwegoSyllables) + '6' > context $WayaBelow deadkey(0)
+
 c
 c  SISA NI
 c
@@ -517,6 +535,7 @@ c
 c KWANTHU NI  TODO: Add any(Masiri)
 c
 '󰀖' + '=' > '󰀦' context $Kwanthu  deadkey(0)
+'󰀃' + '=' > '󰀦' context $Kwanthu  deadkey(0)
 '󰀔' + '=' > '󰀦' context $Kwanthu deadkey(0)
 '󰀙' + '=' > '󰀦' context $Kwanthu deadkey(0)
 '󰀚' + '=' > '󰀦' context $Kwanthu deadkey(0)
@@ -600,14 +619,14 @@ c
 c Mituyo in Myu 
 '󰀤' any(MwangwegoSyllables) + '3' > '󰀰' context(2)
 '󰀰' any(MwangwegoSyllables) + '4' > '󰀱' context(2)
-'󰀱' any(MwangwegoSyllables) + '5' > '󰀲' context(2)
+c '󰀱' any(MwangwegoSyllables) + '5' > '󰀲' context(2)
 '󰀤' any(MwangwegoSyllables) + '4' > '󰀳' context(2)
 '󰀳' any(MwangwegoSyllables) + '5' > '󰀴' context(2)
 '󰀤' any(MwangwegoSyllables) + '5' > '󰀵' context(2)
 
 '󰀤' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀰' context(2) context(3)
 '󰀰' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀱' context(2) context(3)
-'󰀱' any(MwangwegoSyllables) any(Masiri)  + '5' > '󰀲' context(2) context(3)  deadkey(0)
+c '󰀱' any(MwangwegoSyllables) any(Masiri)  + '5' > '󰀲' context(2) context(3)  deadkey(0)
 '󰀤' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀳' context(2) context(3)
 '󰀳' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀴' context(2) context(3)
 '󰀤' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀵' context(2) context(3)
