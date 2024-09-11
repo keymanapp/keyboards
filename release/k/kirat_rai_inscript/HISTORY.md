@@ -1,6 +1,10 @@
 Kirat Rai - INSCRIPT Change History
 ====================
 
+1.1.1 (2024-09-11)
+----------------
+* Update font and targets
+
 1.1 (2024-09-10)
 ----------------
 * Update font
