@@ -1,4 +1,12 @@
 ﻿store(&Version) '15.0'
+#
+# The design philophy for this keyboard is to first filter out any invalid key sequences, then whatever remains
+# is assumed to be valid and can be processed without further checking.  A valid fully composed letter has
+# proven to be complex in Malawi langauges where validity is highly letter-by-letter (phoneme-by-phoneme)
+# dependent along with the pairing against specific mutuyo sequences. A better may be to store the valid
+# sequences, process them, and assume anything else is invalid. A later approach may use a single group to
+# handle each letter.  Experimentation will continue.
+
 store(&KEYBOARDVERSION) '0.9'
 store(&NAME) 'Mwangwego'
 store(&COPYRIGHT) '© 2024 Geʾez Frontier Foundation'
@@ -291,17 +299,180 @@ any(MituyoFinals) any(Prefixable) + any(MutuyoKeys) > context beep
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c Block Composition of Invalid Mituyo Stack
-c
-c TODO: Duplicate the blocking with any(Masiri) present
-c
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c
-
+store(&includecodes) "Untitled.kmn"
 c
 c Universally prevent Waya Below from following Waya
 c
 any(WayaMutuyo) any(Prefixable) + '6' > context beep
 any(WayaMutuyo) any(MwangwegoSyllables) + '6' > context beep
+
+
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c Sequences With a Masiri Present
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+
+'󰀦󰀀' any(Masiri) + any(󰀀_󰀦_InvalidMituyo) > context beep
+'󰀦󰀀' any(Masiri) + '6' > context $WayaBelow deadkey(0)
+'󰀮󰀀' any(Masiri) + any(󰀀_󰀮_InvalidMituyo) > context beep
+'󰀤󰀁' any(Masiri) + any(󰀁_󰀤_InvalidMituyo) > context beep
+'󰀥󰀁' any(Masiri) + any(󰀁_󰀥_InvalidMituyo) > context beep
+'󰀁󰀭' any(Masiri) + any(󰀁__InvalidMituyo) > context beep
+'󰀤󰀂' any(Masiri) + any(󰀂_󰀤_InvalidMituyo) > context beep
+'󰀦󰀂' any(Masiri) + any(󰀂_󰀦_InvalidMituyo) > context beep
+'󰀧󰀂' any(Masiri) + any(󰀂_󰀧_InvalidMituyo) > context beep
+'󰀮󰀂' any(Masiri) + any(󰀂_󰀮_InvalidMituyo) > context beep
+'󰀂󰀯' any(Masiri) + any(󰀂__InvalidMituyo) > context beep
+'󰀳󰀂' any(Masiri) + any(󰀂_󰀳_InvalidMituyo) > context beep
+'󰀹󰀂' any(Masiri) + any(󰀂_󰀹_InvalidMituyo) > context beep
+'󰀤󰀃' any(Masiri) + any(󰀃_󰀤_InvalidMituyo) > context beep
+'󰀦󰀃' any(Masiri) + any(󰀃_󰀦_InvalidMituyo) > context beep
+'󰀪󰀃' any(Masiri) + any(󰀃_󰀪_InvalidMituyo) > context beep
+'󰀮󰀃' any(Masiri) + any(󰀃_󰀮_InvalidMituyo) > context beep
+'󰀃󰀯' any(Masiri) + any(󰀃__InvalidMituyo) > context beep
+'󰀤󰀄' any(Masiri) + any(󰀄_󰀤_InvalidMituyo) > context beep
+'󰀦󰀄' any(Masiri) + any(󰀄_󰀦_InvalidMituyo) > context beep
+'󰀤󰀅' any(Masiri) + any(󰀅_󰀤_InvalidMituyo) > context beep
+'󰀦󰀅' any(Masiri) + any(󰀅_󰀦_InvalidMituyo) > context beep
+'󰀪󰀅' any(Masiri) + any(󰀅_󰀪_InvalidMituyo) > context beep
+'󰀮󰀅' any(Masiri) + any(󰀅_󰀮_InvalidMituyo) > context beep
+'󰀅󰀯' any(Masiri) + any(󰀅__InvalidMituyo) > context beep
+'󰀮󰀆' any(Masiri) + any(󰀆_󰀮_InvalidMituyo) > context beep
+'󰀤󰀇' any(Masiri) + any(󰀇_󰀤_InvalidMituyo) > context beep
+'󰀮󰀇' any(Masiri) + any(󰀇_󰀮_InvalidMituyo) > context beep
+'󰀤󰀈' any(Masiri) + any(󰀈_󰀤_InvalidMituyo) > context beep
+'󰀤󰀈' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀦󰀈' any(Masiri) + any(󰀈_󰀦_InvalidMituyo) > context beep
+'󰀦󰀈' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀮󰀈' any(Masiri) + any(󰀈_󰀮_InvalidMituyo) > context beep
+'󰀈󰀯' any(Masiri) + any(󰀈__InvalidMituyo) > context beep
+'󰀤󰀉' any(Masiri) + any(󰀉_󰀤_InvalidMituyo) > context beep
+'󰀦󰀉' any(Masiri) + any(󰀉_󰀦_InvalidMituyo) > context beep
+'󰀦󰀉' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀤󰀊' any(Masiri) + any(󰀊_󰀤_InvalidMituyo) > context beep
+'󰀦󰀊' any(Masiri) + any(󰀊_󰀦_InvalidMituyo) > context beep
+'󰀧󰀊' any(Masiri) + any(󰀊_󰀧_InvalidMituyo) > context beep
+'󰀪󰀊' any(Masiri) + any(󰀊_󰀪_InvalidMituyo) > context beep
+'󰀮󰀊' any(Masiri) + any(󰀊_󰀮_InvalidMituyo) > context beep
+'󰀊󰀯' any(Masiri) + any(󰀊__InvalidMituyo) > context beep
+'󰀰󰀊' any(Masiri) + any(󰀊_󰀰_InvalidMituyo) > context beep
+'󰀳󰀊' any(Masiri) + any(󰀊_󰀳_InvalidMituyo) > context beep
+'󰀹󰀊' any(Masiri) + any(󰀊_󰀹_InvalidMituyo) > context beep
+'󰀾󰀊' any(Masiri) + any(󰀊_󰀾_InvalidMituyo) > context beep
+'󰀱󰀊' any(Masiri) + any(󰀊_󰀱_InvalidMituyo) > context beep
+'󰀤󰀋' any(Masiri) + any(󰀋_󰀤_InvalidMituyo) > context beep
+'󰀤󰀌' any(Masiri) + any(󰀌_󰀤_InvalidMituyo) > context beep
+'󰀮󰀌' any(Masiri) + any(󰀌_󰀮_InvalidMituyo) > context beep
+'󰀤󰀍' any(Masiri) + any(󰀍_󰀤_InvalidMituyo) > context beep
+'󰀮󰀍' any(Masiri) + any(󰀍_󰀮_InvalidMituyo) > context beep
+'󰀤󰀎' any(Masiri) + any(󰀎_󰀤_InvalidMituyo) > context beep
+'󰀤󰀎' any(Masiri) + '6' > context $WayaBelow  deadkey(0)  c an exception here since the lone'󰀎' rule will later block composition with Waya Below
+'󰀮󰀎' any(Masiri) + any(󰀎_󰀮_InvalidMituyo) > context beep
+'󰀮󰀎' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀤󰀏' any(Masiri) + any(󰀏_󰀤_InvalidMituyo) > context beep
+'󰀥󰀏' any(Masiri) + any(󰀏_󰀥_InvalidMituyo) > context beep
+'󰀧󰀏' any(Masiri) + any(󰀏_󰀧_InvalidMituyo) > context beep
+'󰀸󰀏' any(Masiri) + any(󰀏_󰀸_InvalidMituyo) > context beep
+'󰀷󰀏' any(Masiri) + any(󰀏_󰀷_InvalidMituyo) > context beep
+'󰀤󰀐' any(Masiri) + any(󰀐_󰀤_InvalidMituyo) > context beep
+'󰀤󰀑' any(Masiri) + any(󰀑_󰀤_InvalidMituyo) > context beep
+'󰀦󰀑' any(Masiri) + any(󰀑_󰀦_InvalidMituyo) > context beep
+'󰀮󰀑' any(Masiri) + any(󰀑_󰀮_InvalidMituyo) > context beep
+'󰀑󰀯' any(Masiri) + any(󰀑__InvalidMituyo) > context beep
+'󰀤󰀒' any(Masiri) + any(󰀒_󰀤_InvalidMituyo) > context beep
+'󰀦󰀒' any(Masiri) + any(󰀒_󰀦_InvalidMituyo) > context beep
+'󰀮󰀒' any(Masiri) + any(󰀒_󰀮_InvalidMituyo) > context beep
+'󰀤󰀓' any(Masiri) + any(󰀓_󰀤_InvalidMituyo) > context beep
+'󰀦󰀓' any(Masiri) + any(󰀓_󰀦_InvalidMituyo) > context beep
+'󰀧󰀓' any(Masiri) + any(󰀓_󰀧_InvalidMituyo) > context beep
+'󰀪󰀓' any(Masiri) + any(󰀓_󰀪_InvalidMituyo) > context beep
+'󰀮󰀓' any(Masiri) + any(󰀓_󰀮_InvalidMituyo) > context beep
+'󰀓󰀯' any(Masiri) + any(󰀓__InvalidMituyo) > context beep
+'󰀰󰀓' any(Masiri) + any(󰀓_󰀰_InvalidMituyo) > context beep
+'󰀹󰀓' any(Masiri) + any(󰀓_󰀹_InvalidMituyo) > context beep
+'󰀾󰀓' any(Masiri) + any(󰀓_󰀾_InvalidMituyo) > context beep
+'󰀤󰀔' any(Masiri) + any(󰀔_󰀤_InvalidMituyo) > context beep
+'󰀦󰀔' any(Masiri) + any(󰀔_󰀦_InvalidMituyo) > context beep
+'󰀧󰀔' any(Masiri) + any(󰀔_󰀧_InvalidMituyo) > context beep
+'󰀔󰀯' any(Masiri) + any(󰀔__InvalidMituyo) > context beep
+'󰀹󰀔' any(Masiri) + any(󰀔_󰀹_InvalidMituyo) > context beep
+'󰀤󰀕' any(Masiri) + any(󰀕_󰀤_InvalidMituyo) > context beep
+'󰀤󰀖' any(Masiri) + any(󰀖_󰀤_InvalidMituyo) > context beep
+'󰀦󰀖' any(Masiri) + any(󰀖_󰀦_InvalidMituyo) > context beep
+'󰀖󰀭' any(Masiri) + any(󰀖__InvalidMituyo) > context beep
+'󰀮󰀖' any(Masiri) + any(󰀖_󰀮_InvalidMituyo) > context beep
+'󰀖󰀯' any(Masiri) + any(󰀖__InvalidMituyo) > context beep
+'󰀮󰀘' any(Masiri) + any(󰀘_󰀮_InvalidMituyo) > context beep
+'󰀮󰀘' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀤󰀙' any(Masiri) + any(󰀙_󰀤_InvalidMituyo) > context beep
+'󰀦󰀙' any(Masiri) + any(󰀙_󰀦_InvalidMituyo) > context beep
+'󰀪󰀙' any(Masiri) + any(󰀙_󰀪_InvalidMituyo) > context beep
+'󰀙󰀭' any(Masiri) + any(󰀙__InvalidMituyo) > context beep
+'󰀮󰀙' any(Masiri) + any(󰀙_󰀮_InvalidMituyo) > context beep
+'󰀙󰀯' any(Masiri) + any(󰀙__InvalidMituyo) > context beep
+'󰀤󰀚' any(Masiri) + any(󰀚_󰀤_InvalidMituyo) > context beep
+'󰀦󰀚' any(Masiri) + any(󰀚_󰀦_InvalidMituyo) > context beep
+'󰀚󰀯' any(Masiri) + any(󰀚__InvalidMituyo) > context beep
+'󰀤󰀛' any(Masiri) + any(󰀛_󰀤_InvalidMituyo) > context beep
+'󰀤󰀛' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀦󰀛' any(Masiri) + any(󰀛_󰀦_InvalidMituyo) > context beep
+'󰀦󰀛' any(Masiri) + '6' >  context $WayaBelow  deadkey(0)
+'󰀛󰀯' any(Masiri) + any(󰀛__InvalidMituyo) > context beep
+'󰀤󰀜' any(Masiri) + any(󰀜_󰀤_InvalidMituyo) > context beep
+'󰀦󰀜' any(Masiri) + any(󰀜_󰀦_InvalidMituyo) > context beep
+'󰀦󰀜' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀤󰀝' any(Masiri) + any(󰀝_󰀤_InvalidMituyo) > context beep
+'󰀦󰀝' any(Masiri) + any(󰀝_󰀦_InvalidMituyo) > context beep
+'󰀝󰀯' any(Masiri) + any(󰀝__InvalidMituyo) > context beep
+'󰀤󰀞' any(Masiri) + any(󰀞_󰀤_InvalidMituyo) > context beep
+'󰀤󰀞' any(Masiri) + '6' > context $WayaBelow  deadkey(0)
+'󰀦󰀞' any(Masiri) + any(󰀞_󰀦_InvalidMituyo) > context beep
+'󰀞󰀯' any(Masiri) + any(󰀞__InvalidMituyo) > context beep
+'󰀦󰀟' any(Masiri) + any(󰀟_󰀦_InvalidMituyo) > context beep
+'󰀟󰀭' any(Masiri) + any(󰀟__InvalidMituyo) > context beep
+
+
+c
+c Misisi without Mutuyo present
+c
+'󰀀' any(Masiri) + any(󰀀_InvalidMituyo) > context beep
+'󰀁' any(Masiri) + any(󰀁_InvalidMituyo) > context beep
+'󰀂' any(Masiri) + any(󰀂_InvalidMituyo) > context beep
+'󰀃' any(Masiri) + any(󰀃_InvalidMituyo) > context beep
+'󰀄' any(Masiri) + any(󰀄_InvalidMituyo) > context beep
+'󰀅' any(Masiri) + any(󰀅_InvalidMituyo) > context beep
+'󰀆' any(Masiri) + any(󰀆_InvalidMituyo) > context beep
+'󰀇' any(Masiri) + any(󰀇_InvalidMituyo) > context beep
+'󰀈' any(Masiri) + any(󰀈_InvalidMituyo) > context beep
+'󰀉' any(Masiri) + any(󰀉_InvalidMituyo) > context beep
+'󰀊' any(Masiri) + any(󰀊_InvalidMituyo) > context beep
+'󰀋' any(Masiri) + any(󰀋_InvalidMituyo) > context beep
+'󰀌' any(Masiri) + any(󰀌_InvalidMituyo) > context beep
+'󰀍' any(Masiri) + any(󰀍_InvalidMituyo) > context beep
+'󰀎' any(Masiri) + any(󰀎_InvalidMituyo) > context beep
+'󰀏' any(Masiri) + any(󰀏_InvalidMituyo) > context beep
+'󰀐' any(Masiri) + any(󰀐_InvalidMituyo) > context beep
+'󰀑' any(Masiri) + any(󰀑_InvalidMituyo) > context beep
+'󰀒' any(Masiri) + any(󰀒_InvalidMituyo) > context beep
+'󰀓' any(Masiri) + any(󰀓_InvalidMituyo) > context beep
+'󰀔' any(Masiri) + any(󰀔_InvalidMituyo) > context beep
+'󰀕' any(Masiri) + any(󰀕_InvalidMituyo) > context beep
+'󰀖' any(Masiri) + any(󰀖_InvalidMituyo) > context beep
+'󰀗' any(Masiri) + any(󰀗_InvalidMituyo) > context beep
+'󰀘' any(Masiri) + any(󰀘_InvalidMituyo) > context beep
+'󰀙' any(Masiri) + any(󰀙_InvalidMituyo) > context beep
+'󰀚' any(Masiri) + any(󰀚_InvalidMituyo) > context beep
+'󰀛' any(Masiri) + any(󰀛_InvalidMituyo) > context beep
+'󰀜' any(Masiri) + any(󰀜_InvalidMituyo) > context beep
+'󰀝' any(Masiri) + any(󰀝_InvalidMituyo) > context beep
+'󰀞' any(Masiri) + any(󰀞_InvalidMituyo) > context beep
+'󰀟' any(Masiri) + any(󰀟_InvalidMituyo) > context beep
+
+
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
+c Sequences Without a Masiri Present
+c ccccccccccccccccccccccccccccccccccccccccccccccccc
 
 
 '󰀦󰀀' + any(󰀀_󰀦_InvalidMituyo) > context beep
@@ -637,33 +808,33 @@ c Mituyo in Mi
 '󰀶' any(MwangwegoSyllables) + '5' > '󰀷' context(2)
 '󰀥' any(MwangwegoSyllables) + '5' > '󰀸' context(2)
 
-'󰀥' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀶' context(2)
-'󰀶' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀷' context(2)
-'󰀥' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀸' context(2)
+'󰀥' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀶' context(2) context(3)
+'󰀶' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀷' context(2) context(3)
+'󰀥' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀸' context(2) context(3)
 
 c Mituyo in Ni
 '󰀦' any(MwangwegoSyllables) + '4' > '󰀹' context(2)
 '󰀹' any(MwangwegoSyllables) + '5' > '󰀺' context(2)
 '󰀦' any(MwangwegoSyllables) + '5' > '󰀻' context(2)
 
-'󰀦' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀹' context(2)
-'󰀹' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀺' context(2)
-'󰀦' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀻' context(2)
+'󰀦' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀹' context(2) context(3)
+'󰀹' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀺' context(2) context(3)
+'󰀦' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀻' context(2) context(3)
 
 c Mituyo in Hi
 '󰀧' any(MwangwegoSyllables) + '5' > '󰀼' context(2)
-'󰀧' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀼' context(2)
+'󰀧' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀼' context(2) context(3)
 
 c Mituyo in Sisa
 '󰀪' any(MwangwegoSyllables) + '3' > '󰀽' context(2) 
 '󰀽' any(MwangwegoSyllables) + '4' > '󰀾' context(2)
 
-'󰀪' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀽' context(2) 
-'󰀽' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀾' context(2) 
+'󰀪' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀽' context(2) context(3)
+'󰀽' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀾' context(2) context(3)
 
 c Mituyo in Tumba
 '󰀮' any(MwangwegoSyllables) + '5' > '󰀿' context(2)
-'󰀮' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀿' context(2)
+'󰀮' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀿' context(2) context(3)
 
 c Mituyo in Pewa
 c any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
