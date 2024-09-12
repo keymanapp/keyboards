@@ -1,9 +1,7 @@
 Philippines (SIL) Keyboard
 =====================
 
-Copyright (C) 2006-2018 SIL Philippines
-
-Version 1.0.2
+Copyright (C) SIL Philippines
 
 __DESCRIPTION__
 This keyboard enables the typing of all Philippine languages. It gives the ability to
@@ -20,4 +18,5 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
