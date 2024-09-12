@@ -1,9 +1,7 @@
 Tepehuan (SIL) keyboard
 ==============
 
-© 2008-2020 SIL Mexico
-
-Version 1.0
+© SIL Mexico
 
 Description
 -----------
@@ -16,5 +14,7 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
+ 
 
 
