@@ -1,5 +1,8 @@
 # myWin Extended (SIL) Keyboard Change History
 
+# 1.5 (13 Sep 2024)
+* Add tablet layout
+
 # 1.4.1 (12 MAY 2022)
 * Remove extraneous KEYBOARDVERSION store 
 
