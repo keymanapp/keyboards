@@ -13,10 +13,11 @@ c 1.0   01-Dec-2005     RDD     Based on KayaOld.kmn which was based on Kauffman
 c 1.0.1 15-Sep-2008     MJPH    Unicode, fix 'we,' keys
 c 1.1   18-AUG-2014     MJPH    Switch ALT keys to RALT
 
-store(&TARGETS) 'web desktop'
-store(&KEYBOARDVERSION) '1.2.2'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.3'
 store(&BITMAP) 'sil_kayah_kali.ico'
 store(&VISUALKEYBOARD) 'sil_kayah_kali.kvks'
+store(&LAYOUTFILE) 'sil_kayah_kali.keyman-touch-layout'
 
 begin Unicode > use(main)
 

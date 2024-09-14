@@ -1,8 +1,6 @@
 # Kayah [Latin] (SIL) Keyboard
 
-Copyright (C) 2009-2018 SIL International
-
-Version 1.1
+Copyright (C) SIL International
 
 __DESCRIPTION__
 This keyboard contains all of the characters needed to type Kayah in the Latin Script.
@@ -12,4 +10,7 @@ This keyboard contains all of the characters needed to type Kayah in the Latin S
 
  * Windows
  * macOS
+ * Linux
  * Web
+ * Mobile
+ 
