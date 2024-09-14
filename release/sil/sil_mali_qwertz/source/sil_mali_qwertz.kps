@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Clavier du Mali (Qwertz)</Name>
-    <Copyright URL="">© 2004-2022 SIL Mali</Copyright>
-    <Description>Unicode keyboard to type all special characters needed for the languages
+    <Copyright URL="">© SIL Mali</Copyright>
+    <Description URL="">Unicode keyboard to type all special characters needed for the languages
 of Mali on a QWERTZ (German) keyboard. CAUTION: This keyboard is not
 designed to use with a French keyboard! Clavier Unicode pour taper sur
 un clavier QWERTZ (Deutsch) tous les caractères speciaux utilisés dans
@@ -28,12 +29,6 @@ les langues du Mali. ATTENTION : Ce clavier n'est pas conçu pour écrire
 correctement sur le clavier d'un ordinateur français !</Description>
   </Info>
   <Files>
-    <File>
-      <Name>..\build\sil_mali_qwertz.js</Name>
-      <Description>File sil_mali_qwertz.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
     <File>
       <Name>..\build\sil_mali_qwertz.kvk</Name>
       <Description>File sil_mali_qwertz.kvk</Description>
@@ -161,8 +156,8 @@ correctement sur le clavier d'un ordinateur français !</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="malideutsch" Relationship="deprecates" />
+    <RelatedPackage ID="malideutsch" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
