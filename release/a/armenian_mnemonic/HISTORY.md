@@ -1,6 +1,11 @@
 Armenian Mnemonic Change History
 ====================
 
+2.0.0 (2024-09-14)
+----------------
+
+* Add options for keys `R`, `T`, `P`
+
 1.2.0 (2024-05-28)
 ----------------
 
