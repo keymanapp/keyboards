@@ -1,6 +1,10 @@
 SIL Ethiopic Power-G Change History
 ===================================
 
+1.2.5 (2024-09-16)
+-------------------
+* Removed .js from .kps so there are no expectations of working on mobile devices
+
 1.2.4 (2024-06-17)
 -------------------
 * On-Screen keyboard added.
