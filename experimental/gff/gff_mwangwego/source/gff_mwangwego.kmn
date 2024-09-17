@@ -63,11 +63,12 @@ store(MwangwegoUppercaseKeys) 'ABCDFGHJKLMNPRSTVWYZXQ'
 store(MwangwegoUppercaseConsonants) '󰀀󰀁󰀂󰀛󰀄󰀆󰀜󰀉󰀊󰀋󰀌󰀎󰀕󰀐󰀒󰀟󰀖󰀗󰀘󰀚󰀝󰀞'
 
 store(Mutuyo) '󰀤󰀥󰀦󰀧󰀨󰀩󰀪󰀫󰀬󰀭󰀮󰀯'
-store(MutuyoRegular) '󰀤󰀥󰀦󰀧󰀨󰀪󰀮'
-store(MutuyoCombining) '󰀩󰀫󰀬󰀭󰀯'
+store(MutuyoRegular) '󰀤󰀥󰀦󰀧󰀪󰀮'  c '󰀤󰀥󰀦󰀧󰀨󰀪󰀮' 
+store(MutuyoCombining) '󰀫󰀬󰀭󰀯' c  '󰀩󰀫󰀬󰀭󰀯'  
 store(Mituyo) '󰀰󰀱󰀲󰀳󰀴󰀵󰀶󰀷󰀸󰀹󰀺󰀻󰀼󰀽󰀾󰀿'
 store(MituyoFinals) '󰀱󰀾󰀲󰀴󰀷󰀺󰀾'
-store(Prefixable) outs(OrdersConsonants) outs(Masiri)
+store(MutuyoMituyo) outs(Mutuyo) outs(Mituyo)
+c store(Prefixable) outs(OrdersConsonants) outs(Masiri)
 
 c  󰀤  = 1  / MYU
 c  󰀥  = 2  / MI
@@ -89,8 +90,8 @@ store(Kwanthu) U+F002F
 
 store(WayaMutuyo) '󰀨󰀴󰀵󰀷󰀸󰀺󰀻󰀼󰀿' $WayaBelow
 
-store(MutuyoRegularNumberKeys) '123457-'
-store(MutuyoCombiningNumberKeys) '6890='
+store(MutuyoRegularNumberKeys) '12347-' c '123457-'
+store(MutuyoCombiningNumberKeys) '890=' c '6890='
 store(MutuyoKeys) '1234567890-='
 store(MutuyoKeyMenu) outs(MutuyoKeys) [K_TAB]
 
@@ -269,7 +270,8 @@ c any(L_DigraphBases) + any(L_Modifier)  > index(L_DigraphTargets,1)
 c any(S_DigraphBases) + any(S_Modifier)  > index(S_DigraphTargets,1)
 c any(Y_DigraphBases) + any(Y_Modifier)  > index(Y_DigraphTargets,1)
 
-'󰀓' + 't' > '󰀔'
+notany(MutuyoMituyo) '󰀓' + 't' > context(1) '󰀔'
+nul '󰀓' + 't' > '󰀔'
 
 + any(MwangwegoLowercaseKeys) > index(MwangwegoLowercaseConsonants,1)
 + any(MwangwegoUppercaseKeys) > index(MwangwegoUppercaseConsonants,1)
@@ -279,7 +281,7 @@ c Masiri can only follow the first order ("A") or a Mutuyo
 c
 c uncomment this when using the diacritics:
 c
-any(OrdersConsonants) + any(FirstOrderKeys) > context
+any(OrdersConsonants) + any(FirstOrderKeys) > context deadkey(9)
 any(OrdersConsonants) + any(MasiriKeys)     > context index(Masiri,2)
 
 deadkey(0) + any(MutuyoKeys) > context beep
@@ -290,20 +292,24 @@ deadkey(0) + any(MutuyoKeys) > context beep
 '󰀨󰀆' + any(MutuyoKeys) > context beep
 '󰀆󰀩' + any(MutuyoKeys) > context beep
 
-any(Masiri) + any(MasiriKeys) > context beep
+c any(Masiri) + any(MasiriKeys) > context beep
+
 '󰀱󰀊' + '5' > '󰀲󰀊'
 '󰀱󰀓' + '5' > '󰀲󰀓'
 '󰀱󰀊' any(Masiri) + '5' > '󰀲󰀊' context(2)
 '󰀱󰀓' any(Masiri) + '5' > '󰀲󰀓' context(2)
-any(MituyoFinals) any(Prefixable) + any(MutuyoKeys) > context beep
+c any(MituyoFinals) any(Prefixable) + any(MutuyoKeys) > context beep
+any(MituyoFinals) any(OrdersConsonants) any(Masiri) + any(MutuyoKeys) > context beep
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c Block Composition of Invalid Mituyo Stack
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 
-any(WayaMutuyo) any(Prefixable) + '6' > context beep
-any(WayaMutuyo) any(MwangwegoSyllables) + '6' > context beep
-
+c any(WayaMutuyo) any(Prefixable) + '6' > context beep
+c any(WayaMutuyo) any(MwangwegoSyllables) any(Masiri) + '6' > context beep
+c any(WayaMutuyo) any(MwangwegoSyllables) + '6' > context beep
+c any(WayaMutuyo) any(MwangwegoSyllables) any(Masiri) any(MutuyoCombining) + '6' > context beep
+c any(WayaMutuyo) any(MwangwegoSyllables)  any(MutuyoCombining) + '6' > context beep
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c Sequences With a Masiri Present
@@ -587,6 +593,7 @@ c ccccccccccccccccccccccccccccccccccccccccccccccccc
 '󰀤󰀞' + '6' > context $WayaBelow  deadkey(0)
 '󰀦󰀞' + any(󰀞_󰀦_InvalidMituyo) > context beep
 '󰀞󰀯' + any(󰀞__InvalidMituyo) > context beep
+'󰀦󰀟󰀭' + any(MutuyoKeys) > context beep 
 '󰀦󰀟' + any(󰀟_󰀦_InvalidMituyo) > context beep
 '󰀟󰀭' + any(󰀟__InvalidMituyo) > context beep
 
@@ -661,8 +668,9 @@ c
 c
 c WAYA BELOW
 c
-any(Prefixable) + '6' > context $WayaBelow deadkey(0)
-any(MwangwegoSyllables) + '6' > context $WayaBelow deadkey(0)
+c any(Prefixable) + '6' > context $WayaBelow deadkey(0)
+c any(OrdersConsonants) any(Masiri) + '6' > context $WayaBelow deadkey(0)
+c any(MwangwegoSyllables) + '6' > context $WayaBelow deadkey(0)
 
 c
 c  SISA NI
@@ -763,18 +771,28 @@ c
 + any(ShortO) > '󰀀󰀢'
 + any(ShortU) > '󰀀󰀣'
 
+any(Masiri) + any(ShortE) > context '󰀀󰀠'
+any(Masiri) + any(ShortI) > context '󰀀󰀡'
+any(Masiri) + any(ShortO) > context '󰀀󰀢'
+any(Masiri) + any(ShortU) > context '󰀀󰀣'
+
 
 c
 c  These next two rules will change when the fonts are updated to present the visual order:
 c
+any(OrdersConsonants) + '5' > '󰀨' context deadkey(0)
 any(OrdersConsonants) + any(MutuyoRegularNumberKeys)     >  index(MutuyoRegular,2) context
+any(OrdersConsonants) + '6' > context $WayaBelow deadkey(0)
 any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2)
 
 c any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,2) context(1) context(2)
 c any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context(1) context(2) index(MutuyoCombining,2)
 
+any(OrdersConsonants) any(Masiri) + '5' > '󰀨' context deadkey(0)
 any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)     > index(MutuyoRegular,3) context
+any(OrdersConsonants)  any(Masiri)+ '6' > context $WayaBelow deadkey(0)
 any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,3)
+
 
 c any(MwangwegoSyllables) + any(MutuyoRegularNumberKeys)     >  index(MutuyoRegular,2) context
 c any(MwangwegoSyllables) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2) 
@@ -788,37 +806,37 @@ c Mituyo in Myu
 '󰀰' any(MwangwegoSyllables) + '4' > '󰀱' context(2)
 c '󰀱' any(MwangwegoSyllables) + '5' > '󰀲' context(2)
 '󰀤' any(MwangwegoSyllables) + '4' > '󰀳' context(2)
-'󰀳' any(MwangwegoSyllables) + '5' > '󰀴' context(2)
-'󰀤' any(MwangwegoSyllables) + '5' > '󰀵' context(2)
+'󰀳' any(MwangwegoSyllables) + '5' > '󰀴' context(2) deadkey(0)
+'󰀤' any(MwangwegoSyllables) + '5' > '󰀵' context(2)  deadkey(0)
 
 '󰀤' any(MwangwegoSyllables) any(Masiri) + '3' > '󰀰' context(2) context(3)
 '󰀰' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀱' context(2) context(3)
 c '󰀱' any(MwangwegoSyllables) any(Masiri)  + '5' > '󰀲' context(2) context(3)  deadkey(0)
 '󰀤' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀳' context(2) context(3)
-'󰀳' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀴' context(2) context(3)
-'󰀤' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀵' context(2) context(3)
+'󰀳' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀴' context(2) context(3)  deadkey(0)
+'󰀤' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀵' context(2) context(3)  deadkey(0)
 
 
 c Mituyo in Mi
 '󰀥' any(MwangwegoSyllables) + '4' > '󰀶' context(2)
-'󰀶' any(MwangwegoSyllables) + '5' > '󰀷' context(2)
-'󰀥' any(MwangwegoSyllables) + '5' > '󰀸' context(2)
+'󰀶' any(MwangwegoSyllables) + '5' > '󰀷' context(2) deadkey(0)
+'󰀥' any(MwangwegoSyllables) + '5' > '󰀸' context(2) deadkey(0)
 
 '󰀥' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀶' context(2) context(3)
-'󰀶' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀷' context(2) context(3)
-'󰀥' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀸' context(2) context(3)
+'󰀶' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀷' context(2) context(3)  deadkey(0)
+'󰀥' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀸' context(2) context(3)  deadkey(0)
 
 c Mituyo in Ni
 '󰀦' any(MwangwegoSyllables) + '4' > '󰀹' context(2)
-'󰀹' any(MwangwegoSyllables) + '5' > '󰀺' context(2)
-'󰀦' any(MwangwegoSyllables) + '5' > '󰀻' context(2)
+'󰀹' any(MwangwegoSyllables) + '5' > '󰀺' context(2)  deadkey(0)
+'󰀦' any(MwangwegoSyllables) + '5' > '󰀻' context(2)  deadkey(0)
 
 '󰀦' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀹' context(2) context(3)
-'󰀹' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀺' context(2) context(3)
-'󰀦' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀻' context(2) context(3)
+'󰀹' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀺' context(2) context(3)  deadkey(0)
+'󰀦' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀻' context(2) context(3)  deadkey(0)
 
 c Mituyo in Hi
-'󰀧' any(MwangwegoSyllables) + '5' > '󰀼' context(2)
+'󰀧' any(MwangwegoSyllables) + '5' > '󰀼' context(2)  deadkey(0)
 '󰀧' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀼' context(2) context(3)
 
 c Mituyo in Sisa
@@ -829,16 +847,18 @@ c Mituyo in Sisa
 '󰀽' any(MwangwegoSyllables) any(Masiri) + '4' > '󰀾' context(2) context(3)
 
 c Mituyo in Tumba
-'󰀮' any(MwangwegoSyllables) + '5' > '󰀿' context(2)
-'󰀮' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀿' context(2) context(3)
+'󰀮' any(MwangwegoSyllables) + '5' > '󰀿' context(2)  deadkey(0)
+'󰀮' any(MwangwegoSyllables) any(Masiri) + '5' > '󰀿' context(2) context(3)  deadkey(0)
 
 c Mituyo in Pewa
 c any(MwangwegoSyllables) '󰀭' + '6' > context(1) '󰀭' '󰀩'
-any(MwangwegoSyllables) $Pewa + '6' > context $WayaBelow
-any(MwangwegoSyllables) any(Masiri) $Pewa + '6' > context $WayaBelow
+any(MwangwegoSyllables) $Pewa + '6' > context $WayaBelow  deadkey(0)
+any(MwangwegoSyllables) any(Masiri) $Pewa + '6' > context $WayaBelow  deadkey(0)
 
 c
+any(MwangwegoSyllables) any(MutuyoCombining) + '5' > '󰀨' context deadkey(0) 
 any(MwangwegoSyllables) any(MutuyoCombining) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,3) context 
+any(MwangwegoSyllables) any(Masiri) any(MutuyoCombining) + '5' > '󰀨' context deadkey(0) 
 any(MwangwegoSyllables) any(Masiri) any(MutuyoCombining) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,4) context 
 
 
@@ -884,17 +904,17 @@ c
   deadkey(2) + '3' > '󰀰󰀜󰀡' 
   deadkey(3) + '3' >  '󰀰󰀜󰀢' 
   deadkey(4) + '3' > '󰀰󰀜󰀣' 
-  deadkey(1) + '5' > '󰀵󰀜󰀠'
-  deadkey(2) + '5' > '󰀵󰀜󰀡'
-  deadkey(3) + '5' > '󰀵󰀜󰀢'
-  deadkey(4) + '5' > '󰀵󰀜󰀣'
-  deadkey(1) + '6' >  '󰀤󰀜󰀠󰀩'
-  deadkey(2) + '6' >  '󰀤󰀜󰀡󰀩'
-  deadkey(3) + '6' >  '󰀤󰀜󰀢󰀩'
-  deadkey(4) + '6' >  '󰀤󰀜󰀣󰀩'
+  deadkey(1) + '5' > '󰀵󰀜󰀠'  deadkey(0)
+  deadkey(2) + '5' > '󰀵󰀜󰀡'  deadkey(0)
+  deadkey(3) + '5' > '󰀵󰀜󰀢'  deadkey(0)
+  deadkey(4) + '5' > '󰀵󰀜󰀣'  deadkey(0)
+  deadkey(1) + '6' >  '󰀤󰀜󰀠󰀩'  deadkey(0)
+  deadkey(2) + '6' >  '󰀤󰀜󰀡󰀩'  deadkey(0)
+  deadkey(3) + '6' >  '󰀤󰀜󰀢󰀩'  deadkey(0)
+  deadkey(4) + '6' >  '󰀤󰀜󰀣󰀩'  deadkey(0)
   + '3' > '󰀰󰀜'
-  + '5' > '󰀵󰀜'   
-  + '6' > '󰀤󰀜󰀩'
+  + '5' > '󰀵󰀜'  deadkey(0)   
+  + '6' > '󰀤󰀜󰀩'  deadkey(0)
  c + any(MyuMituyoKeys:index:beep) > outs(󰀜_󰀤_menu) beep
   + [K_TAB] > '󰀜'
   nomatch >   outs(󰀜_󰀤_menu) beep
@@ -904,17 +924,17 @@ c
   deadkey(2) + '3' > '󰀰󰀝󰀡' 
   deadkey(3) + '3' >  '󰀰󰀝󰀢' 
   deadkey(4)  + '3' > '󰀰󰀝󰀣' 
-  deadkey(1) + '5' > '󰀵󰀝󰀠'
-  deadkey(2) + '5' > '󰀵󰀝󰀡'
-  deadkey(3) + '5' > '󰀵󰀝󰀢'
-  deadkey(4) + '5' > '󰀵󰀝󰀣'
-  deadkey(1) + '6' >  '󰀤󰀝󰀠󰀩'
-  deadkey(2) + '6' >  '󰀤󰀝󰀡󰀩'
-  deadkey(3) + '6' >  '󰀤󰀝󰀢󰀩'
-  deadkey(4) + '6' >  '󰀤󰀝󰀣󰀩'
+  deadkey(1) + '5' > '󰀵󰀝󰀠'  deadkey(0)
+  deadkey(2) + '5' > '󰀵󰀝󰀡'  deadkey(0)
+  deadkey(3) + '5' > '󰀵󰀝󰀢'  deadkey(0)
+  deadkey(4) + '5' > '󰀵󰀝󰀣'  deadkey(0)
+  deadkey(1) + '6' >  '󰀤󰀝󰀠󰀩'  deadkey(0)
+  deadkey(2) + '6' >  '󰀤󰀝󰀡󰀩'  deadkey(0)
+  deadkey(3) + '6' >  '󰀤󰀝󰀢󰀩'  deadkey(0)
+  deadkey(4) + '6' >  '󰀤󰀝󰀣󰀩'  deadkey(0)
   + '3' > '󰀰󰀝'  
-  + '5' > '󰀵󰀝'   
-  + '6' > '󰀤󰀝󰀩'
+  + '5' > '󰀵󰀝'  deadkey(0)
+  + '6' > '󰀤󰀝󰀩'  deadkey(0)
   c + any(MyuMituyoKeys:index:beep) > outs(󰀝_󰀤_menu) beep
   + [K_TAB] > '󰀝'
   nomatch >  outs(󰀝_󰀤_menu) beep
@@ -924,16 +944,16 @@ group(󰀔_󰀦_group) using keys
   deadkey(2) + '4' > '󰀰󰀔󰀡' 
   deadkey(3) + '4' >  '󰀰󰀔󰀢' 
   deadkey(4)  + '4' > '󰀰󰀔󰀣' 
-  deadkey(1) + '6' >  '󰀤󰀔󰀠󰀩'
-  deadkey(2) + '6' >  '󰀤󰀔󰀡󰀩'
-  deadkey(3) + '6' >  '󰀤󰀔󰀢󰀩'
-  deadkey(4) + '6' >  '󰀤󰀔󰀣󰀩'
-  deadkey(1) + '=' > '󰀵󰀔󰀠'
-  deadkey(2) + '=' > '󰀵󰀔󰀡'
-  deadkey(3) + '=' > '󰀵󰀔󰀢'
-  deadkey(4) + '=' > '󰀵󰀔󰀣'
+  deadkey(1) + '6' >  '󰀤󰀔󰀠󰀩'  deadkey(0)
+  deadkey(2) + '6' >  '󰀤󰀔󰀡󰀩'  deadkey(0)
+  deadkey(3) + '6' >  '󰀤󰀔󰀢󰀩'  deadkey(0)
+  deadkey(4) + '6' >  '󰀤󰀔󰀣󰀩'  deadkey(0)
+  deadkey(1) + '=' > '󰀵󰀔󰀠'  deadkey(0)
+  deadkey(2) + '=' > '󰀵󰀔󰀡'  deadkey(0)
+  deadkey(3) + '=' > '󰀵󰀔󰀢'  deadkey(0)
+  deadkey(4) + '=' > '󰀵󰀔󰀣'  deadkey(0)
   + '4' > '󰀹󰀔' 
-  + '6' > '󰀦󰀔󰀩'
+  + '6' > '󰀦󰀔󰀩'  deadkey(0)
   + '=' > '󰀦󰀔󰀯'
 c  + any(NiMituyoKeys:index:beep) > outs(󰀔_󰀦_menu) beep
   + [K_TAB] >  '󰀔'
