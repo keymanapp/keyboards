@@ -1,0 +1,54 @@
+﻿c sil_zaiwa generated from template at 2024-09-17 13:27:31
+c with name "Zaiwa Backwards"
+store(&VERSION) '10.0'
+store(&NAME) 'Zaiwa Backwards'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'desktop'
+store(&BITMAP) 'sil_zaiwa.ico'
+store(&VISUALKEYBOARD) 'sil_zaiwa.kvks'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c deadkeys
++ "[" > dk(acute)
++ "'" > dk(grave)
++ ">" > dk(circumflex)
+
+dk(acute) + 'a' > 'á'
+dk(acute) + 'e' > 'é'
+dk(acute) + 'i' > 'í'
+dk(acute) + 'o' > 'ó'
+dk(acute) + 'u' > 'ú'
+dk(acute) + 'A' > 'Á'
+dk(acute) + 'E' > 'É'
+dk(acute) + 'I' > 'Í'
+dk(acute) + 'O' > 'Ó'
+dk(acute) + 'U' > 'Ú'
+dk(acute) + U+0020 > '['
+
+dk(grave) + 'a' > 'à'
+dk(grave) + 'e' > 'è'
+dk(grave) + 'i' > 'ì'
+dk(grave) + 'o' > 'ò'
+dk(grave) + 'u' > 'ù'
+dk(grave) + 'A' > 'À'
+dk(grave) + 'E' > 'È'
+dk(grave) + 'I' > 'Ì'
+dk(grave) + 'O' > 'Ò'
+dk(grave) + 'U' > 'Ù'
+dk(grave) + U+0020 > "'"
+
+dk(circumflex) + 'a' > 'â'
+dk(circumflex) + 'e' > 'ê'
+dk(circumflex) + 'i' > 'î'
+dk(circumflex) + 'o' > 'ô'
+dk(circumflex) + 'u' > 'û'
+dk(circumflex) + 'A' > 'Â'
+dk(circumflex) + 'E' > 'Ê'
+dk(circumflex) + 'I' > 'Î'
+dk(circumflex) + 'O' > 'Ô'
+dk(circumflex) + 'U' > 'Û'
+dk(circumflex) + U+0020 > '>'
