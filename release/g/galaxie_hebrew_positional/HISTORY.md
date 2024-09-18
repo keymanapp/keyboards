@@ -1,5 +1,8 @@
 # Galaxie Hebrew (Positional) Keyboard Change History
 
+## 2.3 (18 Sep 2024)
+* Added mobile layout
+
 ## 2.2 (24 Aug 2018)
 
 * Migrate source to GitHub
