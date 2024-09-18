@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Hebrew and Greek Transliteration (SIL)</Name>
-    <Copyright URL="">Copyright © 2003-2018 SIL International</Copyright>
-    <Description>Hebrew and Greek Transliteration Unicode keyboard for use with any
-Unicode Windows fonts.</Description>
+    <Copyright URL="">Copyright © SIL Global</Copyright>
+    <Description URL="">Keyboard for Hebrew and Greek Transliteration.</Description>
+    <Author URL="">Todd Hoatson, Christopher Samuel</Author>
   </Info>
   <Files>
     <File>
@@ -92,8 +93,8 @@ Unicode Windows fonts.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="hebgrktransuni" Relationship="deprecates" />
+    <RelatedPackage ID="hebgrktransuni" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
