@@ -11,8 +11,4 @@ Supported Platforms
  * Windows
  * macOS
  * Linux
-
-More Information
--------------------
-* Web was removed since this is a Mnemonic layout and works on other than US Qwerty
-
+ * Web

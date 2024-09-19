@@ -12,8 +12,6 @@ This keyboard is designed for Biblical Hebrew, a Semitic language of the ancient
  * Windows
  * macOS
  * Linux
+ * Web
 
-More Information
--------------------
-* Web was removed since this is a Mnemonic layout and works on other than US Qwerty
 

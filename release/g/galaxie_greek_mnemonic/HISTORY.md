@@ -2,8 +2,7 @@ Galaxie Greek (Mnemonic) Keyboard Change History
 =======================
 
 ## 3.3 (19 Sep 2024)
-* Added macOS and Linux as platform
-* Actually removed web this time since it's a mnemonic keyboard
+* Changed targets
 
 ## 3.2.2 (8 Feb 2021)
 * Remove web, macosx, linux from supported platforms
