@@ -1,9 +1,7 @@
 Mooré - Burkina Faso keyboard
 ==============
 
-© SIL International
-
-Version 2.0.1
+© SIL Global
 
 Description
 -----------
@@ -16,5 +14,7 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
+ 
 
 
