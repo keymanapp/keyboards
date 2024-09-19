@@ -131,6 +131,9 @@
 <div id='osk' data-states='default shift alt ctrl shift-ctrl ctrl-alt shift-ctrl-alt'>
 </div>
 
-<h2>Touch Keyboard Layout</h2>
-<div id='osk-tablet' data-states='default shift'>
+  <h2>Mobile/tablet layouts</h2>
+
+    <p>Due to the size and number of keys, some characters are hidden in the long press. 
+        Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<div id='osk-tablet' data-states='default shift ctrl-alt shift-ctrl-alt'>
 </div>
