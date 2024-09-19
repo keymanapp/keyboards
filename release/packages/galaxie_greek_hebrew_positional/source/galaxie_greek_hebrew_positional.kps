@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.52.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,9 +18,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Galaxie Greek/Hebrew (Positional)</Name>
-    <Copyright URL="">2004-2019 Galaxie Software and SIL International</Copyright>
-    <Version URL="">2.2.1</Version>
-    <Description>This package includes 2 positional keyboards called: Galaxie Greek
+    <Copyright URL="">(c) Galaxie Software and SIL Global</Copyright>
+    <Version URL="">2.3</Version>
+    <Description URL="">This package includes 2 positional keyboards called: Galaxie Greek
 (Phonetic) and Galaxie Hebrew (Positional).</Description>
   </Info>
   <Files>
@@ -52,6 +53,12 @@
       <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
     <File>
       <Name>..\build\galaxie_hebrew_positional.js</Name>
@@ -89,18 +96,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
-    <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Galaxie Hebrew (Positional)</Name>
       <ID>galaxie_hebrew_positional</ID>
-      <Version>2.2</Version>
+      <Version>2.3</Version>
       <RTL>True</RTL>
       <Languages>
         <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
@@ -110,15 +111,15 @@
     <Keyboard>
       <Name>Galaxie Greek (Phonetic)</Name>
       <ID>galaxie_greek_positional</ID>
-      <Version>1.0</Version>
+      <Version>2.3</Version>
       <Languages>
+        <Language ID="el">Modern Greek (1453-)</Language>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
-        <Language ID="el">Modern Greek (1453-) (Greek)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="galaxiegreekandhebrew" Relationship="deprecates" />
+    <RelatedPackage ID="galaxiegreekandhebrew" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
