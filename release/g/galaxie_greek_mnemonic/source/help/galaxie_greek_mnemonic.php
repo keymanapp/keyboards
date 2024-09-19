@@ -33,23 +33,6 @@ END;
 
 
 
-<h1>Galaxie Greek (Mnemonic) Keyboard</h1>
-
-        <p style='margin:0px'>Keyboard &#169; 2004-2021 Galaxie Software and SIL International</p>
-
-        <br/>
-        <a href="#Overview">Overview</a><br/>
-        <a href="#UsingGreek">Greek Keyboard</a><br/>
-        <a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-        <a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-        <a style='margin-left:20px' href="#Examples">Examples</a><br/>
-        <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-        <a style='margin-left:30px' target="_blank" href='keyboardchart.php'>Complete Typing Chart</a><br/>
-        <a href="#Technical">Technical Information</a><br/>
-        <a style='margin-left:20px' href="#Author">Authorship</a><br/>
-
-        <div id='Overview'>
-            <h2>Overview</h2>
             <p>This Keyman keyboard is designed for Koine Greek, a trade language of the ancient Mediterranean and the language of the Septuagint and New Testament Scriptures. It is a mnemonic Keyman keyboard. This means that the arrangement of the letters
                 in the Keyman keyboard will depend on the order of the keys on your hardware layout.</p>
 
@@ -65,8 +48,6 @@ END;
                 <li>QWERTY US</li>
                 <li>QWERTZ German</li>
             </ul>
-
-            <p>This keyboard includes an On Screen Keyboard view, which displays best on a QWERTY US layout.</p>
 
             <p>This keyboard works with standard Unicode fonts.</p>
 
@@ -2208,7 +2189,7 @@ END;
         <div id="Author">
             <h3>Keyboard Authorship</h3>
             <p>
-                This keyboard was created by Hampton Keathley of Galaxie Software. SIL International graciously acknowledges the contribution made by the author in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. His
+                This keyboard was created by Hampton Keathley of Galaxie Software. SIL Global graciously acknowledges the contribution made by the author in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. His
                 effort has assisted greatly in enabling people to communicate in Koine Greek.
             </p>
 
