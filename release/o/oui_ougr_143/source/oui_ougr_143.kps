@@ -7,7 +7,9 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>image.html</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,11 +20,17 @@
   </StartMenu>
   <Info>
     <Name URL="">oui_ougr_143</Name>
-    <Copyright URL="">Copyright © abKAA</Copyright>
-    <Author URL="">abKAA</Author>
-    <Description URL="">[TR] Eski Uygurca Yazısı: Değiştirilmiş Soğd-Arami Ebcedi
-[EN] Old Uyghur Script: Modified Sogdian-Aramaic Abjad Script
-[ZH] 回鶻字母： 亞拉姆-粟特辅音音素文字的修改形式</Description>
+    <Copyright URL="">Copyright © Kadir Garip</Copyright>
+    <Author URL="mailto:kadir0garip@hotmail.com">Kadir Garip</Author>
+    <Description URL="">[TR] Eski Uygurca Yazısı: (8. ilâ 18. yüzyıl)
+[EN] Old Uyghur Script (8th - 18th centuries)
+[ZH] 回鶻字母： 亞拉姆-粟特辅音音素文字的修改形式 （8至18世纪）
+
+Old Uyghur Script, also known as the Qocho Script or the Bitig Script,
+is an abjad alphabet hybrid used for writing Old Uyghur, Karakhanid,
+Ottoman Turkish, Mongolian and many more languages across Asia.
+Please read the "readme.htm", included in this Keyman package. 
+Please read the "readme.htm", included in this Keyman package.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -62,12 +70,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>NotoSerifOldUyghur-Regular.otf</Name>
+      <Description>Font Noto Serif Old Uyghur Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>image.html</Name>
+      <Description>File image.html</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.html</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>oui_ougr_143</Name>
+      <Name>Old Uyghur</Name>
       <ID>oui_ougr_143</ID>
-      <Version>1.0</Version>
+      <Version>1.4</Version>
+      <OSKFont>NotoSerifOldUyghur-Regular.otf</OSKFont>
+      <DisplayFont>NotoSerifOldUyghur-Regular.otf</DisplayFont>
       <Languages>
         <Language ID="oui-Ougr-143">Old Uighur</Language>
       </Languages>
