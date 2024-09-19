@@ -1,7 +1,7 @@
 Polytonic Greek (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 Description
 -----------
@@ -13,3 +13,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Tablet
+ * Phone
+ 

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Polytonic Greek (SIL)</Name>
-    <Copyright URL="">(c) 2002-2019 SIL International</Copyright>
-    <Description>Greek keyboard layout supporting Polytonic Greek, using precomposed
+    <Copyright URL="">(c) SIL Global</Copyright>
+    <Description URL="">Greek keyboard layout supporting Polytonic Greek, using precomposed
 characters.</Description>
+    <Author URL="">D I Bevan</Author>
   </Info>
   <Files>
     <File>
@@ -78,23 +80,49 @@ characters.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Bold.ttf</Name>
+      <Description>Font Gentium Plus Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-BoldItalic.ttf</Name>
+      <Description>Font Gentium Plus Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Italic.ttf</Name>
+      <Description>Font Gentium Plus Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\gentium\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Polytonic Greek (SIL)</Name>
       <ID>sil_greek_polytonic</ID>
-      <Version>1.6</Version>
-      <OSKFont>GentiumPlus-Regular.ttf</OSKFont>
-      <DisplayFont>GentiumPlus-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="GentiumPlus-Regular.ttf" /></WebDisplayFonts>
+      <Version>1.8</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
         <Language ID="el">Modern Greek (1453-)</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\sil\gentium\GentiumPlus-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="grkpolycompv103" Relationship="deprecates" />
+    <RelatedPackage ID="grkpolycompv103" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
