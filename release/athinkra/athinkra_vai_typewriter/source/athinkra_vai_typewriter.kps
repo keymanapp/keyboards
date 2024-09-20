@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.109.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Vai Typewriter (Athinkra)</Name>
-    <Copyright URL="">© 2008-2020 Athinkra, LLC</Copyright>
+    <Copyright URL="">© Athinkra, LLC</Copyright>
     <Author URL="">Jason Glavy</Author>
-    <Description>A Keyman keyboard for the Vai language of Liberia, developed by the team
+    <Description URL="">A Keyman keyboard for the Vai language of Liberia, developed by the team
 at Athinkra, LLC. This keyboard uses fewer keystrokes than the **Vai
 (Athinkra)** keyboard and is more ergonomic.</Description>
   </Info>
@@ -116,17 +117,26 @@ at Athinkra, LLC. This keyboard uses fewer keystrokes than the **Vai
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\athinkra_vai_typewriter.js</Name>
+      <Description>File athinkra_vai_typewriter.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Vai Typewriter (Athinkra)</Name>
       <ID>athinkra_vai_typewriter</ID>
-      <Version></Version>
+      <Version>1.3</Version>
       <OSKFont>..\..\..\shared\fonts\vaii\DukorItalic.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\vaii\DukorItalic.ttf</DisplayFont>
       <Languages>
-        <Language ID="vai-Vaii">Vai (Vai)</Language>
+        <Language ID="vai">Vai</Language>
       </Languages>
+      <Examples>
+        <Example ID="vai" Keys="Fai" Text="ꕙꔤ‎" Note=""/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

@@ -194,12 +194,6 @@ END;
     </table>
     <aside>Keys with a red background are combining accents.</aside>
 </div>
-<h3>Alternate Names</h3>
-<ul>
-    <li>Plains Cree</li>
-    <li>Cree (Y-dialect)</li>
-    <li>nêhiyawêwin</li>
-</ul>
 
 <h2>Keyboard Layout</h2>
 <div id='osk' data-states='default shift numeric'></div>

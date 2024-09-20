@@ -1,6 +1,10 @@
 Kayah [Kayah Li] (SIL) Keyboard Change History
 =======================
 
+1.3 (13 Sept 2024)
+-----------------
+* Add tablet layout
+
 1.2.2 (14 July 2023)
 -----------------
 * Update Kay Pho Du to new version

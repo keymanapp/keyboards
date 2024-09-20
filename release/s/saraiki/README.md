@@ -1,9 +1,7 @@
 Saraiki (Arabic) keyboard
 ==============
 
-© 2020 Parvez Qadir
-
-Version 1.0
+© Parvez Qadir
 
 Description
 -----------
@@ -28,4 +26,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
  

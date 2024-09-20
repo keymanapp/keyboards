@@ -1,9 +1,7 @@
 Tamil Modular (Visual Media) keyboard
 ==============
 
-(c) 2008-2020 Visual Media and SIL International
-
-Version 1.1
+(c) Visual Media and SIL International
 
 Description
 -----------
@@ -22,4 +20,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 

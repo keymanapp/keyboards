@@ -1,9 +1,10 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '10.0'
-store(&TARGETS) 'mobile'
+store(&KEYBOARDVERSION) '11.0'
+store(&TARGETS) 'any'
 c store(&ETHNOLOGUECODE) "clm"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Nəxʷsƛ̓ay̓əmúcən'
+store(&VISUALKEYBOARD) 'fv_nexwslayemucen.kvks'
 
 begin Unicode > use(main)
 
@@ -120,30 +121,112 @@ c --- END OF TOUCH LAYOUT RULES ---
 
 
 C CONSTRAINTS AND RULES
+c Notes:
+c desktop and mobile glottal accent share rules
+c there are seperate rules for desktop and mobile acute accent
+c desktop acute/grave accent is typed BEFORE the letter
+c mobile does not have grave accent
 
-c acute accent
-store(plainVowels) "aeiouAEIOU"
-store(acuteVowels) "áéíóúÁÉÍÓÚ"
-store(acuteKeys) [T_ACUTE] [SHIFT T_ACUTE] c add desktop
+c basic stores
+store(plainVowels) "aeiuAEIU" c no letter "o"
+store(acuteVowels) "áéíúÁÉÍÚ"
+store(graveVowels) "àèìùÀÈÌÙ"
+store(needsGlottal) "čcmlnŋwyptkqČCMLNŊWYPTKQ"
+
+c desktop deadkeys
+store(desktopAcuteKey) ";"
+store(desktopGraveKey) "]"
+
+c combining glottal above right
+store(glottalKeys) [T_F] [SHIFT T_F] [K_D]
+any(needsGlottal) + any(glottalKeys) > index(needsGlottal,1) U+0315
+
+c acute accent - MOBILE
+store(acuteKeys) [T_ACUTE] [SHIFT T_ACUTE]
 any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
-any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
 store(schwa) "əƏ"
 any(schwa) + any(acuteKeys) > index(schwa,1) U+0301
+
+c acute accent - DESKTOP
+c note the acute deadkey has some extra combinations (borrowed from Montler's KlallamU layout)
+any(desktopAcuteKey) + any(plainVowels) > index(acuteVowels,2)
+any(desktopAcuteKey) + [K_F] > 'ə' U+0301
+any(desktopAcuteKey) + [K_Q] > "qʷ" c from Montler's KlallamU layout
+any(desktopAcuteKey) + [K_Z] > 'x̣ʷ' c from Montler's KlallamU layout
+any(desktopAcuteKey) + [K_X] > 'x̣ʷ' c from Montler's KlallamU layout
+any(desktopAcuteKey) + [K_L] > 'l' c from Montler's KlallamU layout
+
+any(desktopAcuteKey) + [K_BKSLASH] > '√' c from Montler's KlalamU layout
+any(desktopAcuteKey) + [K_EQUAL] > '≠' c from Montler's KlalamU layout
+
+c grave accent - DESKTOP
+any(desktopGraveKey) + any(plainVowels) > index(graveVowels,2)
+any(desktopGraveKey) + [K_F] > 'ə' U+0300
 
 c letters with hacek - backspace rule
 store(noHacek) "csCS"
 store(hasHacek) "čšČŠ"
 any(hasHacek) + [K_BKSP] > index(noHacek,1) c backspace on čš will leave the plain letter behind
 
-c combining glottal above right
-store(needsGlottal) "čcmlnŋwyptkqČCMLNŊWYPTKQ"
-store(glottalKeys) [T_F] [SHIFT T_F] c add desktop
-any(needsGlottal) + any(glottalKeys) > index(needsGlottal,1) U+0315
+c accented vowels - backspace rules
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+any(graveVowels) + [K_BKSP] > index(plainVowels,1) c backspace on grave vowel will leave a plain vowel behind
 
 c combining glottal on rounded sounds
-'ʷ' + any(glottalKeys) > U+0315 'ʷ'
-c 'kʷ' + any(glottalKeys) > 'k' U+0315 'ʷ'
-c 'Kʷ' + any(glottalKeys) > 'K' U+0315 'ʷ'
-c 'qʷ' + any(glottalKeys) > 'q' U+0315 'ʷ'
-c 'Qʷ' + any(glottalKeys) > 'Q' U+0315 'ʷ'
+'qʷ' + any(glottalKeys) > 'q' U+0315 'ʷ'
+'kʷ' + any(glottalKeys) > 'k' U+0315 'ʷ'
 
+c stacking prevention rules
+store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"  
+any(NumbersAndPunctuation) + any(glottalKeys) > context beep
+c any(NumbersAndPunctuation) + any(desktopGlottalKey) > context beep
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep
+c any(NumbersAndPunctuation) + any(desktopAcuteKey) > context beep
+c any(NumbersAndPunctuation) + any(desktopGraveKey) > context beep
+U+0315 + any(glottalKeys) > context beep
+
+C ~*~*~*~*~*~*~*~
+C DESKTOP LAYOUT
+C The desktop layout is based on the original KlallamU keyboard by Tim Montler.
+C see also: extra combinations in the "rules" part of this *.kmn file
+
+C language specific keys
++ [K_B] > "č"
++ [K_F] > "ə"
++ [K_G] > "ŋ"
++ [K_J] > "ʔ"
++ [K_K] > "kʷ"
++ [K_L] > "ɬ"
++ [K_O] > "xʷ"
++ [K_R] > "ʷ"
++ [K_V] > "š"
++ [K_Z] > "x̣"
+"u" + "i" > "ƛ̕" c "ui" is glottalized barred lambda
+
+c other
+c from Montler's KlallamU layout
+c see also: the "rules" section of this *.kmn has additional combinations
+"." + "." > "…" c ellipsis
+
+c deadkey - original keys by typing the letter twice
+any(desktopGraveKey) + "]" > "]"
+any(desktopAcuteKey) + ";" > ";"
+c any(desktopGlottalKey) + "d" > "d"
+
+C original keys with right-alt
++ [RALT K_COLON] > ";"
++ [RALT K_RBRKT] > "]"
++ [RALT K_D] > "d"
+
++ [RALT K_B] > "b"
++ [RALT K_F] > "f"
++ [RALT K_G] > "g"
++ [RALT K_I] > "i"
++ [RALT K_J] > "j"
++ [RALT K_K] > "k"
++ [RALT K_L] > "l"
++ [RALT K_O] > "o"
++ [RALT K_R] > "r"
++ [RALT K_U] > "u"
++ [RALT K_V] > "v"
++ [RALT K_Z] > "z"

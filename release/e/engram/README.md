@@ -1,9 +1,7 @@
 Engram keyboard layout
 ======================
 
-© 2021 Arno Klein
-
-Version 2.0
+© Arno Klein
 
 Description
 -----------
@@ -30,6 +28,7 @@ Punctuation marks are logically grouped together in the middle columns (accessed
 
 Links
 -----
+https://keyman.com/keyboards/engram
 
 https://engram.dev
 
@@ -42,7 +41,4 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * Desktop devices
-
-ToDo
-----
+ * Mobile

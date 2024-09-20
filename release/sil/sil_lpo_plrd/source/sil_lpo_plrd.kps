@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.112.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Lipo (SIL)</Name>
-    <Copyright URL="">© 2014-2020 SIL International</Copyright>
-    <Description>This keyboard was designed for the Lipo \[lpo\] language using the Miao
+    <Copyright URL="">© SIL International</Copyright>
+    <Description URL="">This keyboard was designed for the Lipo \[lpo\] language using the Miao
 script. A font must be installed to support this keyboard. The Taogu
 font is also packaged with this keyboard.</Description>
   </Info>
@@ -145,16 +146,22 @@ font is also packaged with this keyboard.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_lpo_plrd.js</Name>
+      <Description>File sil_lpo_plrd.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lipo (SIL)</Name>
       <ID>sil_lpo_plrd</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\plrd\taogu\Taogu-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\plrd\taogu\Taogu-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="lpo-Plrd">Lipo (Miao)</Language>
+        <Language ID="lpo">Lipo</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

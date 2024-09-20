@@ -1,6 +1,10 @@
 SIL Ethiopic Change History
 ===========================
 
+2.0.6 (2024-09-16)
+-------------------
+* Removed .js from .kps so there are no expectations of working on mobile devices
+
 2.0.5 (2024-06-16)
 -------------------
 * On-Screen keyboard added.

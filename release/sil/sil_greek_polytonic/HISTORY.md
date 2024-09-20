@@ -1,6 +1,11 @@
 Polytonic Greek (SIL) Keyboard Change History
 =======================
 
+1.8 (17 Sept 2024)
+-----------------
+* Add tablet and phone layouts
+* Add support for macron
+
 1.7 (1 July 2024)
 -----------------
 * Add AltGr+S for enforced medial sigma

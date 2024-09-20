@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Hawaiian (SIL)</Name>
-    <Copyright URL="">© 2008-2023 SIL International</Copyright>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>Hawaiian (SIL) is a Unicode keyboard for the Hawaiian language.</Description>
+    <Description URL="">Hawaiian (SIL) is a Unicode keyboard for the Hawaiian language.</Description>
   </Info>
   <Files>
     <File>
@@ -126,12 +127,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_hawaiian.js</Name>
+      <Description>File sil_hawaiian.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hawaiian (SIL)</Name>
       <ID>sil_hawaiian</ID>
-      <Version>2.1</Version>
+      <Version></Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</DisplayFont>
       <Languages>
@@ -139,8 +146,8 @@
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="hi-keyboard" Relationship="deprecates" />
+    <RelatedPackage ID="hi-keyboard" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

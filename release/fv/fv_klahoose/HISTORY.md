@@ -1,5 +1,9 @@
 Éy7á7juuthem Change History
 ============================
+10.2 (30 Jul 2024)
+----------------
+* Updated to v17 of Keyman Developer
+* Replaced raised capital w with lowercase version
 
 10.1 (6 Mar 2024)
 ----------------

@@ -1,6 +1,10 @@
 Vedic Sanskrit Devanagari Phonetic (ITRANS) Version History
 ======================================
 
+1.3.0 (2024-08-27)
+----------------
+* Add mobile layout
+
 1.2.2 (2022-07-01)
 ----------------
 * Add Siddhanta font to keyboard package

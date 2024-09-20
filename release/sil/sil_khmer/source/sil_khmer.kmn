@@ -14,12 +14,13 @@ c adding : (U+00A3) and making a rotation for that key and some deletions of red
 store(&VERSION) '10.0'
 store(&NAME) 'Khmer (SIL)'
 store(&BITMAP) 'sil_khmer.ico'
-store(&COPYRIGHT) '(c) 2002 - 2019 SIL International'
+store(&COPYRIGHT) '(c) SIL Global'
 store(&MESSAGE) "Created by D. Kanjahn for Unicode. Input method close to former ABC fonts."
 c store(&HOTKEY) "^+U"
-store(&TARGETS) 'web desktop'
-store(&KEYBOARDVERSION) '2.0'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '2.1'
 store(&VISUALKEYBOARD) 'sil_khmer.kvks'
+store(&LAYOUTFILE) 'sil_khmer.keyman-touch-layout'
 
 begin Unicode> use(main)
                

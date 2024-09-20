@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Lisu Standard (SIL)</Name>
-    <Copyright URL="">© 2018-2023 SIL International</Copyright>
-    <Description>This keyboard follows standard Lisu layout.</Description>
+    <Copyright URL="">© SIL International</Copyright>
+    <Description URL="">This keyboard follows standard Lisu layout.</Description>
   </Info>
   <Files>
     <File>
@@ -106,17 +107,20 @@
     <Keyboard>
       <Name>Lisu Standard (SIL)</Name>
       <ID>sil_lisu_standard</ID>
-      <Version>1.0.0</Version>
+      <Version>1.1</Version>
       <OSKFont>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\lisu\lisutzimu\lisutzimu.ttf</DisplayFont>
       <Languages>
         <Language ID="lis">Lisu</Language>
         <Language ID="atb-Lisu">Zaiwa (Fraser)</Language>
-        <Language ID="lbc-Lisu">Lakkia (Fraser)</Language>
+        <Language ID="lbc">Lakkia (Fraser)</Language>
         <Language ID="lpo-Lisu">Lipo (Fraser)</Language>
         <Language ID="nxq-Lisu">Naxi (Fraser)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="sil_lisu_basic"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

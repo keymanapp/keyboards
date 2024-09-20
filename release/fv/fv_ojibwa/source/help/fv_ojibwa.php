@@ -159,8 +159,8 @@ END;
             <td align='center'>🌐</td>
             <td align='center'>ᐧ</td>
             <td align='center' colspan='4'>space</td>
-            <th align='center'>˙</th>
-            <td align='center'>⌫</td>
+            <td class="keyboard-layer__special">˙</td>
+            <td align='center' colspan="2">⌫</td>
         </tr>
 
     </table>
@@ -216,8 +216,8 @@ END;
     <ul>
         <li>Keys with a red background are combining accents. On your mobile device, these keys will have green text.
         </li>
-        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys.
-        </li>Common punctuation marks can be found by pressing and holding the full stop key ᙮ on the right side of the space
+        <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select" keys. </li>
+        <li>Common punctuation marks can be found by pressing and holding the full stop key ᙮ on the right side of the space
         bar.</li>
     </ul>
     <div class='vspace'></div>

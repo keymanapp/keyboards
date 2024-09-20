@@ -674,6 +674,3 @@
           ">
 <div class="keycap">Backspace</div>
 </div><br style="clear: left">
-
-</body>
-</html>

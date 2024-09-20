@@ -15,6 +15,9 @@ See [LICENSE.md](LICENSE.md)
 
 Supported Platforms
 -------------------
+ * Windows
+ * Linux
+ * macOS
  * Web
- * Desktop devices
+ * Mobile
 

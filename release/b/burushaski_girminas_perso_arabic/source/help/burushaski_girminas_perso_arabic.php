@@ -130,11 +130,9 @@ EXTRA;
           شسکی کلیدی تختہ یا کی بورڈ کاترتیب ہے۔
         </span></span>
     </p>
-    <p align="right"><img src="bsk_perso_arabic_keyboard_keystrokes.png" name="Burushaski Keyboard Character layout"
-
+    <p align="right"><a href="burushaski_keyboard_orthography_guide.pdf" target="_blank"><img src="bsk_perso_arabic_keyboard_keystrokes.png" name="Burushaski Keyboard Character layout"
         alt="Burushaski Keyboard Character layout" align="bottom" hspace="9" 
-
-         vspace="9" border="0">
+         vspace="9" border="0"></a>
     </p>
     <p align="right"><span lang="hi-IN">ا س کی بورڈ میں یہ
         دیکھایا گیا ہے کہ کونسا انگریزی حرف

@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.5</Version>
+    <Version URL=""></Version>
     <Name URL="">Khmer (SIL)</Name>
-    <Copyright URL="">(c) 2002 - 2019 SIL International</Copyright>
-    <Description>This keyboard is designed for any languages using the Khmer script. This
+    <Copyright URL="">(c) SIL Global</Copyright>
+    <Description URL="">This keyboard is designed for any languages using the Khmer script. This
 keyboard is very similar to the Khmer ABS keyboard, but it is a Unicode
 keyboard.</Description>
+    <Author URL="">D. Kanjahn</Author>
   </Info>
   <Files>
     <File>
@@ -103,22 +105,78 @@ keyboard.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\khmer\khmerbusra\Busra-B.ttf</Name>
+      <Description>Font Khmer Busra Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\khmer\khmerbusra\Busra-BI.ttf</Name>
+      <Description>Font Khmer Busra Bold Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\khmer\khmerbusra\Busra-I.ttf</Name>
+      <Description>Font Khmer Busra Italic</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\khmer\khmerbusra\Busra-R.ttf</Name>
+      <Description>Font Khmer Busra</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\khmer\khmerbusra\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-alt.png</Name>
+      <Description>File tablet-alt.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-alt-shift.png</Name>
+      <Description>File tablet-alt-shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-default.png</Name>
+      <Description>File tablet-default.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\tablet-shift.png</Name>
+      <Description>File tablet-shift.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Khmer (SIL)</Name>
       <ID>sil_khmer</ID>
-      <Version>1.5</Version>
+      <Version>2.1</Version>
+      <OSKFont>..\..\..\shared\fonts\khmer\khmerbusra\Busra-R.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\khmer\khmerbusra\Busra-R.ttf</DisplayFont>
       <Languages>
         <Language ID="km">Central Khmer</Language>
-        <Language ID="brb-Khmr">Lave (Khmer)</Language>
+        <Language ID="brb">Lave (Khmer)</Language>
         <Language ID="cmo-Khmr">Central Mnong (Khmer)</Language>
         <Language ID="jra-Khmr">Jarai (Khmer)</Language>
         <Language ID="kdt-Khmr">Kuy (Khmer)</Language>
-        <Language ID="krr-Khmr">Krung (Khmer)</Language>
-        <Language ID="krv-Khmr">Kavet (Khmer)</Language>
+        <Language ID="krr">Krung</Language>
+        <Language ID="krv">Kavet</Language>
         <Language ID="kxm-Khmr">Northern Khmer (Khmer)</Language>
-        <Language ID="tpu-Khmr">Tampuan (Khmer)</Language>
+        <Language ID="tpu">Tampuan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

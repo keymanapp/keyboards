@@ -1,9 +1,7 @@
 Lipo (SIL) Keyboard
 =====================
 
-Copyright (C) 2014-2020 SIL International
-
-Version 1.1
+Copyright (C) SIL International
 
 __DESCRIPTION__
 This keyboard was designed for the Lipo [lpo] language using the Miao script.
@@ -14,3 +12,5 @@ Supported Platforms
  * macOS
  * linux
  * Web
+ * Mobile
+ 

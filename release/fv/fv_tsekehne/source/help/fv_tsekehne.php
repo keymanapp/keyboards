@@ -78,7 +78,7 @@ END;
             <td align='center'>j</td>
             <td align='center'>k</td>
             <td align='center'>l</td>
-            
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td align='center'>⇧</td>

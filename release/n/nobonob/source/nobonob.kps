@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +19,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Nobonob</Name>
-    <Copyright URL="">© 2023 SIL International</Copyright>
-    <Description>This is a keyboard for typing the Nobonob language in Papua New Guinea.</Description>
+    <Copyright URL="">© SIL International</Copyright>
+    <Description URL="">This is a keyboard for typing the Nobonob language in Papua New Guinea.</Description>
   </Info>
   <Files>
     <File>
@@ -47,15 +47,24 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\nobonob.js</Name>
+      <Description>File nobonob.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Nobonob</Name>
       <ID>nobonob</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
       <Languages>
         <Language ID="gaw">Nobonob</Language>
       </Languages>
+      <Examples>
+        <Example ID="gaw" Keys="d&gt;, D&gt;, g&gt;, G&gt;" Text="ɗ, Ɗ, ɠ, Ɠ" Note=""/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>
