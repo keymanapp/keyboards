@@ -77,8 +77,7 @@ END;
   This keyboard is for the Meroitic language using the Meroitic Hieroglyphs script.
 </p>
 
-<h2>Desktop Keyboard Layout</h2>
+<h2>Desktop and Tablet Keyboard Layout</h2>
 
-<div id='osk' data-states='default shift rightalt'>
+<div id='osk' data-states='default shift'>
 </div>
-
