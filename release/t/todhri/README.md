@@ -1,7 +1,7 @@
 Todhri keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------
