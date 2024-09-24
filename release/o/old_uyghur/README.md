@@ -1,4 +1,4 @@
-oui_ougr_143 keyboard
+Old Uyghur keyboard
 ==============
 
 Description
@@ -13,7 +13,7 @@ Ottoman Turkish, Mongolian and many more languages across Asia.
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/oui_ougr_143
+Keyboard Homepage: https://keyman.com/keyboards/old_uyghur
 
 Copyright
 ---------

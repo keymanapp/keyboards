@@ -1,4 +1,4 @@
-oui_ougr_143 Change History
+Old Uyghur Change History
 ====================
 
 1.0 (2024-08-25)

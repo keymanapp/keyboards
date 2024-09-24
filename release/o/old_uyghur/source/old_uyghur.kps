@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>image.html</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -19,7 +18,7 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">oui_ougr_143</Name>
+    <Name URL="">Old Uyghur</Name>
     <Copyright URL="">Copyright © Kadir Garip</Copyright>
     <Author URL="mailto:kadir0garip@hotmail.com">Kadir Garip</Author>
     <Description URL="">[TR] Eski Uygurca Yazısı: (8. ilâ 18. yüzyıl)
@@ -35,28 +34,22 @@ Please read the "readme.htm", included in this Keyman package.</Description>
   </Info>
   <Files>
     <File>
-      <Name>..\build\oui_ougr_143.kmx</Name>
+      <Name>..\build\old_uyghur.kmx</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\oui_ougr_143.js</Name>
+      <Name>..\build\old_uyghur.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\oui_ougr_143.kvk</Name>
+      <Name>..\build\old_uyghur.kvk</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -71,27 +64,47 @@ Please read the "readme.htm", included in this Keyman package.</Description>
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>NotoSerifOldUyghur-Regular.otf</Name>
+      <Name>..\..\..\shared\fonts\noto\Ougr\NotoSerifOldUyghur-Regular.ttf</Name>
       <Description>Font Noto Serif Old Uyghur Regular</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
+      <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>image.html</Name>
-      <Description>File image.html</Description>
+      <Name>..\..\..\shared\fonts\noto\Ougr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.html</FileType>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Old Uyghur</Name>
-      <ID>oui_ougr_143</ID>
+      <ID>old_uyghur</ID>
       <Version>1.4</Version>
-      <OSKFont>NotoSerifOldUyghur-Regular.otf</OSKFont>
-      <DisplayFont>NotoSerifOldUyghur-Regular.otf</DisplayFont>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\noto\Ougr\NotoSerifOldUyghur-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Ougr\NotoSerifOldUyghur-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="oui-Ougr-143">Old Uighur</Language>
+        <Language ID="oui">Old Uighur</Language>
+        <Language ID="ybe-Ougr">Old Uighur</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
