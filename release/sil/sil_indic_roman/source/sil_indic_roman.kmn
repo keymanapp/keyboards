@@ -1,11 +1,12 @@
 ﻿store(&VERSION) "9.0" 
 store(&NAME) "Indic Roman Transliteration (SIL)" 
 store(&BITMAP) 'sil_indic_roman.ico'
-store(&TARGETS) 'desktop web'
-store(&COPYRIGHT) '© 2007-2023 SIL International'
-store(&KEYBOARDVERSION) '1.3.2'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.4'
 store(&VISUALKEYBOARD) 'sil_indic_roman.kvks'
 store(&MNEMONICLAYOUT) "1" 
+store(&LAYOUTFILE) 'sil_indic_roman.keyman-touch-layout'
 
 store(Kacute) "aeiounsAEIOUNS" 
 store(Uacute) "áéíóúńśÁÉÍÓÚŃŚ" 
@@ -36,6 +37,7 @@ group(main) using keys
    + "~" > deadkey(tilde)
    + '"' > deadkey(diar)
    + "-" > deadkey(macron)
+
    + "." > deadkey(dotbelow)
    + ">" > deadkey(dotabove)
 
@@ -64,13 +66,14 @@ deadkey(circ)     + any(Kcirc)     > index(Ucirc,2)
 deadkey(tilde)    + any(Ktilde)    > index(Utilde,2)
 deadkey(diar)     + any(Kdiar)     > index(Udiar,2)
 deadkey(macron)   + any(Kmacron)   > index(Umacron,2)
+
 deadkey(dotbelow) + any(Kdotbelow) > index(Udotbelow,2)
 deadkey(dotabove) + any(Kdotabove) > index(Udotabove,2)
-deadkey(anusvara) + any(Kanusvara) > index(Uanusvara,2)
-deadkey(circle)   + "l"            > "̥"  c circle below
-deadkey(circle)   + "r"            > "̥"  c circle below
-deadkey(equal)    + "l"            > "̄"  c macron above
-deadkey(tildeA)   + "l"            > "̃"  c tilde above
+deadkey(anusvara) + any(Kanusvara) > index(Kanusvara,2) U+0310
+deadkey(circle)   + "l"            > U+0325 c circle below
+deadkey(circle)   + "r"            > U+0325 c circle below
+deadkey(equal)    + "l"            > U+0304   c macron above
+deadkey(tildeA)   + "l"            > U+0303   c tilde above
 
 c EOF
 

@@ -1,13 +1,10 @@
 Galaxie Greek/Hebrew (Positional) Keyboard Package
 ==================================================
 
-Copyright (C) 2004-2019 Galaxie Software and SIL International
-
-Version 2.2.1
+Copyright (C) Galaxie Software and SIL Global
 
 __DESCRIPTION__
-This package includes 2 positional keyboards called: Galaxie Greek (Phonetic) and 
-Galaxie Hebrew (Positional).
+This package includes 2 positional keyboards called: Galaxie Greek (Phonetic) and Galaxie Hebrew (Positional).
 
 The Hebrew keyboard is designed for Biblical Hebrew, a Semitic language of the ancient 
 Near East and the language of the Hebrew Bible.
@@ -20,6 +17,8 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
+ * Mobile
 
 
