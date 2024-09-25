@@ -6,6 +6,14 @@ Haíɫzaqvḷa Change History
 * Packaged with Noto Heiltsuk Sans Font
 * Added warning about characters not working correctly prior to new characters being officially released
 
+9.5.2 (22 May 2024)
+----------------
+* Corrected typo in language name
+
+9.5.1 (4 Mar 2024)
+----------------
+* Added left/right distinction to alt keys, updated on-screen keyboard layout, so on-screen keyboard works correctly on Mac
+
 9.5 (22 Jan 2024)
 ----------------
 * Corrected language and keyboard name
