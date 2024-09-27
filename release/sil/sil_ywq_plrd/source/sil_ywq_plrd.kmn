@@ -10,8 +10,8 @@ c
 store(&VERSION) '10.0'
 store(&NAME) 'Hei Yi – Black Yi (SIL)'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© SIL International'
-store(&KEYBOARDVERSION) '1.2'
+store(&COPYRIGHT) '© SIL Global'
+store(&KEYBOARDVERSION) '1.3'
 store(&VISUALKEYBOARD) 'sil_ywq_plrd.kvks'
 store(&LAYOUTFILE) 'sil_ywq_plrd.keyman-touch-layout'
 
@@ -40,37 +40,37 @@ group (Umain) using keys
 + 't' > u+16F37
 + 'u' > u+16F6A
 + 'v' > u+16F08
-+ 'w' > u+16F13
++ 'w' > U+16F42 c u+16F13
 + 'x' > u+16F33
 + 'y' > u+16F3D
 + 'z' > u+16F3B
-+ 'A' > nul      c NOT ASSIGNED
++ 'A' > U+16F62 c ia
 + 'B' > u+16F57
 + 'C' > u+16F1C
 + 'D' > u+16F0A
-+ 'E' > nul      c NOT ASSIGNED
-+ 'F' > nul      c NOT ASSIGNED
++ 'E' > U+16F66 c ie
++ 'F' > U+16F5B c wo
 + 'G' > u+16F73
 + 'H' > u+16F5C
 + 'I' > u+16F7B
-+ 'J' > nul      c NOT ASSIGNED
++ 'J' > U+16F6E c uu
 + 'K' > u+16F54
-+ 'L' > nul      c NOT ASSIGNED
++ 'L' > U+16F71 c y
 + 'M' > u+16F7A
 + 'N' > u+16F5D
 + 'O' > u+16F5F
-+ 'P' > nul      c NOT ASSIGNED
++ 'P' > U+16F78 c er
 + 'Q' > u+16F6B
-+ 'R' > nul      c NOT ASSIGNED
++ 'R' > U+16F76 c err
 + 'S' > u+16F79
 + 'T' > u+16F58
 + 'U' > u+16F51
 + 'V' > u+16F7E
 + 'W' > u+16F28
-+ 'X' > nul       c NOT ASSIGNED
++ 'X' > U+16F7F c uog
 + 'Y' > u+16F68   c 
-+ 'Z' > nul       c NOT ASSIGNED
-+ '~' > u+16F59 u+16F54  c This may be nonexistant, CHECK THIS
++ 'Z' > U+16F80 c yui
++ '~' > U+16F50 c u+16F59 u+16F54  c This may be nonexistant, CHECK THIS
 + '!' > u+16F02
 + '@' > u+16F2A
 + '#' > u+16F2D
@@ -84,4 +84,17 @@ group (Umain) using keys
 + '-' > '-'
 + '+' > '+'
 + '=' > '='
+
++ [RALT K_T] > U+16F0C
++ [RALT K_G] > U+16F12
++ [RALT K_N] > U+16F14
++ [RALT K_X] > U+16F2E
++ [RALT K_Z] > U+16F30
++ [RALT K_D] > U+16F31
++ [RALT K_S] > U+16F34
++ [RALT K_C] > U+16F39
+
++ [RALT K_LBRKT] > U+16F91 c above
++ [RALT K_RBRKT] > U+16F90 c top right
++ [RALT K_BKSLASH] > U+16F8F c right
 
