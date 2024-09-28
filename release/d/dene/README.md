@@ -1,13 +1,11 @@
 Dene keyboard
 ==============
 
-(c) 2013-2020 Jim Stauffer
-
-Version 2.1
+(c) Jim Stauffer
 
 Description
 -----------
-This keyboard layout is designed for the Dene, Tlicho, North Slavy, south Slavy, and Gwich’in
+This keyboard layout is designed for the Dene, Tlicho, North Slavy, south Slavy, and Gwichâ€™in
 languages of Canada.
 
 Links
@@ -20,5 +18,6 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
  
 

@@ -1,6 +1,16 @@
 Tai Nua Change History
 =======================
 
+1.0.5 (01 Dec 2023)
+-------------------
+* Change font to use one with an appropriate license
+* Change langtag to minimal tag
+* Update documentation
+
+1.0.4 (27 Oct 2020)
+-------------------
+* Increment version number to force recompile of touch layout.
+
 1.0.3 (9 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux

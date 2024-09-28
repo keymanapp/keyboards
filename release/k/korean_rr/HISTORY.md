@@ -1,6 +1,10 @@
 Korean RR Keyboard Change History
 ===========================================
 
+1.3 (17 Aug 2023)
+-----
+* Change target to web only (since not functional on Windows)
+
 1.2 (20 May 2020)
 -----
 * Move to "release" with source

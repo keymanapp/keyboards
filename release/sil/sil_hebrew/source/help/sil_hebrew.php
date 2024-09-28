@@ -18,6 +18,7 @@
       table+table {margin-top: 30px;}
       .important {text-align: center;font-size: 20px;background-color: #D0E4F5;padding-top:20px;padding-bottom:20px;max-width:850px;margin-left:auto;margin-right: auto;}
       .centered {text-align: center;}
+      .hebr {font-family: "Ezra SIL","SBL Hebrew",sans-serif;}
       p.centered+table {margin-top:32px;}
 END;
   require_once('header.php');
@@ -30,20 +31,18 @@ END;
 
 
 
-<h2>Keyboard Layout</h2>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<h3>Normal</h3>
-<p class="centered"><img src="sil_hebrewU_.png" alt="Hebrew keyboard layout: Unshifted"></p>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-<h3>Shift</h3>
-<p class="centered"><img src="sil_hebrewU_S.png" alt="Hebrew keyboard layout: Shift"></p>
+<div id='osk-tablet' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<h3>Alt</h3>
-<p class="centered"><img src="sil_hebrewU_A.png" alt="Hebrew keyboard layout: Alt"></p>
-
-<h3>Shift + Alt</h3>
-<p class="centered"><img src="sil_hebrewU_SA.png" alt="Hebrew keyboard layout: Shift + Alt"></p>
-
+<div>
 <table class="inputSequences">
     <colgroup>
         <col width="96" />
@@ -82,19 +81,19 @@ END;
     <tbody>
     <tr class="glyphs">
         <td class="label"><p>Output:</p></td>
-        <td><p>€</p></td>
-        <td><p>1</p></td>
-        <td><p>2</p></td>
-        <td><p>3</p></td>
-        <td><p>4</p></td>
-        <td><p>5</p></td>
-        <td><p>6</p></td>
-        <td><p>7</p></td>
-        <td><p>8</p></td>
-        <td><p>9</p></td>
-        <td><p>0</p></td>
-        <td><p>־</p></td>
-        <td><p>◌ּ</p></td>
+        <td><p class="hebr">€</p></td>
+        <td><p class="hebr">1</p></td>
+        <td><p class="hebr">2</p></td>
+        <td><p class="hebr">3</p></td>
+        <td><p class="hebr">4</p></td>
+        <td><p class="hebr">5</p></td>
+        <td><p class="hebr">6</p></td>
+        <td><p class="hebr">7</p></td>
+        <td><p class="hebr">8</p></td>
+        <td><p class="hebr">9</p></td>
+        <td><p class="hebr">0</p></td>
+        <td><p class="hebr">־</p></td>
+        <td><p class="hebr">◌ּ</p></td>
     </tr>
     <tr>
         <td class="label"><p>Unicode:</p></td>
@@ -114,19 +113,19 @@ END;
     </tr>
     <tr class="glyphs">
         <td class="label"><p>Shift:</p></td>
-        <td><p>₪</p></td>
-        <td><p>!</p></td>
-        <td><p>◌֘</p></td>
-        <td><p>◌֨</p></td>
-        <td><p>◌֜</p></td>
-        <td><p>◌֞</p></td>
-        <td><p> </p></td>
-        <td><p>◌֬</p></td>
-        <td><p>◌֝</p></td>
-        <td><p>(</p></td>
-        <td><p>)</p></td>
-        <td><p>–</p></td>
-        <td><p> </p></td>
+        <td><p class="hebr">₪</td>
+        <td><p class="hebr">!</p></td>
+        <td><p class="hebr">◌֘</p></td>
+        <td><p class="hebr">◌֨</p></td>
+        <td><p class="hebr">◌֜</p></td>
+        <td><p class="hebr">◌֞</p></td>
+        <td><p class="hebr"> </p></td>
+        <td><p class="hebr">◌֬</p></td>
+        <td><p class="hebr">◌֝</p></td>
+        <td><p class="hebr">(</p></td>
+        <td><p class="hebr">)</p></td>
+        <td><p class="hebr">–</p></td>
+        <td><p class="hebr"> </p></td>
     </tr>
     <tr>
         <td class="label"><p>Unicode:</p></td>
@@ -145,20 +144,20 @@ END;
         <td><p> </p></td>
     </tr>
     <tr class="glyphs">
-        <td class="label"><p>Alt:</p></td>
-        <td><p>$</p></td>
-        <td><p>◌ֽ</p></td>
-        <td><p>◌֢</p></td>
-        <td><p>◌֖</p></td>
-        <td><p>◌֥</p></td>
-        <td><p>◌֦</p></td>
-        <td><p>◌֭</p></td>
-        <td><p>◌֣</p></td>
-        <td><p>◌֛</p></td>
-        <td><p>◌֧</p></td>
-        <td><p>◌֪</p></td>
-        <td><p>—</p></td>
-        <td><p>◌֑</p></td>
+        <td class="label"><p>RAlt:</p></td>
+        <td><p class="hebr">$</p></td>
+        <td><p class="hebr">◌ֽ</p></td>
+        <td><p class="hebr">◌֢</p></td>
+        <td><p class="hebr">◌֖</p></td>
+        <td><p class="hebr">◌֥</p></td>
+        <td><p class="hebr">◌֦</p></td>
+        <td><p class="hebr">◌֭</p></td>
+        <td><p class="hebr">◌֣</p></td>
+        <td><p class="hebr">◌֛</p></td>
+        <td><p class="hebr">◌֧</p></td>
+        <td><p class="hebr">◌֪</p></td>
+        <td><p class="hebr">—</p></td>
+        <td><p class="hebr">◌֑</p></td>
     </tr>
     <tr>
         <td class="label"><p>Unicode:</p></td>
@@ -177,20 +176,20 @@ END;
         <td><p>0591</p></td>
     </tr>
     <tr class="glyphs">
-        <td class="label"><p>Alt-shift:</p></td>
-        <td><p> </p></td>
-        <td><p>◌֗</p></td>
-        <td><p>◌֮</p></td>
-        <td><p>◌֙</p></td>
-        <td><p>◌֠</p></td>
-        <td><p>◌֩</p></td>
-        <td><p>◌֟</p></td>
-        <td><p>◌֡</p></td>
-        <td><p>◌֕</p></td>
-        <td><p>◌֓</p></td>
-        <td><p>◌֯</p></td>
-        <td><p>◌ֿ</p></td>
-        <td><p>◌</p></td>
+        <td class="label"><p>RAlt-shift:</p></td>
+        <td><p class="hebr"> </p></td>
+        <td><p class="hebr">◌֗</p></td>
+        <td><p class="hebr">◌֮</p></td>
+        <td><p class="hebr">◌֙</p></td>
+        <td><p class="hebr">◌֠</p></td>
+        <td><p class="hebr">◌֩</p></td>
+        <td><p class="hebr">◌֟</p></td>
+        <td><p class="hebr">◌֡</p></td>
+        <td><p class="hebr">◌֕</p></td>
+        <td><p class="hebr">◌֓</p></td>
+        <td><p class="hebr">◌֯</p></td>
+        <td><p class="hebr">◌ֿ</p></td>
+        <td><p class="hebr">◌</p></td>
     </tr>
     <tr>
         <td class="label"><p>Unicode:</p></td>
@@ -284,43 +283,43 @@ END;
             <p>Output:</p>
         </td>
         <td>
-            <p>ק</p>
+            <p class="hebr">ק</p>
         </td>
         <td>
-            <p>ו</p>
+            <p class="hebr">ו</p>
         </td>
         <td>
-            <p>◌ֶ</p>
+            <p class="hebr">◌ֶ</p>
         </td>
         <td>
-            <p>ר</p>
+            <p class="hebr">ר</p>
         </td>
         <td>
-            <p>ת</p>
+            <p class="hebr">ת</p>
         </td>
         <td>
-            <p>י</p>
+            <p class="hebr">י</p>
         </td>
         <td>
-            <p>◌ֻ</p>
+            <p class="hebr">◌ֻ</p>
         </td>
         <td>
-            <p>◌ִ</p>
+            <p class="hebr">◌ִ</p>
         </td>
         <td>
-            <p>◌ֹ</p>
+            <p class="hebr">◌ֹ</p>
         </td>
         <td>
-            <p>פ</p>
+            <p class="hebr">פ</p>
         </td>
         <td>
-            <p>[</p>
+            <p class="hebr">[</p>
         </td>
         <td>
-            <p>]</p>
+            <p class="hebr">]</p>
         </td>
         <td>
-            <p>\</p>
+            <p class="hebr">\</p>
         </td>
     </tr>
     <tr>
@@ -372,43 +371,43 @@ END;
             <p>Shift:</p>
         </td>
         <td>
-            <p>◌֗</p>
+            <p class="hebr">◌֗</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>◌ֵ</p>
+            <p class="hebr">◌ֵ</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>◌֟</p>
+            <p class="hebr">◌֟</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>◌ֹ</p>
+            <p class="hebr">◌ֹ</p>
         </td>
         <td>
-            <p>ף</p>
+            <p class="hebr">ף</p>
         </td>
         <td>
-            <p>{</p>
+            <p class="hebr">{</p>
         </td>
         <td>
-            <p>}</p>
+            <p class="hebr">}</p>
         </td>
         <td>
-            <p>׀</p>
+            <p class="hebr">׀</p>
         </td>
     </tr>
     <tr>
@@ -457,46 +456,46 @@ END;
     </tr>
     <tr class="glyphs">
         <td class="label">
-            <p>Alt:</p>
+            <p>RAlt:</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>◌ׇ</p>
+            <p class="hebr">◌ׇ</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>◌֚</p>
+            <p class="hebr">◌֚</p>
         </td>
         <td>
-            <p>◌֤</p>
+            <p class="hebr">◌֤</p>
         </td>
     </tr>
     <tr>
@@ -545,7 +544,7 @@ END;
     </tr>
     <tr class="glyphs">
         <td class="label">
-            <p>Alt-shift:</p>
+            <p>RAlt-shift:</p>
         </td>
         <td>
             <p> </p>
@@ -701,37 +700,37 @@ END;
             <p>Output:</p>
         </td>
         <td>
-            <p>◌ַ</p>
+            <p class="hebr">◌ַ</p>
         </td>
         <td>
-            <p>ס</p>
+            <p class="hebr">ס</p>
         </td>
         <td>
-            <p>ד</p>
+            <p class="hebr">ד</p>
         </td>
         <td>
-            <p>שׂ</p>
+            <p class="hebr">שׂ</p>
         </td>
         <td>
-            <p>ג</p>
+            <p class="hebr">ג</p>
         </td>
         <td>
-            <p>ה</p>
+            <p class="hebr">ה</p>
         </td>
         <td>
-            <p>שׁ</p>
+            <p class="hebr">שׁ</p>
         </td>
         <td>
-            <p>כ</p>
+            <p class="hebr">כ</p>
         </td>
         <td>
-            <p>ל</p>
+            <p class="hebr">ל</p>
         </td>
         <td>
-            <p>◌ְ</p>
+            <p class="hebr">◌ְ</p>
         </td>
         <td>
-            <p>’</p>
+            <p class="hebr">’</p>
         </td>
     </tr>
     <tr>
@@ -777,37 +776,37 @@ END;
             <p>Shift:</p>
         </td>
         <td>
-            <p>◌ָ</p>
+            <p class="hebr">◌ָ</p>
         </td>
         <td>
-            <p>ש</p>
+            <p class="hebr">ש</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>ך</p>
+            <p class="hebr">ך</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>״</p>
+            <p class="hebr">״</p>
         </td>
         <td>
-            <p>”</p>
+            <p class="hebr">”</p>
         </td>
     </tr>
     <tr>
@@ -850,40 +849,40 @@ END;
     </tr>
     <tr class="glyphs">
         <td class="label">
-            <p>Alt:</p>
+            <p>RAlt:</p>
         </td>
         <td>
-            <p>◌ׇ</p>
+            <p class="hebr">◌ׇ</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>;</p>
+            <p class="hebr">;</p>
         </td>
         <td>
-            <p>◌ׅ</p>
+            <p class="hebr">◌ׅ</p>
         </td>
     </tr>
     <tr>
@@ -926,40 +925,40 @@ END;
     </tr>
     <tr class="glyphs">
         <td class="label">
-            <p>Alt-shift:</p>
+            <p>RAlt-shift:</p>
         </td>
         <td>
-            <p>◌ֲ</p>
+            <p class="hebr">◌ֲ</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
-        </td>
-        <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
             <p> </p>
         </td>
         <td>
-            <p>׃</p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>◌ׄ</p>
+            <p class="hebr">׃</p>
+        </td>
+        <td>
+            <p class="hebr">◌ׄ</p>
         </td>
     </tr>
     <tr>
@@ -1074,40 +1073,40 @@ END;
             <p>Output:</p>
         </td>
         <td>
-            <p>\</p>
+            <p class="hebr">\</p>
         </td>
         <td>
-            <p>ז</p>
+            <p class="hebr">ז</p>
         </td>
         <td>
-            <p>ח</p>
+            <p class="hebr">ח</p>
         </td>
         <td>
-            <p>צ</p>
+            <p class="hebr">צ</p>
         </td>
         <td>
-            <p>ט</p>
+            <p class="hebr">ט</p>
         </td>
         <td>
-            <p>ב</p>
+            <p class="hebr">ב</p>
         </td>
         <td>
-            <p>נ</p>
+            <p class="hebr">נ</p>
         </td>
         <td>
-            <p>מ</p>
+            <p class="hebr">מ</p>
         </td>
         <td>
-            <p>,</p>
+            <p class="hebr">,</p>
         </td>
         <td>
-            <p>.</p>
+            <p class="hebr">.</p>
         </td>
         <td>
-            <p>/</p>
+            <p class="hebr">/</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
     </tr>
     <tr>
@@ -1156,40 +1155,40 @@ END;
             <p>Shift:</p>
         </td>
         <td>
-            <p>|</p>
+            <p class="hebr">|</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>ץ</p>
+            <p class="hebr">ץ</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>ן</p>
+            <p class="hebr">ן</p>
         </td>
         <td>
-            <p>ם</p>
+            <p class="hebr">ם</p>
         </td>
         <td>
-            <p>ע</p>
+            <p class="hebr">ע</p>
         </td>
         <td>
-            <p>א</p>
+            <p class="hebr">א</p>
         </td>
         <td>
-            <p>?</p>
+            <p class="hebr">?</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
     </tr>
     <tr>
@@ -1235,7 +1234,7 @@ END;
     </tr>
     <tr class="glyphs">
         <td class="label">
-            <p>Alt:</p>
+            <p>RAlt:</p>
         </td>
         <td>
             <p>֤</p>
@@ -1256,22 +1255,22 @@ END;
             <p> </p>
         </td>
         <td>
-            <p>׆</p>
+            <p class="hebr">׆</p>
         </td>
         <td>
-            <p>ZWNJ</p>
+            <p class="hebr">ZWNJ</p>
         </td>
         <td>
-            <p>»</p>
+            <p class="hebr">»</p>
         </td>
         <td>
-            <p>«</p>
+            <p class="hebr">«</p>
         </td>
         <td>
-            <p>׳</p>
+            <p class="hebr">׳</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
     </tr>
     <tr>
@@ -1317,43 +1316,43 @@ END;
     </tr>
     <tr class="glyphs">
         <td class="label">
-            <p>Alt-shift:</p>
+            <p>RAlt-shift:</p>
         </td>
         <td>
-            <p>◌֫</p>
+            <p class="hebr">◌֫</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
         <td>
-            <p>ZWJ</p>
+            <p class="hebr">ZWJ</p>
         </td>
         <td>
-            <p>◌̇</p>
+            <p class="hebr">◌̇</p>
         </td>
         <td>
-            <p>◌̈</p>
+            <p class="hebr">◌̈</p>
         </td>
         <td>
-            <p>״</p>
+            <p class="hebr">״</p>
         </td>
         <td>
-            <p> </p>
+            <p class="hebr"> </p>
         </td>
     </tr>
     <tr>
@@ -1412,10 +1411,6 @@ END;
             <col width="63" />
             <col width="63" />
             <col width="63" />
-            <col width="63" />
-            <col width="63" />
-            <col width="63" />
-            <col width="64" />
         </colgroup>
         <thead>
         <tr>
@@ -1437,18 +1432,6 @@ END;
             <th>
                 <p>s^</p>
             </th>
-            <th>
-                <p>Ow or ow</p>
-            </th>
-            <th>
-                <p>wO or wo </p>
-            </th>
-            <th>
-                <p>w=O or w=o</p>
-            </th>
-            <th>
-                <p>wow or wOw</p>
-            </th>
         </tr>
         </thead>
         <tbody>
@@ -1457,31 +1440,19 @@ END;
                 <p>Output:</p>
             </td>
             <td>
-                <p>ח</p>
+                <p class="hebr">ח</p>
             </td>
             <td>
-                <p>ט</p>
+                <p class="hebr">ט</p>
             </td>
             <td>
-                <p>צ</p>
+                <p class="hebr">צ</p>
             </td>
             <td>
-                <p>שׂ</p>
+                <p class="hebr">שׂ</p>
             </td>
             <td>
-                <p>שׁ</p>
-            </td>
-            <td>
-                <p>וֹ</p>
-            </td>
-            <td>
-                <p>וֺ</p>
-            </td>
-            <td>
-                <p>וֺּ</p>
-            </td>
-            <td>
-                <p>ווֹ</p>
+                <p class="hebr">שׁ</p>
             </td>
         </tr>
         <tr>
@@ -1503,22 +1474,125 @@ END;
             <td>
                 <p>05E9 05C1</p>
             </td>
-            <td>
-                <p>05D5 05B9</p>
-            </td>
-            <td>
-                <p>05D5 05BA</p>
-            </td>
-            <td>
-                <p>05D5 05BC 05BA</p>
-            </td>
-            <td>
-                <p>05D5 05D5 05B9</p>
-            </td>
         </tr>
         </tbody>
     </table>
 
+
+    <table class="inputSequences">
+        <colgroup>
+            <col width="85" />
+            <col width="55" />
+            <col width="55" />
+            <col width="63" />
+            <col width="63" />
+            <col width="63" />
+            <col width="63" />
+            <col width="63" />
+            <col width="63" />
+            <col width="63" />
+         </colgroup>
+        <thead>
+        <tr>
+            <th>
+                <p>Combinations:</p>
+            </th>
+            <th>
+                <p>Ow or ow</p>
+            </th>
+            <th>
+                <p>wO or wo </p>
+            </th>
+            <th>
+                <p>w=O or w=o</p>
+            </th>
+            <th>
+                <p>wow or wOw</p>
+            </th>
+            <th>
+                <p>w=ow or w=Ow</p>
+            </th>
+            <th>
+                <p>oww or Oww</p>
+            </th>
+            <th>
+                <p>ow= or Ow=</p>
+            </th>
+            <th>
+                <p>owa </i>(any vowel)</i> or Owa <i>(any vowel)</i></p>
+            </th>
+            <th>
+                <p>o RALT = <i>(any cantillation)</i> w  or O RALT = <i>(any cantillation)</i> w</p>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="glyphs">
+            <td class="label">
+                <p>Output:</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">וֹ</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">וֺ</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">וֺּ</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">ווֹ</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">וּוֹ</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">וֹו</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">וּ</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">ֹוַ</p>
+            </td>
+            <td>
+                <p class="hebr" dir="rtl">֑וֹ</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <p>Unicode:</p>
+            </td>
+            <td>
+                <p>05D5 <span style="color:red;">05B9</span></p>
+            </td>
+            <td>
+                <p>05D5 <span style="color:blue;">05BA</span></p>
+            </td>
+            <td>
+                <p>05D5 05BC <span style="color:blue;">05BA</span></p>
+            </td>
+            <td>
+                <p>05D5 05D5 <span style="color:red;">05B9</span></p>
+            </td>
+            <td>
+                <p>05D5 05BC 05D5 <span style="color:red;">05B9</span></p>
+            </td>
+            <td>
+                <p>05D5 <span style="color:red;">05B9</span> 05D5</p>
+            </td>
+            <td>
+                <p><span style="color:red;">05B9</span> 05D5 05BC</p>
+            </td>
+            <td>
+                <p><span style="color:red;">05B9</span> 05D5 05B7</p>
+            </td>
+            <td>
+                <p>0591 05D5 <span style="color:red;">05B9</span></p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
 
 
@@ -1590,22 +1664,22 @@ END;
                 <p>Output:</p>
             </td>
             <td>
-                <p>&#x25CC;&#x05B8;</p>
+                <p class="hebr">&#x25CC;&#x05B8;</p>
             </td>
             <td>
-                <p>&#x25CC;&#x05B5;</p>
+                <p class="hebr">&#x25CC;&#x05B5;</p>
             </td>
             <td>
-                <p>&#x25CC;&#x05B9;</p>
+                <p class="hebr">&#x25CC;&#x05B9;</p>
             </td>
             <td>
-                <p>&#x25CC;&#x05B2;</p>
+                <p class="hebr">&#x25CC;&#x05B2;</p>
             </td>
             <td>
-                <p>&#x25CC;&#x05B1;</p>
+                <p class="hebr">&#x25CC;&#x05B1;</p>
             </td>
             <td>
-                <p>&#x25CC;&#x05B3;</p>
+                <p class="hebr">&#x25CC;&#x05B3;</p>
             </td>
         </tr>
         </tbody>
@@ -1661,11 +1735,11 @@ END;
             </td>
             <td>
                 <p>nun <br/>w/dot </p>
-                <p>נ̇</p>
+                <p class="hebr">נ̇</p>
             </td>
             <td>
                 <p>rev nun <br/>w/dot</p>
-                <p>׆̇</p>
+                <p class="hebr">׆̇</p>
                 <p>masora<br/>on left</p>
             </td>
             <td>
@@ -1703,3 +1777,8 @@ END;
         </tr>
         </tbody>
     </table>
+</div>
+
+
+
+

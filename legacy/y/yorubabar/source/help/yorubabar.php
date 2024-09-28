@@ -15,8 +15,8 @@
   Notes:            
   History:          02 Nov 2012 - tpbaehr - Create online help from package help.
 */
-  $pagename = 'Yorùbá with Bar Keyboard Help';
-  $pagetitle = 'Yorùbá with Bar Keyboard Help';
+  $pagename = 'Yorùbá with Bar (deprecated) Keyboard Help';
+  $pagetitle = 'Yorùbá with Bar (deprecated) Keyboard Help';
   $style = <<<END
 /* 
 ===========

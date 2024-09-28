@@ -1,16 +1,8 @@
 <?php
   $pagename = 'Philippines (SIL) Keyboard Help';
-  $pagetitle = 'Philippines (SIL) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
-
-
-  <meta charset="utf-8">
-
-
-
-
-<body>
 <p>This document describes the use of the Keyman keyboard designed for typing Philippine languages with a Unicode font.</p>
 
 <h2>Key to Reading the Chart</h2>

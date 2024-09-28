@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,16 +20,13 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Philippines (SIL)</Name>
-    <Copyright URL="">2006-2018 SIL Philippines</Copyright>
+    <Copyright URL="">(c) SIL Philippines</Copyright>
     <Author URL="">Kåre J. Strømme</Author>
+    <Description URL="">This keyboard enables the typing of all Philippine languages. It gives
+the ability to type all the special characters and diacritics in the
+languages of the Philippines.</Description>
   </Info>
   <Files>
-    <File>
-      <Name>..\build\sil_philippines.js</Name>
-      <Description>File sil_philippines.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
     <File>
       <Name>..\build\sil_philippines.kvk</Name>
       <Description>File sil_philippines.kvk</Description>
@@ -52,12 +51,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Philippines (SIL)</Name>
       <ID>sil_philippines</ID>
-      <Version></Version>
+      <Version>1.1</Version>
       <Languages>
         <Language ID="tl">Tagalog</Language>
         <Language ID="abc-Latn">Ambala Ayta (Latin)</Language>
@@ -74,9 +79,9 @@
         <Language ID="bcl-Latn">Central Bikol (Latin)</Language>
         <Language ID="bgs-Latn">Tagabawa (Latin)</Language>
         <Language ID="bhk-Latn">Albay Bicolano (Latin)</Language>
-        <Language ID="bik-Latn">Bikol (Latin)</Language>
+        <Language ID="bik">Bikol</Language>
         <Language ID="bkd-Latn">Binukid (Latin)</Language>
-        <Language ID="bku-Latn">Buhid (Latin)</Language>
+        <Language ID="bku">Buhid</Language>
         <Language ID="blw-Latn">Balangao (Latin)</Language>
         <Language ID="blx-Latn">Mag-Indi Ayta (Latin)</Language>
         <Language ID="bnc-Latn">Bontok (Latin)</Language>
@@ -84,23 +89,23 @@
         <Language ID="bno-Latn">Bantoanon (Latin)</Language>
         <Language ID="bpr-Latn">Koronadal Blaan (Latin)</Language>
         <Language ID="bps-Latn">Sarangani Blaan (Latin)</Language>
-        <Language ID="bto-Latn">Rinconada Bikol (Latin)</Language>
+        <Language ID="bto">Rinconada Bikol</Language>
         <Language ID="bya-Latn">Batak (Latin)</Language>
         <Language ID="cbk-Latn">Chavacano (Latin)</Language>
-        <Language ID="ceb-Latn">Cebuano (Latin)</Language>
+        <Language ID="ceb">Cebuano</Language>
         <Language ID="cgc-Latn">Kagayanen (Latin)</Language>
         <Language ID="clu-Latn">Caluyanun (Latin)</Language>
-        <Language ID="cps-Latn">Capiznon (Latin)</Language>
+        <Language ID="cps">Capiznon</Language>
         <Language ID="cyo-Latn">Cuyonon (Latin)</Language>
         <Language ID="dgc-Latn">Casiguran Dumagat Agta (Latin)</Language>
         <Language ID="due-Latn">Umiray Dumaget Agta (Latin)</Language>
         <Language ID="duo-Latn">Dupaninan Agta (Latin)</Language>
         <Language ID="ebk-Latn">Eastern Bontok (Latin)</Language>
         <Language ID="fbl-Latn">West Albay Bikol (Latin)</Language>
-        <Language ID="fil-Latn">Filipino (Latin)</Language>
+        <Language ID="fil">Filipino</Language>
         <Language ID="gdg-Latn">Ga'dang (Latin)</Language>
-        <Language ID="hil-Latn">Hiligaynon (Latin)</Language>
-        <Language ID="hnn-Latn">Hanunoo (Latin)</Language>
+        <Language ID="hil">Hiligaynon</Language>
+        <Language ID="hnn">Hanunoo</Language>
         <Language ID="ibg-Latn">Ibanag (Latin)</Language>
         <Language ID="ibl-Latn">Ibaloi (Latin)</Language>
         <Language ID="ifa-Latn">Amganad Ifugao (Latin)</Language>
@@ -109,7 +114,7 @@
         <Language ID="ifu-Latn">Mayoyao Ifugao (Latin)</Language>
         <Language ID="ify-Latn">Keley-I Kallahan (Latin)</Language>
         <Language ID="ilk-Latn">Ilongot (Latin)</Language>
-        <Language ID="ilo-Latn">Iloko (Latin)</Language>
+        <Language ID="ilo">Iloko</Language>
         <Language ID="ilp-Latn">Iranun (Philippines) (Latin)</Language>
         <Language ID="iry-Latn">Iraya (Latin)</Language>
         <Language ID="isd-Latn">Isnag (Latin)</Language>
@@ -126,7 +131,7 @@
         <Language ID="knb-Latn">Lubuagan Kalinga (Latin)</Language>
         <Language ID="kne-Latn">Kankanaey (Latin)</Language>
         <Language ID="kqe-Latn">Kalagan (Latin)</Language>
-        <Language ID="krj-Latn">Kinaray-A (Latin)</Language>
+        <Language ID="krj">Kinaray-A</Language>
         <Language ID="ksc-Latn">Southern Kalinga (Latin)</Language>
         <Language ID="kyb-Latn">Butbut Kalinga (Latin)</Language>
         <Language ID="kyj-Latn">Karao (Latin)</Language>
@@ -139,7 +144,7 @@
         <Language ID="mbi-Latn">Ilianen Manobo (Latin)</Language>
         <Language ID="mbs-Latn">Sarangani Manobo (Latin)</Language>
         <Language ID="mbt-Latn">Matigsalug Manobo (Latin)</Language>
-        <Language ID="mdh-Latn">Maguindanaon (Latin)</Language>
+        <Language ID="mdh">Maguindanaon</Language>
         <Language ID="mmn-Latn">Mamanwa (Latin)</Language>
         <Language ID="mrw-Latn">Maranao (Latin)</Language>
         <Language ID="msb-Latn">Masbatenyo (Latin)</Language>
@@ -147,8 +152,8 @@
         <Language ID="msm-Latn">Agusan Manobo (Latin)</Language>
         <Language ID="mta-Latn">Cotabato Manobo (Latin)</Language>
         <Language ID="obo-Latn">Obo Manobo (Latin)</Language>
-        <Language ID="pag-Latn">Pangasinan (Latin)</Language>
-        <Language ID="pam-Latn">Pampanga (Latin)</Language>
+        <Language ID="pag">Pangasinan</Language>
+        <Language ID="pam">Pampanga</Language>
         <Language ID="plc-Latn">Central Palawano (Latin)</Language>
         <Language ID="plv-Latn">Southwest Palawano (Latin)</Language>
         <Language ID="plw-Latn">Brooke's Point Palawano (Latin)</Language>
@@ -171,15 +176,15 @@
         <Language ID="syb-Latn">Central Subanen (Latin)</Language>
         <Language ID="tbk-Latn">Calamian Tagbanwa (Latin)</Language>
         <Language ID="tbl-Latn">Tboli (Latin)</Language>
-        <Language ID="tbw-Latn">Tagbanwa (Latin)</Language>
+        <Language ID="tbw">Tagbanwa</Language>
         <Language ID="tgt-Latn">Central Tagbanwa (Latin)</Language>
         <Language ID="tis-Latn">Masadiit Itneg (Latin)</Language>
         <Language ID="tiu-Latn">Adasen (Latin)</Language>
         <Language ID="tiy-Latn">Tiruray (Latin)</Language>
-        <Language ID="tsg-Latn">Tausug (Latin)</Language>
+        <Language ID="tsg">Tausug</Language>
         <Language ID="twb-Latn">Western Tawbuid (Latin)</Language>
         <Language ID="ubl-Latn">Buhi'non Bikol (Latin)</Language>
-        <Language ID="war-Latn">Waray (Philippines) (Latin)</Language>
+        <Language ID="war">Waray (Philippines)</Language>
         <Language ID="xnn-Latn">Northern Kankanay (Latin)</Language>
         <Language ID="xsb-Latn">Sambal (Latin)</Language>
         <Language ID="yka-Latn">Yakan (Latin)</Language>

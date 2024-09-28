@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Thai (Pattachote) Keyboard Help';
-  $pagetitle = 'Thai (Pattachote) Keyboard Help';
+  $pagename = 'Thai (Pattachote) (deprecated) Keyboard Help';
+  $pagetitle = 'Thai (Pattachote) (deprecated) Keyboard Help';
   // Header we will tidy up later  
   require_once('header.php');
 

@@ -1,0 +1,314 @@
+FONTLOG 
+Harmattan font
+=================
+
+This file provides detailed information on the Harmattan font software. 
+This information should be distributed along with the Harmattan fonts 
+and any derivative works.
+
+Basic Font Information
+----------------------
+
+Harmattan, named after the trade winds that blow during the dry season in 
+West Africa, is designed in a Warsh style to suit the needs of languages 
+using the Arabic script in West Africa.
+
+This release supports most of the Unicode 15.0 Arabic character 
+repertoire (excluding the Arabic Presentation Forms blocks, which are not 
+recommended for normal use). 
+
+Font smarts are implemented using the OpenType smart font technology. 
+A number of glyph variations are accessible through font features
+available. 
+
+This font provides a simplified rendering of Arabic script, using basic 
+connecting glyphs but not including a wide variety of additional ligatures 
+or contextual alternates (only the required lam-alef ligatures). This 
+simplified style is often preferred for clarity, especially in non-Arabic 
+languages, but may be considered unattractive in more traditional and 
+literate communities.
+
+Four fonts from this typeface family are included in this release:
+
+     * Harmattan Regular
+     * Harmattan Medium
+     * Harmattan SemiBold
+     * Harmattan Bold
+
+For detailed documentation see the contents of the 'documentation' folder.
+
+A Note Regarding the Open Font License and TypeTuner
+----------------------------------------------------
+
+The OFL prohibits the use of Reserved Font Names "Fouta", "Harmattan" and 
+"SIL" in the name of any font that is derived from the Original Version of 
+Harmattan. However, SIL International (the Copyright Holder) grants 
+through this separate written agreement the right to use the Reserved Font
+Names in any Modified Version of this font created by using TypeTuner as 
+long as the feature information contained in the Original Version is used, 
+unmodified, as the source for TypeTuner feature information, and 
+"Harmattan" is not the resulting font family name.
+
+TypeTuner-produced fonts created in this manner are still bound by the
+terms of the OFL. Specifically, the use of Reserved Font Names is
+prohibited when making derivatives of a TypeTuner-produced font. Anyone
+making a derivative of a TypeTuner font will need to find a different
+name. For example a TypeTuner-produced font may be named 
+"Harmattan SomeFarAwayPlace" but a derivative of that font made 
+with other tools would not be allowed to use the "Fouta", "Harmattan" 
+and "SIL" Reserved Font Names and would have to be named something like 
+"Nations Ajami".
+
+
+ChangeLog
+---------
+(This should list both major and minor changes, most recent first.)
+
+### 2023-04-14 (SIL WSTech team) Harmattan version 4.000
+
+#### New
+- Added Kyrgyz language support
+- Added Arabic-style (rounded) versions of chevron quotes
+- New features:
+  - cv49 - Heh Doachashmee
+  - cv51 - Kyrgyz OE (loop/bar)
+  - cv54 - Yeh hamza (Standard/Right hamza)
+  - cv85 - Decimal separator (Small reh/Slash)
+- Added:
+  - U+061D ARABIC END OF TEXT MARK
+  - Due to the rarity of these characters, lam-alef ligatures have not been implemented with these new characters:
+    - U+0870 ARABIC LETTER ALEF WITH ATTACHED FATHA
+    - U+0871 ARABIC LETTER ALEF WITH ATTACHED TOP RIGHT FATHA
+    - U+0872 ARABIC LETTER ALEF WITH RIGHT MIDDLE STROKE
+    - U+0873 ARABIC LETTER ALEF WITH LEFT MIDDLE STROKE
+    - U+0874 ARABIC LETTER ALEF WITH ATTACHED KASRA
+    - U+0875 ARABIC LETTER ALEF WITH ATTACHED BOTTOM RIGHT KASRA
+    - U+0876 ARABIC LETTER ALEF WITH ATTACHED ROUND DOT ABOVE
+    - U+0877 ARABIC LETTER ALEF WITH ATTACHED RIGHT ROUND DOT
+    - U+0878 ARABIC LETTER ALEF WITH ATTACHED LEFT ROUND DOT
+    - U+0879 ARABIC LETTER ALEF WITH ATTACHED ROUND DOT BELOW
+    - U+087A ARABIC LETTER ALEF WITH DOT ABOVE
+    - U+087B ARABIC LETTER ALEF WITH ATTACHED TOP RIGHT FATHA AND DOT ABOVE
+    - U+087C ARABIC LETTER ALEF WITH RIGHT MIDDLE STROKE AND DOT ABOVE
+    - U+087D ARABIC LETTER ALEF WITH ATTACHED BOTTOM RIGHT KASRA AND DOT ABOVE
+    - U+087E ARABIC LETTER ALEF WITH ATTACHED TOP RIGHT FATHA AND LEFT RING
+    - U+087F ARABIC LETTER ALEF WITH RIGHT MIDDLE STROKE AND LEFT RING
+    - U+0880 ARABIC LETTER ALEF WITH ATTACHED BOTTOM RIGHT KASRA AND LEFT RING
+    - U+0881 ARABIC LETTER ALEF WITH ATTACHED RIGHT HAMZA
+    - U+0882 ARABIC LETTER ALEF WITH ATTACHED LEFT HAMZA
+  - U+0883 ARABIC TATWEEL WITH OVERSTRUCK HAMZA
+  - U+0884 ARABIC TATWEEL WITH OVERSTRUCK WAW
+  - U+0885 ARABIC TATWEEL WITH TWO DOTS BELOW
+  - U+0886 ARABIC LETTER THIN YEH
+  - U+0887 ARABIC BASELINE ROUND DOT
+  - U+0888 ARABIC RAISED ROUND DOT
+  - U+0889 ARABIC LETTER NOON WITH INVERTED SMALL V
+  - U+088A ARABIC LETTER HAH WITH INVERTED SMALL V BELOW
+  - U+088B ARABIC LETTER TAH WITH DOT BELOW
+  - U+088C ARABIC LETTER TAH WITH THREE DOTS BELOW
+  - U+088D ARABIC LETTER KEHEH WITH TWO DOTS VERTICALLY BELOW
+  - U+088E ARABIC VERTICAL TAIL
+  - U+0890 ARABIC POUND MARK ABOVE
+  - U+0891 ARABIC PIASTRE MARK ABOVE
+  - U+0898 ARABIC SMALL HIGH WORD AL-JUZ
+  - U+0899 ARABIC SMALL LOW WORD ISHMAAM
+  - U+089A ARABIC SMALL LOW WORD IMAALA
+  - U+089B ARABIC SMALL LOW WORD TASHEEL
+  - U+089C ARABIC MADDA WAAJIB
+  - U+089D ARABIC SUPERSCRIPT ALEF MOKHASSAS
+  - U+089E ARABIC DOUBLED MADDA
+  - U+089F ARABIC HALF MADDA OVER MADDA
+  - U+08B5 ARABIC LETTER QAF WITH DOT BELOW AND NO DOTS ABOVE
+  - U+08C8 ARABIC LETTER GRAF
+  - U+08C9 ARABIC SMALL FARSI YEH
+  - U+08CA ARABIC SMALL HIGH FARSI YEH
+  - U+08CB ARABIC SMALL HIGH YEH BARREE WITH TWO DOTS BELOW
+  - U+08CC ARABIC SMALL HIGH WORD SAH
+  - U+08CD ARABIC SMALL HIGH ZAH
+  - U+08CE ARABIC LARGE ROUND DOT ABOVE
+  - U+08CF ARABIC LARGE ROUND DOT BELOW
+  - U+08D0 ARABIC SUKUN BELOW
+  - U+08D1 ARABIC LARGE CIRCLE BELOW
+  - U+08D2 ARABIC LARGE ROUND DOT INSIDE CIRCLE BELOW
+  - U+08D3 ARABIC SMALL LOW WAW
+  - U+08D4 ARABIC SMALL HIGH WORD AR-RUB
+  - U+08D5 ARABIC SMALL HIGH SAD
+  - U+08D6 ARABIC SMALL HIGH AIN
+  - U+08D7 ARABIC SMALL HIGH QAF
+  - U+08D8 ARABIC SMALL HIGH NOON WITH KASRA
+  - U+08D9 ARABIC SMALL LOW NOON WITH KASRA
+  - U+08DA ARABIC SMALL HIGH WORD ATH-THALATHA
+  - U+08DB ARABIC SMALL HIGH WORD AS-SAJDA
+  - U+08DC ARABIC SMALL HIGH WORD AN-NISF
+  - U+08DD ARABIC SMALL HIGH WORD SAKTA
+  - U+08DE ARABIC SMALL HIGH WORD QIF
+  - U+08DF ARABIC SMALL HIGH WORD WAQFA
+  - U+08E0 ARABIC SMALL HIGH FOOTNOTE MARKER
+  - U+08E1 ARABIC SMALL HIGH SIGN SAFHA
+  - U+08E2 ARABIC DISPUTED END OF AYAH  
+  - U+201B SINGLE HIGH-REVERSED-9 QUOTATION MARK
+  - U+201F DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+  - U+204F REVERSED SEMICOLON
+  - U+2E41 REVERSED COMMA
+  - U+10EFD ARABIC SMALL LOW WORD SAKTA
+  - U+10EFE ARABIC SMALL LOW WORD QASR
+  - U+10EFF ARABIC SMALL LOW WORD MADDA
+
+#### Improved
+- Fixed bug using kashida-justification in Word (where the lam-alef ligature would break)
+- Made U+06DB ARABIC SMALL HIGH THREE DOTS bold in the bold font
+- Changed default for U+0657 ARABIC INVERTED DAMMA from "open" to "filled"  
+- Changed Kurdish language to support a U+06BE Heh Doachashmee alternate rather than U+0647 Heh alternate
+- Redesign 
+  - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH (see https://www.unicode.org/versions/Unicode15.0.0/erratafixed.html)
+  - U+0674 ARABIC LETTER HIGH HAMZA
+  - U+0675 ARABIC LETTER HIGH HAMZA ALEF
+  - U+0676 ARABIC LETTER HIGH HAMZA WAW
+  - U+0677 ARABIC LETTER U WITH HAMZA ABOVE
+  - U+0678 ARABIC LETTER HIGH HAMZA YEH
+  - U+06C5 ARABIC LETTER KIRGHIZ OE
+  - U+06C7 ARABIC LETTER U
+
+#### Removed
+- Removed features: 
+  - Alef diacritic placement (cv02)
+  - Arabic U (cv50)
+
+#### Known issues
+- Shaping for the newly added characters may not yet occur in applications.
+- Medial and final high hamza characters may have collisions (these likely do not occur).
+- Lam + high hamza alef ligature does not form as it likely does not occur.
+
+  
+### 2020-06-19 (SIL WSTech team) Harmattan version 2.000
+  - Added a bold typeface
+  - Added support for all characters in the Arabic and Arabic Supplement blocks
+  - Added support for all characters in the Arabic Extended-A block (except for the
+    Quranic annotation signs)
+  - Added U+FDFC (rial), U+FDFD (bismillah)
+  - Added U+02D0, U+02D8..U+02D9, U+02DB, U+02DD, U+034F, U+03C0, U+2044, U+2126, U+2202, 
+    U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264..U+2265, U+2423 
+  - Implemented language support for Kurdish, Rohingya, Sindhi, Urdu, and Wolof variants
+  - Implemented Dal, Heh, Arabic U, Inverted Damma, and Eastern Digits features
+  - Implemented new Allah ligature rules
+  - Improved support for Shaddah+kasra placement feature
+  - Removed "Show invisible characters" feature
+  - Added UI name strings for Graphite and OpenType features
+  - Improvements to the design of dal-, keheh-, yeh-, qaf-, ain-, heh doachashmee-, swash kaf-, 
+    and yeh barree-based characters
+  - Improvements to the design of U+FDF2 - modified to use shadda-dagger alef (not shadda-fatha)
+  - Improvements to the design of rohingya yeh
+  - Improvements to the design and size of digits (latin and arabic)
+  - Improvements to positioning of combining marks and nuktas
+  - Adjustments to spacing around many Arabic script characters
+  - Rework kerning logic based on new spacing around characters 
+  - Improved line spacing to support added characters
+  - Modified underline and strikethrough position (used by some applications)
+  - Modified superscript and subscript size and positioning (used by some applications)
+  - Implemented support for UNICODE ARABIC MARK RENDERING (UTR #53) 
+
+### 2016-04-07 (SIL NRSI team) Harmattan Version 1.001 (production release)
+  - Changed internal font names
+  - changed space of U+00A0 to match regular space
+
+### 2015-03-25 (SIL NRSI team) Harmattan Version 1.00 (production release)
+  - Further improvements to kerning.
+
+### 2014-12-11 (SIL NRSI team) Harmattan alpha Version 0.119 (test release)
+  - Improved kerning logic in OpenType (via GPOS) and Graphite
+
+### 2014-10-27 (SIL NRSI team) Harmattan alpha Version 0.118 (test release)
+- Improved display:
+  - Reduced width of arrowhead combining marks to reduce collisions
+  - Added kerning logic in OpenType (via GPOS) and Graphite
+
+### 2014-10-14 (SIL NRSI team) Harmattan alpha Version 0.117 (test release)
+- Alpha release of font for feedback
+- Revision of design of characters based on feedback received
+  - Shortened kasra and fatha (and similar characters and glyphs) to 
+    help with collisions
+  - Adjusted design to final form of U+06D2 to help with collisions
+  - Increased spacing after reh-like characters
+  - African qaf, African noon, African feh added (in the Unicode pipeline)
+  - A few minor anchor point tweaks
+- Changed default behavior for cv62 to have the kasra in the "lowered" postion
+  - Removed cv62 as an OpenType feature. It is now only available through
+    Graphite or TypeTunerWeb
+- Default linespacing adjusted to handle tallest base character with shadda
+  and lowest base character so these are not clipped 
+- Added Normal and Loose linespacing adjustments for TypeTunerWeb
+
+### 2014-06-24 (SIL NRSI team) Harmattan alpha Version 0.111 (test release)
+- Alpha release of font for feedback
+- Revision of design of characters based on feedback received
+  - Isolate reh and noon ghunna characters modified
+  - Tatweel (U+0640) length was shortened
+  - APs on many characters were adjusted
+  - Adjusted design of U+08F7..U+08FD (arrowheads)
+- added U+065E, U+08F0, U+08F1, U+08F2, U+08F3
+
+### 2014-04-03 (SIL NRSI team) Harmattan alpha Version 0.106 (test release)
+- Alpha release of font for feedback
+- Revision of design of characters based on feedback received
+
+### 2013-12-04 (SIL NRSI team) Harmattan alpha Version 0.010 (test release)
+- Alpha release of font for feedback only (not an actual font release)
+- Arabic script design work is based on Fouta font (see copyright and 
+  acknowledgments) with significant modification
+- Latin script design is based on a Andika (see copyright). The Latin
+  Andika glyphs have been reduced in size to match Harmattan
+ 
+
+Information for Contributors
+----------------------------
+We welcome contributions to this font project, such as new glyphs, enhanced 
+smart font code, or bug fixes. The best way to begin the process is to file 
+an issue in the Github project (https://github.com/silnrsi/font-harmattan) 
+or respond to an existing issue and express your interest. Then we can begin 
+to correspond with you regarding what all might be required and discuss how 
+to best submit your contributions.
+
+To enable us to accept contributions in a way that honors your contribution 
+and respects your copyright while preserving long-term flexibility for open 
+source licensing, you would also need to agree to the SIL International 
+Contributor License Agreement for Font Software (v1.0) prior to sending us 
+your contribution. To read more about this requirement and find out how to 
+submit the required form, please visit the CLA information page
+(https://software.sil.org/fontcla).
+
+Acknowledgements
+----------------
+(Here is where contributors can be acknowledged. If you make modifications
+be sure to add your name (N), email (E), web-address (W) and description
+(D). This list is sorted by last name in alphabetical order.)
+
+N: Sharon Correll
+E: fonts@sil.org
+W: https://software.sil.org/wstech/
+D: Contributing Designer and Lead Script Engineer
+
+N: Bob Hallissy
+E: fonts@sil.org
+W: https://software.sil.org/wstech/
+D: Script Engineer: Graphite, OpenType, and TypeTuner code, and build support
+
+N: Becca Spalinger
+E: fonts@sil.org
+W: https://software.sil.org/wstech/
+D: Contributing Designer
+
+N: George W. Nuss
+W: http://www.fulbefouta.com
+D: Original Designer
+
+N: Iska Routamaa
+E: fonts@sil.org
+W: https://software.sil.org/wstech/
+D: Contributing Designer
+
+The Harmattan project is maintained by SIL International.
+
+For more information please visit the Harmattan font page on 
+SIL International's Computers and Writing Systems website:
+http://software.sil.org/harmattan/
+

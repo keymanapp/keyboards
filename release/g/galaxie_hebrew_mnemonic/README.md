@@ -1,8 +1,6 @@
 # Galaxie Hebrew (Mnemonic) Keyboard
 
-Copyright (C) 2004-2018 Galaxie Software and SIL International
-
-Version 3.2
+Copyright (C) Galaxie Software and SIL Global
 
 __DESCRIPTION__
 
@@ -13,5 +11,7 @@ This keyboard is designed for Biblical Hebrew, a Semitic language of the ancient
 
  * Windows
  * macOS
+ * Linux
  * Web
+
 

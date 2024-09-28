@@ -1,10 +1,6 @@
 Lunáapeewi-hulŭniixsuwáakan keyboard
 ======================
 
-Copyright (c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.1
-
 Lunáapeewi-hulŭniixsuwáakan keyboard layout for Unicode
 
 Links

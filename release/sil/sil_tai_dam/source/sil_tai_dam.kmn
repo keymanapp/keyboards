@@ -1,10 +1,10 @@
 ﻿store(&version) '10.0'
 store(&NAME) 'Tai Dam (SIL)'
 store(&BITMAP) 'sil_tai_dam.ico'
-store(&COPYRIGHT) 'Copyright © 2007-2020 SIL International'
+store(&COPYRIGHT) 'Copyright © SIL International'
 c store(&ETHNOLOGUECODE) 'blt'  	c deprecated in Kmn 10.
-store(&KEYBOARDVERSION) '2.2.2'
-store(&TARGETS) 'windows macosx linux web'
+store(&KEYBOARDVERSION) '2.3'
+store(&TARGETS) 'any'
 store(&MESSAGE) 'The SIL Tai Dam keyboard is distributed under The MIT License (MIT).'
 store(&VISUALKEYBOARD) 'sil_tai_dam.kvks'
 
@@ -21,6 +21,7 @@ c June 2016: included linux in &TARGETS
 c June 2016: updated source to Keyman Developer 9
 c 2007: Released as Tai Dam US keyboard.
 
+store(&LAYOUTFILE) 'sil_tai_dam.keyman-touch-layout'
 
 begin Unicode > use(main)
 

@@ -1,0 +1,59 @@
+﻿c Created by Lorna A. Priest 3-JUN-03 for the 
+c      Wayuu language of Colombia/Venezuela for Richard Mansen
+
+store(&VERSION) '10.0'
+store(&NAME) 'Wayuu (SIL)'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&BITMAP) 'sil_wayuu.ico'
+store(&VISUALKEYBOARD) 'sil_wayuu.kvks'
+store(&LAYOUTFILE) 'sil_wayuu.keyman-touch-layout'
+
+begin UNICODE > use(main)
+
+
+c glottal stop
+store(glot) "'"
+store(glotU) U+A78C
+
+c acute
+store(A)   "a"    "e"    "i"    "o"    "u"    \
+           "A"    "E"    "I"    "O"    "U"    
+store(AU)  U+00E1 U+00E9 U+00ED U+00F3 U+00FA \
+           U+00C1 U+00C9 U+00CD U+00D3 U+00DA 
+
+store(Umlaut) [RALT K_U]    [RALT SHIFT K_U]   
+store(UU)     U+00FC U+00DC
+
+store(UAcute)  "u"    "U"
+store(UAcuteU) U+01D8 U+01D7
+
+store(tilde)  "n"    "N"
+store(tildeU) U+00F1 U+00D1      
+
+store(punc)  "<"    ">"    "`"    "'"    "?"    "!" \
+             "7"    "&"    ";"
+store(puncU) U+201C U+201D U+2018 U+2019 U+00BF U+00A1 \
+             U+0037 U+0026 U+003B
+store(mod1) ";"
+store(enya) "~"
+store(mod2) "]"
+
+
+group(main)  using keys
+           +  [RALT K_QUOTE]  > U+0027
+
+           +  any(mod1)  > deadkey(mod1)
+           +  any(enya)  > deadkey(enya)
+           +  any(mod2)  > deadkey(mod2)
+
+           + any(Umlaut) > index(UU,1)
+           + any(glot)   > index(glotU,1)
+dk(mod1)   + any(A)      > index(AU,2)
+dk(enya)   + any(tilde)  > index(tildeU,2) 
+dk(enya)   + any(enya)   > index(enya,2)
+dk(mod1)   + any(punc)   > index(puncU,2)
+dk(mod2)   + any(UAcute) > index(UAcuteU,2)
+dk(mod2)   + any(mod2)   > index(mod2,2)
+

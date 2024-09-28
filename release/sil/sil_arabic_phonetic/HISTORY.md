@@ -1,5 +1,8 @@
 # Arabic Phonetic (SIL) Keyboard Change History
 
+## 1.0.2 (27 Oct 2020)
+* Increment version number to force recompile of touch layout.
+
 ## 1.0.1 (26 Apr 2019)
 * Added BCP47 codes to kps
 

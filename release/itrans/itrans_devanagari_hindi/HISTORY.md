@@ -1,6 +1,16 @@
 Hindi Devanagari Phonetic (ITRANS) Change History
 ==================================
 
+1.4.0 (2024-08-27)
+---------------------------
+* Add mobile layout
+
+1.3.0 (2023-12-06)
+---------------------------
+* Add documentation
+* Add punctuation on RALT
+* Use composite forms for base+nukta
+
 1.2.0 (2019-05-30)
 ---------------------------
 * 20190527 

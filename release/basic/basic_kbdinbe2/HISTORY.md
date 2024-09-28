@@ -1,6 +1,10 @@
 Bengali - INSCRIPT Basic Change History
 ====================
 
+1.1.1 (2020-10-28)
+----------------
+* Increment version number to force recompile of touch layout.
+
 1.1 (2019-07-30)
 ----------------
 * Import from Windows 10

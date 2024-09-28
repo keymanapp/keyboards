@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.52.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
@@ -16,8 +18,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Galaxie Greek/Hebrew (Mnemonic) Keyboard Package</Name>
-    <Copyright URL="">2004-2019 Galaxie Software and SIL International</Copyright>
-    <Version URL="">3.2.1</Version>
+    <Copyright URL="">Galaxie Software and SIL Global</Copyright>
+    <Version URL="">3.4</Version>
+    <Description URL="">This package includes 2 mnemonic keyboards called: Galaxie Greek
+(Mnemonic) and Galaxie Hebrew (Mnemonic).</Description>
+    <Author URL="">Hampton Keathley</Author>
   </Info>
   <Files>
     <File>
@@ -51,28 +56,22 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\galaxie_hebrew_mnemonic.js</Name>
-      <Description>File galaxie_hebrew_mnemonic.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\build\galaxie_hebrew_mnemonic.kvk</Name>
-      <Description>File galaxie_hebrew_mnemonic.kvk</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
       <Name>..\build\galaxie_hebrew_mnemonic.kmx</Name>
       <Description>Keyboard Galaxie Hebrew (Mnemonic)</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\galaxie_greek_mnemonic.js</Name>
-      <Description>File galaxie_greek_mnemonic.js</Description>
+      <Name>..\build\galaxie_greek_mnemonic.kmx</Name>
+      <Description>Keyboard Galaxie Greek (Mnemonic)</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
     <File>
       <Name>..\build\galaxie_greek_mnemonic.kvk</Name>
@@ -81,18 +80,17 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\build\galaxie_greek_mnemonic.kmx</Name>
-      <Description>Keyboard Galaxie Greek (Mnemonic)</Description>
+      <Name>..\build\galaxie_hebrew_mnemonic.kvk</Name>
+      <Description>File galaxie_hebrew_mnemonic.kvk</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kmx</FileType>
+      <FileType>.kvk</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Galaxie Hebrew (Mnemonic)</Name>
       <ID>galaxie_hebrew_mnemonic</ID>
-      <Version>3.2</Version>
-      <RTL>True</RTL>
+      <Version>3.3</Version>
       <Languages>
         <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
         <Language ID="he">Hebrew (Hebrew)</Language>
@@ -101,12 +99,15 @@
     <Keyboard>
       <Name>Galaxie Greek (Mnemonic)</Name>
       <ID>galaxie_greek_mnemonic</ID>
-      <Version>3.2.1</Version>
+      <Version>3.3</Version>
       <Languages>
         <Language ID="grc-Grek">Ancient Greek (to 1453) (Greek)</Language>
         <Language ID="el">Modern Greek (1453-) (Greek)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="galaxiebiblescriptmnemonic" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

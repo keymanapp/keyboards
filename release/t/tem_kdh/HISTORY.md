@@ -1,5 +1,10 @@
 Tem (kdh) Keyboard Change History
 =======================
+
+1.3 (2024-09-04)
+----------------
+* Updated language tag from Arab to Latn
+
 1.2.1 (2018-06-18)
 ------------------
 * add touch keyboard to package

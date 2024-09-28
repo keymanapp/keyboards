@@ -1,10 +1,6 @@
 Gondi (Gunjala) Keyboard
 =======================
 
-Copyright (C) 2019-2020 SIL International
-
-Version 1.1
-
 __DESCRIPTION__
 This Gondi (Gunjala) keyboard has been designed for typing the Adilabad Gondi (wsg) language 
 spoken in the northern part of Telangana State of India, using the Telugu script. It has various

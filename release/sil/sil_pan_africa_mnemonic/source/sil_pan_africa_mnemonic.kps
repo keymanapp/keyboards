@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,8 +20,16 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Pan Africa Mnemonic (SIL)</Name>
-    <Copyright URL="">© 2003-2018 SIL International.</Copyright>
+    <Copyright URL="">© SIL International.</Copyright>
     <WebSite URL="https://keyman.com/keyboards/sil_pan_africa_mnemonic">https://keyman.com/keyboards/sil_pan_africa_mnemonic</WebSite>
+    <Description URL="">This is the mnemonic version of the Pan Africa (SIL) keyboard. It
+features a layout that adjusts to the arrangement of keys on your
+hardware keyboard. This keyboard was developed to type the Latin-script
+languages of Africa. An attempt was made to cover the orthographic needs
+for SIL in many of the countries of Africa, but this cannot be
+considered a complete list, nor should it be considered an endorsement
+for this particular layout.</Description>
+    <Author URL="">Lorna Evans</Author>
   </Info>
   <Files>
     <File>
@@ -41,12 +51,6 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\sil_pan_africa_mnemonic.js</Name>
-      <Description>File sil_pan_africa_mnemonic.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>..\build\sil_pan_africa_mnemonic.kvk</Name>
       <Description>File sil_pan_africa_mnemonic.kvk</Description>
       <CopyLocation>0</CopyLocation>
@@ -58,44 +62,52 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Pan Africa Mnemonic (SIL)</Name>
       <ID>sil_pan_africa_mnemonic</ID>
-      <Version></Version>
+      <Version>1.2</Version>
       <Languages>
-        <Language ID="bjt-Latn">Balanta-Ganja (Latin)</Language>
-        <Language ID="bin-Latn">Bini (Latin)</Language>
-        <Language ID="efi-Latn">Efik (Latin)</Language>
-        <Language ID="en">English</Language>
-        <Language ID="ee-Latn">Ewe (Latin)</Language>
-        <Language ID="fon-Latn">Fon (Latin)</Language>
-        <Language ID="fr">French</Language>
-        <Language ID="ff-Latn">Fulah (Latin)</Language>
-        <Language ID="fub-Latn">Adamawa Fulfulde (Latin)</Language>
-        <Language ID="fue-Latn">Borgu Fulfulde (Latin)</Language>
-        <Language ID="fuh-Latn">Western Niger Fulfulde (Latin)</Language>
-        <Language ID="ha-Latn">Hausa (Latin)</Language>
-        <Language ID="idu-Latn">Idoma (Latin)</Language>
-        <Language ID="ig-Latn">Igbo (Latin)</Language>
-        <Language ID="dyu-Latn">Dyula (Latin)</Language>
-        <Language ID="kbp-Latn">Kabiyè (Latin)</Language>
-        <Language ID="kr-Latn">Kanuri (Latin)</Language>
-        <Language ID="knc-Latn">Central Kanuri (Latin)</Language>
-        <Language ID="mnk-Latn">Mandinka (Latin)</Language>
-        <Language ID="mfv-Latn">Mandjak (Latin)</Language>
-        <Language ID="knf-Latn">Mankanya (Latin)</Language>
-        <Language ID="mos-Latn">Mossi (Latin)</Language>
-        <Language ID="snf-Latn">Noon (Latin)</Language>
-        <Language ID="wes-Latn">Cameroon Pidgin (Latin)</Language>
-        <Language ID="fuc-Latn">Pulaar (Latin)</Language>
-        <Language ID="srr-Latn">Serer (Latin)</Language>
-        <Language ID="snk-Latn">Soninke (Latin)</Language>
-        <Language ID="wo-Latn">Wolof (Latin)</Language>
-        <Language ID="yo-Latn">Yoruba (Latin)</Language>
+        <Language ID="bjt">Balanta-Ganja</Language>
+        <Language ID="bin">Bini</Language>
+        <Language ID="efi">Efik</Language>
+        <Language ID="ee">Ewe</Language>
+        <Language ID="fon">Fon</Language>
+        <Language ID="ff">Fulah</Language>
+        <Language ID="fub">Adamawa Fulfulde</Language>
+        <Language ID="fue">Borgu Fulfulde</Language>
+        <Language ID="fuh">Western Niger Fulfulde</Language>
+        <Language ID="ha">Hausa</Language>
+        <Language ID="idu">Idoma</Language>
+        <Language ID="ig">Igbo</Language>
+        <Language ID="dyu">Dyula</Language>
+        <Language ID="kbp">Kabiyè</Language>
+        <Language ID="kr">Kanuri</Language>
+        <Language ID="knc">Central Kanuri</Language>
+        <Language ID="mnk">Mandinka</Language>
+        <Language ID="mfv">Mandjak</Language>
+        <Language ID="knf">Mankanya</Language>
+        <Language ID="mos">Mossi</Language>
+        <Language ID="snf">Noon</Language>
+        <Language ID="wes">Cameroon Pidgin</Language>
+        <Language ID="fuc">Pulaar</Language>
+        <Language ID="srr">Serer</Language>
+        <Language ID="snk">Soninke</Language>
+        <Language ID="wo">Wolof</Language>
+        <Language ID="yo">Yoruba</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="africadeadkey" Relationship="deprecates"/>
+    <RelatedPackage ID="sil_pan_africa_positional"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

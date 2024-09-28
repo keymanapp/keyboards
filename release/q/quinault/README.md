@@ -1,9 +1,9 @@
 Quinault Keyboard
 =====================
 
-Copyright (C) 2016-2018 SIL International
+Copyright (C) 2016-2020 SIL International
 
-Version 1.0
+Version 1.0.1
 
 __DESCRIPTION__
 This keyboard was developed for keyboarding the Quinault language of the United States. 

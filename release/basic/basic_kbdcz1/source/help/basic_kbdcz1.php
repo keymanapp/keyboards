@@ -7,7 +7,7 @@
 
 
 <p>
-    Czech (QWERTY) Basic 1.1 generated from template.
+    Czech (QWERTY) Basic generated from template.
 </p>
 
 <p>This keyboard makes use of "deadkeys" which are listed below:</p>

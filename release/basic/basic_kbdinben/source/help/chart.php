@@ -1,4 +1,4 @@
-<?php 
+<?php
   $pagename = 'Bengali Basic Keyboard Help';
   $pagetitle = 'Bengali Basic Keyboard Help';
   $style = '.lang2 {font-size:150%}';
@@ -6,7 +6,7 @@
 ?>
 
 
-	
+
 <h2>Bengali Basic Keyboard Reference Chart</h2>
 <p>The following chart lists all the characters available with this keyboard.  Below each character are the keys used to type it.
 <br/>Because Bengali includes hundreds of combined consonants, these are not shown on this chart.  To type combined consonants, type a <span class='lang2' style='font-size:200%'>্</span> mark (<span class='keys'>d</span>) between the two consonants.</p>
@@ -572,7 +572,7 @@
 		<td><span class='lang2' >৯</span><br/><span class='keys'>[RA9]</span></td>
 		<td><span class='lang2' >০</span><br/><span class='keys'>[RA0]</span></td>
 	</tr>
-	
+
 	<tr style='text-align:center; font-weight:normal; background-color:#ffffff'>
 		<td colspan=13>&nbsp;</td>
 	</tr>
@@ -606,11 +606,11 @@
 		<td colspan=13>&nbsp;</td>
 	</tr>
 
-	
+
 </table>
 
 <div id="Back">
-<p><a href="bengali.php">Back to Bengali Basic Keyboard Help</a><br/>
+<p><a href="basic_kbdinben.php">Back to Bengali Basic Keyboard Help</a><br/>
 </p>
 </div>
 

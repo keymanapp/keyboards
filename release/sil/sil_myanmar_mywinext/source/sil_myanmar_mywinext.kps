@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1113.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Version URL="">1.4</Version>
+    <Version URL=""></Version>
     <Name URL="">myWin Extended (SIL)</Name>
-    <Copyright URL="">(c) 2004-2018 SIL International</Copyright>
+    <Copyright URL="">(c) SIL International</Copyright>
+    <Description URL="">Burmese Keyboard for Unicode Encoding. This Layout has been designed to
+resemble that used by WinMyanmar Systems, however, it is much simplified
+because of the advantages of Unicode technology. Some keys have changed
+as a result.</Description>
   </Info>
   <Files>
     <File>
@@ -92,12 +99,24 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_myanmar_mywinext.js</Name>
+      <Description>File sil_myanmar_mywinext.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>myWin Extended (SIL)</Name>
       <ID>sil_myanmar_mywinext</ID>
-      <Version>1.4</Version>
+      <Version>1.5</Version>
       <OSKFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\padauk\Padauk-Regular.ttf</DisplayFont>
       <Languages>
@@ -105,5 +124,8 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="myanmar" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

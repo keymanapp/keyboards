@@ -1,0 +1,496 @@
+/*
+Akatab-webfont-example.css
+This file is Copyright (c) 2010-2023 SIL International (http://www.sil.org/).
+Released under the MIT license.
+*/
+@font-face {
+    font-family: Akatab-R;
+    src: url("Akatab-Regular.woff2") format("woff2"); /* use Akatab in current folder */
+}
+@font-face {
+    font-family: Akatab-B;
+    src: url("Akatab-Bold.woff2") format("woff2"); /* use Akatab in current folder */
+}
+@font-face {
+    font-family: Akatab-M;
+    src: url("Akatab-Medium.woff2") format("woff2"); /* use Akatab in current folder */
+}
+@font-face {
+    font-family: Akatab-SB;
+    src: url("Akatab-SemiBold.woff2") format("woff2"); /* use Akatab in current folder */
+}@font-face {
+    font-family: Akatab-EB;
+    src: url("Akatab-ExtraBold.woff2") format("woff2"); /* use Akatab in current folder */
+}
+@font-face {
+    font-family: Akatab-BL;
+    src: url("Akatab-Black.woff2") format("woff2"); /* use Akatab in current folder */
+}
+
+.akatab-R  { font-family: Akatab-R; }
+.akatab-B  { font-family: Akatab-B; }
+.akatab-M  { font-family: Akatab-M; }
+.akatab-SB { font-family: Akatab-SB; }
+.akatab-EB { font-family: Akatab-EB; }
+.akatab-BL { font-family: Akatab-BL; }
+
+
+/* use Akatab Regular */
+@font-face {
+  font-family: 'akatab_regularW';
+  src:	url('Akatab-Regular.woff2') format('woff2'); /* use Akatab in current folder */
+}
+
+/* set body font */
+body {
+  font-family: 'Akatab-R', serif; 
+
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+th {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/* enable character variant 1 */
+.cv01 { 
+   font-feature-settings: "cv01" 1; 
+  -moz-font-feature-settings: "cv01" 1;
+  -ms-font-feature-settings: "cv01" 1;
+  -webkit-font-feature-settings: "cv01" 1;
+}
+
+/* enable character variant 2 */
+.cv02 { 
+   font-feature-settings: "cv02" 1;
+  -moz-font-feature-settings: "cv02" 1;
+  -ms-font-feature-settings: "cv02" 1;
+  -webkit-font-feature-settings: "cv02" 1;
+}
+
+.cv02_2 { 
+   font-feature-settings: "cv02" 2;
+  -moz-font-feature-settings: "cv02" 2;
+  -ms-font-feature-settings: "cv02" 2;
+  -webkit-font-feature-settings: "cv02" 2;
+}
+
+/* enable character variant 3 */
+.cv03 { 
+   font-feature-settings: "cv03" 1;
+  -moz-font-feature-settings: "cv03" 1;
+  -ms-font-feature-settings: "cv03" 1;
+  -webkit-font-feature-settings: "cv03" 1;
+}
+
+/* enable character variant 4 */
+.cv04 { 
+   font-feature-settings: "cv04" 1;
+  -moz-font-feature-settings: "cv04" 1;
+  -ms-font-feature-settings: "cv04" 1;
+  -webkit-font-feature-settings: "cv04" 1;
+}
+
+/* enable character variant 5 */
+.cv05 { 
+   font-feature-settings: "cv05" 1;
+  -moz-font-feature-settings: "cv05" 1;
+  -ms-font-feature-settings: "cv05" 1;
+  -webkit-font-feature-settings: "cv05" 1;
+}
+
+/* enable character variant 6 */
+.cv06 { 
+   font-feature-settings: "cv06" 1;
+  -moz-font-feature-settings: "cv06" 1;
+  -ms-font-feature-settings: "cv06" 1;
+  -webkit-font-feature-settings: "cv06" 1;
+}
+
+/* enable character variant 7 */
+.cv07 { 
+   font-feature-settings: "cv07" 1;
+  -moz-font-feature-settings: "cv07" 1;
+  -ms-font-feature-settings: "cv07" 1;
+  -webkit-font-feature-settings: "cv07" 1;
+}
+
+/* enable character variant 8 */
+.cv08 { 
+   font-feature-settings: "cv08" 1;
+  -moz-font-feature-settings: "cv08" 1;
+  -ms-font-feature-settings: "cv08" 1;
+  -webkit-font-feature-settings: "cv08" 1;
+}
+
+/* enable character variant 9 */
+.cv09 { 
+   font-feature-settings: "cv09" 1;
+  -moz-font-feature-settings: "cv09" 1;
+  -ms-font-feature-settings: "cv09" 1;
+  -webkit-font-feature-settings: "cv09" 1;
+}
+
+/* enable character variant 10 */
+.cv10 { 
+   font-feature-settings: "cv10" 1;
+  -moz-font-feature-settings: "cv10" 1;
+  -ms-font-feature-settings: "cv10" 1;
+  -webkit-font-feature-settings: "cv10" 1;
+}
+
+/* enable character variant 11 */
+.cv11 { 
+   font-feature-settings: "cv11" 1;
+  -moz-font-feature-settings: "cv11" 1;
+  -ms-font-feature-settings: "cv11" 1;
+  -webkit-font-feature-settings: "cv11" 1;
+}
+
+/* enable character variant 12 */
+.cv12 { 
+   font-feature-settings: "cv12" 1;
+  -moz-font-feature-settings: "cv12" 1;
+  -ms-font-feature-settings: "cv12" 1;
+  -webkit-font-feature-settings: "cv12" 1;
+}
+
+/* enable character variant 13 */
+.cv13 { 
+   font-feature-settings: "cv13" 1;
+  -moz-font-feature-settings: "cv13" 1;
+  -ms-font-feature-settings: "cv13" 1;
+  -webkit-font-feature-settings: "cv13" 1;
+}
+
+/* enable character variant 14 */
+.cv14 { 
+   font-feature-settings: "cv14" 1;
+  -moz-font-feature-settings: "cv14" 1;
+  -ms-font-feature-settings: "cv14" 1;
+  -webkit-font-feature-settings: "cv14" 1;
+}
+
+/* enable character variant 15 */
+.cv15 { 
+   font-feature-settings: "cv15" 1;
+  -moz-font-feature-settings: "cv15" 1;
+  -ms-font-feature-settings: "cv15" 1;
+  -webkit-font-feature-settings: "cv15" 1;
+}
+
+/* enable character variant 16 */
+.cv16 { 
+   font-feature-settings: "cv16" 1;
+  -moz-font-feature-settings: "cv16" 1;
+  -ms-font-feature-settings: "cv16" 1;
+  -webkit-font-feature-settings: "cv16" 1;
+}
+
+/* enable character variant 17 */
+.cv17 { 
+   font-feature-settings: "cv17" 1;
+  -moz-font-feature-settings: "cv17" 1;
+  -ms-font-feature-settings: "cv17" 1;
+  -webkit-font-feature-settings: "cv17" 1;
+}
+
+/* enable character variant 18 */
+.cv18 { 
+   font-feature-settings: "cv18" 1;
+  -moz-font-feature-settings: "cv18" 1;
+  -ms-font-feature-settings: "cv18" 1;
+  -webkit-font-feature-settings: "cv18" 1;
+}
+
+/* enable character variant 19 */
+.cv19 { 
+   font-feature-settings: "cv19" 1;
+  -moz-font-feature-settings: "cv19" 1;
+  -ms-font-feature-settings: "cv19" 1;
+  -webkit-font-feature-settings: "cv19" 1;
+}
+
+/* enable character variant 20 */
+.cv20 { 
+   font-feature-settings: "cv20" 1;
+  -moz-font-feature-settings: "cv20" 1;
+  -ms-font-feature-settings: "cv20" 1;
+  -webkit-font-feature-settings: "cv20" 1;
+}
+
+/* enable character variant 31 */
+.cv31 { 
+   font-feature-settings: "cv31" 1;
+  -moz-font-feature-settings: "cv31" 1;
+  -ms-font-feature-settings: "cv31" 1;
+  -webkit-font-feature-settings: "cv31" 1;
+}
+
+/* enable character variant 32 */
+.cv32 { 
+   font-feature-settings: "cv32" 1;
+  -moz-font-feature-settings: "cv32" 1;
+  -ms-font-feature-settings: "cv32" 1;
+  -webkit-font-feature-settings: "cv32" 1;
+}
+
+.cv32_2 { 
+   font-feature-settings: "cv32" 2;
+  -moz-font-feature-settings: "cv32" 2;
+  -ms-font-feature-settings: "cv32" 2;
+  -webkit-font-feature-settings: "cv32" 2;
+}
+
+/* enable character variant 33 */
+.cv33 { 
+   font-feature-settings: "cv33" 1;
+  -moz-font-feature-settings: "cv33" 1;
+  -ms-font-feature-settings: "cv33" 1;
+  -webkit-font-feature-settings: "cv33" 1;
+}
+
+.cv33_2 { 
+   font-feature-settings: "cv33" 2;
+  -moz-font-feature-settings: "cv33" 2;
+  -ms-font-feature-settings: "cv33" 2;
+  -webkit-font-feature-settings: "cv33" 2;
+}
+
+.cv33_3 { 
+   font-feature-settings: "cv33" 3;
+  -moz-font-feature-settings: "cv33" 3;
+  -ms-font-feature-settings: "cv33" 3;
+  -webkit-font-feature-settings: "cv33" 3;
+}
+
+/* enable character variant 34 */
+.cv34 { 
+   font-feature-settings: "cv34" 1; 
+  -moz-font-feature-settings: "cv34" 1;
+  -ms-font-feature-settings: "cv34" 1;
+  -webkit-font-feature-settings: "cv34" 1;
+}
+
+.cv34_2 { 
+   font-feature-settings: "cv34" 2;
+  -moz-font-feature-settings: "cv34" 2;
+  -ms-font-feature-settings: "cv34" 2;
+  -webkit-font-feature-settings: "cv34" 2;
+}
+
+.cv34_3 { 
+   font-feature-settings: "cv34" 3;
+  -moz-font-feature-settings: "cv34" 3;
+  -ms-font-feature-settings: "cv34" 3;
+  -webkit-font-feature-settings: "cv34" 3;
+}
+
+/* enable character variant 35 */
+.cv35 { 
+   font-feature-settings: "cv35" 1;
+  -moz-font-feature-settings: "cv35" 1;
+  -ms-font-feature-settings: "cv35" 1;
+  -webkit-font-feature-settings: "cv35" 1;
+}
+
+.cv35_2 { 
+   font-feature-settings: "cv35" 2;
+  -moz-font-feature-settings: "cv35" 2;
+  -ms-font-feature-settings: "cv35" 2;
+  -webkit-font-feature-settings: "cv35" 2;
+}
+
+.cv35_3 { 
+   font-feature-settings: "cv35" 3;
+  -moz-font-feature-settings: "cv35" 3;
+  -ms-font-feature-settings: "cv35" 3;
+  -webkit-font-feature-settings: "cv35" 3;
+}
+
+/* enable character variant 36 */
+.cv36 { 
+   font-feature-settings: "cv36" 1;
+  -moz-font-feature-settings: "cv36" 1;
+  -ms-font-feature-settings: "cv36" 1;
+  -webkit-font-feature-settings: "cv36" 1;
+}
+
+/* enable character variant 37 */
+.cv37 { 
+   font-feature-settings: "cv37" 1;
+  -moz-font-feature-settings: "cv37" 1;
+  -ms-font-feature-settings: "cv37" 1;
+  -webkit-font-feature-settings: "cv37" 1;
+}
+
+.cv37_2 { 
+   font-feature-settings: "cv37" 2;
+  -moz-font-feature-settings: "cv37" 2;
+  -ms-font-feature-settings: "cv37" 2;
+  -webkit-font-feature-settings: "cv37" 2;
+}
+
+/* enable character variant 38 */
+.cv38 { 
+   font-feature-settings: "cv38" 1;
+  -moz-font-feature-settings: "cv38" 1;
+  -ms-font-feature-settings: "cv38" 1;
+  -webkit-font-feature-settings: "cv38" 1;
+}
+
+.cv38_2 { 
+   font-feature-settings: "cv38" 2;
+  -moz-font-feature-settings: "cv38" 2;
+  -ms-font-feature-settings: "cv38" 2;
+  -webkit-font-feature-settings: "cv38" 2;
+}
+
+.cv38_3 { 
+   font-feature-settings: "cv38" 3;
+  -moz-font-feature-settings: "cv38" 3;
+  -ms-font-feature-settings: "cv38" 3;
+  -webkit-font-feature-settings: "cv38" 3;
+}
+
+/* enable character variant 39 */
+.cv39 { 
+   font-feature-settings: "cv39" 1;
+  -moz-font-feature-settings: "cv39" 1;
+  -ms-font-feature-settings: "cv39" 1;
+  -webkit-font-feature-settings: "cv39" 1;
+}
+
+.cv39_2 { 
+   font-feature-settings: "cv39" 2;
+  -moz-font-feature-settings: "cv39" 2;
+  -ms-font-feature-settings: "cv39" 2;
+  -webkit-font-feature-settings: "cv39" 2;
+}
+
+.cv39_3 { 
+   font-feature-settings: "cv39" 3;
+  -moz-font-feature-settings: "cv39" 3;
+  -ms-font-feature-settings: "cv39" 3;
+  -webkit-font-feature-settings: "cv39" 3;
+}
+
+/* enable character variant 40 */
+.cv40 { 
+   font-feature-settings: "cv40" 1;
+  -moz-font-feature-settings: "cv40" 1;
+  -ms-font-feature-settings: "cv40" 1;
+  -webkit-font-feature-settings: "cv40" 1;
+}
+
+.cv40_2 { 
+   font-feature-settings: "cv40" 2;
+  -moz-font-feature-settings: "cv40" 2;
+  -ms-font-feature-settings: "cv40" 2;
+  -webkit-font-feature-settings: "cv40" 2;
+}
+
+/* enable character variant 41 */
+.cv41 { 
+   font-feature-settings: "cv41" 1;
+  -moz-font-feature-settings: "cv41" 1;
+  -ms-font-feature-settings: "cv41" 1;
+  -webkit-font-feature-settings: "cv41" 1;
+}
+
+/* enable character variant 42 */
+.cv42 { 
+   font-feature-settings: "cv42" 1;
+  -moz-font-feature-settings: "cv42" 1;
+  -ms-font-feature-settings: "cv42" 1;
+  -webkit-font-feature-settings: "cv42" 1;
+}
+
+.cv42_2 { 
+   font-feature-settings: "cv42" 2;
+  -moz-font-feature-settings: "cv42" 2;
+  -ms-font-feature-settings: "cv42" 2;
+  -webkit-font-feature-settings: "cv42" 2;
+}
+
+/* enable character variant 43 */
+.cv43 { 
+   font-feature-settings: "cv43" 1;
+  -moz-font-feature-settings: "cv43" 1;
+  -ms-font-feature-settings: "cv43" 1;
+  -webkit-font-feature-settings: "cv43" 1;
+}
+
+/* enable character variant 44 */
+.cv44 { 
+   font-feature-settings: "cv44" 1;
+  -moz-font-feature-settings: "cv44" 1;
+  -ms-font-feature-settings: "cv44" 1;
+  -webkit-font-feature-settings: "cv44" 1;
+}
+
+/* enable character variant 45 */
+.cv45 { 
+   font-feature-settings: "cv45" 1;
+  -moz-font-feature-settings: "cv45" 1;
+  -ms-font-feature-settings: "cv45" 1;
+  -webkit-font-feature-settings: "cv45" 1;
+}
+
+/* enable character variant 46 */
+.cv46 { 
+   font-feature-settings: "cv46" 1;
+  -moz-font-feature-settings: "cv46" 1;
+  -ms-font-feature-settings: "cv46" 1;
+  -webkit-font-feature-settings: "cv46" 1;
+}
+
+/* enable character variant 47 */
+.cv47 { 
+   font-feature-settings: "cv47" 1;
+  -moz-font-feature-settings: "cv47" 1;
+  -ms-font-feature-settings: "cv47" 1;
+  -webkit-font-feature-settings: "cv47" 1;
+}
+
+.cv47_2 { 
+   font-feature-settings: "cv47" 2;
+  -moz-font-feature-settings: "cv47" 2;
+  -ms-font-feature-settings: "cv47" 2;
+  -webkit-font-feature-settings: "cv47" 2;
+}
+
+/* enable character variant 48 */
+.cv48 { 
+   font-feature-settings: "cv48" 1;
+  -moz-font-feature-settings: "cv48" 1;
+  -ms-font-feature-settings: "cv48" 1;
+  -webkit-font-feature-settings: "cv48" 1;
+}
+
+
+/* -- experimenting with styles instead of classes -- */
+
+/* enable character variant two */
+cv02 { 
+  -moz-font-feature-settings: "cv02" 1;
+  -ms-font-feature-settings: "cv02" 1;
+}
+
+/* enable stylistic set two */
+ss02 { 
+  -moz-font-feature-settings: "ss02" 1;
+  -ms-font-feature-settings: "ss02" 1;
+}
+

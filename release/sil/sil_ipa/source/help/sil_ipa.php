@@ -1,9 +1,19 @@
 <?php
   $pagename = 'IPA (SIL) Keyboard Help';
   $pagetitle = $pagename;
+  $pagestyle = <<<END
+    #section2 td p a {
+      text-decoration: none; color: blue
+    }
+    #section2 td h1 { font: bold 16pt Tahoma; color: #4444cc }
+    #section2 td h2 { font: bold 14pt Tahoma; color: #4444cc }
+    #section2 td h3 { font: bold 12pt Tahoma; color: #4444cc }
+    #section2 td span.key { font: bold 10pt Verdana; padding: 0 4px; border: solid 1px #aaaaaa; margin: 0 4px; }
+END;
   require_once('header.php');
 ?>
 
+<h2 style='margin-top:0in'>Keyboard Layout</h2>
 
 <p>The keyboard layout is described in terms of an IPA chart
 rather than a keyboard. This is because many base characters are typed as a
@@ -24,10 +34,10 @@ be used by other traditions such as Americanist, Chinese or Russian). </span></p
 	You may need to exit Keyman configuration before the default behavior changes. This method will change your default to <i>Before</i> and 
 	everytime you switch to this keyboard it will remain using the <i>Before</i> style until you change it back to <i>After</i> style using <b>Keyman configuration</b>.</li>
 <li><b>Using RALT hotkeys</b>: It is also possible to switch from <i>After</i> to <i>Before</i> using the RALT HYPHEN sequence (RALT+-). 
-	Switch back to <i>After</i> using the RALT EQUAL sequence (RALT+=). This method will change to <i>Before</i> during just this session of 
+	Switch back to <i>After</i> using the RALT EQUAL sequence (RALT+=) (RALT+SHIFT+= on a German keyboard). 
+	This method will change to <i>Before</i> during just this session of 
 	using the keyboard. After you stop using the keyboard it will return to <i>After</i>.</li>
 </ol>
-
 
 <h3>Consonants</h3>
 
@@ -1234,10 +1244,6 @@ be used by other traditions such as Americanist, Chinese or Russian). </span></p
 symbols appear in pairs, the bottom one represents a voiced consonant. Shaded
 areas denote articulations judged impossible.</span></p>
 
-</div>
-
-<div class=WordSection2>
-
 <h3>Other Consonants</h3>
 
 <p>In this section, if you turned on <b>Before</b> in <b>Keyboard options</b>, you will type the opposite sequence to what is in the below table. For example, this sequence "=p" would produce "ʘ".</p>
@@ -1456,7 +1462,7 @@ areas denote articulations judged impossible.</span></p>
   <td width=108 style='width:81.35pt;border-top:solid windowtext 1.5pt;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.5pt'>
-  <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif'>vd
+  <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif'>Vl
   alveolo-palatal fricative</span></p>
   </td>
  </tr>
@@ -1628,10 +1634,6 @@ areas denote articulations judged impossible.</span></p>
   </td>
  </tr>
 </table>
-
-</div>
-
-<div class=WordSection3>
 
 <h3>Vowels</h3>
 
@@ -2345,11 +2347,6 @@ areas denote articulations judged impossible.</span></p>
   </td>
  </tr>
 </table>
-
-</div>
-
-
-<div class=WordSection5>
 
 <h3>Other (non-IPA) Vowels</h3>
 
@@ -3428,6 +3425,34 @@ areas denote articulations judged impossible.</span></p>
  </tr>
 </table>
 
+<h3>Subscripts</h3>
+
+<p>In this section, if you turned on <b>Before</b> in <b>Keyboard options</b>, you will type the opposite sequence to what is in the below table. For example, this sequence "_3" would produce "₃"</p>
+<p>Use the "_" rota after the numeral to continue with <a href="#diacritics">Diacritics &amp; Suprasegmentals</a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=0
+ style='width:334.1pt;margin-left:3.0pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=121 style='width:91.1pt;border-top:solid;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=tableipanormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+  3.0pt;margin-left:0in;line-height:12.0pt'><span style='font-family:"Charis SIL";
+  color:blue'>₃</span></p>
+  </td>
+  <td width=192 style='width:91.1pt;border-top:solid;border-left:none windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=table><span style='font-size:9.0pt;font-family:"Courier New";
+  color:blue'>3_ (0-9)</span></p>
+  </td>
+  <td width=132 style='width:99.0pt;border-top:solid;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=table><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
+  color:blue'>subscript number</span></p>
+  </td>
+ </tr>
+</table>
+
 <h3>Other (non-IPA) Symbols</h3>
 
 <p>In this section, if you turned on <b>Before</b> in <b>Keyboard options</b>, you will type the opposite sequence to what is in the below table. For example, this sequence "&gt;c" would produce "ƈ".</p>
@@ -3753,12 +3778,9 @@ areas denote articulations judged impossible.</span></p>
  </tr>
 </table>
 
-</div>
 
+<h3 id="diacritics">Diacritics &amp; Suprasegmentals</h3>
 
-<div class=WordSection7>
-
-<h3>Diacritics &amp; Suprasegmentals</h3>
 
 <p>In this section the keystrokes are the same whether you turned on <b>Before</b> or not.</p>
 
@@ -4573,15 +4595,6 @@ areas denote articulations judged impossible.</span></p>
  </tr>
 </table>
 
-<b><i><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></i></b></div>
-
-<b><i><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><br
-clear=all style='page-break-before:auto'>
-</span></i></b>
-
-<div class=WordSection8>
 
 <h1>Appendix: IPA number chart</h1>
 
@@ -16957,9 +16970,7 @@ color:green'>Green denotes IPA characters unsupported by this keyboard.</span></
 
 <p>&nbsp;</p>
 
-</div>
 
-<div><br clear=all>
 
 <hr align=left size=1 width="33%">
 
@@ -17082,3 +17093,5 @@ color:black'> Typed between the characters. Thus </span><span style='font-family
 color:black'>.</span></p>
 
 </div>
+
+

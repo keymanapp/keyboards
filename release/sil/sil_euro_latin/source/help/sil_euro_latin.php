@@ -3,7 +3,7 @@
   $pagetitle = 'EuroLatin (SIL) Keyboard Help';
   require_once('header.php');
 ?>
-<p>The EuroLatin keyboard enables you to type in <b>all</b> European languages which use Latin-script, and most Latin-script languages from the rest of the world. The keyboard is designed to be used with any Latin hardware keyboard. It uses simple sequences of <code>symbol + character</code> to type letters and other characters not available on a standard keyboard.</p>
+<p>The EuroLatin keyboard enables you to type in <b>all</b> European languages which use Latin-script and many Latin-script languages from the rest of the world. However, the keyboard should not be expected to be enhanced for languages outside of Europe. The keyboard is designed to be used with any Latin hardware keyboard. It uses simple sequences of <code>symbol + character</code> to type letters and other characters not available on a standard keyboard.</p>
 
 <h1>Fonts</h1>
 
@@ -34,10 +34,19 @@
 <p>Type the characters in the bottom box to get the character in the top box.</p>
 <img src="prefix.png" />
 
-<div id='osk-phone-container'>
     <h2>Mobile Keyboard Layout</h2>
+    <p>
+    Variants of each letter may be found via longpress, while the letter in the top-right may be
+    typed by touching the key and then dragging down.
+    <br />
+    On the numeric layer, each key matches its position on the default layer. 
+    The second and third row's keys each offer a different key that may be typed using the same
+    touch-and-drag technique as described for the default layer. Curly brackets are available via longpress on the <kbd>(</kbd> and <kbd>)</kbd> keys.
+    <br />
+    Note that the keys have changed position compared to 2.x versions of the keyboard.
+    </p>
+
     <div id='osk-phone' data-states='default shift numeric symbol currency'></div>
-</div>
 
 <div style='clear: both'></div>
 
