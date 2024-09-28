@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+      <title>BJCreeUNI (east) Keyboard Options</title>
+    <style type='text/css'>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden
+        }
+        
+        #size {
+            padding: 12px;
+            border: solid 1px black;
+            background: #ffffff
+        }
+        
+        p {
+            font: 10pt Tahoma
+        }
+        
+        h1 {
+            font: bold 16pt Tahoma;
+            margin-top: 4px;
+        }
+        
+        #ok_button,
+        #cancel_button {
+            width: 100px
+        }
+        
+        #buttons {
+            text-align: right;
+        }
+        
+        #formopt {
+            padding: 2px 24px
+        }
+    </style>
+</head>
+
+<body>
+    <div id='size'>
+        <h1>BJCreeUNI (east) Keyboard Options</h1>
+        <form method='get' action='keyman:ok'>
+            <div id='formopt'>
+                <p>Select for characters to be composed or decomposed:</p>
+                <p>
+                    <input type='radio' value='' name='option_key' id='option_key_nfc' checked='checked' /><label for='option_key'>Composed: "wa" would produce ᐗ (U+1417)</label><br />
+                    <input type='radio' value='nfd' name='option_key' id='option_key_nfd' /><label for='option_key_nfd'>Decomposed: "wa" would produce ᐧᐊ (U+1427 U+140A)</label>
+                </p>
+            </div>
+            <p id='buttons'><input id='ok_button' type='submit' value='OK' /> <input id='cancel_button' type='reset' onclick='location.href="keyman:cancel"; return false;' value='Cancel' /></p>
+        </form>
+<p>Please close and reopen the keyboard before any changes takes effect.</p>
+    </div>
+
+    <script type='text/javascript'>
+        (function() {
+            var loc = window.location.search.substr(1).split('&');
+            for (var i = 0; i < loc.length; i++) {
+                var param = loc[i].split('=');
+                var key = decodeURIComponent(param[0]);
+                var val = decodeURIComponent(param[1]);
+                var elem = document.forms[0].elements[key];
+                if (elem) {
+                    if (typeof elem !== 'object' || typeof elem.length !== 'number') elem = [elem];
+
+                    for (var j = 0; j < elem.length; j++)
+                        if (elem[j].type == 'checkbox' || elem[j].type == 'radio')
+                            elem[j].checked = elem[j].value == val;
+                        else
+                            elem[j].value = val;
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

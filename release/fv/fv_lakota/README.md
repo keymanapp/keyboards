@@ -1,10 +1,6 @@
 Lak̇ot̄a keyboard
 ======================
 
-Copyright (c) 2015-2018 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.1
-
 Lak̇ot̄a keyboard layout for Unicode
 
 Links

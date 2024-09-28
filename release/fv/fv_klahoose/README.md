@@ -1,11 +1,7 @@
-Homalco-Klahoose-Sliammon keyboard
+Éy7á7juuthem keyboard
 ======================
 
-Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.2
-
-Homalco-Klahoose-Sliammon keyboard layout for Unicode
+Éy7á7juuthem keyboard layout for Unicode
 
 Links
 -----
@@ -17,7 +13,9 @@ Links
 Supported Platforms
 -------------------
 
- * Mobile
+* Desktop
+* Mobile
+* Tablet
 
 Todo
 ----

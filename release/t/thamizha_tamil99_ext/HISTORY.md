@@ -1,6 +1,10 @@
 த99-விரிவு | ta99 Extended Change History
 ====================
 
+2.2 (2024-09-04)
+----------------
+* Add tablet layout
+
 2.1 (2020-05-04)
 ----------------
 * Move source from internal repo to release

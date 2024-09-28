@@ -5,14 +5,15 @@ c    version 5,  15-May 02 (converted from Annapurna to Unicode Devanagri)
 store(&VERSION) "10.0"  	
 store(&NAME) "Devanagari Phonetic (SIL)"
 store(&BITMAP) 'sil_devanagari_phonetic.ico'
-store(&COPYRIGHT) '2002-2018 SIL International'
+store(&COPYRIGHT) '2002-2020 SIL International'
 
 
 c see http://www.unicode.org/charts/PDF/U0900.pdf for the unicode values.
 c ********************************************************************
-store(&TARGETS) 'windows macosx linux web'
 store(&VISUALKEYBOARD) 'sil_devanagari_phonetic.kvks'
-store(&KEYBOARDVERSION) '1.3'
+store(&KEYBOARDVERSION) '1.4'
+store(&LAYOUTFILE) 'sil_devanagari_phonetic.keyman-touch-layout'
+store(&TARGETS) 'any'
 
 begin UNICODE > use(mainU)
 
@@ -28,7 +29,7 @@ store(Consonants)    "k"    "K"    "g"    "G"    "M"    \
                      "c"    "C"    "j"    "J"    "V"    "q"     \
                      "Q"    "z"    "Z"    "N"    "t"    "T"     "d"    "D"    "n"    \
                      "p"    "P"    "b"    "B"    "m"    "y"     \
-                     "r"    "l"    "L"    "v"     "x"    "S"    "s"    "h" \
+                     "r"    "l"    "L"    "v"    "x"    "S"    "s"    "h" \
                      "+"    "="
 
 store(ConsonantsU)   U+0915 U+0916 U+0917 U+0918 U+0919 \
@@ -173,10 +174,11 @@ U+093E + [RALT K_5] > U+0949 c chandr + aakar is a special char
 U+090F + [RALT K_5] > U+090D c chandr + ekar is a special char
 U+0906 + [RALT K_5] > U+0911 c chandr + aakar independent is a special char
 
++ [RALT K_BKQUOTE] > U+0971 c for Chepang
 + [RALT K_H] 	 > U+093d  c avagraha
 + [RALT K_J] 	 > U+091c U+094d U+091e    c gya (rde change)
 + [RALT K_N] 	 > U+091e   c nYa
-
++ [RALT K_K]     > U+097D   c glottal
 + [RALT K_L] 	 > U+0943   c rikar
 U+0930 U+094d + "i"  > U+0943   c alternate way of keying rikar
 

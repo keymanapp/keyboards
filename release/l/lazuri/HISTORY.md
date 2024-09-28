@@ -1,6 +1,11 @@
 Lazca (Lazuri) Değişiklik Geçmişi
 ===============================
+2.3.2 (27 Oct 2020)
+------------------
+* Increment version number to force recompile of touch layout.
+
 2.3.1 (19 Mar 2019)
+------------------
 * Update language tag and description
 
 2.3 (26 Feb 2019)

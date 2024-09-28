@@ -1,16 +1,8 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
-
 <?php
   $pagename = 'Lao Unicode on Thai Keyboard Help';
   $pagetitle = 'Lao Unicode on Thai Keyboard Help';
   require_once('header.php');
 ?>
-
-<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
 
 <div class=Section1>
 
@@ -1533,7 +1525,3 @@ keyboard more accessible to Lao and Thai users.</span></p>
 
 
 </div>
-
-</body>
-
-</html>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>13.0.111.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Korean Morse (SIL)</Name>
+    <Copyright URL="">© 2006-2020 SIL International</Copyright>
+    <Author URL=""></Author>
+    <Version URL=""></Version>
+    <Description>The Korean Morse (SIL) keyboard creates Korean hangeul from jamo each
+time you press Spacebar. The Korean Morse (SIL) keyboard is built to
+type Korean using the Morse transliteration system, also called SKATS
+(Standard Korean Alphabet Transliteration System). The Morse system is
+designed to make Latin-Korean transliteration 100% unambiguous. The
+Morse system is not based on the pronunciation of Korean, but is an
+historical system created by pairing each Korean jamo with the Latin
+letter that uses the same Morse code value. The system is used among
+government and military organisations for whom data accuracy is
+essential. For an alternative accurate transliteration system, based on
+Korean pronunciation, use the Korean KORDA keyboards.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\sil_korean_morse.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>jamo_combine.dll</Name>
+      <Description>File jamo_combine.dll</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.dll</FileType>
+    </File>
+    <File>
+      <Name>jamo_combine.x64.dll</Name>
+      <Description>File jamo_combine.x64.dll</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.dll</FileType>
+    </File>
+    <File>
+      <Name>welcome\style.css</Name>
+      <Description>File style.css</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.css</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_korean_morse.kvk</Name>
+      <Description>File sil_korean_morse.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Korean Morse (SIL)</Name>
+      <ID>sil_korean_morse</ID>
+      <Version>2.0</Version>
+      <Languages>
+        <Language ID="ko">Korean</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="korean_morse" Relationship="deprecates" />
+  </RelatedPackages>
+</Package>

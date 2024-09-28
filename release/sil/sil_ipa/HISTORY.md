@@ -1,6 +1,27 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+1.8.7 (2024-03-05)
+------------------
+* Add subscript numerals to underscore rota
+
+1.8.6 (2021-07-01)
+----------------
+* Updated to use new version of Charis SIL
+
+1.8.5 (20 May 2021)
+-------------------
+* Resolves conflict with `{` key with German hardware keyboard
+
+1.8.4 (27 Oct 2020)
+-------------------
+* Increment version number to force recompile of touch layout.
+
+1.8.3 (15 Sept 2020)
+-------------------
+* Updated documentation to remove underlined links
+* Updated documentation for vl alveolo-palatal fricative (not vd)
+
 1.8.2 (27 Jul 2020)
 -------------------
 * Updated documentation to correct Africanist upstep and downstep. Not behavior changes.

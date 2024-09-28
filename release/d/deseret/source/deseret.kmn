@@ -1,0 +1,144 @@
+c Keyboard created by KMDECOMP
+c
+c Meta details: Registered=1; Version=0
+c               Flags=0; HotKey=0
+c
+
+c store(&21) "Created with Tavultesoft Keyman Developer version 7.0.243.0" 
+c store(&22) "0" 
+c store(&23) "Tavultesoft Keyman" 
+store(&VERSION) "14.0" 
+store(&NAME) "Deseret" 
+store(&COPYRIGHT) "© Samuel R Boylan Jr" 
+store(&BITMAP) 'deseret.ico'
+store(&VISUALKEYBOARD) 'deseret.kvks'
+store(&KEYBOARDVERSION) '1.2'
+c store(&16) "11" 
+store(nul) "qxQX"
+
+store(psmall) "abcdefghijklmnoprstuvwyz" 
+store(dsmall) "𐐰𐐺𐐽𐐼𐐯𐑁𐑀𐐸𐐮𐐾𐐿𐑊𐑋𐑌𐐲𐐹𐑉𐑅𐐻𐐳𐑂𐐶𐐷𐑆" 
+store(ps) "aeghiouwy" 
+store(ds) "𐐰𐐯𐑀𐐸𐐮𐐲𐐳𐐶𐐷" 
+store(pcap) "ABCDEFGHIJKLMNOPRSTUVWYZ" 
+store(dcap) "𐐈𐐒𐐕𐐔𐐇𐐙𐐘𐐐𐐆𐐖𐐗𐐢𐐣𐐤𐐊𐐑𐐡𐐝𐐓𐐋𐐚𐐎𐐏𐐞" 
+store(pc) "AEGHIOUWY" 
+store(dc) "𐐈𐐇𐐘𐐐𐐆𐐊𐐋𐐎𐐏" 
+store(p) "abcdefghijklmnoprstuvwyzABCDEFGHIJKLMNOPRSTUVWYZ" 
+store(d) "𐐰𐐺𐐽𐐼𐐯𐑁𐑀𐐸𐐮𐐾𐐿𐑊𐑋𐑌𐐲𐐹𐑉𐑅𐐻𐐳𐑂𐐶𐐷𐑆𐐈𐐒𐐕𐐔𐐇𐐙𐐘𐐐𐐆𐐖𐐗𐐢𐐣𐐤𐐊𐐑𐐡𐐝𐐓𐐋𐐚𐐎𐐏𐐞" 
+store(sp) "aeghiouwyAEGHIOUWY" 
+store(sd) "𐐰𐐯𐑀𐐸𐐮𐐲𐐳𐐶𐐷𐐈𐐇𐐘𐐐𐐆𐐊𐐋𐐎𐐏" 
+store(psw) "𐐰𐐯𐐲" 
+store(pcw) "𐐈𐐇𐐊" 
+store(dsw) "𐐫𐑏𐐵" 
+store(dcw) "𐐃𐐧𐐍" 
+store(psu) "𐐰𐐯𐐲" 
+store(pcu) "𐐈𐐇𐐊" 
+store(dsu) "𐐱𐑏𐐵" 
+store(dcu) "𐐉𐐧𐐍" 
+store(psh) "𐐼𐐹𐑅𐐻𐑆" 
+store(pch) "𐐔𐐑𐐝𐐓𐐞" 
+store(dsh) "𐑄𐑁𐑇𐑃𐑈" 
+store(dch) "𐐜𐐙𐐟𐐛𐐠" 
+c store(&16) "9" 
+c store(&20) "7.0.243.0" 
+store(&TARGETS) 'any'
+store(&LAYOUTFILE) 'deseret.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+ + any(nul) > nul
+  "𐐈"  + "A" > "𐐂"  c line(42)
+  "\"  + "A" > "𐐈"  c line(62)
+   + "A" > "𐐈"  c line(63)
+   + "B" > "𐐒"  c line(63)
+   + "C" > "𐐕"  c line(63)
+   + "D" > "𐐔"  c line(63)
+  "𐐇"  + "E" > "𐐁"  c line(40)
+  "𐐆"  + "E" > "𐐌"  c line(48)
+  "\"  + "E" > "𐐇"  c line(62)
+   + "E" > "𐐇"  c line(63)
+   + "F" > "𐐙"  c line(63)
+  "𐐤"  + "G" > "𐐥"  c line(54)
+  "\"  + "G" > "𐐘"  c line(62)
+   + "G" > "𐐘"  c line(63)
+  any(pch)  + "H" > index(dch, 1)  c line(61)
+  "\"  + "H" > "𐐐"  c line(62)
+   + "H" > "𐐐"  c line(63)
+  "𐐆"  + "I" > "𐐀"  c line(38)
+  "𐐊"  + "I" > "𐐦"  c line(50)
+  "\"  + "I" > "𐐆"  c line(62)
+   + "I" > "𐐆"  c line(63)
+   + "J" > "𐐖"  c line(63)
+   + "K" > "𐐗"  c line(63)
+   + "L" > "𐐢"  c line(63)
+   + "M" > "𐐣"  c line(63)
+   + "N" > "𐐤"  c line(63)
+  "𐐊"  + "O" > "𐐄"  c line(44)
+  "\"  + "O" > "𐐊"  c line(62)
+   + "O" > "𐐊"  c line(63)
+   + "P" > "𐐑"  c line(63)
+   + "R" > "𐐡"  c line(63)
+   + "S" > "𐐝"  c line(63)
+   + "T" > "𐐓"  c line(63)
+  "𐐋"  + "U" > "𐐅"  c line(46)
+  any(pcu)  + "U" > index(dcu, 1)  c line(59)
+  "\"  + "U" > "𐐋"  c line(62)
+   + "U" > "𐐋"  c line(63)
+   + "V" > "𐐚"  c line(63)
+  any(pcw)  + "W" > index(dcw, 1)  c line(57)
+  "\"  + "W" > "𐐎"  c line(62)
+   + "W" > "𐐎"  c line(63)
+  "𐐊"  + "Y" > "𐐦"  c line(52)
+  "\"  + "Y" > "𐐏"  c line(62)
+   + "Y" > "𐐏"  c line(63)
+   + "Z" > "𐐞"  c line(63)
+  "𐐰"  + "a" > "𐐪"  c line(41)
+  "\"  + "a" > "𐐰"  c line(62)
+   + "a" > "𐐰"  c line(63)
+   + "b" > "𐐺"  c line(63)
+   + "c" > "𐐽"  c line(63)
+   + "d" > "𐐼"  c line(63)
+  "𐐯"  + "e" > "𐐩"  c line(39)
+  "𐐮"  + "e" > "𐐴"  c line(47)
+  "\"  + "e" > "𐐯"  c line(62)
+   + "e" > "𐐯"  c line(63)
+   + "f" > "𐑁"  c line(63)
+  "𐑌"  + "g" > "𐑍"  c line(53)
+  "\"  + "g" > "𐑀"  c line(62)
+   + "g" > "𐑀"  c line(63)
+  any(psh)  + "h" > index(dsh, 1)  c line(60)
+  "\"  + "h" > "𐐸"  c line(62)
+   + "h" > "𐐸"  c line(63)
+  "𐐮"  + "i" > "𐐨"  c line(37)
+  "𐐲"  + "i" > "𐑎"  c line(49)
+  "\"  + "i" > "𐐮"  c line(62)
+   + "i" > "𐐮"  c line(63)
+   + "j" > "𐐾"  c line(63)
+   + "k" > "𐐿"  c line(63)
+   + "l" > "𐑊"  c line(63)
+   + "m" > "𐑋"  c line(63)
+   + "n" > "𐑌"  c line(63)
+  "𐐲"  + "o" > "𐐬"  c line(43)
+  "\"  + "o" > "𐐲"  c line(62)
+   + "o" > "𐐲"  c line(63)
+   + "p" > "𐐹"  c line(63)
+   + "r" > "𐑉"  c line(63)
+   + "s" > "𐑅"  c line(63)
+   + "t" > "𐐻"  c line(63)
+  "𐐳"  + "u" > "𐐭"  c line(45)
+  any(psu)  + "u" > index(dsu, 1)  c line(58)
+  "\"  + "u" > "𐐳"  c line(62)
+   + "u" > "𐐳"  c line(63)
+   + "v" > "𐑂"  c line(63)
+  any(psw)  + "w" > index(dsw, 1)  c line(56)
+  "\"  + "w" > "𐐶"  c line(62)
+   + "w" > "𐐶"  c line(63)
+  "𐐲"  + "y" > "𐑎"  c line(51)
+  "\"  + "y" > "𐐷"  c line(62)
+   + "y" > "𐐷"  c line(63)
+   + "z" > "𐑆"  c line(63)
+
+c EOF
+

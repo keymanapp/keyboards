@@ -12,8 +12,8 @@ store(&NAME) 'Hebrew (Standard) Basic'
 store(&VISUALKEYBOARD) 'basic_kbdhebl3.kvks'
 store(&BITMAP) 'basic_kbdhebl3.ico'
 store(&LAYOUTFILE) 'basic_kbdhebl3.keyman-touch-layout'
-store(&COPYRIGHT) '© 2019 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&KMW_RTL) '1'
 
@@ -25,7 +25,7 @@ group(main) using keys
 
 + [K_0] > U+0030
 + [SHIFT K_0] > U+0028
-+ [RALT K_0] > U+200f
++ [RALT K_0] > U+200f c RLM
 
 + [K_1] > U+0031
 + [SHIFT K_1] > U+0021
@@ -59,7 +59,7 @@ group(main) using keys
 
 + [K_9] > U+0039
 + [SHIFT K_9] > U+0029
-+ [RALT K_9] > U+200e
++ [RALT K_9] > U+200e c LRM
 
 + [NCAPS K_A] > U+05e9
 + [CAPS K_A] > U+0041
@@ -78,7 +78,7 @@ group(main) using keys
 + [NCAPS SHIFT K_C] > U+0043
 + [CAPS SHIFT K_C] > U+05d1
 + [NCAPS RALT K_C] > U+05b1
-+ [NCAPS SHIFT RALT K_C] > U+034f
++ [NCAPS SHIFT RALT K_C] > U+034f c CGJ
 
 + [NCAPS K_D] > U+05d2
 + [CAPS K_D] > U+0044
@@ -118,7 +118,7 @@ group(main) using keys
 + [NCAPS SHIFT K_J] > U+004a
 + [CAPS SHIFT K_J] > U+05d7
 + [NCAPS RALT K_J] > U+05b4
-+ [NCAPS SHIFT RALT K_J] > U+200d
++ [NCAPS SHIFT RALT K_J] > U+200d c ZWJ
 
 + [NCAPS K_K] > U+05dc
 + [CAPS K_K] > U+004b
@@ -142,7 +142,7 @@ group(main) using keys
 + [CAPS K_N] > U+004e
 + [NCAPS SHIFT K_N] > U+004e
 + [CAPS SHIFT K_N] > U+05de
-+ [NCAPS SHIFT RALT K_N] > U+200c
++ [NCAPS SHIFT RALT K_N] > U+200c c ZWNJ
 
 + [NCAPS K_O] > U+05dd
 + [CAPS K_O] > U+004f

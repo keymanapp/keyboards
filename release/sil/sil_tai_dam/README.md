@@ -1,10 +1,7 @@
 Tai Dam (SIL) Keyboard
 =====================
 
-Copyright (C) 2007-2020 SIL International
-
-Version 2.2.2
-
+Copyright (C) SIL International
 
 __DESCRIPTION__
 The Tai Dam (SIL) keyboard is designed for typing Tai Dam text using the Tai Viet script. The layout is based on the US English keyboard, with each Tai Viet character is assigned to the key with the nearest equivalent US English letter.
@@ -18,3 +15,4 @@ Supported Platforms
  * Linux
  * macOS
  * Web
+ * Mobile

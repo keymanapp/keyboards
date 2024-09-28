@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,8 +20,11 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tai Dam Lao (SIL)</Name>
-    <Copyright URL="">© 2016-2020 SIL International</Copyright>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL="mailto:support@keyman.com">Jim Brase</Author>
+    <Description URL="">The Tai Dam Lao (SIL) keyboard is designed for typing Tai Dam language
+text using the Lao script. The layout is mapped phonetically onto a US
+English keyboard.</Description>
   </Info>
   <Files>
     <File>
@@ -136,12 +141,26 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\sil_tai_dam_lao.js</Name>
+      <Description>File sil_tai_dam_lao.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tai Dam Lao (SIL)</Name>
       <ID>sil_tai_dam_lao</ID>
-      <Version></Version>
+      <Version>2.1</Version>
+      <OSKFont>..\..\..\shared\fonts\laoo\saysettha\Saysettha MX.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\laoo\saysettha\Saysettha MX.ttf</DisplayFont>
       <Languages>
         <Language ID="blt-Laoo">Tai Dam</Language>
       </Languages>

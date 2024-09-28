@@ -1,11 +1,10 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.1'
+store(&KEYBOARDVERSION) '10.0'
 store(&TARGETS) 'any'
-store(&COPYRIGHT) '© 2008-2018 FirstVoices, SIL International. Portions © 2006 Chris Harvey.'
-store(&NAME) "X̄a'ʼislak̓ala"
+store(&COPYRIGHT) '© 2008-2021 FirstVoices, SIL International. Portions © 2006 Chris Harvey.'
+store(&NAME) 'X̄aʼislak̓ala'
 store(&VISUALKEYBOARD) 'fv_xaislakala.kvks'
 store(&BITMAP) 'fv_xaislakala.ico'
-store(&KMW_HELPFILE) 'fv_xaislakala.htm'
 store(&LAYOUTFILE) 'fv_xaislakala.keyman-touch-layout'
 
 begin Unicode > use(main)
@@ -21,26 +20,6 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_W_0] > 'W̓' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
-'p' + [SHIFT T_R] > 'p̓'
-'c' + [SHIFT T_R] > 'c̓'
-'q' + [SHIFT T_R] > 'q̓'
-'W' + [SHIFT T_R] > 'W̓'
-'K' + [SHIFT T_R] > 'K̓'
-'Y' + [SHIFT T_R] > 'Y̓'
-'t' + [SHIFT T_R] > 't̓'
-'L' + [SHIFT T_R] > 'L̓'
-'M' + [SHIFT T_R] > 'M̓'
-'w' + [SHIFT T_R] > 'w̓'
-'N' + [SHIFT T_R] > 'N̓'
-'k' + [SHIFT T_R] > 'k̓'
-'P' + [SHIFT T_R] > 'P̓'
-'y' + [SHIFT T_R] > 'y̓'
-'C' + [SHIFT T_R] > 'C̓'
-'Q' + [SHIFT T_R] > 'Q̓'
-'l' + [SHIFT T_R] > 'l̓'
-'m' + [SHIFT T_R] > 'm̓'
-'n' + [SHIFT T_R] > 'n̓'
-'T' + [SHIFT T_R] > 'T̓'
 + [SHIFT T_T_0] > 'T̓' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y_0] > 'Y̓' layer('default')
@@ -69,10 +48,6 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C_0] > 'C̓' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
-'x' + [SHIFT T_V] > 'x̄'
-'g' + [SHIFT T_V] > 'ḡ'
-'X' + [SHIFT T_V] > 'X̄'
-'G' + [SHIFT T_V] > 'Ḡ'
 + [SHIFT T_B] > 'B' layer('default')
 + [SHIFT T_N_0] > 'N̓' layer('default')
 + [SHIFT T_N] > 'N' layer('default')
@@ -83,26 +58,6 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_W_0] > 'w̓'
 + [T_W] > 'w'
 + [T_E] > 'e'
-'p' + [T_R] > 'p̓'
-'c' + [T_R] > 'c̓'
-'q' + [T_R] > 'q̓'
-'W' + [T_R] > 'W̓'
-'K' + [T_R] > 'K̓'
-'Y' + [T_R] > 'Y̓'
-'t' + [T_R] > 't̓'
-'L' + [T_R] > 'L̓'
-'M' + [T_R] > 'M̓'
-'w' + [T_R] > 'w̓'
-'N' + [T_R] > 'N̓'
-'k' + [T_R] > 'k̓'
-'P' + [T_R] > 'P̓'
-'y' + [T_R] > 'y̓'
-'C' + [T_R] > 'C̓'
-'Q' + [T_R] > 'Q̓'
-'l' + [T_R] > 'l̓'
-'m' + [T_R] > 'm̓'
-'n' + [T_R] > 'n̓'
-'T' + [T_R] > 'T̓'
 + [T_T_0] > 't̓'
 + [T_T] > 't'
 + [T_Y_0] > 'y̓'
@@ -131,19 +86,23 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_X] > 'x'
 + [T_C_0] > 'c̓'
 + [T_C] > 'c'
-'x' + [T_V] > 'x̄'
-'g' + [T_V] > 'ḡ'
-'X' + [T_V] > 'X̄'
-'G' + [T_V] > 'Ḡ'
 + [T_B] > 'b'
 + [T_N_0] > 'n̓'
 + [T_N] > 'n'
 + [T_M_0] > 'm̓'
 + [T_M] > 'm'
 
+store(NeedsComApos) 'cklmnpqtwyCKLMNPQTWY' c ComApos -> Combining Apostrophe
+store(ComAposKeys) [SHIFT T_R] [T_R]
+store(NeedsMac) 'xgXG' c Mac -> Macron
+store(MacKeys) [SHIFT T_V] [T_V]
+
+any(NeedsComApos) + any(ComAposKeys) > index(NeedsComApos,1) U+0313
+any(NeedsMac) + any(MacKeys) > index(NeedsMac,1) U+0304
+   
 c --- END OF TOUCH LAYOUT RULES ---
 
-   
+
 c constraints
  
 
@@ -164,6 +123,7 @@ c original punctuation
 + [SHIFT RALT K_COLON] > ':'
 + [RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
++ [SHIFT RALT K_SLASH] > '/' c alternate way to type Slash in Google Workspace
 + [RALT K_QUOTE] > U+0027
 + [RALT K_BKSLASH] > '\'
 + [SHIFT RALT K_BKSLASH] > '|'
@@ -208,8 +168,6 @@ c any(overaccent) any(underaccent) > context(2) context(1)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)
 
 
 

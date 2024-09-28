@@ -1,6 +1,6 @@
 <?php 
   $pagename = 'Busa Keyboard Help';
-  $pagetitle = 'Busa Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <style type="text/css">

@@ -1,0 +1,127 @@
+﻿c =====================Begin Identity Section===================================================
+c 
+c The Geʾez Frontier Foundation's Harege Fidelat keyboard for touch devices.
+c Compliant with Unicode 14 and later.
+c 
+c Keyman        :  http://www.keyman.com/
+c Documentation :  http://help.keyman.com/keyboard/gff_harege_fidelat
+c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_harege_fidelat
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
+c 
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
+c 
+store(&VERSION) '15.0'
+store(&COPYRIGHT) '© 2022-2023 Geʾez Frontier Foundation'
+store(&Message) "This is a language neutral touch (only) keyboard for mobile devices.  The keyboard provides all Ethiopic letters in active use on a single layer in circular, semi-clockwise orientation."
+store(&CapsAlwaysOff) '1'
+store(&LAYOUTFILE) 'gff_harege_fidelat.keyman-touch-layout'
+store(&KMW_EMBEDCSS) 'gff_harege_fidelat.css'
+c 
+c =====================End Identity Section=====================================================
+
+c =====================Begin Data Section=======================================================
+
+c The remainder of this document is formatted with a fixed width font.
+
+c ---------------------Maps of Syllabic Forms---------------------------------------------------
+c the following is universal (language neutral) these mappings can be overridden by
+c language specific mappings
+c
+  store(ግዕዝ)  'ሀለሐ𞟠መሠረሰሸቀቐበቨተቸኀነኘአከኸወዐዘዠየደጀገጘጠጨጰጸፀፈፐ'
+  store(ካዕብ)  'ሁሉሑ𞟡ሙሡሩሱሹቁቑቡቩቱቹኁኑኙኡኩኹዉዑዙዡዩዱጁጉጙጡጩጱጹፁፉፑ'
+  store(ሣልስ)  'ሂሊሒ𞟢ሚሢሪሲሺቂቒቢቪቲቺኂኒኚኢኪኺዊዒዚዢዪዲጂጊጚጢጪጲጺፂፊፒ'
+  store(ራብዕ)  'ሃላሓ𞟣ማሣራሳሻቃቓባቫታቻኃናኛኣካኻዋዓዛዣያዳጃጋጛጣጫጳጻፃፋፓ'
+  store(ኃምስ)  'ሄሌሔ𞟤ሜሤሬሴሼቄቔቤቬቴቼኄኔኜኤኬኼዌዔዜዤዬዴጄጌጜጤጬጴጼፄፌፔ'
+  store(ሳድስ)  'ህልሕ𞟥ምሥርስሽቅቕብቭትችኅንኝእክኽውዕዝዥይድጅግጝጥጭጵጽፅፍፕ'
+  store(ሳብዕ)  'ሆሎሖ𞟦ሞሦሮሶሾቆቖቦቮቶቾኆኖኞኦኮኾዎዖዞዦዮዶጆጎጞጦጮጶጾፆፎፖ'
+
+c QWERTY keymappings
+  store(keys)  'hlH_m_rsxqQbvtc_nN_kKw_zZydjgGTCPS_fp'
+
+c ---------------------End Maps of Syllabic Forms-----------------------------------------------
+
+c ---------------------Maps for Vowels----------------------------------------------------------
+c  store(loneVowelKeys)  [T_ሳድስ]'aAuUiIeEoO'[T_ኃምስ]
+c  store(loneVowelEthio) 'አአአኡኡኢኢእእኦኦኤ'
+c ---------------------End Vowel Maps-----------------------------------------------------------
+
+c --------------------Maps for Labiovelars------------------------------------------------------
+  store(ሳድስ፡መደበኛ)     'ህልሕምሥርስሽቅቕብቭትችኅንኝእክኽዝዥድጅግጝጥጭጵጽፍፕ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ኋሏሗሟሧሯሷሿቋቛቧቯቷቿኋኗኟኧኳዃዟዧዷጇጓጟጧጯጷጿፏፗ'
+
+c 'hkqQgG'
+  store(ዘመደ፡ሳድስ፡መደበኛ) 'ሕምብቅቕኅክኽግጝፍፕ'
+  store(ዘመደ፡ግዕዝ) '𞟨ᎀᎄቈቘኈኰዀጐⶓᎈᎌ'
+  store(ዘመደ፡ካዕብ) '𞟫ᎃᎇቍቝኍኵዅጕⶖᎋᎏ'
+  store(ዘመደ፡ሣልስ) '𞟩𞟭𞟳ቊቚኊኲዂጒⶔ𞟻𞟽'
+  store(ዘመደ፡ኃምስ) '𞟪𞟮𞟴ቌቜኌኴዄጔⶕ𞟼𞟾'
+
+  store(ዘመደ፡ሳድስ፡መደበኛ፡ጉራጌ) 'ቅክግ'
+  store(ዘመደ፡ሣልስ፡ጉራጌ) '𞟰𞟵𞟸'
+  store(ዘመደ፡ኃምስ፡ጉራጌ) '𞟱𞟶𞟹'
+  store(ዘመደ፡ካዕብ፡ጉራጌ) '𞟲𞟷𞟺'
+c ---------------------End Labiovelars----------------------------------------------------------
+
+c =====================End Data Section=========================================================
+
+c =====================Begin Functional Section=================================================
+c 
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'mobile'
+store(&NAME) 'ሐረገ ፊደላት'
+
+  begin Unicode > use(main)
+  group(main) using keys
+
+c ---------------------Input of Special Symbols-------------------------------------------------
+c 
+c The input section here is for rules that must precede other rules
+c 
+  + any(keys)     > index(ሳድስ,1)
+c ---------------------End Input of Special Symbols---------------------------------------------
+
+c ---------------------Input of Basic Syllables-------------------------------------------------
+  + [T_1220] > 'ሥ'
+  + [T_1280] > 'ኅ'
+  + [T_12A0] > 'እ'
+  + [T_12D0] > 'ዕ'
+  + [T_1340] > 'ፅ'
+  + [T_1E7E0] > '𞟥'
+  any(ሳድስ) + [T_ግዕዝ] > index(ግዕዝ,1)
+  any(ሳድስ) + [T_ካዕብ] > index(ካዕብ,1)
+  any(ሳድስ) + [T_ሣልስ] > index(ሣልስ,1)
+  any(ሳድስ) + [T_ራብዕ] > index(ራብዕ,1)
+  any(ሳድስ) + [T_ኃምስ] > index(ኃምስ,1)
+  any(ሳድስ) + [T_ሳድስ] > index(ሳድስ,1)
+  any(ሳድስ) + [T_ሳብዕ] > index(ሳብዕ,1)
+c ---------------------End Input of Basic Syllables---------------------------------------------
+
+c ---------------------Input of Labiovelars-----------------------------------------------------
+  any(ሳድስ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ዘመደ፡ሳድስ፡መደበኛ) + [T_WWE] > index(ዘመደ፡ግዕዝ,1)
+  any(ዘመደ፡ሳድስ፡መደበኛ) + [T_WWU] > index(ዘመደ፡ካዕብ,1)
+  any(ዘመደ፡ሳድስ፡መደበኛ) + [T_WWI] > index(ዘመደ፡ሣልስ,1)
+  any(ዘመደ፡ሳድስ፡መደበኛ) + [T_WWEE] > index(ዘመደ፡ኃምስ,1)
+
+  any(ዘመደ፡ሳድስ፡መደበኛ፡ጉራጌ) + [T_WWU_GURAGE]  > index(ዘመደ፡ካዕብ፡ጉራጌ,1)
+  any(ዘመደ፡ሳድስ፡መደበኛ፡ጉራጌ) + [T_WWI_GURAGE]  > index(ዘመደ፡ሣልስ፡ጉራጌ,1)
+  any(ዘመደ፡ሳድስ፡መደበኛ፡ጉራጌ) + [T_WWEE_GURAGE] > index(ዘመደ፡ኃምስ፡ጉራጌ,1)
+c ---------------------End Input of Labiovelars-------------------------------------------------
+c
+c Ethiopic combining marks for vowel and consonant stress.
+c
+c The following can happen from the touch keyboards፡
+c
+U+135E + [U_135E] > U+135F c 1 + 1 > 2
+U+135F + [U_135E] > U+135D c 2 + 1 > 3
+c
+c warn but don't combine:
+c
+U+135D + [U_135E] > U+135D beep  c 3 + 1
+
+
+  + [T_THOUSAND] > '፲፻'
+
+c =====================End Functional Section===================================================

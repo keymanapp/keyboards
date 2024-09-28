@@ -1,6 +1,6 @@
 <?php 
-  $pagename = 'Nuuchahnulth Unicode Keyboard Help';
-  $pagetitle = 'Nuuchahnulth Unicode Keyboard Help';
+  $pagename = 'Nuuchahnulth Unicode (deprecated) Keyboard Help';
+  $pagetitle = 'Nuuchahnulth Unicode (deprecated) Keyboard Help';
   $pagestyle = <<<END
 <!--
  /* Font Definitions */

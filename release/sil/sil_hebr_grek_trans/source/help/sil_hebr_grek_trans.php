@@ -1,6 +1,6 @@
 <?php
-  $pagename = "Hebrew and Greek Transliteration (SIL) keyboard";
-  $pagetitle = "Hebrew and Greek Transliteration (SIL) keyboard layout";
+  $pagename = "Hebrew and Greek Transliteration (SIL) keyboard Help";
+  $pagetitle = $pagename;
   $pagestyle = <<<END
   h1,h2,h3,p {font-family: Charis SIL;}
   p.footnote {font-family: Charis SIL;font-size: small;}
@@ -15,6 +15,7 @@ END;
 
 ?>
     <p>Hebrew and Greek Transliteration Unicode keyboard for use with any Unicode Windows fonts.</p>
+
 <h2>Scope and limitations:</h2>
 
 <h3>Greek:</h3>
@@ -29,15 +30,18 @@ since some of the upper case characters are need for the Hebrew.</p>
 <p>This keyboard generates all the combinations of base character 
 plus diacritic(s) need for the SIL Hebrew transliteration.</p>
 
-<h1>Layout</h1>
-    <h2>Default (unshifted)</h2>
-    <p><img src="sil_hebr_grek_trans_U_.png" alt="Hebrew and Greek Transliteration (SIL) Keyboard: default (unshifted)"></p>
-    <h2>Shift</h2>
-    <p><img src="sil_hebr_grek_trans_U_S.png" alt="Hebrew and Greek Transliteration (SIL) Keyboard: shift"></p>
-    <h2>ALT (unshifted)</h2>
-    <p><img src="sil_hebr_grek_trans_U_A.png" alt="Hebrew and Greek Transliteration (SIL) Keyboard: ralt"></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt'>
+</div>
 
-<h1>Keyboard chart for special characters</h1>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+
+<div id='osk-tablet' data-states='default shift'>
+</div>
+
+<h2>Keyboard chart for special characters</h2>
 <table style="border: medium none ; border-collapse: collapse;" border="1" cellpadding="0" cellspacing="0">
   <tbody>
     <tr>

@@ -1,12 +1,11 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) "9.1"
+store(&KEYBOARDVERSION) '9.2.1'
 store(&TARGETS) "any"
 c store(&ETHNOLOGUECODE) "sec"
-store(&COPYRIGHT) "(c) 2008-2018 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey"
+store(&COPYRIGHT) '(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey'
 store(&NAME) 'Shashishalhem'
 store(&BITMAP) 'fv_shashishalhem.ico'
 store(&VISUALKEYBOARD) 'fv_shashishalhem.kvks'
-store(&KMW_HELPFILE) 'fv_shashishalhem_kmw_help.htm'
 
 begin Unicode > use(main)
 
@@ -21,13 +20,17 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [SHIFT T_Q_0] > '!' layer('default')
 + [SHIFT T_Q] > '?' layer('default')
 + [SHIFT T_W] > 'W' layer('default')
++ [SHIFT T_E_0] > 'É' layer('default')
 + [SHIFT T_E] > 'E' layer('default')
 + [SHIFT T_R] > '-' layer('default')
 + [SHIFT T_T] > 'T' layer('default')
 + [SHIFT T_Y] > 'Y' layer('default')
++ [SHIFT T_U_0] > 'Ú' layer('default')
 + [SHIFT T_U] > 'U' layer('default')
++ [SHIFT T_I_0] > 'Í' layer('default')
 + [SHIFT T_I] > 'I' layer('default')
 + [SHIFT T_O] > 'P' layer('default')
++ [SHIFT T_A_0] > 'Á' layer('default')
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'ʔ' layer('default')
@@ -35,8 +38,9 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [SHIFT T_G] > 'Ḵ' layer('default')
 + [SHIFT T_H] > 'K' layer('default')
 + [SHIFT T_J] > 'L' layer('default')
-+ [SHIFT T_K_0] > '"' layer('default')
-+ [SHIFT T_K] > "'" layer('default')
++ [SHIFT T_K_1] > '"' layer('default')
++ [SHIFT T_K_0] > "'" layer('default')
++ [SHIFT T_K] > "’" layer('default')
 + [SHIFT T_Z] > 'X̱' layer('default')
 + [SHIFT T_X] > 'X' layer('default')
 + [SHIFT T_C] > 'C' layer('default')
@@ -47,13 +51,17 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [T_Q_0] > '!'
 + [T_Q] > '?'
 + [T_W] > 'w'
++ [T_E_0] > 'é'
 + [T_E] > 'e'
 + [T_R] > '-'
 + [T_T] > 't'
 + [T_Y] > 'y'
++ [T_U_0] > 'ú'
 + [T_U] > 'u'
++ [T_I_0] > 'í'
 + [T_I] > 'i'
 + [T_O] > 'p'
++ [T_A_0] > 'á'
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'ʔ'
@@ -61,8 +69,9 @@ store(&LAYOUTFILE) 'fv_shashishalhem.keyman-touch-layout'
 + [T_G] > 'ḵ'
 + [T_H] > 'k'
 + [T_J] > 'l'
-+ [T_K_0] > '"'
-+ [T_K] > "'"
++ [T_K_1] > '"'
++ [T_K_0] > "'"
++ [T_K] > "’"
 + [T_Z] > 'x̱'
 + [T_X] > 'x'
 + [T_C] > 'c'
@@ -75,13 +84,18 @@ c --- END OF TOUCH LAYOUT RULES ---
 
 c constraints
 
-store(overaccent)  U+0301 
-store(overaccentkey) ";"
+store(plainVowels) "aeiouAEIOU"
+store(acuteVowels) "áéíóúÁÉÍÓÚ" c combined unicode characters
+store(acuteKeys) [T_acute] [SHIFT T_acute] [K_BKQUOTE]
 
-any(overaccent) + any(overaccentkey) > context beep
+any(plainVowels) + any(acuteKeys) > index(acuteVowels,1) c combining acute deadkey
+any(acuteVowels) + [K_BKSP] > index(plainVowels,1) c backspace on acute vowel will leave a plain vowel behind
+
+store(overaccent)  U+0301 c acute
+any(overaccent) + any(acuteKeys) > context beep
 
 store(NumbersAndPunctuation) '1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?‘’“”‹›«»' "'"  c preventing accents on non-letters
-any(NumbersAndPunctuation) + any(overaccentkey) > context beep
+any(NumbersAndPunctuation) + any(acuteKeys) > context beep
 
 c original punctuation
 + [RALT K_PERIOD] > '>'
@@ -91,15 +105,13 @@ c original punctuation
 + [SHIFT RALT K_COLON] > ':'
 + [RALT K_COLON] > ';'
 + [RALT K_SLASH] > '/'
-+ [RALT K_QUOTE] > U+0027
-+ [RALT K_BKSLASH] > '\'
-+ [SHIFT RALT K_BKSLASH] > '|'
-+ [SHIFT RALT K_RBRKT] > '}'
-+ [SHIFT RALT K_LBRKT] > '{'
-+ [RALT K_RBRKT] > ']'
-+ [RALT K_LBRKT] > '['
-+ [RALT K_EQUAL] > '+'
-+ [RALT K_HYPHEN] > '_' 
++ [RALT K_QUOTE] > "'"
++ [NCAPS SHIFT RALT K_RBRKT] > '}'
++ [NCAPS SHIFT RALT K_LBRKT] > '{'
++ [NCAPS RALT K_RBRKT] > ']'
++ [NCAPS RALT K_LBRKT] > '['
+C + [RALT K_EQUAL] > '+'
+C + [RALT K_HYPHEN] > '_' 
 
 c Guillemets
 + [SHIFT RALT K_0] > '›'
@@ -107,25 +119,20 @@ c Guillemets
 + [RALT K_0] > '»'
 + [RALT K_9] > '«'
 
-c Quotes
-+ [SHIFT k_equal] > "”"
-+ [SHIFT K_hyphen] > "“"
-+ [K_BKQUOTE] > "‘"
-+ [K_QUOTE] > "’"    
-
 c language
 
-+ ";" > U+0301   c acute
++ [K_BKQUOTE] > U+0301 c acute
++ [K_QUOTE] > "’" c right single curly apostrophe
                                              
-+ [caps shift K_LBRKT] > 'ḵ'   
-+ [ncaps shift K_LBRKT] > 'Ḵ'
-+ [caps K_LBRKT] > 'Ḵ'
-+ [ncaps K_LBRKT] > 'ḵ'
++ [CAPS SHIFT K_LBRKT] > 'ḵ'   
++ [NCAPS SHIFT K_LBRKT] > 'Ḵ'
++ [CAPS K_LBRKT] > 'Ḵ'
++ [NCAPS K_LBRKT] > 'ḵ'
 
-+ [caps shift K_RBRKT] > 'x̱'   
-+ [ncaps shift K_RBRKT] > 'X̱'
-+ [caps K_RBRKT] > 'X̱'
-+ [ncaps K_RBRKT] > 'x̱'
++ [CAPS SHIFT K_RBRKT] > 'x̱'   
++ [NCAPS SHIFT K_RBRKT] > 'X̱'
++ [CAPS K_RBRKT] > 'X̱'
++ [NCAPS K_RBRKT] > 'x̱'
 
 + "/" > "ʔ"
 
@@ -134,5 +141,3 @@ nomatch > use(x)
 
 group(x) using keys
 
-store(allkeys) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;,./`~!@#$%^&*()_+{}|:"<>?' "'"
-+ any(allkeys) > index(allkeys, 1)

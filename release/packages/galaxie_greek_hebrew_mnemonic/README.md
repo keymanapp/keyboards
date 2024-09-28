@@ -1,9 +1,7 @@
 Galaxie Greek/Hebrew (Mnemonic) Keyboard Package
 ==================================================
 
-Copyright (C) 2004-2018 Galaxie Software and SIL International
-
-Version 3.2
+Copyright (C) Galaxie Software and SIL Global
 
 __DESCRIPTION__
 This package includes 2 mnemonic keyboards called: Galaxie Greek (Mnemonic) and 
@@ -19,7 +17,8 @@ and the language of the New Testament and Septuagint Scriptures.
 Supported Platforms
 -------------------
  * Windows
+ * Linux
  * macOS
- * Web
+
 
 

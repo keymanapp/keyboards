@@ -8,11 +8,8 @@
 ?>
 
 
-<p style='margin: 16px 0 0 0'>
-This keyboard was designed for the Ahmao [hmd] language using the Miao script. A font must be installed to support this keyboard. A Miao font specifically designed for use with the hmd language is available here: <a href="https://scripts.sil.org/Miao">https://scripts.sil.org/Miao</a></p>
-<p>If square boxes are displayed instead of characters when using this keyboard (and in the keyboard layouts below), please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
-</p>
-<br/>
+<p>This keyboard was designed for the Ahmao [hmd] language using the Miao script. A font must be installed to support this keyboard. A Miao font specifically designed for use with the hmd language is available here: <a href="http://software.sil.org/shimenkan/">http://software.sil.org/shimenkan/</a>. The Sapushan font is also packaged with this keyboard.</p>
+
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>

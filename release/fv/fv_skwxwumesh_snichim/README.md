@@ -1,11 +1,7 @@
-Sḵwx̱wúmesh sníchim keyboard
+Sḵwx̱wú7mesh sníchim keyboard
 ======================
 
-Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.2
-
-Sḵwx̱wúmesh sníchim keyboard layout for Unicode
+Sḵwx̱wú7mesh sníchim keyboard layout for Unicode
 
 Links
 -----
@@ -17,4 +13,4 @@ Links
 Supported Platforms
 -------------------
 
- * Mobile
+* Mobile
