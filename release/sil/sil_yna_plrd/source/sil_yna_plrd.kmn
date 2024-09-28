@@ -9,10 +9,11 @@ c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Gan Yi (SIL)'
-store(&TARGETS) 'web desktop'
-store(&COPYRIGHT) '© 2014-2020 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.2'
 store(&VISUALKEYBOARD) 'sil_yna_plrd.kvks'
+store(&LAYOUTFILE) 'sil_yna_plrd.keyman-touch-layout'
 
 begin Unicode > use(Umain)
 
@@ -108,7 +109,7 @@ c + '}' >       c check this
 + '*' > '*'
 + '(' > '('
 + ')' > ')'
-+ '{' > u+16F90 c TONE KEY, guessed from Hei Yi.
++ '{' > u+16F90 c TONE KEY, guessed from Hei Yi.  DOESN'T FIRE because of rule 79
 + "'" > u+16F91 c TONE KEY, a guess 
-+ '/' > u+16F8F c TONE key from White Yi, a guess
++ '/' > u+16F8F c TONE key from White Yi, a guess DOESN'T FIRE because of rule 91
 

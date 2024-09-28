@@ -140,7 +140,7 @@ This keyboard is designed for the <b>ᐊᓂᔑᓇᐯᒧᐏᓐ</b> language of th
 	<td  align='center'>🌐</td>
 	<td  align='center'>ᐧ</td>
 	<td  align='center' colspan='5'>space</td>
-	<th  align='center'>˙</th>
+	<td class="keyboard-layer__special">˙</td>
 	<td  align='center'>⌫</td>
 </tr>
 

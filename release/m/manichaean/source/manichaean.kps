@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.312.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,7 +22,7 @@
     <Copyright URL="">Copyright © SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>This keyboard is for languages using the Manichaean script.</Description>
+    <Description URL="">This keyboard is for languages using the Manichaean script.</Description>
   </Info>
   <Files>
     <File>
@@ -78,21 +79,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\manichaean.js</Name>
+      <Description>File manichaean.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Manichaean</Name>
       <ID>manichaean</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
+      <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\noto\Mani\NotoSansManichaean-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Mani\NotoSansManichaean-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSansManichaean-Regular.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="sog-Mani">Sogdian</Language>
         <Language ID="txb-Mani">Tokharian B</Language>
         <Language ID="xbc-Mani">Bactrian</Language>
         <Language ID="xmn">Manichaean Middle Persian</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Mani\NotoSansManichaean-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

@@ -5,13 +5,11 @@
 ?>
 
 
-<h1>Start Using MyanCode-San</h1>
-
 <p>
     သက္ကတစာလုံးအပြည့်အစုံပါဝင်သော မြန်မာကီးဘုတ်
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <!-- Insert Keyboard Layout Images or HTML here -->
 
@@ -359,5 +357,5 @@
 <h2 id="puntuations">puntuations</h2>
 <p>အ​​င်္ဂလိပ်စာ၌ ပါသော puntuations တို့ကို သက်ဆိုင်ရာနေတို့၌ right alt (alt_gr) key ဖြင့် တွဲ၍ ရိုက်နိုင်ပါသည်။ ( right alt အစား ctrl + alt တွဲသုံးနိုင်ပါသည်။ အ​င်္ဂလိပ်ဂဏာန်းတို့ကိုလည်း shift + right alt တွဲသုံးပြီး ရိုက်နိုင်ပါသည်။</p>
 <br>
-<p>© 2020 SIL International</p>
+<p>© SIL International</p>
 

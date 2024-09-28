@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,7 +21,7 @@
     <Version URL=""></Version>
     <Name URL="">Dari (CLRA)</Name>
     <Copyright URL="">© Enabling Languages</Copyright>
-    <Description>This keyboard is designed for use with the Dari language of Afghanistan
+    <Description URL="">This keyboard is designed for use with the Dari language of Afghanistan
 and other regions in South Asia.</Description>
   </Info>
   <Files>
@@ -72,26 +73,33 @@ and other regions in South Asia.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\el_dari_clra.js</Name>
+      <Description>File el_dari_clra.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Dari (CLRA)</Name>
       <ID>el_dari_clra</ID>
-      <Version>1.0.1</Version>
+      <Version></Version>
+      <RTL>True</RTL>
       <Languages>
         <Language ID="prs">Dari</Language>
         <Language ID="pes">Iranian Persian</Language>
         <Language ID="fa">Persian</Language>
       </Languages>
       <Examples>
-        <Example ID="prs" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;" />
-        <Example ID="pes" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;" />
-        <Example ID="fa" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;" />
+        <Example ID="prs" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;"/>
+        <Example ID="pes" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;"/>
+        <Example ID="fa" Keys="t h v s d space n v d" Text="فارسی دری" Note="&quot;Dari Persian&quot;"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="dari_clra" Relationship="deprecates" />
+    <RelatedPackage ID="dari_clra" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

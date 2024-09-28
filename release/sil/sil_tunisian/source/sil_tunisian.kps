@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,10 +20,11 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tunisian Spoken Arabic (SIL)</Name>
-    <Copyright URL="">© 2016-2018 SIL International</Copyright>
-    <Description>Arabic script keyboard for the Tunisian Spoken Arabic \[aeb\] language.
+    <Copyright URL="">© SIL International</Copyright>
+    <Description URL="">Arabic script keyboard for the Tunisian Spoken Arabic \[aeb\] language.
 The keyboard includes an On screen keyboard and keyboard layout
 description.</Description>
+    <Author URL="">Lorna Evans</Author>
   </Info>
   <Files>
     <File>
@@ -32,8 +34,8 @@ description.</Description>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\sil_tunisian_U_A.png</Name>
-      <Description>File sil_tunisian_U_A.png</Description>
+      <Name>welcome\sil_tunisian_U_RA.png</Name>
+      <Description>File sil_tunisian_U_RA.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
@@ -79,19 +81,52 @@ description.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Bold.ttf</Name>
+      <Description>Font Scheherazade New Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Medium.ttf</Name>
+      <Description>Font Scheherazade New Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</Name>
+      <Description>Font Scheherazade New</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-SemiBold.ttf</Name>
+      <Description>Font Scheherazade New SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tunisian Spoken Arabic (SIL)</Name>
       <ID>sil_tunisian</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\scheherazade_new\ScheherazadeNew-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="aeb-Arab">Tunisian Arabic (Arabic)</Language>
+        <Language ID="aeb">Tunisian Arabic</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="tunisianspokenarabic" Relationship="deprecates" />
+    <RelatedPackage ID="tunisianspokenarabic" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

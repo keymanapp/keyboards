@@ -50,7 +50,7 @@
 <div id='osk' data-states='default shift'>
 </div>
 
-<h1>Key Sequences</h1>
+<h2>Key Sequences</h2>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>Key Sequence</th><th>Output</th></tr></thead><tbody>

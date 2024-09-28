@@ -22,13 +22,11 @@ END;
 ?>
 
 
+<p>Greek keyboard layout supporting Polytonic Greek, using precomposed characters.</p>
 
-
-
-<h2>General layout</h2>
-
-<p><img alt="Normal (default keyboard state)" src="sil_greek_polytonicU_.png"></p>
-<p><img alt="Shift state" src="sil_greek_polytonicU_S.png"></p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt'>
+</div>
 
 <h2>Keyboard Assignments</h2>
 <p>The main purpose of the keyboards is to provide a wide range of keying options, so many characters can be entered in multiple ways. If you are typing and make a mistake and use the backspace key to delete characters, the keyboard remembers the context.</p>
@@ -141,6 +139,7 @@ END;
 <td>ὰ</td>
 <td>ᾳ</td>
 <td>ϊ</td>
+<td>&#x1FB1;</td>
 </tr>
 <tr>
     <th>Type</th>
@@ -149,6 +148,7 @@ END;
     <td>` or \</td>
     <td>!, | , + or _</td>
     <td>"</td>
+    <td>#</td>
 </tr>
 </tbody>
 </table>
@@ -281,3 +281,16 @@ Others can be typed by preceding them with <b class="input">@</b> (the <b class=
         </tr>
     </tbody>
 </table>
+
+<h2>Tablet Keyboard layout</h2>
+<p>The tablet layout follows the basic Desktop keyboard. However, due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+
+    <h2>Phone Keyboard layout</h2>
+    <p>Due to the size and number of keys, some characters are hidden in the long press. 
+        Press and hold on the key with a little dot on the top right to reveal and use them.</p>
+<div id='osk-phone' data-states='default shift numeric'>
+</div>
+
+<h3>Longpress</h3>
+<p><a href="phone-longpress.png"><img class="keyboard" src="phone-longpress.png" alt="Numeric state" /></a></p>

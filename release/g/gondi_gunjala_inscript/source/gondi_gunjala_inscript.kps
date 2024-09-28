@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.198.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Gondi INSCRIPT (Gunjala)</Name>
-    <Copyright URL="">© 2015-2023 SIL International</Copyright>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL="mailto:mark_penny@sil.org">Mark Penny</Author>
-    <Description>This Gondi (Gunjala) keyboard has been designed for typing the Adilabad
+    <Description URL="">This Gondi (Gunjala) keyboard has been designed for typing the Adilabad
 Gondi (wsg) language spoken in the northern part of Telangana State of
 India. The keyboard layout is an INSCRIPT-based layout.</Description>
   </Info>
@@ -116,16 +117,22 @@ India. The keyboard layout is an INSCRIPT-based layout.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\gondi_gunjala_inscript.js</Name>
+      <Description>File gondi_gunjala_inscript.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Gondi INSCRIPT (Gunjala)</Name>
       <ID>gondi_gunjala_inscript</ID>
-      <Version>1.1.1</Version>
+      <Version>1.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\narnoor\Narnoor-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\narnoor\Narnoor-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="wsg-Gong">Adilabad Gondi (Gunjala Script)</Language>
+        <Language ID="wsg">Adilabad Gondi (Gunjala Script)</Language>
         <Language ID="gon-Gong">Gondi (Gunjala Script)</Language>
       </Languages>
     </Keyboard>

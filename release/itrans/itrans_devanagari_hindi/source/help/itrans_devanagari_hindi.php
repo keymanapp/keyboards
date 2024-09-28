@@ -14,9 +14,6 @@ END;
   require_once('header.php');
 ?>
 
-<h2>Hindi Devanagari Phonetic (ITRANS) </h2>
-
-<h3><span style="color: chocolate;">Hindi Devanagari Phonetic (ITRANS) </span>Keyboard Version 1.2.0</h3>
 
 <p>This is a phonetic Devanagari (ITRANS) keyboard layout for Hindi. 
     It is based on <strong><a href="https://www.aczoom.com/itrans/">ITRANS</a></strong> 

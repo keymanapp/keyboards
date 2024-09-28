@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.225.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Multi Pak Phonetic</Name>
-    <Copyright URL="">© 2007-2023 Zeeshan Hyder</Copyright>
-    <Description>This package includes a phonetic keyboard called Multi Pak Phonetic and
+    <Copyright URL="">© Zeeshan Hyder</Copyright>
+    <Description URL="">This package includes a phonetic keyboard called Multi Pak Phonetic and
 the font Pak Nastaleeq designed for the following languages: Balochi,
 Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu.</Description>
   </Info>
@@ -92,12 +93,6 @@ Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\multi_pak_phonetic.js</Name>
-      <Description>File multi_pak_phonetic.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Bold.ttf</Name>
       <Description>Font Noto Nastaliq Urdu Bold</Description>
       <CopyLocation>0</CopyLocation>
@@ -138,25 +133,26 @@ Kashmiri, Memoni, Panjabi, Pashto, Seraiki, Sindhi and Urdu.</Description>
     <Keyboard>
       <Name>Multi Pak Phonetic</Name>
       <ID>multi_pak_phonetic</ID>
-      <Version>1.1.1</Version>
+      <Version>1.2</Version>
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Arab\nastaliqurdu\NotoNastaliqUrdu-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="bgp-Arab">Eastern Balochi (Arabic)</Language>
-        <Language ID="ks-Arab">Kashmiri (Arabic)</Language>
-        <Language ID="mby-Arab">Memoni (Arabic)</Language>
-        <Language ID="pbt-Arab">Southern Pashto (Arabic)</Language>
+        <Language ID="bgp">Eastern Balochi</Language>
+        <Language ID="ks">Kashmiri</Language>
+        <Language ID="mby">Memoni</Language>
+        <Language ID="pbt">Southern Pashto</Language>
         <Language ID="pnb-Arab">Western Panjabi (Arabic)</Language>
-        <Language ID="pst-Arab">Central Pashto (Arabic)</Language>
-        <Language ID="skr-Arab">Saraiki (Arabic)</Language>
-        <Language ID="sd-Arab">Sindhi (Arabic)</Language>
+        <Language ID="pst">Central Pashto</Language>
+        <Language ID="skr">Saraiki</Language>
+        <Language ID="sd">Sindhi</Language>
         <Language ID="ur">Urdu</Language>
+        <Language ID="lah">Lahnda</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="multi pak" Relationship="deprecates" />
+    <RelatedPackage ID="multi pak" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

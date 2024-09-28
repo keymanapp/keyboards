@@ -1,6 +1,14 @@
 Naija Type Keyboard Change History
 =======================
 
+63 (2024-Aug-20)
+---------
+* Update osk help file and related css to improve website behavior
+
+62 (2024-Aug-13)
+---------
+* Corrected the New line indent for Description element
+
 June 2024
 ---------
 * v61 m̃ easier on touch, ḅ underdot and line on desktop and touch, ɦ on touch. 105 languages known covered.

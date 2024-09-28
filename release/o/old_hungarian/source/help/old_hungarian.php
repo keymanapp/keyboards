@@ -22,5 +22,5 @@ and the Left to right mark is available on the key that says <b>BJ</b> (Balról-
 
 <h2>Mobile/Phone Keyboard Layout</h2>
 
-<div id='osk-phone' data-states='default shift rightalt rightalt-shift'>
+<div id='osk-phone' data-states='default shift rightalt'>
 </div>

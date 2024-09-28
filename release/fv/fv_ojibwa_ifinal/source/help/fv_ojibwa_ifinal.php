@@ -88,7 +88,7 @@ END;
 			</ul>
 		</li>
 		<li>All English letters can be typed by pressing <kbd>Right-Alt</kbd> (Windows) / <kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
-		<li>All uppercase English letters can be typed by pressing <kbd>Right-Alt</kbd> (Windows) / <kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
+		<li>All uppercase English letters can be typed by pressing <kbd>Shift</kbd>+<kbd>Right-Alt</kbd> (Windows) / <kbd>Shift</kbd>+<kbd>⌥ Option</kbd> (Mac) followed by the letter(s) you wish to type.</li>
 	</ul>
 
     <h2>Unicode Fonts</h2>
@@ -146,7 +146,7 @@ END;
                 <td align='center'>🌐</td>
                 <td align='center'>ᐧ</td>
                 <td align='center' colspan='5'>space</td>
-                <th align='center'>˙</th>
+                <td class="keyboard-layer__special">˙</td>
                 <td align='center'>⌫</td>
             </tr>
 
@@ -201,9 +201,9 @@ END;
         </table>
         <div class='vspace'></div>
         <ul>
-            <li>keys with a red background are combining accents. On your mobile device, they will have green
+            <li>Keys with a red background are combining accents. On your mobile device, these keys will have green
                 text.</li>
-            <li>the first character in a cell is the "one-tap" key, any further characters are "hold-select"
+            <li>The first character in a cell is the "one-tap" key, any further characters are "hold-select"
                 keys.</li>
             <li>Common punctuation can be found by pressing and holding the full stop (᙮) key on the right side
                 of the

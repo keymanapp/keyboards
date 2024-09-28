@@ -1,4 +1,4 @@
-<?php 
+<?php
   $pagename = 'Armenian Mnemonic R Keyboard Help';
   $pagetitle = 'Armenian Mnemonic R Keyboard Help';
   
@@ -109,7 +109,7 @@
 	<td style='text-align: center;'>·</td>
 	<td style='text-align: center;'>՛</td>
 	<td style='text-align: center;'>°</td>
-  </tr>  
+  </tr>
   </tbody>
 </table>
 <br>
@@ -160,7 +160,7 @@
 	<td style='text-align: center;'>»</td>
 	<td style='text-align: center;'>“</td>
 	<td style='text-align: center;'>”</td>
-  </tr>  
+  </tr>
   </tbody>
 </table>
 <br>
