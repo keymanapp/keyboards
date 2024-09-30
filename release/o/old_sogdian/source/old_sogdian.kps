@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Old Sogdian</Name>
-    <Copyright URL="">© 2024 SIL Global</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>This keyboard is designed for the Old Sogdian script.</Description>
+    <Description URL="">This keyboard is designed for the Old Sogdian script.</Description>
   </Info>
   <Files>
     <File>
@@ -72,23 +73,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Sogo\NotoSansOldSogdian-Regular.ttf</Name>
+      <Description>Font Noto Sans Old Sogdian Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Sogo\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Old Sogdian</Name>
       <ID>old_sogdian</ID>
       <Version>1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Sogo\NotoSansOldSogdian-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Sogo\NotoSansOldSogdian-Regular.ttf</DisplayFont>
       <Languages>
-        
+        <Language ID="sog-Sogo">Sogdian (Old Sogdian)</Language>
       </Languages>
-      <Examples>
-       
-      </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
   <Strings/>
-  <RelatedPackages>
-    <RelatedPackage ID="old_sogdian" Relationship="deprecates" />
-    <RelatedPackage ID="us" Relationship="deprecates" />
-  </RelatedPackages>
 </Package>

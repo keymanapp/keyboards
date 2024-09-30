@@ -7,7 +7,7 @@ Old Sogdian keyboard
 Description
 -----------
 
-Old Sogdian generated from template.
+This keyboard is designed for the Old Sogdian script. 
 
 
 Links
