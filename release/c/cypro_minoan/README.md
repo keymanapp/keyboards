@@ -1,4 +1,4 @@
-Cypriot Minoan keyboard
+Cypro-Minoan keyboard
 ==============
 
 © SIL Global
@@ -6,7 +6,7 @@ Cypriot Minoan keyboard
 Description
 -----------
 
-This keyboard is designed for the Cypriot Minoan.
+This keyboard is designed for the Cypro-Minoan syllabary.
 
 Links
 -----
