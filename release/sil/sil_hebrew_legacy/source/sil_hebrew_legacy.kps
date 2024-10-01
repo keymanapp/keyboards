@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.281.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Hebrew Legacy (SIL)</Name>
-    <Copyright URL="">Copyright © 2003-2021 SIL International</Copyright>
-    <Description>This keyboard is designed for Biblical Hebrew. It reverts the input
+    <Copyright URL="">Copyright © SIL Global</Copyright>
+    <Description URL="">This keyboard is designed for Biblical Hebrew. It reverts the input
 behavior for holam and holam haser to an earlier version of the official
 Hebrew (SIL) keyboard.</Description>
   </Info>
@@ -121,22 +122,34 @@ Hebrew (SIL) keyboard.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hebrew Legacy (SIL)</Name>
       <ID>sil_hebrew_legacy</ID>
-      <Version>1.0</Version>
+      <Version>1.1</Version>
       <RTL>True</RTL>
-      <OSKFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</OSKFont>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</DisplayFont>
       <Languages>
-        <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
+        <Language ID="hbo">Ancient Hebrew</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="sil_hebrew" />
+    <RelatedPackage ID="sil_hebrew"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
