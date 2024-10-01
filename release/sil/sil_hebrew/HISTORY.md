@@ -1,6 +1,10 @@
 Hebrew (SIL) Keyboard Change History
 =======================
 
+2.0.2 (1 Oct 2024)
+-----------------
+* Remove U+25CC from kvks file and keyman-touch-layout
+
 2.0.1 (8 Jul 2024)
 -----------------
 * Changed display font for .kvks
