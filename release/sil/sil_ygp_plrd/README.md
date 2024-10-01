@@ -1,7 +1,7 @@
 Bai Yi – White Yi (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This keyboard was designed for the Bai Yi – White Yi [ygp] language using the Miao script.
