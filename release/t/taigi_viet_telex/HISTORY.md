@@ -1,6 +1,14 @@
 taigi viet telex Change History
 ====================
 
+2.0.1 (2024-09-29)
+----------------
+* Updated by cathaylab
+added new characters ṳ and o̤ 
+added new tones ã, using x to represent
+removed to use x to represent nasal sound
+added Kanji feature, press TAB to generate Taiwanese Kanji
+added new short cut, d > ch, q > o͘
 2.0 (2024-07-29)
 ----------------
 * Updated by cathaylab
