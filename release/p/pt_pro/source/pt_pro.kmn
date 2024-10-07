@@ -13,8 +13,8 @@ store(&Targets) "any"
 store(&VISUALKEYBOARD) 'pt_pro.kvks'
 store(&BITMAP) 'pt_pro.ico'
 store(&LAYOUTFILE) 'pt_pro.keyman-touch-layout'
-store(&COPYRIGHT) '(c) 2024 SIL International'
-store(&KEYBOARDVERSION) '1.0'
+store(&COPYRIGHT) '(c) 2024 SIL Global'
+store(&KEYBOARDVERSION) '1.0.1'
 
 begin Unicode > use(main)
 
@@ -23,11 +23,10 @@ group(main) using keys
 + [K_SPACE] > U+0020
 
 + [K_0] > U+0030
-+ [SHIFT K_0] > U+0029
++ [SHIFT K_0] > U+003d
 
 + [K_1] > U+0031
 + [SHIFT K_1] > U+0021
-+ [RALT K_1] > U+00ba
 
 + [K_2] > U+0032
 + [SHIFT K_2] > U+0022
@@ -35,15 +34,13 @@ group(main) using keys
 
 + [K_3] > U+0033
 + [SHIFT K_3] > U+0023
-+ [RALT K_3] > U+00a3
++ [RALT K_3] > U+20ac
 
 + [K_4] > U+0034
 + [SHIFT K_4] > U+0024
-+ [RALT K_4] > U+00a7
 
 + [K_5] > U+0035
 + [SHIFT K_5] > U+0025
-+ [RALT K_5] > U+20ac
 
 + [K_6] > U+0036
 + [SHIFT K_6] > U+0026
@@ -52,10 +49,10 @@ group(main) using keys
 + [SHIFT K_7] > U+002f
 
 + [K_8] > U+0038
-+ [SHIFT K_8] > U+002a
++ [SHIFT K_8] > U+0028
 
 + [K_9] > U+0039
-+ [SHIFT K_9] > U+0028
++ [SHIFT K_9] > U+0029
 
 + [NCAPS K_A] > U+0061
 + [CAPS K_A] > U+0041
@@ -188,12 +185,12 @@ group(main) using keys
 + [NCAPS SHIFT K_Z] > U+005a
 + [CAPS SHIFT K_Z] > U+007a
 
-+ [K_RBRKT] > U+005d
-+ [SHIFT K_RBRKT] > U+007d 
++ [K_RBRKT] > U+005b
++ [SHIFT K_RBRKT] > U+007b 
++ [RALT K_RBRKT] > U+00aa
 
-+ [K_LBRKT] > U+005b
-+ [SHIFT K_LBRKT] > U+007b
-+ [RALT K_LBRKT] > dk(00a8)
++ [K_LBRKT] > dk(00b4)
++ [SHIFT K_LBRKT] >  dk(0060)
 
 + [K_COMMA] > U+002c
 + [SHIFT K_COMMA] > U+003b
@@ -206,8 +203,9 @@ group(main) using keys
 + [SHIFT K_PERIOD] > U+003a
 + [RALT K_PERIOD] > U+003e
 
-+ [K_BKSLASH] > dk(007e)
-+ [SHIFT K_BKSLASH] > dk(005e)
++ [K_BKSLASH] > U+005d
++ [SHIFT K_BKSLASH] > U+007d
++ [RALT K_BKSLASH] > U+00ba
 
 + [NCAPS K_COLON] > U+00e7
 + [CAPS K_COLON] > U+00c7
@@ -219,13 +217,12 @@ group(main) using keys
 
 + [K_BKQUOTE] > U+005c
 + [SHIFT K_BKQUOTE] > U+007c
-+ [RALT K_BKQUOTE] > U+00aa
 
-+ [K_EQUAL] > U+003d
-+ [SHIFT K_EQUAL] > U+002b
++ [K_EQUAL] > U+002b
++ [SHIFT K_EQUAL] > U+002a
 
-+ [K_QUOTE] > dk(00b4)
-+ [SHIFT K_QUOTE] > dk(0060)
++ [K_QUOTE] > dk(007e)
++ [SHIFT K_QUOTE] > dk(005e)
 
 + [K_oE2] > U+003c
 + [SHIFT K_oE2] > U+003e
