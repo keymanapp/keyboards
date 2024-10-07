@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.284.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,8 +21,12 @@
     <Name URL="">Haíɫzaqvḷa</Name>
     <Version URL=""></Version>
     <Copyright URL="">© 2015-2024 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation</Copyright>
-    <Description>This keyboard is designed for the Haíɫzaqvḷa language of the BC Coast 
-region of Canada. This is part of a set of keyboards from FirstVoices. Alternate name: Heiltsuk.</Description>
+    <Description URL="">This keyboard is designed for the Haíɫzaqvḷa language of the BC Coast 
+region of Canada. This is part of a set of keyboards from FirstVoices. 
+
+Alternate name: 
+
+Heiltsuk</Description>
   </Info>
   <Files>
     <File>
@@ -66,19 +71,33 @@ region of Canada. This is part of a set of keyboards from FirstVoices. Alternate
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\heiltsuk\NotoHeiltsukSans-Regular.otf</Name>
+      <Description>Font Noto Heiltsuk Sans Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Latn\heiltsuk\Noto Sans OFL-1.1 license.rtf</Name>
+      <Description>File Noto Sans OFL-1.1 license.rtf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.rtf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Haíɫzaqvḷa</Name>
       <ID>fv_hailzaqvla</ID>
-      <Version>9.5.2</Version>
+      <Version>10</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Latn\heiltsuk\NotoHeiltsukSans-Regular.otf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Latn\heiltsuk\NotoHeiltsukSans-Regular.otf</DisplayFont>
       <Languages>
         <Language ID="hei">Heiltsuk</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="fv_hailzaqvla_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="fv_hailzaqvla_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

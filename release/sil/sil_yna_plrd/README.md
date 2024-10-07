@@ -1,7 +1,7 @@
 Gan Yi (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This keyboard was designed for the Gan Yi [yna] language using the Miao script.
