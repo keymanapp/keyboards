@@ -1,12 +1,13 @@
 Portuguese (Programmers) keyboard
 ==============
 
-(c) SIL International
+(c) SIL Global
 
 Description
 -----------
 
 Portuguese (Programmers) is a keyboard layout designed for Portuguese programmers.
+
 
 Links
 -----
