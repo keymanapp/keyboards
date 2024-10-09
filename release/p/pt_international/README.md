@@ -9,7 +9,7 @@ Description
 -----------
 
 Portuguese (International) is a keyboard layout made for users familiar with the US keyboard who want to type in Portuguese. 
-Unlike the traditional Portuguese layout, it doesn't use dead keys for accents, allowing users to type accented characters easier.
+Unlike the traditional Portuguese layout, it doesn't use dead keys for accents, allowing users to type accented characters easily.
 
 Links
 -----
