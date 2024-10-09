@@ -1,25 +1,25 @@
+﻿c ---------------------------------------------------------
+c Hebrew and Greek Transliteration Unicode keyboard for use with any
+c Unicode Windows fonts 
 c ---------------------------------------------------------
-c Hebrew and Greek Transliteration Unicode keyboard for use with any 
-c Unicode Windows fonts (including Doulos SIL) and Keyman 6
-c
-c ---------------------------------------------------------
-c
+c 
 c Since some upper case letters are used with special definitions
 c for Hebrew, they cannot be used for capital letters for Greek
 c Authors: Todd Hoatson and Christopher Samuel
 c cjs April 2007
 
 
-VERSION 9.0
+VERSION 10.0
 store(&NAME) "Hebrew and Greek Transliteration (SIL)"
 store(&BITMAP) 'sil_hebr_grek_trans.ico'
-store(&TARGETS) 'windows macosx linux web'
-store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.2'
 store(&VISUALKEYBOARD) 'sil_hebr_grek_trans.kvks'
+store(&LAYOUTFILE) 'sil_hebr_grek_trans.keyman-touch-layout'
 
 begin UNICODE > use(Main)  
 
-store( &Copyright ) "Copyright � 2003-2018 SIL International"
+store(&COPYRIGHT) 'Copyright © SIL Global'
 
 c ------------------------ STORES ---------------------
 c Define sets of characters for matching and filtering: 
@@ -85,6 +85,6 @@ c schwa
 + ";" > U+0259
 
 c furtive pathah
-+ [ALT K_A] > U+1D43
++ [RALT K_A] > U+1D43
 
 

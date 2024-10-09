@@ -6,7 +6,7 @@
 
 <h2>Keyboard</h2>
 <p>
-  This keyboard layout is designed for Kayaw. It includes
+  This keyboard is for the Kayaw language using Latin script. It includes
   an on screen keyboard which can be viewed by clicking on the Keyman icon
   and selecting the On Screen Keyboard menu item. This keyboard follows the standard QWERTY 
   keyboard layout with the following changes:
@@ -31,10 +31,8 @@
   <b>For Touch Screen Keyboards</b>
 </p>
 <ul>
-  <li>q is replaced by U+0304 (Combining Macron)</li>
-  <li>z is replaced by U+0300 (Combining Grave Accent)</li>
-  <li>x is replaced by U+0302 (Combining Circumflex Accent)</li>
-  <li>v is replaced by U+030C (Combining Caron)</li>
+  <li>accents are on the first row of both default and shift layers</li>
+  <li>numerals are accessed through the numeric layer</li>
 </ul>
 
 <p>
@@ -48,34 +46,8 @@
 </div>
 
 <div id='osk-phone-container'>
-  <h2>Phone Keyboard Layout</h2>
-  <div id='osk-phone' data-states='default shift Symbol'></div>
+  <h2>Mobile Keyboard Layout</h2>
+  <div id='osk-phone' data-states='default shift numeric'></div>
 </div>
 
-<div id='osk-tablet-container'>
-  <h2>Tablet Keyboard Layout</h2>
-  <div id='osk-tablet' data-states='default shift Symbol'></div>
-</div>
 
-<h2>License</h2>
-<p>Kayaw (SIL) Keyman Keyboard is copyright &copy; 2018 SIL International. It is distributed under The MIT License (MIT)</p>
-
-<div class="note">
-  <p>Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:</p>
-
-  <p>The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.</p>
-
-  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.</p>
-</div>

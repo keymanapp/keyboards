@@ -1,9 +1,7 @@
 Yoruba Basic keyboard
 ==============
 
-(c) 2018-2020 SIL International
-
-Version 1.1
+(c) 2018-2022 SIL International
 
 Description
 -----------

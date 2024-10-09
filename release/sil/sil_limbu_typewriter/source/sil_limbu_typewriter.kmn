@@ -9,11 +9,12 @@ c
 
 store(&VERSION) '10.0'
 store(&NAME) 'Limbu Typewriter (SIL)'
-store(&Targets) "windows macosx linux web"
+store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'sil_limbu_typewriter.kvks'
 store(&BITMAP) 'sil_limbu_typewriter.ico'
-store(&COPYRIGHT) '© 2010-2019 SIL International'
-store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) '© SIL International'
+store(&KEYBOARDVERSION) '1.3'
+store(&LAYOUTFILE) 'sil_limbu_typewriter.keyman-touch-layout'
 
 begin Unicode > use(main)
 
@@ -150,6 +151,7 @@ group(main) using keys
 
 + [K_PERIOD] > U+0965
 + [SHIFT K_PERIOD] > U+005d
++ [RALT K_PERIOD] > U+0964
 
 + [K_SLASH] > U+002f
 + [SHIFT K_SLASH] > U+003f

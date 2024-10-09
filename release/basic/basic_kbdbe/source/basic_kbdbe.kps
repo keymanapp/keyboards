@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,8 +18,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Belgian French Basic</Name>
-    <Copyright URL="">© 2009-2019 SIL International</Copyright>
+    <Copyright URL="">© 2009-2020 SIL International</Copyright>
     <Author URL=""></Author>
+    <Description>Belgian French Basic generated from template. This keyboard matches the
+following Windows 10 input methods: Belgian French and Belgian (Period).</Description>
   </Info>
   <Files>
     <File>
@@ -69,16 +72,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Belgian French Basic</Name>
       <ID>basic_kbdbe</ID>
-      <Version>1.1</Version>
+      <Version></Version>
       <Languages>
         <Language ID="fr">French</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="fr" Keys="C [ o t e space d 4 O r" Text="Côte d'Or" Note="Brand of Belgian chocolate" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="belgian_period" Relationship="deprecates" />
+    <RelatedPackage ID="belgian_french" Relationship="deprecates" />
+    <RelatedPackage ID="kbdbe" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

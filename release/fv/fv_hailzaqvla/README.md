@@ -1,11 +1,7 @@
-Haiɫzaqvla keyboard
+Haíɫzaqvḷa keyboard
 ======================
 
-Copyright (c) 2015-2019 FirstVoices, SIL International, 2015 First Peoples' Cultural Foundation
-
-Version 9.3
-
-Haiɫzaqvla keyboard layout for Unicode
+Haíɫzaqvḷa Unicode keyboard layout
 
 Links
 -----
@@ -17,5 +13,6 @@ Links
 Supported Platforms
 -------------------
 
- * Mobile
+ * Desktop (Mac/PC)
+ * Mobile/Tablet
 

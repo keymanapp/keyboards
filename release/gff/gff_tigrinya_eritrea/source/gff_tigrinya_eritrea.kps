@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.64.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -11,6 +11,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Tigrinya-Eritrean Keyboard</Folder>
@@ -24,7 +25,7 @@
         <Location>psmelStartMenu</Location>
       </Item>
       <Item>
-        <Name>Tigriyna-ER Keyboard</Name>
+        <Name>Tigrinya-ER Keyboard</Name>
         <FileName>(Start Product)</FileName>
         <Arguments></Arguments>
         <Icon></Icon>
@@ -56,9 +57,12 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">GFF Tigrinya-Eritrean Keyboard</Name>
-    <Copyright URL="">2009-2020 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:keyboards@ethiopic.org">The Ge'ez Frontier Foundation</Author>
+    <Copyright URL="">2009-2023 Geʾez Frontier Foundation</Copyright>
+    <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
+    <Description>An intuitive, easy to use, keyboard for entering Eritrean Tigrinya with
+standard English keyboards according to the GFF convention for Ethiopic
+script languages.</Description>
   </Info>
   <Files>
     <File>
@@ -80,26 +84,20 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Connected</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
       <Name>..\..\..\shared\fonts\geez\Brana-Regular.ttf</Name>
       <Description>Font Brana Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\EthiopicUnicodeItalic.ttf</Name>
-      <Description>Font Ethiopic Unicode Italic</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\EthiopicUnicodeNormal.ttf</Name>
-      <Description>Font Ethiopic Unicode Normal</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\fantuwua.ttf</Name>
-      <Description>Font Ethiopic Fantuwua</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -108,36 +106,6 @@
       <Description>Font FreeSerif</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\goffer.ttf</Name>
-      <Description>Font Ethiopic Yigezu Bisrat Goffer</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\hiwua.ttf</Name>
-      <Description>Font Ethiopic Hiwua</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiret.ttf</Name>
-      <Description>Font Ethiopia Jiret</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\jiretsl.ttf</Name>
-      <Description>Font Ethiopia Jiret Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\tint.ttf</Name>
-      <Description>Font Ethiopic Tint</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\geez\washrab.ttf</Name>
@@ -160,18 +128,6 @@
     <File>
       <Name>..\..\..\shared\fonts\geez\washrasbsl.ttf</Name>
       <Description>Font Ethiopic WashRa SemiBold Slant</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\wookianos.ttf</Name>
-      <Description>Font Ethiopic Wookianos</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\geez\yebse.ttf</Name>
-      <Description>Font Ethiopic Yebse</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -206,21 +162,93 @@
       <FileType>.bmp</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL</Description>
+      <Name>..\..\..\shared\fonts\geez\WaldbaFantuwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ፋንትዋ Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaHiwua-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ህዋእ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaJiret-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጅረት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaTint-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ጥንት Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaWookianos-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ውቂያኖስ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYebse-Regular.ttf</Name>
+      <Description>Font ዋልድባ - የብሰ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGoffer-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ብሥራት ጎፈር Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaYigezuBisratGothic-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ይገዙ ብሥራት ጎቲክ Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\geez\WaldbaZelan-Regular.ttf</Name>
+      <Description>Font ዋልድባ - ዘላን Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\gff_tigrinya_eritrea.js</Name>
+      <Description>File gff_tigrinya_eritrea.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ትግርኛ (Tigrinya)</Name>
       <ID>gff_tigrinya_eritrea</ID>
-      <Version></Version>
+      <Version>2.0.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
-        <Language ID="ti-Ethi-ER">Tigrinya (Ethiopic, Eritrea)</Language>
+        <Language ID="ti-ER">Tigrinya (Eritrea)</Language>
       </Languages>
-    </Keyboard>
+      <Examples>
+        <Example ID="ti-ER" Keys="t g r N a" Text="ትግርኛ" Note="Name of language" />
+      </Examples>
+  </Keyboard>
   </Keyboards>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff-tir-er-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_tir_er_7" Relationship="deprecates" />
+    <RelatedPackage ID="tir_er_uni_ez" Relationship="deprecates" />
+    <RelatedPackage ID="tir-er-uni" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

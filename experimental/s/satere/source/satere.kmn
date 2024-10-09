@@ -1,0 +1,229 @@
+﻿
+store(&VERSION) '10.0'
+store(&NAME) 'Satere'
+store(&Targets) "any"
+store(&VISUALKEYBOARD) 'satere.kvks'
+store(&LAYOUTFILE) 'satere.keyman-touch-layout'
+store(&COPYRIGHT) '(c) 2023 SIL International'
+store(&KEYBOARDVERSION) '1.0.0'
+
+begin Unicode > use(main)
+
+store(tildeK) [NCAPS K_A] [CAPS SHIFT K_A] [NCAPS K_E] [CAPS SHIFT K_E] [NCAPS K_I] [CAPS SHIFT K_I] \
+              [NCAPS K_O] [CAPS SHIFT K_O] [NCAPS K_U] [CAPS SHIFT K_U] [NCAPS K_Y] [CAPS SHIFT K_Y] \
+              [CAPS K_A] [NCAPS SHIFT K_A] [CAPS K_E] [NCAPS SHIFT K_E] [CAPS K_I] [NCAPS SHIFT K_I] \
+              [CAPS K_O] [NCAPS SHIFT K_O] [CAPS K_U] [NCAPS SHIFT K_U] [CAPS K_Y] [NCAPS SHIFT K_Y]
+store(tildeU) "ã"         "ã"              "ẽ"         "ẽ"              "ĩ"         "ĩ" \
+              "õ"         "õ"              "ũ"         "ũ"              "ỹ"         "ỹ" \
+              "Ã"         "Ã"              "Ẽ"         "Ẽ"              "Ĩ"         "Ĩ" \
+              "Õ"         "Õ"              "Ũ"         "Ũ"              "Ỹ"         "Ỹ"
+
+group(main) using keys
+
++ [K_SPACE] > U+0020
+
++ [K_BKQUOTE] > U+0060
++ [SHIFT K_BKQUOTE] > dk(tilde)
++ [K_0] > U+0030
++ [K_1] > U+0031
++ [K_2] > U+0032
++ [K_3] > U+0033
++ [K_4] > U+0034
++ [K_5] > U+0035
++ [K_6] > U+0036
++ [K_7] > U+0037
++ [K_8] > U+0038
++ [K_9] > U+0039
++ [K_HYPHEN] > U+002D
++ [SHIFT K_HYPHEN] > U+005F
++ [K_EQUAL] >  U+003D
++ [SHIFT K_EQUAL] > U+002B
+
++ [NCAPS K_A] > U+0061
++ [CAPS K_A] > U+0041
++ [NCAPS SHIFT K_A] > U+0041
++ [CAPS SHIFT K_A] > U+0061
+
++ [NCAPS RALT K_A] > U+00E3
++ [CAPS RALT K_A] > U+00C3
++ [NCAPS RALT SHIFT K_A] > U+00C3
++ [CAPS RALT SHIFT K_A] > U+00E3
+
++ [NCAPS K_B] > U+0062
++ [CAPS K_B] > U+0042
++ [NCAPS SHIFT K_B] > U+0042
++ [CAPS SHIFT K_B] > U+0062
+
++ [NCAPS K_C] > U+0063
++ [CAPS K_C] > U+0043
++ [NCAPS SHIFT K_C] > U+0043
++ [CAPS SHIFT K_C] > U+0063
+
++ [NCAPS K_D] > U+0064
++ [CAPS K_D] > U+0044
++ [NCAPS SHIFT K_D] > U+0044
++ [CAPS SHIFT K_D] > U+0064
+
++ [NCAPS K_E] > U+0065
++ [CAPS K_E] > U+0045
++ [NCAPS SHIFT K_E] > U+0045
++ [CAPS SHIFT K_E] > U+0065
+
++ [NCAPS RALT K_E] > U+1EBD
++ [CAPS RALT K_E] > U+1EBC
++ [NCAPS RALT SHIFT K_E] > U+1EBC
++ [CAPS RALT SHIFT K_E] > U+1EBD
+
++ [NCAPS K_F] > U+0066
++ [CAPS K_F] > U+0046
++ [NCAPS SHIFT K_F] > U+0046
++ [CAPS SHIFT K_F] > U+0066
+
++ [NCAPS K_G] > U+0067
++ [CAPS K_G] > U+0047
++ [NCAPS SHIFT K_G] > U+0047
++ [CAPS SHIFT K_G] > U+0067
+
++ [NCAPS K_H] > U+0068
++ [CAPS K_H] > U+0048
++ [NCAPS SHIFT K_H] > U+0048
++ [CAPS SHIFT K_H] > U+0068
+
++ [NCAPS K_I] > U+0069
++ [CAPS K_I] > U+0049
++ [NCAPS SHIFT K_I] > U+0049
++ [CAPS SHIFT K_I] > U+0069
+
++ [NCAPS RALT K_I] > U+0129
++ [CAPS RALT K_I] > U+0128
++ [NCAPS RALT SHIFT K_I] > U+0128
++ [CAPS RALT SHIFT K_I] > U+0129
+
++ [NCAPS K_J] > U+006a
++ [CAPS K_J] > U+004a
++ [NCAPS SHIFT K_J] > U+004a
++ [CAPS SHIFT K_J] > U+006a
+
++ [NCAPS K_K] > U+006b
++ [CAPS K_K] > U+004b
++ [NCAPS SHIFT K_K] > U+004b
++ [CAPS SHIFT K_K] > U+006b
+
++ [NCAPS K_L] > U+006c
++ [CAPS K_L] > U+004c
++ [NCAPS SHIFT K_L] > U+004c
++ [CAPS SHIFT K_L] > U+006c
+
++ [NCAPS K_M] > U+006d
++ [CAPS K_M] > U+004d
++ [NCAPS SHIFT K_M] > U+004d
++ [CAPS SHIFT K_M] > U+006d
+
++ [NCAPS K_N] > U+006e
++ [CAPS K_N] > U+004e
++ [NCAPS SHIFT K_N] > U+004e
++ [CAPS SHIFT K_N] > U+006e
+
++ [NCAPS K_O] > U+006f
++ [CAPS K_O] > U+004f
++ [NCAPS SHIFT K_O] > U+004f
++ [CAPS SHIFT K_O] > U+006f
+
++ [NCAPS RALT K_O] > U+00f5
++ [CAPS RALT K_O] > U+00d5
++ [NCAPS RALT SHIFT K_O] > U+00d5
++ [CAPS RALT SHIFT K_O] > U+00f5
+
++ [NCAPS K_P] > U+0070
++ [CAPS K_P] > U+0050
++ [NCAPS SHIFT K_P] > U+0050
++ [CAPS SHIFT K_P] > U+0070
+
++ [NCAPS K_Q] > U+0071
++ [CAPS K_Q] > U+0051
++ [NCAPS SHIFT K_Q] > U+0051
++ [CAPS SHIFT K_Q] > U+0071
+
++ [NCAPS K_R] > U+0072
++ [CAPS K_R] > U+0052
++ [NCAPS SHIFT K_R] > U+0052
++ [CAPS SHIFT K_R] > U+0072
+
++ [NCAPS K_S] > U+0073
++ [CAPS K_S] > U+0053
++ [NCAPS SHIFT K_S] > U+0053
++ [CAPS SHIFT K_S] > U+0073
+
++ [NCAPS K_T] > U+0074
++ [CAPS K_T] > U+0054
++ [NCAPS SHIFT K_T] > U+0054
++ [CAPS SHIFT K_T] > U+0074
+
++ [NCAPS K_U] > U+0075
++ [CAPS K_U] > U+0055
++ [NCAPS SHIFT K_U] > U+0055
++ [CAPS SHIFT K_U] > U+0075
+
++ [NCAPS RALT K_U] > U+0169
++ [CAPS RALT K_U] > U+0168
++ [NCAPS RALT SHIFT K_U] > U+0168
++ [CAPS RALT SHIFT K_U] > U+0169
+
++ [NCAPS K_V] > U+0076
++ [CAPS K_V] > U+0056
++ [NCAPS SHIFT K_V] > U+0056
++ [CAPS SHIFT K_V] > U+0076
+
++ [NCAPS K_W] > U+0077
++ [CAPS K_W] > U+0057
++ [NCAPS SHIFT K_W] > U+0057
++ [CAPS SHIFT K_W] > U+0077
+
++ [NCAPS K_X] > U+0078
++ [CAPS K_X] > U+0058
++ [NCAPS SHIFT K_X] > U+0058
++ [CAPS SHIFT K_X] > U+0078
+
++ [NCAPS K_Y] > U+0079
++ [CAPS K_Y] > U+0059
++ [NCAPS SHIFT K_Y] > U+0059
++ [CAPS SHIFT K_Y] > U+0079
+
++ [NCAPS RALT K_Y] > U+1ef9
++ [CAPS RALT K_Y] > U+1ef8
++ [NCAPS RALT SHIFT K_Y] > U+1ef8
++ [CAPS RALT SHIFT K_Y] > U+1ef9
+
++ [NCAPS K_Z] > U+007a
++ [CAPS K_Z] > U+005a
++ [NCAPS SHIFT K_Z] > U+005a
++ [CAPS SHIFT K_Z] > U+007a
+
++ [K_LBRKT] > U+005B 
++ [SHIFT K_LBRKT] > U+007B
+
++ [K_RBRKT] > U+005D
++ [SHIFT K_RBRKT] > U+007D
+
++ [K_COMMA] > U+002c
++ [SHIFT K_COMMA] > U+003c
+
++ [K_SLASH] > U+002f
++ [SHIFT K_SLASH] > U+003f
+
++ [K_PERIOD] > U+002e
++ [SHIFT K_PERIOD] > U+003e
+
++ [K_BKSLASH] > U+005C
++ [SHIFT K_BKSLASH] > U+007C
+
++ [K_QUOTE] > U+A78C
+U+A78C + [K_QUOTE] > U+0027
++ [SHIFT K_QUOTE] > U+0022
++ [K_COLON] > U+003B
++ [SHIFT K_COLON] > U+003a 
+
++ [RALT K_BKQUOTE] > U+007E
+
+dk(tilde) + any(tildeK) > index(tildeU,2)
+dk(tilde) + [SHIFT K_BKQUOTE] > U+007E

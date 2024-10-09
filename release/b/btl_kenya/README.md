@@ -1,9 +1,9 @@
 Kenya (BTL) keyboard
 ====================
 
-© 1994-2019 Bible Translation & Literacy, SIL International
+© 1994-2020 Bible Translation & Literacy, SIL International
 
-Version 1.1
+Version 1.1.1
 
 Description
 -----------

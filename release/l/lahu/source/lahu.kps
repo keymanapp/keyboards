@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -10,6 +10,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,7 +19,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Lahu</Name>
-    <Copyright URL="">© 2010-2019 Bob Prouty</Copyright>
+    <Copyright URL="">© 2010-2023 Bob Prouty</Copyright>
+    <Description>A keyboard for the language Lahu of China, Laos, Myanmar, Thailand and
+Vietnam. Includes the font LahuyaNet</Description>
   </Info>
   <Files>
     <File>
@@ -64,31 +67,37 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>LahuyaNet.ttf</Name>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\latn\lahuya_net\LahuyaNet.ttf</Name>
       <Description>Font Lahuya Net</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>OFL.txt</Name>
+      <Name>..\..\..\shared\fonts\latn\lahuya_net\OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
     </File>
     <File>
-      <Name>readme.htm</Name>
-      <Description>File readme.htm</Description>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lahu</Name>
       <ID>lahu</ID>
-      <Version>1.0</Version>
-      <OSKFont>LahuyaNet.ttf</OSKFont>
-      <DisplayFont>LahuyaNet.ttf</DisplayFont>
+      <Version>1.1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\latn\lahuya_net\LahuyaNet.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\latn\lahuya_net\LahuyaNet.ttf</DisplayFont>
       <Languages>
         <Language ID="lhu-Latn">Lahu (Latin)</Language>
       </Languages>

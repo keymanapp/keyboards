@@ -1,10 +1,8 @@
 <?php
-  $pagename = 'Saraiki (Arabic) Keyboard';
-  $pagetitle = 'Saraiki (Arabic) Keyboard';
+  $pagename = 'Saraiki (Arabic) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
-
-<h1>Saraiki (Arabic) Keyboard Help</h1>
 
 <p>
   Desktop keyboard for typing Saraiki with the Arabic script.
@@ -19,4 +17,4 @@
   <p><img src="saraiki_ctrl_alt.png" alt="Saraiki Keyboard: ctrl-alt"></p>
 
 
-<p>&copy; 2020 Parvez Qadir </p>
+<p>&copy; Parvez Qadir </p>

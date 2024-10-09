@@ -1,11 +1,11 @@
 <?php /*
   Name:        Indic Roman Transliteration
-  Copyright:   
+  Copyright:
   Description: For use in typing transliterated Indic texts. This is a simplified keyboard for typing Roman script with accents or diacritics.
   Authors:     SIL
 */
-  $pagename = 'Indic Roman Transliteration Keyboard Help';
-  $pagetitle = 'Indic Roman Transliteration Keyboard Help';
+  $pagename = 'Indic Roman Transliteration (deprecated) Keyboard Help';
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
@@ -14,7 +14,6 @@
   <meta name=ProgId content=Word.Document>
   <meta name=Generator content="Microsoft Word 11">
   <meta name=Originator content="Microsoft Word 11">
-  <link rel=File-List href="welcome_files/filelist.xml">
   <title>Indic Roman Transliteration: </title>
   <!--[if gte mso 9]><xml>
     <o:DocumentProperties>

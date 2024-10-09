@@ -1,0 +1,213 @@
+﻿c =====================Begin Identity Section===================================================
+c 
+c The Geʾez Frontier Foundation's Mesobe Fidelat keyboard for touch devices.
+c Compliant with Unicode 14 and later.
+c 
+c Keyman        :  http://www.keyman.com/
+c Documentation :  http://help.keyman.com/keyboard/gff_mesobe_fidelat
+c Source        :  https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_mesobe_fidelat
+c License       :  https://opensource.org/licenses/MIT
+c Bugs          :  https://github.com/keymanapp/keyboards/issues
+c 
+c Specification :  http://keyboards.ethiopic.org/specification/
+c Other Info    :  http://keyboards.ethiopic.org/ , http://unicode.org/charts/
+c 
+store(&VERSION) '15.0'
+store(&COPYRIGHT) '© 2022-2023 Geʾez Frontier Foundation'
+store(&Message) "This is a language neutral touch (only) keyboard for mobile devices. The keyboard provides all Ethiopic letters in active use on a single layer in circular, semi-clockwise orientation."
+store(&CapsAlwaysOff) '1'
+store(&LAYOUTFILE) 'gff_mesobe_fidelat.keyman-touch-layout'
+store(&KMW_EMBEDCSS) 'gff_mesobe_fidelat.css'
+c 
+c =====================End Identity Section=====================================================
+
+c =====================Begin Data Section=======================================================
+
+c The remainder of this document is formatted with a fixed width font.
+
+c ---------------------Maps of Syllabic Forms---------------------------------------------------
+c the following is universal (language neutral) these mappings can be overridden by
+c language specific mappings
+  store(ግዕዝ)  'ሀለሐ𞟠መሠረሰሸቀቐበቨተቸኀነኘከኸወዐዘዠየደጀገጘጠጨጰጸፀፈፐ'
+  store(ካዕብ)  'ሁሉሑ𞟡ሙሡሩሱሹቁቑቡቩቱቹኁኑኙኩኹዉዑዙዡዩዱጁጉጙጡጩጱጹፁፉፑ'
+  store(ሣልስ)  'ሂሊሒ𞟢ሚሢሪሲሺቂቒቢቪቲቺኂኒኚኪኺዊዒዚዢዪዲጂጊጚጢጪጲጺፂፊፒ'
+  store(ራብዕ)  'ሃላሓ𞟣ማሣራሳሻቃቓባቫታቻኃናኛካኻዋዓዛዣያዳጃጋጛጣጫጳጻፃፋፓ'
+  store(ኃምስ)  'ሄሌሔ𞟤ሜሤሬሴሼቄቔቤቬቴቼኄኔኜኬኼዌዔዜዤዬዴጄጌጜጤጬጴጼፄፌፔ'
+  store(ሳድስ)  'ህልሕ𞟥ምሥርስሽቅቕብቭትችኅንኝክኽውዐዝዥይድጅግጝጥጭጵጽፅፍፕ'
+  store(ሳብዕ)  'ሆሎሖ𞟦ሞሦሮሶሾቆቖቦቮቶቾኆኖኞኮኾዎዖዞዦዮዶጆጎጞጦጮጶጾፆፎፖ'
+
+c QWERTY keymappings
+  store(keys)  'hlH_m_rsxqQbvtc_nNkKw_zZydjgGTCPS_fp'
+
+c ---------------------End Maps of Syllabic Forms-----------------------------------------------
+
+c ---------------------Maps for Vowels----------------------------------------------------------
+  store(loneVowelKeys)  [T_ሳድስ]'aAuUiIeEoO'[T_ኃምስ]
+  store(loneVowelEthio) 'አአአኡኡኢኢእእኦኦኤ'
+c ---------------------End Vowel Maps-----------------------------------------------------------
+
+c --------------------Maps for Labiovelars------------------------------------------------------
+  store(ግዕዝ፡መደበኛ)     'ሀለሐመሠረሰሸቀቐበቨተቸኀነኘከኸዘዠደጀገጘጠጨጰጸፈፐ'
+  store(ዘመደ፡ራብዕ፡መደበኛ) 'ኋሏሗሟሧሯሷሿቋቛቧቯቷቿኋኗኟኳዃዟዧዷጇጓጟጧጯጷጿፏፗ'
+
+c 'hkqQgG'
+  store(ዘመደ፡ግዕዝ) '𞟨ᎀᎄኈዀቘⶓᎈᎌ'
+  store(ዘመደ፡ካዕብ) '𞟫ᎃᎇኍዅቝⶖᎋᎏ'
+  store(ዘመደ፡ሣልስ) '𞟩𞟭𞟳ኊዂቚⶔ𞟻𞟽'
+  store(ዘመደ፡ራብዕ) 'ሗሟቧኋዃቛጟፏፗ'
+  store(ዘመደ፡ኃምስ) '𞟪𞟮𞟴ኌዄቜⶕ𞟼𞟾'
+
+  store(ዘመደ፡ራብዕ፡ግዕዝ) 'ቋኳጓ'
+  store(ዘመደ፡ግዕዝ፡ግዕዝ) 'ቈኰጐ'
+  store(ዘመደ፡ሣልስ፡ጉራጌ) '𞟰𞟵𞟸'
+  store(ዘመደ፡ሣልስ፡ግዕዝ) 'ቊኲጒ'
+  store(ዘመደ፡ኃምስ፡ግዕዝ) 'ቌኴጔ'
+  store(ዘመደ፡ኃምስ፡ጉራጌ) '𞟱𞟶𞟹'
+  store(ዘመደ፡ካዕብ፡ግዕዝ) 'ቍኵጕ'
+  store(ዘመደ፡ካዕብ፡ጉራጌ) '𞟲𞟷𞟺'
+c ---------------------End Labiovelars----------------------------------------------------------
+
+store(touchVowels)  [T_ግዕዝ][T_ካዕብ][T_ሣልስ][T_ራብዕ][T_ኃምስ][T_ሳድስ][T_ሳብዕ][T_WWA]
+store(ሀ_ቤተሰብ) 'ሀሁሂሃሄህሆኋ'
+store(ለ_ቤተሰብ) 'ለሉሊላሌልሎሏ'
+store(ሐ_ቤተሰብ) 'ሐሑሒሓሔሕሖሗ'
+store(𞟠_ቤተሰብ) '𞟠𞟡𞟢𞟣𞟤𞟥𞟥𞟦!'
+store(መ_ቤተሰብ) 'መሙሚማሜምሞሟ'
+store(ሠ_ቤተሰብ) 'ሠሡሢሣሤሥሦሧ'
+store(ረ_ቤተሰብ) 'ረሩሪራሬርሮሯ'
+store(ሰ_ቤተሰብ) 'ሰሱሲሳሴስሶሷ'
+store(ሸ_ቤተሰብ) 'ሸሹሺሻሼሽሾሿ'
+store(ቀ_ቤተሰብ) 'ቀቁቂቃቄቅቆቋ'
+store(ቐ_ቤተሰብ) 'ቐቑቒቓቔቕቖቛ'
+store(በ_ቤተሰብ) 'በቡቢባቤብቦቧ'
+store(ቨ_ቤተሰብ) 'ቨቩቪቫቬቭቮቯ'
+store(ተ_ቤተሰብ) 'ተቱቲታቴትቶቷ'
+store(ቸ_ቤተሰብ) 'ቸቹቺቻቼችቾቿ'
+store(ኀ_ቤተሰብ) 'ኀኁኂኃኄኅኆኋ'
+store(ነ_ቤተሰብ) 'ነኑኒናኔንኖኗ'
+store(ኘ_ቤተሰብ) 'ኘኙኚኛኜኝኞኟ'
+store(አ_ቤተሰብ) 'አኡኢኣኤእኦኧ'
+store(ከ_ቤተሰብ) 'ከኩኪካኬክኮኳ'
+store(ኸ_ቤተሰብ) 'ኸኹኺኻኼኽኾዃ'
+store(ወ_ቤተሰብ) 'ወዉዊዋዌውዎ!'
+store(ዐ_ቤተሰብ) 'ዐዑዒዓዔዕዖ!'
+store(ዘ_ቤተሰብ) 'ዘዙዚዛዜዞዝዟ'
+store(ዠ_ቤተሰብ) 'ዠዡዢዣዤዥዦዧ'
+store(የ_ቤተሰብ) 'የዩዪያዬይዮ!'
+store(ደ_ቤተሰብ) 'ደዱዲዳዴድዶዷ'
+store(ጀ_ቤተሰብ) 'ጀጁጂጃጄጅጆጇ'
+store(ገ_ቤተሰብ) 'ገጉጊጋጌግጎጓ'
+store(ጘ_ቤተሰብ) 'ጘጙጚጛጜጝጞጟ'
+store(ጠ_ቤተሰብ) 'ጠጡጢጣጤጥጦጧ'
+store(ጨ_ቤተሰብ) 'ጨጩጪጫጬጭጮጯ'
+store(ጰ_ቤተሰብ) 'ጰጱጲጳጴጵጶጷ'
+store(ጸ_ቤተሰብ) 'ጸጹጺጻጼድጾጿ'
+store(ፀ_ቤተሰብ) 'ፀፁፂፃፄፅፆ!'
+store(ፈ_ቤተሰብ) 'ፈፉፊፋፌፍፎፏ'
+store(ፐ_ቤተሰብ) 'ፐፑፒፓፔፕፖፗ'
+
+c =====================End Data Section=========================================================
+
+c =====================Begin Functional Section=================================================
+c 
+store(&KEYBOARDVERSION) '1.1'
+store(&TARGETS) 'mobile'
+store(&NAME) 'መሶበ ፊደላት'
+
+  begin Unicode > use(main)
+  group(main) using keys
+
+c ---------------------Input of Special Symbols-------------------------------------------------
+c 
+c The input section here is for rules that must precede other rules
+c 
+  + any(keys)     > index(ግዕዝ,1)
+c ---------------------End Input of Special Symbols---------------------------------------------
+
+c ---------------------Input of Basic Syllables-------------------------------------------------
+  + [T_1220] > 'ሠ'
+  + [T_1280] > 'ኀ'
+  + [T_12A0] > 'አ'
+  + [T_12D0] > 'ዐ'
+  + [T_1340] > 'ፀ'
+  + [T_1E7E0] > '𞟠'
+  any(ግዕዝ) + [T_ካዕብ] > index(ካዕብ,1)
+  any(ግዕዝ) + [T_ሣልስ] > index(ሣልስ,1)
+  any(ግዕዝ) + [T_ራብዕ] > index(ራብዕ,1)
+  any(ግዕዝ) + [T_ኃምስ] > index(ኃምስ,1)
+  any(ግዕዝ) + [T_ሳድስ] > index(ሳድስ,1)
+  any(ግዕዝ) + [T_ሳብዕ] > index(ሳብዕ,1)
+
+c ---------------------Input of Labiovelars-----------------------------------------------------
+  any(ግዕዝ፡መደበኛ) + [T_WWA] > index(ዘመደ፡ራብዕ፡መደበኛ,1)
+  any(ዘመደ፡ራብዕ)  + [T_WWA] > index(ዘመደ፡ግዕዝ,1)
+  any(ዘመደ፡ግዕዝ)  + [T_WWA] > index(ዘመደ፡ሣልስ,1)
+  any(ዘመደ፡ሣልስ)  + [T_WWA] > index(ዘመደ፡ኃምስ,1)
+  any(ዘመደ፡ኃምስ)  + [T_WWA] > index(ዘመደ፡ካዕብ,1)
+
+  any(ዘመደ፡ራብዕ፡ግዕዝ) + [T_WWA] > index(ዘመደ፡ግዕዝ፡ግዕዝ,1)
+  any(ዘመደ፡ግዕዝ፡ግዕዝ) + [T_WWA] > index(ዘመደ፡ሣልስ፡ግዕዝ,1)
+  any(ዘመደ፡ሣልስ፡ግዕዝ) + [T_WWA] > index(ዘመደ፡ሣልስ፡ጉራጌ,1)
+  any(ዘመደ፡ሣልስ፡ጉራጌ) + [T_WWA] > index(ዘመደ፡ኃምስ፡ግዕዝ,1)
+  any(ዘመደ፡ኃምስ፡ግዕዝ) + [T_WWA] > index(ዘመደ፡ኃምስ፡ጉራጌ,1)
+  any(ዘመደ፡ኃምስ፡ጉራጌ) + [T_WWA] > index(ዘመደ፡ካዕብ፡ግዕዝ,1)
+  any(ዘመደ፡ካዕብ፡ግዕዝ) + [T_WWA] > index(ዘመደ፡ካዕብ፡ጉራጌ,1)
+c ---------------------End Input of Labiovelars-------------------------------------------------
+
+  if( &layer = "ሀ-layer" ) + any(touchVowels) > index(ሀ_ቤተሰብ,2)
+  if( &layer = "ለ-layer" ) + any(touchVowels) > index(ለ_ቤተሰብ,2)
+  if( &layer = "ሐ-layer" ) + any(touchVowels) > index(ሐ_ቤተሰብ,2)
+  if( &layer = "መ-layer" ) + any(touchVowels) > index(መ_ቤተሰብ,2)
+  if( &layer = "ሠ-layer" ) + any(touchVowels) > index(ሠ_ቤተሰብ,2)
+  if( &layer = "ረ-layer" ) + any(touchVowels) > index(ረ_ቤተሰብ,2)
+  if( &layer = "ሰ-layer" ) + any(touchVowels) > index(ሰ_ቤተሰብ,2)
+  if( &layer = "ሸ-layer" ) + any(touchVowels) > index(ሸ_ቤተሰብ,2)
+  if( &layer = "ቀ-layer" ) + any(touchVowels) > index(ቀ_ቤተሰብ,2)
+  if( &layer = "ቐ-layer" ) + any(touchVowels) > index(ቐ_ቤተሰብ,2)
+  if( &layer = "በ-layer" ) + any(touchVowels) > index(በ_ቤተሰብ,2)
+  if( &layer = "ቨ-layer" ) + any(touchVowels) > index(ቨ_ቤተሰብ,2)
+  if( &layer = "ተ-layer" ) + any(touchVowels) > index(ተ_ቤተሰብ,2)
+  if( &layer = "ቸ-layer" ) + any(touchVowels) > index(ቸ_ቤተሰብ,2)
+  if( &layer = "ኀ-layer" ) + any(touchVowels) > index(ኀ_ቤተሰብ,2)
+  if( &layer = "ነ-layer" ) + any(touchVowels) > index(ነ_ቤተሰብ,2)
+  if( &layer = "ኘ-layer" ) + any(touchVowels) > index(ኘ_ቤተሰብ,2)
+  if( &layer = "አ-layer" ) 'አ' + any(touchVowels) > index(አ_ቤተሰብ,3)
+  if( &layer = "አ-layer" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  if( &layer = "default" ) + any(touchVowels) > index(አ_ቤተሰብ,2)
+  if( &layer = "ከ-layer" ) + any(touchVowels) > index(ከ_ቤተሰብ,2) 
+  if( &layer = "ኸ-layer" ) + any(touchVowels) > index(ኸ_ቤተሰብ,2)
+  if( &layer = "ዐ-layer" ) + any(touchVowels) > index(ዐ_ቤተሰብ,2)
+  if( &layer = "ወ-layer" ) + any(touchVowels) > index(ወ_ቤተሰብ,2)
+  if( &layer = "ዘ-layer" ) + any(touchVowels) > index(ዘ_ቤተሰብ,2) 
+  if( &layer = "ዠ-layer" ) + any(touchVowels) > index(ዠ_ቤተሰብ,2)
+  if( &layer = "የ-layer" ) + any(touchVowels) > index(የ_ቤተሰብ,2)
+  if( &layer = "ደ-layer" ) + any(touchVowels) > index(ደ_ቤተሰብ,2)
+  if( &layer = "ጀ-layer" ) + any(touchVowels) > index(ጀ_ቤተሰብ,2)
+  if( &layer = "ገ-layer" ) + any(touchVowels) > index(ገ_ቤተሰብ,2)
+  if( &layer = "ጘ-layer" ) + any(touchVowels) > index(ጘ_ቤተሰብ,2)
+  if( &layer = "ጠ-layer" ) + any(touchVowels) > index(ጠ_ቤተሰብ,2) 
+  if( &layer = "ጨ-layer" ) + any(touchVowels) > index(ጨ_ቤተሰብ,2)
+  if( &layer = "ጰ-layer" ) + any(touchVowels) > index(ጰ_ቤተሰብ,2) 
+  if( &layer = "ጸ-layer" ) + any(touchVowels) > index(ጸ_ቤተሰብ,2)
+  if( &layer = "ፀ-layer" ) + any(touchVowels) > index(ፀ_ቤተሰብ,2)
+  if( &layer = "ፈ-layer" ) + any(touchVowels) > index(ፈ_ቤተሰብ,2)
+  if( &layer = "ፐ-layer" ) + any(touchVowels) > index(ፐ_ቤተሰብ,2)
+  if( &layer = "𞟠-layer" ) + any(touchVowels) > index(𞟠_ቤተሰብ,2)
+c ---------------------End Input of Basic Syllables---------------------------------------------
+c
+c Ethiopic combining marks for vowel and consonant stress.
+c
+c The following can happen from the touch keyboards፡
+c
+U+135E + [U_135E] > U+135F c 1 + 1 > 2
+U+135F + [U_135E] > U+135D c 2 + 1 > 3
+c
+c warn but don't combine:
+c
+U+135D + [U_135E] > U+135D beep  c 3 + 1
+
+
+  + [T_THOUSAND] > '፲፻'
+  + [T_EMPTY] > beep
+
+c =====================End Functional Section===================================================

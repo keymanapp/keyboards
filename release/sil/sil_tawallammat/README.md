@@ -1,9 +1,9 @@
 Tawallammat Tifinagh (SIL) Keyboard
 =====================
 
-Copyright (C) 2017-2018 SIL International
+Copyright (C) 2017-2020 SIL International
 
-Version 1.1
+Version 1.1.1
 
 __DESCRIPTION__
 This Tifinagh keyboard was developed to input characters for 

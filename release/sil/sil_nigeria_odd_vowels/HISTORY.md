@@ -1,6 +1,10 @@
 Nigeria Odd Vowels (SIL) Keyboard Change History
 =======================
 
+1.6 (2024-Sep-12)
+---------------
+* Remove .js file from .kps so there are no expectations of Mobile support
+
 1.5 (3 Jul 2018)
 ------------------
 * Migrated to Github

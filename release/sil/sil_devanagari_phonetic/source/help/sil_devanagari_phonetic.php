@@ -2,7 +2,7 @@
   $pagename = 'Devanagari Phonetic (SIL)  Keyboard Help';
   $pagetitle = 'Devanagari Phonetic (SIL)  Keyboard Help';
   $pagestyle = <<<END
-    samp {font-family: Annapurna; font-size:20pt;   }
+    samp {font-family: Annapurna SIL; font-size:20pt;   }
     kbd {color:black; font: 0.8em sans-serif; border:solid 1px grey; background:#ccc; margin:2px 1px; padding:2px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
     .inputSequences {border-collapse: collapse;font-size: 14px;min-width: 592px;}
     .inputSequences th, .inputSequences td {padding: 7px 17px;}
@@ -18,17 +18,16 @@ END;
 
     <h2>Keyboard layout</h2>
 
-    <h2>Default (unshifted)</h2>
-    <p><img src="sil_devanagari_phoneticU_.png" alt="Default (unshifted) state"/></p>
+<h3>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-    <h2>Shift</h2>
-    <p><img src="sil_devanagari_phoneticU_S.png" alt="Shift state"/></p>
+<h3>Mobile/Tablet Keyboard Layout</h2>
+<p>Due to the size and number of keys, some characters are hidden in the long press. 
+	Press and hold on the key with a little dot on the top right to reveal and use them.</p>
 
-    <h2>AltGr (RAlt)</h2>
-    <p><img src="sil_devanagari_phoneticU_RA.png" alt="AltGr (RAlt) state"/></p>
-
-    <h2>Shift + AltGr (RAlt)</h2>
-    <p><img src="sil_devanagari_phoneticU_SRA.png" alt="Shift + AltGr (RAlt) state"/></p>
+<div id='osk-tablet' data-states='default shift rightalt'>
+</div>
 
     <h2>Other input sequences</h2>
     <h3>Independent vowels</h3>

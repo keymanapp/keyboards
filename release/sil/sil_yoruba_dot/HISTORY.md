@@ -1,5 +1,9 @@
-Yorùbá with Dot Change History
+YorÃ¹bÃ¡ with Dot Change History
 ====================
+
+1.4.1 (2020-10-27)
+----------------
+* Increment version number to force recompile of touch layout.
 
 1.4 (2020-04-14)
 ----------------

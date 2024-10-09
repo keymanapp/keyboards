@@ -1,18 +1,18 @@
 <?php /*
   Name:             keyboard_ekwnewtwuni
   Copyright:        Copyright (C) 2005 Tavultesoft Pty Ltd.
-  Documentation:    
-  Description:      
+  Documentation:
+  Description:
   Create Date:      18 Sep 2009
 
   Modified Date:    18 Sep 2009
   Authors:          mcdurdin
-  Related Files:    
-  Dependencies:     
+  Related Files:
+  Dependencies:
 
-  Bugs:             
-  Todo:             
-  Notes:            
+  Bugs:
+  Todo:
+  Notes:
   History:          18 Sep 2009 - mcdurdin - Additional help
 */
   require_once('servervars.php');
@@ -25,7 +25,7 @@
 
 
 <div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
+		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically
 the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
 
 <h2>Overview</h2>
@@ -85,7 +85,7 @@ This keyboard is designed for the Tamil language.  It is a phonetic keyboard, wh
 <div id="Documentation">
 <h3>Full Documentation</h3>
 		<!-- The guts of the documentation: reasoning behind the keyboard layout; detailed instructions on typing & editing; instructions on special characters or keyboard behaviour, etc.; complete character/input chart or link to chart; -->
-	
+
 <p>This keyboard uses a consonant-vowel order for text input, so the consonant character is always typed before the vowel, regardless of where (relative to the consonant) the vowel marker symbol appears.  As syllables are typed, the characters entered are automatically converted to the appropriate consonant-vowel combinant.  While only the combinant characters are displayed on screen, the consonant and vowel are both stored, so that pressing Backspace once after a combinant deletes only the vowel component.  This means it is necessary to press Backspace twice to delete a combinant character.  However, pressing the Delete key with the cursor in front of a combinant character removes the whole character with one keystroke.</p>
 
 <p>The visible keyboard layout consists of the ten vowels <span class='lang2'>அ ஆ இ ஈ உ ஊ எ ஏ ஒ ஓ</span> (the vowels <span class='lang2'>ஐ ஔ</span> are typed with two keystrokes), the eighteen consonants <span class='lang2'>க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன</span>, the Grantha consonants <span class='lang2'>ஸ ஜ ஹ க்ஷ</span> (<span class='lang2'>ஷ</span> is typed with two keystrokes, and <span class='lang2'>ஸ்ரீ</span> with three) and the Aytham <span class='lang2'>ஃ</span> mark.
@@ -93,7 +93,7 @@ This keyboard is designed for the Tamil language.  It is a phonetic keyboard, wh
 
 <h4>Consonants and Pulli Marks</h4>
 <p>
-Most of the consonants are arranged so that they can be typed with a single key.  A few consonants which use the same English (Roman) letter as another consonant, or which have no equivalent English letter, must be typed with two keystrokes.  See the <a href="keyboardchart.htm">complete keyboard chart</a> for details.</p>
+Most of the consonants are arranged so that they can be typed with a single key.  A few consonants which use the same English (Roman) letter as another consonant, or which have no equivalent English letter, must be typed with two keystrokes.  See the <a href="#KeyboardChart">complete keyboard chart</a> for details.</p>
 <p>
 This keyboard does not have a key for the Pulli mark <span class='highlightExample'>்</span>, which defines a standalone consonant.  Instead, every consonant will display the Pulli mark when it is typed, and the Pulli mark will disappear when a vowel is typed.  The implicit vowel <span class='highlightExample'>அ</span> thus needs to be typed, though it is not actually displayed when combined with a consonant.
 </p>

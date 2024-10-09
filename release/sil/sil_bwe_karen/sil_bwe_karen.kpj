@@ -4,6 +4,8 @@
     <BuildPath>$PROJECTPATH\build</BuildPath>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
     <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>True</CheckFilenameConventions>
+    <ProjectType>keyboard</ProjectType>
   </Options>
   <Files>
     <File>
@@ -13,19 +15,19 @@
       <FileVersion></FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>Bwe Karen</Name>
-        <Copyright>© 2018 SIL International</Copyright>
+        <Name>Bwe Karen (SIL)</Name>
+        <Copyright>© 2018-2022 SIL International</Copyright>
       </Details>
     </File>
     <File>
       <ID>id_975cd29421183988d498c7fd121076a8</ID>
       <Filename>sil_bwe_karen.kmn</Filename>
       <Filepath>source\sil_bwe_karen.kmn</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.0.1</FileVersion>
       <FileType>.kmn</FileType>
       <Details>
-        <Name>Bwe Karen</Name>
-        <Copyright>©2018 SIL International</Copyright>
+        <Name>Bwe Karen (SIL)</Name>
+        <Copyright>© SIL International</Copyright>
       </Details>
     </File>
     <File>
@@ -42,14 +44,6 @@
       <Filepath>source\..\build\sil_bwe_karen.kmx</Filepath>
       <FileVersion></FileVersion>
       <FileType>.kmx</FileType>
-      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
-    </File>
-    <File>
-      <ID>id_5b09203a20559b63b2a402781d834776</ID>
-      <Filename>CharisSILCompact-R.ttf</Filename>
-      <Filepath>source\CharisSILCompact-R.ttf</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.ttf</FileType>
       <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
     </File>
     <File>
@@ -80,6 +74,78 @@
       <ID>id_724e5b4c63f10bc0abf7077f7c3172fc</ID>
       <Filename>welcome.htm</Filename>
       <Filepath>source\welcome\welcome.htm</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.htm</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_4d8cb6b07bfdbc291dc7077c44199722</ID>
+      <Filename>CharisSIL-Compact_README.txt</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact_README.txt</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.txt</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_c9f342542d691e6b1c210fc837da15d4</ID>
+      <Filename>CharisSIL-Compact-Bold.ttf</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Bold.ttf</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ttf</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_45f4936b6177821cf6139965a1a08d82</ID>
+      <Filename>CharisSIL-Compact-BoldItalic.ttf</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-BoldItalic.ttf</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ttf</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_9feb09ffbd93173a03da052d53b29f43</ID>
+      <Filename>CharisSIL-Compact-Italic.ttf</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Italic.ttf</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ttf</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_cc52f00e97afe99fb360945ae0055f03</ID>
+      <Filename>CharisSIL-Compact-Regular.ttf</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ttf</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_6767fe86c4fff098871c96621f560fc7</ID>
+      <Filename>FONTLOG.txt</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\FONTLOG.txt</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.txt</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_d39a5d6367626ce26378a54559139c4c</ID>
+      <Filename>OFL.txt</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\OFL.txt</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.txt</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_2cd1b02fbce0855401aeaa6a11b60937</ID>
+      <Filename>OFL-FAQ.txt</Filename>
+      <Filepath>source\..\..\..\shared\fonts\sil\charis_compact\OFL-FAQ.txt</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.txt</FileType>
+      <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>
+    </File>
+    <File>
+      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
+      <Filename>readme.htm</Filename>
+      <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
       <ParentFileID>id_53f54bd51fc4f1a4096bb504c8374359</ParentFileID>

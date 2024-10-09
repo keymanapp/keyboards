@@ -5,7 +5,7 @@
 ?>
 
 <nav>
-  <p lang="es"> <a href="#pid_piaroa-es">Lee este documento en español.</a> </p> 
+  <p lang="es"> <a href="#pid_piaroa-es">Lee este documento en español.</a> </p>
 </nav>
 
 <a id="pid_piaroa-en"></a>
@@ -14,7 +14,7 @@
 
 <h1>Fonts</h1>
 
-<p>There is no special font required to render Piaroa text, however, some fonts and applications struggle to render the combining cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) underneath the vowel.  On Windows, Calibri renders this correctly (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); on macOS, Helvetica Neue renders these characters correctly (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
+<p>There is no special font required to render Piaroa text, however, some fonts and applications struggle to render the combining cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) underneath the vowel.  On Windows, Calibri renders this correctly (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧, ü̧</span>); on macOS, Helvetica Neue renders these characters correctly (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧, ü̧</span>).</p>
 
 <h1>Characters</h1>
 
@@ -28,8 +28,10 @@
   <tbody>
     <tr> <td>ä</td> <td> <kbd>AltGr</kbd> + <kbd>A</kbd></td> </tr>
     <tr> <td>ö</td> <td> <kbd>AltGr</kbd> + <kbd>O</kbd></td> </tr>
+    <tr> <td>ü</td> <td> <kbd>AltGr</kbd> + <kbd>U</kbd></td> </tr>
     <tr> <td>Ä</td> <td> <kbd>Shift</kbd> + <kbd>AltGr</kbd> + <kbd>A</kbd></td> </tr>
     <tr> <td>Ö</td> <td> <kbd>Shift</kbd> + <kbd>AltGr</kbd> + <kbd>O</kbd></td> </tr>
+    <tr> <td>Ü</td> <td> <kbd>Shift</kbd> + <kbd>AltGr</kbd> + <kbd>U</kbd></td> </tr>
     <tr> <td>a&#x327;</td> <td> <kbd>A</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>e&#x327;</td> <td> <kbd>E</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>i&#x327;</td> <td> <kbd>I</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
@@ -37,6 +39,9 @@
     <tr> <td>u&#x327;</td> <td> <kbd>U</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ä&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>A</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ö&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>O</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ü&#x327;</td> <td> <kbd>AltGr</kbd> + <kbd>U</kbd>, then <kbd>AltGr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ñ</td> <td> <kbd>Alt Gr</kbd> + <kbd>N</kbd></td> </tr>
+    <tr> <td>Ñ</td> <td> <kbd>Shift</kbd> + <kbd>AltGr</kbd> + <kbd>N</kbd></td> </tr>
   </tbody>
 </table>
 
@@ -58,7 +63,7 @@ funcionará!</em></p>
 
 <h1 lang="es">Fuentes</h1>
 
-<p lang="es">Piaroa no requiere una fuente especial. Sin embargo, algunas fuentes no son capaces de renderizar la cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) debajo de vocales.  En sistemas Windows, la fuente Calibri renderiza la cedilla correctamente (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); en sistemas macOS, la fuente Helvetica Neue renderiza la cedilla correctamente (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
+<p lang="es">Piaroa no requiere una fuente especial. Sin embargo, algunas fuentes no son capaces de renderizar la cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) debajo de vocales.  En sistemas Windows, la fuente Calibri renderiza la cedilla correctamente (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧, ü̧</span>); en sistemas macOS, la fuente Helvetica Neue renderiza la cedilla correctamente (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧, ü̧</span>).</p>
 
 <aside>
   <p>Anteriormente, era necesario usar la fuente piaroa SILSophia, pero esta
@@ -77,8 +82,10 @@ funcionará!</em></p>
   <tbody>
     <tr> <td>ä</td> <td> <kbd>Alt Gr</kbd> + <kbd>A</kbd></td> </tr>
     <tr> <td>ö</td> <td> <kbd>Alt Gr</kbd> + <kbd>O</kbd></td> </tr>
+    <tr> <td>ü</td> <td> <kbd>Alt Gr</kbd> + <kbd>U</kbd></td> </tr>
     <tr> <td>Ä</td> <td> <kbd>⇧ Mayús</kbd> + <kbd>Alt Gr</kbd> + <kbd>A</kbd></td> </tr>
     <tr> <td>Ö</td> <td> <kbd>⇧ Mayús</kbd> + <kbd>Alt Gr</kbd> + <kbd>O</kbd></td> </tr>
+    <tr> <td>Ü</td> <td> <kbd>⇧ Mayús</kbd> + <kbd>Alt Gr</kbd> + <kbd>U</kbd></td> </tr>
     <tr> <td>a&#x327;</td> <td> <kbd>A</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>e&#x327;</td> <td> <kbd>E</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>i&#x327;</td> <td> <kbd>I</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
@@ -86,6 +93,9 @@ funcionará!</em></p>
     <tr> <td>u&#x327;</td> <td> <kbd>U</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ä&#x327;</td> <td> <kbd>Alt Gr</kbd> + <kbd>A</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
     <tr> <td>ö&#x327;</td> <td> <kbd>Alt Gr</kbd> + <kbd>O</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ü&#x327;</td> <td> <kbd>Alt Gr</kbd> + <kbd>U</kbd>, luego <kbd>Alt Gr</kbd> + <kbd>,</kbd> </td> </tr>
+    <tr> <td>ñ</td> <td> <kbd>Alt Gr</kbd> + <kbd>N</kbd></td> </tr>
+    <tr> <td>Ñ</td> <td> <kbd>⇧ Mayús</kbd> + <kbd>Alt Gr</kbd> + <kbd>N</kbd></td> </tr>
   </tbody>
 </table>
 
@@ -96,8 +106,9 @@ funcionará!</em></p>
 <hr>
 
 <h1>Change History</h1>
+<p>1.2.0: Add ü̧/Ü̧ and ñ/Ñ</p>
 <p>1.1.1: Prepare for inclusion in Keyman Keyboards repository.</p>
 <p>1.1.0: Prevent inserting extraneous cedillas.</p>
 <p>1.0.0: Initial release.</p>
 
-<p>&copy; 2019 Eddie Antonio Santos</p>
+<p>&copy; 2022 Eddie Antonio Santos</p>

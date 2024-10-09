@@ -1,6 +1,14 @@
 Busa Change History
 =======================
 
+1.5 (2024-09-06)
+----------------
+* Added a tablet layout
+
+1.4.2 (2021-07-01)
+----------------
+* Updated to use new version of Charis SIL
+
 1.4.1 (8 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux

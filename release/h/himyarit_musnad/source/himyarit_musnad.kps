@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>16.0.144.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>himyarit_musnad.bmp</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder>Himyarit Musnad Keyboard</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Welcome</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Himyarit Musnad Keyboard</Name>
+        <FileName>(Start Product)</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>OFL (Qataban Font License)</Name>
+        <FileName>OFL.txt</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Himyarit Musnad Typing Manual</Name>
+        <FileName>HimyaritMusnadTyping-English.pdf</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Name URL="">Himyarit Musnad</Name>
+    <Copyright URL="">© Riyadh Alfareh</Copyright>
+    <Author URL="mailto:ralfareh@mtn.com.ye">رياض الفرح (Riyadh Alfareh)</Author>
+    <Version URL=""></Version>
+    <Description>The Himyarit Musnad keyboard supports the entry of Musnad Script which
+is also commonly referred to as "Old South Arabian" and "Sabaean" or
+"Himyarit" script by different communities. Musnad and the languages
+that used it continue to be important to the studies of Semitic
+languages. Musnad was written in either the boustrophedon style of
+writing or in the right-to-left direction. The keyboard is agnostic to
+the writing direction and leaves it to the editor application to control
+the direction of text.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\himyarit_musnad.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\himyarit_musnad.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\himyarit_musnad.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>himyarit_musnad.bmp</Name>
+      <Description>File himyarit_musnad.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>HimyaritMusnadTyping-English.pdf</Name>
+      <Description>File HimyaritMusnadTyping-English.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>himyarit_musnad_layout.png</Name>
+      <Description>File himyarit_musnad_layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sarb\qataban\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sarb\qataban\Qataban-1_0.ttf</Name>
+      <Description>Font Qataban</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sarb\sultan_musnad\sultanmusnad.ttf</Name>
+      <Description>Font sultan-musnad</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sarb\sultan_musnad\SultanMusnad-Normal.ttf</Name>
+      <Description>Font SultanMusnad Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sarb\sultan_musnad\SultanMusnadOFL.txt</Name>
+      <Description>File SultanMusnadOFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Arab\naskh\NotoNaskhArabic-Regular.ttf</Name>
+      <Description>Font Noto Naskh Arabic Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Himyarit Musnad</Name>
+      <ID>himyarit_musnad</ID>
+      <Version>1.3</Version>
+      <RTL>True</RTL>
+      <OSKFont>NotoNaskhArabic-Regular.ttf</OSKFont>
+      <DisplayFont>NotoNaskhArabic-Regular.ttf</DisplayFont>
+      <WebDisplayFonts><Font Filename="SultanMusnad-Normal.ttf"/></WebDisplayFonts>
+      <Languages>
+        <Language ID="xsa">Sabaean</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

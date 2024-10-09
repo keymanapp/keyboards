@@ -1,0 +1,106 @@
+.kmw-key-row {
+}
+
+.phone.android .kmw-key.kmw-key-default, .phone.ios .kmw-key.kmw-key-default {
+color: black;
+background: none; /* white;*/
+border: none;
+font-size: 1.2em;
+}
+
+.phone.android .kmw-key-layer-group, .phone.ios .kmw-key-layer-group {
+    background: #eee;
+}
+.phone.android .kmw-key.kmw-key-shift, .phone.android .kmw-key.kmw-key-special, .phone.ios .kmw-key.kmw-key-shift, .phone.ios .kmw-key.kmw-key-special {
+    color: #333;
+    background: #ccc;
+}
+.phone.android .kmw-key.kmw-key-default.kmw-spacebar, .phone.ios .kmw-key.kmw-key-default.kmw-spacebar {
+    border: 1pt solid white;
+    border-bottom: none;
+    color: gray;
+}
+
+.phone.android .kmw-key-popup-icon, .phone.ios .kmw-key-popup-icon {
+    font-size: 50%;
+    /*top: 70%;
+    bottom: 0px;
+    right: 8%;
+    left: initial;*/
+    color: #6b6;
+}
+
+.phone.android #kmw-popup-keys {
+   border-radius: 10px;
+}
+
+.phone.android .kmw-banner-bar, .phone.ios .kmw-banner-bar {
+    background: #cdc;
+    color: #131;
+}
+
+.phone.android .kmw-suggestion-text, .phone.ios .kmw-suggestion-text {
+    color: #131;
+}
+
+.kmw-banner-bar .kmw-suggest-option {
+/* height: auto; */
+font-size: 85%;
+}
+
+.phone.android #kmw-popup-keys, .phone.ios #kmw-popup-keys {
+    background: #fff;
+}
+
+.phone.android #kmw-popup-keys .kmw-key.kmw-key-default, #kmw-popup-keys .kmw-key.kmw-key-default {
+background: #eee;
+}
+
+.phone.android #kmw-popup-keys .kmw-key.kmw-key-default.kmw-key-touched, #kmw-popup-keys .kmw-key.kmw-key-default.kmw-key-touched {
+background-color: #9e9;
+}
+
+.phone.android .kmw-key-touched,  .kmw-key-touched {
+background-color: #9e9;
+}
+
+.phone.android #kmw-popup-keys .kmw-key-square-ex .kmw-key,  #kmw-popup-keys .kmw-key-square-ex .kmw-key {
+margin-bottom: 30px;
+background: #eee;
+color: black;
+}
+.phone.android .kmw-keytip,  .kmw-keytip {
+margin-bottom: 15px;
+}
+#kmw-popup-keys { background-color: #eee; color: black;}
+
+@media (prefers-color-scheme: dark) {
+  div.ios div.kmw-keytip, div.android div.kmw-keytip {
+    background-color:#cdc;
+    color: #333;
+  }
+
+  /* Style for callout used on phones */
+  #kmw-popup-callout {
+  background-color: #eff3f9;
+  }
+
+    .phone.ios .kmw-key-layer-group {background-color: #eee}
+  .phone.ios .kmw-key.kmw-key-default {color:black;background-color:#eee}
+  .phone.ios .kmw-key.kmw-key-shift,
+	.phone.ios .kmw-key.kmw-key-special {color:#eee;background-color:gray;}
+  .phone.ios .kmw-key.kmw-key-shift-on,
+	.phone.ios .kmw-key.kmw-key-special-on {color:#eee;background-color:#88f;}
+  .phone.ios .kmw-key.kmw-key-touched {background-color:#6b6;}
+  .phone.ios .kmw-key-deadkey{color:#0d0;background-color:#3d3d3e;}
+
+	.phone.android .kmw-key.kmw-key-default.kmw-spacebar, .phone.ios .kmw-key.kmw-key-default.kmw-spacebar {
+		border: 1pt solid gray;
+		border-bottom: none;
+		color: gray;
+}
+
+	.kmw-key.kmw-key-default.kmw-spacebar .kmw-spacebar-caption {
+		color: gray;
+	}
+  

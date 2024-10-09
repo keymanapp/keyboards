@@ -16,8 +16,8 @@
   History:          18 Sep 2009 - mcdurdin - Full help
 */
   require_once('servervars.php');
-  $pagename = 'Inscript Malayalam Keyboard Help';
-  $pagetitle = 'Inscript Malayalam Keyboard Help';
+  $pagename = 'Inscript Malayalam (deprecated) Keyboard Help';
+  $pagetitle = 'Inscript Malayalam (deprecated) Keyboard Help';
   $style = 'lang2 {font-size:250%}';
   
   require_once('header.php');

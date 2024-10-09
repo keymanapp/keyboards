@@ -1,6 +1,6 @@
-<?php 
+<?php
   $pagename = "GFF Eritrean Tigrinya";
-  $pagetitle = "The Ge&rsquo;ez Frontier Foundation Keyboard for Eritrean Tigrinya";
+  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Eritrean Tigrinya";
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
 
@@ -61,22 +61,28 @@ END;
 
 
 ?>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="kb.css"/>
+</head>
 
 
+<div id='Overview'>
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
 <p style="text-align: justify;">
-This is a Tigrinya (ti-ER, ትግርኛ-ኤርትራ) language mnemonic input method that applies Eritrean writing conventions. 
-It requires a font supporting Ethiopic script under the Unicode 3.0 standard. 
-The Tigrinya keyboard is &ldquo;mnemonic&rdquo; and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
+This is a Tigrinya (ti-ER, ትግርኛ-ኤርትራ) language mnemonic input method that applies Eritrean writing conventions.
+It requires a font supporting Ethiopic script under the Unicode 3.0 standard.
+The Tigrinya keyboard is “mnemonic” and designed for the US English QWERTY keyboard.  This means that the keyboard is designed to
 be intuitive and natural with respect to the sounds available in the English language via the standard English keyboard (known as QWERTY).
 The keyboard also supports mnemonic mappings from non-English letters found in European keyboards.
 </p>
 
-<p>A more complete typing manual is provided as a PDF file with this distribution.</p>
+<p>A more complete typing manual is <a target="_blank" href="TigrinyaErTyping-English.pdf">provided as a PDF file</a> with this distribution.</p>
+</div>
 
- 
-<h2><a id="status" name="status"></a>Typing Letter</h2>
+<h2><a id="status" name="status"></a>Typing Letters</h2>
 
 <p style="text-align: justify;">
 Only the letters used in Eritrean Tigrinya may be typed with this keyboard. To type additional Ethiopic letters used by other languages, please
@@ -145,7 +151,7 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th>ኘ-ነሐስ</th><th>N</th><td>ኘ</td><td>ኙ</td><td>ኚ</td><td>ኛ</td><td>ኜ</td><td>ኝ</td><td>ኞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ኟ</td><td>&nbsp;</td><th>ɲ</th>
   </tr>
   <tr>
-    <th>አልፍ</th><th>&nbsp;</th><td>አ<br/>aaaa</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>a</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
+    <th>አልፍ</th><th>&nbsp;</th><td>አ<br/>aa</td><td>ኡ<br/>u</td><td>ኢ<br/>i</td><td>ኣ<br/>a</td><td>ኤ<br/>ie</td><td>እ<br/>e</td><td>ኦ<br/>o</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʔ</th>
   </tr>
   <tr>
     <th>ካፍ</th><th>k</th><td>ከ</td><td>ኩ</td><td>ኪ</td><td>ካ</td><td>ኬ</td><td>ክ</td><td>ኮ</td><td>ኰ</td><td>ኵ</td><td>ኲ</td><td>ኳ</td><td>ኴ</td><th>k</th>
@@ -156,8 +162,8 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
   <tr>
     <th>ወዌ</th><th>[wW]</th><td>ወ</td><td>ዉ</td><td>ዊ</td><td>ዋ</td><td>ዌ</td><td>ው</td><td>ዎ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>w</th>
   </tr>
-  <tr>
-    <th>ዐይን</th><th>&nbsp;</th><td>ዐ<br/>A / <br/>aaa</td><td>ዑ<br/>Au / <br/>uu</td><td>ዒ<br/>Ai / <br/>ii</td><td>ዓ<br/>Aa / <br/>aa</td><td>ዔ<br/>Aie / <br/>iie</td><td>ዕ<br/>Ae / <br/>ee</td><td>ዖ<br/>Ao / <br/>oo</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th>ʕ</th>
+  <tr valign="top">
+    <th valign="middle">ዐይን</th><th>&nbsp;</th><td>ዐ<br/>A</td><td>ዑ<br/>Au / <br/>U</td><td>ዒ<br/>Ai / <br/>I</td><td>ዓ<br/>Aa</td><td>ዔ<br/>Aie / <br/>IE</td><td>ዕ<br/>Ae / <br/>E</td><td>ዖ<br/>Ao / <br/>O</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><th valign="middle">ʕ</th>
   </tr>
   <tr>
     <th>ዘይ</th><th>z</th><td>ዘ</td><td>ዙ</td><td>ዚ</td><td>ዛ</td><td>ዜ</td><td>ዝ</td><td>ዞ</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ዟ</td><td>&nbsp;</td><th>z</th>
@@ -199,6 +205,24 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <th style="border-right-color: #ffffff;">&nbsp;</th><td style="background-color: #ffffff; border-left-color: #ffffff; border-bottom-color: #ffffff;">&nbsp;</td><td>+ə</td><td>+u</td><td>+i</td><td>+a</td><td>+e</td><td>ɨ/-</td><td>+o</td><td>+ʷə</td><td>+ʷu</td><td>+ʷi</td><td>+ʷa</td><td>+ʷe</td><th>IPA</th>
   </tr>
 </table>
+
+
+<h2><a id="gemination"></a>Consonant and Vowel Marks</h2>
+
+<div style="margin-left: 1em;">
+<p>Dots can be added above letters to indicate a stressed vowel or consonant using <nobr>“CTRL + <b>.</b>”.</nobr> For example:</p>
+
+<table style="margin-top: 0; white-space: nowrap;">
+<tr>
+  <td>ኣባ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፞ (“abaa”, “a” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፞ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፟ (“abba”, “b” is stressed)</td>
+</tr>
+<tr>
+	<td>ኣባ፟ CTRL .</td><td> &nbsp; ⇒ &nbsp; </td><td>ኣባ፝ (“abbaa”, “b” and “a” are stressed)</td>
+</tr>
+</table>
 </div>
 
 <h2><a id="punctuation" name="punctuation"></a>Punctuation</h2>
@@ -216,6 +240,15 @@ download a keyboard for the language needed or the <em>language-neutral</em> key
     <td>፡</td><td>።</td><td>፥</td><td>፣</td><td>፤</td><td>፦</td><td>፠</td><td>፨</td><td>፧</td>
   </tr>
 </table>
+
+
+
+<p>Period, ‘.’ may also be used to enter ‘።’.  When a number follows ‘፡’, ‘፣’ and ‘።’ they will change back to their Latin form automatically.  For example:</p>
+<dir>
+123፣456	⇒  123,456<br/>
+12።50	⇒  12.50<br/>
+12፡50	⇒  12:50
+</dir>
 
 <h3>Keyboard Punctuation</h3>
 <p>All regular punctuation on your keyboard remains available. Most punctuation can be typed
@@ -268,7 +301,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Ge&rsquo;ez Frontier Foundation, 2009-2020. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2020. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

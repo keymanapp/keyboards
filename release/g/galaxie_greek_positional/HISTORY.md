@@ -1,6 +1,10 @@
 Galaxie Greek (Phonetic) Keyboard Change History
 =======================
 
+## 2.3 (18 Sep 2024)
+* Added version back in
+* Add all B, BI, I of Gentium Plus
+
 ## 2.2 (13 Aug 2018)
 * Ported to GitHub
 * Android and iOS support added

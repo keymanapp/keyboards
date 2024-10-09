@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--
+Akatab-webfont-example.html
+Akatab
+This file is part of Akatab font family (http://software.sil.org/Akatab)
+and is Copyright (c) 2010-2023 SIL International (http://www.sil.org/),
+with Reserved Font Names "Akatab". This Font Software is licensed
+under the SIL Open Font License, Version 1.1. You should have received a copy
+of the license along with this Font Software. If this is not the case, go to
+(http://scripts.sil.org/OFL) for all the details including a FAQ.
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Akatab - Webfont Example</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="Akatab-webfont-example.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Akatab - Webfont Example</h1>
+        <p>This is an example using the font in a web page. The page demonstrates how to use the woff2 version of Akatab for web pages, using local copies of the .woff2 files in this archive. For more information on this technique - and how to use the normal TrueType version as a web font - see <a href="https://software.sil.org/fonts/webfonts/">Using SIL Fonts on Web Pages</a>.</p>
+        <p>The body of this document is styled using an external stylesheet, with Akatab set as the default font, and loaded directly as a woff2 file using the @font-face rule. To see specifically how these techniques are specified in the CSS and HTML, view the source to this page and the accompanying CSS file.</p>
+        <p>The following sections demonstrate how features in Akatab can be implemented in a web page. </p>
+    </header>
+
+<h1>Akatab Tifinagh Fonts</h1>
+
+<p><strong>Text in various weights</strong><br>
+    
+<p>
+  <span class="akatab-R normal"> ⵜⴾⴷ ⵜⴷⵔⴷ ⵙⵍⴷ ⵂⵏⵉⴷ  (Akatab Regular)</span>
+</p>
+<p>
+  <span class="akatab-M normal"> ⵜⴾⴷ ⵜⴷⵔⴷ ⵙⵍⴷ ⵂⵏⵉⴷ  (Akatab Medium)</span>
+</p>
+<p>
+  <span class="akatab-SB normal"> ⵜⴾⴷ ⵜⴷⵔⴷ ⵙⵍⴷ ⵂⵏⵉⴷ  (Akatab SemiBold)</span>
+</p>
+<p>
+  <span class="akatab-B normal"> ⵜⴾⴷ ⵜⴷⵔⴷ ⵙⵍⴷ ⵂⵏⵉⴷ  (Akatab Bold)</span>
+</p>
+<p>
+  <span class="akatab-EB normal"> ⵜⴾⴷ ⵜⴷⵔⴷ ⵙⵍⴷ ⵂⵏⵉⴷ  (Akatab ExtraBold)</span>
+</p>
+<p>
+  <span class="akatab-BL normal"> ⵜⴾⴷ ⵜⴷⵔⴷ ⵙⵍⴷ ⵂⵏⵉⴷ  (Akatab Black)</span>
+</p>
+
+<h2>Tifinagh characters, ligatures and variants</h2>
+<p><strong>Akatab default Tifinagh characters </strong><br>
+ ⴰ ⴱ ⴳ ⴴ ⴶ ⴷ ⴸ ⴹ ⴼ ⴾ ⵀ ⵂ ⵆ ⵈ ⵉ ⵋ ⵌ ⵍ ⵎ ⵏ ⵐ ⵑ ⵓ ⵔ ⵗ ⵘ ⵙ ⵛ ⵜ ⵟ ⵢ ⵣ ⵤ ⵧ ⵰ &#x25cc;&#x2D7F; </p>
+
+<p><strong>Akatab default Tifinagh bi-consonants </strong><br>
+(Ligatures based on default characters) <br>
+ ⴱ⵿ⵜ ⴴ⵿ⵜ ⴶ⵿ⵜ ⴼ⵿ⵜ ⵀ⵿ⵜ ⵉ⵿ⵜ ⵋ⵿ⵜ ⵌ⵿ⵜ ⵍ⵿ⴾ ⵍ⵿ⵜ ⵎ⵿ⵀ ⵎ⵿ⵙ ⵎ⵿ⵜ ⵏ⵿ⴴ ⵏ⵿ⴶ ⵏ⵿ⴷ ⵏ⵿ⴸ ⵏ⵿ⴹ ⵏ⵿ⴼ ⵏ⵿ⴼ⵿ⵜ ⵏ⵿ⴾ ⵏ⵿ⵌ ⵏ⵿ⵗ ⵏ⵿ⵙ ⵏ⵿ⵛ ⵏ⵿ⵜ ⵏ⵿ⵤ ⵓ⵿ⵜ ⵔ⵿ⴾ ⵔ⵿ⵏ ⵔ⵿ⵜ ⵙ⵿ⴾ ⵙ⵿ⵏ ⵙ⵿ⵜ ⵛ⵿ⴾ ⵛ⵿ⵏ ⵛ⵿ⵜ ⵣ⵿ⵜ </p>
+
+
+<p><strong> Examples of Akatab character variants </strong><br>
+(Variants produced using cvxx feature) </p>
+  <table>
+    <tr> 
+        <th>Char</th> 
+        <th>Var</th> 
+        <th>Character variant code</th>
+    </tr> 
+    <tr> 
+      <td>ⴰ<br>
+          ⴼ<br>
+          ⴼ<br>
+          ⴴ<br>
+          ⵐ<br>
+          ⵓ<br>
+          ⵣ<br>
+          ⵋ<br>
+          ⴱ<br>
+          ⴳ<br>
+        </td> 
+        <td><span class=cv01>ⴰ</span><br>
+            <span class=cv02>ⴼ</span><br>
+            <span class=cv02_2>ⴼ</span><br>
+            <span class=cv03>ⴴ</span><br>
+            <span class=cv04>ⵐ</span><br>
+            <span class=cv05>ⵓ</span><br>
+            <span class=cv06>ⵣ</span><br>
+            <span class=cv07>ⵋ</span><br>
+            <span class=cv08>ⴱ</span><br>
+            <span class=cv09>ⴳ</span><br>
+        </td> 
+        <td>cv01=1<br> 
+            cv02=1<br> 
+            cv02=2<br> 
+            cv03=1<br> 
+            cv04=1<br> 
+            cv05=1<br> 
+            cv06=1<br> 
+            cv07=1<br>
+            cv08=1<br>
+            cv09=1<br>
+        </td> 
+    </tr>  
+    <tr> 
+      <td> &#x2D4F&#x2D7F&#x2D3C <br>
+           &#x2D3C&#x2D7F&#x2D5C <br>
+           &#x2D34&#x2D7F&#x2D5C <br>
+           &#x2D4F&#x2D7F&#x2D34 <br>
+           &#x2D53&#x2D7F&#x2D5C <br>
+           &#x2D63&#x2D7F&#x2D5C <br>
+           &#x2D4B&#x2D7F&#x2D5C <br>
+        </td> 
+        <td><span class=cv02> &#x2D4F&#x2D7F&#x2D3C </span><br>
+            <span class=cv02> &#x2D3C&#x2D7F&#x2D5C </span><br>
+            <span class=cv03> &#x2D34&#x2D7F&#x2D5C </span><br>
+            <span class=cv03> &#x2D4F&#x2D7F&#x2D34 </span><br>
+            <span class=cv05> &#x2D53&#x2D7F&#x2D5C </span><br>
+            <span class=cv06> &#x2D63&#x2D7F&#x2D5C </span><br>
+            <span class=cv07> &#x2D4B&#x2D7F&#x2D5C </span><br>
+        </td> 
+        <td>cv02=1<br> 
+            cv02=1<br> 
+            cv03=1<br> 
+            cv03=1<br>
+            cv05=1<br> 
+            cv06=1<br> 
+            cv07=1<br>
+        </td> 
+    </tr> 
+    <tr> 
+      <td>ⴱ⵿ⵜ<br>
+          ⵔ⵿ⵜ<br>
+          ⵔ⵿ⵜ<br>
+          ⵙ⵿ⵜ<br>
+          ⵙ⵿ⵜ<br>
+          ⵎ⵿ⵜ<br>
+          ⴼ⵿ⵜ<br>
+          ⵏ⵿ⴾ<br>
+          ⵏ⵿ⵜ<br>
+          ⵏ⵿ⵜ<br>
+          ⵍ⵿ⵜ<br>
+          ⵓ⵿ⵜ<br>
+          ⵌ⵿ⵜ<br>
+          ⵌ⵿ⵜ<br>
+        </td> 
+        <td><span class=cv31>ⴱ⵿ⵜ</span><br>
+            <span class=cv32>ⵔ⵿ⵜ</span><br>
+            <span class=cv32_2>ⵔ⵿ⵜ</span><br>
+            <span class=cv33>ⵙ⵿ⵜ</span><br>
+            <span class=cv33_2>ⵙ⵿ⵜ</span><br>
+            <span class=cv34>ⵎ⵿ⵜ</span><br>
+            <span class=cv35>ⴼ⵿ⵜ</span><br>
+            <span class=cv36>ⵏ⵿ⴾ</span><br>
+            <span class=cv37>ⵏ⵿ⵜ</span><br>
+            <span class=cv37_2>ⵏ⵿ⵜ</span><br>
+            <span class=cv38>ⵍ⵿ⵜ</span><br>
+            <span class=cv39>ⵓ⵿ⵜ</span><br>
+            <span class=cv40>ⵌ⵿ⵜ</span><br>
+            <span class=cv40_2>ⵌ⵿ⵜ</span><br>
+        </td> 
+        <td>cv31=1<br> 
+            cv32=1<br> 
+            cv32=2<br> 
+            cv33=1<br> 
+            cv33=2<br> 
+            cv34=1<br> 
+            cv35=1<br>
+            cv36=1<br> 
+            cv37=1<br> 
+            cv37=2<br> 
+            cv38=1<br> 
+            cv39=1<br> 
+            cv40=1<br> 
+            cv40=2<br>
+        </td> 
+    </tr> 
+  </table>
+<p style="font-size:13px; ">Note: The list of variants above is not exhaustive. See the documentation folder for a complete listing of glyphs in Akatab.</p>  
+
+
+<h3>Akatab right-to-left example</h3>
+
+<p>
+<strong>The following text demonstrates Tifinagh left-to-right behaviour:</strong> ⵙⵏⵜⵜ ⵜⵙⴾⵍⵏ ⵓⵔ ⵜⴶⵂⵏⵜ ⵎⵉ 
+</p>
+<p>
+<strong>The following text demonstrates Tifinagh right-to-left behaviour:</strong> &#x202Eⵙⵏⵜⵜ ⵜⵙⴾⵍⵏ ⵓⵔ ⵜⴶⵂⵏⵜ ⵎⵉ 
+</p>‮
+<!-- 
+Using hard-coded directional characters in the HTML code (as illustrated above) can prevent accidental deletion of invisible characters.
+-->
+<p style="font-size:16px; ">To get right-to-left behaviour and then reverse the direction, the user can use two invisible formatting characters to change the direction of the characters and the text as follows:<br>
+<ol type="1">
+  <li style="font-size:16px; ">U+202E (RIGHT-TO-LEFT OVERRIDE) for right-to-left Tifinagh<br>
+    The text that follows will be right-to-left. Additionally, the directionality of characters is changed to right-to-left.
+  </li>
+  <li style="font-size:16px; ">U+202C (POP DIRECTIONAL FORMATTING) to revert direction for Tifinagh text<br>
+    The text that follows reverts to the direction of the text before the previous U+202E character. 
+  </li>
+</ol>
+</p>‮
+
+<!--
+<p><strong>End</strong></p>
+</body> 
+</html>
+-->

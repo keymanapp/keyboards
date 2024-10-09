@@ -1,0 +1,39 @@
+﻿store(&VERSION) '10.0'
+store(&NAME) 'Glagolitic (Phonetic)'
+store(&COPYRIGHT) 'Copyright © SIL International'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'glagolitic_phonetic.ico'
+store(&VISUALKEYBOARD) 'glagolitic_phonetic.kvks'
+store(&LAYOUTFILE) 'glagolitic_phonetic.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(UC_K) "ABVGDE}!ZI&J" [RALT SHIFT K_J] "KLMNOPRSTUFX*" [RALT SHIFT K_BKQUOTE] "@CHW_)Q" "~{<%" [RALT SHIFT K_S] ">?(#$+" [RALT SHIFT K_Q] "^Y"
+store(UC) U+2C00 .. U+2C2F
+
+store(lc_K) "abvgde]1zi7j" [RALT K_J] "klmnoprstufx8" [RALT K_BKQUOTE] "2chw-0q" "`[,5" [RALT K_S] "./934=" [RALT K_Q] "6y"
+store(lc) U+2C30 .. U+2C5F
+
+store(all) outs(UC) outs(lc)
+
+store(comb_K) "abvgde]zi7j" [RALT K_J] "klmnoprstufx" "2chw-0q" "[," [RALT K_S] "./93"
+store(combU_K) "ABVGDE}ZI&J" [RALT SHIFT K_J] "KLMNOPRSTUFX@CHW_)Q" "{<" [RALT SHIFT K_S] ">?(#"
+store(comb) U+1E000 .. U+1E006 U+1E008 .. U+1E018 U+1E01B .. U+1E021 U+1E023 .. U+1E024 U+1E026 .. U+1E02A
+
+store(other_K) [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_EQUAL] \
+               [RALT K_LBRKT] [RALT K_RBRKT] [RALT K_COMMA] [RALT K_PERIOD] [RALT K_SLASH] [SHIFT RALT K_1] [SHIFT RALT K_2] [SHIFT RALT K_3] [SHIFT RALT K_4] \
+               [SHIFT RALT K_5] [SHIFT RALT K_6] [SHIFT RALT K_7] [SHIFT RALT K_8] [SHIFT RALT K_9] [SHIFT RALT K_0] [SHIFT RALT K_HYPHEN] [SHIFT RALT K_EQUAL] \
+               [SHIFT RALT K_LBRKT] [SHIFT RALT K_RBRKT] [SHIFT RALT K_COMMA] [SHIFT RALT K_PERIOD] [SHIFT RALT K_SLASH] [RALT K_BKSLASH] [RALT SHIFT K_BKSLASH]
+store(other) "1234567890-=[],./!@#$%^&*()_+{}<>?\|"
+
+group(main) using keys
+
++ [K_BKSLASH] > dk(comb)
++ [SHIFT K_BKSLASH] > dk(comb)
++ any(UC_K) > index(UC,1)
++ any(lc_K) > index(lc,1)
++ any(other_K) > index(other,1)
+
+dk(comb) + any(comb_K) > index(comb,2)
+dk(comb) + any(combU_K) > index(comb,2)

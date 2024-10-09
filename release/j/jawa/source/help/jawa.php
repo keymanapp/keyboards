@@ -7,10 +7,12 @@
 
 <h1 id="1">Nulisa Aksara Jawa keyboard shortcuts</h1>
 
+<p>The keyboard layout is designed with Indonesian qwerty keyboard layout (equal to American/US-basic layout) as the logic basis. Therefore, even though theoritically it could also work for other keyboard layout (British, German, DVORAK, etc), but no test have been done on those layouts. If you use non-Indonesian keyboard, I would love to hear your feedback!</p>
+
 <p>Please refer to this combination table for the intended output. Don't rely on the On-Screen keyboard, as it has many limitations. If the pressed button doesn't produce the same result as below, please contact the author.</p>
 
-<p>If you type the key on the left, followed by key on top, you'll get the following character.</p>
-                            
+<p>If you type the key on the left, followed by key on top, you'll get the following characters.</p>
+
 <table width="100%"><tbody>
   <tr>
     <td>→</td>
@@ -26,20 +28,7 @@
     <th>j</th>
     <th>k</th>
     <th>l</th>
-    <th>m</th>
-    <th>n</th>
-    <th>o</th>
-    <th>p</th>
-    <th>q</th>
-    <th>r</th>
-    <th>s</th>
-    <th>t</th>
-    <th>u</th>
-    <th>v</th>
-    <th>w</th>
-    <th>x=ě</th>
-    <th>y</th>
-    <th>z</th></tr>
+    <th>m</th></tr>
   <tr>
     <th></th>
     <td>ꦲ
@@ -55,19 +44,6 @@
     </td><td>ꦏ꧀
     </td><td>ꦭ꧀
     </td><td>ꦩ꧀
-    </td><td>ꦤ꧀
-    </td><td>ꦲꦺꦴ
-    </td><td>ꦥ꧀
-    </td><td>꧀
-    </td><td>ꦂ
-    </td><td>ꦱ꧀
-    </td><td>ꦠ꧀
-    </td><td>ꦲꦸ
-    </td><td>ꦮ꦳꧀
-    </td><td>ꦮ꧀
-    </td><td>ꦲꦼ
-    </td><td>ꦪ꧀
-    </td><td>ꦗ꦳꧀
     </td></tr>
   <tr>
     <th>꧀+</th>
@@ -84,7 +60,41 @@
     </td><td>꧀ꦏ꧀
     </td><td>꧀ꦭ꧀
     </td><td>꧀ꦩ꧀
-    </td><td>꧀ꦤ꧀
+    </td></tr>
+  <tr>
+    <td>→</td>
+    <th>n</th>
+    <th>o</th>
+    <th>p</th>
+    <th>q</th>
+    <th>r</th>
+    <th>s</th>
+    <th>t</th>
+    <th>u</th>
+    <th>v</th>
+    <th>w</th>
+    <th>x=ě</th>
+    <th>y</th>
+    <th>z</th></tr>
+  <tr>
+    <th></th>
+    <td>ꦤ꧀
+    </td><td>ꦲꦺꦴ
+    </td><td>ꦥ꧀
+    </td><td>꧀
+    </td><td>ꦂ
+    </td><td>ꦱ꧀
+    </td><td>ꦠ꧀
+    </td><td>ꦲꦸ
+    </td><td>ꦮ꦳꧀
+    </td><td>ꦮ꧀
+    </td><td>ꦲꦼ
+    </td><td>ꦪ꧀
+    </td><td>ꦗ꦳꧀
+    </td></tr>
+  <tr>
+    <th>꧀+</th>
+    <td>꧀ꦤ꧀
     </td><td>ꦺꦴ
     </td><td>꧀ꦥ꧀
     </td><td>꧀
@@ -97,13 +107,14 @@
     </td><td>ꦼ
     </td><td>꧀ꦪ꧀
     </td><td>꧀ꦗ꦳꧀
-    </td></tr>
 </tbody>
 </table>
 
 <br />
 
-<p>If you type the key on the top, followed by key on left, you'll get the following character.</p>
+<p>If you type the key on the top, followed by key on left, you'll get the following characters.</p>
+
+<h4>Aksara Nglegena & Sandhangan</h4>
 
 <table width="100%"><tbody>
   <tr>
@@ -120,20 +131,7 @@
     <th>j</th>
     <th>k</th>
     <th>l</th>
-    <th>m</th>
-    <th>n</th>
-    <th>o</th>
-    <th>p</th>
-    <th>q</th>
-    <th>r</th>
-    <th>s</th>
-    <th>t</th>
-    <th>u</th>
-    <th>v</th>
-    <th>w</th>
-    <th>x=ě</th>
-    <th>y</th>
-    <th>z</th></tr>
+    <th>m</th></tr>
   <tr>
     <th>+a</th>
     <td>ꦲꦴ
@@ -149,19 +147,6 @@
     </td><td>ꦏ
     </td><td>ꦭ
     </td><td>ꦩ
-    </td><td>ꦤ
-    </td><td>ꦲꦺꦴꦮ
-    </td><td>ꦥ
-    </td><td>
-    </td><td>ꦫ
-    </td><td>ꦱ
-    </td><td>ꦠ
-    </td><td>ꦲꦸꦮ
-    </td><td>ꦮ꦳
-    </td><td>ꦮ
-    </td><td>ꦲꦼꦲ
-    </td><td>ꦪ
-    </td><td>ꦗ꦳
     </td></tr>
   <tr>
     <th>+e</th>
@@ -178,19 +163,6 @@
     </td><td>ꦏꦺ
     </td><td>ꦭꦺ
     </td><td>ꦩꦺ
-    </td><td>ꦤꦺ
-    </td><td>ꦲꦺꦴꦮꦺ
-    </td><td>ꦥꦺ
-    </td><td>ꦺ
-    </td><td>ꦫꦺ
-    </td><td>ꦱꦺ
-    </td><td>ꦠꦺ
-    </td><td>ꦲꦸꦮꦺ
-    </td><td>ꦮ꦳ꦺ
-    </td><td>ꦮꦺ
-    </td><td>ꦲꦼꦲꦺ
-    </td><td>ꦪꦺ
-    </td><td>ꦗ꦳ꦺ
     </td></tr>
   <tr>
     <th>+i</th>
@@ -207,19 +179,6 @@
     </td><td>ꦏꦶ
     </td><td>ꦭꦶ
     </td><td>ꦩꦶ
-    </td><td>ꦤꦶ
-    </td><td>ꦲꦺꦴꦮꦶ
-    </td><td>ꦥꦶ
-    </td><td>ꦶ
-    </td><td>ꦫꦶ
-    </td><td>ꦱꦶ
-    </td><td>ꦠꦶ
-    </td><td>ꦲꦸꦮꦶ
-    </td><td>ꦮ꦳ꦶ
-    </td><td>ꦮꦶ
-    </td><td>ꦲꦼꦲꦶ
-    </td><td>ꦪꦶ
-    </td><td>ꦗ꦳ꦶ
     </td></tr>
   <tr>
     <th>+o</th>
@@ -236,19 +195,6 @@
     </td><td>ꦏꦺꦴ
     </td><td>ꦭꦺꦴ
     </td><td>ꦩꦺꦴ
-    </td><td>ꦤꦺꦴ
-    </td><td>ꦲꦺꦴꦲꦺꦴ
-    </td><td>ꦥꦺꦴ
-    </td><td>ꦺꦴ
-    </td><td>ꦫꦺꦴ
-    </td><td>ꦱꦺꦴ
-    </td><td>ꦠꦺꦴ
-    </td><td>ꦲꦸꦮꦺꦴ
-    </td><td>ꦮ꦳ꦺꦴ
-    </td><td>ꦮꦺꦴ
-    </td><td>ꦲꦼꦲꦺꦴ
-    </td><td>ꦪꦺꦴ
-    </td><td>ꦗ꦳ꦺꦴ
     </td></tr>
   <tr>
     <th>+u</th>
@@ -265,19 +211,6 @@
     </td><td>ꦏꦸ
     </td><td>ꦭꦸ
     </td><td>ꦩꦸ
-    </td><td>ꦤꦸ
-    </td><td>ꦲꦺꦴꦮꦸ
-    </td><td>ꦥꦸ
-    </td><td>ꦸ
-    </td><td>ꦫꦸ
-    </td><td>ꦱꦸ
-    </td><td>ꦠꦸ
-    </td><td>ꦲꦹ
-    </td><td>ꦮ꦳ꦸ
-    </td><td>ꦮꦸ
-    </td><td>ꦲꦼꦲꦸ
-    </td><td>ꦪꦸ
-    </td><td>ꦗ꦳ꦸ
     </td></tr>
   <tr>
     <th>+x=ě</th>
@@ -294,19 +227,6 @@
     </td><td>ꦏꦼ
     </td><td>ꦊ
     </td><td>ꦩꦼ
-    </td><td>ꦤꦼ
-    </td><td>ꦲꦺꦴꦮꦼ
-    </td><td>ꦥꦼ
-    </td><td>ꦼ
-    </td><td>ꦉ
-    </td><td>ꦱꦼ
-    </td><td>ꦠꦼ
-    </td><td>ꦲꦸꦮꦼ
-    </td><td>ꦮ꦳ꦼ
-    </td><td>ꦮꦼ
-    </td><td>ꦲꦼꦲꦼ
-    </td><td>ꦪꦼ
-    </td><td>ꦗ꦳ꦼ
     </td></tr>
   <tr>
     <th>+h</th>
@@ -323,19 +243,6 @@
     </td><td>ꦑ꧀
     </td><td>ꦭ꧀ꦃ
     </td><td>ꦩ꧀ꦃ
-    </td><td>ꦟ꧀
-    </td><td>ꦲꦺꦴꦃ
-    </td><td>ꦦ꧀
-    </td><td>꧀ꦃ
-    </td><td>ꦂꦲ꧀
-    </td><td>ꦯ꧀
-    </td><td>ꦛ꧀
-    </td><td>ꦲꦸꦃ
-    </td><td>ꦮ꦳꧀ꦃ
-    </td><td>ꦮ꧀ꦃ
-    </td><td>ꦲꦼꦃ
-    </td><td>ꦪ꧀ꦃ
-    </td><td>ꦗ꦳꧀ꦃ
     </td></tr>
   <tr>
     <th>+r</th>
@@ -352,19 +259,6 @@
     </td><td>ꦏꦿ꧀
     </td><td>ꦭꦿ꧀
     </td><td>ꦩꦿ꧀
-    </td><td>ꦤꦿ꧀
-    </td><td>ꦲꦺꦴꦂ
-    </td><td>ꦥꦿ꧀
-    </td><td>꧀ꦂ
-    </td><td>ꦂꦫ꧀
-    </td><td>ꦱꦿ꧀
-    </td><td>ꦠꦿ꧀
-    </td><td>ꦲꦸꦂ
-    </td><td>ꦮ꦳ꦿ꧀
-    </td><td>ꦮꦿ꧀
-    </td><td>ꦲꦼꦂ
-    </td><td>ꦪꦿ꧀
-    </td><td>ꦗ꦳ꦿ꧀
     </td></tr>
   <tr>
     <th>+y</th>
@@ -381,7 +275,154 @@
     </td><td>ꦏꦾ꧀
     </td><td>ꦭꦾ꧀
     </td><td>ꦩꦾ꧀
-    </td><td>ꦚ꧀
+    </td></tr>
+
+  <tr>
+    <td>↓</td>
+    <th>n</th>
+    <th>o</th>
+    <th>p</th>
+    <th>q</th>
+    <th>r</th>
+    <th>s</th>
+    <th>t</th>
+    <th>u</th>
+    <th>v</th>
+    <th>w</th>
+    <th>x=ě</th>
+    <th>y</th>
+    <th>z</th></tr>
+  <tr>
+    <th>+a</th>
+    <td>ꦤ
+    </td><td>ꦲꦺꦴꦮ
+    </td><td>ꦥ
+    </td><td>
+    </td><td>ꦫ
+    </td><td>ꦱ
+    </td><td>ꦠ
+    </td><td>ꦲꦸꦮ
+    </td><td>ꦮ꦳
+    </td><td>ꦮ
+    </td><td>ꦲꦼꦲ
+    </td><td>ꦪ
+    </td><td>ꦗ꦳
+    </td></tr>
+  <tr>
+    <th>+e</th>
+    <td>ꦤꦺ
+    </td><td>ꦲꦺꦴꦮꦺ
+    </td><td>ꦥꦺ
+    </td><td>ꦺ
+    </td><td>ꦫꦺ
+    </td><td>ꦱꦺ
+    </td><td>ꦠꦺ
+    </td><td>ꦲꦸꦮꦺ
+    </td><td>ꦮ꦳ꦺ
+    </td><td>ꦮꦺ
+    </td><td>ꦲꦼꦲꦺ
+    </td><td>ꦪꦺ
+    </td><td>ꦗ꦳ꦺ
+    </td></tr>
+  <tr>
+    <th>+i</th>
+    <td>ꦤꦶ
+    </td><td>ꦲꦺꦴꦮꦶ
+    </td><td>ꦥꦶ
+    </td><td>ꦶ
+    </td><td>ꦫꦶ
+    </td><td>ꦱꦶ
+    </td><td>ꦠꦶ
+    </td><td>ꦲꦸꦮꦶ
+    </td><td>ꦮ꦳ꦶ
+    </td><td>ꦮꦶ
+    </td><td>ꦲꦼꦲꦶ
+    </td><td>ꦪꦶ
+    </td><td>ꦗ꦳ꦶ
+    </td></tr>
+  <tr>
+    <th>+o</th>
+    <td>ꦤꦺꦴ
+    </td><td>ꦲꦺꦴꦲꦺꦴ
+    </td><td>ꦥꦺꦴ
+    </td><td>ꦺꦴ
+    </td><td>ꦫꦺꦴ
+    </td><td>ꦱꦺꦴ
+    </td><td>ꦠꦺꦴ
+    </td><td>ꦲꦸꦮꦺꦴ
+    </td><td>ꦮ꦳ꦺꦴ
+    </td><td>ꦮꦺꦴ
+    </td><td>ꦲꦼꦲꦺꦴ
+    </td><td>ꦪꦺꦴ
+    </td><td>ꦗ꦳ꦺꦴ
+    </td></tr>
+  <tr>
+    <th>+u</th>
+    <td>ꦤꦸ
+    </td><td>ꦲꦺꦴꦮꦸ
+    </td><td>ꦥꦸ
+    </td><td>ꦸ
+    </td><td>ꦫꦸ
+    </td><td>ꦱꦸ
+    </td><td>ꦠꦸ
+    </td><td>ꦲꦹ
+    </td><td>ꦮ꦳ꦸ
+    </td><td>ꦮꦸ
+    </td><td>ꦲꦼꦲꦸ
+    </td><td>ꦪꦸ
+    </td><td>ꦗ꦳ꦸ
+    </td></tr>
+  <tr>
+    <th>+x=ě</th>
+    <td>ꦤꦼ
+    </td><td>ꦲꦺꦴꦮꦼ
+    </td><td>ꦥꦼ
+    </td><td>ꦼ
+    </td><td>ꦉ
+    </td><td>ꦱꦼ
+    </td><td>ꦠꦼ
+    </td><td>ꦲꦸꦮꦼ
+    </td><td>ꦮ꦳ꦼ
+    </td><td>ꦮꦼ
+    </td><td>ꦲꦼꦲꦼ
+    </td><td>ꦪꦼ
+    </td><td>ꦗ꦳ꦼ
+    </td></tr>
+  <tr>
+    <th>+h</th>
+    <td>ꦟ꧀
+    </td><td>ꦲꦺꦴꦃ
+    </td><td>ꦦ꧀
+    </td><td>꧀ꦃ
+    </td><td>ꦂꦲ꧀
+    </td><td>ꦯ꧀
+    </td><td>ꦛ꧀
+    </td><td>ꦲꦸꦃ
+    </td><td>ꦮ꦳꧀ꦃ
+    </td><td>ꦮ꧀ꦃ
+    </td><td>ꦲꦼꦃ
+    </td><td>ꦪ꧀ꦃ
+    </td><td>ꦗ꦳꧀ꦃ
+    </td></tr>
+  <tr>
+    <th>+r</th>
+    <td>ꦤꦿ꧀
+    </td><td>ꦲꦺꦴꦂ
+    </td><td>ꦥꦿ꧀
+    </td><td>꧀ꦂ
+    </td><td>ꦂꦫ꧀
+    </td><td>ꦱꦿ꧀
+    </td><td>ꦠꦿ꧀
+    </td><td>ꦲꦸꦂ
+    </td><td>ꦮ꦳ꦿ꧀
+    </td><td>ꦮꦿ꧀
+    </td><td>ꦲꦼꦂ
+    </td><td>ꦪꦿ꧀
+    </td><td>ꦗ꦳ꦿ꧀
+    </td></tr>
+  <tr>
+    <th>+y</th>
+    <td>ꦚ꧀
     </td><td>ꦲꦺꦴꦪ꧀
     </td><td>ꦥꦾ꧀
     </td><td>꧀ꦪ꧀
@@ -454,7 +495,9 @@
     </td><td>
     </td></tr>-->
 </tbody></table>
-<br>
+
+<h4>Aksara Swara and Murda</h4>
+
 <table width="100%"><tbody>
   <tr>
     <td>→</td>
@@ -470,20 +513,7 @@
     <th>J</th>
     <th>K</th>
     <th>L</th>
-    <th>M</th>
-    <th>N</th>
-    <th>O</th>
-    <th>P</th>
-    <th>Q</th>
-    <th>R</th>
-    <th>S</th>
-    <th>T</th>
-    <th>U</th>
-    <th>V</th>
-    <th>W</th>
-    <th>X</th>
-    <th>Y</th>
-    <th>Z</th></tr>
+    <th>M</th></tr>
   <tr>
     <th></th>
     <td>ꦄ
@@ -499,19 +529,6 @@
     </td><td>ꦑ꧀
     </td><td>ꦭ꧀
     </td><td>ꦩ꧀
-    </td><td>ꦟ꧀
-    </td><td>ꦎ
-    </td><td>ꦦ꧀
-    </td><td>ꦐ꧀
-    </td><td>ꦂ
-    </td><td>ꦯ꧀
-    </td><td>ꦡ꧀
-    </td><td>ꦈ
-    </td><td>ꦮ꦳꧀
-    </td><td>ꦮ꧀
-    </td><td>ꦄꦼ
-    </td><td>ꦁ
-    </td><td>ꦰ꧀
     </td></tr>
   <tr>
     <th>꧀+</th>
@@ -528,7 +545,42 @@
     </td><td>꧀ꦑ꧀
     </td><td>꧀ꦭ꧀
     </td><td>꧀ꦩ꧀
-    </td><td>꧀ꦟ꧀
+    </td></tr>
+
+  <tr>
+    <td>→</td>
+    <th>N</th>
+    <th>O</th>
+    <th>P</th>
+    <th>Q</th>
+    <th>R</th>
+    <th>S</th>
+    <th>T</th>
+    <th>U</th>
+    <th>V</th>
+    <th>W</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>Z</th></tr>
+  <tr>
+    <th></th>
+    <td>ꦟ꧀
+    </td><td>ꦎ
+    </td><td>ꦦ꧀
+    </td><td>ꦐ꧀
+    </td><td>ꦂ
+    </td><td>ꦯ꧀
+    </td><td>ꦡ꧀
+    </td><td>ꦈ
+    </td><td>ꦮ꦳꧀
+    </td><td>ꦮ꧀
+    </td><td>ꦄꦼ
+    </td><td>ꦁ
+    </td><td>ꦰ꧀
+    </td></tr>
+  <tr>
+    <th>꧀+</th>
+    <td>꧀ꦟ꧀
     </td><td>꧀ꦎ
     </td><td>꧀ꦦ꧀
     </td><td>꧀ꦐ꧀
@@ -573,9 +625,9 @@
     </td></tr>-->
 </tbody></table>
 
-<p style='font-weight: bold'>Punctuation and symbols</p>
+<h4>Punctuation and symbols</h4>
 
-<table>
+<table width="100%">
 <tr>
     <td>→</td>
     <th>`</th>
@@ -624,6 +676,29 @@
     </td><td>꧅
     </td></tr>
   <tr>
+    <th></th>
+    <th>~</th>
+    <th>!</th>
+    <th>@</th>
+    <th>#</th>
+    <th>$</th>
+    <th>%</th>
+    <th>^</th>
+    <th>&</th>
+    <th>*</th>
+    <th>(</th>
+    <th>)</th>
+    <th>_</th>
+    <th>+</th>
+    <th>{</th>
+    <th>}</th>
+    <th>|</th>
+    <th>:</th>
+    <th>"</th>
+    <th><</th>
+    <th>></th>
+    <th>?</th></tr>
+  <tr>
     <th>shift+</th>
     <td>꦳
     </td><td>ꦉ
@@ -659,8 +734,8 @@
     </td><td>ꦽ
     </td><td>ꦾ
     </td><td>ꦿ
+    </td><td>ꦼ
     </td><th>
-    </th><th>
     </th><th>
     </th><th>
     </th><th>
@@ -679,10 +754,10 @@
     </td><td>?x4
     </td><td>?x5
     </td><td>?x6
-    </td><td>
-    </td><td>
-    </td><td>
     </td><th>
+    </th><th>
+    </th><th>
+    </th><th>
     </th><th>
     </th><th>
     </th><th>
@@ -696,11 +771,12 @@
     </th></tr>
 </table>
 <p><sup>[1]</sup> ZWJ = Zero-Width Joiner</p>
-<p><sup>[2]</sup> ? = switcher. Type multiple times to go through the 6 long vowels (sandhangan)</p>
+<p><sup>[2]</sup> The question mark sign (?) is a switcher (rotation). Type it multiple times to go through the 5 long vowels (sandhangan)</p>
 
-<p style='font-weight: bold'>Hidden features / Fitur tersembunyi. They're still in testing mode, and may change in the future.</p>
+<p style='font-weight: bold'>Hidden features. They're still in testing mode, and may change in the future.</p>
 <ul>
-    <li>CTRL+SPASI: Spasi normal</li>
+    <li>SHIFT+SPACE: Normal space</li>
+    <li>CTRL+SPACE: Normal space</li><!--
     <li>CTRL+1 (default): Spasi tidak berfungsi - Anda bisa mengetik dengan spasi, tapi hasilnya keluar tanpa spasi (scriptio continua), seperti penulisa aksara Jawa pada umumnya. Jika Anda menginginkan ZWJ dalam moda ini, ketik karakter [`] (di sebelah kiri angka 1)</li>
     <li>CTRL+2: Spasi berfungsi sebagai Zero-Width Joiner - Jika Anda menggunakan spasi, maka antara dua karakter yang dipisahkan ZWJ tidak akan terbentuk pasangan. Ideal untuk pemisahan per kata sehingga bisa direkonstruksi/ditransliterasi ulang kata per kata ke dalam bahasa Latin tanpa kesalahan. Kekurangannya adalah banyaknya pangkon dan pasangan hanya terbentuk di tengah kata, tidak ada pasangan di awal kata.</li>
     <li>CTRL+3: Mengaktifkan mode Sunda. Pengetikan 'o' menjadi 'tolong', bukan 'taling tarung'. Pengetikan suku-suku kata berakhiran -eu. 'Nya' bukan karakter aksara Jawa 'Nya' ꦚ, tapi karakter 'Na' diberi pasangan 'Nya' ꦤ꧀ꦚ</li>
@@ -709,14 +785,179 @@
     <li>CTRL+6: 'ꦡ' '͜' 'ꦌ' '̈' - Chinese 'rekan'</li>
     <li>CTRL+7: 'ꦯ' '͜' 'ꦌ' '̈' - Chinese 'rekan'</li>
     <li>CTRL+8: 'ꦤ' '͜' 'ꦌ' '̈' - Chinese 'rekan'</li>
-    <li>CTRL+9: 'ꦲ' '꧀' 'ꦮ' 'ꦌ' '̈' - Chinese 'rekan'</li>
+    <li>CTRL+9: 'ꦲ' '꧀' 'ꦮ' 'ꦌ' '̈' - Chinese 'rekan'</li>-->
 </ul>
 
-<p style='font-weight: bold'>How to write down:</p>
+<h4>How to write down:</h4>
+<p>This is the inverse table of the tables above. You can get the output displayed on the top row (white) by typing the letters on the lower row (grey). There might be more than one way to type a character.</p>
 
-<table>
+<p>These are based on the complete list of <a href="https://en.wikipedia.org/wiki/Javanese_(Unicode_block)">Javanese Unicode block</a>. So this table shows that you are able to write any Javanese character using this keyboard.</p>
+<table width="100%">
 <tr>
-    <td>ꦀ</td>
+    <td>ꦄ</td>
+    <td>ꦅ</td>
+    <td>ꦆ</td>
+    <td>ꦇ</td>
+    <td>ꦈ</td>
+    <td>ꦉ</td>
+    <td>ꦊ</td>
+    <td>ꦋ</td>
+    <td>ꦌ</td>
+    <td>ꦍ</td>
+    <td>ꦎ</td>
+    <td>ꦏ</td>
+    <td>ꦐ</td>
+    <td>ꦑ</td>
+    <td>ꦒ</td>
+    <td>ꦓ</td>
+    <td>ꦔ</td></tr>
+  <tr style="font-size: 80%">
+    <th>A
+    </th><th>II
+    </th><th>I
+    </th><th>Ii
+    </th><th>O
+    </th><th>rx
+    </th><th>lx
+    </th><th>lxu
+    </th><th>E
+    </th><th>Ai
+    </th><th>O
+    </th><th>ka
+    </th><th>Qa
+    </th><th>Ka
+    </th><th>ga
+    </th><th>Ga
+    </th><th>nga</th></tr>
+  <tr style="font-size: 70%">
+    <th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>!
+    </th><th>@
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>kha
+    </th><th>
+    </th><th>gha
+    </th><th>#</th></tr>
+
+  <tr>
+    <td>ꦕ</td>
+    <td>ꦖ</td>
+    <td>ꦗ</td>
+    <td>ꦘ</td>
+    <td>ꦙ</td>
+    <td>ꦚ</td>
+    <td>ꦛ</td>
+    <td>ꦜ</td>
+    <td>ꦝ</td>
+    <td>ꦞ</td>
+    <td>ꦟ</td>
+    <td>ꦠ</td>
+    <td>ꦡ</td>
+    <td>ꦢ</td>
+    <td>ꦣ</td>
+    <td>ꦤ</td>
+    <td></td></tr>
+  <tr style="font-size: 80%">
+    <th>ca
+    </th><th>Ca
+    </th><th>ja
+    </th><th>jnya
+    </th><th>Ja
+    </th><th>nya
+    </th><th>tha
+    </th><th>Tha
+    </th><th>dha
+    </th><th>Dha
+    </th><th>Na
+    </th><th>ta
+    </th><th>Ta
+    </th><th>da
+    </th><th>Da
+    </th><th>na
+    </th><th></th></tr>
+  <tr style="font-size: 70%">
+    <th>
+    </th><th>cha
+    </th><th>
+    </th><th>)
+    </th><th>jha
+    </th><th>$
+    </th><th>%
+    </th><th>)
+    </th><th>^
+    </th><th>+
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th></th>
+  <tr>
+    <td>ꦥ</td>
+    <td>ꦦ</td>
+    <td>ꦧ</td>
+    <td>ꦨ</td>
+    <td>ꦩ</td>
+    <td>ꦪ</td>
+    <td>ꦫ</td>
+    <td>ꦬ</td>
+    <td>ꦭ</td>
+    <td>ꦮ</td>
+    <td>ꦯ</td>
+    <td>ꦰ</td>
+    <td>ꦱ</td>
+    <td>ꦲ</td>
+    <td>ꦲ꦳</td>
+    <td></td>
+    <td></td></tr>
+  <tr style="font-size: 80%">
+    <th>pa
+    </th><th>Pa
+    </th><th>ba
+    </th><th>Ba
+    </th><th>ma
+    </th><th>ya
+    </th><th>ra
+    </th><th>RRa
+    </th><th>la
+    </th><th>wa
+    </th><th>Sa
+    </th><th>Za
+    </th><th>sa
+    </th><th>ha
+    </th><th>ẖa~
+    </th><th>
+    </th><th></th></tr>
+  <tr style="font-size: 70%">
+    <th>
+    </th><th>
+    </th><th>pha
+    </th><th>
+    </th><th>bha
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>
+    </th><th>sha
+    </th><th>
+    </th><th>
+    </th><th>ẖa?
+    </th><th>
+    </th><th>
+    </th></tr>
+<tr>
     <td>ꦁ</td>
     <td>ꦂ</td>
     <td>ꦃ</td>
@@ -734,79 +975,27 @@
     <td>ꦾ</td>
     <td>ꦿ</td>
     <td>꧀</td>
-    <td>꧁</td>
-    <td>꧂</td>
-    <td>꧃</td>
-    <td>꧄</td>
-    <td>꧅</td>
-    <td>꧆</td>
-    <td>꧇</td>
-    <td>꧈</td>
-    <td>꧉</td>
-    <td>꧊</td>
-    <td>꧋</td>
-    <td>꧌</td>
-    <td>꧍</td>
-    <td>ꧏ</td>
-    <td>꧐</td>
-    <td>꧑</td>
-    <td>꧒</td>
-    <td>꧓</td>
-    <td>꧔</td>
-    <td>꧕</td>
-    <td>꧖</td>
-    <td>꧗</td>
-    <td>꧘</td>
-    <td>꧙</td>
-    <td>꧞</td>
-    <td>꧟</td></tr>
+</tr>
 <tr style="font-size:80%" valign="top">
-    <th>-
-    </th><th>ng
+    <th>ng
     </th><th>r
     </th><th>h
-    </th><th style="font-size:80%">ALT+1
-    </th><th style="font-size:80%">ALT+2
-    </th><th style="font-size:80%">ALT+3
+    </th><th style="font-size:80%">ALT+1<br />or ~
+    </th><th style="font-size:80%">ALT+2<br />or ??
+    </th><th style="font-size:80%">ALT+3<br />or ?x3
     </th><th>qi
-    </th><th style="font-size:80%">ALT+4
+    </th><th style="font-size:80%">ALT+4<br />or ?x4
     </th><th>qu
-    </th><th style="font-size:80%">ALT+5
+    </th><th style="font-size:80%">ALT+5<br />or ?x5
     </th><th>qe
-    </th><th style="font-size:80%">ALT+6
-    </th><th>qx
+    </th><th style="font-size:80%">ALT+6<br />or ?x6
+    </th><th>qx<br /><font style="font-size:80%">or )</font>
     </th><th style="font-size:80%">ALT+7<br />or &
     </th><th style="font-size:80%">ALT+8<br />or *
     </th><th style="font-size:80%">ALT+9<br />or (
-    </th><th>q
-    </th><th>{
-    </th><th>}
-    </th><th>;
-    </th><th>'
-    </th><th>/
-    </th><th>"
-    </th><th>:
-    </th><th>,
-    </th><th>.
-    </th><th>\
-    </th><th>|
-    </th><th>[
-    </th><th>]
-    </th><th>=
-    </th><th>0
-    </th><th>1
-    </th><th>2
-    </th><th>3
-    </th><th>4
-    </th><th>5
-    </th><th>6
-    </th><th>7
-    </th><th>8
-    </th><th>9
-    </th><th><
-    </th><th>></th></tr>
+    </th><th>q</th>
+</tr>
 <tr style="font-size:90%">
-    <td>ꦎꦀ</td>
     <td>ꦥꦁ</td>
     <td>ꦥꦂ</td>
     <td>ꦥꦃ</td>
@@ -825,8 +1014,7 @@
     <td>ꦥꦿ</td>
     <td>ꦥ꧀</td></tr>
 <tr style="font-size:80%">
-    <th>O-
-    </th><th>pang
+    <th>pang
     </th><th>par
     </th><th>pah
     </th><th>fa
@@ -843,269 +1031,312 @@
     </th><th>pya
     </th><th>pra
     </th><th>p</th></tr>
+<tr style="font-size:80%" valign="top">
+    <td>ꦀ</td>
+    <td>꧁</td>
+    <td>꧂</td>
+    <td>꧃</td>
+    <td>꧄</td>
+    <td>꧅</td>
+    <td>꧆</td>
+    <td>꧇</td>
+    <td>꧈</td>
+    <td>꧉</td>
+    <td>꧊</td>
+    <td>꧋</td>
+    <td>꧌</td>
+    <td>꧍</td>
+    <td>ꧏ</td>
+    <td>꧞</td>
+    <td>꧟</td></tr>
+<tr style="font-size:80%" valign="top">
+    <th>-
+    </th><th>{
+    </th><th>}
+    </th><th>;
+    </th><th>'
+    </th><th>/
+    </th><th>"
+    </th><th>:
+    </th><th>,
+    </th><th>.
+    </th><th>\
+    </th><th>|
+    </th><th>[
+    </th><th>]
+    </th><th>=
+    </th><th><
+    </th><th>></th></tr>
+<tr style="font-size:80%" valign="top">
+    <td>ꦎꦀ</td>
+    <td>꧐</td>
+    <td>꧑</td>
+    <td>꧒</td>
+    <td>꧓</td>
+    <td>꧔</td>
+    <td>꧕</td>
+    <td>꧖</td>
+    <td>꧗</td>
+    <td>꧘</td>
+    <td>꧙</td></tr>
+<tr style="font-size:80%" valign="top">
+    <th>O-
+    </th><th>0
+    </th><th>1
+    </th><th>2
+    </th><th>3
+    </th><th>4
+    </th><th>5
+    </th><th>6
+    </th><th>7
+    </th><th>8
+    </th><th>9</th></tr>
 </table>
-<p>* <s>Untuk pengetikan ꦥ+ꦵ (<i>tolong</i>), ketik 'p' lalu ALT+3</s>
-<br />
+<ul>
+<li>To type ꦥ+ꦵ (<i>tolong</i>), type 'pa' then ALT+3, or 'p???' (3x question marks)
+</li><li>To type ꦫꦼ, type 'ra' then ALT+0, or 'raqx'
+</li><li>To type ꦭꦼ, type 'la' then ALT+0, or 'qx', left arrow, 'l', 'backspace' (a little bit complex)
+</li><li>To type ꦎꦴꦀ auṁ, type 'Au' then ALT+2, or 'Au', space, '-', left arrow, backspace
+</li><li>To type ꦉꦴ (long ꦉ), type 'rxu'
+</li></ul>
 
-<table>
-<tr>
-    <td>ꦄ</td>
-    <td>ꦅ</td>
-    <td>ꦆ</td>
-    <td>ꦇ</td>
-    <td>ꦈ</td>
-    <td>ꦉ</td>
-    <td>ꦊ</td>
-    <td>ꦋ</td>
-    <td>ꦌ</td>
-    <td>ꦍ</td>
-    <td>ꦎ</td>
-    <td>ꦏ</td>
-    <td>ꦐ</td>
-    <td>ꦑ</td>
-    <td>ꦒ</td>
-    <td>ꦓ</td>
-    <td>ꦔ</td>
-    <td>ꦕ</td>
-    <td>ꦖ</td>
-    <td>ꦗ</td>
-    <td>ꦘ</td>
-    <td>ꦙ</td>
-    <td>ꦚ</td>
-    <td>ꦛ</td>
-    <td>ꦜ</td>
-    <td>ꦝ</td>
-    <td>ꦞ</td>
-    <td>ꦟ</td>
-    <td>ꦠ</td>
-    <td>ꦡ</td>
-    <td>ꦢ</td>
-    <td>ꦣ</td>
-    <td>ꦤ</td>
-    <td>ꦥ</td>
-    <td>ꦦ</td>
-    <td>ꦧ</td>
-    <td>ꦨ</td>
-    <td>ꦩ</td>
-    <td>ꦪ</td>
-    <td>ꦫ</td>
-    <td>ꦬ</td>
-    <td>ꦭ</td>
-    <td>ꦮ</td>
-    <td>ꦯ</td>
-    <td>ꦰ</td>
-    <td>ꦱ</td>
-    <td>ꦲ</td></tr>
-  <tr style="font-size: 80%">
-    <th>A
-    </th><th>II
-    </th><th>I
-    </th><th>Ii
-    </th><th>O
-    </th><th>rx
-    </th><th>lx
-    </th><th>lxu
-    </th><th>E
-    </th><th>Ai
-    </th><th>O
-    </th><th>ka
-    </th><th>Qa
-    </th><th>Ka
-    </th><th>ga
-    </th><th>Ga
-    </th><th>nga
-    </th><th>ca
-    </th><th>Ca
-    </th><th>ja
-    </th><th>jnya
-    </th><th>Ja
-    </th><th>nya
-    </th><th>tha
-    </th><th>Tha
-    </th><th>dha
-    </th><th>Dha
-    </th><th>Na
-    </th><th>ta
-    </th><th>Ta
-    </th><th>da
-    </th><th>Da
-    </th><th>na
-    </th><th>pa
-    </th><th>Pa
-    </th><th>ba
-    </th><th>Ba
-    </th><th>ma
-    </th><th>ya
-    </th><th>ra
-    </th><th>RRa
-    </th><th>la
-    </th><th>wa
-    </th><th>Sa
-    </th><th>Za
-    </th><th>sa
-    </th><th>ha</th></tr>
-  <tr style="font-size: 70%">
-    <th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>!
-    </th><th>@
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>kha
-    </th><th>
-    </th><th>gha
-    </th><th>#
-    </th><th>
-    </th><th>cha
-    </th><th>
-    </th><th>)
-    </th><th>jha
-    </th><th>$
-    </th><th>%
-    </th><th>)
-    </th><th>^
-    </th><th>+
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>pha
-    </th><th>
-    </th><th>bha
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>
-    </th><th>sha
-    </th><th>
-    </th><th>
-    </th><th></th></tr>
-</table>
+<h2 id="2">Typing tests and input samples</h2>
+<hr />
+<p><b>ToC</b>:
+  <a href="#top">Welcome!</a> |
+  <a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a> |
+  <a href="#2">Typing tests and input samples</a> |
+  <a href="#3">Usage Notes</a> |
+  <a href="#4">Development Notes</a> |
+  <a href="#5">Change History</a>
+</p>
 
-<br />
+<p>These are some sample text and how you can achive the output. These are the intended input and output. If you tried them and they mismatch, please inform the author.</p>
+
+<p>If you have a better example, I would also like to know, so I can add them here.</p>
+
+<p>These are mostly in modern Javanese language. But I also include some example of old Javanese. For non-Javanese language, theoretically they can also be typed, phonetically, using the keyboard.</p>
 <table style="width:100%">
-<tr><th style="width:10%">Latin</th><th>jer basuki mawa bea</th></tr>
+<tr><th style="width:10%">Latin</th><th>jer basuki mawa béa</th></tr>
 <tr><th>Aksara</th><td>ꦗꦼꦂꦧꦱꦸꦏꦶꦩꦮꦧꦺꦪ</td></tr>
 <tr><th>Karakter</th><td>ꦗ+ꦼ+ꦂ+ꦧ+ꦱ+ꦸ+ꦏ+ꦶ+ꦩ+ꦮ+ꦧ+ꦺ+ꦪ</td></tr>
 <tr><th>Input</th><td>[j] [x] [r] [ba] [s] [u] [k] [i] [ma] [wa] [b] [e] [a]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>lambé biru kecu</th></tr>
 <tr><th>Aksara</th><td>ꦭꦩ꧀ꦧꦺꦧꦶꦫꦸꦏꦼꦕꦸ</td></tr>
 <tr><th>Karakter</th><td>ꦭ+ꦩ+꧀+ꦧ+ꦺ+ꦧ+ꦶ+ꦫ+ꦸ+ꦏ+ꦼ+ꦕ+ꦸ</td></tr>
 <tr><th>Input</th><td>[la] [m] [b] [e] [b] [i] [r] [u] [k] [x] [c] [u]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>flamboyan wungu</th></tr>
 <tr><th>Aksara</th><td>ꦥ꦳꧀ꦭꦩ꧀ꦧꦺꦴꦪꦤ꧀ꦮꦸꦔꦸ</td></tr>
 <tr><th>Karakter</th><td>ꦥ+꦳+꧀+ꦭ+ꦩ+꧀+ꦧ+ꦺ+ꦴ+ꦪ+ꦤ+꧀+ꦮ+ꦸ+ꦔ+ꦸ</td></tr>
 <tr><th>Input</th><td>[f] [la] [m] [b] [o] [ya] [n] [w] [u] [ng] [u]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>mangan krupuk lan klepon</th></tr>
 <tr><th>Aksara</th><td>ꦩꦔꦤ꧀ꦏꦿꦸꦥꦸꦏ꧀ꦭꦤ꧀‌ꦏ꧀ꦊꦥꦺꦴꦤ꧀</td></tr>
 <tr><th>Karakter</th><td>ꦩ+ꦔ+ꦤ+꧀+ꦏ+ꦿ+ꦸ+ꦥ+ꦸ+ꦏ+꧀+ꦭ+ꦤ+꧀+‌+ꦏ+꧀+ꦊ+ꦥ+ꦺ+ꦴ+ꦤ+꧀</td></tr>
 <tr><th>Input</th><td>[ma] [nga] [n] [k] [r] [u] [p] [u] [k] [la] [n] [k] [l] [x] [p] [o] [n]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>cumplung kecemplung jumbleng</th></tr>
 <tr><th>Aksara</th><td>ꦕꦸꦩ꧀‌ꦥ꧀ꦭꦸꦁꦏꦼꦕꦼꦩ꧀‌ꦥ꧀ꦭꦸꦁꦗꦸꦩ꧀‌ꦧ꧀ꦊꦁ</td></tr>
 <tr><th>Karakter</th><td>ꦕ+ꦸ+ꦩ+꧀+‌+ꦥ+꧀+ꦭ+ꦸ+ꦁ+ꦏ+ꦼ+ꦕ+ꦼ+ꦩ+꧀+‌+ꦥ+꧀+ꦭ+ꦸ+ꦁ+ꦗ+ꦸ+ꦩ+꧀+‌+ꦧ+꧀+ꦊ+ꦁ</td></tr>
 <tr><th>Input</th><td>[c] [u] [m] [p] [l] [u] [ng] [k] [x] [c] [x] [m] [p] [l] [u] [ng] [j] [u] [m] [b] [l] [x] [ng]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>konferènsi Asia Afrika</th></tr>
 <tr><th>Aksara</th><td>ꦏꦺꦴꦤ꧀ꦥ꦳ꦼꦫꦺꦤ꧀ꦱꦶꦪꦱꦶꦪꦃꦄꦥ꦳ꦿꦶꦏꦃ</td></tr>
 <tr><th>Karakter</th><td>ꦏ+ꦺ+ꦴ+ꦤ+꧀+ꦥ+꦳+ꦼ+ꦫ+ꦺ+ꦤ+꧀+ꦱ+ꦶ+ꦪ+ꦱ+ꦶ+ꦪ+ꦃ+ꦄ+ꦥ+꦳+ꦿ+ꦶ+ꦏ+ꦃ</td></tr>
 <tr><th>Input</th><td>[k] [o] [n] [f] [x] [r] [e] [n] [s] [i] [A] [s] [i] [a] [h] [A] [f] [r] [i] [ka] [h]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>Sumantri liwat kreteg</th></tr>
 <tr><th>Aksara</th><td>ꦱꦸꦩꦤ꧀ꦠꦿꦶꦭꦶꦮꦠ꧀ꦏꦽꦠꦼꦒ꧀</td></tr>
 <tr><th>Karakter</th><td>ꦱ+ꦸ+ꦩ+ꦤ+꧀+ꦠ+ꦿ+ꦶ+ꦭ+ꦶ+ꦮ+ꦠ+꧀+ꦏ+ꦽ+ꦠ+ꦼ+ꦒ+꧀</td></tr>
 <tr><th>Input</th><td>[s] [u] [ma] [n] [t] [r] [i] [l] [i] [wa] [t] [k] [rx] [t] [x] [g]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>isor bréngos nyakil mrongos</th></tr>
 <tr><th>Aksara</th><td>ꦲꦶꦱꦺꦴꦂꦧꦿꦺꦔꦺꦴꦱ꧀ꦚꦏꦶꦭ꧀ꦩꦿꦺꦴꦔꦺꦴꦱ꧀</td></tr>
 <tr><th>Karakter</th><td>ꦲ+ꦶ+ꦱ+ꦺ+ꦴ+ꦂ+ꦧ+ꦿ+ꦺ+ꦔ+ꦺ+ꦴ+ꦱ+꧀+ꦚ+ꦏ+ꦶ+ꦭ+꧀+ꦩ+ꦿ+ꦺ+ꦴ+ꦔ+ꦺ+ꦴ+ꦱ+꧀</td></tr>
 <tr><th>Input</th><td>[i] [s] [o] [r] [b] [r] [e] [ng] [o] [s] [nya] [k] [i] [l] [m] [r] [o] [ng] [o] [s]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>waiḍūryyāmaranīla</th></tr>
 <tr><th>Aksara</th><td>ꦮꦻꦝꦹꦂꦪꦾꦴꦩꦫꦤꦷꦭ</td></tr>
 <tr><th>Karakter</th><td>ꦮ+ꦻ+ꦝ+ꦹ+ꦂ+ꦪ+ꦾ+ꦴ+ꦩ+ꦫ+ꦤ+ꦷ+ꦭ</td></tr>
 <tr><th>Input</th><td>[wa] [i] [dh] [u] [u] [r] [y] [ya] [a] [ma] [ra] [n] [i] [i] [la]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>narāryya kṛṣṇān laku</th></tr>
 <tr><th>Aksara</th><td>ꦤꦫꦴꦂꦪꦾꦏꦽꦰ꧀ꦟꦴꦤ꧀ꦭꦏꦸ</td></tr>
 <tr><th>Karakter</th><td>ꦤ+ꦫ+ꦴ+ꦂ+ꦪ+ꦾ+ꦏ+ꦽ+ꦰ+꧀+ꦟ+ꦲ+ꦤ+꧀+ꦭ+ꦏ+ꦸ</td></tr>
 <tr><th>Input</th><td>[na] [ra] [a] [r] [y] [ya] [k] [rx] [Z] [Na] [a] [n] [la] [k] [u]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>sākṣāt sěkar ning suji</th></tr>
 <tr><th>Aksara</th><td>ꦱꦴꦏ꧀ꦰꦴꦠ꧀ꦱꦼꦏꦂꦤꦶꦁꦱꦸꦗꦶ</td></tr>
 <tr><th>Karakter</th><td>ꦱ+ꦴ+ꦏ+꧀+ꦰ+ꦲ+ꦠ+꧀+ꦱ+ꦼ+ꦏ+ꦂ+ꦤ+ꦶ+ꦁ+ꦱ+ꦸ+ꦗ+ꦶ</td></tr>
 <tr><th>Input</th><td>[sa] [a] [k] [Za] [a] [t] [s] [x] [ka] [r] [n] [i] [ng] [s] [u] [j] [i]</td></tr>
-</table>
 
-<br />
-<table style="width:100%">
 <tr><th style="width:10%">Latin</th><th>jalesveva jayamahe</th></tr>
 <tr><th>Aksara</th><td>ꦗꦭꦺꦱ꧀ꦮꦺꦮꦗꦪꦩꦲꦺ</td></tr>
 <tr><th>Karakter</th><td>ꦗ+ꦭ+ꦺ+ꦱ+꧀+ꦮ+ꦺ+ꦮ+ꦗ+ꦪ+ꦩ+ꦲ+ꦺ</td></tr>
 <tr><th>Input</th><td>[ja] [l] [e] [s] [w] [e] [wa] [ja] [ya] [ma] [h] [e]</td></tr>
-</table><!--
 
-<br />
-<table style="width:100%">
-<tr><th style="width:10%">Latin</th><td></td></tr>
-<tr><th>Aksara</th><td></td></tr>
-<tr><th>Karakter</th><td></td></tr>
-<tr><th>Input</th><td></td></tr>
+<tr><th style="width:10%">Latin</th><th>vṛkṣau gacchāmi ca phalāni labhe</th></tr>
+<tr><th>Aksara</th><td>ꦮꦽꦏ꧀ꦰꦻꦴꦒꦕ꧀ꦖꦩꦶꦕꦦꦭꦴꦤꦶꦭꦨꦺ</td></tr>
+<tr><th>Karakter</th><td>ꦮ+ꦽ+ꦏ+꧀+ꦰ+‌ꦻꦴ+ꦒ+ꦕ+꧀+ꦖ+ꦩ+ꦶ+ꦕ+ꦦ+ꦭ+ꦴ+ꦤ+ꦶ+ꦭ+ꦨ+ꦺ</td></tr>
+<tr><th>Input</th><td>[w] [rx] [k] [Za] [u] [ga] [c] [cha] [m] [i] [ca] [pha] [la] [a] [n] [i] [la] [bh] [e]</td></tr>
+
+<tr><th style="width:10%">Latin</th><th>bhinneka tunggal ika</th></tr>
+<tr><th>Aksara</th><td>ꦨꦶꦟꦺꦏꦠꦸꦁꦒꦭ꧀ꦆꦏ</td></tr>
+<tr><th>Karakter</th><td>ꦨ+ꦶ+ꦟ+ꦺ+ꦏ+ꦠ+ꦸ+ꦁ+ꦒ+ꦭ+꧀+ꦆ+ꦏ</td></tr>
+<tr><th>Input</th><td>[bh] [i] [nn] [e] [ka] [t] [u] [ng] [ga] [l] [I] [ka]</td></tr>
 </table>
 
+
+<h4>2.1 Alternate / variant / multiple combinations</h4>
+<p>Most of the problems can be solved with a space, then after you get the form that you want, delete the space.</p>
+
+<ul>
+<li>To type 'pasangan ra' (if you don't want 'cakra'), for example in the phrase 'anak raja', type 'anak' as usual, then hard space (SHIFT+SPACE or CTRL+SPACE), then type 'raja' as usual, then remove the space. The same if you want to type 'pasangan ya', (and not 'pengkal'), for example in the phrase 'anak yuyu'. See also <a href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n3319.pdf">akrab (p.3)</a>
+<table>
+<tr><th>Latin</th><th>anak raja (son of king)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; padding: 0 10px;">ꦲꦤꦏꦿꦗ /ana kraja/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦲꦤꦏ꧀ꦫꦗ</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[a] [na] [k] [ ] [ra] [ja] (then delete the [ ])</td></tr>
+
+<tr><th>Latin</th><th>anak remaja (teenager)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; padding: 0 10px;">ꦲꦤꦏꦽꦩꦗ /ana kremaja/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦲꦤꦏ꧀ꦉꦩꦗ</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[a] [na] [k] [ ] [re] [ma] [ja] (then delete the [ ])</td></tr>
+
+<tr><th>Latin</th><th>anak yuyu (baby crab)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; padding: 0 10px;">ꦲꦤꦏꦾꦸꦪꦸ /ana kyuyu/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦲꦤꦏ꧀ꦪꦸꦪꦸ</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[a] [na] [k] [ ] [y] [u] [y] [u] (then delete the [ ])</td></tr>
+</table>
 <br />
-<table style="width:100%">
-<tr><th style="width:10%">Latin</th><td></td></tr>
-<tr><th>Aksara</th><td></td></tr>
-<tr><th>Karakter</th><td></td></tr>
-<tr><th>Input</th><td></td></tr>
-</table>-->
-<h1 id="2">Usage Notes</h1>
+
+</li><li>The same if you <b>don't want</b> to type the murda, you can use the same trick.
+<table>
+<tr><th>Latin</th><th>anak ayam (chick)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; white-space:nowrap; padding: 0 10px;">ꦲꦤꦏꦪꦩ꧀ /ana kayam/ ꦲꦤꦑꦪꦩ꧀ /ana khayam/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦲꦤꦏ꧀ꦲꦪꦩ꧀ (anak ayam)</td></tr>
+<tr><th>Input</th><td style="text-align:left; padding: 0 10px;">[a] [na] [k] [ ] [a] [ya] [m] (then delete the [ ])</td></tr>
+
+<tr><th>Latin</th><th>hak-hak (rights)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; white-space:nowrap; padding: 0 10px;">ꦲꦑꦏ꧀ /a khak/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦲ꦳ꦏ꧀ꦲ꦳ꦏ꧀ (hak hak)</td></tr>
+<tr><th>Input</th><td style="text-align:left; padding: 0 10px;">[ha] [~] [k] [ ] [ha] [~] [k] (then delete the [ ])</td></tr>
+
+<tr><th>Latin</th><th>latihan nyanyi (practice singing)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; padding: 0 10px;">ꦭꦠꦶꦲꦟꦾꦚꦶ /latihann yanyi/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦭꦠꦶꦲꦤ꧀ꦚꦚꦶ</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[la] [t] [i] [ha] [n] [ ] [nya] [ny] [i] (then delete the [ ])</td></tr>
+</table>
+<br />
+
+</li><li>Or, if you want to separate 'n' with 'y', to not form 'ny' (nya). Sundanese also type 'nya' ꦚ as 'na'+'pengkal' ꦤꦾ
+<table>
+<tr><th>Latin</th><th>mangan yuyu (eating crab)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; padding: 0 10px;">ꦩꦔꦚꦸꦪꦸ /manga nyuyu/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦩꦔꦤ꧀ꦪꦸꦪꦸ</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[ma] [nga] [n] [ ] [y] [u] [y] [u] (then delete the [ ])</td></tr>
+
+<tr><th>Latin</th><th>nyanyi (sing)</th></tr>
+<tr><th>Javanese</th><td style="text-align:left; padding: 0 10px;">ꦚꦚꦶ</td></tr>
+<tr><th>Sundanese</th><td style="text-align:left; padding: 0 10px;">ꦤꦾꦤꦾꦶ</td></tr>
+<tr><th>Input</th><td style="text-align:left; padding: 0 10px;">[na] [(] [na] [(] [q] [i]</td></tr>
+</table>
+<br />
+
+</li><li>Or, if you don't want the final 'r', 'h', 'ng' to form 'sesigeg' ('layar', 'wignyan', 'cecak'). Compare also <a href="http://std.dkuug.dk/jtc1/sc2/wg2/docs/n3319.pdf">dir-ya vs di-rya (p.3)</a>
+<table>
+<tr><th>Latin</th><th>pulo Ryukyu (Ryukyu Island)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; padding: 0 10px;">ꦥꦸꦭꦺꦴꦂꦪꦸꦏꦾꦸ /pulor yuku/</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦥꦸꦭꦺꦴꦫꦾꦸꦏꦾꦸ</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[p] [u] [l] [o] [ ] [r] [y] [u] [k] [y] [u] (then delete the [ ])</td></tr>
+</table>
+<br />
+(or the opposite)
+<table>
+<tr><th>Latin</th><th>Duryyodhana (a character in Mahabharata)</th></tr>
+<tr><th>Aksara&nbsp;(wrong)</th><td style="text-align:left; padding: 0 10px;">ꦢꦸꦫꦾ꧀ꦪꦺꦴꦝꦤ *</td></tr>
+<tr><th>Aksara (right)</th><td style="text-align:left; padding: 0 10px;">ꦢꦸꦂ‌ꦪꦾꦺꦴꦝꦤ</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">(type as usual) [d] [u] [r] [y] [y] [o] [dha] [na]</td></tr>
+</table>
+* you should never get this result with Nulisa keyboard<!-- [d] [u] [] [r] [y] [y] [o] [dha] [na] 	-->
+<br />
+<br />
+
+</li><li>If you want to form 'cakra' + 'pepet' instead of 'cakra keret', 'ra' + 'pepet' instead of 'pa cerek', and 'la' + 'pepet' instead of 'nga lelet'.
+<table>
+<tr><th>Latin</th><th>(I cannot think of a justified example, so don't do this)</th></tr>
+<tr><th>With cakra keret (normal)</th><td style="text-align:left; padding: 0 10px;">ꦏꦽꦩꦼꦱ꧀ (kremes)</td></tr>
+<tr><th>With cakra+pepet (abnormal)</th><td style="text-align:left; padding: 0 10px;">ꦏꦿꦼꦩꦼꦱ꧀ (kremes)</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[k] [r] backspace [ ] [qx] [m] [x] [s] (then delete the [ ])</td></tr>
+
+<tr><th>With cakra keret (normal)</th><td style="text-align:left; padding: 0 10px;">ꦊꦩꦃ (lemah)</td></tr>
+<tr><th>With cakra+pepet (abnormal)</th><td style="text-align:left; padding: 0 10px;">ꦭꦼꦩꦃ (lemah)</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[la] [ ] [qx] [ma] [h] (then delete the [ ])</td></tr>
+
+<tr><th>With cakra keret (normal)</th><td style="text-align:left; padding: 0 10px;">ꦉꦒ (rega)</td></tr>
+<tr><th>With cakra+pepet (abnormal)</th><td style="text-align:left; padding: 0 10px;">ꦫꦼꦒ (rega)</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[ra] [ ] [qx] [ga] (then delete the [ ])</td></tr>
+</table>
+</li>
+</ul>
+<h4>2.2 Ambiguity</h4>
+<p>Some combination may result in (visual) ambiguity. Currently the computer know how to read it (because the character codes/order is different), but the human may not. Fortunately the practical usage of these examples are pretty low.</p>
+<ul>
+<li>Ambiguity with "cecak telu".
+<table>
+<tr><th style="white-space:nowrap; text-align:left; padding: 0 10px;">[k] [~] [q] [ja]</th><td style="text-align:left; padding: 0 10px;">ꦏ꦳꧀ꦗ = ꦏ ꦳ ꧀ ꦗ</td></tr>
+<tr><th style="white-space:nowrap; text-align:left; padding: 0 10px;">[k] [za]</th><td style="white-space:nowrap; text-align:left; padding: 0 10px;">ꦏ꧀ꦗ꦳ = ꦏ ꧀ ꦗ ꦳</td></tr>
+</table>
+<br />
+
+<li>"pasangan na + pengkal" and "pasangan nya".
+<table>
+<tr><th style="white-space:nowrap; text-align:left; padding: 0 10px;">[k] [n] [*]</th><td style="white-space:nowrap; text-align:left; padding: 0 10px;">ꦏ꧀ꦤꦾ = ꦏ ꧀ ꦤ‌ ꦾ</td></tr>
+<tr><th style="text-align:left; padding: 0 10px;">[k] [nya]</th><td style="text-align:left; padding: 0 10px;">ꦏ꧀ꦚ = ꦏ ꧀ ꦚ</td></tr>
+</table>
+<br />
+
+</li><li>Ambiguity between numbers and 'nglegena'. Ambiguity mostly resolved by wrapping the numbers in "꧇" or "꧈"
+<table>
+<tr><th style="white-space:nowrap; text-align:left; padding: 0 10px;">[1] [2] [3] [6] [7] [8] [9] [0]</th><td style="text-align:left; padding: 0 10px;">꧑ ꧒ ꧓ ꧖ ꧗ ꧘ ꧙ ꧐
+</td></tr>
+<tr><th style="white-space:nowrap; text-align:left; padding: 0 10px;">[ga] [lx] [ngya] [E] [la] [Pa] [ya] [<]/["]</th><td style="white-space:nowrap; text-align:left; padding: 0 10px;">ꦒ ꦊ ꦔꦾ ꦌ ꦭ ꦦ ꦪ ꧞ ꧆</td></tr>
+</table>
+</ul>
+
+<h4>2.3 Notes on typing Js like a pro 😎</h4>
+<p>Remember:</p>
+<ol>
+<li>Js is abugida; it has inherent vowel.
+</li><li>Js is phonetic; you type what you hear, not what you read.
+</li><li>Wrap the numbers in "꧇" or "꧈" to avoid ambiguity.
+</li>
+</ol>
+<p>So, the second point usually is the crucial one.</p>
+<ul>
+<li>If you have a word, as much as possible, find the root-word, and if it's a derivative word (word + suffix/prefix/affix), then if necessary, some consonant need to be 'doubled'. For example
+<table>
+<tr><th>Latin</th><th>nulisa (='nulis' + '-a')</th></tr>
+<tr><th>Aksara&nbsp;(👎)</th><td style="text-align:left; padding: 0 10px;">ꦤꦸꦭꦶꦱ /nu li sa/ = amateur</td></tr>
+<tr><th>Aksara (👍)</th><td style="white-space:nowrap; text-align:left; padding: 0 10px;">ꦤꦸꦭꦶꦱ꧀ꦱ /nu lis sa/ = pro 😎</td></tr>
+<tr><th>Input</th><td style="white-space:nowrap; padding: 0 10px;">[n] [u] [l] [i] [s] <b>[s]</b> [a]</td></tr>
+</table>
+While this is not strictly right or wrong issue, the 👎 one should be avoided in writing Js.
+<!-- more examples coming up -->
+</li></ul>
+
+<h2 id="2">Usage Notes</h2>
+<hr />
+<p><b>ToC</b>:
+  <a href="#top">Welcome!</a> |
+  <a href="#1">Nulisa Aksara Jawa keyboard shortcuts</a> |
+  <a href="#2">Typing tests and input samples</a> |
+  <a href="#3">Usage Notes</a> |
+  <a href="#4">Development Notes</a> |
+  <a href="#5">Change History</a>
+</p>
 <p>How to use the keyboard (for user), or read the codes (for developer)</p>
 <ul>
     <li><b>Adeg-adeg</b> (sentence openings). Type the pipe symbol (|) to get 'adeg-adeg' ꧋. Type \ to get ꧊. 'Rerenggan kiwa/tengen' ꧁ and ꧂ can be typed using { and }.</li>
@@ -1153,13 +1384,14 @@
         <li>*Now, I know it's highly unusual to see 'wyanjana' with 'pangkon', but I decided for the sake of code brevity. Otherwise I have to make separate rules for 'wyanjana'. Instead, since they ends with 'pangkon', all the rules for 'pangkon' also applies for them. In one way, it makes sense, because if you only type 'br' for example, it doesn't have a vowel yet. If you leave it like that, of course it's wrong. Only after you type a vowel would the 'pangkon' get replaced by applicable '<b>sandhangan</b>'</li></ul></li>
     <li><b>Rekan.</b> They're supplementing the letters that aren't found in Javanese language, namely 'f/v/z'. Some sources equate 'f' and 'v' as 'pa + cecak telu', while some others differentiate them. I subscribe to the second group: 'f' as 'pa + cecak telu'(+'pangkon') and 'v' as 'wa + cecak telu'(+'pangkon'). 'z' is 'ja + cecak telu'(+'pangkon'). Writing 'f/v/z' would also ends with '<b>pangkon</b>'. For other rekan that uses 'cecak telu':<ul>
 <li> ꦒ꦳ GA + CECAK TELU = غ (γa).
-</li><li> ꦗ꦳ JA + CECAK TELU = ز (za).
+</li><li> ꦗ꦳ JA + CECAK TELU = ز (za) and for Indonesian 'za'.
 </li><li> ꦢ꦳ DA + CECAK TELU = ذ (dza).
-</li><li> ꦦ꦳ PA MURDA + CECAK TELU = ف (fa).
+</li><li> ꦥ꦳ PA + CECAK TELU = ف (fa) and for Indonesian 'fa'.
+</li><li> ꦮ꦳ WA + CECAK TELU = ڤ (va) and for Indonesian 'va'.
 </li><li> ꦔ꦳ NGA + CECAK TELU = ع ('a).
 </li><li> ꦱ꦳ SA + CECAK TELU = ش (ša).
-</li><li> ꦲ꦳ HA + CECAK TELU = ح (ḥa).</li></ul>
-For these letters there are no shortcuts, you have to be creative, and found a way to write it your own with the available means. For example, to type 'dza', you can type 'da'+'~' (tilde), 'dzi' = 'da'+'~'+'q'+'	i'. <br />For Chinese 'rekan', I couldn't find any reliable source regarding their history, list, and usage (pronounciation), only from <a href='https://en.wikipedia.org/w/index.php?title=Javanese_script&oldid=880704499#Additional_Aksara'>Wikipedia</a>, and they're archaic/not proper pinyin/mandarin and not suitable for modern usage. I'm not listing them here for now, because I'm planning to build a systematic index of every Chinese syllable and their Javanese script counterpart (<a href="https://id.wiktionary.org/wiki/Indeks:Pinyin-Aksara_Jawa">Indeks:Pinyin-Aksara Jawa</a>).</li>
+</li><li> ꦲ꦳ HA + CECAK TELU = ح (ḥa) and for Indonesian 'ha'.</li></ul>
+For these letters there are no shortcuts, you have to be creative, and found a way to write it your own with the available means. For example, to type 'dza', you can type 'da'+'~' (tilde), 'dzi' = 'da'+'~'+'q'+'	i'. <br />For Chinese 'rekan', I couldn't find any reliable source regarding their history, list, and usage (pronounciation), only from <a href='https://en.wikipedia.org/w/index.php?title=Javanese_script&oldid=880704499#Additional_Aksara'>Wikipedia</a>, and they're archaic/not proper pinyin/mandarin and not suitable for modern usage. I'm not listing them here for now, because I'm planning to build a systematic index of every Chinese syllable and their Js counterpart (<a href="https://id.wiktionary.org/wiki/Indeks:Pinyin-Aksara_Jawa">Indeks:Pinyin-Aksara Jawa</a>).</li>
     <li><b>Murda</b> and Mahaprana. I store them in the capital Latin consonant letters, but it doesn't necessarily mean they're Javanese capital letter, it's just for convenience and mnemonic. Their number is only 10 single-letter Murda ('KGCJTDNPBS') and 3 multi-letters Murda. Below are some <b>double consonant</b> combinations for murda letters.<ul>
         <li>'Th' - 'tta mahaprana pangkon' ꦜ꧀ (replacing 'Ta pangkon' ꦡ꧀)</li>
         <li>'Dh' - 'dda mahaprana pangkon' ꦞ꧀ (replacing 'Da pangkon' ꦣ꧀)</li>
@@ -1168,11 +1400,13 @@ For these letters there are no shortcuts, you have to be creative, and found a w
     </ul>
 The other 10 capital Latin consonant letters (QZHRY) and (FVMLW) doesn't store 'murda' letters. I used Q for 'Ka Sasak', Z for 'Sa Mahaprana' (to differentiate from S, 'Sa Murda'), and H, R, Y for '<b>wyanjana</b>'. If you typed a murda it will also attached by '<b>pangkon</b>' and the above 'pangkon' rules apply. (FVMLW) are currently unused. The six capital Latin vowel letters and x (AEIOUX) are used for 'aksara swara' (see <b>sandhangan</b> above). Some special 'aksara swara' (long vowels):<ul>
         <li>'Aa' - 'A tarung' ꦄꦴ (long-A)</li>
-        <li>'Ai' - 'Ai' ꦍ</li>
+        <li>'Ai' - 'Ai' ꦍ e.g. ꦍꦱ꧀ꦭꦤ꧀ꦝꦶꦪ /Aislandhiya/</li>
+        <li>'Au' - 'O tarung' ꦎꦴ e.g. ꦎꦴꦱ꧀ꦠꦿꦭꦶꦪ /Oostraliya/</li>
         <li>'Ii' - 'Ii' ꦇ (long-I)</li>
         <li>'II' - 'I Kawi' ꦅ</li>
+        <li>(The 'I' and 'Long I' history is messed up between Old Javanese/Kawi, and Modern Javanese. Read in Wikipedia or ask me if you want to know)</li>
         <li>'Uu' - 'U tarung' ꦈꦴ (long-U)</li>
-        <li>'Oo' - 'O tarung' 'Au' ꦎꦴ (long-O)</li>
+        <li>'Oo' - 'O tarung' = 'Au' ꦎꦴ (long-O)</li>
 </ul></li>
     <li><b>Special</b> letters. 'Aksara ganten'<ul>
         <li>'rx' - 'pa cerek' ꦉ (replacing 'ra pepet' ꦫꦼ)</li>
@@ -1186,9 +1420,11 @@ The other 10 capital Latin consonant letters (QZHRY) and (FVMLW) doesn't store '
         <li>if a number is at the end, followed by period ('pada lungsi')</li>
         <li>a number will be ended with 'pada pangkat' before the 'pada lungsi' automatically, except if it's at the very end, and there's no more character to follow, then you have to manually close the 'pada pangkat' by typing semicolon ':'.</li></ul></li>
     <li><b>Special</b> characters. See the visual mapping of the keyboard for reference, or the table above. They might move in the future. I'm trying to make it as intuitive as possible. Some special combinations:<ul>
-        <li>꧅꧉ꦧ꧀ꦖ꧉꧅or ꧅ꦧ꧀ꦖ꧅or ꧅ꦧ꧀ꦕ꧅'purwapada' - to introduce a poem. <br /><br />It can be typed as such: '/.bcha./' or '/bcha/' or '/bCa/' or '/bca/'</li>
-        <li>꧅꧉ꦟ꧀ꦢꦿ꧉꧅or ꧅ꦟ꧀ꦢꦿ꧅'madyapada' - to indicates a new song within a poem. <br /><br />It can be typed as such: '/.Ndra./' or '/Ndra/'</li>
-        <li>꧅꧉ꦆ꧉꧅or ꧅ꦆ꧅'wasanapada' - to end a poem. <br /><br />It can be typed as such: '/.I./' or '/I/'</li>
+        <li>꧅꧉ꦧ꧀ꦖ꧉꧅or ꧅ꦧ꧀ꦖ꧅or ꧅ꦧ꧀ꦕ꧅ 'purwapada' - to introduce a poem. <br /><br />It can be typed as such: '/.bcha./' or '/bcha/' or '/bCa/' or '/bca/'</li>
+        <li>꧅꧉ꦟ꧀ꦢꦿ꧉꧅or ꧅ꦟ꧀ꦢꦿ꧅ 'madyapada' - to indicates a new song within a poem. <br /><br />It can be typed as such: '/.Ndra./' or '/Ndra/'</li>
+        <li>꧅꧉ꦆ꧉꧅or ꧅ꦆ꧅ 'wasanapada' - to end a poem. <br /><br />It can be typed as such: '/.I./' or '/I/'</li>
+        <li>꧋꧆꧋ 'pada guru'/'pada bab'/'uger-uger' - to introduce a letter (legacy). <br /><br />It can be typed as such: '|"|'</li>
+        <li>꧉꧆꧉ or ꧉ ꧆ ꧉ 'pada pancak' - to end a letter (legacy). <br /><br />It can be typed as such: '.".'</li>
     </ul></li>
     <li><b>Invalid</b> combinations. I have tried to reduce the possibility of invalid combinations as minimal as possible.<ul>
         <li>Combination of a '<b>pangkon</b>', '<b>sesigeg</b>', '<b>wyanjana</b>', '<b>panyangga</b>' and themselves is not allowed (eg. q+q)</li>
@@ -1196,4 +1432,3 @@ The other 10 capital Latin consonant letters (QZHRY) and (FVMLW) doesn't store '
         <li>Combination of a 'pada pangkat' and another 'pada pangkat' is not allowed</li>
     </ul></li>
 </ul>
-

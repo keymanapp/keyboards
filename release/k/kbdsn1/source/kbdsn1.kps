@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.218.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -9,6 +9,7 @@
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,6 +21,11 @@
     <Version URL=""></Version>
     <Author URL="">Tavultesoft Pty Ltd</Author>
     <WebSite URL="https://help.keyman.com/keyboard/kbdsn1">https://help.keyman.com/keyboard/kbdsn1</WebSite>
+    <Description>This keyboard layout is designed for Sinhala. It includes an on screen
+keyboard which can be viewed by clicking on the Keyman icon and
+selecting the On Screen Keyboard menu item. The included font
+**KandyUnicode.ttf** is recommended for Sinhala. The keyboard layout
+follows the Windows Vista Sinhala layout.</Description>
   </Info>
   <Files>
     <File>
@@ -47,25 +53,23 @@
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sinhala\kandyunicode.ttf</Name>
-      <Description>Font KandyUnicode</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\build\kbdsn1.js</Name>
       <Description>File kbdsn1.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Sinhala</Name>
       <ID>kbdsn1</ID>
-      <Version>1.0.1</Version>
-      <OSKFont>..\..\..\shared\fonts\sinhala\kandyunicode.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\sinhala\kandyunicode.ttf</DisplayFont>
+      <Version>1.0.2</Version>
       <Languages>
         <Language ID="si">Sinhala</Language>
       </Languages>
