@@ -1,5 +1,9 @@
 Hul’q’umi’num’ Change History
 ============================
+9.2 (30 Jul 2024)
+-----------------
+* Centered spacing of mobile layout
+* Added curly quote
 
 9.1 (26 Oct 2018)
 -----------------

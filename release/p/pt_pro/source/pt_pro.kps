@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>sideimage-pt_pro.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,9 +21,10 @@
     <Name URL="">Portuguese (Programmers)</Name>
     <Copyright URL="">(c) 2024 SIL International</Copyright>
     <Author URL=""></Author>
-    <Description>This keyboard layout is designed for Portuguese programmers.  
+    <Description URL="">This keyboard layout is designed for Portuguese programmers.  
 It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and 
 selecting the On Screen Keyboard menu item.</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -79,14 +81,20 @@ selecting the On Screen Keyboard menu item.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>sideimage-pt_pro.png</Name>
+      <Description>File sideimage-pt_pro.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Portuguese (Programmers)</Name>
       <ID>pt_pro</ID>
-      <Version>1.0</Version>
+      <Version>1.0.2</Version>
       <Languages>
-        <Language ID="pt">Portuguese</Language>
+        <Language ID="pt-PT">Portuguese (Portugal)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

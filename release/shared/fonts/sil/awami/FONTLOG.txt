@@ -1,31 +1,31 @@
-FONTLOG 
+FONTLOG
 Awami Nastaliq font
 =================
 
-This file provides detailed information on the Awami Nastaliq font software. 
-This information should be distributed along with the Awami Nastaliq font 
+This file provides detailed information on the Awami Nastaliq font software.
+This information should be distributed along with the Awami Nastaliq font
 and any derivative works.
 
-## Basic Font Information
+Basic Font Information
 ----------------------
 
-Awami Nastaliq is a Nastaliq-style Arabic script font supporting a wide variety of 
-languages of Southwest Asia, including but not limited to Urdu. This font is aimed 
+Awami Nastaliq is a Nastaliq-style Arabic script font supporting a wide variety of
+languages of Southwest Asia, including but not limited to Urdu. This font is aimed
 at minority language support. This makes it unique among Nastaliq fonts.
 
-Awami means "of the people", "of the common population" or "public". 
+Awami means "of the people", "of the common population" or "public".
 
-The Awami Nastaliq font does not provide complete coverage of all the characters 
-defined in Unicode for Arabic script. Because the font style is specifically 
-intended for languages using the Nastaliq style of southwest Asia, the character 
+The Awami Nastaliq font does not provide complete coverage of all the characters
+defined in Unicode for Arabic script. Because the font style is specifically
+intended for languages using the Nastaliq style of southwest Asia, the character
 set for this font is aimed at those languages.
 
-This font makes use of state-of-the-art font technologies to support complex 
-typographic issues. Font smarts have been implemented using Graphite only. We have 
+This font makes use of state-of-the-art font technologies to support complex
+typographic issues. Font smarts have been implemented using Graphite only. We have
 no current plans to support OpenType.
 
 Five fonts from this typeface family are included in this release:
-      
+
 * Awami Nastaliq Regular
 * Awami Nastaliq Medium
 * Awami Nastaliq SemiBold
@@ -34,11 +34,40 @@ Five fonts from this typeface family are included in this release:
 
 For detailed documentation see the contents of the 'documentation' folder.
 
-Awami Nastaliq is a trademark of SIL International.
+Awami Nastaliq is a trademark of SIL Global.
 
 ## ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
+
+### 2024-Oct-09 (SIL WSTech team) Awami Nastaliq Version 3.300
+
+#### Improved
+- Fixed issue with wasla collisions
+
+#### New
+- Added support for Kashmiri language
+- Added support for Gojri language
+- Added 15 characters:
+  - U+08F7 ARABIC LEFT ARROWHEAD ABOVE (for Burushaski)
+  - U+FBC6 ARABIC LIGATURE RAHMATU ALLAAHI ALAYHIM (this character is not officially in Unicode,
+    it is in the pipeline for a future version of the Unicode Standard)
+  - U+FBC7 ARABIC LIGATURE RAHMATU ALLAAHI ALAYHIMAA (this character is not officially in Unicode,
+    it is in the pipeline for a future version of the Unicode Standard)
+  - U+FD40 ARABIC LIGATURE RAHIMAHU ALLAAH
+  - U+FD41 ARABIC LIGATURE RADI ALLAAHU ANH
+  - U+FD42 ARABIC LIGATURE RADI ALLAAHU ANHAA
+  - U+FD43 ARABIC LIGATURE RADI ALLAAHU ANHUM
+  - U+FD44 ARABIC LIGATURE RADI ALLAAHU ANHUMAA
+  - U+FD45 ARABIC LIGATURE RADI ALLAAHU ANHUNNA
+  - U+FD48 ARABIC LIGATURE ALAYHIM AS-SALAAM
+  - U+FD49 ARABIC LIGATURE ALAYHIMAA AS-SALAAM
+  - U+FD4D ARABIC LIGATURE ALAYHAA AS-SALAAM
+  - U+FD90 ARABIC LIGATURE RAHMATU ALLAAHI ALAYH (this character is not officially in Unicode,
+    it is in the pipeline for a future version of the Unicode Standard)
+  - U+FD91 ARABIC LIGATURE RAHMATU ALLAAHI ALAYHAA (this character is not officially in Unicode,
+    it is in the pipeline for a future version of the Unicode Standard)
+  - U+FDFE ARABIC LIGATURE SUBHAANAHU WA TAAALAA
 
 ### 2023-Oct-23 (SIL WSTech team) Awami Nastaliq Version 3.200
 
@@ -149,7 +178,7 @@ Awami Nastaliq is a trademark of SIL International.
 - Fixed right side-bearing problems with kafs, gafs, seens, and bariyeh
 - Made bariyeh right-joining only
 - Made many small glyph shape improvements
-- Improved collision handling for special cases 
+- Improved collision handling for special cases
 - Added an omitted feature to TypeTuner capability
 - Redesigned salaam ulena ligature
 - Improved punctuation kerning
@@ -171,14 +200,14 @@ Awami Nastaliq is a trademark of SIL International.
 ### 2017-Apr-11 (SIL NRSI team) Awami Nastaliq Beta3
 - Changed angle of vertical strokes on alef, lam, kaf, gaf, and tah forms
 - Increased the line height by 20%
-- Changed shapes of a number of letter forms: tah, bariyeh, feh (head shape), 
-  dal, reh, some meems, some heh-goals, isolate kaf/gaf, some initial jeems, 
+- Changed shapes of a number of letter forms: tah, bariyeh, feh (head shape),
+  dal, reh, some meems, some heh-goals, isolate kaf/gaf, some initial jeems,
   pesh, dopesh, name marker
-- Added Arabic style punctuation; cleaned up behavior of Arabic vs. Latin style 
+- Added Arabic style punctuation; cleaned up behavior of Arabic vs. Latin style
   punctuation
-- Added visible versions of invisible characters such as directional markers, 
+- Added visible versions of invisible characters such as directional markers,
   directional embedding, no-break spaces, etc.
-- Added features: Full stop alternate (dash vs. dot) and Punctuation 
+- Added features: Full stop alternate (dash vs. dot) and Punctuation
   (default, Arabic, or Latin)
 - Added 06CE - yeh with small V; 06D5 - Ae
 - Adjust size of spaces to match rescaling that happened in beta-2 version
@@ -189,8 +218,8 @@ Awami Nastaliq is a trademark of SIL International.
 - Increased font size by 15%
 - Redesigned seen forms
 - Redesigned nuqtas, made a them little smaller and closer together
-- Implemented feature to allow shorter kafs/gafs and some final forms 
-  (noon, seen, chotiyeh, bariyeh, qaf, meem, lam) when the sequences 
+- Implemented feature to allow shorter kafs/gafs and some final forms
+  (noon, seen, chotiyeh, bariyeh, qaf, meem, lam) when the sequences
   get very high
 - Added feature to allow alternate position of V over lam
 - Added Arabic style quote marks at a higher position than Latin
@@ -218,24 +247,24 @@ Awami Nastaliq is a trademark of SIL International.
 ### 2014-Sep-10 (SIL NRSI team) Awami Nastaliq Preliminary work
 - Preliminary design of isolate characters
 
-## Information for Contributors
+Information for Contributors
 ----------------------------
-We welcome contributions to this font project, such as new glyphs, enhanced 
-smart font code, or bug fixes. The best way to begin the process is to file 
-an issue in the Github project (https://github.com/silnrsi/font-awami) 
-or respond to an existing issue and express your interest. Then we can begin 
-to correspond with you regarding what all might be required and discuss how 
+We welcome contributions to this font project, such as new glyphs, enhanced
+smart font code, or bug fixes. The best way to begin the process is to file
+an issue in the Github project (https://github.com/silnrsi/font-awami)
+or respond to an existing issue and express your interest. Then we can begin
+to correspond with you regarding what all might be required and discuss how
 to best submit your contributions.
 
-To enable us to accept contributions in a way that honors your contribution 
-and respects your copyright while preserving long-term flexibility for open 
-source licensing, you would also need to agree to the SIL International 
-Contributor License Agreement for Font Software (v1.0) prior to sending us 
-your contribution. To read more about this requirement and find out how to 
+To enable us to accept contributions in a way that honors your contribution
+and respects your copyright while preserving long-term flexibility for open
+source licensing, you would also need to agree to the SIL International
+Contributor License Agreement for Font Software (v1.0) prior to sending us
+your contribution. To read more about this requirement and find out how to
 submit the required form, please visit the CLA information page
 (https://software.sil.org/fontcla).
 
-## Acknowledgements
+Acknowledgements
 ----------------
 (Here is where contributors can be acknowledged. If you make modifications
 be sure to add your name (N), email (E), web-address (W) and description
@@ -251,9 +280,8 @@ E: fonts@sil.org
 W: https://software.sil.org/wstech/
 D: Lead designer
 
-The Awami Nastaliq project is maintained by SIL International.
+The Awami Nastaliq project is maintained by SIL Global.
 
-For more information please visit the Awami Nastaliq font page on 
-SIL International's website:
+For more information please visit the Awami Nastaliq font page on
+SIL Global's website:
 https://software.sil.org/awami/
-

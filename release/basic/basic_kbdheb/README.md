@@ -1,14 +1,12 @@
 Hebrew Basic keyboard
 ==============
 
-(c) 2009-2019 SIL International
-
-Version 1.1
+(c) SIL Global
 
 Description
 -----------
 
-Hebrew Basic generated from template
+Hebrew Basic generated from from Microsoft Win10 keyboard.
 
 Links
 -----

@@ -1,7 +1,7 @@
 Hebrew Legacy (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This keyboard is designed for Biblical Hebrew. It reverts the input behavior for holam and holam haser to an earlier version of the official 

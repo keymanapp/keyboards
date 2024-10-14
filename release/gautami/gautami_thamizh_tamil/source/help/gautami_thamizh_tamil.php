@@ -1314,5 +1314,11 @@ each of these keys several times in a row to see how it works.</p>
 
 <p>The mobile layout also currently matches the desktop layout.</p>
 
-<div id='osk' data-states='default shift rightalt rightalt-shift'>
-</div>
+<h3>Default (unshifted)</h3>
+<p><a href="LayoutU_.png"><img class="keyboard" src="LayoutU_.png" alt="Default (unshifted) state" /></a></p>
+<h3>Shift</h3>
+<p><a href="LayoutU_S.png"><img class="keyboard" src="LayoutU_S.png" alt="Shift state" /></a></p>
+<h3>Right ALT (unshifted)</h3>
+<p><a href="LayoutU_RA.png"><img class="keyboard" src="LayoutU_RA.png" alt="Right ALT (unshifted) state" /></a></p>
+<h3>Shift Right ALT</h3>
+<p><a href="LayoutU_SRA.png"><img class="keyboard" src="LayoutU_SRA.png" alt="Shift Right ALT state" /></a></p>
