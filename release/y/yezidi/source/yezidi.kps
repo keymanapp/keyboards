@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.144.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Ezdiki / Ezidi language</Name>
-    <Copyright URL="">© 2024 Ezidi74</Copyright>
+    <Name URL="">Yezidi</Name>
+    <Copyright URL="">© Ezidi74</Copyright>
     <Author URL="mailto:hajisabri74@gmail.com">Haji Sabri and Adil Eazdeen</Author>
     <Version URL=""></Version>
-    <Description>Keyboard for the Yezidi script. Authors: mailto:hajisabri74@gmail.com, adilaezdeen1@gmail.com, ezidilangu@gmail.com</Description>
+    <Description URL="">Keyboard for the Yezidi script. Authors: mailto:hajisabri74@gmail.com, adilaezdeen1@gmail.com, ezidilangu@gmail.com</Description>
   </Info>
   <Files>
     <File>
@@ -101,15 +102,19 @@
     <Keyboard>
       <Name>Ezidi keyboard</Name>
       <ID>yezidi</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSerifYezidi-Regular.ttf"/></WebDisplayFonts>
       <Languages>
-        <Language ID="ku-Yezi">Kurdish (Yezi)</Language>
-        <Language ID="kmr-Yezi">Northern Kurdish (Yezi)</Language>
+        <Language ID="kmr-Yezi">Ezidi</Language>
       </Languages>
+      <Examples>
+        <Example ID="kmr-Yezi" Keys="caTuuma f.cra" Text="𐺊𐺀𐺕𐺣𐺣𐺢𐺀 𐺙𐺦𐺊𐺍𐺀" Note="The name of Khatuna Fekhra in Yezidi script"/>
+      </Examples>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Yezi\NotoSerifYezidi-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
