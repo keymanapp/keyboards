@@ -1,10 +1,10 @@
 <?php 
-  $pagename = 'Yezidi Keyboard Help';
+  $pagename = 'Eezidi Keyboard Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
 
-<p>Keyboard for the Yezidi script.</p>
+<p>Keyboard for the Ezidi language using the Yezidi script.</p>
 
 
 <h2>Desktop Keyboard layout</h2>
