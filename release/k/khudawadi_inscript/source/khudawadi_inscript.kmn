@@ -1,0 +1,41 @@
+﻿c khudawadi_inscript generated from template at 2024-10-17 15:50:54
+c with name "Khudawadi (Inscript)"
+store(&VERSION) '10.0'
+store(&NAME) 'Khudawadi (Inscript)'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'khudawadi_inscript.ico'
+store(&VISUALKEYBOARD) 'khudawadi_inscript.kvks'
+store(&LAYOUTFILE) 'khudawadi_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(IndVowK) "DEFRGTSWAQ"
+store(IndVowU) U+112B0 .. U+112B9
+
+store(DepVowK) "efrgtswaq"
+store(DepVowU) U+112E0 .. U+112E8
+
+store(ConsK) "kKi" [RALT K_I] "IU;:p" [RALT K_P] "P}'" '"' "[" [RALT K_LBRKT] "J{VlLoOvhHy" [RALT K_Y] "Yc/jnbMmu"
+store(ConsU) U+112BA .. U+112DE
+
+store(LatnNumK) [RALT K_0] [RALT K_1] [RALT K_2] [RALT K_3] [RALT K_4] [RALT K_5] [RALT K_6] [RALT K_7] [RALT K_8] [RALT K_9] 
+store(NumK) "0123456789"
+store(NumU) U+112F0 .. U+112F9
+
+store(nul) "zZXCBN"
+
+group(main) using keys
+
++ any(nul) > nul
++ any(IndVowK) > index(IndVowU,1)
++ any(DepVowK) > index(DepVowU,1)
++ any(ConsK) > index(ConsU,1)
++ any(NumK) > index(NumU,1)
++ any(LatnNumK) > index(NumK,1)
+
++ [K_X]     > U+112DF c anusvara
++ [K_RBRKT] > U+112E9 c nukta
++ [K_D]     > U+112EA c virama
+
