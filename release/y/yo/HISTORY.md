@@ -1,5 +1,10 @@
 Yorùbá Ìrọ̀rùn Change History
 ====================
+1.0.3 (2024-10-10)
+----------------
+* fixed characters with combining diacritical marks, ẹ́, ọ́, ẹ̀ and ọ̀
+* removed support for Beninoise Yorùbá character
+* added support for x,v and q
 
 1.0.2 (2023-11-03)
 ----------------
