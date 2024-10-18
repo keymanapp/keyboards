@@ -1,4 +1,5 @@
-﻿c c Version 1.0.2 - fixed supported platforms, fixed conflicted rules, fixed shift key behaviour in touch layout, fixed top row keys in top layout
+﻿c c Version 1.0.3 - fixed characters with combining diacritical marks, ẹ́, ọ́, ẹ̀, ọ̀, removed support for Beninoise Yorùbá character, added support for x,v and q
+c c Version 1.0.2 - fixed supported platforms, fixed conflicted rules, fixed shift key behaviour in touch layout, fixed top row keys in top layout
 c c Version 1.0.1 - initial stable release
 c c Version 1.0.0.9 - fixed several bugs, added welcome and readme pages
 c c Version 1.0.0.8 - renamed keyboard from Yorùbá to Yorùbá Ìrọ̀rùn
@@ -13,15 +14,26 @@ c c Version 1.0.0.0 - created Yorùbá Ìrọ̀rùn from template
 store(&VERSION) '15.0'
 store(&NAME) 'Yorùbá ìrọ̀rùn'
 store(&COPYRIGHT) '© W3Techy Enterprise'
-store(&KEYBOARDVERSION) '1.0.2'
+store(&KEYBOARDVERSION) '1.0.3'
 store(&TARGETS) 'any'
 store(&BITMAP) 'yo.ico'
 store(&VISUALKEYBOARD) 'yo.kvks'
 store(&LAYOUTFILE) 'yo.keyman-touch-layout'
+store(&INCLUDECODES) 'yo-codes.txt'
 
 begin Unicode > use(main)
 
 group(main) using keys
++ [SHIFT RCTRL RALT K_V] > 'V'
++ [SHIFT RCTRL RALT K_X] > 'X'
++ [SHIFT RCTRL RALT K_Q] > 'Q'
++ [RCTRL RALT K_Q] > 'q'
++ [RCTRL RALT K_V] > 'v'
++ [RCTRL RALT K_X] > 'x'
++ [SHIFT RALT K_O] > 'Ó'
++ [SHIFT RALT K_N] > 'Ń'
++ [SHIFT K_V] > 'Ẹ'
++ [SHIFT K_X] > 'Ọ'
 + [K_BKQUOTE] > '`'
 + [K_9] > '9'
 + [K_8] > '8'
@@ -59,7 +71,6 @@ group(main) using keys
 
 + [SHIFT K_A] > 'A'
 + [SHIFT K_B] > 'B'
-+ [SHIFT K_C] > 'Ɛ'
 + [SHIFT K_D] > 'D'
 + [SHIFT K_E] > 'E'
 + [SHIFT K_F] > 'F'
@@ -78,15 +89,12 @@ group(main) using keys
 + [SHIFT K_S] > 'S'
 + [SHIFT K_T] > 'T'
 + [SHIFT K_U] > 'U'
-+ [SHIFT K_V] > 'Ẹ'
 + [SHIFT K_W] > 'W'
-+ [SHIFT K_X] > 'Ọ'
 + [SHIFT K_Y] > 'Y'
 + [SHIFT K_Z] > 'Ṣ'
 
 + [K_A] > 'a'
 + [K_B] > 'b'
-+ [K_C] > 'ɛ'
 + [K_D] > 'd'
 + [K_E] > 'e'
 + [K_F] > 'f'
@@ -105,18 +113,17 @@ group(main) using keys
 + [K_S] > 's'
 + [K_T] > 't'
 + [K_U] > 'u'
-+ [K_V] > 'ẹ'
++ [K_V] > 'ẹ'
 + [K_W] > 'w'
-+ [K_X] > 'ọ'
++ [K_X] > 'ọ'
 + [K_Y] > 'y'
 + [K_Z] > 'ṣ'
 
 
 + [RALT K_4] > '₣'
 
-+ [SHIFT RALT K_V] > 'Ẹ́'
-+ [SHIFT RALT K_X] > 'Ọ́'
-+ [SHIFT RALT K_O] > 'Ó'
++ [SHIFT RALT K_V] > 'Ẹ́'
++ [SHIFT RALT K_X] > 'Ọ́'
 + [SHIFT RALT K_I] > 'Í'
 + [SHIFT RALT K_U] > 'Ú'
 + [SHIFT RALT K_A] > 'Á'
@@ -124,7 +131,6 @@ group(main) using keys
 + [SHIFT RALT K_Z] > 'Z'
 + [SHIFT RALT K_Q] > 'Q'
 + [SHIFT RALT K_C] > 'C'
-+ [SHIFT RALT K_N] > 'Ń'
 + [SHIFT RALT K_S] > 'SH'
 + [SHIFT RALT K_K] > 'KP'
 + [RALT K_V] > 'ẹ́'
@@ -146,13 +152,13 @@ group(main) using keys
 
 + [RCTRL K_4] > '$'
 + [SHIFT RCTRL K_A] > 'À'
-+ [SHIFT RCTRL K_V] > 'Ẹ̀'
-+ [SHIFT RCTRL K_X] > 'Ọ̀'
++ [SHIFT RCTRL K_V] > 'Ẹ̀'
++ [SHIFT RCTRL K_X] > 'Ọ̀'
 + [SHIFT RCTRL K_O] > 'Ò'
 + [SHIFT RCTRL K_I] > 'Ì'
 + [SHIFT RCTRL K_U] > 'Ù'
 + [SHIFT RCTRL K_E] > 'È'
-+ [SHIFT RCTRL K_N] > 'Ǹ'
++ [SHIFT RCTRL K_N] > 'Ǹ'
 + [SHIFT RCTRL K_G] > 'X'
 + [SHIFT RCTRL K_H] > 'V'
 
