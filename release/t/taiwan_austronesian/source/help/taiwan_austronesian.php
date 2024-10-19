@@ -10,6 +10,13 @@
 <p>
   Taiwan Austronesian keyboard for Taiwan Austronesian languages
 
+<p>Pressing TAB to generate specific letters on the computer keyboard</p>
+<p>e + tab > é, ē, and ə</p>
+<p>r + tab > ṟ</p>
+<p>u + tab > ʉ</p>
+<p>i + tab > ɨ</p>
+<p>' + tab > ʼ</p>
+
 <h1>Keyboard Layout</h1>
 
 <p><b>default</b></p>
