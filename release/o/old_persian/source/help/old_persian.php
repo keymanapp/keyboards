@@ -14,8 +14,8 @@
 <div id='osk' data-states='default shift'>
 </div>
 
-<h2>Mobile/Phone Keyboard Layout</h2>
-<div id='osk-phone' data-states='default numeric'>
+<h2>Mobile/Tablet Keyboard Layout</h2>
+<div id='osk-tablet' data-states='default shift'>
 </div>
 
 </body>

@@ -26,18 +26,6 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\old_persian.js</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>..\build\old_persian.kvk</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kvk</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -68,16 +56,34 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\Noto_Sans_Old_Persian\NotoSansOldPersian-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\noto\Xpeo\NotoSansOldPersian-Regular.ttf</Name>
       <Description>Font Noto Sans Old Persian Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>old_persian.kmn</Name>
-      <Description>File old_persian.kmn</Description>
+      <Name>..\..\..\shared\fonts\noto\Xpeo\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kmn</FileType>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\build\old_persian.kmx</Name>
+      <Description>Keyboard Old Persian</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\old_persian.js</Name>
+      <Description>File old_persian.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\old_persian.kvk</Name>
+      <Description>File old_persian.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -85,7 +91,11 @@
       <Name>Old Persian</Name>
       <ID>old_persian</ID>
       <Version>1.0</Version>
-      <Languages/>
+      <OSKFont>..\..\..\shared\fonts\noto\Xpeo\NotoSansOldPersian-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Xpeo\NotoSansOldPersian-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="peo">Old Persian (ca. 600-400 B.C.)</Language>
+      </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
