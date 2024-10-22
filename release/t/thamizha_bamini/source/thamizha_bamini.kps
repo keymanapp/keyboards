@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">சுரதா-பாமுனி | Suratha Bamini</Name>
-    <Copyright URL="">© 2008-2020 thamizha.com and SIL International</Copyright>
-    <Description>This keyboard, usually known as the Bamini layout, is designed for the
+    <Copyright URL="">© thamizha.com and SIL International</Copyright>
+    <Description URL="">This keyboard, usually known as the Bamini layout, is designed for the
 Tamil language. It is originally based on a Tamil typewriter keyboard,
 and is used particularly in Sri Lanka. The keyboard is designed for
 users who are familiar with both this layout and the Tamil script, as
@@ -106,24 +107,82 @@ use with a normal QWERTY (English) keyboard.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\thamizha_bamini.js</Name>
+      <Description>File thamizha_bamini.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Black.ttf</Name>
+      <Description>Font Noto Sans Tamil Black</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Bold.ttf</Name>
+      <Description>Font Noto Sans Tamil Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-ExtraBold.ttf</Name>
+      <Description>Font Noto Sans Tamil ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-ExtraLight.ttf</Name>
+      <Description>Font Noto Sans Tamil ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Light.ttf</Name>
+      <Description>Font Noto Sans Tamil Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Medium.ttf</Name>
+      <Description>Font Noto Sans Tamil Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-SemiBold.ttf</Name>
+      <Description>Font Noto Sans Tamil SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Thin.ttf</Name>
+      <Description>Font Noto Sans Tamil Thin</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>சுரதா-பாமுனி | Suratha Bamini</Name>
       <ID>thamizha_bamini</ID>
-      <Version>2.1</Version>
-      <WebDisplayFonts><Font Filename="NotoSansTamil-Regular.ttf" /></WebDisplayFonts>
+      <Version>2.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
       <Examples>
-        <Example ID="ta" Keys="j k p o ;" Text="தமிழ்" Note="Name of language" />
+        <Example ID="ta" Keys="j k p o ;" Text="தமிழ்" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Regular.ttf"/>
+      </WebDisplayFonts>
+    </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="ekwbamuni" Relationship="deprecates" />
-    <RelatedPackage ID="thamizha bamini" Relationship="deprecates" />
+    <RelatedPackage ID="ekwbamuni" Relationship="deprecates"/>
+    <RelatedPackage ID="thamizha bamini" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

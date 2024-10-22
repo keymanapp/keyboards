@@ -20,11 +20,14 @@ table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding
 table.display { border-collapse: collapse; }
     </style>
 
-<h1 style='margin-bottom: 2px'>Hawaiian (SIL) Keyboards</h1>
 <p>Hawaiian (SIL) is a Unicode keyboard for the Hawaiian language.</p>
 
-<h2>Keyboard Layout Notes</h2>
-    
+<h2>Keyboard Layout</h2>
+
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
+
 <table class='display'>
 <tr><th>Key</th><th>Output</th></tr>
 <tr><td>RightAlt+a</td><td>ā</td></tr>

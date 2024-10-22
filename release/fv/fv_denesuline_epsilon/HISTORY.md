@@ -1,5 +1,9 @@
 Dɛnɛsųłiné Change History
 ============================
+10.0.2 (20 SEP 2024)
+------------------
+* Corrected spelling of keyboard name
+
 10.0.1 (7 Feb 2024)
 ------------------
 * Changed BCP 47 code

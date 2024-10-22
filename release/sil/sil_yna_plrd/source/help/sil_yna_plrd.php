@@ -12,7 +12,7 @@
 
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
+<div id='osk' data-states='default shift rightalt'>
 </div>
 
 

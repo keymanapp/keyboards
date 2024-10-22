@@ -1,6 +1,10 @@
 Malayalam Mozhi Change History
 ====================
 
+3.2.5 (2024-09-18)
+----------------
+* Remove .js from .kps so people will not think mobile is supported.
+
 3.2.4 (2023-11-30)
 ----------------
 * Use shared font instead of local

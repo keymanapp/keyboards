@@ -1,6 +1,10 @@
 Tai Dam (SIL) Keyboard Change History
 =======================
 
+2.3 (11 Sep 2024)
+-------------------
+* Added tablet layout
+
 2.2.2 (10 Jun 2020)
 -------------------
 * Updated htm files for readability on Linux

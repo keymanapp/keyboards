@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,11 +20,12 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">புதிய தட்டெழுதி | New Typewriter</Name>
-    <Copyright URL="">© 2008-2020 thamizha.com and SIL International</Copyright>
-    <Description>This keyboard is designed for the Tamil language and based on the new
+    <Copyright URL="">© thamizha.com and SIL International</Copyright>
+    <Description URL="">This keyboard is designed for the Tamil language and based on the new
 Tamil typewriter layout. The keyboard is designed for users who are
 familiar with both this layout and the Tamil script, and is intended for
 use with a normal QWERTY (English) keyboard.</Description>
+    <Author URL="">Mugunth (mugunth@gmail.com), Umar (csd_one@yahoo.com) and K. Sethu (skhome@gmail.com)</Author>
   </Info>
   <Files>
     <File>
@@ -104,21 +106,85 @@ use with a normal QWERTY (English) keyboard.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Black.ttf</Name>
+      <Description>Font Noto Sans Tamil Black</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Bold.ttf</Name>
+      <Description>Font Noto Sans Tamil Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-ExtraBold.ttf</Name>
+      <Description>Font Noto Sans Tamil ExtraBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-ExtraLight.ttf</Name>
+      <Description>Font Noto Sans Tamil ExtraLight</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Light.ttf</Name>
+      <Description>Font Noto Sans Tamil Light</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Medium.ttf</Name>
+      <Description>Font Noto Sans Tamil Medium</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-SemiBold.ttf</Name>
+      <Description>Font Noto Sans Tamil SemiBold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Thin.ttf</Name>
+      <Description>Font Noto Sans Tamil Thin</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Taml\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\build\thamizha_new_typewriter.js</Name>
+      <Description>File thamizha_new_typewriter.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>புதிய தட்டெழுதி | New Typewriter</Name>
       <ID>thamizha_new_typewriter</ID>
-      <Version>1.1</Version>
-      <WebDisplayFonts><Font Filename="NotoSansTamil-Regular.ttf" /></WebDisplayFonts>
+      <Version>2.2</Version>
+      <OSKFont>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Taml\NotoSansTamil-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="ekwnewtwuni" Relationship="deprecates" />
-    <RelatedPackage ID="thamizha typewriter" Relationship="deprecates" />
+    <RelatedPackage ID="ekwnewtwuni" Relationship="deprecates"/>
+    <RelatedPackage ID="thamizha typewriter" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

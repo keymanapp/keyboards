@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------------------------
 # Source keyboard or model from external repository or binary download location
-# This file corresponds very closely to external.sh in keymanapp/lexical-models
+# This file corresponds very closely to external.inc.sh in keymanapp/lexical-models
 #----------------------------------------------------------------------------------------
 
 retrieve_external_keyboard() {

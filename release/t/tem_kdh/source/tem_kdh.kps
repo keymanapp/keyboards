@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>Tem Icon 64x64 padded to 140x250.jpg</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Clavier Tem</Folder>
@@ -19,8 +21,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Clavier Tem</Name>
-    <Copyright URL="">©2017-2018 SIL International</Copyright>
-    <Description>This keyboard layout is designed for Tem (located in Togo, Benin,
+    <Copyright URL="">© SIL International</Copyright>
+    <Description URL="">This keyboard layout is designed for Tem (located in Togo, Benin,
 Ghana). It includes an on screen keyboard and touch layout for Android
 and iOS devices.</Description>
   </Info>
@@ -61,14 +63,20 @@ and iOS devices.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Clavier Tem</Name>
       <ID>tem_kdh</ID>
-      <Version>1.2.1</Version>
+      <Version>1.3</Version>
       <Languages>
-        <Language ID="kdh-Arab">Tem</Language>
+        <Language ID="kdh">Tem</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

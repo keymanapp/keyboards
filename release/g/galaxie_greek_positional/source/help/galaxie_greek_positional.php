@@ -24,21 +24,6 @@
 END;
   require_once('header.php');
 ?>
-
-
-    <p style='margin:0px'>Keyboard &#169; 2004-2018 Galaxie Software and SIL International</p>
-
-    <br/>
-    <a href="#Overview">Overview</a><br/>
-    <a href="#UsingGreek">Greek Keyboard</a><br/>
-    <a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-    <a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-    <a style='margin-left:20px' href="#Examples">Examples</a><br/>
-    <a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-    <a style='margin-left:30px' target="_blank" href='keyboardchart.php'>Complete Typing Chart</a><br/>
-    <a href="#Technical">Technical Information</a><br/>
-    <a style='margin-left:20px' href="#Author">Authorship</a><br/>
-
     <div id='Overview'>
         <h2>Overview</h2>
 
@@ -50,7 +35,7 @@ END;
 
     <div id='UsingGreek'>
 
-        <h1 style='border-top: solid 3px #ad4a28; padding-top: 8px'>Greek Keyboard Layout</h1>
+        <h2 style='border-top: solid 3px #ad4a28; padding-top: 8px'>Greek Keyboard Layout</h2>
 
         <h3 style="clear:left">Unicode : Unshifted</h3>
         <div class="key plain" id="K_BKQUOTE">
@@ -710,34 +695,4 @@ END;
 
     </div>
 
-
-    <div id="Technical">
-        <h2>Technical Information</h2>
-        <h3>System Requirements</h3>
-        <p>It is recommended that you use an English QWERTY hardware keyboard with this keyboard.
-        </p>
-        <h3>Unicode Version</h3>
-        <p>This keyboard complies with Unicode 5.1</p>
-
-    </div>
-
-    <div id="Author">
-        <h3>Keyboard Authorship</h3>
-        <p>
-            This keyboard was created by Hampton Keathley of Galaxie Software. SIL International graciously acknowledges the contribution made by the author in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. His
-            effort has assisted greatly in enabling people to communicate in Koine Greek.
-        </p>
-
-        <p>
-            Version 2.1 released 15 December 2009. Full Greek documentation.<br /> Version 2.02 released 11 April 2008. Fixed Greek: rho + dasia and rho + psili with [ and ] keys.<br /> Version 2.01 released 13 March 2008. Fixed Hebrew: holem and other
-            letters in On Screen Keyboard, added support for final mem, peh, nun with enter.<br /> Version 2.0 for Keyman Desktop 7.0. Released 24 October 2007
-        </p>
-
-    </div>
-    <div id="Copyright">
-        <h3>Copyright and Terms of Use</h3>
-        <p>
-            The Galaxie Greek (Phonetic) keyboard layout for Keyman is Copyright 2004-2018 Galaxie Systems and SIL International. It is released under the MIT license.
-        </p>
-    </div>
 

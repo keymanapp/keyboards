@@ -4,8 +4,6 @@
   require_once('header.php');
 ?>
 
-<h1>Saraiki (Arabic) Keyboard Help</h1>
-
 <p>
   Desktop keyboard for typing Saraiki with the Arabic script.
 </p>

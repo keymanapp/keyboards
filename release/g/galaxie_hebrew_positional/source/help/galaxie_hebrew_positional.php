@@ -146,11 +146,6 @@ END;
 ?>
 
 
-	
-
-<a href="#Overview">Overview</a><br/>
-<a href="#UsingHebrew">Hebrew Keyboard</a><br/>
-<a href="#Technical">Technical Information</a><br/>
 
 <div id='Overview'>
 <h2>Overview</h2>
@@ -162,7 +157,7 @@ END;
 
 </div>
 <div id='UsingHebrew'>
-<h1 style='border-top: solid 3px #ad4a28; padding-top: 8px'>Hebrew Keyboard Layout</h1>
+<h2 style='border-top: solid 3px #ad4a28; padding-top: 8px'>Hebrew Keyboard Layout</h2>
                 
 <h3 style="clear:left">Unicode : Unshifted</h3>
 <div class="key plain" id="K_BKQUOTE">
@@ -728,19 +723,3 @@ END;
 </table>
 
 </div>
-
-
-
-
-
-
-<div id="Technical">
-<h2>Technical Information</h2>
-<h3>System Requirements</h3>
-<p>It is recommended that you use an English QWERTY hardware keyboard with this keyboard.
-</p>
-<h3>Unicode Version</h3>
-<p>This keyboard complies with Unicode 5.1</p>
-
-</div>
-

@@ -1,6 +1,10 @@
 Pan Africa Mnemonic (SIL) Keyboard Change History
 =======================
 
+1.2 2024-Sep-12
+---------------
+* Remove .js file from .kps so there are no expectations of Mobile support
+
 1.1.1 2018-Sept-21
 ---------------
 * Corrected keystroke documentation

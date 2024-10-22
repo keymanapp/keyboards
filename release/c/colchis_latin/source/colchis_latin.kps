@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\tavultesoft\build\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,8 +23,7 @@
     <Author URL=""></Author>
     <WebSite URL=""></WebSite>
     <Version URL=""></Version>
-    <Description>This is a Latin keyboard for transcription of the Lazuri and Mingrelian
-languages.</Description>
+    <Description URL="">This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages as used in Georgia.</Description>
   </Info>
   <Files>
     <File>
@@ -139,12 +139,12 @@ languages.</Description>
     <Keyboard>
       <Name>Colchis Latin</Name>
       <ID>colchis_latin</ID>
-      <Version>1.4</Version>
+      <Version>1.5</Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis_sil_colchis\CharisSILColchis-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\charis_sil_colchis\CharisSILColchis-Bold.ttf</DisplayFont>
       <Languages>
         <Language ID="xmf-Latn">Mingrelian (Latin)</Language>
-        <Language ID="lzz">Laz</Language>
+        <Language ID="lzz-GE">Laz (Georgia)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -12,7 +12,7 @@ c store(&ETHNOLOGUECODE) 'ydd yih'
 c store(&LANGUAGE) 'x040D'
 store(&VISUALKEYBOARD) 'yiddish_pasekh.kvks'
 store(&KMW_RTL) '1'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '2.0.1'
 store(&COPYRIGHT) '(C) Gyula Zsigri'
 store(&TARGETS) 'any'
 store(&LAYOUTFILE) 'yiddish_pasekh.keyman-touch-layout'
@@ -30,12 +30,15 @@ store(store13) "!" '"' "#$%&')*+,-./0123456789:;<=>?@]\^_`}|~“־׃"
 begin Unicode > use(group1)
 
 store(std) "`1234567890=~!@#$%^&*()_+[]\{}|;',./<>?" '"'
-store(nul) "RPDLZ"
+store(nul) "RDLZ"
 store(finals) U+05E5 U+05DD U+05DF U+05DA
 store(nonfinals) U+05E6 U+05DE U+05E0 U+05DB 
 
-store(yiddishDK) [SHIFT K_A] [K_B]  [K_G]  [K_D]  [K_H]  [SHIFT K_U] [K_Z]  [SHIFT K_H] [K_T]  [SHIFT K_I] [SHIFT K_X] [K_X]  [K_L]  [SHIFT K_M]  [K_M]  [SHIFT K_N]
-store(yiddishDU) U+05D0      U+05D1 U+05D2 U+05D3 U+05D4 U+05D5      U+05D6 U+05D7      U+05D8 U+05D9      U+05DA      U+05DB U+05DC U+05DD       U+05DE  U+05DF
+c 05Dx characters
+store(yiddishDK) [SHIFT K_A] [K_B]  [K_G]  [K_D]  [K_H]  [SHIFT K_U] [K_Z]  [SHIFT K_H] [K_T]  [K_Y]  [SHIFT K_I] [SHIFT K_X] [K_X]  [K_L]  [SHIFT K_M]  [K_M]  [SHIFT K_N]
+store(yiddishDU) U+05D0      U+05D1 U+05D2 U+05D3 U+05D4 U+05D5      U+05D6 U+05D7      U+05D8 U+05D9 U+05D9      U+05DA      U+05DB U+05DC U+05DD       U+05DE  U+05DF
+
+c 05Ex characters
 store(yiddishEK) [K_N]  [K_S]  [K_E]  [SHIFT K_F] [SHIFT K_P] [SHIFT K_C] [K_C]  [K_K]  [K_R]  [K_W]  [SHIFT K_S]  [K_V]  [SHIFT K_O] [SHIFT K_E] [SHIFT K_G]
 store(yiddishEU) U+05E0 U+05E1 U+05E2 U+05E3      U+05E4      U+05E5      U+05E6 U+05E7 U+05E8 U+05E9 U+05EA       U+05F0 U+05F1      U+05F2      U+05F3
 

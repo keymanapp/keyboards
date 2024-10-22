@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1200.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tai Dam Latin (SIL)</Name>
-    <Copyright URL="">Copyright © 2009-2020 SIL International</Copyright>
+    <Copyright URL="">Copyright © SIL International</Copyright>
     <Author URL="mailto:support@keyman.com">Jim Brase</Author>
-    <Description>SIL\'s Tai Dam Latin keyboard has been designed for typing the Tai Dam
+    <Description URL="">SIL\'s Tai Dam Latin keyboard has been designed for typing the Tai Dam
 and Tai Dón languages in the Latin script. It has been optimized for the
 Tai Dam language by moving three of the more frequently used tone marks
 to the center of the keyboard, in order to reduce hand strain.</Description>
@@ -147,15 +148,21 @@ to the center of the keyboard, in order to reduce hand strain.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_tai_dam_latin.js</Name>
+      <Description>File sil_tai_dam_latin.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tai Dam Latin (SIL)</Name>
       <ID>sil_tai_dam_latin</ID>
-      <Version>1.4.1</Version>
+      <Version>1.5</Version>
       <Languages>
         <Language ID="blt-Latn">Tai Dam (Latin)</Language>
-        <Language ID="twh-Latn">Tai Dón (Latin)</Language>
+        <Language ID="twh">Tai Dón</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

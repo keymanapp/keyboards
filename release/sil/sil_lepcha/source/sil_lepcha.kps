@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.243.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Lepcha (SIL)</Name>
-    <Copyright URL="">© 2010-2022 SIL International</Copyright>
-    <Description>This keyboard is designed for typing Lepcha text. The keyboard is a
+    <Copyright URL="">© SIL International</Copyright>
+    <Description URL="">This keyboard is designed for typing Lepcha text. The keyboard is a
 phonetic keyboard. This means that the keystrokes are tied to the Latin
 keyboard.</Description>
   </Info>
@@ -79,12 +80,18 @@ keyboard.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_lepcha.js</Name>
+      <Description>File sil_lepcha.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Lepcha (SIL)</Name>
       <ID>sil_lepcha</ID>
-      <Version></Version>
+      <Version>1.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\mingzat\Mingzat-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\mingzat\Mingzat-Regular.ttf</DisplayFont>
       <Languages>

@@ -1,5 +1,5 @@
 ﻿store(&VERSION) "10.0"
-store(&KEYBOARDVERSION) '9.5.2'
+store(&KEYBOARDVERSION) '10'
 c store(&ETHNOLOGUECODE) "hei"
 store(&COPYRIGHT) '(c) 2015-2024 FirstVoices, SIL International, 2015 First Peoples' U+0027 ' Cultural Foundation'
 store(&NAME) 'Haíɫzaqvḷa'
@@ -18,12 +18,12 @@ store(&CasedKeys) [K_BKQUOTE] [K_BKSLASH] [K_RBRKT] [K_LBRKT]
 + [K_BKQUOTE] > 'ħ'
 + [K_BKSLASH] > 'ɫ'
 + [K_RBRKT] > 'ƛ'
-+ [K_LBRKT] > 'λ'
++ [K_LBRKT] > U+A7DB c latin small letter lambda
 
 + [SHIFT K_BKQUOTE] > 'Ħ'
 + [SHIFT K_BKSLASH] > 'Ɫ'
-+ [SHIFT K_LBRKT] > '⅄'
-+ [SHIFT K_RBRKT] > 'ƛ'
++ [SHIFT K_LBRKT] > U+A7DA c latin capital letter lambda
++ [SHIFT K_RBRKT] > U+A7DC c latin capital letter lambda with stroke
 + [SHIFT K_COMMA] > U+0313
 + [SHIFT K_PERIOD] > nul
 + [SHIFT K_6] > U+030C
@@ -92,14 +92,14 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [SHIFT T_A] > 'A' layer('default')
 + [SHIFT T_S] > 'S' layer('default')
 + [SHIFT T_D] > 'D' layer('default')
-+ [SHIFT T_F] > '⅄' layer('default')
++ [SHIFT T_F] > U+A7DA layer('default') c latin capital lambda
 + [SHIFT T_G_0] > U+01E6 layer('default')
 + [SHIFT T_G] > 'G' layer('default')
 + [SHIFT T_H_0] > 'H̓' layer('default')
 + [SHIFT T_H_1] > U+0126 layer('default')
 + [SHIFT T_H] > 'H' layer('default')
-+ [SHIFT T_J_0] > 'ƛ̓' layer('default')
-+ [SHIFT T_J] > 'ƛ' layer('default')
++ [SHIFT T_J_0] > U+A7DC U+0313 layer('default')
++ [SHIFT T_J] > U+A7DC layer('default') c latin capital lambda with stroke
 + [SHIFT T_K_0] > 'K̓' layer('default')
 + [SHIFT T_K] > 'K' layer('default')
 + [SHIFT T_L_0] > 'L̓' layer('default')
@@ -153,7 +153,7 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 + [T_A] > 'a'
 + [T_S] > 's'
 + [T_D] > 'd'
-+ [T_F] > 'λ'
++ [T_F] > U+A7DB c latin small letter lamda
 + [T_G_0] > U+01E7
 + [T_G] > 'g'
 + [T_H_0] > 'h̓'
@@ -191,7 +191,7 @@ c Touch layout rules originally imported from KeyMap.plist on Tue Nov 17 2015
 store(NeedsComApos) 'acehiklḷmṃnṇpqtuwyƛACEHIKLḶMṂNṆPQTUWYƛ'
 store(ComApos) [T_COMMA]
 any(NeedsComApos) + any(ComApos) > index(NeedsComApos,1) U+0313
-
+U+A7DC + [T_COMMA] > U+A7DC U+0313
 c --- END OF TOUCH LAYOUT RULES ---
 
 c --- DIACRITIC MANAGEMENT RULES ---
