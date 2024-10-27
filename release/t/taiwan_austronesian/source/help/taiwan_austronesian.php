@@ -9,16 +9,23 @@
 
 <p>
   Taiwan Austronesian keyboard for Taiwan Austronesian languages
+</p>
 
 <p>Pressing TAB to generate specific letters on the computer keyboard</p>
 <p>e + tab > é, ē, and ə</p>
 <p>r + tab > ṟ</p>
 <p>u + tab > ʉ</p>
 <p>i + tab > ɨ</p>
-<p>' + tab > ʼ</p>
+<p>6 + tab > ⌃</p>
+<p>' = ʼ</p>
+<p>[ = ⌃</p>
+<p>; = :</p>
 
-<h1>Keyboard Layout</h1>
+<p>Doublepressing ʼ = '</p>
+<p>Doublepressing ⌃ = [</p>
+<p>Doublepressing : = ;</p>
 
+<h1>Touch Layout</h1>
 <p><b>default</b></p>
 <img src='default.png' alt='phonology'>
 <p><b>shift</b></p>
@@ -26,7 +33,14 @@
 <p><b>numeric</b></p>
 <img src='number.png' alt='phonology'>
 
+<h1>Keyboard Layout</h1>
+
+<p><b>Unshifted</b></p>
+<img src='TAU_.png' alt='Keyboard Layout'>
+<p><b>Shifted</b></p>
+<img src='TAU_S.png' alt='Keyboard Layout'>
 
 
-<p>© cathaylab</p>
+
+<p>© 2024 cathaylab</p>
 

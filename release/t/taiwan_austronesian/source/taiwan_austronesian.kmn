@@ -2,7 +2,7 @@
 store(&VERSION) '10.0'
 store(&NAME) 'Taiwan Austronesian'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'taiwan_austronesian.ico'
 store(&VISUALKEYBOARD) 'taiwan_austronesian.kvks'
@@ -26,4 +26,11 @@ group(main) using keys
 "U" + [K_TAB] > "Ʉ"
 "I" + [K_TAB] > "Ɨ"
 
-"'" + [K_TAB] > "ʼ"
++ "'" > "ʼ"
+"ʼ"+ "'" > "'"
++ "[" > "⌃"
+"⌃" + "[" > "["
+"6" + [K_TAB] > "⌃"
+"^" + [K_TAB] > "⌃"
++ ";" > ":"
+":" + ";" > ";"
