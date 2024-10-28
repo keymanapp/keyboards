@@ -25,7 +25,7 @@
 <p>Doublepressing ⌃ = [</p>
 <p>Doublepressing : = ;</p>
 
-<h1>Touch Layout</h1>
+<h2>Touch Layout</h2>
 <p><b>default</b></p>
 <img src='default.png' alt='phonology'>
 <p><b>shift</b></p>
@@ -33,7 +33,7 @@
 <p><b>numeric</b></p>
 <img src='number.png' alt='phonology'>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <p><b>Unshifted</b></p>
 <img src='TAU_.png' alt='Keyboard Layout'>
