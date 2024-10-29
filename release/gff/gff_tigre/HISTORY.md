@@ -1,6 +1,10 @@
 gff_tigre Change History
 ========================
 
+1.0.3 (29 Oct 2024)
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
 1.0.2 (24 Oct 2023)
 -------------------
 * Removed "EthiopicUnicodeNormal.ttf" and "EthiopicUnicodeItalic.ttf" 
