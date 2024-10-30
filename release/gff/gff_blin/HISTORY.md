@@ -1,5 +1,9 @@
 # ብሊን (Blin) Change History
 
+## 2024-10-29 1.5.5
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
 ## 2023-06-27 1.5.4
 * Fix for smart-dot and smart-comma composition.
 * Smart-colon added.

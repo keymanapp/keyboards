@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>..\..\..\shared\gff\sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Amharic Keyboard</Folder>
@@ -65,9 +66,9 @@
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
     <Name URL="">GFF Amharic Keyboard</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 1997-2023 Geʾez Frontier Foundation, SIL International</Copyright>
+    <Copyright URL="">© Geʾez Frontier Foundation, SIL International</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
-    <Description>This is an Amharic (amh, አማርኛ) language mnemonic input method. It
+    <Description URL="">This is an Amharic (amh, አማርኛ) language mnemonic input method. It
 requires a font supporting Ethiopic script under the Unicode 4.1
 standard.</Description>
   </Info>
@@ -223,8 +224,8 @@ standard.</Description>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL (Connected)</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILConnected-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Connected</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -239,21 +240,20 @@ standard.</Description>
     <Keyboard>
       <Name>አማርኛ (Amharic)</Name>
       <ID>gff_amharic</ID>
-      <Version>3.1</Version>
+      <Version>3.1.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="am">Amharic</Language>
       </Languages>
       <Examples>
-        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;" />
+        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff_amh_powerpack_7" Relationship="deprecates" />
-    <RelatedPackage ID="gff_amh_7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_amh_powerpack_7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff_amh_7" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

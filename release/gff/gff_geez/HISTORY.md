@@ -1,5 +1,9 @@
 # ግዕዝ (Geʾez) Change History
 
+## 2024-10-29 2.0.2
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
 ## 2023-07-18 2.0.1
 * Removing gff_geez.js from package to avoid mobile platform listings.
 
