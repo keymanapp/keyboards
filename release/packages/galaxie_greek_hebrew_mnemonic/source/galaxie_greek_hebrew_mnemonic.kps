@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -18,8 +18,8 @@
   </StartMenu>
   <Info>
     <Name URL="">Galaxie Greek/Hebrew (Mnemonic) Keyboard Package</Name>
-    <Copyright URL="">Galaxie Software and SIL Global</Copyright>
-    <Version URL="">3.4</Version>
+    <Copyright URL="">(c) Galaxie Software and SIL Global</Copyright>
+    <Version URL="">3.4.1</Version>
     <Description URL="">This package includes 2 mnemonic keyboards called: Galaxie Greek
 (Mnemonic) and Galaxie Hebrew (Mnemonic).</Description>
     <Author URL="">Hampton Keathley</Author>
@@ -85,14 +85,34 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\EzraSIL_Licenses.txt</Name>
+      <Description>File EzraSIL_Licenses.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</Name>
+      <Description>Font Ezra SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Galaxie Hebrew (Mnemonic)</Name>
       <ID>galaxie_hebrew_mnemonic</ID>
-      <Version>3.3</Version>
+      <Version>3.3.1</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
+        <Language ID="hbo">Ancient Hebrew</Language>
         <Language ID="he">Hebrew (Hebrew)</Language>
       </Languages>
     </Keyboard>
