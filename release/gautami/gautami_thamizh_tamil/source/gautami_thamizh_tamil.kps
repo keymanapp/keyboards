@@ -8,7 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -44,12 +44,6 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -62,10 +56,28 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>HELP\gautami_thamizh_tamil.pdf</Name>
+      <Name>help\gautami_thamizh_tamil.pdf</Name>
       <Description>File gautami_thamizh_tamil.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_.png</Name>
+      <Description>File LayoutU_.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\LayoutU_S.png</Name>
+      <Description>File LayoutU_S.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -78,5 +90,8 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="isis_tamil" Relationship="deprecates"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

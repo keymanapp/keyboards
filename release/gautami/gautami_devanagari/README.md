@@ -1,6 +1,5 @@
 Gautami Devanagari keyboard
 ==============
-Version 1.0
 
 Description
 -----------

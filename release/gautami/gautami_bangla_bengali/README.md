@@ -1,6 +1,5 @@
 Gautami Bangla/Bengali keyboard
 ==============
-Version 1.0
 
 Description
 -----------
