@@ -193,5 +193,3 @@ Keyboard Layout</h1>
    <div id='osk-tablet' data-states='default shift'></div>
 
 
-<p>(c) 2021 - 2023 SIL International</p>
-
