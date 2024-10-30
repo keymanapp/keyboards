@@ -1,6 +1,10 @@
 Khmer Basic Change History
 ====================
 
+1.2.1 (30 Oct 2024)
+------------------
+* Changed display font for .kvks
+
 1.2 (2024-08-28)
 ----------------
 * Add true tablet layout

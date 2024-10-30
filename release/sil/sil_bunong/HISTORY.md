@@ -1,6 +1,10 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
 
+1.5.1 (30 Oct 2024)
+------------------
+* Changed display font for .kvks
+
 1.5 (6 Apr 2023)
 -----------------
 

@@ -1,7 +1,7 @@
 Khmer Basic keyboard
 ==============
 
-(c) SIL International
+(c) SIL Global
 
 Description
 -----------

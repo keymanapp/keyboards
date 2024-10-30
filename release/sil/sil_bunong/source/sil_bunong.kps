@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Bunong ឞូន៝ង (SIL)</Name>
-    <Copyright URL="">© 2021 - 2023 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
-    <Description>កាដារនទើ​ល៝ត់អ្យា ញជេងគៃមាញចីសរាឆ៝តានាវងើយឞូន៝ង អីទ៝ង់រាឆ៝ទ្រោន។\
+    <Description URL="">កាដារនទើ​ល៝ត់អ្យា ញជេងគៃមាញចីសរាឆ៝តានាវងើយឞូន៝ង អីទ៝ង់រាឆ៝ទ្រោន។\
 ក្ដារចុចនេះត្រូវបានបង្កើតឡើងសម្រាប់វាយអត្ថបទភាសាព្នង
 ដោយប្រើតួអក្សរខ្មែរ។\
 Bunong ឞូន៝ង (SIL) keyboard is designed for typing Bunong language using
@@ -148,21 +149,27 @@ Khmer characters.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</Name>
+      <Description>Font KbdKhmr</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Bunong ឞូន៝ង (SIL)</Name>
       <ID>sil_bunong</ID>
-      <Version>1.4</Version>
-      <OSKFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</OSKFont>
+      <Version>1.5.1</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</DisplayFont>
       <Languages>
         <Language ID="cmo-Khmr">Central Mnong (Khmer)</Language>
       </Languages>
       <Examples>
-        <Example ID="cmo-Khmr" Keys="F U n , g" Text="ឞូន៝ង" Note="Name of language" />
+        <Example ID="cmo-Khmr" Keys="F U n , g" Text="ឞូន៝ង" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>
