@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.107.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Cypriot syllabary</Name>
-    <Copyright URL="">© 2024 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>This keyboard is designed for the Cypriot Syllabary.</Description>
+    <Description URL="">This keyboard is designed for the Cypriot Syllabary.</Description>
   </Info>
   <Files>
     <File>
@@ -89,19 +90,19 @@
     <Keyboard>
       <Name>Cypriot syllabary</Name>
       <ID>cypriot</ID>
-      <Version></Version>
+      <Version>1.0.1</Version>
       <RTL>True</RTL>
       <OSKFont>..\..\..\shared\fonts\noto\Cprt\NotoSansCypriot-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Cprt\NotoSansCypriot-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSansCypriot-Regular.ttf"/></WebDisplayFonts>
       <Languages>
-        <Language ID="grc">Ancient Greek (to 1453)</Language>
         <Language ID="ecy">Eteocypriot</Language>
       </Languages>
       <Examples>
-        <Example ID="grc" Keys="T h e space q u i c k space b r o w n space f o x" Text="𐠧𐠔𐠂 𐠀𐠋𐠌𐠛𐠖 𐠝𐠃𐠍𐠁𐠞 𐠒𐠍𐠚" Note="The quick brown fox" />
-        <Example ID="ecy" Keys="T h e space q u i c k space b r o w n space f o x" Text="𐠧𐠔𐠂 𐠀𐠋𐠌𐠛𐠖 𐠝𐠃𐠍𐠁𐠞 𐠒𐠍𐠚" Note="The quick brown fox" />
+        <Example ID="ecy" Keys="T h e space q u i c k space b r o w n space f o x" Text="𐠧𐠔𐠂 𐠀𐠋𐠌𐠛𐠖 𐠝𐠃𐠍𐠁𐠞 𐠒𐠍𐠚" Note="The quick brown fox"/>
       </Examples>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Cprt\NotoSansCypriot-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
