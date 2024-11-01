@@ -1,9 +1,9 @@
 Cypriot Syllabary Change History
 ====================
 
-1.0.1 (31-Oct-2024)
+1.0.1 (1-Nov-2024)
 ----------------
-* Removed grc from list of languages
+* Changed grc to grc-Cprt
 
 1.0 (2-Jul-2024)
 ----------------
