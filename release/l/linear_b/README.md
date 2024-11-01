@@ -1,7 +1,7 @@
 Linear B keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------

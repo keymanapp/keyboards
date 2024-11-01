@@ -8,7 +8,7 @@
 ?>
 
 
-<p style='margin: 16px 0 0 0'>
+<p>
 This keyboard is designed for the Cypriot syllabary.
 </p>
 
