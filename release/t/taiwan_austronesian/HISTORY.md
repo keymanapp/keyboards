@@ -1,6 +1,10 @@
 Taiwan Austronesian Change History
 ====================
 
+1.1.1 (2024-11-01)
+----------------
+* Updated by cathaylab
+* fixed one mistake on the touch layout
 1.1 (2024-10-23)
 ----------------
 * Updated by cathaylab
