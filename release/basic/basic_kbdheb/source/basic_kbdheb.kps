@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Hebrew Basic</Name>
-    <Copyright URL="">(c) 2009-2019 SIL International</Copyright>
+    <Copyright URL="">(c) SIL Global</Copyright>
     <Author URL=""></Author>
-    <Description>Hebrew Basic generated from template</Description>
+    <Description URL="">Hebrew Basic generated from template</Description>
+    <Version URL=""></Version>
   </Info>
   <Files>
     <File>
@@ -89,20 +91,47 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\sbl\SBL_Hbrw.ttf</Name>
+      <Description>Font SBL Hebrew</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\hebr\sbl\SBL_Hbrw_LICENSE.txt</Name>
+      <Description>File SBL_Hbrw_LICENSE.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Hebrew Basic</Name>
       <ID>basic_kbdheb</ID>
-      <Version>1.1</Version>
+      <Version>1.1.1</Version>
+      <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\hebr\sbl\SBL_Hbrw.ttf</DisplayFont>
       <Languages>
         <Language ID="he">Hebrew</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="hebrew" Relationship="deprecates" />
-    <RelatedPackage ID="kbdheb" Relationship="deprecates" />
+    <RelatedPackage ID="hebrew" Relationship="deprecates"/>
+    <RelatedPackage ID="kbdheb" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

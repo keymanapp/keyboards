@@ -1,6 +1,10 @@
 Khmer (SIL) Keyboard Change History
 =======================
 
+2.1.1 (30 Oct 2024)
+------------------
+* Changed display font for .kvks
+
 2.1 (18 Sep 2024)
 ------------------
 * Added touch layout

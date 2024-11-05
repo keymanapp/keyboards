@@ -1,7 +1,7 @@
 Hebrew (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This keyboard is designed for Biblical Hebrew and represents the official Biblical Hebrew keyboard from SIL

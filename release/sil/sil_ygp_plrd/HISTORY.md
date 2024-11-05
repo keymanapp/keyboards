@@ -1,6 +1,10 @@
 Bai Yi – White Yi (SIL) Keyboard Change History
 =======================
 
+1.3 (27 Sep 2024)
+------------------
+* Add characters per UTN
+
 1.2 (10 Sep 2024)
 ------------------
 * Added tablet layout

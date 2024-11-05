@@ -1,6 +1,11 @@
 hakka Change History
 ====================
 
+1.2 (2024-10-02)
+----------------
+* Updated by cathaylab
+* added new function to type Kanji
+
 1.1 (2024-09-14)
 ----------------
 * Updated by cathaylab

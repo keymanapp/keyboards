@@ -1,8 +1,8 @@
 ﻿c The Ezidi script has a long history and it is used to write Ezidi language(also called Ezdiki) in Caucasian its
 store(&VERSION) '10.0'
-store(&NAME) 'Ezidi keyboard'
+store(&NAME) 'Ezidi'
 store(&COPYRIGHT) '© Ezidi74'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'yezidi.ico'
 store(&VISUALKEYBOARD) 'yezidi.kvks'
@@ -11,7 +11,11 @@ store(&KMW_RTL) '1'
 
 begin Unicode > use(main)
 
+store(nul) "QWEUIADFGHJLZXCBM"
+
 group(main) using keys
+
++ any(nul) > nul
 + [SHIFT K_N] > '𐺚'
 + [SHIFT K_V] > '𐺘'
 + [SHIFT K_K] > '𐺰'

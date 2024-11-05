@@ -1,5 +1,9 @@
 # gff_awngi_xamtanga (አዊ & ኽምጣጘ) Change History
 
+1.0.3 (29 Oct 2024)
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
 1.0.2 (27 Jun 2023)
 -------------------
 * Fix for smart-dot and smart-comma composition.

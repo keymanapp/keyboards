@@ -1,5 +1,9 @@
 # ትግርኛ-ኢትዮጵያ (Tigrinya Keyboard for Ethiopian Conventions) Change History
 
+2.0.4 (29 Oct 2024)
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
 2.0.3 (24 Oct 2023)
 -------------------
 * Removed "EthiopicUnicodeNormal.ttf" and "EthiopicUnicodeItalic.ttf" 

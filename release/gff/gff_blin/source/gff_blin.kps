@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>sideimage-blin-lady.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Blin Keyboard</Folder>
@@ -50,10 +51,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">GFF Blin Keyboard</Name>
-    <Copyright URL="">© 2009-2023 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
-    <Description>An intuitive, easy to use, keyboard for entering Bilen (Blin) with
+    <Description URL="">An intuitive, easy to use, keyboard for entering Bilen (Blin) with
 standard English keyboards according to the GFF convention for Ethiopic
 script languages.</Description>
   </Info>
@@ -119,7 +120,7 @@ script languages.</Description>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILConnected-Regular.ttf</Name>
       <Description>Font Abyssinica SIL Connected</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
@@ -201,21 +202,23 @@ script languages.</Description>
     <Keyboard>
       <Name>ብሊን (Blin)</Name>
       <ID>gff_blin</ID>
-      <Version>1.5.4</Version>
+      <Version>1.5.5</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="byn-Ethi">Bilin</Language>
       </Languages>
       <Examples>
-        <Example ID="byn-Ethi" Keys="b l i n a" Text="ብሊና" Note="Name of language" />
+        <Example ID="byn-Ethi" Keys="b l i n a" Text="ብሊና" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Ethi\NotoSerifEthiopic-Regular.ttf"/>
+      </WebDisplayFonts>
+    </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff-byn-powerpack-7" Relationship="deprecates" />
-    <RelatedPackage ID="gff_byn_7" Relationship="deprecates" />
+    <RelatedPackage ID="gff-byn-powerpack-7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff_byn_7" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

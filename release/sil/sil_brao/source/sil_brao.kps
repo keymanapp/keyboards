@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\makara.PHNOMPENH\Downloads\temp\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Brao (SIL)</Name>
-    <Copyright URL="">© 2021 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>ក្ដារចុច Brao (SIL) ត្រូវ​បាន​បង្កើតឡើងសម្រាប់​វាយជាភាសាព្រៅ
+    <Description URL="">ក្ដារចុច Brao (SIL) ត្រូវ​បាន​បង្កើតឡើងសម្រាប់​វាយជាភាសាព្រៅ
 ដែលជាភាសានិយាយនៅភាគ​ឦសាននៃប្រទេសកម្ពុជា ដោយប្រើតួអក្សរខ្មែរ។
 ប្លង់​ក្ដារចុចសម្រាប់​ប្រើប្រាស់​លើ​កុំព្យូទ័រ​គឺ​ស្រដៀង​នឹង​ប្លង់ក្ដារចុចខ្មែរ
 NiDA ប៉ុន្តែ​មាន​ស្រៈ​តិចជាង។
@@ -152,21 +153,27 @@ are less vowel characters.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</Name>
+      <Description>Font KbdKhmr</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Brao (SIL)</Name>
       <ID>sil_brao</ID>
-      <Version>1.0</Version>
-      <OSKFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</OSKFont>
+      <Version>1.0.1</Version>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdkhmr\KbdKhmr.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\khmer\mondulkiri\Mondulkiri-R.ttf</DisplayFont>
       <Languages>
         <Language ID="brb-Khmr">Lave (Brao)</Language>
       </Languages>
       <Examples>
-        <Example ID="brb-Khmr" Keys="b R U v" Text="ប្រូវ" Note="Name of language" />
+        <Example ID="brb-Khmr" Keys="b R U v" Text="ប្រូវ" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

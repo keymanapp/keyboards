@@ -34,7 +34,7 @@ code {
 	<link rel="stylesheet" href="kb.css"/>
 </head>
 
-<p style='margin:0px'>Keyboard © 2023. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>
@@ -266,7 +266,7 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL International 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Harari keyboard layout for Keyman Desktop and KeymanWeb is Copyright 2023 Geʾez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Harari keyboard layout for Keyman Desktop and KeymanWeb is Copyright Geʾez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>

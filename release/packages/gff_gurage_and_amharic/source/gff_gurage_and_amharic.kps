@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>..\..\..\gff\gff_gurage\source\sideimage-gurage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>ጉራጌ (Gurage)</Folder>
@@ -61,12 +62,12 @@
     </Items>
   </StartMenu>
   <Info>
-    <Version URL="">1.1</Version>
+    <Version URL="">1.1.1</Version>
     <Name URL="">Gurage and Amharic Keyboard Package</Name>
-    <Copyright URL="">© 2019-2023 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
-    <Description>This package provides both the GFF Gurage and Amharic keyboards.</Description>
+    <Description URL="">This package provides both the GFF Gurage and Amharic keyboards.</Description>
   </Info>
   <Files>
     <File>
@@ -80,12 +81,6 @@
       <Description>File GurageTyping-Gurage.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\gff\gff_gurage\source\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>..\..\..\gff\gff_gurage\source\sideimage-gurage.bmp</Name>
@@ -160,8 +155,8 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL (Connected)</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILConnected-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Connected</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -219,25 +214,31 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>ጉራጌ (Gurage)</Name>
       <ID>gff_gurage</ID>
-      <Version>1.0</Version>
+      <Version>1.0.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="sgw">Sebat Bet Gurage</Language>
       </Languages>
       <Examples>
-        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;" />
+        <Example ID="am" Keys="T i e n a space y s T l N" Text="ጤና ይስጥልኝ" Note="&quot;Hello&quot;"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
     <Keyboard>
       <Name>አማርኛ (Amharic)</Name>
       <ID>gff_amharic</ID>
-      <Version>3.1.1</Version>
+      <Version>3.1.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>

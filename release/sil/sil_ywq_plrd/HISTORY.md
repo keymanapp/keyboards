@@ -1,6 +1,10 @@
 Hei Yi – Black Yi (SIL) Keyboard Change History
 =======================
 
+1.3 (27 Sep 2024)
+------------------
+* Added characters per UTN
+
 1.2 (10 Sep 2024)
 ------------------
 * Added tablet layout
