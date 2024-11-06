@@ -1,5 +1,8 @@
 Bunong ឞូន៝ង (SIL) Change History
 =======================
+1.6 (06 Nov 2024)
+------------------
+* added riel sign and numpad layer
 
 1.5.1 (30 Oct 2024)
 ------------------
