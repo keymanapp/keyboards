@@ -1,12 +1,7 @@
 <?php
   $pagename = 'Greek Polytonic+ Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
-?>
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-$pagestyle = <<<END
+  $pagestyle = <<<END
 <!--
  /* Font Definitions */
  @font-face
@@ -23,13 +18,6 @@ $pagestyle = <<<END
 	{margin:0in;
 	font-size:12.0pt;
 	font-family:"Times New Roman",serif;}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin:0in;
-	font-size:16.0pt;
-	font-family:"Calibri",sans-serif;
-	color:#0070C0;
-	font-weight:normal;}
 a:link, span.MsoHyperlink
 	{color:#0563C1;
 	text-decoration:underline;}
@@ -70,16 +58,14 @@ div.WordSection1
 	{page:WordSection1;}
 -->
 END;
+  require_once('header.php');
+?>
 
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
 </head>
 
-<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
-
-<div class=WordSection1>
-
-<h1>Start Using Greek Polytonic Plus</h1>
-
-<p class=MsoNormal>&nbsp;</p>
 
 <p class=MsoNormal>This package includes one keyboard file, Greek Polytonic
 Plus.&nbsp; It does not include any fonts.&nbsp; Most computers already have fonts
@@ -111,7 +97,7 @@ on Mac OS, choose On-Screen Keyboard under Keyman in the Input Source menu.</p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h1>Keyboard Layout</h1>
+<h2>Keyboard Layout</h2>
 
 <p class=MsoNormal>&nbsp;</p>
 
@@ -413,26 +399,6 @@ src="MacOS_1_chart.png"></p>
 <p class=MsoNormal><img border=0 width=825 height=356 id="Picture 4"
 src="MacOS_2_chart.png"></p>
 
-<div>
 
-<div>
 
-<div>
 
-<div>
-
-<p class=MsoNormal style='line-height:105%'>&nbsp;</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</body>
-
-</html>
