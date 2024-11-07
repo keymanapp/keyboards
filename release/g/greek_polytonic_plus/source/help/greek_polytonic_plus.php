@@ -1,6 +1,6 @@
 <?php
   $pagename = 'Greek Polytonic+ Keyboard Help';
-  $pagetitle = $Greek Polytonic+;
+  $pagetitle = $pagename;
   require_once('header.php');
 ?>
 <head>
