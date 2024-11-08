@@ -61,12 +61,6 @@ END;
   require_once('header.php');
 ?>
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-</head>
-
-
 <p class=MsoNormal>This package includes one keyboard file, Greek Polytonic
 Plus.&nbsp; It does not include any fonts.&nbsp; Most computers already have fonts
 installed that supply almost all the characters covered by this keyboard. Times
