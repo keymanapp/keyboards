@@ -5,6 +5,8 @@ Taiwan Austronesian Change History
 ----------------
 * Updated by cathaylab
 * fixed one mistake on the touch layout
+* added new layers in the touch layout
+
 1.1 (2024-10-23)
 ----------------
 * Updated by cathaylab
