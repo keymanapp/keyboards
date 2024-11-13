@@ -12998,10 +12998,11 @@ c update 17/05/2024
 "U" + "J" > "Ū"
 "U" + "W" > "Ŭ"
 
-"ph" + [K_F] > "f"
-"Ph" + "F" > "F"
 any(all_letters) + "f" > index(all_letters, 1) "f"
 any(all_letters) + "F" > index(all_letters, 1) "F"
+
+"O̤" + [K_V] > "V"
+"Ṳ̆" + [K_W] > "W"
 
 "a" + [K_D] > "ad"
 "b" + [K_D] > "bd"
@@ -14222,6 +14223,8 @@ any(all_letters) + "F" > index(all_letters, 1) "F"
 
 "ch" + [K_D] > "d"
 "Ch" + [SHIFT K_D] > "D"
+"Ch" + [K_D] > "D"
+
 
 + [NCAPS K_Y] > "ng"
 + [CAPS K_Y] > "Y"
@@ -14232,6 +14235,8 @@ any(all_letters) + "F" > index(all_letters, 1) "F"
 
 "ng" + [K_Y] > "y"
 "Ng" + [SHIFT K_Y] > "Y"
+"Ng" + [K_Y] > "Y"
+
 
 + [NCAPS K_X] > "chh"
 + [CAPS K_X] > "X"
@@ -14240,6 +14245,9 @@ any(all_letters) + "F" > index(all_letters, 1) "F"
 + [NCAPS ALT K_X] > "chh"
 + [NCAPS ALT SHIFT K_X] > "Chh"
 
+"chh" + [K_X] > "x"
+"Chh" + [K_X] > "X"
+"Chh" + [SHIFT K_X] > "X" 
 
 + [NCAPS K_F] > "ph"
 + [CAPS K_F] > "F"
@@ -14247,6 +14255,10 @@ any(all_letters) + "F" > index(all_letters, 1) "F"
 + [CAPS SHIFT K_F] > "F"
 + [NCAPS ALT K_F] > "ph"
 + [NCAPS ALT SHIFT K_F] > "Ph"
+
+"ph" + [K_F] > "f"
+"Ph" + [K_F] > "F"
+"Ph" + [SHIFT K_F] > "F" 
 
 any(unused_letters) + "w" > index(unused_letters, 1) "w"
 any(unused_letters) + "W" > index(unused_letters, 1) "W"
