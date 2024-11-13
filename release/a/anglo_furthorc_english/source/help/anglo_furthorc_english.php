@@ -4,8 +4,6 @@
   require_once('header.php');
 ?>
 
-<h1>Start Using Anglo-Furthorc-English</h1>
-
 <p>
   Anglo Furthorc keyboard designed to approximately match the QWERTY keyboard layout, based on the runes from https://rune.school
 </p>
