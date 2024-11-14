@@ -1,0 +1,625 @@
+﻿c Itunyoso Triqui Keyboard for Keyman 16.0
+
+store(&version) '15.0'
+store(&NAME) 'Teclado Itunyoso Triqui'
+store(&TARGETS) 'mobile'
+store(&LAYOUTFILE) 'Keyboard.keyman-touch-layout'
+
+
+c initialize oldlayer store
+store(oldlayer) "default"
+
+store(A_Z_Upper) 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+store(a_z_lower) 'abcdefghijklmnopqrstuvwxyz'
+store(cons) 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+
+c Note three entry points, rather than the traditional single entry point
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+        
+    nomatch > use(determineLayer)
+
+    
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+    
+    c Pressing any key in the numeric-gboard layer (including "abc" which doesn't input anything) takes you back to the layer you just were just in
+    c Superseded by code in group(main) - current behavior is only switching back when you hit "abc"
+    c    if(oldlayer = 'default') if(&layer = 'numeric-gboard') > layer("default")
+    c    if(oldlayer = 'shift') if(&layer = 'numeric-gboard') > layer("shift")
+    c    if(oldlayer = 'caps') if(&layer = 'numeric-gboard') > layer("caps") 
+    c    if(oldlayer = 'qwerty') if(&layer = 'numeric-gboard') > layer("qwerty")
+    c    if(oldlayer = 'shift-qwerty') if(&layer = 'numeric-gboard') > layer("shift-qwerty")
+    c    if(oldlayer = 'caps-qwerty') if(&layer = 'numeric-gboard') > layer( "caps-qwerty")
+    
+
+    c If using the shift layer for retro, switch back to default when you get to the last vowel
+    store(finalcons) 'njhNJH'
+    dk(vowel)                                               > layer('default')
+    dk(vowel) any(finalcons)                                > layer('default')
+    dk(vowel) any(finalcons) any(finalcons)                 > layer('default')
+    dk(vowel) any(finalcons) any(finalcons) any(finalcons)  > layer('default')
+    dk(vowel)                                               ' ' > layer('default')
+    dk(vowel) any(finalcons)                                ' ' > layer('default')
+    dk(vowel) any(finalcons) any(finalcons)                 ' ' > layer('default')
+    dk(vowel) any(finalcons) any(finalcons) any(finalcons)  ' ' > layer('default')
+
+    
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    if(&newLayer = "") > use(determineLayer)
+    
+
+group(determineLayer) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+  
+    c If we are at the start of a text field, we're at the 'start of a
+    c sentence', so we'll move to the shift layer
+    Nul > layer('shift')
+    if(&layer = 'qwerty') Nul > layer('shift-qwerty')
+
+    c If we are at a newline, move to shift
+    store(newline) U+000A U+000D
+    if (&layer = 'default')  any(newline) > layer('shift')
+    if (&layer = 'qwerty')  any(newline) > layer('shift-qwerty')
+
+    c if on qwerty, caps, qwerty-caps, or numeric-gboard, stay on that layer
+    if(&layer = 'qwerty') > context 
+    if(&layer = 'caps') > context
+    if(&layer = 'caps-qwerty') > context
+    if(&layer = 'numeric-gboard') > context
+    if(&layer = 'config') > context
+
+    c on shift or qwerty-shift, go to lowercase (both post keystroke and on new context/tap)
+    c TODO: remove &nextLayer from layout for shift-qwerty layer (it's now redundant with this rule)
+    if (&layer = 'shift')  > layer('default')
+    if (&layer = 'shift-qwerty') > layer('qwerty')
+
+    
+    c Automatic start of sentnece capitalization 
+    c Remove period from shift layers? its already not in regular shift
+    store(sentencePunctuation) '.?!'
+    if(&layer = 'default')          any(sentencePunctuation) ' '  > layer('shift')
+    if(&layer = 'shift')            any(sentencePunctuation) ' '  > layer('shift')
+    if(&layer = 'caps')             any(sentencePunctuation) ' '  > layer('caps') 
+    if(&layer = 'qwerty')           any(sentencePunctuation) ' '  > layer('shift-qwerty') 
+    if(&layer = 'shift-qwerty')     any(sentencePunctuation) ' '  > layer('shift-qwerty') 
+    if(&layer = 'caps-qwerty')      any(sentencePunctuation) ' '  > layer('caps') 
+    if(&layer = 'numeric-gboard')   any(sentencePunctuation) ' '  > layer('numeric-gboard') 
+    if(&layer = 'default')          any(sentencePunctuation) dk(space) ' '  > layer('shift')
+    if(&layer = 'shift')            any(sentencePunctuation) dk(space) ' '  > layer('shift')
+    if(&layer = 'caps')             any(sentencePunctuation) dk(space) ' '  > layer('caps') 
+    if(&layer = 'qwerty')           any(sentencePunctuation) dk(space) ' '  > layer('shift-qwerty') 
+    if(&layer = 'shift-qwerty')     any(sentencePunctuation) dk(space) ' '  > layer('shift-qwerty') 
+    if(&layer = 'caps-qwerty')      any(sentencePunctuation) dk(space) ' '  > layer('caps') 
+    if(&layer = 'numeric-gboard')   any(sentencePunctuation) dk(space) ' '  > layer('numeric-gboard') 
+
+
+    c Otherwise, go back to default
+    nomatch > layer('default') 
+
+   
+group(main) using keys 
+
+c Put punctuation before the automatically inserted space from predictive text, 
+    store(punctuation)  '.,?!;:'
+    ' ' + any(punctuation) > index(punctuation, 2) ' '
+c but not if you typed the space key manually
+    + [K_SPACE] > dk(space) ' ' 
+    dk(space)' ' + any(punctuation) > ' ' index(punctuation, 3) 
+
+c save oldlayer when switching to numeric-gboard layer
+    if(&layer = 'default')        +[T_NUMLOCK]          > set(oldlayer = "default") 
+    if(&layer = 'shift')          +[SHIFT T_NUMLOCK]    > set(oldlayer = "shift") 
+    if(&layer = 'caps')           +[T_NUMLOCK]          > set(oldlayer = "caps")  
+    if(&layer = 'qwerty')         +[T_NUMLOCK]          > set(oldlayer = "qwerty") 
+    if(&layer = 'shift-qwerty')   +[SHIFT T_NUMLOCK]    > set(oldlayer = "shift-qwerty") 
+    if(&layer = 'caps-qwerty')    +[T_NUMLOCK]          > set(oldlayer = "caps-qwerty")
+    
+    if(oldlayer = 'default')        + [T_ABC] > layer("default")
+    if(oldlayer = 'shift')          + [T_ABC] > layer("shift")
+    if(oldlayer = 'caps')           + [T_ABC] > layer("caps") 
+    if(oldlayer = 'qwerty')         + [T_ABC] > layer("qwerty")
+    if(oldlayer = 'shift-qwerty')   + [T_ABC] > layer("shift-qwerty")
+    if(oldlayer = 'caps-qwerty')    + [T_ABC] > layer( "caps-qwerty")
+
+
+
+c TODO: remove the NCAPS, repalce with a cased_keys statement
+c having a store of every key is useful anyway
+
+
+store(k_keys)       [K_A][K_B][K_C][K_D][K_E][K_F][K_G][K_H][K_I]\
+                    [K_J][K_K][K_L][K_M][K_N][K_O][K_P][K_Q][K_R]\
+                    [K_S][K_T][K_U][K_V][K_W][K_X][K_Y][K_Z]
+
+
+store(t_cons_keys)    [T_KW][T_KKW][T_W]  [T_HR]                      [T_TT]          [T_YY][T_HY] \
+                    [T_ND][T_HND][T_D]  [T_NG][T_NGW][T_HNG][T_G]   [T_KK]          [T_LL][T_HL] \
+                    [T_TS]              [T_CH][T_CCH]               [T_CHR][T_CCHR] [T_BB][T_HB]    [T_CN][T_NN][T_HN][T_ENYE]  [T_MM][T_HM]
+                    
+store(t_vowel_keys)   [T_A43][T_A32][T_A31][T_A13]\
+                    [T_E43][T_E32][T_E31][T_E13]\
+                    [T_I43][T_I32][T_I31][T_I13]\
+                    [T_O43][T_O32][T_O31][T_O13]\
+                    [T_U43][T_U32][T_U31][T_U13]
+
+c combine all key lists into one large cased keylist
+store(letter_keys) outs(k_keys) outs(t_cons_keys) outs(t_vowel_keys)
+
+c store(&CasedKeys) outs(k_keys)
+
+if(&layer = 'caps') + any(k_keys) > index(A_Z_Upper,2)
+
+c CONSONANTS
+    c long press b for bb, hb
+
+    + [NCAPS T_BB] > 'bb'
+    + [NCAPS T_HB] > 'hb'
+    + [SHIFT NCAPS T_BB] > 'Bb'
+    + [SHIFT NCAPS T_HB] > 'Hb'
+    + [CAPS T_BB] > 'BB'
+    + [CAPS T_HB] > 'HB'
+
+    c c, ch, chr
+
+        c C = ch, double press ch for cch, ch +_chr = cchr, ch + n = cn
+        + [NCAPS T_CH] > 'ch' deadkey(ch)
+        'ch' dk(ch) + [NCAPS T_CH] > 'cch'
+        'ch' dk(ch) + [NCAPS T_CHR] > 'cchr'
+        'ch' dk(ch) + [NCAPS K_N] > 'cn'
+
+        c The second key is normal (not SHIFT NCAPSed), since it goes back after SHIFT NCAPSing
+        + [SHIFT NCAPS T_CH] > 'Ch' deadkey(ch)
+        'Ch' dk(ch) + [NCAPS T_CH] > 'Cch'
+        'Ch' dk(ch) + [NCAPS T_CHR] > 'Cchr'
+        'Ch' dk(ch) + [NCAPS K_N] > 'Cn'
+
+        + [CAPS T_CH] > 'CH' deadkey(ch)
+        'CH' dk(ch) + [CAPS T_CH] > 'CCH'
+        'CH' dk(ch) + [CAPS T_CHR] > 'CCHR'
+        'CH' dk(ch) + [CAPS K_N] > 'CN'
+
+        c long press ch for cch
+        + [NCAPS T_CCH] > 'cch'
+        + [SHIFT NCAPS T_CCH] > 'Cch'
+        + [CAPS T_CCH] > 'CCH'
+
+        c long press ch for chr, chr + chr = cchr
+        + [NCAPS T_CHR] > 'chr' deadkey(chr)
+        + [SHIFT NCAPS T_CHR] > 'Chr' deadkey(chr)
+        + [CAPS T_CHR] > 'CHR' deadkey(chr)
+        'chr' dk(chr) + [NCAPS T_CHR] > 'cchr'
+        'Chr' dk(chr) + [NCAPS T_CHR] > 'Cchr'
+        'CHR' dk(chr) + [CAPS T_CHR] > 'CCHR'
+
+        c long press ch for cchr
+        + [NCAPS T_CCHR] > 'cchr'
+        + [SHIFT NCAPS T_CCHR] > 'Cchr'
+        + [CAPS T_CCHR] > 'CCHR'
+
+
+    c D = nd, long press for hnd, d
+    + [NCAPS T_ND] > 'nd' 
+    + [NCAPS T_HND] > 'hnd' 
+    + [NCAPS T_D] > 'd' 
+    + [SHIFT NCAPS T_ND] > 'Nd' 
+    + [SHIFT NCAPS T_HND] > 'Hnd' 
+    + [SHIFT NCAPS T_D] > 'D' 
+    + [CAPS T_ND] > 'ND' 
+    + [CAPS T_HND] > 'HND' 
+    + [CAPS T_D] > 'D' 
+
+
+    c g, ng, ngw
+
+        c G = ng 
+        + [NCAPS T_NG] > 'ng' deadkey(ng)
+        + [SHIFT NCAPS T_NG] > 'Ng' deadkey(ng)
+        + [CAPS T_NG] > 'NG' deadkey(ng)
+
+        c long press ng for  hng, ngw, g
+        + [NCAPS T_HNG] > 'hng'
+        + [NCAPS T_NGW] > 'ngw'
+        + [NCAPS T_G] > 'g'
+        + [SHIFT NCAPS T_HNG] > 'Hng'
+        + [SHIFT NCAPS T_NGW] > 'Ngw'
+        + [SHIFT NCAPS T_G] > 'G'
+        + [CAPS T_HNG] > 'HNG'
+        + [CAPS T_NGW] > 'NGW'
+        + [CAPS T_G] > 'G'
+
+        c ng + kw = ngw
+        'ng' dk(ng) + [NCAPS T_KW] > 'ngw'
+        'Ng' dk(ng) + [NCAPS T_KW] > 'Ngw'
+        'NG' dk(ng) + [CAPS T_KW] > 'NGW'
+
+
+    c long press k for kk
+    + [NCAPS T_KK] > 'kk'
+    + [SHIFT NCAPS T_KK] > 'Kk'
+    + [CAPS T_KK] > 'KK'
+
+    c kw, kkw, w
+
+        c W = kw, double press kw for kkw
+        + [NCAPS T_KW] > 'kw' deadkey(kw)
+        + [SHIFT NCAPS T_KW] > 'Kw' deadkey(kw)
+        + [CAPS T_KW] > 'KW' deadkey(kw)
+        c TODO: maybe do like if caps, replace all chars with upperacse (26+10 letter store())
+        c if(&layer = 'caps') + [NCAPS T_KW] > 'KW' deadkey(kw)
+        'kw' dk(kw) + [NCAPS T_KW] > 'kkw'
+        'Kw' dk(kw) + [NCAPS T_KW] > 'Kkw'
+        'KW' dk(kw) + [CAPS T_KW] > 'KKW'
+
+        c long press kw for kkw
+        + [NCAPS T_KKW] > 'kkw'
+        + [SHIFT NCAPS T_KKW] > 'Kkw'
+        + [CAPS T_KKW] > 'KKW'
+
+        c long press kw for w
+        + [NCAPS T_W] > 'w'
+        + [SHIFT NCAPS T_W] > 'W'
+        + [CAPS T_W] > 'W'
+
+
+    c long press l for ll, hl
+    + [NCAPS T_LL] > 'll'
+    + [NCAPS T_HL] > 'hl'
+    + [SHIFT NCAPS T_LL] > 'Ll'
+    + [SHIFT NCAPS T_HL] > 'Hl'
+    + [CAPS T_LL] > 'LL'
+    + [CAPS T_HL] > 'HL'
+
+    c long press m for mm, hm
+    + [NCAPS T_MM] > 'mm'
+    + [NCAPS T_HM] > 'hm'
+    + [SHIFT NCAPS T_MM] > 'Mm'
+    + [SHIFT NCAPS T_HM] > 'Hm'
+    + [CAPS T_MM] > 'MM'
+    + [CAPS T_HM] > 'HM'
+
+    c long press N for cn, nn, hn, ñ
+    + [NCAPS T_CN] > 'cn'
+    + [NCAPS T_NN] > 'nn'
+    + [NCAPS T_HN] > 'hn'
+    + [NCAPS T_ENYE] > 'ñ'
+    + [SHIFT NCAPS T_CN] > 'Cn'
+    + [SHIFT NCAPS T_NN] > 'Nn'
+    + [SHIFT NCAPS T_HN] > 'Hn'
+    + [SHIFT NCAPS T_ENYE] > 'Ñ'
+    + [CAPS T_CN] > 'CN'
+    + [CAPS T_NN] > 'NN'
+    + [CAPS T_HN] > 'HN'
+    + [CAPS T_ENYE] > 'Ñ'
+
+    c long press r for hr
+    + [NCAPS T_HR] > 'hr'
+    + [SHIFT NCAPS T_HR] > 'Hr'
+    + [CAPS T_HR] > 'HR'
+
+    c long press t for tt
+    + [NCAPS T_TT] > 'tt'
+    + [SHIFT NCAPS T_TT] > 'Tt'
+    + [CAPS T_TT] > 'TT'
+
+
+    c long press y for yy, hy
+    + [NCAPS T_YY] > 'yy'
+    + [NCAPS T_HY] > 'hy'
+    + [SHIFT NCAPS T_YY] > 'Yy'
+    + [SHIFT NCAPS T_HY] > 'Hy'
+    + [CAPS T_YY] > 'YH'
+    + [CAPS T_HY] > 'HY'
+
+    c Z = ts
+    + [NCAPS T_TS] > 'ts'
+    + [SHIFT NCAPS T_TS] > 'Ts'
+    + [CAPS T_TS] > 'TS'
+
+
+
++ [CAPS K_A] > 'A'
++ [CAPS K_E] > 'E'
++ [CAPS K_I] > 'I'
++ [CAPS K_O] > 'O'
++ [CAPS K_U] > 'U'
+
+
+c long press A for a contours
++ [NCAPS T_A43] > 'áa'
++ [NCAPS T_A32] > 'aa'
++ [NCAPS T_A31] > 'aà'
++ [NCAPS T_A13] > 'àa'
++ [SHIFT NCAPS T_A43] > 'Áa'
++ [SHIFT NCAPS T_A32] > 'Aa'
++ [SHIFT NCAPS T_A31] > 'Aà'
++ [SHIFT NCAPS T_A13] > 'Àa'
++ [CAPS T_A43] > 'ÁA'
++ [CAPS T_A32] > 'AA'
++ [CAPS T_A31] > 'AÀ'
++ [CAPS T_A13] > 'ÀA'
+
+c long press E for e contours
++ [NCAPS T_E43] > 'ée'
++ [NCAPS T_E32] > 'ee'
++ [NCAPS T_E31] > 'eè'
++ [NCAPS T_E13] > 'èe'
++ [SHIFT NCAPS T_E43] > 'Ée'
++ [SHIFT NCAPS T_E32] > 'Ee'
++ [SHIFT NCAPS T_E31] > 'Eè'
++ [SHIFT NCAPS T_E13] > 'Èe'
++ [CAPS T_E43] > 'ÉE'
++ [CAPS T_E32] > 'EE'
++ [CAPS T_E31] > 'EÈ'
++ [CAPS T_E13] > 'ÈE'
+
+c long press I for i contours
++ [NCAPS T_I43] > 'íi'
++ [NCAPS T_I32] > 'ii'
++ [NCAPS T_I31] > 'iì'
++ [NCAPS T_I13] > 'ìi'
++ [SHIFT NCAPS T_I43] > 'Íi'
++ [SHIFT NCAPS T_I32] > 'Ii'
++ [SHIFT NCAPS T_I31] > 'Iì'
++ [SHIFT NCAPS T_I13] > 'Ìi'
++ [CAPS T_I43] > 'ÍI'
++ [CAPS T_I32] > 'II'
++ [CAPS T_I31] > 'Iì'
++ [CAPS T_I13] > 'ÌI'
+
+c long press O for o contours
++ [NCAPS T_O43] > 'óo'
++ [NCAPS T_O32] > 'oo'
++ [NCAPS T_O31] > 'oò'
++ [NCAPS T_O13] > 'òo'
++ [SHIFT NCAPS T_O43] > 'Óo'
++ [SHIFT NCAPS T_O32] > 'Oo'
++ [SHIFT NCAPS T_O31] > 'Oò'
++ [SHIFT NCAPS T_O13] > 'Òo'
++ [CAPS T_O43] > 'ÓO'
++ [CAPS T_O32] > 'OO'
++ [CAPS T_O31] > 'OÒ'
++ [CAPS T_O13] > 'ÒO'
+
+
+c long press U for u contours
++ [NCAPS T_U43] > 'úu'
++ [NCAPS T_U32] > 'uu'
++ [NCAPS T_U31] > 'uù'
++ [NCAPS T_U13] > 'ùu'
++ [SHIFT NCAPS T_U43] > 'Úu'
++ [SHIFT NCAPS T_U32] > 'Uu'
++ [SHIFT NCAPS T_U31] > 'Uù'
++ [SHIFT NCAPS T_U13] > 'Ùu'
++ [CAPS T_U43] > 'ÚU'
++ [CAPS T_U32] > 'UU'
++ [CAPS T_U31] > 'UÙ'
++ [CAPS T_U13] > 'ÙU'
+
+c + [T_ACCENT_FORWARD] > set(accentbehavior = "forward")
+c + [T_ACCENT_BACK] > set(accentbehavior = "back")
+c + [T_ACCENT_RETRO] > set(accentbehavior = "retro") 
+
+c    group(accent) using keys
+c        store(accentbehavior) "forward"
+c        store(tonekeys) [T_H][T_L]
+c        if(accentbehavior = "forward") + [T_H] >  use(forward) 
+c        if(accentbehavior = "retro") + any(tonekeys) >  use(retro)
+c        match> 'match'
+c        nomatch > use(main) 'main'
+
+c    group(forward) using keys
+
+
+c TODO: refactor this?
+c deadkey acute + vowel = acute vowel
++ [NCAPS T_H] > '´' deadkey(acute) 
++ [SHIFT NCAPS T_H] > '´' deadkey(acute)
++ [CAPS T_H] > '´' deadkey(acute) 
+c    store(vowels) 'aeiouAEIOU'
+c    store(acutes) 'áéíóúÁÉÍÓÚ'
+c     '´' dk(acute)  + any(vowels) > index(acutes,3)
+c    '´' dk(acute) + [NCAPS K_A] > 'á'
+c    '´' dk(acute) + [NCAPS K_E] > 'é'
+c    '´' dk(acute) + [NCAPS K_I] > 'í'
+c    '´' dk(acute) + [NCAPS K_O] > 'ó'
+c    '´' dk(acute) + [NCAPS K_U] > 'ú'
+c    '´' dk(acute) + [SHIFT NCAPS K_A] > 'Á'
+c    '´' dk(acute) + [SHIFT NCAPS K_E] > 'É'
+c    '´' dk(acute) + [SHIFT NCAPS K_I] > 'Í'
+c    '´' dk(acute) + [SHIFT NCAPS K_O] > 'Ó'
+c    '´' dk(acute) + [SHIFT NCAPS K_U] > 'Ú'
+c    '´' dk(acute) + [CAPS K_A] > 'Á'
+c    '´' dk(acute) + [CAPS K_E] > 'É'
+c    '´' dk(acute) + [CAPS K_I] > 'Í'
+c    '´' dk(acute) + [CAPS K_O] > 'Ó'
+c    '´' dk(acute) + [CAPS K_U] > 'Ú'
+    '´' dk(acute) + any(cons) > index(cons, 3)
+    '´' dk(acute) + any(plainvowels) > index(acutevowels, 3)
+
+
+
+c deadkey grave  + vowel = grave vowel
++ [NCAPS T_L] > '`' deadkey(grave) 
++ [SHIFT NCAPS T_L] > '`' deadkey(grave) 
++ [CAPS T_L] > '`' deadkey(grave)
+c    '`' dk(grave) + [NCAPS K_A] > 'à'
+c    '`' dk(grave) + [NCAPS K_E] > 'è'
+c    '`' dk(grave) + [NCAPS K_I] > 'ì'
+c    '`' dk(grave) + [NCAPS K_O] > 'ò'
+c    '`' dk(grave) + [NCAPS K_U] > 'ù'
+c    '`' dk(grave) + [SHIFT NCAPS K_A] > 'À'
+c    '`' dk(grave) + [SHIFT NCAPS K_E] > 'È'
+c    '`' dk(grave) + [SHIFT NCAPS K_I] > 'Ì'
+c    '`' dk(grave) + [SHIFT NCAPS K_O] > 'Ò'
+c    '`' dk(grave) + [SHIFT NCAPS K_U] > 'Ù'
+c    '`' dk(grave) + [CAPS K_A] > 'À'
+c    '`' dk(grave) + [CAPS K_E] > 'È'
+c    '`' dk(grave) + [CAPS K_I] > 'Ì'
+c    '`' dk(grave) + [CAPS K_O] > 'Ò'
+c    '`' dk(grave) + [CAPS K_U] > 'Ù'
+    '`' dk(grave) + any(cons) > index(cons, 3)
+    '`' dk(grave) + any(plainvowels) > index(gravevowels, 3)
+
+c '´' dk(acute) + any(A_Z_Upper) > index(A_Z_Upper, 3)
+c '`' dk(grave) + any(letter_keys) > index(letter_keys, 3)
+
++ [T_43] > '◌́◌' dk(43)
++ [T_32] > '◌◌' dk(32)
++ [T_31] > '◌◌̀' dk(31)
++ [T_13] > '◌̀◌' dk(13)
+
+c TODO does this also render wrong on an actual device? if so, replace composed with spacer accents
+'◌́◌' dk(43) + any(plainvowels) > index(acutevowels, 5) index(plainvowels, 5)
+'◌◌' dk(32) + any(plainvowels) > index(plainvowels, 4) index(plainvowels, 4) c only two chars in context
+'◌◌̀' dk(31) + any(plainvowels) > index(plainvowels, 5) index(gravevowels, 5)
+'◌̀◌' dk(13) + any(plainvowels) > index(gravevowels, 5) index(plainvowels, 5)
+
+
+store(vowels) 'aeiouAEIOU' 'áéíóúÁÉÍÓÚ' 'àèìòùÀÈÌÒÙ' 
+store(a_z) outs(a_z_lower) outs(A_Z_Upper) 'áéíóúÁÉÍÓÚ' 'àèìòùÀÈÌÒÙ' dk(kw) dk(ch) dk(chr) dk(ng)
+
+c Retroactive tone application - can put tone backwards on words up to 14 letters long
+c Three copies because this is really a map from store(vowels) to store(acutevowels), and you need 15 indices - 5 from plain, 5 from already acute, 5 from already grave
+c this set has spaces, to work after the lexical model (but not after a manual space, becuase there's no dk(space)
+c this set is activated when you type some letters, see the  model word with the right letters but wrong tones, and then do the tones from there
+c Ex. to type "kúnánj": type [k][u], see [kùnànj], select it, and then double-tap accute twice to get kúnánj
+store(acutevowels) 'áéíóúÁÉÍÓÚ' 'áéíóúÁÉÍÓÚ' 'áéíóúÁÉÍÓÚ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]  > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) context(14)  ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]           > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                    > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                             > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                                      > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                                               > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                                                        > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                                                                 > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                                                                          > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                                                                                   > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z)  ' ' +[SHIFT NCAPS T_H]                                                                                           > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) ' ' 
+any(vowels) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_H]                                                                                                     > index(acutevowels, 1) dk(vowel) context (2) context(3) ' ' 
+any(vowels) any(a_z)  ' ' +[SHIFT NCAPS T_H]                                                                                                             > index(acutevowels, 1) dk(vowel) context (2) ' ' 
+any(vowels) ' ' +[SHIFT NCAPS T_H]                                                                                                                       > index(acutevowels, 1) dk(vowel) ' ' 
+
+store(plainvowels) 'aeiouAEIOU' 'aeiouAEIOU' 'aeiouAEIOU'
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]  > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) context(14) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]           > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                    > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                             > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                                      > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                                               > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                                                        > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                                                                 > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                                                                          > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                                                                                   > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z)  ' ' +[SHIFT NCAPS T_NOTONE]                                                                                           > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) ' ' 
+any(vowels) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_NOTONE]                                                                                                     > index(plainvowels, 1) dk(vowel) context (2) context(3) ' ' 
+any(vowels) any(a_z)  ' ' +[SHIFT NCAPS T_NOTONE]                                                                                                             > index(plainvowels, 1) dk(vowel) context (2) ' ' 
+any(vowels) ' ' +[SHIFT NCAPS T_NOTONE]                                                                                                                       > index(plainvowels, 1) dk(vowel) ' ' 
+
+store(gravevowels) 'àèìòùÀÈÌÒÙ'  'àèìòùÀÈÌÒÙ'  'àèìòùÀÈÌÒÙ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]  > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) context(14) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]           > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                    > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                             > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                                      > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                                               > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                                                        > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                                                                 > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                                                                          > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                                                                                   > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) ' ' 
+any(vowels) any(a_z) any(a_z) any(a_z)  ' ' +[SHIFT NCAPS T_L]                                                                                           > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) ' ' 
+any(vowels) any(a_z) any(a_z) ' ' +[SHIFT NCAPS T_L]                                                                                                     > index(gravevowels, 1) dk(vowel) context (2) context(3) ' ' 
+any(vowels) any(a_z)  ' ' +[SHIFT NCAPS T_L]                                                                                                             > index(gravevowels, 1) dk(vowel) context (2) ' ' 
+any(vowels) ' ' +[SHIFT NCAPS T_L]                                                                                                                       > index(gravevowels, 1 ) dk(vowel) ' ' 
+
+
+c this set has no spaces, and only works right after typing letters
+c this set activates when you type all the letters and don't see the right tones in the model, so you do it manually
+c ex: to type "nùkwè": type [n][u][kw][e]. Suggestion bar shows [nùkwèj][nùkwèjnèj][nùkwèjsij]. Use grave accent twice to get "nùkwè"
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]  > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) context(14)  
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]           > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                    > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                             > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                                      > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                                               > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                                                        > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                                                                 > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                                                                          > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                                                                                   > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) context(5)' ' 
+any(vowels) any(a_z) any(a_z) any(a_z)  + [SHIFT NCAPS T_H]                                                                                           > index(acutevowels, 1) dk(vowel) context (2) context(3) context(4) 
+any(vowels) any(a_z) any(a_z) + [SHIFT NCAPS T_H]                                                                                                     > index(acutevowels, 1) dk(vowel) context (2) context(3) 
+any(vowels) any(a_z)  + [SHIFT NCAPS T_H]                                                                                                             > index(acutevowels, 1) dk(vowel) context (2) 
+any(vowels) + [SHIFT NCAPS T_H]                                                                                                                       > index(acutevowels, 1) dk(vowel) 
+
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]  > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) context(14) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]           > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                    > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                             > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                                      > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                                               > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                                                        > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                                                                 > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                                                                          > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                                                                                   > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) context(5)
+any(vowels) any(a_z) any(a_z) any(a_z)  + [SHIFT NCAPS T_NOTONE]                                                                                           > index(plainvowels, 1) dk(vowel) context (2) context(3) context(4) 
+any(vowels) any(a_z) any(a_z) + [SHIFT NCAPS T_NOTONE]                                                                                                     > index(plainvowels, 1) dk(vowel) context (2) context(3) 
+any(vowels) any(a_z)  + [SHIFT NCAPS T_NOTONE]                                                                                                             > index(plainvowels, 1) dk(vowel) context (2) 
+any(vowels) + [SHIFT NCAPS T_NOTONE]                                                                                                                       > index(plainvowels, 1) dk(vowel) 
+
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]  > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) context(14) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]           > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) context(13) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                    > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) context(12) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                             > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) context(11) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                                      > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) context(10) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                                               > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) context(9) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                                                        > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) context(8) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                                                                 > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) context(7) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                                                                          > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5) context(6) 
+any(vowels) any(a_z) any(a_z) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                                                                                   > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) context(5)
+any(vowels) any(a_z) any(a_z) any(a_z)  + [SHIFT NCAPS T_L]                                                                                           > index(gravevowels, 1) dk(vowel) context (2) context(3) context(4) 
+any(vowels) any(a_z) any(a_z) + [SHIFT NCAPS T_L]                                                                                                     > index(gravevowels, 1) dk(vowel) context (2) context(3) 
+any(vowels) any(a_z)  + [SHIFT NCAPS T_L]                                                                                                             > index(gravevowels, 1) dk(vowel) context (2) 
+any(vowels) + [SHIFT NCAPS T_L]                                                                                                                       > index(gravevowels, 1) dk(vowel)
+
+
+c At the context start, even though you're in shift layer, accents work as a forward deadkey
+Nul + [SHIFT NCAPS T_H] > '´' deadkey(acute) 
+Nul + [SHIFT NCAPS T_L] > '`' deadkey(grave)
+
+c or after a manually typed space,
+dk(space) ' ' + [SHIFT NCAPS T_H] > context(1) context(2) '´' deadkey(acute)
+dk(space) ' ' + [SHIFT NCAPS T_L] > context(1) context(2) '`' deadkey(grave)
+c or in a new sentence after an autocorrect
+any(sentencePunctuation) ' ' + [SHIFT NCAPS T_H] > context(1) context(2) '´' deadkey(acute)
+any(sentencePunctuation) ' ' + [SHIFT NCAPS T_L] > context(1) context(2) '`' deadkey(grave)
+
+match > use(straydeadkey)
+
+group(straydeadkey)
+
+    c deadkey + consonant = just the consonant, ´ gets deleted    
+    '´' dk(acute) any(cons)                     > context(3)                        dk(vowel)
+    '´' dk(acute) any(cons) any(cons)           > context(3) context(4)             dk(vowel)
+    '´' dk(acute) any(cons) any(cons) any(cons) > context(3) context(4) context(5)  dk(vowel)
+    
+    c deadkey + consonant = just the consonant, ` gets deleted
+    '`' dk(grave) any(cons)                     > context(3)                        dk(vowel)
+    '`' dk(grave) any(cons) any(cons)           > context(3) context(4)             dk(vowel)
+    '`' dk(grave) any(cons) any(cons) any(cons) > context(3) context(4) context(5)  dk(vowel)
+    
+    c include deadkeys for some two letter keys   (ch, ng, kw, chr)
+    store(deadkeys) dk(kw) dk(ch) dk(chr) dk(ng)
+    '´' dk(acute) any(cons) any(cons)           any(deadkeys) > context(3) context(4) context(5)            dk(vowel)
+    '´' dk(acute) any(cons) any(cons) any(cons) any(deadkeys) > context(3) context(4) context(5) context(6) dk(vowel)
+    '`' dk(grave) any(cons) any(cons)           any(deadkeys) > context(3) context(4) context(5)            dk(vowel)
+    '`' dk(grave) any(cons) any(cons) any(cons) any(deadkeys) > context(3) context(4) context(5) context(6) dk(vowel)
+    
+    
