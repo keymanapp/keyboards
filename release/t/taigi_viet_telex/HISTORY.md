@@ -1,6 +1,14 @@
 taigi viet telex Change History
 ====================
 
+3.0 (2024-10-31)
+----------------
+* Updated by cathaylab
+* applied new rules to match the original Viet Telex keyboard much more. r = 2, s = 3, f = 5.
+* added more Kanji vocabularies
+* added the Y key to represent consonant ng
+* added short cut en > ian, em > iam
+
 2.0.1 (2024-09-29)
 ----------------
 * Updated by cathaylab
