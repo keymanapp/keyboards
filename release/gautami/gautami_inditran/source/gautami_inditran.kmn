@@ -1,0 +1,344 @@
+﻿c gautami_inditran generated from template at 2024-11-15 07:23:02
+c with name "Gautami IndiTran"
+store(&VERSION) '10.0'
+store(&NAME) 'Gautami IndiTran'
+store(&COPYRIGHT) 'Copyright © Gautam Sengupta'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows macosx linux web desktop'
+store(&BITMAP) 'gautami_inditran.ico'
+store(&VISUALKEYBOARD) 'gautami_inditran.kvks'
+store(&HOTKEY) [CTRL SHIFT K_I]
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(odot_bearer) 'gnmyGNMYzZ'             c 0067 006e 006d 0079 0047 004e 004d 0059 007a 005a
+Store(odot_bearing)'ġṅṁẏĠṄṀẎżŻ'             c 0121 1e45 1e41 1e8f 0120 1e44 1e40 1e8e 017c 017b
+store(odot_bearing_udot_bearer) 'ṅṁṄṀżŻ'    c 1e45 1e41 1e44 1e40 017c 017b
+store(udot_bearing_odot_bearer) 'ṇṃṆṂẓẒ'    c 1e47 1e43 1e46 1e42 1e93 1e92
+store(udot_bearer) 'tdrlshTDRLSH'           c 0074 0064 0072 006c 0073 0068 0054 0044 0052 004c 0053 0048
+store(udot_bearing) 'ṭḍṛḷṣḥṬḌṚḶṢḤ'          c 1e6d 1e0d 1e5b 1e37 1e63 1e25 1e6c 1e0c 1e5a 1e36 1e62 1e24
+store(diaresis_bearer) 'tshTSH'             c 0074 0073 0068
+store(dot_bearing_diaresis_bearer) 'ṭṣḥṬṢḤ' c 1e6d 1e63 1e25
+store(short_vowel) 'aiueoAIUEOæ'            c 0061 0069 0075 0065 006f 0041 0049 0055 0045 004f
+store(long_vowel) 'āīūēōĀĪŪĒŌǣ'             c 0101 012b 016b 0113 014d 0100 012a 016a 0112 014c
+store(macron_bearer) 'Yy'                   c 0059 0079
+store(macron_bearing) 'Ȳȳ'                  c 0232 0233
+store(uline_bearer) 'lhLNnTtDdRrZzKk'       c 006c 0068 004c 004e 006e 0054 0074 0052 0072 005a 007a 004b 006b
+store(uline_bearing) 'ḻẖḺṈṉṮṯḎḏṞṟẔẕḴḵ'      c 1e3b 1e96 1e3a 1e48 1e49 1e6e 1e6f 1e5e 1e5f 1e94 1e95 1e34 1e35
+store(uline_bearer_2) 'SsH'                 c 0053 0073 0048
+store(circle_bearer) 'rlRL'                 c 0072 006c 0052 004c
+store(udot_bearing_circle_bearer) 'ṛḷṚḶ'    c 1e5b 1e37 1e5a 1e36
+store(circum_bearer) 'eoEOzZCc'             c 0065 006f 0045 004f 007a 005a 0043 0063
+store(circum_bearing) 'êôÊÔžŽĈĉ'            c 00ea 00f4 00ca 00d4 1e91 1e90 0108 0109
+store(breve_bearing_vowel) 
+store(caron_bearer) 'Zz'                    c 005a 007a
+store(caron_bearing) 'Žž'                   c 017d 017e
+store(breve_bearer) 'AaEeIiOoUuHh'          c 0048 0068 0075
+store(breve_bearing) 'ĂăĔĕĬĭŎŏŬŭḪḫ'         c 1e2a 1e2b 016d
+store(diatop_ubreve_bearer) 'ÊêĬĭÔôŬŭ'
+store(ubreve_bearer) 'EeIiOoUu'
+store(tilde_bearer) 'aeiouAEIOUnN'          c 0061 0065 0069 006f 0075 0041 0045 0049 004f 0055 006e 004e | 0304 0325
+store(tilde_bearing) 'ãẽĩõũÃẼĨÕŨñÑ'         c 00e3 1ebd 0129 00f5 0169 00c3 1ebc 0128 00d5 0168 00f1 00d1
+store(tilde_bearer_2) 'āīūēōĀĪŪĒŌəɑɔæɛɪʊ'   c 0101 012b 016b 0113 014d 0100 012a 016a 0112 014c 0259 0251 0254 00e6 025b 026a 028a
+
+c Deadkey
++[RALT K_X] > 'x'                           c 0078
++[K_X] > dk(x)
++[RALT K_BKSLASH] > '\'
++[K_BKSLASH] > dk(phon)
+
+c SHORT > LONG VOWELS
+'a' + [K_A] > 'ā'                           c U+0101
+'i' + [K_I] > 'ī'                           c U+012b
+'e' + [K_E] > 'ē'                           c U+0113
+'u' + [K_U] > 'ū'                           c U+016b
+'o' + [K_O] > 'ō'                           c U+014d
+'A' + [SHIFT K_A] > 'Ā'                     c U+0100
+'I' + [SHIFT K_I] > 'Ē'                     c U+012a
+'E' + [SHIFT K_E] > 'Ē'                     c U+0112
+'U' + [SHIFT K_U] > 'Ū'                     c U+016a
+'O' + [SHIFT K_O] > 'Ō'                     c U+014c
+
+c Chandrabindu/tilde above
+any(tilde_bearer) + [SHIFT K_BKQUOTE] >  index(tilde_bearing, 1)
+any(tilde_bearer_2) + [SHIFT K_BKQUOTE] >  context U+0303
+'m' + [SHIFT K_BKQUOTE] > context(1) U+0310     c m̐
+'M' + [SHIFT K_BKQUOTE] > context(1) U+0310     c M̐
+U+0304 +[SHIFT K_BKQUOTE] > context U+0303      c for ~ over r̥ l̥ 
+U+0325 +[SHIFT K_BKQUOTE] > context U+0303      c and r̥̄ l̥̄
+
+c CARET > CIRCUMFLEX / CARON / BREVE
++ [RALT SHIFT K_6] > '^'
+any(caron_bearer) + [SHIFT K_6] > index(caron_bearing, 1)
+any(circum_bearer) + [SHIFT K_6] > index(circum_bearing, 1)
+any(breve_bearer) +[SHIFT K_6] > index(breve_bearing, 1)
+any(diatop_ubreve_bearer) +[SHIFT K_6] > index(ubreve_bearer, 1) U+032f
+any(ubreve_bearer) U+032f +[Shift K_6] > index(diatop_ubreve_bearer, 1)
+'m' +[SHIFT K_6] > context U+0306
+'M' +[SHIFT K_6] > context U+0306
+'n' +[SHIFT K_6] > context U+0306
+'N' +[SHIFT K_6] > context U+0306
+'r' +[SHIFT K_6] > context U+0306
+'R' +[SHIFT K_6] > context U+0306
+
+c PERIOD > DOT BELOW / DOT ABOVE / CIRCLE BELOW
++ [RALT K_PERIOD] > '.'
+any(odot_bearing_udot_bearer) + [K_PERIOD] > index(udot_bearing_odot_bearer, 1)
+any(udot_bearing_odot_bearer) + [K_PERIOD] > index(odot_bearing_udot_bearer, 1)
+any(odot_bearer) + [K_PERIOD] > index(odot_bearing, 1)
+any(udot_bearer) + [K_PERIOD] > index(udot_bearing, 1)
+any(udot_bearing_circle_bearer) +[K_PERIOD] > index(circle_bearer, 1) U+0325
+
+c HYPHEN > MACRON / LINE BELOW
++ [RALT K_HYPHEN] > '-'
+any(short_vowel) +[K_HYPHEN] > index(long_vowel, 1)         c ā ī ō
+any(circle_bearer) U+0325 +[K_HYPHEN] > context U+0304      c r̥̄ l̥̄
+any(uline_bearer) +[K_HYPHEN] > index(uline_bearing, 1)     c ḻ Ḻ ẖ H̱ ṉ Ṉ ṯ Ṯ ṟ Ṟ ẕ Ẕ ḵ Ḵ
+any(uline_bearer_2) +[K_HYPHEN] > context U+0331            c s̱ S̱
+
+c DIARESIS
+any(dot_bearing_diaresis_bearer) +[K_PERIOD] > index(diaresis_bearer, 1) U+0324 c t̤ s̤ h̤ T̤ S̤ H̤
+
+any(macron_bearer) +[K_HYPHEN] > index(macron_bearing, 1)   c ȳ Ȳ s̱
+
+c QUOTE / AVAGRAHA
++ [RALT K_QUOTE] > "'"                  c U+0027
++ [K_QUOTE] > U+2019                    c ’ (2019) not ' (0027) for ऽ AVAGRAHA
+
+c +[RALT K_H] > 'h'
+c +[RALT SHIFT K_H] > 'H'
+'s' +[K_H] > 'ś'                        c U+015b  ś  श
+'S' +[K_H] > 'Ś'                        c U+015b  Ś  श
+'k' 'h' +[K_HYPHEN] > context(1) U+035f context(2)          c k͟h ख़ 
+'K' 'H' +[K_HYPHEN] > context(1) U+035f context(2)          c k͟h ख़ 
+
+c EXPERIMENTAL
++ [RALT K_EQUAL] > '='
+'ā' + '=' > 'æ'
+'ǣ' + '=' > 'a'
+
+'ī' + '=' > 'i'
+
+'ē' + '=' > 'ê'
+'ê' + '=' > 'e̯'
+'e̯' + '=' > 'e'
+
+'ō' + '=' > 'ô'
+'ô' + '=' > 'o̯'
+'o̯' + '=' > 'o'
+
+'ū' + '=' > 'ŭ'
+'ŭ' + '=' > 'u̯'
+'u̯' + '=' > 'u'
+
+'c' + '=' > 'ĉ'
+'ĉ' + '=' > 'c'
+'C' + '=' > 'Ĉ'
+'Ĉ' + '=' > 'C'
+
+'s' + '=' > 'ś'
+'ś' + '=' > 'ṣ'
+'ṣ' + '=' > 's̱'
+'s̱' + '=' > 's̤'
+'s̤' + '=' > 's'
+
+'S' + '=' > 'Ś'
+'Ś' + '=' > 'Ṣ'
+'Ṣ' + '=' > 'S̱'
+'S̱' + '=' > 'S̤'
+'S̤' + '=' > 'S'
+
+'t' + '=' > 'ṭ'
+'ṭ' + '=' > 'ṯ'
+'ṯ' + '=' > 't̤'
+'t̤' + '=' > 't'
+
+'T' + '=' > 'Ṭ'
+'Ṭ' + '=' > 'Ṯ'
+'Ṯ' + '=' > 'T̤'
+'T̤' + '=' > 'T'
+
+'d' + '=' > 'ḍ'
+'ḍ' + '=' > 'ḏ'
+'ḏ' + '=' > 'd'
+
+'D' + '=' > 'Ḍ'
+'Ḍ' + '=' > 'Ḏ'
+'Ḏ' + '=' > 'D'
+
+'h' + '=' > 'ḥ'
+'ḥ' + '=' > 'ẖ'
+'ẖ' + '=' > 'h̤'
+'h̤' + '=' > 'ḫ'
+'ḫ' + '=' > 'h'
+
+'H' + '=' > 'Ḥ'
+'Ḥ' + '=' > 'H̤'
+'H̤' + '=' > 'H̱'
+'H̱' + '=' > 'Ḫ'
+'Ḫ' + '=' > 'H'
+
+'r' + '=' > 'ṛ'
+'ṛ' + '=' > 'r̥'
+'r̥' + '=' > 'r̥̄'
+'r̥̄' + '=' > 'ṟ'
+'ṟ' + '=' > 'r̆'
+'r̆' + '=' > 'r'
+
+'R' + '=' > 'Ṛ'
+'Ṛ' + '=' > 'R̥'
+'R̥' + '=' > 'R̥̄'
+'R̥̄' + '=' > 'Ṟ'
+'Ṟ' + '=' > 'R̆'
+'R̆' + '=' > 'R'
+
+'l' + '=' > 'ḷ'
+'ḷ' + '=' > 'ḻ'
+'ḻ' + '=' > 'l̥'
+'l̥' + '=' > 'l̥̄'
+'l̥̄' + '=' > 'l'
+
+'L' + '=' > 'Ḷ'
+'Ḷ' + '=' > 'Ḻ'
+'Ḻ' + '=' > 'L̥'
+'L̥' + '=' > 'L̥̄'
+'L̥̄' + '=' > 'L'
+
+'k' + '=' > 'ḵ'
+'ḵ' + '=' > 'k'
+
+'g' + '=' > 'ġ'
+'ġ' + '=' > 'g'
+
+'n' + '=' > 'ṅ'
+'ṅ' + '=' > 'ñ'
+'ñ' + '=' > 'ṇ'
+'ṇ' + '=' > 'ṉ'
+'ṉ' + '=' > 'n̆'
+'n̆' + '=' > 'n'
+
+'N' + '=' > 'Ṅ'
+'Ṅ' + '=' > 'Ñ'
+'Ñ' + '=' > 'Ṇ'
+'Ṇ' + '=' > 'Ṉ'
+'Ṉ' + '=' > 'N̆'
+'N̆' + '=' > 'N'
+
+'m' + '=' > 'ṁ'
+'ṁ' + '=' > 'ṃ'
+'ṃ' + '=' > 'm̐'
+'m̐' + '=' > 'm̆'
+'m̆' + '=' > 'm'
+
+'M' + '=' > 'Ṁ'
+'Ṁ' + '=' > 'Ṃ'
+'Ṃ' + '=' > 'M̐'
+'M̐' + '=' > 'M̆'
+'M̆' + '=' > 'M'
+
+'y' + '=' > 'ẏ'
+'ẏ' + '=' > 'ȳ'
+'ȳ' + '=' > 'y'
+'Y' + '=' > 'Ẏ'
+'Ẏ' + '=' > 'Ȳ'
+'Ȳ' + '=' > 'Y'
+
+'z' + '=' > 'ž'
+'ž' + '=' > 'ẕ'
+'ẕ' + '=' > 'ż'
+'ż' + '=' > 'ẓ'
+'ẓ' + '=' > 'z'
+'Z' + '=' > 'Ž'
+'Ž' + '=' > 'Ẕ'
+'Ẕ' + '=' > 'Ż'
+'Ż' + '=' > 'Ẓ'
+'Ẓ' + '=' > 'Z'
+
+c VOWEL LENGTHENING
+any(short_vowel) + '=' > index(long_vowel, 1)
+
+c INDIC PHONEMIC TRANSCRIPTION
+'a' +[K_BKSLASH] > U+0259               c ə
+U+0259 +[K_BKSLASH] > U+0251            c ɑ
+U+0251 +[K_BKSLASH] > U+00e4            c ä
+U+00e4 +[K_BKSLASH] > 'ə'               c a
+
+'i' +[K_BKSLASH] > U+026a               c ɪ
+U+026a +[K_BKSLASH] > U+026a U+032f     c ɪ̯
+U+026a U+032f +[K_BKSLASH] > U+026a     c ɪ
+
+'u' +[K_BKSLASH] > U+028a               c ʊ
+U+028a +[K_BKSLASH] > U+028a U+032f     c ʊ̯
+U+028a U+032f +[K_BKSLASH] > U+026f     c ɯ
+U+026f +[K_BKSLASH] > 'u'               c u
+
+'o' +[K_BKSLASH] > U+0254               c ɔ
+U+0254 +[K_BKSLASH] > 'o' U+032f        c o̯
+'o' U+032f +[K_BKSLASH] > U+0254        c ɔ
+
+'e' +[K_BKSLASH] > 'ɛ'                  c ɛ
+'ɛ' +[K_BKSLASH] > 'æ'                  c æ
+'æ' +[K_BKSLASH] > 'e̯'                  c e̯
+'e̯' +[K_BKSLASH] > 'ɛ'                  c ɛ
+
+'r' +[K_BKSLASH] > U+027d               c ɽ
+U+027d +[K_BKSLASH] > U+027e            c ɾ
+U+027e +[K_BKSLASH] > 'r' U+0329        c r̩
+'r' U+0329 +[K_BKSLASH] > 'r'           c r
+
+'l' +[K_BKSLASH] > U+026d               c ɭ
+U+026d +[K_BKSLASH] > U+027b            c ɻ
+U+027b +[K_BKSLASH] > 'l' U+0329        c l̩
+'l' U+0329 +[K_BKSLASH] > U+026d        c ɭ
+
+'g' +[K_BKSLASH] >  'ɣ'                 c U+0263 ɣ ग़
+'ɣ' +[K_BKSLASH] >  'ɠ'                 c U+0260 ɠ
+'ɠ' +[K_BKSLASH] >  'g'                 c back to g
+
+'b' +[K_BKSLASH] >  'ɓ'                 c U+0253 ɓ
+'ɓ' +[K_BKSLASH] >  'b'                 c back to b
+
+'c' +[K_BKSLASH] > 'ʧ'                  c U+02a7 ʧ
+'ʧ' +[K_BKSLASH] > 'ʨ'                  c U+02a8 ʨ
+'ʨ' +[K_BKSLASH] > 'c'                  c back to c
+
+'j' +[K_BKSLASH] > 'ʤ'                  c U+02a4 ʤ
+'ʤ' +[K_BKSLASH] > 'ʥ'                  c U+02a5 ʥ
+'ʥ' +[K_BKSLASH] > 'j'                  c back to j
+
+
+'t' +[K_BKSLASH] > 'ʈ'                  c U+0288 ʈ
+'ʈ' +[K_BKSLASH] > 't̪'                  c U+0074 U+032a
+'t̪' +[K_BKSLASH] > 't'                  c back to t
+
+'d' +[K_BKSLASH] > 'ɖ'                  c U+0256 ɖ
+'ɖ' +[K_BKSLASH] > 'ɗ'                  c U+0257 ɗ
+'ɗ' +[K_BKSLASH] > 'ᶑ'                  c U+1d91
+'ᶑ' +[K_BKSLASH] > 'd' U+032a           c U+0064 U+032a d̪
+'d' U+032a +[K_BKSLASH] > 'd'           c back to d
+
+'n' +[K_BKSLASH] > 'ɳ'                  c U+0273 ɳ
+'ɳ' +[K_BKSLASH] > 'ŋ'                  c U+014b ŋ
+'ŋ' +[K_BKSLASH] > 'ɲ'                  c U+0272  ɲ
+'ɲ' +[K_BKSLASH] > 'n̪'                  c U+006e U+032a n̪
+'n̪' +[K_BKSLASH] > 'n'                  c back to n   
+
+'s' +[K_BKSLASH] > U+0283               c U+0283 ʃ
+'ʃ' +[K_BKSLASH] > U+0282               c U+0282 ʂ
+'ʂ' +[K_BKSLASH] > U+0255               c U+0255 ɕ
+U+0255 +[K_BKSLASH] > 's'               c back to s
+
+'v' +[K_BKSLASH] > 'ʋ'                  c U+028b ʋ
+'ʋ' +[K_BKSLASH] > 'v'                  c back to v
+
+'h' +[K_BKSLASH] > 'ʰ'                  c U+02b0 ʰ
+'ʰ' +[K_BKSLASH] > 'ɦ'                  c U+0266 ɦ
+'ɦ' +[K_BKSLASH] > 'h'                  c back to h
+
++[RALT SHIFT K_BKQUOTE] > '~'           c ~ NON-COMBINING TILDE
+'~' +[K_BKSLASH] > U+0303               c ̃  COMBINING TILDE e.g. [a\\~] > ɑ̃, [u\~] > ʊ̃
+U+0303 +[K_BKSLASH] > '~'               c ~ NON-COMBINING TILDE
+c EOF
+c Done till d D
