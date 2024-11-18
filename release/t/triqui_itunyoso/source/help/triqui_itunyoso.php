@@ -4,7 +4,7 @@
   require_once('header.php');
 ?>
 
-<h1>Instrucciones para el Teclado de Triqui de Itunyoso</h1>
+<h2>Instrucciones para el Teclado de Triqui de Itunyoso</h2>
 
 <p>
    Escribiendo con el Teclado de Triqui de Itunyoso:
