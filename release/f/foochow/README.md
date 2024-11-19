@@ -6,8 +6,8 @@ Description
 foochow for east-hokkienese hók-ciŭ-uâ.福州話閩東語羅馬字輸入法
 
 Links
------
 Keyboard Homepage: https://keyman.com/keyboards/foochow
+-----
 
 Copyright
 ---------
