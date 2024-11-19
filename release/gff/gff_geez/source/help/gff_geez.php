@@ -316,7 +316,7 @@ Type the number that corresponds to the qirts that you want and it will appear a
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

@@ -1,6 +1,9 @@
 gff_amharic Change History
 ==========================
 
+3.1.2 (29 Oct 2024)
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
 
 3.1.1 (6 April 2023)
 --------------------

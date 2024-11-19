@@ -1,6 +1,10 @@
 gff_harari Change History
 ==========================
 
+1.0.5 (29 Oct 2024)
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
 1.0.4 (11 Jul 2023)
 -------------------
 * Fix for a => አ, aa => ኣ

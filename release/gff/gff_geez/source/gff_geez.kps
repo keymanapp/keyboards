@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>..\..\..\shared\gff\sideimage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Geʾez Keyboard</Folder>
@@ -50,10 +51,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">GFF Geʾez Keyboard</Name>
-    <Copyright URL="">© 2009-2023 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
-    <Description>This is a Geʾez (ግዕዝ) language keyboard where the letters available are
+    <Description URL="">This is a Geʾez (ግዕዝ) language keyboard where the letters available are
 restricted to \*only\* those used in the Geʾez language. The additional
 letters used in modern Ethiopic languages are \*not\* available from the
 keyboard. Thus these letters cannot be accidentally typed when composing
@@ -121,20 +122,20 @@ a Geʾez language document.</Description>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL (Connected)</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILConnected-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Connected</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternate1-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL Alternate 1</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternateOne-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate One</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternate2-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL Alternate 2</Description>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternateTwo-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate Two</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -161,17 +162,20 @@ a Geʾez language document.</Description>
     <Keyboard>
       <Name>ግዕዝ (Geʾez)</Name>
       <ID>gff_geez</ID>
-      <Version>2.0</Version>
-      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
+      <Version>2.0.2</Version>
       <Languages>
         <Language ID="gez">Geez</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Ethi\web\NotoSerifEthiopic-Regular.woff2"/>
+        <Font Filename="..\..\..\shared\fonts\noto\Ethi\NotoSerifEthiopic-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff_gez_7" Relationship="deprecates" />
-    <RelatedPackage ID="gff-gez-7" Relationship="deprecates" />
-    <RelatedPackage ID="gff-gez-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_gez_7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff-gez-7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff-gez-powerpack-7" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

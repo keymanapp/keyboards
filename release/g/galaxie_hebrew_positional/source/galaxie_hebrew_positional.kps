@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -67,6 +67,24 @@ ancient Near East and the language of the Hebrew Bible</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</Name>
+      <Description>Font KbdHebr Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\EzraSIL_Licenses.txt</Name>
+      <Description>File EzraSIL_Licenses.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</Name>
+      <Description>Font Ezra SIL</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -74,12 +92,14 @@ ancient Near East and the language of the Hebrew Bible</Description>
       <ID>galaxie_hebrew_positional</ID>
       <Version>2.3</Version>
       <RTL>True</RTL>
+      <OSKFont>..\..\..\shared\fonts\kbd\kbdhebr\KbdHebr-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\ezra\SILEOT.ttf</DisplayFont>
       <Languages>
-        <Language ID="hbo-Hebr">Ancient Hebrew (Hebrew)</Language>
+        <Language ID="hbo">Ancient Hebrew</Language>
         <Language ID="he">Hebrew</Language>
       </Languages>
       <Examples>
-        <Example ID="hbo-Hebr" Keys="b \\ = r @ a v ! y t" Text="בְּרֵאשִׁית" Note="&quot;In the beginning&quot; or &quot;Genesis&quot;"/>
+        <Example ID="hbo" Keys="b \\ = r @ a v ! y t" Text="בְּרֵאשִׁית" Note="&quot;In the beginning&quot; or &quot;Genesis&quot;"/>
       </Examples>
     </Keyboard>
   </Keyboards>

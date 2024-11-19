@@ -269,13 +269,13 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-This keyboard was created by the Geʾez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
+This keyboard was created by the Geʾez Frontier Foundation.  SIL Global graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2023 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright Geʾez Frontier Foundation and SIL Global.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>

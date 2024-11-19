@@ -5,8 +5,8 @@
     $style = <<<END
     p { font: 12pt Khmer Mondulkiri; }
 	ul { font: 12pt Khmer Mondulkiri; }
-    h1 { font: bold 16pt Khmer Mondulkiri; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 14pt Khmer Mondulkiri; color: #4444cc; }
+    h2 { font: bold 16pt Khmer Mondulkiri; color: #4444cc; margin-bottom: 2px }
+    h3 { font: bold 14pt Khmer Mondulkiri; color: #4444cc; }
 END;
   
   require_once('header.php');
@@ -26,14 +26,14 @@ END;
 	</ul>
 </p>
 
-<h1>ប្លង់ក្ដារចុច</h1>
-	<h2>ប្លង់ក្ដារចុចសម្រាប់កុំព្យូទ័រ</h2>
+<h2>ប្លង់ក្ដារចុច</h2>
+	<h3>ប្លង់ក្ដារចុចសម្រាប់កុំព្យូទ័រ</h3>
 <div id='osk' data-states='default shift'>
 </div>
 
-	<h2>ប្លង់ក្ដារចុចសម្រាប់ទូរសព្ទ</h2>
+	<h3>ប្លង់ក្ដារចុចសម្រាប់ទូរសព្ទ</h3>
 <div id='osk-phone' data-states='default shift symbol'>
 
-	<h2>ប្លង់ក្ដារចុចសម្រាប់ថេប្លេត</h2>
+	<h3>ប្លង់ក្ដារចុចសម្រាប់ថេប្លេត</h3>
 <div id='osk-tablet' data-states='default shift'>
 </div>
