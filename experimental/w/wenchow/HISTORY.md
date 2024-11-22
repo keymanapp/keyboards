@@ -1,6 +1,11 @@
 wenchow Change History
 ====================
 
+1.1.4 (2024-11-19)
+----------------
+* Updated by cathaylab
+* added new layers in touch-layout
+
 1.1.3 (2024-11-06)
 ----------------
 * Updated by cathaylab
