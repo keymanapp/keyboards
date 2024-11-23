@@ -1,5 +1,9 @@
 Laz Change History
 ====================
+1.0.4 (2024-11-22)
+----------------
+* Changed letters to use cohesive Unicode for carons
+
 1.0.3 (2024-06-27)
 ----------------
 * Update keyboard to support '
