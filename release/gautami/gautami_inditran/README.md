@@ -1,13 +1,13 @@
-Laz keyboard
+Gautami IndiTran keyboard
 ==============
 
 Description
 -----------
-Keyboard for the Laz [lzz] language of Turkey.
+This keyboard is for IPA transcription and IAST/ISO-15919 transliteration of Indian languages and scripts.
 
 Links
 -----
-https://keyman.com/keyboards/laz
+Keyboard Homepage: https://keyman.com/keyboards/gautami_inditran
 
 Copyright
 ---------
@@ -19,11 +19,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
  * Desktop devices
- * Tablet devices
-
+ 
