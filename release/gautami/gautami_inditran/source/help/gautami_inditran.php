@@ -12,7 +12,7 @@
 
 <h2>Transliteration Keymap</h2>
 
-<p><a href="translit.png"><span style='text-decoration:none'><img border=3 img width=60% src="translit.png" alt="Transliteration Keymap"></span></a></p>
+<p><a href="translit.png"><span style='text-decoration:none'><img border=3 img width=90% src="translit.png" alt="Transliteration Keymap"></span></a></p>
 
 <p> Use the PERIOD key [.] to get a dot above/below or a ring below a character, e.g. &nbsp r [.] > ṛ &nbsp ṛ [.] > r̥ &nbsp n [.] > ṅ &nbsp ṅ [.] > ṇ <br> m [.] > ṁ &nbsp ṁ [.] > ṃ &nbsp t [.] > ṭ &nbsp g [.] > ġ etc.
 <br>Use the HYPHEN key [-] to get a macron above or a line below a character or pair of characters, e.g. &nbsp a [-] > ā &nbsp l [-] > ḻ &nbsp t [-] > ṯ <br> y [-] > ȳ &nbsp kh [-] > k͟h.
@@ -24,8 +24,7 @@
 
 <p><b>To access IPA transcription symbols press [\] after typing any base character, e.g. &nbsp a [\] > ə, &nbsp ə [\] > ɑ, &nbsp ɑ [\] > ä.</b></p>
 
-<p><a href="transcrip.png"><span style='text-decoration:none'><img border=3
-img width=60% src="transcrip.png" alt="Transcription Keymap"></span></a></p>
+<p><a href="transcrip.png"><span style='text-decoration:none'><img border=3 img width=90% src="transcrip.png" alt="Transcription Keymap"></span></a></p>
 <p><b>Pressing down and holding the Right-Alt key switches the keyboard back to its original QWERTY configuration</b>, e.g. <br> [o~] > õ, but typing o and then holding down the Right-Alt key while typing ~ yields o~.</p>
 <br> 
 </body>
