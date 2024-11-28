@@ -1,6 +1,10 @@
 Gautami Thamizh/Tamil Change History
 ====================
 
+1.0.3 (2024-11-28)
+-----------------
+* Updated documentation
+
 1.0.2 (2024-10-28)
 -----------------
 * Redefined lowercase [x] as a toggle key with outputs dk() and க்ஷ.
