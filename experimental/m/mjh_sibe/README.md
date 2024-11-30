@@ -1,13 +1,13 @@
-MJH Hudum keyboard
+MJH Sibe keyboard
 ==============
 
 Description
 -----------
-MJH Hudum keyboard.
+MJH Sibe keyboard.
 
 Links
 -----
-Keyboard Homepage: https://https://github.com/keymanapp/keyboards/tree/master/experimental/m/mjh_hudum
+Keyboard Homepage: https://https://github.com/keymanapp/keyboards/tree/master/experimental/m/mjh_sibe
 
 Copyright
 ---------

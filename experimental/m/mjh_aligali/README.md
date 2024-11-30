@@ -1,13 +1,13 @@
-MJH Hudum keyboard
+MJH Ali Gali keyboard
 ==============
 
 Description
 -----------
-MJH Hudum keyboard.
+MJH Ali Gali keyboard.
 
 Links
 -----
-Keyboard Homepage: https://https://github.com/keymanapp/keyboards/tree/master/experimental/m/mjh_hudum
+Keyboard Homepage: https://https://github.com/keymanapp/keyboards/tree/master/experimental/m/mjh_aligali
 
 Copyright
 ---------
