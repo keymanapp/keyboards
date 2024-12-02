@@ -1,7 +1,7 @@
 Lisu Basic (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This keyboard is a mnemonic Lisu keyboard layout following a QWERTY key arrangement.
