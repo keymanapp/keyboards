@@ -1,7 +1,7 @@
 Aramaic (Hebrew layout) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 Aramaic (Hebrew layout) is designed for use with Aramaic, Syriac and related languages.
