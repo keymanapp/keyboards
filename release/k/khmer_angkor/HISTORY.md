@@ -1,6 +1,14 @@
 Khmer Angkor Change History
 =======================
 
+2.0 (02 Dec 2024)
+----------------
+* update touch layout with flick gesture
+* add shift and western layer 
+* add indepentdent vowels to numeric layer 
+* update English documentation 
+* change KbdKhmr to Khmer_busra_kbd font to support hint on mobile layour
+
 1.5 (3 Jul 2024)
 ----------------
 * Update keyboard to support OSK font for better display
