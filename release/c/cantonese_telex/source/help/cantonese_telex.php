@@ -16,10 +16,10 @@
    <p> tone 2 = r, tone 3 =s, tone 4 = f, tone 5 = x, tone 6 = j <p>
     examples: 舉例： <p>
     <p> ar > ả, as > á, af > à, ax > ã, aj > ạ <p>
-    <p> 譬如話：‘梁’ 嘅羅馬字係‘lẻung’， 輸入內容係‘leungr’<p>
+    <p> 譬如話：‘兩’ 嘅羅馬字係‘lẻung’， 輸入內容係‘leungr’<p>
     <img src='leung.png' alt='Keyboard Layout'>
     <p> New Alphabet: 特別字母<p>
-    <p> a> â（元音短a), aa > a, oo > ô, ou > ô, uw > ư, ow > ơ, ee > ê <p>
+    <p> a> â（元音短a), aa > a, oo > ô, ou > ô, uw > ư, ow > ơ, ee > ê <p> 
     <p> 雙擊音調鍵同特殊轉化鍵，取消轉化，變返原本嘅拼寫 <p>
     <p> doubletaping leads to generate original letters:  <p>
     <p> example:舉例：<p>
@@ -39,6 +39,10 @@
 
 <p><b>音調tones</b></p>
 <img src='tones.png' alt='Keyboard Layout'>
+
+<p><b>粵語國語字字典Dictionary for Cantonese Gwók Yữ Zị</b></p>
+
+<a href="https://github.com/Cathaylaboratory/gwokyuzi/blob/main/gwokyuzi.dic.yaml">粵語國語字字典dictionary for Cantonese Gwok Yu Zi</a>
 
 <!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
 
