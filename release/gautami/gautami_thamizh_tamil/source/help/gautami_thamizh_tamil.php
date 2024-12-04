@@ -1,4 +1,8 @@
-<body>
+<?php
+  $pagename = 'Gautami Thamizh/Tamil Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
 
 <p>Copyright (c) 2024 Gautam Sengupta [gsghyd@gmail.com]</p>
 <h2>Vowels</h2>
@@ -19,4 +23,3 @@ The key x serves three functions: (1) it breaks a toggle cycle and moves the cur
 
 <h2>Keyboard Layout (shifted)</h2>
 <p><a href="LayoutU_S.png"><span style='text-decoration:none'><img border=3 img width="90%" src="LayoutU_S.png" alt="Shifted Keyboard Layout"></span></a></p>
-</body>
