@@ -2,7 +2,6 @@
 
 ## 3.0.3 (3 Dec 2024)
 * Update language tags
-* Change numeric layer on mobile to stay on numeric and not revert to default layer
 * Update documentation for punctuation
 ## 3.0.2 (12 Apr 2024)
 * Change blank keys on currency layer to spacers
