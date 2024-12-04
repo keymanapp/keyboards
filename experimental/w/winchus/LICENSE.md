@@ -1,7 +1,10 @@
-(español abajo)
-MODIFIED MIT License (MIT)
+The MIT License (MIT)
 
-© 2024 SIL
+Copyright © 2024 SIL Global
+
+(español abajo)
+(This license has been slighltly modified from the standard MIT License, 
+removing the permission to sell copies of the software.)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,8 +29,10 @@ SOFTWARE.
 Licencia MIT MODIFICADO
 
 TRADUCCIÓN NO OFICIAL
+(Esta licencia ha sido levemente modificada, omitiendo el permiso de vender 
+copias del software.)
 
-© 2024 SIL
+Copyright © 2024 SIL Global
 
 Por la presente se concede permiso, libre de cargos, a cualquier persona que 
 obtenga una copia de este software y de los archivos de documentación 
