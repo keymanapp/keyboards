@@ -1,6 +1,11 @@
 Jarai ចារាយ (SIL) Change History
 ====================
 
+1.2 (05 Dec 2024)
+------------------
+* Fixed tofu OSK
+* Added quotation​ marks and some vowels to desktop layout  
+
 1.1.1 (30 Oct 2024)
 ------------------
 * Changed display font for .kvks
