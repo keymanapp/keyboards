@@ -1,9 +1,7 @@
 Indonesian-Suku Basic keyboard
 ==============================
 
-© 2020-2021 Benny Lin
-
-Version 1.0
+© Benny Lin
 
 Description
 -----------

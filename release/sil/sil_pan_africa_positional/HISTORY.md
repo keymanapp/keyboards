@@ -1,6 +1,10 @@
 Pan Africa Positional (SIL) Keyboard Change History
 =======================
 
+1.2.1 2024-Dec-2
+---------------
+* Update language tag for fub
+
 1.2 2024-Sep-12
 ---------------
 * Remove .js file from .kps so there are no expectations of Mobile support

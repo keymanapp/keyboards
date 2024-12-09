@@ -1,8 +1,6 @@
 # Harege Fidelat (ሐረገ ፊደላት) Keyboard
 
-Copyright © 2022-2023 Geʾez Frontier Foundation
-
-Version 1.1
+Copyright © Geʾez Frontier Foundation
 
 This is a language-neutral touch (only) keyboard for mobile devices. The keyboard provides all Ethiopic letters in active use on a single layer in a circular, semi-clockwise orientation. It is meant to be intuitive for new typists but supports faster typing for experienced typists compared to the similar [Mesobe Fidelat Keyboard](https://github.com/keymanapp/keyboards/tree/master/release/gff/gff_mesobe_fidelat) keyboard.
 

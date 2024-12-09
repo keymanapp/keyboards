@@ -3,7 +3,7 @@ Gautami Thamizh/Tamil keyboard
 
 Description
 -----------
-This is a QWERTY-based keyboard for Thamizh/Tamil with easy-to-remember key assignments suitable for beginners with limited knowledge of the Tamil writing system. It is phonetic: typing k will get you க. But it is not alphabetic. It follows the aksara-based Brahmi orthographic convention of omitting consonant-inherent schwas. The Tamil word பகடி is typed as pkTi, not pakaTi.
+This is a QWERTY-based keyboard for Thamizh/Tamil with easy-to-remember key assignments suitable for beginners with limited knowledge of the Tamil writing system. It is phonetic: typing k will get you க. It is, however, not alphabetic. It follows the aksara-based Brahmi orthographic convention of omitting the implicit/inherent அ/ə/a in consonants. The Tamil word பகடி is typed as pkTi, not pakaTi.
 
 Links
 -----
