@@ -1,6 +1,10 @@
 Jarai ចារាយ (SIL) Change History
 ====================
 
+1.2.1 (10 Dec 2024)
+------------------
+* Updated images in welcome.html
+
 1.2 (05 Dec 2024)
 ------------------
 * Fixed tofu OSK
