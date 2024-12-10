@@ -6,7 +6,7 @@ Khmer Angkor Change History
 * update touch layout with flick gesture
 * add shift and western layer 
 * add indepentdent vowels to numeric layer 
-* update English documentation 
+* update English and Khmer documentation 
 
 1.5 (3 Jul 2024)
 ----------------
