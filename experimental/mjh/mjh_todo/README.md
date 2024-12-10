@@ -7,7 +7,7 @@ MJH Todo keyboard.
 
 Links
 -----
-Keyboard Homepage: https://https://github.com/keymanapp/keyboards/tree/master/experimental/m/mjh_todo
+Keyboard Homepage: https://keyman.com/keyboards/mjh_todo
 
 Copyright
 ---------
