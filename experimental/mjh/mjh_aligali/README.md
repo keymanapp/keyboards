@@ -7,7 +7,7 @@ MJH Ali Gali keyboard.
 
 Links
 -----
-Keyboard Homepage: https://https://github.com/keymanapp/keyboards/tree/master/experimental/m/mjh_aligali
+Keyboard Homepage: https://keyman.com/keyboards/mjh_aligali
 
 Copyright
 ---------
