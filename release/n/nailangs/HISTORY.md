@@ -1,6 +1,10 @@
 Nailangs Change History
 =======================
 
+1.3.3 (2024-12-03)
+----------------
+* Fixed language tags
+
 1.3.2 (1 Sep 2022)
 -------------------
 * Update to better support KeymanWeb

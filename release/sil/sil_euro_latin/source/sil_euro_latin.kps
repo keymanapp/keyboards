@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">EuroLatin (SIL)</Name>
-    <Copyright URL="">Copyright (c) SIL International</Copyright>
-    <Description>The EuroLatin keyboard enables you to type in all European languages
+    <Copyright URL="">Copyright (c) SIL Global</Copyright>
+    <Description URL="">The EuroLatin keyboard enables you to type in all European languages
 which use Latin-script, and most Latin-script languages from the rest of
 the world. If you need a simple solution for typing multiple
 Latin-script languages from the same keyboard, this keyboard was
@@ -166,7 +167,7 @@ The EuroLatin keyboard is ideal for:
     <Keyboard>
       <Name>EuroLatin (SIL)</Name>
       <ID>sil_euro_latin</ID>
-      <Version>2.0.1</Version>
+      <Version>3.0.3</Version>
       <OSKFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</DisplayFont>
       <Languages>
@@ -242,11 +243,11 @@ The EuroLatin keyboard is ideal for:
         <Language ID="frp">Arpitan</Language>
         <Language ID="frr">Northern Frisian</Language>
         <Language ID="frs">Eastern Frisian</Language>
-        <Language ID="fub">Adamawa Fulfulde</Language>
+        <Language ID="fub-Latn">Adamawa Fulfulde</Language>
         <Language ID="ff">Fulah</Language>
         <Language ID="fue">Borgu Fulfulde</Language>
         <Language ID="fuf">Pular</Language>
-        <Language ID="fuh-Latn">Western Niger Fulfulde</Language>
+        <Language ID="fuh">Western Niger Fulfulde</Language>
         <Language ID="fuq">Central-Eastern Niger Fulfulde</Language>
         <Language ID="fur">Friulian</Language>
         <Language ID="fuv">Nigerian Fulfulde</Language>
@@ -294,7 +295,7 @@ The EuroLatin keyboard is ideal for:
         <Language ID="ktu">Kituba (Democratic Republic of Congo)</Language>
         <Language ID="kw">Cornish</Language>
         <Language ID="la">Latin</Language>
-        <Language ID="lad">Ladino</Language>
+        <Language ID="lad-Latn">Ladino</Language>
         <Language ID="lb">Luxembourgish</Language>
         <Language ID="li">Limburgan</Language>
         <Language ID="lij">Ligurian</Language>
@@ -434,7 +435,7 @@ The EuroLatin keyboard is ideal for:
         <Language ID="snf">Noon</Language>
         <Language ID="spq">Loreto-Ucayali Spanish</Language>
         <Language ID="sq">Albanian</Language>
-        <Language ID="sr">Serbian</Language>
+        <Language ID="sr-Latn">Serbian</Language>
         <Language ID="srm">Saramaccan</Language>
         <Language ID="srn">Sranan Tongo</Language>
         <Language ID="sro">Campidanese Sardinian</Language>
@@ -446,7 +447,7 @@ The EuroLatin keyboard is ideal for:
         <Language ID="svc">Vincentian Creole English</Language>
         <Language ID="swg">Swabian</Language>
         <Language ID="sw">Swahili (macrolanguage)</Language>
-        <Language ID="sxu">Upper Saxon</Language>
+        <Language ID="sxu-Latn">Upper Saxon</Language>
         <Language ID="szl">Silesian</Language>
         <Language ID="tcs">Torres Strait Creole</Language>
         <Language ID="tk">Turkmen</Language>
@@ -488,9 +489,9 @@ The EuroLatin keyboard is ideal for:
         <Language ID="zax">Xadani Zapotec</Language>
         <Language ID="zca">Coatecas Altas Zapotec</Language>
         <Language ID="zea">Zeeuws</Language>
-        <Language ID="zhd">Dai Zhuang</Language>
+        <Language ID="zhd-Latn">Dai Zhuang</Language>
         <Language ID="zhn">Nong Zhuang</Language>
-        <Language ID="zlj">Liujiang Zhuang</Language>
+        <Language ID="zlj-Latn">Liujiang Zhuang</Language>
         <Language ID="zoo">Asunción Mixtepec Zapotec</Language>
         <Language ID="zpa">Lachiguiri Zapotec</Language>
         <Language ID="zpb">Yautepec Zapotec</Language>
@@ -537,9 +538,9 @@ The EuroLatin keyboard is ideal for:
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="european" Relationship="deprecates" />
-    <RelatedPackage ID="european2" Relationship="deprecates" />
+    <RelatedPackage ID="european" Relationship="deprecates"/>
+    <RelatedPackage ID="european2" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
