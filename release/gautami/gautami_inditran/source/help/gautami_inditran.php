@@ -8,9 +8,7 @@
   require_once('header.php');
 ?>
 
-<body>
-
-<p>Copyright (c) 2024 Gautam Sengupta [gsghyd@gmail.com]</p>
+<p>Copyright (c) Gautam Sengupta [gsghyd@gmail.com]</p>
 
 <h2>Transliteration Keymap</h2>
 
@@ -29,4 +27,3 @@
 <p><a href="transcrip.png"><span style='text-decoration:none'><img border=3 img width=95% src="transcrip.png" alt="Transcription Keymap"></span></a></p>
 <p><b>Pressing down and holding the Right-Alt key switches the keyboard back to its original QWERTY configuration</b>, e.g. [o~]&nbsp>&nbspõ, but typing o and then holding down the Right-Alt key while typing ~ yields o~.</p>
 <br> 
-</body>
