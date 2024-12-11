@@ -1,6 +1,10 @@
 Polytonic Greek (SIL) Keyboard Change History
 =======================
 
+1.8.1 (11 Dec 2024)
+-----------------
+* Update eta longpress for acute
+
 1.8 (17 Sept 2024)
 -----------------
 * Add tablet and phone layouts
