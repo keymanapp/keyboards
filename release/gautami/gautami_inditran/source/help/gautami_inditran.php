@@ -1,10 +1,11 @@
 <?php
   $pagename = 'Gautami IndiTran';
   $pagetitle = $pagename;
-  $style = p {
+  $style = "
+      p {
 	  width: 95%;
 	  margin-bottom: 6px;
-  }
+      }";
   require_once('header.php');
 ?>
 
