@@ -1,6 +1,10 @@
 Shan (SIL) Keyboard Change History
 =======================
 
+1.4.1 (2024-12-12)
+------------------
+* Update Padauk font
+
 1.4 (20 Sept 2021)
 -----------------
 * Add tablet layout

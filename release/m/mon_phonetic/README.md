@@ -3,8 +3,6 @@ Mon (Phonetic) keyboard
 
 © Anonta Mon
 
-Version 1.0
-
 Description
 -----------
 

@@ -3,8 +3,6 @@
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
-
-
 ?>
 
 <p>
@@ -590,6 +588,3 @@
 				</tr>							
 				</table>
 				<br />
-		
-	</div>
-</div>

@@ -1,9 +1,7 @@
 Myanmar (Phonetic order) Basic keyboard
 ==============
 
-© 2019-2020 SIL International
-
-Version 1.2
+© SIL International
 
 Description
 -----------

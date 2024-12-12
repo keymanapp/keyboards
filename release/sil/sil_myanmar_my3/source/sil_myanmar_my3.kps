@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.118.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Myanmar3 (SIL)</Name>
-    <Copyright URL="">© 2015-2021 SIL International</Copyright>
-    <Description>This keyboard is designed for typing in the Myanmar (Burmese) language.
+    <Copyright URL="">© SIL Global</Copyright>
+    <Description URL="">This keyboard is designed for typing in the Myanmar (Burmese) language.
 The Keyman keyboard is an updated and modified version of the Myanmar3
 keyboard layout originally developed by Myanmar NLP on MSKLC software.</Description>
   </Info>
@@ -164,9 +165,9 @@ keyboard layout originally developed by Myanmar NLP on MSKLC software.</Descript
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="myanmar" Relationship="deprecates" />
-    <RelatedPackage ID="burmese02" Relationship="deprecates" />
+    <RelatedPackage ID="myanmar" Relationship="deprecates"/>
+    <RelatedPackage ID="burmese02" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

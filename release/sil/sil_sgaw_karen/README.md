@@ -1,9 +1,7 @@
 Sgaw Karen keyboard
 ==============
 
-© 2020 -2022 SIL International
-
-Version 1.1
+© SIL Global
 
 Description
 -----------

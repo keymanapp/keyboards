@@ -7,7 +7,6 @@
 
 ?>
 
-<h1>တႆး Shan Keyboard</h1>
 <h2 style="color:blue;">Desktop</h2>
   <h2><img src="shan-1.jpg" alt="" height="297" width="875" border="0" /></h2>
   <b>1. The Shan keyboard layout</b>
