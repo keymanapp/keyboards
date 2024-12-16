@@ -1,9 +1,7 @@
 <?php
   $pagename = 'Gautami Thamizh/Tamil';
   $pagetitle = $pagename;
-  $style = p {
-	  width: 95%;
-  }
+  $style = "p { width: 95%; }";
   require_once('header.php');
 ?>
 <body>
