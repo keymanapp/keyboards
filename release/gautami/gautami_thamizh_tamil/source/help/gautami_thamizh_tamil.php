@@ -1,12 +1,14 @@
 <?php
   $pagename = 'Gautami Thamizh/Tamil';
   $pagetitle = $pagename;
-  $style = "p { width: 95%; }";
+  $style = "
+      p {
+	  width: 95%;
+      }";
   require_once('header.php');
 ?>
-<body>
 
-<p>Copyright (c) 2024 Gautam Sengupta [gsghyd@gmail.com]</p>
+<p>Copyright (c) Gautam Sengupta [gsghyd@gmail.com]</p>
 <h2>Vowels</h2>
 
 <p><a href="vowels.png"><span style='text-decoration:none'><img border=3 img width="95%" src="vowels.png" alt="Vowels"></span></a></p>
@@ -23,4 +25,4 @@
 
 <h2>Keyboard Layout (shifted)</h2>
 <p><a href="LayoutU_S.png"><span style='text-decoration:none'><img border=3 img width="95%" src="LayoutU_S.png" alt="Shifted Keyboard Layout"></span></a></p>
-</body>
+
