@@ -5,9 +5,6 @@
   require_once('header.php');
 ?>
 
-
-<h1>Start Using Sgaw Karen</h1>
-
 <p>
     This keyboard is designed for S’gaw Karen (Kayin, ကညီ) language spoken in Myanmar and many other countries.
 </p>

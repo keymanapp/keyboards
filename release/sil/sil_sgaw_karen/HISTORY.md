@@ -1,6 +1,10 @@
 Sgaw Karen Change History
 ====================
 
+1.1.1 (2024-12-12)
+------------------
+* Update Padauk font
+
 1.1 (2022-11-08)
 ----------------
 * replace the single quotes on the equal key with = and + on Default and Shift layers of the computer layout respectively
