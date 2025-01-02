@@ -1,8 +1,6 @@
 Triqui Itunyoso
 ==============
 
-Version 1.0
-
 Description
 -----------
 
@@ -11,6 +9,7 @@ Este es un teclado móvil para Triqui de Itunyoso.
 This is a mobile keyboard for Itunyoso Triqui. 
 
 -----
+https://keyman.com/keyboards/triqui_itunyoso
 
 Copyright
 ---------

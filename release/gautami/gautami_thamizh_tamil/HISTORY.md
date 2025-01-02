@@ -1,8 +1,12 @@
 Gautami Thamizh/Tamil Change History
 ====================
 
+1.0.3 (2024-12-03)
+------------------------
+* Documentation updated
+
 1.0.2 (2024-10-28)
------------------
+------------------------
 * Redefined lowercase [x] as a toggle key with outputs dk() and க்ஷ.
 * Assigned க்ஷ to uppercase [X] as well
 * Redefined lowercase [l] to output the single akshara ல.

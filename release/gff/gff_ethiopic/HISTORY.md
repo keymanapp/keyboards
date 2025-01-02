@@ -1,5 +1,9 @@
 # gff_ethiopic Change History
 
+1.0.3 (2024-12-03)
+----------------
+* Fixed language tags
+
 1.0.2 (29 Oct 2024)
 --------------------
 * Abyssinica SIL TypeTuned fonts were renamed.

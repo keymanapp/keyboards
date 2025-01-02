@@ -1,7 +1,7 @@
 Pan Africa Mnemonic (SIL) Keyboard
 =====================
 
-Copyright (C) SIL International
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This is the mnemonic version of the Pan Africa (SIL) keyboard. It features a layout that adjusts 
