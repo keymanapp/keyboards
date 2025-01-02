@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <GraphicFile>..\smsc_logo.png</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder>Dakota_SMSC</Folder>
+    <AddUninstallEntry/>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Version URL="">1.5</Version>
+    <Name URL="">SMSC</Name>
+    <Copyright URL="">Copyright © Shakopee Mdewakanton Sioux Community 2024</Copyright>
+    <Author URL="mailto:Amy.Butani@ShakopeeDakota.org">Amy Butani</Author>
+    <WebSite URL="https://keyman.com/">https://keyman.com/</WebSite>
+    <Description URL="">This keyboard has been created by and for Shakopee Mdewakanton Sioux Community Dakota language speakers.
+The SMSC is a federally recognized, sovereign Indian tribe located southwest of Minneapolis/St. Paul. With a focus on being a good neighbor, good steward of the earth, and good employer, the SMSC is committed to charitable donations, community partnerships, a healthy environment, and a strong economy.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>dakota_smsc.ico</Name>
+      <Description>File dakota_smsc.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+    <File>
+      <Name>..\build\dakota_smsc.js</Name>
+      <Description>File dakota_smsc.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\dakota_smsc.kvk</Name>
+      <Description>File dakota_smsc.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\dakota_smsc.kmx</Name>
+      <Description>Keyboard SMSC</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\smsc_logo.png</Name>
+      <Description>File smsc_logo.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>SMSC</Name>
+      <ID>dakota_smsc</ID>
+      <Version>1.5</Version>
+      <Languages>
+        <Language ID="dak">Dakota</Language>
+      </Languages>
+      <Examples>
+        <Example ID="dak" Keys="\" Text="ŋ" Note="Windows: \ is not available on the Dakota keyboard"/>
+        <Example ID="dak" Keys="|" Text="Ŋ" Note="Windows: | is not available on the Dakota keyboard"/>
+        <Example ID="dak" Keys="`" Text="◌̇" Note="Windows: The &quot;`&quot; key will add an overdot to any letter."/>
+        <Example ID="dak" Keys="=" Text="◌́" Note="Windows: The &quot;=&quot; key will add the accent to any letter."/>
+        <Example ID="dak" Keys="◌̇" Text="◌̇" Note="Mobile Devices: The ◌̇ key will add an overdot to any letter."/>
+        <Example ID="dak" Keys="◌́" Text="◌́" Note="Mobile Devices: The ◌́ key will add an accent to any letter."/>
+      </Examples>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
