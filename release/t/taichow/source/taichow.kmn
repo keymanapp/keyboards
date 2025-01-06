@@ -622,6 +622,8 @@ store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 'ö̀' + 'q' > 'ö́'
 'ố' + 'x' > 'ồ'
 'ồ' + 'q' > 'ố'
+'ś' + 'x' > 's̀'
+'s̀' + 'q' > 'ś'
 'ź' + 'x' > 'z̀'
 'z̀' + 'q' > 'ź'
 'ý' + 'x' > 'ỳ'
@@ -641,6 +643,8 @@ store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 'Ồ' + 'Q' > 'Ố'
 'Ź' + 'X' > 'Z̀'
 'Z̀' + 'Q' > 'Ź'
+'Ś' + 'X' > 'S̀'
+'S̀' + 'Q' > 'Ś'
 'Ý' + 'X' > 'Ỳ'
 'Ỳ' + 'Q' > 'Ý'
 'Ń' + 'X' > 'Ǹ'
@@ -658,6 +662,8 @@ store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 'Ồ' + 'q' > 'Ố'
 'Ź' + 'x' > 'Z̀'
 'Z̀' + 'q' > 'Ź'
+'Ś' + 'x' > 'S̀'
+'S̀' + 'q' > 'Ś'
 'Ý' + 'x' > 'Ỳ'
 'Ỳ' + 'q' > 'Ý'
 'Ń' + 'x' > 'Ǹ'
@@ -1683,3 +1689,47 @@ any(vowels) any(consonants) 'Y' + any(all_letters) > index(vowels, 1) index(cons
 "Éu" + "x" > "Èu"
 "ÈU" + "Q" > "ÉU"
 "ÉU" + "X" > "ÈU"
+
+"tsʽ" + "q" > "tśʽ"
+"tsʽ" + "x" > "ts̀ʽ"
+"Tsʽ" + "q" > "Tśʽ"
+"Tsʽ" + "x" > "Ts̀ʽ"
+"TSʽ" + "q" > "TŚʽ"
+"TSʽ" + "x" > "TS̀ʽ"
+"TSʽ" + "Q" > "TŚʽ"
+"TSʽ" + "X" > "TS̀ʽ"
+
+"ts̀ʽ" + "q" > "tśʽ"
+"tśʽ" + "x" > "ts̀ʽ"
+"Ts̀ʽ" + "q" > "Tśʽ"
+"Tśʽ" + "x" > "Ts̀ʽ"
+"TS̀ʽ" + "q" > "TŚʽ"
+"TŚʽ" + "x" > "TS̀ʽ"
+"TS̀ʽ" + "Q" > "TŚʽ"
+"TŚʽ" + "X" > "TS̀ʽ"
+
+'ś' + any(vowels) > 's'index(vowels_sac, 2)
+'s̀' + any(vowels) > 's'index(vowels_huyen, 3)
+'Ś' + any(vowels) > 'S'index(vowels_sac, 2)
+'S̀' + any(vowels) > 'S'index(vowels_huyen, 3)
+"ś" + "z" > "sź"
+"s̀" + "z" > "sz̀"
+"Ś" + "Z" > "SŹ"
+"S̀" + "Z" > "SZ̀"
+"Ś" + "z" > "Sź"
+"S̀" + "z" > "Sz̀"
+
+'śʽ' + any(vowels) > 'sʽ'index(vowels_sac, 3)
+'s̀ʽ' + any(vowels) > 'sʽ'index(vowels_huyen, 4)
+'Śʽ' + any(vowels) > 'Sʽ'index(vowels_sac, 3)
+'S̀ʽ' + any(vowels) > 'Sʽ'index(vowels_huyen, 4)
+"śʽ" + "z" > "sʽź"
+"s̀ʽ" + "z" > "sʽz̀"
+"Śʽ" + "Z" > "SʽŹ"
+"S̀ʽ" + "Z" > "SʽZ̀"
+"Śʽ" + "z" > "Sʽź"
+"S̀ʽ" + "z" > "Sʽz̀"
+'ź' + any(vowels) > 'z'index(vowels_sac, 2)
+'z̀' + any(vowels) > 'z'index(vowels_huyen, 3)
+'Ź' + any(vowels) > 'Z'index(vowels_sac, 2)
+'Z̀' + any(vowels) > 'Z'index(vowels_huyen, 3)
