@@ -77,6 +77,8 @@ c *******************************************************************
 store(vowels)                   'aeiouAEIOU'
 store(vowels_sac)               'áéíóúÁÉÍÓÚ'
 store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
+store(consonants) 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 
 
@@ -1635,6 +1637,49 @@ any(vowels) "M" + "m" > index(vowels, 1) "Mm"
 'kwô' + 'n' > 'kwön'
 'Hwô' + 'n' > 'Hwön'
 'Kwô' + 'n' > 'Kwön'
-
 'guo' + 'n' > 'gwön'
 'Guo' + 'n' > 'Gwön'
+
+any(vowels) any(consonants) any(vowels) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(vowels, 3) index(all_letters, 4)
+any(vowels) any(consonants) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8) index(all_letters, 9)
+
+any(vowels) any(consonants) + 'h' > index(vowels, 1) index(consonants, 2) 'h'
+any(vowels) any(consonants) + 'H' > index(vowels, 1) index(consonants, 2) 'H'
+any(vowels) any(consonants) any(consonants) + 'h' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'h'
+any(vowels) any(consonants) any(consonants) + 'H' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'H'
+
+any(vowels) any(consonants) 'y' + any(all_letters) > index(vowels, 1) index(consonants, 2) 'y' index(all_letters, 4)
+any(vowels) any(consonants) 'Y' + any(all_letters) > index(vowels, 1) index(consonants, 2) 'Y' index(all_letters, 4)
+
+
+"ào" + "q" > "áo"
+"áo" + "x" > "ào"
+"Ào" + "q" > "Áo"
+"Áo" + "x" > "Ào"
+"ÀO" + "Q" > "ÁO"
+"ÁO" + "X" > "ÀO"
+
+"èo" + "q" > "éo"
+"éo" + "x" > "èo"
+"Èo" + "q" > "Éo"
+"Éo" + "x" > "Èo"
+"ÈO" + "Q" > "ÉO"
+"ÉO" + "X" > "ÈO"
+
+"àu" + "q" > "áu"
+"áu" + "x" > "àu"
+"Àu" + "q" > "Áu"
+"Áu" + "x" > "Àu"
+"ÀU" + "Q" > "ÁU"
+"ÁU" + "X" > "ÀU"
+
+"èu" + "q" > "éu"
+"éu" + "x" > "èu"
+"Èu" + "q" > "Éu"
+"Éu" + "x" > "Èu"
+"ÈU" + "Q" > "ÉU"
+"ÉU" + "X" > "ÈU"
