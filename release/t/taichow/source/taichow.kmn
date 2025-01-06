@@ -1,16 +1,73 @@
 ﻿c taichow keyboard for romanized goetian Ng-Yüih-Nyü
-store(&VERSION) '10.0'
+store(&VERSION) '15.0'
 store(&NAME) 'taichow'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0.3'
+store(&KEYBOARDVERSION) '1.0.4'
 store(&TARGETS) 'any'
 store(&BITMAP) 'taichow.ico'
 store(&VISUALKEYBOARD) 'taichow.kvks'
 store(&LAYOUTFILE) 'taichow.keyman-touch-layout'
 
+
+c Note three entry points, rather than the traditional single entry point
+
 begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+c This tells Keyman which keys should have casing behavior applied
+store(&CasedKeys) [K_A] .. [K_Z]
+
+c We'll define some useful stores here
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    c Any time we get a new context, by mouse click, tap,
+    c cursor movement, new document, etc, we'll try and
+    c determine the best layer to use
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    c We get here after every keystroke and model action is processed
+
+    c Okay, let's stay on the numeric layer if we are there already
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+
+    c Don't swap off the caps lock layer automatically
+    if(&layer = 'caps') > context
+
+    c no other changes, so detect sentence or layer change, as long
+    c as the user hasn't attempted to change layer themselves.
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    c We have a shared group for the start of sentence detection now
+    c which will set the current layer according to the current context.
+
+    c Some common end-of-sentence punctuation
+    store(sentencePunctuation) '.?!'
+
+    c If we are at the start of a text field, we're at the 'start of a
+    c sentence', so we'll move to the Shift layer
+    nul > layer('shift')
+
+    c Otherwise, we'll move to the Shift layer only if we see end of a
+    c sentence followed by one or two spaces.
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+
+    c And because we haven't see any of these situations above, we'll
+    c move to the default layer. Note that this effectively drops us
+    c back to the default layer after every keystroke that isn't blocked
+    c by the `PostKeystroke` or early `detectStartOfSentence` rules.
+    nomatch > layer('default')
 
 group(main) using keys
+
 
 
 c *******************************************************************
@@ -63,6 +120,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'o' + 'n' > 'ön'
 'z' + 'q' > 'ź'
 'z' + 'x' > 'z̀'
+'s' + 'q' > 'ś'
+'s' + 'x' > 's̀'
 'y' + 'q' > 'ý'
 'y' + 'x' > 'ỳ'
 'ng' + 'q' > 'nǵ'
@@ -73,6 +132,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'm' + 'x' > 'm̀'
 'ü' + 'q' > 'ǘ'
 'ü' + 'x' > 'ǜ'
+'ö' + 'q' > 'ö́'
+'ö' + 'x' > 'ö̀'
 'ün' + 'q' > 'ǘn'
 'ün' + 'x' > 'ǜn'
 'ön' + 'q' > 'ö́n'
@@ -94,6 +155,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'O' + 'N' > 'ÖN'
 'Z' + 'Q' > 'Ź'
 'Z' + 'X' > 'Z̀'
+'S' + 'Q' > 'Ś'
+'S' + 'X' > 'S̀'
 'Y' + 'Q' > 'Ý'
 'Y' + 'X' > 'Ỳ'
 'NG' + 'Q' > 'NǴ'
@@ -104,6 +167,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'M' + 'X' > 'M̀'
 'Ü' + 'Q' > 'Ǘ'
 'Ü' + 'X' > 'Ǜ'
+'Ö' + 'Q' > 'Ö́'
+'Ö' + 'X' > 'Ö̀'
 'ÜN' + 'Q' > 'ǗN'
 'ÜN' + 'X' > 'ǛN'
 'ÖN' + 'Q' > 'Ö́N'
@@ -124,8 +189,12 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'O' + 'n' > 'Ön'
 'Z' + 'q' > 'Ź'
 'Z' + 'x' > 'Z̀'
+'S' + 'q' > 'Ś'
+'S' + 'x' > 'S̀'
 'Y' + 'q' > 'Ý'
 'Y' + 'x' > 'Ỳ'
+'Ng' + 'q' > 'Nǵ'
+'Ng' + 'x' > 'Ng̀'
 'NG' + 'q' > 'NǴ'
 'NG' + 'x' > 'NG̀'
 'N' + 'q' > 'Ń'
@@ -134,6 +203,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'M' + 'x' > 'M̀'
 'Ü' + 'q' > 'Ǘ'
 'Ü' + 'x' > 'Ǜ'
+'Ö' + 'q' > 'Ö́'
+'Ö' + 'x' > 'Ö̀'
 'Ün' + 'q' > 'Ǘn'
 'Ün' + 'x' > 'Ǜn'
 'Ön' + 'q' > 'Ö́n'
@@ -155,6 +226,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'ô' + 'o' > 'oo'
 'ź' + 'q' > 'zq'
 'z̀' + 'x' > 'zx'
+'ś' + 'q' > 'sq'
+'s̀' + 'x' > 'sx'
 'ý' + 'q' > 'yq'
 'ỳ' + 'x' > 'yx'
 'nǵ' + 'q' > 'ngq'
@@ -177,6 +250,8 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ô' + 'O' > 'OO'
 'Ź' + 'Q' > 'ZQ'
 'Z̀' + 'X' > 'ZX'
+'Ś' + 'Q' > 'SQ'
+'S̀' + 'X' > 'SX'
 'Ý' + 'Q' > 'YQ'
 'Ỳ' + 'X' > 'YX'
 'NǴ' + 'Q' > 'NGQ'
@@ -199,8 +274,12 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'Ô' + 'o' > 'Oo'
 'Ź' + 'q' > 'Zq'
 'Z̀' + 'x' > 'Zx'
+'Ś' + 'q' > 'Sq'
+'S̀' + 'x' > 'Sx'
 'Ý' + 'q' > 'Yq'
 'Ỳ' + 'x' > 'Yx'
+'Nǵ' + 'q' > 'Ngq'
+'Ng̀' + 'x' > 'Ngx'
 'NǴ' + 'q' > 'NGq'
 'NG̀' + 'x' > 'NGx'
 'Ń' + 'q' > 'Nq'
@@ -462,6 +541,7 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'M' + 'm' > 'M̌'
 'N' + 'n' > 'N̆'
 'NG' + 'g' > 'N̆G'
+'Ng' + 'g' > 'N̆g'
 'L' + 'l' > 'L̆'
 'W' + 'w' > 'W̆'
 
@@ -481,6 +561,7 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'M̌' + 'm' > 'Mm'
 'N̆' + 'n' > 'Nn'
 'N̆G' + 'g' > 'NGg'
+'N̆g' + 'g' > 'Ngg'
 'L̆' + 'l' > 'Ll'
 'W̆' + 'w' > 'Ww'
 
@@ -497,6 +578,7 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'M' + 'h' > 'M̆'
 'N' + 'h' > 'N̆'
 'NG' + 'h' > 'N̆G'
+'Ng' + 'h' > 'N̆g'
 'L' + 'h' > 'L̆'
 
 'm̆' + 'h' > 'mh'
@@ -512,6 +594,7 @@ store(vowels_huyen)             'àèìòùÀÈÌÒÙ'
 'M̆' + 'h' > 'Mh'
 'N̆' + 'h' > 'Nh'
 'N̆G' + 'h' > 'NGh'
+'N̆g' + 'h' > 'Ngh'
 'L̆' + 'h' > 'Lh'
 
 
@@ -1068,7 +1151,7 @@ any(vowels) "Ngu" + "a" > index(vowels, 1) "Ngua"
 'kʽu' + 'a' > 'kwʽa'
 'Kʽu' + 'e' > 'Kwʽe'
 'Kʽu' + 'a' > 'Kwʽa'
-'kʽu' + 'o' > 'Kwʽô' 
+'kʽu' + 'o' > 'kwʽô' 
 'Kʽu' + 'o' > 'Kwʽô' 
 
 'hu' + 'e' > 'hwe' 
@@ -1076,7 +1159,7 @@ any(vowels) "Ngu" + "a" > index(vowels, 1) "Ngua"
 'Hu' + 'e' > 'Hwe'
 'Hwe' + 'e' > 'Hue'
 'Hu' + 'a' > 'Hwa'
-'hu' + 'o' > 'Hwô' 
+'hu' + 'o' > 'hwô' 
 'Hu' + 'o' > 'Hwô' 
 
 'ngu' + 'e' > 'ngwe' 
@@ -1533,3 +1616,25 @@ any(vowels) "M" + "m" > index(vowels, 1) "Mm"
 'ÖN' + 'w' > 'ONw'
 'ÖN' + 'y' > 'ONy'
 'ÖN' + 'z' > 'ONz'
+
+'qu' + 'e' > 'que'
+'Qu' + 'e' > 'Que'
+'qu' + 'a' > 'qua'
+'Qu' + 'a' > 'Qua'
+'tio' + 'n' > 'tion'
+'tc' + 'h' > 'tch'
+'Tc' + 'h' > 'Tch'
+'cʽin' + 'a' > 'china'
+'Cʽin' + 'a' > 'China'
+'et' + 'h' > 'eth'
+'Et' + 'h' > 'Eth'
+'æn' + 's' > 'anes'
+'nto' + 'n' > 'nton'
+
+'hwô' + 'n' > 'hwön'
+'kwô' + 'n' > 'kwön'
+'Hwô' + 'n' > 'Hwön'
+'Kwô' + 'n' > 'Kwön'
+
+'guo' + 'n' > 'gwön'
+'Guo' + 'n' > 'Gwön'

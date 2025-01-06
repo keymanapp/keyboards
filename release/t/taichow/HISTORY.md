@@ -1,6 +1,12 @@
 taichow Change History
 ====================
 
+1.0.4 (2024-11-06)
+----------------
+* Updated by cathaylab
+* modified touch layout
+* added automatic uppercase
+
 1.0.3 (2024-08-25)
 ----------------
 * Updated by cathaylab
