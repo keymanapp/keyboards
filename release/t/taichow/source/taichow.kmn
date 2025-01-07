@@ -1704,6 +1704,26 @@ any(vowels) any(consonants) + 'H' > index(vowels, 1) index(consonants, 2) 'H'
 any(vowels) any(consonants) any(consonants) + 'h' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'h'
 any(vowels) any(consonants) any(consonants) + 'H' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'H'
 
+any(vowels) any(consonants) + 't' > index(vowels, 1) index(consonants, 2) 't'
+any(vowels) any(consonants) + 'T' > index(vowels, 1) index(consonants, 2) 'T'
+any(vowels) any(consonants) any(consonants) + 't' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'t'
+any(vowels) any(consonants) any(consonants) + 'T' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'T'
+
+any(vowels) any(consonants) + 'k' > index(vowels, 1) index(consonants, 2) 'k'
+any(vowels) any(consonants) + 'K' > index(vowels, 1) index(consonants, 2) 'K'
+any(vowels) any(consonants) any(consonants) + 'k' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'k'
+any(vowels) any(consonants) any(consonants) + 'K' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'K'
+
+any(vowels) any(consonants) + 'p' > index(vowels, 1) index(consonants, 2) 'p'
+any(vowels) any(consonants) + 'P' > index(vowels, 1) index(consonants, 2) 'P'
+any(vowels) any(consonants) any(consonants) + 'p' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'p'
+any(vowels) any(consonants) any(consonants) + 'P' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'P'
+
+any(vowels) any(consonants) + 's' > index(vowels, 1) index(consonants, 2) 's'
+any(vowels) any(consonants) + 'S' > index(vowels, 1) index(consonants, 2) 'S'
+any(vowels) any(consonants) any(consonants) + 's' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'s'
+any(vowels) any(consonants) any(consonants) + 'S' > index(vowels, 1) index(consonants, 2) index(consonants, 3)'S'
+
 any(vowels) any(consonants) 'y' + any(all_letters) > index(vowels, 1) index(consonants, 2) 'y' index(all_letters, 4)
 any(vowels) any(consonants) 'Y' + any(all_letters) > index(vowels, 1) index(consonants, 2) 'Y' index(all_letters, 4)
 
