@@ -7,7 +7,7 @@ SMSC Dakota Language Keyboard
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/final
+Keyboard Homepage: https://keyman.com/keyboards/dakota_smsc
 
 Copyright
 ---------
