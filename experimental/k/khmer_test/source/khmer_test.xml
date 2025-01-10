@@ -288,6 +288,7 @@
     </transformGroup>
 
     <transformGroup>
+        <!-- part of Case #4 -->
         <!-- consonant clusters 1st > 2nd series (with U+17BB) -->
         <transform from="($[c_combo_QA]\u{17D2}\u{17A2})\u{17BB}($[v_above])" to="$1\u{17CA}$2"/>
         <transform from="($[c_combo_QA]\u{17D2}\u{17A2})($[v_above])\u{17BB}" to="$1\u{17CA}$2"/>
@@ -341,8 +342,6 @@
         <!-- single consonants 2nd > 1st series (without U+17BB) -->
         <transform from="($[shiftable_c_2nd])\u{17CA}($[v_above])" to="$1\u{17C9}$2"/> <!-- change U+17CA to U+17C9 before the above vowel  -->
         <transform from="(\u{17D2}$[shiftable_c_2nd])\u{17CA}($[v_above])" to="$1"/> <!-- stop ស្រ៊ី  from becoming ស្រ៉ី  (ERROR!)-->
-        
-
     </transformGroup>
 
     <transformGroup>
@@ -460,8 +459,67 @@
         <!-- single consonants 2nd > 1st series (without U+17BB) -->
         <transform from="(\u{17D2}$[shiftable_c_2nd]\u{17CA}$[v_gen]$[v_pseudo])" to="$1"/>
         <transform from="($[shiftable_c_2nd])\u{17CA}($[v_gen]$[v_pseudo])" to="$1\u{17C9}$2"/> <!-- change U+17CA to U+17C9 before ាំ -->
-        
+    </transformGroup>
+
+    <transformGroup>
         <!-- SPECIAL CASE: the following clusters may accept either of the two consonant shifters. -->
+        <transform from="(\u{1794}\u{17D2}\u{1799}$[c_shifter])" to="$1" />
+        <transform from="(\u{179F}\u{17D2}\u{1794}$[c_shifter])" to="$1" />
+        <transform from="(\u{1786}\u{17D2}\u{1794}$[c_shifter])" to="$1" />
+        <transform from="(\u{1794}\u{17D2}\u{1799}$[c_shifter])" to="$1" />
+        <transform from="(\u{179F}\u{17D2}\u{1794}$[c_shifter])" to="$1" />
+    </transformGroup>
+
+    <transformGroup>
+        <!-- single 1st > 2nd series (without U+17BB)  -->
+        <transform from="($[shiftable_c_1st])\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> <!-- change U+17C9 to U+17CA before the above vowel -->
+        <transform from="($[shiftable_c_1st])\u{17C9}($[v_gen]$[v_pseudo])" to="$1\u{17CA}$2"/> <!-- change U+17C9 to U+17CA before ាំ -->
+
+        <!-- consonant clusters 1st > 2nd series (without U+17BB) -->
+        <transform from="($[c_combo_QA]\u{17D2}\u{17A2})\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> 
+        <transform from="($[c_combo_QA]\u{17D2}\u{17A2})\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17CA}$2"/> 
+
+        <transform from="(\u{179B}\u{17D2}$[c_1st_combo_LO])\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> 
+        <transform from="(\u{179B}\u{17D2}$[c_1st_combo_LO])\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17CA}$2"/> 
+
+        <transform from="(\u{1798}\u{17D2}$[c_1st_combo_MO])\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> 
+        <transform from="(\u{1798}\u{17D2}$[c_1st_combo_MO])\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17CA}$2"/> 
+
+        <transform from="(\u{179F}\u{17D2}\u{1794}\u{17C9}$[v_above])" to="$1"/> <!-- prevent ស្ប៉ី from transforming to ស្ប៊ី -->
+        <transform from="(\u{179F}\u{17D2}\u{1794})\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17C9}$2"/> <!-- prevent ស្ប៉ាំ from transforming to ស្ប៊ាំ -->
+
+        <transform from="(\u{179F}\u{17D2}$[c_combo_SA])\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> 
+        <transform from="(\u{179F}\u{17D2}$[c_combo_SA])\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17CA}$2"/> 
+
+        <transform from="($[c_combo_HA]\u{17D2}\u{17A0})\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> 
+        <transform from="($[c_combo_HA]\u{17D2}\u{17A0})\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17CA}$2"/> 
+
+        <transform from="(\u{17A2}\u{17D2}\u{1784})\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> 
+        <transform from="(\u{17A2}\u{17D2}\u{1784})\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17CA}$2"/> 
+
+        <transform from="(\u{17A2}\u{17D2}\u{179C})\u{17C9}($[v_above])" to="$1\u{17CA}$2"/> 
+        <transform from="(\u{17A2}\u{17D2}\u{179C})\u{17C9}(\u{17B6}\u{17C6})" to="$1\u{17CA}$2"/> 
+    </transformGroup>
+
+    <transformGroup>
+        <!-- U+17B6 U+17BB and U+17C6 in that order preceeded by any first series consonant (cluster) are transformed to U+17CA U+17B6 and U+17C6 -->
+        <transform from="($[shiftable_c_1st])(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/> 
+        <transform from="($[shiftable_c_1st])\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/> 
+
+        <transform from="($[c_combo_QA]\u{17D2}\u{17A2})(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/> 
+        <transform from="($[c_combo_QA]\u{17D2}\u{17A2})\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/> 
+
+        <transform from="(\u{179B}\u{17D2}$[c_1st_combo_LO])(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/> 
+        <transform from="(\u{179B}\u{17D2}$[c_1st_combo_LO])\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/> 
+
+        <transform from="(\u{1798}\u{17D2}$[c_1st_combo_MO])(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/> 
+        <transform from="(\u{1798}\u{17D2}$[c_1st_combo_MO])\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/> 
+
+        <transform from="(\u{179F}\u{17D2}$[c_combo_SA])(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/> 
+        <transform from="(\u{179F}\u{17D2}$[c_combo_SA])\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/> 
+
+        <transform from="($[c_combo_HA]\u{17D2}\u{17A0})(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/> 
+        <transform from="($[c_combo_HA]\u{17D2}\u{17A0})\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/> 
 
     </transformGroup>
     
