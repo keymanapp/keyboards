@@ -1,6 +1,10 @@
 SIL Ethiopic Change History
 ===========================
 
+2.0.7 (2024-12-03)
+----------------
+* Fixed language tags
+
 2.0.6 (2024-09-16)
 -------------------
 * Removed .js from .kps so there are no expectations of working on mobile devices

@@ -29,7 +29,7 @@ code {
 }
 </style>
 
-<p style='margin:0px'>Keyboard © 2022-2023. Geʾez Frontier Foundation.</p>
+<p style='margin:0px'>Keyboard © Geʾez Frontier Foundation.</p>
 
 <br/>
 <a href="#Overview">Overview</a><br/>

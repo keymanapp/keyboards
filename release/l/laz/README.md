@@ -3,7 +3,7 @@ Laz keyboard
 
 Description
 -----------
-Keyboard for Laz [lzz] language of Turkey.
+Keyboard for the Laz [lzz] language of Turkey.
 
 Links
 -----
