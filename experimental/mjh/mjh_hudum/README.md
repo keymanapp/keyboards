@@ -7,7 +7,7 @@ MJH Hudum keyboard
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/mjh/mjh_hudum
+Keyboard Homepage: https://keyman.com/keyboards/mjh_hudum
 
 Copyright
 ---------
