@@ -3,11 +3,11 @@ MJH Hudum keyboard
 
 Description
 -----------
-MJH Hudum keyboard.
+MJH Hudum keyboard
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/mjh_hudum
+Keyboard Homepage: https://keyman.com/keyboards/mjh/mjh_hudum
 
 Copyright
 ---------
