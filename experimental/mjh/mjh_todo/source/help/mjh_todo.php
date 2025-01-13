@@ -6,7 +6,7 @@
 
 
 <p>
-    MJH Todo keyboard
+    MJH Todo keyboard.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

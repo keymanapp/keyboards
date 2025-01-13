@@ -3,7 +3,7 @@ MJH Sibe keyboard
 
 Description
 -----------
-MJH Sibe keyboard
+MJH Sibe keyboard.
 
 Links
 -----

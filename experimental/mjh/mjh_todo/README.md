@@ -3,7 +3,7 @@ MJH Todo keyboard
 
 Description
 -----------
-MJH Todo keyboard
+MJH Todo keyboard.
 
 Links
 -----

@@ -4,7 +4,7 @@
   require_once('header.php');
 ?>
 <p>
-  MJH Manchu  Keyboard
+  MJH Manchu keyboard.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>

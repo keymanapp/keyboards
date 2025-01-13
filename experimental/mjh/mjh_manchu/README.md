@@ -3,7 +3,7 @@ MJH Manchu keyboard
 
 Description
 -----------
-MJH Manchu keyboard
+MJH Manchu keyboard.
 
 Links
 -----
