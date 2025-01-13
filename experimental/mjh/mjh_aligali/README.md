@@ -3,7 +3,7 @@ MJH Ali Gali keyboard
 
 Description
 -----------
-MJH Ali Gali keyboard.
+MJH Ali Gali keyboard
 
 Links
 -----
