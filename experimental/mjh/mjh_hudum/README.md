@@ -3,7 +3,7 @@ MJH Hudum keyboard
 
 Description
 -----------
-MJH Hudum keyboard.
+MJH Hudum keyboard
 
 Links
 -----
