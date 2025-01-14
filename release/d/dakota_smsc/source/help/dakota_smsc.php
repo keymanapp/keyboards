@@ -251,7 +251,7 @@
         <li>
             <strong>Fonts:</strong>
             <div class="picture">
-                <img src="./CorrectFont.PNG" alt="Mobile Keyboard" style="width: 1000px; height: 100px;">
+                <img src="./CorrectFont.png" alt="Mobile Keyboard" style="width: 1000px; height: 100px;">
             </div>
         </li>
         <li>
