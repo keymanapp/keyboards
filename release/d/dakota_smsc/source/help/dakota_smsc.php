@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Using the Keyboard</title>
+﻿<?php
+  $pagename = 'SMSC Dakota Language Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
     <style>
           body {
             font-family: Tahoma, sans-serif;
@@ -62,10 +61,6 @@
         th {
             background-color: #f4f4f4;
         }
-    </style>
-</head>
-<body>
-    <h1>SMSC Dakota Language Keyboard</h1>
     <p>
         SMSC Dakota Orthology: The Shakopee Mdewakanton Sioux Community Dakota Language Keyboard was created using <a href="https://keyman.com/" target="_blank">Keyman</a>. The keyboard can be used on most devices, e.g. Windows, MacOS, iPhones, iPads, Android and others. To install and use the keyboard, follow these instructions.
     </p>
@@ -266,5 +261,3 @@
             </div>
         </li>
     </ul>
-</body>
-</html>
