@@ -5,7 +5,7 @@
 ?>
 
 <p>
-  MJH Ali Gali keyboard.
+  MJH Ali Gali keyboard
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
