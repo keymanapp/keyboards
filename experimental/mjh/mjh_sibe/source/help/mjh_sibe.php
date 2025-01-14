@@ -5,7 +5,7 @@
 ?>
 
 <p>
-  MJH Sibe keyboard.
+  MJH Sibe keyboard
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
