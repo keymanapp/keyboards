@@ -4,21 +4,6 @@
   require_once('header.php');
 ?>
     <style>
-          body {
-            font-family: Tahoma, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
         .note {
             font-style: italic;
             color: gray;
@@ -61,10 +46,13 @@
         th {
             background-color: #f4f4f4;
         }
+    </style>
+
     <p>
-        SMSC Dakota Orthology: The Shakopee Mdewakanton Sioux Community Dakota Language Keyboard was created using <a href="https://keyman.com/" target="_blank">Keyman</a>. The keyboard can be used on most devices, e.g. Windows, MacOS, iPhones, iPads, Android and others. To install and use the keyboard, follow these instructions.
+        The Dakota SMSC keyboard has been developed by the Shakopee Mdewakanton Sioux Community for use by all speakers of this dialect.
     </p>
-    <h1>Dakota Letters</h1>
+    <h2>Dakota Letters</h2>
+
     <table>
         <tr>
             <td>-</td>
@@ -103,47 +91,8 @@
             <td>-</td>
         </tr>
     </table>
-    <h1>Installation Instructions</h1>
-    <ol>
-        <li>
-            Download and install the <strong>Keyman</strong> application.
-            <ul>
-                <li>
-                    Links and instructions for different platforms are available at <a href="https://keyman.com/" target="_blank">Keyman.com</a> under the <strong>Products</strong> menu. Below are links for the most common platforms:
-                    <ul>
-                        <li>
-                            <strong>iOS <a href="https://apps.apple.com/us/app/keyman/id933676545?ls=1" target="_blank">Apple Store</a>:</strong>
-                            <div class="note">An issue with iOS 16 causes the Keyman system keyboard to not display unless "Allow Full Access" is enabled. Until the issue is addressed, this setting must be left in the "on" position for Keyman to operate normally. Open the 'Settings' App and go to 'General' > 'Keyboard'.</div>
-                        </li>
-                        <li>
-                            <strong>Android:</strong> <a href="https://play.google.com/store/apps/details?id=com.tavultesoft.kmapro&pli=1" target="_blank">Google Play</a>
-                        </li>
-                        <li>
-                            <strong>Windows:</strong> <a href="https://keyman.com/windows/download" target="_blank">Download Keyman for Windows 17.0</a>
-                            <ul>
-                                <li>
-                                    <strong>SMSC Employees:</strong> For Windows installation, once you've downloaded and saved both the Keyman application .exe and the keyboard .kmp files on your computer, call IT Support.
-                                </li>
-                                <li>
-                                    If one or more of the keys don't work correctly, “Hot Keys” may be in use on your computer. Your system administrator can check here: 'Advanced keyboard settings' > 'Input language hot keys' > 'Change Key Sequence', e.g., if you used the accent key to switch to another keyboard, change 'Grave Accent (`)' to 'Not assigned'.
-                                </li>
-                                <li>
-                                    Keyman can be found in your start menu (click on the Start button in the corner of your screen) or added to Windows Startup.
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Once installed, please power your device off and on before using the new keyboard.
-                </li>
-                <li>
-                    More information about using the keyboard can be found in the <a href="https://help.keyman.com/products/" target="_blank">Keyman Help</a>.
-                </li>
-            </ul>
-        </li>
-    </ol>
-    <h1>Using the Keyboard</h1>
+
+
     <h2>1. Mobile Devices:</h2>
     <ul>
         <li>There are 2 options to use the letters with diacritical marks:
