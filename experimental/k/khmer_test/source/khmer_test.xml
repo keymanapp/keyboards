@@ -259,17 +259,21 @@
   <transforms type="simple">
     <transformGroup>
         <!-- normal rule -->
+        <!-- Constraints -->
         <transform from="($[v_gen])\u{17cb}" to="$1" /><!-- no Bantoc after any genuine vowel   -->
         <transform from="($[v_pseudo])\u{17cb}" to="$1" /><!-- no Bantoc after any pseudo vowel -->
         <transform from="($[c_shifter])\u{17cb}" to="$1" /> <!-- no Bantoc after Triisap/Muusikatoan  -->
         <transform from="(\u{17D2}$[c_out])\u{17cb}" to="$1" /> <!-- no Bantoc on a subscript  -->
         <transform from="($[c_shifter])($[c_shifter])" to="$1" /> <!-- no two Triisap/Muusikatoan  -->
         
+        <transform from="\u{17D2}\u{178A}" to="\u{17D2}\u{178F}" /><!--@@ ceong da to ceong ta -->
+        
         <!-- rotation of ះ and ៈ -->
         <transform from="\u{17C7}ះ" to="\u{17C8}" />
         <transform from="\u{17C8}ះ" to="\u{17C7}" />
         <transform from="\u{200B}\u{200B}" to="\u{0020}" /><!-- press space twice to get white space -->
 
+        <!-- When pressing [K_U] after ាំ and ុំ, the U+17BB is converted to a respective consonant shifter placing before them (ាំ and ុំ) -->
         <!-- consonant shifter to fix ស ាំ ុ > ស៊ាំ  -->
         <transform from="($[shiftable_c_1st])\u{17B6}\u{17C6}\u{17BB}" to="$1\u{17CA}\u{17B6}\u{17C6}" /> 
         <!-- consonant shifter to fix ម ាំ  ុ > ម៉ាំ   -->
@@ -278,11 +282,21 @@
 
     <transformGroup>
         <!-- normalization -->
-        <!-- Illegitimate vowel combinations should be transformed to the legitimate ones (Case #6 and #7) -->
+        <transform from="\u{17D2}\u{1799}\u{17C1}\u{17BA}" to="\u{17BF}" /> <!-- េ្យឺ > ឿ -->
+        <transform from="\u{17D2}\u{1799}\u{17C1}\u{17B9}" to="\u{17BF}" /> <!-- េ្យឹ > ឿ -->
+        <transform from="\u{17D2}\u{1799}\u{17C1}\u{17B8}" to="\u{17BF}" /> <!-- េ្យី > ឿ -->
+
+        <transform from="\u{17D2}\u{1799}(\u{17D2}$[c_out])\u{17C1}\u{17BA}" to="$1\u{17BF}" /> <!-- គ្រេ្យឺង > គ្រឿង -->
+        <transform from="\u{17D2}\u{1799}(\u{17D2}$[c_out])\u{17C1}\u{17B9}" to="$1\u{17BF}" /> <!-- គ្រេ្យឹង > គ្រឿង -->
+        <transform from="\u{17D2}\u{1799}(\u{17D2}$[c_out])\u{17C1}\u{17B8}" to="$1\u{17BF}" /> <!-- គ្រេ្យីង > គ្រឿង -->
+
+        <!-- Case #6 and #7: Illegitimate vowel combinations should be transformed to the legitimate ones -->
         <transform from="\u{17C1}\u{17B6}" to="\u{17C4}" /><!-- េ +  ា =  ោ -->
         <transform from="\u{17B6}\u{17C1}" to="\u{17C4}" /><!-- ា +  េ =  ោ -->
         <transform from="\u{17C1}\u{17B8}" to="\u{17BE}" /><!-- េ +  ី =  ើ -->
         <transform from="\u{17B8}\u{17C1}" to="\u{17BE}" /><!-- ី +  េ =  ើ -->
+
+        <!-- Case #5: Illegitimate vowel combinations should be transformed to the legitimate ones -->
         <transform from="\u{17C6}\u{17BB}" to="\u{17BB}\u{17C6}" /><!-- ំ +  ុ =  ុំ -->
         <transform from="\u{17C6}\u{17B6}" to="\u{17B6}\u{17C6}" /><!-- ំ + ា =  ាំ -->
     </transformGroup>
@@ -345,8 +359,10 @@
     </transformGroup>
 
     <transformGroup>
-        <!-- Rotation of two-part vowels -->
+        <!-- Rotate vowels -->
         <transform from="($[v_gen])($[v_gen])" to="$2" /> <!-- the last vowel stroke replaces the previous one -->
+
+        <!-- Rotation of two-part vowels -->
         <transform from="($[v_gen])($[v_pseudo])($[v_gen])" to="$3" /> <!-- two-part vowel rotates to a genuine vowel -->
         <transform from="($[v_gen])($[v_pseudo])($[v_pseudo])" to="$3" /> <!-- two-part vowel rotates to a pseudo vowel -->
         <transform from="($[v_pseudo])($[v_gen])($[v_pseudo])" to="$2$3" /> <!-- a pseudo vowel roates to a two-part vowel -->
@@ -375,21 +391,20 @@
     </transformGroup>
 
     <transformGroup>
-        <transform from="(\u{17D2}\u{179A}$[v_any])\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1" /> <!-- fixed 6g -->
-        <transform from="(\u{17D2}\u{179A})($[v_combo_N]\u{17C6})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1$2" /> <!-- fixed 6g -->
-        <transform from="(\u{17D2}\u{179A})($[v_combo_R]\u{17C7})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1$2" /> <!-- fixed 6g -->
+        <transform from="(\u{17D2}\u{179A})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1" /> <!-- ្ដ placed after ្រ has to be changed to ្ត placed before ្រ -->
         
         <!-- Case #2: when [D2+9A] is typed before a subscript, it should be moved to after it. -->
         <transform from="\u{17D2}\u{178A}($[v_any])(\u{17D2}\u{179A})" to="\u{17D2}\u{178F}$2$1" /> <!-- fixed 6e -->
         <transform from="\u{17D2}\u{178A}($[v_combo_N]\u{17C6})(\u{17D2}\u{179A})" to="\u{17D2}\u{178F}$2$1" /> <!-- fixed 6e -->
         <transform from="\u{17D2}\u{178A}($[v_combo_R]\u{17C7})(\u{17D2}\u{179A})" to="\u{17D2}\u{178F}$2$1" /> <!-- fixed 6e -->
+
+        <transform from="(\u{17D2}\u{179A}$[v_any])\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1" /> <!-- fixed 6g -->
+        <transform from="(\u{17D2}\u{179A})($[v_combo_N]\u{17C6})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1$2" /> <!-- fixed 6g -->
+        <transform from="(\u{17D2}\u{179A})($[v_combo_R]\u{17C7})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1$2" /> <!-- fixed 6g -->
         
         <transform from="(\u{17D2}\u{179A}$[c_shifter])(\u{17D2}$[subcons])" to="$2$1"/> <!-- when a shifter intervenes, move it to the end -->
         <transform from="(\u{17D2}\u{179A})(\u{17D2}$[subcons])" to="$2$1"/> <!-- move any subscript placed after [D2+DA] to before them -->
-        <!-- 3 lines of code need to put before Case #1 -->
-        
-        <transform from="(\u{17D2}\u{179A})\u{17D2}\u{178A}" to="\u{17D2}\u{178F}$1" /> <!-- ្ដ placed after ្រ has to be changed to ្ត placed before ្រ -->
-        <transform from="\u{17D2}\u{178A}" to="\u{17D2}\u{178F}" /><!--@@ ceong da to ceong ta -->
+        <!-- 3 lines of code need to put before Case #1 --> 
     </transformGroup>
 
     <transformGroup>
@@ -521,9 +536,114 @@
         <transform from="($[c_combo_HA]\u{17D2}\u{17A0})(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/> 
         <transform from="($[c_combo_HA]\u{17D2}\u{17A0})\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/> 
 
+        <transform from="(\u{17A2}\u{17D2}\u{1784})(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/>
+        <transform from="(\u{17A2}\u{17D2}\u{1784})\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/>
+
+        <transform from="(\u{17A2}\u{17D2}\u{179C})(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17CA}$2$3"/>
+        <transform from="(\u{17A2}\u{17D2}\u{179C})\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17CA}$3$2"/>
+    </transformGroup>
+
+    <transformGroup>
+        <!-- U+17B6 U+17BB and U+17C6 in that order preceeded by any second series consonant (cluster) are transformed to U+17C9 U+17B6 and U+17C6 -->
+        <transform from="($[shiftable_c_2nd_with_BA])(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17C9}$2$3" />
+        <transform from="($[shiftable_c_2nd_with_BA])\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17C9}$3$2" />
+
+        <transform from="(\u{179B}\u{17D2}$[c_2nd_combo_LO])(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17C9}$2$3" />
+        <transform from="(\u{179B}\u{17D2}$[c_2nd_combo_LO])\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17C9}$3$2" />
+
+        <transform from="(\u{1798}\u{17D2}$[c_2nd_combo_MO])(\u{17B6})\u{17BB}(\u{17C6})" to="$1\u{17C9}$2$3" />
+        <transform from="(\u{1798}\u{17D2}$[c_2nd_combo_MO])\u{17BB}(\u{17C6})(\u{17B6})" to="$1\u{17C9}$3$2" />
+    </transformGroup>
+
+    <transformGroup>
+        <!-- េុី/ុេី/៉េី  > ៊ើ -->
+        <transform from="($[shiftable_c_1st])\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[shiftable_c_1st])\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[shiftable_c_1st])\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" />
+
+        <transform from="($[c_combo_QA]\u{17D2}\u{17A2})\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[c_combo_QA]\u{17D2}\u{17A2})\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[c_combo_QA]\u{17D2}\u{17A2})\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" />
+
+        <transform from="(\u{179B}\u{17D2}$[c_1st_combo_LO])\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{179B}\u{17D2}$[c_1st_combo_LO])\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{179B}\u{17D2}$[c_1st_combo_LO])\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> 
+
+        <transform from="(\u{1798}\u{17D2}$[c_1st_combo_MO])\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{1798}\u{17D2}$[c_1st_combo_MO])\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{1798}\u{17D2}$[c_1st_combo_MO])\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> 
+
+        <transform from="(\u{179F}\u{17D2}$[c_combo_SA])\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{179F}\u{17D2}$[c_combo_SA])\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{179F}\u{17D2}$[c_combo_SA])\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> 
+
+        <transform from="($[c_combo_HA]\u{17D2}\u{17A0})\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[c_combo_HA]\u{17D2}\u{17A0})\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[c_combo_HA]\u{17D2}\u{17A0})\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}" />
+        
+        <transform from="(\u{17A2}\u{17D2}\u{1784})\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}"/> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{17A2}\u{17D2}\u{1784})\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}"/> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{17A2}\u{17D2}\u{1784})\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}"/> 
+
+        <transform from="(\u{17A2}\u{17D2}\u{179C})\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17CA}\u{17BE}"/> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{17A2}\u{17D2}\u{179C})\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}"/> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{17A2}\u{17D2}\u{179C})\u{17C9}\u{17C1}\u{17B8}" to="$1\u{17CA}\u{17BE}"/> 
+    </transformGroup>
+
+    <transformGroup>
+        <!-- េុី/ុេី/៊េី  > ៉ើ -->
+        <transform from="($[shiftable_c_2nd])\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17C9}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[shiftable_c_2nd])\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17C9}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="($[shiftable_c_2nd])\u{17CA}\u{17C1}\u{17B8}" to="$1\u{17C9}\u{17BE}" />
+
+        <transform from="(\u{179B}\u{17D2}$[c_2nd_combo_LO])\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17C9}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{179B}\u{17D2}$[c_2nd_combo_LO])\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17C9}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{179B}\u{17D2}$[c_2nd_combo_LO])\u{17CA}\u{17C1}\u{17B8}" to="$1\u{17C9}\u{17BE}" /> 
+
+        <transform from="(\u{1798}\u{17D2}$[c_2nd_combo_MO])\u{17C1}\u{17BB}\u{17B8}" to="$1\u{17C9}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{1798}\u{17D2}$[c_2nd_combo_MO])\u{17BB}\u{17C1}\u{17B8}" to="$1\u{17C9}\u{17BE}" /> <!-- cancel out by vowel rotation -->
+        <transform from="(\u{1798}\u{17D2}$[c_2nd_combo_MO])\u{17CA}\u{17C1}\u{17B8}" to="$1\u{17C9}\u{17BE}" />
+    </transformGroup>
+
+    <transformGroup>
+        <!-- place Robat after a base before any vowel -->
+        <transform from="($[c_out])($[v_gen])(\u{17CC})" to="$1$3$2" />
+
+        <!-- BONUSES​(note that these combinations are invalid and they can't be found in the CN dictionary 1967 nor RH 1997, but users think they are) -->
+        <transform from="\u{1791}\u{17D2}\u{1794}" to="\u{17A1}" /> <!-- ទ្ប transforms to ឡ  -->
+
+        <transform from="\u{1794}\u{17D2}\u{1789}" to="\u{17AB}" /> <!-- ប្ញ transforms to ឫ -->
+        <transform from="\u{17AB}\u{17BB}" to="\u{17AC}" /> <!-- ឫុ transforms to ឬ -->
+
+        <transform from="\u{17AD}\u{17B6}" to="\u{1789}" /> <!-- ឭា transforms to ញ  -->
+        <transform from="\u{17AE}\u{17B6}" to="\u{1789}" /> <!-- ឮា transforms to ញ  -->
+
+        <transform from="\u{1796}\u{17D2}\u{1789}" to="\u{17AD}" /> <!-- ព្ញ transforms to ឭ -->
+        <transform from="\u{17AD}\u{17BB}" to="\u{17AE}" /> <!-- ឭុ transforms to ឮ -->
+
+        <transform from="\u{1796}\u{17D2}\u{178B}" to="\u{17B0}" /> <!-- ព្ឋ transforms to ឰ   -->
+
+        <transform from="\u{17A7}\u{17B7}" to="\u{17B1}" /> <!-- ឧិ transforms to ឱ  -->
+        <transform from="\u{17A7}\u{17CC}" to="\u{17B1}" /> <!-- ឧ៌ transforms to ឱ  -->
+        <transform from="\u{17A7}\u{17CD}" to="\u{17B1}" /> <!-- ឧ៍ transforms to ឱ  -->
+    </transformGroup>
+
+    <transformGroup>
+        <!-- U+17D4 U+179B U+17D4 > U+17D8 c ។ល។  transforms to U+17D8 -->
+        <transform from="\u{178A}\u{17D2}\u{1792}" to="\u{178A}\u{17D2}\u{178B}" /> <!-- ដ្ធ > ដ្ឋ -->
+        <transform from="\u{1791}\u{17D2}\u{178B}" to="\u{1791}\u{17D2}\u{1792}" /> <!-- ទ្ឋ > ទ្ធ -->
+
+        <!-- additional rules -->
+        <transform from="(\u{1796}\u{1793}\u{17D2})\u{178B}" to="$1\u{1792}" /> <!-- ពន្ឋ > ពន្ធ -->
+        <transform from="(\u{1796}\u{17D0}\u{1793}\u{17D2})\u{178B}" to="$1\u{1792}" /> <!-- ព័ន្ឋ > ព័ន្ធ -->
+
+        <transform from="\u{17AA}(\u{17D2}\u{1799})" to="\u{17B1}$1" /> <!-- ឪ្យ > ឱ្យ -->
+        <transform from="\u{17B3}(\u{17D2}\u{1799})" to="\u{17B1}$1" /> <!-- ឳ្យ > ឱ្យ -->
+
+        <transform from="\u{1789}(\u{17D2}\u{179C})" to="\u{1796}$1\u{17B6}" /> <!-- ញ្វ (as in សញ្វវុធ) > ព្វា as in សញ្វវុធ -->
+        <!-- 6 rules are before case #6 -->
     </transformGroup>
     
-
   </transforms>
 
   <transforms type="backspace">
@@ -533,7 +653,6 @@
         <transform from="$[v_combo_R]\u{17C7}" />
     </transformGroup>
   </transforms>
-
 
   <layers formId="us">
     <layer id="base" modifiers="none">
