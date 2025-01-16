@@ -1,6 +1,10 @@
 Myanmar (Phonetic order) Basic Change History
 ====================
 
+1.2.1 (2024-12-12)
+------------------
+* Update Padauk font
+
 1.2 (2020-11-03)
 ------------------
 * Add Padauk font to the package

@@ -1,6 +1,13 @@
 taigi viet telex Change History
 ====================
 
+3.0.1 (2025-1-3)
+----------------
+* Updated by cathaylab
+* added automatic uppercase
+* added more long-pressing keys in touch-layout
+* added more rules to avoid unexpected transformation
+
 3.0 (2024-10-31)
 ----------------
 * Updated by cathaylab
