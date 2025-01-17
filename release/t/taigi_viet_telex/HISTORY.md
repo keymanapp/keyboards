@@ -1,6 +1,11 @@
 taigi viet telex Change History
 ====================
 
+3.0.2 (2025-1-17)
+----------------
+* Updated by cathaylab
+* fixed a bug for generating tones for ng 
+
 3.0.1 (2025-1-3)
 ----------------
 * Updated by cathaylab
