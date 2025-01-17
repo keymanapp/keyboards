@@ -6,7 +6,7 @@ store(&TARGETS) 'any'
 store(&BITMAP) 'taigi_viet_telex.ico'
 store(&VISUALKEYBOARD) 'taigi_viet_telex.kvks'
 store(&LAYOUTFILE) 'taigi_viet_telex.keyman-touch-layout'
-store(&KEYBOARDVERSION) '3.0.1'
+store(&KEYBOARDVERSION) '3.0.2'
 
 
 c Note three entry points, rather than the traditional single entry point
@@ -469,12 +469,12 @@ any(no_t_consonants) 'S' any(all_letters) any(all_letters) + any(all_letters) > 
 any(no_t_consonants) 'S' any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_t_consonants, 1) 'S' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
 any(no_t_consonants) 'S' any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_t_consonants, 1) 'S' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
 any(no_t_consonants) 'S' any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(no_t_consonants, 1) 'S' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
-any(all_consonants) any(no_shg_consonants) + any(all_letters) > index(all_consonants, 1) index(no_shg_consonants, 2) index(all_letters, 3)
-any(all_consonants) any(no_shg_consonants) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shg_consonants, 2) index(all_letters, 3) index(all_letters, 4)
-any(all_consonants) any(no_shg_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shg_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
-any(all_consonants) any(no_shg_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shg_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
-any(all_consonants) any(no_shg_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shg_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
-any(all_consonants) any(no_shg_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shg_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(all_consonants) any(no_shgn_consonants) + any(all_letters) > index(all_consonants, 1) index(no_shgn_consonants, 2) index(all_letters, 3)
+any(all_consonants) any(no_shgn_consonants) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shgn_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+any(all_consonants) any(no_shgn_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(all_consonants) any(no_shgn_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(all_consonants) any(no_shgn_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(all_consonants) any(no_shgn_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(no_shgn_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
 
 'a' any(vowels) any(vowels) + any(all_letters) > 'a'index(vowels, 2) index(vowels, 3) index(all_letters, 4)
 'A' any(vowels) any(vowels) + any(all_letters) > 'A'index(vowels, 2) index(vowels, 3) index(all_letters, 4)
@@ -484,7 +484,6 @@ any(all_consonants) any(no_shg_consonants) any(all_letters) any(all_letters) any
 'oui' + any(all_letters) > 'oui'index(all_letters, 4)
 'Oui' + any(all_letters) > 'Oui'index(all_letters, 4)
 'OUI' + any(all_letters) > 'OUI'index(all_letters, 4)
-
 any(vowels) any(vowels) any(vowels) any(all_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5)
 any(vowels) any(vowels) any(vowels) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
 any(vowels) any(vowels) any(vowels) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(vowels, 2) index(vowels, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
@@ -512,18 +511,23 @@ any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letter
 any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7)
 any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
 any(vowels) any(all_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(all_consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8) index(all_letters, 9)
-
 any(all_consonants) any(un_second_consonants) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3)
 any(all_consonants) any(un_second_consonants) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4)
 any(all_consonants) any(un_second_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
 any(all_consonants) any(un_second_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, )
+any(all_consonants) 'n' + any(no_gn_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3)
+any(all_consonants) 'n' any(no_gn_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(all_consonants) 'n' any(no_gn_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(all_consonants, 1) 'n' index(no_gn_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
 
 c Vowels with tone numbers
 store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 store(all_consonants) 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
 store(no_t_consonants) 'bcdfghjklmnpqrsvwxyzBCDFGHJKLMNPQRSVWXYZ'
 store(no_ct_consonants) 'bdfghjklmnpqrsvwxyzBDFGHJKLMNPQRSVWXYZ'
-store(no_shg_consonants) 'bcdfjklmnpqrtvwxyzBCDFJKLMNPQRTVWXYZ'
+store(no_shgn_consonants) 'bcdfjklmpqrtvwxyzBCDFJKLMPQRTVWXYZ'
 store(used_consonants) 'bghjklmnpstBCDFGHJKLMNPST'
 store(h_consonants) 'chkptCHKPT'
 store(no_h_consonants) 'bdfgjlmnqrvwxyzBDFGJLMNQRVWXYZ'
@@ -532,7 +536,9 @@ store(ng_letters) 'abeghkmnopstABEGHKMNOPST'
 store(un_ng_letters) 'cdfijlqruvwxyzCDFIJLQRUVWXYZ'
 store(ng_consonants) 'bghkmnpstBGHKMNPST'
 store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789'
-store(un_second_consonants)'qrtpdfklcvbnmQRTPDFKLCVBNM'
+store(un_second_consonants)'qrtpdfklcvbmQRTPDFKLCVBM'
+
+store(no_gn_letters) 'abcdefhijklmopqrstuvwxyzABCDEFHIJKLMOPQRSTUVWXYZ'
 
 c Vowels with tone number s
 store(vowels) 'aiueoAIUEO'
