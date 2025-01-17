@@ -6,7 +6,7 @@
 
 <h2>Font</h2>
 <p style="text-align: justify;">
-The "Nubian (SIL)" keyboard is designed to work with the  <a href="https://software.sil.org/SophiaNubian" target=_blank>Sophia Nubian</a> 
+The "Nubian (SIL)" keyboard is designed to work with the  <a href="https://software.sil.org/sophianubian" target=_blank>Sophia Nubian</a> 
 font. However, you can use this keyboard with any Coptic  
 Unicode font.  
 </p>
