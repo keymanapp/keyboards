@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -19,7 +19,7 @@
   <Info>
     <Name URL="">Arabic W/O Dots</Name>
     <Copyright URL="">Copyright © 3ubaidUrRe7man</Copyright>
-    <Author URL="">3ubaidUrRe7man</Author>
+    <Author URL="mailto:3ubaidUrRe7man@murena.io">3ubaidUrRe7man</Author>
     <Description URL="">Arabic Alphabet without the dots like the Olden Days</Description>
     <Version URL=""></Version>
   </Info>
@@ -60,13 +60,24 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>Harmattan-Regular.ttf</Name>
+      <Description>Font Harmattan</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Arabic W/O Dots</Name>
       <ID>arabic_w_o_dots</ID>
       <Version>1.0</Version>
-      <Languages/>
+      <RTL>True</RTL>
+      <OSKFont>Harmattan-Regular.ttf</OSKFont>
+      <DisplayFont>Harmattan-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ar-Arab-001">Arabic (Arabic, World)</Language>
+      </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
