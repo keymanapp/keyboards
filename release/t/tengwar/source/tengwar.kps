@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -19,7 +20,7 @@
   <Info>
     <Name URL="">Tengwar</Name>
     <Copyright URL="">Copyright © 3ubaidUrRe7man</Copyright>
-    <Author URL="">3ubaidUrRe7man</Author>
+    <Author URL="mailto:3ubaidUrRe7man@murena.io">3ubaidUrRe7man</Author>
     <Description URL="">Tengwar</Description>
     <Version URL=""></Version>
   </Info>
@@ -60,13 +61,23 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>TengwarFormalCSUR.ttf</Name>
+      <Description>Font Tengwar Formal CSUR</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tengwar</Name>
       <ID>tengwar</ID>
       <Version>1.0</Version>
-      <Languages/>
+      <OSKFont>TengwarFormalCSUR.ttf</OSKFont>
+      <DisplayFont>TengwarFormalCSUR.ttf</DisplayFont>
+      <Languages>
+        <Language ID="tfb-Teng-001">tfb (Tengwar, World)</Language>
+      </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
