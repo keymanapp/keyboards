@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
@@ -60,13 +60,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>AmiriQuran-Regular.ttf</Name>
+      <Description>Font Amiri Quran Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>Amiri-Regular.ttf</Name>
+      <Description>Font Amiri Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Arabic OLPC</Name>
       <ID>arabic_olpc</ID>
       <Version>1.0</Version>
-      <Languages/>
+      <RTL>True</RTL>
+      <OSKFont>Amiri-Regular.ttf</OSKFont>
+      <DisplayFont>Amiri-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ar-Arab-001">Arabic (Arabic, World)</Language>
+      </Languages>
     </Keyboard>
   </Keyboards>
   <Strings/>
