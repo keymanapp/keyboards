@@ -5,7 +5,7 @@
 ?>
 
         <p>
-            The Sanskrit Library Phonetic ASCII package includes two keyboards:
+            The slp1_deva keyboard is one of two keyboards that are a part of The Sanskrit Library Phonetic ASCII package:
             one to enter Devanagari Unicode, the other to enter Roman Unicode
             with diacritics. These include all accents required for The R̥gveda.
             Both keymaps follow the Sanskrit Library ASCII encoding described in
@@ -16,3 +16,4 @@
             represented as in IAST without the macron. Capital characters are
             obtained by wrapping the character sequence in curly brackets.
         </p>
+        <p>This particular keyboard supports the Devanagari script.</p>
