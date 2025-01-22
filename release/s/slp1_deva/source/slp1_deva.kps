@@ -63,16 +63,22 @@
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\build\Sanskrit2020.ttf</Name>
-      <Description>Font Sanskrit 2020 Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\deva\sanskrit2020\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\deva\sanskrit2020\Sanskrit2020.ttf</Name>
+      <Description>Font Sanskrit 2020 Regular</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -80,12 +86,15 @@
       <Name>slp1_deva</Name>
       <ID>slp1_deva</ID>
       <Version>1.0</Version>
-      <OSKFont>..\build\Sanskrit2020.ttf</OSKFont>
-      <DisplayFont>..\build\Sanskrit2020.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\deva\sanskrit2020\Sanskrit2020.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\deva\sanskrit2020\Sanskrit2020.ttf</DisplayFont>
       <Languages>
         <Language ID="sa">Sanskrit</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="slp1_roman"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
