@@ -7,7 +7,7 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>..\build\TheSanskritLibrary.png</GraphicFile>
+    <GraphicFile>TheSanskritLibrary.png</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
     <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
@@ -23,7 +23,9 @@
     <Name URL="">slp1_roman</Name>
     <Copyright URL="">© The Sanskrit Library</Copyright>
     <Author URL="">The Sanskrit Library</Author>
-    <Description URL="">The Sanskrit Library Phonetic ASCII package includes two keyboards: one to enter Devanagari Unicode, the other to enter Roman Unicode with diacritics. These include all accents required for The R̥gveda. Both keymaps follow the Sanskrit Library ASCII encoding described in brief at https://sanskritlibrary.org/help-text.html, and in full in Linguistic Issues in Encoding Sanskrit, Appendix B available in a PDF linked to at the bottom of that webpage. The Romanization followed in the slp1_roman keyboard is ISO 15919 except e and o are represented as in IAST without the macron. Capital characters are obtained by wrapping the character sequence in curly brackets.</Description>
+    <Description URL="">The slp1_roman keyboard is one of two keyboards that are a part of The Sanskrit Library Phonetic ASCII package: one to enter Devanagari Unicode, the other to enter Roman Unicode with diacritics. These include all accents required for The R̥gveda. Both keymaps follow the Sanskrit Library ASCII encoding described in brief at https://sanskritlibrary.org/help-text.html, and in full in Linguistic Issues in Encoding Sanskrit, Appendix B available in a PDF linked to at the bottom of that webpage. The Romanization followed in the slp1_roman keyboard is ISO 15919 except e and o are represented as in IAST without the macron. Capital characters are obtained by wrapping the character sequence in curly brackets.
+
+This particular keyboard supports the Latin script.</Description>
   </Info>
   <Files>
     <File>
@@ -57,16 +59,16 @@
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\TheSanskritLibrary.png</Name>
-      <Description>File TheSanskritLibrary.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>TheSanskritLibrary.png</Name>
+      <Description>File TheSanskritLibrary.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -75,9 +77,12 @@
       <ID>slp1_roman</ID>
       <Version>1.0</Version>
       <Languages>
-        <Language ID="sa">Sanskrit</Language>
+        <Language ID="sa-Latn">Sanskrit (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="slp1_deva"/>
+  </RelatedPackages>
   <Strings/>
 </Package>

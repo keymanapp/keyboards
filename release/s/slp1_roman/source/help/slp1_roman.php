@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>slp1_roman</title>
-        <style type="text/css">
-            p {
-                font: 10pt Tahoma;
-            }
-            h1 {
-                font: bold 16pt Tahoma;
-                color: #4444cc;
-                margin-bottom: 2px;
-            }
-            h2 {
-                font: bold 12pt Tahoma;
-                color: #4444cc;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>slp1_roman</h1>
+<?php 
+  $pagename = 'slp1_roman Keyboard Help';
+  $pagetitle = $pagename;
+  require_once('header.php');
+?>
 
         <p>
             The slp1_roman keyboard is one of two keyboards that are a part of The Sanskrit Library Phonetic ASCII package:
@@ -28,7 +10,7 @@
             Devanagari Unicode. These include all accents required for The
             R̥gveda. Both keymaps follow the Sanskrit Library ASCII encoding
             described in brief at 
-            <a href="https://sanskritlibrary.org/help-text.html">https://sanskritlibrary.org/help-text.html</a>            ,
+            <a href="https://sanskritlibrary.org/help-text.html">https://sanskritlibrary.org/help-text.html</a>,
             and in full in Linguistic Issues in Encoding Sanskrit, Appendix B
             available in a PDF linked to at the bottom of that webpage. The
             Romanization followed in the slp1_roman keyboard is ISO 15919 except
@@ -37,7 +19,7 @@
             brackets. Contacts: info@sanskritlibrary.org
         </p>
         <p>This particular keyboard supports the Latin script.</p>
-        
-        <p>© The Sanskrit Library</p>
-    </body>
-</html>
+
+        <h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift'>
+</div>
