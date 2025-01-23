@@ -1,0 +1,181 @@
+﻿store(&COPYRIGHT) '© The Sanskrit Library'
+store(&KEYBOARDVERSION) '1.0'
+store(&BITMAP) 'slp1_deva.ico'
+store(&VISUALKEYBOARD) 'slp1_deva.kvks'
+store(&NAME) 'slp1_deva'
+store(&TARGETS) 'web desktop'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+store(vowels) U+0905 U+0906 U+0907 U+0908 U+0909 U+090A U+090B U+0960 U+090C U+0961 U+090F U+0910 U+0913 U+0914
+store(consonants) U+0915 U+0916 U+0917 U+0918 U+0919 U+091A U+091B U+091C U+091D U+091E U+091F U+0920 U+0922 U+0923 U+0933 U+0934 U+0924 U+0925 U+0926 U+0927 U+0928 U+092A U+092B U+092C U+092D U+092E U+092F U+0930 U+0932 U+0935 U+0936 U+0937 U+0938 U+0939
+store(extens) U+093E U+093F U+0940 U+0941 U+0942 U+0943 U+0944 U+0962 U+0963 U+0947 U+0948 U+094B U+094C
+
+store(vowels_set1) U+0905 U+0907 U+0909 U+090B U+090C
+store(vowels_set2) U+0906 U+0908 U+090A U+0960 U+0961 U+090F U+0910 U+091
+store(extens_set1) U+093F U+0941 U+0943 U+0962
+store(extens_set2) U+093E U+0940 U+0942 U+0944 U+0963 U+0947 U+0948 U+094B U+094C
+
+store(keys_vowels) U+0041 U+0069 U+0049 U+0075 U+0055 U+0066 U+0046 U+0078 U+0058 U+0065 U+0045 U+006F U+004
+store(keys_modifiers) U+005C U+005E U+007E
+store(modifiers) U+0952 U+0951 U+0901
+store(HZVM) [SHIFT K_H] [SHIFT K_Z] [SHIFT K_V] [SHIFT K_M]
+store(HZVM2) U+0903 U+1CF2 U+1CF2 U+0902
+
++ [K_1] > U+0967
++ [K_2] > U+0968
++ [K_3] > U+0969
++ [K_4] > U+096A
++ [K_5] > U+096B
++ [K_6] > U+096C
++ [K_7] > U+096D
++ [K_8] > U+096E
++ [K_9] > U+096F
++ [K_0] > U+0966
++ [K_QUOTE] > U+093D
++ [K_PERIOD] > U+0964
++ [SHIFT K_M] > U+0902
++ [SHIFT K_V] > U+1CF2
++ [SHIFT K_Z] > U+1CF2
++ [SHIFT K_H] > U+0903
++ [K_H] > U+0939 U+094D
++ [K_S] > U+0938 U+094D
++ [K_Z] > U+0937 U+094D 
++ [SHIFT K_S] > U+0936 U+094D
++ [K_V] > U+0935 U+094D
++ [K_L] > U+0932 U+094D
++ [K_R] > U+0930 U+094D
++ [K_Y] > U+092F U+094D
++ [K_M] > U+092E U+094D
++ [SHIFT K_B] > U+092D U+094D
++ [K_B] > U+092C U+094D
++ [SHIFT K_P] > U+092B U+094D
++ [K_P] > U+092A U+094D
++ [K_N] > U+0928 U+094D
++ [SHIFT K_D] > U+0927 U+094D
++ [K_D] > U+0926 U+094D
++ [SHIFT K_T] > U+0925 U+094D
++ [K_T] > U+0924 U+094D
++ [SHIFT K_BKSLASH] > U+0933 U+094D U+0939 U+094D
++ [SHIFT K_L] > U+0933 U+094D
++ [SHIFT K_R] > U+0923 U+094D
++ [SHIFT K_Q] > U+0926 U+094D
++ [K_Q] > U+0921 U+094D
++ [SHIFT K_W] > U+0920 U+094D
++ [K_W] > U+091F U+094D
++ [SHIFT K_Y] > U+091E U+094D
++ [SHIFT K_J] > U+091D U+094D
++ [K_J] > U+091C U+094D
++ [SHIFT K_C] > U+091B U+094D
++ [K_C] > U+091A U+094D
++ [SHIFT K_N] > U+0919 U+094D
++ [SHIFT K_G] > U+0918 U+094D
++ [K_G] > U+0917 U+094D
++ [SHIFT K_K] > U+0916 U+094D
++ [K_K] > U+0915 U+094D
++ [SHIFT K_O] > U+0914
++ [K_O] > U+0913
++ [SHIFT K_E] > U+0910
++ [K_E] > U+090F
++ [SHIFT K_X] > U+0961
++ [K_X] > U+090C
++ [SHIFT K_F] > U+0960
++ [K_F] > U+090B
++ [SHIFT K_U] > U+090A
++ [K_U] > U+0909
++ [SHIFT K_I] > U+0908
++ [K_I] > U+0907
++ [SHIFT K_A] > U+0906
++ [K_A] > U+0905
+
+
+any(consonants) U+094D + U+0061 > index(consonants, 1)
+
+any(consonants) U+094D + U+007E > index(consonants, 1) U+094D U+0901
+
+U+094D + any(keys_vowels) > index(extens, 2)
+
+U+0932 U+094D + U+007E > U+0932 U+094D U+0901
+U+092F U+094D + U+007E > U+092F U+094D U+0901
+U+0935 U+094D + U+007E > U+0935 U+094D U+0901
+
+any(consonants) any(extens) + any(keys_modifiers) > index(consonants, 1) index(extens, 2) index(modifiers, 3)
+any(consonants) + any(keys_modifiers) > index(consonants, 1) index(modifiers, 2)
+any(consonants) + U+002F > index(consonants, 1)
+
+any(consonants) any(extens) + any(hzvm) > index(consonants, 1) index(extens, 2) index(HZVM2, 3)
+any(vowels) + any(hzvm) > index(vowels, 1) index(HZVM2, 2)
+any(consonants) + any(hzvm) > index(consonants, 1) index(HZVM2, 2)
+ 
+any(vowels) + U+007E > index(vowels, 1) U+0901
+any(extens) + U+007E > index(extens, 1) U+0901
+
+any(vowels) + U+002F > index(vowels, 1)
+any(extens) + U+002F > index(extens, 1)
+
+any(vowels) + [K_BKSLASH] > index(vowels, 1) U+0952
+any(extens) + [K_BKSLASH] > index(extens, 1) U+0952
+
+any(vowels) U+0952 + U+007E > index(vowels, 1) U+0901 U+0952
+any(consonants) any(extens) U+0952 + U+007E > index(consonants, 1) index(extens, 2) U+0901 U+0952
+any(consonants) U+0952 + U+007E > index(consonants, 1) U+0901 U+0952
+
+any(vowels) + U+005E > index(vowels, 1) U+0951
+any(vowels) U+0951 + U+007E > index(vowels, 1) U+0901 U+0951
+any(consonants) any(extens) U+0951 + U+007E > index(consonants, 1) index(extens, 2) U+0901 U+0951
+any(consonants) U+0951 + U+007E > index(consonants, 1) U+0901 U+0951
+
+any(vowels_set1) U+0951 U+096F + U+0037 > index(vowels_set1, 1) U+0967 U+0951 U+0952
+any(vowels_set1) U+0967 U+0951 U+0952 + U+007E > index(vowels_set1, 1) U+0901 U+0967 U+0951 U+0952
+any(consonants) any(extens_set1) U+0951 U+096F + U+0037 > index(consonants, 1) index(extens_set1, 2) U+0967 U+0951 U+0952
+any(consonants) U+0951 U+096F + U+0037 > index(consonants, 1) U+0967 U+0951 U+0952
+any(consonants) any(extens_set1) U+0967 U+0951 U+0952 + U+007E > index(consonants, 1) index(extens_set1, 2) U+0901 U+0967 U+0951 U+0952
+any(consonants) U+0967 U+0951 U+0952 + U+007E > index(consonants, 1) U+0901 U+0967 U+0951 U+0952
+
+any(vowels_set2) U+0951 U+096F + U+0037 > index(vowels_set2, 1) U+0952 U+0969 U+0951 U+0952
+any(vowels_set2) U+0952 U+0969 U+0951 U+0952 + U+007E > index(vowels_set2, 1) U+0901 U+0952 U+0969 U+0951 U+0952
+any(consonants) any(extens_set2) U+0951 U+096F + U+0037 > index(consonants, 1) index(extens_set2, 2) U+0952 U+0969 U+0951 U+0952
+any(consonants) any(extens_set2) U+0952 U+0969 U+0951 U+0952 + U+007E > index(consonants, 1) index(extens_set2, 2) U+0901 U+0952 U+0969 U+0951 U+0952
+
+U+090F + U+0031 > U+090F U+0967
+U+090F U+0967 + U+007E > U+090F U+0901 U+0967
+U+090F U+0967 + U+005C > U+090F U+0952 U+0967
+U+090F U+0952 U+0967 + U+007E > U+090F U+0901 U+0952 U+0967
+U+090F U+0967 + U+005E > U+090F U+0951 U+0967
+U+090F U+0951 U+0967 + U+007E > U+090F U+0901 U+0951 U+0967
+U+090F U+0951 U+0967 U+096F + U+0037 > U+090F U+0967 U+0951 U+0952
+U+090F U+0967 U+0951 U+0952 + U+007E > U+090F U+0901 U+0967 U+0951 U+0952
+
+U+0913 + U+0031 > U+0913 U+0967
+U+0913 U+0967 + U+007E > U+0913 U+0901 U+0967
+U+0913 U+0967 + U+005C > U+0913 U+0952 U+0967
+U+0913 U+0952 U+0967 + U+007E > U+0913 U+0901 U+0952 U+0967
+U+0913 U+0967 + U+005E > U+0913 U+0951 U+0967
+U+0913 U+0951 U+0967 + U+007E > U+0913 U+0901 U+0951 U+0967
+U+0913 U+0951 U+0967 U+096F + U+0037 > U+0913 U+0967 U+0951 U+0952
+U+0913 U+0967 U+0951 U+0952 + U+007E > U+0913 U+0901 U+0967 U+0951 U+0952
+
+U+092F U+094D + U+005F > U+097A U+094D
+U+0935 U+094D + U+005F > U+0935 U+094D U+0935 U+094D
+
+U+0913 + U+004D > U+0950
+
+U+0964 + U+002E > U+0965
+
+any(consonants) any(extens) U+0951 + U+0048 > index(consonants, 1) index(extens, 2) U+0903 U+0951
+any(consonants) any(extens) U+0951 + U+004D > index(consonants, 1) index(extens, 2) U+0902 U+0951
+any(consonants) U+0951 + U+0048 > index(consonants, 1) U+0903 U+0951
+any(consonants) U+0951 + U+004D > index(consonants, 1) U+0902 U+0951
+
+any(consonants) any(extens) U+0952 + U+0048 > index(consonants, 1) index(extens, 2) U+0903 U+0952
+any(consonants) any(extens) U+0952 + U+004D > index(consonants, 1) index(extens, 2) U+0902 U+0952
+any(consonants) U+0952 + U+0048 > index(consonants, 1) U+0903 U+0952
+any(consonants) U+0952 + U+004D > index(consonants, 1) U+0902 U+0952
+
+any(vowels_set1) U+0967 U+0951 U+0952 + U+004D > index(vowels_set1, 1) U+0967 U+0951 U+0952 U+0902
+any(vowels_set2) U+0952 U+0969 U+0951 U+0952 + U+004D > index(vowels_set2, 1) U+0952 U+0969 U+0951 U+0952 U+0902
+any(consonants) any(extens_set1) U+0967 U+0951 U+0952 + U+004D > index(consonants, 1) index(extens_set1, 2) U+0967 U+094B U+0952 U+0902
+any(consonants) U+0967 U+0951 U+0952 + U+004D > index(consonants, 1) U+0967 U+0951 U+0952 U+0902
+any(consonants) any(extens_set2) U+0952 U+0969 U+0951 U+0952 + U+004D > index(consonants, 1) index(extens_set2, 2) U+0952 U+0969 U+0951 U+0952 U+0902
