@@ -1,4 +1,4 @@
-Easy Arabic Keyboard keyboard
+Easy Arabic
 ==============
 
 Description
@@ -7,7 +7,7 @@ Changes some keys to make it easier to type.
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/easy_arabic_keyboard
+Keyboard Homepage: https://keyman.com/keyboards/easy_arabic
 
 Copyright
 ---------

@@ -1,4 +1,4 @@
-Easy Arabic Keyboard Change History
+Easy Arabic Change History
 ====================
 
 1.0 (2025-01-20)
