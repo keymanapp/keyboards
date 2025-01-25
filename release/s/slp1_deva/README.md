@@ -11,6 +11,7 @@ Contacts: info@sanskritlibrary.org
 
 Links
 -----
+https://keyman.com/keyboards/slp1_deva
 
 Copyright
 ---------
