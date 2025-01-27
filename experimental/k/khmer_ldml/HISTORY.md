@@ -1,6 +1,6 @@
-khmer_test Change History
+khmer_ldml Change History
 ====================
 
-1.0.0 (2024-10-28)
+1.0.0 (2025-Jan-27)
 ----------------
 * Created by nyny

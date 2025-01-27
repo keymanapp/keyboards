@@ -1,4 +1,4 @@
-khmer_test keyboard
+khmer_ldml keyboard
 ==============
 
 Description
@@ -7,7 +7,7 @@ for Khmer script
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/khmer_test
+Keyboard Homepage: https://keyman.com/keyboards/khmer_ldml
 
 Copyright
 ---------
