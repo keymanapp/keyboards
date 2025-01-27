@@ -11,6 +11,7 @@ The Burushaski Girminas (بروشسکی) Perso/Arabic keyboard is designed for w
 
 Links
 -----
+https://keyman.com/keyboards/burushaski_girminas_perso_arabic
 
 Copyright (c) Quwat K. Sunny
 --------- 
