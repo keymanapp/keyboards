@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.288.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>splash.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -28,11 +29,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Vietnamese Telex</Name>
-    <Copyright URL="">© 2022 Mike Vo</Copyright>
+    <Copyright URL="">© Mike Vo</Copyright>
     <Author URL="mailto:info@miketvo.com">Mike Vo</Author>
     <Version URL=""></Version>
     <WebSite URL="https://miketvo.com">https://miketvo.com</WebSite>
-    <Description>Telex or TELEX (Vietnamese: Quốc ngữ điện tín, lit. \'national language
+    <Description URL="">Telex or TELEX (Vietnamese: Quốc ngữ điện tín, lit. \'national language
 telex\'), is a convention for encoding Vietnamese text in plain ASCII
 characters. Originally used for transmitting Vietnamese text over telex
 systems, it is one of the most used input method on phones and
@@ -148,7 +149,7 @@ Vietnam as part of TCVN 5712.</Description>
     <Keyboard>
       <Name>Vietnamese Telex</Name>
       <ID>vietnamese_telex</ID>
-      <Version>1.05</Version>
+      <Version>1.6.0</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Latn\NotoSans-Regular.ttf</DisplayFont>
       <Languages>
@@ -156,8 +157,8 @@ Vietnam as part of TCVN 5712.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="vietnamese_telex_legacy" Relationship="deprecates" />
+    <RelatedPackage ID="vietnamese_telex_legacy" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
