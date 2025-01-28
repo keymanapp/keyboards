@@ -1,8 +1,7 @@
 Rachitrali-Shina Keyboard Data
 ------------------------------
 
-Copyright:      (C) 2018-2019 Rehmat Aziz Chitrali
-Version:        1.01
+Copyright:      (C) Rehmat Aziz Chitrali
 
 Description
 -----------
