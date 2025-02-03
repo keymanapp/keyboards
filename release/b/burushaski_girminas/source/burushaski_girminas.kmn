@@ -23,6 +23,7 @@ store( longvowels )  U+0101  U+0113 U+012B  U+014D U+016B U+0100 U+0112 U+012A U
 store(consonants)       'c'  's'                         'C'         'S'
 store(acuteconsonant)  U+0107  U+015B             U+0106     U+015A
 
+
 c for accute and long vowels 
 
 "," + any( plainvowels ) > index( acutevowels, 2 )
@@ -68,3 +69,6 @@ c for accute and long vowels
 "." + "Z" >  U+1E92  C Capitalization of the same rule 
 
 "." + "h" >  U+02B0  c
+">" + ">" >  U+2192 C  arrow right for words →
+"<" + "<" >  U+2190 C  arrow left for words ← 
+
