@@ -3,7 +3,9 @@ khmer_ldml keyboard
 
 Description
 -----------
-for Khmer script
+This Khmer LDML keyboard is based on the Khmer Angkor keyboard for the Khmer script. 
+Currently, it is not supported on mobile devices. For full compatibility across all devices, 
+please refer to the Khmer Angkor keyboard. 
 
 Links
 -----
@@ -19,11 +21,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
+
 
