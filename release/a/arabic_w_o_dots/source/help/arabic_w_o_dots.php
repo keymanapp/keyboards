@@ -34,7 +34,8 @@
     <ul>In case of dotless Baa'"ب", double tap for Baa'"ب", swipe up for Taa'"ت" and swipe down for Thaa'"ث".</ul>
     <ul>In case of "ح", swipe up for Khaa'"خ" and swipe down for Jeem"ج".</ul>
     <ul>In case of dot".", swipe up is Fatha, swipe down is Kasra, swipe right is Damma, and swipe left is Sukuun.</ul>
-    <ul>In case of comma"،", swipe up is 'Fathataan', swipe down is 'Kasrataan', swipe right is 'Dammataan', and swipe left is 'Shadda'. In case of Question mark"؟", swipe up is Small 'Alif' above and swipe down is small 'Alif' below.</ul>
+    <ul>In case of comma"،", swipe up is 'Fathataan', swipe down is 'Kasrataan', swipe right is 'Dammataan', and swipe left is 'Shadda'.</ul>
+    <ul>In case of Question mark"؟", swipe up is Small 'Alif' above and swipe down is small 'Alif' below.</ul>
     <ul>Long pressing all of them would just give some other less common characters.</ul>
     <img src="typing-guide.jpg" alt="Arabic Mobile Keyboard Layout">
   </p>
