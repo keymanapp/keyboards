@@ -10,7 +10,6 @@
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift alt alt-shift '>
     <p>
         <img src="typing-guide-desktop.png" alt="" srcset="">
     </p>
@@ -23,11 +22,9 @@
     <p>
         <img src="typing-guide-desktop-alternate-shifted.png" alt="" srcset="">
     </p>
-</div>
 
 <h2>Mobile/Phone Keyboard Layout</h2>
 
-<div id='osk-phone' data-states='default symbols extra'>
 <p style="flex-direction: row;">
     <ul>Single press is main character displayed and Double tap is the character displayed on the top-right corner of the key.</ul>
     <ul>In case of "ا", swipe up is for hamza above it and swipe down is for hamza below; same goes for "و" and "ي" (with 'Waaw' double tap is for 'Hamza' above, swipe up and down is for small 'Waaw' up and down respectively; but for 'Yaa' swipe up for 'hamza' above).</ul>
@@ -101,4 +98,4 @@
       </tr>
     </table>
     <img src="typing-guide-symbols.jpg" alt="Arabic Mobile Keyboard Symbols" srcset="">
-</div>
+
