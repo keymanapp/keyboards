@@ -30,8 +30,10 @@
 <div id='osk-phone' data-states='default symbols extra'>
 <p style="flex-direction: row;">
     <ul>Single press is main character displayed and Double tap is the character displayed on the top-right corner of the key.</ul>
-    <ul>In case of "ا", swipe up is for hamza above it and swipe down is for hamza below; same goes for "و" and "ي" (with 'Waaw' double tap is for 'Hamza' above, swipe up and down is for small 'Waaw' up and down respectively; swipe up for 'hamza' above). In case of dotless Baa'"ب", double tap for Baa'"ب", swipe up for Taa'"ت" and swipe down for Thaa'"ث".</ul>
-    <ul>In case of "ح", swipe up for Khaa'"خ" and swipe down for Jeem"ج". In case of dot".", swipe up is Fatha, swipe down is Kasra, swipe right is Damma, and swipe left is Sukuun.</ul>
+    <ul>In case of "ا", swipe up is for hamza above it and swipe down is for hamza below; same goes for "و" and "ي" (with 'Waaw' double tap is for 'Hamza' above, swipe up and down is for small 'Waaw' up and down respectively; but for 'Yaa' swipe up for 'hamza' above).</ul>
+    <ul>In case of dotless Baa'"ب", double tap for Baa'"ب", swipe up for Taa'"ت" and swipe down for Thaa'"ث".</ul>
+    <ul>In case of "ح", swipe up for Khaa'"خ" and swipe down for Jeem"ج".</ul>
+    <ul>In case of dot".", swipe up is Fatha, swipe down is Kasra, swipe right is Damma, and swipe left is Sukuun.</ul>
     <ul>In case of comma"،", swipe up is 'Fathataan', swipe down is 'Kasrataan', swipe right is 'Dammataan', and swipe left is 'Shadda'. In case of Question mark"؟", swipe up is Small 'Alif' above and swipe down is small 'Alif' below.</ul>
     <ul>Long pressing all of them would just give some other less common characters.</ul>
     <img src="typing-guide.jpg" alt="Arabic Mobile Keyboard Layout">
