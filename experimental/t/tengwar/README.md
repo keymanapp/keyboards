@@ -4,6 +4,7 @@ Tengwar keyboard
 Description
 -----------
 Tengwar Keyboard--As seen on https://freetengwar.sourceforge.net
+This keyboard is using Private Use Area codepoints since Tengwar is not in Unicode.
 
 Links
 -----
