@@ -16,12 +16,15 @@ c numbers
 store(Digits) "0123456789"
 store(DigitsU) U+1040 U+1041 U+1042 U+1043 U+1044 U+1045 U+1046 U+1047 U+1048 U+1049
 
-store(Punctuation)  "`~!@#$%^&*()=\|;:'" U+0022 \
-                    ",<.>/"
-store(PunctuationU) U+1051 U+1050 U+0022 "{}]]%/?()x" U+104B U+104A U+100D U+100B U+100C U+100F \
+store(Punctuation)  "`~!@#$%^&*()-_+=" \
+                    "[]{}\|;:'" U+0022 \
+                    ",<.>/?"
+store(PunctuationU) U+1051 U+1050 U+0022 "{}]]%/?()_-+x" \
+                    U+104F U+104D U+1024 U+104C U+104B U+104A U+100D U+100B U+100C U+100F \
                     U+1038 U+1036 U+102C U+102B U+105C U+105D
 
-store(Letters) "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+store(Letters) "abcdefghijklmnopqrstuvwxyz" \
+               "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
                 c a-zA-Z
 store(LettersU) U+1021 U+1017 U+1004 U+1012 U+1035 \        
@@ -43,8 +46,22 @@ store(LettersU) U+1021 U+1017 U+1004 U+1012 U+1035 \
 c + [K_Q] > U+101E
 c + [SHIFT K_Q] > U+103F
 
-+ [RALT K_LBRKT] > U+1027
-+ [RALT K_RBRKT] > U+104E
-+ [RALT K_W]     > U+1039
-+ [RALT K_COMMA] > U+1037
-+ [RALT K_SLASH] > U+1020
+c Right Alt layer
++ [RALT K_BKQUOTE] > U+109D
++ [RALT K_LBRKT]   > U+1027
++ [RALT K_RBRKT]   > U+104E
++ [RALT K_W]       > U+1039
++ [RALT K_COMMA]   > U+1037
++ [RALT K_SLASH]   > U+1020
++ [RALT K_1]       > '1'
++ [RALT K_2]       > '2'
++ [RALT K_3]       > '3'
++ [RALT K_4]       > '4'
++ [RALT K_5]       > '5'
++ [RALT K_6]       > '6'
++ [RALT K_7]       > '7'
++ [RALT K_8]       > '8'
++ [RALT K_9]       > '9'
++ [RALT K_0]       > '0'
++ [RALT K_HYPHEN]  > '+'
++ [RALT K_EQUAL]   > '='
