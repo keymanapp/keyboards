@@ -10,18 +10,8 @@
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
-    <p>
-        <img src="typing-guide-desktop.png" alt="" srcset="">
-    </p>
-    <p>
-        <img src="typing-guide-desktop-shifted.png" alt="" srcset="">
-    </p>
-    <p>
-        <img src="typing-guide-desktop-alternate.png" alt="" srcset="">
-    </p>
-    <p>
-        <img src="typing-guide-desktop-alternate-shifted.png" alt="" srcset="">
-    </p>
+<div id='osk' data-states='default shift alt alt-shift'>
+</div>
 
 <h2>Mobile/Phone Keyboard Layout</h2>
 
