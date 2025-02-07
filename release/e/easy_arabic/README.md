@@ -1,4 +1,4 @@
-Easy Arabic
+Easy Arabic keyboard
 ==============
 
 Description
