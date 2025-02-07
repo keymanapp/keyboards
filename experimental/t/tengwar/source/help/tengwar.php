@@ -10,8 +10,8 @@
 
 <h2>Desktop Keyboard Layout</h2>
 <div id="osk" data-states='default shift rightalt rightalt-shift'>
-    <img src="typing-guide-desktop.png" alt="" srcset=""><br>
-    <img src="typing-guide-desktop-shifted.png" alt="" srcset=""><br>
-    <img src="typing-guide-desktop-alternate.png" alt="" srcset=""><br>
-    <img src="typing-guide-desktop-alternate-shifted.png" alt="" srcset="">
+    <img src="typing-guide-desktop.png" alt="" srcset="" style="width: 800px"><br>
+    <img src="typing-guide-desktop-shifted.png" alt="" srcset="" style="width: 800px"><br>
+    <img src="typing-guide-desktop-alternate.png" alt="" srcset="" style="width: 800px"><br>
+    <img src="typing-guide-desktop-alternate-shifted.png" alt="" srcset="" style="width: 800px"> 
 </div>
