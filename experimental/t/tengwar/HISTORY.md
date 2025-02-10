@@ -8,3 +8,7 @@ Tengwar Change History
 1.0.1 (2025-02-10)
 ----------------
 * Updated tfb-Teng to qya-Teng
+
+1.1 (2025-02-11)
+----------------
+* Mobile Support
