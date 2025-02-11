@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.334.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -25,13 +26,13 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\tengwar.kmx</Name>
+      <Name>..\build\tengwar_quenya.kmx</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\tengwar.kvk</Name>
+      <Name>..\build\tengwar_quenya.kvk</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
@@ -55,40 +56,40 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>tengwar.ico</Name>
-      <Description>File tengwar.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
-      <Name>help\typing-guide-desktop.png</Name>
-      <Description>File typing-guide-desktop.png</Description>
+      <Name>help\keyboard_layout.png</Name>
+      <Description>File keyboard_layout.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>help\typing-guide-desktop-alternate.png</Name>
-      <Description>File typing-guide-desktop-alternate.png</Description>
+      <Name>help\keyboard_layout_alt.png</Name>
+      <Description>File keyboard_layout_alt.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>help\typing-guide-desktop-alternate-shifted.png</Name>
-      <Description>File typing-guide-desktop-alternate-shifted.png</Description>
+      <Name>help\keyboard_layout_alt-shifted.png</Name>
+      <Description>File keyboard_layout_alt-shifted.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>help\typing-guide-desktop-shifted.png</Name>
-      <Description>File typing-guide-desktop-shifted.png</Description>
+      <Name>help\keyboard_layout_shifted.png</Name>
+      <Description>File keyboard_layout_shifted.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>help\tengwar.php</Name>
-      <Description>File tengwar.php</Description>
+      <Name>help\mobile_keyboard_layout.jpg</Name>
+      <Description>File mobile_keyboard_layout.jpg</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.php</FileType>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>help\mobile_layout_numbers.jpg</Name>
+      <Description>File mobile_layout_numbers.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\tengwar\TengwarFormalCSUR.ttf</Name>
@@ -96,12 +97,30 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\tengwar\tengtelc.ttf</Name>
+      <Description>Font Tengwar Telcontar</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\tengwar\tengtelcb.ttf</Name>
+      <Description>Font Tengwar Telcontar Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\build\tengwar_quenya.js</Name>
+      <Description>File tengwar_quenya.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Tengwar</Name>
-      <ID>tengwar</ID>
-      <Version>1.0</Version>
+      <ID>tengwar_quenya</ID>
+      <Version>1.1</Version>
       <OSKFont>..\..\..\shared\fonts\tengwar\TengwarFormalCSUR.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\tengwar\TengwarFormalCSUR.ttf</DisplayFont>
       <Languages>
