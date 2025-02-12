@@ -1,6 +1,10 @@
 Tengwar Change History
 ====================
 
+1.2 (2025-02-12)
+----------------
+* rearrange help files
+
 1.1 (2025-02-11)
 ----------------
 * Add Mobile Support & Rename keyboard ID
