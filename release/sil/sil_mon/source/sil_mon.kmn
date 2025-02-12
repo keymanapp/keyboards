@@ -1,7 +1,7 @@
 ﻿c sil_mon generated from template at 2025-02-06 16:22:00
-c with name "Mon Phonetic"
+c with name "Mon (SIL)"
 store(&VERSION) '10.0'
-store(&NAME) 'Mon Phonetic'
+store(&NAME) 'Mon (SIL)'
 store(&COPYRIGHT) 'Copyright © SIL Global'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'desktop'
@@ -16,41 +16,34 @@ c numbers
 store(Digits) "0123456789"
 store(DigitsU) U+1040 U+1041 U+1042 U+1043 U+1044 U+1045 U+1046 U+1047 U+1048 U+1049
 
-store(Punctuation)  "`~!@#$%^&*()-_+=" \
-                    "[]{}\|;:'" U+0022 \
-                    ",<.>/?"
-store(PunctuationU) U+1051 U+1050 U+0022 "{}]]%/?()_-+x" \
-                    U+104F U+104D U+1024 U+104C U+104B U+104A U+100D U+100B U+100C U+100F \
-                    U+1038 U+1036 U+102C U+102B U+105C U+105D
+c Default layer
+store(Default)  "`-=" \
+                "qwertyuiop[]" U+005C \
+                "asdfghjkl;'" \
+                "zxcvbnm,./"
+store(DefaultU) U+1051 "_x" \
+                U+101E U+101D U+1035 U+101B U+1010 U+101A U+1030 U+102D U+1034 U+1015 U+104F U+104D U+104B \
+                U+1021 U+1005 U+1012 U+1016 U+1002 U+101F U+103A U+1000 U+101C U+100D U+100C \
+                U+1007 U+1025 U+1004 U+100A U+1017 U+1014 U+1019 U+1038 U+102C U+105C
 
-store(Letters) "abcdefghijklmnopqrstuvwxyz" \
-               "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-                c a-zA-Z
-store(LettersU) U+1021 U+1017 U+1004 U+1012 U+1035 \        
-                U+1016 U+1002 U+101F U+102D U+103A \        
-                U+1000 U+101C U+1019 U+1014 U+1034 \                       
-                U+1015 U+101E U+101B U+1005 U+1010 \        
-                U+1030 U+100A U+101D U+1025 U+101A U+1007 \ 
-                U+1028 U+1018 U+105A U+1013 U+1031 \        
-                U+1039 U+1003 U+103E U+1033 U+102E \        
-                U+1001 U+1060 U+105F U+105E U+1032 \        
-                U+100E U+103F U+103C U+1006 U+1011 \        
-                U+102F U+1009 U+103D U+1023 U+103B U+105B   
+c Shifted layer
+store(Shifted)  "~!@#$%^&*()_+" \
+                "QWERTYUIOP{}|" \
+                "ASDFGHJKL:" U+0022 \
+                "ZXCVBNM<>?"
+store(ShiftedU) U+1050 U+0022 "{}[]%/?()-+" \
+                U+103f U+103D U+1031 U+103C U+1011 U+103B U+102F U+1033 U+1032 U+100E U+1024 U+104C U+104A \
+                U+1028 U+1006 U+1013 U+1039 U+1003 U+103E U+102E U+1001 U+1060 U+100B U+100F \
+                U+105B U+1023 U+105A U+1009 U+1018 U+105E U+105F U+1036 U+102B U+105D
 
 + any(Digits)  > index(DigitsU,1)          c Mon digits
-+ any(Punctuation) > index(PunctuationU,1) c punctuation
-
-+ any(Letters) > index(LettersU,1)         c Mon letters
-
-c + [K_Q] > U+101E
-c + [SHIFT K_Q] > U+103F
++ any(Default) > index(DefaultU,1)         c Default layer
++ any(Shifted) > index(ShiftedU,1)         c Shifted layer
 
 c Right Alt layer
 + [RALT K_BKQUOTE] > U+109D
 + [RALT K_LBRKT]   > U+1027
 + [RALT K_RBRKT]   > U+104E
-+ [RALT K_W]       > U+1039
 + [RALT K_COMMA]   > U+1037
 + [RALT K_SLASH]   > U+1020
 + [RALT K_1]       > '1'

@@ -1,9 +1,9 @@
-Mon Phonetic keyboard
+Mon (SIL) keyboard
 ==============
 
 Description
 -----------
-Mon Phonetic Keyboard
+Mon (SIL) Keyboard
 
 Links
 -----
