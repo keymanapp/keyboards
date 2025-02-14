@@ -86,7 +86,7 @@
     <p>This keyboard is based on the Tamil WinScript (NLCI) Keyboard Layout. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system. This keyboard includes experimental support for the Irula language.</p>
 
 <h2>Desktop Keyboard Layout</h2>
-<div id='osk' data-states='default shift'>
+<div id='osk' data-states='default shift alt'>
 </div>
 
     <h2>Input sequences</h2>
