@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,7 +20,7 @@
     <Copyright URL="">Copyright © 3ubaidUrRe7man</Copyright>
     <Author URL="mailto:3ubaidUrRe7man@murena.io">3ubaidUrRe7man</Author>
     <Description URL="">Changes some keys to make it easier to type.</Description>
-    <Version URL=""></Version>
+    <Version URL="">1.1</Version>
   </Info>
   <Files>
     <File>
@@ -56,26 +54,38 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\arab\amiri\Amiri-Bold.ttf</Name>
-      <Description>Font Amiri Bold</Description>
+      <Name>help\easy_arabic.php</Name>
+      <Description>File easy_arabic.php</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.php</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\arab\amiri\Amiri-BoldItalic.ttf</Name>
-      <Description>Font Amiri Bold Italic</Description>
+      <Name>help\layout.png</Name>
+      <Description>File layout.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\arab\amiri\Amiri-Italic.ttf</Name>
-      <Description>Font Amiri Italic</Description>
+      <Name>help\layout-alternate.png</Name>
+      <Description>File layout-alternate.png</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
+      <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\arab\amiri\AmiriQuran.ttf</Name>
-      <Description>Font Amiri Quran Regular</Description>
+      <Name>help\layout-alternate-shifted.png</Name>
+      <Description>File layout-alternate-shifted.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>help\layout-shifted.png</Name>
+      <Description>File layout-shifted.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\arab\harmattan\Harmattan-Regular.ttf</Name>
+      <Description>Font Harmattan</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
@@ -85,12 +95,6 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
-    <File>
-      <Name>..\..\..\shared\fonts\arab\amiri\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
   </Files>
   <Keyboards>
     <Keyboard>
@@ -98,9 +102,9 @@
       <ID>easy_arabic</ID>
       <Version>1.0</Version>
       <OSKFont>..\..\..\shared\fonts\arab\amiri\Amiri-Regular.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\arab\amiri\Amiri-Regular.ttf</DisplayFont>
+      <DisplayFont>..\..\..\shared\fonts\arab\harmattan\Harmattan-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="ar-001">Arabic (World)</Language>
+        <Language ID="ar">Arabic</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

@@ -8,5 +8,11 @@
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
+
+<img src="layout.png" alt="" srcset=""><br>
+ <img src="layout-shifted.png" alt="" srcset=""><br>
+ <img src="layout-alternate.png" alt="" srcset=""><br>
+ <img src="layout-alternate-shifted.png" alt="" srcset="">
+
 </div>
 
