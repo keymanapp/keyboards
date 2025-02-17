@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'Easy Arabic Keyboard Help';
+  $pagename = 'Easy Arabic Help';
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
