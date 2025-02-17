@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.334.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,11 +19,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Indic Romanization from ITRANS</Name>
-    <Version URL="">1.1.1</Version>
-    <Copyright URL="">©2019 sanskritdocuments.org</Copyright>
+    <Version URL=""></Version>
+    <Copyright URL="">© sanskritdocuments.org</Copyright>
     <Author URL="">Shree Devi Kumar</Author>
-    <WebSite URL="https:// sanskritdocuments.org">https:// sanskritdocuments.org</WebSite>
-    <Description>A phonetic (ITRANS) keyboard for typing Indic languages in Roman script
+    <WebSite URL="https://sanskritdocuments.org">https://sanskritdocuments.org</WebSite>
+    <Description URL="">A phonetic (ITRANS) keyboard for typing Indic languages in Roman script
 with accents or diacritics.</Description>
   </Info>
   <Files>
@@ -56,12 +57,18 @@ with accents or diacritics.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\itrans_roman.kvk</Name>
+      <Description>File itrans_roman.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>itrans_roman</Name>
+      <Name>Indic Romanization from ITRANS</Name>
       <ID>itrans_roman</ID>
-      <Version>1.1.1</Version>
+      <Version>1.2.1</Version>
       <Languages>
         <Language ID="sa-Latn">Sanskrit (Latin)</Language>
         <Language ID="hi-Latn">Hindi (Latin)</Language>
