@@ -1,5 +1,5 @@
 ﻿<?php 
-  $pagename = 'Udi Keyboard Help / UDI КЛАВИАТУРА ПОМОЩЬ';
+  $pagename = 'Udi (SIL) Keyboard Help / UDI КЛАВИАТУРА ПОМОЩЬ';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');

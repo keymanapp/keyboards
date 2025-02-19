@@ -13,7 +13,7 @@
 <p>
     foochow keyboard is using "sfwrj" keys for generating tones
 </p>
-specific letters: aa > a̤, oo > o̤, uu > ṳ, ee > e̤, euu > e̤ṳ, enge > e̤ng,ungu > ṳng, eungu > e̤ṳng
+specific letters: aa > a̤, oo > o̤, w > ṳ, uu > ṳ, ee > e̤, euu > e̤ṳ, enge > e̤ng,ungu > ṳng, eungu > e̤ṳng
 <p>
 tones: as > á, af > à, aw > ă, ar > ā, aj > â, ahj > ăh
 </P>

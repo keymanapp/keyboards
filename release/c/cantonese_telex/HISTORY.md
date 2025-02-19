@@ -1,6 +1,13 @@
 cantonese telex Change History
 ====================
 
+2.0 (2024-1-21)
+----------------
+* updated by cathaylab
+* changed the alphabet "z" to "ch" and changed the alphabet "ch" to "ts" for matching vietnamese and traditional Hong Kong road and people's name
+* added feature to use Z key to cancel tones
+* added more automatically predicting rules
+
 1.2.2 (2024-12-14)
 ----------------
 * updated by cathaylab
