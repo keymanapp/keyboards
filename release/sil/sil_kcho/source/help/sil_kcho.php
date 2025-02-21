@@ -6,13 +6,9 @@
 
 
 
-<h1>Start Using Kcho (SIL)</h1>
-
 <p>
   Keyboard for Kcho (Mün Chin and Dao languages in Myanmar). Outputs NFC when possible.
 </p>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 
@@ -29,7 +25,7 @@
 <div id='osk' data-states='default shift rightalt'>
 </div>
 
-<h2>Mobile</h2>
+<h2>Mobile Keyboard Layout</h2>
 
 <div id='osk-mobi-container'>
   <h3>Mobile Keyboard Layout</h3>
