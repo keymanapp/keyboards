@@ -1,6 +1,10 @@
 Tchad Keyboard Change History
 =======================
 
+4.3.1 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 4.3 (3 Jan 2023)
 ------------------
 * Added tildes over some vowels in touch layout

@@ -1,6 +1,10 @@
 ausephon Change History
 ====================
 
+11.0.1 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 11.0 (2024-04-14)
 ----------------
 * Added many diacritics

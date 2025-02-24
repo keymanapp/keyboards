@@ -1,5 +1,10 @@
 ᐊᓂᔑᓂᓂᒧᐎᐣ Change History
 ============================
+
+10.1.2 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 10.1.1 (31 Jul 2024)
 -----------------
 * Corrected error in instructions
