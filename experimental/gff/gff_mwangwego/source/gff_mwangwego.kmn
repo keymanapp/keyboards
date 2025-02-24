@@ -7,7 +7,7 @@ c dependent along with the pairing against specific mutuyo sequences. A better m
 c sequences, process them, and assume anything else is invalid. A later approach may use a single group to
 c handle each letter.  Experimentation will continue.
 
-store(&KEYBOARDVERSION) '0.9'
+store(&KEYBOARDVERSION) '0.9.1'
 store(&NAME) 'Mwangwego'
 store(&COPYRIGHT) '© 2024 Geʾez Frontier Foundation'
 store(&Message) 'This is an experimental Mwangwego keyboard that requires the included Mwangwego16 font.'
@@ -601,6 +601,39 @@ c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c
 c Misisi without Mutuyo present
 c
+'󰀀' deadkey(9) + any(󰀀_InvalidMituyo) > context beep
+'󰀁' deadkey(9) + any(󰀁_InvalidMituyo) > context beep
+'󰀂' deadkey(9) + any(󰀂_InvalidMituyo) > context beep
+'󰀃' deadkey(9) + any(󰀃_InvalidMituyo) > context beep
+'󰀄' deadkey(9) + any(󰀄_InvalidMituyo) > context beep
+'󰀅' deadkey(9) + any(󰀅_InvalidMituyo) > context beep
+'󰀆' deadkey(9) + any(󰀆_InvalidMituyo) > context beep
+'󰀇' deadkey(9) + any(󰀇_InvalidMituyo) > context beep
+'󰀈' deadkey(9) + any(󰀈_InvalidMituyo) > context beep
+'󰀉' deadkey(9) + any(󰀉_InvalidMituyo) > context beep
+'󰀊' deadkey(9) + any(󰀊_InvalidMituyo) > context beep
+'󰀋' deadkey(9) + any(󰀋_InvalidMituyo) > context beep
+'󰀌' deadkey(9) + any(󰀌_InvalidMituyo) > context beep
+'󰀍' deadkey(9) + any(󰀍_InvalidMituyo) > context beep
+'󰀎' deadkey(9) + any(󰀎_InvalidMituyo) > context beep
+'󰀏' deadkey(9) + any(󰀏_InvalidMituyo) > context beep
+'󰀐' deadkey(9) + any(󰀐_InvalidMituyo) > context beep
+'󰀑' deadkey(9) + any(󰀑_InvalidMituyo) > context beep
+'󰀒' deadkey(9) + any(󰀒_InvalidMituyo) > context beep
+'󰀓' deadkey(9) + any(󰀓_InvalidMituyo) > context beep
+'󰀔' deadkey(9) + any(󰀔_InvalidMituyo) > context beep
+'󰀕' deadkey(9) + any(󰀕_InvalidMituyo) > context beep
+'󰀖' deadkey(9) + any(󰀖_InvalidMituyo) > context beep
+'󰀗' deadkey(9) + any(󰀗_InvalidMituyo) > context beep
+'󰀘' deadkey(9) + any(󰀘_InvalidMituyo) > context beep
+'󰀙' deadkey(9) + any(󰀙_InvalidMituyo) > context beep
+'󰀚' deadkey(9) + any(󰀚_InvalidMituyo) > context beep
+'󰀛' deadkey(9) + any(󰀛_InvalidMituyo) > context beep
+'󰀜' deadkey(9) + any(󰀜_InvalidMituyo) > context beep
+'󰀝' deadkey(9) + any(󰀝_InvalidMituyo) > context beep
+'󰀞' deadkey(9) + any(󰀞_InvalidMituyo) > context beep
+'󰀟' deadkey(9) + any(󰀟_InvalidMituyo) > context beep
+
 '󰀀' + any(󰀀_InvalidMituyo) > context beep
 '󰀁' + any(󰀁_InvalidMituyo) > context beep
 '󰀂' + any(󰀂_InvalidMituyo) > context beep
@@ -635,7 +668,6 @@ c
 '󰀟' + any(󰀟_InvalidMituyo) > context beep
 
 
-
 c cccccccccccccccccccccccccccccccccccccccccccccccc
 c Special case compositions:
 c cccccccccccccccccccccccccccccccccccccccccccccccc
@@ -653,6 +685,17 @@ c
 '󰀖' + '-' > '󰀮󰀖󰀩' deadkey(0)
 '󰀙' + '-' > '󰀮󰀙󰀩' deadkey(0)
 '󰀒' + '-' > '󰀮󰀒󰀩' deadkey(0)
+'󰀀' deadkey(9) + '-' > '󰀮󰀀󰀩' deadkey(0)
+'󰀂' deadkey(9) + '-' > '󰀮󰀂󰀩' deadkey(0)
+'󰀃' deadkey(9) + '-' > '󰀮󰀃󰀩' deadkey(0)
+'󰀅' deadkey(9) + '-' > '󰀮󰀅󰀩' deadkey(0)
+'󰀈' deadkey(9) + '-' > '󰀮󰀈󰀩' deadkey(0)
+'󰀊' deadkey(9) + '-' > '󰀮󰀊󰀩' deadkey(0)
+'󰀑' deadkey(9) + '-' > '󰀮󰀑󰀩' deadkey(0)
+'󰀓' deadkey(9) + '-' > '󰀮󰀓󰀩' deadkey(0)
+'󰀖' deadkey(9) + '-' > '󰀮󰀖󰀩' deadkey(0)
+'󰀙' deadkey(9) + '-' > '󰀮󰀙󰀩' deadkey(0)
+'󰀒' deadkey(9) + '-' > '󰀮󰀒󰀩' deadkey(0)
 '󰀀' any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
 '󰀂'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
 '󰀃'  any(Masiri) + '-' > '󰀮' context $WayaBelow deadkey(0)
@@ -676,32 +719,39 @@ c
 c  SISA NI
 c
 '󰀃' + '7' > '󰀽󰀃'  deadkey(0)
+'󰀃' context(9) + '7' > '󰀽󰀃'  deadkey(0)
 '󰀃' any(Masiri) + '7' > '󰀽' context
 '󰀅' + '7' > '󰀽󰀅'
+'󰀅' context(9) + '7' > '󰀽󰀅'
 '󰀅' any(Masiri) + '7' > '󰀽' context
 '󰀙' + '7' > '󰀽󰀙'
+'󰀙' context(9) + '7' > '󰀽󰀙'
 '󰀙' any(Masiri) + '7' > '󰀽' context
 
 c
 c NI WAYA BELOW
 c
 '󰀒' + '3' >  '󰀦󰀒󰀩' deadkey(0)
+'󰀒' context(9) + '3' >  '󰀦󰀒󰀩' deadkey(0)
 '󰀒' any(Masiri) + '3' >   '󰀦' context $WayaBelow deadkey(0)
 
 
 c
 c MYU WAYA BELOW
 c
-'󰀄' + '1' > '󰀤' context  $WayaBelow   
+'󰀄' + '1' > '󰀤' context  $WayaBelow
+'󰀄' context(9) + '1' > '󰀤' context(1) $WayaBelow   
 '󰀄' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
 '󰀉' + '1' > '󰀤' context  $WayaBelow
+'󰀉' context(9) + '1' > '󰀤' context(1) $WayaBelow
 '󰀉' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
 c '󰀎' + '1' > '󰀤' context  $WayaBelow
 c '󰀎' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
 '󰀖' + '1' > '󰀤' context  $WayaBelow
+'󰀖' context(9) + '1' > '󰀤' context(1) $WayaBelow
 '󰀖' any(Masiri) +  '1' > '󰀤' context  $WayaBelow
 
 
@@ -719,13 +769,25 @@ c
 '󰀞' + '=' > '󰀦' context $Kwanthu deadkey(0)
 '󰀒' + '=' > '󰀦' context $Kwanthu deadkey(0)
 
+'󰀖' context(9) + '=' > '󰀦' context(1) $Kwanthu  deadkey(0)
+'󰀃' context(9) + '=' > '󰀦' context(1) $Kwanthu  deadkey(0)
+'󰀔' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+'󰀙' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+'󰀚' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+'󰀛' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+'󰀝' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+'󰀞' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+'󰀒' context(9) + '=' > '󰀦' context(1) $Kwanthu deadkey(0)
+
 c
 c PEWA WAYA
 c
 '󰀄' + '0' > '󰀨' context $Pewa  deadkey(0)
+'󰀄' context(9) + '0' > '󰀨' context(1) $Pewa  deadkey(0)
 '󰀄' any(Masiri) + '0' > '󰀨' context $Pewa  deadkey(0)
 
-'󰀜' + '1'  > outs(󰀜_󰀤_menu) 
+'󰀜' + '1'  > outs(󰀜_󰀤_menu)
+'󰀜' context(9) + '1'  > outs(󰀜_󰀤_menu) 
 '󰀜󰀠' + '1'  > outs(󰀜󰀠_󰀤_menu)
 '󰀜󰀡' + '1'  > outs(󰀜󰀡_󰀤_menu)
 '󰀜󰀢' + '1'  > outs(󰀜󰀢_󰀤_menu)
@@ -739,6 +801,7 @@ outs(󰀜󰀣_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(4) use (󰀜_󰀤_group)
 
 
 '󰀝' + '1'  > outs(󰀝_󰀤_menu)
+'󰀝' context(9) + '1'  > outs(󰀝_󰀤_menu)
 '󰀝󰀠' + '1'  > outs(󰀝󰀠_󰀤_menu)
 '󰀝󰀡' + '1'  > outs(󰀝󰀡_󰀤_menu)
 '󰀝󰀢' + '1'  > outs(󰀝󰀢_󰀤_menu)
@@ -751,6 +814,7 @@ outs(󰀝󰀢_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(3) use (󰀝_󰀤_group)
 outs(󰀝󰀣_󰀤_menu) + any(MutuyoKeyMenu) > deadkey(4) use (󰀝_󰀤_group)
 
 '󰀔' + '3'  > outs(󰀔_󰀦_menu)
+'󰀔' context(9) + '3'  > outs(󰀔_󰀦_menu)
 '󰀔󰀠' + '3'  > outs(󰀔󰀠_󰀦_menu)
 '󰀔󰀡' + '3'  > outs(󰀔󰀡_󰀦_menu)
 '󰀔󰀢' + '3'  > outs(󰀔󰀢_󰀦_menu)
@@ -771,19 +835,27 @@ c
 + any(ShortO) > '󰀀󰀢'
 + any(ShortU) > '󰀀󰀣'
 
-any(Masiri) + any(ShortE) > context '󰀀󰀠'
-any(Masiri) + any(ShortI) > context '󰀀󰀡'
-any(Masiri) + any(ShortO) > context '󰀀󰀢'
-any(Masiri) + any(ShortU) > context '󰀀󰀣'
+c isn't this redundant?
+c
+c any(Masiri) + any(ShortE) > context '󰀀󰀠'
+c any(Masiri) + any(ShortI) > context '󰀀󰀡'
+c any(Masiri) + any(ShortO) > context '󰀀󰀢'
+c any(Masiri) + any(ShortU) > context '󰀀󰀣'
 
 
 c
 c  These next two rules will change when the fonts are updated to present the visual order:
 c
+
+any(OrdersConsonants) deadkey(9) + '5' > '󰀨' context(1) deadkey(0)
+any(OrdersConsonants) deadkey(9)  + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,3) context(1)
+any(OrdersConsonants) deadkey(9)  + '6' > context(1) $WayaBelow deadkey(0)
+any(OrdersConsonants) deadkey(9)  + any(MutuyoCombiningNumberKeys) > context(1) index(MutuyoCombining,3)
+
 any(OrdersConsonants) + '5' > '󰀨' context deadkey(0)
-any(OrdersConsonants) + any(MutuyoRegularNumberKeys)     >  index(MutuyoRegular,2) context
+any(OrdersConsonants) + any(MutuyoRegularNumberKeys) > index(MutuyoRegular,2) context
 any(OrdersConsonants) + '6' > context $WayaBelow deadkey(0)
-any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) >  context index(MutuyoCombining,2)
+any(OrdersConsonants) + any(MutuyoCombiningNumberKeys) > context index(MutuyoCombining,2)
 
 c any(OrdersConsonants) any(Masiri) + any(MutuyoRegularNumberKeys)   > index(MutuyoRegular,2) context(1) context(2)
 c any(OrdersConsonants) any(Masiri) + any(MutuyoCombiningNumberKeys) > context(1) context(2) index(MutuyoCombining,2)
@@ -880,6 +952,8 @@ c
 any(OrdersConsonants) any(MutuyoCombining)  any(Masiri) + [K_BKSP] > nul
 any(OrdersConsonants) any(MutuyoCombining) + [K_BKSP] > nul
 any(OrdersConsonants) any(Masiri) + [K_BKSP] > nul
+any(OrdersConsonants) deadkey(9) + [K_BKSP] > nul
+
 
 c ccccccccccccccccccccccccccccccccccccccccccccccccc
 c Literal Numeral Input
