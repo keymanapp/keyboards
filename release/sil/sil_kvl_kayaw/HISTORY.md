@@ -1,6 +1,10 @@
 Kayaw (SIL) Keyboard Change History
 =======================
 
+1.2.2 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 1.2.1 (2020-Feb-18)
 -------------------
 * Updated keyboard to use new version of Charis SIL Compact

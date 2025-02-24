@@ -1,6 +1,9 @@
 Galaxie Greek (Phonetic) Keyboard Change History
 =======================
 
+## 2.3.1 (20 Feb 2025)
+* Put OSKFont from .kps file into .kvks file
+
 ## 2.3 (18 Sep 2024)
 * Added version back in
 * Add all B, BI, I of Gentium Plus

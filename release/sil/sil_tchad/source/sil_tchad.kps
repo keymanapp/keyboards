@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>sil_tchad_logo.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,9 +21,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tchad</Name>
-    <Copyright URL="">© 2017-2023 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL="mailto:langtech_chad@sil.org">Jeff Heath</Author>
-    <Description>This keyboard enables the typing of all Chadian languages using the
+    <Description URL="">This keyboard enables the typing of all Chadian languages using the
 Chadian National Alphabet.</Description>
   </Info>
   <Files>
@@ -109,7 +110,7 @@ Chadian National Alphabet.</Description>
     <Keyboard>
       <Name>Tchad</Name>
       <ID>sil_tchad</ID>
-      <Version>4.3</Version>
+      <Version>4.3.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</DisplayFont>
       <Languages>
@@ -247,8 +248,8 @@ Chadian National Alphabet.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="tchadunicode_with_charis_fonts" Relationship="deprecates" />
+    <RelatedPackage ID="tchadunicode_with_charis_fonts" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
