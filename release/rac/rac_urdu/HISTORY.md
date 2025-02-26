@@ -1,6 +1,11 @@
 Rachitrali-Urdu Change History
 ==============================
 
+1.0.2 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+* Change to Scheherazade New font
+
 1.0.1 (11 June 2020)
 -----------------
 
