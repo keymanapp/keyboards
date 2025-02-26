@@ -6,7 +6,9 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -224,7 +226,40 @@ The new characters that are available are mainly Ć, Ĉ, Č, H́, Ŕ, Ś, Ŝ, Š
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\winchus.js</Name>
+      <Description>File winchus.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\winchus.kvk</Name>
+      <Description>File winchus.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\winchus.kmx</Name>
+      <Description>Keyboard Winchus</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
-  <Keyboards/>
+  <Keyboards>
+    <Keyboard>
+      <Name>Winchus</Name>
+      <ID>winchus</ID>
+      <Version>1.1</Version>
+      <Languages>
+        <Language ID="qu">Quechua</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>

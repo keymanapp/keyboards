@@ -4,10 +4,6 @@
 
 *Escriba en cualquier idioma Quechua con la agilidad de un colibrí.*
 
-*Versión 1.1*
-
-*20 febrero 2025*
-
 *© SIL Global*
 
 # Propósito
@@ -47,10 +43,6 @@ Para problemas, preguntas, comentarios, y sugerencias, por favor escriba a [alex
 # English:
 
 *Write in any Quechua language with the agility of a hummingbird.*
-
-*Version 1.1*
-
-*20 february 2025*
 
 *© SIL Global*
 
