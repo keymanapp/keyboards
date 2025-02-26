@@ -1,6 +1,10 @@
 Rachitrali-Shina Change History
 =======================
 
+1.2.1 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 1.2.0 (28 Jan 2025)
 -----------------
 * Update versioning consistency
