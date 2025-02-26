@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.142.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,9 +19,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Newa Traditional Extended</Name>
-    <Copyright URL="">© 2023 Swornim Nakarmi</Copyright>
+    <Copyright URL="">© Swornim Nakarmi</Copyright>
     <Author URL="">Swornim Nakarmi</Author>
-    <Description>Newa Traditional Extended: Extended Traditional Layout for Nepal Bhasa 
+    <Description URL="">Newa Traditional Extended: Extended Traditional Layout for Nepal Bhasa 
 in Prachalit Newa Script with the mostly used conjuncts and special characters.</Description>
     <Version URL=""></Version>
   </Info>
@@ -91,7 +92,7 @@ in Prachalit Newa Script with the mostly used conjuncts and special characters.<
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
     </File>
-     <File>
+    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -102,13 +103,15 @@ in Prachalit Newa Script with the mostly used conjuncts and special characters.<
     <Keyboard>
       <Name>Newa Traditional Extended</Name>
       <ID>newa_traditional_extended</ID>
-      <Version>1.0.2</Version>
+      <Version>1.0.3</Version>
       <OSKFont>..\..\..\shared\fonts\noto\Newa\NotoSansNewa-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\noto\Newa\NotoSansNewa-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSansNewa-Regular.ttf"/></WebDisplayFonts>
       <Languages>
         <Language ID="new-Newa">Nepal Bhasa (Newari)</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Newa\NotoSansNewa-Regular.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

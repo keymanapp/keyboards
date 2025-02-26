@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Harari (Lâtîn harfi)</Name>
-    <Copyright URL="">© 2005-2023 Enabling Languages</Copyright>
+    <Copyright URL="">© Enabling Languages</Copyright>
     <Author URL="mailto:lang.support@gmail.com">Andrew Cunningham</Author>
-    <Description>This keyboard layout was designed for use with the revised Harari Latin
+    <Description URL="">This keyboard layout was designed for use with the revised Harari Latin
 orthography adopted by the Harari Community Language schools in
 Melbourne, Australia. The Latin script is used to teach the younger
 Harari children their own language.</Description>
@@ -134,7 +135,7 @@ Harari children their own language.</Description>
     <Keyboard>
       <Name>Harari (Lâtîn harfi)</Name>
       <ID>el_harari_latin</ID>
-      <Version>2.1.1</Version>
+      <Version>2.1.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</DisplayFont>
       <Languages>
@@ -142,9 +143,9 @@ Harari children their own language.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="har10" Relationship="deprecates" />
-    <RelatedPackage ID="harlatn" Relationship="deprecates" />
+    <RelatedPackage ID="har10" Relationship="deprecates"/>
+    <RelatedPackage ID="harlatn" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
