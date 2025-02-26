@@ -11,7 +11,7 @@ Description
 This keyboard is designed for the Aer language spoken in the provice of Sindh Pakistan, in its standard Perso-Arabic script, 
 as used in Sindh Pakistan. It is based on phonetic keyboard for Aer Language 
 developed by Pakistani linguist, author, researcher and Software Developer Mr.Rehmat Aziz Chitrali for 
-use by SIL International, and later approved by Khowar Academy (a literary Association working on the 
+use by SIL Global, and later approved by Khowar Academy (a literary Association working on the 
 language and culture documentation in Northern Pakistan) used in Windows 8.1 and above as Aer Keyboard.
 
 This is the first Aer language keyboard created by Rehmat Aziz Chitrali, Pakistani linguist, 
