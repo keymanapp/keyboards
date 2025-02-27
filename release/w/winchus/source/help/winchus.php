@@ -226,11 +226,7 @@ $pagestyle = <<<END
         }
         
         .keytext {
-          
-					font:
-						12pt
-							 
-						"Arial"; 
+          font:	12pt Arial; 
           position: absolute; 
           display: block;
           right: 5px;
