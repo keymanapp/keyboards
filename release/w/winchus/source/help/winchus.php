@@ -3,8 +3,6 @@
   $pagetitle = $pagename;
   require_once('header.php');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 $pagestyle = <<<END
         body {
             margin: 0 auto;
