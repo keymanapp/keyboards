@@ -1,7 +1,7 @@
 புதிய தட்டெழுதி | New Typewriter keyboard
 ==============
 
-(c) thamizha.com and SIL International
+(c) thamizha.com and SIL Global
 
 Description
 -----------
