@@ -1,7 +1,7 @@
 Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ keyboard
 ============================
 
-Copyright (C) Pirurvik Centre and SIL International
+Copyright (C) Pirurvik Centre and SIL Global
 
 A Canadian Aboriginal Syllabics script keyboard for Inuktut languages
 
@@ -21,6 +21,3 @@ Supported Platforms
  * Mobile Web
  * iOS
  * Android
-
-Todo
-----
