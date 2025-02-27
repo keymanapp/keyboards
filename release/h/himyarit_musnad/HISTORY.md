@@ -1,10 +1,6 @@
 Himyarit Musnad Change History
 ====================
 
-1.3.1 (2025-02-20)
------------------
-* Put OSKFont from .kps file into .kvks file
-
 1.3 (2023-12-31)
 ----------------
 * Change of AF_Najed font to Noto Naskh Arabic.
