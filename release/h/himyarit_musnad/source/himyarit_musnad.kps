@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.144.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>himyarit_musnad.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Himyarit Musnad Keyboard</Folder>
@@ -52,7 +53,7 @@
     <Copyright URL="">© Riyadh Alfareh</Copyright>
     <Author URL="mailto:ralfareh@mtn.com.ye">رياض الفرح (Riyadh Alfareh)</Author>
     <Version URL=""></Version>
-    <Description>The Himyarit Musnad keyboard supports the entry of Musnad Script which
+    <Description URL="">The Himyarit Musnad keyboard supports the entry of Musnad Script which
 is also commonly referred to as "Old South Arabian" and "Sabaean" or
 "Himyarit" script by different communities. Musnad and the languages
 that used it continue to be important to the studies of Semitic
@@ -157,14 +158,16 @@ the direction of text.</Description>
     <Keyboard>
       <Name>Himyarit Musnad</Name>
       <ID>himyarit_musnad</ID>
-      <Version>1.3</Version>
+      <Version>1.3.1</Version>
       <RTL>True</RTL>
-      <OSKFont>NotoNaskhArabic-Regular.ttf</OSKFont>
-      <DisplayFont>NotoNaskhArabic-Regular.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="SultanMusnad-Normal.ttf"/></WebDisplayFonts>
+      <OSKFont>..\..\..\shared\fonts\noto\Arab\naskh\NotoNaskhArabic-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Arab\naskh\NotoNaskhArabic-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="xsa">Sabaean</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\sarb\sultan_musnad\SultanMusnad-Normal.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

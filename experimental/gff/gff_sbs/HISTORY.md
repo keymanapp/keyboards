@@ -1,5 +1,8 @@
 # gff_sbs Change History
 
+## 2025-02-20 vesion 1.0.8
+* Put OSKFont from .kps file into .kvks file
+
 ## 2024-05-05 vesion 1.0.7
 * Change to font name for LibreOffice compatibility.
 * Change to font name to avoid name length problems.

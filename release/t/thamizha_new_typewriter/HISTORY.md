@@ -1,6 +1,10 @@
 புதிய தட்டெழுதி | New Typewriter Change History
 ====================
 
+2.2.1 (2025-02-20)
+-----------------
+* Put OSKFont from .kps file into .kvks file
+
 2.2 (2024-09-04)
 ----------------
 * Add tablet layout

@@ -1,5 +1,8 @@
 # ጉራጊና (Gurage) Legacy Change History
 
+## 2025-02-20 1.0.1
+* Put OSKFont from .kps file into .kvks file
+
 ## 2025-02-06 1.0.0
 * Version bump for versioning consistency. Fixes Keyboards issue #3296.
 
