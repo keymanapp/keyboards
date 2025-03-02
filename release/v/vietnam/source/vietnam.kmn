@@ -2,7 +2,7 @@
 store(&VERSION) '15.0'
 store(&NAME) 'vietnam'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'vietnam.ico'
 store(&VISUALKEYBOARD) 'vietnam.kvks'
@@ -165,6 +165,7 @@ store(un_hwd_consonants) 'bcfgjklmnpqrstvxzBCFGJKLMNPQRSTVXZ'
 store(un_ghd_consonants) 'bcfjklmnpqrstvwxzBCFJKLMNPQRSTVWXZ'
 store(no_d_consonants) 'bcfghjklmnpqrstvwxzBCFGHJKLMNPQRSTVWXZ'
 store(un_viet_letters) 'fjwzFJWZ'
+store(i) 'iíìỉĩịIÍÌỈĨỊ'
 c *******************************************************************
 
     c Keyboard options
@@ -8246,6 +8247,10 @@ any(all_letters) 'Y' + 'w' > index(all_letters, 1) 'Yw'
 any(all_letters) 'Y' + 'W' > index(all_letters, 1) 'YW'
 any(all_letters) 'y'any(vowels) + any(all_letters) > index(all_letters, 1) 'y' index(vowels, 3) index(all_letters, 4)
 any(all_letters) 'Y'any(vowels) + any(all_letters) > index(all_letters, 1) 'Y' index(vowels, 3) index(all_letters, 4)
+
+any(aa) 'nh' + 'n' > index(aa, 1) 'nn'
+any(i) 'nh' + 'n' > index(i, 1) 'nn'
+any(ee) 'nh' + 'n' > index(e, 1) 'nn'
 
 'k' + [K_TAB] > 'không'
 'ko' + [K_TAB] > 'không'
