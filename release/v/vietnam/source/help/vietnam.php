@@ -156,4 +156,4 @@ vietnam keyboard for vietnamese Chữ Quốc Ngữ Tiếng Việt
 
 <hr>
 
-<p>© 2025 cathaylab</p>
+<p>© cathaylab</p>
