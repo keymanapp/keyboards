@@ -8,7 +8,6 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -44,12 +43,6 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -62,16 +55,22 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>android.jpg</Name>
+      <Name>welcome\android.jpg</Name>
       <Description>File android.jpg</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>iphone.jpg</Name>
+      <Name>welcome\iphone.jpg</Name>
       <Description>File iphone.jpg</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -84,5 +83,8 @@
       </Languages>
     </Keyboard>
   </Keyboards>
+  <RelatedPackages>
+    <RelatedPackage ID="jerriais_tech.nrf-je.spellcheck"/>
+  </RelatedPackages>
   <Strings/>
 </Package>
