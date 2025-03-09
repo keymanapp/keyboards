@@ -16,7 +16,7 @@
 <ul>
   <li>A vowel followed by two single quotes ('') creates an acute accent: e'' = é</li>
   <li>A vowel followed by two backticks (``) creates a grave accent: a`` = à</li>
-  <li>A vowel (or "y") followed by a caret (^) creates a circumflex: o^ = ô</li>
+  <li>A vowel (or "y") followed by two carets (^^) creates a circumflex: o^^ = ô</li>
   <li>A vowel followed by two double quotes ("") creates a diaresis: i"" = ï</li>
   <li>A "c" followed by two commas (,,) creates a cedilla: c,, = ç</li>
 </ul>

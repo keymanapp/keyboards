@@ -19,7 +19,7 @@ store( dresisvowels ) U+00E4 U+00EB U+00EF U+00F6 U+00FC   U+00C4 U+00CB U+00CF 
 
 any(plainvowels) "'" + "'" > index(acutevowels,1)
 any(plainvowels) "`" + "`" > index(gravevowels,1)
-any(plainvowels) + "^" > index(circumvowels,1)
+any(plainvowels) "^" + "^" > index(circumvowels,1)
 any(plainvowels) '"' + '"' > index(dresisvowels,1)
 
 "Y" + "^" > U+0176
