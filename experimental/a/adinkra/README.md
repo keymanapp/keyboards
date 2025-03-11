@@ -3,7 +3,7 @@ Adinkra keyboard
 
 Description
 -----------
-Adinkra Alphabet for Ghanaian languages of Akan, Ewe, Ga and Dagbani.
+This keyboard is designed for the Adinkra Alphabet for Ghanaian languages of Akan, Ewe, Ga and Dagbani. It is using a custom encoding.
 
 Links
 -----
