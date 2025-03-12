@@ -8,6 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -18,9 +19,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Mingrelian Cyrillic</Name>
-    <Copyright URL="">© SIL GlobaL</Copyright>
+    <Copyright URL="">© Harindeveloper</Copyright>
     <Author URL=""></Author>
-    <Description URL=""></Description>
+    <Description URL="">Mingrelian Cyrillic is a Cyrillic keyboard for the Mingrelian language in Georgia.</Description>
     <Version URL=""></Version>
   </Info>
   <Files>
@@ -61,24 +62,33 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\..\..\Downloads\mingrelian_cyrillic\source\mingrelian_cyrillic.kvks</Name>
-      <Description>File mingrelian_cyrillic.kvks</Description>
+      <Name>..\build\mingrelian_cyrillic.js</Name>
+      <Description>File mingrelian_cyrillic.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kvks</FileType>
+      <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\..\..\Downloads\mingrelian_cyrillic\source\mingrelian_cyrillic.kps</Name>
-      <Description>File mingrelian_cyrillic.kps</Description>
+      <Name>..\build\mingrelian_cyrillic.kvk</Name>
+      <Description>File mingrelian_cyrillic.kvk</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kps</FileType>
+      <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\..\..\Downloads\mingrelian_cyrillic\source\mingrelian_cyrillic.kmn</Name>
-      <Description>File mingrelian_cyrillic.kmn</Description>
+      <Name>..\build\mingrelian_cyrillic.kmx</Name>
+      <Description>Keyboard Mingrelian Cyrillic</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.kmn</FileType>
+      <FileType>.kmx</FileType>
     </File>
   </Files>
-  <Keyboards/>
+  <Keyboards>
+    <Keyboard>
+      <Name>Mingrelian Cyrillic</Name>
+      <ID>mingrelian_cyrillic</ID>
+      <Version>1.0</Version>
+      <Languages>
+        <Language ID="xmf-Cyrl-GE">Mingrelian (Cyrillic, Georgia)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
