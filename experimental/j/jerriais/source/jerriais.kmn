@@ -1,7 +1,7 @@
 ﻿store(&VERSION) '10.0'
 store(&NAME) 'Jèrriais'
 store(&COPYRIGHT) 'Copyright © Jerriais.Tech'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'jerriais.ico'
 store(&VISUALKEYBOARD) 'jerriais.kvks'
@@ -22,8 +22,8 @@ any(plainvowels) "`" + "`" > index(gravevowels,1)
 any(plainvowels) "^" + "^" > index(circumvowels,1)
 any(plainvowels) '"' + '"' > index(dresisvowels,1)
 
-"Y" + "^" > U+0176
-"y" + "^" > U+0177
+"Y^" + "^" > U+0176
+"y^" + "^" > U+0177
 
 "C," + "," > U+00C7
 "c," + "," > U+00E7
