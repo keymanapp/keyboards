@@ -8,6 +8,10 @@ taigi viet telex Change History
 * fix several bugs
 * uses new structure to store more characters
 
+3.0.3 (2025-1-24)
+----------------
+* fix missing index parameter
+  
 3.0.2 (2025-1-17)
 ----------------
 * Updated by cathaylab
