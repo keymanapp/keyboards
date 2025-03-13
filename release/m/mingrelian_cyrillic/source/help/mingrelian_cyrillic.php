@@ -5,7 +5,7 @@
   require_once('header.php');
 ?>
 <p>
-    Mingrelian Cyrillic.
+    Mingrelian Cyrillic is a Cyrillic keyboard for the Mingrelian language in Georgia.
 </p>
 
 <h1>Keyboard Layout</h1>
@@ -18,5 +18,3 @@
 <div id='osk-tablet' data-states='default shift'>
 </div>
 
-
-<p>© SIL Global</p>
