@@ -1,14 +1,11 @@
 Mingrelian Cyrillic keyboard
 ==============
 
-© SIL Global
-
-Version 1.0
+© Change copyright to Harindeveloper
 
 Description
 -----------
-
-Mingrelian Cyrillic generated from template
+Mingrelian Cyrillic is a Cyrillic keyboard for the Mingrelian language in Georgia.
 
 Links
 -----
