@@ -5,7 +5,7 @@ store(&MESSAGE) "More than just a Khmer Unicode keyboard."
 store(&TARGETS) 'any'
 store(&DISPLAYMAP) '../../../shared/fonts/kbd/kbdkhmr/KbdKhmr.json'
 store(&LAYOUTFILE) 'khmer_angkor.keyman-touch-layout'
-store(&KEYBOARDVERSION) '2.0'
+store(&KEYBOARDVERSION) '2.1'
 store(&BITMAP) 'khmer_angkor.ico'
 store(&VISUALKEYBOARD) 'khmer_angkor.kvks'
 
@@ -512,9 +512,6 @@ U+17D2 any(shiftable_c_2nd) U+17CA any(v_gen) any(v_pseudo) > context
 
 c SPECIAL CASE -- the following clusters may accept either of the two consonant shifters.
 
-U+1794 U+17D2 U+1799 any(c_shifter) > context
-U+179F U+17D2 U+1794 any(c_shifter) > context
-U+1786 U+17D2 U+1794 any(c_shifter) > context
 U+1794 U+17D2 U+1799 any(c_shifter) > context
 U+179F U+17D2 U+1794 any(c_shifter) > context
 U+1786 U+17D2 U+1794 any(c_shifter) > context
