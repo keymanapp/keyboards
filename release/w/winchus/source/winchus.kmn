@@ -10,7 +10,7 @@ c Source KeyboardID: 0000080a
 store(&VERSION) '17.0'
 store(&NAME) 'Winchus'
 store(&COPYRIGHT) '© SIL Global'
-store(&KEYBOARDVERSION) '1.1'
+store(&KEYBOARDVERSION) '1.2'
 store(&TARGETS) 'any'
 store(&BITMAP) 'winchus.ico'
 store(&VISUALKEYBOARD) 'winchus.kvks'
@@ -431,7 +431,12 @@ c | == en: Enable keys for mobile devices ==
 + [U_00D7] > U+00D7 c | ×
 + [U_00F7] > U+00F7 c | ÷
 + [U_0294] > U+0294 c | ʔ
-+ [U_02BC] > U+02BC c | ʼ
+c | + [U_02BC] > U+02BC c | ʼ es: Usar U+2019. Aunque sería mejor U+02BC, tiene muy poco uso y generaría confusión ya que parece 
+c |                               igual a U+2019. Hasta las traducciones bíblicas publicadas usan U+0027. También U+2019 será 
+c |                               usado para escribir en inglés a veces.  
+c |                           en: Use U+2019. Even though U+02BC, it is very little used and would generate confusion, since it 
+c |                               looks the same as U+2019. Even published bible translations use U+0027. U+2019 will also 
+c |                               sometimes be used to write in English.
 + [U_02D0] > U+02D0 c | ː
 + [U_2022] > U+2022 c | •
 + [U_2039] > U+2039 c | ‹
@@ -523,6 +528,13 @@ U+00AB U+003c > U+2039 c | "«" + "<" = "‹"
 U+003e U+003e > U+00BB c | ">" + ">" = "»"
 U+00BB U+003e > U+203A c | "»" + ">" = "›"
 
+c | == es: Habilitar las comillas inglesas y simples, para aplicaciones que no cambian U+0022 y U+0027 de forma automática. ==
+c | == en: Enable curved double and single quotation marks, for apps that don't change U+0022 and U+0027 automatically==
+U+0022 U+0022 > U+201C c | """ + """ = “
+U+201C U+0022 > U+201D c | """ + """ + """ = ”
+U+0027 U+0027 > U+2018 c | "'" + "'" = ‘
+U+2018 U+0027 > U+2019 c | "'" + "'" + "'"= ’
+
 dk(00b4) U+0027 > U+A78C c | ꞌ para teclear el saltillo (glotal), teclea la tecla de acento 
 c |                            (a la derecha de la "P") y después la tecla de comilla 
 c |                            (a la derecha de la "0"). En breve "´" + "'" > "ꞌ"
@@ -552,6 +564,12 @@ c | U+005D U+005D   > U+02BC c | ʼ  "]" + "]" es: eyectiva
 c |                                           en: ejective
 c | U+003F U+003d   > U+0294 c | ʔ	"?" + "=" es: glotal  
 c |                                           en: glottal
+c |                           es: Usar U+2019. Aunque sería mejor U+02BC, tiene muy poco uso y generaría confusión ya que parece 
+c |                               igual a U+2019. Hasta las traducciones bíblicas publicadas usan U+0027. También U+2019 será 
+c |                               usado para escribir en inglés a veces.  
+c |                           en: Use U+2019. Even though U+02BC, it is very little used and would generate confusion, since it 
+c |                               looks the same as U+2019. Even published bible translations use U+0027. U+2019 will also 
+c |                               sometimes be used to write in English.
 c | U+0061 U+003d   > U+0251 c | ɑ 	"a" + "=" 
 c | U+0061 U+005b   > U+00E6 c | æ	"a" + "[" 
 c | U+006f U+005b   > U+0254 c | ɔ	"o" + "[" 
