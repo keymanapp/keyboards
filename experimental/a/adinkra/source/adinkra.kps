@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>splash.bmp</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -19,28 +17,27 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Taigi Viet Telex</Name>
-    <Copyright URL="">Copyright © cathaylab</Copyright>
-    <Author URL="mailto:goetiansoc@proton.me">cathaylab</Author>
-    <Description URL="">Taigi Viet Telex for Tâi-gí (Taiwanese) pe̍h-ōe-jī, Tiê-chiu Pe̍h-ūe-jī and hàn bûn. 台語越式telex拍字法，會使拍台語白話字潮州白話字佮漢文</Description>
+    <Name URL="">Adinkra</Name>
+    <Copyright URL="">Copyright © Adinkra Alphabet</Copyright>
+    <Author URL="">Adinkra Alphabet</Author>
+    <Description URL="">This keyboard is designed for the Adinkra Alphabet for Ghanaian languages of Akan, Ewe, Ga and Dagbani. It is using a custom encoding.</Description>
     <Version URL=""></Version>
-    <WebSite URL="https://github.com/Cathaylaboratory">https://github.com/Cathaylaboratory</WebSite>
   </Info>
   <Files>
     <File>
-      <Name>..\build\taigi_viet_telex.kmx</Name>
+      <Name>..\build\adinkra.kmx</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
-      <Name>..\build\taigi_viet_telex.js</Name>
+      <Name>..\build\adinkra.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>..\build\taigi_viet_telex.kvk</Name>
+      <Name>..\build\adinkra.kvk</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
@@ -64,31 +61,24 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>taigitelexU_.png</Name>
-      <Description>File taigitelexU_.png</Description>
+      <Name>..\assets\Adinkra.250308-1423.ttf</Name>
+      <Description>Font Adinkra Alphabet</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>taigitelexU_S.png</Name>
-      <Description>File taigitelexU_S.png</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>splash.bmp</Name>
-      <Description>File splash.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Taigi Viet Telex</Name>
-      <ID>taigi_viet_telex</ID>
-      <Version>3.1</Version>
+      <Name>Adinkra</Name>
+      <ID>adinkra</ID>
+      <Version>1.0</Version>
+      <OSKFont>..\assets\Adinkra.250308-1423.ttf</OSKFont>
+      <DisplayFont>..\assets\Adinkra.250308-1423.ttf</DisplayFont>
       <Languages>
-        <Language ID="nan-Latn-TW">Pe̍h-ōe-jī</Language>
+        <Language ID="ak-Zzzz">Akan</Language>
+        <Language ID="ee-Zzzz">Ewe</Language>
+        <Language ID="gaa-Zzzz">Ga</Language>
+        <Language ID="dag-Zzzz">Dagbani</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

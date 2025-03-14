@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'taigi_viet_telex Keyboard Help';
+  $pagename = 'vietnam Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
   require_once('header.php');
