@@ -1,7 +1,7 @@
 Mingrelian Cyrillic keyboard
 ==============
 
-© Change copyright to Harindeveloper
+© Harindeveloper
 
 Description
 -----------
