@@ -1,0 +1,200 @@
+/* INICIO_SECCIÓN#01 */
+/* #region sección#01 */ 
+
+    body {
+        margin: 0 auto;
+        padding: 0 5%;
+        max-width: 1600px;
+        font-family: Arial, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 0.75em;
+        /* padding-left: 20px; */
+    }
+
+    h3 {
+        font-size: 1.75em;
+        margin-bottom: 1em;
+        /* padding-left: 20px; */
+    }
+
+    h4 {
+        font-size: 1.5em;
+        margin-bottom: 1.25em;
+    }
+
+    h5 {
+        font-size: 1.25em;
+        margin-bottom: 1.5em;
+    }
+
+    h6 {
+        font-size: 1em;
+        margin-bottom: 1.75em;
+    }
+
+    kbd {
+    background: none repeat scroll 0 0 #4D4D4D;
+    border: 1px solid #CACACA;
+    border-right: 2px solid #B3B1B1;
+    border-bottom: 2px solid #B3B1B1;
+    border-radius: 8px;
+    color: #FEFEFE;
+    font-family: "NotoSans-Regular-Ascii", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 1px 4px;
+    min-width: 1.0em;
+    text-align: center;
+    display: inline-block;
+    /* height: 1.5em; Added to make the height uniform. But it doesn't seem to work */
+    }
+    .kbd-link {
+        background-color: blue;
+        color: #ffffff;
+    }
+
+    /*es: Un nuevo formato para representar el resultado, lo que aparece en la pantalla*/
+    /*en: A new format to represent output, what appears on the screen*/
+    .kbd-resultado { 
+    background: none repeat scroll 0 0 #b2d3ff;
+    border: 2px solid #b2d3ff;
+    border-right: 0px solid #B3B1B1;
+    border-bottom: 0px solid #B3B1B1;
+    border-radius: 25px;
+    color: #000000;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle; /* Vertically center */
+    }
+
+    tbody.alinear-izquierda td {
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    td.td-nota {
+        text-align: left;
+    }
+    
+    
+    ol {
+        line-height: 1.75;
+        margin-left: 20px;
+        list-style-type: decimal; /* Level 1 */
+    }
+
+    ol ol {
+        list-style-type: lower-alpha; /* Level 2 */
+    }
+
+    ul {
+        line-height: 1.75;
+        list-style-type: disc; /* Level 1 */
+        margin-left: 20px;
+        }
+
+        ul ul {
+            list-style-type: circle; /* Level 2 */
+        }
+
+        ul ul ul {
+            list-style-type: square; /* Level 3 */
+        }
+
+       
+    ul.no-bullets {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+    }
+
+    li {
+    }
+    .seccion-principal {  /* en: main section */
+        font-weight: bold; 
+    }
+    table.mapa-deslizamiento {
+        border: 2px solid black; /* Border around the table */
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+        min-width: 30px;  /* Ensure all cells have the same width */
+        height: 30px;
+        max-width: 50px; /* Maximum width */
+        max-height: 30px; /* Maximum height */
+        white-space: nowrap; /* Prevents text from wrapping */
+        text-align: center;
+        background-color: #ffffffCC;
+        break-inside: avoid; 
+            /* en: Prevents page breaks inside tables */
+            /* es: Evita que la tabla se imprime entre dos páginas*/
+    }
+
+    table.mapa-deslizamiento th, table.mapa-deslizamiento td {
+        border: none; 
+            /* en: No border for table cells */
+            /* es: Dibuja las celdas sin borde */
+        vertical-align: middle; 
+            /* en: Vertically center */
+            /* es: Centrar verticalmente */
+        min-width: 30px; 
+            /* en: Ensure all cells have the same width */
+            /* es: Asegura que todas las celdas tengan el mismo ancho */
+
+    }
+
+    /* @page, @page landscape-section, y .landscape permiten los teclados en la sección de "Configuración del teclado" imprimirse en modo horizontal, lo cual es importante al imprimir en A5 (lo cual facilita la lectura en celulares). */
+    @page {
+    size: auto;
+    }
+
+    @page landscape-section {
+    size: landscape;
+    }
+
+    .landscape {
+    page: landscape-section;
+    }
+
+    /* es: Evita que la sección se imprime entre más de una página*/
+    /* en: Avoids printing the section on more than one page */
+    div.sin-saltos {
+        break-inside: avoid;
+    }
+
+/* #endregion */
+/* COPIAR A winchus.php */
+/* FIN_SECCIÓN#01 */
