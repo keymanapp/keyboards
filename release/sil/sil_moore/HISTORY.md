@@ -1,6 +1,10 @@
 Mooré - Burkina Faso Change History
 ====================
 
+2.1.1 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 2.1 (2024-09-19)
 ----------------
 * Added touch layout

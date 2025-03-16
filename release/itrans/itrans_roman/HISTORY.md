@@ -1,6 +1,10 @@
 Indic Romanization from ITRANS - Version History
 ===========================
 
+1.2.1 (2025-02-17)
+----------------
+* Add kvk to list of files
+
 1.2.0 (2024-02-12)
 ----------------
 * Add a rule to output U+2019 when type U+0027 (') two times

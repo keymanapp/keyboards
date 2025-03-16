@@ -8,7 +8,7 @@
 <h2>Fonts</h2>
 
 <p>The keyboard will work with any extended Arabic script font. However, because Rohingya requires some special glyph variants, 
-	the <a href=http://software.sil.org/scheherazade>Scheherazade</a> font developed by SIL International is best suited for Rohingya. 
+	the <a href=http://software.sil.org/scheherazade>Scheherazade</a> font developed by SIL Global is best suited for Rohingya. 
 	This keyboard package comes with the Scheherazade New Rohingya font which has all the special glyph variants.</p>
 
 

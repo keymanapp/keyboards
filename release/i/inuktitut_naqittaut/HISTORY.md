@@ -1,6 +1,10 @@
 Qaniujaaqpait | ᖃᓂᐅᔮᖅᐸᐃᑦ Change History
 ==================================
 
+1.6.1 (20 Feb 2025)
+-----------------
+* Put OSKFont from .kps file into .kvks file
+
 1.6 (16 Jul 2020)
 -----------------
 * Use AboriginalSerifREGULAR.ttf font for touch layout

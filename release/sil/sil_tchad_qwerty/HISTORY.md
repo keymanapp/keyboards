@@ -1,6 +1,10 @@
 Tchad QWERTY Keyboard Change History
 =======================
 
+5.3.1 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
 5.3 (25 Jun 2024)
 ------------------
 * Change to positional layout (QWERTY only for this version)
