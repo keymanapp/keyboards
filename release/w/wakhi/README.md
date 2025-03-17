@@ -7,6 +7,7 @@ Wakhi keyboard for desktop and mobile
 
 Links
 -----
+https://keyman.com/keyboards/wackhi
 
 Copyright
 ---------
