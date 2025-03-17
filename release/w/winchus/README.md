@@ -43,10 +43,10 @@ _(No es necesario cambiar la versión si solo se han realizado modificaciones en
 9. Abre `welcome.htm` en un editor como Visual Studio Code o Notepad++
 10. Busca cada instancia de "BUSCA "INSTANCIADEVERSIÓN#". En la próxima línea después de cada instancia verás donde actualizar la versión (a veces en un URL).
 11. Guarda `welcome.htm`
-12. Actualiza el número en el enlace al final de este mismo documento, al final, y guarda los cambios
+12. Actualiza el número en los dos enlaces en este mismo documento, y guarda los cambios
 13. Sigue las instrucciones para actualizar `winchus.php` (ver abajo)
 
-## Actualización de `kb.css`
+## Actualizar `kb.css`
 1. Abre `/winchus/welcome/kb.css`, edítalo y guárdalo
 2. Verifica los cambios abriendo `welcome.htm` en el navegador
 3. Copia el archivo en `/winchus/help/`
@@ -55,19 +55,20 @@ _(No es necesario cambiar la versión si solo se han realizado modificaciones en
 6. Selecciona la línea completa y un poco más hasta que el cursor apenas aparece en la próxima línea. (En realidad, no es la próxima, sino el fin de la sección.)
 7. Borra esa segunda sección, y guarda el archivo
 
-## Actualización de `welcome.htm`
+## Actualizar `welcome.htm`
 1. Realiza las modificaciones necesarias y guarda los cambios
 2. Crea una copia
-3. Abre la copia en Word y usa la revisión ortográfica
-4. Activa el control de cambios y envía el archivo a un hispanohablante para su revisión
-5. Aplica las correcciones en **`welcome.htm`**, no en la copia
-6. Actualiza la fecha al final del documento
-7. Guarda los cambios
-8. Si has modificado `kb.css`, sigue las indicaciones de la sección `Actualización de kb.css`
+3. Abre la copia en Word y activa el control de cambios.
+4. Usa la revisión ortográfica y aplica las correcciones en **`welcome.htm` y en la copia**
+5. envía el archivo a un hispanohablante para su revisión
+6. Aplica las correcciones en **`welcome.htm`**, no en la copia
+7. Actualiza la fecha al final del documento
+8. Guarda los cambios
+9. Si has modificado `kb.css`, sigue las indicaciones de la sección `Actualización de kb.css`
 
 Es recomendable revisar periódicamente el documento completo y seguir los pasos indicados para asegurar que todo esté actualizado, especialmente tras un cambio de versión de Keyman.
 
-## Actualización de `winchus.php`
+## Actualizar `winchus.php`
 1. Abre `welcome.htm` y `winchus.php`
 2. (Si ya actualizaste la versión en `welcome.htm`, no es necesario hacerlo aquí manualmente)
 3. Busca `<!-- INICIO_SECCIÓN#01 -->` y `<!-- #region SECCIÓN#01 -->` en `welcome.htm` y `winchus.php`. En Visual Studio Code, colapsa la sección en ambos archivos. (A la izquierda de la segunda línea haz clic en la flechita para colapsar.)
@@ -86,7 +87,7 @@ Es recomendable revisar periódicamente el documento completo y seguir los pasos
 7. Nómbralo `winchus.pdf` (todo en **minúsculas**)
 8. Coloca el archivo en `/winchus/source/welcome` y `/winchus/source/help`
 
-## Actualización de la aplicación Winchus en Android
+## Actualizar la aplicación Winchus en Android
 1. Asegúrate de tener la última versión de Keyboard App Builder
 2. Abre el proyecto en Keyboard App Builder, y en el lado izquierdo haz clic en "Keyboards"
 3. Elimina el teclado Winchus de la lista
@@ -100,7 +101,7 @@ Es recomendable revisar periódicamente el documento completo y seguir los pasos
 11. Selecciona la pestaña "APK"
 12. Aumenta la "Version Code" en uno
 13. Ajusta "Version Name" a la misma versión de Keyboard App Builder. De ser necesario, aumenta el último dígito también para distinguirla de otra versión reciente. 
-14. Considera si es necesario actualizar "About", en el lado izquierdo. (Ahí también está la documentación para el usario.)
+14. Considera si es necesario actualizar "About", en el lado izquierdo. (Ahí también está la documentación para el usuario.)
 15. En el lado izquierdo haz clic en "App Store"
 16. Selecciona la pestaña "Google Play Store Listing" y actualiza la descripción, los gráficos, y la sección "What's New"
 17. Selecciona la pestaña "Scriptoria"
@@ -109,7 +110,7 @@ Es recomendable revisar periódicamente el documento completo y seguir los pasos
 20. Seguir los pasos en Scriptoria para actualizar la aplicación en el Play Store
 21. Una vez aprobada, promociona la aplicación en redes sociales
 
-## Actualización en el repositorio Keyman
+## Actualizar el repositorio Keyman
 1. Accede a GitHub y actualiza tu _fork_ de [keymanapp/keyboards](https://github.com/keymanapp/keyboards)
 2. Con cada cambio de versión, indica los cambios en `HISTORY.md`, siguiendo el mismo formato. Ser muy breve. 
 3. Seguir los pasos [aquí](https://help.keyman.com/developer/keyboards/github/step-3)
@@ -132,13 +133,11 @@ Para problemas, preguntas, comentarios, y sugerencias, por favor escriba a [alex
 ¡Yulsulpallä\! Muchas gracias.
 
 ---
----
-
 # English:
 
-*Write in any Quechua language with the agility of a hummingbird.*
+Write in any Quechua language with the agility of a hummingbird.
 
-*© SIL Global*
+© SIL Global
 
 # Purpose
 
@@ -162,7 +161,7 @@ See the section [Instrucciones para desarrolladores de Winchus](#instrucciones-p
 
 # More resources
 
-<!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE CON CADA ACTUALIZACIÓN-->[Click here](https://help.keyman.com/keyboard/winchus/1.1/winchus ) to read the full documentation, including instructions on how to use the keyboard. Note that it is only in Spanish, so you may want to use a machine translator like Deepl or Google Translate. 
+<!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE CON CADA ACTUALIZACIÓN-->[Click here](https://help.keyman.com/keyboard/winchus/1.2/winchus ) to read the full documentation, including instructions on how to use the keyboard. Note that it is only in Spanish, so you may want to use a machine translator like Deepl or Google Translate. 
 
 # Copyright
 
@@ -172,4 +171,5 @@ See [LICENSE.md](LICENSE.md).
 
 For problems, questions, comments, and suggestions, please write to [alex\_larkin@sil.org](mailto:alex_larkin@sil.org). WhatsApp: [+51.938.405.223](https://wa.me/51938405223). Mention the name of the language in which you are writing and include examples, if relevant. 
 
-¡Yulsulpallä\! Thanks so much. 
+¡Yulsulpallä\! Thanks so much.
+
