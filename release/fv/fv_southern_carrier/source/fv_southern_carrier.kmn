@@ -7,7 +7,7 @@ store(&VISUALKEYBOARD) 'fv_southern_carrier.kvks'
 store(&KEYBOARDVERSION) '10.1'
 
 begin Unicode > use(main)
- 
+
 group(main) using keys
 
 c --- START OF DESKTOP LAYOUT RULES ---
@@ -103,7 +103,7 @@ c --- rules and constraints ---
 'ᘖ' + [K_O] > 'ᘔ'
 'ᘔ' + [K_BKSP] > 'ᘖ'
 
-+ [K_K] > 'ᐠ' 
++ [K_K] > 'ᐠ'
 'ᐠ' + [K_H] > 'ᐥ'
 'ᐠ' + any(VowelKeys) > index(KVowels,2)
 'ᗶ' + [K_O] > 'ᗵ'
@@ -206,10 +206,10 @@ c --- rules and constraints ---
 'ᙀ' + [K_BKSP] > 'ᙁ'
 
 'ᗮ' + [K_QUOTE] > 'ᗮᗮ'
-'ᗮᗮ' + any(Plosive) > 'ᗮ' index(BVowels,3) 
+'ᗮᗮ' + any(Plosive) > 'ᗮ' index(BVowels,3)
 
 c --- deadkey and punctuation ---
-+ [K_LBRKT] > deadkey(Deadkey) 
++ [K_LBRKT] > deadkey(Deadkey)
 + [K_COLON] > 'ᐧ'
 + [SHIFT K_8] > 'ᕯ'
 + [K_F] > 'ᶣ'
@@ -313,7 +313,7 @@ store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B]
 + [T_VOW] > 'ᐊ'
 + [T_A] > 'ᐊ'
 'ᐊ' + any(VOW_NoAKeys) > index(VOW_NoA,2)
-+ any(VOW_NoAKeys) > index(VOW_NoA,1) 
++ any(VOW_NoAKeys) > index(VOW_NoA,1)
 
 
 + [T_H] > 'ᐸ'
@@ -324,7 +324,7 @@ store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B]
 + [T_GH] > 'ᗉ'
 + [T_GHA] > 'ᗉ'
 'ᗉ' + any(GH_NoAKeys) > index(GH_NoA,2)
-+ any(GH_NoAKeys) > index(GH_NoA,1) 
++ any(GH_NoAKeys) > index(GH_NoA,1)
 
 + [T_Rr] > 'ᗏ'
 + [T_Rra] > 'ᗏ'
@@ -348,7 +348,7 @@ store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B]
 
 + [T_T] > 'ᗡ'
 + [T_TA] > 'ᗡ'
-'ᗡ' + any(T_NoAKeys) > index(T_NoA,2) 
+'ᗡ' + any(T_NoAKeys) > index(T_NoA,2)
 + any(T_NoAKeys) > index(T_NoA,1)
 
 + [T_TP] > 'ᗧ'
@@ -421,7 +421,7 @@ store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B]
 'ᘹ' + any(TL_NoAKeys) > index(TL_NoA,2)
 + any(TL_NoAKeys) > index(TL_NoA,1)
 
-+ [T_TLP] > 'ᘿ' 
++ [T_TLP] > 'ᘿ'
 + [T_TLPA] > 'ᘿ'
 'ᘿ' + any(TLP_NoAKeys) > index(TLP_NoA,2)
 + any(TLP_NoAKeys) > index(TLP_NoA,1)
@@ -462,7 +462,7 @@ store(NavKeys) [T_VOW] [T_H] [T_GH] [T_Rr] [T_W] [T_WH] [T_D] [T_T] [T_TP] [T_B]
 + any(TSP_NoAKeys) > index(TSP_NoA,1)
 
 c Preventing navigation keys from outputting when swapping between syllable sets while typing
-any(Letters) + any(NavKeys) > index(Letters,1) nul
+any(Letters) + any(NavKeys) > index(Letters,1)
 
 c Individual Finals
 + [T_ZH] > 'ᙇᙚ'
