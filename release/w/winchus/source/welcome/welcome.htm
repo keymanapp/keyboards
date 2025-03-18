@@ -1,256 +1,29 @@
+<!--INSTANCIADEVERSIÓN#01-->
+<!--ACTUALIZADO PARA VERSIÓN 1.1-->
 <!--ACTUALIZAR NÚMERO DE VERSIÓN ABAJO CON CADA REVISIÓN-->
-<!--BUSCA "ACTUALIZAR NÚMERO DE VERSIÓN ABAJO CON CADA REVISIÓN" Y "ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE ABAJO CON CADA REVISIÓN" -->
+<!--BUSCA "INSTANCIADEVERSIÓN#" -->
 
-<!--Para actualizar el PDF, abre este documento en Chrome, imprimir a PDF en A5 con ilustraciones de fondo pero sin pies de página. Después, sube a ilovepdf.com y escoge la opción "Page Numbers". En el cuadrito de "Position" escoge la opción para centrar el número en medio, en la parte inferior. Después haz clic en "Add page numbers". Después, haz clic en "Download PDF numbered".-->
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Winchus</title>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Winchus</title>
+        <link rel="stylesheet" href="kb.css" />
 
-    <style>
-        body {
-            margin: 0 auto;
-            padding: 0 5%;
-            max-width: 1600px;
-            font-family: Arial, sans-serif;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #333;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-bottom: 0.75em;
-            /* padding-left: 20px; */
-        }
-
-        h3 {
-            font-size: 1.75em;
-            margin-bottom: 1em;
-            /* padding-left: 20px; */
-        }
-
-        h4 {
-            font-size: 1.5em;
-            margin-bottom: 1.25em;
-        }
-
-        h5 {
-            font-size: 1.25em;
-            margin-bottom: 1.5em;
-        }
-
-        h6 {
-            font-size: 1em;
-            margin-bottom: 1.75em;
-        }
-
-        kbd {
-        background: none repeat scroll 0 0 #4D4D4D;
-        border: 1px solid #CACACA;
-        border-right: 2px solid #B3B1B1;
-        border-bottom: 2px solid #B3B1B1;
-        border-radius: 8px;
-        color: #FEFEFE;
-        font-family: "NotoSans-Regular-Ascii", "Arial", sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 0;
-        padding: 1px 4px;
-        min-width: 1.0em;
-        text-align: center;
-        display: inline-block;
-        /* height: 1.5em; Added to make the height uniform. But it doesn't seem to work */
-        }
-        .kbd-link {
-            background-color: blue;
-            color: #ffffff;
-        }
-    
-        .kbd-resultado { /*es: Un nuevo formato para representar el resultado, lo que aparece en la pantalla*/
-                    /*en: A new format to represent output, what appears on the screen*/
-        background: none repeat scroll 0 0 #b2d3ff;
-        border: 2px solid #b2d3ff;
-        border-right: 0px solid #B3B1B1;
-        border-bottom: 0px solid #B3B1B1;
-        border-radius: 25px;
-        color: #000000;
-    }
-
-        table {
-            border-collapse: collapse;
-            margin-bottom: 1.5em;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-            vertical-align: middle; /* Vertically center */
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        td.td-nota {
-            text-align: left;
-        }
-        ol {
-            line-height: 1.75;
-        }
-        ul {
-            line-height: 1.75;
-        }
-
-        ul.no-bullets {
-        list-style-type: none;
-        /* margin: 0;
-        padding: 0; */
-        }
-
-        li {
-        }
-        .seccion-principal {  /* en: main section */
-            font-weight: bold; 
-        }
-        table.mapa-deslizamiento {
-            border: 2px solid black; /* Border around the table */
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            overflow: hidden;
-            padding: 10px 5px;
-            word-break: normal;
-            min-width: 30px;  /* Ensure all cells have the same width */
-            height: 30px;
-            max-width: 50px; /* Maximum width */
-            max-height: 30px; /* Maximum height */
-            white-space: nowrap; /* Prevents text from wrapping */
-            text-align: center;
-            background-color: #ffffffCC;
-        }
-
-        table.mapa-deslizamiento th, table.mapa-deslizamiento td {
-            border: none; /* No border for table cells */
-            vertical-align: middle; /* Vertically center */
-            min-width: 30px; /* Ensure all cells have the same width */
-        }
-
-        /* @page, @page landscape-secion, y .landscape permiten los teclados en la sección de "Configuración del teclado" imprimirse en modo horizontal, lo cual es importante al imprimir en A5 (lo cual facilita la lectura en celulares). */
-        @page {
-        size: auto;
-        }
-
-        @page landscape-section {
-        size: landscape;
-        }
-
-        .landscape {
-        page: landscape-section;
-        }
-        
-        /* INICIO DE CLASES PARA MOSTRAR EL TECLADO*/
-        /* COPIADO Y PEGADO DESDE EL ARCHIVO GENERADO POR KEYMAN DEVELOPER */
-        /* winchus.kmn > On-Screen > Export... */
-        
-        .key { 
-            float: left;
-            display: block; 
-            position: relative;
-            overflow: hidden;
-            height: 35px;
-            
-                margin: 2px 0px 0px 4px;
-              
-        }
-        
-        #K_SPACE {
-          width: 234px; 
-          
-            background-image: url('key-space.gif'); 
-          
-        }
-
-        #K_BKSLASH {
-          width: 42px; 
-          
-            background-image: url('key-bkslash.gif'); 
-          
-        }
-        
-        #K_oE2 {
-          
-            display:none;
-          
-        }
-        
-        #K_SHIFTL {
-          width: 80px;background-image: url('key-shiftl.gif');
-        }
-        
-        .plain {
-          
-            background-image: url('key-plain.gif');
-          
-          background-repeat: no-repeat;
-          width: 34px;
-        }
-        
-        .special {
-          background-repeat: no-repeat;
-          
-        }
-        
-        .keycap {
-          font: bold 7pt Arial; 
-          position: absolute; 
-          left: 6px; 
-          top: 6px;
-        }
-        
-        .key .keycap {          
-          display: none;
-        }
-        
-        .special .keycap {
-          display: block;
-        }
-        
-        .keytext {
-          
-					font:
-						12pt
-							 
-						"Arial"; 
-          position: absolute; 
-          display: block;
-          right: 5px;
-          bottom: 4px;
-          color: blue;
-        }
-
-        /* FIN DE CLASES PARA MOSTRAR EL TECLADO*/
-        
-    </style>
-</head>
+    </head>
 <body>
+<!-- COPIAR A winchus.php -->
+<!-- INICIO_SECCIÓN#01 -->
+<!-- #region SECCIÓN#01 -->
     <br /> 
     <h1>Winchus</h1><br />
     <div style="text-align: center;">
         <p><i>Escribe en cualquier idioma Quechua<br />
             con la agilidad de un colibrí.</i></p>
         <p><br/></p>
-        <!--ACTUALIZAR NÚMERO DE VERSIÓN ABAJO CON CADA REVISIÓN-->
-        <p>Versión 1.1</p>
+        <!--INSTANCIADEVERSIÓN#02-->
+        <p>Versión 1.2</p>
     
 
     <!-- <br /><br /><a href="http://tiny.cc/descargar-winchus-teclado">tiny.cc/descargar-winchus-teclado</a><br />
@@ -272,61 +45,68 @@
     </a>
     </div>
 
-<a id="tabla-de-contenidos">&nbsp;</a> <!-- Esta ancla esta aparte porque en algunos lados la tabla de contenidos está borrada. Mas, los enlaces abajo quedarán. Así no se desaparecerá la ancla.-->
-
-<h3>Tabla de contenidos</h3>
-<ul>
+    <a id="tabla-de-contenidos">&nbsp;</a> <!-- Esta ancla esta aparte porque en algunos lados la tabla de contenidos está borrada. Mas, los enlaces abajo quedarán. Así no se desaparecerá la ancla.-->
     
-    <li class="seccion-principal"><a href="#guia-rapida-celular">Guía rápida para usar con celular</a></li>
+    <!-- es: Estoy dejando esta tabla de contenidos en el documento PHP por que por el momento en la vista móvil no aparece el menú automático del lado derecho. Así que es vital que los usuarios en móvil tengan esta tabla de contenidos.-->
+    <!-- en: I'm leaving this table of contents in the PHP document because at the moment the automatic menu on the right side doesn't appear in the mobile view. So it's vital that mobile users have this table of contents.-->
+    <h3>Tabla de contenidos</h3>
     <ul>
-        <li><a href="#caracteres-adicionales">Caracteres adicionales</a></li>
+        
+        <li class="seccion-principal"><a href="#guia-rapida-celular">Guía rápida para usar con celular</a></li>
         <ul>
-            <li><a href="#metodo-rapido">Método rápido: presiona y desliza</a></li>
-            <li><a href="#metodo-alternativo">Método alternativo: presión larga</a></li>
+            <li><a href="#caracteres-adicionales">Caracteres adicionales</a></li>
+            <ul>
+                <li><a href="#metodo-rapido">Método rápido: presiona y desliza</a></li>
+                <li><a href="#metodo-alternativo">Método alternativo: presión larga</a></li>
+            </ul>
+            <li><a href="#emojis">Emojis</a></li>
         </ul>
-        <li><a href="#emojis">Emojis</a></li>
-    </ul>
-    <li class="seccion-principal"><a href="#guia-rapida-teclado-fisico">Guía rápida para usar con un teclado físico (Computadoras y laptops)</a></li>
-    <li class="seccion-principal"><a href="#introduccion">Introducción al teclado Winchus</a></li>
-        <li class="seccion-principal"><a href="#nuevos-caracteres">Nuevos caracteres</a></li>
+        <li class="seccion-principal"><a href="#guia-rapida-teclado-fisico">Guía rápida para usar con un teclado físico (Computadoras y laptops)</a></li>
+        <li class="seccion-principal"><a href="#introduccion">Introducción al teclado Winchus</a></li>
+            <li class="seccion-principal"><a href="#nuevos-caracteres">Nuevos caracteres</a></li>
+            <ul>
+                <li><a href="#consonantes">Consonantes</a></li>
+                <li><a href="#puntuacion">Puntuación- comillas angulares</a></li>
+            </ul>
+        <li class="seccion-principal"><a href="#teclado-fisico">Teclado físico (Computadoras y laptops)</a></li>
         <ul>
-            <li><a href="#consonantes">Consonantes</a></li>
-            <li><a href="#puntuacion">Puntuación- comillas angulares</a></li>
-        </ul>
-    <li class="seccion-principal"><a href="#teclado-fisico">Teclado físico (Computadoras y laptops)</a></li>
-    <ul>
-        <li><a href="#introduccion-teclado-fisico">Introducción a Winchus en los teclados físicos</a></li>
-        <li><a href="#como-instalar">Cómo Instalar en tu computadora o laptop</a></li>
-        <li><a href="#configuracion-teclado">Configuración del teclado</a></li>
-        <li><a href="#consonantes-teclado">Cómo teclear los consonantes</a></li>
-        <ul>
-            <li><a href="#acentos">Acentos</a></li>
-            <li><a href="#circunflejos">Circunflejos</a></li>
-            <li><a href="#carones">Carones</a></li>
-            <li><a href="#saltillos">Saltillos (glotales)</a></li>
-        </ul>
-        <li><a href="#vocales">Cómo teclear los vocales</a></li>
-        <li><a href="#simbolos">Cómo teclear los símbolos y la puntuación</a></li>
-        <li><a href="#ayuda-teclado-eeuu">Ayuda si tienes un teclado físico de los Estados Unidos</a></li>
-        </ul>
+            <li><a href="#introduccion-teclado-fisico">Introducción a Winchus en los teclados físicos</a></li>
+            <li><a href="#como-instalar">Cómo Instalar en tu computadora o laptop</a></li>
+            <li><a href="#configuracion-teclado">Configuración del teclado</a></li>
+            <li><a href="#consonantes-teclado">Cómo teclear los consonantes</a></li>
+            <ul>
+                <li><a href="#acentos">Acentos</a></li>
+                <li><a href="#circunflejos">Circunflejos</a></li>
+                <li><a href="#carones">Carones</a></li>
+                <li><a href="#saltillos">Saltillos (glotales)</a></li>
+            </ul>
+            <li><a href="#vocales">Cómo teclear los vocales</a></li>
+            <li><a href="#simbolos">Cómo teclear los símbolos y la puntuación</a></li>
+            <li><a href="#ayuda-teclado-eeuu">Ayuda si tienes un teclado físico de los Estados Unidos</a></li>
+            </ul>
 
 
-   
-    <li class="seccion-principal"><a href="#como-instalar-android">Cómo instalar en dispositivos Android</a></li>
-    <li class="seccion-principal"><a href="#como-instalar-apple">Cómo instalar en dispositivos Apple (iPhone, iPad)</a></li>
-    <li class="seccion-principal"><a href="#como-usar-celular">Cómo usar en el celular</a></li>
-    <ul>
-        <li><a href="#introduccion-celulares">Introducción a Winchus en los celulares</a></li>
-        <li><a href="#deslizar">Método rápido: presiona y desliza</a></li>
+    
+        <li class="seccion-principal"><a href="#como-instalar-android">Cómo instalar en dispositivos Android</a></li>
+        <li class="seccion-principal"><a href="#como-instalar-apple">Cómo instalar en dispositivos Apple (iPhone, iPad)</a></li>
+        <li class="seccion-principal"><a href="#como-usar-celular">Cómo usar en el celular</a></li>
         <ul>
-            <li><a href="#indice-deslizamiento">Mapa de caracteres alternativos en el celular</a></li>
+            <li><a href="#introduccion-celulares">Introducción a Winchus en los celulares</a></li>
+            <li><a href="#deslizar">Método rápido: presiona y desliza</a></li>
+            <ul>
+                <li><a href="#indice-deslizamiento">Mapa de caracteres alternativos en el celular</a></li>
+            </ul>
+            <li><a href="#presion-larga">Método alternativo: presión larga</a></li>
+            <li><a href="#emojis-2">Emojis</a></li>
+            <li><a href="#como-cambiar-teclado">Como cambiar el teclado</a></li>
         </ul>
-        <li><a href="#presion-larga">Método alternativo: presión larga</a></li>
-        <li><a href="#emojis-2">Emojis</a></li>
-        <li><a href="#como-cambiar-teclado">Como cambiar el teclado</a></li>
+        <li class="seccion-principal"><a href="#solucionar-problemas">Solucionar Problemas</a></li>
+        <ul>
+            <li><a href="#problemas-celular">Problemas en el dispositivo móvil</a></li>
+            <li><a href="#problemas-computadora">Problemas en la computadora</a></li>
+        </ul>
+        <li class="seccion-principal"><a href="#informacion-contacto">Información de contacto</a></li>
     </ul>
-    <li class="seccion-principal"><a href="#informacion-contacto">Información de contacto</a></li>
-</ul>
 
     <h2 id="guia-rapida-celular"><a href="#tabla-de-contenidos">Guía rápida para usar con celular</a></h2>
     <ul class="no-bullets">
@@ -336,9 +116,9 @@
             <ul class="no-bullets">
                 <p>Para acceder a un carácter especial, pulsa la tecla e inmediatamente desliza el dedo en una dirección. Dependiendo de hacia dónde lo deslices, aparecerá escrito uno de los caracteres especiales.</p>
                     <p>Este GIF animado muestra la función con la tecla <kbd>C</kbd>:</p>
-                    <!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE ABAJO CON CADA REVISIÓN-->
                     <!--ASÍ LOS QUIENES ESTÁN VIENDO EN PDF PODRÁN VER EL GIF-->
-                    <a href="https://help.keyman.com/keyboard/winchus/1.1/winchus#deslizar-gif-1"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;" id="deslizar-gif-1"/></a>
+                    <!--INSTANCIADEVERSIÓN#03-->
+                    <a href="https://help.keyman.com/keyboard/winchus/1.2/winchus#deslizar-gif-1"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;" id="deslizar-gif-1"/></a>
                     <br />
                     <p>Desliza para abajo para conseguir la <kbd class="kbd-resultado">Ć</kbd>:</p>
                     <img src="deslizar-360-1era-imagen.png" style="display: block; margin-left: auto; margin-right: auto;" />
@@ -431,14 +211,20 @@
                     </tr>
                     <tr>
                         <td><kbd class="kbd-resultado">ꞌ</kbd> <kbd class="kbd-resultado">Ꞌ</kbd></td>
-                        <td><kbd>´</kbd> + <kbd>’</kbd></td>
-                        <td><kbd>´</kbd> + <kbd>Mayús</kbd> + <kbd>’</kbd></td>
+                        <td><kbd>´</kbd> + <kbd>'</kbd></td>
+                        <td><kbd>´</kbd> + <kbd>Mayús</kbd> + <kbd>'</kbd></td>
                     </tr>
+                </tbody>
+            </table>
+            <table class="sin-saltos">
+                <thead>
                     <tr>
                         <th>Puntuación </th>
                         <th>Abertura</th>
                         <th>Cierre</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td><kbd class="kbd-resultado">«</kbd> <kbd class="kbd-resultado">»</kbd></td>
                         <td><kbd>&lt;</kbd> + <kbd>&lt;</kbd></td>
@@ -456,6 +242,16 @@
                     </tr>
                     <tr>
                         <td colspan="2">(Para teclados estadounidenses. Recuerda usar la <kbd>Alt</kbd> derecha.)</td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">“</kbd> <kbd class="kbd-resultado">”</kbd></td>
+                        <td><kbd>Mayús</kbd> + <kbd>2</kbd> + <kbd>Mayús</kbd> + <kbd>2</kbd></td>
+                        <td><kbd>Mayús</kbd> + <kbd>2</kbd> + <kbd>Mayús</kbd> + <kbd>2</kbd> + <kbd>Mayús</kbd> + <kbd>2</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">‘</kbd> <kbd class="kbd-resultado">’</kbd></td>
+                        <td><kbd>'</kbd> + <kbd>'</kbd></td>
+                        <td><kbd>'</kbd> + <kbd>'</kbd> + <kbd>'</kbd></td>
                     </tr>
                 </tbody>
             </table>
@@ -520,7 +316,7 @@
             
             <p>Para representar la glotal que aparece frecuentemente en las variantes sureñas, tradicionalmente se ha usado la comilla simple (‘). Sin embargo, eso puede presentar dificultades en la representación del texto y en su procesamiento. (Por ejemplo, ¿cómo verificar que cada citación lleva ambas comillas cuando el mismo carácter también se usa en la formación de palabras?) Por eso este teclado también dispone del saltillo, otra manera de representar la glotal que hasta ahora tiene más uso en los idiomas indígenas de México. El saltillo se parece mucho a la comilla simple del español, pero no se dobla a un lado, como suele ocurrir cuando la comilla simple se usa para hacer una citación. Se debe tener en consideración que al usarla, podría surgir una dificultad al buscar una palabra si está escrita con la comilla en la búsqueda y con el saltillo en el texto (o viceversa). Puedes usar la opción que prefieras.</p>
             
-            <table>
+            <table class="sin-saltos">
                 <tr>
                     <th>-</th>
                     <th>Minúscula</th>
@@ -532,11 +328,15 @@
                     <td>Ꞌ</td>
                 </tr>
             </table>
+            
+            <p>El carácter " ʼ " identificado con el código Unicode U+02BC también se podría usar para el glotal, ya que está clasificado como un carácter para palabras y no para puntuación. Pero ya que no tiene mucho uso y se parece a la comilla simple " ’ " (U+2019), puede generar confusión. Por ende, este teclado no lo emplea.</p>
+
         </ul>
 
+    
         <h3 id="puntuacion"><a href="#tabla-de-contenidos">Puntuación- comillas angulares</a></h3>
             <ul class="no-bullets">
-                <table>
+                <table class="sin-saltos">
                     <tr>
                         <th>-</th>
                         <th>Abertura</th>
@@ -552,6 +352,16 @@
                         <td>‹</td>
                         <td>›</td>
                     </tr>
+                    <tr>
+                        <td>Comillas inglesas</td>
+                        <td>“</td>
+                        <td>”</td>
+                    </tr>
+                    <tr>
+                        <td>Comillas simples</td>
+                        <td>‘</td>
+                        <td>’</td>
+                    </tr>
                 </table>
             </ul>
     </ul>
@@ -560,7 +370,7 @@
     <ul class="no-bullets">
         <h3 id="introduccion-teclado-fisico"><a href="#tabla-de-contenidos">Introducción a Winchus en los teclados físicos</a></h3>
         <ul class="no-bullets">
-            <p>Siempre que sale <kbd>Alt</kbd>, recuerda que habla de la <kbd>Alt</kbd> Derecha (o “<kbd>Alt Gr</kbd>”) que está a la derecha de la barra de espacio. Igual como en el teclado latinoamericano, la <kbd>Alt</kbd> que está a la izquierda no tendrá el efecto deseado.</p>
+            <p>Siempre que sale <kbd>Alt</kbd>, recuerda que habla de la <kbd>Alt</kbd> Derecha (o <kbd>Alt Gr</kbd>) que está a la derecha de la barra de espacio. Igual como en el teclado latinoamericano, la <kbd>Alt</kbd> que está a la izquierda no tendrá el efecto deseado.</p>
             
             <p>Siempre que veas un gráfico como <kbd>Alt</kbd>, <kbd>.</kbd>, o <kbd>U</kbd>, este hace referencia a una tecla en tu teclado. Cuando veas un carácter como <kbd class="kbd-resultado">Ć</kbd>, hace referencia al carácter resultado, que aparece en la pantalla.</p>
         </ul>
@@ -573,7 +383,7 @@
                     <li>(Si tienes Mac o Linux, estos pasos podrían variar un poco)</li>
                 </ul>
                 <li>Instala Keyman</li>
-                <li>Abre el programa “Keyman Configuration”</li>
+                <li><a id="actualizar-teclado-computadora">&nbsp;</a>Abre el programa “Keyman Configuration”</li>
                 <li>En el rincón inferior izquierdo de la ventanilla, haz clic en el botón “Descargar teclado…”</li>
                 <li>Busca “Winchus” y haz clic en el resultado</li>
                 <li>Haz clic en el botón verde que diga, “Install Keyboard”</li>
@@ -591,327 +401,63 @@
                 <ul class="no-bullets">
         
                     <p>La configuración es muy parecida al teclado latinoamericano. Si estás viendo desde tu celular, gíralo para verla en modo horizontal:</p>
-                    
-                    <h4>Minúscula:</h4>
-                    
-                    <div>
-                        <div class="key plain" id="K_BKQUOTE">
-                        <div class="keycap">`</div>
-                        <div class="keytext">|</div>
-                        </div>
-                        <div class="key plain" id="K_1">
-                        <div class="keycap">1</div>
-                        <div class="keytext">1</div>
-                        </div>
-                        <div class="key plain" id="K_2">
-                        <div class="keycap">2</div>
-                        <div class="keytext">2</div>
-                        </div>
-                        <div class="key plain" id="K_3">
-                        <div class="keycap">3</div>
-                        <div class="keytext">3</div>
-                        </div>
-                        <div class="key plain" id="K_4">
-                        <div class="keycap">4</div>
-                        <div class="keytext">4</div>
-                        </div>
-                        <div class="key plain" id="K_5">
-                        <div class="keycap">5</div>
-                        <div class="keytext">5</div>
-                        </div>
-                        <div class="key plain" id="K_6">
-                        <div class="keycap">6</div>
-                        <div class="keytext">6</div>
-                        </div>
-                        <div class="key plain" id="K_7">
-                        <div class="keycap">7</div>
-                        <div class="keytext">7</div>
-                        </div>
-                        <div class="key plain" id="K_8">
-                        <div class="keycap">8</div>
-                        <div class="keytext">8</div>
-                        </div>
-                        <div class="key plain" id="K_9">
-                        <div class="keycap">9</div>
-                        <div class="keytext">9</div>
-                        </div>
-                        <div class="key plain" id="K_0">
-                        <div class="keycap">0</div>
-                        <div class="keytext">0</div>
-                        </div>
-                        <div class="key plain" id="K_HYPHEN">
-                        <div class="keycap">-</div>
-                        <div class="keytext">'</div>
-                        </div>
-                        <div class="key plain" id="K_EQUAL">
-                        <div class="keycap">=</div>
-                        <div class="keytext">¿</div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 60px;
-                                
-                                background-image: url('key-backspace.gif');
-                                ">
-                        <div class="keycap">Retroceso</div>
-                        </div><br style="clear: left"><div class="key special" id="" style="
-                                width: 52px;
-                                
-                                background-image: url('key-tab.gif');
-                                ">
-                        <div class="keycap">Tab</div>
-                        </div>
-                        <div class="key plain" id="K_Q">
-                        <div class="keycap">Q</div>
-                        <div class="keytext">q</div>
-                        </div>
-                        <div class="key plain" id="K_W">
-                        <div class="keycap">W</div>
-                        <div class="keytext">w</div>
-                        </div>
-                        <div class="key plain" id="K_E">
-                        <div class="keycap">E</div>
-                        <div class="keytext">e</div>
-                        </div>
-                        <div class="key plain" id="K_R">
-                        <div class="keycap">R</div>
-                        <div class="keytext">r</div>
-                        </div>
-                        <div class="key plain" id="K_T">
-                        <div class="keycap">T</div>
-                        <div class="keytext">t</div>
-                        </div>
-                        <div class="key plain" id="K_Y">
-                        <div class="keycap">Y</div>
-                        <div class="keytext">y</div>
-                        </div>
-                        <div class="key plain" id="K_U">
-                        <div class="keycap">U</div>
-                        <div class="keytext">u</div>
-                        </div>
-                        <div class="key plain" id="K_I">
-                        <div class="keycap">I</div>
-                        <div class="keytext">i</div>
-                        </div>
-                        <div class="key plain" id="K_O">
-                        <div class="keycap">O</div>
-                        <div class="keytext">o</div>
-                        </div>
-                        <div class="key plain" id="K_P">
-                        <div class="keycap">P</div>
-                        <div class="keytext">p</div>
-                        </div>
-                        <div class="key plain" id="K_LBRKT">
-                        <div class="keycap">[</div>
-                        <div class="keytext">´</div>
-                        </div>
-                        <div class="key plain" id="K_RBRKT">
-                        <div class="keycap">]</div>
-                        <div class="keytext">+</div>
-                        </div>
-                        <div class="key plain" id="K_BKSLASH">
-                        <div class="keycap">\</div>
-                        <div class="keytext">}</div>
-                        </div><br style="clear: left"><div class="key special" id="" style="
-                                width: 62px;
-                                
-                                background-image: url('key-capslock.gif');
-                                ">
-                        <div class="keycap">Bloq Mayús</div>
-                        </div>
-                        <div class="key plain" id="K_A">
-                        <div class="keycap">A</div>
-                        <div class="keytext">a</div>
-                        </div>
-                        <div class="key plain" id="K_S">
-                        <div class="keycap">S</div>
-                        <div class="keytext">s</div>
-                        </div>
-                        <div class="key plain" id="K_D">
-                        <div class="keycap">D</div>
-                        <div class="keytext">d</div>
-                        </div>
-                        <div class="key plain" id="K_F">
-                        <div class="keycap">F</div>
-                        <div class="keytext">f</div>
-                        </div>
-                        <div class="key plain" id="K_G">
-                        <div class="keycap">G</div>
-                        <div class="keytext">g</div>
-                        </div>
-                        <div class="key plain" id="K_H">
-                        <div class="keycap">H</div>
-                        <div class="keytext">h</div>
-                        </div>
-                        <div class="key plain" id="K_J">
-                        <div class="keycap">J</div>
-                        <div class="keytext">j</div>
-                        </div>
-                        <div class="key plain" id="K_K">
-                        <div class="keycap">K</div>
-                        <div class="keytext">k</div>
-                        </div>
-                        <div class="key plain" id="K_L">
-                        <div class="keycap">L</div>
-                        <div class="keytext">l</div>
-                        </div>
-                        <div class="key plain" id="K_COLON">
-                        <div class="keycap">;</div>
-                        <div class="keytext">ñ</div>
-                        </div>
-                        <div class="key plain" id="K_QUOTE">
-                        <div class="keycap">'</div>
-                        <div class="keytext">{</div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 70px;
-                                
-                                background-image: url('key-enter.gif');
-                                ">
-                        <div class="keycap">Retorno</div>
-                        </div><br style="clear: left"><div class="key special" id="K_SHIFTL" style="
-                                width: px;
-                                ">
-                        <div class="keycap">Mayús</div>
-                        </div>
-                        <div class="key plain" id="K_oE2">
-                        <div class="keycap">\</div>
-                        <div class="keytext">&lt;</div>
-                        </div>
-                        <div class="key plain" id="K_Z">
-                        <div class="keycap">Z</div>
-                        <div class="keytext">z</div>
-                        </div>
-                        <div class="key plain" id="K_X">
-                        <div class="keycap">X</div>
-                        <div class="keytext">x</div>
-                        </div>
-                        <div class="key plain" id="K_C">
-                        <div class="keycap">C</div>
-                        <div class="keytext">c</div>
-                        </div>
-                        <div class="key plain" id="K_V">
-                        <div class="keycap">V</div>
-                        <div class="keytext">v</div>
-                        </div>
-                        <div class="key plain" id="K_B">
-                        <div class="keycap">B</div>
-                        <div class="keytext">b</div>
-                        </div>
-                        <div class="key plain" id="K_N">
-                        <div class="keycap">N</div>
-                        <div class="keytext">n</div>
-                        </div>
-                        <div class="key plain" id="K_M">
-                        <div class="keycap">M</div>
-                        <div class="keytext">m</div>
-                        </div>
-                        <div class="key plain" id="K_COMMA">
-                        <div class="keycap">,</div>
-                        <div class="keytext">,</div>
-                        </div>
-                        <div class="key plain" id="K_PERIOD">
-                        <div class="keycap">.</div>
-                        <div class="keytext">.</div>
-                        </div>
-                        <div class="key plain" id="K_SLASH">
-                        <div class="keycap">/</div>
-                        <div class="keytext">-</div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 90px;
-                                
-                                background-image: url('key-shiftr.gif');
-                                ">
-                        <div class="keycap">Mayús</div>
-                        </div><br style="clear: left"><div class="key special" id="" style="
-                                width: 60px;
-                                
-                                background-image: url('key-ctrll.gif');
-                                ">
-                        <div class="keycap">Ctrl Iz.</div>
-                        </div>
-                        <div style="width: 30px; display: block; float: left;"> </div>
-                        <div class="key special" id="" style="
-                                width: 50px;
-                                
-                                background-image: url('key-altl.gif');
-                                ">
-                        <div class="keycap">Alt Iz.</div>
-                        </div>
-                        <div class="key plain" id="K_SPACE">
-                        <div class="keycap"> </div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 50px;
-                                
-                                background-image: url('key-altr.gif');
-                                ">
-                        <div class="keycap">Alt Der.</div>
-                        </div>
-                        <div style="width: 54px; display: block; float: left;"> </div>
-                        <div class="key special" id="" style="
-                                width: 60px;
-                                
-                                background-image: url('key-ctrlr.gif');
-                                ">
-                        <div class="keycap">Ctrl Der.</div>
-                        </div>
-                    </div>
-                    <br />
-                    <h4 style="page-break-before: always;">Mayúscula:</h4>
-                    
-                    <div>
+<!-- #endregion -->
+<!-- COPIAR A winchus.php -->
+<!-- FIN_SECCIÓN#01 -->
+                    <div class="sin-saltos">
+                        <h4>Minúscula:</h4>
+                        <div>
                             <div class="key plain" id="K_BKQUOTE">
                             <div class="keycap">`</div>
-                            <div class="keytext">°</div>
+                            <div class="keytext">|</div>
                             </div>
                             <div class="key plain" id="K_1">
                             <div class="keycap">1</div>
-                            <div class="keytext">!</div>
+                            <div class="keytext">1</div>
                             </div>
                             <div class="key plain" id="K_2">
                             <div class="keycap">2</div>
-                            <div class="keytext">"</div>
+                            <div class="keytext">2</div>
                             </div>
                             <div class="key plain" id="K_3">
                             <div class="keycap">3</div>
-                            <div class="keytext">#</div>
+                            <div class="keytext">3</div>
                             </div>
                             <div class="key plain" id="K_4">
                             <div class="keycap">4</div>
-                            <div class="keytext">$</div>
+                            <div class="keytext">4</div>
                             </div>
                             <div class="key plain" id="K_5">
                             <div class="keycap">5</div>
-                            <div class="keytext">%</div>
+                            <div class="keytext">5</div>
                             </div>
                             <div class="key plain" id="K_6">
                             <div class="keycap">6</div>
-                            <div class="keytext">&amp;</div>
+                            <div class="keytext">6</div>
                             </div>
                             <div class="key plain" id="K_7">
                             <div class="keycap">7</div>
-                            <div class="keytext">/</div>
+                            <div class="keytext">7</div>
                             </div>
                             <div class="key plain" id="K_8">
                             <div class="keycap">8</div>
-                            <div class="keytext">(</div>
+                            <div class="keytext">8</div>
                             </div>
                             <div class="key plain" id="K_9">
                             <div class="keycap">9</div>
-                            <div class="keytext">)</div>
+                            <div class="keytext">9</div>
                             </div>
                             <div class="key plain" id="K_0">
                             <div class="keycap">0</div>
-                            <div class="keytext">=</div>
+                            <div class="keytext">0</div>
                             </div>
                             <div class="key plain" id="K_HYPHEN">
                             <div class="keycap">-</div>
-                            <div class="keytext">?</div>
+                            <div class="keytext">'</div>
                             </div>
                             <div class="key plain" id="K_EQUAL">
                             <div class="keycap">=</div>
-                            <div class="keytext">¡</div>
+                            <div class="keytext">¿</div>
                             </div>
                             <div class="key special" id="" style="
                                     width: 60px;
@@ -928,55 +474,55 @@
                             </div>
                             <div class="key plain" id="K_Q">
                             <div class="keycap">Q</div>
-                            <div class="keytext">Q</div>
+                            <div class="keytext">q</div>
                             </div>
                             <div class="key plain" id="K_W">
                             <div class="keycap">W</div>
-                            <div class="keytext">W</div>
+                            <div class="keytext">w</div>
                             </div>
                             <div class="key plain" id="K_E">
                             <div class="keycap">E</div>
-                            <div class="keytext">E</div>
+                            <div class="keytext">e</div>
                             </div>
                             <div class="key plain" id="K_R">
                             <div class="keycap">R</div>
-                            <div class="keytext">R</div>
+                            <div class="keytext">r</div>
                             </div>
                             <div class="key plain" id="K_T">
                             <div class="keycap">T</div>
-                            <div class="keytext">T</div>
+                            <div class="keytext">t</div>
                             </div>
                             <div class="key plain" id="K_Y">
                             <div class="keycap">Y</div>
-                            <div class="keytext">Y</div>
+                            <div class="keytext">y</div>
                             </div>
                             <div class="key plain" id="K_U">
                             <div class="keycap">U</div>
-                            <div class="keytext">U</div>
+                            <div class="keytext">u</div>
                             </div>
                             <div class="key plain" id="K_I">
                             <div class="keycap">I</div>
-                            <div class="keytext">I</div>
+                            <div class="keytext">i</div>
                             </div>
                             <div class="key plain" id="K_O">
                             <div class="keycap">O</div>
-                            <div class="keytext">O</div>
+                            <div class="keytext">o</div>
                             </div>
                             <div class="key plain" id="K_P">
                             <div class="keycap">P</div>
-                            <div class="keytext">P</div>
+                            <div class="keytext">p</div>
                             </div>
                             <div class="key plain" id="K_LBRKT">
                             <div class="keycap">[</div>
-                            <div class="keytext">¨</div>
+                            <div class="keytext">´</div>
                             </div>
                             <div class="key plain" id="K_RBRKT">
                             <div class="keycap">]</div>
-                            <div class="keytext">*</div>
+                            <div class="keytext">+</div>
                             </div>
                             <div class="key plain" id="K_BKSLASH">
                             <div class="keycap">\</div>
-                            <div class="keytext">]</div>
+                            <div class="keytext">}</div>
                             </div><br style="clear: left"><div class="key special" id="" style="
                                     width: 62px;
                                     
@@ -986,47 +532,47 @@
                             </div>
                             <div class="key plain" id="K_A">
                             <div class="keycap">A</div>
-                            <div class="keytext">A</div>
+                            <div class="keytext">a</div>
                             </div>
                             <div class="key plain" id="K_S">
                             <div class="keycap">S</div>
-                            <div class="keytext">S</div>
+                            <div class="keytext">s</div>
                             </div>
                             <div class="key plain" id="K_D">
                             <div class="keycap">D</div>
-                            <div class="keytext">D</div>
+                            <div class="keytext">d</div>
                             </div>
                             <div class="key plain" id="K_F">
                             <div class="keycap">F</div>
-                            <div class="keytext">F</div>
+                            <div class="keytext">f</div>
                             </div>
                             <div class="key plain" id="K_G">
                             <div class="keycap">G</div>
-                            <div class="keytext">G</div>
+                            <div class="keytext">g</div>
                             </div>
                             <div class="key plain" id="K_H">
                             <div class="keycap">H</div>
-                            <div class="keytext">H</div>
+                            <div class="keytext">h</div>
                             </div>
                             <div class="key plain" id="K_J">
                             <div class="keycap">J</div>
-                            <div class="keytext">J</div>
+                            <div class="keytext">j</div>
                             </div>
                             <div class="key plain" id="K_K">
                             <div class="keycap">K</div>
-                            <div class="keytext">K</div>
+                            <div class="keytext">k</div>
                             </div>
                             <div class="key plain" id="K_L">
                             <div class="keycap">L</div>
-                            <div class="keytext">L</div>
+                            <div class="keytext">l</div>
                             </div>
                             <div class="key plain" id="K_COLON">
                             <div class="keycap">;</div>
-                            <div class="keytext">Ñ</div>
+                            <div class="keytext">ñ</div>
                             </div>
                             <div class="key plain" id="K_QUOTE">
                             <div class="keycap">'</div>
-                            <div class="keytext">[</div>
+                            <div class="keytext">{</div>
                             </div>
                             <div class="key special" id="" style="
                                     width: 70px;
@@ -1041,47 +587,47 @@
                             </div>
                             <div class="key plain" id="K_oE2">
                             <div class="keycap">\</div>
-                            <div class="keytext">&gt;</div>
+                            <div class="keytext">&lt;</div>
                             </div>
                             <div class="key plain" id="K_Z">
                             <div class="keycap">Z</div>
-                            <div class="keytext">Z</div>
+                            <div class="keytext">z</div>
                             </div>
                             <div class="key plain" id="K_X">
                             <div class="keycap">X</div>
-                            <div class="keytext">X</div>
+                            <div class="keytext">x</div>
                             </div>
                             <div class="key plain" id="K_C">
                             <div class="keycap">C</div>
-                            <div class="keytext">C</div>
+                            <div class="keytext">c</div>
                             </div>
                             <div class="key plain" id="K_V">
                             <div class="keycap">V</div>
-                            <div class="keytext">V</div>
+                            <div class="keytext">v</div>
                             </div>
                             <div class="key plain" id="K_B">
                             <div class="keycap">B</div>
-                            <div class="keytext">B</div>
+                            <div class="keytext">b</div>
                             </div>
                             <div class="key plain" id="K_N">
                             <div class="keycap">N</div>
-                            <div class="keytext">N</div>
+                            <div class="keytext">n</div>
                             </div>
                             <div class="key plain" id="K_M">
                             <div class="keycap">M</div>
-                            <div class="keytext">M</div>
+                            <div class="keytext">m</div>
                             </div>
                             <div class="key plain" id="K_COMMA">
                             <div class="keycap">,</div>
-                            <div class="keytext">;</div>
+                            <div class="keytext">,</div>
                             </div>
                             <div class="key plain" id="K_PERIOD">
                             <div class="keycap">.</div>
-                            <div class="keytext">:</div>
+                            <div class="keytext">.</div>
                             </div>
                             <div class="key plain" id="K_SLASH">
                             <div class="keycap">/</div>
-                            <div class="keytext">_</div>
+                            <div class="keytext">-</div>
                             </div>
                             <div class="key special" id="" style="
                                     width: 90px;
@@ -1122,241 +668,515 @@
                                     ">
                             <div class="keycap">Ctrl Der.</div>
                             </div>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="sin-saltos">
+                        <h4>Mayúscula:</h4>
+                        <div class="sin-saltos">
+                                <div class="key plain" id="K_BKQUOTE">
+                                <div class="keycap">`</div>
+                                <div class="keytext">°</div>
+                                </div>
+                                <div class="key plain" id="K_1">
+                                <div class="keycap">1</div>
+                                <div class="keytext">!</div>
+                                </div>
+                                <div class="key plain" id="K_2">
+                                <div class="keycap">2</div>
+                                <div class="keytext">"</div>
+                                </div>
+                                <div class="key plain" id="K_3">
+                                <div class="keycap">3</div>
+                                <div class="keytext">#</div>
+                                </div>
+                                <div class="key plain" id="K_4">
+                                <div class="keycap">4</div>
+                                <div class="keytext">$</div>
+                                </div>
+                                <div class="key plain" id="K_5">
+                                <div class="keycap">5</div>
+                                <div class="keytext">%</div>
+                                </div>
+                                <div class="key plain" id="K_6">
+                                <div class="keycap">6</div>
+                                <div class="keytext">&amp;</div>
+                                </div>
+                                <div class="key plain" id="K_7">
+                                <div class="keycap">7</div>
+                                <div class="keytext">/</div>
+                                </div>
+                                <div class="key plain" id="K_8">
+                                <div class="keycap">8</div>
+                                <div class="keytext">(</div>
+                                </div>
+                                <div class="key plain" id="K_9">
+                                <div class="keycap">9</div>
+                                <div class="keytext">)</div>
+                                </div>
+                                <div class="key plain" id="K_0">
+                                <div class="keycap">0</div>
+                                <div class="keytext">=</div>
+                                </div>
+                                <div class="key plain" id="K_HYPHEN">
+                                <div class="keycap">-</div>
+                                <div class="keytext">?</div>
+                                </div>
+                                <div class="key plain" id="K_EQUAL">
+                                <div class="keycap">=</div>
+                                <div class="keytext">¡</div>
+                                </div>
+                                <div class="key special" id="" style="
+                                        width: 60px;
+                                        
+                                        background-image: url('key-backspace.gif');
+                                        ">
+                                <div class="keycap">Retroceso</div>
+                                </div><br style="clear: left"><div class="key special" id="" style="
+                                        width: 52px;
+                                        
+                                        background-image: url('key-tab.gif');
+                                        ">
+                                <div class="keycap">Tab</div>
+                                </div>
+                                <div class="key plain" id="K_Q">
+                                <div class="keycap">Q</div>
+                                <div class="keytext">Q</div>
+                                </div>
+                                <div class="key plain" id="K_W">
+                                <div class="keycap">W</div>
+                                <div class="keytext">W</div>
+                                </div>
+                                <div class="key plain" id="K_E">
+                                <div class="keycap">E</div>
+                                <div class="keytext">E</div>
+                                </div>
+                                <div class="key plain" id="K_R">
+                                <div class="keycap">R</div>
+                                <div class="keytext">R</div>
+                                </div>
+                                <div class="key plain" id="K_T">
+                                <div class="keycap">T</div>
+                                <div class="keytext">T</div>
+                                </div>
+                                <div class="key plain" id="K_Y">
+                                <div class="keycap">Y</div>
+                                <div class="keytext">Y</div>
+                                </div>
+                                <div class="key plain" id="K_U">
+                                <div class="keycap">U</div>
+                                <div class="keytext">U</div>
+                                </div>
+                                <div class="key plain" id="K_I">
+                                <div class="keycap">I</div>
+                                <div class="keytext">I</div>
+                                </div>
+                                <div class="key plain" id="K_O">
+                                <div class="keycap">O</div>
+                                <div class="keytext">O</div>
+                                </div>
+                                <div class="key plain" id="K_P">
+                                <div class="keycap">P</div>
+                                <div class="keytext">P</div>
+                                </div>
+                                <div class="key plain" id="K_LBRKT">
+                                <div class="keycap">[</div>
+                                <div class="keytext">¨</div>
+                                </div>
+                                <div class="key plain" id="K_RBRKT">
+                                <div class="keycap">]</div>
+                                <div class="keytext">*</div>
+                                </div>
+                                <div class="key plain" id="K_BKSLASH">
+                                <div class="keycap">\</div>
+                                <div class="keytext">]</div>
+                                </div><br style="clear: left"><div class="key special" id="" style="
+                                        width: 62px;
+                                        
+                                        background-image: url('key-capslock.gif');
+                                        ">
+                                <div class="keycap">Bloq Mayús</div>
+                                </div>
+                                <div class="key plain" id="K_A">
+                                <div class="keycap">A</div>
+                                <div class="keytext">A</div>
+                                </div>
+                                <div class="key plain" id="K_S">
+                                <div class="keycap">S</div>
+                                <div class="keytext">S</div>
+                                </div>
+                                <div class="key plain" id="K_D">
+                                <div class="keycap">D</div>
+                                <div class="keytext">D</div>
+                                </div>
+                                <div class="key plain" id="K_F">
+                                <div class="keycap">F</div>
+                                <div class="keytext">F</div>
+                                </div>
+                                <div class="key plain" id="K_G">
+                                <div class="keycap">G</div>
+                                <div class="keytext">G</div>
+                                </div>
+                                <div class="key plain" id="K_H">
+                                <div class="keycap">H</div>
+                                <div class="keytext">H</div>
+                                </div>
+                                <div class="key plain" id="K_J">
+                                <div class="keycap">J</div>
+                                <div class="keytext">J</div>
+                                </div>
+                                <div class="key plain" id="K_K">
+                                <div class="keycap">K</div>
+                                <div class="keytext">K</div>
+                                </div>
+                                <div class="key plain" id="K_L">
+                                <div class="keycap">L</div>
+                                <div class="keytext">L</div>
+                                </div>
+                                <div class="key plain" id="K_COLON">
+                                <div class="keycap">;</div>
+                                <div class="keytext">Ñ</div>
+                                </div>
+                                <div class="key plain" id="K_QUOTE">
+                                <div class="keycap">'</div>
+                                <div class="keytext">[</div>
+                                </div>
+                                <div class="key special" id="" style="
+                                        width: 70px;
+                                        
+                                        background-image: url('key-enter.gif');
+                                        ">
+                                <div class="keycap">Retorno</div>
+                                </div><br style="clear: left"><div class="key special" id="K_SHIFTL" style="
+                                        width: px;
+                                        ">
+                                <div class="keycap">Mayús</div>
+                                </div>
+                                <div class="key plain" id="K_oE2">
+                                <div class="keycap">\</div>
+                                <div class="keytext">&gt;</div>
+                                </div>
+                                <div class="key plain" id="K_Z">
+                                <div class="keycap">Z</div>
+                                <div class="keytext">Z</div>
+                                </div>
+                                <div class="key plain" id="K_X">
+                                <div class="keycap">X</div>
+                                <div class="keytext">X</div>
+                                </div>
+                                <div class="key plain" id="K_C">
+                                <div class="keycap">C</div>
+                                <div class="keytext">C</div>
+                                </div>
+                                <div class="key plain" id="K_V">
+                                <div class="keycap">V</div>
+                                <div class="keytext">V</div>
+                                </div>
+                                <div class="key plain" id="K_B">
+                                <div class="keycap">B</div>
+                                <div class="keytext">B</div>
+                                </div>
+                                <div class="key plain" id="K_N">
+                                <div class="keycap">N</div>
+                                <div class="keytext">N</div>
+                                </div>
+                                <div class="key plain" id="K_M">
+                                <div class="keycap">M</div>
+                                <div class="keytext">M</div>
+                                </div>
+                                <div class="key plain" id="K_COMMA">
+                                <div class="keycap">,</div>
+                                <div class="keytext">;</div>
+                                </div>
+                                <div class="key plain" id="K_PERIOD">
+                                <div class="keycap">.</div>
+                                <div class="keytext">:</div>
+                                </div>
+                                <div class="key plain" id="K_SLASH">
+                                <div class="keycap">/</div>
+                                <div class="keytext">_</div>
+                                </div>
+                                <div class="key special" id="" style="
+                                        width: 90px;
+                                        
+                                        background-image: url('key-shiftr.gif');
+                                        ">
+                                <div class="keycap">Mayús</div>
+                                </div><br style="clear: left"><div class="key special" id="" style="
+                                        width: 60px;
+                                        
+                                        background-image: url('key-ctrll.gif');
+                                        ">
+                                <div class="keycap">Ctrl Iz.</div>
+                                </div>
+                                <div style="width: 30px; display: block; float: left;"> </div>
+                                <div class="key special" id="" style="
+                                        width: 50px;
+                                        
+                                        background-image: url('key-altl.gif');
+                                        ">
+                                <div class="keycap">Alt Iz.</div>
+                                </div>
+                                <div class="key plain" id="K_SPACE">
+                                <div class="keycap"> </div>
+                                </div>
+                                <div class="key special" id="" style="
+                                        width: 50px;
+                                        
+                                        background-image: url('key-altr.gif');
+                                        ">
+                                <div class="keycap">Alt Der.</div>
+                                </div>
+                                <div style="width: 54px; display: block; float: left;"> </div>
+                                <div class="key special" id="" style="
+                                        width: 60px;
+                                        
+                                        background-image: url('key-ctrlr.gif');
+                                        ">
+                                <div class="keycap">Ctrl Der.</div>
+                                </div>
+                        </div>
                     </div>
                     <br />
-                    <h4 style="page-break-before: always;">Alt Derecha:</h4>
-                    
-                    <div>
-                        <div class="key plain" id="K_BKQUOTE">
-                        <div class="keycap">`</div>
-                        <div class="keytext">¬</div>
+                    <div class="sin-saltos">
+                        <h4 >Alt Derecha:</h4>
+                        <div class="sin-saltos">
+                            <div class="key plain" id="K_BKQUOTE">
+                            <div class="keycap">`</div>
+                            <div class="keytext">¬</div>
+                            </div>
+                            <div class="key plain" id="K_1">
+                            <div class="keycap">1</div>
+                            </div>
+                            <div class="key plain" id="K_2">
+                            <div class="keycap">2</div>
+                            </div>
+                            <div class="key plain" id="K_3">
+                            <div class="keycap">3</div>
+                            </div>
+                            <div class="key plain" id="K_4">
+                            <div class="keycap">4</div>
+                            </div>
+                            <div class="key plain" id="K_5">
+                            <div class="keycap">5</div>
+                            </div>
+                            <div class="key plain" id="K_6">
+                            <div class="keycap">6</div>
+                            </div>
+                            <div class="key plain" id="K_7">
+                            <div class="keycap">7</div>
+                            </div>
+                            <div class="key plain" id="K_8">
+                            <div class="keycap">8</div>
+                            </div>
+                            <div class="key plain" id="K_9">
+                            <div class="keycap">9</div>
+                            </div>
+                            <div class="key plain" id="K_0">
+                            <div class="keycap">0</div>
+                            </div>
+                            <div class="key plain" id="K_HYPHEN">
+                            <div class="keycap">-</div>
+                            <div class="keytext">\</div>
+                            </div>
+                            <div class="key plain" id="K_EQUAL">
+                            <div class="keycap">=</div>
+                            </div>
+                            <div class="key special" id="" style="
+                                    width: 60px;
+                                    
+                                    background-image: url('key-backspace.gif');
+                                    ">
+                            <div class="keycap">Retroceso</div>
+                            </div><br style="clear: left"><div class="key special" id="" style="
+                                    width: 52px;
+                                    
+                                    background-image: url('key-tab.gif');
+                                    ">
+                            <div class="keycap">Tab</div>
+                            </div>
+                            <div class="key plain" id="K_Q">
+                            <div class="keycap">Q</div>
+                            <div class="keytext">@</div>
+                            </div>
+                            <div class="key plain" id="K_W">
+                            <div class="keycap">W</div>
+                            </div>
+                            <div class="key plain" id="K_E">
+                            <div class="keycap">E</div>
+                            </div>
+                            <div class="key plain" id="K_R">
+                            <div class="keycap">R</div>
+                            </div>
+                            <div class="key plain" id="K_T">
+                            <div class="keycap">T</div>
+                            </div>
+                            <div class="key plain" id="K_Y">
+                            <div class="keycap">Y</div>
+                            </div>
+                            <div class="key plain" id="K_U">
+                            <div class="keycap">U</div>
+                            </div>
+                            <div class="key plain" id="K_I">
+                            <div class="keycap">I</div>
+                            </div>
+                            <div class="key plain" id="K_O">
+                            <div class="keycap">O</div>
+                            </div>
+                            <div class="key plain" id="K_P">
+                            <div class="keycap">P</div>
+                            </div>
+                            <div class="key plain" id="K_LBRKT">
+                            <div class="keycap">[</div>
+                            </div>
+                            <div class="key plain" id="K_RBRKT">
+                            <div class="keycap">]</div>
+                            <div class="keytext">~</div>
+                            </div>
+                            <div class="key plain" id="K_BKSLASH">
+                            <div class="keycap">\</div>
+                            <div class="keytext">`</div>
+                            </div><br style="clear: left"><div class="key special" id="" style="
+                                    width: 62px;
+                                    
+                                    background-image: url('key-capslock.gif');
+                                    ">
+                            <div class="keycap">Bloq Mayús</div>
+                            </div>
+                            <div class="key plain" id="K_A">
+                            <div class="keycap">A</div>
+                            </div>
+                            <div class="key plain" id="K_S">
+                            <div class="keycap">S</div>
+                            </div>
+                            <div class="key plain" id="K_D">
+                            <div class="keycap">D</div>
+                            </div>
+                            <div class="key plain" id="K_F">
+                            <div class="keycap">F</div>
+                            </div>
+                            <div class="key plain" id="K_G">
+                            <div class="keycap">G</div>
+                            </div>
+                            <div class="key plain" id="K_H">
+                            <div class="keycap">H</div>
+                            </div>
+                            <div class="key plain" id="K_J">
+                            <div class="keycap">J</div>
+                            </div>
+                            <div class="key plain" id="K_K">
+                            <div class="keycap">K</div>
+                            </div>
+                            <div class="key plain" id="K_L">
+                            <div class="keycap">L</div>
+                            </div>
+                            <div class="key plain" id="K_COLON">
+                            <div class="keycap">;</div>
+                            </div>
+                            <div class="key plain" id="K_QUOTE">
+                            <div class="keycap">'</div>
+                            <div class="keytext">^</div>
+                            </div>
+                            <div class="key special" id="" style="
+                                    width: 70px;
+                                    
+                                    background-image: url('key-enter.gif');
+                                    ">
+                            <div class="keycap">Retorno</div>
+                            </div><br style="clear: left"><div class="key special" id="K_SHIFTL" style="
+                                    width: px;
+                                    ">
+                            <div class="keycap">Mayús</div>
+                            </div>
+                            <div class="key plain" id="K_oE2">
+                            <div class="keycap">\</div>
+                            </div>
+                            <div class="key plain" id="K_Z">
+                            <div class="keycap">Z</div>
+                            </div>
+                            <div class="key plain" id="K_X">
+                            <div class="keycap">X</div>
+                            </div>
+                            <div class="key plain" id="K_C">
+                            <div class="keycap">C</div>
+                            </div>
+                            <div class="key plain" id="K_V">
+                            <div class="keycap">V</div>
+                            </div>
+                            <div class="key plain" id="K_B">
+                            <div class="keycap">B</div>
+                            </div>
+                            <div class="key plain" id="K_N">
+                            <div class="keycap">N</div>
+                            </div>
+                            <div class="key plain" id="K_M">
+                            <div class="keycap">M</div>
+                            </div>
+                            <div class="key plain" id="K_COMMA">
+                            <div class="keycap">,</div>
+                            <div class="keytext">&lt;</div>
+                            </div>
+                            <div class="key plain" id="K_PERIOD">
+                            <div class="keycap">.</div>
+                            <div class="keytext">&gt;</div>
+                            </div>
+                            <div class="key plain" id="K_SLASH">
+                            <div class="keycap">/</div>
+                            </div>
+                            <div class="key special" id="" style="
+                                    width: 90px;
+                                    
+                                    background-image: url('key-shiftr.gif');
+                                    ">
+                            <div class="keycap">Mayús</div>
+                            </div><br style="clear: left"><div class="key special" id="" style="
+                                    width: 60px;
+                                    
+                                    background-image: url('key-ctrll.gif');
+                                    ">
+                            <div class="keycap">Ctrl Iz.</div>
+                            </div>
+                            <div style="width: 30px; display: block; float: left;"> </div>
+                            <div class="key special" id="" style="
+                                    width: 50px;
+                                    
+                                    background-image: url('key-altl.gif');
+                                    ">
+                            <div class="keycap">Alt Iz.</div>
+                            </div>
+                            <div class="key plain" id="K_SPACE">
+                            <div class="keycap"> </div>
+                            </div>
+                            <div class="key special" id="" style="
+                                    width: 50px;
+                                    
+                                    background-image: url('key-altr.gif');
+                                    ">
+                            <div class="keycap">Alt Der.</div>
+                            </div>
+                            <div style="width: 54px; display: block; float: left;"> </div>
+                            <div class="key special" id="" style="
+                                    width: 60px;
+                                    
+                                    background-image: url('key-ctrlr.gif');
+                                    ">
+                            <div class="keycap">Ctrl Der.</div>
+                            </div><br style="clear: left">
                         </div>
-                        <div class="key plain" id="K_1">
-                        <div class="keycap">1</div>
-                        </div>
-                        <div class="key plain" id="K_2">
-                        <div class="keycap">2</div>
-                        </div>
-                        <div class="key plain" id="K_3">
-                        <div class="keycap">3</div>
-                        </div>
-                        <div class="key plain" id="K_4">
-                        <div class="keycap">4</div>
-                        </div>
-                        <div class="key plain" id="K_5">
-                        <div class="keycap">5</div>
-                        </div>
-                        <div class="key plain" id="K_6">
-                        <div class="keycap">6</div>
-                        </div>
-                        <div class="key plain" id="K_7">
-                        <div class="keycap">7</div>
-                        </div>
-                        <div class="key plain" id="K_8">
-                        <div class="keycap">8</div>
-                        </div>
-                        <div class="key plain" id="K_9">
-                        <div class="keycap">9</div>
-                        </div>
-                        <div class="key plain" id="K_0">
-                        <div class="keycap">0</div>
-                        </div>
-                        <div class="key plain" id="K_HYPHEN">
-                        <div class="keycap">-</div>
-                        <div class="keytext">\</div>
-                        </div>
-                        <div class="key plain" id="K_EQUAL">
-                        <div class="keycap">=</div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 60px;
-                                
-                                background-image: url('key-backspace.gif');
-                                ">
-                        <div class="keycap">Retroceso</div>
-                        </div><br style="clear: left"><div class="key special" id="" style="
-                                width: 52px;
-                                
-                                background-image: url('key-tab.gif');
-                                ">
-                        <div class="keycap">Tab</div>
-                        </div>
-                        <div class="key plain" id="K_Q">
-                        <div class="keycap">Q</div>
-                        <div class="keytext">@</div>
-                        </div>
-                        <div class="key plain" id="K_W">
-                        <div class="keycap">W</div>
-                        </div>
-                        <div class="key plain" id="K_E">
-                        <div class="keycap">E</div>
-                        </div>
-                        <div class="key plain" id="K_R">
-                        <div class="keycap">R</div>
-                        </div>
-                        <div class="key plain" id="K_T">
-                        <div class="keycap">T</div>
-                        </div>
-                        <div class="key plain" id="K_Y">
-                        <div class="keycap">Y</div>
-                        </div>
-                        <div class="key plain" id="K_U">
-                        <div class="keycap">U</div>
-                        </div>
-                        <div class="key plain" id="K_I">
-                        <div class="keycap">I</div>
-                        </div>
-                        <div class="key plain" id="K_O">
-                        <div class="keycap">O</div>
-                        </div>
-                        <div class="key plain" id="K_P">
-                        <div class="keycap">P</div>
-                        </div>
-                        <div class="key plain" id="K_LBRKT">
-                        <div class="keycap">[</div>
-                        </div>
-                        <div class="key plain" id="K_RBRKT">
-                        <div class="keycap">]</div>
-                        <div class="keytext">~</div>
-                        </div>
-                        <div class="key plain" id="K_BKSLASH">
-                        <div class="keycap">\</div>
-                        </div><br style="clear: left"><div class="key special" id="" style="
-                                width: 62px;
-                                
-                                background-image: url('key-capslock.gif');
-                                ">
-                        <div class="keycap">Bloq Mayús</div>
-                        </div>
-                        <div class="key plain" id="K_A">
-                        <div class="keycap">A</div>
-                        </div>
-                        <div class="key plain" id="K_S">
-                        <div class="keycap">S</div>
-                        </div>
-                        <div class="key plain" id="K_D">
-                        <div class="keycap">D</div>
-                        </div>
-                        <div class="key plain" id="K_F">
-                        <div class="keycap">F</div>
-                        </div>
-                        <div class="key plain" id="K_G">
-                        <div class="keycap">G</div>
-                        </div>
-                        <div class="key plain" id="K_H">
-                        <div class="keycap">H</div>
-                        </div>
-                        <div class="key plain" id="K_J">
-                        <div class="keycap">J</div>
-                        </div>
-                        <div class="key plain" id="K_K">
-                        <div class="keycap">K</div>
-                        </div>
-                        <div class="key plain" id="K_L">
-                        <div class="keycap">L</div>
-                        </div>
-                        <div class="key plain" id="K_COLON">
-                        <div class="keycap">;</div>
-                        </div>
-                        <div class="key plain" id="K_QUOTE">
-                        <div class="keycap">'</div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 70px;
-                                
-                                background-image: url('key-enter.gif');
-                                ">
-                        <div class="keycap">Retorno</div>
-                        </div><br style="clear: left"><div class="key special" id="K_SHIFTL" style="
-                                width: px;
-                                ">
-                        <div class="keycap">Mayús</div>
-                        </div>
-                        <div class="key plain" id="K_oE2">
-                        <div class="keycap">\</div>
-                        </div>
-                        <div class="key plain" id="K_Z">
-                        <div class="keycap">Z</div>
-                        </div>
-                        <div class="key plain" id="K_X">
-                        <div class="keycap">X</div>
-                        </div>
-                        <div class="key plain" id="K_C">
-                        <div class="keycap">C</div>
-                        </div>
-                        <div class="key plain" id="K_V">
-                        <div class="keycap">V</div>
-                        </div>
-                        <div class="key plain" id="K_B">
-                        <div class="keycap">B</div>
-                        </div>
-                        <div class="key plain" id="K_N">
-                        <div class="keycap">N</div>
-                        </div>
-                        <div class="key plain" id="K_M">
-                        <div class="keycap">M</div>
-                        </div>
-                        <div class="key plain" id="K_COMMA">
-                        <div class="keycap">,</div>
-                        <div class="keytext">&lt;</div>
-                        </div>
-                        <div class="key plain" id="K_PERIOD">
-                        <div class="keycap">.</div>
-                        <div class="keytext">&gt;</div>
-                        </div>
-                        <div class="key plain" id="K_SLASH">
-                        <div class="keycap">/</div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 90px;
-                                
-                                background-image: url('key-shiftr.gif');
-                                ">
-                        <div class="keycap">Mayús</div>
-                        </div><br style="clear: left"><div class="key special" id="" style="
-                                width: 60px;
-                                
-                                background-image: url('key-ctrll.gif');
-                                ">
-                        <div class="keycap">Ctrl Iz.</div>
-                        </div>
-                        <div style="width: 30px; display: block; float: left;"> </div>
-                        <div class="key special" id="" style="
-                                width: 50px;
-                                
-                                background-image: url('key-altl.gif');
-                                ">
-                        <div class="keycap">Alt Iz.</div>
-                        </div>
-                        <div class="key plain" id="K_SPACE">
-                        <div class="keycap"> </div>
-                        </div>
-                        <div class="key special" id="" style="
-                                width: 50px;
-                                
-                                background-image: url('key-altr.gif');
-                                ">
-                        <div class="keycap">Alt Der.</div>
-                        </div>
-                        <div style="width: 54px; display: block; float: left;"> </div>
-                        <div class="key special" id="" style="
-                                width: 60px;
-                                
-                                background-image: url('key-ctrlr.gif');
-                                ">
-                        <div class="keycap">Ctrl Der.</div>
-                        </div><br style="clear: left">
                     </div>
                     </ul>
             </div>
-            </ul>        
+            </ul>
+<!-- COPIAR A winchus.php -->
+<!-- INICIO_SECCIÓN#02 -->
+<!-- #region SECCIÓN#02 -->
         <h3 id="consonantes-teclado"><a href="#tabla-de-contenidos">Cómo teclear los consonantes</a></h3>
         <ul class="no-bullets">
             <h4 id="acentos"><a href="#tabla-de-contenidos">Acentos</a></h4>
             <ul class="no-bullets">
         
                 <p>Para escribir los acentos, usa la misma tecla que es para poner acentos en las vocales: la <kbd>´</kbd>, que suele estar a la derecha de la <kbd>P</kbd>.</p>
-                <table>
+                <table class="sin-saltos">
                     <tr>
                         <th>Caracteres</th>
                         <th>Minúscula</th>
@@ -1383,28 +1203,32 @@
             <h4 id="circunflejos"><a href="#tabla-de-contenidos">Circunflejos</a></h4>
             <ul class="no-bullets">
                 <p>Siempre que salga <kbd>Mayús</kbd> dos o tres veces en un atajo, simplemente mantén presionada la tecla <kbd>Mayús</kbd> mientras tecleas las otras dos teclas una por una.</p>
-                <table>
-                    <tr>
-                        <th>Caracteres</th>
-                        <th>Minúscula</th>
-                        <th>Mayúscula</th>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">ĉ</kbd> <kbd class="kbd-resultado">Ĉ</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>{</kbd> + <kbd>C</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>{</kbd> + <kbd>Mayús</kbd> + <kbd>C</kbd></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">ĉ</kbd> <kbd class="kbd-resultado">Ĉ</kbd><br />(2<sup>da</sup> opción)</td>
-                        <td><kbd>Mayús</kbd> + <kbd>6</kbd> + <kbd>C</kbd></td>
-                        <td><kbd>Mayús</kbd> + <kbd>6</kbd> + <kbd>Mayús</kbd> <kbd>C</kbd></td>
-                    </tr>
+                <table class="sin-saltos">
+                    <thead>
+                        <tr>
+                            <th>Caracteres</th>
+                            <th>Minúscula</th>
+                            <th>Mayúscula</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><kbd class="kbd-resultado">ĉ</kbd> <kbd class="kbd-resultado">Ĉ</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>{</kbd> + <kbd>C</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>{</kbd> + <kbd>Mayús</kbd> + <kbd>C</kbd></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">ĉ</kbd> <kbd class="kbd-resultado">Ĉ</kbd><br />(2<sup>da</sup> opción)</td>
+                            <td><kbd>Mayús</kbd> + <kbd>6</kbd> + <kbd>C</kbd></td>
+                            <td><kbd>Mayús</kbd> + <kbd>6</kbd> + <kbd>Mayús</kbd> <kbd>C</kbd></td>
+                        </tr>
+                    </tbody>
                 </table>
             </ul>
             <h4 id="carones"><a href="#tabla-de-contenidos">Carones</a></h4>
             <ul class="no-bullets">
             <p>Siempre que salga <kbd>Mayús</kbd> dos o tres veces en un atajo, simplemente mantén presionada la tecla <kbd>Mayús</kbd> mientras tecleas las otras dos teclas una por una.</p>
-                <table>
+                <table class="sin-saltos">
                     <tr>
                         <th>Caracteres</th>
                         <th>Minúscula</th>
@@ -1425,17 +1249,21 @@
 
             <h4 id="saltillos"><a href="#tabla-de-contenidos">Saltillos (glotales)</a></h4>
             <ul class="no-bullets">
-                <table>
-                    <tr>
-                        <th>Carácter</th>
-                        <th>Minúscula</th>
-                        <th>Mayúscula</th>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">ꞌ</kbd> <kbd class="kbd-resultado">Ꞌ</kbd></td>
-                        <td><kbd>´</kbd> + <kbd>’</kbd></td>
-                        <td><kbd>´</kbd> + <kbd>Mayús</kbd> +  <kbd>’</kbd></td>
-                    </tr>
+                <table class="sin-saltos">
+                    <thead>
+                        <tr>
+                            <th>Carácter</th>
+                            <th>Minúscula</th>
+                            <th>Mayúscula</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><kbd class="kbd-resultado">ꞌ</kbd> <kbd class="kbd-resultado">Ꞌ</kbd></td>
+                            <td><kbd>´</kbd> + <kbd>'</kbd></td>
+                            <td><kbd>´</kbd> + <kbd>Mayús</kbd> +  <kbd>'</kbd></td>
+                        </tr>
+                    </tbody>
                 </table>
                 
                 <p>En otras palabras, para teclear el saltillo (glotal) minúscula, teclea la tecla de acento (a la derecha de la <kbd>P</kbd>) y después la tecla de comilla (a la derecha de la <kbd>0</kbd>). 
@@ -1457,7 +1285,7 @@
 
             <p>Si tienes un teclado Latinoamericano, teclear las comillas angulares será un poco más fácil. Teclea la <kbd>&lt</kbd> dos veces seguidas para conseguir <kbd class="kbd-resultado">«</kbd>. Teclea la <kbd>&lt</kbd> una vez más para conseguir la <kbd class="kbd-resultado">‹</kbd>. Lo mismo aplica para la comilla de cierre.</p>
             <p>Si tu teclado es estadounidense, usa los atajos siguientes:</p>
-            <table>
+            <table class="sin-saltos">
                 <tr>
                     <th>Carácter</th>
                     <th>Combinación<br />de teclado<br />estadounidense</th>
@@ -1477,56 +1305,80 @@
    
             <p>Algunos caracteres que pueden ser difíciles de encontrar:</p>
             <table>
-                <tr>
-                    <th>Carácter</th>
-                    <th>Combinación</th>
-                    <th>Nota</th>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">`</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>}</kbd> + <kbd>Espacio</kbd></td>
-                    <td class="td-nota">cambia el <kbd>Espacio</kbd> por una vocal para conseguir la vocal con el acento grave </td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">~</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>+</kbd></td>
-                    <td class="td-nota"></td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">@</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>Q</kbd></td>
-                    <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">\</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>‘</kbd></td>
-                    <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">&#47;</kbd></td>
-                    <td><kbd>Mayús</kbd> + <kbd>7</kbd></td>
-                    <td class="td-nota"></td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">|</kbd></td>
-                    <td><kbd>|</kbd></td>
-                    <td class="td-nota">La tecla de pleca <kbd>|</kbd> suele estar encima del <kbd>Tab</kbd></td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">°</kbd></td>
-                    <td><kbd>Mayús</kbd> + <kbd>|</kbd></td>
-                    <td class="td-nota">La tecla de pleca <kbd>|</kbd> suele estar encima del <kbd>Tab</kbd></td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">¬</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>|</kbd></td>
-                    <td class="td-nota">La tecla de pleca <kbd>|</kbd> suele estar encima del <kbd>Tab</kbd>. Recuerda usar la <kbd>Alt</kbd> derecha.</td>
-                </tr>
-                <tr>
-                    <td><kbd class="kbd-resultado">^</kbd></td>
-                    <td><kbd>Alt</kbd> + <kbd>{</kbd> + <kbd>Espacio</kbd></td>
-                    <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Carácter</th>
+                        <th>Combinación</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><kbd class="kbd-resultado">`</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>}</kbd> + <kbd>Espacio</kbd></td>
+                        <td class="td-nota">cambia el <kbd>Espacio</kbd> por una vocal para conseguir la vocal con el acento grave </td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">~</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>+</kbd></td>
+                        <td class="td-nota"></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">@</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>Q</kbd></td>
+                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">\</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>‘</kbd></td>
+                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">&#47;</kbd></td>
+                        <td><kbd>Mayús</kbd> + <kbd>7</kbd></td>
+                        <td class="td-nota"></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">|</kbd></td>
+                        <td><kbd>|</kbd></td>
+                        <td class="td-nota">La tecla de pleca <kbd>|</kbd> suele estar encima del <kbd>Tab</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">°</kbd></td>
+                        <td><kbd>Mayús</kbd> + <kbd>|</kbd></td>
+                        <td class="td-nota">La tecla de pleca <kbd>|</kbd> suele estar encima del <kbd>Tab</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">¬</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>|</kbd></td>
+                        <td class="td-nota">La tecla de pleca <kbd>|</kbd> suele estar encima del <kbd>Tab</kbd>. Recuerda usar la <kbd>Alt</kbd> derecha.</td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">^</kbd></td>
+                        <td><kbd>Alt</kbd> + <kbd>{</kbd> + <kbd>Espacio</kbd></td>
+                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">“</kbd></td>
+                        <td><kbd>Mayús</kbd> + <kbd>2</kbd> + <kbd>Mayús</kbd> + <kbd>2</kbd></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">”</kbd></td>
+                        <td><kbd>Mayús</kbd> + <kbd>2</kbd> + <kbd>Mayús</kbd> + <kbd>2</kbd> + <kbd>Mayús</kbd> + <kbd>2</kbd</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">‘</kbd></td>
+                        <td><kbd>'</kbd> + <kbd>'</kbd></td>
+                        <td class="td-nota">La <kbd>'</kbd> suele estar a la derecha de la <kbd>0</kbd></td>
+                    </tr>
+                    <tr>
+                        <td><kbd class="kbd-resultado">’</kbd></td>
+                        <td><kbd>'</kbd> + <kbd>'</kbd> + <kbd>'</kbd></td>
+                        <td class="td-nota">La <kbd>'</kbd> suele estar a la derecha de la <kbd>0</kbd></td>
+                    </tr>
+                </tbody>
             </table>
             
 
@@ -1540,211 +1392,215 @@
                 
                 <p>⚠ <b>OJO:</b> Si tu teclado físico es un teclado latinoamericano, este cuadro te resultará confuso. Mira los cuadros más arriba para teclados físicos latinoamericanos.</p>
                 <table>
-                    <tr>
-                        <th>Carácter</th>
-                        <th>Combinación<br /><span style="background-color: yellow;">(con teclas de un teclado EEUU)</span></th>
-                        <th>Nota</th>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><b>Símbolos de la fila 1 del teclado estadounidense:</b></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">`</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>\</kbd> + <kbd>Spacebar</kbd> (Espacio)</td>
-                        <td class="td-nota">Cambia el <kbd>Spacebar</kbd> (Espacio) por una vocal para conseguir la vocal con el acento grave</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">~</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>}</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">!</kbd></td>
-                        <td></td>
-                        <td class="td-nota">(Sin cambio)</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">@</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>Q</kbd></td>
-                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">#</kbd></td>
-                        <td></td>
-                        <td class="td-nota">(Sin cambio)</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">$</kbd></td>
-                        <td></td>
-                        <td class="td-nota">(Sin cambio)</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">%</kbd></td>
-                        <td></td>
-                        <td class="td-nota">(Sin cambio)</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">^</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>‘</kbd> + <kbd>Spacebar</kbd> (Espacio)</td>
-                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">&</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>6</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">*</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>]</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">(</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>8</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">)</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>9</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">-</kbd></td>
-                        <td><kbd>/</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">_</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>/</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">=</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>0</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">+</kbd></td>
-                        <td><kbd>]</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><b>Símbolos de la fila 2 del teclado estadounidense:</b></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">[</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>‘</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">]</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>\</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">{</kbd></td>
-                        <td><kbd>‘</kbd></td>
-                        <td class="td-nota">El apóstrofe, a la izquierda del <kbd>Enter</kbd></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">}</kbd></td>
-                        <td><kbd>\</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">\</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>-</kbd></td>
-                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">|</kbd></td>
-                        <td><kbd>`</kbd></td>
-                        <td class="td-nota">La tecla del acento grave <kbd>`</kbd> suele estar encima del <kbd>Tab</kbd></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><b>Símbolos de la fila 3 del teclado estadounidense:</b></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">;</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>,</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">:</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>.</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">’</kbd></td>
-                        <td><kbd>-</kbd></td>
-                        <td class="td-nota">El apóstrofe </td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">”</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>2</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><b>Símbolos de la fila 4 del teclado estadounidense:</b></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">,</kbd></td>
-                        <td></td>
-                        <td class="td-nota">(Sin cambio)</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">&lt;</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>,</kbd></td>
-                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">.</kbd></td>
-                        <td></td>
-                        <td class="td-nota">(Sin cambio)</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">&gt;</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>.</kbd></td>
-                        <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">?</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>-</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">&#47;</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>7</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><b>Símbolos que no aparecen en el teclado estadounidense:</b></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">´</kbd></td>
-                        <td><kbd>[</kbd><br />o<br /><kbd>[</kbd> + <kbd>Spacebar</kbd> (Espacio)</kbd></td>
-                        <td class="td-nota">El acento agudo. Para acentuar un carácter, primero teclea <kbd>[</kbd> y después el carácter que deseas acentuar.<br /><br />Si quieres solo el acento, teclea <kbd>[</kbd> y después <kbd>Spacebar</kbd> (Espacio)</td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">¿</kbd></td>
-                        <td><kbd>=</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">¡</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>=</kbd></td>
-                        <td class="td-nota"></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">°</kbd></td>
-                        <td><kbd>Shift</kbd> + <kbd>`</kbd></td>
-                        <td class="td-nota">La tecla del acento grave <kbd>`</kbd> suele estar encima del <kbd>Tab</kbd></td>
-                    </tr>
-                    <tr>
-                        <td><kbd class="kbd-resultado">¬</kbd></td>
-                        <td><kbd>Alt</kbd> + <kbd>`</kbd></td>
-                        <td class="td-nota">La tecla del acento grave <kbd>`</kbd> suele estar encima del <kbd>Tab</kbd>. Recuerda usar la <kbd>Alt</kbd> derecha.</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Carácter</th>
+                            <th>Combinación<br /><span style="background-color: yellow;">(con teclas de un teclado EEUU)</span></th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3"><b>Símbolos de la fila 1 del teclado estadounidense:</b></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">`</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>\</kbd> + <kbd>Spacebar</kbd> (Espacio)</td>
+                            <td class="td-nota">Cambia el <kbd>Spacebar</kbd> (Espacio) por una vocal para conseguir la vocal con el acento grave</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">~</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>}</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">!</kbd></td>
+                            <td></td>
+                            <td class="td-nota">(Sin cambio)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">@</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>Q</kbd></td>
+                            <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">#</kbd></td>
+                            <td></td>
+                            <td class="td-nota">(Sin cambio)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">$</kbd></td>
+                            <td></td>
+                            <td class="td-nota">(Sin cambio)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">%</kbd></td>
+                            <td></td>
+                            <td class="td-nota">(Sin cambio)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">^</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>‘</kbd> + <kbd>Spacebar</kbd> (Espacio)</td>
+                            <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">&</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>6</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">*</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>]</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">(</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>8</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">)</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>9</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">-</kbd></td>
+                            <td><kbd>/</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">_</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>/</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">=</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>0</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">+</kbd></td>
+                            <td><kbd>]</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><b>Símbolos de la fila 2 del teclado estadounidense:</b></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">[</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>‘</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">]</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>\</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">{</kbd></td>
+                            <td><kbd>‘</kbd></td>
+                            <td class="td-nota">El apóstrofe, a la izquierda del <kbd>Enter</kbd></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">}</kbd></td>
+                            <td><kbd>\</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">\</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>-</kbd></td>
+                            <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">|</kbd></td>
+                            <td><kbd>`</kbd></td>
+                            <td class="td-nota">La tecla del acento grave <kbd>`</kbd> suele estar encima del <kbd>Tab</kbd></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><b>Símbolos de la fila 3 del teclado estadounidense:</b></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">;</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>,</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">:</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>.</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">'</kbd></td>
+                            <td><kbd>-</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">"</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>2</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><b>Símbolos de la fila 4 del teclado estadounidense:</b></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">,</kbd></td>
+                            <td></td>
+                            <td class="td-nota">(Sin cambio)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">&lt;</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>,</kbd></td>
+                            <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">.</kbd></td>
+                            <td></td>
+                            <td class="td-nota">(Sin cambio)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">&gt;</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>.</kbd></td>
+                            <td class="td-nota">Recuerda usar la <kbd>Alt</kbd> derecha</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">?</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>-</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">&#47;</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>7</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><b>Símbolos que no aparecen en el teclado estadounidense:</b></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">´</kbd></td>
+                            <td><kbd>[</kbd><br />o<br /><kbd>[</kbd> + <kbd>Spacebar</kbd> (Espacio)</kbd></td>
+                            <td class="td-nota">El acento agudo. Para acentuar un carácter, primero teclea <kbd>[</kbd> y después el carácter que deseas acentuar.<br /><br />Si quieres solo el acento, teclea <kbd>[</kbd> y después <kbd>Spacebar</kbd> (Espacio)</td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">¿</kbd></td>
+                            <td><kbd>=</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">¡</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>=</kbd></td>
+                            <td class="td-nota"></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">°</kbd></td>
+                            <td><kbd>Shift</kbd> + <kbd>`</kbd></td>
+                            <td class="td-nota">La tecla del acento grave <kbd>`</kbd> suele estar encima del <kbd>Tab</kbd></td>
+                        </tr>
+                        <tr>
+                            <td><kbd class="kbd-resultado">¬</kbd></td>
+                            <td><kbd>Alt</kbd> + <kbd>`</kbd></td>
+                            <td class="td-nota">La tecla del acento grave <kbd>`</kbd> suele estar encima del <kbd>Tab</kbd>. Recuerda usar la <kbd>Alt</kbd> derecha.</td>
+                        </tr>
+                    </tbody>
                 </table>
             </ul>
         </ul>
@@ -1830,9 +1686,9 @@
             <ol>
                     <li>Para acceder a un carácter especial, pulsa la tecla e inmediatamente desliza el dedo en alguna dirección. Dependiendo de hacia dónde lo deslices, aparecerá uno de los caracteres especiales.
                         <p>Este GIF animado muestra la función con la tecla <kbd>C</kbd>:</p>
-                        <!--ACTUALIZAR NÚMERO DE VERSIÓN EN ENLACE ABAJO CON CADA REVISIÓN-->
                         <!--ASÍ LOS QUIENES ESTÁN VIENDO EN PDF PODRÁN VER EL GIF-->
-                        <a href="https://help.keyman.com/keyboard/winchus/1.1/winchus#deslizar-gif-2"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;"  id="deslizar-gif-2"/></a>
+                        <!--INSTANCIADEVERSIÓN#04-->
+                        <a href="https://help.keyman.com/keyboard/winchus/1.2/winchus#deslizar-gif-2"><img src="deslizar-360.gif" style="display: block; margin-left: auto; margin-right: auto;"  id="deslizar-gif-2"/></a>
                         <br />
                         <p>Desliza para abajo para conseguir la <kbd class="kbd-resultado">Ć</kbd>:</p>
                         <img src="deslizar-360-1era-imagen.png" style="display: block; margin-left: auto; margin-right: auto;" />
@@ -1901,14 +1757,14 @@
                 <a href="#tecla-e"><kbd class="kbd-link">E</kbd></a>
                 <a href="#tecla-h"><kbd class="kbd-link">H</kbd></a>
                 <a href="#tecla-i"><kbd class="kbd-link">I</kbd></a>
-                <a href="#tecla-k"><kbd class="kbd-link">K</kbd></a>
+                <a href="#tecla-k"><kbd class="kbd-link">K</kbd></a><br />
                 <a href="#tecla-l"><kbd class="kbd-link">L</kbd></a>
                 <a href="#tecla-m"><kbd class="kbd-link">M</kbd></a>
-                <a href="#tecla-n"><kbd class="kbd-link">N</kbd></a><br />
+                <a href="#tecla-n"><kbd class="kbd-link">N</kbd></a>
                 <a href="#tecla-o"><kbd class="kbd-link">O</kbd></a>
                 <a href="#tecla-p"><kbd class="kbd-link">P</kbd></a>
                 <a href="#tecla-q"><kbd class="kbd-link">Q</kbd></a>
-                <a href="#tecla-r"><kbd class="kbd-link">R</kbd></a>
+                <a href="#tecla-r"><kbd class="kbd-link">R</kbd></a><br />
                 <a href="#tecla-s"><kbd class="kbd-link">S</kbd></a>
                 <a href="#tecla-t"><kbd class="kbd-link">T</kbd></a>
                 <a href="#tecla-u"><kbd class="kbd-link">U</kbd></a>
@@ -2878,15 +2734,103 @@
         </ul>
 
     </ul>  
+    <h2 id="solucionar-problemas"><a href="#tabla-de-contenidos">Solucionar Problemas</a></h2>
+    <ul class="no-bullets">
+        <h3 id="problemas-celular"><a href="#tabla-de-contenidos">Problemas en el dispositivo móvil:</a></h3>
+            <ul class="no-bullets">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Problema</th>
+                            <th>Solución</th>
+                        </tr>
+                    </thead>
+                    <tbody class="alinear-izquierda">
+                        <tr>
+                            <td>Las letras que salen no corresponden con las teclas que estoy presionando.</td>
+                            <td>Se ha congelado la imagen del teclado. Intenta lo siguiente. Después de cada paso, verifica si el problema se ha resuelto.
+                                <ol>
+                                    <li><a href="#como-cambiar-teclado">Cambia a otro teclado</a> y regresa a Winchus</li>
+                                    <li>Asegúrate de que la aplicación del teclado esté actualizada</li>
+                                    <li>Reinicia el dispositivo</li>
+                                    <li>Desinstala Winchus y vuelve a instalarlo</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Todo el área del teclado se ha puesto toda negra o gris.</td>
+                            <td>Intenta lo siguiente. Después de cada paso, verifica si el problema se ha resuelto.
+                                <ol>
+                                    <li>Toca el área del teclado en cualquier lado</li>
+                                    <li><a href="#como-cambiar-teclado">Cambia a otro teclado</a> y regresa a Winchus</li>
+                                    <li>Asegúrate de que la aplicación del teclado esté actualizada</li>
+                                    <li>Reinicia el dispositivo</li>
+                                    <li>Desinstala Winchus y vuelve a instalarlo</li>
+                                </ol></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+        <h3 id="problemas-computadora"><a href="#tabla-de-contenidos">Problemas en la computadora:</a></h3>
+        <ul class="no-bullets">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problema</th>
+                        <th>Solución</th>
+                    </tr>
+                </thead>
+                <tbody class="alinear-izquierda">
+                    <tr>
+                        <td>Los atajos especiales no funcionan. (O sea, el teclado está funcionando como si fuera un teclado latinoamericano.)</td>
+                        <td>Asegúrate de que el teclado Winchus esté seleccionado, mirando el rincón inferior derecho. Debe salir la letra <b>W</b> con el fondo verde. De no ser así, usa el atajo <kbd><img src="windows-30.png" alt="Tecla Windows" style="display: inline; vertical-align: middle; width: 50%; padding: 20%;" /></kbd> + <kbd>Espacio</kbd>. Verás la lista de teclados en la parte inferior derecha de tu pantalla.</li></td>
+                    </tr>
+                    <tr>
+                        <td>Cuando quiero escribir símbolos o puntuación, salen otros no esperados. Por ejemplo, la <kbd class="kbd-resultado">;</kbd> sale cuando esperaba la <kbd class="kbd-resultado">ñ</kbd>, y la <kbd class="kbd-resultado">]c</kbd> sale cuando esperaba la <kbd class="kbd-resultado">ć</kbd>. (O sea, el teclado está funcionando como si fuera un teclado estadounidense.)</td>
+                        <td>Aunque veas Winchus seleccionado en el rincón de la pantalla, Keyman no se ha ejecutado por completo. Haz clic en la app "Keyman" en el menú de inicio o en el escritorio. No saldrá nada, pero después de un momento el teclado debe empezar a funcionar. Si tienes este problema cada vez que prendes tu computadora, es posible quela computadora necesite un poco más de tiempo para terminar de prenderse, o que haga falta cambiar la configuración para que Keyman se ejecute automáticamente cuando se arranca la computadora. Verifica lo siguiente:
+                            <ol>
+                                <li>Teclea <kbd>Ctrl</kbd> + <kbd>Mayús</kbd> + <kbd>Esc</kbd></li>
+                                <li>Escoge la cuarta pestaña de "Inicio"</li>
+                                <li>Verifica que "Keyman Configuration" tiene el estado de "Habilitado"</li>
+                                <li>Abre la aplicación "Keyman Configuration" en el menú de inicio o en el escritorio. En la pestaña de Opciones, en la sección de Inicio, asegúrate de que la opción "Iniciar cuando inicie Windows" esté seleccionada.</li>
+                                <li>Una vez hechos estos cambios, Keyman debe ejecutarse de forma automática la próxima vez que prendes  tu computadora</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Todavía tengo problemas.</td>
+                        <td>Asegúrate de que Keyman y Winchus estén actualizados.
+                            <ol>
+                                <li>Abre la aplicación "Keyman Configuration" en el menú de inicio o en el escritorio. Haz clic en la pestaña de "Soporte". Luego, en el lado derecho, haz clic en "Buscar actualizaciones".</li>
+                                    <!--Actualiza esto cuando salga Keyman 18!-->
+                                <li><a href="#actualizar-teclado-computadora">Vuelve a seguir los pasos para agregar el teclado Winchus</a></li>
+                                <li>Después, reiniciar tu computadora</li>
+                            </ol>
+                            
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p>Sí tu problema aún no se soluciona, por favor, comunícate con nosotros a través de la información de contacto al final.</p>
+        </ul>
+    </ul>
+
+
+
     <h2 id="informacion-contacto"><a href="#tabla-de-contenidos">Información de contacto</a></h2>
     <ul class="no-bullets">
         <p>Para problemas, preguntas, comentarios, y sugerencias, escribe a <a href="mailto:alex_larkin@sil.org">alex_larkin@sil.org</a>. WhatsApp: <a href="https://wa.me/51938405223">+51.938.405.223</a>. Por favor menciona en cuál idioma Quechua estás escribiendo e incluye ejemplos, si es relevante.</p>
+
+        <p>También puedes buscar en los foros de ayuda de Keyman y hacer tu propia pregunta si no encuentras la solución que necesitas. <a href="https://community.software.sil.org/c/keyman/19" target="_blank">Haz clic aquí</a> para entrar al foro. La mayoría de usuarios en esta página hablan inglés, así que es recomendable escribir en inglés o usar un traductor de máquina como <a href="https://www.deepl.com/en/translator" target="_blank">Deepl</a>.
     </ul>
         <div style="text-align: center;">
             <p>¡Yulsulpallä! Muchas gracias.</p>
         <br />
-    <h6><i>Documento actualizado 19 febrero 2025</i></h6><br />
+    <h6><i>Documento actualizado 13 marzo 2025</i></h6><br />
     </div>
+<!-- #endregion -->
+<!-- COPIAR A winchus.php -->
+<!-- FIN_SECCIÓN#02 -->
     <br />
     <br />
     <br />
