@@ -119,6 +119,7 @@ store(upper_uw) 'ƯỨỪỬỮỰ'
 store(uw_v) 'ứừửữựỨỪỬỮỰ'
 store(un_w_letters) 'efjpqwEFJPQW'
 store(aeiouy)'aeiouyAEIOUY'
+store(aeiou)'aeiouAEIOU'
 store(rgysdfhklzxvb) 'rgysdfhklzxvbRGYSDFHKLZXVB'
 store(eiy) 'eiyEIY'
 store(u) 'uúùủũụUÚÙỦŨỤ'
@@ -7218,10 +7219,10 @@ any(aeiouy) any(aeiouy) any(aeiouy) any(aeiouy) + any(punctuation) > index(aeiou
 
 any(ae) any(aeiouy) any(aeiouy) + any(all_letters) > index(ae, 1) index(aeiouy, 2) index(aeiouy, 3) index(all_letters, 4)
 any(ae) any(aeiouy) any(aeiouy) + any(punctuation) > index(ae, 1) index(aeiouy, 2) index(aeiouy, 3) index(punctuation, 4)
-any(aeiouy) 'i' any(aeiouy) + any(all_letters) > index(aeiouy, 1) 'i' index(aeiouy, 3) index(all_letters, 4)
-any(aeiouy) 'i' any(aeiouy) + any(punctuation) > index(aeiouy, 1) 'i' index(aeiouy, 3) index(punctuation, 4)
-any(aeiouy) 'I' any(aeiouy) + any(all_letters) > index(aeiouy, 1) 'I' index(aeiouy, 3) index(all_letters, 4)
-any(aeiouy) 'I' any(aeiouy) + any(punctuation) > index(aeiouy, 1) 'I' index(aeiouy, 3) index(punctuation, 4)
+any(aeiou) 'i' any(aeiouy) + any(all_letters) > index(aeiou, 1) 'i' index(aeiouy, 3) index(all_letters, 4)
+any(aeiou) 'i' any(aeiouy) + any(punctuation) > index(aeiou, 1) 'i' index(aeiouy, 3) index(punctuation, 4)
+any(aeiou) 'I' any(aeiouy) + any(all_letters) > index(aeiou, 1) 'I' index(aeiouy, 3) index(all_letters, 4)
+any(aeiou) 'I' any(aeiouy) + any(punctuation) > index(aeiou, 1) 'I' index(aeiouy, 3) index(punctuation, 4)
 
 'ư' dk(u) any(uw_end) + any(low_sfrxj) > index(low_uw_v, 4) index(uw_end, 3)
 'Ư' dk(u) any(uw_end) + any(low_sfrxj) > index(upper_uw_v, 4) index(uw_end, 3)
