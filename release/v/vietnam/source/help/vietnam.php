@@ -8,7 +8,7 @@
 ?>
 
 <p>
-vietnam keyboard for vietnamese Chữ Quốc Ngữ Tiếng Việt
+vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese), Vạ Xoạng (Zhuang Romanization), Quỏng Đung Vạ (Cantonese Romanization) and Hòi Sán Vạ (Hoisanese Romanization)
 </p>
 <p>
   Because the Vietnamese alphabet uses a complex system of diacritical marks, Telex requires the user to type in a base letter, followed by one or two characters that represent the diacritical marks:
@@ -80,10 +80,52 @@ vietnam keyboard for vietnamese Chữ Quốc Ngữ Tiếng Việt
     <td>tư</td>
   </tr>
     <tr>
-    <td>-nn</td>
     <td>-nh</td>
+    <td>nn</td>
     <td>a<strong>nn</strong></td>
     <td>anh</td>
+  </tr>
+  <tr>
+    <td>ương</td>
+    <td>uonn</td>
+    <td>uon<strong>n</strong></td>
+    <td>ương</td>
+  </tr>
+  <tr>
+    <td>dương/-ương</td>
+    <td>iunn</td>
+    <td><strong>i</strong>u<strong>nn</strong></td>
+    <td>dương</td>
+  </tr>
+  <tr>
+    <td>ông</td>
+    <td>oonn</td>
+    <td>o<strong>o</strong>n<strong>n</strong></td>
+    <td>ông</td>
+  </tr>
+  <tr>
+    <td>âng</td>
+    <td>aann</td>
+    <td>va<strong>a</strong>n<strong>n</strong></td>
+    <td>vâng</td>
+  </tr>
+  <tr>
+    <td>ăng</td>
+    <td>awnn</td>
+    <td>ta<strong>w</strong>n<strong>n</strong></td>
+    <td>tăng</td>
+  </tr>
+  <tr>
+    <td>ưng</td>
+    <td>uwnn</td>
+    <td>cu<strong>w</strong>n<strong>n</strong></td>
+    <td>cưng</td>
+  </tr>
+    <tr>
+    <td>iêng</td>
+    <td>iinn</td>
+    <td>li<strong>i</strong>n<strong>n</strong>/lie<strong>e</strong>n<strong>n</strong></td>
+    <td>liêng</td>
   </tr>
   </tbody>
 </table>
