@@ -2,7 +2,7 @@
 store(&VERSION) '15.0'
 store(&NAME) 'vietnam'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0.3'
+store(&KEYBOARDVERSION) '1.0.4'
 store(&TARGETS) 'any'
 store(&BITMAP) 'vietnam.ico'
 store(&VISUALKEYBOARD) 'vietnam.kvks'
@@ -4671,8 +4671,8 @@ any(viet_vowels) any(consonants) any(s_all_letters) any(s_all_letters) any(s_all
 'D'any(un_z_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > 'D' index(un_z_consonants, 2) index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
 'D'any(un_z_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > 'D' index(un_z_consonants, 2) index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
 
-'t'any(un_hrsd_consonants) + any(no_d_letters) > 't' index(un_hrs_consonants, 2) index(no_d_letters, 3)
-'T'any(un_hrsd_consonants) + any(no_d_letters) > 'T' index(un_hrs_consonants, 2) index(no_d_letters, 3)
+'t'any(un_hrsd_consonants) + any(no_d_letters) > 't' index(un_hrsd_consonants, 2) index(no_d_letters, 3)
+'T'any(un_hrsd_consonants) + any(no_d_letters) > 'T' index(un_hrsd_consonants, 2) index(no_d_letters, 3)
 't'any(un_hrs_consonants) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(s_all_letters, 3) index(s_no_d_letters, 4) index(all_letters, 5)
 't'any(un_hrs_consonants) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(s_all_letters, 3) index(s_all_letters, 4) index(s_no_d_letters, 5) index(all_letters, 6)
 't'any(un_hrs_consonants) any(s_all_letters) any(s_all_letters) any(s_all_letters) any(s_no_d_letters) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(s_all_letters, 3) index(s_all_letters, 4) index(s_all_letters, 5) index(s_no_d_letters, 6) index(all_letters, 7)
