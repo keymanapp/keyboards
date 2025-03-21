@@ -21,43 +21,43 @@
     <Name URL="">Lakeside</Name>
     <Copyright URL="">Copyright © Oreen Yousuf</Copyright>
     <Author URL="mailto:oreen.yousuf@gmail.com">Oreen Yousuf</Author>
-    <Description URL="">This keyboard is used to write the Luo language with the Luo Lakeside script.</Description>
-    <Version URL=""></Version>
+    <Description URL="">This keyboard is used to write the Luo language with the Luo Lakeside script. The Luo Lakeside script is not yet included in Unicode.</Description>
+    <Version URL=""/>
   </Info>
   <Files>
     <File>
       <Name>..\build\luo_lakeside.kmx</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
     <File>
       <Name>..\build\luo_lakeside.js</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
       <Name>..\build\luo_lakeside.kvk</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
       <Name>welcome.htm</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
       <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Description/>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
@@ -86,16 +86,22 @@
       <FileType>.PNG</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\Unicode\Luo Lakeside\Font\LakesideScript-Regular.otf</Name>
+      <Name>LakesideScript-Regular.otf</Name>
       <Description>Font Lakeside Script Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\Unicode\Luo Lakeside\Keyboard\typing_manual.pdf</Name>
+      <Name>typing_manual.pdf</Name>
       <Description>File typing_manual.pdf</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -103,18 +109,19 @@
       <Name>Lakeside</Name>
       <ID>luo_lakeside</ID>
       <Version>1.0</Version>
-      <OSKFont>..\..\..\..\Unicode\Luo Lakeside\Font\LakesideScript-Regular.otf</OSKFont>
-      <DisplayFont>..\..\..\..\Unicode\Luo Lakeside\Font\LakesideScript-Regular.otf</DisplayFont>
+      <OSKFont>LakesideScript-Regular.otf</OSKFont>
+      <DisplayFont>LakesideScript-Regular.otf</DisplayFont>
       <Languages>
-        <Language ID="luo">Luo (Kenya and Tanzania)</Language>
+        <Language ID="luo-Zzzz">Luo (Kenya and Tanzania) (Code for uncoded script)</Language>
       </Languages>
       <WebOSKFonts>
-        <Font Filename="..\..\..\..\Unicode\Luo Lakeside\Font\LakesideScript-Regular.otf"/>
+        <Font Filename="LakesideScript-Regular.otf"/>
       </WebOSKFonts>
       <WebDisplayFonts>
-        <Font Filename="..\..\..\..\Unicode\Luo Lakeside\Font\LakesideScript-Regular.otf"/>
+        <Font Filename="LakesideScript-Regular.otf"/>
       </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>
+
