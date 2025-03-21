@@ -47,6 +47,12 @@ store(vowels_huyen)             'àèìòùằầềồờừỳÀÈÌÒÙẰẦ
 store(vowels_hoi)               'ảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶ'
 store(vowels_nga)               'ãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸ'
 store(vowels_nang)              'ạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴ'
+store(vowel)                   'aeiouyAEIOUY'
+store(vowel_sac)               'áéíóúýÁÉÍÓÚÝ'
+store(vowel_huyen)             'àèìòùỳÀÈÌÒÙỲ'
+store(vowel_hoi)               'ảẻỉỏủỷẢẺỈỎỦỶ'
+store(vowel_nga)               'ãẽĩõũỹÃẼĨÕŨỸ'
+store(vowel_nang)              'ạẹịọụỵẠẸỊỌỤỴ'
 store(viet_vowels)              'aeiouăâêôơưyAEIOUĂÂÊÔƠƯYáéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝàèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴ'
 store(u_consonants)              'bcdhklmnpstzBCDHKLMNPSTZ'
 store(y_consonants)              'bcdfghjklmnpstyzBCDFGHJKLMNPSTYZ'
@@ -5727,21 +5733,21 @@ any(e) 'NH' + any(punctuation) > index(ee, 1) 'NH' index(punctuation, 4)
 any(a) + 'o' > index(aa, 1)'o'
 any(a) + 'O' > index(aa, 1)'O'
 
-'qú' + any(vowels) >'qu'index(vowels_sac, 3)
-'qù' + any(vowels) >'qu'index(vowels_huyen, 3)
-'qủ' + any(vowels) >'qu'index(vowels_hoi, 3)
-'qũ' + any(vowels) >'qu'index(vowels_nga, 3)
-'qụ' + any(vowels) >'qu'index(vowels_nang, 3)
-'Qú' + any(vowels) >'Qu'index(vowels_sac, 3)
-'Qù' + any(vowels) >'Qu'index(vowels_huyen, 3)
-'Qủ' + any(vowels) >'Qu'index(vowels_hoi, 3)
-'Qũ' + any(vowels) >'Qu'index(vowels_nga, 3)
-'Qụ' + any(vowels) >'Qu'index(vowels_nang, 3)
-'QÚ' + any(vowels) >'QU'index(vowels_sac, 3)
-'QÙ' + any(vowels) >'QU'index(vowels_huyen, 3)
-'QỦ' + any(vowels) >'QU'index(vowels_hoi, 3)
-'QŨ' + any(vowels) >'QU'index(vowels_nga, 3)
-'QỤ' + any(vowels) >'QU'index(vowels_nang, 3)
+'qú' + any(vowel) >'qu'index(vowel_sac, 3)
+'qù' + any(vowel) >'qu'index(vowel_huyen, 3)
+'qủ' + any(vowel) >'qu'index(vowel_hoi, 3)
+'qũ' + any(vowel) >'qu'index(vowel_nga, 3)
+'qụ' + any(vowel) >'qu'index(vowel_nang, 3)
+'Qú' + any(vowel) >'Qu'index(vowel_sac, 3)
+'Qù' + any(vowel) >'Qu'index(vowel_huyen, 3)
+'Qủ' + any(vowel) >'Qu'index(vowel_hoi, 3)
+'Qũ' + any(vowel) >'Qu'index(vowel_nga, 3)
+'Qụ' + any(vowel) >'Qu'index(vowel_nang, 3)
+'QÚ' + any(vowel) >'QU'index(vowel_sac, 3)
+'QÙ' + any(vowel) >'QU'index(vowel_huyen, 3)
+'QỦ' + any(vowel) >'QU'index(vowel_hoi, 3)
+'QŨ' + any(vowel) >'QU'index(vowel_nga, 3)
+'QỤ' + any(vowel) >'QU'index(vowel_nang, 3)
 
 any(un_w_letters) + "w" > index(un_w_letters, 1)"w"
 any(un_w_letters) + "W" > index(un_w_letters, 1)"W"
