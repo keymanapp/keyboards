@@ -13,6 +13,7 @@ The Latin alphabet was introduced in 1925. It was unified with Ingush in 1934, b
 
 Links
 -----
+Home: https://keyman.com/keyboards/chechen_latin
 
 [Wikipedia](https://en.wikipedia.org/wiki/Chechen_language)
 
