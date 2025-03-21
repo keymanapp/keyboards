@@ -6,7 +6,7 @@ require_once('header.php');
 ?>
 
 <p>
-This is a Luo keyboard that uses the unique Luo Lakeside script.
+This is a Luo keyboard that uses the unique Luo Lakeside script. The Luo Lakeside script is not yet included in Unicode.
 </p>
 
 <h1>Keyboard Layout</h1>
@@ -21,5 +21,5 @@ Press and hold on the key with a little dot on the top right to reveal them.
 </p>
 
 <div id='osk-phone' data-states='default shift numeric'>
-<div id='osk-tablet' data-states='default shift numeric'>
 </div>
+  
