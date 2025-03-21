@@ -3,7 +3,7 @@ Luo Lakeside keyboard
 
 Description
 -----------
-This is a Luo keyboard that uses the unique Luo Lakeside script.
+This is a Luo keyboard that uses the unique Luo Lakeside script. The Luo Lakeside script is not yet included in Unicode.
 
 Links
 -----
