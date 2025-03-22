@@ -7,7 +7,7 @@
 Ho Latin Keyboard for desktop and mobile devices.
 
 ## Links
-[Help](ho_latin-help.htm)
+[Help](ho_latin-help.php)
 
 ## Supported Platforms
 
