@@ -2,13 +2,6 @@
   $pagename = 'Akha ACT Keyboard Help';
   $pagetitle = $pagename;
   // Header we will tidy up later  
-    $style = <<<END
-    p { font: 12pt Khmer Mondulkiri; }
-	ul { font: 12pt Khmer Mondulkiri; }
-    h1 { font: bold 16pt Khmer Mondulkiri; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 14pt Khmer Mondulkiri; color: #4444cc; }
-END;
-  
   require_once('header.php');
 ?>
 

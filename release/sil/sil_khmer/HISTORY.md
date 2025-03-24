@@ -1,6 +1,10 @@
 Khmer (SIL) Keyboard Change History
 =======================
 
+2.1.2 (24 Mar 2025)
+----------------
+* replace Mondulkiri fonts with Busra
+
 2.1.1 (30 Oct 2024)
 ------------------
 * Changed display font for .kvks

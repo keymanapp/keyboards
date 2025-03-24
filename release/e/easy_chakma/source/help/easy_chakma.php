@@ -929,10 +929,7 @@
 	{font-family:"Galatia SIL";
 	panose-1:2 0 6 0 2 0 0 2 0 4;}
 @font-face
-	{font-family:"Khmer Mondulkiri";
-	panose-1:2 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Khmer Busra";
+	{font-family:"Busra";
 	panose-1:2 0 0 0 0 0 0 0 0 0;}
 @font-face
 	{font-family:"Open Sans";

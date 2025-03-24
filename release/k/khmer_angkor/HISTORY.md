@@ -1,5 +1,10 @@
 Khmer Angkor Change History
 =======================
+
+2.1.1 (24 Mar 2025)
+----------------
+* replace touch fonts with Busra
+
 2.1 (13 Feb 2025)
 ----------------
 * replace Mondulkiri fonts with Busra
