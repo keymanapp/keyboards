@@ -80,4 +80,4 @@ Example lekate:<br>
 </br>
 </br>
 
-Copyright © 2024-2025 Mangu Purty
+Copyright © Mangu Purty
