@@ -1,5 +1,5 @@
 <?php
-$pagename = Luo Lakeside Keyboard Help';
+$pagename = 'Luo Lakeside Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');
