@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -21,7 +22,7 @@
     <Copyright URL="">© M. R. Astle</Copyright>
     <Author URL="">M. R. Astle</Author>
     <Version URL=""></Version>
-    <Description>The Tsakonian keyboard is designed for typing the Tsakonian language. It
+    <Description URL="">The Tsakonian keyboard is designed for typing the Tsakonian language. It
 also includes various additional Greek characters and symbols for
 convenience of use with Ancient Greek. While the keyboard is correctly
 programmed to display all necessary characters in the font Catrinity,
@@ -114,25 +115,31 @@ device is able to do so accurately. Thank you for using this keyboard.</Descript
       <FileType>.jpg</FileType>
     </File>
     <File>
-      <Name>Catrinity.otf</Name>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</Name>
       <Description>Font Catrinity</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
+      <Name>..\..\..\..\release\shared\fonts\catrinity\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
+      <FileType>.txt</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>tsakonian</Name>
       <ID>tsakonian</ID>
-      <Version>1.0</Version>
-      <OSKFont>Catrinity.otf</OSKFont>
-      <DisplayFont>Catrinity.otf</DisplayFont>
+      <Version>1.1.0</Version>
+      <OSKFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</OSKFont>
+      <DisplayFont>..\..\..\..\release\shared\fonts\catrinity\Catrinity.otf</DisplayFont>
       <Languages>
         <Language ID="tsd">Tsakonian</Language>
         <Language ID="grk">Greek languages</Language>
