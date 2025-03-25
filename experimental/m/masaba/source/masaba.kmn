@@ -1,0 +1,727 @@
+﻿c masaba generated from template at 2024-04-30 21:14:54
+c with name "masaba"
+store(&VERSION) '10.0'
+store(&NAME) 'Masaba'
+store(&COPYRIGHT) '© Oreen Yousuf'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'masaba.ico'
+store(&VISUALKEYBOARD) 'masaba.kvks'
+store(&LAYOUTFILE) 'masaba.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [SHIFT K_SPACE] > ' '
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_SLASH] > '?'
++ [SHIFT K_PERIOD] > '>'
++ [SHIFT K_COMMA] > '<'
++ [SHIFT K_QUOTE] > '"'
++ [SHIFT K_COLON] > ':'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_0] > ')'
++ [SHIFT K_9] > '('
++ [SHIFT K_8] > '*'
++ [SHIFT K_7] > '&'
++ [SHIFT K_6] > '^'
++ [SHIFT K_5] > '%'
++ [SHIFT K_4] > '$'
++ [SHIFT K_3] > '#'
++ [SHIFT K_2] > '@'
++ [SHIFT K_1] > '!'
++ [SHIFT K_BKQUOTE] > '~'
++ [K_EQUAL] > '='
++ [K_HYPHEN] > '-'
++ [K_0] > '0'
++ [K_9] > '9'
++ [K_8] > '8'
++ [K_7] > '7'
++ [K_6] > '6'
++ [K_5] > '5'
++ [K_4] > '4'
++ [K_3] > '3'
++ [K_2] > '2'
++ [K_1] > '1'
++ [K_BKQUOTE] > '`'
++ [K_BKSLASH] > '\'
++ [K_RBRKT] > ']'
++ [K_LBRKT] > '['
++ [K_QUOTE] > U+0027
++ [K_COLON] > ';'
++ [K_SLASH] > '/'
++ [K_PERIOD] > '.'
++ [K_COMMA] > ','
++ [K_SPACE] > ' '
+
+c all standalone vowel graphemes
++ "i" > U+E000
++ "E" > U+E001
++ "e" > U+E002
++ "a" > U+E003
++ "o" > U+E004
++ "O" > U+E005
++ "u" > U+E006
+
++ "ɛ" > U+E002 c same output as "e", if user inputs actual Bambara letter
++ "ɔ" > U+E004 c same output as "o", if user inputs actual Bambara letter
+c end of standalone vowel /i/ graphemes
+
+c clicking single consonant creates inherent -/a/ syllabic grapheme
++ "p" > U+E009
++ "t" > U+E00F
++ "c" > U+E016
++ "k" > U+E01D
++ "b" > U+E024
++ "d" > U+E02A
++ "j" > U+E031
++ "g" > U+E038
++ "f" > U+E03F
++ "s" > U+E046
++ "z" > U+E04B c for 'nz'
++ "m" > U+E04E
++ "n" > U+E053
++ "N" > U+E058 c for 'ɲ'/'ny'
++ "ɲ" > U+E058 c for 'ɲ'/'ny'; same as "N" above; in case user uses Bambara Latin letter ɲ
++ "x" > U+E05B c for 'ng'/ŋ
++ "ŋ" > U+E05B c for 'ng'/'ŋ'; same as "G" above; in case user uses Bambara Latin letter ɲ 
++ "y" > U+E061
++ "w" > U+E067
++ "h" > U+E06D
++ "l" > U+E072
++ "r" > U+E079
+
++ "Ɲ" > U+E058 c for 'ɲ'/'ny'
+
+c end of capital letter proofing
+
+c U+E009 + "a" > U+E009 c pa
+c U+E00F + "a" > U+E00F c ta
+c U+E016 + "a" > U+E016 c ca
+c U+E01D + "a" > U+E01D c ka
+c U+E024 + "a" > U+E024 c ba
+c U+E02A + "a" > U+E02A c da
+c U+E031 + "a" > U+E031 c ja
+c U+E038 + "a" > U+E038 c ga
+c U+E03F + "a" > U+E03F c fa
+c U+E046 + "a" > U+E046 c sa
+c U+E04B + "a" > U+E04B c nza
+c U+E04E + "a" > U+E04E c ma
+c U+E053 + "a" > U+E053 c na
+U+E058 + "a" > U+E058 c ɲa/nya
+U+E05B + "a" > U+E05B c nga/ŋa
+c U+E061 + "a" > U+E061 c ya
+c U+E067 + "a" > U+E067 c wa
+c U+E06D + "a" > U+E06D c ha
+c U+E072 + "a" > U+E072 c la
+c U+E079 + "a" > U+E079 c ra
+
+c deadkeys: 'q', and 'v' have no output letter, but they are used for diacritics after letters are typed.
++ [K_Q] > nul
++ [SHIFT K_Q] > nul
++ [K_V] > nul
++ [SHIFT K_V] > nul
+
++ [SHIFT K_P] > nul
++ [SHIFT K_T] > nul
++ [SHIFT K_C] > nul
++ [SHIFT K_K] > nul
++ [SHIFT K_B] > nul
++ [SHIFT K_D] > nul
++ [SHIFT K_J] > nul
++ [SHIFT K_G] > nul
++ [SHIFT K_F] > nul
++ [SHIFT K_S] > nul
++ [SHIFT K_Z] > nul
++ [SHIFT K_M] > nul
++ [SHIFT K_Y] > nul
++ [SHIFT K_W] > nul
++ [SHIFT K_H] > nul
++ [SHIFT K_L] > nul
++ [SHIFT K_R] > nul
++ [SHIFT K_X] > nul
++ [SHIFT K_U] > nul
++ [SHIFT K_I] > nul
+
+c end of deadkeys
+c end of single consonant click creations
+
+
+c /i/ vowel graphemes
+U+E009 + "i" > U+E007 c pi
+U+E00F + "i" > U+E00C c ti
+U+E016 + "i" > U+E013 c ci
+U+E01D + "i" > U+E01A c ki
+U+E024 + "i" > U+E021 c bi
+U+E02A + "i" > U+E027 c di
+U+E031 + "i" > U+E02E c ji
+U+E038 + "i" > U+E035 c gi
+U+E03F + "i" > U+E03C c fi
+U+E046 + "i" > U+E043 c si
+U+E04E + "i" > U+E04C c mi
+U+E053 + "i" > U+E051 c ni
+U+E058 + "i" > U+E056 c ɲi/nyi
+U+E061 + "i" > U+E05E c yi
+U+E067 + "i" > U+E065 c wi
+U+E06D + "i" > U+E06B c hi
+U+E072 + "i" > U+E06F c li
+U+E079 + "i" > U+E076 c ri
+
+c adding capital 'I' outputs the same thing
+U+E009 + "I" > U+E007 c pi
+U+E00F + "I" > U+E00C c ti
+U+E016 + "I" > U+E013 c ci
+U+E01D + "I" > U+E01A c ki
+U+E024 + "I" > U+E021 c bi
+U+E02A + "I" > U+E027 c di
+U+E031 + "I" > U+E02E c ji
+U+E038 + "I" > U+E035 c gi
+U+E03F + "I" > U+E03C c fi
+U+E046 + "I" > U+E043 c si
+U+E04E + "I" > U+E04C c mi
+U+E053 + "I" > U+E051 c ni
+U+E058 + "I" > U+E056 c ɲi/nyi
+U+E061 + "I" > U+E05E c yi
+U+E067 + "I" > U+E065 c wi
+U+E06D + "I" > U+E06B c hi
+U+E072 + "I" > U+E06F c li
+U+E079 + "I" > U+E076 c ri
+c end of /i/ vowel graphemes
+
+c /e/ vowel graphemes
+U+E00F + "E" > U+E00D c te
+U+E016 + "E" > U+E014 c ce
+U+E01D + "E" > U+E01B c ke
+U+E024 + "E" > U+E022 c be
+U+E02A + "E" > U+E028 c de
+U+E031 + "E" > U+E02F c je
+U+E038 + "E" > U+E036 c ge
+U+E03F + "E" > U+E03D c fe
+U+E046 + "E" > U+E044 c se
+U+E061 + "E" > U+E05F c ye
+U+E072 + "E" > U+E070 c le
+U+E079 + "E" > U+E077 c re
+c end of /i/ vowel graphemes
+
+c /ɛ/ vowel graphemes
+U+E009 + "e" > U+E008 c pɛ
+U+E00F + "e" > U+E00E c tɛ
+U+E016 + "e" > U+E015 c cɛ
+U+E01D + "e" > U+E01C c kɛ
+U+E024 + "e" > U+E023 c bɛ
+U+E02A + "e" > U+E029 c dɛ
+U+E031 + "e" > U+E030 c jɛ
+U+E038 + "e" > U+E037 c gɛ
+U+E03F + "e" > U+E03E c fɛ
+U+E046 + "e" > U+E045 c sɛ
+U+E04B + "e" > U+E04A c nzɛ
+U+E04E + "e" > U+E04D c mɛ
+U+E053 + "e" > U+E052 c nɛ
+U+E058 + "e" > U+E057 c ɲɛ/nyɛ
+U+E061 + "e" > U+E060 c yɛ
+U+E067 + "e" > U+E066 c wɛ
+U+E06D + "e" > U+E06C c hɛ
+U+E072 + "e" > U+E071 c lɛ
+U+E079 + "e" > U+E078 c rɛ
+
+c same outputs but with 'ɛ' if user uses Bambara Latin letter ɛ
+U+E009 + "ɛ" > U+E008 c pɛ
+U+E00F + "ɛ" > U+E00E c tɛ
+U+E016 + "ɛ" > U+E015 c cɛ
+U+E01D + "ɛ" > U+E01C c kɛ
+U+E024 + "ɛ" > U+E023 c bɛ
+U+E02A + "ɛ" > U+E029 c dɛ
+U+E031 + "ɛ" > U+E030 c jɛ
+U+E038 + "ɛ" > U+E037 c gɛ
+U+E03F + "ɛ" > U+E03E c fɛ
+U+E046 + "ɛ" > U+E045 c sɛ
+U+E04B + "ɛ" > U+E04A c nzɛ
+U+E04E + "ɛ" > U+E04D c mɛ
+U+E053 + "ɛ" > U+E052 c nɛ
+U+E058 + "ɛ" > U+E057 c ɲɛ/nyɛ
+U+E061 + "ɛ" > U+E060 c yɛ
+U+E067 + "ɛ" > U+E066 c wɛ
+U+E06D + "ɛ" > U+E06C c hɛ
+U+E072 + "ɛ" > U+E071 c lɛ
+U+E079 + "ɛ" > U+E078 c rɛ
+c end of /ɛ/ vowel graphemes
+
+c /ɔ/ vowel graphemes
+U+E009 + "o" > U+E00A c pɔ
+U+E00F + "o" > U+E010 c tɔ
+U+E016 + "o" > U+E017 c cɔ
+U+E01D + "o" > U+E01E c kɔ
+U+E024 + "o" > U+E025 c bɔ
+U+E02A + "o" > U+E02B c dɔ
+U+E031 + "o" > U+E032 c jɔ
+U+E038 + "o" > U+E039 c gɔ
+U+E03F + "o" > U+E040 c fɔ
+U+E046 + "o" > U+E047 c sɔ
+U+E04E + "o" > U+E04F c mɔ
+U+E053 + "o" > U+E054 c nɔ
+U+E058 + "o" > U+E059 c ɲɔ/nyɔ
+U+E05B + "o" > U+E05C c ngɔ/ŋɔ
+U+E061 + "o" > U+E062 c yɔ
+U+E067 + "o" > U+E068 c wɔ
+U+E072 + "o" > U+E073 c lɔ
+U+E079 + "o" > U+E07A c rɔ
+
+c same outputs but with 'ɔ' if user uses Bambara Latin letter ɔ
+U+E009 + "ɔ" > U+E00A c pɔ
+U+E00F + "ɔ" > U+E010 c tɔ
+U+E016 + "ɔ" > U+E017 c cɔ
+U+E01D + "ɔ" > U+E01E c kɔ
+U+E024 + "ɔ" > U+E025 c bɔ
+U+E02A + "ɔ" > U+E02B c dɔ
+U+E031 + "ɔ" > U+E032 c jɔ
+U+E038 + "ɔ" > U+E039 c gɔ
+U+E03F + "ɔ" > U+E040 c fɔ
+U+E046 + "ɔ" > U+E047 c sɔ
+U+E04E + "ɔ" > U+E04F c mɔ
+U+E053 + "ɔ" > U+E054 c nɔ
+U+E058 + "ɔ" > U+E059 c ɲɔ/nyɔ
+U+E05B + "ɔ" > U+E05C c ngɔ/ŋɔ
+U+E061 + "ɔ" > U+E062 c yɔ
+U+E067 + "ɔ" > U+E068 c wɔ
+U+E072 + "ɔ" > U+E073 c lɔ
+U+E079 + "ɔ" > U+E07A c rɔ
+c end of /ɔ/ vowel graphemes
+
+c /o/ vowel graphemes
+U+E00F + "O" > U+E011 c to
+U+E016 + "O" > U+E018 c co
+U+E01D + "O" > U+E01F c ko
+U+E02A + "O" > U+E02C c do
+U+E031 + "O" > U+E033 c jo
+U+E038 + "O" > U+E03A c go
+U+E03F + "O" > U+E041 c fo
+U+E046 + "O" > U+E048 c so
+U+E061 + "O" > U+E063 c yo
+U+E067 + "O" > U+E069 c wo
+U+E072 + "O" > U+E074 c lo
+U+E079 + "O" > U+E07B c ro
+c end of /o/ vowel graphemes
+
+
+c /u/ vowel graphemes
+U+E009 + "u" > U+E00B c pu
+U+E00F + "u" > U+E012 c tu
+U+E016 + "u" > U+E019 c cu
+U+E01D + "u" > U+E020 c ku
+U+E024 + "u" > U+E026 c bu
+U+E02A + "u" > U+E02D c du
+U+E031 + "u" > U+E034 c ju
+U+E038 + "u" > U+E03B c gu
+U+E03F + "u" > U+E042 c fu
+U+E046 + "u" > U+E049 c su
+U+E04E + "u" > U+E050 c mu
+U+E053 + "u" > U+E055 c nu
+U+E058 + "u" > U+E05A c ɲu/nyu
+U+E05B + "u" > U+E05D c ngu/ŋu
+U+E061 + "u" > U+E064 c yu
+U+E067 + "u" > U+E06A c wu
+U+E06D + "u" > U+E06E c hu
+U+E072 + "u" > U+E075 c lu
+U+E079 + "u" > U+E07C c ru
+
+c adding capital 'U' outputs the same thing
+U+E009 + "U" > U+E00B c pu
+U+E00F + "U" > U+E012 c tu
+U+E016 + "U" > U+E019 c cu
+U+E01D + "U" > U+E020 c ku
+U+E024 + "U" > U+E026 c bu
+U+E02A + "U" > U+E02D c du
+U+E031 + "U" > U+E034 c ju
+U+E038 + "U" > U+E03B c gu
+U+E03F + "U" > U+E042 c fu
+U+E046 + "U" > U+E049 c su
+U+E04E + "U" > U+E050 c mu
+U+E053 + "U" > U+E055 c nu
+U+E058 + "U" > U+E05A c ɲu/nyu
+U+E05B + "U" > U+E05D c ngu/ŋu
+U+E061 + "U" > U+E064 c yu
+U+E067 + "U" > U+E06A c wu
+U+E06D + "U" > U+E06E c hu
+U+E072 + "U" > U+E075 c lu
+U+E079 + "U" > U+E07C c ru
+c end of /u/ vowel graphemes
+
+
+
+c ============letters with diacritics==========================
+
+
+c nasality diacritic on /i/ syllables
+c make capital V a deadkey
+U+E000 + "v" > U+E07D c in
+U+E007 + "v" > U+E07E c pin
+U+E00C + "v" > U+E07F c tin
+U+E013 + "v" > U+E080 c cin
+U+E01A + "v" > U+E081 c kin
+U+E021 + "v" > U+E082 c bin
+U+E027 + "v" > U+E083 c din
+U+E02E + "v" > U+E084 c jin
+U+E035 + "v" > U+E085 c gin
+U+E03C + "v" > U+E086 c fin
+U+E043 + "v" > U+E087 c sin
+U+E04C + "v" > U+E088 c min
+U+E051 + "v" > U+E089 c nin
+U+E056 + "v" > U+E08A c ɲin/nyin
+U+E05E + "v" > U+E08B c yin
+U+E065 + "v" > U+E08C c win
+U+E06B + "v" > U+E08D c hin
+U+E06F + "v" > U+E08E c lin
+U+E076 + "v" > U+E08F c rin
+c backspace removes diacritic, but not letter
+U+E07D + [K_BKSP] > U+E000 c i
+U+E07E + [K_BKSP] > U+E007 c pi
+U+E07F + [K_BKSP] > U+E00C c ti
+U+E080 + [K_BKSP] > U+E013 c ci
+U+E081 + [K_BKSP] > U+E01A c ki
+U+E082 + [K_BKSP] > U+E021 c bi
+U+E083 + [K_BKSP] > U+E021 c di
+U+E084 + [K_BKSP] > U+E02E c ji
+U+E085 + [K_BKSP] > U+E035 c gi
+U+E086 + [K_BKSP] > U+E03C c fi
+U+E087 + [K_BKSP] > U+E043 c si
+U+E088 + [K_BKSP] > U+E04C c mi
+U+E089 + [K_BKSP] > U+E051 c ni
+U+E08A + [K_BKSP] > U+E056 c ɲi/nyi
+U+E08B + [K_BKSP] > U+E05E c yi
+U+E08C + [K_BKSP] > U+E065 c wi
+U+E08D + [K_BKSP] > U+E06B c hi
+U+E08E + [K_BKSP] > U+E06F c li
+U+E08F + [K_BKSP] > U+E076 c ri
+c end of backspace
+c end of nasality diacritic on /i/ syllables
+
+c nasality diacritic on /e/ syllables
+U+E001 + "v" > U+E090 c en
+U+E00D + "v" > U+E091 c ten
+U+E014 + "v" > U+E092 c cen
+U+E01B + "v" > U+E093 c ken
+U+E022 + "v" > U+E094 c ben
+U+E028 + "v" > U+E095 c den
+U+E02F + "v" > U+E096 c jen
+U+E036 + "v" > U+E097 c gen
+U+E03D + "v" > U+E098 c fen
+U+E044 + "v" > U+E099 c sen
+U+E05F + "v" > U+E09A c yen
+U+E070 + "v" > U+E09B c len
+U+E077 + "v" > U+E09C c ren
+c backspace removes diacritic, but not letter
+U+E090 + [K_BKSP] > U+E001 c e
+U+E091 + [K_BKSP] > U+E00D c te
+U+E092 + [K_BKSP] > U+E014 c ce
+U+E093 + [K_BKSP] > U+E01B c ke
+U+E094 + [K_BKSP] > U+E022 c be
+U+E095 + [K_BKSP] > U+E028 c de
+U+E096 + [K_BKSP] > U+E02F c je
+U+E097 + [K_BKSP] > U+E036 c ge
+U+E098 + [K_BKSP] > U+E03D c fe
+U+E099 + [K_BKSP] > U+E044 c se
+U+E09A + [K_BKSP] > U+E05F c ye
+U+E09B + [K_BKSP] > U+E070 c le
+U+E09C + [K_BKSP] > U+E077 c re
+c end of backspace
+c end of nasality diacritic on /e/ syllables
+
+c nasality diacritic on /ɛ/ syllables
+U+E002 + "v" > U+E09D c ɛn
+U+E008 + "v" > U+E09E c pɛn
+U+E00E + "v" > U+E09F c tɛn
+U+E015 + "v" > U+E0A0 c cɛn
+U+E01C + "v" > U+E0A1 c kɛn
+U+E023 + "v" > U+E0A2 c bɛn
+U+E029 + "v" > U+E0A3 c dɛn
+U+E030 + "v" > U+E0A4 c jɛn
+U+E037 + "v" > U+E0A5 c gɛn
+U+E03E + "v" > U+E0A6 c fɛn
+U+E045 + "v" > U+E0A7 c sɛn
+U+E04A + "v" > U+E0A8 c nzɛn
+U+E04D + "v" > U+E0A9 c mɛn
+U+E052 + "v" > U+E0AA c nɛn
+U+E057 + "v" > U+E0AB c ɲɛn/nyɛn
+U+E060 + "v" > U+E0AC c yɛn
+U+E066 + "v" > U+E0AD c wɛn
+U+E06C + "v" > U+E0AE c hɛn
+U+E071 + "v" > U+E0AF c lɛn
+U+E078 + "v" > U+E0B0 c rɛn
+c backspace removes diacritic, but not letter
+U+E09D + [K_BKSP] > U+E002 c ɛ
+U+E09E + [K_BKSP] > U+E008 c pɛ
+U+E09F + [K_BKSP] > U+E00E c tɛ
+U+E0A0 + [K_BKSP] > U+E015 c cɛ
+U+E0A1 + [K_BKSP] > U+E01C c kɛ
+U+E0A2 + [K_BKSP] > U+E023 c bɛ
+U+E0A3 + [K_BKSP] > U+E029 c dɛ
+U+E0A4 + [K_BKSP] > U+E030 c jɛ
+U+E0A5 + [K_BKSP] > U+E037 c gɛ
+U+E0A6 + [K_BKSP] > U+E03E c fɛ
+U+E0A7 + [K_BKSP] > U+E045 c sɛ
+U+E0A8 + [K_BKSP] > U+E04A c nzɛ
+U+E0A9 + [K_BKSP] > U+E04D c mɛ
+U+E0AA + [K_BKSP] > U+E052 c nɛ
+U+E0AB + [K_BKSP] > U+E057 c ɲɛ/nyɛ
+U+E0AC + [K_BKSP] > U+E060 c yɛ
+U+E0AD + [K_BKSP] > U+E066 c wɛ
+U+E0AE + [K_BKSP] > U+E06C c hɛ
+U+E0AF + [K_BKSP] > U+E071 c lɛ
+U+E0B0 + [K_BKSP] > U+E078 c rɛ
+c end of backspace
+c end of nasality diacritic on /ɛ/ syllables
+
+
+c nasality diacritic on /a/ syllables
+U+E003 + "v" > U+E0B1 c an
+U+E009 + "v" > U+E0B2 c pan
+U+E00F + "v" > U+E0B3 c tan
+U+E016 + "v" > U+E0B4 c can
+U+E01D + "v" > U+E0B5 c kan
+U+E024 + "v" > U+E0B6 c ban
+U+E02A + "v" > U+E0B7 c dan
+U+E031 + "v" > U+E0B8 c jan
+U+E038 + "v" > U+E0B9 c gan
+U+E03F + "v" > U+E0BA c fan
+U+E046 + "v" > U+E0BB c san
+U+E04B + "v" > U+E0BC c nzan
+U+E04E + "v" > U+E0BD c man
+U+E053 + "v" > U+E0BE c nan
+U+E058 + "v" > U+E0BF c ɲan/nyan
+U+E05B + "v" > U+E0C0 c ngan/ŋan
+U+E061 + "v" > U+E0C1 c yan
+U+E067 + "v" > U+E0C2 c wan
+U+E06D + "v" > U+E0C3 c han
+U+E072 + "v" > U+E0C4 c lan
+U+E079 + "v" > U+E0C5 c ran
+c backspace removes diacritic, but not letter
+U+E0B1 + [K_BKSP] > U+E003 c a
+U+E0B2 + [K_BKSP] > U+E009 c pa
+U+E0B3 + [K_BKSP] > U+E00F c ta
+U+E0B4 + [K_BKSP] > U+E016 c ca
+U+E0B5 + [K_BKSP] > U+E01D c ka
+U+E0B6 + [K_BKSP] > U+E024 c ba
+U+E0B7 + [K_BKSP] > U+E02A c da
+U+E0B8 + [K_BKSP] > U+E031 c ja
+U+E0B9 + [K_BKSP] > U+E038 c ga
+U+E0BA + [K_BKSP] > U+E03F c fa
+U+E0BB + [K_BKSP] > U+E046 c sa
+U+E0BC + [K_BKSP] > U+E04B c nza
+U+E0BD + [K_BKSP] > U+E04E c ma
+U+E0BE + [K_BKSP] > U+E053 c na
+U+E0BF + [K_BKSP] > U+E058 c ɲa/nya
+U+E0C0 + [K_BKSP] > U+E05B c nga/ŋa
+U+E0C1 + [K_BKSP] > U+E061 c ya
+U+E0C2 + [K_BKSP] > U+E067 c wa
+U+E0C3 + [K_BKSP] > U+E06D c ha
+U+E0C4 + [K_BKSP] > U+E072 c la
+U+E0C5 + [K_BKSP] > U+E079 c ra
+c end of backspace
+c end of nasality diacritic on /a/ syllables
+
+
+c modulation diacritic on /a/ syllables
++ "A" > U+E0C6 c A
+U+E009 + "A" > U+E0C7 c pA
+U+E00F + "A" > U+E0C8 c tA
+U+E016 + "A" > U+E0C9 c cA
+U+E01D + "A" > U+E0CA c kA
+U+E024 + "A" > U+E0CB c bA
+U+E02A + "A" > U+E0CC c dA
+U+E031 + "A" > U+E0CD c jA
+U+E038 + "A" > U+E0CE c gA
+U+E03F + "A" > U+E0CF c fA
+U+E046 + "A" > U+E0D0 c sA
+U+E04B + "A" > U+E0D1 c nzA
+U+E04E + "A" > U+E0D2 c mA
+U+E053 + "A" > U+E0D3 c nA
+U+E058 + "A" > U+E0D4 c ɲA/nyA
+U+E05B + "A" > U+E0D5 c ngA/ŋA
+U+E061 + "A" > U+E0D6 c yA
+U+E067 + "A" > U+E0D7 c wA
+U+E06D + "A" > U+E0D8 c hA
+U+E072 + "A" > U+E0D9 c lA
+U+E079 + "A" > U+E0DA c rA
+c backspace removes diacritic, but not letter
+U+E0C6 + [K_BKSP] > U+E003 c a
+U+E0C7 + [K_BKSP] > U+E009 c pa
+U+E0C8 + [K_BKSP] > U+E00F c ta
+U+E0C9 + [K_BKSP] > U+E016 c ca
+U+E0CA + [K_BKSP] > U+E01D c ka
+U+E0CB + [K_BKSP] > U+E024 c ba
+U+E0CC + [K_BKSP] > U+E02A c da
+U+E0CD + [K_BKSP] > U+E031 c ja
+U+E0CE + [K_BKSP] > U+E038 c ga
+U+E0CF + [K_BKSP] > U+E03F c fa
+U+E0D0 + [K_BKSP] > U+E046 c sa
+U+E0D1 + [K_BKSP] > U+E04B c nza
+U+E0D2 + [K_BKSP] > U+E04E c ma
+U+E0D3 + [K_BKSP] > U+E053 c na
+U+E0D4 + [K_BKSP] > U+E058 c 'ɲa'/'nya'
+U+E0D5 + [K_BKSP] > U+E05B c 'nga'/ŋa
+U+E0D6 + [K_BKSP] > U+E061 c ya
+U+E0D7 + [K_BKSP] > U+E067 c wa
+U+E0D8 + [K_BKSP] > U+E06D c ha
+U+E0D9 + [K_BKSP] > U+E072 c la
+U+E0DA + [K_BKSP] > U+E079 c ra
+c end of backspace
+c end of modulation diacritic on /a/ syllables
+
+
+c nasality diacritic on /ɔ/ syllables
+U+E00A + "v" > U+E0DB c pɔn
+U+E025 + "v" > U+E0DC c bɔn
+U+E04F + "v" > U+E0DD c mɔn
+U+E054 + "v" > U+E0DE c nɔn
+U+E059 + "v" > U+E0DF c ɲɔn/nyɔn
+U+E05C + "v" > U+E0E0 c ngɔn/ŋɔn
+c backspace removes diacritic, but not letter
+U+E0DB + [K_BKSP] > U+E00A c pɔ
+U+E0DC + [K_BKSP] > U+E025 c bɔ
+U+E0DD + [K_BKSP] > U+E04F c mɔ
+U+E0DE + [K_BKSP] > U+E054 c nɔ
+U+E0DF + [K_BKSP] > U+E059 c ɲɔ/nyɔ
+U+E0E0 + [K_BKSP] > U+E05C c ngɔ/ŋɔ
+c end of backspace
+c end of nasality diacritic on /ɔ/ syllables
+
+c nasality diacritic on /o/ syllables
+U+E005 + "v" > U+E0E7 c on
+U+E011 + "v" > U+E0E8 c ton
+U+E018 + "v" > U+E0E9 c con
+U+E01F + "v" > U+E0EA c kon
+U+E02C + "v" > U+E0EB c don
+U+E033 + "v" > U+E0EC c jon
+U+E03A + "v" > U+E0ED c gon
+U+E041 + "v" > U+E0EE c fon
+U+E048 + "v" > U+E0EF c son
+U+E063 + "v" > U+E0F0 c yon
+U+E069 + "v" > U+E0F1 c won
+U+E074 + "v" > U+E0F2 c lon
+U+E07B + "v" > U+E0F3 c ron
+c backspace removes diacritic, but not letter
+U+E0E7 + [K_BKSP] > U+E005 c o
+U+E0E8 + [K_BKSP] > U+E011 c to
+U+E0E9 + [K_BKSP] > U+E018 c co
+U+E0EA + [K_BKSP] > U+E01F c ko
+U+E0EB + [K_BKSP] > U+E02C c do
+U+E0EC + [K_BKSP] > U+E033 c jo
+U+E0ED + [K_BKSP] > U+E03A c go
+U+E0EE + [K_BKSP] > U+E041 c fo
+U+E0EF + [K_BKSP] > U+E048 c so
+U+E0F0 + [K_BKSP] > U+E063 c yo
+U+E0F1 + [K_BKSP] > U+E069 c wo
+U+E0F2 + [K_BKSP] > U+E074 c lo
+U+E0F3 + [K_BKSP] > U+E07B c ro
+c end of backspace
+c end of nasality diacritic on /o/ syllables
+
+c hightone diacritic on /ɔ/ syllables
+U+E00A  + "q" > U+E0E1 c pɔ´
+U+E025  + "q" > U+E0E2 c bɔ´
+U+E04F  + "q" > U+E0E3 c mɔ´
+U+E054  + "q" > U+E0E4 c nɔ´
+U+E059  + "q" > U+E0E5 c ɲɔ´/nyɔ´
+U+E05C  + "q" > U+E0E6 c ngɔ´/ŋɔ´
+c backspace removes diacritic, but not letter
+U+E0E1 + [K_BKSP] > U+E00A c pɔ
+U+E0E2 + [K_BKSP] > U+E025 c bɔ
+U+E0E3 + [K_BKSP] > U+E04F c mɔ
+U+E0E4 + [K_BKSP] > U+E054 c nɔ
+U+E0E5 + [K_BKSP] > U+E059 c ɲɔ/nyɔ
+U+E0E6 + [K_BKSP] > U+E05C c ngɔ/ŋɔ
+c end of backspace
+c end of hightone diacritic on /ɔ/ syllables
+
+
+c hightone diacritic on /o/ syllables
+U+E005 + "q" > U+E0F4 c ó
+U+E011 + "q" > U+E0F5 c tó
+U+E018 + "q" > U+E0F6 c có
+U+E01F + "q" > U+E0F7 c kó
+U+E02C + "q" > U+E0F8 c dó
+U+E033 + "q" > U+E0F9 c jó
+U+E03A + "q" > U+E0FA c gó
+U+E041 + "q" > U+E0FB c fó
+U+E048 + "q" > U+E0FC c só
+U+E063 + "q" > U+E0FD c yó
+U+E069 + "q" > U+E0FE c wó
+U+E074 + "q" > U+E0FF c ló
+U+E07B + "q" > U+E100 c ró
+c backspace removes diacritic, but not letter
+U+E0F4 + [K_BKSP] > U+E005 c o
+U+E0F5 + [K_BKSP] > U+E011 c to
+U+E0F6 + [K_BKSP] > U+E018 c co
+U+E0F7 + [K_BKSP] > U+E01F c ko
+U+E0F8 + [K_BKSP] > U+E02C c do
+U+E0F9 + [K_BKSP] > U+E033 c jo
+U+E0FA + [K_BKSP] > U+E03A c go
+U+E0FB + [K_BKSP] > U+E041 c fo
+U+E0FC + [K_BKSP] > U+E048 c so
+U+E0FD + [K_BKSP] > U+E063 c yo
+U+E0FE + [K_BKSP] > U+E069 c wo
+U+E0FF + [K_BKSP] > U+E074 c lo
+U+E100 + [K_BKSP] > U+E07B c ro
+c end of backspace
+c end of hightone diacritic on /o/ syllables
+
+
+c nasality diacritic on /u/ syllables
+U+E006 + "v" > U+E101 c un
+U+E00B + "v" > U+E102 c pun
+U+E012 + "v" > U+E103 c tun
+U+E019 + "v" > U+E104 c cun
+U+E020 + "v" > U+E105 c kun
+U+E026 + "v" > U+E106 c bun
+U+E02D + "v" > U+E107 c dun
+U+E034 + "v" > U+E108 c jun
+U+E03B + "v" > U+E109 c gun
+U+E042 + "v" > U+E10A c fun
+U+E049 + "v" > U+E10B c sun
+U+E050 + "v" > U+E10C c mun
+U+E055 + "v" > U+E10D c nun
+U+E05A + "v" > U+E10E c ɲun/nyun
+U+E05D + "v" > U+E10F c ngun/ŋun
+U+E064 + "v" > U+E110 c yun
+U+E06A + "v" > U+E111 c wun
+U+E06E + "v" > U+E112 c hun
+U+E075 + "v" > U+E113 c lun
+U+E07C + "v" > U+E114 c run
+c backspace removes diacritic, but not letter
+U+E101 + [K_BKSP] > U+E006 c u
+U+E102 + [K_BKSP] > U+E00B c pu
+U+E103 + [K_BKSP] > U+E012 c tu
+U+E104 + [K_BKSP] > U+E019 c cu
+U+E105 + [K_BKSP] > U+E020 c ku
+U+E106 + [K_BKSP] > U+E026 c bu
+U+E107 + [K_BKSP] > U+E02D c du
+U+E108 + [K_BKSP] > U+E034 c ju
+U+E109 + [K_BKSP] > U+E03B c gu
+U+E10A + [K_BKSP] > U+E042 c fu
+U+E10B + [K_BKSP] > U+E049 c su
+U+E10C + [K_BKSP] > U+E050 c mu
+U+E10D + [K_BKSP] > U+E055 c nu
+U+E10E + [K_BKSP] > U+E05A c ɲu/nyu
+U+E10F + [K_BKSP] > U+E05D c ngu/ŋu
+U+E110 + [K_BKSP] > U+E064 c yu
+U+E111 + [K_BKSP] > U+E06A c wu
+U+E112 + [K_BKSP] > U+E06E c hu
+U+E113 + [K_BKSP] > U+E075 c lu
+U+E114 + [K_BKSP] > U+E07C c ru
+c end of backspace
+c end of nasality diacritic on /u/ syllables
+
+c diacritics alone
+U+E000 + "*" > U+E115 c 'i' nasality diacritic
+U+E001 + "*" > U+E116 c 'E' nasality diacritic
+U+E002 + "*" > U+E116 c 'e/ɛ' nasality diacritic
+U+E003 + "*" > U+E117 c 'a' nasality diacritic; using 'a' key
+U+E0C6 + "*" > U+E118 c 'a' modulation diacritic; using 'A' key
+U+E005 + "*" > U+E119 c 'o/ɔ' nasality diacritic; using 'O' key
+U+E004 + "*" > U+E11A c 'o/ɔ' hightone diacritic; using 'o' key
+U+E006 + "*" > U+E11B c 'u' nasality diacritic
+c end of diacritics alone
+
