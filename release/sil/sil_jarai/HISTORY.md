@@ -1,6 +1,10 @@
 Jarai ចារាយ (SIL) Change History
 ====================
 
+1.2.2 (24 Mar 2025)
+----------------
+* replace Mondulkiri fonts with Busra
+
 1.2.1 (10 Dec 2024)
 ------------------
 * Updated images in welcome.html
