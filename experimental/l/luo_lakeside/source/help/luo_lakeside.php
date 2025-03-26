@@ -9,10 +9,8 @@ require_once('header.php');
 This is a Luo keyboard that uses the unique Luo Lakeside script. The Luo Lakeside script is not yet included in Unicode.
 </p>
 
-<h1>Keyboard Layout</h1>
-
-<h2>Desktop Keyboard Layout</h2?
-<div id='osk' data-states='default shift alt shift-alt'>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift alt'>
 </div>
 
 <h2>Mobile/Tablet Keyboard Layout</h2>
