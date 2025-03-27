@@ -7461,10 +7461,14 @@ any(aw)'ng' + 'a' > index(a, 1) 'ng'
 any(aw)'ng' + 'A' > index(a, 1) 'ng'
 any(aw)'NG' + 'a' > index(a, 1) 'NG'
 any(aw)'NG' + 'A' > index(a, 1) 'NG'
-any(low_uw) any(aa) + 'a' > 'u'index(a, 1)
-any(low_uw) any(aa) + 'A' > 'u'index(a, 1) 
-any(upper_uw) any(aa) + 'a' > 'U'index(a, 1)
-any(upper_uw) any(aa) + 'A' > 'U'index(a, 1) 
+any(low_uw) 'a' + 'a' > 'u'index(low_aa, 1)
+any(low_uw) 'a' + 'A' > 'u'index(low_aa, 1) 
+any(upper_uw) 'a' + 'a' > 'U'index(low_aa, 1)
+any(upper_uw) 'a' + 'A' > 'U'index(low_aa, 1) 
+any(low_uw) 'A' + 'a' > 'u'index(upper_aa, 1)
+any(low_uw) 'A' + 'A' > 'u'index(upper_aa, 1) 
+any(upper_uw) 'A' + 'a' > 'U'index(upper_aa, 1)
+any(upper_uw) 'A' + 'A' > 'U'index(upper_aa, 1) 
 
 'u' any(low_aa) + 'w' > index(low_uw, 2) 'a'
 'u' any(low_aa) + 'W' > index(low_uw, 2) 'a'
