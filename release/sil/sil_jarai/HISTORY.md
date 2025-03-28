@@ -1,6 +1,10 @@
 Jarai ចារាយ (SIL) Change History
 ====================
 
+1.3 (28 Mar 2025)
+----------------
+* Added EM Space to SHIFT + SPACE
+
 1.2.2 (24 Mar 2025)
 ----------------
 * replace Mondulkiri fonts with Busra
