@@ -222,6 +222,7 @@ store(upper_i_v) 'ÍÌỈĨỊ'
 store(h) 'hH'
 store(two_aa) 'âÂ'
 store(two_a) 'aA'
+store(two_uw) 'Ưư'
 c *******************************************************************
 
     c Keyboard options
@@ -9007,7 +9008,7 @@ any(ee) + 'W' > index(ee, 1)'W'
 'thuở' + 'W' > 'thưở'
 'Thuở' + 'W' > 'Thưở'
 'THUỞ' + 'W' > 'THƯỞ'
-
+any(two_u) any(ow) + any(ptcmni) > index(two_uw, 1) index(ow, 2) index(ptcmni, 3)
 'ư' any(ow) + 'w' > 'u'index(o, 2)'w'
 'Ư' any(ow) + 'w' > 'U'index(o, 2)'w'
 'ư' any(ow) + 'W' > 'u'index(o, 2)'W'
