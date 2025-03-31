@@ -1,6 +1,11 @@
 Tchad Keyboard Change History
 =======================
 
+4.3.2 (31 Mar 2025)
+------------------
+* Adjust language tag for fub to fub-Latn and 
+  remove cds (Chadian Sign Language)
+
 4.3.1 (20 Feb 2025)
 ------------------
 * Put OSKFont from .kps file into .kvks file
