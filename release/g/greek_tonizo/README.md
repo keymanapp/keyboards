@@ -7,7 +7,7 @@ Greek polytonic kbd for any device
 
 Links
 -----
-Keyboard Homepage: https://keyman.com/keyboards/greek_tonizo
+Keyboard Homepages: https://keyman.com/keyboards/greek_tonizo   https://greek.tonizo.gr 
 
 Copyright
 ---------
