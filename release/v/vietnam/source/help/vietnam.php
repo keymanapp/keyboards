@@ -8,7 +8,7 @@
 ?>
 
 <p>
-vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese), Vạ Xoạng (Zhuang Romanization), Quỏng Đung Vạ (Cantonese Romanization) and Hòi Sán Vạ (Hoisanese Romanization)
+vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese)
 </p>
 <p>
   Because the Vietnamese alphabet uses a complex system of diacritical marks, Telex requires the user to type in a base letter, followed by one or two characters that represent the diacritical marks:

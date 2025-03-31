@@ -3,7 +3,7 @@ vietnam keyboard
 
 Description
 -----------
-vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese), Vạ Xoạng (Zhuang Romanization), Quỏng Đung Vạ (Cantonese Romanization) and Hòi Sán Vạ (Hoisanese Romanization)
+vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese)
 
 
 Links
