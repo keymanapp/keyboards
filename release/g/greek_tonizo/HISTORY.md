@@ -1,10 +1,8 @@
 greek_tonizo Change History
 ====================
 
-CHANGES
-
-1.0.2 (2025-03-31) Help file changed - errors fixed
-
+1.0.2 (2025-03-31)
+------------------
 * Help file changed to guide users to external keyboard info site
 * Caps Lock Shift functionality implemented for desktop
 * Automatic breathings undone in acronyms and numerals in mobiles
