@@ -175,5 +175,5 @@
 <p>如何逆虜來侵犯 Ngùi Hò Ngịch Lũ Lòi Xấm Phạn<p>
 <p>汝等行看取敗虛 Nỹ Ảnh Hành Hón Xủi Bại Húi<p>
 
-<p>© 2025 cathaylab</p>
+<p>© cathaylab</p>
 
