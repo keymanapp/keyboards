@@ -1,4 +1,4 @@
-﻿c vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese), Vạ Xoạng (Zhuang Romanization), Quỏng Đung Vạ (Cantonese Romanization) and Hòi Sán Vạ (Hoisanese Romanization)
+﻿c vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese)
 store(&VERSION) '15.0'
 store(&NAME) 'vietnam'
 store(&COPYRIGHT) 'Copyright © cathaylab'
@@ -47,6 +47,12 @@ store(vowels_huyen)             'àèìòùằầềồờừỳÀÈÌÒÙẰẦ
 store(vowels_hoi)               'ảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶ'
 store(vowels_nga)               'ãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸ'
 store(vowels_nang)              'ạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴ'
+store(vowel)                   'aeiouyAEIOUY'
+store(vowel_sac)               'áéíóúýÁÉÍÓÚÝ'
+store(vowel_huyen)             'àèìòùỳÀÈÌÒÙỲ'
+store(vowel_hoi)               'ảẻỉỏủỷẢẺỈỎỦỶ'
+store(vowel_nga)               'ãẽĩõũỹÃẼĨÕŨỸ'
+store(vowel_nang)              'ạẹịọụỵẠẸỊỌỤỴ'
 store(viet_vowels)              'aeiouăâêôơưyAEIOUĂÂÊÔƠƯYáéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝàèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴ'
 store(u_consonants)              'bcdhklmnpstzBCDHKLMNPSTZ'
 store(y_consonants)              'bcdfghjklmnpstyzBCDFGHJKLMNPSTYZ'
@@ -216,6 +222,7 @@ store(upper_i_v) 'ÍÌỈĨỊ'
 store(h) 'hH'
 store(two_aa) 'âÂ'
 store(two_a) 'aA'
+store(two_uw) 'Ưư'
 c *******************************************************************
 
     c Keyboard options
@@ -3693,12 +3700,6 @@ any(no_y_vowels_nga) "NG" + "J" > index(no_y_vowels_nang, 1) "NG"
 "uỏi" + "W" > "ưởi"
 "uõi" + "W" > "ưỡi"
 "uọi" + "W" > "ượi"
-"uoi" + "o" > "ưôi"
-"uói" + "o" > "ưối"
-"uòi" + "o" > "ưồi"
-"uỏi" + "o" > "ưổi"
-"uõi" + "o" > "ưỗi"
-"uọi" + "o" > "ưội"
 
 "UOI" + "W" > "ƯƠI"
 "UÓI" + "W" > "ƯỚI"
@@ -3707,12 +3708,6 @@ any(no_y_vowels_nga) "NG" + "J" > index(no_y_vowels_nang, 1) "NG"
 "UÕI" + "W" > "ƯỠI"
 "UỌI" + "W" > "ƯỢI"
 
-"UOI" + "O" > "ƯÔI"
-"UÓI" + "O" > "ƯỐI"
-"UÒI" + "O" > "ƯỒI"
-"UỎI" + "O" > "ƯỔI"
-"UÕI" + "O" > "ƯỖI"
-"UỌI" + "O" > "ƯỘI"
 
 "UOI" + "w" > "ƯƠI"
 "UÓI" + "w" > "ƯỚI"
@@ -3720,13 +3715,6 @@ any(no_y_vowels_nga) "NG" + "J" > index(no_y_vowels_nang, 1) "NG"
 "UỎI" + "w" > "ƯỞI"
 "UÕI" + "w" > "ƯỠI"
 "UỌI" + "w" > "ƯỢI"
-
-"UOI" + "o" > "ƯÔI"
-"UÓI" + "o" > "ƯỐI"
-"UÒI" + "o" > "ƯỒI"
-"UỎI" + "o" > "ƯỔI"
-"UÕI" + "o" > "ƯỖI"
-"UỌI" + "o" > "ƯỘI"
 
 "uou" + "w" > "ươu"
 "uóu" + "w" > "ướu"
@@ -3818,8 +3806,8 @@ any(vowels_nang)'t' + 's' > index(vowels_sac, 1)'t'
 any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 
 "ńg" + "a" > "ngá"
-"ńg" + "e" > "nghé"
-"ńg" + "i" > "nghí"
+"ńg" + "e" > "ngé"
+"ńg" + "i" > "ngí"
 "ńg" + "o" > "ngó"
 "ńg" + "u" > "ngú"
 "ńg" + "w" > "ngứ"
@@ -3836,8 +3824,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "ḿ" + "u" > "mú"
 "ḿ" + "w" > "mứ"
 "ǹg" + "a" > "ngà"
-"ǹg" + "e" > "nghè"
-"ǹg" + "i" > "nghì"
+"ǹg" + "e" > "ngè"
+"ǹg" + "i" > "ngì"
 "ǹg" + "o" > "ngò"
 "ǹg" + "u" > "ngù"
 "ǹ" + "a" > "nà"
@@ -3851,8 +3839,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "m̀" + "o" > "mò"
 "m̀" + "u" > "mù"
 "n̉g" + "a" > "ngả"
-"n̉g" + "e" > "nghẻ"
-"n̉g" + "i" > "nghỉ"
+"n̉g" + "e" > "ngẻ"
+"n̉g" + "i" > "ngỉ"
 "n̉g" + "o" > "ngỏ"
 "n̉g" + "u" > "ngủ"
 "n̉" + "a" > "nả"
@@ -3866,8 +3854,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "m̉" + "o" > "mỏ"
 "m̉" + "u" > "mủ"
 "ñg" + "a" > "ngã"
-"ñg" + "e" > "nghẽ"
-"ñg" + "i" > "nghĩ"
+"ñg" + "e" > "ngẽ"
+"ñg" + "i" > "ngĩ"
 "ñg" + "o" > "ngõ"
 "ñg" + "u" > "ngũ"
 "ñ" + "a" > "nã"
@@ -3881,8 +3869,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "m͂" + "o" > "mõ"
 "m͂" + "u" > "mũ"
 "ṇg" + "a" > "ngạ"
-"ṇg" + "e" > "nghẹ"
-"ṇg" + "i" > "nghị"
+"ṇg" + "e" > "ngẹ"
+"ṇg" + "i" > "ngị"
 "ṇg" + "o" > "ngọ"
 "ṇg" + "u" > "ngụ"
 "ṇ" + "a" > "nạ"
@@ -3896,8 +3884,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "ṃ" + "o" > "mọ"
 "ṃ" + "u" > "mụ"
 "ŃG" + "A" > "NGÁ"
-"ŃG" + "E" > "NGHÉ"
-"ŃG" + "I" > "NGHÍ"
+"ŃG" + "E" > "NGÉ"
+"ŃG" + "I" > "NGÍ"
 "ŃG" + "O" > "NGÓ"
 "ŃG" + "U" > "NGÚ"
 "Ń" + "A" > "NÁ"
@@ -3911,8 +3899,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "Ḿ" + "O" > "MÓ"
 "Ḿ" + "U" > "MÚ"
 "ǸG" + "A" > "NGÀ"
-"ǸG" + "E" > "NGHÈ"
-"ǸG" + "I" > "NGHÌ"
+"ǸG" + "E" > "NGÈ"
+"ǸG" + "I" > "NGÌ"
 "ǸG" + "O" > "NGÒ"
 "ǸG" + "U" > "NGÙ"
 "Ǹ" + "A" > "NÀ"
@@ -3926,8 +3914,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "M̀" + "O" > "MÒ"
 "M̀" + "U" > "MÙ"
 "N̉G" + "A" > "NGẢ"
-"N̉G" + "E" > "NGHẺ"
-"N̉G" + "I" > "NGHỈ"
+"N̉G" + "E" > "NGẺ"
+"N̉G" + "I" > "NGỈ"
 "N̉G" + "O" > "NGỎ"
 "N̉G" + "U" > "NGỦ"
 "N̉" + "A" > "NẢ"
@@ -3941,8 +3929,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "M̉" + "O" > "MỎ"
 "M̉" + "U" > "MỦ"
 "ÑG" + "A" > "NGÃ"
-"ÑG" + "E" > "NGHẼ"
-"ÑG" + "I" > "NGHĨ"
+"ÑG" + "E" > "NGẼ"
+"ÑG" + "I" > "NGĨ"
 "ÑG" + "O" > "NGÕ"
 "ÑG" + "U" > "NGŨ"
 "Ñ" + "A" > "NÃ"
@@ -3956,8 +3944,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "M͂" + "O" > "MÕ"
 "M͂" + "U" > "MŨ"
 "ṆG" + "A" > "NGẠ"
-"ṆG" + "E" > "NGHẸ"
-"ṆG" + "I" > "NGHỊ"
+"ṆG" + "E" > "NGẸ"
+"ṆG" + "I" > "NGỊ"
 "ṆG" + "O" > "NGỌ"
 "ṆG" + "U" > "NGỤ"
 "Ṇ" + "A" > "NẠ"
@@ -3971,8 +3959,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "Ṃ" + "O" > "MỌ"
 "Ṃ" + "U" > "MỤ"
 "Ńg" + "a" > "Ngá"
-"Ńg" + "e" > "Nghé"
-"Ńg" + "i" > "Nghí"
+"Ńg" + "e" > "Ngé"
+"Ńg" + "i" > "Ngí"
 "Ńg" + "o" > "Ngó"
 "Ńg" + "u" > "Ngú"
 "Ń" + "a" > "Ná"
@@ -3986,8 +3974,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "Ḿ" + "o" > "Mó"
 "Ḿ" + "u" > "Mú"
 "Ǹg" + "a" > "Ngà"
-"Ǹg" + "e" > "Nghè"
-"Ǹg" + "i" > "Nghì"
+"Ǹg" + "e" > "Ngè"
+"Ǹg" + "i" > "Ngì"
 "Ǹg" + "o" > "Ngò"
 "Ǹg" + "u" > "Ngù"
 "Ǹ" + "a" > "Nà"
@@ -4001,8 +3989,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "M̀" + "o" > "Mò"
 "M̀" + "u" > "Mù"
 "N̉g" + "a" > "Ngả"
-"N̉g" + "e" > "Nghẻ"
-"N̉g" + "i" > "Nghỉ"
+"N̉g" + "e" > "Ngẻ"
+"N̉g" + "i" > "Ngỉ"
 "N̉g" + "o" > "Ngỏ"
 "N̉g" + "u" > "Ngủ"
 "N̉" + "a" > "Nả"
@@ -4016,8 +4004,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "M̉" + "o" > "Mỏ"
 "M̉" + "u" > "Mủ"
 "Ñg" + "a" > "Ngã"
-"Ñg" + "e" > "Nghẽ"
-"Ñg" + "i" > "Nghĩ"
+"Ñg" + "e" > "Ngẽ"
+"Ñg" + "i" > "Ngĩ"
 "Ñg" + "o" > "Ngõ"
 "Ñg" + "u" > "Ngũ"
 "Ñ" + "a" > "Nã"
@@ -4031,8 +4019,8 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "M͂" + "o" > "Mõ"
 "M͂" + "u" > "Mũ"
 "Ṇg" + "a" > "Ngạ"
-"Ṇg" + "e" > "Nghẹ"
-"Ṇg" + "i" > "Nghị"
+"Ṇg" + "e" > "Ngẹ"
+"Ṇg" + "i" > "Ngị"
 "Ṇg" + "o" > "Ngọ"
 "Ṇg" + "u" > "Ngụ"
 "Ṇ" + "a" > "Nạ"
@@ -4045,6 +4033,36 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "Ṃ" + "i" > "Mị"
 "Ṃ" + "o" > "Mọ"
 "Ṃ" + "u" > "Mụ"
+"ńgh" + "e" > "nghé"
+"ńgh" + "i" > "nghí"
+"ǹgh" + "e" > "nghè"
+"ǹgh" + "i" > "nghì"
+"n̉gh" + "e" > "nghẻ"
+"n̉gh" + "i" > "nghỉ"
+"ñgh" + "e" > "nghẽ"
+"ñgh" + "i" > "nghĩ"
+"ṇgh" + "e" > "nghẹ"
+"ṇgh" + "i" > "nghị"
+"Ńgh" + "e" > "Nghé"
+"Ńgh" + "i" > "Nghí"
+"Ǹgh" + "e" > "Nghè"
+"Ǹgh" + "i" > "Nghì"
+"N̉gh" + "e" > "Nghẻ"
+"N̉gh" + "i" > "Nghỉ"
+"Ñgh" + "e" > "Nghẽ"
+"Ñgh" + "i" > "Nghĩ"
+"Ṇgh" + "e" > "Nghẹ"
+"Ṇgh" + "i" > "Nghị"
+"ŃGH" + "E" > "NGHÉ"
+"ŃGH" + "I" > "NGHÍ"
+"ǸGH" + "E" > "NGHÈ"
+"ǸGH" + "I" > "NGHÌ"
+"N̉GH" + "E" > "NGHẺ"
+"N̉GH" + "I" > "NGHỈ"
+"ÑGH" + "E" > "NGHẼ"
+"ÑGH" + "I" > "NGHĨ"
+"ṆGH" + "E" > "NGHẸ"
+"ṆGH" + "I" > "NGHỊ"
 
 "ú" + "e" > "ué"
 "ù" + "e" > "uè"
@@ -5696,21 +5714,21 @@ any(e) 'NH' + any(punctuation) > index(ee, 1) 'NH' index(punctuation, 4)
 any(a) + 'o' > index(aa, 1)'o'
 any(a) + 'O' > index(aa, 1)'O'
 
-'qú' + any(vowels) >'qu'index(vowels_sac, 3)
-'qù' + any(vowels) >'qu'index(vowels_huyen, 3)
-'qủ' + any(vowels) >'qu'index(vowels_hoi, 3)
-'qũ' + any(vowels) >'qu'index(vowels_nga, 3)
-'qụ' + any(vowels) >'qu'index(vowels_nang, 3)
-'Qú' + any(vowels) >'Qu'index(vowels_sac, 3)
-'Qù' + any(vowels) >'Qu'index(vowels_huyen, 3)
-'Qủ' + any(vowels) >'Qu'index(vowels_hoi, 3)
-'Qũ' + any(vowels) >'Qu'index(vowels_nga, 3)
-'Qụ' + any(vowels) >'Qu'index(vowels_nang, 3)
-'QÚ' + any(vowels) >'QU'index(vowels_sac, 3)
-'QÙ' + any(vowels) >'QU'index(vowels_huyen, 3)
-'QỦ' + any(vowels) >'QU'index(vowels_hoi, 3)
-'QŨ' + any(vowels) >'QU'index(vowels_nga, 3)
-'QỤ' + any(vowels) >'QU'index(vowels_nang, 3)
+'qú' + any(vowel) >'qu'index(vowel_sac, 3)
+'qù' + any(vowel) >'qu'index(vowel_huyen, 3)
+'qủ' + any(vowel) >'qu'index(vowel_hoi, 3)
+'qũ' + any(vowel) >'qu'index(vowel_nga, 3)
+'qụ' + any(vowel) >'qu'index(vowel_nang, 3)
+'Qú' + any(vowel) >'Qu'index(vowel_sac, 3)
+'Qù' + any(vowel) >'Qu'index(vowel_huyen, 3)
+'Qủ' + any(vowel) >'Qu'index(vowel_hoi, 3)
+'Qũ' + any(vowel) >'Qu'index(vowel_nga, 3)
+'Qụ' + any(vowel) >'Qu'index(vowel_nang, 3)
+'QÚ' + any(vowel) >'QU'index(vowel_sac, 3)
+'QÙ' + any(vowel) >'QU'index(vowel_huyen, 3)
+'QỦ' + any(vowel) >'QU'index(vowel_hoi, 3)
+'QŨ' + any(vowel) >'QU'index(vowel_nga, 3)
+'QỤ' + any(vowel) >'QU'index(vowel_nang, 3)
 
 any(un_w_letters) + "w" > index(un_w_letters, 1)"w"
 any(un_w_letters) + "W" > index(un_w_letters, 1)"W"
@@ -7444,10 +7462,14 @@ any(aw)'ng' + 'a' > index(a, 1) 'ng'
 any(aw)'ng' + 'A' > index(a, 1) 'ng'
 any(aw)'NG' + 'a' > index(a, 1) 'NG'
 any(aw)'NG' + 'A' > index(a, 1) 'NG'
-any(low_uw) any(aa) + 'a' > 'u'index(a, 1)
-any(low_uw) any(aa) + 'A' > 'u'index(a, 1) 
-any(upper_uw) any(aa) + 'a' > 'U'index(a, 1)
-any(upper_uw) any(aa) + 'A' > 'U'index(a, 1) 
+any(low_uw) 'a' + 'a' > 'u'index(low_aa, 1)
+any(low_uw) 'a' + 'A' > 'u'index(low_aa, 1) 
+any(upper_uw) 'a' + 'a' > 'U'index(low_aa, 1)
+any(upper_uw) 'a' + 'A' > 'U'index(low_aa, 1) 
+any(low_uw) 'A' + 'a' > 'u'index(upper_aa, 1)
+any(low_uw) 'A' + 'A' > 'u'index(upper_aa, 1) 
+any(upper_uw) 'A' + 'a' > 'U'index(upper_aa, 1)
+any(upper_uw) 'A' + 'A' > 'U'index(upper_aa, 1) 
 
 'u' any(low_aa) + 'w' > index(low_uw, 2) 'a'
 'u' any(low_aa) + 'W' > index(low_uw, 2) 'a'
@@ -8961,6 +8983,36 @@ any(e) + 'w' > index(e, 1)'w'
 any(e) + 'W' > index(e, 1)'W'
 any(ee) + 'w' > index(ee, 1)'w'
 any(ee) + 'W' > index(ee, 1)'W'
+
+'thuo' + 'w' > 'thuơ'
+'Thuo' + 'w' > 'Thuơ'
+'THUO' + 'w' > 'THUƠ'
+'thuo' + 'W' > 'thuơ'
+'Thuo' + 'W' > 'Thuơ'
+'THUO' + 'W' > 'THUƠ'
+'thuỏ' + 'w' > 'thuở'
+'Thuỏ' + 'w' > 'Thuở'
+'THUỎ' + 'w' > 'THUỞ'
+'thuỏ' + 'W' > 'thuở'
+'Thuỏ' + 'W' > 'Thuở'
+'THUỎ' + 'W' > 'THUỞ'
+'thuơ' + 'w' > 'thươ'
+'Thuơ' + 'w' > 'Thươ'
+'THUƠ' + 'w' > 'THƯƠ'
+'thuơ' + 'W' > 'thươ'
+'Thuơ' + 'W' > 'Thươ'
+'THUƠ' + 'W' > 'THƯƠ'
+'thuở' + 'w' > 'thưở'
+'Thuở' + 'w' > 'Thưở'
+'THUỞ' + 'w' > 'THƯỞ'
+'thuở' + 'W' > 'thưở'
+'Thuở' + 'W' > 'Thưở'
+'THUỞ' + 'W' > 'THƯỞ'
+any(two_u) any(ow) + any(ptcmni) > index(two_uw, 1) index(ow, 2) index(ptcmni, 3)
+'ư' any(ow) + 'w' > 'u'index(o, 2)'w'
+'Ư' any(ow) + 'w' > 'U'index(o, 2)'w'
+'ư' any(ow) + 'W' > 'u'index(o, 2)'W'
+'Ư' any(ow) + 'W' > 'U'index(o, 2)'W'
 
 'k' + [K_TAB] > 'không'
 'ko' + [K_TAB] > 'không'
