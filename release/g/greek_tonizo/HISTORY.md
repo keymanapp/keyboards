@@ -1,6 +1,8 @@
 greek_tonizo Change History
 ====================
 
+CHANGES
+
 1.0.2 (2025-03-31) Help file changed - errors fixed
 
 * Help file changed to guide users to external keyboard info site
@@ -15,3 +17,4 @@ greek_tonizo Change History
 1.0 (2025-02-05) First edition 
 -----------------
 * Created by Amaryllis Deliyanni
+

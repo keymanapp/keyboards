@@ -1,17 +1,18 @@
-﻿c Input method for polytonic Greek based on the US-QWERTY keyboard adapted for Greek polytonic
-c Developed with Keyman Developer 17.0
+﻿c Πολυτονικὸ πληκτρολόγιο βασισμένο στὴν διάταξη τοῦ πληκτρολογίου US-QWERTY προσαρμοσμένη στοὺς πρόσθετους τόνους καὶ πνεύματα τοῦ πολυτονικοῦ συστήματος. Γιὰ χρῆστες ποὺ θέλουν νὰ γράψουν διαχρονικὰ ἑλληνικὰ μὲ τὸν ἱστορικὸ τονισμὸ τῆς ἑλληνικῆς.
 
 store(&VERSION) '15.0'
 c 
 store(&NAME) 'Greek Tonizo'
 store(&COPYRIGHT) '© Amaryllis Deliyanni'
-store(&MESSAGE) 'Polytonic Greek keyboard'
-store(&KEYBOARDVERSION) '1.0.1'
+store(&KEYBOARDVERSION) '1.0.2'
 store(&BITMAP) 'greek_tonizo.ico'
 store(&LAYOUTFILE) 'greek_tonizo.keyman-touch-layout'
 store(&KMW_EMBEDCSS) 'greek_tonizo.css'
 store(&TARGETS) 'any'
 store(&VISUALKEYBOARD) 'greek_tonizo.kvks'
+
+
+store(&MESSAGE) 'Ἑλληνικὸ πολυτονικὸ πληκτρολόγιο'
 
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
@@ -104,10 +105,10 @@ store(apostrophe)    [K_BKQUOTE]
 store(backslash)     [K_BKSLASH] 
 store(verticalline)  [SHIFT K_BKSLASH]
 c 
-c 2 - VOWELS: explicitly differentiate between NCAPS, SHIFT, CAPS
-c               because of automation, CAPS and SHIFT vowels behave differently
+c 2 - VOWELS: explicitly differentiate between NCAPS, SHIFT, CAPS, CAPS-SHIFT
+c             Because of automation, CAPS and SHIFT behave differently
 c 
-store(alpha)    [NCAPS K_A]   
+store(alpha)    [NCAPS K_A]     c NCAPS vowels = lower case vowels with breathing 
 store(epsilon)  [NCAPS K_E] 
 store(eta)      [NCAPS K_H] 
 store(iota)     [NCAPS K_I] 
@@ -115,7 +116,7 @@ store(omicron)  [NCAPS K_O]
 store(upsilon)  [NCAPS K_Y] 
 store(omega)    [NCAPS K_V]  
 c  
-store(alphaup)  [SHIFT K_A] 
+store(alphaup)  [SHIFT K_A]     c SHIFT vowels = upper case vowels with breathing 
 store(epsilonup)[SHIFT K_E]  
 store(etaup)    [SHIFT K_H] 
 store(iotaup)   [SHIFT K_I] 
@@ -123,13 +124,21 @@ store(omicronup)[SHIFT K_O]
 store(upsilonup)[SHIFT K_Y] 
 store(omegaup)  [SHIFT K_V] 
 c
-store(alphacaps)  [CAPS K_A] 
+store(alphacaps)  [CAPS K_A]    c CAPS vowels = upper case vowels w/o breathing    
 store(epsiloncaps)[CAPS K_E]  
 store(etacaps)    [CAPS K_H] 
 store(iotacaps)   [CAPS K_I] 
 store(omicroncaps)[CAPS K_O] 
 store(upsiloncaps)[CAPS K_Y] 
 store(omegacaps)  [CAPS K_V] 
+c
+store(alphacs)    [CAPS SHIFT K_A]  c CAPS SHIFT = lower case vowels w/o breathing
+store(epsiloncs)  [CAPS SHIFT K_E] 
+store(etacs)      [CAPS SHIFT K_H] 
+store(iotacs)     [CAPS SHIFT K_I] 
+store(omicroncs)  [CAPS SHIFT K_O] 
+store(upsiloncs)  [CAPS SHIFT K_Y] 
+store(omegacs)    [CAPS SHIFT K_V]  
 c
 c 2 - CONSONANTS: No differentiation between CAPS, NCAPS, SHIFT needed
 c 
@@ -171,9 +180,9 @@ store(chiup)    [SHIFT K_X]
 store(psiup)    [SHIFT K_C]
 store(rhoup)    [SHIFT K_R]    
 c
-c 3 - Cased keys
+c 3 - Cased keys - consonants only
 c
-store(&CasedKeys)   [K_A] [K_E] [K_H] [K_I] [K_O] [K_Y] [K_V] \  
+store(&CasedKeys)   [K_A] [K_E] [K_H] [K_I] [K_O] [K_Y] [K_V] \
                     [K_B] [K_G] [K_D] [K_Z] [K_U] [K_K] [K_L] \
                     [K_M] [K_N] [K_J] [K_P] [K_S] [K_W] [K_T] \
                     [K_F] [K_X] [K_C] [K_R]
@@ -240,15 +249,20 @@ c   GROUPS OF CHARACTERS NEEDED IN AUTOMATIC BREATHING RULES
 c 
 store(vowels) [NCAPS K_A] [NCAPS K_E] [NCAPS K_H] [NCAPS K_I] [NCAPS K_O] [NCAPS K_Y] [NCAPS K_V] \ 
               [NCAPS SHIFT K_A] [NCAPS SHIFT K_E] [NCAPS SHIFT K_H] [NCAPS SHIFT K_I] [NCAPS SHIFT K_O] [NCAPS SHIFT K_Y] [NCAPS SHIFT K_V]
-store(fwn)    U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9        \
-              U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9 
-store(fwnWithBreathing)U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F51 U+1F60 \
-                       U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68 \
-
+store(fwn) U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9 \
+           U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9
+c
+store(fwnWithBreathing) U+1F00 U+1F10 U+1F20 U+1F30 U+1F40 U+1F51 U+1F60 \
+                        U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68
+c                                                                                                                                   U+1F08 U+1F18 U+1F28 U+1F38 U+1F48 U+1F59 U+1F68 \
+c
 c Needed for CAPS lock processing (initial vowels w/o breathing)
 store(vowelscaps) outs(alphacaps) outs(epsiloncaps) outs(etacaps) outs(iotacaps) outs(omicroncaps) outs(upsiloncaps) outs(omegacaps) 
 store(fwncaps) U+0391 U+0395 U+0397 U+0399 U+039F U+03A5 U+03A9
-
+store(vowelscs) outs(alphacs) outs(epsiloncs) outs(etacs) outs(iotacs) outs(omicroncs) outs(upsiloncs) outs(omegacs) 
+store(fwncs) U+03B1 U+03B5 U+03B7 U+03B9 U+03BF U+03C5 U+03C9
+c
+c
 store(conson) outs(beta) outs(gamma) outs(delta) outs(zeta) \
               outs(theta) outs(kappa) outs(lambda) outs(mu) \
               outs(nu) outs(xi) outs(pi)                    \
@@ -614,7 +628,6 @@ store(vowels-vareia-breath) U+1F02 U+1F12 U+1F22 U+1F32 U+1F42 U+1F53 U+1F62 \
 c
 c
 c --------------------------------- RULES -------------------------------------------------------------
-
 c
 c ------------ Greek colon and ypoge in MOBILE platforms ------------
 c
@@ -669,7 +682,7 @@ nul U+0060 + any(vowels) > index(vowels-vareia-breath,3)
 any(beforeWordChars) U+0060 + any(vowels) > index(beforeWordChars,1) index(vowels-vareia-breath,3)
 c
 c ------------- Rule 5: Ignore accents before consonants ----------------
-c ------------- Exception: Daseia beore rho! ----------------------------
+c ------------- Exception: Daseia before rho! ----------------------------
 c
 U+1FFE + any(rhos) > index(rhos_das, 2) 
 any(tonoi) + any(conson) > index(symfwn,2)
@@ -750,7 +763,6 @@ if(&platform = 'Linux') + U+0020 > use(WinOnlyRules)
 c
 c
 c
-c
 c -------------------------- MOBILE PLATFORMS ONLY --------------------------------
 c
 c ------- Keep normal sigma after chars marking the beginning of a word
@@ -766,6 +778,10 @@ if(&platform = 'ios') U+03C2 + any(all-accents) > U+03C3 index(all-tonoi,3)
 if(&platform = 'android') U+03C2 + any(all-accents) > U+03C3 index(all-tonoi,3)
 if(&platform = 'ios') U+03C2 + any(longpressChars) > U+03C3 index(longpressHex,3)
 if(&platform = 'android') U+03C2 + any(longpressChars) > U+03C3 index(longpressHex,3)
+c
+if(&platform = 'ios') + U+0020 > use(mobileOnlyRules)
+if(&platform = 'android') + U+0020 > use(mobileOnlyRules)
+c
 c
 c
 c ------- GENERAL RULE: AUTOMATIC PSILI AT BEGINNING OF WORD STARTING WITH VOWEL -----
@@ -785,11 +801,28 @@ c
 c
 + any(vowels) > index(fwn,1)
 + any(vowelscaps) > index(fwncaps,1)
++ any(vowelscs) > index(fwncs,1)
 + any(conson) > index(symfwn,1)
 + any(exotics) > index(exo,1)
 
 
+c ----------- Different processing for desktop and mobile platforms
+c
+store(vowels-arithm-psili)  U+1F00 U+1F10 U+1F20 U+1F30 U+1F08 U+1F18 U+1F28 U+1F38  c stores used in following groups    
+store(vowels-arithm)  U+0251 U+03B5 U+03B7 U+03B9 U+0391 U+0395 U+0397 U+0399   c for dropping of automatic psili after single quite and space 
+
 group(WinOnlyRules) using keys
-    store(gr-diacritics)     U+1FC0 U+037A U+1FBF U+0060 U+1FFE  c  perispomeni, ypogegrammeni, psili, vareia, daseia
-    store(eng-keybd-keys)    U+005B U+007B U+005D U+0027 U+037E  c  replaced by [, {, ], ', ; respectively when followed by space
-    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1)   
+    store(gr-diacritics)     U+1FC0 U+037A U+1FBF    c  perispomeni, ypogegrammeni, psili
+    store(eng-keybd-keys)    U+005B U+007B U+005D    c  replaced by [, {, ] respectively when followed by space
+    any(gr-diacritics) + U+0020 > index(eng-keybd-keys,1) 
+c FOLLOWING STATEMENT DOES NOT WORK - ια' ιβ' κλπ
+c    U+1f30 any(vowels) U+0060 + U+0020 > U+03B9 index(vowels,2) u+0027 u+0020
+    'ἰα`' + U+0020 > 'ια' u+0027 u+0020
+    U+0060 + U+0020 > U+0027 U+0020                  c vareia followed by space becomes single quote
+c automatic psili dropped when single vowel used for numbering of ordered lists
+    any(vowels-arithm-psili) U+0060 + U+0020 > index(vowels-arithm,1) U+0027 U+0020  
+
+
+group(mobileOnlyRules) using keys
+c automatic psili dropped when single vowel used for numbering of ordered lists
+    any(vowels-arithm-psili) U+0027 + U+0020 > index(vowels-arithm,1) U+0027 U+0020
