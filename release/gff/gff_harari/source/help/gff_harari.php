@@ -1,6 +1,6 @@
 ﻿<?php /*
   Name:             Keyboard_gff_harari
-  Copyright:        Keyboard ©2023 The Geʾez Frontier Foundation 
+  Copyright:        Keyboard © The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      13 June 2023

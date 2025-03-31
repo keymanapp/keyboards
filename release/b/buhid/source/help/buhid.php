@@ -12,8 +12,6 @@
 
 <p class="p1">The font used along with this keyboard is Noto Sans Buhid. In case you have not install it on your machine, you can simply download the font from the <a href="https://www.google.com/get/noto/">Google Noto website</a> and install it.</p>   
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

@@ -1,6 +1,6 @@
 ﻿<?php /*
   Name:             Keyboard_gff_harege_fidelat
-  Copyright:        Keyboard © 2022-2023 The Geʾez Frontier Foundation 
+  Copyright:        Keyboard © The Geʾez Frontier Foundation 
   Documentation:    
   Description:      
   Create Date:      23 Oct 2022
@@ -172,6 +172,6 @@ This keyboard was created by the Geʾez Frontier Foundation.  SIL International 
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p style="text-align: justify;">
-The Harege Fidelat keyboard layout for Keyman Mobile is Copyright 2022-2023 Geʾez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Harege Fidelat keyboard layout for Keyman Mobile is Copyright Geʾez Frontier Foundation.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 </div>

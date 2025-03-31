@@ -23,7 +23,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_csk_azerty(v1.0.1):</strong> A keyboard for the «csk:Kassa, Jola-Kasa, diola-kaasa» language, which generates NFC Unicode characters.</h1t><br>
-							<pc>Created by SIL Senegal. Copyright © 2025 SIL Global</pc>
+							<pc>Created by SIL Senegal. Copyright © SIL Global</pc>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
@@ -2198,7 +2198,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_csk_azerty(v1.0.1):</strong> Um teclado para o «csk:Kassa, Jola-Kasa, diola-kaasa» idioma, que gera caracteres NFC Unicode.</h1t><br>
-							<pc>Criado por SIL Senegal. Copyright © 2025 SIL Global</pc>
+							<pc>Criado por SIL Senegal. Copyright © SIL Global</pc>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>
@@ -4373,7 +4373,7 @@ require_once('header.php');
 						<td class="compactsans">&nbsp;&nbsp;&nbsp;</td>
 						<td class="compactsans">
 							<h1t style="text-align: center"> <strong>sil_senegal_csk_azerty(v1.0.1):</strong> Un clavier pour la langue «csk:Kassa, Jola-Kasa, diola-kaasa», qui génère des caractères NFC Unicode.</h1t><br>
-							<pc>Créé par SIL Sénégal. Copyright © 2025 SIL Global</pc>
+							<pc>Créé par SIL Sénégal. Copyright © SIL Global</pc>
 						</td>
 						<td class="compactsans">&nbsp;&nbsp;</td>
 						<td class="compactsans"style="text-align: center"><img src="icon.png" width="75" height="101"/></td>

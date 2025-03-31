@@ -49,6 +49,3 @@
 
 <div id='osk-tablet' data-states='default shift'>
 </div>
-
-</body>
-</html>

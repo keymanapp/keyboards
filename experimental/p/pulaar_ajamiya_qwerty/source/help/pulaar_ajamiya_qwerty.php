@@ -8,7 +8,6 @@
   This is a Qwerty-based keyboard for the Pulaar language of Senegal using the Ajamiya script. 
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard makes use of rotas for a few characters. For example: typing &lt; twice will produce &#x2039; and typing it three times will produce &#x00AB;. It works with &gt; to produce &#x203A; and &#x00BB;.</p>
 
 <p>It may be difficult to tell, but kashida is on the SHIFT+7 key, and the ampersand is available on the RALT+7 key.</p>
@@ -22,6 +21,3 @@
 
 <div id='osk-phone' data-states='default shift numeric'>
 </div>
-
-</body>
-</html>

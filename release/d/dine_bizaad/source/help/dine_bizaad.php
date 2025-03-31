@@ -28,13 +28,13 @@
   making it easier to type Diné Bizaad.
 </p>
 
-<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
 
- <h2>Unshifted Keyboard</h2>
+ <h3>Unshifted Keyboard</h3>
  <img src="unshifted.png" alt="Unshifted Keyboard">
-<h2>Keyboard with Shift Held</h2>
+<h3>Keyboard with Shift Held</h3>
 <img src="shifted.png" alt="Shifted Keyboard">
-<h2>Keyboard with Alt Held</h2>
+<h3>Keyboard with Alt Held</h3>
 <img src="alt-shifted.png" alt="Keyboard with Alt held">
-<h2>Keyboard with Alt and Shift Held</h2>
+<h3>Keyboard with Alt and Shift Held</h3>
 <img src="alt+shifted.png" alt="Keyboard with Alt and Shift held">

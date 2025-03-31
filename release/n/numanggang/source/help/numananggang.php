@@ -20,8 +20,6 @@ Type the | key again to get the "|" character.
 Type the | key a third time to get "ŊŊ".
 </p>
 
-<h1>Keyboard Layout</h1>
-
   <h2>Desktop layout</h2>
 	<div id='osk' data-states='default shift'></div>
   <h2>Touch layout</h2>

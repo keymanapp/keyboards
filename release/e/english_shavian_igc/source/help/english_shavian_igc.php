@@ -7,7 +7,7 @@
 
   <p>The Shavian alphabet is an alternative, phonemic way to write English. The alphabet takes its name from Irish writer Bernard Shaw who inspired and posthumously funded it. </p><img src="shavian_alphabet_reading_key.png" alt="A table of Shavian alphabet letters and the sounds they represent.">
   <p>For further information about the Shavian alphabet visit <a href="https://www.shavian.info">Shavian.info</a>.</p>
-  <h1>Keyboard Layout</h1>
+  
   <h2>Desktop and onscreen layouts</h2>
   <p>The desktop and onscreen layouts are identical, and are based on the <a href="https://oztypewriter.blogspot.com/2014/04/history-of-shavian-keyboard-imperial.html">Shavian Imperial Good Companion</a> typewriter layout, used by by Kingsley Read in the 1960s. Shaw Imperial is named in honour of the Shavian Imperial Good Companion typewriter.</p>
   <p>The compound letters (𐑸, 𐑹, 𐑺, 𐑻, 𐑼, 𐑽, &amp; 𐑿), numbers, and a range of symbols, are entered by holding down SHIFT.</p>

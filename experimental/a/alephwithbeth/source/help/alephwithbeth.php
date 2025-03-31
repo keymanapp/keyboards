@@ -7,11 +7,8 @@
 
   require_once('header.php');
 ?>
-<body>
 
-<h1>Start Using Aleph with Beth</h1>
-
-<h1>Desktop Layout</h1>
+<h2>Desktop Layout</h2>
 
 <h2>Base layout</h2>
 <img src="KeyboardLayout.png" alt="Keyboard layout" class="center">

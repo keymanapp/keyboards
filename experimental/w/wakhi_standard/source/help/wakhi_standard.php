@@ -13,7 +13,8 @@ and Tajikistan. Most of the written Wakhi content is in this script.</p>
 
 <p>We have also replaced gamma greek with gamma latin to avoid confusion with y.
 </p>
-<h1>Keyboard Layout</h1>
+
+<h2>Desktop Keyboard Layout</h2>
 
 <p>This keyboard makes use of a deadkey (;). You can type the deadkey plus a letter to output another letter. For example, typing ";g" will produce "ɣ". The deadkey can be used with c, d, g, j, s, t, x, z to produce čδɣǰšθx̌ž respectively. These are also available for capital letters. Additionally, typing ";/" will produce ы́.</p>
 <p>The keyboard also makes use of typing double letters to produce a different output. For example, typing "uu" will output "ʉ". The double letters that are available are c, d, e, g, j, s, t, u, x, z to produce č̣ḍəɣ̌ǰ̣ṣ̌ʉx̌ẓ̌ respectively. These are also available for capital letters.</p>
@@ -32,6 +33,3 @@ and Tajikistan. Most of the written Wakhi content is in this script.</p>
 </div>
 
 <p>© Masood Karim</p>
-
-</body>
-</html>

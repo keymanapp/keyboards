@@ -66,9 +66,6 @@ table.zaima { border-bottom: hidden }
 table.zaima { empty-cells: show }
 </style>
 </head>
-<body>
-
-<h1>The Geʾez Frontier Foundation Keyboard for Ethiopian Tigrinya Language</h1>
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
@@ -328,5 +325,3 @@ hitting the punctuation key two or more times until it appears.</p>
     </tr>
   </table>
 </div>
-
-</body>

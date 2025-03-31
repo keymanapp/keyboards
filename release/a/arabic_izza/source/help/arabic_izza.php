@@ -77,4 +77,4 @@ in each line on the first layer, thus improving enormously the comfort and typin
 الأول، مما يضاعف من سرعة إدخال النصوص العربية</p>
 <br/>
 
-<p>© 1977-2018 Prof. Abdelmalek Bouhadjera</p>
+<p>© Prof. Abdelmalek Bouhadjera</p>

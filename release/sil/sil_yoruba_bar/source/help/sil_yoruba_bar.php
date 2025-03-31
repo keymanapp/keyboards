@@ -84,8 +84,6 @@
 	<p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>{</kbd> to get <samp>{</samp> (instead of <samp>ˆ</samp>).</p>
 	<p class='example'><b>Example:</b> type <kbd>`</kbd><kbd>v</kbd> to get <samp>v</samp> (instead of <samp>e̩</samp>).</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

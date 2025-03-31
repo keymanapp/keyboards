@@ -46,7 +46,6 @@ which can be viewed by clicking on the Keyman icon and selecting the On Screen K
 item. The keyboard layout follows the Windows 10 Cherokee Nation Phonetic layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard utilizes dead keys to reach the Cherokee characters. The dead keys on this layout have square brackets around them. For example, "[q]" is a dead key.</p>
 
 

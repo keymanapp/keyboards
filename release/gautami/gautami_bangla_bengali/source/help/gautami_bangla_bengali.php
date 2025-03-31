@@ -5,7 +5,7 @@
 ?>
 
 <p style='margin-top:4.0pt;margin-right:0cm;margin-bottom:4.0pt;margin-left:
-0cm'><span lang=EN>© 2024 Gautam Sengupta <a href="mailto:gsghyd@gmail.com">gsghyd@gmail.com</a></span></p>
+0cm'><span lang=EN>© Gautam Sengupta <a href="mailto:gsghyd@gmail.com">gsghyd@gmail.com</a></span></p>
 
 <p class=MsoNormal style='margin-top:4.0pt'><b><span lang=HI style='font-size:
 11.0pt;font-family:"Tahoma",sans-serif'>‍</span></b><b><span style='font-size:

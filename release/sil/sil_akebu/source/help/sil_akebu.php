@@ -79,9 +79,6 @@ require_once('header.php');
   </style>
 </head>
 
-<body>
-  <h1>Le Clavier Akebu</h1>
-
   <p>Ce document explique l’usage du clavier Keyman élaboré pour taper la langue akebu de Togo avec une police Unicode.
   </p>
 
@@ -938,6 +935,3 @@ require_once('header.php');
   <hr align="left" size="1" width="33%">
   <p class="footnote"><a name="fn1">†</a> Ces caractères sont pour l’orthographie française, et pas pour les langues
     togolaises.</p>
-
-</body>
-

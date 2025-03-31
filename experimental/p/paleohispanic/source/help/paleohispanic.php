@@ -12,8 +12,6 @@
 
 <p>Iberian was a pre-roman language spoken in the Iberian Peninsula region of Spain and Portugal from before the 7th to 1rd century BC.</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

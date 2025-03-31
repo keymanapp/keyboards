@@ -49,5 +49,3 @@ be most popular with English-speaking Copticists. </p>
 <h2>Mobile/Tablet Keyboard Layout</h2>
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
-
-<p>© 2010-2019 Michael Everson, evertype.com.</p>

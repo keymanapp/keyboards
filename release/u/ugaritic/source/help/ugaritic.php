@@ -17,6 +17,3 @@
 <h2>Mobile/Phone Keyboard Layout</h2>
 <div id='osk-phone' data-states='default numeric'>
 </div>
-
-</body>
-</html>

@@ -64,7 +64,8 @@ p.keycap, li.keycap, div.keycap
 div.Section1
 	{page:Section1;}
 </style>
-<body>
+
+
 <div class=Section1>
 <p>This Gondi (Gunjala) Keyman keyboard has been designed for use on
 physical keyboards (laptops, etc.) as well as hand-held touch devices (such as
@@ -130,5 +131,3 @@ to do this, one must press the <b><span style='color:blue'>x</span></b> key <i>t
 <p class=MsoNormal>&nbsp;</p>
 
 </div>
-
-</body>

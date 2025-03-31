@@ -12,8 +12,6 @@ END;
   Nepali Romanized layout by Madan Puraskar Pratisthan (MPP) for Nepali in Devanagari. 
   </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

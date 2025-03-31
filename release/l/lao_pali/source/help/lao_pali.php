@@ -22,6 +22,3 @@ EXTRA;
   <p><img alt="Lao Pali keyboard layout: shift state" src="lao_pali_S.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
   <p><img alt="Lao Pali keyboard layout: AltGr state" src="lao_pali_RA.png"/></p>
-
-</body>
-</html>
