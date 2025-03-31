@@ -75,7 +75,7 @@
 
 <p>tone rules: 音調規則<p>
 <p> 對應粵拼嘅第一聲同第三聲打s，第二聲打r， 第四聲打f，第五聲打x，第六聲打j <p>
-<p> tone 2 = r, tone 1 and tone 3 =s, tone 4 = f, tone 5 = x, tone 6 = j <p>
+<p> tone 2 = r, tone 1 and tone 3 = s, tone 4 = f, tone 5 = x, tone 6 = j <p>
 <h2>Tonal diacritics</h2>
 
 <table>
