@@ -102,7 +102,7 @@
   <tr>
     <td>3 (mid level)</td>
     <td>s</td>
-    <td>huy<strong>s</strong></td>
+    <td>hui<strong>s</strong></td>
     <td>húi去
     </td>
   </tr>
@@ -129,7 +129,7 @@
   <tr>
     <td>7 (high entering)</td>
     <td>/</td>
-    <td>yaat></td>
+    <td>yaat</td>
     <td>yât一
     </td>
   </tr>
@@ -144,7 +144,7 @@
     <td>9 (low entering)</td>
     <td>j</td>
     <td>phat<strong>j</strong></td>
-    <td>phat罰
+    <td>phạt罰
     </td>
   </tr>
 </tbody>
@@ -176,4 +176,3 @@
 <p>汝等行看取敗虛 Nỹ Ảnh Hành Hón Xủi Bại Húi<p>
 
 <p>© cathaylab</p>
-
