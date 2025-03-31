@@ -25,7 +25,8 @@
 
 <h1>韻腹vowels</h1>
 <img src='vowels.png' alt='Keyboard Layout'>
-
+<p>如果韻腹i單獨出現，音調係陰聲í ỉ，頭先嘅韻首係y，咁韻首y可以俾省略</p>
+<p>If vowel i appear alone, the tone is a high tone, such as í or ỉ, and the consonant is y, then the consonant y can be omitted.
 <h1>音調tones</h1>
 <img src='tones.png' alt='Keyboard Layout'>
 
