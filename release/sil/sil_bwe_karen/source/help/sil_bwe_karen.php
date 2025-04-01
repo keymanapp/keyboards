@@ -4,8 +4,6 @@
   require_once('header.php');
 ?>
       
-<body>
-
 <h2>Font</h2>
 <p>The "SIL Bwe Karen" keyboard is designed to work with the Latin script using the Charis SIL Compact font.</p>
 

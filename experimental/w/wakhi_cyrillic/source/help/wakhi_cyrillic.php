@@ -16,9 +16,6 @@ If you have problem using the Wakhi Cyrillic keyboard please contact: writing.xi
 </p>
 
 <p> См. здесь <a href="file:wakhi_cyrillic_help.pdf">здесь</a> для инструкций на русском языке.</p>
-<h1>Keyboard Layout</h1>
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift ctrl'>

@@ -64,7 +64,8 @@ p.keycap, li.keycap, div.keycap
 div.Section1
 	{page:Section1;}
 </style>
-<body>
+
+
 <p>This Gondi (Telugu) Keyman keyboard has been designed for typing Gondi using the Telugu script on
 physical keyboards (laptops, etc.) as well as hand-held touch devices (such as smart
 phones, tablets, etc.) for the Gondi language spoken in the erstwhile district
@@ -243,5 +244,3 @@ style='font-family:Gautami'>వెయ్లొక్‌న</span><span style='fo
 <p class=MsoNormal>&nbsp;</p>
 
 </div>
-
-</body>

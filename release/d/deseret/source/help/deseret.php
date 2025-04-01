@@ -16,8 +16,6 @@
 <p>The letters change as you type as needed; for example, when you type the first i it turns into 𐐮 and then when you type the second i the 𐐮 turns into 𐐨. The \ key can be used to prevent the above from happening and force a, e, g, h, i, o, u, w, y encoding as a separate letter (see table below for examples).</p>
 	<p><a href="deseret_chart2.png"><img class="keyboard" src="deseret_chart2.png" /></a></p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

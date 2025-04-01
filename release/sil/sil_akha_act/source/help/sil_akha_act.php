@@ -17,7 +17,6 @@
 	<li>On touch devices, please use longpresses to access these characters. Find out how to do it in the last section below.</li>
 </ol>
 
-<h1>Keyboard layouts</h1>
 	<h2>Desktop</h2>
 <div id='osk' data-states='default shift alt shift-alt'>
 </div>

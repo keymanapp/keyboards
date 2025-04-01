@@ -6,7 +6,7 @@
 ?>
 
 <p>
-    Romanian (Standard) Basic 1.1 generated from template.
+    Romanian (Standard) Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 <p>ˇc will produce č (available on cCdDeElLnNrRsStTzZ).</p>
 <p>^a will produce â (available on aAeEiIoOuU).</p>
@@ -20,8 +20,6 @@
 <p>¨a will produce ä (available on aAeEiIoOuUyY).</p>
 <p>¸c will produce ç (available on cCsStT).</p>
 
-
-<h1>Keyboard Layout</h1>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>

@@ -200,11 +200,6 @@
 
 </style>
 
-<body>
-
-<h1>Yupik Cyrillic keyboard (Russian layout)</h1>
-<h6>Published by SIL International</h6>
-
 <h2><a href="sil_yupik_cyrillic_ru_russian.php">русский</a></h2>
 
 <p>
@@ -1295,7 +1290,3 @@
 <p>
     SIL International has also published a Yupik Cyrillic keyboard that is based on an English QWERTY keyboard layout. It assigns each Cyrillic character to the key of its nearest phonetically equivalent English character. See the <a href="https://keyman.com/keyboards/sil_yupik_cyrillic">sil_yupik_cyrillic</a> layout.
 </p>
-
-<p>© 2009-2019 SIL International</p>
-
-</body>

@@ -90,8 +90,6 @@
 
     </style>
 
-<body>
-
 <p>SIL's Tai Dam Latin keyboard has been optimized for typing the Tai Dam language in the Latin script. It can also be used for typing the Tai Dón language in the Latin scrit.
 
 <h2>Fonts</h2>
@@ -114,7 +112,7 @@
 <p>Another feature of the keyboard is that it uses context sensitivity to control the production of the tone marks used in Tai Dam, Tai Dón, and Vietnamese. Thus, the keys to which the Combining Acute, Combining Hook, Combining Dot Below, Combining Grave, Combining Tilde, and Combining Macron are assigned will produce those tone marks only after a vowel. In other contexts, the keys will produce the underlying default characters assigned to them.</p>
 <p>Finally, any key that is remapped will produce its underlying default character if it is pressed twice.</p>
 
-<h2>Keyboard layout</h2>
+<h2>Desktop Keyboard layout</h2>
 
 <h3 style="clear:left">Unshifted</h3>
 <div class="key context" id="K_BKQUOTE">
@@ -796,6 +794,3 @@
     <li>Press <b>Ctrl+Shift+Space</b> to produce a No-Break Space (U+00A0).</li>
     <li>Press any remapped key twice to produce its default (unmapped) value.</li>
 </ul>
-
-
-</body>

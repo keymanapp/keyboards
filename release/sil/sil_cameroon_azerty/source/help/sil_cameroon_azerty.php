@@ -109,7 +109,7 @@ require_once('header.php');
 </ul>
 <p xml:lang="fr">Le Clavier Camerounais est un produit de SIL Cameroun. Pour plus d'infos sur le Claver Camerounais ou la technologie linguistique au Cameroun, veuillez visiter <a href="https://langtechcameroon.info">https://langtechcameroon.info</a>
 </p>
-<p xml:lang="fr" style="text-align: center; font-style: italic;">Copyright 2018-2023 SIL Cameroun</p>
+<p xml:lang="fr" style="text-align: center; font-style: italic;">Copyright SIL Cameroun</p>
 </div>
 </div>
 <!--Ending French-->
@@ -224,7 +224,7 @@ require_once('header.php');
 
 <p xml:lang="en">The Cameroon Keyboard is developed by SIL Cameroon. For more information about the Cameroon Keyboard or Language Technology in Cameroon, see <a href="https://langtechcameroon.info">https://langtechcameroon.info</a>
 </p>
-<p xml:lang="en" style="text-align: center; font-style: italic;">Copyright 2018-2023 SIL Cameroon</p>
+<p xml:lang="en" style="text-align: center; font-style: italic;">Copyright SIL Cameroon</p>
 </div>
 </div>
 <!--Ending English-->

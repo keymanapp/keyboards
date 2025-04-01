@@ -28,7 +28,7 @@
 
 </p>
 
-<h1>音韻表 phonologic map</h1>
+<h2>音韻表 phonologic map</h2>
 <p> 建議以下嘅粵語國語字音韻表打字<p>
 
 <p><b>輔音consonants</b></p>
@@ -46,7 +46,7 @@
 
 <!-- <p>See <a href="file:taigi_poj.pdf">this document</a> for all the key combinations.</p> -->
 
-<h1>Keyboard Layout</h1>
+<h2>Desktop Keyboard Layout</h2>
 
 <p><b>Unshifted</b></p>
 <img src='taigitelexU_.png' alt='Keyboard Layout'>

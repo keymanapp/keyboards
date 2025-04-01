@@ -29,8 +29,3 @@ EXTRA;
   <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: shift state" src="lao_2008_rapidU_S.png"/></p>
   <h2 style="clear: left; page-break-before: always">Keyboard layout - with Right Alt</h2>
   <p><img class="kbdlayout" alt="Lao 2008 Rapid keyboard layout: AltGr state" src="lao_2008_rapidU_RA.png"/></p>
-
-
-
-</body>
-</html>

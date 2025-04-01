@@ -24,7 +24,5 @@ END;
     This keyboard is distinguished by: western finals, w-dot follows the character (Western Cree style), zig-zag R's and L's. It uses Unified Canadian Aboriginal Syllabics.
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <div id='osk' data-states='default shift'>
 </div>

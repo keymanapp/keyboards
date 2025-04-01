@@ -9,8 +9,6 @@ require_once('header.php');
 Munji keyboard based on Persian standard
 </p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift shift-ctrl'>
 </div>

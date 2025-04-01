@@ -41,4 +41,4 @@ Taigi Viet Telex version, is using "sfrjw" keys for generating tone marks
 <div id='osk-tablet' data-states='default shift numeric'>
 </div>
 
-<p>© 2024 cathaylab</p>
+<p>© cathaylab</p>

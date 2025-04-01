@@ -5,10 +5,9 @@
   require_once('header.php');
 ?>
 <p>
-    Greek Basic 1.1 generated from template.
+    Greek Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard makes use of deadkeys. Typing the deadkey before the base character will output the combined character. For example:</p>
 <p>΅ι will produce ΐ (available on ιυ).</p>
 <p>΄α will produce ά (available on αΑεΕηΗιΙοΟωΩυΥ).</p>

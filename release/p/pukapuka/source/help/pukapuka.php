@@ -64,7 +64,7 @@ p.keycap, li.keycap, div.keycap
 div.Section1
 	{page:Section1;}
 </style>
-<body>
+
 <p>The Pukapuka keyboard has been designed to type the Pukapuka language of the Cook Islands of the South Pacific. 
 It can be used on physical keyboards (laptops, etc.) as well as hand-held touch devices (such as smart phones, tablets, etc.).</p>
 
@@ -260,5 +260,3 @@ src="pukapuka_longpress_sample.png"></p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 </div>
-
-</body>

@@ -19,8 +19,6 @@ This keyboard was developed for use by BTL (Bible Translation & Literacy) for la
 <p>]d will produce d̯ (available on dDtT).</p>
 <p>_v will produce v̱ (available on vV).</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

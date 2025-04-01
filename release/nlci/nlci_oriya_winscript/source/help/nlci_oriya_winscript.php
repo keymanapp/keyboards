@@ -81,9 +81,6 @@ kbd {
 </style>
 </head>
 
-<body>
-<h1>NLCI Oriya WinScript Keyboard help</h1>
-
 <p>This Keyboard mimic Oriya WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
 <h2>Keyboard layout</h2>
@@ -230,6 +227,3 @@ kbd {
 <h3>Backtick for change into English</h3>
 
 <p> <kbd>`</kbd> Backtick is used to change into English Eg <kbd>`</kbd> <kbd>ତ</kbd> will generate <kbd>q</kbd></p>  
-
-
-</body>
