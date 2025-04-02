@@ -3,6 +3,10 @@ $pagename = 'Esperanto Plus Keyboard Help';
 $pagetitle = 'Esperanto Plus Keyboard Help';
 require_once('header.php');
 ?>
+<head>
+    <link rel="stylesheet" href="eo_plus.css" />
+</head>
+
     <p>
         This keyboard is designed to simplify the input of the Esperanto special characters,
         add the main suffixes and facilitate the writing of the most common words and phrases.

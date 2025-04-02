@@ -33,6 +33,7 @@ END;
 
 	<h3>ប្លង់ក្ដារចុចសម្រាប់ទូរសព្ទ</h3>
 <div id='osk-phone' data-states='default shift symbol'>
+</div>
 
 	<h3>ប្លង់ក្ដារចុចសម្រាប់ថេប្លេត</h3>
 <div id='osk-tablet' data-states='default shift'>

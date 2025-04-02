@@ -263,7 +263,7 @@ The Korean KORDA keyboards are built to type Korean using the transliteration sy
     <div style="width: 54px; display: block; float: left;"> </div>
     <div class="key special" id="K_CTRLR">
     <div class="keycap">Ctrl</div>
-    
+    </div>   
     <br style="clear: left" />    
 
     <h2 class='details'>Keyboard Details</h2>

@@ -6,22 +6,7 @@
 ?>
 
 
-<br/>
-<a href="#Overview">Overview</a><br/>
-<a href="#Using">Using this Keyboard</a><br/>
-<a style='margin-left:20px' href="#osk">Desktop Keyboard Layout</a><br/>
-<a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-<a style='margin-left:20px' href="#Examples">Examples</a><br/>
-<a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a href="#Troubleshooting">Troubleshooting</a><br/>
-<a href="#Technical">Technical Information</a><br/>
-<a style='margin-left:20px' href="#Authorship">Authorship</a><br/>
-<a href="#Ref">Keyboard Reference Chart</a><br/>
-
-
 <div id='Overview'>
-		<!-- A brief introduction to the keyboard, including intended users and font/hardware requirements.  This is basically 
-the info available on the keyboard download site.  Instructions on using the keyboard DO NOT go here. -->
 
 <h2>Overview</h2>
 <p>
@@ -38,8 +23,6 @@ This keyboard is designed for the Tamil language and is similar in concept to th
 <div id='osk' data-states='default shift'>
 </div>
 
-
-</div>
 
 <div id='Quickstart'>
 <h3>Quickstart</h3>
@@ -101,6 +84,7 @@ Grantha letters, which are used for typing Sanskrit, appear on the keyboard and 
 <p>
 Because the consonants contain the implicit vowel <span class='highlightExample'>அ</span>, to produce a pure consonant it is necessary to add the Pulli mark <span class='lang2'>்</span> by typing <span class='keys'>f</span> immediately after the consonant.  Any vowel component that is typed immediately after typing the Pulli mark will not be combined with the consonant.  However, because this keyboard acts in a similar way to a modular, it is possible to type a preceding vowel component followed by a consonant and the Pulli mark, or even a standalone vowel followed by the Pulli mark, producing odd combinations such as <span class='highlightExample'>மெ்</span> or <span class='highlightExample'>அ்</span>.  In every case, a consonant-Pulli mark combinant behaves the same way as a consonant-vowel combinant when you use the arrow, Backspace and Delete keys.
 </p>
+</div>
 
 <div class='keymanweb'>
 <h4>The SRii Character <img src='sri.png' style='vertical-align:middle' /></h4>
@@ -197,23 +181,10 @@ This character is entered by typing <span class='keys'>|</span> (Shift+Vertical 
 </table>
 
 
-
-</div>
-
-
-<div id="Troubleshooting">
-		<!-- How to resolve common issues/difficulties using the keyboard; including link to Square Boxes help page -->
-
 <h2>Troubleshooting</h2>
 
 <h4>Fonts</h4>
 <p>Some of the fonts included with Windows do not include all the Tamil characters that are available with this keyboard.  In order to display every character correctly, we recommend you download and install <span style="font-weight:bold">Tamil fonts</span>.</p>
-
-<!-- <h4>Problem Solving</h4>
-<p>
-</p>
--->
-</div>
 
 
 <div id="Technical">
@@ -232,6 +203,7 @@ This character is entered by typing <span class='keys'>|</span> (Shift+Vertical 
 <p>
 This keyboard was created by M. S. Murali.  Tavultesoft gratefully acknowledges the contribution made by the author in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb.  This effort assists in enabling people to communicate in their own language..
 </p>
+</div>
 
 <div id="Ref">
 <h2>Keyboard Reference Chart</h2>

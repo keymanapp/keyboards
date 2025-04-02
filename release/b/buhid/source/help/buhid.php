@@ -21,5 +21,5 @@
 <div id='osk-phone' data-states='default numeric'>
 </div>
 
-<p class="footer">This keyboard is part of the <a href="https://kairaga.com>Kairaga.com">Kairaga.com</a> keyboard development program. Please send your thoughts to <a href="mailto:info@kairaga.com">info@kairaga.com</a></p> 
+<p>This keyboard is part of the <a href="https://kairaga.com>Kairaga.com">Kairaga.com</a> keyboard development program. Please send your thoughts to <a href="mailto:info@kairaga.com">info@kairaga.com</a></p> 
 

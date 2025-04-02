@@ -14,8 +14,6 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
 ?>
   <link rel="stylesheet" href="style.css" type="text/css" />
 
-   <h1>Korean Morse (SIL) Keyboard Help</h1>
-   <div id='overview'>
     <h2>Overview</h2>
     <p>The Korean Morse (SIL) keyboard is built to type Korean using the Morse transliteration system, also called SKATS (Standard Korean Alphabet Transliteration System). The Morse system is designed to make Latin-Korean transliteration 100% unambiguous.</p>
     <p>The Morse system is not based on the pronunciation of Korean, but is an historical system created by pairing each Korean jamo with the Latin letter that uses the same Morse code value. The system is used among government and military organisations for whom data accuracy is essential. For an alternative accurate transliteration system, based on Korean pronunciation, use the Korean KORDA keyboards.</p>
@@ -32,7 +30,7 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
         <li>Gungsuh</li>
         <li>Malgun Gothic</li>
     </ul>
-  <div id='layout'>
+
    <h2>Keyboard Layout</h2>
     <h3 style="clear:left">Korean Morse (SIL) Keyboard</h3>
     <div class="key plain" id="K_BKQUOTE">
@@ -275,7 +273,7 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
       press <kbd>Shift</kbd>+<kbd>Spacebar</kbd>.</p>
 
     <h2 class='guide'>Complete Typing Guide</h2>
-    <div class='consonants'>
+
         <h3>Consonants</h3>
         <table class='grid'>
             <col width=50 />
@@ -342,8 +340,7 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
                 <td class='lang2' style='font-size:24pt'>ᄒ</td><td><span class='keys'>j</span></td>
             </tr>
         </table>
-    </div>
-    <div class='vowels'>
+
         <h3>Vowels</h3>
         <table class='grid'>
             <col width=50 />
@@ -416,4 +413,4 @@ The Morse system is not based on the pronunciation of Korean, but is an historic
                 <td class='lang2' style='font-size:24pt'>ᅴ</td><td><span class='keys'>d</span>+<span class='keys'>u</span></td>
             </tr>
         </table>
-    </div>
+

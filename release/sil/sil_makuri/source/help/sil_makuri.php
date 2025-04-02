@@ -19,9 +19,3 @@ and selecting the On Screen Keyboard menu itme.
 <h3>Mobile/Tablet Keyboard Layout </h2>
 <div id='osk-tablet' data-states='default shift Num1 Num2'>
 </div>
-
-<h2>Links</h2>
-<ul>
-<li>Home Page: <a href='https://keyman.com/keyboards/sil_makuri'>
-  https://keyman.com/keyboards/sil_makuri</a></li>
-</ul>

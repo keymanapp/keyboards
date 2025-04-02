@@ -52,7 +52,7 @@ END;
             <p>This keyboard works with standard Unicode fonts.</p>
 
 
-        </div>
+
         <div id='UsingGreek' class='break'>
             <h2>Keyboard Layout</h2>
 

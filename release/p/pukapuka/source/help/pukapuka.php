@@ -258,5 +258,3 @@ src="pukapuka_longpress_sample.png"></p>
 <p><img width=733 height=251 id="_x0000_i1026" src="pukapuka_layout_shifted.png"></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-</div>

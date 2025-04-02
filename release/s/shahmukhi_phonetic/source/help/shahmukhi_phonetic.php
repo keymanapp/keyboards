@@ -5,9 +5,6 @@
   require_once('header.php');
 ?>
 
-
-<h1>Start Using Shahmukhi Phonetic</h1>
-
 <p>
 Shahmukhi is a modified Perso-Arab script and this keyboard intends to include support for characters, 
 not supported by the Urdu phonetics keyboard such as ArNoon (ݨ) and ArLaam (ࣇ - U+08C7 in Unicode),

@@ -6,8 +6,6 @@
 ?>
 
 
-<h1>Start Using Seereer Ajami (QWERTY)</h1>
-
 <p>
     Seereer Ajami (QWERTY) keyboard developed for use for the Seereer language of Senegal. 
 </p>
