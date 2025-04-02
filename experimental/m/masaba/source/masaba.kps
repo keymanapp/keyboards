@@ -22,7 +22,7 @@
     <Copyright URL="">© Oreen Yousuf</Copyright>
     <Author URL="mailto:oreen.yousuf@gmail.com">Oreen Yousuf</Author>
     <Version URL=""></Version>
-    <Description URL="">Ce clavier est utilisé pour écrire le Bambara dans l'écriture Masaba. / This keyboard is used to write Bambara in the Masaba script.</Description>
+    <Description URL="">Ce clavier est utilisé pour écrire le Bambara dans l'écriture Masaba. L'écriture Masaba n'est pas encore incluse dans Unicode./ This keyboard is used to write Bambara in the Masaba script. The Masaba script is not yet included in Unicode.</Description>
   </Info>
   <Files>
     <File>
@@ -42,12 +42,6 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
-    </File>
-    <File>
-      <Name>masaba.ico</Name>
-      <Description>File masaba.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
     </File>
     <File>
       <Name>masaba_U.PNG</Name>
@@ -80,22 +74,22 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\Unicode\Masaba\keyboard\Manuel de dactylographie - Typing Manual.pdf</Name>
-      <Description>File Manuel de dactylographie - Typing Manual.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\..\Unicode\Masaba\fonts\MasabaFont.otf</Name>
-      <Description>Font Masaba Font</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.otf</FileType>
-    </File>
-    <File>
       <Name>OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>MasabaTypingManual.pdf</Name>
+      <Description>File MasabaTypingManual.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>MasabaFont.otf</Name>
+      <Description>Font Masaba Font</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -103,10 +97,10 @@
       <Name>Masaba</Name>
       <ID>masaba</ID>
       <Version>1.0</Version>
-      <OSKFont>..\..\..\..\Unicode\Masaba\fonts\MasabaFont.otf</OSKFont>
-      <DisplayFont>..\..\..\..\Unicode\Masaba\fonts\MasabaFont.otf</DisplayFont>
+      <OSKFont>MasabaFont.otf</OSKFont>
+      <DisplayFont>MasabaFont.otf</DisplayFont>
       <Languages>
-        <Language ID="bm">Masaba</Language>
+        <Language ID="bm-Zzzz-ML">Masaba</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

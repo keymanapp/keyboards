@@ -66,8 +66,6 @@ c all standalone vowel graphemes
 + "O" > U+E005
 + "u" > U+E006
 
-+ "ɛ" > U+E002 c same output as "e", if user inputs actual Bambara letter
-+ "ɔ" > U+E004 c same output as "o", if user inputs actual Bambara letter
 c end of standalone vowel /i/ graphemes
 
 c clicking single consonant creates inherent -/a/ syllabic grapheme
@@ -85,16 +83,12 @@ c clicking single consonant creates inherent -/a/ syllabic grapheme
 + "m" > U+E04E
 + "n" > U+E053
 + "N" > U+E058 c for 'ɲ'/'ny'
-+ "ɲ" > U+E058 c for 'ɲ'/'ny'; same as "N" above; in case user uses Bambara Latin letter ɲ
 + "x" > U+E05B c for 'ng'/ŋ
-+ "ŋ" > U+E05B c for 'ng'/'ŋ'; same as "G" above; in case user uses Bambara Latin letter ɲ 
 + "y" > U+E061
 + "w" > U+E067
 + "h" > U+E06D
 + "l" > U+E072
 + "r" > U+E079
-
-+ "Ɲ" > U+E058 c for 'ɲ'/'ny'
 
 c end of capital letter proofing
 
@@ -227,28 +221,6 @@ U+E06D + "e" > U+E06C c hɛ
 U+E072 + "e" > U+E071 c lɛ
 U+E079 + "e" > U+E078 c rɛ
 
-c same outputs but with 'ɛ' if user uses Bambara Latin letter ɛ
-U+E009 + "ɛ" > U+E008 c pɛ
-U+E00F + "ɛ" > U+E00E c tɛ
-U+E016 + "ɛ" > U+E015 c cɛ
-U+E01D + "ɛ" > U+E01C c kɛ
-U+E024 + "ɛ" > U+E023 c bɛ
-U+E02A + "ɛ" > U+E029 c dɛ
-U+E031 + "ɛ" > U+E030 c jɛ
-U+E038 + "ɛ" > U+E037 c gɛ
-U+E03F + "ɛ" > U+E03E c fɛ
-U+E046 + "ɛ" > U+E045 c sɛ
-U+E04B + "ɛ" > U+E04A c nzɛ
-U+E04E + "ɛ" > U+E04D c mɛ
-U+E053 + "ɛ" > U+E052 c nɛ
-U+E058 + "ɛ" > U+E057 c ɲɛ/nyɛ
-U+E061 + "ɛ" > U+E060 c yɛ
-U+E067 + "ɛ" > U+E066 c wɛ
-U+E06D + "ɛ" > U+E06C c hɛ
-U+E072 + "ɛ" > U+E071 c lɛ
-U+E079 + "ɛ" > U+E078 c rɛ
-c end of /ɛ/ vowel graphemes
-
 c /ɔ/ vowel graphemes
 U+E009 + "o" > U+E00A c pɔ
 U+E00F + "o" > U+E010 c tɔ
@@ -268,27 +240,6 @@ U+E061 + "o" > U+E062 c yɔ
 U+E067 + "o" > U+E068 c wɔ
 U+E072 + "o" > U+E073 c lɔ
 U+E079 + "o" > U+E07A c rɔ
-
-c same outputs but with 'ɔ' if user uses Bambara Latin letter ɔ
-U+E009 + "ɔ" > U+E00A c pɔ
-U+E00F + "ɔ" > U+E010 c tɔ
-U+E016 + "ɔ" > U+E017 c cɔ
-U+E01D + "ɔ" > U+E01E c kɔ
-U+E024 + "ɔ" > U+E025 c bɔ
-U+E02A + "ɔ" > U+E02B c dɔ
-U+E031 + "ɔ" > U+E032 c jɔ
-U+E038 + "ɔ" > U+E039 c gɔ
-U+E03F + "ɔ" > U+E040 c fɔ
-U+E046 + "ɔ" > U+E047 c sɔ
-U+E04E + "ɔ" > U+E04F c mɔ
-U+E053 + "ɔ" > U+E054 c nɔ
-U+E058 + "ɔ" > U+E059 c ɲɔ/nyɔ
-U+E05B + "ɔ" > U+E05C c ngɔ/ŋɔ
-U+E061 + "ɔ" > U+E062 c yɔ
-U+E067 + "ɔ" > U+E068 c wɔ
-U+E072 + "ɔ" > U+E073 c lɔ
-U+E079 + "ɔ" > U+E07A c rɔ
-c end of /ɔ/ vowel graphemes
 
 c /o/ vowel graphemes
 U+E00F + "O" > U+E011 c to
