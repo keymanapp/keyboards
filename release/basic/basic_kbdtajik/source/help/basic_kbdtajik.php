@@ -5,10 +5,6 @@
   require_once('header.php');
 ?>
 
-
-
-<h1>Start Using Tajik Basic</h1>
-
 <p>
     Tajik Basic. The keyboard layout follows the Windows 10 layout.
 </p>

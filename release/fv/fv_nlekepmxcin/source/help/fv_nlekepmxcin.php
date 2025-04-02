@@ -19,7 +19,6 @@ END;
     please read our <a href="/troubleshooting/#boxes">troubleshooting guide</a>.
 </p>
 
-<img src="fv_nlekepmxcin_U_.png" alt="" height="198" width="514" border="0" /></h2>
 <ul>
     <li>The special characters of Nɬeʔkepmxcín have been assigned to the number keys. To type the numerals, hold down
         the Right-Alt or Option key then press the appropriate number key. The Numeric keypad on the right side of many

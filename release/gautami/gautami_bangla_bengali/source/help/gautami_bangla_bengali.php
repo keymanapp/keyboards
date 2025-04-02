@@ -899,5 +899,3 @@ width=720 height=243 src="LayoutU_.png" alt="Default (unshifted) state"></span><
 
 <p><a href="LayoutU_S.png"><span style='text-decoration:none'><img border=0
 width=720 height=243 src="LayoutU_S.png" alt="Shift state"></span></a></p>
-
-</div>

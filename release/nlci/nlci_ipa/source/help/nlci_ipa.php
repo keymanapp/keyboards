@@ -1157,8 +1157,6 @@
 symbols appear in pairs, the bottom one represents a voiced consonant. Shaded
 areas denote articulations judged impossible.</span></p>
 
-</div>
-
 <div class=WordSection2>
 
 <h2>Other Consonants</h2>
@@ -4379,14 +4377,6 @@ areas denote articulations judged impossible.</span></p>
   </td>
  </tr>
 </table>
-
-<b><i><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></i></b></div>
-
-<b><i><span style='font-size:14.0pt;font-family:"Arial",sans-serif'><br
-clear=all style='page-break-before:auto'>
-</span></i></b>
 
 </div>
 

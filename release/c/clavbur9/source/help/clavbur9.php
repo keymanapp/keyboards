@@ -163,7 +163,6 @@
             <td>»</td>
           </tr>
 </table>
-</div>
 
 <h2>Disposition du clavier du téléphone / Phone keyboard layout</h2>
 
@@ -171,6 +170,4 @@
 <p>Because of the limited number of keys, some characters are hidden. Press and hold a key with a small dot in the upper right corner to reveal and use them.</p>
 
 <div id='osk-tablet' data-states='default shift numeric'>
-</div>
-
 </div>

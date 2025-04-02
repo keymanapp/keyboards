@@ -240,7 +240,3 @@ style='font-family:Gautami'>వెయ్లొక్‌న</span><span style='fo
 <p>Gondi tends to use the regular digits 0-9, but if the Telugu script digits are required, these can be typed by pressing the <span style='color:blue'>`</span> key (back-tick or tilde ~ key to the left of digit 1) prior to the digit. So pressing <b><span style='color:blue'>`1</span></b> would give ౧ and <b><span style='color:blue'>`2</span></b> would give ౨ and so on.</p>
 
 <p>The underscore key _ (shift+hyphen) is used to produce ౡ so if an underscore is required, then press the hyphen (or dash) key twice: <b><span style='color:blue'>- -</span></b> produces _</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-</div>
