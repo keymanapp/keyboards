@@ -7,6 +7,8 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -66,28 +68,28 @@
       <FileType>.PNG</FileType>
     </File>
     <File>
-      <Name>ZananTypingManual.pdf</Name>
-      <Description>File ZananTypingManual.pdf</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
-    </File>
-    <File>
-      <Name>OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>Zanan-Regular.otf</Name>
       <Description>Font Zanan Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.otf</FileType>
     </File>
     <File>
+      <Name>ZananTypingManual.pdf</Name>
+      <Description>File ZananTypingManual.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
       <Name>welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>..\LICENSE.md</Name>
@@ -101,9 +103,17 @@
       <Name>Zanan</Name>
       <ID>zanan</ID>
       <Version>1.0</Version>
+      <OSKFont>Zanan-Regular.otf</OSKFont>
+      <DisplayFont>Zanan-Regular.otf</DisplayFont>
       <Languages>
         <Language ID="ha-Zzzz">Hausa (Code for uncoded script)</Language>
       </Languages>
+      <WebOSKFonts>
+        <Font Filename="Zanan-Regular.otf"/>
+      </WebOSKFonts>
+      <WebDisplayFonts>
+        <Font Filename="Zanan-Regular.otf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>
