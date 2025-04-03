@@ -1,11 +1,9 @@
 <?php
 $pagename = 'Esperanto Plus Keyboard Help';
 $pagetitle = 'Esperanto Plus Keyboard Help';
+$pagestyle = "@import url('eo_plus.css');";
 require_once('header.php');
 ?>
-<head>
-    <link rel="stylesheet" href="eo_plus.css" />
-</head>
 
     <p>
         This keyboard is designed to simplify the input of the Esperanto special characters,
