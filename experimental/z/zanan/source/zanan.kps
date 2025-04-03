@@ -7,8 +7,6 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -19,7 +17,7 @@
   </StartMenu>
   <Info>
     <Name URL="">Zanan</Name>
-    <Copyright URL="">Copyright © 2025 Oreen Yousuf</Copyright>
+    <Copyright URL="">Copyright © Oreen Yousuf</Copyright>
     <Author URL="mailto:oreen.yousuf@gmail.com">Oreen Yousuf</Author>
     <Description URL="">Ce clavier est utilisé pour taper le haoussa dans le système d'écriture Zanan. L'écriture Zanan n'est pas encore incluse dans Unicode. / This keyboard is used to type Hausa in the Zanan writing system. The Zanan script is not yet included in Unicode.</Description>
     <Version URL=""></Version>
@@ -44,20 +42,8 @@
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\LICENSE.md</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description>File readme.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
@@ -80,7 +66,13 @@
       <FileType>.PNG</FileType>
     </File>
     <File>
-      <Name>..\..\masaba\source\OFL.txt</Name>
+      <Name>ZananTypingManual.pdf</Name>
+      <Description>File ZananTypingManual.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>OFL.txt</Name>
       <Description>File OFL.txt</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.txt</FileType>
@@ -92,10 +84,16 @@
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>ZananTypingManual.pdf</Name>
-      <Description>File ZananTypingManual.pdf</Description>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.pdf</FileType>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards>
@@ -103,17 +101,9 @@
       <Name>Zanan</Name>
       <ID>zanan</ID>
       <Version>1.0</Version>
-      <OSKFont>Zanan-Regular.otf</OSKFont>
-      <DisplayFont>Zanan-Regular.otf</DisplayFont>
       <Languages>
         <Language ID="ha-Zzzz">Hausa (Code for uncoded script)</Language>
       </Languages>
-      <WebOSKFonts>
-        <Font Filename="Zanan-Regular.otf"/>
-      </WebOSKFonts>
-      <WebDisplayFonts>
-        <Font Filename="Zanan-Regular.otf"/>
-      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
   <Strings/>

@@ -6,7 +6,8 @@ require_once('header.php');
 ?>
 
 <p>
-Hausa language keyboard written in the Zanan script.
+Ce clavier est utilisé pour taper le haoussa dans le système d'écriture Zanan. L'écriture Zanan n'est pas encore incluse dans Unicode. / This keyboard is used to type Hausa in the Zanan writing system. The Zanan script is not yet included in Unicode.
+
 </p>
 
 <h1>Keyboard Layout</h1>
