@@ -1,5 +1,5 @@
 <?php
-$pagename = Zanan Keyboard Help';
+$pagename = 'Zanan Keyboard Help';
 $pagetitle = $pagename;
 // Header
 require_once('header.php');
