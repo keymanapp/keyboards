@@ -2,6 +2,7 @@
   $pagename = 'GFF Ethiopic';
   $pagetitle = 'The Geʾez Frontier Foundation Keyboard for the Ethiopic Orthographies of Eritrean and Ethiopian Languages';
   $pagestyle = <<<END
+  @import url('kb.css');
   img.indented { text-indent: 10%}
 
 table.flat { border-spacing: 0; margin: 0.5em 0 }
@@ -70,11 +71,6 @@ END;
 
 
 ?>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
-	<link rel="stylesheet" href="kb.css"/>
-</head>
 
 <div id="Overview">
 <h1>The Geʾez Frontier Foundation Keyboard for the Ethiopic Orthographies of Eritrean and Ethiopian Languages</h1>
