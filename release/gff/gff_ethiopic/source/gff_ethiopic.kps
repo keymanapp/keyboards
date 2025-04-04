@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>sideimage-ethiopic.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>GFF Ethiopic Keyboard</Folder>
@@ -50,10 +51,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">GFF Ethiopic Keyboard</Name>
-    <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
-    <Description>An intuitive, easy to use, keyboard for entering the Ethiopic (Modern
+    <Description URL="">An intuitive, easy to use, keyboard for entering the Ethiopic (Modern
 Geʾez) languages with standard English keyboards according to the GFF
 convention for Ethiopic script languages.</Description>
   </Info>
@@ -107,7 +108,7 @@ convention for Ethiopic script languages.</Description>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Connected-Regular.ttf</Name>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILConnected-Regular.ttf</Name>
       <Description>Font Abyssinica SIL Connected</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
@@ -179,18 +180,6 @@ convention for Ethiopic script languages.</Description>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>AbyssinicaSILAlternate1-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL Alternate 1</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>AbyssinicaSILAlternate2-Regular.ttf</Name>
-      <Description>Font Abyssinica SIL Alternate 2</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
       <Name>..\..\..\shared\fonts\noto\Ethi\NotoSansEthiopic-Regular.ttf</Name>
       <Description>Font Noto Sans Ethiopic Regular</Description>
       <CopyLocation>0</CopyLocation>
@@ -203,17 +192,35 @@ convention for Ethiopic script languages.</Description>
       <FileType>.ttf</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL_README.txt</Name>
+      <Description>File AbyssinicaSIL_README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternateOne-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate One</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSILAlternateTwo-Regular.ttf</Name>
+      <Description>Font Abyssinica SIL Alternate Two</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Ethiopic (Modern Geʾez)</Name>
       <ID>gff_ethiopic</ID>
-      <Version>1.0</Version>
+      <Version>1.0.3</Version>
       <OSKFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\abyssinica\AbyssinicaSIL-Regular.ttf</DisplayFont>
       <Languages>
@@ -225,31 +232,31 @@ convention for Ethiopic script languages.</Description>
         <Language ID="mdx">Dizin</Language>
         <Language ID="drs">Gedeo</Language>
         <Language ID="gez">Geez</Language>
-        <Language ID="amf">Hamer-Banna</Language>
+        <Language ID="amf-Ethi">Hamer-Banna (Ethiopic)</Language>
         <Language ID="har">Harari</Language>
         <Language ID="ior">Inor</Language>
         <Language ID="ktb">Kambaata</Language>
         <Language ID="gru">Kistane</Language>
-        <Language ID="kxc">Konso</Language>
+        <Language ID="kxc-Ethi">Konso (Ethiopic)</Language>
         <Language ID="mvz">Mesqan</Language>
         <Language ID="ahg">Qimant</Language>
         <Language ID="sgw">Sebat Bet Gurage</Language>
-        <Language ID="sid">Sidamo</Language>
+        <Language ID="sid-Ethi">Sidamo (Ethiopic)</Language>
         <Language ID="stv">Silt'e</Language>
         <Language ID="tig">Tigre</Language>
         <Language ID="ti">Tigrinya</Language>
         <Language ID="xan">Xamtanga</Language>
-        <Language ID="jnj">Yemsa</Language>
+        <Language ID="jnj-Ethi">Yemsa (Ethiopic)</Language>
         <Language ID="zwa">Zay</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff_ethiopic_7" Relationship="deprecates" />
-    <RelatedPackage ID="gff_bcq_7" Relationship="deprecates" />
-    <RelatedPackage ID="gff-bcq-powerpack-7" Relationship="deprecates" />
-    <RelatedPackage ID="gff_mym_7" Relationship="deprecates" />
-    <RelatedPackage ID="gff-mym-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_ethiopic_7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff_bcq_7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff-bcq-powerpack-7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff_mym_7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff-mym-powerpack-7" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

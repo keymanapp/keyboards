@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>splash.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,10 +21,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Cameroon AZERTY</Name>
-    <Copyright URL="">© 2018-2023 SIL Cameroon</Copyright>
+    <Copyright URL="">© SIL Cameroon</Copyright>
     <Author URL="mailto:keyboards_cameroon@sil.org">Matthew Lee</Author>
     <WebSite URL="LangTechCameroon.info">LangTechCameroon.info</WebSite>
-    <Description>This keyboard supports the General Alphabet of Cameroonian Languages for
+    <Description URL="">This keyboard supports the General Alphabet of Cameroonian Languages for
 an AZERTY (French) Keyboard.</Description>
   </Info>
   <Files>
@@ -53,6 +55,12 @@ an AZERTY (French) Keyboard.</Description>
     <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
@@ -163,7 +171,7 @@ an AZERTY (French) Keyboard.</Description>
     <Keyboard>
       <Name>Cameroon AZERTY</Name>
       <ID>sil_cameroon_azerty</ID>
-      <Version>6.0.9</Version>
+      <Version>6.1.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</DisplayFont>
       <Languages>
@@ -191,7 +199,7 @@ an AZERTY (French) Keyboard.</Description>
         <Language ID="baw">Bambili-Bambui</Language>
         <Language ID="bce">Bamenyam</Language>
         <Language ID="bqt">Bamukumbit</Language>
-        <Language ID="bax">Bamun</Language>
+        <Language ID="bax-Latn">Bamun</Language>
         <Language ID="bvm">Bamunka</Language>
         <Language ID="bcw">Bana</Language>
         <Language ID="bgf">Bangandu</Language>
@@ -428,7 +436,7 @@ an AZERTY (French) Keyboard.</Description>
         <Language ID="vem">Vemgo-Mabas</Language>
         <Language ID="bav">Vengo</Language>
         <Language ID="vut">Vute</Language>
-        <Language ID="mfi">Wandala</Language>
+        <Language ID="mfi-Latn">Wandala</Language>
         <Language ID="www">Wawa</Language>
         <Language ID="weh">Weh</Language>
         <Language ID="bqm">Wumboko</Language>
@@ -448,8 +456,8 @@ an AZERTY (French) Keyboard.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="cameroon azerty unicode" Relationship="deprecates" />
+    <RelatedPackage ID="cameroon azerty unicode" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

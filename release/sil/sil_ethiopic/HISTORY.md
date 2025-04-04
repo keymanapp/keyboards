@@ -1,10 +1,24 @@
 SIL Ethiopic Change History
 ===========================
 
+2.0.7 (2024-12-03)
+----------------
+* Fixed language tags
+
+2.0.6 (2024-09-16)
+-------------------
+* Removed .js from .kps so there are no expectations of working on mobile devices
+
+2.0.5 (2024-06-16)
+-------------------
+* On-Screen keyboard added.
+* AbyssinicaSIL-Regular.ttf added to package.
+* Upgrade project to Keyman Developer 17.0 format.
+
 2.0.4 (2023-04-19)
 -------------------
 * syncing file structure and layout with SIL Ethiopic Power-G
-8 cleaning up help file, welcome.htm, .php
+* cleaning up help file, welcome.htm, .php
 * adding multi-res layers to package icon
 * adding sidebar image
 

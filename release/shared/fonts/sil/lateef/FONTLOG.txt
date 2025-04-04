@@ -12,11 +12,9 @@ Lateef is named after Shah Abdul Lateef Bhitai, the famous Sindhi
 mystic and poet. It is intended to be an appropriate style for use 
 in Sindhi and other languages of the South Asian region.
 
-This release supports virtually all of the Unicode 13.0 Arabic character 
+This release supports most of the Unicode 16.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use). Font smarts are implemented using 
-state-of-the-art OpenType technology, including variant glyphs for a 
-number of characters for use in particular contexts. 
+recommended for normal use). 
 
 This font provides a simplified rendering of Arabic script, using basic 
 connecting glyphs but not including a wide variety of additional ligatures 
@@ -43,6 +41,45 @@ For detailed documentation see the contents of the 'documentation' folder.
 ## ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
+
+### 2024-10-21 (SIL WSTech team) Lateef version 4.300
+
+#### New
+
+- Added:
+  - 0897 ARABIC PEPET
+  - FD40 ARABIC LIGATURE RAHIMAHU ALLAAH
+  - FD41 ARABIC LIGATURE RADI ALLAAHU ANH
+  - FD43 ARABIC LIGATURE RADI ALLAAHU ANHUM
+  - FD44 ARABIC LIGATURE RADI ALLAAHU ANHUMAA
+  - FD45 ARABIC LIGATURE RADI ALLAAHU ANHUNNA
+  - FD46 ARABIC LIGATURE SALLALLAAHU ALAYHI WA-AALIH
+  - FD48 ARABIC LIGATURE ALAYHIM AS-SALAAM
+  - FD49 ARABIC LIGATURE ALAYHIMAA AS-SALAAM
+  - FD4A ARABIC LIGATURE ALAYHI AS-SALAATU WAS-SALAAM
+  - FD4B ARABIC LIGATURE QUDDISA SIRRAH
+  - FD4C ARABIC LIGATURE SALLALLAHU ALAYHI WAAALIHEE WA-SALLAM
+  - FD4D ARABIC LIGATURE ALAYHAA AS-SALAAM
+  - FD4E ARABIC LIGATURE TABAARAKA WA-TAAALAA
+  - FD4F ARABIC LIGATURE RAHIMAHUM ALLAAH
+  - FDFE ARABIC LIGATURE SUBHAANAHU WA TAAALAA
+  - FDFF ARABIC LIGATURE AZZA WA JALL
+  - 10EC2 ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW
+  - 10EC3 ARABIC LETTER TAH WITH TWO DOTS VERTICALLY BELOW
+  - 10EC4 ARABIC LETTER KAF WITH TWO DOTS VERTICALLY BELOW
+  - 10EFC ARABIC COMBINING ALEF OVERLAY
+- Added support for Kashmiri language
+- Added facility to override default language behavior through feature selection
+- Added support for cv76 (dagger alef) on spacing characters and tatweel
+
+#### Improved
+
+- Enlarged Arabic-style guillemet quotes
+- Enhanced positioning of U+06E2 ARABIC SMALL HIGH MEEM ISOLATED FORM next to adjacent vowel marks
+- Improved positioning of final YEH BARREE characters when preceeded by a character with two or three nukat below
+- Improved alef+mark positioning to reduce collisions
+- Improved madda reordering to comply with UAX #53
+- Documentation enhancements
 
 ### 2023-08-28 (SIL WSTech team) Lateef version 4.200
 
@@ -173,8 +210,8 @@ For detailed documentation see the contents of the 'documentation' folder.
      - cv54 - Yeh hamza (Standard/Right hamza)
      - cv85 - Decimal separator (Small reh/Slash)
 - Added UI name strings for OpenType features
-- Added Kyrgyz language support in Graphite and OpenType
-- Added Rohingya language support in Graphite and OpenType
+- Added Kyrgyz language support
+- Added Rohingya language support
 - Added proportional Arabic digits (now the default)
 - Added kerning for proportional Arabic digits
 - Added Arabic-style (rounded) versions of chevron quotes
@@ -436,7 +473,7 @@ E: fonts@sil.org
 W: https://software.sil.org/wstech/
 D: SIL designer
 
-The Lateef project is maintained by SIL International.
+The Lateef project is maintained by SIL Global.
 
 For more information please visit the Lateef font page on 
-SIL International's website: https://software.sil.org/lateef/
+SIL Global's website: https://software.sil.org/lateef/

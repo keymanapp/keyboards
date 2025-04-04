@@ -1,6 +1,14 @@
 Indic Roman Transliteration (SIL) Keyboard Change History
 =======================
 
+1.4.1 (2025-02-20)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+1.4 (2024-09-19)
+----------------
+* Added touch layout
+
 1.3.2 (2023-04-26)
 ----------------
 * Simplied rules to use stores

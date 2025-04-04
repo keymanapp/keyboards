@@ -1,6 +1,10 @@
 Masaram Gondi (ITRANS) Change History
 ====================
 
+1.2.2 (2023-11-28)
+----------------
+* Update to use font from shared folder instead of local folder
+
 1.2.1 (2022-03-15)
 ----------------
 * Updates to welcome and readme files to display the font on installation

@@ -20,18 +20,14 @@ table.display tr th { font: bold 10pt Tahoma; border: solid 1px #ccccff; padding
 table.display { border-collapse: collapse; }
     </style>
 
-<h1 style='margin-bottom: 2px'>Hawaiian (SIL) Keyboards</h1>
-<p>Hawaiian (SIL) is a Unicode keyboard with compatible fonts, included with permission from Hale Kuamo'o.</p>
+<p>Hawaiian (SIL) is a Unicode keyboard for the Hawaiian language.</p>
 
-<h2>Fonts</h2>
+<h2>Keyboard Layout</h2>
 
-<p><b>HI Kakuhihewa Unicode</b>, <b>HI Keawe Unicode</b>, <b>HI Manokalanipo Unicode</b> and <b>HI Pi'ilani Unicode</b> fonts have been
-installed with this keyboard package and are recommended for use with Hawaiian.</p>
+<h2>Desktop Keyboard Layout</h2>
+<div id='osk' data-states='default shift rightalt rightalt-shift'>
+</div>
 
-<p>These fonts are all Copyright &copy; 2002 Hale Kuamo'o and are distributed with this keyboard with permission from Hale Kuamo'o.</p>
-
-<h2>Keyboard Layout Notes</h2>
-    
 <table class='display'>
 <tr><th>Key</th><th>Output</th></tr>
 <tr><td>RightAlt+a</td><td>ā</td></tr>
@@ -44,11 +40,3 @@ installed with this keyboard package and are recommended for use with Hawaiian.<
               
 <p>You can access the capital letter versions of these vowels with Caps Lock or Shift.</p>
 
-<h2>ANSI Font Notes</h2>
-
-<p>This package does not include fonts for the Hawaiian ANSI keyboard ("HI Fonts").  
-ANSI fonts can be downloaded from <a href='http://www.olelo.hawaii.edu/'>http://www.olelo.hawaii.edu/</a></p>
-
-<h2>Release History</h2>
-<p>Version 2.0 for Keyman Desktop 10.0 and above. Released 07 September 2020</p>
-<p>Version 1.0 for Keyman Desktop 7.0. Released 26 March 2008</p>

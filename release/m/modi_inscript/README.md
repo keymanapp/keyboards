@@ -1,7 +1,5 @@
-modi_inscript keyboard
+Modi Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Marathi language, using the Modi script with a
 
 Links
 -----
+https://keyman.com/keyboards/modi_inscript
 
 Copyright
 ---------

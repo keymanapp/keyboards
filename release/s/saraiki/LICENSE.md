@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright © 2020 Parvez Qadir
+Copyright © 2020-2024 Parvez Qadir
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

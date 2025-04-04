@@ -28,7 +28,7 @@ And this keyboard tries to stay faithful to the QWERTY keyboards layout that mos
 <p>
 Website homepage/Situs web: https://github.com/bennylin/keyboards
 </p>
-<p>© 2020 Benny Lin</p>
+<p>© Benny Lin</p>
 
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>

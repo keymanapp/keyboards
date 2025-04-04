@@ -1,0 +1,5653 @@
+﻿c cantonese telex for romanized Cantonese Yuẹt Yữ Quók Yữ Chị粵語國語字
+store(&VERSION) '15.0'
+store(&NAME) 'cantonese telex'
+store(&COPYRIGHT) '© cathaylab'
+store(&TARGETS) 'any'
+store(&BITMAP) 'cantonese_telex.ico'
+store(&VISUALKEYBOARD) 'cantonese_telex.kvks'
+store(&LAYOUTFILE) 'cantonese_telex.keyman-touch-layout'
+
+c Note three entry points, rather than the traditional single entry point
+store(&KEYBOARDVERSION) '2.0'
+
+begin Unicode > use(main)
+begin NewContext > use(NewContext)
+begin PostKeystroke > use(PostKeystroke)
+
+store(&CasedKeys) [K_A] .. [K_Z]
+store(key) [K_A] .. [K_Z] [SHIFT K_A] .. [SHIFT K_Z]
+store(out) 'a' .. 'z'     'A' .. 'Z'
+
+store(caps) 'A'..'Z'
+store(digit) '0'..'9'
+
+group(NewContext) readonly
+    nomatch > use(detectStartOfSentence)
+
+group(PostKeystroke) readonly
+    if(&newLayer = "") if(&layer = 'numeric') any(digit) > context
+    if(&layer = 'caps') > context
+    if(&newLayer = "") > use(detectStartOfSentence)
+
+group(detectStartOfSentence) readonly
+    store(sentencePunctuation) '.?!'
+    nul > layer('shift')
+    any(sentencePunctuation) ' ' > layer('shift')
+    any(sentencePunctuation) '  ' > layer('shift')
+    nomatch > layer('default')
+
+group(main) using keys
+
+c *******************************************************************
+c CONSTANTS
+c *******************************************************************
+
+store(vowels)                   'aeiouăâêôơưyAEIOUĂÂÊÔƠƯY'
+store(vowels_sac)               'áéíóúắấếốớứýÁÉÍÓÚẮẤẾỐỚỨÝ'
+store(vowels_huyen)             'àèìòùằầềồờừỳÀÈÌÒÙẰẦỀỒỜỪỲ'
+store(vowels_hoi)               'ảẻỉỏủẳẩểổởửỷẢẺỈỎỦẲẨỂỔỞỬỶ'
+store(vowels_nga)               'ãẽĩõũẵẫễỗỡữỹÃẼĨÕŨẴẪỄỖỠỮỸ'
+store(vowels_nang)              'ạẹịọụặậệộợựỵẠẸỊỌỤẶẬỆỘỢỰỴ'
+
+store(u_consonants)              'bcdhklmnpstzBCDHKLMNPSTZ'
+store(y_consonants)              'bcdfghjklmnpstyzBCDFGHJKLMNPSTYZ'
+store(ue_consonants)              'hjsxyzHJSXYZ'
+store(eu_consonants)              'cdghjklnstxyzCDGHJKLNSTXYZ'
+store(all_letters) 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+store(consonants) 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
+store(un_h_consonants) 'bcdfgjklmnpqrstvwxzBCDFGJKLMNPQRSTVWXZ'
+store(un_hw_consonants) 'bcdfgjklmnpqrstvxzBCDFGJKLMNPQRSTVXZ'
+store(un_kg_consonants) 'bcdfhjlmnpqrstvwxzBCDFHJLMNPQRSTVWXZ'
+store(un_gh_consonants) 'bcdfjklmnpqrstvwxzBCDFJKLMNPQRSTVWXZ'
+store(un_z_consonants) 'bcdfghjklmnpqrstvwxBCDFGHJKLMNPQRSTVWX'
+store(un_hrs_consonants) 'bcdfgjklmnpqtvwxzBCDFGJKLMNPQTVWXZ'
+store(un_T_consonants) 'bcdfghjklmnpqrsvwxyzBCDFGHJKLMNPQRSVWXYZ'
+store(ieu_consonants) 'bdghklmnrstxBDGHKLMNRSTX'
+store(punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"' ' '
+store(no_space_punctuation) '-.,!?&()[]{}@:;<>/$%^*+#~_\|0123456789' "'" '"'
+store(ys) 'yýỳỹỷỵYÝỲỸỶỴ'
+store(end_consonants) 'ptkcmnPTKCMN'
+store(un_second_consonants)'qtpdfklcvbnmQTPDFKLCVBNM'
+store(a) 'âấầẩẫậÂẤẦẨẪẬ'
+store(aa) 'aáàảãạAÁÀẢÃẠ'
+store(o) 'oóòỏõọOÓÒỎÕỌ'
+store(low_o_tones) 'óòỏõọ'
+store(upper_o_tones) 'ÓÒỎÕỌ'
+store(oo) 'ôốồổỗộÔỐỒỔỖỘ'
+store(e) 'eéèẻẽẹEÉÈẺẼẸ'
+store(low_e) 'eéèẻẽẹ'
+store(upper_e) 'EÉÈẺẼẸ'
+store(ee) 'êếềểễệÊẾỀỂỄỆ'
+store(fhjl) 'fhjlrxvbmyFHJLRXVBMY'
+store(csgp) 'csgpkCSGPK'
+store(low_o) 'oóòỏõọ'
+store(upper_o) 'OÓÒỎÕỌ'
+store(low_a) 'aáàảãạ'
+store(upper_a) 'AÁÀẢÃẠ'
+store(sfrxj) 'sfrxj'
+store(upper_sfrxj) 'SFRXJ'
+store(a_end) 'yiptkcmnYIPTKCMN'
+store(e_end) 'ptkcmnPTKCMN'
+store(nmui) 'aâenmuiAÂEMNUI'
+store(nt) 'ntNT'
+store(low_u) 'uúùủũụ'
+store(upper_u) 'UÚÙỦŨỤ'
+
+c *******************************************************************
+
+    c Keyboard options
+    store(option_toneplace)     ''
+
+
+    c Special d/đ consonant rules - Upper and Lowercase
+
++ 'a' > "â"
++ 'A' > "Â"
+    
+
+    'â' + 'a' > 'a'
+    'Â' + 'A' > 'A'
+    'Â' + 'a' > 'A'
+    'a' + 'a' > 'aa'
+    'A' + 'A' > 'AA'
+    'A' + 'a' > 'Aa'
+
+
+any(eu_consonants) + "v" > index(eu_consonants, 1)"eu"
+any(eu_consonants)"eu" + "i" > index(eu_consonants, 1)"ui"
+
+    'eu' + 'v' > 'v'
+    'Eu' + 'V' > 'V'
+    'Eu' + 'v' > 'V'
+
+    'o' + 'o' > 'ô'
+    'o' + 'O' > 'ô'
+    'ô' + 'o' > 'oo'
+    'ô' + 'O' > 'oO'
+    'O' + 'o' > 'Ô'
+    'O' + 'O' > 'Ô'
+    'Ô' + 'o' > 'Oo'
+    'Ô' + 'O' > 'OO'
+
+    'o' + 'u' > 'ô'
+    'o' + 'U' > 'ô'
+    'ô' + 'u' > 'ou'
+    'ô' + 'U' > 'oU'
+    'O' + 'u' > 'Ô'
+    'O' + 'U' > 'Ô'
+    'Ô' + 'u' > 'Ou'
+    'Ô' + 'U' > 'OU'
+
+    'ó' + 'u' > 'ố'
+    'ò' + 'u' > 'ồ'
+    'ỏ' + 'u' > 'ổ'
+    'õ' + 'u' > 'ỗ'
+    'ọ' + 'u' > 'ộ'
+
+    'Ó' + 'U' > 'Ố'
+    'Ò' + 'U' > 'Ồ'
+    'Ỏ' + 'U' > 'Ổ'
+    'Õ' + 'U' > 'Ỗ'
+    'Ọ' + 'U' > 'Ộ'
+    
+    'Ó' + 'u' > 'Ố'
+    'Ò' + 'u' > 'Ồ'
+    'Ỏ' + 'u' > 'Ổ'
+    'Õ' + 'u' > 'Ỗ'
+    'Ọ' + 'u' > 'Ộ'
+
+    'ó' + 'o' > 'ố'
+    'ò' + 'o' > 'ồ'
+    'ỏ' + 'o' > 'ổ'
+    'õ' + 'o' > 'ỗ'
+    'ọ' + 'o' > 'ộ'
+
+    'Ó' + 'O' > 'Ố'
+    'Ò' + 'O' > 'Ồ'
+    'Ỏ' + 'O' > 'Ổ'
+    'Õ' + 'O' > 'Ỗ'
+    'Ọ' + 'O' > 'Ộ'
+    
+    'Ó' + 'o' > 'Ố'
+    'Ò' + 'o' > 'Ồ'
+    'Ỏ' + 'o' > 'Ổ'
+    'Õ' + 'o' > 'Ỗ'
+    'Ọ' + 'o' > 'Ộ'
+
+
+    
+
+    c Single-vowel nuclei accent rules - Upper and Lowercase
+    any(vowels) + 's' > index(vowels_sac, 1)
+    any(vowels) + 'S' > index(vowels_sac, 1)
+    any(vowels) + 'f' > index(vowels_huyen, 1)
+    any(vowels) + 'F' > index(vowels_huyen, 1)
+    any(vowels) + 'r' > index(vowels_hoi, 1)
+    any(vowels) + 'R' > index(vowels_hoi, 1)
+    any(vowels) + 'x' > index(vowels_nga, 1)
+    any(vowels) + 'X' > index(vowels_nga, 1)
+    any(vowels) + 'j' > index(vowels_nang, 1)
+    any(vowels) + 'J' > index(vowels_nang, 1)
+
+    any(vowels_sac) + 's' > index(vowels, 1) 's'
+    any(vowels_sac) + 'S' > index(vowels, 1) 'S'
+    any(vowels_sac) + 'f' > index(vowels_huyen, 1)
+    any(vowels_sac) + 'F' > index(vowels_huyen, 1)
+    any(vowels_sac) + 'r' > index(vowels_hoi, 1)
+    any(vowels_sac) + 'R' > index(vowels_hoi, 1)
+    any(vowels_sac) + 'x' > index(vowels_nga, 1)
+    any(vowels_sac) + 'X' > index(vowels_nga, 1)
+    any(vowels_sac) + 'j' > index(vowels_nang, 1)
+    any(vowels_sac) + 'J' > index(vowels_nang, 1)
+
+    any(vowels_huyen) + 's' > index(vowels_sac, 1)
+    any(vowels_huyen) + 'S' > index(vowels_sac, 1)
+    any(vowels_huyen) + 'f' > index(vowels, 1) 'f'
+    any(vowels_huyen) + 'F' > index(vowels, 1) 'F'
+    any(vowels_huyen) + 'r' > index(vowels_hoi, 1)
+    any(vowels_huyen) + 'R' > index(vowels_hoi, 1)
+    any(vowels_huyen) + 'x' > index(vowels_nga, 1)
+    any(vowels_huyen) + 'X' > index(vowels_nga, 1)
+    any(vowels_huyen) + 'j' > index(vowels_nang, 1)
+    any(vowels_huyen) + 'J' > index(vowels_nang, 1)
+
+    any(vowels_hoi) + 's' > index(vowels_sac, 1)
+    any(vowels_hoi) + 'S' > index(vowels_sac, 1)
+    any(vowels_hoi) + 'f' > index(vowels_huyen, 1)
+    any(vowels_hoi) + 'F' > index(vowels_huyen, 1)
+    any(vowels_hoi) + 'R' > index(vowels, 1) 'R'
+    any(vowels_hoi) + 'r' > index(vowels, 1) 'r'
+    any(vowels_hoi) + 'x' > index(vowels_nga, 1)
+    any(vowels_hoi) + 'X' > index(vowels_nga, 1)
+    any(vowels_hoi) + 'j' > index(vowels_nang, 1)
+    any(vowels_hoi) + 'J' > index(vowels_nang, 1)
+
+    any(vowels_nga) + 's' > index(vowels_sac, 1)
+    any(vowels_nga) + 'S' > index(vowels_sac, 1)
+    any(vowels_nga) + 'f' > index(vowels_huyen, 1)
+    any(vowels_nga) + 'F' > index(vowels_huyen, 1)
+    any(vowels_nga) + 'r' > index(vowels_hoi, 1)
+    any(vowels_nga) + 'R' > index(vowels_hoi, 1)
+    any(vowels_nga) + 'x' > index(vowels, 1) 'x'
+    any(vowels_nga) + 'X' > index(vowels, 1) 'X'
+    any(vowels_nga) + 'j' > index(vowels_nang, 1)
+    any(vowels_nga) + 'J' > index(vowels_nang, 1)
+
+    any(vowels_nang) + 's' > index(vowels_sac, 1)
+    any(vowels_nang) + 'S' > index(vowels_sac, 1)
+    any(vowels_nang) + 'f' > index(vowels_huyen, 1)
+    any(vowels_nang) + 'F' > index(vowels_huyen, 1)
+    any(vowels_nang) + 'r' > index(vowels_hoi, 1)
+    any(vowels_nang) + 'R' > index(vowels_hoi, 1)
+    any(vowels_nang) + 'x' > index(vowels_nga, 1)
+    any(vowels_nang) + 'X' > index(vowels_nga, 1)
+    any(vowels_nang) + 'j' > index(vowels, 1) 'j'
+    any(vowels_nang) + 'J' > index(vowels, 1) 'J'
+
+    any(vowels) "m" + 's' > index(vowels_sac, 1) "m"
+    any(vowels) "m" + 'S' > index(vowels_sac, 1) "m"
+    any(vowels) "m" + 'f' > index(vowels_huyen, 1) "m"
+    any(vowels) "m" + 'F' > index(vowels_huyen, 1) "m"
+    any(vowels) "m" + 'r' > index(vowels_hoi, 1) "m"
+    any(vowels) "m" + 'R' > index(vowels_hoi, 1) "m"
+    any(vowels) "m" + 'x' > index(vowels_nga, 1) "m"
+    any(vowels) "m" + 'X' > index(vowels_nga, 1) "m"
+    any(vowels) "m" + 'j' > index(vowels_nang, 1) "m"
+    any(vowels) "m" + 'J' > index(vowels_nang, 1) "m"
+
+    any(vowels) "M" + 's' > index(vowels_sac, 1) "M"
+    any(vowels) "M" + 'S' > index(vowels_sac, 1) "M"
+    any(vowels) "M" + 'f' > index(vowels_huyen, 1) "M"
+    any(vowels) "M" + 'F' > index(vowels_huyen, 1) "M"
+    any(vowels) "M" + 'r' > index(vowels_hoi, 1) "M"
+    any(vowels) "M" + 'R' > index(vowels_hoi, 1) "M"
+    any(vowels) "M" + 'x' > index(vowels_nga, 1) "M"
+    any(vowels) "M" + 'X' > index(vowels_nga, 1) "M"
+    any(vowels) "M" + 'j' > index(vowels_nang, 1) "M"
+    any(vowels) "M" + 'J' > index(vowels_nang, 1) "M"
+
+    any(vowels) "n" + 's' > index(vowels_sac, 1) "n"
+    any(vowels) "n" + 'S' > index(vowels_sac, 1) "n"
+    any(vowels) "n" + 'f' > index(vowels_huyen, 1) "n"
+    any(vowels) "n" + 'F' > index(vowels_huyen, 1) "n"
+    any(vowels) "n" + 'r' > index(vowels_hoi, 1) "n"
+    any(vowels) "n" + 'R' > index(vowels_hoi, 1) "n"
+    any(vowels) "n" + 'x' > index(vowels_nga, 1) "n"
+    any(vowels) "n" + 'X' > index(vowels_nga, 1) "n"
+    any(vowels) "n" + 'j' > index(vowels_nang, 1) "n"
+    any(vowels) "n" + 'J' > index(vowels_nang, 1) "n"
+ 
+    any(vowels) "N" + 's' > index(vowels_sac, 1) "N"
+    any(vowels) "N" + 'S' > index(vowels_sac, 1) "N"
+    any(vowels) "N" + 'f' > index(vowels_huyen, 1) "N"
+    any(vowels) "N" + 'F' > index(vowels_huyen, 1) "N"
+    any(vowels) "N" + 'r' > index(vowels_hoi, 1) "N"
+    any(vowels) "N" + 'R' > index(vowels_hoi, 1) "N"
+    any(vowels) "N" + 'x' > index(vowels_nga, 1) "N"
+    any(vowels) "N" + 'X' > index(vowels_nga, 1) "N"
+    any(vowels) "N" + 'j' > index(vowels_nang, 1) "N"
+    any(vowels) "N" + 'J' > index(vowels_nang, 1) "N"
+
+    any(vowels) "ng" + 's' > index(vowels_sac, 1) "ng"
+    any(vowels) "ng" + 'S' > index(vowels_sac, 1) "ng"
+    any(vowels) "ng" + 'f' > index(vowels_huyen, 1) "ng"
+    any(vowels) "ng" + 'F' > index(vowels_huyen, 1) "ng"
+    any(vowels) "ng" + 'r' > index(vowels_hoi, 1) "ng"
+    any(vowels) "ng" + 'R' > index(vowels_hoi, 1) "ng"
+    any(vowels) "ng" + 'x' > index(vowels_nga, 1) "ng"
+    any(vowels) "ng" + 'X' > index(vowels_nga, 1) "ng"
+    any(vowels) "ng" + 'j' > index(vowels_nang, 1) "ng"
+    any(vowels) "ng" + 'J' > index(vowels_nang, 1) "ng"
+
+    any(vowels) "NG" + 's' > index(vowels_sac, 1) "NG"
+    any(vowels) "NG" + 'S' > index(vowels_sac, 1) "NG"
+    any(vowels) "NG" + 'f' > index(vowels_huyen, 1) "NG"
+    any(vowels) "NG" + 'F' > index(vowels_huyen, 1) "NG"
+    any(vowels) "NG" + 'r' > index(vowels_hoi, 1) "NG"
+    any(vowels) "NG" + 'R' > index(vowels_hoi, 1) "NG"
+    any(vowels) "NG" + 'x' > index(vowels_nga, 1) "NG"
+    any(vowels) "NG" + 'X' > index(vowels_nga, 1) "NG"
+    any(vowels) "NG" + 'j' > index(vowels_nang, 1) "NG"
+    any(vowels) "NG" + 'J' > index(vowels_nang, 1) "NG"
+
+    any(vowels) "nh" + 's' > index(vowels_sac, 1) "nh"
+    any(vowels) "nh" + 'S' > index(vowels_sac, 1) "nh"
+    any(vowels) "nh" + 'f' > index(vowels_huyen, 1) "nh"
+    any(vowels) "nh" + 'F' > index(vowels_huyen, 1) "nh"
+    any(vowels) "nh" + 'r' > index(vowels_hoi, 1) "nh"
+    any(vowels) "nh" + 'R' > index(vowels_hoi, 1) "nh"
+    any(vowels) "nh" + 'x' > index(vowels_nga, 1) "nh"
+    any(vowels) "nh" + 'X' > index(vowels_nga, 1) "nh"
+    any(vowels) "nh" + 'j' > index(vowels_nang, 1) "nh"
+    any(vowels) "nh" + 'J' > index(vowels_nang, 1) "nh"
+
+    any(vowels) "NH" + 's' > index(vowels_sac, 1) "NH"
+    any(vowels) "NH" + 'S' > index(vowels_sac, 1) "NH"
+    any(vowels) "NH" + 'f' > index(vowels_huyen, 1) "NH"
+    any(vowels) "NH" + 'F' > index(vowels_huyen, 1) "NH"
+    any(vowels) "NH" + 'r' > index(vowels_hoi, 1) "NH"
+    any(vowels) "NH" + 'R' > index(vowels_hoi, 1) "NH"
+    any(vowels) "NH" + 'x' > index(vowels_nga, 1) "NH"
+    any(vowels) "NH" + 'X' > index(vowels_nga, 1) "NH"
+    any(vowels) "NH" + 'j' > index(vowels_nang, 1) "NH"
+    any(vowels) "NH" + 'J' > index(vowels_nang, 1) "NH"
+
+    any(vowels) "p" + 's' > index(vowels_sac, 1) "p"
+    any(vowels) "p" + 'S' > index(vowels_sac, 1) "p"
+    any(vowels) "p" + 'j' > index(vowels_nang, 1) "p"
+    any(vowels) "p" + 'J' > index(vowels_nang, 1) "p"
+
+    any(vowels) "P" + 's' > index(vowels_sac, 1) "P"
+    any(vowels) "P" + 'S' > index(vowels_sac, 1) "P"
+    any(vowels) "P" + 'j' > index(vowels_nang, 1) "P"
+    any(vowels) "P" + 'J' > index(vowels_nang, 1) "P"
+
+    any(vowels) "k" + 's' > index(vowels_sac, 1) "k"
+    any(vowels) "k" + 'S' > index(vowels_sac, 1) "k"
+    any(vowels) "k" + 'j' > index(vowels_nang, 1) "k"
+    any(vowels) "k" + 'J' > index(vowels_nang, 1) "k"
+
+    any(vowels) "K" + 's' > index(vowels_sac, 1) "K"
+    any(vowels) "K" + 'S' > index(vowels_sac, 1) "K"
+    any(vowels) "K" + 'j' > index(vowels_nang, 1) "K"
+    any(vowels) "K" + 'J' > index(vowels_nang, 1) "K"
+
+    any(vowels) "t" + 's' > index(vowels_sac, 1) "t"
+    any(vowels) "t" + 'S' > index(vowels_sac, 1) "t"
+    any(vowels) "t" + 'j' > index(vowels_nang, 1) "t"
+    any(vowels) "t" + 'J' > index(vowels_nang, 1) "t"
+
+    any(vowels) "T" + 's' > index(vowels_sac, 1) "T"
+    any(vowels) "T" + 'S' > index(vowels_sac, 1) "T"
+    any(vowels) "T" + 'j' > index(vowels_nang, 1) "T"
+    any(vowels) "T" + 'J' > index(vowels_nang, 1) "T"
+
+    any(vowels) "c" + 's' > index(vowels_sac, 1) "c"
+    any(vowels) "c" + 'S' > index(vowels_sac, 1) "c"
+    any(vowels) "c" + 'j' > index(vowels_nang, 1) "c"
+    any(vowels) "c" + 'J' > index(vowels_nang, 1) "c"
+
+    any(vowels) "C" + 's' > index(vowels_sac, 1) "C"
+    any(vowels) "C" + 'S' > index(vowels_sac, 1) "C"
+    any(vowels) "C" + 'j' > index(vowels_nang, 1) "C"
+    any(vowels) "C" + 'J' > index(vowels_nang, 1) "C"
+
+    any(vowels) "ch" + 's' > index(vowels_sac, 1) "ch"
+    any(vowels) "ch" + 'S' > index(vowels_sac, 1) "ch"
+    any(vowels) "ch" + 'j' > index(vowels_nang, 1) "ch"
+    any(vowels) "ch" + 'J' > index(vowels_nang, 1) "ch"
+
+    any(vowels) "CH" + 's' > index(vowels_sac, 1) "CH"
+    any(vowels) "CH" + 'S' > index(vowels_sac, 1) "CH"
+    any(vowels) "CH" + 'j' > index(vowels_nang, 1) "CH"
+    any(vowels) "CH" + 'J' > index(vowels_nang, 1) "CH"
+
+    c Special w/ư rules
+
+
+    'âm' + 's' > 'ấm'
+    'âm' + 'f' > 'ầm'
+    'âm' + 'r' > 'ẩm'
+    'âm' + 'x' > 'ẫm'
+    'âm' + 'j' > 'ậm'
+    'ân' + 's' > 'ấn'
+    'ân' + 'f' > 'ần'
+    'ân' + 'r' > 'ẩn'
+    'ân' + 'x' > 'ẫn'
+    'ân' + 'j' > 'ận'
+    'âng' + 's' > 'ấng'
+    'âng' + 'f' > 'ầng'
+    'âng' + 'r' > 'ẩng'
+    'âng' + 'x' > 'ẫng'
+    'âng' + 'j' > 'ậng'
+    'âp' + 's' > 'ấp'
+    'âp' + 'f' > 'ầp'
+    'âp' + 'r' > 'ẩp'
+    'âp' + 'x' > 'ẫp'
+    'âp' + 'j' > 'ập'
+    'ât' + 's' > 'ất'
+    'ât' + 'f' > 'ầt'
+    'ât' + 'r' > 'ẩt'
+    'ât' + 'x' > 'ẫt'
+    'ât' + 'j' > 'ật'
+    'âk' + 's' > 'ấk'
+    'âk' + 'f' > 'ầk'
+    'âk' + 'r' > 'ẩk'
+    'âk' + 'x' > 'ẫk'
+    'âk' + 'j' > 'ậk' 
+    'âi' + 's' > 'ấi'
+    'âi' + 'f' > 'ầi'
+    'âi' + 'r' > 'ẩi'
+    'âi' + 'x' > 'ẫi'
+    'âi' + 'j' > 'ậi'   
+
+    'am' + 's' > 'ám'
+    'am' + 'f' > 'àm'
+    'am' + 'r' > 'ảm'
+    'am' + 'x' > 'ãm'
+    'am' + 'j' > 'ạm'
+    'an' + 's' > 'án'
+    'an' + 'f' > 'àn'
+    'an' + 'r' > 'ản'
+    'an' + 'x' > 'ãn'
+    'an' + 'j' > 'ạn'
+    'ang' + 's' > 'áng'
+    'ang' + 'f' > 'àng'
+    'ang' + 'r' > 'ảng'
+    'ang' + 'x' > 'ãng'
+    'ang' + 'j' > 'ạng'
+    'ap' + 's' > 'áp'
+    'ap' + 'f' > 'àp'
+    'ap' + 'r' > 'ảp'
+    'ap' + 'x' > 'ãp'
+    'ap' + 'j' > 'ạp'
+    'at' + 's' > 'át'
+    'at' + 'f' > 'àt'
+    'at' + 'r' > 'ảt'
+    'at' + 'x' > 'ãt'
+    'at' + 'j' > 'ạt'
+    'ak' + 's' > 'ák'
+    'ak' + 'f' > 'àk'
+    'ak' + 'r' > 'ảk'
+    'ak' + 'x' > 'ãk'
+    'ak' + 'j' > 'ạk'
+
+    'im' + 's' > 'ím'
+    'im' + 'f' > 'ìm'
+    'im' + 'r' > 'ỉm'
+    'im' + 'x' > 'ĩm'
+    'im' + 'j' > 'ịm'
+    'in' + 's' > 'ín'
+    'in' + 'f' > 'ìn'
+    'in' + 'r' > 'ỉn'
+    'in' + 'x' > 'ĩn'
+    'in' + 'j' > 'ịn'
+    'ing' + 's' > 'íng'
+    'ing' + 'f' > 'ìng'
+    'ing' + 'r' > 'ỉng'
+    'ing' + 'x' > 'ĩng'
+    'ing' + 'j' > 'ịng'
+    'ip' + 's' > 'íp'
+    'ip' + 'f' > 'ìp'
+    'ip' + 'r' > 'ỉp'
+    'ip' + 'x' > 'ĩp'
+    'ip' + 'j' > 'ịp'
+    'it' + 's' > 'ít'
+    'it' + 'f' > 'ìt'
+    'it' + 'r' > 'ỉt'
+    'it' + 'x' > 'ĩt'
+    'it' + 'j' > 'ịt'
+    'ik' + 's' > 'ík'
+    'ik' + 'f' > 'ìk'
+    'ik' + 'r' > 'ỉk'
+    'ik' + 'x' > 'ĩk'
+    'ik' + 'j' > 'ịk'  
+
+    'um' + 's' > 'úm'
+    'um' + 'f' > 'ùm'
+    'um' + 'r' > 'ủm'
+    'um' + 'x' > 'ũm'
+    'um' + 'j' > 'ụm'
+    'un' + 's' > 'ún'
+    'un' + 'f' > 'ùn'
+    'un' + 'r' > 'ủn'
+    'un' + 'x' > 'ũn'
+    'un' + 'j' > 'ụn'
+    'ung' + 's' > 'úng'
+    'ung' + 'f' > 'ùng'
+    'ung' + 'r' > 'ủng'
+    'ung' + 'x' > 'ũng'
+    'ung' + 'j' > 'ụng'
+    'up' + 's' > 'úp'
+    'up' + 'f' > 'ùp'
+    'up' + 'r' > 'ủp'
+    'up' + 'x' > 'ũp'
+    'up' + 'j' > 'ụp'
+    'ut' + 's' > 'út'
+    'ut' + 'f' > 'ùt'
+    'ut' + 'r' > 'ủt'
+    'ut' + 'x' > 'ũt'
+    'ut' + 'j' > 'ụt'
+    'uk' + 's' > 'úk'
+    'uk' + 'f' > 'ùk'
+    'uk' + 'r' > 'ủk'
+    'uk' + 'x' > 'ũk'
+    'uk' + 'j' > 'ụk'
+    'eu' + 's' > 'éu'
+    'eu' + 'f' > 'èu'
+    'eu' + 'r' > 'ẻu'
+    'eu' + 'x' > 'ẽu'
+    'eu' + 'j' > 'ẹu'
+
+    'em' + 's' > 'ém'
+    'em' + 'f' > 'èm'
+    'em' + 'r' > 'ẻm'
+    'em' + 'x' > 'ẽm'
+    'em' + 'j' > 'ẹm'
+    'en' + 's' > 'én'
+    'en' + 'f' > 'èn'
+    'en' + 'r' > 'ẻn'
+    'en' + 'x' > 'ẽn'
+    'en' + 'j' > 'ẹn'
+    'eng' + 's' > 'éng'
+    'eng' + 'f' > 'èng'
+    'eng' + 'r' > 'ẻng'
+    'eng' + 'x' > 'ẽng'
+    'eng' + 'j' > 'ẹng'
+    'ep' + 's' > 'ép'
+    'ep' + 'f' > 'èp'
+    'ep' + 'r' > 'ẻp'
+    'ep' + 'x' > 'ẽp'
+    'ep' + 'j' > 'ẹp'
+    'et' + 's' > 'ét'
+    'et' + 'f' > 'èt'
+    'et' + 'r' > 'ẻt'
+    'et' + 'x' > 'ẽt'
+    'et' + 'j' > 'ẹt'
+    'ek' + 's' > 'ék'
+    'ek' + 'f' > 'èk'
+    'ek' + 'r' > 'ẻk'
+    'ek' + 'x' > 'ẽk'
+    'ek' + 'j' > 'ẹk'
+
+'eom' + 's' > 'éom'
+'eom' + 'f' > 'èom'
+'eom' + 'r' > 'ẻom'
+'eom' + 'x' > 'ẽom'
+'eom' + 'j' > 'ẹom'
+'eon' + 's' > 'éon'
+'eon' + 'f' > 'èon'
+'eon' + 'r' > 'ẻon'
+'eon' + 'x' > 'ẽon'
+'eon' + 'j' > 'ẹon'
+'eong' + 's' > 'éong'
+'eong' + 'f' > 'èong'
+'eong' + 'r' > 'ẻong'
+'eong' + 'x' > 'ẽong'
+'eong' + 'j' > 'ẹong'
+'eop' + 's' > 'éop'
+'eop' + 'f' > 'èop'
+'eop' + 'r' > 'ẻop'
+'eop' + 'x' > 'ẽop'
+'eop' + 'j' > 'ẹop'
+'eot' + 's' > 'éot'
+'eot' + 'f' > 'èot'
+'eot' + 'r' > 'ẻot'
+'eot' + 'x' > 'ẽot'
+'eot' + 'j' > 'ẹot'
+'eok' + 's' > 'éok'
+'eok' + 'f' > 'èok'
+'eok' + 'r' > 'ẻok'
+'eok' + 'x' > 'ẽok'
+'eok' + 'j' > 'ẹok'
+
+'om' + 's' > 'óm'
+'om' + 'f' > 'òm'
+'om' + 'r' > 'ỏm'
+'om' + 'x' > 'õm'
+'om' + 'j' > 'ọm'
+'on' + 's' > 'ón'
+'on' + 'f' > 'òn'
+'on' + 'r' > 'ỏn'
+'on' + 'x' > 'õn'
+'on' + 'j' > 'ọn'
+'ong' + 's' > 'óng'
+'ong' + 'f' > 'òng'
+'ong' + 'r' > 'ỏng'
+'ong' + 'x' > 'õng'
+'ong' + 'j' > 'ọng'
+'op' + 's' > 'óp'
+'op' + 'f' > 'òp'
+'op' + 'r' > 'ỏp'
+'op' + 'x' > 'õp'
+'op' + 'j' > 'ọp'
+'ot' + 's' > 'ót'
+'ot' + 'f' > 'òt'
+'ot' + 'r' > 'ỏt'
+'ot' + 'x' > 'õt'
+'ot' + 'j' > 'ọt'
+'ok' + 's' > 'ók'
+'ok' + 'f' > 'òk'
+'ok' + 'r' > 'ỏk'
+'ok' + 'x' > 'õk'
+'ok' + 'j' > 'ọk'
+
+'ym' + 's' > 'ým'
+'ym' + 'f' > 'ỳm'
+'ym' + 'r' > 'ỷm'
+'ym' + 'x' > 'ỹm'
+'ym' + 'j' > 'ỵm'
+'yn' + 's' > 'ýn'
+'yn' + 'f' > 'ỳn'
+'yn' + 'r' > 'ỷn'
+'yn' + 'x' > 'ỹn'
+'yn' + 'j' > 'ỵn'
+'yp' + 's' > 'ýp'
+'yp' + 'f' > 'ỳp'
+'yp' + 'r' > 'ỷp'
+'yp' + 'x' > 'ỹp'
+'yp' + 'j' > 'ỵp'
+'yt' + 's' > 'ýt'
+'yt' + 'f' > 'ỳt'
+'yt' + 'r' > 'ỷt'
+'yt' + 'x' > 'ỹt'
+'yt' + 'j' > 'ỵt'
+'yk' + 's' > 'ýk'
+'yk' + 'f' > 'ỳk'
+'yk' + 'r' > 'ỷk'
+'yk' + 'x' > 'ỹk'
+'yk' + 'j' > 'ỵk'
+
+    'ai' + 's' > 'ái'
+    'ai' + 'f' > 'ài'
+    'ai' + 'r' > 'ải'
+    'ai' + 'x' > 'ãi'
+    'ai' + 'j' > 'ại'
+    'ui' + 's' > 'úi'
+    'ui' + 'f' > 'ùi'
+    'ui' + 'r' > 'ủi'
+    'ui' + 'x' > 'ũi'
+    'ui' + 'j' > 'ụi'
+    'uâ' + 's' > 'úâ'
+    'uâ' + 'f' > 'ùâ'
+    'uâ' + 'r' > 'ủâ'
+    'uâ' + 'x' > 'ũâ'
+    'uâ' + 'j' > 'ụâ'
+    'ei' + 's' > 'éi'
+    'ei' + 'f' > 'èi'
+    'ei' + 'r' > 'ẻi'
+    'ei' + 'x' > 'ẽi'
+    'ei' + 'j' > 'ẹi'
+
+'eoi' + 's' > 'éoi'
+'eoi' + 'f' > 'èoi'
+'eoi' + 'r' > 'ẻoi'
+'eoi' + 'x' > 'ẽoi'
+'eoi' + 'j' > 'ẹoi'
+'oi' + 's' > 'ói'
+'oi' + 'f' > 'òi'
+'oi' + 'r' > 'ỏi'
+'oi' + 'x' > 'õi'
+'oi' + 'j' > 'ọi'
+'oa' + 's' > 'óa'
+'oa' + 'f' > 'òa'
+'oa' + 'r' > 'ỏa'
+'oa' + 'x' > 'õa'
+'oa' + 'j' > 'ọa'
+'oe' + 's' > 'óe'
+'oe' + 'f' > 'òe'
+'oe' + 'r' > 'ỏe'
+'oe' + 'x' > 'õe'
+'oe' + 'j' > 'ọe'
+
+    'âu' + 's' > 'ấu'
+    'âu' + 'f' > 'ầu'
+    'âu' + 'r' > 'ẩu'
+    'âu' + 'x' > 'ẫu'
+    'âu' + 'j' > 'ậu'
+    'au' + 's' > 'áu'
+    'au' + 'f' > 'àu'
+    'au' + 'r' > 'ảu'
+    'au' + 'x' > 'ãu'
+    'au' + 'j' > 'ạu'
+    'iu' + 's' > 'íu'
+    'iu' + 'f' > 'ìu'
+    'iu' + 'r' > 'ỉu'
+    'iu' + 'x' > 'ĩu'
+    'iu' + 'j' > 'ịu'
+
+'ám' + 's' > 'ams'
+'àm' + 'f' > 'amf'
+'ảm' + 'r' > 'amr'
+'ãm' + 'x' > 'amx'
+'ạm' + 'j' > 'amj'
+'án' + 's' > 'ans'
+'àn' + 'f' > 'anf'
+'ản' + 'r' > 'anr'
+'ãn' + 'x' > 'anx'
+'ạn' + 'j' > 'anj'
+'áng' + 's' > 'angs'
+'àng' + 'f' > 'angf'
+'ảng' + 'r' > 'angr'
+'ãng' + 'x' > 'angx'
+'ạng' + 'j' > 'angj'
+'áp' + 's' > 'aps'
+'àp' + 'f' > 'apf'
+'ảp' + 'r' > 'apr'
+'ãp' + 'x' > 'apx'
+'ạp' + 'j' > 'apj'
+'át' + 's' > 'ats'
+'àt' + 'f' > 'atf'
+'ảt' + 'r' > 'atr'
+'ãt' + 'x' > 'atx'
+'ạt' + 'j' > 'atj'
+'ák' + 's' > 'aks'
+'àk' + 'f' > 'akf'
+'ảk' + 'r' > 'akr'
+'ãk' + 'x' > 'akx'
+'ạk' + 'j' > 'akj'
+'áy' + 's' > 'ays'
+'ày' + 'f' > 'ayf'
+'ảy' + 'r' > 'ayr'
+'ãy' + 'x' > 'ayx'
+'ạy' + 'j' > 'ayj'
+
+'ím' + 's' > 'ims'
+'ìm' + 'f' > 'imf'
+'ỉm' + 'r' > 'imr'
+'ĩm' + 'x' > 'imx'
+'ịm' + 'j' > 'imj'
+'ín' + 's' > 'ins'
+'ìn' + 'f' > 'inf'
+'ỉn' + 'r' > 'inr'
+'ĩn' + 'x' > 'inx'
+'ịn' + 'j' > 'inj'
+'íng' + 's' > 'ings'
+'ìng' + 'f' > 'ingf'
+'ỉng' + 'r' > 'ingr'
+'ĩng' + 'x' > 'ingx'
+'ĩng' + 'j' > 'ingj'
+'íp' + 's' > 'ips'
+'ìp' + 'f' > 'ipf'
+'ỉp' + 'r' > 'ipr'
+'ĩp' + 'x' > 'ipx'
+'ịp' + 'j' > 'ipj'
+'ít' + 's' > 'its'
+'ìt' + 'f' > 'itf'
+'ỉt' + 'r' > 'itr'
+'ĩt' + 'x' > 'itx'
+'ịt' + 'j' > 'itj'
+'ík' + 's' > 'iks'
+'ìk' + 'f' > 'ikf'
+'ỉk' + 'r' > 'ikr'
+'ĩk' + 'x' > 'ikx'
+'ịk' + 'j' > 'ikj'
+
+'úm' + 's' > 'ums'
+'ùm' + 'f' > 'umf'
+'ủm' + 'r' > 'umr'
+'ũm' + 'x' > 'umx'
+'ụm' + 'j' > 'umj'
+'ún' + 's' > 'uns'
+'ùn' + 'f' > 'unf'
+'ủn' + 'r' > 'unr'
+'ũn' + 'x' > 'unx'
+'ụn' + 'j' > 'unj'
+'úng' + 's' > 'ungs'
+'ùng' + 'f' > 'ungf'
+'ủng' + 'r' > 'ungr'
+'ũng' + 'x' > 'ungx'
+'ụng' + 'j' > 'ungj'
+'úp' + 's' > 'ups'
+'ùp' + 'f' > 'upf'
+'ủp' + 'r' > 'upr'
+'ũp' + 'x' > 'upx'
+'ụp' + 'j' > 'upj'
+'út' + 's' > 'uts'
+'ùt' + 'f' > 'utf'
+'ủt' + 'r' > 'utr'
+'ũt' + 'x' > 'utx'
+'ụt' + 'j' > 'utj'
+'úk' + 's' > 'uks'
+'ùk' + 'f' > 'ukf'
+'ủk' + 'r' > 'ukr'
+'ũk' + 'x' > 'ukx'
+'ụk' + 'j' > 'ukj'
+
+'éu' + 's' > 'eus'
+'èu' + 'f' > 'euf'
+'ẻu' + 'r' > 'eur'
+'ẽu' + 'x' > 'eux'
+'ẹu' + 'j' > 'euj'
+
+'ém' + 's' > 'ems'
+'èm' + 'f' > 'emf'
+'ẻm' + 'r' > 'emr'
+'ẽm' + 'x' > 'emx'
+'ẹm' + 'j' > 'emj'
+'én' + 's' > 'ens'
+'èn' + 'f' > 'enf'
+'ẻn' + 'r' > 'enr'
+'ẽn' + 'x' > 'enx'
+'ẹn' + 'j' > 'enj'
+'éng' + 's' > 'engs'
+'èng' + 'f' > 'engf'
+'ẻng' + 'r' > 'engr'
+'ẽng' + 'x' > 'engx'
+'ẹng' + 'j' > 'engj'
+'ép' + 's' > 'eps'
+'èp' + 'f' > 'epf'
+'ẻp' + 'r' > 'epr'
+'ẽp' + 'x' > 'epx'
+'ẹp' + 'j' > 'epj'
+'ét' + 's' > 'ets'
+'èt' + 'f' > 'etf'
+'ẻt' + 'r' > 'etr'
+'ẽt' + 'x' > 'etx'
+'ẹt' + 'j' > 'etj'
+'ék' + 's' > 'eks'
+'èk' + 'f' > 'ekf'
+'ẻk' + 'r' > 'ekr'
+'ẽk' + 'x' > 'ekx'
+'ẹk' + 'j' > 'ekj'
+'éom' + 's' > 'eoms'
+'èom' + 'f' > 'eomf'
+'ẻom' + 'r' > 'eomr'
+'ẽom' + 'x' > 'eomx'
+'ẹom' + 'j' > 'eomj'
+'éon' + 's' > 'eons'
+'èon' + 'f' > 'eonf'
+'ẻon' + 'r' > 'eonr'
+'ẽon' + 'x' > 'eonx'
+'ẹon' + 'j' > 'eonj'
+'éong' + 's' > 'eongs'
+'èong' + 'f' > 'eongf'
+'ẻong' + 'r' > 'eongr'
+'ẽong' + 'x' > 'eongx'
+'ẹong' + 'j' > 'eongj'
+'éop' + 's' > 'eops'
+'èop' + 'f' > 'eopf'
+'ẻop' + 'r' > 'eopr'
+'ẽop' + 'x' > 'eopx'
+'ẹop' + 'j' > 'eopj'
+'éot' + 's' > 'eots'
+'èot' + 'f' > 'eotf'
+'ẻot' + 'r' > 'eotr'
+'ẽot' + 'x' > 'eotx'
+'ẽot' + 'j' > 'eotj'
+'éok' + 's' > 'eoks'
+'èok' + 'f' > 'eokf'
+'ẻok' + 'r' > 'eokr'
+'ẽok' + 'x' > 'eokx'
+'ẹok' + 'j' > 'eokj'
+
+'óm' + 's' > 'oms'
+'òm' + 'f' > 'omf'
+'ỏm' + 'r' > 'omr'
+'õm' + 'x' > 'omx'
+'ọm' + 'j' > 'omj'
+'ón' + 's' > 'ons'
+'òn' + 'f' > 'onf'
+'ỏn' + 'r' > 'onr'
+'õn' + 'x' > 'onx'
+'ọn' + 'j' > 'onj'
+'óng' + 's' > 'ongs'
+'òng' + 'f' > 'ongf'
+'ỏng' + 'r' > 'ongr'
+'õng' + 'x' > 'ongx'
+'ọng' + 'j' > 'ongj'
+'óp' + 's' > 'ops'
+'òp' + 'f' > 'opf'
+'ỏp' + 'r' > 'opr'
+'õp' + 'x' > 'opx'
+'ọp' + 'j' > 'opj'
+'ót' + 's' > 'ots'
+'òt' + 'f' > 'otf'
+'ỏt' + 'r' > 'otr'
+'õt' + 'x' > 'otx'
+'ọt' + 'j' > 'otj'
+'ók' + 's' > 'oks'
+'òk' + 'f' > 'okf'
+'ỏk' + 'r' > 'okr'
+'õk' + 'x' > 'okx'
+'ọk' + 'j' > 'okj'
+
+'ým' + 's' > 'yms'
+'ỳm' + 'f' > 'ymf'
+'ỷm' + 'r' > 'ymr'
+'ỹm' + 'x' > 'ymx'
+'ỵm' + 'j' > 'ymj'
+'ýn' + 's' > 'yns'
+'ỳn' + 'f' > 'ynf'
+'ỷn' + 'r' > 'ynr'
+'ỹn' + 'x' > 'ynx'
+'ỵn' + 'j' > 'ynj'
+'ýp' + 's' > 'yps'
+'ỳp' + 'f' > 'ypf'
+'ỷp' + 'r' > 'ypr'
+'ỹp' + 'x' > 'ypx'
+'ỵp' + 'j' > 'ypj'
+'ýt' + 's' > 'yts'
+'ỳt' + 'f' > 'ytf'
+'ỷt' + 'r' > 'ytr'
+'ỹt' + 'x' > 'ytx'
+'ỵt' + 'j' > 'ytj'
+'ýk' + 's' > 'yks'
+'ỳk' + 'f' > 'ykf'
+'ỷk' + 'r' > 'ykr'
+'ỹk' + 'x' > 'ykx'
+'ỵk' + 'j' > 'ykj'
+
+'ái' + 's' > 'ais'
+'ài' + 'f' > 'aif'
+'ải' + 'r' > 'air'
+'ãi' + 'x' > 'aix'
+'ại' + 'j' > 'aij'
+
+'úi' + 's' > 'uis'
+'ùi' + 'f' > 'uif'
+'ủi' + 'r' > 'uir'
+'ũi' + 'x' > 'uix'
+'ụi' + 'j' > 'uij'
+
+'úa' + 's' > 'uas'
+'ùa' + 'f' > 'uaf'
+'ủa' + 'r' > 'uar'
+'ũa' + 'x' > 'uax'
+'ụa' + 'j' > 'uaj'
+
+'úâ' + 's' > 'uas'
+'ùâ' + 'f' > 'uaf'
+'ủâ' + 'r' > 'uar'
+'ũâ' + 'x' > 'uax'
+'ụâ' + 'j' > 'uaj'
+
+'éi' + 's' > 'eis'
+'èi' + 'f' > 'eif'
+'ẻi' + 'r' > 'eir'
+'ẽi' + 'x' > 'eix'
+'ẹi' + 'j' > 'eij'
+
+'éoi' + 's' > 'eois'
+'èoi' + 'f' > 'eoif'
+'ẻoi' + 'r' > 'eoir'
+'ẽoi' + 'x' > 'eoix'
+'ẹoi' + 'j' > 'eoij'
+'ói' + 's' > 'ois'
+'òi' + 'f' > 'oif'
+'ỏi' + 'r' > 'oir'
+'õi' + 'x' > 'oix'
+'ọi' + 'j' > 'oij'
+'óa' + 's' > 'oas'
+'òa' + 'f' > 'oaf'
+'ỏa' + 'r' > 'oar'
+'õa' + 'x' > 'oax'
+'ọa' + 'j' > 'oaj'
+'óe' + 's' > 'oes'
+'òe' + 'f' > 'oef'
+'ỏe' + 'r' > 'oer'
+'õe' + 'x' > 'oex'
+'ọe' + 'j' > 'oej'
+'ấu' + 's' > 'aaus'
+'ầu' + 'f' > 'aauf'
+'ẩu' + 'r' > 'aaur'
+'ẫu' + 'x' > 'aaux'
+'ậu' + 'j' > 'aauj'
+'áu' + 's' > 'aus'
+'àu' + 'f' > 'auf'
+'ảu' + 'r' > 'aur'
+'ãu' + 'x' > 'aux'
+'ạu' + 'j' > 'auj'
+'íu' + 's' > 'ius'
+'ìu' + 'f' > 'iuf'
+'ỉu' + 'r' > 'iur'
+'ĩu' + 'x' > 'iux'
+'ịu' + 'j' > 'iuj'
+'ýu' + 's' > 'yus'
+'ỳu' + 'f' > 'yuf'
+'ỷu' + 'r' > 'yur'
+'ỹu' + 'x' > 'yux'
+'ỵu' + 'j' > 'yuj'
+
+    'ÂM' + 'S' > 'ẤM'
+    'ÂM' + 'F' > 'ẦM'
+    'ÂM' + 'R' > 'ẨM'
+    'ÂM' + 'X' > 'ẪM'
+    'ÂM' + 'J' > 'ẬM'
+    'ÂN' + 'S' > 'ẤN'
+    'ÂN' + 'F' > 'ẦN'
+    'ÂN' + 'R' > 'ẨN'
+    'ÂN' + 'X' > 'ẪN'
+    'ÂN' + 'J' > 'ẬN'
+    'ÂNG' + 'S' > 'ẤNG'
+    'ÂNG' + 'F' > 'ẦNG'
+    'ÂNG' + 'R' > 'ẨNG'
+    'ÂNG' + 'X' > 'ẪNG'
+    'ÂNG' + 'J' > 'ẬNG'
+    'ÂP' + 'S' > 'ẤP'
+    'ÂP' + 'F' > 'ẦP'
+    'ÂP' + 'R' > 'ẨP'
+    'ÂP' + 'X' > 'ẪP'
+    'ÂP' + 'J' > 'ẬP'
+    'ÂT' + 'S' > 'ẤT'
+    'ÂT' + 'F' > 'ẦT'
+    'ÂT' + 'R' > 'ẨT'
+    'ÂT' + 'X' > 'ẪT'
+    'ÂT' + 'J' > 'ẬT'
+    'ÂK' + 'S' > 'ẤK'
+    'ÂK' + 'F' > 'ẦK'
+    'ÂK' + 'R' > 'ẨK'
+    'ÂK' + 'X' > 'ẪK'
+    'ÂK' + 'J' > 'ẬK'  
+    'ÂI' + 'S' > 'ẤI'
+    'ÂI' + 'F' > 'ẦI'
+    'ÂI' + 'R' > 'ẨI'
+    'ÂI' + 'X' > 'ẪI'
+    'ÂI' + 'J' > 'ẬI'  
+
+    'AM' + 'S' > 'ÁM'
+    'AM' + 'F' > 'ÀM'
+    'AM' + 'R' > 'ẢM'
+    'AM' + 'X' > 'ÃM'
+    'AM' + 'J' > 'ẠM'
+    'AN' + 'S' > 'ÁN'
+    'AN' + 'F' > 'ÀN'
+    'AN' + 'R' > 'ẢN'
+    'AN' + 'X' > 'ÃN'
+    'AN' + 'J' > 'ẠN'
+    'ANG' + 'S' > 'ÁNG'
+    'ANG' + 'F' > 'ÀNG'
+    'ANG' + 'R' > 'ẢNG'
+    'ANG' + 'X' > 'ÃNG'
+    'ANG' + 'J' > 'ẠNG'
+    'AP' + 'S' > 'ÁP'
+    'AP' + 'F' > 'ÀP'
+    'AP' + 'R' > 'ẢP'
+    'AP' + 'X' > 'ÃP'
+    'AP' + 'J' > 'ẠP'
+    'AT' + 'S' > 'ÁT'
+    'AT' + 'F' > 'ÀT'
+    'AT' + 'R' > 'ẢT'
+    'AT' + 'X' > 'ÃT'
+    'AT' + 'J' > 'ẠT'
+    'AK' + 'S' > 'ÁK'
+    'AK' + 'F' > 'ÀK'
+    'AK' + 'R' > 'ẢK'
+    'AK' + 'X' > 'ÃK'
+    'AK' + 'J' > 'ẠK'
+
+    'IM' + 'S' > 'ÍM'
+    'IM' + 'F' > 'ÌM'
+    'IM' + 'R' > 'ỈM'
+    'IM' + 'X' > 'ĨM'
+    'IM' + 'J' > 'ỊM'
+    'IN' + 'S' > 'ÍN'
+    'IN' + 'F' > 'ÌN'
+    'IN' + 'R' > 'ỈN'
+    'IN' + 'X' > 'ĨN'
+    'IN' + 'J' > 'ỊN'
+    'ING' + 'S' > 'ÍNG'
+    'ING' + 'F' > 'ÌNG'
+    'ING' + 'R' > 'ỈNG'
+    'ING' + 'X' > 'ĨNG'
+    'ING' + 'J' > 'ỊNG'
+    'IP' + 'S' > 'ÍP'
+    'IP' + 'F' > 'ÌP'
+    'IP' + 'R' > 'ỈP'
+    'IP' + 'X' > 'ĨP'
+    'IP' + 'J' > 'ỊP'
+    'IT' + 'S' > 'ÍT'
+    'IT' + 'F' > 'ÌT'
+    'IT' + 'R' > 'ỈT'
+    'IT' + 'X' > 'ĨT'
+    'IT' + 'J' > 'ỊT'
+    'IK' + 'S' > 'ÍK'
+    'IK' + 'F' > 'ÌK'
+    'IK' + 'R' > 'ỈK'
+    'IK' + 'X' > 'ĨK'
+    'IK' + 'J' > 'ỊK'  
+
+    'UM' + 'S' > 'ÚM'
+    'UM' + 'F' > 'ÙM'
+    'UM' + 'R' > 'ỦM'
+    'UM' + 'X' > 'ŨM'
+    'UM' + 'J' > 'ỤM'
+    'UN' + 'S' > 'ÚN'
+    'UN' + 'F' > 'ÙN'
+    'UN' + 'R' > 'ỦN'
+    'UN' + 'X' > 'ŨN'
+    'UN' + 'J' > 'ỤN'
+    'UNG' + 'S' > 'ÚNG'
+    'UNG' + 'F' > 'ÙNG'
+    'UNG' + 'R' > 'ỦNG'
+    'UNG' + 'X' > 'ŨNG'
+    'UNG' + 'J' > 'ỤNG'
+    'UP' + 'S' > 'ÚP'
+    'UP' + 'F' > 'ÙP'
+    'UP' + 'R' > 'ỦP'
+    'UP' + 'X' > 'ŨP'
+    'UP' + 'J' > 'ỤP'
+    'UT' + 'S' > 'ÚT'
+    'UT' + 'F' > 'ÙT'
+    'UT' + 'R' > 'ỦT'
+    'UT' + 'X' > 'ŨT'
+    'UT' + 'J' > 'ỤT'
+    'UK' + 'S' > 'ÚK'
+    'UK' + 'F' > 'ÙK'
+    'UK' + 'R' > 'ỦK'
+    'UK' + 'X' > 'ŨK'
+    'UK' + 'J' > 'ỤK'
+
+    'EU' + 'S' > 'ÉU'
+    'EU' + 'F' > 'ÈU'
+    'EU' + 'R' > 'ẺU'
+    'EU' + 'X' > 'ẼU'
+    'EU' + 'J' > 'ẸU'
+
+    'EM' + 'S' > 'ÉM'
+    'EM' + 'F' > 'ÈM'
+    'EM' + 'R' > 'ẺM'
+    'EM' + 'X' > 'ẼM'
+    'EM' + 'J' > 'ẸM'
+    'EN' + 'S' > 'ÉN'
+    'EN' + 'F' > 'ÈN'
+    'EN' + 'R' > 'ẺN'
+    'EN' + 'X' > 'ẼN'
+    'EN' + 'J' > 'ẸN'
+    'ENG' + 'S' > 'ÉNG'
+    'ENG' + 'F' > 'ÈNG'
+    'ENG' + 'R' > 'ẺNG'
+    'ENG' + 'X' > 'ẼNG'
+    'ENG' + 'J' > 'ẸNG'
+    'EP' + 'S' > 'ÉP'
+    'EP' + 'F' > 'ÈP'
+    'EP' + 'R' > 'ẺP'
+    'EP' + 'X' > 'ẼP'
+    'EP' + 'J' > 'ẸP'
+    'ET' + 'S' > 'ÉT'
+    'ET' + 'F' > 'ÈT'
+    'ET' + 'R' > 'ẺT'
+    'ET' + 'X' > 'ẼT'
+    'ET' + 'J' > 'ẸT'
+    'EK' + 'S' > 'ÉK'
+    'EK' + 'F' > 'ÈK'
+    'EK' + 'R' > 'ẺK'
+    'EK' + 'X' > 'ẼK'
+    'EK' + 'J' > 'ẸK'
+
+'EOM' + 'S' > 'ÉOM'
+'EOM' + 'F' > 'ÈOM'
+'EOM' + 'R' > 'ẺOM'
+'EOM' + 'X' > 'ẼOM'
+'EOM' + 'J' > 'ẸOM'
+'EON' + 'S' > 'ÉON'
+'EON' + 'F' > 'ÈON'
+'EON' + 'R' > 'ẺON'
+'EON' + 'X' > 'ẼON'
+'EON' + 'J' > 'ẸON'
+'EONG' + 'S' > 'ÉONG'
+'EONG' + 'F' > 'ÈONG'
+'EONG' + 'R' > 'ẺONG'
+'EONG' + 'X' > 'ẼONG'
+'EONG' + 'J' > 'ẸONG'
+'EOP' + 'S' > 'ÉOP'
+'EOP' + 'F' > 'ÈOP'
+'EOP' + 'R' > 'ẺOP'
+'EOP' + 'X' > 'ẼOP'
+'EOP' + 'J' > 'ẸOP'
+'EOT' + 'S' > 'ÉOT'
+'EOT' + 'F' > 'ÈOT'
+'EOT' + 'R' > 'ẺOT'
+'EOT' + 'X' > 'ẼOT'
+'EOT' + 'J' > 'ẸOT'
+'EOK' + 'S' > 'ÉOK'
+'EOK' + 'F' > 'ÈOK'
+'EOK' + 'R' > 'ẺOK'
+'EOK' + 'X' > 'ẼOK'
+'EOK' + 'J' > 'ẸOK'
+
+'OM' + 'S' > 'ÓM'
+'OM' + 'F' > 'ÒM'
+'OM' + 'R' > 'ỎM'
+'OM' + 'X' > 'ÕM'
+'OM' + 'J' > 'ỌM'
+'ON' + 'S' > 'ÓN'
+'ON' + 'F' > 'ÒN'
+'ON' + 'R' > 'ỎN'
+'ON' + 'X' > 'ÕN'
+'ON' + 'J' > 'ỌN'
+'ONG' + 'S' > 'ÓNG'
+'ONG' + 'F' > 'ÒNG'
+'ONG' + 'R' > 'ỎNG'
+'ONG' + 'X' > 'ÕNG'
+'ONG' + 'J' > 'ỌNG'
+'OP' + 'S' > 'ÓP'
+'OP' + 'F' > 'ÒP'
+'OP' + 'R' > 'ỎP'
+'OP' + 'X' > 'ÕP'
+'OP' + 'J' > 'ỌP'
+'OT' + 'S' > 'ÓT'
+'OT' + 'F' > 'ÒT'
+'OT' + 'R' > 'ỎT'
+'OT' + 'X' > 'ÕT'
+'OT' + 'J' > 'ỌT'
+'OK' + 'S' > 'ÓK'
+'OK' + 'F' > 'ÒK'
+'OK' + 'R' > 'ỎK'
+'OK' + 'X' > 'ÕK'
+'OK' + 'J' > 'ỌK'
+
+'YM' + 'S' > 'ÝM'
+'YM' + 'F' > 'ỲM'
+'YM' + 'R' > 'ỶM'
+'YM' + 'X' > 'ỸM'
+'YM' + 'J' > 'ỴM'
+'YN' + 'S' > 'ÝN'
+'YN' + 'F' > 'ỲN'
+'YN' + 'R' > 'ỶN'
+'YN' + 'X' > 'ỸN'
+'YN' + 'J' > 'ỴN'
+'YP' + 'S' > 'ÝP'
+'YP' + 'F' > 'ỲP'
+'YP' + 'R' > 'ỶP'
+'YP' + 'X' > 'ỸP'
+'YP' + 'J' > 'ỴP'
+'YT' + 'S' > 'ÝT'
+'YT' + 'F' > 'ỲT'
+'YT' + 'R' > 'ỶT'
+'YT' + 'X' > 'ỸT'
+'YT' + 'J' > 'ỴT'
+'YK' + 'S' > 'ÝK'
+'YK' + 'F' > 'ỲK'
+'YK' + 'R' > 'ỶK'
+'YK' + 'X' > 'ỸK'
+'YK' + 'J' > 'ỴK'
+
+    'AI' + 'S' > 'ÁI'
+    'AI' + 'F' > 'ÀI'
+    'AI' + 'R' > 'ẢI'
+    'AI' + 'X' > 'ÃI'
+    'AI' + 'J' > 'ẠI'
+    'UI' + 'S' > 'ÚI'
+    'UI' + 'F' > 'ÙI'
+    'UI' + 'R' > 'ỦI'
+    'UI' + 'X' > 'ŨI'
+    'UI' + 'J' > 'ỤI'
+    'UÂ' + 'S' > 'ÚÂ'
+    'UÂ' + 'F' > 'ÙÂ'
+    'UÂ' + 'R' > 'ỦÂ'
+    'UÂ' + 'X' > 'ŨÂ'
+    'UÂ' + 'J' > 'ỤÂ'
+    'EI' + 'S' > 'ÉI'
+    'EI' + 'F' > 'ÈI'
+    'EI' + 'R' > 'ẺI'
+    'EI' + 'X' > 'ẼI'
+    'EI' + 'J' > 'ẸI'
+
+'EOI' + 'S' > 'ÉOI'
+'EOI' + 'F' > 'ÈOI'
+'EOI' + 'R' > 'ẺOI'
+'EOI' + 'X' > 'ẼOI'
+'EOI' + 'J' > 'ẸOI'
+'OI' + 'S' > 'ÓI'
+'OI' + 'F' > 'ÒI'
+'OI' + 'R' > 'ỎI'
+'OI' + 'X' > 'ÕI'
+'OI' + 'J' > 'ỌI'
+'OA' + 'S' > 'ÓA'
+'OA' + 'F' > 'ÒA'
+'OA' + 'R' > 'ỎA'
+'OA' + 'X' > 'ÕA'
+'OA' + 'J' > 'ỌA'
+'OE' + 'S' > 'ÓE'
+'OE' + 'F' > 'ÒE'
+'OE' + 'R' > 'ỎE'
+'OE' + 'X' > 'ÕE'
+'OE' + 'J' > 'ỌE'
+
+    'ÂU' + 'S' > 'ẤU'
+    'ÂU' + 'F' > 'ẦU'
+    'ÂU' + 'R' > 'ẨU'
+    'ÂU' + 'X' > 'ẪU'
+    'ÂU' + 'J' > 'ẬU'
+    'AU' + 'S' > 'ÁU'
+    'AU' + 'F' > 'ÀU'
+    'AU' + 'R' > 'ẢU'
+    'AU' + 'X' > 'ÃU'
+    'AU' + 'J' > 'ẠU'
+    'IU' + 'S' > 'ÍU'
+    'IU' + 'F' > 'ÌU'
+    'IU' + 'R' > 'ỈU'
+    'IU' + 'X' > 'ĨU'
+    'IU' + 'J' > 'ỊU'
+'ÁM' + 'S' > 'AMS'
+'ÀM' + 'F' > 'AMF'
+'ẢM' + 'R' > 'AMR'
+'ÃM' + 'X' > 'AMX'
+'ẠM' + 'J' > 'AMJ'
+'ÁN' + 'S' > 'ANS'
+'ÀN' + 'F' > 'ANF'
+'ẢN' + 'R' > 'ANR'
+'ÃN' + 'X' > 'ANX'
+'ẠN' + 'J' > 'ANJ'
+'ÁNG' + 'S' > 'ANGS'
+'ÀNG' + 'F' > 'ANGF'
+'ẢNG' + 'R' > 'ANGR'
+'ÃNG' + 'X' > 'ANGX'
+'ẠNG' + 'J' > 'ANGJ'
+'ÁP' + 'S' > 'APS'
+'ÀP' + 'F' > 'APF'
+'ẢP' + 'R' > 'APR'
+'ÃP' + 'X' > 'APX'
+'ẠP' + 'J' > 'APJ'
+'ÁT' + 'S' > 'ATS'
+'ÀT' + 'F' > 'ATF'
+'ẢT' + 'R' > 'ATR'
+'ÃT' + 'X' > 'ATX'
+'ẠT' + 'J' > 'ATJ'
+'ÁK' + 'S' > 'AKS'
+'ÀK' + 'F' > 'AKF'
+'ẢK' + 'R' > 'AKR'
+'ÃK' + 'X' > 'AKX'
+'ẠK' + 'J' > 'AKJ'
+'AY' + 'S' > 'ÁY'
+'AY' + 'F' > 'ÀY'
+'AY' + 'R' > 'ẢY'
+'AY' + 'X' > 'ÃY'
+'AY' + 'J' > 'ẠY'
+
+'ÍM' + 'S' > 'IMS'
+'ÌM' + 'F' > 'IMF'
+'ỈM' + 'R' > 'IMR'
+'ĨM' + 'X' > 'IMX'
+'ỊM' + 'J' > 'IMJ'
+'ÍN' + 'S' > 'INS'
+'ÌN' + 'F' > 'INF'
+'ỈN' + 'R' > 'INR'
+'ĨN' + 'X' > 'INX'
+'ỊN' + 'J' > 'INJ'
+'ÍNG' + 'S' > 'INGS'
+'ÌNG' + 'F' > 'INGF'
+'ỈNG' + 'R' > 'INGR'
+'ĨNG' + 'X' > 'INGX'
+'ĨNG' + 'J' > 'INGJ'
+'ÍP' + 'S' > 'IPS'
+'ÌP' + 'F' > 'IPF'
+'ỈP' + 'R' > 'IPR'
+'ĨP' + 'X' > 'IPX'
+'ỊP' + 'J' > 'IPJ'
+'ÍT' + 'S' > 'ITS'
+'ÌT' + 'F' > 'ITF'
+'ỈT' + 'R' > 'ITR'
+'ĨT' + 'X' > 'ITX'
+'ỊT' + 'J' > 'ITJ'
+'ÍK' + 'S' > 'IKS'
+'ÌK' + 'F' > 'IKF'
+'ỈK' + 'R' > 'IKR'
+'ĨK' + 'X' > 'IKX'
+'ỊK' + 'J' > 'IKJ'
+
+'ÚM' + 'S' > 'UMS'
+'ÙM' + 'F' > 'UMF'
+'ỦM' + 'R' > 'UMR'
+'ŨM' + 'X' > 'UMX'
+'ỤM' + 'J' > 'UMJ'
+'ÚN' + 'S' > 'UNS'
+'ÙN' + 'F' > 'UNF'
+'ỦN' + 'R' > 'UNR'
+'ŨN' + 'X' > 'UNX'
+'ỤN' + 'J' > 'UNJ'
+'ÚNG' + 'S' > 'UNGS'
+'ÙNG' + 'F' > 'UNGF'
+'ỦNG' + 'R' > 'UNGR'
+'ŨNG' + 'X' > 'UNGX'
+'ỤNG' + 'J' > 'UNGJ'
+'ÚP' + 'S' > 'UPS'
+'ÙP' + 'F' > 'UPF'
+'ỦP' + 'R' > 'UPR'
+'ŨP' + 'X' > 'UPX'
+'ỤP' + 'J' > 'UPJ'
+'ÚT' + 'S' > 'UTS'
+'ÙT' + 'F' > 'UTF'
+'ỦT' + 'R' > 'UTR'
+'ŨT' + 'X' > 'UTX'
+'ỤT' + 'J' > 'UTJ'
+'ÚK' + 'S' > 'UKS'
+'ÙK' + 'F' > 'UKF'
+'ỦK' + 'R' > 'UKR'
+'ŨK' + 'X' > 'UKX'
+'ỤK' + 'J' > 'UKJ'
+
+'ÉU' + 'S' > 'EUS'
+'ÈU' + 'F' > 'EUF'
+'ẺU' + 'R' > 'EUR'
+'ẼU' + 'X' > 'EUX'
+'ẸU' + 'J' > 'EUJ'
+
+'ÉM' + 'S' > 'EMS'
+'ÈM' + 'F' > 'EMF'
+'ẺM' + 'R' > 'EMR'
+'ẼM' + 'X' > 'EMX'
+'ẸM' + 'J' > 'EMJ'
+'ÉN' + 'S' > 'ENS'
+'ÈN' + 'F' > 'ENF'
+'ẺN' + 'R' > 'ENR'
+'ẼN' + 'X' > 'ENX'
+'ẸN' + 'J' > 'ENJ'
+'ÉNG' + 'S' > 'ENGS'
+'ÈNG' + 'F' > 'ENGF'
+'ẺNG' + 'R' > 'ENGR'
+'ẼNG' + 'X' > 'ENGX'
+'ẸNG' + 'J' > 'ENGJ'
+'ÉP' + 'S' > 'EPS'
+'ÈP' + 'F' > 'EPF'
+'ẺP' + 'R' > 'EPR'
+'ẼP' + 'X' > 'EPX'
+'ẸP' + 'J' > 'EPJ'
+'ÉT' + 'S' > 'ETS'
+'ÈT' + 'F' > 'ETF'
+'ẺT' + 'R' > 'ETR'
+'ẼT' + 'X' > 'ETX'
+'ẸT' + 'J' > 'ETJ'
+'ÉK' + 'S' > 'EKS'
+'ÈK' + 'F' > 'EKF'
+'ẺK' + 'R' > 'EKR'
+'ẼK' + 'X' > 'EKX'
+'ẸK' + 'J' > 'EKJ'
+'ÉOM' + 'S' > 'EOMS'
+'ÈOM' + 'F' > 'EOMF'
+'ẺOM' + 'R' > 'EOMR'
+'ẼOM' + 'X' > 'EOMX'
+'ẸOM' + 'J' > 'EOMJ'
+'ÉON' + 'S' > 'EONS'
+'ÈON' + 'F' > 'EONF'
+'ẺON' + 'R' > 'EONR'
+'ẼON' + 'X' > 'EONX'
+'ẸON' + 'J' > 'EONJ'
+'ÉONG' + 'S' > 'EONGS'
+'ÈONG' + 'F' > 'EONGF'
+'ẺONG' + 'R' > 'EONGR'
+'ẼONG' + 'X' > 'EONGX'
+'ẸONG' + 'J' > 'EONGJ'
+'ÉOP' + 'S' > 'EOPS'
+'ÈOP' + 'F' > 'EOPF'
+'ẺOP' + 'R' > 'EOPR'
+'ẼOP' + 'X' > 'EOPX'
+'ẸOP' + 'J' > 'EOPJ'
+'ÉOT' + 'S' > 'EOTS'
+'ÈOT' + 'F' > 'EOTF'
+'ẺOT' + 'R' > 'EOTR'
+'ẼOT' + 'X' > 'EOTX'
+'ẼOT' + 'J' > 'EOTJ'
+'ÉOK' + 'S' > 'EOKS'
+'ÈOK' + 'F' > 'EOKF'
+'ẺOK' + 'R' > 'EOKR'
+'ẼOK' + 'X' > 'EOKX'
+'ẸOK' + 'J' > 'EOKJ'
+
+'ÓM' + 'S' > 'OMS'
+'ÒM' + 'F' > 'OMF'
+'ỎM' + 'R' > 'OMR'
+'ÕM' + 'X' > 'OMX'
+'ỌM' + 'J' > 'OMJ'
+'ÓN' + 'S' > 'ONS'
+'ÒN' + 'F' > 'ONF'
+'ỎN' + 'R' > 'ONR'
+'ÕN' + 'X' > 'ONX'
+'ỌN' + 'J' > 'ONJ'
+'ÓNG' + 'S' > 'ONGS'
+'ÒNG' + 'F' > 'ONGF'
+'ỎNG' + 'R' > 'ONGR'
+'ÕNG' + 'X' > 'ONGX'
+'ỌNG' + 'J' > 'ONGJ'
+'ÓP' + 'S' > 'OPS'
+'ÒP' + 'F' > 'OPF'
+'ỎP' + 'R' > 'OPR'
+'ÕP' + 'X' > 'OPX'
+'ỌP' + 'J' > 'OPJ'
+'ÓT' + 'S' > 'OTS'
+'ÒT' + 'F' > 'OTF'
+'ỎT' + 'R' > 'OTR'
+'ÕT' + 'X' > 'OTX'
+'ỌT' + 'J' > 'OTJ'
+'ÓK' + 'S' > 'OKS'
+'ÒK' + 'F' > 'OKF'
+'ỎK' + 'R' > 'OKR'
+'ÕK' + 'X' > 'OKX'
+'ỌK' + 'J' > 'OKJ'
+
+'ÝM' + 'S' > 'YMS'
+'ỲM' + 'F' > 'YMF'
+'ỶM' + 'R' > 'YMR'
+'ỸM' + 'X' > 'YMX'
+'ỴM' + 'J' > 'YMJ'
+'ÝN' + 'S' > 'YNS'
+'ỲN' + 'F' > 'YNF'
+'ỶN' + 'R' > 'YNR'
+'ỸN' + 'X' > 'YNX'
+'ỴN' + 'J' > 'YNJ'
+'ÝP' + 'S' > 'YPS'
+'ỲP' + 'F' > 'YPF'
+'ỶP' + 'R' > 'YPR'
+'ỸP' + 'X' > 'YPX'
+'ỴP' + 'J' > 'YPJ'
+'ÝT' + 'S' > 'YTS'
+'ỲT' + 'F' > 'YTF'
+'ỶT' + 'R' > 'YTR'
+'ỸT' + 'X' > 'YTX'
+'ỴT' + 'J' > 'YTJ'
+'ÝK' + 'S' > 'YKS'
+'ỲK' + 'F' > 'YKF'
+'ỶK' + 'R' > 'YKR'
+'ỸK' + 'X' > 'YKX'
+'ỴK' + 'J' > 'YKJ'
+
+'ÁI' + 'S' > 'AIS'
+'ÀI' + 'F' > 'AIF'
+'ẢI' + 'R' > 'AIR'
+'ÃI' + 'X' > 'AIX'
+'ẠI' + 'J' > 'AIJ'
+'ÚI' + 'S' > 'UIS'
+'ÙI' + 'F' > 'UIF'
+'ỦI' + 'R' > 'UIR'
+'ŨI' + 'X' > 'UIX'
+'ỤI' + 'J' > 'UIJ'
+'ÚA' + 'S' > 'UAS'
+'ÙA' + 'F' > 'UAF'
+'ỦA' + 'R' > 'UAR'
+'ŨA' + 'X' > 'UAX'
+'ỤA' + 'J' > 'UAJ'
+'ÚÂ' + 'S' > 'UAS'
+'ÙÂ' + 'F' > 'UAF'
+'ỦÂ' + 'R' > 'UAR'
+'ŨÂ' + 'X' > 'UAX'
+'ỤÂ' + 'J' > 'UAJ'
+'ÉI' + 'S' > 'EIS'
+'ÈI' + 'F' > 'EIF'
+'ẺI' + 'R' > 'EIR'
+'ẼI' + 'X' > 'EIX'
+'ẸI' + 'J' > 'EIJ'
+'ÉOI' + 'S' > 'EOIS'
+'ÈOI' + 'F' > 'EOIF'
+'ẺOI' + 'R' > 'EOIR'
+'ẼOI' + 'X' > 'EOIX'
+'ẸOI' + 'J' > 'EOIJ'
+'ÓI' + 'S' > 'OIS'
+'ÒI' + 'F' > 'OIF'
+'ỎI' + 'R' > 'OIR'
+'ÕI' + 'X' > 'OIX'
+'ỌI' + 'J' > 'OIJ'
+'ÓA' + 'S' > 'OAS'
+'ÒA' + 'F' > 'OAF'
+'ỎA' + 'R' > 'OAR'
+'ÕA' + 'X' > 'OAX'
+'ỌA' + 'J' > 'OAJ'
+'ÓE' + 'S' > 'OES'
+'ÒE' + 'F' > 'OEF'
+'ỎE' + 'R' > 'OER'
+'ÕE' + 'X' > 'OEX'
+'ỌE' + 'J' > 'OEJ'
+'ẤU' + 'S' > 'AAUS'
+'ẦU' + 'F' > 'AAUF'
+'ẨU' + 'R' > 'AAUR'
+'ẪU' + 'X' > 'AAUX'
+'ẬU' + 'J' > 'AAUJ'
+'ÁU' + 'S' > 'AUS'
+'ÀU' + 'F' > 'AUF'
+'ẢU' + 'R' > 'AUR'
+'ÃU' + 'X' > 'AUX'
+'ẠU' + 'J' > 'AUJ'
+'ÍU' + 'S' > 'IUS'
+'ÌU' + 'F' > 'IUF'
+'ỈU' + 'R' > 'IUR'
+'ĨU' + 'X' > 'IUX'
+'ỊU' + 'J' > 'IUJ'
+'ÝU' + 'S' > 'YUS'
+'ỲU' + 'F' > 'YUF'
+'ỶU' + 'R' > 'YUR'
+'ỸU' + 'X' > 'YUX'
+'ỴU' + 'J' > 'YUJ'
+
+    'ÂM' + 's' > 'ẤM'
+    'ÂM' + 'f' > 'ẦM'
+    'ÂM' + 'r' > 'ẨM'
+    'ÂM' + 'x' > 'ẪM'
+    'ÂM' + 'j' > 'ẬM'
+    'ÂN' + 's' > 'ẤN'
+    'ÂN' + 'f' > 'ẦN'
+    'ÂN' + 'r' > 'ẨN'
+    'ÂN' + 'x' > 'ẪN'
+    'ÂN' + 'j' > 'ẬN'
+    'ÂNG' + 's' > 'ẤNG'
+    'ÂNG' + 'f' > 'ẦNG'
+    'ÂNG' + 'r' > 'ẨNG'
+    'ÂNG' + 'x' > 'ẪNG'
+    'ÂNG' + 'j' > 'ẬNG'
+    'ÂP' + 's' > 'ẤP'
+    'ÂP' + 'f' > 'ẦP'
+    'ÂP' + 'r' > 'ẨP'
+    'ÂP' + 'x' > 'ẪP'
+    'ÂP' + 'j' > 'ẬP'
+    'ÂT' + 's' > 'ẤT'
+    'ÂT' + 'f' > 'ẦT'
+    'ÂT' + 'r' > 'ẨT'
+    'ÂT' + 'x' > 'ẪT'
+    'ÂT' + 'j' > 'ẬT'
+    'ÂK' + 's' > 'ẤK'
+    'ÂK' + 'f' > 'ẦK'
+    'ÂK' + 'r' > 'ẨK'
+    'ÂK' + 'x' > 'ẪK'
+    'ÂK' + 'j' > 'ẬK'  
+    'ÂI' + 's' > 'ẤI'
+    'ÂI' + 'f' > 'ẦI'
+    'ÂI' + 'r' > 'ẨI'
+    'ÂI' + 'x' > 'ẪI'
+    'ÂI' + 'j' > 'ẬI'  
+
+    'AM' + 's' > 'ÁM'
+    'AM' + 'f' > 'ÀM'
+    'AM' + 'r' > 'ẢM'
+    'AM' + 'x' > 'ÃM'
+    'AM' + 'j' > 'ẠM'
+    'AN' + 's' > 'ÁN'
+    'AN' + 'f' > 'ÀN'
+    'AN' + 'r' > 'ẢN'
+    'AN' + 'x' > 'ÃN'
+    'AN' + 'j' > 'ẠN'
+    'ANG' + 's' > 'ÁNG'
+    'ANG' + 'f' > 'ÀNG'
+    'ANG' + 'r' > 'ẢNG'
+    'ANG' + 'x' > 'ÃNG'
+    'ANG' + 'j' > 'ẠNG'
+    'AP' + 's' > 'ÁP'
+    'AP' + 'f' > 'ÀP'
+    'AP' + 'r' > 'ẢP'
+    'AP' + 'x' > 'ÃP'
+    'AP' + 'j' > 'ẠP'
+    'AT' + 's' > 'ÁT'
+    'AT' + 'f' > 'ÀT'
+    'AT' + 'r' > 'ẢT'
+    'AT' + 'x' > 'ÃT'
+    'AT' + 'j' > 'ẠT'
+    'AK' + 's' > 'ÁK'
+    'AK' + 'f' > 'ÀK'
+    'AK' + 'r' > 'ẢK'
+    'AK' + 'x' > 'ÃK'
+    'AK' + 'j' > 'ẠK'
+
+    'IM' + 's' > 'ÍM'
+    'IM' + 'f' > 'ÌM'
+    'IM' + 'r' > 'ỈM'
+    'IM' + 'x' > 'ĨM'
+    'IM' + 'j' > 'ỊM'
+    'IN' + 's' > 'ÍN'
+    'IN' + 'f' > 'ÌN'
+    'IN' + 'r' > 'ỈN'
+    'IN' + 'x' > 'ĨN'
+    'IN' + 'j' > 'ỊN'
+    'ING' + 's' > 'ÍNG'
+    'ING' + 'f' > 'ÌNG'
+    'ING' + 'r' > 'ỈNG'
+    'ING' + 'x' > 'ĨNG'
+    'ING' + 'j' > 'ỊNG'
+    'IP' + 's' > 'ÍP'
+    'IP' + 'f' > 'ÌP'
+    'IP' + 'r' > 'ỈP'
+    'IP' + 'x' > 'ĨP'
+    'IP' + 'j' > 'ỊP'
+    'IT' + 's' > 'ÍT'
+    'IT' + 'f' > 'ÌT'
+    'IT' + 'r' > 'ỈT'
+    'IT' + 'x' > 'ĨT'
+    'IT' + 'j' > 'ỊT'
+    'IK' + 's' > 'ÍK'
+    'IK' + 'f' > 'ÌK'
+    'IK' + 'r' > 'ỈK'
+    'IK' + 'x' > 'ĨK'
+    'IK' + 'j' > 'ỊK'  
+
+    'UM' + 's' > 'ÚM'
+    'UM' + 'f' > 'ÙM'
+    'UM' + 'r' > 'ỦM'
+    'UM' + 'x' > 'ŨM'
+    'UM' + 'j' > 'ỤM'
+    'UN' + 's' > 'ÚN'
+    'UN' + 'f' > 'ÙN'
+    'UN' + 'r' > 'ỦN'
+    'UN' + 'x' > 'ŨN'
+    'UN' + 'j' > 'ỤN'
+    'UNG' + 's' > 'ÚNG'
+    'UNG' + 'f' > 'ÙNG'
+    'UNG' + 'r' > 'ỦNG'
+    'UNG' + 'x' > 'ŨNG'
+    'UNG' + 'j' > 'ỤNG'
+    'UP' + 's' > 'ÚP'
+    'UP' + 'f' > 'ÙP'
+    'UP' + 'r' > 'ỦP'
+    'UP' + 'x' > 'ŨP'
+    'UP' + 'j' > 'ỤP'
+    'UT' + 's' > 'ÚT'
+    'UT' + 'f' > 'ÙT'
+    'UT' + 'r' > 'ỦT'
+    'UT' + 'x' > 'ŨT'
+    'UT' + 'j' > 'ỤT'
+    'UK' + 's' > 'ÚK'
+    'UK' + 'f' > 'ÙK'
+    'UK' + 'r' > 'ỦK'
+    'UK' + 'x' > 'ŨK'
+    'UK' + 'j' > 'ỤK'
+
+    'EU' + 's' > 'ÉU'
+    'EU' + 'f' > 'ÈU'
+    'EU' + 'r' > 'ẺU'
+    'EU' + 'x' > 'ẼU'
+    'EU' + 'j' > 'ẸU'
+
+    'EM' + 's' > 'ÉM'
+    'EM' + 'f' > 'ÈM'
+    'EM' + 'r' > 'ẺM'
+    'EM' + 'x' > 'ẼM'
+    'EM' + 'j' > 'ẸM'
+    'EN' + 's' > 'ÉN'
+    'EN' + 'f' > 'ÈN'
+    'EN' + 'r' > 'ẺN'
+    'EN' + 'x' > 'ẼN'
+    'EN' + 'j' > 'ẸN'
+    'ENG' + 's' > 'ÉNG'
+    'ENG' + 'f' > 'ÈNG'
+    'ENG' + 'r' > 'ẺNG'
+    'ENG' + 'x' > 'ẼNG'
+    'ENG' + 'j' > 'ẸNG'
+    'EP' + 's' > 'ÉP'
+    'EP' + 'f' > 'ÈP'
+    'EP' + 'r' > 'ẺP'
+    'EP' + 'x' > 'ẼP'
+    'EP' + 'j' > 'ẸP'
+    'ET' + 's' > 'ÉT'
+    'ET' + 'f' > 'ÈT'
+    'ET' + 'r' > 'ẺT'
+    'ET' + 'x' > 'ẼT'
+    'ET' + 'j' > 'ẸT'
+    'EK' + 's' > 'ÉK'
+    'EK' + 'f' > 'ÈK'
+    'EK' + 'r' > 'ẺK'
+    'EK' + 'x' > 'ẼK'
+    'EK' + 'j' > 'ẸK'
+
+'EOM' + 's' > 'ÉOM'
+'EOM' + 'f' > 'ÈOM'
+'EOM' + 'r' > 'ẺOM'
+'EOM' + 'x' > 'ẼOM'
+'EOM' + 'j' > 'ẸOM'
+'EON' + 's' > 'ÉON'
+'EON' + 'f' > 'ÈON'
+'EON' + 'r' > 'ẺON'
+'EON' + 'x' > 'ẼON'
+'EON' + 'j' > 'ẸON'
+'EONG' + 's' > 'ÉONG'
+'EONG' + 'f' > 'ÈONG'
+'EONG' + 'r' > 'ẺONG'
+'EONG' + 'x' > 'ẼONG'
+'EONG' + 'j' > 'ẸONG'
+'EOP' + 's' > 'ÉOP'
+'EOP' + 'f' > 'ÈOP'
+'EOP' + 'r' > 'ẺOP'
+'EOP' + 'x' > 'ẼOP'
+'EOP' + 'j' > 'ẸOP'
+'EOT' + 's' > 'ÉOT'
+'EOT' + 'f' > 'ÈOT'
+'EOT' + 'r' > 'ẺOT'
+'EOT' + 'x' > 'ẼOT'
+'EOT' + 'j' > 'ẸOT'
+'EOK' + 's' > 'ÉOK'
+'EOK' + 'f' > 'ÈOK'
+'EOK' + 'r' > 'ẺOK'
+'EOK' + 'x' > 'ẼOK'
+'EOK' + 'j' > 'ẸOK'
+
+'OM' + 's' > 'ÓM'
+'OM' + 'f' > 'ÒM'
+'OM' + 'r' > 'ỎM'
+'OM' + 'x' > 'ÕM'
+'OM' + 'j' > 'ỌM'
+'ON' + 's' > 'ÓN'
+'ON' + 'f' > 'ÒN'
+'ON' + 'r' > 'ỎN'
+'ON' + 'x' > 'ÕN'
+'ON' + 'j' > 'ỌN'
+'ONG' + 's' > 'ÓNG'
+'ONG' + 'f' > 'ÒNG'
+'ONG' + 'r' > 'ỎNG'
+'ONG' + 'x' > 'ÕNG'
+'ONG' + 'j' > 'ỌNG'
+'OP' + 's' > 'ÓP'
+'OP' + 'f' > 'ÒP'
+'OP' + 'r' > 'ỎP'
+'OP' + 'x' > 'ÕP'
+'OP' + 'j' > 'ỌP'
+'OT' + 's' > 'ÓT'
+'OT' + 'f' > 'ÒT'
+'OT' + 'r' > 'ỎT'
+'OT' + 'x' > 'ÕT'
+'OT' + 'j' > 'ỌT'
+'OK' + 's' > 'ÓK'
+'OK' + 'f' > 'ÒK'
+'OK' + 'r' > 'ỎK'
+'OK' + 'x' > 'ÕK'
+'OK' + 'j' > 'ỌK'
+
+'YM' + 's' > 'ÝM'
+'YM' + 'f' > 'ỲM'
+'YM' + 'r' > 'ỶM'
+'YM' + 'x' > 'ỸM'
+'YM' + 'j' > 'ỴM'
+'YN' + 's' > 'ÝN'
+'YN' + 'f' > 'ỲN'
+'YN' + 'r' > 'ỶN'
+'YN' + 'x' > 'ỸN'
+'YN' + 'j' > 'ỴN'
+'YP' + 's' > 'ÝP'
+'YP' + 'f' > 'ỲP'
+'YP' + 'r' > 'ỶP'
+'YP' + 'x' > 'ỸP'
+'YP' + 'j' > 'ỴP'
+'YT' + 's' > 'ÝT'
+'YT' + 'f' > 'ỲT'
+'YT' + 'r' > 'ỶT'
+'YT' + 'x' > 'ỸT'
+'YT' + 'j' > 'ỴT'
+'YK' + 's' > 'ÝK'
+'YK' + 'f' > 'ỲK'
+'YK' + 'r' > 'ỶK'
+'YK' + 'x' > 'ỸK'
+'YK' + 'j' > 'ỴK'
+
+    'AI' + 's' > 'ÁI'
+    'AI' + 'f' > 'ÀI'
+    'AI' + 'r' > 'ẢI'
+    'AI' + 'x' > 'ÃI'
+    'AI' + 'j' > 'ẠI'
+    'UI' + 's' > 'ÚI'
+    'UI' + 'f' > 'ÙI'
+    'UI' + 'r' > 'ỦI'
+    'UI' + 'x' > 'ŨI'
+    'UI' + 'j' > 'ỤI'
+    'UÂ' + 's' > 'ÚÂ'
+    'UÂ' + 'f' > 'ÙÂ'
+    'UÂ' + 'r' > 'ỦÂ'
+    'UÂ' + 'x' > 'ŨÂ'
+    'UÂ' + 'j' > 'ỤÂ'
+    'EI' + 's' > 'ÉI'
+    'EI' + 'f' > 'ÈI'
+    'EI' + 'r' > 'ẺI'
+    'EI' + 'x' > 'ẼI'
+    'EI' + 'j' > 'ẸI'
+
+'EOI' + 's' > 'ÉOI'
+'EOI' + 'f' > 'ÈOI'
+'EOI' + 'r' > 'ẺOI'
+'EOI' + 'x' > 'ẼOI'
+'EOI' + 'j' > 'ẸOI'
+'OI' + 's' > 'ÓI'
+'OI' + 'f' > 'ÒI'
+'OI' + 'r' > 'ỎI'
+'OI' + 'x' > 'ÕI'
+'OI' + 'j' > 'ỌI'
+'OA' + 's' > 'ÓA'
+'OA' + 'f' > 'ÒA'
+'OA' + 'r' > 'ỎA'
+'OA' + 'x' > 'ÕA'
+'OA' + 'j' > 'ỌA'
+'OE' + 's' > 'ÓE'
+'OE' + 'f' > 'ÒE'
+'OE' + 'r' > 'ỎE'
+'OE' + 'x' > 'ÕE'
+'OE' + 'j' > 'ỌE'
+    'ÂU' + 's' > 'ẤU'
+    'ÂU' + 'f' > 'ẦU'
+    'ÂU' + 'r' > 'ẨU'
+    'ÂU' + 'x' > 'ẪU'
+    'ÂU' + 'j' > 'ẬU'
+    'AU' + 's' > 'ÁU'
+    'AU' + 'f' > 'ÀU'
+    'AU' + 'r' > 'ẢU'
+    'AU' + 'x' > 'ÃU'
+    'AU' + 'j' > 'ẠU'
+    'IU' + 's' > 'ÍU'
+    'IU' + 'f' > 'ÌU'
+    'IU' + 'r' > 'ỈU'
+    'IU' + 'x' > 'ĨU'
+    'IU' + 'j' > 'ỊU'
+'ÁM' + 's' > 'AMs'
+'ÀM' + 'f' > 'AMf'
+'ẢM' + 'r' > 'AMr'
+'ÃM' + 'x' > 'AMx'
+'ẠM' + 'j' > 'AMj'
+'ÁN' + 's' > 'ANs'
+'ÀN' + 'f' > 'ANf'
+'ẢN' + 'r' > 'ANr'
+'ÃN' + 'x' > 'ANx'
+'ẠN' + 'j' > 'ANj'
+'ÁNG' + 's' > 'ANGs'
+'ÀNG' + 'f' > 'ANGf'
+'ẢNG' + 'r' > 'ANGr'
+'ÃNG' + 'x' > 'ANGx'
+'ẠNG' + 'j' > 'ANGj'
+'ÁP' + 's' > 'APs'
+'ÀP' + 'f' > 'APf'
+'ẢP' + 'r' > 'APr'
+'ÃP' + 'x' > 'APx'
+'ẠP' + 'j' > 'APj'
+'ÁT' + 's' > 'ATs'
+'ÀT' + 'f' > 'ATf'
+'ẢT' + 'r' > 'ATr'
+'ÃT' + 'x' > 'ATx'
+'ẠT' + 'j' > 'ATj'
+'ÁK' + 's' > 'AKs'
+'ÀK' + 'f' > 'AKf'
+'ẢK' + 'r' > 'AKr'
+'ÃK' + 'x' > 'AKx'
+'ẠK' + 'j' > 'AKj'
+
+'ÍM' + 's' > 'IMs'
+'ÌM' + 'f' > 'IMf'
+'ỈM' + 'r' > 'IMr'
+'ĨM' + 'x' > 'IMx'
+'ỊM' + 'j' > 'IMj'
+'ÍN' + 's' > 'INs'
+'ÌN' + 'f' > 'INf'
+'ỈN' + 'r' > 'INr'
+'ĨN' + 'x' > 'INx'
+'ỊN' + 'j' > 'INj'
+'ÍNG' + 's' > 'INGs'
+'ÌNG' + 'f' > 'INGf'
+'ỈNG' + 'r' > 'INGr'
+'ĨNG' + 'x' > 'INGx'
+'ĨNG' + 'j' > 'INGj'
+'ÍP' + 's' > 'IPs'
+'ÌP' + 'f' > 'IPf'
+'ỈP' + 'r' > 'IPr'
+'ĨP' + 'x' > 'IPx'
+'ỊP' + 'j' > 'IPj'
+'ÍT' + 's' > 'ITs'
+'ÌT' + 'f' > 'ITf'
+'ỈT' + 'r' > 'ITr'
+'ĨT' + 'x' > 'ITx'
+'ỊT' + 'j' > 'ITj'
+'ÍK' + 's' > 'IKs'
+'ÌK' + 'f' > 'IKf'
+'ỈK' + 'r' > 'IKr'
+'ĨK' + 'x' > 'IKx'
+'ỊK' + 'j' > 'IKj'
+
+'ÚM' + 's' > 'UMs'
+'ÙM' + 'f' > 'UMf'
+'ỦM' + 'r' > 'UMr'
+'ŨM' + 'x' > 'UMx'
+'ỤM' + 'j' > 'UMj'
+'ÚN' + 's' > 'UNs'
+'ÙN' + 'f' > 'UNf'
+'ỦN' + 'r' > 'UNr'
+'ŨN' + 'x' > 'UNx'
+'ỤN' + 'j' > 'UNj'
+'ÚNG' + 's' > 'UNGs'
+'ÙNG' + 'f' > 'UNGf'
+'ỦNG' + 'r' > 'UNGr'
+'ŨNG' + 'x' > 'UNGx'
+'ỤNG' + 'j' > 'UNGj'
+'ÚP' + 's' > 'UPs'
+'ÙP' + 'f' > 'UPf'
+'ỦP' + 'r' > 'UPr'
+'ŨP' + 'x' > 'UPx'
+'ỤP' + 'j' > 'UPj'
+'ÚT' + 's' > 'UTs'
+'ÙT' + 'f' > 'UTf'
+'ỦT' + 'r' > 'UTr'
+'ŨT' + 'x' > 'UTx'
+'ỤT' + 'j' > 'UTj'
+'ÚK' + 's' > 'UKs'
+'ÙK' + 'f' > 'UKf'
+'ỦK' + 'r' > 'UKr'
+'ŨK' + 'x' > 'UKx'
+'ỤK' + 'j' > 'UKj'
+
+'ÉU' + 's' > 'EUs'
+'ÈU' + 'f' > 'EUf'
+'ẺU' + 'r' > 'EUr'
+'ẼU' + 'x' > 'EUx'
+'ẸU' + 'j' > 'EUj'
+
+'ÉM' + 's' > 'EMs'
+'ÈM' + 'f' > 'EMf'
+'ẺM' + 'r' > 'EMr'
+'ẼM' + 'x' > 'EMx'
+'ẸM' + 'j' > 'EMj'
+'ÉN' + 's' > 'ENs'
+'ÈN' + 'f' > 'ENf'
+'ẺN' + 'r' > 'ENr'
+'ẼN' + 'x' > 'ENx'
+'ẸN' + 'j' > 'ENj'
+'ÉNG' + 's' > 'ENGs'
+'ÈNG' + 'f' > 'ENGf'
+'ẺNG' + 'r' > 'ENGr'
+'ẼNG' + 'x' > 'ENGx'
+'ẸNG' + 'j' > 'ENGj'
+'ÉP' + 's' > 'EPs'
+'ÈP' + 'f' > 'EPf'
+'ẺP' + 'r' > 'EPr'
+'ẼP' + 'x' > 'EPx'
+'ẸP' + 'j' > 'EPj'
+'ÉT' + 's' > 'ETs'
+'ÈT' + 'f' > 'ETf'
+'ẺT' + 'r' > 'ETr'
+'ẼT' + 'x' > 'ETx'
+'ẸT' + 'j' > 'ETj'
+'ÉK' + 's' > 'EKs'
+'ÈK' + 'f' > 'EKf'
+'ẺK' + 'r' > 'EKr'
+'ẼK' + 'x' > 'EKx'
+'ẸK' + 'j' > 'EKj'
+'ÉOM' + 's' > 'EOMs'
+'ÈOM' + 'f' > 'EOMf'
+'ẺOM' + 'r' > 'EOMr'
+'ẼOM' + 'x' > 'EOMx'
+'ẸOM' + 'j' > 'EOMj'
+'ÉON' + 's' > 'EONs'
+'ÈON' + 'f' > 'EONf'
+'ẺON' + 'r' > 'EONr'
+'ẼON' + 'x' > 'EONx'
+'ẸON' + 'j' > 'EONj'
+'ÉONG' + 's' > 'EONGs'
+'ÈONG' + 'f' > 'EONGf'
+'ẺONG' + 'r' > 'EONGr'
+'ẼONG' + 'x' > 'EONGx'
+'ẸONG' + 'j' > 'EONGj'
+'ÉOP' + 's' > 'EOPs'
+'ÈOP' + 'f' > 'EOPf'
+'ẺOP' + 'r' > 'EOPr'
+'ẼOP' + 'x' > 'EOPx'
+'ẸOP' + 'j' > 'EOPj'
+'ÉOT' + 's' > 'EOTs'
+'ÈOT' + 'f' > 'EOTf'
+'ẺOT' + 'r' > 'EOTr'
+'ẼOT' + 'x' > 'EOTx'
+'ẼOT' + 'j' > 'EOTj'
+'ÉOK' + 's' > 'EOKs'
+'ÈOK' + 'f' > 'EOKf'
+'ẺOK' + 'r' > 'EOKr'
+'ẼOK' + 'x' > 'EOKx'
+'ẸOK' + 'j' > 'EOKj'
+
+'ÓM' + 's' > 'OMs'
+'ÒM' + 'f' > 'OMf'
+'ỎM' + 'r' > 'OMr'
+'ÕM' + 'x' > 'OMx'
+'ỌM' + 'j' > 'OMj'
+'ÓN' + 's' > 'ONs'
+'ÒN' + 'f' > 'ONf'
+'ỎN' + 'r' > 'ONr'
+'ÕN' + 'x' > 'ONx'
+'ỌN' + 'j' > 'ONj'
+'ÓNG' + 's' > 'ONGs'
+'ÒNG' + 'f' > 'ONGf'
+'ỎNG' + 'r' > 'ONGr'
+'ÕNG' + 'x' > 'ONGx'
+'ỌNG' + 'j' > 'ONGj'
+'ÓP' + 's' > 'OPs'
+'ÒP' + 'f' > 'OPf'
+'ỎP' + 'r' > 'OPr'
+'ÕP' + 'x' > 'OPx'
+'ỌP' + 'j' > 'OPj'
+'ÓT' + 's' > 'OTs'
+'ÒT' + 'f' > 'OTf'
+'ỎT' + 'r' > 'OTr'
+'ÕT' + 'x' > 'OTx'
+'ỌT' + 'j' > 'OTj'
+'ÓK' + 's' > 'OKs'
+'ÒK' + 'f' > 'OKf'
+'ỎK' + 'r' > 'OKr'
+'ÕK' + 'x' > 'OKx'
+'ỌK' + 'j' > 'OKj'
+
+'ÝM' + 's' > 'YMs'
+'ỲM' + 'f' > 'YMf'
+'ỶM' + 'r' > 'YMr'
+'ỸM' + 'x' > 'YMx'
+'ỴM' + 'j' > 'YMj'
+'ÝN' + 's' > 'YNs'
+'ỲN' + 'f' > 'YNf'
+'ỶN' + 'r' > 'YNr'
+'ỸN' + 'x' > 'YNx'
+'ỴN' + 'j' > 'YNj'
+'ÝP' + 's' > 'YPs'
+'ỲP' + 'f' > 'YPf'
+'ỶP' + 'r' > 'YPr'
+'ỸP' + 'x' > 'YPx'
+'ỴP' + 'j' > 'YPj'
+'ÝT' + 's' > 'YTs'
+'ỲT' + 'f' > 'YTf'
+'ỶT' + 'r' > 'YTr'
+'ỸT' + 'x' > 'YTx'
+'ỴT' + 'j' > 'YTj'
+'ÝK' + 's' > 'YKs'
+'ỲK' + 'f' > 'YKf'
+'ỶK' + 'r' > 'YKr'
+'ỸK' + 'x' > 'YKx'
+'ỴK' + 'j' > 'YKj'
+
+'ÁI' + 's' > 'AIs'
+'ÀI' + 'f' > 'AIf'
+'ẢI' + 'r' > 'AIr'
+'ÃI' + 'x' > 'AIx'
+'ẠI' + 'j' > 'AIj'
+'ÚI' + 's' > 'UIs'
+'ÙI' + 'f' > 'UIf'
+'ỦI' + 'r' > 'UIr'
+'ŨI' + 'x' > 'UIx'
+'ỤI' + 'j' > 'UIj'
+'ÚÂ' + 's' > 'UAs'
+'ÙÂ' + 'f' > 'UAf'
+'ỦÂ' + 'r' > 'UAr'
+'ŨÂ' + 'x' > 'UAx'
+'ỤÂ' + 'j' > 'UAj'
+'ÚA' + 's' > 'UAs'
+'ÙA' + 'f' > 'UAf'
+'ỦA' + 'r' > 'UAr'
+'ŨA' + 'x' > 'UAx'
+'ỤA' + 'j' > 'UAj'
+'ÉI' + 's' > 'EIs'
+'ÈI' + 'f' > 'EIf'
+'ẺI' + 'r' > 'EIr'
+'ẼI' + 'x' > 'EIx'
+'ẸI' + 'j' > 'EIj'
+'ÉOI' + 's' > 'EOIs'
+'ÈOI' + 'f' > 'EOIf'
+'ẺOI' + 'r' > 'EOIr'
+'ẼOI' + 'x' > 'EOIx'
+'ẸOI' + 'j' > 'EOIj'
+'ÓI' + 's' > 'OIs'
+'ÒI' + 'f' > 'OIf'
+'ỎI' + 'r' > 'OIr'
+'ÕI' + 'x' > 'OIx'
+'ỌI' + 'j' > 'OIj'
+'ÓA' + 's' > 'OAs'
+'ÒA' + 'f' > 'OAf'
+'ỎA' + 'r' > 'OAr'
+'ÕA' + 'x' > 'OAx'
+'ỌA' + 'j' > 'OAj'
+'ÓE' + 's' > 'OEs'
+'ÒE' + 'f' > 'OEf'
+'ỎE' + 'r' > 'OEr'
+'ÕE' + 'x' > 'OEx'
+'ỌE' + 'j' > 'OEj'
+'ÁU' + 's' > 'AUs'
+'ÀU' + 'f' > 'AUf'
+'ẢU' + 'r' > 'AUr'
+'ÃU' + 'x' > 'AUx'
+'ẠU' + 'j' > 'AUj'
+'ÍU' + 's' > 'IUs'
+'ÌU' + 'f' > 'IUf'
+'ỈU' + 'r' > 'IUr'
+'ĨU' + 'x' > 'IUx'
+'ỊU' + 'j' > 'IUj'
+'ÝU' + 's' > 'YUs'
+'ỲU' + 'f' > 'YUf'
+'ỶU' + 'r' > 'YUr'
+'ỸU' + 'x' > 'YUx'
+'ỴU' + 'j' > 'YUj'
+    'Âm' + 's' > 'Ấm'
+    'Âm' + 'f' > 'Ầm'
+    'Âm' + 'r' > 'Ẩm'
+    'Âm' + 'x' > 'Ẫm'
+    'Âm' + 'j' > 'Ậm'
+    'Ân' + 's' > 'Ấn'
+    'Ân' + 'f' > 'Ần'
+    'Ân' + 'r' > 'Ẩn'
+    'Ân' + 'x' > 'Ẫn'
+    'Ân' + 'j' > 'Ận'
+    'Âng' + 's' > 'Ấng'
+    'Âng' + 'f' > 'Ầng'
+    'Âng' + 'r' > 'Ẩng'
+    'Âng' + 'x' > 'Ẫng'
+    'Âng' + 'j' > 'Ậng'
+    'Âp' + 's' > 'Ấp'
+    'Âp' + 'f' > 'Ầp'
+    'Âp' + 'r' > 'Ẩp'
+    'Âp' + 'x' > 'Ẫp'
+    'Âp' + 'j' > 'Ập'
+    'Ât' + 's' > 'Ất'
+    'Ât' + 'f' > 'Ầt'
+    'Ât' + 'r' > 'Ẩt'
+    'Ât' + 'x' > 'Ẫt'
+    'Ât' + 'j' > 'Ật'
+    'Âk' + 's' > 'Ấk'
+    'Âk' + 'f' > 'Ầk'
+    'Âk' + 'r' > 'Ẩk'
+    'Âk' + 'x' > 'Ẫk'
+    'Âk' + 'j' > 'Ậk'  
+    'Âi' + 's' > 'Ấi'
+    'Âi' + 'f' > 'Ầi'
+    'Âi' + 'r' > 'Ẩi'
+    'Âi' + 'x' > 'Ẫi'
+    'Âi' + 'j' > 'Ậi'  
+    'Am' + 's' > 'Ám'
+    'Am' + 'f' > 'Àm'
+    'Am' + 'r' > 'Ảm'
+    'Am' + 'x' > 'Ãm'
+    'Am' + 'j' > 'Ạm'
+    'An' + 's' > 'Án'
+    'An' + 'f' > 'Àn'
+    'An' + 'r' > 'Ản'
+    'An' + 'x' > 'Ãn'
+    'An' + 'j' > 'Ạn'
+    'Ang' + 's' > 'Áng'
+    'Ang' + 'f' > 'Àng'
+    'Ang' + 'r' > 'Ảng'
+    'Ang' + 'x' > 'Ãng'
+    'Ang' + 'j' > 'Ạng'
+    'Ap' + 's' > 'Áp'
+    'Ap' + 'f' > 'Àp'
+    'Ap' + 'r' > 'Ảp'
+    'Ap' + 'x' > 'Ãp'
+    'Ap' + 'j' > 'Ạp'
+    'At' + 's' > 'Át'
+    'At' + 'f' > 'Àt'
+    'At' + 'r' > 'Ảt'
+    'At' + 'x' > 'Ãt'
+    'At' + 'j' > 'Ạt'
+    'Ak' + 's' > 'Ák'
+    'Ak' + 'f' > 'Àk'
+    'Ak' + 'r' > 'Ảk'
+    'Ak' + 'x' > 'Ãk'
+    'Ak' + 'j' > 'Ạk'
+    'Im' + 's' > 'Ím'
+    'Im' + 'f' > 'Ìm'
+    'Im' + 'r' > 'Ỉm'
+    'Im' + 'x' > 'Ĩm'
+    'Im' + 'j' > 'Ịm'
+    'In' + 's' > 'Ín'
+    'In' + 'f' > 'Ìn'
+    'In' + 'r' > 'Ỉn'
+    'In' + 'x' > 'Ĩn'
+    'In' + 'j' > 'Ịn'
+    'Ing' + 's' > 'Íng'
+    'Ing' + 'f' > 'Ìng'
+    'Ing' + 'r' > 'Ỉng'
+    'Ing' + 'x' > 'Ĩng'
+    'Ing' + 'j' > 'Ịng'
+    'Ip' + 's' > 'Íp'
+    'Ip' + 'f' > 'Ìp'
+    'Ip' + 'r' > 'Ỉp'
+    'Ip' + 'x' > 'Ĩp'
+    'Ip' + 'j' > 'Ịp'
+    'It' + 's' > 'Ít'
+    'It' + 'f' > 'Ìt'
+    'It' + 'r' > 'Ỉt'
+    'It' + 'x' > 'Ĩt'
+    'It' + 'j' > 'Ịt'
+    'Ik' + 's' > 'Ík'
+    'Ik' + 'f' > 'Ìk'
+    'Ik' + 'r' > 'Ỉk'
+    'Ik' + 'x' > 'Ĩk'
+    'Ik' + 'j' > 'Ịk'  
+    'Um' + 's' > 'Úm'
+    'Um' + 'f' > 'Ùm'
+    'Um' + 'r' > 'Ủm'
+    'Um' + 'x' > 'Ũm'
+    'Um' + 'j' > 'Ụm'
+    'Un' + 's' > 'Ún'
+    'Un' + 'f' > 'Ùn'
+    'Un' + 'r' > 'Ủn'
+    'Un' + 'x' > 'Ũn'
+    'Un' + 'j' > 'Ụn'
+    'Ung' + 's' > 'Úng'
+    'Ung' + 'f' > 'Ùng'
+    'Ung' + 'r' > 'Ủng'
+    'Ung' + 'x' > 'Ũng'
+    'Ung' + 'j' > 'Ụng'
+    'Up' + 's' > 'Úp'
+    'Up' + 'f' > 'Ùp'
+    'Up' + 'r' > 'Ủp'
+    'Up' + 'x' > 'Ũp'
+    'Up' + 'j' > 'Ụp'
+    'Ut' + 's' > 'Út'
+    'Ut' + 'f' > 'Ùt'
+    'Ut' + 'r' > 'Ủt'
+    'Ut' + 'x' > 'Ũt'
+    'Ut' + 'j' > 'Ụt'
+    'Uk' + 's' > 'Úk'
+    'Uk' + 'f' > 'Ùk'
+    'Uk' + 'r' > 'Ủk'
+    'Uk' + 'x' > 'Ũk'
+    'Uk' + 'j' > 'Ụk'
+
+    'Em' + 's' > 'Ém'
+    'Em' + 'f' > 'Èm'
+    'Em' + 'r' > 'Ẻm'
+    'Em' + 'x' > 'Ẽm'
+    'Em' + 'j' > 'Ẹm'
+    'En' + 's' > 'Én'
+    'En' + 'f' > 'Èn'
+    'En' + 'r' > 'Ẻn'
+    'En' + 'x' > 'Ẽn'
+    'En' + 'j' > 'Ẹn'
+    'Eng' + 's' > 'Éng'
+    'Eng' + 'f' > 'Èng'
+    'Eng' + 'r' > 'Ẻng'
+    'Eng' + 'x' > 'Ẽng'
+    'Eng' + 'j' > 'Ẹng'
+    'Ep' + 's' > 'Ép'
+    'Ep' + 'f' > 'Èp'
+    'Ep' + 'r' > 'Ẻp'
+    'Ep' + 'x' > 'Ẽp'
+    'Ep' + 'j' > 'Ẹp'
+    'Et' + 's' > 'Ét'
+    'Et' + 'f' > 'Èt'
+    'Et' + 'r' > 'Ẻt'
+    'Et' + 'x' > 'Ẽt'
+    'Et' + 'j' > 'Ẹt'
+    'Ek' + 's' > 'Ék'
+    'Ek' + 'f' > 'Èk'
+    'Ek' + 'r' > 'Ẻk'
+    'Ek' + 'x' > 'Ẽk'
+    'Ek' + 'j' > 'Ẹk'
+'Om' + 's' > 'Óm'
+'Om' + 'f' > 'Òm'
+'Om' + 'r' > 'Ỏm'
+'Om' + 'x' > 'Õm'
+'Om' + 'j' > 'Ọm'
+'On' + 's' > 'Ón'
+'On' + 'f' > 'Òn'
+'On' + 'r' > 'Ỏn'
+'On' + 'x' > 'Õn'
+'On' + 'j' > 'Ọn'
+'Ong' + 's' > 'Óng'
+'Ong' + 'f' > 'Òng'
+'Ong' + 'r' > 'Ỏng'
+'Ong' + 'x' > 'Õng'
+'Ong' + 'j' > 'Ọng'
+'Op' + 's' > 'Óp'
+'Op' + 'f' > 'Òp'
+'Op' + 'r' > 'Ỏp'
+'Op' + 'x' > 'Õp'
+'Op' + 'j' > 'Ọp'
+'Ot' + 's' > 'Ót'
+'Ot' + 'f' > 'Òt'
+'Ot' + 'r' > 'Ỏt'
+'Ot' + 'x' > 'Õt'
+'Ot' + 'j' > 'Ọt'
+'Ok' + 's' > 'Ók'
+'Ok' + 'f' > 'Òk'
+'Ok' + 'r' > 'Ỏk'
+'Ok' + 'x' > 'Õk'
+'Ok' + 'j' > 'Ọk'
+
+'Ym' + 's' > 'Ým'
+'Ym' + 'f' > 'Ỳm'
+'Ym' + 'r' > 'Ỷm'
+'Ym' + 'x' > 'Ỹm'
+'Ym' + 'j' > 'Ỵm'
+'Yn' + 's' > 'Ýn'
+'Yn' + 'f' > 'Ỳn'
+'Yn' + 'r' > 'Ỷn'
+'Yn' + 'x' > 'Ỹn'
+'Yn' + 'j' > 'Ỵn'
+'Yp' + 's' > 'Ýp'
+'Yp' + 'f' > 'Ỳp'
+'Yp' + 'r' > 'Ỷp'
+'Yp' + 'x' > 'Ỹp'
+'Yp' + 'j' > 'Ỵp'
+'Yt' + 's' > 'Ýt'
+'Yt' + 'f' > 'Ỳt'
+'Yt' + 'r' > 'Ỷt'
+'Yt' + 'x' > 'Ỹt'
+'Yt' + 'j' > 'Ỵt'
+'Yk' + 's' > 'Ýk'
+'Yk' + 'f' > 'Ỳk'
+'Yk' + 'r' > 'Ỷk'
+'Yk' + 'x' > 'Ỹk'
+'Yk' + 'j' > 'Ỵk'
+    'Eu' + 's' > 'Éu'
+    'Eu' + 'f' > 'Èu'
+    'Eu' + 'r' > 'Ẻu'
+    'Eu' + 'x' > 'Ẽu'
+    'Eu' + 'j' > 'Ẹu'
+'Eom' + 's' > 'Éom'
+'Eom' + 'f' > 'Èom'
+'Eom' + 'r' > 'Ẻom'
+'Eom' + 'x' > 'Ẽom'
+'Eom' + 'j' > 'Ẹom'
+'Eon' + 's' > 'Éon'
+'Eon' + 'f' > 'Èon'
+'Eon' + 'r' > 'Ẻon'
+'Eon' + 'x' > 'Ẽon'
+'Eon' + 'j' > 'Ẹon'
+'Eong' + 's' > 'Éong'
+'Eong' + 'f' > 'Èong'
+'Eong' + 'r' > 'Ẻong'
+'Eong' + 'x' > 'Ẽong'
+'Eong' + 'j' > 'Ẹong'
+'Eop' + 's' > 'Éop'
+'Eop' + 'f' > 'Èop'
+'Eop' + 'r' > 'Ẻop'
+'Eop' + 'x' > 'Ẽop'
+'Eop' + 'j' > 'Ẹop'
+'Eot' + 's' > 'Éot'
+'Eot' + 'f' > 'Èot'
+'Eot' + 'r' > 'Ẻot'
+'Eot' + 'x' > 'Ẽot'
+'Eot' + 'j' > 'Ẹot'
+'Eok' + 's' > 'Éok'
+'Eok' + 'f' > 'Èok'
+'Eok' + 'r' > 'Ẻok'
+'Eok' + 'x' > 'Ẽok'
+'Eok' + 'j' > 'Ẹok'
+
+'Ai' + 's' > 'Ái'
+'Ai' + 'f' > 'Ài'
+'Ai' + 'r' > 'Ải'
+'Ai' + 'x' > 'Ãi'
+'Ai' + 'j' > 'Ại'
+'Ui' + 's' > 'Úi'
+'Ui' + 'f' > 'Ùi'
+'Ui' + 'r' > 'Ủi'
+'Ui' + 'x' > 'Ũi'
+'Ui' + 'j' > 'Ụi'
+'Uâ' + 's' > 'Úâ'
+'Uâ' + 'f' > 'Ùâ'
+'Uâ' + 'r' > 'Ủâ'
+'Uâ' + 'x' > 'Ũâ'
+'Uâ' + 'j' > 'Ụâ'
+'Ei' + 's' > 'Éi'
+'Ei' + 'f' > 'Èi'
+'Ei' + 'r' > 'Ẻi'
+'Ei' + 'x' > 'Ẽi'
+'Ei' + 'j' > 'Ẹi'
+'Eoi' + 's' > 'Éoi'
+'Eoi' + 'f' > 'Èoi'
+'Eoi' + 'r' > 'Ẻoi'
+'Eoi' + 'x' > 'Ẽoi'
+'Eoi' + 'j' > 'Ẹoi'
+'Oi' + 's' > 'Ói'
+'Oi' + 'f' > 'Òi'
+'Oi' + 'r' > 'Ỏi'
+'Oi' + 'x' > 'Õi'
+'Oi' + 'j' > 'Ọi'
+'Oa' + 's' > 'Óa'
+'Oa' + 'f' > 'Òa'
+'Oa' + 'r' > 'Ỏa'
+'Oa' + 'x' > 'Õa'
+'Oa' + 'j' > 'Ọa'
+'Oe' + 's' > 'Óe'
+'Oe' + 'f' > 'Òe'
+'Oe' + 'r' > 'Ỏe'
+'Oe' + 'x' > 'Õe'
+'Oe' + 'j' > 'Ọe'
+    'Âu' + 's' > 'Ấu'
+    'Âu' + 'f' > 'Ầu'
+    'Âu' + 'r' > 'Ẩu'
+    'Âu' + 'x' > 'Ẫu'
+    'Âu' + 'j' > 'Ậu'
+    'Au' + 's' > 'Áu'
+    'Au' + 'f' > 'Àu'
+    'Au' + 'r' > 'Ảu'
+    'Au' + 'x' > 'Ãu'
+    'Au' + 'j' > 'Ạu'
+    'Iu' + 's' > 'Íu'
+    'Iu' + 'f' > 'Ìu'
+    'Iu' + 'r' > 'Ỉu'
+    'Iu' + 'x' > 'Ĩu'
+    'Iu' + 'j' > 'Ịu'
+'Ám' + 's' > 'Ams'
+'Àm' + 'f' > 'Amf'
+'Ảm' + 'r' > 'Amr'
+'Ãm' + 'x' > 'Amx'
+'Ạm' + 'j' > 'Amj'
+'Án' + 's' > 'Ans'
+'Àn' + 'f' > 'Anf'
+'Ản' + 'r' > 'Anr'
+'Ãn' + 'x' > 'Anx'
+'Ạn' + 'j' > 'Anj'
+'Áng' + 's' > 'Angs'
+'Àng' + 'f' > 'Angf'
+'Ảng' + 'r' > 'Angr'
+'Ãng' + 'x' > 'Angx'
+'Ạng' + 'j' > 'Angj'
+'Áp' + 's' > 'Aps'
+'Àp' + 'f' > 'Apf'
+'Ảp' + 'r' > 'Apr'
+'Ãp' + 'x' > 'Apx'
+'Ạp' + 'j' > 'Apj'
+'Át' + 's' > 'Ats'
+'Àt' + 'f' > 'Atf'
+'Ảt' + 'r' > 'Atr'
+'Ãt' + 'x' > 'Atx'
+'Ạt' + 'j' > 'Atj'
+'Ák' + 's' > 'Aks'
+'Àk' + 'f' > 'Akf'
+'Ảk' + 'r' > 'Akr'
+'Ãk' + 'x' > 'Akx'
+'Ạk' + 'j' > 'Akj'
+'Áy' + 's' > 'Ays'
+'Ày' + 'f' > 'Ayf'
+'Ảy' + 'r' > 'Ayr'
+'Ãy' + 'x' > 'Ayx'
+'Ạy' + 'j' > 'Ayj'
+
+'Ím' + 's' > 'Ims'
+'Ìm' + 'f' > 'Imf'
+'Ỉm' + 'r' > 'Imr'
+'Ĩm' + 'x' > 'Imx'
+'Ịm' + 'j' > 'Imj'
+'Ín' + 's' > 'Ins'
+'Ìn' + 'f' > 'Inf'
+'Ỉn' + 'r' > 'Inr'
+'Ĩn' + 'x' > 'Inx'
+'Ịn' + 'j' > 'Inj'
+'Íng' + 's' > 'Ings'
+'Ìng' + 'f' > 'Ingf'
+'Ỉng' + 'r' > 'Ingr'
+'Ĩng' + 'x' > 'Ingx'
+'Ĩng' + 'j' > 'Ingj'
+'Íp' + 's' > 'Ips'
+'Ìp' + 'f' > 'Ipf'
+'Ỉp' + 'r' > 'Ipr'
+'Ĩp' + 'x' > 'Ipx'
+'Ịp' + 'j' > 'Ipj'
+'Ít' + 's' > 'Its'
+'Ìt' + 'f' > 'Itf'
+'Ỉt' + 'r' > 'Itr'
+'Ĩt' + 'x' > 'Itx'
+'Ịt' + 'j' > 'Itj'
+'Ík' + 's' > 'Iks'
+'Ìk' + 'f' > 'Ikf'
+'Ỉk' + 'r' > 'Ikr'
+'Ĩk' + 'x' > 'Ikx'
+'Ịk' + 'j' > 'Ikj'
+
+'Úm' + 's' > 'Ums'
+'Ùm' + 'f' > 'Umf'
+'Ủm' + 'r' > 'Umr'
+'Ũm' + 'x' > 'Umx'
+'Ụm' + 'j' > 'Umj'
+'Ún' + 's' > 'Uns'
+'Ùn' + 'f' > 'Unf'
+'Ủn' + 'r' > 'Unr'
+'Ũn' + 'x' > 'Unx'
+'Ụn' + 'j' > 'Unj'
+'Úng' + 's' > 'Ungs'
+'Ùng' + 'f' > 'Ungf'
+'Ủng' + 'r' > 'Ungr'
+'Ũng' + 'x' > 'Ungx'
+'Ụng' + 'j' > 'Ungj'
+'Úp' + 's' > 'Ups'
+'Ùp' + 'f' > 'Upf'
+'Ủp' + 'r' > 'Upr'
+'Ũp' + 'x' > 'Upx'
+'Ụp' + 'j' > 'Upj'
+'Út' + 's' > 'Uts'
+'Ùt' + 'f' > 'Utf'
+'Ủt' + 'r' > 'Utr'
+'Ũt' + 'x' > 'Utx'
+'Ụt' + 'j' > 'Utj'
+'Úk' + 's' > 'Uks'
+'Ùk' + 'f' > 'Ukf'
+'Ủk' + 'r' > 'Ukr'
+'Ũk' + 'x' > 'Ukx'
+'Ụk' + 'j' > 'Ukj'
+
+'Éu' + 's' > 'Eus'
+'Èu' + 'f' > 'Euf'
+'Ẻu' + 'r' > 'Eur'
+'Ẽu' + 'x' > 'Eux'
+'Ẹu' + 'j' > 'Euj'
+
+'Ém' + 's' > 'Ems'
+'Èm' + 'f' > 'Emf'
+'Ẻm' + 'r' > 'Emr'
+'Ẽm' + 'x' > 'Emx'
+'Ẹm' + 'j' > 'Emj'
+'Én' + 's' > 'Ens'
+'Èn' + 'f' > 'Enf'
+'Ẻn' + 'r' > 'Enr'
+'Ẽn' + 'x' > 'Enx'
+'Ẹn' + 'j' > 'Enj'
+'Éng' + 's' > 'Engs'
+'Èng' + 'f' > 'Engf'
+'Ẻng' + 'r' > 'Engr'
+'Ẽng' + 'x' > 'Engx'
+'Ẹng' + 'j' > 'Engj'
+'Ép' + 's' > 'Eps'
+'Èp' + 'f' > 'Epf'
+'Ẻp' + 'r' > 'Epr'
+'Ẽp' + 'x' > 'Epx'
+'Ẹp' + 'j' > 'Epj'
+'Ét' + 's' > 'Ets'
+'Èt' + 'f' > 'Etf'
+'Ẻt' + 'r' > 'Etr'
+'Ẽt' + 'x' > 'Etx'
+'Ẹt' + 'j' > 'Etj'
+'Ék' + 's' > 'Eks'
+'Èk' + 'f' > 'Ekf'
+'Ẻk' + 'r' > 'Ekr'
+'Ẽk' + 'x' > 'Ekx'
+'Ẹk' + 'j' > 'Ekj'
+
+'Éom' + 's' > 'Eoms'
+'Èom' + 'f' > 'Eomf'
+'Ẻom' + 'r' > 'Eomr'
+'Ẽom' + 'x' > 'Eomx'
+'Ẹom' + 'j' > 'Eomj'
+'Éon' + 's' > 'Eons'
+'Èon' + 'f' > 'Eonf'
+'Ẻon' + 'r' > 'Eonr'
+'Ẽon' + 'x' > 'Eonx'
+'Ẹon' + 'j' > 'Eonj'
+'Éong' + 's' > 'Eongs'
+'Èong' + 'f' > 'Eongf'
+'Ẻong' + 'r' > 'Eongr'
+'Ẽong' + 'x' > 'Eongx'
+'Ẹong' + 'j' > 'Eongj'
+'Éop' + 's' > 'Eops'
+'Èop' + 'f' > 'Eopf'
+'Ẻop' + 'r' > 'Eopr'
+'Ẽop' + 'x' > 'Eopx'
+'Ẹop' + 'j' > 'Eopj'
+'Éot' + 's' > 'Eots'
+'Èot' + 'f' > 'Eotf'
+'Ẻot' + 'r' > 'Eotr'
+'Ẽot' + 'x' > 'Eotx'
+'Ẽot' + 'j' > 'Eotj'
+'Éok' + 's' > 'Eoks'
+'Èok' + 'f' > 'Eokf'
+'Ẻok' + 'r' > 'Eokr'
+'Ẽok' + 'x' > 'Eokx'
+'Ẹok' + 'j' > 'Eokj'
+
+"âm" + "a" > "am"
+"ân" + "a" > "an"
+"âng" + "a" > "ang"
+"âp" + "a" > "ap"
+"ât" + "a" > "at"
+"âk" + "a" > "ak"
+"âu" + "a" > "au"
+"âi" + "a" > "ai"
+"ÂM" + "A" > "AM"
+"ÂN" + "A" > "AN"
+"ÂNG" + "A" > "ANG"
+"ÂP" + "A" > "AP"
+"ÂT" + "A" > "AT"
+"ÂK" + "A" > "AK"
+"ÂU" + "A" > "AU"
+"ÂI" + "A" > "AI"
+"Âm" + "a" > "Am"
+"Ân" + "a" > "An"
+"Âng" + "a" > "Ang"
+"Âp" + "a" > "Ap"
+"Ât" + "a" > "At"
+"Âk" + "a" > "Ak"
+"Âu" + "a" > "Au"
+"Âi" + "a" > "Ai"
+"ẩm" + "a" > "ảm"
+"ẩn" + "a" > "ản"
+"ẩng" + "a" > "ảng"
+"ẩp" + "a" > "ảp"
+"ẩt" + "a" > "ảt"
+"ẩk" + "a" > "ảk"
+"ẩu" + "a" > "ảu"
+"ẩi" + "a" > "ải"
+"ẨM" + "A" > "ẢM"
+"ẨN" + "A" > "ẢN"
+"ẨNG" + "A" > "ẢNG"
+"ẨP" + "A" > "ẢP"
+"ẨT" + "A" > "ẢT"
+"ẨK" + "A" > "ẢK"
+"ẨU" + "A" > "ẢU"
+"ẨI" + "A" > "ẢI"
+"Ẩm" + "a" > "Ảm"
+"Ẩn" + "a" > "Ản"
+"Ẩng" + "a" > "Ảng"
+"Ẩp" + "a" > "Ảp"
+"Ẩt" + "a" > "Ảt"
+"Ẩk" + "a" > "Ảk"
+"Ẩu" + "a" > "Ảu"
+"Ẩi" + "a" > "Ải"
+"ấm" + "a" > "ám"
+"ấn" + "a" > "án"
+"ấng" + "a" > "áng"
+"ấp" + "a" > "áp"
+"ất" + "a" > "át"
+"ấk" + "a" > "ák"
+"ấu" + "a" > "áu"
+"ấi" + "a" > "ái"
+"ẤM" + "A" > "ÁM"
+"ẤN" + "A" > "ÁN"
+"ẤNG" + "A" > "ÁNG"
+"ẤP" + "A" > "ÁP"
+"ẤT" + "A" > "ÁT"
+"ẤK" + "A" > "ÁK"
+"ẤU" + "A" > "ÁU"
+"ẤI" + "A" > "ÁI"
+"Ấm" + "a" > "Ám"
+"Ấn" + "a" > "Án"
+"Ấng" + "a" > "Áng"
+"Ấp" + "a" > "Áp"
+"Ất" + "a" > "Át"
+"Ấk" + "a" > "Ák"
+"Ấu" + "a" > "Áu"
+"Ấi" + "a" > "Ái"
+"ầm" + "a" > "àm"
+"ần" + "a" > "àn"
+"ầng" + "a" > "àng"
+"ầp" + "a" > "àp"
+"ầt" + "a" > "àt"
+"ầk" + "a" > "àk"
+"ầu" + "a" > "àu"
+"ầi" + "a" > "ài"
+"ẦM" + "A" > "ÀM"
+"ẦN" + "A" > "ÀN"
+"ẦNG" + "A" > "ÀNG"
+"ẦP" + "A" > "ÀP"
+"ẦT" + "A" > "ÀT"
+"ẦK" + "A" > "ÀK"
+"ẦU" + "A" > "ÀU"
+"ẦI" + "A" > "ÀI"
+"Ầm" + "a" > "Àm"
+"Ần" + "a" > "Àn"
+"Ầng" + "a" > "Àng"
+"Ầp" + "a" > "Àp"
+"Ầt" + "a" > "Àt"
+"Ầk" + "a" > "Àk"
+"Ầu" + "a" > "Àu"
+"Ầi" + "a" > "Ài"
+"ẫm" + "a" > "ãm"
+"ẫn" + "a" > "ãn"
+"ẫng" + "a" > "ãng"
+"ẫp" + "a" > "ãp"
+"ẫt" + "a" > "ãt"
+"ẫk" + "a" > "ãk"
+"ẫu" + "a" > "ãu"
+"ẫi" + "a" > "ãi"
+"ẪM" + "A" > "ÃM"
+"ẪN" + "A" > "ÃN"
+"ẪNG" + "A" > "ÃNG"
+"ẪP" + "A" > "ÃP"
+"ẪT" + "A" > "ÃT"
+"ẪK" + "A" > "ÃK"
+"ẪU" + "A" > "ÃU"
+"ẪI" + "A" > "ÃI"
+"Ẫm" + "a" > "Ãm"
+"Ẫn" + "a" > "Ãn"
+"Ẫng" + "a" > "Ãng"
+"Ẫp" + "a" > "Ãp"
+"Ẫt" + "a" > "Ãt"
+"Ẫk" + "a" > "Ãk"
+"Ẫu" + "a" > "Ãu"
+"Ẫi" + "a" > "Ãi"
+"ậm" + "a" > "ạm"
+"ận" + "a" > "ạn"
+"ậng" + "a" > "ạng"
+"ập" + "a" > "ạp"
+"ật" + "a" > "ạt"
+"ậk" + "a" > "ạk"
+"ậu" + "a" > "ạu"
+"ậi" + "a" > "ại"
+"ẬM" + "A" > "ẠM"
+"ẬN" + "A" > "ẠN"
+"ẬNG" + "A" > "ẠNG"
+"ẬP" + "A" > "ẠP"
+"ẬT" + "A" > "ẠT"
+"ẬK" + "A" > "ẠK"
+"ẬU" + "A" > "ẠU"
+"ẬI" + "A" > "ẠI"
+"Ậm" + "a" > "Ạm"
+"Ận" + "a" > "Ạn"
+"Ậng" + "a" > "Ạng"
+"Ập" + "a" > "Ạp"
+"Ật" + "a" > "Ạt"
+"Ậk" + "a" > "Ạk"
+"Ậu" + "a" > "Ạu"
+"Ậi" + "a" > "Ại"
+
+"â" + any(punctuation) > "a" index(punctuation, 2)
+"ấ" + any(punctuation) > "á" index(punctuation, 2)
+"ầ" + any(punctuation) > "à" index(punctuation, 2)
+"ẩ" + any(punctuation) > "ả" index(punctuation, 2)
+"ẫ" + any(punctuation) > "ã" index(punctuation, 2)
+"ậ" + any(punctuation) > "ạ" index(punctuation, 2)
+"Â" + any(punctuation) > "A" index(punctuation, 2)
+"Ấ" + any(punctuation) > "Á" index(punctuation, 2)
+"Ầ" + any(punctuation) > "À" index(punctuation, 2)
+"Ẩ" + any(punctuation) > "Ả" index(punctuation, 2)
+"Ẫ" + any(punctuation) > "Ã" index(punctuation, 2)
+"Ậ" + any(punctuation) > "Ạ" index(punctuation, 2)
+
+"ấ" + "a" > "á"
+"ầ" + "a" > "à"
+"ẩ" + "a" > "ả"
+"ẫ" + "a" > "ã"
+"ậ" + "a" > "ạ"
+
+"Ấ" + "A" > "Á"
+"Ầ" + "A" > "À"
+"Ẩ" + "A" > "Ả"
+"Ẫ" + "A" > "Ã"
+"Ậ" + "A" > "Ạ"
+
+"Ấ" + "a" > "Á"
+"Ầ" + "a" > "À"
+"Ẩ" + "a" > "Ả"
+"Ẫ" + "a" > "Ã"
+"Ậ" + "a" > "Ạ"
+
+any(vowels_hoi) any(nmui) + "s" > index(vowels_sac, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "s" > index(vowels_sac, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "s" > index(vowels_sac, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "s" > index(vowels_sac, 1) index(nmui, 2) 
+
+any(vowels_hoi) any(nmui) + "f" > index(vowels_huyen, 1) index(nmui, 2) 
+any(vowels_sac) any(nmui) + "f" > index(vowels_huyen, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "f" > index(vowels_huyen, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "f" > index(vowels_huyen, 1) index(nmui, 2) 
+
+any(vowels_hoi) any(nmui) + "x" > index(vowels_nga, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "x" > index(vowels_nga, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "x" > index(vowels_nga, 1) index(nmui, 2) 
+any(vowels_sac) any(nmui) + "x" > index(vowels_nga, 1) index(nmui, 2) 
+
+any(vowels_sac) any(nmui) + "r" > index(vowels_hoi, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "r" > index(vowels_hoi, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "r" > index(vowels_hoi, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "r" > index(vowels_hoi, 1) index(nmui, 2) 
+
+any(vowels_hoi) any(nmui) + "j" > index(vowels_nang, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "j" > index(vowels_nang, 1) index(nmui, 2) 
+any(vowels_sac) any(nmui) + "j" > index(vowels_nang, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "j" > index(vowels_nang, 1) index(nmui, 2) 
+
+any(vowels_hoi) "ng" + "s" > index(vowels_sac, 1) "ng"
+any(vowels_huyen) "ng" + "s" > index(vowels_sac, 1) "ng"
+any(vowels_nang) "ng" + "s" > index(vowels_sac, 1) "ng"
+any(vowels_nga) "ng" + "s" > index(vowels_sac, 1) "ng"
+
+any(vowels_hoi) "ng" + "f" > index(vowels_huyen, 1) "ng"
+any(vowels_sac) "ng" + "f" > index(vowels_huyen, 1) "ng"
+any(vowels_nang) "ng" + "f" > index(vowels_huyen, 1) "ng"
+any(vowels_nga) "ng" + "f" > index(vowels_huyen, 1) "ng"
+
+any(vowels_hoi) "ng" + "x" > index(vowels_nga, 1) "ng"
+any(vowels_huyen) "ng" + "x" > index(vowels_nga, 1) "ng"
+any(vowels_nang) "ng" + "x" > index(vowels_nga, 1) "ng"
+any(vowels_sac) "ng" + "x" > index(vowels_nga, 1) "ng"
+
+any(vowels_sac) "ng" + "r" > index(vowels_hoi, 1) "ng"
+any(vowels_huyen) "ng" + "r" > index(vowels_hoi, 1) "ng"
+any(vowels_nang) "ng" + "r" > index(vowels_hoi, 1) "ng"
+any(vowels_nga) "ng" + "r" > index(vowels_hoi, 1) "ng"
+
+any(vowels_hoi) "ng" + "j" > index(vowels_nang, 1) "ng"
+any(vowels_huyen) "ng" + "j" > index(vowels_nang, 1) "ng"
+any(vowels_sac) "ng" + "j" > index(vowels_nang, 1) "ng"
+any(vowels_nga) "ng" + "j" > index(vowels_nang, 1) "ng"
+
+any(vowels_hoi) "NG" + "s" > index(vowels_sac, 1) "NG"
+any(vowels_huyen) "NG" + "s" > index(vowels_sac, 1) "NG"
+any(vowels_nang) "NG" + "s" > index(vowels_sac, 1) "NG"
+any(vowels_nga) "NG" + "s" > index(vowels_sac, 1) "NG"
+
+any(vowels_hoi) "NG" + "f" > index(vowels_huyen, 1) "NG"
+any(vowels_sac) "NG" + "f" > index(vowels_huyen, 1) "NG"
+any(vowels_nang) "NG" + "f" > index(vowels_huyen, 1) "NG"
+any(vowels_nga) "NG" + "f" > index(vowels_huyen, 1) "NG"
+
+any(vowels_hoi) "NG" + "x" > index(vowels_nga, 1) "NG"
+any(vowels_huyen) "NG" + "x" > index(vowels_nga, 1) "NG"
+any(vowels_nang) "NG" + "x" > index(vowels_nga, 1) "NG"
+any(vowels_sac) "NG" + "x" > index(vowels_nga, 1) "NG"
+
+any(vowels_sac) "NG" + "r" > index(vowels_hoi, 1) "NG"
+any(vowels_huyen) "NG" + "r" > index(vowels_hoi, 1) "NG"
+any(vowels_nang) "NG" + "r" > index(vowels_hoi, 1) "NG"
+any(vowels_nga) "NG" + "r" > index(vowels_hoi, 1) "NG"
+
+any(vowels_hoi) "NG" + "j" > index(vowels_nang, 1) "NG"
+any(vowels_huyen) "NG" + "j" > index(vowels_nang, 1) "NG"
+any(vowels_sac) "NG" + "j" > index(vowels_nang, 1) "NG"
+any(vowels_nga) "NG" + "j" > index(vowels_nang, 1) "NG"
+
+any(vowels_hoi) any(nmui) + "S" > index(vowels_sac, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "S" > index(vowels_sac, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "S" > index(vowels_sac, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "S" > index(vowels_sac, 1) index(nmui, 2) 
+
+any(vowels_hoi) any(nmui) + "F" > index(vowels_huyen, 1) index(nmui, 2) 
+any(vowels_sac) any(nmui) + "F" > index(vowels_huyen, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "F" > index(vowels_huyen, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "F" > index(vowels_huyen, 1) index(nmui, 2) 
+
+any(vowels_hoi) any(nmui) + "X" > index(vowels_nga, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "X" > index(vowels_nga, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "X" > index(vowels_nga, 1) index(nmui, 2) 
+any(vowels_sac) any(nmui) + "X" > index(vowels_nga, 1) index(nmui, 2) 
+
+any(vowels_sac) any(nmui) + "R" > index(vowels_hoi, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "R" > index(vowels_hoi, 1) index(nmui, 2) 
+any(vowels_nang) any(nmui) + "R" > index(vowels_hoi, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "R" > index(vowels_hoi, 1) index(nmui, 2) 
+
+any(vowels_hoi) any(nmui) + "J" > index(vowels_nang, 1) index(nmui, 2) 
+any(vowels_huyen) any(nmui) + "J" > index(vowels_nang, 1) index(nmui, 2) 
+any(vowels_sac) any(nmui) + "J" > index(vowels_nang, 1) index(nmui, 2) 
+any(vowels_nga) any(nmui) + "J" > index(vowels_nang, 1) index(nmui, 2) 
+
+any(vowels_hoi) "ng" + "S" > index(vowels_sac, 1) "ng"
+any(vowels_huyen) "ng" + "S" > index(vowels_sac, 1) "ng"
+any(vowels_nang) "ng" + "S" > index(vowels_sac, 1) "ng"
+any(vowels_nga) "ng" + "S" > index(vowels_sac, 1) "ng"
+
+any(vowels_hoi) "ng" + "F" > index(vowels_huyen, 1) "ng"
+any(vowels_sac) "ng" + "F" > index(vowels_huyen, 1) "ng"
+any(vowels_nang) "ng" + "F" > index(vowels_huyen, 1) "ng"
+any(vowels_nga) "ng" + "F" > index(vowels_huyen, 1) "ng"
+
+any(vowels_hoi) "ng" + "X" > index(vowels_nga, 1) "ng"
+any(vowels_huyen) "ng" + "X" > index(vowels_nga, 1) "ng"
+any(vowels_nang) "ng" + "X" > index(vowels_nga, 1) "ng"
+any(vowels_sac) "ng" + "X" > index(vowels_nga, 1) "ng"
+
+any(vowels_sac) "ng" + "R" > index(vowels_hoi, 1) "ng"
+any(vowels_huyen) "ng" + "R" > index(vowels_hoi, 1) "ng"
+any(vowels_nang) "ng" + "R" > index(vowels_hoi, 1) "ng"
+any(vowels_nga) "ng" + "R" > index(vowels_hoi, 1) "ng"
+
+any(vowels_hoi) "ng" + "J" > index(vowels_nang, 1) "ng"
+any(vowels_huyen) "ng" + "J" > index(vowels_nang, 1) "ng"
+any(vowels_sac) "ng" + "J" > index(vowels_nang, 1) "ng"
+any(vowels_nga) "ng" + "J" > index(vowels_nang, 1) "ng"
+
+any(vowels_hoi) "NG" + "S" > index(vowels_sac, 1) "NG"
+any(vowels_huyen) "NG" + "S" > index(vowels_sac, 1) "NG"
+any(vowels_nang) "NG" + "S" > index(vowels_sac, 1) "NG"
+any(vowels_nga) "NG" + "S" > index(vowels_sac, 1) "NG"
+
+any(vowels_hoi) "NG" + "F" > index(vowels_huyen, 1) "NG"
+any(vowels_sac) "NG" + "F" > index(vowels_huyen, 1) "NG"
+any(vowels_nang) "NG" + "F" > index(vowels_huyen, 1) "NG"
+any(vowels_nga) "NG" + "F" > index(vowels_huyen, 1) "NG"
+
+any(vowels_hoi) "NG" + "X" > index(vowels_nga, 1) "NG"
+any(vowels_huyen) "NG" + "X" > index(vowels_nga, 1) "NG"
+any(vowels_nang) "NG" + "X" > index(vowels_nga, 1) "NG"
+any(vowels_sac) "NG" + "X" > index(vowels_nga, 1) "NG"
+
+any(vowels_sac) "NG" + "R" > index(vowels_hoi, 1) "NG"
+any(vowels_huyen) "NG" + "R" > index(vowels_hoi, 1) "NG"
+any(vowels_nang) "NG" + "R" > index(vowels_hoi, 1) "NG"
+any(vowels_nga) "NG" + "R" > index(vowels_hoi, 1) "NG"
+
+any(vowels_hoi) "NG" + "J" > index(vowels_nang, 1) "NG"
+any(vowels_huyen) "NG" + "J" > index(vowels_nang, 1) "NG"
+any(vowels_sac) "NG" + "J" > index(vowels_nang, 1) "NG"
+any(vowels_nga) "NG" + "J" > index(vowels_nang, 1) "NG"
+
+"m" + "j" > "ṃ"
+"m" + "s" > "ḿ"
+"m" + "f" > "m̀" 
+"m" + "r" > "m̉"
+"m" + "x" > "m͂"
+
+"M" + "J" > "Ṃ"
+"M" + "S" > "Ḿ"
+"M" + "F" > "M̀" 
+"M" + "R" > "M̉"
+"M" + "X" > "M͂"
+
+"M" + "j" > "Ṃ"
+"M" + "s" > "Ḿ"
+"M" + "f" > "M̀" 
+"M" + "r" > "M̉"
+"M" + "x" > "M͂"
+
+"ng" + "s" > "ńg"
+"ng" + "f" > "ǹg"
+"ng" + "j" > "ṇg" 
+"ng" + "r" > "n̉g"
+"ng" + "x" > "ñg" 
+
+"NG" + "S" > "ŃG"
+"NG" + "F" > "ǸG"
+"NG" + "J" > "ṆG" 
+"NG" + "R" > "N̉G"
+"NG" + "X" > "ÑG" 
+
+"NG" + "s" > "ŃG"
+"NG" + "f" > "ǸG"
+"NG" + "j" > "ṆG" 
+"NG" + "r" > "N̉G"
+"NG" + "x" > "ÑG" 
+
+"Ng" + "S" > "Ńg"
+"Ng" + "F" > "Ǹg"
+"Ng" + "J" > "Ṇg" 
+"Ng" + "R" > "N̉g"
+"Ng" + "X" > "Ñg" 
+
+"Ng" + "s" > "Ńg"
+"Ng" + "f" > "Ǹg"
+"Ng" + "j" > "Ṇg" 
+"Ng" + "r" > "N̉g"
+"Ng" + "x" > "Ñg" 
+
+"n" + "s" > "ń"
+"n" + "f" > "ǹ"
+"n" + "j" > "ṇ" 
+"n" + "r" > "n̉"
+"n" + "x" > "ñ" 
+
+"N" + "S" > "Ń"
+"N" + "F" > "Ǹ"
+"N" + "J" > "Ṇ" 
+"N" + "R" > "N̉"
+"N" + "X" > "Ñ" 
+
+"N" + "s" > "Ń"
+"N" + "f" > "Ǹ"
+"N" + "j" > "Ṇ" 
+"N" + "r" > "N̉"
+"N" + "x" > "Ñ" 
+
+"ṃ" + "j" > "mj"
+"ḿ" + "s" > "ms"
+"m̀" + "f" > "mf"
+"m̉" + "r" > "mr"
+"m͂" + "x" > "mx"
+"Ṃ" + "J" > "MJ"
+"Ḿ" + "S" > "MS"
+"M̀" + "F" > "MF"
+"M̉" + "R" > "MR"
+"M͂" + "X" > "MX"
+"Ṃ" + "j" > "Mj"
+"Ḿ" + "s" > "Ms"
+"M̀" + "f" > "Mf"
+"M̉" + "r" > "Mr"
+"M͂" + "x" > "Mx"
+"ńg" + "s" > "ngs"
+"ǹg" + "f" > "ngf"
+"ṇg" + "j" > "ngj"
+"n̉g" + "r" > "ngr"
+"ñg" + "x" > "ngx"
+"ŃG" + "S" > "NGS"
+"ǸG" + "F" > "NGF"
+"ṆG" + "J" > "NGJ"
+"N̉G" + "R" > "NGR"
+"ÑG" + "X" > "NGX"
+"ŃG" + "s" > "NGs"
+"ǸG" + "f" > "NGf"
+"ṆG" + "j" > "NGj"
+"N̉G" + "r" > "NGr"
+"ÑG" + "x" > "NGx"
+"Ńg" + "S" > "NgS"
+"Ǹg" + "F" > "NgF"
+"Ṇg" + "J" > "NgJ"
+"N̉g" + "R" > "NgR"
+"Ñg" + "X" > "NgX"
+"Ńg" + "s" > "Ngs"
+"Ǹg" + "f" > "Ngf"
+"Ṇg" + "j" > "Ngj"
+"N̉g" + "r" > "Ngr"
+"Ñg" + "x" > "Ngx"
+"ń" + "s" > "ns"
+"ǹ" + "f" > "nf"
+"ṇ" + "j" > "nj"
+"n̉" + "r" > "nr"
+"ñ" + "x" > "nx"
+"Ń" + "S" > "NS"
+"Ǹ" + "F" > "NF"
+"Ṇ" + "J" > "NJ"
+"N̉" + "R" > "NR"
+"Ñ" + "X" > "NX"
+"Ń" + "s" > "Ns"
+"Ǹ" + "f" > "Nf"
+"Ṇ" + "j" > "Nj"
+"N̉" + "r" > "Nr"
+"Ñ" + "x" > "Nx"
+
+"e" + "e" > "ê"
+"E" + "e" > "Ê"
+"E" + "E" > "Ê"
+"ê" + "e" > "ee"
+"Ê" + "e" > "Ee"
+"Ê" + "E" > "EE"
+
+"eu" + "e" > "êu"
+"Eu" + "e" > "Êu"
+"EU" + "E" > "ÊU"
+"EU" + "e" > "ÊU"
+"êu" + "e" > "eue"
+"Êu" + "e" > "Eue"
+"ÊU" + "e" > "EUe"
+"ÊU" + "E" > "EUE"
+
+any(y_consonants)"y" + "n" >  index(y_consonants, 1) "uen"
+any(y_consonants)"ý" + "n" >  index(y_consonants, 1) "uén"
+any(y_consonants)"ỳ" + "n" >  index(y_consonants, 1) "uèn"
+any(y_consonants)"ỷ" + "n" >  index(y_consonants, 1) "uẻn"
+any(y_consonants)"ỹ" + "n" >  index(y_consonants, 1) "uẽn"
+any(y_consonants)"ỵ" + "n" >  index(y_consonants, 1) "uẹn"
+
+any(y_consonants)"y" + "t" >  index(y_consonants, 1) "uet"
+any(y_consonants)"ý" + "t" >  index(y_consonants, 1) "uét"
+any(y_consonants)"ỳ" + "t" >  index(y_consonants, 1) "uèt"
+any(y_consonants)"ỷ" + "t" >  index(y_consonants, 1) "uẻt"
+any(y_consonants)"ỹ" + "t" >  index(y_consonants, 1) "uẽt"
+any(y_consonants)"ỵ" + "t" >  index(y_consonants, 1) "uẹt"
+
+any(y_consonants)"yu" + "n" >  index(y_consonants, 1) "uen"
+any(y_consonants)"ýu" + "n" >  index(y_consonants, 1) "uén"
+any(y_consonants)"ỳu" + "n" >  index(y_consonants, 1) "uèn"
+any(y_consonants)"ỷu" + "n" >  index(y_consonants, 1) "uẻn"
+any(y_consonants)"ỹu" + "n" >  index(y_consonants, 1) "uẽn"
+any(y_consonants)"ỵu" + "n" >  index(y_consonants, 1) "uẹn"
+
+any(y_consonants)"yu" + "t" >  index(y_consonants, 1) "uet"
+any(y_consonants)"ýu" + "t" >  index(y_consonants, 1) "uét"
+any(y_consonants)"ỳu" + "t" >  index(y_consonants, 1) "uèt"
+any(y_consonants)"ỷu" + "t" >  index(y_consonants, 1) "uẻt"
+any(y_consonants)"ỹu" + "t" >  index(y_consonants, 1) "uẽt"
+any(y_consonants)"ỵu" + "t" >  index(y_consonants, 1) "uẹt"
+
+any(y_consonants)"Y" + "N" >  index(y_consonants, 1) "UEN"
+any(y_consonants)"Ý" + "N" >  index(y_consonants, 1) "UÉN"
+any(y_consonants)"Ỳ" + "N" >  index(y_consonants, 1) "UÈN"
+any(y_consonants)"Ỷ" + "N" >  index(y_consonants, 1) "UẺN"
+any(y_consonants)"Ỹ" + "N" >  index(y_consonants, 1) "UẼN"
+any(y_consonants)"Ỵ" + "N" >  index(y_consonants, 1) "UẸN"
+
+any(y_consonants)"Y" + "T" >  index(y_consonants, 1) "UET"
+any(y_consonants)"Ý" + "T" >  index(y_consonants, 1) "UÉT"
+any(y_consonants)"Ỳ" + "T" >  index(y_consonants, 1) "UÈT"
+any(y_consonants)"Ỷ" + "T" >  index(y_consonants, 1) "UẺT"
+any(y_consonants)"Ỹ" + "T" >  index(y_consonants, 1) "UẼT"
+any(y_consonants)"Ỵ" + "T" >  index(y_consonants, 1) "UẸT"
+
+any(y_consonants)"YU" + "N" >  index(y_consonants, 1) "UEN"
+any(y_consonants)"ÝU" + "N" >  index(y_consonants, 1) "UÉN"
+any(y_consonants)"ỲU" + "N" >  index(y_consonants, 1) "UÈN"
+any(y_consonants)"ỶU" + "N" >  index(y_consonants, 1) "UẺN"
+any(y_consonants)"ỸU" + "N" >  index(y_consonants, 1) "UẼN"
+any(y_consonants)"ỴU" + "N" >  index(y_consonants, 1) "UẸN"
+
+any(y_consonants)"YU" + "T" >  index(y_consonants, 1) "UET"
+any(y_consonants)"ÝU" + "T" >  index(y_consonants, 1) "UÉT"
+any(y_consonants)"ỲU" + "T" >  index(y_consonants, 1) "UÈT"
+any(y_consonants)"ỶU" + "T" >  index(y_consonants, 1) "UẺT"
+any(y_consonants)"ỸU" + "T" >  index(y_consonants, 1) "UẼT"
+any(y_consonants)"ỴU" + "T" >  index(y_consonants, 1) "UẸT"
+
+"ý" + "n" > "yuén"
+"ỳ" + "n" > "yuèn"
+"ỷ" + "n" > "yuẻn"
+"ỹ" + "n" > "yuẽn"
+"ỵ" + "n" > "yuẹn"
+
+"ý" + "t" > "yuét"
+"ỳ" + "t" > "yuèt"
+"ỷ" + "t" > "yuẻt"
+"ỹ" + "t" > "yuẽt"
+"ỵ" + "t" > "yuẹt"
+
+"ýu" + "n" > "yuén"
+"ỳu" + "n" > "yuèn"
+"ỷu" + "n" > "yuẻn"
+"ỹu" + "n" > "yuẽn"
+"ỵu" + "n" > "yuẹn"
+
+"ýu" + "t" > "yuét"
+"ỳu" + "t" > "yuèt"
+"ỷu" + "t" > "yuẻt"
+"ỹu" + "t" > "yuẽt"
+"ỵu" + "t" > "yuẹt"
+
+"Ý" + "N" > "YUÉN"
+"Ỳ" + "N" > "YUÈN"
+"Ỷ" + "N" > "YUẺN"
+"Ỹ" + "N" > "YUẼN"
+"Ỵ" + "N" > "YUẸN"
+
+"Ý" + "T" > "YUÉT"
+"Ỳ" + "T" > "YUÈT"
+"Ỷ" + "T" > "YUẺT"
+"Ỹ" + "T" > "YUẼT"
+"Ỵ" + "T" > "YUẸT"
+
+"ÝU" + "N" > "YUÉN"
+"ỲU" + "N" > "YUÈN"
+"ỶU" + "N" > "YUẺN"
+"ỸU" + "N" > "YUẼN"
+"ỴU" + "N" > "YUẸN"
+
+"ÝU" + "T" > "YUÉT"
+"ỲU" + "T" > "YUÈT"
+"ỶU" + "T" > "YUẺT"
+"ỸU" + "T" > "YUẼT"
+"ỴU" + "T" > "YUẸT"
+
+"yn" + any(punctuation) > "yuen" index(punctuation, 3)
+"ýn" + any(punctuation) > "yuén" index(punctuation, 3)
+"ỳn" + any(punctuation) > "yuèn" index(punctuation, 3)
+"ỷn" + any(punctuation) > "yuẻn" index(punctuation, 3)
+"ỹn" + any(punctuation) > "yuẽn" index(punctuation, 3)
+"ỵn" + any(punctuation) > "yuẹn" index(punctuation, 3)
+"Yn" + any(punctuation) > "Yuen" index(punctuation, 3)
+"Ýn" + any(punctuation) > "Yuén" index(punctuation, 3)
+"Ỳn" + any(punctuation) > "Yuèn" index(punctuation, 3)
+"Ỷn" + any(punctuation) > "Yuẻn" index(punctuation, 3)
+"Ỹn" + any(punctuation) > "Yuẽn" index(punctuation, 3)
+"Ỵn" + any(punctuation) > "Yuẹn" index(punctuation, 3)
+"yt" + any(punctuation) > "yuet" index(punctuation, 3)
+"ýt" + any(punctuation) > "yuét" index(punctuation, 3)
+"ỳt" + any(punctuation) > "yuèt" index(punctuation, 3)
+"ỷt" + any(punctuation) > "yuẻt" index(punctuation, 3)
+"ỹt" + any(punctuation) > "yuẽt" index(punctuation, 3)
+"ỵt" + any(punctuation) > "yuẹt" index(punctuation, 3)
+"Yt" + any(punctuation) > "Yuet" index(punctuation, 3)
+"Ýt" + any(punctuation) > "Yuét" index(punctuation, 3)
+"Ỳt" + any(punctuation) > "Yuèt" index(punctuation, 3)
+"Ỷt" + any(punctuation) > "Yuẻt" index(punctuation, 3)
+"Ỹt" + any(punctuation) > "Yuẽt" index(punctuation, 3)
+"Ỵt" + any(punctuation) > "Yuẹt" index(punctuation, 3)
+"yun" + any(punctuation) > "yuen" index(punctuation, 4)
+"yún" + any(punctuation) > "yuén" index(punctuation, 4)
+"yùn" + any(punctuation) > "yuèn" index(punctuation, 4)
+"yủn" + any(punctuation) > "yuẻn" index(punctuation, 4)
+"yũn" + any(punctuation) > "yuẽn" index(punctuation, 4)
+"yụn" + any(punctuation) > "yuẹn" index(punctuation, 4)
+"Yun" + any(punctuation) > "Yuen" index(punctuation, 4)
+"Yún" + any(punctuation) > "Yuén" index(punctuation, 4)
+"Yùn" + any(punctuation) > "Yuèn" index(punctuation, 4)
+"Yủn" + any(punctuation) > "Yuẻn" index(punctuation, 4)
+"Yũn" + any(punctuation) > "Yuẽn" index(punctuation, 4)
+"Yụn" + any(punctuation) > "Yuẹn" index(punctuation, 4)
+"yut" + any(punctuation) > "yuet" index(punctuation, 4)
+"yút" + any(punctuation) > "yuét" index(punctuation, 4)
+"yùt" + any(punctuation) > "yuèt" index(punctuation, 4)
+"yủt" + any(punctuation) > "yuẻt" index(punctuation, 4)
+"yũt" + any(punctuation) > "yuẽt" index(punctuation, 4)
+"yụt" + any(punctuation) > "yuẹt" index(punctuation, 4)
+"Yut" + any(punctuation) > "Yuet" index(punctuation, 4)
+"Yút" + any(punctuation) > "Yuét" index(punctuation, 4)
+"Yùt" + any(punctuation) > "Yuèt" index(punctuation, 4)
+"Yủt" + any(punctuation) > "Yuẻt" index(punctuation, 4)
+"Yũt" + any(punctuation) > "Yuẽt" index(punctuation, 4)
+"Yụt" + any(punctuation) > "Yuẹt" index(punctuation, 4)
+
+"Ý" + "n" > "Yuén"
+"Ỳ" + "n" > "Yuèn"
+"Ỷ" + "n" > "Yuẻn"
+"Ỹ" + "n" > "Yuẻn"
+"Ỵ" + "n" > "Yuẹn"
+
+"Ý" + "t" > "Yuét"
+"Ỳ" + "t" > "Yuèt"
+"Ỷ" + "t" > "Yuẻt"
+"Ỹ" + "t" > "Yuẻt"
+"Ỵ" + "t" > "Yuẹt"
+
+"Ýu" + "n" > "Yuén"
+"Ỳu" + "n" > "Yuèn"
+"Ỷu" + "n" > "Yuẻn"
+"Ỹu" + "n" > "Yuẻn"
+"Ỵu" + "n" > "Yuẹn"
+
+"Ýu" + "t" > "Yuét"
+"Ỳu" + "t" > "Yuèt"
+"Ỷu" + "t" > "Yuẻt"
+"Ỹu" + "t" > "Yuẻt"
+"Ỵu" + "t" > "Yuẹt"
+
+
+"êu" + "s" > "ếu"
+"êu" + "f" > "ều"
+"êu" + "r" > "ểu"
+"êu" + "x" > "ễu"
+"êu" + "j" > "ệu"
+
+"ÊU" + "S" > "ẾU"
+"ÊU" + "F" > "ỀU"
+"ÊU" + "R" > "ỂU"
+"ÊU" + "X" > "ỄU"
+"ÊU" + "J" > "ỆU"
+
+"ÊU" + "s" > "ẾU"
+"ÊU" + "f" > "ỀU"
+"ÊU" + "r" > "ỂU"
+"ÊU" + "x" > "ỄU"
+"ÊU" + "j" > "ỆU"
+
+"Êu" + "s" > "Ếu"
+"Êu" + "f" > "Ều"
+"Êu" + "r" > "Ểu"
+"Êu" + "x" > "Ễu"
+"Êu" + "j" > "Ệu"
+
+"oen" + "g" > "eung"
+
+"jy" + "u" > "yue"
+"Jy" + "u" > "Yue"
+
+any(y_consonants)"eon" + any(punctuation) > index(y_consonants, 1)"un" index(punctuation, 5)
+any(y_consonants)"éon" + any(punctuation) > index(y_consonants, 1)"ún" index(punctuation, 5)
+any(y_consonants)"èon" + any(punctuation) > index(y_consonants, 1)"ùn" index(punctuation, 5)
+any(y_consonants)"ẻon" + any(punctuation) > index(y_consonants, 1)"ủn" index(punctuation, 5)
+any(y_consonants)"ẽon" + any(punctuation) > index(y_consonants, 1)"ũn" index(punctuation, 5)
+any(y_consonants)"ẹon" + any(punctuation) > index(y_consonants, 1)"ụn" index(punctuation, 5)
+any(y_consonants)"eot" + any(punctuation) > index(y_consonants, 1)"ut" index(punctuation, 5)
+any(y_consonants)"éot" + any(punctuation) > index(y_consonants, 1)"út" index(punctuation, 5)
+any(y_consonants)"èot" + any(punctuation) > index(y_consonants, 1)"ùt" index(punctuation, 5)
+any(y_consonants)"ẻot" + any(punctuation) > index(y_consonants, 1)"ủt" index(punctuation, 5)
+any(y_consonants)"ẽot" + any(punctuation) > index(y_consonants, 1)"ũt" index(punctuation, 5)
+any(y_consonants)"ẹot" + any(punctuation) > index(y_consonants, 1)"ụt" index(punctuation, 5)
+any(y_consonants)"eoi" + any(punctuation) > index(y_consonants, 1)"ui" index(punctuation, 5)
+any(y_consonants)"éoi" + any(punctuation) > index(y_consonants, 1)"úi" index(punctuation, 5)
+any(y_consonants)"èoi" + any(punctuation) > index(y_consonants, 1)"ùi" index(punctuation, 5)
+any(y_consonants)"ẻoi" + any(punctuation) > index(y_consonants, 1)"ủi" index(punctuation, 5)
+any(y_consonants)"ẽoi" + any(punctuation) > index(y_consonants, 1)"ũi" index(punctuation, 5)
+any(y_consonants)"ẹoi" + any(punctuation) > index(y_consonants, 1)"ụi" index(punctuation, 5)
+any(y_consonants)"oet" + any(punctuation) > index(y_consonants, 1)"eut" index(punctuation, 5)
+any(y_consonants)"oét" + any(punctuation) > index(y_consonants, 1)"éut" index(punctuation, 5)
+any(y_consonants)"oẹt" + any(punctuation) > index(y_consonants, 1)"ẹut" index(punctuation, 5)
+any(y_consonants)"oek" + any(punctuation) > index(y_consonants, 1)"euk" index(punctuation, 5)
+any(y_consonants)"oék" + any(punctuation) > index(y_consonants, 1)"éuk" index(punctuation, 5)
+any(y_consonants)"oẹk" + any(punctuation) > index(y_consonants, 1)"ẹuk" index(punctuation, 5)
+any(ue_consonants)"yu" + any(punctuation) > index(ue_consonants, 1)"ư" index(punctuation, 4)
+any(ue_consonants)"yú" + any(punctuation) > index(ue_consonants, 1)"ứ" index(punctuation, 4)
+any(ue_consonants)"yù" + any(punctuation) > index(ue_consonants, 1)"ừ" index(punctuation, 4)
+any(ue_consonants)"yủ" + any(punctuation) > index(ue_consonants, 1)"ử" index(punctuation, 4)
+any(ue_consonants)"yũ" + any(punctuation) > index(ue_consonants, 1)"ữ" index(punctuation, 4)
+any(ue_consonants)"yụ" + any(punctuation) > index(ue_consonants, 1)"ự" index(punctuation, 4)
+any(ue_consonants)"ue" + any(punctuation) > index(ue_consonants, 1)"ư" index(punctuation, 4)
+any(ue_consonants)"ué" + any(punctuation) > index(ue_consonants, 1)"ứ" index(punctuation, 4)
+any(ue_consonants)"uè" + any(punctuation) > index(ue_consonants, 1)"ừ" index(punctuation, 4)
+any(ue_consonants)"uẻ" + any(punctuation) > index(ue_consonants, 1)"ử" index(punctuation, 4)
+any(ue_consonants)"uẽ" + any(punctuation) > index(ue_consonants, 1)"ữ" index(punctuation, 4)
+any(ue_consonants)"uẹ" + any(punctuation) > index(ue_consonants, 1)"ự" index(punctuation, 4)
+
+
+"yu" + any(punctuation) >"yư" index(punctuation, 3)
+"yú" + any(punctuation) >"yứ" index(punctuation, 3)
+"yù" + any(punctuation) >"yừ" index(punctuation, 3)
+"yủ" + any(punctuation) >"yử" index(punctuation, 3)
+"yũ" + any(punctuation) >"yữ" index(punctuation, 3)
+"yụ" + any(punctuation) >"yự" index(punctuation, 3)
+"Yu" + any(punctuation) >"Yư" index(punctuation, 3)
+"Yú" + any(punctuation) >"Yứ" index(punctuation, 3)
+"Yù" + any(punctuation) >"Yừ" index(punctuation, 3)
+"Yủ" + any(punctuation) >"Yử" index(punctuation, 3)
+"Yũ" + any(punctuation) >"Yữ" index(punctuation, 3)
+"Yụ" + any(punctuation) >"Yự" index(punctuation, 3)
+
+"tsyu" + any(punctuation) >"tsư" index(punctuation, 5)
+"tsyú" + any(punctuation) >"tsứ" index(punctuation, 5)
+"tsyù" + any(punctuation) >"tsừ" index(punctuation, 5)
+"tsyủ" + any(punctuation) >"tsử" index(punctuation, 5)
+"tsyũ" + any(punctuation) >"tsữ" index(punctuation, 5)
+"tsyụ" + any(punctuation) >"tsự" index(punctuation, 5)
+"Tsyu" + any(punctuation) >"Tsư" index(punctuation, 5)
+"Tsyú" + any(punctuation) >"Tsứ" index(punctuation, 5)
+"Tsyù" + any(punctuation) >"Tsừ" index(punctuation, 5)
+"Tsyủ" + any(punctuation) >"Tsử" index(punctuation, 5)
+"Tsyũ" + any(punctuation) >"Tsữ" index(punctuation, 5)
+"Tsyụ" + any(punctuation) >"Tsự" index(punctuation, 5)
+"tsue" + any(punctuation) >"tsư" index(punctuation, 5)
+"tsué" + any(punctuation) >"tsứ" index(punctuation, 5)
+"tsuè" + any(punctuation) >"tsừ" index(punctuation, 5)
+"tsuẻ" + any(punctuation) >"tsử" index(punctuation, 5)
+"tsuẽ" + any(punctuation) >"tsữ" index(punctuation, 5)
+"tsuẹ" + any(punctuation) >"tsự" index(punctuation, 5)
+"Tsue" + any(punctuation) >"Tsư" index(punctuation, 5)
+"Tsué" + any(punctuation) >"Tsứ" index(punctuation, 5)
+"Tsuè" + any(punctuation) >"Tsừ" index(punctuation, 5)
+"Tsuẻ" + any(punctuation) >"Tsử" index(punctuation, 5)
+"Tsuẽ" + any(punctuation) >"Tsữ" index(punctuation, 5)
+"Tsuẹ" + any(punctuation) >"Tsự" index(punctuation, 5)
+
+"tsyu" + any(punctuation) >"tsư" index(punctuation, 5)
+"tsyú" + any(punctuation) >"tsứ" index(punctuation, 5)
+"tsyù" + any(punctuation) >"tsừ" index(punctuation, 5)
+"tsyủ" + any(punctuation) >"tsử" index(punctuation, 5)
+"tsyũ" + any(punctuation) >"tsữ" index(punctuation, 5)
+"tsyụ" + any(punctuation) >"tsự" index(punctuation, 5)
+"Tsyu" + any(punctuation) >"Tsư" index(punctuation, 5)
+"Tsyú" + any(punctuation) >"Tsứ" index(punctuation, 5)
+"Tsyù" + any(punctuation) >"Tsừ" index(punctuation, 5)
+"Tsyủ" + any(punctuation) >"Tsử" index(punctuation, 5)
+"Tsyũ" + any(punctuation) >"Tsữ" index(punctuation, 5)
+"Tsyụ" + any(punctuation) >"Tsự" index(punctuation, 5)
+"tsue" + any(punctuation) >"tsư" index(punctuation, 5)
+"tsué" + any(punctuation) >"tsứ" index(punctuation, 5)
+"tsuè" + any(punctuation) >"tsừ" index(punctuation, 5)
+"tsuẻ" + any(punctuation) >"tsử" index(punctuation, 5)
+"tsuẽ" + any(punctuation) >"tsữ" index(punctuation, 5)
+"tsuẹ" + any(punctuation) >"tsự" index(punctuation, 5)
+"Tsue" + any(punctuation) >"Tsư" index(punctuation, 5)
+"Tsué" + any(punctuation) >"Tsứ" index(punctuation, 5)
+"Tsuè" + any(punctuation) >"Tsừ" index(punctuation, 5)
+"Tsuẻ" + any(punctuation) >"Tsử" index(punctuation, 5)
+"Tsuẽ" + any(punctuation) >"Tsữ" index(punctuation, 5)
+"Tsuẹ" + any(punctuation) >"Tsự" index(punctuation, 5)
+
+any(eu_consonants) "e" any(low_u)any(nt) + any(punctuation) > index(eu_consonants, 1) index(low_u, 3) index(nt, 4) index(punctuation, 5)
+
+"u" + "w" > "ư"
+"U" + "w" > "Ư"
+"U" + "W" > "Ư"
+
+"ư" + "w" > "uw"
+"Ư" + "w" > "Uw"
+"Ư" + "W" > "UW"
+
+"â" + "w" > "ă"
+"Â" + "w" > "Ă"
+"Â" + "W" > "Ă"
+
+"ân" + "w" > "ăn"
+"Ân" + "w" > "Ăn"
+"ÂN" + "W" > "ĂN"
+"ÂN" + "w" > "ĂN"
+
+"âm" + "w" > "ăm"
+"Âm" + "w" > "Ăm"
+"ÂM" + "W" > "ĂM"
+"ÂM" + "w" > "ĂM"
+
+"âng" + "w" > "ăng"
+"Âng" + "w" > "Ăng"
+"ÂNG" + "W" > "ĂNG"
+"ÂNG" + "w" > "ĂNG"
+
+"d" + "d" > "đ"
+"D" + "d" > "Đ"
+"D" + "D" > "Đ"
+
+"đ" + "d" > "dd"
+"Đ" + "d" > "Dd"
+"Đ" + "D" > "DD"
+
+any(all_letters) "d" + "d" > index(all_letters, 1) "dd"
+any(all_letters) "D" + "D" > index(all_letters, 1) "DD"
+any(all_letters) "D" + "d" > index(all_letters, 1) "Dd"
+
+"o" + "w" > "ơ"
+"O" + "w" > "Ơ"
+"O" + "W" > "Ơ"
+
+"ơ" + "w" > "ow"
+"Ơ" + "w" > "Ow"
+"Ơ" + "W" > "OW"
+
+"uo" + "w" > "ươ"
+"UO" + "w" > "ƯƠ"
+"UO" + "W" > "ƯƠ"
+"Uo" + "W" > "Ươ"
+"Uo" + "w" > "Ươ"
+
+"uong" + "w" > "ương"
+"UONG" + "w" > "ƯƠNG"
+"UONG" + "W" > "ƯƠNG"
+"Uong" + "W" > "Ương"
+"Uong" + "w" > "Ương"
+
+"uon" + "w" > "ươn"
+"UON" + "w" > "ƯƠN"
+"UON" + "W" > "ƯƠN"
+"Uon" + "W" > "Ươn"
+"Uon" + "w" > "Ươn"
+
+"uom" + "w" > "ươm"
+"UOM" + "w" > "ƯƠM"
+"UOM" + "W" > "ƯƠM"
+"Uom" + "W" > "Ươm"
+"Uom" + "w" > "Ươm"
+
+"ó" + "w" > "ớ"
+"Ó" + "w" > "Ớ"
+"Ó" + "W" > "Ớ"
+
+"uó" + "w" > "ướ"
+"UÓ" + "w" > "ƯỚ"
+"UÓ" + "W" > "ƯỚ"
+"Uó" + "W" > "Ướ"
+"Uó" + "w" > "Ướ"
+
+"uóng" + "w" > "ướng"
+"UÓNG" + "w" > "ƯỚNG"
+"UÓNG" + "W" > "ƯỚNG"
+"Uóng" + "W" > "Ướng"
+"Uóng" + "w" > "Ướng"
+
+"uón" + "w" > "ướn"
+"UÓN" + "w" > "ƯỚN"
+"UÓN" + "W" > "ƯỚN"
+"Uón" + "W" > "Ướn"
+"Uón" + "w" > "Ướn"
+
+"uóm" + "w" > "ướm"
+"UÓM" + "w" > "ƯỚM"
+"UÓM" + "W" > "ƯỚM"
+"Uóm" + "W" > "Ướm"
+"Uóm" + "w" > "Ướm"
+
+"ò" + "w" > "ờ"
+"Ò" + "w" > "Ờ"
+"Ò" + "W" > "Ờ"
+
+"uò" + "w" > "ườ"
+"UÒ" + "w" > "ƯỜ"
+"UÒ" + "W" > "ƯỜ"
+"Uò" + "W" > "Ườ"
+"Uò" + "w" > "Ườ"
+
+"uòng" + "w" > "ường"
+"UÒNG" + "w" > "ƯỜNG"
+"UÒNG" + "W" > "ƯỜNG"
+"Uòng" + "W" > "Ường"
+"Uòng" + "w" > "Ường"
+
+"uòn" + "w" > "ườn"
+"UÒN" + "w" > "ƯỜN"
+"UÒN" + "W" > "ƯỜN"
+"Uòn" + "W" > "Ườn"
+"Uòn" + "w" > "Ườn"
+
+"uòm" + "w" > "ườm"
+"UÒM" + "w" > "ƯỜM"
+"UÒM" + "W" > "ƯỜM"
+"Uòm" + "W" > "Ườm"
+"Uòm" + "w" > "Ườm"
+
+"ỏ" + "w" > "ở"
+"Ỏ" + "w" > "Ở"
+"Ỏ" + "W" > "Ở"
+
+"uỏ" + "w" > "ưở"
+"UỎ" + "w" > "ƯỞ"
+"UỎ" + "W" > "ƯỞ"
+"Uỏ" + "W" > "Ưở"
+"Uỏ" + "w" > "Ưở"
+
+"uỏng" + "w" > "ưởng"
+"UỎNG" + "w" > "ƯỞNG"
+"UỎNG" + "W" > "ƯỞNG"
+"Uỏng" + "W" > "Ưởng"
+"Uỏng" + "w" > "Ưởng"
+
+"uỏn" + "w" > "ưởn"
+"UỎN" + "w" > "ƯỞN"
+"UỎN" + "W" > "ƯỞN"
+"Uỏn" + "W" > "Ưởn"
+"Uỏn" + "w" > "Ưởn"
+
+"uỏm" + "w" > "ưởm"
+"UỎM" + "w" > "ƯỞM"
+"UỎM" + "W" > "ƯỞM"
+"Uỏm" + "W" > "Ưởm"
+"Uỏm" + "w" > "Ưởm"
+
+"õ" + "w" > "ỡ"
+"Õ" + "w" > "Ỡ"
+"Õ" + "W" > "Ỡ"
+
+"uõ" + "w" > "ưỡ"
+"UÕ" + "w" > "ƯỠ"
+"UÕ" + "W" > "ƯỠ"
+"Uõ" + "W" > "Ưỡ"
+"Uõ" + "w" > "Ưỡ"
+
+"uõng" + "w" > "ưỡng"
+"UÕNG" + "w" > "ƯỠNG"
+"UÕNG" + "W" > "ƯỠNG"
+"Uõng" + "W" > "Ưỡng"
+"Uõng" + "w" > "Ưỡng"
+
+"uõn" + "w" > "ưỡn"
+"UÕN" + "w" > "ƯỠN"
+"UÕN" + "W" > "ƯỠN"
+"Uõn" + "W" > "Ưỡn"
+"Uõn" + "w" > "Ưỡn"
+
+"uõm" + "w" > "ưỡm"
+"UÕM" + "w" > "ƯỠM"
+"UÕM" + "W" > "ƯỠM"
+"Uõm" + "W" > "Ưỡm"
+"Uõm" + "w" > "Ưỡm"
+
+"ọ" + "w" > "ợ"
+"Ọ" + "w" > "Ợ"
+"Ọ" + "W" > "Ợ"
+
+"uọ" + "w" > "ượ"
+"UỌ" + "w" > "ƯỢ"
+"UỌ" + "W" > "ƯỢ"
+"Uọ" + "W" > "Ượ"
+"Uọ" + "w" > "Ượ"
+
+"uọng" + "w" > "ượng"
+"UỌNG" + "w" > "ƯỢNG"
+"UỌNG" + "W" > "ƯỢNG"
+"Uọng" + "W" > "Ượng"
+"Uọng" + "w" > "Ượng"
+
+"uọn" + "w" > "ượn"
+"UỌN" + "w" > "ƯỢN"
+"UỌN" + "W" > "ƯỢN"
+"Uọn" + "W" > "Ượn"
+"Uọn" + "w" > "Ượn"
+
+"uọm" + "w" > "ượm"
+"UỌM" + "w" > "ƯỢM"
+"UỌM" + "W" > "ƯỢM"
+"Uọm" + "W" > "Ượm"
+"Uọm" + "w" > "Ượm"
+
+"uot" + "w" > "ươt"
+"UOT" + "w" > "ƯƠT"
+"UOT" + "W" > "ƯƠT"
+"Uot" + "W" > "Ươt"
+"Uot" + "w" > "Ươt"
+
+"uoc" + "w" > "ươc"
+"UOC" + "w" > "ƯƠC"
+"UOC" + "W" > "ƯƠC"
+"Uoc" + "W" > "Ươc"
+"Uoc" + "w" > "Ươc"
+
+"uop" + "w" > "ươp"
+"UOP" + "w" > "ƯƠP"
+"UOP" + "W" > "ƯƠP"
+"Uop" + "W" > "Ươp"
+"Uop" + "w" > "Ươp"
+
+"uót" + "w" > "ướt"
+"UÓT" + "w" > "ƯỚT"
+"UÓT" + "W" > "ƯỚT"
+"Uót" + "W" > "Ướt"
+"Uót" + "w" > "Ướt"
+
+"uóc" + "w" > "ước"
+"UÓC" + "w" > "ƯỚC"
+"UÓC" + "W" > "ƯỚC"
+"Uóc" + "W" > "Ước"
+"Uóc" + "w" > "Ước"
+
+"uóp" + "w" > "ướp"
+"UÓP" + "w" > "ƯỚP"
+"UÓP" + "W" > "ƯỚP"
+"Uóp" + "W" > "Ướp"
+"Uóp" + "w" > "Ướp"
+
+"uọt" + "w" > "ượt"
+"UỌT" + "w" > "ƯỢT"
+"UỌT" + "W" > "ƯỢT"
+"Uọt" + "W" > "Ượt"
+"Uọt" + "w" > "Ượt"
+
+"uọc" + "w" > "ược"
+"UỌC" + "w" > "ƯỢC"
+"UỌC" + "W" > "ƯỢC"
+"Uọc" + "W" > "Ược"
+"Uọc" + "w" > "Ược"
+
+"uọp" + "w" > "ượp"
+"UỌP" + "w" > "ƯỢP"
+"UỌP" + "W" > "ƯỢP"
+"Uọp" + "W" > "Ượp"
+"Uọp" + "w" > "Ượp"
+
+"ua" + "w" > "ưa"
+"UA" + "w" > "ƯA"
+"UA" + "W" > "ƯA"
+"Ua" + "W" > "Ưa"
+"Ua" + "w" > "Ưa"
+
+"úa" + "w" > "ứa"
+"ÚA" + "w" > "ỨA"
+"ÚA" + "W" > "ỨA"
+"Úa" + "W" > "Ứa"
+"Úa" + "w" > "Ứa"
+
+"ùa" + "w" > "ừa"
+"ÙA" + "w" > "ỪA"
+"ÙA" + "W" > "ỪA"
+"Ùa" + "W" > "Ừa"
+"Ùa" + "w" > "Ừa"
+
+"ủa" + "w" > "ửa"
+"ỦA" + "w" > "ỬA"
+"ỦA" + "W" > "ỬA"
+"Ủa" + "W" > "Ửa"
+"Ủa" + "w" > "Ửa"
+
+"ũa" + "w" > "ữa"
+"ŨA" + "w" > "ỮA"
+"ŨA" + "W" > "ỮA"
+"Ũa" + "W" > "Ữa"
+"Ũa" + "w" > "Ữa"
+
+"ụa" + "w" > "ựa"
+"ỤA" + "w" > "ỰA"
+"ỤA" + "W" > "ỰA"
+"Ụa" + "W" > "Ựa"
+"Ụa" + "w" > "Ựa"
+
+"uá" + "w" > "ưá"
+"UÁ" + "w" > "ƯÁ"
+"UÁ" + "W" > "ƯÁ"
+"Uá" + "W" > "Ưá"
+"Uá" + "w" > "Ưá"
+
+"uâ" + "w" > "ưa"
+"UÂ" + "w" > "ƯA"
+"UÂ" + "W" > "ƯA"
+"Uâ" + "W" > "Ưa"
+"Uâ" + "w" > "Ưa"
+
+"úâ" + "w" > "ứa"
+"ÚÂ" + "w" > "ỨA"
+"ÚÂ" + "W" > "ỨA"
+"Úâ" + "W" > "Ứa"
+"Úâ" + "w" > "Ứa"
+
+"ùâ" + "w" > "ừa"
+"ÙÂ" + "w" > "ỪA"
+"ÙÂ" + "W" > "ỪA"
+"Ùâ" + "W" > "Ừa"
+"Ùâ" + "w" > "Ừa"
+
+"ủâ" + "w" > "ửa"
+"ỦÂ" + "w" > "ỬA"
+"ỦÂ" + "W" > "ỬA"
+"Ủâ" + "W" > "Ửa"
+"Ủâ" + "w" > "Ửa"
+
+"ũâ" + "w" > "ữa"
+"ŨÂ" + "w" > "ỮA"
+"ŨÂ" + "W" > "ỮA"
+"Ũâ" + "W" > "Ữa"
+"Ũâ" + "w" > "Ữa"
+
+"ụâ" + "w" > "ựa"
+"ỤÂ" + "w" > "ỰA"
+"ỤÂ" + "W" > "ỰA"
+"Ụâ" + "W" > "Ựa"
+"Ụâ" + "w" > "Ựa"
+
+"ua" + "s" > "úa"
+"ua" + "f" > "ùa"
+"ua" + "r" > "ủa"
+"ua" + "x" > "ũa"
+"ua" + "j" > "ụa"
+
+"UA" + "S" > "ÚA"
+"UA" + "F" > "ÙA"
+"UA" + "R" > "ỦA"
+"UA" + "X" > "ŨA"
+"UA" + "J" > "ỤA"
+
+"UA" + "s" > "ÚA"
+"UA" + "f" > "ÙA"
+"UA" + "r" > "ỦA"
+"UA" + "x" > "ŨA"
+"UA" + "j" > "ỤA"
+
+"Ua" + "S" > "Úa"
+"Ua" + "F" > "Ùa"
+"Ua" + "R" > "Ủa"
+"Ua" + "X" > "Ũa"
+"Ua" + "J" > "Ụa"
+
+"Ua" + "s" > "Úa"
+"Ua" + "f" > "Ùa"
+"Ua" + "r" > "Ủa"
+"Ua" + "x" > "Ũa"
+"Ua" + "j" > "Ụa"
+
+"ôi" + "s" > "ối"
+"ôi" + "f" > "ồi"
+"ôi" + "r" > "ổi"
+"ôi" + "x" > "ỗi"
+"ôi" + "j" > "ội"
+
+"ÔI" + "S" > "ỐI"
+"ÔI" + "F" > "ỒI"
+"ÔI" + "R" > "ỔI"
+"ÔI" + "X" > "ỖI"
+"ÔI" + "J" > "ỘI"
+
+"ÔI" + "s" > "ỐI"
+"ÔI" + "f" > "ỒI"
+"ÔI" + "r" > "ỔI"
+"ÔI" + "x" > "ỖI"
+"ÔI" + "j" > "ỘI"
+
+"Ôi" + "S" > "Ối"
+"Ôi" + "F" > "Ồi"
+"Ôi" + "R" > "Ổi"
+"Ôi" + "X" > "Ỗi"
+"Ôi" + "J" > "Ội"
+
+"ưi" + "s" > "ứi"
+"ưi" + "f" > "ừi"
+"ưi" + "r" > "ửi"
+"ưi" + "x" > "ữi"
+"ưi" + "j" > "ựi"
+
+"ƯI" + "S" > "ỨI"
+"ƯI" + "F" > "ỪI"
+"ƯI" + "R" > "ỬI"
+"ƯI" + "X" > "ỮI"
+"ƯI" + "J" > "ỰI"
+
+"ƯI" + "s" > "ỨI"
+"ƯI" + "f" > "ỪI"
+"ƯI" + "r" > "ỬI"
+"ƯI" + "x" > "ỮI"
+"ƯI" + "j" > "ỰI"
+
+"Ưi" + "S" > "Ứi"
+"Ưi" + "F" > "Ừi"
+"Ưi" + "R" > "Ửi"
+"Ưi" + "X" > "Ữi"
+"Ưi" + "J" > "Ựi"
+
+"uu" + "w" > "ưu"
+"Uu" + "w" > "Ưu"
+"Uu" + "W" > "Ưu"
+"UU" + "W" > "ƯU"
+
+"ưu" + "s" > "ứu"
+"ưu" + "f" > "ừu"
+"ưu" + "r" > "ửu"
+"ưu" + "x" > "ữu"
+"ưu" + "j" > "ựu"
+
+"ƯU" + "S" > "ỨU"
+"ƯU" + "F" > "ỪU"
+"ƯU" + "R" > "ỬU"
+"ƯU" + "X" > "ỮU"
+"ƯU" + "J" > "ỰU"
+
+"ƯU" + "s" > "ỨU"
+"ƯU" + "f" > "ỪU"
+"ƯU" + "r" > "ỬU"
+"ƯU" + "x" > "ỮU"
+"ƯU" + "j" > "ỰU"
+
+"Ưu" + "S" > "Ứu"
+"Ưu" + "F" > "Ừu"
+"Ưu" + "R" > "Ửu"
+"Ưu" + "X" > "Ữu"
+"Ưu" + "J" > "Ựu"
+
+"ây" + "s" > "ấy"
+"ây" + "f" > "ầy"
+"ây" + "r" > "ẩy"
+"ây" + "x" > "ẫy"
+"ây" + "j" > "ậy"
+
+"ÂY" + "S" > "ẤY"
+"ÂY" + "F" > "ẦY"
+"ÂY" + "R" > "ẨY"
+"ÂY" + "X" > "ẪY"
+"ÂY" + "J" > "ẬY"
+
+"ÂY" + "s" > "ẤY"
+"ÂY" + "f" > "ẦY"
+"ÂY" + "r" > "ẨY"
+"ÂY" + "x" > "ẪY"
+"ÂY" + "j" > "ẬY"
+
+"Ây" + "S" > "Ấy"
+"Ây" + "F" > "Ầy"
+"Ây" + "R" > "Ẩy"
+"Ây" + "X" > "Ẫy"
+"Ây" + "J" > "Ậy"
+
+"ay" + "s" > "áy"
+"ay" + "f" > "ày"
+"ay" + "r" > "ảy"
+"ay" + "x" > "ãy"
+"ay" + "j" > "ạy"
+
+"AY" + "s" > "ÁY"
+"AY" + "f" > "ÀY"
+"AY" + "r" > "ẢY"
+"AY" + "x" > "ÃY"
+"AY" + "j" > "ẠY"
+
+"Ay" + "S" > "Áy"
+"Ay" + "F" > "Ày"
+"Ay" + "R" > "Ảy"
+"Ay" + "X" > "Ãy"
+"Ay" + "J" > "Ạy"
+
+"ao" + "s" > "áo"
+"ao" + "f" > "ào"
+"ao" + "r" > "ảo"
+"ao" + "x" > "ão"
+"ao" + "j" > "ạo"
+
+"AO" + "S" > "ÁO"
+"AO" + "F" > "ÀO"
+"AO" + "R" > "ẢO"
+"AO" + "X" > "ÃO"
+"AO" + "J" > "ẠO"
+
+"AO" + "s" > "ÁO"
+"AO" + "f" > "ÀO"
+"AO" + "r" > "ẢO"
+"AO" + "x" > "ÃO"
+"AO" + "j" > "ẠO"
+
+"Ao" + "S" > "Áo"
+"Ao" + "F" > "Ào"
+"Ao" + "R" > "Ảo"
+"Ao" + "X" > "Ão"
+"Ao" + "J" > "Ạo"
+
+"oi" + "w" > "ơi"
+"OI" + "w" > "ƠI"
+"OI" + "W" > "ƠI"
+"Oi" + "W" > "Ơi"
+"Oi" + "w" > "Ơi"
+
+"ói" + "w" > "ới"
+"ÓI" + "w" > "ỚI"
+"ÓI" + "W" > "ỚI"
+"Ói" + "W" > "Ới"
+"Ói" + "w" > "Ới"
+
+"òi" + "w" > "ời"
+"ÒI" + "w" > "ỜI"
+"ÒI" + "W" > "ỜI"
+"Òi" + "W" > "Ời"
+"Òi" + "w" > "Ời"
+
+"ỏi" + "w" > "ởi"
+"ỎI" + "w" > "ỞI"
+"ỎI" + "W" > "ỞI"
+"Ỏi" + "W" > "Ởi"
+"Ỏi" + "w" > "Ởi"
+
+"õi" + "w" > "ỡi"
+"ÕI" + "w" > "ỠI"
+"ÕI" + "W" > "ỠI"
+"Õi" + "W" > "Ỡi"
+"Õi" + "w" > "Ỡi"
+
+"ọi" + "w" > "ợi"
+"ỌI" + "w" > "ỢI"
+"ỌI" + "W" > "ỢI"
+"Ọi" + "W" > "Ợi"
+"Ọi" + "w" > "Ợi"
+
+"ơi" + "s" > "ới"
+"ơi" + "f" > "ời"
+"ơi" + "r" > "ởi"
+"ơi" + "x" > "ỡi"
+"ơi" + "j" > "ợi"
+
+"ƠI" + "S" > "ỚI"
+"ƠI" + "F" > "ỜI"
+"ƠI" + "R" > "ỞI"
+"ƠI" + "X" > "ỠI"
+"ƠI" + "J" > "ỢI"
+
+"ƠI" + "s" > "ỚI"
+"ƠI" + "f" > "ỜI"
+"ƠI" + "r" > "ỞI"
+"ƠI" + "x" > "ỠI"
+"ƠI" + "j" > "ỢI"
+
+"Ơi" + "S" > "Ới"
+"Ơi" + "F" > "Ời"
+"Ơi" + "R" > "Ởi"
+"Ơi" + "X" > "Ỡi"
+"Ơi" + "J" > "Ợi"
+
+"â" + "o" > "ao"
+"Â" + "o" > "Ao"
+"Â" + "O" > "AO"
+
+"âc" + "h" > "ach"
+"Âc" + "h" > "Ach"
+"ÂC" + "H" > "ACH"
+
+"ân" + "h" > "anh"
+"Ân" + "h" > "Anh"
+"ÂN" + "H" > "ANH"
+
+"ât" + "w" > "ăt"
+"ất" + "w" > "ắt"
+"ầt" + "w" > "ằt"
+"ẩt" + "w" > "ẳt"
+"ẫt" + "w" > "ẵt"
+"ật" + "w" > "ặt"
+
+"Ât" + "W" > "Ăt"
+"Ất" + "W" > "Ắt"
+"Ầt" + "W" > "Ằt"
+"Ẩt" + "W" > "Ẳt"
+"Ẫt" + "W" > "Ẵt"
+"Ật" + "W" > "Ặt"
+
+"Ât" + "w" > "Ăt"
+"Ất" + "w" > "Ắt"
+"Ầt" + "w" > "Ằt"
+"Ẩt" + "w" > "Ẳt"
+"Ẫt" + "w" > "Ẵt"
+"Ật" + "w" > "Ặt"
+
+"âk" + "w" > "ăk"
+"ấk" + "w" > "ắk"
+"ầk" + "w" > "ằk"
+"ẩk" + "w" > "ẳk"
+"ẫk" + "w" > "ẵk"
+"ậk" + "w" > "ặk"
+
+"Âk" + "W" > "Ăk"
+"Ấk" + "W" > "Ắk"
+"Ầk" + "W" > "Ằk"
+"Ẩk" + "W" > "Ẳk"
+"Ẫk" + "W" > "Ẵk"
+"Ậk" + "W" > "Ặk"
+
+"Âk" + "w" > "Ăk"
+"Ấk" + "w" > "Ắk"
+"Ầk" + "w" > "Ằk"
+"Ẩk" + "w" > "Ẳk"
+"Ẫk" + "w" > "Ẵk"
+"Ậk" + "w" > "Ặk"
+
+"âp" + "w" > "ăp"
+"ấp" + "w" > "ắp"
+"ầp" + "w" > "ằp"
+"ẩp" + "w" > "ẳp"
+"ẫp" + "w" > "ẵp"
+"ập" + "w" > "ặp"
+
+"Âp" + "W" > "Ăp"
+"Ấp" + "W" > "Ắp"
+"Ầp" + "W" > "Ằp"
+"Ẩp" + "W" > "Ẳp"
+"Ẫp" + "W" > "Ẵp"
+"Ập" + "W" > "Ặp"
+
+"Âp" + "w" > "Ăp"
+"Ấp" + "w" > "Ắp"
+"Ầp" + "w" > "Ằp"
+"Ẩp" + "w" > "Ẳp"
+"Ẫp" + "w" > "Ẵp"
+"Ập" + "w" > "Ặp"
+
+"âc" + "w" > "ăc"
+"ấc" + "w" > "ắc"
+"ầc" + "w" > "ằc"
+"ẩc" + "w" > "ẳc"
+"ẫc" + "w" > "ẵc"
+"ậc" + "w" > "ặc"
+
+"Âc" + "W" > "Ăc"
+"Ấc" + "W" > "Ắc"
+"Ầc" + "W" > "Ằc"
+"Ẩc" + "W" > "Ẳc"
+"Ẫc" + "W" > "Ẵc"
+"Ậc" + "W" > "Ặc"
+
+"Âc" + "w" > "Ăc"
+"Ấc" + "w" > "Ắc"
+"Ầc" + "w" > "Ằc"
+"Ẩc" + "w" > "Ẳc"
+"Ẫc" + "w" > "Ẵc"
+"Ậc" + "w" > "Ặc"
+
+"ấn" + "w" > "ắn"
+"ần" + "w" > "ằn"
+"ẩn" + "w" > "ẳn"
+"ẫn" + "w" > "ẵn"
+"ận" + "w" > "ặn"
+
+"Ân" + "W" > "Ăn"
+"Ấn" + "W" > "Ắn"
+"Ần" + "W" > "Ằn"
+"Ẩn" + "W" > "Ẳn"
+"Ẫn" + "W" > "Ẵn"
+"Ận" + "W" > "Ặn"
+
+"Ấn" + "w" > "Ắn"
+"Ần" + "w" > "Ằn"
+"Ẩn" + "w" > "Ẳn"
+"Ẫn" + "w" > "Ẵn"
+"Ận" + "w" > "Ặn"
+
+"ấng" + "w" > "ắng"
+"ầng" + "w" > "ằng"
+"ẩng" + "w" > "ẳng"
+"ẫng" + "w" > "ẵng"
+"ậng" + "w" > "ặng"
+
+"Âng" + "W" > "Ăng"
+"Ấng" + "W" > "Ắng"
+"Ầng" + "W" > "Ằng"
+"Ẩng" + "W" > "Ẳng"
+"Ẫng" + "W" > "Ẵng"
+"Ậng" + "W" > "Ặng"
+
+"Ấng" + "w" > "Ắng"
+"Ầng" + "w" > "Ằng"
+"Ẩng" + "w" > "Ẳng"
+"Ẫng" + "w" > "Ẵng"
+"Ậng" + "w" > "Ặng"
+
+"ấm" + "w" > "ắm"
+"ầm" + "w" > "ằm"
+"ẩm" + "w" > "ẳm"
+"ẫm" + "w" > "ẵm"
+"ậm" + "w" > "ặm"
+
+"Âm" + "W" > "Ăm"
+"Ấm" + "W" > "Ắm"
+"Ầm" + "W" > "Ằm"
+"Ẩm" + "W" > "Ẳm"
+"Ẫm" + "W" > "Ẵm"
+"Ậm" + "W" > "Ặm"
+
+"Ấm" + "w" > "Ắm"
+"Ầm" + "w" > "Ằm"
+"Ẩm" + "w" > "Ẳm"
+"Ẫm" + "w" > "Ẵm"
+"Ậm" + "w" > "Ặm"
+
+"gw" + "q" > "q"
+"Gw" + "q" > "Q"
+"Gw" + "Q" > "Q"
+
+"uoi" + "w" > "ươi"
+"uói" + "w" > "ưới"
+"uòi" + "w" > "ười"
+"uỏi" + "w" > "ưởi"
+"uõi" + "w" > "ưỡi"
+"uọi" + "w" > "ượi"
+
+"uoi" + "o" > "ưôi"
+"uói" + "o" > "ưối"
+"uòi" + "o" > "ưồi"
+"uỏi" + "o" > "ưổi"
+"uõi" + "o" > "ưỗi"
+"uọi" + "o" > "ưội"
+
+"UOI" + "W" > "ƯƠI"
+"UÓI" + "W" > "ƯỚI"
+"UÒI" + "W" > "ƯỜI"
+"UỎI" + "W" > "ƯỞI"
+"UÕI" + "W" > "ƯỠI"
+"UỌI" + "W" > "ƯỢI"
+
+"UOI" + "O" > "ƯÔI"
+"UÓI" + "O" > "ƯỐI"
+"UÒI" + "O" > "ƯỒI"
+"UỎI" + "O" > "ƯỔI"
+"UÕI" + "O" > "ƯỖI"
+"UỌI" + "O" > "ƯỘI"
+
+"UOI" + "w" > "ƯƠI"
+"UÓI" + "w" > "ƯỚI"
+"UÒI" + "w" > "ƯỜI"
+"UỎI" + "w" > "ƯỞI"
+"UÕI" + "w" > "ƯỠI"
+"UỌI" + "w" > "ƯỢI"
+
+"UOI" + "o" > "ƯÔI"
+"UÓI" + "o" > "ƯỐI"
+"UÒI" + "o" > "ƯỒI"
+"UỎI" + "o" > "ƯỔI"
+"UÕI" + "o" > "ƯỖI"
+"UỌI" + "o" > "ƯỘI"
+
+"ú" + "w" > "ứ"
+"ù" + "w" > "ừ"
+"ủ" + "w" > "ử"
+"ũ" + "w" > "ữ"
+"ụ" + "w" > "ự"
+"Ú" + "W" > "Ứ"
+"Ù" + "W" > "Ừ"
+"Ủ" + "W" > "Ử"
+"Ũ" + "W" > "Ữ"
+"Ụ" + "W" > "Ự"
+"Ú" + "w" > "Ứ"
+"Ù" + "w" > "Ừ"
+"Ủ" + "w" > "Ử"
+"Ũ" + "w" > "Ữ"
+"Ụ" + "w" > "Ự"
+
+"ấ" + "w" > "ắ"
+"ầ" + "w" > "ằ"
+"ẩ" + "w" > "ẳ"
+"ẫ" + "w" > "ẵ"
+"ậ" + "w" > "ặ"
+
+"Ấ" + "W" > "Ắ"
+"Ầ" + "W" > "Ằ"
+"Ẩ" + "W" > "Ẳ"
+"Ẫ" + "W" > "Ẵ"
+"Ậ" + "W" > "Ặ"
+
+"Ấ" + "w" > "Ắ"
+"Ầ" + "w" > "Ằ"
+"Ẩ" + "w" > "Ẳ"
+"Ẫ" + "w" > "Ẵ"
+"Ậ" + "w" > "Ặ"
+
+any(vowels_sac)'k' + 'j' > index(vowels_nang, 1)'k'
+any(vowels_sac)'t' + 'j' > index(vowels_nang, 1)'t'
+any(vowels_sac)'p' + 'j' > index(vowels_nang, 1)'p'
+any(vowels_nang)'k' + 's' > index(vowels_sac, 1)'k'
+any(vowels_nang)'t' + 's' > index(vowels_sac, 1)'t'
+any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
+
+"ńg" + [K_A] > "ngấ"
+"ńg" + "e" > "ngé"
+"ńg" + "i" > "ngí"
+"ńg" + "o" > "ngó"
+"ńg" + "u" > "ngú"
+"ń" + [K_A] > "nấ"
+"ń" + "e" > "né"
+"ń" + "i" > "ní"
+"ń" + "o" > "nó"
+"ń" + "u" > "nú"
+"ḿ" + [K_A] > "mấ"
+"ḿ" + "e" > "mé"
+"ḿ" + "i" > "mí"
+"ḿ" + "o" > "mó"
+"ḿ" + "u" > "mú"
+
+"ǹg" + [K_A] > "ngầ"
+"ǹg" + "e" > "ngè"
+"ǹg" + "i" > "ngì"
+"ǹg" + "o" > "ngò"
+"ǹg" + "u" > "ngù"
+"ǹ" + [K_A] > "nầ"
+"ǹ" + "e" > "nè"
+"ǹ" + "i" > "nì"
+"ǹ" + "o" > "nò"
+"ǹ" + "u" > "nù"
+"m̀" + [K_A] > "mầ"
+"m̀" + "e" > "mè"
+"m̀" + "i" > "mì"
+"m̀" + "o" > "mò"
+"m̀" + "u" > "mù"
+
+"n̉g" + [K_A] > "ngẩ"
+"n̉g" + "e" > "ngẻ"
+"n̉g" + "i" > "ngỉ"
+"n̉g" + "o" > "ngỏ"
+"n̉g" + "u" > "ngủ"
+"n̉" + [K_A] > "nẩ"
+"n̉" + "e" > "nẻ"
+"n̉" + "i" > "nỉ"
+"n̉" + "o" > "nỏ"
+"n̉" + "u" > "nủ"
+"m̉" + [K_A] > "mẩ"
+"m̉" + "e" > "mẻ"
+"m̉" + "i" > "mỉ"
+"m̉" + "o" > "mỏ"
+"m̉" + "u" > "mủ"
+
+"ñg" + [K_A] > "ngẫ"
+"ñg" + "e" > "ngẽ"
+"ñg" + "i" > "ngĩ"
+"ñg" + "o" > "ngõ"
+"ñg" + "u" > "ngũ"
+"ñ" + [K_A] > "nẫ"
+"ñ" + "e" > "nẽ"
+"ñ" + "i" > "nĩ"
+"ñ" + "o" > "nõ"
+"ñ" + "u" > "nũ"
+"m͂" + [K_A] > "mẫ"
+"m͂" + "e" > "mẽ"
+"m͂" + "i" > "mĩ"
+"m͂" + "o" > "mõ"
+"m͂" + "u" > "mũ"
+
+"ṇg" + [K_A] > "ngậ"
+"ṇg" + "e" > "ngẹ"
+"ṇg" + "i" > "ngị"
+"ṇg" + "o" > "ngọ"
+"ṇg" + "u" > "ngụ"
+"ṇ" + [K_A] > "nậ"
+"ṇ" + "e" > "nẹ"
+"ṇ" + "i" > "nị"
+"ṇ" + "o" > "nọ"
+"ṇ" + "u" > "nụ"
+"ṃ" + [K_A] > "mậ"
+"ṃ" + "e" > "mẹ"
+"ṃ" + "i" > "mị"
+"ṃ" + "o" > "mọ"
+"ṃ" + "u" > "mụ"
+
+"ŃG" + [SHIFT K_A] > "NGẤ"
+"ŃG" + "E" > "NGÉ"
+"ŃG" + "I" > "NGÍ"
+"ŃG" + "O" > "NGÓ"
+"ŃG" + "U" > "NGÚ"
+"Ń" + [SHIFT K_A] > "NẤ"
+"Ń" + "E" > "NÉ"
+"Ń" + "I" > "NÍ"
+"Ń" + "O" > "NÓ"
+"Ń" + "U" > "NÚ"
+"Ḿ" + [SHIFT K_A] > "MẤ"
+"Ḿ" + "E" > "MÉ"
+"Ḿ" + "I" > "MÍ"
+"Ḿ" + "O" > "MÓ"
+"Ḿ" + "U" > "MÚ"
+
+"ǸG" + [SHIFT K_A] > "NGẦ"
+"ǸG" + "E" > "NGÈ"
+"ǸG" + "I" > "NGÌ"
+"ǸG" + "O" > "NGÒ"
+"ǸG" + "U" > "NGÙ"
+"Ǹ" + [SHIFT K_A] > "NẦ"
+"Ǹ" + "E" > "NÈ"
+"Ǹ" + "I" > "NÌ"
+"Ǹ" + "O" > "NÒ"
+"Ǹ" + "U" > "NÙ"
+"M̀" + [SHIFT K_A] > "MẦ"
+"M̀" + "E" > "MÈ"
+"M̀" + "I" > "MÌ"
+"M̀" + "O" > "MÒ"
+"M̀" + "U" > "MÙ"
+
+"N̉G" + [SHIFT K_A] > "NGẨ"
+"N̉G" + "E" > "NGẺ"
+"N̉G" + "I" > "NGỈ"
+"N̉G" + "O" > "NGỎ"
+"N̉G" + "U" > "NGỦ"
+"N̉" + [SHIFT K_A] > "NẨ"
+"N̉" + "E" > "NẺ"
+"N̉" + "I" > "NỈ"
+"N̉" + "O" > "NỎ"
+"N̉" + "U" > "NỦ"
+"M̉" + [SHIFT K_A] > "MẨ"
+"M̉" + "E" > "MẺ"
+"M̉" + "I" > "MỈ"
+"M̉" + "O" > "MỎ"
+"M̉" + "U" > "MỦ"
+
+"ÑG" + [SHIFT K_A] > "NGẪ"
+"ÑG" + "E" > "NGẼ"
+"ÑG" + "I" > "NGĨ"
+"ÑG" + "O" > "NGÕ"
+"ÑG" + "U" > "NGŨ"
+"Ñ" + [SHIFT K_A] > "NẪ"
+"Ñ" + "E" > "NẼ"
+"Ñ" + "I" > "NĨ"
+"Ñ" + "O" > "NÕ"
+"Ñ" + "U" > "NŨ"
+"M͂" + [SHIFT K_A] > "MẪ"
+"M͂" + "E" > "MẼ"
+"M͂" + "I" > "MĨ"
+"M͂" + "O" > "MÕ"
+"M͂" + "U" > "MŨ"
+
+"ṆG" + [SHIFT K_A] > "NGẬ"
+"ṆG" + "E" > "NGẸ"
+"ṆG" + "I" > "NGỊ"
+"ṆG" + "O" > "NGỌ"
+"ṆG" + "U" > "NGỤ"
+"Ṇ" + [SHIFT K_A] > "NẬ"
+"Ṇ" + "E" > "NẸ"
+"Ṇ" + "I" > "NỊ"
+"Ṇ" + "O" > "NỌ"
+"Ṇ" + "U" > "NỤ"
+"Ṃ" + [SHIFT K_A] > "MẬ"
+"Ṃ" + "E" > "MẸ"
+"Ṃ" + "I" > "MỊ"
+"Ṃ" + "O" > "MỌ"
+"Ṃ" + "U" > "MỤ"
+
+"Ńg" + [K_A] > "Ngấ"
+"Ńg" + "e" > "Ngé"
+"Ńg" + "i" > "Ngí"
+"Ńg" + "o" > "Ngó"
+"Ńg" + "u" > "Ngú"
+"Ń" + [K_A] > "Nấ"
+"Ń" + "e" > "Né"
+"Ń" + "i" > "Ní"
+"Ń" + "o" > "Nó"
+"Ń" + "u" > "Nú"
+"Ḿ" + [K_A] > "Mấ"
+"Ḿ" + "e" > "Mé"
+"Ḿ" + "i" > "Mí"
+"Ḿ" + "o" > "Mó"
+"Ḿ" + "u" > "Mú"
+
+"Ǹg" + [K_A] > "Ngầ"
+"Ǹg" + "e" > "Ngè"
+"Ǹg" + "i" > "Ngì"
+"Ǹg" + "o" > "Ngò"
+"Ǹg" + "u" > "Ngù"
+"Ǹ" + [K_A] > "Nầ"
+"Ǹ" + "e" > "Nè"
+"Ǹ" + "i" > "Nì"
+"Ǹ" + "o" > "Nò"
+"Ǹ" + "u" > "Nù"
+"M̀" + [K_A] > "Mầ"
+"M̀" + "e" > "Mè"
+"M̀" + "i" > "Mì"
+"M̀" + "o" > "Mò"
+"M̀" + "u" > "Mù"
+
+"N̉g" + [K_A] > "Ngẩ"
+"N̉g" + "e" > "Ngẻ"
+"N̉g" + "i" > "Ngỉ"
+"N̉g" + "o" > "Ngỏ"
+"N̉g" + "u" > "Ngủ"
+"N̉" + [K_A] > "Nẩ"
+"N̉" + "e" > "Nẻ"
+"N̉" + "i" > "Nỉ"
+"N̉" + "o" > "Nỏ"
+"N̉" + "u" > "Nủ"
+"M̉" + [K_A] > "Mẩ"
+"M̉" + "e" > "Mẻ"
+"M̉" + "i" > "Mỉ"
+"M̉" + "o" > "Mỏ"
+"M̉" + "u" > "Mủ"
+
+"Ñg" + [K_A] > "Ngẫ"
+"Ñg" + "e" > "Ngẽ"
+"Ñg" + "i" > "Ngĩ"
+"Ñg" + "o" > "Ngõ"
+"Ñg" + "u" > "Ngũ"
+"Ñ" + [K_A] > "Nẫ"
+"Ñ" + "e" > "Nẽ"
+"Ñ" + "i" > "Nĩ"
+"Ñ" + "o" > "Nõ"
+"Ñ" + "u" > "Nũ"
+"M͂" + [K_A] > "Mẫ"
+"M͂" + "e" > "Mẽ"
+"M͂" + "i" > "Mĩ"
+"M͂" + "o" > "Mõ"
+"M͂" + "u" > "Mũ"
+
+"Ṇg" + [K_A] > "Ngậ"
+"Ṇg" + "e" > "Ngẹ"
+"Ṇg" + "i" > "Ngị"
+"Ṇg" + "o" > "Ngọ"
+"Ṇg" + "u" > "Ngụ"
+"Ṇ" + [K_A] > "Nậ"
+"Ṇ" + "e" > "Nẹ"
+"Ṇ" + "i" > "Nị"
+"Ṇ" + "o" > "Nọ"
+"Ṇ" + "u" > "Nụ"
+"Ṃ" + [K_A] > "Mậ"
+"Ṃ" + "e" > "Mẹ"
+"Ṃ" + "i" > "Mị"
+"Ṃ" + "o" > "Mọ"
+"Ṃ" + "u" > "Mụ"
+
+"ú" + "e" > "ué"
+"ù" + "e" > "uè"
+"ủ" + "e" > "uẻ"
+"ũ" + "e" > "uẽ"
+"ụ" + "e" > "uẹ"
+
+"Ú" + "E" > "UÉ"
+"Ù" + "E" > "UÈ"
+"Ủ" + "E" > "UẺ"
+"Ũ" + "E" > "UẼ"
+"Ụ" + "E" > "UẸ"
+
+"Ú" + "e" > "Ué"
+"Ù" + "e" > "Uè"
+"Ủ" + "e" > "Uẻ"
+"Ũ" + "e" > "Uẽ"
+"Ụ" + "e" > "Uẹ"
+
+"ý" + [K_A] > "yấ"
+"ỳ" + [K_A] > "yầ"
+"ỷ" + [K_A] > "yẩ"
+"ỹ" + [K_A] > "yẫ"
+"ỵ" + [K_A] > "yậ"
+
+"ý" + "e" > "yé"
+"ỳ" + "e" > "yè"
+"ỷ" + "e" > "yẻ"
+"ỹ" + "e" > "yẽ"
+"ỵ" + "e" > "yẹ"
+
+"ý" + "u" > "yú"
+"ỳ" + "u" > "yù"
+"ỷ" + "u" > "yủ"
+"ỹ" + "u" > "yũ"
+"ỵ" + "u" > "yụ"
+
+"ý" + "o" > "yó"
+"ỳ" + "o" > "yò"
+"ỷ" + "o" > "yỏ"
+"ỹ" + "o" > "yõ"
+"ỵ" + "o" > "yọ"
+
+"ý" + "i" > "yí"
+"ỳ" + "i" > "yì"
+"ỷ" + "i" > "yỉ"
+"ỹ" + "i" > "yĩ"
+"ỵ" + "i" > "yị"
+
+"ý" + [K_V] > "yéu"
+"ỳ" + [K_V] > "yèu"
+"ỷ" + [K_V] > "yẻu"
+"ỹ" + [K_V] > "yẽu"
+"ỵ" + [K_V] > "yẹu"
+
+"Ý" + [SHIFT K_A] > "YẤ"
+"Ỳ" + [SHIFT K_A] > "YẦ"
+"Ỷ" + [SHIFT K_A] > "YẨ"
+"Ỹ" + [SHIFT K_A] > "YẪ"
+"Ỵ" + [SHIFT K_A] > "YẬ"
+
+"Ý" + "E" > "YÉ"
+"Ỳ" + "E" > "YÈ"
+"Ỷ" + "E" > "YẺ"
+"Ỹ" + "E" > "YẼ"
+"Ỵ" + "E" > "YẸ"
+
+"Ý" + "U" > "YÚ"
+"Ỳ" + "U" > "YÙ"
+"Ỷ" + "U" > "YỦ"
+"Ỹ" + "U" > "YŨ"
+"Ỵ" + "U" > "YỤ"
+
+"Ý" + "O" > "YÓ"
+"Ỳ" + "O" > "YÒ"
+"Ỷ" + "O" > "YỎ"
+"Ỹ" + "O" > "YÕ"
+"Ỵ" + "O" > "YỌ"
+
+"Ý" + "I" > "YÍ"
+"Ỳ" + "I" > "YÌ"
+"Ỷ" + "I" > "YỈ"
+"Ỹ" + "I" > "YĨ"
+"Ỵ" + "I" > "YỊ"
+
+"Ý" + [SHIFT K_V] > "YÉU"
+"Ỳ" + [SHIFT K_V] > "YÈU"
+"Ỷ" + [SHIFT K_V] > "YẺU"
+"Ỹ" + [SHIFT K_V] > "YẼU"
+"Ỵ" + [SHIFT K_V] > "YẸU"
+
+"Ý" + [K_A] > "Yấ"
+"Ỳ" + [K_A] > "Yầ"
+"Ỷ" + [K_A] > "Yẩ"
+"Ỹ" + [K_A] > "Yẫ"
+"Ỵ" + [K_A] > "Yậ"
+
+"Ý" + "e" > "Yé"
+"Ỳ" + "e" > "Yè"
+"Ỷ" + "e" > "Yẻ"
+"Ỹ" + "e" > "Yẽ"
+"Ỵ" + "e" > "Yẹ"
+
+"Ý" + "u" > "Yú"
+"Ỳ" + "u" > "Yù"
+"Ỷ" + "u" > "Yủ"
+"Ỹ" + "u" > "Yũ"
+"Ỵ" + "u" > "Yụ"
+
+"Ý" + "o" > "Yó"
+"Ỳ" + "o" > "Yò"
+"Ỷ" + "o" > "Yỏ"
+"Ỹ" + "o" > "Yõ"
+"Ỵ" + "o" > "Yọ"
+
+"Ý" + "i" > "Yí"
+"Ỳ" + "i" > "Yì"
+"Ỷ" + "i" > "Yỉ"
+"Ỹ" + "i" > "Yĩ"
+"Ỵ" + "i" > "Yị"
+
+"Ý" + [K_V] > "Yéu"
+"Ỳ" + [K_V] > "Yèu"
+"Ỷ" + [K_V] > "Yẻu"
+"Ỹ" + [K_V] > "Yu"
+"Ỵ" + [K_V] > "Yẹu"
+
++ [NCAPS K_Z] > "ch"
++ [CAPS K_Z] > "C"
++ [NCAPS SHIFT K_Z] > "Ch"
++ [CAPS SHIFT K_Z] > "C"
++ [NCAPS ALT K_Z] > "ch"
++ [NCAPS ALT SHIFT K_Z] > "Ch"
+
+"ch" + "z" > "z"
+"Ch" + "z" > "Z"
+"Ch" + "Z" > "Z"
+
+any(all_letters) + "z" > index(all_letters, 1) "z"
+any(all_letters) + "Z" > index(all_letters, 1) "Z"
+any(vowels) + "z" > index(vowels, 1) "z"
+any(vowels) + "Z" > index(vowels, 1) "Z"
+any(vowels_hoi) + "z" > index(vowels, 1)
+any(vowels_hoi) + "Z" > index(vowels, 1)
+any(vowels_sac) + "z" > index(vowels, 1)
+any(vowels_sac) + "Z" > index(vowels, 1)
+any(vowels_huyen) + "z" > index(vowels, 1)
+any(vowels_huyen) + "Z" > index(vowels, 1)
+any(vowels_nga) + "z" > index(vowels, 1)
+any(vowels_nga) + "Z" > index(vowels, 1)
+any(vowels_nang) + "z" > index(vowels, 1)
+any(vowels_nang) + "Z" > index(vowels, 1)
+any(vowels_sac) any(end_consonants) + "z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_huyen) any(end_consonants) + "z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_hoi) any(end_consonants) + "z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_nga) any(end_consonants) + "z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_nang) any(end_consonants) + "z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_sac) any(end_consonants) + "Z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_huyen) any(end_consonants) + "Z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_hoi) any(end_consonants) + "Z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_nga) any(end_consonants) + "Z" > index(vowels, 1) index(end_consonants, 2)
+any(vowels_nang) any(end_consonants) + "Z" > index(vowels, 1) index(end_consonants, 2)
+
+any(vowels_sac) "NG" + "z" > index(vowels, 1) "NG"
+any(vowels_huyen) "NG" + "z" > index(vowels, 1) "NG"
+any(vowels_hoi) "NG" + "z" > index(vowels, 1) "NG"
+any(vowels_nga) "NG" + "z" > index(vowels, 1) "NG"
+any(vowels_nang) "NG" + "z" > index(vowels, 1) "NG"
+any(vowels_sac) "NG" + "Z" > index(vowels, 1) "NG"
+any(vowels_huyen) "NG" + "Z" > index(vowels, 1) "NG"
+any(vowels_hoi) "NG" + "Z" > index(vowels, 1) "NG"
+any(vowels_nga) "NG" + "Z" > index(vowels, 1) "NG"
+any(vowels_nang) "NG" + "Z" > index(vowels, 1) "NG"
+any(vowels_sac) "ng" + "z" > index(vowels, 1) "ng"
+any(vowels_huyen) "ng" + "z" > index(vowels, 1) "ng"
+any(vowels_hoi) "ng" + "z" > index(vowels, 1) "ng"
+any(vowels_nga) "ng" + "z" > index(vowels, 1) "ng"
+any(vowels_nang) "ng" + "z" > index(vowels, 1) "ng"
+any(vowels_sac) "ng" + "Z" > index(vowels, 1) "ng"
+any(vowels_huyen) "ng" + "Z" > index(vowels, 1) "ng"
+any(vowels_hoi) "ng" + "Z" > index(vowels, 1) "ng"
+any(vowels_nga) "ng" + "Z" > index(vowels, 1) "ng"
+any(vowels_nang) "ng" + "Z" > index(vowels, 1) "ng"
+any(vowels_sac) "NH" + "z" > index(vowels, 1) "NH"
+any(vowels_huyen) "NH" + "z" > index(vowels, 1) "NH"
+any(vowels_hoi) "NH" + "z" > index(vowels, 1) "NH"
+any(vowels_nga) "NH" + "z" > index(vowels, 1) "NH"
+any(vowels_nang) "NH" + "z" > index(vowels, 1) "NH"
+any(vowels_sac) "NH" + "Z" > index(vowels, 1) "NH"
+any(vowels_huyen) "NH" + "Z" > index(vowels, 1) "NH"
+any(vowels_hoi) "NH" + "Z" > index(vowels, 1) "NH"
+any(vowels_nga) "NH" + "Z" > index(vowels, 1) "NH"
+any(vowels_nang) "NH" + "Z" > index(vowels, 1) "NH"
+any(vowels_sac) "nh" + "z" > index(vowels, 1) "nh"
+any(vowels_huyen) "nh" + "z" > index(vowels, 1) "nh"
+any(vowels_hoi) "nh" + "z" > index(vowels, 1) "nh"
+any(vowels_nga) "nh" + "z" > index(vowels, 1) "nh"
+any(vowels_nang) "nh" + "z" > index(vowels, 1) "nh"
+any(vowels_sac) "nh" + "Z" > index(vowels, 1) "nh"
+any(vowels_huyen) "nh" + "Z" > index(vowels, 1) "nh"
+any(vowels_hoi) "nh" + "Z" > index(vowels, 1) "nh"
+any(vowels_nga) "nh" + "Z" > index(vowels, 1) "nh"
+any(vowels_nang) "nh" + "Z" > index(vowels, 1) "nh"
+any(vowels_sac) "CH" + "z" > index(vowels, 1) "CH"
+any(vowels_huyen) "CH" + "z" > index(vowels, 1) "CH"
+any(vowels_hoi) "CH" + "z" > index(vowels, 1) "CH"
+any(vowels_nga) "CH" + "z" > index(vowels, 1) "CH"
+any(vowels_nang) "CH" + "z" > index(vowels, 1) "CH"
+any(vowels_sac) "CH" + "Z" > index(vowels, 1) "CH"
+any(vowels_huyen) "CH" + "Z" > index(vowels, 1) "CH"
+any(vowels_hoi) "CH" + "Z" > index(vowels, 1) "CH"
+any(vowels_nga) "CH" + "Z" > index(vowels, 1) "CH"
+any(vowels_nang) "CH" + "Z" > index(vowels, 1) "CH"
+any(vowels_sac) "ch" + "z" > index(vowels, 1) "ch"
+any(vowels_huyen) "ch" + "z" > index(vowels, 1) "ch"
+any(vowels_hoi) "ch" + "z" > index(vowels, 1) "ch"
+any(vowels_nga) "ch" + "z" > index(vowels, 1) "ch"
+any(vowels_nang) "ch" + "z" > index(vowels, 1) "ch"
+any(vowels_sac) "ch" + "Z" > index(vowels, 1) "ch"
+any(vowels_huyen) "ch" + "Z" > index(vowels, 1) "ch"
+any(vowels_hoi) "ch" + "Z" > index(vowels, 1) "ch"
+any(vowels_nga) "ch" + "Z" > index(vowels, 1) "ch"
+any(vowels_nang) "ch" + "Z" > index(vowels, 1) "ch"
+any(vowels_sac) "U" + "z" > index(vowels, 1) "U"
+any(vowels_huyen) "U" + "z" > index(vowels, 1) "U"
+any(vowels_hoi) "U" + "z" > index(vowels, 1) "U"
+any(vowels_nga) "U" + "z" > index(vowels, 1) "U"
+any(vowels_nang) "U" + "z" > index(vowels, 1) "U"
+any(vowels_sac) "I" + "z" > index(vowels, 1) "I"
+any(vowels_huyen) "I" + "z" > index(vowels, 1) "I"
+any(vowels_hoi) "I" + "z" > index(vowels, 1) "I"
+any(vowels_nga) "I" + "z" > index(vowels, 1) "I"
+any(vowels_nang) "I" + "z" > index(vowels, 1) "I"
+any(vowels_sac) "U" + "Z" > index(vowels, 1) "U"
+any(vowels_huyen) "U" + "Z" > index(vowels, 1) "U"
+any(vowels_hoi) "U" + "Z" > index(vowels, 1) "U"
+any(vowels_nga) "U" + "Z" > index(vowels, 1) "U"
+any(vowels_nang) "U" + "Z" > index(vowels, 1) "U"
+any(vowels_sac) "I" + "Z" > index(vowels, 1) "I"
+any(vowels_huyen) "I" + "Z" > index(vowels, 1) "I"
+any(vowels_hoi) "I" + "Z" > index(vowels, 1) "I"
+any(vowels_nga) "I" + "Z" > index(vowels, 1) "I"
+any(vowels_nang) "I" + "Z" > index(vowels, 1) "I"
+any(vowels_sac) "u" + "z" > index(vowels, 1) "u"
+any(vowels_huyen) "u" + "z" > index(vowels, 1) "u"
+any(vowels_hoi) "u" + "z" > index(vowels, 1) "u"
+any(vowels_nga) "u" + "z" > index(vowels, 1) "u"
+any(vowels_nang) "u" + "z" > index(vowels, 1) "u"
+any(vowels_sac) "i" + "z" > index(vowels, 1) "i"
+any(vowels_huyen) "i" + "z" > index(vowels, 1) "i"
+any(vowels_hoi) "i" + "z" > index(vowels, 1) "i"
+any(vowels_nga) "i" + "z" > index(vowels, 1) "i"
+any(vowels_nang) "i" + "z" > index(vowels, 1) "i"
+any(vowels_sac) "u" + "Z" > index(vowels, 1) "u"
+any(vowels_huyen) "u" + "Z" > index(vowels, 1) "u"
+any(vowels_hoi) "u" + "Z" > index(vowels, 1) "u"
+any(vowels_nga) "u" + "Z" > index(vowels, 1) "u"
+any(vowels_nang) "u" + "Z" > index(vowels, 1) "u"
+any(vowels_sac) "i" + "Z" > index(vowels, 1) "i"
+any(vowels_huyen) "i" + "Z" > index(vowels, 1) "i"
+any(vowels_hoi) "i" + "Z" > index(vowels, 1) "i"
+any(vowels_nga) "i" + "Z" > index(vowels, 1) "i"
+any(vowels_nang) "i" + "Z" > index(vowels, 1) "i"
+
++ [NCAPS K_C] > "ts"
++ [CAPS K_C] > "C"
++ [NCAPS SHIFT K_C] > "Ts"
++ [CAPS SHIFT K_C] > "C"
++ [NCAPS ALT K_C] > "ts"
++ [NCAPS ALT SHIFT K_C] > "Ts"
+
+"ts" + "c" > "c"
+"Ts" + "c" > "C"
+"Ts" + "C" > "C"
+
+any(all_letters) + "c" > index(all_letters, 1) "c"
+any(all_letters) + "C" > index(all_letters, 1) "C"
+
+any(vowels) + "c" > index(vowels, 1) "c"
+any(vowels) + "C" > index(vowels, 1) "C"
+any(vowels_hoi) + "c" > index(vowels_hoi, 1) "c"
+any(vowels_hoi) + "C" > index(vowels_hoi, 1) "C"
+any(vowels_sac) + "c" > index(vowels_sac, 1) "c"
+any(vowels_sac) + "C" > index(vowels_sac, 1) "C"
+any(vowels_huyen) + "c" > index(vowels_huyen, 1) "c"
+any(vowels_huyen) + "C" > index(vowels_huyen, 1) "C"
+any(vowels_nga) + "c" > index(vowels_nga, 1) "c"
+any(vowels_nga) + "C" > index(vowels_nga, 1) "C"
+any(vowels_nang) + "c" > index(vowels_nang, 1) "c"
+any(vowels_nang) + "C" > index(vowels_nang, 1) "C"
+
+"m̉" + "s" > "ḿ"
+"m͂" + "s" > "ḿ"
+"ṃ" + "s" > "ḿ"
+"m̀" + "s" > "ḿ"
+"m͂" + "r" > "m̉"
+"ḿ" + "r" > "m̉"
+"m̀" + "r" > "m̉"
+"ṃ" + "r" > "m̉"
+"m̉" + "f" > "m̀"
+"ḿ" + "f" > "m̀"
+"m͂" + "f" > "m̀"
+"ṃ" + "f" > "m̀"
+"ḿ" + "j" > "ṃ"
+"m̉" + "j" > "ṃ"
+"m͂" + "j" > "ṃ"
+"m̀" + "j" > "ṃ"
+"ḿ" + "x" > "m͂"
+"m̉" + "x" > "m͂"
+"m̀" + "x" > "m͂"
+"ṃ" + "x" > "m͂"
+"n̉" + "s" > "ń"
+"ñ" + "s" > "ń"
+"ṇ" + "s" > "ń"
+"ǹ" + "s" > "ń"
+"ñ" + "r" > "n̉"
+"ń" + "r" > "n̉"
+"ǹ" + "r" > "n̉"
+"ṇ" + "r" > "n̉"
+"n̉" + "f" > "ǹ"
+"ń" + "f" > "ǹ"
+"ñ" + "f" > "ǹ"
+"ṇ" + "f" > "ǹ"
+"ń" + "j" > "ṇ"
+"n̉" + "j" > "ṇ"
+"ñ" + "j" > "ṇ"
+"ǹ" + "j" > "ṇ"
+"ń" + "x" > "ñ"
+"n̉" + "x" > "ñ"
+"ǹ" + "x" > "ñ"
+"ṇ" + "x" > "ñ"
+"n̉g" + "s" > "ńg"
+"ñg" + "s" > "ńg"
+"ṇg" + "s" > "ńg"
+"ǹg" + "s" > "ńg"
+"ñg" + "r" > "n̉g"
+"ńg" + "r" > "n̉g"
+"ǹg" + "r" > "n̉g"
+"ṇg" + "r" > "n̉g"
+"n̉g" + "f" > "ǹg"
+"ńg" + "f" > "ǹg"
+"ñg" + "f" > "ǹg"
+"ṇg" + "f" > "ǹg"
+"ńg" + "j" > "ṇg"
+"n̉g" + "j" > "ṇg"
+"ñg" + "j" > "ṇg"
+"ǹg" + "j" > "ṇg"
+"ńg" + "x" > "ñg"
+"n̉g" + "x" > "ñg"
+"ǹg" + "x" > "ñg"
+"ṇg" + "x" > "ñg"
+
+"M̉" + "S" > "Ḿ"
+"M͂" + "S" > "Ḿ"
+"Ṃ" + "S" > "Ḿ"
+"M̀" + "S" > "Ḿ"
+"M͂" + "R" > "M̉"
+"Ḿ" + "R" > "M̉"
+"M̀" + "R" > "M̉"
+"Ṃ" + "R" > "M̉"
+"M̉" + "F" > "M̀"
+"Ḿ" + "F" > "M̀"
+"M͂" + "F" > "M̀"
+"Ṃ" + "F" > "M̀"
+"Ḿ" + "J" > "Ṃ"
+"M̉" + "J" > "Ṃ"
+"M͂" + "J" > "Ṃ"
+"M̀" + "J" > "Ṃ"
+"Ḿ" + "X" > "M͂"
+"M̉" + "X" > "M͂"
+"M̀" + "X" > "M͂"
+"Ṃ" + "X" > "M͂"
+"N̉" + "S" > "Ń"
+"Ñ" + "S" > "Ń"
+"Ṇ" + "S" > "Ń"
+"Ǹ" + "S" > "Ń"
+"Ñ" + "R" > "N̉"
+"Ń" + "R" > "N̉"
+"Ǹ" + "R" > "N̉"
+"Ṇ" + "R" > "N̉"
+"N̉" + "F" > "Ǹ"
+"Ń" + "F" > "Ǹ"
+"Ñ" + "F" > "Ǹ"
+"Ṇ" + "F" > "Ǹ"
+"Ń" + "J" > "Ṇ"
+"N̉" + "J" > "Ṇ"
+"Ñ" + "J" > "Ṇ"
+"Ǹ" + "J" > "Ṇ"
+"Ń" + "X" > "Ñ"
+"N̉" + "X" > "Ñ"
+"Ǹ" + "X" > "Ñ"
+"Ṇ" + "X" > "Ñ"
+"N̉G" + "S" > "ŃG"
+"ÑG" + "S" > "ŃG"
+"ṆG" + "S" > "ŃG"
+"ǸG" + "S" > "ŃG"
+"ÑG" + "R" > "N̉G"
+"ŃG" + "R" > "N̉G"
+"ǸG" + "R" > "N̉G"
+"ṆG" + "R" > "N̉G"
+"N̉G" + "F" > "ǸG"
+"ŃG" + "F" > "ǸG"
+"ÑG" + "F" > "ǸG"
+"ṆG" + "F" > "ǸG"
+"ŃG" + "J" > "ṆG"
+"N̉G" + "J" > "ṆG"
+"ÑG" + "J" > "ṆG"
+"ǸG" + "J" > "ṆG"
+"ŃG" + "X" > "ÑG"
+"N̉G" + "X" > "ÑG"
+"ǸG" + "X" > "ÑG"
+"ṆG" + "X" > "ÑG"
+"M̉" + "s" > "Ḿ"
+"M͂" + "s" > "Ḿ"
+"Ṃ" + "s" > "Ḿ"
+"M̀" + "s" > "Ḿ"
+"M͂" + "r" > "M̉"
+"Ḿ" + "r" > "M̉"
+"M̀" + "r" > "M̉"
+"Ṃ" + "r" > "M̉"
+"M̉" + "f" > "M̀"
+"Ḿ" + "f" > "M̀"
+"M͂" + "f" > "M̀"
+"Ṃ" + "f" > "M̀"
+"Ḿ" + "j" > "Ṃ"
+"M̉" + "j" > "Ṃ"
+"M͂" + "j" > "Ṃ"
+"M̀" + "j" > "Ṃ"
+"Ḿ" + "x" > "M͂"
+"M̉" + "x" > "M͂"
+"M̀" + "x" > "M͂"
+"Ṃ" + "x" > "M͂"
+"N̉" + "s" > "Ń"
+"Ñ" + "s" > "Ń"
+"Ṇ" + "s" > "Ń"
+"Ǹ" + "s" > "Ń"
+"Ñ" + "r" > "N̉"
+"Ń" + "r" > "N̉"
+"Ǹ" + "r" > "N̉"
+"Ṇ" + "r" > "N̉"
+"N̉" + "f" > "Ǹ"
+"Ń" + "f" > "Ǹ"
+"Ñ" + "f" > "Ǹ"
+"Ṇ" + "f" > "Ǹ"
+"Ń" + "j" > "Ṇ"
+"N̉" + "j" > "Ṇ"
+"Ñ" + "j" > "Ṇ"
+"Ǹ" + "j" > "Ṇ"
+"Ń" + "x" > "Ñ"
+"N̉" + "x" > "Ñ"
+"Ǹ" + "x" > "Ñ"
+"Ṇ" + "x" > "Ñ"
+"N̉G" + "s" > "ŃG"
+"ÑG" + "s" > "ŃG"
+"ṆG" + "s" > "ŃG"
+"ǸG" + "s" > "ŃG"
+"ÑG" + "r" > "N̉G"
+"ŃG" + "r" > "N̉G"
+"ǸG" + "r" > "N̉G"
+"ṆG" + "r" > "N̉G"
+"N̉G" + "f" > "ǸG"
+"ŃG" + "f" > "ǸG"
+"ÑG" + "f" > "ǸG"
+"ṆG" + "f" > "ǸG"
+"ŃG" + "j" > "ṆG"
+"N̉G" + "j" > "ṆG"
+"ÑG" + "j" > "ṆG"
+"ǸG" + "j" > "ṆG"
+"ŃG" + "x" > "ÑG"
+"N̉G" + "x" > "ÑG"
+"ǸG" + "x" > "ÑG"
+"ṆG" + "x" > "ÑG"
+"N̉g" + "s" > "Ńg"
+"Ñg" + "s" > "Ńg"
+"Ṇg" + "s" > "Ńg"
+"Ǹg" + "s" > "Ńg"
+"Ñg" + "r" > "N̉g"
+"Ńg" + "r" > "N̉g"
+"Ǹg" + "r" > "N̉g"
+"Ṇg" + "r" > "N̉g"
+"N̉g" + "f" > "Ǹg"
+"Ńg" + "f" > "Ǹg"
+"Ñg" + "f" > "Ǹg"
+"Ṇg" + "f" > "Ǹg"
+"Ńg" + "j" > "Ṇg"
+"N̉g" + "j" > "Ṇg"
+"Ñg" + "j" > "Ṇg"
+"Ǹg" + "j" > "Ṇg"
+"Ńg" + "x" > "Ñg"
+"N̉g" + "x" > "Ñg"
+"Ǹg" + "x" > "Ñg"
+"Ṇg" + "x" > "Ñg"
+
+'e' + 'a' > 'ea'
+'E' + 'a' > 'Ea'
+
+any(vowels) any(consonants) any(vowels) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(vowels, 3) index(all_letters, 4)
+any(vowels) any(consonants) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+any(vowels) any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(vowels, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index (all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8) index(all_letters, 9)
+
+
+any(vowels) any(consonants) + 'a' > index(vowels, 1) index(consonants, 2) 'a'
+any(vowels) any(consonants) + 'A' > index(vowels, 1) index(consonants, 2) 'A'
+
+'ch'any(consonants) + any(all_letters) > 'ch' index(consonants, 3) index(all_letters, 4)
+'Ch'any(consonants) + any(all_letters) > 'Ch' index(consonants, 3) index(all_letters, 4)
+'ch'any(consonants) any(all_letters) + any(all_letters) > 'ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5)
+'ch'any(consonants) any(all_letters) any(all_letters) + any(all_letters) > 'ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'ch'any(consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+'ch'any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+'Ch'any(consonants) any(all_letters) + any(all_letters) > 'Ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5)
+'Ch'any(consonants) any(all_letters) any(all_letters) + any(all_letters) > 'Ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'Ch'any(consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'Ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+'Ch'any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'Ch' index(consonants, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7) index(all_letters, 8)
+'d'any(un_z_consonants) + any(all_letters) > 'd' index(un_z_consonants, 2) index(all_letters, 3)
+'D'any(un_z_consonants) + any(all_letters) > 'D' index(un_z_consonants, 2) index(all_letters, 3)
+'d'any(un_z_consonants) any(all_letters) + any(all_letters) > 'd' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+'d'any(un_z_consonants) any(all_letters) any(all_letters) + any(all_letters) > 'd' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'d'any(un_z_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'd' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'d'any(un_z_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'd' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+'D'any(un_z_consonants) any(all_letters) + any(all_letters) > 'D' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+'D'any(un_z_consonants) any(all_letters) any(all_letters) + any(all_letters) > 'D' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'D'any(un_z_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'D' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'D'any(un_z_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'D' index(un_z_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+'t'any(un_hrs_consonants) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(all_letters, 3)
+'T'any(un_hrs_consonants) + any(all_letters) > 'T' index(un_hrs_consonants, 2) index(all_letters, 3)
+'t'any(un_hrs_consonants) any(all_letters) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+'t'any(un_hrs_consonants) any(all_letters) any(all_letters) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'t'any(un_hrs_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'t'any(un_hrs_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 't' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+'T'any(un_hrs_consonants) any(all_letters) + any(all_letters) > 'T' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+'T'any(un_hrs_consonants) any(all_letters) any(all_letters) + any(all_letters) > 'T' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'T'any(un_hrs_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'T' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'T'any(un_hrs_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'T' index(un_hrs_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(fhjl) any(consonants) + any(all_letters) > index(fhjl, 1) index(consonants, 2) index(all_letters, 3)
+any(fhjl) any(consonants) any(all_letters) + any(all_letters) > index(fhjl, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4)
+any(fhjl) any(consonants) any(all_letters) any(all_letters) + any(all_letters) > index(fhjl, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(fhjl) any(consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(fhjl, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(fhjl) any(consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(fhjl, 1) index(consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(csgp) any(un_hw_consonants) + any(all_letters) > index(csgp, 1) index(un_hw_consonants, 2) index(all_letters, 3)
+any(csgp) any(un_hw_consonants) any(all_letters) + any(all_letters) > index(csgp, 1) index(un_hw_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+any(csgp) any(un_hw_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(csgp, 1) index(un_hw_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(csgp) any(un_hw_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(csgp, 1) index(un_hw_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(csgp) any(un_hw_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(csgp, 1) index(un_hw_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+
+
+'n'any(un_gh_consonants) + any(all_letters) > 'n' index(un_gh_consonants, 2) index(all_letters, 3)
+'N'any(un_gh_consonants) + any(all_letters) > 'N' index(un_gh_consonants, 2) index(all_letters, 3)
+'n'any(un_gh_consonants) any(all_letters) + any(all_letters) > 'n' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+'n'any(un_gh_consonants) any(all_letters) any(all_letters) + any(all_letters) > 'n' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'n'any(un_gh_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'n' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'n'any(un_gh_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'n' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+'N'any(un_gh_consonants) any(all_letters) + any(all_letters) > 'N' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+'N'any(un_gh_consonants) any(all_letters) any(all_letters) + any(all_letters) > 'N' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+'N'any(un_gh_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'N' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+'N'any(un_gh_consonants) any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > 'N' index(un_gh_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+
+
+any(consonants) any(un_second_consonants) + any(all_letters) > index(consonants, 1) index(un_second_consonants, 2) index(all_letters, 3)
+any(consonants) any(un_second_consonants) any(all_letters) + any(all_letters) > index(consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4)
+any(consonants) any(un_second_consonants) any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(consonants) any(un_second_consonants) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1) index(un_second_consonants, 2) index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(un_T_consonants)'r' + any(all_letters) > index(un_T_consonants, 1)'r' index(all_letters, 3)
+any(un_T_consonants)'R' + any(all_letters) > index(un_T_consonants, 1)'R' index(all_letters, 3)
+
+any(un_T_consonants)'r'any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(all_letters, 4)
+any(un_T_consonants)'r'any(all_letters) any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(un_T_consonants)'r'any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(un_T_consonants)'r'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'r' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(un_T_consonants)'R'any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(all_letters, 4)
+any(un_T_consonants)'R'any(all_letters) any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(un_T_consonants)'R'any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(un_T_consonants)'R'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_T_consonants, 1)'R' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(consonants)'l'any(all_letters) + any(all_letters) > index(consonants, 1)'l' index(all_letters, 3) index(all_letters, 4)
+any(consonants)'l'any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1)'l' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(consonants)'l'any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1)'l' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(consonants)'l'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1)'l' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(consonants)'L'any(all_letters) + any(all_letters) > index(consonants, 1)'L' index(all_letters, 3) index(all_letters, 4)
+any(consonants)'L'any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1)'L' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(consonants)'L'any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1)'L' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(consonants)'L'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(consonants, 1)'L' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(un_kg_consonants)'w'any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(all_letters, 4)
+any(un_kg_consonants)'w'any(all_letters) any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(un_kg_consonants)'w'any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(un_kg_consonants)'w'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'w' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+any(un_kg_consonants)'W'any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(all_letters, 4)
+any(un_kg_consonants)'W'any(all_letters) any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5)
+any(un_kg_consonants)'W'any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6)
+any(un_kg_consonants)'W'any(all_letters) any(all_letters) any(all_letters) any(all_letters) + any(all_letters) > index(un_kg_consonants, 1)'W' index(all_letters, 3) index(all_letters, 4) index(all_letters, 5) index(all_letters, 6) index(all_letters, 7)
+
+'ung' + 'w' > 'ưng'
+'um' + 'w' > 'ưm'
+'un' + 'w' > 'ưn'
+'uc' + 'w' > 'ưc'
+'ut' + 'w' > 'ưt'
+'up' + 'w' > 'ưp'
+'úng' + 'w' > 'ứng'
+'úm' + 'w' > 'ứm'
+'ún' + 'w' > 'ứn'
+'úc' + 'w' > 'ức'
+'út' + 'w' > 'ứt'
+'úp' + 'w' > 'ứp'
+'ùng' + 'w' > 'ừng'
+'ùm' + 'w' > 'ừm'
+'ùn' + 'w' > 'ừn'
+'ũng' + 'w' > 'ững'
+'ũm' + 'w' > 'ữm'
+'ũn' + 'w' > 'ữn'
+'ủng' + 'w' > 'ửng'
+'ủm' + 'w' > 'ửm'
+'ủn' + 'w' > 'ửn'
+'ụng' + 'w' > 'ựng'
+'ụm' + 'w' > 'ựm'
+'ụn' + 'w' > 'ựn'
+'ục' + 'w' > 'ực'
+'ụt' + 'w' > 'ựt'
+'ụp' + 'w' > 'ựp'
+'UNG' + 'W' > 'ƯNG'
+'UM' + 'W' > 'ƯM'
+'UN' + 'W' > 'ƯN'
+'UC' + 'W' > 'ƯC'
+'UT' + 'W' > 'ƯT'
+'UP' + 'W' > 'ƯP'
+'ÚNG' + 'W' > 'ỨNG'
+'ÚM' + 'W' > 'ỨM'
+'ÚN' + 'W' > 'ỨN'
+'ÚC' + 'W' > 'ỨC'
+'ÚT' + 'W' > 'ỨT'
+'ÚP' + 'W' > 'ỨP'
+'ÙNG' + 'W' > 'ỪNG'
+'ÙM' + 'W' > 'ỪM'
+'ÙN' + 'W' > 'ỪN'
+'ŨNG' + 'W' > 'ỮNG'
+'ŨM' + 'W' > 'ỮM'
+'ŨN' + 'W' > 'ỮN'
+'ỦNG' + 'W' > 'ỬNG'
+'ỦM' + 'W' > 'ỬM'
+'ỦN' + 'W' > 'ỬN'
+'ỤNG' + 'W' > 'ỰNG'
+'ỤM' + 'W' > 'ỰM'
+'ỤN' + 'W' > 'ỰN'
+'ỤC' + 'W' > 'ỰC'
+'ỤT' + 'W' > 'ỰT'
+'ỤP' + 'W' > 'ỰP'
+'UNG' + 'w' > 'ƯNG'
+'UM' + 'w' > 'ƯM'
+'UN' + 'w' > 'ƯN'
+'UC' + 'w' > 'ƯC'
+'UT' + 'w' > 'ƯT'
+'UP' + 'w' > 'ƯP'
+'ÚNG' + 'w' > 'ỨNG'
+'ÚM' + 'w' > 'ỨM'
+'ÚN' + 'w' > 'ỨN'
+'ÚC' + 'w' > 'ỨC'
+'ÚT' + 'w' > 'ỨT'
+'ÚP' + 'w' > 'ỨP'
+'ÙNG' + 'w' > 'ỪNG'
+'ÙM' + 'w' > 'ỪM'
+'ÙN' + 'w' > 'ỪN'
+'ŨNG' + 'w' > 'ỮNG'
+'ŨM' + 'w' > 'ỮM'
+'ŨN' + 'w' > 'ỮN'
+'ỦNG' + 'w' > 'ỬNG'
+'ỦM' + 'w' > 'ỬM'
+'ỦN' + 'w' > 'ỬN'
+'ỤNG' + 'w' > 'ỰNG'
+'ỤM' + 'w' > 'ỰM'
+'ỤN' + 'w' > 'ỰN'
+'ỤC' + 'w' > 'ỰC'
+'ỤT' + 'w' > 'ỰT'
+'ỤP' + 'w' > 'ỰP'
+'Ung' + 'w' > 'Ưng'
+'Um' + 'w' > 'Ưm'
+'Un' + 'w' > 'Ưn'
+'Uc' + 'w' > 'Ưc'
+'Ut' + 'w' > 'Ưt'
+'Up' + 'w' > 'Ưp'
+'Úng' + 'w' > 'Ứng'
+'Úm' + 'w' > 'Ứm'
+'Ún' + 'w' > 'Ứn'
+'Úc' + 'w' > 'Ức'
+'Út' + 'w' > 'Ứt'
+'Úp' + 'w' > 'Ứp'
+'Ùng' + 'w' > 'Ừng'
+'Ùm' + 'w' > 'Ừm'
+'Ùn' + 'w' > 'Ừn'
+'Ũng' + 'w' > 'Ững'
+'Ũm' + 'w' > 'Ữm'
+'Ũn' + 'w' > 'Ữn'
+'Ủng' + 'w' > 'Ửng'
+'Ủm' + 'w' > 'Ửm'
+'Ủn' + 'w' > 'Ửn'
+'Ụng' + 'w' > 'Ựng'
+'Ụm' + 'w' > 'Ựm'
+'Ụn' + 'w' > 'Ựn'
+'Ục' + 'w' > 'Ực'
+'Ụt' + 'w' > 'Ựt'
+'Ụp' + 'w' > 'Ựp'
+
+'ưng' + 'w' > 'ungw'
+'ưm' + 'w' > 'umw'
+'ưn' + 'w' > 'unw'
+'ưc' + 'w' > 'ucw'
+'ưt' + 'w' > 'utw'
+'ưp' + 'w' > 'upw'
+'ƯNG' + 'W' > 'UNGW'
+'ƯM' + 'W' > 'UMW'
+'ƯN' + 'W' > 'UNW'
+'ƯC' + 'W' > 'UCW'
+'ƯT' + 'W' > 'UTW'
+'ƯP' + 'W' > 'UPW'
+'ƯNG' + 'w' > 'UNGw'
+'ƯM' + 'w' > 'UMw'
+'ƯN' + 'w' > 'UNw'
+'ƯC' + 'w' > 'UCw'
+'ƯT' + 'w' > 'UTw'
+'ƯP' + 'w' > 'UPw'
+'Ưng' + 'w' > 'Ungw'
+'Ưm' + 'w' > 'Umw'
+'Ưn' + 'w' > 'Unw'
+'Ưc' + 'w' > 'Ucw'
+'Ưt' + 'w' > 'Utw'
+'Ưp' + 'w' > 'Upw'
+
+'om' + 'w' > 'ơm'
+'on' + 'w' > 'ơn'
+'oc' + 'w' > 'ơc'
+'ot' + 'w' > 'ơt'
+'op' + 'w' > 'ơp'
+'óm' + 'w' > 'ớm'
+'ón' + 'w' > 'ớn'
+'óc' + 'w' > 'ớc'
+'ót' + 'w' > 'ớt'
+'óp' + 'w' > 'ớp'
+'òm' + 'w' > 'ờm'
+'òn' + 'w' > 'ờn'
+'õm' + 'w' > 'ỡm'
+'õn' + 'w' > 'ỡn'
+'ỏm' + 'w' > 'ởm'
+'ỏn' + 'w' > 'ởn'
+'ọm' + 'w' > 'ợm'
+'ọn' + 'w' > 'ợn'
+'ọc' + 'w' > 'ợc'
+'ọt' + 'w' > 'ợt'
+'ọp' + 'w' > 'ợp'
+'OM' + 'W' > 'ƠM'
+'ON' + 'W' > 'ƠN'
+'OC' + 'W' > 'ƠC'
+'OT' + 'W' > 'ƠT'
+'OP' + 'W' > 'ƠP'
+'ÓM' + 'W' > 'ỚM'
+'ÓN' + 'W' > 'ỚN'
+'ÓC' + 'W' > 'ỚC'
+'ÓT' + 'W' > 'ỚT'
+'ÓP' + 'W' > 'ỚP'
+'ÒM' + 'W' > 'ỜM'
+'ÒN' + 'W' > 'ỜN'
+'ÕM' + 'W' > 'ỠM'
+'ÕN' + 'W' > 'ỠN'
+'ỎM' + 'W' > 'ỞM'
+'ỎN' + 'W' > 'ỞN'
+'ỌM' + 'W' > 'ỢM'
+'ỌN' + 'W' > 'ỢN'
+'ỌC' + 'W' > 'ỢC'
+'ỌT' + 'W' > 'ỢT'
+'ỌP' + 'W' > 'ỢP'
+'OM' + 'w' > 'ƠM'
+'ON' + 'w' > 'ƠN'
+'OC' + 'w' > 'ƠC'
+'OT' + 'w' > 'ƠT'
+'OP' + 'w' > 'ƠP'
+'ÓM' + 'w' > 'ỚM'
+'ÓN' + 'w' > 'ỚN'
+'ÓC' + 'w' > 'ỚC'
+'ÓT' + 'w' > 'ỚT'
+'ÓP' + 'w' > 'ỚP'
+'ÒM' + 'w' > 'ỜM'
+'ÒN' + 'w' > 'ỜN'
+'ÕM' + 'w' > 'ỠM'
+'ÕN' + 'w' > 'ỠN'
+'ỎM' + 'w' > 'ỞM'
+'ỎN' + 'w' > 'ỞN'
+'ỌM' + 'w' > 'ỢM'
+'ỌN' + 'w' > 'ỢN'
+'ỌC' + 'w' > 'ỢC'
+'ỌT' + 'w' > 'ỢT'
+'ỌP' + 'w' > 'ỢP'
+'Om' + 'w' > 'Ơm'
+'On' + 'w' > 'Ơn'
+'Oc' + 'w' > 'Ơc'
+'Ot' + 'w' > 'Ơt'
+'Op' + 'w' > 'Ơp'
+'Óm' + 'w' > 'Ớm'
+'Ón' + 'w' > 'Ớn'
+'Óc' + 'w' > 'Ớc'
+'Ót' + 'w' > 'Ớt'
+'Óp' + 'w' > 'Ớp'
+'Òm' + 'w' > 'Ờm'
+'Òn' + 'w' > 'Ờn'
+'Õm' + 'w' > 'Ỡm'
+'Õn' + 'w' > 'Ỡn'
+'Ỏm' + 'w' > 'Ởm'
+'Ỏn' + 'w' > 'Ởn'
+'Ọm' + 'w' > 'Ợm'
+'Ọn' + 'w' > 'Ợn'
+'Ọc' + 'w' > 'Ợc'
+'Ọt' + 'w' > 'Ợt'
+'Ọp' + 'w' > 'Ợp'
+'ơm' + 'w' > 'omw'
+'ơn' + 'w' > 'onw'
+'ơc' + 'w' > 'ocw'
+'ơt' + 'w' > 'otw'
+'ơp' + 'w' > 'opw'
+'ƠM' + 'W' > 'OMW'
+'ƠN' + 'W' > 'ONW'
+'ƠC' + 'W' > 'OCW'
+'ƠT' + 'W' > 'OTW'
+'ƠP' + 'W' > 'OPW'
+'ƠM' + 'w' > 'OMw'
+'ƠN' + 'w' > 'ONw'
+'ƠC' + 'w' > 'OCw'
+'ƠT' + 'w' > 'OTw'
+'ƠP' + 'w' > 'OPw'
+'Ơm' + 'w' > 'Omw'
+'Ơn' + 'w' > 'Onw'
+'Ơc' + 'w' > 'Ocw'
+'Ơt' + 'w' > 'Otw'
+'Ơp' + 'w' > 'Opw'
+
+'qui' + 's' > 'quí'
+'qui' + 'f' > 'quì'
+'qui' + 'r' > 'quỉ'
+'qui' + 'x' > 'quĩ'
+'qui' + 'j' > 'quị'
+'Qui' + 's' > 'Quí'
+'Qui' + 'f' > 'Quì'
+'Qui' + 'r' > 'Quỉ'
+'Qui' + 'x' > 'Quĩ'
+'Qui' + 'j' > 'Quị'
+'QUI' + 'S' > 'QUÍ'
+'QUI' + 'F' > 'QUÌ'
+'QUI' + 'R' > 'QUỈ'
+'QUI' + 'X' > 'QUĨ'
+'QUI' + 'J' > 'QUỊ'
+'QUI' + 's' > 'QUÍ'
+'QUI' + 'f' > 'QUÌ'
+'QUI' + 'r' > 'QUỈ'
+'QUI' + 'x' > 'QUĨ'
+'QUI' + 'j' > 'QUỊ'
+'quy' + 's' > 'quý'
+'quy' + 'f' > 'quỳ'
+'quy' + 'r' > 'quỷ'
+'quy' + 'x' > 'quỹ'
+'quy' + 'j' > 'quỵ'
+'Quy' + 's' > 'Quý'
+'Quy' + 'f' > 'Quỳ'
+'Quy' + 'r' > 'Quỷ'
+'Quy' + 'x' > 'Quỹ'
+'Quy' + 'j' > 'Quỵ'
+'QUY' + 'S' > 'QUÝ'
+'QUY' + 'F' > 'QUỲ'
+'QUY' + 'R' > 'QUỶ'
+'QUY' + 'X' > 'QUỸ'
+'QUY' + 'J' > 'QUỴ'
+'QUY' + 's' > 'QUÝ'
+'QUY' + 'f' > 'QUỲ'
+'QUY' + 'r' > 'QUỶ'
+'QUY' + 'x' > 'QUỸ'
+'QUY' + 'j' > 'QUỴ'
+'qua' + 's' > 'quá'
+'qua' + 'f' > 'quà'
+'qua' + 'r' > 'quả'
+'qua' + 'x' > 'quã'
+'qua' + 'j' > 'quạ'
+'Qua' + 's' > 'Quá'
+'Qua' + 'f' > 'Quà'
+'Qua' + 'r' > 'Quả'
+'Qua' + 'x' > 'Quã'
+'Qua' + 'j' > 'Quạ'
+'QUA' + 'S' > 'QUÁ'
+'QUA' + 'F' > 'QUÀ'
+'QUA' + 'R' > 'QUẢ'
+'QUA' + 'X' > 'QUÃ'
+'QUA' + 'J' > 'QUẠ'
+'QUA' + 's' > 'QUÁ'
+'QUA' + 'f' > 'QUÀ'
+'QUA' + 'r' > 'QUẢ'
+'QUA' + 'x' > 'QUÃ'
+'QUA' + 'j' > 'QUẠ'
+'quâ' + 's' > 'quấ'
+'quâ' + 'f' > 'quầ'
+'quâ' + 'r' > 'quẩ'
+'quâ' + 'x' > 'quẫ'
+'quâ' + 'j' > 'quậ'
+'Quâ' + 's' > 'Quấ'
+'Quâ' + 'f' > 'Quầ'
+'Quâ' + 'r' > 'Quẩ'
+'Quâ' + 'x' > 'Quẫ'
+'Quâ' + 'j' > 'Quậ'
+'QUÂ' + 'S' > 'QUẤ'
+'QUÂ' + 'F' > 'QUẦ'
+'QUÂ' + 'R' > 'QUẨ'
+'QUÂ' + 'X' > 'QUÃ'
+'QUÂ' + 'J' > 'QUẬ'
+'QUÂ' + 's' > 'QUẤ'
+'QUÂ' + 'f' > 'QUẦ'
+'QUÂ' + 'r' > 'QUẨ'
+'QUÂ' + 'x' > 'QUÃ'
+'QUÂ' + 'j' > 'QUẬ'
+
+'uy' + 's' > 'úy'
+'uy' + 'f' > 'ùy'
+'uy' + 'r' > 'ủy'
+'uy' + 'x' > 'ũy'
+'uy' + 'j' > 'ụy'
+'Uy' + 's' > 'Úy'
+'Uy' + 'f' > 'Ùy'
+'Uy' + 'r' > 'Ủy'
+'Uy' + 'x' > 'Ũy'
+'Uy' + 'j' > 'Ụy'
+'UY' + 's' > 'ÚY'
+'UY' + 'f' > 'ÙY'
+'UY' + 'r' > 'ỦY'
+'UY' + 'x' > 'ŨY'
+'UY' + 'j' > 'ỤY'
+'UY' + 'S' > 'ÚY'
+'UY' + 'F' > 'ÙY'
+'UY' + 'R' > 'ỦY'
+'UY' + 'X' > 'ŨY'
+'UY' + 'J' > 'ỤY'
+
+'úy' + 'n' > 'uýn'
+'ùy' + 'n' > 'uỳn'
+'ủy' + 'n' > 'uỷn'
+'ũy' + 'n' > 'uỹn'
+'ụy' + 'n' > 'uỵn'
+'ÚY' + 'N' > 'UÝN'
+'ÙY' + 'N' > 'UỲN'
+'ỦY' + 'N' > 'UỶN'
+'ŨY' + 'N' > 'UỸN'
+'ỤY' + 'N' > 'UỴN'
+'Úy' + 'n' > 'Uýn'
+'Ùy' + 'n' > 'Uỳn'
+'Ủy' + 'n' > 'Uỷn'
+'Ũy' + 'n' > 'Uỹn'
+'Ụy' + 'n' > 'Uỵn'
+'úy' + 't' > 'uýt'
+'ùy' + 't' > 'uỳt'
+'ủy' + 't' > 'uỷt'
+'ũy' + 't' > 'uỹt'
+'ụy' + 't' > 'uỵt'
+'ÚY' + 'T' > 'UÝT'
+'ÙY' + 'T' > 'UỲT'
+'ỦY' + 'T' > 'UỶT'
+'ŨY' + 'T' > 'UỸT'
+'ỤY' + 'T' > 'UỴT'
+'Úy' + 't' > 'Uýt'
+'Ùy' + 't' > 'Uỳt'
+'Ủy' + 't' > 'Uỷt'
+'Ũy' + 't' > 'Uỹt'
+'Ụy' + 't' > 'Uỵt'
+
+any(vowels) any(ys) any(all_letters) + any(punctuation) > index(vowels, 1) index(ys, 2) index(all_letters, 3) index(punctuation, 4)
+any(vowels) any(ys) + any(end_consonants) > index(vowels, 1) index(ys, 2) index(end_consonants, 3)
+
+'gw' + 'a' > 'quâ'
+'Gw' + 'a' > 'Quâ'
+'gw' + 'o' > 'quo'
+'Gw' + 'o' > 'Quo'
+'gw' + 'i' > 'qui'
+'Gw' + 'i' > 'Qui'
+'gwu' + 'i' > 'qui'
+'Gwu' + 'i' > 'Qui'
+
++ [ALT K_QUOTE] > '‘'
++ [ALT SHIFT K_QUOTE] > '“'
+
+"‘" + [ALT K_QUOTE] > "‘’"
+"“" + [ALT SHIFT K_QUOTE] > "“”"
+
+any(no_space_punctuation) + [ALT K_QUOTE] > index(no_space_punctuation, 1)'’'
+any(all_letters) + [ALT K_QUOTE] > index(all_letters, 1)'’'
+any(vowels_sac) + [ALT K_QUOTE] > index(vowels_sac, 1)'’'
+any(vowels_hoi) + [ALT K_QUOTE] > index(vowels_hoi, 1)'’'
+any(vowels_huyen) + [ALT K_QUOTE] > index(vowels_huyen, 1)'’'
+any(vowels_nga) + [ALT K_QUOTE] > index(vowels_nga, 1)'’'
+any(vowels_nang) + [ALT K_QUOTE] > index(vowels_nang, 1)'’'
+
+any(no_space_punctuation) + [ALT SHIFT K_QUOTE] > index(no_space_punctuation, 1)'”'
+any(all_letters) + [ALT SHIFT K_QUOTE] > index(all_letters, 1)'”'
+any(vowels_sac) + [ALT SHIFT K_QUOTE] > index(vowels_sac, 1)'”'
+any(vowels_hoi) + [ALT SHIFT K_QUOTE] > index(vowels_hoi, 1)'”'
+any(vowels_huyen) + [ALT SHIFT K_QUOTE] > index(vowels_huyen, 1)'”'
+any(vowels_nang) + [ALT SHIFT K_QUOTE] > index(vowels_nang, 1)'”'
+any(vowels_nga) + [ALT SHIFT K_QUOTE] > index(vowels_nga, 1)'”'
+
+"ḿ" + [ALT K_QUOTE] > "ḿ’"
+"m̀" + [ALT K_QUOTE] > "m̀’"
+"m̉" + [ALT K_QUOTE] > "m̉’"
+"m͂" + [ALT K_QUOTE] > "m͂’"
+"ṃ" + [ALT K_QUOTE] > "ṃ’"
+"ń" + [ALT K_QUOTE] > "ń’"
+"ǹ" + [ALT K_QUOTE] > "ǹ’"
+"ñ" + [ALT K_QUOTE] > "ñ’"
+"n̉" + [ALT K_QUOTE] > "n̉’"
+"ṇ" + [ALT K_QUOTE] > "ṇ’"
+"Ḿ" + [ALT K_QUOTE] > "Ḿ’"
+"M̀" + [ALT K_QUOTE] > "M̀’"
+"M̉" + [ALT K_QUOTE] > "M̉’"
+"M͂" + [ALT K_QUOTE] > "M͂’"
+"Ṃ" + [ALT K_QUOTE] > "Ṃ’"
+"Ń" + [ALT K_QUOTE] > "Ń’"
+"Ǹ" + [ALT K_QUOTE] > "Ǹ’"
+"Ñ" + [ALT K_QUOTE] > "Ñ’"
+"N̉" + [ALT K_QUOTE] > "N̉’"
+"Ṇ" + [ALT K_QUOTE] > "Ṇ’"
+"ḿ" + [ALT SHIFT K_QUOTE] > "ḿ”"
+"m̀" + [ALT SHIFT K_QUOTE] > "m̀”"
+"m̉" + [ALT SHIFT K_QUOTE] > "m̉”"
+"m͂" + [ALT SHIFT K_QUOTE] > "m͂”"
+"ṃ" + [ALT SHIFT K_QUOTE] > "ṃ”"
+"ń" + [ALT SHIFT K_QUOTE] > "ń”"
+"ǹ" + [ALT SHIFT K_QUOTE] > "ǹ”"
+"ñ" + [ALT SHIFT K_QUOTE] > "ñ”"
+"n̉" + [ALT SHIFT K_QUOTE] > "n̉”"
+"ṇ" + [ALT SHIFT K_QUOTE] > "ṇ”"
+"Ḿ" + [ALT SHIFT K_QUOTE] > "Ḿ”"
+"M̀" + [ALT SHIFT K_QUOTE] > "M̀”"
+"M̉" + [ALT SHIFT K_QUOTE] > "M̉”"
+"M͂" + [ALT SHIFT K_QUOTE] > "M͂”"
+"Ṃ" + [ALT SHIFT K_QUOTE] > "Ṃ”"
+"Ń" + [ALT SHIFT K_QUOTE] > "Ń”"
+"Ǹ" + [ALT SHIFT K_QUOTE] > "Ǹ”"
+"Ñ" + [ALT SHIFT K_QUOTE] > "Ñ”"
+"N̉" + [ALT SHIFT K_QUOTE] > "N̉”"
+"Ṇ" + [ALT SHIFT K_QUOTE] > "Ṇ”"
+
+'i' + 'i' > 'iê'
+'iê' + 'i' > 'ii'
+
+
+any(o) any(end_consonants) + 'o' > index(oo, 1) index(end_consonants, 2)
+any(o) any(end_consonants) + 'O' > index(oo, 1) index(end_consonants, 2)
+any(o) 'ng' + 'o' > index(oo, 1) 'ng'
+any(o) 'ng' + 'O' > index(oo, 1) 'ng'
+any(o) 'NG' + 'o' > index(oo, 1) 'NG'
+any(o) 'NG' + 'O' > index(oo, 1) 'NG'
+any(e) any(end_consonants) + 'e' > index(ee, 1) index(end_consonants, 2)
+any(e) any(end_consonants) + 'E' > index(ee, 1) index(end_consonants, 2)
+any(e) 'ng' + 'e' > index(ee, 1) 'ng'
+any(e) 'ng' + 'E' > index(ee, 1) 'ng'
+any(e) 'NG' + 'e' > index(ee, 1) 'NG'
+any(e) 'NG' + 'E' > index(ee, 1) 'NG'
+any(e) 'u' + 'e' > index(ee, 1) 'u'
+any(e) 'u' + 'E' > index(ee, 1) 'u'
+any(e) 'U' + 'e' > index(ee, 1) 'U'
+any(e) 'U' + 'E' > index(ee, 1) 'U'
+any(e) 'n' + 'h' > index(ee, 1) 'nh'
+any(e) 'c' + 'h' > index(ee, 1) 'ch'
+any(a) 'n' + 'h' > index(aa, 1) 'nh'
+any(a) 'c' + 'h' > index(aa, 1) 'ch'
+any(a) 'y' + 'a' > index(aa, 1) 'y'
+any(a) 'y' + 'A' > index(aa, 1) 'y'
+any(a) 'Y' + 'a' > index(aa, 1) 'Y'
+any(a) 'Y' + 'A' > index(aa, 1) 'Y'
+
+'ênh' + 'h'> 'enh'
+'Ênh' + 'h'> 'Enh'
+'êch' + 'h'> 'ech'
+'Êch' + 'h'> 'Ech'
+any(ieu_consonants)'i'any(e) + 'u'> index(ieu_consonants, 1)'i'index(ee, 3)'u'
+any(o) + 'a' > index(o, 1)'a'
+'uy' + 'e'> 'uyê'
+'Uy' + 'e'> 'Uyê'
+'óa' + any(a_end) > 'oá' index(a_end, 3)
+'Óa' + any(a_end) > 'Oá' index(a_end, 3)
+'ÓA' + any(a_end) > 'OÁ' index(a_end, 3)
+'òa' + any(a_end) > 'oà' index(a_end, 3)
+'Òa' + any(a_end) > 'Oà' index(a_end, 3)
+'ÒA' + any(a_end) > 'OÀ' index(a_end, 3)
+'ỏa' + any(a_end) > 'oả' index(a_end, 3)
+'Ỏa' + any(a_end) > 'Oả' index(a_end, 3)
+'ỎA' + any(a_end) > 'OẢ' index(a_end, 3)
+'õa' + any(a_end) > 'oã' index(a_end, 3)
+'Õa' + any(a_end) > 'Oã' index(a_end, 3)
+'ÕA' + any(a_end) > 'OÃ' index(a_end, 3)
+'ọa' + any(a_end) > 'oạ' index(a_end, 3)
+'Ọa' + any(a_end) > 'Oạ' index(a_end, 3)
+'ỌA' + any(a_end) > 'OẠ' index(a_end, 3)
+
+'úa' + any(a_end) > 'uá' index(a_end, 3)
+'Úa' + any(a_end) > 'Uá' index(a_end, 3)
+'ÚA' + any(a_end) > 'UÁ' index(a_end, 3)
+'ùa' + any(a_end) > 'uà' index(a_end, 3)
+'Ùa' + any(a_end) > 'Uà' index(a_end, 3)
+'ÙA' + any(a_end) > 'UÀ' index(a_end, 3)
+'ủa' + any(a_end) > 'uả' index(a_end, 3)
+'Ủa' + any(a_end) > 'Uả' index(a_end, 3)
+'ỦA' + any(a_end) > 'UẢ' index(a_end, 3)
+'ũa' + any(a_end) > 'uã' index(a_end, 3)
+'Ũa' + any(a_end) > 'Uã' index(a_end, 3)
+'ŨA' + any(a_end) > 'UÃ' index(a_end, 3)
+'ụa' + any(a_end) > 'uạ' index(a_end, 3)
+'Ụa' + any(a_end) > 'Uạ' index(a_end, 3)
+'ỤA' + any(a_end) > 'UẠ' index(a_end, 3)
+
+'úâ' + any(a_end) > 'uấ' index(a_end, 3)
+'Úâ' + any(a_end) > 'Uấ' index(a_end, 3)
+'ÚÂ' + any(a_end) > 'UẤ' index(a_end, 3)
+'ùâ' + any(a_end) > 'uầ' index(a_end, 3)
+'Ùâ' + any(a_end) > 'Uầ' index(a_end, 3)
+'ÙÂ' + any(a_end) > 'UẦ' index(a_end, 3)
+'ủâ' + any(a_end) > 'uẩ' index(a_end, 3)
+'Ủâ' + any(a_end) > 'Uẩ' index(a_end, 3)
+'ỦÂ' + any(a_end) > 'UẨ' index(a_end, 3)
+'ũâ' + any(a_end) > 'uẫ' index(a_end, 3)
+'Ũâ' + any(a_end) > 'Uẫ' index(a_end, 3)
+'ŨÂ' + any(a_end) > 'UẪ' index(a_end, 3)
+'ụâ' + any(a_end) > 'uậ' index(a_end, 3)
+'Ụâ' + any(a_end) > 'Uậ' index(a_end, 3)
+'ỤÂ' + any(a_end) > 'UẬ' index(a_end, 3)
+
+'óe' + any(e_end) > 'oé' index(e_end, 3)
+'Óe' + any(e_end) > 'Oé' index(e_end, 3)
+'ÓE' + any(e_end) > 'OÉ' index(e_end, 3)
+'òe' + any(e_end) > 'oè' index(e_end, 3)
+'Òe' + any(e_end) > 'Oè' index(e_end, 3)
+'ÒE' + any(e_end) > 'OÈ' index(e_end, 3)
+'ỏe' + any(e_end) > 'oẻ' index(e_end, 3)
+'Ỏe' + any(e_end) > 'Oẻ' index(e_end, 3)
+'ỎE' + any(e_end) > 'OẺ' index(e_end, 3)
+'õe' + any(e_end) > 'oẽ' index(e_end, 3)
+'Õe' + any(e_end) > 'Oẽ' index(e_end, 3)
+'ÕE' + any(e_end) > 'OẼ' index(e_end, 3)
+'ọe' + any(e_end) > 'oẹ' index(e_end, 3)
+'Ọe' + any(e_end) > 'Oẹ' index(e_end, 3)
+'ỌE' + any(e_end) > 'OẸ' index(e_end, 3)
+
+'Quân' + 'g' > 'Quang'
+'quân' + 'g' > 'quang'
+'ưu' + 'w' > 'uuw'
+'Ưu' + 'w' > 'Uuw'
+'UU' + 'w' > 'ƯU'
+'ƯU' + 'w' > 'UUw'
+'ƯU' + 'W' > 'UUW'
+
+any(a) + 'o' > index(aa, 1)'o'
+any(a) + 'O' > index(aa, 1)'O'
+
+'qú' + any(vowels) >'qu'index(vowels_sac, 3)
+'qù' + any(vowels) >'qu'index(vowels_huyen, 3)
+'qủ' + any(vowels) >'qu'index(vowels_hoi, 3)
+'qũ' + any(vowels) >'qu'index(vowels_nga, 3)
+'qụ' + any(vowels) >'qu'index(vowels_nang, 3)
+'Qú' + any(vowels) >'Qu'index(vowels_sac, 3)
+'Qù' + any(vowels) >'Qu'index(vowels_huyen, 3)
+'Qủ' + any(vowels) >'Qu'index(vowels_hoi, 3)
+'Qũ' + any(vowels) >'Qu'index(vowels_nga, 3)
+'Qụ' + any(vowels) >'Qu'index(vowels_nang, 3)
+'QÚ' + any(vowels) >'QU'index(vowels_sac, 3)
+'QÙ' + any(vowels) >'QU'index(vowels_huyen, 3)
+'QỦ' + any(vowels) >'QU'index(vowels_hoi, 3)
+'QŨ' + any(vowels) >'QU'index(vowels_nga, 3)
+'QỤ' + any(vowels) >'QU'index(vowels_nang, 3)
+
+'Y'any(o) + 'u' > 'Y'index(o, 2)'u'
+'Y'any(o) + 'U' > 'Y'index(o, 2)'U'
+'y'any(o) + 'u' > 'y'index(o, 2)'u'
+'y'any(o) + 'U' > 'y'index(o, 2)'U'
+
+any(low_e)'u' + any(nt) > 'e'index(low_u, 1)index(nt, 3)
+any(upper_e)'u' + any(nt) > 'E'index(low_u, 1)index(nt, 3)
+any(upper_e)'U' + any(nt) > 'E'index(upper_u, 1)index(nt, 3)
+'ts' + 'h' > 'ch'
+'Ts' + 'h' > 'Ch'

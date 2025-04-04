@@ -1,6 +1,10 @@
 Mon (Phonetic) Change History
 ====================
 
+1.1.1 (2024-12-12)
+------------------
+* Update Padauk font
+
 1.1 (2022-06-28)
 ----------------
 * Change Name

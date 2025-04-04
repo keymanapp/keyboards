@@ -1,5 +1,8 @@
 # Harari (Lâtîn harfi) Change History
 
+## 2025-02-20 2.1.2
+* Put OSKFont from .kps file into .kvks file
+
 ## 2023-08-04 2.1.1
 * Update to support keystrokes on digit row in RALT
 * Change copyright to Enabling Languages

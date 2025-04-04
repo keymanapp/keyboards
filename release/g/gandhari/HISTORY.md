@@ -1,6 +1,10 @@
 Gandhari Change History
 ====================
 
+2.9 (2024-08-30)
+----------------
+* Added tablet layout
+
 2.8 (2020-09-17)
 ----------------
 * Moved source to github repo

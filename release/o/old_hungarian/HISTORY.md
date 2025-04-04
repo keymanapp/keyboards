@@ -1,7 +1,21 @@
 Old Hungarian Change History
 ====================
-1.7.8 (2023-10-01)
+1.9 (2024-08-26)
+----------------
+* "eK" and "aK" symbols ID now are "unicode" style, differ each other 
+
+1.8 (2024-08-23)
+-------------------
+*Prepared a problem in mobile layout caps level: appeared "eK" symbol instead of "aK" symbol before-
+
+1.7.9 (2024-08-20)
 ------------------
+* Optimized mobile layouts. Deleted Ralt-shift layer.
+* The historial symbols associated
+*   for a longpress symbol key to default, shift and caps level
+
+1.7.8 (2023-10-01)
+-----------------
 * Rebuilded mobile layouts with longpress keys for easy-to-use
 
 1.7.6 (2023-09-19)

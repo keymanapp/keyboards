@@ -1,11 +1,11 @@
 Colchis Latin Keyboard
 ==============
 
-© SIL International
+© SIL Global
 
 Description
 -----------
-This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages.
+This is a Latin keyboard for transcription of the Lazuri and Mingrelian languages as used in Georgia.
 
 Links
 -----

@@ -46,7 +46,6 @@ which can be viewed by clicking on the Keyman icon and selecting the On Screen K
 item. The keyboard layout follows the Windows 10 Cherokee Nation Phonetic layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <p>This keyboard utilizes dead keys to reach the Cherokee characters. The dead keys on this layout have square brackets around them. For example, "[q]" is a dead key.</p>
 
 
@@ -76,6 +75,3 @@ item. The keyboard layout follows the Windows 10 Cherokee Nation Phonetic layout
 <div class="group"><table class="" title="c"><tr><th colspan="2">c or C</th></tr><tr><td title="U+0020 SPACE">&nbsp;</td><td title="U&#x2B;13A0 CHEROKEE LETTER A">Ꭰ</td></tr><tr><td title="U&#x2B;13A7 CHEROKEE LETTER KA">Ꭷ</td><td title="U&#x2B;13A7 CHEROKEE LETTER KA">Ꭷ</td></tr></table></div>
 <div class="group"><table class="" title="n"><tr><th colspan="9">n or N</th></tr><tr><td title="U+0020 SPACE">&nbsp;</td><td title="U&#x2B;0068 LATIN SMALL LETTER H">h</td><td title="U&#x2B;0048 LATIN CAPITAL LETTER H">H</td><td title="U&#x2B;13A0 CHEROKEE LETTER A">Ꭰ</td><td title="U&#x2B;13A1 CHEROKEE LETTER E">Ꭱ</td><td title="U&#x2B;13A2 CHEROKEE LETTER I">Ꭲ</td><td title="U&#x2B;13A3 CHEROKEE LETTER O">Ꭳ</td><td title="U&#x2B;13A4 CHEROKEE LETTER U">Ꭴ</td><td title="U&#x2B;13A5 CHEROKEE LETTER V">Ꭵ</td></tr><tr><td title="U&#x2B;13BE CHEROKEE LETTER NA">Ꮎ</td><td title="U&#x2B;13C0 CHEROKEE LETTER NAH">Ꮐ</td><td title="U&#x2B;13C0 CHEROKEE LETTER NAH">Ꮐ</td><td title="U&#x2B;13BE CHEROKEE LETTER NA">Ꮎ</td><td title="U&#x2B;13C1 CHEROKEE LETTER NE">Ꮑ</td><td title="U&#x2B;13C2 CHEROKEE LETTER NI">Ꮒ</td><td title="U&#x2B;13C3 CHEROKEE LETTER NO">Ꮓ</td><td title="U&#x2B;13C4 CHEROKEE LETTER NU">Ꮔ</td><td title="U&#x2B;13C5 CHEROKEE LETTER NV">Ꮕ</td></tr></table></div>
 <div class="group"><table class="" title="m"><tr><th colspan="6">m or M</th></tr><tr><td title="U+0020 SPACE">&nbsp;</td><td title="U&#x2B;13A0 CHEROKEE LETTER A">Ꭰ</td><td title="U&#x2B;13A1 CHEROKEE LETTER E">Ꭱ</td><td title="U&#x2B;13A2 CHEROKEE LETTER I">Ꭲ</td><td title="U&#x2B;13A3 CHEROKEE LETTER O">Ꭳ</td><td title="U&#x2B;13A4 CHEROKEE LETTER U">Ꭴ</td></tr><tr><td title="U&#x2B;13B9 CHEROKEE LETTER MA">Ꮉ</td><td title="U&#x2B;13B9 CHEROKEE LETTER MA">Ꮉ</td><td title="U&#x2B;13BA CHEROKEE LETTER ME">Ꮊ</td><td title="U&#x2B;13BB CHEROKEE LETTER MI">Ꮋ</td><td title="U&#x2B;13BC CHEROKEE LETTER MO">Ꮌ</td><td title="U&#x2B;13BD CHEROKEE LETTER MU">Ꮍ</td></tr></table></div>
-		<div class="c"></div>
-
-	</div>

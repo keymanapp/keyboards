@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -22,7 +23,7 @@
     <Author URL="mailto:degree-silken.04@icloud.com">Kym Barron &amp; Ben Hinton</Author>
     <Version URL=""></Version>
     <WebSite URL="https://sway.office.com/ZW2iPBbX0yHWcIsJ">https://sway.office.com/ZW2iPBbX0yHWcIsJ</WebSite>
-    <Description>A keyboard for phonemic (broad) transcription of Australian accented
+    <Description URL="">A keyboard for phonemic (broad) transcription of Australian accented
 English using the Harrington/Cox/Evans (HCE) system.</Description>
   </Info>
   <Files>
@@ -45,12 +46,6 @@ English using the Harrington/Cox/Evans (HCE) system.</Description>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -63,16 +58,22 @@ English using the Harrington/Cox/Evans (HCE) system.</Description>
       <FileType>.jpg</FileType>
     </File>
     <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>cheatsheetfinal.pdf</Name>
+      <Description>File cheatsheetfinal.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
       <Name>layout150.png</Name>
       <Description>File layout150.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis\CharisSIL_README.txt</Name>
-      <Description>File CharisSIL_README.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
     </File>
     <File>
       <Name>..\..\..\shared\fonts\sil\charis\CharisSIL-Bold.ttf</Name>
@@ -99,24 +100,6 @@ English using the Harrington/Cox/Evans (HCE) system.</Description>
       <FileType>.ttf</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\sil\charis\FONTLOG.txt</Name>
-      <Description>File FONTLOG.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis\OFL.txt</Name>
-      <Description>File OFL.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
-      <Name>..\..\..\shared\fonts\sil\charis\OFL-FAQ.txt</Name>
-      <Description>File OFL-FAQ.txt</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.txt</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -127,7 +110,7 @@ English using the Harrington/Cox/Evans (HCE) system.</Description>
     <Keyboard>
       <Name>ausephon</Name>
       <ID>ausephon</ID>
-      <Version>10.1</Version>
+      <Version>11.0.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</DisplayFont>
       <Languages>

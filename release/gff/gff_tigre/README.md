@@ -1,9 +1,7 @@
 # ትግሬ (ትግረ, Tigre) Keyboard
 ========================================================
 
-Copyright © 2023 Geʾez Frontier Foundation
-
-Version 1.0.1
+Copyright © Geʾez Frontier Foundation
 
 This is a Tigre (tig, ትግሬ,ትግረ) language mnemonic input method that applies Eritrean writing conventions.
 It requires a font supporting Ethiopic script under the Unicode 3.0 standard. 

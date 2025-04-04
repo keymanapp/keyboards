@@ -929,10 +929,7 @@
 	{font-family:"Galatia SIL";
 	panose-1:2 0 6 0 2 0 0 2 0 4;}
 @font-face
-	{font-family:"Khmer Mondulkiri";
-	panose-1:2 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Khmer Busra";
+	{font-family:"Busra";
 	panose-1:2 0 0 0 0 0 0 0 0 0;}
 @font-face
 	{font-family:"Open Sans";
@@ -1894,123 +1891,6 @@ ul
 END;
   require_once('header.php');
 ?>
-
-<div class=WordSection1>
-
-<p class=Default>&nbsp;</p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>&nbsp;</span></b></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>&nbsp;</span></b></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>&nbsp;</span></b></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>&nbsp;</span></b></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>&nbsp;</span></b></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>&nbsp;</span></b></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>Typing Guideline</span></b></p>
-
-<p class=Default align=center style='text-align:center'><span style='font-size:
-22.0pt;color:#548DD4'>&nbsp;</span></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>By</span></b></p>
-
-<p class=Default align=center style='text-align:center'><span style='font-size:
-22.0pt;color:#548DD4'>&nbsp;</span></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>Bivuti Chakma</span></b></p>
-
-<p class=Default align=center style='text-align:center'><span style='font-size:
-22.0pt;color:#548DD4'>&nbsp;</span></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>RibengUni with Easy Chakma Keyboard</span></b></p>
-
-<p class=Default align=center style='text-align:center'><b><span
-style='font-size:22.0pt;color:#548DD4'>&nbsp;</span></b></p>
-
-<p class=MsoBodyText><span style='font-size:14.0pt'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:14.0pt'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:14.0pt'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt;font-family:"Tahoma",sans-serif'>&nbsp;</span></p>
-
-</div>
-
-<span style='font-size:12.5pt;font-family:"Tahoma",sans-serif'><br clear=all
-style='page-break-before:auto'>
-</span>
-
-<div class=WordSection2>
-
-<p class=MsoBodyText style='margin-left:6.25pt;line-height:1.6pt'><span
-style='font-size:1.5pt'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt'>&nbsp;</span></p>
-
-<p class=MsoBodyText><span style='font-size:10.0pt'>&nbsp;</span></p>
 
 <p class=MsoNormal style='text-align:justify'><b><span style='font-size:20.0pt;
 font-family:"Bodoni MT Black",serif;color:#00B050'>RibengUni</span></b><b><span
@@ -14177,4 +14057,3 @@ color:black'>&nbsp;</span></p>
 
 <p class=MsoNoSpacing><span style='font-size:14.0pt'>&nbsp;</span></p>
 
-</div>

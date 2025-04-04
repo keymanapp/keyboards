@@ -690,41 +690,7 @@ style='font-size:18.0pt'>
 
 <h2><a name=license></a><span style='mso-fareast-font-family:"Times New Roman"'>License<o:p></o:p></span></h2>
 
-<p>Rachitrali-Kashmiri Keyman Keyboard is copyright © 2018-2020 Rehmat Aziz Chitrali.
+<p>Rachitrali-Kashmiri Keyman Keyboard is copyright © Rehmat Aziz Chitrali.
 It is distributed under The MIT License (MIT)</p>
 
-<div>
 
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;),
-to deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:</p>
-
-<p>The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.</p>
-
-<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
-EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
-OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-DEALINGS IN THE SOFTWARE.</p>
-
-</div>
-
-<h2><span style='mso-fareast-font-family:"Times New Roman"'>Release History<o:p></o:p></span></h2>
-
-<p>Version 1.0, released 29 January 2020</p>
-
-<h2><span style='mso-fareast-font-family:"Times New Roman"'>Links<o:p></o:p></span></h2>
-
-<ul type=disc>
- <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-     mso-list:l0 level1 lfo1;tab-stops:list .5in'><span style='mso-fareast-font-family:
-     "Times New Roman"'><o:p>&nbsp;</o:p></span></li>
-</ul>
-
-</div>

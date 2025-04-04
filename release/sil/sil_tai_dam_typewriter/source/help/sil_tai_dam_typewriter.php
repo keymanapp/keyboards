@@ -81,10 +81,6 @@
         }
     </style>
 
-<body>
-
-<h1>Tai Dam Typewriter (SIL) keyboard package</h1>
-
 <h2>Font</h2>
 
 <p>
@@ -626,4 +622,4 @@
           background-image: url('key-ctrlr.gif');
           ">
 <div class="keycap">Ctrl</div>
-</div><br style="clear: left"></body>
+</div><br style="clear: left">

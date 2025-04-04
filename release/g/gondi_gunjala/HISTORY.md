@@ -1,6 +1,14 @@
 Gondi (Gunjala) Keyboard Change History
 =======================================
 
+1.1.3 (20 Feb 2025)
+------------------
+* Put OSKFont from .kps file into .kvks file
+
+1.1.2 (27 Oct 2023)
+-----------------
+* Changed to use new version of font (from shared folder)
+
 1.1.1 (02 Mar 2023)
 -----------------
 * Changed to use new version of font (from shared folder)

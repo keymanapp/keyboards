@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,11 +19,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Busa</Name>
-    <Copyright URL="">© 2008-2021 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://keyman.com/keyboards/sil_busa">https://keyman.com/keyboards/sil_busa</WebSite>
-    <Description>A keyboard designed for Busa, Bokobaru and Boko languages in Africa.</Description>
+    <Description URL="">A keyboard designed for Busa, Bokobaru and Boko languages in Africa.</Description>
   </Info>
   <Files>
     <File>
@@ -138,19 +139,19 @@
     <Keyboard>
       <Name>Busa</Name>
       <ID>sil_busa</ID>
-      <Version>1.4.2</Version>
+      <Version>1.5.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="bba-Latn">Baatonum (Latin)</Language>
-        <Language ID="bqc-Latn">Boko (Benin) (Latin)</Language>
-        <Language ID="bus-Latn">Bokobaru (Latin)</Language>
-        <Language ID="bqp-Latn">Busa (Latin)</Language>
+        <Language ID="bba">Baatonum</Language>
+        <Language ID="bqc">Boko (Benin)</Language>
+        <Language ID="bus">Bokobaru</Language>
+        <Language ID="bqp">Busa</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="busau" Relationship="deprecates" />
+    <RelatedPackage ID="busau" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

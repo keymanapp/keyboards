@@ -9,8 +9,7 @@ require_once('header.php');
     Me’en (Latin) keyboard based on US keyboard layout.
 </p>
 
-<h1>Keyboard Layout</h1>
-<h2>Desktop</h2>
+<h2>Desktop Keyboard Layout</h2>
 <p><b>Unshifted</b></p>
 <img src='me_enU_.png' alt='Keyboard Layout'>
 <p>To get à (low tone a) please type  a`	To get á (high tone a) please type a``</p>   
@@ -32,8 +31,8 @@ require_once('header.php');
 <p><b>Shifted RightAlt</b></p>
 <img src='me_enU_SRA.png' alt='Keyboard Layout'>
 
-<h2>Touch</h2>
+<h2>Touch Keyboard Layout</h2>
 <div id='osk-phone' data-states='default shift numeric symbol'>
 </div>
 
-<p>© 2020 Wycliffe Ethiopia</p>
+<p>© Wycliffe Ethiopia</p>

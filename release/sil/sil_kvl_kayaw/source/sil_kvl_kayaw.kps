@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +20,10 @@
   <Info>
     <Name URL="">Kayaw (SIL)</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 2018-2022 SIL International</Copyright>
-    <Author URL="">SIL International</Author>
+    <Copyright URL="">© SIL Global</Copyright>
+    <Author URL="">SIL GLobal</Author>
     <WebSite URL="https://help.keyman.com/keyboard/sil_kvl_kayaw">https://help.keyman.com/keyboard/sil_kvl_kayaw</WebSite>
-    <Description>This keyboard is for the Kayaw language using Latin script.</Description>
+    <Description URL="">This keyboard is for the Kayaw language using Latin script.</Description>
   </Info>
   <Files>
     <File>
@@ -132,12 +134,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Kayaw</Name>
+      <Name>Kayaw (SIL)</Name>
       <ID>sil_kvl_kayaw</ID>
-      <Version>1.2.1</Version>
+      <Version>1.2.2</Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis_compact\CharisSIL-Compact-Regular.ttf</OSKFont>
       <Languages>
         <Language ID="kvl-Latn">Kayaw (Latin)</Language>

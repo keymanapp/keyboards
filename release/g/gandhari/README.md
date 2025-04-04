@@ -1,9 +1,7 @@
 Gandhari keyboard
 ==============
 
-© 2004-2020 Andrew Glass
-
-Version 2.8
+© Andrew Glass
 
 Description
 -----------
@@ -20,4 +18,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 

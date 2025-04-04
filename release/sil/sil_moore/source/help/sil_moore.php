@@ -14,9 +14,9 @@
 <p>Gʋndg kãngã naana moor gʋls-biis la gom-biis yĩnga.</p>
 <p>B yag-a-la fãrendã gʋndg zugu.</p>
 <p>Moorã gʋndg mamseg lagma teed a taab n be kaane. Rẽ, bɩ-y pak mamsegã n bãng gʋls-biisã zĩisi.</p>
-<p>Gʋndgã naagda ne <i>Doulos SIL</i> gʋls-wʋng wala <i>Charis SIL</i> n tʋmdẽ.</p>
-<p><i>Doulos SIL</i> wala <i>Charis SIL</i> gʋls-wʋmdɩ wã lagma ne teed a taabã n be ka. Y tõe n paama yaolem gʋls-wʋmdɩ tilgẽ ka :
-<a href='http://software.sil.org/'>http://software.sil.org/</a>.</p>
+<p>Gʋndgã naagda ne <i>Charis SIL</i> n tʋmdẽ.</p>
+<p><i>Charis SIL</i> gʋls-wʋmdɩ wã lagma ne teed a taabã n be ka. Y tõe n paama yaolem gʋls-wʋmdɩ tilgẽ ka :
+<a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
 
 
 <h1>Clavier mooré</h1>
@@ -29,10 +29,10 @@ emplacements des caractères spécifiques au mooré.</p>
   <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
 </div>
 
-<p>Ce clavier doit être utilisé conjointement avec une police de caractères comme <i>Doulos SIL</i> ou <i>Charis SIL</i>.</p>
+<p>Ce clavier doit être utilisé conjointement avec une police de caractères comme <i>Charis SIL</i>.</p>
 
-<p>Les polices <i>Doulos SIL</i> et <i>Charis SIL</i> sont incluses dans ce pack. Vous pouvez effectuer des mises à jour 
-de ces polices de caractères depuis le site <a href='http://software.sil.org/'>http://software.sil.org/</a>.</p>
+<p>Les polices <i>Charis SIL</i> sont incluses dans ce pack. Vous pouvez effectuer des mises à jour 
+de ces polices de caractères depuis le site <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
 
 <h2>Notes</h2>
 <ul>
@@ -61,8 +61,8 @@ de ces polices de caractères depuis le site <a href='http://software.sil.org/'>
   <div id='osk' data-states='default shift rightalt rightalt-shift'></div>
   </div>
   
-  <p>This keyboard should be used with a font such as <i>Charis SIL</i> or <i>Doulos SIL</i>.  <i>Charis SIL</i> is included in this package, and
-  updated versions of all these fonts can be downloaded from <a href='http://software.sil.org/'>http://software.sil.org/</a>.</p>
+  <p>This keyboard should be used with a font such as <i>Charis SIL</i>. <i>Charis SIL</i> is included in this package, and
+  updated versions of all these fonts can be downloaded from <a href='http://software.sil.org/charis'>http://software.sil.org/charis</a>.</p>
     
   <h2>Notes</h2>
   

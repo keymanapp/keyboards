@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,19 +20,13 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Clavier du Mali (Azerty)</Name>
-    <Copyright URL="">© 2004-2022 SIL Mali</Copyright>
-    <Description>Clavier Unicode pour taper sur un clavier AZERTY tous les caractères
+    <Copyright URL="">© SIL Mali</Copyright>
+    <Description URL="">Clavier Unicode pour taper sur un clavier AZERTY tous les caractères
 speciaux utilisés dans les langues du Mali. Unicode keyboard to type all
 special characters needed for the languages of Mali on an AZERTY
 keyboard.</Description>
   </Info>
   <Files>
-    <File>
-      <Name>..\build\sil_mali_azerty.js</Name>
-      <Description>File sil_mali_azerty.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
     <File>
       <Name>..\build\sil_mali_azerty.kvk</Name>
       <Description>File sil_mali_azerty.kvk</Description>
@@ -159,8 +154,8 @@ keyboard.</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="maliazerty" Relationship="deprecates" />
+    <RelatedPackage ID="maliazerty" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

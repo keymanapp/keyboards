@@ -12,8 +12,6 @@ the characters of the Toto script. It was launched in May 2015
 and in 2021 the characters of the script were accepted into the
 Unicode standard.</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

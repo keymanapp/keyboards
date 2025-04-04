@@ -1,9 +1,7 @@
 Greek Classical keyboard
 ==============
 
-(c) 2003-2020 Manuel A. Lopez and SIL International
-
-Version 1.2
+(c) Manuel A. Lopez and SIL International
 
 Description
 -----------
@@ -21,4 +19,5 @@ Supported Platforms
  * macOS
  * Linux
  * Web
+ * Mobile
 

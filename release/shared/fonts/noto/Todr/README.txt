@@ -1,0 +1,1 @@
+This font is an as yet unreleased Noto font. It should be updated as soon as an official font is released.

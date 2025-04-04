@@ -1,15 +1,14 @@
 ausephon keyboard
 ==============
 
-Version 10.1
+Version 11
 
 Description
 -----------
-A keyboard for phonemic (broad) transcription of Australian accented English using the Harrington/Cox/Evans (HCE) system.
+A keyboard for phonemic (broad) transcription of Australian accented English using the Harrington/Cox/Evans (HCE) system with added diacritics.
 
 Links
 -----
-https://sway.office.com/ZW2iPBbX0yHWcIsJ
 Keyboard home: https://keyman.com/keyboards/ausephon
 
 Copyright

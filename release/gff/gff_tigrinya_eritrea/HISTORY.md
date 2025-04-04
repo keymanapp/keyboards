@@ -1,7 +1,16 @@
 # ትግርኛ-ኤርትራ (Tigrinya Keyboard for Eritrean Conventions) Change History
 
-2.0 (2023-06-20)
-----------------
+2.0.3 (29 Oct 2024)
+--------------------
+* Abyssinica SIL TypeTuned fonts were renamed.
+
+2.0.2 (2023-10-24)
+------------------
+* Removed "EthiopicUnicodeNormal.ttf" and "EthiopicUnicodeItalic.ttf" 
+  fonts which have an unknown license.
+
+2.0.1 (2023-06-20)
+------------------
 * Fix for smart-dot and smart-comma composition.
 
 2.0 (2023-06-03)

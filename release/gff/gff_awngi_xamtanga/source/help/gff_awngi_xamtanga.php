@@ -1,5 +1,5 @@
 <?php 
-  $pagename = 'GFF Awngi &amp; Khimtanga';
+  $pagename = 'GFF Awngi & Khimtanga';
   $pagetitle = 'The Geʾez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
   $pagestyle = <<<END
   img.indented { text-indent: 10%}
@@ -315,7 +315,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Geʾez Frontier Foundation, 2023. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>

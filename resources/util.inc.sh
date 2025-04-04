@@ -16,6 +16,26 @@ popd () {
     command popd "$@" > /dev/null
 }
 
+# die function still used by ci.sh, fv_all/build.sh, external.inc.sh,
+# regression-build.sh, validate.inc.sh, zip.inc.sh, test-external.sh, etc
+# TODO: replace with builder function
+
+function die {
+  local rc=$?
+  local msg="$*"
+
+  # We are dying, so if previous command didn't actually give
+  # an error code, we still want to give an error. We'll give
+  # an arbitrary exit code to indicate this
+  if [ $rc == 0 ]; then
+    rc=999
+  fi
+
+  (>&2 echo "${t_red}$msg${t_end}")
+  (>&2 echo "${t_red}Aborting with error $rc${t_end}")
+  exit $rc
+}
+
 #
 # Version comparison functions, rely on sort having a -V option
 # From: https://stackoverflow.com/a/4024263/1836776
@@ -45,5 +65,52 @@ function do_cleanup() {
   # Removing old version of kmcomp to avoid confusion
   if [[ -d  "$THIS_SCRIPT_PATH/tools/kmcomp" ]]; then
     rm -rf "$THIS_SCRIPT_PATH/tools/kmcomp"
+  fi
+}
+
+# Color variables; used by ci.sh and help-keyman-com.sh and others
+# TODO: replace with builder color vars in the future
+
+#
+# Define terminal colours; we default to -no-color
+#
+
+t_red=
+t_grn=
+t_yel=
+t_blu=
+t_mag=
+t_cyn=
+t_end=
+
+#
+# util_set_log_color_mode mode
+#
+#    mode: -no-color -- disable all color
+#          -color    -- force color mode on regardless of term settings
+#          (empty)   -- use term color mode
+#
+function util_set_log_color_mode {
+  local FLAG_COLOR="$1"
+  local COLOR
+
+  if [ "$FLAG_COLOR" == -no-color ]; then
+    COLOR=false
+  elif [ "$FLAG_COLOR" == -color ]; then
+    COLOR=true
+  elif [ -t 2 ]; then
+    COLOR=true
+  else
+    COLOR=false
+  fi
+
+  if $COLOR; then
+    t_red=$'\e[1;31m'
+    t_grn=$'\e[1;32m'
+    t_yel=$'\e[1;33m'
+    t_blu=$'\e[1;34m'
+    t_mag=$'\e[1;35m'
+    t_cyn=$'\e[1;36m'
+    t_end=$'\e[0m'
   fi
 }

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.118.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>jawa2.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Keyboard Indonesia\Jawa</Folder>
@@ -43,10 +44,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Nulisa Aksara Jawa</Name>
-    <Copyright URL="">© 2019-2021 Benny Lin</Copyright>
+    <Copyright URL="">© Benny Lin</Copyright>
     <Author URL="">Benny Lin</Author>
     <WebSite URL="https://bennylin.github.io/">https://bennylin.github.io/</WebSite>
-    <Description>This keyboard is designed to type all Javanese characters and stacks
+    <Description URL="">This keyboard is designed to type all Javanese characters and stacks
 directly. You get a Javanese character every time you press a Latin key,
 without having to use the Alt key or memorizing arbitrary key locations
 in QWERTY keyboard. This keyboard is based on Benny Lin\'s Nulisa Aksara
@@ -96,7 +97,13 @@ Jawa web transliterator program - http://is.gd/nulisa.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\shared\fonts\javanese\NotoSansJavanese-Regular2.0.ttf</Name>
+      <Name>..\..\..\shared\fonts\noto\Java\NotoSansJavanese-Bold.ttf</Name>
+      <Description>Font Noto Sans Javanese Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\noto\Java\NotoSansJavanese-Regular.ttf</Name>
       <Description>Font Noto Sans Javanese Regular</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.ttf</FileType>
@@ -113,8 +120,8 @@ Jawa web transliterator program - http://is.gd/nulisa.</Description>
       <Name>Nulisa Aksara Jawa</Name>
       <ID>jawa</ID>
       <Version>2.0</Version>
-      <OSKFont>..\..\..\shared\fonts\javanese\NotoSansJavanese-Regular2.0.ttf</OSKFont>
-      <DisplayFont>..\..\..\shared\fonts\javanese\NotoSansJavanese-Regular2.0.ttf</DisplayFont>
+      <OSKFont>..\..\..\shared\fonts\noto\Java\NotoSansJavanese-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\noto\Java\NotoSansJavanese-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="id-Java">Indonesia (Aksara Jawa)</Language>
         <Language ID="jv-Java">Jawa (Aksara Jawa)</Language>
@@ -122,20 +129,23 @@ Jawa web transliterator program - http://is.gd/nulisa.</Description>
         <Language ID="mad-Java">Madura (Aksara Jawa)</Language>
         <Language ID="sas-Java">Sasak (Aksara Jawa)</Language>
         <Language ID="su-Java">Sunda (Aksara Jawa)</Language>
-        <Language ID="osi-Java">Osing (Aksara Jawa)</Language>
-        <Language ID="tes-Java">Tengger (Aksara Jawa)</Language>
+        <Language ID="osi">Osing (Aksara Jawa)</Language>
+        <Language ID="tes">Tengger (Aksara Jawa)</Language>
       </Languages>
       <Examples>
-        <Example ID="id-Java" Keys="b a h a s a I n d o n e s i a" Text="ꦧꦲꦱ‌ꦆꦤ꧀ꦢꦺꦴꦤꦺꦱꦶꦪꦴ" Note="Name of the language" />
-        <Example ID="jv-Java" Keys="a k s a r a j a w a" Text="ꦲꦏ꧀ꦱꦫꦗꦮ" Note="Name of writing script" />
-        <Example ID="kaw-Java" Keys="k a w i" Text="ꦏꦮꦶ" Note="Name of the language" />
-        <Example ID="mad-Java" Keys="m a d u r a" Text="ꦩꦢꦸꦫ" Note="Name of the language" />
-        <Example ID="sas-Java" Keys="s a s a k" Text="ꦱꦱꦏ꧀" Note="Name of the language" />
-        <Example ID="su-Java" Keys="s u n d a" Text="ꦱꦸꦤ꧀ꦢ" Note="Name of the language" />
-        <Example ID="osi-Java" Keys="o s i n g" Text="ꦲꦺꦴꦱꦶꦁ" Note="Name of the language" />
-        <Example ID="tes-Java" Keys="t e n g g e r" Text="ꦠꦺꦁꦒꦺꦂ" Note="Name of the language" />
+        <Example ID="id-Java" Keys="b a h a s a I n d o n e s i a" Text="ꦧꦲꦱ‌ꦆꦤ꧀ꦢꦺꦴꦤꦺꦱꦶꦪꦴ" Note="Name of the language"/>
+        <Example ID="jv-Java" Keys="a k s a r a j a w a" Text="ꦲꦏ꧀ꦱꦫꦗꦮ" Note="Name of writing script"/>
+        <Example ID="kaw-Java" Keys="k a w i" Text="ꦏꦮꦶ" Note="Name of the language"/>
+        <Example ID="mad-Java" Keys="m a d u r a" Text="ꦩꦢꦸꦫ" Note="Name of the language"/>
+        <Example ID="sas-Java" Keys="s a s a k" Text="ꦱꦱꦏ꧀" Note="Name of the language"/>
+        <Example ID="su-Java" Keys="s u n d a" Text="ꦱꦸꦤ꧀ꦢ" Note="Name of the language"/>
+        <Example ID="osi" Keys="o s i n g" Text="ꦲꦺꦴꦱꦶꦁ" Note="Name of the language"/>
+        <Example ID="tes" Keys="t e n g g e r" Text="ꦠꦺꦁꦒꦺꦂ" Note="Name of the language"/>
       </Examples>
-  </Keyboard>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\noto\Java\NotoSansJavanese-Regular.ttf"/>
+      </WebDisplayFonts>
+    </Keyboard>
   </Keyboards>
   <Strings/>
 </Package>

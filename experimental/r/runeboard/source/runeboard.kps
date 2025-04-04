@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Owner\Documents\Keyman Developer\keymandesktop90.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Runeboard</Folder>
@@ -33,10 +35,10 @@
   <Info>
     <Name URL="">Runeboard - Runic Keyboard</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© ⅯⅯⅩⅩⅠⅠⅠ ᚱᚢᚾ᛫ᛗᚫᚾ</Copyright>
+    <Copyright URL="">© ⅯⅯⅩⅩⅣ ᚱᚢᚾ᛫ᛗᚫᚾ</Copyright>
     <WebSite URL="https://www.youtube.com/@LearnRunens">https://www.youtube.com/@LearnRunens</WebSite>
     <Author URL="">ᚱᚢᚾ᛫ᛗᚫᚾ</Author>
-    <Description>Runeboard includes the entire Unicode Runic Block. It is designed for
+    <Description URL="">Runeboard includes the entire Unicode Runic Block. It is designed for
 typing the English language (whether Old, Middle, or Modern) using the
 runic script (Anglo-Saxon Fuþorc runes), &amp; the Proto-Germanic language
 (Elder Fuþark runes), with a standard 104- or 105-key layout.
@@ -74,12 +76,6 @@ by which fonts are installed on that machine.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>runeboard.ico</Name>
-      <Description>File runeboard.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
-    <File>
       <Name>welcome\welcome.htm</Name>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
@@ -92,26 +88,26 @@ by which fonts are installed on that machine.</Description>
       <FileType>.otf</FileType>
     </File>
     <File>
-      <Name>welcome\LayoutU_.png</Name>
-      <Description>File LayoutU_.png</Description>
+      <Name>welcome\layerU_.png</Name>
+      <Description>File layerU_.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\LayoutU_CA.png</Name>
-      <Description>File LayoutU_CA.png</Description>
+      <Name>welcome\layerU_RA.png</Name>
+      <Description>File layerU_RA.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\LayoutU_S.png</Name>
-      <Description>File LayoutU_S.png</Description>
+      <Name>welcome\layerU_S.png</Name>
+      <Description>File layerU_S.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>welcome\LayoutU_SCA.png</Name>
-      <Description>File LayoutU_SCA.png</Description>
+      <Name>welcome\layerU_SRA.png</Name>
+      <Description>File layerU_SRA.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
@@ -126,7 +122,8 @@ by which fonts are installed on that machine.</Description>
     <Keyboard>
       <Name>Runes</Name>
       <ID>runeboard</ID>
-      <Version>2.1</Version>
+      <Version>3.0</Version>
+      <OSKFont>fonts\Catrinity.otf</OSKFont>
       <DisplayFont>fonts\Catrinity.otf</DisplayFont>
       <Languages>
         <Language ID="en-Runr">English (Runic)</Language>

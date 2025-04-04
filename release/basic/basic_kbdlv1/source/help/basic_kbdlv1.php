@@ -20,8 +20,6 @@ follows the Windows 10 Latvian (QWERTY) layout.
 <p>´c will produce ć (available on cCeEnNoOsSzZ).</p>
 <p>¨a will produce ä (available on aAoOuU).</p>
 
-<h1>Keyboard Layout</h1>
-
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift rightalt rightalt-shift'>
 </div>

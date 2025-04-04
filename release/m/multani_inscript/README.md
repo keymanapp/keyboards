@@ -1,7 +1,5 @@
-multani_inscript keyboard
+Multani Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for the Saraiki language, using the Multani script wit
 
 Links
 -----
+https://keyman.com/keyboards/multani_inscript
 
 Copyright
 ---------

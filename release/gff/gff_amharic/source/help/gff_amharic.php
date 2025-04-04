@@ -43,23 +43,7 @@ code {
 	<link rel="stylesheet" href="kb.css"/>
 </head>
 
-<p style='margin:0px'>Keyboard &#169; 1997-2022. Geʾez Frontier Foundation.</p>
-
-<br/>
-<a href="#Overview">Overview</a><br/>
-<a href="#Using">Using this Keyboard</a><br/>
-<a style='margin-left:20px' href="#osk">Keyboard Layout</a><br/>
-<a style='margin-left:20px' href="#Quickstart">Quickstart</a><br/>
-<a style='margin-left:20px' href="#Examples">Examples</a><br/>
-<a style='margin-left:20px' href="#Documentation">Keyboard Details</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-English.pdf'>Complete Typing Chart - English</a><br/>
-<a style='margin-left:30px' target="_blank" href='AmharicTyping-Amharic.pdf'>Complete Typing Chart - Amharic</a><br/>
-<a href="#Troubleshooting">Troubleshooting</a><br/>
-<a href="#Resources">Further Resources</a><br/>
-<a style='margin-left:20px' href="#Related">Related Keyboard Layouts</a><br/>
-<a href="#Technical">Technical Information</a><br/>
-<a style='margin-left:20px' href="#Author">Authorship</a><br/>
-
+<p style='margin:0px'>Keyboard &#169; Geʾez Frontier Foundation.</p>
 
 <div id='Overview'>
 <h2>Overview</h2>
@@ -269,13 +253,13 @@ for full details on how to type all Amharic letters, numbers and punctuation.
 <div id="Author">
 <h3>Keyboard Authorship</h3>
 <p>
-This keyboard was created by the Geʾez Frontier Foundation.  SIL International graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
+This keyboard was created by the Geʾez Frontier Foundation.  SIL Global graciously acknowledges the contribution made by the authors in developing this keyboard and making it freely available for use with Keyman Desktop and KeymanWeb. Their effort assists in enabling people to communicate in their own language.
 </p>
 </div>
 <div id="Copyright">
 <h3>Copyright and Terms of Use</h3>
 <p>
-The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright 1997-2023 Geʾez Frontier Foundation and SIL International.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
+The Amharic keyboard layout for Keyman Desktop and KeymanWeb is Copyright Geʾez Frontier Foundation and SIL Global.  It may be freely distributed and used under the terms of <a href="https://opensource.org/licenses/MIT">The MIT License</a>.
 </p>
 
 </div>

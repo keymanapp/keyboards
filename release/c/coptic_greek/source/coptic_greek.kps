@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1350.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Coptic (Greek)</Name>
-    <Copyright URL="">© 2010-2019 Michael Everson, evertype.com.</Copyright>
+    <Copyright URL="">© Michael Everson, evertype.com.</Copyright>
     <Author URL="">Michael Everson</Author>
-    <Description>This keyboard layout is designed for typing the Coptic script. This
+    <Description URL="">This keyboard layout is designed for typing the Coptic script. This
 keyboard is based on Apple\'s Greek keyboard layout. It is useful for
 people who type a lot of Greek and a little Coptic. The related keyboard
 supports a touch layout.</Description>
@@ -93,19 +94,48 @@ supports a touch layout.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</Name>
+      <Description>Font Aegyptus</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\Aegyptus.pdf</Name>
+      <Description>File Aegyptus.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\AegyptusBold.otf</Name>
+      <Description>Font Aegyptus Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.otf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\aegyptus\license.txt</Name>
+      <Description>File license.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Coptic (Greek)</Name>
       <ID>coptic_greek</ID>
-      <Version>2.2</Version>
+      <Version>2.3</Version>
+      <OSKFont>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\aegyptus\Aegyptus.otf</DisplayFont>
       <Languages>
-        <Language ID="cop-Copt">Coptic (Coptic)</Language>
+        <Language ID="cop">Coptic</Language>
       </Languages>
+      <Examples>
+        <Example ID="cop" Keys="[RALT+T] m e t r e m n [oE2] x h m i" Text="ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ‎" Note=""/>
+      </Examples>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="coptic_qwerty" />
+    <RelatedPackage ID="coptic_qwerty"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

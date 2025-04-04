@@ -1,16 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>10.0.1093.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Assamese (Sabdalipi)</Name>
-    <Copyright URL="">© 2009-2018 TI Trade</Copyright>
-    <Description>This keyboard is designed for the Assamese language. It is a phonetic
+    <Copyright URL="">© TI Trade</Copyright>
+    <Description URL="">This keyboard is designed for the Assamese language. It is a phonetic
 keyboard, which means the characters are arranged according to the
 letters of the English keyboard.</Description>
   </Info>
@@ -90,18 +91,18 @@ letters of the English keyboard.</Description>
     <Keyboard>
       <Name>Assamese (Sabdalipi)</Name>
       <ID>sabdalipi_assamese</ID>
-      <Version></Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="as-IN">Assamese (India)</Language>
       </Languages>
       <Examples>
-        <Example ID="as-IN" Keys="A s m E x a" Text="অসমীয়া" Note="Name of language" />
+        <Example ID="as-IN" Keys="A s m E x a" Text="অসমীয়া" Note="Name of language"/>
       </Examples>
-  </Keyboard>
+    </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="sabdalipiunicode" Relationship="deprecates" />
-    <RelatedPackage ID="sabdalipi assamese" Relationship="deprecates" />
+    <RelatedPackage ID="sabdalipiunicode" Relationship="deprecates"/>
+    <RelatedPackage ID="sabdalipi assamese" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

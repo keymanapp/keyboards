@@ -81,9 +81,6 @@
     </style>
 </head>
 
-<body>
-    <h1>NLCI Tamil WinScript Keyboard help</h1>
-
     <p>This Keyboard mimic Tamil WinScript Keyboard Layout designed by NLCI in 1988. Several linguists and members of translation community are still using this keyboard layout for keyboarding the text. This is a phonetic based keyboarding system designed with the objective of keyboarding text with minimal keystrokes. Keys are also layed out according the frequency of occurance, yet tried to follow a phonetic based keyboarding system.</p>
 
     <h2>Keyboard layout</h2>
@@ -165,6 +162,10 @@
         </tbody>
     </table>
 
+<h3>Nukta</h3>
+
+    <p> <kbd>f</kbd> is used for nukta Eg <kbd>k</kbd> <kbd>f</kbd> will generate <samp>க𑌼</samp>, and <kbd>k</kbd> <kbd>o</kbd> <kbd>o</kbd> <kbd>f</kbd> will generate <samp>க𑌼ோ</samp></p>
+    
     <h3>Virama</h3>
 
     <p> <kbd>X</kbd> is used as virama Eg <kbd>k</kbd> <kbd>X</kbd> <kbd>L</kbd> will generate <samp>க்‌ள</samp></p>
@@ -233,9 +234,5 @@
 	<h3>Backtick for change into English</h3>
 
     <p> <kbd>`</kbd> Backtick is used to change into English Eg <kbd>`</kbd> <kbd>த</kbd> will generate <kbd>q</kbd></p>  
-
-    
-</body>
-    
 
 

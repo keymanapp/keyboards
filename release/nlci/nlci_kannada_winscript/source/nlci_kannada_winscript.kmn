@@ -1,10 +1,11 @@
 ﻿store(&VERSION) '10.0'
-store(&NAME) 'Kannada WinScript[NLCI] '
-store(&COPYRIGHT) '© 2000-2019 NLCI Bangalore'
-store(&KEYBOARDVERSION) '2.0'
-store(&TARGETS) 'web desktop'
+store(&NAME) 'Kannada WinScript (NLCI)'
+store(&COPYRIGHT) '© NLCI Bangalore'
+store(&KEYBOARDVERSION) '2.1'
+store(&TARGETS) 'any'
 store(&BITMAP) 'nlci_kannada_winscript.ico'
 store(&VISUALKEYBOARD) 'nlci_kannada_winscript.kvks'
+store(&LAYOUTFILE) 'nlci_kannada_winscript.keyman-touch-layout'
 begin Unicode > use(main)
 
 group(main) using keys
@@ -42,7 +43,6 @@ c Adjust the behavior of 'e'
 
 c Adjust the behavior of 'i'
 'ಇ' + 'i' > 'ಈ' 
-'ಿ' + 'i' > 'ೀ'    
 
 c Adjust the behavior of l
 'ಲ' + 'l' > 'ಳ'
@@ -73,7 +73,6 @@ c Adjust the behavior of F
 
 c Adjust the behavior of u
 'ಉ' + 'u' > 'ಊ'    
-'ು' + 'u' > 'ೂ' 
 
 c Adjust the behavior of s
 'ಸ' + 's'> 'ಶ'    
@@ -84,7 +83,6 @@ c Adjust the behavior of S
 c Adjust the behavior of X
 any(consonants) + 'X' > context '್' U+200C
 any(consonants) '್' + 'X' > context U+200C
-U+200C + 'X' > context beep
 store(WordFinalPunct) ' ",;:.>!]}-\;/~@#$%^&*(_+|:<?)' 
 U+200C + any(WordFinalPunct) > index(WordFinalPunct, 2)
   
@@ -134,7 +132,6 @@ any(consonants) + any(vowelKeys) > context index(vowelMatras, 2)
 
 c cons + virama
 any (consonants) + 'x' > context '್'          
-any(vowels) + 'x' > context '್'   
 
 c vowels + virama
 any(vowels) + 'x' > context '್' 

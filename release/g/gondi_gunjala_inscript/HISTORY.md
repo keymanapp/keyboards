@@ -1,6 +1,14 @@
 Gondi INSCRIPT (Gunjala) Keyboard Change History
 =======================================
 
+1.2 (2024-08-30)
+----------------
+* Added tablet layout
+
+1.1.1 (27 Oct 2023)
+-----------------
+* Updated fonts
+
 1.1 (28 Jun 2023)
 -----------------
 * Added keyboard to Keyman Github repo

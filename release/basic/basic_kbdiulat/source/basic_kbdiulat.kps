@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.102.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Inuktitut - Latin Basic</Name>
-    <Copyright URL="">(c) 2009-2020 SIL International</Copyright>
+    <Copyright URL="">(c) SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>This keyboard layout is designed for Inuktitut (Latin and Syllabics). It
+    <Description URL="">This keyboard layout is designed for Inuktitut (Latin and Syllabics). It
 includes an on screen keyboard which can be viewed by clicking on the
 Keyman icon and selecting the On Screen Keyboard menu item. The keyboard
 layout follows the Windows 10 Inuktitut - Latin layout.</Description>
@@ -81,20 +82,26 @@ layout follows the Windows 10 Inuktitut - Latin layout.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\basic_kbdiulat.js</Name>
+      <Description>File basic_kbdiulat.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Inuktitut - Latin Basic</Name>
       <ID>basic_kbdiulat</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
       <Languages>
         <Language ID="iu-Latn">Inuktitut</Language>
-        <Language ID="iu-Cans">Inuktitut (Unified Canadian Aboriginal Syllabics)</Language>
+        <Language ID="iu">Inuktitut</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="kbdiulat" Relationship="deprecates" />
+    <RelatedPackage ID="kbdiulat" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

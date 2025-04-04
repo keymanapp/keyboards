@@ -26,14 +26,13 @@ c                               Add U+1035 on :, U+105A kinzi on Q
 
 store(&version) "10.0"  
 store(&NAME) 'myWin Extended (SIL)'
-c Comment out the line below to compile for SCIM
-store(&Copyright) "(c) 2004-2022 SIl International"
-store(sil_myanmar_mywinext.ico)
+store(&COPYRIGHT) '(c) SIL Global'
 store(&VISUALKEYBOARD) 'sil_myanmar_mywinext.kvks'
 c HOTKEY  "^+W"
-store(&TARGETS) 'web desktop'
-store(&KEYBOARDVERSION) '1.4.1'
-store(&BITMAP) 'sil_myanmar_mywinext.bmp'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.5.1'
+store(&BITMAP) 'sil_myanmar_mywinext.ico'
+store(&LAYOUTFILE) 'sil_myanmar_mywinext.keyman-touch-layout'
 
 begin Unicode > use(Main)
 c qwertyuiop[ is same as Win

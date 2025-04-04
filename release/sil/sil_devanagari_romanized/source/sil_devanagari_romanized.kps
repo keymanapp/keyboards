@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.286.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.219.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>SILkeybRom.png</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Samuel\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,11 +20,11 @@
   </StartMenu>
   <Info>
     <Name URL="">Devanagari Romanized (SIL)</Name>
-    <Copyright URL="">© 2015-2022 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL="">SIL</Author>
     <Version URL=""></Version>
     <WebSite URL="https://nepal.sil.org/">https://nepal.sil.org/</WebSite>
-    <Description>The Devanagari Romanized (SIL) keyboard maps the Devanagari characters
+    <Description URL="">The Devanagari Romanized (SIL) keyboard maps the Devanagari characters
 to their respective keys on the US English keyboard. The keyboard layout
 can be viewed by clicking on the Keyman icon and selecting the On-Screen
 Keyboard menu item, or by opening the Help documentation. This layout
@@ -41,18 +42,6 @@ matches the "Devanagari Romanized (SAG)" Windows keyboard layout.</Description>
       <Description>File welcome.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>fonts\AnnapurnaSIL-Nepal-Bold.ttf</Name>
-      <Description>Font Annapurna SIL Nepal Bold</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
-    </File>
-    <File>
-      <Name>fonts\AnnapurnaSIL-Nepal-Regular.ttf</Name>
-      <Description>Font Annapurna SIL Nepal</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
     <File>
       <Name>..\build\sil_devanagari_romanized.js</Name>
@@ -103,6 +92,42 @@ matches the "Devanagari Romanized (SAG)" Windows keyboard layout.</Description>
       <FileType>.jpg</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Bold.ttf</Name>
+      <Description>Font Annapurna SIL Nepal Bold</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Regular.ttf</Name>
+      <Description>Font Annapurna SIL Nepal</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\FONTLOG.txt</Name>
+      <Description>File FONTLOG.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\OFL.txt</Name>
+      <Description>File OFL.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\OFL-FAQ.txt</Name>
+      <Description>File OFL-FAQ.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\sil\annapurna_sil_nepal\README.txt</Name>
+      <Description>File README.txt</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.txt</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -113,9 +138,9 @@ matches the "Devanagari Romanized (SAG)" Windows keyboard layout.</Description>
     <Keyboard>
       <Name>Devanagari Romanized (SIL)</Name>
       <ID>sil_devanagari_romanized</ID>
-      <Version>1.7</Version>
-      <OSKFont>fonts\AnnapurnaSIL-Nepal-Regular.ttf</OSKFont>
-      <DisplayFont>fonts\AnnapurnaSIL-Nepal-Bold.ttf</DisplayFont>
+      <Version>1.7.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\annapurna_sil_nepal\AnnapurnaSILNepal-Bold.ttf</DisplayFont>
       <Languages>
         <Language ID="ne">Nepali (macrolanguage)</Language>
         <Language ID="aph">Athpariya</Language>
@@ -142,7 +167,7 @@ matches the "Devanagari Romanized (SAG)" Windows keyboard layout.</Description>
         <Language ID="jml">Jumli</Language>
         <Language ID="klr">Khaling</Language>
         <Language ID="kle">Kulung (Nepal)</Language>
-        <Language ID="kgy">Kyerung</Language>
+        <Language ID="kgy-Deva">Kyerung (Devanagari)</Language>
         <Language ID="lhm">Lhomi</Language>
         <Language ID="lif">Limbu</Language>
         <Language ID="lbr">Lohorung</Language>

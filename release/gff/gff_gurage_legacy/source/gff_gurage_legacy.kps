@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.334.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>..\..\..\shared\gff\readme.htm</ReadMeFile>
     <GraphicFile>sideimage-gurage.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName>C:\Users\Daniel Mekonnen\Downloads\keymandesktop.msi</MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Legacy Gurage Keyboard</Folder>
@@ -50,10 +51,10 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">GFF Legacy Gurage Keyboard</Name>
-    <Copyright URL="">© 2008-2023 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:keyboards@ethiopic.org">The Geʾez Frontier Foundation</Author>
     <WebSite URL="http://keyboards.ethiopic.org">http://keyboards.ethiopic.org</WebSite>
-    <Description>This is a Gurage (ጉራጌ , ISO-639-2 swg) language mnemonic input method.
+    <Description URL="">This is a Gurage (ጉራጌ , ISO-639-2 swg) language mnemonic input method.
 It requires a font supporting Ethiopic script under the Unicode 4.1
 standard.</Description>
   </Info>
@@ -141,18 +142,17 @@ standard.</Description>
     <Keyboard>
       <Name>ጉራጌ (Gurage) Legacy</Name>
       <ID>gff_gurage_legacy</ID>
-      <Version>0.5</Version>
+      <Version>1.0.0</Version>
       <OSKFont>Gurage-Fider-1998.ttf</OSKFont>
       <DisplayFont>Gurage-Fider-1998.ttf</DisplayFont>
-      <WebDisplayFonts><Font Filename="NotoSerifEthiopic-Regular.woff2" /><Font Filename="NotoSerifEthiopic-Regular.ttf" /></WebDisplayFonts>
       <Languages>
         <Language ID="sgw-Ethi-XL">Sebat Bet Gurage (Ethiopic, XL)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff_sgw_7" Relationship="deprecates" />
-    <RelatedPackage ID="gff-sgw-powerpack-7" Relationship="deprecates" />
+    <RelatedPackage ID="gff_sgw_7" Relationship="deprecates"/>
+    <RelatedPackage ID="gff-sgw-powerpack-7" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

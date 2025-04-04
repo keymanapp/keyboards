@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.332.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>splash.bmp</GraphicFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -20,10 +21,10 @@
   <Info>
     <Name URL="">Cameroon QWERTY</Name>
     <Version URL=""></Version>
-    <Copyright URL="">© 2018-2023 SIL Cameroon</Copyright>
+    <Copyright URL="">© SIL Cameroon</Copyright>
     <Author URL="mailto:keyboards_cameroon@sil.org">Matthew Lee</Author>
     <WebSite URL="LangTechCameroon.info">LangTechCameroon.info</WebSite>
-    <Description>This keyboard supports the Standardized Alphabet for Cameroonian
+    <Description URL="">This keyboard supports the Standardized Alphabet for Cameroonian
 Languages for a QWERTY (US Keyboard)</Description>
   </Info>
   <Files>
@@ -176,7 +177,7 @@ Languages for a QWERTY (US Keyboard)</Description>
     <Keyboard>
       <Name>Cameroon QWERTY</Name>
       <ID>sil_cameroon_qwerty</ID>
-      <Version>6.0.9</Version>
+      <Version>6.1.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\andika_subsets\AndikaAfr-R.ttf</DisplayFont>
       <Languages>
@@ -441,7 +442,7 @@ Languages for a QWERTY (US Keyboard)</Description>
         <Language ID="vem">Vemgo-Mabas</Language>
         <Language ID="bav">Vengo</Language>
         <Language ID="vut">Vute</Language>
-        <Language ID="mfi">Wandala</Language>
+        <Language ID="mfi-Latn">Wandala</Language>
         <Language ID="www">Wawa</Language>
         <Language ID="weh">Weh</Language>
         <Language ID="bqm">Wumboko</Language>
@@ -461,8 +462,8 @@ Languages for a QWERTY (US Keyboard)</Description>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="cameroonqwertyunicode50" Relationship="deprecates" />
+    <RelatedPackage ID="cameroonqwertyunicode50" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

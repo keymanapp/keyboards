@@ -1,7 +1,5 @@
-brahmi_inscript keyboard
+Brahmi Inscript keyboard
 ==============
-
-Version 1.0
 
 Description
 -----------
@@ -9,6 +7,7 @@ This keyboard is designed for Sanskrit language, using Brahmi script for an Insc
 
 Links
 -----
+https://keyman.com/keyboards/brahmi_inscript
 
 Copyright
 ---------

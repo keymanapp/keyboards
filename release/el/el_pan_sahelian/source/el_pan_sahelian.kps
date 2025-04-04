@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +20,8 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">pan-Sahelian</Name>
-    <Copyright URL="">2003-2023 Enabling Languages</Copyright>
-    <Description>This keyboard is designed for use with various languages of Western and
+    <Copyright URL="">© Enabling Languages</Copyright>
+    <Description URL="">This keyboard is designed for use with various languages of Western and
 Central Africa.</Description>
   </Info>
   <Files>
@@ -61,25 +62,41 @@ Central Africa.</Description>
       <FileType>.htm</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</Name>
+      <Description>Font DejaVu Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\build\el_pan_sahelian.js</Name>
+      <Description>File el_pan_sahelian.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>pan-Sahelian</Name>
       <ID>el_pan_sahelian</ID>
-      <WebDisplayFonts><Font Filename="DejaVuSans.ttf"/></WebDisplayFonts>
-      <Version>1.0</Version>
+      <Version>3.3</Version>
+      <OSKFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</DisplayFont>
       <Languages>
         <Language ID="fub">Adamawa Fulfulde</Language>
       </Languages>
+      <WebDisplayFonts>
+        <Font Filename="..\..\..\shared\fonts\dejavu\DejaVuSans.ttf"/>
+      </WebDisplayFonts>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="ps32" Relationship="deprecates" />
+    <RelatedPackage ID="ps32" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

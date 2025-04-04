@@ -1,6 +1,6 @@
 <?php /*
   Name:        BU keyboard
-  Copyright:   2006-2023 Albert Bickford
+  Copyright:   Albert Bickford
   Description: The BU Keyboard provides access to a wide range of characters for Latin-based scripts in Unicode, including:
 
 <ul>

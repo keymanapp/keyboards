@@ -1,9 +1,7 @@
 Naskapi (Common) Keyboard
 =====================
 
-Copyright (c) 2001-2020 Bill Jancewicz
-
-Version 1.4
+Copyright (c) Bill Jancewicz
 
 __DESCRIPTION__
 The Naskapi (Common) keyboard is a phonetic-style 

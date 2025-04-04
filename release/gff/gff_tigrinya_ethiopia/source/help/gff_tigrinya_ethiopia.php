@@ -66,9 +66,6 @@ table.zaima { border-bottom: hidden }
 table.zaima { empty-cells: show }
 </style>
 </head>
-<body>
-
-<h1>The Geʾez Frontier Foundation Keyboard for Ethiopian Tigrinya Language</h1>
 
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
 
@@ -311,7 +308,7 @@ hitting the punctuation key two or more times until it appears.</p>
 
 <h2>License</h2>
 
-<p>This keyboard is copyright © Geʾez Frontier Foundation, 2009-2023. It is distributed under the MIT free software license:</p>
+<p>This keyboard is copyright © Geʾez Frontier Foundation. It is distributed under the MIT free software license:</p>
 
 <div style="margin-left: 1em;">
   <table>
@@ -328,5 +325,3 @@ hitting the punctuation key two or more times until it appears.</p>
     </tr>
   </table>
 </div>
-
-</body>

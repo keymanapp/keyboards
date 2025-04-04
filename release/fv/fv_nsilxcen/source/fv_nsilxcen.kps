@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Nsilxcen</Name>
-    <Copyright URL="">(c) 2008-2023 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
+    <Name URL="">Nsyilxcən</Name>
+    <Copyright URL="">(c) 2008-2024 FirstVoices, SIL International. Portions (c) 2006 Chris Harvey</Copyright>
     <Version URL=""></Version>
     <Author URL=""></Author>
     <WebSite URL="https://www.firstvoices.com">https://www.firstvoices.com</WebSite>
-    <Description>This keyboard is is optimised for the Nsilxcən language of the BC
-Interior region of Canada, but may work for other varities in the area
-including those in the US. This is part of a set of keyboards from
-FirstVoices.</Description>
+    <Description URL="">This keyboard is is optimised for the Nsyilxcən language of the BC 
+Interior region of Canada, but may work for other varities in the area 
+including those in the US. This is part of a set of keyboards from 
+FirstVoices.
+
+Alternate names:
+
+Okanagan
+
+Colville-Okanagan
+
+Nsilxcen</Description>
   </Info>
   <Files>
     <File>
@@ -139,17 +148,17 @@ FirstVoices.</Description>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Nsilxcən</Name>
+      <Name>Nsyilxcən</Name>
       <ID>fv_nsilxcen</ID>
-      <Version>9.2</Version>
+      <Version>10.0</Version>
       <Languages>
-        <Language ID="oka-Latn">Okanagan (Latin)</Language>
+        <Language ID="oka">Okanagan</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="okanagan_u" Relationship="deprecates" />
-    <RelatedPackage ID="fv_nsilxcen_kmw" Relationship="deprecates" />
+    <RelatedPackage ID="okanagan_u" Relationship="deprecates"/>
+    <RelatedPackage ID="fv_nsilxcen_kmw" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

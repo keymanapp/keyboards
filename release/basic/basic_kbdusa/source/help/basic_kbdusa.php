@@ -6,10 +6,9 @@
 ?>
 
 <p>
-    US English Table for IBM Arabic 238_L Basic 1.1 generated from template.
+    US English Table for IBM Arabic 238_L Basic. The keyboard layout follows the Windows 10 layout.
 </p>
 
-<h1>Keyboard Layout</h1>
 <h2>Desktop Keyboard Layout</h2>
 <div id='osk' data-states='default shift'>
 </div>

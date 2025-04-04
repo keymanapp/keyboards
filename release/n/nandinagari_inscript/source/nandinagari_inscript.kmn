@@ -1,0 +1,38 @@
+﻿c nandinagari_inscript generated from template at 2024-10-08 15:19:03
+c with name "Nandinagari Inscript"
+store(&VERSION) '10.0'
+store(&NAME) 'Nandinagari Inscript'
+store(&COPYRIGHT) 'Copyright © SIL Global'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'nandinagari_inscript.ico'
+store(&VISUALKEYBOARD) 'nandinagari_inscript.kvks'
+store(&LAYOUTFILE) 'nandinagari_inscript.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+store(IndVowelsK) [SHIFT K_D] [SHIFT K_E] [SHIFT K_F] [SHIFT K_R] [SHIFT K_G] [SHIFT K_T] [SHIFT K_EQUAL] [SHIFT K_Z] [SHIFT K_S] [SHIFT K_W] [SHIFT K_A] [SHIFT K_Q]
+store(IndVowelsU) U+119A0 .. U+119A7 U+119AA .. U+119AD
+
+store(ConsK) [K_K] [SHIFT K_K] [K_I] [SHIFT K_I] [SHIFT K_U] [K_COLON] [SHIFT K_COLON] [K_P] [SHIFT K_P] [SHIFT K_RBRKT] [K_QUOTE] [SHIFT K_QUOTE] \
+             [K_LBRKT] [SHIFT K_LBRKT] [SHIFT K_C] [K_L] [SHIFT K_L] [K_O] [SHIFT K_O] [K_V] [K_H] [SHIFT K_H] [K_Y] [SHIFT K_Y] [K_C] [K_SLASH] [K_J] \
+             [K_N] [K_B] [SHIFT K_M] [SHIFT K_COMMA] [K_M] [K_U] [SHIFT K_N] [SHIFT K_J]
+
+store(ConsU) U+119AE .. U+119D0
+
+store(DepVowelsK) [K_E] [K_F] [K_R] [K_G] [K_T] [K_EQUAL] [K_Z] [K_S] [K_W] [K_A] [K_Q] [K_RBRKT]
+store(DepVowelsU) U+119D1 .. U+119D7 U+119DA .. U+119DD U+119E4
+
+store(OtherK) [K_X] [SHIFT K_HYPHEN] [K_D] [SHIFT K_PERIOD] [SHIFT K_BKQUOTE] [K_BKQUOTE]
+store(OtherU) U+119DE .. U+119E3
+
+store(digitsK) U+0030 .. U+0039
+store(digitsU) U+0CE6 .. U+0CEF
+
+group(main) using keys
+
++ any(ConsK) > index(ConsU,1)
++ any(IndVowelsK) > index(IndVowelsU,1)
++ any(DepVowelsK) > index(DepVowelsU,1)
++ any(OtherK) > index(OtherU,1)
++ any(digitsK) > index(digitsU,1)

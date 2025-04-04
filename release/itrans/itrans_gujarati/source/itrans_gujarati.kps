@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>11.0.1356.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Gujarati Phonetic (ITRANS)</Folder>
@@ -53,12 +54,12 @@
     </Items>
   </StartMenu>
   <Info>
-    <Version URL="">1.2.0</Version>
+    <Version URL=""></Version>
     <Name URL="">Gujarati Phonetic (ITRANS)</Name>
-    <Copyright URL="">©2019 sanskritdocuments.org</Copyright>
+    <Copyright URL="">© sanskritdocuments.org</Copyright>
     <Author URL="">Shree Devi Kumar</Author>
     <WebSite URL="https://sanskritdocuments.org/gujarati/">https://sanskritdocuments.org/gujarati/</WebSite>
-    <Description>A Phonetic (ITRANS) keyboard layout for Gujarati and Avestan written in
+    <Description URL="">A Phonetic (ITRANS) keyboard layout for Gujarati and Avestan written in
 Gujarati script.</Description>
   </Info>
   <Files>
@@ -115,11 +116,15 @@ Gujarati script.</Description>
     <Keyboard>
       <Name>Gujarati Phonetic (ITRANS)</Name>
       <ID>itrans_gujarati</ID>
-      <Version>1.2.0</Version>
+      <Version>1.3.0</Version>
       <Languages>
         <Language ID="gu">Gujarati</Language>
         <Language ID="ae-Gujr">Avestan (Gujarati)</Language>
       </Languages>
+      <Examples>
+        <Example ID="gu" Keys="g u j a r A t I" Text="ગુજરાતી" Note=""/>
+        <Example ID="ae-Gujr" Keys="s a M s k R t a" Text="સંસ્કૃત" Note=""/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>

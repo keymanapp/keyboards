@@ -1,9 +1,7 @@
 Lisu Standard (SIL) Keyboard
 =====================
 
-Copyright (C) 2018 SIL International
-
-Version 0.4
+Copyright (C) SIL Global
 
 __DESCRIPTION__
 This keyboard follows standard Lisu layout.
@@ -12,4 +10,7 @@ Supported Platforms
 -------------------
  * Windows
  * macOS
+ * Linux
  * Web
+ * Mobile
+ 

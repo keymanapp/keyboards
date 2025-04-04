@@ -64,7 +64,8 @@ p.keycap, li.keycap, div.keycap
 div.Section1
 	{page:Section1;}
 </style>
-<body>
+
+
 <div class=Section1>
 <p>This Gondi (Devanagari) Keyman keyboard has been designed for use on
 physical keyboards (laptops, etc.) as well as hand-held touch devices (such as
@@ -267,5 +268,3 @@ TE'>वेय्‍लोक्‌नल</span><span style='font-family:"Annapur
 <p class=MsoNormal>&nbsp;</p>
 
 </div>
-
-</body>

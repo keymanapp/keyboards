@@ -1,26 +1,28 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.333.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
-    <ExecuteProgram/>
+    <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <MSIFileName/>
-    <MSIOptions/>
-    <FollowKeyboardVersion/>
+    <GraphicFile>keyboard_package_screen_img.png</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder/>
+    <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
     <Version URL=""></Version>
     <Name URL="">Burushaski Girminas</Name>
-    <Copyright URL="">Copyright 2020 Quwat K. Sunny</Copyright>
-    <Description>Burushaski Girminas is latin/Roman based keyboard developed for
+    <Copyright URL="">Copyright © Quwat K. Sunny</Copyright>
+    <Description URL="">Burushaski Girminas is latin/Roman based keyboard developed for
     Burusho Maʰraka, a representative body of all three varieties of Burushaski
     from Hunza, Nagar and Yasin.</Description>
     <WebSite URL="https://keyman.com/keyboards/burushaski_girminas">https://keyman.com/keyboards/burushaski_girminas</WebSite>
@@ -57,6 +59,30 @@
       <FileType>.htm</FileType>
     </File>
     <File>
+      <Name>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</Name>
+      <Description>Font DejaVu Sans</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\shared\fonts\dejavu\DejaVuSerif.ttf</Name>
+      <Description>Font DejaVu Serif</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>keyboard_package_screen_img.png</Name>
+      <Description>File keyboard_package_screen_img.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\image_keyboard_guide2.png</Name>
+      <Description>File image_keyboard_guide2.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -67,9 +93,11 @@
     <Keyboard>
       <Name>Burushaski Girminas</Name>
       <ID>burushaski_girminas</ID>
-      <Version>2.0.24</Version>
+      <Version>2.1.0</Version>
+      <OSKFont>..\..\..\shared\fonts\dejavu\DejaVuSans.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\dejavu\DejaVuSerif.ttf</DisplayFont>
       <Languages>
-        <Language ID="bsk-Latn">bsk (Latin)</Language>
+        <Language ID="bsk-Latn">Burushaski (Latin)</Language>
       </Languages>
     </Keyboard>
   </Keyboards>

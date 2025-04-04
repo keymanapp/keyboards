@@ -1,5 +1,12 @@
 Colchis Latin
 ===============================
+1.6 (8 Jan 2025)
+------------------
+* Added ɔ and q̌ on all layouts 
+
+1.5 (9 Sept 2024)
+------------------
+* Changed language tag for lzz to lzz-GE
 
 1.4.1 (4 Oct 2023)
 ------------------

@@ -6,10 +6,11 @@ store(&HOTKEY) '[CTRL SHIFT K_L]'
 store(&VISUALKEYBOARD) 'lao_2008_basic.kvks'
 store(&BITMAP) 'lao_2008_basic.ico'
 store(&MESSAGE) 'Simple keyboard mapping with overtyping constraints but minimal re-ordering and no break insertion.'
-store(&COPYRIGHT) '© 2008-2019 John Durdin'
+store(&COPYRIGHT) '© John Durdin'
 store(&capsalwaysoff) "1"
-store(&TARGETS) 'web desktop'
-store(&KEYBOARDVERSION) '1.2.1'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.3'
+store(&LAYOUTFILE) 'lao_2008_basic.keyman-touch-layout'
 
 begin Unicode > use(Start)
 
@@ -73,7 +74,7 @@ c Re-order tone after sala -am
 c Constraints to avoid duplicated superscripts, etc.
  any(Tone) + "e" > context U+0EB3   c override constraint in this case
  any(Tone) + any(ToneKey) > context beep
- any(Tone) + any(VScriptKey) > context beep
+ any(Tone) + any(VScriptKey) > context beep c this rule won't fire because of rule on line 75
  any(VPrefix) + any(VPrefixKey) > context beep
  any(VPrefix) + any(ToneKey) > context beep
  any(VSuffix) + any(ToneKey) > context beep

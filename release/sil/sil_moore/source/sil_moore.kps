@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.276.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Mooré - Burkina Faso</Name>
-    <Copyright URL="">© 2006-2021 SIL International</Copyright>
+    <Copyright URL="">© SIL Global</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>Gʋndg kãngã naana moor gʋls-biis la gom-biis yĩnga. B yag-a-la fãrendã
+    <Description URL="">Gʋndg kãngã naana moor gʋls-biis la gom-biis yĩnga. B yag-a-la fãrendã
 gʋndg zugu. Moorã gʋndg mamseg lagma teed a taab n be kaane. Rẽ, bɩ-y
 pak mamsegã n bãng gʋls-biisã zĩisi.\
 \
@@ -122,21 +123,27 @@ on the French keyboard as used in Burkina Faso.</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_moore.js</Name>
+      <Description>File sil_moore.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Mooré - Burkina Faso</Name>
       <ID>sil_moore</ID>
-      <Version>2.0.1</Version>
+      <Version>2.1.1</Version>
       <OSKFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\charis\CharisSIL-Regular.ttf</DisplayFont>
       <Languages>
-        <Language ID="mos-Latn">Mossi (Latin)</Language>
+        <Language ID="mos">Mossi</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="moore" Relationship="deprecates" />
+    <RelatedPackage ID="moore" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>

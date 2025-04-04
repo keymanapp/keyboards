@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.141.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,10 +19,10 @@
   </StartMenu>
   <Info>
     <Name URL="">Limbu Typewriter (SIL)</Name>
-    <Copyright URL="">© 2010-2023 SIL International</Copyright>
+    <Copyright URL="">© SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL=""></Version>
-    <Description>A Limbu keyboard layout where the layout matches a typewriter layout.</Description>
+    <Description URL="">A Limbu keyboard layout where the layout matches a typewriter layout.</Description>
   </Info>
   <Files>
     <File>
@@ -120,12 +121,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
+    <File>
+      <Name>..\build\sil_limbu_typewriter.js</Name>
+      <Description>File sil_limbu_typewriter.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards>
     <Keyboard>
       <Name>Limbu Typewriter (SIL)</Name>
       <ID>sil_limbu_typewriter</ID>
-      <Version>1.2</Version>
+      <Version>1.3</Version>
       <OSKFont>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-Regular.ttf</OSKFont>
       <DisplayFont>..\..\..\shared\fonts\sil\namdhinggo\Namdhinggo-Bold.ttf</DisplayFont>
       <Languages>

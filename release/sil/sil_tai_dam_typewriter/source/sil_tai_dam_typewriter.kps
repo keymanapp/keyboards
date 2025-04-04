@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.266.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.329.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,9 +20,9 @@
   <Info>
     <Version URL=""></Version>
     <Name URL="">Tai Dam Typewriter (SIL)</Name>
-    <Copyright URL="">Copyright © 2009-2022 SIL International</Copyright>
+    <Copyright URL="">Copyright © SIL International</Copyright>
     <Author URL="mailto:support@keyman.com">SIL International</Author>
-    <Description>SIL\'s Tai Dam Typewriter keyboard is intended for typing the Tai Dam
+    <Description URL="">SIL\'s Tai Dam Typewriter keyboard is intended for typing the Tai Dam
 language with the Tai Viet script. The layout is based on that a manual
 typewriter which was custom built for the Tai Dam community in the U.S.
 in the late 1970s.</Description>
@@ -188,10 +189,15 @@ in the late 1970s.</Description>
     <Keyboard>
       <Name>Tai Dam Typewriter (SIL)</Name>
       <ID>sil_tai_dam_typewriter</ID>
-      <Version>1.1</Version>
+      <Version>1.2</Version>
+      <OSKFont>..\..\..\shared\fonts\sil\tai_heritage_pro\TaiHeritagePro-Regular.ttf</OSKFont>
+      <DisplayFont>..\..\..\shared\fonts\sil\tai_heritage_pro\TaiHeritagePro-Regular.ttf</DisplayFont>
       <Languages>
         <Language ID="blt">Tai Dam</Language>
       </Languages>
+      <Examples>
+        <Example ID="blt" Keys="w b f e" Text="ꪼꪕꪒꪾ" Note="Name of language"/>
+      </Examples>
     </Keyboard>
   </Keyboards>
   <Strings/>
