@@ -3,7 +3,7 @@ IPA (SIL) Keyboard Change History
 
 2.0.0 (2025-04-05)
 ------------------
-* Added new super and subscript characters (with thanks to @mayogo)
+* Added new super and subscript characters (with thanks to @moyogo)
 * Added gestures for touch layout (with thanks to @jahorton)
 * Added Sup/Sub layer on touch layout
 * Improved documentation for touch layout
