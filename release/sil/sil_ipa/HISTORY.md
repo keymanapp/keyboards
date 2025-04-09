@@ -1,6 +1,15 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+2.0.0 (2025-04-05)
+------------------
+* Added new super and subscript characters (with thanks to @moyogo)
+* Added gestures for touch layout (with thanks to @jahorton)
+* Added Sup/Sub layer on touch layout
+* Improved documentation for touch layout
+* Simplified html in the welcome.htm document
+* Added usage.htm for description of how to use keyboard in OSK
+
 1.8.7 (2024-03-05)
 ------------------
 * Add subscript numerals to underscore rota
