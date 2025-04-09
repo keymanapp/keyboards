@@ -1,0 +1,76 @@
+﻿c moro_language designed with Benjamin Angalo
+c for the Moro Language.
+store(&VERSION) '10.0'
+store(&NAME) 'moro_language'
+store(&COPYRIGHT) 'Copyright © Ross Cruickshank'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'moro_language.ico'
+store(&VISUALKEYBOARD) 'moro_language.kvks'
+store(&LAYOUTFILE) 'moro_language.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
++ [NCAPS K_X] > 'đ'
++ [NCAPS K_V] > 'ŋ'
++ [NCAPS K_Z] > 'ṯ'
++ [NCAPS K_H] > 'ə'
++ [NCAPS K_Q] > 'ɽ'
+
+
++ [SHIFT NCAPS K_X] > 'Ꟈ'
++ [SHIFT NCAPS K_V] > 'Ŋ'
++ [SHIFT NCAPS K_Z] > 'Ṯ'
++ [SHIFT NCAPS K_H] > 'Ə'
++ [SHIFT NCAPS K_Q] > 'Ɽ'
+
++ [CAPS K_X] > 'Ꟈ'
++ [CAPS K_V] > 'Ŋ'
++ [CAPS K_Z] > 'Ṯ'
++ [CAPS K_H] > 'Ə'
++ [CAPS K_Q] > 'Ɽ'
+
++ [NCAPS K_LBRKT] > 'ḏ'
++ [NCAPS K_RBRKT] > 'ë'
++ [NCAPS K_BKSLASH] > 'ñ'
+
++ [SHIFT NCAPS K_LBRKT] > 'Ḏ'
++ [SHIFT NCAPS K_RBRKT] > 'Ë'
++ [SHIFT NCAPS K_BKSLASH] > 'Ñ'
+
++ [CAPS K_LBRKT] > 'Ḏ'
++ [CAPS K_RBRKT] > 'Ë'
++ [CAPS K_BKSLASH] > 'Ñ'
+
+
+
+c last three characters
+
+'d' + '_' >  'ḏ' dk(underscore)
+'e' + ':' > 'ë' dk(diacritic)
+'n' + '~' > 'ñ' dk(tilda)
+
+'D' + '_' > 'Ḏ' dk(underscore)
+'E' + ':' > 'Ë' dk(diacritic)
+'N' + '~' > 'Ñ' dk(tilda)
+
++ [NCAPS SHIFT RALT K_BKSLASH] > '|'
++ [NCAPS SHIFT RALT K_RBRKT] > '}'
++ [NCAPS RALT K_BKSLASH] > '\'
++ [NCAPS RALT K_RBRKT] > ']'
++ [NCAPS RALT K_LBRKT] > '['
++ [NCAPS SHIFT RALT K_LBRKT] > '{' 
+
+c standard charcter with underscore
+
+
+c Handle a single quote
+'ḏ' dk(underscore) + '_' > 'd_' dk(underscore)
+'d_' dk(underscore) + '_' > 'ḏ_'
+
+'ë' dk(diacritic) + ':' > 'e:' dk(diacritic)
+'e:' dk(diacritic) + ':' > 'ë:'
+
+'ñ' dk(tilda) + '~' > 'n~' dk(tilda)
+'n~' dk(tilda) + '~' > 'ñ~'
