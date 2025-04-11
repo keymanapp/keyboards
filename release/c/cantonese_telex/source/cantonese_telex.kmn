@@ -225,6 +225,7 @@ store(h) 'hH'
 store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'ưƯ'
+store(two_q) 'qQ'
 c *******************************************************************
 
     c Keyboard options
@@ -9207,3 +9208,5 @@ any(ee) + 'w' > index(ee, 1)'w'
 any(ee) + 'W' > index(ee, 1)'W'
 
 
+any(two_q) any(two_u) any(aa) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(a) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
