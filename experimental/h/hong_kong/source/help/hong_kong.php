@@ -136,7 +136,7 @@
     <tr>
       <td>7 (high entering)</td>
       <td>/</td>
-      <td>yaat></td>
+      <td>yaat</td>
       <td>yât一
       </td>
     </tr>
