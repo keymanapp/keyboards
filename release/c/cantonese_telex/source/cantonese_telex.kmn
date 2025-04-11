@@ -10,6 +10,8 @@ store(&VISUALKEYBOARD) 'cantonese_telex.kvks'
 store(&LAYOUTFILE) 'cantonese_telex.keyman-touch-layout'
 
 c Note three entry points, rather than the traditional single entry point
+store(&KMW_RTL) '1'
+
 begin Unicode > use(main)
 begin NewContext > use(NewContext)
 begin PostKeystroke > use(PostKeystroke)
