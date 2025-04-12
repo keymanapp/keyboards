@@ -1,6 +1,10 @@
 IPA (SIL) Keyboard Change History
 =======================
 
+2.0.1 (2025-04-10)
+------------------
+* Modify OSKWeb file to better fit the home page
+
 2.0.0 (2025-04-05)
 ------------------
 * Added new super and subscript characters (with thanks to @moyogo)
