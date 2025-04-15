@@ -2,7 +2,7 @@
 store(&VERSION) '15.0'
 store(&NAME) 'Hong Kong'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0'
+store(&KEYBOARDVERSION) '1.0.1'
 store(&TARGETS) 'any'
 store(&BITMAP) 'hong_kong.ico'
 store(&VISUALKEYBOARD) 'hong_kong.kvks'
@@ -222,6 +222,7 @@ store(h) 'hH'
 store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'Ưư'
+store(two_q) 'qQ'
 c *******************************************************************
 
     c Keyboard options
@@ -3808,19 +3809,16 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "ńg" + "i" > "ngí"
 "ńg" + "o" > "ngó"
 "ńg" + "u" > "ngú"
-"ńg" + "w" > "ngứ"
 "ń" + "a" > "ná"
 "ń" + "e" > "né"
 "ń" + "i" > "ní"
 "ń" + "o" > "nó"
 "ń" + "u" > "nú"
-"ń" + "w" > "nứ"
 "ḿ" + "a" > "má"
 "ḿ" + "e" > "mé"
 "ḿ" + "i" > "mí"
 "ḿ" + "o" > "mó"
 "ḿ" + "u" > "mú"
-"ḿ" + "w" > "mứ"
 "ǹg" + "a" > "ngà"
 "ǹg" + "e" > "ngè"
 "ǹg" + "i" > "ngì"
@@ -4061,7 +4059,169 @@ any(vowels_nang)'p' + 's' > index(vowels_sac, 1)'p'
 "ÑGH" + "I" > "NGHĨ"
 "ṆGH" + "E" > "NGHẸ"
 "ṆGH" + "I" > "NGHỊ"
-
+"ńgh" + "y" > "nghý"
+"ǹgh" + "y" > "nghỳ"
+"n̉gh" + "y" > "nghỷ"
+"ñgh" + "y" > "nghỹ"
+"ṇgh" + "y" > "nghỵ"
+"Ńgh" + "y" > "Nghý"
+"Ǹgh" + "y" > "Nghỳ"
+"N̉gh" + "y" > "Nghỷ"
+"Ñgh" + "y" > "Nghỹ"
+"Ṇgh" + "y" > "Nghỵ"
+"ŃGH" + "Y" > "NGHÝ"
+"ǸGH" + "Y" > "NGHỲ"
+"N̉GH" + "Y" > "NGHỶ"
+"ÑGH" + "Y" > "NGHỸ"
+"ṆGH" + "Y" > "NGHỴ"
+'ḿ' + 'y' > 'mý'
+'m̀' + 'y' > 'mỳ'
+'m̉' + 'y' > 'mỷ'
+'m͂' + 'y' > 'mỹ'
+'ṃ' + 'y' > 'mỵ'
+'ḿ' + 'w' > 'mứ'
+'m̀' + 'w' > 'mừ'
+'m̉' + 'w' > 'mử'
+'m͂' + 'w' > 'mữ'
+'ṃ' + 'w' > 'mự'
+'ứo' + 'n' > 'ướn'
+'ừo' + 'n' > 'ườn'
+'ửo' + 'n' > 'ưởn'
+'ữo' + 'n' > 'ưỡn'
+'ựo' + 'n' > 'ượn'
+'Ḿ' + 'Y' > 'MÝ'
+'M̀' + 'Y' > 'MỲ'
+'M̉' + 'Y' > 'MỶ'
+'M͂' + 'Y' > 'MỸ'
+'Ṃ' + 'Y' > 'MỴ'
+'Ḿ' + 'W' > 'MỨ'
+'M̀' + 'W' > 'MỪ'
+'M̉' + 'W' > 'MỬ'
+'M͂' + 'W' > 'MỮ'
+'Ṃ' + 'W' > 'MỰ'
+'ỨO' + 'N' > 'ƯỚN'
+'ỪO' + 'N' > 'ƯỜN'
+'ỬO' + 'N' > 'ƯỞN'
+'ỮO' + 'N' > 'ƯỠN'
+'ỰO' + 'N' > 'ƯỢN'
+'Ḿ' + 'y' > 'Mý'
+'M̀' + 'y' > 'Mỳ'
+'M̉' + 'y' > 'Mỷ'
+'M͂' + 'y' > 'Mỹ'
+'Ṃ' + 'y' > 'Mỵ'
+'Ḿ' + 'w' > 'Mứ'
+'M̀' + 'w' > 'Mừ'
+'M̉' + 'w' > 'Mử'
+'M͂' + 'w' > 'Mữ'
+'Ṃ' + 'w' > 'Mự'
+'Ứo' + 'n' > 'Ướn'
+'Ừo' + 'n' > 'Ườn'
+'Ửo' + 'n' > 'Ưởn'
+'Ữo' + 'n' > 'Ưỡn'
+'Ựo' + 'n' > 'Ượn'
+'ńg' + 'y' > 'ngý'
+'ǹg' + 'y' > 'ngỳ'
+'n̉g' + 'y' > 'ngỷ'
+'ñg' + 'y' > 'ngỹ'
+'ṇg' + 'y' > 'ngỵ'
+'ńg' + 'w' > 'ngứ'
+'ǹg' + 'w' > 'ngừ'
+'n̉g' + 'w' > 'ngử'
+'ñg' + 'w' > 'ngữ'
+'ṇg' + 'w' > 'ngự'
+'ŃG' + 'Y' > 'NGÝ'
+'ǸG' + 'Y' > 'NGỲ'
+'N̉G' + 'Y' > 'NGỶ'
+'ÑG' + 'Y' > 'NGỸ'
+'ṆG' + 'Y' > 'NGỴ'
+'ŃG' + 'W' > 'NGỨ'
+'ǸG' + 'W' > 'NGỪ'
+'N̉G' + 'W' > 'NGỬ'
+'ÑG' + 'W' > 'NGỮ'
+'ṆG' + 'W' > 'NGỰ'
+'ŃG' + 'y' > 'NGý'
+'ǸG' + 'y' > 'NGỳ'
+'N̉G' + 'y' > 'NGỷ'
+'ÑG' + 'y' > 'NGỹ'
+'ṆG' + 'y' > 'NGỵ'
+'ŃG' + 'w' > 'NGứ'
+'ǸG' + 'w' > 'NGừ'
+'N̉G' + 'w' > 'NGử'
+'ÑG' + 'w' > 'NGữ'
+'ṆG' + 'w' > 'NGự'
+'Ńg' + 'y' > 'Ngý'
+'Ǹg' + 'y' > 'Ngỳ'
+'N̉g' + 'y' > 'Ngỷ'
+'Ñg' + 'y' > 'Ngỹ'
+'Ṇg' + 'y' > 'Ngỵ'
+'Ńg' + 'w' > 'Ngứ'
+'Ǹg' + 'w' > 'Ngừ'
+'N̉g' + 'w' > 'Ngử'
+'Ñg' + 'w' > 'Ngữ'
+'Ṇg' + 'w' > 'Ngự'
+'ń' + 'y' > 'ný'
+'ǹ' + 'y' > 'nỳ'
+'n̉' + 'y' > 'nỷ'
+'ñ' + 'y' > 'nỹ'
+'ṇ' + 'y' > 'nỵ'
+'ń' + 'w' > 'nứ'
+'ǹ' + 'w' > 'nừ'
+'n̉' + 'w' > 'nử'
+'ñ' + 'w' > 'nữ'
+'ṇ' + 'w' > 'nự'
+'Ń' + 'Y' > 'NÝ'
+'Ǹ' + 'Y' > 'NỲ'
+'N̉' + 'Y' > 'NỶ'
+'Ñ' + 'Y' > 'NỸ'
+'Ṇ' + 'Y' > 'NỴ'
+'Ń' + 'W' > 'NỨ'
+'Ǹ' + 'W' > 'NỪ'
+'N̉' + 'W' > 'NỬ'
+'Ñ' + 'W' > 'NỮ'
+'Ṇ' + 'W' > 'NỰ'
+'Ń' + 'y' > 'Ný'
+'Ǹ' + 'y' > 'Nỳ'
+'N̉' + 'y' > 'Nỷ'
+'Ñ' + 'y' > 'Nỹ'
+'Ṇ' + 'y' > 'Nỵ'
+'Ń' + 'w' > 'Nứ'
+'Ǹ' + 'w' > 'Nừ'
+'N̉' + 'w' > 'Nử'
+'Ñ' + 'w' > 'Nữ'
+'Ṇ' + 'w' > 'Nự'
+'ứo' + 'm' > 'ướm'
+'ừo' + 'm' > 'ườm'
+'ửo' + 'm' > 'ưởm'
+'ữo' + 'm' > 'ưỡm'
+'ựo' + 'm' > 'ượm'
+'ỨO' + 'M' > 'ƯỚM'
+'ỪO' + 'M' > 'ƯỜM'
+'ỬO' + 'M' > 'ƯỞM'
+'ỮO' + 'M' > 'ƯỠM'
+'ỰO' + 'M' > 'ƯỢM'
+'Ứo' + 'm' > 'Ướm'
+'Ừo' + 'm' > 'Ườm'
+'Ửo' + 'm' > 'Ưởm'
+'Ữo' + 'm' > 'Ưỡm'
+'Ựo' + 'm' > 'Ượm'
+'ứo' + 'p' > 'ướp'
+'ựo' + 'p' > 'ượp'
+'ỨO' + 'P' > 'ƯỚP'
+'ỰO' + 'P' > 'ƯỢP'
+'Ứo' + 'p' > 'Ướp'
+'Ựo' + 'p' > 'Ượp'
+'ứo' + 't' > 'ướt'
+'ựo' + 't' > 'ượt'
+'ỨO' + 'T' > 'ƯỚT'
+'ỰO' + 'T' > 'ƯỢT'
+'Ứo' + 't' > 'Ướt'
+'Ựo' + 't' > 'Ượt'
+'ứo' + 'c' > 'ước'
+'ựo' + 'c' > 'ược'
+'ỨO' + 'C' > 'ƯỚC'
+'ỰO' + 'C' > 'ƯỢC'
+'Ứo' + 'c' > 'Ước'
+'Ựo' + 'c' > 'Ược'
 
 "ú" + "e" > "ué"
 "ù" + "e" > "uè"
@@ -9012,3 +9172,27 @@ any(two_u) any(ow) + any(ptcmni) > index(two_uw, 1) index(ow, 2) index(ptcmni, 3
 'Ư' any(ow) + 'w' > 'U'index(o, 2)'w'
 'ư' any(ow) + 'W' > 'u'index(o, 2)'W'
 'Ư' any(ow) + 'W' > 'U'index(o, 2)'W'
+any(two_q) any(two_u) any(aa) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(a) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(aa) + 'W' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(a) + 'W' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+'í' + 'i' > 'iế'
+'ì' + 'i' > 'iề'
+'ỉ' + 'i' > 'iể'
+'ĩ' + 'i' > 'iễ'
+'ị' + 'i' > 'iệ'
+any(two_q) any(two_u) any(o) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(oo) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(o) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(oo) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(ow) + any(uow_end) > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(ow) + 'w' > index(two_q, 1) index(two_u, 2) index(o, 3) 'w'
+any(two_q) any(two_u) any(ow) + 'W' > index(two_q, 1) index(two_u, 2) index(o, 3) 'W'
+any(two_q) any(two_u) any(o) any(uow_end) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(oo) any(uow_end) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(o) any(uow_end) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(oo) any(uow_end) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(o) any(n) any(g) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
+any(two_q) any(two_u) any(oo) any(n) any(g) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
+any(two_q) any(two_u) any(o) any(n) any(g) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
+any(two_q) any(two_u) any(oo) any(n) any(g) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
