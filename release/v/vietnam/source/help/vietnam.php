@@ -127,6 +127,18 @@ vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese)
     <td>li<strong>i</strong>n<strong>n</strong>/lie<strong>e</strong>n<strong>n</strong></td>
     <td>liêng</td>
   </tr>
+  <tr>
+    <td>ơi</td>
+    <td>oii</td>
+    <td>oi<strong>i</strong></td>
+    <td>ơi</td>
+  </tr>
+  <tr>
+    <td>ươi</td>
+    <td>uoii</td>
+    <td>tuoi<strong>i</strong></td>
+    <td>tươi</td>
+  </tr>
   </tbody>
 </table>
 
@@ -198,4 +210,4 @@ vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese)
 
 <hr>
 
-<p>© cathaylab</p>
+<p>©cathaylab</p>
