@@ -1,8 +1,8 @@
 ﻿c vietnam keyboard for Chữ Quốc Ngữ Tiếng Việt (Vietnamese)
-store(&VERSION) '15.0'
+store(&VERSION) '17.0'
 store(&NAME) 'vietnam'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0.5'
+store(&KEYBOARDVERSION) '1.0.6'
 store(&TARGETS) 'any'
 store(&BITMAP) 'vietnam.ico'
 store(&VISUALKEYBOARD) 'vietnam.kvks'
@@ -88,6 +88,7 @@ store(oo) 'ôốồổỗộÔỐỒỔỖỘ'
 store(low_oo) 'ôốồổỗộ'
 store(upper_oo) 'ÔỐỒỔỖỘ'
 store(ow) 'ơớờởỡợƠỚỜỞỠỢ'
+store(low_ow) 'ơớờởỡợ'
 store(ow_v) 'ớờởỡợỚỜỞỠỢ'
 store(e) 'eéèẻẽẹEÉÈẺẼẸ'
 store(e_v) 'éèẻẽẹÉÈẺẼẸ'
@@ -223,6 +224,7 @@ store(h) 'hH'
 store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'Ưư'
+store(two_q) 'qQ'
 c *******************************************************************
 
     c Keyboard options
@@ -309,6 +311,24 @@ any(two_u) any(ow) + any(ptcmni) > index(two_uw, 1) index(ow, 2) index(ptcmni, 3
 'Ư' any(ow) + 'w' > 'U' index(o, 2)'w'
 'ư' any(ow) + 'W' > 'u' index(o, 2)'W'
 'Ư' any(ow) + 'W' > 'U' index(o, 2)'W'
+any(o)'i' + 'i' > index(ow, 1) 'i' 
+any(ow) 'i' + 'i' > index(o, 1) 'ii'
+'u' any(low_o) 'i' + 'i' > 'ư' index(low_ow, 2) 'i' 
+'ư' any(low_ow) 'i' + 'i' > 'u' index(low_o, 2) 'ii' 
+'U' any(low_o) 'i' + 'i' > 'Ư' index(low_ow, 2) 'i' 
+'Ư' any(low_ow) 'i' + 'i' > 'U' index(low_o, 2) 'ii' 
+any(oo)'i' + 'i' > index(ow, 1) 'i'
+'u' any(low_oo) 'i' + 'i' > 'ư' index(low_ow, 2) 'i' 
+'U' any(low_oo) 'i' + 'i' > 'Ư' index(low_ow, 2) 'i' 
+
+'U' any(o) 'i' + 'w' > 'Ư' index(ow, 2) 'i' 
+'Ư' any(ow) 'i' + 'w' > 'U' index(o, 2) 'iw' 
+'U' any(o) 'i' + 'W' > 'Ư' index(ow, 2) 'i' 
+'Ư' any(ow) 'i' + 'W' > 'U' index(o, 2) 'iW' 
+'U' any(o) 'I' + 'w' > 'Ư' index(ow, 2) 'I' 
+'Ư' any(ow) 'I' + 'w' > 'U' index(o, 2) 'Iw' 
+'U' any(o) 'I' + 'W' > 'Ư' index(ow, 2) 'I' 
+'Ư' any(ow) 'I' + 'W' > 'U' index(o, 2) 'IW' 
 
 'cli' + 's' > 'clí'
 'Cli' + 's' > 'Clí'
@@ -9183,6 +9203,33 @@ any(e) + 'w' > index(e, 1)'w'
 any(e) + 'W' > index(e, 1)'W'
 any(ee) + 'w' > index(ee, 1)'w'
 any(ee) + 'W' > index(ee, 1)'W'
+any(two_q) any(two_u) any(aa) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(a) + 'w' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(aa) + 'W' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(a) + 'W' > index(two_q, 1) index(two_u, 2) index(aw, 3)
+any(two_q) any(two_u) any(ow) + any(uow_end) > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(o) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(oo) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(o) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(oo) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3)
+any(two_q) any(two_u) any(ow) + 'w' > index(two_q, 1) index(two_u, 2) index(o, 3) 'w'
+any(two_q) any(two_u) any(ow) + 'W' > index(two_q, 1) index(two_u, 2) index(o, 3) 'W'
+any(two_q) any(two_u) any(o) any(uow_end) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(oo) any(uow_end) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(o) any(uow_end) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(oo) any(uow_end) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(uow_end, 4)
+any(two_q) any(two_u) any(o) any(n) any(g) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
+any(two_q) any(two_u) any(oo) any(n) any(g) + 'w' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
+any(two_q) any(two_u) any(o) any(n) any(g) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
+any(two_q) any(two_u) any(oo) any(n) any(g) + 'W' > index(two_q, 1) index(two_u, 2) index(ow, 3) index(n, 4) index(g, 5)
+
+'í' + 'i' > 'iế'
+'ì' + 'i' > 'iề'
+'ỉ' + 'i' > 'iể'
+'ĩ' + 'i' > 'iễ'
+'ị' + 'i' > 'iệ'
+
+
 
 'k' + [K_TAB] > 'không'
 'ko' + [K_TAB] > 'không'
