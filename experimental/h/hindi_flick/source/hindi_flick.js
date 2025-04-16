@@ -6,7 +6,7 @@ function Keyboard_hindi()
   
   this._v=(typeof keyman!="undefined"&&typeof keyman.version=="string")?parseInt(keyman.version,10):9;
   this.KI="Keyboard_hindi";
-  this.KN="IndiSwipe Hindi";
+  this.KN="Hindi Flick";
   this.KMINVER="9.0";
   this.KV=null;
   this.KDU=0;
