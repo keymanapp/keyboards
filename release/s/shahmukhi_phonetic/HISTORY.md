@@ -3,7 +3,7 @@ Shahmukhi Phonetic Change History
 
 1.1.1 (2025-04-15)
 ----------------
-* Updated mobile keyboard so shift layer keys go back to default layer after keystroke.
+* Updated mobile keyboard so shift layer return to default works.
 
 1.1 (2021-01-15)
 ----------------
