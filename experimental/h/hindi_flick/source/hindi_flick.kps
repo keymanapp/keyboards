@@ -8,7 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -39,12 +39,6 @@
       <FileType>.ico</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description>File welcome.htm</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description>File LICENSE.md</Description>
       <CopyLocation>0</CopyLocation>
@@ -57,24 +51,45 @@
       <FileType>.keyman-touch-layout</FileType>
     </File>
     <File>
-      <Name>hindi_flick.kmn</Name>
-      <Description>File hindi_flick.kmn</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.kmn</FileType>
-    </File>
-    <File>
-      <Name>hindi_flick.js</Name>
-      <Description>File hindi_flick.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>hindi_flick.kvks</Name>
       <Description>File hindi_flick.kvks</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvks</FileType>
     </File>
+    <File>
+      <Name>welcome\layout.png</Name>
+      <Description>File layout.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\hindi_flick.js</Name>
+      <Description>File hindi_flick.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\hindi_flick.kmp</Name>
+      <Description>File hindi_flick.kmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmp</FileType>
+    </File>
   </Files>
-  <Keyboards/>
+  <Keyboards>
+    <Keyboard>
+      <Name>Hindi Flick</Name>
+      <ID>hindi_flick</ID>
+      <Version>1.0</Version>
+      <Languages>
+        <Language ID="hi">Hindi</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
   <Strings/>
 </Package>
