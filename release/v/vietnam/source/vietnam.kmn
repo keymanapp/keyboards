@@ -2,7 +2,7 @@
 store(&VERSION) '17.0'
 store(&NAME) 'vietnam'
 store(&COPYRIGHT) 'Copyright © cathaylab'
-store(&KEYBOARDVERSION) '1.0.6'
+store(&KEYBOARDVERSION) '1.0.7'
 store(&TARGETS) 'any'
 store(&BITMAP) 'vietnam.ico'
 store(&VISUALKEYBOARD) 'vietnam.kvks'
@@ -225,6 +225,7 @@ store(two_aa) 'âÂ'
 store(two_a) 'aA'
 store(two_uw) 'Ưư'
 store(two_q) 'qQ'
+store(ie_consonants) 'đbcdghklmnprstvxyzĐBCDGHKLMNPRSTVXYZ'
 c *******************************************************************
 
     c Keyboard options
@@ -5828,7 +5829,7 @@ any(vowels_nga) + [ALT SHIFT K_QUOTE] > index(vowels_nga, 1)'”'
 "N̉" + [ALT SHIFT K_QUOTE] > "N̉”"
 "Ṇ" + [ALT SHIFT K_QUOTE] > "Ṇ”"
 
-'i' + 'i' > 'iê'
+any(ie_consonants)'i' + 'i' > index(ie_consonants, 1)'iê'
 'iê' + 'i' > 'ii'
 
 
