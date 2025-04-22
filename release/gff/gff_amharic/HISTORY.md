@@ -1,5 +1,12 @@
 gff_amharic Change History
 ==========================
+3.1.3 (04 Oct 2025)
+-------------------
+* mobile: Fixed K_J key nextlayer changes (from ደ to ጀ layer)
+* mobile: removed accidental double U+2019 on an apostrophe longpress
+* mobile: added missing ‹ and › to apostrophe longpress
+* mobile: removed double quote from the doublequote longpress
+* mobile: Added new layers: latin-punct-layer and eth-punct-layer
 
 3.1.2 (29 Oct 2024)
 --------------------
