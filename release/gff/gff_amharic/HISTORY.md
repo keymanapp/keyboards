@@ -6,7 +6,7 @@ gff_amharic Change History
 * mobile: removed accidental double U+2019 on an apostrophe longpress
 * mobile: added missing ‹ and › to apostrophe longpress
 * mobile: removed double quote from the double quote longpress
-* mobile: Added new layers: latin-punct-layer and eth-punct-layer
+* mobile: Added new layers: latin-punct-layer and ethio-punct-layer
 
 3.1.2 (29 Oct 2024)
 --------------------
