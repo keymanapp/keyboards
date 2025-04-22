@@ -457,10 +457,18 @@ c Punctuation Layer Handling
 
   + [T_BANG] > '!' deadkey(2)
   '!' deadkey(2) + any(latinPunctIn) > index(latinPunctOut,3)
+c  + any(latinPunctIn) > index(latinPunctOut,1)
+  + [T_00AB] > '«'
+  + [T_2039] > '‹'
+  + [T_201C] > '‘'
+  + [T_2018] > '“'
+  + [T_2019] > '”'
+  + [T_201D] > '’'
+  + [T_203A] > '›'
+  + [T_00BB] > '»'
 
   + [T_1362] > '።' deadkey(2)
   '።' deadkey(2) + any(ethioPunctIn) > index(ethioPunctOut,3)
-
   + any(ethioPunctIn) > index(ethioPunctOut,1)
 c ---------------------Extensions for Touch Layout----------------------------------------------
 
