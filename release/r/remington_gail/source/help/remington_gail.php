@@ -1,26 +1,11 @@
 <?php 
   $pagename = 'Remington GAIL (SIL) Keyboard Help';
   $pagetitle = $pagename;
+  $pagestyle = <<<END
+    deva {font: 14pt Annapurna SIL;}
+  END;
   require_once('header.php');
 ?>
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Remington GAIL (SIL)</title>
-  <style type="text/css" media="screen">
-    p { font: 10pt Tahoma; }
-    h1 { font: bold 16pt Tahoma; color: #4444cc; margin-bottom: 2px }
-    h2 { font: bold 12pt Tahoma; color: #4444cc; }
-    h3 { font: bold 10pt Tahoma; color: #4444cc; }
-    h4 { font: 10pt Tahoma; color: #4444cc; }
-    li { font: 10pt Tahoma; }
-    .deva {font: 14pt Annapurna SIL;}
-    table.kb th, table.kb td { padding: 0.3em }
-    table.kb { border: 1; margin: 0.5em 0 }
-    table.kb tr:first-child {background-color: #e0dacf; font-weight:bold; }
-    table.kb td, table.kb th {font: 14pt Annapurna SIL; border: thin solid #666; text-align: center }
-
-  </style>
-</head>
 
 <p>This keyboard is an implementation
 of the Remington-GAIL typewriter layout for inputting Unicode-compliant Devanagari.
