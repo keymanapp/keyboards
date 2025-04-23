@@ -5,7 +5,6 @@
 ?>
 
 
-  <h1>Hindi Flick</h1>
   <p>
     <b>
       A mobile keyboard layout designed for Hindi, utilizing a flick input method.
@@ -24,6 +23,8 @@
  
   <h2>Functionality and Usage</h2>
   <div id='osk-phone' data-states="default abc_noshift shift numeric"
+  </div>
+  
   <p>Each <em>akshara</em> (syllable) key is equipped with the ability to produce not only the character on the key, but
     3-8 other related characters from its cluster (i.e. <em>varga</em>). This is done by flicking the key in the
     direction of the desired character. For example, flicking the क key to the right will produce ख, flicking it up will
