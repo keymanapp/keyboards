@@ -1,5 +1,5 @@
 <?php
-  $pagename = 'sil_senegal_bqj_azerty';
+  $pagename = 'sil_senegal_bqj_azerty Keyboard Help';
   $pagetitle = $pagename;
   $pagestyle = <<<END
   
