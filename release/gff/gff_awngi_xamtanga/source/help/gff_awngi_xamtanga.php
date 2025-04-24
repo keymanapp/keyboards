@@ -1,15 +1,14 @@
 <?php 
   $pagename = 'GFF Awngi & Khimtanga';
   $pagetitle = 'The Geʾez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
-  require_once('header.php');
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
-
-
+  require_once('header.php');
 ?>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
 </head>
+
 
 <div id="Overview">
 <h2><a id="abstract" name="abstract"></a>Introduction</h2>
