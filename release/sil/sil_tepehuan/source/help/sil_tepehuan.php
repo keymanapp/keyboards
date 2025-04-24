@@ -1,10 +1,7 @@
 <?php
   $pagename = 'Tepehuan (SIL) Keyboard Help';
-  $pagetitle = 'Tepehuan (SIL) Keyboard Help';
-  require_once('header.php');
-?>
-
-<style type="text/css">
+$pagetitle = $pagename;
+$pagestyle = <<<END
 	p { font: 10pt Tahoma }
 	h1 { font: bold 16pt Tahoma; color: #4444cc }
 	h2 { font: bold 12pt Tahoma; color: #4444cc }
@@ -39,7 +36,9 @@
     line-height: 1;
     padding: 2px 4px;
     white-space: nowrap; }
-</style>
+	END;
+require_once('header.php');
+?>
 
 <h2>Keyboard</h2>
 <p>
