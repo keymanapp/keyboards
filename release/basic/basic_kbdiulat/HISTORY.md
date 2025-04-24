@@ -1,6 +1,10 @@
 Inuktitut - Latin Basic Change History
 ====================
 
+1.2.1 (2025-04-223)
+----------------
+* Improve On-Screen keyboard
+
 1.2 (2024-08-28)
 ----------------
 * Add true tablet layout

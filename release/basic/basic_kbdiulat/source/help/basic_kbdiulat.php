@@ -5,12 +5,8 @@
   require_once('header.php');
 ?>
 
-
-
 <p>
-This keyboard layout is designed for Inuktitut (Latin and Syllabics).  It includes an on screen keyboard which can be viewed 
-by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. The keyboard layout follows 
-the Windows 10 Inuktitut - Latin layout.
+This keyboard layout is designed for Inuktitut (Latin and Syllabics).  It includes an on screen keyboard which can be viewed by clicking on the Keyman icon and selecting the On Screen Keyboard menu item. The keyboard layout follows the Windows 10 Inuktitut - Latin layout.
 </p>
 
 <h2>Desktop Keyboard Layout</h2>
