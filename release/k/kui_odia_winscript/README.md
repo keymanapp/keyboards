@@ -1,7 +1,7 @@
 Kui Odia Winscript 
 ====================
 
-Copyright (c) SIL International
+Copyright (c) SIL Global
 
 
 __DESCRIPTION__
