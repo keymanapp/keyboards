@@ -5,10 +5,8 @@
   Authors:     Bruce Hooley
 */
   $pagename = 'Buang (SIL) Keyboard Help';
-  $pagetitle = 'Buang (SIL) Keyboard Help';
-  require_once('header.php');
-?>
-<style type='text/css'>
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
     html, body { cursor: default; padding: 0; margin: 4px 4px 0 4px; }
     div, p, li { font: 9pt Tahoma; margin-bottom: 8px }
     span.key, tr.key td { border: solid 1px #808080; background: #c0c0c4; margin: 2px; padding: 2px 4px; width: 1em; font: bold 10pt Tahoma; text-align: center; }
@@ -17,9 +15,9 @@
     div.table { padding: 4px }
     div.title { font-weight: bold; }
     tr.out td { text-align: center; font: bold 10pt Tahoma; color: blue }
-</style>
-
-<h1>Start Using Buang (SIL)</h1>
+END;
+  require_once('header.php');
+?>
 
 <p>
     Keyboard layout for Buang language of Papua New Guinea.  Works with Doulos SIL or Charis SIL fonts.

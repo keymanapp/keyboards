@@ -1,9 +1,7 @@
 ﻿<?php
   $pagename = 'Tai Dam Latin (SIL) Keyboard Help';
-  $pagetitle = 'Tai Dam Latin (SIL) Keyboard Help';
-  require_once('header.php');
-?>
-<style type="text/css">
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         .key { 
             float: left;
             display: block; 
@@ -87,8 +85,9 @@
           bottom: 4px;
           color: blue;
         }
-
-    </style>
+END;
+require_once('header.php');
+?>
 
 <p>SIL's Tai Dam Latin keyboard has been optimized for typing the Tai Dam language in the Latin script. It can also be used for typing the Tai Dón language in the Latin scrit.
 

@@ -1,18 +1,14 @@
 <?php
-$pagename = 'sil_senegal_sav_azerty';
-$pagetitle = 'sil_senegal_sav_azerty';
-require_once('header.php');
+  $pagename = 'sil_senegal_sav_azerty Keyboard Help';
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
+  
+         @import url('kb.css');
+         @import url('latin.css');			
+END;
+  require_once('header.php');
 ?>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5" name="viewport"/>
-	<title>sil_senegal_sav_azerty</title>
-	<link rel="stylesheet" href="kb.css"/>
-	<link rel="stylesheet" href="latin.css"/>
-	<link rel="icon" href="icon.ico"/>
-</head>
-<body>
 	<div class="tab-folder">
 		<!--Starting English-->
 		<div id="en" class="tab-content" lang="en">
@@ -5634,4 +5630,3 @@ require_once('header.php');
 		</div>
 		<!--Ending French-->
 	</div>
-</body>

@@ -1,9 +1,7 @@
 ﻿<?php
   $pagename = 'Cheyenne Keyboard Help';
-  $pagetitle = 'Cheyenne Keyboard Help';
-  require_once('header.php');
-?>
-	<style type="text/css">
+  $pagetitle = $pagename;
+  $pagestyle = <<<END
         .key { 
             float: left;
             display: block; 
@@ -82,7 +80,9 @@
 /* Language Examples */
 p samp {font-family: Times New Roman; font-size:20pt; line-height:.8em;}
 p kbd {color:black; font:9pt Arial; border:solid 1px grey; background:#ccc; margin:0px 1px; padding:0px 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
-    </style>
+END;
+  require_once('header.php');
+?>
 
   <p>This keyboard allows you to type all the letters and special symbols used in the Cheyenne alphabet.</p>
   <h2>Keyboard layout</h2>

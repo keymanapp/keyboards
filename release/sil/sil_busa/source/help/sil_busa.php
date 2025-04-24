@@ -1,9 +1,7 @@
 <?php 
   $pagename = 'Busa Keyboard Help';
   $pagetitle = $pagename;
-  require_once('header.php');
-?>
-<style type="text/css">
+  $pagestyle = <<<END
 td, p { font: 10pt Tahoma }
 td { font-weight: bold;  padding: 2px 10px }
 h1 { font: bold 16pt Tahoma; color: #4444cc }
@@ -102,7 +100,9 @@ table.display { border-collapse: collapse; }
         .hotkeys tr td { white-space: nowrap; vertical-align: middle }
         
         td.char { font: 20pt "Doulos SIL", "Charis SIL", "Code2000", "Arial Unicode MS" }
-    </style>
+END;
+  require_once('header.php');
+?>
 
 <p>This package includes a keyboard called: 
     <b>Busa</b>
