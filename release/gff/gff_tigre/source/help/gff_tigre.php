@@ -1,5 +1,5 @@
 <?php
-  $pagename  = "GFF Tigre Help";
+  $pagename  = "GFF Tigre Keyboard Help";
   $pagetitle = "The Geʾez Frontier Foundation Keyboard for the Tigre Language";
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
