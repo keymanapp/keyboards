@@ -1,11 +1,6 @@
 <?php
-  $pagename = 'Gautami IndiTran';
+  $pagename = 'Gautami IndiTran Keyboard Help';
   $pagetitle = $pagename;
-  $style = "
-      p {
-	  width: 95%;
-	  margin-bottom: 6px;
-      }";
   require_once('header.php');
 ?>
 
