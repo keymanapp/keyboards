@@ -1,4 +1,5 @@
-﻿<?php /*
+﻿<?php
+/*
   Name:             Keyboard_gff_harege_fidelat
   Copyright:        Keyboard © The Geʾez Frontier Foundation 
   Documentation:    
@@ -7,7 +8,7 @@
   Last Update:      08 Jul 2023
 */
   $pagename  = 'Harege Fidelat Keyboard Help';
-  $pagetitle = 'Harege Fidelat Keyboard Help';
+  # $pagetitle = 'Harege Fidelat Keyboard Help';
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');

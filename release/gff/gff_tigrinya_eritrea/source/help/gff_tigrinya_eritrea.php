@@ -1,6 +1,6 @@
 <?php
   $pagename  = 'GFF ትግርኛ (Eritrean Tigrinya) Keyboard Help';
-  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Eritrean Tigrinya";
+  # $pagetitle = "The Geʾez Frontier Foundation Keyboard for Eritrean Tigrinya";
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');

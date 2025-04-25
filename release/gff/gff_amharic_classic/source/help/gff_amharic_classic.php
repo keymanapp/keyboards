@@ -1,4 +1,5 @@
-<?php /*
+<?php
+/*
   Name:             Keyboard_gff_amhamaric_classic
   Copyright:        Keyboard ©1997-2020 The Ge'ez Frontier Foundation 
   Documentation:    
@@ -16,7 +17,7 @@
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
   $pagename  = 'አማርኛ (Amharic) Classic Keyboard Help';
-  $pagetitle = 'አማርኛ (Amharic) Classic Keyboard Help';
+  # $pagetitle = 'አማርኛ (Amharic) Classic Keyboard Help';
   $pagestyle = "@import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');

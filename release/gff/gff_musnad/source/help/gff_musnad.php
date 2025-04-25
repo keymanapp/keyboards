@@ -1,7 +1,6 @@
 <?php
 $pagename = '𐩣𐩯𐩬𐩵 (Musnad) Keyboard Help';
-$pagetitle = $pagename;
-// Header
+# $pagetitle = $pagename;
 require_once('header.php');
 ?>
 

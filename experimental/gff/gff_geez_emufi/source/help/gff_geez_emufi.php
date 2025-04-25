@@ -1,6 +1,6 @@
 <?php 
   $pagename = "GFF Geʾez Manuscripts Keyboard Help";
-  $pagetitle = "The Geʾez Frontier Foundation Keyboard for Geʾez Manuscripts";
+  # $pagetitle = "The Geʾez Frontier Foundation Keyboard for Geʾez Manuscripts";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $pagestyle = "@import url('html.css');";
   require_once('header.php');

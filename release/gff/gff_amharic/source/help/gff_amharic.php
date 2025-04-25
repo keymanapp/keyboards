@@ -17,7 +17,7 @@
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
   $pagename  = 'GFF አማርኛ (Amharic) Keyboard Help';
-  $pagetitle = 'GFF አማርኛ (Amharic) Keyboard Help';
+  # $pagetitle = 'GFF አማርኛ (Amharic) Keyboard Help';
   $keymanpromourl = 'https://ethiopic.keymankeyboards.com';
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
   require_once('header.php');

@@ -1,4 +1,5 @@
-﻿<?php /*
+﻿<?php
+/*
   Name:             Keyboard_gff_harari
   Copyright:        Keyboard © The Geʾez Frontier Foundation 
   Documentation:    
@@ -7,7 +8,7 @@
 
 */
   $pagename  = 'GFF ሐረሪ (Harari) Keyboard Help';
-  $pagetitle = 'GFF ሐረሪ (Harari) Keyboard Help';
+  # $pagetitle = 'GFF ሐረሪ (Harari) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
   require_once('header.php');
