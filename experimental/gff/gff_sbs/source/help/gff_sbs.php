@@ -1,5 +1,5 @@
 <?php 
-  $pagename = "Sheek Bakrii Saphaloo Qubee Keyboard";
+  $pagename = "Sheek Bakrii Saphaloo Qubee Keyboard Help";
   $pagetitle = $pagename;
   require_once('header.php');
 ?>
