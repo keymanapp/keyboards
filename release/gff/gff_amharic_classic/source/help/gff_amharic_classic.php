@@ -15,16 +15,10 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename = 'አማርኛ (Amharic) Classic Keyboard Help';
+  $pagename  = 'አማርኛ (Amharic) Classic Keyboard Help';
   $pagetitle = 'አማርኛ (Amharic) Classic Keyboard Help';
+  $pagestyle = "@import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
-  $style = <<<EXTRA
-  .highlightExample {font-family: GeezWeb !important; font-weight: bold; font-size: 1.4em; color: #0000ff}
-  .highlightKeys img {vertical-align:baseline !important}
-  .input {font-weight: bold; font-size: 1.2em; color: #a64826}
-  .output {font-weight: bold; font-size: 1.2em; color: #0000ff}
-  .typing p, ul {margin-top: 0px; margin-bottom: 2px}
-EXTRA;
   require_once('header.php');
 ?>
 

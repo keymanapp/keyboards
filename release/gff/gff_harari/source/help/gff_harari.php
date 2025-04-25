@@ -6,7 +6,7 @@
   Create Date:      13 June 2023
 
 */
-  $pagename = 'GFF ሐረሪ (Harari) Keyboard Help';
+  $pagename  = 'GFF ሐረሪ (Harari) Keyboard Help';
   $pagetitle = 'GFF ሐረሪ (Harari) Keyboard Help';
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   $pagestyle = "@import url('kb.css'); @import url('html.css');";

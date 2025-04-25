@@ -1,7 +1,8 @@
 <?php 
-  $pagename = 'GFF Blin';
+  $pagename  = 'GFF Blin Help';
   $pagetitle = 'The Geʾez Frontier Foundation Keyboard for Blin Language';
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
+  $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');
 ?>
 

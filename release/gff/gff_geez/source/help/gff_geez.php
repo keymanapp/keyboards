@@ -1,7 +1,8 @@
 <?php 
-  $pagename = "GFF Geʾez";
+  $pagename  = "GFF Geʾez Help";
   $pagetitle = "The Geʾez Frontier Foundation Keyboard for Geʾez Language";
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
+  $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');
 ?>
 
