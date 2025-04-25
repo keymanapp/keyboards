@@ -57,7 +57,7 @@ $pagestyle = <<<END
           top: 3px;
         }
         
-        .key .keycap {          
+        .key .keycap {
           display: block;
         }
         
@@ -66,11 +66,7 @@ $pagestyle = <<<END
         }
         
         .keytext {
-          
-					font:
-						9pt
-							 
-						"Tai Heritage Pro"; 
+          font: 9pt Tai Heritage Pro;
           position: absolute; 
           display: block;
           right: 6px;
