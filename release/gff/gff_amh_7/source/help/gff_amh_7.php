@@ -16,8 +16,8 @@
   Notes:            
   History:          18 Sep 2009 - mcdurdin - Polish help
 */
-  $pagename  = 'Amharic (GFF) (deprecated) Keyboard Help';
-  # $pagetitle = $pagename;
+  $pagetitle = 'Amharic (GFF) (deprecated) Keyboard Help';
+  $pagename  = $pagetitle;
   $pagestyle = "@import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');

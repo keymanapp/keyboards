@@ -7,8 +7,8 @@
   Create Date:      23 Oct 2022
   Last Update:      08 Jul 2023
 */
-  $pagename  = 'Harege Fidelat Keyboard Help';
-  # $pagetitle = 'Harege Fidelat Keyboard Help';
+  $pagetitle = 'Harege Fidelat Keyboard Help';
+  $pagename  = $pagetitle;
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');

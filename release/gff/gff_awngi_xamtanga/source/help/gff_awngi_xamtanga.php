@@ -1,6 +1,6 @@
 <?php 
-  $pagename  = 'GFF Awngi & Khimtanga Keyboard Help';
-  # $pagetitle = 'The Geʾez Frontier Foundation Keyboard for Awngi & Khimtanga Languages';
+  $pagetitle = 'GFF Awngi & Khimtanga Keyboard Help';
+  $pagename  = $pagetitle;
   $pagestyle = "@import url('kb.css'); @import url('html.css');";
   $keymanpromourl = 'http://ethiopic.keymankeyboards.com';
   require_once('header.php');
